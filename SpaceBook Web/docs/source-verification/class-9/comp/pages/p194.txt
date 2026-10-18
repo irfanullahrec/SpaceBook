@@ -1,0 +1,21 @@
+@pdf 197
+@printed 186
+@status lesson
+p The following HTML document demonstrates how to use the above mentioned tags in a web page. || درج ذیل HTML دستاویز دکھاتی ہے کہ اوپر بیان کردہ ٹیگز ویب پیج میں کیسے استعمال ہوتے ہیں۔ || لاندې HTML سند ښيي چې پورتني tags په وېب پاڼه کې څنګه کارېږي.
+m <html>
+m <head>
+m   <title>Creating Heading & Paragraph</title>
+m </head>
+m <body>
+m   <h3>Random Access Memory</h3>
+m   <p>This refers to memories in which actual physical location of a<br>
+m   memory word has no effect on how long it takes to read from or<br>
+m   write into that location. In other words, the access time is the<br>
+m   same for any address in memory. Most semiconductor memories<br>
+m   and magnetic disk memories are random access memories.</p>
+m </body>
+m </html>
+p (Figure 7.17: HTML Document to demonstrate the use of basic tags — file RAM.html in Notepad++.) || (شکل 7.17: بنیادی ٹیگز کا استعمال دکھانے والی HTML دستاویز — نوٹ پیڈ++ میں فائل RAM.html۔) || (۷.۱۷ شکل: د بنسټیزو tags کارونه ښوونکی HTML سند — په Notepad++ کې RAM.html فایل.)
+@issue In the printed screenshot the <br> tags are misplaced (each line's text is shifted one line), the heading tag is written <h3>…</h5>, and the closing </p> is on the wrong line; the listing here follows the order shown in the browser output (Figure 7.18).
+p The browser window will display it as shown in Figure 7.18. || براؤزر ونڈو اسے شکل 7.18 کی طرح دکھائے گی۔ || براوزر کړکۍ به یې د ۷.۱۸ شکل په څېر ښيي.
+p (Figure 7.18: Browser window showing heading and paragraph — file:///C:/HTML/ram.html shows the heading "Random Access Memory" and the five-line paragraph.) || (شکل 7.18: ہیڈنگ اور پیراگراف دکھاتی براؤزر ونڈو — file:///C:/HTML/ram.html پر ہیڈنگ "Random Access Memory" اور پانچ سطری پیراگراف۔) || (۷.۱۸ شکل: سرلیک او پاراګراف ښوونکې براوزر کړکۍ — file:///C:/HTML/ram.html کې "Random Access Memory" سرلیک او پنځه کرښه ییز پاراګراف.)

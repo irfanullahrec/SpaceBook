@@ -1,0 +1,23 @@
+@printed 8
+@status lesson
+svg Figure 1.6 Algorithm's Efficiency || شکل 1.6 الگورتھم کی کارکردگی || ۱.۶ شکل د الګوریتم اغېزمنتیا
+<svg viewBox="0 0 560 170" width="560" role="img" aria-label="Input parallelogram, arrow to a box labelled Set of rules to obtain the expected output from the given input with the caption Algorithm, arrow to Output parallelogram" font-family="Times New Roman, serif" font-size="17" font-weight="700" text-anchor="middle">
+<defs><marker id="arC16" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<polygon points="10,100 40,50 140,50 110,100" fill="#bfdbfe" stroke="#111827"/><text x="75" y="81">Input</text>
+<rect x="200" y="10" width="180" height="120" fill="#fdf2f8" stroke="#111827" stroke-width="2"/>
+<text x="290" y="40" font-size="15">Set of rules to</text><text x="290" y="62" font-size="15">obtain the expected</text><text x="290" y="84" font-size="15">output from the</text><text x="290" y="106" font-size="15">given input</text>
+<text x="290" y="158" font-weight="400" font-size="18">Algorithm</text>
+<polygon points="440,70 470,20 550,20 520,70" fill="#bfdbfe" stroke="#111827"/><text x="495" y="51">Output</text>
+<path d="M126 75 H196 M382 50 H452" stroke="#111827" stroke-width="1.5" marker-end="url(#arC16)"/>
+</svg>
+endsvg
+p Furthermore its efficiency can be measured on the basis of following factors. || مزید یہ کہ اس کی کارکردگی درج ذیل عوامل کی بنیاد پر جانچی جا سکتی ہے۔ || سربېره پر دې، اغېزمنتیا یې د لاندې عواملو پر بنسټ اندازه کېدای شي.
+### a. Inputs needed || الف۔ درکار ان پٹ || الف. اړین inputs
+p The amount of time an algorithm takes depends on how large is the input on which the algorithm must operate. For example, multiplying huge matrices takes longer than multiplying small ones, etc. An algorithm might take different amounts of time on inputs of the same size. || الگورتھم کو لگنے والا وقت اس بات پر منحصر ہے کہ جس ان پٹ پر اسے کام کرنا ہے وہ کتنا بڑا ہے۔ مثلاً بہت بڑے میٹرکس کو ضرب دینے میں چھوٹے میٹرکس کی نسبت زیادہ وقت لگتا ہے، وغیرہ۔ ایک الگورتھم ایک ہی سائز کے مختلف ان پٹس پر مختلف وقت لے سکتا ہے۔ || هغه وخت چې الګوریتم یې نیسي په دې پورې اړه لري چې هغه input چې الګوریتم پرې کار کوي څومره لوی دی. د بېلګې په توګه د لویو میټرکسونو ضرب تر وړو ډېر وخت نیسي، او داسې نور. یو الګوریتم کېدای شي د یو شان اندازې پر بېلابېلو inputs بېلابېل وخت ونیسي.
+### b. Processing to be completed || ب۔ مکمل کی جانے والی پروسیسنگ || ب. بشپړېدونکې پروسس
+p The time required to complete the operation is a measure for efficiency of an algorithm. The process completion time is composed of cycle time, wait time and processing time. || عمل مکمل کرنے میں درکار وقت الگورتھم کی کارکردگی کا ایک پیمانہ ہے۔ عمل کی تکمیل کا وقت سائیکل ٹائم، انتظار کے وقت اور پروسیسنگ کے وقت پر مشتمل ہوتا ہے۔ || د عملیې د بشپړولو لپاره اړین وخت د الګوریتم د اغېزمنتیا یو معیار دی. د بهیر د بشپړېدو وخت له cycle time، د انتظار وخت او د پروسس وخت څخه جوړ دی.
+### c. Decision to be taken || ج۔ کیا جانے والا فیصلہ || ج. نیول کېدونکې پرېکړه
+p Problem solving and decision-making are important skills to improve the efficiency of an algorithm and get optimal result. || الگورتھم کی کارکردگی بہتر بنانے اور بہترین نتیجہ حاصل کرنے کے لیے مسئلہ حل کرنا اور فیصلہ سازی اہم مہارتیں ہیں۔ || د الګوریتم د اغېزمنتیا د ښه کولو او غوره پایلې د ترلاسه کولو لپاره د ستونزې حل او پرېکړه کول مهم مهارتونه دي.
+### d. Outputs to be provided || د۔ فراہم کیا جانے والا آؤٹ پٹ || د. ورکول کېدونکي outputs
+p An algorithm is said to be correct if, for every input instance, it ends with the correct output. || الگورتھم درست کہلاتا ہے اگر ہر ان پٹ کے لیے وہ درست آؤٹ پٹ پر ختم ہو۔ || الګوریتم سم ویل کېږي که د هر input لپاره په سم output پای ته ورسېږي.
+p An incorrect algorithm might not end at all on some input instances, or it might end with an output other than the desired one. So the algorithmic solution that provides correct desired output will be considered as the best solution for the problem to be solved. || غلط الگورتھم بعض ان پٹس پر بالکل ختم نہ ہو، یا مطلوبہ کے علاوہ کسی اور آؤٹ پٹ پر ختم ہو۔ لہٰذا وہ الگورتھمی حل جو درست مطلوبہ آؤٹ پٹ دے، حل طلب مسئلے کا بہترین حل سمجھا جائے گا۔ || ناسم الګوریتم کېدای شي پر ځینو inputs هېڅ پای ته ونه رسېږي، یا له مطلوب پرته بل output ورکړي. نو هغه الګوریتمي حل چې سم مطلوب output ورکوي د حل وړ ستونزې غوره حل ګڼل کېږي.

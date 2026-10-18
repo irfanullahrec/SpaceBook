@@ -1,0 +1,23 @@
+@pdf 100
+@printed 76
+@status lesson
+### Program 3.14 || پروگرام 3.14 || پروګرام ۳.۱۴
+m #include<stdio.h>
+m void main()
+m {
+m     char ch='A';
+m     printf("Character=%c\n",ch); // Here %c will be replaced with the value of ch
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Character=A
+endbox
+### 3.1.5 Escape Sequences || 3.1.5 ایسکیپ سیکوینسز || ۳.۱.۵ Escape Sequences
+p **Escape sequences** are special non-printed characters used to modify the format of output. These are the combination of characters beginning with a back slash \ followed by letters or special symbol. Escape sequences are used to format the output. These can be used inside string constants or independently. These are written in double quotes. An escape sequence can be used anywhere in the output string. || **ایسکیپ سیکوینسز** خاص نہ چھپنے والے حروف ہیں جو آؤٹ پٹ کا فارمیٹ بدلنے کے لیے استعمال ہوتے ہیں۔ یہ بیک سلیش \ سے شروع ہونے والے حروف کا مجموعہ ہیں جس کے بعد حروف یا خاص علامت آتی ہے۔ ایسکیپ سیکوینسز آؤٹ پٹ کو فارمیٹ کرنے کے لیے استعمال ہوتے ہیں۔ انہیں اسٹرنگ کانسٹنٹس کے اندر یا الگ استعمال کیا جا سکتا ہے۔ یہ دوہرے واوین میں لکھے جاتے ہیں۔ ایسکیپ سیکوینس آؤٹ پٹ اسٹرنگ میں کہیں بھی استعمال ہو سکتا ہے۔ || **Escape sequences** ځانګړي نه چاپېدونکي توري دي چې د output د format بدلولو لپاره کارېږي. دا د back slash \ سره پیلېدونکو تورو ترکیب دی چې وروسته یې توري یا ځانګړې نښه راځي. escape sequences د output د format لپاره کارېږي. د string ثابتونو دننه یا جلا کارېدای شي. په دوه ګونو quotes کې لیکل کېږي. escape sequence د output string په هر ځای کې کارېدای شي.
+p Some commonly used escape sequence characters are: || چند عام استعمال ہونے والے ایسکیپ سیکوینس حروف یہ ہیں: || ځینې عام escape sequence توري دا دي:
+table Escape sequences (i) || ایسکیپ سیکوینسز (i) || escape sequences (i)
+th | Escape Sequence || ایسکیپ سیکوینس || escape sequence | Purpose || مقصد || موخه | Example || مثال || بېلګه | Sample Output || نمونہ آؤٹ پٹ || نمونه output
+tr | \n | New line (moves the printing control to the beginning of the next line.) || نئی سطر (پرنٹنگ کنٹرول کو اگلی سطر کے شروع میں لے جاتا ہے۔) || نوې کرښه (د چاپ کنټرول د راتلونکې کرښې پیل ته وړي.) | printf("Hello\nWorld"); | Hello / World
+tr | \t | Horizontal tab (moves the cursor one tab forward.) || افقی ٹیب (کرسر کو ایک ٹیب آگے لے جاتا ہے۔) || افقي tab (cursor یو tab مخکې وړي.) | printf("Hello\tWorld"); | Hello    World
+tr | \a | Bell (alert) causes a beep sound in the computer internal speaker. || گھنٹی (الرٹ) کمپیوٹر کے اندرونی اسپیکر میں بیپ کی آواز پیدا کرتی ہے۔ || زنګ (خبرداری) د کمپیوټر په داخلي سپیکر کې beep غږ کوي. | printf("Hello \a how are you?"); | Beep after Hello and before how are you? || Hello کے بعد اور how are you? سے پہلے بیپ || له Hello وروسته او له how are you? مخکې beep
+tr | \b | Backspace (used to move cursor one space back after printing) || بیک اسپیس (پرنٹ کے بعد کرسر کو ایک جگہ پیچھے لے جانے کے لیے) || backspace (له چاپ وروسته cursor یو ځای شاته وړي) | printf("Hello\bWorld "); | "Hello" is printed but \b deletes 'o'. ↓ || "Hello" چھپتا ہے لیکن \b حرف 'o' مٹا دیتا ہے۔ ↓ || "Hello" چاپېږي خو \b 'o' پاکوي. ↓
+endtable

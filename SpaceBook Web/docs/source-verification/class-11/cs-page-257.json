@@ -1,0 +1,181 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s257-u8open",
+  "title": "Unit 8: Database Development — objectives",
+  "headingUrdu": "یونٹ ۸: ڈیٹا بیس ڈیولپمنٹ — مقاصد",
+  "headingPashto": "۸ واحد: د ډېټابېس جوړونه — موخې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 257,
+    "printedPage": "248"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s257-h",
+      "en": "UNIT 8 DATABASE DEVELOPMENT",
+      "ur": "یونٹ ۸ ڈیٹا بیس ڈیولپمنٹ",
+      "ps": "۸ واحد د ډېټابېس جوړونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s257-i",
+      "en": "After the completion of Unit - 8, the Students will be able to:",
+      "ur": "یونٹ ۸ مکمل کرنے کے بعد طلبہ اس قابل ہو جائیں گے کہ:",
+      "ps": "د ۸ واحد له بشپړېدو وروسته به زده کوونکي دې ته وړ شي چې:"
+    },
+    {
+      "id": "cs11-s257-o1",
+      "en": "identify various relational database management systems.",
+      "ur": "مختلف ریلیشنل ڈیٹا بیس مینجمنٹ سسٹمز کی شناخت کر سکیں۔",
+      "ps": "مختلف اړوند ډېټابېس مدیریت سیسټمونه وپېژني.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o2",
+      "en": "(MS Access, Open Office Base, SQL Server).",
+      "ur": "(ایم ایس ایکسیس، اوپن آفس بیس، ایس کیو ایل سرور)۔",
+      "ps": "(MS Access، Open Office Base، SQL Server).",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o3",
+      "en": "select any suitable DBMS as an application for creating and maintaining databases.",
+      "ur": "ڈیٹا بیسز بنانے اور برقرار رکھنے کے لیے ایپلیکیشن کے طور پر کوئی مناسب ڈی بی ایم ایس منتخب کر سکیں۔",
+      "ps": "د ډېټابېسونو د جوړولو او ساتلو لپاره د اپلېکېشن په توګه کوم مناسب DBMS وټاکي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o4",
+      "en": "explain the steps involved in creating and saving a database.",
+      "ur": "ڈیٹا بیس بنانے اور محفوظ کرنے کے مراحل بیان کر سکیں۔",
+      "ps": "د ډېټابېس د جوړولو او ساتلو ګامونه تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o5",
+      "en": "explain database toolbar, database window and Objects (Tables, Queries, Forms and Reports).",
+      "ur": "ڈیٹا بیس ٹول بار، ڈیٹا بیس ونڈو اور آبجیکٹس (ٹیبلز، کوئریز، فارمز اور رپورٹس) کی وضاحت کر سکیں۔",
+      "ps": "د ډېټابېس وسایلو پټه، د ډېټابېس کړکۍ او څیزونه (جدولونه، پوښتنې، فورمونه او راپورونه) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o6",
+      "en": "explain different ways of creating, saving and editing a table in database.",
+      "ur": "ڈیٹا بیس میں ٹیبل بنانے، محفوظ کرنے اور ترمیم کرنے کے مختلف طریقے بیان کر سکیں۔",
+      "ps": "په ډېټابېس کې د جدول د جوړولو، ساتلو او سمولو مختلفې لارې تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o7",
+      "en": "identify data types, create primary and foreign keys, create and edit relationship among tables, navigate through records in a table and add, modify and delete records.",
+      "ur": "ڈیٹا ٹائپس کی شناخت کر سکیں، پرائمری اور فارن کیز بنا سکیں، ٹیبلز کے درمیان تعلق بنا اور اس میں ترمیم کر سکیں، ٹیبل کے ریکارڈز میں نیویگیٹ کر سکیں اور ریکارڈز شامل، تبدیل اور حذف کر سکیں۔",
+      "ps": "د ډېټا ډولونه وپېژني، لومړنۍ او بهرنۍ کیلي جوړې کړي، د جدولونو ترمنځ اړیکه جوړه او سمه کړي، په جدول کې په ثبتونو کې وګرځي او ثبتونه زیات، تعدیل او حذف کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o8",
+      "en": "explain different ways of creating, saving and editing a form in database.",
+      "ur": "ڈیٹا بیس میں فارم بنانے، محفوظ کرنے اور ترمیم کرنے کے مختلف طریقے بیان کر سکیں۔",
+      "ps": "په ډېټابېس کې د فورم د جوړولو، ساتلو او سمولو مختلفې لارې تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o9",
+      "en": "know different form views, Use navigation buttons, add, modify and delete records.",
+      "ur": "فارم کے مختلف مناظر جان سکیں، نیویگیشن بٹن استعمال کر سکیں، ریکارڈز شامل، تبدیل اور حذف کر سکیں۔",
+      "ps": "د فورم مختلف لیدونه وپېژني، د لارښوونې تڼۍ وکاروي، ثبتونه زیات، تعدیل او حذف کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o10",
+      "en": "use form controls.",
+      "ur": "فارم کنٹرولز استعمال کر سکیں۔",
+      "ps": "د فورم کنټرولونه وکاروي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o11",
+      "en": "explain different ways of creating, saving and editing a query in database.",
+      "ur": "ڈیٹا بیس میں کوئری بنانے، محفوظ کرنے اور ترمیم کرنے کے مختلف طریقے بیان کر سکیں۔",
+      "ps": "په ډېټابېس کې د پوښتنې د جوړولو، ساتلو او سمولو مختلفې لارې تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o12",
+      "en": "use the queries on database (Select, Update, Delete, Insert, Alter).",
+      "ur": "ڈیٹا بیس پر کوئریز استعمال کر سکیں (سلیکٹ، اپ ڈیٹ، ڈیلیٹ، انسرٹ، آلٹر)۔",
+      "ps": "په ډېټابېس پوښتنې وکاروي (Select، Update، Delete، Insert، Alter).",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o13",
+      "en": "use the report wizard to generate a report.",
+      "ur": "رپورٹ بنانے کے لیے رپورٹ ویزرڈ استعمال کر سکیں۔",
+      "ps": "د راپور جوړولو لپاره د راپور مرستندوی وکاروي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o14",
+      "en": "use various report layouts/styles to produce reports.",
+      "ur": "رپورٹس تیار کرنے کے لیے رپورٹ کے مختلف لے آؤٹس/انداز استعمال کر سکیں۔",
+      "ps": "د راپورونو د جوړولو لپاره د راپور مختلف ترتیبونه/سټایلونه وکاروي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o15",
+      "en": "set the sort order of records that will appear on the report.",
+      "ur": "رپورٹ میں ظاہر ہونے والے ریکارڈز کی ترتیب مقرر کر سکیں۔",
+      "ps": "د هغو ثبتونو ترتیب وټاکي چې په راپور کې به ښکاره شي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o16",
+      "en": "customize reports using queries (macros and arithmetic expression).",
+      "ur": "کوئریز (میکروز اور ریاضیاتی اظہار) کے ذریعے رپورٹس کو حسبِ ضرورت بنا سکیں۔",
+      "ps": "د پوښتنو (میکروګانو او حسابي څرګندونې) په کارولو سره راپورونه دودیز کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s257-o17",
+      "en": "save, view and print the report.",
+      "ur": "رپورٹ کو محفوظ، دیکھ اور پرنٹ کر سکیں۔",
+      "ps": "راپور وساتي، وګوري او چاپ کړي.",
+      "listGroup": "obj"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s257-h",
+        "cs11-s257-i",
+        "cs11-s257-o1",
+        "cs11-s257-o2",
+        "cs11-s257-o3",
+        "cs11-s257-o4",
+        "cs11-s257-o5",
+        "cs11-s257-o6",
+        "cs11-s257-o7",
+        "cs11-s257-o8",
+        "cs11-s257-o9",
+        "cs11-s257-o10",
+        "cs11-s257-o11",
+        "cs11-s257-o12",
+        "cs11-s257-o13",
+        "cs11-s257-o14",
+        "cs11-s257-o15",
+        "cs11-s257-o16",
+        "cs11-s257-o17"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 248: the unit opener — a pink circle with “UNIT 8”, the title “DATABASE DEVELOPMENT” over a photograph of laptops (not reproduced) and the box “After the completion of Unit - 8, the Students will be able to:” with seventeen objectives (the second item continues the first in brackets). Screenshots and photographs are not reproduced; where a screenshot is shown it is redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:57:24.845307+00:00",
+    "scope": "Scan 257 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

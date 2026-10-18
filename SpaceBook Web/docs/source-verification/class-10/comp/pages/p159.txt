@@ -1,0 +1,19 @@
+@printed 147
+@status lesson
+### پہلا HTML ڈاکومنٹ بنانا || Creating the first HTML document || لومړی HTML سند جوړول
+p Notepad++ پروگرام کھولیں اور شکل 7.14 کے مطابق ٹیکسٹ ٹائپ کریں۔ || Open the Notepad++ program and type the text as in Figure 7.14. || Notepad++ پروګرام پرانیزئ او د ۷.۱۴ شکل سره سم متن ولیکئ.
+### شکل نمبر 7.14 HTML ڈاکومنٹ || Figure 7.14 HTML document || ۷.۱۴ شکل HTML سند
+m <html>
+m <head>
+m <title> My First HTML Document </title>
+m </head>
+m <body>
+m PAKISTAN IS MY COUNTRY
+m </body>
+m </html>
+@issue Figure 7.14 is a Notepad++ screenshot in which only "My First HTML Document" and "PAKISTAN IS MY COUNTRY" can be read; the surrounding tags are too faint and are reconstructed above in the standard form.
+p اب اپنے پہلے HTML ڈاکومنٹ کو محفوظ کرنے کے لیے File مینو کو کھولیں اور Save As پر کلک کر کے First-doc.html کے نام سے محفوظ کریں۔ || Now, to save your first HTML document, open the File menu, click Save As and save it with the name First-doc.html. || اوس د خپل لومړي HTML سند د خوندي کولو لپاره File مېنو پرانیزئ، Save As کلیک کړئ او د First-doc.html په نوم یې خوندي کړئ.
+### HTML ڈاکومنٹ دکھانا (ویب پیج) || Displaying the HTML document (web page) || د HTML سند ښودل (ویب پاڼه)
+p براؤزر ونڈو میں first-doc.html ڈاکومنٹ کو کھولنے کے لئے، اس جگہ پر جائیں جہاں آپ نے اسے محفوظ کیا تھا۔ کھولنے کے لئے اس پر ڈبل کلک کریں۔ براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.15 میں دکھایا گیا ہے۔ || To open the first-doc.html document in a browser window, go to the place where you saved it and double-click it to open it. The browser window will show it as in Figure 7.15. || په براوزر کړکۍ کې د first-doc.html سند د پرانیستلو لپاره هغه ځای ته ورشئ چې خوندي کړی مو و، او د پرانیستلو لپاره پرې دوه ځله کلیک وکړئ. براوزر کړکۍ به یې لکه په ۷.۱۵ شکل کې وښيي.
+@deco Figure 7.15 HTML ڈاکومنٹ دکھانے والی براؤزر ونڈو (Browser window showing the HTML document): a nearly blank browser window with "PAKISTAN IS MY COUNTRY" at the top left. Not reproduced.
+@issue The file is saved as "First-doc.html" but then opened as "first-doc.html"; Windows ignores the case difference, but a web server may not.

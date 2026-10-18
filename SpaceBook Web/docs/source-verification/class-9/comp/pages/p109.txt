@@ -1,0 +1,38 @@
+@pdf 138
+@printed 101
+@status lesson
+m         printf("%d is even",n);
+m     else
+m         printf("%d is odd",n);
+m }
+box teach | SAMPLE OUTPUT 1 || نمونہ آؤٹ پٹ 1 || نمونه output ۱
+m Enter a number:10
+m 10 is even
+endbox
+box teach | SAMPLE OUTPUT 2 || نمونہ آؤٹ پٹ 2 || نمونه output ۲
+m Enter a number:17
+m 17 is odd
+endbox
+### Program 4.5: A program that prints the larger of two numbers. || پروگرام 4.5: دو اعداد میں سے بڑا پرنٹ کرنے والا پروگرام۔ || پروګرام ۴.۵: له دوو عددونو لوی چاپول.
+m #include<stdio.h>
+m void main ()
+m {
+m     int x, y;
+m     printf("Enter two numbers:");
+m     scanf("%d  %d",&x,&y);
+m     if ( x > y)
+m         printf("\n%d is larger number than %d",x,y);
+m     else
+m         printf("\n%d is larger number than %d",y,x);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter two numbers  15
+m 20
+m 20 is larger number than 15
+endbox
+### Program 4.6: A program to find the smallest number of three numbers. || پروگرام 4.6: تین اعداد میں سب سے چھوٹا عدد معلوم کرنے کا پروگرام۔ || پروګرام ۴.۶: له دریو عددونو تر ټولو کوچنی موندل.
+m # include <stdio.h>
+m void main ()
+m {
+m     int x, y, z, s;
+m     printf("Enter three numbers");

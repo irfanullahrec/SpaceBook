@@ -1,0 +1,10 @@
+@printed 77
+@status lesson
+table Escape sequences (ii) || ایسکیپ سیکوینسز (ii) || escape sequences (ii)
+th | Escape Sequence || ایسکیپ سیکوینس || escape sequence | Purpose || مقصد || موخه | Example || مثال || بېلګه | Sample Output || نمونہ آؤٹ پٹ || نمونه output
+tr | \b (cont.) | — | — | Then "World" is printed. So "HellWorld" is displayed on the screen. || پھر "World" چھپتا ہے۔ یوں اسکرین پر "HellWorld" ظاہر ہوتا ہے۔ || بیا "World" چاپېږي. نو پر پرده "HellWorld" ښکاري.
+tr | \f | Form feed (used to print the output on the printer after feeding a blank form) || فارم فیڈ (خالی فارم ڈالنے کے بعد پرنٹر پر آؤٹ پٹ پرنٹ کرنے کے لیے) || form feed (د تش فورم له ورکولو وروسته پر printer د output چاپولو لپاره) | printf("Hello\fWorld"); | HelloWorld After printing "Hello", the computer will include a blank paper and then print the remaining output. It is used during printing. || HelloWorld — "Hello" پرنٹ کرنے کے بعد کمپیوٹر ایک خالی کاغذ شامل کرے گا اور پھر باقی آؤٹ پٹ پرنٹ کرے گا۔ یہ پرنٹنگ کے دوران استعمال ہوتا ہے۔ || HelloWorld — د "Hello" له چاپ وروسته کمپیوټر یوه تشه پاڼه ورزیاتوي او بیا پاتې output چاپوي. د چاپ پر مهال کارېږي.
+tr | \' | Single quotation mark (used to print single quotation mark ' ) || ایک واوین (سنگل کوٹیشن ' پرنٹ کرنے کے لیے) || یوه quote نښه (د ' چاپولو لپاره) | printf("\'Hello World\'"); | 'Hello World'
+tr | \" | Double quotation mark(used to print double quotation marks "…" ↓ || دوہرے واوین (ڈبل کوٹیشن پرنٹ کرنے کے لیے) ↓ || دوه ګونې quote نښه (د دوه ګونو quotes چاپولو لپاره) ↓ | printf("\"Hello World\""); | "Hello World"
+endtable
+@issue The row example for \' is printed as printf("\'Hello World\"") with a mismatched closing escape; read as \'…\'.

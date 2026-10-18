@@ -1,0 +1,25 @@
+@printed 10
+@status lesson
+### Problem 3 || مسئلہ 3 || ستونزه ۳
+p **To find acceleration of a moving object with given mass and the force applied.** || **دی گئی کمیت اور لگائی گئی قوت کے ساتھ حرکت کرتے جسم کا اسراع معلوم کرنا۔** || **د ورکړل شوې کتلې او اچول شوي قوت سره د خوځېدونکي جسم تعجیل موندل.**
+p **Algorithm:** This algorithm finds acceleration **ACCEL** of a moving object with given mass **MASS** and the force **FORCE** applied. || **الگورتھم:** یہ الگورتھم دی گئی کمیت **MASS** اور لگائی گئی قوت **FORCE** کے ساتھ حرکت کرتے جسم کا اسراع **ACCEL** معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د ورکړل شوې کتلې **MASS** او اچول شوي قوت **FORCE** سره د خوځېدونکي جسم تعجیل **ACCEL** مومي.
+m Step 1. Read MASS, FORCE
+m Step 2. Set ACCEL= FORCE / MASS
+m Step 3. Write ACCEL
+m Step 4. Exit
+### Problem 4 || مسئلہ 4 || ستونزه ۴
+p **To find the volume of a cube, cylinder or sphere.** || **مکعب، سلنڈر یا کرے کا حجم معلوم کرنا۔** || **د مکعب، استوانې یا کرې حجم موندل.**
+p **Algorithm:** This algorithm finds the volume of a cube **VC** of edge length **A** and volume of a sphere **VS** of radius **R**. || **الگورتھم:** یہ الگورتھم کنارے کی لمبائی **A** والے مکعب کا حجم **VC** اور رداس **R** والے کرے کا حجم **VS** معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د **A** څنډې اوږدوالي لرونکي مکعب حجم **VC** او د **R** شعاع لرونکې کرې حجم **VS** مومي.
+@issue The heading mentions a cylinder but the algorithm only computes the cube and sphere volumes; kept as printed.
+m Step 1. Read A, R.
+m Step 2. Set VC= A*A*A
+m Step 3. Set VS= 4/3 * 3.14*R*R*R
+m Step 4. Write VC, VS
+m Step 5. Exit
+### Problem 5 || مسئلہ 5 || ستونزه ۵
+p **To find the area of a triangle.** || **مثلث کا رقبہ معلوم کرنا۔** || **د مثلث مساحت موندل.**
+p **Algorithm:** This algorithm finds the area of a triangle where *B* is breadth, and *H* is the height or altitude of the triangle. || **الگورتھم:** یہ الگورتھم مثلث کا رقبہ معلوم کرتا ہے جہاں *B* قاعدہ (چوڑائی) اور *H* مثلث کی بلندی یا ارتفاع ہے۔ || **الګوریتم:** دا الګوریتم د مثلث مساحت مومي چې *B* پلنوالی (قاعده) او *H* د مثلث لوړوالی یا ارتفاع ده.
+m Step 1. Read B, H
+m Step 2. Set AREA= B*H / 2
+m Step 3. Write AREA
+m Step 4. Exit

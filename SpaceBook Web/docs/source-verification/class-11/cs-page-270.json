@@ -1,0 +1,101 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s270-p261",
+  "title": "Data types (end 4–9); Field Properties",
+  "headingUrdu": "ڈیٹا ٹائپس (اختتام ۴ تا ۹)؛ فیلڈ پراپرٹیز",
+  "headingPashto": "د ډېټا ډولونه (پای ۴ تر ۹)؛ د ساحې ملکیتونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 270,
+    "printedPage": "261"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s270-a",
+      "en": "window. Users specify how to display the number by setting its Format property to one of the formats.",
+      "ur": "ونڈو میں۔ صارفین نمبر کو دکھانے کا طریقہ اس کی فارمیٹ پراپرٹی کو کسی ایک شکل پر مقرر کر کے متعین کرتے ہیں۔",
+      "ps": "کړکۍ کې. کاروونکي د شمېرې د ښودلو څرنګوالی د هغې د Format ملکیت یوې بڼې ته په ټاکلو سره ټاکي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s270-d4",
+      "en": "4. AutoNumber: An AutoNumber field is a numeric (Long Integer) value that Access automatically fills in for each new record that a user enters to a table. Access can increment the AutoNumber field by 1 for each new record or fill in the field with a randomly generated number, depending on the New Values property setting, that a user select.",
+      "ur": "۴۔ آٹو نمبر: آٹو نمبر فیلڈ ایک عددی (لانگ انٹیجر) قدر ہے جو ایکسیس صارف کے ٹیبل میں درج ہر نئے ریکارڈ کے لیے خود بخود بھرتا ہے۔ ایکسیس صارف کے منتخب کردہ نیو ویلیوز پراپرٹی کی ترتیب کے مطابق ہر نئے ریکارڈ کے لیے آٹو نمبر فیلڈ میں ۱ کا اضافہ کر سکتا ہے یا فیلڈ کو بے ترتیب بنائے گئے نمبر سے بھر سکتا ہے۔",
+      "ps": "۴. اتومات شمېره (AutoNumber): د اتومات شمېرې ساحه یو عددي (اوږده بشپړ عدد) ارزښت دی چې Access د هر نوي ثبت لپاره چې کاروونکی جدول ته دخلوي په اتوماتیک ډول ډکوي. Access کولای شي د کاروونکي لخوا ټاکل شوي د New Values ملکیت تنظیم پورې اړه لرلو سره د هر نوي ثبت لپاره د اتومات شمېرې ساحه په ۱ زیاته کړي یا ساحه په تصادفي جوړ شوې شمېره ډکه کړي.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-d5",
+      "en": "5. Yes/No: Logical fields in Access use 1 for Yes (True) and 0 for No (False). Users use the Format property to display Yes/No fields as Yes or No.",
+      "ur": "۵۔ ہاں/نہیں: ایکسیس میں منطقی فیلڈز ہاں (درست) کے لیے ۱ اور نہیں (غلط) کے لیے ۰ استعمال کرتی ہیں۔ صارفین ہاں/نہیں فیلڈز کو ہاں یا نہیں کے طور پر دکھانے کے لیے فارمیٹ پراپرٹی استعمال کرتے ہیں۔",
+      "ps": "۵. هو/نه (Yes/No): په Access کې منطقي ساحې د هو (سم) لپاره ۱ او د نه (غلط) لپاره ۰ کاروي. کاروونکي د Format ملکیت د هو/نه ساحو د هو یا نه په توګه د ښودلو لپاره کاروي.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-d6",
+      "en": "6. Currency: Currency is a special fixed format Number with decimal places designed to store currency value.",
+      "ur": "۶۔ کرنسی: کرنسی اعشاریہ مقامات کے ساتھ ایک خصوصی مقررہ شکل کا نمبر ہے جو کرنسی کی قدر محفوظ کرنے کے لیے بنایا گیا ہے۔",
+      "ps": "۶. اسعار (Currency): اسعار د لسیزې ځایونو سره یوه ځانګړې ټاکلې بڼې شمېره ده چې د اسعارو ارزښت ساتلو لپاره جوړه شوې.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-d7",
+      "en": "7. Date/Time: Date and time are stored in a special fixed format. User controls how Access displays dates by selecting one of the Date/Time Format properties.",
+      "ur": "۷۔ تاریخ/وقت: تاریخ اور وقت ایک خصوصی مقررہ شکل میں محفوظ ہوتے ہیں۔ صارف تاریخ/وقت فارمیٹ پراپرٹیز میں سے ایک منتخب کر کے ایکسیس کے تاریخیں دکھانے کا طریقہ قابو کرتا ہے۔",
+      "ps": "۷. نېټه/وخت (Date/Time): نېټه او وخت په یوې ځانګړې ټاکلې بڼې کې ساتل کېږي. کاروونکی د Date/Time Format ملکیتونو یوه ټاکلو په واسطه د Access د نېټو د ښودلو څرنګوالی کنټرولوي.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-d8",
+      "en": "8. OLE Object: It is used for OLE (Object Linking and Embedding) objects (such as Microsoft Word documents, Microsoft Excel spreadsheets, pictures, sounds, or other binary data) that were created in other programs using the OLE protocol.",
+      "ur": "۸۔ او ایل ای آبجیکٹ: یہ او ایل ای (آبجیکٹ لنکنگ اینڈ ایمبیڈنگ) آبجیکٹس (جیسے مائیکروسافٹ ورڈ دستاویزات، مائیکروسافٹ ایکسل اسپریڈ شیٹس، تصاویر، آوازیں یا دیگر بائنری ڈیٹا) کے لیے استعمال ہوتا ہے جو دوسرے پروگراموں میں او ایل ای پروٹوکول کے ذریعے بنائے گئے ہوں۔",
+      "ps": "۸. OLE څیز (OLE Object): دا د OLE (د څیز نښلول او ځای پرځای کول) څیزونو (لکه مایکروسافټ ورډ سندونه، مایکروسافټ اېکسل سپریډ شیټونه، انځورونه، غږونه، یا نورې دوتایي ډېټا) لپاره کارول کېږي چې په نورو پروګرامونو کې د OLE پروتوکول په کارولو سره جوړ شوي وي.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-d9",
+      "en": "9. Hyperlink: It is used for hyperlinks. A hyperlink can be a path of another document or a Web address.",
+      "ur": "۹۔ ہائپر لنک: یہ ہائپر لنکس کے لیے استعمال ہوتا ہے۔ ہائپر لنک کسی دوسری دستاویز کا راستہ یا ویب ایڈریس ہو سکتا ہے۔",
+      "ps": "۹. هایپرلینک (Hyperlink): دا د هایپرلینکونو لپاره کارول کېږي. هایپرلینک د بل سند لار یا د ویب پته کېدای شي.",
+      "listGroup": "dt"
+    },
+    {
+      "id": "cs11-s270-h1",
+      "en": "Field Properties",
+      "ur": "فیلڈ پراپرٹیز",
+      "ps": "د ساحې ملکیتونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s270-b",
+      "en": "Properties can be specified in the Field Properties box which are displayed in the bottom left hand corner of the Table Window. Figure 8.13 shows the properties for a field with data type Number.",
+      "ur": "پراپرٹیز فیلڈ پراپرٹیز باکس میں متعین کی جا سکتی ہیں جو ٹیبل ونڈو کے نچلے بائیں کونے میں دکھائے جاتے ہیں۔ شکل ۸.۱۳ ڈیٹا ٹائپ نمبر والے فیلڈ کی پراپرٹیز دکھاتی ہے۔",
+      "ps": "ملکیتونه د ساحې د ملکیتونو بکس کې ټاکل کېدای شي چې د جدول کړکۍ په ښکتنۍ کیڼ کنج کې ښودل کېږي. ۸.۱۳ انځور د شمېرې د ډېټا ډول لرونکې ساحې ملکیتونه ښيي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s270-a",
+        "cs11-s270-d4",
+        "cs11-s270-d5",
+        "cs11-s270-d6",
+        "cs11-s270-d7",
+        "cs11-s270-d8",
+        "cs11-s270-d9",
+        "cs11-s270-h1",
+        "cs11-s270-b"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 261: the end of the Number paragraph (continuing from page 260), data types 4 to 9 (AutoNumber, Yes/No, Currency, Date/Time, OLE Object, Hyperlink), the heading “Field Properties” and its introductory paragraph (the figure follows on the next page). The bold names of the data types are kept in the sentences. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:01:24.942489+00:00",
+    "scope": "Scan 270 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

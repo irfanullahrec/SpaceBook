@@ -1,0 +1,79 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s251-p242",
+  "title": "3rd Normal Form (end); Figures 7.29 and 7.30",
+  "headingUrdu": "تھرڈ نارمل فارم (اختتام)؛ شکلیں ۷.۲۹ اور ۷.۳۰",
+  "headingPashto": "دریمه نورمال بڼه (پای)؛ انځورونه ۷.۲۹ او ۷.۳۰",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 251,
+    "printedPage": "242"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s251-a",
+      "en": "Both Job_class and Charge_per_hour are nonprime attributes and the later one is dependent on the former. So by removing transitive dependency the following new tables will be created.",
+      "ur": "جاب_کلاس اور چارج_فی_آور دونوں غیر بنیادی ایٹریبیوٹس ہیں اور بعد والا پہلے والے پر منحصر ہے۔ اس لیے ترسیلی انحصار ہٹانے سے درج ذیل نئے ٹیبلز بنیں گے۔",
+      "ps": "Job_class او Charge_per_hour دواړه غیر لومړني خاصیتونه دي او وروستی په مخکني پورې تړلی دی. نو د انتقالي تکیې په لېرې کولو سره به لاندې نوي جدولونه جوړ شي."
+    },
+    {
+      "id": "cs11-s251-h1",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s251-h2",
+      "en": "Job Table",
+      "ur": "جاب ٹیبل",
+      "ps": "د دندې جدول",
+      "kind": "heading"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s251-a",
+        "cs11-s251-h1",
+        "cs11-s251-h2"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "figure",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 262 60\" role=\"img\" aria-label=\"Table structure: Emp_no, Emp_name, Job_class\" style=\"width:100%;max-width:262px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"64\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"42.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_no</text><line x1=\"18\" y1=\"33\" x2=\"66\" y2=\"33\" stroke=\"#111\"/><rect x=\"74\" y=\"10\" width=\"80\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"114.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_name</text><rect x=\"154\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"198.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Job_class</text></svg>",
+      "id": "cs11-s251-fig1",
+      "caption": "Figure 7.29 Employee Table",
+      "captionUrdu": "شکل ۷.۲۹ ایمپلائی ٹیبل",
+      "captionPashto": "انځور ۷.۲۹ د کارکوونکي جدول",
+      "labels": []
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 60\" role=\"img\" aria-label=\"Table structure: Job_class, Chg_per_hour\" style=\"width:100%;max-width:230px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"88\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"54.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Job_class</text><line x1=\"18\" y1=\"33\" x2=\"90\" y2=\"33\" stroke=\"#111\"/><rect x=\"98\" y=\"10\" width=\"112\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"154.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Chg_per_hour</text></svg>",
+      "id": "cs11-s251-fig2",
+      "caption": "Figure 7.30 Job Table",
+      "captionUrdu": "شکل ۷.۳۰ جاب ٹیبل",
+      "captionPashto": "انځور ۷.۳۰ د دندې جدول",
+      "labels": []
+    }
+  ],
+  "sourceNote": "Printed page 242: the closing paragraph of 3rd Normal Form, the Employee Table (Figure 7.29: Emp_no, Emp_name, Job_class) and the Job Table (Figure 7.30: Job_class, Chg_per_hour), both redrawn as coded SVG with the key columns underlined as printed. The rest of the page is blank. “Chg_per_hour” is printed in the Job Table. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:54:33.411802+00:00",
+    "scope": "Scan 251 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

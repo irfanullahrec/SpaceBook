@@ -1,0 +1,592 @@
+{
+  "chapter": "stat11-vital-statistics",
+  "id": "stat11-s235-vs-rates-6",
+  "title": "Example 7.4 (solution table) · Example 7.5: crude and standardized death rates (start)",
+  "headingUrdu": "مثال 7.4 (حل کا جدول) · مثال 7.5: خام اور معیاری شرحیں اموات (آغاز)",
+  "headingPashto": "بېلګه 7.4 (د حل جدول) · بېلګه 7.5: خام او معیاري د مړینې کچې (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 235,
+    "printedPage": "225"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s235-a1",
+      "en": "C.D.R for both populations is same i.e. 13.4 but S_T.D.R of the standard population is 14.",
+      "ur": "دونوں آبادیوں کی C.D.R ایک ہی ہے یعنی 13.4 لیکن معیاری آبادی کی S_T.D.R 14 ہے۔",
+      "ps": "د دواړو نفوسونو C.D.R یو شان دی یعنې 13.4 خو د معیاري نفوس S_T.D.R 14 دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s235-ex75",
+      "en": "Example: 7.5",
+      "ur": "مثال: 7.5",
+      "ps": "بېلګه: 7.5",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-5"
+    },
+    {
+      "id": "stat11-s235-q75",
+      "en": "Calculate the crude and standardized death rates from the following data",
+      "ur": "درج ذیل اعداد و شمار سے خام اور معیاری شرحیں اموات حساب کریں",
+      "ps": "له لاندې معلوماتو څخه خام او معیاري د مړینې کچې محاسبه کړئ",
+      "role": "question",
+      "exampleId": "stat11-ex-7-5"
+    },
+    {
+      "id": "stat11-s235-sol75",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-5"
+    },
+    {
+      "id": "stat11-s235-a2",
+      "en": "Now calculations for standardized death rates both by direct and indirect methods are;",
+      "ur": "اب براہِ راست اور بالواسطہ دونوں طریقوں سے معیاری شرحیں اموات کے حسابات یہ ہیں؛",
+      "ps": "اوس د مستقیمو او غیر مستقیمو دواړو طریقو په واسطه د معیاري د مړینې کچو محاسبې دا دي؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-7-5"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s235-a1",
+        "stat11-s235-ex75",
+        "stat11-s235-q75"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s235-sol75"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s235-a2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s235-std",
+      "latex": "S_T.D.R=\\dfrac{70}{5000}\\times 1000=14",
+      "accessible": "S_T.D.R = 70/5000 × 1000 = 14",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S_T.D.R = 70/5000 × 1000 = 14"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S_T.D.R = 70/5000 × 1000 = 14"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S_T.D.R = 70/5000 × 1000 = 14"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s235-c1",
+      "latex": "\\text{C.D.R for original population}=\\dfrac{D}{P}\\times 100=\\dfrac{2967}{109043}\\times 1000=27.21",
+      "accessible": "C.D.R for original population = (D/P) × 100 = 2967/109043 × 1000 = 27.21   [the first factor is printed \"× 100\"]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.D.R for original population = (D/P) × 100 = 2967/109043 × 1000 = 27.21   [the first factor is printed \"× 100\"]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.D.R for original population = (D/P) × 100 = 2967/109043 × 1000 = 27.21   [the first factor is printed \"× 100\"]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.D.R for original population = (D/P) × 100 = 2967/109043 × 1000 = 27.21   [the first factor is printed \"× 100\"]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-5"
+    },
+    {
+      "id": "stat11-s235-c2",
+      "latex": "\\text{C.D.R for standard population}=\\dfrac{29035}{1023369}\\times 1000=28.37",
+      "accessible": "C.D.R for standard population = 29035/1023369 × 1000 = 28.37",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.D.R for standard population = 29035/1023369 × 1000 = 28.37"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.D.R for standard population = 29035/1023369 × 1000 = 28.37"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.D.R for standard population = 29035/1023369 × 1000 = 28.37"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-5"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 7.4 solution table",
+      "captionUrdu": "مثال 7.4 کا حل: جدول",
+      "captionPashto": "د بېلګې 7.4 د حل جدول",
+      "headers": [
+        {
+          "en": "Age (years)",
+          "ur": "عمر (سال)",
+          "ps": "عمر (کلونه)"
+        },
+        {
+          "en": "Local population: Population (p)",
+          "ur": "مقامی آبادی: آبادی (p)",
+          "ps": "سیمه‌ییز نفوس: نفوس (p)"
+        },
+        {
+          "en": "Local population: Deaths (d)",
+          "ur": "مقامی آبادی: اموات (d)",
+          "ps": "سیمه‌ییز نفوس: مړینې (d)"
+        },
+        {
+          "en": "Standard population: Population (P)",
+          "ur": "معیاری آبادی: آبادی (P)",
+          "ps": "معیاري نفوس: نفوس (P)"
+        },
+        {
+          "en": "Standard population: Deaths (D)",
+          "ur": "معیاری آبادی: اموات (D)",
+          "ps": "معیاري نفوس: مړینې (D)"
+        },
+        {
+          "en": "(d_i/p_i) P_i",
+          "ur": "(d_i/p_i) P_i",
+          "ps": "(d_i/p_i) P_i"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 - 10",
+            "ur": "0 - 10",
+            "ps": "0 - 10"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "600",
+            "ur": "600",
+            "ps": "600"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          }
+        ],
+        [
+          {
+            "en": "10 - 20",
+            "ur": "10 - 20",
+            "ps": "10 - 20"
+          },
+          {
+            "en": "1500",
+            "ur": "1500",
+            "ps": "1500"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "20 - 60",
+            "ur": "20 - 60",
+            "ps": "20 - 60"
+          },
+          {
+            "en": "2400",
+            "ur": "2400",
+            "ps": "2400"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "3000",
+            "ur": "3000",
+            "ps": "3000"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          }
+        ],
+        [
+          {
+            "en": "60 - 100",
+            "ur": "60 - 100",
+            "ps": "60 - 100"
+          },
+          {
+            "en": "700",
+            "ur": "700",
+            "ps": "700"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "Total",
+            "ps": "Total"
+          },
+          {
+            "en": "5000",
+            "ur": "5000",
+            "ps": "5000"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "5000",
+            "ur": "5000",
+            "ps": "5000"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "caption": "Example 7.5: original and standard population",
+      "captionUrdu": "مثال 7.5: اصل اور معیاری آبادی",
+      "captionPashto": "بېلګه 7.5: اصلي او معیاري نفوس",
+      "headers": [
+        {
+          "en": "Age group (years)",
+          "ur": "عمر کا گروہ (سال)",
+          "ps": "عمري ډله (کلونه)"
+        },
+        {
+          "en": "Original population: Population",
+          "ur": "اصل آبادی: آبادی",
+          "ps": "اصلي نفوس: نفوس"
+        },
+        {
+          "en": "Original population: Deaths",
+          "ur": "اصل آبادی: اموات",
+          "ps": "اصلي نفوس: مړینې"
+        },
+        {
+          "en": "Standard population: Population",
+          "ur": "معیاری آبادی: آبادی",
+          "ps": "معیاري نفوس: نفوس"
+        },
+        {
+          "en": "Standard population: Deaths",
+          "ur": "معیاری آبادی: اموات",
+          "ps": "معیاري نفوس: مړینې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 – 10",
+            "ur": "0 – 10",
+            "ps": "0 – 10"
+          },
+          {
+            "en": "20210",
+            "ur": "20210",
+            "ps": "20210"
+          },
+          {
+            "en": "728",
+            "ur": "728",
+            "ps": "728"
+          },
+          {
+            "en": "231428",
+            "ur": "231428",
+            "ps": "231428"
+          },
+          {
+            "en": "6960",
+            "ur": "6960",
+            "ps": "6960"
+          }
+        ],
+        [
+          {
+            "en": "11 – 24",
+            "ur": "11 – 24",
+            "ps": "11 – 24"
+          },
+          {
+            "en": "29875",
+            "ur": "29875",
+            "ps": "29875"
+          },
+          {
+            "en": "213",
+            "ur": "213",
+            "ps": "213"
+          },
+          {
+            "en": "302170",
+            "ur": "302170",
+            "ps": "302170"
+          },
+          {
+            "en": "1972",
+            "ur": "1972",
+            "ps": "1972"
+          }
+        ],
+        [
+          {
+            "en": "25 – 44",
+            "ur": "25 – 44",
+            "ps": "25 – 44"
+          },
+          {
+            "en": "37294",
+            "ur": "37294",
+            "ps": "37294"
+          },
+          {
+            "en": "462",
+            "ur": "462",
+            "ps": "462"
+          },
+          {
+            "en": "293149",
+            "ur": "293149",
+            "ps": "293149"
+          },
+          {
+            "en": "4759",
+            "ur": "4759",
+            "ps": "4759"
+          }
+        ],
+        [
+          {
+            "en": "45 – 64",
+            "ur": "45 – 64",
+            "ps": "45 – 64"
+          },
+          {
+            "en": "16739",
+            "ur": "16739",
+            "ps": "16739"
+          },
+          {
+            "en": "741",
+            "ur": "741",
+            "ps": "741"
+          },
+          {
+            "en": "150122",
+            "ur": "150122",
+            "ps": "150122"
+          },
+          {
+            "en": "7030",
+            "ur": "7030",
+            "ps": "7030"
+          }
+        ],
+        [
+          {
+            "en": "62 & above",
+            "ur": "62 & above",
+            "ps": "62 & above"
+          },
+          {
+            "en": "4925",
+            "ur": "4925",
+            "ps": "4925"
+          },
+          {
+            "en": "823",
+            "ur": "823",
+            "ps": "823"
+          },
+          {
+            "en": "46500",
+            "ur": "46500",
+            "ps": "46500"
+          },
+          {
+            "en": "8314",
+            "ur": "8314",
+            "ps": "8314"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "Total",
+            "ps": "Total"
+          },
+          {
+            "en": "109043",
+            "ur": "109043",
+            "ps": "109043"
+          },
+          {
+            "en": "2967",
+            "ur": "2967",
+            "ps": "2967"
+          },
+          {
+            "en": "1023369",
+            "ur": "1023369",
+            "ps": "1023369"
+          },
+          {
+            "en": "29035",
+            "ur": "29035",
+            "ps": "29035"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-7-5"
+    }
+  ],
+  "sourceNote": "Printed page 225. The table at the top completes Example 7.4. In the last column of the first table a handwritten note \"16/400 × 600\" beside the first entry is ignored. In Example 7.5 the last age group is printed \"62 & above\" (probably 65). The two-level headers \"Local/Standard population\" and \"Original/Standard population\" are flattened. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:38:47.856080+00:00",
+    "scope": "Scan 235 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

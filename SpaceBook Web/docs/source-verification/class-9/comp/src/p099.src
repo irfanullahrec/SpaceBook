@@ -1,0 +1,24 @@
+@printed 91
+@status lesson
+m     printf("Value of (a + b) * (c / d) is : %d\n", e );
+m
+m     e = a + (b * c) / d;      // 20 + (150/5)
+m     printf("Value of a + (b * c) / d is  : %d\n" , e );
+m }
+@sec 3-kp | Key Points || اہم نکات || مهم ټکي
+## Key Points || اہم نکات || مهم ټکي
+- In programming, input is the data which is given to the computer for processing and output is what the computer produces after processing the data. || پروگرامنگ میں ان پٹ وہ ڈیٹا ہے جو کمپیوٹر کو پروسیسنگ کے لیے دیا جاتا ہے اور آؤٹ پٹ وہ ہے جو کمپیوٹر ڈیٹا پروسیس کرنے کے بعد دیتا ہے۔ || په پروګرام جوړونه کې input هغه ډېټا ده چې کمپیوټر ته د پروسس لپاره ورکول کېږي او output هغه دی چې کمپیوټر له پروسس وروسته ورکوي.
+- Data can be assigned to variables by means of assignment/input statements. || اسائنمنٹ/ان پٹ اسٹیٹمنٹس کے ذریعے متغیرات کو ڈیٹا دیا جا سکتا ہے۔ || د assignment/input بیانونو له لارې متغیرونو ته ډېټا ورکول کېدای شي.
+- Format specifier is used in input and output functions. || فارمیٹ اسپیسیفائر ان پٹ اور آؤٹ پٹ فنکشنز میں استعمال ہوتا ہے۔ || format specifier په input او output فنکشنونو کې کارېږي.
+- Escape sequence refers to a combination of characters beginning with a back slash \ followed by letters or special symbols. || ایسکیپ سیکوینس بیک سلیش \ سے شروع ہونے والے حروف کا مجموعہ ہے جس کے بعد حروف یا خاص علامات آتی ہیں۔ || escape sequence د back slash \ سره پیلېدونکو تورو ترکیب دی چې وروسته یې توري یا ځانګړې نښې راځي.
+- *scanf()* function is used to accept values for variables during program execution. || *scanf()* فنکشن پروگرام چلنے کے دوران متغیرات کی قدریں قبول کرنے کے لیے استعمال ہوتا ہے۔ || *scanf()* فنکشن د پروګرام د اجرا پر مهال د متغیرونو د ارزښتونو منلو لپاره کارېږي.
+- The *getch(), getche()* and *getchar()* functions are used to read a single character from the keyboard during program execution. || *getch()، getche()* اور *getchar()* فنکشنز پروگرام چلنے کے دوران کی بورڈ سے ایک حرف پڑھنے کے لیے استعمال ہوتے ہیں۔ || *getch()، getche()* او *getchar()* فنکشنونه د پروګرام د اجرا پر مهال له کیبورډ یو توری لوستلو لپاره کارېږي.
+- Semicolon ; is used at the end of each statement. || ہر اسٹیٹمنٹ کے آخر میں سیمی کولن ; استعمال ہوتا ہے۔ || د هر بیان په پای کې semicolon ; کارېږي.
+- Operators are the symbols that are used to perform different operations on data. || آپریٹرز وہ علامات ہیں جو ڈیٹا پر مختلف عمل کرنے کے لیے استعمال ہوتی ہیں۔ || operators هغه نښې دي چې پر ډېټا بېلابېل عملیات ترسره کوي.
+- C language provides compound assignment operators that combine assignment operator with arithmetic operators. || C زبان کمپاؤنڈ اسائنمنٹ آپریٹرز فراہم کرتی ہے جو اسائنمنٹ آپریٹر کو حسابی آپریٹرز سے ملاتے ہیں۔ || C ژبه مرکب assignment operators لري چې assignment له حسابي operators سره یوځای کوي.
+- The increment operator is represented by a double plus ++ sign. || انکریمنٹ آپریٹر دوہرے جمع ++ سے ظاہر ہوتا ہے۔ || increment operator په ++ ښودل کېږي.
+- The decrement operator is represented by a double minus -- sign. || ڈیکریمنٹ آپریٹر دوہری منفی -- سے ظاہر ہوتا ہے۔ || decrement operator په -- ښودل کېږي.
+- The relational operators are used to specify conditions in programs. || ریلیشنل آپریٹرز پروگراموں میں شرائط بیان کرنے کے لیے استعمال ہوتے ہیں۔ || اړیکه ییز operators په پروګرامونو کې د شرطونو د ټاکلو لپاره کارېږي.
+- A type of operator that works with single operand is called unary operator. || وہ آپریٹر جو ایک آپرینڈ کے ساتھ کام کرے یونری آپریٹر کہلاتا ہے۔ || هغه operator چې له یوه operand سره کار کوي unary بلل کېږي.
+- A type of operator that works with two operands is known as binary operator. || وہ آپریٹر جو دو آپرینڈز کے ساتھ کام کرے بائنری آپریٹر کہلاتا ہے۔ || هغه operator چې له دوو operands سره کار کوي binary بلل کېږي.
+- A type of operator that works with three operands is called ternary operator. || وہ آپریٹر جو تین آپرینڈز کے ساتھ کام کرے ٹرنری آپریٹر کہلاتا ہے۔ || هغه operator چې له دریو operands سره کار کوي ternary بلل کېږي.

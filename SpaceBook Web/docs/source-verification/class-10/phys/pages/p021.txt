@@ -1,0 +1,26 @@
+@printed 124
+@status lesson
+@issue Source: 10thphysics4.pdf page 11 (page number cut off).
+svg FIGURE 13.19 – Series Combination of Capacitors: three capacitors C₁, C₂, C₃ joined plate to plate across a battery V (pictorial view, circuit diagram, and the single equivalent capacitor Cₑ). || شکل 13.19 – کیپیسیٹرز کا سلسلہ وار ملاپ: تین کیپیسیٹرز C₁، C₂، C₃ پلیٹ سے پلیٹ جڑے بیٹری V کے ساتھ (تصویری منظر، سرکٹ ڈایاگرام، اور ایک مساوی کیپیسیٹر Cₑ)۔ || ۱۳.۱۹ شکل – د خازنونو لړۍ ییز ترکیب: درې خازنونه C₁، C₂، C₃ تخته په تخته له بیټرۍ V سره (انځوریزه بڼه، د سرکټ ډیاګرام، او یو معادل خازن Cₑ).
+<svg viewBox="0 0 330 110" width="330" role="img" aria-label="Left circuit: three capacitors C1, C2, C3 in a row in one loop with a battery V, with voltages V1, V2, V3 across them and charges +Q -Q on each pair of plates. Right circuit: a single equivalent capacitor Ce across battery V" font-family="Arial" font-size="10">
+<g stroke="#111" fill="none" stroke-width="1.5">
+<path d="M20 30 H45 M51 30 H95 M101 30 H145 M151 30 H180 V90 H110 M100 90 H20 V30"/>
+<path d="M45 18 V42 M51 18 V42 M95 18 V42 M101 18 V42 M145 18 V42 M151 18 V42"/>
+<path d="M100 80 V100 M110 84 V96"/>
+<path d="M240 30 H272 M278 30 H310 V90 H280 M270 90 H240 V30 M272 18 V42 M278 18 V42 M270 80 V100 M280 84 V96"/></g>
+<text x="40" y="12">C₁</text><text x="90" y="12">C₂</text><text x="140" y="12">C₃</text>
+<text x="40" y="56">V₁</text><text x="90" y="56">V₂</text><text x="140" y="56">V₃</text>
+<text x="28" y="44">+Q</text><text x="53" y="44">−Q</text><text x="96" y="76">+</text><text x="112" y="76">−</text><text x="100" y="108">V</text>
+<text x="268" y="12">Cₑ</text><text x="270" y="108">V</text>
+</svg>
+endsvg
+p When battery is connected to a series combination of capacitors, the same current flows through each capacitor which means charge of +Q is placed on the left plate of each capacitor and an equal charge of −Q on the right plate of each capacitor. As a result each capacitor gets an equal amount of charge Q on each of its plates. || جب بیٹری کو کیپیسیٹرز کے سلسلہ وار ملاپ سے جوڑا جاتا ہے تو ہر کیپیسیٹر میں سے یکساں کرنٹ گزرتا ہے، یعنی ہر کیپیسیٹر کی بائیں پلیٹ پر +Q اور دائیں پلیٹ پر برابر −Q چارج آ جاتا ہے۔ نتیجتاً ہر کیپیسیٹر کی پلیٹوں پر برابر مقدار Q کا چارج ہوتا ہے۔ || کله چې بیټري د خازنونو له لړۍ ییز ترکیب سره وتړل شي، له هر خازن څخه ورته جریان تېرېږي، یعنې د هر خازن پر چپې تختې +Q او پر ښۍ تختې مساوي −Q چارج راځي. په پایله کې هر خازن پر خپلو تختو مساوي Q چارج لري.
+eq Q_1 = Q_2 = Q_3 = Q \quad \text{--- (1)}
+p When the three capacitors in the circuit are charged, the sum of the potential drops across all three must equal the potential difference supplied by the battery. || جب سرکٹ کے تینوں کیپیسیٹرز چارج ہو جائیں تو تینوں پر پوٹینشل ڈراپ کا مجموعہ بیٹری کے فراہم کردہ پوٹینشل ڈفرنس کے برابر ہونا چاہیے۔ || کله چې په سرکټ کې درې واړه خازنونه چارج شي، پر درې واړو د پوټانشیل د کمښت مجموعه باید د بیټرۍ له ورکړل شوي پوټانشیل توپیر سره برابره وي.
+eq V = V_1 + V_2 + V_3 \quad \text{--- (2)}
+p Since the capacitance of capacitor is $C = \dfrac{Q}{V}$ or $V = \dfrac{Q}{C}$, therefore, each voltage can be written as || چونکہ کیپیسیٹر کی کیپیسیٹنس $C = \dfrac{Q}{V}$ یا $V = \dfrac{Q}{C}$ ہے، اس لیے ہر وولٹیج کو یوں لکھا جا سکتا ہے || څرنګه چې د خازن ظرفیت $C = \dfrac{Q}{V}$ یا $V = \dfrac{Q}{C}$ دی، نو هر ولټیج داسې لیکل کېږي
+eq V_1 = \dfrac{Q_1}{C_1}\ \text{and}\ V_2 = \dfrac{Q_2}{C_2}\ \text{and}\ V_3 = \dfrac{Q_3}{C_3}\ \text{and}\ V = \dfrac{Q}{C_e}
+p Where $C_e$ is the equivalent capacitance of a single capacitor that has the same effect on the circuit as the series combination when it is connected to the battery. Hence equation 2 can be written as || جہاں $C_e$ اس ایک کیپیسیٹر کی مساوی کیپیسیٹنس ہے جو بیٹری سے جڑنے پر سرکٹ پر وہی اثر ڈالتا ہے جو سلسلہ وار ملاپ ڈالتا ہے۔ لہٰذا مساوات 2 کو یوں لکھا جا سکتا ہے || چې $C_e$ د هغه یوه خازن معادل ظرفیت دی چې له بیټرۍ سره د نښلولو پر مهال پر سرکټ همغه اغېز لري چې لړۍ ییز ترکیب یې لري. نو (۲) معادله داسې لیکل کېږي
+eq \dfrac{Q}{C_e} = \dfrac{Q_1}{C_1} + \dfrac{Q_2}{C_2} + \dfrac{Q_3}{C_3} \quad \text{--- (3)}
+p From equation 1, equation 3 can be written as || مساوات 1 سے مساوات 3 کو یوں لکھا جا سکتا ہے || د (۱) معادلې له مخې (۳) معادله داسې لیکل کېږي
+eq \dfrac{Q}{C_e} = \dfrac{Q}{C_1} + \dfrac{Q}{C_2} + \dfrac{Q}{C_3} \quad \text{or} \quad \dfrac{Q}{C_e} = Q\left(\dfrac{1}{C_1} + \dfrac{1}{C_2} + \dfrac{1}{C_3}\right)

@@ -1,0 +1,22 @@
+@printed 108
+@status lesson
+@sec 5-key | اہم نکات || Key points || مهم ټکي
+## اہم نکات || Key points || مهم ټکي
+- لوپ ہدایات کا ایک سلسلہ ہے جو کسی خاص حالت تک پہنچنے تک بار بار چلایا جاتا ہے۔ || A loop is a sequence of instructions that is run repeatedly until a particular condition is reached. || لوپ د لارښوونو لړۍ ده چې تر یوه ځانګړي حالت پورې بیا بیا چلېږي.
+- for لوپ ایک مخصوص تعداد میں ایک یا زیادہ اسٹیٹمنٹ کو چلاتی ہے۔ || The for loop runs one or more statements a specific number of times. || for لوپ یو یا څو بیانونه ټاکلي شمېر ځله چلوي.
+- while لوپ ایک یا زیادہ اسٹیٹمنٹ پر اس وقت تک عمل درآمد کرتا رہتا ہے جب تک condition کا نتیجہ True رہتا ہے۔ || The while loop keeps executing one or more statements as long as the condition remains true. || while لوپ یو یا څو بیانونه تر هغه اجرا کوي چې شرط True وي.
+- do-while لوپ اس وقت تک اسٹیٹمنٹ کو چلاتی رہتی ہے جب تک شرط کا نتیجہ True رہتا ہے۔ || The do-while loop keeps running its statements as long as the condition remains true. || do-while لوپ بیانونه تر هغه چلوي چې شرط True وي.
+- break اسٹیٹمنٹ جب لوپ کی باڈی کے اندر استعمال ہو تو کنٹرول کو لوپ سے باہر بھیج دیتا ہے۔ || When the break statement is used inside a loop body, it sends control out of the loop. || کله چې break د لوپ په بدنه کې وکارول شي، کنټرول له لوپ بهر لېږي.
+- Continue اسٹیٹمنٹ کنٹرول کو لوپ کے آغاز پر واپس منتقل کرتا ہے۔ || The continue statement moves control back to the start of the loop. || continue بیان کنټرول بیرته د لوپ پیل ته لېږدوي.
+- ایک لوپ کے اندر دوسرے لوپ کو نیسٹڈ لوپ کہتے ہیں۔ || A loop inside another loop is called a nested loop. || د یوه لوپ دننه بل لوپ ته ځالې لوپ وايي.
+@sec 5-ex | مشق || Exercise || تمرین
+@tab doing
+# مشق || Exercise || تمرین
+q 1 | موزوں جواب کا انتخاب کریں۔ || Choose the suitable answer. || مناسب ځواب وټاکئ.
+qp i | C میں کتنی قسم کے لوپ سٹرکچر ہیں؟ (الف) 4 (ب) 3 (ج) 2 (د) 6 || How many kinds of loop structures are there in C? (a) 4 (b) 3 (c) 2 (d) 6 || په C کې څو ډوله لوپ جوړښتونه شته؟ (الف) 4 (ب) 3 (ج) 2 (د) 6
+qp ii | کون سی لوپ ہمیشہ کم از کم ایک مرتبہ ضرور چلتی ہے؟ (الف) do-while (ب) for (ج) while (د) nested || Which loop always runs at least once? (a) do-while (b) for (c) while (d) nested || کوم لوپ تل لږ تر لږه یو ځل حتماً چلېږي؟ (الف) do-while (ب) for (ج) while (د) nested
+qp iii | کس لوپ میں شرط ہمیشہ لوپ کی باڈی سے پہلے آتی ہے؟ (الف) while loop (ب) do-while loop (ج) for loop (د) (الف) اور (ج) دونوں || In which loop does the condition always come before the loop body? (a) while loop (b) do-while loop (c) for loop (d) both (a) and (c) || په کوم لوپ کې شرط تل له بدنې مخکې راځي؟ (الف) while loop (ب) do-while loop (ج) for loop (د) (الف) او (ج) دواړه
+qp iv | کس لوپ میں شرط ہمیشہ لوپ کی باڈی کے بعد آتی ہے۔ (الف) for (ب) while (ج) do-while (د) None || In which loop does the condition always come after the loop body? (a) for (b) while (c) do-while (d) None || په کوم لوپ کې شرط تل له بدنې وروسته راځي؟ (الف) for (ب) while (ج) do-while (د) None
+qp v | ذیل میں دی گئی کون سی اسٹیٹمنٹ لوپ کی باڈی سے باہر نکلنے کے لیے استعمال ہوتی ہے؟ (الف) break (ب) terminate (ج) exit (د) (الف) اور (ب) دونوں || Which of the following statements is used to leave the body of a loop? (a) break (b) terminate (c) exit (d) both (a) and (b) || له لاندې کوم بیان د لوپ له بدنې د وتلو لپاره کارېږي؟ (الف) break (ب) terminate (ج) exit (د) (الف) او (ب) دواړه
+qp vi | اگر ایک لوپ کو دوسری لوپ کے اندر بند کر دیا جائے تو اسے کیا کہا جائے گا؟ (الف) counter loop (ب) complex loop (ج) outer loop (د) nested loop || If one loop is enclosed inside another loop, what is it called? (a) counter loop (b) complex loop (c) outer loop (d) nested loop || که یو لوپ د بل لوپ دننه وتړل شي، څه ورته ویل کېږي؟ (الف) counter loop (ب) complex loop (ج) outer loop (د) nested loop
+@issue Q1(v): exit() also ends the loop, but by ending the whole program; terminate is not a C statement. The intended answer is (الف) break.

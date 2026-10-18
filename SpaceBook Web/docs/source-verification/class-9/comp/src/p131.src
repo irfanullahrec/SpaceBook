@@ -1,0 +1,25 @@
+@printed 123
+@status lesson
+### Program 5.7: A program that resolves the following series and displays the result using while loop. 2+4+6+...+20 || پروگرام 5.7: while لوپ سے درج ذیل سلسلہ حل کر کے نتیجہ دکھانے کا پروگرام۔ 2+4+6+...+20 || پروګرام ۵.۷: د while لوپ په مرسته لاندې لړۍ حل او پایله ښيي. 2+4+6+...+20
+m # include <stdio.h>
+m void main()
+m {
+m     int c, sum=0;
+m     c=2;
+m     while(c<=20)
+m     {
+m         sum=sum+c;
+m         c=c+2;
+m     }
+m     printf("Sum=  %d",sum);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Sum=  110
+endbox
+### 5.1.4 The *do-while* Loop || 5.1.4 *do-while* لوپ || ۵.۱.۴ *do-while* لوپ
+p The *do-while* loop executes the statements until the given condition is true. In this loop, the condition comes after the body of the loop. It is used in the situation when the loop body must be executed at least once even the condition is false for the first time. Working of *do-while* loop is shown in figure 5.3. || *do-while* لوپ دی گئی شرط درست رہنے تک اسٹیٹمنٹس چلاتا ہے۔ اس لوپ میں شرط لوپ کے جسم کے بعد آتی ہے۔ یہ اس صورت میں استعمال ہوتا ہے جب لوپ کا جسم کم از کم ایک بار ضرور چلنا ہو، چاہے پہلی بار شرط غلط ہو۔ *do-while* لوپ کا کام شکل 5.3 میں دکھایا گیا ہے۔ || *do-while* لوپ تر هغه بیانونه اجرا کوي چې ورکړل شوی شرط سم وي. په دې لوپ کې شرط د لوپ له بدنې وروسته راځي. هغه وخت کارېږي چې د لوپ بدنه باید لږ تر لږه یو ځل اجرا شي، که څه هم شرط په لومړي ځل ناسم وي. د *do-while* کار په ۵.۳ شکل کې ښودل شوی.
+p **Note:** The important point to note when using *do-while* loop is that first, the statements inside loop execute and then the condition gets evaluated, if the condition returns true then the control jumps to the "do" for further repeated execution of it, this happens repeatedly until the condition returns false. Once condition returns false control jumps to the next statement in the program after *do-while*. || **نوٹ:** *do-while* لوپ میں اہم بات یہ ہے کہ پہلے لوپ کی اسٹیٹمنٹس چلتی ہیں پھر شرط جانچی جاتی ہے؛ اگر شرط درست ہو تو کنٹرول دوبارہ چلانے کے لیے "do" پر جاتا ہے، اور یہ شرط غلط ہونے تک بار بار ہوتا ہے۔ شرط غلط ہوتے ہی کنٹرول *do-while* کے بعد والی اسٹیٹمنٹ پر چلا جاتا ہے۔ || **یادونه:** په *do-while* لوپ کې مهم ټکی دا دی چې لومړی د لوپ بیانونه اجرا کېږي بیا شرط ارزول کېږي؛ که سم وي کنټرول د بیا اجرا لپاره "do" ته ځي، او دا تر هغه تکرارېږي چې شرط ناسم شي. کله چې شرط ناسم شي کنټرول له *do-while* وروسته راتلونکي بیان ته ځي.
+p Its syntax is: **Syntax:** || اس کا سنٹیکس یہ ہے: **سنٹیکس:** || syntax یې دا دی: **Syntax:**
+m do
+m {
+m         Body of the loop

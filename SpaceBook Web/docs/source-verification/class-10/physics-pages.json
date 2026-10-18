@@ -1,0 +1,453 @@
+[
+  {
+    "pdfPage": 1,
+    "printedPage": null,
+    "status": "corrected",
+    "kind": "cover",
+    "compared": "All printed title, grade, publisher and availability text; decorative montage excluded with reasons. Original text and aligned Urdu/Pashto paragraphs added to separate front matter displayed through active science reader.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf001.png",
+    "validation": "node --check passed for class data and app.js; source script wired after data_phys.js; class-scoped front-matter renderer read directly."
+  },
+  {
+    "pdfPage": 2,
+    "printedPage": null,
+    "status": "corrected",
+    "kind": "title page",
+    "compared": "All printed title, grade, publisher and availability text; decorative montage excluded with reasons. Original text and aligned Urdu/Pashto paragraphs added to separate front matter displayed through active science reader.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf002.png",
+    "validation": "node --check passed for class data and app.js; source script wired after data_phys.js; class-scoped front-matter renderer read directly."
+  },
+  {
+    "pdfPage": 3,
+    "printedPage": "1",
+    "status": "corrected",
+    "kind": "publication credits",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf003.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 4,
+    "printedPage": null,
+    "status": "corrected",
+    "kind": "Quranic verse in Urdu",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf004.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 5,
+    "printedPage": null,
+    "status": "corrected",
+    "kind": "contents",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf005.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 6,
+    "printedPage": "1",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf006.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 7,
+    "printedPage": "2",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf007.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 8,
+    "printedPage": "3",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf008.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content."
+  },
+  {
+    "pdfPage": 9,
+    "printedPage": "4",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf009.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "sourceDefects": [
+      {
+        "location": "Equation 10.3",
+        "printed": "a ∝ x",
+        "handling": "Original retained; separately labeled clarification explains a ∝ −x for signed displacement."
+      }
+    ],
+    "comparison": "Original six main blocks, equations 10.2 and 10.3, ball/bowl Figure 10.2 labels, TIP text and ECG trace. Original printed sign retained. All prose paired in English/Urdu/Pashto; native SVG visuals checked through local renders."
+  },
+  {
+    "pdfPage": 10,
+    "printedPage": "6",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf010.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Example 10.2 question, GIVEN/REQUIRED, full source calculation including cancellations, answer and Figure 10.4 labels; Assignment 10.2 without invented answer; 10.3.1 derivation with equation labels 1 and 2; Angular Frequency TIP. All paired translations and native SVG/KaTeX code."
+  },
+  {
+    "pdfPage": 11,
+    "printedPage": "5",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf011.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Spring-motion proof: all original paragraphs, F_res ∝ -x, Hooke/Newton equations numbered 1/2 and 10.4, final a ∝ x as printed; Figure 10.3 stretched/equilibrium/compressed positions, spring lengths, restoring directions, displacement labels, zero-force label. Source Hook/Hooke/Hooks spellings retained; paired translations. Inserted before PDF page 10 content by printed order, without duplicating records."
+  },
+  {
+    "pdfPage": 12,
+    "printedPage": "7",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf012.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Square-root continuation, full time-period paragraph, equations 10.5 and 10.6, amplitude independence statement, Example 10.3 original question/GIVEN/REQUIRED/full solution with squaring, isolation, substitution, unit cancellations, 2.02 kg = 2 kg and final 2.0 kg source wording. Uppercase K in isolation retained as printed. All three language fields and real KaTeX checked."
+  },
+  {
+    "pdfPage": 13,
+    "printedPage": "8",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf013.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Assignment 10.3 source 0.2 kg and 4 N/m question only; original simple-pendulum definition, weight paragraph, three distinct bullet conditions, full force-component proof, numbered equations 1/2, small-angle arc statement; Figure 10.5 with O/P/Q/R/S, lengths l, displacement x, arc s, tension T and radial/tangential weight components. Original wording retained; paired translations, semantic list, locally inspected native SVG."
+  },
+  {
+    "pdfPage": 14,
+    "printedPage": "9",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf014.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Pendulum proof continued: numbered equations 3/4 and 10.7 with cancelled masses, restoring direction and inertia paragraph. Example 10.4 source question, GIVEN/REQUIRED, original solution introduction and negative restoring-force formula; Figure 10.6 coded weight/components and ten-degree labels. Example continues on the next PDF page and is explicitly marked continuationExpected. Source awkward phrasing and F_rest/F_res notation retained; three-language formatted equations checked."
+  },
+  {
+    "pdfPage": 15,
+    "printedPage": "10",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf015.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Example 10.4 continued in same stable record: substitution, sin10 rounded 0.17, negative 0.167 N and magnitude answer. Assignment 10.4 without invented answer. Full 10.4.1 source period proof, cancellation, square roots and equation 10.8; source mass/amplitude independence paragraph. Original mass spring wording retained with separate clarification. Three language KaTeX rendering checked.",
+    "sourceDefects": [
+      {
+        "location": "10.4.1 parenthetical definition",
+        "printed": "the time it takes for the mass spring system to complete one cycle",
+        "handling": "Retained exactly and translated; labeled clarification says current section concerns a simple pendulum."
+      },
+      {
+        "location": "Paragraph after equation 10.8",
+        "printed": "depends directly on length and inversely on gravitational acceleration",
+        "handling": "Original retained. Clarification states square-root proportionalities and small-angle assumption."
+      }
+    ]
+  },
+  {
+    "pdfPage": 16,
+    "printedPage": "11",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf016.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Original frequency paragraph and equation 10.9, LAB WORK, Example 10.5 full question/GIVEN/REQUIRED/squaring/isolation/substitution/3.73 m/s² = 3.73 N/kg [down] answer, Gravitational Field TIP, Assignment 10.5 with printed Everest altitude 8954.0 m and no invented solution. Paired translations and all worked formulas rendered through real KaTeX in three languages."
+  },
+  {
+    "pdfPage": 17,
+    "printedPage": "12",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf017.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Pendulum LAB WORK on mass/amplitude independence; 10.5 original damping definition, ideal-systems paragraph and complete resistance/energy paragraph. Figure 10.7 native two-panel SVG with constant-length pendulum positions, x01/x02/x03 amplitudes, displacement/time axes, three successively decreasing positive peaks and negative troughs; reusable geometry, translated axis labels. Local SVG preview caught and fixed time-axis arrowhead and label overlap."
+  },
+  {
+    "pdfPage": 18,
+    "printedPage": "13",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf018.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "SHOCK ABSORBERS note: three original paragraphs, tyre/strut/spring diagram, oil-reservoir/piston/holes/spring cutaway and three labelled damping curves with full caption. Native SVG stores reusable geometry and curve samples; original and Urdu/Pashto labels/captions paired. 10.6 original wave definition replaces active legacy paragraph. Pendulum/damping/wave definitions synchronized to source bank. Native diagrams inspected locally; no raster content."
+  },
+  {
+    "pdfPage": 19,
+    "printedPage": "14",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf019.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Two common wave features preserved as ordered list. WATER WAVES AS MEANS OF ENERGY TRANSFER activity: all three original paragraphs, tub/pencil/ripples/cork diagram and five successive water/cork panels with rightward energy arrow and fixed cork horizontal position. Two complete source paragraphs after activity preserved, including ball versus rope and Figure 10.8(a) reference. Paired English/Urdu/Pashto, reusable SVG geometry, source figures inspected locally."
+  },
+  {
+    "pdfPage": 20,
+    "printedPage": "15",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf020.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Figure 10.8 original caption retained, with you/friend/energy rope pulse panel and wall/marked point/vertical oscillation wave-train panel. Full wave/rope paragraph and stone/pond paragraph; original 10.6.1, mechanical/electromagnetic definitions and material-medium conditions. Figure 10.9 native projected perpendicular electric/magnetic fields with travel arrow and translated labels; source definitions synchronized. Local SVG checks and three-language reader validation passed."
+  },
+  {
+    "pdfPage": 21,
+    "printedPage": "16",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf021.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Electromagnetic field continuation and examples, transverse/longitudinal classification and full definitions, Slinky explanation, crest/trough definitions, AM/FM TIP including 3.00×10⁸ m/s. Figure 10.10 native slinky coils along transverse curve with equilibrium, crest, trough, wavelength λ, upper/lower x0 amplitude arrows, wave/vibration directions and hand. Structured source paragraphs, definitions and three-language coded reader verified."
+  },
+  {
+    "pdfPage": 22,
+    "printedPage": "17",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf022.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Figure 10.11 native longitudinal slinky with compression/rarefaction regions, rightward wave and vibration directions, λ and x0 arrows. Full compression/rarefaction explanation; 10.6.2 characteristic wave parameters; exact wavelength and amplitude definitions. Figure 10.12 native sinusoid with λ crest/trough distances, x0 arrows, axes and printed t label retained. Editorial clarification explicitly identifies the source axis inconsistency. Definitions synchronized and all three language renderings checked."
+  },
+  {
+    "pdfPage": 23,
+    "printedPage": "18",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf023.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Wave Cycle definition; frequency f, N/t equation 10.10 and three-cycle frequency explanation; Time Period definition and T=1/f equation 10.11; Figure 10.13 coded cycle/P/T graph; earthquake Point to Ponder text with native P/S/surface-wave concept card; Wave Speed definition and v=distance/time=Δs/Δt equation. Paired translations and native figures validated."
+  },
+  {
+    "pdfPage": 24,
+    "printedPage": "19",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf024.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Universal wave equation derivation: Δs=λ, Δt=T, equations 2, 3 and 10.12 v=fλ, explanatory paragraph. Full Example 10.6 wave speed with GIVEN/REQUIRED/solution, 2.6 Hz × 0.37 m, 0.962 m s⁻¹ answer and reasonableness sentence. Assignment 10.6 wavelength of sound retained without answer. 10.7 properties opener preserved."
+  },
+  {
+    "pdfPage": 25,
+    "printedPage": "20",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf025.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Ripple-tank setup explanation, reflection/refraction/diffraction purpose, shallow tray/transparent base/illumination/shadow projection, reflector explanation, straight and spherical dipper sources and electric motor. Native combined SVG for Figure 10.14 and Figure 10.15(a/b), source labels paired and locally inspected. 10.7 properties text synchronized."
+  },
+  {
+    "pdfPage": 26,
+    "printedPage": "21",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf026.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Wavefront definition for two/three-dimensional waves, ray perpendicular relationship, plane-wave explanation and A. Reflection definition. Native multi-panel SVG reconstructs circular fronts/rays, plane fronts/rays, and incident/reflected fronts at a barrier with translated labels. Reflection definition synchronized and local reader validation passed."
+  },
+  {
+    "pdfPage": 27,
+    "printedPage": "22",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf027.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Reflection continuation for straight/oblique barriers and ripple tank. B. Refraction definition, shallow/deep water wavelength/speed changes, straight and angled boundary behavior; C. Diffraction definition and two-obstacle ripple-tank method. Native Figure 10.19 shallow/deep boundary with wavefront spacing and ray direction, translated labels; definitions synchronized."
+  },
+  {
+    "pdfPage": 28,
+    "printedPage": "23",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf028.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Diffraction continuation: small-opening waves spread circularly when opening ≤ wavelength; wavelength/speed unchanged; large obstacle separation leaves center unaffected. Native Figure 10.20 small/large openings with wavefronts and rays. Full KEY POINTS list preserved as structured records, including all ten source definitions. GROUP A “EARTHQUAKE” research/presentation task preserved without invented answer."
+  },
+  {
+    "pdfPage": 29,
+    "printedPage": "24",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf029.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "GROUP B two spring-mass systems, GROUP C angle in simple pendulum, GROUP D tsunami, GROUP E defining terms prompts preserved with aligned translations. Exercise questions 1–3 transcribed with all options and no invented answer; source handwriting check marks excluded as scan annotation."
+  },
+  {
+    "pdfPage": 30,
+    "printedPage": "25",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf030.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Exercise questions 4–8 transcribed with all options, followed by the complete conceptual-question heading and questions 1–9 on oscillatory motion, pendulum scaling, wave speed and diffraction. Aligned English/Urdu/Pashto records preserved without invented answers; scan watermark excluded."
+  },
+  {
+    "pdfPage": 31,
+    "printedPage": "26",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf031.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Complete comprehensive-question prompts 1–7 and numerical-question prompts 1–7 transcribed with units, givens and all source wording. Prompts are paired in English/Urdu/Pashto and kept separate from the existing numerical answer bank; no solutions were invented."
+  },
+  {
+    "pdfPage": 32,
+    "printedPage": "27",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf032.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Unit 11 Sound opener: bat detection prompt, unit title and all ten student learning outcomes transcribed and paired across English, Urdu and Pashto; scan watermark and decorative photograph excluded."
+  },
+  {
+    "pdfPage": 33,
+    "printedPage": "28",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf033.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Sound unit contents, introductory sound paragraphs, 11.1 Sound Waves definition and longitudinal-medium/vacuum explanation transcribed with source headings and aligned translations."
+  },
+  {
+    "pdfPage": 34,
+    "printedPage": "29",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf034.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Figure 11.1 tuning fork and Figure 11.2 vibration examples reconstructed as native SVG; production and transmission paragraphs retained with translated labels and captions."
+  },
+  {
+    "pdfPage": 35,
+    "printedPage": "30",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf035.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Bell-in-jar activity, sound-propagation pressure graph and 11.1.3 detection text transcribed; bell, graph and labels reconstructed as coded SVG without scan images."
+  },
+  {
+    "pdfPage": 36,
+    "printedPage": "31",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf036.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Physics of hearing text, ear anatomy, 11.2 Characteristics of Sound, pitch explanation and bicycle-wheel activity transcribed with native ear and bicycle SVGs."
+  },
+  {
+    "pdfPage": 37,
+    "printedPage": "32",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf037.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Loudness factors, drum example, ruler activity and 11.2.3 quality/timbre paragraphs transcribed with a coded ruler illustration and aligned translations."
+  },
+  {
+    "pdfPage": 38,
+    "printedPage": "33",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf038.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "11.3 Sound Intensity definition, equation 11.1, objective intensity versus subjective loudness, intensity-level introduction and Table 11.1 reconstructed with a native intensity SVG and semantic table."
+  },
+  {
+    "pdfPage": 39,
+    "printedPage": "34",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf039.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Intensity-level logarithmic derivation and Point to Ponder note transcribed, including printed equation numbering and the 0 dB clarification."
+  },
+  {
+    "pdfPage": 40,
+    "printedPage": "35",
+    "status": "corrected",
+    "kind": "lesson",
+    "compared": "Visible source text, punctuation, heading hierarchy, reading order and original language; explicit English/Urdu/Pashto paired records. Decorative borders, scan watermark and handwriting excluded.",
+    "data": "js/physics_10_source_data.js",
+    "evidence": "tmp/class-10-physics/pdf040.png",
+    "validation": "node syntax and focused non-browser class-10 validate_physics.cjs passed; no raster lesson content.",
+    "comparison": "Table 11.2 source/intensity-level values, decibel equation 11.2, bel-to-decibel reminder and closing paragraph transcribed as structured source content."
+  }
+]

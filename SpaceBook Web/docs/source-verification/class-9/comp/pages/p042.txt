@@ -1,0 +1,27 @@
+@pdf 68
+@printed 34
+@status lesson
+### 2. Assembly language || 2. اسمبلی زبان || ۲. اسمبلي ژبه
+p Assembly language is a low-level language. It is one step higher than machine language. In assembly language, symbols are used instead of binary code. These symbols are called ***mnemonics***. For example, ***sub*** instruction is used to subtract two numbers. || اسمبلی زبان ایک لو لیول زبان ہے۔ یہ مشینی زبان سے ایک درجہ اوپر ہے۔ اسمبلی زبان میں بائنری کوڈ کی بجائے علامات استعمال ہوتی ہیں۔ ان علامات کو ***نیمونکس (mnemonics)*** کہتے ہیں۔ مثلاً ***sub*** ہدایت دو اعداد کو تفریق کرنے کے لیے استعمال ہوتی ہے۔ || اسمبلي ژبه یوه ټیټې کچې ژبه ده. له ماشیني ژبې یو ګام لوړه ده. په اسمبلي ژبه کې د باینري کوډ پر ځای نښې کارېږي. دې نښو ته ***mnemonics*** وايي. د بېلګې په توګه ***sub*** لارښوونه د دوو عددونو د تفریق لپاره کارېږي.
+p It is also called symbolic language. Programs written in assembly language are easier to write and modify than machine language. The instructions of the assembly language are converted to machine codes by a language translator called assembler and then they are executed by the computer. Assembly language is also known as second generation language. || اسے علامتی زبان بھی کہا جاتا ہے۔ اسمبلی زبان میں لکھے گئے پروگرام مشینی زبان کی نسبت لکھنے اور تبدیل کرنے میں آسان ہیں۔ اسمبلی زبان کی ہدایات کو اسمبلر نامی زبان مترجم مشینی کوڈ میں بدلتا ہے اور پھر کمپیوٹر ان پر عمل کرتا ہے۔ اسمبلی زبان کو دوسری نسل کی زبان بھی کہا جاتا ہے۔ || دې ته نښه ییزه ژبه هم وايي. په اسمبلي ژبه لیکل شوي پروګرامونه تر ماشیني ژبې په لیکلو او بدلولو کې اسانه دي. د اسمبلي ژبې لارښوونې د assembler په نوم یوه ژباړونکي له خوا په ماشیني کوډونو بدلېږي او بیا کمپیوټر یې اجرا کوي. اسمبلي ژبه د دویم نسل ژبه هم بلل کېږي.
+svg Figure: 2.2 Translation Process in Assembly Language || شکل 2.2 اسمبلی زبان میں ترجمے کا عمل || ۲.۲ شکل په اسمبلي ژبه کې د ژباړې بهیر
+<svg viewBox="0 0 520 150" width="520" role="img" aria-label="Assembly language box (mov eax, ebx; xor eax, eax; add eax, 0xff) with an arrow labelled Assembler + Linker, Translator, to a Machine language box (010110100101, 111010101010, 101010101010) beside a processor chip" font-family="Consolas, Courier New, monospace" font-size="12">
+<text x="70" y="16" font-family="Arial" fill="#0e7490" text-anchor="middle">Assembly language</text>
+<rect x="10" y="24" width="120" height="66" fill="#fff" stroke="#111827"/><text x="20" y="46">mov eax, ebx</text><text x="20" y="64">xor eax, eax</text><text x="20" y="82">add eax, 0xff</text>
+<polygon points="160,48 330,48 330,38 360,57 330,76 330,66 160,66" fill="#7f1d1d"/>
+<text x="260" y="32" font-family="Arial" text-anchor="middle">Assembler + Linker</text><text x="260" y="94" font-family="Arial" text-anchor="middle">Translator</text>
+<text x="450" y="16" font-family="Arial" fill="#0e7490" text-anchor="middle">Machine language</text>
+<rect x="380" y="24" width="130" height="66" fill="#fff" stroke="#111827"/><text x="392" y="46">010110100101</text><text x="392" y="64">111010101010</text><text x="392" y="82">101010101010</text>
+<rect x="420" y="104" width="44" height="40" rx="4" fill="#e2e8f0" stroke="#334155"/><text x="442" y="128" font-family="Arial" font-size="10" text-anchor="middle">CPU</text>
+</svg>
+endsvg
+svg Figure: 2.3 Various Programming Languages || شکل 2.3 مختلف پروگرامنگ زبانیں || ۲.۳ شکل بېلابېلې پروګرامي ژبې
+<svg viewBox="0 0 420 210" width="420" role="img" aria-label="Layered stack from bottom: Hardware, Machine Language, Assembly Language, High-Level Language, with blocks FORTRAN, C, C++ and Java on top" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+<rect x="20" y="168" width="380" height="34" fill="#111827"/><text x="210" y="191" fill="#fff">Hardware</text>
+<rect x="40" y="132" width="340" height="34" fill="#16a34a"/><text x="210" y="155" fill="#fff">Machine Language</text>
+<rect x="60" y="96" width="300" height="34" fill="#2563eb"/><text x="210" y="119" fill="#fff">Assembly Language</text>
+<rect x="80" y="60" width="260" height="34" fill="#be123c"/><text x="210" y="83" fill="#fff">High-Level Language</text>
+<g fill="#ea580c" stroke="#9a3412"><rect x="90" y="24" width="70" height="34"/><rect x="170" y="24" width="50" height="34"/><rect x="200" y="4" width="50" height="22"/><rect x="270" y="10" width="60" height="48"/></g>
+<g fill="#fff" font-size="12"><text x="125" y="46">FORTRAN</text><text x="195" y="46">C</text><text x="225" y="20">C++</text><text x="300" y="38">Java</text></g>
+</svg>
+endsvg

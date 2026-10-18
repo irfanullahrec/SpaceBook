@@ -1,0 +1,16 @@
+@printed 179
+@status lesson
+### افقی فریم سیٹ بنانا || Making a horizontal frameset || افقي فریم سېټ جوړول
+p شکل نمبر 7.59 میں HTML ڈاکومنٹ افقی فریم بنانے کا طریقہ ظاہر کرتی ہے۔ || The HTML document in Figure 7.59 shows how to make horizontal frames. || په ۷.۵۹ شکل کې HTML سند د افقي چوکاټونو جوړولو طریقه ښيي.
+### شکل نمبر 7.59 افقی فریم بنانے کے لئے HTML ڈاکومنٹ || Figure 7.59 HTML document for making horizontal frames || ۷.۵۹ شکل د افقي چوکاټونو جوړولو لپاره HTML سند
+m <html>
+m <head>
+m <title>Horizontal Frames</title>
+m </head>
+m <frameset rows="50%, 50%">
+m     <frame src="frame1.html"/>
+m     <frame src="frame2.html"/>
+m </frameset>
+m </html>
+p یہ براؤزر ونڈو کو دو برابر سائز کے افقی فریموں میں تقسیم کرے گا۔ HTML ڈاکومنٹ frame1.html کو پہلے اور frame2.html دوسرے فریم میں دکھائے گا جیسا کہ شکل نمبر 7.60 میں دکھایا گیا ہے۔ || This divides the browser window into two horizontal frames of equal size. It shows the HTML document frame1.html in the first frame and frame2.html in the second, as shown in Figure 7.60. || دا براوزر کړکۍ په دوو برابرو افقي چوکاټونو وېشي. HTML سند frame1.html په لومړي او frame2.html په دویم چوکاټ کې ښيي، لکه په ۷.۶۰ شکل کې.
+@deco Figure 7.60 براؤزر ونڈو جس میں دو افقی فریم ہیں (Browser window with two horizontal frames): the ROM text in the top frame and the RAM text in the bottom frame, each with its own scroll bar. Not reproduced.

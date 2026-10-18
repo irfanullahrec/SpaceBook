@@ -1,0 +1,27 @@
+@pdf 172
+@printed 219
+@status lesson
+m     <th>Savings</th>
+m     <th>Savings for holiday!</th>
+m   </tr>
+m   <tr>
+m     <td>January</td>
+m     <td>RS. 99</td>
+m     <td rowspan="2">RS. 50</td>
+m   </tr>
+m   <tr>
+m     <td>February</td>
+m     <td>RS. 80</td>
+m   </tr>
+m  </table>
+m </body>
+m </html>
+p The code will generate the result in the browser window, as shown in figure 7.56. || کوڈ براؤزر ونڈو میں شکل 7.56 کی طرح نتیجہ دے گا۔ || کوډ به په براوزر کې د ۷.۵۶ شکل په څېر پایله ورکړي.
+table Figure 7.56 Table showing rowspan attribute || شکل 7.56: rowspan والا جدول || ۷.۵۶ شکل: د rowspan جدول
+th | Month || مہینہ || میاشت | Savings || بچت || سپما | Savings for holiday! || چھٹی کے لیے بچت! || د رخصتۍ لپاره سپما!
+tr | January || جنوری || جنوري | RS. 99 | RS. 50 (spans 2 rows) || RS. 50 (دو قطاروں پر) || RS. 50 (دوه قطاره)
+tr | February || فروری || فبروري | RS. 80 | ↑
+endtable
+@sec 7-8 | 7.8 Creating Frames || 7.8 فریم بنانا || ۷.۸ frames جوړول
+## 7.8 CREATING FRAMES || 7.8 فریم بنانا || ۷.۸ frames جوړول
+p HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns. || HTML فریم براؤزر ونڈو کو کئی حصوں میں تقسیم کرنے کے لیے استعمال ہوتے ہیں جہاں ہر حصہ الگ HTML دستاویز لوڈ کر سکتا ہے۔ براؤزر ونڈو میں فریموں کا مجموعہ فریم سیٹ کہلاتا ہے۔ ونڈو جدول کی طرح قطاروں اور کالموں میں فریموں میں تقسیم ہوتی ہے۔ || HTML frames د براوزر کړکۍ په څو برخو وېشي چې هره برخه بېل HTML سند پورته کولی شي. په کړکۍ کې د frames ټولګه frameset بلل کېږي. کړکۍ د جدولونو په څېر په قطارونو او ستنو وېشل کېږي.

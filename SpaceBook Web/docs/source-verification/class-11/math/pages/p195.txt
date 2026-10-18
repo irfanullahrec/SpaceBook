@@ -1,0 +1,31 @@
+@printed 195
+q 6 | If one card is drawn at random from a well shuffled pack of 52 cards. Then find the probability of each of the following: || اگر اچھی طرح پھینٹی گئی 52 تاش کے پتوں کی گڈی سے ایک پتہ بے ترتیب نکالا جائے، تو درج ذیل میں سے ہر ایک کا احتمال معلوم کریں: || که د 52 کارتونو له ښه ګډې شوې دستې څخه یو کارت په تصادفي ډول واخیستل شي، د لاندې هرې پېښې احتمال پیدا کړئ:
+qp (i) | Drawing an ace card, || اِکا کا پتہ نکالنا، || د اېس کارت ایستل،
+qp (ii) | Drawing either spade or hearts, || حکم یا پان کا پتہ نکالنا، || د سپېډ یا زړه کارت ایستل،
+qp (iii) | Drawing a diamond card, || اینٹ کا پتہ نکالنا، || د خښتې کارت ایستل،
+qp (iv) | Drawing a face card, || تصویری پتہ نکالنا، || د څېرې کارت ایستل،
+qp (v) | Not drawing an ace of hearts. || پان کا اِکا نہ نکالنا۔ || د زړه اېس نه ایستل.
+q 7 | Two dice are thrown simultaneously. Find the probability of getting: || دو پانسے بیک وقت پھینکے جاتے ہیں۔ درج ذیل کا احتمال معلوم کریں: || دوه ځارونه په یو وخت غورځول کېږي. د لاندې پایلو احتمال پیدا کړئ:
+qp (i) | doublet of even numbers || ایک ہی جفت عدد کا جوڑا || د یوه جفت عدد جوړه
+qp (ii) | a sum less than 6 || 6 سے کم مجموعہ || له 6 کمه مجموعه
+qp (iii) | a sum more than 7 || 7 سے زیادہ مجموعہ || له 7 زیاته مجموعه
+qp (iv) | a sum greater than 10 || 10 سے بڑا مجموعہ || له 10 لویه مجموعه
+qp (v) | a sum at least 10 || کم از کم 10 کا مجموعہ || لږ تر لږه 10 مجموعه
+qp (vi) | six as the product || حاصل ضرب چھ || حاصل ضرب شپږ
+qp (vii) | an even number as the sum || مجموعہ جفت عدد ہو || مجموعه جفت عدد وي
+qp (viii) | an odd number as the sum || مجموعہ طاق عدد ہو || مجموعه طاق عدد وي
+qp (ix) | a multiple of 3 as the sum || مجموعہ 3 کا مضرب ہو || مجموعه د 3 مضرب وي
+qp (x) | sum as a prime number || مجموعہ مفرد عدد ہو || مجموعه لومړنی عدد وي
+endexercise
+@sec 6.4.3 | Laws of Probability || احتمال کے قوانین || د احتمال قوانین
+p It is easier to compute the probability of an event from known probabilities of other events. This is true if the event can be expressed as the union or intersection of two other events or as the complement of an event. Some basic elementary laws of probability are given below in the form of theorems. || کسی واقعے کا احتمال دوسرے واقعات کے معلوم احتمالات سے نکالنا زیادہ آسان ہے۔ ایسا تب ہوتا ہے جب واقعے کو دو دوسرے واقعات کے اجتماع یا اشتراک یا کسی واقعے کے متمم کے طور پر ظاہر کیا جا سکے۔ احتمال کے کچھ بنیادی قوانین ذیل میں قضیوں کی صورت میں دیے گئے ہیں۔ || د یوې پېښې احتمال د نورو پېښو له معلومو احتمالونو څخه محاسبه کول اسانه دي. دا هغه وخت سم دي چې پېښه د دوو نورو پېښو د اتحاد یا اشتراک یا د یوې پېښې د متمم په توګه څرګنده شي. د احتمال ځینې بنسټیز قوانین لاندې د قضیو په بڼه ورکړل شوي دي.
+@sec 6.4.4 | Use Venn diagrams to find the probability for the occurrence of an event || واقعے کے وقوع کا احتمال معلوم کرنے کے لیے وین خاکے استعمال کریں || د یوې پېښې د رامنځته کېدو د احتمال لپاره د وین دیاګرامونه وکاروئ
+svg If A and B are disjoint; If A and B are overlapping; If $B\subset A$. || اگر A اور B جدا ہوں؛ اگر A اور B متداخل ہوں؛ اگر $B\subset A$۔ || که A او B جلا وي؛ که A او B سره ګډې برخې ولري؛ که $B\subset A$.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-label="Union of two sets: disjoint, overlapping, contained"><title>Union of two sets: disjoint, overlapping, contained</title><g stroke="#334155" stroke-width="2" fill="none"><rect x="5" y="5" width="710" height="205"/><path d="M240 5V210M480 5V210"/></g><g fill="#dbeafe" stroke="#075985" stroke-width="2"><circle cx="95" cy="115" r="55"/><circle cx="185" cy="115" r="27"/><circle cx="340" cy="115" r="55"/><circle cx="400" cy="115" r="30"/><circle cx="595" cy="115" r="55"/><circle cx="615" cy="115" r="28"/></g><g fill="none" stroke="#075985" stroke-width="2"><circle cx="340" cy="115" r="55"/><circle cx="400" cy="115" r="30"/></g><g font-family="Arial,sans-serif" font-size="18" fill="#172b4d"><text x="87" y="50">A</text><text x="180" y="76">B</text><text x="332" y="50">A</text><text x="396" y="77">B</text><text x="588" y="50">A</text><text x="611" y="80">B</text></g></svg>
+endsvg
+p We know that if A and B are two sets, then the shaded parts in the following diagram represent $A\cup B$. || ہم جانتے ہیں کہ اگر A اور B دو سیٹ ہوں، تو درج ذیل خاکے کے سایہ دار حصے $A\cup B$ کو ظاہر کرتے ہیں۔ || پوهېږو چې که A او B دوه سېټونه وي، نو په لاندې دیاګرام کې رنګ شوې برخې $A\cup B$ ښيي.
+p The above diagrams help us in understanding the formulae about the sum of two probabilities. || اوپر کے خاکے دو احتمالات کے مجموعے کے کلیے سمجھنے میں مدد کرتے ہیں۔ || پورته دیاګرامونه د دوو احتمالونو د مجموعې د فورمولونو په پوهېدو کې مرسته کوي.
+p We know that: || ہم جانتے ہیں کہ: || موږ پوهېږو چې:
+p $P(E)$ is the probability of the occurrence of an event E. || $P(E)$ واقعہ E کے وقوع کا احتمال ہے۔ || $P(E)$ د E پېښې د رامنځته کېدو احتمال دی.
+p If A and B are two events, then || اگر A اور B دو واقعات ہوں، تو || که A او B دوه پېښې وي، نو
+p $P(A)=$ the probability of the occurrence of event A; || $P(A)=$ واقعہ A کے وقوع کا احتمال؛ || $P(A)=$ د A پېښې د رامنځته کېدو احتمال؛

@@ -1,0 +1,486 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s112-sd-3",
+  "title": "3.5.3 Standard deviation and variance for ungrouped data · Example 3.11",
+  "headingUrdu": "3.5.3 غیر گروہی اعداد و شمار کے لیے معیاری انحراف اور تغیر کا حساب · مثال 3.11",
+  "headingPashto": "3.5.3 د نه‌ګروپ شویو معلوماتو لپاره د معیاري انحراف او وریانس محاسبه · بېلګه 3.11",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 112,
+    "printedPage": "104"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s112-h353",
+      "en": "3.5.3 Calculation of standard deviation and variance in case of ungrouped data",
+      "ur": "3.5.3 غیر گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب",
+      "ps": "3.5.3 د نه‌ګروپ شویو معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s112-ex11",
+      "en": "Example: 3.11",
+      "ur": "مثال: 3.11",
+      "ps": "بېلګه: 3.11",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-q11",
+      "en": "Compute standard deviation and variance for the sample 2, 4, 6, 8, 10.",
+      "ur": "نمونے 2, 4, 6, 8, 10 کے لیے معیاری انحراف اور تغیر حساب کریں۔",
+      "ps": "د نمونې 2, 4, 6, 8, 10 لپاره معیاري انحراف او وریانس محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-sol11",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-m1",
+      "en": "(i) By direct method",
+      "ur": "(i) براہِ راست طریقے سے",
+      "ps": "(i) په مستقیم طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-m2",
+      "en": "(ii) By shortcut method",
+      "ur": "(ii) مختصر طریقے سے",
+      "ps": "(ii) په لنډه طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s112-h353",
+        "stat11-s112-ex11",
+        "stat11-s112-q11",
+        "stat11-s112-sol11",
+        "stat11-s112-m1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s112-m2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s112-a",
+      "latex": "s=\\sqrt{\\dfrac{\\sum(x-\\bar{x})^2}{n-1}}",
+      "accessible": "s = √(Σ(x − x̄)²/(n − 1))",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-b",
+      "latex": "s^2=\\dfrac{\\sum(x-\\bar{x})^2}{n-1}",
+      "accessible": "s² = Σ(x − x̄)²/(n − 1)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-c",
+      "latex": "\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{30}{5}=6",
+      "accessible": "x̄ = Σx/n = 30/5 = 6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-d",
+      "latex": "\\therefore\\ s=\\sqrt{\\dfrac{40}{5-1}}=\\sqrt{\\dfrac{40}{4}}=\\sqrt{10}=3.16\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ s = √(40/(5 − 1)) = √(40/4) = √10 = 3.16   (Absolute dispersion)   [minus sign in \"5 – 1\" not visible in the first root]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ s = √(40/(5 − 1)) = √(40/4) = √10 = 3.16   (Absolute dispersion)   [minus sign in \"5 – 1\" not visible in the first root]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ s = √(40/(5 − 1)) = √(40/4) = √10 = 3.16   (Absolute dispersion)   [minus sign in \"5 – 1\" not visible in the first root]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ s = √(40/(5 − 1)) = √(40/4) = √10 = 3.16   (Absolute dispersion)   [minus sign in \"5 – 1\" not visible in the first root]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-e",
+      "latex": "s^2=\\dfrac{40}{5-1}=\\dfrac{40}{4}=10",
+      "accessible": "s² = 40/(5 − 1) = 40/4 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = 40/(5 − 1) = 40/4 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = 40/(5 − 1) = 40/4 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = 40/(5 − 1) = 40/4 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-f",
+      "latex": "\\text{Coefficient of S.D}=\\dfrac{s}{\\bar{x}}=\\dfrac{3.16}{6}=0.53\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of S.D = s/x̄ = 3.16/6 = 0.53   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 3.16/6 = 0.53   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 3.16/6 = 0.53   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 3.16/6 = 0.53   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-g",
+      "latex": "s=\\sqrt{\\dfrac{1}{n-1}\\left[\\sum x^2-\\dfrac{\\left(\\sum x\\right)^2}{n}\\right]}",
+      "accessible": "s = √((1/(n − 1))[Σx² − (Σx)²/n])",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √((1/(n − 1))[Σx² − (Σx)²/n])"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √((1/(n − 1))[Σx² − (Σx)²/n])"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √((1/(n − 1))[Σx² − (Σx)²/n])"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s112-h",
+      "latex": "s^2=\\dfrac{1}{n-1}\\left[\\sum x^2-\\dfrac{\\left(\\sum x\\right)^2}{n}\\right]",
+      "accessible": "s² = (1/(n − 1))[Σx² − (Σx)²/n]   [the printed form shows the numerator of the second term as \"(Σ x²)\"]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = (1/(n − 1))[Σx² − (Σx)²/n]   [the printed form shows the numerator of the second term as \"(Σ x²)\"]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = (1/(n − 1))[Σx² − (Σx)²/n]   [the printed form shows the numerator of the second term as \"(Σ x²)\"]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = (1/(n − 1))[Σx² − (Σx)²/n]   [the printed form shows the numerator of the second term as \"(Σ x²)\"]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.11: direct method table",
+      "captionUrdu": "مثال 3.11: براہِ راست طریقے کا جدول",
+      "captionPashto": "بېلګه 3.11: د مستقیمې طریقې جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "-4",
+            "ur": "-4",
+            "ps": "-4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-11"
+    }
+  ],
+  "sourceNote": "Printed page 104. The two direct-method formulas are printed side by side above the table and the two shortcut formulas side by side at the bottom; each is kept as its own equation in reading order. In the printed s² shortcut formula the second term appears as (Σx²)/n instead of (Σx)²/n; the correct form is shown and the misprint noted. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:50:15.591648+00:00",
+    "scope": "Scan 112 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,50 @@
+@printed 97
+@status lesson
+@deco The code on this page is printed faintly; braces, "%" signs and "\n" are partly lost and restored from context.
+### پروگرام 5.3 یہ پروگرام کوئی بھی عدد اِن پُٹ کروائے گا اور پھر اس عدد کا 10 تک پہاڑہ اسکرین پر پرنٹ کرے گا۔ || Program 5.3 This program inputs any number and then prints its multiplication table up to 10 on the screen || پروګرام ۵.۳ دا پروګرام هر عدد داخلوي او بیا یې تر 10 پورې د ضرب جدول په سکرین چاپوي
+m # include <stdio.h>
+m void main()
+m {
+m     int tab,n,x;
+m     printf("\nEnter number for table: ");
+m     scanf("%d",&n);
+m     for(x=1;x<=10;x++)
+m     printf("\n%d X %d = %d",n,x,n*x);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter number for table: 5
+m 5 × 1 = 5
+m 5 × 2 = 10
+m 5 × 3 = 15
+m 5 × 4 = 20
+m 5 × 5 = 25
+m 5 × 6 = 30
+m 5 × 7 = 35
+m 5 × 8 = 40
+m 5 × 9 = 45
+m 5 × 10 = 50
+endbox
+@issue The variable tab is declared but never used. The code prints a capital letter X where the output box shows the multiplication sign ×.
+### پروگرام 5.4 یہ پروگرام 1 سے لیکر 20 تک تمام طاق اعداد کا حاصل جمع معلوم کر کے اسکرین پر پرنٹ کرے گا۔ || Program 5.4 This program finds the sum of all the odd numbers from 1 to 20 and prints it on the screen || پروګرام ۵.۴ دا پروګرام له 1 تر 20 د ټولو طاقو عددونو جمع پیدا او په سکرین چاپوي
+m # include <stdio.h>
+m void main()
+m {
+m     int n, sum;
+m     sum = 0;
+m     for (n=1;n<=20;n+=2)
+m     {
+m     sum = sum+n;
+m     }
+m     printf("\nSUM = %d",sum);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m SUM = 100
+endbox
+@sec 5-1-3 | 5.1.3 while لوپ || 5.1.3 The while loop || ۵.۱.۳ while لوپ
+### 5.1.3 while لوپ || 5.1.3 The while loop || ۵.۱.۳ while لوپ
+p while لوپ میں کنڈیشن کو پہلے جانچا جاتا ہے اور اگر اس کا نتیجہ True ہو تو while لوپ میں موجود اسٹیٹمنٹ چلا دی جاتی ہیں۔ یہ عمل اس وقت تک جاری رہتا ہے جب تک کنڈیشن کا نتیجہ False نہ ہو جائے۔ جب کنڈیشن کا نتیجہ False ہو جائے تو کنٹرول لوپ کے باہر آنے والی پہلی اسٹیٹمنٹ پر منتقل ہو جاتا ہے۔ اس لوپ کا استعمال ان صورتوں میں زیادہ موزوں رہتا ہے جب پہلے سے معلوم نہ ہو کہ لوپ نے مطلوبہ نتیجے کے لیے کتنی مرتبہ چلنا ہے۔ while لوپ کا سائنٹکس درج ذیل ہے۔ || In a while loop the condition is checked first, and if it is true the statements in the while loop are run. This continues until the condition becomes false; then control passes to the first statement after the loop. This loop is most suitable when it is not known in advance how many times the loop must run to get the required result. The syntax of the while loop is: || په while لوپ کې لومړی شرط ازمویل کېږي او که True وي، د while لوپ بیانونه چلېږي. دا کار تر هغه دوام کوي چې شرط False شي؛ بیا کنټرول له لوپ وروسته لومړي بیان ته ځي. دا لوپ هغه وخت ډېر مناسب دی چې مخکې نه وي معلوم چې د اړینې پایلې لپاره لوپ باید څو ځله وچلېږي. د while لوپ ترکیب دا دی:
+p سائنٹکس: || Syntax: || ترکیب:
+m while(condition)
+m {
+m Body of the loop
+m }

@@ -1,0 +1,99 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s258-p249",
+  "title": "8.1 Introduction; 8.1.1 Different Types of RDBMS; a. Microsoft Access",
+  "headingUrdu": "۸.۱ تعارف؛ ۸.۱.۱ ریلیشنل ڈیٹا بیس مینجمنٹ سسٹمز کی مختلف اقسام؛ الف۔ مائیکروسافٹ ایکسیس",
+  "headingPashto": "۸.۱ پېژندنه؛ ۸.۱.۱ د اړوندو ډېټابېس مدیریت سیسټمونو مختلف ډولونه؛ الف. مایکروسافټ اېکسېس",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 258,
+    "printedPage": "249"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s258-h1",
+      "en": "8.1 INTRODUCTION",
+      "ur": "۸.۱ تعارف",
+      "ps": "۸.۱ پېژندنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s258-a",
+      "en": "Database development is the creation, organization, management and manipulation of database systems for organizations. DBMS (Database Management System) is used to develop a database. A database management system is a set of software programs that allows users to create, edit and update data in database files, and store and retrieve data from those database files. Data in a database can be added, deleted, changed, sorted or searched using a DBMS.",
+      "ur": "ڈیٹا بیس ڈیولپمنٹ اداروں کے لیے ڈیٹا بیس سسٹمز کی تخلیق، تنظیم، انتظام اور ان میں ترمیم ہے۔ ڈیٹا بیس بنانے کے لیے ڈی بی ایم ایس (ڈیٹا بیس مینجمنٹ سسٹم) استعمال ہوتا ہے۔ ڈیٹا بیس مینجمنٹ سسٹم سافٹ ویئر پروگراموں کا ایک مجموعہ ہے جو صارفین کو ڈیٹا بیس فائلوں میں ڈیٹا بنانے، ترمیم اور اپ ڈیٹ کرنے، اور ان فائلوں سے ڈیٹا محفوظ اور حاصل کرنے کی اجازت دیتا ہے۔ ڈیٹا بیس میں ڈیٹا کو ڈی بی ایم ایس کے ذریعے شامل، حذف، تبدیل، ترتیب یا تلاش کیا جا سکتا ہے۔",
+      "ps": "د ډېټابېس جوړونه د ادارو لپاره د ډېټابېس سیسټمونو جوړول، تنظیم، مدیریت او کار ترې اخیستل دي. DBMS (د ډېټابېس مدیریت سیسټم) د ډېټابېس جوړولو لپاره کارول کېږي. د ډېټابېس مدیریت سیسټم د سافټویر پروګرامونو یوه ټولګه ده چې کاروونکو ته اجازه ورکوي چې په ډېټابېس فایلونو کې ډېټا جوړه، سمه او تازه کړي، او له هغو ډېټابېس فایلونو نه ډېټا ذخیره او ترلاسه کړي. په ډېټابېس کې ډېټا د DBMS په کارولو سره زیاتېدای، حذفېدای، بدلېدای، ترتیبېدای یا لټېدای شي."
+    },
+    {
+      "id": "cs11-s258-h2",
+      "en": "8.1.1 Different Types of Relational Database Management Systems",
+      "ur": "۸.۱.۱ ریلیشنل ڈیٹا بیس مینجمنٹ سسٹمز کی مختلف اقسام",
+      "ps": "۸.۱.۱ د اړوندو ډېټابېس مدیریت سیسټمونو مختلف ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s258-b",
+      "en": "There are three common types of relational database management systems (RDBMS).",
+      "ur": "ریلیشنل ڈیٹا بیس مینجمنٹ سسٹمز (آر ڈی بی ایم ایس) کی تین عام اقسام ہیں۔",
+      "ps": "د اړوندو ډېټابېس مدیریت سیسټمونو (RDBMS) درې عام ډولونه شته."
+    },
+    {
+      "id": "cs11-s258-t1",
+      "en": "Microsoft Access",
+      "ur": "مائیکروسافٹ ایکسیس",
+      "ps": "مایکروسافټ اېکسېس",
+      "listGroup": "rd"
+    },
+    {
+      "id": "cs11-s258-t2",
+      "en": "SQL Server",
+      "ur": "ایس کیو ایل سرور",
+      "ps": "SQL خدمتګار",
+      "listGroup": "rd"
+    },
+    {
+      "id": "cs11-s258-t3",
+      "en": "Open Office Base",
+      "ur": "اوپن آفس بیس",
+      "ps": "اوپن آفس بیس",
+      "listGroup": "rd"
+    },
+    {
+      "id": "cs11-s258-h3",
+      "en": "a. Microsoft Access",
+      "ur": "الف۔ مائیکروسافٹ ایکسیس",
+      "ps": "الف. مایکروسافټ اېکسېس",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s258-c",
+      "en": "Microsoft Access, also known as Microsoft Office Access, is a database management system. Figure 8.1 shows MS Access 2007 main screen. An Access database is a collection of database objects i.e. tables, queries, forms, reports, macros, and modules. Users can design new objects or open existing ones to work with their databases. Unlike many database programs, an Access database can contain all of the objects that make up a database application in a single file with the .mdb file name extension. For this reason, an Access database file is sometimes called a database container.",
+      "ur": "مائیکروسافٹ ایکسیس، جسے مائیکروسافٹ آفس ایکسیس بھی کہتے ہیں، ڈیٹا بیس مینجمنٹ سسٹم ہے۔ شکل ۸.۱ ایم ایس ایکسیس ۲۰۰۷ کی مرکزی اسکرین دکھاتی ہے۔ ایکسیس ڈیٹا بیس ڈیٹا بیس آبجیکٹس کا مجموعہ ہے یعنی ٹیبلز، کوئریز، فارمز، رپورٹس، میکروز اور ماڈیولز۔ صارفین اپنے ڈیٹا بیسز کے ساتھ کام کرنے کے لیے نئے آبجیکٹس ڈیزائن کر سکتے ہیں یا موجودہ آبجیکٹس کھول سکتے ہیں۔ بہت سے ڈیٹا بیس پروگراموں کے برعکس ایکسیس ڈیٹا بیس ڈیٹا بیس ایپلیکیشن بنانے والے تمام آبجیکٹس کو .mdb فائل نام ایکسٹینشن والی ایک ہی فائل میں رکھ سکتا ہے۔ اسی وجہ سے ایکسیس ڈیٹا بیس فائل کو کبھی کبھی ڈیٹا بیس کنٹینر کہا جاتا ہے۔",
+      "ps": "مایکروسافټ اېکسېس، چې مایکروسافټ آفس اېکسېس هم ورته ویل کېږي، یو ډېټابېس مدیریت سیسټم دی. ۸.۱ انځور د MS Access 2007 اصلي سکرین ښيي. د Access ډېټابېس د ډېټابېس د څیزونو ټولګه ده یعنې جدولونه، پوښتنې، فورمونه، راپورونه، میکروګانې او ماډلونه. کاروونکي کولای شي د خپلو ډېټابېسونو سره د کار لپاره نوي څیزونه ډیزاین کړي یا موجود څیزونه پرانیزي. د ډیرو ډېټابېس پروګرامونو برعکس، د Access ډېټابېس کولای شي ټول هغه څیزونه چې د ډېټابېس اپلېکېشن جوړوي په یوه فایل کې د .mdb فایل نوم پراخوالي سره ولري. د دې لپاره د Access ډېټابېس فایل ته ځینې وخت د ډېټابېس کانټینر ویل کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s258-h1",
+        "cs11-s258-a",
+        "cs11-s258-h2",
+        "cs11-s258-b",
+        "cs11-s258-t1",
+        "cs11-s258-t2",
+        "cs11-s258-t3",
+        "cs11-s258-h3",
+        "cs11-s258-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 249: the banner “8.1 INTRODUCTION” with its paragraph, the banner “8.1.1 Different Types of Relational Database Management Systems” with the list a–c and “a. Microsoft Access” with its paragraph. “Microsoft Access” is printed in bold. Screenshots and photographs are not reproduced; where a screenshot is shown it is redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:57:25.461696+00:00",
+    "scope": "Scan 258 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

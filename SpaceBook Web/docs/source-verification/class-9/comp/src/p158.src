@@ -1,0 +1,12 @@
+@printed 150
+@status lesson
+p The XNOR gate represents the function: || XNOR گیٹ درج ذیل فنکشن ظاہر کرتا ہے: || XNOR دروازه لاندې فنکشن ښيي:
+m Y = AB + ĀB̄
+p This function consists of two terms AB and ĀB̄. The logic circuit of this gate can be created by using two AND gates for the terms AB and ĀB̄, two NOT gates to change A to Ā and B to B̄ and a single OR gate as shown below. || یہ فنکشن دو اجزا AB اور ĀB̄ پر مشتمل ہے۔ اس گیٹ کا لاجک سرکٹ AB اور ĀB̄ کے لیے دو AND گیٹس، A کو Ā اور B کو B̄ میں بدلنے کے لیے دو NOT گیٹس اور ایک OR گیٹ سے بنایا جا سکتا ہے، جیسا کہ نیچے دکھایا گیا ہے۔ || دا فنکشن دوه برخې AB او ĀB̄ لري. د دې دروازې منطقي سرکټ د AB او ĀB̄ لپاره د دوو AND، د A د Ā او B د B̄ ته اړولو لپاره د دوو NOT او یوې OR دروازې په مرسته جوړېږي، لکه لاندې.
+fig10 f6.11 || Figure 6.11: Creating an XNOR gate || شکل 6.11: XNOR گیٹ بنانا || ۶.۱۱ شکل: د XNOR جوړول
+### 6.2.6 Conversion of Boolean Expression to Logic Circuit || 6.2.6 بولین اظہار کو لاجک سرکٹ میں بدلنا || ۶.۲.۶ د بولین افادې منطقي سرکټ ته اړول
+p A Boolean variable can take the value of 0 or 1. For the given values of the variables, the Boolean function can be either 0 or 1. || بولین متغیر 0 یا 1 کی قدر لے سکتا ہے۔ متغیرات کی دی گئی قدروں کے لیے بولین فنکشن 0 یا 1 ہو سکتا ہے۔ || بولین متغیر 0 یا 1 ارزښت اخیستلای شي. د متغیرونو د ورکړل شویو ارزښتونو لپاره بولین فنکشن 0 یا 1 کېدای شي.
+p Consider the following Boolean function. || درج ذیل بولین فنکشن دیکھیں۔ || لاندې بولین فنکشن وګورئ.
+m F = X + Y
+p The function *F* is equal to 0, if X=0 and Y=0. For all the other combinations of X and Y, the function will be equal to 1. || فنکشن *F* صفر کے برابر ہے اگر X=0 اور Y=0 ہو۔ X اور Y کے باقی تمام مجموعوں کے لیے فنکشن 1 کے برابر ہوگا۔ || فنکشن *F* هغه وخت 0 دی چې X=0 او Y=0 وي. د X او Y د نورو ټولو ترکیبونو لپاره فنکشن 1 دی.
+p A Boolean function can be transformed from an algebraic expression into a logic circuit composed of AND, OR and NOT gates. || بولین فنکشن کو الجبری اظہار سے AND، OR اور NOT گیٹس پر مشتمل لاجک سرکٹ میں بدلا جا سکتا ہے۔ || بولین فنکشن له الجبري افادې د AND، OR او NOT دروازو په منطقي سرکټ بدلېدای شي.

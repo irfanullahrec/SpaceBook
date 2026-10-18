@@ -1,0 +1,457 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s202-exercise5-b",
+  "title": "Exercise-5: Q5.2 (x) · Q5.3 Choose the correct answer (i)–(ix)",
+  "headingUrdu": "مشق-5: سوال 5.2 (x) · سوال 5.3 صحیح جواب منتخب کریں (i)–(ix)",
+  "headingPashto": "تمرین-5: پوښتنه 5.2 (x) · پوښتنه 5.3 سم ځواب وټاکئ (i)–(ix)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 202,
+    "printedPage": "192"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s202-f10",
+      "en": "(x) The signature property in regression means that the signs of b_y.x, b_x.y, and r_xy are ____________.",
+      "ur": "(x) ریگریشن میں دستخطی خاصیت کا مطلب ہے کہ b_y.x، b_x.y اور r_xy کی علامتیں ____________ ہیں۔",
+      "ps": "(x) په ریګرېشن کې د لاسلیک ځانګړتیا پدې معنا چې د b_y.x، b_x.y او r_xy نښې ____________ دي.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-x",
+      "sourceGap": {
+        "note": "Completes Q5.2 from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s202-h53",
+      "en": "5.3 Choose the correct answer.",
+      "ur": "5.3 صحیح جواب منتخب کریں۔",
+      "ps": "5.3 سم ځواب وټاکئ.",
+      "kind": "heading",
+      "exerciseId": "stat11-ex5-3"
+    },
+    {
+      "id": "stat11-s202-m1",
+      "en": "(i) If x and y are two variables, there can be at most",
+      "ur": "(i) اگر x اور y دو متغیرات ہوں تو زیادہ سے زیادہ ہو سکتی ہیں",
+      "ps": "(i) که x او y دوه متغیره وي نو تر ډېره به وي",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-1"
+    },
+    {
+      "id": "stat11-s202-m1a",
+      "en": "(a) one regression line",
+      "ur": "(الف) ایک ریگریشن لکیر",
+      "ps": "(a) یوه ریګرېشن کرښه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-1"
+    },
+    {
+      "id": "stat11-s202-m1b",
+      "en": "(b) two regression lines",
+      "ur": "(ب) دو ریگریشن لکیریں",
+      "ps": "(b) دوه ریګرېشن کرښې",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-1"
+    },
+    {
+      "id": "stat11-s202-m1c",
+      "en": "(c) an infinite number of regression lines",
+      "ur": "(ج) ریگریشن لکیروں کی لامحدود تعداد",
+      "ps": "(c) د ریګرېشن کرښو بې‌پایه شمېر",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-1"
+    },
+    {
+      "id": "stat11-s202-m1d",
+      "en": "(d) three regression lines",
+      "ur": "(د) تین ریگریشن لکیریں",
+      "ps": "(d) درې ریګرېشن کرښې",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-1"
+    },
+    {
+      "id": "stat11-s202-m2",
+      "en": "(ii) In the regression line of y on x, the variable x is known as",
+      "ur": "(ii) x پر y کی ریگریشن لکیر میں متغیر x کہلاتا ہے",
+      "ps": "(ii) د x پر y په ریګرېشن کرښه کې متغیر x بلل کېږي",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-2"
+    },
+    {
+      "id": "stat11-s202-m2a",
+      "en": "(a) independent variable",
+      "ur": "(الف) آزاد متغیر",
+      "ps": "(a) خپلواک متغیر",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-2"
+    },
+    {
+      "id": "stat11-s202-m2b",
+      "en": "(b) intercept of the line",
+      "ur": "(ب) لکیر کا قطع",
+      "ps": "(b) د کرښې کټ",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-2"
+    },
+    {
+      "id": "stat11-s202-m2c",
+      "en": "(c) both (a) and (b)",
+      "ur": "(ج) (الف) اور (ب) دونوں",
+      "ps": "(c) (a) او (b) دواړه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-2"
+    },
+    {
+      "id": "stat11-s202-m2d",
+      "en": "(d) all of the above",
+      "ur": "(د) مندرجہ بالا سب",
+      "ps": "(d) پورتني ټول",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-2"
+    },
+    {
+      "id": "stat11-s202-m3",
+      "en": "(iii) In the regression line y = α + βx, β is called the",
+      "ur": "(iii) ریگریشن لکیر y = α + βx میں β کہلاتا ہے",
+      "ps": "(iii) د ریګرېشن کرښې y = α + βx کې β بلل کېږي",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-3"
+    },
+    {
+      "id": "stat11-s202-m3a",
+      "en": "(a) slope of the line",
+      "ur": "(الف) لکیر کا ڈھلوان",
+      "ps": "(a) د کرښې ډلوان",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-3"
+    },
+    {
+      "id": "stat11-s202-m3b",
+      "en": "(b) intercept of the line",
+      "ur": "(ب) لکیر کا قطع",
+      "ps": "(b) د کرښې کټ",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-3"
+    },
+    {
+      "id": "stat11-s202-m3c",
+      "en": "(c) neither (a) nor (b)",
+      "ur": "(ج) نہ (الف) نہ (ب)",
+      "ps": "(c) نه (a) نه (b)",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-3"
+    },
+    {
+      "id": "stat11-s202-m3d",
+      "en": "(d) both (a) and (b)",
+      "ur": "(د) (الف) اور (ب) دونوں",
+      "ps": "(d) (a) او (b) دواړه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-3"
+    },
+    {
+      "id": "stat11-s202-m4",
+      "en": "(iv) If b_y.x and b_x.y are two regression coefficients, they have",
+      "ur": "(iv) اگر b_y.x اور b_x.y دو ریگریشن عددی سر ہوں تو ان کی",
+      "ps": "(iv) که b_y.x او b_x.y دوه ریګرېشن ضریبونه وي نو دوی لري",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-4"
+    },
+    {
+      "id": "stat11-s202-m4a",
+      "en": "(a) same sign",
+      "ur": "(الف) ایک جیسی علامت ہوتی ہے",
+      "ps": "(a) یو شان نښه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-4"
+    },
+    {
+      "id": "stat11-s202-m4b",
+      "en": "(b) opposite sign",
+      "ur": "(ب) مخالف علامت ہوتی ہے",
+      "ps": "(b) مخالفه نښه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-4"
+    },
+    {
+      "id": "stat11-s202-m4c",
+      "en": "(c) either same or opposite sign",
+      "ur": "(ج) ایک جیسی یا مخالف علامت ہوتی ہے",
+      "ps": "(c) یو شان یا مخالفه نښه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-4"
+    },
+    {
+      "id": "stat11-s202-m4d",
+      "en": "(d) nothing can be said",
+      "ur": "(د) کچھ نہیں کہا جا سکتا",
+      "ps": "(d) هېڅ نشي ویلای",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-4"
+    },
+    {
+      "id": "stat11-s202-m5",
+      "en": "(v) If b_y.x > 1, then b_x.y is",
+      "ur": "(v) اگر b_y.x > 1 ہو تو b_x.y ہے",
+      "ps": "(v) که b_y.x > 1 وي نو b_x.y دی",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-5"
+    },
+    {
+      "id": "stat11-s202-m5a",
+      "en": "(a) less than 1",
+      "ur": "(الف) 1 سے کم",
+      "ps": "(a) له 1 څخه کم",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-5"
+    },
+    {
+      "id": "stat11-s202-m5b",
+      "en": "(b) greater than 1",
+      "ur": "(ب) 1 سے زیادہ",
+      "ps": "(b) له 1 څخه ډېر",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-5"
+    },
+    {
+      "id": "stat11-s202-m5c",
+      "en": "(c) equal to 1",
+      "ur": "(ج) 1 کے برابر",
+      "ps": "(c) له 1 سره مساوي",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-5"
+    },
+    {
+      "id": "stat11-s202-m5d",
+      "en": "(d) equal to 0",
+      "ur": "(د) 0 کے برابر",
+      "ps": "(d) له 0 سره مساوي",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-5"
+    },
+    {
+      "id": "stat11-s202-m6",
+      "en": "(vi) If x and y are independent then the value of regression coefficient b_x.y is equal to",
+      "ur": "(vi) اگر x اور y آزاد ہوں تو ریگریشن عددی سر b_x.y کی قدر کے برابر ہے",
+      "ps": "(vi) که x او y خپلواک وي نو د ریګرېشن ضریب b_x.y ارزښت له … سره مساوي دی",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-6"
+    },
+    {
+      "id": "stat11-s202-m6a",
+      "en": "(a) 0",
+      "ur": "(الف) 0",
+      "ps": "(a) 0",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-6"
+    },
+    {
+      "id": "stat11-s202-m6b",
+      "en": "(b) 1",
+      "ur": "(ب) 1",
+      "ps": "(b) 1",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-6"
+    },
+    {
+      "id": "stat11-s202-m6c",
+      "en": "(c) ∞",
+      "ur": "(ج) ∞",
+      "ps": "(c) ∞",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-6"
+    },
+    {
+      "id": "stat11-s202-m6d",
+      "en": "(d) any positive value",
+      "ur": "(د) کوئی بھی مثبت قدر",
+      "ps": "(d) هر مثبت ارزښت",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-6"
+    },
+    {
+      "id": "stat11-s202-m7",
+      "en": "(vii) The idea of product moment correlation was given by",
+      "ur": "(vii) حاصلِ ضرب معیارِ اثر ارتباط کا تصور دیا تھا",
+      "ps": "(vii) د ضرب-مومنټ همتړاو مفکوره ورکړې وه",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-7"
+    },
+    {
+      "id": "stat11-s202-m7a",
+      "en": "(a) Sir Francis Galton",
+      "ur": "(الف) سر فرانسس گالٹن نے",
+      "ps": "(a) سر فرانسس ګالټن",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-7"
+    },
+    {
+      "id": "stat11-s202-m7b",
+      "en": "(b) Spearman",
+      "ur": "(ب) سپیئرمین نے",
+      "ps": "(b) سپیرمن",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-7"
+    },
+    {
+      "id": "stat11-s202-m7c",
+      "en": "(c) Karl Pearson",
+      "ur": "(ج) کارل پیئرسن نے",
+      "ps": "(c) کارل پیرسن",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-7"
+    },
+    {
+      "id": "stat11-s202-m7d",
+      "en": "(d) R.A Fisher",
+      "ur": "(د) آر اے فشر نے",
+      "ps": "(d) آر ای فشر",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-7"
+    },
+    {
+      "id": "stat11-s202-m8",
+      "en": "(viii) The unit of correlation coefficient is",
+      "ur": "(viii) ارتباطی عددی سر کی اکائی ہے",
+      "ps": "(viii) د همتړاو د ضریب واحد دی",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-8"
+    },
+    {
+      "id": "stat11-s202-m8a",
+      "en": "(a) kg",
+      "ur": "(الف) کلوگرام",
+      "ps": "(a) کیلوګرام",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-8"
+    },
+    {
+      "id": "stat11-s202-m8b",
+      "en": "(b) percent",
+      "ur": "(ب) فیصد",
+      "ps": "(b) سلنه",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-8"
+    },
+    {
+      "id": "stat11-s202-m8c",
+      "en": "(c) non-existing",
+      "ur": "(ج) موجود نہیں",
+      "ps": "(c) نشته",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-8"
+    },
+    {
+      "id": "stat11-s202-m8d",
+      "en": "(d) metre",
+      "ur": "(د) میٹر",
+      "ps": "(d) متر",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-8"
+    },
+    {
+      "id": "stat11-s202-m9",
+      "en": "(ix) The range of simple correlation coefficient is",
+      "ur": "(ix) سادہ ارتباطی عددی سر کی حد ہے",
+      "ps": "(ix) د ساده همتړاو د ضریب حد دی",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-9"
+    },
+    {
+      "id": "stat11-s202-m9a",
+      "en": "(a) −∞ to ∞",
+      "ur": "(الف) −∞ سے ∞",
+      "ps": "(a) −∞ تر ∞",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-9"
+    },
+    {
+      "id": "stat11-s202-m9b",
+      "en": "(b) 0 to ∞",
+      "ur": "(ب) 0 سے ∞",
+      "ps": "(b) 0 تر ∞",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-9"
+    },
+    {
+      "id": "stat11-s202-m9c",
+      "en": "(c) −1 to 1",
+      "ur": "(ج) −1 سے 1",
+      "ps": "(c) −1 تر 1",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-9"
+    },
+    {
+      "id": "stat11-s202-m9d",
+      "en": "(d) 0 to 1",
+      "ur": "(د) 0 سے 1",
+      "ps": "(d) 0 تر 1",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-9"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s202-f10",
+        "stat11-s202-h53",
+        "stat11-s202-m1",
+        "stat11-s202-m1a",
+        "stat11-s202-m1b",
+        "stat11-s202-m1c",
+        "stat11-s202-m1d",
+        "stat11-s202-m2",
+        "stat11-s202-m2a",
+        "stat11-s202-m2b",
+        "stat11-s202-m2c",
+        "stat11-s202-m2d",
+        "stat11-s202-m3",
+        "stat11-s202-m3a",
+        "stat11-s202-m3b",
+        "stat11-s202-m3c",
+        "stat11-s202-m3d",
+        "stat11-s202-m4",
+        "stat11-s202-m4a",
+        "stat11-s202-m4b",
+        "stat11-s202-m4c",
+        "stat11-s202-m4d",
+        "stat11-s202-m5",
+        "stat11-s202-m5a",
+        "stat11-s202-m5b",
+        "stat11-s202-m5c",
+        "stat11-s202-m5d",
+        "stat11-s202-m6",
+        "stat11-s202-m6a",
+        "stat11-s202-m6b",
+        "stat11-s202-m6c",
+        "stat11-s202-m6d",
+        "stat11-s202-m7",
+        "stat11-s202-m7a",
+        "stat11-s202-m7b",
+        "stat11-s202-m7c",
+        "stat11-s202-m7d",
+        "stat11-s202-m8",
+        "stat11-s202-m8a",
+        "stat11-s202-m8b",
+        "stat11-s202-m8c",
+        "stat11-s202-m8d",
+        "stat11-s202-m9",
+        "stat11-s202-m9a",
+        "stat11-s202-m9b",
+        "stat11-s202-m9c",
+        "stat11-s202-m9d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "sourceNote": "Printed page 192. In the printed text the symbols b_y.x, b_x.y, r_xy carry subscripts; they are written with underscores here. Q5.3 continues on the next page (item x). Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:23:03.558359+00:00",
+    "scope": "Scan 202 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

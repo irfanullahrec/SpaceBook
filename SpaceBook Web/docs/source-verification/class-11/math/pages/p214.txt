@@ -1,0 +1,26 @@
+@printed 214
+@sec 7.2 | The Binomial Theorem || دو رقمی قضیہ || دوه حدي قضیه
+@issue In Step 3 the printed second bracket shows the third term as C(k,2)a^{k-1}b^3; by the pattern it should be C(k,2)a^{k-2}b^3. Preserved as printed.
+@deco Unit-running header, folio and decorative footer band excluded
+### 7.2 The Binomial Theorem || 7.2 دو رقمی قضیہ || 7.2 دوه حدي قضیه
+p In algebra a sum of two terms, such as $a+b$, is called a binomial. The binomial theorem gives an expression for the powers of a binomial $(a+b)^n$, for each positive integer $n$ and all real numbers $a$ and $b$. || الجبرا میں دو ارکان کا مجموعہ، مثلاً $a+b$، دو رقمی کہلاتا ہے۔ دو رقمی قضیہ ہر مثبت صحیح عدد $n$ اور تمام حقیقی اعداد $a$ اور $b$ کے لیے دو رقمی $(a+b)^n$ کی قوتوں کا اظہار دیتا ہے۔ || په الجبرا کې د دوو حدونو مجموعه، لکه $a+b$، دوه حدي بلل کېږي. دوه حدي قضیه د هر مثبت صحیح عدد $n$ او ټولو حقیقي عددونو $a$ او $b$ لپاره د دوه حدي $(a+b)^n$ د توانونو بیان ورکوي.
+@sec 7.2.1 | Statement and proof of the binomial theorem || دو رقمی قضیے کا بیان اور ثبوت || د دوه حدي قضیې بیان او ثبوت
+### 7.2.1 Statement and proof of the binomial theorem || 7.2.1 دو رقمی قضیے کا بیان اور ثبوت || 7.2.1 د دوه حدي قضیې بیان او ثبوت
+p The binomial theorem in its explicit form is stated as under. || دو رقمی قضیہ اپنی صریح صورت میں یوں بیان کی جاتی ہے۔ || دوه حدي قضیه په خپله څرګنده بڼه کې داسې بیانېږي.
+box theorem | Theorem || قضیہ || قضیه
+p If $a$ and $b$ are any two real numbers and $n$ is a positive integer, then || اگر $a$ اور $b$ کوئی بھی دو حقیقی اعداد ہوں اور $n$ مثبت صحیح عدد ہو تو || که $a$ او $b$ هر دوه حقیقي عددونه وي او $n$ مثبت صحیح عدد وي نو
+m $(a+b)^n=\dbinom n0a^nb^0+\dbinom n1a^{n-1}b^1+\dbinom n2a^{n-2}b^2+\cdots+\dbinom nra^{n-r}b^r+\cdots+\dbinom nna^0b^n$
+endbox
+p which more compactly can be written in summation form as: || جسے اختصار کے ساتھ جمع کی علامت میں یوں لکھا جا سکتا ہے: || چې په لنډه توګه د جمع په بڼه داسې لیکل کېدای شي:
+m $(a+b)^n=\displaystyle\sum_{i=0}^{n}\dbinom ni a^{n-i}b^i$
+p **Proof:** Mathematical induction provides us the best way for confirming the validity of the binomial theorem. || **ثبوت:** ریاضیاتی استقرا ہمیں دو رقمی قضیے کی درستی کی تصدیق کا بہترین طریقہ فراہم کرتا ہے۔ || **ثبوت:** ریاضیاتي استقرا موږ ته د دوه حدي قضیې د سموالي د تایید غوره لاره برابروي.
+m $(a+b)^n=\dbinom n0a^nb^0+\dbinom n1a^{n-1}b^1+\dbinom n2a^{n-2}b^2+\cdots+\dbinom nra^{n-r}b^r+\cdots+\dbinom nna^0b^n\qquad\text{(i)}$
+p **Step 1.** If $n=1$, then from (i), we obtain || **مرحلہ 1۔** اگر $n=1$ ہو تو (i) سے ہمیں ملتا ہے || **لومړی ګام.** که $n=1$ وي نو د (i) نه موږ ترلاسه کوو
+m $(a+b)^1=\dbinom10a^1b^0+\dbinom11a^{1-1}b^1=a+b\qquad\left(\because\dbinom10=\dbinom11=1\right)$
+p which is true. Thus the statement is true for $n=1$. || جو درست ہے۔ یوں بیان $n=1$ کے لیے درست ہے۔ || چې سم دی. په دې توګه بیان د $n=1$ لپاره سم دی.
+p **Step 2.** Suppose that the statement is true for $n=k$, then || **مرحلہ 2۔** فرض کریں کہ بیان $n=k$ کے لیے درست ہے، تب || **دویم ګام.** فرض کړئ چې بیان د $n=k$ لپاره سم دی، نو
+m $(a+b)^k=\dbinom k0a^kb^0+\dbinom k1a^{k-1}b^1+\dbinom k2a^{k-2}b^2+\cdots+\dbinom kra^{k-r}b^r+\cdots+\dbinom kka^0b^k\qquad\text{(ii)}$
+p **Step 3.** We now prove that the theorem is true for $n=k+1$. Multiplying both sides of equation (ii) by $(a+b)$, we have || **مرحلہ 3۔** اب ہم ثابت کرتے ہیں کہ قضیہ $n=k+1$ کے لیے درست ہے۔ مساوات (ii) کے دونوں طرف $(a+b)$ سے ضرب دینے پر ہمیں ملتا ہے || **دریم ګام.** اوس موږ ثابتوو چې قضیه د $n=k+1$ لپاره سمه ده. د معادلې (ii) دواړه خواوې په $(a+b)$ کې ضربولو سره موږ لرو
+m $(a+b)(a+b)^k=(a+b)\left[\dbinom k0a^kb^0+\dbinom k1a^{k-1}b^1+\dbinom k2a^{k-2}b^2+\cdots+\dbinom kra^{k-r}b^r+\cdots+\dbinom kka^0b^k\right]$
+m $\Rightarrow(a+b)^{k+1}=\left[\dbinom k0a^{k+1}b^0+\dbinom k1a^kb^1+\dbinom k2a^{k-1}b^2+\cdots+\dbinom kra^{k-r+1}b^r+\cdots+\dbinom kkab^k\right]$
+m $\qquad+\left[\dbinom k0a^kb+\dbinom k1a^{k-1}b^2+\dbinom k2a^{k-1}b^3+\cdots+\dbinom kra^{k-r}b^{r+1}+\cdots+\dbinom kka^0b^{k+1}\right]$

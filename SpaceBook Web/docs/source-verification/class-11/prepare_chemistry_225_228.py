@@ -1,0 +1,145 @@
+from chemlib import *
+c=cell
+def eqn(n,key,latex,text):
+    return dict(id=f'chem11-p{n}-{key}',latex=latex,accessible=text,formatSourceNotation=True,nativeLines={l:[[dict(text=text)]] for l in ('en','ur','ps')})
+class Flow:
+    def __init__(s_,s): s_.s=s; s_.s['equations']=[]; s_.f=[]
+    def p(s_,*keys):
+        s_.f.append(dict(type='paragraphs',ids=[f"chem11-p{s_.s['source']['pdfPage']}-{k}" for k in keys]))
+    def e(s_,key,latex,text):
+        s_.s['equations'].append(eqn(s_.s['source']['pdfPage'],key,latex,text)); s_.f.append(dict(type='equation',index=len(s_.s['equations'])-1))
+    def done(s_): s_.s['flow']=s_.f
+def mk(n,title,ur,ps,sid): return page(n,'chem11-equilibrium',title,ur,ps,sid)
+HI=r'2\mathrm{HI_{(g)}\rightleftharpoons H_{2(g)}+I_{2(g)}}'
+HIt='2HI(g) ⇌ H₂(g) + I₂(g)'
+
+# ---------- 225 ----------
+s=mk(225,'Example 7.3 · Practice Problem · 7.1.4.2 Prediction of the Extent of a Chemical Reaction · Example 7.4','مثال 7.3 · مشقی مسئلہ · 7.1.4.2 کیمیائی تعامل کی حد کی پیش گوئی · مثال 7.4','بېلګه 7.3 · د تمرین ستونزه · 7.1.4.2 د کيمياوي تعامل د اندازې وړاندوینه · بېلګه 7.4','example-73-74')
+F=Flow(s)
+head(s,'e3','Example 7.3','مثال 7.3','بېلګه 7.3')
+add(s,'a1','For the dissociation of HI','HI کی تفکیک کے لیے','د HI د تجزیې لپاره')
+add(s,'a2','K_c at 520°C is 1.6 × 10⁻². Predict the direction in which the system will move to attain the equilibrium if the initial concentration of HI is 1.02M and that of H₂ and I₂ are 0.01M each.','520°C پر K_c کی قیمت 1.6 × 10⁻² ہے۔ پیش گوئی کریں کہ توازن حاصل کرنے کے لیے نظام کس سمت میں بڑھے گا اگر HI کا ابتدائی ارتکاز 1.02M ہو اور H₂ اور I₂ ہر ایک کا 0.01M ہو۔','په 520°C کې K_c 1.6 × 10⁻² دی. وړاندوینه وکړئ چې د تعادل ترلاسه کولو لپاره به سیسټم په کوم لوري کې لاړ شي که د HI لومړنی غلظت 1.02M وي او د H₂ او I₂ هر یوه 0.01M وي.')
+head(s,'s3','Solution:','حل:','حل:')
+add(s,'a3','Since the initial concentration ratio, 9.61 × 10⁻⁵, is less than the given value of K_c, 1.6 × 10⁻², hence, the reaction will proceed in the forward direction and HI will dissociate further.','چونکہ ابتدائی ارتکاز کی نسبت 9.61 × 10⁻⁵، K_c کی دی گئی قیمت 1.6 × 10⁻² سے کم ہے، اس لیے تعامل سیدھی سمت میں آگے بڑھے گا اور HI مزید تفکیک ہوگا۔','ځکه چې د لومړني غلظت نسبت 9.61 × 10⁻⁵، د K_c له ورکړل شوي ارزښت 1.6 × 10⁻² څخه کم دی، نو تعامل به په مخکښ لوري کې لاړ شي او HI به نور هم تجزیه شي.')
+add(s,'pp-h','Practice Problem','مشقی مسئلہ','د تمرین ستونزه',kind='heading')
+add(s,'pp1','At a very high temperature, K_c = 65.0 for the following reaction.','بہت بلند درجہ حرارت پر درج ذیل تعامل کے لیے K_c = 65.0 ہے۔','په ډېرې لوړې تودوخې کې د لاندې تعامل لپاره K_c = 65.0 دی.')
+add(s,'pp2','The following concentrations were detected in a mixture. Is the system at equilibrium? If not, in which direction must the reaction proceed for equilibrium to be established?','ایک آمیزے میں درج ذیل ارتکاز پائے گئے۔ کیا نظام توازن میں ہے؟ اگر نہیں تو توازن قائم کرنے کے لیے تعامل کو کس سمت میں آگے بڑھنا چاہیے؟','په یو مخلوط کې لاندې غلظتونه وموندل شول. ایا سیسټم په تعادل کې دی؟ که نه نو د تعادل د رامنځته کولو لپاره باید تعامل په کوم لوري کې لاړ شي؟')
+add(s,'pp3','[HI] = 0.500 M, [H₂] = 2.80 M, and [I₂] = 3.40 M','[HI] = 0.500 M، [H₂] = 2.80 M اور [I₂] = 3.40 M','[HI] = 0.500 M، [H₂] = 2.80 M او [I₂] = 3.40 M')
+head(s,'h2','7.1.4.2 Prediction of the Extent of a Chemical Reaction','7.1.4.2 کیمیائی تعامل کی حد کی پیش گوئی','7.1.4.2 د کيمياوي تعامل د اندازې وړاندوینه')
+add(s,'b0','The extent of the reaction can be found from the value of the equilibrium constant.','تعامل کی حد توازنی مستقلہ کی قیمت سے معلوم کی جا سکتی ہے۔','د تعامل اندازه د تعادل ثابت له ارزښت څخه موندل کېدای شي.')
+add(s,'b1','i) If the equilibrium constant, K_c is very large, then this indicates that the reaction is almost complete. The concentration of products is much greater than those of reactant at equilibrium.','i) اگر توازنی مستقلہ K_c بہت بڑا ہو تو یہ ظاہر کرتا ہے کہ تعامل تقریباً مکمل ہے۔ توازن پر حاصلات کا ارتکاز تعامل کنندگان کے ارتکاز سے بہت زیادہ ہوتا ہے۔','i) که د تعادل ثابت K_c ډېر لوی وي نو دا ښيي چې تعامل نږدې بشپړ دی. په تعادل کې د محصولاتو غلظت د متعاملینو له غلظت څخه ډېر زیات وي.')
+add(s,'b2','ii) If the value of K_c is very small, then the reaction proceeds a little in the forward direction, and a small amount of product is formed at equilibrium.','ii) اگر K_c کی قیمت بہت چھوٹی ہو تو تعامل سیدھی سمت میں تھوڑا سا آگے بڑھتا ہے اور توازن پر حاصلات کی تھوڑی مقدار بنتی ہے۔','ii) که د K_c ارزښت ډېر کوچنی وي نو تعامل په مخکښ لوري کې لږ مخکې ځي او په تعادل کې د محصول لږ مقدار جوړېږي.')
+add(s,'b3','iii) If the value of K_c is neither very small nor very large, this shows that both the reactants and products are in appreciable quantities at equilibrium','iii) اگر K_c کی قیمت نہ بہت چھوٹی ہو نہ بہت بڑی تو یہ ظاہر کرتا ہے کہ توازن پر تعامل کنندگان اور حاصلات دونوں قابلِ ذکر مقداروں میں موجود ہیں','iii) که د K_c ارزښت نه ډېر کوچنی وي او نه ډېر لوی نو دا ښيي چې په تعادل کې متعاملین او محصولات دواړه د پام وړ مقدارونو کې شتون لري')
+head(s,'e4','Example 7.4','مثال 7.4','بېلګه 7.4')
+add(s,'c1','Predict the extent of the given reaction for which the equilibrium constant is 1 × 10⁻³⁰ at 25°C.','دیے گئے تعامل کی حد کی پیش گوئی کریں جس کا توازنی مستقلہ 25°C پر 1 × 10⁻³⁰ ہے۔','د ورکړل شوي تعامل اندازه وړاندوینه کړئ چې د تعادل ثابت یې په 25°C کې 1 × 10⁻³⁰ دی.')
+head(s,'s4','Solution:','حل:','حل:')
+add(s,'c2',f'Since the value of K_c = 1×10⁻³⁰, which is very small for this system, an equilibrium mixture of the three gases at 25°C will contain very little NO as{SO}','چونکہ K_c کی قیمت = 1×10⁻³⁰ ہے جو اس نظام کے لیے بہت چھوٹی ہے، اس لیے 25°C پر تین گیسوں کے توازنی آمیزے میں NO بہت کم ہوگی بمقابلہ [scan obscured]','ځکه چې د K_c ارزښت = 1×10⁻³⁰ دی چې د دې سیسټم لپاره ډېر کوچنی دی، نو په 25°C کې د دریو ګازونو د تعادل مخلوط به NO ډېر لږ ولري په پرتله [scan obscured]')
+F.p('e3','a1')
+F.e('rx',HI,HIt)
+F.p('a2','s3')
+F.e('qc',r'Q_c=\frac{[\mathrm{H_2}]_o[\mathrm{I_2}]_o}{[\mathrm{HI}]_o^2}=\frac{[0.01]_o[0.01]_o}{[1.02]_o^2}=9.61\times10^{-5}\ \mathrm{M}','Q_c = [H₂]₀[I₂]₀ / [HI]₀² = [0.01]₀[0.01]₀ / [1.02]₀² = 9.61 × 10⁻⁵ M')
+F.p('a3','pp-h','pp1')
+F.e('pprx',HI,HIt)
+F.p('pp2','pp3','h2','b0','b1','b2','b3','e4','c1')
+F.e('no',r'\mathrm{N_{2(g)}+O_{2(g)}\rightleftharpoons 2NO_{(g)}}','N₂(g) + O₂(g) ⇌ 2NO(g)')
+F.p('s4','c2')
+F.done()
+s['sourceNote']='Printed folio 220. The right edge is slightly clipped on the prose lines but the words are legible; the last sentence of Example 7.4 is cut at the page end ("very little NO as" continues on the next page). The "Practice Problem" heading is blurred and no problem number is visible. The printed Q_c line gives the unit "M" as printed. A CamScanner watermark crosses the page.'
+s['sourceGap']=dict(note='Practice Problem number is not legible; Example 7.4 sentence continues on the next page.')
+s['vocabulary']={'dissociation':{'ur':'تفکیک','ps':'تجزیه'}}
+save(s)
+
+# ---------- 226 ----------
+s=mk(226,'7.1.4.3 Calculation of the Equilibrium Concentrations · Example 7.5 · Practice Problem 7.4 · 7.2 Factors Affecting Equilibrium','7.1.4.3 توازنی ارتکاز کا حساب · مثال 7.5 · مشقی مسئلہ 7.4 · 7.2 توازن پر اثر انداز ہونے والے عوامل','7.1.4.3 د تعادل د غلظتونو محاسبه · بېلګه 7.5 · د تمرین ستونزه 7.4 · 7.2 د تعادل اغېزمن فکتورونه','example-75')
+F=Flow(s)
+add(s,'a0','compared to N₂ and O₂.','بمقابلہ N₂ اور O₂۔','په پرتله د N₂ او O₂.')
+head(s,'h3','7.1.4.3. Calculation of the Equilibrium Concentrations','7.1.4.3 توازنی ارتکاز کا حساب','7.1.4.3 د تعادل د غلظتونو محاسبه')
+add(s,'a1','If the value of equilibrium constant and the initial concentrations of the reactants are known for a particular reaction, we can calculate the concentrations in the equilibrium mixture. This will be illustrated by following example.','اگر کسی مخصوص تعامل کے لیے توازنی مستقلہ کی قیمت اور تعامل کنندگان کے ابتدائی ارتکاز معلوم ہوں تو ہم توازنی آمیزے میں ارتکاز کا حساب لگا سکتے ہیں۔ اس کی وضاحت درج ذیل مثال سے ہوگی۔','که د یو ځانګړي تعامل لپاره د تعادل ثابت ارزښت او د متعاملینو لومړني غلظتونه معلوم وي نو موږ کولای شو د تعادل په مخلوط کې غلظتونه محاسبه کړو. دا به د لاندې بېلګې په واسطه روښانه شي.')
+head(s,'e5','Example 7.5','مثال 7.5','بېلګه 7.5')
+add(s,'b1','1.0 mole of hydrogen and 1.0 mole of iodine come to equilibrium at 457.7°C in a one dm³ flask. What will be the concentration of each substance at equilibrium? Where K_c = 48.9','1.0 مول ہائیڈروجن اور 1.0 مول آیوڈین 457.7°C پر ایک dm³ کے فلاسک میں توازن میں آتے ہیں۔ توازن پر ہر مادے کا ارتکاز کیا ہوگا؟ جہاں K_c = 48.9','1.0 مول هایدروجن او 1.0 مول آیوډین په 457.7°C کې په یو dm³ فلاسک کې تعادل ته رسېږي. په تعادل کې به د هر مادې غلظت څومره وي؟ چېرته چې K_c = 48.9')
+head(s,'s5','Solution:','حل:','حل:')
+add(s,'t1','Initial concentration in moles','ابتدائی ارتکاز مولوں میں','لومړنی غلظت په مولونو کې')
+add(s,'t2','Equilibrium concentrations','توازنی ارتکاز','د تعادل غلظتونه')
+add(s,'h4','Hence,','لہٰذا،','نو،')
+add(s,'pp-h','Practice Problem 7.4','مشقی مسئلہ 7.4','د تمرین ستونزه 7.4',kind='heading')
+add(s,'pp1','The equation for the following reaction and the value of K_c at a given temperature are given. An equilibrium mixture in a 1.00 liter container contains 0.25 mol of PCl₅ and 0.16 mol of PCl₃. What equilibrium concentration of Cl₂ must be present? K_c = 1.9','درج ذیل تعامل کی مساوات اور ایک دیے گئے درجہ حرارت پر K_c کی قیمت دی گئی ہے۔ 1.00 لیٹر کے برتن میں موجود توازنی آمیزے میں 0.25 mol PCl₅ اور 0.16 mol PCl₃ ہیں۔ Cl₂ کا توازنی ارتکاز کیا ہونا چاہیے؟ K_c = 1.9','د لاندې تعامل معادله او په یوه ورکړل شوې تودوخه کې د K_c ارزښت ورکړل شوي دي. په 1.00 لیتره لوښي کې د تعادل مخلوط 0.25 mol PCl₅ او 0.16 mol PCl₃ لري. د Cl₂ د تعادل غلظت باید څومره وي؟ K_c = 1.9')
+head(s,'h72','7.2 Factors Affecting Equilibrium','7.2 توازن پر اثر انداز ہونے والے عوامل','7.2 د تعادل اغېزمن فکتورونه')
+add(s,'f1',"Once a system has attained equilibrium, it is possible to change its position by changing the external conditions i.e., concentration, pressure, temperature etc. Chemists are interested in finding the best conditions to obtain maximum yield of the products in reversible reactions by favorably shifting the position of equilibrium of a reaction. For this purpose Le-Chatelier's principle is used.",'جب کوئی نظام توازن حاصل کر لیتا ہے تو بیرونی حالات یعنی ارتکاز، دباؤ، درجہ حرارت وغیرہ کو بدل کر اس کا مقام تبدیل کرنا ممکن ہوتا ہے۔ کیمیا دان الٹنے والے تعاملات میں توازن کے مقام کو موافق طور پر منتقل کر کے حاصلات کی زیادہ سے زیادہ پیداوار حاصل کرنے کے بہترین حالات تلاش کرنے میں دلچسپی رکھتے ہیں۔ اس مقصد کے لیے لی شیٹیلیئر کا اصول استعمال کیا جاتا ہے۔','کله چې یو سیسټم تعادل ترلاسه کړي نو د بهرنیو شرایطو یعنې غلظت، فشار، تودوخې او نورو په بدلولو سره د هغه موقعیت بدلول ممکن دي. کیمیا پوهان په بېرته کېدونکو تعاملاتو کې د تعادل د موقعیت په مناسب ډول بدلولو سره د محصولاتو د اعظمي حاصل ترلاسه کولو د غوره شرایطو په موندلو کې لیوالتیا لري. د دې موخې لپاره د لی-شاټیلیر اصل کارول کېږي.')
+F.p('a0','h3','a1','e5','b1','s5')
+F.e('rx',r'\mathrm{H_{2(g)}+I_{2(g)}\rightleftharpoons 2HI_{(g)}}','H₂(g) + I₂(g) ⇌ 2HI(g)')
+F.p('t1')
+F.e('init','1\qquad 1\qquad 0','1    1    0')
+F.p('t2')
+F.e('eqc',r'1-x\qquad 1-x\qquad 2x','1−x    1−x    2x')
+F.e('kc',r'K_c=48.9=\frac{[\mathrm{HI}]^2}{[\mathrm{H_2}][\mathrm{I_2}]}=\frac{(2x)^2}{(1-x)(1-x)}=\frac{(2x)^2}{(1-x)^2}','K_c = 48.9 = [HI]² / [H₂][I₂] = (2x)² / (1−x)(1−x) = (2x)² / (1−x)²')
+F.e('sq',r'\frac{2x}{(1-x)}=\sqrt{48.9}','2x / (1−x) = √48.9')
+F.e('x',r'x=\frac{6.99}{8.99}=0.778','x = 6.99 / 8.99 = 0.778')
+F.p('h4')
+F.e('h2c',r'[\mathrm{H_2}]=1.0-0.778=0.222\ \mathrm{M}','[H₂] = 1.0 − 0.778 = 0.222 M')
+F.e('i2c',r'[\mathrm{I_2}]=1.0-0.778=0.222\ \mathrm{M}','[I₂] = 1.0 − 0.778 = 0.222 M')
+F.e('hic',r'[\mathrm{HI}]=2\times0.778=1.556\ \mathrm{M}','[HI] = 2 × 0.778 = 1.556 M')
+F.p('pp-h','pp1')
+F.e('pprx',r'\mathrm{PCl_{3(g)}+Cl_{2(g)}\rightleftharpoons PCl_{5(g)}}','PCl₃(g) + Cl₂(g) ⇌ PCl₅(g)')
+F.p('h72','f1')
+F.done()
+s['sourceNote']='Printed folio 221. Continues the last sentence of the previous page ("compared to N₂ and O₂."). The Example 7.5 solution table and calculation are as printed; the printed calculation uses 6.99/8.99 = 0.778. The "Initial concentration" and "Equilibrium concentrations" rows are encoded as separate lines aligned under H₂, I₂ and HI. A CamScanner watermark crosses the page.'
+s['vocabulary']={"le-chatelier's principle":{'ur':'لی شیٹیلیئر کا اصول','ps':'د لی-شاټیلیر اصل'}}
+save(s)
+
+# ---------- 227 ----------
+s=mk(227,"Le-Chatelier's Principle · 7.2.1 Effect of change in Concentration · 7.2.2 Effect of change in Pressure or Volume",'لی شیٹیلیئر کا اصول · 7.2.1 ارتکاز کی تبدیلی کا اثر · 7.2.2 دباؤ یا حجم کی تبدیلی کا اثر','د لی-شاټیلیر اصل · 7.2.1 د غلظت د بدلون اغېز · 7.2.2 د فشار یا حجم د بدلون اغېز','le-chatelier')
+F=Flow(s)
+head(s,'h','Le-Chatelier\'s Principle','لی شیٹیلیئر کا اصول','د لی-شاټیلیر اصل')
+add(s,'a1',f'A French chemist Henry Le-Chatelier (1884) studied the effect o{SO} concentration, temperature, and pressure on a large number of systems i{SO} equilibrium. He summed up his conclusions in the form of a generalizatio{SO} known as Le-Chatelier\'s Principle. The principle states that "if a system a{SO} equilibrium is subjected to a stress by a change in temperature, pressure o{SO} concentration, the system tends to adjust itself so as to minimize the effect o{SO} that change".',
+ f'ایک فرانسیسی کیمیا دان ہنری لی شیٹیلیئر (1884) نے ارتکاز، درجہ حرارت اور دباؤ کے اثر کا مطالعہ {SO} توازن میں موجود بہت سے نظاموں پر کیا۔ اس نے اپنے نتائج کو ایک عمومی اصول کی شکل میں خلاصہ کیا {SO} جو لی شیٹیلیئر کے اصول کے نام سے مشہور ہے۔ اصول کہتا ہے کہ "اگر توازن میں موجود کوئی نظام {SO} درجہ حرارت، دباؤ یا ارتکاز میں تبدیلی سے دباؤ (تناؤ) کا شکار ہو تو نظام خود کو اس طرح ایڈجسٹ کرتا ہے کہ {SO} اس تبدیلی کا اثر کم سے کم ہو جائے"۔',
+ f'یو فرانسوي کیمیا پوه هنري لی-شاټیلیر (1884) د غلظت، تودوخې او فشار اغېز مطالعه کړ {SO} په تعادل کې په ډېرو سیسټمونو. هغه خپل پایلې د یوې عمومي قاعدې په بڼه لنډې کړې {SO} چې د لی-شاټیلیر د اصل په نوم پېژندل کېږي. اصل وايي چې "که په تعادل کې یو سیسټم {SO} د تودوخې، فشار یا غلظت په بدلون سره تر فشار لاندې راشي نو سیسټم ځان داسې برابروي چې {SO} د هغه بدلون اغېز کم کړي".')
+add(s,'a2',f'This principle is a general one and is applicable to all physical and{SO} chemical equilibriums. We shall now explain the application of this principle to{SO} the following changes.',f'یہ اصول ایک عمومی اصول ہے اور تمام طبعی اور {SO} کیمیائی توازنوں پر لاگو ہوتا ہے۔ اب ہم اس اصول کے اطلاق کی وضاحت کریں گے {SO} درج ذیل تبدیلیوں پر۔',f'دا اصل یو عمومي اصل دی او په ټولو فزیکي او {SO} کيمياوي تعادلونو باندې تطبیقېږي. اوس به موږ د دې اصل کارونه تشریح کړو {SO} په لاندې بدلونونو باندې.')
+head(s,'h1','7.2.1 Effect of change in Concentration','7.2.1 ارتکاز کی تبدیلی کا اثر','7.2.1 د غلظت د بدلون اغېز')
+add(s,'b1',f'If the concentration of one or more of the substances present i{SO} equilibrium is changed, the system is no longer in a state of equilibrium.{SO} According to Le-Chatelier\'s Principle the system will undergo changes in the{SO} concentration of various components so as to restore the equilibrium in the{SO} system. Consider for example the formation of NO.',f'اگر توازن میں موجود ایک یا زیادہ مادوں کا ارتکاز تبدیل کیا جائے {SO} تو نظام اب توازن کی حالت میں نہیں رہتا۔ لی شیٹیلیئر کے اصول کے مطابق نظام مختلف اجزاء کے ارتکاز میں {SO} تبدیلیوں سے گزرے گا تاکہ نظام میں توازن بحال ہو سکے {SO}۔ مثال کے طور پر NO کی تشکیل پر غور کریں۔',f'که په تعادل کې د شته یو یا ډېرو موادو غلظت بدل شي {SO} نو سیسټم نور د تعادل په حالت کې نه وي. د لی-شاټیلیر د اصل له مخې سیسټم به د مختلفو اجزاوو په غلظت کې بدلونونه تجربه کړي {SO} ترڅو په سیسټم کې تعادل بیرته رامنځته شي. د بېلګې په توګه د NO جوړېدو ته پام وکړئ.')
+add(s,'b2',f'i) Adding N₂ or O₂ disturbs the position of equilibrium and as a result the{SO} reaction moves in the forward direction so a greater yield of NO is{SO} obtained till equilibrium is re-established.',f'i) N₂ یا O₂ شامل کرنے سے توازن کا مقام بگڑ جاتا ہے اور نتیجتاً تعامل {SO} سیدھی سمت میں بڑھتا ہے لہٰذا NO کی زیادہ پیداوار {SO} حاصل ہوتی ہے جب تک توازن دوبارہ قائم نہ ہو جائے۔',f'i) د N₂ یا O₂ زیاتول د تعادل موقعیت ګډوډوي او په پایله کې تعامل {SO} په مخکښ لوري کې ځي نو د NO ډېر حاصل {SO} ترلاسه کېږي تر څو چې تعادل بیا رامنځته شي.')
+add(s,'b3',f'ii) Removing nitric oxide (NO) causes the forward reaction to occur so that{SO} part of the NO removed from the system is reproduced.',f'ii) نائٹرک آکسائیڈ (NO) ہٹانے سے سیدھا تعامل اس طرح ہوتا ہے کہ {SO} نظام سے ہٹائی گئی NO کا کچھ حصہ دوبارہ بن جاتا ہے۔',f'ii) د نایټریک اکسایډ (NO) لرې کول د مخکښ تعامل د پېښېدو سبب کېږي نو چې {SO} د سیسټم څخه لرې شوې NO یوه برخه بیا جوړه شي.')
+head(s,'h2','7.2.2 Effect of change in Pressure or Volume','7.2.2 دباؤ یا حجم کی تبدیلی کا اثر','7.2.2 د فشار یا حجم د بدلون اغېز')
+add(s,'c1',f'Liquids are relatively incompressible, changing the pressure above a liquid{SO} solution has negligible effect on the concentration of dissolved substance{SO}. Consequently, changes in external pressure have very little effect on equilibrium{SO} systems that contain only solids (incompressible) or liquids. In contrast, because{SO} gases are highly compressible, their concentrations vary considerably with pressure{SO}. From the ideal gas law, PV = nRT, the concentration (C) of a gas is related to{SO} pressure as follows:',f'مائعات نسبتاً ناقابلِ تراکم ہیں، مائع {SO} محلول کے اوپر دباؤ بدلنے کا حل شدہ مادے کے ارتکاز پر نہ ہونے کے برابر اثر ہوتا ہے {SO}۔ نتیجتاً بیرونی دباؤ کی تبدیلیوں کا ان توازنی {SO} نظاموں پر بہت کم اثر ہوتا ہے جن میں صرف ٹھوس (ناقابلِ تراکم) یا مائعات ہوں۔ اس کے برعکس، چونکہ {SO} گیسیں بہت قابلِ تراکم ہیں، ان کے ارتکاز دباؤ کے ساتھ کافی بدلتے ہیں {SO}۔ مثالی گیس کے قانون PV = nRT سے گیس کا ارتکاز (C) {SO} دباؤ سے اس طرح مربوط ہے:',f'مایعات نسبتاً غیر فشار منونکي دي، د مایع {SO} محلول پورته د فشار بدلول د منحل شوې مادې په غلظت باندې ناچیز اغېز لري {SO}. په پایله کې د بهرني فشار بدلونونه په هغو د تعادل {SO} سیسټمونو باندې ډېر لږ اغېز لري چې یوازې جامدات (غیر فشار منونکي) یا مایعات لري. برعکس، ځکه چې {SO} ګازونه ډېر فشار منونکي دي، د هغوی غلظتونه د فشار سره ډېر بدلېږي {SO}. د ایډیال ګاز له قانون PV = nRT څخه د ګاز غلظت (C) {SO} د فشار سره داسې اړوند دی:')
+add(s,'c2',f'Hence, the concentration in any gaseous reactant or product is direct{SO}','لہٰذا، کسی بھی گیسی تعامل کنندہ یا حاصل کا ارتکاز براہِ راست [scan obscured]','نو، د هر ګازي متعامل یا محصول غلظت مستقیماً [scan obscured]')
+F.p('h','a1','a2','h1','b1')
+F.e('no',r'\mathrm{N_{2(g)}+O_{2(g)}\rightleftharpoons 2NO_{(g)}}','N₂(g) + O₂(g) ⇌ 2NO(g)')
+F.e('kc',r'K_c=\frac{[\mathrm{NO}]^2}{[\mathrm{N_2}][\mathrm{O_2}]}','K_c = [NO]² / [N₂][O₂]')
+F.p('b2','b3','h2','c1')
+F.e('cn',r'C=\frac{n}{V}=\frac{P}{RT}','C = n/V = P/RT')
+F.p('c2')
+F.done()
+s['sourceNote']='Printed folio 222. The right edge is clipped by the page curl on nearly every prose line; clipped endings are marked [scan obscured] and not inferred. The pink italic statement of the principle is partly clipped at the right. The last sentence ("Hence, the concentration in any gaseous reactant or product is direct…") continues on the next page. A CamScanner watermark crosses the page.'
+s['sourceGap']=dict(note='Right-edge clipping throughout; last sentence continues on the next page.')
+s['vocabulary']={'incompressible':{'ur':'ناقابلِ تراکم','ps':'غیر فشار منونکی'},'compressible':{'ur':'قابلِ تراکم','ps':'فشار منونکی'}}
+save(s)
+
+# ---------- 228 ----------
+s=mk(228,'Effect of pressure on the formation of NO₂, decomposition of HI and PCl₅ · 7.2.3 Effect of change in Temperature','NO₂ کی تشکیل، HI اور PCl₅ کی تحلیل پر دباؤ کا اثر · 7.2.3 درجہ حرارت کی تبدیلی کا اثر','د NO₂ جوړېدو، HI او PCl₅ تجزیې باندې د فشار اغېز · 7.2.3 د تودوخې د بدلون اغېز','pressure-temperature')
+F=Flow(s)
+add(s,'a1','proportional to the applied pressure and inversely proportional to the total volume (V). Consequently, the equilibrium compositions of system that contain gaseous substances are quite sensitive to changes in pressure, volume and temperature.','کے لاگو کیے گئے دباؤ کے براہِ راست متناسب اور کل حجم (V) کے بالعکس متناسب ہوتا ہے۔ نتیجتاً، گیسی مادے رکھنے والے نظام کی توازنی ترکیبیں دباؤ، حجم اور درجہ حرارت کی تبدیلیوں کے لیے کافی حساس ہوتی ہیں۔','د پلي شوي فشار سره مستقیماً متناسب او د ټول حجم (V) سره معکوساً متناسب دی. په پایله کې، د ګازي موادو لرونکو سیسټمونو د تعادل جوړښتونه د فشار، حجم او تودوخې په بدلونونو ډېر حساس دي.')
+add(s,'a2','Consider the following examples:','درج ذیل مثالوں پر غور کریں:','لاندې بېلګو ته پام وکړئ:')
+add(s,'a3','(a) Effect of pressure on the formation of No₂','(الف) NO₂ کی تشکیل پر دباؤ کا اثر','(الف) د NO₂ په جوړېدو باندې د فشار اغېز')
+add(s,'a4',"From the stoichiometry of the reaction, the ratio of N₂O₄ to 2NO₂ is 1 to 2. Hence, by Avogadro's law this can be expressed as 1 to 2 volume ratio (1:2). By increasing pressure, a state of lower volume is favoured. Hence, the equilibrium moves towards the lower volume side i.e. reactant side and more will be produced (i.e. reverse reaction is favoured) and vice versa.",'تعامل کی ہم مقداری حساب سے N₂O₄ اور 2NO₂ کی نسبت 1 اور 2 ہے۔ لہٰذا ایووگیڈرو کے قانون کے مطابق اسے 1 اور 2 کی حجمی نسبت (1:2) کے طور پر ظاہر کیا جا سکتا ہے۔ دباؤ بڑھانے سے کم حجم والی حالت کو ترجیح ملتی ہے۔ لہٰذا توازن کم حجم والی طرف یعنی تعامل کنندہ کی طرف منتقل ہوتا ہے اور زیادہ بنے گا (یعنی الٹے تعامل کو ترجیح ملتی ہے) اور اس کے برعکس۔','د تعامل له سټوکیومیټري څخه د N₂O₄ او 2NO₂ نسبت 1 او 2 دی. نو د اووګادرو د قانون له مخې دا د 1 او 2 د حجم نسبت (1:2) په توګه ښودل کېدای شي. د فشار په زیاتولو سره د ټیټ حجم حالت غوره کېږي. نو تعادل د ټیټ حجم لوري یعنې د متعامل لوري ته ځي او ډېر به جوړ شي (یعنې بېرته تعامل غوره کېږي) او برعکس.')
+add(s,'a5','(b) Effect of pressure on the decomposition of HI.','(ب) HI کی تحلیل پر دباؤ کا اثر۔','(ب) د HI په تجزیه باندې د فشار اغېز.')
+add(s,'a6','The reaction shows that there is no change in volume during the decomposition of HI. Hence, there will be no effect of change in pressure on the equilibrium concentrations of reactants and products.','تعامل ظاہر کرتا ہے کہ HI کی تحلیل کے دوران حجم میں کوئی تبدیلی نہیں ہوتی۔ لہٰذا دباؤ کی تبدیلی کا تعامل کنندگان اور حاصلات کے توازنی ارتکاز پر کوئی اثر نہیں ہوگا۔','تعامل ښيي چې د HI د تجزیې پر مهال په حجم کې هېڅ بدلون نشته. نو د فشار بدلون به د متعاملینو او محصولاتو د تعادل غلظتونو باندې هېڅ اغېز ونه لري.')
+add(s,'a7','(c) Effect of pressure on thermal decomposition of PCl₅','(ج) PCl₅ کی حرارتی تحلیل پر دباؤ کا اثر','(ج) د PCl₅ په تودوخیزه تجزیه باندې د فشار اغېز')
+add(s,'a8','In this reaction, one mole of reactant gives two moles of product after decomposition, all in gasous state. The effect of pressure on this system will result in decrease in volume which results when reaction goes from right to left in the reactant side. Thus this reaction is favourable under low pressure.','اس تعامل میں تحلیل کے بعد تعامل کنندہ کا ایک مول حاصلات کے دو مول دیتا ہے، سب گیسی حالت میں۔ اس نظام پر دباؤ کا اثر حجم میں کمی کی صورت میں ہوگا جو اس وقت ہوتی ہے جب تعامل دائیں سے بائیں تعامل کنندہ کی طرف جاتا ہے۔ اس طرح یہ تعامل کم دباؤ پر سازگار ہے۔','په دې تعامل کې د تجزیې وروسته د متعامل یو مول د محصول دوه مولونه ورکوي، ټول په ګازي حالت کې. په دې سیسټم باندې د فشار اغېز به د حجم په کمېدو کې وي چې هغه مهال رامنځته کېږي چې تعامل له ښي څخه چپ لوري ته د متعامل په لوري ځي. په دې توګه دا تعامل په ټیټ فشار کې مناسب دی.')
+head(s,'h3','7.2.3 Effect of change in Temperature','7.2.3 درجہ حرارت کی تبدیلی کا اثر','7.2.3 د تودوخې د بدلون اغېز')
+add(s,'t1',"If the temperature of a system at equilibrium is changed, the value of the equilibrium constant also changes. According to the Le-Chatelier's principle, if the temperature of a reaction increases, the equilibrium shifts in the endothermic direction i.e. the direction in which heat is absorbed in an attempt to lower the temperature.",'اگر توازن میں موجود نظام کا درجہ حرارت تبدیل کیا جائے تو توازنی مستقلہ کی قیمت بھی بدل جاتی ہے۔ لی شیٹیلیئر کے اصول کے مطابق، اگر کسی تعامل کا درجہ حرارت بڑھے تو توازن گرم گیر (حرارت جذب کرنے والی) سمت میں منتقل ہوتا ہے یعنی وہ سمت جس میں درجہ حرارت کم کرنے کی کوشش میں حرارت جذب ہوتی ہے۔','که د تعادل په حالت کې د یو سیسټم تودوخه بدله شي نو د تعادل ثابت ارزښت هم بدلېږي. د لی-شاټیلیر د اصل له مخې، که د یو تعامل تودوخه لوړه شي نو تعادل د تودوخه جذبوونکي لوري ته ځي یعنې هغه لوری چې په هغه کې د تودوخې د کمولو په هڅه کې تودوخه جذبېږي.')
+add(s,'t2','Consider the following reactions,','درج ذیل تعاملات پر غور کریں،','لاندې تعاملاتو ته پام وکړئ،')
+add(s,'t3','Since the reaction is exothermic in the forward direction and its reverse direction is endothermic so an increase in temperature would shift the equilibrium in the backward direction.','چونکہ تعامل سیدھی سمت میں گرمی خارج کرنے والا ہے اور اس کی الٹی سمت گرم گیر ہے اس لیے درجہ حرارت میں اضافہ توازن کو پچھلی سمت میں منتقل کرے گا۔','ځکه چې تعامل په مخکښ لوري کې تودوخه خوشې کوونکی دی او د هغه بېرته لوری تودوخه جذبوونکی دی نو د تودوخې زیاتوالی به تعادل په شاتګ لوري کې بدل کړي.')
+F.p('a1','a2','a3')
+F.e('n2o4',r'\mathrm{N_2O_{4(g)}\rightleftharpoons 2NO_{2(g)}}','N₂O₄(g) ⇌ 2NO₂(g)')
+F.p('a4','a5')
+F.e('hi',HI,HIt)
+F.p('a6','a7')
+F.e('pcl5',r'\mathrm{PCl_{5(g)}\rightleftharpoons PCl_{3(g)}+Cl_{2(g)}}','PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)')
+F.p('a8','h3','t1','t2')
+F.e('co',r'2\mathrm{CO_{(g)}+O_{2(g)}\rightleftharpoons 2CO_{2(g)}}\qquad\Delta H=-41.84\ \mathrm{kJ\,mol^{-1}}','2CO(g) + O₂(g) ⇌ 2CO₂(g)    ΔH = −41.84 kJ mol⁻¹')
+F.p('t3')
+F.e('no2',r'2\mathrm{NO_{(g)}+O_{2(g)}\rightleftharpoons 2NO_{2(g)}}\qquad\Delta H=180.5\ \mathrm{kJ\,mol^{-1}}','2NO(g) + O₂(g) ⇌ 2NO₂(g)    ΔH = 180.5 kJ mol⁻¹')
+F.done()
+s['sourceNote']='Printed folio 223. The first line continues the sentence from the previous page. Source spellings "No₂" (heading (a)) and "gasous" are printed as such and retained. In the last reaction the first reactant glyph on the scan is unclear; it is read as 2NO(g) and the printed ΔH = 180.5 kJ mol⁻¹ is retained. The pink italic statement of the temperature rule is partly faint but legible. A CamScanner watermark crosses the page.'
+s['sourceGap']=dict(note='Printed misspellings retained; last reaction reactant glyph is unclear.')
+s['vocabulary']={'endothermic':{'ur':'گرم گیر','ps':'تودوخه جذبوونکی'},'exothermic':{'ur':'گرمی خارج کرنے والا','ps':'تودوخه خوشې کوونکی'}}
+save(s)

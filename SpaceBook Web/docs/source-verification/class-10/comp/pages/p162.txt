@@ -1,0 +1,28 @@
+@printed 150
+@status lesson
+### عنوانات / ذیلی عنوانات ڈالنا (Inserting Heading / Subheading) || Inserting headings / subheadings || سرلیکونه / فرعي سرلیکونه اچول
+p <h1></h1> سے <h6></h6> چھ ہیڈنگ ٹیگ ہیں۔ <h1></h1> ٹیگز سب سے بڑی سرخی اور <h6></h6> ٹیگز سب سے چھوٹی سرخی کیلئے استعمال ہوتے ہیں۔ مندرجہ ذیل HTML ڈاکومنٹ یہ ظاہر کرتا ہے کہ ویب پیج میں مذکورہ بالا ٹیگز کو کس طرح استعمال کیا جائے۔ || <h1></h1> to <h6></h6> are the six heading tags. The <h1></h1> tags are used for the largest heading and <h6></h6> for the smallest. The following HTML document shows how to use these tags in a web page. || له <h1></h1> تر <h6></h6> شپږ د سرلیک ټیګونه دي. <h1></h1> ټیګونه د تر ټولو لوی سرلیک او <h6></h6> د تر ټولو کوچني سرلیک لپاره کارېږي. لاندې HTML سند ښيي چې پورتني ټیګونه په ویب پاڼه کې څنګه وکارول شي.
+### شکل نمبر 7.17 HTML ڈاکومنٹ میں بنیادی ٹیگ کا استعمال || Figure 7.17 Using basic tags in an HTML document || ۷.۱۷ شکل په HTML سند کې د بنسټیزو ټیګونو کارونه
+m <html>
+m <head>
+m   <title>Creating Heading & Paragraph</title>
+m </head>
+m <body>
+m   <h3>Random Access Memory</h3>
+m   <p>This refers to memories in which actual physical location of a<br>
+m   memory word has no effect on how long it takes to read from or<br>
+m   write into that location. In other words, the access time is the<br>
+m   same for any address in memory. Most semiconductor memories<br>
+m   and magnetic disk memories are random access memories.</p>
+m </body>
+m </html>
+p براؤزر ونڈو اسے ایسا دکھائے گی جیسا کہ شکل نمبر 7.18 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.18. || براوزر کړکۍ به یې لکه په ۷.۱۸ شکل کې وښيي.
+box info | شکل نمبر 7.18 براؤزر ونڈو جو ہیڈنگ اور پیراگراف کو دکھا رہی ہے || Figure 7.18 Browser window showing the heading and paragraph || ۷.۱۸ شکل براوزر کړکۍ چې سرلیک او پاراګراف ښيي
+p **Random Access Memory** || **Random Access Memory** || **Random Access Memory**
+m This refers to memories in which actual physical location of a
+m memory word has no effect on how long it takes to read from or
+m write into that location. In other words, the access time is the
+m same for any address in memory. Most semiconductor memories
+m and magnetic disk memories are random access memories.
+endbox
+@issue The book says magnetic disk memories are random-access memories; magnetic disks are not true RAM, since their access time depends on where the data is.

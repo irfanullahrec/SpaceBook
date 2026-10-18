@@ -1,0 +1,38 @@
+@printed 175
+@status lesson
+p valign سیل کے اندر موجود ٹیکسٹ کی عمودی سیدھ (Vertical Alignment) کی تخصیص کرنے کے لیے استعمال ہوتا ہے۔ مثال کے طور پر || valign is used to set the vertical alignment of the text inside a cell. For example: || valign د حجرې دننه د متن عمودي برابرونې (Vertical Alignment) ټاکلو لپاره کارېږي. د بېلګې په توګه:
+m <table style="width:50%;">
+m   <tr>
+m     <th>Month</th>
+m     <th>Savings</th>
+m   </tr>
+m   <tr style="height:100px">
+m     <td valign="bottom">January</td>
+m     <td valign="bottom">RS. 99</td>
+m   </tr>
+m </table>
+p Notepad++ ایڈیٹر میں اس کوڈ کو <html> اور <body> ٹیگ کو استعمال کرنے کے بعد، براؤزر ونڈو میں اس کا آؤٹ پُٹ کچھ اس طرح نظر آئے گا جیسا کہ شکل نمبر 7.54 میں دکھایا گیا۔ || After putting this code inside <html> and <body> tags in the Notepad++ editor, its output in the browser window looks as shown in Figure 7.54. || په Notepad++ اډیټر کې د <html> او <body> ټیګونو د کارولو وروسته، په براوزر کړکۍ کې یې output لکه په ۷.۵۴ شکل کې ښکاري.
+table شکل نمبر 7.54 ٹیبل میں valign استعمال ہوا ہے || Figure 7.54 valign used in a table || ۷.۵۴ شکل په جدول کې valign کارول شوی
+th | Month | Savings
+tr | (خالی جگہ) January — نیچے کی سیدھ میں || (space) January — aligned to the bottom || (تش ځای) January — ښکته برابر | (خالی جگہ) RS. 99 — نیچے کی سیدھ میں || (space) RS. 99 — aligned to the bottom || (تش ځای) RS. 99 — ښکته برابر
+endtable
+p nowrap ایک بولین ٹیگ ہے۔ جب یہ موجود ہو تو سیل کے اندر موجود ٹیکسٹ لپیٹ (wrap) نہیں پائے گا۔ مثال: || nowrap is a Boolean attribute. When it is present, the text inside the cell will not wrap. Example: || nowrap یوه بولین ځانګړتیا ده. کله چې وي، د حجرې دننه متن نه ماتېږي (wrap). بېلګه:
+m <html>
+m <head>
+m </head>
+m   <body>
+m     <table>
+m       <tr>
+m         <th>Poem</th>
+m         <th>Poem</th>
+m       </tr>
+m       <tr>
+m         <td nowrap>Never increase, beyond what is necessary, the number of entities required to explain anything
+m         </td>
+m         <td>Never increase, beyond what is necessary, the number of entities required to explain anything
+m         </td>
+m       </tr>
+m     </table>
+m   </body>
+m </html>
+@issue nowrap is called a Boolean "tag"; it is an attribute of <td>. valign and nowrap are obsolete in HTML5 (CSS vertical-align and white-space:nowrap replace them). The "poem" in the example is Occam's razor, a philosophical principle, not a poem.

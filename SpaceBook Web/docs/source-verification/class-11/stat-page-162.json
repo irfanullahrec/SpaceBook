@@ -1,0 +1,440 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s162-index-relatives-1",
+  "title": "Example 4.5: solution · Example 4.6: chain indices (start)",
+  "headingUrdu": "مثال 4.5: حل · مثال 4.6: زنجیری اشاریے (آغاز)",
+  "headingPashto": "بېلګه 4.5: حل · بېلګه 4.6: زنځیري شاخصونه (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 162,
+    "printedPage": "154"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s162-sol45",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-5"
+    },
+    {
+      "id": "stat11-s162-a1",
+      "en": "First we compute price relatives P0n = (pn/p0) × 100 for each commodity and then index numbers by using A.M and median as follows;",
+      "ur": "پہلے ہم ہر جنس کے لیے قیمتی اضافتیں P0n = (pn/p0) × 100 حساب کرتے ہیں اور پھر حسابی اوسط اور وسطانیہ استعمال کر کے اشاریہ اعداد درج ذیل طور پر حساب کرتے ہیں؛",
+      "ps": "لومړی موږ د هر توکي لپاره د بیې نسبتونه P0n = (pn/p0) × 100 محاسبه کوو او بیا د A.M او میانې په کارولو سره شاخص شمېرې داسې محاسبه کوو؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-5"
+    },
+    {
+      "id": "stat11-s162-ex46",
+      "en": "Example: 4.6",
+      "ur": "مثال: 4.6",
+      "ps": "بېلګه: 4.6",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-6"
+    },
+    {
+      "id": "stat11-s162-q46",
+      "en": "Find chain indices for the following data by using A.M of the relatives.",
+      "ur": "درج ذیل اعداد و شمار سے اضافتوں کے حسابی اوسط کے ذریعے زنجیری اشاریے معلوم کریں۔",
+      "ps": "له لاندې معلوماتو څخه د نسبتونو د حسابي اوسط په واسطه زنځیري شاخصونه ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-6"
+    },
+    {
+      "id": "stat11-s162-sol46",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-6"
+    },
+    {
+      "id": "stat11-s162-a2",
+      "en": "First we compute link relatives P0n = (pn/pn−1) × 100 for each commodity and",
+      "ur": "پہلے ہم ہر جنس کے لیے کڑی اضافتیں P0n = (pn/pn−1) × 100 حساب کرتے ہیں اور",
+      "ps": "لومړی موږ د هر توکي لپاره پیوندي نسبتونه P0n = (pn/pn−1) × 100 محاسبه کوو او",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-6",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"then chain indices …\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s162-sol45",
+        "stat11-s162-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s162-ex46",
+        "stat11-s162-q46"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s162-sol46",
+        "stat11-s162-a2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Example 4.5 solution: price relatives and index numbers",
+      "captionUrdu": "مثال 4.5 کا حل: قیمتی اضافتیں اور اشاریہ اعداد",
+      "captionPashto": "د بېلګې 4.5 حل: د بیې نسبتونه او شاخص شمېرې",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Sugar",
+          "ur": "چینی",
+          "ps": "بوره"
+        },
+        {
+          "en": "Tea",
+          "ur": "چائے",
+          "ps": "چای"
+        },
+        {
+          "en": "Soap",
+          "ur": "صابن",
+          "ps": "صابون"
+        },
+        {
+          "en": "Tobacco",
+          "ur": "تمباکو",
+          "ps": "تنباکو"
+        },
+        {
+          "en": "By mean",
+          "ur": "اوسط سے",
+          "ps": "په اوسط"
+        },
+        {
+          "en": "By median",
+          "ur": "وسطانیہ سے",
+          "ps": "په میانه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2010",
+            "ur": "2010",
+            "ps": "2010"
+          },
+          {
+            "en": "1.20/1.20 × 100 = 100",
+            "ur": "1.20/1.20 × 100 = 100",
+            "ps": "1.20/1.20 × 100 = 100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          }
+        ],
+        [
+          {
+            "en": "2011",
+            "ur": "2011",
+            "ps": "2011"
+          },
+          {
+            "en": "1.40/1.20 × 100 = 116.7",
+            "ur": "1.40/1.20 × 100 = 116.7",
+            "ps": "1.40/1.20 × 100 = 116.7"
+          },
+          {
+            "en": "107.1",
+            "ur": "107.1",
+            "ps": "107.1"
+          },
+          {
+            "en": "116.7",
+            "ur": "116.7",
+            "ps": "116.7"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          },
+          {
+            "en": "115.1",
+            "ur": "115.1",
+            "ps": "115.1"
+          },
+          {
+            "en": "116.7",
+            "ur": "116.7",
+            "ps": "116.7"
+          }
+        ],
+        [
+          {
+            "en": "2012",
+            "ur": "2012",
+            "ps": "2012"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          },
+          {
+            "en": "116.1",
+            "ur": "116.1",
+            "ps": "116.1"
+          },
+          {
+            "en": "133.3",
+            "ur": "133.3",
+            "ps": "133.3"
+          },
+          {
+            "en": "128.6",
+            "ur": "128.6",
+            "ps": "128.6"
+          },
+          {
+            "en": "125.8",
+            "ur": "125.8",
+            "ps": "125.8"
+          },
+          {
+            "en": "126.6",
+            "ur": "126.6",
+            "ps": "126.6"
+          }
+        ],
+        [
+          {
+            "en": "2013",
+            "ur": "2013",
+            "ps": "2013"
+          },
+          {
+            "en": "133.3",
+            "ur": "133.3",
+            "ps": "133.3"
+          },
+          {
+            "en": "121.4",
+            "ur": "121.4",
+            "ps": "121.4"
+          },
+          {
+            "en": "150",
+            "ur": "150",
+            "ps": "150"
+          },
+          {
+            "en": "127.7",
+            "ur": "127.7",
+            "ps": "127.7"
+          },
+          {
+            "en": "133.03",
+            "ur": "133.03",
+            "ps": "133.03"
+          },
+          {
+            "en": "130.5",
+            "ur": "130.5",
+            "ps": "130.5"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-5"
+    },
+    {
+      "caption": "Example 4.6: prices of sugar, tea and coffee",
+      "captionUrdu": "مثال 4.6: چینی، چائے اور کافی کی قیمتیں",
+      "captionPashto": "بېلګه 4.6: د بورې، چای او کافي بیې",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Sugar (Rs)",
+          "ur": "چینی (روپے)",
+          "ps": "بوره (روپۍ)"
+        },
+        {
+          "en": "Tea (Rs)",
+          "ur": "چائے (روپے)",
+          "ps": "چای (روپۍ)"
+        },
+        {
+          "en": "Coffee (Rs)",
+          "ur": "کافی (روپے)",
+          "ps": "کافي (روپۍ)"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1940",
+            "ur": "1940",
+            "ps": "1940"
+          },
+          {
+            "en": "2.8",
+            "ur": "2.8",
+            "ps": "2.8"
+          },
+          {
+            "en": "10.5",
+            "ur": "10.5",
+            "ps": "10.5"
+          },
+          {
+            "en": "2.7",
+            "ur": "2.7",
+            "ps": "2.7"
+          }
+        ],
+        [
+          {
+            "en": "1941",
+            "ur": "1941",
+            "ps": "1941"
+          },
+          {
+            "en": "3.4",
+            "ur": "3.4",
+            "ps": "3.4"
+          },
+          {
+            "en": "10.8",
+            "ur": "10.8",
+            "ps": "10.8"
+          },
+          {
+            "en": "3.2",
+            "ur": "3.2",
+            "ps": "3.2"
+          }
+        ],
+        [
+          {
+            "en": "1942",
+            "ur": "1942",
+            "ps": "1942"
+          },
+          {
+            "en": "3.6",
+            "ur": "3.6",
+            "ps": "3.6"
+          },
+          {
+            "en": "10.6",
+            "ur": "10.6",
+            "ps": "10.6"
+          },
+          {
+            "en": "3.5",
+            "ur": "3.5",
+            "ps": "3.5"
+          }
+        ],
+        [
+          {
+            "en": "1943",
+            "ur": "1943",
+            "ps": "1943"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "11.4",
+            "ur": "11.4",
+            "ps": "11.4"
+          },
+          {
+            "en": "3.8",
+            "ur": "3.8",
+            "ps": "3.8"
+          }
+        ],
+        [
+          {
+            "en": "1944",
+            "ur": "1944",
+            "ps": "1944"
+          },
+          {
+            "en": "4.2",
+            "ur": "4.2",
+            "ps": "4.2"
+          },
+          {
+            "en": "11.5",
+            "ur": "11.5",
+            "ps": "11.5"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-6"
+    }
+  ],
+  "sourceNote": "Printed page 154. The two-level headers \"Price relatives / Index numbers\" and \"Commodity (Prices in Rs.)\" are flattened; the first cells of the 2010 and 2011 rows show the full fraction working. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:07:58.581566+00:00",
+    "scope": "Scan 162 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

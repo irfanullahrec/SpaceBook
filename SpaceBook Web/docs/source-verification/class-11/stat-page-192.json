@@ -1,0 +1,580 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s192-corr-formula-1",
+  "title": "Shortcut method · Interpretation · Example 5.3: Karl Pearson coefficient of correlation",
+  "headingUrdu": "مختصر طریقہ · تشریح · مثال 5.3: کارل پیئرسن کا ارتباطی عددی سر",
+  "headingPashto": "لنډه طریقه · تفسیر · بېلګه 5.3: د Karl Pearson همتړاو ضریب",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 192,
+    "printedPage": "182"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s192-i1",
+      "en": "Interpretation of the Coefficient of Correlation: The numerical value indicates the strength of the relationship while the sign only indicates direction of the relationship.",
+      "ur": "ارتباط کے عددی سر کی تشریح: عددی قدر تعلق کی مضبوطی ظاہر کرتی ہے جبکہ علامت صرف تعلق کی سمت ظاہر کرتی ہے۔",
+      "ps": "د همتړاو د ضریب تفسیر: عددي ارزښت د اړیکې ځواک ښيي پداسې حال کې چې نښه یوازې د اړیکې لوری ښيي."
+    },
+    {
+      "id": "stat11-s192-i2",
+      "en": "If r_xy = 0 means correlation is zero i.e. x and y are uncorrelated.",
+      "ur": "اگر r_xy = 0 ہو تو مطلب ارتباط صفر ہے یعنی x اور y غیر مربوط ہیں۔",
+      "ps": "که r_xy = 0 وي نو پدې معنا چې همتړاو صفر دی یعنې x او y غیر همتړي دي."
+    },
+    {
+      "id": "stat11-s192-i3",
+      "en": "> 0 means correlation is positive.",
+      "ur": "> 0 کا مطلب ارتباط مثبت ہے۔",
+      "ps": "> 0 پدې معنا چې همتړاو مثبت دی."
+    },
+    {
+      "id": "stat11-s192-i4",
+      "en": "< 0 means correlation is negative.",
+      "ur": "< 0 کا مطلب ارتباط منفی ہے۔",
+      "ps": "< 0 پدې معنا چې همتړاو منفي دی."
+    },
+    {
+      "id": "stat11-s192-i5",
+      "en": "= 1 means there is perfect positive correlation.",
+      "ur": "= 1 کا مطلب کامل مثبت ارتباط ہے۔",
+      "ps": "= 1 پدې معنا چې بشپړ مثبت همتړاو دی."
+    },
+    {
+      "id": "stat11-s192-i6",
+      "en": "= −1 means there is perfect negative correlation.",
+      "ur": "= −1 کا مطلب کامل منفی ارتباط ہے۔",
+      "ps": "= −1 پدې معنا چې بشپړ منفي همتړاو دی."
+    },
+    {
+      "id": "stat11-s192-ex53",
+      "en": "Example: 5.3",
+      "ur": "مثال: 5.3",
+      "ps": "بېلګه: 5.3",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s192-q53",
+      "en": "Calculate the Karl Pearson coefficient of correlation for the following data.",
+      "ur": "درج ذیل اعداد و شمار کے لیے کارل پیئرسن کا ارتباطی عددی سر حساب کریں۔",
+      "ps": "د لاندې معلوماتو لپاره د Karl Pearson همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s192-sol53",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-3"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s192-i1",
+        "stat11-s192-i2",
+        "stat11-s192-i3",
+        "stat11-s192-i4",
+        "stat11-s192-i5",
+        "stat11-s192-i6",
+        "stat11-s192-ex53",
+        "stat11-s192-q53"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s192-sol53"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s192-sh",
+      "latex": "\\text{or}\\quad r_{xy}=\\dfrac{n\\sum xy-\\sum x\\sum y}{\\sqrt{\\left[n\\sum x^2-\\left(\\sum x\\right)^2\\right]\\left[n\\sum y^2-\\left(\\sum y\\right)^2\\right]}}\\qquad\\text{(Shortcut method)}",
+      "accessible": "or r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])   (Shortcut method)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "or r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])   (Shortcut method)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "or r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])   (Shortcut method)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "or r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])   (Shortcut method)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 5.3: x and y",
+      "captionUrdu": "مثال 5.3: x اور y",
+      "captionPashto": "بېلګه 5.3: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "11",
+          "ur": "11",
+          "ps": "11"
+        },
+        {
+          "en": "13",
+          "ur": "13",
+          "ps": "13"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "caption": "Example 5.3 solution table",
+      "captionUrdu": "مثال 5.3 کا حل: جدول",
+      "captionPashto": "د بېلګې 5.3 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "y",
+          "ur": "y",
+          "ps": "y"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(y − ȳ)",
+          "ur": "(y − ȳ)",
+          "ps": "(y − ȳ)"
+        },
+        {
+          "en": "(x − x̄)(y − ȳ)",
+          "ur": "(x − x̄)(y − ȳ)",
+          "ps": "(x − x̄)(y − ȳ)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        },
+        {
+          "en": "(y − ȳ)²",
+          "ur": "(y − ȳ)²",
+          "ps": "(y − ȳ)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "-6",
+            "ur": "-6",
+            "ps": "-6"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          }
+        ],
+        [
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "63",
+            "ur": "63",
+            "ps": "63"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "46",
+            "ur": "46",
+            "ps": "46"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "84",
+            "ur": "84",
+            "ps": "84"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-3"
+    }
+  ],
+  "sourceNote": "Printed page 182. The five interpretation lines (= 0, > 0, < 0, = 1, = −1) are printed as an aligned list below \"If r_xy\". A finger shadow at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:20:18.269846+00:00",
+    "scope": "Scan 192 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,35 @@
+@printed 170
+@status lesson
+### شکل نمبر 7.48 HTML ڈاکومنٹ میں ویب پیج کے اندر ہائپر لنکس کا استعمال || Figure 7.48 Using hyperlinks within a web page in an HTML document || ۷.۴۸ شکل په HTML سند کې د ویب پاڼې دننه د هایپرلینکونو کارونه
+m <html>
+m <head>
+m <title>Using Anchors</title>
+m </head>
+m <body>
+m <font size=4>Types of Computers</font><br><br>
+m <a href=#Microcomputer>1. Microcomputer</a><br>
+m <a href=#Minicomputer>2. Minicomputer</a><br>
+m <a href=#Mainframe>3. Mainframe</a><br><br>
+m 1.<a name=Microcomputer></a><b>Microcomputer</b><br>
+m Microcomputers are the smallest and the cheapest computer.<br>
+m These computers are the ones, most commonly used in homes<br>
+m and offices. Microcomputer was introduced in 1970s when<br>
+m microprocessor was invented. A microprocessor is a single<br>
+m IC chip that controls the operation of the computer.<br><br>
+m 2.<a name=Minicomputer></a><b>Minicomputer</b><br>
+m Minicomputers were introduced in the 1960s when IC chips were<br>
+m introduced. A minicomputer is bigger than a microcomputer but<br>
+m smaller than a mainframe. These computers can execute billions<br>
+m of instructions per second. Therefore, they can process more<br><br>
+m 3.<a name=Mainframe></a><b>Mainframe</b><br>
+m Mainframe is a very large, very powerful and expensive<br>
+m computers that can support hundreds and thousands of users<br>
+m at the same time. Mainframes are used in large organizations<br>
+m such as banks, airlines, big universities, research centers,<br>
+m and government departments.<br>
+m </body>
+m </html>
+@issue The anchor names in the "name=" lines are smudged in the scan and are read as Microcomputer, Minicomputer and Mainframe to match the hrefs. The minicomputer paragraph stops mid-sentence ("they can process more"), and "Mainframe is a very large … computers" mixes singular and plural; both are kept as printed.
+p براؤزر ونڈو اسے دکھا دے گی۔ || The browser window will show: || براوزر کړکۍ به یې وښيي:
+m Click here to go to Unit 7.
+p جب یوزر here لفظ پر کلک کرتا ہے، تو وہ اسے اس مقام پر لے جائے گا جہاں ویب پیج میں Unit 7 شروع ہوتا ہے۔ شکل نمبر 7.48 میں موجود HTML ڈاکومنٹ یہ ظاہر کرتا ہے کہ ویب پیج میں ہائپر لنک کیسے بنائے جائیں۔ اس HTML ڈاکومنٹ میں تین ہائپر لنک ہیں۔ جب یوزر دوسرے ہائپر لنک پر کلک کرتا ہے، تو وہ اسے دوسرے عنوان پر لے جائے گا جو Mini Computer کے بارے میں ہے۔ جب یوزر تیسرے ہائپر لنک پر کلک کرتا ہے، تو وہ اسے تیسری قسم کے کمپیوٹر پر لے جائے گا جو Mainframe ہے۔ اگر یوزر پہلا ہائپر لنک کلک کرتا ہے تو اسکرین پر Microcomputer کے بارے میں پہلا عنوان پہلے ہی ظاہر ہونے کی وجہ سے کچھ نہیں ہو گا۔ || When the user clicks the word here, it takes them to the place in the web page where Unit 7 starts. The HTML document in Figure 7.48 shows how to make hyperlinks within a web page. This HTML document has three hyperlinks. When the user clicks the second hyperlink, it takes them to the second heading, about Minicomputer. When the user clicks the third hyperlink, it takes them to the third kind of computer, Mainframe. If the user clicks the first hyperlink, nothing happens, because the first heading, about Microcomputer, is already shown on the screen. || کله چې کاروونکی پر here کلمه کلیک وکړي، هغه ځای ته یې وړي چېرې چې په ویب پاڼه کې Unit 7 پیلېږي. په ۷.۴۸ شکل کې HTML سند ښيي چې په ویب پاڼه کې هایپرلینکونه څنګه جوړېږي. دا HTML سند درې هایپرلینکونه لري. کله چې کاروونکی پر دویم هایپرلینک کلیک وکړي، دویم سرلیک ته یې وړي چې د Minicomputer په اړه دی. کله چې پر درېیم هایپرلینک کلیک وکړي، د کمپیوټر درېیم ډول Mainframe ته یې وړي. که کاروونکی پر لومړي هایپرلینک کلیک وکړي، څه نه کېږي ځکه د Microcomputer په اړه لومړی سرلیک دمخه په سکرین ښکاري.

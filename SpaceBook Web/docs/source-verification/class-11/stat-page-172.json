@@ -1,0 +1,551 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s172-index-cpi-2",
+  "title": "4.2.1 (iv) Computation: aggregative expenditure and household budget methods · Example 4.10 (question)",
+  "headingUrdu": "4.2.1 (iv) حساب: مجموعی اخراجات اور گھریلو بجٹ کے طریقے · مثال 4.10 (سوال)",
+  "headingPashto": "4.2.1 (iv) محاسبه: د مجموعي لګښت او د کورنۍ د بودیجې طریقې · بېلګه 4.10 (پوښتنه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 172,
+    "printedPage": "162"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s172-m2",
+      "en": "(ii) The household or family budget method:",
+      "ur": "(ii) گھریلو یا خاندانی بجٹ کا طریقہ:",
+      "ps": "(ii) د کورنۍ یا کورنیز بودیجې طریقه:"
+    },
+    {
+      "id": "stat11-s172-m2b",
+      "en": "(Both methods give the same result.)",
+      "ur": "(دونوں طریقے ایک ہی نتیجہ دیتے ہیں۔)",
+      "ps": "(دواړه طریقې یو شان پایله ورکوي.)"
+    },
+    {
+      "id": "stat11-s172-ex410",
+      "en": "Example: 4.10",
+      "ur": "مثال: 4.10",
+      "ps": "بېلګه: 4.10",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-10"
+    },
+    {
+      "id": "stat11-s172-q410",
+      "en": "Calculate the consumer price index number from the data given below by (i) Aggregative expenditure method and (ii) Household/family budget method.",
+      "ur": "نیچے دیے گئے اعداد و شمار سے صارف قیمتی اشاریہ عدد حساب کریں (i) مجموعی اخراجات کے طریقے اور (ii) گھریلو/خاندانی بجٹ کے طریقے سے۔",
+      "ps": "له لاندې ورکړل شویو معلوماتو څخه د مصرف کوونکي د بیې شاخص شمېره محاسبه کړئ د (i) مجموعي لګښت طریقې او (ii) کورنۍ/کورنیزې بودیجې طریقې په واسطه.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-10"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s172-m2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s172-m2b",
+        "stat11-s172-ex410",
+        "stat11-s172-q410"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s172-a",
+      "latex": "P_{0n}=\\dfrac{\\sum p_nq_0}{\\sum p_0q_0}\\times 100",
+      "accessible": "P0n = (Σ pn q0 / Σ p0 q0) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s172-b",
+      "latex": "P_{0n}=\\dfrac{\\sum\\left(\\dfrac{p_n}{p_0}\\right)p_0q_0}{\\sum p_0q_0}\\times 100",
+      "accessible": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.10: quantities consumed and prices",
+      "captionUrdu": "مثال 4.10: استعمال شدہ مقداریں اور قیمتیں",
+      "captionPashto": "بېلګه 4.10: مصرف شوي مقدارونه او بیې",
+      "headers": [
+        {
+          "en": "Commodities",
+          "ur": "اجناس",
+          "ps": "توکي"
+        },
+        {
+          "en": "Quantity consumed (1939)",
+          "ur": "استعمال شدہ مقدار (1939)",
+          "ps": "مصرف شوی مقدار (1939)"
+        },
+        {
+          "en": "Unit of price",
+          "ur": "قیمت کی اکائی",
+          "ps": "د بیې واحد"
+        },
+        {
+          "en": "Price in (1939)",
+          "ur": "قیمت (1939)",
+          "ps": "بیه په (1939)"
+        },
+        {
+          "en": "Price in (1940)",
+          "ur": "قیمت (1940)",
+          "ps": "بیه په (1940)"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "5 maund",
+            "ur": "5 maund",
+            "ps": "5 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "Millets",
+            "ur": "Millets",
+            "ps": "Millets"
+          },
+          {
+            "en": "5 maund",
+            "ur": "5 maund",
+            "ps": "5 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "1 maund",
+            "ur": "1 maund",
+            "ps": "1 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "Gram",
+            "ur": "Gram",
+            "ps": "Gram"
+          },
+          {
+            "en": "1 maund",
+            "ur": "1 maund",
+            "ps": "1 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "Arhar",
+            "ur": "Arhar",
+            "ps": "Arhar"
+          },
+          {
+            "en": "1/2 maund",
+            "ur": "1/2 maund",
+            "ps": "1/2 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "Pulses",
+            "ur": "Pulses",
+            "ps": "Pulses"
+          },
+          {
+            "en": "2 maund",
+            "ur": "2 maund",
+            "ps": "2 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "Ghee",
+            "ur": "Ghee",
+            "ps": "Ghee"
+          },
+          {
+            "en": "4 seer",
+            "ur": "4 seer",
+            "ps": "4 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "1.25",
+            "ur": "1.25",
+            "ps": "1.25"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ],
+        [
+          {
+            "en": "Gur",
+            "ur": "Gur",
+            "ps": "Gur"
+          },
+          {
+            "en": "2 maund",
+            "ur": "2 maund",
+            "ps": "2 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "2.50",
+            "ur": "2.50",
+            "ps": "2.50"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "Salt",
+            "ur": "Salt",
+            "ps": "Salt"
+          },
+          {
+            "en": "2 1/2 seer",
+            "ur": "2 1/2 seer",
+            "ps": "2 1/2 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "Oil",
+            "ur": "Oil",
+            "ps": "Oil"
+          },
+          {
+            "en": "24 seer",
+            "ur": "24 seer",
+            "ps": "24 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2.5",
+            "ur": "2.5",
+            "ps": "2.5"
+          }
+        ],
+        [
+          {
+            "en": "Clothing",
+            "ur": "Clothing",
+            "ps": "Clothing"
+          },
+          {
+            "en": "40 yard",
+            "ur": "40 yard",
+            "ps": "40 yard"
+          },
+          {
+            "en": "Rs. per yard",
+            "ur": "Rs. per yard",
+            "ps": "Rs. per yard"
+          },
+          {
+            "en": "0.25",
+            "ur": "0.25",
+            "ps": "0.25"
+          },
+          {
+            "en": "0.5",
+            "ur": "0.5",
+            "ps": "0.5"
+          }
+        ],
+        [
+          {
+            "en": "Fire-wood",
+            "ur": "Fire-wood",
+            "ps": "Fire-wood"
+          },
+          {
+            "en": "10 maund",
+            "ur": "10 maund",
+            "ps": "10 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "0.50",
+            "ur": "0.50",
+            "ps": "0.50"
+          },
+          {
+            "en": "0.8",
+            "ur": "0.8",
+            "ps": "0.8"
+          }
+        ],
+        [
+          {
+            "en": "Kerosene oil",
+            "ur": "Kerosene oil",
+            "ps": "Kerosene oil"
+          },
+          {
+            "en": "1 tin",
+            "ur": "1 tin",
+            "ps": "1 tin"
+          },
+          {
+            "en": "Rs. per tin",
+            "ur": "Rs. per tin",
+            "ps": "Rs. per tin"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "House rent",
+            "ur": "House rent",
+            "ps": "House rent"
+          },
+          {
+            "en": "1 house",
+            "ur": "1 house",
+            "ps": "1 house"
+          },
+          {
+            "en": "Rs. per house",
+            "ur": "Rs. per house",
+            "ps": "Rs. per house"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-10"
+    }
+  ],
+  "sourceNote": "Printed page 162. The first formula completes the aggregative expenditure method from the previous page. In the table the quantities 1/2 maund and 2 1/2 seer are printed as mixed fractions. A blue ink tick next to \"Example: 4.10\" is ignored. Header graphics and watermark excluded. Scan 171 is a second copy of printed page 161.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:11:58.678990+00:00",
+    "scope": "Scan 172 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

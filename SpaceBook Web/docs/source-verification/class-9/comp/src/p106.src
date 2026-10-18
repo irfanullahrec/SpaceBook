@@ -1,0 +1,36 @@
+@printed 98
+@status lesson
+### Program 4.2: The following program executes a single statement if the given condition is true. || پروگرام 4.2: درج ذیل پروگرام دی گئی شرط درست ہونے پر ایک اسٹیٹمنٹ چلاتا ہے۔ || پروګرام ۴.۲: لاندې پروګرام که ورکړل شوی شرط سم وي یو بیان اجرا کوي.
+m #include<stdio.h>
+m void main()
+m {
+m     int a, b;
+m     a=1000;
+m     b=500;
+m     if (a>b) {
+m             printf("Value of a is greater than b\n");
+m             printf("Thank You");
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Value of a is greater than b
+m Thank You
+endbox
+@issue The heading says the program "executes a single statement", but the if-block contains two statements (a compound statement); kept as printed.
+### Program 4.3: A program that inputs two numbers and prints the message if both are equal. || پروگرام 4.3: دو اعداد ان پٹ کر کے دونوں برابر ہوں تو پیغام پرنٹ کرنے والا پروگرام۔ || پروګرام ۴.۳: دوه عددونه اخلي او که برابر وي پیغام چاپوي.
+m #include<stdio.h>
+m void main( )
+m {
+m     int a, b;
+m     printf("\nEnter first number = ");
+m     scanf("%d",&a);
+m     printf("\nEnter second number = ");
+m     scanf("%d",&b);
+m     if(a==b)
+m     printf("Both numbers are equal");
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter first number = 45
+m Enter second number = 45
+m Both numbers are equal
+endbox

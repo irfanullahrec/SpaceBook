@@ -1,0 +1,19 @@
+@printed 153
+@status lesson
+box info | شکل نمبر 7.22 ویب پیج پر بولڈ، اٹالک اور انڈر لائن کا استعمال || Figure 7.22 Bold, italic and underline on a web page || ۷.۲۲ شکل په ویب پاڼه کې د bold، italic او underline کارونه
+p **This text is bold.** || **This text is bold.** || **This text is bold.**
+p This text is underlined. (خط کشیدہ) || This text is underlined. (underlined) || This text is underlined. (لاندې کرښه)
+p *This text is italic.* || *This text is italic.* || *This text is italic.*
+p ***This text is bold and italic.*** || ***This text is bold and italic.*** || ***This text is bold and italic.***
+p ***This text is bold, italic and underlined.*** (خط کشیدہ بھی) || ***This text is bold, italic and underlined.*** (also underlined) || ***This text is bold, italic and underlined.*** (لاندې کرښه هم)
+endbox
+@issue The browser tab in Figure 7.22 reads "Using Formatting Tags", but the code in Figure 7.21 sets the title to "Title of Page".
+### فونٹ <font> </font> ٹیگ || The font <font> </font> tag || د فونټ <font> </font> ټیګ
+p فونٹ ٹیگ size، color اور face کے اوصاف (attribute) کا استعمال کرتے ہوئے ٹیکسٹ کے سائز، کلر یا فیس کو تبدیل کرنے کے لئے استعمال ہوتا ہے۔ || The font tag is used to change the size, colour or face of text, using the size, color and face attributes. || د فونټ ټیګ د size، color او face ځانګړتیاوو (attribute) په کارولو د متن د اندازې، رنګ یا بڼې د بدلولو لپاره کارېږي.
+### فونٹ کا سائز <font size=?></font> || Font size <font size=?></font> || د فونټ اندازه <font size=?></font>
+p size فونٹ کا سائز تبدیل کرنے کے لئے استعمال ہوتا ہے۔ ? کی جگہ 1 سے 7 تک کوئی بھی نمبر لکھیں۔ 1 سب سے چھوٹا ہے اور 7 فونٹ کا سب سے بڑا سائز ہے۔ مثال کے طور پر: <font size=3>Types of Printers</font> نتیجہ: Types of Printers || size is used to change the font size. Write any number from 1 to 7 in place of ?; 1 is the smallest and 7 the largest font size. For example: <font size=3>Types of Printers</font> Result: Types of Printers || size د فونټ اندازې بدلولو لپاره کارېږي. د ? پر ځای له 1 تر 7 هره شمېره ولیکئ؛ 1 تر ټولو کوچنی او 7 تر ټولو لوی فونټ دی. د بېلګې په توګه: <font size=3>Types of Printers</font> پایله: Types of Printers
+### فونٹ کا رنگ <font color=?></font> || Font colour <font color=?></font> || د فونټ رنګ <font color=?></font>
+p Color ٹیگز میں موجود ٹیکسٹ کے رنگ کو تبدیل کرنے کے لئے استعمال کیا جاتا ہے۔ ? کی جگہ blue، black، brown، green، maroon، orange، pink، red، white، yellow وغیرہ لکھ سکتے ہیں۔ مثال کے طور پر: <font color=brown>Healthy Cow</font> نتیجہ: Healthy Cow (بھورے رنگ میں) || color is used to change the colour of the text inside the tags. In place of ? you can write blue, black, brown, green, maroon, orange, pink, red, white, yellow and so on. For example: <font color=brown>Healthy Cow</font> Result: Healthy Cow (in brown) || color د ټیګونو دننه د متن رنګ بدلولو لپاره کارېږي. د ? پر ځای blue، black، brown، green، maroon، orange، pink، red، white، yellow او نور لیکلای شئ. د بېلګې په توګه: <font color=brown>Healthy Cow</font> پایله: Healthy Cow (په نسواري رنګ)
+### فونٹ فیس <font face=?></font> || Font face <font face=?></font> || د فونټ بڼه <font face=?></font>
+p face کا استعمال ٹیکسٹ کے فونٹ face کو تبدیل کرنے کے لئے کیا جاتا ہے جو ٹیگز میں ہوتا ہے۔ ? کو Arial، Courier، Calibri، TimesNewRoman وغیرہ سے تبدیل کر سکتے ہیں۔ || face is used to change the font face of the text inside the tags. ? can be replaced by Arial, Courier, Calibri, Times New Roman and so on. || face د ټیګونو دننه د متن د فونټ بڼې بدلولو لپاره کارېږي. ? په Arial، Courier، Calibri، Times New Roman او نورو بدلېدای شي.
+@issue The <font> tag is obsolete: it is not supported in HTML5, where CSS (e.g. style="color:brown") is used instead. A face name with spaces must be quoted (face="Times New Roman"); the book writes "TimesNewRoman".

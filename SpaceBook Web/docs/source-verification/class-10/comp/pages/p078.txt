@@ -1,0 +1,31 @@
+@printed 68
+@status lesson
+p مثال کے طور پر، اگر مذکورہ بالا مثال میں، انکریمنٹ آپریٹر پوسٹ فکس انداز میں استعمال ہوتا ہے تو نتیجہ مختلف ہو گا۔ اسٹیٹمنٹ کچھ ایسے ہو گی: || For example, if in the example above the increment operator is used in postfix form, the result will be different. The statement will be like this: || د بېلګې په توګه، که په پورتنۍ بېلګه کې د زیاتوالي عملګر په وروستاړې بڼه وکارول شي، پایله به توپیر ولري. بیان به داسې وي:
+m Sum = a + b + c ++;
+p ایسی صورت میں، c کی موجودہ قیمت کو عبارت میں استعمال کرنے کے بعد اس میں 1 کا اضافہ کیا جائے گا۔ اس طرح عمل درآمد کے بعد، Sum 5 کے برابر ہو گی اور c کی قیمت 4 ہو گی۔ || In this case, 1 is added to c after its current value has been used in the expression. So after execution Sum equals 5 and the value of c is 4. || په دې حالت کې، د c اوسنی ارزښت په عبارت کې له کارولو وروسته ورته 1 ورزیاتېږي. نو له اجرا وروسته Sum له 5 سره برابر او د c ارزښت 4 وي.
+@issue The statement uses "Sum" (capital S) while the program declared "sum"; C is case-sensitive, so it must be "sum = a + b + c++;".
+@sec 3-2-5 | 3.2.5 ڈیکریمنٹ آپریٹر -- || 3.2.5 Decrement operator -- || ۳.۲.۵ د کموالي عملګر --
+### 3.2.5 ڈیکریمنٹ آپریٹر -- (Decrement Operator) || 3.2.5 The decrement operator -- || ۳.۲.۵ د کموالي عملګر -- (Decrement Operator)
+p ڈیکریمنٹ آپریٹر کو دوہری مائنس -- علامت سے ظاہر کیا جاتا ہے۔ یہ ایک عددی ویری ایبل کی قیمت سے 1 گھٹانے کے لئے استعمال ہوتا ہے۔ ڈیکریمنٹ آپریٹر صرف ویری ایبل کے ساتھ استعمال کیا جا سکتا ہے۔ اسے کانسٹنٹ یا ایکسپریشن کے ساتھ استعمال نہیں کیا جا سکتا۔ || The decrement operator is shown by the double minus sign --. It is used to subtract 1 from the value of a numeric variable. The decrement operator can be used only with a variable; it cannot be used with a constant or an expression. || د کموالي عملګر د دوه ګونې منفي نښې -- په واسطه ښودل کېږي. د عددي متغیر له ارزښت څخه د 1 کمولو لپاره کارېږي. یوازې له متغیر سره کارېدای شي؛ له ثابت یا عبارت سره نه شي کارېدای.
+p مثال کے طور پر، ویری ایبل x کی قیمت سے 1 کم کرنے کے لئے، ہم درج ذیل اسٹیٹمنٹ کو ایسے لکھیں گے: || For example, to subtract 1 from the value of the variable x we write the following statement: || د بېلګې په توګه، د x له ارزښت څخه د 1 کمولو لپاره لاندې بیان لیکو:
+m --x;    یا / or    x--;
+p x-- یا x=x-1 یا x-=1 ایک ہی طرح کام کرتے ہیں۔ || x--, x = x-1 and x -= 1 work the same way. || x--، x = x-1 او x -= 1 یو ډول کار کوي.
+### پریفکس ڈیکریمنٹ آپریٹر (Prefix Decrement Operator) || Prefix decrement operator || مختاړی کموالي عملګر (Prefix Decrement Operator)
+p پریفکس ڈیکریمنٹ آپریٹر ویری ایبل کی موجودہ قیمت سے 1 کم کر دیتا ہے۔ پھر اس کی قیمت کو عبارت میں استعمال کیا جاتا ہے۔ مثال کے طور پر: || The prefix decrement operator subtracts 1 from the current value of the variable; then its value is used in the expression. For example: || مختاړی کموالي عملګر د متغیر له اوسني ارزښت 1 کموي؛ بیا یې ارزښت په عبارت کې کارېږي. د بېلګې په توګه:
+### پروگرام 3.17 || Program 3.17 || پروګرام ۳.۱۷
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a, b, c, sum;
+m     a=1;
+m     b=1;
+m     c=3;
+m     sum= a  + b  +(-- c);
+m     printf("sum=  %d\n",sum);
+m     printf("c  =  %d",c);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m sum=4
+m c=2
+endbox
+p مندرجہ بالا پروگرام میں c کی قیمت میں 1 کی کمی کر دی جائے گی اور اس کے بعد اسے عبارت میں استعمال کیا جائے گا۔ اس طرح اسٹیٹمنٹ کے چلنے کے بعد sum کی قیمت 4 اور c کی قیمت 2 ہو گی۔ || In the program above, the value of c is reduced by 1 and then it is used in the expression. So after the statement runs, the value of sum is 4 and the value of c is 2. || په پورتني پروګرام کې د c ارزښت 1 کمېږي او بیا په عبارت کې کارېږي. نو د بیان له چلېدو وروسته د sum ارزښت 4 او د c ارزښت 2 وي.

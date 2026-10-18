@@ -1,0 +1,47 @@
+@pdf 175
+@printed 214
+@status lesson
+p The HTML table allows users to arrange data i.e., text, images, links, forms, form fields, other tables, etc. into rows and columns of cells. || HTML جدول صارفین کو ڈیٹا یعنی متن، تصاویر، لنکس، فارمز، فارم فیلڈز، دوسرے جدول وغیرہ کو خانوں کی قطاروں اور کالموں میں ترتیب دینے دیتا ہے۔ || HTML جدول کاروونکو ته اجازه ورکوي چې ډېټا یعنې متن، انځورونه، لینکونه، فورمې، د فورم ساحې، نور جدولونه او نور د خانو په قطارونو او ستنو کې ترتیب کړي.
+p Each table may have an associated caption that provides a short description of the table's purpose. A longer description may also be provided for the benefit of people using speech or Braille-based user agents. || ہر جدول کا ایک کیپشن ہو سکتا ہے جو جدول کے مقصد کی مختصر وضاحت کرے۔ آواز یا بریل پر مبنی آلات استعمال کرنے والوں کے لیے لمبی وضاحت بھی دی جا سکتی ہے۔ || هر جدول کېدای شي سرلیک ولري چې د جدول موخه لنډه بیان کړي. د غږ یا Braille وسیلو کاروونکو لپاره اوږده تشریح هم ورکول کېدای شي.
+p The following tags are used for creating a table. || جدول بنانے کے لیے درج ذیل ٹیگز استعمال ہوتے ہیں۔ || د جدول جوړولو لپاره دا tags کارېږي.
+p **<table></table>:** These tags are used to create a table. || **<table></table>:** یہ ٹیگز جدول بنانے کے لیے ہیں۔ || **<table></table>:** جدول جوړوي.
+p **<tr></tr>:** These tags define a row. || **<tr></tr>:** یہ ٹیگز قطار کی تعریف کرتے ہیں۔ || **<tr></tr>:** قطار ټاکي.
+p **<td></td>:** These tags define data cell. Column of each row is called data cell. A data cell can contain text, image, paragraph, etc. || **<td></td>:** یہ ٹیگز ڈیٹا سیل کی تعریف کرتے ہیں۔ ہر قطار کا کالم ڈیٹا سیل کہلاتا ہے۔ ڈیٹا سیل میں متن، تصویر، پیراگراف وغیرہ ہو سکتا ہے۔ || **<td></td>:** د ډېټا خانه ټاکي. د هر قطار ستن د ډېټا خانه بلل کېږي. متن، انځور، پاراګراف او نور لرلی شي.
+p The HTML document for creating date sheet of examination is shown in Figure 7.52. This table has 5 rows and 4 columns. || امتحان کی ڈیٹ شیٹ بنانے کی HTML دستاویز شکل 7.52 میں دکھائی گئی ہے۔ اس جدول میں 5 قطاریں اور 4 کالم ہیں۔ || د ازموینې د نېټو پاڼې HTML سند په ۷.۵۲ شکل کې دی. دا جدول ۵ قطارونه او ۴ ستنې لري.
+@issue The table as coded has 6 rows (title, header and four subjects) and 3 columns; the book says 5 rows and 4 columns (and uses colspan=4). Kept as printed.
+m <html>
+m <head>
+m <title>Date Sheet</title>
+m </head>
+m <body>
+m <table border=1 cellspacing=3 cellpadding=8>
+m <tr>
+m <td colspan=4 align=center>
+m <b>FINAL EXAMINATIONS</b></td>
+m </tr>
+m <tr>
+m <td>S.No.</td>
+m <td>Date</td>
+m <td>Class X</td>
+m </tr>
+m <tr>
+m <td>1.</td>
+m <td>05-04-2014</td>
+m <td>Maths</td>
+m </tr>
+m <tr>
+m <td>2.</td>
+m <td>06-04-2014</td>
+m <td>Computer</td>
+m </tr>
+m <tr>
+m <td>3.</td>
+m <td>07-04-2014</td>
+m <td>Chemistry</td>
+m </tr>
+m <tr>
+m <td>4.</td>
+m <td>08-04-2014</td>
+m <td>Urdu</td>
+m </tr>
+p (Figure 7.52: HTML document for creating a table — "Table2.html" in Notepad++; the listing is cut off before </table>.) || (شکل 7.52: جدول بنانے کی HTML دستاویز — نوٹ پیڈ++ میں Table2.html۔) || (۷.۵۲ شکل: د جدول جوړولو HTML سند — په Notepad++ کې Table2.html.)

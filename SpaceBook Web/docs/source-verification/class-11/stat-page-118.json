@@ -1,0 +1,308 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s118-sd-9",
+  "title": "3.5.7 Properties of variance and S.D · 3.5.8 Coefficient of variation",
+  "headingUrdu": "3.5.7 تغیر اور معیاری انحراف کی خصوصیات · 3.5.8 تغیر کا عددی سر",
+  "headingPashto": "3.5.7 د وریانس او معیاري انحراف ځانګړتیاوې · 3.5.8 د تغیر ضریب",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 118,
+    "printedPage": "110"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s118-h357",
+      "en": "3.5.7 Properties of variance and standard deviation",
+      "ur": "3.5.7 تغیر اور معیاری انحراف کی خصوصیات",
+      "ps": "3.5.7 د وریانس او معیاري انحراف ځانګړتیاوې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s118-p1",
+      "en": "(i) Variance and S.D of a constant are zero. That is V(c) = 0, where c is any constant and S.D(c) = 0",
+      "ur": "(i) مستقل کا تغیر اور S.D صفر ہوتے ہیں۔ یعنی V(c) = 0، جہاں c کوئی بھی مستقل ہے اور S.D(c) = 0",
+      "ps": "(i) د ثابت وریانس او S.D صفر وي. یعنې V(c) = 0، چېرته چې c هر ثابت دی او S.D(c) = 0",
+      "listGroup": "sd-props"
+    },
+    {
+      "id": "stat11-s118-p2",
+      "en": "(ii) If a constant c is added to or subtracted from the values of a variable, variance and S.D will not change. That is, V(x ± c) = V(x) and S.D(x ± c) = S.D(x).",
+      "ur": "(ii) اگر متغیر کی قدروں میں کوئی مستقل c جمع یا تفریق کیا جائے تو تغیر اور S.D تبدیل نہیں ہوں گے۔ یعنی V(x ± c) = V(x) اور S.D(x ± c) = S.D(x)۔",
+      "ps": "(ii) که د متغیر په ارزښتونو کې یو ثابت c جمع یا تفریق شي نو وریانس او S.D به نه بدلېږي. یعنې V(x ± c) = V(x) او S.D(x ± c) = S.D(x).",
+      "listGroup": "sd-props"
+    },
+    {
+      "id": "stat11-s118-p3",
+      "en": "(iii) If values of a variable are multiplied or divided by a constant, then variance will be changed by the square of that constant and S.D by absolute of that constant. That is,",
+      "ur": "(iii) اگر متغیر کی قدروں کو کسی مستقل سے ضرب یا تقسیم کیا جائے تو تغیر اس مستقل کے مربع سے اور S.D اس مستقل کی مطلق قدر سے تبدیل ہوگا۔ یعنی،",
+      "ps": "(iii) که د متغیر ارزښتونه په یو ثابت ضرب یا تقسیم شي نو وریانس به د هغه ثابت په مربع او S.D به د هغه ثابت په مطلق ارزښت بدل شي. یعنې،",
+      "listGroup": "sd-props"
+    },
+    {
+      "id": "stat11-s118-p4",
+      "en": "(iv) Variance and S.D of the sum or difference of two independent variables is equal to the sum of their respective variances and standard deviations. That is,",
+      "ur": "(iv) دو آزاد متغیرات کے مجموعے یا فرق کا تغیر اور S.D ان کے متعلقہ تغیرات اور معیاری انحرافات کے مجموعے کے برابر ہوتا ہے۔ یعنی،",
+      "ps": "(iv) د دوو خپلواکو متغیرونو د مجموعې یا توپیر وریانس او S.D د هغوی د اړوندو وریانسونو او معیاري انحرافاتو له مجموعې سره مساوي وي. یعنې،",
+      "listGroup": "sd-props"
+    },
+    {
+      "id": "stat11-s118-h358",
+      "en": "3.5.8 Coefficient of variation",
+      "ur": "3.5.8 تغیر کا عددی سر",
+      "ps": "3.5.8 د تغیر ضریب",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s118-t358",
+      "en": "This measure of relative dispersion is very popular and reliable. It is independent of the unit of measurement and expresses the result in percentage. It is used to compare the performance of any two or more series of data. It was suggested by Professor Karl person. It is abbreviated as C.V and is defined as: the ratio of standard deviation and the mean expressed in percentage is called Coefficient of variation.",
+      "ur": "اضافی انتشار کا یہ پیمانہ بہت مقبول اور قابلِ اعتماد ہے۔ یہ پیمائش کی اکائی سے آزاد ہے اور نتیجہ فیصد میں ظاہر کرتا ہے۔ یہ اعداد و شمار کے کسی بھی دو یا زیادہ سلسلوں کی کارکردگی کا موازنہ کرنے کے لیے استعمال ہوتا ہے۔ یہ پروفیسر کارل پرسن نے تجویز کیا تھا۔ اسے C.V سے مختصر کیا جاتا ہے اور اس کی تعریف یوں ہے: معیاری انحراف اور اوسط کی نسبت جو فیصد میں ظاہر کی جائے تغیر کا عددی سر کہلاتی ہے۔",
+      "ps": "د نسبي خپراوي دا اندازه ډېره مشهوره او د باور وړ ده. دا د اندازې له واحد څخه خپلواکه ده او پایله په سلنه کې ښيي. دا د معلوماتو د هرو دوو یا ډېرو لړیو د فعالیت د پرتلې لپاره کارول کېږي. دا د پروفیسر Karl person لخوا وړاندیز شوې وه. دا د C.V په توګه لنډېږي او تعریف یې دا دی: د معیاري انحراف او اوسط نسبت چې په سلنه کې ښودل شي د تغیر ضریب بلل کېږي."
+    },
+    {
+      "id": "stat11-s118-t358b",
+      "en": "The smaller value of C.V means less variability which shows that performance is",
+      "ur": "C.V کی چھوٹی قدر کا مطلب کم تغیر پذیری ہے جو ظاہر کرتی ہے کہ کارکردگی",
+      "ps": "د C.V کوچنی ارزښت پدې معنا دی چې لږ متغیرتیا ده چې ښيي چې فعالیت",
+      "sourceGap": {
+        "note": "The sentence continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s118-h357",
+        "stat11-s118-p1",
+        "stat11-s118-p2",
+        "stat11-s118-p3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s118-p4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s118-h358",
+        "stat11-s118-t358"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s118-t358b"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "coefficient of variation": {
+      "ur": "تغیر کا عددی سر",
+      "ps": "د تغیر ضریب"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s118-a",
+      "latex": "V(cx)=c^2\\,V(x)\\qquad\\text{and}\\qquad V\\!\\left(\\dfrac{x}{c}\\right)=\\dfrac{V(x)}{c^2}",
+      "accessible": "V(cx) = c²V(x)   and   V(x/c) = V(x)/c²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "V(cx) = c²V(x)   and   V(x/c) = V(x)/c²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "V(cx) = c²V(x)   and   V(x/c) = V(x)/c²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "V(cx) = c²V(x)   and   V(x/c) = V(x)/c²"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s118-b",
+      "latex": "\\text{S.D}(cx)=|c|\\,\\text{S.D}(x)\\qquad\\text{S.D}\\!\\left(\\dfrac{x}{c}\\right)=\\dfrac{\\text{S.D}(x)}{|c|}",
+      "accessible": "S.D(cx) = |c| S.D(x)   S.D(x/c) = S.D(x)/|c|",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S.D(cx) = |c| S.D(x)   S.D(x/c) = S.D(x)/|c|"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S.D(cx) = |c| S.D(x)   S.D(x/c) = S.D(x)/|c|"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S.D(cx) = |c| S.D(x)   S.D(x/c) = S.D(x)/|c|"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s118-c",
+      "latex": "V(x\\pm y)=V(x)+V(y)",
+      "accessible": "V(x ± y) = V(x) + V(y)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "V(x ± y) = V(x) + V(y)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "V(x ± y) = V(x) + V(y)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "V(x ± y) = V(x) + V(y)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s118-d",
+      "latex": "\\text{S.D}(x\\pm y)=\\sqrt{V(x)+V(y)}",
+      "accessible": "S.D(x ± y) = √(V(x) + V(y))",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S.D(x ± y) = √(V(x) + V(y))"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S.D(x ± y) = √(V(x) + V(y))"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S.D(x ± y) = √(V(x) + V(y))"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s118-e",
+      "latex": "\\text{C.V}=\\dfrac{\\sigma}{\\mu}\\times 100\\qquad\\text{(Population case)}",
+      "accessible": "C.V = (σ/μ) × 100   (Population case)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.V = (σ/μ) × 100   (Population case)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.V = (σ/μ) × 100   (Population case)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.V = (σ/μ) × 100   (Population case)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s118-f",
+      "latex": "\\text{C.V}=\\dfrac{s}{\\bar{x}}\\times 100\\qquad\\text{(Sample case)}",
+      "accessible": "C.V = (s/x̄) × 100   (Sample case)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100   (Sample case)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100   (Sample case)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100   (Sample case)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 110. Printed wording kept: \"Karl person\" (for Karl Pearson), \"k.g\". The printed formula for the sum or difference of independent variables gives S.D as the square root of the sum of the variances. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:51:29.369265+00:00",
+    "scope": "Scan 118 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

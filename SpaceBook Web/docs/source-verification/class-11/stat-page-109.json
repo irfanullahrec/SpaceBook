@@ -1,0 +1,765 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s109-md-4",
+  "title": "Example 3.9: continuous series",
+  "headingUrdu": "مثال 3.9: مسلسل سلسلہ",
+  "headingPashto": "بېلګه 3.9: دوامداره لړۍ",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 109,
+    "printedPage": "101"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s109-i3",
+      "en": "(iii) Mean deviation in case of continuous series or grouped data",
+      "ur": "(iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں اوسط انحراف",
+      "ps": "(iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې اوسط انحراف"
+    },
+    {
+      "id": "stat11-s109-ex9",
+      "en": "Example: 3.9",
+      "ur": "مثال: 3.9",
+      "ps": "بېلګه: 3.9",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-q9",
+      "en": "Evaluate the mean deviation from mean and median; also compute coefficients of mean deviation.",
+      "ur": "اوسط اور وسطانیہ سے اوسط انحراف کی قدر معلوم کریں؛ اوسط انحراف کے عددی سر بھی حساب کریں۔",
+      "ps": "له اوسط او میانې څخه اوسط انحراف ارزونه وکړئ؛ د اوسط انحراف ضریبونه هم محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-sol9",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-c1",
+      "en": "(i) Mean deviation from mean:",
+      "ur": "(i) اوسط سے اوسط انحراف:",
+      "ps": "(i) له اوسط څخه اوسط انحراف:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-c2",
+      "en": "(ii) Mean deviation from median:",
+      "ur": "(ii) وسطانیہ سے اوسط انحراف:",
+      "ps": "(ii) له میانې څخه اوسط انحراف:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-c3",
+      "en": "Here Σf = 40 is even ∴ Median = (Σf/2)th value = (40/2)th value = 20th value. This implies that Median lies in the group (144.5 – 153.5)",
+      "ur": "یہاں Σf = 40 جفت ہے ∴ وسطانیہ = (Σf/2)ویں قدر = (40/2)ویں قدر = 20ویں قدر۔ اس کا مطلب ہے کہ وسطانیہ گروہ (144.5 – 153.5) میں واقع ہے",
+      "ps": "دلته Σf = 40 جفت دی ∴ میانه = (Σf/2) ارزښت = (40/2) ارزښت = 20م ارزښت. دا پدې معنا ده چې میانه په ګروپ (144.5 – 153.5) کې پرته ده",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-9"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s109-i3",
+        "stat11-s109-ex9",
+        "stat11-s109-q9"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s109-sol9"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s109-c1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s109-c2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s109-c3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s109-a",
+      "latex": "\\text{M.D}=\\dfrac{\\sum f|x-\\bar{x}|}{\\sum f}\\ \\text{ where, }\\ \\bar{x}=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{5879}{40}=146.975",
+      "accessible": "M.D = Σf|x − x̄|/Σf where, x̄ = Σfx/Σf = 5879/40 = 146.975",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where, x̄ = Σfx/Σf = 5879/40 = 146.975"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where, x̄ = Σfx/Σf = 5879/40 = 146.975"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where, x̄ = Σfx/Σf = 5879/40 = 146.975"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-b",
+      "latex": "\\therefore\\ \\text{M.D}=\\dfrac{435.35}{40}=10.88\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ M.D = 435.35/40 = 10.88   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ M.D = 435.35/40 = 10.88   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ M.D = 435.35/40 = 10.88   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ M.D = 435.35/40 = 10.88   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-c",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\bar{x}}=\\dfrac{10.88}{146.975}=0.07\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/x̄ = 10.88/146.975 = 0.07   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 10.88/146.975 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 10.88/146.975 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 10.88/146.975 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-d",
+      "latex": "\\text{M.D}=\\dfrac{\\sum f|x-\\text{Median}|}{\\sum f}",
+      "accessible": "M.D = Σf|x − Median|/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σf|x − Median|/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σf|x − Median|/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σf|x − Median|/Σf"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s109-e",
+      "latex": "\\therefore\\ \\text{Median}=l_1+\\dfrac{h}{f}\\left(\\dfrac{\\sum f}{2}-c\\right)=144.5+\\dfrac{9}{12}\\left(\\dfrac{40}{2}-17\\right)=146.75",
+      "accessible": "∴ Median = l1 + (h/f)(Σf/2 − c) = 144.5 + (9/12)(40/2 − 17) = 146.75",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Median = l1 + (h/f)(Σf/2 − c) = 144.5 + (9/12)(40/2 − 17) = 146.75"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Median = l1 + (h/f)(Σf/2 − c) = 144.5 + (9/12)(40/2 − 17) = 146.75"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Median = l1 + (h/f)(Σf/2 − c) = 144.5 + (9/12)(40/2 − 17) = 146.75"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.9: classes and frequency",
+      "captionUrdu": "مثال 3.9: طبقات اور تعدد",
+      "captionPashto": "بېلګه 3.9: ټولګي او فریکونسي",
+      "headers": [
+        {
+          "en": "Classes:",
+          "ur": "طبقات:",
+          "ps": "ټولګي:"
+        },
+        {
+          "en": "118 – 126",
+          "ur": "118 – 126",
+          "ps": "118 – 126"
+        },
+        {
+          "en": "127 – 135",
+          "ur": "127 – 135",
+          "ps": "127 – 135"
+        },
+        {
+          "en": "136 – 144",
+          "ur": "136 – 144",
+          "ps": "136 – 144"
+        },
+        {
+          "en": "145 – 153",
+          "ur": "145 – 153",
+          "ps": "145 – 153"
+        },
+        {
+          "en": "154 – 162",
+          "ur": "154 – 162",
+          "ps": "154 – 162"
+        },
+        {
+          "en": "163 – 171",
+          "ur": "163 – 171",
+          "ps": "163 – 171"
+        },
+        {
+          "en": "172 – 180",
+          "ur": "172 – 180",
+          "ps": "172 – 180"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "caption": "Example 3.9 solution table",
+      "captionUrdu": "مثال 3.9 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.9 د حل جدول",
+      "headers": [
+        {
+          "en": "Classes",
+          "ur": "طبقات",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "طبقاتی حدود",
+          "ps": "د ټولګیو حدود"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        },
+        {
+          "en": "f|x − x̄|",
+          "ur": "f|x − x̄|",
+          "ps": "f|x − x̄|"
+        },
+        {
+          "en": "f|x − Median|",
+          "ur": "f|x − Median|",
+          "ps": "f|x − Median|"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "118 – 126",
+            "ur": "118 – 126",
+            "ps": "118 – 126"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "117.5 – 126.5",
+            "ur": "117.5 – 126.5",
+            "ps": "117.5 – 126.5"
+          },
+          {
+            "en": "122",
+            "ur": "122",
+            "ps": "122"
+          },
+          {
+            "en": "366",
+            "ur": "366",
+            "ps": "366"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "74.925",
+            "ur": "74.925",
+            "ps": "74.925"
+          },
+          {
+            "en": "74.25",
+            "ur": "74.25",
+            "ps": "74.25"
+          }
+        ],
+        [
+          {
+            "en": "127 – 135",
+            "ur": "127 – 135",
+            "ps": "127 – 135"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "126.5 – 135.5",
+            "ur": "126.5 – 135.5",
+            "ps": "126.5 – 135.5"
+          },
+          {
+            "en": "131",
+            "ur": "131",
+            "ps": "131"
+          },
+          {
+            "en": "655",
+            "ur": "655",
+            "ps": "655"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "79.875",
+            "ur": "79.875",
+            "ps": "79.875"
+          },
+          {
+            "en": "78.75",
+            "ur": "78.75",
+            "ps": "78.75"
+          }
+        ],
+        [
+          {
+            "en": "136 – 144",
+            "ur": "136 – 144",
+            "ps": "136 – 144"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "135.5 – 144.5",
+            "ur": "135.5 – 144.5",
+            "ps": "135.5 – 144.5"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "1260",
+            "ur": "1260",
+            "ps": "1260"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "62.775",
+            "ur": "62.775",
+            "ps": "62.775"
+          },
+          {
+            "en": "60.75",
+            "ur": "60.75",
+            "ps": "60.75"
+          }
+        ],
+        [
+          {
+            "en": "145 – 153",
+            "ur": "145 – 153",
+            "ps": "145 – 153"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "144.5 – 153.5",
+            "ur": "144.5 – 153.5",
+            "ps": "144.5 – 153.5"
+          },
+          {
+            "en": "149",
+            "ur": "149",
+            "ps": "149"
+          },
+          {
+            "en": "1788",
+            "ur": "1788",
+            "ps": "1788"
+          },
+          {
+            "en": "29",
+            "ur": "29",
+            "ps": "29"
+          },
+          {
+            "en": "24.300",
+            "ur": "24.300",
+            "ps": "24.300"
+          },
+          {
+            "en": "27.00",
+            "ur": "27.00",
+            "ps": "27.00"
+          }
+        ],
+        [
+          {
+            "en": "154 – 162",
+            "ur": "154 – 162",
+            "ps": "154 – 162"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "153.5 – 162.5",
+            "ur": "153.5 – 162.5",
+            "ps": "153.5 – 162.5"
+          },
+          {
+            "en": "158",
+            "ur": "158",
+            "ps": "158"
+          },
+          {
+            "en": "790",
+            "ur": "790",
+            "ps": "790"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          },
+          {
+            "en": "55.125",
+            "ur": "55.125",
+            "ps": "55.125"
+          },
+          {
+            "en": "56.25",
+            "ur": "56.25",
+            "ps": "56.25"
+          }
+        ],
+        [
+          {
+            "en": "163 – 171",
+            "ur": "163 – 171",
+            "ps": "163 – 171"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "162.5 – 171.5",
+            "ur": "162.5 – 171.5",
+            "ps": "162.5 – 171.5"
+          },
+          {
+            "en": "167",
+            "ur": "167",
+            "ps": "167"
+          },
+          {
+            "en": "668",
+            "ur": "668",
+            "ps": "668"
+          },
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          },
+          {
+            "en": "80.100",
+            "ur": "80.100",
+            "ps": "80.100"
+          },
+          {
+            "en": "81.00",
+            "ur": "81.00",
+            "ps": "81.00"
+          }
+        ],
+        [
+          {
+            "en": "172 – 180",
+            "ur": "172 – 180",
+            "ps": "172 – 180"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "171.5 – 180.5",
+            "ur": "171.5 – 180.5",
+            "ps": "171.5 – 180.5"
+          },
+          {
+            "en": "176",
+            "ur": "176",
+            "ps": "176"
+          },
+          {
+            "en": "352",
+            "ur": "352",
+            "ps": "352"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "58.050",
+            "ur": "58.050",
+            "ps": "58.050"
+          },
+          {
+            "en": "58.50",
+            "ur": "58.50",
+            "ps": "58.50"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "5879",
+            "ur": "5879",
+            "ps": "5879"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "435.350",
+            "ur": "435.350",
+            "ps": "435.350"
+          },
+          {
+            "en": "436.5",
+            "ur": "436.5",
+            "ps": "436.5"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-9"
+    }
+  ],
+  "sourceNote": "Printed page 101. The question data (classes and frequencies) are printed as aligned rows above the \"Evaluate…\" sentence and are shown in a table before the solution. A handwritten mark and stray dots are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:49:04.710148+00:00",
+    "scope": "Scan 109 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

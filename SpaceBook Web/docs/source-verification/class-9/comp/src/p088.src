@@ -1,0 +1,20 @@
+@printed 80
+@status lesson
+### 3.2.2 Assignment Operator = || 3.2.2 اسائنمنٹ آپریٹر = || ۳.۲.۲ assignment operator =
+p Assignment operator is used to assign value to a variable (memory location). There is a single assignment operator = in C. It evaluates expression on right side of = symbol and assigns evaluated value to left side variable. It is used to assign a numeric or character value to a variable. However, string data cannot be assigned to a variable with this operator. The assignment statement has the following format: || اسائنمنٹ آپریٹر کسی متغیر (میموری مقام) کو قدر دینے کے لیے استعمال ہوتا ہے۔ C میں ایک ہی اسائنمنٹ آپریٹر = ہے۔ یہ = کی علامت کے دائیں طرف کے اظہار کی قدر معلوم کر کے بائیں طرف کے متغیر کو دیتا ہے۔ یہ متغیر کو عددی یا حرفی قدر دینے کے لیے استعمال ہوتا ہے، تاہم اس آپریٹر سے متغیر کو اسٹرنگ ڈیٹا نہیں دیا جا سکتا۔ اسائنمنٹ اسٹیٹمنٹ کی صورت یہ ہے: || assignment operator یوه متغیر (د حافظې ځای) ته د ارزښت ورکولو لپاره کارېږي. په C کې یوازې یو assignment operator = دی. د = ښي خوا افاده ارزوي او پایله کیڼ خوا متغیر ته ورکوي. متغیر ته د عددي یا توري ییز ارزښت ورکولو لپاره کارېږي؛ خو په دې operator string ډېټا متغیر ته نه ورکول کېږي. د assignment بیان بڼه دا ده:
+m Variable = Character_constant/Variable/Expression;
+p For example consider the below assignment table. || مثال کے طور پر نیچے والا اسائنمنٹ جدول دیکھیں۔ || د بېلګې په توګه لاندې assignment جدول وګورئ.
+table Assignment examples || اسائنمنٹ کی مثالیں || د assignment بېلګې
+th | Operation || عمل || عملیه | Description || وضاحت || تشریح
+tr | x = 10 | Assigns 10 to variable x || متغیر x کو 10 دیتا ہے || x متغیر ته 10 ورکوي
+tr | y = (5 + 4) / 2 | Evaluates expression (5+4)/2 and assign result to y || اظہار (5+4)/2 کی قدر معلوم کر کے نتیجہ y کو دیتا ہے || د (5+4)/2 افاده ارزوي او پایله y ته ورکوي
+tr | z = x + y | Evaluates x + y and assign result to z || x + y کی قدر معلوم کر کے نتیجہ z کو دیتا ہے || x + y ارزوي او پایله z ته ورکوي
+tr | 5 = x | Error, you cannot re-assign a value to a constant || غلطی، آپ کانسٹنٹ کو دوبارہ قدر نہیں دے سکتے || تېروتنه، ثابت ته بیا ارزښت نه شئ ورکولی
+tr | 10 = 10 | Error, you cannot re-assign a value to a constant || غلطی، آپ کانسٹنٹ کو دوبارہ قدر نہیں دے سکتے || تېروتنه، ثابت ته بیا ارزښت نه شئ ورکولی
+endtable
+p The Right Hand Side (RHS) of assignment operator must be a constant, expression or variable whereas the Left Hand Side (LHS) must be a variable (valid memory location). || اسائنمنٹ آپریٹر کا دایاں حصہ (RHS) کانسٹنٹ، اظہار یا متغیر ہونا چاہیے جبکہ بایاں حصہ (LHS) متغیر (درست میموری مقام) ہونا چاہیے۔ || د assignment operator ښی اړخ (RHS) باید ثابت، افاده یا متغیر وي او کیڼ اړخ (LHS) باید متغیر (سم د حافظې ځای) وي.
+### 3.2.3 Compound Assignment Operators || 3.2.3 کمپاؤنڈ اسائنمنٹ آپریٹرز || ۳.۲.۳ مرکب assignment operators
+p C language provides compound assignment operators that combine assignment operator with arithmetic operators. Compound assignment operators are used to perform mathematical operations more easily. || C زبان کمپاؤنڈ اسائنمنٹ آپریٹرز فراہم کرتی ہے جو اسائنمنٹ آپریٹر کو حسابی آپریٹرز کے ساتھ ملاتے ہیں۔ کمپاؤنڈ اسائنمنٹ آپریٹرز ریاضیاتی عمل زیادہ آسانی سے کرنے کے لیے استعمال ہوتے ہیں۔ || C ژبه مرکب assignment operators لري چې assignment operator له حسابي operators سره یوځای کوي. دا د ریاضي عملیاتو د اسانه ترسره کولو لپاره کارېږي.
+p **Syntax:** The general syntax of compound assignment operator is as follows. || **سنٹیکس:** کمپاؤنڈ اسائنمنٹ آپریٹر کا عمومی سنٹیکس یہ ہے۔ || **Syntax:** د مرکب assignment operator عمومي syntax دا دی.
+m variable op= expression;
+p Suppose we have two variables **A** and **B** where **A= 8** and **B= 3**. Compound Assignment operators can be used on A and B as follows: || فرض کریں ہمارے پاس دو متغیرات **A** اور **B** ہیں جہاں **A= 8** اور **B= 3**۔ A اور B پر کمپاؤنڈ اسائنمنٹ آپریٹرز یوں استعمال ہو سکتے ہیں: || فرض کړئ **A** او **B** دوه متغیرونه دي چې **A= 8** او **B= 3**. پر A او B مرکب assignment operators داسې کارېدای شي:

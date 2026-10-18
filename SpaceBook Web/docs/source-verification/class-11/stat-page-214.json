@@ -1,0 +1,369 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s214-ts-ls-1",
+  "title": "Moving average merits and demerits · (iv) Method of least squares · Coding time variable · Example 6.5 (start)",
+  "headingUrdu": "متحرک اوسط کے فوائد اور نقصانات · (iv) کم از کم مربعات کا طریقہ · وقت کے متغیر کی کوڈنگ · مثال 6.5 (آغاز)",
+  "headingPashto": "د خوځېدونکي اوسط ګټې او زیانونه · (iv) د لږ تر لږه مربعاتو طریقه · د وخت د متغیر کوډ کول · بېلګه 6.5 (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 214,
+    "printedPage": "204"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s214-t0",
+      "en": "Advantages and disadvantages of moving average Method",
+      "ur": "متحرک اوسط کے طریقے کے فوائد اور نقصانات",
+      "ps": "د خوځېدونکي اوسط طریقې ګټې او زیانونه"
+    },
+    {
+      "id": "stat11-s214-v1",
+      "en": "(i) This method is simple to apply.",
+      "ur": "(i) یہ طریقہ لاگو کرنا آسان ہے۔",
+      "ps": "(i) دا طریقه د پلي کولو لپاره ساده ده.",
+      "listGroup": "ma-adv"
+    },
+    {
+      "id": "stat11-s214-v2",
+      "en": "(ii) It eliminates the short term fluctuations.",
+      "ur": "(ii) یہ قلیل مدتی اتار چڑھاؤ کو ختم کرتا ہے۔",
+      "ps": "(ii) دا لنډمهاله بدلونونه له منځه وړي.",
+      "listGroup": "ma-adv"
+    },
+    {
+      "id": "stat11-s214-v3",
+      "en": "(iii) It reduces the effect of extreme values.",
+      "ur": "(iii) یہ انتہائی قدروں کے اثر کو کم کرتا ہے۔",
+      "ps": "(iii) دا د سختو ارزښتونو اغېز کموي.",
+      "listGroup": "ma-adv"
+    },
+    {
+      "id": "stat11-s214-dh",
+      "en": "Disadvantages",
+      "ur": "نقصانات",
+      "ps": "زیانونه"
+    },
+    {
+      "id": "stat11-s214-w1",
+      "en": "(i) Some values at the beginning and at the end of a time series are lost so it is not an appropriate method for projections.",
+      "ur": "(i) وقتی سلسلے کے آغاز اور اختتام کی کچھ قدریں ضائع ہو جاتی ہیں اس لیے یہ تخمینوں کے لیے موزوں طریقہ نہیں۔",
+      "ps": "(i) د وخت لړۍ د پیل او پای ځینې ارزښتونه له منځه ځي نو دا د وړاندوینو لپاره مناسبه طریقه نه ده.",
+      "listGroup": "ma-dis"
+    },
+    {
+      "id": "stat11-s214-w2",
+      "en": "(ii) This method is preferred for a small number of years.",
+      "ur": "(ii) یہ طریقہ سالوں کی کم تعداد کے لیے ترجیح دیا جاتا ہے۔",
+      "ps": "(ii) دا طریقه د کلونو د لږ شمېر لپاره غوره ګڼل کېږي.",
+      "listGroup": "ma-dis"
+    },
+    {
+      "id": "stat11-s214-h4",
+      "en": "(iv) The method of least squares:",
+      "ur": "(iv) کم از کم مربعات کا طریقہ:",
+      "ps": "(iv) د لږ تر لږه مربعاتو طریقه:"
+    },
+    {
+      "id": "stat11-s214-t4",
+      "en": "The secular trend can also be measured by fitting a straight line to the given data whereas straight line is best fitted by the method of least squares. According to this method equation for a straight line or linear trend is ŷ = a + bx, where",
+      "ur": "صدیوی رجحان کو دیے گئے اعداد و شمار پر سیدھی لکیر فٹ کر کے بھی ناپا جا سکتا ہے جبکہ سیدھی لکیر کم از کم مربعات کے طریقے سے بہترین فٹ ہوتی ہے۔ اس طریقے کے مطابق سیدھی لکیر یا خطی رجحان کی مساوات ŷ = a + bx ہے، جہاں",
+      "ps": "عمري تمایل د ورکړل شویو معلوماتو ته د مستقیمې کرښې په برابرولو سره هم اندازه کېدای شي پداسې حال کې چې مستقیمه کرښه د لږ تر لږه مربعاتو په طریقه ښه برابرېږي. د دې طریقې له مخې د مستقیمې کرښې یا خطي تمایل معادله ŷ = a + bx ده، چېرته چې"
+    },
+    {
+      "id": "stat11-s214-t5",
+      "en": "After finding the values of a and b, the fitted equation is used to find the trend values ŷ.",
+      "ur": "a اور b کی قدریں معلوم کرنے کے بعد فٹ کی گئی مساوات رجحان کی قدریں ŷ معلوم کرنے کے لیے استعمال کی جاتی ہے۔",
+      "ps": "د a او b د ارزښتونو له موندلو وروسته برابره شوې معادله د تمایل ارزښتونو ŷ د موندلو لپاره کارول کېږي."
+    },
+    {
+      "id": "stat11-s214-h6",
+      "en": "Coding time variable:",
+      "ur": "وقت کے متغیر کی کوڈنگ:",
+      "ps": "د وخت د متغیر کوډ کول:"
+    },
+    {
+      "id": "stat11-s214-t6",
+      "en": "In a time series only time (t) and values (y) are given. The variable x is obtained by coding the time variable as follows;",
+      "ur": "وقتی سلسلے میں صرف وقت (t) اور قدریں (y) دی جاتی ہیں۔ متغیر x وقت کے متغیر کی کوڈنگ سے یوں حاصل کیا جاتا ہے؛",
+      "ps": "په وخت لړۍ کې یوازې وخت (t) او ارزښتونه (y) ورکول کېږي. متغیر x د وخت د متغیر په کوډ کولو سره داسې ترلاسه کېږي؛"
+    },
+    {
+      "id": "stat11-s214-c1",
+      "en": "Case i: If the number of years is odd, take x = … −2, −1, 0, 1, 2, … i.e.",
+      "ur": "حالت i: اگر سالوں کی تعداد طاق ہو تو x = … −2, −1, 0, 1, 2, … لیں یعنی",
+      "ps": "حالت i: که د کلونو شمېر طاق وي نو x = … −2, −1, 0, 1, 2, … واخلئ یعنې"
+    },
+    {
+      "id": "stat11-s214-c2",
+      "en": "Case ii: If the number of years is even, take x = … −7, −5, −3, −1, 1, 3, 5, 7, … i.e.",
+      "ur": "حالت ii: اگر سالوں کی تعداد جفت ہو تو x = … −7, −5, −3, −1, 1, 3, 5, 7, … لیں یعنی",
+      "ps": "حالت ii: که د کلونو شمېر جفت وي نو x = … −7, −5, −3, −1, 1, 3, 5, 7, … واخلئ یعنې"
+    },
+    {
+      "id": "stat11-s214-ex65",
+      "en": "Example: 6.5",
+      "ur": "مثال: 6.5",
+      "ps": "بېلګه: 6.5",
+      "kind": "heading",
+      "exampleId": "stat11-ex-6-5"
+    },
+    {
+      "id": "stat11-s214-q65",
+      "en": "Find the trend values by fitting a least squares straight line from the following data.",
+      "ur": "درج ذیل اعداد و شمار سے کم از کم مربعات کی سیدھی لکیر فٹ کر کے رجحان کی قدریں معلوم کریں۔",
+      "ps": "له لاندې معلوماتو څخه د لږ تر لږه مربعاتو مستقیمه کرښه برابرولو سره د تمایل ارزښتونه ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-6-5",
+      "sourceGap": {
+        "note": "The data of Example 6.5 are printed on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s214-t0",
+        "stat11-s214-v1",
+        "stat11-s214-v2",
+        "stat11-s214-v3",
+        "stat11-s214-dh",
+        "stat11-s214-w1",
+        "stat11-s214-w2",
+        "stat11-s214-h4",
+        "stat11-s214-t4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s214-t5",
+        "stat11-s214-h6",
+        "stat11-s214-t6",
+        "stat11-s214-c1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s214-c2"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s214-ex65",
+        "stat11-s214-q65"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "coding": {
+      "ur": "کوڈنگ",
+      "ps": "کوډ کول"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s214-f",
+      "latex": "b=\\dfrac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-\\left(\\sum x\\right)^2}\\quad\\text{and}\\quad a=\\dfrac{\\sum y}{n}-b\\left(\\dfrac{\\sum x}{n}\\right)",
+      "accessible": "b = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²) and a = Σy/n − b(Σx/n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²) and a = Σy/n − b(Σx/n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²) and a = Σy/n − b(Σx/n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²) and a = Σy/n − b(Σx/n)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Case i: odd number of years, coded time",
+      "captionUrdu": "حالت i: سالوں کی طاق تعداد، کوڈ شدہ وقت",
+      "captionPashto": "حالت i: د کلونو طاق شمېر، کوډ شوی وخت",
+      "headers": [
+        {
+          "en": "Years",
+          "ur": "سال",
+          "ps": "کلونه"
+        },
+        {
+          "en": "2001",
+          "ur": "2001",
+          "ps": "2001"
+        },
+        {
+          "en": "2002",
+          "ur": "2002",
+          "ps": "2002"
+        },
+        {
+          "en": "2003",
+          "ur": "2003",
+          "ps": "2003"
+        },
+        {
+          "en": "2004",
+          "ur": "2004",
+          "ps": "2004"
+        },
+        {
+          "en": "2005",
+          "ur": "2005",
+          "ps": "2005"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Coded time (x)",
+            "ur": "کوڈ شدہ وقت (x)",
+            "ps": "کوډ شوی وخت (x)"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Case ii: even number of years, coded time",
+      "captionUrdu": "حالت ii: سالوں کی جفت تعداد، کوڈ شدہ وقت",
+      "captionPashto": "حالت ii: د کلونو جفت شمېر، کوډ شوی وخت",
+      "headers": [
+        {
+          "en": "Years",
+          "ur": "سال",
+          "ps": "کلونه"
+        },
+        {
+          "en": "2010",
+          "ur": "2010",
+          "ps": "2010"
+        },
+        {
+          "en": "2011",
+          "ur": "2011",
+          "ps": "2011"
+        },
+        {
+          "en": "2012",
+          "ur": "2012",
+          "ps": "2012"
+        },
+        {
+          "en": "2013",
+          "ur": "2013",
+          "ps": "2013"
+        },
+        {
+          "en": "2014",
+          "ur": "2014",
+          "ps": "2014"
+        },
+        {
+          "en": "2015",
+          "ur": "2015",
+          "ps": "2015"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Coded time (x)",
+            "ur": "کوڈ شدہ وقت (x)",
+            "ps": "کوډ شوی وخت (x)"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 204. The formulas for b and a are printed inside the paragraph and are shown as an equation after it. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:29:16.604416+00:00",
+    "scope": "Scan 214 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

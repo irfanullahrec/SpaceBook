@@ -1,0 +1,23 @@
+@printed 161
+@status lesson
+p براؤزر ونڈو میں یہ کچھ اس طرح نظر آئے گا جیسے شکل نمبر 7.34 میں دکھایا گیا ہے۔ || In the browser window it will look as shown in Figure 7.34. || په براوزر کړکۍ کې به داسې ښکاري لکه په ۷.۳۴ شکل کې.
+box info | شکل نمبر 7.34 براؤزر ونڈو میں ویب پیج پر نیسٹڈ لسٹ دکھائی گئی ہے || Figure 7.34 A nested list on a web page in the browser window || ۷.۳۴ شکل په براوزر کړکۍ کې په ویب پاڼه ځالې لېست
+p **Types of Computer Memories** || **Types of Computer Memories** || **Types of Computer Memories**
+m 1. Primary Memory
+m      ◦ Random Access Memory
+m      ◦ Read Only Memory
+m 2. Secondary Memory
+m      ◦ Magnetic Memory
+m      ◦ Optical Memory
+m      ◦ USB Flash Drive
+m      ◦ Memory Card
+endbox
+@sec 7-5 | 7.5 تصاویر اور پس منظر || 7.5 Images and background || ۷.۵ انځورونه او شالید
+## 7.5 تصاویر اور پس منظر (Images and Background) || 7.5 Images and background || ۷.۵ انځورونه او شالید (Images and Background)
+p بہت سارے لوگ زیادہ ٹیکسٹ کو پڑھنے کے بجائے متعلقہ تصاویر والے ویب پیجز کو ترجیح دیتے ہیں جس میں کم وقت اور محنت درکار ہوتی ہے۔ تصاویر کسی ویب سائٹ کو دلآویز بنانے کے لئے اہم عنصر ہیں۔ تصویر کی ایک اہمیت ہے کیونکہ یہ دیکھنے والے کی توجہ حاصل کر لیتی ہے۔ تصویر پلک جھپکتے میں پیچیدہ پیغامات پہنچا سکتی ہے۔ لیکن جب اسے آپ کی ویب سائٹ کے کسی منظر میں شامل کیا جاتا ہے تو، تصاویر اس سے بھی زیادہ اہم کردار ادا کرتی ہیں۔ ویب پیج کے پس منظر کی تصویر آپ کے زائرین کی توجہ حاصل کرتی ہے۔ || Many people prefer web pages with relevant pictures to reading a lot of text, as this takes less time and effort. Images are an important element in making a website attractive. An image matters because it catches the viewer's attention; it can convey complex messages in the blink of an eye. When images are made part of a scene on your website they play an even more important role. A background image on a web page catches your visitors' attention. || ډېری خلک د ډېر متن لوستلو پر ځای د اړوندو انځورونو لرونکې ویب پاڼې غوره ګڼي، چې لږ وخت او زیار غواړي. انځورونه د ویب سایټ د ښکلي کولو مهم عنصر دي. انځور ځکه مهم دی چې د لیدونکي پام ځانته را اړوي؛ په یوه سترګه رپ کې پېچلي پیغامونه رسولای شي. کله چې ستاسو د ویب سایټ په یوه منظر کې شامل شي، انځورونه لا مهم رول لوبوي. د ویب پاڼې د شالید انځور ستاسو د لیدونکو پام راکاږي.
+@sec 7-5-1 | 7.5.1 ویب پیج میں تصویر لگانا || 7.5.1 Adding an image to a web page || ۷.۵.۱ ویب پاڼې ته انځور ورزیاتول
+### 7.5.1 ویب پیج میں تصویر لگانا (Adding Image in a Web Page) || 7.5.1 Adding an image to a web page || ۷.۵.۱ ویب پاڼې ته انځور ورزیاتول
+p <img> ٹیگ، HTML ڈاکومنٹ میں تصویر شامل کرنے کے لیے استعمال ہوتا ہے۔ اس ٹیگ میں موجود src تصویر کے مقام کے لیے استعمال کیا جاتا ہے۔ تصویر HTML فائل کا حصہ نہیں ہے، یہ ایک علیحدہ فائل ہے جو کمپیوٹر کی میموری میں محفوظ ہے۔ || The <img> tag is used to add a picture to an HTML document. The src in this tag is used for the location of the picture. The picture is not part of the HTML file; it is a separate file stored in the computer's memory. || <img> ټیګ HTML سند ته د انځور ورزیاتولو لپاره کارېږي. په دې ټیګ کې src د انځور د ځای لپاره کارېږي. انځور د HTML فایل برخه نه ده؛ دا جلا فایل دی چې د کمپیوټر په حافظه کې خوندي دی.
+- <img> tag: یہ HTML ٹیگ ہے جو ویب پیج میں ایک تصویر شامل کرتا ہے۔ اس کا اختتامی ٹیگ نہیں ہوتا۔ || <img> tag: the HTML tag that adds an image to a web page. It has no closing tag. || <img> tag: هغه HTML ټیګ دی چې ویب پاڼې ته انځور ورزیاتوي. تړونکی ټیګ نه لري.
+- src: اس کا مطلب ہے source۔ یہ براؤزر کو تصویر کی جگہ بتاتا ہے۔ <img> ٹیگ میں بہت سی خصوصیات ہیں لیکن src سب سے اہم ہے۔ || src: this means source. It tells the browser where the picture is. The <img> tag has many attributes, but src is the most important. || src: د source معنا لري. براوزر ته د انځور ځای ښيي. <img> ټیګ ډېرې ځانګړتیاوې لري خو src تر ټولو مهمه ده.
+@issue "stored in the computer's memory" means stored on the computer's disk (or on a web server); it is a separate image file referred to by path or URL.

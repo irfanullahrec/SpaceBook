@@ -1,0 +1,146 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s056-p047",
+  "title": "2.2.3 Fundamental types of Main Memory; internal processor memory; cache memory — start",
+  "headingUrdu": "۲.۲.۳ مین میموری کی بنیادی اقسام؛ پراسیسر کی اندرونی میموری؛ کیش میموری — آغاز",
+  "headingPashto": "۲.۲.۳ د اصلي حافظې بنسټیز ډولونه؛ د پروسیسر دننني حافظه؛ کېش حافظه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 56,
+    "printedPage": "47"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s056-h1",
+      "en": "2.2.3 Fundamental types of Main Memory",
+      "ur": "۲.۲.۳ مین میموری کی بنیادی اقسام",
+      "ps": "۲.۲.۳ د اصلي حافظې بنسټیز ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s056-a",
+      "en": "Fundamentally Main or Primary memory is classified into three types.",
+      "ur": "بنیادی طور پر مین یا بنیادی میموری کو تین اقسام میں تقسیم کیا جاتا ہے۔",
+      "ps": "په بنسټیزه توګه اصلي یا لومړنۍ حافظه په درېیو ډولونو وېشل کېږي."
+    },
+    {
+      "id": "cs11-s056-t1",
+      "en": "Internal processor memory",
+      "ur": "پراسیسر کی اندرونی میموری",
+      "ps": "د پروسیسر دننني حافظه",
+      "listGroup": "main"
+    },
+    {
+      "id": "cs11-s056-t2",
+      "en": "RAM",
+      "ur": "ریم",
+      "ps": "RAM",
+      "listGroup": "main"
+    },
+    {
+      "id": "cs11-s056-t3",
+      "en": "ROM",
+      "ur": "روم",
+      "ps": "ROM",
+      "listGroup": "main"
+    },
+    {
+      "id": "cs11-s056-h2",
+      "en": "a. Internal processor memory",
+      "ur": "الف۔ پراسیسر کی اندرونی میموری",
+      "ps": "الف. د پروسیسر دننني حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s056-b",
+      "en": "These are directly accessible to the CPU and are extremely fast. The following are the two main types of Internal processor memories.",
+      "ur": "یہ سی پی یو کے لیے براہِ راست قابلِ رسائی ہیں اور انتہائی تیز ہیں۔ پراسیسر کی اندرونی میموریز کی دو بنیادی اقسام درج ذیل ہیں۔",
+      "ps": "دا CPU ته مستقیم د لاسرسي وړ دي او ډیر ګړندي دي. د پروسیسر دننني حافظو دوه اصلي ډولونه لاندې دي."
+    },
+    {
+      "id": "cs11-s056-u1",
+      "en": "Cache memory",
+      "ur": "کیش میموری",
+      "ps": "کېش حافظه",
+      "listGroup": "ipm"
+    },
+    {
+      "id": "cs11-s056-u2",
+      "en": "Registers",
+      "ur": "رجسٹرز",
+      "ps": "رجسترونه",
+      "listGroup": "ipm"
+    },
+    {
+      "id": "cs11-s056-c",
+      "en": "Cache lies in between the CPU and main memory while registers are associated with the arithmetic logic units.",
+      "ur": "کیش سی پی یو اور مین میموری کے درمیان ہوتی ہے جبکہ رجسٹرز ریاضیاتی منطقی یونٹس کے ساتھ وابستہ ہیں۔",
+      "ps": "کېش د CPU او اصلي حافظې ترمنځ وي پداسې حال کې چې رجسترونه د ریاضیاتي منطقي واحدونو سره تړلي دي."
+    },
+    {
+      "id": "cs11-s056-h3",
+      "en": "i. Cache Memory",
+      "ur": "i۔ کیش میموری",
+      "ps": "i. کېش حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s056-d",
+      "en": "Cache (pronounced as cash) memory is extremely fast Static RAM (SRAM) that is built into a computer’s central processing unit (CPU), or located next to it on a separate chip. The CPU uses cache memory to store instructions that are repeatedly required to run programs, improving overall system speed. This memory is mainly used to store some active portion of main memory (RAM). When any information is required by the processor, first it will look up in the cache memory, and if it is not available in the cache then it will fetch it from the RAM. Figure 2.3 shows cache memory interface in the computer. There are three levels of cache memory.",
+      "ur": "کیش (جس کا تلفظ کیش ہے) میموری انتہائی تیز اسٹیٹک ریم (ایس ریم) ہے جو کمپیوٹر کے مرکزی پراسیسنگ یونٹ (سی پی یو) میں بنی ہوتی ہے یا اس کے ساتھ ایک الگ چپ پر ہوتی ہے۔ سی پی یو کیش میموری کو ان ہدایات کو محفوظ کرنے کے لیے استعمال کرتا ہے جو پروگرام چلانے کے لیے بار بار درکار ہوتی ہیں، جس سے سسٹم کی مجموعی رفتار بہتر ہوتی ہے۔ یہ میموری بنیادی طور پر مین میموری (ریم) کے کسی فعال حصے کو محفوظ کرنے کے لیے استعمال ہوتی ہے۔ جب پراسیسر کو کوئی معلومات درکار ہوں تو وہ پہلے کیش میموری میں تلاش کرتا ہے اور اگر وہ کیش میں دستیاب نہ ہو تو اسے ریم سے حاصل کرتا ہے۔ شکل ۲.۳ کمپیوٹر میں کیش میموری کا انٹرفیس دکھاتی ہے۔ کیش میموری کی تین سطحیں ہیں۔",
+      "ps": "کېش (چې تلفظ یې کېش دی) حافظه ډیره ګړندۍ جامده RAM (SRAM) ده چې د کمپیوټر په مرکزي پروسس واحد (CPU) کې جوړه شوې ده، یا د هغې تر څنګ په یو جلا چپ کې ایښودل شوې ده. CPU کېش حافظه هغو لارښوونو ساتلو لپاره کاروي چې د پروګرامونو چلولو لپاره په تکراري ډول اړینې وي، چې د سیسټم ټوله ګړندیتوب ښه کوي. دا حافظه په عمده توګه د اصلي حافظې (RAM) د یوې فعالې برخې ساتلو لپاره کارول کېږي. کله چې پروسیسر ته کوم معلومات پکار وي نو لومړی به د کېش په حافظه کې لټوي، او که په کېش کې نه وي موجود نو له RAM نه به یې راوړي. ۲.۳ انځور د کمپیوټر کې د کېش حافظې انټرفیس ښیي. د کېش حافظې درې کچې شته."
+    },
+    {
+      "id": "cs11-s056-l1",
+      "en": "L1 (Level 1) Cache",
+      "ur": "ایل ۱ (سطح ۱) کیش",
+      "ps": "L1 (۱ کچه) کېش",
+      "listGroup": "cache"
+    },
+    {
+      "id": "cs11-s056-l2",
+      "en": "L2 (Level 2) Cache",
+      "ur": "ایل ۲ (سطح ۲) کیش",
+      "ps": "L2 (۲ کچه) کېش",
+      "listGroup": "cache"
+    },
+    {
+      "id": "cs11-s056-l3",
+      "en": "L3 (Level 3) Cache",
+      "ur": "ایل ۳ (سطح ۳) کیش",
+      "ps": "L3 (۳ کچه) کېش",
+      "listGroup": "cache"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s056-h1",
+        "cs11-s056-a",
+        "cs11-s056-t1",
+        "cs11-s056-t2",
+        "cs11-s056-t3",
+        "cs11-s056-h2",
+        "cs11-s056-b",
+        "cs11-s056-u1",
+        "cs11-s056-u2",
+        "cs11-s056-c",
+        "cs11-s056-h3",
+        "cs11-s056-d",
+        "cs11-s056-l1",
+        "cs11-s056-l2",
+        "cs11-s056-l3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 47: “2.2.3 Fundamental types of Main Memory”, a. Internal processor memory and the start of i. Cache Memory with the three cache levels. The heading “i. Cache Memory” is printed in a faded colour. The page is photographed at an angle. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:43:11.949306+00:00",
+    "scope": "Scan 56 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

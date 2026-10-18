@@ -1,0 +1,22 @@
+@printed 226
+@deco Unit-running header, folio and decorative footer band excluded
+p approximate values of binomial expansions having indices as negative integers or fractions. || ان دو رقمی توسیعات کی تخمینی قیمتیں جن کے قوت نما منفی صحیح اعداد یا کسر ہوں۔ || د هغو دوه حدي پراختیاوو نږدې ارزښتونه چې توانونه یې منفي صحیح عددونه یا کسرونه وي.
+p **Summation of infinite series:** The binomial series are conveniently used for summation of infinite series. The series (whose sum is required) is compared with || **لامحدود سلسلوں کا مجموعہ:** دو رقمی سلسلے لامحدود سلسلوں کا مجموعہ نکالنے کے لیے سہولت سے استعمال ہوتے ہیں۔ جس سلسلے کا مجموعہ درکار ہو اس کا موازنہ کیا جاتا ہے || **د بې پایه لړیو مجموعه:** دوه حدي لړۍ د بې پایه لړیو د مجموعې لپاره په اسانۍ سره کارول کېږي. هغه لړۍ (چې مجموعه یې غوښتل کېږي) پرتله کېږي له
+m $1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots$
+p to find out the values of $n$ and $x$. Then the sum is calculated by putting the values of $n$ and $x$ in $(1+x)^n$. || تاکہ $n$ اور $x$ کی قیمتیں معلوم ہوں۔ پھر مجموعہ $n$ اور $x$ کی قیمتیں $(1+x)^n$ میں رکھ کر نکالا جاتا ہے۔ || چې د $n$ او $x$ ارزښتونه پیدا شي. بیا مجموعه د $n$ او $x$ ارزښتونه په $(1+x)^n$ کې ایښودو سره محاسبه کېږي.
+example 18 | Find the sum of the series $1+\dfrac23\cdot\dfrac12+\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}+\dfrac{2\cdot5\cdot8}{3\cdot6\cdot9}\cdot\dfrac1{2^3}+\cdots$ || سلسلے کا مجموعہ معلوم کریں $1+\dfrac23\cdot\dfrac12+\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}+\dfrac{2\cdot5\cdot8}{3\cdot6\cdot9}\cdot\dfrac1{2^3}+\cdots$ || د لړۍ مجموعه پیدا کړئ $1+\dfrac23\cdot\dfrac12+\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}+\dfrac{2\cdot5\cdot8}{3\cdot6\cdot9}\cdot\dfrac1{2^3}+\cdots$
+p **Solution:** Suppose that the given series is identical with the expansion $(1+x)^n$. || **حل:** فرض کریں کہ دیا گیا سلسلہ توسیع $(1+x)^n$ کے مماثل ہے۔ || **حل:** فرض کړئ چې ورکړل شوې لړۍ د پراختیا $(1+x)^n$ سره ورته ده.
+p We have || ہمارے پاس ہے || موږ لرو
+m $(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots\qquad\text{(i)}$
+m $S=1+\dfrac23\cdot\dfrac12+\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}+\dfrac{2\cdot5\cdot8}{3\cdot6\cdot9}\cdot\dfrac1{2^3}+\cdots\qquad\text{(ii)}$
+p Comparing (i) and (ii), we get || (i) اور (ii) کا موازنہ کرنے پر ہمیں ملتا ہے || د (i) او (ii) پرتله کولو سره موږ ترلاسه کوو
+m $nx=\dfrac23\cdot\dfrac12\quad\text{and}\quad\dfrac{n(n-1)}{2!}x^2=\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}$
+p Squaring || مربع لینے پر || مربع کولو سره
+m $n^2x^2=\dfrac19\quad\text{and}\quad\dfrac{n(n-1)}{2!}x^2=\dfrac5{36}\qquad\text{so that}$
+m $\dfrac{\frac{n(n-1)}{2!}x^2}{n^2x^2}=\dfrac{\frac5{36}}{\frac19}\ \Rightarrow\ \dfrac{n(n-1)}2\cdot\dfrac1{n^2}=\dfrac5{36}\times\dfrac91\ \Rightarrow\ \dfrac{n-1}{2n}=\dfrac54\ \Rightarrow\ \dfrac{n-1}n=\dfrac52$
+m $\Rightarrow5n=2n-2\ \Rightarrow\ 5n-2n=-2\ \Rightarrow\ 3n=-2\Rightarrow n=-\dfrac23$
+p Putting this value of $n$ in $nx=\dfrac23\cdot\dfrac12$ || $n$ کی یہ قیمت $nx=\dfrac23\cdot\dfrac12$ میں رکھنے پر || د $n$ دا ارزښت په $nx=\dfrac23\cdot\dfrac12$ کې ایښودو سره
+m $\text{We get}\quad-\dfrac23x=\dfrac23\cdot\dfrac12=\dfrac13\ \Rightarrow\ -2x=1\Rightarrow x=-\dfrac12$
+m $\text{So, }S=(1+x)^n=\left(1-\dfrac12\right)^{-\frac23}=\left(\dfrac12\right)^{-\frac23}=\dfrac1{\left(\frac12\right)^{\frac23}}=\dfrac1{\frac1{2^{\frac23}}}=2^{\frac23}=4^{\frac13}$
+p i.e. $S=4^{\frac13}$ and so from (ii) || یعنی $S=4^{\frac13}$ اور اس لیے (ii) سے || یعنې $S=4^{\frac13}$ او نو له (ii) نه
+m $1+\dfrac23\cdot\dfrac12+\dfrac{2\cdot5}{3\cdot6}\cdot\dfrac1{2^2}+\dfrac{2\cdot5\cdot8}{3\cdot6\cdot9}\cdot\dfrac1{2^3}+\cdots=4^{\frac13}$

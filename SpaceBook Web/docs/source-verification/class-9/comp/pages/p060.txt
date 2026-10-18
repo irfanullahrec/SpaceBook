@@ -1,0 +1,25 @@
+@pdf 60
+@printed 52
+@status lesson
+table Valid and invalid variable names || درست اور غلط متغیر نام || سم او ناسم متغیر نومونه
+th | Variable Name || متغیر کا نام || د متغیر نوم | Valid/Invalid || درست/غلط || سم/ناسم | Remarks || تبصرہ || تبصره
+tr | Num | Valid || درست || سم | —
+tr | Perform | Valid || درست || سم | —
+tr | Switch | Invalid || غلط || ناسم | Keyword || کی ورڈ || keyword
+tr | Aysha | Valid || درست || سم | —
+tr | int | Invalid || غلط || ناسم | Keyword || کی ورڈ || keyword
+tr | 3pak | Invalid || غلط || ناسم | Starts with a numeral || عدد سے شروع ہوتا ہے || په عدد پیلېږي
+tr | x-y | Invalid || غلط || ناسم | Special character is not allowed except underscore || انڈر اسکور کے سوا خاص حرف کی اجازت نہیں || له underscore پرته ځانګړی توری اجازه نه لري
+tr | Roll No | Invalid || غلط || ناسم | Space is not allowed || اسپیس کی اجازت نہیں || تش ځای اجازه نه لري
+endtable
+@issue The book marks "Switch" invalid as a keyword, but C keywords are lower case (switch), so "Switch" with a capital S is actually a valid name; kept as printed.
+### 2.4.4 Data Types used in C Language || 2.4.4 C زبان میں استعمال ہونے والی ڈیٹا ٹائپس || ۲.۴.۴ په C ژبه کې کارېدونکي ډېټا ډولونه
+p All C compilers accept the following fundamental data types to be assigned to variables. || تمام C کمپائلر متغیرات کو دینے کے لیے درج ذیل بنیادی ڈیٹا ٹائپس قبول کرتے ہیں۔ || ټول C compilers متغیرونو ته د ورکولو لپاره دا بنسټیز ډېټا ډولونه مني.
+- Integer **(int)** || صحیح عدد **(int)** || بشپړ عدد **(int)**
+- Floating Point **(float)** and Double precision floating point**(double)** || اعشاری عدد **(float)** اور دوہری درستگی والا اعشاری عدد **(double)** || اعشاري عدد **(float)** او دوه چنده دقت اعشاري عدد **(double)**
+- Character **(char)** || حرف **(char)** || توری **(char)**
+### 1. Integer(*int, long*) Type || 1. انٹیجر (int، long) ٹائپ || ۱. Integer (int، long) ډول
+p Integers are whole numbers with a machine dependent range of values. A good programming language is to support the programmer by giving a control on a range of numbers and storage space. C has 3 classes of integer storage namely ***short, int*** and ***long***. All of these data types have **signed** and **unsigned** forms. || انٹیجرز مکمل اعداد ہیں جن کی قدروں کی حد مشین پر منحصر ہوتی ہے۔ ایک اچھی پروگرامنگ زبان پروگرامر کو اعداد کی حد اور ذخیرے کی جگہ پر کنٹرول دے کر مدد کرتی ہے۔ C میں انٹیجر ذخیرے کی 3 اقسام ہیں یعنی ***short، int*** اور ***long***۔ ان تمام ڈیٹا ٹائپس کی **signed** اور **unsigned** صورتیں ہیں۔ || Integers بشپړ عددونه دي چې د ارزښتونو حد یې په ماشین پورې اړه لري. ښه پروګرامي ژبه پروګرامر ته د عددونو پر حد او ذخیرې ځای کنټرول ورکوي. C د integer ذخیرې ۳ ډولونه لري: ***short، int*** او ***long***. دا ټول **signed** او **unsigned** بڼې لري.
+p Integer variable declaration statement has the form: || انٹیجر متغیر کے اعلان کی اسٹیٹمنٹ کی صورت یہ ہے: || د integer متغیر د اعلان بیان بڼه دا ده:
+m int variable;
+p Generally, the number of bytes set aside by the compiler for the above Datatype are as given in the table. || عموماً اوپر والی ڈیٹا ٹائپ کے لیے کمپائلر کی مختص کردہ بائٹس کی تعداد جدول میں دی گئی ہے۔ || عموماً د پورتني ډېټا ډول لپاره د compiler له خوا ځانګړې شوې bytes په جدول کې ورکړل شوي.

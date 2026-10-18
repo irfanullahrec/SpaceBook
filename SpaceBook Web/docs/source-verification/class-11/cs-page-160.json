@@ -1,0 +1,114 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s160-p151",
+  "title": "Figure 5.26 Mesh Topology; advantages and disadvantages of a mesh topology",
+  "headingUrdu": "شکل ۵.۲۶ میش ٹوپولوجی؛ میش ٹوپولوجی کے فوائد اور نقصانات",
+  "headingPashto": "انځور ۵.۲۶ جال توپولوژي؛ د جال توپولوژۍ ګټې او زیانونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 160,
+    "printedPage": "151"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s160-h1",
+      "en": "Advantages of Mesh topology",
+      "ur": "میش ٹوپولوجی کے فوائد",
+      "ps": "د جال توپولوژۍ ګټې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s160-a1",
+      "en": "Data can be transmitted from different devices simultaneously. This topology can withstand high traffic.",
+      "ur": "ڈیٹا مختلف آلات سے بیک وقت منتقل کیا جا سکتا ہے۔ یہ ٹوپولوجی بھاری ٹریفک برداشت کر سکتی ہے۔",
+      "ps": "ډېټا له مختلفو وسایلو په یو وخت لېږدول کېدای شي. دا توپولوژي لوړ ترافیک زغملای شي.",
+      "listGroup": "ms_adv"
+    },
+    {
+      "id": "cs11-s160-a2",
+      "en": "Even if one of the components fails there is always an alternative link present. So data transfer doesn’t get affected.",
+      "ur": "اگر کوئی ایک جزو ناکام بھی ہو جائے تو ہمیشہ ایک متبادل ربط موجود ہوتا ہے۔ اس لیے ڈیٹا کی منتقلی متاثر نہیں ہوتی۔",
+      "ps": "که یو جز هم ناکام شي، تل یو بدیل تړاو شته. نو د ډېټا لېږد نه اغېزمنېږي.",
+      "listGroup": "ms_adv"
+    },
+    {
+      "id": "cs11-s160-a3",
+      "en": "Expansion and modification in topology can be done without disrupting other nodes.",
+      "ur": "ٹوپولوجی میں توسیع اور ترمیم دوسرے نوڈز میں خلل ڈالے بغیر کی جا سکتی ہے۔",
+      "ps": "په توپولوژۍ کې پراختیا او تعدیل د نورو غوټو د خرابولو پرته کېدای شي.",
+      "listGroup": "ms_adv"
+    },
+    {
+      "id": "cs11-s160-h2",
+      "en": "Disadvantages of Mesh topology",
+      "ur": "میش ٹوپولوجی کے نقصانات",
+      "ps": "د جال توپولوژۍ زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s160-d1",
+      "en": "There are high chances of redundancy in many of the network connections.",
+      "ur": "نیٹ ورک کے کئی کنکشنز میں فالتو پن کے امکانات زیادہ ہیں۔",
+      "ps": "د شبکې په ډیرو پیوستونو کې د زیاتوالي لوړ احتمال شته.",
+      "listGroup": "ms_dis"
+    },
+    {
+      "id": "cs11-s160-d2",
+      "en": "Overall cost of this network is too high as compared to other network topologies.",
+      "ur": "دوسری نیٹ ورک ٹوپولوجیز کے مقابلے میں اس نیٹ ورک کی مجموعی لاگت بہت زیادہ ہے۔",
+      "ps": "د نورو شبکې توپولوژیو په پرتله د دې شبکې ټوله لګښت ډیر لوړ دی.",
+      "listGroup": "ms_dis"
+    },
+    {
+      "id": "cs11-s160-d3",
+      "en": "Set-up and maintenance of this topology is very difficult. Even administration of the network is challenging.",
+      "ur": "اس ٹوپولوجی کی ترتیب اور دیکھ بھال بہت مشکل ہے۔ حتیٰ کہ نیٹ ورک کا انتظام بھی چیلنجنگ ہے۔",
+      "ps": "د دې توپولوژۍ جوړول او ساتنه ډیره ستونزمنه ده. حتی د شبکې مدیریت هم ننګونکی دی.",
+      "listGroup": "ms_dis"
+    }
+  ],
+  "flow": [
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s160-h1",
+        "cs11-s160-a1",
+        "cs11-s160-a2",
+        "cs11-s160-a3",
+        "cs11-s160-h2",
+        "cs11-s160-d1",
+        "cs11-s160-d2",
+        "cs11-s160-d3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" role=\"img\" aria-label=\"Mesh topology: six computers each connected to every other computer\" style=\"width:100%;max-width:440px;height:auto;background:#fff\"><line x1=\"210\" y1=\"70\" x2=\"330\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"70\" x2=\"330\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"70\" x2=\"210\" y2=\"240\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"70\" x2=\"90\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"70\" x2=\"90\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"110\" x2=\"330\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"110\" x2=\"210\" y2=\"240\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"110\" x2=\"90\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"110\" x2=\"90\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"200\" x2=\"210\" y2=\"240\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"200\" x2=\"90\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"200\" x2=\"90\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"240\" x2=\"90\" y2=\"200\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"240\" x2=\"90\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"200\" x2=\"90\" y2=\"110\" stroke=\"#111\" stroke-width=\"1.5\"/><rect x=\"196\" y=\"52\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><rect x=\"316\" y=\"92\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><rect x=\"316\" y=\"182\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><rect x=\"196\" y=\"222\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><rect x=\"76\" y=\"182\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><rect x=\"76\" y=\"92\" width=\"28\" height=\"22\" fill=\"#7ac6e8\" stroke=\"#111\"/><text x=\"210\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text><text x=\"75\" y=\"70\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text><text x=\"350\" y=\"85\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text><text x=\"75\" y=\"235\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text><text x=\"350\" y=\"235\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text><text x=\"210\" y=\"275\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Computer</text></svg>",
+      "id": "cs11-s160-fig1",
+      "caption": "Figure 5.26 Mesh Topology",
+      "captionUrdu": "شکل ۵.۲۶ میش ٹوپولوجی",
+      "captionPashto": "انځور ۵.۲۶ جال توپولوژي",
+      "labels": [
+        {
+          "en": "Computer",
+          "ur": "کمپیوٹر",
+          "ps": "کمپیوټر"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 151: Figure 5.26 Mesh Topology (six computers each joined to every other computer, each marked with the printed label “Computer”; redrawn as coded SVG), the advantages (three bullets) and the disadvantages (three bullets) of a mesh topology. A handwritten word at the top right is excluded. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:19:18.949528+00:00",
+    "scope": "Scan 160 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

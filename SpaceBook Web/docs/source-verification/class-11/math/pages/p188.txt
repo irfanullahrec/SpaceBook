@@ -1,0 +1,17 @@
+@printed 188
+@deco footer stamp "Not For Sale"
+m $\therefore\ {}^nC_r\,r!={}^nP_r=\dfrac{n!}{(n-r)!}\Rightarrow{}^nC_r=\dfrac{n!}{r!(n-r)!}$
+m (i) If $r=n$, then ${}^nC_n=\dfrac{n!}{n!(n-n)!}=\dfrac{1}{0!}=1,\quad\because0!=1$
+m (ii) If $r=0$, then ${}^nC_0=\dfrac{n!}{0!(n-0)!}=\dfrac{n!}{n!}=1$
+m (iii) If $r=1$, then ${}^nC_1=\dfrac{n!}{1!(n-1)!}=\dfrac{n(n-1)!}{(n-1)!}=n$
+m (iv) If $r=n-1$, then ${}^nC_{n-1}=\dfrac{n!}{(n-1)!(n-n+1)!}=\dfrac{n(n-1)!}{(n-1)!\cdot1!}=n$
+m (v) Putting $(n-r)$ for r, we have ${}^nC_{n-r}=\dfrac{n!}{(n-r)!(n-n+r)!}=\dfrac{n!}{(n-r)!\,r!}={}^nC_r$
+example 17 | Prove that ${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$ || ثابت کریں کہ ${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$ || ثابت کړئ چې ${}^nC_r+{}^nC_{r-1}={}^{n+1}C_r$
+m **Solution:** Taking L.H.S $={}^nC_r+{}^nC_{r-1}=\dfrac{n!}{r!(n-r)!}+\dfrac{n!}{(r-1)!(n-r+1)!}$
+m $=\dfrac{n!}{r(r-1)!(n-r)!}+\dfrac{n!}{(r-1)!(n-r+1)(n-r)!}=\dfrac{n!}{(r-1)!(n-r)!}\left[\dfrac{1}{r}+\dfrac{1}{n-r+1}\right]$
+m $=\dfrac{n!}{(r-1)!(n-r)!}\left[\dfrac{n-r+1+r}{r(n-r+1)}\right]=\dfrac{(n+1)n!}{r(r-1)!(n-r+1)(n-r)!}$
+m $=\dfrac{(n+1)!}{r!\,(n-r+1)!}=\dfrac{(n+1)!}{r!\,[(n+1)-r]!}={}^{n+1}C_r=$ R.H.S
+endexample
+box info | Did You Know || کیا آپ جانتے ہیں || آیا پوهېږئ
+p The number of combinations of n things r at a time is equal to the number of combinations of n things $n-r$ at a time i.e. ${}^nC_r={}^nC_{n-r}$. Such combinations are called complementary. Put $r=n$, then ${}^nC_0={}^nC_n=1$ || n چیزوں میں سے ایک وقت میں r لینے کے جوڑوں کی تعداد n چیزوں میں سے ایک وقت میں $n-r$ لینے کے جوڑوں کی تعداد کے برابر ہے یعنی ${}^nC_r={}^nC_{n-r}$ ۔ ایسے جوڑ تکمیلی کہلاتے ہیں۔ $r=n$ رکھیں تو ${}^nC_0={}^nC_n=1$ || د n شیانو څخه په یو وخت r اخیستلو د ترکیبونو شمېر د n شیانو څخه په یو وخت $n-r$ اخیستلو د ترکیبونو له شمېر سره برابر دی، یعنې ${}^nC_r={}^nC_{n-r}$. داسې ترکیبونو ته متمم وايي. $r=n$ کېږدئ، نو ${}^nC_0={}^nC_n=1$
+endbox

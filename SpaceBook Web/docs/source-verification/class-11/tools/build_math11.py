@@ -86,6 +86,39 @@ def main():
     if b.stack:
         print('note: open container carried past last reviewed page:', b.stack[-1]['t'])
 
+    # Authored solutions are deliberately separate from transcribed source pages.
+    # Exact question matching prevents an answer silently attaching to revised text.
+    authored_path = HERE / 'math' / 'authored-solutions.json'
+    authored = json.loads(authored_path.read_text(encoding='utf-8')) if authored_path.exists() else {}
+    attached = set()
+    for unit in b.units.values():
+        for exercise in unit['exercises']:
+            def attach(blocks):
+                for record in blocks:
+                    if record.get('t') == 'q':
+                        owners = [(record, '')] + [(part, part['no']) for part in record.get('parts', [])]
+                        for owner, part_no in owners:
+                            key = f"{exercise['id']}|{record['no']}|{part_no}"
+                            solution = authored.get(key)
+                            if solution:
+                                assert owner['en'] == solution['question'], f'Changed question: {key}'
+                                assert record['en'] == solution['prompt'], f'Changed prompt: {key}'
+                                owner['sol'] = {k: solution[k] for k in ('answer', 'steps')}
+                                for language in ('answerUr', 'answerPs'):
+                                    if solution.get(language): owner['sol'][language] = solution[language]
+                                owner['authoredAnswer'] = {
+                                    'en': solution['answer'],
+                                    'ur': solution.get('answerUr', solution['answer']),
+                                    'ps': solution.get('answerPs', solution['answer'])
+                                }
+                                owner['answerSource'] = 'SpaceBook authored solution'
+                                owner['answerKey'] = key
+                                if solution.get('category'): owner['questionCategory'] = solution['category']
+                                attached.add(key)
+                    if record.get('blocks'): attach(record['blocks'])
+            attach(exercise['blocks'])
+    assert attached == set(authored), f'Unmatched authored solutions: {set(authored)-attached}'
+
     def resolve(list_):
         for x in list_:
             if x.get('t') == 'q' and x.get('solveParts'):
@@ -114,6 +147,14 @@ def main():
                     'window.MATH_11_SOLUTIONS = ' + json.dumps(solutions, ensure_ascii=False) + ';\n', encoding='utf-8')
 
     words = bm.load_vocab()
+    # Reviewed, subject-specific additions; the shared dictionary contains
+    # untranslated placeholders and is intentionally not used as a fallback.
+    for extra_vocab in sorted((HERE / 'math').glob('vocab-*.tsv')):
+        for line in extra_vocab.read_text(encoding='utf-8').splitlines():
+            if not line.strip(): continue
+            key, ur, ps = line.split('\t')
+            assert key not in words, f'Duplicate Mathematics vocabulary: {key}'
+            words[key] = [ur, ps]
     for m in b.ledger:
         m.pop('english', None)
         m['jpg'] = jpg_name(m['pdfPage'] - 1)
@@ -122,6 +163,7 @@ def main():
     for u in units:
         printed = [m['printedPage'] for m in b.ledger if m.get('unit') == u['number'] and m['printedPage']]
         u['pageStart'] = min(printed) if printed else None
+        u['pageRange'] = f"Pages {min(printed)}–{max(printed)}" if printed else ''
         u['reviewStatus'] = {'reviewedPdfPages': len(u['sourcePdfPages'])}
         for s in u['sections']:
             s['theory'] = '\n\n'.join(x.get('en', '') for x in s['blocks'] if x['t'] in ('h', 'p'))[:4000]

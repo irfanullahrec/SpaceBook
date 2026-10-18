@@ -1,0 +1,30 @@
+@printed 44
+@status lesson
+p پروگرام میں انٹیجر کی تعریف کرنے کے لیے درج ذیل اسٹیٹمنٹ لکھی جا سکتی ہے: || The following statement can be written to declare an integer in a program: || په پروګرام کې د بشپړ عدد د تعریف لپاره لاندې بیان لیکل کېدای شي:
+m int variable;
+p مندرجہ ذیل جدول میں ان تمام ڈیٹا اقسام کے لیے درکار میموری اور قیمتوں کی حدود لکھی گئی ہیں۔ || The table below gives the memory needed and the range of values for each of these data types. || لاندې جدول کې د دې ټولو ډېټا ډولونو لپاره اړینه حافظه او د ارزښتونو حدود لیکل شوي.
+table انٹیجر ڈیٹا ٹائپس || Integer data types || د بشپړ عدد ډېټا ډولونه
+th | ویری ایبل کی ڈیٹا قسم || Data type of variable || د متغیر ډېټا ډول | میموری میں درکار بائٹس || Bytes needed in memory || په حافظه کې اړین بایټونه | قیمت کی حد (Range) || Range of values || د ارزښت حد (Range)
+tr | int || int || int | 2 || 2 || 2 | -32,768 سے +32,767 || -32,768 to +32,767 || له -32,768 تر +32,767
+tr | long || long || long | 4 || 4 || 4 | -2,147,483,648 سے +2,147,483,647 || -2,147,483,648 to +2,147,483,647 || له -2,147,483,648 تر +2,147,483,647
+tr | unsigned int || unsigned int || unsigned int | 2 || 2 || 2 | 0 سے 65,535 || 0 to 65,535 || له 0 تر 65,535
+endtable
+box note | جاننا ضروری ہے۔ || Good to know || پوهېدل یې اړین دي
+p 32 بٹ سسٹم میں، انٹیجر ویری ایبل کا سائز 2 بائٹس سے 4 بائٹس تک بڑھایا گیا ہے۔ || On a 32-bit system the size of an integer variable has been increased from 2 bytes to 4 bytes. || په 32 بټي سیسټم کې د بشپړ عدد متغیر اندازه له 2 بایټه 4 بایټه ته لوړه شوې ده.
+endbox
+@issue The sizes in the table (int = 2 bytes) are those of 16-bit compilers such as Turbo C; as the margin note says, on 32/64-bit systems int is 4 bytes (range -2,147,483,648 to +2,147,483,647) and unsigned int is 0 to 4,294,967,295.
+### 2۔ فلوٹنگ پوائنٹ ڈیٹا ٹائپ (float, double, long double) || 2. Floating-point data types (float, double, long double) || ۲. اعشاري ډېټا ډولونه (float, double, long double)
+p نقطہ اعشاریہ والے اعداد اصل میں حقیقی اعداد کے اظہار کے لیے استعمال ہوتے ہیں۔ ان اعداد کی نقطہ اعشاریہ کے بعد 7 اعداد تک درست قیمت ظاہر ہوتی ہے۔ فلوٹنگ پوائنٹ نمبرز کو کی ورڈ float کے ذریعے ظاہر کیا جاتا ہے۔ جب فلوٹنگ پوائنٹ نمبر کی درستگی ناکافی ہوتی ہے تو، ہم نمبر کی وضاحت کے لئے double اور long double کا استعمال کر سکتے ہیں۔ پروگرام میں فلوٹنگ پوائنٹ کی تعریف کرنے کے لیے درج ذیل اسٹیٹمنٹ لکھی جا سکتی ہے۔ || Numbers with a decimal point are used to represent real numbers. Their value is shown correctly up to 7 digits after the decimal point. Floating-point numbers are declared with the keyword float. When the precision of a floating-point number is not enough, we can use double and long double to specify the number. The following statement can be written to declare a floating-point variable in a program: || د اعشاري ټکي لرونکي عددونه په اصل کې د حقیقي عددونو د ښودلو لپاره کارېږي. د دې عددونو ارزښت د اعشاري ټکي وروسته تر 7 عددونو پورې سم ښکاري. اعشاري عددونه د float کلیدي کلمې په مرسته ښودل کېږي. کله چې د اعشاري عدد دقت بس نه وي، د عدد د ښودلو لپاره double او long double کارولای شو. په پروګرام کې د اعشاري متغیر د تعریف لپاره لاندې بیان لیکل کېدای شي:
+@issue A float gives about 6–7 significant digits in total, not 7 digits after the decimal point.
+m float variable;
+p عموماً مندرجہ بالا فلوٹنگ پوائنٹ ڈیٹا ٹائپس کے لئے کمپائلر بائٹس کی تعداد مختص کرتا ہے جو کہ ذیل میں دی گئی ہیں۔ || Usually the compiler allocates the following numbers of bytes for the above floating-point data types. || عموماً کمپایلر د پورتنیو اعشاري ډېټا ډولونو لپاره لاندې شمېر بایټونه ځانګړي کوي.
+table فلوٹنگ پوائنٹ ڈیٹا ٹائپس || Floating-point data types || اعشاري ډېټا ډولونه
+th | ویری ایبل کی ڈیٹا قسم || Data type of variable || د متغیر ډېټا ډول | میموری میں درکار بائٹس || Bytes needed in memory || په حافظه کې اړین بایټونه | قیمت کی حد || Range of values || د ارزښت حد
+tr | float || float || float | 4 || 4 || 4 | 3.4×10⁻³⁸ to 3.4×10³⁸ || 3.4×10⁻³⁸ to 3.4×10³⁸ || 3.4×10⁻³⁸ to 3.4×10³⁸
+tr | double || double || double | 8 || 8 || 8 | 1.7×10⁻³⁰⁸ to 1.7×10³⁰⁸ || 1.7×10⁻³⁰⁸ to 1.7×10³⁰⁸ || 1.7×10⁻³⁰⁸ to 1.7×10³⁰⁸
+tr | long double || long double || long double | 10 || 10 || 10 | 3.4×10⁻⁴⁹³² to 1.1×10⁴⁹³² || 3.4×10⁻⁴⁹³² to 1.1×10⁴⁹³² || 3.4×10⁻⁴⁹³² to 1.1×10⁴⁹³²
+endtable
+@issue The float range is more exactly about 1.2×10⁻³⁸ to 3.4×10³⁸ (and double 2.2×10⁻³⁰⁸ to 1.8×10³⁰⁸); the book's values are the common textbook approximations. The size of long double varies by compiler (8, 10, 12 or 16 bytes).
+### 3۔ کریکٹر (char) ڈیٹا ٹائپ (Character datatype) || 3. Character (char) data type || ۳. توری (char) ډېټا ډول
+p کیریکٹر ویری ایبل میں صرف ایک حرف (Character) ہی سٹور ہو سکتا ہے۔ کیریکٹر ویری ایبل میں ایک حرف کو سٹور کرنے کے لیے C کمپائلر، میموری میں صرف ایک بائٹ مختص کرتا ہے۔ پروگرام میں کیریکٹر ویری ایبل کی تعریف درج ذیل اسٹیٹمنٹ سے کی جا سکتی ہے: || Only one character can be stored in a character variable. To store one character in a character variable, the C compiler allocates only one byte in memory. A character variable can be declared in a program with the following statement: || په حرفي متغیر کې یوازې یو توری (Character) ساتل کېدای شي. د یوه توري د ساتلو لپاره C کمپایلر په حافظه کې یوازې یو بایټ ځانګړی کوي. په پروګرام کې حرفي متغیر په لاندې بیان تعریفېدای شي:
+m char ch;

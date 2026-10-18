@@ -1,0 +1,30 @@
+@printed 72
+@status lesson
+p مندرجہ بالا آپریٹرز ایک اوپرینڈ (رقم) کے ساتھ استعمال ہوتے ہیں۔ || The operators above are used with one operand. || پورتني عملګرونه له یوه عملوند سره کارېږي.
+m -a;
+m n++;
+m --x;
+### (b) بائنری آپریٹر (Binary Operators) || (b) Binary operators || (b) باینري عملګرونه
+p آپریٹر کی ایک قسم جس کو اپنا عمل مکمل کرنے کے لیے دو رقموں کی ضرورت ہو اسے بائنری (Binary) آپریٹر کہا جاتا ہے۔ بائنری آپریٹرز یہ ہیں: || A kind of operator that needs two operands to complete its operation is called a binary operator. The binary operators are: || هغه ډول عملګر چې د خپل عمل د بشپړولو لپاره دوو عملوندونو ته اړتیا لري باینري (Binary) عملګر بلل کېږي. باینري عملګرونه دا دي:
+m +, -, *, /, %
+p کچھ مثالیں یہ ہیں: || Some examples are: || ځینې بېلګې دا دي:
+m x+y;
+m a-b;
+m y/z;
+m x*t;
+@issue The book lists "-" only as unary in (a) and only the arithmetic operators as binary; "-" is both (unary in -a, binary in a-b), and the relational, logical &&/{{OR}} and assignment operators are also binary.
+@sec 3-2-10 | 3.2.10 مشروط / کنڈیشنل آپریٹر ? || 3.2.10 Conditional operator ? || ۳.۲.۱۰ شرطي عملګر ?
+### 3.2.10 مشروط / کنڈیشنل آپریٹر ? (Conditional Operators) || 3.2.10 The conditional operator ? || ۳.۲.۱۰ شرطي عملګر ? (Conditional Operator)
+p کنڈیشنل آپریٹر ایک ایسا سٹرکچر ہے جو فیصلے کرنے کے لیے استعمال ہوتا ہے۔ یہ بالکل سادہ سے if-else کی جگہ استعمال کیا جاتا ہے۔ اس کو ٹرنری آپریٹر بھی کہا جاتا ہے کیونکہ یہ تین آپرینڈز کے بغیر اپنا عمل مکمل نہیں کر سکتا۔ || The conditional operator is a structure used for taking decisions. It is used in place of a very simple if-else. It is also called the ternary operator, because it cannot complete its operation without three operands. || شرطي عملګر داسې جوړښت دی چې د پرېکړو لپاره کارېږي. د یوه ډېر ساده if-else پر ځای کارېږي. دې ته درې ګونی (ternary) عملګر هم ویل کېږي ځکه له درېیو عملوندونو پرته خپل کار نه شي بشپړولای.
+p سائنٹکس: || Syntax: || ترکیب:
+m (Condition)?true-case statement: false-case statement;
+- Conditions — یہ کوئی بھی ریلیشنل یا لاجیکل عبارت ہو گی۔ || Condition — any relational or logical expression. || Condition — هر نسبتي یا منطقي عبارت.
+- true-case — یہ اس وقت چلے گا جب شرط کا نتیجہ True ہو گا۔ || true-case — runs when the condition is true. || true-case — هغه وخت چلېږي چې شرط سم (True) وي.
+- false-case — یہ اس وقت چلے گا جب شرط کا نتیجہ False ہو گا۔ || false-case — runs when the condition is false. || false-case — هغه وخت چلېږي چې شرط ناسم (False) وي.
+p مثال: فرض کریں ہمارے پاس ایک ویری ایبل a = 5 ہے تو درج ذیل اسٹیٹمنٹ || Example: suppose we have a variable a = 5; then in the following statement || بېلګه: فرض کړئ یو متغیر a = 5 لرو؛ نو په لاندې بیان کې
+m x= (a>50)? 1:0;
+p اگر شرط a > 50 درست ہے تو x کو 1 ویلیو ملے گی، اگر شرط غلط ہے تو x کو 0 ویلیو ملے گی۔ جیسا کہ a چھوٹا ہے 50 سے لہٰذا x = 0۔ || if the condition a > 50 is true, x gets the value 1; if the condition is false, x gets the value 0. Since a is less than 50, x = 0. || که شرط a > 50 سم وي، x ته 1 ورکول کېږي؛ که ناسم وي، x ته 0 ورکول کېږي. څرنګه چې a له 50 کوچنی دی، نو x = 0.
+@sec 3-2-11 | 3.2.11 آپریٹرز اور ان کی فوقیت || 3.2.11 Operators and their precedence || ۳.۲.۱۱ عملګرونه او د هغوی لومړیتوب
+### 3.2.11 آپریٹرز اور ان کی فوقیت (Operators and their Precedence) || 3.2.11 Operators and their precedence || ۳.۲.۱۱ عملګرونه او د هغوی لومړیتوب (Precedence)
+p آپریٹرز کی فوقیت اصل میں وہ قواعد ہیں جو اس چیز کا تعین کرتے ہیں کہ کسی بھی عبارت میں کون سا عمل پہلے انجام پائے گا۔ 4 + 2 * 3 جیسے ایکسپریشن کو حل کرنے کے لیے ہمیں یہ پتہ ہونا چاہیئے کہ آپریٹرز کیا کرتے ہیں، اور ان کو لاگو کرنے کے لئے صحیح ترتیب کیا ہے۔ جس ترتیب میں آپریٹرز کو کسی عبارت میں استعمال کیا جاتا ہے اس کو آپریٹر ترجیح (Operator Precedence) کہا جاتا ہے۔ عام حسابی ترجیحی قواعد (جس میں ضرب کا عمل جمع سے پہلے کیا جاتا ہے) کا استعمال کرتے ہوئے، ہم جانتے ہیں کہ دی گئی عبارت 4 + (2 * 3) کا نتیجہ 10 آئے گا۔ || Operator precedence is the set of rules that decide which operation in an expression is carried out first. To evaluate an expression such as 4 + 2 * 3 we must know what the operators do and the correct order in which to apply them. The order in which operators are applied in an expression is called operator precedence. Using the usual arithmetic precedence rules (in which multiplication is done before addition), we know that the expression 4 + (2 * 3) gives 10. || د عملګرونو لومړیتوب هغه قواعد دي چې ټاکي په یوه عبارت کې کوم عمل لومړی ترسره کېږي. د 4 + 2 * 3 په څېر عبارت د حل لپاره باید پوه شو چې عملګرونه څه کوي او د پلي کولو سم ترتیب یې څه دی. هغه ترتیب چې عملګرونه پکې په عبارت کې پلي کېږي د عملګر لومړیتوب (Operator Precedence) بلل کېږي. د عامو حسابي لومړیتوب قواعدو (ضرب له جمع مخکې) په کارولو پوهېږو چې د 4 + (2 * 3) پایله 10 ده.
+@issue The expressions are printed mirror-ordered by the right-to-left layout ("3 * 2 + 4" and "4 + (3 * 2)"); written here in normal left-to-right order. The value 10 is unaffected.

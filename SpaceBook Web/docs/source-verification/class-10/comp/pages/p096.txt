@@ -1,0 +1,27 @@
+@printed 84
+@status lesson
+p یہ if-else کے متبادل کے طور پر استعمال ہوتا ہے۔ switch اسٹیٹمنٹ کثیر الانتخاب (Multiple Choice Statement) اسٹیٹمنٹ ہے۔ || It is used as an alternative to if-else. The switch statement is a multiple-choice statement. || دا د if-else د بدیل په توګه کارېږي. switch بیان څو انتخابي (Multiple Choice Statement) بیان دی.
+p switch اسٹیٹمنٹ ایک عبارت کو حل کرتا ہے اور اس سے ایک قیمت (Returned Value) اسے ملتی ہے۔ سوئچ اسٹیٹمنٹ کو عبارت سے صرف ایک ہی ویلیو ملتی ہے جس کی بنیاد پر صرف ایک ہی case چلایا جاتا ہے۔ اسٹیٹمنٹ میں سے صرف ایک صورت عبارت کے ذریعہ واپس کی گئی قیمت پر منحصر ہوتی ہے۔ عبارت سے ملنے والی ویلیو کا موازنہ case میں موجود کانسٹنٹ ویلیو سے کیا جاتا ہے۔ اگر ملنے والی ویلیو case میں موجود ویلیو کے برابر ہو تو case میں موجود تمام اسٹیٹمنٹس چلا دی جائیں گی۔ switch کا سائنٹکس درج ذیل ہے: || The switch statement evaluates an expression and gets one value (the returned value) from it. The switch statement gets only one value from the expression, on the basis of which only one case is run; which case runs depends on the value returned by the expression. The value obtained from the expression is compared with the constant value in each case. If the value equals the value in a case, all the statements in that case are run. The syntax of switch is: || switch بیان یو عبارت حلوي او له هغه یو ارزښت (Returned Value) ترلاسه کوي. switch له عبارت یوازې یو ارزښت اخلي او د هغه پر بنسټ یوازې یو case چلېږي؛ کوم case چلېږي هغه د عبارت په راګرځېدلي ارزښت پورې اړه لري. د عبارت ارزښت په هر case کې له ثابت ارزښت سره پرتله کېږي. که ارزښت د یوه case له ارزښت سره برابر وي، د هغه case ټول بیانونه چلېږي. د switch ترکیب دا دی:
+@issue The printed final words "چلا دی جائیں گی" are partly smudged in the scan; read from context.
+m switch(expression)
+m {
+m     case const-1:
+m         statements;
+m         break;
+m     case const-2:
+m         statements;
+m         break;
+m     .
+m     .
+m     case const-n:
+m         statements;
+m         break;
+m     default:
+m     statements;
+m }
+p وضاحت: || Explanation: || تشریح:
+- درج بالا مذکورہ سائنٹکس میں switch اسٹیٹمنٹ کے سامنے ایک عبارت (Expression) لکھی گئی ہے، پہلے یہ عبارت حل کی جائے گی اس سے جو بھی نتیجہ آئے گا اس قیمت کو ہر case کے ساتھ دی گئی کانسٹنٹ قیمت کے ساتھ موازنہ کیا جائے گا۔ اگر یہ قیمت case والے کانسٹنٹ سے ملتی ہے تو پھر اس case میں دی گئی تمام اسٹیٹمنٹس چلا دی جائیں گی۔ || In the syntax above an expression is written in front of the switch statement. First this expression is evaluated, and whatever result it gives is compared with the constant value given with each case. If the value matches a case's constant, all the statements given in that case are run. || په پورتني ترکیب کې د switch مخې ته یو عبارت (Expression) لیکل شوی. لومړی دا عبارت حلېږي او هر څه پایله چې ورکړي، د هر case له ثابت ارزښت سره پرتله کېږي. که ارزښت د case له ثابت سره سمون ولري، د هغه case ټول بیانونه چلېږي.
+- const-1 اور const-2، وغیرہ یہ ہمیشہ عددی کانسٹنٹ یا کیریکٹر / حرفی کانسٹنٹ ہوں گے۔ || const-1, const-2 and so on are always numeric (integer) constants or character constants. || const-1، const-2 او نور تل عددي یا حرفي ثابتونه وي.
+- ہر case کے اختتام پر break اسٹیٹمنٹ دی گئی ہے جو switch کی باڈی سے باہر نکلنے کے لئے استعمال ہوتی ہے۔ یہ ہر case کے بلاک کے اختتام پر استعمال ہو گی۔ اگر break کا استعمال نہ کیا جائے تو تمام کے تمام case جو مشابہ case (Matching) کے بعد آئیں گے وہ بھی چلا دیئے جائیں گے۔ || A break statement is given at the end of each case; it is used to leave the body of the switch. It is used at the end of every case block. If break is not used, all the cases that come after the matching case will also be run. || د هر case په پای کې break بیان ورکړل شوی چې د switch له بدنې د وتلو لپاره کارېږي. د هر case د بلاک په پای کې کارېږي. که break ونه کارول شي، له سمون لرونکي (Matching) case وروسته ټول case به هم وچلېږي.
+- switch باڈی میں default بھی استعمال ہوتا ہے۔ اگر کوئی مشابہ case نہ ملے تو default کے تحت جو اسٹیٹمنٹس آئیں گی وہ چلا دی جائیں گی، لیکن اس کا استعمال اختیاری (Optional) ہے۔ اگر یہ موجود نہ ہو تو کنٹرول switch کی باڈی سے باہر نکل کر … || default is also used in the switch body. If no matching case is found, the statements under default are run; but its use is optional. If it is absent, control leaves the body of the switch and … || په switch بدنه کې default هم کارېږي. که هېڅ سمون لرونکی case ونه موندل شي، د default لاندې بیانونه چلېږي؛ خو کارول یې اختیاري (Optional) دي. که نه وي، کنټرول د switch له بدنې وځي او …
+@issue The case constants must be integer constants; a character constant such as 'a' counts because chars are integer types. Floating-point values and strings cannot be used.

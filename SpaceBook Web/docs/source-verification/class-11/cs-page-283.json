@@ -1,0 +1,115 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s283-p274",
+  "title": "Form controls (end); a. Creating Command Buttons; To Add a Command Button to a Form — start",
+  "headingUrdu": "فارم کنٹرولز (اختتام)؛ الف۔ کمانڈ بٹن بنانا؛ فارم میں کمانڈ بٹن شامل کرنا — آغاز",
+  "headingPashto": "د فورم کنټرولونه (پای)؛ الف. د حکم تڼۍ جوړول؛ فورم ته د حکم تڼۍ زیاتول — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 283,
+    "printedPage": "274"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s283-c4",
+      "en": "Customize the properties of the control just added: Move the cursor over the control and click on the right mouse button to bring up its context menu. Select Properties to display the Properties screen for that control.",
+      "ur": "ابھی شامل کیے گئے کنٹرول کی پراپرٹیز کو حسبِ ضرورت بنائیں: کرسر کو کنٹرول پر لے جائیں اور اس کا کانٹیکسٹ مینو لانے کے لیے ماؤس کے دائیں بٹن پر کلک کریں۔ اس کنٹرول کی پراپرٹیز اسکرین دکھانے کے لیے پراپرٹیز منتخب کریں۔",
+      "ps": "ورسره زیات شوي کنټرول ملکیتونه دودیز کړئ: نښه د کنټرول پر سر یوسئ او د هغه د شرایطو مېنو راوستلو لپاره د موږک په ښي تڼۍ کلیک وکړئ. د هغه کنټرول لپاره د ملکیتونو سکرین ښودلو لپاره Properties وټاکئ.",
+      "listGroup": "cs2"
+    },
+    {
+      "id": "cs11-s283-c5",
+      "en": "Use a text box as an example. Select the Data tab of the Properties screen of a text box. The first item on this panel is the control source that specifies the data that will appear in the text box.",
+      "ur": "مثال کے طور پر ٹیکسٹ باکس استعمال کریں۔ ٹیکسٹ باکس کی پراپرٹیز اسکرین کا ڈیٹا ٹیب منتخب کریں۔ اس پینل پر پہلا آئٹم کنٹرول سورس ہے جو اس ڈیٹا کو متعین کرتا ہے جو ٹیکسٹ باکس میں ظاہر ہو گا۔",
+      "ps": "د بېلګې په توګه متن بکس وکاروئ. د متن بکس د ملکیتونو سکرین د Data ټب وټاکئ. په دې پټه کې لومړی توکی د کنټرول سرچینه ده چې هغه ډېټا ټاکي چې په متن بکس کې به ښکاره شي.",
+      "listGroup": "cs2"
+    },
+    {
+      "id": "cs11-s283-h1",
+      "en": "a. Creating Command Buttons",
+      "ur": "الف۔ کمانڈ بٹن بنانا",
+      "ps": "الف. د حکم تڼۍ جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s283-a",
+      "en": "Another way to make a form more user-friendly is by adding command buttons to the form. Command buttons are a quick way for form user to take a specific action. These command buttons are grouped into the following categories of actions, including:",
+      "ur": "فارم کو زیادہ صارف دوست بنانے کا ایک اور طریقہ فارم میں کمانڈ بٹن شامل کرنا ہے۔ کمانڈ بٹن فارم صارف کے لیے کوئی مخصوص عمل کرنے کا تیز طریقہ ہیں۔ یہ کمانڈ بٹن اعمال کے درج ذیل زمروں میں گروپ کیے گئے ہیں، جن میں شامل ہیں:",
+      "ps": "د فورم د کاروونکي دوستانه کولو بله لار دا ده چې فورم ته د حکم تڼۍ زیاتې شي. د حکم تڼۍ د فورم کاروونکي لپاره د یوې ځانګړې کړنې چټکه لار ده. دا د حکم تڼۍ د کړنو په لاندې ډلو کې ډلبندي شوي، چې شاملوي:"
+    },
+    {
+      "id": "cs11-s283-b1",
+      "en": "Record Navigation command buttons allow users move among the records in the database.",
+      "ur": "ریکارڈ نیویگیشن کمانڈ بٹن صارفین کو ڈیٹا بیس میں ریکارڈز کے درمیان حرکت کرنے کی اجازت دیتے ہیں۔",
+      "ps": "د ثبت د لارښوونې د حکم تڼۍ کاروونکو ته اجازه ورکوي چې په ډېټابېس کې د ثبتونو ترمنځ حرکت وکړي.",
+      "listGroup": "cb"
+    },
+    {
+      "id": "cs11-s283-b2",
+      "en": "Record Operation command buttons let users do a task like save or print a record.",
+      "ur": "ریکارڈ آپریشن کمانڈ بٹن صارفین کو ریکارڈ محفوظ یا پرنٹ کرنے جیسا کام کرنے دیتے ہیں۔",
+      "ps": "د ثبت د عملیاتو د حکم تڼۍ کاروونکو ته اجازه ورکوي چې داسې دنده ترسره کړي لکه د ثبت ساتل یا چاپ کول.",
+      "listGroup": "cb"
+    },
+    {
+      "id": "cs11-s283-b3",
+      "en": "Form Operation command buttons give the ability to quickly open or close a form, print the current form, and other actions.",
+      "ur": "فارم آپریشن کمانڈ بٹن فارم کو جلدی کھولنے یا بند کرنے، موجودہ فارم پرنٹ کرنے اور دیگر اعمال کی صلاحیت دیتے ہیں۔",
+      "ps": "د فورم د عملیاتو د حکم تڼۍ د فورم د چټک پرانیستلو یا تړلو، اوسني فورم چاپولو، او نورو کړنو وړتیا ورکوي.",
+      "listGroup": "cb"
+    },
+    {
+      "id": "cs11-s283-b4",
+      "en": "Report Operation command buttons offer the user a quick way to do a task such as preview or mail a report.",
+      "ur": "رپورٹ آپریشن کمانڈ بٹن صارف کو رپورٹ کا پیش منظر دیکھنے یا میل کرنے جیسا کام کرنے کا تیز طریقہ فراہم کرتے ہیں۔",
+      "ps": "د راپور د عملیاتو د حکم تڼۍ کاروونکي ته داسې دنده ترسره کولو چټکه لار برابروي لکه د راپور مخکتنه یا ټپال کول.",
+      "listGroup": "cb"
+    },
+    {
+      "id": "cs11-s283-h2",
+      "en": "To Add a Command Button to a Form",
+      "ur": "فارم میں کمانڈ بٹن شامل کرنا",
+      "ps": "فورم ته د حکم تڼۍ زیاتول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s283-b",
+      "en": "The following steps are used to add a command button to a form.",
+      "ur": "فارم میں کمانڈ بٹن شامل کرنے کے لیے درج ذیل اقدامات استعمال ہوتے ہیں۔",
+      "ps": "فورم ته د حکم تڼۍ د زیاتولو لپاره لاندې ګامونه کارول کېږي."
+    },
+    {
+      "id": "cs11-s283-c",
+      "en": "1. Click the Button command in the Controls group on the Ribbon, as shown in Figure 8.23.",
+      "ur": "۱۔ ربن پر کنٹرولز گروپ میں بٹن کمانڈ پر کلک کریں، جیسا کہ شکل ۸.۲۳ میں دکھایا گیا ہے۔",
+      "ps": "۱. په ربن د Controls ډله کې د Button حکم کلیک کړئ، لکه څنګه چې ۸.۲۳ انځور کې ښودل شوی."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s283-c4",
+        "cs11-s283-c5",
+        "cs11-s283-h1",
+        "cs11-s283-a",
+        "cs11-s283-b1",
+        "cs11-s283-b2",
+        "cs11-s283-b3",
+        "cs11-s283-b4",
+        "cs11-s283-h2",
+        "cs11-s283-b",
+        "cs11-s283-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 274: the last two steps of adding controls (continuing from page 273), “a. Creating Command Buttons” with its paragraph and four categories and “To Add a Command Button to a Form” with the first step (Figure 8.23 follows on the next page). The words Customize, Properties screen, Properties, Data, screen, control source, command buttons, Record Navigation, Record Operation, Form Operation, Report Operation, Button, Controls and Ribbon are printed in bold. The right edge of the page is cut. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:06:08.195053+00:00",
+    "scope": "Scan 283 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

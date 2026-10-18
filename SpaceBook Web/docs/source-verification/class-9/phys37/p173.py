@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Unit 6 exercise — multiple choice questions 1–9'
+SECTIONS = [
+    ('ex6-mcq', ('EXERCISE — MULTIPLE CHOICE QUESTIONS — Choose the best possible answer:', 'مشق — کثیر الانتخابی سوالات — بہترین ممکنہ جواب منتخب کریں:', 'تمرین — څو ځوابه پوښتنې — غوره ممکن ځواب وټاکئ:'), [
+        ('ul', [
+            ('1. Work done will be zero when the angle between force and displacement is A. 30° B. 45° C. 60° D. 90°', '1. کیا گیا کام صفر ہوگا جب قوت اور ہٹاؤ کے درمیان زاویہ ہو A. 30° B. 45° C. 60° D. 90°', '1. ترسره شوی کار به صفر وي کله چې د قوت او بې ځایه کېدنې ترمنځ زاویه وي A. 30° B. 45° C. 60° D. 90°'),
+            ('2. 30 N force is exerted and the trolley moves a distance of 5 m in the direction of the force, the work done is A. 6 J B. 25 J C. 150 J D. 0.17 N', '2. 30 N قوت لگائی جاتی ہے اور ٹرالی قوت کی سمت میں 5 m فاصلہ طے کرتی ہے؛ کیا گیا کام ہے A. 6 J B. 25 J C. 150 J D. 0.17 N', '2. 30 N قوت اچول کېږي او ټرالۍ د قوت په لوري 5 m واټن وهي؛ ترسره شوی کار دی A. 6 J B. 25 J C. 150 J D. 0.17 N'),
+            ('3. If the speed of a car decreases by half, The kinetic energy change by factor A. 4 B. 2 C. 1/2 D. 1/4', '3. اگر گاڑی کی رفتار آدھی ہو جائے تو حرکی توانائی کس عامل سے بدلتی ہے A. 4 B. 2 C. 1/2 D. 1/4', '3. که د موټر سرعت نیمایي شي، حرکي انرژي په کوم ضریب بدلېږي A. 4 B. 2 C. 1/2 D. 1/4'),
+            ('4. An object of mass 10 kg is lifted vertically through a height of 5 m. The gravitational potential energy gained by the object is A. 0.5 J B. 2 J C. 50 J D. 490 J', '4. 10 kg کمیت کا جسم عموداً 5 m بلندی تک اٹھایا جاتا ہے۔ جسم کی حاصل کردہ تجاذبی مخفی توانائی ہے A. 0.5 J B. 2 J C. 50 J D. 490 J', '4. د 10 kg کتلې جسم عمودي 5 m لوړوالي ته پورته کېږي. د جسم ترلاسه کړې د جاذبې ذخیروي انرژي ده A. 0.5 J B. 2 J C. 50 J D. 490 J'),
+            ('5. If a petrol engine does 20 J of useful work for every 100 J of energy supplied to it, then its efficiency is A. 80% B. 60% C. 40% D. 20%', '5. اگر پٹرول انجن اسے دی گئی ہر 100 J توانائی پر 20 J مفید کام کرے تو اس کی کارکردگی ہے A. 80% B. 60% C. 40% D. 20%', '5. که پټرولي انجن ورته د ورکړل شوې هرې 100 J انرژۍ پر وړاندې 20 J ګټور کار وکړي، موثریت یې دی A. 80% B. 60% C. 40% D. 20%'),
+            ('6. kWh is unit for A. Energy B. Power C. Efficiency D. None', '6. kWh اکائی ہے A. توانائی B. طاقت C. کارکردگی D. کوئی نہیں', '6. kWh واحد دی د A. انرژي B. توان C. موثریت D. هېڅ'),
+            ('7. 1 hp = A. 476 W B. 550 W C. 746 W D. 1 ft.lb/s', '7. 1 hp = A. 476 W B. 550 W C. 746 W D. 1 ft.lb/s', '7. 1 hp = A. 476 W B. 550 W C. 746 W D. 1 ft.lb/s'),
+            ('8. Hira weighing 500 N takes 90 s to reach the top of a hill 18 m high. Her average muscle power is A. 2500 W B. 100 W C. 32.8 W D. 3.24 W', '8. 500 N وزنی حرا 18 m اونچی پہاڑی کی چوٹی تک پہنچنے میں 90 s لیتی ہے۔ اس کی اوسط عضلاتی طاقت ہے A. 2500 W B. 100 W C. 32.8 W D. 3.24 W', '8. حرا چې وزن یې 500 N دی د 18 m لوړې غونډۍ سر ته په 90 s کې رسېږي. د هغې منځنی عضلي توان دی A. 2500 W B. 100 W C. 32.8 W D. 3.24 W'),
+            ('9. A machine is able to lift 200 N of concrete slab vertically up to a height of 30 m above the ground in 50 s. The average power of the machine is A. 1.33 W B. 60 W C. 120 W D. 6000 W', '9. ایک مشین 200 N کا کنکریٹ سلیب 50 s میں زمین سے 30 m بلندی تک عموداً اٹھا سکتی ہے۔ مشین کی اوسط طاقت ہے A. 1.33 W B. 60 W C. 120 W D. 6000 W', '9. یو ماشین د 200 N کانکرېټي تخته په 50 s کې له ځمکې 30 m لوړوالي ته عمودي پورته کولی شي. د ماشین منځنی توان دی A. 1.33 W B. 60 W C. 120 W D. 6000 W'),
+        ]),
+    ]),
+]

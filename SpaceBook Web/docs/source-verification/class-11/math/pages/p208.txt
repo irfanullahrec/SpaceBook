@@ -1,0 +1,31 @@
+@printed 208
+@issue Printed Example 2(ii) writes the product 50·251; the sum of the first 50 integers is 50·51/2 = 1275, which is what the printed value 1265 (= 1275 − 10) uses. Preserved as printed and clarified separately.
+@deco Unit-running header, folio and decorative footer band excluded
+m $=\dfrac{k(k+1)}{2}+\dfrac{2(k+1)}{2}=\dfrac{k(k+1)+2(k+1)}{2}$
+m $=\dfrac{(k+2)(k+1)}{2}=\dfrac{(k+1)(k+2)}{2}$
+p Which is just the form taken by the proposition when $n=k+1$. So the above proposition is true for $n=k+1$ and thus by the principle of mathematical induction, it is true for all positive integers $n$. || یہی وہ شکل ہے جو قضیہ $n=k+1$ کے لیے اختیار کرتا ہے۔ لہٰذا مذکورہ قضیہ $n=k+1$ کے لیے درست ہے اور یوں ریاضیاتی استقرا کے اصول سے یہ تمام مثبت صحیح اعداد $n$ کے لیے درست ہے۔ || دا همغه بڼه ده چې قضیه د $n=k+1$ لپاره اخلي. نو پورتنۍ قضیه د $n=k+1$ لپاره سمه ده او په دې توګه د ریاضیاتي استقرا د اصل له مخې د ټولو مثبتو صحیحو عددونو $n$ لپاره سمه ده.
+endexample
+example 2 | (i) Find $2+4+6+\cdots+500$ (ii) Find $5+6+7+8+\cdots+50$ (iii) Find an integer $h\ge2$, find $1+2+3+\cdots+(h-1)$ || (i) $2+4+6+\cdots+500$ معلوم کریں (ii) $5+6+7+8+\cdots+50$ معلوم کریں (iii) ایک صحیح عدد $h\ge2$ کے لیے $1+2+3+\cdots+(h-1)$ معلوم کریں || (i) $2+4+6+\cdots+500$ پیدا کړئ (ii) $5+6+7+8+\cdots+50$ پیدا کړئ (iii) یو صحیح عدد $h\ge2$ لپاره $1+2+3+\cdots+(h-1)$ پیدا کړئ
+p **Solution:** (i) || **حل:** (i) || **حل:** (i)
+m $2+4+6+\cdots+500=2\cdot(1+2+3+\cdots+250)$
+m $=2\cdot\left(\dfrac{250\cdot251}{2}\right)$
+p (by applying the formula for the sum of the first $n$ with $n=250$) || (پہلے $n$ کے مجموعے کا کلیہ $n=250$ کے ساتھ لگانے سے) || (د لومړیو $n$ د مجموعې فورمول په $n=250$ باندې په کارولو سره)
+m $=62{,}750$
+p (ii) || (ii) || (ii)
+m $5+6+7+8+\cdots+50=(1+2+3+\cdots+50)-(1+2+3+4)$
+m $=\dfrac{50\cdot251}{2}-10$
+p (by applying the formula for the sum of the first $n$ with $n=50$) || (پہلے $n$ کے مجموعے کا کلیہ $n=50$ کے ساتھ لگانے سے) || (د لومړیو $n$ د مجموعې فورمول په $n=50$ باندې په کارولو سره)
+m $=1265$
+p (iii) || (iii) || (iii)
+m $1+2+3+\cdots+(h-1)=\dfrac{(h-1)\cdot[(h-1)+1]}{2}=\dfrac{(h-1)\cdot h}{2}$
+p (by applying the formula for the sum of the first $n$ with $n=h-1$) || (پہلے $n$ کے مجموعے کا کلیہ $n=h-1$ کے ساتھ لگانے سے) || (د لومړیو $n$ د مجموعې فورمول په $n=h-1$ باندې په کارولو سره)
+box note | SpaceBook clarification || اسپیس بک کی وضاحت || د سپېس بک وضاحت
+p In Example 2(ii) the printed product $50\cdot251$ should read $50\cdot51$: $\dfrac{50\cdot51}{2}-10=1275-10=1265$. The printed final value 1265 is correct. || مثال 2(ii) میں مطبوعہ حاصل ضرب $50\cdot251$ دراصل $50\cdot51$ ہونا چاہیے: $\dfrac{50\cdot51}{2}-10=1275-10=1265$۔ مطبوعہ آخری قیمت 1265 درست ہے۔ || په 2(ii) مثال کې چاپ شوی ضرب $50\cdot251$ باید $50\cdot51$ وي: $\dfrac{50\cdot51}{2}-10=1275-10=1265$. چاپ شوی وروستی ارزښت 1265 سم دی.
+endbox
+endexample
+example 3 | Prove that $1^2+2^2+3^2+\cdots+n^2=\dfrac{n(n+1)(2n+1)}{6}$ || ثابت کریں کہ $1^2+2^2+3^2+\cdots+n^2=\dfrac{n(n+1)(2n+1)}{6}$ || ثابته کړئ چې $1^2+2^2+3^2+\cdots+n^2=\dfrac{n(n+1)(2n+1)}{6}$
+p **Solution:** **Step 1.** For $n=1$, the proposition becomes || **حل:** **مرحلہ 1۔** $n=1$ کے لیے قضیہ یہ بن جاتا ہے || **حل:** **لومړی ګام.** د $n=1$ لپاره قضیه داسې کېږي
+m $1^2=1=\dfrac{1(1+1)(2\cdot1+1)}{6}=\dfrac{1\cdot2\cdot3}{6}=1.$
+p Thus it is true for $n=1$. || یوں یہ $n=1$ کے لیے درست ہے۔ || په دې توګه دا د $n=1$ لپاره سمه ده.
+p **Step 2.** Suppose the proposition is true for $n=k$, then || **مرحلہ 2۔** فرض کریں قضیہ $n=k$ کے لیے درست ہے، تب || **دویم ګام.** فرض کړئ قضیه د $n=k$ لپاره سمه ده، نو
+m $1^2+2^2+3^2+\cdots+k^2=\dfrac{k(k+1)(2k+1)}{6}\qquad\text{(i)}$

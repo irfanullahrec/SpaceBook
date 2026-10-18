@@ -1,0 +1,170 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s233-p224",
+  "title": "7.4.1 Elements of Entity Relationship Diagram; a. Entity; b. Attribute; c. Relationship — start",
+  "headingUrdu": "۷.۴.۱ انٹیٹی ریلیشن شپ ڈایاگرام کے عناصر؛ الف۔ انٹیٹی؛ ب۔ ایٹریبیوٹ؛ ج۔ ریلیشن شپ — آغاز",
+  "headingPashto": "۷.۴.۱ د وجود-اړیکې انځور عناصر؛ الف. وجود؛ ب. خاصیت؛ ج. اړیکه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 233,
+    "printedPage": "224"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s233-h1",
+      "en": "7.4.1 Elements of Entity Relationship Diagram",
+      "ur": "۷.۴.۱ انٹیٹی ریلیشن شپ ڈایاگرام کے عناصر",
+      "ps": "۷.۴.۱ د وجود-اړیکې انځور عناصر",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s233-h2",
+      "en": "a. Entity",
+      "ur": "الف۔ انٹیٹی",
+      "ps": "الف. وجود",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s233-a",
+      "en": "An entity is a person, place, object, event or concept in user environment about which the organization wishes to maintain data. Examples of entities are as under:",
+      "ur": "انٹیٹی صارف کے ماحول میں کوئی شخص، جگہ، چیز، واقعہ یا تصور ہے جس کے بارے میں ادارہ ڈیٹا برقرار رکھنا چاہتا ہے۔ انٹیٹیز کی مثالیں درج ذیل ہیں:",
+      "ps": "وجود د کاروونکي په چاپېریال کې یو کس، ځای، څیز، پېښه یا مفکوره ده چې د هغې په اړه اداره غواړي ډېټا وساتي. د وجودونو بېلګې لاندې دي:"
+    },
+    {
+      "id": "cs11-s233-e1",
+      "en": "PERSON: employee, student, patient",
+      "ur": "شخص: ملازم، طالب علم، مریض",
+      "ps": "کس (PERSON): کارکوونکی، زده کوونکی، ناروغ",
+      "listGroup": "ent"
+    },
+    {
+      "id": "cs11-s233-e2",
+      "en": "PLACE: city, state, country",
+      "ur": "جگہ: شہر، ریاست، ملک",
+      "ps": "ځای (PLACE): ښار، ایالت، هېواد",
+      "listGroup": "ent"
+    },
+    {
+      "id": "cs11-s233-e3",
+      "en": "OBJECT: machine, building, automobile",
+      "ur": "چیز: مشین، عمارت، گاڑی",
+      "ps": "څیز (OBJECT): ماشین، ودانۍ، موټر",
+      "listGroup": "ent"
+    },
+    {
+      "id": "cs11-s233-e4",
+      "en": "EVENT: sale, admission, exams",
+      "ur": "واقعہ: فروخت، داخلہ، امتحانات",
+      "ps": "پېښه (EVENT): پلور، داخله، امتحانونه",
+      "listGroup": "ent"
+    },
+    {
+      "id": "cs11-s233-e5",
+      "en": "CONCEPT: account, course, work center",
+      "ur": "تصور: اکاؤنٹ، کورس، ورک سینٹر",
+      "ps": "مفکوره (CONCEPT): حساب، کورس، کاري مرکز",
+      "listGroup": "ent"
+    },
+    {
+      "id": "cs11-s233-h3",
+      "en": "Entity Instance",
+      "ur": "انٹیٹی انسٹینس",
+      "ps": "د وجود بېلګه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s233-b",
+      "en": "A single occurrence of an entity is called entity instance. For example the Instances of Entity STUDENT are as under:",
+      "ur": "انٹیٹی کے واحد وقوع کو انٹیٹی انسٹینس کہتے ہیں۔ مثلاً انٹیٹی اسٹوڈنٹ کے انسٹینسز درج ذیل ہیں:",
+      "ps": "د وجود یوې پېښې ته د وجود بېلګه ویل کېږي. د بېلګې په توګه د STUDENT وجود بېلګې لاندې دي:"
+    },
+    {
+      "id": "cs11-s233-i1",
+      "en": "RollNo: 454, Name: Ahmad Ali, Address: Peshawar, PhoneNo: 0454450454",
+      "ur": "رول نمبر: ۴۵۴، نام: احمد علی، پتہ: پشاور، فون نمبر: ۰۴۵۴۴۵۰۴۵۴",
+      "ps": "رول شمېره: ۴۵۴، نوم: احمد علي، پته: پېښور، د تلیفون شمېره: ۰۴۵۴۴۵۰۴۵۴",
+      "listGroup": "ei"
+    },
+    {
+      "id": "cs11-s233-i2",
+      "en": "RollNo: 343, Name: Nauman, Address: Mardan, PhoneNo: 0445666454",
+      "ur": "رول نمبر: ۳۴۳، نام: نعمان، پتہ: مردان، فون نمبر: ۰۴۴۵۶۶۶۴۵۴",
+      "ps": "رول شمېره: ۳۴۳، نوم: نعمان، پته: مردان، د تلیفون شمېره: ۰۴۴۵۶۶۶۴۵۴",
+      "listGroup": "ei"
+    },
+    {
+      "id": "cs11-s233-h4",
+      "en": "b. Attribute",
+      "ur": "ب۔ ایٹریبیوٹ",
+      "ps": "ب. خاصیت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s233-c",
+      "en": "An attribute is a property or characteristic of an entity that is of interest to the organization. Following are some attributes:",
+      "ur": "ایٹریبیوٹ کسی انٹیٹی کی ایسی خاصیت یا خصوصیت ہے جو ادارے کے لیے دلچسپی کی حامل ہو۔ درج ذیل کچھ ایٹریبیوٹس ہیں:",
+      "ps": "خاصیت د یوه وجود هغه ملکیت یا ځانګړتیا ده چې ادارې ته ګټوره وي. لاندې ځینې خاصیتونه دي:"
+    },
+    {
+      "id": "cs11-s233-a1",
+      "en": "STUDENT: student no, name, address, phone no",
+      "ur": "اسٹوڈنٹ: اسٹوڈنٹ نمبر، نام، پتہ، فون نمبر",
+      "ps": "زده کوونکی (STUDENT): د زده کوونکي شمېره، نوم، پته، د تلیفون شمېره",
+      "listGroup": "attr"
+    },
+    {
+      "id": "cs11-s233-a2",
+      "en": "EMPLOYEE: employee no, name address, skill",
+      "ur": "ایمپلائی: ایمپلائی نمبر، نام پتہ، مہارت",
+      "ps": "کارکوونکی (EMPLOYEE): د کارکوونکي شمېره، نوم پته، مهارت",
+      "listGroup": "attr"
+    },
+    {
+      "id": "cs11-s233-h5",
+      "en": "c. Relationship",
+      "ur": "ج۔ ریلیشن شپ",
+      "ps": "ج. اړیکه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s233-d",
+      "en": "A meaningful association among entities is called a relationship. A relationship describes how the data is shared between entities. Relationships are represented by a diamond symbol connected to the related entities.",
+      "ur": "انٹیٹیز کے درمیان بامعنی تعلق کو ریلیشن شپ کہتے ہیں۔ ریلیشن شپ بیان کرتی ہے کہ انٹیٹیز کے درمیان ڈیٹا کیسے شیئر ہوتا ہے۔ ریلیشن شپس کو متعلقہ انٹیٹیز سے جڑی ہیرے کی علامت سے ظاہر کیا جاتا ہے۔",
+      "ps": "د وجودونو ترمنځ مانادار تړاو ته اړیکه ویل کېږي. اړیکه بیانوي چې د وجودونو ترمنځ ډېټا څنګه ګډېږي. اړیکې د اړوندو وجودونو سره نښلول شوي د الماس سمبول په واسطه ښودل کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s233-h1",
+        "cs11-s233-h2",
+        "cs11-s233-a",
+        "cs11-s233-e1",
+        "cs11-s233-e2",
+        "cs11-s233-e3",
+        "cs11-s233-e4",
+        "cs11-s233-e5",
+        "cs11-s233-h3",
+        "cs11-s233-b",
+        "cs11-s233-i1",
+        "cs11-s233-i2",
+        "cs11-s233-h4",
+        "cs11-s233-c",
+        "cs11-s233-a1",
+        "cs11-s233-a2",
+        "cs11-s233-h5",
+        "cs11-s233-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 224: the banner “7.4.1 Elements of Entity Relationship Diagram”, “a. Entity” with five examples, “Entity Instance” with two instances (printed in two columns), “b. Attribute” with two examples and “c. Relationship” with its first paragraph. In the printed instance list the Pashto and Urdu digits follow the printed values. The left edge of the scan is cut. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:48:38.333913+00:00",
+    "scope": "Scan 233 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

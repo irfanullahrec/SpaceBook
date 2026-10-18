@@ -1,0 +1,37 @@
+@printed 62
+@status lesson
+### پروگرام 3.13 میں فلوٹ فارمیٹ سپیسیفائر کا استعمال دکھایا گیا ہے۔ || Program 3.13 shows the use of the float format specifier || پروګرام ۳.۱۳ د float فارمېټ مشخص کوونکي کارونه ښيي
+m #include<stdio.h>
+m void main()
+m #include<conio.h>
+m void main()
+m {
+m int a;
+m float b;
+m a = 15;
+m b = a / 2;
+m printf("a=%d\n",a);        // Here %d will be replaced with the value of a
+m printf("b=%f\n",b);        // Here %f will be replaced with the value of b
+m printf("b=%e\n",b);        // Here %e will be replaced with the value of b //in exponential
+m }
+box info | آؤٹ پُٹ || Output || Output
+m a=15
+m b=7,500000
+m b=7.5e+0
+endbox
+@issue Program 3.13 has several errors: (1) "void main()" is printed twice, once before #include<conio.h>, which will not compile — the first one should be deleted; (2) a/2 is integer division (15/2 = 7), so b = 7.000000, not 7.5 — write b = a/2.0; (3) the output "7,500000" has a comma instead of a decimal point; (4) %e prints 6 decimals, e.g. 7.500000e+00 (or 7.000000e+00 with the code as printed), not "7.5e+0".
+### کریکٹر فارمیٹ سپیسیفائر %c (Character Format Specifier) || The character format specifier %c || د توري فارمېټ مشخص کوونکی %c
+p کریکٹر فارمیٹ سپیسیفائر ایک وقت میں صرف ایک کریکٹر کو اِن پُٹ کرنے کے لیے استعمال کیا جاتا ہے۔ پروگرام 3.14 میں %c کے استعمال کو دکھایا گیا ہے۔ || The character format specifier is used to input only one character at a time. Program 3.14 shows the use of %c. || د توري فارمېټ مشخص کوونکی په یو وخت کې یوازې د یوه توري د داخلولو لپاره کارېږي. پروګرام ۳.۱۴ د %c کارونه ښيي.
+### پروگرام 3.14 || Program 3.14 || پروګرام ۳.۱۴
+m #include<stdio.h>
+m void main()
+m {
+m     char ch='A';
+m     printf("Character=%c\n",ch);     // Here %c will be replaced with the value of ch
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Character=A
+endbox
+@sec 3-1-5 | 3.1.5 اسکیپ سیکونسز || 3.1.5 Escape sequences || ۳.۱.۵ اسکیپ سیکونسونه
+### 3.1.5 اسکیپ سیکونسز (Escape Sequences) || 3.1.5 Escape sequences || ۳.۱.۵ اسکیپ سیکونسونه (Escape Sequences)
+p اسکیپ سیکونسز ایسے خاص حروف ہیں جو پرنٹ تو نہیں ہوتے لیکن آؤٹ پُٹ کی شکل میں ترمیم کرنے کے لئے استعمال ہوتے ہیں۔ یہ حرفوں کا مجموعہ ہیں جو بیک سلیش \ کے ساتھ شروع ہوتے ہیں، اس کے بعد حرف یا خاص علامت ہوتی ہے۔ آؤٹ پُٹ کو فارمیٹ کرنے کے لئے اسکیپ سیکونسز کا استعمال کیا جاتا ہے۔ یہ اکیلے یا سٹرنگ کانسٹنٹ کے درمیان استعمال ہوتے ہیں۔ انہیں ہمیشہ دوہرے کاموں میں بند کیا جاتا ہے۔ آؤٹ پُٹ سٹرنگ میں کہیں بھی اسکیپ سیکونسز استعمال کی جا سکتی ہے۔ || Escape sequences are special characters that are not printed but are used to change the form of the output. They are combinations of characters that begin with a backslash \, followed by a letter or special symbol. Escape sequences are used to format output. They are used alone or inside a string constant, and are always enclosed in double quotes. An escape sequence can be used anywhere in an output string. || اسکیپ سیکونسونه داسې ځانګړي توري دي چې نه چاپېږي خو د output د بڼې د بدلولو لپاره کارېږي. د تورو هغه ټولګې دي چې په بېک سلیش \ پیلېږي او وروسته یې توری یا ځانګړې نښه راځي. د output د فارمېټ کولو لپاره کارېږي. یوازې یا د سټرنګ ثابت په منځ کې کارېږي او تل په دوه ګونو نښو کې تړل کېږي. په output سټرنګ کې هر ځای کارېدای شي.

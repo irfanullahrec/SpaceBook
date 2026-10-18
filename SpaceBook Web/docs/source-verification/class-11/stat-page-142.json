@@ -1,0 +1,514 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s142-skewness-7",
+  "title": "Example 3.28: Bowley working (Q1, Q2 start)",
+  "headingUrdu": "مثال 3.28: باؤلے کا حل (Q1، Q2 کا آغاز)",
+  "headingPashto": "بېلګه 3.28: د Bowley حل (Q1، د Q2 پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 142,
+    "printedPage": "134"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s142-a1",
+      "en": "Here n = 1000 is even therefore",
+      "ur": "یہاں n = 1000 جفت ہے اس لیے",
+      "ps": "دلته n = 1000 جفت دی نو",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-a2",
+      "en": "⇒ Q1 lies in the group (29.5 – 34.5)",
+      "ur": "⇒ Q1 گروہ (29.5 – 34.5) میں واقع ہے",
+      "ps": "⇒ Q1 په ګروپ (29.5 – 34.5) کې پرته ده",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-a3",
+      "en": "⇒ Q2 = lies in the group (39.5 – 44.5)",
+      "ur": "⇒ Q2 = گروہ (39.5 – 44.5) میں واقع ہے",
+      "ps": "⇒ Q2 = په ګروپ (39.5 – 44.5) کې پرته ده",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-28",
+      "sourceGap": {
+        "note": "The working continues on the next page (Q3 and the value of Sk)."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s142-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s142-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s142-a3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s142-q1a",
+      "latex": "Q_1=\\left(\\dfrac{\\sum f}{4}\\right)\\text{th value}=\\left(\\dfrac{1000}{4}\\right)\\text{th value}=250\\text{th value}",
+      "accessible": "Q1 = (Σf/4)th value = (1000/4)th value = 250th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q1 = (Σf/4)th value = (1000/4)th value = 250th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q1 = (Σf/4)th value = (1000/4)th value = 250th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q1 = (Σf/4)th value = (1000/4)th value = 250th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q1b",
+      "latex": "\\therefore\\ Q_1=l_1+\\dfrac{h}{f}\\left(\\dfrac{\\sum f}{4}-c\\right)",
+      "accessible": "∴ Q1 = l1 + (h/f)(Σf/4 − c)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Q1 = l1 + (h/f)(Σf/4 − c)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Q1 = l1 + (h/f)(Σf/4 − c)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Q1 = l1 + (h/f)(Σf/4 − c)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q1c",
+      "latex": "=29.5+\\dfrac{5}{218}(250-50)",
+      "accessible": "= 29.5 + (5/218)(250 − 50)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 29.5 + (5/218)(250 − 50)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 29.5 + (5/218)(250 − 50)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 29.5 + (5/218)(250 − 50)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q1d",
+      "latex": "=29.5+\\dfrac{1000}{218}",
+      "accessible": "= 29.5 + 1000/218",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 29.5 + 1000/218"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 29.5 + 1000/218"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 29.5 + 1000/218"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q1e",
+      "latex": "=29.5+4.59",
+      "accessible": "= 29.5 + 4.59",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 29.5 + 4.59"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 29.5 + 4.59"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 29.5 + 4.59"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q1f",
+      "latex": "=34.09",
+      "accessible": "= 34.09",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 34.09"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 34.09"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 34.09"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s142-q2a",
+      "latex": "Q_2=2\\left(\\dfrac{\\sum f}{4}\\right)\\text{th value}=\\left(\\dfrac{1000}{2}\\right)\\text{th value}=500\\text{ th value}",
+      "accessible": "Q2 = 2(Σf/4)th value = (1000/2)th value = 500 th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q2 = 2(Σf/4)th value = (1000/2)th value = 500 th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q2 = 2(Σf/4)th value = (1000/2)th value = 500 th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q2 = 2(Σf/4)th value = (1000/2)th value = 500 th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-28"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.28: classes, boundaries, f, c.f",
+      "captionUrdu": "مثال 3.28: طبقات، حدود، f، c.f",
+      "captionPashto": "بېلګه 3.28: ټولګي، حدود، f، c.f",
+      "headers": [
+        {
+          "en": "Classes",
+          "ur": "طبقات",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "طبقاتی حدود",
+          "ps": "د ټولګیو حدود"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "19.5 – 24.5",
+            "ur": "19.5 – 24.5",
+            "ps": "19.5 – 24.5"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          }
+        ],
+        [
+          {
+            "en": "25 – 29",
+            "ur": "25 – 29",
+            "ps": "25 – 29"
+          },
+          {
+            "en": "24.5 – 29.5",
+            "ur": "24.5 – 29.5",
+            "ps": "24.5 – 29.5"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          }
+        ],
+        [
+          {
+            "en": "30 – 34",
+            "ur": "30 – 34",
+            "ps": "30 – 34"
+          },
+          {
+            "en": "29.5 – 34.5",
+            "ur": "29.5 – 34.5",
+            "ps": "29.5 – 34.5"
+          },
+          {
+            "en": "218",
+            "ur": "218",
+            "ps": "218"
+          },
+          {
+            "en": "268",
+            "ur": "268",
+            "ps": "268"
+          }
+        ],
+        [
+          {
+            "en": "35 – 39",
+            "ur": "35 – 39",
+            "ps": "35 – 39"
+          },
+          {
+            "en": "34.5 – 39.5",
+            "ur": "34.5 – 39.5",
+            "ps": "34.5 – 39.5"
+          },
+          {
+            "en": "227",
+            "ur": "227",
+            "ps": "227"
+          },
+          {
+            "en": "495",
+            "ur": "495",
+            "ps": "495"
+          }
+        ],
+        [
+          {
+            "en": "40 – 44",
+            "ur": "40 – 44",
+            "ps": "40 – 44"
+          },
+          {
+            "en": "39.5 – 44.5",
+            "ur": "39.5 – 44.5",
+            "ps": "39.5 – 44.5"
+          },
+          {
+            "en": "235",
+            "ur": "235",
+            "ps": "235"
+          },
+          {
+            "en": "730",
+            "ur": "730",
+            "ps": "730"
+          }
+        ],
+        [
+          {
+            "en": "45 – 49",
+            "ur": "45 – 49",
+            "ps": "45 – 49"
+          },
+          {
+            "en": "44.5 – 49.5",
+            "ur": "44.5 – 49.5",
+            "ps": "44.5 – 49.5"
+          },
+          {
+            "en": "216",
+            "ur": "216",
+            "ps": "216"
+          },
+          {
+            "en": "946",
+            "ur": "946",
+            "ps": "946"
+          }
+        ],
+        [
+          {
+            "en": "50 – 54",
+            "ur": "50 – 54",
+            "ps": "50 – 54"
+          },
+          {
+            "en": "49.5 – 54.5",
+            "ur": "49.5 – 54.5",
+            "ps": "49.5 – 54.5"
+          },
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-28"
+    }
+  ],
+  "sourceNote": "Printed page 134. The table at the top is the grouped table used for the Bowley method. A dark artefact at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:59:04.283128+00:00",
+    "scope": "Scan 142 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,40 @@
+@printed 58
+@status lesson
+m     ch= getchar();
+m     printf("\n");
+m     putchar(ch);
+m }
+### gets() فنکشن || The gets() function || gets() فنکشن
+p gets() فنکشن اس قابل ہے کہ یہ کریکٹر سٹرنگ کے درمیان خالی جگہ (White Spaces) کو بھی بطور سٹرنگ لیتا ہے۔ gets فنکشن اسٹرنگ کی ایک لائن یا حرفوں کی ترتیب کو پڑھتا ہے جب تک کہ یوزر Enter key نہ دبائے۔ اس کی عمومی شکل درج ذیل ہے۔ || The gets() function is able to take the blank spaces (white spaces) inside a character string as part of the string. gets reads a line of string, or a sequence of characters, until the user presses the Enter key. Its general form is: || gets() فنکشن کولای شي د تورو د سټرنګ په منځ کې تشې (White Spaces) هم د سټرنګ برخه واخلي. gets د سټرنګ یوه کرښه یا د تورو لړۍ لولي تر هغه چې کاروونکی Enter key کېښکاږي. عمومي بڼه یې دا ده:
+p سائنٹکس: || Syntax: || ترکیب:
+m gets(Array_Name);
+### پروگرام 3.9 || Program 3.9 || پروګرام ۳.۹
+m #include<stdio.h>
+m void main()
+m {
+m     char name[20];        // Here [20] specifies the size of the string
+m     printf("Enter your Name: ");
+m     gets(name);
+m     puts(name);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter your Name: Muhammad Khalid
+m Muhammad Khalid
+endbox
+p gets() فنکشن خالی جگہ (White space) کے حروف کے ساتھ ایک سٹرنگ لیتا ہے۔ اس صورت میں، پروگرام چلاتے وقت کی بورڈ سے اسٹرنگ اِن پُٹ کی جائے گی اور جب یوزر Enter بٹن دبائے گا تب اِن پُٹ مکمل ہو گی۔ scanf() اور gets() کے فنکشنز میں یہ فرق ہے کہ scanf() تمام حروف کو اس وقت تک پڑھتا ہے جب تک کہ space نہیں آ جاتا یعنی ٹیب یا نئی لائن کا سامنا نہ کرنا پڑے، جب کہ gets() خالی جگہوں اور ٹیب سمیت سب کچھ پڑھے گا جب تک کہ یوزر Enter key نہیں دباتا۔ || The gets() function takes a string together with white-space characters. Here the string is input from the keyboard while the program runs, and the input is complete when the user presses the Enter key. The difference between scanf() and gets() is that scanf() reads characters only until it meets a space, i.e. a tab or new line, whereas gets() reads everything, including spaces and tabs, until the user presses the Enter key. || gets() فنکشن د تشو (White space) تورو سره سټرنګ اخلي. په دې حالت کې د پروګرام د چلېدو پر مهال سټرنګ له کیبورډ داخلېږي او کله چې کاروونکی Enter کېښکاږي input بشپړېږي. د scanf() او gets() توپیر دا دی چې scanf() توري تر هغه لولي چې تشه، ټب یا نوې کرښه ورته مخې ته نه وي راغلې، خو gets() تشې او ټبونه ټول لولي تر هغه چې کاروونکی Enter key کېښکاږي.
+@issue gets() has no limit on input length and can overflow the array (here 20 characters); it was removed from the C11 standard. fgets(name, 20, stdin) is the safe replacement.
+### پروگرام 3.10 کسی شخص کا نام اور عمر (سالوں میں) حاصل کرنے کے لئے ایک پروگرام لکھیں۔ مہینوں میں عمر کا حساب لگائیں اور مہینوں میں اس شخص کی عمر پرنٹ کریں۔ || Program 3.10 Write a program to get a person's name and age (in years), calculate the age in months and print the person's age in months || پروګرام ۳.۱۰ داسې پروګرام ولیکئ چې د یوه کس نوم او عمر (په کلونو) واخلي، عمر په میاشتو وشمېري او په میاشتو یې چاپ کړي
+m #include<stdio.h>
+m void main( )
+m {
+m     int age,age_mon;
+m     char name[40];
+m     printf("Enter your Name: ");
+m     gets(name);
+m     printf("\nEnter your Age: ");
+box info | آؤٹ پُٹ || Output || Output
+m Enter your Name: Muhammad Anwar
+m Enter your Age: 16
+m Age in months = 12
+endbox
+@issue The output box shows "Age in months = 12" for an age of 16 years; 16 × 12 = 192 months, so the printed output is wrong (see the program's continuation on the next page).

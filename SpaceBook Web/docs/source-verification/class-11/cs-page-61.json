@@ -1,0 +1,98 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s061-p052",
+  "title": "SDRAM and DDR SDRAM (end); c. ROM (Read Only Memory) — start",
+  "headingUrdu": "ایس ڈی ریم اور ڈی ڈی آر ایس ڈی ریم (اختتام)؛ ج۔ روم (ریڈ اونلی میموری) — آغاز",
+  "headingPashto": "SDRAM او DDR SDRAM (پای)؛ ج. ROM (یوازې لوستلو حافظه) — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 61,
+    "printedPage": "52"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s061-a",
+      "en": "system data bus. Therefore, it can operate at much greater speeds than non-synchronous RAM.",
+      "ur": "سسٹم ڈیٹا بس کے ساتھ ہم وقت چلتی ہے۔ اس لیے یہ غیر ہم وقت ریم کے مقابلے میں بہت زیادہ رفتار سے کام کر سکتی ہے۔",
+      "ps": "د سیسټم ډېټا بس سره همغږې کار کوي. نو دا له ناهمغږې RAM نه ډیر لوړ ګړندیتوب سره کار کولای شي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s061-b",
+      "en": "DDR SDRAM (Double Data Rate SDRAM) is an improved SDRAM which allows a computer to transfer data at twice the speed. It has improved memory clock speed as compared to simple SDRAM. It reads or writes two consecutive words per clock cycle.",
+      "ur": "ڈی ڈی آر ایس ڈی ریم (ڈبل ڈیٹا ریٹ ایس ڈی ریم) ایک بہتر ایس ڈی ریم ہے جو کمپیوٹر کو دگنی رفتار سے ڈیٹا منتقل کرنے کی اجازت دیتی ہے۔ سادہ ایس ڈی ریم کے مقابلے میں اس کی میموری کلاک رفتار بہتر ہے۔ یہ ہر کلاک سائیکل میں دو مسلسل الفاظ پڑھتی یا لکھتی ہے۔",
+      "ps": "DDR SDRAM (دوه ګونی ډېټا کچه SDRAM) یوه ښه شوې SDRAM ده چې کمپیوټر ته اجازه ورکوي چې ډېټا دوه چنده ګړندیتوب سره ولېږدوي. د ساده SDRAM په پرتله یې د حافظې د ساعت ګړندیتوب ښه شوی. دا په هر ساعتي دوره کې دوه پرله پسې کلمې لولي یا لیکي."
+    },
+    {
+      "id": "cs11-s061-c1",
+      "en": "Figure 2.6 DDR3 SDRAM",
+      "ur": "شکل ۲.۶ ڈی ڈی آر ۳ ایس ڈی ریم",
+      "ps": "انځور ۲.۶ DDR3 SDRAM",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s061-c",
+      "en": "There are many types of DDR SDRAMs used for computers today, including DDR1 RAM (Double Data Rate), DDR2 RAM and DDR3 RAM ranging in speed from 100 MHz to 2000 MHz. SDRAM comes in sizes of 512 MB to 4GB for use in today’s computers. Figure 2.5 shows SDRAM.",
+      "ur": "آج کمپیوٹرز کے لیے ڈی ڈی آر ایس ڈی ریم کی بہت سی اقسام استعمال ہوتی ہیں جن میں ڈی ڈی آر۱ ریم (ڈبل ڈیٹا ریٹ)، ڈی ڈی آر۲ ریم اور ڈی ڈی آر۳ ریم شامل ہیں جن کی رفتار ۱۰۰ میگا ہرٹز سے ۲۰۰۰ میگا ہرٹز تک ہوتی ہے۔ ایس ڈی ریم آج کے کمپیوٹرز میں استعمال کے لیے ۵۱۲ ایم بی سے ۴ جی بی کے سائز میں ملتی ہے۔ شکل ۲.۵ ایس ڈی ریم دکھاتی ہے۔",
+      "ps": "اوس ورځ د کمپیوټرونو لپاره DDR SDRAM ډیر ډولونه کارول کېږي، چې DDR1 RAM (دوه ګونی ډېټا کچه)، DDR2 RAM او DDR3 RAM پکې شامل دي او ګړندیتوب یې له ۱۰۰ میګاهرټز نه تر ۲۰۰۰ میګاهرټز پورې دی. SDRAM د نننیو کمپیوټرونو کې د کارونې لپاره د ۵۱۲ MB نه تر ۴ GB پورې کچو کې راځي. ۲.۵ انځور SDRAM ښیي."
+    },
+    {
+      "id": "cs11-s061-d",
+      "en": "DDR2 and DDR3 RAMs are used in today’s computers. DDR2 reads or writes 4 words of data per clock cycle whereas DDR3 reads or writes 8 data words per clock cycle. Figure 2.6 shows DDR3 SDRAM.",
+      "ur": "ڈی ڈی آر۲ اور ڈی ڈی آر۳ ریم آج کے کمپیوٹرز میں استعمال ہوتی ہیں۔ ڈی ڈی آر۲ ہر کلاک سائیکل میں ڈیٹا کے ۴ الفاظ پڑھتی یا لکھتی ہے جبکہ ڈی ڈی آر۳ ہر کلاک سائیکل میں ۸ ڈیٹا الفاظ پڑھتی یا لکھتی ہے۔ شکل ۲.۶ ڈی ڈی آر۳ ایس ڈی ریم دکھاتی ہے۔",
+      "ps": "DDR2 او DDR3 RAMs په نننیو کمپیوټرونو کې کارول کېږي. DDR2 په هر ساعتي دوره کې د ډېټا ۴ کلمې لولي یا لیکي پداسې حال کې چې DDR3 په هر ساعتي دوره کې ۸ ډېټا کلمې لولي یا لیکي. ۲.۶ انځور DDR3 SDRAM ښیي."
+    },
+    {
+      "id": "cs11-s061-h1",
+      "en": "c. ROM (Read Only Memory)",
+      "ur": "ج۔ روم (ریڈ اونلی میموری)",
+      "ps": "ج. ROM (یوازې لوستلو حافظه)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s061-e",
+      "en": "ROM (Read only memory) is non volatile memory, i.e., the information stored in it, is not lost even if the power supply goes off. It is used for the permanent storage of information. It also possesses random access property. Information cannot be written into a ROM by the users/programmers. In other words the contents of ROMs are decided by the manufactures. Figure 2.7 shows different types of ROM chips.",
+      "ur": "روم (ریڈ اونلی میموری) مستقل میموری ہے، یعنی اس میں محفوظ معلومات بجلی کی فراہمی بند ہونے پر بھی ضائع نہیں ہوتیں۔ یہ معلومات کے مستقل ذخیرے کے لیے استعمال ہوتی ہے۔ اس میں بھی بلا ترتیب رسائی کی خاصیت ہے۔ صارفین / پروگرامرز روم میں معلومات نہیں لکھ سکتے۔ دوسرے لفظوں میں روم کے مندرجات کا تعین بنانے والے کرتے ہیں۔ شکل ۲.۷ روم چپس کی مختلف اقسام دکھاتی ہے۔",
+      "ps": "ROM (یوازې لوستلو حافظه) ثابته حافظه ده، یعنې په هغې کې ساتل شوي معلومات د بریښنا د رسولو د بندېدو سره هم له منځه نه ځي. دا د معلوماتو د دایمي ذخیرې لپاره کارول کېږي. دا د تصادفي لاسرسي ځانګړتیا هم لري. کاروونکي / پروګرامر په ROM کې معلومات نشي لیکلای. په بل عبارت د ROM منځپانګه جوړوونکي ټاکي. ۲.۷ انځور د ROM چپونو مختلف ډولونه ښیي."
+    },
+    {
+      "id": "cs11-s061-f",
+      "en": "The photograph labels the chips: EEPROM, EPROM, PROM and ROM.",
+      "ur": "تصویر میں چپس پر یہ لیبل ہیں: ای ای پی روم، ای پی روم، پی روم اور روم۔",
+      "ps": "په انځور کې چپونه دا نومونه لري: EEPROM، EPROM، PROM او ROM.",
+      "kind": "aside"
+    },
+    {
+      "id": "cs11-s061-c2",
+      "en": "Figure 2.7 Different types of ROM Chips",
+      "ur": "شکل ۲.۷ روم چپس کی مختلف اقسام",
+      "ps": "انځور ۲.۷ د ROM چپونو مختلف ډولونه",
+      "kind": "caption"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s061-a",
+        "cs11-s061-b",
+        "cs11-s061-c1",
+        "cs11-s061-c",
+        "cs11-s061-d",
+        "cs11-s061-h1",
+        "cs11-s061-e",
+        "cs11-s061-f",
+        "cs11-s061-c2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 52: the end of the SDRAM sentence (continuing from page 51), DDR SDRAM with a photograph (caption “Figure 2.6 DDR3 SDRAM”), “c. ROM (Read Only Memory)” and a photograph of four ROM chips with the printed labels EEPROM, EPROM, PROM and ROM (the labels are given in an aside paragraph). The left edge of the lines is slightly clipped. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:46:14.058122+00:00",
+    "scope": "Scan 61 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

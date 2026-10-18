@@ -1,0 +1,117 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s173-p164",
+  "title": "DIFFERENCES between TCP/IP and OSI",
+  "headingUrdu": "ٹی سی پی / آئی پی اور او ایس آئی کے درمیان فرق",
+  "headingPashto": "د TCP/IP او OSI ترمنځ توپیرونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 173,
+    "printedPage": "164"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s173-h1",
+      "en": "DIFFERENCES",
+      "ur": "فرق",
+      "ps": "توپیرونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s173-a",
+      "en": "The main differences between the two models are as follows:",
+      "ur": "دونوں ماڈلز کے درمیان بنیادی فرق درج ذیل ہیں:",
+      "ps": "د دواړو ماډلونو ترمنځ اصلي توپیرونه دا دي:"
+    },
+    {
+      "id": "cs11-s173-d1",
+      "en": "TCP/IP combines the presentation and session layer issues into its application layer.",
+      "ur": "ٹی سی پی / آئی پی پریزنٹیشن اور سیشن لیئر کے مسائل کو اپنی ایپلیکیشن لیئر میں ملا دیتا ہے۔",
+      "ps": "TCP/IP د وړاندې کولو او ناستې طبقې مسایل خپلې اپلېکېشن طبقې کې یوځای کوي.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d2",
+      "en": "OSI is a reference model and TCP/IP is an implementation of OSI model.",
+      "ur": "او ایس آئی ایک حوالہ ماڈل ہے اور ٹی سی پی / آئی پی او ایس آئی ماڈل کا نفاذ ہے۔",
+      "ps": "OSI یو مرجع ماډل دی او TCP/IP د OSI ماډل پلي کول دي.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d3",
+      "en": "TCP/IP Protocols are considered to be standard around which the internet has developed. The OSI model however is a “generic, protocol-independent standard.”",
+      "ur": "ٹی سی پی / آئی پی پروٹوکولز کو وہ معیار سمجھا جاتا ہے جس کے گرد انٹرنیٹ نے ترقی کی۔ جبکہ او ایس آئی ماڈل ’’عمومی، پروٹوکول سے آزاد معیار‘‘ ہے۔",
+      "ps": "د TCP/IP پروتوکولونه هغه معیار ګڼل کېږي چې انټرنېټ د هغې شاوخوا وده کړې. خو د OSI ماډل “عمومي، له پروتوکول نه خپلواک معیار” دی.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d4",
+      "en": "TCP/IP combines the OSI data link and physical layers into the network access layer.",
+      "ur": "ٹی سی پی / آئی پی او ایس آئی کی ڈیٹا لنک اور فزیکل لیئرز کو نیٹ ورک ایکسیس لیئر میں ملا دیتا ہے۔",
+      "ps": "TCP/IP د OSI د ډېټا نښلونې او فزیکي طبقې د شبکې لاسرسي طبقه کې یوځای کوي.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d5",
+      "en": "TCP/IP appears to be simpler model and this is mainly due to the fact that it has fewer layers.",
+      "ur": "ٹی سی پی / آئی پی سادہ ماڈل معلوم ہوتا ہے اور اس کی بنیادی وجہ یہ ہے کہ اس میں کم تہیں ہیں۔",
+      "ps": "TCP/IP ساده ماډل ښکاري او دا ډیره د دې له امله ده چې لږ طبقې لري.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d6",
+      "en": "The OSI model consists of 7 architectural layers whereas the TCP/IP only has 4 layers.",
+      "ur": "او ایس آئی ماڈل ۷ ساختی تہوں پر مشتمل ہے جبکہ ٹی سی پی / آئی پی میں صرف ۴ تہیں ہیں۔",
+      "ps": "د OSI ماډل ۷ جوړښتي طبقې لري پداسې حال کې چې TCP/IP یوازې ۴ طبقې لري.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d7",
+      "en": "In the TCP/IP model of the Internet, protocols are deliberately not as rigidly designed into strict layers as the OSI model.",
+      "ur": "انٹرنیٹ کے ٹی سی پی / آئی پی ماڈل میں پروٹوکولز کو جان بوجھ کر او ایس آئی ماڈل کی طرح سخت تہوں میں اتنی سختی سے ڈیزائن نہیں کیا گیا۔",
+      "ps": "د انټرنېټ په TCP/IP ماډل کې پروتوکولونه قصداً د OSI ماډل په څېر په سختو طبقو کې دومره کلک ډیزاین شوي نه دي.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d8",
+      "en": "The TCP/IP protocol suite comes prior to the OSI model. ISO first introduce the idea of TCP/IP suite. After some time the idea of OSI model comes into existence. So the TCP/IP suite is older than OSI model.",
+      "ur": "ٹی سی پی / آئی پی پروٹوکول سوئٹ او ایس آئی ماڈل سے پہلے آیا۔ آئی ایس او نے پہلے ٹی سی پی / آئی پی سوئٹ کا تصور متعارف کرایا۔ کچھ وقت بعد او ایس آئی ماڈل کا تصور وجود میں آیا۔ لہٰذا ٹی سی پی / آئی پی سوئٹ او ایس آئی ماڈل سے پرانا ہے۔",
+      "ps": "د TCP/IP پروتوکول ټولګه د OSI ماډل نه مخکې راغلې. ISO لومړی د TCP/IP ټولګې مفکوره معرفي کړه. څه وخت وروسته د OSI ماډل مفکوره رامنځته شوه. نو د TCP/IP ټولګه د OSI ماډل نه زړه ده.",
+      "listGroup": "diff"
+    },
+    {
+      "id": "cs11-s173-d9",
+      "en": "The TCP/IP suite is based on protocols whereas the OSI model is layer based model.",
+      "ur": "ٹی سی پی / آئی پی سوئٹ پروٹوکولز پر مبنی ہے جبکہ او ایس آئی ماڈل تہہ پر مبنی ماڈل ہے۔",
+      "ps": "د TCP/IP ټولګه پر پروتوکولونو ولاړه ده پداسې حال کې چې د OSI ماډل پر طبقو ولاړ ماډل دی.",
+      "listGroup": "diff"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s173-h1",
+        "cs11-s173-a",
+        "cs11-s173-d1",
+        "cs11-s173-d2",
+        "cs11-s173-d3",
+        "cs11-s173-d4",
+        "cs11-s173-d5",
+        "cs11-s173-d6",
+        "cs11-s173-d7",
+        "cs11-s173-d8",
+        "cs11-s173-d9"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 164: “DIFFERENCES” with its lead-in sentence and nine bullets. The top of the page is slightly cut so that the unit header is only partly visible. The statement that ISO introduced TCP/IP first is given as printed. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:25:33.502459+00:00",
+    "scope": "Scan 173 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

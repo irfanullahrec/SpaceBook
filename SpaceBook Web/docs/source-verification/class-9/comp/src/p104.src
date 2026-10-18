@@ -1,0 +1,21 @@
+@printed 96
+@status lesson
+- *if* statement || *if* اسٹیٹمنٹ || *if* بیان
+- *if-else* statement || *if-else* اسٹیٹمنٹ || *if-else* بیان
+- nested *if* statement || نیسٹڈ *if* اسٹیٹمنٹ || ځالی *if* بیان
+- *switch* statement || *switch* اسٹیٹمنٹ || *switch* بیان
+### 4.1.3 *if* Statement || 4.1.3 *if* اسٹیٹمنٹ || ۴.۱.۳ *if* بیان
+p *if* statement is a decision-making statement. It is the simplest form of selection constructs. It is used to execute or skip a statement or set of statements by checking a condition. This is sometimes referred to as binary selection since there are two possible paths of execution. || *if* اسٹیٹمنٹ فیصلہ سازی کی اسٹیٹمنٹ ہے۔ یہ سلیکشن کی سب سے سادہ صورت ہے۔ یہ کسی شرط کو جانچ کر کسی اسٹیٹمنٹ یا اسٹیٹمنٹس کے مجموعے کو چلانے یا چھوڑنے کے لیے استعمال ہوتی ہے۔ اسے بعض اوقات بائنری سلیکشن کہا جاتا ہے کیونکہ چلنے کے دو ممکنہ راستے ہوتے ہیں۔ || *if* بیان د پرېکړې بیان دی. د انتخاب تر ټولو ساده بڼه ده. د یوه شرط په ازمویلو د یوه بیان یا بیانونو د اجرا یا پرېښودو لپاره کارېږي. ځینې وخت ورته binary انتخاب وايي ځکه د اجرا دوه ممکنې لارې لري.
+p The condition is given as a relational expression. If the condition is true, the statement or set of statements after *if* statement is executed otherwise, not executed. || شرط ریلیشنل اظہار کی صورت میں دی جاتی ہے۔ اگر شرط درست ہو تو *if* کے بعد والی اسٹیٹمنٹ یا اسٹیٹمنٹس چلتی ہیں ورنہ نہیں۔ || شرط د اړیکه ییزې افادې په بڼه ورکول کېږي. که شرط سم وي، له *if* وروسته بیان یا بیانونه اجرا کېږي، کنه نه.
+p **Syntax:** The syntax of *if* statement is as follows: || **سنٹیکس:** *if* اسٹیٹمنٹ کا سنٹیکس یہ ہے: || **Syntax:** د *if* بیان syntax دا دی:
+m if (condition)
+m statement;
+p The above syntax is used for single statement. A set of statements can also be made conditional. In this case, these statements are written in braces *{ }*. The set of statements is also called block of statements. The syntax for compound statements in *if* statement is as follows: || اوپر والا سنٹیکس ایک اسٹیٹمنٹ کے لیے ہے۔ اسٹیٹمنٹس کے مجموعے کو بھی شرطی بنایا جا سکتا ہے۔ اس صورت میں یہ اسٹیٹمنٹس بریسز *{ }* میں لکھی جاتی ہیں۔ اسٹیٹمنٹس کے مجموعے کو بلاک آف اسٹیٹمنٹس بھی کہتے ہیں۔ *if* میں مرکب اسٹیٹمنٹس کا سنٹیکس یہ ہے: || پورتنی syntax د یوه بیان لپاره دی. د بیانونو ټولګه هم شرطي کېدای شي. په دې حالت کې بیانونه په *{ }* کې لیکل کېږي. د بیانونو ټولګې ته د بیانونو بلاک هم وايي. په *if* کې د مرکبو بیانونو syntax دا دی:
+m if (condition)
+m {
+m statement 1;
+m statement 2;
+m .
+m .
+m Statement n;
+m }

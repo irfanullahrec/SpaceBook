@@ -1,0 +1,115 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s165-p156",
+  "title": "Transport functions (end); Layer 5: Session Layer",
+  "headingUrdu": "ٹرانسپورٹ کے افعال (اختتام)؛ تہہ ۵: سیشن لیئر",
+  "headingPashto": "د لېږد دندې (پای)؛ طبقه ۵: د ناستې طبقه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 165,
+    "printedPage": "156"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s165-t1",
+      "en": "Accepts a message from the (session) layer above it, splits the message into smaller units, and passes the smaller units down to the network layer. The transport layer at the destination station reassembles the message.",
+      "ur": "اپنے اوپر کی (سیشن) تہہ سے پیغام قبول کرتی ہے، پیغام کو چھوٹی اکائیوں میں تقسیم کرتی ہے اور چھوٹی اکائیاں نیٹ ورک لیئر کو نیچے بھیجتی ہے۔ منزل کے اسٹیشن کی ٹرانسپورٹ لیئر پیغام کو دوبارہ جوڑتی ہے۔",
+      "ps": "له خپلې پورتنۍ (ناستې) طبقې نه پیغام مني، پیغام کوچنیو واحدونو ته وېشي او کوچني واحدونه شبکې طبقې ته ښکته لېږي. په منزل ایستګاه کې د لېږد طبقه پیغام بېرته راټولوي.",
+      "listGroup": "l4"
+    },
+    {
+      "id": "cs11-s165-t2",
+      "en": "Manages reliable end-to-end message delivery with acknowledgments in network.",
+      "ur": "نیٹ ورک میں اعترافات کے ساتھ قابلِ اعتماد آخر تا آخر پیغام رسانی کا انتظام کرتی ہے۔",
+      "ps": "په شبکه کې د منلو سره د پای تر پایه باوري پیغام رسولو اداره کوي.",
+      "listGroup": "l4"
+    },
+    {
+      "id": "cs11-s165-t3",
+      "en": "Tells the transmitting station to “back-off” when no message buffers are available.",
+      "ur": "جب کوئی پیغام بفر دستیاب نہ ہو تو بھیجنے والے اسٹیشن کو ’’پیچھے ہٹنے‘‘ کو کہتی ہے۔",
+      "ps": "کله چې د پیغام هېڅ بفر نه وي شته نو لېږونکې ایستګاه ته وايي چې “شاته شي”.",
+      "listGroup": "l4"
+    },
+    {
+      "id": "cs11-s165-t4",
+      "en": "Provides reliable and sequential packet delivery through error recovery and flow control mechanisms.",
+      "ur": "غلطی کی بحالی اور بہاؤ کنٹرول کے طریقوں کے ذریعے قابلِ اعتماد اور ترتیب وار پیکٹ رسانی فراہم کرتی ہے۔",
+      "ps": "د تېروتنې د بیا رغونې او د جریان د کنټرول میکانېزمونو له لارې باوري او ترتیب لرونکې کڅوړې رسول برابروي.",
+      "listGroup": "l4"
+    },
+    {
+      "id": "cs11-s165-t5",
+      "en": "Provides connectionless oriented packet delivery.",
+      "ur": "بغیر ربط کی بنیاد پر پیکٹ رسانی فراہم کرتی ہے۔",
+      "ps": "پرته له نښلولو پر بنسټ د کڅوړو رسول برابروي.",
+      "listGroup": "l4"
+    },
+    {
+      "id": "cs11-s165-h1",
+      "en": "Layer 5: SESSION LAYER",
+      "ur": "تہہ ۵: سیشن لیئر",
+      "ps": "طبقه ۵: د ناستې طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s165-a",
+      "en": "The session layer sets up, coordinates, and terminates conversations, exchanges, and dialogues between the applications running on different stations. It provides:",
+      "ur": "سیشن لیئر مختلف اسٹیشنوں پر چلنے والی ایپلیکیشنز کے درمیان گفتگو، تبادلوں اور مکالموں کو قائم، مربوط اور ختم کرتی ہے۔ یہ فراہم کرتی ہے:",
+      "ps": "د ناستې طبقه په مختلفو ایستګاوو کې چلېدونکو اپلېکېشنونو ترمنځ خبرې، تبادلې او ډیالوګونه جوړوي، همغږي کوي او پای ته رسوي. دا برابروي:"
+    },
+    {
+      "id": "cs11-s165-s1",
+      "en": "Session establishment, maintenance and termination: allows two application processes (on different machines) to establish, use and terminate a connection, called a session.",
+      "ur": "سیشن کا قیام، دیکھ بھال اور اختتام: دو ایپلیکیشن پروسیسز (مختلف مشینوں پر) کو ایسا ربط قائم کرنے، استعمال کرنے اور ختم کرنے دیتی ہے جسے سیشن کہتے ہیں۔",
+      "ps": "د ناستې جوړول، ساتل او پای ته رسول: دوو اپلېکېشن پروسو (په مختلفو ماشینونو) ته اجازه ورکوي چې یو تړاو چې ناسته بلل کېږي جوړ کړي، وکاروي او پای ته یې ورسوي.",
+      "listGroup": "l5"
+    },
+    {
+      "id": "cs11-s165-s2",
+      "en": "Session support: performs the functions that allow these processes to communicate over the network, performing security, name recognition, logging.",
+      "ur": "سیشن کی حمایت: وہ افعال انجام دیتی ہے جو ان پروسیسز کو نیٹ ورک پر رابطہ کرنے دیتے ہیں، جیسے سیکیورٹی، نام کی شناخت اور لاگنگ۔",
+      "ps": "د ناستې ملاتړ: هغه دندې ترسره کوي چې دغو پروسو ته اجازه ورکوي چې په شبکه اړیکه ونیسي، لکه امنیت، د نوم پېژندنه، ثبتول.",
+      "listGroup": "l5"
+    },
+    {
+      "id": "cs11-s165-b",
+      "en": "It also marks significant parts of the transmitted data with checkpoints to allow fast recovery in the event of a connection failure.",
+      "ur": "یہ منتقل شدہ ڈیٹا کے اہم حصوں پر چیک پوائنٹس بھی لگاتی ہے تاکہ ربط ناکام ہونے کی صورت میں تیز بحالی ممکن ہو۔",
+      "ps": "دا د لېږدول شوې ډېټا مهمې برخې د چک پوینټونو سره هم نښه کوي ترڅو د پیوستون د ناکامۍ په صورت کې چټکه بیا رغونه ممکنه شي."
+    },
+    {
+      "id": "cs11-s165-c",
+      "en": "In most modern Internet applications, the session, presentation and application layers are usually combined inside the application itself, thus, web browser performs all functions of the session, presentation and application layers.",
+      "ur": "زیادہ تر جدید انٹرنیٹ ایپلیکیشنز میں سیشن، پریزنٹیشن اور ایپلیکیشن لیئرز عموماً ایپلیکیشن کے اندر ہی ملا دی جاتی ہیں، اس لیے ویب براؤزر سیشن، پریزنٹیشن اور ایپلیکیشن لیئرز کے تمام افعال انجام دیتا ہے۔",
+      "ps": "په ډیرو مدرنو انټرنېټ اپلېکېشنونو کې د ناستې، وړاندې کولو او اپلېکېشن طبقې معمولاً د اپلېکېشن په دننه کې یو ځای شوې وي، نو د ویب براوزر د ناستې، وړاندې کولو او اپلېکېشن طبقو ټولې دندې ترسره کوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s165-t1",
+        "cs11-s165-t2",
+        "cs11-s165-t3",
+        "cs11-s165-t4",
+        "cs11-s165-t5",
+        "cs11-s165-h1",
+        "cs11-s165-a",
+        "cs11-s165-s1",
+        "cs11-s165-s2",
+        "cs11-s165-b",
+        "cs11-s165-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 156: the five functions of the transport layer (continuing from page 155), “Layer 5: SESSION LAYER” with two bullets and two closing paragraphs. Handwritten marks at the top and left edge are excluded. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:22:40.330375+00:00",
+    "scope": "Scan 165 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,23 @@
+@pdf 153
+@printed 140
+@status lesson
+### NOT Gate || NOT گیٹ || NOT دروازه
+p NOT gate is used to reverse the input value. It is a gate whose output is the inverse or complement of the input. The NOT gate takes a single input and produces a single output. If the input to NOT gate is '0' then the output will be '1'. If the input is '1' then the output will be '0'. || NOT گیٹ ان پٹ کی قدر الٹنے کے لیے استعمال ہوتا ہے۔ یہ ایسا گیٹ ہے جس کا آؤٹ پٹ ان پٹ کا الٹ یا تکملہ ہوتا ہے۔ NOT گیٹ ایک ان پٹ لے کر ایک آؤٹ پٹ دیتا ہے۔ اگر ان پٹ 0 ہو تو آؤٹ پٹ 1 اور اگر ان پٹ 1 ہو تو آؤٹ پٹ 0 ہوگا۔ || NOT دروازه د input ارزښت سرچپه کوي. داسې دروازه ده چې output یې د input معکوس یا متمم وي. یو input اخلي او یو output ورکوي. که input 0 وي output 1 او که input 1 وي output 0 وي.
+p The NOT gate performs the logical Negation. NOT gate inverts the inputs to produce the output therefore, it is also called inverter. || NOT گیٹ منطقی نفی کرتا ہے۔ یہ ان پٹ کو الٹ کر آؤٹ پٹ دیتا ہے اس لیے اسے انورٹر بھی کہتے ہیں۔ || NOT دروازه منطقي نفي ترسره کوي. input سرچپه کوي او output ورکوي، نو inverter هم بلل کېږي.
+p Let A is the input and Y is the output from a NOT gate, then the block diagram or logic diagram of NOT gate is as follows: || فرض کریں A ان پٹ اور Y NOT گیٹ کا آؤٹ پٹ ہے، تو NOT گیٹ کا بلاک یا لاجک ڈایاگرام یوں ہے: || فرض کړئ A input او Y د NOT دروازې output دی، نو منطقي ډیاګرام یې داسې دی:
+svg Figure 6.3: NOT gate || شکل 6.3 NOT گیٹ || ۶.۳ شکل NOT دروازه
+<svg viewBox="0 0 400 130" width="400" role="img" aria-label="NOT gate symbol: a triangle with a small circle at its tip; input A on the left labelled Input, output Y = A-bar on the right labelled Output" font-family="Arial, Helvetica, sans-serif" font-size="18">
+<path d="M140 15 L235 65 L140 115 Z" fill="#fff" stroke="#111827" stroke-width="2.5"/>
+<circle cx="245" cy="65" r="10" fill="#fff" stroke="#111827" stroke-width="2.5"/>
+<path d="M40 65 H140 M255 65 H340" stroke="#111827" stroke-width="2.5"/>
+<text x="42" y="54" font-weight="700">A</text><text x="40" y="92">Input</text>
+<text x="266" y="54" font-weight="700">Y = A</text><path d="M311 34 H325" stroke="#111827" stroke-width="2"/><text x="262" y="92">Output</text>
+</svg>
+endsvg
+### 6.2.3 Truth Table || 6.2.3 ٹروتھ ٹیبل || ۶.۲.۳ Truth Table
+p It is a table which contains all the possible combinations of input values and their corresponding output values. If there are *n* input values then there will be 2^n possible combinations. Truth table is used to represent all the possible combinations of a Boolean function or expression or logic gate. Boolean function/expression is the combination of Boolean variables and/or constants linked by Boolean operators. A truth table has the following properties. || یہ ایسا جدول ہے جس میں ان پٹ قدروں کے تمام ممکنہ مجموعے اور ان کے آؤٹ پٹ ہوتے ہیں۔ اگر *n* ان پٹ ہوں تو 2^n ممکنہ مجموعے ہوں گے۔ ٹروتھ ٹیبل کسی بولین فنکشن، اظہار یا لاجک گیٹ کے تمام ممکنہ مجموعے ظاہر کرتا ہے۔ بولین فنکشن/اظہار بولین آپریٹرز سے جڑے بولین متغیرات اور/یا کانسٹنٹس کا مجموعہ ہے۔ ٹروتھ ٹیبل کی درج ذیل خصوصیات ہیں۔ || دا داسې جدول دی چې د input ارزښتونو ټول ممکنه ترکیبونه او outputs لري. که *n* inputs وي، 2^n ترکیبونه وي. truth table د بولین فنکشن، افادې یا منطقي دروازې ټول ممکنه ترکیبونه ښيي. بولین فنکشن/افاده د بولین operators په واسطه نښلول شوي بولین متغیرونه او/یا ثابتونه دي. truth table دا ځانګړنې لري.
+- Truth table consists of rows and columns. || ٹروتھ ٹیبل قطاروں اور کالموں پر مشتمل ہوتا ہے۔ || truth table له قطارونو او ستنو جوړ دی.
+- It shows relationship between inputs to and output from a digital logic circuit. || یہ ڈیجیٹل لاجک سرکٹ کے ان پٹس اور آؤٹ پٹ کا تعلق دکھاتا ہے۔ || د ډیجیټل منطقي سرکټ د inputs او output اړیکه ښيي.
+- It shows output for all the possible combinations of inputs using 0 for LOW and 1 for HIGH. || یہ کم کے لیے 0 اور زیادہ کے لیے 1 سے ان پٹس کے تمام مجموعوں کا آؤٹ پٹ دکھاتا ہے۔ || د ټیټ لپاره 0 او لوړ لپاره 1 سره د ټولو ترکیبونو output ښيي.
+- All the combinations of inputs are listed in columns on the left and output is shown in the rightmost column. || ان پٹس کے تمام مجموعے بائیں کالموں میں اور آؤٹ پٹ سب سے دائیں کالم میں ہوتا ہے۔ || د inputs ترکیبونه په کیڼو ستنو او output په تر ټولو ښي ستن کې وي.
+- The input columns are constructed in the order of binary counting with a number of bits equal to the number of inputs. For example, for 2 Inputs, || ان پٹ کالم بائنری گنتی کی ترتیب میں بنتے ہیں جن کے بٹس ان پٹس کی تعداد کے برابر ہوں۔ مثلاً 2 ان پٹس کے لیے || د input ستنې د باینري شمېرنې په ترتیب جوړېږي چې bits یې د inputs سره مساوي وي. د بېلګې په توګه د ۲ inputs لپاره

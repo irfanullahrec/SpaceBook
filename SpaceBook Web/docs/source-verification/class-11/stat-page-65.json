@@ -1,0 +1,341 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s065-shortcut-method",
+  "title": "(ii) Shortcut or coding method · Example 2.3 · (iii) Step-deviation method",
+  "headingUrdu": "(ii) مختصر یا کوڈنگ طریقہ · مثال 2.3 · (iii) گام انحراف طریقہ",
+  "headingPashto": "(ii) لنډ یا کوډینګ طریقه · بېلګه 2.3 · (iii) ګام‌انحراف طریقه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 65,
+    "printedPage": "57"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s065-hii",
+      "en": "(ii) By shortcut or coding method",
+      "ur": "(ii) مختصر یا کوڈنگ طریقے سے",
+      "ps": "(ii) په لنډه یا کوډینګ طریقه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s065-t1",
+      "en": "Where A = assumed or provisional mean and D = x − A",
+      "ur": "جہاں A = فرض کردہ یا عارضی اوسط اور D = x − A",
+      "ps": "چېرته چې A = انګېرل شوی یا لنډمهاله اوسط او D = x − A"
+    },
+    {
+      "id": "stat11-s065-t2",
+      "en": "Any value in the given data can be chosen as A, but for convenience it is suggested to first arrange the data in ascending order of magnitude and then take the most middle value as A. If the number of observations is even, then take average of the two most middle values as A.",
+      "ur": "دیے گئے اعداد و شمار میں سے کوئی بھی قدر A کے طور پر منتخب کی جا سکتی ہے لیکن سہولت کے لیے تجویز کیا جاتا ہے کہ پہلے اعداد و شمار کو مقدار کے صعودی ترتیب میں ترتیب دیں اور پھر سب سے درمیانی قدر کو A لیں۔ اگر مشاہدات کی تعداد جفت ہو تو دو سب سے درمیانی قدروں کا اوسط A لیں۔",
+      "ps": "په ورکړل شویو معلوماتو کې هر ارزښت د A په توګه ټاکل کېدای شي خو د اسانتیا لپاره وړاندیز کېږي چې لومړی معلومات د کچې په پورته‌والي ترتیب ترتیب کړئ او بیا تر ټولو منځنی ارزښت د A په توګه واخلئ. که د کتنو شمېر جفت وي نو د دوو تر ټولو منځنیو ارزښتونو اوسط د A په توګه واخلئ."
+    },
+    {
+      "id": "stat11-s065-ex3",
+      "en": "Example: 2.3",
+      "ur": "مثال: 2.3",
+      "ps": "بېلګه: 2.3",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-q3",
+      "en": "Let x = 10, 8, 4, 6, 12. Find average for these data by shortcut method.",
+      "ur": "فرض کریں x = 10, 8, 4, 6, 12۔ مختصر طریقے سے ان اعداد و شمار کا اوسط معلوم کریں۔",
+      "ps": "فرض کړئ x = 10, 8, 4, 6, 12. د لنډې طریقې په واسطه د دې معلوماتو اوسط ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-sol3",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-a3",
+      "en": "Arranging the given data, we have",
+      "ur": "دیے گئے اعداد و شمار کو ترتیب دینے پر ہمیں ملتا ہے",
+      "ps": "ورکړل شوي معلومات ترتیبولو سره موږ لرو",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-a3b",
+      "en": "Here A = 8",
+      "ur": "یہاں A = 8",
+      "ps": "دلته A = 8",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-hiii",
+      "en": "(iii) By change of origin and scale or step-deviation method",
+      "ur": "(iii) مبدا اور پیمانے کی تبدیلی یا گام انحراف طریقے سے",
+      "ps": "(iii) د اصل او پیمانې په بدلون یا ګام‌انحراف طریقه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s065-t4",
+      "en": "Where u = (x − A)/h and “h” is class interval.",
+      "ur": "جہاں u = (x − A)/h اور \"h\" جماعتی وقفہ ہے۔",
+      "ps": "چېرته چې u = (x − A)/h او \"h\" د ټولګي وقفه ده."
+    },
+    {
+      "id": "stat11-s065-t5",
+      "en": "This method is applicable only when there is an equal class interval in the data.",
+      "ur": "یہ طریقہ صرف اس وقت قابلِ اطلاق ہے جب اعداد و شمار میں جماعتی وقفہ مساوی ہو۔",
+      "ps": "دا طریقه یوازې هغه وخت د پلي کېدو وړ ده کله چې په معلوماتو کې د ټولګي وقفه مساوي وي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s065-hii"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s065-t1",
+        "stat11-s065-t2",
+        "stat11-s065-ex3",
+        "stat11-s065-q3",
+        "stat11-s065-sol3",
+        "stat11-s065-a3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s065-a3b"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s065-hiii"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s065-t4",
+        "stat11-s065-t5"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "coding": {
+      "ur": "کوڈنگ",
+      "ps": "کوډینګ"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s065-sc",
+      "latex": "\\bar{x}=A+\\dfrac{\\sum D}{n},",
+      "accessible": "x̄ = A + ΣD / n,",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = A + ΣD / n,"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = A + ΣD / n,"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = A + ΣD / n,"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s065-e3",
+      "latex": "\\therefore\\ \\bar{x}=A+\\dfrac{\\sum D}{n}=8+\\dfrac{0}{5}=8+0=8",
+      "accessible": "∴ x̄ = A + ΣD / n = 8 + 0/5 = 8 + 0 = 8",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ x̄ = A + ΣD / n = 8 + 0/5 = 8 + 0 = 8"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ x̄ = A + ΣD / n = 8 + 0/5 = 8 + 0 = 8"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ x̄ = A + ΣD / n = 8 + 0/5 = 8 + 0 = 8"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-3"
+    },
+    {
+      "id": "stat11-s065-st",
+      "latex": "\\bar{x}=A+\\dfrac{\\sum fu}{\\sum f}\\times h",
+      "accessible": "x̄ = A + (Σfu / Σf) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.3: D = x − 8",
+      "captionUrdu": "مثال 2.3: D = x − 8",
+      "captionPashto": "بېلګه 2.3: D = x − 8",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "D = x − 8",
+          "ur": "D = x − 8",
+          "ps": "D = x − 8"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "4 − 8 = −4",
+            "ur": "4 − 8 = −4",
+            "ps": "4 − 8 = −4"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "= −2",
+            "ur": "= −2",
+            "ps": "= −2"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "= 0",
+            "ur": "= 0",
+            "ps": "= 0"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "= 2",
+            "ur": "= 2",
+            "ps": "= 2"
+          }
+        ],
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "= 4",
+            "ur": "= 4",
+            "ps": "= 4"
+          }
+        ],
+        [
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "ΣD = 0",
+            "ur": "ΣD = 0",
+            "ps": "ΣD = 0"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-3",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 57. In the table the entries below the first row are printed as \"= −2\", \"= 0\", etc. (the repeated \"x − 8\" is omitted in print). The foot shows a ghost of the page-number bar. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:31:03.116665+00:00",
+    "scope": "Scan 65 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s199-corr-rank-5",
+  "title": "Example 5.8 (series y, modified Spearman coefficient)",
+  "headingUrdu": "مثال 5.8 (سلسلہ y، ترمیم شدہ سپیئرمین عددی سر)",
+  "headingPashto": "بېلګه 5.8 (لړۍ y، ترمیم شوی د سپیرمن ضریب)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 199,
+    "printedPage": "189"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s199-a1",
+      "en": "Series y:",
+      "ur": "سلسلہ y:",
+      "ps": "لړۍ y:",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-a2",
+      "en": "73 is repeated for 2 times, the corresponding rank positions are 6 and 7. Hence rank [73] = (6 + 7)/2 = 6.5 and m is equal to the number of tied observations = 2. Therefore (m³ − m)/12 = (2³ − 2)/12 = (8 − 2)/12 = 6/12 = 0.5",
+      "ur": "73 دو بار دہرایا گیا ہے، متعلقہ درجے کی پوزیشنیں 6 اور 7 ہیں۔ لہٰذا درجہ [73] = (6 + 7)/2 = 6.5 اور m برابر مشاہدات کی تعداد کے برابر = 2۔ اس لیے (m³ − m)/12 = (2³ − 2)/12 = (8 − 2)/12 = 6/12 = 0.5",
+      "ps": "73 دوه ځله تکرار شوی، اړونده رتبې ځایونه 6 او 7 دي. نو رتبه [73] = (6 + 7)/2 = 6.5 او m د برابرو کتنو له شمېر سره مساوي = 2. نو (m³ − m)/12 = (2³ − 2)/12 = (8 − 2)/12 = 6/12 = 0.5",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-a3",
+      "en": "Now for repeated values 98 and 73, the element (m³ − m)/12 is added i.e. T = 2 + 0.5 = 2.5",
+      "ur": "اب دہرائی گئی قدروں 98 اور 73 کے لیے عنصر (m³ − m)/12 جمع کیا جاتا ہے یعنی T = 2 + 0.5 = 2.5",
+      "ps": "اوس د تکرار شویو ارزښتونو 98 او 73 لپاره عنصر (m³ − m)/12 جمع کېږي یعنې T = 2 + 0.5 = 2.5",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-a4",
+      "en": "Thus, the modified spearman’s rank correlation coefficient for repeated values is",
+      "ur": "اس طرح دہرائی گئی قدروں کے لیے ترمیم شدہ سپیئرمین کا درجاتی ارتباطی عددی سر ہے",
+      "ps": "په دې توګه د تکرار شویو ارزښتونو لپاره ترمیم شوی د سپیرمن رتبه‌یي همتړاو ضریب دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-a5",
+      "en": "The variables are positively correlated.",
+      "ur": "متغیرات مثبت طور پر مربوط ہیں۔",
+      "ps": "متغیرونه په مثبت ډول همتړي دي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-8"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s199-a1",
+        "stat11-s199-a2",
+        "stat11-s199-a3",
+        "stat11-s199-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s199-a5"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s199-r",
+      "latex": "r_s=1-\\dfrac{6\\left(\\sum d^2+T\\right)}{n^3-n}",
+      "accessible": "r_s = 1 − 6(Σd² + T)/(n³ − n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_s = 1 − 6(Σd² + T)/(n³ − n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_s = 1 − 6(Σd² + T)/(n³ − n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_s = 1 − 6(Σd² + T)/(n³ − n)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-r2",
+      "latex": "=1-\\dfrac{6(42.5+2.5)}{10^3-10}",
+      "accessible": "= 1 − 6(42.5 + 2.5)/(10³ − 10)   [the printed denominator reads \"103 − 10\", i.e. 10³ − 10]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1 − 6(42.5 + 2.5)/(10³ − 10)   [the printed denominator reads \"103 − 10\", i.e. 10³ − 10]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1 − 6(42.5 + 2.5)/(10³ − 10)   [the printed denominator reads \"103 − 10\", i.e. 10³ − 10]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1 − 6(42.5 + 2.5)/(10³ − 10)   [the printed denominator reads \"103 − 10\", i.e. 10³ − 10]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-8"
+    },
+    {
+      "id": "stat11-s199-r3",
+      "latex": "=1-\\dfrac{6(45)}{990}=1-0.2727=0.73",
+      "accessible": "= 1 − 6(45)/990 = 1 − 0.2727 = 0.73",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1 − 6(45)/990 = 1 − 0.2727 = 0.73"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1 − 6(45)/990 = 1 − 0.2727 = 0.73"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1 − 6(45)/990 = 1 − 0.2727 = 0.73"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-8"
+    }
+  ],
+  "sourceNote": "Printed page 189. The lower half of the page is blank. In the second line the printed denominator is \"103 − 10\" for 10³ − 10. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:23:00.323377+00:00",
+    "scope": "Scan 199 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

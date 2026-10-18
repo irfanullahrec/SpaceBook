@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+TITLE = '8.4.2 Thermal expansion of liquids: real and apparent expansion, Figure 8.7, equation 8.13'
+SECTIONS = [
+    ('8.4.2', ('8.4.2 THERMAL EXPANSION OF LIQUIDS', '8.4.2 مائعات کا حرارتی پھیلاؤ', '8.4.2 د مایعاتو تودوخیز پراخوالی'), [
+        ('p', 'Like solids, liquids also expand on heating and contract on cooling. A liquid has no definite length and surface area; therefore, we cannot consider the linear expansion or superficial expansion of a liquid.',
+         'ٹھوس اجسام کی طرح مائعات بھی گرم کرنے پر پھیلتے اور ٹھنڈا کرنے پر سکڑتے ہیں۔ مائع کی کوئی مقررہ لمبائی اور سطحی رقبہ نہیں ہوتا؛ اس لیے ہم مائع کے طولی یا سطحی پھیلاؤ پر غور نہیں کر سکتے۔',
+         'د جامدو په څېر مایعات هم په تودولو پراخېږي او په سړولو کوچني کېږي. مایع ټاکلی اوږدوالی او سطحي مساحت نه لري؛ نو د مایع اوږدیز یا سطحي پراخوالی نه شو په پام کې نیولای.'),
+        ('p', 'But liquids always take up the shape of the containing vessels. Therefore in case of liquids we are concerned only with volume changes when they are heated. The increase in the volume of a liquid due to the thermal effect of heating is called thermal expansion of liquids. Since heat affects both the liquid and the container the real expansion of a liquid cannot be detected directly. In case of liquids, we have two kinds of thermal expansion: the apparent expansion and the real expansion.',
+         'لیکن مائعات ہمیشہ برتن کی شکل اختیار کر لیتے ہیں۔ اس لیے مائعات کو گرم کرنے پر ہمیں صرف حجم کی تبدیلی سے غرض ہے۔ گرم کرنے کے حرارتی اثر سے مائع کے حجم میں اضافہ مائعات کا حرارتی پھیلاؤ کہلاتا ہے۔ چونکہ حرارت مائع اور برتن دونوں پر اثر ڈالتی ہے، مائع کا حقیقی پھیلاؤ براہِ راست معلوم نہیں ہو سکتا۔ مائعات میں دو قسم کا حرارتی پھیلاؤ ہوتا ہے: ظاہری پھیلاؤ اور حقیقی پھیلاؤ۔',
+         'خو مایعات تل د لوښي شکل غوره کوي. نو د مایعاتو په تودولو کې یوازې د حجم له بدلون سره کار لرو. د تودولو د تودوخیزې اغېزې له امله د مایع د حجم زیاتوالی د مایعاتو تودوخیز پراخوالی بلل کېږي. څرنګه چې تودوخه پر مایع او لوښي دواړو اغېز کوي، د مایع حقیقي پراخوالی مستقیم نه معلومېږي. په مایعاتو کې دوه ډوله تودوخیز پراخوالی لرو: ښکاره پراخوالی او حقیقي پراخوالی.'),
+        ('h', 'A. Real expansion of liquid:', 'A. مائع کا حقیقی پھیلاؤ:', 'A. د مایع حقیقي پراخوالی:'),
+        ('q', 'A real increase in the volume of a liquid, that takes place due to increase of temperature is called real expansion V_R of liquid. This expansion is independent of the expansion of the container.',
+         'درجۂ حرارت بڑھنے سے مائع کے حجم میں ہونے والا حقیقی اضافہ مائع کا حقیقی پھیلاؤ V_R کہلاتا ہے۔ یہ پھیلاؤ برتن کے پھیلاؤ سے آزاد ہے۔',
+         'د تودوخې د لوړېدو له امله د مایع د حجم حقیقي زیاتوالی د مایع حقیقي پراخوالی V_R بلل کېږي. دا پراخوالی د لوښي له پراخوالي خپلواک دی.'),
+        ('h', 'B. Apparent expansion of liquid:', 'B. مائع کا ظاہری پھیلاؤ:', 'B. د مایع ښکاره پراخوالی:'),
+        ('q', 'An apparent increase in the volume of a liquid, that takes place due to increase of temperature is called apparent expansion V_A of liquid.',
+         'درجۂ حرارت بڑھنے سے مائع کے حجم میں ہونے والا ظاہری اضافہ مائع کا ظاہری پھیلاؤ V_A کہلاتا ہے۔',
+         'د تودوخې د لوړېدو له امله د مایع د حجم ښکاره زیاتوالی د مایع ښکاره پراخوالی V_A بلل کېږي.'),
+        ('p', 'When a liquid is taken in a container and heated, both the liquid and the container expand at same time. The difference of these expansions are called apparent expansion. If V_R is the expansion in the volume of the liquid (called real expansion) and V_C is the expansion in the volume of the container on heating then the apparent expansion V_A is given by as;',
+         'جب مائع کو برتن میں لے کر گرم کیا جائے تو مائع اور برتن دونوں ایک ساتھ پھیلتے ہیں۔ ان پھیلاؤ کا فرق ظاہری پھیلاؤ کہلاتا ہے۔ اگر V_R گرم کرنے پر مائع کے حجم میں پھیلاؤ (حقیقی پھیلاؤ) اور V_C برتن کے حجم میں پھیلاؤ ہو تو ظاہری پھیلاؤ V_A یوں ہے؛',
+         'کله چې مایع په یوه لوښي کې واچول شي او توده شي، مایع او لوښی دواړه یوځای پراخېږي. د دې پراخوالو توپیر ښکاره پراخوالی بلل کېږي. که V_R په تودولو د مایع د حجم پراخوالی (حقیقي پراخوالی) او V_C د لوښي د حجم پراخوالی وي، نو ښکاره پراخوالی V_A داسې دی؛'),
+        ('eq', 'phys9-u8-eq813', 'V_A = V_R − V_C', '8.13'),
+        ('fig', 'Figure 8.7 REAL AND APPARENT EXPANSION: flasks before heating, after vessel expansion and after real expansion, with liquid levels A, B and C marked.',
+         'شکل 8.7 حقیقی اور ظاہری پھیلاؤ: گرم کرنے سے پہلے، برتن کے پھیلاؤ کے بعد اور حقیقی پھیلاؤ کے بعد کے فلاسک، مائع کی سطحیں A، B اور C نشان زد۔',
+         '8.7 شکل حقیقي او ښکاره پراخوالی: له تودولو مخکې، د لوښي له پراخېدو وروسته او له حقیقي پراخېدو وروسته فلاسکونه، د مایع کچې A، B او C نښه شوې.'),
+        ('p', 'Let a vessel has water up to level A. If heat is applied, the vessel will first expand which will produce an illusion that the water has fallen. This is due to the',
+         'فرض کریں ایک برتن میں پانی سطح A تک ہے۔ حرارت دینے پر پہلے برتن پھیلے گا جس سے یہ دھوکا ہوگا کہ پانی نیچے گرا ہے۔ یہ',
+         'فرض کړئ په یوه لوښي کې اوبه تر A کچې پورې دي. که تودوخه ورکړل شي، لومړی به لوښی پراخ شي چې دا غولونه رامنځته کوي چې اوبه ټیټې شوې. دا د'),
+    ]),
+]

@@ -1,0 +1,26 @@
+@printed 24
+@status lesson
+svg Flowchart 6 || فلوچارٹ 6 || ۶ فلوچارټ
+<svg viewBox="0 0 520 470" width="520" role="img" aria-label="Flowchart 6: START; INPUT; Is M ≥ 80? YES OUTPUT A; NO Is M ≥ 70? YES OUTPUT B; NO Is M ≥ 60? YES OUTPUT C; NO Is M ≥ 50? YES OUTPUT D; NO OUTPUT F; all outputs go to STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.4">
+<defs><marker id="arF6" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" fill="none" marker-end="url(#arF6)">
+<path d="M110 38 V52"/><path d="M110 82 V98"/>
+<path d="M110 152 V188"/><path d="M110 242 V278"/><path d="M110 332 V368"/>
+<path d="M190 125 H262"/><path d="M190 215 H262"/><path d="M190 305 H262"/><path d="M190 395 H262"/>
+<path d="M110 422 V440 H262"/>
+<path d="M370 125 H470 V258"/><path d="M370 215 H460 V258"/><path d="M370 305 H420"/><path d="M370 395 H470 V320"/><path d="M370 440 H490 V320"/>
+</g>
+<rect x="60" y="8" width="100" height="30" rx="15" fill="#e5e7eb" stroke="#111827"/><text x="110" y="28">START</text>
+<polygon points="40,82 60,52 180,52 160,82" fill="#3b82f6" stroke="#111827"/><text x="110" y="72" fill="#fff">INPUT</text>
+<g fill="#fde68a" stroke="#111827"><polygon points="110,98 190,125 110,152 30,125"/><polygon points="110,188 190,215 110,242 30,215"/><polygon points="110,278 190,305 110,332 30,305"/><polygon points="110,368 190,395 110,422 30,395"/></g>
+<text x="110" y="130">Is M ≥ 80 ?</text><text x="110" y="220">Is M ≥ 70 ?</text><text x="110" y="310">Is M ≥ 60 ?</text><text x="110" y="400">Is M ≥ 50 ?</text>
+<g fill="#3b82f6" stroke="#111827"><polygon points="262,140 276,110 370,110 356,140"/><polygon points="262,230 276,200 370,200 356,230"/><polygon points="262,320 276,290 370,290 356,320"/><polygon points="262,410 276,380 370,380 356,410"/><polygon points="262,455 276,425 370,425 356,455"/></g>
+<g fill="#fff"><text x="316" y="130">OUTPUT "A"</text><text x="316" y="220">OUTPUT "B"</text><text x="316" y="310">OUTPUT "C"</text><text x="316" y="400">OUTPUT "D"</text><text x="316" y="445">OUTPUT "F"</text></g>
+<rect x="422" y="262" width="92" height="34" rx="17" fill="#6b7280" stroke="#111827"/><text x="468" y="284" fill="#fff">STOP</text>
+<g font-size="12"><text x="215" y="118">YES</text><text x="215" y="208">YES</text><text x="215" y="298">YES</text><text x="215" y="388">YES</text><text x="128" y="172">NO</text><text x="128" y="262">NO</text><text x="128" y="352">NO</text><text x="128" y="436">NO</text></g>
+</svg>
+endsvg
+@issue Flowchart 6 has no box saying what is input; it is labelled just "INPUT" (the marks M). Kept as printed.
+p **Flowchart 7:** To find expected population after years. || **فلوچارٹ 7:** کئی سال بعد متوقع آبادی معلوم کرنا۔ || **فلوچارټ ۷:** له څو کلونو وروسته متوقع نفوس موندل.
+flow S:START ; IO:INPUT P,R,Y ; P:EP=P*R*Y ; IO:OUTPUT EP ; S:STOP || Flowchart 7 || فلوچارٹ 7 || ۷ فلوچارټ
+@issue Flowchart 7 uses Y for the number of years where Problem 9 uses T; kept as printed.

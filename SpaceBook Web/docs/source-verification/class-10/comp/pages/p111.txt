@@ -1,0 +1,51 @@
+@printed 99
+@status lesson
+@deco The code on this page is printed faintly; braces, "%" signs, "+" signs and "\n" are partly lost and restored from context.
+### پروگرام 5.6 یہ پروگرام while لوپ کی مدد سے 1 سے لے کر 19 تک طاق اعداد کو پرنٹ کرے گا۔ || Program 5.6 This program prints the odd numbers from 1 to 19 with a while loop || پروګرام ۵.۶ دا پروګرام د while لوپ په مرسته له 1 تر 19 طاق عددونه چاپوي
+m # include <stdio.h>
+m void main()
+m {
+m     int n=1, s=0;
+m     while(s<=100)
+m     {
+m     s=s+n;
+m     printf("%d\n",n);
+m     n+=2;
+m     }
+m }
+box info | آؤٹ پُٹ || Output || Output
+m 1
+m 3
+m 5
+m 7
+m 9
+m 11
+m 13
+m 15
+m 17
+m 19
+endbox
+@issue Program 5.6 stops by checking the running sum s<=100 instead of n<=19. It happens to stop after 19, because 1+3+…+19 = 100, but this is an indirect way to control the loop. The scan's "int n=1; s=0;" (semicolon) is read as "int n=1, s=0;".
+### پروگرام 5.7 یہ پروگرام while لوپ کی مدد سے ذیل میں دیئے گئے عددی سلسلے (Series) کا نتیجہ نکال کر اسے سکرین پر پرنٹ کرے گا۔ 2+4+6+…+20 || Program 5.7 This program uses a while loop to work out the result of the series below and print it on the screen: 2+4+6+…+20 || پروګرام ۵.۷ دا پروګرام د while لوپ په مرسته د لاندې عددي لړۍ (Series) پایله پیدا او په سکرین چاپوي: 2+4+6+…+20
+m # include <stdio.h>
+m void main()
+m {
+m     int c, sum=0;
+m     c=2;
+m     while(c<=20)
+m     {
+m     sum=sum+c;
+m     c=c+2;
+m     }
+m     printf("Sum = %d",sum);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m SUM = 110
+endbox
+@issue The code prints "Sum = 110" but the output box shows "SUM = 110".
+@sec 5-1-4 | 5.1.4 do-while لوپ || 5.1.4 The do-while loop || ۵.۱.۴ do-while لوپ
+### 5.1.4 do-while لوپ || 5.1.4 The do-while loop || ۵.۱.۴ do-while لوپ
+p do-while لوپ اس وقت تک اسٹیٹمنٹ کو چلاتی رہتی ہے جب تک شرط کا نتیجہ True رہتا ہے۔ اس لوپ میں، Condition لوپ کی باڈی کے بعد لکھی جاتی ہے۔ یہ ایسی صورت حال میں استعمال ہوتی ہے جب لوپ کی باڈی کو بہر صورت کم از کم ایک بار چلانا مقصود ہو چاہے شرط کا نتیجہ پہلی بار غلط (False) ہو جائے۔ do-while لوپ کو شکل نمبر 5.3 میں دکھایا گیا ہے۔ || The do-while loop keeps running its statements as long as the condition is true. In this loop the condition is written after the body of the loop. It is used when the body of the loop must run at least once in any case, even if the condition is false the first time. The do-while loop is shown in Figure 5.3. || do-while لوپ تر هغه بیانونه چلوي چې شرط True وي. په دې لوپ کې شرط د لوپ له بدنې وروسته لیکل کېږي. دا هغه وخت کارېږي چې د لوپ بدنه باید په هر حال لږ تر لږه یو ځل وچلېږي، که څه هم شرط په لومړي ځل ناسم (False) وي. do-while لوپ په ۵.۳ شکل کې ښودل شوی.
+box note | نوٹ || Note || یادونه
+p do-while لوپ کا استعمال کرتے وقت اس بات کا خیال رکھنا چاہئے کہ پہلے، لوپ کے اندر موجود اسٹیٹمنٹ چلائی جاتی ہیں اور پھر شرط کا جائزہ لیا جاتا ہے، اگر نتیجہ درست ہو جائے تو کنٹرول دوبارہ "do" پر چلا جاتا ہے تاکہ اسے بار بار چلایا جا سکے۔ ایسا بار بار ہوتا ہے جب تک کہ شرط کا نتیجہ غلط (False) نہ ہو جائے۔ ایک بار شرط false ہو جائے تب کنٹرول پروگرام میں اگلی اسٹیٹمنٹ پر منتقل ہو جاتا ہے۔ || When using the do-while loop, remember that the statements inside the loop are run first and then the condition is examined; if it is true, control goes back to "do" so the body runs again. This repeats until the condition becomes false. Once the condition is false, control passes to the next statement in the program. || د do-while لوپ د کارولو پر مهال پام وکړئ چې لومړی د لوپ دننه بیانونه چلېږي او بیا شرط ازمویل کېږي؛ که سم وي، کنټرول بیرته "do" ته ځي چې بیا وچلېږي. دا تر هغه تکرارېږي چې شرط ناسم (False) شي. کله چې شرط false شي، کنټرول د پروګرام راتلونکي بیان ته ځي.
+endbox

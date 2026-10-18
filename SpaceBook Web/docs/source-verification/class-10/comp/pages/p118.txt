@@ -1,0 +1,52 @@
+@printed 106
+@status lesson
+### پروگرام 5.12 یہ پروگرام نیسٹڈ لوپ کی مدد سے آؤٹ پُٹ دکھائے گا۔ || Program 5.12 This program shows output using a nested loop || پروګرام ۵.۱۲ دا پروګرام د ځالې لوپ په مرسته output ښيي
+m # include <stdio.h>
+m void main()
+m {
+m     int i,j;
+m     for(i=1;i<=5;i++)
+m     {
+m     for(j=1;j<=i;j++)
+m     printf("%d\t",j);
+m     }
+m     printf("\n");
+m     }
+m }
+box info | آؤٹ پُٹ || Output || Output
+m 1
+m 1   2
+m 1   2   3
+m 1   2   3   4
+m 1   2   3   4   5
+endbox
+@issue Program 5.12's braces are misplaced: the outer loop's "}" comes before printf("\n"), so the newline is printed only once after both loops end, and the final "}" is an extra brace (a syntax error). As printed it gives 1 1 2 1 2 3 … on one line, not the triangle in the output box; printf("\n") must be inside the outer loop.
+@sec 5-1-9 | 5.1.9 باب 1 کے فلوچارٹس کے لئے کوڈز || 5.1.9 Code for the flowcharts of Chapter 1 || ۵.۱.۹ د ۱ څپرکي د فلوچارټونو کوډونه
+### 5.1.9 باب 1 کے فلوچارٹس کے لئے کوڈز || 5.1.9 Code for the flowcharts of Chapter 1 || ۵.۱.۹ د ۱ څپرکي د فلوچارټونو کوډونه
+### پروگرام 5.13 یہ پروگرام ایک عدد کا Factorial معلوم کرے گا۔ || Program 5.13 This program finds the factorial of a number || پروګرام ۵.۱۳ دا پروګرام د یوه عدد Factorial پیدا کوي
+m #include <iostream>
+m using namespace std;
+m int main() {
+m     int i, n, factorial = 1;
+m     cout<<"Enter a positive integer: ";
+m     cin>>n;
+m     for (i = 1; i <= n; ++i) {
+m         factorial *= i;    // factorial = factorial * i;
+m     }
+m     cout<< "Factorial of "<<n<<" = "<<factorial;
+m     return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter a positive integer: 5
+m Factorial of 5 = 120
+endbox
+### پروگرام 5.14 پروگرام 1 سے 100 تک طاق اعداد کو پرنٹ کرے گا۔ || Program 5.14 The program prints the odd numbers from 1 to 100 || پروګرام ۵.۱۴ پروګرام له 1 تر 100 طاق عددونه چاپوي
+m #include<iostream>
+m using namespace std;
+m int main()
+m {
+m     int i=1;
+m     cout<<"All Odd numbers from 1 to 100 "<<endl<<endl;
+m     while(i<=100)
+m     {
+m      if(i%2==1)

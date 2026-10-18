@@ -1,0 +1,25 @@
+@printed 48
+@status lesson
+p انٹیجر ویری ایبل a اور xy بنانے کے لیے، اور فلوٹ ویری ایبل b بنانے کے لیے، کیریکٹر ویری ایبل ch بنانے کے لیے اور double ویری ایبل sum بنانے کے لیے ذیل میں دی گئی اسٹیٹمنٹ استعمال ہو ں گی۔ || To create the integer variables a and xy, the float variable b, the character variable ch and the double variable sum, the statements given below are used. || د بشپړ عدد متغیرونو a او xy، د float متغیر b، د حرفي متغیر ch او د double متغیر sum د جوړولو لپاره لاندې بیانونه کارېږي.
+m int a, xy;
+m float b;
+m char ch;
+m double sum;
+### ویری ایبل کی ابتدائی قیمت رکھنا (Intialization of Variable) || Initialization of variables || متغیر ته لومړنی ارزښت ورکول
+p جب ایک ویری ایبل بنایا جاتا ہے تو میموری میں اس کے لیے جگہ رکھ دی جاتی ہے۔ ویری ایبل کو بناتے وقت کوئی قیمت رکھنے کے عمل کو انیشیلائزیشن (Initialization of Variable) کہا جاتا ہے۔ || When a variable is created, space is set aside for it in memory. Putting a value into a variable at the time it is created is called initialization. || کله چې متغیر جوړ شي، په حافظه کې ورته ځای ساتل کېږي. د متغیر د جوړولو پر مهال ورته د ارزښت ورکولو بهیر لومړنی ارزښت ورکول (Initialization) بلل کېږي.
+@issue The English heading is misspelled "Intialization"; it should be "Initialization".
+p مثال کے طور پر، انٹیجر ویری ایبل a، b اور c کو 60، 43 اور 77 کی قیمتیں اور n کو 3.35 ویلیو تفویض کر کے فلوٹ ٹائپ کے ویری ایبل بنانے کے عمل کو ذیل کی اسٹیٹمنٹ میں دکھایا گیا ہے: || For example, creating the integer variables a, b and c with the values 60, 43 and 77, and creating the float variable n with the value 3.35, is shown in the statements below: || د بېلګې په توګه، د a، b او c بشپړ عدد متغیرونو ته د 60، 43 او 77 ارزښتونو ورکول او د n float متغیر ته د 3.35 ارزښت ورکول په لاندې بیانونو کې ښودل شوي:
+m int a = 60,  b = 43,  c = 77;
+m float n=3.35;
+@sec 2-key | اہم نکات || Key points || مهم ټکي
+## اہم نکات || Key points || مهم ټکي
+- ہدایات (instructions) کا ایک مجموعہ جو ایک کمپیوٹر کو بتاتا ہے کہ کیا کرنا ہے اور کیسے کرنا ہے اسے پروگرام کہتے ہیں۔ || A set of instructions that tells a computer what to do and how to do it is called a program. || د لارښوونو (instructions) هغه ټولګه چې کمپیوټر ته وايي څه وکړي او څنګه یې وکړي پروګرام بلل کېږي.
+- سائنٹکس (Syntax) دراصل کسی بھی پروگرامنگ لینگویج کے وہ قواعد یا اصول ہیں جن کے تحت کوئی بھی پروگرام لکھا جاتا ہے۔ || Syntax is the set of rules or principles of a programming language according to which any program is written. || ترکیب (Syntax) د یوې پروګرامي ژبې هغه قواعد یا اصول دي چې د هغو له مخې هر پروګرام لیکل کېږي.
+- سیمنٹک (Semantic) ایک پروگرامنگ لینگویج کی اسٹیٹمنٹ کے مطلب کی وضاحت کرتا ہے۔ || Semantics explains the meaning of a statement of a programming language. || سیمانټیک (Semantic) د پروګرامي ژبې د بیان مانا روښانه کوي.
+- پروگرام لکھنے کے لئے استعمال ہونے والے الفاظ، علامات اور کوڈز کا ایک مجموعہ پروگرامنگ لینگویج کہلاتا ہے۔ || A set of words, symbols and codes used for writing programs is called a programming language. || د پروګرام لیکلو لپاره د کارېدونکو کلمو، نښو او کوډونو ټولګه پروګرامي ژبه بلل کېږي.
+- لو لیول لینگویج کمپیوٹر ہارڈ ویئر کے زیادہ قریب ہیں۔ || Low-level languages are closer to the computer hardware. || ټیټې کچې ژبې د کمپیوټر هارډویر ته نږدې دي.
+- کمپیوٹر زبان کی وہ قسم جس میں ہم ہدایات کو بائنری شکل میں لکھتے ہیں اسے مشینی زبان (Machine Language) کہا جاتا ہے۔ || The kind of computer language in which we write instructions in binary form is called machine language. || د کمپیوټر د ژبې هغه ډول چې پکې لارښوونې په باینري بڼه لیکو د ماشین ژبه (Machine Language) بلل کېږي.
+- اسمبلی لینگویج بھی لو لیول لینگویج ہے۔ || Assembly language is also a low-level language. || اسمبلي ژبه هم ټیټې کچې ژبه ده.
+- ہائی لیول لینگویج انگریزی الفاظ پر مبنی زبانیں ہیں۔ || High-level languages are languages based on English words. || لوړې کچې ژبې د انګرېزي کلمو پر بنسټ ژبې دي.
+- انٹرپریٹر ہائی لیول پروگرامنگ لینگویج کا مترجم ہوتا ہے۔ || An interpreter is a translator of a high-level programming language. || انټرپریټر د لوړې کچې پروګرامي ژبې ژباړونکی دی.
+- کمپائلر سسٹم سافٹ ویئر ہے جو ہائی لیول لینگویج کے سورس کوڈ کو مشین لینگوج آبجیکٹ کوڈ میں ترجمہ کرتا ہے۔ || A compiler is system software that translates the source code of a high-level language into machine-language object code. || کمپایلر یو سیسټم سافټویر دی چې د لوړې کچې ژبې سرچینه کوډ د ماشین ژبې object کوډ ته ژباړي.

@@ -1,0 +1,23 @@
+@pdf 25
+@printed 17
+@status lesson
+### Problem 20 || مسئلہ 20 || ستونزه ۲۰
+p **Determine prime numbers in integers ranging from n1 to n2 (where n1 is greater than n2).** || **n1 سے n2 تک کے صحیح اعداد میں مفرد اعداد معلوم کریں (جہاں n1 بڑا ہے n2 سے)۔** || **له n1 تر n2 پورې په بشپړو عددونو کې اولي عددونه وټاکئ (چېرې چې n1 له n2 لوی دی).**
+p **Algorithm:** This algorithm determine prime numbers between **n1** and **n2** where **n1>n2**. || **الگورتھم:** یہ الگورتھم **n1** اور **n2** کے درمیان مفرد اعداد معلوم کرتا ہے جہاں **n1>n2**۔ || **الګوریتم:** دا الګوریتم د **n1** او **n2** ترمنځ اولي عددونه ټاکي چېرې چې **n1>n2**.
+m Step 1. Read n1, n2
+m Step 2. Set n=n2+1
+m Step 3. Repeat Step 4 while n<n1
+m Step 4. Repeat Step 5 for i=2 to  n-1.
+m Step 5. If n%i=0 Then Set n=n+1 Go to Step 3
+m Else
+m          (a)Write n
+m          (b) Set n=n+1
+m Step 6. Exit
+@issue As printed, Step 5 writes n as soon as one i does not divide it, so composite numbers are also written; a correct test writes n only after no i in 2..n-1 divides it. Kept as printed.
+@sec 1-3 | 1.3 Flowchart || 1.3 فلوچارٹ || ۱.۳ فلوچارټ
+## 1.3 FLOWCHART || 1.3 فلوچارٹ || ۱.۳ فلوچارټ
+### 1.3.1 A Flowchart || 1.3.1 فلوچارٹ || ۱.۳.۱ فلوچارټ
+p Flowchart is a combination of two words **flow** and **chart**. Flowchart is a diagrammatic representation of algorithm. Flowchart consists of different symbols to display information about any program. Each of these symbols is linked with arrows to show the flow direction of the process towards a solution. Figure 1.7 shows a sample flowchart. || فلوچارٹ دو الفاظ **فلو** (بہاؤ) اور **چارٹ** کا مجموعہ ہے۔ فلوچارٹ الگورتھم کی تصویری (خاکہ جاتی) نمائندگی ہے۔ فلوچارٹ مختلف علامات پر مشتمل ہوتا ہے جو کسی پروگرام کے بارے میں معلومات ظاہر کرتی ہیں۔ ان میں سے ہر علامت تیروں سے جڑی ہوتی ہے تاکہ حل کی طرف عمل کے بہاؤ کی سمت ظاہر ہو۔ شکل 1.7 ایک نمونہ فلوچارٹ دکھاتی ہے۔ || فلوچارټ د دوو کلمو **flow** (بهیر) او **chart** ترکیب دی. فلوچارټ د الګوریتم انځوریز ښکارندوی دی. فلوچارټ له بېلابېلو نښو جوړ دی چې د هر پروګرام په اړه معلومات ښيي. هره نښه په غشو نښلول کېږي څو حل ته د بهیر لوری وښيي. ۱.۷ شکل یو نمونه فلوچارټ ښيي.
+### 1.3.2 Importance of a Flowchart for Solving a Problem || 1.3.2 مسئلہ حل کرنے کے لیے فلوچارٹ کی اہمیت || ۱.۳.۲ د ستونزې د حل لپاره د فلوچارټ اهمیت
+p Flowcharting is a technique used to analyze, improve, document and manage a process or program. || فلوچارٹ بنانا ایک تکنیک ہے جو کسی عمل یا پروگرام کے تجزیے، بہتری، دستاویز بندی اور انتظام کے لیے استعمال ہوتی ہے۔ || فلوچارټ جوړول یو تخنیک دی چې د یوه بهیر یا پروګرام د شننې، ښه کولو، مستند کولو او اداره کولو لپاره کارېږي.
+p Flowcharts are commonly used in developing business plans, designing algorithms and determining troubleshooting steps. || فلوچارٹ عموماً کاروباری منصوبے بنانے، الگورتھم ڈیزائن کرنے اور خرابی دور کرنے کے مراحل طے کرنے میں استعمال ہوتے ہیں۔ || فلوچارټونه معمولاً د سوداګریزو پلانونو په جوړولو، د الګوریتمونو په ډیزاین او د ستونزو د حل ګامونو په ټاکلو کې کارېږي.

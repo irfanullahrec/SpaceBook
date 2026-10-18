@@ -1,0 +1,27 @@
+@printed 6
+@status lesson
+svg Figure 1.5 Selecting the best Solution || شکل 1.5 بہترین حل کا انتخاب || ۱.۵ شکل د غوره حل ټاکل
+<svg viewBox="0 0 320 210" width="320" role="img" aria-label="Diagram: central ellipse Selecting the best solution linked to three ellipses: Speed above, Cost lower left, Complexity lower right" font-family="Noto Nastaliq Urdu, Jameel Noori Nastaleeq, serif" font-size="16" text-anchor="middle">
+<line x1="160" y1="58" x2="160" y2="84" stroke="#111827"/>
+<line x1="110" y1="128" x2="88" y2="146" stroke="#111827"/>
+<line x1="212" y1="128" x2="234" y2="146" stroke="#111827"/>
+<ellipse cx="160" cy="34" rx="56" ry="26" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="160" y="40">سرعت</text>
+<ellipse cx="160" cy="106" rx="90" ry="28" fill="#fce7f3" stroke="#7e22ce" stroke-width="2"/>
+<text x="160" y="112">بہترین حل کا چناؤ کرنا</text>
+<ellipse cx="74" cy="170" rx="56" ry="26" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2"/>
+<text x="74" y="176">لاگت</text>
+<ellipse cx="246" cy="170" rx="56" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+<text x="246" y="176">پیچیدگی</text>
+</svg>
+endsvg
+@issue In this book the centre of Figure 1.5 reads "Solution for Solving the Problem" (linked to Speed, Cost and Complexity); the reused drawing labels the centre "Selecting the best solution".
+- Speed || رفتار || چټکتیا
+- Cost || لاگت || لګښت
+- Complexity || پیچیدگی || پېچلتیا
+### a. Speed || الف۔ رفتار || الف. چټکتیا
+p To develop an efficient solution for solving the problems, the time it uses is the major measure of the efficiency of that solution. || مسائل حل کرنے کے لیے مؤثر حل تیار کرنے میں، اس حل کا استعمال کردہ وقت اس کی کارکردگی کا بڑا پیمانہ ہے۔ || د ستونزو د حل لپاره د اغېزمن حل په جوړولو کې، هغه وخت چې حل یې کاروي د هغه حل د اغېزمنتیا لوی معیار دی.
+### b. Cost || ب۔ لاگت || ب. لګښت
+p Cost of a solution includes, space and other hardware and software requirements. The solution will be considered to be the best one if it gives optimal desired result with minimum cost. || کسی حل کی لاگت میں جگہ (میموری) اور دیگر ہارڈویئر و سافٹ ویئر کی ضروریات شامل ہیں۔ وہ حل بہترین سمجھا جائے گا جو کم سے کم لاگت پر مطلوبہ بہترین نتیجہ دے۔ || د یوه حل لګښت ځای (حافظه) او نورې هارډوېر او سافټوېر اړتیاوې رانغاړي. هغه حل به غوره وګڼل شي چې په لږ لګښت مطلوبه غوره پایله ورکړي.
+### c. Complexity || ج۔ پیچیدگی || ج. پېچلتیا
+p Complexity of the solution means the resources required by the solution, most commonly known as the *time* -- how many steps it needs and the *space* -- how much memory it takes. || حل کی پیچیدگی سے مراد حل کو درکار وسائل ہیں، جو عموماً *وقت* — یعنی اسے کتنے مراحل درکار ہیں، اور *جگہ* — یعنی یہ کتنی میموری لیتا ہے، کہلاتے ہیں۔ || د حل پېچلتیا هغه سرچینې دي چې حل ورته اړتیا لري، چې عموماً *وخت* — څو ګامونو ته اړتیا لري، او *ځای* — څومره حافظه نیسي، بلل کېږي.

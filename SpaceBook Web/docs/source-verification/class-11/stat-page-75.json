@@ -1,0 +1,514 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s075-median-continuous",
+  "title": "2.3.3 Median for continuous series · Example 2.15",
+  "headingUrdu": "2.3.3 مسلسل سلسلے کے لیے وسطانیہ · مثال 2.15",
+  "headingPashto": "2.3.3 د دوامدارې لړۍ لپاره میانه · بېلګه 2.15",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 75,
+    "printedPage": "67"
+  },
+  "auditStatus": "corrected; verification pending",
+  "paras": [
+    {
+      "id": "stat11-s075-h233",
+      "en": "2.3.3 Computation of median in case of continuous series or grouped data",
+      "ur": "2.3.3 مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں وسطانیہ کا حساب",
+      "ps": "2.3.3 د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې د میانې محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s075-si",
+      "en": "Step-i: Arrange the classes along with frequencies if needed.",
+      "ur": "مرحلہ-i: ضرورت ہو تو جماعتوں کو تعددات کے ساتھ ترتیب دیں۔",
+      "ps": "ګام-i: که اړتیا وي ټولګي له فریکونسیو سره ترتیب کړئ."
+    },
+    {
+      "id": "stat11-s075-sii",
+      "en": "Step-ii: Compute class boundaries and cumulative frequencies.",
+      "ur": "مرحلہ-ii: جماعتی سرحدیں اور جمعی تعددات حساب کریں۔",
+      "ps": "ګام-ii: د ټولګي پولې او مجموعي فریکونسۍ محاسبه کړئ."
+    },
+    {
+      "id": "stat11-s075-siii",
+      "en": "Step-iii: Use formula of discrete case to locate the median class.",
+      "ur": "مرحلہ-iii: وسطانیہ جماعت معلوم کرنے کے لیے منفصل صورت کا فارمولا استعمال کریں۔",
+      "ps": "ګام-iii: د میانې ټولګی موندلو لپاره د منفصل حالت فورمول وکاروئ."
+    },
+    {
+      "id": "stat11-s075-siv",
+      "en": "Step-iv: Calculate the median by formula,",
+      "ur": "مرحلہ-iv: فارمولے سے وسطانیہ حساب کریں،",
+      "ps": "ګام-iv: میانه د فورمول په واسطه محاسبه کړئ،"
+    },
+    {
+      "id": "stat11-s075-wh",
+      "en": "Where",
+      "ur": "جہاں",
+      "ps": "چېرته چې"
+    },
+    {
+      "id": "stat11-s075-w1",
+      "en": "l₁: lower limit of the class boundaries in which median lies.",
+      "ur": "l₁: جماعتی سرحدوں کی زیریں حد جس میں وسطانیہ واقع ہے۔",
+      "ps": "l₁: د ټولګي د پولو ښکتنی حد چې په هغه کې میانه پرته ده.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s075-w2",
+      "en": "h: class interval of the median class.",
+      "ur": "h: وسطانیہ جماعت کا جماعتی وقفہ۔",
+      "ps": "h: د میانې ټولګي د ټولګي وقفه.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s075-w3",
+      "en": "f: median class frequency",
+      "ur": "f: وسطانیہ جماعت کا تعدد",
+      "ps": "f: د میانې ټولګي فریکونسي",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s075-w4",
+      "en": "c: cumulative frequency of the preceding class.",
+      "ur": "c: ماقبل جماعت کا جمعی تعدد۔",
+      "ps": "c: د مخکیني ټولګي مجموعي فریکونسي.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s075-ex",
+      "en": "Example: 2.15",
+      "ur": "مثال: 2.15",
+      "ps": "بېلګه: 2.15",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "id": "stat11-s075-q",
+      "en": "Find out median of the following series:",
+      "ur": "درج ذیل سلسلے کا وسطانیہ معلوم کریں:",
+      "ps": "د لاندې لړۍ میانه ومومئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "id": "stat11-s075-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "id": "stat11-s075-sa",
+      "en": "Since n = Σf = 53 is odd, therefore,",
+      "ur": "چونکہ n = Σf = 53 طاق ہے، لہٰذا،",
+      "ps": "ځکه چې n = Σf = 53 طاق دی، نو،",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "id": "stat11-s075-sb",
+      "en": "This implies that median lies in the group (39.5 - 49.5).",
+      "ur": "اس کا مطلب ہے کہ وسطانیہ گروہ (39.5 - 49.5) میں واقع ہے۔",
+      "ps": "پدې معنا چې میانه په ډله (39.5 - 49.5) کې پرته ده.",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-15"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s075-h233",
+        "stat11-s075-si",
+        "stat11-s075-sii",
+        "stat11-s075-siii",
+        "stat11-s075-siv"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s075-wh",
+        "stat11-s075-w1",
+        "stat11-s075-w2",
+        "stat11-s075-w3",
+        "stat11-s075-w4",
+        "stat11-s075-ex",
+        "stat11-s075-q"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s075-sol"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s075-sa"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s075-sb"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    }
+  ],
+  "vocabulary": {
+    "median class": {
+      "ur": "وسطانیہ جماعت",
+      "ps": "د میانې ټولګی"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s075-f",
+      "latex": "\\text{Median}=l_1+\\dfrac{h}{f}\\left(\\dfrac{\\sum f}{2}-c\\right).",
+      "accessible": "Median = l1 + (h/f)(Σf/2 − c).",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s075-m1",
+      "latex": "\\text{Median}=\\left(\\dfrac{\\sum f+1}{2}\\right)\\text{th value}=\\left(\\dfrac{53+1}{2}\\right)\\text{th value}=27\\text{th value.}",
+      "accessible": "Median = ((Σf + 1)/2)th value = ((53 + 1)/2)th value = 27th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value = ((53 + 1)/2)th value = 27th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value = ((53 + 1)/2)th value = 27th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value = ((53 + 1)/2)th value = 27th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "id": "stat11-s075-m2",
+      "latex": "\\text{Hence Median}=l_1+\\dfrac{h}{f}\\left(\\dfrac{\\sum f}{2}-c\\right).",
+      "accessible": "Hence Median = l1 + (h/f)(Σf/2 − c).",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Hence Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Hence Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Hence Median = l1 + (h/f)(Σf/2 − c)."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-15"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.15: wages",
+      "captionUrdu": "مثال 2.15: اجرتیں",
+      "captionPashto": "بېلګه 2.15: مزدورۍ",
+      "headers": [
+        {
+          "en": "Wages:",
+          "ur": "اجرتیں:",
+          "ps": "مزدورۍ:"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        },
+        {
+          "en": "40 – 49",
+          "ur": "40 – 49",
+          "ps": "40 – 49"
+        },
+        {
+          "en": "50 – 59",
+          "ur": "50 – 59",
+          "ps": "50 – 59"
+        },
+        {
+          "en": "60 – 69",
+          "ur": "60 – 69",
+          "ps": "60 – 69"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "No. of labour:",
+            "ur": "مزدوروں کی تعداد:",
+            "ps": "د کارګرانو شمېر:"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-15"
+    },
+    {
+      "caption": "Example 2.15: class boundaries and c.f",
+      "captionUrdu": "مثال 2.15: جماعتی سرحدیں اور c.f",
+      "captionPashto": "بېلګه 2.15: د ټولګي پولې او c.f",
+      "headers": [
+        {
+          "en": "Wages",
+          "ur": "اجرتیں",
+          "ps": "مزدورۍ"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "جماعتی سرحدیں",
+          "ps": "د ټولګي پولې"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "20 – 29",
+            "ur": "20 – 29",
+            "ps": "20 – 29"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "19.5 – 29.5",
+            "ur": "19.5 – 29.5",
+            "ps": "19.5 – 29.5"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ],
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "29.5 – 39.5",
+            "ur": "29.5 – 39.5",
+            "ps": "29.5 – 39.5"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          }
+        ],
+        [
+          {
+            "en": "40 – 49",
+            "ur": "40 – 49",
+            "ps": "40 – 49"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "39.5 – 49.5",
+            "ur": "39.5 – 49.5",
+            "ps": "39.5 – 49.5"
+          },
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          }
+        ],
+        [
+          {
+            "en": "50 – 59",
+            "ur": "50 – 59",
+            "ps": "50 – 59"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "49.5 – 59.5",
+            "ur": "49.5 – 59.5",
+            "ps": "49.5 – 59.5"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          }
+        ],
+        [
+          {
+            "en": "60 – 69",
+            "ur": "60 – 69",
+            "ps": "60 – 69"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "59.5 – 69.5",
+            "ur": "59.5 – 69.5",
+            "ps": "59.5 – 69.5"
+          },
+          {
+            "en": "53",
+            "ur": "53",
+            "ps": "53"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "53",
+            "ur": "53",
+            "ps": "53"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-15",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 67. The page-number badge at the foot is partly cut off. The data lines (Wages / No. of labour) are printed as text rows and kept as a one-row table. A white patch at the top-right is a scan artefact. Header graphics and watermark excluded."
+}

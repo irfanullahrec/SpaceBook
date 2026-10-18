@@ -1,0 +1,30 @@
+@printed 168
+@status lesson
+### شکل نمبر 7.45 HTML ڈاکومنٹ میں ہائپر لنکس بنانا || Figure 7.45 Making hyperlinks in an HTML document || ۷.۴۵ شکل په HTML سند کې هایپرلینکونه جوړول
+m <html>
+m <head>
+m <title> Pak Official Websites</title>
+m </head>
+m <body>
+m <font size=5> Educational Websites</font><br>
+m <a href="https://www.eduvision.edu.pk/">Eduvision</a><br>
+m <a href="https://www.bisep.edu.pk/">Peshawar Board</a><br>
+m <a href="https://www.aiou.edu.pk/">Allama Iqbal Open University</a><br>
+m <font size=5> News and Information Websites</font><br>
+m <a href="https://www.urdupoint.com/">Urdu Point</a><br>
+m <a href="https://www.bbc.com/urdu/">BBC Urdu Service</a><br>
+m <a href="https://www.jang.com.pk/">Jang News</a><br>
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.46 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.46. || براوزر کړکۍ به یې لکه په ۷.۴۶ شکل کې وښيي.
+box info | شکل نمبر 7.46 ویب پیج میں ہائپر لنکس || Figure 7.46 Hyperlinks on a web page || ۷.۴۶ شکل په ویب پاڼه کې هایپرلینکونه
+p **Educational Websites** || **Educational Websites** || **Educational Websites**
+p Eduvision · Peshawar Board · Allama Iqbal Open University (نیلے، خط کشیدہ لنکس) || Eduvision · Peshawar Board · Allama Iqbal Open University (blue underlined links) || Eduvision · Peshawar Board · Allama Iqbal Open University (شین، لاندې کرښه لرونکي لینکونه)
+p **News and Information Websites** || **News and Information Websites** || **News and Information Websites**
+p Urdu Point · BBC Urdu Service · Jang News (نیلے، خط کشیدہ لنکس) || Urdu Point · BBC Urdu Service · Jang News (blue underlined links) || Urdu Point · BBC Urdu Service · Jang News (شین، لاندې کرښه لرونکي لینکونه)
+endbox
+@sec 7-6-4 | 7.6.4 ویب پیج کے اندر ہائپر لنک بنانا || 7.6.4 Making a hyperlink within a web page || ۷.۶.۴ د ویب پاڼې دننه هایپرلینک جوړول
+### 7.6.4 ویب پیج کے اندر ہائپر لنک بنانا || 7.6.4 Making a hyperlink within a web page || ۷.۶.۴ د ویب پاڼې دننه هایپرلینک جوړول
+### <a> میں name کا استعمال || Using name in <a> || په <a> کې د name کارونه
+p اینکر کو اپنے ہی ایٹریبیوٹ name کے ساتھ استعمال کر کے ویب پیج کے اندر ہی ہائپر لنک بنایا جا سکتا ہے۔ یہ دو مرحلوں میں ہو گا۔ پہلے اینکر بنائیں اور پھر اینکر کو ہائپر لنک بنائیں۔ || By using the anchor with its own attribute name, a hyperlink can be made within the same web page. This is done in two steps: first make the anchor, then make a hyperlink to the anchor. || د اینکر د خپلې name ځانګړتیا په کارولو د همدې ویب پاڼې دننه هایپرلینک جوړېدای شي. دا په دوو پړاوونو کېږي: لومړی اینکر جوړ کړئ، بیا اینکر ته هایپرلینک جوړ کړئ.
+@issue The name attribute on <a> is obsolete in HTML5; an id on any element (e.g. <h2 id="top">) is used as the link target instead.

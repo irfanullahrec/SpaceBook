@@ -1,0 +1,325 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s104-p095",
+  "title": "Exercise: Q1 (xiv–xv); Q2 short answers; Q3 detailed answers",
+  "headingUrdu": "مشق: سوال ۱ (xiv، xv)؛ سوال ۲ مختصر جوابات؛ سوال ۳ تفصیلی جوابات",
+  "headingPashto": "تمرین: ۱ پوښتنه (xiv، xv)؛ ۲ پوښتنه لنډ ځوابونه؛ ۳ پوښتنه مفصل ځوابونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 104,
+    "printedPage": "95"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s104-m14",
+      "en": "xiv. How many op-codes do a Zero-Address instruction has?",
+      "ur": "xiv۔ صفر پتہ ہدایت میں کتنے او پی کوڈ ہوتے ہیں؟",
+      "ps": "xiv. د صفر پتې لارښوونه څو op-code لري؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m14"
+    },
+    {
+      "id": "cs11-s104-m14o0",
+      "en": "A. 1",
+      "ur": "A۔ ۱",
+      "ps": "A. ۱ (یو)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m14"
+    },
+    {
+      "id": "cs11-s104-m14o1",
+      "en": "B. 2",
+      "ur": "B۔ ۲",
+      "ps": "B. ۲ (دوه)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m14"
+    },
+    {
+      "id": "cs11-s104-m14o2",
+      "en": "C. 3",
+      "ur": "C۔ ۳",
+      "ps": "C. ۳ (درې)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m14"
+    },
+    {
+      "id": "cs11-s104-m14o3",
+      "en": "D. 0",
+      "ur": "D۔ ۰",
+      "ps": "D. ۰ (صفر)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m14"
+    },
+    {
+      "id": "cs11-s104-m15",
+      "en": "xv. Which of the following is not an arithmetic instruction?",
+      "ur": "xv۔ درج ذیل میں سے کون سی ریاضیاتی ہدایت نہیں ہے؟",
+      "ps": "xv. لاندې له لارښوونو نه کومه یوه ریاضیاتي لارښوونه نه ده؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m15"
+    },
+    {
+      "id": "cs11-s104-m15o0",
+      "en": "A. DIV",
+      "ur": "A۔ ڈی آئی وی",
+      "ps": "A. DIV (ډي آي وي)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m15"
+    },
+    {
+      "id": "cs11-s104-m15o1",
+      "en": "B. MUL",
+      "ur": "B۔ ایم یو ایل",
+      "ps": "B. MUL (ایم یو ایل)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m15"
+    },
+    {
+      "id": "cs11-s104-m15o2",
+      "en": "C. SUB",
+      "ur": "C۔ ایس یو بی",
+      "ps": "C. SUB (ایس یو بي)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m15"
+    },
+    {
+      "id": "cs11-s104-m15o3",
+      "en": "D. JMP",
+      "ur": "D۔ جے ایم پی",
+      "ps": "D. JMP (جې ایم پي)",
+      "role": "option",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "m15"
+    },
+    {
+      "id": "cs11-s104-q2",
+      "en": "Q2. Give short answers to the following questions.",
+      "ur": "سوال ۲: درج ذیل سوالات کے مختصر جواب دیں۔",
+      "ps": "۲ پوښتنه: د لاندې پوښتنو لنډ ځوابونه ورکړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise"
+    },
+    {
+      "id": "cs11-s104-s0",
+      "en": "i. What is the function of ALU in the computer?",
+      "ur": "i۔ کمپیوٹر میں اے ایل یو کا کیا کام ہے؟",
+      "ps": "i. په کمپیوټر کې د ALU څه دنده ده؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s1",
+      "en": "ii. What is the function of control unit in the computer?",
+      "ur": "ii۔ کمپیوٹر میں کنٹرول یونٹ کا کیا کام ہے؟",
+      "ps": "ii. په کمپیوټر کې د کنټرول واحد څه دنده ده؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s2",
+      "en": "iii. What is a microprocessor?",
+      "ur": "iii۔ مائیکرو پراسیسر کیا ہے؟",
+      "ps": "iii. مایکروپروسیسر څه دی؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s3",
+      "en": "iv. Define system bus.",
+      "ur": "iv۔ سسٹم بس کی تعریف کریں۔",
+      "ps": "iv. سیسټم بس تعریف کړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s4",
+      "en": "v. Write short note on Memory Buffer Register (MBR).",
+      "ur": "v۔ میموری بفر رجسٹر (ایم بی آر) پر مختصر نوٹ لکھیں۔",
+      "ps": "v. د حافظې د بفر رجستر (MBR) لنډ نوټ ولیکئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s5",
+      "en": "vi. What is CPU operation?",
+      "ur": "vi۔ سی پی یو کا عمل کیا ہے؟",
+      "ps": "vi. د CPU عمل څه دی؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s6",
+      "en": "vii. What is meant by an instruction?",
+      "ur": "vii۔ ہدایت سے کیا مراد ہے؟",
+      "ps": "vii. د لارښوونې نه څه مراد دی؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s7",
+      "en": "viii. Differentiate between op-code and operand?",
+      "ur": "viii۔ او پی کوڈ اور آپرینڈ میں فرق کریں۔",
+      "ps": "viii. د op-code او عملوند ترمنځ توپیر وکړئ؟",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s8",
+      "en": "ix. Show computer instruction format with the help of a diagram and label its parts.",
+      "ur": "ix۔ ایک خاکے کی مدد سے کمپیوٹر ہدایت کی شکل دکھائیں اور اس کے حصوں پر لیبل لگائیں۔",
+      "ps": "ix. د یو ډیاګرام په مرسته د کمپیوټر د لارښوونې بڼه وښيئ او د هغې برخو ته لیبل ورکړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-s9",
+      "en": "x. Differentiate between CISC and RISC processor architecture.",
+      "ur": "x۔ سی آئی ایس سی اور آر آئی ایس سی پراسیسر ڈھانچے میں فرق کریں۔",
+      "ps": "x. د CISC او RISC پروسیسر جوړښت ترمنځ توپیر وکړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q2"
+    },
+    {
+      "id": "cs11-s104-q3",
+      "en": "Q3. Give detailed answers to the following questions.",
+      "ur": "سوال ۳: درج ذیل سوالات کے تفصیلی جواب دیں۔",
+      "ps": "۳ پوښتنه: د لاندې پوښتنو مفصل ځوابونه ورکړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise"
+    },
+    {
+      "id": "cs11-s104-r0",
+      "en": "i. What is CPU? Describe basic components of CPU in detail.",
+      "ur": "i۔ سی پی یو کیا ہے؟ سی پی یو کے بنیادی اجزاء تفصیل سے بیان کریں۔",
+      "ps": "i. CPU څه دی؟ د CPU بنسټیز اجزا په تفصیل سره بیان کړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q3"
+    },
+    {
+      "id": "cs11-s104-r1",
+      "en": "ii. What is a register? Explain different types of registers.",
+      "ur": "ii۔ رجسٹر کیا ہے؟ رجسٹرز کی مختلف اقسام کی وضاحت کریں۔",
+      "ps": "ii. رجستر څه دی؟ د رجسترونو مختلف ډولونه تشریح کړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q3"
+    },
+    {
+      "id": "cs11-s104-r2",
+      "en": "iii. What is a system bus? Explain different types of buses used in computers.",
+      "ur": "iii۔ سسٹم بس کیا ہے؟ کمپیوٹرز میں استعمال ہونے والی بسوں کی مختلف اقسام کی وضاحت کریں۔",
+      "ps": "iii. سیسټم بس څه دی؟ په کمپیوټرونو کې کارېدونکي بسونو مختلف ډولونه تشریح کړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q3"
+    },
+    {
+      "id": "cs11-s104-r3",
+      "en": "iv. Explain different types of CPU instructions. Also give examples.",
+      "ur": "iv۔ سی پی یو ہدایات کی مختلف اقسام کی وضاحت کریں۔ مثالیں بھی دیں۔",
+      "ps": "iv. د CPU د لارښوونو مختلف ډولونه تشریح کړئ. بېلګې هم ورکړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q3"
+    },
+    {
+      "id": "cs11-s104-r4",
+      "en": "v. What is Instruction cycle? Explain different phases of CPU instruction cycle.",
+      "ur": "v۔ ہدایتی چکر کیا ہے؟ سی پی یو کے ہدایتی چکر کے مختلف مراحل کی وضاحت کریں۔",
+      "ps": "v. د لارښوونې دوره څه ده؟ د CPU د لارښوونې د دورې مختلف پړاوونه تشریح کړئ.",
+      "role": "question",
+      "exerciseId": "cs11-u3-q",
+      "tab": "exercise",
+      "listGroup": "q3"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s104-m14",
+        "cs11-s104-m14o0",
+        "cs11-s104-m14o1",
+        "cs11-s104-m14o2",
+        "cs11-s104-m14o3",
+        "cs11-s104-m15",
+        "cs11-s104-m15o0",
+        "cs11-s104-m15o1",
+        "cs11-s104-m15o2",
+        "cs11-s104-m15o3",
+        "cs11-s104-q2",
+        "cs11-s104-s0",
+        "cs11-s104-s1",
+        "cs11-s104-s2",
+        "cs11-s104-s3",
+        "cs11-s104-s4",
+        "cs11-s104-s5",
+        "cs11-s104-s6",
+        "cs11-s104-s7",
+        "cs11-s104-s8",
+        "cs11-s104-s9",
+        "cs11-s104-q3",
+        "cs11-s104-r0",
+        "cs11-s104-r1",
+        "cs11-s104-r2",
+        "cs11-s104-r3",
+        "cs11-s104-r4"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 95: questions xiv–xv of Q1, “Q2. Give short answers to the following questions.” with ten questions i–x and “Q3. Give detailed answers to the following questions.” with five questions i–v. A handwritten scribble in the margin is excluded. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:59:10.827130+00:00",
+    "scope": "Scan 104 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

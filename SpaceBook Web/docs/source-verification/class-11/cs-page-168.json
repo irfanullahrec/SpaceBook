@@ -1,0 +1,124 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s168-p159",
+  "title": "TCP/IP (end); 5.3.1 TCP/IP Protocol Suite Architecture; a. TCP/IP Architecture",
+  "headingUrdu": "ٹی سی پی / آئی پی (اختتام)؛ ۵.۳.۱ ٹی سی پی / آئی پی پروٹوکول سوئٹ آرکیٹیکچر؛ الف۔ ٹی سی پی / آئی پی آرکیٹیکچر",
+  "headingPashto": "TCP/IP (پای)؛ ۵.۳.۱ د TCP/IP پروتوکول ټولګې جوړښت؛ الف. د TCP/IP جوړښت",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 168,
+    "printedPage": "159"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s168-a",
+      "en": "Department of Defense (DoD) Advanced Research Projects Agency (ARPA) in 1969 for a research sharing project called ARPANET. Internet was built on the foundation of the original ARPANET project.",
+      "ur": "کے محکمہ دفاع (ڈی او ڈی) کی ایڈوانسڈ ریسرچ پراجیکٹس ایجنسی (آرپا) نے ۱۹۶۹ء میں آرپانیٹ نامی تحقیق کے اشتراک کے منصوبے کے لیے تیار کیا۔ انٹرنیٹ اصل آرپانیٹ منصوبے کی بنیاد پر بنا۔",
+      "ps": "د دفاع وزارت (DoD) د پرمختللو څېړنیزو پروژو اداره (ARPA) په ۱۹۶۹ کې د ARPANET په نوم د څېړنې د ګډولو پروژې لپاره جوړ کړی. انټرنېټ د اصلي ARPANET پروژې پر بنسټ جوړ شوی.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s168-h1",
+      "en": "5.3.1 TCP/IP Protocol Suite Architecture",
+      "ur": "۵.۳.۱ ٹی سی پی / آئی پی پروٹوکول سوئٹ آرکیٹیکچر",
+      "ps": "۵.۳.۱ د TCP/IP پروتوکول ټولګې جوړښت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s168-b",
+      "en": "A protocol suite is a group of protocols that all work together to allow software or hardware to perform a function. The TCP/IP protocol suite is a good example of it. The three important points associated with TCP/IP protocol suit are:",
+      "ur": "پروٹوکول سوئٹ پروٹوکولز کا ایک گروہ ہے جو سب مل کر کام کرتے ہیں تاکہ سافٹ ویئر یا ہارڈ ویئر کوئی فعل انجام دے سکے۔ ٹی سی پی / آئی پی پروٹوکول سوئٹ اس کی اچھی مثال ہے۔ ٹی سی پی / آئی پی پروٹوکول سوئٹ سے وابستہ تین اہم نکات یہ ہیں:",
+      "ps": "د پروتوکول ټولګه د پروتوکولونو یوه ډله ده چې ټول یو ځای کار کوي ترڅو سافټویر یا هارډویر یوه دنده ترسره کړي. د TCP/IP پروتوکول ټولګه د دې ښه بېلګه ده. د TCP/IP پروتوکول ټولګې سره تړلې درې مهمې ټکي دا دي:"
+    },
+    {
+      "id": "cs11-s168-t1",
+      "en": "TCP/IP Architecture",
+      "ur": "ٹی سی پی / آئی پی آرکیٹیکچر",
+      "ps": "د TCP/IP جوړښت",
+      "listGroup": "tcp3"
+    },
+    {
+      "id": "cs11-s168-t2",
+      "en": "TCP/IP PORTS",
+      "ur": "ٹی سی پی / آئی پی پورٹس",
+      "ps": "د TCP/IP پورټونه",
+      "listGroup": "tcp3"
+    },
+    {
+      "id": "cs11-s168-t3",
+      "en": "TCP/IP Applications",
+      "ur": "ٹی سی پی / آئی پی ایپلیکیشنز",
+      "ps": "د TCP/IP اپلېکېشنونه",
+      "listGroup": "tcp3"
+    },
+    {
+      "id": "cs11-s168-h2",
+      "en": "a. TCP/IP Architecture",
+      "ur": "الف۔ ٹی سی پی / آئی پی آرکیٹیکچر",
+      "ps": "الف. د TCP/IP جوړښت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s168-c",
+      "en": "TCP/IP protocol suit consists of a layered architecture where each layer depicts some functionality which can be carried out by a protocol. Each layer usually has more than one protocol options to carry out the responsibility that the layer adheres to. It is named from two of the most important protocols in it. That is Transmission Control Protocol and Internet Protocol. TCP/IP is normally considered to be a 4 layer system. The TCP/IP model breaks down into the following four layers.",
+      "ur": "ٹی سی پی / آئی پی پروٹوکول سوئٹ تہہ دار آرکیٹیکچر پر مشتمل ہے جس میں ہر تہہ کوئی فعلیت ظاہر کرتی ہے جو کسی پروٹوکول کے ذریعے انجام دی جا سکتی ہے۔ ہر تہہ میں عموماً اس ذمہ داری کو پورا کرنے کے لیے ایک سے زیادہ پروٹوکول کے اختیارات ہوتے ہیں جس کی وہ تہہ پابند ہے۔ اس کا نام اس کے دو اہم ترین پروٹوکولز سے لیا گیا ہے۔ یعنی ٹرانسمیشن کنٹرول پروٹوکول اور انٹرنیٹ پروٹوکول۔ ٹی سی پی / آئی پی کو عموماً چار تہوں کا نظام سمجھا جاتا ہے۔ ٹی سی پی / آئی پی ماڈل درج ذیل چار تہوں میں تقسیم ہوتا ہے۔",
+      "ps": "د TCP/IP پروتوکول ټولګه له یوه طبقه لرونکي جوړښت جوړه ده چې هره طبقه یو فعالیت ښيي چې د پروتوکول لخوا ترسره کېدای شي. هره طبقه معمولاً له یو څخه ډیر پروتوکول اختیارونه لري ترڅو هغه مسؤلیت پوره کړي چې طبقه ورسره تړلې ده. نوم یې د هغې دوو تر ټولو مهمو پروتوکولونو نه اخیستل شوی. یعنې د لېږد کنټرول پروتوکول او د انټرنېټ پروتوکول. TCP/IP معمولاً د ۴ طبقو سیسټم ګڼل کېږي. د TCP/IP ماډل په لاندې څلورو طبقو ویشل کېږي."
+    },
+    {
+      "id": "cs11-s168-l1",
+      "en": "Application Layer",
+      "ur": "ایپلیکیشن لیئر",
+      "ps": "د اپلېکېشن طبقه",
+      "listGroup": "tcp4"
+    },
+    {
+      "id": "cs11-s168-l2",
+      "en": "Transport Layer",
+      "ur": "ٹرانسپورٹ لیئر",
+      "ps": "د لېږد طبقه",
+      "listGroup": "tcp4"
+    },
+    {
+      "id": "cs11-s168-l3",
+      "en": "Internet Layer",
+      "ur": "انٹرنیٹ لیئر",
+      "ps": "د انټرنېټ طبقه",
+      "listGroup": "tcp4"
+    },
+    {
+      "id": "cs11-s168-l4",
+      "en": "Network Access Layer",
+      "ur": "نیٹ ورک ایکسیس لیئر",
+      "ps": "د شبکې لاسرسي طبقه",
+      "listGroup": "tcp4"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s168-a",
+        "cs11-s168-h1",
+        "cs11-s168-b",
+        "cs11-s168-t1",
+        "cs11-s168-t2",
+        "cs11-s168-t3",
+        "cs11-s168-h2",
+        "cs11-s168-c",
+        "cs11-s168-l1",
+        "cs11-s168-l2",
+        "cs11-s168-l3",
+        "cs11-s168-l4"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 159: the end of the TCP/IP paragraph (continuing from page 158), “5.3.1 TCP/IP Protocol Suite Architecture” with the list a–c, “a. TCP/IP Architecture” with its paragraph and the list of four layers. The printed phrase “TCP/IP protocol suit” (for suite) is kept in the English text where it appears. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:22:42.712068+00:00",
+    "scope": "Scan 168 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

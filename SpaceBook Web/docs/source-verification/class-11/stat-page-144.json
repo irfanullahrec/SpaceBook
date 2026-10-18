@@ -1,0 +1,302 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s144-kurtosis-2",
+  "title": "3.8.1 Measures of kurtosis · Example 3.29",
+  "headingUrdu": "3.8.1 نوکیلے پن کے پیمانے · مثال 3.29",
+  "headingPashto": "3.8.1 د تېزوالي اندازې · بېلګه 3.29",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 144,
+    "printedPage": "136"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s144-c1",
+      "en": "It can be easily seen from the figure that lepto-kutic distribution has minimum dispersion which indicates that many values are clustered around the mean.",
+      "ur": "شکل سے آسانی سے دیکھا جا سکتا ہے کہ لیپٹو کرٹک تقسیم میں کم سے کم انتشار ہوتا ہے جو ظاہر کرتا ہے کہ بہت سی قدریں اوسط کے گرد جمع ہیں۔",
+      "ps": "له انځور څخه په اسانۍ لیدل کېدای شي چې لېپټو‌کرټیک ویش لږ تر لږه خپراوی لري چې ښيي ډېر ارزښتونه د اوسط شاوخوا راټول دي."
+    },
+    {
+      "id": "stat11-s144-h381",
+      "en": "3.8.1 Measures of kurtosis",
+      "ur": "3.8.1 نوکیلے پن کے پیمانے",
+      "ps": "3.8.1 د تېزوالي اندازې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s144-t381",
+      "en": "Kurtosis can be measured by either of the following two measures.",
+      "ur": "نوکیلے پن کو درج ذیل دو پیمانوں میں سے کسی ایک سے ناپا جا سکتا ہے۔",
+      "ps": "تېزوالی د لاندې دوو اندازو له هر یوې څخه اندازه کېدای شي."
+    },
+    {
+      "id": "stat11-s144-m1",
+      "en": "(i) Moment ratio",
+      "ur": "(i) معیارِ اثر کا تناسب",
+      "ps": "(i) د مومنټ نسبت"
+    },
+    {
+      "id": "stat11-s144-k1",
+      "en": "If b2 = 3, the distribution is meso-kurtic. b2 < 3, the distribution is platy-kurtic. b2 > 3, the distribution is lepto-kurtic.",
+      "ur": "اگر b2 = 3 ہو تو تقسیم میسو کرٹک ہے۔ b2 < 3 ہو تو تقسیم پلیٹی کرٹک ہے۔ b2 > 3 ہو تو تقسیم لیپٹو کرٹک ہے۔",
+      "ps": "که b2 = 3 وي نو ویش میسو‌کرټیک دی. b2 < 3 وي نو ویش پلېټي‌کرټیک دی. b2 > 3 وي نو ویش لېپټو‌کرټیک دی."
+    },
+    {
+      "id": "stat11-s144-m2",
+      "en": "(ii) Percentile co-efficient of kurtosis",
+      "ur": "(ii) نوکیلے پن کا پرسنٹائل عددی سر",
+      "ps": "(ii) د تېزوالي پرسنټایل ضریب"
+    },
+    {
+      "id": "stat11-s144-k2",
+      "en": "If K = 0.263, the distribution is meso-kurtic. K < 0.263, the distribution is platy-kurtic. K > 0.263, mean the distribution is lepto-kurtic.",
+      "ur": "اگر K = 0.263 ہو تو تقسیم میسو کرٹک ہے۔ K < 0.263 ہو تو تقسیم پلیٹی کرٹک ہے۔ K > 0.263 ہو تو مطلب تقسیم لیپٹو کرٹک ہے۔",
+      "ps": "که K = 0.263 وي نو ویش میسو‌کرټیک دی. K < 0.263 وي نو ویش پلېټي‌کرټیک دی. K > 0.263 وي نو پدې معنا ویش لېپټو‌کرټیک دی."
+    },
+    {
+      "id": "stat11-s144-ex29",
+      "en": "Example: 3.29",
+      "ur": "مثال: 3.29",
+      "ps": "بېلګه: 3.29",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-q29",
+      "en": "The first four moments about x = 17.5 of a certain distribution are 0.3, 74, 45 and 121.25. Find out whether the distribution is lepto-kurtic, platy-kurtic or meso-kurtic.",
+      "ur": "کسی تقسیم کے x = 17.5 کے گرد پہلے چار معیارِ اثر 0.3, 74, 45 اور 121.25 ہیں۔ معلوم کریں کہ تقسیم لیپٹو کرٹک، پلیٹی کرٹک یا میسو کرٹک ہے۔",
+      "ps": "د یو ویش د x = 17.5 شاوخوا لومړي څلور مومنټونه 0.3, 74, 45 او 121.25 دي. ومومئ چې ویش لېپټو‌کرټیک، پلېټي‌کرټیک که میسو‌کرټیک دی.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-sol29",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-g1",
+      "en": "Given that m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25",
+      "ur": "دیا گیا ہے کہ m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25",
+      "ps": "ورکړل شوي دي چې m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-g2",
+      "en": "The second and fourth moments about mean are:",
+      "ur": "اوسط کے گرد دوسرا اور چوتھا معیارِ اثر یہ ہیں:",
+      "ps": "د اوسط شاوخوا دویم او څلورم مومنټونه دا دي:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-29",
+      "sourceGap": {
+        "note": "The m4 working continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s144-c1",
+        "stat11-s144-h381",
+        "stat11-s144-t381",
+        "stat11-s144-m1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s144-k1",
+        "stat11-s144-m2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s144-k2",
+        "stat11-s144-ex29",
+        "stat11-s144-q29",
+        "stat11-s144-sol29",
+        "stat11-s144-g1",
+        "stat11-s144-g2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s144-b",
+      "latex": "b_2=\\dfrac{m_4}{m_2^2}",
+      "accessible": "b2 = m4/m2²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b2 = m4/m2²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b2 = m4/m2²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b2 = m4/m2²"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s144-K",
+      "latex": "K=\\dfrac{\\text{Q.D}}{P_{90}-P_{10}},\\qquad 0<K<0.5",
+      "accessible": "K = Q.D/(P90 − P10),   0 < K < 0.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "K = Q.D/(P90 − P10),   0 < K < 0.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "K = Q.D/(P90 − P10),   0 < K < 0.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "K = Q.D/(P90 − P10),   0 < K < 0.5"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s144-em2",
+      "latex": "m_2=m_2'-(m_1')^2=74-(0.3)^2=74-0.09=73.91",
+      "accessible": "m2 = m′2 − (m′1)² = 74 − (0.3)² = 74 − 0.09 = 73.91",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 74 − (0.3)² = 74 − 0.09 = 73.91"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 74 − (0.3)² = 74 − 0.09 = 73.91"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 74 − (0.3)² = 74 − 0.09 = 73.91"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-29"
+    },
+    {
+      "id": "stat11-s144-m4b",
+      "latex": "=121.25-4(0.3)(45)+6(0.3)^2(74)-3(0.3)^4",
+      "accessible": "= 121.25 − 4(0.3)(45) + 6(0.3)²(74) − 3(0.3)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 121.25 − 4(0.3)(45) + 6(0.3)²(74) − 3(0.3)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 121.25 − 4(0.3)(45) + 6(0.3)²(74) − 3(0.3)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 121.25 − 4(0.3)(45) + 6(0.3)²(74) − 3(0.3)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-29"
+    }
+  ],
+  "sourceNote": "Printed page 136. Printed spellings kept: \"lepto-kutic\" and \"mean the distribution is lepto-kurtic\". The conditions after each measure are printed as three stacked lines each and are joined in one paragraph per measure. A black mark at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:01:03.742145+00:00",
+    "scope": "Scan 144 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

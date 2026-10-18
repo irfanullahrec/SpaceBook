@@ -1,0 +1,27 @@
+@printed 114
+@status lesson
+@issue Source: 10thphysics3.pdf page 40 (page number partly cut off).
+p An easy way to visualize an electric field is to draw lines that follow the same direction as the electric field intensity vector E at any point. These lines are called **electric field lines**. || برقی میدان کو تصور میں لانے کا ایک آسان طریقہ ایسی لکیریں کھینچنا ہے جو ہر نقطے پر برقی میدان کی شدت کے سمتیہ E کی سمت میں ہوں۔ ان لکیروں کو **برقی میدانی لکیریں** کہتے ہیں۔ || د برېښنايي ساحې د تصور یوه اسانه لار داسې کرښې رسمول دي چې په هر ټکي کې د برېښنايي ساحې د شدت د بردار E په لوري وي. دې کرښو ته **د برېښنايي ساحې کرښې** ویل کېږي.
+svg Figure 13.10 – Electric field lines for point charges. (a) For a positive point charge, the lines radiate radially outwards. (b) For a negative point charge, the lines converge radially inwards. || شکل 13.10 – نقطہ چارجز کی برقی میدانی لکیریں۔ (a) مثبت نقطہ چارج کے لیے لکیریں شعاعی طور پر باہر کو پھیلتی ہیں۔ (b) منفی نقطہ چارج کے لیے لکیریں شعاعی طور پر اندر کو سمٹتی ہیں۔ || ۱۳.۱۰ شکل – د ټکي چارجونو د برېښنايي ساحې کرښې. (a) د مثبت ټکي چارج لپاره کرښې شعاعي ډول بهر ته خپرېږي. (b) د منفي ټکي چارج لپاره کرښې شعاعي ډول دننه ته راټولېږي.
+<svg viewBox="0 0 300 150" width="300" role="img" aria-label="(a) eight straight lines radiate from a positive charge q with arrows pointing outwards; (b) eight straight lines meet at a negative charge q with arrows pointing inwards" font-family="Arial" font-size="11">
+<defs><marker id="o1310" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="#1e3a8a"/></marker></defs>
+<text x="4" y="14" font-weight="bold">(a)</text><text x="154" y="14" font-weight="bold">(b)</text>
+<g stroke="#1e3a8a" stroke-width="1.5">
+<path d="M75 75 L75 40 L75 15" marker-mid="url(#o1310)"/><path d="M75 75 L75 110 L75 135" marker-mid="url(#o1310)"/><path d="M75 75 L110 75 L135 75" marker-mid="url(#o1310)"/><path d="M75 75 L40 75 L15 75" marker-mid="url(#o1310)"/>
+<path d="M75 75 L100 50 L118 32" marker-mid="url(#o1310)"/><path d="M75 75 L50 100 L32 118" marker-mid="url(#o1310)"/><path d="M75 75 L100 100 L118 118" marker-mid="url(#o1310)"/><path d="M75 75 L50 50 L32 32" marker-mid="url(#o1310)"/>
+<path d="M225 15 L225 40 L225 75" marker-mid="url(#o1310)"/><path d="M225 135 L225 110 L225 75" marker-mid="url(#o1310)"/><path d="M285 75 L260 75 L225 75" marker-mid="url(#o1310)"/><path d="M165 75 L190 75 L225 75" marker-mid="url(#o1310)"/>
+<path d="M268 32 L250 50 L225 75" marker-mid="url(#o1310)"/><path d="M182 118 L200 100 L225 75" marker-mid="url(#o1310)"/><path d="M268 118 L250 100 L225 75" marker-mid="url(#o1310)"/><path d="M182 32 L200 50 L225 75" marker-mid="url(#o1310)"/></g>
+<circle cx="75" cy="75" r="6" fill="#1d4ed8"/><text x="72" y="79" fill="#fff" font-size="9">+</text><text x="82" y="92">q</text>
+<circle cx="225" cy="75" r="6" fill="#0f766e"/><text x="222" y="79" fill="#fff" font-size="9">−</text><text x="232" y="92">q</text>
+</svg>
+endsvg
+p Electric field intensity vectors help to visualize the electric field. Electric field lines are a kind of "map" that gives the direction and strength of the field at various places. The direction of these lines is radially outward for a positive charge and radially inward for a negative charge as shown in figure 13.10. || برقی میدان کی شدت کے سمتیے برقی میدان کو تصور کرنے میں مدد دیتے ہیں۔ برقی میدانی لکیریں ایک قسم کا "نقشہ" ہیں جو مختلف مقامات پر میدان کی سمت اور طاقت بتاتا ہے۔ ان لکیروں کی سمت مثبت چارج کے لیے شعاعی طور پر باہر اور منفی چارج کے لیے شعاعی طور پر اندر کی طرف ہوتی ہے، جیسا کہ شکل 13.10 میں دکھایا گیا ہے۔ || د برېښنايي ساحې د شدت بردارونه د ساحې په تصور کې مرسته کوي. د برېښنايي ساحې کرښې یو ډول "نقشه" ده چې په بېلابېلو ځایونو کې د ساحې لوری او قوت ښيي. د دې کرښو لوری د مثبت چارج لپاره شعاعي ډول بهر ته او د منفي چارج لپاره شعاعي ډول دننه ته دی، لکه په ۱۳.۱۰ شکل کې.
+example 13.2 | ELECTRIC FIELD INTENSITY || برقی میدان کی شدت || د برېښنايي ساحې شدت
+p A positive test charge of 30 μC is placed in an electric field. Force on it is 0.600 N. What is the magnitude of electric field at the location of test charge? || 30 μC کا ایک مثبت ٹیسٹ چارج برقی میدان میں رکھا گیا ہے۔ اس پر قوت 0.600 N ہے۔ ٹیسٹ چارج کے مقام پر برقی میدان کی مقدار کیا ہے؟ || یو 30 μC مثبت ازمویښتي چارج په برېښنايي ساحه کې ایښودل شوی. پرې ځواک 0.600 N دی. د ازمویښتي چارج په ځای کې د برېښنايي ساحې اندازه څومره ده؟
+p **GIVEN:** Test Charge $q_0$ = 30 μC = $30\times10^{-6}$ C; Force $F_E$ = 0.600 N. **REQUIRED:** Electric field intensity E = ? || **معلوم:** ٹیسٹ چارج $q_0$ = 30 μC = $30\times10^{-6}$ C؛ قوت $F_E$ = 0.600 N۔ **مطلوب:** برقی میدان کی شدت E = ? || **ورکړل شوي:** ازمویښتي چارج $q_0$ = 30 μC = $30\times10^{-6}$ C؛ ځواک $F_E$ = 0.600 N. **غوښتل شوي:** د برېښنايي ساحې شدت E = ?
+p **SOLUTION:** By definition of electric field intensity || **حل:** برقی میدان کی شدت کی تعریف سے || **حل:** د برېښنايي ساحې د شدت د تعریف له مخې
+eq \vec{E} = \dfrac{\vec{F}_E}{q_0}
+eq \text{Putting values}\quad \vec{E} = \dfrac{0.600\ \text{N}}{30\times10^{-6}\ \text{C}}
+eq \text{Hence}\quad \vec{E} = 2.00\times10^{4}\ \text{NC}^{-1} \quad \text{(Answer)}
+p Therefore, the magnitude of electric field is $2\times10^{4}$ N/C. || لہٰذا برقی میدان کی مقدار $2\times10^{4}$ N/C ہے۔ || نو د برېښنايي ساحې اندازه $2\times10^{4}$ N/C ده.
+endexample

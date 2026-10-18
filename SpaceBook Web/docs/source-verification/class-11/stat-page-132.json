@@ -1,0 +1,756 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s132-moments-11",
+  "title": "Example 3.23: moments about origin and mean moments · Example 3.24 (start)",
+  "headingUrdu": "مثال 3.23: مبدا کے گرد اور اوسطی معیارِ اثر · مثال 3.24 (آغاز)",
+  "headingPashto": "بېلګه 3.23: د اصل شاوخوا او اوسط مومنټونه · بېلګه 3.24 (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 132,
+    "printedPage": "124"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s132-sol23",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-a1",
+      "en": "(i) Moments about origin:",
+      "ur": "(i) مبدا کے گرد معیارِ اثر:",
+      "ps": "(i) د اصل شاوخوا مومنټونه:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-a2",
+      "en": "(ii) Mean moments:",
+      "ur": "(ii) اوسطی معیارِ اثر:",
+      "ps": "(ii) اوسط مومنټونه:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-ex24",
+      "en": "Example: 3.24",
+      "ur": "مثال: 3.24",
+      "ps": "بېلګه: 3.24",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s132-q24",
+      "en": "Consider the following data; compute the first four moments about mean.",
+      "ur": "درج ذیل اعداد و شمار پر غور کریں؛ اوسط کے گرد پہلے چار معیارِ اثر حساب کریں۔",
+      "ps": "لاندې معلومات په پام کې ونیسئ؛ د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s132-sol24",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s132-a3",
+      "en": "(i) Moment about origin (zero)",
+      "ur": "(i) مبدا (صفر) کے گرد معیارِ اثر",
+      "ps": "(i) د اصل (صفر) شاوخوا مومنټ",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-24",
+      "sourceGap": {
+        "note": "The table and workings of Example 3.24 follow on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s132-sol23",
+        "stat11-s132-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s132-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s132-ex24",
+        "stat11-s132-q24"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s132-sol24",
+        "stat11-s132-a3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s132-r1",
+      "latex": "m_1'=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{83}{30}=2.77\\qquad\\qquad m_2'=\\dfrac{\\sum fx^2}{\\sum f}=\\dfrac{269}{30}=8.97",
+      "accessible": "m′1 = Σfx/Σf = 83/30 = 2.77    m′2 = Σfx²/Σf = 269/30 = 8.97",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 83/30 = 2.77    m′2 = Σfx²/Σf = 269/30 = 8.97"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 83/30 = 2.77    m′2 = Σfx²/Σf = 269/30 = 8.97"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 83/30 = 2.77    m′2 = Σfx²/Σf = 269/30 = 8.97"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-r3",
+      "latex": "m_3'=\\dfrac{\\sum fx^3}{\\sum f}=\\dfrac{965}{30}=32.17\\qquad\\qquad m_4'=\\dfrac{\\sum fx^4}{\\sum f}=\\dfrac{3713}{30}=123.77",
+      "accessible": "m′3 = Σfx³/Σf = 965/30 = 32.17    m′4 = Σfx⁴/Σf = 3713/30 = 123.77",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 965/30 = 32.17    m′4 = Σfx⁴/Σf = 3713/30 = 123.77"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 965/30 = 32.17    m′4 = Σfx⁴/Σf = 3713/30 = 123.77"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 965/30 = 32.17    m′4 = Σfx⁴/Σf = 3713/30 = 123.77"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m1",
+      "latex": "m_1=m_1'-m_1'=2.77-2.77=0",
+      "accessible": "m1 = m′1 − m′1 = 2.77 − 2.77 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2.77 − 2.77 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2.77 − 2.77 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2.77 − 2.77 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m2",
+      "latex": "m_2=m_2'-(m_1')^2=8.97-(2.77)^2=8.97-7.673=1.3",
+      "accessible": "m2 = m′2 − (m′1)² = 8.97 − (2.77)² = 8.97 − 7.673 = 1.3",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.97 − (2.77)² = 8.97 − 7.673 = 1.3"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.97 − (2.77)² = 8.97 − 7.673 = 1.3"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.97 − (2.77)² = 8.97 − 7.673 = 1.3"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m3a",
+      "latex": "m_3=m_3'-3m_1'm_2'+2(m_1')^3",
+      "accessible": "m3 = m′3 − 3m′1m′2 + 2(m′1)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m3b",
+      "latex": "=32.17-3(2.77)(8.97)+2(2.77)^3",
+      "accessible": "= 32.17 − 3(2.77)(8.97) + 2(2.77)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 32.17 − 3(2.77)(8.97) + 2(2.77)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 32.17 − 3(2.77)(8.97) + 2(2.77)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 32.17 − 3(2.77)(8.97) + 2(2.77)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m3c",
+      "latex": "=32.17-74.541+42.51=74.68-74.54=0.14",
+      "accessible": "= 32.17 − 74.541 + 42.51 = 74.68 − 74.54 = 0.14",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 32.17 − 74.541 + 42.51 = 74.68 − 74.54 = 0.14"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 32.17 − 74.541 + 42.51 = 74.68 − 74.54 = 0.14"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 32.17 − 74.541 + 42.51 = 74.68 − 74.54 = 0.14"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m4b",
+      "latex": "=123.77-4(2.77)(32.17)+6(2.77)^2(8.97)-3(2.77)^4",
+      "accessible": "= 123.77 − 4(2.77)(32.17) + 6(2.77)²(8.97) − 3(2.77)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 123.77 − 4(2.77)(32.17) + 6(2.77)²(8.97) − 3(2.77)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 123.77 − 4(2.77)(32.17) + 6(2.77)²(8.97) − 3(2.77)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 123.77 − 4(2.77)(32.17) + 6(2.77)²(8.97) − 3(2.77)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "id": "stat11-s132-m4c",
+      "latex": "=123.77-356.44+412.96-176.62=536.73-533.06=3.67",
+      "accessible": "= 123.77 − 356.44 + 412.96 − 176.62 = 536.73 − 533.06 = 3.67",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 123.77 − 356.44 + 412.96 − 176.62 = 536.73 − 533.06 = 3.67"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 123.77 − 356.44 + 412.96 − 176.62 = 536.73 − 533.06 = 3.67"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 123.77 − 356.44 + 412.96 − 176.62 = 536.73 − 533.06 = 3.67"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-23"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.23: moments about origin",
+      "captionUrdu": "مثال 3.23: مبدا کے گرد معیارِ اثر",
+      "captionPashto": "بېلګه 3.23: د اصل شاوخوا مومنټونه",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "fx²",
+          "ur": "fx²",
+          "ps": "fx²"
+        },
+        {
+          "en": "fx³",
+          "ur": "fx³",
+          "ps": "fx³"
+        },
+        {
+          "en": "fx⁴",
+          "ur": "fx⁴",
+          "ps": "fx⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "112",
+            "ur": "112",
+            "ps": "112"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "90",
+            "ur": "90",
+            "ps": "90"
+          },
+          {
+            "en": "270",
+            "ur": "270",
+            "ps": "270"
+          },
+          {
+            "en": "810",
+            "ur": "810",
+            "ps": "810"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "96",
+            "ur": "96",
+            "ps": "96"
+          },
+          {
+            "en": "384",
+            "ur": "384",
+            "ps": "384"
+          },
+          {
+            "en": "1536",
+            "ur": "1536",
+            "ps": "1536"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "250",
+            "ur": "250",
+            "ps": "250"
+          },
+          {
+            "en": "1250",
+            "ur": "1250",
+            "ps": "1250"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "83",
+            "ur": "83",
+            "ps": "83"
+          },
+          {
+            "en": "269",
+            "ur": "269",
+            "ps": "269"
+          },
+          {
+            "en": "965",
+            "ur": "965",
+            "ps": "965"
+          },
+          {
+            "en": "3713",
+            "ur": "3713",
+            "ps": "3713"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-23"
+    },
+    {
+      "caption": "Example 3.24: group and frequency",
+      "captionUrdu": "مثال 3.24: گروہ اور تعدد",
+      "captionPashto": "بېلګه 3.24: ډله او فریکونسي",
+      "headers": [
+        {
+          "en": "Group:",
+          "ur": "گروہ:",
+          "ps": "ډله:"
+        },
+        {
+          "en": "0 – 4",
+          "ur": "0 – 4",
+          "ps": "0 – 4"
+        },
+        {
+          "en": "5 – 9",
+          "ur": "5 – 9",
+          "ps": "5 – 9"
+        },
+        {
+          "en": "10 – 14",
+          "ur": "10 – 14",
+          "ps": "10 – 14"
+        },
+        {
+          "en": "15 – 19",
+          "ur": "15 – 19",
+          "ps": "15 – 19"
+        },
+        {
+          "en": "20 – 24",
+          "ur": "20 – 24",
+          "ps": "20 – 24"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-24"
+    }
+  ],
+  "sourceNote": "Printed page 124. The raw moments are printed in two side-by-side pairs, each kept as one equation. Pen scribbles beside \"Example: 3.24\" and ink marks at the page edges are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:56:28.129059+00:00",
+    "scope": "Scan 132 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

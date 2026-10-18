@@ -1,0 +1,110 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s184-reg-intro-1",
+  "title": "5.1 Introduction · 5.1.1 Dependent and independent variable · 5.1.2 Regression · 5.1.3 Scatter diagram",
+  "headingUrdu": "5.1 تعارف · 5.1.1 تابع اور آزاد متغیر · 5.1.2 ریگریشن · 5.1.3 بکھراؤ خاکہ",
+  "headingPashto": "5.1 پېژندنه · 5.1.1 تابع او خپلواک متغیر · 5.1.2 ریګرېشن · 5.1.3 د خپرېدو ډیاګرام",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 184,
+    "printedPage": "174"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s184-h51",
+      "en": "5.1 Introduction to regression and correlation",
+      "ur": "5.1 ریگریشن اور ارتباط کا تعارف",
+      "ps": "5.1 د ریګرېشن او همتړاو پېژندنه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s184-t51",
+      "en": "Look around and think all characteristics (variables) e.g. age and height, income and expenditure, temperature and sale of item etc. are interrelated. Some have cause and effect relationship i.e. the change in one variable is due to the change in the other e.g. health condition depends on diet, production of wheat depends upon the amount of rain fall, marks of students depend on the number of hours studied etc. The relationship between dependent and independent variable is measured by regression. This technique was first introduced by English scientist sir Francis Galton. Some variables may just accompany each other, that is interdependent e.g. relationship between health and tonic, heights of brothers and sisters, marks in statistics and mathematics etc. Such relations are measured by correlation. This technique was given by Karl Pearson.",
+      "ur": "اردگرد دیکھیں اور سوچیں کہ تمام خصوصیات (متغیرات) مثلاً عمر اور قد، آمدنی اور اخراجات، درجہ حرارت اور شے کی فروخت وغیرہ باہم مربوط ہیں۔ کچھ میں علت و معلول کا تعلق ہوتا ہے یعنی ایک متغیر میں تبدیلی دوسرے میں تبدیلی کی وجہ سے ہوتی ہے مثلاً صحت کی حالت خوراک پر منحصر ہے، گندم کی پیداوار بارش کی مقدار پر منحصر ہے، طلبہ کے نمبر مطالعے کے گھنٹوں کی تعداد پر منحصر ہیں وغیرہ۔ تابع اور آزاد متغیر کے درمیان تعلق ریگریشن سے ناپا جاتا ہے۔ یہ تکنیک سب سے پہلے انگریز سائنسدان سر فرانسس گالٹن نے متعارف کرائی۔ کچھ متغیرات صرف ایک دوسرے کے ساتھ ہوتے ہیں یعنی باہم منحصر ہوتے ہیں مثلاً صحت اور ٹانک کا تعلق، بھائیوں اور بہنوں کے قد، شماریات اور ریاضی میں نمبر وغیرہ۔ ایسے تعلقات ارتباط سے ناپے جاتے ہیں۔ یہ تکنیک کارل پیئرسن نے دی۔",
+      "ps": "شاوخوا وګورئ او فکر وکړئ چې ټولې ځانګړتیاوې (متغیرونه) لکه عمر او قد، عاید او لګښت، تودوخه او د توکي پلور او نور یو له بل سره تړلي دي. ځینې د علت او معلول اړیکه لري یعنې په یوه متغیر کې بدلون د بل په بدلون پورې اړه لري لکه د روغتیا حالت په خوراک پورې اړه لري، د غنمو تولید د باران په مقدار پورې اړه لري، د زده کوونکو نمرې د زده کړې د ساعتونو په شمېر پورې اړه لري او نور. د تابع او خپلواک متغیر تر منځ اړیکه په ریګرېشن اندازه کېږي. دا تخنیک لومړی د انګلیسي ساینس‌پوه سر Francis Galton معرفي کړ. ځینې متغیرونه یوازې یو له بل سره ملګري وي یعنې متقابل تړلي وي لکه د روغتیا او ټانک تر منځ اړیکه، د ورو او خویندو قدونه، په احصایه او ریاضي کې نمرې او نور. داسې اړیکې په همتړاو اندازه کېږي. دا تخنیک د Karl Pearson لخوا ورکړل شو."
+    },
+    {
+      "id": "stat11-s184-h511",
+      "en": "5.1.1 Dependent and independent variable",
+      "ur": "5.1.1 تابع اور آزاد متغیر",
+      "ps": "5.1.1 تابع او خپلواک متغیر",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s184-t511a",
+      "en": "For regression and correlation concepts and analysis, it is important to differentiate between dependent and independent variables in daily life. Consider the following example.",
+      "ur": "ریگریشن اور ارتباط کے تصورات اور تجزیے کے لیے روزمرہ زندگی میں تابع اور آزاد متغیرات میں فرق کرنا ضروری ہے۔ درج ذیل مثال پر غور کریں۔",
+      "ps": "د ریګرېشن او همتړاو د مفهومونو او تحلیل لپاره په ورځني ژوند کې د تابع او خپلواک متغیرونو تر منځ توپیر کول مهم دي. لاندې بېلګه په پام کې ونیسئ."
+    },
+    {
+      "id": "stat11-s184-t511b",
+      "en": "The height or weight of a child grows with the increase in age, on the other hand growth in height or weight does not increase age. It means that height or weight is dependent variable and age is independent variable.",
+      "ur": "بچے کا قد یا وزن عمر کے بڑھنے کے ساتھ بڑھتا ہے، دوسری طرف قد یا وزن میں اضافہ عمر کو نہیں بڑھاتا۔ اس کا مطلب ہے کہ قد یا وزن تابع متغیر ہے اور عمر آزاد متغیر ہے۔",
+      "ps": "د ماشوم قد یا وزن د عمر له زیاتېدو سره زیاتېږي، له بلې خوا د قد یا وزن زیاتوالی عمر نه زیاتوي. دا پدې معنا چې قد یا وزن تابع متغیر دی او عمر خپلواک متغیر دی."
+    },
+    {
+      "id": "stat11-s184-h512",
+      "en": "5.1.2 Regression",
+      "ur": "5.1.2 ریگریشن",
+      "ps": "5.1.2 ریګرېشن",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s184-t512",
+      "en": "A Statistical technique used for prediction about the values of a dependent variable on the basis of the known values of an independent variable is called regression.",
+      "ur": "وہ شماریاتی تکنیک جو آزاد متغیر کی معلوم قدروں کی بنیاد پر تابع متغیر کی قدروں کے بارے میں پیش گوئی کے لیے استعمال ہوتی ہے ریگریشن کہلاتی ہے۔",
+      "ps": "هغه احصایوي تخنیک چې د خپلواک متغیر د پېژندل شویو ارزښتونو پر بنسټ د تابع متغیر د ارزښتونو په اړه د وړاندوینې لپاره کارول کېږي ریګرېشن بلل کېږي."
+    },
+    {
+      "id": "stat11-s184-h513",
+      "en": "5.1.3 Scatter diagram",
+      "ur": "5.1.3 بکھراؤ خاکہ",
+      "ps": "5.1.3 د خپرېدو ډیاګرام",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s184-t513",
+      "en": "Statisticians are often required to provide equations to connect variables. The first step is to see whether relationship between variables exists or not and if it exists either it is linear or nonlinear. For this purpose he collects data for paired variables and plots it on the graph paper. Usually, independent variable is taken on x-axis and dependent variable on y-axis. The resulting set of points is called scatter diagram. If these points lie on a straight line it is expected that there is a linear relationship between x and y otherwise nonlinear.",
+      "ur": "شماریات دانوں سے اکثر متغیرات کو جوڑنے والی مساواتیں فراہم کرنے کی ضرورت پڑتی ہے۔ پہلا قدم یہ دیکھنا ہے کہ متغیرات کے درمیان تعلق موجود ہے یا نہیں اور اگر موجود ہے تو خطی ہے یا غیر خطی۔ اس مقصد کے لیے وہ جوڑی دار متغیرات کے اعداد و شمار جمع کرتا ہے اور انہیں گراف پیپر پر بناتا ہے۔ عموماً آزاد متغیر کو x-محور پر اور تابع متغیر کو y-محور پر لیا جاتا ہے۔ نتیجتاً نقاط کا مجموعہ بکھراؤ خاکہ کہلاتا ہے۔ اگر یہ نقاط ایک سیدھی لکیر پر ہوں تو توقع ہوتی ہے کہ x اور y کے درمیان خطی تعلق ہے ورنہ غیر خطی۔",
+      "ps": "احصایه‌پوهانو ته ډېر ځله اړتیا وي چې متغیرونه سره نښلوونکې معادلې برابرې کړي. لومړی ګام دا دی چې وګورئ آیا د متغیرونو تر منځ اړیکه شته که نه او که شته نو خطي ده که غیر خطي. د دې موخې لپاره هغه د جوړه‌یي متغیرونو معلومات راټولوي او په ګراف کاغذ یې رسموي. معمولاً خپلواک متغیر په x-محور او تابع متغیر په y-محور اخیستل کېږي. د نقطو پایله ټولګه د خپرېدو ډیاګرام بلل کېږي. که دا نقطې په یوه مستقیمه کرښه پرتې وي نو تمه کېږي چې د x او y تر منځ خطي اړیکه شته که نه غیر خطي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s184-h51",
+        "stat11-s184-t51",
+        "stat11-s184-h511",
+        "stat11-s184-t511a",
+        "stat11-s184-t511b",
+        "stat11-s184-h512",
+        "stat11-s184-t512",
+        "stat11-s184-h513",
+        "stat11-s184-t513"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "dependent variable": {
+      "ur": "تابع متغیر",
+      "ps": "تابع متغیر"
+    },
+    "independent variable": {
+      "ur": "آزاد متغیر",
+      "ps": "خپلواک متغیر"
+    },
+    "scatter diagram": {
+      "ur": "بکھراؤ خاکہ",
+      "ps": "د خپرېدو ډیاګرام"
+    }
+  },
+  "equations": [],
+  "sourceNote": "Printed page 174. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:17:23.487461+00:00",
+    "scope": "Scan 184 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

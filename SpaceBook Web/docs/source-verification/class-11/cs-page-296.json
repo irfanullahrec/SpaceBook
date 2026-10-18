@@ -1,0 +1,101 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s296-p287",
+  "title": "Figure 8.35 Student table after updating; c. Delete Query; Example",
+  "headingUrdu": "شکل ۸.۳۵ اپ ڈیٹ کے بعد اسٹوڈنٹ ٹیبل؛ ج۔ ڈیلیٹ کوئری؛ مثال",
+  "headingPashto": "انځور ۸.۳۵ له تازه کولو وروسته د زده کوونکي جدول؛ ج. د Delete پوښتنه؛ بېلګه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 296,
+    "printedPage": "287"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s296-h1",
+      "en": "c. Delete Query",
+      "ur": "ج۔ ڈیلیٹ کوئری",
+      "ps": "ج. د Delete پوښتنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s296-a",
+      "en": "Delete query is used to delete records from a single database table or multiple tables. Delete query removes records from tables permanently. As with the other types of action queries, the delete query works with a group of records that meet specified criteria that user apply. User can use the delete query to remove all records or only records that meet the defined criteria.",
+      "ur": "ڈیلیٹ کوئری ایک ڈیٹا بیس ٹیبل یا متعدد ٹیبلز سے ریکارڈز حذف کرنے کے لیے استعمال ہوتی ہے۔ ڈیلیٹ کوئری ٹیبلز سے ریکارڈز مستقل طور پر ہٹا دیتی ہے۔ دیگر ایکشن کوئریز کی طرح ڈیلیٹ کوئری ان ریکارڈز کے گروپ کے ساتھ کام کرتی ہے جو صارف کے لاگو کردہ متعین معیار پر پورا اترتے ہوں۔ صارف ڈیلیٹ کوئری سے تمام ریکارڈز یا صرف وہ ریکارڈز ہٹا سکتا ہے جو متعین معیار پر پورا اترتے ہوں۔",
+      "ps": "د Delete پوښتنه له یو ډېټابېس جدول یا څو جدولونو نه د ثبتونو د حذف کولو لپاره کارول کېږي. د Delete پوښتنه ثبتونه له جدولونو نه په دایمي توګه لېرې کوي. لکه د نورو کړنو پوښتنو په څېر، د Delete پوښتنه د ثبتونو له هغې ډلې سره کار کوي چې د کاروونکي لخوا پلي شوی ټاکل شوی معیار پوره کوي. کاروونکی کولای شي د Delete پوښتنه د ټولو ثبتونو یا یوازې هغو ثبتونو د لېرې کولو لپاره وکاروي چې ټاکل شوی معیار پوره کوي."
+    },
+    {
+      "id": "cs11-s296-b",
+      "en": "Example: In Students database let us create a Delete query to remove the records of students of Section “B” in Student table.",
+      "ur": "مثال: اسٹوڈنٹس ڈیٹا بیس میں آئیے ایک ڈیلیٹ کوئری بنائیں جو اسٹوڈنٹ ٹیبل میں سیکشن ’’بی‘‘ کے طلبہ کے ریکارڈز ہٹا دے۔",
+      "ps": "بېلګه: د زده کوونکو په ډېټابېس کې راځئ یوه Delete پوښتنه جوړه کړو چې د زده کوونکي جدول کې د “B” برخې د زده کوونکو ثبتونه لېرې کړي."
+    },
+    {
+      "id": "cs11-s296-d1",
+      "en": "Create a new query using the Student table. Include those fields that are going to be used to delete the records.",
+      "ur": "اسٹوڈنٹ ٹیبل استعمال کر کے نئی کوئری بنائیں۔ وہ فیلڈز شامل کریں جو ریکارڈز حذف کرنے کے لیے استعمال ہوں گی۔",
+      "ps": "د زده کوونکي جدول په کارولو نوې پوښتنه جوړه کړئ. هغه ساحې شاملې کړئ چې د ثبتونو د حذف کولو لپاره کارول کېږي.",
+      "listGroup": "dq"
+    },
+    {
+      "id": "cs11-s296-d2",
+      "en": "In the query design view, click on the drop-down arrow to the right of the Query Type button and choose Delete Query.",
+      "ur": "کوئری ڈیزائن ویو میں کوئری ٹائپ بٹن کے دائیں طرف ڈراپ ڈاؤن تیر پر کلک کریں اور ڈیلیٹ کوئری منتخب کریں۔",
+      "ps": "د پوښتنې ډیزاین لید کې د Query Type تڼۍ ښي لوري ښکته کېدونکي غشي کلیک کړئ او Delete Query وټاکئ.",
+      "listGroup": "dq"
+    },
+    {
+      "id": "cs11-s296-d3",
+      "en": "Type “B” for Section field in Criteria row, as shown in Figure 8.36.",
+      "ur": "کرائٹیریا قطار میں سیکشن فیلڈ کے لیے ’’بی‘‘ ٹائپ کریں، جیسا کہ شکل ۸.۳۶ میں دکھایا گیا ہے۔",
+      "ps": "د Criteria قطار کې د Section ساحې لپاره “B” ټایپ کړئ، لکه څنګه چې ۸.۳۶ انځور کې ښودل شوی.",
+      "listGroup": "dq"
+    }
+  ],
+  "flow": [
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s296-h1",
+        "cs11-s296-a",
+        "cs11-s296-b",
+        "cs11-s296-d1",
+        "cs11-s296-d2",
+        "cs11-s296-d3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 445 215\" role=\"img\" aria-label=\"Student table with the Section column updated to G for all four records and the Updated field outlined\" style=\"width:100%;max-width:445px;height:auto;background:#fff\"><rect x=\"5\" y=\"5\" width=\"435\" height=\"205\" fill=\"#f4f7fb\" stroke=\"#555\"/><rect x=\"5\" y=\"5\" width=\"435\" height=\"16\" fill=\"#cfd9ea\" stroke=\"#555\"/><text x=\"222.5\" y=\"17\" font-size=\"8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Table Tools — Student : Database (Access 2007)</text><circle cx=\"22\" cy=\"35\" r=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><text x=\"45\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Home</text><text x=\"113\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Create</text><text x=\"181\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">External Data</text><text x=\"249\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Database Tools</text><text x=\"317\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Datasheet</text><rect x=\"10\" y=\"46\" width=\"420\" height=\"36\" fill=\"#e8eef8\" stroke=\"#aaa\"/><rect x=\"10\" y=\"95\" width=\"100\" height=\"115\" fill=\"#fff\" stroke=\"#888\"/><text x=\"15\" y=\"108\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">All Tables</text><text x=\"15\" y=\"122\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"25\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Table</text><text x=\"25\" y=\"144\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Percentage</text><text x=\"25\" y=\"155\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Query1</text><text x=\"25\" y=\"166\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student1</text><text x=\"25\" y=\"177\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student Data entry form</text><text x=\"15\" y=\"188\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam</text><text x=\"25\" y=\"199\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Exam : Table</text><rect x=\"115\" y=\"95\" width=\"315\" height=\"105\" fill=\"#fff\" stroke=\"#888\"/><text x=\"120\" y=\"107\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Roll No</text><text x=\"185\" y=\"107\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">St Name</text><text x=\"255\" y=\"107\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Class</text><text x=\"315\" y=\"107\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Section</text><text x=\"375\" y=\"107\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Add New Field</text><rect x=\"305\" y=\"100\" width=\"55\" height=\"60\" fill=\"none\" stroke=\"#c22\"/><text x=\"120\" y=\"121\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1</text><text x=\"185\" y=\"121\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Ahmed</text><text x=\"255\" y=\"121\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">XI</text><text x=\"315\" y=\"121\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">G</text><text x=\"120\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">2</text><text x=\"185\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Tahir</text><text x=\"255\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">XI</text><text x=\"315\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">G</text><text x=\"120\" y=\"145\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">4</text><text x=\"185\" y=\"145\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Zubair</text><text x=\"255\" y=\"145\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">XI</text><text x=\"315\" y=\"145\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">G</text><text x=\"120\" y=\"157\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">5</text><text x=\"185\" y=\"157\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Umer</text><text x=\"255\" y=\"157\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">XI</text><text x=\"315\" y=\"157\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">G</text><text x=\"120\" y=\"195\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Record: 1 of 4   No Filter   Search</text><text x=\"335\" y=\"90\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Updated field</text></svg>",
+      "id": "cs11-s296-fig1",
+      "caption": "Figure 8.35 Student table after updating Section field through update query",
+      "captionUrdu": "شکل ۸.۳۵ اپ ڈیٹ کوئری کے ذریعے سیکشن فیلڈ اپ ڈیٹ کرنے کے بعد اسٹوڈنٹ ٹیبل",
+      "captionPashto": "انځور ۸.۳۵ د Update پوښتنې له لارې د Section ساحې له تازه کولو وروسته د زده کوونکي جدول",
+      "labels": [
+        {
+          "en": "Updated field",
+          "ur": "اپ ڈیٹ شدہ فیلڈ",
+          "ps": "تازه شوې ساحه"
+        },
+        {
+          "en": "Section",
+          "ur": "سیکشن",
+          "ps": "برخه"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 287: Figure 8.35 Student table after updating Section field through update query (the Student table with the Section column showing G for all four records and the callout “Updated field”; redrawn as simplified coded SVG), “c. Delete Query” with its paragraph, the Example and three steps (Figure 8.36 follows on the next page). The words Student table, Query Type, Delete Query, Section and Criteria are printed in bold. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:10:02.225556+00:00",
+    "scope": "Scan 296 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

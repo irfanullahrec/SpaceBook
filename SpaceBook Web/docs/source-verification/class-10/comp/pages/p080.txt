@@ -1,0 +1,31 @@
+@printed 70
+@status lesson
+@sec 3-2-7 | 3.2.7 لاجیکل یا منطقی آپریٹر || 3.2.7 Logical operators || ۳.۲.۷ منطقي عملګرونه
+### 3.2.7 لاجیکل یا منطقی آپریٹر (Logical Operators) || 3.2.7 Logical operators || ۳.۲.۷ منطقي عملګرونه (Logical Operators)
+p ایک سے زیادہ کنڈیشن ایکسپریشن کا جائزہ لینے کے لئے لاجیکل آپریٹرز استعمال کیے جاتے ہیں۔ C میں تین لاجیکل آپریٹرز ہیں: || Logical operators are used to evaluate more than one condition expression. C has three logical operators: || د یوه نه زیاتو شرطي عبارتونو د ارزونې لپاره منطقي عملګرونه کارېږي. په C کې درې منطقي عملګرونه دي:
+- AND && || AND && || AND &&
+- OR {{OR}} || OR {{OR}} || OR {{OR}}
+- NOT ! || NOT ! || NOT !
+### (a) اینڈ آپریٹر && (AND Operator) || (a) The AND operator && || (a) د AND عملګر &&
+p AND آپریٹر کے لئے استعمال ہونے والی علامت && ہے۔ یہ دو شرائط کا موازنہ کرنے کے لئے استعمال ہوتا ہے۔ اگر دونوں شرائط کا نتیجہ True ہے تو مجموعی نتیجہ True آئے گا اور اگر شرائط میں سے کوئی بھی غلط (False) ہے تو مجموعی نتیجہ False رہے گا۔ || The symbol used for the AND operator is &&. It is used to compare two conditions. If both conditions are true, the overall result is True; if either condition is false, the overall result is False. || د AND عملګر نښه && ده. د دوو شرطونو د پرتلې لپاره کارېږي. که دواړه شرطونه سم (True) وي، ټوله پایله True ده؛ که هر یو ناسم (False) وي، ټوله پایله False ده.
+table AND آپریٹر || The AND operator || د AND عملګر
+th | Condition 1 || Condition 1 || لومړی شرط | Operator || Operator || عملګر | Condition 2 || Condition 2 || دویم شرط | Result || Result || پایله
+tr | False || False || False | && || && || && | False || False || False | False || False || False
+tr | False || False || False | && || && || && | True || True || True | False || False || False
+tr | True || True || True | && || && || && | False || False || False | False || False || False
+tr | True || True || True | && || && || && | True || True || True | True || True || True
+endtable
+p مثال: فرض کریں کہ ہمارے پاس دو ویری ایبل A = 100 اور B = 50 ہیں۔ || Example: suppose we have two variables A = 100 and B = 50. || بېلګه: فرض کړئ دوه متغیرونه A = 100 او B = 50 لرو.
+p اس (A> 10) && (B> 10) کا نتیجہ درست (True) ہے، کیونکہ دونوں ہی شرائط درست (True) ہیں۔ || The result of (A > 10) && (B > 10) is True, because both conditions are true. || د (A > 10) && (B > 10) پایله True ده، ځکه دواړه شرطونه سم دي.
+p اس (A> 50) && (B> 50) کا نتیجہ غلط (False) ہے، کیونکہ پہلی شرط کا نتیجہ درست (True) ہے لیکن دوسری شرط کا نتیجہ غلط (False) ہے۔ || The result of (A > 50) && (B > 50) is False, because the first condition is true but the second condition is false. || د (A > 50) && (B > 50) پایله False ده، ځکه لومړی شرط سم دی خو دویم شرط ناسم دی.
+### (b) OR آپریٹر {{OR}} (OR Operator) || (b) The OR operator {{OR}} || (b) د OR عملګر {{OR}}
+p OR آپریٹر کے لئے استعمال ہونے والی علامت {{OR}} ہے یہ دو شرائط کا موازنہ کرنے کے لئے استعمال ہوتا ہے۔ اگر کوئی ایک شرط بھی درست (True) ہو تو اس کا نتیجہ True ہو گا۔ اگر دونوں شرائط کا نتیجہ غلط (False) ہے تو اس کا نتیجہ غلط (False) ہو گا۔ || The symbol used for the OR operator is {{OR}}. It is used to compare two conditions. If even one condition is true, the result is True; if both conditions are false, the result is False. || د OR عملګر نښه {{OR}} ده. د دوو شرطونو د پرتلې لپاره کارېږي. که یو شرط هم سم وي، پایله True ده؛ که دواړه شرطونه ناسم وي، پایله False ده.
+table OR آپریٹر || The OR operator || د OR عملګر
+th | Condition 1 || Condition 1 || لومړی شرط | Operator || Operator || عملګر | Condition 2 || Condition 2 || دویم شرط | Result || Result || پایله
+tr | False || False || False | {{OR}} || {{OR}} || {{OR}} | False || False || False | False || False || False
+tr | False || False || False | {{OR}} || {{OR}} || {{OR}} | True || True || True | True || True || True
+tr | True || True || True | {{OR}} || {{OR}} || {{OR}} | False || False || False | True || True || True
+tr | True || True || True | {{OR}} || {{OR}} || {{OR}} | True || True || True | True || True || True
+endtable
+p مثال: فرض کریں کہ ہمارے پاس دو ویری ایبل A = 100 اور B = 50 ہیں۔ || Example: suppose we have two variables A = 100 and B = 50. || بېلګه: فرض کړئ دوه متغیرونه A = 100 او B = 50 لرو.
+p اس (A> 50) {{OR}} (B> 50) کا نتیجہ درست (True) ہو گا کیونکہ ایک شرط کا نتیجہ درست (True) ہے۔ کیونکہ ایک شرط صحیح ہے۔ || The result of (A > 50) {{OR}} (B > 50) will be True, because one condition is true. || د (A > 50) {{OR}} (B > 50) پایله True ده، ځکه یو شرط سم دی.

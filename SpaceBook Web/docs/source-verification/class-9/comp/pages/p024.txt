@@ -1,0 +1,24 @@
+@pdf 24
+@printed 16
+@status lesson
+### Problem 18 || مسئلہ 18 || ستونزه ۱۸
+p **Calculate GCD of given two numbers.** || **دو دیے گئے اعداد کا عادِ اعظم (GCD) معلوم کرنا۔** || **د دوو ورکړل شویو عددونو لوی ګډ قاسم (GCD) محاسبه کول.**
+p **Algorithm:** This algorithm calculates *GCD* of given two numbers *M* and *N*. || **الگورتھم:** یہ الگورتھم دو دیے گئے اعداد *M* اور *N* کا *GCD* معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د دوو ورکړل شویو عددونو *M* او *N* *GCD* محاسبه کوي.
+m Step 1. Read M, N
+m Step 2. If N=0, Go to Step 5; otherwise, Proceed to Step 3
+m Step 3. Divide M by N and assign the value of the remainder to R
+m Step 4. Assign the value of N to M and the value of R to N and go to Step 2
+m Step 5. Write M
+m Step 6. Exit
+### Problem 19 || مسئلہ 19 || ستونزه ۱۹
+p **Determine whether a given number is prime number or not.** || **معلوم کرنا کہ دیا گیا عدد مفرد (پرائم) ہے یا نہیں۔** || **معلومول چې ورکړل شوی عدد اولي (prime) دی که نه.**
+p **Algorithm:** This algorithm determine whether a given number *NUM* is prime number or not. || **الگورتھم:** یہ الگورتھم معلوم کرتا ہے کہ دیا گیا عدد *NUM* مفرد ہے یا نہیں۔ || **الګوریتم:** دا الګوریتم معلوموي چې ورکړل شوی عدد *NUM* اولي دی که نه.
+m Step 1. Read NUM
+m Step 2. Set i=2 [Initialize counter]
+m Step 3. Repeat steps 4 and 5 while i<=NUM/2
+m Step 4. If NUM%i=0 Then Write 'Not a prime number' and go to Step 7
+m Step 5. Set i=i+1 [Increment counter.]
+m          [End of while loop]
+m Step 6. If i=NUM/2; Then Write 'Prime number'
+m Step 7. Exit
+@issue Step 6 as printed tests i=NUM/2, but after the loop i is NUM/2+1 (for a prime), so the condition should be i>NUM/2; kept as printed.

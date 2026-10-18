@@ -1,0 +1,163 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s086-p077",
+  "title": "General purpose registers: AX and BX",
+  "headingUrdu": "عمومی مقصد کے رجسٹرز: اے ایکس اور بی ایکس",
+  "headingPashto": "د عمومي موخې رجسترونه: AX او BX",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 86,
+    "printedPage": "77"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s086-a",
+      "en": "arithmetic and data movement. Typically these registers are 8-32 bit registers. Following are the commonly used general purpose registers.",
+      "ur": "حساب اور ڈیٹا کی نقل و حرکت کے لیے استعمال ہوتے ہیں۔ عموماً یہ رجسٹرز ۸ سے ۳۲ بٹ کے رجسٹرز ہوتے ہیں۔ عام طور پر استعمال ہونے والے عمومی مقصد کے رجسٹرز درج ذیل ہیں۔",
+      "ps": "د حساب او ډېټا د خوځښت لپاره کارول کېږي. معمولاً دا رجسترونه ۸ تر ۳۲ بټه رجسترونه وي. لاندې عام کارېدونکي د عمومي موخې رجسترونه دي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s086-t1",
+      "en": "Accumulator (AX)",
+      "ur": "ایکیومولیٹر (اے ایکس)",
+      "ps": "ایکیومولېټر (AX)",
+      "listGroup": "gp"
+    },
+    {
+      "id": "cs11-s086-t2",
+      "en": "Data Register (DX)",
+      "ur": "ڈیٹا رجسٹر (ڈی ایکس)",
+      "ps": "د ډېټا رجستر (DX)",
+      "listGroup": "gp"
+    },
+    {
+      "id": "cs11-s086-t3",
+      "en": "Base Register (BX)",
+      "ur": "بیس رجسٹر (بی ایکس)",
+      "ps": "بنسټ رجستر (BX)",
+      "listGroup": "gp"
+    },
+    {
+      "id": "cs11-s086-t4",
+      "en": "Counter Register (CX)",
+      "ur": "کاؤنٹر رجسٹر (سی ایکس)",
+      "ps": "شمېرونکی رجستر (CX)",
+      "listGroup": "gp"
+    },
+    {
+      "id": "cs11-s086-h1",
+      "en": "i. Accumulator (AX)",
+      "ur": "i۔ ایکیومولیٹر (اے ایکس)",
+      "ps": "i. ایکیومولېټر (AX)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s086-b",
+      "en": "Accumulator is a general purpose register and is used by CPU for performing arithmetic and logic operations and to hold the result of those operations. The accumulator is initially set to zero, and then each number in turn is added to the value in the accumulator. It consists of two 8-bit registers (AH and AL) which can be combined together and used as a one 16-bit register.",
+      "ur": "ایکیومولیٹر ایک عمومی مقصد کا رجسٹر ہے اور سی پی یو اسے ریاضیاتی اور منطقی اعمال انجام دینے اور ان اعمال کا نتیجہ رکھنے کے لیے استعمال کرتا ہے۔ ایکیومولیٹر ابتدا میں صفر پر مقرر ہوتا ہے اور پھر ہر عدد باری باری ایکیومولیٹر کی قدر میں شامل کیا جاتا ہے۔ یہ دو ۸ بٹ رجسٹرز (اے ایچ اور اے ایل) پر مشتمل ہے جو یکجا ہو کر ایک ۱۶ بٹ رجسٹر کے طور پر استعمال ہو سکتے ہیں۔",
+      "ps": "ایکیومولېټر یو د عمومي موخې رجستر دی او CPU یې د ریاضیاتي او منطقي عملونو ترسره کولو او د هغو عملونو پایلې ساتلو لپاره کاروي. ایکیومولېټر په پیل کې صفر ټاکل کېږي او بیا هر عدد په نوبت سره د ایکیومولېټر ارزښت ته اضافه کېږي. دا له دوو ۸ بټه رجسترونو (AH او AL) جوړ دی چې یو ځای کېدای شي او د یو ۱۶ بټه رجستر په توګه کارول کېږي."
+    },
+    {
+      "id": "cs11-s086-h2",
+      "en": "ii. Base Register (BX)",
+      "ur": "ii۔ بیس رجسٹر (بی ایکس)",
+      "ps": "ii. بنسټ رجستر (BX)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s086-c",
+      "en": "The Base Register can perform arithmetic and data movement and it has some special addressing abilities. BX register can hold a memory address that points to another variable. It usually contains a data pointer. It consists of two 8-bit registers (BH and BL) which can be combined together and used as a one 16-bit register.",
+      "ur": "بیس رجسٹر ریاضیاتی عمل اور ڈیٹا کی نقل و حرکت کر سکتا ہے اور اس میں کچھ خاص ایڈریسنگ صلاحیتیں ہیں۔ بی ایکس رجسٹر ایک میموری پتہ رکھ سکتا ہے جو کسی دوسرے متغیر کی طرف اشارہ کرتا ہے۔ یہ عموماً ڈیٹا پوائنٹر رکھتا ہے۔ یہ دو ۸ بٹ رجسٹرز (بی ایچ اور بی ایل) پر مشتمل ہے جو یکجا ہو کر ایک ۱۶ بٹ رجسٹر کے طور پر استعمال ہو سکتے ہیں۔",
+      "ps": "بنسټ رجستر کولای شي ریاضیاتي عمل او ډېټا خوځښت وکړي او ځینې ځانګړې پته ورکولو وړتیاوې لري. د BX رجستر کولای شي یوه حافظې پته وساتي چې بل متغیر ته اشاره کوي. دا معمولاً د ډېټا اشاره کوونکی لري. دا له دوو ۸ بټه رجسترونو (BH او BL) جوړ دی چې یو ځای کېدای شي او د یو ۱۶ بټه رجستر په توګه کارول کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s086-a",
+        "cs11-s086-t1",
+        "cs11-s086-t2",
+        "cs11-s086-t3",
+        "cs11-s086-t4",
+        "cs11-s086-h1",
+        "cs11-s086-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s086-h2",
+        "cs11-s086-c"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s086-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 114\" role=\"img\" aria-label=\"AX register made of AH and AL\" style=\"width:100%;max-width:380px;height:auto;background:#fff\"><text x=\"30\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">Bits 15</text><line x1=\"82\" y1=\"14\" x2=\"330\" y2=\"14\" stroke=\"#111\" stroke-dasharray=\"2 3\"/><text x=\"334\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">0</text><rect x=\"30\" y=\"26\" width=\"320\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"190\" y=\"50\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">16-bit AX register</text><rect x=\"30\" y=\"64\" width=\"160\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"110\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">8-bit AH register</text><rect x=\"190\" y=\"64\" width=\"160\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"270\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">8-bit AL register</text></svg>",
+      "caption": "AX register: 16 bits made of two 8-bit registers AH and AL",
+      "captionUrdu": "اے ایکس رجسٹر: ۱۶ بٹس، دو ۸ بٹ رجسٹرز AH اور AL سے بنا",
+      "captionPashto": "AX رجستر: ۱۶ بټه، له دوو ۸ بټه رجسترونو AH او AL نه جوړ",
+      "labels": [
+        {
+          "en": "16-bit AX register",
+          "ur": "۱۶ بٹ اے ایکس رجسٹر",
+          "ps": "۱۶ بټه AX رجستر"
+        },
+        {
+          "en": "8-bit AH register",
+          "ur": "۸ بٹ AH رجسٹر",
+          "ps": "۸ بټه AH رجستر"
+        },
+        {
+          "en": "8-bit AL register",
+          "ur": "۸ بٹ AL رجسٹر",
+          "ps": "۸ بټه AL رجستر"
+        }
+      ]
+    },
+    {
+      "id": "cs11-s086-fig2",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 114\" role=\"img\" aria-label=\"BX register made of BH and BL\" style=\"width:100%;max-width:380px;height:auto;background:#fff\"><text x=\"30\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">Bits 15</text><line x1=\"82\" y1=\"14\" x2=\"330\" y2=\"14\" stroke=\"#111\" stroke-dasharray=\"2 3\"/><text x=\"334\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">0</text><rect x=\"30\" y=\"26\" width=\"320\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"190\" y=\"50\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">16-bit BX register</text><rect x=\"30\" y=\"64\" width=\"160\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"110\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">8-bit BH register</text><rect x=\"190\" y=\"64\" width=\"160\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"270\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">8-bit BL register</text></svg>",
+      "caption": "BX register: 16 bits made of two 8-bit registers BH and BL",
+      "captionUrdu": "بی ایکس رجسٹر: ۱۶ بٹس، دو ۸ بٹ رجسٹرز BH اور BL سے بنا",
+      "captionPashto": "BX رجستر: ۱۶ بټه، له دوو ۸ بټه رجسترونو BH او BL نه جوړ",
+      "labels": [
+        {
+          "en": "16-bit BX register",
+          "ur": "۱۶ بٹ بی ایکس رجسٹر",
+          "ps": "۱۶ بټه BX رجستر"
+        },
+        {
+          "en": "8-bit BH register",
+          "ur": "۸ بٹ BH رجسٹر",
+          "ps": "۸ بټه BH رجستر"
+        },
+        {
+          "en": "8-bit BL register",
+          "ur": "۸ بٹ BL رجسٹر",
+          "ps": "۸ بټه BL رجستر"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 77: the end of the sentence on general purpose registers (continuing from page 76), the list of four registers, “i. Accumulator (AX)” and “ii. Base Register (BX)”, each with a table of bit fields (redrawn here as coded SVG figures; the captions of these two figures are not printed and are supplied here). The headings “i.” and “ii.” are printed in a faded colour. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:54:16.623067+00:00",
+    "scope": "Scan 86 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

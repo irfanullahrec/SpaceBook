@@ -1,0 +1,520 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s068-continuous-grouped-1",
+  "title": "Example 2.5 (end) · 2.2.3 Continuous grouped data · Example 2.6",
+  "headingUrdu": "مثال 2.5 (اختتام) · 2.2.3 مسلسل گروہی اعداد و شمار · مثال 2.6",
+  "headingPashto": "بېلګه 2.5 (پای) · 2.2.3 دوامداره ګروپي معلومات · بېلګه 2.6",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 68,
+    "printedPage": "60"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s068-h223",
+      "en": "2.2.3 Calculation of arithmetic mean in case of continuous grouped data",
+      "ur": "2.2.3 مسلسل گروہی اعداد و شمار کی صورت میں حسابی اوسط کا حساب",
+      "ps": "2.2.3 د دوامداره ګروپي معلوماتو په حالت کې د حسابي اوسط محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s068-t223",
+      "en": "Compute midpoints (x) for the classes. Formulae and calculation procedure is same as used in case of discrete series.",
+      "ur": "جماعتوں کے وسطی نقاط (x) حساب کریں۔ فارمولے اور حساب کا طریقہ وہی ہے جو منفصل سلسلے کی صورت میں استعمال ہوتا ہے۔",
+      "ps": "د ټولګیو منځنۍ نقطې (x) محاسبه کړئ. فورمولونه او د محاسبې طریقه هماغه ده چې د منفصلې لړۍ په حالت کې کارول کېږي."
+    },
+    {
+      "id": "stat11-s068-ex6",
+      "en": "Example: 2.6:",
+      "ur": "مثال: 2.6:",
+      "ps": "بېلګه: 2.6:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-q6",
+      "en": "The heights of 100 college students measured to nearest inch are given in the following table",
+      "ur": "100 کالج طلبہ کے قد، جو قریب ترین انچ تک ناپے گئے ہیں، درج ذیل جدول میں دیے گئے ہیں",
+      "ps": "د 100 کالج زده کوونکو قدونه، چې نږدې انچ ته اندازه شوي، په لاندې جدول کې ورکړل شوي",
+      "role": "question",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-q6b",
+      "en": "Calculate the arithmetic mean.",
+      "ur": "حسابی اوسط حساب کریں۔",
+      "ps": "حسابي اوسط محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-sol6",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-i6",
+      "en": "(i) By direct method",
+      "ur": "(i) براہِ راست طریقے سے",
+      "ps": "(i) په مستقیمه طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-ii6",
+      "en": "(ii) By shortcut method",
+      "ur": "(ii) مختصر طریقے سے",
+      "ps": "(ii) په لنډه طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-6"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s068-h223",
+        "stat11-s068-t223",
+        "stat11-s068-ex6",
+        "stat11-s068-q6"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s068-q6b",
+        "stat11-s068-sol6",
+        "stat11-s068-i6"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s068-ii6"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s068-c1",
+      "latex": "\\text{A}=18,\\ h=2",
+      "accessible": "A = 18, h = 2",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "A = 18, h = 2"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "A = 18, h = 2"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "A = 18, h = 2"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-5"
+    },
+    {
+      "id": "stat11-s068-c2",
+      "latex": "\\text{Therefore, }\\bar{x}=A+\\dfrac{\\sum fu}{\\sum f}\\times h=18+\\dfrac{(-6)}{30}\\cdot2=18-\\dfrac{12}{30}=18-0.4=17.6",
+      "accessible": "Therefore, x̄ = A + (Σfu / Σf) × h = 18 + (−6)/30 · 2 = 18 − 12/30 = 18 − 0.4 = 17.6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Therefore, x̄ = A + (Σfu / Σf) × h = 18 + (−6)/30 · 2 = 18 − 12/30 = 18 − 0.4 = 17.6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Therefore, x̄ = A + (Σfu / Σf) × h = 18 + (−6)/30 · 2 = 18 − 12/30 = 18 − 0.4 = 17.6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Therefore, x̄ = A + (Σfu / Σf) × h = 18 + (−6)/30 · 2 = 18 − 12/30 = 18 − 0.4 = 17.6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-5"
+    },
+    {
+      "id": "stat11-s068-dm",
+      "latex": "\\bar{x}=\\dfrac{\\sum fx}{\\sum f}",
+      "accessible": "x̄ = Σfx / Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-dm2",
+      "latex": "\\bar{x}=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{6745}{100}=67.45",
+      "accessible": "x̄ = Σfx / Σf = 6745/100 = 67.45",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf = 6745/100 = 67.45"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf = 6745/100 = 67.45"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σfx / Σf = 6745/100 = 67.45"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s068-sc",
+      "latex": "\\bar{x}=A+\\dfrac{\\sum fD}{\\sum f}",
+      "accessible": "x̄ = A + ΣfD / Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.6: heights of 100 college students",
+      "captionUrdu": "مثال 2.6: 100 کالج طلبہ کے قد",
+      "captionPashto": "بېلګه 2.6: د 100 کالج زده کوونکو قدونه",
+      "headers": [
+        {
+          "en": "Height (inches):",
+          "ur": "قد (انچ):",
+          "ps": "قد (انچ):"
+        },
+        {
+          "en": "60 – 62",
+          "ur": "60 – 62",
+          "ps": "60 – 62"
+        },
+        {
+          "en": "63 – 65",
+          "ur": "63 – 65",
+          "ps": "63 – 65"
+        },
+        {
+          "en": "66 – 68",
+          "ur": "66 – 68",
+          "ps": "66 – 68"
+        },
+        {
+          "en": "69 – 71",
+          "ur": "69 – 71",
+          "ps": "69 – 71"
+        },
+        {
+          "en": "72 – 74",
+          "ur": "72 – 74",
+          "ps": "72 – 74"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Number of students:",
+            "ur": "طلبہ کی تعداد:",
+            "ps": "د زده کوونکو شمېر:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "caption": "Example 2.6: direct method",
+      "captionUrdu": "مثال 2.6: براہِ راست طریقہ",
+      "captionPashto": "بېلګه 2.6: مستقیمه طریقه",
+      "headers": [
+        {
+          "en": "Heights",
+          "ur": "قد",
+          "ps": "قدونه"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "60 – 62",
+            "ur": "60 – 62",
+            "ps": "60 – 62"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "305",
+            "ur": "305",
+            "ps": "305"
+          }
+        ],
+        [
+          {
+            "en": "63 – 65",
+            "ur": "63 – 65",
+            "ps": "63 – 65"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "1152",
+            "ur": "1152",
+            "ps": "1152"
+          }
+        ],
+        [
+          {
+            "en": "66 – 68",
+            "ur": "66 – 68",
+            "ps": "66 – 68"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "2814",
+            "ur": "2814",
+            "ps": "2814"
+          }
+        ],
+        [
+          {
+            "en": "69 – 71",
+            "ur": "69 – 71",
+            "ps": "69 – 71"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "1890",
+            "ur": "1890",
+            "ps": "1890"
+          }
+        ],
+        [
+          {
+            "en": "72 – 74",
+            "ur": "72 – 74",
+            "ps": "72 – 74"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "584",
+            "ur": "584",
+            "ps": "584"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "6745",
+            "ur": "6745",
+            "ps": "6745"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-6",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 60. The first two lines complete Example 2.5 from the previous page. The data lines of Example 2.6 (Height / Number of students) are printed as text lines and kept as a one-row table. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:32:49.318203+00:00",
+    "scope": "Scan 68 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

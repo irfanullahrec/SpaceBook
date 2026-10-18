@@ -1,0 +1,24 @@
+@pdf 134
+@printed 126
+@status lesson
+### 5.1.5 The *break* Statement || 5.1.5 *break* اسٹیٹمنٹ || ۵.۱.۵ *break* بیان
+p The ***break*** statement terminates the execution of the loop when it is used inside the body of the loop. || ***break*** اسٹیٹمنٹ لوپ کے جسم کے اندر استعمال ہونے پر لوپ کا چلنا ختم کر دیتی ہے۔ || ***break*** بیان کله چې د لوپ په بدنه کې وکارول شي د لوپ اجرا پای ته رسوي.
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m break;
+p The *break* statement is used in following two situations: || *break* اسٹیٹمنٹ درج ذیل دو صورتوں میں استعمال ہوتی ہے: || *break* بیان په دې دوو حالتونو کې کارېږي:
+- Use *break* statement to come out of the loop instantly. Whenever a *break* statement is encountered inside a loop, the control directly comes out of loop terminating it. It is used along with *if* statement, whenever used inside loop so that it occurs only for a particular condition. || لوپ سے فوراً باہر آنے کے لیے *break* استعمال کریں۔ جب بھی لوپ کے اندر *break* آئے تو کنٹرول لوپ ختم کر کے سیدھا باہر آ جاتا ہے۔ لوپ کے اندر اسے *if* کے ساتھ استعمال کیا جاتا ہے تاکہ یہ صرف خاص شرط پر ہو۔ || له لوپ څخه د سمدستي وتلو لپاره *break* وکاروئ. کله چې په لوپ کې *break* راشي، کنټرول لوپ پای ته رسوي او مستقیم وځي. په لوپ کې د *if* سره کارېږي څو یوازې په ځانګړي شرط وشي.
+- It is used in *switch-case* control structure after the *case* blocks. Generally all cases in *switch-case* are followed by a *break* statement to avoid the subsequent cases execution. Whenever it is encountered in *switch-case* block, the control comes out of the *switch-case* body. Working of *break* statement is shown in figure 5.4. || یہ *switch-case* کنٹرول اسٹرکچر میں *case* بلاکس کے بعد استعمال ہوتی ہے۔ عموماً *switch-case* کے تمام کیسز کے بعد *break* ہوتا ہے تاکہ اگلے کیسز نہ چلیں۔ جب بھی یہ *switch-case* بلاک میں آئے تو کنٹرول *switch-case* کے جسم سے باہر آ جاتا ہے۔ *break* کا کام شکل 5.4 میں دکھایا گیا ہے۔ || په *switch-case* کې د *case* بلاکونو وروسته کارېږي. عموماً ټول cases د *break* سره پای ته رسېږي څو راتلونکي cases اجرا نه شي. کله چې په *switch-case* بلاک کې راشي، کنټرول له *switch-case* بدنې وځي. د *break* کار په ۵.۴ شکل کې ښودل شوی.
+svg Figure: 5.4 Working of break statement || شکل 5.4 break اسٹیٹمنٹ کا کام || ۵.۴ شکل د break بیان کار
+<svg viewBox="0 0 420 240" width="420" role="img" aria-label="Flowchart: arrow into diamond 'condition'; one branch goes down to 'code inside loop', then right to 'break', then right to 'code after loop body'; the other branch from the condition goes right and down directly to 'code after loop body'" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF54" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M70 2 V22" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<polygon points="70,26 125,66 70,106 15,66" fill="#fff" stroke="#111827" stroke-width="2"/><text x="70" y="71">condition</text>
+<path d="M70 106 V126" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="10" y="130" width="120" height="50" fill="#fff" stroke="#111827" stroke-width="2"/><text x="70" y="152">code inside</text><text x="70" y="170">loop</text>
+<path d="M70 180 V210 H166" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="170" y="192" width="70" height="36" fill="#fff" stroke="#111827" stroke-width="2"/><text x="205" y="215">break</text>
+<path d="M240 210 H266" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="270" y="180" width="130" height="56" fill="#fff" stroke="#111827" stroke-width="2"/><text x="335" y="203">code after</text><text x="335" y="222">loop body</text>
+<path d="M125 66 H335 V176" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+</svg>
+endsvg

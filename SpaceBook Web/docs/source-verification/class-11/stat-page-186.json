@@ -1,0 +1,137 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s186-reg-model-1",
+  "title": "Nonlinear and simple regression · Simple linear regression model",
+  "headingUrdu": "غیر خطی اور سادہ ریگریشن · سادہ خطی ریگریشن ماڈل",
+  "headingPashto": "غیر خطي او ساده ریګرېشن · ساده خطي ریګرېشن ماډل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 186,
+    "printedPage": "176"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s186-c1",
+      "en": "expressed by a curve e.g. second degree curve, exponential curve etc. it is called nonlinear or curvilinear regression.",
+      "ur": "ایک منحنی سے ظاہر کیا جائے مثلاً دوسرے درجے کا منحنی، قوت نمائی منحنی وغیرہ تو اسے غیر خطی یا منحنی ریگریشن کہتے ہیں۔",
+      "ps": "په یوې منحني ښودل شي لکه دویم درجې منحني، توانمند منحني او نور نو دې ته غیر خطي یا منحني ریګرېشن ویل کېږي.",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s186-b1",
+      "en": "Simple and multiple regression",
+      "ur": "سادہ اور متعدد ریگریشن",
+      "ps": "ساده او څو‌ګونی ریګرېشن"
+    },
+    {
+      "id": "stat11-s186-b2",
+      "en": "When the dependent variable is regressed on the basis of a single independent variable, it is called simple regression.",
+      "ur": "جب تابع متغیر کو ایک ہی آزاد متغیر کی بنیاد پر ریگریس کیا جائے تو اسے سادہ ریگریشن کہتے ہیں۔",
+      "ps": "کله چې تابع متغیر د یوه واحد خپلواک متغیر پر بنسټ ریګرېس شي نو دې ته ساده ریګرېشن ویل کېږي."
+    },
+    {
+      "id": "stat11-s186-b3",
+      "en": "When the dependent variable is regressed on the basis of two or more independent variables, it is called multiple regression.",
+      "ur": "جب تابع متغیر کو دو یا زیادہ آزاد متغیرات کی بنیاد پر ریگریس کیا جائے تو اسے متعدد ریگریشن کہتے ہیں۔",
+      "ps": "کله چې تابع متغیر د دوو یا ډېرو خپلواکو متغیرونو پر بنسټ ریګرېس شي نو دې ته څو‌ګونی ریګرېشن ویل کېږي."
+    },
+    {
+      "id": "stat11-s186-b4",
+      "en": "Simple linear regression model",
+      "ur": "سادہ خطی ریگریشن ماڈل",
+      "ps": "ساده خطي ریګرېشن ماډل"
+    },
+    {
+      "id": "stat11-s186-b5",
+      "en": "A functional relationship of the type Y = α + βX + ε (population case) and y = a + bx + e (sample case) is called simple linear regression model or equation or line.",
+      "ur": "Y = α + βX + ε (آبادی کی صورت) اور y = a + bx + e (نمونے کی صورت) قسم کا تقاعلی تعلق سادہ خطی ریگریشن ماڈل یا مساوات یا لکیر کہلاتا ہے۔",
+      "ps": "د Y = α + βX + ε (د ټولنې حالت) او y = a + bx + e (د نمونې حالت) ډول فعلي اړیکه ساده خطي ریګرېشن ماډل یا معادله یا کرښه بلل کېږي."
+    },
+    {
+      "id": "stat11-s186-w",
+      "en": "Where",
+      "ur": "جہاں",
+      "ps": "چېرته"
+    },
+    {
+      "id": "stat11-s186-w1",
+      "en": "Y: dependent variable",
+      "ur": "Y: تابع متغیر",
+      "ps": "Y: تابع متغیر"
+    },
+    {
+      "id": "stat11-s186-w2",
+      "en": "X: independent variable",
+      "ur": "X: آزاد متغیر",
+      "ps": "X: خپلواک متغیر"
+    },
+    {
+      "id": "stat11-s186-w3",
+      "en": "α, β: are parameters in the population model.",
+      "ur": "α, β: آبادی کے ماڈل میں پیرامیٹرز ہیں۔",
+      "ps": "α, β: د ټولنې په ماډل کې پارامېټرونه دي."
+    },
+    {
+      "id": "stat11-s186-w4",
+      "en": "α (alpha): is called intercept which the line cuts on the y-axis and it is the value of y when x = 0.",
+      "ur": "α (الفا): قطع کہلاتا ہے جو لکیر y-محور پر کاٹتی ہے اور یہ x = 0 ہونے پر y کی قدر ہے۔",
+      "ps": "α (الفا): کټ بلل کېږي چې کرښه په y-محور باندې کټوي او دا د x = 0 په وخت کې د y ارزښت دی."
+    },
+    {
+      "id": "stat11-s186-w5",
+      "en": "β (beta): is called slope of the line. It is also known as regression coefficient which means that for a unit change in x there will be β unit change in y. Its value may be positive or negative depending upon the direction of the relationship between x and y.",
+      "ur": "β (بیٹا): لکیر کا ڈھلوان کہلاتا ہے۔ اسے ریگریشن عددی سر بھی کہا جاتا ہے جس کا مطلب ہے کہ x میں ایک اکائی تبدیلی کے لیے y میں β اکائی تبدیلی ہوگی۔ اس کی قدر x اور y کے درمیان تعلق کی سمت کے لحاظ سے مثبت یا منفی ہو سکتی ہے۔",
+      "ps": "β (بیټا): د کرښې ډلوان بلل کېږي. دې ته ریګرېشن ضریب هم ویل کېږي چې پدې معنا په x کې د یو واحد بدلون لپاره به په y کې β واحد بدلون وي. د دې ارزښت د x او y تر منځ د اړیکې د لوري په پام کې نیولو سره مثبت یا منفي کېدای شي."
+    },
+    {
+      "id": "stat11-s186-w6",
+      "en": "ε (epsilon): is called unknown random error or residual. It is included in the model to represent all factors, other than the independent variable, affecting the dependent variable.",
+      "ur": "ε (ایپسیلون): نامعلوم بے ترتیب غلطی یا باقی کہلاتا ہے۔ یہ ماڈل میں آزاد متغیر کے علاوہ تمام عوامل کی نمائندگی کے لیے شامل کیا جاتا ہے جو تابع متغیر کو متاثر کرتے ہیں۔",
+      "ps": "ε (اپسیلون): نامعلومه تصادفي تېروتنه یا پاتې کېدونکی بلل کېږي. دا په ماډل کې د خپلواک متغیر پرته د ټولو هغو عواملو د استازیتوب لپاره شامل کېږي چې تابع متغیر اغېزمنوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s186-c1",
+        "stat11-s186-b1",
+        "stat11-s186-b2",
+        "stat11-s186-b3",
+        "stat11-s186-b4",
+        "stat11-s186-b5",
+        "stat11-s186-w",
+        "stat11-s186-w1",
+        "stat11-s186-w2",
+        "stat11-s186-w3",
+        "stat11-s186-w4",
+        "stat11-s186-w5",
+        "stat11-s186-w6"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "simple regression": {
+      "ur": "سادہ ریگریشن",
+      "ps": "ساده ریګرېشن"
+    },
+    "intercept": {
+      "ur": "قطع",
+      "ps": "کټ"
+    },
+    "slope": {
+      "ur": "ڈھلوان",
+      "ps": "ډلوان"
+    }
+  },
+  "equations": [],
+  "sourceNote": "Printed page 176. Handwritten notes in blue ink (\"Intercept\", \"Error\"), underlines and a faded margin scribble are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:17:25.332040+00:00",
+    "scope": "Scan 186 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

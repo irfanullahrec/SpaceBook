@@ -1,0 +1,112 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s052-p043",
+  "title": "Bit (end); b. Byte; higher units of memory; c. Memory Word — start",
+  "headingUrdu": "بٹ (اختتام)؛ ب۔ بائٹ؛ میموری کی اعلیٰ اکائیاں؛ ج۔ میموری ورڈ — آغاز",
+  "headingPashto": "بټ (پای)؛ ب. بایټ؛ د حافظې لوړ واحدونه؛ ج. د حافظې کلمه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 52,
+    "printedPage": "43"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s052-a",
+      "en": "sequences of 0s and 1s. Each binary digit (or “bit”) may be stored by any physical system that can be in either of two stable states, to represent 0 and 1. Such a system is called bi-stable. In computers many bits are combined together to hold more information. For example, eight bits make up a byte, which can hold up to 256 characters.",
+      "ur": "۰ اور ۱ کی لڑیوں کی صورت میں۔ ہر بائنری ہندسہ (یا ’’بٹ‘‘) کسی بھی طبعی نظام میں محفوظ کیا جا سکتا ہے جو دو مستحکم حالتوں میں سے کسی ایک میں ہو سکے، تاکہ ۰ اور ۱ کو ظاہر کرے۔ ایسا نظام دو حالتی (بائی اسٹیبل) کہلاتا ہے۔ کمپیوٹرز میں زیادہ معلومات رکھنے کے لیے بہت سے بٹس کو یکجا کیا جاتا ہے۔ مثلاً آٹھ بٹس مل کر ایک بائٹ بناتے ہیں جو ۲۵۶ حروف تک رکھ سکتا ہے۔",
+      "ps": "د ۰ او ۱ د لړیو په ډول. هر بائنري عدد (یا ‘بټ’) په هر فزیکي سیسټم کې ساتل کېدای شي چې په دوو ثابتو حالتونو یوه کې وي، ترڅو ۰ او ۱ وښيي. داسې سیسټم دوه حالتي (بای-ستېبل) بلل کېږي. په کمپیوټرونو کې د ډیرو معلوماتو د ساتلو لپاره ډیر بټونه یو ځای کېږي. د بېلګې په توګه اته بټونه یو بایټ جوړوي چې تر ۲۵۶ توریو پورې ساتلای شي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s052-h1",
+      "en": "b. Byte",
+      "ur": "ب۔ بائٹ",
+      "ps": "ب. بایټ",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s052-b",
+      "en": "In most computer systems, a byte is a unit of data that is eight bits long. A byte is the unit most computers use to represent a character such as an alphabet, a number, or a special symbol. For example A, h, 6, 4, #, @, *, etc. Computer storage is measured in byte multiples. For example, a 500 Gigabyte (GB) hard drive holds 500 billion bytes of data.",
+      "ur": "زیادہ تر کمپیوٹر سسٹمز میں بائٹ ڈیٹا کی وہ اکائی ہے جو آٹھ بٹس لمبی ہوتی ہے۔ بائٹ وہ اکائی ہے جسے زیادہ تر کمپیوٹرز کسی حرف جیسے حروفِ تہجی، عدد یا خاص علامت کو ظاہر کرنے کے لیے استعمال کرتے ہیں۔ مثلاً A، h، 6، 4، #، @، * وغیرہ۔ کمپیوٹر اسٹوریج بائٹ کے مضاعفات میں ناپا جاتا ہے۔ مثلاً ۵۰۰ گیگا بائٹ (جی بی) کی ہارڈ ڈرائیو ۵۰۰ ارب بائٹس ڈیٹا رکھتی ہے۔",
+      "ps": "په ډیرو کمپیوټر سیسټمونو کې بایټ د ډېټا هغه واحد دی چې اته بټه اوږد وي. بایټ هغه واحد دی چې ډیر کمپیوټرونه یې د یو توري لکه د الفبا توری، یو عدد، یا ځانګړې نښې د ښودلو لپاره کاروي. لکه A، h، 6، 4، #، @، * او نور. د کمپیوټر ذخیره د بایټ په مضاعفاتو اندازه کېږي. د بېلګې په توګه ۵۰۰ ګیګابایټ (GB) هارډ ډرایو ۵۰۰ میلیارده بایټه ډېټا ساتي."
+    },
+    {
+      "id": "cs11-s052-h2",
+      "en": "Higher units of memory",
+      "ur": "میموری کی اعلیٰ اکائیاں",
+      "ps": "د حافظې لوړ واحدونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s052-c",
+      "en": "The following are higher units of memory. These are the multiple of the unit byte for digital information storage.",
+      "ur": "درج ذیل میموری کی اعلیٰ اکائیاں ہیں۔ یہ ڈیجیٹل معلومات کے ذخیرے کے لیے بائٹ اکائی کے مضاعفات ہیں۔",
+      "ps": "لاندې د حافظې لوړ واحدونه دي. دا د ډیجیټل معلوماتو د ذخیرې لپاره د بایټ واحد مضاعفات دي."
+    },
+    {
+      "id": "cs11-s052-d",
+      "en": "Kilobyte: Kilo means one thousand (1000) but in digital computer as information is stored in binary digits (0, 1) and its units are power of 2 and the most nearest number near thousand is 2^10 = 1024. It is commonly abbreviated as KB (for Kilo Bytes).",
+      "ur": "کلو بائٹ: کلو کا مطلب ایک ہزار (۱۰۰۰) ہے لیکن ڈیجیٹل کمپیوٹر میں چونکہ معلومات بائنری ہندسوں (۰، ۱) میں محفوظ ہوتی ہیں اور اس کی اکائیاں ۲ کی طاقتیں ہیں اور ہزار کے قریب ترین عدد ۲^۱۰ = ۱۰۲۴ ہے۔ اسے عموماً کے بی (کلو بائٹس کے لیے) لکھا جاتا ہے۔",
+      "ps": "کیلوبایټ: کیلو مانا یو زر (۱۰۰۰) خو په ډیجیټل کمپیوټر کې څرنګه چې معلومات په بائنري عددونو (۰، ۱) کې ساتل کېږي او د هغې واحدونه د ۲ طاقتونه دي او د زرو سره تر ټولو نژدې شمېره ۲^۱۰ = ۱۰۲۴ ده. دا معمولاً KB (د کیلو بایټونو لپاره) لنډېږي."
+    },
+    {
+      "id": "cs11-s052-e",
+      "en": "Megabyte: Mega means one Million (2^20 = 1048576). It is commonly abbreviated as MB. 1MB = 1024 KB",
+      "ur": "میگا بائٹ: میگا کا مطلب ایک ملین (۲^۲۰ = ۱۰۴۸۵۷۶) ہے۔ اسے عموماً ایم بی لکھا جاتا ہے۔ ۱ ایم بی = ۱۰۲۴ کے بی",
+      "ps": "میګابایټ: میګا مانا یو میلیون (۲^۲۰ = ۱۰۴۸۵۷۶). دا معمولاً MB لنډېږي. ۱ MB = ۱۰۲۴ KB"
+    },
+    {
+      "id": "cs11-s052-f",
+      "en": "Gigabyte: The prefix Giga means 2^30. The unit symbol for the Gigabyte is GB. 1GB = 1024 MB",
+      "ur": "گیگا بائٹ: سابقہ گیگا کا مطلب ۲^۳۰ ہے۔ گیگا بائٹ کی اکائی کی علامت جی بی ہے۔ ۱ جی بی = ۱۰۲۴ ایم بی",
+      "ps": "ګیګابایټ: مخنۍ ګیګا مانا ۲^۳۰. د ګیګابایټ د واحد نښه GB ده. ۱ GB = ۱۰۲۴ MB"
+    },
+    {
+      "id": "cs11-s052-g",
+      "en": "Terabyte: The prefix Tera means 2^40. The unit symbol for the Terabyte is TB. 1TB = 1024 GB",
+      "ur": "ٹیرا بائٹ: سابقہ ٹیرا کا مطلب ۲^۴۰ ہے۔ ٹیرا بائٹ کی اکائی کی علامت ٹی بی ہے۔ ۱ ٹی بی = ۱۰۲۴ جی بی",
+      "ps": "ټیرابایټ: مخنۍ ټیرا مانا ۲^۴۰. د ټیرابایټ د واحد نښه TB ده. ۱ TB = ۱۰۲۴ GB"
+    },
+    {
+      "id": "cs11-s052-h3",
+      "en": "c. Memory Word",
+      "ur": "ج۔ میموری ورڈ",
+      "ps": "ج. د حافظې کلمه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s052-h",
+      "en": "A word is a term for the natural unit of data used by a particular computer design. A word is simply a fixed sized group of bits that are handled together by the system. The number of bits in a word (the word size or word length) is",
+      "ur": "ورڈ ایک مخصوص کمپیوٹر ڈیزائن کے زیرِ استعمال ڈیٹا کی قدرتی اکائی کے لیے اصطلاح ہے۔ ورڈ محض بٹس کا ایک مقررہ سائز کا گروپ ہے جسے سسٹم یکجا ہینڈل کرتا ہے۔ ایک ورڈ میں بٹس کی تعداد (ورڈ سائز یا ورڈ کی لمبائی)",
+      "ps": "کلمه د یوې ځانګړې کمپیوټر ډیزاین لخوا کارېدونکي د ډېټا طبیعي واحد لپاره یو اصطلاح ده. کلمه یوازې د بټونو یو ټاکلې کچې ډله ده چې سیسټم یې یو ځای اداره کوي. په یوه کلمه کې د بټونو شمېر (د کلمې کچه یا اوږدوالی)",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s052-a",
+        "cs11-s052-h1",
+        "cs11-s052-b",
+        "cs11-s052-h2",
+        "cs11-s052-c",
+        "cs11-s052-d",
+        "cs11-s052-e",
+        "cs11-s052-f",
+        "cs11-s052-g",
+        "cs11-s052-h3",
+        "cs11-s052-h"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 43: the end of the bit sentence (continuing from page 42), b. Byte, “Higher units of memory” (kilobyte, megabyte, gigabyte, terabyte) and the start of c. Memory Word (the sentence continues on the next page). The exponents are written here with the caret sign (for example 2^10); in the print they are small raised numerals. The page is photographed at an angle. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:41:53.782851+00:00",
+    "scope": "Scan 52 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

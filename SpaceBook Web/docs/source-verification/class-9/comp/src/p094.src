@@ -1,0 +1,25 @@
+@printed 86
+@status lesson
+### 3.2.7 Logical Operators || 3.2.7 لاجیکل آپریٹرز || ۳.۲.۷ منطقي operators
+p Logical operators are used to evaluate compound conditions. There are three logical operators in C language: || لاجیکل آپریٹرز مرکب شرائط کی جانچ کے لیے استعمال ہوتے ہیں۔ C زبان میں تین لاجیکل آپریٹرز ہیں: || منطقي operators د مرکبو شرطونو د ارزونې لپاره کارېږي. په C ژبه کې درې منطقي operators دي:
+- AND  && || AND  && || AND  &&
+- OR  {{OR}} || OR  {{OR}} || OR  {{OR}}
+- NOT  ! || NOT  ! || NOT  !
+### a. AND Operator && || الف۔ AND آپریٹر && || الف. AND operator &&
+p The symbol used for AND operator is &&. It is used to evaluate two conditions. It produces true result if both conditions are true. It produces false result if any of the conditions is false. || AND آپریٹر کی علامت && ہے۔ یہ دو شرائط کی جانچ کے لیے استعمال ہوتا ہے۔ اگر دونوں شرائط درست ہوں تو نتیجہ درست، اور اگر کوئی ایک شرط غلط ہو تو نتیجہ غلط دیتا ہے۔ || د AND operator نښه && ده. د دوو شرطونو د ارزونې لپاره کارېږي. که دواړه شرطونه سم وي، پایله سمه ده؛ که هر یو ناسم وي، پایله ناسمه ده.
+table AND operator || AND آپریٹر || AND operator
+th | Condition 1 || شرط 1 || شرط ۱ | Operator || آپریٹر || operator | Condition 2 || شرط 2 || شرط ۲ | Result || نتیجہ || پایله
+tr | False | && | False | False
+tr | False | && | True | False
+tr | True | && | False | False
+tr | True | && | True | True
+endtable
+p **Example**: Suppose we have two variables A =100 and B= 50. The compound condition **(A>10) && (B>10)** is **true**, as both the conditions are true. The compound condition **(A>50) && (B>50)** is **false**, as the first condition is true but the second is false. || **مثال:** فرض کریں دو متغیرات A =100 اور B= 50 ہیں۔ مرکب شرط **(A>10) && (B>10)** **درست** ہے کیونکہ دونوں شرائط درست ہیں۔ مرکب شرط **(A>50) && (B>50)** **غلط** ہے کیونکہ پہلی شرط درست مگر دوسری غلط ہے۔ || **بېلګه:** فرض کړئ دوه متغیرونه A =100 او B= 50 دي. مرکب شرط **(A>10) && (B>10)** **سم** دی ځکه دواړه شرطونه سم دي. مرکب شرط **(A>50) && (B>50)** **ناسم** دی ځکه لومړی سم خو دویم ناسم دی.
+@issue With A = 100, "A>50" is true and "B>50" is false (50 is not greater than 50), consistent with the text.
+### b. OR Operator {{OR}} || ب۔ OR آپریٹر {{OR}} || ب. OR operator {{OR}}
+p The symbol used for OR operator is {{OR}}. It is used to evaluate two conditions. It produces true result if either of the condition is true. It produces false result if both the conditions are false. || OR آپریٹر کی علامت {{OR}} ہے۔ یہ دو شرائط کی جانچ کے لیے استعمال ہوتا ہے۔ اگر کوئی ایک شرط درست ہو تو نتیجہ درست، اور اگر دونوں شرائط غلط ہوں تو نتیجہ غلط دیتا ہے۔ || د OR operator نښه {{OR}} ده. د دوو شرطونو د ارزونې لپاره کارېږي. که هر یو شرط سم وي، پایله سمه ده؛ که دواړه ناسم وي، پایله ناسمه ده.
+table OR operator (i) || OR آپریٹر (i) || OR operator (i)
+th | Condition 1 || شرط 1 || شرط ۱ | Operator || آپریٹر || operator | Condition 2 || شرط 2 || شرط ۲ | Result || نتیجہ || پایله
+tr | False | {{OR}} | False | False
+tr | False | {{OR}} | True | True
+endtable

@@ -1,0 +1,640 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s140-skewness-5",
+  "title": "Example 3.27 (Pearson end, Bowley) · Example 3.28 (question)",
+  "headingUrdu": "مثال 3.27 (پیئرسن کا اختتام، باؤلے) · مثال 3.28 (سوال)",
+  "headingPashto": "بېلګه 3.27 (د Pearson پای، Bowley) · بېلګه 3.28 (پوښتنه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 140,
+    "printedPage": "132"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s140-a1",
+      "en": "⇒ The given distribution is positively skewed.",
+      "ur": "⇒ دی گئی تقسیم مثبت کج ہے۔",
+      "ps": "⇒ ورکړل شوی ویش مثبت کوړ دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-a2",
+      "en": "(ii) Bowley's coefficient of skewness",
+      "ur": "(ii) کجی کا باؤلے عددی سر",
+      "ps": "(ii) د کوړوالي بولي ضریب",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-a3",
+      "en": "Arranging the data, we have",
+      "ur": "اعداد و شمار کو ترتیب دیتے ہوئے ہمیں ملتا ہے",
+      "ps": "معلومات ترتیبول موږ ترلاسه کوو",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-a4",
+      "en": "Here Σf = 109 is odd",
+      "ur": "یہاں Σf = 109 طاق ہے",
+      "ps": "دلته Σf = 109 طاق دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-a5",
+      "en": "⇒ that given distribution has positive skewness.",
+      "ur": "⇒ کہ دی گئی تقسیم مثبت کجی رکھتی ہے۔",
+      "ps": "⇒ چې ورکړل شوی ویش مثبت کوړوالی لري.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-ex28",
+      "en": "Example: 3.28",
+      "ur": "مثال: 3.28",
+      "ps": "بېلګه: 3.28",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-28"
+    },
+    {
+      "id": "stat11-s140-q28",
+      "en": "Calculate coefficient of skewness for the following data:",
+      "ur": "درج ذیل اعداد و شمار کے لیے کجی کا عددی سر حساب کریں:",
+      "ps": "د لاندې معلوماتو لپاره د کوړوالي ضریب محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-28",
+      "sourceGap": {
+        "note": "The solution of Example 3.28 begins on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s140-a1",
+        "stat11-s140-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s140-a3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s140-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s140-a5",
+        "stat11-s140-ex28",
+        "stat11-s140-q28"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s140-m1",
+      "latex": "\\text{Median}=\\left(\\dfrac{\\sum f+1}{2}\\right)\\text{th item}=\\left(\\dfrac{109+1}{2}\\right)\\text{th item}=55\\text{th item}=18",
+      "accessible": "Median = ((Σf + 1)/2)th item = ((109 + 1)/2)th item = 55th item = 18",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th item = ((109 + 1)/2)th item = 55th item = 18"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th item = ((109 + 1)/2)th item = 55th item = 18"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th item = ((109 + 1)/2)th item = 55th item = 18"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-m2",
+      "latex": "\\text{Hence }Sk=\\dfrac{3(19.725-18)}{7.57}=\\dfrac{5.175}{7.57}=0.68",
+      "accessible": "Hence Sk = 3(19.725 − 18)/7.57 = 5.175/7.57 = 0.68",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Hence Sk = 3(19.725 − 18)/7.57 = 5.175/7.57 = 0.68"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Hence Sk = 3(19.725 − 18)/7.57 = 5.175/7.57 = 0.68"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Hence Sk = 3(19.725 − 18)/7.57 = 5.175/7.57 = 0.68"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-b0",
+      "latex": "Sk=\\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}",
+      "accessible": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-q1",
+      "latex": "\\therefore\\ Q_1=\\left(\\dfrac{\\sum f+1}{4}\\right)\\text{th value}=\\left(\\dfrac{109+1}{4}\\right)\\text{th value}=27.5\\text{th value}\\ \\Rightarrow\\ Q_1=14",
+      "accessible": "∴ Q1 = ((Σf + 1)/4)th value = ((109 + 1)/4)th value = 27.5th value ⇒ Q1 = 14",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Q1 = ((Σf + 1)/4)th value = ((109 + 1)/4)th value = 27.5th value ⇒ Q1 = 14"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Q1 = ((Σf + 1)/4)th value = ((109 + 1)/4)th value = 27.5th value ⇒ Q1 = 14"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Q1 = ((Σf + 1)/4)th value = ((109 + 1)/4)th value = 27.5th value ⇒ Q1 = 14"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-q2",
+      "latex": "Q_2=2\\left(\\dfrac{\\sum f+1}{4}\\right)\\text{th value}=\\left(\\dfrac{\\sum f+1}{2}\\right)\\text{th value}=\\left(\\dfrac{109+1}{2}\\right)\\text{th value}=55\\text{th value}\\ \\Rightarrow\\ Q_2=18",
+      "accessible": "Q2 = 2((Σf + 1)/4)th value = ((Σf + 1)/2)th value = ((109 + 1)/2)th value = 55th value ⇒ Q2 = 18",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q2 = 2((Σf + 1)/4)th value = ((Σf + 1)/2)th value = ((109 + 1)/2)th value = 55th value ⇒ Q2 = 18"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q2 = 2((Σf + 1)/4)th value = ((Σf + 1)/2)th value = ((109 + 1)/2)th value = 55th value ⇒ Q2 = 18"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q2 = 2((Σf + 1)/4)th value = ((Σf + 1)/2)th value = ((109 + 1)/2)th value = 55th value ⇒ Q2 = 18"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-q3",
+      "latex": "Q_3=3\\left(\\dfrac{\\sum f+1}{4}\\right)\\text{th value}=3\\left(\\dfrac{109+1}{2}\\right)\\text{th value}=82.5\\text{th value}\\ \\Rightarrow\\ Q_3=26",
+      "accessible": "Q3 = 3((Σf + 1)/4)th value = 3((109 + 1)/2)th value = 82.5th value ⇒ Q3 = 26   [printed with denominator 2 in the second form]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((109 + 1)/2)th value = 82.5th value ⇒ Q3 = 26   [printed with denominator 2 in the second form]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((109 + 1)/2)th value = 82.5th value ⇒ Q3 = 26   [printed with denominator 2 in the second form]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((109 + 1)/2)th value = 82.5th value ⇒ Q3 = 26   [printed with denominator 2 in the second form]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "id": "stat11-s140-sk",
+      "latex": "\\therefore\\ Sk=\\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}=\\dfrac{14+26-2(18)}{26-14}=\\dfrac{40-36}{12}=\\dfrac{4}{12}=0.33",
+      "accessible": "∴ Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1) = (14 + 26 − 2(18))/(26 − 14) = (40 − 36)/12 = 4/12 = 0.33",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1) = (14 + 26 − 2(18))/(26 − 14) = (40 − 36)/12 = 4/12 = 0.33"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1) = (14 + 26 − 2(18))/(26 − 14) = (40 − 36)/12 = 4/12 = 0.33"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1) = (14 + 26 − 2(18))/(26 − 14) = (40 − 36)/12 = 4/12 = 0.33"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-27"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.27: x, f, c.f",
+      "captionUrdu": "مثال 3.27: x, f, c.f",
+      "captionPashto": "بېلګه 3.27: x, f, c.f",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          }
+        ],
+        [
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "79",
+            "ur": "79",
+            "ps": "79"
+          }
+        ],
+        [
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "91",
+            "ur": "91",
+            "ps": "91"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "101",
+            "ur": "101",
+            "ps": "101"
+          }
+        ],
+        [
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "107",
+            "ur": "107",
+            "ps": "107"
+          }
+        ],
+        [
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "109",
+            "ur": "109",
+            "ps": "109"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "109",
+            "ur": "109",
+            "ps": "109"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-27"
+    },
+    {
+      "caption": "Example 3.28: class and frequency",
+      "captionUrdu": "مثال 3.28: طبقہ اور تعدد",
+      "captionPashto": "بېلګه 3.28: ټولګی او فریکونسي",
+      "headers": [
+        {
+          "en": "class:",
+          "ur": "طبقہ:",
+          "ps": "ټولګی:"
+        },
+        {
+          "en": "20 – 24",
+          "ur": "20 – 24",
+          "ps": "20 – 24"
+        },
+        {
+          "en": "25 – 29",
+          "ur": "25 – 29",
+          "ps": "25 – 29"
+        },
+        {
+          "en": "30 – 34",
+          "ur": "30 – 34",
+          "ps": "30 – 34"
+        },
+        {
+          "en": "35 – 39",
+          "ur": "35 – 39",
+          "ps": "35 – 39"
+        },
+        {
+          "en": "40 – 44",
+          "ur": "40 – 44",
+          "ps": "40 – 44"
+        },
+        {
+          "en": "45 – 49",
+          "ur": "45 – 49",
+          "ps": "45 – 49"
+        },
+        {
+          "en": "50 – 54",
+          "ur": "50 – 54",
+          "ps": "50 – 54"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "218",
+            "ur": "218",
+            "ps": "218"
+          },
+          {
+            "en": "227",
+            "ur": "227",
+            "ps": "227"
+          },
+          {
+            "en": "235",
+            "ur": "235",
+            "ps": "235"
+          },
+          {
+            "en": "216",
+            "ur": "216",
+            "ps": "216"
+          },
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-28"
+    }
+  ],
+  "sourceNote": "Printed page 132. The first lines complete the Pearson working of Example 3.27. The x, f, c.f table is printed on the left and the working for Q1, Q2, Q3 on its right; the working is shown after the table. Blue ink ticks next to \"Example: 3.28\" are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:59:02.584319+00:00",
+    "scope": "Scan 140 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,27 @@
+@pdf 122
+@printed 73
+@status lesson
+### Program 3.11 || پروگرام 3.11 || پروګرام ۳.۱۱
+p **Write a program to convert Fahrenheit temperature into Celsius temperature. The Fahrenheit temperature should be input from the keyboard at the runtime.** || **فارن ہائیٹ درجۂ حرارت کو سیلسیئس میں بدلنے کا پروگرام لکھیں۔ فارن ہائیٹ درجۂ حرارت چلنے کے وقت کی بورڈ سے ان پٹ ہونا چاہیے۔** || **د فارنهایټ تودوخې سلسیوس ته د اړولو پروګرام ولیکئ. د فارنهایټ تودوخه باید د چلېدو پر مهال له کیبورډ input شي.**
+m using namespace std;
+m #include<iostream>
+m int main( )
+m {
+m     float ftemp, ctemp;
+m     cout<<"\n Please input a value for Fahrenheit temperature: ";
+m     cin>>ftemp;
+m     ctemp = (ftemp-32) * 5 / 9;
+m     cout<<"\nCelsius equivalent of Fahrenheit :"<< ftemp<<" is "<<ctemp;
+m     return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Please input a value for Fahrenheit temperature: 98.6
+m Celsius equivalent of Fahrenheit : 98.6 is 37
+endbox
+### 3.1.3 Statement Terminator (Semicolon) || 3.1.3 اسٹیٹمنٹ ٹرمینیٹر (سیمی کولن) || ۳.۱.۳ د بیان پای ته رسوونکی (semicolon)
+p In C program, semicolon; is used at the end of every statement to alert the compiler that the statement ends here. If a statement is not terminated with semicolon, C compiler will give an error message during compilation and the program will not be compiled. || C پروگرام میں ہر اسٹیٹمنٹ کے آخر میں سیمی کولن ; استعمال ہوتا ہے تاکہ کمپائلر کو خبر ہو کہ اسٹیٹمنٹ یہاں ختم ہوتی ہے۔ اگر کوئی اسٹیٹمنٹ سیمی کولن پر ختم نہ ہو تو کمپائلیشن کے دوران C کمپائلر غلطی کا پیغام دے گا اور پروگرام کمپائل نہیں ہوگا۔ || په C پروګرام کې د هر بیان په پای کې semicolon ; کارېږي څو compiler ته خبر ورکړي چې بیان دلته پای ته رسېږي. که بیان په semicolon پای ته ونه رسېږي، C compiler د compilation پر مهال د تېروتنې پیغام ورکوي او پروګرام نه compile کېږي.
+p **For example,** || **مثلاً،** || **د بېلګې په توګه،**
+m printf("Hello, World! \n");     // Semicolon is used to show end of statement
+### 3.1.4 Format Specifiers || 3.1.4 فارمیٹ اسپیسیفائرز || ۳.۱.۴ Format Specifiers
+p The format specifiers are used in C for input and output purposes. Using this concept the compiler can understand that what type of data is in a variable during taking input using the *scanf()* function and printing using *printf()* function. || فارمیٹ اسپیسیفائرز C میں ان پٹ اور آؤٹ پٹ کے مقاصد کے لیے استعمال ہوتے ہیں۔ اس تصور کے ذریعے کمپائلر سمجھ سکتا ہے کہ *scanf()* سے ان پٹ لیتے اور *printf()* سے پرنٹ کرتے وقت متغیر میں کس قسم کا ڈیٹا ہے۔ || format specifiers په C کې د input او output لپاره کارېږي. د دې مفهوم په مرسته compiler پوهېږي چې د *scanf()* په input او د *printf()* په چاپ کې په متغیر کې کوم ډول ډېټا دی.
+p A list of commonly used format specifiers is given as follows. || عام استعمال ہونے والے فارمیٹ اسپیسیفائرز کی فہرست درج ذیل ہے۔ || د عامو format specifiers لست دا دی.

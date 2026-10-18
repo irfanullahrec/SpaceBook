@@ -1,0 +1,24 @@
+@printed 174
+@status lesson
+p یہاں colspan کو 4 کالموں کو اکٹھا کرنے کے لیے استعمال کیا جاتا ہے اور center ٹائٹل کو کالم کے درمیان میں الائن (Align) کر دے گا۔ یوزر rowspan کو بھی استعمال کر سکتا ہے تاکہ قطار میں موجود سیلوں کو اکٹھا کر سکے۔ ٹائٹل کو دائیں، بائیں کسی بھی سیدھ میں align سے لایا جا سکتا ہے۔ HTML ڈاکومنٹ میں دوسری قطار میں آنے والے ہر کالم کی ہیڈنگ کے لیے کوڈ ذیل میں دیا گیا ہے۔ || Here colspan is used to join 4 columns, and center aligns the title in the middle of the column. The user can also use rowspan to join cells across rows. With align the title can be placed right, left or anywhere. The code for the heading of each column in the second row of the HTML document is given below. || دلته colspan د 4 ستنو د یوځای کولو لپاره کارېږي او center سرلیک د ستنې په منځ کې برابروي (Align). کاروونکی rowspan هم کارولای شي چې د کرښو حجرې یوځای کړي. سرلیک د align په مرسته ښي، کیڼ یا هر لوري ته راوستل کېدای شي. په HTML سند کې د دویمې کرښې د هرې ستنې د سرلیک کوډ لاندې ورکړل شوی.
+m <tr>
+m     <td>S.No.</td>
+m     <td>Date</td>
+m     <td>Class X</td>
+m </tr>
+p دوسری row کے چاروں سیل <tr></tr> ٹیگز کے درمیان اور سیلوں میں موجود ٹیکسٹ <td></td> ٹیگز کے درمیان لکھا جائے گا۔ اگلی row کا ٹیکسٹ کچھ اس طرح سے لکھا جائے گا۔ || The cells of the second row are written between the <tr></tr> tags, and the text in the cells between the <td></td> tags. The text of the next row is written like this: || د دویمې کرښې حجرې د <tr></tr> ټیګونو ترمنځ او د حجرو متن د <td></td> ټیګونو ترمنځ لیکل کېږي. د راتلونکې کرښې متن داسې لیکل کېږي:
+m <tr>
+m <td>1.</td>
+m <td>05-04-2014</td>
+m <td>Maths</td>
+m </tr>
+p اگلی row کا ٹیکسٹ بھی اسی طریقے سے لکھا جائے گا۔ براؤزر ونڈو حتمی ٹیبل دکھائے گی جیسا کہ شکل نمبر 7.53 میں دکھایا گیا ہے۔ || The text of the following rows is written in the same way. The browser window will show the final table as in Figure 7.53. || د نورو کرښو متن هم همداسې لیکل کېږي. براوزر کړکۍ به وروستی جدول لکه په ۷.۵۳ شکل کې وښيي.
+table شکل نمبر 7.53 حتمی ٹیبل || Figure 7.53 The final table || ۷.۵۳ شکل وروستی جدول
+th | FINAL EXAMINATIONS | |
+tr | S.No. | Date | Class X
+tr | 1. | 05-04-2014 | Maths
+tr | 2. | 06-04-2014 | Computer
+tr | 3. | 07-04-2014 | Chemistry
+tr | 4. | 08-04-2014 | Urdu
+endtable
+@issue The text speaks of "all four cells" (چاروں سیل) of the second row, but the row has three cells; the title's colspan=4 is one more than the three columns actually used.

@@ -1,0 +1,100 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s085-p076",
+  "title": "Internal buses (end); Figure 3.3; 3.1.2 Types of Registers; a. General Purpose Registers — start",
+  "headingUrdu": "اندرونی بسیں (اختتام)؛ شکل ۳.۳؛ ۳.۱.۲ رجسٹرز کی اقسام؛ الف۔ عمومی مقصد کے رجسٹرز — آغاز",
+  "headingPashto": "دننني بسونه (پای)؛ انځور ۳.۳؛ ۳.۱.۲ د رجسترونو ډولونه؛ الف. د عمومي موخې رجسترونه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 85,
+    "printedPage": "76"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s085-a",
+      "en": "motherboard. An internal bus enables communication between internal components such as a computer video card and memory.",
+      "ur": "مدر بورڈ سے جوڑتی ہے۔ اندرونی بس اندرونی اجزاء جیسے کمپیوٹر ویڈیو کارڈ اور میموری کے درمیان رابطہ ممکن بناتی ہے۔",
+      "ps": "مدربورډ سره نښلوي. دننني بس د دنننیو اجزاوو لکه د کمپیوټر ویډیو کارت او حافظې ترمنځ اړیکه ممکنه کوي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s085-c1",
+      "en": "Figure 3.3 Internal buses",
+      "ur": "شکل ۳.۳ اندرونی بسیں",
+      "ps": "انځور ۳.۳ دننني بسونه",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s085-b",
+      "en": "Modern computer buses can use both parallel and serial-bit connections. Parallel buses are those which carry data in parallel on multiple wires (Conventional PCI, Extended ISA, PCI-104) and serial buses are those that carry data in serial-bit form (PCI Express, SATA). The buses size in computers are from 8-bits to 128 bits.",
+      "ur": "جدید کمپیوٹر بسیں متوازی اور سیریل بٹ دونوں قسم کے روابط استعمال کر سکتی ہیں۔ متوازی بسیں وہ ہیں جو متعدد تاروں پر ڈیٹا متوازی طور پر لے جاتی ہیں (روایتی پی سی آئی، ایکسٹینڈڈ آئی ایس اے، پی سی آئی-۱۰۴) اور سیریل بسیں وہ ہیں جو ڈیٹا سیریل بٹ کی شکل میں لے جاتی ہیں (پی سی آئی ایکسپریس، ساٹا)۔ کمپیوٹرز میں بسوں کا سائز ۸ بٹس سے ۱۲۸ بٹس تک ہے۔",
+      "ps": "مدرن کمپیوټر بسونه کولای شي موازي او سریالي بټ اړیکې دواړه وکاروي. موازي بسونه هغه دي چې ډېټا په څو تارونو موازي ډول وړي (دودیز PCI، غځول شوی ISA، PCI-104) او سریالي بسونه هغه دي چې ډېټا د سریال بټ په بڼه وړي (PCI ایکسپریس، SATA). په کمپیوټرونو کې د بسونو کچه له ۸ بټو نه تر ۱۲۸ بټو پورې ده."
+    },
+    {
+      "id": "cs11-s085-h1",
+      "en": "3.1.2 Types of Registers",
+      "ur": "۳.۱.۲ رجسٹرز کی اقسام",
+      "ps": "۳.۱.۲ د رجسترونو ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s085-c",
+      "en": "Registers are categorized into two types according to their purpose and function.",
+      "ur": "رجسٹرز کو ان کے مقصد اور فعل کے مطابق دو اقسام میں تقسیم کیا جاتا ہے۔",
+      "ps": "رجسترونه د هغو د موخې او دندې مطابق په دوو ډولونو وېشل کېږي."
+    },
+    {
+      "id": "cs11-s085-t1",
+      "en": "General Purpose Registers",
+      "ur": "عمومی مقصد کے رجسٹرز",
+      "ps": "د عمومي موخې رجسترونه",
+      "listGroup": "rt"
+    },
+    {
+      "id": "cs11-s085-t2",
+      "en": "Special Purpose Registers",
+      "ur": "خصوصی مقصد کے رجسٹرز",
+      "ps": "د ځانګړې موخې رجسترونه",
+      "listGroup": "rt"
+    },
+    {
+      "id": "cs11-s085-h2",
+      "en": "a. General Purpose Registers",
+      "ur": "الف۔ عمومی مقصد کے رجسٹرز",
+      "ps": "الف. د عمومي موخې رجسترونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s085-d",
+      "en": "General purpose registers are used to store data as well as addresses. They are combined data and address registers. These registers are used for",
+      "ur": "عمومی مقصد کے رجسٹرز ڈیٹا کے ساتھ ساتھ پتے محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ یہ مشترکہ ڈیٹا اور ایڈریس رجسٹرز ہیں۔ یہ رجسٹرز",
+      "ps": "د عمومي موخې رجسترونه د ډېټا او پتو د ساتلو لپاره کارول کېږي. دا ګډ ډېټا او پتې رجسترونه دي. دا رجسترونه د",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s085-a",
+        "cs11-s085-c1",
+        "cs11-s085-b",
+        "cs11-s085-h1",
+        "cs11-s085-c",
+        "cs11-s085-t1",
+        "cs11-s085-t2",
+        "cs11-s085-h2",
+        "cs11-s085-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 76: the end of the Internal Buses sentence (continuing from page 75), a photograph of a bus board with pin labels (caption “Figure 3.3 Internal buses”), a paragraph on parallel and serial buses, “3.1.2 Types of Registers” and the start of “a. General Purpose Registers” (the sentence continues on the next page). The heading “a. General Purpose Registers” is printed in a faded colour; the printed caption reads “Figure 3.3 Internal buses” in a slightly smudged print. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:54:16.041911+00:00",
+    "scope": "Scan 85 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

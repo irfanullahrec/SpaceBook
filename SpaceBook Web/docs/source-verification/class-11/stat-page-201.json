@@ -1,0 +1,232 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s201-exercise5-a",
+  "title": "Exercise-5: Q5.1 True or false · Q5.2 Fill in the blanks",
+  "headingUrdu": "مشق-5: سوال 5.1 صحیح یا غلط · سوال 5.2 خالی جگہیں پُر کریں",
+  "headingPashto": "تمرین-5: پوښتنه 5.1 سم یا غلط · پوښتنه 5.2 تشې ډکې کړئ",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 201,
+    "printedPage": "191"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s201-h",
+      "en": "Exercise-5",
+      "ur": "مشق-5",
+      "ps": "تمرین-5",
+      "kind": "heading",
+      "exerciseId": "stat11-ex5"
+    },
+    {
+      "id": "stat11-s201-h51",
+      "en": "5.1 Read the following statements and write T for True and F for False statements.",
+      "ur": "5.1 درج ذیل بیانات پڑھیں اور صحیح کے لیے T اور غلط بیانات کے لیے F لکھیں۔",
+      "ps": "5.1 لاندې بیانونه ولولئ او سم لپاره T او غلط بیانونو لپاره F ولیکئ.",
+      "kind": "heading",
+      "exerciseId": "stat11-ex5-1"
+    },
+    {
+      "id": "stat11-s201-t1",
+      "en": "(i) In simple linear regression model x and y variables are independent of each other.",
+      "ur": "(i) سادہ خطی ریگریشن ماڈل میں x اور y متغیرات ایک دوسرے سے آزاد ہیں۔",
+      "ps": "(i) په ساده خطي ریګرېشن ماډل کې x او y متغیرونه یو له بل څخه خپلواک دي.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-i"
+    },
+    {
+      "id": "stat11-s201-t2",
+      "en": "(ii) Regression is a process of estimation of the unknown values of the dependent variable from the known values of the independent variable.",
+      "ur": "(ii) ریگریشن آزاد متغیر کی معلوم قدروں سے تابع متغیر کی نامعلوم قدروں کے تخمینے کا عمل ہے۔",
+      "ps": "(ii) ریګرېشن د خپلواک متغیر له پېژندل شویو ارزښتونو څخه د تابع متغیر د نامعلومو ارزښتونو د اټکل پروسه ده.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-ii"
+    },
+    {
+      "id": "stat11-s201-t3",
+      "en": "(iii) Correlation coefficient is the arithmetic mean between the two regression coefficients.",
+      "ur": "(iii) ارتباطی عددی سر دو ریگریشن عددی سروں کے درمیان حسابی اوسط ہے۔",
+      "ps": "(iii) د همتړاو ضریب د دوو ریګرېشن ضریبونو تر منځ حسابي اوسط دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-iii"
+    },
+    {
+      "id": "stat11-s201-t4",
+      "en": "(iv) If b_xy = 0.8, b_yx = 0.5 then r_xy = 0.4.",
+      "ur": "(iv) اگر b_xy = 0.8، b_yx = 0.5 ہو تو r_xy = 0.4۔",
+      "ps": "(iv) که b_xy = 0.8، b_yx = 0.5 وي نو r_xy = 0.4.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-iv"
+    },
+    {
+      "id": "stat11-s201-t5",
+      "en": "(v) The coefficient of correlation lies between −1 and 1.",
+      "ur": "(v) ارتباطی عددی سر −1 اور 1 کے درمیان ہوتا ہے۔",
+      "ps": "(v) د همتړاو ضریب د −1 او 1 تر منځ پروت دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-v"
+    },
+    {
+      "id": "stat11-s201-t6",
+      "en": "(vi) If r_xy = 0, it means x and y variable are independent of each other.",
+      "ur": "(vi) اگر r_xy = 0 ہو تو اس کا مطلب ہے کہ x اور y متغیرات ایک دوسرے سے آزاد ہیں۔",
+      "ps": "(vi) که r_xy = 0 وي نو پدې معنا چې x او y متغیره یو له بل څخه خپلواک دي.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-vi"
+    },
+    {
+      "id": "stat11-s201-t7",
+      "en": "(vii) If the two variables move in the opposite direction then correlation between them is said to be positive.",
+      "ur": "(vii) اگر دو متغیرات مخالف سمت میں حرکت کریں تو ان کے درمیان ارتباط کو مثبت کہا جاتا ہے۔",
+      "ps": "(vii) که دوه متغیره په مخالف لوري حرکت وکړي نو د هغوی تر منځ همتړاو مثبت ویل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-vii"
+    },
+    {
+      "id": "stat11-s201-t8",
+      "en": "(viii) Suppose ŷ = 5 − 2x, the y-intercept is 2.",
+      "ur": "(viii) فرض کریں ŷ = 5 − 2x، y-قطع 2 ہے۔",
+      "ps": "(viii) فرض کړئ ŷ = 5 − 2x، د y-کټ 2 دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-viii"
+    },
+    {
+      "id": "stat11-s201-t9",
+      "en": "(ix) A simple linear regression contains only one independent variable.",
+      "ur": "(ix) سادہ خطی ریگریشن میں صرف ایک آزاد متغیر ہوتا ہے۔",
+      "ps": "(ix) ساده خطي ریګرېشن یوازې یو خپلواک متغیر لري.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-ix"
+    },
+    {
+      "id": "stat11-s201-t10",
+      "en": "(x) Both the regression coefficients b_y.x and b_x.y should be of same sign.",
+      "ur": "(x) دونوں ریگریشن عددی سر b_y.x اور b_x.y کی علامت ایک جیسی ہونی چاہیے۔",
+      "ps": "(x) دواړه ریګرېشن ضریبونه b_y.x او b_x.y باید یو شان نښه ولري.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-1-x"
+    },
+    {
+      "id": "stat11-s201-h52",
+      "en": "5.2 Fill in the blanks with a suitable word.",
+      "ur": "5.2 خالی جگہوں کو موزوں لفظ سے پُر کریں۔",
+      "ps": "5.2 تشې په مناسب کلمه ډکې کړئ.",
+      "kind": "heading",
+      "exerciseId": "stat11-ex5-2"
+    },
+    {
+      "id": "stat11-s201-f1",
+      "en": "(i) If the regression coefficient b_y.x > 1 then b_x.y ____________.",
+      "ur": "(i) اگر ریگریشن عددی سر b_y.x > 1 ہو تو b_x.y ____________۔",
+      "ps": "(i) که ریګرېشن ضریب b_y.x > 1 وي نو b_x.y ____________.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-i"
+    },
+    {
+      "id": "stat11-s201-f2",
+      "en": "(ii) If the regression coefficient b_y.x < 1 then b_x.y ____________.",
+      "ur": "(ii) اگر ریگریشن عددی سر b_y.x < 1 ہو تو b_x.y ____________۔",
+      "ps": "(ii) که ریګرېشن ضریب b_y.x < 1 وي نو b_x.y ____________.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-ii"
+    },
+    {
+      "id": "stat11-s201-f3",
+      "en": "(iii) If the variables x and y are independent the value of regression coefficient is ____________.",
+      "ur": "(iii) اگر متغیرات x اور y آزاد ہوں تو ریگریشن عددی سر کی قدر ____________ ہے۔",
+      "ps": "(iii) که متغیرونه x او y خپلواک وي نو د ریګرېشن ضریب ارزښت ____________ دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-iii"
+    },
+    {
+      "id": "stat11-s201-f4",
+      "en": "(iv) The range of the coefficient of correlation is ____________.",
+      "ur": "(iv) ارتباطی عددی سر کی حد ____________ ہے۔",
+      "ps": "(iv) د همتړاو ضریب حد ____________ دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-iv"
+    },
+    {
+      "id": "stat11-s201-f5",
+      "en": "(v) A regression equation having two or more independent variables is called ____________.",
+      "ur": "(v) وہ ریگریشن مساوات جس میں دو یا زیادہ آزاد متغیرات ہوں ____________ کہلاتی ہے۔",
+      "ps": "(v) هغه ریګرېشن معادله چې دوه یا ډېر خپلواک متغیرونه ولري ____________ بلل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-v"
+    },
+    {
+      "id": "stat11-s201-f6",
+      "en": "(vi) If the correlation coefficient is zero, the value of regression coefficient is ____________.",
+      "ur": "(vi) اگر ارتباطی عددی سر صفر ہو تو ریگریشن عددی سر کی قدر ____________ ہے۔",
+      "ps": "(vi) که د همتړاو ضریب صفر وي نو د ریګرېشن ضریب ارزښت ____________ دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-vi"
+    },
+    {
+      "id": "stat11-s201-f7",
+      "en": "(vii) For the regression equation ŷ = 7 + 2x, then value of slope is ____________.",
+      "ur": "(vii) ریگریشن مساوات ŷ = 7 + 2x کے لیے ڈھلوان کی قدر ____________ ہے۔",
+      "ps": "(vii) د ریګرېشن معادلې ŷ = 7 + 2x لپاره د ډلوان ارزښت ____________ دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-vii"
+    },
+    {
+      "id": "stat11-s201-f8",
+      "en": "(viii) If x = 2 and ŷ = 7 + 2x, then value of ŷ is ____________.",
+      "ur": "(viii) اگر x = 2 اور ŷ = 7 + 2x ہو تو ŷ کی قدر ____________ ہے۔",
+      "ps": "(viii) که x = 2 او ŷ = 7 + 2x وي نو د ŷ ارزښت ____________ دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-viii"
+    },
+    {
+      "id": "stat11-s201-f9",
+      "en": "(ix) The error term e is equal to ____________.",
+      "ur": "(ix) غلطی کی اصطلاح e ____________ کے برابر ہے۔",
+      "ps": "(ix) د تېروتنې اصطلاح e له ____________ سره مساوي ده.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-2-ix",
+      "sourceGap": {
+        "note": "Q5.2 continues on the next page with item (x)."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s201-h",
+        "stat11-s201-h51",
+        "stat11-s201-t1",
+        "stat11-s201-t2",
+        "stat11-s201-t3",
+        "stat11-s201-t4",
+        "stat11-s201-t5",
+        "stat11-s201-t6",
+        "stat11-s201-t7",
+        "stat11-s201-t8",
+        "stat11-s201-t9",
+        "stat11-s201-t10",
+        "stat11-s201-h52",
+        "stat11-s201-f1",
+        "stat11-s201-f2",
+        "stat11-s201-f3",
+        "stat11-s201-f4",
+        "stat11-s201-f5",
+        "stat11-s201-f6",
+        "stat11-s201-f7",
+        "stat11-s201-f8",
+        "stat11-s201-f9"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "sourceNote": "Printed page 191. In the printed text the symbols b_xy, b_yx, r_xy, b_y.x, b_x.y carry subscripts; they are written with underscores in the plain text here. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:23:02.690338+00:00",
+    "scope": "Scan 201 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

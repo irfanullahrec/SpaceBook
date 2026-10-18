@@ -1,0 +1,38 @@
+@printed 120
+@status lesson
+m     for(x=1;x<=10;x++)
+m         printf("\n%d X %d =  %d",n,x,n*x);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter number for table: 5
+m 5 X 1=5
+m 5 X 2=10
+m 5 X 3=15
+m 5 X 4=20
+m 5 X 5=25
+m 5 X 6=30
+m 5 X 7=35
+m 5 X 8=40
+m 5 X 9=45
+m 5 X 10=50
+endbox
+### Program 5.4: A program to calculate the sum of odd numbers from 1 to 20 and then print the sum on the screen. || پروگرام 5.4: 1 سے 20 تک طاق اعداد کا مجموعہ معلوم کر کے اسکرین پر پرنٹ کرنے کا پروگرام۔ || پروګرام ۵.۴: له ۱ تر ۲۰ پورې د طاقو عددونو مجموعه محاسبه او چاپول.
+m # include <stdio.h>
+m void main()
+m {
+m     int n, sum;
+m     sum = 0;
+m     for (n=1;n<=20;n+=2)
+m     {
+m         sum = sum+n;
+m     }
+m     printf("\nSUM = %d",sum);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m SUM = 100
+endbox
+### 5.1.3 The *while* Loop || 5.1.3 *while* لوپ || ۵.۱.۳ *while* لوپ
+p In *while* loop, condition is evaluated first and if it returns true then the statements inside *while* loop execute, this happens repeatedly until the condition returns false. When condition returns false, the control comes out of loop and jumps to the next statement in the program after while loop. It is useful when the number of repetitions/iterations are not known in advance. The syntax of while loop is as follows: || *while* لوپ میں پہلے شرط جانچی جاتی ہے، اگر درست ہو تو *while* لوپ کی اسٹیٹمنٹس چلتی ہیں، اور یہ شرط غلط ہونے تک بار بار ہوتا ہے۔ شرط غلط ہونے پر کنٹرول لوپ سے نکل کر while لوپ کے بعد والی اسٹیٹمنٹ پر چلا جاتا ہے۔ یہ اس وقت مفید ہے جب تکرار کی تعداد پہلے سے معلوم نہ ہو۔ while لوپ کا سنٹیکس یہ ہے: || په *while* لوپ کې لومړی شرط ارزول کېږي، که سم وي د *while* لوپ بیانونه اجرا کېږي، او دا تر هغه تکرارېږي چې شرط ناسم شي. کله چې شرط ناسم شي کنټرول له لوپ وځي او له while وروسته راتلونکي بیان ته ځي. هغه وخت ګټور دی چې د تکرارونو شمېر له مخکې معلوم نه وي. syntax یې دا دی:
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m while(condition)
+m {

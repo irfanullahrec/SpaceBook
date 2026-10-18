@@ -1,0 +1,24 @@
+@printed 24
+@status lesson
+@unit 2 | C پروگرامنگ || C programming || C پروګرام جوړونه
+@sec 2-intro | باب 2: ”C“ پروگرامنگ || Chapter 2: "C" programming || څپرکی ۲: ”C“ پروګرام جوړونه
+@deco Chapter opener: roundel "باب نمبر 2"; illustrations of a laptop with code, a programmer with speech bubbles "Assembly Language", "High-Level Language (Java, C, PASCAL)" and "Machine Language (10100100 0110101 0110100)" (printed mirror-reversed in the scan), and a ring of coloured language badges (not reproduced).
+# باب 2 — ”C“ پروگرامنگ || Chapter 2 — "C" programming || څپرکی ۲ — ”C“ پروګرام جوړونه
+## اس باب کی تکمیل کے بعد طلبہ اس قابل ہو جائیں گے کہ وہ: || After completing this chapter students will be able to: || د دې څپرکي له بشپړېدو وروسته به زده کوونکي وکولای شي چې:
+slo پروگرام کی ترکیب (Syntax) اور مفہوم (Semantic) واضح کر سکیں۔ || explain the syntax and semantics of a program. || د پروګرام ترکیب (Syntax) او مفهوم (Semantic) روښانه کړي.
+slo کمپیوٹر کی زبانوں کی مختلف اقسام کو تفصیل سے بیان کر سکیں جیسے ہائی لیول لینگویج اور لو لیول لینگویج۔ || describe in detail the various kinds of computer languages, such as high-level and low-level languages. || د کمپیوټر د ژبو بېلابېل ډولونه لکه لوړې کچې او ټیټې کچې ژبې په تفصیل بیان کړي.
+slo ہائی لیول لینگویج کی خصوصیات کو تفصیلاً بیان کر سکیں۔ || describe the characteristics of high-level languages in detail. || د لوړې کچې ژبو ځانګړنې په تفصیل بیان کړي.
+slo مختلف طرح کی ہائی لیول لینگویج کو جان سکیں۔ || know various high-level languages. || بېلابېلې لوړې کچې ژبې وپېژني.
+slo کمپائلر اور انٹرپریٹر کا فرق واضح کر سکیں۔ || explain the difference between a compiler and an interpreter. || د کمپایلر او انټرپریټر توپیر روښانه کړي.
+slo انٹیگریٹڈ ڈویلپمنٹ انوائرمنٹ (IDE) کے تصور کو بیان کر سکیں۔ || explain the concept of the Integrated Development Environment (IDE). || د یوځای شوي پراختیايي چاپېریال (IDE) مفهوم بیان کړي.
+slo C لینگویج کے مختلف اجزاء (ایڈیٹر، کمپائلر، لنکر، لوڈر اور ڈی بگر) کو تفصیلاً بیان کر سکیں۔ || describe in detail the components of the C language environment (editor, compiler, linker, loader and debugger). || د C ژبې بېلابېلې برخې (اډیټر، کمپایلر، لینکر، لوډر او ډیبګر) په تفصیل بیان کړي.
+slo ہیڈر فائلز کی تعریف کر سکیں۔ || define header files. || هېډر فایلونه تعریف کړي.
+slo ریزرو ورڈز (Reserved Words) کی پہچان کر سکیں۔ || identify reserved words. || خوندي کلمې (Reserved Words) وپېژني.
+slo C پروگرام کے بنیادی ڈھانچے (Structure) کو بیان کر سکیں۔ || describe the basic structure of a C program. || د C پروګرام بنسټیز جوړښت بیان کړي.
+slo Comments کے گرامر اور مقصد کو سمجھ سکیں۔ || understand the grammar and purpose of comments. || د تبصرو (Comments) ګرامر او موخه وپېژني.
+slo متغیر (Variable) اور مستقل (Constant) میں فرق کر سکیں۔ || distinguish between a variable and a constant. || د متغیر (Variable) او ثابت (Constant) توپیر وکړي.
+slo Variable کے نام سے متعلق اصولوں کو تفصیلاً بیان کر سکیں۔ || describe in detail the rules for naming variables. || د متغیر د نومونې اصول په تفصیل بیان کړي.
+slo C پروگرام میں استعمال ہونے والی ڈیٹا ٹائپس (Data Types) کو جان سکیں۔ || know the data types used in a C program. || په C پروګرام کې کارېدونکي د ډېټا ډولونه وپېژني.
+slo ٹائپ کاسٹنگ (Typecasting) کا استعمال کر سکیں۔ || use typecasting. || ډول بدلون (Typecasting) وکاروي.
+slo const کی تعریف کر سکیں۔ || define const. || const تعریف کړي.
+slo Variable اور Constant بنانے اور ابتدائی مقدار مقرر کرنے کے عمل کو تفصیلاً بیان کر سکیں۔ || describe in detail declaring variables and constants and initialising them. || د متغیر او ثابت د جوړولو او لومړني ارزښت ورکولو بهیر په تفصیل بیان کړي.

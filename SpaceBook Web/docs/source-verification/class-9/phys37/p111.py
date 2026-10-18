@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Eq 4.4 / force from components (Pythagoras, Eqs 4.5–4.6) / Example 4.2 given'
+SECTIONS = [
+    ('4.3-comp', ('4.3 Resolution of forces (continued)', '4.3 قوتوں کی تحلیل (جاری)', '4.3 د قوتونو تجزیه (دوام)'), [
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', 'phys9-u4-eq44', 'F_y = F sin θ', '4.4'),
+        ('p', 'This means that we can calculate the components analytically just by knowing the value of force and the angle.', 'اس کا مطلب ہے کہ ہم صرف قوت کی قدر اور زاویہ جان کر اجزا کو تجزیاتی طور پر معلوم کر سکتے ہیں۔', 'دا پدې مانا چې یوازې د قوت ارزښت او زاویه په پېژندلو برخې په تحلیلي ډول محاسبه کولی شو.'),
+        ('fig', 'Figure: right triangle OPQ with hypotenuse F, base Fₓ along OQ, perpendicular Fᵧ along QP, angle θ at O.', 'شکل: قائمۃ الزاویہ مثلث OPQ جس کا وتر F، قاعدہ OQ کے ساتھ Fₓ، عمود QP کے ساتھ Fᵧ اور O پر زاویہ θ ہے۔', 'شکل: قایم الزاویه مثلث OPQ چې وتر یې F، قاعده یې د OQ په اوږدو Fₓ، عمود یې د QP په اوږدو Fᵧ او په O کې θ زاویه ده.'),
+        ('h', 'Force represented in terms of its Components:', 'اجزا کے لحاظ سے قوت کی نمائندگی:', 'د برخو له مخې د قوت ښودنه:'),
+        ('p', 'Since triangle Δ OPQ, form a right angle triangle, therefore we can use Pythagoras theorem, which states that', 'چونکہ مثلث Δ OPQ قائمۃ الزاویہ مثلث ہے، اس لیے ہم مسئلہ فیثاغورث استعمال کر سکتے ہیں جو کہتا ہے کہ', 'څرنګه چې Δ OPQ مثلث قایم الزاویه دی، نو د فیثاغورث قضیه کارولی شو چې وايي'),
+        ('eq', None, '(hyp)^2 = (base)^2 + (perp)^2'),
+        ('p', 'taking square root on both sides', 'دونوں طرف جذر لینے سے', 'دواړو خواوو ته جذر اخیستلو سره'),
+        ('eq', None, '√(hyp)^2 = √((base)^2 + (perp)^2)'),
+        ('p', 'such that', 'یوں کہ', 'داسې چې'),
+        ('eq', None, 'hyp = √((base)^2 + (perp)^2)'),
+        ('p', 'or', 'یا', 'یا'),
+        ('eq', None, 'OP = √((OQ)^2 + (QP)^2)'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', 'phys9-u4-eq45', 'F = √(F_x^2 + F_y^2)', '4.5'),
+        ('p', 'The magnitude of vector can now be determined if the values of the magnitudes of components are known. To determine the direction in right angle triangle Δ OPQ, we have tan θ as',
+         'اگر اجزا کی مقداروں کی قدریں معلوم ہوں تو اب ویکٹر کی مقدار معلوم کی جا سکتی ہے۔ قائمۃ الزاویہ مثلث Δ OPQ میں سمت معلوم کرنے کے لیے ہمارے پاس tan θ ہے', 'که د برخو د اندازو ارزښتونه معلوم وي، اوس د وکټور اندازه معلومېدای شي. په Δ OPQ قایم الزاویه مثلث کې د لوري د معلومولو لپاره tan θ لرو'),
+        ('eq', None, 'tan θ = [[perp|base]] = [[QP|OQ]]'),
+        ('p', 'or', 'یا', 'یا'),
+        ('eq', None, 'tan θ = [[F_y|F_x]]'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', 'phys9-u4-eq46', 'θ = tan^{-1} [[F_y|F_x]]', '4.6'),
+    ]),
+    ('ex4.2', ('Example 4.2 PULLING A BOX ON FLOOR', 'مثال 4.2 فرش پر ڈبہ کھینچنا', '4.2 مثال پر فرش د بکس کښل'), [
+        ('p', 'Divia is pulling a box on the floor with a force of 20 N making an angle of 60° with the horizontal. Find the horizontal and vertical components of this force.', 'دیویا فرش پر ایک ڈبہ 20 N قوت سے کھینچ رہی ہے جو افق سے 60° زاویہ بناتی ہے۔ اس قوت کے افقی اور عمودی اجزا معلوم کریں۔', 'دیویا پر فرش یو بکس په 20 N قوت کاږي چې له افق سره 60° زاویه جوړوي. د دې قوت افقي او عمودي برخې معلومې کړئ.'),
+        ('h', 'GIVEN', 'معلوم', 'ورکړل شوي'),
+        ('ul', [('Force F = 20.0 N', 'قوت F = 20.0 N', 'قوت F = 20.0 N'), ('Angle θ = 60°', 'زاویہ θ = 60°', 'زاویه θ = 60°')]),
+        ('h', 'REQUIRED:', 'مطلوب:', 'غوښتل شوي:'),
+        ('ul', [('(a) Horizontal component of force F_x = ?', '(a) قوت کا افقی جزو F_x = ?', '(a) د قوت افقي برخه F_x = ?'), ('(b) Vertical component of force F_y = ?', '(b) قوت کا عمودی جزو F_y = ?', '(b) د قوت عمودي برخه F_y = ?')]),
+    ]),
+]

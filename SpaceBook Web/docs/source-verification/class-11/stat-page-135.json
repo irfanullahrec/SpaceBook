@@ -1,0 +1,609 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s135-moments-14",
+  "title": "Example 3.25: moments about mean and corrected moments",
+  "headingUrdu": "مثال 3.25: اوسط کے گرد اور تصحیح شدہ معیارِ اثر",
+  "headingPashto": "بېلګه 3.25: د اوسط شاوخوا او سمون شوي مومنټونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 135,
+    "printedPage": "127"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s135-f0",
+      "en": "Find",
+      "ur": "معلوم کریں",
+      "ps": "ومومئ",
+      "sourceGap": {
+        "note": "Completes the question of Example 3.25 begun on the previous page."
+      }
+    },
+    {
+      "id": "stat11-s135-f1",
+      "en": "(i) First four moments about mean",
+      "ur": "(i) اوسط کے گرد پہلے چار معیارِ اثر",
+      "ps": "(i) د اوسط شاوخوا لومړي څلور مومنټونه",
+      "listGroup": "ex325-find"
+    },
+    {
+      "id": "stat11-s135-f2",
+      "en": "(ii) Corrected mean moments",
+      "ur": "(ii) تصحیح شدہ اوسطی معیارِ اثر",
+      "ps": "(ii) سمون شوي اوسط مومنټونه",
+      "listGroup": "ex325-find"
+    },
+    {
+      "id": "stat11-s135-f3",
+      "en": "(iii) Moment ratios and",
+      "ur": "(iii) معیارِ اثر کے تناسب اور",
+      "ps": "(iii) د مومنټ نسبتونه او",
+      "listGroup": "ex325-find"
+    },
+    {
+      "id": "stat11-s135-f4",
+      "en": "(iv) Mean, variance and standard deviation",
+      "ur": "(iv) اوسط، تغیر اور معیاری انحراف",
+      "ps": "(iv) اوسط، وریانس او معیاري انحراف",
+      "listGroup": "ex325-find"
+    },
+    {
+      "id": "stat11-s135-sol25",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-g1",
+      "en": "Given that m′1 = 0.45, m′2 = 8.73, m′3 = 12.15, m′4 = 204.93 and a = 35",
+      "ur": "دیا گیا ہے کہ m′1 = 0.45, m′2 = 8.73, m′3 = 12.15, m′4 = 204.93 اور a = 35",
+      "ps": "ورکړل شوي دي چې m′1 = 0.45, m′2 = 8.73, m′3 = 12.15, m′4 = 204.93 او a = 35",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-g2",
+      "en": "(i) Moments about mean are:",
+      "ur": "(i) اوسط کے گرد معیارِ اثر یہ ہیں:",
+      "ps": "(i) د اوسط شاوخوا مومنټونه دا دي:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-g3",
+      "en": "(ii)",
+      "ur": "(ii)",
+      "ps": "(ii)",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-25"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s135-f0",
+        "stat11-s135-f1",
+        "stat11-s135-f2",
+        "stat11-s135-f3",
+        "stat11-s135-f4",
+        "stat11-s135-sol25",
+        "stat11-s135-g1",
+        "stat11-s135-g2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s135-g3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "equation",
+      "index": 12
+    },
+    {
+      "type": "equation",
+      "index": 13
+    },
+    {
+      "type": "equation",
+      "index": 14
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s135-m1",
+      "latex": "m_1=m_1'-m_1'=0.45-0.45=0",
+      "accessible": "m1 = m′1 − m′1 = 0.45 − 0.45 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 0.45 − 0.45 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 0.45 − 0.45 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 0.45 − 0.45 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m2",
+      "latex": "m_2=m_2'-(m_1')^2=8.73-(0.45)^2=8.73-0.2025=8.53",
+      "accessible": "m2 = m′2 − (m′1)² = 8.73 − (0.45)² = 8.73 − 0.2025 = 8.53",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.73 − (0.45)² = 8.73 − 0.2025 = 8.53"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.73 − (0.45)² = 8.73 − 0.2025 = 8.53"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 8.73 − (0.45)² = 8.73 − 0.2025 = 8.53"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m3a",
+      "latex": "m_3=m_3'-3m_1'm_2'+2(m_1')^3",
+      "accessible": "m3 = m′3 − 3m′1m′2 + 2(m′1)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m3b",
+      "latex": "=12.15-3(0.45)(8.73)+2(0.45)^3",
+      "accessible": "= 12.15 − 3(0.45)(8.73) + 2(0.45)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 12.15 − 3(0.45)(8.73) + 2(0.45)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 12.15 − 3(0.45)(8.73) + 2(0.45)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 12.15 − 3(0.45)(8.73) + 2(0.45)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m3c",
+      "latex": "=12.15-11.7855+0.18225=0.55",
+      "accessible": "= 12.15 − 11.7855 + 0.18225 = 0.55",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 12.15 − 11.7855 + 0.18225 = 0.55"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 12.15 − 11.7855 + 0.18225 = 0.55"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 12.15 − 11.7855 + 0.18225 = 0.55"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m4b",
+      "latex": "=204.93-4(0.45)(12.15)+6(0.45)^2(8.73)-3(0.45)^4",
+      "accessible": "= 204.93 − 4(0.45)(12.15) + 6(0.45)²(8.73) − 3(0.45)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 204.93 − 4(0.45)(12.15) + 6(0.45)²(8.73) − 3(0.45)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 204.93 − 4(0.45)(12.15) + 6(0.45)²(8.73) − 3(0.45)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 204.93 − 4(0.45)(12.15) + 6(0.45)²(8.73) − 3(0.45)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-m4c",
+      "latex": "=204.93-21.87+10.607-0.1230=193.54",
+      "accessible": "= 204.93 − 21.87 + 10.607 − 0.1230 = 193.54",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 204.93 − 21.87 + 10.607 − 0.1230 = 193.54"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 204.93 − 21.87 + 10.607 − 0.1230 = 193.54"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 204.93 − 21.87 + 10.607 − 0.1230 = 193.54"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c2a",
+      "latex": "m_2(\\text{corrected})=m_2(\\text{uncorrected})-\\dfrac{h^2}{12}",
+      "accessible": "m2(corrected) = m2(uncorrected) − h²/12",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c2b",
+      "latex": "=8.53-\\dfrac{(3)^2}{12}",
+      "accessible": "= 8.53 − (3)²/12",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 8.53 − (3)²/12"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 8.53 − (3)²/12"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 8.53 − (3)²/12"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c2c",
+      "latex": "=8.53-\\dfrac{9}{12}=8.53-0.75=7.78",
+      "accessible": "= 8.53 − 9/12 = 8.53 − 0.75 = 7.78",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 8.53 − 9/12 = 8.53 − 0.75 = 7.78"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 8.53 − 9/12 = 8.53 − 0.75 = 7.78"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 8.53 − 9/12 = 8.53 − 0.75 = 7.78"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c4a",
+      "latex": "m_4(\\text{corrected})=m_4(\\text{uncorrected})-\\dfrac{h^2}{2}\\,m_2(\\text{uncorrected})+\\dfrac{7}{240}h^4",
+      "accessible": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c4b",
+      "latex": "=193.54-\\dfrac{(3)^2}{2}(8.53)+\\dfrac{7}{240}(3)^4",
+      "accessible": "= 193.54 − ((3)²/2)(8.53) + (7/240)(3)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 193.54 − ((3)²/2)(8.53) + (7/240)(3)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 193.54 − ((3)²/2)(8.53) + (7/240)(3)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 193.54 − ((3)²/2)(8.53) + (7/240)(3)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c4c",
+      "latex": "=193.54-38.385+2.3625",
+      "accessible": "= 193.54 − 38.385 + 2.3625",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 193.54 − 38.385 + 2.3625"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 193.54 − 38.385 + 2.3625"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 193.54 − 38.385 + 2.3625"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s135-c4d",
+      "latex": "=195.9065-38.385=157.52",
+      "accessible": "= 195.9065 − 38.385 = 157.52",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 195.9065 − 38.385 = 157.52"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 195.9065 − 38.385 = 157.52"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 195.9065 − 38.385 = 157.52"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-25"
+    }
+  ],
+  "sourceNote": "Printed page 127. The first lines complete the question of Example 3.25 (the list (i)–(iv) is printed as an indented list). The printed m4 working uses rounded intermediate values (21.87, 10.607, 0.1230). Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:57:58.423172+00:00",
+    "scope": "Scan 135 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

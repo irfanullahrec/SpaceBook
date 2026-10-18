@@ -1,0 +1,27 @@
+@printed 38
+@status lesson
+### پری پروسیسر ڈائریکٹیوز (Preprocessor Directives) || Preprocessor directives || پري پروسسر لارښودونه
+p اصل پروگرام کے آغاز سے پہلے جو ہدایات کمپائلر کو دی جاتی ہیں ان کو پری پروسیسر ڈائریکٹو کہا جاتا ہے۔ انھیں کمپائلر ڈائریکٹو بھی کہتے ہیں۔ پری پروسیسر ڈائریکٹیو کمپائلر کی ہدایات پر مشتمل ہوتی ہیں۔ کمپائلیشن کے وقت ان ہدایات سے خصوصی ہدایات یا کوڈ کو پروگرام میں شامل کیا جاتا ہے۔ || Instructions given to the compiler before the actual program begins are called preprocessor directives. They are also called compiler directives. Preprocessor directives consist of instructions for the compiler. At compile time, special instructions or code are included in the program through these directives. || هغه لارښوونې چې د اصلي پروګرام له پیل مخکې کمپایلر ته ورکول کېږي پري پروسسر لارښودونه (directives) بلل کېږي. دې ته د کمپایلر لارښودونه هم وايي. پري پروسسر لارښودونه د کمپایلر لارښوونې لري. د کمپایل پر مهال د دې لارښوونو له لارې ځانګړې لارښوونې یا کوډ په پروګرام کې شاملېږي.
+p یہ پری پروسیسر ڈائریکٹیو عام طور پر ہیش سائن # اور مطلوبہ الفاظ، جیسے، #include، #define وغیرہ سے شروع ہوتی ہیں۔ || These preprocessor directives usually begin with the hash sign # and a keyword, such as #include, #define and so on. || دا پري پروسسر لارښودونه عموماً د # (hash) نښې او یوې کلمې سره پیلېږي، لکه #include، #define او نور.
+### #include پری پروسیسر ڈائریکٹیوز || The #include preprocessor directive || د #include پري پروسسر لارښود
+svg شکل نمبر 2.14 C لینگویج میں پری پروسیسر کی مثال || Figure 2.14 An example of the preprocessor in the C language || ۲.۱۴ شکل په C ژبه کې د پري پروسسر بېلګه
+<svg viewBox="0 0 520 170" width="520" role="img" aria-label="Race picture: three runners labelled Source-Code (behind), Compile (middle) and Preprocessor (in front); a note reads: Preprocessor execute before submit source-code to compiler" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF214" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#94a3b8"/></marker></defs>
+<path d="M20 120 H500" stroke="#94a3b8" stroke-dasharray="6 4" marker-end="url(#arF214)"/>
+<g stroke-width="5" stroke-linecap="round" fill="none"><g stroke="#1e3a8a"><circle cx="70" cy="50" r="13" fill="#bfdbfe" stroke-width="2"/><path d="M70 63 L66 92 M66 92 L50 115 M66 92 L84 112 M68 72 L52 84 M68 72 L88 78"/></g>
+<g stroke="#94a3b8"><circle cx="260" cy="50" r="13" fill="#f1f5f9" stroke-width="2"/><path d="M260 63 L256 92 M256 92 L240 115 M256 92 L274 112 M258 72 L242 84 M258 72 L278 78"/></g>
+<g stroke="#dc2626"><circle cx="440" cy="50" r="13" fill="#fecaca" stroke-width="2"/><path d="M440 63 L436 92 M436 92 L420 115 M436 92 L454 112 M438 72 L422 84 M438 72 L458 78"/></g></g>
+<text x="70" y="150" fill="#dc2626" font-weight="700">Source-Code</text><text x="260" y="150" fill="#15803d" font-weight="700">Compile</text><text x="440" y="150" fill="#0891b2" font-weight="700">Preprocessor</text>
+<g text-anchor="start" font-weight="700" font-size="12"><text x="120" y="34" fill="#0891b2">Preprocessor</text><text x="120" y="50">execute before submit</text><text x="120" y="66"><tspan fill="#dc2626">source-code</tspan> to <tspan fill="#15803d">compiler</tspan></text></g>
+</svg>
+endsvg
+@issue The printed figure is a cartoon of children racing; it is redrawn as simple stick runners. Its English note "Preprocessor execute before submit source-code to compiler" is ungrammatical; it means "The preprocessor runs before the source code is submitted to the compiler."
+p #include کمپائلر کو کسی بھی بیرونی (External) ہیڈر فائلوں کو پروسیس کرنے کی اجازت دیتی ہے۔ جب یہ پری پروسیسر C کمپائلر کے ذریعہ انجام پاتا ہے، تو وہ ہیڈر فائل تلاش کرتا ہے جو زاویائی بریکٹ < > میں لکھا ہوا ہے اور اسے سورس فائل کے اندر کاپی کر دیتا ہے۔ || #include allows the compiler to process any external header files. When this preprocessor directive is carried out by the C compiler, it looks for the header file written in the angle brackets < > and copies it into the source file. || #include کمپایلر ته اجازه ورکوي چې هر بهرنی (External) هېډر فایل پروسس کړي. کله چې دا پري پروسسر د C کمپایلر له خوا اجرا شي، هغه هېډر فایل لټوي چې په زاویه ییزو قوسونو < > کې لیکل شوی او د سرچینې فایل ته یې کاپي کوي.
+p سائنٹکس: || Syntax: || ترکیب (Syntax):
+m #include <header-file.h>
+p یا || or || یا
+m #include "header-file.h"
+p مثالیں: || Examples: || بېلګې:
+m #include<stdio.h>
+m #include<conio.h>
+@issue <conio.h> is a non-standard header (Turbo C / MS-DOS compilers); it is not part of standard C and is unavailable on many modern compilers.

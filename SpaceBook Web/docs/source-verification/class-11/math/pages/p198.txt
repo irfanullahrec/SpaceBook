@@ -1,0 +1,21 @@
+@printed 198
+p $=\{(6,5),(5,6)\}$ then $A\cap B=\phi$. || $=\{(6,5),(5,6)\}$، تو $A\cap B=\phi$۔ || $=\{(6,5),(5,6)\}$، نو $A\cap B=\phi$.
+p Now $P(A)=\dfrac6{36}$ and $P(B)=\dfrac2{36}$. || اب $P(A)=\dfrac6{36}$ اور $P(B)=\dfrac2{36}$۔ || اوس $P(A)=\dfrac6{36}$ او $P(B)=\dfrac2{36}$.
+p Since A and B are mutually exclusive, so we have || چونکہ A اور B باہم خارج ہیں، اس لیے حاصل ہوتا ہے || څرنګه چې A او B متقابلاً جلا دي، نو لرو
+eq P(A\cup B)=P(A)+P(B)=\frac6{36}+\frac2{36}=\frac8{36}=\frac29
+endexample
+### Complementary events || متمم واقعات || متممې پېښې
+p Suppose we divide a sample space S into two subsets (events) E and $E'$ such that || فرض کریں ہم نمونہ فضا S کو دو ذیلی سیٹوں (واقعات) E اور $E'$ میں اس طرح تقسیم کرتے ہیں کہ || فرض کړئ د نمونې S فضا په دوو فرعي سېټونو (پېښو) E او $E'$ داسې وېشو چې
+eq \text{(i)}\quad E\cap E'=\phi\qquad\text{(ii)}\quad E\cup E'=S
+p Then $E'$ is called the complement of E relative to S and E and $E'$ are called complementary events. || پھر $E'$، S کے لحاظ سے E کا متمم کہلاتا ہے، اور E اور $E'$ متمم واقعات کہلاتے ہیں۔ || بیا $E'$ د S په نسبت د E متمم بلل کېږي، او E او $E'$ متممې پېښې بلل کېږي.
+box theorem | Theorem || قضیہ || قضیه
+p If E and $E'$ are complementary events, then $P(E')=1-P(E)$. || اگر E اور $E'$ متمم واقعات ہوں تو $P(E')=1-P(E)$۔ || که E او $E'$ متممې پېښې وي، نو $P(E')=1-P(E)$.
+p **Proof:** Since $E\cup E'=S$. Then $P(E\cup E')=P(S)$ || **ثبوت:** چونکہ $E\cup E'=S$۔ پھر $P(E\cup E')=P(S)$ || **ثبوت:** څرنګه چې $E\cup E'=S$. نو $P(E\cup E')=P(S)$
+p or $P(E)+P(E')=1$, $\because E\cap E'=\phi$ || یا $P(E)+P(E')=1$، $\because E\cap E'=\phi$ || یا $P(E)+P(E')=1$، $\because E\cap E'=\phi$
+p or $P(E')=1-P(E)$ || یا $P(E')=1-P(E)$ || یا $P(E')=1-P(E)$
+endbox
+example 24 | A coin is tossed 6 times in succession. What is the probability that at least one head occurs? || ایک سکہ مسلسل 6 مرتبہ اچھالا جاتا ہے۔ کم از کم ایک چت آنے کا احتمال کیا ہے؟ || یوه سکه پرله پسې 6 ځله غورځول کېږي. د لږ تر لږه یوه مخ راتلو احتمال څومره دی؟
+p **Solution:** Tossing a coin 6 times in succession, we have $n(S)=2^6=64$. || **حل:** سکہ مسلسل 6 مرتبہ اچھالنے سے $n(S)=2^6=64$ ملتا ہے۔ || **حل:** د سکې پرله پسې 6 ځله غورځولو سره $n(S)=2^6=64$ لرو.
+p Let $E=\{\text{at least 1 H occurs}\}$ then $E'=\{\text{no H occurs}\}$ and $P(E')=\dfrac1{64}$, $\because$ there is only one outcome event, where all tails occur. || فرض کریں $E=\{\text{کم از کم 1 چت آتا ہے}\}$، تو $E'=\{\text{کوئی چت نہیں آتا}\}$ اور $P(E')=\dfrac1{64}$، $\because$ صرف ایک نتیجہ ہے جس میں سب پٹ آتے ہیں۔ || فرض کړئ $E=\{\text{لږ تر لږه 1 مخ راځي}\}$، نو $E'=\{\text{هېڅ مخ نه راځي}\}$ او $P(E')=\dfrac1{64}$، $\because$ یوازې یوه پایله شته چې ټول شاګانې پکې راځي.
+eq \therefore\ P(E)=1-P(E')=1-\frac1{64}=\frac{63}{64}
+endexample

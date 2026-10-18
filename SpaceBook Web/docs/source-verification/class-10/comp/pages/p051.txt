@@ -1,0 +1,39 @@
+@printed 41
+@status lesson
+p شکل نمبر 2.15 سنگل لائن اور ملٹی لائن کمنٹس (فائل comment.cpp): || Figure 2.15 Single-line and multi-line comments (file comment.cpp): || ۲.۱۵ شکل یوه کرښه او څو کرښې تبصرې (فایل comment.cpp):
+m  1  #include <iostream>
+m  2  using namespace std;
+m  3
+m  4  int main()
+m  5  {
+m  6      // C++ program to shows how to comment in C++
+m  7      // This is the single Line comment
+m  8
+m  9      /*  This is
+m 10          Multiple Line
+m 11          Comment
+m 12       */
+m 13
+m 14      cout<<"Single And Multiple line comment will not display ";
+m 15
+m 16      return 0;
+m 17  }
+@issue Figure 2.15 is a C++ program (iostream, cout), not C, although the section is about comments in C; the comment syntax is the same in both. Its comment "C++ program to shows" is ungrammatical ("to show"). The screenshot is reproduced as code lines.
+@sec 2-4 | 2.4 متغیرات اور مستقلات || 2.4 Variables and constants || ۲.۴ متغیرونه او ثابتونه
+## 2.4 متغیرات اور مستقلات (Variables and Constants) || 2.4 Variables and constants || ۲.۴ متغیرونه او ثابتونه
+### 2.4.1 متغیر (Variable) || 2.4.1 Variable || ۲.۴.۱ متغیر
+p ایک ایسی مقدار جس کی قیمت پروگرام کے عمل کے دوران تبدیل ہو جائے اسے متغیر یا ویری ایبل (Variable) کہا جاتا ہے۔ ایک ویری ایبل کمپیوٹر میموری میں اسٹوریج یا میموری والے مقام کو ظاہر کرتا ہے۔ اسی وجہ سے ویری ایبل میں ذخیرہ شدہ ڈیٹا بھی عارضی ہوتا ہے۔ یہ صرف پروگرام چلنے کے دوران استعمال ہوتا ہے اور اس پر کارروائی کی جا سکتی ہے۔ ویری ایبل میں ذخیرہ شدہ ڈیٹا پروگرام ختم ہونے پر خود بخود ختم ہو جاتا ہے۔ || A quantity whose value can change while the program is running is called a variable. A variable represents a storage or memory location in the computer's memory. For this reason the data stored in a variable is also temporary: it is used, and can be operated on, only while the program is running. The data stored in a variable is automatically lost when the program ends. || هغه مقدار چې ارزښت یې د پروګرام د چلېدو پر مهال بدلېدای شي متغیر (Variable) بلل کېږي. متغیر د کمپیوټر په حافظه کې د ساتنې یا حافظې ځای ښيي. له همدې امله په متغیر کې ساتل شوې ډېټا هم لنډمهاله وي؛ یوازې د پروګرام د چلېدو پر مهال کارېږي او پرې عملیات کېدای شي. د پروګرام په پای ته رسېدو په متغیر کې ساتل شوې ډېټا پخپله له منځه ځي.
+svg شکل نمبر 2.16 کمپیوٹر میموری میں ویری ایبل || Figure 2.16 A variable in computer memory || ۲.۱۶ شکل د کمپیوټر په حافظه کې متغیر
+<svg viewBox="0 0 540 130" width="540" role="img" aria-label="Labels Name of variable, Location of variable and Computer Memory with arrows into a memory box; inside it the name Marks and a small cell containing 80; Contents of variable points to the 80" font-family="Arial, Helvetica, sans-serif" font-size="13">
+<defs><marker id="arF216" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="240" y="10" width="140" height="104" fill="#bae6fd" stroke="#0284c7"/>
+<text x="262" y="34" font-weight="700">Marks</text>
+<rect x="258" y="48" width="56" height="30" fill="#fde047" stroke="#111827"/><text x="286" y="68" text-anchor="middle" font-weight="700">80</text>
+<text x="10" y="32">Name of variable</text><text x="10" y="68">Location of variable</text><text x="10" y="104">Computer Memory</text>
+<path d="M160 28 H254 M160 64 H254 M160 100 H236" stroke="#111827" marker-end="url(#arF216)"/>
+<path d="M410 64 H318" stroke="#111827" marker-end="url(#arF216)"/><text x="416" y="68">Contents of variable</text>
+</svg>
+endsvg
+### ویری ایبل کی اقسام || Kinds of variables || د متغیرونو ډولونه
+p ویری ایبل دو قسم کے ہوتے ہیں، عددی اور حرفی (Numeric & Character)۔ || Variables are of two kinds: numeric and character. || متغیرونه دوه ډوله دي: عددي او حرفي (Numeric & Character).
+p عددی (Numeric) ویری ایبل کا استعمال کمپیوٹر پروگراموں میں عددی اقدار کو ظاہر کرنے کے لئے کیا جاتا ہے۔ وہ انٹیجر اور فلوٹنگ پوائنٹ ویلیو کی نمائندگی کرتے ہیں۔ عددی ویری ایبل کی کچھ مثالوں میں marks، sum، n، width وغیرہ ہیں۔ || Numeric variables are used in computer programs to represent numeric values; they represent integer and floating-point values. Some examples of numeric variables are marks, sum, n, width and so on. || عددي (Numeric) متغیرونه په کمپیوټري پروګرامونو کې د عددي ارزښتونو د ښودلو لپاره کارېږي؛ هغوی بشپړ (integer) او اعشاري (floating-point) ارزښتونه ښيي. د عددي متغیرونو ځینې بېلګې marks، sum، n، width او نور دي.

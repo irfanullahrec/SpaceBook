@@ -1,0 +1,48 @@
+@printed 83
+@status lesson
+@deco The code on this page is printed very faintly; it is read from context (braces, "%d" and "\n" partly lost).
+### پروگرام 4.5 یہ پروگرام دو اعداد میں سے بڑے عدد کو پرنٹ کرے گا۔ || Program 4.5 This program prints the larger of two numbers || پروګرام ۴.۵ دا پروګرام له دوو عددونو لوی عدد چاپوي
+m #include<stdio.h>
+m void main ()
+m {
+m     int x, y;
+m     printf("Enter two numbers:");
+m     scanf("%d %d",&x,&y);
+m     if(x > y)
+m     printf("\n%d is larger number than %d",x,y);
+m     else
+m     printf("\n%d is larger number than %d",y,x);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter two numbers = 15
+m 20
+m 20 is larger number than 15
+endbox
+@issue The prompt in the code is "Enter two numbers:" but the output box shows "Enter two numbers = 15". If both numbers are equal the program wrongly says the second is larger.
+### پروگرام 4.6 یہ پروگرام تین اعداد میں سے سب سے چھوٹے عدد کو پرنٹ کرے گا۔ || Program 4.6 This program prints the smallest of three numbers || پروګرام ۴.۶ دا پروګرام له درېیو عددونو تر ټولو کوچنی عدد چاپوي
+m #include <stdio.h>
+m void main ()
+m {
+m     int x, y, z, s;
+m     printf("Enter three numbers");
+m     scanf("%d %d %d",&x,&y,&z);
+m     if(x < y)
+m         s = x ;
+m     else
+m         s = y ;
+m     if(s < z)
+m         printf("The smallest number is :%d",s);
+m     else
+m         printf("The smallest number is :%d",z);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter three numbers = 10
+m 6
+m 12
+m The smallest number is: 6
+endbox
+@sec 4-1-5 | 4.1.5 switch اسٹیٹمنٹ || 4.1.5 The switch statement || ۴.۱.۵ switch بیان
+### 4.1.5 switch اسٹیٹمنٹ (The switch Statement) || 4.1.5 The switch statement || ۴.۱.۵ switch بیان
+@issue The English heading is misspelled "swtich"; corrected to "switch".
+p C میں switch اسٹیٹمنٹ ویری ایبل کی قیمت کی جانچ کرتا ہے اور اس کا ایک سے زیادہ case کے ساتھ موازنہ کرتا ہے۔ ایک بار جب case میچ ہو جاتا ہے تو، اس خاص case سے وابستہ اسٹیٹمنٹ کا ایک بلاک چلایا جاتا ہے۔ || In C the switch statement checks the value of a variable and compares it with more than one case. Once a case matches, the block of statements associated with that particular case is run. || په C کې switch بیان د متغیر ارزښت ازمویي او له ګڼو case سره یې پرتله کوي. کله چې یو case سمون ومومي، د هماغه case سره تړلی د بیانونو بلاک چلېږي.
+p switch کے ایک بلاک میں ہر case کا ایک مختلف نام / نمبر ہوتا ہے جسے آئیڈینٹیفائر (Identifier) کہا جاتا ہے۔ یوزر کی فراہم کردہ قیمت کا موازنہ switch بلاک کے اندر موجود تمام cases سے کیا جاتا ہے۔ اگر کوئی case میچ نہیں ملا تو default اسٹیٹمنٹ پر عمل درآمد ہو جاتا ہے، اور کنٹرول switch بلاک سے باہر نکل جاتا ہے۔ || In a switch block each case has a different name/number, called an identifier. The value supplied by the user is compared with all the cases inside the switch block. If no case matches, the default statement is executed and control leaves the switch block. || د switch په یوه بلاک کې هر case یو بېل نوم/شمېره لري چې پېژندونکی (Identifier) بلل کېږي. د کاروونکي ورکړل شوی ارزښت د switch بلاک له ټولو case سره پرتله کېږي. که هېڅ case سمون ونه مومي، default بیان اجرا کېږي او کنټرول له switch بلاک وځي.

@@ -1,0 +1,29 @@
+@printed 154
+@status lesson
+p مثال کے طور پر: <font face=arial>FORMATTING TAGS</font> نتیجہ: FORMATTING TAGS (Arial فونٹ میں) || For example: <font face=arial>FORMATTING TAGS</font> Result: FORMATTING TAGS (in the Arial font) || د بېلګې په توګه: <font face=arial>FORMATTING TAGS</font> پایله: FORMATTING TAGS (په Arial فونټ)
+### شکل نمبر 7.23 HTML ڈاکومنٹ میں font ٹیگ کا استعمال || Figure 7.23 Using the font tag in an HTML document || ۷.۲۳ شکل په HTML سند کې د font ټیګ کارونه
+m <html>
+m <head>
+m <title>Using Font Tags</title>
+m </head>
+m <body>
+m <font size=3>This font size is 3.</font><br>
+m <font size=6>This font size is 6.</font><br>
+m <font color=blue>This text is in blue color.</font><br>
+m <font face=arial>This is Arial font.</font><br>
+m <font face=courier>This is Courier font.</font><br>
+m <font face=rockwell size=4 color=red>This is Rockwell font
+m in size 4 and color red.</font><br>
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.24 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.24. || براوزر کړکۍ به یې لکه په ۷.۲۴ شکل کې وښيي.
+box info | شکل نمبر 7.24 ویب پیج میں فونٹ ٹیگز کا استعمال || Figure 7.24 Font tags on a web page || ۷.۲۴ شکل په ویب پاڼه کې د فونټ ټیګونو کارونه
+m This font size is 3.
+p **This font size is 6.** (بڑا) || **This font size is 6.** (large) || **This font size is 6.** (لوی)
+p This text is in blue color. (نیلا) || This text is in blue color. (blue) || This text is in blue color. (شین)
+p This is Arial font. || This is Arial font. || This is Arial font.
+m This is Courier font.
+p This is Rockwell font in size 4 and color red. (سرخ) || This is Rockwell font in size 4 and color red. (red) || This is Rockwell font in size 4 and color red. (سور)
+endbox
+### سپر سکرپٹ <sup></sup> Superscript || Superscript <sup></sup> || سوپرسکرېپټ <sup></sup>
+p یہ ٹیگز اپنے درمیان لکھے گئے ٹیکسٹ کو سپر سکرپٹ میں تبدیل کر دیں گے۔ مثال کے طور پر: X<sup>2</sup> نتیجہ: X² || These tags turn the text written between them into superscript. For example: X<sup>2</sup> Result: X² || دا ټیګونه د خپل منځ متن په سوپرسکرېپټ بدلوي. د بېلګې په توګه: X<sup>2</sup> پایله: X²

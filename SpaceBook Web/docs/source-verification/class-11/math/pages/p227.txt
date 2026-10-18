@@ -1,0 +1,27 @@
+@printed 227
+@issue The printed statement of Example 19 writes the second term's denominator as 4·5; the solution (and the pattern 4, 4·8, 4·8·12) shows it is 4·8. Preserved as printed and clarified separately.
+@deco Unit-running header, folio and decorative footer band excluded
+endexample
+example 19 | If $y=\dfrac34+\dfrac{3\cdot5}{4\cdot5}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots$, Show that $y^2+2y-7=0$ || اگر $y=\dfrac34+\dfrac{3\cdot5}{4\cdot5}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots$ ہو تو دکھائیں کہ $y^2+2y-7=0$ || که $y=\dfrac34+\dfrac{3\cdot5}{4\cdot5}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots$ وي نو وښایاست چې $y^2+2y-7=0$
+p **Solution:** Given that || **حل:** دیا گیا ہے کہ || **حل:** ورکړل شوی دی چې
+m $y=\dfrac34+\dfrac{3\cdot5}{4\cdot8}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots$
+m $\Rightarrow y+1=1+\dfrac34+\dfrac{3\cdot5}{4\cdot8}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots\qquad\text{(1)}$
+p Let the series on the R.H.S. of (1) be identical with the expansion $(1+x)^n$. We have, || فرض کریں (1) کے دائیں طرف کا سلسلہ توسیع $(1+x)^n$ کے مماثل ہے۔ ہمارے پاس ہے، || فرض کړئ د (1) ښي لوري لړۍ د پراختیا $(1+x)^n$ سره ورته ده. موږ لرو،
+m $(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots\qquad\text{(2)}$
+p Comparing right hand sides of (1) and (2), we have, || (1) اور (2) کے دائیں اطراف کا موازنہ کرنے پر ہمارے پاس ہے، || د (1) او (2) ښي خواوو پرتله کولو سره موږ لرو،
+m $nx=\dfrac34\ \cdots\text{(3)}\quad\text{and}\quad\dfrac{n(n-1)}{2}x^2=\dfrac{3\cdot5}{4\cdot8}\ \cdots\text{(4)}$
+p Squaring equation (3) || مساوات (3) کا مربع لینے پر || د معادلې (3) مربع کولو سره
+m $n^2x^2=\dfrac9{16}\ \cdots\text{(5)}$
+p Dividing equation (4) by equation (5) || مساوات (4) کو مساوات (5) سے تقسیم کرنے پر || د معادلې (4) پر معادله (5) ویشلو سره
+m $\dfrac{\frac{n(n-1)x^2}2}{n^2x^2}=\dfrac{\frac{3\cdot5}{4\cdot8}}{\frac9{16}}\quad\text{or}\quad\dfrac{n(n-1)x^2}2\times\dfrac1{n^2x^2}=\dfrac{3\cdot5}{4\cdot8}\times\dfrac{16}9$
+m $\Rightarrow\dfrac{n(n-1)}{2n^2}=\dfrac56\Rightarrow\dfrac{n-1}n=\dfrac53$
+m $\text{or}\quad3(n-1)=5n\Rightarrow3n-3=5n\Rightarrow-3=5n-3n\Rightarrow2n=-3$
+m $\Rightarrow n=-\dfrac32\quad\text{Putting }n=-\dfrac32\text{ in }nx=\dfrac34,\text{ we get }\left(-\dfrac32\right)x=\dfrac34\Rightarrow-\dfrac x2=\dfrac14$
+m $x=\dfrac{-2}4\ \text{or}\ x=-\dfrac12$
+m $\text{So}\quad y+1=(1+x)^n=1+\dfrac34+\dfrac{3\cdot5}{4\cdot8}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\cdots\quad\text{becomes}$
+m $y+1=\left(1-\dfrac12\right)^{-\frac32}\quad\text{or}\quad y+1=\left(\dfrac12\right)^{-\frac32}\Rightarrow(y+1)^2=\left(\dfrac12\right)^{-3}$
+m $\text{or}\quad(y+1)^2=\dfrac1{\left(\frac12\right)^3}=\dfrac1{\frac18}$
+m $\text{i.e.}\quad(y+1)^2=8\ \Rightarrow\ y^2+2y+1-8=0\Rightarrow y^2+2y-7=0$
+box note | SpaceBook clarification || اسپیس بک کی وضاحت || د سپېس بک وضاحت
+p In the printed statement the second term should read $\dfrac{3\cdot5}{4\cdot8}$ (denominator $4\cdot8$, not $4\cdot5$), as used in the solution. || چھپے ہوئے بیان میں دوسرا رکن $\dfrac{3\cdot5}{4\cdot8}$ ہونا چاہیے (مخرج $4\cdot8$ ہے، $4\cdot5$ نہیں)، جیسا کہ حل میں استعمال ہوا ہے۔ || په چاپ شوي بیان کې دویم حد باید $\dfrac{3\cdot5}{4\cdot8}$ وي (مخرج $4\cdot8$ دی، نه $4\cdot5$)، لکه څنګه چې په حل کې کارول شوی.
+endbox

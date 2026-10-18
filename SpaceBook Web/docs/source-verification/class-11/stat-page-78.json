@@ -1,0 +1,277 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s078-quantiles-1",
+  "title": "2.3.7 Disadvantages of median · 2.3.8 Quartiles, deciles and percentiles · 2.3.9 Computation",
+  "headingUrdu": "2.3.7 وسطانیہ کی خامیاں · 2.3.8 چوتھائیاں، دسویں اور فی صدکیات · 2.3.9 حساب",
+  "headingPashto": "2.3.7 د میانې زیانونه · 2.3.8 څلورمې، لسمې او سلمې · 2.3.9 محاسبه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 78,
+    "printedPage": "70"
+  },
+  "auditStatus": "corrected; verification pending",
+  "paras": [
+    {
+      "id": "stat11-s078-h237",
+      "en": "2.3.7 Disadvantages of median",
+      "ur": "2.3.7 وسطانیہ کی خامیاں",
+      "ps": "2.3.7 د میانې زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s078-d1",
+      "en": "(i) It is not based on all the observations.",
+      "ur": "(i) یہ تمام مشاہدات پر مبنی نہیں ہے۔",
+      "ps": "(i) دا پر ټولو کتنو والړ نه دی.",
+      "listGroup": "median-dis"
+    },
+    {
+      "id": "stat11-s078-d2",
+      "en": "(ii) Computation of median need arrangement of data into an array, which is a difficult job, especially for a large body of data.",
+      "ur": "(ii) وسطانیہ کے حساب کے لیے اعداد و شمار کو ارے میں ترتیب دینا ضروری ہے، جو ایک مشکل کام ہے، خاص طور پر اعداد و شمار کے بڑے مجموعے کے لیے۔",
+      "ps": "(ii) د میانې محاسبه د معلوماتو په اره کې د ترتیب کولو ته اړتیا لري، چې یو ستونزمن کار دی، په ځانګړي ډول د معلوماتو د لوی مجموعې لپاره.",
+      "listGroup": "median-dis"
+    },
+    {
+      "id": "stat11-s078-d3",
+      "en": "(iii) In case of even number of observations or continuous series median is an estimated value other than any value in the series.",
+      "ur": "(iii) مشاہدات کی تعداد جفت ہونے یا مسلسل سلسلے کی صورت میں وسطانیہ ایک تخمینی قدر ہوتی ہے جو سلسلے کی کسی بھی قدر کے علاوہ ہوتی ہے۔",
+      "ps": "(iii) د کتنو د جفت شمېر یا دوامدارې لړۍ په حالت کې میانه یو اټکل شوی ارزښت وي چې د لړۍ له هر ارزښت پرته وي.",
+      "listGroup": "median-dis"
+    },
+    {
+      "id": "stat11-s078-d4",
+      "en": "(iv) It is not useful measure where extreme values receive greater importance.",
+      "ur": "(iv) یہ ایسی جگہ مفید پیمانہ نہیں جہاں انتہائی قدروں کو زیادہ اہمیت ملتی ہو۔",
+      "ps": "(iv) دا هغه ځای ګټوره اندازه نه ده چېرته چې سخت ارزښتونه ډېر اهمیت ترلاسه کوي.",
+      "listGroup": "median-dis"
+    },
+    {
+      "id": "stat11-s078-h238",
+      "en": "2.3.8 Quartiles, deciles and percentiles",
+      "ur": "2.3.8 چوتھائیاں، دسویں اور فی صدکیات",
+      "ps": "2.3.8 څلورمې، لسمې او سلمې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s078-t1",
+      "en": "The values which divide a series of ordered data into four equal parts are called quartiles. They are denoted by Q₁, Q₂ and Q₃. That is;",
+      "ur": "وہ قدریں جو ترتیب دیے گئے اعداد و شمار کے سلسلے کو چار برابر حصوں میں تقسیم کریں چوتھائیاں (کوارٹائلز) کہلاتی ہیں۔ انہیں Q₁، Q₂ اور Q₃ سے ظاہر کیا جاتا ہے۔ یعنی؛",
+      "ps": "هغه ارزښتونه چې د ترتیب شویو معلوماتو لړۍ په څلورو مساوي برخو وېشي څلورمې (کوارټایلونه) بلل کېږي. دا په Q₁، Q₂ او Q₃ ښودل کېږي. یعنې؛"
+    },
+    {
+      "id": "stat11-s078-t2",
+      "en": "The values which divide a series into ten equal parts are called deciles. They are denoted by D₁, D₂, D₃, …, D₉. That is;",
+      "ur": "وہ قدریں جو سلسلے کو دس برابر حصوں میں تقسیم کریں دسویں (ڈیسائلز) کہلاتی ہیں۔ انہیں D₁، D₂، D₃، …، D₉ سے ظاہر کیا جاتا ہے۔ یعنی؛",
+      "ps": "هغه ارزښتونه چې لړۍ په لسو مساوي برخو وېشي لسمې (ډیسایلونه) بلل کېږي. دا په D₁، D₂، D₃، …، D₉ ښودل کېږي. یعنې؛"
+    },
+    {
+      "id": "stat11-s078-t3",
+      "en": "The values which divide a series in to hundred equal parts are called percentiles. They are denoted by P₁, P₂, …, P₉₉. These all are positional averages and are used to know the position of an observation relative to the other values in a data set. Note that (i) Median = Q₂ = D₅ = P₅₀ and (ii) Quartiles, deciles and percentiles are collectively called Quantiles",
+      "ur": "وہ قدریں جو سلسلے کو سو برابر حصوں میں تقسیم کریں فی صدکیات (پرسنٹائلز) کہلاتی ہیں۔ انہیں P₁، P₂، …، P₉₉ سے ظاہر کیا جاتا ہے۔ یہ سب مقامی اوسط ہیں اور اعداد و شمار کے مجموعے میں دوسری قدروں کے مقابلے میں کسی مشاہدے کی پوزیشن جاننے کے لیے استعمال ہوتے ہیں۔ نوٹ کریں کہ (i) وسطانیہ = Q₂ = D₅ = P₅₀ اور (ii) چوتھائیاں، دسویں اور فی صدکیات مجموعی طور پر کوانٹائلز کہلاتی ہیں",
+      "ps": "هغه ارزښتونه چې لړۍ په سلو مساوي برخو وېشي سلمې (پرسنټایلونه) بلل کېږي. دا په P₁، P₂، …، P₉₉ ښودل کېږي. دا ټول موقعیتي اوسطونه دي او د معلوماتو په ټولګه کې د نورو ارزښتونو په پرتله د یوې کتنې د موقعیت د پېژندلو لپاره کارول کېږي. یادونه وکړئ چې (i) میانه = Q₂ = D₅ = P₅₀ او (ii) څلورمې، لسمې او سلمې په ګډه کوانټایلونه بلل کېږي"
+    },
+    {
+      "id": "stat11-s078-h239",
+      "en": "2.3.9 Computation of quartiles, deciles and percentiles",
+      "ur": "2.3.9 چوتھائیوں، دسویں اور فی صدکیات کا حساب",
+      "ps": "2.3.9 د څلورمو، لسمو او سلمو محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s078-ci",
+      "en": "Case-i: Individual series or ungrouped data",
+      "ur": "صورت-i: انفرادی سلسلہ یا غیر گروہی اعداد و شمار",
+      "ps": "حالت-i: انفرادي لړۍ یا نه‌ګروپ شوي معلومات"
+    },
+    {
+      "id": "stat11-s078-cn",
+      "en": "If n is odd then add 1 with n in the above formulas.",
+      "ur": "اگر n طاق ہو تو مندرجہ بالا فارمولوں میں n کے ساتھ 1 جمع کریں۔",
+      "ps": "که n طاق وي نو په پورتنیو فورمولونو کې له n سره 1 جمع کړئ."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s078-h237",
+        "stat11-s078-d1",
+        "stat11-s078-d2",
+        "stat11-s078-d3",
+        "stat11-s078-d4",
+        "stat11-s078-h238",
+        "stat11-s078-t1"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s078-t2"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s078-t3",
+        "stat11-s078-h239",
+        "stat11-s078-ci"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s078-cn"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "quartiles": {
+      "ur": "چوتھائیاں (کوارٹائلز)",
+      "ps": "څلورمې (کوارټایلونه)"
+    },
+    "deciles": {
+      "ur": "دسویں (ڈیسائلز)",
+      "ps": "لسمې (ډیسایلونه)"
+    },
+    "percentiles": {
+      "ur": "فی صدکیات (پرسنٹائلز)",
+      "ps": "سلمې (پرسنټایلونه)"
+    },
+    "quantiles": {
+      "ur": "کوانٹائلز",
+      "ps": "کوانټایلونه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s078-q",
+      "latex": "Q_i=i\\left(\\dfrac{n}{4}\\right)\\text{th item if }n\\text{ is even, }i=1,2,3.",
+      "accessible": "Qi = i(n/4)th item if n is even, i = 1, 2, 3.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Qi = i(n/4)th item if n is even, i = 1, 2, 3."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Qi = i(n/4)th item if n is even, i = 1, 2, 3."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Qi = i(n/4)th item if n is even, i = 1, 2, 3."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s078-d",
+      "latex": "D_i=i\\left(\\dfrac{n}{10}\\right)\\text{th item if }n\\text{ is even, }i=1,2,\\ldots,9.",
+      "accessible": "Di = i(n/10)th item if n is even, i = 1, 2, …, 9.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Di = i(n/10)th item if n is even, i = 1, 2, …, 9."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Di = i(n/10)th item if n is even, i = 1, 2, …, 9."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Di = i(n/10)th item if n is even, i = 1, 2, …, 9."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s078-p",
+      "latex": "P_i=i\\left(\\dfrac{n}{100}\\right)\\text{th item if }n\\text{ is even, }i=1,2,\\ldots,99.",
+      "accessible": "Pi = i(n/100)th item if n is even, i = 1, 2, …, 99.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Pi = i(n/100)th item if n is even, i = 1, 2, …, 99."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Pi = i(n/100)th item if n is even, i = 1, 2, …, 99."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Pi = i(n/100)th item if n is even, i = 1, 2, …, 99."
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s078-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 60\" role=\"img\" aria-label=\"Number line with quartiles Q1, Q2 and Q3 dividing the data into four equal parts\" style=\"width:100%;max-width:270px;height:auto;background:#fff\"><line x1=\"20\" y1=\"25\" x2=\"260\" y2=\"25\" stroke=\"#222\" stroke-width=\"2\"/><text x=\"10\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">X</text><line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"60\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Q₁</text><line x1=\"130\" y1=\"20\" x2=\"130\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"130\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Q₂</text><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"200\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Q₃</text></svg>",
+      "caption": "Quartiles Q₁, Q₂, Q₃ on the number line",
+      "captionUrdu": "عدد خط پر چوتھائیاں Q₁، Q₂، Q₃",
+      "captionPashto": "په شمېر کرښه څلورمې Q₁، Q₂، Q₃",
+      "labels": [],
+      "sourceGap": {
+        "note": "Redrawn as a coded number line."
+      }
+    },
+    {
+      "id": "stat11-s078-fig2",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 690 60\" role=\"img\" aria-label=\"Number line with deciles D1 to D9 dividing the data into ten equal parts\" style=\"width:100%;max-width:690px;height:auto;background:#fff\"><line x1=\"20\" y1=\"25\" x2=\"680\" y2=\"25\" stroke=\"#222\" stroke-width=\"2\"/><text x=\"10\" y=\"29\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">X</text><path d=\"M672,20 L682,25 L672,30\" fill=\"none\" stroke=\"#222\" stroke-width=\"2\"/><line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"60\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D1</text><line x1=\"128\" y1=\"20\" x2=\"128\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"128\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D2</text><line x1=\"196\" y1=\"20\" x2=\"196\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"196\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D3</text><line x1=\"264\" y1=\"20\" x2=\"264\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"264\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D4</text><line x1=\"332\" y1=\"20\" x2=\"332\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"332\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D5</text><line x1=\"400\" y1=\"20\" x2=\"400\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"400\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D6</text><line x1=\"468\" y1=\"20\" x2=\"468\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"468\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D7</text><line x1=\"536\" y1=\"20\" x2=\"536\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"536\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D8</text><line x1=\"604\" y1=\"20\" x2=\"604\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"604\" y=\"48\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">D9</text></svg>",
+      "caption": "Deciles D₁ to D₉ on the number line",
+      "captionUrdu": "عدد خط پر دسویں D₁ تا D₉",
+      "captionPashto": "په شمېر کرښه لسمې D₁ تر D₉",
+      "labels": [],
+      "sourceGap": {
+        "note": "Redrawn as a coded number line."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 70. Handwritten notes near the 2.3.8 heading (\"Median = 2, Q = 4, D = 10, P = 100\") are ignored. Printed variant \"Q₁.\" in the quartile list punctuation is read as \"Q₁, Q₂ and Q₃\". Header graphics and watermark excluded."
+}

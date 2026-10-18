@@ -1,0 +1,40 @@
+@printed 111
+@status lesson
+### Program 4.11: A program to input the length of one side of cube and print its volume. || پروگرام 4.11: مکعب کے ایک ضلع کی لمبائی ان پٹ کر کے اس کا حجم پرنٹ کرنے کا پروگرام۔ || پروګرام ۴.۱۱: د مکعب د یوې ضلعې اوږدوالی اخلي او حجم یې چاپوي.
+m #include <iostream>
+m using namespace std;
+m   int main()
+m   {
+m       int sid1;
+m       float volcu;
+m       cout << "\n\n Calculate the volume of a cube :\n";
+m       cout << "---------------------------------------\n";
+m       cout<<" Input the side of a cube : ";
+m       cin>>sid1;
+m       volcu=(sid1*sid1*sid1);
+m       cout<<" The volume of a cube is : "<< volcu << endl;
+m       cout << endl;
+m       return 0;
+m   }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Calculate the volume of a cube:
+m ---------------------------------------
+m Input the side of a cube: 5
+m The volume of a cube is: 125
+endbox
+### Program 4.12: A program to find largest number using Nested if-else statement || پروگرام 4.12: نیسٹڈ if-else سے سب سے بڑا عدد معلوم کرنے کا پروگرام || پروګرام ۴.۱۲: د ځالي if-else په مرسته تر ټولو لوی عدد موندل
+m #include <iostream>
+m using namespace std;
+m int main()
+m {
+m   float n1, n2, n3;
+m   cout << "Enter three numbers: ";
+m   cin >> n1 >> n2 >> n3;
+m   if (n1 >= n2) {
+m     if (n1 >= n3)
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter three numbers: 2.3
+m 8.3
+m -4.2
+m Largest number: 8.3
+endbox

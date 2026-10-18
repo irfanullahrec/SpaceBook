@@ -1,0 +1,472 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s053-double-sum-product",
+  "title": "Example 1.24 data · Rules for double summation · 1.7.3 Product notation · Example 1.25",
+  "headingUrdu": "مثال 1.24 کے اعداد · دوہرے مجموعے کے قواعد · 1.7.3 حاصلِ ضرب کی علامت · مثال 1.25",
+  "headingPashto": "د بېلګې 1.24 معلومات · د دوه‌ګونې مجموعې قواعد · 1.7.3 د ضرب نښه · بېلګه 1.25",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 53,
+    "printedPage": "45"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s053-hr",
+      "en": "Rules for double summation notation",
+      "ur": "دوہرے مجموعے کی علامت کے قواعد",
+      "ps": "د دوه‌ګونې مجموعې د نښې قواعد",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s053-h173",
+      "en": "1.7.3 Product notation",
+      "ur": "1.7.3 حاصلِ ضرب کی علامت",
+      "ps": "1.7.3 د ضرب نښه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s053-t173",
+      "en": "Π: (upper case pi): is notation for product. It is a Greek letter.",
+      "ur": "Π: (بڑا پائی): حاصلِ ضرب کی علامت ہے۔ یہ ایک یونانی حرف ہے۔",
+      "ps": "Π: (لوی پای): د ضرب حاصل نښه ده. دا یو یوناني توری دی."
+    },
+    {
+      "id": "stat11-s053-ex25",
+      "en": "Example: 1.25",
+      "ur": "مثال: 1.25",
+      "ps": "بېلګه: 1.25",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-25"
+    },
+    {
+      "id": "stat11-s053-q25",
+      "en": "If xi = 2, 3, 4. Compute Π xi (i = 1 to 3) and Π xi² (i = 1 to 3).",
+      "ur": "اگر xi = 2, 3, 4 ہوں تو Π xi (i = 1 سے 3) اور Π xi² (i = 1 سے 3) حساب کریں۔",
+      "ps": "که xi = 2, 3, 4 وي نو Π xi (i = 1 څخه تر 3) او Π xi² (i = 1 څخه تر 3) محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-1-25"
+    },
+    {
+      "id": "stat11-s053-sol25",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-25"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s053-hr"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s053-h173",
+        "stat11-s053-t173"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s053-ex25",
+        "stat11-s053-q25",
+        "stat11-s053-sol25"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    }
+  ],
+  "vocabulary": {
+    "product": {
+      "ur": "حاصلِ ضرب",
+      "ps": "ضرب حاصل"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s053-d1",
+      "latex": "\\text{i.}\\ \\sum_{i=1}^{n}\\sum_{j=1}^{m}x_{ij}=\\sum_{j=1}^{m}\\sum_{i=1}^{n}x_{ij}",
+      "accessible": "i. Σ (i = 1 to n) Σ (j = 1 to m) xij = Σ (j = 1 to m) Σ (i = 1 to n) xij",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "i. Σ (i = 1 to n) Σ (j = 1 to m) xij = Σ (j = 1 to m) Σ (i = 1 to n) xij"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "i. Σ (i = 1 to n) Σ (j = 1 to m) xij = Σ (j = 1 to m) Σ (i = 1 to n) xij"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "i. Σ (i = 1 to n) Σ (j = 1 to m) xij = Σ (j = 1 to m) Σ (i = 1 to n) xij"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s053-d2",
+      "latex": "\\text{ii.}\\ \\sum_{i=1}^{n}\\sum_{j=1}^{m}c\\,x_{ij}=c\\sum_{i=1}^{n}\\sum_{j=1}^{m}x_{ij}",
+      "accessible": "ii. Σ Σ c xij = c Σ Σ xij",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "ii. Σ Σ c xij = c Σ Σ xij"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "ii. Σ Σ c xij = c Σ Σ xij"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "ii. Σ Σ c xij = c Σ Σ xij"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s053-d3",
+      "latex": "\\text{iii.}\\ \\sum_{i=1}^{n}\\sum_{j=1}^{m}(x_{ij}+y_{ij})=\\sum_{i=1}^{n}\\sum_{j=1}^{m}x_{ij}+\\sum_{i=1}^{n}\\sum_{j=1}^{m}y_{ij}",
+      "accessible": "iii. Σ Σ (xij + yij) = Σ Σ xij + Σ Σ yij",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "iii. Σ Σ (xij + yij) = Σ Σ xij + Σ Σ yij"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "iii. Σ Σ (xij + yij) = Σ Σ xij + Σ Σ yij"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "iii. Σ Σ (xij + yij) = Σ Σ xij + Σ Σ yij"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s053-d4",
+      "latex": "\\text{iv.}\\ \\sum_{i=1}^{n}\\sum_{j=1}^{m}x_iy_j=\\sum_{i=1}^{n}x_i\\sum_{j=1}^{m}y_j",
+      "accessible": "iv. Σ (i = 1 to n) Σ (j = 1 to m) xi yj = Σ (i = 1 to n) xi Σ (j = 1 to m) yj",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "iv. Σ (i = 1 to n) Σ (j = 1 to m) xi yj = Σ (i = 1 to n) xi Σ (j = 1 to m) yj"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "iv. Σ (i = 1 to n) Σ (j = 1 to m) xi yj = Σ (i = 1 to n) xi Σ (j = 1 to m) yj"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "iv. Σ (i = 1 to n) Σ (j = 1 to m) xi yj = Σ (i = 1 to n) xi Σ (j = 1 to m) yj"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s053-p0",
+      "latex": "\\prod_{i=1}^{n}x_i\\ :\\ \\text{means product of the values of the variable X, i.e. }(x_1)(x_2)\\cdots(x_n).",
+      "accessible": "Π (i = 1 to n) xi : means product of the values of the variable X, i.e. (x1)(x2)···(xn).",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Π (i = 1 to n) xi : means product of the values of the variable X, i.e. (x1)(x2)···(xn)."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Π (i = 1 to n) xi : means product of the values of the variable X, i.e. (x1)(x2)···(xn)."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Π (i = 1 to n) xi : means product of the values of the variable X, i.e. (x1)(x2)···(xn)."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s053-s1",
+      "latex": "\\prod_{i=1}^{3}x_i=(x_1)(x_2)(x_3)=2\\times3\\times4=24",
+      "accessible": "Π (i = 1 to 3) xi = (x1)(x2)(x3) = 2×3×4 = 24",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi = (x1)(x2)(x3) = 2×3×4 = 24"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi = (x1)(x2)(x3) = 2×3×4 = 24"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi = (x1)(x2)(x3) = 2×3×4 = 24"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-25"
+    },
+    {
+      "id": "stat11-s053-s2",
+      "latex": "\\prod_{i=1}^{3}x_i^2=(x_1^2)(x_2^2)(x_3^2)=(2^2)(3^2)(4^2)=(4)(9)(16)=576",
+      "accessible": "Π (i = 1 to 3) xi² = (x1²)(x2²)(x3²) = (2²)(3²)(4²) = (4)(9)(16) = 576",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi² = (x1²)(x2²)(x3²) = (2²)(3²)(4²) = (4)(9)(16) = 576"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi² = (x1²)(x2²)(x3²) = (2²)(3²)(4²) = (4)(9)(16) = 576"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Π (i = 1 to 3) xi² = (x1²)(x2²)(x3²) = (2²)(3²)(4²) = (4)(9)(16) = 576"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-25"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 1.24: values x_ij (rows i, columns j) with totals",
+      "captionUrdu": "مثال 1.24: قدریں x_ij (قطاریں i، کالم j) مع میزان",
+      "captionPashto": "بېلګه 1.24: ارزښتونه x_ij (کتارونه i، ستونونه j) له مجموعو سره",
+      "headers": [
+        {
+          "en": "i \\ j",
+          "ur": "i \\ j",
+          "ps": "i \\ j"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "Total",
+          "ur": "کل",
+          "ps": "ټول"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "ΣΣ xij = 34",
+            "ur": "ΣΣ xij = 34",
+            "ps": "ΣΣ xij = 34"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-1-24",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 45. In rule iii the final \"y\" is partly hidden by the watermark and is read as y_ij; in rule iv the subscripts of x and y are very small and are read as x_i y_j (the right side Σ x_i Σ y_j). A cross mark and a stray mark in the margin are ignored. The foot of the scan shows a ghost of the page-number bar. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:25:51.071878+00:00",
+    "scope": "Scan 53 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

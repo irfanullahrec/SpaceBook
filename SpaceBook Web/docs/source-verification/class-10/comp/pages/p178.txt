@@ -1,0 +1,18 @@
+@printed 164
+@status lesson
+### شکل نمبر 7.38 HTML ڈاکومنٹ میں تصویر کے سائز کو بدلنا || Figure 7.38 Changing the size of a picture in an HTML document || ۷.۳۸ شکل په HTML سند کې د انځور اندازه بدلول
+m <html>
+m <head>
+m <title> Specifying Image Size</title>
+m </head>
+m <body>
+m <img src="image.jpg" width=200 height=150 alt="Image of Faisal Mosque">
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.39 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.39. || براوزر کړکۍ به یې لکه په ۷.۳۹ شکل کې وښيي.
+@deco Figure 7.39 ویب پیج پر تصویر شدہ سائز (Resized picture on a web page): a browser window titled "Specifying Image Size" showing a smaller (200 × 150) Faisal Mosque photograph. Not reproduced.
+p اگر براؤزر کچھ وجوہات کی بنا پر تصویر کو ظاہر نہیں کر سکتا ہے تو، ویب پیج پر ٹیکسٹ ڈسپلے کیا جائے گا جیسا کہ شکل نمبر 7.40 میں دکھایا گیا ہے۔ || If for some reason the browser cannot show the picture, text is displayed on the web page instead, as shown in Figure 7.40. || که براوزر په ځینو دلیلونو انځور ونه ښيي، په ویب پاڼه متن ښودل کېږي، لکه په ۷.۴۰ شکل کې.
+box info | شکل نمبر 7.40 ویب پیج اگر تصویر نہ دکھائے || Figure 7.40 When the web page cannot show the picture || ۷.۴۰ شکل کله چې ویب پاڼه انځور ونه ښيي
+m Image of Faisal Mosque
+endbox
+@issue Figure 7.40's caption is printed "تصویر 7.40" instead of "شکل نمبر 7.40" and is very faint.

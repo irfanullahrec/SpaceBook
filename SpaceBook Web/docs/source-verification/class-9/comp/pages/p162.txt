@@ -1,0 +1,104 @@
+@pdf 157
+@printed 154
+@status lesson
+- **Groups may be horizontal or vertical, but not diagonal.** || **گروپس افقی یا عمودی ہو سکتے ہیں، لیکن ترچھے نہیں۔** || **ډلې افقي یا عمودي کېدای شي، خو مایلې نه.**
+svg Figure 6.14: Map that group must not be diagonal || شکل 6.14: میپ جس میں گروپ ترچھا نہیں ہونا چاہیے || ۶.۱۴ شکل: نقشه چې ډله باید مایله نه وي
+<svg viewBox="0 0 480 170" width="480" role="img" aria-label="Two K-maps. Left, marked WRONG: cells 0, 1 on top and 1, 0 below, with a diagonal group joining the two 1s. Right, marked RIGHT: cells 0, 1 on top and 1, 1 below, with a vertical group round the A=1 column and a horizontal group round the bottom row" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<g id="km614">
+<path d="M20 6 L50 36" stroke="#111827"/><text x="40" y="14">A</text><text x="26" y="40">B</text>
+<text x="85" y="30">0</text><text x="155" y="30">1</text><text x="38" y="66">0</text><text x="38" y="116">1</text>
+<rect x="50" y="36" width="140" height="100" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M120 36 V136 M50 86 H190" stroke="#111827" stroke-width="2"/></g>
+<text x="85" y="68">0</text><text x="155" y="68">1</text><text x="85" y="118">1</text><text x="155" y="118">0</text>
+<path d="M150 50 L172 62 L95 128 L70 116 Z" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="216" y="100" font-size="30">✗</text><text x="120" y="160" font-family="Arial">WRONG ✗</text>
+<use href="#km614" x="250"/>
+<text x="335" y="68">0</text><text x="405" y="68">1</text><text x="335" y="118">1</text><text x="405" y="118">1</text>
+<rect x="388" y="44" width="34" height="86" rx="12" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="312" y="100" width="124" height="30" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="462" y="100" font-size="30">✓</text><text x="370" y="160" font-family="Arial">RIGHT ✓</text>
+</svg>
+endsvg
+- **Groups must contain 1, 2, 4, 8, or in general 2ⁿ cells.** || **گروپس میں 1، 2، 4، 8 یا عمومی طور پر 2ⁿ خانے ہونے چاہئیں۔** || **ډلې باید 1، 2، 4، 8 یا په عمومي ډول 2ⁿ خانې ولري.**
+p That is if n = 1, a group will contain two 1's since 2¹ = 2. || یعنی اگر n = 1 ہو تو گروپ میں دو 1 ہوں گے کیونکہ 2¹ = 2۔ || یعنې که n = 1 وي، ډله به دوه 1 ولري ځکه 2¹ = 2.
+p If n = 2, a group will contain four 1's since 2² = 4. || اگر n = 2 ہو تو گروپ میں چار 1 ہوں گے کیونکہ 2² = 4۔ || که n = 2 وي، ډله به څلور 1 ولري ځکه 2² = 4.
+svg Figure 6.15: Map showing that groups must contain 1, 2, 4, 8, or in general 2ⁿ Cells || شکل 6.15: میپ جو دکھاتا ہے کہ گروپس میں 1، 2، 4، 8 یا 2ⁿ خانے ہوں || ۶.۱۵ شکل: نقشه چې ښيي ډلې باید 1، 2، 4، 8 یا 2ⁿ خانې ولري
+<svg viewBox="0 0 720 330" width="720" role="img" aria-label="Four K-maps. Top left, RIGHT: 2-variable map with the top row 1, 1 grouped (Group of 2). Top right, WRONG: 3-variable map AB by C with three 1s in the top row (AB = 01, 11, 10) grouped (Group of 3). Bottom left, RIGHT: 2-variable map of all 1s grouped (Group of 4). Bottom right, WRONG: 3-variable map with top row 1 1 1 1 and bottom row 0 0 0 1 and a group of 5 cells" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M8 4 L40 40" stroke="#111827"/>
+<text x="30" y="14" font-weight="700">A</text><text x="12" y="44" font-weight="700">B</text>
+<text x="71.0" y="32">0</text>
+<text x="133.0" y="32">1</text>
+<text x="30" y="70.0">0</text>
+<text x="30" y="120.0">1</text>
+<rect x="40" y="40" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 40 V140 M40 90 H164" stroke="#111827" stroke-width="2"/>
+<text x="71.0" y="70.0">1</text>
+<text x="133.0" y="70.0">1</text>
+<text x="71.0" y="120.0">0</text>
+<text x="133.0" y="120.0">0</text>
+<rect x="46" y="46" width="112" height="38" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="186" y="100.0" font-size="26">✓</text>
+<text x="102.0" y="162" font-family="Arial">RIGHT ✓</text>
+<path d="M228 65.0 H168" stroke="#111827" marker-end="url(#arK)"/><text x="232" y="70.0" text-anchor="start" font-size="13" font-family="Arial">Group of 2</text>
+<path d="M308 4 L340 40" stroke="#111827"/>
+<text x="330" y="14" font-weight="700">AB</text><text x="312" y="44" font-weight="700">C</text>
+<text x="371.0" y="32">00</text>
+<text x="433.0" y="32">01</text>
+<text x="495.0" y="32">11</text>
+<text x="557.0" y="32">10</text>
+<text x="330" y="70.0">0</text>
+<text x="330" y="120.0">1</text>
+<rect x="340" y="40" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M402 40 V140 M464 40 V140 M526 40 V140 M340 90 H588" stroke="#111827" stroke-width="2"/>
+<text x="371.0" y="70.0">0</text>
+<text x="433.0" y="70.0">1</text>
+<text x="495.0" y="70.0">1</text>
+<text x="557.0" y="70.0">1</text>
+<text x="371.0" y="120.0">0</text>
+<text x="433.0" y="120.0">0</text>
+<text x="495.0" y="120.0">0</text>
+<text x="557.0" y="120.0">0</text>
+<rect x="408" y="46" width="174" height="38" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="610" y="100.0" font-size="26">✗</text>
+<text x="464.0" y="162" font-family="Arial">WRONG ✗</text>
+<path d="M652 65.0 H592" stroke="#111827" marker-end="url(#arK)"/><text x="656" y="70.0" text-anchor="start" font-size="13" font-family="Arial">Group of 3</text>
+<path d="M8 174 L40 210" stroke="#111827"/>
+<text x="30" y="184" font-weight="700">A</text><text x="12" y="214" font-weight="700">B</text>
+<text x="71.0" y="202">0</text>
+<text x="133.0" y="202">1</text>
+<text x="30" y="240.0">0</text>
+<text x="30" y="290.0">1</text>
+<rect x="40" y="210" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 210 V310 M40 260 H164" stroke="#111827" stroke-width="2"/>
+<text x="71.0" y="240.0">1</text>
+<text x="133.0" y="240.0">1</text>
+<text x="71.0" y="290.0">1</text>
+<text x="133.0" y="290.0">1</text>
+<rect x="46" y="216" width="112" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="186" y="270.0" font-size="26">✓</text>
+<text x="102.0" y="332" font-family="Arial">RIGHT ✓</text>
+<path d="M228 235.0 H168" stroke="#111827" marker-end="url(#arK)"/><text x="232" y="240.0" text-anchor="start" font-size="13" font-family="Arial">Group of 4</text>
+<path d="M308 174 L340 210" stroke="#111827"/>
+<text x="330" y="184" font-weight="700">AB</text><text x="312" y="214" font-weight="700">C</text>
+<text x="371.0" y="202">00</text>
+<text x="433.0" y="202">01</text>
+<text x="495.0" y="202">11</text>
+<text x="557.0" y="202">10</text>
+<text x="330" y="240.0">0</text>
+<text x="330" y="290.0">1</text>
+<rect x="340" y="210" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M402 210 V310 M464 210 V310 M526 210 V310 M340 260 H588" stroke="#111827" stroke-width="2"/>
+<text x="371.0" y="240.0">1</text>
+<text x="433.0" y="240.0">1</text>
+<text x="495.0" y="240.0">1</text>
+<text x="557.0" y="240.0">1</text>
+<text x="371.0" y="290.0">0</text>
+<text x="433.0" y="290.0">0</text>
+<text x="495.0" y="290.0">0</text>
+<text x="557.0" y="290.0">1</text>
+<path d="M346 216 H582 V304 H532 V254 H346 Z" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="610" y="270.0" font-size="26">✗</text>
+<text x="464.0" y="332" font-family="Arial">WRONG ✗</text>
+<path d="M652 235.0 H592" stroke="#111827" marker-end="url(#arK)"/><text x="656" y="240.0" text-anchor="start" font-size="13" font-family="Arial">Group of 5</text>
+</svg>
+endsvg

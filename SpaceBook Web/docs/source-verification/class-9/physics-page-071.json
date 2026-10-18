@@ -1,0 +1,112 @@
+{
+  "id": "cls9-physics-page-071",
+  "pdfPage": 71,
+  "printedPage": 66,
+  "status": "corrected-fresh-review",
+  "chapterNumber": 3,
+  "chapter": "Unit 3: Dynamics",
+  "title": "Example 3.1 / Assignment 3.1 / Newton’s third law",
+  "sourcePdf": "D:\\SpaceBook\\Books\\9th\\9th physics\\pdf\\9thphysics.pdf",
+  "numericals": [
+    {
+      "num": "Example 3.1",
+      "question": {
+        "text": "Example 3.1 — FORCES ON SPORTS BALLS. What force is required to produce an acceleration of 6.00 m/s² in a cricket ball of mass m_c = 0.16 kg and metal ball for women shot-put game with mass m_s = 4 kg?",
+        "urdu": "مثال 3.1 — کھیل کی گیندوں پر قوتیں۔ 0.16 kg کمیت کی کرکٹ گیند اور خواتین کے شاٹ پٹ کی 4 kg کمیت کی دھاتی گیند میں 6.00 m/s² تعجیل پیدا کرنے کے لیے کتنی قوت درکار ہے؟",
+        "pashto": "بېلګه 3.1 — پر ورزشي توپونو قوې. په 0.16 kg کتلې کرکټ توپ او د ښځو د شاټ‌پټ په 4 kg فلزي توپ کې د 6.00 m/s² تعجیل لپاره څومره قوه پکار ده؟"
+      },
+      "solution": {
+        "text": "GIVEN: m_c = 0.16 kg; m_s = 4.00 kg; a = 6.00 m/s². REQUIRED: F_c = ? and F_s = ? By Newton’s second law F_c = m_c a = 0.16 kg × 6.00 m/s² = 0.96 kg m/s²; since N = kg m/s², therefore F_c = 0.96 N. F_s = m_s a = 4.00 kg × 6.00 m/s² = 24 kg m/s² = 24 N. This example shows us that for same acceleration, a large force is required for large mass, and small force is required for small mass.",
+        "urdu": "دیا گیا: m_c=0.16 kg؛ m_s=4.00 kg؛ a=6.00 m/s²۔ مطلوب: F_c اور F_s۔ نیوٹن کے دوسرے قانون کے مطابق F_c=m_c a=0.16×6.00=0.96 kg m/s²=0.96 N۔ F_s=m_s a=4.00×6.00=24 kg m/s²=24 N۔ اس مثال سے ظاہر ہے کہ یکساں تعجیل کے لیے بڑی کمیت پر بڑی قوت اور چھوٹی کمیت پر چھوٹی قوت درکار ہے۔",
+        "pashto": "ورکړل شوي: m_c=0.16 kg؛ m_s=4.00 kg؛ a=6.00 m/s². غوښتل شوي: F_c او F_s. د نیوټن د دویم قانون له مخې F_c=m_c a=0.16×6.00=0.96 kg m/s²=0.96 N. F_s=m_s a=4.00×6.00=24 kg m/s²=24 N. دا بېلګه ښيي چې د یوه تعجیل لپاره لویې کتلې ته لویه او کوچنۍ کتلې ته کوچنۍ قوه پکار ده."
+      },
+      "sourcePdfPage": 71,
+      "sourcePrintedPage": 66
+    }
+  ],
+  "activities": [
+    {
+      "num": "Assignment 3.1",
+      "instructions": {
+        "text": "Assignment 3.1 — TRUCK AND CAR ACCELERATIONS. Find the acceleration produced by an engine force of 3500 N in a car of mass 600 kg and truck of mass 2400 kg.",
+        "urdu": "اسائنمنٹ 3.1 — ٹرک اور گاڑی کی تعجیلیں۔ 600 kg کمیت کی گاڑی اور 2400 kg کمیت کے ٹرک میں 3500 N انجن قوت سے پیدا ہونے والی تعجیل معلوم کریں۔",
+        "pashto": "دنده 3.1 — د لارۍ او موټر تعجیلونه. د 3500 N انجن قوې له امله په 600 kg موټر او 2400 kg لارۍ کې پیدا شوی تعجیل معلوم کړئ."
+      },
+      "sourcePdfPage": 71,
+      "sourcePrintedPage": 66
+    }
+  ],
+  "sections": [
+    {
+      "code": "source-u3-newton-second-third",
+      "heading": "Examples / Newton’s Third Law",
+      "headingUrdu": "مثال / نیوٹن کا تیسرا قانون",
+      "headingPashto": "بېلګه / د نیوټن درېیم قانون",
+      "paras": [
+        {
+          "text": "Example 3.1 — FORCES ON SPORTS BALLS. What force is required to produce an acceleration of 6.00 m/s² in a cricket ball of mass m_c = 0.16 kg and metal ball for women shot-put game with mass m_s = 4 kg?",
+          "urdu": "مثال 3.1 — کھیل کی گیندوں پر قوتیں۔ 0.16 kg کمیت کی کرکٹ گیند اور خواتین کے شاٹ پٹ کی 4 kg کمیت کی دھاتی گیند میں 6.00 m/s² تعجیل پیدا کرنے کے لیے کتنی قوت درکار ہے؟",
+          "pashto": "بېلګه 3.1 — پر ورزشي توپونو قوې. په 0.16 kg کتلې کرکټ توپ او د ښځو د شاټ‌پټ په 4 kg فلزي توپ کې د 6.00 m/s² تعجیل لپاره څومره قوه پکار ده؟"
+        },
+        {
+          "text": "GIVEN: m_c = 0.16 kg; m_s = 4.00 kg; a = 6.00 m/s². REQUIRED: F_c = ? and F_s = ? By Newton’s second law F_c = m_c a = 0.16 kg × 6.00 m/s² = 0.96 kg m/s²; since N = kg m/s², therefore F_c = 0.96 N. F_s = m_s a = 4.00 kg × 6.00 m/s² = 24 kg m/s² = 24 N. This example shows us that for same acceleration, a large force is required for large mass, and small force is required for small mass.",
+          "urdu": "دیا گیا: m_c=0.16 kg؛ m_s=4.00 kg؛ a=6.00 m/s²۔ مطلوب: F_c اور F_s۔ نیوٹن کے دوسرے قانون کے مطابق F_c=m_c a=0.16×6.00=0.96 kg m/s²=0.96 N۔ F_s=m_s a=4.00×6.00=24 kg m/s²=24 N۔ اس مثال سے ظاہر ہے کہ یکساں تعجیل کے لیے بڑی کمیت پر بڑی قوت اور چھوٹی کمیت پر چھوٹی قوت درکار ہے۔",
+          "pashto": "ورکړل شوي: m_c=0.16 kg؛ m_s=4.00 kg؛ a=6.00 m/s². غوښتل شوي: F_c او F_s. د نیوټن د دویم قانون له مخې F_c=m_c a=0.16×6.00=0.96 kg m/s²=0.96 N. F_s=m_s a=4.00×6.00=24 kg m/s²=24 N. دا بېلګه ښيي چې د یوه تعجیل لپاره لویې کتلې ته لویه او کوچنۍ کتلې ته کوچنۍ قوه پکار ده."
+        },
+        {
+          "text": "What will be accelerations if you apply the same net force F_N = 10 N on both cricket ball and metal ball in this example?",
+          "urdu": "اگر اس مثال میں کرکٹ اور دھاتی دونوں گیندوں پر یکساں خالص قوت F_N=10 N لگائیں تو تعجیلیں کیا ہوں گی؟",
+          "pashto": "په دې بېلګه کې پر کرکټ او فلزي توپ دواړو یو شان خالصه قوه F_N=10 N وارد کړئ، تعجیلونه به څومره وي؟"
+        },
+        {
+          "text": "Assignment 3.1 — TRUCK AND CAR ACCELERATIONS. Find the acceleration produced by an engine force of 3500 N in a car of mass 600 kg and truck of mass 2400 kg.",
+          "urdu": "اسائنمنٹ 3.1 — ٹرک اور گاڑی کی تعجیلیں۔ 600 kg کمیت کی گاڑی اور 2400 kg کمیت کے ٹرک میں 3500 N انجن قوت سے پیدا ہونے والی تعجیل معلوم کریں۔",
+          "pashto": "دنده 3.1 — د لارۍ او موټر تعجیلونه. د 3500 N انجن قوې له امله په 600 kg موټر او 2400 kg لارۍ کې پیدا شوی تعجیل معلوم کړئ."
+        },
+        {
+          "text": "3.2.3 NEWTON’S THIRD LAW OF MOTION — Statement: When one object exerts a force on a second object, the second object exerts a force of the same magnitude and opposite direction on the first object. When an object A exerts force on object B written as F_AB, object B also exerts equal force on object A written as F_BA but in opposite direction. F⃗_AB = −F⃗_BA (3.2). Here the negative sign shows that force F_BA is opposite to force F_AB.",
+          "urdu": "3.2.3 نیوٹن کا تیسرا قانونِ حرکت — بیان: جب ایک جسم دوسرے جسم پر قوت لگاتا ہے تو دوسرا جسم پہلے پر اتنی ہی مقدار کی مگر مخالف سمت میں قوت لگاتا ہے۔ جسم A کی B پر قوت F_AB لکھی جائے تو B بھی A پر برابر قوت F_BA لگاتا ہے مگر مخالف سمت میں۔ F⃗_AB = −F⃗_BA (3.2)۔ منفی علامت ظاہر کرتی ہے کہ F_BA، F_AB کے مخالف ہے۔",
+          "pashto": "3.2.3 د نیوټن د حرکت درېیم قانون — بیان: کله چې یو جسم پر بل جسم قوه واردوي، دویم جسم پر لومړي جسم د هماغې کچې خو مخالف لوري قوه واردوي. د A جسم پر B قوه F_AB ولیکو، B هم پر A برابره خو مخالفه قوه F_BA واردوي. F⃗_AB = −F⃗_BA (3.2). منفي نښه ښيي چې F_BA د F_AB مخالف لوری لري."
+        }
+      ],
+      "blocks": [],
+      "sourceLayout": [
+        {
+          "type": "paragraph",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            2
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            3
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": "Batch visual check matched example statement, given/required data and both worked forces; extension question, assignment, third-law prose and numbered vector equation transcribed. Original printed values preserved.",
+  "pageMetrics": {
+    "visualInspection": "primary scan inspected in 4-page batch at 1.5x",
+    "textLayer": "none"
+  }
+}

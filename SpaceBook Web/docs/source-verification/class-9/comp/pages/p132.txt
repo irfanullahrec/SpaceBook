@@ -1,0 +1,23 @@
+@printed 124
+@status lesson
+m }
+m while(condition);
+p where **do:** It is the keyword that indicates the beginning of the loop. **Condition:** The condition is given as a relational expression. The statements of the body are executed if the given condition is true. If the condition is false, then statements of the body are executed only once because the condition comes at the end. The while loop must be ended with a semicolon;. **Body of the loop:** It is a statement or group of statements in braces { } to be repeated. || جہاں **do:** وہ کی ورڈ ہے جو لوپ کا آغاز بتاتا ہے۔ **Condition:** شرط ریلیشنل اظہار کی صورت میں دی جاتی ہے۔ شرط درست ہو تو جسم کی اسٹیٹمنٹس چلتی ہیں۔ اگر شرط غلط ہو تو جسم کی اسٹیٹمنٹس صرف ایک بار چلتی ہیں کیونکہ شرط آخر میں آتی ہے۔ while کو سیمی کولن ; پر ختم ہونا چاہیے۔ **Body of the loop:** بریسز { } میں وہ اسٹیٹمنٹ یا اسٹیٹمنٹس جنہیں دہرانا ہے۔ || چې **do:** هغه keyword دی چې د لوپ پیل ښيي. **Condition:** شرط د اړیکه ییزې افادې په بڼه ورکول کېږي. که شرط سم وي د بدنې بیانونه اجرا کېږي. که ناسم وي یوازې یو ځل اجرا کېږي ځکه شرط په پای کې راځي. while باید په semicolon ; پای ته ورسېږي. **Body of the loop:** په { } کې هغه بیان یا بیانونه چې تکرارېږي.
+svg Figure: 5.3 Working of do-while Loop || شکل 5.3 do-while لوپ کا کام || ۵.۳ شکل د do-while لوپ کار
+<svg viewBox="0 0 360 300" width="360" role="img" aria-label="Flowchart: Start, then Do Task, then diamond Condition?; True goes left and back up into the line above Do Task; False goes down to End" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF53" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="150" y="6" width="100" height="36" rx="18" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="29">Start</text>
+<path d="M200 42 V82" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/>
+<rect x="150" y="86" width="100" height="36" rx="4" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="109">Do Task</text>
+<path d="M200 122 V146" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/>
+<polygon points="200,150 270,186 200,222 130,186" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="191">Condition?</text>
+<path d="M130 186 H60 V62 H196" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/><text x="92" y="178">True</text>
+<path d="M200 222 V250" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/><text x="230" y="242">False</text>
+<rect x="150" y="254" width="100" height="36" rx="18" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="277">End</text>
+</svg>
+endsvg
+### Program 5.9: A program to print first ten integers using do-while loop. || پروگرام 5.9: do-while لوپ سے پہلے دس صحیح اعداد پرنٹ کرنے کا پروگرام۔ || پروګرام ۵.۹: د do-while لوپ په مرسته لومړي لس بشپړ عددونه چاپول.
+@issue There is no Program 5.8 in the book; numbering jumps from 5.7 to 5.9.
+m # include <stdio.h>
+m void main()
+m {

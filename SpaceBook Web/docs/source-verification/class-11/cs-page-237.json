@@ -1,0 +1,271 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s237-p228",
+  "title": "Figure 7.13 Candidate keys; ii. Primary Key — start",
+  "headingUrdu": "شکل ۷.۱۳ کینڈیڈیٹ کیز؛ ii۔ پرائمری کی — آغاز",
+  "headingPashto": "انځور ۷.۱۳ نوماندې کیلي؛ ii. لومړنۍ کیلي — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 237,
+    "printedPage": "228"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s237-t0",
+      "en": "Candidate Keys: the printed arrows point to the StudentId column and to the combination of the firstName and lastName columns.",
+      "ur": "کینڈیڈیٹ کیز: چھپے ہوئے تیر اسٹوڈنٹ آئی ڈی کالم اور پہلے نام اور آخری نام کالموں کے امتزاج کی طرف اشارہ کرتے ہیں۔",
+      "ps": "نوماندې کیلي: چاپ شوي غشي د زده کوونکي پېژند ستون ته او د لومړي نوم او وروستي نوم ستونونو ګډون ته اشاره کوي.",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s237-a",
+      "en": "In the above example, student_id can be a candidate key which uniquely identifies the students in a student table. But at the same time, the combination of student’s first name and last name also form a candidate key. These both can be candidate keys for student table.",
+      "ur": "اوپر کی مثال میں اسٹوڈنٹ_آئی ڈی کینڈیڈیٹ کی ہو سکتی ہے جو اسٹوڈنٹ ٹیبل میں طلبہ کو منفرد طور پر شناخت کرتی ہے۔ لیکن ساتھ ہی طالب علم کے پہلے نام اور آخری نام کا امتزاج بھی کینڈیڈیٹ کی بناتا ہے۔ یہ دونوں اسٹوڈنٹ ٹیبل کے لیے کینڈیڈیٹ کیز ہو سکتی ہیں۔",
+      "ps": "په پورتنۍ بېلګه کې student_id کېدای شي یوه نوماند کیلي وي چې په زده کوونکي جدول کې زده کوونکي په ځانګړي ډول پېژني. خو په ورته وخت کې د زده کوونکي د لومړي نوم او وروستي نوم ګډون هم یو نوماند کیلي جوړوي. دا دواړه کېدای شي د زده کوونکي جدول لپاره نوماندې کیلي وي."
+    },
+    {
+      "id": "cs11-s237-b",
+      "en": "A candidate key must have the following properties:",
+      "ur": "کینڈیڈیٹ کی میں درج ذیل خصوصیات ہونی چاہئیں:",
+      "ps": "نوماند کیلي باید لاندې ځانګړتیاوې ولري:"
+    },
+    {
+      "id": "cs11-s237-p1",
+      "en": "It must contain unique values",
+      "ur": "اس میں منفرد قدریں ہونی چاہئیں",
+      "ps": "دا باید ځانګړي ارزښتونه ولري",
+      "listGroup": "cp"
+    },
+    {
+      "id": "cs11-s237-p2",
+      "en": "It must not contain null values",
+      "ur": "اس میں نل قدریں نہیں ہونی چاہئیں",
+      "ps": "دا باید نل ارزښتونه ونه لري",
+      "listGroup": "cp"
+    },
+    {
+      "id": "cs11-s237-p3",
+      "en": "It contains the minimum number of fields to ensure uniqueness",
+      "ur": "اس میں انفرادیت یقینی بنانے کے لیے کم سے کم فیلڈز ہوتی ہیں",
+      "ps": "دا د ځانګړتیا د ډاډمنتیا لپاره لږ تر لږه شمېر ساحې لري",
+      "listGroup": "cp"
+    },
+    {
+      "id": "cs11-s237-p4",
+      "en": "It must uniquely identify each record in the table",
+      "ur": "اسے ٹیبل کے ہر ریکارڈ کو منفرد طور پر شناخت کرنا چاہیے",
+      "ps": "دا باید د جدول هر ثبت په ځانګړي ډول وپېژني",
+      "listGroup": "cp"
+    },
+    {
+      "id": "cs11-s237-h1",
+      "en": "ii. Primary Key",
+      "ur": "ii۔ پرائمری کی",
+      "ps": "ii. لومړنۍ کیلي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s237-c",
+      "en": "A primary key is a field, or a combination of fields used to identify particular rows in a relation. Primary key, as its name shows is the primary reference for the table and is used throughout the database to refer this table. Primary key must contain unique value and never be null.",
+      "ur": "پرائمری کی ایک فیلڈ یا فیلڈز کا امتزاج ہے جو ریلیشن میں مخصوص قطاروں کی شناخت کے لیے استعمال ہوتی ہے۔ پرائمری کی، جیسا کہ اس کے نام سے ظاہر ہے، ٹیبل کا بنیادی حوالہ ہے اور اس ٹیبل کا حوالہ دینے کے لیے پورے ڈیٹا بیس میں استعمال ہوتی ہے۔ پرائمری کی میں منفرد قدر ہونی چاہیے اور کبھی نل نہیں ہونی چاہیے۔",
+      "ps": "لومړنۍ کیلي یوه ساحه یا د ساحو ګډون دی چې په یوه اړیکه کې ځانګړي قطارونه پېژندلو لپاره کارول کېږي. لومړنۍ کیلي، لکه څنګه چې نوم یې ښيي، د جدول لومړنی مرجع ده او په ټول ډېټابېس کې د دې جدول د حوالې لپاره کارول کېږي. لومړنۍ کیلي باید ځانګړی ارزښت ولري او هېڅکله نل نه وي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s237-t0"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s237-a",
+        "cs11-s237-b",
+        "cs11-s237-p1",
+        "cs11-s237-p2",
+        "cs11-s237-p3",
+        "cs11-s237-p4",
+        "cs11-s237-h1",
+        "cs11-s237-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Figure 7.13 Candidate keys",
+      "captionUrdu": "شکل ۷.۱۳ کینڈیڈیٹ کیز",
+      "captionPashto": "انځور ۷.۱۳ نوماندې کیلي",
+      "headers": [
+        {
+          "en": "StudentId",
+          "ur": "اسٹوڈنٹ آئی ڈی",
+          "ps": "د زده کوونکي پېژند"
+        },
+        {
+          "en": "firstName",
+          "ur": "پہلا نام",
+          "ps": "لومړی نوم"
+        },
+        {
+          "en": "lastName",
+          "ur": "آخری نام",
+          "ps": "وروستی نوم"
+        },
+        {
+          "en": "courseId",
+          "ur": "کورس آئی ڈی",
+          "ps": "د کورس پېژند"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "L0002345",
+            "ur": "L0002345",
+            "ps": "L0002345"
+          },
+          {
+            "en": "Jim",
+            "ur": "جم",
+            "ps": "جم"
+          },
+          {
+            "en": "Black",
+            "ur": "بلیک",
+            "ps": "بلیک"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001254",
+            "ur": "L0001254",
+            "ps": "L0001254"
+          },
+          {
+            "en": "James",
+            "ur": "جیمز",
+            "ps": "جېمز"
+          },
+          {
+            "en": "Harradine",
+            "ur": "ہیراڈائن",
+            "ps": "هېراډاین"
+          },
+          {
+            "en": "A004",
+            "ur": "A004",
+            "ps": "A004"
+          }
+        ],
+        [
+          {
+            "en": "L0002349",
+            "ur": "L0002349",
+            "ps": "L0002349"
+          },
+          {
+            "en": "Amanda",
+            "ur": "اماندا",
+            "ps": "اماندا"
+          },
+          {
+            "en": "Holland",
+            "ur": "ہالینڈ",
+            "ps": "هالنډ"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001198",
+            "ur": "L0001198",
+            "ps": "L0001198"
+          },
+          {
+            "en": "Simon",
+            "ur": "سائمن",
+            "ps": "سایمن"
+          },
+          {
+            "en": "McCloud",
+            "ur": "میک کلاؤڈ",
+            "ps": "مک کلاوډ"
+          },
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          }
+        ],
+        [
+          {
+            "en": "L0023487",
+            "ur": "L0023487",
+            "ps": "L0023487"
+          },
+          {
+            "en": "Peter",
+            "ur": "پیٹر",
+            "ps": "پېټر"
+          },
+          {
+            "en": "Murray",
+            "ur": "مرے",
+            "ps": "موري"
+          },
+          {
+            "en": "P301",
+            "ur": "P301",
+            "ps": "P301"
+          }
+        ],
+        [
+          {
+            "en": "L0018453",
+            "ur": "L0018453",
+            "ps": "L0018453"
+          },
+          {
+            "en": "Anne",
+            "ur": "این",
+            "ps": "این"
+          },
+          {
+            "en": "Norris",
+            "ur": "نورس",
+            "ps": "نورس"
+          },
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 228: Figure 7.13 Candidate keys (a table of student ids, first names, last names and course ids with arrows labelled “Candidate Keys”; given here as a data table with the printed values — the values are read from a blurred image — and a caption paragraph for the arrows), the explanation of candidate keys with four properties and “ii. Primary Key” with its definition. The printed table values are blurred and may differ in single characters. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:49:59.631811+00:00",
+    "scope": "Scan 237 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

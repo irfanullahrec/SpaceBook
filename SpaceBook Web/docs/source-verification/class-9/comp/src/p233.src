@@ -1,0 +1,23 @@
+@printed 225
+@status lesson
+p b. Web surfing c. Installing website d. Web hosting || (ب) ویب سرفنگ (ج) ویب سائٹ انسٹال کرنا (د) ویب ہوسٹنگ || (ب) وېب سرفینګ (ج) د وېب سایټ نصبول (د) وېب هوسټینګ
+sol i: d; ii: b; iii: a; iv: c; v: d ## Book answer key (page 227). || کتاب کی جوابی کلید (صفحہ 227)۔ || د کتاب د ځوابونو کیلي (۲۲۷ مخ).
+q 2 | What is website? Describe different types of websites with examples. || ویب سائٹ کیا ہے؟ ویب سائٹس کی مختلف اقسام مثالوں کے ساتھ بیان کریں۔ || وېب سایټ څه دی؟ د وېب سایټونو بېلابېل ډولونه په بېلګو بیان کړئ.
+q 3 | Write the HTML tags for the following? || درج ذیل کے لیے HTML ٹیگز لکھیں؟ || د لاندې لپاره HTML tags ولیکئ؟
+qp i | Paragraph || پیراگراف || پاراګراف
+qp ii | Heading || ہیڈنگ || سرلیک
+qp iii | Bold || بولڈ || Bold
+qp iv | Underline || انڈر لائن || Underline
+qp v | Italic || اٹالک || Italic
+qp vi | Center text || متن درمیان میں || منځ ته متن
+qp vii | Superscript || سپر اسکرپٹ || Superscript
+qp viii | Subscript || سب اسکرپٹ || Subscript
+qp ix | Font size, color and typeface || فونٹ کا سائز، رنگ اور ٹائپ فیس || د font اندازه، رنګ او بڼه
+sol i <p></p>; ii <h1></h1> … <h6></h6>; iii <b></b>; iv <u></u>; v <i></i>; vi <center></center> (or align=center); vii <sup></sup>; viii <sub></sub>; ix <font size=? color=? face=?></font> ## From sections 7.3.1–7.3.2 and 7.7 (align attribute). || حصے 7.3.1–7.3.2 اور 7.7 (align خصوصیت) سے۔ || د 7.3.1–7.3.2 او 7.7 (align attribute) برخو څخه.
+q 4 | Create a web page in HTML that displays image of a printer. The width of image should be 250 pixels and height 150 pixels. || HTML میں ایسا ویب پیج بنائیں جو پرنٹر کی تصویر دکھائے۔ تصویر کی چوڑائی 250 اور اونچائی 150 پکسل ہو۔ || په HTML کې داسې پاڼه جوړه کړئ چې د printer انځور وښيي. پلنوالی ۲۵۰ او لوړوالی ۱۵۰ پکسل وي.
+q 5 | Describe how background color and image are applied to web page. || بیان کریں کہ ویب پیج پر پس منظر کا رنگ اور تصویر کیسے لگائی جاتی ہے۔ || بیان کړئ چې وېب پاڼې ته د شالید رنګ او انځور څنګه ورکول کېږي.
+q 6 | Create an HTML document that contains a graphical hyperlink. || ایسی HTML دستاویز بنائیں جس میں گرافیکل ہائپر لنک ہو۔ || داسې HTML سند جوړ کړئ چې ګرافیکي hyperlink ولري.
+q 7 | Create a web page in HTML that contains unordered and ordered lists. || HTML میں ایسا ویب پیج بنائیں جس میں غیر ترتیب وار اور ترتیب وار فہرستیں ہوں۔ || په HTML کې داسې پاڼه جوړه کړئ چې بې ترتیبه او ترتیب لرونکي لستونه ولري.
+q 8 | Create an HTML document that contains hyperlinks to three websites. || ایسی HTML دستاویز بنائیں جس میں تین ویب سائٹس کے ہائپر لنکس ہوں۔ || داسې HTML سند جوړ کړئ چې درې وېب سایټونو ته hyperlinks ولري.
+q 9 | Create an HTML document to display your class time table. || اپنی جماعت کا ٹائم ٹیبل دکھانے کی HTML دستاویز بنائیں۔ || د خپل ټولګي د مهال وېش د ښودلو HTML سند جوړ کړئ.
+sol Q4 model: <html><body><img src="printer.jpg" width=250 height=150 alt="Printer"></body></html> ## Q5: <body bgcolor=… text=…> and <body background="image.jpg"> (7.5.3–7.5.4). Q6: <a href="URL"><img src="image.jpg"></a> (7.6.5). Q7: <ul><li>…</li></ul> and <ol><li>…</li></ol> (7.4.2). Q8: three <a href="…">…</a> lines (7.6.3). Q9: a <table border=1> with one <tr> per period/day and <td> cells (7.7). || سوال 5: <body bgcolor=… text=…> اور <body background="image.jpg">۔ سوال 6: <a href="URL"><img src="image.jpg"></a>۔ سوال 7: <ul> اور <ol> میں <li>۔ سوال 8: تین <a href> سطریں۔ سوال 9: <table border=1> جس میں ہر پیریڈ/دن کے لیے <tr> اور <td>۔ || ۵ پوښتنه: <body bgcolor=… text=…> او <body background="image.jpg">. ۶ پوښتنه: <a href="URL"><img src="image.jpg"></a>. ۷ پوښتنه: په <ul> او <ol> کې <li>. ۸ پوښتنه: درې <a href> کرښې. ۹ پوښتنه: <table border=1> چې د هر پیریډ/ورځې لپاره <tr> او <td> لري.

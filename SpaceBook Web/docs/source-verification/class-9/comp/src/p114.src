@@ -1,0 +1,24 @@
+@printed 106
+@status lesson
+### 4.1.6 Using Nested Selection Structures || 4.1.6 نیسٹڈ سلیکشن اسٹرکچرز کا استعمال || ۴.۱.۶ د ځالي انتخابي جوړښتونو کارونه
+p Nested selection structures are used when more than one decision must be made before carrying out a task. Nesting is a programming activity, in which one program block is placed inside other program block of the same operation type. Nesting processes are mostly implemented in the selection control structures. || نیسٹڈ سلیکشن اسٹرکچرز اس وقت استعمال ہوتے ہیں جب کوئی کام کرنے سے پہلے ایک سے زیادہ فیصلے کرنے ہوں۔ نیسٹنگ ایک پروگرامنگ سرگرمی ہے جس میں ایک پروگرام بلاک اسی قسم کے عمل کے دوسرے پروگرام بلاک کے اندر رکھا جاتا ہے۔ نیسٹنگ کے عمل زیادہ تر سلیکشن کنٹرول اسٹرکچرز میں لاگو ہوتے ہیں۔ || ځالي انتخابي جوړښتونه هغه وخت کارېږي چې د یوې دندې له ترسره کولو مخکې له یوې ډېرې پرېکړې وشي. nesting داسې پروګرامي فعالیت دی چې یو بلاک د هماغه ډول عملیې د بل بلاک دننه ږدي. nesting ډېری په انتخابي کنټرول جوړښتونو کې پلي کېږي.
+p In nested selection structures, one selection structure can be enclosed inside another selection structure. For example, an *if* can be nested inside another *if* structure. The syntax for such nesting technique is: || نیسٹڈ سلیکشن اسٹرکچرز میں ایک سلیکشن اسٹرکچر دوسرے کے اندر بند ہو سکتا ہے۔ مثلاً ایک *if* دوسرے *if* کے اندر رکھا جا سکتا ہے۔ اس نیسٹنگ کا سنٹیکس یہ ہے: || په ځالي انتخابي جوړښتونو کې یو انتخابي جوړښت د بل دننه کېدای شي. د بېلګې په توګه یو *if* د بل *if* دننه ایښودل کېدای شي. syntax یې دا دی:
+p **Syntax** || **سنٹیکس** || **Syntax**
+m if (Condition1)
+m {
+m     if(Condition2)
+m     {
+m         Statement1;
+m     }
+m     else
+m     {
+m         Statement2;
+m     }
+m }
+m else
+m {
+m     if(Condition3)
+m     {
+m         Statement3;
+m     }
+m     else

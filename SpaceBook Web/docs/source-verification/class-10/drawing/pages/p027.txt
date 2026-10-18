@@ -1,0 +1,23 @@
+@printed 22
+@status lesson
+### Line Designs || لکیری ڈیزائن || د کرښو ډیزاینونه
+p Line is the basic element of all designs. Consider the following line designs. || لکیر تمام ڈیزائنوں کا بنیادی عنصر ہے۔ درج ذیل لکیری ڈیزائنوں پر غور کریں۔ || کرښه د ټولو ډیزاینونو بنسټیز عنصر دی. لاندې د کرښو ډیزاینونو ته پام وکړئ.
+svg Line designs: gesture line, variety, parallel lines and open line designs || لکیری ڈیزائن: اشاراتی لکیر، تنوع، متوازی لکیریں اور کھلے لکیری ڈیزائن || د کرښو ډیزاینونه: اشاري کرښه، تنوع، موازي کرښې او خلاص کرښه ییز ډیزاینونه
+<svg viewBox="0 0 440 400" width="440" role="img" aria-label="Four line-design panels. Gesture line: many overlapping loose loops. Variety: thick, thin and dotted curving lines in one design. Parallel lines: a woven grid of parallel lines above bands of parallel L-shaped lines and rows of scallops. Open line designs: white spirals, zigzags, combs and swirls drawn on a black panel." font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+<rect x="20" y="10" width="190" height="140" fill="#fff" stroke="#111827" stroke-width="2"/>
+<g fill="none" stroke="#111827" stroke-width="1.5"><circle cx="60" cy="60" r="28"/><circle cx="85" cy="75" r="30"/><circle cx="110" cy="55" r="26"/><circle cx="140" cy="70" r="32"/><circle cx="165" cy="55" r="25"/><circle cx="75" cy="110" r="24"/><circle cx="120" cy="105" r="28"/><circle cx="160" cy="110" r="22"/><circle cx="100" cy="80" r="18"/><circle cx="150" cy="90" r="16"/></g>
+<text x="115" y="166">Gesture line</text>
+<rect x="20" y="180" width="190" height="140" fill="#fff" stroke="#111827" stroke-width="2"/>
+<g fill="none" stroke="#111827"><path d="M40 300 Q40 220 90 230 Q130 240 110 280 Q90 300 75 275" stroke-width="9"/><path d="M130 300 Q120 240 160 235 Q195 240 180 280" stroke-width="7"/><path d="M45 200 Q110 180 190 205" stroke-width="2" stroke-dasharray="3 5"/><path d="M190 230 Q205 270 185 310" stroke-width="3" stroke-dasharray="2 4"/><path d="M60 310 Q120 290 200 310" stroke-width="2"/></g>
+<text x="115" y="336">Variety</text>
+<rect x="235" y="10" width="190" height="310" fill="#fff" stroke="#111827" stroke-width="2"/>
+<g stroke="#111827" stroke-width="3"><path d="M285 25 V110 M297 25 V110 M309 25 V110 M321 25 V110 M333 25 V110 M345 25 V110 M357 25 V110"/><path d="M275 40 H370 M275 55 H370 M275 70 H370 M275 85 H370 M275 100 H370"/></g>
+<g fill="none" stroke="#111827" stroke-width="3"><path d="M245 20 V140 H410 V310"/><path d="M255 20 V128 H398 V310"/><path d="M265 20 V118 H388 V310"/></g>
+<g fill="none" stroke="#111827" stroke-width="2.5"><path d="M260 150 q10 18 20 0 q10 18 20 0 q10 18 20 0 q10 18 20 0"/><path d="M260 175 q10 18 20 0 q10 18 20 0 q10 18 20 0 q10 18 20 0"/><path d="M260 200 q10 18 20 0 q10 18 20 0 q10 18 20 0 q10 18 20 0"/><path d="M260 225 q10 18 20 0 q10 18 20 0 q10 18 20 0 q10 18 20 0"/><path d="M260 250 q10 18 20 0 q10 18 20 0 q10 18 20 0 q10 18 20 0"/></g>
+<text x="330" y="336">Parallel lines</text>
+<rect x="20" y="348" width="405" height="44" fill="#111827"/>
+<g fill="none" stroke="#fff" stroke-width="2.5"><path d="M45 370 m-10 0 a10 10 0 1 1 10 10 a6 6 0 1 1 -6 -6"/><path d="M75 360 l8 20 l8 -20 l8 20 l8 -20"/><path d="M130 358 v26 M138 358 v26 M146 358 v26 M126 371 h24"/><path d="M180 370 a8 8 0 1 0 16 0 a12 12 0 1 0 -24 0 a16 16 0 1 0 32 0"/><path d="M235 360 q15 10 0 20 q-15 10 0 0 M250 360 l20 20 M250 380 l20 -20"/><path d="M290 358 h28 M290 366 h20 M290 374 h28 M290 382 h20"/><path d="M345 370 m-10 0 a10 10 0 1 1 10 10"/><path d="M370 360 q10 20 20 0 q10 20 20 0"/></g>
+<text x="222" y="345">Open line designs</text>
+</svg>
+endsvg
+@issue The book's panels are redrawn as simple line designs with the same four labels; the open-line motifs are representative, not copies.

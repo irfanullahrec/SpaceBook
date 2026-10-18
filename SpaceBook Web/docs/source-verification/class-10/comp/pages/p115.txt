@@ -1,0 +1,33 @@
+@printed 103
+@status lesson
+p مذکورہ بالا پروگرام میں لوپ کے اندر break اسٹیٹمنٹ استعمال کی گئی ہے۔ کاؤنٹر ویری ایبل x بتاتا ہے کہ لوپ کو پانچ بار چلنا چاہیے۔ لیکن یہ صرف دو بار ہی چلے گی۔ پہلی بار میں، سکرین پر 3 پرنٹ ہو گا۔ دوسری بار میں printf() اسٹیٹمنٹ سوال پرنٹ کرے گی اور یوزر نے 0 اِن پُٹ کیا ہے تو اس سے کنٹرول break اسٹیٹمنٹ پر چلا جائے گا۔ break اسٹیٹمنٹ چلنے سے کنٹرول لوپ سے باہر آنے والی پہلی اسٹیٹمنٹ پر منتقل ہو جائے گا۔ اس لیے پیغام (Message) صرف ایک بار ہی پرنٹ ہو گا۔ || In the program above a break statement is used inside the loop. The counter variable x says the loop should run five times, but it runs only twice. The first time, 3 is printed on the screen. The second time, the printf() statement prints the prompt, the user enters 0, and control goes to the break statement. When break runs, control passes to the first statement after the loop. So the message is printed only once. || په پورتني پروګرام کې د لوپ دننه break بیان کارول شوی. شمېرونکی متغیر x ښيي چې لوپ باید پنځه ځله وچلېږي، خو یوازې دوه ځله چلېږي. په لومړي ځل 3 په سکرین چاپېږي. په دویم ځل printf() پوښتنه چاپوي، کاروونکی 0 داخلوي او کنټرول break ته ځي. د break په چلېدو کنټرول له لوپ وروسته لومړي بیان ته ځي. نو پیغام (Message) یوازې یو ځل چاپېږي.
+@sec 5-1-6 | 5.1.6 continue اسٹیٹمنٹ || 5.1.6 The continue statement || ۵.۱.۶ continue بیان
+### 5.1.6 continue اسٹیٹمنٹ || 5.1.6 The continue statement || ۵.۱.۶ continue بیان
+p continue اسٹیٹمنٹ کنٹرول کو لوپ کے آغاز پر واپس منتقل کر دیتی ہے۔ یہ لوپ کی باڈی کے اندر استعمال ہوتی ہے۔ جب بھی، ایک لوپ کے اندر continue اسٹیٹمنٹ کا سامنا کرنا پڑتا ہے تو، کنٹرول اگلے تکرار کے لئے لوپ کے آغاز پر براہِ راست منتقل ہو جاتا ہے، موجودہ iteration کے لیے لوپ کی باڈی کے اندر اسٹیٹمنٹ کی تعمیل کو چھوڑ دیتا ہے۔ continue اسٹیٹمنٹ کو شکل نمبر 5.5 میں دکھایا گیا ہے۔ || The continue statement sends control back to the start of the loop. It is used inside the body of a loop. Whenever a continue statement is met inside a loop, control passes directly to the start of the loop for the next iteration, skipping the rest of the statements in the loop body for the current iteration. The continue statement is shown in Figure 5.5. || continue بیان کنټرول بیرته د لوپ پیل ته لېږدوي. دا د لوپ په بدنه کې کارېږي. هر کله چې د لوپ دننه continue ته ورسېږي، کنټرول د راتلونکي تکرار لپاره مستقیم د لوپ پیل ته ځي او د اوسني iteration لپاره د بدنې پاتې بیانونه پرېږدي. continue بیان په ۵.۵ شکل کې ښودل شوی.
+p سائنٹکس: || Syntax: || ترکیب:
+m continue;
+p continue اسٹیٹمنٹ break اسٹیٹمنٹ کے بالکل مخالف ہے۔ اسے بائی پاس اسٹیٹمنٹ بھی کہا جاتا ہے۔ || The continue statement is the exact opposite of the break statement. It is also called the bypass statement. || continue بیان د break بیان بشپړ مخالف دی. دې ته د تېرېدو (bypass) بیان هم وايي.
+### پروگرام 5.11 ایک پروگرام لکھیں اور اس میں while لوپ کے اندر continue اسٹیٹمنٹ کے استعمال کو سمجھیں۔ || Program 5.11 Write a program and understand the use of the continue statement inside a while loop || پروګرام ۵.۱۱ یو پروګرام ولیکئ او د while لوپ دننه د continue بیان کارونه وپوهېږئ
+m # include <stdio.h>
+m void main()
+m {
+m     int c;
+m     c=1;
+m     while(c<=5)
+m     {
+m     printf("Pakistan\n");
+m     c++;
+m     continue;
+m     printf("Islamabad");
+m     printf("Peshawar");
+m     }
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+endbox
+p مذکورہ پروگرام میں، لوپ کی پہلی 3 اسٹیٹمنٹ 5 مرتبہ چلائی جائیں گی۔ جبکہ continue اسٹیٹمنٹ کے بعد کی دو اسٹیٹمنٹ نہیں چلیں گی۔ کیونکہ ہر دفعہ جب continue اسٹیٹمنٹ چلتی ہے تو یہ کنٹرول کو لوپ کی باڈی کے بالکل آغاز پر واپس بھیج دیتی ہے۔ || In the program above, the first 3 statements of the loop are run 5 times, while the two statements after continue never run, because each time the continue statement runs it sends control back to the very start of the loop body. || په پورتني پروګرام کې د لوپ لومړي 3 بیانونه 5 ځله چلېږي، خو له continue وروسته دوه بیانونه هېڅکله نه چلېږي، ځکه هر ځل چې continue چلېږي کنټرول بیرته د لوپ د بدنې پیل ته لېږي.
+@issue Calling continue "the exact opposite of break" is an oversimplification: break leaves the loop, while continue only skips to the next iteration. In a while loop, continue goes to the condition check, not literally to the first statement of the body.

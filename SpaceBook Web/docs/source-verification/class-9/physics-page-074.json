@@ -1,0 +1,128 @@
+{
+  "id": "cls9-physics-page-074",
+  "pdfPage": 74,
+  "printedPage": 69,
+  "status": "corrected-fresh-review",
+  "chapterNumber": 3,
+  "chapter": "Unit 3: Dynamics",
+  "title": "Example 3.2 solution / Assignment 3.2 / Newton’s-law checkpoint / linear momentum",
+  "sourcePdf": "D:\\SpaceBook\\Books\\9th\\9th physics\\pdf\\9thphysics.pdf",
+  "numericals": [
+    {
+      "num": "Example 3.2",
+      "solution": {
+        "text": "GIVEN: Mass m = 60 kg; g_E = 9.8 m/s²; g_M = 1.6 m/s². REQUIRED: weight on Earth w_E = ?; weight on Moon w_M = ? (a) Weight of girl on Earth: w_E=m g_E; putting values w_E=60 kg × 9.8 m/s² =588 kg m/s²; since N=kg m/s² therefore w_E=588 N. (b) Weight of girl on Moon: w_M=m g_M; putting values w_M=60 kg ×1.6 m/s²=96 kg m/s²; since N=kg m/s² therefore w_M=96 N.",
+        "urdu": "دیا گیا: m=60 kg؛ g_E=9.8 m/s²؛ g_M=1.6 m/s²۔ مطلوب: زمین پر w_E اور چاند پر w_M۔ (الف) زمین پر وزن: w_E=m g_E=60 kg×9.8 m/s²=588 kg m/s²=588 N۔ (ب) چاند پر وزن: w_M=m g_M=60 kg×1.6 m/s²=96 kg m/s²=96 N۔",
+        "pashto": "ورکړل شوي: m=60 kg؛ g_E=9.8 m/s²؛ g_M=1.6 m/s². غوښتل شوي: د ځمکې وزن w_E او د سپوږمۍ وزن w_M. (الف) د ځمکې وزن: w_E=m g_E=60 kg×9.8 m/s²=588 kg m/s²=588 N. (ب) د سپوږمۍ وزن: w_M=m g_M=60 kg×1.6 m/s²=96 kg m/s²=96 N."
+      },
+      "sourcePdfPage": 74,
+      "sourcePrintedPage": 69
+    },
+    {
+      "num": "Assignment 3.2",
+      "question": {
+        "text": "Assignment 3.2 — WEIGHT OF ASTRONAUT. The weight of an astronaut and his space suit on the Moon is only 250 N. How much do they weigh on Earth? What is the mass on the Moon? [take acceleration due to gravity for earth as g_E=9.8 m/s² and moon as g_M=1.6 m/s²]",
+        "urdu": "اسائنمنٹ 3.2 — خلا باز کا وزن۔ چاند پر خلا باز اور اس کے خلائی لباس کا وزن صرف 250 N ہے۔ زمین پر ان کا وزن کتنا ہوگا؟ چاند پر کمیت کیا ہے؟ [زمین کے لیے g_E=9.8 m/s² اور چاند کے لیے g_M=1.6 m/s² لیں۔]",
+        "pashto": "دنده 3.2 — د فضانورد وزن. پر سپوږمۍ د فضانورد او فضايي جامو وزن یوازې 250 N دی. پر ځمکه یې وزن څومره دی؟ پر سپوږمۍ یې کتله څومره ده؟ [د ځمکې لپاره g_E=9.8 m/s² او سپوږمۍ لپاره g_M=1.6 m/s² ونیسئ.]",
+        "calloutLabel": "ASSIGNMENT 3.2 — WEIGHT OF ASTRONAUT"
+      },
+      "sourcePdfPage": 74,
+      "sourcePrintedPage": 69
+    }
+  ],
+  "textbookExercise": {
+    "checkpoint": [
+      {
+        "text": "Q1: What is the acceleration produced by a force of 12 N exerted on an object of mass 3 kg? (Answer: 4 m/s²)",
+        "urdu": "سوال 1: 3 kg کمیت کے جسم پر 12 N قوت لگانے سے تعجیل کتنی ہوگی؟ (جواب: 4 m/s²)",
+        "pashto": "پوښتنه 1: پر 3 kg جسم د 12 N قوې له امله تعجیل څومره دی؟ (ځواب: 4 m/s²)",
+        "calloutLabel": "CHECKPOINT (NEWTON LAWS)"
+      },
+      {
+        "text": "Q2: Calculate the mass of a body when a force of 700 N produces an acceleration of 12.5 m/s². (Answer: 56 kg)",
+        "urdu": "سوال 2: جب 700 N قوت 12.5 m/s² تعجیل پیدا کرے تو جسم کی کمیت معلوم کریں۔ (جواب: 56 kg)",
+        "pashto": "پوښتنه 2: کله چې 700 N قوه 12.5 m/s² تعجیل پیدا کړي، د جسم کتله محاسبه کړئ. (ځواب: 56 kg)",
+        "calloutLabel": "CHECKPOINT (NEWTON LAWS)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "code": "source-u3-weight-solution-momentum",
+      "heading": "Example 3.2 solution / checkpoint / 3.4 Linear Momentum",
+      "headingUrdu": "مثال 3.2 کا حل / چیک پوائنٹ / 3.4 خطی مومنٹم",
+      "headingPashto": "د 3.2 بېلګې حل / کتنه / 3.4 خطي مومنټم",
+      "paras": [
+        {
+          "text": "GIVEN: Mass m = 60 kg; g_E = 9.8 m/s²; g_M = 1.6 m/s². REQUIRED: weight on Earth w_E = ?; weight on Moon w_M = ? (a) Weight of girl on Earth: w_E=m g_E; putting values w_E=60 kg × 9.8 m/s² =588 kg m/s²; since N=kg m/s² therefore w_E=588 N. (b) Weight of girl on Moon: w_M=m g_M; putting values w_M=60 kg ×1.6 m/s²=96 kg m/s²; since N=kg m/s² therefore w_M=96 N.",
+          "urdu": "دیا گیا: m=60 kg؛ g_E=9.8 m/s²؛ g_M=1.6 m/s²۔ مطلوب: زمین پر w_E اور چاند پر w_M۔ (الف) زمین پر وزن: w_E=m g_E=60 kg×9.8 m/s²=588 kg m/s²=588 N۔ (ب) چاند پر وزن: w_M=m g_M=60 kg×1.6 m/s²=96 kg m/s²=96 N۔",
+          "pashto": "ورکړل شوي: m=60 kg؛ g_E=9.8 m/s²؛ g_M=1.6 m/s². غوښتل شوي: د ځمکې وزن w_E او د سپوږمۍ وزن w_M. (الف) د ځمکې وزن: w_E=m g_E=60 kg×9.8 m/s²=588 kg m/s²=588 N. (ب) د سپوږمۍ وزن: w_M=m g_M=60 kg×1.6 m/s²=96 kg m/s²=96 N."
+        },
+        {
+          "text": "Assignment 3.2 — WEIGHT OF ASTRONAUT. The weight of an astronaut and his space suit on the Moon is only 250 N. How much do they weigh on Earth? What is the mass on the Moon? [take acceleration due to gravity for earth as g_E=9.8 m/s² and moon as g_M=1.6 m/s²]",
+          "urdu": "اسائنمنٹ 3.2 — خلا باز کا وزن۔ چاند پر خلا باز اور اس کے خلائی لباس کا وزن صرف 250 N ہے۔ زمین پر ان کا وزن کتنا ہوگا؟ چاند پر کمیت کیا ہے؟ [زمین کے لیے g_E=9.8 m/s² اور چاند کے لیے g_M=1.6 m/s² لیں۔]",
+          "pashto": "دنده 3.2 — د فضانورد وزن. پر سپوږمۍ د فضانورد او فضايي جامو وزن یوازې 250 N دی. پر ځمکه یې وزن څومره دی؟ پر سپوږمۍ یې کتله څومره ده؟ [د ځمکې لپاره g_E=9.8 m/s² او سپوږمۍ لپاره g_M=1.6 m/s² ونیسئ.]",
+          "calloutLabel": "ASSIGNMENT 3.2 — WEIGHT OF ASTRONAUT"
+        },
+        {
+          "text": "Q1: What is the acceleration produced by a force of 12 N exerted on an object of mass 3 kg? (Answer: 4 m/s²)",
+          "urdu": "سوال 1: 3 kg کمیت کے جسم پر 12 N قوت لگانے سے تعجیل کتنی ہوگی؟ (جواب: 4 m/s²)",
+          "pashto": "پوښتنه 1: پر 3 kg جسم د 12 N قوې له امله تعجیل څومره دی؟ (ځواب: 4 m/s²)",
+          "calloutLabel": "CHECKPOINT (NEWTON LAWS)"
+        },
+        {
+          "text": "Q2: Calculate the mass of a body when a force of 700 N produces an acceleration of 12.5 m/s². (Answer: 56 kg)",
+          "urdu": "سوال 2: جب 700 N قوت 12.5 m/s² تعجیل پیدا کرے تو جسم کی کمیت معلوم کریں۔ (جواب: 56 kg)",
+          "pashto": "پوښتنه 2: کله چې 700 N قوه 12.5 m/s² تعجیل پیدا کړي، د جسم کتله محاسبه کړئ. (ځواب: 56 kg)",
+          "calloutLabel": "CHECKPOINT (NEWTON LAWS)"
+        },
+        {
+          "text": "3.4 LINEAR MOMENTUM: The linear momentum “P” of an object is the product of the object’s mass “m” and velocity “v”. Mathematically P⃗ = m v⃗ (3.4). Linear momentum is a vector quantity that points in the same direction as the velocity. SI Unit of Linear Momentum is kilogram-meter per second (kg m/s or kg m s⁻¹), or simply newton-second (N s).",
+          "urdu": "3.4 خطی مومنٹم: کسی جسم کا خطی مومنٹم “P” اس کی کمیت “m” اور رفتار “v” کا حاصلِ ضرب ہے۔ ریاضی میں P⃗=m v⃗ (3.4)۔ خطی مومنٹم سمتی مقدار ہے جس کی سمت رفتار جیسی ہوتی ہے۔ اس کی SI اکائی کلوگرام-میٹر فی سیکنڈ (kg m/s یا kg m s⁻¹) یا نیوٹن-سیکنڈ (N s) ہے۔",
+          "pashto": "3.4 خطي مومنټم: د جسم خطي مومنټم “P” د کتلې “m” او سمتي چټکتیا “v” حاصل‌ضرب دی. په ریاضي کې P⃗=m v⃗ (3.4). خطي مومنټم سمتي کمیت دی چې لوری یې د چټکتیا په لوري وي. د SI واحد یې کیلوګرام-متر پر ثانیه (kg m/s یا kg m s⁻¹) یا نیوټن-ثانیه (N s) دی."
+        }
+      ],
+      "blocks": [],
+      "sourceLayout": [
+        {
+          "type": "paragraph",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "type": "callout",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "type": "callout",
+          "indices": [
+            2
+          ]
+        },
+        {
+          "type": "callout",
+          "indices": [
+            3
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": "Batch image verified solution values 588 N and 96 N, astronaut assignment, both printed checkpoint questions and answers, momentum definition, vector equation and SI units. Source uses g_M=1.6 m/s² in Example 3.2, despite 1.67 m/s² on prior page; both preserved as printed and noted for source review.",
+  "sourceDefects": [
+    "Page 73 gives lunar g=1.67 m/s² in the prose, while the Example 3.2 prompt and solution on pages 73–74 use 1.6 m/s². Preserved both printed values."
+  ],
+  "pageMetrics": {
+    "visualInspection": "primary scan inspected in 4-page batch at 1.5x",
+    "textLayer": "none"
+  }
+}

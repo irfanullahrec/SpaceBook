@@ -1,0 +1,432 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s015-example11-rounding",
+  "title": "Example 1.1 · 1.3.1 Error of measurement · 1.3.2 Rounding off numbers",
+  "headingUrdu": "مثال 1.1 · 1.3.1 پیمائش کی غلطی · 1.3.2 اعداد کو قریبی عدد بنانا",
+  "headingPashto": "بېلګه 1.1 · 1.3.1 د اندازې تېروتنه · 1.3.2 د شمېرو ګردول",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 15,
+    "printedPage": "8"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s015-ex",
+      "en": "Example: 1.1",
+      "ur": "مثال: 1.1",
+      "ps": "بېلګه: 1.1",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-1"
+    },
+    {
+      "id": "stat11-s015-q",
+      "en": "What statistical procedure is suitable for nominal, ordinal, interval and ratio type data?",
+      "ur": "اسمی، ترتیبی، وقفہ جاتی اور تناسبی قسم کے اعداد و شمار کے لیے کون سا شماریاتی طریقہ موزوں ہے؟",
+      "ps": "نومي، ترتیبي، انټروال او تناسبي ډول معلوماتو لپاره کوم احصایوي طریقه مناسبه ده؟",
+      "role": "question",
+      "exampleId": "stat11-ex-1-1"
+    },
+    {
+      "id": "stat11-s015-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-1"
+    },
+    {
+      "id": "stat11-s015-s1",
+      "en": "To decide upon a statistical procedure, which is best to apply on a particular type of data it is important to differentiate between categorical data (nominal data), ranked data (ordinal measurements) and numerical data (interval and ratio measurements), shown in the following table.",
+      "ur": "کسی خاص قسم کے اعداد و شمار پر لاگو کرنے کے لیے بہترین شماریاتی طریقہ طے کرنے کے لیے زمرہ وار اعداد و شمار (اسمی اعداد و شمار)، درجہ بند اعداد و شمار (ترتیبی پیمائشیں) اور عددی اعداد و شمار (وقفہ جاتی اور تناسبی پیمائشیں) کے درمیان فرق کرنا ضروری ہے، جو درج ذیل جدول میں دکھایا گیا ہے۔",
+      "ps": "د یو ځانګړي ډول معلوماتو لپاره د پلي کولو غوره احصایوي طریقې د ټاکلو لپاره د کټګوریز معلوماتو (نومي معلومات)، رتبه‌ایز معلوماتو (ترتیبي اندازې) او شمېرنیزو معلوماتو (انټروال او تناسبي اندازې) ترمنځ توپیر کول مهم دي، چې په لاندې جدول کې ښودل شوي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-1-1"
+    },
+    {
+      "id": "stat11-s015-h131",
+      "en": "1.3.1 Error of measurement",
+      "ur": "1.3.1 پیمائش کی غلطی",
+      "ps": "1.3.1 د اندازې تېروتنه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s015-t131",
+      "en": "Exact measurements, even if sensitive instruments are used, are not possible. There will be a difference, however small it may be, between the observed value and the true value. This difference is called error of measurement i.e. Error = observed value – true value",
+      "ur": "حساس آلات استعمال کرنے کے باوجود بھی عین پیمائشیں ممکن نہیں ہیں۔ مشاہدہ شدہ قدر اور حقیقی قدر کے درمیان کچھ نہ کچھ فرق، خواہ کتنا ہی چھوٹا ہو، ہوگا۔ اس فرق کو پیمائش کی غلطی کہتے ہیں یعنی غلطی = مشاہدہ شدہ قدر – حقیقی قدر۔",
+      "ps": "دقیقې اندازې، حتی که حساسې وسیلې وکارول شي، ممکنې نه دي. د کتل شوي ارزښت او اصلي ارزښت ترمنځ به یو توپیر وي، که څه هم کوچنی وي. دې توپیر ته د اندازې تېروتنه ویل کېږي یعنې تېروتنه = کتل شوی ارزښت – اصلي ارزښت."
+    },
+    {
+      "id": "stat11-s015-h132",
+      "en": "1.3.2 Rounding off numbers",
+      "ur": "1.3.2 اعداد کو قریبی عدد بنانا",
+      "ps": "1.3.2 د شمېرو ګردول",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s015-t132",
+      "en": "Rounding off numbers to the nearest whole number or to the nearest decimal place is often carried out in the statistical computations, depending upon the number of decimal places required. For this purpose, the following rules may be employed.",
+      "ur": "مطلوبہ اعشاری مقامات کی تعداد کے مطابق شماریاتی حسابات میں اکثر اعداد کو قریب ترین مکمل عدد یا قریب ترین اعشاری مقام تک گول کیا جاتا ہے۔ اس مقصد کے لیے درج ذیل قواعد استعمال کیے جا سکتے ہیں۔",
+      "ps": "د اړینو اعشاري ځایونو د شمېر پر اساس په احصایوي محاسبو کې ډېر ځله شمېرې نږدې بشپړ عدد یا نږدې اعشاري ځای ته ګردېږي. د دې موخې لپاره لاندې قواعد کارول کېدای شي."
+    },
+    {
+      "id": "stat11-s015-ri",
+      "en": "Rule-i",
+      "ur": "قاعدہ-i",
+      "ps": "قاعده-i",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s015-tri",
+      "en": "If the last digit is less than 5, it is dropped. For example, 0.754 = 0.75 and 0.673 = 0.67",
+      "ur": "اگر آخری ہندسہ 5 سے کم ہو تو اسے چھوڑ دیا جاتا ہے۔ مثال کے طور پر 0.754 = 0.75 اور 0.673 = 0.67",
+      "ps": "که وروستی رقم له 5 څخه کمه وي نو لرې کېږي. د مثال په توګه 0.754 = 0.75 او 0.673 = 0.67"
+    },
+    {
+      "id": "stat11-s015-rii",
+      "en": "Rule-ii",
+      "ur": "قاعدہ-ii",
+      "ps": "قاعده-ii",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s015-trii",
+      "en": "If the last digit is more than 5, the preceding digit is raised to the next",
+      "ur": "اگر آخری ہندسہ 5 سے زیادہ ہو تو اس سے پہلے والا ہندسہ اگلے",
+      "ps": "که وروستی رقم له 5 څخه زیاته وي نو مخکینۍ رقم بلې",
+      "sourceGap": {
+        "note": "The sentence (\"…is raised to the next higher digit\") continues on the next page; this page ends at \"next\"."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s015-ex",
+        "stat11-s015-q",
+        "stat11-s015-sol",
+        "stat11-s015-s1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s015-h131",
+        "stat11-s015-t131",
+        "stat11-s015-h132",
+        "stat11-s015-t132",
+        "stat11-s015-ri",
+        "stat11-s015-tri",
+        "stat11-s015-rii",
+        "stat11-s015-trii"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "example": {
+      "ur": "مثال",
+      "ps": "بېلګه"
+    },
+    "rounding": {
+      "ur": "قریبی عدد بنانا",
+      "ps": "ګردول"
+    },
+    "error": {
+      "ur": "غلطی",
+      "ps": "تېروتنه"
+    }
+  },
+  "tables": [
+    {
+      "caption": "Type of data (N: nominal, O: ordinal, I: interval, R: ratio)",
+      "captionUrdu": "اعداد و شمار کی قسم (N: اسمی، O: ترتیبی، I: وقفہ جاتی، R: تناسبی)",
+      "captionPashto": "د معلوماتو ډول (N: نومي، O: ترتیبي، I: انټروال، R: تناسبي)",
+      "headers": [
+        {
+          "en": "Type of the descriptive Statistic",
+          "ur": "بیانیہ شماریات کی قسم",
+          "ps": "د تشریحي احصایې ډول"
+        },
+        {
+          "en": "N",
+          "ur": "N",
+          "ps": "N"
+        },
+        {
+          "en": "O",
+          "ur": "O",
+          "ps": "O"
+        },
+        {
+          "en": "I",
+          "ur": "I",
+          "ps": "I"
+        },
+        {
+          "en": "R",
+          "ur": "R",
+          "ps": "R"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "The order of values",
+            "ur": "د قدروں کی ترتیب",
+            "ps": "د ارزښتونو ترتیب"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Frequency distribution",
+            "ur": "تعدد تقسیم",
+            "ps": "د فریکونسي ویش"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Mean",
+            "ur": "اوسط",
+            "ps": "اوسط"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Median",
+            "ur": "وسطانیہ",
+            "ps": "میانه"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Mode",
+            "ur": "عادہ",
+            "ps": "مود"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Can quantify the difference between each value",
+            "ur": "ہر قدر کے درمیان فرق کی مقدار بتا سکتا ہے",
+            "ps": "د هر ارزښت ترمنځ توپیر اندازه کولای شي"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Can add or subtract values",
+            "ur": "قدروں کو جمع یا تفریق کر سکتا ہے",
+            "ps": "ارزښتونه جمع یا تفریق کولای شي"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Can multiply and divide values",
+            "ur": "قدروں کو ضرب یا تقسیم کر سکتا ہے",
+            "ps": "ارزښتونه ضرب یا تقسیم کولای شي"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ],
+        [
+          {
+            "en": "Has true zero",
+            "ur": "حقیقی صفر رکھتا ہے",
+            "ps": "اصلي صفر لري"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "✓",
+            "ur": "✓",
+            "ps": "✓"
+          }
+        ]
+      ],
+      "role": "solution",
+      "exampleId": "stat11-ex-1-1"
+    }
+  ],
+  "equations": [],
+  "sourceNote": "Printed page 8. Scan 16 is a second, differently cropped scan of the same printed page 8 and is recorded as a duplicate (not installed). The heading of Section 1.3 is on the absent printed page 6, so this page starts at Example 1.1 and then 1.3.1. In the table the check marks are printed as ✓ under N, O, I, R (blank = no mark). A handwritten bracket near \"0.754\" and a small stroke beside 0.673 are ignored. Watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:11:10.226149+00:00",
+    "scope": "Scan 15 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

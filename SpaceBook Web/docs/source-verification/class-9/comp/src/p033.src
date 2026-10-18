@@ -1,0 +1,33 @@
+@printed 25
+@status lesson
+p **Flowchart 8:** To find the exponent (E) of a given number (N). || **فلوچارٹ 8:** دیے گئے عدد (N) کی قوت (E) معلوم کرنا۔ || **فلوچارټ ۸:** د ورکړل شوي عدد (N) توان (E) موندل.
+svg Flowchart 8 || فلوچارٹ 8 || ۸ فلوچارټ
+<svg viewBox="0 0 420 400" width="420" role="img" aria-label="Flowchart 8: START; INPUT N, E; P=1, K=1; P=P*N; decision Is K ≤ E? YES to K=K+1 and back to P=P*N; NO to OUTPUT P; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.4">
+<defs><marker id="arF8" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" fill="none" marker-end="url(#arF8)"><path d="M150 40 V56"/><path d="M150 86 V104"/><path d="M150 134 V150"/><path d="M150 186 V206"/><path d="M150 262 V290"/><path d="M150 320 V344"/><path d="M230 234 H360 V200"/><path d="M360 168 V160 H242"/></g>
+<rect x="100" y="10" width="100" height="30" rx="15" fill="#e5e7eb" stroke="#111827"/><text x="150" y="30">START</text>
+<polygon points="60,86 80,56 240,56 220,86" fill="#3b82f6" stroke="#111827"/><text x="150" y="76" fill="#fff">INPUT N, E</text>
+<rect x="90" y="104" width="120" height="30" fill="#f9a8d4" stroke="#111827"/><text x="150" y="124">P=1, K=1</text>
+<rect x="90" y="150" width="150" height="36" fill="#f9a8d4" stroke="#111827"/><text x="160" y="173">P=P*N</text>
+<polygon points="150,206 230,234 150,262 70,234" fill="#fde68a" stroke="#111827"/><text x="150" y="239">Is K ≤ E?</text>
+<rect x="315" y="168" width="90" height="32" fill="#fff" stroke="#111827"/><text x="360" y="189">K=K+1</text>
+<polygon points="60,320 80,290 240,290 220,320" fill="#3b82f6" stroke="#111827"/><text x="150" y="310" fill="#fff">OUTPUT P</text>
+<rect x="100" y="344" width="100" height="30" rx="15" fill="#e5e7eb" stroke="#111827"/><text x="150" y="364">STOP</text>
+<g font-size="12"><text x="262" y="226">YES</text><text x="168" y="282">NO</text></g>
+</svg>
+endsvg
+@issue As drawn, P=P*N runs once more after K reaches E (K≤E is still true when K=E), so the flowchart outputs N^(E+1); the test should be K<E. Kept as printed.
+p **Flowchart 9:** To print odd numbers from 1 to 100. || **فلوچارٹ 9:** 1 سے 100 تک طاق اعداد پرنٹ کرنا۔ || **فلوچارټ ۹:** له ۱ تر ۱۰۰ پورې طاق عددونه چاپول.
+svg Flowchart 9 || فلوچارٹ 9 || ۹ فلوچارټ
+<svg viewBox="0 0 380 330" width="380" role="img" aria-label="Flowchart 9: START; K=1; OUTPUT K; K = K + 2; decision Is K < 100? YES back to OUTPUT K; NO to STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.4">
+<defs><marker id="arF9" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" fill="none" marker-end="url(#arF9)"><path d="M150 40 V58"/><path d="M150 88 V106"/><path d="M150 136 V156"/><path d="M150 186 V206"/><path d="M150 262 V284"/><path d="M230 234 H330 V121 H232"/></g>
+<rect x="100" y="10" width="100" height="30" rx="15" fill="#e5e7eb" stroke="#111827"/><text x="150" y="30">START</text>
+<rect x="90" y="58" width="120" height="30" fill="#f9a8d4" stroke="#111827"/><text x="150" y="78">K=1</text>
+<polygon points="60,136 80,106 240,106 220,136" fill="#3b82f6" stroke="#111827"/><text x="150" y="126" fill="#fff">OUTPUT K</text>
+<rect x="90" y="156" width="120" height="30" fill="#f9a8d4" stroke="#111827"/><text x="150" y="176">K = K + 2</text>
+<polygon points="150,206 230,234 150,262 70,234" fill="#fde68a" stroke="#111827"/><text x="150" y="239">Is K &lt;100 ?</text>
+<rect x="100" y="284" width="100" height="30" rx="15" fill="#e5e7eb" stroke="#111827"/><text x="150" y="304">STOP</text>
+<g font-size="12"><text x="262" y="226">YES</text><text x="168" y="278">NO</text></g>
+</svg>
+endsvg

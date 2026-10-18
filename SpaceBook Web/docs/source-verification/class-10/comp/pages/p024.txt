@@ -1,0 +1,25 @@
+@printed 14
+@status lesson
+p کسی مسئلے کو حل کرنے کے لیے فلوچارٹ بہت اہم ہوتے ہیں کیونکہ: || Flowcharts are very important for solving a problem because: || د ستونزې د حل لپاره فلوچارټونه ډېر مهم دي، ځکه:
+- یہ دیکھنے والے کو پروسیس سمجھنے میں مدد دیتے ہیں۔ || they help the viewer understand the process. || لیدونکي سره د بهیر په پوهېدو کې مرسته کوي.
+- مطلوبہ اِن پُٹ اور آؤٹ پُٹ کو ظاہر کر رہے ہوتے ہیں۔ || they show the required input and output. || غوښتل شوي input او output ښيي.
+- پروسیس کے مختلف مراحل کے درمیان تعلق کو ظاہر کر رہے ہوتے ہیں۔ || they show the relationship between the various steps of the process. || د بهیر د بېلابېلو پړاوونو ترمنځ اړیکه ښيي.
+- فیصلہ سازی میں مدد فراہم کرتے ہیں۔ || they help in decision-making. || په پرېکړه کولو کې مرسته کوي.
+- پروسیس کے بہاؤ کو ظاہر کر رہے ہوتے ہیں۔ || they show the flow of the process. || د بهیر جریان ښيي.
+- اہم اقدامات کو اُجاگر کرتے ہیں اور غیر اہم مراحل کو ختم کر دیتے ہیں۔ || they highlight important steps and eliminate unimportant ones. || مهم ګامونه روښانه کوي او بې اهمیته پړاوونه له منځه وړي.
+### 1.3.3 فلوچارٹ کی ضروریات (Flowchart Requirements) || 1.3.3 Flowchart requirements || ۱.۳.۳ د فلوچارټ اړتیاوې
+p فلوچارٹ بنانے والے کو دیئے گئے مسئلے یا الگورتھم میں موجود درج ذیل ضروریات کو ہر حال میں معلوم کر لینا چاہیے۔ || The person making a flowchart must find out the following requirements present in the given problem or algorithm in every case. || د فلوچارټ جوړوونکی باید په ورکړل شوې ستونزه یا الګوریتم کې لاندې اړتیاوې په هر حال کې معلومې کړي.
+- تمام درکار اِن پُٹ || all required inputs || ټول اړین inputs
+- پروسیسنگ کی تکمیل || completion of processing || د پروسس بشپړول
+- کیے جانے والے فیصلے || decisions to be taken || کېدونکې پرېکړې
+- مہیا کردہ آؤٹ پُٹ || outputs to be provided || ورکړل کېدونکي outputs
+### تمام درکار اِن پُٹ (Inputs needed) || All inputs needed || ټول اړین inputs
+p اِن پُٹ ہر وہ چیز ہے جو پروسیسنگ کے دوران درکار ہوتی ہے۔ فلوچارٹ بنانے والے (Developer) کو پتہ ہونا چاہیے کہ کیا اِن پُٹ ہے؟ مسئلے کی تعریف (Problem Statement) سے اِن پُٹ معلوم کی جا سکتی ہے۔ مثال کے طور پر اگر کسی دائرے کا رقبہ معلوم کرنا مقصود ہو تو اس مسئلے کے لیے درکار اِن پُٹ دائرے کا رداس (R) ہے۔ || Input is everything needed during processing. The flowchart developer should know what the input is; it can be found from the problem statement. For example, if the area of a circle is to be found, the input needed for this problem is the radius (R) of the circle. || Input هر هغه څه دي چې د پروسس پر مهال اړین وي. د فلوچارټ جوړوونکی (Developer) باید پوه وي چې input څه دی؟ input د ستونزې له تعریف (Problem Statement) څخه معلومېدای شي. د بېلګې په توګه که د یوې دایرې مساحت معلومول وي، د دې ستونزې اړین input د دایرې شعاع (R) ده.
+### پروسیسنگ کی تکمیل (Processing to be completed) || Processing to be completed || د پروسس بشپړول
+p جیسا کہ فلوچارٹ کسی نہ کسی کلیے یا کلیات کے مجموعے کا حل پیش کرتے ہیں یا کسی متغیر (Variable) کے لیے ابتدائی قیمت متعین (Initialize) کرتے ہیں۔ اس لیے فلوچارٹ بنانے والے کو پتہ ہونا چاہیے کہ اسے مطلوبہ نتائج حاصل کرنے کے لیے کونسا کلیہ Formula یا حسابی عمل درکار ہے۔ مثال کے طور پر کسی بھی دائرے کا رقبہ معلوم کرنے کے لیے درج ذیل کلیہ استعمال ہو گا۔ || Since flowcharts present the solution of some formula or set of formulas, or initialise a variable, the flowchart maker should know which formula or calculation is needed to obtain the desired results. For example, the following formula will be used to find the area of any circle. || څرنګه چې فلوچارټونه د یوه فورمول یا د فورمولونو د ټولګې حل وړاندې کوي یا یوه متغیر (Variable) ته لومړنی ارزښت (Initialize) ورکوي، نو د فلوچارټ جوړوونکی باید پوه وي چې د غوښتل شویو پایلو لپاره کوم فورمول (Formula) یا حسابي عمل اړین دی. د بېلګې په توګه د هرې دایرې د مساحت لپاره به لاندې فورمول کارول کېږي.
+m Area = Pi * R * R
+m Pi = 3.1415   (جبکہ / where)
+### فیصلہ سازی کرنا (Decision to be taken) || Decision to be taken || پرېکړه کول
+p فلوچارٹ میں فیصلہ سازی تب کی جاتی ہے جب کوئی کلیہ یا اظہارِ خیال صحیح (True) یا غلط (False) ہو۔ مثال کے طور پر جب کسی طالبِ علم کا نتیجہ معلوم کرنا ہو کہ وہ فیل ہے یا پاس تو اس کے لیے طالبِ علم کے حاصل کردہ فیصد (PM) پر فیصلہ کیا جائے گا۔ جیسا کہ || A decision is made in a flowchart when a formula or expression is true or false. For example, when a student's result — fail or pass — is to be found, the decision will be made on the percentage of marks (PM) obtained by the student, as follows: || په فلوچارټ کې پرېکړه هغه وخت کېږي چې کوم فورمول یا بیان سم (True) یا ناسم (False) وي. د بېلګې په توګه کله چې د یوه زده کوونکي پایله — ناکام یا بریالی — معلومول وي، د زده کوونکي د ترلاسه شوې سلنې (PM) پر بنسټ پرېکړه کېږي، لکه:
+m If PM>=40 Then Result="PASS" otherwise Result ="FAIL"
+@issue Pi is printed as "3.1415" (the usual value is 3.14159…); kept as printed.

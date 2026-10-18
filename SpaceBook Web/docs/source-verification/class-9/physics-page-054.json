@@ -1,0 +1,187 @@
+{
+  "id": "cls9-physics-page-054",
+  "pdfPage": 54,
+  "printedPage": 49,
+  "status": "corrected-fresh-review",
+  "chapterNumber": 2,
+  "chapter": "Unit 2: Kinematics",
+  "title": "Equations of motion introduction / Figure2.14 / slope and first equation beginning",
+  "sourcePdf": "D:\\SpaceBook\\Books\\9th\\9th physics\\pdf\\9thphysics.pdf",
+  "sections": [
+    {
+      "code": "2.5",
+      "heading": "2.5 EQUATIONS OF MOTION",
+      "headingUrdu": "2.5 حرکت کی مساوات",
+      "headingPashto": "2.5 د حرکت معادلې",
+      "paras": [
+        {
+          "text": "Terms associated with motion can be related and calculated from equations called equations of motion. These equations can be utilized for any motion that can be described as being either a constant velocity motion (an acceleration of 0 m/s²) or a constant acceleration motion (i.e. the instantaneous and average accelerations are equal). They can never be used over any time period during which the acceleration is changing. Graphical method will be used to prove the equations of motion for uniformly accelerated motion.",
+          "urdu": "حرکت سے متعلق اصطلاحات کو ان مساوات سے مربوط اور شمار کیا جا سکتا ہے جنہیں حرکت کی مساوات کہتے ہیں۔ یہ مستقل سمتی رفتار (تعجیل 0 m/s²) یا مستقل تعجیل کی حرکت کے لیے استعمال ہوتی ہیں، یعنی لحظاتی اور اوسط تعجیل برابر ہوں۔ جس وقفے میں تعجیل بدل رہی ہو، ان کا استعمال نہیں ہو سکتا۔ یکساں تعجیل والی حرکت کی مساوات ثابت کرنے کے لیے گرافی طریقہ استعمال ہوگا۔",
+          "pashto": "له حرکت سره تړلې اصطلاحات د هغو معادلو له لارې سره تړل او محاسبه کېدای شي چې د حرکت معادلې بلل کېږي. دا معادلې د ثابت سرعت حرکت (تعجیل 0 m/s²) یا ثابت تعجیل حرکت لپاره کارېدای شي، یعنې لحظه يي او منځنی تعجیل برابر وي. په هغه وخت واټن کې چې تعجیل بدلېږي، هېڅکله نه شي کارېدای. د یوشان تعجیل لرونکي حرکت د معادلو د ثابتولو لپاره به ګرافیکي طریقه وکارول شي."
+        },
+        {
+          "text": "We use the definitions of average velocity and acceleration to derive a set of valuable equations that relate x, a, v and t when a is constant, allowing us to determine any one of these variables if we know the others. We can then solve many interesting Problems.",
+          "urdu": "ہم اوسط سمتی رفتار اور تعجیل کی تعریفوں سے مفید مساوات اخذ کرتے ہیں جو مستقل a کی صورت میں x، a، v اور t کو مربوط کرتی ہیں۔ دوسرے متغیر معلوم ہوں تو ان میں سے کوئی ایک معلوم کر سکتے ہیں۔ یوں بہت سے دلچسپ مسائل حل کیے جا سکتے ہیں۔",
+          "pashto": "موږ د منځني سرعت او تعجیل له تعریفونو څخه ګټورې معادلې راباسو چې د ثابت a پر مهال x، a، v او t سره تړي. که نور متغیرونه معلوم وي، له دې څخه هر یو ټاکلی شو. بیا ډېر په زړه پورې مسئلې حل کولای شو."
+        },
+        {
+          "text": "In this discussion we chose the initial time to be zero tᵢ = 0, and final time t𝒇 = t such that Δt = t𝒇 - tᵢ = t - 0 = t. Also we chose initial position to be zero sᵢ = 0 and final position s𝒇 = s, such that displacement Δs = s𝒇 - sᵢ = s - 0 = s.",
+          "urdu": "اس بحث میں ہم نے ابتدائی وقت صفر tᵢ = 0 اور آخری وقت t𝒇 = t منتخب کیا، اس لیے Δt = t𝒇 - tᵢ = t - 0 = t۔ ابتدائی مقام بھی صفر sᵢ = 0 اور آخری مقام s𝒇 = s لیا، اس لیے نقل مکانی Δs = s𝒇 - sᵢ = s - 0 = s۔",
+          "pashto": "په دې بحث کې مو د پیل وخت صفر tᵢ = 0 او وروستی وخت t𝒇 = t وټاکه، نو Δt = t𝒇 - tᵢ = t - 0 = t. همدارنګه مو لومړنی موقعیت صفر sᵢ = 0 او وروستی موقعیت s𝒇 = s وټاکه، نو بېځایه کېدل Δs = s𝒇 - sᵢ = s - 0 = s."
+        },
+        {
+          "text": "Figure 2.14 Equations of Motion",
+          "urdu": "شکل 2.14 حرکت کی مساوات",
+          "pashto": "شکل 2.14 د حرکت معادلې"
+        },
+        {
+          "text": "The object has initial velocity vᵢ at point A, which changes uniformly to point B as v𝒇. In the plot OA = DC represents initial velocity vᵢ and DB represent final velocity v𝒇. Here time t is represented by OD = AC = t. The slope of the line AB is",
+          "urdu": "شے کی ابتدائی سمتی رفتار نقطہ A پر vᵢ ہے، جو یکساں طور پر بدل کر نقطہ B پر v𝒇 ہوتی ہے۔ گراف میں OA = DC ابتدائی سمتی رفتار vᵢ اور DB آخری سمتی رفتار v𝒇 ظاہر کرتے ہیں۔ یہاں وقت t کو OD = AC = t سے ظاہر کیا گیا ہے۔ لکیر AB کی ڈھال ہے۔",
+          "pashto": "د شي لومړنی سرعت په A ټکي کې vᵢ دی، چې په یوشان ډول بدلېږي او په B ټکي کې v𝒇 کېږي. په رسم کې OA = DC لومړنی سرعت vᵢ او DB وروستی سرعت v𝒇 ښيي. دلته وخت t په OD = AC = t ښودل شوی. د AB کرښې میلان دی"
+        },
+        {
+          "text": "The slope of velocity-time graph gives acceleration a, since AC = t, therefore",
+          "urdu": "سمتی رفتار وقت گراف کی ڈھال تعجیل a دیتی ہے۔ چونکہ AC = t، لہٰذا",
+          "pashto": "د سرعت او وخت ګراف میلان تعجیل a ورکوي؛ ځکه AC = t، نو"
+        },
+        {
+          "text": "A. First Equation of Motion:",
+          "urdu": "A. حرکت کی پہلی مساوات:",
+          "pashto": "A. د حرکت لومړۍ معادله:"
+        },
+        {
+          "text": "First equation of motion gives the relation of final velocity ‘v𝒇’ in terms of initial velocity ‘vᵢ’ and acceleration ‘a’ in time t. From the graph it is clear that",
+          "urdu": "حرکت کی پہلی مساوات وقت t میں آخری سمتی رفتار ‘v𝒇’ کا ابتدائی سمتی رفتار ‘vᵢ’ اور تعجیل ‘a’ سے تعلق دیتی ہے۔ گراف سے واضح ہے کہ",
+          "pashto": "د حرکت لومړۍ معادله په وخت t کې د وروستي سرعت ‘v𝒇’ اړیکه له لومړني سرعت ‘vᵢ’ او تعجیل ‘a’ سره بیانوي. له ګرافه څرګنده ده چې"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "graph",
+          "id": "physics9-motion-equations-figure214",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 340\" role=\"img\" aria-label=\"Figure2.14 velocity-time line A at initial velocity to B at final velocity: O/A/E on y axis, D/C/B at time t; OA=DC=vi, DB=vf, CB=at, OD=AC=t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><rect x=\"6\" y=\"7\" width=\"350\" height=\"323\" fill=\"#fff\"/><path d=\"M6 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M21 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M36 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M51 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M66 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M81 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M96 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M111 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M126 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M141 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M156 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M171 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M186 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M201 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M216 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M231 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M246 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M261 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M276 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M291 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M306 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M321 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M336 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M351 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 7H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 22H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 37H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 52H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 67H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 82H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 97H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 112H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 127H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 142H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 157H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 172H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 187H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 202H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 217H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 232H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 247H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 262H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 277H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 292H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 307H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 322H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M62 51V273M62 250H298\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M62 51l-6 12h12Z M298 250l-12 -6v12Z\" fill=\"#a13436\"/><path d=\"M62 183L205 103\" stroke=\"#2b799d\" stroke-width=\"5\"/><path d=\"M62 183H205\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M205 103V250\" stroke=\"#314c62\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M26 183V250M19 183h14M19 250h14M236 103V183M229 103h14M229 183h14M274 103V250M267 103h14M267 250h14M62 294H205M62 286v16M205 286v16\" stroke=\"#30344c\" stroke-width=\"2\"/><text x=\"68\" y=\"31\" text-anchor=\"middle\" font-size=\"20\">velocity</text><text x=\"70\" y=\"51\" text-anchor=\"middle\" font-size=\"20\">v (ms⁻¹)</text><text x=\"319\" y=\"244\" text-anchor=\"middle\" font-size=\"19\">time</text><text x=\"319\" y=\"267\" text-anchor=\"middle\" font-size=\"19\">t (s)</text><text x=\"48\" y=\"273\" text-anchor=\"middle\" font-size=\"18\">O</text><text x=\"49\" y=\"181\" text-anchor=\"middle\" font-size=\"18\">A</text><text x=\"211\" y=\"85\" text-anchor=\"middle\" font-size=\"18\">B</text><text x=\"217\" y=\"191\" text-anchor=\"middle\" font-size=\"18\">C</text><text x=\"206\" y=\"276\" text-anchor=\"middle\" font-size=\"18\">D</text><text x=\"45\" y=\"103\" text-anchor=\"middle\" font-size=\"18\">E</text><text x=\"117\" y=\"137\" text-anchor=\"middle\" font-size=\"19\">a</text><text x=\"133\" y=\"204\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"135\" y=\"319\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"45\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"224\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"295\" y=\"176\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan></text><text x=\"255\" y=\"149\" text-anchor=\"middle\" font-size=\"20\">at</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 340\" role=\"img\" aria-label=\"Figure2.14 velocity-time line A at initial velocity to B at final velocity: O/A/E on y axis, D/C/B at time t; OA=DC=vi, DB=vf, CB=at, OD=AC=t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><rect x=\"6\" y=\"7\" width=\"350\" height=\"323\" fill=\"#fff\"/><path d=\"M6 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M21 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M36 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M51 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M66 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M81 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M96 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M111 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M126 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M141 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M156 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M171 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M186 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M201 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M216 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M231 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M246 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M261 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M276 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M291 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M306 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M321 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M336 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M351 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 7H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 22H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 37H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 52H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 67H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 82H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 97H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 112H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 127H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 142H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 157H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 172H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 187H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 202H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 217H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 232H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 247H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 262H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 277H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 292H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 307H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 322H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M62 51V273M62 250H298\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M62 51l-6 12h12Z M298 250l-12 -6v12Z\" fill=\"#a13436\"/><path d=\"M62 183L205 103\" stroke=\"#2b799d\" stroke-width=\"5\"/><path d=\"M62 183H205\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M205 103V250\" stroke=\"#314c62\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M26 183V250M19 183h14M19 250h14M236 103V183M229 103h14M229 183h14M274 103V250M267 103h14M267 250h14M62 294H205M62 286v16M205 286v16\" stroke=\"#30344c\" stroke-width=\"2\"/><text x=\"68\" y=\"31\" text-anchor=\"middle\" font-size=\"20\">سمتی رفتار</text><text x=\"70\" y=\"51\" text-anchor=\"middle\" font-size=\"20\">v (ms⁻¹)</text><text x=\"319\" y=\"244\" text-anchor=\"middle\" font-size=\"19\">وقت</text><text x=\"319\" y=\"267\" text-anchor=\"middle\" font-size=\"19\">t (s)</text><text x=\"48\" y=\"273\" text-anchor=\"middle\" font-size=\"18\">O</text><text x=\"49\" y=\"181\" text-anchor=\"middle\" font-size=\"18\">A</text><text x=\"211\" y=\"85\" text-anchor=\"middle\" font-size=\"18\">B</text><text x=\"217\" y=\"191\" text-anchor=\"middle\" font-size=\"18\">C</text><text x=\"206\" y=\"276\" text-anchor=\"middle\" font-size=\"18\">D</text><text x=\"45\" y=\"103\" text-anchor=\"middle\" font-size=\"18\">E</text><text x=\"117\" y=\"137\" text-anchor=\"middle\" font-size=\"19\">a</text><text x=\"133\" y=\"204\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"135\" y=\"319\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"45\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"224\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"295\" y=\"176\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan></text><text x=\"255\" y=\"149\" text-anchor=\"middle\" font-size=\"20\">at</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 340\" role=\"img\" aria-label=\"Figure2.14 velocity-time line A at initial velocity to B at final velocity: O/A/E on y axis, D/C/B at time t; OA=DC=vi, DB=vf, CB=at, OD=AC=t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><rect x=\"6\" y=\"7\" width=\"350\" height=\"323\" fill=\"#fff\"/><path d=\"M6 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M21 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M36 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M51 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M66 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M81 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M96 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M111 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M126 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M141 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M156 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M171 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M186 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M201 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M216 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M231 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M246 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M261 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M276 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M291 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M306 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M321 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M336 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M351 7V330\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 7H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 22H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 37H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 52H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 67H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 82H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 97H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 112H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 127H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 142H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 157H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 172H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 187H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 202H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 217H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 232H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 247H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 262H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 277H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 292H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 307H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M6 322H356\" stroke=\"#bdadb8\" stroke-width=\".8\"/><path d=\"M62 51V273M62 250H298\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M62 51l-6 12h12Z M298 250l-12 -6v12Z\" fill=\"#a13436\"/><path d=\"M62 183L205 103\" stroke=\"#2b799d\" stroke-width=\"5\"/><path d=\"M62 183H205\" stroke=\"#a13436\" stroke-width=\"2\"/><path d=\"M205 103V250\" stroke=\"#314c62\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M26 183V250M19 183h14M19 250h14M236 103V183M229 103h14M229 183h14M274 103V250M267 103h14M267 250h14M62 294H205M62 286v16M205 286v16\" stroke=\"#30344c\" stroke-width=\"2\"/><text x=\"68\" y=\"31\" text-anchor=\"middle\" font-size=\"20\">سرعت</text><text x=\"70\" y=\"51\" text-anchor=\"middle\" font-size=\"20\">v (ms⁻¹)</text><text x=\"319\" y=\"244\" text-anchor=\"middle\" font-size=\"19\">وخت</text><text x=\"319\" y=\"267\" text-anchor=\"middle\" font-size=\"19\">t (s)</text><text x=\"48\" y=\"273\" text-anchor=\"middle\" font-size=\"18\">O</text><text x=\"49\" y=\"181\" text-anchor=\"middle\" font-size=\"18\">A</text><text x=\"211\" y=\"85\" text-anchor=\"middle\" font-size=\"18\">B</text><text x=\"217\" y=\"191\" text-anchor=\"middle\" font-size=\"18\">C</text><text x=\"206\" y=\"276\" text-anchor=\"middle\" font-size=\"18\">D</text><text x=\"45\" y=\"103\" text-anchor=\"middle\" font-size=\"18\">E</text><text x=\"117\" y=\"137\" text-anchor=\"middle\" font-size=\"19\">a</text><text x=\"133\" y=\"204\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"135\" y=\"319\" text-anchor=\"middle\" font-size=\"18\">t</text><text x=\"45\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"224\" y=\"224\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan></text><text x=\"295\" y=\"176\" text-anchor=\"middle\" font-size=\"20\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan></text><text x=\"255\" y=\"149\" text-anchor=\"middle\" font-size=\"20\">at</text></g></svg>",
+          "sourceWidthRatio": 0.5,
+          "graphData": {
+            "points": {
+              "O": [
+                "0",
+                "0"
+              ],
+              "A": [
+                "0",
+                "vi"
+              ],
+              "B": [
+                "t",
+                "vf"
+              ],
+              "C": [
+                "t",
+                "vi"
+              ],
+              "D": [
+                "t",
+                "0"
+              ],
+              "E": [
+                "0",
+                "vf"
+              ]
+            },
+            "relations": [
+              "OA=DC=vi",
+              "DB=vf",
+              "CB=at",
+              "OD=AC=t"
+            ],
+            "axes": [
+              "velocity v (ms⁻¹)",
+              "time t (s)"
+            ]
+          }
+        },
+        {
+          "type": "formula",
+          "id": "physics9-motion-equations-segment-slope",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">slope =</text><text x=\"154.5\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"154.5\" y=\"92\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">AC</tspan></text><path d=\"M127 54h55\" stroke=\"currentColor\" stroke-width=\"2\"/></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">ڈھال =</text><text x=\"154.5\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"154.5\" y=\"92\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">AC</tspan></text><path d=\"M127 54h55\" stroke=\"currentColor\" stroke-width=\"2\"/></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">میلان =</text><text x=\"154.5\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"154.5\" y=\"92\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">AC</tspan></text><path d=\"M127 54h55\" stroke=\"currentColor\" stroke-width=\"2\"/></g></svg>",
+          "sourceWidthRatio": 0.25
+        },
+        {
+          "type": "formula",
+          "id": "physics9-motion-equations-cb",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">a =</text><text x=\"105.0\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"105.0\" y=\"92\" text-anchor=\"middle\">t</text><path d=\"M80 54h50\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"65\">or</text><text x=\"225\" y=\"65\"><tspan text-decoration=\"overline\">CB</tspan> = at</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">a =</text><text x=\"105.0\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"105.0\" y=\"92\" text-anchor=\"middle\">t</text><path d=\"M80 54h50\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"65\">یا</text><text x=\"225\" y=\"65\"><tspan text-decoration=\"overline\">CB</tspan> = at</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">a =</text><text x=\"105.0\" y=\"34\" text-anchor=\"middle\"><tspan text-decoration=\"overline\">CB</tspan></text><text x=\"105.0\" y=\"92\" text-anchor=\"middle\">t</text><path d=\"M80 54h50\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"165\" y=\"65\">یا</text><text x=\"225\" y=\"65\"><tspan text-decoration=\"overline\">CB</tspan> = at</text></g></svg>",
+          "sourceWidthRatio": 0.44
+        }
+      ],
+      "sourceLayout": [
+        {
+          "type": "paragraph",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            2
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            3
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-motion-equations-figure214"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            4
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-motion-equations-segment-slope"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            5
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-motion-equations-cb"
+        },
+        {
+          "type": "heading",
+          "indices": [
+            6
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": "Fresh visible source inspection. Restored all original motion-equation assumptions, scope, variables, chosen time/position paragraph, graph construction explanation and first-equation introduction. Native Figure2.14 retains symbolic initial/final velocity geometry, labelledOABCDE, at/vi/vf brackets, t spans and grid without invented numeric values. Segment overbars and fractions CB/AC, CB/t, CB=at restored. All original paragraphs/captions/word labels translated and aligned."
+}

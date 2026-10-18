@@ -1,0 +1,30 @@
+@printed 157
+@status lesson
+@sec 7-4-2 | 7.4.2 فہرست بنانا || 7.4.2 Creating lists || ۷.۴.۲ لېستونه جوړول
+### 7.4.2 فہرست بنانا || 7.4.2 Creating lists || ۷.۴.۲ لېستونه جوړول
+### ان آرڈرڈ لسٹ || Unordered list || بې ترتیبه لېست
+p شکل نمبر 7.27 میں HTML ڈاکومنٹ ان آرڈرڈ لسٹ کی تشکیل کو واضح کرتی ہے۔ || The HTML document in Figure 7.27 shows how an unordered list is made. || په ۷.۲۷ شکل کې HTML سند د بې ترتیبه لېست جوړول ښيي.
+### شکل نمبر 7.27 ان آرڈرڈ لسٹ کی تیاری || Figure 7.27 Making an unordered list || ۷.۲۷ شکل د بې ترتیبه لېست جوړول
+m <html>
+m <head>
+m <title>Unordered List</title>
+m </head>
+m <body>
+m <h3>Types of Computers</h3>
+m <ul>
+m <li>Microcomputers</li>
+m <li>Minicomputers</li>
+m <li>Mainframes</li>
+m <li>Supercomputers</li>
+m </ul>
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.28 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.28. || براوزر کړکۍ به یې لکه په ۷.۲۸ شکل کې وښيي.
+box info | شکل نمبر 7.28 ویب پیج میں ان آرڈرڈ لسٹ کا استعمال || Figure 7.28 An unordered list on a web page || ۷.۲۸ شکل په ویب پاڼه کې بې ترتیبه لېست
+p **Types of Computers** || **Types of Computers** || **Types of Computers**
+- Microcomputers || Microcomputers || Microcomputers
+- Minicomputers || Minicomputers || Minicomputers
+- Mainframes || Mainframes || Mainframes
+- Supercomputers || Supercomputers || Supercomputers
+endbox
+@issue The caption of Figure 7.28 is too faint to read; it is supplied from context.

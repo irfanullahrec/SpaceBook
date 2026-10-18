@@ -1,0 +1,40 @@
+@printed 85
+@status lesson
+p … switch سٹرکچر کے خاتمے کے بعد میں آنے والی پہلی اسٹیٹمنٹ پر پہنچ جائے گا۔ درج ذیل فلوچارٹ switch اسٹیٹمنٹ کے فعل کو ظاہر کرتا ہے۔ || … reaches the first statement after the end of the switch structure. The following flowchart shows the working of the switch statement. || … د switch جوړښت له پای وروسته لومړي بیان ته رسېږي. لاندې فلوچارټ د switch بیان کار ښيي.
+svg شکل نمبر 4.3 switch-case سٹرکچر || Figure 4.3 The switch-case structure || ۴.۳ شکل د switch-case جوړښت
+<svg viewBox="0 0 480 400" width="480" role="img" aria-label="Flowchart: Start, Constant Expression, then diamonds Case 1, Case 2, Case 3 in a column; each True branch goes right to code block 1, 2, 3; each False branch goes down to the next case; after Case 3 False goes to Default Code; all code blocks lead to End" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">
+<defs><marker id="arFsw" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#334155"/></marker></defs>
+<rect x="60" y="6" width="120" height="32" rx="16" fill="#fff" stroke="#0e7490" stroke-width="2"/><text x="120" y="27" font-weight="700" font-size="14">Start</text>
+<rect x="50" y="56" width="140" height="28" fill="#fefce8" stroke="#334155"/><text x="120" y="74" font-weight="700">Constant Expression</text>
+<g fill="#fde047" stroke="#0e7490"><polygon points="120,104 190,134 120,164 50,134"/><polygon points="120,184 190,214 120,244 50,214"/><polygon points="120,264 190,294 120,324 50,294"/></g>
+<g font-weight="700" font-size="14"><text x="120" y="139">Case 1</text><text x="120" y="219">Case 2</text><text x="120" y="299">Case 3</text></g>
+<g fill="#fff" stroke="#94a3b8"><rect x="250" y="116" width="100" height="36"/><rect x="250" y="196" width="100" height="36"/><rect x="250" y="276" width="100" height="36"/><rect x="250" y="346" width="100" height="36"/></g>
+<text x="300" y="139">code block 1</text><text x="300" y="219">code block 2</text><text x="300" y="299">code block 3</text><text x="300" y="369">Default Code</text>
+<rect x="380" y="352" width="90" height="34" rx="17" fill="#fff" stroke="#0e7490" stroke-width="2"/><text x="425" y="374" font-weight="700" font-size="14">End</text>
+<g stroke="#334155" fill="none"><path d="M120 38 V52" marker-end="url(#arFsw)"/><path d="M120 84 V100" marker-end="url(#arFsw)"/><path d="M120 164 V180" marker-end="url(#arFsw)"/><path d="M120 244 V260" marker-end="url(#arFsw)"/><path d="M120 324 V364 H246" marker-end="url(#arFsw)"/>
+<path d="M190 134 H246" marker-end="url(#arFsw)"/><path d="M190 214 H246" marker-end="url(#arFsw)"/><path d="M190 294 H246" marker-end="url(#arFsw)"/>
+<path d="M350 134 H425 V348" marker-end="url(#arFsw)"/><path d="M350 214 H421"/><path d="M350 294 H421"/><path d="M350 364 H376" marker-end="url(#arFsw)"/></g>
+<g font-size="10" fill="#475569"><text x="212" y="128">True</text><text x="212" y="208">True</text><text x="212" y="288">True</text><text x="100" y="176">False</text><text x="100" y="256">False</text><text x="100" y="340">False</text></g>
+</svg>
+endsvg
+@issue The flowchart has no caption on the page; its number and title come from the list of figures (Appendix 1). Its labels "Constart Expression" and "Default Coce" are misprints of "Constant Expression" and "Default Code".
+p درج ذیل پروگرام switch-case کے استعمال کو ظاہر کرتا ہے۔ || The following program shows the use of switch-case. || لاندې پروګرام د switch-case کارونه ښيي.
+### پروگرام 4.7 یہ پروگرام بتائے گا کہ جو کریکٹر اِن پُٹ ہوا ہے وہ Vowel ہے یا نہیں۔ || Program 4.7 This program tells whether the character input is a vowel or not || پروګرام ۴.۷ دا پروګرام ښيي چې داخل شوی توری vowel دی که نه
+m #include<stdio.h>
+m void main( )
+m {
+m     char ch;
+m     printf("Enter a character   ");
+m     scanf("%c",&ch);
+m     switch (ch)
+m     {
+m         case 'a':     printf("vowel a");
+m         break ;
+m         case 'e':     printf("vowel e");
+m         break ;
+m         case 'o':     printf("vowel o");
+m         break ;
+box info | آؤٹ پُٹ || Output || Output
+m Enter a character i
+m vowel i
+endbox

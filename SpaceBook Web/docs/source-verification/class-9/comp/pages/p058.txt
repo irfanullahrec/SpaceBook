@@ -1,0 +1,28 @@
+@pdf 57
+@printed 50
+@status lesson
+@sec 2-4 | 2.4 Variables and Constants || 2.4 متغیرات اور مستقل || ۲.۴ متغیرونه او ثابتونه
+## 2.4 VARIABLES AND CONSTANTS || 2.4 متغیرات اور مستقل (کانسٹنٹس) || ۲.۴ متغیرونه او ثابتونه
+### 2.4.1 Variables || 2.4.1 متغیرات || ۲.۴.۱ متغیرونه
+p A quantity whose value may change during execution of the program is called a variable. || ایسی مقدار جس کی قدر پروگرام کے چلنے کے دوران بدل سکتی ہو متغیر کہلاتی ہے۔ || هغه کمیت چې ارزښت یې د پروګرام د اجرا پر مهال بدلېدای شي متغیر بلل کېږي.
+p A variable represents a storage or memory location in the computer memory. That is why the data stored in variables is also temporary. It can only be used and processed during execution of program. The data stored in variable is automatically removed when program ends. || متغیر کمپیوٹر میموری میں ذخیرہ یا میموری کے کسی مقام کو ظاہر کرتا ہے۔ اسی لیے متغیرات میں محفوظ ڈیٹا بھی عارضی ہوتا ہے۔ اسے صرف پروگرام کے چلنے کے دوران استعمال اور پروسیس کیا جا سکتا ہے۔ پروگرام ختم ہونے پر متغیر میں محفوظ ڈیٹا خودبخود مٹ جاتا ہے۔ || متغیر د کمپیوټر په حافظه کې د ذخیرې یا حافظې ځای ښيي. له همدې امله په متغیرونو کې ساتل شوی ډېټا هم لنډمهاله دی. یوازې د پروګرام د اجرا پر مهال کارېدای او پروسس کېدای شي. کله چې پروګرام پای ته ورسېږي، په متغیر کې ساتل شوی ډېټا پخپله لرې کېږي.
+svg Figure: 2.16 Variable in memory || شکل 2.16 میموری میں متغیر || ۲.۱۶ شکل په حافظه کې متغیر
+<svg viewBox="0 0 540 130" width="540" role="img" aria-label="Labels Name of variable, Location of variable and Computer Memory with arrows into a memory box; inside it the name Marks and a small cell containing 80; Contents of variable points to the 80" font-family="Arial, Helvetica, sans-serif" font-size="13">
+<defs><marker id="arF216" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="240" y="10" width="140" height="104" fill="#bae6fd" stroke="#0284c7"/>
+<text x="262" y="34" font-weight="700">Marks</text>
+<rect x="258" y="48" width="56" height="30" fill="#fde047" stroke="#111827"/><text x="286" y="68" text-anchor="middle" font-weight="700">80</text>
+<text x="10" y="32">Name of variable</text><text x="10" y="68">Location of variable</text><text x="10" y="104">Computer Memory</text>
+<path d="M160 28 H254 M160 64 H254 M160 100 H236" stroke="#111827" marker-end="url(#arF216)"/>
+<path d="M410 64 H318" stroke="#111827" marker-end="url(#arF216)"/><text x="416" y="68">Contents of variable</text>
+</svg>
+endsvg
+### Types of Variables || متغیرات کی اقسام || د متغیرونو ډولونه
+p Variables are of two types, numeric and character. || متغیرات دو قسم کے ہیں، عددی اور حرفی۔ || متغیرونه دوه ډوله دي، عددي او توري ییز.
+p **Numeric variables** are used to represent numeric values in computer programs. They represent integer and floating-point values. Some examples of numeric variables are sum, n, marks, width etc. || **عددی متغیرات** کمپیوٹر پروگراموں میں عددی قدریں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔ یہ صحیح اعداد اور اعشاری (فلوٹنگ پوائنٹ) قدریں ظاہر کرتے ہیں۔ عددی متغیرات کی چند مثالیں sum، n، marks، width وغیرہ ہیں۔ || **عددي متغیرونه** په کمپیوټري پروګرامونو کې د عددي ارزښتونو د ښودلو لپاره کارېږي. بشپړ او اعشاري (floating-point) ارزښتونه ښيي. ځینې بېلګې sum، n، marks، width او نور دي.
+p **Character variables** represent character values in computer programs. It can represent a single character or a string of characters. Some examples of character variables are name, gender, etc. || **حرفی متغیرات** کمپیوٹر پروگراموں میں حرفی قدریں ظاہر کرتے ہیں۔ یہ ایک حرف یا حروف کی لڑی ظاہر کر سکتے ہیں۔ حرفی متغیرات کی چند مثالیں name، gender وغیرہ ہیں۔ || **توري ییز متغیرونه** په کمپیوټري پروګرامونو کې توري ییز ارزښتونه ښيي. یو توری یا د تورو لړۍ ښودلای شي. ځینې بېلګې name، gender او نور دي.
+### 2.4.2 Constants || 2.4.2 مستقل (کانسٹنٹس) || ۲.۴.۲ ثابتونه
+p Constant is a quantity that cannot be changed during program execution. || مستقل ایسی مقدار ہے جو پروگرام کے چلنے کے دوران بدلی نہیں جا سکتی۔ || ثابت هغه کمیت دی چې د پروګرام د اجرا پر مهال نه شي بدلېدای.
+p A literal constant is a value that is typed directly in a program. It appears in the program wherever it is needed. For example, the following statement contains string constant: || لٹرل کانسٹنٹ ایسی قدر ہے جو براہِ راست پروگرام میں لکھی جاتی ہے۔ یہ پروگرام میں جہاں ضرورت ہو ظاہر ہوتی ہے۔ مثلاً درج ذیل اسٹیٹمنٹ میں اسٹرنگ کانسٹنٹ ہے: || literal ثابت هغه ارزښت دی چې مستقیم په پروګرام کې لیکل کېږي. په پروګرام کې هر چېرې چې اړتیا وي ښکاري. د بېلګې په توګه لاندې بیان string ثابت لري:
+m "Pakistan Zinda Bad"
+m     printf("Pakistan Zinda Bad");

@@ -1,0 +1,32 @@
+@printed 42
+@status lesson
+p کریکٹر ویری ایبل کمپیوٹر پروگراموں میں کیریکٹر ویلیو کی نمائندگی کرتے ہیں۔ یہ کسی ایک کیریکٹر یا حروف کے مجموعے کو ظاہر کرتے ہیں۔ کیریکٹر ویری ایبل کی کچھ مثالیں Name، Gender، وغیرہ ہیں۔ || Character variables represent character values in computer programs. They represent a single character or a set of characters. Some examples of character variables are Name, Gender and so on. || حرفي (character) متغیرونه په کمپیوټري پروګرامونو کې حرفي ارزښتونه ښيي. یو توری یا د تورو ټولګه ښيي. د حرفي متغیرونو ځینې بېلګې Name، Gender او نور دي.
+@sec 2-4-2 | 2.4.2 مستقل || 2.4.2 Constant || ۲.۴.۲ ثابت
+### 2.4.2 مستقل (Constant) || 2.4.2 Constant || ۲.۴.۲ ثابت
+p کانسٹنٹ ایک مقدار ہے جو پروگرام کے چلنے کے دوران تبدیل نہیں کی جا سکتی ہے۔ || A constant is a quantity that cannot be changed while the program is running. || ثابت (constant) هغه مقدار دی چې د پروګرام د چلېدو پر مهال نه شي بدلېدای.
+p حقیقت میں کانسٹنٹ ایک ایسی قیمت ہوتی ہے جو کسی پروگرام میں براہِ راست ٹائپ کی جاتی ہے۔ یہ پروگرام میں اس جگہ ظاہر ہوتی ہے جہاں اس کی ضرورت ہو۔ مثال کے طور پر، مندرجہ ذیل اسٹیٹمنٹ میں ایک سٹرنگ کانسٹنٹ موجود ہے: "Pakistan Zinda Bad" || In fact a constant is a value typed directly into a program; it appears in the program where it is needed. For example, the following statement contains a string constant: "Pakistan Zinda Bad" || په حقیقت کې ثابت هغه ارزښت دی چې مستقیم په پروګرام کې ټایپ کېږي؛ په پروګرام کې هلته ښکاري چې ورته اړتیا وي. د بېلګې په توګه، لاندې بیان کې یو سټرنګ ثابت دی: "Pakistan Zinda Bad"
+m printf("Pakistan Zinda Bad");
+p اسی طرح ذیل کی مثال میں بھی: || Likewise in the following example: || همداسې په لاندې بېلګه کې هم:
+m int age= 19;
+p Age ایک عددی ویری ایبل ہے اور 19 وہ کانسٹنٹ قیمت ہے جو Age میں سٹور کی گئی ہے۔ || Age is a numeric variable and 19 is the constant value stored in Age. || Age یو عددي متغیر دی او 19 هغه ثابت ارزښت دی چې په Age کې ساتل شوی.
+@issue The code declares "age" (lower case) but the sentence names it "Age"; C names are case-sensitive, so these would be two different identifiers.
+svg شکل نمبر 2.17 ویری ایبل اور کانسٹنٹ کی اقسام || Figure 2.17 Kinds of variables and constants || ۲.۱۷ شکل د متغیرونو او ثابتونو ډولونه
+<svg viewBox="0 0 560 170" width="560" role="img" aria-label="Rounded box containing Percentage = 86.45, Total_Numbers = 16, Char1 = 'b', Name = &quot;Ali&quot;; left labels Float Variable, Integer Variable, Char Variable, String Variable point to the names; right labels Real Constant, Integer Constant, Character Constant, String Constant point to the values" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">
+<defs><marker id="arF217" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="200" y="8" width="170" height="154" rx="18" fill="#38bdf8" stroke="#0369a1"/>
+<g fill="#fff"><text x="214" y="38">Percentage = 86.45</text><text x="214" y="74">Total_Numbers = 16</text><text x="214" y="110">Char1 = 'b'</text><text x="214" y="146">Name = "Ali"</text></g>
+<g><text x="10" y="38">Float Variable</text><text x="10" y="74">Integer Variable</text><text x="10" y="110">Char Variable</text><text x="10" y="146">String Variable</text></g>
+<g text-anchor="end"><text x="550" y="38">Real Constant</text><text x="550" y="74">Integer Constant</text><text x="550" y="110">Character Constant</text><text x="550" y="146">String Constant</text></g>
+<g stroke="#111827" marker-end="url(#arF217)"><path d="M120 34 H210 M130 70 H210 M110 106 H210 M118 142 H210"/><path d="M440 34 H340 M420 70 H352 M408 106 H300 M440 142 H316"/></g>
+</svg>
+endsvg
+@issue The string value in the figure is printed as "Ali" (legible as "All" in the scan); read as the name "Ali".
+@sec 2-4-3 | 2.4.3 متغیر کا نام رکھنے کیلئے اُصول || 2.4.3 Rules for writing variable names || ۲.۴.۳ د متغیر د نومونې اصول
+### 2.4.3 متغیر کا نام رکھنے کیلئے اُصول (Rules for Writing Variable Names) || 2.4.3 Rules for writing variable names || ۲.۴.۳ د متغیر د نومونې اصول
+p C پروگرام میں استعمال ہونے والے کسی بھی متغیر کو درج ذیل اصولوں کے مطابق ہونا چاہئے: || Any variable used in a C program must follow these rules: || په C پروګرام کې کارېدونکی هر متغیر باید د لاندې اصولو سره سم وي:
+- 1۔ انہیں ہمیشہ ایک حرف (Letter) سے شروع ہونا چاہئے، تاہم کچھ سسٹم پہلے کیریکٹر کی حیثیت سے انڈر سکور کی اجازت بھی دیتے ہیں۔ || 1. It must always begin with a letter, although some systems also allow an underscore as the first character. || ۱. باید تل په یوه توري (Letter) پیل شي، که څه هم ځینې سیسټمونه انډرسکور (_) د لومړي توري په توګه هم مني.
+- 2۔ ویری ایبل کے نام کی لمبائی C کے کمپائلر پر منحصر ہے۔ || 2. The length of a variable name depends on the C compiler. || ۲. د متغیر د نوم اوږدوالی د C په کمپایلر پورې اړه لري.
+- 3۔ ویری ایبل کے نام میں خالی جگہ (Blank Space) رکھنے کی اجازت نہیں ہوتی۔ || 3. A blank space is not allowed in a variable name. || ۳. د متغیر په نوم کې تشه (Blank Space) نه منل کېږي.
+- 4۔ ویری ایبل کا نام کوئی ریزروڈ ورڈ / کی ورڈ نہیں ہونا چاہئے۔ || 4. A variable name must not be a reserved word / keyword. || ۴. د متغیر نوم باید خوندي کلمه / keyword نه وي.
+- 5۔ اس میں کوئی خاص علامت نہیں ہونا چاہئے جیسے، #، ^ وغیرہ۔ || 5. It must not contain any special symbol such as #, ^ and so on. || ۵. باید هېڅ ځانګړې نښه ونه لري لکه #، ^ او نور.
+@issue Rule 1: in standard C a leading underscore is always permitted (not only on "some systems"), though names beginning with an underscore are reserved for the implementation in many cases.

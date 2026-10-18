@@ -1,0 +1,26 @@
+@printed 11
+@status lesson
+@deco The page shows faint mirror-image show-through of algorithm text from the facing page; not book content.
+### Problem 6 || مسئلہ 6 || ستونزه ۶
+p **To find the area of a parallelogram.** || **متوازی الاضلاع کا رقبہ معلوم کرنا۔** || **د موازي الاضلاع مساحت موندل.**
+p **Algorithm:** This algorithm finds the area of a parallelogram *AP* having base *B* and height *H*. || **الگورتھم:** یہ الگورتھم قاعدہ *B* اور بلندی *H* والے متوازی الاضلاع کا رقبہ *AP* معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د *B* قاعدې او *H* لوړوالي لرونکي موازي الاضلاع مساحت *AP* مومي.
+m Step 1. Read B, H
+m Step 2. Set P= B*H
+m Step 3. Write AP
+m Step 4. Exit
+@issue Step 2 is printed "Set P= B*H" but Step 3 writes AP; the variable should be AP. Kept as printed.
+### Problem 7 || مسئلہ 7 || ستونزه ۷
+p **To find the area of a trapezium.** || **ذوزنقہ (ٹریپیزیم) کا رقبہ معلوم کرنا۔** || **د ذوزنقې (trapezium) مساحت موندل.**
+p **Algorithm:** This algorithm finds the area of a trapezium *ATRAP* having *A* and *B* are the lengths of the parallel sides, and *H* is the height (the perpendicular distance between these sides.) || **الگورتھم:** یہ الگورتھم ذوزنقہ کا رقبہ *ATRAP* معلوم کرتا ہے جس کے متوازی اضلاع کی لمبائیاں *A* اور *B* ہیں، اور *H* بلندی (ان اضلاع کے درمیان عمودی فاصلہ) ہے۔ || **الګوریتم:** دا الګوریتم د ذوزنقې مساحت *ATRAP* مومي چې د موازي ضلعو اوږدوالی یې *A* او *B* دی، او *H* لوړوالی (د دې ضلعو ترمنځ عمودي واټن) دی.
+m Step 1. Read A, B
+m Step 2. Set  ATRAP = (A + B)/2 × H
+m Step 3. Write ATRAP
+m Step 4. Exit
+@issue Step 1 reads only A and B although H is also needed; kept as printed. Step 2 is printed as the fraction (A + B) over 2, times H.
+### Problem 8 || مسئلہ 8 || ستونزه ۸
+p **To assign grade to a subject based on the achieved marks.** || **حاصل کردہ نمبروں کی بنیاد پر کسی مضمون کو گریڈ دینا۔** || **د ترلاسه شویو نمرو پر بنسټ یوه مضمون ته درجه ورکول.**
+p **Algorithm:** This algorithm assigns grade *GRADE* to a subject based on the achieved marks *SUBMARKS*. || **الگورتھم:** یہ الگورتھم حاصل کردہ نمبروں *SUBMARKS* کی بنیاد پر مضمون کو گریڈ *GRADE* دیتا ہے۔ || **الګوریتم:** دا الګوریتم د ترلاسه شویو نمرو *SUBMARKS* پر بنسټ مضمون ته درجه *GRADE* ورکوي.
+m Step 1. Read SUBMARKS
+m Step 2. If SUBMARKS>=80 Set GRADE= A+
+m          Else if SUBMARKS>=70 Set GRADE= A
+m          Else if SUBMARKS>=60 Set GRADE= B

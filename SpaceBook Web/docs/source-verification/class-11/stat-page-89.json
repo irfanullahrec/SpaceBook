@@ -1,0 +1,796 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s089-gm-2",
+  "title": "Examples 2.30, 2.31: geometric mean for discrete and continuous series",
+  "headingUrdu": "مثالیں 2.30، 2.31: منفصل اور مسلسل سلسلوں کے لیے ہندسی اوسط",
+  "headingPashto": "بېلګې 2.30، 2.31: د منفصلې او دوامدارې لړۍ لپاره هندسي اوسط",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 89,
+    "printedPage": "81"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s089-i2",
+      "en": "(ii) Geometric mean in case of discrete series or grouped data",
+      "ur": "(ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط",
+      "ps": "(ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط"
+    },
+    {
+      "id": "stat11-s089-ex30",
+      "en": "Example: 2.30",
+      "ur": "مثال: 2.30",
+      "ps": "بېلګه: 2.30",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-30"
+    },
+    {
+      "id": "stat11-s089-q30",
+      "en": "Calculate geometric mean of the distribution;",
+      "ur": "تقسیم کا ہندسی اوسط حساب کریں؛",
+      "ps": "د ویش هندسي اوسط محاسبه کړئ؛",
+      "role": "question",
+      "exampleId": "stat11-ex-2-30"
+    },
+    {
+      "id": "stat11-s089-sol30",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-30"
+    },
+    {
+      "id": "stat11-s089-i3",
+      "en": "(iii) Geometric mean in case of continuous series or grouped data",
+      "ur": "(iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط",
+      "ps": "(iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط"
+    },
+    {
+      "id": "stat11-s089-ex31",
+      "en": "Example: 2.31",
+      "ur": "مثال: 2.31",
+      "ps": "بېلګه: 2.31",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-31"
+    },
+    {
+      "id": "stat11-s089-q31",
+      "en": "Calculate the geometric mean of the following distribution.",
+      "ur": "درج ذیل تقسیم کا ہندسی اوسط حساب کریں۔",
+      "ps": "د لاندې ویش هندسي اوسط محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-31"
+    },
+    {
+      "id": "stat11-s089-sol31",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-31"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s089-i2",
+        "stat11-s089-ex30",
+        "stat11-s089-q30"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s089-sol30"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s089-i3",
+        "stat11-s089-ex31",
+        "stat11-s089-q31"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s089-sol31"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s089-g1",
+      "latex": "\\text{G.M}=\\text{antilog}\\left(\\dfrac{\\sum_{i=1}^{n}f\\log x}{\\sum f}\\right)=\\text{antilog}\\left(\\dfrac{50.8184}{63}\\right)=\\text{antilog}(0.8066)=6.406",
+      "accessible": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(50.8184/63) = antilog(0.8066) = 6.406",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(50.8184/63) = antilog(0.8066) = 6.406"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(50.8184/63) = antilog(0.8066) = 6.406"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(50.8184/63) = antilog(0.8066) = 6.406"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-30"
+    },
+    {
+      "id": "stat11-s089-g2",
+      "latex": "\\text{G.M}=\\text{antilog}\\left(\\dfrac{\\sum_{i=1}^{n}f\\log x}{\\sum f}\\right)=\\text{antilog}\\left(\\dfrac{197.2890}{132}\\right)=\\text{antilog}(1.4946)=31.23",
+      "accessible": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(197.2890/132) = antilog(1.4946) = 31.23",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(197.2890/132) = antilog(1.4946) = 31.23"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(197.2890/132) = antilog(1.4946) = 31.23"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) f log x)/Σf) = antilog(197.2890/132) = antilog(1.4946) = 31.23"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-31"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.30: x and f",
+      "captionUrdu": "مثال 2.30: x اور f",
+      "captionPashto": "بېلګه 2.30: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "11",
+          "ur": "11",
+          "ps": "11"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-30"
+    },
+    {
+      "caption": "Example 2.30: log x and f log x",
+      "captionUrdu": "مثال 2.30: log x اور f log x",
+      "captionPashto": "بېلګه 2.30: log x او f log x",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "log x",
+          "ur": "log x",
+          "ps": "log x"
+        },
+        {
+          "en": "f log x",
+          "ur": "f log x",
+          "ps": "f log x"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0.4771",
+            "ur": "0.4771",
+            "ps": "0.4771"
+          },
+          {
+            "en": "0.9542",
+            "ur": "0.9542",
+            "ps": "0.9542"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "0.6021",
+            "ur": "0.6021",
+            "ps": "0.6021"
+          },
+          {
+            "en": "3.0105",
+            "ur": "3.0105",
+            "ps": "3.0105"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "0.6990",
+            "ur": "0.6990",
+            "ps": "0.6990"
+          },
+          {
+            "en": "6.2910",
+            "ur": "6.2910",
+            "ps": "6.2910"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "0.7782",
+            "ur": "0.7782",
+            "ps": "0.7782"
+          },
+          {
+            "en": "10.8948",
+            "ur": "10.8948",
+            "ps": "10.8948"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "0.8451",
+            "ur": "0.8451",
+            "ps": "0.8451"
+          },
+          {
+            "en": "12.6765",
+            "ur": "12.6765",
+            "ps": "12.6765"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "0.9031",
+            "ur": "0.9031",
+            "ps": "0.9031"
+          },
+          {
+            "en": "7.2248",
+            "ur": "7.2248",
+            "ps": "7.2248"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0.9542",
+            "ur": "0.9542",
+            "ps": "0.9542"
+          },
+          {
+            "en": "5.7252",
+            "ur": "5.7252",
+            "ps": "5.7252"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1.0000",
+            "ur": "1.0000",
+            "ps": "1.0000"
+          },
+          {
+            "en": "3.000",
+            "ur": "3.000",
+            "ps": "3.000"
+          }
+        ],
+        [
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1.0414",
+            "ur": "1.0414",
+            "ps": "1.0414"
+          },
+          {
+            "en": "1.0414",
+            "ur": "1.0414",
+            "ps": "1.0414"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "63",
+            "ur": "63",
+            "ps": "63"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "50.8184",
+            "ur": "50.8184",
+            "ps": "50.8184"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-30",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.31: groups and frequency",
+      "captionUrdu": "مثال 2.31: گروہ اور تعدد",
+      "captionPashto": "بېلګه 2.31: ډلې او فریکونسي",
+      "headers": [
+        {
+          "en": "Groups:",
+          "ur": "گروہ:",
+          "ps": "ډلې:"
+        },
+        {
+          "en": "10 – 19",
+          "ur": "10 – 19",
+          "ps": "10 – 19"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        },
+        {
+          "en": "40 – 49",
+          "ur": "40 – 49",
+          "ps": "40 – 49"
+        },
+        {
+          "en": "50 – 59",
+          "ur": "50 – 59",
+          "ps": "50 – 59"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-31"
+    },
+    {
+      "caption": "Example 2.31: f log x",
+      "captionUrdu": "مثال 2.31: f log x",
+      "captionPashto": "بېلګه 2.31: f log x",
+      "headers": [
+        {
+          "en": "Groups",
+          "ur": "گروہ",
+          "ps": "ډلې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f log x",
+          "ur": "f log x",
+          "ps": "f log x"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "10 – 19",
+            "ur": "10 – 19",
+            "ps": "10 – 19"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "14.5",
+            "ur": "14.5",
+            "ps": "14.5"
+          },
+          {
+            "en": "17.4205",
+            "ur": "17.4205",
+            "ps": "17.4205"
+          }
+        ],
+        [
+          {
+            "en": "20 – 29",
+            "ur": "20 – 29",
+            "ps": "20 – 29"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "24.5",
+            "ur": "24.5",
+            "ps": "24.5"
+          },
+          {
+            "en": "48.6208",
+            "ur": "48.6208",
+            "ps": "48.6208"
+          }
+        ],
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "34.5",
+            "ur": "34.5",
+            "ps": "34.5"
+          },
+          {
+            "en": "69.2019",
+            "ur": "69.2019",
+            "ps": "69.2019"
+          }
+        ],
+        [
+          {
+            "en": "40 – 49",
+            "ur": "40 – 49",
+            "ps": "40 – 49"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "44.5",
+            "ur": "44.5",
+            "ps": "44.5"
+          },
+          {
+            "en": "41.2090",
+            "ur": "41.2090",
+            "ps": "41.2090"
+          }
+        ],
+        [
+          {
+            "en": "50 – 59",
+            "ur": "50 – 59",
+            "ps": "50 – 59"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "54.5",
+            "ur": "54.5",
+            "ps": "54.5"
+          },
+          {
+            "en": "20.8368",
+            "ur": "20.8368",
+            "ps": "20.8368"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "197.2890",
+            "ur": "197.2890",
+            "ps": "197.2890"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-31",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 81. The printed header of the second column of the Example 2.30 solution table is \"log x\" twice (the second column is f log x); it is read as f log x. The right-hand working is shown after each table. The foot of the scan shows a ghost of another page-number bar (\"93\"), ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:40:37.636596+00:00",
+    "scope": "Scan 89 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

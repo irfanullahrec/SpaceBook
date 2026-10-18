@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Example 4.3 conclusion / Assignment 4.3 bottle opener / 4.6 Couple / Figure 4.14'
+SECTIONS = [
+    ('ex4.3-end', ('Example 4.3 (conclusion)', 'مثال 4.3 (نتیجہ)', '4.3 مثال (پایله)'), [
+        ('p', 'though the magnitude of the applied force is the same. In parts a and b the torques are positive, since the forces tend to produce a counter clockwise rotation of the door. In part c the line of action of force passes through the axis of rotation (the hinge). Hence, the lever arm is zero, and the torque is zero.',
+         'لگائی گئی قوت کی مقدار ایک ہی ہے۔ حصہ a اور b میں ٹارک مثبت ہیں کیونکہ قوتیں دروازے میں خلافِ گھڑی وار گردش پیدا کرنے کا رجحان رکھتی ہیں۔ حصہ c میں قوت کی لائن آف ایکشن گردش کے محور (قبضے) سے گزرتی ہے، اس لیے لیور آرم صفر اور ٹارک صفر ہے۔',
+         'د اچول شوي قوت اندازه یو شان ده. په a او b برخو کې تورکونه مثبت دي ځکه قوتونه په دروازه کې د ساعت خلاف څرخ پیدا کوي. په c برخه کې د قوت د عمل کرښه د څرخ له محور (قبضې) تېرېږي، نو لیور بازو صفر او تورک صفر دی.'),
+    ]),
+    ('as4.3', ('Assignment 4.3 FORCE ON BOTTLE OPENER', 'اسائنمنٹ 4.3 بوتل کھولنے والے پر قوت', '4.3 دنده د بوتل پرانیستونکي پر قوت'), [
+        ('p', '20 Nm torque is required to open a soda bottle. A boy with a bottle opener apply a force perpendicularly at 0.1 m, what is the magnitude of force required.', 'سوڈا کی بوتل کھولنے کے لیے 20 Nm ٹارک درکار ہے۔ ایک لڑکا بوتل اوپنر سے 0.1 m پر عموداً قوت لگاتا ہے؛ درکار قوت کی مقدار کیا ہے؟', 'د سوډا بوتل د پرانیستلو لپاره 20 Nm تورک ته اړتیا ده. یو هلک په بوتل پرانیستونکي په 0.1 m کې عمودي قوت اچوي؛ د اړین قوت اندازه څومره ده؟'),
+        ('fig', 'Photograph: a hand using a bottle opener on a bottle cap.', 'تصویر: بوتل کے ڈھکن پر بوتل اوپنر استعمال کرتا ہاتھ۔', 'انځور: د بوتل پر سرپوښ بوتل پرانیستونکی کاروونکی لاس.'),
+    ]),
+    ('4.6', ('4.6 COUPLE', '4.6 کپل (جوڑا)', '4.6 جوړه (کپل)'), [
+        ('p', 'A special case of moments is a couple. Two equal and opposite parallel forces acting along different lines on a body constitute a couple. It does not produce any translation, but only rotation. The resultant force of a couple is zero. but, the resultant of a couple is not zero; it is a pure moment. The shortest distance between two couple forces is called couple arm.',
+         'مومنٹس کی ایک خاص صورت کپل ہے۔ کسی جسم پر مختلف لکیروں کے ساتھ عمل کرنے والی دو برابر اور مخالف متوازی قوتیں کپل بناتی ہیں۔ یہ کوئی انتقال پیدا نہیں کرتا بلکہ صرف گردش۔ کپل کی حاصل قوت صفر ہوتی ہے، لیکن کپل کا حاصل [مومنٹ] صفر نہیں؛ یہ خالص مومنٹ ہے۔ کپل کی دو قوتوں کے درمیان کم ترین فاصلہ کپل آرم کہلاتا ہے۔',
+         'د مومنټونو یو ځانګړی حالت جوړه (کپل) ده. دوه مساوي او مخالف موازي قوتونه چې پر یوه جسم په بېلابېلو کرښو عمل کوي، جوړه جوړوي. دا هېڅ انتقال نه پیدا کوي، یوازې څرخ. د جوړې محصله قوت صفر دی، خو د جوړې محصله [مومنټ] صفر نه دی؛ دا خالص مومنټ دی. د جوړې د دوو قوتونو ترمنځ لنډ ترین واټن د جوړې بازو بلل کېږي.'),
+        ('fig', 'Figure: a wheel brace turning the nuts of a car wheel — equal and opposite forces F⃗ applied at the two ends.', 'شکل: گاڑی کے پہیے کے نٹ گھماتا وہیل برس — دونوں سروں پر برابر اور مخالف قوتیں F⃗۔', 'شکل: د موټر د څرخ مهرې تاوونکی څلور څنډی کلي — په دواړو سرونو مساوي او مخالف قوتونه F⃗.'),
+        ('p', 'Example of couple is shown in the figure, also the forces that two hands apply to turn a steering wheel are often a couple. Each hand grips the wheel at points on opposite sides of the shaft. When they apply a force that is equal in magnitude but opposite in direction the wheel rotates.',
+         'کپل کی مثال شکل میں دکھائی گئی ہے؛ نیز اسٹیئرنگ وہیل گھمانے کے لیے دونوں ہاتھ جو قوتیں لگاتے ہیں وہ اکثر کپل ہوتی ہیں۔ ہر ہاتھ شافٹ کے مخالف اطراف کے نقاط پر پہیے کو پکڑتا ہے۔ جب وہ مقدار میں برابر لیکن سمت میں مخالف قوت لگاتے ہیں تو پہیہ گھومتا ہے۔',
+         'د جوړې مثال په شکل کې ښودل شوی؛ همدارنګه هغه قوتونه چې دوه لاسونه یې د سټیرنګ د تاوولو لپاره اچوي، ډېری وخت جوړه وي. هر لاس د محور د مخالفو خواوو په ټکو کې څرخ نیسي. کله چې په اندازه کې مساوي خو په لوري کې مخالف قوت واچوي، څرخ څرخېږي.'),
+        ('fig', 'Figure 4.14 Couple Acting On Book: For example apply forces on this physics textbook with your fingers such that the line of action is different. No matter how you apply these forces the book will turn. (Three sketches with lines of action of force and forces F.)', 'شکل 4.14 کتاب پر عمل کرتا کپل: مثلاً اس طبیعیات کی کتاب پر انگلیوں سے اس طرح قوتیں لگائیں کہ لائن آف ایکشن مختلف ہو۔ آپ یہ قوتیں جیسے بھی لگائیں کتاب گھومے گی۔ (تین خاکے جن میں قوت کی لائن آف ایکشن اور قوتیں F ہیں۔)', '4.14 شکل پر کتاب عمل کوونکې جوړه: د مثال په توګه پر دې فزیک کتاب په ګوتو داسې قوتونه واچوئ چې د عمل کرښې یې توپیر ولري. دا قوتونه هر ډول چې واچوئ، کتاب به وڅرخي. (درې انځورونه د قوت د عمل کرښې او F قوتونه.)'),
+    ]),
+]

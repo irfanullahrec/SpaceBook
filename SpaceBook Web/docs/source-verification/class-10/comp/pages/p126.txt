@@ -1,0 +1,33 @@
+@printed 114
+@status lesson
+p ایک ٹرُتھ ٹیبل میں درج ذیل خصوصیات ہونی چاہئیں۔ || A truth table should have the following features. || د حقیقت جدول باید لاندې ځانګړنې ولري.
+- ٹرُتھ ٹیبل قطاروں اور کالموں پر مشتمل ہوتا ہے۔ || A truth table consists of rows and columns. || د حقیقت جدول له کرښو او ستنو جوړ وي.
+- یہ ڈیجیٹل لاجک سرکٹ کی اِن پُٹ اور آؤٹ پُٹ کے درمیان ربط یا تعلق کو ظاہر کرتا ہے۔ || It shows the relation between the input and output of a digital logic circuit. || دا د ډیجیټل منطقي سرکټ د input او output ترمنځ اړیکه ښيي.
+- یہ LOW کے لئے 0 اور HIGH کے لئے 1 کا استعمال کرتے ہوئے اِن پُٹ کے ہر ممکنہ امتزاج کو ظاہر کرتا ہے۔ || It shows every possible combination of inputs, using 0 for LOW and 1 for HIGH. || دا د LOW لپاره 0 او د HIGH لپاره 1 په کارولو د input هر ممکن ترکیب ښيي.
+- تمام ممکنہ اِن پُٹس کو بائیں کالم اور آؤٹ پُٹ کو سب سے دائیں کالم میں دکھایا جاتا ہے۔ || All the possible inputs are shown in the left columns and the output in the right-most column. || ټول ممکن inputs په کیڼو ستنو او output په تر ټولو ښي ستن کې ښودل کېږي.
+- اِن پُٹ والے کالم کو بائنری نمبر کی ترتیب میں اس طرح لکھا جاتا ہے تاکہ اِن پُٹ کے نمبر کو ظاہر کیا جا سکے جس میں اِن پُٹ کی تعداد کے برابر متعدد بٹس ہوتے ہیں۔ مثال کے طور پر، 2 اِن پُٹ کے لئے، ممکنہ امتزاج 4 = 2² ہوں گے۔ 3 اِن پُٹ کے لیے ممکنہ امتزاج 8 = 2³ ہوں گے، وغیرہ۔ || The input columns are written in binary-number order so that each row shows an input number with as many bits as there are inputs. For example, for 2 inputs there are 2² = 4 possible combinations; for 3 inputs there are 2³ = 8, and so on. || د input ستنې د باینري شمېرو په ترتیب داسې لیکل کېږي چې هره کرښه د inputs د شمېر په اندازه بټونه لرونکې شمېره وښيي. د بېلګې په توګه، د 2 inputs لپاره 2² = 4 ممکن ترکیبونه وي؛ د 3 inputs لپاره 2³ = 8، او داسې نور.
+@issue The exponents are lost in the scan ("4 = 2", "8 = 2"); they are 2² and 2³.
+### AND، OR اور NOT کے لیے ٹرُتھ ٹیبل || Truth tables for AND, OR and NOT || د AND، OR او NOT لپاره د حقیقت جدولونه
+### 2 اِن پُٹ والے AND گیٹ کا ٹرُتھ ٹیبل || Truth table of a 2-input AND gate || د 2 input لرونکې AND دروازې د حقیقت جدول
+p فرض کیا X اور Y دو اِن پُٹ ہیں اور F ایک AND گیٹ سے آؤٹ پُٹ ہے، اس طرح AND گیٹ کا ٹرُتھ ٹیبل درج ذیل ہے۔ || Suppose X and Y are two inputs and F is the output of an AND gate; then the truth table of the AND gate is as follows. || فرض کړئ X او Y دوه inputs دي او F د AND دروازې output دی؛ نو د AND دروازې د حقیقت جدول دا دی.
+table جدول نمبر 6.1 دو اِن پُٹ والے AND گیٹ کا ٹرُتھ ٹیبل || Table 6.1 Truth table of a two-input AND gate || ۶.۱ جدول د دوه input لرونکې AND دروازې د حقیقت جدول
+th | X | Y | F=X.Y
+tr | 0 | 0 | 0
+tr | 0 | 1 | 0
+tr | 1 | 0 | 0
+tr | 1 | 1 | 1
+endtable
+### 3 اِن پُٹ والے AND گیٹ کا ٹرُتھ ٹیبل || Truth table of a 3-input AND gate || د 3 input لرونکې AND دروازې د حقیقت جدول
+p فرض کیا X، Y اور Z تین اِن پُٹ ہیں اور F ایک AND گیٹ سے آؤٹ پُٹ ہے، اس طرح AND گیٹ کا ٹرُتھ ٹیبل درج ذیل ہے۔ || Suppose X, Y and Z are three inputs and F is the output of an AND gate; then the truth table of the AND gate is as follows. || فرض کړئ X، Y او Z درې inputs دي او F د AND دروازې output دی؛ نو د AND دروازې د حقیقت جدول دا دی.
+table جدول نمبر 6.2 تین اِن پُٹ والے AND گیٹ کا ٹرُتھ ٹیبل || Table 6.2 Truth table of a three-input AND gate || ۶.۲ جدول د درې input لرونکې AND دروازې د حقیقت جدول
+th | X | Y | Z | F=X.Y.Z
+tr | 0 | 0 | 0 | 0
+tr | 0 | 0 | 1 | 0
+tr | 0 | 1 | 0 | 0
+tr | 0 | 1 | 1 | 0
+tr | 1 | 0 | 0 | 0
+tr | 1 | 0 | 1 | 0
+tr | 1 | 1 | 0 | 0
+tr | 1 | 1 | 1 | 1
+endtable
+@deco Both tables have a two-level header in the book: "اِن پُٹ" (Input) over the X/Y(/Z) columns and "آؤٹ پُٹ" (Output) over F.

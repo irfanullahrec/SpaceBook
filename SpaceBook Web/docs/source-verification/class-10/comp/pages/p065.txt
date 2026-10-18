@@ -1,0 +1,37 @@
+@printed 55
+@status lesson
+### پروگرام 3.4 دو اعداد کے حاصل جمع اور حاصل ضرب کو دکھانے کا پروگرام۔ || Program 3.4 A program to show the sum and product of two numbers || پروګرام ۳.۴ د دوو عددونو د جمع او ضرب د ښودلو پروګرام
+m using namespace std;
+m #include<iostream>
+m int main()
+m {
+m     int a=15, b=22, c;
+m     cout<<"\nThis program will add and multiply two numbers"<<endl;
+m     c=a+b;
+m     cout<<"\nThe sum of "<<a<<" and "<<b<<" is "<<c<<endl;
+m     cout<<"\n The product of "<<a<<" and "<<b<<" is "<<a*b<<endl;
+m     return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m This program will add and multiply two numbers
+m The sum of 15 and 22 is 37
+m The product of 15 and 22 is 330
+endbox
+@issue Program 3.4 puts "using namespace std;" before "#include<iostream>"; it will not compile in that order (namespace std is not yet declared). The include must come first. Also, because each line begins with "\n" after an endl, the real output has a blank line between the lines shown.
+p یہاں ہم نے endl (اینڈ ایل کے طور پر بولا جاتا ہے) کا استعمال کیا ہے جو بالکل اسکیپ سیکونس \n کی طرح کام کرتا ہے۔ یہ لائن کو ختم کر دیتا ہے اور کرسر کو اگلی لائن کے آغاز میں لے جاتا ہے۔ || Here we have used endl (pronounced "end-ell"), which works exactly like the escape sequence \n: it ends the line and moves the cursor to the start of the next line. || دلته مو endl (د "اېنډ اېل" په توګه لوستل کېږي) کارولی چې بالکل د \n اسکیپ سیکونس په څېر کار کوي: کرښه پای ته رسوي او کرسر د راتلونکې کرښې پیل ته وړي.
+@sec 3-1-2 | 3.1.2 اِن پُٹ فنکشنز || 3.1.2 Input functions || ۳.۱.۲ د input فنکشنونه
+### 3.1.2 اِن پُٹ فنکشنز (Input Functions) || 3.1.2 Input functions || ۳.۱.۲ د input فنکشنونه
+p C پروگرامنگ لینگویج اِن پُٹ آپریشنز انجام دینے کے لئے بلٹ ان فنکشنز مہیا کرتی ہے۔ اِن پُٹ آپریشنز پروگرام چلاتے وقت کی بورڈ سے یوزر سے ویلیو (اِن پُٹ) لینے کے لئے استعمال ہوتے ہیں۔ C لینگویج مندرجہ ذیل بنے بنائے اِن پُٹ فنکشن فراہم کرتی ہے۔ || The C programming language provides built-in functions for input operations. Input operations are used to take values (input) from the user through the keyboard while the program runs. The C language provides the following ready-made input functions: || C پروګرامي ژبه د input عملیاتو لپاره جوړ شوي فنکشنونه لري. input عملیات د پروګرام د چلېدو پر مهال له کاروونکي څخه د کیبورډ له لارې ارزښت (input) اخلي. C ژبه لاندې جوړ شوي input فنکشنونه لري:
+- scanf() || scanf() || scanf()
+- getch() || getch() || getch()
+- getche() || getche() || getche()
+- getchar() || getchar() || getchar()
+- gets() || gets() || gets()
+p جبکہ C++ لینگویج اِن پُٹ کے لئے درج ذیل کو استعمال کرتی ہے: || whereas the C++ language uses the following for input: || په داسې حال کې چې C++ ژبه د input لپاره لاندې کاروي:
+- cin || cin || cin
+@issue getch() and getche() come from the non-standard <conio.h>; gets() was removed from the C standard in 2011 because it cannot prevent buffer overflow (fgets() is used instead).
+### (a) scanf() فنکشن || (a) The scanf() function || (a) scanf() فنکشن
+p scanf() فنکشن کا استعمال کی بورڈ سے مختلف ڈیٹا اقسام کے متعدد ڈیٹا ویلیوز کو پڑھنے کے لئے کیا جاتا ہے۔ scanf() فنکشن کی وجہ سے پروگرام آگے نہیں بڑھے گا اور نتائج نہیں دکھائے گا جب تک آپ ویری ایبل کے لیے قیمتیں اِن پُٹ نہیں کرتے۔ scanf() فنکشن کی عمومی شکل درج ذیل ہے۔ || The scanf() function is used to read several data values of different data types from the keyboard. Because of scanf(), the program will not move on or show results until you input values for the variables. The general form of the scanf() function is: || scanf() فنکشن له کیبورډ څخه د بېلابېلو ډېټا ډولونو د ګڼو ارزښتونو د لوستلو لپاره کارېږي. د scanf() له امله پروګرام نه وړاندې ځي او پایلې نه ښيي تر هغه چې تاسو متغیرونو ته ارزښتونه داخل نه کړئ. د scanf() عمومي بڼه دا ده:
+m scanf ("format specifiers", &var1, &var2, &var3, ……);
+@issue The general form is printed "scanf (…, &var3,……… ;)." with the semicolon misplaced inside the parentheses and a stray full stop; the correct form ends "…);".
+p جبکہ، "format specifier" فارمیٹ تفصیلات کے ذریعہ ویری ایبل کی شکل متعین کرتا ہے۔ یہ دہرے کاموں میں لکھا جاتا ہے۔ &var1, &var2, &var3,…… ویری ایبل کی فہرست ہے۔ جس میں ایک ویری ایبل کو دوسرے ویری ایبل سے کاما کی مدد سے علیحدہ … || where "format specifier" fixes the form of each variable through format details; it is written in double quotes. &var1, &var2, &var3, … is the list of variables, in which one variable is separated from another by a comma … || چېرته چې "format specifier" د فارمېټ جزییاتو له لارې د متغیر بڼه ټاکي؛ په دوه ګونو نښو کې لیکل کېږي. &var1, &var2, &var3, … د متغیرونو لړلیک دی چې پکې یو متغیر له بل څخه د کامې په مرسته جلا …

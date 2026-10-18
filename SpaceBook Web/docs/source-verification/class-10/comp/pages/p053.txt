@@ -1,0 +1,25 @@
+@printed 43
+@status lesson
+- 6۔ ایک ہی پروگرام میں ایک ویری ایبل کا نام جو ایک ڈیٹا ٹائپ کے لئے استعمال ہو چکا ہے وہ کسی دوسری ڈیٹا ٹائپ کے لئے استعمال نہیں کیا جا سکتا۔ || 6. In the same program, a variable name already used for one data type cannot be used for another data type. || ۶. په یوه پروګرام کې د متغیر هغه نوم چې د یوه ډېټا ډول لپاره کارول شوی، د بل ډېټا ډول لپاره نه شي کارېدای.
+p C حروف کے اعتبار سے ایک حساس زبان ہے۔ اس میں چھوٹے اور بڑے حروف میں لکھے گئے ایک جیسے نام مختلف ویری ایبل سمجھے جاتے ہیں۔ مثال کے طور پر، ویری ایبل Pay اور pay دو مختلف ویری ایبل ہیں۔ || C is a case-sensitive language: the same name written in small and capital letters is treated as different variables. For example, the variables Pay and pay are two different variables. || C د تورو له پلوه حساسه ژبه ده؛ په وړو او لویو تورو لیکل شوی ورته نوم بېل متغیرونه ګڼل کېږي. د بېلګې په توګه Pay او pay دوه بېل متغیرونه دي.
+p درست اور غلط ویری ایبل ناموں کی کچھ مثالیں درج ذیل ہیں۔ || Some examples of correct and incorrect variable names are given below. || د سمو او ناسمو متغیر نومونو ځینې بېلګې لاندې دي.
+table درست اور غلط ویری ایبل نام || Valid and invalid variable names || سم او ناسم متغیر نومونه
+th | ویری ایبل کا نام || Variable name || د متغیر نوم | درست / غلط || Valid / invalid || سم / ناسم | وجوہات || Reason || لامل
+tr | Num || Num || Num | درست || Valid || سم | — || — || —
+tr | Perform || Perform || Perform | درست || Valid || سم | — || — || —
+tr | Switch || Switch || Switch | غلط || Invalid (per the book) || ناسم (د کتاب له مخې) | کلیدی لفظ Keyword || Keyword || کلیدي کلمه (Keyword)
+tr | Aysha || Aysha || Aysha | درست || Valid || سم | — || — || —
+tr | int || int || int | غلط || Invalid || ناسم | کلیدی لفظ Keyword || Keyword || کلیدي کلمه (Keyword)
+tr | 3pak || 3pak || 3pak | غلط || Invalid || ناسم | پہلا حرف عدد ہے۔ || The first character is a digit. || لومړی توری عدد دی.
+tr | x-y || x-y || x-y | غلط || Invalid || ناسم | Underscore کے علاوہ خاص علامات کی اجازت نہیں ہے || No special symbols other than the underscore are allowed. || له انډرسکور پرته ځانګړې نښې نه منل کېږي.
+tr | Roll No || Roll No || Roll No | غلط || Invalid || ناسم | نام کے درمیان میں خالی جگہ کی اجازت نہیں۔ || A blank space is not allowed inside a name. || د نوم په منځ کې تشه نه منل کېږي.
+endtable
+@issue The table marks "Switch" (capital S) as invalid because it is a keyword, but C is case-sensitive (as the text just above says): only lower-case "switch" is a keyword, so "Switch" is a valid variable name.
+@sec 2-4-4 | 2.4.4 C میں استعمال ہونے والی ڈیٹا کے اقسام || 2.4.4 Data types in C || ۲.۴.۴ په C کې د ډېټا ډولونه
+### 2.4.4 C میں استعمال ہونے والی ڈیٹا کے اقسام (Datatypes in C) || 2.4.4 Data types used in C || ۲.۴.۴ په C کې کارېدونکي د ډېټا ډولونه
+p C کے تمام کمپائلر میں ویری ایبل کو درج ذیل بنیادی ڈیٹا ٹائپ (Datatypes) تفویض کر سکتے ہیں۔ || In all C compilers, variables can be assigned the following basic data types. || په ټولو C کمپایلرونو کې متغیرونو ته لاندې بنسټیز ډېټا ډولونه (Datatypes) ورکول کېدای شي.
+- انٹیجر Integer (int) || Integer (int) || بشپړ عدد Integer (int)
+- فلوٹنگ پوائنٹ (Float) اور ڈبل پریسیزن فلوٹنگ پوائنٹ (double) || Floating point (float) and double-precision floating point (double) || اعشاري (Float) او دوه چنده دقت اعشاري (double)
+- کیریکٹر Character (char) || Character (char) || توری Character (char)
+### 1۔ انٹیجر (int, long) ٹائپ (Integer Type) || 1. Integer (int, long) type || ۱. بشپړ عدد (int, long) ډول
+p انٹیجر صحیح اعداد ہوتے ہیں ان کی مقداروں کی حدود مشین پر منحصر ہوتی ہیں۔ پروگرامنگ کی ایک اچھی زبان وہ ہوتی ہے جو پروگرامر کو مختلف اقسام اور حدود (range) والے اعداد کے استعمال کے لیے سہولت فراہم کرے تاکہ اعداد کو انکی درکار میموری کے مطابق کمپیوٹر میں سٹور کیا جا سکے۔ C میں انٹیجر اسٹوریج کے لیے 3 مختلف کلاسیں استعمال ہوتی ہیں۔ جیسے short، int اور long۔ یہ تمام ڈیٹا ٹائپ دو طرح کی ہیں signed اور unsigned۔ || Integers are whole numbers; the limits of their values depend on the machine. A good programming language is one that lets the programmer use numbers of different kinds and ranges, so that numbers can be stored in the computer according to the memory they need. In C three different classes are used for integer storage: short, int and long. All these data types are of two kinds, signed and unsigned. || بشپړ عددونه (integers) سم عددونه دي؛ د ارزښتونو حدود یې په ماشین پورې اړه لري. ښه پروګرامي ژبه هغه ده چې پروګرامر ته د بېلابېلو ډولونو او حدودو (range) عددونو د کارولو اسانتیا ورکړي، چې عددونه د خپلې اړینې حافظې سره سم په کمپیوټر کې وساتل شي. په C کې د بشپړو عددونو د ساتنې لپاره درې بېل ټولګي کارېږي: short، int او long. دا ټول ډېټا ډولونه دوه ډوله دي: signed او unsigned.

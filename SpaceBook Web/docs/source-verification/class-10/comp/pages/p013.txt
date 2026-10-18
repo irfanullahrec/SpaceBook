@@ -1,0 +1,28 @@
+@printed 3
+@status lesson
+- اوسط کا اصل مطلب کیا ہے؟ || What does "average" actually mean? || د اوسط اصلي مانا څه ده؟
+- آپ کیسے اوسط معلوم کر سکتے ہیں؟ || How can you find the average? || تاسو څنګه اوسط موندلای شئ؟
+- اس طرح سے ہم مسئلے یا مشکل کو درست طور پر بیان کر سکتے ہیں۔ || In this way we can state the problem or difficulty correctly. || داسې موږ ستونزه یا سختي په سمه توګه بیانولای شو.
+### 1.1.2 مسئلے کا تجزیہ (Problem Analysis) || 1.1.2 Problem analysis || ۱.۱.۲ د ستونزې شننه
+p کمپیوٹر بذاتِ خود اتنا سمجھدار نہیں ہے کہ وہ کسی بھی مسئلے کا تجزیہ کر سکے اور پھر اس کے لیے حل بھی تجویز کر سکے۔ یہ صرف انسان (یعنی پروگرامر) کا کام ہے کہ وہ کسی بھی مسئلے کا تجزیہ کرے اور اس مسئلے کو حل کرنے کے لیے ہدایات (Code) لکھے اور پھر یہ ہدایات کمپیوٹر کو مہیا کر کے مسئلے کو حل کرے۔ || A computer by itself is not intelligent enough to analyse a problem and then also propose a solution for it. It is the work of a human being (the programmer) alone to analyse a problem, write instructions (code) to solve it, and then solve the problem by supplying these instructions to the computer. || کمپیوټر پخپله دومره هوښیار نه دی چې هره ستونزه وشني او بیا یې حل هم وړاندیز کړي. دا یوازې د انسان (یعنې پروګرامر) کار دی چې ستونزه وشني، د حل لپاره لارښوونې (Code) ولیکي او بیا یې کمپیوټر ته ورکړي او ستونزه حل کړي.
+svg شکل نمبر 1.2 مسئلے کا تجزیہ کرنا || Figure 1.2 Analysing a problem || ۱.۲ شکل د ستونزې شننه
+<svg viewBox="0 0 360 200" width="360" role="img" aria-label="The words problem, analysis and solution, with a magnifying glass held over the word analysis" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+<text x="70" y="62" font-size="48" fill="#1d6fb8">problem</text>
+<text x="40" y="168" font-size="54" fill="#1d6fb8">solution</text>
+<circle cx="250" cy="110" r="52" fill="#fff" stroke="#111827" stroke-width="10"/>
+<text x="206" y="124" font-size="30" fill="#1d6fb8">analysis</text>
+<path d="M288 148 L326 190" stroke="#7c2d12" stroke-width="16" stroke-linecap="round"/>
+</svg>
+endsvg
+p مسئلے کے چناؤ اور وضاحت ہو جانے کے بعد سب سے پہلے جس چیز کی ضرورت ہے وہ یہ ہے کہ مسئلے کی وجوہات کا تعین کیا جائے۔ || Once the problem has been chosen and explained, the first thing needed is to determine the causes of the problem. || کله چې ستونزه وټاکل شي او روښانه شي، لومړی څه چې اړین دي هغه د ستونزې د لاملونو ټاکل دي.
+p **وجوہات کا تجزیہ کرنے کے لیے:** || **To analyse the causes:** || **د لاملونو د شننې لپاره:**
+- مسئلے کے متعلق آپ کا تصور بالکل واضح ہونا چاہیے تاکہ آپ اس کا درست تجزیہ کر سکیں۔ || Your concept of the problem should be completely clear, so that you can analyse it correctly. || د ستونزې په اړه ستاسو تصور باید بېخي روښانه وي چې سمه شننه یې وکړای شئ.
+- مسئلے کے متعلق ابھرنے والے تمام سوالات پر ایک دفعہ پھر نظرِ ثانی کر لیں تاکہ یہ اطمینان ہو جائے کہ آپ کے سامنے درج ذیل نکات واضح ہیں: || Review once again all the questions that arise about the problem, so that you are sure the following points are clear to you: || د ستونزې په اړه ټولې راپورته شوې پوښتنې یو ځل بیا وګورئ چې ډاډه شئ لاندې ټکي درته روښانه دي:
+-- مسئلہ کس سے متعلق ہے؟ || Whom does the problem concern? || ستونزه له چا سره تړاو لري؟
+-- مسئلے سے کتنی دفعہ پالا پڑتا ہے؟ || How often is the problem encountered? || له ستونزې سره څو ځله مخ کېږو؟
+-- یہ کب اور کہاں پایا جاتا ہے؟ || When and where does it occur? || دا کله او چېرته پیدا کېږي؟
+-- اس سے کون متاثر ہوتا ہے؟ || Who is affected by it? || څوک ترې اغېزمن کېږي؟
+- ممکنہ وجوہات کے بارے میں سوچیں۔ || Think about the possible causes. || د ممکنو لاملونو په اړه فکر وکړئ.
+- وجوہات کی گروپ بندی کریں۔ || Group the causes. || لاملونه ډلبندي کړئ.
+- وجوہات کی تصویروں سے وضاحت کریں۔ || Explain the causes with pictures. || لاملونه په انځورونو روښانه کړئ.
+p جب مسئلے کی وجوہات کا تجزیہ ہو جائے تو پھر ان کے حل کے لیے منصوبہ بندی کریں۔ || Once the causes of the problem have been analysed, plan for their solution. || کله چې د ستونزې لاملونه وشنل شول، بیا یې د حل لپاره پلان جوړ کړئ.

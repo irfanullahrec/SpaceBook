@@ -1,0 +1,131 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s083-p074",
+  "title": "Control unit (end); c. Registers; Figure 3.1",
+  "headingUrdu": "کنٹرول یونٹ (اختتام)؛ ج۔ رجسٹرز؛ شکل ۳.۱",
+  "headingPashto": "کنټرول واحد (پای)؛ ج. رجسترونه؛ انځور ۳.۱",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 83,
+    "printedPage": "74"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s083-a",
+      "en": "brain controls the human body. It executes the program instructions, controls and directs the input, informs ALU for processing, arranges the storage and directs the data to the output device.",
+      "ur": "دماغ انسانی جسم کو کنٹرول کرتا ہے۔ یہ پروگرام کی ہدایات پر عمل کرتا ہے، ان پٹ کو کنٹرول اور رہنمائی کرتا ہے، پراسیسنگ کے لیے اے ایل یو کو مطلع کرتا ہے، ذخیرے کا انتظام کرتا ہے اور ڈیٹا کو آؤٹ پٹ آلے کی طرف بھیجتا ہے۔",
+      "ps": "مغز د انساني بدن کنټرولوي. دا د پروګرام لارښوونې پلي کوي، دخل کنټرولوي او لارښوونه کوي، د پروسس لپاره ALU خبروي، ذخیره ترتیبوي او ډېټا د وتلو وسیلې ته لارښوونه کوي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s083-b",
+      "en": "Control unit is responsible for directing the flow of instructions and data within the CPU. It directs the operation of the other units by providing timing and control signals. The control unit contains the necessary logic to interpret instructions and to generate the signals necessary for the execution of those instructions. The descriptive words “fetch” and “execute” are used to describe the actions of the control unit. It fetches an instruction by sending an address and a read command to the memory unit. The instruction at that memory address is transferred to the control unit for decoding. It then generates the necessary signals to execute the instruction.",
+      "ur": "کنٹرول یونٹ سی پی یو کے اندر ہدایات اور ڈیٹا کے بہاؤ کی رہنمائی کا ذمہ دار ہے۔ یہ وقت اور کنٹرول کے اشارے فراہم کر کے دوسرے یونٹوں کے عمل کی رہنمائی کرتا ہے۔ کنٹرول یونٹ میں ہدایات کی تشریح اور ان ہدایات پر عمل کے لیے ضروری اشارے پیدا کرنے کا ضروری منطق ہوتی ہے۔ ’’حاصل کرنا‘‘ اور ’’چلانا‘‘ کے وضاحتی الفاظ کنٹرول یونٹ کے اعمال بیان کرنے کے لیے استعمال ہوتے ہیں۔ یہ میموری یونٹ کو پتہ اور پڑھنے کی کمانڈ بھیج کر ہدایت حاصل کرتا ہے۔ اس میموری پتے کی ہدایت سمجھنے کے لیے کنٹرول یونٹ کو منتقل کی جاتی ہے۔ پھر یہ ہدایت پر عمل کے لیے ضروری اشارے پیدا کرتا ہے۔",
+      "ps": "کنټرول واحد په CPU کې د لارښوونو او ډېټا د جریان د لارښوونې مسوولیت لري. دا د وخت او کنټرول سیګنالونو په برابرولو د نورو واحدونو عمل لارښوونه کوي. کنټرول واحد هغه اړین منطق لري چې لارښوونې تشریح کړي او د هغو لارښوونو د پلي کېدو لپاره اړین سیګنالونه جوړ کړي. تشریحي ټکي “راوړل” او “پلي کول” د کنټرول واحد د عملونو د بیانولو لپاره کارول کېږي. دا یوه لارښوونه د حافظې واحد ته د یوې پتې او د لوستلو امر په لېږلو راوړي. په هغه حافظه پته لارښوونه د پوهېدو لپاره کنټرول واحد ته لېږدول کېږي. بیا دا د لارښوونې د پلي کولو لپاره اړین سیګنالونه جوړوي."
+    },
+    {
+      "id": "cs11-s083-h1",
+      "en": "c. Registers",
+      "ur": "ج۔ رجسٹرز",
+      "ps": "ج. رجسترونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s083-c",
+      "en": "Registers are small memory devices available in the CPU. These are used to store data temporarily. CPU registers are at the top of the memory hierarchy, and provide the fastest way for a CPU to access data. Each register is designed for a special purpose and the size of each varies. Registers are measured by the number of bits they can hold, like 8-bits, 16 bits or a 32-bits register. Processor contains different kinds of registers and is classified according to their content or instructions. CPU registers are divided into two main types.",
+      "ur": "رجسٹرز چھوٹے میموری آلات ہیں جو سی پی یو میں موجود ہوتے ہیں۔ یہ ڈیٹا کو عارضی طور پر محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ سی پی یو رجسٹرز میموری درجہ بندی کے اوپر ہوتے ہیں اور سی پی یو کے لیے ڈیٹا تک پہنچنے کا تیز ترین طریقہ فراہم کرتے ہیں۔ ہر رجسٹر ایک خاص مقصد کے لیے بنایا گیا ہے اور ہر ایک کا سائز مختلف ہوتا ہے۔ رجسٹرز کو بٹس کی اس تعداد سے ناپا جاتا ہے جو وہ رکھ سکتے ہیں، جیسے ۸ بٹ، ۱۶ بٹ یا ۳۲ بٹ کا رجسٹر۔ پراسیسر مختلف اقسام کے رجسٹرز رکھتا ہے اور ان کے مواد یا ہدایات کے مطابق ان کی درجہ بندی کی جاتی ہے۔ سی پی یو رجسٹرز دو بنیادی اقسام میں تقسیم ہیں۔",
+      "ps": "رجسترونه د CPU کې شته کوچني حافظې وسایل دي. دا د ډېټا په لنډمهاله ساتلو کارول کېږي. د CPU رجسترونه د حافظې د مرتبو په سر کې دي او CPU ته د ډېټا ته د رسېدو ګړندۍ لار برابروي. هر رجستر د ځانګړې موخې لپاره ډیزاین شوی او د هر یو کچه توپیر لري. رجسترونه د هغو بټونو په شمېر اندازه کېږي چې ساتلای شي، لکه ۸ بټه، ۱۶ بټه یا ۳۲ بټه رجستر. پروسیسر مختلف ډوله رجسترونه لري او د هغو د منځپانګې یا لارښوونو مطابق درجه بندي کېږي. د CPU رجسترونه په دوو اصلي ډولونو وېشل کېږي."
+    },
+    {
+      "id": "cs11-s083-t1",
+      "en": "General Purpose Registers",
+      "ur": "عمومی مقصد کے رجسٹرز",
+      "ps": "د عمومي موخې رجسترونه",
+      "listGroup": "regt"
+    },
+    {
+      "id": "cs11-s083-t2",
+      "en": "Special Purpose Registers",
+      "ur": "خصوصی مقصد کے رجسٹرز",
+      "ps": "د ځانګړې موخې رجسترونه",
+      "listGroup": "regt"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s083-a",
+        "cs11-s083-b",
+        "cs11-s083-h1",
+        "cs11-s083-c",
+        "cs11-s083-t1",
+        "cs11-s083-t2"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s083-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 265\" role=\"img\" aria-label=\"CPU registers: ALU, control unit, registers, RAM and ROM\" style=\"width:100%;max-width:340px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"150\" height=\"72\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"85.0\" y=\"42.0\" font-size=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">ALU</text><text x=\"85.0\" y=\"60.0\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Does all the computing</text><rect x=\"180\" y=\"10\" width=\"150\" height=\"72\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"255.0\" y=\"42.0\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Control Unit</text><text x=\"255.0\" y=\"60.0\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Controls and checks</text><rect x=\"10\" y=\"98\" width=\"320\" height=\"50\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"170\" y=\"124\" font-size=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Registers</text><text x=\"170\" y=\"140\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Workspace</text><rect x=\"10\" y=\"170\" width=\"150\" height=\"80\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"85.0\" y=\"210.0\" font-size=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">RAM</text><rect x=\"180\" y=\"170\" width=\"150\" height=\"80\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"255.0\" y=\"210.0\" font-size=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">ROM</text><g stroke=\"#111\" stroke-width=\"3\" fill=\"#111\"><line x1=\"85\" y1=\"82\" x2=\"85\" y2=\"98\"/><line x1=\"255\" y1=\"82\" x2=\"255\" y2=\"98\"/><line x1=\"70\" y1=\"150\" x2=\"70\" y2=\"170\"/><line x1=\"100\" y1=\"150\" x2=\"100\" y2=\"170\"/><line x1=\"255\" y1=\"150\" x2=\"255\" y2=\"170\"/></g></svg>",
+      "caption": "Figure 3.1 CPU Registers",
+      "captionUrdu": "شکل ۳.۱ سی پی یو رجسٹرز",
+      "captionPashto": "انځور ۳.۱ د CPU رجسترونه",
+      "labels": [
+        {
+          "en": "ALU",
+          "ur": "اے ایل یو",
+          "ps": "ALU"
+        },
+        {
+          "en": "Does all the computing",
+          "ur": "تمام کمپیوٹنگ کرتا ہے",
+          "ps": "ټوله کمپیوټینګ کوي"
+        },
+        {
+          "en": "Control Unit",
+          "ur": "کنٹرول یونٹ",
+          "ps": "کنټرول واحد"
+        },
+        {
+          "en": "Controls and checks",
+          "ur": "کنٹرول کرتا اور جانچتا ہے",
+          "ps": "کنټرولوي او ازمايي"
+        },
+        {
+          "en": "Registers",
+          "ur": "رجسٹرز",
+          "ps": "رجسترونه"
+        },
+        {
+          "en": "Workspace",
+          "ur": "کام کی جگہ",
+          "ps": "کاري ځای"
+        },
+        {
+          "en": "RAM",
+          "ur": "ریم",
+          "ps": "RAM"
+        },
+        {
+          "en": "ROM",
+          "ur": "روم",
+          "ps": "ROM"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 74: the end of the control unit sentence (continuing from page 73), the paragraph on the control unit, “c. Registers” and Figure 3.1 CPU Registers (a block diagram redrawn here as a coded SVG with the printed labels ALU, Control Unit, Registers, RAM and ROM). The arrows between the blocks in the print are shown here as plain bars. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:52:54.796591+00:00",
+    "scope": "Scan 83 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

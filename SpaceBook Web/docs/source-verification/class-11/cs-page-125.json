@@ -1,0 +1,76 @@
+{
+  "chapter": "cs11-u4",
+  "id": "cs11-s125-p116",
+  "title": "c. SDRAM; d. DDR SDRAM",
+  "headingUrdu": "الف۔ ایس ڈی ریم؛ د۔ ڈی ڈی آر ایس ڈی ریم",
+  "headingPashto": "ج. SDRAM؛ د. DDR SDRAM",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 125,
+    "printedPage": "116"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s125-h1",
+      "en": "c. Synchronous Dynamic Random Access Memory (SDRAM)",
+      "ur": "ج۔ سنکرونس ڈائنامک رینڈم ایکسیس میموری (ایس ڈی ریم)",
+      "ps": "ج. همغږې متحرکه تصادفي لاسرسي حافظه (SDRAM)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s125-a",
+      "en": "SDRAM also known as single data rate (SDR) SDRAM, is dynamic random access memory (DRAM). SDRAM is a high speed semiconductor memory. It is an improved form of the older DRAM (Dynamic Random Access Memory). SDRAM operates synchronously, which means that it operates in sync with the system data bus. Therefore, it can operate at much greater speeds than non-synchronous RAM. SDRAM transmits data at the same clock speed as the CPU’s internal clock, allowing for faster and more efficient data transfer. SDRAM is commonly used in modern computers and new generations like DDR (also known as DDR1), DDR2 and DDR3 are available in the market.",
+      "ur": "ایس ڈی ریم، جسے سنگل ڈیٹا ریٹ (ایس ڈی آر) ایس ڈی ریم بھی کہتے ہیں، ڈائنامک رینڈم ایکسیس میموری (ڈی ریم) ہے۔ ایس ڈی ریم تیز رفتار نیم موصل میموری ہے۔ یہ پرانی ڈی ریم (ڈائنامک رینڈم ایکسیس میموری) کی بہتر شکل ہے۔ ایس ڈی ریم ہم وقت کام کرتی ہے، یعنی یہ سسٹم ڈیٹا بس کے ساتھ ہم آہنگی میں کام کرتی ہے۔ اس لیے یہ غیر ہم وقت ریم سے کہیں زیادہ رفتار پر کام کر سکتی ہے۔ ایس ڈی ریم سی پی یو کی اندرونی گھڑی جیسی کلاک رفتار پر ڈیٹا منتقل کرتی ہے جس سے تیز اور زیادہ مؤثر ڈیٹا منتقلی ممکن ہوتی ہے۔ ایس ڈی ریم جدید کمپیوٹرز میں عام طور پر استعمال ہوتی ہے اور ڈی ڈی آر (جسے ڈی ڈی آر۱ بھی کہتے ہیں)، ڈی ڈی آر۲ اور ڈی ڈی آر۳ جیسی نئی نسلیں مارکیٹ میں دستیاب ہیں۔",
+      "ps": "SDRAM، چې د یو ډېټا کچې (SDR) SDRAM هم ورته ویل کېږي، متحرکه تصادفي لاسرسي حافظه (DRAM) ده. SDRAM یو لوړ ګړندیتوب نیمه تېرونکې حافظه ده. دا د زړې DRAM (متحرکه تصادفي لاسرسي حافظه) ښه شوې بڼه ده. SDRAM همغږي کار کوي، مانا دا چې د سیسټم د ډېټا بس سره په همغږۍ کې کار کوي. نو دا له ناهمغږې RAM نه ډیر لوړ ګړندیتوب سره کار کولای شي. SDRAM ډېټا د CPU د دننني ساعت په ګړندیتوب لېږدوي چې ګړندي او ډیر اغېزمن د ډېټا لېږد ته اجازه ورکوي. SDRAM په مدرنو کمپیوټرونو کې عموماً کارول کېږي او نوې نسلونه لکه DDR (چې DDR1 هم ورته ویل کېږي)، DDR2 او DDR3 په بازار کې شته."
+    },
+    {
+      "id": "cs11-s125-c1",
+      "en": "Figure 4.24 SDRAM",
+      "ur": "شکل ۴.۲۴ ایس ڈی ریم",
+      "ps": "انځور ۴.۲۴ SDRAM",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s125-h2",
+      "en": "d. Double Data Rate Synchronous Random Access Memory (DDR SDRAM)",
+      "ur": "د۔ ڈبل ڈیٹا ریٹ سنکرونس رینڈم ایکسیس میموری (ڈی ڈی آر ایس ڈی ریم)",
+      "ps": "د. دوه ګونې ډېټا کچې همغږې تصادفي لاسرسي حافظه (DDR SDRAM)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s125-b",
+      "en": "DDR SDRAM is type of SDRAM. The name “double data rate” refers to the fact that a DDR SDRAM can achieves nearly twice the bandwidth of a single data rate (SDR) SDRAM running at the same speed. It is improved SDRAM which allows a computer to transfer data at twice the speed. It has improved memory clock speed as compared to simple SDRAM. It reads or writes two consecutive words per clock cycle.",
+      "ur": "ڈی ڈی آر ایس ڈی ریم، ایس ڈی ریم کی ایک قسم ہے۔ نام ’’ڈبل ڈیٹا ریٹ‘‘ اس حقیقت کی طرف اشارہ کرتا ہے کہ ایک ڈی ڈی آر ایس ڈی ریم اسی رفتار پر چلنے والی سنگل ڈیٹا ریٹ (ایس ڈی آر) ایس ڈی ریم کے تقریباً دگنے بینڈوڈتھ حاصل کر سکتی ہے۔ یہ بہتر ایس ڈی ریم ہے جو کمپیوٹر کو دگنی رفتار سے ڈیٹا منتقل کرنے کی اجازت دیتی ہے۔ سادہ ایس ڈی ریم کے مقابلے میں اس کی میموری کلاک رفتار بہتر ہے۔ یہ ہر کلاک سائیکل میں دو مسلسل الفاظ پڑھتی یا لکھتی ہے۔",
+      "ps": "DDR SDRAM د SDRAM یو ډول دی. نوم “دوه ګونې ډېټا کچه” هغې حقیقت ته اشاره کوي چې یو DDR SDRAM په همدې ګړندیتوب چلېدونکې یو ډېټا کچې (SDR) SDRAM نژدې دوه چنده بېنډوېډت ترلاسه کولای شي. دا ښه شوې SDRAM ده چې کمپیوټر ته اجازه ورکوي ډېټا دوه چنده ګړندیتوب لېږدوي. د ساده SDRAM په پرتله یې د حافظې د ساعت ګړندیتوب ښه شوی. دا په هر ساعتي دوره کې دوه پرله پسې کلمې لولي یا لیکي."
+    },
+    {
+      "id": "cs11-s125-c2",
+      "en": "Figure 4.25 DDR SDRAM",
+      "ur": "شکل ۴.۲۵ ڈی ڈی آر ایس ڈی ریم",
+      "ps": "انځور ۴.۲۵ DDR SDRAM",
+      "kind": "caption"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s125-h1",
+        "cs11-s125-a",
+        "cs11-s125-c1",
+        "cs11-s125-h2",
+        "cs11-s125-b",
+        "cs11-s125-c2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 116: “c. Synchronous Dynamic Random Access Memory (SDRAM)” with Figure 4.24 and “d. Double Data Rate Synchronous Random Access Memory (DDR SDRAM)” with Figure 4.25. The top of the page and the left edge are slightly clipped. The text for SDRAM is printed with the sentence “SDRAM operates synchronously …” in a mixed order of lines in the scan; it is given in reading order. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:05:59.680240+00:00",
+    "scope": "Scan 125 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

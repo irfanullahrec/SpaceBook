@@ -1,0 +1,114 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s227-p218",
+  "title": "e. Object Relational Database Model; 7.1.8 Database Languages for Relational Databases; SQL; a. DDL",
+  "headingUrdu": "ہ۔ آبجیکٹ ریلیشنل ڈیٹا بیس ماڈل؛ ۷.۱.۸ ریلیشنل ڈیٹا بیسز کے لیے ڈیٹا بیس زبانیں؛ ایس کیو ایل؛ الف۔ ڈی ڈی ایل",
+  "headingPashto": "ه. څیز اړونده ډېټابېس ماډل؛ ۷.۱.۸ د اړونده ډېټابېسونو لپاره د ډېټابېس ژبې؛ SQL؛ الف. DDL",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 227,
+    "printedPage": "218"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s227-h1",
+      "en": "e. Object Relational Database Model",
+      "ur": "ہ۔ آبجیکٹ ریلیشنل ڈیٹا بیس ماڈل",
+      "ps": "ه. څیز اړونده ډېټابېس ماډل",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s227-a",
+      "en": "Object relational database model add new object storage capabilities to the relational database systems at the core of modern information systems. These new facilities integrate management of traditional fielded data, complex objects such as time-series and geospatial data and diverse binary media such as audio, video, images, and applets. By encapsulating methods with data structures, an ORDB Model server can execute complex analytical and data manipulation operations to search and transform multimedia and other complex objects.",
+      "ur": "آبجیکٹ ریلیشنل ڈیٹا بیس ماڈل جدید معلوماتی نظاموں کے مرکز میں موجود ریلیشنل ڈیٹا بیس سسٹمز میں نئی آبجیکٹ ذخیرہ صلاحیتیں شامل کرتا ہے۔ یہ نئی سہولیات روایتی فیلڈ ڈیٹا، ٹائم سیریز اور جیو اسپیشل ڈیٹا جیسے پیچیدہ آبجیکٹس اور آڈیو، ویڈیو، تصاویر اور ایپلٹس جیسے متنوع بائنری میڈیا کے انتظام کو مربوط کرتی ہیں۔ طریقوں کو ڈیٹا ڈھانچوں کے ساتھ سمو کر او آر ڈی بی ماڈل سرور ملٹی میڈیا اور دیگر پیچیدہ آبجیکٹس کو تلاش اور تبدیل کرنے کے لیے پیچیدہ تجزیاتی اور ڈیٹا ہیرا پھیری کی کارروائیاں انجام دے سکتا ہے۔",
+      "ps": "څیز اړونده ډېټابېس ماډل د مدرنو معلوماتي سیسټمونو په مرکز کې اړوند ډېټابېس سیسټمونو ته نوې څیز ذخیرې وړتیاوې زیاتوي. دا نوې اسانتیاوې د دودیز ساحه لرونکې ډېټا، پیچلي څیزونو لکه د وخت لړۍ او جغرافیايي ډېټا او مختلفو دوتایي رسنیو لکه غږ، ویډیو، انځورونه، او اپلېټونو مدیریت مدغم کوي. د ډېټا جوړښتونو سره د طریقو په پوښلو سره د ORDB ماډل خدمتګار کولای شي د څو رسنیو او نورو پیچلو څیزونو د لټون او بدلولو لپاره پیچلي تحلیلي او د ډېټا د کار عملیات ترسره کړي."
+    },
+    {
+      "id": "cs11-s227-h2",
+      "en": "7.1.8 Database Languages for Relational Databases",
+      "ur": "۷.۱.۸ ریلیشنل ڈیٹا بیسز کے لیے ڈیٹا بیس زبانیں",
+      "ps": "۷.۱.۸ د اړونده ډېټابېسونو لپاره د ډېټابېس ژبې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s227-b",
+      "en": "To manipulate data, one approach is to interact directly with the DBMS using a special language called a query language.",
+      "ur": "ڈیٹا میں ترمیم کے لیے ایک طریقہ یہ ہے کہ ڈی بی ایم ایس کے ساتھ براہِ راست ایک خاص زبان استعمال کر کے تعامل کیا جائے جسے کوئری لینگویج کہتے ہیں۔",
+      "ps": "د ډېټا د کار لپاره یوه طریقه دا ده چې د DBMS سره مستقیم د یوې ځانګړې ژبې په کارولو سره چې د پوښتنې ژبه بلل کېږي متقابل عمل وشي."
+    },
+    {
+      "id": "cs11-s227-h3",
+      "en": "Structured Query Language (SQL)",
+      "ur": "سٹرکچرڈ کوئری لینگویج (ایس کیو ایل)",
+      "ps": "جوړښت لرونکې پوښتنې ژبه (SQL)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s227-c",
+      "en": "Almost all relational database management systems use SQL (Structured Query Language) for data manipulation and retrieval. SQL is the standard language for relational database systems. SQL is further divided into the following languages:",
+      "ur": "تقریباً تمام ریلیشنل ڈیٹا بیس مینجمنٹ سسٹمز ڈیٹا میں ترمیم اور حصول کے لیے ایس کیو ایل (سٹرکچرڈ کوئری لینگویج) استعمال کرتے ہیں۔ ایس کیو ایل ریلیشنل ڈیٹا بیس سسٹمز کے لیے معیاری زبان ہے۔ ایس کیو ایل مزید درج ذیل زبانوں میں تقسیم ہے:",
+      "ps": "نژدې ټول اړوند ډېټابېس مدیریت سیسټمونه د ډېټا د کار او ترلاسه کولو لپاره SQL (جوړښت لرونکې پوښتنې ژبه) کاروي. SQL د اړوندو ډېټابېس سیسټمونو لپاره معیاري ژبه ده. SQL نور په لاندې ژبو وېشل کېږي:"
+    },
+    {
+      "id": "cs11-s227-l1",
+      "en": "DDL (Data Definition Language)",
+      "ur": "ڈی ڈی ایل (ڈیٹا ڈیفینیشن لینگویج)",
+      "ps": "DDL (د ډېټا تعریف ژبه)",
+      "listGroup": "sql"
+    },
+    {
+      "id": "cs11-s227-l2",
+      "en": "DML (Data Manipulation Language)",
+      "ur": "ڈی ایم ایل (ڈیٹا مینیپولیشن لینگویج)",
+      "ps": "DML (د ډېټا کار کولو ژبه)",
+      "listGroup": "sql"
+    },
+    {
+      "id": "cs11-s227-l3",
+      "en": "DCL (Data Control Language)",
+      "ur": "ڈی سی ایل (ڈیٹا کنٹرول لینگویج)",
+      "ps": "DCL (د ډېټا کنټرول ژبه)",
+      "listGroup": "sql"
+    },
+    {
+      "id": "cs11-s227-h4",
+      "en": "a. Data Definition Language (DDL)",
+      "ur": "الف۔ ڈیٹا ڈیفینیشن لینگویج (ڈی ڈی ایل)",
+      "ps": "الف. د ډېټا تعریف ژبه (DDL)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s227-d",
+      "en": "Data definition language (DDL) is a database language that defines the structure in which data are stored. These structures may include database, table, query fields and records.",
+      "ur": "ڈیٹا ڈیفینیشن لینگویج (ڈی ڈی ایل) ڈیٹا بیس کی ایسی زبان ہے جو اس ساخت کی تعریف کرتی ہے جس میں ڈیٹا محفوظ ہوتا ہے۔ ان ساختوں میں ڈیٹا بیس، ٹیبل، کوئری فیلڈز اور ریکارڈز شامل ہو سکتے ہیں۔",
+      "ps": "د ډېټا تعریف ژبه (DDL) یوه ډېټابېس ژبه ده چې هغه جوړښت تعریفوي چې په هغه ډېټا ساتل کېږي. دا جوړښتونه کېدای شي ډېټابېس، جدول، د پوښتنې ساحې او ثبتونه شامل کړي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s227-h1",
+        "cs11-s227-a",
+        "cs11-s227-h2",
+        "cs11-s227-b",
+        "cs11-s227-h3",
+        "cs11-s227-c",
+        "cs11-s227-l1",
+        "cs11-s227-l2",
+        "cs11-s227-l3",
+        "cs11-s227-h4",
+        "cs11-s227-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 218: “e. Object Relational Database Model”, the banner “7.1.8 Database Languages for Relational Databases” with its lead-in sentence, “Structured Query Language (SQL)” with the list a–c and “a. Data Definition Language (DDL)”. The first line of the page is cut at the top. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:45:38.127205+00:00",
+    "scope": "Scan 227 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

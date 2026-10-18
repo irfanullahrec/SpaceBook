@@ -1,0 +1,34 @@
+@printed 65
+@status lesson
+### تقسیم کے آپریٹر کا کام || How the division operator works || د وېش عملګر کار
+p ڈویژن آپریٹر کا عمل دوسرے آپریٹرز سے مختلف ہے۔ ڈویژن آپریشن کا نتیجہ ہمیشہ ایک عدد ہوتا ہے اگر شمار کنندہ (Dividend) اور مخرج (Divisor) انٹیجر ہوں۔ اس صورت میں کسری (Fractional) حصہ ختم (Truncate) کر دیا جاتا ہے۔ مثال کے طور پر، 7/2 کا نتیجہ 3 ہے، جیسا کہ شکل نمبر 3.3 میں دکھایا گیا ہے۔ || The working of the division operator differs from the other operators. If the dividend and the divisor are integers, the result of division is always a whole number; the fractional part is cut off (truncated). For example, 7/2 gives 3, as shown in Figure 3.3. || د وېش عملګر کار له نورو عملګرونو توپیر لري. که وېشل کېدونکی (Dividend) او وېشونکی (Divisor) بشپړ عددونه وي، د وېش پایله تل بشپړ عدد وي؛ کسري (Fractional) برخه پرې کېږي (Truncate). د بېلګې په توګه د 7/2 پایله 3 ده، لکه څنګه چې په ۳.۳ شکل کې ښودل شوي.
+svg شکل نمبر 3.3 تقسیم کا عمل || Figure 3.3 The process of division || ۳.۳ شکل د وېش بهیر
+<svg viewBox="0 0 300 170" width="300" role="img" aria-label="Long division of 7 by 2: quotient 3 above, divisor 2, dividend 7, minus 6, remainder 1; caption: The remainder is 1 when 7 is divided by 2" font-family="Georgia, Times New Roman, serif" text-anchor="middle">
+<text x="150" y="16" font-size="11" fill="#dc2626" font-style="italic">quotient</text><text x="150" y="38" font-size="22" font-weight="700" fill="#dc2626">3</text>
+<text x="70" y="70" font-size="12" font-style="italic">divisor</text><text x="108" y="72" font-size="24" font-weight="700">2</text>
+<path d="M124 44 Q132 60 124 80 M124 44 H200" fill="none" stroke="#111827" stroke-width="2"/>
+<text x="150" y="72" font-size="24" font-weight="700">7</text><text x="190" y="72" font-size="12" font-style="italic">dividend</text>
+<text x="150" y="104" font-size="24" font-weight="700">− 6</text><path d="M120 114 H190" stroke="#111827" stroke-width="2"/>
+<text x="150" y="140" font-size="24" font-weight="700">1</text><text x="194" y="140" font-size="12" font-style="italic">remainder</text>
+<text x="150" y="164" font-size="11" font-style="italic">"The remainder is 1 when 7 is divided by 2"</text>
+</svg>
+endsvg
+@sec 3-2-2 | 3.2.2 اسائنمنٹ آپریٹر = || 3.2.2 Assignment operator = || ۳.۲.۲ د ګمارنې عملګر =
+### 3.2.2 اسائنمنٹ آپریٹر = (Assignment Operator) || 3.2.2 The assignment operator = || ۳.۲.۲ د ګمارنې عملګر = (Assignment Operator)
+p اسائنمنٹ آپریٹر کو ویری ایبل (میموری لوکیشن) کو قیمت تفویض کرنے کے لئے استعمال کیا جاتا ہے۔ C میں ایک ہی اسائنمنٹ آپریٹر ہے۔ C میں یہ = علامت اپنے دائیں جانب موجود عبارت (expression) کو حل کر کے اس کی قیمت بائیں جانب موجود ویری ایبل کو تفویض کرتا ہے۔ یہ ویری ایبل کو عددی یا حرف کی قیمت تفویض کرنے کے لئے استعمال کیا جاتا ہے۔ تاہم، اس آپریٹر کے ساتھ اسٹرنگ ڈیٹا کسی ویری ایبل کو تفویض نہیں کیا جا سکتا ہے۔ اسائنمنٹ سٹیٹمنٹ کا فارمیٹ درج ذیل ہے۔ || The assignment operator is used to assign a value to a variable (memory location). C has a single assignment operator. In C this = sign evaluates the expression on its right and assigns its value to the variable on its left. It is used to assign a numeric or character value to a variable; however, string data cannot be assigned to a variable with this operator. The format of an assignment statement is: || د ګمارنې عملګر متغیر (د حافظې ځای) ته د ارزښت ورکولو لپاره کارېږي. په C کې یو ګمارنې عملګر دی. دا = نښه خپل ښي لوري عبارت (expression) حلوي او ارزښت یې کیڼ لوري متغیر ته ورکوي. متغیر ته د عددي یا حرفي ارزښت ورکولو لپاره کارېږي؛ خو د دې عملګر په واسطه سټرنګ ډېټا متغیر ته نه شي ورکول کېدای. د ګمارنې بیان بڼه دا ده:
+m Variable = Character_constant/Variable/Expression;
+@issue "C has a single assignment operator" contradicts section 3.2.3, which presents the compound assignment operators (+=, -= …), which are also assignment operators in C.
+p مثال کے طور پر نیچے اسائنمنٹ ٹیبل پر غور کریں۔ || For example, consider the assignment table below. || د بېلګې په توګه لاندې د ګمارنې جدول ته پام وکړئ.
+table اسائنمنٹ کی مثالیں || Assignment examples || د ګمارنې بېلګې
+th | Operation || Operation || عملیه | Description || Description || تشریح
+tr | x = 10 || x = 10 || x = 10 | Assigns 10 to variable x || Assigns 10 to variable x || متغیر x ته 10 ورکوي
+tr | y = (5 + 4) / 2 || y = (5 + 4) / 2 || y = (5 + 4) / 2 | Evaluates expression (5+4)/2 and assign result to y || Evaluates the expression (5+4)/2 and assigns the result to y || (5+4)/2 عبارت حلوي او پایله y ته ورکوي
+tr | z = x + y || z = x + y || z = x + y | Evaluates x + y and assign result to z || Evaluates x + y and assigns the result to z || x + y حلوي او پایله z ته ورکوي
+tr | 5 = x || 5 = x || 5 = x | Error, you cannot re-assign a value to a constant || Error: you cannot re-assign a value to a constant || تېروتنه: ثابت ته بیا ارزښت نه شي ورکول کېدای
+tr | 10 = 10 || 10 = 10 || 10 = 10 | Error, you cannot re-assign a value to a constant || Error: you cannot re-assign a value to a constant || تېروتنه: ثابت ته بیا ارزښت نه شي ورکول کېدای
+endtable
+@issue The table's English "and assign result" should read "and assigns the result" (corrected in the English slot). With int y, (5+4)/2 gives 4 (integer division).
+p اسائنمنٹ آپریٹر کے دائیں جانب (RHS) کانسٹنٹ، ایکسپریشن یا ویری ایبل ہونا ضروری ہے جبکہ بائیں ہاتھ کی طرف (LHS) ایک ویری ایبل (درست میموری لوکیشن) ہونا چاہئے۔ || The right-hand side (RHS) of the assignment operator must be a constant, expression or variable, while the left-hand side (LHS) must be a variable (a valid memory location). || د ګمارنې عملګر ښي لوري (RHS) ته باید ثابت، عبارت یا متغیر وي، او کیڼ لوري (LHS) ته باید یو متغیر (سم د حافظې ځای) وي.
+@sec 3-2-3 | 3.2.3 کمپاؤنڈ اسائنمنٹ آپریٹرز || 3.2.3 Compound assignment operators || ۳.۲.۳ مرکب ګمارنې عملګرونه
+### 3.2.3 کمپاؤنڈ اسائنمنٹ آپریٹرز (Compound Assignment Operator) || 3.2.3 Compound assignment operators || ۳.۲.۳ مرکب ګمارنې عملګرونه
+p C کمپاؤنڈ اسائنمنٹ آپریٹرز فراہم کرتی ہے جو اسائنمنٹ آپریٹر اور حسابی آپریٹرز کا مجموعہ ہے۔ کمپاؤنڈ اسائنمنٹ آپریٹرز حسابی عوامل کو بہت آسانی سے حل کرنے کی سہولت فراہم کرتے ہیں۔ کمپاؤنڈ اسائنمنٹ آپریٹر کا عمومی سائنٹکس درج ذیل ہے۔ || C provides compound assignment operators, which combine the assignment operator with the arithmetic operators. Compound assignment operators make it very easy to carry out arithmetic operations. The general syntax of a compound assignment operator is: || C مرکب ګمارنې عملګرونه لري چې د ګمارنې او حسابي عملګرونو یوځای والی دی. مرکب ګمارنې عملګرونه حسابي عملیات ډېر اسانه کوي. د مرکب ګمارنې عملګر عمومي ترکیب دا دی:

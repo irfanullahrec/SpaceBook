@@ -1,0 +1,208 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s175-p166",
+  "title": "Difference between Circuit and Packet Switching; 5.3.4 IP Addressing — start",
+  "headingUrdu": "سرکٹ اور پیکٹ سوئچنگ میں فرق؛ ۵.۳.۴ آئی پی ایڈریسنگ — آغاز",
+  "headingPashto": "د سرکټ او کڅوړې سویچنګ توپیر؛ ۵.۳.۴ د IP پتې کول — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 175,
+    "printedPage": "166"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s175-h1",
+      "en": "Difference between Circuit and Packet Switching",
+      "ur": "سرکٹ اور پیکٹ سوئچنگ میں فرق",
+      "ps": "د سرکټ او کڅوړې سویچنګ توپیر",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s175-h2",
+      "en": "5.3.4 IP Addressing",
+      "ur": "۵.۳.۴ آئی پی ایڈریسنگ",
+      "ps": "۵.۳.۴ د IP پتې کول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s175-a",
+      "en": "An Internet Protocol address (IP address) is a number that is used to identify a device, for example a computer, a printer, etc. on the network. Each device on a network must have a unique IP address to communicate with other network devices. A host (usually a computer) is a device that sends or receives information on the network. Network devices transmit the data across the network. These devices include hubs, switches and routers. On a LAN, each",
+      "ur": "انٹرنیٹ پروٹوکول ایڈریس (آئی پی ایڈریس) ایک نمبر ہے جو نیٹ ورک پر کسی آلے، مثلاً کمپیوٹر، پرنٹر وغیرہ، کی شناخت کے لیے استعمال ہوتا ہے۔ نیٹ ورک کے ہر آلے کو دوسرے نیٹ ورک آلات سے رابطے کے لیے منفرد آئی پی ایڈریس درکار ہوتا ہے۔ ہوسٹ (عموماً کمپیوٹر) وہ آلہ ہے جو نیٹ ورک پر معلومات بھیجتا یا وصول کرتا ہے۔ نیٹ ورک آلات نیٹ ورک کے پار ڈیٹا منتقل کرتے ہیں۔ ان آلات میں ہب، سوئچ اور راؤٹر شامل ہیں۔ لین پر ہر",
+      "ps": "د انټرنېټ پروتوکول پته (IP پته) یوه شمېره ده چې په شبکه د یوې وسیلې، د بېلګې په توګه کمپیوټر، پرنټر او نورو، د پېژندلو لپاره کارول کېږي. په شبکه هره وسیله باید د نورو شبکې وسایلو سره د اړیکې لپاره ځانګړې IP پته ولري. کوربه (معمولاً کمپیوټر) هغه وسیله ده چې په شبکه معلومات لېږي یا ترلاسه کوي. د شبکې وسایل ډېټا د شبکې په اوږدو کې لېږدوي. دا وسایل هبونه، سویچونه او روټرونه شاملوي. په LAN کې هر",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s175-h1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s175-h2",
+        "cs11-s175-a"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Table: Difference between Circuit and Packet Switching",
+      "captionUrdu": "جدول: سرکٹ اور پیکٹ سوئچنگ میں فرق",
+      "captionPashto": "جدول: د سرکټ او کڅوړې سویچنګ توپیر",
+      "headers": [
+        {
+          "en": "No.",
+          "ur": "نمبر",
+          "ps": "شمېره"
+        },
+        {
+          "en": "Packet switching",
+          "ur": "پیکٹ سوئچنگ",
+          "ps": "د کڅوړې سویچنګ"
+        },
+        {
+          "en": "Circuit switching",
+          "ur": "سرکٹ سوئچنگ",
+          "ps": "د سرکټ سویچنګ"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "Bandwidth is allocated dynamically.",
+            "ur": "بینڈوڈتھ متحرک طور پر تفویض ہوتا ہے۔",
+            "ps": "بېنډوېډت په متحرک ډول ټاکل کېږي."
+          },
+          {
+            "en": "Fixed bandwidth allocation.",
+            "ur": "مقررہ بینڈوڈتھ کی تفویض۔",
+            "ps": "ټاکلی بېنډوېډت ټاکنه."
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "May be more economical as not needed dedicated circuit.",
+            "ur": "زیادہ کفایتی ہو سکتی ہے کیونکہ مخصوص سرکٹ کی ضرورت نہیں ہوتی۔",
+            "ps": "ښایي ډیره اقتصادي وي ځکه چې ځانګړي سرکټ ته اړتیا نشته."
+          },
+          {
+            "en": "Costs more for hardware.",
+            "ur": "ہارڈ ویئر کے لیے زیادہ لاگت آتی ہے۔",
+            "ps": "د هارډویر لپاره ډیر لګښت لري."
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "The packet needs to be re-transmitted every time when it gets lost, damaged before it is received in this method.",
+            "ur": "اس طریقے میں پیکٹ ہر بار دوبارہ بھیجنا پڑتا ہے جب وہ وصول ہونے سے پہلے گم یا خراب ہو جائے۔",
+            "ps": "پدې طریقه کې کڅوړه هر ځل بیا لېږل کېږي کله چې د ترلاسه کېدو مخکې ورکه یا خرابه شي."
+          },
+          {
+            "en": "Once connection is established, communication is fast and almost errorless.",
+            "ur": "ربط قائم ہو جانے کے بعد مواصلات تیز اور تقریباً غلطی سے پاک ہوتے ہیں۔",
+            "ps": "کله چې تړاو جوړ شي، اړیکې ګړندۍ او نژدې پرته له تېروتنې وي."
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "It can be used for telephony, DSL services and other data transmission services.",
+            "ur": "اسے ٹیلی فونی، ڈی ایس ایل خدمات اور دیگر ڈیٹا ترسیلی خدمات کے لیے استعمال کیا جا سکتا ہے۔",
+            "ps": "دا د تلیفون، DSL خدمتونو او نورو د ډېټا د لېږد خدمتونو لپاره کارېدای شي."
+          },
+          {
+            "en": "This concept is mainly used in telephony systems.",
+            "ur": "یہ تصور بنیادی طور پر ٹیلی فونی نظاموں میں استعمال ہوتا ہے۔",
+            "ps": "دا مفکوره په عمده توګه په تلیفوني سیسټمونو کې کارول کېږي."
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "It is best used for sending data over the network and audio and video signals can also be sent over the network in the form of packets.",
+            "ur": "یہ نیٹ ورک پر ڈیٹا بھیجنے کے لیے بہترین ہے اور آڈیو اور ویڈیو اشارے بھی نیٹ ورک پر پیکٹس کی شکل میں بھیجے جا سکتے ہیں۔",
+            "ps": "دا په شبکه د ډېټا لېږلو لپاره غوره دی او غږیز او ویډیو سیګنالونه هم په شبکه د کڅوړو په بڼه لېږل کېدای شي."
+          },
+          {
+            "en": "This is best used for transmission of audio signals and not suitable for data transmission.",
+            "ur": "یہ آڈیو اشاروں کی ترسیل کے لیے بہترین ہے اور ڈیٹا ترسیل کے لیے موزوں نہیں۔",
+            "ps": "دا د غږیزو سیګنالونو د لېږد لپاره غوره دی او د ډېټا د لېږد لپاره مناسب نه دی."
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "It is usually a connection less service.",
+            "ur": "یہ عموماً بغیر ربط کی خدمت ہے۔",
+            "ps": "دا معمولاً پرته له نښلونې خدمت دی."
+          },
+          {
+            "en": "This type of switching is connection oriented and may be connectionless also.",
+            "ur": "اس قسم کی سوئچنگ ربط پر مبنی ہے اور بغیر ربط کے بھی ہو سکتی ہے۔",
+            "ps": "دا ډول سویچنګ نښلونې پر بنسټ دی او پرته له نښلونې هم کېدای شي."
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "The Internet being the most common example.",
+            "ur": "انٹرنیٹ اس کی سب سے عام مثال ہے۔",
+            "ps": "انټرنېټ تر ټولو عامه بېلګه ده."
+          },
+          {
+            "en": "The most common example of a circuit switching network is the telephone system,PBX.",
+            "ur": "سرکٹ سوئچنگ نیٹ ورک کی سب سے عام مثال ٹیلی فون سسٹم، پی بی ایکس ہے۔",
+            "ps": "د سرکټ سویچنګ شبکې تر ټولو عامه بېلګه د تلیفون سیسټم، PBX دی."
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 166: the table “Difference between Circuit and Packet Switching” (seven numbered rows) and the banner “5.3.4 IP Addressing” with the start of its paragraph (the sentence continues on the next page). The word “host” is printed in bold. The right edge of the page is slightly cut. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:25:36.209583+00:00",
+    "scope": "Scan 175 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

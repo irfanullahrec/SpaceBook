@@ -1,0 +1,25 @@
+@printed 53
+@status lesson
+table Integer data types || انٹیجر ڈیٹا ٹائپس || integer ډېټا ډولونه
+th | Variable Declaration || متغیر کا اعلان || د متغیر اعلان | No. of Bytes || بائٹس کی تعداد || د bytes شمېر | Range || حد || حد
+tr | *int* | 2 | -32,768 to +32,767
+tr | *long* | 4 | -2,147,483,648 to +2,147,483,647
+tr | *unsigned int* | 2 | 0 to 65,535
+endtable
+### 2. Floating Point (*float, double, long double*)Types || 2. فلوٹنگ پوائنٹ (float، double، long double) ٹائپس || ۲. Floating Point (float، double، long double) ډولونه
+p Floating point number represents a real number with 7 digits precision. Floating point numbers are denoted by the keyword ***float***. When the accuracy of the floating point number is insufficient, we can use the ***double*** and ***long double*** to define the number. || فلوٹنگ پوائنٹ عدد 7 ہندسوں کی درستگی کے ساتھ حقیقی عدد ظاہر کرتا ہے۔ فلوٹنگ پوائنٹ اعداد کو کی ورڈ ***float*** سے ظاہر کیا جاتا ہے۔ جب فلوٹنگ پوائنٹ عدد کی درستگی ناکافی ہو تو عدد کی تعریف کے لیے ***double*** اور ***long double*** استعمال کر سکتے ہیں۔ || floating point عدد د ۷ رقمونو دقت سره حقیقي عدد ښيي. floating point عددونه په ***float*** keyword ښودل کېږي. کله چې د floating point عدد دقت کافي نه وي، د عدد د تعریف لپاره ***double*** او ***long double*** کارولای شو.
+box teach | Must Know || ضرور جانیں || باید وپوهېږئ
+p In 32-bit systems, the size of integer variable is extended from 2 bytes to 4 bytes. || 32 بٹ سسٹمز میں انٹیجر متغیر کا سائز 2 بائٹس سے بڑھ کر 4 بائٹس ہو جاتا ہے۔ || په ۳۲ bit سیسټمونو کې د integer متغیر اندازه له ۲ bytes څخه ۴ bytes ته زیاتېږي.
+endbox
+p Float variable declaration statement has the form: || فلوٹ متغیر کے اعلان کی اسٹیٹمنٹ کی صورت یہ ہے: || د float متغیر د اعلان بیان بڼه دا ده:
+m float variable;
+p Usually the number of bytes set aside by the compiler for the above floating-point datatypes are as given in table below. || عموماً اوپر والی فلوٹنگ پوائنٹ ڈیٹا ٹائپس کے لیے کمپائلر کی مختص بائٹس کی تعداد نیچے جدول میں دی گئی ہے۔ || عموماً د پورتنیو floating-point ډېټا ډولونو لپاره د compiler ځانګړې شوې bytes په لاندې جدول کې دي.
+table Floating-point data types || فلوٹنگ پوائنٹ ڈیٹا ٹائپس || floating-point ډېټا ډولونه
+th | Variable Declaration || متغیر کا اعلان || د متغیر اعلان | No. of Bytes || بائٹس کی تعداد || د bytes شمېر | Range || حد || حد
+tr | Float | 4 | 3.4x10^-38 to 3.4x10^38
+tr | double | 8 | 1.7x10^-308 to 1.7x10^308
+tr | long double | 10 | 3.4x10^-4932 to 1.1x10^4932
+endtable
+### 3. Character (*char*) Type || 3. کریکٹر (char) ٹائپ || ۳. Character (char) ډول
+p A character variable can only store one character. An example of declaration of character variables is: || کریکٹر متغیر صرف ایک حرف محفوظ کر سکتا ہے۔ کریکٹر متغیرات کے اعلان کی ایک مثال یہ ہے: || character متغیر یوازې یو توری ساتلی شي. د character متغیرونو د اعلان یوه بېلګه دا ده:
+m char ch;

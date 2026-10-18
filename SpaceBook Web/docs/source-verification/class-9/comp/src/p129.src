@@ -1,0 +1,11 @@
+@printed 121
+@status lesson
+m         Body of the loop
+m }
+p Where, **Condition:** The condition is given as a relational expression. The body of the loop is executed only if the given condition is true. If the condition is false, the body of the loop is never executed. || جہاں **Condition:** شرط ریلیشنل اظہار کی صورت میں دی جاتی ہے۔ لوپ کا جسم صرف اس وقت چلتا ہے جب شرط درست ہو۔ اگر شرط غلط ہو تو لوپ کا جسم کبھی نہیں چلتا۔ || چې **Condition:** شرط د اړیکه ییزې افادې په بڼه ورکول کېږي. د لوپ بدنه یوازې هغه وخت اجرا کېږي چې شرط سم وي. که شرط ناسم وي، بدنه هېڅکله نه اجرا کېږي.
+p **Body of the loop:** It is a statement or group of statements in braces { } to be repeated. || **Body of the loop:** یہ بریسز { } میں وہ اسٹیٹمنٹ یا اسٹیٹمنٹس ہیں جنہیں دہرانا ہے۔ || **Body of the loop:** په { } کې هغه بیان یا بیانونه چې تکرارېږي.
+p **Note:** The important point to note when using *while* loop is that we need to use increment or decrement statement inside *while* loop so that the loop variable gets changed on each iteration, and at some point condition returns false. This way we can end the execution of *while* loop otherwise, the loop would execute indefinitely. Working of *while* loop is shown in figure 5.2. || **نوٹ:** *while* لوپ استعمال کرتے وقت اہم بات یہ ہے کہ لوپ کے اندر increment یا decrement اسٹیٹمنٹ استعمال کریں تاکہ ہر تکرار پر لوپ متغیر بدلے اور کسی مرحلے پر شرط غلط ہو جائے۔ اسی طرح ہم *while* لوپ ختم کر سکتے ہیں، ورنہ لوپ لامحدود چلتا رہے گا۔ *while* لوپ کا کام شکل 5.2 میں دکھایا گیا ہے۔ || **یادونه:** د *while* لوپ د کارولو پر مهال مهم ټکی دا دی چې په لوپ کې increment یا decrement بیان وکاروو څو د لوپ متغیر په هر تکرار بدل شي او یو وخت شرط ناسم شي. په دې ډول *while* لوپ پای ته رسوو، کنه لوپ بې پایه چلېږي. د *while* لوپ کار په ۵.۲ شکل کې ښودل شوی.
+fig10 f5.2 || Figure: 5.2 Working of while loop || شکل 5.2 while لوپ کا کام || ۵.۲ شکل د while لوپ کار
+p The following programs demonstrate the working of *while* loop. || درج ذیل پروگرام *while* لوپ کا کام دکھاتے ہیں۔ || لاندې پروګرامونه د *while* لوپ کار ښيي.
+### Program 5.5: A program that displays "Pakistan" for five times using *while* loop. || پروگرام 5.5: *while* لوپ سے "Pakistan" پانچ بار دکھانے کا پروگرام۔ || پروګرام ۵.۵: د *while* لوپ په مرسته "Pakistan" پنځه ځله ښودل.
+m # include <stdio.h>

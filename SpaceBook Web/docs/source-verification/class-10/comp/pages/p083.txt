@@ -1,0 +1,40 @@
+@printed 73
+@status lesson
+p C میں، تمام آپریٹرز کو ایک خاص سطح کی ترجیح دی جاتی ہے۔ جن کی ترجیح زیادہ ہے ان کو پہلے حل کیا جاتا ہے۔ یہ نوٹ کرنا ضروری ہے کہ ضرب اور تقسیم کی ترجیح جمع اور منفی سے زیادہ ہے۔ کمپائلر ان ترجیحات کا استعمال کر کے اس بات کا تعین کرتے ہیں کہ عبارت کو کیسے حل کرنا ہے۔ || In C every operator is given a particular level of precedence; those with higher precedence are evaluated first. It is important to note that multiplication and division have higher precedence than addition and subtraction. Compilers use these precedences to decide how to evaluate an expression. || په C کې هر عملګر ته د لومړیتوب یوه ځانګړې کچه ورکول کېږي؛ چې لومړیتوب یې لوړ وي لومړی حلېږي. باید پام وشي چې د ضرب او وېش لومړیتوب له جمع او تفریق لوړ دی. کمپایلرونه د دې لومړیتوبونو په کارولو ټاکي چې عبارت څنګه حل کړي.
+p 4 + 2 * 3 کچھ 4 + (2 * 3) کی صورت میں حل کی جائے گی کیونکہ ضرب کے عمل کو جمع پر فوقیت حاصل ہے۔ آپریٹرز کو ذیل میں زیادہ ترجیح سے لے کر کم ترجیح تک درج کیا گیا ہے۔ || 4 + 2 * 3 is evaluated as 4 + (2 * 3), because multiplication has precedence over addition. The operators are listed below from highest to lowest precedence. || 4 + 2 * 3 د 4 + (2 * 3) په بڼه حلېږي، ځکه ضرب پر جمع لومړیتوب لري. عملګرونه لاندې له لوړ څخه تر ټیټ لومړیتوب پورې لیکل شوي.
+table آپریٹرز کی فوقیت || Operator precedence || د عملګرونو لومړیتوب
+th | Precedence || Precedence || لومړیتوب | Operators || Operators || عملګرونه | Type || Type || ډول
+tr | 1 || 1 || 1 | !, -, ++, -- || !, -, ++, -- || !, -, ++, -- | Logical NOT, Unary Operators || Logical NOT, unary operators || منطقي NOT، یونري عملګرونه
+tr | 2 || 2 || 2 | *, /, % || *, /, % || *, /, % | Multiplication, Division & Modulus || Multiplication, division and modulus || ضرب، وېش او پاتې
+tr | 3 || 3 || 3 | +, - || +, - || +, - | Addition & Subtraction || Addition and subtraction || جمع او تفریق
+tr | 4 || 4 || 4 | <, >, <=, >= || <, >, <=, >= || <, >, <=, >= | Relational operators || Relational operators || نسبتي عملګرونه
+tr | 5 || 5 || 5 | ==, != || ==, != || ==, != | Relational operators || Relational (equality) operators || نسبتي (برابرۍ) عملګرونه
+tr | 6 || 6 || 6 | && || && || && | Logical AND || Logical AND || منطقي AND
+tr | 7 || 7 || 7 | {{OR}} || {{OR}} || {{OR}} | Logical OR || Logical OR || منطقي OR
+tr | 8 || 8 || 8 | = || = || = | Assignment operator || Assignment operator || د ګمارنې عملګر
+endtable
+@issue The scan prints the equality operator spaced as "= =" and a stray mark in "<=, >="; normalised. The conditional operator ?: (3.2.10) is missing from the table; in C it ranks between {{OR}} and =.
+### پروگرام 3.18 C لینگویج میں استعمال ہونے والے تمام آپریٹرز کی فوقیت واضح کرنے والا پروگرام۔ || Program 3.18 A program that shows the precedence of the operators used in the C language || پروګرام ۳.۱۸ داسې پروګرام چې په C ژبه کې د کارېدونکو عملګرونو لومړیتوب ښيي
+m #include <stdio.h>
+m void main()
+m {
+m     int a = 20;
+m     int b = 10;
+m     int c = 15;
+m     int d = 5;
+m     int e;
+m     e = (a + b) * c / d;      // ( 30 * 15 ) / 5
+m     printf("Value of (a + b) * c / d is : %d\n",  e );
+m     e = ((a + b) * c) / d;    // (30 * 15 ) / 5
+m     printf("Value of ((a + b) * c) / d is  : %d\n" ,  e );
+m     e = (a + b) * (c / d);    // (30) * (15/5)
+m     printf("Value of (a + b) * (c / d) is  : %d\n",  e );
+m     e = a + (b * c) / d;      //  20 + (150/5)
+m     printf("Value of a + (b * c) / d is  : %d\n" ,  e );
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Value of (a + b) * c / d is : 90
+m Value of ((a + b) * c) / d is  : 90
+m Value of (a + b) * (c / d) is  : 90
+m Value of a + (b * c) / d is  : 50
+endbox

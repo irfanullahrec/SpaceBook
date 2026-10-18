@@ -1,0 +1,507 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s107-md-2",
+  "title": "Example 3.7 (solution end) · Example 3.8: discrete series (start)",
+  "headingUrdu": "مثال 3.7 (حل کا اختتام) · مثال 3.8: منفصل سلسلہ (آغاز)",
+  "headingPashto": "بېلګه 3.7 (د حل پای) · بېلګه 3.8: منفصله لړۍ (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 107,
+    "printedPage": "99"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s107-a1",
+      "en": "(i) Mean deviation from mean is given by",
+      "ur": "(i) اوسط سے اوسط انحراف یوں دیا جاتا ہے",
+      "ps": "(i) له اوسط څخه اوسط انحراف داسې ورکول کېږي",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-a2",
+      "en": "(ii) Mean deviation from median is given by",
+      "ur": "(ii) وسطانیہ سے اوسط انحراف یوں دیا جاتا ہے",
+      "ps": "(ii) له میانې څخه اوسط انحراف داسې ورکول کېږي",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-a3",
+      "en": "For Median first arrange the data in ascending order as 2, 5, 6, 6, 8, 9, 12, 13, 16, 23. Since n = 10 is even",
+      "ur": "وسطانیہ کے لیے پہلے اعداد و شمار کو صعودی ترتیب میں لکھیں: 2, 5, 6, 6, 8, 9, 12, 13, 16, 23۔ چونکہ n = 10 جفت ہے",
+      "ps": "د میانې لپاره لومړی معلومات په پورته‌کېدونکې ترتیب ولیکئ: 2, 5, 6, 6, 8, 9, 12, 13, 16, 23. ځکه چې n = 10 جفت دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-a4",
+      "en": "Now compute |x − Median| in the table above we have",
+      "ur": "اب اوپر دیے گئے جدول میں |x − Median| حساب کریں تو ہمیں ملتا ہے",
+      "ps": "اوس پورته جدول کې |x − Median| محاسبه کړئ نو موږ لرو",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-i2",
+      "en": "(ii) Mean deviation in case of discrete series or grouped data.",
+      "ur": "(ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں اوسط انحراف۔",
+      "ps": "(ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې اوسط انحراف."
+    },
+    {
+      "id": "stat11-s107-ex8",
+      "en": "Example: 3.8",
+      "ur": "مثال: 3.8",
+      "ps": "بېلګه: 3.8",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s107-q8",
+      "en": "For the data given below, calculate mean deviation from (i) mean (ii) median also compute coefficient of mean deviation.",
+      "ur": "نیچے دیے گئے اعداد و شمار کے لیے (i) اوسط (ii) وسطانیہ سے اوسط انحراف حساب کریں اور اوسط انحراف کا عددی سر بھی معلوم کریں۔",
+      "ps": "د لاندې ورکړل شویو معلوماتو لپاره له (i) اوسط (ii) میانې څخه اوسط انحراف محاسبه کړئ او د اوسط انحراف ضریب هم ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-8"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s107-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s107-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s107-a3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s107-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s107-i2",
+        "stat11-s107-ex8",
+        "stat11-s107-q8"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s107-a",
+      "latex": "\\text{M.D}=\\dfrac{\\sum|x-\\bar{x}|}{n}\\quad\\text{and}\\quad\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{100}{10}=10",
+      "accessible": "M.D = Σ|x − x̄|/n and x̄ = Σx/n = 100/10 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σ|x − x̄|/n and x̄ = Σx/n = 100/10 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σ|x − x̄|/n and x̄ = Σx/n = 100/10 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σ|x − x̄|/n and x̄ = Σx/n = 100/10 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-b",
+      "latex": "\\therefore\\ \\text{M.D}=\\dfrac{48}{10}=4.8\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ M.D = 48/10 = 4.8   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ M.D = 48/10 = 4.8   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ M.D = 48/10 = 4.8   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ M.D = 48/10 = 4.8   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-c",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\bar{x}}=\\dfrac{4.8}{10}=0.48\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/x̄ = 4.8/10 = 0.48   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 4.8/10 = 0.48   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 4.8/10 = 0.48   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 4.8/10 = 0.48   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-d",
+      "latex": "\\text{M.D}=\\dfrac{\\sum|x-\\text{Median}|}{n}",
+      "accessible": "M.D = Σ|x − Median|/n",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σ|x − Median|/n"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σ|x − Median|/n"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σ|x − Median|/n"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-e",
+      "latex": "\\therefore\\ \\text{Median}=\\dfrac12\\left[\\dfrac{n}{2}\\text{th value}+\\left(\\dfrac{n}{2}+1\\right)\\text{th value}\\right]",
+      "accessible": "∴ Median = ½[(n/2)th value + (n/2 + 1)th value]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Median = ½[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Median = ½[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Median = ½[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-f",
+      "latex": "=\\dfrac12\\left[\\dfrac{10}{2}\\text{th value}+\\left(\\dfrac{10}{2}+1\\right)\\text{th value}\\right]",
+      "accessible": "= ½[(10/2)th value + (10/2 + 1)th value]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= ½[(10/2)th value + (10/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= ½[(10/2)th value + (10/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= ½[(10/2)th value + (10/2 + 1)th value]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-g",
+      "latex": "=\\dfrac12[\\,5\\text{th value}+6\\text{th value}\\,]=\\dfrac12[8+9]=\\dfrac{17}{2}=8.5",
+      "accessible": "= ½[5th value + 6th value] = ½[8 + 9] = 17/2 = 8.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= ½[5th value + 6th value] = ½[8 + 9] = 17/2 = 8.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= ½[5th value + 6th value] = ½[8 + 9] = 17/2 = 8.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= ½[5th value + 6th value] = ½[8 + 9] = 17/2 = 8.5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-h",
+      "latex": "\\text{M.D}=\\dfrac{46}{10}=4.6\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "M.D = 46/10 = 4.6   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = 46/10 = 4.6   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = 46/10 = 4.6   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = 46/10 = 4.6   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s107-i",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\text{Median}}=\\dfrac{4.6}{8.5}=0.54\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/Median = 4.6/8.5 = 0.54   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 4.6/8.5 = 0.54   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 4.6/8.5 = 0.54   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 4.6/8.5 = 0.54   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-7"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.8: x and f",
+      "captionUrdu": "مثال 3.8: x اور f",
+      "captionPashto": "بېلګه 3.8: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "14",
+          "ur": "14",
+          "ps": "14"
+        },
+        {
+          "en": "16",
+          "ur": "16",
+          "ps": "16"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-8"
+    }
+  ],
+  "sourceNote": "Printed page 99. Continues the solution of Example 3.7 from the previous page. The first lines are labelled (i) and (ii) as printed. The data of Example 3.8 are printed as aligned x and f rows. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:49:03.684151+00:00",
+    "scope": "Scan 107 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

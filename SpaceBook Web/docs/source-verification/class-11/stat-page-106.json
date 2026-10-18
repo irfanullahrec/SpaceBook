@@ -1,0 +1,551 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s106-md-1",
+  "title": "3.4 Mean deviation · 3.4.1 Calculation · Example 3.7 (table)",
+  "headingUrdu": "3.4 اوسط انحراف · 3.4.1 حساب · مثال 3.7 (جدول)",
+  "headingPashto": "3.4 اوسط انحراف · 3.4.1 محاسبه · بېلګه 3.7 (جدول)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 106,
+    "printedPage": "98"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s106-h34",
+      "en": "3.4 Mean Deviation:",
+      "ur": "3.4 اوسط انحراف:",
+      "ps": "3.4 اوسط انحراف:",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s106-t34",
+      "en": "The arithmetic mean of the absolute deviations of observations taken from mean or median or mode is called mean deviation. Symbolically it is written as;",
+      "ur": "اوسط یا وسطانیہ یا عادہ سے لیے گئے مشاہدات کے مطلق انحرافات کا حسابی اوسط اوسط انحراف کہلاتا ہے۔ علامتی طور پر اسے یوں لکھا جاتا ہے؛",
+      "ps": "د اوسط یا میانې یا مود څخه اخیستل شویو کتنو د مطلقو انحرافاتو حسابي اوسط اوسط انحراف بلل کېږي. په علامتي ډول دا داسې لیکل کېږي؛"
+    },
+    {
+      "id": "stat11-s106-t34b",
+      "en": "These formulas are used for absolute dispersion. Its relative measure is coefficient of mean division defined as;",
+      "ur": "یہ فارمولے مطلق انتشار کے لیے استعمال ہوتے ہیں۔ اس کا اضافی پیمانہ اوسط انحراف کا عددی سر ہے جس کی تعریف یوں ہے؛",
+      "ps": "دا فورمولونه د مطلق خپراوي لپاره کارول کېږي. د دې نسبي اندازه د اوسط انحراف ضریب دی چې په دې توګه تعریف شوی؛"
+    },
+    {
+      "id": "stat11-s106-t34c",
+      "en": "Note that M.D from mode is rarely used so we ignore it for computations.",
+      "ur": "نوٹ کریں کہ عادہ سے M.D شاذ و نادر استعمال ہوتا ہے اس لیے ہم حساب کے لیے اسے نظر انداز کرتے ہیں۔",
+      "ps": "پام وکړئ چې د مود څخه M.D په ندرت کارول کېږي نو موږ یې د محاسبې لپاره پرېږدو."
+    },
+    {
+      "id": "stat11-s106-h341",
+      "en": "3.4.1 Calculation of mean deviation",
+      "ur": "3.4.1 اوسط انحراف کا حساب",
+      "ps": "3.4.1 د اوسط انحراف محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s106-i1",
+      "en": "(i) Mean deviation in case of individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں اوسط انحراف",
+      "ps": "(i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې اوسط انحراف"
+    },
+    {
+      "id": "stat11-s106-ex7",
+      "en": "Example: 3.7",
+      "ur": "مثال: 3.7",
+      "ps": "بېلګه: 3.7",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s106-q7",
+      "en": "Compute mean deviation from (i) arithmetic mean (ii) median and coefficient of mean division from the values 2, 6, 9, 12, 8, 13, 5, 6, 23 and 16.",
+      "ur": "(i) حسابی اوسط (ii) وسطانیہ سے اوسط انحراف اور اوسط انحراف کا عددی سر قدروں 2, 6, 9, 12, 8, 13, 5, 6, 23 اور 16 سے حساب کریں۔",
+      "ps": "له (i) حسابي اوسط (ii) میانې څخه اوسط انحراف او د اوسط انحراف ضریب د ارزښتونو 2, 6, 9, 12, 8, 13, 5, 6, 23 او 16 څخه محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-7"
+    },
+    {
+      "id": "stat11-s106-sol7",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-7"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s106-h34",
+        "stat11-s106-t34"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s106-t34b"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s106-t34c",
+        "stat11-s106-h341",
+        "stat11-s106-i1",
+        "stat11-s106-ex7",
+        "stat11-s106-q7",
+        "stat11-s106-sol7"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    }
+  ],
+  "vocabulary": {
+    "mean deviation": {
+      "ur": "اوسط انحراف",
+      "ps": "اوسط انحراف"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s106-m1",
+      "latex": "\\text{M.D}=\\dfrac{\\sum|x-\\text{Mean}|}{n}\\ \\text{ or }\\ \\dfrac{\\sum|x-\\text{Median}|}{n}\\ \\text{ or }\\ \\dfrac{\\sum|x-\\text{Mode}|}{n}\\qquad\\text{(For ungrouped data)}",
+      "accessible": "M.D = Σ|x − Mean|/n or Σ|x − Median|/n or Σ|x − Mode|/n   (For ungrouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σ|x − Mean|/n or Σ|x − Median|/n or Σ|x − Mode|/n   (For ungrouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σ|x − Mean|/n or Σ|x − Median|/n or Σ|x − Mode|/n   (For ungrouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σ|x − Mean|/n or Σ|x − Median|/n or Σ|x − Mode|/n   (For ungrouped data)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s106-m2",
+      "latex": "\\text{M.D}=\\dfrac{\\sum f|x-\\text{Mean}|}{\\sum f}\\ \\text{ or }\\ \\dfrac{\\sum f|x-\\text{Median}|}{\\sum f}\\ \\text{ or }\\ \\dfrac{\\sum f|x-\\text{Mode}|}{\\sum f}\\qquad\\text{(For grouped data)}",
+      "accessible": "M.D = Σf|x − Mean|/Σf or Σf|x − Median|/Σf or Σf|x − Mode|/Σf   (For grouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σf|x − Mean|/Σf or Σf|x − Median|/Σf or Σf|x − Mode|/Σf   (For grouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σf|x − Mean|/Σf or Σf|x − Median|/Σf or Σf|x − Mode|/Σf   (For grouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σf|x − Mean|/Σf or Σf|x − Median|/Σf or Σf|x − Mode|/Σf   (For grouped data)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s106-m3",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\text{Mean}}\\ \\text{ or }\\ \\dfrac{\\text{M.D}}{\\text{Median}}",
+      "accessible": "Coefficient of M.D = M.D/Mean or M.D/Median",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Mean or M.D/Median"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Mean or M.D/Median"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Mean or M.D/Median"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.7: deviations from mean and median",
+      "captionUrdu": "مثال 3.7: اوسط اور وسطانیہ سے انحرافات",
+      "captionPashto": "بېلګه 3.7: له اوسط او میانې څخه انحرافات",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x − x̄",
+          "ur": "x − x̄",
+          "ps": "x − x̄"
+        },
+        {
+          "en": "|x − x̄|",
+          "ur": "|x − x̄|",
+          "ps": "|x − x̄|"
+        },
+        {
+          "en": "x − Median",
+          "ur": "x − Median",
+          "ps": "x − Median"
+        },
+        {
+          "en": "|x − Median|",
+          "ur": "|x − Median|",
+          "ps": "|x − Median|"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "-8",
+            "ur": "-8",
+            "ps": "-8"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "-6.5",
+            "ur": "-6.5",
+            "ps": "-6.5"
+          },
+          {
+            "en": "6.5",
+            "ur": "6.5",
+            "ps": "6.5"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "-4",
+            "ur": "-4",
+            "ps": "-4"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-2.5",
+            "ur": "-2.5",
+            "ps": "-2.5"
+          },
+          {
+            "en": "2.5",
+            "ur": "2.5",
+            "ps": "2.5"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "0.5",
+            "ur": "0.5",
+            "ps": "0.5"
+          },
+          {
+            "en": "0.5",
+            "ur": "0.5",
+            "ps": "0.5"
+          }
+        ],
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "3.5",
+            "ur": "3.5",
+            "ps": "3.5"
+          },
+          {
+            "en": "3.5",
+            "ur": "3.5",
+            "ps": "3.5"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "-0.5",
+            "ur": "-0.5",
+            "ps": "-0.5"
+          },
+          {
+            "en": "0.5",
+            "ur": "0.5",
+            "ps": "0.5"
+          }
+        ],
+        [
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "4.5",
+            "ur": "4.5",
+            "ps": "4.5"
+          },
+          {
+            "en": "4.5",
+            "ur": "4.5",
+            "ps": "4.5"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-3.5",
+            "ur": "-3.5",
+            "ps": "-3.5"
+          },
+          {
+            "en": "3.5",
+            "ur": "3.5",
+            "ps": "3.5"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "-4",
+            "ur": "-4",
+            "ps": "-4"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-2.5",
+            "ur": "-2.5",
+            "ps": "-2.5"
+          },
+          {
+            "en": "2.5",
+            "ur": "2.5",
+            "ps": "2.5"
+          }
+        ],
+        [
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "14.5",
+            "ur": "14.5",
+            "ps": "14.5"
+          },
+          {
+            "en": "14.5",
+            "ur": "14.5",
+            "ps": "14.5"
+          }
+        ],
+        [
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "7.5",
+            "ur": "7.5",
+            "ps": "7.5"
+          },
+          {
+            "en": "7.5",
+            "ur": "7.5",
+            "ps": "7.5"
+          }
+        ],
+        [
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "46",
+            "ur": "46",
+            "ps": "46"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-7"
+    }
+  ],
+  "sourceNote": "Printed page 98. Printed wording kept: \"rarely\" is spelled \"rarely\" with a dropped letter in the scan, and \"coefficient of mean division\" is used for coefficient of mean deviation. In the table the minus signs of the median column are printed with stray spacing (\"−6 .5\"). The solution continues on the next page. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:47:50.703605+00:00",
+    "scope": "Scan 106 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s229-p220",
+  "title": "Record (end); c. Table/Relation; d. View; e. Data Type; f. Key",
+  "headingUrdu": "ریکارڈ (اختتام)؛ ج۔ ٹیبل/ریلیشن؛ د۔ ویو؛ ہ۔ ڈیٹا ٹائپ؛ و۔ کی",
+  "headingPashto": "ثبت (پای)؛ ج. جدول/اړیکه؛ د. لید؛ ه. د ډېټا ډول؛ و. کیلي",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 229,
+    "printedPage": "220"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s229-a",
+      "en": "In Relational database, a Row or a Record or Tuple represents a single occurrence of an entity.",
+      "ur": "ریلیشنل ڈیٹا بیس میں رو یا ریکارڈ یا ٹپل کسی انٹیٹی کے واحد وقوع کو ظاہر کرتا ہے۔",
+      "ps": "په اړوند ډېټابېس کې قطار یا ثبت یا ټپل د یوه وجود یو واحد پېښه ښيي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s229-h1",
+      "en": "c. Table/Relation",
+      "ur": "ج۔ ٹیبل/ریلیشن",
+      "ps": "ج. جدول/اړیکه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s229-b",
+      "en": "A table is set of values that are organized using vertical named columns and horizontal rows. A table has a specified number of columns, but may have any number of rows. Whereas in terms of relational database, a table can be considered as relation, but the two are not equivalent. For example a table may contain duplicate rows, but a true relation cannot contain duplicate rows.",
+      "ur": "ٹیبل قدروں کا مجموعہ ہے جو عمودی نام والے کالموں اور افقی قطاروں کے ذریعے منظم ہوتا ہے۔ ٹیبل میں کالموں کی ایک مقررہ تعداد ہوتی ہے لیکن قطاروں کی کوئی بھی تعداد ہو سکتی ہے۔ جبکہ ریلیشنل ڈیٹا بیس کے لحاظ سے ٹیبل کو ریلیشن سمجھا جا سکتا ہے لیکن دونوں برابر نہیں ہیں۔ مثلاً ٹیبل میں نقل شدہ قطاریں ہو سکتی ہیں لیکن حقیقی ریلیشن میں نقل شدہ قطاریں نہیں ہو سکتیں۔",
+      "ps": "جدول د ارزښتونو ټولګه ده چې د عمودي نومول شویو ستونونو او افقي قطارونو په کارولو سره منظم شوې وي. جدول یو ټاکلی شمېر ستونونه لري، خو هر شمېر قطارونه لرلای شي. پداسې حال کې چې د اړوند ډېټابېس په اړه جدول د اړیکې په توګه ګڼل کېدای شي، خو دا دواړه برابر نه دي. د بېلګې په توګه یو جدول کېدای شي تکراري قطارونه ولري، خو یوه ریښتینې اړیکه تکراري قطارونه نشي لرلای."
+    },
+    {
+      "id": "cs11-s229-h2",
+      "en": "d. View",
+      "ur": "د۔ ویو",
+      "ps": "د. لید",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s229-c",
+      "en": "A view is a dynamic and virtual table that may not exist in the database but is derived from one or more base tables. In simple words there is no stored table that represents the view instead a definition or query representing the view is stored in the database.",
+      "ur": "ویو ایک متحرک اور مجازی ٹیبل ہے جو ڈیٹا بیس میں موجود نہ ہو لیکن ایک یا زیادہ بنیادی ٹیبلز سے اخذ ہو۔ سادہ الفاظ میں ویو کی نمائندگی کرنے والا کوئی ذخیرہ شدہ ٹیبل نہیں ہوتا بلکہ ویو کی نمائندگی کرنے والی تعریف یا کوئری ڈیٹا بیس میں محفوظ ہوتی ہے۔",
+      "ps": "لید یو متحرک او مجازي جدول دی چې شاید په ډېټابېس کې شتون ونه لري خو له یو یا ډیرو بنسټیزو جدولونو اخیستل شوی وي. په ساده کلمو کې د لید ښودونکی هېڅ ذخیره شوی جدول نشته، پر ځای یې د لید ښودونکی تعریف یا پوښتنه په ډېټابېس کې ساتل کېږي."
+    },
+    {
+      "id": "cs11-s229-h3",
+      "en": "e. Data Type",
+      "ur": "ہ۔ ڈیٹا ٹائپ",
+      "ps": "ه. د ډېټا ډول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s229-d",
+      "en": "Data type is the classification of a particular type of information. It is easy for human beings to distinguish among different types of data but most database systems require the user to specify the type of each data field. Integer, floating-point and character (text) are the common data types.",
+      "ur": "ڈیٹا ٹائپ معلومات کی کسی مخصوص قسم کی درجہ بندی ہے۔ انسانوں کے لیے ڈیٹا کی مختلف اقسام میں فرق کرنا آسان ہے لیکن زیادہ تر ڈیٹا بیس سسٹمز کو صارف سے ہر ڈیٹا فیلڈ کی قسم متعین کرنا درکار ہوتا ہے۔ انٹیجر، فلوٹنگ پوائنٹ اور کریکٹر (ٹیکسٹ) عام ڈیٹا ٹائپس ہیں۔",
+      "ps": "د ډېټا ډول د یو ځانګړي ډول معلوماتو طبقه بندي ده. د انسانانو لپاره د ډېټا د مختلفو ډولونو ترمنځ توپیر کول اسان دي خو ډیری ډېټابېس سیسټمونه له کاروونکي غواړي چې د هرې ډېټا ساحې ډول وټاکي. بشپړ عدد، لامبوونکی ټکی او توری (متن) عام د ډېټا ډولونه دي."
+    },
+    {
+      "id": "cs11-s229-h4",
+      "en": "f. Key",
+      "ur": "و۔ کی",
+      "ps": "و. کیلي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s229-e",
+      "en": "In order to track and analyze data effectively, each record in a table requires an identifier that uniquely indentifies it, is called a key. The key must be completely unique to a particular record. For example student’s roll number, employee number, and customer number, etc. are key fields.",
+      "ur": "ڈیٹا کو مؤثر طریقے سے ٹریک اور تجزیہ کرنے کے لیے ٹیبل کے ہر ریکارڈ کو ایک شناخت کنندہ درکار ہوتا ہے جو اسے منفرد طور پر شناخت کرے، اسے کی کہتے ہیں۔ کی کسی مخصوص ریکارڈ کے لیے مکمل طور پر منفرد ہونی چاہیے۔ مثلاً طالب علم کا رول نمبر، ملازم نمبر اور کسٹمر نمبر وغیرہ کی فیلڈز ہیں۔",
+      "ps": "د ډېټا د اغېزمن تعقیب او تحلیل لپاره په جدول کې هر ثبت یو پېژندونکي ته اړتیا لري چې په ځانګړي ډول یې وپېژني، دې ته کیلي ویل کېږي. کیلي باید د یو ځانګړي ثبت لپاره بشپړه ځانګړې وي. د بېلګې په توګه د زده کوونکي رول شمېره، د کارکوونکي شمېره، او د پېرېدونکي شمېره او نور کیلي ساحې دي."
+    },
+    {
+      "id": "cs11-s229-f",
+      "en": "Figure 7.4 shows a complete Table or Relation.",
+      "ur": "شکل ۷.۴ ایک مکمل ٹیبل یا ریلیشن دکھاتی ہے۔",
+      "ps": "۷.۴ انځور یو بشپړ جدول یا اړیکه ښيي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s229-a",
+        "cs11-s229-h1",
+        "cs11-s229-b",
+        "cs11-s229-h2",
+        "cs11-s229-c",
+        "cs11-s229-h3",
+        "cs11-s229-d",
+        "cs11-s229-h4",
+        "cs11-s229-e",
+        "cs11-s229-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 220: the end of the record paragraph (continuing from page 219), “c. Table/Relation”, “d. View”, “e. Data Type”, “f. Key” and the line “Figure 7.4 shows a complete Table or Relation.” (the figure is on the next page). The printed word “indentifies” is kept as printed. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:47:15.587238+00:00",
+    "scope": "Scan 229 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

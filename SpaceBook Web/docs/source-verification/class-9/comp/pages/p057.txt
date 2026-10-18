@@ -1,0 +1,33 @@
+@pdf 56
+@printed 49
+@status lesson
+m //this is a comment line
+m // Sorting process
+m //Function 1 starts here
+p **2. Multi-line Comments:** Multi-line comments are added to the code by placing /* (slash, asterisk) at the beginning of the comments. The */ character is used to end multi-line comments. This style is most useful when a comment consists of several lines. For example: || **2. کثیر سطری کمنٹس:** کثیر سطری کمنٹس کمنٹ کے شروع میں /* (سلیش، ستارہ) رکھ کر کوڈ میں شامل کیے جاتے ہیں۔ کثیر سطری کمنٹس ختم کرنے کے لیے */ استعمال ہوتا ہے۔ یہ انداز اس وقت سب سے مفید ہے جب کمنٹ کئی سطروں پر مشتمل ہو۔ مثلاً: || **۲. څو کرښه ییز comments:** څو کرښه ییز comments د comment په پیل کې د /* (سلیش، ستوری) په ایښودلو کوډ ته زیاتېږي. د پای لپاره */ کارېږي. دا ډول هغه وخت ډېر ګټور دی چې comment څو کرښې ولري. د بېلګې په توګه:
+m /*
+m Program-Name:       Examination Record
+m Programmer-Name:    M. Khalid
+m Date:               6th May
+m Purpose:            Program to show Examination Record
+m */
+p The slash- asterisk /* comment tells the compiler to ignore everything that follows until it finds asterisk -slash */ mark. || سلیش ستارہ /* کمنٹ کمپائلر کو بتاتا ہے کہ اس کے بعد آنے والی ہر چیز کو اس وقت تک نظرانداز کرے جب تک ستارہ سلیش */ کا نشان نہ ملے۔ || سلیش-ستوری /* comment compiler ته وايي چې تر هغه وروسته هر څه له پامه وغورځوي تر څو ستوری-سلیش */ نښه پیدا کړي.
+p Figure: 2.15 Single Line and Multi Line Comments (program listing comment.cpp): || شکل 2.15 ایک سطری اور کثیر سطری کمنٹس (پروگرام لسٹنگ comment.cpp): || ۲.۱۵ شکل یو کرښه ییز او څو کرښه ییز comments (د پروګرام لست comment.cpp):
+m 1   #include <iostream>
+m 2   using namespace std;
+m 3
+m 4   int main()
+m 5   {
+m 6       // C++ program to shows how to comment in C++
+m 7       // This is the single line comment
+m 8
+m 9       /* This is
+m 10         Multiple line
+m 11         Comment
+m 12      */
+m 13
+m 14      cout<<"Single And Multiple line comment will not display ";
+m 15
+m 16      return 0;
+m 17  }
+@issue Figure 2.15 is a C++ program (iostream, cout) in a C chapter, and its comment reads "to shows"; kept as printed.

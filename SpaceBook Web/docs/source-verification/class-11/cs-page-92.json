@@ -1,0 +1,123 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s092-p083",
+  "title": "Data transfers; MOV, LOAD, STORE; b. Data Processing Instructions; i. Arithmetic Instructions — start",
+  "headingUrdu": "ڈیٹا کی منتقلیاں؛ ایم او وی، لوڈ، اسٹور؛ ب۔ ڈیٹا پراسیسنگ ہدایات؛ i۔ ریاضیاتی ہدایات — آغاز",
+  "headingPashto": "د ډېټا لېږدونه؛ MOV، LOAD، STORE؛ ب. د ډېټا پروسس لارښوونې؛ i. ریاضیاتي لارښوونې — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 92,
+    "printedPage": "83"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s092-l1",
+      "en": "registers and memory,",
+      "ur": "رجسٹرز اور میموری،",
+      "ps": "رجسترونه او حافظه،",
+      "listGroup": "trf"
+    },
+    {
+      "id": "cs11-s092-l2",
+      "en": "registers and I/O,",
+      "ur": "رجسٹرز اور آئی / او،",
+      "ps": "رجسترونه او I/O،",
+      "listGroup": "trf"
+    },
+    {
+      "id": "cs11-s092-l3",
+      "en": "registers to registers.",
+      "ur": "رجسٹرز سے رجسٹرز۔",
+      "ps": "رجسترونه تر رجسترونو.",
+      "listGroup": "trf"
+    },
+    {
+      "id": "cs11-s092-a",
+      "en": "Examples of some common data transfer instructions are MOV, LOAD and STORE.",
+      "ur": "کچھ عام ڈیٹا ٹرانسفر ہدایات کی مثالیں ایم او وی، لوڈ اور اسٹور ہیں۔",
+      "ps": "د ځینو عامو د ډېټا لېږد لارښوونو بېلګې MOV، LOAD او STORE دي."
+    },
+    {
+      "id": "cs11-s092-m1",
+      "en": "MOVE (MOV) instruction transfers data from a memory location to a register, register to memory and register to register. This is also used to obtain the data to perform a computation on it later, or to store the result of a computation.",
+      "ur": "مو (ایم او وی) ہدایت ڈیٹا کو میموری مقام سے رجسٹر میں، رجسٹر سے میموری میں اور رجسٹر سے رجسٹر میں منتقل کرتی ہے۔ یہ بعد میں اس پر حساب کرنے کے لیے ڈیٹا حاصل کرنے یا حساب کا نتیجہ محفوظ کرنے کے لیے بھی استعمال ہوتی ہے۔",
+      "ps": "MOVE (MOV) لارښوونه ډېټا له حافظې ځای نه رجستر ته، له رجستر نه حافظې ته او له رجستر نه رجستر ته لېږدوي. دا د ډېټا ترلاسه کولو لپاره هم کارول کېږي ترڅو وروسته پر هغې محاسبه وشي، یا د محاسبې پایلې ساتلو لپاره.",
+      "listGroup": "ops"
+    },
+    {
+      "id": "cs11-s092-m2",
+      "en": "Example: MOV A, B (Move the contents of register A to B)",
+      "ur": "مثال: ایم او وی اے، بی (رجسٹر اے کے مندرجات بی میں منتقل کریں)",
+      "ps": "بېلګه: MOV A, B (د رجستر A منځپانګه B ته ولېږدوه)",
+      "listGroup": "ops"
+    },
+    {
+      "id": "cs11-s092-m3",
+      "en": "LOAD (LD) instruction loads particular register contents from memory. Example: LD A (Load the data to register A from memory)",
+      "ur": "لوڈ (ایل ڈی) ہدایت میموری سے مخصوص رجسٹر کے مندرجات لوڈ کرتی ہے۔ مثال: ایل ڈی اے (میموری سے ڈیٹا رجسٹر اے میں لوڈ کریں)",
+      "ps": "LOAD (LD) لارښوونه له حافظې نه د ځانګړي رجستر منځپانګه پورته کوي. بېلګه: LD A (له حافظې نه ډېټا رجستر A ته پورته کړه)",
+      "listGroup": "ops"
+    },
+    {
+      "id": "cs11-s092-m4",
+      "en": "STORE (STO) instruction stores information from register to memory location.",
+      "ur": "اسٹور (ایس ٹی او) ہدایت رجسٹر سے میموری مقام میں معلومات محفوظ کرتی ہے۔",
+      "ps": "STORE (STO) لارښوونه له رجستر نه د حافظې ځای ته معلومات ساتي.",
+      "listGroup": "ops"
+    },
+    {
+      "id": "cs11-s092-h1",
+      "en": "b. Data Processing Instructions",
+      "ur": "ب۔ ڈیٹا پراسیسنگ ہدایات",
+      "ps": "ب. د ډېټا پروسس لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s092-b",
+      "en": "These instructions are related to the arithmetic and logic operations. The arithmetic or logic operations are performed on the values of two registers and the result is also placed in a register. Data manipulation instructions can be divided into three basic types, i.e. arithmetic, logical and shift instructions.",
+      "ur": "یہ ہدایات ریاضیاتی اور منطقی اعمال سے متعلق ہیں۔ ریاضیاتی یا منطقی اعمال دو رجسٹرز کی قدروں پر انجام دیے جاتے ہیں اور نتیجہ بھی ایک رجسٹر میں رکھا جاتا ہے۔ ڈیٹا ہیرا پھیری کی ہدایات کو تین بنیادی اقسام میں تقسیم کیا جا سکتا ہے، یعنی ریاضیاتی، منطقی اور شفٹ ہدایات۔",
+      "ps": "دا لارښوونې د ریاضیاتي او منطقي عملونو سره تړاو لري. ریاضیاتي یا منطقي عملونه د دوو رجسترونو پر ارزښتونو ترسره کېږي او پایله هم په یو رجستر کې ایښودل کېږي. د ډېټا لاسوهنې لارښوونې په درېیو بنسټیزو ډولونو وېشل کېدای شي، یعنې ریاضیاتي، منطقي او شفټ لارښوونې."
+    },
+    {
+      "id": "cs11-s092-h2",
+      "en": "i. Arithmetic Instructions",
+      "ur": "i۔ ریاضیاتی ہدایات",
+      "ps": "i. ریاضیاتي لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s092-c",
+      "en": "The four basic operations are ADD, SUB, MUL and DIV. An arithmetic instruction may operate on fixed-point data, binary or decimal data. The other possible operations include a variety of single-operand instructions, for example ABSOLUTE, NEGATE, INCREMENT, DECREMENT.",
+      "ur": "چار بنیادی اعمال ایڈ، سب، ایم یو ایل اور ڈی آئی وی ہیں۔ ریاضیاتی ہدایت مقررہ نقطہ ڈیٹا، بائنری یا اعشاری ڈیٹا پر عمل کر سکتی ہے۔ دیگر ممکنہ اعمال میں ایک آپرینڈ والی مختلف ہدایات شامل ہیں، مثلاً ایبسولیوٹ، نیگیٹ، انکریمنٹ، ڈی کریمنٹ۔",
+      "ps": "څلور بنسټیز عملونه ADD، SUB، MUL او DIV دي. یوه ریاضیاتي لارښوونه کولای شي پر ټاکلې نقطې ډېټا، بائنري یا لسیز ډېټا عمل وکړي. نور ممکن عملونه د یو عملوند لرونکو لارښوونو مختلف ډولونه لري، د بېلګې په توګه ABSOLUTE، NEGATE، INCREMENT، DECREMENT."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s092-l1",
+        "cs11-s092-l2",
+        "cs11-s092-l3",
+        "cs11-s092-a",
+        "cs11-s092-m1",
+        "cs11-s092-m2",
+        "cs11-s092-m3",
+        "cs11-s092-m4",
+        "cs11-s092-h1",
+        "cs11-s092-b",
+        "cs11-s092-h2",
+        "cs11-s092-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 83: the three kinds of data transfer, the examples MOV, LOAD and STORE (each with its example line), “b. Data Processing Instructions” and the start of “i. Arithmetic Instructions”. The assembly commands (MOV A, B; LD A) are as printed. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:55:32.921096+00:00",
+    "scope": "Scan 92 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

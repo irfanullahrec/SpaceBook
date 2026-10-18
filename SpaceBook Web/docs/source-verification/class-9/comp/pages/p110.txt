@@ -1,0 +1,25 @@
+@pdf 116
+@printed 102
+@status lesson
+m     scanf("%d %d %d",&x,&y,&z);
+m     if (x < y )
+m         s = x ;
+m     else
+m         s = y ;
+m     if (s< z)
+m         printf("The smallest number is :%d",s);
+m     else
+m         printf("The smallest number is :%d",z);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter three numbers  10
+m 6
+m 12
+m The smallest number is :6
+endbox
+### 4.1.5 The *switch* Statement || 4.1.5 *switch* اسٹیٹمنٹ || ۴.۱.۵ *switch* بیان
+p *switch* statement in C tests the value of a variable and compares it with multiple cases. Once the *case* match is found, a block of statements associated with that particular case is executed. || C میں *switch* اسٹیٹمنٹ کسی متغیر کی قدر جانچ کر اس کا کئی کیسز سے موازنہ کرتی ہے۔ جب *case* کی مطابقت مل جائے تو اس کیس سے متعلق اسٹیٹمنٹس کا بلاک چلتا ہے۔ || په C کې *switch* بیان د متغیر ارزښت ازمويي او له څو cases سره یې پرتله کوي. کله چې د *case* سمون پیدا شي، د هماغه case بیانونه اجرا کېږي.
+p Each *case* in a block of a *switch* has a different name/number which is referred to as an identifier. The value provided by the user is compared with all the cases inside the *switch* block until the match is found. || *switch* بلاک کے ہر *case* کا الگ نام/نمبر ہوتا ہے جسے شناخت کنندہ (identifier) کہتے ہیں۔ صارف کی دی گئی قدر کا *switch* بلاک کے تمام کیسز سے مطابقت ملنے تک موازنہ ہوتا ہے۔ || د *switch* بلاک هر *case* بېل نوم/شمېره لري چې identifier بلل کېږي. د کاروونکي ورکړی ارزښت د *switch* له ټولو cases سره تر سمون پورې پرتله کېږي.
+p If a *case* match is NOT found, then the default statement is executed, and the control goes out of the *switch* block. || اگر کسی *case* سے مطابقت نہ ملے تو default اسٹیٹمنٹ چلتی ہے اور کنٹرول *switch* بلاک سے باہر چلا جاتا ہے۔ || که د *case* سمون پیدا نه شي، default بیان اجرا کېږي او کنټرول له *switch* بلاک وځي.
+p It is used as a substitute of *if-else* statement. It is used when multiple choices are given and one choice is to be selected. || یہ *if-else* اسٹیٹمنٹ کے متبادل کے طور پر استعمال ہوتی ہے۔ یہ اس وقت استعمال ہوتی ہے جب کئی انتخاب دیے گئے ہوں اور ایک چننا ہو۔ || د *if-else* د بدیل په توګه کارېږي. هغه وخت کارېږي چې ډېر انتخابونه وي او یو باید وټاکل شي.
+p The *switch* statement evaluates an expression and returns a value. Only one of the cases in the *switch* statement is executed depending upon the value returned by the expression. The returned value is compared with the constant values given in the cases. If the returned value matches the *case* value, the statements under that *case* are executed. The syntax of *switch* is: || *switch* اسٹیٹمنٹ ایک اظہار کی قدر معلوم کر کے قدر واپس دیتی ہے۔ اظہار کی واپس کی گئی قدر کے مطابق *switch* کے کیسز میں سے صرف ایک چلتا ہے۔ واپس کی گئی قدر کا کیسز میں دی گئی کانسٹنٹ قدروں سے موازنہ ہوتا ہے۔ اگر قدر *case* کی قدر سے مل جائے تو اس *case* کے تحت اسٹیٹمنٹس چلتی ہیں۔ *switch* کا سنٹیکس یہ ہے: || *switch* بیان یوه افاده ارزوي او ارزښت راګرځوي. د افادې د ارزښت سره سم د *switch* له cases یوازې یو اجرا کېږي. راګرځېدلی ارزښت په cases کې له ثابتو ارزښتونو سره پرتله کېږي. که د *case* له ارزښت سره سمون ولري، د هماغه *case* بیانونه اجرا کېږي. د *switch* syntax دا دی:

@@ -1,0 +1,308 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s103-qd-1",
+  "title": "3.2.2 Demerits · 3.2.3 Uses of range · 3.3 Quartile deviation · Example 3.4",
+  "headingUrdu": "3.2.2 خامیاں · 3.2.3 حد کے استعمالات · 3.3 چوتھائی انحراف · مثال 3.4",
+  "headingPashto": "3.2.2 زیانونه · 3.2.3 د رېنج کارونې · 3.3 څلورمه انحراف · بېلګه 3.4",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 103,
+    "printedPage": "95"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s103-dh",
+      "en": "Demerits:",
+      "ur": "خامیاں:",
+      "ps": "زیانونه:"
+    },
+    {
+      "id": "stat11-s103-d1",
+      "en": "(i) It depends on two extreme values of a series and ignores the intermediate observations.",
+      "ur": "(i) یہ سلسلے کی دو انتہائی قدروں پر منحصر ہے اور درمیانی مشاہدات کو نظر انداز کرتا ہے۔",
+      "ps": "(i) دا د لړۍ په دوو سختو ارزښتونو پورې اړه لري او منځني کتنې له پامه غورځوي.",
+      "listGroup": "range-demerits"
+    },
+    {
+      "id": "stat11-s103-d2",
+      "en": "(ii) It is highly influenced by abnormal value.",
+      "ur": "(ii) یہ غیر معمولی قدر سے بہت زیادہ متاثر ہوتا ہے۔",
+      "ps": "(ii) دا د غیر عادي ارزښت لخوا ډېر اغېزمن کېږي.",
+      "listGroup": "range-demerits"
+    },
+    {
+      "id": "stat11-s103-h323",
+      "en": "3.2.3 Uses of range",
+      "ur": "3.2.3 حد کے استعمالات",
+      "ps": "3.2.3 د رېنج کارونې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s103-t323",
+      "en": "In spite of the fact that range is a rough measure of dispersion, even then it is commonly used;",
+      "ur": "اس حقیقت کے باوجود کہ حد انتشار کا ایک موٹا پیمانہ ہے، پھر بھی یہ عام طور پر استعمال ہوتی ہے؛",
+      "ps": "سره له دې چې رېنج د خپراوي یوه خام اندازه ده، بیا هم عموماً کارول کېږي؛"
+    },
+    {
+      "id": "stat11-s103-u1",
+      "en": "(i) in the quality control tests.",
+      "ur": "(i) معیار کی جانچ کے ٹیسٹوں میں۔",
+      "ps": "(i) د کیفیت د کنټرول په ازموینو کې.",
+      "listGroup": "range-uses"
+    },
+    {
+      "id": "stat11-s103-u2",
+      "en": "(ii) to measure variations in temperature during a day, a year.",
+      "ur": "(ii) ایک دن، ایک سال کے دوران درجہ حرارت میں تغیرات ناپنے کے لیے۔",
+      "ps": "(ii) د یوې ورځې، یوه کال په ترڅ کې د تودوخې د بدلونونو د اندازه کولو لپاره.",
+      "listGroup": "range-uses"
+    },
+    {
+      "id": "stat11-s103-u3",
+      "en": "(iii) in stock exchange quotations.",
+      "ur": "(iii) اسٹاک ایکسچینج کے نرخوں میں۔",
+      "ps": "(iii) د سټاک اېکسچینج په نرخونو کې.",
+      "listGroup": "range-uses"
+    },
+    {
+      "id": "stat11-s103-h33",
+      "en": "3.3 Quartile deviation",
+      "ur": "3.3 چوتھائی انحراف",
+      "ps": "3.3 څلورمه انحراف",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s103-t33",
+      "en": "The difference between third and first quartiles divided by 2 is called quartile deviation (Q.D). It is also known as semi-inter quartile range. Mathematically,",
+      "ur": "تیسری اور پہلی چوتھائی کے فرق کو 2 پر تقسیم کرنا چوتھائی انحراف (Q.D) کہلاتا ہے۔ اسے نیم بین الربعی حد بھی کہا جاتا ہے۔ ریاضیاتی طور پر،",
+      "ps": "د دریمې او لومړۍ څلورمې توپیر چې پر 2 وویشل شي څلورمه انحراف (Q.D) بلل کېږي. دې ته نیمه‌منځ څلورمه رېنج هم ویل کېږي. ریاضیاتي ډول،"
+    },
+    {
+      "id": "stat11-s103-h331",
+      "en": "3.3.1 Calculation of quartile deviation",
+      "ur": "3.3.1 چوتھائی انحراف کا حساب",
+      "ps": "3.3.1 د څلورمې انحراف محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s103-i1",
+      "en": "(i) Quartile deviation in case of individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں چوتھائی انحراف",
+      "ps": "(i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې څلورمه انحراف"
+    },
+    {
+      "id": "stat11-s103-ex4",
+      "en": "Example: 3.4",
+      "ur": "مثال: 3.4",
+      "ps": "بېلګه: 3.4",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s103-q4",
+      "en": "Compute quartile deviation and coefficient of quartile deviation for the following data: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29, and 20.",
+      "ur": "درج ذیل اعداد و شمار کے لیے چوتھائی انحراف اور چوتھائی انحراف کا عددی سر حساب کریں: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29 اور 20۔",
+      "ps": "د لاندې معلوماتو لپاره څلورمه انحراف او د څلورمې انحراف ضریب محاسبه کړئ: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29 او 20.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s103-sol4",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s103-bd",
+      "en": "By definition Q.D = (Q3 − Q1)/2",
+      "ur": "تعریف کے مطابق Q.D = (Q3 − Q1)/2",
+      "ps": "د تعریف له مخې Q.D = (Q3 − Q1)/2",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s103-da",
+      "en": "Data in an array is 17, 18, 20, 20, 21, 25, 28, 29, 32, 38, and 40. Here n = 11 is odd.",
+      "ur": "ترتیب شدہ اعداد و شمار 17, 18, 20, 20, 21, 25, 28, 29, 32, 38 اور 40 ہیں۔ یہاں n = 11 طاق ہے۔",
+      "ps": "په ترتیب شوي معلوماتو کې 17, 18, 20, 20, 21, 25, 28, 29, 32, 38 او 40 دي. دلته n = 11 طاق دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-4"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s103-dh",
+        "stat11-s103-d1",
+        "stat11-s103-d2",
+        "stat11-s103-h323",
+        "stat11-s103-t323",
+        "stat11-s103-u1",
+        "stat11-s103-u2",
+        "stat11-s103-u3",
+        "stat11-s103-h33",
+        "stat11-s103-t33"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s103-h331",
+        "stat11-s103-i1",
+        "stat11-s103-ex4",
+        "stat11-s103-q4",
+        "stat11-s103-sol4",
+        "stat11-s103-bd",
+        "stat11-s103-da"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    }
+  ],
+  "vocabulary": {
+    "quartile deviation": {
+      "ur": "چوتھائی انحراف",
+      "ps": "څلورمه انحراف"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s103-qd",
+      "latex": "\\text{Q.D}=\\dfrac{Q_3-Q_1}{2}\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "Q.D = (Q3 − Q1)/2   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2   (Absolute dispersion)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s103-cqd",
+      "latex": "\\text{Coefficient of Q.D}=\\dfrac{Q_3-Q_1}{Q_3+Q_1}\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1)   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1)   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1)   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1)   (Relative dispersion)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s103-q1a",
+      "latex": "\\therefore\\ Q_1=\\left(\\dfrac{n+1}{4}\\right)\\text{th value}",
+      "accessible": "∴ Q1 = ((n + 1)/4)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Q1 = ((n + 1)/4)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Q1 = ((n + 1)/4)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Q1 = ((n + 1)/4)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s103-q1b",
+      "latex": "=\\left(\\dfrac{11+1}{4}\\right)\\text{th value}=3\\text{rd value}=20",
+      "accessible": "= ((11 + 1)/4)th value = 3rd value = 20",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= ((11 + 1)/4)th value = 3rd value = 20"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= ((11 + 1)/4)th value = 3rd value = 20"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= ((11 + 1)/4)th value = 3rd value = 20"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    }
+  ],
+  "sourceNote": "Printed page 95. In the printed Example 3.4 the question lists 348 and has 29 twice while the sorted array shows 38 and has 20 twice (the question appears to have a misprint; both are kept as printed). The first printed \"Q3 − Q\" in the solution is clipped and is read as Q3 − Q1. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:47:49.129924+00:00",
+    "scope": "Scan 103 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

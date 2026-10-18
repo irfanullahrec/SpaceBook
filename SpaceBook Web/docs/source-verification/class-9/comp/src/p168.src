@@ -1,0 +1,16 @@
+@printed 160
+@status lesson
+p The system will contain an AND Gate, a NOR Gate and also an OR Gate. The expression for the AND gate is A.B, and the expression for the NOR gate is (A+B)‾. Both these expressions are also separate inputs to the OR gate i.e. || اس نظام میں ایک AND گیٹ، ایک NOR گیٹ اور ایک OR گیٹ ہوگا۔ AND گیٹ کا اظہار A.B اور NOR گیٹ کا اظہار (A+B)‾ ہے۔ یہ دونوں اظہارات OR گیٹ کے الگ الگ ان پٹ بھی ہیں، یعنی || په دې سیسټم کې یوه AND، یوه NOR او یوه OR دروازه وي. د AND افاده A.B او د NOR افاده (A+B)‾ ده. دا دواړه افادې د OR دروازې جلا inputs هم دي، یعنې
+p (Circuit: A and B feed an AND gate giving A.B and a NOR gate giving (A+B)‾; both outputs feed an OR gate whose output is Q = (A.B) + (A+B)‾.) || (سرکٹ: A اور B ایک AND گیٹ میں جا کر A.B اور ایک NOR گیٹ میں جا کر (A+B)‾ دیتے ہیں؛ دونوں آؤٹ پٹ ایک OR گیٹ میں جاتے ہیں جس کا آؤٹ پٹ Q = (A.B) + (A+B)‾ ہے۔) || (سرکټ: A او B یوې AND ته ځي او A.B ورکوي او یوې NOR ته ځي او (A+B)‾ ورکوي؛ دواړه outputs یوې OR ته ځي چې output یې Q = (A.B) + (A+B)‾ دی.)
+p Hence, the output is: Q=(A.B)+(A+B)‾ || لہٰذا آؤٹ پٹ یہ ہے: Q=(A.B)+(A+B)‾ || نو output دا دی: Q=(A.B)+(A+B)‾
+table Truth table for Q=(A.B)+(A+B)‾ || Q=(A.B)+(A+B)‾ کا ٹروتھ ٹیبل || د Q=(A.B)+(A+B)‾ truth table
+th | A | B | A.B | (A+B)‾ | Q
+tr | 0 | 0 | 0 | 1 | 1
+tr | 1 | 0 | 0 | 0 | 0
+tr | 0 | 1 | 0 | 0 | 0
+tr | 1 | 1 | 1 | 0 | 1
+endtable
+@issue The header row of this table is inked over by a previous owner; the "Example 2" label below is also covered in ink.
+### Example 2 || مثال 2 || ۲ بېلګه
+m Q=(A.B.C)+A.(B̄+C̄)
+p (Circuit: A, B, C feed a 3-input AND gate giving A.B.C; B and C pass through NOT gates to give B̄ and C̄, which feed an OR gate giving B̄+C̄; A and B̄+C̄ feed a second AND gate giving A.(B̄+C̄); A.B.C and A.(B̄+C̄) feed an OR gate whose output is Q = (A.B.C) + A.(B̄+C̄).) || (سرکٹ: A، B، C تین ان پٹ والے AND گیٹ میں جا کر A.B.C دیتے ہیں؛ B اور C NOT گیٹس سے گزر کر B̄ اور C̄ بنتے ہیں جو OR گیٹ میں جا کر B̄+C̄ دیتے ہیں؛ A اور B̄+C̄ دوسرے AND گیٹ میں جا کر A.(B̄+C̄) دیتے ہیں؛ A.B.C اور A.(B̄+C̄) ایک OR گیٹ میں جاتے ہیں جس کا آؤٹ پٹ Q ہے۔) || (سرکټ: A، B، C د دریو inputs AND ته ځي او A.B.C ورکوي؛ B او C له NOT تېرېږي او B̄ او C̄ کېږي چې OR ته ځي او B̄+C̄ ورکوي؛ A او B̄+C̄ دویمې AND ته ځي او A.(B̄+C̄) ورکوي؛ A.B.C او A.(B̄+C̄) یوې OR ته ځي چې output یې Q دی.)

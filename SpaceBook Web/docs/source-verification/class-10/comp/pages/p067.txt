@@ -1,0 +1,47 @@
+@printed 57
+@status lesson
+### پروگرام 3.6 || Program 3.6 || پروګرام ۳.۶
+m #include<stdio.h>
+m void main()
+m {
+m     char ch;
+m     printf("Enter Char:");
+m     cch=getch();
+m     printf("\n");
+m     putchar(ch);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter Char:
+m j
+endbox
+@issue Program 3.6 has a typing error: "cch=getch();" should be "ch=getch();" (cch is undeclared). getch() needs #include<conio.h>, which this program omits (Program 3.8 includes it).
+### getche() || getche() || getche()
+p getche() فنکشن بھی کی بورڈ سے ایک کیریکٹر پڑھتا ہے لیکن echo کے ساتھ۔ یعنی جو حرف اِن پُٹ کیا جاتا ہے وہ اسکرین پر نظر بھی آتا ہے۔ || The getche() function also reads one character from the keyboard, but with echo, i.e. the character that is input is also seen on the screen. || getche() فنکشن هم له کیبورډ څخه یو توری لولي خو د echo سره، یعنې داخل شوی توری په سکرین هم ښکاري.
+### پروگرام 3.7 || Program 3.7 || پروګرام ۳.۷
+m #include<stdio.h>
+m void main()
+m {
+m     char ch;
+m     printf("Enter Character:");
+m     ch=getche();
+m     printf("\n");
+m     putchar(ch);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter Char: k
+m k
+endbox
+@issue In Program 3.7 the prompt in the code is "Enter Character:" but the output box shows "Enter Char:". getche() also needs #include<conio.h>.
+### getchar() || getchar() || getchar()
+p getchar() فنکشن کی بورڈ سے ایک حرف کی اِن پُٹ لیتا ہے لیکن اِن پُٹ کرنے کے بعد Enter key ضرور دبانی پڑتی ہے۔ || The getchar() function takes one character as input from the keyboard, but after typing it the Enter key must be pressed. || getchar() فنکشن له کیبورډ څخه یو توری اخلي، خو له داخلولو وروسته باید Enter key کېښکاږل شي.
+### پروگرام 3.8 || Program 3.8 || پروګرام ۳.۸
+m #include<stdio.h>
+m #include<conio.h>
+m void main()
+m {
+m     char ch;
+m     printf( " Enter Char: ");
+box info | آؤٹ پُٹ || Output || Output
+m Enter Char: h
+m h
+endbox

@@ -1,0 +1,574 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s182-exercise4-e",
+  "title": "Exercise-4: Q4.15 – Q4.18",
+  "headingUrdu": "مشق-4: سوال 4.15 – 4.18",
+  "headingPashto": "تمرین-4: پوښتنې 4.15 – 4.18",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 182,
+    "printedPage": "172"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s182-q415",
+      "en": "4.15 Construct Fisher's ideal index number from the following data for 1954 taking 1947 as base year.",
+      "ur": "4.15 درج ذیل اعداد و شمار سے 1947 کو بنیادی سال لے کر 1954 کے لیے فشر کا مثالی اشاریہ عدد بنائیں۔",
+      "ps": "4.15 له لاندې معلوماتو څخه د 1947 د بنسټیز کال په نیولو سره د 1954 لپاره د Fisher مثالي شاخص شمېره جوړه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex4-15"
+    },
+    {
+      "id": "stat11-s182-q416",
+      "en": "4.16 Define consumer price index number and discuss the main steps involved in the construction of consumer price index number.",
+      "ur": "4.16 صارف قیمتی اشاریہ عدد کی تعریف کریں اور صارف قیمتی اشاریہ عدد کی تعمیر کے اہم مراحل پر بحث کریں۔",
+      "ps": "4.16 د مصرف کوونکي د بیې شاخص شمېره تعریف کړئ او د مصرف کوونکي د بیې شاخص شمېرې د جوړولو اصلي مرحلې وڅېړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex4-16"
+    },
+    {
+      "id": "stat11-s182-q417",
+      "en": "4.17 Construct consumer price index number for 1940 on the basis of 1938 from the following data by (i) aggregate expenditure method and (ii) household budget method.",
+      "ur": "4.17 درج ذیل اعداد و شمار سے 1938 کی بنیاد پر 1940 کے لیے صارف قیمتی اشاریہ عدد بنائیں (i) مجموعی اخراجات کے طریقے اور (ii) گھریلو بجٹ کے طریقے سے۔",
+      "ps": "4.17 له لاندې معلوماتو څخه د 1938 پر بنسټ د 1940 لپاره د مصرف کوونکي د بیې شاخص شمېره جوړه کړئ د (i) مجموعي لګښت طریقې او (ii) د کورنۍ د بودیجې طریقې په واسطه.",
+      "role": "question",
+      "exerciseId": "stat11-ex4-17"
+    },
+    {
+      "id": "stat11-s182-q418",
+      "en": "4.18 Calculate the cost of living index number for 1960 on the basis of 1937.",
+      "ur": "4.18 1937 کی بنیاد پر 1960 کے لیے رہن سہن کی لاگت کا اشاریہ عدد حساب کریں۔",
+      "ps": "4.18 د 1937 پر بنسټ د 1960 لپاره د ژوند د لګښت شاخص شمېره محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex4-18"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s182-q415"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s182-q416",
+        "stat11-s182-q417"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s182-q418"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q4.15: prices and quantities, 1947 and 1954",
+      "captionUrdu": "سوال 4.15: 1947 اور 1954 کی قیمتیں اور مقداریں",
+      "captionPashto": "پوښتنه 4.15: د 1947 او 1954 بیې او مقدارونه",
+      "headers": [
+        {
+          "en": "Commodities",
+          "ur": "اجناس",
+          "ps": "توکي"
+        },
+        {
+          "en": "1947: Price",
+          "ur": "1947: قیمت",
+          "ps": "1947: بیه"
+        },
+        {
+          "en": "1947: Quantity",
+          "ur": "1947: مقدار",
+          "ps": "1947: مقدار"
+        },
+        {
+          "en": "1954: Price",
+          "ur": "1954: قیمت",
+          "ps": "1954: بیه"
+        },
+        {
+          "en": "1954: Quantity",
+          "ur": "1954: مقدار",
+          "ps": "1954: مقدار"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "9.3",
+            "ur": "9.3",
+            "ps": "9.3"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "4.5",
+            "ur": "4.5",
+            "ps": "4.5"
+          },
+          {
+            "en": "90",
+            "ur": "90",
+            "ps": "90"
+          }
+        ],
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "6.4",
+            "ur": "6.4",
+            "ps": "6.4"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "3.7",
+            "ur": "3.7",
+            "ps": "3.7"
+          },
+          {
+            "en": "19",
+            "ur": "19",
+            "ps": "19"
+          }
+        ],
+        [
+          {
+            "en": "Jawar",
+            "ur": "Jawar",
+            "ps": "Jawar"
+          },
+          {
+            "en": "5.1",
+            "ur": "5.1",
+            "ps": "5.1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2.7",
+            "ur": "2.7",
+            "ps": "2.7"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex4-q415"
+    },
+    {
+      "caption": "Q4.17: quantities consumed and prices",
+      "captionUrdu": "سوال 4.17: استعمال شدہ مقداریں اور قیمتیں",
+      "captionPashto": "پوښتنه 4.17: مصرف شوي مقدارونه او بیې",
+      "headers": [
+        {
+          "en": "Commodity",
+          "ur": "جنس",
+          "ps": "توکی"
+        },
+        {
+          "en": "Quantity by consumed in 1938",
+          "ur": "1938 میں استعمال شدہ مقدار",
+          "ps": "په 1938 کې مصرف شوی مقدار"
+        },
+        {
+          "en": "Unit",
+          "ur": "اکائی",
+          "ps": "واحد"
+        },
+        {
+          "en": "Price in 1938",
+          "ur": "قیمت 1938 میں",
+          "ps": "بیه په 1938"
+        },
+        {
+          "en": "Prince in 1940",
+          "ur": "قیمت 1940 میں",
+          "ps": "بیه په 1940"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "6 maund",
+            "ur": "6 maund",
+            "ps": "6 maund"
+          },
+          {
+            "en": "maund",
+            "ur": "maund",
+            "ps": "maund"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6.5",
+            "ur": "6.5",
+            "ps": "6.5"
+          }
+        ],
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "6 maund",
+            "ur": "6 maund",
+            "ps": "6 maund"
+          },
+          {
+            "en": "maund",
+            "ur": "maund",
+            "ps": "maund"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "Grain",
+            "ur": "Grain",
+            "ps": "Grain"
+          },
+          {
+            "en": "1 maund",
+            "ur": "1 maund",
+            "ps": "1 maund"
+          },
+          {
+            "en": "maund",
+            "ur": "maund",
+            "ps": "maund"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "Arhar",
+            "ur": "Arhar",
+            "ps": "Arhar"
+          },
+          {
+            "en": "6 maund",
+            "ur": "6 maund",
+            "ps": "6 maund"
+          },
+          {
+            "en": "maund",
+            "ur": "maund",
+            "ps": "maund"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "Ghee",
+            "ur": "Ghee",
+            "ps": "Ghee"
+          },
+          {
+            "en": "4 seer",
+            "ur": "4 seer",
+            "ps": "4 seer"
+          },
+          {
+            "en": "seer",
+            "ur": "seer",
+            "ps": "seer"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ],
+        [
+          {
+            "en": "Sugar",
+            "ur": "Sugar",
+            "ps": "Sugar"
+          },
+          {
+            "en": "1 maund",
+            "ur": "1 maund",
+            "ps": "1 maund"
+          },
+          {
+            "en": "maund",
+            "ur": "maund",
+            "ps": "maund"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex4-q417"
+    },
+    {
+      "caption": "Q4.18: quantities consumed and prices",
+      "captionUrdu": "سوال 4.18: استعمال شدہ مقداریں اور قیمتیں",
+      "captionPashto": "پوښتنه 4.18: مصرف شوي مقدارونه او بیې",
+      "headers": [
+        {
+          "en": "Commodity",
+          "ur": "جنس",
+          "ps": "توکی"
+        },
+        {
+          "en": "Quantity consumed",
+          "ur": "استعمال شدہ مقدار",
+          "ps": "مصرف شوی مقدار"
+        },
+        {
+          "en": "Unit of price",
+          "ur": "قیمت کی اکائی",
+          "ps": "د بیې واحد"
+        },
+        {
+          "en": "Price in 1937",
+          "ur": "قیمت 1937 میں",
+          "ps": "بیه په 1937"
+        },
+        {
+          "en": "Prince in 1960",
+          "ur": "قیمت 1960 میں",
+          "ps": "بیه په 1960"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "20 seer",
+            "ur": "20 seer",
+            "ps": "20 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "13.50",
+            "ur": "13.50",
+            "ps": "13.50"
+          }
+        ],
+        [
+          {
+            "en": "Dal",
+            "ur": "Dal",
+            "ps": "Dal"
+          },
+          {
+            "en": "8 seer",
+            "ur": "8 seer",
+            "ps": "8 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "Oil",
+            "ur": "Oil",
+            "ps": "Oil"
+          },
+          {
+            "en": "1.5 seer",
+            "ur": "1.5 seer",
+            "ps": "1.5 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "9.25",
+            "ur": "9.25",
+            "ps": "9.25"
+          },
+          {
+            "en": "200.50",
+            "ur": "200.50",
+            "ps": "200.50"
+          }
+        ],
+        [
+          {
+            "en": "Fuel",
+            "ur": "Fuel",
+            "ps": "Fuel"
+          },
+          {
+            "en": "4 maund",
+            "ur": "4 maund",
+            "ps": "4 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "2.25",
+            "ur": "2.25",
+            "ps": "2.25"
+          },
+          {
+            "en": "2.50",
+            "ur": "2.50",
+            "ps": "2.50"
+          }
+        ],
+        [
+          {
+            "en": "Clothing",
+            "ur": "Clothing",
+            "ps": "Clothing"
+          },
+          {
+            "en": "22 yard",
+            "ur": "22 yard",
+            "ps": "22 yard"
+          },
+          {
+            "en": "Rs. per yard",
+            "ur": "Rs. per yard",
+            "ps": "Rs. per yard"
+          },
+          {
+            "en": "1.50",
+            "ur": "1.50",
+            "ps": "1.50"
+          },
+          {
+            "en": "2.25",
+            "ur": "2.25",
+            "ps": "2.25"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex4-q418"
+    }
+  ],
+  "sourceNote": "Printed page 172. Printed spellings kept: \"Prince in 1940\" and \"Prince in 1960\" (for Price), \"Quantity by consumed in 1938\". The oil price 200.50 in Q4.18 is printed as shown. A dark smudge at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:15:10.132594+00:00",
+    "scope": "Scan 182 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

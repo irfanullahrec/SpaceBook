@@ -1,0 +1,21 @@
+@pdf 226
+@printed 159
+@status lesson
+### Example 3 || مثال 3 || ۳ بېلګه
+m F(A,B,C)= Ā.BC + Ā.BC̄ + AB̄C̄ + AB̄C
+p Now drawing K- Map for the expression. || اب اس اظہار کا K-Map بناتے ہیں۔ || اوس د دې افادې K-Map رسموو.
+table K-map for F (A, B, C) — rows A, columns BC; groups: Ā row cells BC=11,10 and A row cells BC=00,01 || F (A, B, C) کا K-map — قطاریں A، کالم BC؛ گروپس: Ā قطار کے BC=11،10 اور A قطار کے BC=00،01 خانے || د F (A, B, C) K-map — قطارونه A، ستنې BC؛ ډلې: د Ā قطار BC=11،10 او د A قطار BC=00،01 خانې
+th | A \ BC | 00 | 01 | 11 | 10
+tr | 0 | 0 | 0 | 1 ▢ | 1 ▢
+tr | 1 | 1 ▢ | 1 ▢ | 0 | 0
+endtable
+@issue The book prints the K-map twice (once plain, once with the two groups boxed); here it is shown once with grouped cells marked ▢.
+p The two groups are termed as follows: || دونوں گروپس کو یوں لکھا جاتا ہے: || دوه ډلې داسې لیکل کېږي:
+m Ā.B and A.B̄
+@issue Printed "Ā.BĀ.B and AB̄AB̄" (each term doubled); read as Ā.B and A.B̄.
+p Hence, F(A,B,C)= Ā.B+A B̄=A⊕B || لہٰذا F(A,B,C)= Ā.B+A B̄=A⊕B || نو F(A,B,C)= Ā.B+A B̄=A⊕B
+p It is the minimized form. || یہ مختصر ترین صورت ہے۔ || دا لنډه شوې بڼه ده.
+@sec 6-3-4 | 6.3.4 Logic circuits from the simplified expressions || 6.3.4 مختصر اظہارات سے لاجک سرکٹس || ۶.۳.۴ له لنډو شویو افادو منطقي سرکټونه
+### 6.3.4 Logic circuits from the simplified expressions || 6.3.4 مختصر اظہارات سے لاجک سرکٹس || ۶.۳.۴ له لنډو شویو افادو منطقي سرکټونه
+### Example 1 || مثال 1 || ۱ بېلګه
+m Q= (AB) + (A+B)‾

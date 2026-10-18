@@ -1,0 +1,17 @@
+@pdf 75
+@printed 67
+@status lesson
+p Here we have used ***endl*** (pronounced as End L) manipulator that will work same as the escape sequence ***\n***. It will end up the line and move the cursor to the start of the next line. || یہاں ہم نے ***endl*** (اینڈ ایل) مینیپولیٹر استعمال کیا ہے جو ایسکیپ سیکوینس ***\n*** کی طرح کام کرے گا۔ یہ سطر ختم کر کے کرسر کو اگلی سطر کے شروع میں لے جائے گا۔ || دلته مو ***endl*** (End L) manipulator کارولی چې د ***\n*** escape sequence په څېر کار کوي. کرښه پای ته رسوي او cursor د راتلونکې کرښې پیل ته وړي.
+### 3.1.2 Input Function || 3.1.2 ان پٹ فنکشن || ۳.۱.۲ input فنکشن
+p C programming language provides built-in functions to perform input operations. The input operations are used to read user values (input) from the keyboard while running the program. The C language provides the following built-in input functions. || C پروگرامنگ زبان ان پٹ کے عمل کے لیے بلٹ ان فنکشنز فراہم کرتی ہے۔ ان پٹ کے عمل پروگرام چلتے وقت کی بورڈ سے صارف کی قدریں (ان پٹ) پڑھنے کے لیے استعمال ہوتے ہیں۔ C زبان درج ذیل بلٹ ان ان پٹ فنکشنز فراہم کرتی ہے۔ || C پروګرامي ژبه د input عملیاتو لپاره جوړ شوي فنکشنونه برابروي. input عملیات د پروګرام د چلېدو پر مهال له کیبورډ د کاروونکي ارزښتونه (input) لوستلو لپاره کارېږي. C ژبه دا جوړ شوي input فنکشنونه لري.
+- *scanf()* || *scanf()* || *scanf()*
+- *getch()* || *getch()* || *getch()*
+- *getche()* || *getche()* || *getche()*
+- *getchar()* || *getchar()* || *getchar()*
+- *gets()* || *gets()* || *gets()*
+p While C++ language uses the following for input: || جبکہ C++ زبان ان پٹ کے لیے درج ذیل استعمال کرتی ہے: || په داسې حال کې چې C++ د input لپاره دا کاروي:
+- *cin* || *cin* || *cin*
+### a. *scanf()* function || الف۔ *scanf()* فنکشن || الف. *scanf()* فنکشن
+p *scanf()* function is used to read multiple data values of different data types from the keyboard. With *scanf()* function, a program will not be processed and the result will not be displayed until you type the input value(s) for variable(s). The *scanf()* function has the following syntax. || *scanf()* فنکشن کی بورڈ سے مختلف ڈیٹا ٹائپس کی کئی قدریں پڑھنے کے لیے استعمال ہوتا ہے۔ *scanf()* کے ساتھ پروگرام اس وقت تک پروسیس نہیں ہوگا اور نتیجہ ظاہر نہیں ہوگا جب تک آپ متغیرات کی ان پٹ قدریں نہ لکھیں۔ *scanf()* کا سنٹیکس یہ ہے۔ || *scanf()* فنکشن له کیبورډ د بېلابېلو ډېټا ډولونو ډېر ارزښتونه لوستلو لپاره کارېږي. د *scanf()* سره پروګرام تر هغه نه پروسس کېږي او پایله نه ښکاري تر څو د متغیرونو input ارزښتونه ونه لیکئ. د *scanf()* syntax دا دی.
+m scanf ("format specifiers", &var1, &var2, &var3,………);
+p Where, **"format specifiers"** specifies the format of variables through format specifiers. It is written within double quotes. **&var1, &var2, &var3,……** are the list of variables separated by commas, into which the values are to be assigned. The symbol & used in *scanf()* represents the address of memory location. || جہاں **"format specifiers"** فارمیٹ اسپیسیفائرز کے ذریعے متغیرات کا فارمیٹ بتاتے ہیں اور دوہرے واوین میں لکھے جاتے ہیں۔ **&var1، &var2، &var3،……** کوما سے الگ متغیرات کی فہرست ہے جن میں قدریں رکھی جانی ہیں۔ *scanf()* میں استعمال ہونے والی علامت & میموری مقام کا پتہ (ایڈریس) ظاہر کرتی ہے۔ || چې **"format specifiers"** د format specifiers له لارې د متغیرونو format ټاکي او په دوه ګونو quotes کې لیکل کېږي. **&var1، &var2، &var3،……** په کامو جلا متغیرونه دي چې ارزښتونه پکې ږدي. په *scanf()* کې & نښه د حافظې د ځای پته ښيي.

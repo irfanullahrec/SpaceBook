@@ -1,0 +1,22 @@
+@printed 88
+@status lesson
+p For example: || مثلاً: || د بېلګې په توګه:
+m b == 15;
+m x == y;
+p In the first condition, if the value of *b* is equal to 15 then the condition is **true** otherwise it is **false**. In the second condition, the ***equal to*** operator is used to check whether the value of *x* is ***equal to*** the value in *y*, if so the condition is **true** otherwise **false**. || پہلی شرط میں اگر *b* کی قدر 15 کے برابر ہو تو شرط **درست** ورنہ **غلط** ہے۔ دوسری شرط میں ***ایکول ٹو*** آپریٹر یہ جانچنے کے لیے استعمال ہوا ہے کہ *x* کی قدر *y* کی قدر کے ***برابر*** ہے یا نہیں؛ اگر ہو تو شرط **درست** ورنہ **غلط** ہے۔ || په لومړي شرط کې که د *b* ارزښت له 15 سره مساوي وي شرط **سم** کنه **ناسم** دی. په دویم شرط کې ***equal to*** operator ازمويي چې د *x* ارزښت د *y* له ارزښت سره ***مساوي*** دی که نه؛ که وي شرط **سم** کنه **ناسم** دی.
+### 3.2.9 Difference between Unary Operators and Binary Operators || 3.2.9 یونری اور بائنری آپریٹرز میں فرق || ۳.۲.۹ د unary او binary operators توپیر
+### a. Unary Operators || الف۔ یونری آپریٹرز || الف. unary operators
+p A type of operator that works with single operand is called unary operator. Following operators are unary operators: || وہ آپریٹر جو ایک آپرینڈ کے ساتھ کام کرے یونری آپریٹر کہلاتا ہے۔ درج ذیل یونری آپریٹرز ہیں: || هغه operator چې له یوه operand سره کار کوي unary operator بلل کېږي. دا unary operators دي:
+m -, ++,--
+p The above operators are used with one operand as follows: || اوپر والے آپریٹرز ایک آپرینڈ کے ساتھ یوں استعمال ہوتے ہیں: || پورتني operators له یوه operand سره داسې کارېږي:
+m -a;
+m n++;
+m --x;
+### b. Binary Operators || ب۔ بائنری آپریٹرز || ب. binary operators
+p A type of operator that works with two operands is known as binary operator. The binary operators are: || وہ آپریٹر جو دو آپرینڈز کے ساتھ کام کرے بائنری آپریٹر کہلاتا ہے۔ بائنری آپریٹرز یہ ہیں: || هغه operator چې له دوو operands سره کار کوي binary operator بلل کېږي. binary operators دا دي:
+m +,-,*, /, %
+p Some examples are: || چند مثالیں یہ ہیں: || ځینې بېلګې دا دي:
+m x+y;
+m a-b;
+m y/z;
+m x*t;

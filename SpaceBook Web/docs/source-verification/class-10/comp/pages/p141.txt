@@ -1,0 +1,49 @@
+@printed 129
+@status lesson
+p ان گیٹس کا آؤٹ پُٹ اس قسم کا ہو گا || The output of these gates will be as follows: || د دې دروازو output به داسې وي:
+m Q = (A.B) + (A+B)‾
+table مثال 1 کا ٹرُتھ ٹیبل || Truth table of Example 1 || د ۱ بېلګې د حقیقت جدول
+th | A | B | A.B | (A+B)‾ | Q
+tr | 0 | 0 | 0 | 1 | 1
+tr | 1 | 0 | 0 | 0 | 0
+tr | 0 | 1 | 0 | 0 | 0
+tr | 1 | 1 | 1 | 0 | 1
+endtable
+@deco The table has a two-level header: "Inputs" over A/B, "Intermediates" over A.B and (A+B)‾, "Output" over Q.
+### مثال نمبر 2: || Example 2: || بېلګه ۲:
+m Q = (A.B.C) + A.(B̅+C̅)
+svg مثال 2 کا لاجک سرکٹ || Logic circuit of Example 2 || د ۲ بېلګې منطقي سرکټ
+<svg viewBox="0 0 560 260" width="560" role="img" aria-label="Circuit for Q = (A.B.C) + A.(B-bar + C-bar): A, B and C feed a three-input AND gate giving A.B.C; B and C each pass through a NOT gate to give B-bar and C-bar, which feed an OR gate giving B-bar + C-bar; that and A feed a second AND gate giving A.(B-bar + C-bar); the two AND outputs feed an OR gate giving Q" font-family="Arial, Helvetica, sans-serif" font-size="14">
+<g stroke="#111827" stroke-width="1.8" fill="none">
+<path d="M30 20 H170 M30 34 H170 M30 48 H170"/>
+<path d="M80 20 V110 H330 V140 H350"/>
+<path d="M66 34 V190 H100"/><path d="M52 48 V240 H100"/>
+<path d="M158 190 H180 V205 H220 M158 240 H180 V225 H220"/>
+<path d="M290 215 H320 V170 H350"/>
+<path d="M230 34 H420 V70 H440 M410 155 H425 V95 H440"/><path d="M525 82 H548"/></g>
+<circle cx="80" cy="20" r="3" fill="#111827"/><circle cx="66" cy="34" r="3" fill="#111827"/><circle cx="52" cy="48" r="3" fill="#111827"/>
+<text x="10" y="25">A</text><text x="10" y="39">B</text><text x="10" y="53">C</text>
+<path d="M170 8 H200 A26 26 0 0 1 200 60 H170 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/>
+<path d="M100 175 L145 190 L100 205 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/><circle cx="151" cy="190" r="5" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<path d="M100 225 L145 240 L100 255 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/><circle cx="151" cy="240" r="5" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<path d="M212 195 Q232 215 212 235 Q268 235 290 215 Q268 195 212 195 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/>
+<path d="M350 125 H380 A30 30 0 0 1 380 185 H350 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/>
+<path d="M432 55 Q452 82 432 110 Q500 110 525 82 Q500 55 432 55 Z" fill="#d1d5db" stroke="#111827" stroke-width="1.8"/>
+<text x="250" y="28">A.B.C</text><text x="290" y="104">A</text><text x="164" y="180">B̅</text><text x="164" y="258">C̅</text>
+<text x="250" y="252">B̅+C̅</text><text x="400" y="204">A.(B̅+C̅)</text>
+<text x="452" y="134">Q = (A.B.C) + A.(B̅+C̅)</text>
+</svg>
+endsvg
+table مثال 2 کا ٹرُتھ ٹیبل || Truth table of Example 2 || د ۲ بېلګې د حقیقت جدول
+th | C | B | A | A.B.C | B̅ | C̅ | B̅+C̅ | A.(B̅+C̅) | Q
+tr | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0
+tr | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 1
+tr | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0
+tr | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1
+tr | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0
+tr | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 1
+tr | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+tr | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1
+endtable
+@deco The table has a two-level header: "Inputs" over C/B/A, "Intermediates" over A.B.C to A.(B̅+C̅), "Output" over Q.
+@issue The circuit's output label prints "A.(B+C)" with the bars lost; the expression is A.(B̄+C̄). Q equals A in every row, so the whole circuit simplifies to Q = A.

@@ -1,0 +1,434 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s085-mode-solution",
+  "title": "Example 2.27 solution · 2.4.4 Graphical method · Example 2.28",
+  "headingUrdu": "مثال 2.27 کا حل · 2.4.4 گرافی طریقہ · مثال 2.28",
+  "headingPashto": "د بېلګې 2.27 حل · 2.4.4 ګرافي طریقه · بېلګه 2.28",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 85,
+    "printedPage": "77"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s085-sol27",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s085-ins",
+      "en": "By inspection method we choose 39.5 – 54.5 as the modal class because it has the maximum frequency, therefore",
+      "ur": "معائنے کے طریقے سے ہم 39.5 – 54.5 کو عادی جماعت منتخب کرتے ہیں کیونکہ اس کا تعدد سب سے زیادہ ہے، لہٰذا",
+      "ps": "د معاینې طریقې په واسطه موږ 39.5 – 54.5 د مودي ټولګي په توګه ټاکو ځکه چې فریکونسي یې اعظمي ده، نو",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s085-h244",
+      "en": "2.4.4 Calculation of the mode by graphical method",
+      "ur": "2.4.4 گرافی طریقے سے عادہ کا حساب",
+      "ps": "2.4.4 د مود د ګرافي طریقې محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s085-t244",
+      "en": "Prepare a histogram, consider a bar having maximum height and join its top corners with the nearest corners of the adjoining bars by straight line. The point of intersection of the joining line is the mode.",
+      "ur": "ہسٹوگرام تیار کریں، زیادہ سے زیادہ اونچائی والے بار کو لیں اور اس کے اوپری کونوں کو ملحقہ باروں کے قریب ترین کونوں سے سیدھی لکیر سے ملائیں۔ ملانے والی لکیروں کے تقاطع کا نقطہ عادہ ہے۔",
+      "ps": "هیسټوګرام جوړ کړئ، هغه بار واخلئ چې اعظمي لوړوالی ولري او د هغه پورتني کونجونه د نښتو بارونو له نږدې کونجونو سره په سیده کرښه وصل کړئ. د وصلونکو کرښو د تقاطع نقطه مود ده."
+    },
+    {
+      "id": "stat11-s085-ex28",
+      "en": "Example: 2.28",
+      "ur": "مثال: 2.28",
+      "ps": "بېلګه: 2.28",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-28"
+    },
+    {
+      "id": "stat11-s085-q28",
+      "en": "Calculate Mode graphically from the following data.",
+      "ur": "درج ذیل اعداد و شمار سے عادہ گرافی طور پر حساب کریں۔",
+      "ps": "له لاندې معلوماتو څخه مود په ګرافي ډول محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-28"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s085-sol27"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s085-ins"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s085-h244",
+        "stat11-s085-t244",
+        "stat11-s085-ex28",
+        "stat11-s085-q28"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s085-m1",
+      "latex": "\\text{Mode}=l_1+\\dfrac{f_m-f_0}{2f_m-f_0-f_1}\\times h",
+      "accessible": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s085-m2",
+      "latex": "=39.5+\\dfrac{44-20}{2(44)-20-26}\\times15",
+      "accessible": "= 39.5 + ((44 − 20)/(2(44) − 20 − 26)) × 15",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 39.5 + ((44 − 20)/(2(44) − 20 − 26)) × 15"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 39.5 + ((44 − 20)/(2(44) − 20 − 26)) × 15"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 39.5 + ((44 − 20)/(2(44) − 20 − 26)) × 15"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s085-m3",
+      "latex": "=39.5+\\dfrac{24\\times15}{88-46}",
+      "accessible": "= 39.5 + (24 × 15)/(88 − 46)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 39.5 + (24 × 15)/(88 − 46)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 39.5 + (24 × 15)/(88 − 46)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 39.5 + (24 × 15)/(88 − 46)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s085-m4",
+      "latex": "=39.5+8.5=48",
+      "accessible": "= 39.5 + 8.5 = 48",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 39.5 + 8.5 = 48"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 39.5 + 8.5 = 48"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 39.5 + 8.5 = 48"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-27"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.27: class boundaries",
+      "captionUrdu": "مثال 2.27: جماعتی سرحدیں",
+      "captionPashto": "بېلګه 2.27: د ټولګي پولې",
+      "headers": [
+        {
+          "en": "Marks",
+          "ur": "نمبر",
+          "ps": "نمرې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "جماعتی سرحدیں",
+          "ps": "د ټولګي پولې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "10 – 24",
+            "ur": "10 – 24",
+            "ps": "10 – 24"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "9.5 – 24.5",
+            "ur": "9.5 – 24.5",
+            "ps": "9.5 – 24.5"
+          }
+        ],
+        [
+          {
+            "en": "25 – 39",
+            "ur": "25 – 39",
+            "ps": "25 – 39"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "24.5 – 39.5",
+            "ur": "24.5 – 39.5",
+            "ps": "24.5 – 39.5"
+          }
+        ],
+        [
+          {
+            "en": "40 – 54",
+            "ur": "40 – 54",
+            "ps": "40 – 54"
+          },
+          {
+            "en": "44",
+            "ur": "44",
+            "ps": "44"
+          },
+          {
+            "en": "39.5 – 54.5",
+            "ur": "39.5 – 54.5",
+            "ps": "39.5 – 54.5"
+          }
+        ],
+        [
+          {
+            "en": "55 – 69",
+            "ur": "55 – 69",
+            "ps": "55 – 69"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "54.5 – 69.5",
+            "ur": "54.5 – 69.5",
+            "ps": "54.5 – 69.5"
+          }
+        ],
+        [
+          {
+            "en": "70 – 84",
+            "ur": "70 – 84",
+            "ps": "70 – 84"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "69.5 – 84.5",
+            "ur": "69.5 – 84.5",
+            "ps": "69.5 – 84.5"
+          }
+        ],
+        [
+          {
+            "en": "85 – 99",
+            "ur": "85 – 99",
+            "ps": "85 – 99"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "84.5 – 99.5",
+            "ur": "84.5 – 99.5",
+            "ps": "84.5 – 99.5"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-27",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.28: groups and frequency",
+      "captionUrdu": "مثال 2.28: گروہ اور تعدد",
+      "captionPashto": "بېلګه 2.28: ډلې او فریکونسي",
+      "headers": [
+        {
+          "en": "Groups:",
+          "ur": "گروہ:",
+          "ps": "ډلې:"
+        },
+        {
+          "en": "10 – 19",
+          "ur": "10 – 19",
+          "ps": "10 – 19"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        },
+        {
+          "en": "40 – 49",
+          "ur": "40 – 49",
+          "ps": "40 – 49"
+        },
+        {
+          "en": "50 – 59",
+          "ur": "50 – 59",
+          "ps": "50 – 59"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-28"
+    }
+  ],
+  "sourceNote": "Printed page 77. The page-number badge at the foot is partly cut off. Printed expression \"2(44)−20−26\" and \"88−46\" are as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:38:43.379924+00:00",
+    "scope": "Scan 85 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

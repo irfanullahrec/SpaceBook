@@ -1,0 +1,181 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s224-p215",
+  "title": "DBA role (end); 7.1.7 Database Models; a. Hierarchical Database Model — start",
+  "headingUrdu": "ڈی بی اے کا کردار (اختتام)؛ ۷.۱.۷ ڈیٹا بیس ماڈلز؛ الف۔ ہائیرارکیکل ڈیٹا بیس ماڈل — آغاز",
+  "headingPashto": "د DBA رول (پای)؛ ۷.۱.۷ د ډېټابېس ماډلونه؛ الف. درجه بندي ډېټابېس ماډل — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 224,
+    "printedPage": "215"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s224-a",
+      "en": "is to administer, develop and implement policies and procedures necessary to ensure the security and integrity of the database. Other primary responsibilities of a DBA include:",
+      "ur": "ڈیٹا بیس کی سیکیورٹی اور سالمیت یقینی بنانے کے لیے ضروری پالیسیاں اور طریقہ کار کا انتظام، تیاری اور نفاذ ہے۔ ڈی بی اے کی دیگر بنیادی ذمہ داریوں میں شامل ہیں:",
+      "ps": "د ډېټابېس د امنیت او بشپړتیا د ډاډمنتیا لپاره اړین پالیسۍ او کړنلارې اداره کول، جوړول او پلي کول دي. د DBA نورې لومړنۍ مسؤلیتونه شاملوي:",
+      "cont": true
+    },
+    {
+      "id": "cs11-s224-r1",
+      "en": "Implementation of Data Models",
+      "ur": "ڈیٹا ماڈلز کا نفاذ",
+      "ps": "د ډېټا ماډلونو پلي کول",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r2",
+      "en": "Database design",
+      "ur": "ڈیٹا بیس ڈیزائن",
+      "ps": "د ډېټابېس ډیزاین",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r3",
+      "en": "Performance issues",
+      "ur": "کارکردگی کے مسائل",
+      "ps": "د فعالیت مسایل",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r4",
+      "en": "Storage structure and access-method definition",
+      "ur": "ذخیرے کی ساخت اور رسائی کے طریقے کی تعریف",
+      "ps": "د ذخیرې جوړښت او د لاسرسي طریقې تعریف",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r5",
+      "en": "Granting of authorization for data access",
+      "ur": "ڈیٹا تک رسائی کی اجازت دینا",
+      "ps": "د ډېټا ته د لاسرسي د اجازې ورکول",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r6",
+      "en": "Routine maintenance which may include:",
+      "ur": "معمول کی دیکھ بھال جس میں شامل ہو سکتے ہیں:",
+      "ps": "معمولي ساتنه چې شاملوالی یې کېدای شي:",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r6a",
+      "en": "Periodically backup the database",
+      "ur": "وقتاً فوقتاً ڈیٹا بیس کا بیک اپ لینا",
+      "ps": "په دوره یي ډول د ډېټابېس بیک اپ نیول",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r6b",
+      "en": "Ensuring that enough free disk space is available",
+      "ur": "یقینی بنانا کہ کافی خالی ڈسک اسپیس دستیاب ہے",
+      "ps": "ډاډ ترلاسه کول چې کافي وړیا ډیسک ځای شته",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-r6c",
+      "en": "Monitoring jobs running on the database and performance",
+      "ur": "ڈیٹا بیس پر چلنے والے کاموں اور کارکردگی کی نگرانی کرنا",
+      "ps": "په ډېټابېس چالېدونکو کارونو او فعالیت څارل",
+      "listGroup": "dba"
+    },
+    {
+      "id": "cs11-s224-h1",
+      "en": "7.1.7 Database Models",
+      "ur": "۷.۱.۷ ڈیٹا بیس ماڈلز",
+      "ps": "۷.۱.۷ د ډېټابېس ماډلونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s224-b",
+      "en": "A database model is a set of rules or specifications which state that how data can be stored, organized and manipulated in a database system. It provides tools for describing data, data relationships, data semantics and consistency constraints. Several models have been suggested. Few common models include:",
+      "ur": "ڈیٹا بیس ماڈل قواعد یا وضاحتوں کا مجموعہ ہے جو بیان کرتا ہے کہ ڈیٹا بیس سسٹم میں ڈیٹا کو کیسے ذخیرہ، منظم اور اس میں ترمیم کی جا سکتی ہے۔ یہ ڈیٹا، ڈیٹا کے تعلقات، ڈیٹا کے معانی اور مطابقت کی پابندیوں کو بیان کرنے کے اوزار فراہم کرتا ہے۔ کئی ماڈلز تجویز کیے گئے ہیں۔ چند عام ماڈلز میں شامل ہیں:",
+      "ps": "د ډېټابېس ماډل د قواعدو یا مشخصاتو یوه ټولګه ده چې بیانوي چې په ډېټابېس سیسټم کې ډېټا څنګه ذخیره، منظم او کار ترې اخیستل کېدای شي. دا د ډېټا، د ډېټا اړیکو، د ډېټا مانا او همغږۍ محدودیتونو د بیانولو لپاره وسایل برابروي. څو ماډلونه وړاندیز شوي. ځینې عام ماډلونه شاملوي:"
+    },
+    {
+      "id": "cs11-s224-d1",
+      "en": "Hierarchical Database Model",
+      "ur": "ہائیرارکیکل ڈیٹا بیس ماڈل",
+      "ps": "درجه بندي ډېټابېس ماډل",
+      "listGroup": "dm"
+    },
+    {
+      "id": "cs11-s224-d2",
+      "en": "Network Database Model",
+      "ur": "نیٹ ورک ڈیٹا بیس ماڈل",
+      "ps": "شبکه ډېټابېس ماډل",
+      "listGroup": "dm"
+    },
+    {
+      "id": "cs11-s224-d3",
+      "en": "Relational Database Model",
+      "ur": "ریلیشنل ڈیٹا بیس ماڈل",
+      "ps": "اړونده ډېټابېس ماډل",
+      "listGroup": "dm"
+    },
+    {
+      "id": "cs11-s224-d4",
+      "en": "Object Oriented Database Model",
+      "ur": "آبجیکٹ اورینٹڈ ڈیٹا بیس ماڈل",
+      "ps": "څیز پر بنسټ ډېټابېس ماډل",
+      "listGroup": "dm"
+    },
+    {
+      "id": "cs11-s224-d5",
+      "en": "Object Relational Database Model",
+      "ur": "آبجیکٹ ریلیشنل ڈیٹا بیس ماڈل",
+      "ps": "څیز اړونده ډېټابېس ماډل",
+      "listGroup": "dm"
+    },
+    {
+      "id": "cs11-s224-h2",
+      "en": "a. Hierarchal Database Model",
+      "ur": "الف۔ ہائیرارکل ڈیٹا بیس ماڈل",
+      "ps": "الف. درجه بندي ډېټابېس ماډل",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s224-c",
+      "en": "In this type of model, data is organized into a tree-like structure. There is a hierarchy of parent and child segments. This structure implies that a record can have repeating information, usually in the child data segment. Each parent",
+      "ur": "اس قسم کے ماڈل میں ڈیٹا درخت نما ساخت میں منظم ہوتا ہے۔ والدین اور بچے کے حصوں کی درجہ بندی ہوتی ہے۔ اس ساخت کا مطلب ہے کہ ریکارڈ میں تکراری معلومات ہو سکتی ہیں، عموماً بچے کے ڈیٹا سیگمنٹ میں۔ ہر والدین",
+      "ps": "په دې ډول ماډل کې ډېټا د ونې غوندې جوړښت کې منظمه کېږي. د مور او ماشوم برخو درجه بندي شته. دا جوړښت دا مانا لري چې یو ثبت کېدای شي تکراري معلومات ولري، معمولاً د ماشوم ډېټا برخه کې. هر مور",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s224-a",
+        "cs11-s224-r1",
+        "cs11-s224-r2",
+        "cs11-s224-r3",
+        "cs11-s224-r4",
+        "cs11-s224-r5",
+        "cs11-s224-r6",
+        "cs11-s224-r6a",
+        "cs11-s224-r6b",
+        "cs11-s224-r6c",
+        "cs11-s224-h1",
+        "cs11-s224-b",
+        "cs11-s224-d1",
+        "cs11-s224-d2",
+        "cs11-s224-d3",
+        "cs11-s224-d4",
+        "cs11-s224-d5",
+        "cs11-s224-h2",
+        "cs11-s224-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 215: the end of the DBA paragraph (continuing from page 214) with the list of responsibilities (with three sub-items under routine maintenance), the banner “7.1.7 Database Models” with its paragraph and the list a–e, and the start of “a. Hierarchal Database Model” (the sentence continues on the next page). The printed spelling “Hierarchal” is kept in the heading. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:44:10.791744+00:00",
+    "scope": "Scan 224 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

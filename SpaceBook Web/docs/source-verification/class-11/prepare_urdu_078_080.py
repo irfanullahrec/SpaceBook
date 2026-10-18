@@ -1,0 +1,71 @@
+from urduhelp import *
+c=cell
+def H(s,ur,en,ps): add(s,f'h{len(s["paras"])+1}',en,ur,ps,kind='heading')
+def P(s,ur,en,ps,**m): add(s,f'p{len(s["paras"])+1}',en,ur,ps,**m)
+def Q(s,ur,en,ps,u='p09',**k): add(s,f'q{len(s["paras"])+1}',en,ur,ps,role='question',exerciseId=f'urdu11-{u}-q',tab='exercise',**k)
+def D(s,lab,t,e,p): add(s,f'p{len(s["paras"])+1}',e,f'{lab}: {t}',f'{lab}: {p}',speaker=lab)
+NOTE=' English and Pashto are our translations (need native review); watermark and ornamental borders excluded.'
+# scan 78 = printed 70
+s=page(78,'p09','70','Exercise (Mashq) on Khoobsurat Bala','مشق: «خوب صورت بلا» پر سوالات','تمرین: «ښکلې بلا» پوښتنې','ex')
+F=Flow(s)
+H(s,'مشق','Exercise (Mashq)','تمرین')
+Q(s,'1۔ ڈرامے کی تعریف کریں اور آغا حشر کاشمیری کے چند دیگر ڈراموں کے نام لکھیں۔','1. Define drama and write the names of a few other plays of Agha Hashr Kashmiri.','۱. د ډرامې تعریف وکړئ او د آغا حشر کاشمیري د څو نورو ډرامو نومونه ولیکئ.')
+Q(s,'2۔ بدی نے اپنی تعریف میں جو کچھ کہا، اسے اپنے الفاظ میں بیان کریں۔','2. State in your own words what Badi said in her own praise.','۲. بدۍ په خپله ستاینه کې چې څه وویل هغه په خپلو الفاظو بیان کړئ.')
+Q(s,'3۔ شمسہ نے توفیق سے کیا مطالبہ کیا؟','3. What did Shamsa demand of Tawfeeq?','۳. شمسې له توفیق نه کوم مطالبه وکړه؟')
+Q(s,'4۔ مقفّیٰ نثر کسے کہتے ہیں؟ اس سبق میں سے مقفّیٰ نثر کی کم از کم پانچ مثالیں لکھیں۔','4. What is rhymed prose (muqaffa nathr)? Write at least five examples of rhymed prose from this lesson.','۴. مقفی نثر ته څه وايي؟ له دې درس نه د مقفی نثر لږ تر لږه پنځه بېلګې ولیکئ.')
+Q(s,'5۔ توفیق نے عورت کی تعریف کن جملوں میں کی ہے؟','5. In which sentences has Tawfeeq defined a woman?','۵. توفیق د ښځې تعریف په کومو جملو کې کړی دی؟')
+Q(s,'6۔ معانی تحریر کریں۔ سرکش، عداوت، قیل و قال، چھتر، پا بہ زنجیر، طینت، اژدر، جنبش، چرخ، سحاب، تبر۔','6. Write the meanings: sarkash, adawat, qeel-o-qaal, chhatar, pa-ba-zanjeer, teenat, azhdar, jumbish, charkh, sahab, tabar.','۶. معنا ولیکئ: سرکش، عداوت، قیل و قال، چتر، پابه زنځیر، طینت، اژدر، جنبش، چرخ، سحاب، تبر.')
+Q(s,'7۔ توفیق کے کردار کے بارے میں چند سطریں لکھیں۔','7. Write a few lines about the character of Tawfeeq.','۷. د توفیق د کردار په اړه څو کرښې ولیکئ.')
+Q(s,'8۔ یہاں شیر بہادر آدمی کے لیے استعارہ ہے۔ «شیر لوہے کے جال میں ہے»۔ استعارے کی تعریف کریں اور مثالیں دیں۔','8. Here “lion” is a metaphor for a brave man: “the lion is in a net of iron.” Define metaphor (isti’ara) and give examples.','۸. دلته زمری د زړور سړي لپاره استعاره ده. «زمری د اوسپنې په جال کې دی». د استعارې تعریف وکړئ او بېلګې ورکړئ.')
+Q(s,'9۔ اپنے معاشرے اور ماحول کے حوالے سے قتلو کے کردار کا تنقیدی جائزہ پیش کریں۔','9. Present a critical review of the character of Qatlu with reference to your society and environment.','۹. د خپلې ټولنې او چاپېریال په اړه د قتلو د کردار انتقادي جایزه وړاندې کړئ.')
+H(s,'سرگرمی','Activity','فعالیت')
+P(s,'اساتذہ طلبہ سے اس ڈرامے کے مکالموں کی دُرست تلفّظ کے ساتھ بُلند خوانی کروائیں۔','Teachers should have the students read aloud the dialogues of this drama with correct pronunciation.','ښوونکي دې له زده‌کوونکو د دې ډرامې مکالمې په سم تلفظ سره په لوړ غږ ولولي.',boxed=True)
+H(s,'ہدایت برائے اساتذہ','Instruction for teachers','د ښوونکو لپاره لارښوونه')
+P(s,'طلبہ کو استعارے کی تعریف مع ارکان، مثالوں کے ذریعے بتائی جائے۔','Tell the students the definition of metaphor along with its elements, through examples.','زده‌کوونکو ته د استعارې تعریف د ارکانو سره د بېلګو له لارې ووایئ.',boxed=True)
+F.done()
+s['sourceNote']='Printed page 70 (scan 78): “Mashq” title (partly cropped at the top), nine questions (question 6 lists words in blue; question 8 quotes “شیر لوہے کے جال میں ہے” in blue), the boxed activity (“سرگرمی”) and the boxed teachers’ instruction; the lower part of the page is blank. The printed number reads “70”.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 79 = printed 72 (the previous printed page 71 is not in the scans: Khwaja Moinuddin author profile)
+s=page(79,'p10','72','Taleem-e-Balighan (Adult Education): characters and scene','تعلیمِ بالغاں: کردار اور منظر','د لویانو زده‌کړه: کردارونه او منظر','l1')
+F=Flow(s)
+H(s,'تعلیمِ بالغاں','Taleem-e-Balighan (Adult Education)','د لویانو زده‌کړه')
+P(s,'خواجہ معین الدین','Khwaja Moinuddin','خواجه معین الدین')
+P(s,'(ایک ایکٹ کا طنزیہ و مزاحیہ کھیل)','(A satirical and humorous one-act play)','(د یو ایکټ طنزیه او مزاحیه لوبه)')
+P(s,'کردار جس ترتیب سے اسٹیج پر آتے ہیں۔','The characters in the order in which they come on stage.','کردارونه چې په کوم ترتیب په سټېج راځي.',boxed=True)
+for t in ['☆ مولوی صاحب','☆ قصاب','☆ حجام','☆ ڈکٹوریہ والا','☆ مولوی صاحب کی بیوی (پس پردہ)']:
+    pass
+P(s,'مولوی صاحب، قصاب، حجام، وکٹوریہ والا (وکٹوریہ والا = کوچوان)، مولوی صاحب کی بیوی (پس پردہ)۔','Maulvi Sahib, the Butcher, the Barber, the Victoria-driver (coachman), Maulvi Sahib’s wife (behind the curtain).','مولوي صاحب، قصاب، حجام، وکټوریه والا (کوچوان)، د مولوي صاحب ښځه (تر پردې شا).',boxed=True)
+P(s,'مقام: بکرا پیڑھی کراچی کی ایک کچی بستی۔','Place: a katchi abadi (slum) of Bakra Peri, Karachi.','ځای: د کراچۍ د بکرا پیړۍ یوه کچه کلي.',boxed=True)
+P(s,'سیٹ: ایک جھونپڑی۔','Set: a hut.','سېټ: یوه جونګړه.',boxed=True)
+P(s,'زمانہ: 1954ء۔','Period: 1954.','زمانه: ۱۹۵۴ز.',boxed=True)
+P(s,'وقت: صبح۔','Time: morning.','وخت: سهار.',boxed=True)
+H(s,'منظر','Scene','منظر')
+P(s,'ایک شکستہ سی جھونپڑی، جس کے دائیں جانب ایک ٹاٹ کا پردہ پڑا ہے جو اس بات کو ظاہر کرتا ہے کہ اندر کی جانب جھونپڑی کا زنانہ حصّہ ہے۔ پردے کے قریب ہی ایک گھڑونچی رکھی ہے، جس پر تین گھڑے رکھے ہیں۔ دو ٹوٹے ہوئے اور ایک ثابت۔ ثابت گھڑے پر چاک سے «یقینِ محکم» لکھا ہے۔ دوسرا گھڑا پیندے اور گلے کی جانب سے ٹوٹا ہوا ہے جس پر «تنظیم» لکھا ہے اور تیسرا گھڑا ٹکڑے ٹکڑے ہو چکا ہے اور ایک ٹوٹے ہوئے ٹکڑے پر «اتحاد» لکھا ہے۔ جھونپڑی کے درمیان میں مدرسے کے استاد محبت علی کی چار پائی پڑی ہے۔ جھونپڑی','A rather broken hut, to the right of which hangs a curtain of sackcloth, showing that inside is the women’s part of the hut. Near the curtain is a pitcher-stand on which three pitchers are placed: two broken and one intact. On the intact pitcher “Faith (Yaqeen-e-Muhkam)” is written in chalk. The second pitcher is broken at the bottom and the neck and has “Discipline (Tanzeem)” written on it; and the third pitcher has been smashed to pieces and on one broken piece “Unity (Ittehad)” is written. In the middle of the hut lies the cot of Muhabbat Ali, a teacher of the madrasa. The hut','یوه ماته جونګړه، چې ښي لور ته یې د ټاټ پرده ځوړنده ده چې دا څرګندوي چې دننه د جونګړې ښځینه برخه ده. د پردې نژدې یو ګیډۍ ایښودل شوې ده چې پر هغې درې ګیډۍ ایښودل شوي دي. دوه ماتې او یوه سالمه. پر سالمه ګیډۍ په چاک «یقین محکم» لیکل شوی دی. دویمه ګیډۍ د لاندې او ستوني له لوري ماته ده چې پر هغې «تنظیم» لیکل شوی دی او دریمه ګیډۍ ټوټې ټوټې شوې ده او پر یوې ماتې ټوټې «اتحاد» لیکل شوی دی. د جونګړې په منځ کې د مدرسې د استاد محبت علي چارپايي پرته ده. جونګړه')
+F.done()
+s['sourceNote']='Printed page 72 (scan 79): the printed page 71 (the author profile of Khwaja Moinuddin) is not among the supplied scans (the supplied sequence goes from printed 70 to 72). The lesson title “تعلیمِ بالغاں” in an ornamental frame, the author strip “خواجہ معین الدین”, the subtitle, the box listing the cast (☆-bulleted in print), the place/set/period/time lines and the beginning of the scene; the last sentence continues on the next page.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 80 = printed 73
+s=page(80,'p10','73','Taleem-e-Balighan, part 2','تعلیمِ بالغاں (حصہ دوم)','د لویانو زده‌کړه (دویمه برخه)','l2')
+F=Flow(s)
+P(s,'کے بائیں جانب ایک تختۂ سیاہ (بلیک بورڈ) اسٹینڈ پر رکھا ہے، جس پر مندرجہ ذیل عبادت درج ہے: «مدرسۂ تعلیمِ بالغاں۔ بکرا پیڑھی، میوہ شاہ لائن، کراچی، حکومتِ اسلامی، پاکستان۔ صدر مدرس محبت علی۔»','On the left of the hut a blackboard is placed on a stand, on which the following text is written: “Madrasa Taleem-e-Balighan. Bakra Peri, Meva Shah Line, Karachi, Islamic Government, Pakistan. Head teacher Muhabbat Ali.”','د جونګړې کیڼ لور ته یوه تخته سیاه (بلیک بورډ) پر سټنډ ایښودل شوې ده چې پر هغې لاندې متن لیکل شوی دی: «د لویانو د زده‌کړې مدرسه. بکرا پیړۍ، میوه شاه لاین، کراچۍ، اسلامي حکومت، پاکستان. صدر مدرس محبت علي.»')
+P(s,'پردہ اٹھتا ہے تو ہم دیکھتے ہیں کہ استاد محبت علی چار پائی پر بیٹھے ہیں اور ایک ازار بند بُن رہے ہیں۔ دائیں جانب قصائی اپنا کندہ اور چھرے لیے بیٹھا ہے۔ پس منظر سے ایک آواز یہ شعر پڑھتی ہے:','When the curtain rises we see that Ustad Muhabbat Ali is sitting on the cot, weaving a trouser-cord. On the right a butcher sits with his chopping-block and knives. A voice from the background recites this verse:','کله چې پرده پورته کېږي نو موږ ګورو چې استاد محبت علي په چارپايۍ ناست دی او یو ازار بند ګنډي. ښي لور ته قصاب خپل کنده او چړې راوړې ناست دی. له شاليد نه یو غږ دا شعر لولي:')
+V=lambda s,ur,en,ps: add(s,f'p{len(s["paras"])+1}',en,ur,ps,boxed=True,kind='verse')
+V(s,'یقینِ محکم، عمل پیہم، محبّت فاتحِ عالم / جہادِ زندگانی میں یہ ہیں مردوں کی شمشیریں','Firm faith, continuous action, love that conquers the world — / in the jihad of life these are the swords of men.','یقین محکم، عمل پیهم، مینه د نړۍ فاتح / د ژوند په جهاد کې دا د سړیو توري دي')
+P(s,'(آخری مصرع پر قصائی اپنے چھرے ایک دوسرے پر رگڑ کر تیز کرتا ہے۔)','(At the last line the butcher sharpens his knives by rubbing them against each other.)','(په وروستۍ مصرع قصاب خپلې چړې یو پر بل رګړلو سره تېزوي.)')
+def D2(lab,t,e,p): D(s,lab,t,e,p)
+D2('شمشو حجام','(باہر سے آواز آتی ہے) مولی صاب، مولی صاب۔','Shamshu the barber: (a voice comes from outside) Maulvi Sahib, Maulvi Sahib!','شمشو حجام: (له بهر نه غږ راځي) مولوي صاحب، مولوي صاحب.')
+D2('مولوی','(دروازے کی جانب دیکھتے ہوئے) ارے کون؟','Maulvi: (looking towards the door) Hey, who is it?','مولوي: (دروازې لور ته کتلو سره) ای څوک؟')
+D2('حجام','(اندر آتے ہوئے) میں ہوں مولی صاحب۔ آپ کا شاگرد شمشیر علی عرف شمشو۔ (حجام اندر آتا ہے، جس کے ہاتھ میں ایک ٹین کا بستہ نما ڈبہ ہے جس پر اس کا نام اس طرح لکھا ہے: «شم شیر علی»)','Barber: (coming in) It is I, Maulvi Sahib. Your pupil Shamsher Ali alias Shamshu. (The barber comes in with a tin box shaped like a school bag in his hand, on which his name is written thus: “Shamsher Ali”.)','حجام: (دننه راتلو سره) زه یم مولوي صاحب. ستاسو شاګرد شمشیر علي عرف شمشو. (حجام دننه راځي چې په لاس کې یې د ټین بسته ډوله بکس دی چې پر هغې خپل نوم داسې لیکلی: «شم شیر علي»)')
+D2('مولوی','(پیار سے اسے گلے لگاتے ہوئے) ارے شمشو! تُو آ گیا بیٹے۔ شمشو بیٹے تُو نے کہا تھا کہ جمعے کے دن میرے پاس بہت گاہک ہوتے ہیں۔ ہفتے کو بچّے کے بال کاٹ دوں گا۔ کاٹ دیے بیٹے!','Maulvi: (embracing him lovingly) Hey Shamshu! You have come, son. Shamshu, son, you had said that on Fridays I have many customers; on Saturday I will cut the child’s hair. Did you cut it, son?','مولوي: (په مینه یې غېږ کولو سره) ای شمشو! ته راغلې زویه. شمشو زویه تا ویلي وو چې د جمعې په ورځ زما سره ډېر پېرودونکي وي. د شنبې په ورځ به د ماشوم ویښتان پرې کړم. پرې کړل زویه!')
+D2('حجام','(فخریہ انداز میں) کاٹ دیا ہوں مولی صاحب۔ انگریزی بال کاٹتا ہوں۔','Barber: (proudly) I cut it, Maulvi Sahib. I cut English-style hair.','حجام: (په ویار) پرې مې کړل مولوي صاحب. انګرېزي ویښتان پرې کوم.')
+P(s,'(مولوی صاحب قصائی کی پیٹھ پر ڈنڈا مارتے ہیں)','(Maulvi Sahib strikes the butcher’s back with a stick.)','(مولوي صاحب د قصاب پر شا لښته ورکوي)')
+D2('مولوی','چل بے دھندا بند کر اور وہ درخواست پڑھ کرنا۔','Maulvi: Come on, close your business and read out that application.','مولوي: ځه بې دهندا بند کړه او هغه درخواست ولوله.')
+D2('قصاب','کون سی جی! وہ جو محکمۂ تعلیم کو لکھوائی تھی؟','Butcher: Which one, sir? The one that was got written to the Education Department?','قصاب: کومه جي! هغه چې د ښوونې ریاست ته لیکل شوې وه؟')
+D2('مولوی','(اسی غصے میں) ہاں وہی۔','Maulvi: (in the same anger) Yes, that very one.','مولوي: (په همدې غصه کې) هو همدا.')
+P(s,'(قصائی برابر رکھے ہوئے رجسٹر میں سے درخواست نکال کر پڑھنا شروع کرتا ہے۔)','(The butcher takes the application out of the register kept beside him and begins to read.)','(قصاب د ځنګ ایښودل شوي رجسټر نه درخواست راوباسي او لوستل پیل کوي.)')
+F.done()
+s['sourceNote']='Printed page 73 (scan 80): the end of the scene description (the first words continue the previous page), the stage directions, a verse of Iqbal (printed in blue with the verse mark, spoken by a voice off stage) and the beginning of the dialogue (speaker labels in blue: شمشو حجام, مولوی, قصاب). The last stage direction begins the butcher’s reading of the application.'+NOTE
+s['vocabulary']={}
+save(s)

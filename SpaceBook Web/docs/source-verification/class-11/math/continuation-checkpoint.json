@@ -1,0 +1,92 @@
+{
+  "updatedAt": "2026-10-18T06:24:06.225987+00:00",
+  "priority": "Mathematics, then remaining Class 11 subjects; latest direct user request",
+  "wholeBookComplete": false,
+  "sourceScanCount": 432,
+  "transcribedScans": 207,
+  "nextNewTranscript": "pages/p207.txt",
+  "answeredExerciseLeaves": 310,
+  "answerUnitsChecked": [
+    1,
+    2,
+    3
+  ],
+  "nextAnswerTask": "Unit 4 Sequences and Series: all exercise answers still pending. Unit 5 and earlier Unit 6 exercises also need answers.",
+  "sourceIssues": [
+    {
+      "key": "2.2|6|(i)",
+      "status": "Explained in authored answer",
+      "detail": "The determinant is not identically zero as printed. a=1,b=2,c=3 gives -6. Source question preserved."
+    },
+    {
+      "key": "1.2|8|(v)",
+      "status": "Explained in authored answer",
+      "detail": "Conjugate(z)=-z includes zero; an exclusively nonzero definition of pure imaginary requires z != 0."
+    },
+    {
+      "scan": 85,
+      "status": "Repaired and checked",
+      "detail": "Four instructional exercise figures restored as coded SVG; authored head-to-tail construction also rendered and visually inspected."
+    },
+    {
+      "scan": 193,
+      "status": "Preserved and explained",
+      "detail": "Printed probability upper-bound numerator repeats n(E); separate correction explains n(S)/n(S)=1."
+    },
+    {
+      "scan": 204,
+      "status": "Preserved and explained",
+      "detail": "Exercise 6.5 Q9 does not state independence of selection events. Authored answers distinguish the given marginals from an additional independence assumption."
+    },
+    {
+      "scan": 204,
+      "status": "Preserved and explained",
+      "detail": "Review Exercise 6 MCQ (iii): 3 and 7 together give 2*5!=240, absent from the printed choices. Original options retained."
+    },
+    {
+      "scan": 205,
+      "status": "Preserved and explained",
+      "detail": "Review Exercise 6 MCQ (x) needs positive intersection probability to force option (d); otherwise both conditional probabilities may be zero with unequal marginals. Explained in authored answer."
+    },
+    {
+      "scan": 207,
+      "status": "Preserved and explained",
+      "detail": "Equation (3) prints the sum-of-squares denominator as 2; the correct denominator is 6. Preserved as printed and clarified separately."
+    }
+  ],
+  "verification": [
+    "unit1-answer-review.json",
+    "unit2-answer-review.json",
+    "unit3-answer-review.json",
+    "probability-192-196-review.json",
+    "probability-197-201-review.json",
+    "probability-202-206-review.json"
+  ],
+  "benchmark": {
+    "startedAt": "2026-10-18T06:03:11+00:00",
+    "finishedAt": "2026-10-18T06:24:05.183000+00:00",
+    "verifiedNewPages": 15,
+    "elapsedSeconds": 1254.18,
+    "verifiedNewPagesPerHour": 43.06,
+    "targetPagesPerHour": 400,
+    "includes": "Source transcription, Urdu/Pashto translations, worked exercise parts, coded figures, cached OCR, vocabulary additions and focused checks.",
+    "note": "Actual rate; target not achieved. Earlier answer completion is not counted as new pages."
+  },
+  "constraints": [
+    "No browser/UI testing",
+    "No publishing",
+    "No other classes",
+    "No additional agents",
+    "Preserve shared-file lock protocol"
+  ],
+  "additionalExercisesChecked": [
+    "6.4",
+    "6.5",
+    "Review 6"
+  ],
+  "wordMeanings": 580,
+  "validationLimitation": "Whole-project tools/validate.js reports unrelated Class 2/3 dataset expectations and a Class 10 English load failure, then stops at Class 3 Mathematics schema. Other classes not modified. Focused Class 11 checks pass.",
+  "sourceVerificationLimit": "207 scans are represented. This turn freshly compared Unit 1–3 exercise question pages and printed pages 192–206; inherited lesson pages are not newly verified wholesale.",
+  "nextSourceTask": "Inspect and transcribe p207.txt sequentially.",
+  "activeTask": "Author Unit 4 exercise answers; next new transcript remains p207.txt."
+}

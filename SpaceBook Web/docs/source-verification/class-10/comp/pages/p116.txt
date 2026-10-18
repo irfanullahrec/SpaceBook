@@ -1,0 +1,43 @@
+@printed 104
+@status lesson
+svg شکل نمبر 5.5 continue اسٹیٹمنٹ کا طریقہ کار || Figure 5.5 How the continue statement works || ۵.۵ شکل د continue بیان د کار طریقه
+<svg viewBox="0 0 470 330" width="470" role="img" aria-label="Flowchart inside a dashed loop box: from a start dot into diamond 'Loop Test Expression'; FALSE goes right and down out of the box to 'Rest of the Program'; TRUE goes down to diamond 'Test Expression'; its TRUE branch goes left to 'Continue', which goes up to a junction dot that leads back to the Loop Test Expression; its FALSE branch goes down to 'Block of Statements', which goes left and up back to the junction" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF55" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<rect x="20" y="36" width="410" height="234" fill="none" stroke="#475569" stroke-dasharray="6 4"/>
+<circle cx="290" cy="12" r="10" fill="#111827"/>
+<path d="M290 22 V54" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<polygon points="290,58 350,96 290,134 230,96" fill="#fde047" stroke="#111827"/><text x="290" y="92">Loop Test</text><text x="290" y="108">Expression</text>
+<circle cx="140" cy="96" r="10" fill="#111827"/>
+<path d="M150 96 H226" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<path d="M290 134 V156" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="316" y="150">TRUE</text>
+<polygon points="290,160 345,196 290,232 235,196" fill="#fde047" stroke="#111827"/><text x="290" y="192">Test</text><text x="290" y="208">Expression</text>
+<rect x="80" y="130" width="120" height="30" fill="#4ade80" stroke="#111827"/><text x="140" y="150">Continue</text>
+<path d="M235 196 H140 V160" fill="none" stroke="#111827" stroke-width="2"/><path d="M140 130 V108" stroke="#111827" stroke-width="2"/><text x="190" y="190">TRUE</text>
+<path d="M290 232 V242" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="324" y="242" fill="#c2410c">FALSE</text>
+<rect x="225" y="246" width="140" height="22" fill="#4ade80" stroke="#111827"/><text x="295" y="262">Block of Statements</text>
+<path d="M225 257 H50 V96 H128" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<path d="M350 96 H400 V310 H268" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="380" y="88" fill="#c2410c">FALSE</text>
+<circle cx="256" cy="310" r="10" fill="#111827"/><text x="175" y="315">Rest of the Program</text>
+</svg>
+endsvg
+@sec 5-1-7 | 5.1.7 مختلف لوپ سٹرکچرز میں فرق || 5.1.7 Difference between the loop structures || ۵.۱.۷ د لوپ جوړښتونو توپیر
+### 5.1.7 مختلف لوپ سٹرکچرز میں فرق || 5.1.7 Difference between the various loop structures || ۵.۱.۷ د بېلابېلو لوپ جوړښتونو توپیر
+p ذیل میں for، while اور do-while کے فرق کو بیان کیا گیا ہے۔ || The difference between for, while and do-while is described below. || لاندې د for، while او do-while توپیر بیان شوی.
+p for لوپ: اس کے استعمال کو ترجیح دی جاتی ہے جب پروگرامر پہلے سے جانتا ہو کہ لوپ کی باڈی پر کتنی بار عملدرآمد کیا جائے گا۔ || for loop: preferred when the programmer knows in advance how many times the loop body will be executed. || for لوپ: هغه وخت غوره دی چې پروګرامر مخکې پوهېږي د لوپ بدنه به څو ځله اجرا شي.
+p while لوپ: یہ ایسے حالات میں استعمال کرنے کے لئے موزوں ہے جہاں پروگرامر کو پتہ نہیں ہوتا ہے کہ لوپ کی باڈی کو کتنی مرتبہ چلنا ہے۔ اس لوپ میں کنڈیشن لوپ کی باڈی سے پہلے آتی ہے۔ پہلے، کنڈیشن کی جانچ کی جاتی ہے اور پھر مطلوبہ نتیجہ حاصل کرنے کے لئے لوپ کی باڈی کے اندر اسٹیٹمنٹ کو چلایا جاتا ہے۔ || while loop: suitable for situations where the programmer does not know how many times the loop body has to run. In this loop the condition comes before the body: first the condition is checked, and then the statements in the body are run to get the required result. || while لوپ: د هغو حالتونو لپاره مناسب دی چې پروګرامر نه پوهېږي بدنه باید څو ځله وچلېږي. په دې لوپ کې شرط له بدنې مخکې راځي: لومړی شرط ازمویل کېږي او بیا د اړینې پایلې لپاره د بدنې بیانونه چلېږي.
+p do-while لوپ: یہ ایسے حالات میں استعمال کرنے کے لئے موزوں ہے جہاں پروگرامر چاہتا ہے کہ لوپ کو کم سے کم ایک بار ضرور چلایا جائے۔ do-while لوپ میں، لوپ کی باڈی ٹیسٹ کی condition سے پہلے آتی ہے۔ لوپ کی باڈی کو چلایا جاتا ہے اور پھر اس کی شرط کی جانچ کی جاتی ہے۔ اس لوپ میں، شرط سیمی کالن یعنی اسٹیٹمنٹ ٹرمینیٹر کے ساتھ ختم کر دی جاتی ہے۔ || do-while loop: suitable for situations where the programmer wants the loop to run at least once. In the do-while loop the body comes before the test condition: the body is run and then the condition is checked. In this loop the condition ends with a semicolon, the statement terminator. || do-while لوپ: د هغو حالتونو لپاره مناسب دی چې پروګرامر غواړي لوپ لږ تر لږه یو ځل حتماً وچلېږي. په do-while کې بدنه له ازموینې شرط مخکې راځي: بدنه چلېږي او بیا شرط ازمویل کېږي. په دې لوپ کې شرط په سیمي کولن، یعنې د بیان پای نښه، پای ته رسېږي.
+@sec 5-1-8 | 5.1.8 نیسٹڈ لوپ || 5.1.8 Nested loops || ۵.۱.۸ ځالې لوپ
+### 5.1.8 نیسٹڈ لوپ || 5.1.8 Nested loops || ۵.۱.۸ ځالې (Nested) لوپ
+p ایک لوپ کے اندر دوسری لوپ کو نیسٹڈ لوپ کہتے ہیں۔ بیرونی لوپ کے اندر اندرونی لوپ مکمل طور پر بند ہوتی ہے۔ ذیل میں دی گئی شکل نیسٹڈ لوپ کے استعمال کی وضاحت کرتی ہے۔ || A loop inside another loop is called a nested loop. The inner loop is completely enclosed inside the outer loop. The figure below explains the use of nested loops. || د یوه لوپ دننه بل لوپ ته ځالې (nested) لوپ وايي. دننی لوپ په بشپړه توګه د بهرني لوپ دننه تړل شوی وي. لاندې شکل د ځالې لوپ کارونه روښانه کوي.
+svg نیسٹڈ لوپ کی ساخت || Structure of a nested loop || د ځالې لوپ جوړښت
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="A large brace labelled Outer loop … End of Outer loop encloses a smaller brace labelled Inner loop … End of Inner loop" font-family="Georgia, Times New Roman, serif" font-size="15">
+<path d="M40 14 Q20 14 20 40 V88 Q20 100 8 100 Q20 100 20 112 V160 Q20 186 40 186" fill="none" stroke="#0f766e" stroke-width="2"/>
+<text x="46" y="18" fill="#0f766e" font-weight="700">Outer loop</text>
+<text x="56" y="56" fill="#111827">.</text>
+<path d="M90 60 Q74 60 74 76 V94 Q74 100 64 100 Q74 100 74 106 V124 Q74 140 90 140" fill="none" stroke="#9f1239" stroke-width="2"/>
+<text x="96" y="64" fill="#9f1239">Inner loop</text>
+<text x="104" y="104" fill="#111827">.</text>
+<text x="96" y="144" fill="#9f1239">End of Inner loop</text>
+<text x="46" y="190" fill="#0f766e" font-weight="700">End of Outer loop</text>
+</svg>
+endsvg

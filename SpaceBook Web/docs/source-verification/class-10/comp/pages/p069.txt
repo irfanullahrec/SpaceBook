@@ -1,0 +1,30 @@
+@printed 59
+@status lesson
+m     scanf("%d",&age);
+m     age_mon=age*12;
+m     printf("\nAge in months = %d ",age_mon);
+m }
+@issue With this code an age of 16 gives "Age in months = 192"; the output box on the previous page wrongly shows 12.
+### (c) cin || (c) cin || (c) cin
+p کسی C++ پروگرام میں کی بورڈ سے رن ٹائم پر اِن پُٹ لینے کے لیے cin کنسول اِن پُٹ کا استعمال کیا جا سکتا ہے۔ cin کو سی اِن پڑھا جاتا ہے۔ >> cin آپریٹر شامل کر کے سٹینڈرڈ اِن پُٹ کو حاصل کرتا ہے۔ آپریٹر کے بعد ویری ایبل ہونا ضروری ہے جو اِن پُٹ ڈیٹا کو اسٹور کرنے کے لئے استعمال ہوتا ہے جیسا کہ شکل نمبر 2.3 میں دکھایا گیا ہے۔ یہ پروگرام کو اس وقت تک روکے رکھتا ہے جب تک کی بورڈ سے اِن پُٹ درج نہیں ہو جاتی۔ cin کو عددی قیمت اور کیریکٹر اِن پُٹ دونوں کے لیے استعمال کیا جا سکتا ہے۔ cin کو پروگرام میں استعمال کرنے کے لیے ہمیں پروگرام میں ہیڈر فائل iostream کو using namespace std; کے ساتھ لازمی طور پر کوڈ کی پہلی لائن کے طور پر شامل کرنا پڑتا ہے۔ || In a C++ program, cin (console input) can be used to take input from the keyboard at run time. cin is read "see-in". It gets standard input by adding the >> operator; the operator must be followed by a variable, which is used to store the input data, as shown in Figure 2.3. It holds the program until input has been entered from the keyboard. cin can be used for both numeric values and character input. To use cin in a program we must include the header file iostream, together with using namespace std;, at the top of the code. || په C++ پروګرام کې د چلېدو پر مهال له کیبورډ څخه د input اخیستلو لپاره cin (د کنسول input) کارېدای شي. cin د "سي اِن" په توګه لوستل کېږي. د >> عملګر په اضافه کولو معیاري input اخلي؛ له عملګر وروسته باید متغیر وي چې input ډېټا پکې ساتل کېږي، لکه څنګه چې په ۲.۳ شکل کې ښودل شوي. پروګرام تر هغه ودروي چې له کیبورډ input داخل شي. cin د عددي ارزښت او توري دواړو input لپاره کارېدای شي. د cin د کارولو لپاره باید iostream هېډر فایل د using namespace std; سره د کوډ په سر کې شامل کړو.
+@issue The text refers to "شکل نمبر 2.3", but the cin diagram is Figure 3.2 on this page.
+p اس کا سائنٹکس درج ذیل ہے۔ || Its syntax is: || ترکیب یې دا دی:
+m cin>>var1>> var2>>……;
+svg شکل نمبر 3.2 cin کا استعمال || Figure 3.2 Using cin || ۳.۲ شکل د cin کارول
+<svg viewBox="0 0 480 230" width="480" role="img" aria-label="An arrow rises from a keyboard to the object box cin, linked by two-way arrows to the extraction operator box (&gt;&gt;) and then to a variable box" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+<defs><marker id="arF32" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<g font-size="12" fill="#9f1239"><text x="150" y="30">Object</text><text x="270" y="16">Extraction</text><text x="270" y="30">Operator</text><text x="400" y="30">Variable</text></g>
+<g fill="#fff" stroke="#ea580c"><rect x="115" y="38" width="70" height="40"/><rect x="235" y="38" width="70" height="40"/><rect x="350" y="38" width="100" height="40"/></g>
+<g font-size="18"><text x="150" y="65">cin</text><text x="270" y="65">&gt;&gt;</text><text x="400" y="65">variable</text></g>
+<path d="M190 58 H230 M310 58 H345" stroke="#1d4ed8" stroke-width="4" marker-start="url(#arF32)" marker-end="url(#arF32)"/>
+<path d="M60 150 V58 H108" stroke="#1d4ed8" stroke-width="6" fill="none" marker-end="url(#arF32)"/>
+<rect x="20" y="160" width="230" height="60" rx="4" fill="#fff" stroke="#475569"/>
+<g fill="none" stroke="#94a3b8"><path d="M30 172 H240 M30 186 H240 M30 200 H240"/><path d="M80 210 H190"/></g>
+<text x="135" y="216" font-size="10" fill="#475569" font-weight="400">keyboard</text>
+</svg>
+endsvg
+p مثال کے طور پر: || For example: || د بېلګې په توګه:
+m cin>>k;
+p یہ کی بورڈ سے ایک قیمت حاصل کرے گا اور اسے ویری ایبل k میں محفوظ کرے گا۔ || This gets one value from the keyboard and saves it in the variable k. || دا له کیبورډ یو ارزښت اخلي او په k متغیر کې یې ساتي.
+m cin>>a>>b>>c;
+p یہ کی بورڈ سے تین ویلیوز حاصل کرے گا اور اسے ویری ایبل a، b اور c میں محفوظ کرے گا۔ || This gets three values from the keyboard and saves them in the variables a, b and c. || دا له کیبورډ درې ارزښتونه اخلي او په a، b او c متغیرونو کې یې ساتي.

@@ -1,0 +1,90 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s055-p046",
+  "title": "Figure 2.2; 2.2.2 Volatile and Non-Volatile memory",
+  "headingUrdu": "شکل ۲.۲؛ ۲.۲.۲ غیر مستقل اور مستقل میموری",
+  "headingPashto": "انځور ۲.۲؛ ۲.۲.۲ بې ثباته او ثابته حافظه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 55,
+    "printedPage": "46"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s055-a",
+      "en": "Figure 2.2 shows how data is stored on the surface of magnetic storage medium.",
+      "ur": "شکل ۲.۲ دکھاتا ہے کہ مقناطیسی ذخیرہ وسیلے کی سطح پر ڈیٹا کیسے محفوظ ہوتا ہے۔",
+      "ps": "۲.۲ انځور ښیي چې ډېټا د مقناطیسي ذخیرې رسنۍ پر سطحه څنګه ساتل کېږي."
+    },
+    {
+      "id": "cs11-s055-c1",
+      "en": "Figure 2.2 Magnetic memory storage mechanism",
+      "ur": "شکل ۲.۲ مقناطیسی میموری کے ذخیرے کا میکانزم",
+      "ps": "انځور ۲.۲ د مقناطیسي حافظې د ذخیرې میکانیزم",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s055-h1",
+      "en": "2.2.2 Volatile and Non-Volatile memory",
+      "ur": "۲.۲.۲ غیر مستقل اور مستقل میموری",
+      "ps": "۲.۲.۲ بې ثباته او ثابته حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s055-b",
+      "en": "Memory, on the basis of retention of data, can be divided into two types i.e. volatile and non-volatile memory.",
+      "ur": "میموری کو ڈیٹا برقرار رکھنے کی بنیاد پر دو اقسام میں تقسیم کیا جا سکتا ہے، یعنی غیر مستقل اور مستقل میموری۔",
+      "ps": "حافظه د ډېټا د ساتلو پر بنسټ په دوو ډولونو وېشل کېدای شي یعنې بې ثباته او ثابته حافظه."
+    },
+    {
+      "id": "cs11-s055-h2",
+      "en": "a. Volatile memory",
+      "ur": "الف۔ غیر مستقل میموری",
+      "ps": "الف. بې ثباته حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s055-c",
+      "en": "Volatile memory is computer memory that requires power (electricity) to maintain the stored information. Volatile memory retains the information as long as power supply remains on, but when power supply goes off or interrupted, the stored data is lost. It is also known as temporary memory. Examples of such memory are RAM (Random access memory) and Registers.",
+      "ur": "غیر مستقل میموری وہ کمپیوٹر میموری ہے جسے محفوظ معلومات برقرار رکھنے کے لیے بجلی کی ضرورت ہوتی ہے۔ غیر مستقل میموری اس وقت تک معلومات برقرار رکھتی ہے جب تک بجلی کی فراہمی جاری رہے لیکن جب بجلی بند یا منقطع ہو جائے تو محفوظ ڈیٹا ختم ہو جاتا ہے۔ اسے عارضی میموری بھی کہا جاتا ہے۔ ایسی میموری کی مثالیں ریم (رینڈم ایکسیس میموری) اور رجسٹرز ہیں۔",
+      "ps": "بې ثباته حافظه هغه د کمپیوټر حافظه ده چې د ساتل شویو معلوماتو د ساتلو لپاره بریښنا ته اړتیا لري. بې ثباته حافظه معلومات تر هغه ساتي څومره چې د بریښنا رسول روان وي، خو کله چې بریښنا بنده یا قطع شي، ساتل شوې ډېټا له منځه ځي. دې ته لنډمهاله حافظه هم ویل کېږي. د داسې حافظې بېلګې RAM (تصادفي لاسرسي حافظه) او رجسترونه دي."
+    },
+    {
+      "id": "cs11-s055-h3",
+      "en": "b. Non-Volatile memory",
+      "ur": "ب۔ مستقل میموری",
+      "ps": "ب. ثابته حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s055-d",
+      "en": "Non-volatile memory is a permanent memory that can retain the stored information even if power supply is off. Examples of non-volatile memory include ROM (Read-only memory), flash memory, magnetic storage devices (e.g. hard disks and magnetic tape), optical disks, and blue-ray disk. Non-volatile memory is typically used for secondary storage, or long-term storage for future use.",
+      "ur": "مستقل میموری ایک مستقل میموری ہے جو بجلی کی فراہمی بند ہونے پر بھی محفوظ معلومات برقرار رکھ سکتی ہے۔ مستقل میموری کی مثالوں میں روم (ریڈ اونلی میموری)، فلیش میموری، مقناطیسی ذخیرہ آلات (مثلاً ہارڈ ڈسکس اور مقناطیسی ٹیپ)، آپٹیکل ڈسکس اور بلیو رے ڈسک شامل ہیں۔ مستقل میموری عموماً ثانوی ذخیرے یا مستقبل کے استعمال کے لیے طویل مدتی ذخیرے کے لیے استعمال ہوتی ہے۔",
+      "ps": "ثابته حافظه یوه دایمي حافظه ده چې د بریښنا د رسولو د بندېدو سره هم ساتل شوي معلومات ساتلای شي. د ثابتې حافظې بېلګې ROM (یوازې لوستلو حافظه)، فلش حافظه، مقناطیسي ذخیرې وسایل (لکه هارډ ډیسکونه او مقناطیسي ټیپ)، نظري ډیسکونه او بلیو-رې ډیسک دي. ثابته حافظه معمولاً د دویمي ذخیرې یا د راتلونکې کارونې لپاره د اوږدمهالې ذخیرې لپاره کارول کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s055-a",
+        "cs11-s055-c1",
+        "cs11-s055-h1",
+        "cs11-s055-b",
+        "cs11-s055-h2",
+        "cs11-s055-c",
+        "cs11-s055-h3",
+        "cs11-s055-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 46: the sentence introducing Figure 2.2, the photograph/diagram of the magnetic storage mechanism (not reproduced; caption “Figure 2.2 Magnetic memory storage mechanism”), “2.2.2 Volatile and Non-Volatile memory”, a. Volatile memory and b. Non-Volatile memory. In the last paragraph two words are partly overprinted by the line break (“Non-” … “volatile”) and are read in sequence. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:43:11.475934+00:00",
+    "scope": "Scan 55 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

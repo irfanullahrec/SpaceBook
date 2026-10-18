@@ -1,0 +1,131 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s138-p129",
+  "title": "Synchronous (end); Figure 5.6; ii. Asynchronous Transmission; Figure 5.7",
+  "headingUrdu": "ہم وقت (اختتام)؛ شکل ۵.۶؛ ii۔ غیر ہم وقت ترسیل؛ شکل ۵.۷",
+  "headingPashto": "همغږی (پای)؛ انځور ۵.۶؛ ii. ناهمغږی لېږد؛ انځور ۵.۷",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 138,
+    "printedPage": "129"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s138-a",
+      "en": "equipment but provides greater speed and accuracy than asynchronous transmission. This type of transmission is appropriate for computer systems that need to transmit great quantities of data quickly.",
+      "ur": "آلات درکار ہوتے ہیں لیکن یہ غیر ہم وقت ترسیل سے زیادہ رفتار اور درستی فراہم کرتی ہے۔ اس قسم کی ترسیل ایسے کمپیوٹر سسٹمز کے لیے موزوں ہے جنہیں ڈیٹا کی بڑی مقدار تیزی سے منتقل کرنی ہو۔",
+      "ps": "تجهیزات غواړي خو له ناهمغږي لېږد نه ډیر ګړندیتوب او سموالی برابروي. دا ډول لېږد د هغو کمپیوټر سیسټمونو لپاره مناسب دی چې ډیر ډېټا په چټکۍ لېږدول غواړي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s138-h1",
+      "en": "ii. Asynchronous Transmission",
+      "ur": "ii۔ غیر ہم وقت ترسیل",
+      "ps": "ii. ناهمغږی لېږد",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s138-b",
+      "en": "In asynchronous transmission, data is transmitted one byte at a ‘time’. This type of transmission is most commonly used by microcomputers. The data is transmitted character-by-character. In asynchronous transmission, transmission does not occur at predetermined or regular intervals (i.e., not synchronized). A sending device can transmit bytes at any time, and the receiving device must be ready to accept them as they arrive. A start bit marks the beginning of a byte and a stop bit marks the end of the byte. An additional bit called a parity bit is sometimes included at the end of each byte to allow for error checking. Asynchronous transmission usually involves communications in which data can be transmitted intermittently instead of in a steady stream. It is so named because the timing of the signal is not important. Asynchronous transmission is relatively slow.",
+      "ur": "غیر ہم وقت ترسیل میں ڈیٹا ایک وقت میں ایک بائٹ منتقل ہوتا ہے۔ اس قسم کی ترسیل مائیکرو کمپیوٹرز سب سے زیادہ استعمال کرتے ہیں۔ ڈیٹا حرف بہ حرف منتقل ہوتا ہے۔ غیر ہم وقت ترسیل میں ترسیل پہلے سے طے شدہ یا باقاعدہ وقفوں پر نہیں ہوتی (یعنی ہم وقت نہیں)۔ بھیجنے والا آلہ کسی بھی وقت بائٹس بھیج سکتا ہے اور وصول کرنے والا آلہ انہیں آتے ہی قبول کرنے کے لیے تیار ہونا چاہیے۔ اسٹارٹ بٹ بائٹ کے آغاز اور اسٹاپ بٹ بائٹ کے اختتام کی نشاندہی کرتا ہے۔ غلطی کی جانچ کے لیے کبھی کبھی ہر بائٹ کے آخر میں پیریٹی بٹ کہلانے والا ایک اضافی بٹ شامل ہوتا ہے۔ غیر ہم وقت ترسیل میں عموماً ایسے مواصلات ہوتے ہیں جن میں ڈیٹا مسلسل دھارے کی بجائے رک رک کر منتقل ہو سکتا ہے۔ اس کا یہ نام اس لیے ہے کہ اشارے کا وقت اہم نہیں۔ غیر ہم وقت ترسیل نسبتاً سست ہے۔",
+      "ps": "په ناهمغږي لېږد کې ډېټا په یو وخت یو بایټ لېږدول کېږي. دا ډول لېږد تر ټولو ډیر مایکرو کمپیوټرونه کاروي. ډېټا توری په توری لېږدول کېږي. په ناهمغږي لېږد کې لېږد په مخکې ټاکل شویو یا منظمو وقفو نه کېږي (یعنې همغږی نه دی). لېږونکې وسیله کولای شي هر وخت بایټونه ولېږي او ترلاسه کوونکې وسیله باید چمتو وي چې هغه د رسېدو سره سم ومني. د پیل بټ د بایټ پیل او د پای بټ د بایټ پای ښيي. د تېروتنې د کتنې لپاره ځینې وخت د هر بایټ په پای کې یو اضافي بټ چې د برابرۍ بټ بلل کېږي شامل وي. ناهمغږی لېږد معمولاً داسې اړیکې لري چې ډېټا په کې د ثابت جریان پر ځای وقفې وقفې لېږدول کېدای شي. دا نوم ځکه ورکړل شوی چې د سیګنال وخت مهم نه دی. ناهمغږی لېږد نسبتاً ورو دی."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s138-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s138-h1",
+        "cs11-s138-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 115\" role=\"img\" aria-label=\"Synchronous transmission: blocks of bits sent from sender to receiver without gaps\" style=\"width:100%;max-width:620px;height:auto;background:#fff\"><rect x=\"10\" y=\"20\" width=\"40\" height=\"80\" fill=\"#ddd\" stroke=\"#111\"/><text x=\"30\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Sender</text><rect x=\"570\" y=\"20\" width=\"40\" height=\"80\" fill=\"#ddd\" stroke=\"#111\"/><text x=\"590\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Receiver</text><rect x=\"60\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"101.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">10100011</text><rect x=\"142\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"183.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11111011</text><rect x=\"224\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"265.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11110110</text><rect x=\"306\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"347.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11110111</text><rect x=\"388\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"429.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">00010000</text><rect x=\"470\" y=\"50\" width=\"82\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"511.0\" y=\"64\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">110</text><text x=\"300\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Direction of flow</text><line x1=\"170\" y1=\"26\" x2=\"430\" y2=\"26\" stroke=\"#111\" stroke-width=\"2\"/><polygon points=\"436,26 424,21 424,31\" fill=\"#111\"/></svg>",
+      "id": "cs11-s138-fig1",
+      "caption": "Figure 5.6 Synchronous Transmission",
+      "captionUrdu": "شکل ۵.۶ ہم وقت ترسیل",
+      "captionPashto": "انځور ۵.۶ همغږی لېږد",
+      "labels": [
+        {
+          "en": "Sender",
+          "ur": "بھیجنے والا",
+          "ps": "لېږونکی"
+        },
+        {
+          "en": "Receiver",
+          "ur": "وصول کنندہ",
+          "ps": "ترلاسه کوونکی"
+        },
+        {
+          "en": "Direction of flow",
+          "ur": "بہاؤ کی سمت",
+          "ps": "د جریان لوری"
+        }
+      ]
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 200\" role=\"img\" aria-label=\"Asynchronous transmission: data units with start and stop bits and gaps between them\" style=\"width:100%;max-width:620px;height:auto;background:#fff\"><rect x=\"10\" y=\"70\" width=\"40\" height=\"90\" fill=\"#ddd\" stroke=\"#111\"/><text x=\"30\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Sender</text><rect x=\"570\" y=\"70\" width=\"40\" height=\"90\" fill=\"#ddd\" stroke=\"#111\"/><text x=\"590\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Receiver</text><text x=\"300\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Direction of flow</text><line x1=\"170\" y1=\"26\" x2=\"430\" y2=\"26\" stroke=\"#111\" stroke-width=\"2\"/><polygon points=\"436,26 424,21 424,31\" fill=\"#111\"/><text x=\"190\" y=\"42\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Stop bit</text><text x=\"250\" y=\"50\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Data</text><text x=\"320\" y=\"42\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Stop bit</text><rect x=\"190\" y=\"56\" width=\"16\" height=\"20\" fill=\"#999\" stroke=\"#111\"/><rect x=\"206\" y=\"56\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"237.0\" y=\"70\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11111011</text><rect x=\"268\" y=\"56\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"299.0\" y=\"70\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">0</text><rect x=\"60\" y=\"112\" width=\"70\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"95\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">01101</text><rect x=\"130\" y=\"112\" width=\"20\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"140\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">0</text><rect x=\"170\" y=\"112\" width=\"16\" height=\"20\" fill=\"#999\" stroke=\"#111\"/><rect x=\"186\" y=\"112\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"217.0\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11111011</text><rect x=\"248\" y=\"112\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"279.0\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">0</text><rect x=\"320\" y=\"112\" width=\"16\" height=\"20\" fill=\"#999\" stroke=\"#111\"/><rect x=\"336\" y=\"112\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"367.0\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">00010111</text><rect x=\"398\" y=\"112\" width=\"62\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"429.0\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">0</text><rect x=\"470\" y=\"112\" width=\"16\" height=\"20\" fill=\"#999\" stroke=\"#111\"/><rect x=\"486\" y=\"112\" width=\"40\" height=\"20\" fill=\"#fff\" stroke=\"#111\"/><text x=\"506.0\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">11</text><line x1=\"240\" y1=\"160\" x2=\"200\" y2=\"135\" stroke=\"#111\"/><line x1=\"360\" y1=\"160\" x2=\"450\" y2=\"135\" stroke=\"#111\"/><text x=\"300\" y=\"172\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Gaps between</text><text x=\"300\" y=\"186\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">data units</text></svg>",
+      "id": "cs11-s138-fig2",
+      "caption": "Figure 5.7 Asynchronous Transmission",
+      "captionUrdu": "شکل ۵.۷ غیر ہم وقت ترسیل",
+      "captionPashto": "انځور ۵.۷ ناهمغږی لېږد",
+      "labels": [
+        {
+          "en": "Sender",
+          "ur": "بھیجنے والا",
+          "ps": "لېږونکی"
+        },
+        {
+          "en": "Receiver",
+          "ur": "وصول کنندہ",
+          "ps": "ترلاسه کوونکی"
+        },
+        {
+          "en": "Direction of flow",
+          "ur": "بہاؤ کی سمت",
+          "ps": "د جریان لوری"
+        },
+        {
+          "en": "Stop bit",
+          "ur": "اسٹاپ بٹ",
+          "ps": "د درېدو بټ"
+        },
+        {
+          "en": "Data",
+          "ur": "ڈیٹا",
+          "ps": "ډېټا"
+        },
+        {
+          "en": "Gaps between data units",
+          "ur": "ڈیٹا یونٹس کے درمیان وقفے",
+          "ps": "د ډېټا واحدونو ترمنځ تشې"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 129: the end of the synchronous paragraph (continuing from page 128), Figure 5.6 Synchronous Transmission, “ii. Asynchronous Transmission” and Figure 5.7 Asynchronous Transmission (bit patterns of the data units are redrawn as printed where legible; the stop-bit and gap labels are kept). Figure 5.7 is printed in the original with Sender and Receiver boxes carrying hatched texture, which is not reproduced. Photographs and computer clip-art are not reproduced; diagrams are redrawn as coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:12:20.347961+00:00",
+    "scope": "Scan 138 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s159-p150",
+  "title": "Bus advantages (end); disadvantages; d. Mesh Topology — start",
+  "headingUrdu": "بس کے فوائد (اختتام)؛ نقصانات؛ د۔ میش ٹوپولوجی — آغاز",
+  "headingPashto": "د بس ګټې (پای)؛ زیانونه؛ د. جال توپولوژي — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 159,
+    "printedPage": "150"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s159-a3",
+      "en": "Requires less cable length than a other topologies.",
+      "ur": "دوسری ٹوپولوجیز کے مقابلے میں کم کیبل کی لمبائی درکار ہوتی ہے۔",
+      "ps": "د نورو توپولوژیو په پرتله لږ کېبل اوږدوالی غواړي.",
+      "listGroup": "bs_adv2"
+    },
+    {
+      "id": "cs11-s159-a4",
+      "en": "It is easy to set-up and extend bus network.",
+      "ur": "بس نیٹ ورک کو ترتیب دینا اور بڑھانا آسان ہے۔",
+      "ps": "د بس شبکه جوړول او غځول اسانه دي.",
+      "listGroup": "bs_adv2"
+    },
+    {
+      "id": "cs11-s159-a5",
+      "en": "Linear Bus network is mostly used in small networks.",
+      "ur": "لکیری بس نیٹ ورک زیادہ تر چھوٹے نیٹ ورکس میں استعمال ہوتا ہے۔",
+      "ps": "خطي بس شبکه ډیره په کوچنیو شبکو کې کارول کېږي.",
+      "listGroup": "bs_adv2"
+    },
+    {
+      "id": "cs11-s159-h1",
+      "en": "Disadvantages of a Bus Topology",
+      "ur": "بس ٹوپولوجی کے نقصانات",
+      "ps": "د بس توپولوژۍ زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s159-d1",
+      "en": "Entire network shuts down if there is a break in the main cable. Loose and detached connections may also affect the entire network.",
+      "ur": "اگر مرکزی کیبل میں خرابی ہو تو پورا نیٹ ورک بند ہو جاتا ہے۔ ڈھیلے اور الگ ہونے والے کنکشن بھی پورے نیٹ ورک کو متاثر کر سکتے ہیں۔",
+      "ps": "که په اصلي کېبل کې ماتېدل وي نو ټوله شبکه بنده کېږي. سست او جلا شوي پیوستونه هم ټوله شبکه اغېزمنولای شي.",
+      "listGroup": "bs_dis"
+    },
+    {
+      "id": "cs11-s159-d2",
+      "en": "There is a limit on central cable length and number of nodes that can be connected.",
+      "ur": "مرکزی کیبل کی لمبائی اور جڑنے والے نوڈز کی تعداد پر حد ہے۔",
+      "ps": "د مرکزي کېبل اوږدوالي او د هغو غوټو شمېر چې وصلېدای شي محدودیت شته.",
+      "listGroup": "bs_dis"
+    },
+    {
+      "id": "cs11-s159-d3",
+      "en": "Proper termination is required to dump signals. Use of terminators is must.",
+      "ur": "سگنلز کو ختم کرنے کے لیے مناسب ٹرمینیشن ضروری ہے۔ ٹرمینیٹرز کا استعمال لازمی ہے۔",
+      "ps": "د سیګنالونو د لېرې کولو لپاره مناسب پای ته رسول اړین دي. د ټرمینېټرونو کارول حتمي دي.",
+      "listGroup": "bs_dis"
+    },
+    {
+      "id": "cs11-s159-d4",
+      "en": "It is difficult to detect and troubleshoot fault at individual station.",
+      "ur": "انفرادی اسٹیشن پر خرابی کا پتہ لگانا اور اسے دور کرنا مشکل ہے۔",
+      "ps": "په انفرادي ایستګاه کې د نیمګړتیا موندل او حل کول ستونزمن دي.",
+      "listGroup": "bs_dis"
+    },
+    {
+      "id": "cs11-s159-d5",
+      "en": "It is not suitable for networks with heavy traffic.",
+      "ur": "یہ بھاری ٹریفک والے نیٹ ورکس کے لیے موزوں نہیں۔",
+      "ps": "دا د درنې ترافیک لرونکو شبکو لپاره مناسب نه دی.",
+      "listGroup": "bs_dis"
+    },
+    {
+      "id": "cs11-s159-h2",
+      "en": "d. Mesh Topology",
+      "ur": "د۔ میش ٹوپولوجی",
+      "ps": "د. جال توپولوژي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s159-a",
+      "en": "In a mesh network topology, each of the network node, computer and other devices, are interconnected with one another.",
+      "ur": "میش نیٹ ورک ٹوپولوجی میں نیٹ ورک کا ہر نوڈ، کمپیوٹر اور دیگر آلات ایک دوسرے سے آپس میں جڑے ہوتے ہیں۔",
+      "ps": "په جال شبکه توپولوژۍ کې د شبکې هره غوټه، کمپیوټر او نور وسایل یو له بل سره نښلول شوي وي."
+    },
+    {
+      "id": "cs11-s159-b",
+      "en": "In a full mesh, every device in the network is connected to every other device. In reality, a partial mesh is commonly used in backbone environments to provide fault-tolerant connections between critical servers and network devices. Unlike each of the previous topologies, messages sent on a mesh network can take any of several possible paths from source to destination. This type of topology is very expensive as there are many redundant connections, thus it is not mostly used in computer networks. It is commonly used in wireless networks. Flooding or routing technique is used in mesh topology.",
+      "ur": "مکمل میش میں نیٹ ورک کا ہر آلہ ہر دوسرے آلے سے جڑا ہوتا ہے۔ حقیقت میں جزوی میش عموماً بیک بون ماحول میں اہم سرورز اور نیٹ ورک آلات کے درمیان خرابی برداشت کرنے والے کنکشن فراہم کرنے کے لیے استعمال ہوتا ہے۔ پچھلی ہر ٹوپولوجی کے برعکس میش نیٹ ورک پر بھیجے گئے پیغامات ماخذ سے منزل تک کئی ممکنہ راستوں میں سے کوئی بھی راستہ اختیار کر سکتے ہیں۔ اس قسم کی ٹوپولوجی بہت مہنگی ہے کیونکہ اس میں بہت سے غیر ضروری کنکشن ہوتے ہیں، اس لیے یہ کمپیوٹر نیٹ ورکس میں زیادہ استعمال نہیں ہوتی۔ یہ عموماً وائرلیس نیٹ ورکس میں استعمال ہوتی ہے۔ میش ٹوپولوجی میں فلڈنگ یا روٹنگ تکنیک استعمال ہوتی ہے۔",
+      "ps": "په بشپړ جال کې د شبکې هره وسیله له هرې بلې وسیلې سره وصل وي. په حقیقت کې یو جزوي جال معمولاً په شا هډوکي چاپېریال کې د مهمو خدمتګارانو او شبکې وسایلو ترمنځ د نیمګړتیا زغملو وړ پیوستونو برابرولو لپاره کارول کېږي. د پخوانیو توپولوژیو برعکس په جال شبکه لېږل شوي پیغامونه کولای شي له سرچینې نه منزل ته د څو ممکنو لارو هره لار ونیسي. دا ډول توپولوژي ډیره قیمتي ده ځکه چې ډیر زیات پیوستونه لري، نو په کمپیوټر شبکو کې ډیره نه کارول کېږي. دا معمولاً په بې سیمو شبکو کې کارول کېږي. په جال توپولوژۍ کې د سېل یا لارښوونې تخنیک کارول کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s159-a3",
+        "cs11-s159-a4",
+        "cs11-s159-a5",
+        "cs11-s159-h1",
+        "cs11-s159-d1",
+        "cs11-s159-d2",
+        "cs11-s159-d3",
+        "cs11-s159-d4",
+        "cs11-s159-d5",
+        "cs11-s159-h2",
+        "cs11-s159-a",
+        "cs11-s159-b"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 150: the end of the bus advantages (continuing from page 149), the disadvantages of a bus topology (five bullets) and “d. Mesh Topology” with two paragraphs. Figure 5.26 Mesh Topology follows on the next page. The last line of the mesh paragraph reads “Flooding or routing technique is used in mesh topology” as printed. The scan is photographed at an angle and the right edge of the text is slightly clipped. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:19:18.259329+00:00",
+    "scope": "Scan 159 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

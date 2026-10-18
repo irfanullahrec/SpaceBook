@@ -1,0 +1,424 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s026-example12-construction",
+  "title": "Example 1.2 · 1.5.7 Construction of frequency distribution table",
+  "headingUrdu": "مثال 1.2 · 1.5.7 تعدد تقسیم جدول کی تشکیل",
+  "headingPashto": "بېلګه 1.2 · 1.5.7 د فریکونسي ویش جدول جوړول",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 26,
+    "printedPage": "18"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s026-c1",
+      "en": "distribution.",
+      "ur": "تقسیم۔",
+      "ps": "ویش.",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page: \"The process of distributing the observations in a proper pattern is called distribution.\""
+      }
+    },
+    {
+      "id": "stat11-s026-ex",
+      "en": "Example: 1.2",
+      "ur": "مثال: 1.2",
+      "ps": "بېلګه: 1.2",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-q1",
+      "en": "Consider the classes 30 - 39, 40 - 49, 50 - 59, 60 - 69, 70 - 79.",
+      "ur": "جماعتوں 30 - 39، 40 - 49، 50 - 59، 60 - 69، 70 - 79 پر غور کریں۔",
+      "ps": "ټولګي 30 - 39، 40 - 49، 50 - 59، 60 - 69، 70 - 79 په پام کې ونیسئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-q2",
+      "en": "Indicate (a) The midpoints of the intervals shown. (b) The class boundaries of the intervals and (c) The size of the class interval.",
+      "ur": "ظاہر کریں (الف) دکھائے گئے وقفوں کے وسطی نقاط۔ (ب) وقفوں کی جماعتی سرحدیں اور (ج) جماعتی وقفے کی مقدار۔",
+      "ps": "وښیئ (الف) ښودل شویو وقفو منځنۍ نقطې. (ب) د وقفو د ټولګي پولې او (ج) د ټولګي وقفې اندازه.",
+      "role": "question",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-i",
+      "en": "(i) Midpoint is computed as,",
+      "ur": "(i) وسطی نقطہ اس طرح حساب کیا جاتا ہے،",
+      "ps": "(i) منځنۍ نقطه داسې محاسبه کېږي،",
+      "role": "solution",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-ii",
+      "en": "(ii) Class boundaries",
+      "ur": "(ii) جماعتی سرحدیں",
+      "ps": "(ii) د ټولګي پولې",
+      "role": "solution",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-iit",
+      "en": "First compute 40 − 39 = 1 ÷ 2 = 0.5, subtract this 0.5 from all lower class limits and add with the upper limits to get the required class boundaries.",
+      "ur": "پہلے 40 − 39 = 1 ÷ 2 = 0.5 حساب کریں، اس 0.5 کو تمام زیریں جماعتی حدود سے منہا کریں اور بالائی حدود میں جمع کریں تاکہ مطلوبہ جماعتی سرحدیں ملیں۔",
+      "ps": "لومړی 40 − 39 = 1 ÷ 2 = 0.5 محاسبه کړئ، دا 0.5 له ټولو ښکتنیو ټولګیزو حدونو څخه تفریق کړئ او له پورتنیو حدونو سره جمع کړئ ترڅو مطلوبې پولې ترلاسه شي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-iii",
+      "en": "(iii) Class interval is obtained as,",
+      "ur": "(iii) جماعتی وقفہ اس طرح حاصل ہوتا ہے،",
+      "ps": "(iii) د ټولګي وقفه داسې ترلاسه کېږي،",
+      "role": "solution",
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-h157",
+      "en": "1.5.7 Construction of frequency distribution table",
+      "ur": "1.5.7 تعدد تقسیم جدول کی تشکیل",
+      "ps": "1.5.7 د فریکونسي ویش جدول جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s026-hi",
+      "en": "(i) Individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلہ یا غیر گروہی اعداد و شمار",
+      "ps": "(i) انفرادي لړۍ یا نه‌ګروپ شوي معلومات",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s026-ti",
+      "en": "When n, the number of observations is small and nor too many values are repeated within the given data then there is no need of making a frequency table. For example, x = 7, 5, 8, 3, 10, 6, 9. This is called individual series or ungrouped data.",
+      "ur": "جب n، مشاہدات کی تعداد، کم ہو اور دیے گئے اعداد و شمار میں بہت سی قدریں دہرائی نہ گئی ہوں تو تعدد جدول بنانے کی ضرورت نہیں۔ مثال کے طور پر x = 7, 5, 8, 3, 10, 6, 9۔ اسے انفرادی سلسلہ یا غیر گروہی اعداد و شمار کہتے ہیں۔",
+      "ps": "کله چې n، د کتنو شمېر، کم وي او په ورکړل شویو معلوماتو کې ډېر ارزښتونه تکرار نه وي نو د فریکونسي جدول د جوړولو ته اړتیا نشته. د مثال په توګه x = 7, 5, 8, 3, 10, 6, 9. دې ته انفرادي لړۍ یا نه‌ګروپ شوي معلومات ویل کېږي."
+    },
+    {
+      "id": "stat11-s026-hii2",
+      "en": "(ii) Discrete series or discrete grouped frequency distribution",
+      "ur": "(ii) منفصل سلسلہ یا منفصل گروہی تعدد تقسیم",
+      "ps": "(ii) منفصله لړۍ یا منفصل ګروپي فریکونسي ویش",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s026-tii2",
+      "en": "When n is large and difference between large value and small value in the given data is less than or equal to 10, then it is proposed to construct a discrete grouped frequency table. The procedure is as follows;",
+      "ur": "جب n بڑا ہو اور دیے گئے اعداد و شمار میں سب سے بڑی اور سب سے چھوٹی قدر کے درمیان فرق 10 سے کم یا اس کے برابر ہو تو منفصل گروہی تعدد جدول بنانے کی تجویز دی جاتی ہے۔ طریقہ کار یہ ہے؛",
+      "ps": "کله چې n لوی وي او په ورکړل شویو معلوماتو کې د لوی او کوچني ارزښت ترمنځ توپیر له 10 څخه کم یا مساوي وي نو وړاندیز کېږي چې منفصل ګروپي فریکونسي جدول جوړ شي. طریقه داسې ده؛"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s026-c1",
+        "stat11-s026-ex",
+        "stat11-s026-q1",
+        "stat11-s026-q2",
+        "stat11-s026-sol"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s026-i"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s026-ii",
+        "stat11-s026-iit",
+        "stat11-s026-iii"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s026-h157",
+        "stat11-s026-hi",
+        "stat11-s026-ti",
+        "stat11-s026-hii2",
+        "stat11-s026-tii2"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "class interval": {
+      "ur": "جماعتی وقفہ",
+      "ps": "د ټولګي وقفه"
+    },
+    "midpoint": {
+      "ur": "وسطی نقطہ",
+      "ps": "منځنۍ نقطه"
+    }
+  },
+  "tables": [
+    {
+      "caption": "Example 1.2: midpoints and class boundaries",
+      "captionUrdu": "مثال 1.2: وسطی نقاط اور جماعتی سرحدیں",
+      "captionPashto": "بېلګه 1.2: منځنۍ نقطې او د ټولګي پولې",
+      "headers": [
+        {
+          "en": "classes",
+          "ur": "جماعتیں",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "classes boundaries",
+          "ur": "جماعتی سرحدیں",
+          "ps": "د ټولګي پولې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "34.5",
+            "ur": "34.5",
+            "ps": "34.5"
+          },
+          {
+            "en": "29.5 – 39.5",
+            "ur": "29.5 – 39.5",
+            "ps": "29.5 – 39.5"
+          }
+        ],
+        [
+          {
+            "en": "40 – 49",
+            "ur": "40 – 49",
+            "ps": "40 – 49"
+          },
+          {
+            "en": "44.5",
+            "ur": "44.5",
+            "ps": "44.5"
+          },
+          {
+            "en": "39.5 – 49.5",
+            "ur": "39.5 – 49.5",
+            "ps": "39.5 – 49.5"
+          }
+        ],
+        [
+          {
+            "en": "50 – 59",
+            "ur": "50 – 59",
+            "ps": "50 – 59"
+          },
+          {
+            "en": "54.5",
+            "ur": "54.5",
+            "ps": "54.5"
+          },
+          {
+            "en": "49.5 – 59.5",
+            "ur": "49.5 – 59.5",
+            "ps": "49.5 – 59.5"
+          }
+        ],
+        [
+          {
+            "en": "60 – 69",
+            "ur": "60 – 69",
+            "ps": "60 – 69"
+          },
+          {
+            "en": "64.5",
+            "ur": "64.5",
+            "ps": "64.5"
+          },
+          {
+            "en": "59.5 – 69.5",
+            "ur": "59.5 – 69.5",
+            "ps": "59.5 – 69.5"
+          }
+        ],
+        [
+          {
+            "en": "70 – 79",
+            "ur": "70 – 79",
+            "ps": "70 – 79"
+          },
+          {
+            "en": "74.5",
+            "ur": "74.5",
+            "ps": "74.5"
+          },
+          {
+            "en": "69.5 – 79.5",
+            "ur": "69.5 – 79.5",
+            "ps": "69.5 – 79.5"
+          }
+        ]
+      ],
+      "role": "solution",
+      "exampleId": "stat11-ex-1-2"
+    }
+  ],
+  "equations": [
+    {
+      "id": "stat11-s026-e1",
+      "latex": "x=\\dfrac{30+39}{2}=34.5",
+      "accessible": "x = (30 + 39)/2 = 34.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x = (30 + 39)/2 = 34.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x = (30 + 39)/2 = 34.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x = (30 + 39)/2 = 34.5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-e2",
+      "latex": "h=40-30=10",
+      "accessible": "h = 40 − 30 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "h = 40 − 30 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "h = 40 − 30 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "h = 40 − 30 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-e3",
+      "latex": "\\text{or}\\quad h=49-39=10",
+      "accessible": "or h = 49 − 39 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "or h = 49 − 39 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "or h = 49 − 39 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "or h = 49 − 39 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-2"
+    },
+    {
+      "id": "stat11-s026-e4",
+      "latex": "\\text{or}\\quad h=39.5-29.5=10",
+      "accessible": "or h = 39.5 − 29.5 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "or h = 39.5 − 29.5 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "or h = 39.5 − 29.5 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "or h = 39.5 − 29.5 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-1-2"
+    }
+  ],
+  "sourceNote": "Printed page 18. The first line \"distribution.\" completes the sentence from page 17. The example headings and the \"Indicate (a) … (b) … (c) …\" layout are merged into a question paragraph. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:14:50.478803+00:00",
+    "scope": "Scan 26 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

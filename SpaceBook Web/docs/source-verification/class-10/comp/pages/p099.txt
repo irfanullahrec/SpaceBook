@@ -1,0 +1,43 @@
+@printed 87
+@status lesson
+@deco The code of Program 4.8 is printed faintly; braces and the "\n" escape are partly lost and restored from context.
+p … میں Statement 2 پر عملدرآمد کیا جائے گا۔ اسی طرح، اگر Condition 1 کا نتیجہ غلط ہے تو یہ Condition 3 کی جانچ کرتا ہے۔ اگر Condition 3 کا نتیجہ صحیح ہے تو Statement 3 پر عمل درآمد ہو گا ورنہ Statement 4 پر عمل درآمد ہو گا۔ اس مثال میں پیش کردہ نیسٹنگ کو فلوچارٹ کے ذریعہ مزید واضح کیا گیا ہے۔ || … Statement 2 is executed. Similarly, if Condition 1 is false, Condition 3 is checked: if Condition 3 is true Statement 3 is executed, otherwise Statement 4. The nesting in this example is explained further by the flowchart. || … Statement 2 اجرا کېږي. همداسې، که Condition 1 ناسم وي، Condition 3 ازمویل کېږي: که Condition 3 سم وي Statement 3 اجرا کېږي، که نه Statement 4. په دې بېلګه کې ځالې کول په فلوچارټ کې نور روښانه شوي.
+svg شکل نمبر 4.4 نیسٹڈ if-else کا ترکیب || Figure 4.4 The structure of nested if-else || ۴.۴ شکل د ځالې if-else جوړښت
+<svg viewBox="0 0 500 420" width="500" role="img" aria-label="Flowchart: Start, then diamond If Condition; True goes down to If Body; False goes right to diamond Nested If Condition, whose True goes down to Nested If Body and False goes right and down to Nested Else Body; all bodies join to Statement just below if, then Exit" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF43" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#334155"/></marker></defs>
+<ellipse cx="90" cy="24" rx="50" ry="18" fill="#e0f2fe" stroke="#334155"/><text x="90" y="29">Start</text>
+<polygon points="90,70 160,104 90,138 20,104" fill="#fef3c7" stroke="#334155"/><text x="90" y="109" fill="#a16207">If Condition</text>
+<polygon points="300,70 370,104 300,138 230,104" fill="#fff" stroke="#334155"/><text x="300" y="100">Nested If</text><text x="300" y="116">Condition</text>
+<rect x="40" y="186" width="100" height="40" fill="#fff" stroke="#94a3b8"/><text x="90" y="211" fill="#64748b">If Body</text>
+<rect x="250" y="180" width="100" height="46" fill="#fff" stroke="#334155"/><text x="300" y="199">Nested If</text><text x="300" y="215">Body</text>
+<rect x="380" y="180" width="110" height="46" fill="#fff" stroke="#334155"/><text x="435" y="199">Nested Else</text><text x="435" y="215">Body</text>
+<rect x="35" y="280" width="110" height="44" fill="#ecfdf5" stroke="#334155"/><text x="90" y="298">Statement just</text><text x="90" y="314">below if</text>
+<ellipse cx="90" cy="392" rx="50" ry="18" fill="#e0f2fe" stroke="#334155"/><text x="90" y="397">Exit</text>
+<g stroke="#334155" fill="none"><path d="M90 42 V66" marker-end="url(#arF43)"/><path d="M90 138 V182" marker-end="url(#arF43)"/><path d="M160 104 H226" marker-end="url(#arF43)"/><path d="M300 138 V176" marker-end="url(#arF43)"/><path d="M370 104 H435 V176" marker-end="url(#arF43)"/>
+<path d="M90 226 V276" marker-end="url(#arF43)"/><path d="M300 226 V252"/><path d="M435 226 V252 H94" marker-end="url(#arF43)"/><path d="M90 324 V370" marker-end="url(#arF43)"/></g>
+<g font-size="12" fill="#475569"><text x="194" y="96">False</text><text x="70" y="160">True</text><text x="280" y="160">True</text><text x="452" y="150">False</text></g>
+</svg>
+endsvg
+@issue The figure number under the flowchart is too faint to read; it is Figure 4.4 according to the list of figures (Appendix 1).
+### پروگرام 4.8 کی بورڈ کی مدد سے اِن پُٹ ہونے والے عدد کو معلوم کرنا کہ یہ مثبت عدد ہے؟ جفت ہے یا طاق ہے؟ || Program 4.8 Find whether a number input from the keyboard is positive, and whether it is even or odd || پروګرام ۴.۸ له کیبورډ داخل شوی عدد مثبت دی؟ جفت دی که طاق؟
+m using namespace std;
+m #include<iostream>
+m int main( )
+m {
+m     int num;
+m     cout<<"\nEnter a number in between -10 and 10:\t";
+m     cin>>num;
+m     if(num>0)
+m     {
+m         cout<<num<<" is a positive number"<<endl;
+m         if(num % 2 == 0)
+m             cout<<num<<" is also an even number"<<endl;
+m         else
+m             cout<<num<<" is also an odd number"<<endl;
+m     }
+box info | آؤٹ پُٹ || Output || Output
+m Enter a number between -10 and 10: 7
+m 7 is a positive number
+m 7 is also an odd number
+endbox
+@issue Program 4.8 again places "using namespace std;" before "#include<iostream>" (it must come after). The prompt in the code says "in between" but the output box shows "between".

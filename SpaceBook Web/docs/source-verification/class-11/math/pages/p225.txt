@@ -1,0 +1,17 @@
+@printed 225
+@sec 7.4 | Application of the Binomial Theorem || دو رقمی قضیے کا اطلاق || د دوه حدي قضیې کارونه
+@deco Unit-running header, folio and decorative footer band excluded
+p (ii) Now taking || (ii) اب لیتے ہوئے || (ii) اوس اخیستو سره
+m $\dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}=\dfrac{(1+x)^{\frac12}(16)^{\frac12}\left(1-\frac5{16}x\right)^{\frac12}}{9^{\frac12}\left(1+\frac{2x}9\right)^{\frac12}}$
+m $=\dfrac{4(1+x)^{\frac12}\left(1-\frac5{16}x\right)^{\frac12}}{3\left(1+\frac{2x}9\right)^{\frac12}}=\dfrac43(1+x)^{\frac12}\left(1-\dfrac5{16}x\right)^{\frac12}\left(1+\dfrac{2x}9\right)^{-\frac12}$
+m $=\dfrac43\left[1+\dfrac12x+\dfrac{\frac12\left(\frac12-1\right)}{2!}x^2+\cdots\right]\left[1-\dfrac12\cdot\dfrac5{16}x+\cdots\right]\times\left[1-\dfrac12\cdot\dfrac{2x}9+\cdots\right]$
+m $=\dfrac43\left[1+\dfrac x2+\cdots\right]\left[1-\dfrac5{32}x+\cdots\right]\left[1-\dfrac x9+\cdots\right]$
+m $=\dfrac43\left[1+\dfrac x2+\cdots\right]\left[1-\dfrac x9-\dfrac5{32}x+\dfrac5{32}\cdot\dfrac19x^2\cdots\right]$
+m $=\dfrac43\left[1+\dfrac x2\right]\left(1-\dfrac{32x+45x}{9\times32}\right)\quad\text{Ignoring terms containing }x^2,x^3,x^4,\ldots$
+m $=\dfrac43\left[1+\dfrac x2\right]\left(1-\dfrac{77x}{9\times32}\right)=\dfrac43\left(1-\dfrac{77x}{9\times32}+\dfrac x2\right)\quad\text{Again ignoring term containing }x^2$
+m $\text{or}\quad\dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}=\dfrac43\left(1+\dfrac x2-\dfrac{77x}{9\times32}\right)=\dfrac43\left(1+\dfrac{9\times16x-77x}{9\times32}\right)=\dfrac43\left(1+\dfrac{144x-77x}{288}\right)$
+m $\Rightarrow\ \dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}=\dfrac43\left(1+\dfrac{67x}{288}\right)$
+endexample
+### 7.4 Application of the Binomial Theorem || 7.4 دو رقمی قضیے کا اطلاق || 7.4 د دوه حدي قضیې کارونه
+p **Approximations:** We have seen in the particular cases of the expansion of $(1+x)^n$ that the power of $x$ go on increasing in each expansion. Since $|x|<1$, so $|x|^r<|x|$ for $r=2,3,4,\ldots$ This fact shows that terms in each expansion go on decreasing numerically if $|x|<1$. || **تخمینے:** ہم نے $(1+x)^n$ کی توسیع کی مخصوص صورتوں میں دیکھا ہے کہ ہر توسیع میں $x$ کی قوت بڑھتی جاتی ہے۔ چونکہ $|x|<1$ ہے اس لیے $r=2,3,4,\ldots$ کے لیے $|x|^r<|x|$۔ یہ حقیقت ظاہر کرتی ہے کہ اگر $|x|<1$ ہو تو ہر توسیع میں ارکان عددی لحاظ سے گھٹتے جاتے ہیں۔ || **اټکلونه:** موږ د $(1+x)^n$ د پراختیا په ځانګړو حالتونو کې لیدلي چې په هره پراختیا کې د $x$ توان زیاتېږي. ځکه چې $|x|<1$ دی نو د $r=2,3,4,\ldots$ لپاره $|x|^r<|x|$. دا حقیقت ښيي چې که $|x|<1$ وي نو په هره پراختیا کې حدونه عددي لحاظ کمېږي.
+p Thus some initial terms of the binomial series are enough for determining the || اس طرح دو رقمی سلسلے کے چند ابتدائی ارکان کافی ہیں تاکہ معلوم کیا جا سکے || په دې توګه د دوه حدي لړۍ څو لومړني حدونه بسنه کوي چې وټاکل شي

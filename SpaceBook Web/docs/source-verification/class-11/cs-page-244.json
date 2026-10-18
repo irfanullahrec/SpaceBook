@@ -1,0 +1,100 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s244-p235",
+  "title": "Student-Course relationship; E-R Diagram for Ticket Booking System",
+  "headingUrdu": "طالب علم اور کورس کا تعلق؛ ٹکٹ بکنگ سسٹم کا ای-آر ڈایاگرام",
+  "headingPashto": "د زده کوونکي او کورس اړیکه؛ د ټکټ بکینګ سیسټم E-R انځور",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 244,
+    "printedPage": "235"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s244-a",
+      "en": "The relationship between Student and Course is many-to-many because a student can be enrolled for one or more courses and a Course can be taken by one or many Students.",
+      "ur": "طالب علم اور کورس کے درمیان تعلق کئی سے کئی ہے کیونکہ ایک طالب علم ایک یا زیادہ کورسز کے لیے اندراج کروا سکتا ہے اور ایک کورس ایک یا کئی طلبہ لے سکتے ہیں۔",
+      "ps": "د زده کوونکي او کورس ترمنځ اړیکه ډیر-ته-ډیر ده ځکه چې یو زده کوونکی کولای شي د یو یا ډیرو کورسونو لپاره نوم لیکنه وکړي او یو کورس د یو یا ډیرو زده کوونکو لخوا اخیستل کېدای شي."
+    },
+    {
+      "id": "cs11-s244-h1",
+      "en": "E-R Diagram for Ticket Booking System",
+      "ur": "ٹکٹ بکنگ سسٹم کا ای-آر ڈایاگرام",
+      "ps": "د ټکټ بکینګ سیسټم لپاره E-R انځور",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s244-b",
+      "en": "In the Ticket Booking System shown in Figure 7.17, the following entities and attributes can be identified.",
+      "ur": "ٹکٹ بکنگ سسٹم میں، جو شکل ۷.۱۷ میں دکھایا گیا ہے، درج ذیل انٹیٹیز اور ایٹریبیوٹس کی شناخت ہو سکتی ہے۔",
+      "ps": "په ټکټ بکینګ سیسټم کې چې ۷.۱۷ انځور کې ښودل شوی، لاندې وجودونه او خاصیتونه پېژندل کېدای شي."
+    },
+    {
+      "id": "cs11-s244-t1",
+      "en": "Airline: The entity Airline is set of all the airlines and its attributes are Airline_Code and Airline Name.",
+      "ur": "ایئر لائن: انٹیٹی ایئر لائن تمام ایئر لائنز کا مجموعہ ہے اور اس کے ایٹریبیوٹس ایئر لائن_کوڈ اور ایئر لائن نیم ہیں۔",
+      "ps": "هوایي کرښه (Airline): وجود Airline د ټولو هوایي کرښو ټولګه ده او د هغې خاصیتونه Airline_Code او Airline Name دي.",
+      "listGroup": "tick"
+    },
+    {
+      "id": "cs11-s244-t2",
+      "en": "Passenger: The set of all the passengers who want to travel by an airplane. Each passenger has a TicketNo, Name, Address and PhoneNo as its attributes.",
+      "ur": "مسافر: ان تمام مسافروں کا مجموعہ جو ہوائی جہاز سے سفر کرنا چاہتے ہیں۔ ہر مسافر کے ایٹریبیوٹس ٹکٹ نمبر، نام، پتہ اور فون نمبر ہیں۔",
+      "ps": "مسافر (Passenger): د ټولو هغو مسافرو ټولګه چې په الوتکه سفر کول غواړي. هر مسافر د TicketNo، نوم، پته او PhoneNo خاصیتونه لري.",
+      "listGroup": "tick"
+    },
+    {
+      "id": "cs11-s244-t3",
+      "en": "Seat: The set of all the seats available for reservation to passengers. The seat is described by the attributes SeatNo, Class and Name.",
+      "ur": "سیٹ: مسافروں کے لیے ریزرویشن کے لیے دستیاب تمام نشستوں کا مجموعہ۔ سیٹ کو ایٹریبیوٹس سیٹ نمبر، کلاس اور نام سے بیان کیا جاتا ہے۔",
+      "ps": "څوکۍ (Seat): هغه ټولې څوکۍ چې مسافرو ته د ساتلو لپاره شته دي. څوکۍ د SeatNo، Class او Name خاصیتونو لخوا بیانېږي.",
+      "listGroup": "tick"
+    },
+    {
+      "id": "cs11-s244-t4",
+      "en": "Flight: The set of all the flights offered by an airline. The flight is described by the attributes FlightNo, DepartureDate, DepartureTime, ArrivalDate, ArrivalTime, From and To.",
+      "ur": "پرواز: ایک ایئر لائن کی طرف سے پیش کی جانے والی تمام پروازوں کا مجموعہ۔ پرواز کو ایٹریبیوٹس فلائٹ نمبر، روانگی کی تاریخ، روانگی کا وقت، آمد کی تاریخ، آمد کا وقت، From اور To سے بیان کیا جاتا ہے۔",
+      "ps": "الوتنه (Flight): د یوې هوایي کرښې لخوا وړاندې شویو ټولو الوتنو ټولګه. الوتنه د FlightNo، DepartureDate، DepartureTime، ArrivalDate، ArrivalTime، From او To خاصیتونو لخوا بیانېږي.",
+      "listGroup": "tick"
+    },
+    {
+      "id": "cs11-s244-t5",
+      "en": "The type of relationship between Airline and Flight is one-to-many because one airline has many flights.",
+      "ur": "ایئر لائن اور پرواز کے درمیان تعلق کی قسم ایک سے کئی ہے کیونکہ ایک ایئر لائن کی کئی پروازیں ہیں۔",
+      "ps": "د هوایي کرښې او الوتنې ترمنځ د اړیکې ډول یو-ته-ډیر دی ځکه چې یوه هوایي کرښه ډیرې الوتنې لري.",
+      "listGroup": "tick"
+    },
+    {
+      "id": "cs11-s244-t6",
+      "en": "The type of relationship between Passenger and Seat is one to one because each passenger occupies a single seat for travelling in a flight.",
+      "ur": "مسافر اور سیٹ کے درمیان تعلق کی قسم ایک سے ایک ہے کیونکہ ہر مسافر پرواز میں سفر کے لیے ایک ہی سیٹ پر بیٹھتا ہے۔",
+      "ps": "د مسافر او څوکۍ ترمنځ د اړیکې ډول یو-ته-یو دی ځکه چې هر مسافر په یوه الوتنه کې د سفر لپاره یوه څوکۍ نیسي.",
+      "listGroup": "tick"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s244-a",
+        "cs11-s244-h1",
+        "cs11-s244-b",
+        "cs11-s244-t1",
+        "cs11-s244-t2",
+        "cs11-s244-t3",
+        "cs11-s244-t4",
+        "cs11-s244-t5",
+        "cs11-s244-t6"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 235: the end of the student entity text (the Student–Course many-to-many relationship), “E-R Diagram for Ticket Booking System” with its lead-in sentence and four entities with two relationships. The sentence refers to “Figure 7.17” as printed (the figure for this system is not shown on the page). Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:51:21.088869+00:00",
+    "scope": "Scan 244 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

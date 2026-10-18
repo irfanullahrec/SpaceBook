@@ -1,0 +1,112 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s289-p280",
+  "title": "8.4 Working with Queries; Planning a Query",
+  "headingUrdu": "۸.۴ کوئریز کے ساتھ کام؛ کوئری کی منصوبہ بندی",
+  "headingPashto": "۸.۴ د پوښتنو سره کار؛ د پوښتنې پلانول",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 289,
+    "printedPage": "280"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s289-h1",
+      "en": "8.4 WORKING WITH QUERIES",
+      "ur": "۸.۴ کوئریز کے ساتھ کام",
+      "ps": "۸.۴ د پوښتنو سره کار",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s289-a",
+      "en": "Queries are a way of searching for and compiling data from one or more tables. Running a query is like asking a detailed question of the database. When users build a query in Access, they are defining specific search conditions to find exactly the data they want.",
+      "ur": "کوئریز ایک یا زیادہ ٹیبلز سے ڈیٹا تلاش کرنے اور مرتب کرنے کا طریقہ ہیں۔ کوئری چلانا ڈیٹا بیس سے تفصیلی سوال پوچھنے کے مترادف ہے۔ جب صارفین ایکسیس میں کوئری بناتے ہیں تو وہ مخصوص تلاش کی شرائط متعین کرتے ہیں تاکہ بالکل وہی ڈیٹا ملے جو وہ چاہتے ہیں۔",
+      "ps": "پوښتنې د یو یا ډیرو جدولونو نه د ډېټا لټولو او راټولولو یوه لار ده. د پوښتنې چلول د ډېټابېس نه د تفصیلي پوښتنې کولو غوندې دي. کله چې کاروونکي په Access کې پوښتنه جوړوي نو دوی د لټون ځانګړي شرطونه ټاکي ترڅو دقیقاً هغه ډېټا ومومي چې غواړي."
+    },
+    {
+      "id": "cs11-s289-b",
+      "en": "Queries are far more powerful than the simple searches or filters user might use to find data within a table. This is because queries can draw their information from multiple tables based on a set of search conditions they define. A well-designed query can give information that users might not be able to find out just by examining the data in tables.",
+      "ur": "کوئریز ان سادہ تلاشوں یا فلٹرز سے کہیں زیادہ طاقتور ہیں جو صارف ٹیبل کے اندر ڈیٹا تلاش کرنے کے لیے استعمال کر سکتا ہے۔ اس کی وجہ یہ ہے کہ کوئریز اپنی متعین کردہ تلاش کی شرائط کی بنیاد پر متعدد ٹیبلز سے معلومات حاصل کر سکتی ہیں۔ اچھی طرح ڈیزائن کی گئی کوئری ایسی معلومات دے سکتی ہے جو صارف صرف ٹیبلز میں ڈیٹا دیکھ کر شاید معلوم نہ کر سکے۔",
+      "ps": "پوښتنې له ساده لټونونو یا چاڼګرونو نه ډیر پیاوړې دي چې کاروونکی یې په جدول کې د ډېټا د موندلو لپاره کاروي. دا ځکه چې پوښتنې کولای شي خپل معلومات د څو جدولونو نه د لټون د هغو شرطونو پر بنسټ راوباسي چې هغوی یې ټاکي. یوه ښه ډیزاین شوې پوښتنه کولای شي هغه معلومات ورکړي چې کاروونکي شاید یوازې په جدولونو کې د ډېټا په کتلو سره ونه موندلای شي."
+    },
+    {
+      "id": "cs11-s289-c",
+      "en": "The real power of an Access 2007 database is its ability to pull data for quick analysis, which is what happens when a user runs a query. Access will display results in a table that can be analyzed and manipulated further.",
+      "ur": "ایکسیس ۲۰۰۷ ڈیٹا بیس کی اصل طاقت تیز تجزیے کے لیے ڈیٹا نکالنے کی صلاحیت ہے، جو اس وقت ہوتا ہے جب صارف کوئری چلاتا ہے۔ ایکسیس نتائج کو ایسے ٹیبل میں دکھائے گا جس کا مزید تجزیہ اور اس میں ترمیم کی جا سکتی ہے۔",
+      "ps": "د Access 2007 ډېټابېس ریښتینی ځواک د چټک تحلیل لپاره د ډېټا راایستلو وړتیا ده، چې هغه وخت پېښېږي کله چې کاروونکی پوښتنه چالوي. Access به پایلې په داسې جدول کې ښکاره کړي چې نور تحلیل او کار ترې اخیستل کېدای شي."
+    },
+    {
+      "id": "cs11-s289-h2",
+      "en": "Planning a Query",
+      "ur": "کوئری کی منصوبہ بندی",
+      "ps": "د پوښتنې پلانول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s289-d",
+      "en": "There are three questions users need to answer when they are planning a query:",
+      "ur": "کوئری کی منصوبہ بندی کرتے وقت صارفین کو تین سوالوں کے جواب دینے ہوتے ہیں:",
+      "ps": "کله چې کاروونکي پوښتنه پلانوي نو درې پوښتنو ته باید ځواب ورکړي:"
+    },
+    {
+      "id": "cs11-s289-q1",
+      "en": "What do you want the results to look like? Identify every field or bit of information that user wants to include in the results.",
+      "ur": "آپ نتائج کیسے دیکھنا چاہتے ہیں؟ ہر فیلڈ یا معلومات کے ہر حصے کی شناخت کریں جسے صارف نتائج میں شامل کرنا چاہتا ہے۔",
+      "ps": "تاسو غواړئ پایلې څنګه ښکاره شي؟ هره ساحه یا د معلوماتو هر ټوټه وپېژنئ چې کاروونکی یې په پایلو کې شاملول غواړي.",
+      "listGroup": "pq"
+    },
+    {
+      "id": "cs11-s289-q2",
+      "en": "Where is the information stored in the database? List which tables (and/or queries) hold the information that user wants to see.",
+      "ur": "معلومات ڈیٹا بیس میں کہاں محفوظ ہیں؟ فہرست بنائیں کہ کون سے ٹیبلز (اور/یا کوئریز) میں وہ معلومات ہیں جو صارف دیکھنا چاہتا ہے۔",
+      "ps": "معلومات په ډېټابېس کې چېرته ساتل شوي؟ لیست کړئ چې کوم جدولونه (او/یا پوښتنې) هغه معلومات لري چې کاروونکی یې لیدل غواړي.",
+      "listGroup": "pq"
+    },
+    {
+      "id": "cs11-s289-q3",
+      "en": "What conditions do you want the data to meet? This helps to determine how to set the criteria so that Access can search the records properly.",
+      "ur": "آپ ڈیٹا سے کن شرائط کو پورا کرنے کی توقع رکھتے ہیں؟ یہ طے کرنے میں مدد دیتا ہے کہ معیار کیسے مقرر کیا جائے تاکہ ایکسیس ریکارڈز کو درست طریقے سے تلاش کر سکے۔",
+      "ps": "تاسو غواړئ ډېټا کومې شرطونه پوره کړي؟ دا د ټاکلو کې مرسته کوي چې معیارونه څنګه وټاکل شي ترڅو Access ثبتونه په سمه توګه ولټوي.",
+      "listGroup": "pq"
+    },
+    {
+      "id": "cs11-s289-e",
+      "en": "Example: In Student database, a query might be: What is the list of students with their marks, studying in Class XI and Section B?",
+      "ur": "مثال: اسٹوڈنٹ ڈیٹا بیس میں کوئری یہ ہو سکتی ہے: کلاس گیارہویں اور سیکشن بی میں پڑھنے والے طلبہ کی ان کے نمبروں کے ساتھ فہرست کیا ہے؟",
+      "ps": "بېلګه: په زده کوونکو ډېټابېس کې یوه پوښتنه کېدای شي دا وي: د XI ټولګي او B برخې کې د زده کوونکو لیست د هغوی د نمرو سره څه دی؟"
+    },
+    {
+      "id": "cs11-s289-f",
+      "en": "Planning: Let us use the three-question process to plan this query.",
+      "ur": "منصوبہ بندی: آئیے اس کوئری کی منصوبہ بندی کے لیے تین سوالوں کا طریقہ استعمال کریں۔",
+      "ps": "پلانول: راځئ دا پوښتنه د درې پوښتنو په پروسه پلان کړو."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s289-h1",
+        "cs11-s289-a",
+        "cs11-s289-b",
+        "cs11-s289-c",
+        "cs11-s289-h2",
+        "cs11-s289-d",
+        "cs11-s289-q1",
+        "cs11-s289-q2",
+        "cs11-s289-q3",
+        "cs11-s289-e",
+        "cs11-s289-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 280: the banner “8.4 WORKING WITH QUERIES” with three paragraphs, “Planning a Query” with the three questions, the example and the lead-in of the planning (continues on the next page). The words searching, compiling, question, defining specific search conditions and multiple are printed in bold. The words field and tables are underlined in the print. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:08:38.519211+00:00",
+    "scope": "Scan 289 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

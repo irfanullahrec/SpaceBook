@@ -1,0 +1,118 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s183-p174",
+  "title": "Summary of Unit 5 (4)",
+  "headingUrdu": "یونٹ ۵ کا خلاصہ (۴)",
+  "headingPashto": "د ۵ واحد لنډیز (۴)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 183,
+    "printedPage": "174"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s183-b1",
+      "en": "Presentation layer converts incoming and outgoing data from one presentation format to another (for example, from a text stream into a popup window with the newly arrived text).",
+      "ur": "پریزنٹیشن لیئر آنے والے اور جانے والے ڈیٹا کو ایک پیشکش کی شکل سے دوسری میں تبدیل کرتی ہے (مثلاً متن کے دھارے سے نئے آنے والے متن کے ساتھ پاپ اپ ونڈو میں)۔",
+      "ps": "د وړاندې کولو طبقه راتلونکې او وتونکې ډېټا له یوې وړاندې کولو بڼې نه بلې ته بدلوي (د بېلګې په توګه له متن جریان نه د نوي راغلي متن سره په پاپ اپ کړکۍ).",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b2",
+      "en": "Session layer sets up, coordinates, and terminates conversations, exchanges, and dialogues between the applications running on different stations.",
+      "ur": "سیشن لیئر مختلف اسٹیشنوں پر چلنے والی ایپلیکیشنز کے درمیان گفتگو، تبادلوں اور مکالموں کو قائم، مربوط اور ختم کرتی ہے۔",
+      "ps": "د ناستې طبقه په مختلفو ایستګاوو کې چلېدونکو اپلېکېشنونو ترمنځ خبرې، تبادلې او ډیالوګونه جوړوي، همغږي کوي او پای ته رسوي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b3",
+      "en": "Transport layer handles the transparent transport of data segments between network devices.",
+      "ur": "ٹرانسپورٹ لیئر نیٹ ورک آلات کے درمیان ڈیٹا سیگمنٹس کی شفاف ترسیل کو سنبھالتی ہے۔",
+      "ps": "د لېږد طبقه د شبکې وسایلو ترمنځ د ډېټا برخو شفاف لېږد اداره کوي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b4",
+      "en": "Network layer allows the data called packets or datagram to go from one physical network to another.",
+      "ur": "نیٹ ورک لیئر پیکٹس یا ڈیٹا گرام کہلانے والے ڈیٹا کو ایک طبعی نیٹ ورک سے دوسرے میں جانے دیتی ہے۔",
+      "ps": "د شبکې طبقه هغه ډېټا چې کڅوړې یا ډېټا ګرام بلل کېږي له یوې فزیکي شبکې نه بلې ته تللو ته اجازه ورکوي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b5",
+      "en": "Data link layer provides reliable transmission of data across a physical link.",
+      "ur": "ڈیٹا لنک لیئر طبعی ربط کے پار ڈیٹا کی قابلِ اعتماد ترسیل فراہم کرتی ہے۔",
+      "ps": "د ډېټا نښلونې طبقه د فزیکي تړاو په اوږدو کې د ډېټا باوري لېږد برابروي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b6",
+      "en": "Physical layer is concerned with the transmission and reception of the unstructured raw bit stream over a physical medium.",
+      "ur": "فزیکل لیئر طبعی وسیلے پر غیر ساختہ خام بٹ سٹریم کی ترسیل اور وصولی سے متعلق ہے۔",
+      "ps": "فزیکي طبقه د فزیکي رسنۍ پر غیر جوړښت لرونکې خامې بټ جریان د لېږد او ترلاسه کولو سره اړه لري.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b7",
+      "en": "TCP/IP is an industry standard suite of protocols designed for local and wide area networks.",
+      "ur": "ٹی سی پی / آئی پی مقامی اور وسیع علاقے کے نیٹ ورکس کے لیے بنایا گیا پروٹوکولز کا صنعتی معیاری سوئٹ ہے۔",
+      "ps": "TCP/IP د ځایي او پراخې سیمې شبکو لپاره جوړ شوی د پروتوکولونو صنعتي معیاري ټولګه ده.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b8",
+      "en": "Packet switching is a network communication method in which the data get transmitted in blocks, regardless of type and content, called packets based on the destination address in each packet.",
+      "ur": "پیکٹ سوئچنگ نیٹ ورک مواصلات کا ایسا طریقہ ہے جس میں ڈیٹا، قسم اور مواد سے قطع نظر، ہر پیکٹ میں موجود منزل کے پتے کی بنیاد پر پیکٹس نامی بلاکس میں منتقل ہوتا ہے۔",
+      "ps": "د کڅوړې سویچنګ د شبکې د اړیکو یوه طریقه ده چې په کې ډېټا، د ډول او منځپانګې له پامه پرته، په هره کڅوړه کې د منزل پتې پر بنسټ په بلاکونو کې چې کڅوړې بلل کېږي لېږدول کېږي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b9",
+      "en": "Circuit switching is a scheme in which the network sets up a dedicated point-to-point connection between nodes and terminals before the communication starts, just like the nodes were already connected.",
+      "ur": "سرکٹ سوئچنگ ایسی اسکیم ہے جس میں نیٹ ورک مواصلات شروع ہونے سے پہلے نوڈز اور ٹرمینلز کے درمیان ایک مخصوص نقطہ بہ نقطہ ربط قائم کرتا ہے، بالکل ایسے جیسے نوڈز پہلے سے جڑے ہوں۔",
+      "ps": "د سرکټ سویچنګ یوه طرحه ده چې په کې شبکه د اړیکو له پیلېدو مخکې د غوټو او ټرمینلونو ترمنځ یو ځانګړی نقطه-په-نقطه تړاو جوړوي، لکه چې غوټې مخکې له مخکې وصل وي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b10",
+      "en": "An Internet Protocol address (IP address) is a number that is used to identify a device, for example a computer, a printer, etc. on the network.",
+      "ur": "انٹرنیٹ پروٹوکول ایڈریس (آئی پی ایڈریس) ایک نمبر ہے جو نیٹ ورک پر کسی آلے، مثلاً کمپیوٹر، پرنٹر وغیرہ، کی شناخت کے لیے استعمال ہوتا ہے۔",
+      "ps": "د انټرنېټ پروتوکول پته (IP پته) یوه شمېره ده چې په شبکه د یوې وسیلې، د بېلګې په توګه کمپیوټر، پرنټر او نورو، د پېژندلو لپاره کارول کېږي.",
+      "listGroup": "sum"
+    },
+    {
+      "id": "cs11-s183-b11",
+      "en": "Subnet Mask indicates the network portion of an IP address.",
+      "ur": "سب نیٹ ماسک آئی پی ایڈریس کے نیٹ ورک حصے کی نشاندہی کرتا ہے۔",
+      "ps": "فرعي شبکې ماسک د IP پتې د شبکې برخه ښيي.",
+      "listGroup": "sum"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s183-b1",
+        "cs11-s183-b2",
+        "cs11-s183-b3",
+        "cs11-s183-b4",
+        "cs11-s183-b5",
+        "cs11-s183-b6",
+        "cs11-s183-b7",
+        "cs11-s183-b8",
+        "cs11-s183-b9",
+        "cs11-s183-b10",
+        "cs11-s183-b11"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 174: the last eleven bulleted points of the Summary of Unit 5. A handwritten note at the left edge (“more text”) is excluded. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:28:30.717752+00:00",
+    "scope": "Scan 183 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

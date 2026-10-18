@@ -1,0 +1,30 @@
+@pdf 110
+@printed 105
+@status lesson
+### Program 4.7: A program to show that an input character is vowel or not. || پروگرام 4.7: ان پٹ حرف حرفِ علت (vowel) ہے یا نہیں، دکھانے کا پروگرام۔ || پروګرام ۴.۷: ښيي چې داخل شوی توری غږیز (vowel) دی که نه.
+m #include<stdio.h>
+m void main ( )
+m {
+m     char ch;
+m     printf("Enter a character   ");
+m     scanf("%c",&ch);
+m
+m     switch (ch)
+m     {
+m         case 'a':    printf("vowel a");
+m         break ;
+m         case 'e':    printf("vowel e");
+m         break ;
+m         case 'o':    printf("vowel o");
+m         break ;
+m         case 'i':    printf("vowel i");
+m         break ;
+m         case 'u':    printf("vowel u");
+m         break;
+m         default :    printf("not a vowel");
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter a character    i
+m vowel i
+endbox

@@ -1,0 +1,152 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s250-p241",
+  "title": "Partial dependencies; Figures 7.25–7.27; 3rd Normal Form; Figure 7.28",
+  "headingUrdu": "جزوی انحصار؛ شکلیں ۷.۲۵ تا ۷.۲۷؛ تھرڈ نارمل فارم؛ شکل ۷.۲۸",
+  "headingPashto": "جزوي تکیه؛ انځورونه ۷.۲۵ تر ۷.۲۷؛ دریمه نورمال بڼه؛ انځور ۷.۲۸",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 250,
+    "printedPage": "241"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s250-a",
+      "en": "Attribute Proj_name is dependent on Proj_no, while Emp_name, Job_class and Charge_per_hour are dependent on Emp_no. Dependencies based on only part of a composite primary key are called partial dependencies.",
+      "ur": "ایٹریبیوٹ پراجیکٹ_نام پراجیکٹ_نمبر پر منحصر ہے جبکہ ملازم_نام، جاب_کلاس اور چارج_فی_آور ملازم_نمبر پر منحصر ہیں۔ مرکب پرائمری کی کے صرف ایک حصے پر مبنی انحصار جزوی انحصار کہلاتے ہیں۔",
+      "ps": "خاصیت Proj_name په Proj_no پورې تړلی دی، پداسې حال کې چې Emp_name، Job_class او Charge_per_hour په Emp_no پورې تړلي دي. هغه تکیه چې یوازې د ترکیبي لومړنۍ کیلي په یوې برخې ولاړې وي جزوي تکیه بلل کېږي."
+    },
+    {
+      "id": "cs11-s250-h1",
+      "en": "Project Table",
+      "ur": "پراجیکٹ ٹیبل",
+      "ps": "د پروژې جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s250-h2",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s250-h3",
+      "en": "Hours Table",
+      "ur": "آورز ٹیبل",
+      "ps": "د ساعتونو جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s250-b",
+      "en": "Because the number of hours spent on each project by each employee is dependent on both Proj_no and Emp_no, we place these hours in the Hours table hours as in Figure 7.27.",
+      "ur": "چونکہ ہر ملازم کے ہر پراجیکٹ پر گزارے گئے گھنٹوں کی تعداد پراجیکٹ_نمبر اور ملازم_نمبر دونوں پر منحصر ہے، ہم ان گھنٹوں کو آورز ٹیبل میں رکھتے ہیں جیسا کہ شکل ۷.۲۷ میں ہے۔",
+      "ps": "ځکه چې د هر کارکوونکي لخوا په هره پروژه تېر شوي ساعتونو شمېر په Proj_no او Emp_no دواړو پورې تړلی دی، موږ دا ساعتونه د ساعتونو جدول کې ږدو لکه څنګه چې ۷.۲۷ انځور کې دي."
+    },
+    {
+      "id": "cs11-s250-h4",
+      "en": "3rd Normal Form",
+      "ur": "تھرڈ نارمل فارم",
+      "ps": "دریمه نورمال بڼه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s250-c",
+      "en": "The relation should be in the 1st and 2nd normal forms and all transitive dependencies must be removed. A transitive dependency is a dependency of one non-key attribute on another non-key attribute. Consider Table in Figure 7.28.",
+      "ur": "ریلیشن پہلے اور دوسرے نارمل فارمز میں ہونا چاہیے اور تمام ترسیلی انحصار ہٹائے جانے چاہئیں۔ ترسیلی انحصار ایک غیر کی ایٹریبیوٹ کا دوسرے غیر کی ایٹریبیوٹ پر انحصار ہے۔ شکل ۷.۲۸ کے ٹیبل پر غور کریں۔",
+      "ps": "اړیکه باید په لومړۍ او دویمه نورمال بڼه کې وي او ټولې انتقالي تکیې باید لېرې شي. انتقالي تکیه د یوه غیر-کیلي خاصیت په بل غیر-کیلي خاصیت تکیه ده. په ۷.۲۸ انځور کې جدول ته پام وکړئ."
+    },
+    {
+      "id": "cs11-s250-h5",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s250-a",
+        "cs11-s250-h1",
+        "cs11-s250-h2",
+        "cs11-s250-h3"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "figure",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s250-b",
+        "cs11-s250-h4",
+        "cs11-s250-c",
+        "cs11-s250-h5"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 3
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 190 60\" role=\"img\" aria-label=\"Table structure: Proj_no, Proj_name\" style=\"width:100%;max-width:190px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"72\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"46.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Proj_no</text><line x1=\"18\" y1=\"33\" x2=\"74\" y2=\"33\" stroke=\"#111\"/><rect x=\"82\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"126.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Proj_name</text></svg>",
+      "id": "cs11-s250-fig1",
+      "caption": "Figure 7.25 Project Table",
+      "captionUrdu": "شکل ۷.۲۵ پراجیکٹ ٹیبل",
+      "captionPashto": "انځور ۷.۲۵ د پروژې جدول",
+      "labels": []
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 398 60\" role=\"img\" aria-label=\"Table structure: Emp_no, Emp_name, Job_class, Charge_per_hour\" style=\"width:100%;max-width:398px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"64\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"42.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_no</text><line x1=\"18\" y1=\"33\" x2=\"66\" y2=\"33\" stroke=\"#111\"/><rect x=\"74\" y=\"10\" width=\"80\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"114.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_name</text><rect x=\"154\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"198.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Job_class</text><rect x=\"242\" y=\"10\" width=\"136\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"310.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Charge_per_hour</text></svg>",
+      "id": "cs11-s250-fig2",
+      "caption": "Figure 7.26 Employee Table",
+      "captionUrdu": "شکل ۷.۲۶ ایمپلائی ٹیبل",
+      "captionPashto": "انځور ۷.۲۶ د کارکوونکي جدول",
+      "labels": []
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 226 60\" role=\"img\" aria-label=\"Table structure: Proj_no, Emp_no, Hours\" style=\"width:100%;max-width:226px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"72\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"46.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Proj_no</text><line x1=\"18\" y1=\"33\" x2=\"74\" y2=\"33\" stroke=\"#111\"/><rect x=\"82\" y=\"10\" width=\"64\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"114.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_no</text><line x1=\"90\" y1=\"33\" x2=\"138\" y2=\"33\" stroke=\"#111\"/><rect x=\"146\" y=\"10\" width=\"60\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"176.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Hours</text></svg>",
+      "id": "cs11-s250-fig3",
+      "caption": "Figure 7.27 Hours Table",
+      "captionUrdu": "شکل ۷.۲۷ آورز ٹیبل",
+      "captionPashto": "انځور ۷.۲۷ د ساعتونو جدول",
+      "labels": []
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 398 60\" role=\"img\" aria-label=\"Table structure: Emp_no, Emp_name, Job_class, Charge_per_hour\" style=\"width:100%;max-width:398px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"64\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"42.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_no</text><line x1=\"18\" y1=\"33\" x2=\"66\" y2=\"33\" stroke=\"#111\"/><rect x=\"74\" y=\"10\" width=\"80\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"114.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_name</text><rect x=\"154\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"198.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Job_class</text><rect x=\"242\" y=\"10\" width=\"136\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"310.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Charge_per_hour</text><polyline points=\"205,45 205,75 290,75 290,45\" fill=\"none\" stroke=\"#223a8a\" stroke-width=\"1.5\"/><text x=\"300\" y=\"70\" font-size=\"10\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Transitive dependency</text></svg>",
+      "id": "cs11-s250-fig4",
+      "caption": "Figure 7.28 Employee Table",
+      "captionUrdu": "شکل ۷.۲۸ ایمپلائی ٹیبل",
+      "captionPashto": "انځور ۷.۲۸ د کارکوونکي جدول",
+      "labels": [
+        {
+          "en": "Transitive dependency",
+          "ur": "ترسیلی انحصار",
+          "ps": "انتقالي تکیه"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 241: the paragraph on partial dependencies, the Project Table (Figure 7.25: Proj_no, Proj_name), the Employee Table (Figure 7.26: Emp_no, Emp_name, Job_class, Charge_per_hour), the Hours Table (Figure 7.27: Proj_no, Emp_no, Hours), “3rd Normal Form” and the Employee Table with an arrow labelled “Transitive dependency” (Figure 7.28); the table structures are redrawn as coded SVG with the key columns underlined as printed. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:54:32.598619+00:00",
+    "scope": "Scan 250 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

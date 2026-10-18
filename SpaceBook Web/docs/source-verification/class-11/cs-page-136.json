@@ -1,0 +1,117 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s136-p127",
+  "title": "Simplex (end); Figures 5.3, 5.4; ii. Half-duplex mode; iii. Full-duplex mode — start",
+  "headingUrdu": "سمپلیکس (اختتام)؛ شکل ۵.۳، ۵.۴؛ ii۔ ہاف ڈپلیکس؛ iii۔ فل ڈپلیکس — آغاز",
+  "headingPashto": "یو لورې (پای)؛ انځور ۵.۳، ۵.۴؛ ii. نیم دوه لورې؛ iii. بشپړ دوه لورې — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 136,
+    "printedPage": "127"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s136-a",
+      "en": "example communication from a central computer to a dumb terminal. The communication can only take place in one direction and it is not possible for the receiver to send data back. Another example of simplex transmission would be data being sent to an electronic notice board such as those found in train stations and airports.",
+      "ur": "مثال کے طور پر مرکزی کمپیوٹر سے ایک گونگے ٹرمینل کو مواصلات۔ مواصلات صرف ایک سمت میں ہو سکتے ہیں اور وصول کنندہ کے لیے ڈیٹا واپس بھیجنا ممکن نہیں۔ سمپلیکس ترسیل کی ایک اور مثال ایک برقی نوٹس بورڈ کو ڈیٹا بھیجنا ہے، جیسے ریلوے اسٹیشنوں اور ہوائی اڈوں پر پائے جاتے ہیں۔",
+      "ps": "د بېلګې په توګه له مرکزي کمپیوټر نه یو لنګ ټرمینل ته اړیکې. اړیکې یوازې په یو لوري کېدای شي او د ترلاسه کوونکي لپاره ډېټا بېرته لېږل ممکن نه دي. د یو لورې لېږد بله بېلګه به یوې برېښنايي خبرتیا تختې ته د ډېټا لېږل وي لکه هغه چې د اورګاډو په ایستګاه او هوایي ډګرونو کې موندل کېږي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s136-h1",
+      "en": "ii. Half-Duplex mode",
+      "ur": "ii۔ ہاف ڈپلیکس موڈ",
+      "ps": "ii. نیم دوه لورې حالت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s136-b",
+      "en": "In half-duplex mode, each station can both transmit and receive data, but not at the same time. Each end of the communications link acts as sender and receiver. An example of this type of communication is the use of walkie-talkies, where each of the persons communicating must indicate when they have finished speaking.",
+      "ur": "ہاف ڈپلیکس موڈ میں ہر اسٹیشن ڈیٹا بھیج بھی سکتا ہے اور وصول بھی کر سکتا ہے لیکن ایک ہی وقت میں نہیں۔ مواصلاتی ربط کا ہر سرا بھیجنے والے اور وصول کنندہ دونوں کے طور پر کام کرتا ہے۔ اس قسم کے مواصلات کی ایک مثال واکی ٹاکیز کا استعمال ہے جہاں بات کرنے والے ہر شخص کو یہ بتانا ہوتا ہے کہ اس نے کب بات ختم کر لی۔",
+      "ps": "په نیم دوه لورې حالت کې هره ایستګاه ډېټا لېږلای هم شي او ترلاسه کولای هم شي، خو په یو وخت کې نه. د اړیکې د تړاو هر سر د لېږونکي او ترلاسه کوونکي په توګه کار کوي. د دې ډول اړیکو یوه بېلګه د واکي-ټاکیو کارول دي، چېرته چې اړیکه نیوونکی هر کس باید وښيي چې کله یې خبرې پای ته رسولې."
+    },
+    {
+      "id": "cs11-s136-h2",
+      "en": "iii. Full-Duplex mode",
+      "ur": "iii۔ فل ڈپلیکس موڈ",
+      "ps": "iii. بشپړ دوه لورې حالت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s136-c",
+      "en": "In full-duplex mode, both stations can send and receive the data simultaneously, for example two or more computers connected to a network device such as a switch that provides full duplex activity. It is the fastest bi-directional mode of communication. The full-duplex mode is like a two way",
+      "ur": "فل ڈپلیکس موڈ میں دونوں اسٹیشن بیک وقت ڈیٹا بھیج اور وصول کر سکتے ہیں، مثلاً دو یا زیادہ کمپیوٹرز جو سوئچ جیسے نیٹ ورک آلے سے جڑے ہوں جو فل ڈپلیکس سرگرمی فراہم کرتا ہو۔ یہ مواصلات کا تیز ترین دو طرفہ موڈ ہے۔ فل ڈپلیکس موڈ دو طرفہ",
+      "ps": "په بشپړ دوه لورې حالت کې دواړه ایستګاوې ډېټا په یو وخت لېږلای او ترلاسه کولای شي، د بېلګې په توګه دوه یا ډیر کمپیوټرونه چې د شبکې له وسیلې لکه سویچ سره وصل وي چې بشپړ دوه لورې فعالیت برابروي. دا د اړیکو تر ټولو ګړندی دوه لورې حالت دی. بشپړ دوه لورې حالت د دوه لارې",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s136-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s136-h1",
+        "cs11-s136-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s136-h2",
+        "cs11-s136-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s136-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 150\" role=\"img\" aria-label=\"Direction of communication between two computers: One direction only\" style=\"width:100%;max-width:480px;height:auto;background:#fff\"><rect x=\"20\" y=\"20\" width=\"70\" height=\"50\" fill=\"#2b6cb0\" stroke=\"#111\" stroke-width=\"2\"/><rect x=\"47.0\" y=\"70\" width=\"16\" height=\"6\" fill=\"#555\"/><rect x=\"37.0\" y=\"76\" width=\"36\" height=\"4\" fill=\"#777\"/><rect x=\"380\" y=\"20\" width=\"70\" height=\"50\" fill=\"#2b6cb0\" stroke=\"#111\" stroke-width=\"2\"/><rect x=\"407.0\" y=\"70\" width=\"16\" height=\"6\" fill=\"#555\"/><rect x=\"397.0\" y=\"76\" width=\"36\" height=\"4\" fill=\"#777\"/><line x1=\"105\" y1=\"50\" x2=\"360\" y2=\"50\" stroke=\"#111\" stroke-width=\"2\"/><polygon points=\"365,50 350,44 350,56\" fill=\"#111\"/><text x=\"235\" y=\"110\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">One direction only</text></svg>",
+      "caption": "Figure 5.3 Simplex Mode",
+      "captionUrdu": "شکل ۵.۳ سمپلیکس موڈ",
+      "captionPashto": "انځور ۵.۳ یو لورې حالت",
+      "labels": [
+        {
+          "en": "One direction only",
+          "ur": "صرف ایک سمت",
+          "ps": "یوازې یو لوری"
+        }
+      ]
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 150\" role=\"img\" aria-label=\"Direction of communication between two computers: Both directions but only one at a time\" style=\"width:100%;max-width:480px;height:auto;background:#fff\"><rect x=\"20\" y=\"20\" width=\"70\" height=\"50\" fill=\"#2b6cb0\" stroke=\"#111\" stroke-width=\"2\"/><rect x=\"47.0\" y=\"70\" width=\"16\" height=\"6\" fill=\"#555\"/><rect x=\"37.0\" y=\"76\" width=\"36\" height=\"4\" fill=\"#777\"/><rect x=\"380\" y=\"20\" width=\"70\" height=\"50\" fill=\"#2b6cb0\" stroke=\"#111\" stroke-width=\"2\"/><rect x=\"407.0\" y=\"70\" width=\"16\" height=\"6\" fill=\"#555\"/><rect x=\"397.0\" y=\"76\" width=\"36\" height=\"4\" fill=\"#777\"/><line x1=\"105\" y1=\"40\" x2=\"360\" y2=\"40\" stroke=\"#111\" stroke-width=\"2\"/><polygon points=\"365,40 350,34 350,46\" fill=\"#111\"/><line x1=\"105\" y1=\"62\" x2=\"360\" y2=\"62\" stroke=\"#111\" stroke-width=\"2\"/><polygon points=\"100,62 115,56 115,68\" fill=\"#111\"/><text x=\"235\" y=\"110\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Both directions but</text><text x=\"235\" y=\"132\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">only one at a time</text></svg>",
+      "id": "cs11-s136-fig2",
+      "caption": "Figure 5.4 Half-duplex Mode",
+      "captionUrdu": "شکل ۵.۴ ہاف ڈپلیکس موڈ",
+      "captionPashto": "انځور ۵.۴ نیم دوه لورې حالت",
+      "labels": [
+        {
+          "en": "Both directions but only one at a time",
+          "ur": "دونوں سمتوں میں لیکن ایک وقت میں صرف ایک",
+          "ps": "په دواړو لورو خو په یو وخت یوازې یو"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 127: the end of the simplex sentence (continuing from page 126), Figure 5.3 Simplex Mode and Figure 5.4 Half-duplex Mode (two computers joined by arrows with the printed texts “One direction only” and “Both directions but only one at a time”; redrawn here as coded SVGs without the computer clip-art), “iii. Full-Duplex mode” (continues on the next page). Photographs and computer clip-art are not reproduced; diagrams are redrawn as coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:10:28.030323+00:00",
+    "scope": "Scan 136 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

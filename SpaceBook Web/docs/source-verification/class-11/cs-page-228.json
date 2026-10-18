@@ -1,0 +1,176 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s228-p219",
+  "title": "b. DML; c. DCL; 7.2 Basic Database Terminologies; a. Field/Attribute/Column; b. Record/Tuple/Row — start",
+  "headingUrdu": "ب۔ ڈی ایم ایل؛ ج۔ ڈی سی ایل؛ ۷.۲ ڈیٹا بیس کی بنیادی اصطلاحات؛ الف۔ فیلڈ/ایٹریبیوٹ/کالم؛ ب۔ ریکارڈ/ٹپل/رو — آغاز",
+  "headingPashto": "ب. DML؛ ج. DCL؛ ۷.۲ د ډېټابېس بنسټیز اصطلاحات؛ الف. ساحه/خاصیت/ستون؛ ب. ثبت/ټپل/قطار — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 228,
+    "printedPage": "219"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s228-h1",
+      "en": "b. Data Manipulation Language",
+      "ur": "ب۔ ڈیٹا مینیپولیشن لینگویج",
+      "ps": "ب. د ډېټا کار کولو ژبه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s228-a",
+      "en": "A data manipulation language (DML) is a language that enables users to access or manipulate data. The types of access are:",
+      "ur": "ڈیٹا مینیپولیشن لینگویج (ڈی ایم ایل) ایسی زبان ہے جو صارفین کو ڈیٹا تک رسائی یا اس میں ترمیم کے قابل بناتی ہے۔ رسائی کی اقسام یہ ہیں:",
+      "ps": "د ډېټا کار کولو ژبه (DML) یوه ژبه ده چې کاروونکو ته ډېټا ته لاسرسي یا کار اخیستلو توان ورکوي. د لاسرسي ډولونه دا دي:"
+    },
+    {
+      "id": "cs11-s228-d1",
+      "en": "Retrieval of information from database",
+      "ur": "ڈیٹا بیس سے معلومات حاصل کرنا",
+      "ps": "له ډېټابېس نه د معلوماتو ترلاسه کول",
+      "listGroup": "dml"
+    },
+    {
+      "id": "cs11-s228-d2",
+      "en": "Insertion of new data into the database",
+      "ur": "ڈیٹا بیس میں نیا ڈیٹا داخل کرنا",
+      "ps": "په ډېټابېس کې د نوې ډېټا ننه ایستل",
+      "listGroup": "dml"
+    },
+    {
+      "id": "cs11-s228-d3",
+      "en": "Deletion of data from database",
+      "ur": "ڈیٹا بیس سے ڈیٹا حذف کرنا",
+      "ps": "له ډېټابېس نه د ډېټا حذف",
+      "listGroup": "dml"
+    },
+    {
+      "id": "cs11-s228-d4",
+      "en": "Modification of data stored in the database",
+      "ur": "ڈیٹا بیس میں محفوظ ڈیٹا میں ترمیم کرنا",
+      "ps": "په ډېټابېس کې ساتل شوې ډېټا تعدیل",
+      "listGroup": "dml"
+    },
+    {
+      "id": "cs11-s228-h2",
+      "en": "c. Data Control Language",
+      "ur": "ج۔ ڈیٹا کنٹرول لینگویج",
+      "ps": "ج. د ډېټا کنټرول ژبه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s228-b",
+      "en": "Data Control Language is a database language used to control access to the data in a database. Examples of DCL are:",
+      "ur": "ڈیٹا کنٹرول لینگویج ڈیٹا بیس کی ایسی زبان ہے جو ڈیٹا بیس میں ڈیٹا تک رسائی کو کنٹرول کرنے کے لیے استعمال ہوتی ہے۔ ڈی سی ایل کی مثالیں یہ ہیں:",
+      "ps": "د ډېټا کنټرول ژبه یوه ډېټابېس ژبه ده چې په ډېټابېس کې ډېټا ته د لاسرسي د کنټرول لپاره کارول کېږي. د DCL بېلګې دا دي:"
+    },
+    {
+      "id": "cs11-s228-c1",
+      "en": "Giving rights to the users",
+      "ur": "صارفین کو حقوق دینا",
+      "ps": "کاروونکو ته حقونه ورکول",
+      "listGroup": "dcl"
+    },
+    {
+      "id": "cs11-s228-c2",
+      "en": "Revoking of the already given rights",
+      "ur": "پہلے سے دیے گئے حقوق واپس لینا",
+      "ps": "مخکې ورکړل شوي حقونه بېرته اخیستل",
+      "listGroup": "dcl"
+    },
+    {
+      "id": "cs11-s228-h3",
+      "en": "7.2 BASIC DATABASE TERMINOLOGIES",
+      "ur": "۷.۲ ڈیٹا بیس کی بنیادی اصطلاحات",
+      "ps": "۷.۲ د ډېټابېس بنسټیز اصطلاحات",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s228-c",
+      "en": "The following are some basic database terminologies.",
+      "ur": "درج ذیل ڈیٹا بیس کی کچھ بنیادی اصطلاحات ہیں۔",
+      "ps": "لاندې د ډېټابېس ځینې بنسټیز اصطلاحات دي."
+    },
+    {
+      "id": "cs11-s228-h4",
+      "en": "a. Field/Attribute/Column",
+      "ur": "الف۔ فیلڈ/ایٹریبیوٹ/کالم",
+      "ps": "الف. ساحه/خاصیت/ستون",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s228-d",
+      "en": "An attribute is a property or characteristic of an entity that is of interest to the organization. Following are some attributes:",
+      "ur": "ایٹریبیوٹ کسی انٹیٹی کی ایسی خاصیت یا خصوصیت ہے جو ادارے کے لیے دلچسپی کی حامل ہو۔ درج ذیل کچھ ایٹریبیوٹس ہیں:",
+      "ps": "خاصیت د یوه وجود هغه ملکیت یا ځانګړتیا ده چې ادارې ته ګټوره وي. لاندې ځینې خاصیتونه دي:"
+    },
+    {
+      "id": "cs11-s228-a1",
+      "en": "STUDENT: student no, name, address, phone no",
+      "ur": "اسٹوڈنٹ: اسٹوڈنٹ نمبر، نام، پتہ، فون نمبر",
+      "ps": "زده کوونکی (STUDENT): د زده کوونکي شمېره، نوم، پته، د تلیفون شمېره",
+      "listGroup": "attr"
+    },
+    {
+      "id": "cs11-s228-a2",
+      "en": "EMPLOYEE: employee no, name, address, skill",
+      "ur": "ایمپلائی: ایمپلائی نمبر، نام، پتہ، مہارت",
+      "ps": "کارکوونکی (EMPLOYEE): د کارکوونکي شمېره، نوم، پته، مهارت",
+      "listGroup": "attr"
+    },
+    {
+      "id": "cs11-s228-e",
+      "en": "In Relational Database Model, an attribute is represented by column. Whereas the term field is usually used for a column but it is more correct to use field to specify a single item that exists at the intersection of a row and column.",
+      "ur": "ریلیشنل ڈیٹا بیس ماڈل میں ایٹریبیوٹ کو کالم سے ظاہر کیا جاتا ہے۔ جبکہ اصطلاح فیلڈ عموماً کالم کے لیے استعمال ہوتی ہے لیکن فیلڈ کو اس واحد آئٹم کی نشاندہی کے لیے استعمال کرنا زیادہ درست ہے جو قطار اور کالم کے تقاطع پر موجود ہو۔",
+      "ps": "په اړوند ډېټابېس ماډل کې خاصیت په ستون ښودل کېږي. پداسې حال کې چې اصطلاح ساحه معمولاً د ستون لپاره کارول کېږي خو ساحه د یوه واحد توکي د ټاکلو لپاره کارول ډیر سم دي چې د قطار او ستون په تقاطع کې شته وي."
+    },
+    {
+      "id": "cs11-s228-h5",
+      "en": "b. Record/Tuple/Row",
+      "ur": "ب۔ ریکارڈ/ٹپل/رو",
+      "ps": "ب. ثبت/ټپل/قطار",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s228-f",
+      "en": "A collection of related fields treated as a single unit is called a record. For example a student’s record includes a set of fields that contains Roll No, Name, Class, Date of Birth and Address.",
+      "ur": "متعلقہ فیلڈز کا مجموعہ جسے ایک واحد اکائی کے طور پر لیا جائے ریکارڈ کہلاتا ہے۔ مثلاً طالب علم کے ریکارڈ میں فیلڈز کا ایک مجموعہ شامل ہوتا ہے جس میں رول نمبر، نام، کلاس، تاریخ پیدائش اور پتہ ہوتے ہیں۔",
+      "ps": "د اړوندو ساحو ټولګه چې د یوې واحدې وېشنې په توګه ګڼل کېږي ثبت بلل کېږي. د بېلګې په توګه د زده کوونکي ثبت د ساحو یوه ټولګه شاملوي چې رول شمېره، نوم، ټولګی، د زېږون نېټه او پته لري."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s228-h1",
+        "cs11-s228-a",
+        "cs11-s228-d1",
+        "cs11-s228-d2",
+        "cs11-s228-d3",
+        "cs11-s228-d4",
+        "cs11-s228-h2",
+        "cs11-s228-b",
+        "cs11-s228-c1",
+        "cs11-s228-c2",
+        "cs11-s228-h3",
+        "cs11-s228-c",
+        "cs11-s228-h4",
+        "cs11-s228-d",
+        "cs11-s228-a1",
+        "cs11-s228-a2",
+        "cs11-s228-e",
+        "cs11-s228-h5",
+        "cs11-s228-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 219: “b. Data Manipulation Language” with four access types, “c. Data Control Language” with two examples, the banner “7.2 BASIC DATABASE TERMINOLOGIES” with its lead-in sentence, “a. Field/Attribute/Column” with its examples and “b. Record/Tuple/Row” with its first paragraph. The bullets with uppercase table names (STUDENT, EMPLOYEE) are kept as printed. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:45:38.913046+00:00",
+    "scope": "Scan 228 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

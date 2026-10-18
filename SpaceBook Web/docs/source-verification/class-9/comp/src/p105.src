@@ -1,0 +1,19 @@
+@printed 97
+@status lesson
+p The following flowchart shows the working of *if* statement. || درج ذیل فلوچارٹ *if* اسٹیٹمنٹ کا کام دکھاتا ہے۔ || لاندې فلوچارټ د *if* بیان کار ښيي.
+fig10 f4.1 || Figure: 4.1 if structure || شکل 4.1 if کا ڈھانچہ || ۴.۱ شکل د if جوړښت
+p The following programs demonstrate the use of *if* statement. || درج ذیل پروگرام *if* اسٹیٹمنٹ کا استعمال دکھاتے ہیں۔ || لاندې پروګرامونه د *if* بیان کارونه ښيي.
+### Program 4.1: A program that prints the entered number when it is greater than 50. || پروگرام 4.1: داخل کیا گیا عدد 50 سے بڑا ہو تو اسے پرنٹ کرنے والا پروگرام۔ || پروګرام ۴.۱: که داخل شوی عدد له ۵۰ لوی وي، چاپ یې کړئ.
+m #include<stdio.h>
+m void main()
+m {
+m     int x;
+m     printf("\n Enter an integer = ");
+m     scanf("%d",&x);
+m     if (x >50)
+m         printf("%d", x);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter an integer = 75
+m 75
+endbox

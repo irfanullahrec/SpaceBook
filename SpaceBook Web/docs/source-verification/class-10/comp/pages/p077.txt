@@ -1,0 +1,31 @@
+@printed 67
+@status lesson
+p … نہیں کیا جا سکتا۔ مثال کے طور پر اگر کسی ویری ایبل x کی قیمت میں 1 کا اضافہ کرنا ہو تو اس کو ایسے لکھیں گے: || … For example, to add 1 to the value of a variable x we write: || … نه شي کارېدای. د بېلګې په توګه که د x متغیر په ارزښت کې 1 زیاتول وي، داسې یې لیکو:
+m x = x +1;
+p انکریمنٹ آپریٹر ++ استعمال کر کے یہی کام ایسے کرے گا: || Using the increment operator ++, the same is done like this: || د ++ عملګر په کارولو همدا کار داسې کېږي:
+m x++;
+p یہ نوٹ کرنا ضروری ہے کہ x++ یا x = x + 1 یا x += 1 ایک ہی کام کرتے ہیں۔ || It is important to note that x++, x = x + 1 and x += 1 do the same work. || باید پام وشي چې x++، x = x + 1 او x += 1 یو کار کوي.
+@issue The third form is printed "x + = 1" with a space; the C operator is written "x += 1" with no space.
+p انکریمنٹ آپریٹر ویری ایبل سے پہلے یا بعد میں لکھا جا سکتا ہے۔ اگر یہ ویری ایبل سے پہلے لکھا گیا ہے تو، اسے پریفکس انکریمنٹ آپریٹر کہا جاتا ہے۔ اگر یہ ویری ایبل کے بعد لکھا گیا ہے، تو یہ پوسٹ فکس انکریمنٹ آپریٹر کے نام سے جانا جاتا ہے۔ || The increment operator can be written before or after the variable. If it is written before the variable it is called the prefix increment operator; if it is written after the variable it is known as the postfix increment operator. || د زیاتوالي عملګر له متغیر مخکې یا وروسته لیکل کېدای شي. که له متغیر مخکې ولیکل شي، مختاړی (prefix) زیاتوالي عملګر بلل کېږي؛ که وروسته ولیکل شي، وروستاړی (postfix) زیاتوالي عملګر بلل کېږي.
+### پری فکس انکریمنٹ آپریٹر (Prefix Increment Operator) || Prefix increment operator || مختاړی زیاتوالي عملګر (Prefix Increment Operator)
+p پریفکس انکریمنٹ آپریٹر ویری ایبل کی موجودہ قیمت میں 1 کا اضافہ کر دیتا ہے اور پھر اس کی قیمت کو عبارت میں استعمال کیا جاتا ہے۔ مثال کے طور پر، || The prefix increment operator adds 1 to the current value of the variable, and then its value is used in the expression. For example: || مختاړی زیاتوالي عملګر د متغیر اوسني ارزښت ته 1 ورزیاتوي او بیا یې ارزښت په عبارت کې کارېږي. د بېلګې په توګه:
+### پروگرام 3.16 || Program 3.16 || پروګرام ۳.۱۶
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a,b,c,sum;
+m     a=1;
+m     b=1;
+m     c=3;
+m     sum= a+ b+ (++c);
+m     printf("Sum = %d\n",sum);
+m     printf("c= %d",c);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m sum=6
+m c=4
+endbox
+@issue Program 3.16 is printed with typing errors: "\sum= a+ b+ (++c);" has a stray backslash and the format string "%d:\n" a stray colon (both removed in the code above). The code prints "Sum = 6" (capital S, spaces) while the output box shows "sum=6".
+p مندرجہ بالا پروگرام میں c کی قیمت میں 1 کا اضافہ ہو گا اس سے پہلے کہ یہ عبارت میں استعمال ہو۔ اس لیے پروگرام کے اختتام پر sum کی قیمت 6 ہو گی اور c کی قیمت 4 ہو گی۔ || In the program above, 1 is added to the value of c before it is used in the expression. So at the end of the program the value of sum will be 6 and the value of c will be 4. || په پورتني پروګرام کې د c ارزښت ته 1 مخکې له دې چې په عبارت کې وکارول شي ورزیاتېږي. نو د پروګرام په پای کې د sum ارزښت 6 او د c ارزښت 4 وي.
+### پوسٹ فکس انکریمنٹ آپریٹر (Postfix Increment Operator) || Postfix increment operator || وروستاړی زیاتوالي عملګر (Postfix Increment Operator)
+p جب انکریمنٹ آپریٹر کسی بھی عبارت میں پوسٹ فکس انداز میں استعمال کیا جاتا ہے، تو اس میں ویری ایبل کی قیمت میں، عبارت میں استعمال ہونے کے بعد، 1 کا اضافہ کرے گا۔ || When the increment operator is used in postfix form in an expression, it adds 1 to the variable's value after the value has been used in the expression. || کله چې د زیاتوالي عملګر په عبارت کې په وروستاړې بڼه وکارول شي، د متغیر ارزښت ته له دې وروسته چې په عبارت کې وکارول شي 1 ورزیاتوي.

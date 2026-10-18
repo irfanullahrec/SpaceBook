@@ -1,0 +1,130 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s051-p042",
+  "title": "2.1 Introduction; 2.1.1 Units of Memory: a. Bit — start",
+  "headingUrdu": "۲.۱ تعارف؛ ۲.۱.۱ میموری کی اکائیاں: الف۔ بٹ — آغاز",
+  "headingPashto": "۲.۱ پېژندنه؛ ۲.۱.۱ د حافظې واحدونه: الف. بټ — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 51,
+    "printedPage": "42"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s051-h1",
+      "en": "2.1 Introduction",
+      "ur": "۲.۱ تعارف",
+      "ps": "۲.۱ پېژندنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s051-a",
+      "en": "Computer memory is one of the important and compulsory components of every computer system. It is the electronic holding place for instructions and data which can be accessed by computer. Computer memory is used to store data or programs on a temporary or permanent basis for use in a computer. From the moment user turn the computer on until the time it is shut down, the CPU of the computer is constantly using memory. Memory is sometimes distinguished from storage, or the physical medium that holds the much larger amounts of data for later use.",
+      "ur": "کمپیوٹر میموری ہر کمپیوٹر سسٹم کے اہم اور لازمی اجزاء میں سے ایک ہے۔ یہ ہدایات اور ڈیٹا کی برقی جائے رکھنے کی جگہ ہے جس تک کمپیوٹر رسائی حاصل کر سکتا ہے۔ کمپیوٹر میموری ڈیٹا یا پروگرام کو کمپیوٹر میں استعمال کے لیے عارضی یا مستقل بنیاد پر محفوظ کرنے کے لیے استعمال ہوتی ہے۔ صارف کے کمپیوٹر آن کرنے کے لمحے سے بند کرنے تک کمپیوٹر کا سی پی یو مسلسل میموری استعمال کرتا رہتا ہے۔ میموری کو بعض اوقات اسٹوریج سے ممتاز کیا جاتا ہے، یعنی اس طبعی وسیلے سے جو بعد کے استعمال کے لیے ڈیٹا کی بہت بڑی مقدار رکھتا ہے۔",
+      "ps": "د کمپیوټر حافظه د هر کمپیوټر سیسټم له مهمو او لازمي اجزاوو نه یو ده. دا د لارښوونو او ډېټا برېښنايي ساتلو ځای دی چې کمپیوټر ورته لاسرسی موندلای شي. د کمپیوټر حافظه ډېټا یا پروګرامونه په کمپیوټر کې د کارونې لپاره په لنډمهاله یا دایمي بنسټ ساتلو لپاره کارول کېږي. هغه شېبې نه چې کاروونکی کمپیوټر روښانه کوي تر هغه وخته چې بند شي، د کمپیوټر CPU په دوامداره توګه حافظه کاروي. حافظه ځینې وخت له ذخیرې نه جلا ګڼل کېږي، یا هغه فزیکي رسنۍ چې وروسته د کارونې لپاره ډیر لوی مقدار ډېټا ساتي."
+    },
+    {
+      "id": "cs11-s051-b",
+      "en": "Computer memory is divided into two main types.",
+      "ur": "کمپیوٹر میموری کو دو بنیادی اقسام میں تقسیم کیا جاتا ہے۔",
+      "ps": "د کمپیوټر حافظه په دوو اصلي ډولونو وېشل کېږي."
+    },
+    {
+      "id": "cs11-s051-t1",
+      "en": "Primary or Main or Internal Memory",
+      "ur": "بنیادی یا مرکزی یا اندرونی میموری",
+      "ps": "لومړنۍ یا اصلي یا دننني حافظه",
+      "listGroup": "mem"
+    },
+    {
+      "id": "cs11-s051-t2",
+      "en": "Secondary or Auxiliary or Backing Storage Memory",
+      "ur": "ثانوی یا معاون یا پشتی ذخیرہ میموری",
+      "ps": "دویمي یا مرستندویه یا ملاتړي ذخیرې حافظه",
+      "listGroup": "mem"
+    },
+    {
+      "id": "cs11-s051-c",
+      "en": "Primary or Main memory holds instructions and data when a program is executed, while secondary memory (also called auxiliary memory) holds data and programs not currently in use and provides long-term storage.",
+      "ur": "بنیادی یا مرکزی میموری پروگرام چلنے کے وقت ہدایات اور ڈیٹا رکھتی ہے جبکہ ثانوی میموری (جسے معاون میموری بھی کہتے ہیں) وہ ڈیٹا اور پروگرام رکھتی ہے جو فی الحال استعمال میں نہیں ہیں اور طویل مدتی ذخیرہ فراہم کرتی ہے۔",
+      "ps": "لومړنۍ یا اصلي حافظه هغه وخت لارښوونې او ډېټا ساتي کله چې پروګرام پلی کېږي، پداسې حال کې چې دویمي حافظه (چې مرستندویه حافظه هم ورته ویل کېږي) هغه ډېټا او پروګرامونه ساتي چې اوس مهال په کارونه کې نه دي او اوږدمهاله ذخیره برابروي."
+    },
+    {
+      "id": "cs11-s051-h2",
+      "en": "2.1.1 Units of Memory",
+      "ur": "۲.۱.۱ میموری کی اکائیاں",
+      "ps": "۲.۱.۱ د حافظې واحدونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s051-d",
+      "en": "The following are basic memory measurement units.",
+      "ur": "درج ذیل میموری کی پیمائش کی بنیادی اکائیاں ہیں۔",
+      "ps": "لاندې د حافظې د اندازې بنسټیز واحدونه دي."
+    },
+    {
+      "id": "cs11-s051-u1",
+      "en": "Bit",
+      "ur": "بٹ",
+      "ps": "بټ",
+      "listGroup": "unit"
+    },
+    {
+      "id": "cs11-s051-u2",
+      "en": "Byte",
+      "ur": "بائٹ",
+      "ps": "بایټ",
+      "listGroup": "unit"
+    },
+    {
+      "id": "cs11-s051-u3",
+      "en": "Memory Word",
+      "ur": "میموری ورڈ",
+      "ps": "د حافظې کلمه",
+      "listGroup": "unit"
+    },
+    {
+      "id": "cs11-s051-h3",
+      "en": "a. Bit",
+      "ur": "الف۔ بٹ",
+      "ps": "الف. بټ",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s051-e",
+      "en": "A bit or binary digit is the basic unit of information in computing. A bit is the smallest amount of memory a computer can recognize. A bit can hold only one of two values, either ‘0’ or ‘1’. It is also applied to a unit of computer memory corresponding to the ability to store the result of a choice between two alternatives. Computers represent information in binary code, written as",
+      "ur": "بٹ یا بائنری ہندسہ کمپیوٹنگ میں معلومات کی بنیادی اکائی ہے۔ بٹ میموری کی وہ سب سے چھوٹی مقدار ہے جسے کمپیوٹر پہچان سکتا ہے۔ ایک بٹ صرف دو قدروں میں سے ایک رکھ سکتا ہے، یا ’۰‘ یا ’۱‘۔ یہ کمپیوٹر میموری کی اس اکائی پر بھی لاگو ہوتا ہے جو دو متبادل کے درمیان انتخاب کا نتیجہ محفوظ کرنے کی صلاحیت کے مطابق ہے۔ کمپیوٹرز معلومات کو بائنری کوڈ میں ظاہر کرتے ہیں، جو لکھا جاتا ہے",
+      "ps": "بټ یا بائنري عدد په کمپیوټینګ کې د معلوماتو بنسټیز واحد دی. بټ د حافظې تر ټولو کوچنی مقدار دی چې کمپیوټر یې پېژندلای شي. یو بټ د دوو ارزښتونو یوازې یو ساتلای شي، یا ‘۰’ یا ‘۱’. دا د کمپیوټر د حافظې په هغه واحد هم پلي کېږي چې د دوو بدیلونو ترمنځ د انتخاب د پایلې د ساتلو وړتیا سره سمون لري. کمپیوټرونه معلومات په بائنري کوډ کې ښیي، چې لیکل کېږي",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s051-h1",
+        "cs11-s051-a",
+        "cs11-s051-b",
+        "cs11-s051-t1",
+        "cs11-s051-t2",
+        "cs11-s051-c",
+        "cs11-s051-h2",
+        "cs11-s051-d",
+        "cs11-s051-u1",
+        "cs11-s051-u2",
+        "cs11-s051-u3",
+        "cs11-s051-h3",
+        "cs11-s051-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 42: the banner “2.1 Introduction”, the two main types of computer memory, “2.1.1 Units of Memory” with the list a. Bit, b. Byte, c. Memory Word and the start of “a. Bit” (the sentence continues on the next page). The page is photographed at an angle. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:41:53.313022+00:00",
+    "scope": "Scan 51 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

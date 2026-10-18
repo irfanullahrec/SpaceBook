@@ -1,0 +1,25 @@
+@printed 158
+@status lesson
+table K-Map for Z = ABC + ĀBC + ABC̄ + ĀBC̄ (columns AB, rows C); one group of four in the ĀB and AB columns || Z = ABC + ĀBC + ABC̄ + ĀBC̄ کا K-Map (کالم AB، قطاریں C)؛ ĀB اور AB کالموں میں چار کا ایک گروپ || د Z K-Map (ستنې AB، قطارونه C)؛ په ĀB او AB ستنو کې د څلورو یوه ډله
+th | C \ AB | ĀB̄ (00) | ĀB (01) | AB (11) | AB̄ (10)
+tr | C̄ (0) | 0 | 1 ▢ | 1 ▢ | 0
+tr | C (1) | 0 | 1 ▢ | 1 ▢ | 0
+endtable
+- There is only one group, consisting of 4 cells. || صرف ایک گروپ ہے جو 4 خانوں پر مشتمل ہے۔ || یوازې یوه ډله ده چې ۴ خانې لري.
+- There is no common variable on the row side but B is common on column side. || قطار کی طرف کوئی مشترک متغیر نہیں لیکن کالم کی طرف B مشترک ہے۔ || د قطار په اړخ کې ګډ متغیر نشته خو د ستنې په اړخ کې B ګډ دی.
+- So the simple form would be: || اس لیے سادہ صورت یہ ہوگی: || نو ساده بڼه به دا وي:
+m Z= f (A,B,C) = B
+### Example 2 || مثال 2 || ۲ بېلګه
+m Z=f(A, B, C) = A.B.C+ Ā.B.C+ A.B̄.C̄+Ā.B.C̄+A.B.C̄+A.B̄.C
+p Now drawing K- Map || اب K-Map بناتے ہیں || اوس K-Map رسموو
+table K-Map for Example 2: group I = AB and AB̄ columns (A), group II = ĀB and AB columns (B) || مثال 2 کا K-Map: گروپ I = AB اور AB̄ کالم (A)، گروپ II = ĀB اور AB کالم (B) || د ۲ بېلګې K-Map: ډله I = د AB او AB̄ ستنې (A)، ډله II = د ĀB او AB ستنې (B)
+th | C \ AB | ĀB̄ (00) | ĀB (01) | AB (11) | AB̄ (10)
+tr | C̄ (0) | 0 | 1 (II) | 1 (I, II) | 1 (I)
+tr | C (1) | 0 | 1 (II) | 1 (I, II) | 1 (I)
+endtable
+- There are two groups, covering four adjacent cells each. || دو گروپ ہیں جن میں سے ہر ایک چار ملحقہ خانوں پر مشتمل ہے۔ || دوه ډلې دي چې هره یې څلور څنګ په څنګ خانې پوښي.
+- A is column-wise common variable from group I while B is row-wise common variable from group II. || A گروپ I سے کالم وار مشترک متغیر ہے جبکہ B گروپ II سے قطار وار مشترک متغیر ہے۔ || A له I ډلې د ستنې له مخې او B له II ډلې د قطار له مخې ګډ متغیر دی.
+@issue Both A and B are column-wise common variables here (the map has AB along the columns); the book calls B "row-wise". Kept as printed.
+- Both terms will be added together to get the final simple form. || حتمی سادہ صورت کے لیے دونوں اجزا جمع کیے جائیں گے۔ || د وروستۍ ساده بڼې لپاره دواړه برخې جمع کېږي.
+- The final simple form would be: || حتمی سادہ صورت یہ ہوگی: || وروستۍ ساده بڼه به دا وي:
+m Z= f(A,B,C) = A + B

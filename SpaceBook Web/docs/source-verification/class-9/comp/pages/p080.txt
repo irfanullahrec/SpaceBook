@@ -1,0 +1,25 @@
+@pdf 231
+@printed 72
+@status lesson
+### c. *cin* || ج۔ *cin* || ج. *cin*
+p In a C++ program the input can be obtained from the keyboard at the runtime using *cin* (console input). C++ handles standard input by applying the extraction operator (>>) with *cin*. The extraction operator must be followed by variable which is used to store the input data as depicted in figure 3.2. It pauses the program until value(s) is entered from the keyboard. ***cin*** can be used to input both the numeric value(s) as well as character value(s). The header file required to be included in C++ program is ***iostream*** with *using namespace std*; as first line of code. || C++ پروگرام میں چلنے کے وقت کی بورڈ سے ان پٹ *cin* (کنسول ان پٹ) سے لیا جا سکتا ہے۔ C++ معیاری ان پٹ کو *cin* کے ساتھ ایکسٹریکشن آپریٹر (>>) لگا کر سنبھالتی ہے۔ ایکسٹریکشن آپریٹر کے بعد وہ متغیر ہونا چاہیے جس میں ان پٹ ڈیٹا محفوظ ہو، جیسا کہ شکل 3.2 میں ہے۔ یہ کی بورڈ سے قدر لکھے جانے تک پروگرام روک دیتا ہے۔ ***cin*** عددی اور حرفی دونوں قسم کی قدریں ان پٹ کرنے کے لیے استعمال ہو سکتا ہے۔ C++ پروگرام میں شامل کی جانے والی ہیڈر فائل ***iostream*** ہے اور کوڈ کی پہلی سطر *using namespace std;* ہے۔ || په C++ پروګرام کې د چلېدو پر مهال له کیبورډ input د *cin* (console input) په مرسته اخیستل کېږي. C++ معیاري input د *cin* سره د extraction operator (>>) په کارولو اداره کوي. له extraction operator وروسته باید هغه متغیر راشي چې input ډېټا پکې ساتل کېږي، لکه په ۳.۲ شکل کې. پروګرام تر هغه دروي چې له کیبورډ ارزښت ولیکل شي. ***cin*** د عددي او توري ییزو دواړو ارزښتونو لپاره کارېږي. په C++ پروګرام کې اړین header فایل ***iostream*** دی او د کوډ لومړۍ کرښه *using namespace std;* ده.
+p Syntax is: || سنٹیکس یہ ہے: || syntax دا دی:
+m cin>>var1>> var2>>……;
+svg Figure: 3.2 Working of 'cin' object || شکل 3.2 'cin' آبجیکٹ کا کام || ۳.۲ شکل د 'cin' object کار
+<svg viewBox="0 0 480 230" width="480" role="img" aria-label="An arrow rises from a keyboard to the object box cin, linked by two-way arrows to the extraction operator box (&gt;&gt;) and then to a variable box" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+<defs><marker id="arF32" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<g font-size="12" fill="#9f1239"><text x="150" y="30">Object</text><text x="270" y="16">Extraction</text><text x="270" y="30">Operator</text><text x="400" y="30">Variable</text></g>
+<g fill="#fff" stroke="#ea580c"><rect x="115" y="38" width="70" height="40"/><rect x="235" y="38" width="70" height="40"/><rect x="350" y="38" width="100" height="40"/></g>
+<g font-size="18"><text x="150" y="65">cin</text><text x="270" y="65">&gt;&gt;</text><text x="400" y="65">variable</text></g>
+<path d="M190 58 H230 M310 58 H345" stroke="#1d4ed8" stroke-width="4" marker-start="url(#arF32)" marker-end="url(#arF32)"/>
+<path d="M60 150 V58 H108" stroke="#1d4ed8" stroke-width="6" fill="none" marker-end="url(#arF32)"/>
+<rect x="20" y="160" width="230" height="60" rx="4" fill="#fff" stroke="#475569"/>
+<g fill="none" stroke="#94a3b8"><path d="M30 172 H240 M30 186 H240 M30 200 H240"/><path d="M80 210 H190"/></g>
+<text x="135" y="216" font-size="10" fill="#475569" font-weight="400">keyboard</text>
+</svg>
+endsvg
+p For example: || مثلاً: || د بېلګې په توګه:
+p 1. cin>>k; — It will get a value from keyboard and store it in variable K. || 1. cin>>k; — یہ کی بورڈ سے ایک قدر لے کر متغیر K میں محفوظ کرے گا۔ || ۱. cin>>k; — له کیبورډ یو ارزښت اخلي او په K متغیر کې یې ساتي.
+p 2. cin>>a>>b>>c; — It will get three values from keyboard and store it in variables a, b and c. || 2. cin>>a>>b>>c; — یہ کی بورڈ سے تین قدریں لے کر متغیرات a، b اور c میں محفوظ کرے گا۔ || ۲. cin>>a>>b>>c; — له کیبورډ درې ارزښتونه اخلي او په a، b او c متغیرونو کې یې ساتي.
+p An important thing to be noted that, it is compulsory that the value entered from the keyboard should match the specified data types of the variables. Like *scanf()* function, *cin* does not require the & operator at the start of the variable name. || ایک اہم بات یہ ہے کہ کی بورڈ سے لکھی گئی قدر کا متغیرات کی بتائی گئی ڈیٹا ٹائپ سے مطابقت رکھنا لازمی ہے۔ *scanf()* فنکشن کی طرح *cin* کو متغیر کے نام کے شروع میں & آپریٹر کی ضرورت نہیں۔ || یوه مهمه خبره دا ده چې له کیبورډ لیکل شوی ارزښت باید د متغیرونو له ټاکلي ډېټا ډول سره سمون ولري. د *scanf()* په څېر، *cin* د متغیر د نوم په پیل کې & operator ته اړتیا نه لري.
+@issue "Like scanf() function, cin does not require the & operator" — scanf() does need &; the intended meaning is "Unlike scanf()". Kept as printed.

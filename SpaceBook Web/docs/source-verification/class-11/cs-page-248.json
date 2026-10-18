@@ -1,0 +1,352 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s248-p239",
+  "title": "Normal Form; First Normal Form; Employee Table (Figure 7.22)",
+  "headingUrdu": "نارمل فارم؛ فرسٹ نارمل فارم؛ ایمپلائی ٹیبل (شکل ۷.۲۲)",
+  "headingPashto": "نورمال بڼه؛ لومړۍ نورمال بڼه؛ د کارکوونکي جدول (انځور ۷.۲۲)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 248,
+    "printedPage": "239"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s248-h1",
+      "en": "Normal Form",
+      "ur": "نارمل فارم",
+      "ps": "نورمال بڼه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s248-a",
+      "en": "The degree of normalization is termed as Normal Form. For example, First Normal Form (1st NF), Second Normal Form (2nd NF), Third Normal Form (3rd NF) etc.",
+      "ur": "نارملائزیشن کی ڈگری کو نارمل فارم کہتے ہیں۔ مثلاً فرسٹ نارمل فارم (۱ این ایف)، سیکنڈ نارمل فارم (۲ این ایف)، تھرڈ نارمل فارم (۳ این ایف) وغیرہ۔",
+      "ps": "د نورمال کولو درجې ته نورمال بڼه ویل کېږي. د بېلګې په توګه لومړۍ نورمال بڼه (1st NF)، دویمه نورمال بڼه (2nd NF)، دریمه نورمال بڼه (3rd NF) او نور."
+    },
+    {
+      "id": "cs11-s248-h2",
+      "en": "First Normal Form",
+      "ur": "فرسٹ نارمل فارم",
+      "ps": "لومړۍ نورمال بڼه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s248-b",
+      "en": "The relation is considered to be in First Normal Form (1st NF) if the intersection of each row and column contains only one value. In 1st NF we remove the repeating groups. Consider the following example.",
+      "ur": "ریلیشن کو فرسٹ نارمل فارم (۱ این ایف) میں سمجھا جاتا ہے اگر ہر قطار اور کالم کے تقاطع میں صرف ایک قدر ہو۔ ۱ این ایف میں ہم تکراری گروپ ہٹا دیتے ہیں۔ درج ذیل مثال پر غور کریں۔",
+      "ps": "اړیکه په لومړۍ نورمال بڼه (1st NF) کې ګڼل کېږي که د هر قطار او ستون په تقاطع کې یوازې یو ارزښت وي. په 1st NF کې موږ تکراري ډلې لېرې کوو. لاندې بېلګه ته پام وکړئ."
+    },
+    {
+      "id": "cs11-s248-h3",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s248-c",
+      "en": "The Employee table contains repeating groups. To normalize the above table, all repeating groups must be eliminated.",
+      "ur": "ایمپلائی ٹیبل میں تکراری گروپ ہیں۔ اوپر کے ٹیبل کو نارملائز کرنے کے لیے تمام تکراری گروپس ختم کرنے ہوں گے۔",
+      "ps": "د کارکوونکي جدول تکراري ډلې لري. د پورتني جدول د نورمال کولو لپاره باید ټولې تکراري ډلې لېرې شي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s248-h1",
+        "cs11-s248-a",
+        "cs11-s248-h2",
+        "cs11-s248-b",
+        "cs11-s248-h3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s248-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Figure 7.22 Employee Table",
+      "captionUrdu": "شکل ۷.۲۲ ایمپلائی ٹیبل",
+      "captionPashto": "انځور ۷.۲۲ د کارکوونکي جدول",
+      "headers": [
+        {
+          "en": "Proj_no",
+          "ur": "پراجیکٹ نمبر",
+          "ps": "د پروژې شمېره"
+        },
+        {
+          "en": "Proj_name",
+          "ur": "پراجیکٹ نام",
+          "ps": "د پروژې نوم"
+        },
+        {
+          "en": "Emp_no",
+          "ur": "ملازم نمبر",
+          "ps": "د کارکوونکي شمېره"
+        },
+        {
+          "en": "Emp_name",
+          "ur": "ملازم نام",
+          "ps": "د کارکوونکي نوم"
+        },
+        {
+          "en": "Job_class",
+          "ur": "ملازمت کی قسم",
+          "ps": "د دندې ډول"
+        },
+        {
+          "en": "Charge_per_hour",
+          "ur": "فی گھنٹہ چارج",
+          "ps": "په ساعت چارج"
+        },
+        {
+          "en": "Hours",
+          "ur": "گھنٹے",
+          "ps": "ساعتونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "Evergreen",
+            "ur": "ایور گرین",
+            "ps": "ایورګرین"
+          },
+          {
+            "en": "103",
+            "ur": "103",
+            "ps": "103"
+          },
+          {
+            "en": "Jameel Khan",
+            "ur": "جمیل خان",
+            "ps": "جمیل خان"
+          },
+          {
+            "en": "Elect. Engineer",
+            "ur": "الیکٹریکل انجینئر",
+            "ps": "برېښنايي انجینیر"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          }
+        ],
+        [
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "101",
+            "ur": "101",
+            "ps": "101"
+          },
+          {
+            "en": "Faisal Naeem",
+            "ur": "فیصل نعیم",
+            "ps": "فیصل نعیم"
+          },
+          {
+            "en": "DB Designer",
+            "ur": "ڈی بی ڈیزائنر",
+            "ps": "ډېټابېس ډیزاینر"
+          },
+          {
+            "en": "900",
+            "ur": "900",
+            "ps": "900"
+          },
+          {
+            "en": "19",
+            "ur": "19",
+            "ps": "19"
+          }
+        ],
+        [
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "105",
+            "ur": "105",
+            "ps": "105"
+          },
+          {
+            "en": "Bilal Ahmad",
+            "ur": "بلال احمد",
+            "ps": "بلال احمد"
+          },
+          {
+            "en": "DB Designer",
+            "ur": "ڈی بی ڈیزائنر",
+            "ps": "ډېټابېس ډیزاینر"
+          },
+          {
+            "en": "900",
+            "ur": "900",
+            "ps": "900"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "MIS",
+            "ur": "ایم آئی ایس",
+            "ps": "MIS"
+          },
+          {
+            "en": "114",
+            "ur": "114",
+            "ps": "114"
+          },
+          {
+            "en": "Zubair Ahmad",
+            "ur": "زبیر احمد",
+            "ps": "زبیر احمد"
+          },
+          {
+            "en": "Programmer",
+            "ur": "پروگرامر",
+            "ps": "پروګرامر"
+          },
+          {
+            "en": "750",
+            "ur": "750",
+            "ps": "750"
+          },
+          {
+            "en": "12.6",
+            "ur": "12.6",
+            "ps": "12.6"
+          }
+        ],
+        [
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "118",
+            "ur": "118",
+            "ps": "118"
+          },
+          {
+            "en": "M. Waseem",
+            "ur": "ایم۔ وسیم",
+            "ps": "م. وسیم"
+          },
+          {
+            "en": "System Analyst",
+            "ur": "سسٹم اینالسٹ",
+            "ps": "سیسټم تحلیلګر"
+          },
+          {
+            "en": "800",
+            "ur": "800",
+            "ps": "800"
+          },
+          {
+            "en": "45.3",
+            "ur": "45.3",
+            "ps": "45.3"
+          }
+        ],
+        [
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "—",
+            "ur": "—",
+            "ps": "—"
+          },
+          {
+            "en": "104",
+            "ur": "104",
+            "ps": "104"
+          },
+          {
+            "en": "Shaukat Ali",
+            "ur": "شوکت علی",
+            "ps": "شوکت علي"
+          },
+          {
+            "en": "App Designer",
+            "ur": "ایپ ڈیزائنر",
+            "ps": "اپ ډیزاینر"
+          },
+          {
+            "en": "600",
+            "ur": "600",
+            "ps": "600"
+          },
+          {
+            "en": "32.4",
+            "ur": "32.4",
+            "ps": "32.4"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 239: “Normal Form”, “First Normal Form” and “Employee Table” with Figure 7.22 (a table with the columns Proj_no, Proj_name, Emp_no, Emp_name, Job_class, Charge_per_hour and Hours for projects 15 Evergreen and 18 MIS; the cells that are blank in the print for the repeated project number and name are given as a dash) and the closing sentence. The row text of the printed table is wrapped within the cells (for example “Jameel Khan”, “Elect. Engineer”) and is joined here. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:53:06.266739+00:00",
+    "scope": "Scan 248 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

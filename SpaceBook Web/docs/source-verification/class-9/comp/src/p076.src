@@ -1,0 +1,30 @@
+@printed 68
+@status lesson
+p For example, to input values into two integer variables, n1 and n2 of data type integer, the *scanf()* function is written as: || مثلاً انٹیجر ڈیٹا ٹائپ کے دو متغیرات n1 اور n2 میں قدریں ان پٹ کرنے کے لیے *scanf()* یوں لکھا جاتا ہے: || د بېلګې په توګه د integer ډول دوو متغیرونو n1 او n2 ته د ارزښتونو د ورکولو لپاره *scanf()* داسې لیکل کېږي:
+m scanf("%d,%d", &a, &b);
+@issue The text names the variables n1 and n2 but the statement uses a and b; kept as printed.
+p Here, **%d** is format specifier used for integer type variables. || یہاں **%d** انٹیجر قسم کے متغیرات کے لیے فارمیٹ اسپیسیفائر ہے۔ || دلته **%d** د integer ډول متغیرونو format specifier دی.
+### Program 3.5: Program to input student's roll number, total marks, obtained marks and to calculate percentage marks. || پروگرام 3.5: طالب علم کا رول نمبر، کل نمبر، حاصل کردہ نمبر ان پٹ کر کے فیصد نمبر معلوم کرنے کا پروگرام۔ || پروګرام ۳.۵: د زده کوونکي رول نمبر، ټولې نمرې، ترلاسه شوې نمرې input کول او سلنه محاسبه کول.
+m #include<stdio.h>
+m void main()
+m {
+m     int rn,tm,om;
+m     float pm;
+m     printf("\nEnter Roll number = ");
+m     scanf("%d",&rn);
+m     printf("\nEnter Total marks = ");
+m     scanf("%d",&tm);
+m     printf("\nEnter Obtained marks = ");
+m     scanf("%d",&om);
+m     pm=om/tm*100;
+m         printf("\nPercentage marks = %f",pm);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter Roll number = 10
+m Enter Total marks = 800
+m Enter Obtained marks = 650
+m Percentage marks = 81.25
+endbox
+@issue With int om and tm, om/tm is integer division (650/800 = 0), so the program as printed outputs 0.000000, not 81.25; it needs pm=(float)om/tm*100. Kept as printed.
+### b. *getch(), getche()* and *getchar()* functions || ب۔ *getch()، getche()* اور *getchar()* فنکشنز || ب. *getch()، getche()* او *getchar()* فنکشنونه
+p The *getch(), getche()* and *getchar()* functions are used to read a single character from the keyboard. These functions do not require any arguments. Only a pair of empty parenthesis will be used with these functions. || *getch()، getche()* اور *getchar()* فنکشنز کی بورڈ سے ایک حرف پڑھنے کے لیے استعمال ہوتے ہیں۔ ان فنکشنز کو کسی آرگیومنٹ کی ضرورت نہیں۔ ان کے ساتھ صرف خالی قوسین کا جوڑا استعمال ہوتا ہے۔ || *getch()، getche()* او *getchar()* فنکشنونه له کیبورډ یو توری لوستلو لپاره کارېږي. دا فنکشنونه argument ته اړتیا نه لري. یوازې د تشو قوسونو جوړه ورسره کارېږي.

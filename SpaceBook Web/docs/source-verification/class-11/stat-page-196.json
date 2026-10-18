@@ -1,0 +1,659 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s196-corr-rank-2",
+  "title": "Example 5.6: Spearman rank correlation · Example 5.7: two referees (question)",
+  "headingUrdu": "مثال 5.6: سپیئرمین درجاتی ارتباط · مثال 5.7: دو منصف (سوال)",
+  "headingPashto": "بېلګه 5.6: د سپیرمن رتبه‌یي همتړاو · بېلګه 5.7: دوه ډاروونکي (پوښتنه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 196,
+    "printedPage": "186"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s196-ex56",
+      "en": "Example: 5.6",
+      "ur": "مثال: 5.6",
+      "ps": "بېلګه: 5.6",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-q56",
+      "en": "Compute the spearman rank correlation coefficient for the following data.",
+      "ur": "درج ذیل اعداد و شمار کے لیے سپیئرمین درجاتی ارتباطی عددی سر حساب کریں۔",
+      "ps": "د لاندې معلوماتو لپاره د سپیرمن رتبه‌یي همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-sol56",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-a1",
+      "en": "Convert the original data to ranked data and then find d as follow;",
+      "ur": "اصل اعداد و شمار کو درجہ بند اعداد و شمار میں تبدیل کریں اور پھر d درج ذیل طور پر معلوم کریں؛",
+      "ps": "اصلي معلومات رتبه‌شوو معلوماتو ته واړوئ او بیا d داسې ومومئ؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-a2",
+      "en": "The spearman rank correlation coefficient is",
+      "ur": "سپیئرمین درجاتی ارتباطی عددی سر ہے",
+      "ps": "د سپیرمن رتبه‌یي همتړاو ضریب دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-a3",
+      "en": "It indicates a strong negative correlation.",
+      "ur": "یہ ایک مضبوط منفی ارتباط ظاہر کرتا ہے۔",
+      "ps": "دا یو ځواکمن منفي همتړاو ښيي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-ex57",
+      "en": "Example: 5.7",
+      "ur": "مثال: 5.7",
+      "ps": "بېلګه: 5.7",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-7"
+    },
+    {
+      "id": "stat11-s196-q57",
+      "en": "Two referees in a flower beauty competition rank the 10 types of flowers as follows;",
+      "ur": "پھولوں کی خوبصورتی کے مقابلے میں دو منصفوں نے 10 اقسام کے پھولوں کی درجہ بندی درج ذیل طور پر کی؛",
+      "ps": "د ګلانو د ښکلا په سیالۍ کې دوو ډاروونکو د ګلانو 10 ډولونه داسې رتبه‌بندي کړل؛",
+      "role": "question",
+      "exampleId": "stat11-ex-5-7"
+    },
+    {
+      "id": "stat11-s196-q57b",
+      "en": "Use the rank correlation coefficient and find out what degree of agreement is there between the referees.",
+      "ur": "درجاتی ارتباطی عددی سر استعمال کریں اور معلوم کریں کہ منصفوں کے درمیان اتفاق کی کتنی درجے کی ہے۔",
+      "ps": "د رتبه‌یي همتړاو ضریب وکاروئ او ومومئ چې د ډاروونکو تر منځ د موافقې کومه درجه شته.",
+      "role": "question",
+      "exampleId": "stat11-ex-5-7"
+    },
+    {
+      "id": "stat11-s196-sol57",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-7"
+    },
+    {
+      "id": "stat11-s196-b1",
+      "en": "Since the given data sets contain ranks, therefore we evaluate the difference in ranks as:",
+      "ur": "چونکہ دیے گئے اعداد و شمار کے سیٹ درجوں پر مشتمل ہیں اس لیے ہم درجوں کا فرق یوں معلوم کرتے ہیں:",
+      "ps": "ځکه چې ورکړل شوي معلوماتي سیټونه رتبې لري نو موږ د رتبو توپیر داسې موندو:",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-7",
+      "sourceGap": {
+        "note": "The working table is on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s196-ex56",
+        "stat11-s196-q56"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s196-sol56",
+        "stat11-s196-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s196-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s196-a3",
+        "stat11-s196-ex57",
+        "stat11-s196-q57"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s196-q57b",
+        "stat11-s196-sol57",
+        "stat11-s196-b1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s196-r1",
+      "latex": "r_s=1-\\dfrac{6\\sum d^2}{n^3-n}",
+      "accessible": "r_s = 1 − 6Σd²/(n³ − n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "id": "stat11-s196-r2",
+      "latex": "=1-\\dfrac{6(38)}{5^3-5}=1-\\dfrac{228}{120}=1-1.9=-0.9",
+      "accessible": "= 1 − 6(38)/(5³ − 5) = 1 − 228/120 = 1 − 1.9 = −0.9",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1 − 6(38)/(5³ − 5) = 1 − 228/120 = 1 − 1.9 = −0.9"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1 − 6(38)/(5³ − 5) = 1 − 228/120 = 1 − 1.9 = −0.9"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1 − 6(38)/(5³ − 5) = 1 − 228/120 = 1 − 1.9 = −0.9"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-6"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 5.6: x and y",
+      "captionUrdu": "مثال 5.6: x اور y",
+      "captionPashto": "بېلګه 5.6: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "11",
+          "ur": "11",
+          "ps": "11"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "caption": "Example 5.6 solution table",
+      "captionUrdu": "مثال 5.6 کا حل: جدول",
+      "captionPashto": "د بېلګې 5.6 د حل جدول",
+      "headers": [
+        {
+          "en": "Original data: x",
+          "ur": "اصل اعداد و شمار: x",
+          "ps": "اصلي معلومات: x"
+        },
+        {
+          "en": "Original data: y",
+          "ur": "اصل اعداد و شمار: y",
+          "ps": "اصلي معلومات: y"
+        },
+        {
+          "en": "Ranks: R1",
+          "ur": "درجے: R1",
+          "ps": "رتبې: R1"
+        },
+        {
+          "en": "Ranks: R2",
+          "ur": "درجے: R2",
+          "ps": "رتبې: R2"
+        },
+        {
+          "en": "Difference in ranks d = R1 − R2",
+          "ur": "درجوں کا فرق d = R1 − R2",
+          "ps": "د رتبو توپیر d = R1 − R2"
+        },
+        {
+          "en": "d²",
+          "ur": "d²",
+          "ps": "d²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5 − 1 = 4",
+            "ur": "5 − 1 = 4",
+            "ps": "5 − 1 = 4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-4",
+            "ur": "-4",
+            "ps": "-4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "Total",
+            "ps": "Total"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-6"
+    },
+    {
+      "caption": "Example 5.7: ranks given by referees A and B",
+      "captionUrdu": "مثال 5.7: منصفوں A اور B کے دیے گئے درجے",
+      "captionPashto": "بېلګه 5.7: د A او B ډاروونکو لخوا ورکړل شوې رتبې",
+      "headers": [
+        {
+          "en": "Referee A:",
+          "ur": "منصف A:",
+          "ps": "ډاروونکی A:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Referee B:",
+            "ur": "منصف B:",
+            "ps": "ډاروونکی B:"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-7"
+    }
+  ],
+  "sourceNote": "Printed page 186. In the solution table the heading \"Original data\" sits over the x and y columns and \"Ranks\" over R1 and R2; they are flattened. Printed spellings kept: \"spearman\". Dark and coloured pixels at the top-left corner are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:21:29.873988+00:00",
+    "scope": "Scan 196 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

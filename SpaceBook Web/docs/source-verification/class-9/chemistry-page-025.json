@@ -1,0 +1,37 @@
+{
+  "id": "cls9-chemistry-pdf1-page-025",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "pdfPage": 25,
+  "printedPage": 19,
+  "status": "source-compared-corrected",
+  "chapterNumber": 1,
+  "chapter": "Unit 1: Fundamentals of Chemistry",
+  "title": "Relative atomic masses and average atomic mass",
+  "sourceObservations": "Table 1.6 values: Hydrogen 1.0079, Oxygen 15.8994, Sodium 22.9897, Magnesium 24.3050, Silver 107.8082 a.m.u.; weighted-average definition and chlorine-35/chlorine-37 worked calculation.",
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "activeDataTargets": [
+    "chemChapters[0].topics",
+    "chemChapters[0].tables"
+  ],
+  "comparisonStatus": "Fresh four-page source render compared against the active Chemistry lesson data.",
+  "correctionsApplied": [
+    "Added a semantic Table 1.6 using the five values exactly as printed. The source values 15.8994 for Oxygen and 107.8082 for Silver are retained and flagged as possible source typos.",
+    "Restored carbon12 scale ticks, relative-mass arrows, comparison labels and connected translated Table1.6."
+  ],
+  "translationStatus": "15 source-mass paragraphs populated in Urdu/Pashto. Table1.6 headers, all five element labels, and printed values are paired; suspicious Oxygen/Silver values stay exactly as source.",
+  "unresolvedItems": [
+    "Check semantic translation and tooltip rendering; verify the apparent source errors O=15.8994 and Ag=107.8082 are clearly source-preserved."
+  ],
+  "followUpSourceCompared": true,
+  "followUpTranslationStatus": "15 source-mass paragraphs populated in Urdu/Pashto. Table1.6 headers, all five element labels, and printed values are paired; suspicious Oxygen/Silver values stay exactly as source.",
+  "followUpImageReview": "2026-10-11: source batches20–23 and24–27 visually inspected.",
+  "followUpTranslationCoverage": {
+    "table16Headers": 3,
+    "translatedElementNames": 5,
+    "paragraphPairs": 15
+  },
+  "followUpSemanticTranslationVerified": false,
+  "translationCoverage": "15 prose records and 3 interactive column headers/5 element names mapped.",
+  "fullyCompleted": false
+}

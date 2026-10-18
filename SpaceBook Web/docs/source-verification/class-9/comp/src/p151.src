@@ -1,0 +1,11 @@
+@printed 143
+@status lesson
+@deco A previous owner has handwritten a definition of truth table across the top of the page; not book content.
+### Truth table for NOT gate || NOT گیٹ کا ٹروتھ ٹیبل || د NOT دروازې truth table
+tt expr:X:F=X̄:1-X || Table 6.5: Truth table for NOT gate || جدول 6.5: NOT گیٹ کا ٹروتھ ٹیبل || ۶.۵ جدول: د NOT دروازې truth table
+### 6.2.4 More Logic Gates with their Truth Tables || 6.2.4 مزید لاجک گیٹس اور ان کے ٹروتھ ٹیبل || ۶.۲.۴ نورې منطقي دروازې او د هغوی truth tables
+### NOR Gate || NOR گیٹ || NOR دروازه
+p A NOR gate ("not OR gate") is a logic gate that produces a high output (1) only if all of its inputs are false, and low output (0) otherwise. Hence the NOR gate is the inverse of an OR gate, and its circuit is produced by connecting an OR gate to a NOT gate. Just like an OR gate, a NOR gate may have any number of inputs but produces only one output. || NOR گیٹ ("not OR gate") ایسا لاجک گیٹ ہے جو صرف اس وقت زیادہ آؤٹ پٹ (1) دیتا ہے جب اس کے تمام ان پٹ غلط ہوں، ورنہ کم آؤٹ پٹ (0) دیتا ہے۔ یوں NOR گیٹ OR گیٹ کا الٹ ہے اور اس کا سرکٹ OR گیٹ کو NOT گیٹ سے جوڑ کر بنتا ہے۔ OR گیٹ کی طرح NOR گیٹ کے بھی کتنے ہی ان پٹ مگر صرف ایک آؤٹ پٹ ہوتا ہے۔ || NOR دروازه ("not OR gate") هغه منطقي دروازه ده چې یوازې هغه وخت لوړ output (1) ورکوي چې ټول inputs ناسم وي، کنه ټیټ output (0) ورکوي. نو NOR د OR معکوس دی او سرکټ یې د OR دروازې NOT ته په نښلولو جوړېږي. د OR په څېر هر شمېر inputs خو یو output لري.
+p If A and B are two inputs, then output Y can be represented mathematically as: Y = (A+B)‾ (A+B with a bar over it). Here the sign — denotes the complement. Truth table and symbol of the NOR gate is shown in the figure 6.4 below. || اگر A اور B دو ان پٹ ہوں تو آؤٹ پٹ Y کو ریاضیاتی طور پر Y = (A+B)‾ لکھا جا سکتا ہے۔ یہاں — کی علامت تکملہ ظاہر کرتی ہے۔ NOR گیٹ کا ٹروتھ ٹیبل اور علامت نیچے شکل 6.4 میں ہے۔ || که A او B دوه inputs وي، output Y په ریاضي ډول Y = (A+B)‾ لیکل کېږي. دلته — نښه متمم ښيي. د NOR truth table او نښه په ۶.۴ شکل کې ده.
+@issue The formula is printed "Y– A+B" (the "=" looks like "–"); it is Y equals the complement of A+B.
+fig10 f6.4 || Figure 6.4: NOR gate with two inputs || شکل 6.4 دو ان پٹ والا NOR گیٹ || ۶.۴ شکل د دوو inputs NOR دروازه

@@ -1,0 +1,20 @@
+@printed 182
+@status lesson
+@sec 7-2 | 7.2 Introduction to HTML || 7.2 HTML کا تعارف || ۷.۲ د HTML پېژندنه
+## 7.2 INTRODUCTION TO HTML || 7.2 HTML کا تعارف || ۷.۲ د HTML پېژندنه
+p HTML stands for **H**yper **T**ext **M**arkup **L**anguage, which is the most widely used language on Web to develop web pages. HTML was created by Berners-Lee in 1991. In order to read HTML document and display it on the screen as web pages, a browser such as Internet Explorer or Google Chrome is used. || HTML سے مراد ہائپر ٹیکسٹ مارک اپ لینگویج ہے جو ویب پیجز بنانے کے لیے ویب پر سب سے زیادہ استعمال ہونے والی زبان ہے۔ HTML کو برنرز لی نے 1991 میں بنایا۔ HTML دستاویز پڑھ کر اسے ویب پیج کے طور پر اسکرین پر دکھانے کے لیے انٹرنیٹ ایکسپلورر یا گوگل کروم جیسا براؤزر استعمال ہوتا ہے۔ || HTML د Hyper Text Markup Language لنډیز دی چې په ویب کې د وېب پاڼو د جوړولو لپاره تر ټولو ډېره کارېدونکې ژبه ده. HTML په ۱۹۹۱ کې برنرز لي جوړه کړه. د HTML سند د لوستلو او د وېب پاڼې په توګه د ښودلو لپاره د Internet Explorer یا Google Chrome په څېر براوزر کارېږي.
+### 7.2.1 Hypertext Mark-Up Languages || 7.2.1 ہائپر ٹیکسٹ مارک اپ زبانیں || ۷.۲.۱ د Hypertext Mark-Up ژبې
+p HTML is a mark-up language because it uses tags that tell the web browser how to display the web page. Each page contains a series of connections to other pages called hyperlinks. Every web page you see on the Internet is written using one version of HTML code or another. It is used to create hypertext documents that bring together text, pictures, sounds, video clips and links all in one place. HTML files are plain text files, so they can be created using a simple editor such as Notepad or WordPad or Notepad++, and Visual Studio code. || HTML ایک مارک اپ زبان ہے کیونکہ یہ ایسے ٹیگز استعمال کرتی ہے جو ویب براؤزر کو بتاتے ہیں کہ ویب پیج کیسے دکھایا جائے۔ ہر صفحے میں دوسرے صفحات سے رابطوں کا سلسلہ ہوتا ہے جنہیں ہائپر لنکس کہتے ہیں۔ انٹرنیٹ پر نظر آنے والا ہر ویب پیج HTML کوڈ کے کسی نہ کسی ورژن میں لکھا ہوتا ہے۔ یہ ایسی ہائپر ٹیکسٹ دستاویزات بنانے کے لیے استعمال ہوتی ہے جو متن، تصاویر، آوازیں، ویڈیو کلپس اور لنکس سب ایک جگہ جمع کرتی ہیں۔ HTML فائلیں سادہ ٹیکسٹ فائلیں ہیں، اس لیے انہیں نوٹ پیڈ، ورڈ پیڈ، نوٹ پیڈ++ اور ویژول اسٹوڈیو کوڈ جیسے سادہ ایڈیٹر سے بنایا جا سکتا ہے۔ || HTML د mark-up ژبه ده ځکه داسې tags کاروي چې براوزر ته وايي وېب پاڼه څنګه وښيي. هره پاڼه نورو پاڼو ته د اړیکو لړۍ لري چې hyperlinks بلل کېږي. په انټرنېټ کې هره پاڼه د HTML د یوې نسخې په کوډ لیکل شوې. د داسې hypertext اسنادو د جوړولو لپاره کارېږي چې متن، انځورونه، غږونه، ویډیوګانې او لینکونه یوځای راټولوي. HTML فایلونه ساده متني فایلونه دي، نو د Notepad، WordPad، Notepad++ او Visual Studio code په څېر ساده editor جوړېدای شي.
+### 7.2.2 Creating and Displaying HTML Document || 7.2.2 HTML دستاویز بنانا اور دکھانا || ۷.۲.۲ د HTML سند جوړول او ښودل
+p Here in this unit, Notepad++ is used for creating HTML documents. This editor can be downloaded from Internet using the link *https://notepad-plus-plus.org/downloads/* || اس یونٹ میں HTML دستاویزات بنانے کے لیے نوٹ پیڈ++ استعمال کیا گیا ہے۔ یہ ایڈیٹر لنک *https://notepad-plus-plus.org/downloads/* سے انٹرنیٹ سے ڈاؤن لوڈ کیا جا سکتا ہے۔ || په دې څپرکي کې د HTML اسنادو لپاره Notepad++ کارول شوی. دا editor د *https://notepad-plus-plus.org/downloads/* له لینک ښکته کېدای شي.
+### Creating the First HTML Document || پہلی HTML دستاویز بنانا || لومړی HTML سند جوړول
+p Open the **Notepad++** program and type the text as shown in Figure 7.14. || **نوٹ پیڈ++** پروگرام کھولیں اور شکل 7.14 کے مطابق متن لکھیں۔ || **Notepad++** پرانیزئ او متن د ۷.۱۴ شکل په څېر ولیکئ.
+m <html>
+m <head>
+m <title> My First HTML Document</title>
+m </head>
+m <body>
+m PAKISTAN IS MY COUNTRY
+m </body>
+m </html>
+p (Figure 7.14: Creating a HTML document — the code above in the Notepad++ window, file first-doc.html.) || (شکل 7.14: HTML دستاویز بنانا — اوپر والا کوڈ نوٹ پیڈ++ کی ونڈو میں، فائل first-doc.html۔) || (۷.۱۴ شکل: د HTML سند جوړول — پورتنی کوډ د Notepad++ په کړکۍ کې، فایل first-doc.html.)

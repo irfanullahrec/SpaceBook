@@ -1,0 +1,33 @@
+@printed 5
+@status lesson
+- تقسیم اور فتح Divide and Conquer: بڑے اور پیچیدہ مسئلے کو چھوٹے چھوٹے آسان قابلِ حل مسئلوں میں تقسیم کیا جائے تاکہ حل کرنا آسان ہو جائے۔ || Divide and Conquer: a large, complex problem is divided into small, easily solvable problems so that it becomes easy to solve. || وېشه او بریالی شه (Divide and Conquer): لویه او پېچلې ستونزه په وړو اسانه د حل وړ ستونزو ووېشل شي چې حل یې اسانه شي.
+- اختصار Reduction: مسئلے کو دوسرے ایسے مسائل میں تبدیل کیا جائے جن کا حل پہلے سے موجود ہو۔ || Reduction: the problem is converted into other problems whose solution already exists. || لنډون (Reduction): ستونزه په داسې نورو ستونزو بدله شي چې حل یې مخکې شته.
+- تحقیق Research: اپنے تجربات کی روشنی میں، ایک جیسے مسائل کے پہلے سے موجود حل کو اپنے مقصد کے لیے تبدیل کریں۔ || Research: in the light of your experience, adapt the existing solutions of similar problems for your purpose. || څېړنه (Research): د خپلو تجربو په رڼا کې د ورته ستونزو موجود حلونه د خپلې موخې لپاره بدل کړئ.
+- سعی و خطا Trial and Error: تمام ممکنہ حل آزمانا جب تک درست حل نہ مل جائے۔ || Trial and Error: trying all possible solutions until the correct one is found. || هڅه او تېروتنه (Trial and Error): ټول ممکن حلونه ازمویل تر هغه چې سم حل پیدا شي.
+### 1.1.4 مسئلے کے صریح حل (Candid Solutions of a Problem) || 1.1.4 Candid solutions of a problem || ۱.۱.۴ د ستونزې ښکاره حلونه
+p ”مسئلے کو حل کرنے کے عمل کو“ حل ہی کہا جائے گا۔ مسئلے کا بہترین اور پسندیدہ حل وہ ہو گا جس کی لاگت کم سے کم ہو۔ مسئلے کو حل کرنے کے لیے بہت سے متبادل طریقے ہو سکتے ہیں۔ تاہم مسئلے کا بہترین اور مناسب ترین حل معلوم کرنا ہی مسئلے کا صریح حل قرار دیا جائے گا۔ || "The process of solving a problem" is itself called the solution. The best and preferred solution of a problem is the one whose cost is lowest. There can be many alternative ways of solving a problem; however, finding the best and most suitable solution is what is called the candid solution of the problem. || ”د ستونزې د حلولو بهیر“ ته حل ویل کېږي. د ستونزې غوره او خوښ حل هغه دی چې لګښت یې تر ټولو لږ وي. د ستونزې د حل لپاره ګڼې بدیلې لارې کېدای شي؛ خو د ستونزې غوره او تر ټولو مناسب حل موندل د ستونزې ښکاره حل ګڼل کېږي.
+@issue Printed "Candid Solutions" — the intended English term is probably "Candidate Solutions"; kept as printed.
+### 1.1.5 بہترین حل کا چناؤ کرنا (Selecting the best Solution) || 1.1.5 Selecting the best solution || ۱.۱.۵ د غوره حل ټاکل
+p کسی بھی مسئلے کے بہترین حل کے چناؤ کے لیے درج ذیل عناصر بہت اہمیت کے حامل ہیں۔ || The following factors are very important in choosing the best solution of any problem: || د هرې ستونزې د غوره حل د ټاکلو لپاره لاندې توکي ډېر مهم دي:
+- سرعت || speed || چټکتیا
+- لاگت || cost || لګښت
+- پیچیدگی || complexity || پېچلتیا
+svg شکل نمبر 1.5 بہترین حل کا چناؤ کرنا || Figure 1.5 Selecting the best solution || ۱.۵ شکل د غوره حل ټاکل
+<svg viewBox="0 0 320 210" width="320" role="img" aria-label="Diagram: central ellipse Selecting the best solution linked to three ellipses: Speed above, Cost lower left, Complexity lower right" font-family="Noto Nastaliq Urdu, Jameel Noori Nastaleeq, serif" font-size="16" text-anchor="middle">
+<line x1="160" y1="58" x2="160" y2="84" stroke="#111827"/>
+<line x1="110" y1="128" x2="88" y2="146" stroke="#111827"/>
+<line x1="212" y1="128" x2="234" y2="146" stroke="#111827"/>
+<ellipse cx="160" cy="34" rx="56" ry="26" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="160" y="40">سرعت</text>
+<ellipse cx="160" cy="106" rx="90" ry="28" fill="#fce7f3" stroke="#7e22ce" stroke-width="2"/>
+<text x="160" y="112">بہترین حل کا چناؤ کرنا</text>
+<ellipse cx="74" cy="170" rx="56" ry="26" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2"/>
+<text x="74" y="176">لاگت</text>
+<ellipse cx="246" cy="170" rx="56" ry="26" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+<text x="246" y="176">پیچیدگی</text>
+</svg>
+endsvg
+### i. سرعت (Speed) || i. Speed || i. چټکتیا
+p مسئلے کے لیے تجویز شدہ حل کتنی تیزی سے مسئلے کو حل کر سکتا ہے یہ ایک ایسا پیمانہ ہے جو مؤثر ترین حل کی نشاندہی کرتا ہے۔ || How fast a proposed solution can solve the problem is a measure that identifies the most effective solution. || وړاندیز شوی حل څومره چټک ستونزه حلولای شي، دا داسې معیار دی چې تر ټولو اغېزمن حل ښيي.
+### ii. لاگت (Cost) || ii. Cost || ii. لګښت
+p کسی حل کی لاگت سے مراد تجویز شدہ حل کے لیے درکار میموری، ہارڈ ویئر اور سافٹ ویئر ہیں۔ کسی بھی حل کو اس وقت بہترین کہا جائے گا جو کم سے کم لاگت میں مناسب ترین اور مطلوبہ نتائج مہیا کرے۔ || The cost of a solution means the memory, hardware and software needed for the proposed solution. A solution is called best when it provides the most suitable and desired results at the lowest cost. || د یوه حل لګښت د وړاندیز شوي حل لپاره اړینه حافظه، هارډویر او سافټویر دي. یو حل هغه وخت غوره بلل کېږي چې په لږ لګښت تر ټولو مناسبې او غوښتل شوې پایلې ورکړي.

@@ -1,0 +1,9 @@
+@printed 162
+@status lesson
+table K-map for Y (rows A, columns BC, cell numbers 0–7): groups ĀB̄ (cells 0,1), ĀC (cells 1,3) and B̄C (cells 1,5) || Y کا K-map (قطاریں A، کالم BC، خانہ نمبر 0–7): گروپس ĀB̄ (خانے 0،1)، ĀC (خانے 1،3) اور B̄C (خانے 1،5) || د Y K-map (قطارونه A، ستنې BC، د خانو شمېرې 0–7): ډلې ĀB̄ (خانې 0،1)، ĀC (خانې 1،3) او B̄C (خانې 1،5)
+th | A \ BC | 00 | 01 | 11 | 10
+tr | 0 | 1 (cell 0) | 1 (cell 1) | 1 (cell 3) | 0 (cell 2)
+tr | 1 | 0 (cell 4) | 1 (cell 5) | 0 (cell 7) | 0 (cell 6)
+endtable
+p (Logic diagram: A passes through NOT1 to give Ā and B through NOT2 to give B̄; AND1 takes Ā and B̄ to give ĀB̄, AND2 takes Ā and C to give ĀC, AND3 takes B̄ and C to give B̄C; the three outputs go into OR1, whose output is Y=ĀB̄+ĀC+B̄C.) || (لاجک ڈایاگرام: A، NOT1 سے گزر کر Ā اور B، NOT2 سے گزر کر B̄ بنتا ہے؛ AND1 میں Ā اور B̄ سے ĀB̄، AND2 میں Ā اور C سے ĀC، AND3 میں B̄ اور C سے B̄C بنتا ہے؛ تینوں آؤٹ پٹ OR1 میں جاتے ہیں جس کا آؤٹ پٹ Y=ĀB̄+ĀC+B̄C ہے۔) || (منطقي ډیاګرام: A له NOT1 تېرېږي او Ā کېږي، B له NOT2 او B̄ کېږي؛ AND1 له Ā او B̄ ĀB̄، AND2 له Ā او C ĀC، AND3 له B̄ او C B̄C جوړوي؛ درې واړه outputs OR1 ته ځي چې output یې Y=ĀB̄+ĀC+B̄C دی.)
+m Y=ĀB̄+ĀC+B̄C

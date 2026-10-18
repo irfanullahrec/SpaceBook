@@ -1,0 +1,27 @@
+@printed 161
+@status lesson
+table Truth table for Q=(A.B.C)+A.(B̄+C̄) (Inputs, Intermediates, Output) || Q=(A.B.C)+A.(B̄+C̄) کا ٹروتھ ٹیبل (ان پٹس، درمیانی، آؤٹ پٹ) || د Q=(A.B.C)+A.(B̄+C̄) truth table (inputs، منځني، output)
+th | C | B | A | A.B.C | B̄ | C̄ | B̄+C̄ | A.(B̄+C̄) | Q
+tr | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0
+tr | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 1
+tr | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0
+tr | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1
+tr | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0
+tr | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 1
+tr | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+tr | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1
+endtable
+### Simplification of the following Boolean function using K-Map method. Also draw the logic diagram of the simplified function. || K-Map طریقے سے درج ذیل بولین فنکشن کو مختصر کریں۔ مختصر فنکشن کا لاجک ڈایاگرام بھی بنائیں۔ || د K-Map په طریقه لاندې بولین فنکشن لنډ کړئ. د لنډ شوي فنکشن منطقي ډیاګرام هم رسم کړئ.
+m Y=ĀB̄C̄+ĀB̄C+ĀBC+AB̄C
+table Truth table for Y || Y کا ٹروتھ ٹیبل || د Y truth table
+th | A | B | C | Y
+tr | 0 | 0 | 0 | 1
+tr | 0 | 0 | 1 | 1
+tr | 0 | 1 | 0 | 0
+tr | 0 | 1 | 1 | 1
+tr | 1 | 0 | 0 | 0
+tr | 1 | 0 | 1 | 1
+tr | 1 | 1 | 0 | 0
+tr | 1 | 1 | 1 | 0
+endtable
+@issue The column heads of this table are printed garbled ("( B ( \"); they are read as A, B, C, Y from the rows.

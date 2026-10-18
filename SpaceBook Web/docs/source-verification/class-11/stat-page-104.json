@@ -1,0 +1,663 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s104-qd-2",
+  "title": "Example 3.4 (end) · Example 3.5: discrete series · Example 3.6: continuous series (start)",
+  "headingUrdu": "مثال 3.4 (اختتام) · مثال 3.5: منفصل سلسلہ · مثال 3.6: مسلسل سلسلہ (آغاز)",
+  "headingPashto": "بېلګه 3.4 (پای) · بېلګه 3.5: منفصله لړۍ · بېلګه 3.6: دوامداره لړۍ (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 104,
+    "printedPage": "96"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s104-i2",
+      "en": "(ii) Quartile deviation in case of discrete series or grouped data",
+      "ur": "(ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں چوتھائی انحراف",
+      "ps": "(ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې څلورمه انحراف"
+    },
+    {
+      "id": "stat11-s104-ex5",
+      "en": "Example: 3.5",
+      "ur": "مثال: 3.5",
+      "ps": "بېلګه: 3.5",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-q5",
+      "en": "Find quartile deviation and coefficient of quartile deviation from the given distribution.",
+      "ur": "دی گئی تقسیم سے چوتھائی انحراف اور چوتھائی انحراف کا عددی سر معلوم کریں۔",
+      "ps": "له ورکړل شوي ویش څخه څلورمه انحراف او د څلورمې انحراف ضریب ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-sol5",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-i3",
+      "en": "(iii) Quartile deviation in case of continuous series or grouped data",
+      "ur": "(iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں چوتھائی انحراف",
+      "ps": "(iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې څلورمه انحراف"
+    },
+    {
+      "id": "stat11-s104-ex6",
+      "en": "Example: 3.6",
+      "ur": "مثال: 3.6",
+      "ps": "بېلګه: 3.6",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s104-q6",
+      "en": "Calculate quartile deviation and coefficient of quartile deviation of the data given below:",
+      "ur": "نیچے دیے گئے اعداد و شمار کا چوتھائی انحراف اور چوتھائی انحراف کا عددی سر حساب کریں:",
+      "ps": "د لاندې ورکړل شویو معلوماتو څلورمه انحراف او د څلورمې انحراف ضریب محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-6",
+      "sourceGap": {
+        "note": "The data of Example 3.6 are printed at the top of the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s104-i2",
+        "stat11-s104-ex5",
+        "stat11-s104-q5"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s104-sol5"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s104-i3",
+        "stat11-s104-ex6",
+        "stat11-s104-q6"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s104-q3a",
+      "latex": "Q_3=3\\left(\\dfrac{n+1}{4}\\right)\\text{th value}",
+      "accessible": "Q3 = 3((n + 1)/4)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s104-q3b",
+      "latex": "=3\\left(\\dfrac{11+1}{4}\\right)\\text{th value}=\\dfrac{36}{4}\\text{th}=9\\text{th value}=32",
+      "accessible": "= 3((11 + 1)/4)th value = 36/4 th = 9th value = 32",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 3((11 + 1)/4)th value = 36/4 th = 9th value = 32"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 3((11 + 1)/4)th value = 36/4 th = 9th value = 32"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 3((11 + 1)/4)th value = 36/4 th = 9th value = 32"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s104-qd1",
+      "latex": "\\therefore\\ \\text{Q.D}=\\dfrac{Q_3-Q_1}{2}=\\dfrac{32-20}{2}=\\dfrac{12}{2}=6\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ Q.D = (Q3 − Q1)/2 = (32 − 20)/2 = 12/2 = 6   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Q.D = (Q3 − Q1)/2 = (32 − 20)/2 = 12/2 = 6   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Q.D = (Q3 − Q1)/2 = (32 − 20)/2 = 12/2 = 6   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Q.D = (Q3 − Q1)/2 = (32 − 20)/2 = 12/2 = 6   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s104-cq1",
+      "latex": "\\text{Coefficient of Q.D}=\\dfrac{Q_3-Q_1}{Q_3+Q_1}=\\dfrac{32-20}{32+20}=\\dfrac{12}{52}=0.23\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (32 − 20)/(32 + 20) = 12/52 = 0.23   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (32 − 20)/(32 + 20) = 12/52 = 0.23   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (32 − 20)/(32 + 20) = 12/52 = 0.23   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (32 − 20)/(32 + 20) = 12/52 = 0.23   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-4"
+    },
+    {
+      "id": "stat11-s104-s1",
+      "latex": "\\text{Since }\\textstyle\\sum f=477\\text{ is odd},\\ \\therefore\\ Q_1=\\left(\\dfrac{\\sum f+1}{4}\\right)\\text{th value}=\\left(\\dfrac{477+1}{4}\\right)\\text{th value}",
+      "accessible": "Since Σf = 477 is odd, ∴ Q1 = ((Σf + 1)/4)th value = ((477 + 1)/4)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Since Σf = 477 is odd, ∴ Q1 = ((Σf + 1)/4)th value = ((477 + 1)/4)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Since Σf = 477 is odd, ∴ Q1 = ((Σf + 1)/4)th value = ((477 + 1)/4)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Since Σf = 477 is odd, ∴ Q1 = ((Σf + 1)/4)th value = ((477 + 1)/4)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-s2",
+      "latex": "=\\left(\\dfrac{478}{4}\\right)\\text{th value}=119.5\\text{th value}\\ \\Rightarrow\\ Q_1=2",
+      "accessible": "= (478/4)th value = 119.5th value ⇒ Q1 = 2",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (478/4)th value = 119.5th value ⇒ Q1 = 2"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (478/4)th value = 119.5th value ⇒ Q1 = 2"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (478/4)th value = 119.5th value ⇒ Q1 = 2"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-s3",
+      "latex": "Q_3=3\\left(\\dfrac{\\sum f+1}{4}\\right)\\text{th value}=3\\left(\\dfrac{477+1}{4}\\right)\\text{th value}=358.5\\text{th value}\\ \\Rightarrow\\ Q_3=5",
+      "accessible": "Q3 = 3((Σf + 1)/4)th value = 3((477 + 1)/4)th value = 358.5th value ⇒ Q3 = 5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((477 + 1)/4)th value = 358.5th value ⇒ Q3 = 5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((477 + 1)/4)th value = 358.5th value ⇒ Q3 = 5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q3 = 3((Σf + 1)/4)th value = 3((477 + 1)/4)th value = 358.5th value ⇒ Q3 = 5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-s4",
+      "latex": "\\text{Q.D}=\\dfrac{Q_3-Q_1}{2}=\\dfrac{5-2}{2}=\\dfrac{3}{2}=1.5\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "Q.D = (Q3 − Q1)/2 = (5 − 2)/2 = 3/2 = 1.5   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (5 − 2)/2 = 3/2 = 1.5   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (5 − 2)/2 = 3/2 = 1.5   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (5 − 2)/2 = 3/2 = 1.5   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "id": "stat11-s104-s5",
+      "latex": "\\text{Coefficient of Q.D}=\\dfrac{Q_3-Q_1}{Q_3+Q_1}=\\dfrac{5-2}{5+2}=\\dfrac{3}{7}=0.43\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (5 − 2)/(5 + 2) = 3/7 = 0.43   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (5 − 2)/(5 + 2) = 3/7 = 0.43   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (5 − 2)/(5 + 2) = 3/7 = 0.43   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (5 − 2)/(5 + 2) = 3/7 = 0.43   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-5"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.5: x and f",
+      "captionUrdu": "مثال 3.5: x اور f",
+      "captionPashto": "بېلګه 3.5: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "113",
+            "ur": "113",
+            "ps": "113"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          },
+          {
+            "en": "95",
+            "ur": "95",
+            "ps": "95"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-5"
+    },
+    {
+      "caption": "Example 3.5 solution: x, f, c.f",
+      "captionUrdu": "مثال 3.5 کا حل: x, f, c.f",
+      "captionPashto": "د بېلګې 3.5 حل: x, f, c.f",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "113",
+            "ur": "113",
+            "ps": "113"
+          },
+          {
+            "en": "139",
+            "ur": "139",
+            "ps": "139"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          },
+          {
+            "en": "259",
+            "ur": "259",
+            "ps": "259"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "95",
+            "ur": "95",
+            "ps": "95"
+          },
+          {
+            "en": "354",
+            "ur": "354",
+            "ps": "354"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "414",
+            "ur": "414",
+            "ps": "414"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "456",
+            "ur": "456",
+            "ps": "456"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "477",
+            "ur": "477",
+            "ps": "477"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "477",
+            "ur": "477",
+            "ps": "477"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-5"
+    }
+  ],
+  "sourceNote": "Printed page 96. The first lines complete Example 3.4. In Example 3.5 the solution table has c.f. 26, 139, 259, 354, 414, 456, 477 with total frequency 477; the working is printed beside the table and is kept in reading order after it. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:47:49.661843+00:00",
+    "scope": "Scan 104 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

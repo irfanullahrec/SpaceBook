@@ -1,0 +1,740 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s127-moments-6",
+  "title": "Example 3.19: solution (raw moments, mean moments)",
+  "headingUrdu": "مثال 3.19: حل (خام معیارِ اثر، اوسطی معیارِ اثر)",
+  "headingPashto": "بېلګه 3.19: حل (خام مومنټونه، اوسط مومنټونه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 127,
+    "printedPage": "119"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s127-sol19",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-a1",
+      "en": "(i) Raw moments:",
+      "ur": "(i) خام معیارِ اثر:",
+      "ps": "(i) خام مومنټونه:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-a2",
+      "en": "Taking an arbitrary origin a = 2 in the given data.",
+      "ur": "دیے گئے اعداد و شمار میں من مانا مبدا a = 2 لیتے ہوئے۔",
+      "ps": "په ورکړل شویو معلوماتو کې خپلسري اصل a = 2 اخیستل.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-a3",
+      "en": "(ii) Mean moments",
+      "ur": "(ii) اوسطی معیارِ اثر",
+      "ps": "(ii) اوسط مومنټونه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-19"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s127-sol19",
+        "stat11-s127-a1",
+        "stat11-s127-a2"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s127-a3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s127-r1",
+      "latex": "m_1'=\\dfrac{\\sum(x-2)}{n}=\\dfrac{-6}{10}=-0.6",
+      "accessible": "m′1 = Σ(x − 2)/n = −6/10 = −0.6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′1 = Σ(x − 2)/n = −6/10 = −0.6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′1 = Σ(x − 2)/n = −6/10 = −0.6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′1 = Σ(x − 2)/n = −6/10 = −0.6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-r2",
+      "latex": "m_2'=\\dfrac{\\sum(x-2)^2}{n}=\\dfrac{14}{10}=1.4",
+      "accessible": "m′2 = Σ(x − 2)²/n = 14/10 = 1.4",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′2 = Σ(x − 2)²/n = 14/10 = 1.4"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′2 = Σ(x − 2)²/n = 14/10 = 1.4"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′2 = Σ(x − 2)²/n = 14/10 = 1.4"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-r3",
+      "latex": "m_3'=\\dfrac{\\sum(x-2)^3}{n}=\\dfrac{-18}{10}=-1.8",
+      "accessible": "m′3 = Σ(x − 2)³/n = −18/10 = −1.8",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′3 = Σ(x − 2)³/n = −18/10 = −1.8"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′3 = Σ(x − 2)³/n = −18/10 = −1.8"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′3 = Σ(x − 2)³/n = −18/10 = −1.8"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-r4",
+      "latex": "m_4'=\\dfrac{\\sum(x-2)^4}{n}=\\dfrac{38}{10}=3.8",
+      "accessible": "m′4 = Σ(x − 2)⁴/n = 38/10 = 3.8",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′4 = Σ(x − 2)⁴/n = 38/10 = 3.8"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′4 = Σ(x − 2)⁴/n = 38/10 = 3.8"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′4 = Σ(x − 2)⁴/n = 38/10 = 3.8"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m1",
+      "latex": "m_1=m_1'-m_1'=-0.6-(-0.6)=-0.6+0.6=0",
+      "accessible": "m1 = m′1 − m′1 = −0.6 − (−0.6) = −0.6 + 0.6 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = −0.6 − (−0.6) = −0.6 + 0.6 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = −0.6 − (−0.6) = −0.6 + 0.6 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = −0.6 − (−0.6) = −0.6 + 0.6 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m2",
+      "latex": "m_2=m_2'-(m_1')^2=1.4-(-0.6)^2=1.4-0.36=1.04",
+      "accessible": "m2 = m′2 − (m′1)² = 1.4 − (−0.6)² = 1.4 − 0.36 = 1.04",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 1.4 − (−0.6)² = 1.4 − 0.36 = 1.04"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 1.4 − (−0.6)² = 1.4 − 0.36 = 1.04"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 1.4 − (−0.6)² = 1.4 − 0.36 = 1.04"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m3a",
+      "latex": "m_3=m_3'-3m_1'm_2'+2(m_1')^3",
+      "accessible": "m3 = m′3 − 3m′1m′2 + 2(m′1)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m3b",
+      "latex": "=-1.8-3(-0.6)(1.4)+2(-0.6)^3",
+      "accessible": "= −1.8 − 3(−0.6)(1.4) + 2(−0.6)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= −1.8 − 3(−0.6)(1.4) + 2(−0.6)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= −1.8 − 3(−0.6)(1.4) + 2(−0.6)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= −1.8 − 3(−0.6)(1.4) + 2(−0.6)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m3c",
+      "latex": "=-1.8+2.52-0.432=-2.232+2.52=0.29",
+      "accessible": "= −1.8 + 2.52 − 0.432 = −2.232 + 2.52 = 0.29",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= −1.8 + 2.52 − 0.432 = −2.232 + 2.52 = 0.29"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= −1.8 + 2.52 − 0.432 = −2.232 + 2.52 = 0.29"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= −1.8 + 2.52 − 0.432 = −2.232 + 2.52 = 0.29"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    },
+    {
+      "id": "stat11-s127-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-19"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.19: arbitrary origin a = 2",
+      "captionUrdu": "مثال 3.19: من مانا مبدا a = 2",
+      "captionPashto": "بېلګه 3.19: خپلسري اصل a = 2",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "(x − 2)",
+          "ur": "(x − 2)",
+          "ps": "(x − 2)"
+        },
+        {
+          "en": "(x − 2)²",
+          "ur": "(x − 2)²",
+          "ps": "(x − 2)²"
+        },
+        {
+          "en": "(x − 2)³",
+          "ur": "(x − 2)³",
+          "ps": "(x − 2)³"
+        },
+        {
+          "en": "(x − 2)⁴",
+          "ur": "(x − 2)⁴",
+          "ps": "(x − 2)⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-8",
+            "ur": "-8",
+            "ps": "-8"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-8",
+            "ur": "-8",
+            "ps": "-8"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "-6",
+            "ur": "-6",
+            "ps": "-6"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "-18",
+            "ur": "-18",
+            "ps": "-18"
+          },
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-19"
+    }
+  ],
+  "sourceNote": "Printed page 119. The data of Example 3.19 (1, 1, 0, 2, 2, 3, 1, 0, 1, 3) were printed at the foot of the previous page. The printed result of m3 is 0.29 (−2.232 + 2.52 = 0.288). The m4 working continues on the next page. Header graphics and watermark excluded; a second strip of the following scan appears at the bottom edge and is ignored.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:54:51.601234+00:00",
+    "scope": "Scan 127 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

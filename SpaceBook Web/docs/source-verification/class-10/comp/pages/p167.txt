@@ -1,0 +1,26 @@
+@printed 155
+@status lesson
+### سب سکرپٹ <sub></sub> Subscript || Subscript <sub></sub> || سبسکرېپټ <sub></sub>
+p یہ ٹیگز اپنے درمیان لکھے گئے ٹیکسٹ کو سب سکرپٹ میں تبدیل کر دیں گے۔ مثال کے طور پر: O<sub>2</sub> نتیجہ: O₂ || These tags turn the text written between them into subscript. For example: O<sub>2</sub> Result: O₂ || دا ټیګونه د خپل منځ متن په سبسکرېپټ بدلوي. د بېلګې په توګه: O<sub>2</sub> پایله: O₂
+### شکل نمبر 7.25 HTML ڈاکومنٹ میں سپر سکرپٹ اور سب سکرپٹ کا استعمال || Figure 7.25 Using superscript and subscript in an HTML document || ۷.۲۵ شکل په HTML سند کې د سوپرسکرېپټ او سبسکرېپټ کارونه
+m <html>
+m <head>
+m <title>Title of Page</title>
+m </head>
+m <body>
+m X<sup>Y</sup> Here Y is in superscript.<br><br>
+m X<sup>2.37</sup> Here, 2.37 is in superscript.<br><br>
+m H<sub>2</sub>O Here, 2 is in subscript.<br><br>
+m H<sub>2</sub>SO<sub>4</sub> Here, 2 and 4 are in subscript.<br>
+m </body>
+m </html>
+@issue Figure 7.25 is very faint; the head lines are reconstructed. The title in the code reads "Title of Page" while the browser tab in Figure 7.26 shows "using sup and sub tags".
+box info | شکل نمبر 7.26 ویب پیج میں سپر اسکرپٹ اور سب سکرپٹ ٹیگز کا استعمال || Figure 7.26 Superscript and subscript tags on a web page || ۷.۲۶ شکل په ویب پاڼه کې د سوپرسکرېپټ او سبسکرېپټ ټیګونو کارونه
+m Xʸ Here Y is in superscript.
+m X²·³⁷ Here, 2.37 is in superscript.
+m H₂O Here, 2 is in subscript.
+m H₂SO₄ Here, 2 and 4 are in subscript.
+endbox
+@sec 7-4 | 7.4 HTML میں فہرست بنانا || 7.4 Making lists in HTML || ۷.۴ په HTML کې لېستونه جوړول
+## 7.4 HTML میں فہرست بنانا || 7.4 Making lists in HTML || ۷.۴ په HTML کې لېستونه جوړول
+p فہرستوں کو متعلقہ معلومات کے ٹکڑوں کو ایک ساتھ جوڑنے کے لئے استعمال کیا جاتا ہے تاکہ وہ ایک دوسرے کے ساتھ واضح طور پر وابستہ ہوں اور پڑھنے میں آسانی ہو۔ جدید ویب ڈویلپمنٹ میں، فہرستیں عام طور پر نیویگیشن کے ساتھ ساتھ عمومی مواد کے لیے بھی استعمال ہوتی ہیں۔ || Lists are used to group related pieces of information together so that they are clearly connected to one another and easy to read. In modern web development, lists are commonly used for navigation as well as for general content. || لېستونه د اړوندو معلوماتو د ټوټو د یوځای کولو لپاره کارېږي چې یو له بل سره په ښکاره تړلي وي او لوستل یې اسانه وي. په عصري ویب پراختیا کې لېستونه معمولاً د نېویګېشن او همدارنګه د عمومي موادو لپاره کارېږي.

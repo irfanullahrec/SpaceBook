@@ -1,0 +1,21 @@
+@pdf 82
+@printed 78
+@status lesson
+table Escape sequences (iii) || ایسکیپ سیکوینسز (iii) || escape sequences (iii)
+th | Escape Sequence || ایسکیپ سیکوینس || escape sequence | Purpose || مقصد || موخه | Example || مثال || بېلګه | Sample Output || نمونہ آؤٹ پٹ || نمونه output
+tr | \\ | Backslash( to print a backslash) || بیک سلیش (بیک سلیش پرنٹ کرنے کے لیے) || backslash (د backslash چاپولو لپاره) | printf("\\Hello World\\"); | \Hello World\
+endtable
+@sec 3-2 | 3.2 Operations || 3.2 آپریشنز || ۳.۲ عملیات
+## 3.2 OPERATIONS || 3.2 آپریشنز (عملیات) || ۳.۲ عملیات
+p Operators are the special symbols that tell the compiler to perform different types of operations on data. There are various operators used in C language. These include arithmetic operators, assignment operators, relational operators and logical operators. || آپریٹرز وہ خاص علامات ہیں جو کمپائلر کو ڈیٹا پر مختلف قسم کے عمل کرنے کا کہتی ہیں۔ C زبان میں مختلف آپریٹرز استعمال ہوتے ہیں۔ ان میں حسابی آپریٹرز، اسائنمنٹ آپریٹرز، ریلیشنل آپریٹرز اور لاجیکل آپریٹرز شامل ہیں۔ || operators هغه ځانګړې نښې دي چې compiler ته وايي پر ډېټا بېلابېل عملیات ترسره کړي. په C ژبه کې بېلابېل operators کارېږي، لکه حسابي، assignment، اړیکه ییز او منطقي operators.
+### 3.2.1 Arithmetic Operators || 3.2.1 حسابی آپریٹرز || ۳.۲.۱ حسابي operators
+p Arithmetic operator is a symbol used for performing mathematical operations on data. C language supports various operators to perform different mathematical operations such as addition, subtraction, division, multiplication, etc. The following is a list of all arithmetic operators in C. || حسابی آپریٹر ایک علامت ہے جو ڈیٹا پر ریاضیاتی عمل کرنے کے لیے استعمال ہوتی ہے۔ C زبان جمع، تفریق، تقسیم، ضرب وغیرہ جیسے مختلف ریاضیاتی عمل کے لیے مختلف آپریٹرز رکھتی ہے۔ C کے تمام حسابی آپریٹرز کی فہرست درج ذیل ہے۔ || حسابي operator هغه نښه ده چې پر ډېټا د ریاضي عملیاتو لپاره کارېږي. C ژبه د جمع، تفریق، وېش، ضرب او نورو لپاره بېلابېل operators لري. د C د ټولو حسابي operators لست دا دی.
+table Arithmetic operators in C || C کے حسابی آپریٹرز || د C حسابي operators
+th | Operation || عمل || عملیه | Symbol || علامت || نښه | Description || وضاحت || تشریح
+tr | Addition || جمع || جمع | + | Adds two values || دو قدریں جمع کرتا ہے || دوه ارزښتونه جمع کوي
+tr | Subtraction || تفریق || تفریق | - | Subtracts one value from another value || ایک قدر کو دوسری سے تفریق کرتا ہے || یو ارزښت له بل کموي
+tr | Multiplication || ضرب || ضرب | * | Multiplies two values || دو قدروں کو ضرب دیتا ہے || دوه ارزښتونه ضربوي
+tr | Division || تقسیم || وېش | / | Divides one value by another value || ایک قدر کو دوسری پر تقسیم کرتا ہے || یو ارزښت پر بل وېشي
+tr | Modulus || ماڈیولس || باقي | % | Gives the remainder of division of two integers || دو انٹیجرز کی تقسیم کا باقی دیتا ہے || د دوو integers د وېش پاتې ورکوي
+endtable
+p All arithmetic operators work with numeric values. Suppose we have two variables **A** and **B** where **A= 8** and **B= 3**. Arithmetic operators can be used on **A** and **B** as follows: || تمام حسابی آپریٹرز عددی قدروں کے ساتھ کام کرتے ہیں۔ فرض کریں ہمارے پاس دو متغیرات **A** اور **B** ہیں جہاں **A= 8** اور **B= 3**۔ **A** اور **B** پر حسابی آپریٹرز یوں استعمال ہو سکتے ہیں: || ټول حسابي operators له عددي ارزښتونو سره کار کوي. فرض کړئ دوه متغیرونه **A** او **B** لرو چې **A= 8** او **B= 3**. پر **A** او **B** حسابي operators داسې کارېدای شي:

@@ -1,0 +1,111 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s297-p288",
+  "title": "Figure 8.36 Creating a Delete query; Run; 8.5 Generating Reports",
+  "headingUrdu": "شکل ۸.۳۶ ڈیلیٹ کوئری بنانا؛ رن؛ ۸.۵ رپورٹس بنانا",
+  "headingPashto": "انځور ۸.۳۶ د Delete پوښتنې جوړول؛ چلول؛ ۸.۵ راپورونه جوړول",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 297,
+    "printedPage": "288"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s297-r1",
+      "en": "Run the query, using the Run button to delete the data in Student table that meets the criteria that is applied. The warning dialog box indicates the number of records that will be deleted, click Yes to accept.",
+      "ur": "کوئری کو رن بٹن کے ذریعے چلائیں تاکہ اسٹوڈنٹ ٹیبل میں وہ ڈیٹا حذف ہو جو لاگو کیے گئے معیار پر پورا اترے۔ تنبیہی ڈائیلاگ باکس حذف ہونے والے ریکارڈز کی تعداد بتاتا ہے، قبول کرنے کے لیے ہاں پر کلک کریں۔",
+      "ps": "پوښتنه د Run تڼۍ په کارولو چلوئ ترڅو په زده کوونکي جدول کې هغه ډېټا حذف شي چې پلي شوی معیار پوره کوي. د خبرتیا خبرې اترې بکس د هغو ثبتونو شمېر ښيي چې حذفېږي، د منلو لپاره Yes کلیک کړئ.",
+      "listGroup": "dr"
+    },
+    {
+      "id": "cs11-s297-a",
+      "en": "Remember that the query will permanently delete records from the specified table(s), Therefore it is very important that the user has backed up the table(s) or database before running this object.",
+      "ur": "یاد رکھیں کہ کوئری متعین ٹیبل(ز) کے ریکارڈز کو مستقل طور پر حذف کر دے گی، اس لیے یہ بہت اہم ہے کہ صارف نے اس آبجیکٹ کو چلانے سے پہلے ٹیبل(ز) یا ڈیٹا بیس کا بیک اپ لے رکھا ہو۔",
+      "ps": "په یاد ولرئ چې پوښتنه به ټاکل شوي جدول(ونو) ثبتونه په دایمي توګه حذف کړي، نو ډیر مهم دی چې کاروونکي د دې څیز د چلولو مخکې جدول(ونه) یا ډېټابېس بیک اپ کړی وي."
+    },
+    {
+      "id": "cs11-s297-c1",
+      "en": "Check the Delete Query Results by running the Student table.",
+      "ur": "اسٹوڈنٹ ٹیبل چلا کر ڈیلیٹ کوئری کے نتائج کی جانچ کریں۔",
+      "ps": "د Student جدول په چلولو سره د Delete پوښتنې پایلې وکتئ.",
+      "listGroup": "dc"
+    },
+    {
+      "id": "cs11-s297-c2",
+      "en": "Close the query, saving if required",
+      "ur": "کوئری بند کریں، ضرورت ہو تو محفوظ کریں",
+      "ps": "پوښتنه وتړئ، که اړتیا وي وساتئ",
+      "listGroup": "dc"
+    },
+    {
+      "id": "cs11-s297-h1",
+      "en": "8.5 GENERATING REPORTS",
+      "ur": "۸.۵ رپورٹس بنانا",
+      "ps": "۸.۵ راپورونه جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s297-b",
+      "en": "A report is an Access object. It is used to display data in an organized manner so that users can print it. A report is an effective way to present data using an attractive layout.",
+      "ur": "رپورٹ ایکسیس کا آبجیکٹ ہے۔ یہ ڈیٹا کو منظم انداز میں دکھانے کے لیے استعمال ہوتی ہے تاکہ صارفین اسے پرنٹ کر سکیں۔ رپورٹ پرکشش ترتیب کے ساتھ ڈیٹا پیش کرنے کا مؤثر طریقہ ہے۔",
+      "ps": "راپور یو د Access څیز دی. دا د ډېټا په منظم ډول د ښودلو لپاره کارول کېږي ترڅو کاروونکي یې چاپ کړي. راپور د زړه راښکونکي ترتیب په کارولو سره د ډېټا د وړاندې کولو یوه اغېزمنه لار ده."
+    }
+  ],
+  "flow": [
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s297-r1",
+        "cs11-s297-a",
+        "cs11-s297-c1",
+        "cs11-s297-c2",
+        "cs11-s297-h1",
+        "cs11-s297-b"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 445 225\" role=\"img\" aria-label=\"Delete query design with the Student table fields Roll No, St Name, Class and Section and the Delete row showing Where\" style=\"width:100%;max-width:445px;height:auto;background:#fff\"><rect x=\"5\" y=\"5\" width=\"435\" height=\"215\" fill=\"#f4f7fb\" stroke=\"#555\"/><rect x=\"5\" y=\"5\" width=\"435\" height=\"16\" fill=\"#cfd9ea\" stroke=\"#555\"/><text x=\"222.5\" y=\"17\" font-size=\"8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Database (Access 2007) — Microsoft Access</text><circle cx=\"22\" cy=\"35\" r=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><text x=\"45\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Home</text><text x=\"113\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Create</text><text x=\"181\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">External Data</text><text x=\"249\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Database Tools</text><text x=\"317\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Design</text><rect x=\"10\" y=\"46\" width=\"420\" height=\"36\" fill=\"#e8eef8\" stroke=\"#aaa\"/><rect x=\"10\" y=\"95\" width=\"100\" height=\"115\" fill=\"#fff\" stroke=\"#888\"/><text x=\"15\" y=\"108\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">All Tables</text><text x=\"15\" y=\"122\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"25\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Table</text><text x=\"25\" y=\"144\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Query1</text><text x=\"25\" y=\"155\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student1</text><text x=\"25\" y=\"166\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student Data entry form</text><text x=\"15\" y=\"177\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam</text><text x=\"25\" y=\"188\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Exam : Table</text><rect x=\"125\" y=\"95\" width=\"80\" height=\"60\" fill=\"#fff\" stroke=\"#555\"/><text x=\"130\" y=\"106\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"135\" y=\"118\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Roll No</text><text x=\"135\" y=\"129\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">St Name</text><text x=\"135\" y=\"140\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Class</text><text x=\"135\" y=\"151\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Section</text><rect x=\"115\" y=\"170\" width=\"315\" height=\"40\" fill=\"#fff\" stroke=\"#555\"/><text x=\"120\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Field:</text><text x=\"120\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Table:</text><text x=\"120\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Delete:</text><text x=\"120\" y=\"209\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Criteria:</text><text x=\"165\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Roll No</text><text x=\"165\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"165\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Where</text><text x=\"230\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">St Name</text><text x=\"230\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"230\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Where</text><text x=\"295\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Class</text><text x=\"295\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"295\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Where</text><text x=\"360\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Section</text><text x=\"360\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"360\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Where</text></svg>",
+      "id": "cs11-s297-fig1",
+      "caption": "Figure 8.36 Creating a Delete query",
+      "captionUrdu": "شکل ۸.۳۶ ڈیلیٹ کوئری بنانا",
+      "captionPashto": "انځور ۸.۳۶ د Delete پوښتنې جوړول",
+      "labels": [
+        {
+          "en": "Field",
+          "ur": "فیلڈ",
+          "ps": "ساحه"
+        },
+        {
+          "en": "Table",
+          "ur": "ٹیبل",
+          "ps": "جدول"
+        },
+        {
+          "en": "Delete",
+          "ur": "ڈیلیٹ",
+          "ps": "حذف"
+        },
+        {
+          "en": "Criteria",
+          "ur": "معیار",
+          "ps": "معیار"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 288: Figure 8.36 Creating a Delete query (a screenshot of the query design with the Student table and the grid with the Delete row showing Where; redrawn as simplified coded SVG, the small text is illegible), the step on running the query (a small red exclamation mark icon is printed in the sentence and is not reproduced), the warning paragraph and two final steps, and the banner “8.5 GENERATING REPORTS” with its paragraph. The words Run button, Student table, Yes and report are printed in bold. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:11:32.449889+00:00",
+    "scope": "Scan 297 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

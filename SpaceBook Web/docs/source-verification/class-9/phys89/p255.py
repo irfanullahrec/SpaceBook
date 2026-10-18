@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Unit 9 exercise MCQs (printed 5-8, continued) / conceptual questions 1-10'
+from p254 import M as M1, ORIGIN, L
+SA = 'SpaceBook answer (no answer is printed in the textbook)'
+M2 = [
+    ('The mode of transfer of heat which does not require material medium is called', 'حرارت کی منتقلی کا وہ طریقہ جسے مادی واسطے کی ضرورت نہیں کہلاتا ہے', 'د تودوخې د لېږد هغه لار چې مادي واسطې ته اړتیا نه لري بلل کېږي', ['convection', 'conduction', 'radiation', 'none'], 2, 'Radiation needs no material medium (p.243).'),
+    ('Which of the following has the highest thermal conductivity', 'ان میں سے کس کی حرارتی ایصالیت سب سے زیادہ ہے', 'له دې څخه د کوم تودوخیز هدایت تر ټولو لوړ دی', ['water', 'wood', 'wool', 'air'], 0, 'Water 0.6, wood 0.08-0.16, wool 0.04, air 0.023 J m⁻¹ K⁻¹ s⁻¹ (Table 9.1).'),
+    ('The temperature at which a body is not radiating any heat is', 'وہ درجۂ حرارت جس پر جسم کوئی حرارت خارج نہیں کرتا', 'هغه تودوخه چې جسم پکې هېڅ تودوخه نه خپروي', ['0 °C', '0 °F', '0 K', 'all of these'], 2, 'Every object radiates unless it is at absolute zero, 0 K (p.244).'),
+    ('The electrons that are free to move through the metal called', 'وہ الیکٹران جو دھات میں آزادانہ حرکت کرتے ہیں کہلاتے ہیں', 'هغه الکترونونه چې په فلز کې ازاد حرکت کوي بلل کېږي', ['lose electrons', 'free electrons', 'conduction electrons', 'holes'], 1, 'Free electrons (p.235).'),
+]
+CQ = [
+    ('Why white clothes are preferred wearing in summer? Explain briefly.', 'گرمیوں میں سفید کپڑے پہننا کیوں بہتر ہے؟ مختصراً بیان کریں۔', 'په اوړي کې سپینې جامې اغوستل ولې غوره دي؟ لنډ یې تشریح کړئ.', 'White reflects most of the radiation falling on it and absorbs little, so the body stays cooler (p.244).'),
+    ('Why is the freezer compartment kept at the top of a refrigerator? Explain briefly.', 'ریفریجریٹر میں فریزر کا خانہ اوپر کیوں ہوتا ہے؟', 'د یخچال فریزر خونه ولې په سر کې وي؟', 'Air cooled by the freezer becomes denser and sinks, while warmer air rises to be cooled; this sets up convection currents that cool all the food (p.242).'),
+    ('A black car standing in the sun warms up more quickly than any other. Why?', 'دھوپ میں کھڑی سیاہ گاڑی دوسری گاڑیوں سے جلد کیوں گرم ہوتی ہے؟', 'په لمر کې ولاړ تور موټر ولې تر نورو ژر تودېږي؟', 'Black is the best absorber of radiation, so it absorbs more of the sun’s radiant energy (p.244).'),
+    ('Why a tile floor feels colder to bare feet than a carpeted floor?', 'ٹائل کا فرش ننگے پاؤں کو قالین والے فرش سے زیادہ ٹھنڈا کیوں لگتا ہے؟', 'د ټایل فرش پښو ته تر غالۍ ولې ډېر سوړ ښکاري؟', 'Both are at the same temperature, but tile is a better conductor and carries heat away from the feet quickly; carpet traps air and conducts poorly.'),
+    ('How woolen sweaters keep us warmer in winter?', 'اونی سویٹر سردیوں میں ہمیں کیسے گرم رکھتے ہیں؟', 'وړین سویټرونه په ژمي کې موږ څنګه تاوده ساتي؟', 'Wool has fine pores filled with air; wool and air are bad conductors, so body heat is not conducted away (p.237).'),
+    ('In certain places, birds can fly for hours without flapping their wings. Explain.', 'بعض جگہوں پر پرندے پر ہلائے بغیر گھنٹوں اڑ سکتے ہیں۔ وضاحت کریں۔', 'په ځینو ځایونو کې مرغان پرته له وزرو وهلو ساعتونه الوتلای شي. تشریح یې کړئ.', 'They ride on thermals — rising convection currents of hot air (p.241).'),
+    ("Good-quality thermos bottle is double-walled and evacuated between these walls, and the internal surfaces are like mirrors with a silver coating. How does this configuration combat heat loss from all three transfer methods and keep the bottle's contents your coffee hot?", 'اچھی تھرموس بوتل دوہری دیوار والی ہوتی ہے جس کی دیواروں کے درمیان خلا اور اندرونی سطحیں چاندی کی آئینہ نما ہوتی ہیں۔ یہ ترتیب تینوں طریقوں سے حرارت کا ضیاع کیسے روکتی اور کافی کو گرم رکھتی ہے؟', 'ښه ترموس بوتل دوه دېواله وي چې د دېوالونو ترمنځ خلا او دننه سطحې د سپین زر هندارې ډوله وي. دا جوړښت څنګه له دریو لارو د تودوخې ضایع مخنیسي او قهوه توده ساتي؟', 'The vacuum stops conduction and convection between the walls, glass is a poor conductor, and the silvered surfaces reflect radiant heat back (p.246).'),
+    ('A piece of wood lying in the Sun absorbs more heat than a piece of shiny metal. Yet the metal feels hotter than the wood when you pick it up. Explain.', 'دھوپ میں پڑی لکڑی چمکدار دھات سے زیادہ حرارت جذب کرتی ہے پھر بھی اٹھانے پر دھات زیادہ گرم لگتی ہے۔ وضاحت کریں۔', 'په لمر کې پروت لرګی تر ځلېدونکي فلز ډېره تودوخه جذبوي خو بیا هم د پورته کولو پر مهال فلز ګرم ښکاري. تشریح یې کړئ.', 'Metal is a good conductor and transfers its heat to the hand quickly; wood is a poor conductor, so little heat flows into the hand.'),
+    ('Some pot handles remain cool during cooking while others become unpleasantly hot. What determines which handles remain cool and which become hot?', 'پکاتے وقت کچھ برتنوں کے دستے ٹھنڈے رہتے ہیں اور کچھ بہت گرم ہو جاتے ہیں۔ یہ کس بات سے طے ہوتا ہے؟', 'د پخلي پر مهال د ځینو لوښو لاستي سړه پاتې کېږي او ځینې ډېر ګرم کېږي. دا څه ټاکي؟', 'The material: handles of poor conductors (wood, plastic) stay cool; metal handles conduct heat from the pot and get hot (p.237).'),
+    ('When sunlight warms the land beside a cool body of water, a breeze begins to blow from the water towards the land. Explain.', 'جب دھوپ ٹھنڈے پانی کے پاس کی خشکی کو گرم کرتی ہے تو پانی سے خشکی کی طرف ہوا چلنے لگتی ہے۔ وضاحت کریں۔', 'کله چې لمر د سړو اوبو څنګ ته وچه تودوي، له اوبو وچې ته باد لګېږي. تشریح یې کړئ.', 'Land heats faster than water; hot air over the land rises and cooler air from over the water flows in to replace it — a sea breeze by convection (p.241).'),
+]
+MITEMS = []
+for i, (q, u, p, o, a, e) in enumerate(M2, 6):
+    opts = '   '.join(f'{L[k]}. {x}' for k, x in enumerate(o))
+    MITEMS.append(('p', f'{i} (printed {i - 1}). {q}  {opts}', f'{i} (کتاب میں {i - 1}). {u}  {opts}', f'{i} (په کتاب کې {i - 1}). {p}  {opts}'))
+MITEMS.append(('p', 'Editorial note: the printed numbering repeats "5" at the top of this page, so printed questions 5-8 here are SpaceBook questions 6-9.', 'ادارتی نوٹ: کتاب میں اس صفحے پر نمبر "5" دہرایا گیا ہے، اس لیے یہاں کے سوالات 5-8 اسپیس بک میں 6-9 ہیں۔', 'سمونیز یادښت: په کتاب کې د دې مخ پر سر "5" شمېره تکرار شوې، نو دلته پوښتنې 5-8 په سپېس بوک کې 6-9 دي.'))
+CITEMS = [('h', 'CONCEPTUAL QUESTIONS — Give a brief response to the following questions.', 'تصوراتی سوالات — درج ذیل سوالات کا مختصر جواب دیں۔', 'مفهومي پوښتنې — لاندې پوښتنو ته لنډ ځواب ورکړئ.')]
+CITEMS += [('p', f'{i}. {q}', f'{i}. {u}', f'{i}. {p}') for i, (q, u, p, a) in enumerate(CQ, 1)]
+SECTIONS = [('source-u9-exercise-mcqs', ('EXERCISE — MULTIPLE CHOICE QUESTIONS', 'مشق — کثیر الانتخابی سوالات', 'تمرین — څو ځوابیزې پوښتنې'), MITEMS),
+            ('source-u9-exercise-conceptual', ('CONCEPTUAL QUESTIONS', 'تصوراتی سوالات', 'مفهومي پوښتنې'), CITEMS)]
+ALL = [(q, u, p, o, a, e, 254) for q, u, p, o, a, e in M1] + [(q, u, p, o, a, e, 255) for q, u, p, o, a, e in M2]
+EXTRA = dict(textbookExercise=dict(
+    mcqs=[dict(num=i, q=q, urdu=u, pashto=p, opts=o, optsUrdu=o, optsPashto=o, ans=a, exp=f'SpaceBook answer: ({L[a]}) {o[a]}. {e}', answerOrigin=ORIGIN, answerProvidedInSource=False, sourcePdfPage=pg, sourcePrintedPage=pg - 5)
+          for i, (q, u, p, o, a, e, pg) in enumerate(ALL, 1)],
+    sq=[dict(num=i, q=q, urdu=u, pashto=p, ans=a, answerOrigin=SA, answerProvidedInSource=False) for i, (q, u, p, a) in enumerate(CQ, 1)]))

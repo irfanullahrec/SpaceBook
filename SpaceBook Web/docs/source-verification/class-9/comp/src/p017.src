@@ -1,0 +1,22 @@
+@printed 9
+@status lesson
+### 1.2.4 Algorithm for solving some problems || 1.2.4 چند مسائل حل کرنے کے الگورتھم || ۱.۲.۴ د ځینو ستونزو د حل الګوریتمونه
+### Problem 1 || مسئلہ 1 || ستونزه ۱
+p **To find the sum, product and average of five given numbers.** || **پانچ دیے گئے اعداد کا مجموعہ، حاصلِ ضرب اور اوسط معلوم کرنا۔** || **د پنځو ورکړل شویو عددونو مجموعه، حاصل ضرب او اوسط موندل.**
+p **Algorithm:** Given five numbers **n1, n2, n3, n4** and **n5**. This algorithm finds sum **SUM**, product **PRO** and average **AVG** of these numbers. || **الگورتھم:** پانچ اعداد **n1, n2, n3, n4** اور **n5** دیے گئے ہیں۔ یہ الگورتھم ان اعداد کا مجموعہ **SUM**، حاصلِ ضرب **PRO** اور اوسط **AVG** معلوم کرتا ہے۔ || **الګوریتم:** پنځه عددونه **n1, n2, n3, n4** او **n5** ورکړل شوي. دا الګوریتم د دې عددونو مجموعه **SUM**، حاصل ضرب **PRO** او اوسط **AVG** مومي.
+m Step 1. Read n1, n2, n3, n4, n5
+m Step 2. Set SUM =n1+n2+n3+n4+n5
+m Step 3. Set PRO =n1*n2*n3*n4*n5
+m Step 4. Set AVG =SUM/5
+m Step 5. Write SUM, PRO, AVG
+m Step 6. Exit
+### Problem 2 || مسئلہ 2 || ستونزه ۲
+p **To display the larger one out of the three given unequal numbers.** || **تین دیے گئے غیر مساوی اعداد میں سے بڑا عدد ظاہر کرنا۔** || **له دریو ورکړل شویو نابرابره عددونو څخه د لوی عدد ښودل.**
+p **Algorithm:** Given three unequal numbers **n1, n2** and **n3**. This algorithm finds the largest **LARG** number out of the three numbers. || **الگورتھم:** تین غیر مساوی اعداد **n1, n2** اور **n3** دیے گئے ہیں۔ یہ الگورتھم تینوں میں سے سب سے بڑا عدد **LARG** معلوم کرتا ہے۔ || **الګوریتم:** درې نابرابره عددونه **n1, n2** او **n3** ورکړل شوي. دا الګوریتم له دریو عددونو تر ټولو لوی عدد **LARG** مومي.
+m Step 1. Read n1, n2, n3
+m Step 2. If n1>n2 AND n1>n3 then Set LARG=n1
+m           Else if n2>n3 then Set LARG=n2
+m           Else Set LARG=n3
+m           [End of If structure]
+m Step 3. Write LARG
+m Step 4. Exit

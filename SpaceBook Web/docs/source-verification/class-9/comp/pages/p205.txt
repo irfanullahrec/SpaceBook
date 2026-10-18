@@ -1,0 +1,30 @@
+@pdf 193
+@printed 197
+@status lesson
+### Creating a Definition List || تعریفی فہرست بنانا || تعریفي لست جوړول
+p The HTML document in Figure 7.31 creates a definition list that defines local area and wide area networks. || شکل 7.31 کی HTML دستاویز ایک تعریفی فہرست بناتی ہے جو لوکل ایریا اور وائیڈ ایریا نیٹ ورکس کی تعریف کرتی ہے۔ || د ۷.۳۱ شکل HTML سند یو تعریفي لست جوړوي چې محلي او پراخې ساحې شبکې تعریفوي.
+p In this HTML document, the entire definition list is within the <dl></dl> tags. The two terms **Local Area Network** and **Wide Area Network** are enclosed within the <dt></dt> tags. || اس HTML دستاویز میں پوری تعریفی فہرست <dl></dl> ٹیگز کے اندر ہے۔ دونوں اصطلاحات **Local Area Network** اور **Wide Area Network** <dt></dt> ٹیگز میں بند ہیں۔ || په دې سند کې ټول تعریفي لست د <dl></dl> دننه دی. دوه اصطلاحګانې **Local Area Network** او **Wide Area Network** په <dt></dt> کې تړل شوې.
+m <html>
+m <head>
+m <title>Definition List</title>
+m </head>
+m <body>
+m <dl>
+m <dt><h4>Local Area Network</h4></dt>
+m <dd>Local Area  Network (LAN) is the most common type of<br>
+m network. It is a network that spans a limited physical area,<br>
+m usually ranging from a small office to a campus of buildings.<br>
+m A LAN uses high-speed wired or wireless connections <br>
+m between the computers.</dd>
+m <dt><h4>Wide Area Network</h4></dt>
+m <dd>When a network covers a larger area, making it impractical<br>
+m to wire computers together with high-speed communication lines,<br>
+m it becomes a Wide Area Network (WAN). A WAN spans a large<br>
+m physical area, connecting several sites of an organization across<br>
+m cities, countries and continents.</dd>
+m </dl>
+m </body>
+m </html>
+p (Figure 7.31: Creating a definition list of terms — "Definition List.html" in Notepad++.) || (شکل 7.31: اصطلاحات کی تعریفی فہرست بنانا۔) || (۷.۳۱ شکل: د اصطلاحاتو تعریفي لست جوړول.)
+p The explanation of the terms is written within the <dd></dd> tags in paragraphs. || اصطلاحات کی وضاحت <dd></dd> ٹیگز میں پیراگراف کی صورت میں لکھی گئی ہے۔ || د اصطلاحاتو تشریح د <dd></dd> دننه په پاراګرافونو کې لیکل شوې.
+p The browser window will display it as shown in Figure 7.32. || براؤزر ونڈو اسے شکل 7.32 کی طرح دکھائے گی۔ || براوزر به یې د ۷.۳۲ شکل په څېر ښيي.

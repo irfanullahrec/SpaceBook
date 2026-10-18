@@ -1,0 +1,21 @@
+@printed 200
+p or $P(A\cap B)=P(A)P(B|A)$ || یا $P(A\cap B)=P(A)P(B|A)$ || یا $P(A\cap B)=P(A)P(B|A)$
+endexample
+p This shows that the conditional probability can be used in expressing the probability of the intersection of a finite number of events and we have the following theorem known as the **multiplicative theorem**. || اس سے ظاہر ہوتا ہے کہ محدود تعداد میں واقعات کے اشتراک کا احتمال ظاہر کرنے کے لیے مشروط احتمال استعمال کیا جا سکتا ہے، اور ہمیں درج ذیل قضیہ حاصل ہوتا ہے جو **ضربی قضیہ** کہلاتا ہے۔ || دا ښيي چې مشروط احتمال د محدود شمېر پېښو د اشتراک د احتمال په څرګندولو کې کارول کېدای شي، او لاندې قضیه لرو چې د **ضربي قضیې** په نوم پېژندل کېږي.
+box theorem | Multiplicative theorem || ضربی قضیہ || ضربي قضیه
+p If A and B are any two events in a sample space S then || اگر A اور B نمونہ فضا S میں کوئی دو واقعات ہوں تو || که A او B د نمونې په S فضا کې هرې دوې پېښې وي، نو
+eq P(A\cap B)=P(A)P(B|A),\quad P(A)\ne0
+eq =P(B)P(A|B),\quad P(B)\ne0
+p The above theorem can be easily extended to a finite number of events. For example in case of three events A, B and C it becomes: || اوپر کے قضیے کو آسانی سے محدود تعداد کے واقعات تک بڑھایا جا سکتا ہے۔ مثلاً تین واقعات A، B اور C کی صورت میں یہ بنتا ہے: || پورته قضیه په اسانۍ د پېښو محدود شمېر ته غځېدای شي. د بېلګې په توګه د دریو A، B او C پېښو په حالت کې داسې کېږي:
+eq P(A\cap B\cap C)=P(A)P(B|A)P(C|A\cap B)
+endbox
+example 26 | An urn contains three red and seven green balls. A ball is drawn, not replaced and another is drawn. Find the following: (i) $P(\text{red and red})$ (ii) $P(\text{red and green})$. || ایک برتن میں تین سرخ اور سات سبز گیندیں ہیں۔ ایک گیند نکالی جاتی ہے، واپس نہیں رکھی جاتی اور دوسری نکالی جاتی ہے۔ درج ذیل معلوم کریں: (i) $P(\text{سرخ اور سرخ})$ (ii) $P(\text{سرخ اور سبز})$۔ || په یوه لوښي کې درې سره او اووه شنه توپونه دي. یو توپ ایستل کېږي، بېرته نه ایښودل کېږي او بل ایستل کېږي. لاندې پیدا کړئ: (i) $P(\text{سور او سور})$ (ii) $P(\text{سور او شین})$.
+p **Solution:** Total number of balls $=10$. || **حل:** گیندوں کی کل تعداد $=10$۔ || **حل:** د توپونو ټول شمېر $=10$.
+p (i) Let $A=\{\text{the 1st ball drawn is red}\}$ and $B=\{\text{the 2nd ball drawn is red}\}$. || (i) فرض کریں $A=\{\text{پہلی نکالی گئی گیند سرخ ہے}\}$ اور $B=\{\text{دوسری نکالی گئی گیند سرخ ہے}\}$۔ || (i) فرض کړئ $A=\{\text{لومړی ایستل شوی توپ سور دی}\}$ او $B=\{\text{دویم ایستل شوی توپ سور دی}\}$.
+p So using the multiplicative theorem, || لہٰذا ضربی قضیہ استعمال کرتے ہوئے، || نو د ضربي قضیې په کارولو،
+p $P(\text{red and red})=P(A\cap B)=P(A)P(B|A)$ || $P(\text{سرخ اور سرخ})=P(A\cap B)=P(A)P(B|A)$ || $P(\text{سور او سور})=P(A\cap B)=P(A)P(B|A)$
+p Substituting $P(A)=\dfrac3{10}$ and $P(B|A)=\dfrac29$ || $P(A)=\dfrac3{10}$ اور $P(B|A)=\dfrac29$ رکھنے سے || د $P(A)=\dfrac3{10}$ او $P(B|A)=\dfrac29$ په ایښودلو
+p We obtain, $P(\text{red and red})=\dfrac3{10}\cdot\dfrac29=\dfrac1{15}$. || حاصل ہوتا ہے، $P(\text{سرخ اور سرخ})=\dfrac3{10}\cdot\dfrac29=\dfrac1{15}$۔ || ترلاسه کوو، $P(\text{سور او سور})=\dfrac3{10}\cdot\dfrac29=\dfrac1{15}$.
+p (ii) Let $C=\{\text{the 1st ball drawn is red}\}$ and $D=\{\text{the 2nd ball drawn is green}\}$. || (ii) فرض کریں $C=\{\text{پہلی نکالی گئی گیند سرخ ہے}\}$ اور $D=\{\text{دوسری نکالی گئی گیند سبز ہے}\}$۔ || (ii) فرض کړئ $C=\{\text{لومړی ایستل شوی توپ سور دی}\}$ او $D=\{\text{دویم ایستل شوی توپ شین دی}\}$.
+p So using the multiplicative theorem again. || لہٰذا دوبارہ ضربی قضیہ استعمال کرتے ہوئے۔ || نو بیا د ضربي قضیې په کارولو.
+p $P(\text{red and green})=P(C\cap D)=P(C)P(D|C)$ || $P(\text{سرخ اور سبز})=P(C\cap D)=P(C)P(D|C)$ || $P(\text{سور او شین})=P(C\cap D)=P(C)P(D|C)$

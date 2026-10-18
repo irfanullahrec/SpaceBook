@@ -1,0 +1,137 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s164-p155",
+  "title": "Data link (end); Layer 3: Network Layer; Layer 4: Transport Layer — start",
+  "headingUrdu": "ڈیٹا لنک (اختتام)؛ تہہ ۳: نیٹ ورک لیئر؛ تہہ ۴: ٹرانسپورٹ لیئر — آغاز",
+  "headingPashto": "د ډېټا نښلونه (پای)؛ طبقه ۳: د شبکې طبقه؛ طبقه ۴: د لېږد طبقه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 164,
+    "printedPage": "155"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s164-d2",
+      "en": "Bit Ordering. The data link layer organizes the pattern of data bits into frames before transmission. The frame formatting issues such as stop and start bits, bit order, parity and other functions are also handled.",
+      "ur": "بٹ ترتیب۔ ڈیٹا لنک لیئر ترسیل سے پہلے ڈیٹا بٹس کے نمونے کو فریمز میں ترتیب دیتی ہے۔ فریم کی ترتیب کے مسائل جیسے اسٹاپ اور اسٹارٹ بٹس، بٹ ترتیب، پیریٹی اور دیگر افعال بھی سنبھالے جاتے ہیں۔",
+      "ps": "د بټ ترتیب. د ډېټا نښلونې طبقه د لېږد مخکې د ډېټا بټونو نمونه چوکاټونو ته ترتیبوي. د چوکاټ جوړښت مسایل لکه د درېدو او پیل بټونه، د بټ ترتیب، برابري او نورې دندې هم اداره کېږي.",
+      "listGroup": "l2b"
+    },
+    {
+      "id": "cs11-s164-h1",
+      "en": "Layer 3: NETWORK LAYER",
+      "ur": "تہہ ۳: نیٹ ورک لیئر",
+      "ps": "طبقه ۳: د شبکې طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s164-a",
+      "en": "This layer allows the data called packets or datagram to go from one physical network to another. This layer also has its own addressing scheme (network logical address) so that devices can communicate with other devices across multiple networks. Consequently, this layer is also responsible for path determination.",
+      "ur": "یہ تہہ پیکٹس یا ڈیٹا گرام کہلانے والے ڈیٹا کو ایک طبعی نیٹ ورک سے دوسرے میں جانے دیتی ہے۔ اس تہہ کی اپنی ایڈریسنگ اسکیم (نیٹ ورک منطقی ایڈریس) بھی ہے تاکہ آلات متعدد نیٹ ورکس کے پار دوسرے آلات سے رابطہ کر سکیں۔ نتیجتاً یہ تہہ راستے کے تعین کی بھی ذمہ دار ہے۔",
+      "ps": "دا طبقه هغه ډېټا چې کڅوړې یا ډېټا ګرام بلل کېږي له یوې فزیکي شبکې نه بلې ته تللو ته اجازه ورکوي. دا طبقه خپله د پتې کولو طرحه (د شبکې منطقي پته) هم لري ترڅو وسایل په څو شبکو کې له نورو وسایلو سره اړیکه ونیسي. په پایله کې دا طبقه د لارې ټاکلو مسؤله هم ده."
+    },
+    {
+      "id": "cs11-s164-b",
+      "en": "The network layer establishes the route between the sender and receiver across switching points, which are typically routers. The most ubiquitous example of this layer is the IP protocol in TCP/IP. It provides the following functions.",
+      "ur": "نیٹ ورک لیئر بھیجنے والے اور وصول کنندہ کے درمیان سوئچنگ پوائنٹس کے پار راستہ قائم کرتی ہے جو عموماً راؤٹرز ہوتے ہیں۔ اس تہہ کی سب سے عام مثال ٹی سی پی / آئی پی میں آئی پی پروٹوکول ہے۔ یہ درج ذیل افعال فراہم کرتی ہے۔",
+      "ps": "د شبکې طبقه د لېږونکي او ترلاسه کوونکي ترمنځ د سویچ کولو ټکو په اوږدو کې چې معمولاً روټرونه وي لار جوړوي. د دې طبقې تر ټولو عامه بېلګه په TCP/IP کې IP پروتوکول دی. دا لاندې دندې برابروي."
+    },
+    {
+      "id": "cs11-s164-n1",
+      "en": "Translates logical addresses, or names, into physical addresses.",
+      "ur": "منطقی ایڈریسز یا ناموں کو طبعی ایڈریسز میں ترجمہ کرتی ہے۔",
+      "ps": "منطقي پتې یا نومونه فزیکي پتو ته ژباړي.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-n2",
+      "en": "Management of connectivity and routing between hosts or networks.",
+      "ur": "ہوسٹس یا نیٹ ورکس کے درمیان کنیکٹیویٹی اور روٹنگ کا انتظام۔",
+      "ps": "د کوربه یا شبکو ترمنځ د نښلولو او لارښوونې مدیریت.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-n3",
+      "en": "Determines how data are transferred between network devices",
+      "ur": "طے کرتی ہے کہ نیٹ ورک آلات کے درمیان ڈیٹا کیسے منتقل ہو۔",
+      "ps": "ټاکي چې د شبکې وسایلو ترمنځ ډېټا څنګه لېږدول کېږي.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-n4",
+      "en": "Routes packets according to unique network device addresses",
+      "ur": "منفرد نیٹ ورک آلہ ایڈریسز کے مطابق پیکٹس کو راستہ دیتی ہے۔",
+      "ps": "کڅوړې د شبکې د وسیلې د ځانګړو پتو له مخې لارښوونه کوي.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-n5",
+      "en": "Provides flow and congestion control to prevent network resource depletion",
+      "ur": "نیٹ ورک وسائل کی کمی کو روکنے کے لیے بہاؤ اور ہجوم کنٹرول فراہم کرتی ہے۔",
+      "ps": "د شبکې د سرچینو د ختمېدو مخنیوي لپاره د جریان او ګڼې ګوڼې کنټرول برابروي.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-n6",
+      "en": "Responsible for addressing, determining routes for sending and managing network problems such as packet switching, data congestion and routines.",
+      "ur": "پتہ دینے، بھیجنے کے راستے طے کرنے اور نیٹ ورک مسائل جیسے پیکٹ سوئچنگ، ڈیٹا ہجوم اور معمولات کو سنبھالنے کی ذمہ دار ہے۔",
+      "ps": "د پتې کولو، د لېږلو لپاره د لارو ټاکلو او د شبکې ستونزو لکه د کڅوړو سویچ کول، د ډېټا ګڼه ګوڼه او معمولاتو اداره کولو مسؤله ده.",
+      "listGroup": "l3"
+    },
+    {
+      "id": "cs11-s164-h2",
+      "en": "Layer 4: TRANSPORT LAYER",
+      "ur": "تہہ ۴: ٹرانسپورٹ لیئر",
+      "ps": "طبقه ۴: د لېږد طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s164-c",
+      "en": "As its name implies, it handles the transparent transport of data segments between network devices. It is responsible for flow control, error control, data segmentation, and communication reliability.",
+      "ur": "جیسا کہ اس کے نام سے ظاہر ہے یہ نیٹ ورک آلات کے درمیان ڈیٹا سیگمنٹس کی شفاف ترسیل کو سنبھالتی ہے۔ یہ بہاؤ کنٹرول، غلطی کنٹرول، ڈیٹا کی تقسیم اور مواصلاتی قابلِ اعتمادیت کی ذمہ دار ہے۔",
+      "ps": "لکه څنګه چې نوم یې ښيي، دا د شبکې وسایلو ترمنځ د ډېټا برخو شفاف لېږد اداره کوي. دا د جریان کنټرول، د تېروتنې کنټرول، د ډېټا وېش او د اړیکو د باوري توب مسؤله ده."
+    },
+    {
+      "id": "cs11-s164-d",
+      "en": "The transport layer ensures that messages are delivered error-free, in sequence, and with no losses or duplications.",
+      "ur": "ٹرانسپورٹ لیئر یقینی بناتی ہے کہ پیغامات بغیر غلطی کے، ترتیب سے اور بغیر کسی نقصان یا تکرار کے پہنچائے جائیں۔",
+      "ps": "د لېږد طبقه ډاډ ترلاسه کوي چې پیغامونه پرته له تېروتنې، په ترتیب سره او پرته له کوم ضایع یا تکرار رسول کېږي."
+    },
+    {
+      "id": "cs11-s164-e",
+      "en": "The transport layer provides the following functions.",
+      "ur": "ٹرانسپورٹ لیئر درج ذیل افعال فراہم کرتی ہے۔",
+      "ps": "د لېږد طبقه لاندې دندې برابروي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s164-d2",
+        "cs11-s164-h1",
+        "cs11-s164-a",
+        "cs11-s164-b",
+        "cs11-s164-n1",
+        "cs11-s164-n2",
+        "cs11-s164-n3",
+        "cs11-s164-n4",
+        "cs11-s164-n5",
+        "cs11-s164-n6",
+        "cs11-s164-h2",
+        "cs11-s164-c",
+        "cs11-s164-d",
+        "cs11-s164-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 155: the second bullet of the data link layer (continuing from page 154), “Layer 3: NETWORK LAYER” with two paragraphs and six bullets, and “Layer 4: TRANSPORT LAYER” with three paragraphs (the list of its functions starts on the next page). Many handwritten notes at the margins and above the header are excluded. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:20:44.060106+00:00",
+    "scope": "Scan 164 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

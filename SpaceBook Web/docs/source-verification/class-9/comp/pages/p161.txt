@@ -1,0 +1,42 @@
+@printed 153
+@status lesson
+p The diagram below illustrates the correspondence between the Karnaugh map and the truth table for the general case of a two variable problem. || نیچے والا خاکہ دو متغیر والے مسئلے کی عمومی صورت کے لیے کارناف میپ اور ٹروتھ ٹیبل کی مطابقت دکھاتا ہے۔ || لاندې ډیاګرام د دوو متغیرونو د عمومي ستونزې لپاره د کارناف نقشې او truth table سمون ښيي.
+p The values inside the squares are copied from the output column of the truth table, therefore, there is one square in the map for every row in the truth table. Around the edge of the Karnaugh map are the values of the two input variables. A is along the top and B is down the left hand side. The diagram below explains this: || خانوں کے اندر کی قدریں ٹروتھ ٹیبل کے آؤٹ پٹ کالم سے نقل کی جاتی ہیں، اس لیے ٹروتھ ٹیبل کی ہر قطار کے لیے میپ میں ایک خانہ ہوتا ہے۔ کارناف میپ کے کناروں پر دو ان پٹ متغیرات کی قدریں ہوتی ہیں۔ A اوپر کی طرف اور B بائیں طرف نیچے ہوتا ہے۔ نیچے والا خاکہ اس کی وضاحت کرتا ہے: || د خانو دننه ارزښتونه د truth table له output ستنې کاپي کېږي، نو د truth table د هر قطار لپاره په نقشه کې یوه خانه وي. د کارناف نقشې پر څنډو د دوو input متغیرونو ارزښتونه وي. A پورته او B کیڼ اړخ ته ښکته وي. لاندې ډیاګرام دا تشریح کوي:
+svg Figure 6.12: Truth table and K-map diagram || شکل 6.12: ٹروتھ ٹیبل اور K-map کا خاکہ || ۶.۱۲ شکل: truth table او K-map ډیاګرام
+<svg viewBox="0 0 480 190" width="480" role="img" aria-label="Left: a truth table with columns A, B, F and rows 0 0 0, 0 1 1, 1 0 1 (marked with an arrow), 1 1 1, labelled Truth Table. Right: a 2-variable K-map with A (0,1) across the top and B (0,1) down the side; cells: B=0 row 0, 1 (marked with an arrow); B=1 row 1, 1; labelled F" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF612" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0e7490"/></marker></defs>
+<path d="M20 30 H170 M120 14 V150" stroke="#111827"/>
+<text x="40" y="24">A</text><text x="75" y="24">B</text><text x="145" y="24">F</text>
+<text x="40" y="52">0</text><text x="75" y="52">0</text><text x="145" y="52">0</text>
+<text x="40" y="80">0</text><text x="75" y="80">1</text><text x="145" y="80">1</text>
+<text x="40" y="108">1</text><text x="75" y="108">0</text><text x="145" y="108">1</text>
+<text x="40" y="136">1</text><text x="75" y="136">1</text><text x="145" y="136">1</text>
+<path d="M190 103 H160" stroke="#0e7490" marker-end="url(#arF612)"/>
+<text x="90" y="178">Truth Table</text>
+<path d="M280 10 L310 40" stroke="#111827"/><text x="300" y="18">A</text><text x="286" y="44">B</text>
+<text x="350" y="34">0</text><text x="420" y="34">1</text><text x="298" y="74">0</text><text x="298" y="134">1</text>
+<rect x="310" y="40" width="140" height="120" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M380 40 V160 M310 100 H450" stroke="#111827" stroke-width="2"/>
+<text x="345" y="76">0</text><text x="415" y="76">1</text><text x="345" y="136">1</text><text x="415" y="136">1</text>
+<path d="M478 70 H458" stroke="#0e7490" marker-end="url(#arF612)"/>
+<text x="380" y="182">F</text>
+</svg>
+endsvg
+p As an example, the square on the top right hand corner of the map in the above diagram has A=1 and B=0. This square corresponds to the row in the truth table where A=1, B=0 and F=1. Note that the value in the F column represents a particular function to which the Karnaugh map corresponds. || مثال کے طور پر اوپر والے خاکے میں میپ کے اوپری دائیں کونے والے خانے میں A=1 اور B=0 ہے۔ یہ خانہ ٹروتھ ٹیبل کی اس قطار کے مطابق ہے جہاں A=1، B=0 اور F=1 ہے۔ یاد رہے کہ F کالم کی قدر اس خاص فنکشن کو ظاہر کرتی ہے جس کے مطابق کارناف میپ ہے۔ || د بېلګې په توګه په پورتني ډیاګرام کې د نقشې پورتنۍ ښي کونج خانه A=1 او B=0 لري. دا خانه د truth table هغه قطار سره سمون لري چې A=1، B=0 او F=1 دي. پام وکړئ چې د F ستنې ارزښت هغه ځانګړی فنکشن ښيي چې کارناف نقشه ورسره سمون لري.
+### i. Karnaugh Maps - Rules of Simplification || i. کارناف میپس — اختصار کے قواعد || i. کارناف نقشې — د لنډولو قواعد
+p The Karnaugh map uses the following rules for the simplification of expressions by grouping together adjacent cells containing *ones*. || کارناف میپ *ایک (1)* والے ملحقہ خانوں کو گروپ کر کے اظہارات کو مختصر کرنے کے لیے درج ذیل قواعد استعمال کرتا ہے۔ || کارناف نقشه د *1* لرونکو څنګ په څنګ خانو په ډلبندۍ د افادو د لنډولو لپاره دا قواعد کاروي.
+- **Groups may not include any cell containing a zero** || **گروپس میں صفر والا کوئی خانہ شامل نہیں ہو سکتا** || **ډلې باید صفر لرونکې خانه ونه لري**
+svg Figure 6.13: Map for showing the group of 1s || شکل 6.13: 1s کا گروپ دکھانے والا میپ || ۶.۱۳ شکل: د 1s ډله ښوونکې نقشه
+<svg viewBox="0 0 480 170" width="480" role="img" aria-label="Two K-maps. Left, marked WRONG: a group drawn round the A=0 column containing 0 (top) and 1 (bottom). Right, marked RIGHT: cells 0 at top-left, and a group round the bottom row containing 1 and 1" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<g id="km613">
+<path d="M20 6 L50 36" stroke="#111827"/><text x="40" y="14">A</text><text x="26" y="40">B</text>
+<text x="85" y="30">0</text><text x="155" y="30">1</text><text x="38" y="66">0</text><text x="38" y="116">1</text>
+<rect x="50" y="36" width="140" height="100" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M120 36 V136 M50 86 H190" stroke="#111827" stroke-width="2"/></g>
+<text x="85" y="68">0</text><text x="85" y="118">1</text>
+<rect x="68" y="44" width="34" height="84" rx="12" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="216" y="100" font-size="30">✗</text><text x="120" y="160" font-family="Arial">WRONG ✗</text>
+<use href="#km613" x="250"/>
+<text x="335" y="68">0</text><text x="335" y="118">1</text><text x="405" y="118">1</text>
+<rect x="308" y="98" width="124" height="32" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="462" y="100" font-size="30">✓</text><text x="370" y="160" font-family="Arial">RIGHT ✓</text>
+</svg>
+endsvg

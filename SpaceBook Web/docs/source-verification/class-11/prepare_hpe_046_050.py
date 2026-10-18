@@ -1,0 +1,92 @@
+from hpehelp import *
+def P(s,rows,pre='p'):
+    for (ur,en,ps,*m) in rows: add(s,f'{pre}{len(s["paras"])+1}',en,ur,ps,**(m[0] if m else {}))
+def H(s,ur,en,ps): add(s,f'h{len(s["paras"])+1}',en,ur,ps,kind='heading')
+GAP=lambda t:dict(sourceGap=dict(note=t))
+NOTE=' English and Pashto are our translations (need native review); watermark and footer strip excluded.'
+def L(items,g):
+    return [(a,b,c,dict(listGroup=g)) for a,b,c in items]
+# scan 46 = printed 44
+s=page(46,'u05','44','Volleyball boosting: exercise, activity, performance; netball (start)','والی بال بوسٹنگ: ورزش، سرگرمی، کارکردگی؛ نیٹ بال','د والیبال بوسټنګ: تمرین، فعالیت، کارکردګي؛ نیټبال','volley-3')
+F=Flow(s)
+H(s,'ورزش (Exercise):','Exercise:','تمرین (Exercise):')
+P(s,[('بوسٹنگ اور بال کو پاس کرنے کے لیے مندرجہ ذیل جسمانی اعضاء کی ورزشیں کریں۔','For boosting and passing the ball, do the exercises of the following parts of the body.','د بوسټنګ او توپ پاس کولو لپاره د لاندې بدني غړو تمرینونه وکړئ.')]+L([('i۔ دونوں بازوؤں کو ملا کر گھمانا۔','i. Joining both arms and rotating them.','i. دواړه لاسونه یو ځای کولو سره ګرځول.'),('ii۔ جسم کو آدھے دائرے میں گھمانا۔','ii. Turning the body in a half circle.','ii. بدن په نیمه دایره کې ګرځول.'),('iii۔ گھٹنوں پر توازن کو قائم رکھنا۔','iii. Keeping balance on the knees.','iii. په زنګنونو توازن ساتل.'),('iv۔ گھٹنے پیٹ کی جانب کھینچنا۔','iv. Drawing the knees towards the stomach.','iv. زنګنونه د ګېډې لوري ته کاږل.'),('v۔ دائیں اور بائیں مڑنا۔','v. Turning right and left.','v. ښي او کیڼ اړول.')],'ex'))
+H(s,'سرگرمی (Activity):','Activity:','فعالیت (Activity):')
+P(s,[('5-5 کھلاڑیوں کی دو ٹیمیں 16 x 8 میٹر کے مستطیل کورٹ میں نیٹ کے دونوں طرف کھڑی ہو جائیں اور بار بار پاسنگ اور بوسٹنگ کی پریکٹس کریں۔ یہ سرگرمی 10 منٹ تک جاری رکھیں۔ اس سے کھلاڑیوں میں پاسنگ اور بوسٹنگ کی کارکردگی بہتر ہوگی۔','Two teams of 5 players each should stand on both sides of the net in a rectangular court of 16 x 8 metres and practise passing and boosting repeatedly. Continue this activity for 10 minutes. Through this the performance of passing and boosting will improve in the players.','د ۵–۵ لوبغاړو دوه ټیمونه په ۱۶ x ۸ مترو مستطیل کورټ کې د جال دواړو خواوو ته ودرېږي او تکراري پاسنګ او بوسټنګ تمرین وکړي. دا فعالیت ۱۰ دقیقې دوام ورکړئ. له دې نه په لوبغاړو کې د پاسنګ او بوسټنګ کارکردګي ښه کېږي.')])
+H(s,'کارکردگی (Performance):','Performance:','کارکردګي (Performance):')
+P(s,[('اس سرگرمی میں حصہ لینے کے بعد کھلاڑیوں میں پاسنگ اور بوسٹنگ کی ٹائمنگ بہتر ہوگی۔ اس سرگرمی کے ذریعے کھلاڑیوں میں جذبہ تعاون بڑھے گا۔ کھلاڑیوں میں خود اعتمادی بڑھے گی۔','After taking part in this activity the timing of passing and boosting will improve in the players. Through this activity the spirit of cooperation will increase in the players. Self-confidence will increase in the players.','پدې فعالیت کې د ګډون وروسته په لوبغاړو کې د پاسنګ او بوسټنګ ټایمنګ ښه کېږي. د دې فعالیت په مټ په لوبغاړو کې د همکارۍ جذبه زیاتېږي. په لوبغاړو کې ځان باور زیاتېږي.')])
+H(s,'نیٹ بال (Net Ball)','Netball (Net Ball)','نیټبال (Net Ball)')
+P(s,[('نیٹ بال میں بال کو پاس کرنے کی مہارت کو بڑھانے اور بائیو مکینیکل اصولوں کے مطابق جسم کے حرکات پر کنٹرول کرنے کا عملی مظاہرہ کریں۔','In netball, demonstrate practically increasing the skill of passing the ball and controlling the body’s movements according to biomechanical principles.','په نیټبال کې د توپ پاس کولو مهارت زیاتولو او د بایومیکانیکي اصولو سره سم د بدن حرکتونو کنټرولولو عملي ښودنه وکړئ.')])
+F.done()
+s['sourceNote']='Printed page 44: exercise, activity and performance for volleyball boosting; the netball introduction. The lower part of the page is blank.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 47 = printed 45 (page number is clipped at the foot)
+s=page(47,'u05','45','Netball: skill of passing the ball; exercise and activity','نیٹ بال: بال کو پاس کرنے کی مہارت؛ ورزش اور سرگرمی','نیټبال: توپ پاس کولو مهارت؛ تمرین او فعالیت','netball-1')
+F=Flow(s)
+H(s,'بال کو پاس کرنے کی مہارت (Boosting Skill)','Skill of Passing the Ball (Boosting Skill)','د توپ پاس کولو مهارت (Boosting Skill)')
+P(s,[('نیٹ بال میں چونکہ ایک دوسرے کو پاس کرنا ہوتا ہے۔ اس لیے گیند کو پاس کرتے وقت اپنے ساتھی کھلاڑی کے فاصلے اور کورٹ میں کھڑے ہونے کی پوزیشن کے ساتھ مخالف کھلاڑی کے پوزیشن کو بھی دیکھنا چاہیے۔ پھر گیند کو اس رفتار اور ٹائم پیریڈ کے ساتھ پاس کرنے کی کوشش کرنی چاہیے تاکہ پاس کیا ہوا گیند اپنے ٹارگٹ تک صحیح پہنچے۔ مندرجہ بالا سرگرمی میں قوت اور حرکت کے اصول کار فرما ہیں۔','Since in netball one has to pass to one another, while passing the ball one should look at the distance of one’s fellow player and his standing position in the court, as well as the position of the opposing player. Then the ball should be tried to be passed with that speed and time period so that the passed ball reaches its target correctly. In the above activity the principles of force and motion are at work.','څرنګه چې په نیټبال کې یو بل ته پاس کول وي. له دې امله توپ پاس کولو په وخت کې د خپل ملګري لوبغاړي واټن او په کورټ کې د ولاړېدو موقعیت سره د مخالف لوبغاړي موقعیت ته هم کتل پکار دي. بیا توپ په هغه ګړندیتوب او وخت سره پاس کولو هڅه باید وشي ترڅو پاس شوی توپ خپل هدف ته سم ورسېږي. په پورتني فعالیت کې د ځواک او حرکت اصول چلېږي.')])
+H(s,'ورزش (Exercise):','Exercise:','تمرین (Exercise):')
+P(s,[('اس مہارت کو بہتر بنانے کے لیے سرگرمی سے پہلے کھلاڑیوں کو بازوؤں اور پاؤں کی ورزش کروائے تاکہ کھلاڑی اپنے بازوؤں اور پاؤں کو مختلف زاویہ پر حرکت دے سکے۔ مندرجہ ذیل ورزشیں کریں۔','To improve this skill, before the activity have the players exercise their arms and feet so that the player can move his arms and feet at different angles. Do the following exercises.','دا مهارت ښه کولو لپاره له فعالیت نه مخکې لوبغاړي د لاسونو او پښو تمرین ورکړئ ترڅو لوبغاړی خپل لاسونه او پښې په بېلابېلو زاویو حرکت ورکړای شي. لاندې تمرینونه وکړئ.')]+L([('i۔ بازوؤں کو پہلو کی طرف لے جانا۔','i. Taking the arms to the sides.','i. لاسونه څنګونو لوري ته وړل.'),('ii۔ بازوؤں کو اوپر نیچے اور آگے پیچھے جھلانا۔','ii. Swinging the arms up and down and forward and backward.','ii. لاسونه پورته ښکته او مخکې شاته ورغړول.'),('iii۔ باری باری گھٹنوں کو اوپر اٹھانا۔','iii. Raising the knees by turns.','iii. په نوبت زنګنونه پورته کول.'),('iv۔ کھڑے کھڑے جمپ کرنا۔','iv. Jumping while standing.','iv. ولاړ ولاړ ټوپ وهل.'),('v۔ ایک پاؤں پر باری باری توازن کو برقرار رکھنا۔','v. Maintaining balance on one foot by turns.','v. په یوه پښه په نوبت توازن ساتل.')],'ex'))
+H(s,'سرگرمی (Activity):','Activity:','فعالیت (Activity):')
+P(s,[('4، 4 طلباء کے دو گروپ 5 x 10 میٹر کے مستطیل کورٹ میں زون بنا کر کھڑے ہو جائیں۔ پھر ایک گیند لے کر اس سے زونل پاسنگ کریں 5 ، 5 منٹ کا ٹائم لے کر حملہ آور اور دفاعی کھلاڑیوں میں تقسیم ہو جائیں۔ دونوں ٹیمیں 10 منٹ تک یہ سرگرمی کریں۔','Two groups of 4, 4 students should stand in zones in a rectangular court of 5 x 10 metres. Then taking one ball do zonal passing with it; taking a time of 5, 5 minutes, divide into attacking and defending players. Both teams should do this activity for 10 minutes.','د ۴، ۴ زده‌کوونکو دوه ډلې په ۵ x ۱۰ مترو مستطیل کورټ کې زون جوړولو سره ودرېږي. بیا یو توپ اخیستو سره له هغه زونل پاسنګ وکړئ ۵، ۵ دقیقو وخت اخیستو سره برید کوونکو او دفاعي لوبغاړو ویشل شئ. دواړه ټیمونه ۱۰ دقیقې دا فعالیت وکړي.',GAP('The page number “45” is partly cut off at the foot of the scan.'))])
+F.done()
+s['sourceNote']='Printed page 45: netball skill of passing the ball (boosting skill), exercises i–v and the activity.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 48 = printed 46
+s=page(48,'u05','46','Netball: performance; gripping skill; exercise (start)','نیٹ بال: کارکردگی؛ بال کو پکڑنے کی مہارت؛ ورزش','نیټبال: کارکردګي؛ توپ نیولو مهارت؛ تمرین','netball-2')
+F=Flow(s)
+H(s,'کارکردگی (Performance):','Performance:','کارکردګي (Performance):')
+P(s,[('اس سرگرمی سے کھلاڑیوں میں پاس کرنے اور بال پکڑنے میں بہتری آئے گی۔ اس کے ساتھ ساتھ:','Through this activity improvement will come in the players in passing and catching the ball. Along with this:','له دې فعالیت نه په لوبغاړو کې په پاس کولو او توپ نیولو کې ښه والی راځي. د دې سره سره:')]+L([('جسم پر کنٹرول بہتر ہوگا۔','control over the body will be better.','پر بدن کنټرول به ښه وي.'),('پاس کرنے اور بال پکڑنے کے لیے کھلاڑی اپنے بازوؤں کو صحیح زاویہ پر رکھیں گے۔','to pass and catch the ball the players will keep their arms at the right angle.','د پاس کولو او توپ نیولو لپاره لوبغاړي خپل لاسونه په سم زاویه ساتي.'),('کھلاڑیوں کے اندر جذبہ تعاون پیدا ہوگا۔','the spirit of cooperation will arise in the players.','په لوبغاړو کې د همکارۍ جذبه پیدا کېږي.'),('کھلاڑیوں میں خود اعتمادی بڑھے گی۔','self-confidence will increase in the players.','په لوبغاړو کې ځان باور زیاتېږي.')],'pf'))
+H(s,'بال کو پکڑنے کی مہارت (Gripping skill):','Skill of Catching the Ball (Gripping skill):','د توپ نیولو مهارت (Gripping skill):')
+P(s,[('نیٹ بال میں آتے ہوئے بال کو پکڑنے کے لیے تین باتوں کا خیال رکھنا پڑتا ہے۔','In netball, to catch an incoming ball three things have to be kept in mind.','په نیټبال کې راتلونکی توپ نیولو لپاره درې خبرو ته پام ساتل پکار دي.')]+L([('i۔ گیند کی رفتار','i. The speed of the ball','i. د توپ ګړندیتوب'),('ii۔ گیند کس سمت سے آ رہا ہے۔','ii. From which direction the ball is coming.','ii. توپ د کوم لوري راځي.'),('iii۔ گیند زمین سے کس سطح پر آ رہا ہے۔','iii. At what level above the ground the ball is coming.','iii. توپ له ځمکې په کومه سطحه راځي.')],'gr')+[('ان تینوں باتوں کو مدنظر رکھتے ہوئے کھلاڑی اپنی جسم کے بیلنس کو قائم بھی کر سکتا ہے اور بال پر ان کا کنٹرول بھی بہتر ہو سکتا ہے۔ اس سرگرمی میں قوت کے انجذاب کا اصول کار فرما ہے۔','Keeping these three things in view the player can maintain the balance of his body and his control over the ball can also be better. In this activity the principle of absorption of force is at work.','دغو دریو خبرو په پام کې نیولو سره لوبغاړی خپل د بدن توازن ټینګولای هم شي او پر توپ یې کنټرول هم ښه کېدای شي. پدې فعالیت کې د ځواک د جذب اصول چلېږي.')])
+H(s,'ورزش (Exercise):','Exercise:','تمرین (Exercise):')
+P(s,[('اس مہارت کو بہتر بنانے کے لیے سرگرمی سے پہلے مندرجہ ذیل ورزشیں کریں۔','To improve this skill, before the activity do the following exercises.','دا مهارت ښه کولو لپاره له فعالیت نه مخکې لاندې تمرینونه وکړئ.')]+L([('i۔ دونوں بازوؤں کو ملا کر سامنے کی طرف گھمانا۔','i. Joining both arms and rotating them to the front.','i. دواړه لاسونه یو ځای کولو سره مخې لوري ته ګرځول.'),('ii۔ دائیں اور بائیں جسم کو موڑنا۔','ii. Twisting the body right and left.','ii. ښي او کیڼ بدن اړول.'),('iii۔ بازوؤں کو چھاتی کی طرف لانا اور باہر لے جانا۔','iii. Bringing the arms towards the chest and taking them out.','iii. لاسونه سینې لوري ته راوړل او بهر وړل.')],'ex')+[('(سلسلہ اگلے صفحے پر)','(continued on the next page)','(لړۍ په بله پاڼه کې)',dict(sourceGap=dict(note='The list of exercises continues on the next page (printed page 47: iv–v).')))])
+F.done()
+s['sourceNote']='Printed page 46: performance, skill of catching the ball (three factors) and the exercises i–iii (continued on the next page). The page number “46” is printed in a hexagon at the foot.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 49 = printed 47
+s=page(49,'u05','47','Netball (end); gymnastics: balance exercises and activities','نیٹ بال (اختتام)؛ جمناسٹک: توازن کی ورزشیں اور سرگرمیاں','نیټبال (پای)؛ جمناسټیک: د توازن تمرینونه او فعالیتونه','gym-1')
+F=Flow(s)
+P(s,[('iv۔ ایک سیدھی لائن پر چلنا۔','iv. Walking on a straight line.','iv. په یوه سیده کرښه تګ.',dict(listGroup='ex',sourceGap=dict(note='Continues the exercise list from the foot of printed page 46.'))),
+('v۔ پنجوں اور ایڑیوں پر باری باری کھڑے ہونا۔','v. Standing by turns on the toes and heels.','v. په ګوتو او پښو په نوبت ولاړ کېدل.',dict(listGroup='ex'))])
+H(s,'سرگرمی (Activity):','Activity:','فعالیت (Activity):')
+P(s,[('اس سرگرمی میں 5 کھلاڑیوں کا گروپ حصہ لیتا ہے۔ اس کے لیے 6x6 میٹر مربع کورٹ کی ضرورت ہوتی ہے۔ اس سرگرمی میں ایک کھلاڑی کورٹ کے اندر ہوتا ہے اور باقی چار کورٹ کے اطراف پر موجود ہوتے ہیں۔ اس سرگرمی کو ایک گیند سے شروع کرتے ہیں۔ اس سرگرمی میں 4 کھلاڑی سنٹر والے کو پاس کریں اور سنٹر والا کھلاڑی گیند پکڑے۔ یہ سرگرمی 10 سے 15 منٹ باری باری دہرائیں۔','A group of 5 players takes part in this activity. For it a square court of 6x6 metres is needed. In this activity one player is inside the court and the remaining four are present on the sides of the court. This activity is started with one ball. In this activity the 4 players should pass to the one in the centre and the player in the centre should catch the ball. Repeat this activity for 10 to 15 minutes by turns.','پدې فعالیت کې د ۵ لوبغاړو ډله برخه اخلي. د هغه لپاره ۶x۶ مترو مربع کورټ ته اړتیا وي. پدې فعالیت کې یو لوبغاړی د کورټ دننه وي او پاتې څلور د کورټ په څنډو موجود وي. دا فعالیت په یوه توپ پیلوي. پدې فعالیت کې ۴ لوبغاړي په مرکز کې والا ته پاس وکړي او مرکز والا لوبغاړی توپ ونیسي. دا فعالیت له ۱۰ نه تر ۱۵ دقیقې په نوبت تکرار کړئ.')])
+H(s,'کارکردگی (Performance):','Performance:','کارکردګي (Performance):')
+P(s,[('اس سرگرمی کی مدد سے کھلاڑیوں میں خود اعتمادی پیدا ہوگی اور اس کے ساتھ وہ بال کو مختلف انداز میں پکڑنے اور جسم کے بیلنس کو برقرار رکھ سکیں گے۔ اس طرح کھلاڑیوں میں ٹیم ورک بھی پیدا ہوگا۔','With the help of this activity self-confidence will arise in the players and along with this they will be able to catch the ball in different ways and maintain the body’s balance. In this way team work will also arise in the players.','د دې فعالیت په مرسته په لوبغاړو کې ځان باور پیدا کېږي او د دې سره هغوی توپ په بېلابېلو ډولونو نیولو او د بدن توازن ساتلای شي. په دې ډول په لوبغاړو کې ټیم ورک هم پیدا کېږي.')])
+H(s,'جمناسٹک (Gymnastic)','Gymnastics (Gymnastic)','جمناسټیک (Gymnastic)')
+P(s,[('جمناسٹک کی سرگرمیوں میں بائیو مکینیکل اصولوں کو اپنا کر جسم کے حرکات پر کنٹرول کا عملی مظاہرہ۔','In the activities of gymnastics, practical demonstration of control over the body’s movements by adopting biomechanical principles.','د جمناسټیک په فعالیتونو کې د بایومیکانیکي اصولو اختیارولو سره د بدن په حرکتونو د کنټرول عملي ښودنه.')])
+H(s,'1۔ توازن کی ورزشیں اور سرگرمیاں:','1. Exercises and Activities of Balance:','۱. د توازن تمرینونه او فعالیتونه:')
+H(s,'ورزشیں (Exercises)','Exercises','تمرینونه (Exercises)')
+P(s,[('i۔ ایک ٹانگ پر کھڑے ہوتے ہوئے دوسرا گھٹنا اٹھا کر دونوں ہاتھوں سے ٹانگ کو تھامنا۔','i. Standing on one leg, raising the other knee and holding the leg with both hands.','i. په یوه ښنګر ولاړ کېدو سره بل زنګنه پورته کولو سره دواړو لاسونو ښنګر نیول.',dict(listGroup='gx')),
+('ii۔ پنجوں کے بل چلنا، ایڑیوں کے بل چلنا۔','ii. Walking on the toes, walking on the heels.','ii. په ګوتو تګ، په پښو تګ.',dict(listGroup='gx')),
+('iii۔ بنچ پر چڑھ کر آگے پیچھے اور پہلو کی طرف قدم لینا۔','iii. Climbing on a bench and taking steps forward, backward and to the side.','iii. په بنچ خېژېدو سره مخکې، شاته او څنګ لوري ته ګام اخیستل.',dict(listGroup='gx'))])
+F.done()
+s['sourceNote']='Printed page 47: end of the netball exercise list (iv–v), the netball activity and performance, and the start of gymnastics (balance exercises).'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 50 = printed 48 (figures)
+s=page(50,'u05','48','Gymnastics: activities; flexibility exercises with illustrations','جمناسٹک: سرگرمیاں؛ لچک کی ورزشیں (خاکوں کے ساتھ)','جمناسټیک: فعالیتونه؛ د نرموالي تمرینونه (انځورونو سره)','gym-2')
+F=Flow(s)
+H(s,'سرگرمیاں (Activities)','Activities','فعالیتونه (Activities)')
+P(s,[('مندرجہ بالا ورزشوں کے ذریعے کھلاڑی مختلف قسم کی سرگرمیوں میں بہتر کارکردگی دکھا سکتے ہیں۔ مثلاً:','Through the above exercises players can show better performance in various kinds of activities. For example:','د پورتنيو تمرینونو په مټ لوبغاړي په بېلابېلو ډولونو فعالیتونو کې ښه کارکردګي ښودلای شي. لکه:')]+L([('i۔ رسی پر چلنا','i. Walking on a rope','i. په رسۍ تګ'),('ii۔ ریل ٹریک پر چلنا۔','ii. Walking on a rail track.','ii. په ریل پټلۍ تګ.'),('iii۔ اونچی بار پر آسانی کے ساتھ رول کرنا۔','iii. Rolling with ease on a high bar.','iii. په لوړ بار په اسانۍ سره رول کول.')],'ac'))
+H(s,'2۔ جسم کو لچکدار اور پھر تیلا بنانے والی ورزشیں اور سرگرمیاں:','2. Exercises and Activities that Make the Body Flexible and Then Supple:','۲. هغه تمرینونه او فعالیتونه چې بدن نرم او چټک کوي:')
+H(s,'ورزش (Exercises)','Exercises','تمرینونه (Exercises)')
+P(s,[]+L([('i۔ سیدھی قلابازی','i. Forward somersault','i. سیده قلابازي'),('ii۔ الٹی قلابازی','ii. Backward somersault','ii. الټه قلابازي'),('iii۔ ہینڈ سٹینڈ','iii. Handstand','iii. هینډ سټینډ'),('iv۔ پہیہ چکر','iv. Cartwheel','iv. څرخي (کارټ ویل)')],'fx'))
+F.fg(0)
+P(s,[('جمناسٹک کی یہ ورزشیں چٹائیوں، بنچوں اور فرش پر کروائی جاتی ہیں جس سے جسم میں ہم آہنگی اور لچک پیدا ہوتی ہے اور اس لچک اور پھرتی کی بنیاد پر کھلاڑی مختلف گیمز میں بہتر کارکردگی دکھا سکتے ہیں۔','These gymnastics exercises are done on mats, benches and the floor, through which coordination and flexibility arise in the body, and on the basis of this flexibility and agility players can show better performance in various games.','د جمناسټیک دا تمرینونه په چټایو، بنچونو او فرش کېږي چې له امله یې په بدن کې همغږي او نرموالی پیدا کېږي او د دې نرموالي او چټکتیا پر بنسټ لوبغاړي په بېلابېلو لوبو کې ښه کارکردګي ښودلای شي.')])
+F.done()
+def fig_row(y,n,label):
+    out=''
+    for i in range(n):
+        x=60+i*(400//(n-1) if n>1 else 0)
+        out+=f'<circle cx="{x}" cy="{y}" r="11" fill="#6d4c41"/><path d="M{x} {y+11} q{(-1)**i*14} 24 0 44" stroke="#333" stroke-width="5" fill="none"/><line x1="{x}" y1="{y+55}" x2="{x-14}" y2="{y+88}" stroke="#333" stroke-width="5"/><line x1="{x}" y1="{y+55}" x2="{x+14}" y2="{y+88}" stroke="#333" stroke-width="5"/>'
+    return out+T(260,y-14,label,12,'middle',700)
+fig=svg(520,300,'Two rows of gymnastic movements drawn as stick figures: a row of five stages of a somersault (crouch, roll, tuck, roll up, crouch) and a row of stages of a handstand and cartwheel',
+  fig_row(40,5,'Somersault (forward / backward)')+fig_row(170,6,'Handstand and cartwheel'))
+s['figures']=[dict(id='hpe11-s050-fig1',svg=fig,caption='Gymnastic exercises: somersault, handstand and cartwheel (stages)',captionUrdu='جمناسٹک کی ورزشیں: قلابازی، ہینڈ سٹینڈ اور پہیہ چکر (مراحل)',captionPashto='د جمناسټیک تمرینونه: قلابازي، هینډ سټینډ او څرخي (پړاوونه)',labels=[lab('Somersault','قلابازی','قلابازي'),lab('Handstand','ہینڈ سٹینڈ','هینډ سټینډ'),lab('Cartwheel','پہیہ چکر','څرخي')],sourceGap=dict(note='Simplified coded stick-figure schematic of the two rows of illustrations (somersault stages and handstand/cartwheel stages); the original line drawings are not reproduced.'))]
+s['sourceNote']='Printed page 48: gymnastics activities (i–iii), flexibility exercises i–iv with the two rows of illustrations, and the closing paragraph. The printed list label “Exercises” and the photographs of the handstand are not reproduced.'+NOTE
+s['vocabulary']={}
+save(s)

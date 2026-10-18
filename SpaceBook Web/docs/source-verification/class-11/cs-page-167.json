@@ -1,0 +1,195 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s167-p158",
+  "title": "Table: OSI layers, devices and protocols; 5.3 TCP/IP — start",
+  "headingUrdu": "جدول: او ایس آئی تہیں، آلات اور پروٹوکولز؛ ۵.۳ ٹی سی پی / آئی پی — آغاز",
+  "headingPashto": "جدول: د OSI طبقې، وسایل او پروتوکولونه؛ ۵.۳ TCP/IP — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 167,
+    "printedPage": "158"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s167-h1",
+      "en": "5.3 TCP/IP",
+      "ur": "۵.۳ ٹی سی پی / آئی پی",
+      "ps": "۵.۳ TCP/IP",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s167-a",
+      "en": "Communications between computers on a network is done through protocol suits. The most widely used and most widely available protocol suite is TCP/IP protocol suite. TCP/IP is an industry standard suite of protocols designed for local and wide area networks. It was developed by the United States",
+      "ur": "نیٹ ورک پر کمپیوٹرز کے درمیان مواصلات پروٹوکول سوئٹس کے ذریعے ہوتے ہیں۔ سب سے زیادہ استعمال ہونے والا اور سب سے زیادہ دستیاب پروٹوکول سوئٹ ٹی سی پی / آئی پی پروٹوکول سوئٹ ہے۔ ٹی سی پی / آئی پی مقامی اور وسیع علاقے کے نیٹ ورکس کے لیے بنایا گیا پروٹوکولز کا صنعتی معیاری سوئٹ ہے۔ یہ ریاستہائے متحدہ",
+      "ps": "د شبکې پر کمپیوټرونو ترمنځ اړیکې د پروتوکول ټولګو له لارې کېږي. تر ټولو ډیر کارېدونکې او تر ټولو ډیر شته پروتوکول ټولګه د TCP/IP پروتوکول ټولګه ده. TCP/IP د ځایي او پراخې سیمې شبکو لپاره جوړ شوی د پروتوکولونو صنعتي معیاري ټولګه ده. دا د متحده ایالاتو",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s167-h1",
+        "cs11-s167-a"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Table: OSI layers, devices and protocols",
+      "captionUrdu": "جدول: او ایس آئی تہیں، آلات اور پروٹوکولز",
+      "captionPashto": "جدول: د OSI طبقې، وسایل او پروتوکولونه",
+      "headers": [
+        {
+          "en": "OSI LAYER",
+          "ur": "او ایس آئی تہہ",
+          "ps": "د OSI طبقه"
+        },
+        {
+          "en": "DEVICES",
+          "ur": "آلات",
+          "ps": "وسایل"
+        },
+        {
+          "en": "PROTOCOLS",
+          "ur": "پروٹوکولز",
+          "ps": "پروتوکولونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "APPLICATION layer 7",
+            "ur": "ایپلیکیشن لیئر ۷",
+            "ps": "د اپلېکېشن طبقه ۷"
+          },
+          {
+            "en": "Gateway",
+            "ur": "گیٹ وے",
+            "ps": "ګیټ وې"
+          },
+          {
+            "en": "SNMP, SMTP, FTP, TELNET, HTTP, NCP, SMB, AppleTalk, FTAM, X.400,X.500, DAP,DNS",
+            "ur": "ایس این ایم پی، ایس ایم ٹی پی، ایف ٹی پی، ٹیل نیٹ، ایچ ٹی ٹی پی، این سی پی، ایس ایم بی، ایپل ٹاک، ایف ٹی اے ایم، X.400، X.500، ڈی اے پی، ڈی این ایس",
+            "ps": "ایس این ایم پي، ایس ایم ټي پي، ایف ټي پي، ټېلنېټ، ایچ ټي ټي پي، NCP، SMB، AppleTalk، FTAM، X.400، X.500، DAP، DNS"
+          }
+        ],
+        [
+          {
+            "en": "PRESENTATION layer 6",
+            "ur": "پریزنٹیشن لیئر ۶",
+            "ps": "د وړاندې کولو طبقه ۶"
+          },
+          {
+            "en": "Gateway",
+            "ur": "گیٹ وے",
+            "ps": "ګیټ وې"
+          },
+          {
+            "en": "NCP, AFP, TDI, XDR, SSL, ISO 8823 TLS, PAP, X.226",
+            "ur": "این سی پی، اے ایف پی، ٹی ڈی آئی، ایکس ڈی آر، ایس ایس ایل، آئی ایس او ۸۸۲۳ ٹی ایل ایس، پی اے پی، X.226",
+            "ps": "NCP، AFP، TDI، XDR، SSL، ISO 8823 TLS، PAP، X.226 (ایس ایس ایل او نور پروتوکولونه)"
+          }
+        ],
+        [
+          {
+            "en": "SESSION layer 5",
+            "ur": "سیشن لیئر ۵",
+            "ps": "د ناستې طبقه ۵"
+          },
+          {
+            "en": "Gateway",
+            "ur": "گیٹ وے",
+            "ps": "ګیټ وې"
+          },
+          {
+            "en": "NetBIOS, ASP, ADSP, ZIP, ISO 8327, X.225, SAP, SDP",
+            "ur": "نیٹ بائیوس، ASP، ADSP، زپ، آئی ایس او ۸۳۲۷، X.225، ایس اے پی، ایس ڈی پی",
+            "ps": "نېټ بایوس، ASP، ADSP، ZIP، ISO 8327، X.225، SAP، SDP"
+          }
+        ],
+        [
+          {
+            "en": "TRANSPORT layer 4",
+            "ur": "ٹرانسپورٹ لیئر ۴",
+            "ps": "د لېږد طبقه ۴"
+          },
+          {
+            "en": "Gateway",
+            "ur": "گیٹ وے",
+            "ps": "ګیټ وې"
+          },
+          {
+            "en": "NetBEUI, TCP, SPX, NWlink, UDP, RTP, SCTP, TP0, TP1, TP2, TP3, TP4, OSPF, SPX, RIP, ATP, NBP, AEP, RTMP",
+            "ur": "نیٹ بیوئی، ٹی سی پی، ایس پی ایکس، این ڈبلیو لنک، یو ڈی پی، آر ٹی پی، ایس سی ٹی پی، TP0، TP1، TP2، TP3، TP4، او ایس پی ایف، ایس پی ایکس، آر آئی پی، اے ٹی پی، این بی پی، اے ای پی، آر ٹی ایم پی",
+            "ps": "نېټ بیوی، TCP، SPX، NWlink، UDP، RTP، SCTP، TP0، TP1، TP2، TP3، TP4، OSPF، SPX، RIP، ATP، NBP، AEP، RTMP"
+          }
+        ],
+        [
+          {
+            "en": "NETWORK layer 3",
+            "ur": "نیٹ ورک لیئر ۳",
+            "ps": "د شبکې طبقه ۳"
+          },
+          {
+            "en": "Routers, layer 3 (or IP) switches.",
+            "ur": "راؤٹرز، لیئر ۳ (یا آئی پی) سوئچز۔",
+            "ps": "روټرونه، ۳ طبقې (یا IP) سویچونه."
+          },
+          {
+            "en": "IP, IPX, NWlink, NetBEUI, ICMP, IPsec, ARP, RIP, BGP, X.25 (PLP), CLNP, DDP, IGRP",
+            "ur": "آئی پی، آئی پی ایکس، این ڈبلیو لنک، نیٹ بیوئی، آئی سی ایم پی، آئی پی سیک، اے آر پی، آر آئی پی، بی جی پی، X.25 (پی ایل پی)، سی ایل این پی، ڈی ڈی پی، آئی جی آر پی",
+            "ps": "IP، IPX، NWlink، NetBEUI، ICMP، IPsec، ARP، RIP، BGP، X.25 (PLP)، CLNP، DDP، IGRP"
+          }
+        ],
+        [
+          {
+            "en": "DATA LINK layer 2",
+            "ur": "ڈیٹا لنک لیئر ۲",
+            "ps": "د ډېټا نښلونې طبقه ۲"
+          },
+          {
+            "en": "Bridges and switches, Ethernet incorporates both this layer and the Physical layer.",
+            "ur": "برجز اور سوئچز؛ ایتھرنیٹ اس تہہ اور فزیکل لیئر دونوں کو شامل کرتا ہے۔",
+            "ps": "برېجونه او سویچونه؛ ایترنېټ دا طبقه او فزیکي طبقه دواړه شاملوي."
+          },
+          {
+            "en": "X.25 (LAPB., Token Bus, IEEE 802.3 framing, Ethernet II framing, LocalTalk, TokenTalk, EtherTalk, Apple Remote Access, PPP, HDLC, Q.921",
+            "ur": "X.25 (ایل اے پی بی، ٹوکن بس، آئی ای ای ای ۸۰۲.۳ فریمنگ، ایتھرنیٹ II فریمنگ، لوکل ٹاک، ٹوکن ٹاک، ایتھر ٹاک، ایپل ریموٹ ایکسیس، پی پی پی، ایچ ڈی ایل سی، Q.921",
+            "ps": "X.25 (LAPB، ټوکن بس، IEEE 802.3 چوکاټ، ایترنېټ II چوکاټ، LocalTalk، TokenTalk، EtherTalk، Apple Remote Access، PPP، HDLC، Q.921"
+          }
+        ],
+        [
+          {
+            "en": "PHYSICAL layer 1",
+            "ur": "فزیکل لیئر ۱",
+            "ps": "فزیکي طبقه ۱"
+          },
+          {
+            "en": "Hubs, repeaters, network adapters, Parallel SCSI buses. Various physical-layers Ethernet incorporates both this layer and the data-link layer. Token ring, FDDI, and IEEE 802.11.",
+            "ur": "ہبز، ریپیٹرز، نیٹ ورک اڈاپٹرز، پیرالل ایس سی ایس آئی بسیں۔ مختلف فزیکل لیئرز؛ ایتھرنیٹ اس تہہ اور ڈیٹا لنک لیئر دونوں کو شامل کرتا ہے۔ ٹوکن رنگ، ایف ڈی ڈی آئی اور آئی ای ای ای ۸۰۲.۱۱۔",
+            "ps": "هبونه، ریپیټرونه، د شبکې اډاپټرونه، موازي SCSI بسونه. مختلفې فزیکي طبقې؛ ایترنېټ دا طبقه او د ډېټا نښلونې طبقه دواړه شاملوي. ټوکن رنګ، FDDI او IEEE 802.11."
+          },
+          {
+            "en": "X.25 (X.21bis), EIA/TIA-232, EIA/TIA-449, EIA-530, G.703",
+            "ur": "X.25 (X.21bis)، ای آئی اے/ٹی آئی اے-۲۳۲، ای آئی اے/ٹی آئی اے-۴۴۹، ای آئی اے-۵۳۰، G.703",
+            "ps": "X.25 (X.21bis)، EIA/TIA-232، EIA/TIA-449، EIA-530، G.703"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 158: the table of OSI layers (Application 7 to Physical 1) with their devices and protocols, and the banner “5.3 TCP/IP” with the start of its paragraph (the sentence continues on the next page). The printed protocol lists are given as printed, including “X.25 (LAPB.” and the missing closing bracket after “Q.921”. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:22:41.918508+00:00",
+    "scope": "Scan 167 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,21 @@
+@pdf 89
+@printed 83
+@status lesson
+m     sum= a+ b+ (++c);
+m     printf("Sum = %d:\n",sum);
+m     printf("c=  %d",c);
+m }
+p In the above program, *1* will be added to the value of **c** before it is used in the expression. Thus after execution, the sum will be equal to *6* and value of **c** will be *4*. || اوپر والے پروگرام میں **c** کی قدر میں اظہار میں استعمال ہونے سے پہلے *1* جمع ہوگا۔ یوں چلنے کے بعد مجموعہ *6* اور **c** کی قدر *4* ہوگی۔ || په پورتني پروګرام کې د **c** ارزښت ته په افاده کې له کارېدو مخکې *1* ورزیاتېږي. نو له اجرا وروسته مجموعه *6* او د **c** ارزښت *4* کېږي.
+@issue The program prints "Sum = %d:" (with a colon) while the sample output shows "Sum = 6"; kept as printed.
+### Postfix Increment Operator || پوسٹ فکس انکریمنٹ آپریٹر || postfix increment operator
+p When an increment operator is used in postfix mode in an expression, it adds *1* to the value of the variable after the value of the variable has already been used in the expression. || جب کسی اظہار میں انکریمنٹ آپریٹر پوسٹ فکس صورت میں استعمال ہو تو یہ متغیر کی قدر اظہار میں استعمال ہو جانے کے بعد اس میں *1* جمع کرتا ہے۔ || کله چې increment operator په افاده کې په postfix بڼه وکارول شي، د متغیر ارزښت په افاده کې له کارېدو وروسته *1* ورزیاتوي.
+p For example, if in the above example, increment operator is used in postfix mode, the result will be different. The statement will be as shown below: || مثلاً اگر اوپر والی مثال میں انکریمنٹ آپریٹر پوسٹ فکس صورت میں استعمال ہو تو نتیجہ مختلف ہوگا۔ اسٹیٹمنٹ یوں ہوگی: || د بېلګې په توګه که په پورتنۍ بېلګه کې increment operator په postfix بڼه وکارول شي، پایله بله وي. بیان به داسې وي:
+m sum= a + b + c++;
+p In this case, *1* will be added to the value of **c** after its existing value has been used in the expression. Thus after execution, the sum will be equal to *5* and the value of **c** will be *4*. || اس صورت میں **c** کی موجودہ قدر اظہار میں استعمال ہونے کے بعد اس میں *1* جمع ہوگا۔ یوں چلنے کے بعد مجموعہ *5* اور **c** کی قدر *4* ہوگی۔ || په دې حالت کې د **c** موجود ارزښت په افاده کې له کارېدو وروسته *1* ورزیاتېږي. نو له اجرا وروسته مجموعه *5* او د **c** ارزښت *4* کېږي.
+### 3.2.5 Decrement Operator -- || 3.2.5 ڈیکریمنٹ آپریٹر -- || ۳.۲.۵ decrement operator --
+p The decrement operator is represented by a double minus -- sign. It is used to subtract 1 from the value of an integer variable. Decrement operator can be used only with variables. It can't be used with constants or expressions. || ڈیکریمنٹ آپریٹر دوہری منفی -- کی علامت سے ظاہر ہوتا ہے۔ یہ انٹیجر متغیر کی قدر سے 1 تفریق کرنے کے لیے استعمال ہوتا ہے۔ یہ صرف متغیرات کے ساتھ استعمال ہو سکتا ہے، کانسٹنٹس یا اظہارات کے ساتھ نہیں۔ || decrement operator په دوه ګونې منفي -- نښه ښودل کېږي. د integer متغیر له ارزښت 1 کمولو لپاره کارېږي. یوازې له متغیرونو سره کارېږي، له ثابتونو یا افادو سره نه.
+p For example, to subtract 1 from the value of a variable x, the decrement statement is written as: || مثلاً متغیر x کی قدر سے 1 تفریق کرنے کے لیے ڈیکریمنٹ اسٹیٹمنٹ یوں لکھی جاتی ہے: || د بېلګې په توګه د x متغیر له ارزښت 1 کمولو لپاره decrement بیان داسې لیکل کېږي:
+m x--;     OR     --x;
+m --x is same as x = x – 1     OR     x -= 1
+### Prefix Decrement Operator || پری فکس ڈیکریمنٹ آپریٹر || prefix decrement operator
+p The prefix decrement operator immediately decreases the current value of the variable by 1. This value is then used in the expression. For example: || پری فکس ڈیکریمنٹ آپریٹر متغیر کی موجودہ قدر فوراً 1 کم کر دیتا ہے۔ پھر یہ قدر اظہار میں استعمال ہوتی ہے۔ مثلاً: || prefix decrement operator سمدستي د متغیر اوسنی ارزښت 1 کموي. بیا دا ارزښت په افاده کې کارېږي. د بېلګې په توګه:

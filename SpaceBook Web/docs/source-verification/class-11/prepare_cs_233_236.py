@@ -1,0 +1,93 @@
+from cshelp import *
+c=cell
+U='u7'
+def H(s,k,en,ur,ps,**m): add(s,k,en,ur,ps,kind='heading',**m)
+NOTE=' Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.'
+def fin(s,note):
+    s['sourceNote']=note+NOTE; s['vocabulary']={}; save(s)
+def rb(x,y,w,h,t,sz=12,rx=8):
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="#fff" stroke="#111" stroke-width="1.5"/>'+T(x+w/2,y+h/2+4,t,sz,'middle',700)
+def ln(x1,y1,x2,y2):
+    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#111" stroke-width="1.4"/>'
+# ---------- scan 233 (printed 224) ----------
+s=page(233,U,'224','7.4.1 Elements of Entity Relationship Diagram; a. Entity; b. Attribute; c. Relationship — start','۷.۴.۱ انٹیٹی ریلیشن شپ ڈایاگرام کے عناصر؛ الف۔ انٹیٹی؛ ب۔ ایٹریبیوٹ؛ ج۔ ریلیشن شپ — آغاز','۷.۴.۱ د وجود-اړیکې انځور عناصر؛ الف. وجود؛ ب. خاصیت؛ ج. اړیکه — پیل','p224')
+F=Flow(s)
+H(s,'h1','7.4.1 Elements of Entity Relationship Diagram','۷.۴.۱ انٹیٹی ریلیشن شپ ڈایاگرام کے عناصر','۷.۴.۱ د وجود-اړیکې انځور عناصر')
+H(s,'h2','a. Entity','الف۔ انٹیٹی','الف. وجود')
+add(s,'a','An entity is a person, place, object, event or concept in user environment about which the organization wishes to maintain data. Examples of entities are as under:','انٹیٹی صارف کے ماحول میں کوئی شخص، جگہ، چیز، واقعہ یا تصور ہے جس کے بارے میں ادارہ ڈیٹا برقرار رکھنا چاہتا ہے۔ انٹیٹیز کی مثالیں درج ذیل ہیں:','وجود د کاروونکي په چاپېریال کې یو کس، ځای، څیز، پېښه یا مفکوره ده چې د هغې په اړه اداره غواړي ډېټا وساتي. د وجودونو بېلګې لاندې دي:')
+L(s,[('e1','PERSON: employee, student, patient','شخص: ملازم، طالب علم، مریض','کس (PERSON): کارکوونکی، زده کوونکی، ناروغ'),('e2','PLACE: city, state, country','جگہ: شہر، ریاست، ملک','ځای (PLACE): ښار، ایالت، هېواد'),('e3','OBJECT: machine, building, automobile','چیز: مشین، عمارت، گاڑی','څیز (OBJECT): ماشین، ودانۍ، موټر'),('e4','EVENT: sale, admission, exams','واقعہ: فروخت، داخلہ، امتحانات','پېښه (EVENT): پلور، داخله، امتحانونه'),('e5','CONCEPT: account, course, work center','تصور: اکاؤنٹ، کورس، ورک سینٹر','مفکوره (CONCEPT): حساب، کورس، کاري مرکز')],'ent')
+H(s,'h3','Entity Instance','انٹیٹی انسٹینس','د وجود بېلګه')
+add(s,'b','A single occurrence of an entity is called entity instance. For example the Instances of Entity STUDENT are as under:','انٹیٹی کے واحد وقوع کو انٹیٹی انسٹینس کہتے ہیں۔ مثلاً انٹیٹی اسٹوڈنٹ کے انسٹینسز درج ذیل ہیں:','د وجود یوې پېښې ته د وجود بېلګه ویل کېږي. د بېلګې په توګه د STUDENT وجود بېلګې لاندې دي:')
+L(s,[('i1','RollNo: 454, Name: Ahmad Ali, Address: Peshawar, PhoneNo: 0454450454','رول نمبر: ۴۵۴، نام: احمد علی، پتہ: پشاور، فون نمبر: ۰۴۵۴۴۵۰۴۵۴','رول شمېره: ۴۵۴، نوم: احمد علي، پته: پېښور، د تلیفون شمېره: ۰۴۵۴۴۵۰۴۵۴'),('i2','RollNo: 343, Name: Nauman, Address: Mardan, PhoneNo: 0445666454','رول نمبر: ۳۴۳، نام: نعمان، پتہ: مردان، فون نمبر: ۰۴۴۵۶۶۶۴۵۴','رول شمېره: ۳۴۳، نوم: نعمان، پته: مردان، د تلیفون شمېره: ۰۴۴۵۶۶۶۴۵۴')],'ei')
+H(s,'h4','b. Attribute','ب۔ ایٹریبیوٹ','ب. خاصیت')
+add(s,'c','An attribute is a property or characteristic of an entity that is of interest to the organization. Following are some attributes:','ایٹریبیوٹ کسی انٹیٹی کی ایسی خاصیت یا خصوصیت ہے جو ادارے کے لیے دلچسپی کی حامل ہو۔ درج ذیل کچھ ایٹریبیوٹس ہیں:','خاصیت د یوه وجود هغه ملکیت یا ځانګړتیا ده چې ادارې ته ګټوره وي. لاندې ځینې خاصیتونه دي:')
+L(s,[('a1','STUDENT: student no, name, address, phone no','اسٹوڈنٹ: اسٹوڈنٹ نمبر، نام، پتہ، فون نمبر','زده کوونکی (STUDENT): د زده کوونکي شمېره، نوم، پته، د تلیفون شمېره'),('a2','EMPLOYEE: employee no, name address, skill','ایمپلائی: ایمپلائی نمبر، نام پتہ، مہارت','کارکوونکی (EMPLOYEE): د کارکوونکي شمېره، نوم پته، مهارت')],'attr')
+H(s,'h5','c. Relationship','ج۔ ریلیشن شپ','ج. اړیکه')
+add(s,'d','A meaningful association among entities is called a relationship. A relationship describes how the data is shared between entities. Relationships are represented by a diamond symbol connected to the related entities.','انٹیٹیز کے درمیان بامعنی تعلق کو ریلیشن شپ کہتے ہیں۔ ریلیشن شپ بیان کرتی ہے کہ انٹیٹیز کے درمیان ڈیٹا کیسے شیئر ہوتا ہے۔ ریلیشن شپس کو متعلقہ انٹیٹیز سے جڑی ہیرے کی علامت سے ظاہر کیا جاتا ہے۔','د وجودونو ترمنځ مانادار تړاو ته اړیکه ویل کېږي. اړیکه بیانوي چې د وجودونو ترمنځ ډېټا څنګه ګډېږي. اړیکې د اړوندو وجودونو سره نښلول شوي د الماس سمبول په واسطه ښودل کېږي.')
+F.done()
+fin(s,'Printed page 224: the banner “7.4.1 Elements of Entity Relationship Diagram”, “a. Entity” with five examples, “Entity Instance” with two instances (printed in two columns), “b. Attribute” with two examples and “c. Relationship” with its first paragraph. In the printed instance list the Pashto and Urdu digits follow the printed values. The left edge of the scan is cut.')
+# ---------- scan 234 (printed 225) ----------
+s=page(234,U,'225','Chen notation; Figure 7.6; Degree of a Relationship: unary (Figure 7.7), binary (Figure 7.8)','چن نوٹیشن؛ شکل ۷.۶؛ ریلیشن شپ کی ڈگری: یونری (شکل ۷.۷)، بائنری (شکل ۷.۸)','د چن نوټیشن؛ انځور ۷.۶؛ د اړیکې درجه: یو-اړخیزه (انځور ۷.۷)، دوه-اړخیزه (انځور ۷.۸)','p225')
+F=Flow(s)
+add(s,'a','In the original Chen notation, the relationship is placed inside a diamond, e.g. managers manage employees as shown in Figure 7.6.','اصل چن نوٹیشن میں ریلیشن شپ کو ہیرے کے اندر رکھا جاتا ہے، مثلاً مینیجر ملازمین کا انتظام کرتے ہیں جیسا کہ شکل ۷.۶ میں دکھایا گیا ہے۔','په اصلي چن نوټیشن کې اړیکه د الماس دننه ایښودل کېږي، د بېلګې په توګه مدیران کارکوونکي اداره کوي لکه څنګه چې ۷.۶ انځور کې ښودل شوي.')
+def chen():
+    b='<rect x="10" y="15" width="120" height="50" fill="#fff" stroke="#111" stroke-width="1.5"/>'+T(70,45,'Manager',12,'middle',700)
+    b+=ln(130,40,180,40)+'<polygon points="180,40 225,22 270,40 225,58" fill="#fff" stroke="#111" stroke-width="1.5"/>'+T(225,44,'manages',11,'middle',700)+ln(270,40,330,40)
+    b+='<rect x="330" y="20" width="120" height="50" fill="#fff" stroke="#111" stroke-width="1.5"/>'+T(390,50,'Employee',12,'middle',700)
+    return svg(470,80,'Chen notation: Manager manages Employee with the relationship in a diamond',b)
+def unary():
+    b=rb(10,40,120,45,'Employee')+T(185,22,'manages',13,'middle',700)+'<polyline points="130,50 130,30 240,30 240,70 130,70" fill="none" stroke="#111" stroke-width="1.5"/>'
+    return svg(270,100,'Unary relationship: Employee manages Employee',b)
+def binary():
+    b=rb(10,15,120,50,'Manager')+rb(330,15,120,50,'Employee')+ln(130,40,330,40)+T(230,32,'manages',12,'middle',700)
+    return svg(470,75,'Binary relationship: Manager manages Employee',b)
+s['figures']=[dict(svg=chen(),id='cs11-s234-fig1',caption='Figure 7.6 Relationship',captionUrdu='شکل ۷.۶ ریلیشن شپ',captionPashto='انځور ۷.۶ اړیکه',labels=[lab('Manager','مینیجر','مدیر'),lab('manages','انتظام کرتا ہے','اداره کوي'),lab('Employee','ملازم','کارکوونکی')]),
+ dict(svg=unary(),id='cs11-s234-fig2',caption='Figure 7.7 Unary/Recursive relationship',captionUrdu='شکل ۷.۷ یونری/ری کرسیو ریلیشن شپ',captionPashto='انځور ۷.۷ یو-اړخیزه/تکراري اړیکه',labels=[lab('Employee','ملازم','کارکوونکی'),lab('manages','انتظام کرتا ہے','اداره کوي')]),
+ dict(svg=binary(),id='cs11-s234-fig3',caption='Figure 7.8 Binary Relationship',captionUrdu='شکل ۷.۸ بائنری ریلیشن شپ',captionPashto='انځور ۷.۸ دوه-اړخیزه اړیکه',labels=[lab('Manager','مینیجر','مدیر'),lab('manages','انتظام کرتا ہے','اداره کوي'),lab('Employee','ملازم','کارکوونکی')])]
+F.fg(0)
+H(s,'h1','Degree of a Relationship','ریلیشن شپ کی ڈگری','د اړیکې درجه')
+add(s,'b','The number of participating entities in a relationship is known as the degree of the relationship. It has three types.','ریلیشن شپ میں شریک انٹیٹیز کی تعداد ریلیشن شپ کی ڈگری کہلاتی ہے۔ اس کی تین اقسام ہیں۔','په یوه اړیکه کې د ګډون کوونکو وجودونو شمېر د اړیکې درجه بلل کېږي. دا درې ډولونه لري.')
+add(s,'c','i. A unary relationship exists when an association is maintained within a single entity. Unary relationships are also known as a recursive relationship. It is a relationship where the same entity participates more than once in different roles.','i۔ یونری ریلیشن شپ اس وقت ہوتی ہے جب تعلق ایک ہی انٹیٹی کے اندر برقرار رکھا جائے۔ یونری ریلیشن شپس کو ری کرسیو ریلیشن شپ بھی کہتے ہیں۔ یہ ایسی ریلیشن شپ ہے جس میں ایک ہی انٹیٹی مختلف کرداروں میں ایک سے زیادہ بار شریک ہوتی ہے۔','i. یو-اړخیزه اړیکه هغه وخت شتون لري کله چې تړاو په یو واحد وجود دننه ساتل کېږي. یو-اړخیزې اړیکې د تکراري اړیکې په توګه هم پېژندل کېږي. دا هغه اړیکه ده چې ورته وجود په مختلفو رولونو کې له یو ځل نه ډیر برخه اخلي.')
+F.fg(1)
+add(s,'d','In the above example employees are managed by employees.','اوپر کی مثال میں ملازمین کا انتظام ملازمین کرتے ہیں۔','په پورتنۍ بېلګه کې کارکوونکي د کارکوونکو لخوا اداره کېږي.')
+add(s,'e','ii. A binary relationship exists when two entities are associated with each other through a relationship. OR If there are two entity types involved, it is a binary relationship type.','ii۔ بائنری ریلیشن شپ اس وقت ہوتی ہے جب دو انٹیٹیز ریلیشن شپ کے ذریعے ایک دوسرے سے منسلک ہوں۔ یا اگر دو انٹیٹی اقسام شامل ہوں تو یہ بائنری ریلیشن شپ کی قسم ہے۔','ii. دوه-اړخیزه اړیکه هغه وخت شتون لري کله چې دوه وجودونه د اړیکې له لارې یو له بل سره تړل شوي وي. یا که دوه د وجود ډولونه ښکېل وي، دا د دوه-اړخیزې اړیکې ډول دی.')
+F.fg(2)
+F.done()
+fin(s,'Printed page 225: the paragraph on Chen notation, Figure 7.6 Relationship, “Degree of a Relationship” with the unary relationship (Figure 7.7, printed “Figure7.7 Unary/Recursive relationship”) and the binary relationship (Figure 7.8, printed “Figure7.8 Binary Relationship”); all redrawn as coded SVG. The words “unary relationship”, “recursive relationship” and “binary relationship” are printed in bold or italic.')
+# ---------- scan 235 (printed 226) ----------
+s=page(235,U,'226','Binary relationship types: one-to-one (7.9), one-to-many (7.10), many-to-many (7.11)','بائنری ریلیشن شپ کی اقسام: ایک سے ایک (۷.۹)، ایک سے کئی (۷.۱۰)، کئی سے کئی (۷.۱۱)','د دوه-اړخیزې اړیکې ډولونه: یو-ته-یو (۷.۹)، یو-ته-ډیر (۷.۱۰)، ډیر-ته-ډیر (۷.۱۱)','p226')
+F=Flow(s)
+def card(label,right,mark_left):
+    b=T(15,20,'A',13,'middle',700)+T(250,20,'B',13,'middle',700)+ln(15,35,250,35)
+    b+=ln(30,28,30,42) if mark_left=='one' else '<polyline points="15,26 30,35 15,44" fill="none" stroke="#111" stroke-width="1.4"/>'+ln(30,28,30,42)
+    b+=(ln(235,28,235,42) if right=='one' else '<polyline points="250,26 235,35 250,44" fill="none" stroke="#111" stroke-width="1.4"/>')
+    b+=T(132,58,label,14,'middle',700)
+    return svg(270,70,'Entity A and entity B joined by a line with cardinality '+label,b)
+add(s,'a','Like unary relationship, in binary relationship the associations between two entity types may be described as one-to-one, one-to-many or many-to-many.','یونری ریلیشن شپ کی طرح بائنری ریلیشن شپ میں دو انٹیٹی اقسام کے درمیان تعلقات کو ایک سے ایک، ایک سے کئی یا کئی سے کئی کے طور پر بیان کیا جا سکتا ہے۔','د یو-اړخیزې اړیکې په څېر په دوه-اړخیزه اړیکه کې د دوو وجود ډولونو ترمنځ تړاوونه د یو-ته-یو، یو-ته-ډیر یا ډیر-ته-ډیر په توګه بیانېدای شي.')
+add(s,'b','one-to-one: one instance of an entity (A) is associated with only one instance of another entity (B). For example, in a database one instance of entity type Country (A) is associated with only one instance of entity type President (B).','ایک سے ایک: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے صرف ایک انسٹینس سے منسلک ہوتا ہے۔ مثلاً ڈیٹا بیس میں انٹیٹی ٹائپ ملک (اے) کا ایک انسٹینس انٹیٹی ٹائپ صدر (بی) کے صرف ایک انسٹینس سے منسلک ہوتا ہے۔','یو-ته-یو: د یوه وجود (A) یوه بېلګه د بل وجود (B) یوازې له یوې بېلګې سره تړل شوې ده. د بېلګې په توګه په ډېټابېس کې د وجود ډول هېواد (A) یوه بېلګه د وجود ډول ولسمشر (B) یوازې له یوې بېلګې سره تړل شوې ده.')
+s['figures']=[dict(svg=card('1 : 1','one','one'),id='cs11-s235-fig1',caption='Figure 7.9 one-to-one',captionUrdu='شکل ۷.۹ ایک سے ایک',captionPashto='انځور ۷.۹ یو-ته-یو',labels=[lab('1 : 1','۱ : ۱','۱ : ۱')]),
+ dict(svg=card('1 : M','many','one'),id='cs11-s235-fig2',caption='Figure 7.10 one-to-many',captionUrdu='شکل ۷.۱۰ ایک سے کئی',captionPashto='انځور ۷.۱۰ یو-ته-ډیر',labels=[lab('1 : M','۱ : ایم','۱ : M')]),
+ dict(svg=card('M : N','many','many'),id='cs11-s235-fig3',caption='Figure 7.11 many-to-many',captionUrdu='شکل ۷.۱۱ کئی سے کئی',captionPashto='انځور ۷.۱۱ ډیر-ته-ډیر',labels=[lab('M : N','ایم : این','M : N')])]
+F.fg(0)
+add(s,'c','one-to-many: one instance of an entity (A) is associated with zero, one or many instances of another entity (B), but for one instance of entity B there is only one instance of entity A. For example, for a company with all employees working in one building, the building name (A) is associated with many different employees (B), but those employees all share the same singular association with entity A.','ایک سے کئی: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے صفر، ایک یا کئی انسٹینسز سے منسلک ہوتا ہے، لیکن انٹیٹی بی کے ایک انسٹینس کے لیے انٹیٹی اے کا صرف ایک انسٹینس ہوتا ہے۔ مثلاً ایسی کمپنی کے لیے جس کے تمام ملازمین ایک عمارت میں کام کرتے ہوں، عمارت کا نام (اے) بہت سے مختلف ملازمین (بی) سے منسلک ہوتا ہے، لیکن وہ تمام ملازمین انٹیٹی اے کے ساتھ ایک ہی واحد تعلق رکھتے ہیں۔','یو-ته-ډیر: د یوه وجود (A) یوه بېلګه د بل وجود (B) له صفر، یو یا ډیرو بېلګو سره تړل شوې ده، خو د B وجود د یوې بېلګې لپاره د A وجود یوازې یوه بېلګه شته. د بېلګې په توګه د داسې شرکت لپاره چې ټول کارکوونکي یې په یوه ودانۍ کې کار کوي، د ودانۍ نوم (A) له ډیرو مختلفو کارکوونکو (B) سره تړل شوی دی، خو دا ټول کارکوونکي له A وجود سره ورته واحده تړاو شریکوي.')
+F.fg(1)
+add(s,'d','many-to-many: one instance of an entity (A) is associated with one, zero or many instances of another entity (B), and one instance of entity B is associated with one, zero or many instances of entity A. For example, for a company in which all of its employees work on multiple projects, each instance of an employee (A) is associated with many instances of a project (B), and at the same time, each instance of a project (B) has multiple employees (A) associated with it.','کئی سے کئی: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے ایک، صفر یا کئی انسٹینسز سے منسلک ہوتا ہے، اور انٹیٹی بی کا ایک انسٹینس انٹیٹی اے کے ایک، صفر یا کئی انسٹینسز سے منسلک ہوتا ہے۔ مثلاً ایسی کمپنی کے لیے جس کے تمام ملازمین متعدد پراجیکٹس پر کام کرتے ہوں، ملازم (اے) کا ہر انسٹینس پراجیکٹ (بی) کے کئی انسٹینسز سے منسلک ہوتا ہے، اور اسی وقت پراجیکٹ (بی) کے ہر انسٹینس سے متعدد ملازمین (اے) منسلک ہوتے ہیں۔','ډیر-ته-ډیر: د یوه وجود (A) یوه بېلګه د بل وجود (B) له یو، صفر یا ډیرو بېلګو سره تړل شوې ده، او د B وجود یوه بېلګه د A وجود له یو، صفر یا ډیرو بېلګو سره تړل شوې ده. د بېلګې په توګه د داسې شرکت لپاره چې ټول کارکوونکي یې په څو پروژو کې کار کوي، د کارکوونکي (A) هره بېلګه د پروژې (B) له ډیرو بېلګو سره تړل شوې ده، او په ورته وخت کې د پروژې (B) هره بېلګه له ډیرو کارکوونکو (A) سره تړل شوې ده.')
+F.fg(2)
+F.done()
+fin(s,'Printed page 226: the paragraph introducing one-to-one, one-to-many and many-to-many relationships, with Figures 7.9 one-to-one (1 : 1), 7.10 one-to-many (1 : M) and 7.11 many-to-many (M : N), each a line between entities A and B with crow’s-foot markings (redrawn as coded SVG). The captions are printed as “Figure7.9”, “Figure7.10” and “Figure7.11”. The terms one-to-one, one-to-many and many-to-many are printed in bold. The right edge of the scan is cut.')
+# ---------- scan 236 (printed 227) ----------
+s=page(236,U,'227','iii. Ternary relationship; Figure 7.12; d. Keys; i. Candidate Key','iii۔ ٹرنری ریلیشن شپ؛ شکل ۷.۱۲؛ د۔ کیز؛ i۔ کینڈیڈیٹ کی','iii. درې-اړخیزه اړیکه؛ انځور ۷.۱۲؛ د. کیلي؛ i. نوماند کیلي','p227')
+F=Flow(s)
+add(s,'a','iii. A ternary relationship exists when three entities are associated. OR If there are three entity types involved it is a ternary relationship type.','iii۔ ٹرنری ریلیشن شپ اس وقت ہوتی ہے جب تین انٹیٹیز منسلک ہوں۔ یا اگر تین انٹیٹی اقسام شامل ہوں تو یہ ٹرنری ریلیشن شپ کی قسم ہے۔','iii. درې-اړخیزه اړیکه هغه وخت شتون لري کله چې درې وجودونه تړل شوي وي. یا که درې د وجود ډولونه ښکېل وي، دا د درې-اړخیزې اړیکې ډول دی.')
+def tern():
+    b=rb(10,15,130,55,'Sales Assistant')+rb(330,15,130,55,'Product')+ln(140,40,330,40)+T(235,32,'Sells',12,'middle',700)+ln(235,40,235,95)+rb(170,95,130,55,'Customer')
+    return svg(480,165,'Ternary relationship: Sales Assistant sells Product to Customer',b)
+s['figures']=[dict(svg=tern(),id='cs11-s236-fig1',caption='Figure 7.12 Ternary relationship',captionUrdu='شکل ۷.۱۲ ٹرنری ریلیشن شپ',captionPashto='انځور ۷.۱۲ درې-اړخیزه اړیکه',labels=[lab('Sales Assistant','سیلز اسسٹنٹ','د پلور مرستیال'),lab('Sells','فروخت کرتا ہے','پلوري'),lab('Product','پروڈکٹ','محصول'),lab('Customer','کسٹمر','پېرېدونکی')])]
+F.fg(0)
+H(s,'h1','d. Keys','د۔ کیز','د. کیلي')
+add(s,'b','A key is the relational means of specifying uniqueness. A key is an important part of relational database and a vital part of the structure of a table. A Key ensures each record within a table can be uniquely identified by one field or a combination of fields within the table.','کی انفرادیت متعین کرنے کا ریلیشنل ذریعہ ہے۔ کی ریلیشنل ڈیٹا بیس کا اہم حصہ اور ٹیبل کی ساخت کا لازمی حصہ ہے۔ کی یقینی بناتی ہے کہ ٹیبل کے اندر ہر ریکارڈ کو ٹیبل کے اندر ایک فیلڈ یا فیلڈز کے امتزاج سے منفرد طور پر شناخت کیا جا سکتا ہے۔','کیلي د ځانګړتیا د ټاکلو اړونده وسیله ده. کیلي د اړوند ډېټابېس مهمه برخه او د جدول د جوړښت اړینه برخه ده. کیلي ډاډ ترلاسه کوي چې په جدول کې هر ثبت د جدول دننه د یوې ساحې یا د ساحو د ګډون په واسطه په ځانګړي ډول پېژندل کېدای شي.')
+add(s,'c','There are different types of keys.','کیز کی مختلف اقسام ہیں۔','د کیلیو مختلف ډولونه شته.')
+H(s,'h2','i. Candidate Key','i۔ کینڈیڈیٹ کی','i. نوماند کیلي')
+add(s,'d','A Candidate key is any set of one or more columns whose combined values are unique among all occurrences. In other words a candidate key can be used to uniquely identify each record in the table. Every table must have at least one candidate key but at the same time can have several.','کینڈیڈیٹ کی ایک یا زیادہ کالموں کا کوئی بھی مجموعہ ہے جن کی مشترکہ قدریں تمام وقوعات میں منفرد ہوں۔ دوسرے الفاظ میں کینڈیڈیٹ کی کو ٹیبل کے ہر ریکارڈ کو منفرد طور پر شناخت کرنے کے لیے استعمال کیا جا سکتا ہے۔ ہر ٹیبل میں کم از کم ایک کینڈیڈیٹ کی ہونی چاہیے لیکن ساتھ ہی کئی بھی ہو سکتی ہیں۔','نوماند کیلي د یو یا ډیرو ستونونو هره ټولګه ده چې ګډې ارزښتونه یې د ټولو پېښو ترمنځ ځانګړي وي. په بلو کلمو نوماند کیلي د جدول د هر ثبت په ځانګړي ډول د پېژندلو لپاره کارېدای شي. هر جدول باید لږ تر لږه یوه نوماند کیلي ولري خو په ورته وخت کې څو هم لرلای شي.')
+F.done()
+fin(s,'Printed page 227: “iii.” the ternary relationship with Figure 7.12 Ternary relationship (Sales Assistant, Sells, Product and Customer; redrawn as coded SVG), “d. Keys” with its paragraphs and “i. Candidate Key”. In the candidate key paragraph the word “combined” is partly smudged in the scan and is given as combined.')

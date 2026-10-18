@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Internal energy and temperature / Figure 8.1 / 8.2 Heat'
+SECTIONS = [
+    ('8.1', ('8.1 TEMPERATURE', '8.1 درجۂ حرارت', '8.1 د تودوخې درجه'), [
+        ('p', 'single atoms (monoatomic gas), such as helium, the atoms move around, randomly colliding with each other and the walls of the container. So each atom has some translational kinetic energy. However, if the gas is made up of molecules with two or more atoms, the molecules can also stretch, contract and spin, so these molecules also have other types of kinetic energy called vibrational and rotational kinetic energy.',
+         'اکیلے ایٹموں (یک ایٹمی گیس) جیسے ہیلیم سے بنی ہو، ایٹم ادھر ادھر حرکت کرتے ہوئے ایک دوسرے اور برتن کی دیواروں سے بے ترتیب ٹکراتے ہیں۔ اس لیے ہر ایٹم میں کچھ انتقالی حرکی توانائی ہوتی ہے۔ تاہم اگر گیس دو یا زیادہ ایٹموں والے سالمات سے بنی ہو تو سالمات کھنچ، سکڑ اور گھوم بھی سکتے ہیں، اس لیے ان سالمات میں ارتعاشی اور گردشی حرکی توانائی کہلانے والی دوسری اقسام کی حرکی توانائی بھی ہوتی ہے۔',
+         'یوازینیو اتومونو (یو اتومي ګاز) لکه هیلیم څخه جوړ وي، اتومونه شاوخوا حرکت کوي او له یو بل او د لوښي له دېوالونو سره ګډوډ ټکرونه کوي. نو هر اتوم یو څه انتقالي حرکي انرژي لري. خو که ګاز له دوو یا ډېرو اتومونو لرونکو مالیکولونو جوړ وي، مالیکولونه غځېدای، کوچنی کېدای او څرخېدای هم شي، نو دا مالیکولونه نور ډولونه حرکي انرژي هم لري چې اهتزازي او څرخیزه حرکي انرژي بلل کېږي.'),
+        ('p', 'Like a gas, molecules in a liquid are free to move, but within the confines of the surface of the liquid. There is some attraction between molecules, which means there is some energy stored as molecules approach each other.',
+         'گیس کی طرح مائع میں بھی سالمات حرکت کرنے کے لیے آزاد ہیں لیکن مائع کی سطح کی حدود کے اندر۔ سالمات کے درمیان کچھ کشش ہوتی ہے، یعنی جب سالمات ایک دوسرے کے قریب آتے ہیں تو کچھ توانائی ذخیرہ ہوتی ہے۔',
+         'د ګاز په څېر، په مایع کې مالیکولونه د حرکت لپاره ازاد دي خو د مایع د سطحې په حدودو کې. د مالیکولونو ترمنځ یو څه جذب شته، یعنې کله چې مالیکولونه یو بل ته نږدې کېږي یو څه انرژي زېرمه کېږي.'),
+        ('p', 'In a solid, atoms jiggle rather than move around. They have kinetic energy, but they also have a lot of potential energy stored in the strong attractive force that holds the atoms together.',
+         'ٹھوس میں ایٹم ادھر ادھر حرکت کرنے کے بجائے لرزتے ہیں۔ ان میں حرکی توانائی ہوتی ہے لیکن ایٹموں کو جوڑے رکھنے والی مضبوط کششی قوت میں بہت سی مخفی توانائی بھی ذخیرہ ہوتی ہے۔',
+         'په جامد کې اتومونه د شاوخوا ګرځېدو پر ځای لړزي. حرکي انرژي لري، خو په هغه پیاوړي جذبي ځواک کې چې اتومونه سره ټینګ ساتي ډېره پټه انرژي هم زېرمه ده.'),
+        ('p', 'Temperature is a measure of the average kinetic energy of particles. The other contributions to the internal energy do not affect the temperature. The kinetic energy may be in the form of translational, vibrational and rotational kinetic energy. As atoms or molecules of the material are in constant motion, at high temperatures the kinetic energy of molecules is more and at lower temperatures it is less.',
+         'درجۂ حرارت ذرات کی اوسط حرکی توانائی کی پیمائش ہے۔ اندرونی توانائی کے دوسرے حصے درجۂ حرارت پر اثر نہیں ڈالتے۔ حرکی توانائی انتقالی، ارتعاشی اور گردشی شکل میں ہو سکتی ہے۔ چونکہ مادے کے ایٹم یا سالمات مسلسل حرکت میں ہیں، بلند درجۂ حرارت پر سالمات کی حرکی توانائی زیادہ اور کم درجۂ حرارت پر کم ہوتی ہے۔',
+         'د تودوخې درجه د ذرو د منځنۍ حرکي انرژۍ اندازه ده. د داخلي انرژۍ نورې برخې پر تودوخې اغېز نه کوي. حرکي انرژي کېدای شي انتقالي، اهتزازي او څرخیزه وي. څرنګه چې د مادې اتومونه یا مالیکولونه په دوامداره حرکت کې دي، په لوړه تودوخه کې د مالیکولونو حرکي انرژي ډېره او په ټیټه تودوخه کې لږه وي.'),
+        ('p', 'As atoms or molecules of the material are in constant motion, at high temperatures the kinetic energy of molecules increases. The monoatomic gas is shown in the figure 8.1 which only have translational kinetic energy, at high temperature the increase in translational kinetic energy is observed.',
+         'چونکہ مادے کے ایٹم یا سالمات مسلسل حرکت میں ہیں، بلند درجۂ حرارت پر سالمات کی حرکی توانائی بڑھ جاتی ہے۔ شکل 8.1 میں یک ایٹمی گیس دکھائی گئی ہے جس میں صرف انتقالی حرکی توانائی ہے؛ بلند درجۂ حرارت پر انتقالی حرکی توانائی میں اضافہ دیکھا جاتا ہے۔',
+         'څرنګه چې د مادې اتومونه یا مالیکولونه په دوامداره حرکت کې دي، په لوړه تودوخه کې د مالیکولونو حرکي انرژي زیاتېږي. په 8.1 شکل کې یو اتومي ګاز ښودل شوی چې یوازې انتقالي حرکي انرژي لري؛ په لوړه تودوخه کې د انتقالي حرکي انرژۍ زیاتوالی لیدل کېږي.'),
+        ('fig', 'Figure 8.1 TEMPERATURE: (a) The low average kinetic energy of the particles. (b) The temperature of the gas increases when energy is added to the gas.',
+         'شکل 8.1 درجۂ حرارت: (a) ذرات کی کم اوسط حرکی توانائی۔ (b) گیس کو توانائی دینے پر اس کا درجۂ حرارت بڑھتا ہے۔',
+         '8.1 شکل د تودوخې درجه: (a) د ذرو ټیټه منځنۍ حرکي انرژي. (b) کله چې ګاز ته انرژي ورکړل شي، د ګاز تودوخه لوړېږي.'),
+    ], True),
+    ('8.2', ('8.2 HEAT', '8.2 حرارت', '8.2 تودوخه'), [
+        ('p', 'Take some water in a kettle and place it on a flame. The water gradually becomes warmer and eventually starts boiling. How does it happen? In fact, the temperature of the flame is much higher than that of the kettle and the water. Something must have transferred from the hot flame to the cold water. In general temperature of any object can be raised (heated) by placing it in thermal contact with another hotter object.',
+         'کیتلی میں کچھ پانی لے کر اسے شعلے پر رکھیں۔ پانی آہستہ آہستہ گرم ہوتا ہے اور آخرکار ابلنے لگتا ہے۔ یہ کیسے ہوتا ہے؟ دراصل شعلے کا درجۂ حرارت کیتلی اور پانی سے بہت زیادہ ہے۔ گرم شعلے سے ٹھنڈے پانی میں ضرور کوئی چیز منتقل ہوئی ہے۔ عام طور پر کسی بھی چیز کا درجۂ حرارت اسے کسی زیادہ گرم چیز سے حرارتی رابطے میں رکھ کر بڑھایا (گرم کیا) جا سکتا ہے۔',
+         'په یوه کېتلۍ کې یو څه اوبه واچوئ او پر لمبه یې کېږدئ. اوبه ورو ورو ګرمېږي او بالاخره ایشېدل پیلوي. دا څنګه کېږي؟ په حقیقت کې د لمبې تودوخه د کېتلۍ او اوبو تر تودوخې ډېره لوړه ده. له ګرمې لمبې څخه سړو اوبو ته باید یو څه لېږدول شوي وي. په عمومي ډول د هر شي تودوخه د بل ګرم شي سره په تودوخیزه اړیکه کې په ایښودلو لوړېدای (تودېدای) شي.'),
+        ('p', 'For example, Water in a kettle can be heated by placing it on flame. The earth is heated by the hot sun as thermal contact.',
+         'مثال کے طور پر، کیتلی میں پانی کو شعلے پر رکھ کر گرم کیا جا سکتا ہے۔ زمین گرم سورج سے حرارتی رابطے کے ذریعے گرم ہوتی ہے۔',
+         'د بېلګې په توګه، په کېتلۍ کې اوبه پر لمبه په ایښودلو تودېدای شي. ځمکه د ګرم لمر په واسطه د تودوخیزې اړیکې له لارې تودېږي.'),
+    ]),
+]

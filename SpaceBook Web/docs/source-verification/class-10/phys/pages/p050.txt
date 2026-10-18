@@ -1,0 +1,18 @@
+@printed 153
+@status lesson
+@issue Source: 10thphysics4.pdf page 40. Figure 14.12 is a photograph of a household electricity meter; it is described.
+example 14.7 | FLASHLIGHT || ٹارچ || لاسي څراغ
+p In the flashlight the current is 0.40 A, and the voltage of 3.0 V is delivered by cell. Find the power delivered to the bulb. || ٹارچ میں کرنٹ 0.40 A ہے اور سیل 3.0 V وولٹیج فراہم کرتا ہے۔ بلب کو فراہم کی گئی طاقت معلوم کریں۔ || په لاسي څراغ کې جریان 0.40 A دی او حجره 3.0 V ولټیج ورکوي. بلب ته ورکړل شوی توان معلوم کړئ.
+p **GIVEN:** Current I = 0.40 A; Voltage V = 3.0 V. **REQUIRED:** Electric Power P = ? || **معلوم:** کرنٹ I = 0.40 A؛ وولٹیج V = 3.0 V۔ **مطلوب:** برقی طاقت P = ? || **ورکړل شوي:** جریان I = 0.40 A؛ ولټیج V = 3.0 V. **غوښتل شوي:** برېښنايي توان P = ?
+eq \text{SOLUTION: The electric power is}\quad P = I\times V
+eq \text{Putting values}\quad P = 0.40\ \text{A}\times3.0\ \text{V} \quad \text{or} \quad P = 0.40\ \tfrac{\text{C}}{\text{s}}\times3.0\ \tfrac{\text{J}}{\text{C}} \qquad \text{Hence}\quad P = 1.2\ \text{J/s} = 1.2\ \text{W} \quad \text{(Answer)}
+p The 'wattage' rating of this bulb would, therefore, be 1.2 W. || لہٰذا اس بلب کی 'واٹیج' درجہ بندی 1.2 W ہوگی۔ || نو د دې بلب 'واټیج' درجه به 1.2 W وي.
+endexample
+box assignment | ASSIGNMENT 14.7: AUTOMOBILE HEADLIGHT || اسائنمنٹ 14.7: گاڑی کی ہیڈ لائٹ || دنده ۱۴.۷: د موټر مخکنی څراغ
+q 1 | Calculate the resistance of a 40 W automobile headlight designed for 12 V. || 12 V کے لیے بنائی گئی 40 W کی گاڑی کی ہیڈ لائٹ کی مزاحمت معلوم کریں۔ || د موټر د 40 W مخکني څراغ مقاومت محاسبه کړئ چې د 12 V لپاره جوړ شوی.
+sol R = 3.6 Ω ## $R = \dfrac{V^2}{P} = \dfrac{(12\ \text{V})^2}{40\ \text{W}} = \dfrac{144}{40} = 3.6\ \Omega$ (book answer key: 3.6 Ω) || $R = \dfrac{V^2}{P} = \dfrac{144}{40} = 3.6\ \Omega$ || $R = \dfrac{V^2}{P} = \dfrac{144}{40} = 3.6\ \Omega$
+endbox
+p **D. Electrical energy and Kilowatt-hour (kWh):** The electric metre in our homes measures how much energy (in kWh) we use, not the electrical power. Electrical energy is consumed in large quantities for which joule is a very small unit, therefore **Kilowatt hour** (kWh) is preferred. It is the amount of energy consumed by a device of power 1 kW running continuously for one hour. || **D. برقی توانائی اور کلو واٹ آور (kWh):** ہمارے گھروں میں لگا بجلی کا میٹر یہ ناپتا ہے کہ ہم کتنی توانائی (kWh میں) استعمال کرتے ہیں، برقی طاقت نہیں۔ برقی توانائی بڑی مقدار میں استعمال ہوتی ہے جس کے لیے جول بہت چھوٹی اکائی ہے، اس لیے **کلو واٹ آور** (kWh) کو ترجیح دی جاتی ہے۔ یہ وہ توانائی ہے جو 1 kW طاقت کا آلہ ایک گھنٹہ مسلسل چلنے میں استعمال کرتا ہے۔ || **D. برېښنايي انرژي او کیلوواټ ساعت (kWh):** زموږ په کورونو کې د برېښنا میټر دا اندازه کوي چې څومره انرژي (په kWh) کاروو، نه برېښنايي توان. برېښنايي انرژي په لوی مقدار مصرفېږي چې ژول ورته ډېر کوچنی واحد دی، نو **کیلوواټ ساعت** (kWh) غوره ګڼل کېږي. دا هغه انرژي ده چې د 1 kW توان وسیله یې په یوه ساعت پرله پسې کار کې مصرفوي.
+eq E = 1\ \text{kW hr} = 1000\ \text{W}\times1\ \text{hr} = 1000\ \text{J/s}\times3600\ \text{s} = 3.6\times10^{6}\ \text{J}
+p kWh is the unit for which the tariff (cost of electricity) is decided by electricity supply company. || kWh وہ اکائی ہے جس کے حساب سے بجلی فراہم کرنے والی کمپنی ٹیرف (بجلی کی قیمت) طے کرتی ہے۔ || kWh هغه واحد دی چې د برېښنا رسوونکې شرکت پرې تعرفه (د برېښنا بیه) ټاکي.
+p FIGURE 14.12 – Electric meter (photograph of a household electricity meter mounted on a wall). || شکل 14.12 – بجلی کا میٹر (دیوار پر لگے گھریلو بجلی کے میٹر کی تصویر)۔ || ۱۴.۱۲ شکل – د برېښنا میټر (پر دېوال د کورني برېښنا میټر انځور).

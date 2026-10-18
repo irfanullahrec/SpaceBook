@@ -1,0 +1,124 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s235-p226",
+  "title": "Binary relationship types: one-to-one (7.9), one-to-many (7.10), many-to-many (7.11)",
+  "headingUrdu": "بائنری ریلیشن شپ کی اقسام: ایک سے ایک (۷.۹)، ایک سے کئی (۷.۱۰)، کئی سے کئی (۷.۱۱)",
+  "headingPashto": "د دوه-اړخیزې اړیکې ډولونه: یو-ته-یو (۷.۹)، یو-ته-ډیر (۷.۱۰)، ډیر-ته-ډیر (۷.۱۱)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 235,
+    "printedPage": "226"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s235-a",
+      "en": "Like unary relationship, in binary relationship the associations between two entity types may be described as one-to-one, one-to-many or many-to-many.",
+      "ur": "یونری ریلیشن شپ کی طرح بائنری ریلیشن شپ میں دو انٹیٹی اقسام کے درمیان تعلقات کو ایک سے ایک، ایک سے کئی یا کئی سے کئی کے طور پر بیان کیا جا سکتا ہے۔",
+      "ps": "د یو-اړخیزې اړیکې په څېر په دوه-اړخیزه اړیکه کې د دوو وجود ډولونو ترمنځ تړاوونه د یو-ته-یو، یو-ته-ډیر یا ډیر-ته-ډیر په توګه بیانېدای شي."
+    },
+    {
+      "id": "cs11-s235-b",
+      "en": "one-to-one: one instance of an entity (A) is associated with only one instance of another entity (B). For example, in a database one instance of entity type Country (A) is associated with only one instance of entity type President (B).",
+      "ur": "ایک سے ایک: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے صرف ایک انسٹینس سے منسلک ہوتا ہے۔ مثلاً ڈیٹا بیس میں انٹیٹی ٹائپ ملک (اے) کا ایک انسٹینس انٹیٹی ٹائپ صدر (بی) کے صرف ایک انسٹینس سے منسلک ہوتا ہے۔",
+      "ps": "یو-ته-یو: د یوه وجود (A) یوه بېلګه د بل وجود (B) یوازې له یوې بېلګې سره تړل شوې ده. د بېلګې په توګه په ډېټابېس کې د وجود ډول هېواد (A) یوه بېلګه د وجود ډول ولسمشر (B) یوازې له یوې بېلګې سره تړل شوې ده."
+    },
+    {
+      "id": "cs11-s235-c",
+      "en": "one-to-many: one instance of an entity (A) is associated with zero, one or many instances of another entity (B), but for one instance of entity B there is only one instance of entity A. For example, for a company with all employees working in one building, the building name (A) is associated with many different employees (B), but those employees all share the same singular association with entity A.",
+      "ur": "ایک سے کئی: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے صفر، ایک یا کئی انسٹینسز سے منسلک ہوتا ہے، لیکن انٹیٹی بی کے ایک انسٹینس کے لیے انٹیٹی اے کا صرف ایک انسٹینس ہوتا ہے۔ مثلاً ایسی کمپنی کے لیے جس کے تمام ملازمین ایک عمارت میں کام کرتے ہوں، عمارت کا نام (اے) بہت سے مختلف ملازمین (بی) سے منسلک ہوتا ہے، لیکن وہ تمام ملازمین انٹیٹی اے کے ساتھ ایک ہی واحد تعلق رکھتے ہیں۔",
+      "ps": "یو-ته-ډیر: د یوه وجود (A) یوه بېلګه د بل وجود (B) له صفر، یو یا ډیرو بېلګو سره تړل شوې ده، خو د B وجود د یوې بېلګې لپاره د A وجود یوازې یوه بېلګه شته. د بېلګې په توګه د داسې شرکت لپاره چې ټول کارکوونکي یې په یوه ودانۍ کې کار کوي، د ودانۍ نوم (A) له ډیرو مختلفو کارکوونکو (B) سره تړل شوی دی، خو دا ټول کارکوونکي له A وجود سره ورته واحده تړاو شریکوي."
+    },
+    {
+      "id": "cs11-s235-d",
+      "en": "many-to-many: one instance of an entity (A) is associated with one, zero or many instances of another entity (B), and one instance of entity B is associated with one, zero or many instances of entity A. For example, for a company in which all of its employees work on multiple projects, each instance of an employee (A) is associated with many instances of a project (B), and at the same time, each instance of a project (B) has multiple employees (A) associated with it.",
+      "ur": "کئی سے کئی: ایک انٹیٹی (اے) کا ایک انسٹینس دوسری انٹیٹی (بی) کے ایک، صفر یا کئی انسٹینسز سے منسلک ہوتا ہے، اور انٹیٹی بی کا ایک انسٹینس انٹیٹی اے کے ایک، صفر یا کئی انسٹینسز سے منسلک ہوتا ہے۔ مثلاً ایسی کمپنی کے لیے جس کے تمام ملازمین متعدد پراجیکٹس پر کام کرتے ہوں، ملازم (اے) کا ہر انسٹینس پراجیکٹ (بی) کے کئی انسٹینسز سے منسلک ہوتا ہے، اور اسی وقت پراجیکٹ (بی) کے ہر انسٹینس سے متعدد ملازمین (اے) منسلک ہوتے ہیں۔",
+      "ps": "ډیر-ته-ډیر: د یوه وجود (A) یوه بېلګه د بل وجود (B) له یو، صفر یا ډیرو بېلګو سره تړل شوې ده، او د B وجود یوه بېلګه د A وجود له یو، صفر یا ډیرو بېلګو سره تړل شوې ده. د بېلګې په توګه د داسې شرکت لپاره چې ټول کارکوونکي یې په څو پروژو کې کار کوي، د کارکوونکي (A) هره بېلګه د پروژې (B) له ډیرو بېلګو سره تړل شوې ده، او په ورته وخت کې د پروژې (B) هره بېلګه له ډیرو کارکوونکو (A) سره تړل شوې ده."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s235-a",
+        "cs11-s235-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s235-c"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s235-d"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 70\" role=\"img\" aria-label=\"Entity A and entity B joined by a line with cardinality 1 : 1\" style=\"width:100%;max-width:270px;height:auto;background:#fff\"><text x=\"15\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">A</text><text x=\"250\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">B</text><line x1=\"15\" y1=\"35\" x2=\"250\" y2=\"35\" stroke=\"#111\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"28\" x2=\"30\" y2=\"42\" stroke=\"#111\" stroke-width=\"1.4\"/><line x1=\"235\" y1=\"28\" x2=\"235\" y2=\"42\" stroke=\"#111\" stroke-width=\"1.4\"/><text x=\"132\" y=\"58\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">1 : 1</text></svg>",
+      "id": "cs11-s235-fig1",
+      "caption": "Figure 7.9 one-to-one",
+      "captionUrdu": "شکل ۷.۹ ایک سے ایک",
+      "captionPashto": "انځور ۷.۹ یو-ته-یو",
+      "labels": [
+        {
+          "en": "1 : 1",
+          "ur": "۱ : ۱",
+          "ps": "۱ : ۱"
+        }
+      ]
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 70\" role=\"img\" aria-label=\"Entity A and entity B joined by a line with cardinality 1 : M\" style=\"width:100%;max-width:270px;height:auto;background:#fff\"><text x=\"15\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">A</text><text x=\"250\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">B</text><line x1=\"15\" y1=\"35\" x2=\"250\" y2=\"35\" stroke=\"#111\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"28\" x2=\"30\" y2=\"42\" stroke=\"#111\" stroke-width=\"1.4\"/><polyline points=\"250,26 235,35 250,44\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.4\"/><text x=\"132\" y=\"58\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">1 : M</text></svg>",
+      "id": "cs11-s235-fig2",
+      "caption": "Figure 7.10 one-to-many",
+      "captionUrdu": "شکل ۷.۱۰ ایک سے کئی",
+      "captionPashto": "انځور ۷.۱۰ یو-ته-ډیر",
+      "labels": [
+        {
+          "en": "1 : M",
+          "ur": "۱ : ایم",
+          "ps": "۱ : M"
+        }
+      ]
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 70\" role=\"img\" aria-label=\"Entity A and entity B joined by a line with cardinality M : N\" style=\"width:100%;max-width:270px;height:auto;background:#fff\"><text x=\"15\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">A</text><text x=\"250\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">B</text><line x1=\"15\" y1=\"35\" x2=\"250\" y2=\"35\" stroke=\"#111\" stroke-width=\"1.4\"/><polyline points=\"15,26 30,35 15,44\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"28\" x2=\"30\" y2=\"42\" stroke=\"#111\" stroke-width=\"1.4\"/><polyline points=\"250,26 235,35 250,44\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.4\"/><text x=\"132\" y=\"58\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">M : N</text></svg>",
+      "id": "cs11-s235-fig3",
+      "caption": "Figure 7.11 many-to-many",
+      "captionUrdu": "شکل ۷.۱۱ کئی سے کئی",
+      "captionPashto": "انځور ۷.۱۱ ډیر-ته-ډیر",
+      "labels": [
+        {
+          "en": "M : N",
+          "ur": "ایم : این",
+          "ps": "M : N"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 226: the paragraph introducing one-to-one, one-to-many and many-to-many relationships, with Figures 7.9 one-to-one (1 : 1), 7.10 one-to-many (1 : M) and 7.11 many-to-many (M : N), each a line between entities A and B with crow’s-foot markings (redrawn as coded SVG). The captions are printed as “Figure7.9”, “Figure7.10” and “Figure7.11”. The terms one-to-one, one-to-many and many-to-many are printed in bold. The right edge of the scan is cut. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:48:39.991476+00:00",
+    "scope": "Scan 235 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

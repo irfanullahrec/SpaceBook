@@ -1,0 +1,549 @@
+{
+  "chapter": "stat11-vital-statistics",
+  "id": "stat11-s247-exercise7-c",
+  "title": "Exercise-7: Q7.9 – Q7.11",
+  "headingUrdu": "مشق-7: سوال 7.9 – 7.11",
+  "headingPashto": "تمرین-7: پوښتنې 7.9 – 7.11",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 247,
+    "printedPage": "237"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s247-q79",
+      "en": "7.9 Calculate general fertility rate and age specific fertility rate from the following data.",
+      "ur": "7.9 درج ذیل اعداد و شمار سے عمومی شرحِ زرخیزی اور عمر کے لحاظ سے مخصوص شرحِ زرخیزی حساب کریں۔",
+      "ps": "7.9 له لاندې معلوماتو څخه عمومي د زېږون‌توان کچه او د عمر له مخې ځانګړې د زېږون‌توان کچه محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex7-9"
+    },
+    {
+      "id": "stat11-s247-q710",
+      "en": "7.10 (a) Differentiate between crude and standardized death rates. (b) Calculate the crude and standardized death rates of the local population from the following data by direct method.",
+      "ur": "7.10 (الف) خام اور معیاری شرحیں اموات میں فرق کریں۔ (ب) درج ذیل اعداد و شمار سے براہِ راست طریقے سے مقامی آبادی کی خام اور معیاری شرحیں اموات حساب کریں۔",
+      "ps": "7.10 (a) په خامو او معیاري د مړینې کچو کې توپیر وکړئ. (b) له لاندې معلوماتو څخه په مستقیمه طریقه د سیمه‌ییز نفوس خام او معیاري د مړینې کچې محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex7-10"
+    },
+    {
+      "id": "stat11-s247-q711",
+      "en": "7.11 (i) Calculate the crude death rate percent for each factory and (ii) the standardized death percent for factory-B by taking the factory-A as a standard, from the data given below:",
+      "ur": "7.11 (i) نیچے دیے گئے اعداد و شمار سے ہر کارخانے کی خام شرحِ اموات فیصد حساب کریں اور (ii) کارخانہ-A کو معیار لے کر کارخانہ-B کی معیاری شرحِ اموات فیصد حساب کریں:",
+      "ps": "7.11 (i) له لاندې ورکړل شویو معلوماتو څخه د هرې فابریکې خامه د مړینې کچه په سلنه محاسبه کړئ او (ii) د فابریکې-A د معیار په نیولو سره د فابریکې-B معیاري د مړینې کچه په سلنه محاسبه کړئ:",
+      "role": "question",
+      "exerciseId": "stat11-ex7-11"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s247-q79"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s247-q710"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s247-q711"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q7.9: female population and live births",
+      "captionUrdu": "سوال 7.9: عورتوں کی آبادی اور زندہ پیدائشیں",
+      "captionPashto": "پوښتنه 7.9: د ښځو نفوس او ژوندي زېږونونه",
+      "headers": [
+        {
+          "en": "Age group",
+          "ur": "عمر کا گروہ",
+          "ps": "عمري ډله"
+        },
+        {
+          "en": "Female population",
+          "ur": "عورتوں کی آبادی",
+          "ps": "د ښځو نفوس"
+        },
+        {
+          "en": "Live births",
+          "ur": "زندہ پیدائشیں",
+          "ps": "ژوندي زېږونونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "16 – 20",
+            "ur": "16 – 20",
+            "ps": "16 – 20"
+          },
+          {
+            "en": "116410",
+            "ur": "116410",
+            "ps": "116410"
+          },
+          {
+            "en": "10468",
+            "ur": "10468",
+            "ps": "10468"
+          }
+        ],
+        [
+          {
+            "en": "21 – 25",
+            "ur": "21 – 25",
+            "ps": "21 – 25"
+          },
+          {
+            "en": "113610",
+            "ur": "113610",
+            "ps": "113610"
+          },
+          {
+            "en": "16983",
+            "ur": "16983",
+            "ps": "16983"
+          }
+        ],
+        [
+          {
+            "en": "26 – 30",
+            "ur": "26 – 30",
+            "ps": "26 – 30"
+          },
+          {
+            "en": "102930",
+            "ur": "102930",
+            "ps": "102930"
+          },
+          {
+            "en": "12522",
+            "ur": "12522",
+            "ps": "12522"
+          }
+        ],
+        [
+          {
+            "en": "31 – 35",
+            "ur": "31 – 35",
+            "ps": "31 – 35"
+          },
+          {
+            "en": "93300",
+            "ur": "93300",
+            "ps": "93300"
+          },
+          {
+            "en": "7083",
+            "ur": "7083",
+            "ps": "7083"
+          }
+        ],
+        [
+          {
+            "en": "36 – 40",
+            "ur": "36 – 40",
+            "ps": "36 – 40"
+          },
+          {
+            "en": "73920",
+            "ur": "73920",
+            "ps": "73920"
+          },
+          {
+            "en": "3456",
+            "ur": "3456",
+            "ps": "3456"
+          }
+        ],
+        [
+          {
+            "en": "41 – 45",
+            "ur": "41 – 45",
+            "ps": "41 – 45"
+          },
+          {
+            "en": "62700",
+            "ur": "62700",
+            "ps": "62700"
+          },
+          {
+            "en": "1140",
+            "ur": "1140",
+            "ps": "1140"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex7-q79"
+    },
+    {
+      "caption": "Q7.10: standard and local population",
+      "captionUrdu": "سوال 7.10: معیاری اور مقامی آبادی",
+      "captionPashto": "پوښتنه 7.10: معیاري او سیمه‌ییز نفوس",
+      "headers": [
+        {
+          "en": "Age-group (years)",
+          "ur": "عمر کا گروہ (سال)",
+          "ps": "عمري ډله (کلونه)"
+        },
+        {
+          "en": "Standard population: Population",
+          "ur": "معیاری آبادی: آبادی",
+          "ps": "معیاري نفوس: نفوس"
+        },
+        {
+          "en": "Standard population: Deaths",
+          "ur": "معیاری آبادی: اموات",
+          "ps": "معیاري نفوس: مړینې"
+        },
+        {
+          "en": "Local population: Population",
+          "ur": "مقامی آبادی: آبادی",
+          "ps": "سیمه‌ییز نفوس: نفوس"
+        },
+        {
+          "en": "Local population: Deaths",
+          "ur": "مقامی آبادی: اموات",
+          "ps": "سیمه‌ییز نفوس: مړینې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 – 9",
+            "ur": "0 – 9",
+            "ps": "0 – 9"
+          },
+          {
+            "en": "600",
+            "ur": "600",
+            "ps": "600"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "10 – 19",
+            "ur": "10 – 19",
+            "ps": "10 – 19"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "1500",
+            "ur": "1500",
+            "ps": "1500"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "20 – 59",
+            "ur": "20 – 59",
+            "ps": "20 – 59"
+          },
+          {
+            "en": "3000",
+            "ur": "3000",
+            "ps": "3000"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "2400",
+            "ur": "2400",
+            "ps": "2400"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          }
+        ],
+        [
+          {
+            "en": "60 & over",
+            "ur": "60 & over",
+            "ps": "60 & over"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "700",
+            "ur": "700",
+            "ps": "700"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex7-q710"
+    },
+    {
+      "caption": "Q7.11: Factory-A and Factory-B",
+      "captionUrdu": "سوال 7.11: کارخانہ-A اور کارخانہ-B",
+      "captionPashto": "پوښتنه 7.11: فابریکه-A او فابریکه-B",
+      "headers": [
+        {
+          "en": "Age-group (years)",
+          "ur": "عمر کا گروہ (سال)",
+          "ps": "عمري ډله (کلونه)"
+        },
+        {
+          "en": "Factor-A: Population",
+          "ur": "Factor-A: آبادی",
+          "ps": "Factor-A: نفوس"
+        },
+        {
+          "en": "Factor-A: Deaths",
+          "ur": "Factor-A: اموات",
+          "ps": "Factor-A: مړینې"
+        },
+        {
+          "en": "Factor-B: Population",
+          "ur": "Factor-B: آبادی",
+          "ps": "Factor-B: نفوس"
+        },
+        {
+          "en": "Factor-B: Deaths",
+          "ur": "Factor-B: اموات",
+          "ps": "Factor-B: مړینې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Under 21",
+            "ur": "Under 21",
+            "ps": "Under 21"
+          },
+          {
+            "en": "330",
+            "ur": "330",
+            "ps": "330"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "38",
+            "ur": "38",
+            "ps": "38"
+          }
+        ],
+        [
+          {
+            "en": "21 – 29",
+            "ur": "21 – 29",
+            "ps": "21 – 29"
+          },
+          {
+            "en": "570",
+            "ur": "570",
+            "ps": "570"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "720",
+            "ur": "720",
+            "ps": "720"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          }
+        ],
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "710",
+            "ur": "710",
+            "ps": "710"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "810",
+            "ur": "810",
+            "ps": "810"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          }
+        ],
+        [
+          {
+            "en": "40 – 49",
+            "ur": "40 – 49",
+            "ps": "40 – 49"
+          },
+          {
+            "en": "780",
+            "ur": "780",
+            "ps": "780"
+          },
+          {
+            "en": "55",
+            "ur": "55",
+            "ps": "55"
+          },
+          {
+            "en": "390",
+            "ur": "390",
+            "ps": "390"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          }
+        ],
+        [
+          {
+            "en": "50 – 59",
+            "ur": "50 – 59",
+            "ps": "50 – 59"
+          },
+          {
+            "en": "690",
+            "ur": "690",
+            "ps": "690"
+          },
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          },
+          {
+            "en": "250",
+            "ur": "250",
+            "ps": "250"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "60 & over",
+            "ur": "60 & over",
+            "ps": "60 & over"
+          },
+          {
+            "en": "250",
+            "ur": "250",
+            "ps": "250"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "80",
+            "ur": "80",
+            "ps": "80"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex7-q711"
+    }
+  ],
+  "sourceNote": "Printed page 237. This is the last scan of the local set; the printed answers, glossary and index of the book (and Units 8 and 9) are not present. The printed table headings \"Factor-A\" and \"Factor-B\" (for Factory-A and Factory-B) are kept as printed. The two-level headers are flattened. A black pen mark at the right edge is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:41:44.675906+00:00",
+    "scope": "Scan 247 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

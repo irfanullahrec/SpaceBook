@@ -1,0 +1,27 @@
+// Correct the scan 195 notes: the C. detailed questions and the Projects are on scan 196 (printed page 200).
+(function () {
+  const ch = BIO_11_DATA.find(c => c.id === 'bio11-diversity-plants');
+  const sec = ch.sections.find(s => s.id === 'bio11-s195-exercise-a-2-b');
+  sec.sourceNote = 'The printed answer key is not on this page. Exercise block B ends here; the C. detailed questions and the Projects are on the next scan (scan 196, printed page 200).';
+  sec.auditStatus = 'verified against scan (tilted; the lines of B slope strongly); folio cut off; no printed answer key';
+})();
+
+// Scan 196 — printed page 200 (folio hidden): EXERCISE C. detailed questions, Projects.
+bio11Page('bio11-diversity-plants', { scan: 196, printedPage: 200, slug: 'exercise-c-projects', title: 'EXERCISE · C. Answer the following questions in detail · Projects', headingUrdu: 'مشق · ج۔ درج ذیل سوالات کے جوابات تفصیل سے دیں · منصوبے', headingPashto: 'تمرین · ج. د لاندې پوښتنو ځوابونه په تفصیل سره ورکړئ · پروژې', layout: 'exercise', auditStatus: 'verified against scan (thumb shadow at the left edge, curl shadow at the right); folio hidden (printed page 200 follows 199); the lower half of the page is blank; no printed answer key', sourceNote: 'This is the last page of Chapter 8. The lower half of the page is blank.' }, [
+  ['h-c', 'C. Answer the following questions in detail.', 'ج۔ درج ذیل سوالات کے جوابات تفصیل سے دیں۔', 'ج. د لاندې پوښتنو ځوابونه په تفصیل سره ورکړئ.', { kind: 'subheading', role: 'question', exerciseId: 'c-head' }],
+  ['c1', '1. Describe the adaptations shown by bryophytes to land life.', '۱۔ برائیوفائٹس کی خشکی کی زندگی کے لیے موافقتیں بیان کریں۔', '۱. د وچې ژوند ته د بریوفایټونو تطابقونه بیان کړئ.', { role: 'question', exerciseId: 'c1', listGroup: 'long-q' }],
+  ['c2', '2. Explain the life cycle of flowering plant.', '۲۔ پھول دار پودے کے زندگی چکر کی وضاحت کریں۔', '۲. د ګل لرونکي بوټي د ژوند دوره تشریح کړئ.', { role: 'question', exerciseId: 'c2', listGroup: 'long-q' }],
+  ['c3', '3. Write detailed note on any two of the following.', '۳۔ درج ذیل میں سے کسی دو پر تفصیلی نوٹ لکھیں۔', '۳. د لاندې څخه پر هر دوو تفصیلي یادښت ولیکئ.', { role: 'question', exerciseId: 'c3', listGroup: 'long-q' }],
+  ['c3a', 'a. Psilopsida', 'الف۔ سائلوپسڈا', 'الف. سایلوپسیډا', { role: 'question', exerciseId: 'c3a', listGroup: 'long-q-sub', listLabel: 'a.' }],
+  ['c3b', 'b. Sphenopsida', 'ب۔ اسفینوپسڈا', 'ب. سفینوپسیډا', { role: 'question', exerciseId: 'c3b', listGroup: 'long-q-sub', listLabel: 'b.' }],
+  ['c3c', 'c. Lycopsida', 'ج۔ لائکوپسڈا', 'ج. لایکوپسیډا', { role: 'question', exerciseId: 'c3c', listGroup: 'long-q-sub', listLabel: 'c.' }],
+  ['c4', '4. Give important characters of liverworts and hornworts.', '۴۔ لیور ورٹس اور ہارن ورٹس کی اہم خصوصیات بیان کریں۔', '۴. د لیور ورټونو او هارن ورټونو مهمې ځانګړتیاوې ورکړئ.', { role: 'question', exerciseId: 'c4', listGroup: 'long-q' }],
+  ['h-proj', 'Projects', 'منصوبے', 'پروژې', { kind: 'subheading', role: 'question', exerciseId: 'proj-head' }],
+  ['pr0', 'Teacher may plan a trip to nearby area with natural vegetation and ask his/her students to collect plants in the following manner.', 'استاد قریبی علاقے کی سیر کا منصوبہ بنا سکتا ہے جہاں قدرتی نباتات ہوں اور اپنے طلبہ سے درج ذیل طریقے سے پودے جمع کرنے کو کہہ سکتا ہے۔', 'ښوونکی کولای شي د طبیعي نباتاتو سره نږدې سیمې ته سفر پلان کړي او خپلو زده کوونکو ته ووايي چې په لاندې ډول بوټي راټول کړي.', { role: 'question', exerciseId: 'pr0', listGroup: 'projects' }],
+  ['pr1', '1. Two examples of bryophytes.', '۱۔ برائیوفائٹس کی دو مثالیں۔', '۱. د بریوفایټونو دوه بېلګې.', { role: 'question', exerciseId: 'pr1', listGroup: 'projects-sub', listLabel: '1.' }],
+  ['pr2', '2. Two examples of fern.', '۲۔ فرن کی دو مثالیں۔', '۲. د فرن دوه بېلګې.', { role: 'question', exerciseId: 'pr2', listGroup: 'projects-sub', listLabel: '2.' }],
+  ['pr3', '3. Five examples of angiospermic plants.', '۳۔ اینجیوسپرمک پودوں کی پانچ مثالیں۔', '۳. د انجیوسپرمیک بوټو پنځه بېلګې.', { role: 'question', exerciseId: 'pr3', listGroup: 'projects-sub', listLabel: '3.' }],
+  ['pr4', '4. Three examples of gymnosperms', '۴۔ جمنوسپرمز کی تین مثالیں', '۴. د جمنوسپرمونو درې بېلګې', { role: 'question', exerciseId: 'pr4', listGroup: 'projects-sub', listLabel: '4.', editorialNote: 'The scan prints this line without a full stop; preserved as printed.' }],
+  ['pr5', 'Take guidance from the teacher for proper preservation of plants.', 'پودوں کے مناسب تحفظ کے لیے استاد سے رہنمائی لیں۔', 'د بوټو د سم ساتلو لپاره له ښوونکي څخه لارښوونه واخلئ.', { role: 'question', exerciseId: 'pr5', listGroup: 'projects-sub' }],
+  ['pr6', 'Make a medicinal plant collection present in your local environment. Paste them on cards and write their taxonomic classification for every collected plant. Take guidance from your teacher for identification and classification of your plant collection.', 'اپنے مقامی ماحول میں موجود طبی پودوں کا ذخیرہ بنائیں۔ انہیں کارڈز پر چپکائیں اور ہر جمع کردہ پودے کی درجہ بندی (ٹیکسونومک) درجہ بندی لکھیں۔ اپنے پودوں کے ذخیرے کی شناخت اور درجہ بندی کے لیے اپنے استاد سے رہنمائی لیں۔', 'په خپل سیمه ییز چاپېریال کې شته د درملیزو بوټو ټولګه جوړه کړئ. دوی پر کارتونو ونښلوئ او د هر راټول شوي بوټي طبقه بندي ولیکئ. د خپلو بوټو ټولګې د پېژندنې او طبقه بندۍ لپاره له خپل ښوونکي څخه لارښوونه واخلئ.', { role: 'question', exerciseId: 'pr6', listGroup: 'projects' }]
+], { inspectedExclusions: [{ kind: 'question mark icon beside the EXERCISE heading and shadow at the edges', reason: 'Decoration and photographic artefact.' }] });

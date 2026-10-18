@@ -1,0 +1,105 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s220-p211",
+  "title": "Limitations vi–ix; 7.1.3 Database",
+  "headingUrdu": "حدود vi تا ix؛ ۷.۱.۳ ڈیٹا بیس",
+  "headingPashto": "محدودیتونه vi تر ix؛ ۷.۱.۳ ډېټابېس",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 220,
+    "printedPage": "211"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s220-h1",
+      "en": "vi. Difficulty in Accessing Data",
+      "ur": "vi۔ ڈیٹا تک رسائی میں دشواری",
+      "ps": "vi. د ډېټا ته په لاسرسي کې ستونزه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s220-a",
+      "en": "It is not easy to retrieve information using a file management system. The simplest data retrieval task from file requires extensive programming. Also this is a time consuming and a high skill activity.",
+      "ur": "فائل مینجمنٹ سسٹم کے ذریعے معلومات حاصل کرنا آسان نہیں۔ فائل سے ڈیٹا حاصل کرنے کا سادہ ترین کام بھی وسیع پروگرامنگ کا تقاضا کرتا ہے۔ نیز یہ وقت طلب اور اعلیٰ مہارت کی سرگرمی ہے۔",
+      "ps": "د فایل مدیریت سیسټم په کارولو سره معلومات ترلاسه کول اسانه نه دي. له فایل نه د ډېټا ترلاسه کولو ساده ترین کار هم پراخ پروګرامنګ غواړي. همداراز دا وخت نیوونکی او لوړ مهارت فعالیت دی."
+    },
+    {
+      "id": "cs11-s220-h2",
+      "en": "vii. Integrity Problems",
+      "ur": "vii۔ سالمیت کے مسائل",
+      "ps": "vii. د بشپړتیا ستونزې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s220-b",
+      "en": "Integrity means reliability and accuracy of data. Data values may need to satisfy some integrity constraints. For example the balance field value of a bank account must be greater than 5000. We have to handle this through program code in file management systems.",
+      "ur": "سالمیت کا مطلب ڈیٹا کی قابلِ اعتمادیت اور درستی ہے۔ ڈیٹا کی قدروں کو کچھ سالمیتی پابندیاں پوری کرنی پڑ سکتی ہیں۔ مثلاً بینک اکاؤنٹ کے بیلنس فیلڈ کی قدر ۵۰۰۰ سے زیادہ ہونی چاہیے۔ فائل مینجمنٹ سسٹمز میں ہمیں اسے پروگرام کوڈ کے ذریعے سنبھالنا پڑتا ہے۔",
+      "ps": "بشپړتیا د ډېټا باوري توب او سموالي ته وايي. د ډېټا ارزښتونه کېدای شي ځینې د بشپړتیا محدودیتونه پوره کړي. د بېلګې په توګه د بانک حساب د توازن ساحې ارزښت باید له ۵۰۰۰ نه زیات وي. موږ باید دا په فایل مدیریت سیسټمونو کې د پروګرام کوډ له لارې اداره کړو."
+    },
+    {
+      "id": "cs11-s220-h3",
+      "en": "viii. Atomicity Problem",
+      "ur": "viii۔ ایٹمیسٹی کا مسئلہ",
+      "ps": "viii. د اټومیت ستونزه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s220-c",
+      "en": "Atomicity means that either one transaction or another should take place as a whole. It is difficult to ensure atomicity in file management system. For example while transferring an amount of Rs. 1000/- from Account A to account B, if a failure occurs during execution there could be situation like Rs. 1000/- are deducted from Account A and not credited in Account B.",
+      "ur": "ایٹمیسٹی کا مطلب ہے کہ یا تو ایک لین دین مکمل ہو یا دوسرا۔ فائل مینجمنٹ سسٹم میں ایٹمیسٹی کو یقینی بنانا مشکل ہے۔ مثلاً اکاؤنٹ اے سے اکاؤنٹ بی میں ۱۰۰۰ روپے منتقل کرتے وقت اگر عمل کے دوران خرابی پیش آ جائے تو ایسی صورتحال ہو سکتی ہے کہ اکاؤنٹ اے سے ۱۰۰۰ روپے کٹ جائیں اور اکاؤنٹ بی میں جمع نہ ہوں۔",
+      "ps": "اټومیت دا مانا لري چې یا یوه معامله یا بله باید په بشپړه توګه ترسره شي. په فایل مدیریت سیسټم کې د اټومیت ډاډ ترلاسه کول ستونزمن دي. د بېلګې په توګه د A حساب نه B حساب ته د ۱۰۰۰ روپیو د لېږد پر مهال که د اجرا په وخت کې ناکامي وي نو داسې حالت کېدای شي چې ۱۰۰۰ روپۍ د A حساب نه کم شي او په B حساب کې نه جمع شي."
+    },
+    {
+      "id": "cs11-s220-h4",
+      "en": "ix. Poor data security",
+      "ur": "ix۔ ڈیٹا کا کمزور تحفظ",
+      "ps": "ix. د ډېټا ضعیف امنیت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s220-d",
+      "en": "All the files are stored as text files. These files can be easily located and trapped because file management system has no centralized data security. Enforcing security constraints such as effective password protection, locking parts of file in file processing system are very difficult to program.",
+      "ur": "تمام فائلیں ٹیکسٹ فائلوں کے طور پر محفوظ ہوتی ہیں۔ ان فائلوں کو آسانی سے تلاش اور قابو کیا جا سکتا ہے کیونکہ فائل مینجمنٹ سسٹم میں مرکزی ڈیٹا تحفظ نہیں ہوتا۔ تحفظاتی پابندیاں لاگو کرنا جیسے مؤثر پاس ورڈ تحفظ، فائل پراسیسنگ سسٹم میں فائل کے حصوں کو لاک کرنا، پروگرام کرنے میں بہت مشکل ہیں۔",
+      "ps": "ټولې فایلونه د متن فایلونو په توګه ساتل کېږي. دا فایلونه په اسانۍ موندل او نیول کېدای شي ځکه چې د فایل مدیریت سیسټم مرکزي ډېټا امنیت نه لري. د امنیتي محدودیتونو پلي کول لکه اغېزمن د پټنوم ساتنه، د فایل د برخو بندول د فایل پروسس سیسټم کې پروګرام کول ډیر ستونزمن دي."
+    },
+    {
+      "id": "cs11-s220-h5",
+      "en": "7.1.3 Database",
+      "ur": "۷.۱.۳ ڈیٹا بیس",
+      "ps": "۷.۱.۳ ډېټابېس",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s220-e",
+      "en": "Database is a shared collection of logically related data (and a description of this data i.e. metadata), designed to meet the information needs of multiple users in an organization. It usually refers to data organized and stored in a computer that can be searched and retrieved by a computer program called DBMS.",
+      "ur": "ڈیٹا بیس منطقی طور پر متعلقہ ڈیٹا (اور اس ڈیٹا کی تفصیل یعنی میٹا ڈیٹا) کا مشترکہ مجموعہ ہے جو کسی ادارے میں متعدد صارفین کی معلوماتی ضروریات پوری کرنے کے لیے بنایا گیا ہو۔ یہ عموماً کمپیوٹر میں منظم اور محفوظ ڈیٹا کی طرف اشارہ کرتا ہے جسے ڈی بی ایم ایس نامی کمپیوٹر پروگرام کے ذریعے تلاش اور حاصل کیا جا سکتا ہے۔",
+      "ps": "ډېټابېس د منطقي اړوندې ډېټا (او د دې ډېټا تشریح یعنې میټا ډېټا) ګډه ټولګه ده، چې په یوه اداره کې د ډیرو کاروونکو د معلوماتي اړتیاوو د پوره کولو لپاره ډیزاین شوې ده. دا معمولاً هغه ډېټا ته اشاره کوي چې په کمپیوټر کې منظمه او ساتل شوې وي او د DBMS په نوم کمپیوټر پروګرام په واسطه لټول او ترلاسه کېدای شي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s220-h1",
+        "cs11-s220-a",
+        "cs11-s220-h2",
+        "cs11-s220-b",
+        "cs11-s220-h3",
+        "cs11-s220-c",
+        "cs11-s220-h4",
+        "cs11-s220-d",
+        "cs11-s220-h5",
+        "cs11-s220-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 211: limitations vi–ix of the file management system (the heading “ix. Poor data security” is printed in a slightly different typeface) and the banner “7.1.3 Database” with its definition. The first line of the page is cut at the top. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:42:40.819114+00:00",
+    "scope": "Scan 220 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

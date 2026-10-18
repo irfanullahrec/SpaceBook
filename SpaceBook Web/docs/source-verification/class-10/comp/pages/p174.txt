@@ -1,0 +1,17 @@
+@printed 162
+@status lesson
+p شکل نمبر 7.35 میں HTML ڈاکومنٹ یہ ظاہر کرتی ہے کہ کس طرح کسی پیج میں تصویر ڈسپلے کرنا ہے۔ فرض کریں کہ تصویر mosques.jpg اور HTML ڈاکومنٹ ایک ہی فولڈر میں ہیں۔ || The HTML document in Figure 7.35 shows how to display a picture on a page. Suppose the picture mosques.jpg and the HTML document are in the same folder. || په ۷.۳۵ شکل کې HTML سند ښيي چې په پاڼه کې انځور څنګه وښودل شي. فرض کړئ انځور mosques.jpg او HTML سند په یوه فولډر کې دي.
+### شکل نمبر 7.35 HTML ڈاکومنٹ میں تصویر کا استعمال || Figure 7.35 Using a picture in an HTML document || ۷.۳۵ شکل په HTML سند کې د انځور کارونه
+m <html>
+m <head>
+m <title>Inserting Image</title>
+m </head>
+m <body>
+m <img src="mosque.jpg">
+m </body>
+m </html>
+@issue The text names the picture "mosques.jpg" but the code uses src="mosque.jpg"; the names must match exactly or the picture will not appear.
+p براؤزر ونڈو اس کو ایسے دکھائے گی جیسا کہ شکل نمبر 7.36 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.36. || براوزر کړکۍ به یې لکه په ۷.۳۶ شکل کې وښيي.
+@deco Figure 7.36 براؤزر ونڈو میں دکھائی گئی تصویر (Picture shown in the browser window): a browser window titled "Inserting Image" showing a photograph of the Faisal Mosque, Islamabad. Not reproduced.
+### تصویر پر بارڈر لگانا || Putting a border on a picture || پر انځور پوله ایښودل
+p بارڈر لائنوں کا ایک باکس ہے جو کسی تصویر کے آس پاس ہوتا ہے۔ ذیل میں جیسا کہ <img> ٹیگ border کا استعمال کرتے … || A border is a box of lines around a picture. As below, using the border attribute of the <img> tag … || پوله د کرښو یو بکس دی چې د انځور شاوخوا وي. لکه لاندې، د <img> ټیګ د border ځانګړتیا په کارولو …

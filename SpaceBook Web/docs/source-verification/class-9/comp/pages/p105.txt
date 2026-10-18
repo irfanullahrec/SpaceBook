@@ -1,0 +1,31 @@
+@pdf 61
+@printed 97
+@status lesson
+p The following flowchart shows the working of *if* statement. || درج ذیل فلوچارٹ *if* اسٹیٹمنٹ کا کام دکھاتا ہے۔ || لاندې فلوچارټ د *if* بیان کار ښيي.
+svg Figure: 4.1 if structure || شکل 4.1 if کا ڈھانچہ || ۴.۱ شکل د if جوړښت
+<svg viewBox="0 0 420 260" width="420" role="img" aria-label="Flowchart: arrow into a diamond 'if condition'; true branch goes right to a box 'statement (s)' and then back left to the main line; false branch goes straight down; both continue to 'The rest of code'" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF41" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M150 4 V30" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/>
+<polygon points="150,34 250,74 150,114 50,74" fill="#fff" stroke="#111827" stroke-width="2"/><text x="150" y="70">if</text><text x="150" y="90">condition</text>
+<path d="M250 74 H330 V116" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/><text x="280" y="66">true</text>
+<rect x="260" y="120" width="140" height="44" fill="#e0f2fe" stroke="#111827" stroke-width="2"/><text x="330" y="147">statement (s)</text>
+<path d="M330 164 V196 H156" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/>
+<path d="M150 114 V226" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/><text x="104" y="132">false</text>
+<text x="150" y="250">The rest of code</text>
+</svg>
+endsvg
+p The following programs demonstrate the use of *if* statement. || درج ذیل پروگرام *if* اسٹیٹمنٹ کا استعمال دکھاتے ہیں۔ || لاندې پروګرامونه د *if* بیان کارونه ښيي.
+### Program 4.1: A program that prints the entered number when it is greater than 50. || پروگرام 4.1: داخل کیا گیا عدد 50 سے بڑا ہو تو اسے پرنٹ کرنے والا پروگرام۔ || پروګرام ۴.۱: که داخل شوی عدد له ۵۰ لوی وي، چاپ یې کړئ.
+m #include<stdio.h>
+m void main()
+m {
+m     int x;
+m     printf("\n Enter an integer = ");
+m     scanf("%d",&x);
+m     if (x >50)
+m         printf("%d", x);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter an integer = 75
+m 75
+endbox

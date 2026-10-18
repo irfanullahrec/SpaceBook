@@ -1,0 +1,21 @@
+@pdf 136
+@printed 129
+@status lesson
+### 5.1.7 Difference between Loop structure || 5.1.7 لوپ اسٹرکچرز میں فرق || ۵.۱.۷ د لوپ جوړښتونو توپیر
+p The following is the difference among *for, while* and *do-while* loops. || درج ذیل *for، while* اور *do-while* لوپس میں فرق ہے۔ || لاندې د *for، while* او *do-while* لوپونو توپیر دی.
+p ***for* loop:** It is preferred to use when the programmer knows in advance how many times the body of the loop will be executed. || ***for* لوپ:** یہ اس وقت ترجیحاً استعمال ہوتا ہے جب پروگرامر کو پہلے سے معلوم ہو کہ لوپ کا جسم کتنی بار چلے گا۔ || ***for* لوپ:** هغه وخت غوره دی چې پروګرامر له مخکې پوه وي چې د لوپ بدنه به څو ځله اجرا کېږي.
+p ***while* loop:** It is suitable to use in situations where the programmer does not know the number of times the body of the loop will be executed. In *while* loop, test condition comes before the body of the loop. First, the condition is tested and then the body of the loop is executed to produce the desired result. || ***while* لوپ:** یہ ان حالات میں موزوں ہے جب پروگرامر کو معلوم نہ ہو کہ لوپ کا جسم کتنی بار چلے گا۔ *while* لوپ میں شرط جسم سے پہلے آتی ہے۔ پہلے شرط جانچی جاتی ہے اور پھر مطلوبہ نتیجے کے لیے لوپ کا جسم چلتا ہے۔ || ***while* لوپ:** په هغو حالتونو کې مناسب دی چې پروګرامر نه پوهېږي د لوپ بدنه به څو ځله اجرا کېږي. په *while* کې شرط له بدنې مخکې راځي. لومړی شرط ازمویل کېږي بیا د مطلوبې پایلې لپاره بدنه اجرا کېږي.
+p ***do-while* loop:** It is suitable to use in situations where the programmer wants the loop to be executed at least once. In *do-while* loop, the body of the loop comes before the test condition. The body of the loop is executed and then the condition is tested. In *do-while* loop the condition is terminated with semicolon i.e., statement || ***do-while* لوپ:** یہ ان حالات میں موزوں ہے جب پروگرامر چاہے کہ لوپ کم از کم ایک بار چلے۔ *do-while* میں لوپ کا جسم شرط سے پہلے آتا ہے۔ پہلے جسم چلتا ہے پھر شرط جانچی جاتی ہے۔ *do-while* میں شرط سیمی کولن پر ختم ہوتی ہے یعنی اسٹیٹمنٹ || ***do-while* لوپ:** په هغو حالتونو کې مناسب دی چې پروګرامر غواړي لوپ لږ تر لږه یو ځل اجرا شي. په *do-while* کې بدنه له شرط مخکې راځي. لومړی بدنه اجرا کېږي بیا شرط ازمویل کېږي. په *do-while* کې شرط په semicolon پای ته رسېږي یعنې بیان
+@issue The do-while paragraph ends mid-sentence ("i.e., statement") where the next heading begins; the heading "5.1.8 Nested Loop" is also printed twice. Kept as printed.
+### 5.1.8 Nested Loop || 5.1.8 نیسٹڈ لوپ || ۵.۱.۸ ځالی لوپ
+p A loop inside another loop is called nested loop. In nested loop an inner loop is completely enclosed inside an outer loop. The following diagram explains the use of nested loop. || ایک لوپ کے اندر دوسرا لوپ نیسٹڈ لوپ کہلاتا ہے۔ نیسٹڈ لوپ میں اندرونی لوپ مکمل طور پر بیرونی لوپ کے اندر بند ہوتا ہے۔ درج ذیل خاکہ نیسٹڈ لوپ کا استعمال واضح کرتا ہے۔ || د یوه لوپ دننه بل لوپ ځالی لوپ بلل کېږي. په ځالي لوپ کې داخلي لوپ په بشپړ ډول د بهرني لوپ دننه وي. لاندې ډیاګرام د ځالي لوپ کارونه تشریح کوي.
+m Outer loop
+m {
+m     .
+m     Inner loop
+m     {
+m         .
+m         .
+m     } End of Inner loop
+m } End of Outer loop
+p For example, using a *for* loop within another *for* loop is said to be nested *for* loop. In nested *for* loop one or more statements can be included in the body of the loop. In nested *for* loop, the number of iterations of inner loop will be equal to the number of iterations in the outer loop multiplies by the number of iterations in the inner loop. The working of nested *for* loop is shown in figure 5.6. || مثلاً ایک *for* لوپ کے اندر دوسرا *for* لوپ استعمال کرنا نیسٹڈ *for* لوپ کہلاتا ہے۔ نیسٹڈ *for* لوپ کے جسم میں ایک یا زیادہ اسٹیٹمنٹس شامل ہو سکتی ہیں۔ نیسٹڈ *for* لوپ میں اندرونی لوپ کی کل تکرار بیرونی لوپ کی تکرار ضرب اندرونی لوپ کی تکرار کے برابر ہوتی ہے۔ نیسٹڈ *for* لوپ کا کام شکل 5.6 میں دکھایا گیا ہے۔ || د بېلګې په توګه د یوه *for* لوپ دننه د بل *for* لوپ کارول ځالی *for* لوپ بلل کېږي. د ځالي *for* لوپ په بدنه کې یو یا څو بیانونه شاملېدای شي. په ځالي *for* لوپ کې د داخلي لوپ ټول تکرارونه د بهرني لوپ د تکرارونو او د داخلي لوپ د تکرارونو د ضرب سره مساوي وي. د ځالي *for* لوپ کار په ۵.۶ شکل کې ښودل شوی.

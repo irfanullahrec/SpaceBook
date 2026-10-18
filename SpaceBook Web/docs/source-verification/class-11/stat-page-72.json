@@ -1,0 +1,304 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s072-weighted-mean",
+  "title": "2.2.6 Disadvantages · 2.2.7 Weighted arithmetic mean · Example 2.11",
+  "headingUrdu": "2.2.6 خامیاں · 2.2.7 وزنی حسابی اوسط · مثال 2.11",
+  "headingPashto": "2.2.6 زیانونه · 2.2.7 وزني حسابي اوسط · بېلګه 2.11",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 72,
+    "printedPage": "64"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s072-h226",
+      "en": "2.2.6 Disadvantages of arithmetic mean",
+      "ur": "2.2.6 حسابی اوسط کی خامیاں",
+      "ps": "2.2.6 د حسابي اوسط زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s072-d1",
+      "en": "(i) It cannot be applied to qualitative data.",
+      "ur": "(i) اسے کیفی اعداد و شمار پر لاگو نہیں کیا جا سکتا۔",
+      "ps": "(i) دا پر کیفي معلوماتو نشي پلي کېدای.",
+      "listGroup": "disadvantages"
+    },
+    {
+      "id": "stat11-s072-d2",
+      "en": "(ii) It is highly affected by extreme values, especially when the number of observations is very small.",
+      "ur": "(ii) یہ انتہائی قدروں سے بہت متاثر ہوتا ہے، خاص طور پر جب مشاہدات کی تعداد بہت کم ہو۔",
+      "ps": "(ii) دا د سختو ارزښتونو لخوا ډېر اغېزمن کېږي، په ځانګړي ډول کله چې د کتنو شمېر ډېر لږ وي.",
+      "listGroup": "disadvantages"
+    },
+    {
+      "id": "stat11-s072-d3",
+      "en": "(iii) It is not useful for highly skewed distributions.",
+      "ur": "(iii) یہ بہت زیادہ کج تقسیمات کے لیے مفید نہیں ہے۔",
+      "ps": "(iii) دا د ډېر کوړو ویشونو لپاره ګټور نه دی.",
+      "listGroup": "disadvantages"
+    },
+    {
+      "id": "stat11-s072-d4",
+      "en": "(iv) It cannot be calculated for incomplete data.",
+      "ur": "(iv) اسے نامکمل اعداد و شمار کے لیے حساب نہیں کیا جا سکتا۔",
+      "ps": "(iv) دا د نیمګړو معلوماتو لپاره نشي محاسبه کېدای.",
+      "listGroup": "disadvantages"
+    },
+    {
+      "id": "stat11-s072-d5",
+      "en": "(v) It may be a figure which does not exist in a series.",
+      "ur": "(v) یہ ایک ایسا عدد ہو سکتا ہے جو سلسلے میں موجود نہ ہو۔",
+      "ps": "(v) دا یو داسې عدد کېدای شي چې په لړۍ کې شتون ونلري.",
+      "listGroup": "disadvantages"
+    },
+    {
+      "id": "stat11-s072-h227",
+      "en": "2.2.7 Weighted arithmetic mean",
+      "ur": "2.2.7 وزنی حسابی اوسط",
+      "ps": "2.2.7 وزني حسابي اوسط",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s072-t227",
+      "en": "Arithmetic mean gives equal importance to all observations of a series but in daily life we see that all observations are not equally important, some are more important than others. For example, one kg of sugar, tea and salt do not have the same price. The subjects English, Mathematics, Urdu are not equally difficult. In order to make them equally important certain numerical values are assigned, called weights. For example, if the observations are prices, then weights are assigned in the form of quantities. If the observations are quantities, then weights are assigned in the form of prices. Formula for weighted arithmetic mean is",
+      "ur": "حسابی اوسط سلسلے کے تمام مشاہدات کو برابر اہمیت دیتا ہے لیکن روزمرہ زندگی میں ہم دیکھتے ہیں کہ تمام مشاہدات برابر اہم نہیں ہوتے، کچھ دوسروں سے زیادہ اہم ہوتے ہیں۔ مثال کے طور پر ایک کلوگرام چینی، چائے اور نمک کی قیمت یکساں نہیں ہوتی۔ انگریزی، ریاضی، اردو کے مضامین برابر مشکل نہیں ہیں۔ انہیں برابر اہم بنانے کے لیے کچھ عددی قدریں مقرر کی جاتی ہیں جنہیں وزن کہتے ہیں۔ مثال کے طور پر اگر مشاہدات قیمتیں ہوں تو وزن مقداروں کی صورت میں مقرر کیے جاتے ہیں۔ اگر مشاہدات مقداریں ہوں تو وزن قیمتوں کی صورت میں مقرر کیے جاتے ہیں۔ وزنی حسابی اوسط کا فارمولا ہے",
+      "ps": "حسابي اوسط د لړۍ ټولو کتنو ته مساوي اهمیت ورکوي خو په ورځني ژوند کې موږ ګورو چې ټولې کتنې مساوي مهمې نه دي، ځینې له نورو مهمې دي. د مثال په توګه یو کیلوګرام بوره، چای او مالګه یو شان بیه نه لري. د انګلیسي، ریاضي، اردو مضامین مساوي ستونزمن نه دي. د دې لپاره چې دوی مساوي مهم وګرځي ځینې شمېرنیز ارزښتونه ټاکل کېږي چې وزنونه بلل کېږي. د مثال په توګه که کتنې بیې وي نو وزنونه د کچو په بڼه ټاکل کېږي. که کتنې کچې وي نو وزنونه د بیو په بڼه ټاکل کېږي. د وزني حسابي اوسط فورمول دی"
+    },
+    {
+      "id": "stat11-s072-t2",
+      "en": "Weighted arithmetic mean is more accurate than unweighted arithmetic mean. This average is used in the construction of index numbers.",
+      "ur": "وزنی حسابی اوسط غیر وزنی حسابی اوسط سے زیادہ درست ہوتا ہے۔ یہ اوسط اشاریہ اعداد کی تشکیل میں استعمال ہوتا ہے۔",
+      "ps": "وزني حسابي اوسط له نه‌وزني حسابي اوسط څخه ډېر دقیق دی. دا اوسط د شاخصي شمېرو په جوړولو کې کارول کېږي."
+    },
+    {
+      "id": "stat11-s072-ex",
+      "en": "Example: 2.11",
+      "ur": "مثال: 2.11",
+      "ps": "بېلګه: 2.11",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-11"
+    },
+    {
+      "id": "stat11-s072-q",
+      "en": "A candidate got 73% marks in English, 82% in Mathematics 57% in chemistry, 62% in physics and 60% in Urdu. Find the weighted mean if the weights 4, 3, 3, 1, 1 are allotted to the subjects.",
+      "ur": "ایک امیدوار نے انگریزی میں 73%، ریاضی میں 82%، کیمیا میں 57%، طبیعیات میں 62% اور اردو میں 60% نمبر حاصل کیے۔ وزنی اوسط معلوم کریں اگر مضامین کو وزن 4, 3, 3, 1, 1 دیے گئے ہوں۔",
+      "ps": "یو نوماند په انګلیسي کې 73%، په ریاضي کې 82%، په کیمیا کې 57%، په فزیک کې 62% او په اردو کې 60% نمرې ترلاسه کړې. وزني اوسط ومومئ که چېرې مضامینو ته وزنونه 4, 3, 3, 1, 1 ورکړل شوي وي.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-11"
+    },
+    {
+      "id": "stat11-s072-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-11"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s072-h226",
+        "stat11-s072-d1",
+        "stat11-s072-d2",
+        "stat11-s072-d3",
+        "stat11-s072-d4",
+        "stat11-s072-d5",
+        "stat11-s072-h227",
+        "stat11-s072-t227"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s072-t2",
+        "stat11-s072-ex",
+        "stat11-s072-q",
+        "stat11-s072-sol"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    }
+  ],
+  "vocabulary": {
+    "weights": {
+      "ur": "وزن",
+      "ps": "وزنونه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s072-w",
+      "latex": "\\bar{x}_w=\\dfrac{\\sum_{i=1}^{n}w_ix_i}{\\sum_{i=1}^{n}w_i}",
+      "accessible": "x̄w = (Σ (i = 1 to n) wi xi)/(Σ (i = 1 to n) wi)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄w = (Σ (i = 1 to n) wi xi)/(Σ (i = 1 to n) wi)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄w = (Σ (i = 1 to n) wi xi)/(Σ (i = 1 to n) wi)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄w = (Σ (i = 1 to n) wi xi)/(Σ (i = 1 to n) wi)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.11: marks, weights and wx",
+      "captionUrdu": "مثال 2.11: نمبر، وزن اور wx",
+      "captionPashto": "بېلګه 2.11: نمرې، وزنونه او wx",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "w",
+          "ur": "w",
+          "ps": "w"
+        },
+        {
+          "en": "wx",
+          "ur": "wx",
+          "ps": "wx"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "292",
+            "ur": "292",
+            "ps": "292"
+          }
+        ],
+        [
+          {
+            "en": "82",
+            "ur": "82",
+            "ps": "82"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "246",
+            "ur": "246",
+            "ps": "246"
+          }
+        ],
+        [
+          {
+            "en": "57",
+            "ur": "57",
+            "ps": "57"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "171",
+            "ur": "171",
+            "ps": "171"
+          }
+        ],
+        [
+          {
+            "en": "62",
+            "ur": "62",
+            "ps": "62"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "62",
+            "ur": "62",
+            "ps": "62"
+          }
+        ],
+        [
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "831",
+            "ur": "831",
+            "ps": "831"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-11",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 64. The weighted-mean value 69.25 is on the next page. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:34:12.342194+00:00",
+    "scope": "Scan 72 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

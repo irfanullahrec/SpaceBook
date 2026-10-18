@@ -1,0 +1,24 @@
+@pdf 129
+@printed 121
+@status lesson
+m         Body of the loop
+m }
+p Where, **Condition:** The condition is given as a relational expression. The body of the loop is executed only if the given condition is true. If the condition is false, the body of the loop is never executed. || جہاں **Condition:** شرط ریلیشنل اظہار کی صورت میں دی جاتی ہے۔ لوپ کا جسم صرف اس وقت چلتا ہے جب شرط درست ہو۔ اگر شرط غلط ہو تو لوپ کا جسم کبھی نہیں چلتا۔ || چې **Condition:** شرط د اړیکه ییزې افادې په بڼه ورکول کېږي. د لوپ بدنه یوازې هغه وخت اجرا کېږي چې شرط سم وي. که شرط ناسم وي، بدنه هېڅکله نه اجرا کېږي.
+p **Body of the loop:** It is a statement or group of statements in braces { } to be repeated. || **Body of the loop:** یہ بریسز { } میں وہ اسٹیٹمنٹ یا اسٹیٹمنٹس ہیں جنہیں دہرانا ہے۔ || **Body of the loop:** په { } کې هغه بیان یا بیانونه چې تکرارېږي.
+p **Note:** The important point to note when using *while* loop is that we need to use increment or decrement statement inside *while* loop so that the loop variable gets changed on each iteration, and at some point condition returns false. This way we can end the execution of *while* loop otherwise, the loop would execute indefinitely. Working of *while* loop is shown in figure 5.2. || **نوٹ:** *while* لوپ استعمال کرتے وقت اہم بات یہ ہے کہ لوپ کے اندر increment یا decrement اسٹیٹمنٹ استعمال کریں تاکہ ہر تکرار پر لوپ متغیر بدلے اور کسی مرحلے پر شرط غلط ہو جائے۔ اسی طرح ہم *while* لوپ ختم کر سکتے ہیں، ورنہ لوپ لامحدود چلتا رہے گا۔ *while* لوپ کا کام شکل 5.2 میں دکھایا گیا ہے۔ || **یادونه:** د *while* لوپ د کارولو پر مهال مهم ټکی دا دی چې په لوپ کې increment یا decrement بیان وکاروو څو د لوپ متغیر په هر تکرار بدل شي او یو وخت شرط ناسم شي. په دې ډول *while* لوپ پای ته رسوو، کنه لوپ بې پایه چلېږي. د *while* لوپ کار په ۵.۲ شکل کې ښودل شوی.
+svg Figure: 5.2 Working of while loop || شکل 5.2 while لوپ کا کام || ۵.۲ شکل د while لوپ کار
+<svg viewBox="0 0 400 270" width="400" role="img" aria-label="Flowchart: Start, then diamond 'Condition?'; True goes down to 'Do Task', which loops back up to the line above the diamond; False goes right and down to 'End'" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">
+<defs><marker id="arF52" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="140" y="6" width="100" height="36" rx="18" fill="#15803d"/><text x="190" y="29" fill="#fff">Start</text>
+<path d="M190 42 V74" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/>
+<polygon points="190,78 270,118 190,158 110,118" fill="#15803d"/><text x="190" y="123" fill="#fff">Condition?</text>
+<path d="M190 158 V200" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/><text x="214" y="182" font-weight="700">True</text>
+<rect x="135" y="204" width="110" height="36" rx="4" fill="#15803d"/><text x="190" y="227" fill="#fff">Do Task</text>
+<path d="M190 240 V258 H60 V60 H186" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/>
+<path d="M270 118 H320 V200" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/><text x="296" y="110" font-weight="700">False</text>
+<rect x="270" y="204" width="100" height="36" rx="18" fill="#15803d"/><text x="320" y="227" fill="#fff">End</text>
+</svg>
+endsvg
+p The following programs demonstrate the working of *while* loop. || درج ذیل پروگرام *while* لوپ کا کام دکھاتے ہیں۔ || لاندې پروګرامونه د *while* لوپ کار ښيي.
+### Program 5.5: A program that displays "Pakistan" for five times using *while* loop. || پروگرام 5.5: *while* لوپ سے "Pakistan" پانچ بار دکھانے کا پروگرام۔ || پروګرام ۵.۵: د *while* لوپ په مرسته "Pakistan" پنځه ځله ښودل.
+m # include <stdio.h>

@@ -1,0 +1,29 @@
+@printed 88
+@status lesson
+m     else
+m         cout<<num<<"is a negative number"<<endl;
+m     return 0;
+m }
+@issue The else branch prints "is a negative number" for 0 too (0 is neither positive nor negative), and the message lacks a leading space ("7is…"). Typographic quotes in the scan are normalised to straight quotes.
+p مذکورہ پروگرام میں، جو عدد اِن پُٹ ہو گا اسے پہلے چیک کیا جائے گا کہ مثبت ہے یا منفی اور اگر عدد مثبت ہوا تو پہلے if کی باڈی کو چلایا جائے گا تاکہ یہ کنڈیشن ٹیسٹ کی جا سکے کہ نمبر جفت ہے یا طاق۔ یہ ضروری ہے کہ پہلی if اسٹیٹمنٹ کی باڈی کو نیسٹڈ if میں موجود قوسین { } کے اندر بند کر دیا جائے تاکہ اندر والی if اسٹیٹمنٹ کو باڈی کا حصہ بنایا جا سکے۔ || In the program above, the number input is first checked to see whether it is positive or negative; if it is positive, the body of the first if is run so that the condition whether the number is even or odd can be tested. The body of the first if statement must be enclosed in braces { } so that the inner if statement becomes part of the body. || په پورتني پروګرام کې داخل شوی عدد لومړی ازمویل کېږي چې مثبت دی که منفي؛ که مثبت وي، د لومړي if بدنه چلېږي چې وازمویل شي عدد جفت دی که طاق. اړینه ده چې د لومړي if بیان بدنه په { } قوسونو کې وتړل شي چې دننني if بیان د بدنې برخه شي.
+@sec 4-1-7 | 4.1.7 سلیکشن سٹرکچر کے درمیان فرق || 4.1.7 Difference among all selection structures || ۴.۱.۷ د انتخابي جوړښتونو توپیر
+### 4.1.7 سلیکشن سٹرکچر کے درمیان فرق (Difference among all selection structure) || 4.1.7 Difference among all the selection structures || ۴.۱.۷ د ټولو انتخابي جوړښتونو توپیر
+p if اسٹیٹمنٹ: اس وقت استعمال کیا جاتا ہے جب شرط کے صحیح (True) ہونے پر اسٹیٹمنٹس کے ایک بلاک کو چلانا ہو۔ اگر شرط کا نتیجہ غلط (False) ہو تو اسٹیٹمنٹ کے بلاک کو نظر انداز کر دیا جائے گا اور کنٹرول، if کے بلاک کے بعد آنے والی پہلی اسٹیٹمنٹ پر چلا جائے گا اور پروگرام وہاں سے آگے چلنا شروع ہو جائے گا۔ || if statement: used when a block of statements is to be run if the condition is true. If the condition is false, the block is skipped, control passes to the first statement after the if block, and the program continues from there. || if بیان: هغه وخت کارېږي چې د شرط د سم (True) کېدو پر مهال د بیانونو یو بلاک وچلول شي. که شرط ناسم (False) وي، بلاک پرېښودل کېږي، کنټرول د if له بلاک وروسته لومړي بیان ته ځي او پروګرام له هغه ځایه مخکې ځي.
+p if-else اسٹیٹمنٹ: یہ ایسی صورتحال میں استعمال کی جاتی ہے جب if اسٹیٹمنٹ میں آنے والی شرط کا نتیجہ True ہو تو اسٹیٹمنٹ کا ایک بلاک چلتا ہے لیکن اگر شرط کا نتیجہ False ہو تو if کے بعد آنے والے بلاک کو نظر انداز کر دیا جاتا ہے اور else کے بعد آنے والے بلاک کو چلایا جاتا ہے۔ یہ اسٹیٹمنٹ کے دو میں سے کسی ایک بلاک کا انتخاب کر کے اسے چلاتا ہے۔ || if-else statement: used in a situation where, if the condition in the if statement is true, one block of statements runs; but if it is false, the block after if is skipped and the block after else is run. It chooses one of two blocks of statements and runs it. || if-else بیان: په داسې حالت کې کارېږي چې که د if شرط True وي د بیانونو یو بلاک چلېږي؛ خو که False وي، له if وروسته بلاک پرېښودل کېږي او له else وروسته بلاک چلېږي. دا له دوو بلاکونو یو ټاکي او چلوي یې.
+p switch-case اسٹیٹمنٹ: یہ کثیر الانتخاب اسٹیٹمنٹ ہے۔ یہ کسی ویری ایبل یا کسی عبارت کے نتیجے کی بنیاد پر اسٹیٹمنٹ کے ایک بلاک کو منتخب کرنے کے لئے استعمال کیا جاتا ہے۔ یہ کسی ویری ایبل کی قیمت یا کسی عبارت کے نتیجے کا موازنہ ہر case میں موجود قیمت کے ساتھ کرتا ہے۔ اور جوڑ مل جانے کی صورت میں اس case کے بعد آنے والی اسٹیٹمنٹ کے بلاک کو چلا دیتا ہے۔ لیکن اگر اسے کوئی بھی جوڑ نہ ملے تو default (اگر موجود ہے تو) کے بعد آنے والی اسٹیٹمنٹ کے بلاک کو چلایا جاتا ہے ورنہ کنٹرول کو switch کے بلاک کے بعد آنے والی پہلی اسٹیٹمنٹ پر بھیج دیا جاتا ہے۔ || switch-case statement: a multiple-choice statement. It is used to select one block of statements on the basis of a variable or the result of an expression. It compares the value of the variable or the result of the expression with the value in each case, and when a match is found it runs the block of statements after that case. If no match is found, the block after default (if present) is run; otherwise control is sent to the first statement after the switch block. || switch-case بیان: څو انتخابي بیان دی. د یوه متغیر یا عبارت د پایلې پر بنسټ د بیانونو د یوه بلاک د ټاکلو لپاره کارېږي. د متغیر ارزښت یا د عبارت پایله د هر case له ارزښت سره پرتله کوي او د سمون په صورت کې له هغه case وروسته بلاک چلوي. که هېڅ سمون ونه موندل شي، له default (که وي) وروسته بلاک چلېږي؛ که نه، کنټرول د switch له بلاک وروسته لومړي بیان ته لېږل کېږي.
+@sec 4-1-8 | 4.1.8 یونٹ 1 کے فلوچارٹس کے لئے کوڈز || 4.1.8 Code for the flowcharts of Unit 1 || ۴.۱.۸ د ۱ څپرکي د فلوچارټونو کوډونه
+### 4.1.8 یونٹ 1 کے فلوچارٹس کے لئے کوڈز || 4.1.8 Code for the flowcharts of Unit 1 || ۴.۱.۸ د ۱ څپرکي د فلوچارټونو کوډونه
+### پروگرام 4.9 پروگرام میں اِن پُٹ کیے گئے عدد base کی طاقت exponent معلوم کرنا۔ || Program 4.9 Find the power (exponent) of the number (base) input in the program || پروګرام ۴.۹ د داخل شوي عدد (base) توان (exponent) پیدا کول
+m #include <iostream>
+m #include <cmath>
+m using namespace std;
+m int main()
+m {
+m     float base, exponent, result;
+m     cout << "Enter base and exponent respectively:  ";
+m     cin >> base >> exponent;
+box info | آؤٹ پُٹ || Output || Output
+m Enter base and exponent respectively:  2.3
+m 4.5
+m 2.3^4.5 = 42.44
+endbox

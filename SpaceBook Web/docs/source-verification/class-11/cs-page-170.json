@@ -1,0 +1,90 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s170-p161",
+  "title": "Transport (end); Internet Layer; Network Access Layer; b. TCP/IP PORTS",
+  "headingUrdu": "ٹرانسپورٹ (اختتام)؛ انٹرنیٹ لیئر؛ نیٹ ورک ایکسیس لیئر؛ ب۔ ٹی سی پی / آئی پی پورٹس",
+  "headingPashto": "د لېږد (پای)؛ د انټرنېټ طبقه؛ د شبکې لاسرسي طبقه؛ ب. د TCP/IP پورټونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 170,
+    "printedPage": "161"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s170-a",
+      "en": "oriented transport of data between two endpoints (sockets) on two computers that use Internet Protocol to communicate.",
+      "ur": "پر مبنی ڈیٹا کی ترسیل دو کمپیوٹرز پر دو اختتامی نقاط (ساکٹس) کے درمیان فراہم کرتا ہے جو رابطے کے لیے انٹرنیٹ پروٹوکول استعمال کرتے ہیں۔",
+      "ps": "پر بنسټ د ډېټا لېږد د دوو کمپیوټرونو پر دوو پای ټکو (ساکټونو) ترمنځ برابروي چې د اړیکې لپاره د انټرنېټ پروتوکول کاروي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s170-h1",
+      "en": "Internet Layer",
+      "ur": "انٹرنیٹ لیئر",
+      "ps": "د انټرنېټ طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s170-b",
+      "en": "The Internet Layer provides a global logical addressing scheme, a process for packetization of data, another process for routing packets to their destination and for providing connectivity between networks. The Internet Layer is concerned with network to network communication. The main protocol used at this layer is IP.",
+      "ur": "انٹرنیٹ لیئر عالمی منطقی ایڈریسنگ اسکیم فراہم کرتی ہے، ڈیٹا کو پیکٹس میں بنانے کا عمل، پیکٹس کو ان کی منزل تک راستہ دینے کا دوسرا عمل اور نیٹ ورکس کے درمیان کنیکٹیویٹی فراہم کرنے کا عمل۔ انٹرنیٹ لیئر نیٹ ورک سے نیٹ ورک مواصلات سے متعلق ہے۔ اس تہہ پر استعمال ہونے والا بنیادی پروٹوکول آئی پی ہے۔",
+      "ps": "د انټرنېټ طبقه نړیواله منطقي پتې کولو طرحه برابروي، د ډېټا کڅوړو جوړولو پروسه، د کڅوړو منزل ته د لارښوونې بله پروسه او د شبکو ترمنځ د نښلولو برابرولو پروسه. د انټرنېټ طبقه د شبکې نه شبکې ته اړیکو سره اړه لري. په دې طبقه کارېدونکی اصلي پروتوکول IP دی."
+    },
+    {
+      "id": "cs11-s170-h2",
+      "en": "Network Access Layer",
+      "ur": "نیٹ ورک ایکسیس لیئر",
+      "ps": "د شبکې لاسرسي طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s170-c",
+      "en": "The Network Access Layer provides access to the physical network. The data is transmitted and received across the physical network in network access layer. This layer combines the Physical and Data link layers and routes the data between devices on the same network. It also manages the exchange of data between the network and other devices.",
+      "ur": "نیٹ ورک ایکسیس لیئر طبعی نیٹ ورک تک رسائی فراہم کرتی ہے۔ نیٹ ورک ایکسیس لیئر میں ڈیٹا طبعی نیٹ ورک کے پار بھیجا اور وصول کیا جاتا ہے۔ یہ تہہ فزیکل اور ڈیٹا لنک لیئرز کو ملاتی ہے اور ایک ہی نیٹ ورک پر آلات کے درمیان ڈیٹا کو راستہ دیتی ہے۔ یہ نیٹ ورک اور دیگر آلات کے درمیان ڈیٹا کے تبادلے کا انتظام بھی کرتی ہے۔",
+      "ps": "د شبکې لاسرسي طبقه فزیکي شبکې ته لاسرسی برابروي. په شبکې لاسرسي طبقه کې ډېټا د فزیکي شبکې په اوږدو کې لېږل کېږي او ترلاسه کېږي. دا طبقه فزیکي او د ډېټا نښلونې طبقې یوځای کوي او په یوه شبکه د وسایلو ترمنځ ډېټا لارښوونه کوي. دا د شبکې او نورو وسایلو ترمنځ د ډېټا تبادله هم اداره کوي."
+    },
+    {
+      "id": "cs11-s170-h3",
+      "en": "b. TCP/IP PORTS",
+      "ur": "ب۔ ٹی سی پی / آئی پی پورٹس",
+      "ps": "ب. د TCP/IP پورټونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s170-d",
+      "en": "Every computer or device on the Internet must have a unique number assigned to it called the IP address. This IP address is used to recognize each particular computer out of the millions of other computers connected to the Internet. The information sent over the Internet to a particular computer is received by using TCP or UDP ports. There are a total of 65,535 TCP Ports and another 65,535 UDP ports. The Internet Assigned Numbers Authority (IANA) is responsible for assigning TCP and UDP port numbers to specific uses.",
+      "ur": "انٹرنیٹ پر ہر کمپیوٹر یا آلے کو ایک منفرد نمبر تفویض ہونا ضروری ہے جسے آئی پی ایڈریس کہتے ہیں۔ یہ آئی پی ایڈریس انٹرنیٹ سے جڑے لاکھوں دیگر کمپیوٹرز میں سے ہر مخصوص کمپیوٹر کو پہچاننے کے لیے استعمال ہوتا ہے۔ انٹرنیٹ پر کسی مخصوص کمپیوٹر کو بھیجی گئی معلومات ٹی سی پی یا یو ڈی پی پورٹس کے ذریعے وصول کی جاتی ہیں۔ کل ۶۵،۵۳۵ ٹی سی پی پورٹس اور مزید ۶۵،۵۳۵ یو ڈی پی پورٹس ہیں۔ انٹرنیٹ اسائنڈ نمبرز اتھارٹی (آئی اے این اے) ٹی سی پی اور یو ڈی پی پورٹ نمبروں کو مخصوص استعمالات کے لیے تفویض کرنے کی ذمہ دار ہے۔",
+      "ps": "په انټرنېټ هر کمپیوټر یا وسیله باید یو ځانګړی شمېره ولري چې IP پته بلل کېږي. دا IP پته د انټرنېټ سره وصل شویو ملیونونو نورو کمپیوټرونو نه هر ځانګړی کمپیوټر پېژندلو لپاره کارول کېږي. هغه معلومات چې په انټرنېټ یو ځانګړي کمپیوټر ته لېږل کېږي د TCP یا UDP پورټونو په کارولو سره ترلاسه کېږي. ټول ۶۵،۵۳۵ TCP پورټونه او بل ۶۵،۵۳۵ UDP پورټونه شته. د انټرنېټ د ټاکل شویو شمېرو واک (IANA) د TCP او UDP د پورټ شمېرو ځانګړو کارونو ته د ټاکلو مسؤل دی."
+    },
+    {
+      "id": "cs11-s170-e",
+      "en": "For instance, port 23 is used for telnet services, HTTP uses port 80 for providing web browsing service and FTP servers use TCP ports 20 and 21 to send and receive information. There are some ports that are assigned, some reserved and many unassigned which may be utilized by application programs.",
+      "ur": "مثال کے طور پر پورٹ ۲۳ ٹیل نیٹ خدمات کے لیے استعمال ہوتا ہے، ایچ ٹی ٹی پی ویب براؤزنگ کی خدمت فراہم کرنے کے لیے پورٹ ۸۰ استعمال کرتا ہے اور ایف ٹی پی سرورز معلومات بھیجنے اور وصول کرنے کے لیے ٹی سی پی پورٹس ۲۰ اور ۲۱ استعمال کرتے ہیں۔ کچھ پورٹس تفویض شدہ ہیں، کچھ محفوظ ہیں اور بہت سے غیر تفویض شدہ ہیں جنہیں ایپلیکیشن پروگرام استعمال کر سکتے ہیں۔",
+      "ps": "د بېلګې په توګه ۲۳ پورټ د ټېلنېټ خدمتونو لپاره کارول کېږي، HTTP د ویب کتنې خدمت برابرولو لپاره ۸۰ پورټ کاروي او FTP خدمتګاران د معلوماتو لېږلو او ترلاسه کولو لپاره TCP پورټونه ۲۰ او ۲۱ کاروي. ځینې پورټونه ټاکل شوي، ځینې خوندي شوي او ډیر نه ټاکل شوي دي چې د اپلېکېشن پروګرامونو لخوا کارېدای شي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s170-a",
+        "cs11-s170-h1",
+        "cs11-s170-b",
+        "cs11-s170-h2",
+        "cs11-s170-c",
+        "cs11-s170-h3",
+        "cs11-s170-d",
+        "cs11-s170-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 161: the end of the transport layer sentence (continuing from page 160), “Internet Layer”, “Network Access Layer” (a handwritten note “main protocol used layer” beside it is excluded) and “b. TCP/IP PORTS” with two paragraphs. The word IANA is printed in bold. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:24:11.344950+00:00",
+    "scope": "Scan 170 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,17 @@
+@printed 222
+@issue In Example 14 the printed third bracketed term shows a minus sign between the fraction and (64/729x^3), where a multiplication is meant; the final line 4/(729x^3) confirms this. Preserved as printed.
+@deco Unit-running header, folio and decorative footer band excluded
+example 13 | Find the first four terms in the expansion of $(1+x)^{-\frac12}$ || $(1+x)^{-\frac12}$ کی توسیع کے پہلے چار ارکان معلوم کریں || د $(1+x)^{-\frac12}$ د پراختیا لومړي څلور حدونه پیدا کړئ
+p **Solution:** || **حل:** || **حل:**
+m $(1+x)^{-\frac12}=1+\left(-\dfrac12\right)x+\dfrac{\left(-\frac12\right)\left(-\frac12-1\right)}{2!}x^2+\dfrac{-\frac12\left(-\frac12-1\right)\left(-\frac12-2\right)}{3!}x^3+\cdots$
+m $(1+x)^{-\frac12}=1-\dfrac x2+\dfrac{-\frac12\left(-\frac32\right)}{2}x^2+\dfrac{-\frac12\left(-\frac32\right)\left(-\frac52\right)}{6}x^3+\cdots$
+m $(1+x)^{-\frac12}=1-\dfrac x2+\dfrac12\cdot\dfrac32\cdot\dfrac12x^2-\dfrac12\cdot\dfrac32\cdot\dfrac52\cdot\dfrac16x^3+\cdots$
+m $(1+x)^{-\frac12}=1-\dfrac x2+\dfrac38x^2-\dfrac5{16}x^3+\cdots$
+endexample
+example 14 | Find the first four terms in the expansion of $\left(9+\dfrac4x\right)^{\frac12}$ for $|x|>\dfrac49$. || $|x|>\dfrac49$ کے لیے $\left(9+\dfrac4x\right)^{\frac12}$ کی توسیع کے پہلے چار ارکان معلوم کریں۔ || د $|x|>\dfrac49$ لپاره د $\left(9+\dfrac4x\right)^{\frac12}$ د پراختیا لومړي څلور حدونه پیدا کړئ.
+p **Solution:** || **حل:** || **حل:**
+m $\left(9+\dfrac4x\right)^{\frac12}=\left(9\left(1+\dfrac4{9x}\right)\right)^{\frac12}=9^{\frac12}\left(1+\dfrac4{9x}\right)^{\frac12}=3\left(1+\dfrac4{9x}\right)^{\frac12}$
+m $=3\left[1+\dfrac12\cdot\dfrac4{9x}+\dfrac{\frac12\left(\frac12-1\right)}{2!}\left(\dfrac4{9x}\right)^2+\dfrac{\frac12\left(\frac12-1\right)\left(\frac12-2\right)}{3!}\left(\dfrac4{9x}\right)^3+\cdots\right]$
+m $=3\left[1+\dfrac2{9x}-\dfrac12\cdot\dfrac12\cdot\dfrac12\cdot\dfrac{16}{81x^2}+\dfrac{\frac12\left(-\frac12\right)\left(-\frac32\right)}{6}-\left(\dfrac{64}{729x^3}\right)+\cdots\right]$
+m $=3\left[1+\dfrac2{9x}-\dfrac2{81x^2}+\dfrac3{8\times6}\cdot\dfrac{64}{729x^3}+\cdots\right]$
+m $=3\left[1+\dfrac2{9x}-\dfrac2{81x^2}+\dfrac4{729x^3}+\cdots\right]$

@@ -1,0 +1,78 @@
+{
+  "id": "cls9-physics-page-077",
+  "pdfPage": 77,
+  "printedPage": 72,
+  "status": "corrected-fresh-review",
+  "chapterNumber": 3,
+  "chapter": "Unit 3: Dynamics",
+  "title": "Example 3.4 worked solution / Assignment 3.4",
+  "sourcePdf": "D:\\SpaceBook\\Books\\9th\\9th physics\\pdf\\9thphysics.pdf",
+  "numericals": [
+    {
+      "num": "Example 3.4",
+      "solution": {
+        "text": "(a) By Newton’s second law in terms of momentum: F⃗=m((v⃗_f−v⃗_i)/Δt). Putting values F⃗=1200 kg((0−15.0 m/s [E])/0.25 s)=−18000 kg m/s [E]/0.25 s=−72000 kg m/s² [E]=−72000 N [E]=72000 kg m/s² [W]. Therefore F⃗=72000 N [W]=7.2×10⁴ N [W]. (b) F⃗=1200 kg((0−15.0 m/s [E])/0.040 s)=−18000 kg m/s [E]/0.040 s=−450000 kg m/s² [E]=−450000 N [E]=450000 kg m/s² [W]. Therefore F⃗=450000 N [W]=4.5×10⁵ N [W]. The average net force exerted by the wall on the car is (a) 7.2×10⁴ N [W] when it crumples and (b) 4.5×10⁵ N [W] when it is rigid. The change in momentum is the same in both parts, −18000 kg m/s, but the time intervals are different. So the average net force is different in both situations. The magnitude of force on the car with the rigid frame is more than 6 times greater than when the car crumples.",
+        "urdu": "(الف) مومنٹم کی صورت میں نیوٹن کا دوسرا قانون: F⃗=m((v⃗_f−v⃗_i)/Δt)۔ قدریں رکھنے پر 1200((0−15.0 [E])/0.25)=−72000 N [E]=72000 kg m/s² [W]، لہٰذا F⃗=72000 N [W]=7.2×10⁴ N [W]۔ (ب) 0.040 s کے لیے یہی حساب F⃗=450000 N [W]=4.5×10⁵ N [W] دیتا ہے۔ دیوار کی اوسط خالص قوت (الف) پچکنے پر 7.2×10⁴ N [W] اور (ب) سخت فریم پر 4.5×10⁵ N [W] ہے۔ دونوں میں مومنٹم کی تبدیلی −18000 kg m/s یکساں ہے مگر وقفۂ وقت مختلف ہے، اس لیے اوسط قوت مختلف ہے۔ سخت فریم والی گاڑی پر قوت، پچکنے والی گاڑی سے چھ گنا سے زیادہ ہے۔",
+        "pashto": "(الف) د مومنټم په بڼه د نیوټن دویم قانون: F⃗=m((v⃗_f−v⃗_i)/Δt). ارزښتونه واچوو: 1200((0−15.0 [E])/0.25)=−72000 N [E]=72000 kg m/s² [W]، نو F⃗=72000 N [W]=7.2×10⁴ N [W]. (ب) د 0.040 s لپاره همدا حساب F⃗=450000 N [W]=4.5×10⁵ N [W] ورکوي. د دېوال منځنۍ خالصه قوه (الف) د مچ کېدو پر مهال 7.2×10⁴ N [W] او (ب) په کلک چوکاټ کې 4.5×10⁵ N [W] ده. په دواړو کې د مومنټم بدلون −18000 kg m/s یو شان دی، خو وختونه توپیر لري؛ نو منځنۍ قوې هم توپیر لري. پر کلک چوکاټ موټر قوه تر مچ کېدونکي موټر شپږ چنده زیاته ده.",
+        "calloutLabel": "SOLUTION — EXAMPLE 3.4"
+      },
+      "sourcePdfPage": 77,
+      "sourcePrintedPage": 72
+    }
+  ],
+  "activities": [
+    {
+      "num": "Assignment 3.4",
+      "instructions": {
+        "text": "Assignment 3.4 — FORCE REQUIRED TO STOP A TRUCK AND CAR. Calculate the force required to stop a car of mass 1200 kg and a loaded truck of mass 9,000 kg in 2 second, if they are moving with same velocity of 10 m s⁻¹.",
+        "urdu": "اسائنمنٹ 3.4 — ٹرک اور کار روکنے کے لیے قوت۔ 1200 kg کمیت کی گاڑی اور 9,000 kg کے لدے ٹرک کو 2 s میں روکنے کے لیے قوت معلوم کریں، اگر دونوں 10 m s⁻¹ کی یکساں رفتار سے چل رہے ہوں۔",
+        "pashto": "دنده 3.4 — د لارۍ او موټر د درولو قوه. د 1200 kg موټر او 9,000 kg بار شوې لارۍ د درولو لپاره قوه محاسبه کړئ، که دواړه په 10 m s⁻¹ یو شان چټکتیا روان وي او په 2 s کې ودرول شي.",
+        "calloutLabel": "ASSIGNMENT 3.4"
+      },
+      "sourcePdfPage": 77,
+      "sourcePrintedPage": 72
+    }
+  ],
+  "sections": [
+    {
+      "code": "source-u3-example34-solution-assignment",
+      "heading": "Example 3.4 solution / Assignment 3.4",
+      "headingUrdu": "مثال 3.4 کا حل / اسائنمنٹ 3.4",
+      "headingPashto": "د 3.4 بېلګې حل / دنده 3.4",
+      "paras": [
+        {
+          "text": "(a) By Newton’s second law in terms of momentum: F⃗=m((v⃗_f−v⃗_i)/Δt). Putting values F⃗=1200 kg((0−15.0 m/s [E])/0.25 s)=−18000 kg m/s [E]/0.25 s=−72000 kg m/s² [E]=−72000 N [E]=72000 kg m/s² [W]. Therefore F⃗=72000 N [W]=7.2×10⁴ N [W]. (b) F⃗=1200 kg((0−15.0 m/s [E])/0.040 s)=−18000 kg m/s [E]/0.040 s=−450000 kg m/s² [E]=−450000 N [E]=450000 kg m/s² [W]. Therefore F⃗=450000 N [W]=4.5×10⁵ N [W]. The average net force exerted by the wall on the car is (a) 7.2×10⁴ N [W] when it crumples and (b) 4.5×10⁵ N [W] when it is rigid. The change in momentum is the same in both parts, −18000 kg m/s, but the time intervals are different. So the average net force is different in both situations. The magnitude of force on the car with the rigid frame is more than 6 times greater than when the car crumples.",
+          "urdu": "(الف) مومنٹم کی صورت میں نیوٹن کا دوسرا قانون: F⃗=m((v⃗_f−v⃗_i)/Δt)۔ قدریں رکھنے پر 1200((0−15.0 [E])/0.25)=−72000 N [E]=72000 kg m/s² [W]، لہٰذا F⃗=72000 N [W]=7.2×10⁴ N [W]۔ (ب) 0.040 s کے لیے یہی حساب F⃗=450000 N [W]=4.5×10⁵ N [W] دیتا ہے۔ دیوار کی اوسط خالص قوت (الف) پچکنے پر 7.2×10⁴ N [W] اور (ب) سخت فریم پر 4.5×10⁵ N [W] ہے۔ دونوں میں مومنٹم کی تبدیلی −18000 kg m/s یکساں ہے مگر وقفۂ وقت مختلف ہے، اس لیے اوسط قوت مختلف ہے۔ سخت فریم والی گاڑی پر قوت، پچکنے والی گاڑی سے چھ گنا سے زیادہ ہے۔",
+          "pashto": "(الف) د مومنټم په بڼه د نیوټن دویم قانون: F⃗=m((v⃗_f−v⃗_i)/Δt). ارزښتونه واچوو: 1200((0−15.0 [E])/0.25)=−72000 N [E]=72000 kg m/s² [W]، نو F⃗=72000 N [W]=7.2×10⁴ N [W]. (ب) د 0.040 s لپاره همدا حساب F⃗=450000 N [W]=4.5×10⁵ N [W] ورکوي. د دېوال منځنۍ خالصه قوه (الف) د مچ کېدو پر مهال 7.2×10⁴ N [W] او (ب) په کلک چوکاټ کې 4.5×10⁵ N [W] ده. په دواړو کې د مومنټم بدلون −18000 kg m/s یو شان دی، خو وختونه توپیر لري؛ نو منځنۍ قوې هم توپیر لري. پر کلک چوکاټ موټر قوه تر مچ کېدونکي موټر شپږ چنده زیاته ده.",
+          "calloutLabel": "SOLUTION — EXAMPLE 3.4"
+        },
+        {
+          "text": "Assignment 3.4 — FORCE REQUIRED TO STOP A TRUCK AND CAR. Calculate the force required to stop a car of mass 1200 kg and a loaded truck of mass 9,000 kg in 2 second, if they are moving with same velocity of 10 m s⁻¹.",
+          "urdu": "اسائنمنٹ 3.4 — ٹرک اور کار روکنے کے لیے قوت۔ 1200 kg کمیت کی گاڑی اور 9,000 kg کے لدے ٹرک کو 2 s میں روکنے کے لیے قوت معلوم کریں، اگر دونوں 10 m s⁻¹ کی یکساں رفتار سے چل رہے ہوں۔",
+          "pashto": "دنده 3.4 — د لارۍ او موټر د درولو قوه. د 1200 kg موټر او 9,000 kg بار شوې لارۍ د درولو لپاره قوه محاسبه کړئ، که دواړه په 10 m s⁻¹ یو شان چټکتیا روان وي او په 2 s کې ودرول شي.",
+          "calloutLabel": "ASSIGNMENT 3.4"
+        }
+      ],
+      "blocks": [],
+      "sourceLayout": [
+        {
+          "type": "callout",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "type": "callout",
+          "indices": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": "Batch inspection captured both full solution parts, printed intermediate signed values, final force directions/magnitudes, source conclusion and Assignment 3.4. Original printed calculation wording retained; no simplification replaces it.",
+  "pageMetrics": {
+    "visualInspection": "primary scan inspected in 4-page batch at 1.5x",
+    "textLayer": "none"
+  }
+}

@@ -1,0 +1,23 @@
+@pdf 167
+@printed 217
+@status lesson
+p After applying this code in the Notepad++ editor with *<body>* and *<html>* tags, the output in browser window will show like figure 7.54. || اس کوڈ کو نوٹ پیڈ++ ایڈیٹر میں *<body>* اور *<html>* ٹیگز کے ساتھ لگانے کے بعد براؤزر ونڈو میں آؤٹ پٹ شکل 7.54 کی طرح ظاہر ہوگا۔ || دا کوډ په Notepad++ کې د *<body>* او *<html>* tags سره له کارولو وروسته، په براوزر کې output به د ۷.۵۴ شکل په څېر وي.
+table Figure 7.54: Table applied with valign || شکل 7.54: valign والا جدول || ۷.۵۴ شکل: د valign سره جدول
+th | Month || مہینہ || میاشت | Savings || بچت || سپما
+tr | January (at the bottom of a 100px-high cell) || جنوری (100px اونچے خانے کے نیچے) || جنوري (د 100px لوړې خانې په ښکته کې) | RS. 99 (at the bottom) || RS. 99 (نیچے) || RS. 99 (ښکته)
+endtable
+p *nowrap* attribute is Boolean tag. When it is present then text inside the cell will not wrap. || *nowrap* خصوصیت ایک بولین ٹیگ ہے۔ جب یہ موجود ہو تو خانے کے اندر متن اگلی سطر میں نہیں جائے گا۔ || *nowrap* attribute بولین tag دی. کله چې شتون ولري، د خانې دننه متن بلې کرښې ته نه ځي.
+p **Example:** || **مثال:** || **بېلګه:**
+m <html>
+m <head>
+m </head>
+m   <body>
+m     <table>
+m       <tr>
+m         <th>Poem</th>
+m         <th>Poem</th>
+m       </tr>
+m       <tr>
+m         <td nowrap>Never increase, beyond what is necessary, the number of entities required to explain anything
+m         </td>
+m         <td>Never increase, beyond what is necessary, the number of entities required to explain anything

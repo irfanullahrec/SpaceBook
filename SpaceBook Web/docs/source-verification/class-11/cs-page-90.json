@@ -1,0 +1,111 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s090-p081",
+  "title": "c. Control Bus; Figure 3.4; 3.2 CPU Operations — start",
+  "headingUrdu": "ج۔ کنٹرول بس؛ شکل ۳.۴؛ ۳.۲ سی پی یو کے اعمال — آغاز",
+  "headingPashto": "ج. د کنټرول بس؛ انځور ۳.۴؛ ۳.۲ د CPU عملونه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 90,
+    "printedPage": "81"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s090-h1",
+      "en": "c. Control Bus",
+      "ur": "ج۔ کنٹرول بس",
+      "ps": "ج. د کنټرول بس",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s090-a",
+      "en": "The control bus is used by the CPU to direct and monitor the actions of the other functional areas of the computer. It is used to transmit a variety of individual signals (read, write, interrupt, acknowledge) necessary to control and coordinate the operations of the computer. The size of control bus is from 8 to 16 bits.",
+      "ur": "کنٹرول بس سی پی یو کمپیوٹر کے دیگر فعال حصوں کے اعمال کی رہنمائی اور نگرانی کے لیے استعمال کرتا ہے۔ یہ کمپیوٹر کے اعمال کو کنٹرول اور ہم آہنگ کرنے کے لیے ضروری مختلف انفرادی اشارے (پڑھنا، لکھنا، مداخلت، تصدیق) منتقل کرنے کے لیے استعمال ہوتی ہے۔ کنٹرول بس کا سائز ۸ سے ۱۶ بٹس ہوتا ہے۔",
+      "ps": "د کنټرول بس د CPU په واسطه د کمپیوټر د نورو فعالو برخو د عملونو د لارښوونې او څارنې لپاره کارول کېږي. دا د کمپیوټر د عملونو د کنټرول او همغږۍ لپاره اړین مختلف انفرادي سیګنالونه (لوستل، لیکل، مداخله، تصدیق) لېږدولو لپاره کارول کېږي. د کنټرول بس کچه له ۸ نه تر ۱۶ بټو پورې ده."
+    },
+    {
+      "id": "cs11-s090-h2",
+      "en": "3.2 CPU OPERATIONS",
+      "ur": "۳.۲ سی پی یو کے اعمال",
+      "ps": "۳.۲ د CPU عملونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s090-b",
+      "en": "A central processing unit (CPU) is the hardware within a computer system which carries out the instructions of a computer program by performing the basic arithmetical, logical, and input/output operations of the system. The fundamental operation of most CPUs, regardless of the physical form they have, is to execute a sequence of stored instructions called a program. The program is represented by a series of instructions that are kept in some kind of",
+      "ur": "مرکزی پراسیسنگ یونٹ (سی پی یو) کمپیوٹر سسٹم کے اندر وہ ہارڈ ویئر ہے جو سسٹم کے بنیادی ریاضیاتی، منطقی اور ان پٹ / آؤٹ پٹ اعمال انجام دے کر کمپیوٹر پروگرام کی ہدایات پر عمل کرتا ہے۔ زیادہ تر سی پی یوز کا بنیادی عمل، ان کی طبعی شکل سے قطع نظر، محفوظ ہدایات کی ایک ترتیب پر عمل کرنا ہے جسے پروگرام کہتے ہیں۔ پروگرام ہدایات کی ایک لڑی سے ظاہر ہوتا ہے جو کسی قسم کی",
+      "ps": "مرکزي پروسس واحد (CPU) د کمپیوټر سیسټم دننه هغه هارډویر دی چې د سیسټم بنسټیز ریاضیاتي، منطقي او دخل/وتل عملونه ترسره کولو سره د کمپیوټر پروګرام لارښوونې پلي کوي. د ډیرو CPUs بنسټیز عمل، د هغو د فزیکي بڼې پرته، د ساتل شویو لارښوونو یوې لړۍ پلي کول دي چې پروګرام ورته ویل کېږي. پروګرام د لارښوونو د یوې لړۍ په واسطه ښودل کېږي چې په یو ډول",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s090-h1",
+        "cs11-s090-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s090-h2",
+        "cs11-s090-b"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s090-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 300\" role=\"img\" aria-label=\"System buses: data bus, address bus and control bus connecting the CPU, memory and input/output\" style=\"width:100%;max-width:510px;height:auto;background:#fff\"><rect x=\"10\" y=\"30\" width=\"160\" height=\"70\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"90\" y=\"60\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Central Processing</text><text x=\"90\" y=\"78\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Unit</text><rect x=\"350\" y=\"45\" width=\"140\" height=\"75\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"420\" y=\"88\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Memory</text><rect x=\"190\" y=\"200\" width=\"160\" height=\"80\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"270\" y=\"245\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Input/OUtput</text><rect x=\"80\" y=\"40\" width=\"270\" height=\"16\" fill=\"#f5b5c5\"/><text x=\"240\" y=\"52\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Data Bus</text><rect x=\"170\" y=\"70\" width=\"170\" height=\"20\" fill=\"#e0408a\"/><text x=\"240\" y=\"85\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Address Bus</text><rect x=\"210\" y=\"56\" width=\"16\" height=\"145\" fill=\"#f5b5c5\"/><rect x=\"290\" y=\"90\" width=\"16\" height=\"110\" fill=\"#e0408a\"/><polyline points=\"20,28 20,6 420,6 420,45\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><text x=\"220\" y=\"18\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Control Bus</text><polyline points=\"60,100 60,240 190,240\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><text x=\"40\" y=\"160\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Control</text><text x=\"40\" y=\"175\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Bus</text></svg>",
+      "caption": "Figure 3.4 System Buses",
+      "captionUrdu": "شکل ۳.۴ سسٹم بسیں",
+      "captionPashto": "انځور ۳.۴ سیسټم بسونه",
+      "labels": [
+        {
+          "en": "Central Processing Unit",
+          "ur": "مرکزی پراسیسنگ یونٹ",
+          "ps": "مرکزي پروسس واحد"
+        },
+        {
+          "en": "Memory",
+          "ur": "میموری",
+          "ps": "حافظه"
+        },
+        {
+          "en": "Input/Output",
+          "ur": "ان پٹ / آؤٹ پٹ",
+          "ps": "دخل / وتل"
+        },
+        {
+          "en": "Data Bus",
+          "ur": "ڈیٹا بس",
+          "ps": "د ډېټا بس"
+        },
+        {
+          "en": "Address Bus",
+          "ur": "ایڈریس بس",
+          "ps": "د پتې بس"
+        },
+        {
+          "en": "Control Bus",
+          "ur": "کنٹرول بس",
+          "ps": "د کنټرول بس"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 81: “c. Control Bus”, Figure 3.4 System Buses (a block diagram of the CPU, memory and input/output joined by data, address and control buses, redrawn here as a coded SVG with the printed labels; the printed label “Input/OUtput” is given as Input/Output) and the start of “3.2 CPU OPERATIONS” (the sentence continues on the next page). The first letters of some lines are clipped. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:55:31.916714+00:00",
+    "scope": "Scan 90 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

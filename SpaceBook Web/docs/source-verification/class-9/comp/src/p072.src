@@ -1,0 +1,29 @@
+@printed 64
+@status lesson
+p Format specifier that begin with a % sign. || فارمیٹ اسپیسیفائر جو % کی علامت سے شروع ہوتے ہیں۔ || format specifier چې په % نښه پیلېږي.
+p Escape sequences that begin with \ sign. || ایسکیپ سیکوینسز جو \ کی علامت سے شروع ہوتے ہیں۔ || escape sequences چې په \ نښه پیلېږي.
+p The format string indicates how many arguments follow and what their types are. The arguments *var1, var2, ..., varN* are the variables whose values are formatted and printed according to format specifications of the format string. The arguments must match in number, order and type with the format specifications. || فارمیٹ اسٹرنگ بتاتی ہے کہ اس کے بعد کتنے آرگیومنٹس ہیں اور ان کی اقسام کیا ہیں۔ آرگیومنٹس *var1، var2، ...، varN* وہ متغیرات ہیں جن کی قدریں فارمیٹ اسٹرنگ کی فارمیٹ تفصیلات کے مطابق فارمیٹ کر کے چھاپی جاتی ہیں۔ آرگیومنٹس تعداد، ترتیب اور قسم میں فارمیٹ تفصیلات سے مطابقت رکھنے چاہئیں۔ || format string ښيي چې وروسته یې څو arguments راځي او ډولونه یې څه دي. arguments *var1، var2، ...، varN* هغه متغیرونه دي چې ارزښتونه یې د format string د مشخصاتو سره سم format او چاپېږي. arguments باید په شمېر، ترتیب او ډول کې له format مشخصاتو سره سمون ولري.
+### Program 3.1: Program to print a string of characters on the screen. || پروگرام 3.1: اسکرین پر حروف کی اسٹرنگ پرنٹ کرنے کا پروگرام۔ || پروګرام ۳.۱: پر پرده د تورو د string چاپولو پروګرام.
+m # include <stdio.h>
+m void main()
+m {
+m     printf("Welcome to Programming Environment\n");
+m     printf("This is my first program in C language\n");
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Welcome to Programming Environment
+m This is my first program in C language
+endbox
+### Program 3.2: Program to print 1 2 3 4 using printf() function. || پروگرام 3.2: printf() فنکشن سے 1 2 3 4 پرنٹ کرنے کا پروگرام۔ || پروګرام ۳.۲: د printf() فنکشن په مرسته 1 2 3 4 چاپول.
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a=1,b=2,c=3,d=4;
+m     printf("%d\t%d\t%d\t%d",a,b,c,d);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 1    2    3    4
+endbox
+@deco A previous owner has pencilled "%d = format specifire" beside Program 3.2; not book content.
+### b. *puts()* Function || ب۔ *puts()* فنکشن || ب. *puts()* فنکشن
+p It is used to print a string on the screen. It is defined in standard header file stdio.h. || یہ اسکرین پر اسٹرنگ پرنٹ کرنے کے لیے استعمال ہوتا ہے۔ یہ معیاری ہیڈر فائل stdio.h میں تعریف شدہ ہے۔ || پر پرده د string چاپولو لپاره کارېږي. په معیاري header فایل stdio.h کې تعریف شوی.

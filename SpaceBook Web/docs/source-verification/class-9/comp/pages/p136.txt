@@ -1,0 +1,46 @@
+@pdf 135
+@printed 128
+@status lesson
+svg Figure: 5.5 Working of continue statement || شکل 5.5 continue اسٹیٹمنٹ کا کام || ۵.۵ شکل د continue بیان کار
+<svg viewBox="0 0 470 330" width="470" role="img" aria-label="Flowchart inside a dashed loop box: from a start dot into diamond 'Loop Test Expression'; FALSE goes right and down out of the box to 'Rest of the Program'; TRUE goes down to diamond 'Test Expression'; its TRUE branch goes left to 'Continue', which goes up to a junction dot that leads back to the Loop Test Expression; its FALSE branch goes down to 'Block of Statements', which goes left and up back to the junction" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF55" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<rect x="20" y="36" width="410" height="234" fill="none" stroke="#475569" stroke-dasharray="6 4"/>
+<circle cx="290" cy="12" r="10" fill="#111827"/>
+<path d="M290 22 V54" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<polygon points="290,58 350,96 290,134 230,96" fill="#fde047" stroke="#111827"/><text x="290" y="92">Loop Test</text><text x="290" y="108">Expression</text>
+<circle cx="140" cy="96" r="10" fill="#111827"/>
+<path d="M150 96 H226" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<path d="M290 134 V156" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="316" y="150">TRUE</text>
+<polygon points="290,160 345,196 290,232 235,196" fill="#fde047" stroke="#111827"/><text x="290" y="192">Test</text><text x="290" y="208">Expression</text>
+<rect x="80" y="130" width="120" height="30" fill="#4ade80" stroke="#111827"/><text x="140" y="150">Continue</text>
+<path d="M235 196 H140 V160" fill="none" stroke="#111827" stroke-width="2"/><path d="M140 130 V108" stroke="#111827" stroke-width="2"/><text x="190" y="190">TRUE</text>
+<path d="M290 232 V242" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="324" y="242" fill="#c2410c">FALSE</text>
+<rect x="225" y="246" width="140" height="22" fill="#4ade80" stroke="#111827"/><text x="295" y="262">Block of Statements</text>
+<path d="M225 257 H50 V96 H128" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/>
+<path d="M350 96 H400 V310 H268" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arF55)"/><text x="380" y="88" fill="#c2410c">FALSE</text>
+<circle cx="256" cy="310" r="10" fill="#111827"/><text x="175" y="315">Rest of the Program</text>
+</svg>
+endsvg
+### Program 5.12: Write a program and use the concept of continue statement using while loop. || پروگرام 5.12: while لوپ میں continue کے تصور کو استعمال کرنے والا پروگرام لکھیں۔ || پروګرام ۵.۱۲: د while لوپ سره د continue مفهوم کاروونکی پروګرام ولیکئ.
+m # include <stdio.h>
+m void main()
+m {
+m     int c;
+m     c=1;
+m     while(c<=5)
+m     {
+m         printf("Pakistan\n");
+m         c++;
+m         continue;
+m         printf("Islamabad");
+m         printf("Peshawar");
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+endbox
+p In the above program, only first three statements inside the *while* loop are executed 5 times. The two statements after *continue* statements are not executed because each time the *continue* statement returns the control back to the beginning of body of loop. || اوپر والے پروگرام میں *while* لوپ کی صرف پہلی تین اسٹیٹمنٹس 5 بار چلتی ہیں۔ *continue* کے بعد والی دو اسٹیٹمنٹس نہیں چلتیں کیونکہ ہر بار *continue* کنٹرول کو لوپ کے جسم کے آغاز پر واپس لے جاتی ہے۔ || په پورتني پروګرام کې د *while* لوپ یوازې لومړي درې بیانونه ۵ ځله اجرا کېږي. له *continue* وروسته دوه بیانونه نه اجرا کېږي ځکه هر ځل *continue* کنټرول د لوپ د بدنې پیل ته بېرته وړي.

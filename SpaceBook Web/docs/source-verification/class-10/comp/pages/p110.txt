@@ -1,0 +1,41 @@
+@printed 98
+@status lesson
+p Condition: یہ ایک ریلیشنل ایکسپریشن ہوتا ہے۔ لوپ کی باڈی صرف اس صورت میں چلے گی جب condition کا نتیجہ True ہو گا اور اگر نتیجہ False ہوا تو پھر لوپ کی باڈی قطعاً نہیں چلے گی۔ || Condition: a relational expression. The body of the loop runs only when the condition is true; if it is false, the body of the loop does not run at all. || Condition: یو نسبتي عبارت دی. د لوپ بدنه یوازې هغه وخت چلېږي چې شرط True وي؛ که False وي، د لوپ بدنه هېڅ نه چلېږي.
+p Body of Loop: یہ قوسین { } کے درمیان اسٹیٹمنٹ یا اسٹیٹمنٹس کا ایک گروپ ہے جسے بار بار چلانا ہے۔ || Body of Loop: the statement or group of statements between braces { } that is to be run repeatedly. || Body of Loop: د { } قوسونو ترمنځ بیان یا د بیانونو ډله چې باید بیا بیا وچلېږي.
+box note | نوٹ || Note || یادونه
+p لوپ کا استعمال کرتے وقت اس بات کا خیال رکھنا ضروری ہے کہ لوپ ویری ایبل کو لوپ کے اندر ہر تکرار (Iteration) پر انکریمنٹ یا ڈیکریمنٹ کر دیا جائے۔ تاکہ لوپ کی کنڈیشن کسی بھی وقت False ہو کر لوپ کو ختم کر سکے ورنہ لوپ غیر معینہ مدت تک چلتی رہے گی۔ لوپ کا کام کرنا شکل نمبر 5.2 میں دکھایا گیا ہے۔ || When using a loop, take care that the loop variable is incremented or decremented inside the loop on every iteration, so that at some point the loop condition becomes false and ends the loop; otherwise the loop will run for an unlimited time. The working of the loop is shown in Figure 5.2. || د لوپ د کارولو پر مهال باید پام وشي چې د لوپ متغیر په هر تکرار (Iteration) کې د لوپ دننه زیات یا کم شي، چې د لوپ شرط په یوه وخت False شي او لوپ پای ته ورسوي؛ که نه، لوپ به بې پایه چلېږي. د لوپ کار په ۵.۲ شکل کې ښودل شوی.
+endbox
+svg شکل نمبر 5.2 while لوپ کا کام کرنے کا انداز || Figure 5.2 How the while loop works || ۵.۲ شکل د while لوپ د کار طریقه
+<svg viewBox="0 0 400 270" width="400" role="img" aria-label="Flowchart: Start, then diamond 'Condition?'; True goes down to 'Do Task', which loops back up to the line above the diamond; False goes right and down to 'End'" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">
+<defs><marker id="arF52" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="140" y="6" width="100" height="36" rx="18" fill="#15803d"/><text x="190" y="29" fill="#fff">Start</text>
+<path d="M190 42 V74" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/>
+<polygon points="190,78 270,118 190,158 110,118" fill="#15803d"/><text x="190" y="123" fill="#fff">Condition?</text>
+<path d="M190 158 V200" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/><text x="214" y="182" font-weight="700">True</text>
+<rect x="135" y="204" width="110" height="36" rx="4" fill="#15803d"/><text x="190" y="227" fill="#fff">Do Task</text>
+<path d="M190 240 V258 H60 V60 H186" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/>
+<path d="M270 118 H320 V200" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF52)"/><text x="296" y="110" font-weight="700">False</text>
+<rect x="270" y="204" width="100" height="36" rx="18" fill="#15803d"/><text x="320" y="227" fill="#fff">End</text>
+</svg>
+endsvg
+p درج ذیل پروگرام while لوپ کے عمل کو ظاہر کرتا ہے۔ || The following program shows the working of the while loop. || لاندې پروګرام د while لوپ کار ښيي.
+### پروگرام 5.5 یہ پروگرام while لوپ کی مدد سے "Pakistan" پانچ دفعہ سکرین پر پرنٹ کرے گا۔ || Program 5.5 This program prints "Pakistan" five times on the screen with a while loop || پروګرام ۵.۵ دا پروګرام د while لوپ په مرسته "Pakistan" پنځه ځله په سکرین چاپوي
+m # include <stdio.h>
+m void main()
+m {
+m     int n;
+m     n=1;
+m     while(n<=5)
+m     {
+m     printf("Pakistan\n");
+m     n++;
+m     }
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+endbox
+@issue The program number badge is blurred in the scan; it is Program 5.5 by sequence.

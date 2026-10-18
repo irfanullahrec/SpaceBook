@@ -1,0 +1,18 @@
+@printed 224
+@deco Unit-running header, folio and decorative footer band excluded
+m $\sqrt{35}=6\left[1-\dfrac1{72}-\dfrac12\cdot\dfrac12\cdot\dfrac12\cdot\dfrac1{1296}-\dfrac12\left(-\dfrac12\right)\left(-\dfrac32\right)\dfrac16\cdot\dfrac1{46656}-\dfrac12\cdot\dfrac12\cdot\dfrac32\cdot\dfrac52\cdot\dfrac1{24}\cdot\dfrac1{1679616}-\cdots\right]$
+m $=6\left[1-\dfrac1{72}-\dfrac1{10368}-\dfrac1{746496}-\dfrac5{214990848}-\cdots\right]$
+m $\approx6\left[1-0.013888-0.00009645-0.000001339\right]$
+m $\sqrt{35}\approx6\,[0.9860142]$
+m $\sqrt{35}\approx5.9160852$
+m $\sqrt{35}\approx5.9161$
+endexample
+example 17 | If $x$ be so small that its square and higher powers may be neglected then evaluate (i) $\dfrac{\sqrt{4+x}}{4-\frac x3}$ (ii) $\dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}$ || اگر $x$ اتنا چھوٹا ہو کہ اس کا مربع اور بلند قوتیں نظر انداز کی جا سکیں تو قیمت معلوم کریں (i) $\dfrac{\sqrt{4+x}}{4-\frac x3}$ (ii) $\dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}$ || که $x$ دومره کوچنی وي چې د هغه مربع او لوړ توانونه له پامه غورځول شي نو ارزښت یې پیدا کړئ (i) $\dfrac{\sqrt{4+x}}{4-\frac x3}$ (ii) $\dfrac{(1+x)^{\frac12}(16-5x)^{\frac12}}{(9+2x)^{\frac12}}$
+p **Solution:** (i) || **حل:** (i) || **حل:** (i)
+m $\dfrac{\sqrt{4+x}}{4-\frac x3}=\dfrac{\sqrt{4\left(1+\frac x4\right)}}{4\left(1-\frac x{12}\right)}=\dfrac{2\left(1+\frac x4\right)^{\frac12}}{4\left(1-\frac x{12}\right)}=\dfrac12\left(1+\dfrac x4\right)^{\frac12}\left(1-\dfrac x{12}\right)^{-1}$
+m $=\dfrac12\left(1+\dfrac12\cdot\dfrac x4+\dfrac{\frac12\left(\frac12-1\right)}{2!}\left(\dfrac x4\right)^2+\cdots\right)\times\left(1+\dfrac x{12}+\dfrac{x^2}{144}+\cdots\right)$
+m $=\dfrac12\left(1+\dfrac x8-\dfrac12\cdot\dfrac12\cdot\dfrac12\cdot\dfrac{x^2}{16}+\cdots\right)\left(1+\dfrac x{12}+\dfrac{x^2}{144}+\cdots\right)$
+m $=\dfrac12\left[1+\dfrac x{12}+\dfrac x8+\ \text{Ignoring terms containing }x^2,x^3,\ldots\right]$
+m $=\dfrac12\left[1+\dfrac{2x+3x}{24}\right]=\dfrac12\left[1+\dfrac{5x}{24}\right]$
+m $\therefore\ \dfrac{\sqrt{4+x}}{4-\frac x3}=\dfrac12\left[1+\dfrac{5x}{24}\right]$
+p where $x$ is so small such that $x^2$ and higher powers are neglected. || جہاں $x$ اتنا چھوٹا ہے کہ $x^2$ اور بلند قوتیں نظر انداز کر دی گئی ہیں۔ || چېرته چې $x$ دومره کوچنی دی چې $x^2$ او لوړ توانونه له پامه غورځول شوي دي.

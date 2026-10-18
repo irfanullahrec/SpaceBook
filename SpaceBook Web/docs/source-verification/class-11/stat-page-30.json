@@ -1,0 +1,574 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s030-example16-merits",
+  "title": "Example 1.6 · 1.5.9 Merits and demerits of data array",
+  "headingUrdu": "مثال 1.6 · 1.5.9 ڈیٹا ارے کی خوبیاں اور خامیاں",
+  "headingPashto": "بېلګه 1.6 · 1.5.9 د ډیټا ارې ګټې او زیانونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 30,
+    "printedPage": "22"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s030-n1",
+      "en": "The class boundaries can also be used in place of class limits.",
+      "ur": "جماعتی حدود کی جگہ جماعتی سرحدیں بھی استعمال کی جا سکتی ہیں۔",
+      "ps": "د ټولګي د حدونو پر ځای د ټولګي پولې هم کارېدای شي."
+    },
+    {
+      "id": "stat11-s030-ex",
+      "en": "Example: 1.6",
+      "ur": "مثال: 1.6",
+      "ps": "بېلګه: 1.6",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-6"
+    },
+    {
+      "id": "stat11-s030-q0",
+      "en": "Compute the",
+      "ur": "حساب کریں",
+      "ps": "محاسبه کړئ",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6"
+    },
+    {
+      "id": "stat11-s030-q1",
+      "en": "(i) Cumulative frequency (c.f) distribution",
+      "ur": "(i) جمعی تعدد (c.f) تقسیم",
+      "ps": "(i) مجموعي فریکونسي (c.f) ویش",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "listGroup": "q16"
+    },
+    {
+      "id": "stat11-s030-q2",
+      "en": "(ii) Relative frequency (r.f) distribution",
+      "ur": "(ii) اضافی تعدد (r.f) تقسیم",
+      "ps": "(ii) نسبي فریکونسي (r.f) ویش",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "listGroup": "q16"
+    },
+    {
+      "id": "stat11-s030-q3",
+      "en": "(iii) Cumulative relative frequency (c.r.f) distribution",
+      "ur": "(iii) جمعی اضافی تعدد (c.r.f) تقسیم",
+      "ps": "(iii) مجموعي نسبي فریکونسي (c.r.f) ویش",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "listGroup": "q16"
+    },
+    {
+      "id": "stat11-s030-q4",
+      "en": "(iv) Percentage relative frequencies (% r.f) distribution and",
+      "ur": "(iv) فیصد اضافی تعددات (% r.f) تقسیم اور",
+      "ps": "(iv) سلنه نسبي فریکونسۍ (% r.f) ویش او",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "listGroup": "q16"
+    },
+    {
+      "id": "stat11-s030-q5",
+      "en": "(v) Percentage cumulative relative frequency (% c.r.f) distribution from the following frequency distribution.",
+      "ur": "(v) درج ذیل تعدد تقسیم سے فیصد جمعی اضافی تعدد (% c.r.f) تقسیم۔",
+      "ps": "(v) له لاندې فریکونسي ویش څخه سلنه مجموعي نسبي فریکونسي (% c.r.f) ویش.",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "listGroup": "q16"
+    },
+    {
+      "id": "stat11-s030-cl",
+      "en": "Classes: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94; Frequency: 1, 1, 3, 1, 3, 4, 5, 4, 3",
+      "ur": "جماعتیں: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94؛ تعدد: 1, 1, 3, 1, 3, 4, 5, 4, 3",
+      "ps": "ټولګي: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94؛ فریکونسي: 1, 1, 3, 1, 3, 4, 5, 4, 3",
+      "role": "question",
+      "exampleId": "stat11-ex-1-6",
+      "editorialNote": "The class \"5 – 59\" is printed this way in the question line; the solution table below prints it as 55 – 59."
+    },
+    {
+      "id": "stat11-s030-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-6"
+    },
+    {
+      "id": "stat11-s030-h159",
+      "en": "1.5.9 Merits and demerits of data array",
+      "ur": "1.5.9 ڈیٹا ارے کی خوبیاں اور خامیاں",
+      "ps": "1.5.9 د ډیټا ارې ګټې او زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s030-t159",
+      "en": "Data array obtained through frequency distribution looks very good and interesting. It helps in the proper understanding and interpretation of the collected raw data. However, the data array obtained through frequency distribution has one disadvantage that here the observations lose their identity and it only tells us the number of observations in each interval.",
+      "ur": "تعدد تقسیم کے ذریعے حاصل کیا گیا ڈیٹا ارے بہت اچھا اور دلچسپ لگتا ہے۔ یہ اکٹھے کیے گئے خام اعداد و شمار کو صحیح طور پر سمجھنے اور ان کی تشریح میں مدد دیتا ہے۔ تاہم تعدد تقسیم کے ذریعے حاصل کیے گئے ڈیٹا ارے کی ایک خامی ہے کہ یہاں مشاہدات اپنی شناخت کھو دیتے ہیں اور یہ ہمیں صرف ہر وقفے میں مشاہدات کی تعداد بتاتا ہے۔",
+      "ps": "د فریکونسي ویش په واسطه ترلاسه شوې ډیټا اره ډېره ښه او په زړه پورې ښکاري. دا د راټول شویو خامو معلوماتو په سم پوهېدو او تشریح کې مرسته کوي. خو د فریکونسي ویش په واسطه ترلاسه شوې ډیټا اره یو زیان لري چې دلته کتنې خپل پېژندنه له لاسه ورکوي او دا موږ ته یوازې په هر وقفه کې د کتنو شمېر وايي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s030-n1",
+        "stat11-s030-ex",
+        "stat11-s030-q0",
+        "stat11-s030-q1",
+        "stat11-s030-q2",
+        "stat11-s030-q3",
+        "stat11-s030-q4",
+        "stat11-s030-q5",
+        "stat11-s030-cl",
+        "stat11-s030-sol"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s030-h159",
+        "stat11-s030-t159"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "relative frequency": {
+      "ur": "اضافی تعدد",
+      "ps": "نسبي فریکونسي"
+    },
+    "percentage": {
+      "ur": "فیصد",
+      "ps": "سلنه"
+    }
+  },
+  "tables": [
+    {
+      "caption": "Example 1.6: frequency distributions",
+      "captionUrdu": "مثال 1.6: تعدد تقسیمات",
+      "captionPashto": "بېلګه 1.6: فریکونسي ویشونه",
+      "headers": [
+        {
+          "en": "Classes",
+          "ur": "جماعتیں",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        },
+        {
+          "en": "r.f",
+          "ur": "r.f",
+          "ps": "r.f"
+        },
+        {
+          "en": "c.r.f",
+          "ur": "c.r.f",
+          "ps": "c.r.f"
+        },
+        {
+          "en": "% r.f",
+          "ur": "% r.f",
+          "ps": "% r.f"
+        },
+        {
+          "en": "% c.r.f",
+          "ur": "% c.r.f",
+          "ps": "% c.r.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "50 – 54",
+            "ur": "50 – 54",
+            "ps": "50 – 54"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1/25=0.04",
+            "ur": "1/25=0.04",
+            "ps": "1/25=0.04"
+          },
+          {
+            "en": "1/25=0.04",
+            "ur": "1/25=0.04",
+            "ps": "1/25=0.04"
+          },
+          {
+            "en": "0.04×100 =4%",
+            "ur": "0.04×100 =4%",
+            "ps": "0.04×100 =4%"
+          },
+          {
+            "en": "0.04×100= 4%",
+            "ur": "0.04×100= 4%",
+            "ps": "0.04×100= 4%"
+          }
+        ],
+        [
+          {
+            "en": "55 – 59",
+            "ur": "55 – 59",
+            "ps": "55 – 59"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1/25=0.04",
+            "ur": "1/25=0.04",
+            "ps": "1/25=0.04"
+          },
+          {
+            "en": "2/25=0.08",
+            "ur": "2/25=0.08",
+            "ps": "2/25=0.08"
+          },
+          {
+            "en": "0.04×100= 4%",
+            "ur": "0.04×100= 4%",
+            "ps": "0.04×100= 4%"
+          },
+          {
+            "en": "0.08×100= 8%",
+            "ur": "0.08×100= 8%",
+            "ps": "0.08×100= 8%"
+          }
+        ],
+        [
+          {
+            "en": "60 – 64",
+            "ur": "60 – 64",
+            "ps": "60 – 64"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "3/25=0.12",
+            "ur": "3/25=0.12",
+            "ps": "3/25=0.12"
+          },
+          {
+            "en": "5/25= 0. 2",
+            "ur": "5/25= 0. 2",
+            "ps": "5/25= 0. 2"
+          },
+          {
+            "en": "12%",
+            "ur": "12%",
+            "ps": "12%"
+          },
+          {
+            "en": "20%",
+            "ur": "20%",
+            "ps": "20%"
+          }
+        ],
+        [
+          {
+            "en": "65 – 69",
+            "ur": "65 – 69",
+            "ps": "65 – 69"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0.04",
+            "ur": "0.04",
+            "ps": "0.04"
+          },
+          {
+            "en": "0.24",
+            "ur": "0.24",
+            "ps": "0.24"
+          },
+          {
+            "en": "4%",
+            "ur": "4%",
+            "ps": "4%"
+          },
+          {
+            "en": "24%",
+            "ur": "24%",
+            "ps": "24%"
+          }
+        ],
+        [
+          {
+            "en": "70 – 74",
+            "ur": "70 – 74",
+            "ps": "70 – 74"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "0.12",
+            "ur": "0.12",
+            "ps": "0.12"
+          },
+          {
+            "en": "0.36",
+            "ur": "0.36",
+            "ps": "0.36"
+          },
+          {
+            "en": "12%",
+            "ur": "12%",
+            "ps": "12%"
+          },
+          {
+            "en": "36%",
+            "ur": "36%",
+            "ps": "36%"
+          }
+        ],
+        [
+          {
+            "en": "75 – 79",
+            "ur": "75 – 79",
+            "ps": "75 – 79"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "0.16",
+            "ur": "0.16",
+            "ps": "0.16"
+          },
+          {
+            "en": "0.52",
+            "ur": "0.52",
+            "ps": "0.52"
+          },
+          {
+            "en": "16%",
+            "ur": "16%",
+            "ps": "16%"
+          },
+          {
+            "en": "52%",
+            "ur": "52%",
+            "ps": "52%"
+          }
+        ],
+        [
+          {
+            "en": "80 – 84",
+            "ur": "80 – 84",
+            "ps": "80 – 84"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "0.2",
+            "ur": "0.2",
+            "ps": "0.2"
+          },
+          {
+            "en": "0.72",
+            "ur": "0.72",
+            "ps": "0.72"
+          },
+          {
+            "en": "20%",
+            "ur": "20%",
+            "ps": "20%"
+          },
+          {
+            "en": "72%",
+            "ur": "72%",
+            "ps": "72%"
+          }
+        ],
+        [
+          {
+            "en": "85 – 89",
+            "ur": "85 – 89",
+            "ps": "85 – 89"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "0.16",
+            "ur": "0.16",
+            "ps": "0.16"
+          },
+          {
+            "en": "0.88",
+            "ur": "0.88",
+            "ps": "0.88"
+          },
+          {
+            "en": "16%",
+            "ur": "16%",
+            "ps": "16%"
+          },
+          {
+            "en": "88%",
+            "ur": "88%",
+            "ps": "88%"
+          }
+        ],
+        [
+          {
+            "en": "90 – 94",
+            "ur": "90 – 94",
+            "ps": "90 – 94"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "0.12",
+            "ur": "0.12",
+            "ps": "0.12"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "12%",
+            "ur": "12%",
+            "ps": "12%"
+          },
+          {
+            "en": "100%",
+            "ur": "100%",
+            "ps": "100%"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "100%",
+            "ur": "100%",
+            "ps": "100%"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ]
+      ],
+      "role": "solution",
+      "exampleId": "stat11-ex-1-6"
+    }
+  ],
+  "sourceNote": "Printed page 22. In the question line the second class is printed \"5 – 59\" (a misprint for 55 – 59, retained); the solution table prints 55 – 59. In the table the cell \"5/25= 0. 2\" is printed with a space and kept as printed; the last cell of the Total row is blank. Pen marks (small commas, a tick near 4) are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:16:36.947729+00:00",
+    "scope": "Scan 30 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

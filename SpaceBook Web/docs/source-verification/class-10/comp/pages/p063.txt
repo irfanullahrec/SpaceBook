@@ -1,0 +1,40 @@
+@printed 53
+@status lesson
+### پروگرام 3.1 حروف کے ایک سٹرنگ کو اسکرین پر پرنٹ کرنے کا پروگرام || Program 3.1 A program to print a string of characters on the screen || پروګرام ۳.۱ په سکرین د تورو د یوه سټرنګ چاپولو پروګرام
+m # include <stdio.h>
+m void main()
+m {
+m printf("Welcome to Programming Environment\n");
+m printf("This is my first program in C language\n");
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Welcome to Programming Environment
+m This is my first program in C language
+endbox
+@issue The book's programs use "void main()"; standard C requires "int main()" returning 0. Many older compilers (Turbo C) accept void main, so the code is transcribed as printed. The scan shows a smudge in "Env ronment" and "lar guage"; read as Environment and language.
+### پروگرام 3.2 printf() کی مدد سے 1 2 3 4 پرنٹ کرنے کا پروگرام || Program 3.2 A program to print 1 2 3 4 with printf() || پروګرام ۳.۲ د printf() په مرسته د 1 2 3 4 چاپولو پروګرام
+m # include <stdio.h>
+m void main ( )
+m {
+m int a=1,b=2,c=3,d=4;
+m printf("%d\t%d\t%d\t%d",a,b,c,d);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m 1       2       3       4
+endbox
+### (b) puts() فنکشن || (b) The puts() function || (b) puts() فنکشن
+p اس کا استعمال اسکرین پر سٹرنگ کو پرنٹ کرنے کے لئے کیا جاتا ہے۔ اس کی تعریف سٹینڈرڈ ہیڈر فائل stdio.h میں موجود ہوتی ہے۔ اس کا سائنٹکس یہ ہے: || It is used to print a string on the screen. It is declared in the standard header file stdio.h. Its syntax is: || دا په سکرین د سټرنګ د چاپولو لپاره کارېږي. په معیاري هېډر فایل stdio.h کې تعریف شوی. ترکیب یې دا دی:
+m puts(string);
+- string کوئی سٹرنگ کانسٹنٹ بھی ہو سکتا ہے یا سٹرنگ ویری ایبل بھی۔ || string can be a string constant or a string variable. || string کېدای شي سټرنګ ثابت وي یا سټرنګ متغیر.
+- سٹرنگ کانسٹنٹ کی صورت میں، سٹرنگ کو دوہرے کاموں (Double Quotes) میں بند کیا جائے گا۔ || For a string constant, the string is enclosed in double quotes. || د سټرنګ ثابت په حالت کې، سټرنګ په دوه ګونو نښو (Double Quotes) کې تړل کېږي.
+- سٹرنگ ویری ایبل کی صورت میں یہ دوہرے کاموں (Double Quotes) کے بغیر لکھا جائے گا۔ || For a string variable, it is written without double quotes. || د سټرنګ متغیر په حالت کې پرته له دوه ګونو نښو لیکل کېږي.
+### پروگرام 3.3 puts() فنکشن کی مدد سے سٹرنگ کو اسکرین پر دکھانا۔ || Program 3.3 Showing a string on the screen with the puts() function || پروګرام ۳.۳ د puts() فنکشن په مرسته په سکرین د سټرنګ ښودل
+m #include<string.h>
+m void main()
+m {
+m puts("My name is Khalid ");
+m }
+box info | آؤٹ پُٹ || Output || Output
+m My name is Khalid
+endbox
+@issue Program 3.3 includes <string.h>, but puts() is declared in <stdio.h> (as the text above says); the include should be #include<stdio.h>.

@@ -1,0 +1,39 @@
+{
+  "id": "cls9-chemistry-pdf1-page-054",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "chapterNumber": 2,
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "pdfPage": 54,
+  "printedPage": 48,
+  "status": "source-compared-corrected-with-source-issue",
+  "chapter": "Unit 2: Structure of an Atom",
+  "title": "Table 2.1, Electronic Configuration opening, Table 2.2, shell illustration",
+  "activeDataTargets": [
+    "chemChapters[1].tables",
+    "chemChapters[1].topics[2].subtopics[0]",
+    "chemChapters[1].diagrams",
+    "renderActivitiesAndTables"
+  ],
+  "sourceObservations": "Compared subatomic-particle Table 2.1, the 2n² maximum-electron rule, five Table 2.2 orbit rows K–O, and its adjacent four-level energy-shell drawing.",
+  "comparisonStatus": "Source scanned directly in the final two-page batch; semantic table fields, calculations, labels and graphic shell count checked.",
+  "correctionsApplied": [
+    "Moved the particle summary into semantic Table 2.1 and added the printed orbit capacities as semantic Table 2.2.",
+    "Renumbered the existing first-18-elements semantic table to Table 2.4 based on its own printed-page 51 source reference; that later page still requires fresh source audit.",
+    "Added a visible clarification while retaining the source charge entry exactly.",
+    "Added the coded four-shell diagram and preserved the fifth O-orbit row in the table."
+  ],
+  "unresolvedItems": [
+    "Preserve the source’s positive electron charge entry alongside the explicit correction; verify the Tables2.1/2.2 accessible interactive rendering and the four-shell diagram integration."
+  ],
+  "followUpInspected": true,
+  "followUpTranslationStatus": "Table2.1 particle labels, Table2.2 column headings, all five K–O capacity rows, and the opening electron-configuration paragraphs are represented with translations; the printed electron-charge inconsistency is retained with clarification.",
+  "followUpUnresolved": [
+    "Table2.2 header translations and diagram/source layout integration pending."
+  ],
+  "translationStatus": "Table2.1 particle labels, Table2.2 column headings, all five K–O capacity rows, and the opening electron-configuration paragraphs are represented with translations; the printed electron-charge inconsistency is retained with clarification.",
+  "followUpSemanticTranslationVerified": false,
+  "fullyCompleted": false,
+  "followUpImageReview": "2026-10-11: original pages inspected in four-image batches; native Bohr previews inspected in three languages.",
+  "lastUpdated": "2026-10-11T16:43:24.337212+00:00"
+}

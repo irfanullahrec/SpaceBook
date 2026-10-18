@@ -1,0 +1,59 @@
+@printed 126
+@status lesson
+p غور کریں اِن پُٹ ویری ایبل کی قیمتیں ہی قطار اور کالم بنا رہی ہیں۔ یہاں صرف ایک ہی گروپ ہے، جو دو ملحقہ سیلوں کا احاطہ کرتا ہے۔ || Notice that the values of the input variables themselves make the rows and columns. Here there is only one group, which covers two adjacent cells. || پام وکړئ چې د input متغیرونو ارزښتونه پخپله کرښې او ستنې جوړوي. دلته یوازې یوه ډله ده چې دوه نښتې حجرې رانغاړي.
+m Z = F(A,B) = A
+### مثال نمبر 2: || Example 2: || بېلګه ۲:
+p فرض کیا کہ بولین ایکسپریشن ہے Z = F(A,B) = A̅B̅ + A̅B + AB̅ || Suppose the Boolean expression is Z = F(A,B) = A̅B̅ + A̅B + AB̅ || فرض کړئ بولین عبارت دا دی: Z = F(A,B) = A̅B̅ + A̅B + AB̅
+table جدول نمبر 6.14 Z = F(A,B) = A̅B̅ + A̅B + AB̅ کے لیے ٹرُتھ ٹیبل || Table 6.14 Truth table for Z = F(A,B) = A̅B̅ + A̅B + AB̅ || ۶.۱۴ جدول د Z = F(A,B) = A̅B̅ + A̅B + AB̅ لپاره د حقیقت جدول
+th | A | B | Z = F(A,B)
+tr | 0 | 0 | 1
+tr | 0 | 1 | 1
+tr | 1 | 0 | 1
+tr | 1 | 1 | 0
+endtable
+@issue The expression of Example 2 is printed inconsistently: in the text as "ĀB+AB̄+AB̄", in the table head and caption as "ĀB̄+AB̄+AB̄" (a term repeated). The truth table (1 for 00, 01, 10) gives Z = ĀB̄ + ĀB + AB̄, which is used above.
+svg مثال 2 کا K-map || K-map of Example 2 || د ۲ بېلګې K-map
+<svg viewBox="0 0 480 180" width="480" role="img" aria-label="Two equivalent 2-variable K-maps for Z = A-bar B-bar + A-bar B + A B-bar: 1s in cells (A=0,B=0), (A=1,B=0) and (A=0,B=1), 0 in (A=1,B=1). Group I is the top row (B-bar); group II is the A = 0 column (A-bar)" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M8 4 L40 40" stroke="#111827"/>
+<text x="30" y="14" font-weight="700">A</text><text x="12" y="44" font-weight="700">B</text>
+<text x="71.0" y="32">0</text>
+<text x="133.0" y="32">1</text>
+<text x="30" y="70.0">0</text>
+<text x="30" y="120.0">1</text>
+<rect x="40" y="40" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 40 V140 M40 90 H164" stroke="#111827" stroke-width="2"/>
+<text x="71.0" y="70.0">1</text>
+<text x="133.0" y="70.0">1</text>
+<text x="71.0" y="120.0">1</text>
+<rect x="46" y="46" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="49" y="49" width="106" height="32" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<path d="M228 65.0 H168" stroke="#111827" marker-end="url(#arK)"/><text x="232" y="70.0" text-anchor="start" font-size="13" font-family="Arial">I</text><text x="102" y="168" font-family="Arial" font-size="13">II (column A = 0)</text>
+<path d="M288 4 L320 40" stroke="#111827"/>
+<text x="310" y="14" font-weight="700">A</text><text x="292" y="44" font-weight="700">B</text>
+<text x="351.0" y="32">A̅</text>
+<text x="413.0" y="32">A</text>
+<text x="310" y="70.0">B̅</text>
+<text x="310" y="120.0">B</text>
+<rect x="320" y="40" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M382 40 V140 M320 90 H444" stroke="#111827" stroke-width="2"/>
+<text x="351.0" y="70.0">1</text>
+<text x="413.0" y="70.0">1</text>
+<text x="351.0" y="120.0">1</text>
+<text x="413.0" y="120.0">0</text>
+<rect x="326" y="46" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="329" y="49" width="106" height="32" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/><text x="225" y="92" font-family="Arial">OR</text>
+</svg>
+endsvg
+- یہاں دو ملحقہ سیلوں پر مشتمل دو گروپ ہیں۔ || Here there are two groups, each of two adjacent cells. || دلته دوه ډلې دي چې هره یې دوه نښتې حجرې لري.
+- A̅ کالم وار مشترک ویری ایبل ہے گروپ II میں۔ جبکہ B̅ قطار وار مشترک ویری ایبل ہے گروپ I میں۔ || A̅ is the variable common down the column in group II, while B̅ is the variable common along the row in group I. || A̅ په II ډله کې د ستنې ګډ متغیر دی، او B̅ په I ډله کې د کرښې ګډ متغیر دی.
+- دونوں ٹرمز جمع کر کے آخری نتیجہ حاصل کیا جا سکتا ہے۔ || The final result is obtained by adding the two terms. || د دواړو اصطلاحګانو په جمع کولو وروستۍ پایله ترلاسه کېږي.
+- آخری مختصر شدہ ایکسپریشن کی شکل یہ ہو گی: || The final simplified expression is: || وروستی لنډ شوی عبارت دا دی:
+m Z = F(A,B) = A̅ + B̅
+@sec 6-3-3 | 6.3.3 تین ویری ایبلز والے بولین فنکشنز کا K-Map کے ذریعے اختصار || 6.3.3 Simplifying three-variable Boolean functions with a K-map || ۶.۳.۳ د K-Map په مرسته د درې متغیره بولین فنکشنونو لنډول
+### 6.3.3 تین ویری ایبلز والے بولین فنکشنز کا K-Map کے ذریعے اختصار || 6.3.3 Simplifying three-variable Boolean functions with a K-map || ۶.۳.۳ د K-Map په مرسته د درې متغیره بولین فنکشنونو لنډول
+### مثال نمبر 1: || Example 1: || بېلګه ۱:
+m Z = f(A,B,C) = A̅.B.C̅ + A.B.C̅ + A̅.B.C + A.B.C
+p درج بالا ایکسپریشن کے لیے K-Map || The K-map for the expression above || د پورتني عبارت لپاره K-Map
+@issue Example 1's expression is printed "A.B.C + A.B.C + A.B.C + A.B.C" with every complement bar lost; the bars are restored above from the K-map on the next page (1s in the ĀB and AB columns for both C̄ and C).
+@deco The right-hand map of Example 2 marks the complemented headings with a stray tick ("A´", "B´") and arrows labelled A′ and B′ under the columns.

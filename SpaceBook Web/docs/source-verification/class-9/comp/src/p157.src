@@ -1,0 +1,9 @@
+@printed 149
+@status lesson
+### Creating XOR and XNOR Gates Using Basic Gates || بنیادی گیٹس سے XOR اور XNOR گیٹس بنانا || له بنسټیزو دروازو د XOR او XNOR جوړول
+p The XOR gate represents the function: || XOR گیٹ درج ذیل فنکشن ظاہر کرتا ہے: || XOR دروازه لاندې فنکشن ښيي:
+m Y = ĀB + AB̄
+p This function consists of two terms ĀB and AB̄. Two AND gates are required for these terms and the output of these gates can be input into a single OR gate to create the XOR gate as shown in Fig.6.10. Two NOT gates are also used in the circuit to change the input A to Ā and B to B̄. || یہ فنکشن دو اجزا ĀB اور AB̄ پر مشتمل ہے۔ ان کے لیے دو AND گیٹس درکار ہیں اور ان کا آؤٹ پٹ ایک OR گیٹ میں دے کر XOR گیٹ بنایا جاتا ہے، جیسا کہ شکل 6.10 میں ہے۔ سرکٹ میں A کو Ā اور B کو B̄ میں بدلنے کے لیے دو NOT گیٹس بھی استعمال ہوتے ہیں۔ || دا فنکشن دوه برخې ĀB او AB̄ لري. د دوی لپاره دوه AND دروازې اړینې دي او output یې یوې OR دروازې ته ورکول کېږي څو XOR جوړه شي، لکه په ۶.۱۰ شکل کې. په سرکټ کې د A د Ā او B د B̄ ته اړولو لپاره دوه NOT دروازې هم کارېږي.
+fig10 f6.10 || Figure 6.10: Creating an XOR gate || شکل 6.10: XOR گیٹ بنانا || ۶.۱۰ شکل: د XOR جوړول
+### Truth table for creating XOR gate || XOR گیٹ بنانے کا ٹروتھ ٹیبل || د XOR جوړولو truth table
+tt expr:A,B:Y:A^B || Table 6.12: Truth table for XOR gate || جدول 6.12: XOR گیٹ کا ٹروتھ ٹیبل || ۶.۱۲ جدول: د XOR truth table

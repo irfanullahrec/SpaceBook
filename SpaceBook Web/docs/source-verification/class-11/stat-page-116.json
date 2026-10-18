@@ -1,0 +1,820 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s116-sd-7",
+  "title": "Example 3.13: direct method and shortcut method",
+  "headingUrdu": "مثال 3.13: براہِ راست طریقہ اور مختصر طریقہ",
+  "headingPashto": "بېلګه 3.13: مستقیم طریقه او لنډه طریقه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 116,
+    "printedPage": "108"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s116-c1",
+      "en": "Marks: 5 – 9, 10 – 14, 15 – 19, 20 – 24 with frequencies 10, 20, 30, 15 (data of Example 3.13).",
+      "ur": "نمبر: 5 – 9، 10 – 14، 15 – 19، 20 – 24 اور تعدد 10، 20، 30، 15 (مثال 3.13 کے اعداد و شمار)۔",
+      "ps": "نمرې: 5 – 9، 10 – 14، 15 – 19، 20 – 24 او فریکونسي 10، 20، 30، 15 (د بېلګې 3.13 معلومات).",
+      "role": "question",
+      "exampleId": "stat11-ex-3-13",
+      "sourceGap": {
+        "note": "Continues the question of Example 3.13 from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s116-sol13",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-m1",
+      "en": "(i) By direct method",
+      "ur": "(i) براہِ راست طریقے سے",
+      "ps": "(i) په مستقیم طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-m2",
+      "en": "(ii) By shortcut method",
+      "ur": "(ii) مختصر طریقے سے",
+      "ps": "(ii) په لنډه طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-13"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s116-c1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s116-sol13",
+        "stat11-s116-m1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s116-m2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "table",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s116-a",
+      "latex": "S=\\sqrt{\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}}",
+      "accessible": "S = √(Σf(x − x̄)²/Σf)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-b",
+      "latex": "S^2=\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}",
+      "accessible": "S² = Σf(x − x̄)²/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-c",
+      "latex": "\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{1150}{75}=15.33",
+      "accessible": "x̄ = Σx/n = 1150/75 = 15.33   [printed \"Σx/n\"]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx/n = 1150/75 = 15.33   [printed \"Σx/n\"]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx/n = 1150/75 = 15.33   [printed \"Σx/n\"]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx/n = 1150/75 = 15.33   [printed \"Σx/n\"]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-d",
+      "latex": "s=\\sqrt{\\dfrac{1666.75}{75}}=\\sqrt{22.22}=4.71\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "s = √(1666.75/75) = √22.22 = 4.71   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(1666.75/75) = √22.22 = 4.71   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(1666.75/75) = √22.22 = 4.71   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(1666.75/75) = √22.22 = 4.71   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-e",
+      "latex": "S^2=\\dfrac{1666.75}{75}=22.22",
+      "accessible": "S² = 1666.75/75 = 22.22",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = 1666.75/75 = 22.22"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = 1666.75/75 = 22.22"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = 1666.75/75 = 22.22"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-f",
+      "latex": "\\text{Coefficient of S.D}=\\dfrac{s}{\\bar{x}}=\\dfrac{4.71}{15.33}=0.31\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of S.D = s/x̄ = 4.71/15.33 = 0.31   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 4.71/15.33 = 0.31   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 4.71/15.33 = 0.31   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of S.D = s/x̄ = 4.71/15.33 = 0.31   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-g",
+      "latex": "S=\\sqrt{\\dfrac{\\sum fx^2}{\\sum f}-\\left(\\dfrac{\\sum fx}{\\sum f}\\right)^2}",
+      "accessible": "S = √(Σfx²/Σf − (Σfx/Σf)²)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s116-h",
+      "latex": "S^2=\\dfrac{\\sum fx^2}{\\sum f}-\\left(\\dfrac{\\sum fx}{\\sum f}\\right)^2",
+      "accessible": "S² = Σfx²/Σf − (Σfx/Σf)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.13: marks and frequency",
+      "captionUrdu": "مثال 3.13: نمبر اور تعدد",
+      "captionPashto": "بېلګه 3.13: نمرې او فریکونسي",
+      "headers": [
+        {
+          "en": "Marks:",
+          "ur": "نمبر:",
+          "ps": "نمرې:"
+        },
+        {
+          "en": "5 – 9",
+          "ur": "5 – 9",
+          "ps": "5 – 9"
+        },
+        {
+          "en": "10 – 14",
+          "ur": "10 – 14",
+          "ps": "10 – 14"
+        },
+        {
+          "en": "15 – 19",
+          "ur": "15 – 19",
+          "ps": "15 – 19"
+        },
+        {
+          "en": "20 – 24",
+          "ur": "20 – 24",
+          "ps": "20 – 24"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "caption": "Example 3.13: direct method table",
+      "captionUrdu": "مثال 3.13: براہِ راست طریقے کا جدول",
+      "captionPashto": "بېلګه 3.13: د مستقیمې طریقې جدول",
+      "headers": [
+        {
+          "en": "Marks",
+          "ur": "نمبر",
+          "ps": "نمرې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        },
+        {
+          "en": "f(x − x̄)²",
+          "ur": "f(x − x̄)²",
+          "ps": "f(x − x̄)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "5 – 9",
+            "ur": "5 – 9",
+            "ps": "5 – 9"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "-8.33",
+            "ur": "-8.33",
+            "ps": "-8.33"
+          },
+          {
+            "en": "69.39",
+            "ur": "69.39",
+            "ps": "69.39"
+          },
+          {
+            "en": "693.89",
+            "ur": "693.89",
+            "ps": "693.89"
+          }
+        ],
+        [
+          {
+            "en": "10 – 14",
+            "ur": "10 – 14",
+            "ps": "10 – 14"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "240",
+            "ur": "240",
+            "ps": "240"
+          },
+          {
+            "en": "-3.33",
+            "ur": "-3.33",
+            "ps": "-3.33"
+          },
+          {
+            "en": "11.09",
+            "ur": "11.09",
+            "ps": "11.09"
+          },
+          {
+            "en": "221.80",
+            "ur": "221.80",
+            "ps": "221.80"
+          }
+        ],
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "510",
+            "ur": "510",
+            "ps": "510"
+          },
+          {
+            "en": "1.67",
+            "ur": "1.67",
+            "ps": "1.67"
+          },
+          {
+            "en": "2.79",
+            "ur": "2.79",
+            "ps": "2.79"
+          },
+          {
+            "en": "83.70",
+            "ur": "83.70",
+            "ps": "83.70"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "330",
+            "ur": "330",
+            "ps": "330"
+          },
+          {
+            "en": "6.67",
+            "ur": "6.67",
+            "ps": "6.67"
+          },
+          {
+            "en": "44.49",
+            "ur": "44.49",
+            "ps": "44.49"
+          },
+          {
+            "en": "667.35",
+            "ur": "667.35",
+            "ps": "667.35"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "1150",
+            "ur": "1150",
+            "ps": "1150"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "1666.75",
+            "ur": "1666.75",
+            "ps": "1666.75"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "caption": "Example 3.13: shortcut method table",
+      "captionUrdu": "مثال 3.13: مختصر طریقے کا جدول",
+      "captionPashto": "بېلګه 3.13: د لنډې طریقې جدول",
+      "headers": [
+        {
+          "en": "Marks",
+          "ur": "نمبر",
+          "ps": "نمرې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "fx²",
+          "ur": "fx²",
+          "ps": "fx²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "5 – 9",
+            "ur": "5 – 9",
+            "ps": "5 – 9"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "490",
+            "ur": "490",
+            "ps": "490"
+          }
+        ],
+        [
+          {
+            "en": "10 – 14",
+            "ur": "10 – 14",
+            "ps": "10 – 14"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "240",
+            "ur": "240",
+            "ps": "240"
+          },
+          {
+            "en": "2880",
+            "ur": "2880",
+            "ps": "2880"
+          }
+        ],
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "510",
+            "ur": "510",
+            "ps": "510"
+          },
+          {
+            "en": "8670",
+            "ur": "8670",
+            "ps": "8670"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "330",
+            "ur": "330",
+            "ps": "330"
+          },
+          {
+            "en": "7260",
+            "ur": "7260",
+            "ps": "7260"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "1150",
+            "ur": "1150",
+            "ps": "1150"
+          },
+          {
+            "en": "19300",
+            "ur": "19300",
+            "ps": "19300"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-13"
+    }
+  ],
+  "sourceNote": "Printed page 108. The question data at the top are printed as aligned Marks/Frequency rows and are shown as a table. A handwritten loop on the \"70\" in the lower table and a dark edge shadow at the bottom-right are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:51:28.177689+00:00",
+    "scope": "Scan 116 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

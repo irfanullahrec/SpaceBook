@@ -1,0 +1,25 @@
+@printed 207
+@sec 7.1.1 | The Principle of Mathematical Induction || ریاضیاتی استقرا کا اصول || د ریاضیاتي استقرا اصل
+@deco Unit-running header, folio and decorative footer band excluded
+p are all propositions, statements which involve the natural number $n$. Equation (1) above asserts that the sum of first $n$ positive odd integers is equal to the square of $n$. We see that the L.H.S. of (1) reduces simply to: || یہ سب قضایا ہیں، یعنی ایسے بیانات جن میں قدرتی عدد $n$ شامل ہے۔ اوپر مساوات (1) یہ کہتی ہے کہ پہلے $n$ مثبت طاق صحیح اعداد کا مجموعہ $n$ کے مربع کے برابر ہے۔ ہم دیکھتے ہیں کہ (1) کا بایاں طرف سادہ طور پر یوں بنتا ہے: || دا ټول قضیې دي، یعنې داسې بیانونه چې طبیعي عدد $n$ پکې شامل دی. پورتنۍ معادله (1) وايي چې د لومړیو $n$ مثبتو تاقو صحیحو عددونو مجموعه د $n$ له مربع سره برابره ده. موږ ګورو چې د (1) ښي لوری ساده ډول داسې کېږي:
+m $1=1\qquad\text{if }n=1$
+m $1+3=4=2^2\qquad\text{if }n=2$
+m $1+3+5=9=3^2\qquad\text{if }n=3$
+p and so on. || اور اسی طرح آگے۔ || او همداسې نور.
+p It is impossible to verify (1) for each $n\in\mathbf N$, because it involves infinitely many calculations which never end. To avoid such situations, the principle of mathematical induction is applied. || ہر $n\in\mathbf N$ کے لیے (1) کی تصدیق ناممکن ہے کیونکہ اس میں لامحدود حسابات شامل ہیں جو کبھی ختم نہیں ہوتے۔ ایسی صورتوں سے بچنے کے لیے ریاضیاتی استقرا کا اصول استعمال کیا جاتا ہے۔ || د هر $n\in\mathbf N$ لپاره د (1) تصدیق ناشونې ده ځکه چې پکې بې پایه حسابونه شامل دي چې هیڅکله نه ختمېږي. د داسې حالاتو د مخنیوي لپاره د ریاضیاتي استقرا اصل کارول کېږي.
+### 7.1.1. The Principle of Mathematical Induction || 7.1.1۔ ریاضیاتی استقرا کا اصول || 7.1.1. د ریاضیاتي استقرا اصل
+p The principle of mathematical induction is stated as follows. || ریاضیاتی استقرا کا اصول یوں بیان کیا جاتا ہے۔ || د ریاضیاتي استقرا اصل داسې بیانېږي.
+p Let $P(n)$ be a property that is defined for integers $n$, and let $a$ be a fixed integer. Suppose the following two statements are true. || فرض کریں $P(n)$ ایک خاصیت ہے جو صحیح اعداد $n$ کے لیے متعین ہے اور $a$ ایک مقررہ صحیح عدد ہے۔ فرض کریں درج ذیل دو بیانات درست ہیں۔ || فرض کړئ $P(n)$ یوه ځانګړنه ده چې د صحیحو عددونو $n$ لپاره ټاکل شوې ده او $a$ یو ټاکلی صحیح عدد دی. فرض کړئ لاندې دوه بیانونه سم دي.
+- 1. $P(a)$ is true. || 1۔ $P(a)$ درست ہے۔ || 1. $P(a)$ سم دی.
+- 2. For all integers $k\ge a$, if $P(k)$ is true then $P(k+1)$ is true. || 2۔ تمام صحیح اعداد $k\ge a$ کے لیے، اگر $P(k)$ درست ہو تو $P(k+1)$ درست ہے۔ || 2. د ټولو صحیحو عددونو $k\ge a$ لپاره، که $P(k)$ سم وي نو $P(k+1)$ سم دی.
+p Then the statement for all integers $n\ge a$; $P(n)$ is true. || تب تمام صحیح اعداد $n\ge a$ کے لیے بیان $P(n)$ درست ہے۔ || نو د ټولو صحیحو عددونو $n\ge a$ لپاره بیان $P(n)$ سم دی.
+p The principle of mathematical induction is explained through the following examples. || ریاضیاتی استقرا کا اصول درج ذیل مثالوں کے ذریعے سمجھایا جاتا ہے۔ || د ریاضیاتي استقرا اصل د لاندې مثالونو له لارې تشریح کېږي.
+example 1 | Prove that for every $n\in\mathbf N$, $1+2+3+\cdots+n=\dfrac{n(n+1)}{2}$ || ثابت کریں کہ ہر $n\in\mathbf N$ کے لیے $1+2+3+\cdots+n=\dfrac{n(n+1)}{2}$ || ثابته کړئ چې د هر $n\in\mathbf N$ لپاره $1+2+3+\cdots+n=\dfrac{n(n+1)}{2}$
+p **Solution:** **Step 1.** For $n=1$, the statement becomes || **حل:** **مرحلہ 1۔** $n=1$ کے لیے بیان یہ بن جاتا ہے || **حل:** **لومړی ګام.** د $n=1$ لپاره بیان داسې کېږي
+m $1=\dfrac{1(1+1)}{2}\qquad\text{— basis }(P(1))$
+p Thus the statement is true for $n=1$. || یوں بیان $n=1$ کے لیے درست ہے۔ || په دې توګه بیان د $n=1$ لپاره سم دی.
+p **Step 2.** Let us assume that the statement be true for $n=k\in\mathbf N$, that is, we assume || **مرحلہ 2۔** فرض کریں کہ بیان $n=k\in\mathbf N$ کے لیے درست ہے، یعنی ہم فرض کرتے ہیں || **دویم ګام.** فرض کړئ چې بیان د $n=k\in\mathbf N$ لپاره سم دی، یعنې موږ فرض کوو
+m $1+2+\cdots+k=\dfrac{k(k+1)}{2}\qquad\text{— inductive hypothesis }(P(k))$
+p **Step 3.** Let $n=k+1$ and consider || **مرحلہ 3۔** فرض کریں $n=k+1$ اور غور کریں || **دریم ګام.** فرض کړئ $n=k+1$ او وګورئ
+m $(1+2+\cdots+k)+(k+1)=\dfrac{k(k+1)}{2}+(k+1)$
+p (adding $k+1$ to both sides of $P(k)$) || ($P(k)$ کے دونوں طرف $k+1$ جمع کرنے سے) || (د $P(k)$ دواړو خواوو ته $k+1$ ورزیاتولو سره)

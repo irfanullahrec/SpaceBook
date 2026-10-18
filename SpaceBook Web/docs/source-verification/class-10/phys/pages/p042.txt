@@ -1,0 +1,25 @@
+@printed 145
+@status lesson
+@issue Source: 10thphysics4.pdf page 32.
+p From equation 14.5 and equation 14.6, it is clear that in series combination the equivalent resistance is always greater than any individual resistance in combination. || مساوات 14.5 اور 14.6 سے واضح ہے کہ سلسلہ وار ملاپ میں مساوی مزاحمت ہمیشہ ملاپ کی ہر انفرادی مزاحمت سے زیادہ ہوتی ہے۔ || له (۱۴.۵) او (۱۴.۶) معادلو څرګندېږي چې په لړۍ ییز ترکیب کې معادل مقاومت تل د ترکیب له هر انفرادي مقاومت څخه لوی دی.
+example 14.4 | RESISTORS CONNECTED IN SERIES || سلسلہ وار جڑی مزاحمتیں || په لړۍ تړل شوي مقاومتونه
+p Four resistors $R_1$ = 5 Ω, $R_2$ = 12 Ω, $R_3$ = 13 Ω and $R_4$ = 96 Ω are connected in series across a 90 V battery. What is the current in the circuit? || چار مزاحمتیں $R_1$ = 5 Ω، $R_2$ = 12 Ω، $R_3$ = 13 Ω اور $R_4$ = 96 Ω ایک 90 V بیٹری کے ساتھ سلسلہ وار جڑی ہیں۔ سرکٹ میں کرنٹ کتنا ہے؟ || څلور مقاومتونه $R_1$ = 5 Ω، $R_2$ = 12 Ω، $R_3$ = 13 Ω او $R_4$ = 96 Ω له 90 V بیټرۍ سره په لړۍ تړل شوي. په سرکټ کې جریان څومره دی؟
+p **GIVEN:** Resistance $R_1$ = 5 Ω, $R_2$ = 12 Ω, $R_3$ = 13 Ω, $R_4$ = 96 Ω; Potential difference V = 90 V. **REQUIRED:** Circuit Current I = ? || **معلوم:** $R_1$ = 5 Ω، $R_2$ = 12 Ω، $R_3$ = 13 Ω، $R_4$ = 96 Ω؛ V = 90 V۔ **مطلوب:** سرکٹ کرنٹ I = ? || **ورکړل شوي:** $R_1$ = 5 Ω، $R_2$ = 12 Ω، $R_3$ = 13 Ω، $R_4$ = 96 Ω؛ V = 90 V. **غوښتل شوي:** د سرکټ جریان I = ?
+svg FIGURE 14.8 – Example 14.4: resistors of 5 Ω, 12 Ω, 13 Ω and 96 Ω in series with a 90 V battery. || شکل 14.8 – مثال 14.4: 90 V بیٹری کے ساتھ سلسلہ وار 5 Ω، 12 Ω، 13 Ω اور 96 Ω کی مزاحمتیں۔ || ۱۴.۸ شکل – ۱۴.۴ بېلګه: له 90 V بیټرۍ سره په لړۍ د 5 Ω، 12 Ω، 13 Ω او 96 Ω مقاومتونه.
+<svg viewBox="0 0 260 100" width="260" role="img" aria-label="Four zig-zag resistors labelled R1 5 ohm, R2 12 ohm, R3 13 ohm, R4 96 ohm in a row across the top of a loop, with a 90 V cell at the bottom" font-family="Arial" font-size="10">
+<path d="M10 30 H20 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H70 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H130 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H190 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H250 V85 H135 M125 85 H10 V30" fill="none" stroke="#111" stroke-width="1.5"/>
+<g stroke="#111" stroke-width="2"><line x1="125" y1="75" x2="125" y2="95"/><line x1="133" y1="79" x2="133" y2="91"/></g>
+<text x="25" y="16">R₁</text><text x="85" y="16">R₂</text><text x="145" y="16">R₃</text><text x="205" y="16">R₄</text>
+<text x="22" y="50">5 Ω</text><text x="80" y="50">12 Ω</text><text x="140" y="50">13 Ω</text><text x="200" y="50">96 Ω</text><text x="118" y="70">90 V</text>
+</svg>
+endsvg
+p **SOLUTION:** For series combination as shown in figure 14.8, the equivalent resistance is || **حل:** شکل 14.8 میں دکھائے گئے سلسلہ وار ملاپ کے لیے مساوی مزاحمت ہے || **حل:** د ۱۴.۸ شکل د لړۍ ییز ترکیب لپاره معادل مقاومت دی
+eq R_{eq} = R_1 + R_2 + R_3 + R_4 \qquad \text{Putting values}\quad R_{eq} = 5\,\Omega + 12\,\Omega + 13\,\Omega + 96\,\Omega \quad \text{therefore}\quad R_{eq} = 126\,\Omega
+eq \text{By Ohm's law}\quad I = \dfrac{V}{R_{eq}} \qquad \text{Putting values}\quad I = \dfrac{90\ \text{V}}{126\ \Omega} \qquad \text{Therefore}\quad I = 0.71\ \text{A} \quad \text{(Answer)}
+p The current through the circuit is 0.71 A. || سرکٹ میں کرنٹ 0.71 A ہے۔ || په سرکټ کې جریان 0.71 A دی.
+endexample
+box assignment | ASSIGNMENT 14.4: RESISTORS IN SERIES || اسائنمنٹ 14.4: سلسلہ وار مزاحمتیں || دنده ۱۴.۴: په لړۍ کې مقاومتونه
+q 1 | Four resistors all having similar resistance of 15 Ω are connected in series across a 30 V battery. What is the current in the circuit? || 15 Ω کی یکساں مزاحمت والی چار مزاحمتیں 30 V بیٹری کے ساتھ سلسلہ وار جڑی ہیں۔ سرکٹ میں کرنٹ کتنا ہے؟ || څلور مقاومتونه چې هر یو 15 Ω مقاومت لري، له 30 V بیټرۍ سره په لړۍ تړل شوي. په سرکټ کې جریان څومره دی؟
+sol I = 0.5 A ## $R_{eq} = 4\times15 = 60\ \Omega$; $I = \dfrac{V}{R_{eq}} = \dfrac{30}{60} = 0.5$ A (book answer key: 0.5 A) || $R_{eq} = 60\ \Omega$؛ $I = 30/60 = 0.5$ A || $R_{eq} = 60\ \Omega$؛ $I = 30/60 = 0.5$ A
+endbox
+p **B. Parallel Combination of resistors:** When the resistors are connected in different branches of the circuit in such a way that there is more than one path for the flow of current, resistors are said to be connected in parallel. Consider three light bulbs as resistors having resistance $R_1$, $R_2$ and $R_3$ are shown in the figure 14.9 as parallel combination. || **B. مزاحمتوں کا متوازی ملاپ:** جب مزاحمتیں سرکٹ کی مختلف شاخوں میں اس طرح جڑی ہوں کہ کرنٹ کے بہاؤ کے ایک سے زیادہ راستے ہوں تو کہا جاتا ہے کہ وہ متوازی جڑی ہیں۔ شکل 14.9 میں $R_1$، $R_2$ اور $R_3$ مزاحمت والے تین بلب متوازی ملاپ میں دکھائے گئے ہیں۔ || **B. د مقاومتونو موازي ترکیب:** کله چې مقاومتونه د سرکټ په بېلابېلو څانګو کې داسې وتړل شي چې د جریان لپاره له یوې څخه ډېرې لارې وي، وایي چې موازي تړل شوي. په ۱۴.۹ شکل کې درې بلبونه د $R_1$، $R_2$ او $R_3$ مقاومت سره په موازي ترکیب ښودل شوي.

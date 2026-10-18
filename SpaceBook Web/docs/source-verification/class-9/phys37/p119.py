@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Example 4.3 Opening a door — torque at three lever arms'
+SECTIONS = [
+    ('ex4.3', ('Example 4.3 OPENING A DOOR', 'مثال 4.3 دروازہ کھولنا', '4.3 مثال د دروازې پرانیستل'), [
+        ('p', 'In Figure a force (magnitude 55 N) is applied to a door. However, the arms are different in the three parts of the drawing: (a) d_A = 0.80 m, (b) d_B = 0.60 m, and (c) d_C = 0 m. Find the torque in each case.', 'شکل میں ایک قوت (مقدار 55 N) دروازے پر لگائی گئی ہے۔ تاہم خاکے کے تینوں حصوں میں بازو مختلف ہیں: (a) d_A = 0.80 m، (b) d_B = 0.60 m اور (c) d_C = 0 m۔ ہر صورت میں ٹارک معلوم کریں۔', 'په شکل کې یو قوت (اندازه 55 N) پر دروازه اچول شوی. خو د انځور په درېیو برخو کې بازوګان توپیر لري: (a) d_A = 0.80 m، (b) d_B = 0.60 m او (c) d_C = 0 m. په هر حالت کې تورک معلوم کړئ.'),
+        ('fig', 'Figure: three top views of a door (A, B, C) showing the axis of rotation, the line of action of force F, a 90° mark, and moment arms d_A = 0.8 m, d_B = 0.6 m, d_C = 0 m.', 'شکل: دروازے کے اوپر سے تین مناظر (A، B، C) جن میں گردش کا محور، قوت F کی لائن آف ایکشن، 90° کا نشان اور مومنٹ آرم d_A = 0.8 m، d_B = 0.6 m، d_C = 0 m دکھائے گئے ہیں۔', 'شکل: د دروازې له پاسه درې لیدونه (A، B، C) چې د څرخ محور، د F قوت د عمل کرښه، د 90° نښه او مومنټ بازوګان d_A = 0.8 m، d_B = 0.6 m، d_C = 0 m ښيي.'),
+        ('h', 'SOLUTION — GIVEN:', 'حل — معلوم:', 'حل — ورکړل شوي:'),
+        ('ul', [('Force F = 55 N', 'قوت F = 55 N', 'قوت F = 55 N'), ('Moment arm d_A = 0.80 m', 'مومنٹ آرم d_A = 0.80 m', 'مومنټ بازو d_A = 0.80 m'), ('Moment arm d_B = 0.60 m', 'مومنٹ آرم d_B = 0.60 m', 'مومنټ بازو d_B = 0.60 m'), ('Moment arm d_C = 0.00 m', 'مومنٹ آرم d_C = 0.00 m', 'مومنټ بازو d_C = 0.00 m')]),
+        ('h', 'REQUIRED:', 'مطلوب:', 'غوښتل شوي:'),
+        ('ul', [('(a) torque τ_A = ?', '(a) ٹارک τ_A = ?', '(a) تورک τ_A = ?'), ('(b) torque τ_B = ?', '(b) ٹارک τ_B = ?', '(b) تورک τ_B = ?'), ('(c) torque τ_C = ?', '(c) ٹارک τ_C = ?', '(c) تورک τ_C = ?')]),
+        ('p', 'In each case the lever arm is the perpendicular distance between the axis of rotation and the line of action of the force.', 'ہر صورت میں لیور آرم گردش کے محور اور قوت کی لائن آف ایکشن کے درمیان عمودی فاصلہ ہے۔', 'په هر حالت کې لیور بازو د څرخ د محور او د قوت د عمل د کرښې ترمنځ عمودي واټن دی.'),
+        ('p', '(a) Using the definition of torque, the equation 4.7 can be written as', '(a) ٹارک کی تعریف استعمال کرتے ہوئے مساوات 4.7 کو یوں لکھا جا سکتا ہے', '(a) د تورک د تعریف په کارولو 4.7 معادله داسې لیکل کېدای شي'),
+        ('eq', None, 'τ_A = F × d_A'),
+        ('p', 'putting values', 'قدریں رکھنے سے', 'د ارزښتونو په ایښودلو'),
+        ('eq', None, 'τ_A = 55 N × 0.80 m'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', None, 'τ_A = 44 Nm   Answer'),
+        ('p', '(b) Using the definition of torque, the equation 4.7 can be written as', '(b) ٹارک کی تعریف استعمال کرتے ہوئے مساوات 4.7 کو یوں لکھا جا سکتا ہے', '(b) د تورک د تعریف په کارولو 4.7 معادله داسې لیکل کېدای شي'),
+        ('eq', None, 'τ_B = F × d_B'),
+        ('p', 'putting values', 'قدریں رکھنے سے', 'د ارزښتونو په ایښودلو'),
+        ('eq', None, 'τ_B = 55 N × 0.60 m'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', None, 'τ_B = 33 Nm   Answer'),
+        ('p', '(c) Using the definition of torque, the equation 4.7 can be written as', '(c) ٹارک کی تعریف استعمال کرتے ہوئے مساوات 4.7 کو یوں لکھا جا سکتا ہے', '(c) د تورک د تعریف په کارولو 4.7 معادله داسې لیکل کېدای شي'),
+        ('eq', None, 'τ_C = F × d_C'),
+        ('p', 'putting values', 'قدریں رکھنے سے', 'د ارزښتونو په ایښودلو'),
+        ('eq', None, 'τ_C = 55 N × 0.00 m'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', None, 'τ_C = 0 Nm   Answer'),
+        ('p', 'Because the lever arm is different in each case, the torque is different, even', 'چونکہ ہر صورت میں لیور آرم مختلف ہے اس لیے ٹارک مختلف ہے، حالانکہ', 'څرنګه چې په هر حالت کې لیور بازو توپیر لري، تورک هم توپیر لري، که څه هم'),
+    ]),
+]

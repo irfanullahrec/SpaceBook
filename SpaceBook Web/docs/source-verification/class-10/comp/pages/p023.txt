@@ -1,0 +1,33 @@
+@printed 13
+@status lesson
+p **مسئلہ نمبر 20:** دو اعداد n1 اور n2 کے درمیان بالترتیب پائے جانے والے مفرد اعداد (Prime Numbers) معلوم کرنا (جبکہ n1 بڑا ہے n2 سے)۔ || **Problem 20:** Find, in order, the prime numbers lying between two numbers n1 and n2 (where n1 is greater than n2). || **۲۰ ستونزه:** د دوو عددونو n1 او n2 ترمنځ په ترتیب اولي عددونه (Prime Numbers) معلوم کړئ (په داسې حال کې چې n1 له n2 لوی دی).
+p الگورتھم: یہ الگورتھم دو اعداد n1 اور n2 کے درمیان بالترتیب پائے جانے والے مفرد اعداد معلوم کرے گا۔ (جبکہ n1 چھوٹا ہے n2 سے)۔ || Algorithm: this algorithm will find, in order, the prime numbers between two numbers n1 and n2 (where n1 is smaller than n2). || الګوریتم: دا الګوریتم به د n1 او n2 ترمنځ په ترتیب اولي عددونه معلوم کړي (په داسې حال کې چې n1 له n2 کوچنی دی).
+@issue Printed inconsistency: the problem statement says n1 is greater than n2, but the algorithm description says n1 is smaller than n2, and the steps (Set n=n2+1; Repeat while n<n1) assume n2 < n1. Kept as printed.
+m Step 1.  Read n1, n2
+m Step 2.  Set n=n2+1
+m Step 3.  Repeat Step 4 while n<n1
+m Step 4.  Repeat Step 5 for i=2 to n-1.
+m Step 5.  If n%i=0 Then Set n=n+1 Go to Step 3
+m          Else
+m            (a) Write n
+m            (b) Set n=n+1
+m Step 6.  Exit
+@issue Printed logic error in Problem 20: Step 5 writes n as soon as the first i does not divide n (inside the inner loop), so composite numbers would be printed; the "Write n" should come after the inner loop completes without finding a divisor. Kept as printed.
+@sec 1-3 | 1.3 فلوچارٹ || 1.3 Flowchart || ۱.۳ فلوچارټ
+## 1.3 فلوچارٹ (FLOWCHART) || 1.3 Flowchart || ۱.۳ فلوچارټ
+### 1.3.1 فلوچارٹ کیا ہے؟ (What is a Flowchart?) || 1.3.1 What is a flowchart? || ۱.۳.۱ فلوچارټ څه دی؟
+p فلوچارٹ دو الفاظ کا مجموعہ ہے جیسے فلو اور چارٹ۔ فلوچارٹ الگورتھم کا تصویری (Diagrammatic) اظہار ہے۔ فلوچارٹ مختلف علامات پر مشتمل ہوتا ہے جو کسی بھی پروگرام کے متعلق معلومات دکھاتا ہے۔ یہ تمام علامات ایک دوسرے سے تیر کے نشان کی مدد سے ملے ہوتے ہیں جو کہ اس عمل کے بہاؤ کی سمت کو ظاہر کرتے ہیں جو آخر میں کسی حل پر منتج ہوتا ہے۔ جیسا کہ شکل نمبر 1.7 میں دکھایا گیا ہے۔ || "Flowchart" is a combination of two words, flow and chart. A flowchart is a diagrammatic representation of an algorithm. It consists of various symbols that show information about a program. All these symbols are joined to one another by arrows, which show the direction of flow of the process that finally leads to a solution, as shown in Figure 1.7. || فلوچارټ د دوو کلمو یوځای کېدل دي: فلو او چارټ. فلوچارټ د الګوریتم انځوریز (Diagrammatic) ښودنه ده. فلوچارټ له بېلابېلو نښو جوړ وي چې د یوه پروګرام په اړه معلومات ښيي. دا ټولې نښې د غشو په مرسته سره نښلول کېږي چې د بهیر د جریان لوری ښيي او په پای کې یوه حل ته رسېږي، لکه څنګه چې په ۱.۷ شکل کې ښودل شوي.
+### 1.3.2 ایک مسئلے کے حل میں فلوچارٹ کی اہمیت (Importance of a Flowchart for Solving a Problem) || 1.3.2 Importance of a flowchart for solving a problem || ۱.۳.۲ د ستونزې په حل کې د فلوچارټ اهمیت
+svg شکل نمبر 1.7 پانچ نمبروں کا اوسط معلوم کرنے کا فلوچارٹ || Figure 1.7 Flowchart for finding the average of five numbers || ۱.۷ شکل د پنځو شمېرو د اوسط د موندلو فلوچارټ
+<svg viewBox="0 0 300 400" width="300" role="img" aria-label="Flowchart: Start; input A,B,C,D,E; total = A+B+C+D+E; average = total/5; print average; End" font-family="Noto Nastaliq Urdu, Jameel Noori Nastaleeq, serif" font-size="15" text-anchor="middle" stroke-width="1.6">
+<defs><marker id="ar17" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" marker-end="url(#ar17)"><line x1="150" y1="44" x2="150" y2="74"/><line x1="150" y1="114" x2="150" y2="144"/><line x1="150" y1="184" x2="150" y2="214"/><line x1="150" y1="254" x2="150" y2="284"/><line x1="150" y1="324" x2="150" y2="352"/></g>
+<ellipse cx="150" cy="26" rx="56" ry="18" fill="#fff" stroke="#111827"/><text x="150" y="31">ابتداء</text>
+<polygon points="60,114 90,76 260,76 230,114" fill="#bae6fd" stroke="#111827"/><text x="160" y="100">اِن پُٹ A,B,C,D,E</text>
+<rect x="70" y="146" width="160" height="38" fill="#fef08a" stroke="#111827"/><text x="150" y="170">ٹوٹل = A+B+C+D+E</text>
+<rect x="70" y="216" width="160" height="38" fill="#fef08a" stroke="#111827"/><text x="150" y="240">اوسط = ٹوٹل / 5</text>
+<polygon points="60,324 90,286 260,286 230,324" fill="#bae6fd" stroke="#111827"/><text x="160" y="310">اوسط پرنٹ کریں</text>
+<ellipse cx="150" cy="372" rx="56" ry="18" fill="#fff" stroke="#111827"/><text x="150" y="377">اختتام</text>
+</svg>
+endsvg
+@issue The printed flowchart writes the input and total in RTL order ("E,D,C,B,A" and "E+D+C+B+A"); the diagram uses left-to-right order A,B,C,D,E (same meaning).

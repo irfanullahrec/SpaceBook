@@ -1,0 +1,23 @@
+@pdf 141
+@printed 145
+@status lesson
+### Truth table for NAND gate || NAND گیٹ کا ٹروتھ ٹیبل || د NAND دروازې truth table
+table Table 6.7: Truth table for NAND Gate with two inputs || جدول 6.7: دو ان پٹ والے NAND گیٹ کا ٹروتھ ٹیبل || ۶.۷ جدول: د دوو inputs NAND دروازې truth table
+th | A | B | Y=(A.B)‾
+tr | 0 | 0 | 1
+tr | 0 | 1 | 1
+tr | 1 | 0 | 1
+tr | 1 | 1 | 0
+endtable
+### Exclusive-OR Gate (XOR) || ایکسکلوسو-OR گیٹ (XOR) || Exclusive-OR دروازه (XOR)
+p The gate whose output is '0' when all the inputs are either 0s or 1s is called XOR gate. So XOR gate produces '0' output for same input values, and produces '1' for different input values. || وہ گیٹ جس کا آؤٹ پٹ 0 ہو جب تمام ان پٹ یا تو 0 ہوں یا 1، XOR گیٹ کہلاتا ہے۔ یوں XOR گیٹ ایک جیسے ان پٹ پر 0 اور مختلف ان پٹ پر 1 دیتا ہے۔ || هغه دروازه چې output یې 0 وي کله چې ټول inputs یا 0 یا 1 وي، XOR بلل کېږي. نو XOR د یو شان inputs لپاره 0 او د بېلابېلو لپاره 1 ورکوي.
+p If A and B are the two inputs to XOR gate and Y is the output, then the block diagram and truth table of XOR gate is shown in the figure 6.6 below. || اگر A اور B XOR گیٹ کے دو ان پٹ اور Y آؤٹ پٹ ہو تو اس کا بلاک ڈایاگرام اور ٹروتھ ٹیبل نیچے شکل 6.6 میں ہے۔ || که A او B د XOR دوه inputs او Y output وي، ډیاګرام او truth table یې په ۶.۶ شکل کې دي.
+svg Figure 6.6: XOR gate with two inputs — Y=(A⊕B)=ĀB+AB̄ || شکل 6.6 دو ان پٹ والا XOR گیٹ — Y=(A⊕B)=ĀB+AB̄ || ۶.۶ شکل د دوو inputs XOR دروازه — Y=(A⊕B)=ĀB+AB̄
+<svg viewBox="0 0 480 140" width="480" role="img" aria-label="XOR gate symbol: an OR gate shape with an extra curved line at its input side; inputs A and B labelled Input; output Y = (A ⊕ B) = A-bar B + A B-bar, labelled Output" font-family="Arial, Helvetica, sans-serif" font-size="17">
+<path d="M130 20 Q160 70 130 120 Q220 120 260 70 Q220 20 130 20 Z" fill="#fff" stroke="#111827" stroke-width="2.5"/>
+<path d="M115 20 Q145 70 115 120" fill="none" stroke="#111827" stroke-width="2.5"/>
+<path d="M70 40 H137 M70 100 H137 M260 70 H330" stroke="#111827" stroke-width="2.5"/>
+<text x="50" y="47" font-weight="700">A</text><text x="50" y="107" font-weight="700">B</text><text x="4" y="78">Input</text>
+<text x="272" y="58" font-weight="700">Y = (A⊕B) = A̅B + AB̅</text><text x="272" y="96">Output</text>
+</svg>
+endsvg

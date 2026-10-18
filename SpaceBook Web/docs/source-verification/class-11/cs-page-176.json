@@ -1,0 +1,111 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s176-p167",
+  "title": "IP addressing (end); static and dynamic; binary and decimal; a. Classes of IP Addresses — start",
+  "headingUrdu": "آئی پی ایڈریسنگ (اختتام)؛ جامد اور متحرک؛ بائنری اور اعشاری؛ الف۔ آئی پی ایڈریس کی کلاسز — آغاز",
+  "headingPashto": "د IP پتې کول (پای)؛ ثابتې او متحرکې؛ دوتایي او لسیزه؛ الف. د IP پتو ټولګې — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 176,
+    "printedPage": "167"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s176-a",
+      "en": "host and network device must have an IP address within the same network to be able to communicate with each other.",
+      "ur": "ہوسٹ اور نیٹ ورک آلے کو ایک دوسرے سے رابطے کے قابل ہونے کے لیے ایک ہی نیٹ ورک کے اندر آئی پی ایڈریس درکار ہوتا ہے۔",
+      "ps": "کوربه او د شبکې وسیله باید د یو بل سره د اړیکې وړتیا لپاره په ورته شبکه کې IP پته ولري.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s176-b",
+      "en": "An IP address can be static or dynamic. A static IP address will never change and it is a permanent Internet address. A dynamic IP address is a temporary address that is assigned each time a computer or device accesses the Internet. The address is made up of 32 binary bits, which can be divided into a network portion and host portion with the help of a subnet mask. The 32 binary bits are broken into four octets (1 octet = 8 bits). Each octet is represented in decimal and separated by a period (dot). For this reason, an IP address is expressed in dotted decimal format (e.g., 172.16.81.100). The value in each octet ranges from 0 to 255 in decimal, or 00000000 - 11111111 in binary.",
+      "ur": "آئی پی ایڈریس جامد یا متحرک ہو سکتا ہے۔ جامد آئی پی ایڈریس کبھی نہیں بدلتا اور یہ مستقل انٹرنیٹ ایڈریس ہے۔ متحرک آئی پی ایڈریس ایک عارضی ایڈریس ہے جو ہر بار کمپیوٹر یا آلے کے انٹرنیٹ تک رسائی حاصل کرنے پر تفویض ہوتا ہے۔ ایڈریس ۳۲ بائنری بٹس پر مشتمل ہوتا ہے جنہیں سب نیٹ ماسک کی مدد سے نیٹ ورک حصے اور ہوسٹ حصے میں تقسیم کیا جا سکتا ہے۔ ۳۲ بائنری بٹس چار آکٹیٹس میں تقسیم ہوتے ہیں (۱ آکٹیٹ = ۸ بٹس)۔ ہر آکٹیٹ اعشاری میں ظاہر کیا جاتا ہے اور نقطے (ڈاٹ) سے الگ کیا جاتا ہے۔ اسی وجہ سے آئی پی ایڈریس ڈاٹڈ ڈیسیمل فارمیٹ (مثلاً ۱۷۲.۱۶.۸۱.۱۰۰) میں ظاہر کیا جاتا ہے۔ ہر آکٹیٹ کی قدر اعشاری میں ۰ سے ۲۵۵ یا بائنری میں ۰۰۰۰۰۰۰۰ سے ۱۱۱۱۱۱۱۱ تک ہوتی ہے۔",
+      "ps": "IP پته ثابته یا متحرکه کېدای شي. ثابته IP پته هېڅکله نه بدلېږي او دایمي انټرنېټ پته ده. متحرکه IP پته یوه لنډمهاله پته ده چې هر ځل کله چې کمپیوټر یا وسیله انټرنېټ ته لاسرسی ومومي ټاکل کېږي. پته له ۳۲ دوتایي بټونو جوړه ده چې د فرعي شبکې د ماسک په مرسته په شبکې برخه او کوربه برخه وېشل کېدای شي. ۳۲ دوتایي بټونه په څلورو اکټېټونو (۱ اکټېټ = ۸ بټونه) ماتېږي. هر اکټېټ په لسیزه کې ښودل کېږي او په نقطه جلا کېږي. د دې لپاره IP پته په نقطه لرونکې لسیزه بڼه (د بېلګې په توګه ۱۷۲.۱۶.۸۱.۱۰۰) کې بیانېږي. په هر اکټېټ کې ارزښت په لسیزه کې له ۰ نه ۲۵۵ پورې، یا په دوتایي کې ۰۰۰۰۰۰۰۰ - ۱۱۱۱۱۱۱۱ پورې دی."
+    },
+    {
+      "id": "cs11-s176-c",
+      "en": "The following IP address is an example which shows an IP address represented in both binary and decimal formats.",
+      "ur": "درج ذیل آئی پی ایڈریس ایک مثال ہے جو بائنری اور اعشاری دونوں شکلوں میں ظاہر کیا گیا آئی پی ایڈریس دکھاتا ہے۔",
+      "ps": "لاندې IP پته یوه بېلګه ده چې IP پته په دوتایي او لسیزه دواړو بڼو کې ښيي."
+    },
+    {
+      "id": "cs11-s176-d",
+      "en": "These octets can be broken down to provide an addressing scheme that can support/accommodate large and small networks.",
+      "ur": "ان آکٹیٹس کو توڑ کر ایسی ایڈریسنگ اسکیم بنائی جا سکتی ہے جو بڑے اور چھوٹے نیٹ ورکس کی حمایت/گنجائش دے سکے۔",
+      "ps": "دا اکټېټونه ماتېدای شي ترڅو د پتې کولو داسې طرحه برابره کړي چې لوی او کوچني شبکې ملاتړ/ځای کړي."
+    },
+    {
+      "id": "cs11-s176-h1",
+      "en": "a. Classes of IP Addresses",
+      "ur": "الف۔ آئی پی ایڈریس کی کلاسز",
+      "ps": "الف. د IP پتو ټولګې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s176-e",
+      "en": "Given an IP address, its class can be determined from the three high-order bits. Figure 5.30 shows the significance in the three high order bits and the range of addresses that fall into each class.",
+      "ur": "کسی آئی پی ایڈریس کی کلاس اس کے تین اعلیٰ ترتیب بٹس سے معلوم کی جا سکتی ہے۔ شکل ۵.۳۰ تین اعلیٰ ترتیب بٹس کی اہمیت اور ہر کلاس میں آنے والے ایڈریسز کی حد دکھاتی ہے۔",
+      "ps": "د IP پتې ټولګه د هغې درې لوړو ترتیب بټونو نه ټاکل کېدای شي. ۵.۳۰ انځور په درې لوړو ترتیب بټونو کې اهمیت او د هر ټولګي د پتو کچه ښيي."
+    },
+    {
+      "id": "cs11-s176-f",
+      "en": "There are five different classes of an IP address, from A to E.",
+      "ur": "آئی پی ایڈریس کی پانچ مختلف کلاسز ہیں، الف سے ای تک۔",
+      "ps": "د IP پتې پنځه مختلف ټولګي دي، له A نه تر E پورې."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s176-a",
+        "cs11-s176-b",
+        "cs11-s176-c"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s176-d",
+        "cs11-s176-h1",
+        "cs11-s176-e",
+        "cs11-s176-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 60\" role=\"img\" aria-label=\"An IP address in decimal 10.1.23.19 and in binary 00001010.00000001.00010111.00010011\" style=\"width:100%;max-width:520px;height:auto;background:#fff\"><text x=\"20\" y=\"20\" font-size=\"16\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">10.</text><text x=\"150\" y=\"20\" font-size=\"16\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">1.</text><text x=\"270\" y=\"20\" font-size=\"16\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">23.</text><text x=\"380\" y=\"20\" font-size=\"16\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">19 (decimal)</text><text x=\"5\" y=\"48\" font-size=\"16\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">00001010.00000001.00010111.00010011 (binary)</text></svg>",
+      "id": "cs11-s176-fig1",
+      "caption": "IP address in decimal and binary formats",
+      "captionUrdu": "اعشاری اور بائنری شکلوں میں آئی پی ایڈریس",
+      "captionPashto": "په لسیزه او دوتایي بڼو کې IP پته",
+      "labels": [
+        {
+          "en": "decimal",
+          "ur": "اعشاری",
+          "ps": "لسیزه"
+        },
+        {
+          "en": "binary",
+          "ur": "بائنری",
+          "ps": "دوتایي"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 167: the end of the IP address paragraph (continuing from page 166), the paragraphs on static and dynamic addresses and octets, the sample address 10.1.23.19 in decimal and 00001010.00000001.00010111.00010011 in binary (redrawn as coded SVG text), “a. Classes of IP Addresses” and the line on the five classes A to E. “static” and “dynamic” are printed in bold. The decimal and binary digits are given as printed. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:25:37.940391+00:00",
+    "scope": "Scan 176 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

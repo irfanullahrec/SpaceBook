@@ -1,0 +1,28 @@
+@printed 71
+@status lesson
+### (c) NOT آپریٹر ! (NOT Operator) || (c) The NOT operator ! || (c) د NOT عملګر !
+p NOT آپریٹر کے لئے ! علامت استعمال ہوتی ہے۔ یہ کسی شرط کے نتیجے کو اُلٹنے کے لئے استعمال ہوتی ہے۔ اگر شرط کا نتیجہ غلط (False) ہے تو اس کا نتیجہ صحیح (True) ہو گا اور اگر شرط کا نتیجہ صحیح (True) ہے تو اس کا نتیجہ غلط (False) ہو گا۔ || The ! sign is used for the NOT operator. It is used to reverse the result of a condition: if the condition is false, the result is True, and if the condition is true, the result is False. || د NOT عملګر لپاره ! نښه کارېږي. د یوه شرط د پایلې د اړولو لپاره کارېږي: که شرط ناسم (False) وي، پایله سمه (True) ده، او که شرط سم (True) وي، پایله ناسمه (False) ده.
+table NOT آپریٹر || The NOT operator || د NOT عملګر
+th | Operator || Operator || عملګر | Condition || Condition || شرط | Result || Result || پایله
+tr | ! || ! || ! | True || True || True | False || False || False
+tr | ! || ! || ! | False || False || False | True || True || True
+endtable
+p مثال: فرض کریں کہ ہمارے پاس دو ویری ایبل A = 100 اور B = 50 ہیں۔ حالت !(A == B) صحیح ہے، کیونکہ A، B کے برابر نہیں ہے۔ || Example: suppose we have two variables A = 100 and B = 50. The condition !(A == B) is true, because A is not equal to B. || بېلګه: فرض کړئ دوه متغیرونه A = 100 او B = 50 لرو. شرط !(A == B) سم دی، ځکه A له B سره برابر نه دی.
+@sec 3-2-8 | 3.2.8 اسائنمنٹ آپریٹر (=) اور مساوی آپریٹر (==) میں فرق || 3.2.8 Assignment operator (=) vs equal-to operator (==) || ۳.۲.۸ د ګمارنې (=) او برابرۍ (==) عملګر توپیر
+### 3.2.8 اسائنمنٹ آپریٹر (=) اور مساوی آپریٹر (==) میں فرق || 3.2.8 Difference between the assignment operator (=) and the equal-to operator (==) || ۳.۲.۸ د ګمارنې عملګر (=) او برابرۍ عملګر (==) توپیر
+p اسائنمنٹ آپریٹر = ایک ویری ایبل کی قیمت مقرر کرنے کے لئے استعمال کیا جاتا ہے جبکہ مساوی آپریٹر == دو ایک جیسی قسم کی قیمتوں کا موازنہ کرنے کے لئے استعمال ہوتا ہے۔ || The assignment operator = is used to set the value of a variable, while the equal-to operator == is used to compare two values of the same kind. || د ګمارنې عملګر = د متغیر د ارزښت ټاکلو لپاره کارېږي، په داسې حال کې چې د برابرۍ عملګر == د یو ډول دوو ارزښتونو د پرتلې لپاره کارېږي.
+p مثال کے طور پر: || For example: || د بېلګې په توګه:
+m x=11;
+m y=a;
+m c='s';
+p مذکورہ بالا اسٹیٹمنٹ میں، ویری ایبل x کی قیمت 11 مقرر کی گئی ہے، y کو ویری ایبل a کی قیمت تفویض کی گئی ہے اور c کو 's' کیریکٹر تفویض کیا گیا ہے۔ || In the statements above, the variable x is set to 11, y is assigned the value of the variable a, and c is assigned the character 's'. || په پورتنیو بیانونو کې د x متغیر ارزښت 11 ټاکل شوی، y ته د a متغیر ارزښت ورکړل شوی او c ته 's' توری ورکړل شوی.
+p ریلیشنل آپریٹر == کے استعمال سے شرائط بنائی جاتی ہیں تاکہ کمپیوٹر کوئی بھی فیصلہ کر سکے۔ مثال کے طور پر: || Conditions are made with the relational operator == so that the computer can take a decision. For example: || د نسبتي عملګر == په کارولو شرطونه جوړېږي چې کمپیوټر پرېکړه وکړای شي. د بېلګې په توګه:
+m b == 15;
+m x == y;
+p پہلی ایکسپریشن میں، اگر B کی قیمت 15 کے برابر ہے تو شرط کا نتیجہ صحیح ہے ورنہ یہ غلط ہے۔ دوسری حالت میں، مساوی آپریٹر کو جانچ پڑتال کے لئے استعمال کیا جاتا ہے کہ آیا x کی ویلیو y کی ویلیو کے برابر ہے، اگر ایسا ہے تو شرط کا نتیجہ صحیح ہے ورنہ غلط ہے۔ || In the first expression, if the value of b equals 15 the condition is true, otherwise it is false. In the second case the equal-to operator is used to check whether the value of x equals the value of y; if so the condition is true, otherwise false. || په لومړي عبارت کې، که د b ارزښت له 15 سره برابر وي شرط سم دی، که نه ناسم دی. په دویم حالت کې د برابرۍ عملګر د دې ازمویلو لپاره کارېږي چې ایا د x ارزښت د y له ارزښت سره برابر دی؛ که وي شرط سم دی، که نه ناسم.
+@issue The text says "B" (capital) for the variable written "b" in the code; C names are case-sensitive.
+@sec 3-2-9 | 3.2.9 یونری اور بائنری آپریٹر میں فرق || 3.2.9 Unary vs binary operators || ۳.۲.۹ د یونري او باینري عملګرونو توپیر
+### 3.2.9 یونری (Unary) آپریٹر اور بائنری (Binary) آپریٹر میں فرق || 3.2.9 Difference between unary and binary operators || ۳.۲.۹ د یونري (Unary) او باینري (Binary) عملګرونو توپیر
+### (a) یونری آپریٹرز (Unary Operators) || (a) Unary operators || (a) یونري عملګرونه
+p آپریٹر کی ایک قسم جو سنگل اوپیرینڈ (رقم) کے ساتھ کام کرتی ہے، یونیری آپریٹر کہلاتا ہے۔ مندرجہ ذیل آپریٹرز یونری آپریٹر ہیں: || A kind of operator that works with a single operand is called a unary operator. The following operators are unary operators: || هغه ډول عملګر چې له یوه عملوند (operand) سره کار کوي یونري عملګر بلل کېږي. لاندې عملګرونه یونري دي:
+m -, ++, --

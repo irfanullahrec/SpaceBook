@@ -1,0 +1,24 @@
+@printed 212
+@deco Unit-running header, folio and decorative footer band excluded
+endexample
+example 7 | Prove that $2^n<\dbinom{2n}{n}$ for $n>1$ || ثابت کریں کہ $n>1$ کے لیے $2^n<\dbinom{2n}{n}$ || ثابته کړئ چې د $n>1$ لپاره $2^n<\dbinom{2n}{n}$
+p **Solution:** We are to prove that || **حل:** ہمیں ثابت کرنا ہے کہ || **حل:** موږ باید ثابته کړو چې
+m $2^n<\dbinom{2n}{n}\ \text{ for }n>1\qquad\text{(1)}$
+p **Step 1.** Let $n=2$, then || **مرحلہ 1۔** فرض کریں $n=2$، تب || **لومړی ګام.** فرض کړئ $n=2$، نو
+m $2^n=2^2=4\quad\text{and}\quad\dbinom{2n}{n}=\dbinom{2\cdot2}{2}=\dbinom42=\dfrac{4!}{2!(4-2)!}=\dfrac{4\cdot3\cdot2}{2\cdot2}=\dfrac{24}{4}=6$
+p Therefore $4<6$ and hence $2^n<\dbinom{2n}{n}$ is true for $n=2$. || لہٰذا $4<6$ اور اس لیے $2^n<\dbinom{2n}{n}$، $n=2$ کے لیے درست ہے۔ || نو $4<6$ او له دې امله $2^n<\dbinom{2n}{n}$ د $n=2$ لپاره سم دی.
+p **Step 2.** Let us suppose that the above assertion is true for $n=k$ for $k>1$, then || **مرحلہ 2۔** فرض کریں کہ مذکورہ دعویٰ $n=k$ کے لیے درست ہے جہاں $k>1$، تب || **دویم ګام.** فرض کړئ چې پورتنی ادعا د $n=k$ لپاره سمه ده چېرته چې $k>1$، نو
+m $2^k<\dbinom{2k}{k}\quad\text{or}\quad2^k<\dfrac{2k!}{k!(2k-k)!}$
+m $2^k<\dfrac{2k!}{k!\,k!}\qquad\text{(2)}$
+p **Step 3.** Let $n=k+1$ and consider $2^{k+1}$, we can write || **مرحلہ 3۔** فرض کریں $n=k+1$ اور $2^{k+1}$ پر غور کریں، ہم لکھ سکتے ہیں || **دریم ګام.** فرض کړئ $n=k+1$ او $2^{k+1}$ وګورئ، موږ لیکلای شو
+m $2^{k+1}=2^k\cdot2<\dfrac{2k!\cdot2}{k!\,k!}\qquad\text{(3)}$
+p Now || اب || اوس
+m $\dfrac{(2k+2)(2k+1)}{(k+1)^2}=\dfrac{2(k+1)(k+k+1)}{(k+1)^2}=\dfrac{2(k+k+1)}{k+1}=2\left[\dfrac{k}{k+1}+\dfrac{k+1}{k+1}\right]$
+m $=2\left[\dfrac{k}{k+1}+1\right]=\dfrac{2k}{k+1}+2>2\ \text{ as }k>1$
+m $\Rightarrow\ 2<\dfrac{(2k+2)(2k+1)}{(k+1)^2}$
+p From (3), we have || (3) سے ہمیں ملتا ہے || د (3) نه موږ لرو
+m $2^{k+1}<\dfrac{2k!\cdot2}{k!\cdot k!}<\dfrac{2k!}{k!\cdot k!}\cdot\dfrac{(2k+2)(2k+1)}{(k+1)^2}\quad\text{or,}\quad2^{k+1}<\dfrac{(2k+2)(2k+1)\,2k!}{k!(k+1)\,k!(k+1)}$
+m $2^{k+1}<\dfrac{(2k+2)!}{k!(k+1)\,k!(k+1)}\ \Rightarrow\ 2^{k+1}<\dfrac{(2k+2)!}{(k+1)!\,(k+1)!}$
+m $2^{k+1}<\dbinom{2k+2}{k+1}$
+p which is of the form (1) when $n$ is replaced by $k+1$. || جو (1) کی شکل کا ہے جب $n$ کی جگہ $k+1$ رکھا جائے۔ || چې د (1) په بڼه دی کله چې $n$ د $k+1$ سره بدل شي.
+p So the given statement is true for $n=k+1$ and hence it is true for all $n>1$. Thus $2^n<\dbinom{2n}{n}$ for $n>1$. || لہٰذا دیا گیا بیان $n=k+1$ کے لیے درست ہے اور اسی لیے یہ تمام $n>1$ کے لیے درست ہے۔ یوں $n>1$ کے لیے $2^n<\dbinom{2n}{n}$۔ || نو ورکړل شوی بیان د $n=k+1$ لپاره سم دی او له دې امله د ټولو $n>1$ لپاره سم دی. په دې توګه د $n>1$ لپاره $2^n<\dbinom{2n}{n}$.

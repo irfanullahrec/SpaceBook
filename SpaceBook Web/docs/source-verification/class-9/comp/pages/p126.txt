@@ -1,0 +1,27 @@
+@pdf 221
+@printed 118
+@status lesson
+p For Example: || مثال کے طور پر: || د بېلګې په توګه:
+m for(x=1;x<=10;x++)
+p (In the book, labels point to x=1 as Initialization, x<=10 as Condition and x++ as Increment.) || (کتاب میں x=1 کو Initialization، x<=10 کو Condition اور x++ کو Increment دکھایا گیا ہے۔) || (په کتاب کې x=1 د Initialization، x<=10 د Condition او x++ د Increment په توګه ښودل شوي.)
+p The number of repetitions/iterations depends on the **initialization, condition** and **increment/decrement** parts. The initialization part is executed only once when control enters the loop. After initialization, the given condition is evaluated. If it is true, the control enters the body of loop and executes all statements in it. Then the increment/decrement part is executed that changes the value of counter variable. The control again moves to condition part. This process continues while the condition remains **true**. The loop is terminated when the condition becomes **false**. || تکرار کی تعداد **initialization، condition** اور **increment/decrement** حصوں پر منحصر ہے۔ کنٹرول لوپ میں داخل ہونے پر initialization صرف ایک بار چلتی ہے۔ اس کے بعد شرط جانچی جاتی ہے؛ اگر درست ہو تو کنٹرول لوپ کے جسم میں داخل ہو کر تمام اسٹیٹمنٹس چلاتا ہے۔ پھر increment/decrement حصہ چل کر کاؤنٹر متغیر کی قدر بدلتا ہے اور کنٹرول دوبارہ شرط پر آتا ہے۔ یہ عمل شرط **درست** رہنے تک جاری رہتا ہے اور شرط **غلط** ہونے پر لوپ ختم ہو جاتا ہے۔ || د تکرارونو شمېر په **initialization، condition** او **increment/decrement** برخو پورې اړه لري. کله چې کنټرول لوپ ته ننوځي initialization یوازې یو ځل اجرا کېږي. بیا شرط ارزول کېږي؛ که سم وي کنټرول د لوپ بدنې ته ننوځي او ټول بیانونه اجرا کوي. بیا increment/decrement برخه د counter ارزښت بدلوي او کنټرول بیا شرط ته ځي. دا بهیر تر هغه دوام کوي چې شرط **سم** وي او کله چې **ناسم** شي لوپ پای ته رسېږي.
+svg Figure: 5.1 Working of for loop || شکل 5.1 for لوپ کا کام || ۵.۱ شکل د for لوپ کار
+<svg viewBox="0 0 420 300" width="420" role="img" aria-label="Flowchart: arrow into 'initialize', then down to diamond 'condition'; true goes right and up to 'statement (s)', then up to 'change', then left back into the line above condition; false goes down to 'rest of code'" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF51" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M150 2 V22" stroke="#111827" stroke-width="3" marker-end="url(#arF51)"/>
+<rect x="80" y="26" width="140" height="40" fill="#f59e0b" stroke="#111827"/><text x="150" y="52" font-weight="700">initialize</text>
+<path d="M150 66 V150" stroke="#111827" stroke-width="2" marker-end="url(#arF51)"/>
+<polygon points="150,154 240,190 150,226 60,190" fill="#22d3ee" stroke="#111827"/><text x="150" y="195" font-weight="700">condition</text>
+<rect x="260" y="128" width="140" height="36" fill="#4ade80" stroke="#111827"/><text x="330" y="151" font-weight="700">statement (s)</text>
+<rect x="260" y="70" width="140" height="36" fill="#fff" stroke="#111827"/><text x="330" y="94" font-weight="700">change</text>
+<path d="M240 190 H330 V168" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF51)"/>
+<path d="M330 128 V110" stroke="#111827" stroke-width="2" marker-end="url(#arF51)"/>
+<path d="M260 88 H156" stroke="#111827" stroke-width="2" marker-end="url(#arF51)"/>
+<path d="M150 226 V262" stroke="#111827" stroke-width="3" marker-end="url(#arF51)"/>
+<g font-family="Consolas, Courier New, monospace" font-size="12"><text x="268" y="206">true</text><text x="88" y="232">false</text><text x="150" y="290">rest of code</text></g>
+</svg>
+endsvg
+p The following programs demonstrate the working of *for* loop. || درج ذیل پروگرام *for* لوپ کا کام دکھاتے ہیں۔ || لاندې پروګرامونه د *for* لوپ کار ښيي.
+### Program 5.1: A program to display numbers from 1 to10 by using for loop. || پروگرام 5.1: for لوپ سے 1 تا 10 اعداد دکھانے کا پروگرام۔ || پروګرام ۵.۱: د for لوپ په مرسته له ۱ تر ۱۰ عددونه ښودل.
+m # include <stdio.h>
+m void main()

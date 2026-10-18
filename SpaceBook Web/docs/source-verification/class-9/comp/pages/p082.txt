@@ -1,0 +1,32 @@
+@pdf 85
+@printed 74
+@status lesson
+table Format specifiers || فارمیٹ اسپیسیفائرز || format specifiers
+th | Format specifier || فارمیٹ اسپیسیفائر || format specifier | Purpose || مقصد || موخه
+tr | %d or %i | Signed integer || سائنڈ انٹیجر || signed integer
+tr | %ld | long integer || لانگ انٹیجر || long integer
+tr | %f | floating-point (decimal notation) || فلوٹنگ پوائنٹ (اعشاری انداز) || floating-point (اعشاري بڼه)
+tr | %g | floating-point (exponential notation) || فلوٹنگ پوائنٹ (قوت نما انداز) || floating-point (توان نما بڼه)
+tr | %e | floating-point (Exponential notation) || فلوٹنگ پوائنٹ (قوت نما انداز) || floating-point (توان نما بڼه)
+tr | %c | single character || ایک حرف || یو توری
+tr | %s | String || اسٹرنگ || string
+endtable
+@issue %g is described as "exponential notation" like %e; in C, %g uses the shorter of %f and %e. Kept as printed.
+p These are the basic format specifiers. We can add some other parts with the format specifiers. || یہ بنیادی فارمیٹ اسپیسیفائرز ہیں۔ ہم فارمیٹ اسپیسیفائرز کے ساتھ کچھ اور حصے بھی شامل کر سکتے ہیں۔ || دا بنسټیز format specifiers دي. له format specifiers سره ځینې نورې برخې هم زیاتولای شو.
+- A minus (-) sign tells left alignment. || منفی (-) کی علامت بائیں طرف ترتیب بتاتی ہے۔ || منفي (-) نښه کیڼ لوري ته برابرول ښيي.
+- A number after % specifies the minimum field width. If string is less than the width, it will be filled with spaces. || % کے بعد عدد کم سے کم فیلڈ کی چوڑائی بتاتا ہے۔ اگر اسٹرنگ چوڑائی سے چھوٹی ہو تو اسپیس سے بھری جائے گی۔ || له % وروسته عدد د field لږ تر لږه پلنوالی ټاکي. که string له پلنوالي لنډ وي، په تشو ځایونو ډکېږي.
+- A period (.) is used to separate field width and precision. || نقطہ (.) فیلڈ کی چوڑائی اور درستگی کو الگ کرنے کے لیے استعمال ہوتا ہے۔ || ټکی (.) د field پلنوالي او دقت د جلا کولو لپاره کارېږي.
+### Integer Format Specifiers (%d, %ld and %i) || انٹیجر فارمیٹ اسپیسیفائرز (%d، %ld اور %i) || د integer format specifiers (%d، %ld او %i)
+p Format specifier **%d** is used to read or print an integer and the format specifier **%ld** is used with long integers. || فارمیٹ اسپیسیفائر **%d** انٹیجر پڑھنے یا پرنٹ کرنے کے لیے اور **%ld** لانگ انٹیجرز کے ساتھ استعمال ہوتا ہے۔ || **%d** د integer لوستلو یا چاپولو لپاره او **%ld** د long integers سره کارېږي.
+p Program 3.12 demonstrates the use of integer format specifiers. || پروگرام 3.12 انٹیجر فارمیٹ اسپیسیفائرز کا استعمال دکھاتا ہے۔ || پروګرام ۳.۱۲ د integer format specifiers کارول ښيي.
+### Program 3.12 || پروگرام 3.12 || پروګرام ۳.۱۲
+m #include<stdio.h>
+m void main()
+m {
+m     int a, b;
+m     a = 14;
+m     b = a / 2;
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m a=14
+m b=7
+endbox

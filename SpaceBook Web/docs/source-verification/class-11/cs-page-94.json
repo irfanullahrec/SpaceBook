@@ -1,0 +1,165 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s094-p085",
+  "title": "Instruction formats: zero-address and one-address",
+  "headingUrdu": "ہدایت کی اشکال: صفر پتہ اور ایک پتہ",
+  "headingPashto": "د لارښوونې بڼې: صفر پته او یوه پته",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 94,
+    "printedPage": "85"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s094-a",
+      "en": "Operand address field can be data, or can refer to data – i.e. address of data, or can be labels, which may be the address of an instruction to be executed next.",
+      "ur": "آپرینڈ ایڈریس فیلڈ ڈیٹا ہو سکتا ہے، یا ڈیٹا کا حوالہ، یعنی ڈیٹا کا پتہ ہو سکتا ہے، یا لیبلز ہو سکتے ہیں جو اگلی چلائی جانے والی ہدایت کا پتہ ہو سکتے ہیں۔",
+      "ps": "د عملوند پتې ساحه ډېټا کېدای شي، یا ډېټا ته اشاره کېدای شي – یعنې د ډېټا پته، یا لیبلونه کېدای شي چې د راتلونکې پلي کېدونکې لارښوونې پته وي."
+    },
+    {
+      "id": "cs11-s094-b",
+      "en": "Different instruction formats are used. A few of them are explained below.",
+      "ur": "مختلف ہدایتی اشکال استعمال ہوتی ہیں۔ ان میں سے چند نیچے بیان کی گئی ہیں۔",
+      "ps": "مختلفې د لارښوونې بڼې کارول کېږي. له هغو نه څو لاندې تشریح شوي دي."
+    },
+    {
+      "id": "cs11-s094-t1",
+      "en": "Zero-Address Instruction",
+      "ur": "صفر پتہ ہدایت",
+      "ps": "د صفر پتې لارښوونه",
+      "listGroup": "fm"
+    },
+    {
+      "id": "cs11-s094-t2",
+      "en": "One-Address Instruction",
+      "ur": "ایک پتہ ہدایت",
+      "ps": "د یوې پتې لارښوونه",
+      "listGroup": "fm"
+    },
+    {
+      "id": "cs11-s094-t3",
+      "en": "Two-Address Instruction",
+      "ur": "دو پتہ ہدایت",
+      "ps": "د دوو پتو لارښوونه",
+      "listGroup": "fm"
+    },
+    {
+      "id": "cs11-s094-h1",
+      "en": "a. Zero Address Instruction",
+      "ur": "الف۔ صفر پتہ ہدایت",
+      "ps": "الف. د صفر پتې لارښوونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s094-c",
+      "en": "The Zero Address instruction format requires only op-code, having no operand to work with. Example of the Zero Address instruction format is HALT, STOP, which do not have any address.",
+      "ur": "صفر پتہ ہدایت کی شکل میں صرف او پی کوڈ درکار ہوتا ہے، اس کے ساتھ کام کرنے کے لیے کوئی آپرینڈ نہیں ہوتا۔ صفر پتہ ہدایت کی شکل کی مثال ہالٹ، اسٹاپ ہے جن کا کوئی پتہ نہیں ہوتا۔",
+      "ps": "د صفر پتې لارښوونې بڼه یوازې op-code غواړي، له هغې سره د کار لپاره هیڅ عملوند نشته. د صفر پتې لارښوونې بڼې بېلګه HALT، STOP دي چې هیڅ پته نه لري."
+    },
+    {
+      "id": "cs11-s094-d",
+      "en": "Example: STOP",
+      "ur": "مثال: اسٹاپ",
+      "ps": "بېلګه: STOP"
+    },
+    {
+      "id": "cs11-s094-h2",
+      "en": "b. One Address Instruction",
+      "ur": "ب۔ ایک پتہ ہدایت",
+      "ps": "ب. د یوې پتې لارښوونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s094-e",
+      "en": "One Address instruction format requires one op-code and one operand. Example of the one address instruction format is LDA (Load Accumulator), JMP (Jump) etc. These instructions require one address to do the operation. Like JMP requires one address in order to jump to that specific address location.",
+      "ur": "ایک پتہ ہدایت کی شکل میں ایک او پی کوڈ اور ایک آپرینڈ درکار ہوتا ہے۔ ایک پتہ ہدایت کی شکل کی مثال ایل ڈی اے (لوڈ ایکیومولیٹر)، جے ایم پی (جمپ) وغیرہ ہیں۔ ان ہدایات کو عمل کے لیے ایک پتہ درکار ہوتا ہے۔ جیسے جے ایم پی کو اس مخصوص پتے والے مقام پر چھلانگ لگانے کے لیے ایک پتہ درکار ہوتا ہے۔",
+      "ps": "د یوې پتې لارښوونې بڼه یو op-code او یو عملوند غواړي. د یوې پتې لارښوونې بڼې بېلګه LDA (ایکیومولېټر پورته کول)، JMP (ټوپ) او نور دي. دا لارښوونې د عمل لپاره یوه پته غواړي. لکه JMP یوه پته غواړي ترڅو په هغه ځانګړې پته ځای ټوپ ووهي."
+    },
+    {
+      "id": "cs11-s094-f",
+      "en": "Example: JMP AX",
+      "ur": "مثال: جے ایم پی اے ایکس",
+      "ps": "بېلګه: JMP AX"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s094-a",
+        "cs11-s094-b",
+        "cs11-s094-t1",
+        "cs11-s094-t2",
+        "cs11-s094-t3",
+        "cs11-s094-h1",
+        "cs11-s094-c"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s094-d",
+        "cs11-s094-h2",
+        "cs11-s094-e"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s094-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s094-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 80\" role=\"img\" aria-label=\"Zero-address instruction format (7-bit op-code)\" style=\"width:100%;max-width:210px;height:auto;background:#fff\"><text x=\"20\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">0.....................7 bits</text><rect x=\"20\" y=\"26\" width=\"160\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Op-Code</text></svg>",
+      "caption": "Zero-address instruction format (7-bit op-code)",
+      "captionUrdu": "صفر پتہ ہدایت کی شکل (۷ بٹ او پی کوڈ)",
+      "captionPashto": "د صفر پتې لارښوونې بڼه (۷ بټه op-code)",
+      "labels": [
+        {
+          "en": "Op-Code",
+          "ur": "Op-Code",
+          "ps": "Op-Code"
+        }
+      ]
+    },
+    {
+      "id": "cs11-s094-fig2",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 80\" role=\"img\" aria-label=\"One-address instruction format (op-code and one operand)\" style=\"width:100%;max-width:420px;height:auto;background:#fff\"><text x=\"20\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">0.....................7, 8.........................20 bits</text><rect x=\"20\" y=\"26\" width=\"170\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Op-Code</text><rect x=\"190\" y=\"26\" width=\"200\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"290.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Operand</text></svg>",
+      "caption": "One-address instruction format (op-code and one operand)",
+      "captionUrdu": "ایک پتہ ہدایت کی شکل (او پی کوڈ اور ایک آپرینڈ)",
+      "captionPashto": "د یوې پتې لارښوونې بڼه (op-code او یو عملوند)",
+      "labels": [
+        {
+          "en": "Op-Code",
+          "ur": "Op-Code",
+          "ps": "Op-Code"
+        },
+        {
+          "en": "Operand",
+          "ur": "Operand",
+          "ps": "Operand"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 85: the operand explanation (continuing from page 84), the list of three instruction formats, “a. Zero Address Instruction” and “b. One Address Instruction”, each with a box diagram of bit fields (redrawn here as coded SVGs; the captions are supplied here, not printed). The headings “a.” and “b.” are printed in a faded colour. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:56:56.369269+00:00",
+    "scope": "Scan 94 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

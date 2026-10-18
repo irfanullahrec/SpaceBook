@@ -1,0 +1,35 @@
+@pdf 34
+@printed 26
+@status lesson
+@deco Mirror-image show-through of Flowcharts 8 and 9 from the facing page; not book content.
+p **Flowchart 10:** To find the sum of even numbers from 1 to 50. || **فلوچارٹ 10:** 1 سے 50 تک جفت اعداد کا مجموعہ معلوم کرنا۔ || **فلوچارټ ۱۰:** له ۱ تر ۵۰ پورې د جفتو عددونو مجموعه موندل.
+svg Flowchart 10 || فلوچارٹ 10 || ۱۰ فلوچارټ
+<svg viewBox="0 0 360 400" width="360" role="img" aria-label="Flowchart: START; SUM=0, K=2; SUM=SUM+K, K=K+2; decision Is K less than or equal to 50? YES loops back to the SUM step; NO to OUTPUT SUM; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.5">
+<defs><marker id="arF10" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<rect x="100" y="10" width="120" height="34" rx="17" fill="#fff" stroke="#111827"/><text x="160" y="32">START</text>
+<rect x="80" y="66" width="160" height="34" fill="#fff" stroke="#111827"/><text x="160" y="88">SUM=0, K=2</text>
+<rect x="80" y="122" width="160" height="50" fill="#fff" stroke="#111827"/><text x="160" y="143">SUM=SUM+K</text><text x="160" y="163">K=K+2</text>
+<polygon points="160,194 250,226 160,258 70,226" fill="#fef9c3" stroke="#111827"/><text x="160" y="231">Is K ≤ 50?</text>
+<polygon points="50,322 80,286 270,286 240,322" fill="#38bdf8" stroke="#111827"/><text x="160" y="309">OUTPUT SUM</text>
+<rect x="100" y="346" width="120" height="34" rx="17" fill="#fff" stroke="#111827"/><text x="160" y="368">STOP</text>
+<g stroke="#111827" fill="none" marker-end="url(#arF10)"><line x1="160" y1="44" x2="160" y2="64"/><line x1="160" y1="100" x2="160" y2="120"/><line x1="160" y1="172" x2="160" y2="192"/><line x1="160" y1="258" x2="160" y2="284"/><line x1="160" y1="322" x2="160" y2="344"/><polyline points="250,226 320,226 320,147 242,147"/></g>
+<g font-size="12"><text x="290" y="218">YES</text><text x="178" y="276">NO</text></g>
+</svg>
+endsvg
+p **Flowchart 11:** To convert temperature from Fahrenheit to Celsius. || **فلوچارٹ 11:** درجۂ حرارت کو فارن ہائیٹ سے سیلسیئس میں بدلنا۔ || **فلوچارټ ۱۱:** تودوخه له فارنهایټ څخه سلسیوس ته اړول.
+svg Flowchart 11 || فلوچارٹ 11 || ۱۱ فلوچارټ
+<svg viewBox="0 0 320 308" width="320" role="img" aria-label="Flowchart: START; INPUT F; C=5/9*(F-32); OUTPUT C; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.5">
+<defs><marker id="arF11" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" marker-end="url(#arF11)"><line x1="160.0" y1="48" x2="160.0" y2="72"/><line x1="160.0" y1="110" x2="160.0" y2="134"/><line x1="160.0" y1="172" x2="160.0" y2="196"/><line x1="160.0" y1="234" x2="160.0" y2="258"/></g>
+<ellipse cx="160.0" cy="30.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="35.0">START</text>
+<polygon points="30.0,110 60.0,74 290.0,74 260.0,110" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="97.0">INPUT F</text>
+<rect x="60.0" y="136" width="200" height="36" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="159.0">C=5/9*(F-32)</text>
+<polygon points="30.0,234 60.0,198 290.0,198 260.0,234" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="221.0">OUTPUT C</text>
+<ellipse cx="160.0" cy="278.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="283.0">STOP</text>
+</svg>
+endsvg

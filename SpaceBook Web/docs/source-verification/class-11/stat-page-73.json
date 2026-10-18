@@ -1,0 +1,319 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s073-median-1",
+  "title": "Example 2.11 (end) · 2.3 Median · 2.3.1 Individual series · Example 2.12, 2.13",
+  "headingUrdu": "مثال 2.11 (اختتام) · 2.3 وسطانیہ · 2.3.1 انفرادی سلسلہ · مثالیں 2.12، 2.13",
+  "headingPashto": "بېلګه 2.11 (پای) · 2.3 میانه · 2.3.1 انفرادي لړۍ · بېلګې 2.12، 2.13",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 73,
+    "printedPage": "65"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s073-h23",
+      "en": "2.3 Median",
+      "ur": "2.3 وسطانیہ",
+      "ps": "2.3 میانه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s073-t23",
+      "en": "A value which divides the ordered data in to two equal parts is called median. It is a positional average where 50 per cent values lie below the median and 50 per cent lies above the median. Median is used (i) when the exact mid-point of the distribution is desired, (ii) for asymmetric distributions, (iii) when the distribution has extreme values, (iv) when data are measured on an ordinal scale.",
+      "ur": "وہ قدر جو ترتیب دیے گئے اعداد و شمار کو دو برابر حصوں میں تقسیم کرے وسطانیہ کہلاتی ہے۔ یہ ایک مقامی اوسط ہے جہاں 50 فی صد قدریں وسطانیہ سے نیچے اور 50 فی صد اوپر ہوتی ہیں۔ وسطانیہ استعمال کیا جاتا ہے (i) جب تقسیم کا عین وسطی نقطہ مطلوب ہو، (ii) غیر متناسب تقسیمات کے لیے، (iii) جب تقسیم میں انتہائی قدریں ہوں، (iv) جب اعداد و شمار ترتیبی پیمانے پر ناپے گئے ہوں۔",
+      "ps": "هغه ارزښت چې ترتیب شوي معلومات په دوو مساوي برخو وېشي میانه بلل کېږي. دا یو موقعیتي اوسط دی چېرته چې 50 سلنه ارزښتونه د میانې لاندې او 50 سلنه یې پورته پراته وي. میانه کارول کېږي (i) کله چې د ویش دقیقه منځنۍ نقطه غوښتل کېږي، (ii) د غیرمتناسبو ویشونو لپاره، (iii) کله چې ویش سخت ارزښتونه ولري، (iv) کله چې معلومات د ترتیبي پیمانې په واسطه اندازه شوي وي."
+    },
+    {
+      "id": "stat11-s073-h231",
+      "en": "2.3.1 Computation of median in case of individual series or ungrouped data",
+      "ur": "2.3.1 انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں وسطانیہ کا حساب",
+      "ps": "2.3.1 د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې د میانې محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s073-ci",
+      "en": "Case-i: When n is odd.",
+      "ur": "صورت-i: جب n طاق ہو۔",
+      "ps": "حالت-i: کله چې n طاق وي."
+    },
+    {
+      "id": "stat11-s073-ci2",
+      "en": "Arrange the data in ascending or descending order of magnitude, then",
+      "ur": "اعداد و شمار کو مقدار کے صعودی یا نزولی ترتیب میں ترتیب دیں، پھر",
+      "ps": "معلومات د کچې په پورته‌والي یا ښکته‌والي ترتیب ترتیب کړئ، بیا"
+    },
+    {
+      "id": "stat11-s073-ex12",
+      "en": "Example: 2.12",
+      "ur": "مثال: 2.12",
+      "ps": "بېلګه: 2.12",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-q12",
+      "en": "The marks obtained by 7 students on an achievement test are; 17, 47, 15, 35, 25, 39, 44. Calculate the median marks.",
+      "ur": "7 طلبہ کے کارکردگی ٹیسٹ میں حاصل کردہ نمبر یہ ہیں؛ 17, 47, 15, 35, 25, 39, 44۔ وسطانیہ نمبر حساب کریں۔",
+      "ps": "د 7 زده کوونکو د السته راوړنې په ازموینه کې ترلاسه شوې نمرې دا دي؛ 17, 47, 15, 35, 25, 39, 44. د میانې نمرې محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-sol12",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-a12",
+      "en": "Arranging the data in ascending order x = 15, 17, 25, 35, 39, 44, 47. Here n = 7 is odd so,",
+      "ur": "اعداد و شمار کو صعودی ترتیب میں ترتیب دینے پر x = 15, 17, 25, 35, 39, 44, 47۔ یہاں n = 7 طاق ہے اس لیے،",
+      "ps": "معلومات په پورته‌والي ترتیب ترتیبولو سره x = 15, 17, 25, 35, 39, 44, 47. دلته n = 7 طاق دی نو،",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-cii",
+      "en": "Case-ii: When n is even",
+      "ur": "صورت-ii: جب n جفت ہو",
+      "ps": "حالت-ii: کله چې n جفت وي"
+    },
+    {
+      "id": "stat11-s073-cii2",
+      "en": "Arrange the data in ascending order, then",
+      "ur": "اعداد و شمار کو صعودی ترتیب میں ترتیب دیں، پھر",
+      "ps": "معلومات په پورته‌والي ترتیب ترتیب کړئ، بیا"
+    },
+    {
+      "id": "stat11-s073-ex13",
+      "en": "Example: 2.13",
+      "ur": "مثال: 2.13",
+      "ps": "بېلګه: 2.13",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s073-q13",
+      "en": "Find the median for the distribution of scores: 8, 12, 10, 14, 11, and 15.",
+      "ur": "نمبروں کی تقسیم 8, 12, 10, 14, 11 اور 15 کا وسطانیہ معلوم کریں۔",
+      "ps": "د نمرو د ویش 8, 12, 10, 14, 11 او 15 میانه ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-13"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s073-h23",
+        "stat11-s073-t23",
+        "stat11-s073-h231",
+        "stat11-s073-ci",
+        "stat11-s073-ci2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s073-ex12",
+        "stat11-s073-q12",
+        "stat11-s073-sol12",
+        "stat11-s073-a12"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s073-cii",
+        "stat11-s073-cii2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s073-ex13",
+        "stat11-s073-q13"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "positional": {
+      "ur": "مقامی",
+      "ps": "موقعیتي"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s073-wm",
+      "latex": "\\bar{x}_w=\\dfrac{\\sum_{i=1}^{n}w_ix_i}{\\sum_{i=1}^{n}w_i}=\\dfrac{831}{12}=69.25\\%\\ \\text{marks}",
+      "accessible": "x̄w = (Σ wi xi)/(Σ wi) = 831/12 = 69.25% marks",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄w = (Σ wi xi)/(Σ wi) = 831/12 = 69.25% marks"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄w = (Σ wi xi)/(Σ wi) = 831/12 = 69.25% marks"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄w = (Σ wi xi)/(Σ wi) = 831/12 = 69.25% marks"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-11"
+    },
+    {
+      "id": "stat11-s073-c1",
+      "latex": "\\text{Median}=\\left(\\dfrac{n+1}{2}\\right)\\text{th value}",
+      "accessible": "Median = ((n + 1)/2)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s073-s12a",
+      "latex": "\\text{Median}=\\left(\\dfrac{n+1}{2}\\right)\\text{th value}",
+      "accessible": "Median = ((n + 1)/2)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = ((n + 1)/2)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-s12b",
+      "latex": "=\\left(\\dfrac{7+1}{2}\\right)\\text{th value}=4\\text{th value}=35",
+      "accessible": "= ((7 + 1)/2)th value = 4th value = 35",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= ((7 + 1)/2)th value = 4th value = 35"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= ((7 + 1)/2)th value = 4th value = 35"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= ((7 + 1)/2)th value = 4th value = 35"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-12"
+    },
+    {
+      "id": "stat11-s073-c2",
+      "latex": "\\text{Median}=\\dfrac{1}{2}\\left[\\left(\\dfrac{n}{2}\\right)\\text{th value}+\\left(\\dfrac{n}{2}+1\\right)\\text{th value}\\right]",
+      "accessible": "Median = (1/2)[(n/2)th value + (n/2 + 1)th value]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = (1/2)[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = (1/2)[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = (1/2)[(n/2)th value + (n/2 + 1)th value]"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 65. The first line completes Example 2.11 from the previous page. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:34:12.934870+00:00",
+    "scope": "Scan 73 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

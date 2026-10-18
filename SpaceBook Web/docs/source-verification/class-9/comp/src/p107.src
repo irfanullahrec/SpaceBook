@@ -1,0 +1,22 @@
+@printed 99
+@status lesson
+### 4.1.4 *if-else* Statement || 4.1.4 *if-else* اسٹیٹمنٹ || ۴.۱.۴ *if-else* بیان
+p *if-else* statement is another decision control statement. It executes one statement or block of statement(s) when the condition is **true** and another statement or block of statement(s) when the condition is **false**. In any situation, one block is executed and the other is skipped. It is also called two-way selection statement. || *if-else* فیصلہ کنٹرول کی ایک اور اسٹیٹمنٹ ہے۔ یہ شرط **درست** ہونے پر ایک اسٹیٹمنٹ یا بلاک اور شرط **غلط** ہونے پر دوسری اسٹیٹمنٹ یا بلاک چلاتی ہے۔ ہر صورت میں ایک بلاک چلتا ہے اور دوسرا چھوڑ دیا جاتا ہے۔ اسے دو طرفہ سلیکشن اسٹیٹمنٹ بھی کہتے ہیں۔ || *if-else* د پرېکړې کنټرول بل بیان دی. کله چې شرط **سم** وي یو بیان یا بلاک او کله چې **ناسم** وي بل بیان یا بلاک اجرا کوي. په هر حالت کې یو بلاک اجرا او بل پرېښودل کېږي. دوه لوریز انتخابي بیان هم بلل کېږي.
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m if (condition)
+m         statement;
+m else
+m         statement;
+p Two or more statements are written in braces { }. The syntax for compound statements in *if-else* statement is as follows: || دو یا زیادہ اسٹیٹمنٹس بریسز { } میں لکھی جاتی ہیں۔ *if-else* میں مرکب اسٹیٹمنٹس کا سنٹیکس یہ ہے: || دوه یا ډېر بیانونه په { } کې لیکل کېږي. په *if-else* کې د مرکبو بیانونو syntax دا دی:
+m if(condition)
+m {
+m     statement 1;
+m     statement 2;
+m     .
+m     .
+m     statement n;
+m }
+m else
+m {
+m     statement 1;
+m     statement 2;

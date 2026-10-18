@@ -1,0 +1,715 @@
+{
+  "chapter": "stat11-vital-statistics",
+  "id": "stat11-s242-vs-repro-3",
+  "title": "Example 7.7: solution · Example 7.8: question",
+  "headingUrdu": "مثال 7.7: حل · مثال 7.8: سوال",
+  "headingPashto": "بېلګه 7.7: حل · بېلګه 7.8: پوښتنه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 242,
+    "printedPage": "232"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s242-sol77",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "id": "stat11-s242-a1",
+      "en": "Now G.R.R and N.R.R are computed as follows.",
+      "ur": "اب G.R.R اور N.R.R درج ذیل طور پر حساب کی جاتی ہیں۔",
+      "ps": "اوس G.R.R او N.R.R داسې محاسبه کېږي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "id": "stat11-s242-a2",
+      "en": "Since N.R.R is less than one, it means population will decrease in future.",
+      "ur": "چونکہ N.R.R ایک سے کم ہے اس کا مطلب ہے کہ آبادی مستقبل میں کم ہوگی۔",
+      "ps": "ځکه چې N.R.R له یو څخه کم دی پدې معنا چې نفوس به په راتلونکي کې کم شي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "id": "stat11-s242-ex78",
+      "en": "Example: 7.8",
+      "ur": "مثال: 7.8",
+      "ps": "بېلګه: 7.8",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-8"
+    },
+    {
+      "id": "stat11-s242-q78",
+      "en": "Calculate (i) age-specific fertility rate (ii) total fertility rate (iii) G.R.R (iv) N.R.R from the following data.",
+      "ur": "درج ذیل اعداد و شمار سے (i) عمر کے لحاظ سے مخصوص شرحِ زرخیزی (ii) کل شرحِ زرخیزی (iii) G.R.R (iv) N.R.R حساب کریں۔",
+      "ps": "له لاندې معلوماتو څخه (i) د عمر له مخې ځانګړې د زېږون‌توان کچه (ii) ټوله د زېږون‌توان کچه (iii) G.R.R (iv) N.R.R محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-7-8"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s242-sol77"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s242-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s242-a2",
+        "stat11-s242-ex78",
+        "stat11-s242-q78"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s242-g",
+      "latex": "G.R.R=h\\left[\\sum\\dfrac{b_{if}}{p_{if}}\\right]=5[0.205]=1.025\\ \\text{female children per women}",
+      "accessible": "G.R.R = h[Σ b_if / p_if] = 5[0.205] = 1.025 female children per women",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.R.R = h[Σ b_if / p_if] = 5[0.205] = 1.025 female children per women"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.R.R = h[Σ b_if / p_if] = 5[0.205] = 1.025 female children per women"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.R.R = h[Σ b_if / p_if] = 5[0.205] = 1.025 female children per women"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "id": "stat11-s242-n1",
+      "latex": "N.R.R=h\\left[\\sum\\left\\{\\left(\\dfrac{b_{if}}{p_{if}}\\right)\\times\\text{Probability of survival}\\right\\}\\right]",
+      "accessible": "N.R.R = h[Σ{(b_if / p_if) × Probability of survival}]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "N.R.R = h[Σ{(b_if / p_if) × Probability of survival}]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "N.R.R = h[Σ{(b_if / p_if) × Probability of survival}]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "N.R.R = h[Σ{(b_if / p_if) × Probability of survival}]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "id": "stat11-s242-n2",
+      "latex": "=5[0.181]=0.905",
+      "accessible": "= 5[0.181] = 0.905",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 5[0.181] = 0.905"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 5[0.181] = 0.905"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 5[0.181] = 0.905"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-7"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 7.7 solution table",
+      "captionUrdu": "مثال 7.7 کا حل: جدول",
+      "captionPashto": "د بېلګې 7.7 د حل جدول",
+      "headers": [
+        {
+          "en": "Age group (years)",
+          "ur": "عمر کا گروہ (سال)",
+          "ps": "عمري ډله (کلونه)"
+        },
+        {
+          "en": "Female population (p_if)",
+          "ur": "عورتوں کی آبادی (p_if)",
+          "ps": "د ښځو نفوس (p_if)"
+        },
+        {
+          "en": "Female births (b_if)",
+          "ur": "لڑکیوں کی پیدائشیں (b_if)",
+          "ps": "ښځینه زېږونونه (b_if)"
+        },
+        {
+          "en": "(b_if / p_if)",
+          "ur": "(b_if / p_if)",
+          "ps": "(b_if / p_if)"
+        },
+        {
+          "en": "Probability of survival",
+          "ur": "بقا کا امکان",
+          "ps": "د بقا احتمال"
+        },
+        {
+          "en": "[(b_if / p_if) × Probability of survival]",
+          "ur": "[(b_if / p_if) × Probability of survival]",
+          "ps": "[(b_if / p_if) × Probability of survival]"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "1558000",
+            "ur": "1558000",
+            "ps": "1558000"
+          },
+          {
+            "en": "18900",
+            "ur": "18900",
+            "ps": "18900"
+          },
+          {
+            "en": "0.012",
+            "ur": "0.012",
+            "ps": "0.012"
+          },
+          {
+            "en": "0.914",
+            "ur": "0.914",
+            "ps": "0.914"
+          },
+          {
+            "en": "0.011",
+            "ur": "0.011",
+            "ps": "0.011"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "1112000",
+            "ur": "1112000",
+            "ps": "1112000"
+          },
+          {
+            "en": "71100",
+            "ur": "71100",
+            "ps": "71100"
+          },
+          {
+            "en": "0.064",
+            "ur": "0.064",
+            "ps": "0.064"
+          },
+          {
+            "en": "0.899",
+            "ur": "0.899",
+            "ps": "0.899"
+          },
+          {
+            "en": "0.057",
+            "ur": "0.057",
+            "ps": "0.057"
+          }
+        ],
+        [
+          {
+            "en": "25 – 29",
+            "ur": "25 – 29",
+            "ps": "25 – 29"
+          },
+          {
+            "en": "15955000",
+            "ur": "15955000",
+            "ps": "15955000"
+          },
+          {
+            "en": "96900",
+            "ur": "96900",
+            "ps": "96900"
+          },
+          {
+            "en": "0.061",
+            "ur": "0.061",
+            "ps": "0.061"
+          },
+          {
+            "en": "0.884",
+            "ur": "0.884",
+            "ps": "0.884"
+          },
+          {
+            "en": "0.054",
+            "ur": "0.054",
+            "ps": "0.054"
+          }
+        ],
+        [
+          {
+            "en": "30 – 34",
+            "ur": "30 – 34",
+            "ps": "30 – 34"
+          },
+          {
+            "en": "1629000",
+            "ur": "1629000",
+            "ps": "1629000"
+          },
+          {
+            "en": "64200",
+            "ur": "64200",
+            "ps": "64200"
+          },
+          {
+            "en": "0.039",
+            "ur": "0.039",
+            "ps": "0.039"
+          },
+          {
+            "en": "0.868",
+            "ur": "0.868",
+            "ps": "0.868"
+          },
+          {
+            "en": "0.034",
+            "ur": "0.034",
+            "ps": "0.034"
+          }
+        ],
+        [
+          {
+            "en": "35 – 39",
+            "ur": "35 – 39",
+            "ps": "35 – 39"
+          },
+          {
+            "en": "1627000",
+            "ur": "1627000",
+            "ps": "1627000"
+          },
+          {
+            "en": "34900",
+            "ur": "34900",
+            "ps": "34900"
+          },
+          {
+            "en": "0.021",
+            "ur": "0.021",
+            "ps": "0.021"
+          },
+          {
+            "en": "0.852",
+            "ur": "0.852",
+            "ps": "0.852"
+          },
+          {
+            "en": "0.018",
+            "ur": "0.018",
+            "ps": "0.018"
+          }
+        ],
+        [
+          {
+            "en": "40 – 44",
+            "ur": "40 – 44",
+            "ps": "40 – 44"
+          },
+          {
+            "en": "1522000",
+            "ur": "1522000",
+            "ps": "1522000"
+          },
+          {
+            "en": "10800",
+            "ur": "10800",
+            "ps": "10800"
+          },
+          {
+            "en": "0.007",
+            "ur": "0.007",
+            "ps": "0.007"
+          },
+          {
+            "en": "0.834",
+            "ur": "0.834",
+            "ps": "0.834"
+          },
+          {
+            "en": "0.006",
+            "ur": "0.006",
+            "ps": "0.006"
+          }
+        ],
+        [
+          {
+            "en": "45 – 49",
+            "ur": "45 – 49",
+            "ps": "45 – 49"
+          },
+          {
+            "en": "1401000",
+            "ur": "1401000",
+            "ps": "1401000"
+          },
+          {
+            "en": "800",
+            "ur": "800",
+            "ps": "800"
+          },
+          {
+            "en": "0.001",
+            "ur": "0.001",
+            "ps": "0.001"
+          },
+          {
+            "en": "0.813",
+            "ur": "0.813",
+            "ps": "0.813"
+          },
+          {
+            "en": "0.001",
+            "ur": "0.001",
+            "ps": "0.001"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "0.205",
+            "ur": "0.205",
+            "ps": "0.205"
+          },
+          {
+            "en": "0.205",
+            "ur": "0.205",
+            "ps": "0.205"
+          },
+          {
+            "en": "0.181",
+            "ur": "0.181",
+            "ps": "0.181"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-7-7"
+    },
+    {
+      "caption": "Example 7.8: female population, births and survival",
+      "captionUrdu": "مثال 7.8: عورتوں کی آبادی، پیدائشیں اور بقا",
+      "captionPashto": "بېلګه 7.8: د ښځو نفوس، زېږونونه او بقا",
+      "headers": [
+        {
+          "en": "Age group (years)",
+          "ur": "عمر کا گروہ (سال)",
+          "ps": "عمري ډله (کلونه)"
+        },
+        {
+          "en": "Female population",
+          "ur": "عورتوں کی آبادی",
+          "ps": "د ښځو نفوس"
+        },
+        {
+          "en": "Male births",
+          "ur": "لڑکوں کی پیدائشیں",
+          "ps": "نارینه زېږونونه"
+        },
+        {
+          "en": "Female births",
+          "ur": "لڑکیوں کی پیدائشیں",
+          "ps": "ښځینه زېږونونه"
+        },
+        {
+          "en": "Probability of survival",
+          "ur": "بقا کا امکان",
+          "ps": "د بقا احتمال"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "15 - 19",
+            "ur": "15 - 19",
+            "ps": "15 - 19"
+          },
+          {
+            "en": "5687",
+            "ur": "5687",
+            "ps": "5687"
+          },
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "0.91",
+            "ur": "0.91",
+            "ps": "0.91"
+          }
+        ],
+        [
+          {
+            "en": "20 - 24",
+            "ur": "20 - 24",
+            "ps": "20 - 24"
+          },
+          {
+            "en": "5324",
+            "ur": "5324",
+            "ps": "5324"
+          },
+          {
+            "en": "144",
+            "ur": "144",
+            "ps": "144"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "0.90",
+            "ur": "0.90",
+            "ps": "0.90"
+          }
+        ],
+        [
+          {
+            "en": "25 - 29",
+            "ur": "25 - 29",
+            "ps": "25 - 29"
+          },
+          {
+            "en": "4720",
+            "ur": "4720",
+            "ps": "4720"
+          },
+          {
+            "en": "135",
+            "ur": "135",
+            "ps": "135"
+          },
+          {
+            "en": "127",
+            "ur": "127",
+            "ps": "127"
+          },
+          {
+            "en": "0.84",
+            "ur": "0.84",
+            "ps": "0.84"
+          }
+        ],
+        [
+          {
+            "en": "30 - 34",
+            "ur": "30 - 34",
+            "ps": "30 - 34"
+          },
+          {
+            "en": "3933",
+            "ur": "3933",
+            "ps": "3933"
+          },
+          {
+            "en": "82",
+            "ur": "82",
+            "ps": "82"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          },
+          {
+            "en": "0.87",
+            "ur": "0.87",
+            "ps": "0.87"
+          }
+        ],
+        [
+          {
+            "en": "35 - 39",
+            "ur": "35 - 39",
+            "ps": "35 - 39"
+          },
+          {
+            "en": "3670",
+            "ur": "3670",
+            "ps": "3670"
+          },
+          {
+            "en": "62",
+            "ur": "62",
+            "ps": "62"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "0.85",
+            "ur": "0.85",
+            "ps": "0.85"
+          }
+        ],
+        [
+          {
+            "en": "40 - 44",
+            "ur": "40 - 44",
+            "ps": "40 - 44"
+          },
+          {
+            "en": "3025",
+            "ur": "3025",
+            "ps": "3025"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "0.83",
+            "ur": "0.83",
+            "ps": "0.83"
+          }
+        ],
+        [
+          {
+            "en": "45 - 49",
+            "ur": "45 - 49",
+            "ps": "45 - 49"
+          },
+          {
+            "en": "2601",
+            "ur": "2601",
+            "ps": "2601"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "0.82",
+            "ur": "0.82",
+            "ps": "0.82"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-7-8"
+    }
+  ],
+  "sourceNote": "Printed page 232. The words \"Now G.R.R and N.R.R are computed as follows.\" stand for the printed text \"Now G.R.R = h[Σ b/p] = … and\". The totals in the solution table are 0.205 (printed twice, under the ratio and the survival columns) and 0.181. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:40:14.371895+00:00",
+    "scope": "Scan 242 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

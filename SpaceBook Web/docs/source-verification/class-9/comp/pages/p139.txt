@@ -1,0 +1,42 @@
+@pdf 137
+@printed 131
+@status lesson
+### Program 5.13: A program to print the output as shown below. Using nested for loops. || پروگرام 5.13: نیسٹڈ for لوپس سے نیچے دکھایا گیا آؤٹ پٹ پرنٹ کرنے کا پروگرام۔ || پروګرام ۵.۱۳: د ځالي for لوپونو په مرسته لاندې ښودل شوی output چاپول.
+m # include <stdio.h>
+m void main()
+m {
+m     int i,j;
+m     for(i=1;i<=5;i++)
+m     {
+m         for(j=1;j<=i;j++)
+m         printf("%d\t",j);
+m     }
+m     printf("\n");
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 1
+m 1   2
+m 1   2   3
+m 1   2   3   4
+m 1   2   3   4   5
+endbox
+@issue As printed, the closing brace of the outer loop comes before printf("\n"), and there is an extra closing brace, so the program does not compile and would not print the triangle; printf("\n") belongs inside the outer loop after the inner loop. Kept as printed.
+### 5.1.9 Codes for flowcharts of unit-1 || 5.1.9 یونٹ 1 کے فلوچارٹس کے کوڈز || ۵.۱.۹ د ۱ څپرکي د فلوچارټونو کوډونه
+### Program 5.14: A program to find factorial of a number. || پروگرام 5.14: کسی عدد کا فیکٹوریل معلوم کرنے کا پروگرام۔ || پروګرام ۵.۱۴: د عدد فکټوریل موندل.
+m #include <iostream>
+m using namespace std;
+m int main() {
+m   int i, n, factorial = 1;
+m   cout<<"Enter a positive integer: ";
+m   cin>>n;
+m   for (i = 1; i <= n; ++i) {
+m     factorial *= i;   // factorial = factorial * i;
+m   }
+m   cout<< "Factorial of "<<n<<" = "<<factorial;
+m             return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter a positive integer:  5
+m Factorial of 5 = 120
+endbox

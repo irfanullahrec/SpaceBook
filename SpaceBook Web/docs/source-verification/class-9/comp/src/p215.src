@@ -1,0 +1,14 @@
+@printed 207
+@status lesson
+@issue This page's scan file is named "191_Page_180.jpg"; its printed folio is 207.
+p (Figure 7.44: Using image as background of web page — the text over a photograph of hands typing on a laptop keyboard.) || (شکل 7.44: ویب پیج کے پس منظر کے طور پر تصویر — لیپ ٹاپ کی بورڈ پر ٹائپ کرتے ہاتھوں کی تصویر پر متن۔) || (۷.۴۴ شکل: د وېب پاڼې شالید انځور — د لپټاپ پر کیبورډ لیکونکو لاسونو انځور پر متن.)
+@sec 7-6 | 7.6 Hyperlinks || 7.6 ہائپر لنکس || ۷.۶ Hyperlinks
+## 7.6 HYPERLINKS || 7.6 ہائپر لنکس || ۷.۶ Hyperlinks
+p The World Wide Web is comprised of hyperlinks linking trillions of pages and files to one another. Web pages contain many hyperlinks, each sends the user to a related web page or picture/file. || ورلڈ وائیڈ ویب ہائپر لنکس پر مشتمل ہے جو کھربوں صفحات اور فائلوں کو آپس میں جوڑتے ہیں۔ ویب پیجز میں بہت سے ہائپر لنکس ہوتے ہیں جن میں سے ہر ایک صارف کو کسی متعلقہ ویب پیج یا تصویر/فائل تک لے جاتا ہے۔ || نړیواله ویب له hyperlinks جوړه ده چې ټریلیونونه پاڼې او فایلونه یو بل سره نښلوي. وېب پاڼې ډېر hyperlinks لري چې هر یو کاروونکی اړوندې پاڼې یا انځور/فایل ته لېږي.
+### 7.6.1 Hyperlink || 7.6.1 ہائپر لنک || ۷.۶.۱ Hyperlink
+p Hyperlinks are found in nearly all Web pages, allowing users to click their way from page to page. Text hyperlinks are often blue and underlined. When the user moves the cursor over a hyperlink, whether it is text or an image, the arrow should change to a small hand pointing at the link. Clicking on it allows the user to a new place. || ہائپر لنکس تقریباً تمام ویب پیجز میں ہوتے ہیں جن پر کلک کر کے صارف ایک صفحے سے دوسرے پر جا سکتا ہے۔ متنی ہائپر لنکس عموماً نیلے اور انڈر لائن ہوتے ہیں۔ جب صارف کرسر کو ہائپر لنک پر لاتا ہے، چاہے وہ متن ہو یا تصویر، تو تیر چھوٹے ہاتھ میں بدل جاتا ہے جو لنک کی طرف اشارہ کرتا ہے۔ اس پر کلک کرنے سے صارف نئی جگہ پہنچ جاتا ہے۔ || hyperlinks تقریباً په ټولو وېب پاڼو کې شته او کاروونکی پرې په کلیک له یوې پاڼې بلې ته ځي. متني hyperlinks اکثر شین او underline وي. کله چې cursor پر hyperlink راشي، که متن وي که انځور، غشی په کوچني لاس بدلېږي. پرې کلیک کاروونکی نوي ځای ته وړي.
+### 7.6.2 Anchor Tag || 7.6.2 اینکر ٹیگ || ۷.۶.۲ Anchor tag
+p The <a></a> tag is known as anchor. It is used to create a hyperlink which may be text or image, with the ***href*** attribute. || <a></a> ٹیگ اینکر کہلاتا ہے۔ یہ ***href*** خصوصیت کے ساتھ ہائپر لنک بنانے کے لیے استعمال ہوتا ہے جو متن یا تصویر ہو سکتا ہے۔ || <a></a> tag anchor بلل کېږي. د ***href*** attribute سره د hyperlink جوړولو لپاره کارېږي چې متن یا انځور کېدای شي.
+### 7.6.3 Creating a Hyperlink to a Web Page || 7.6.3 کسی ویب پیج کا ہائپر لنک بنانا || ۷.۶.۳ وېب پاڼې ته hyperlink جوړول
+p The syntax of creating a hyperlink to another web page is: || کسی دوسرے ویب پیج کا ہائپر لنک بنانے کا سنٹیکس یہ ہے: || بلې وېب پاڼې ته د hyperlink جوړولو syntax دا دی:
+m <a href= "URL">text to be displayed</a>

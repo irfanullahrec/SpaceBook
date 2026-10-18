@@ -1,0 +1,38 @@
+@printed 90
+@status lesson
+### پروگرام 4.12 ایک پروگرام لکھیں جس میں نیسٹڈ if-else کے ذریعے سب سے بڑا عدد معلوم کرنے کا کہا ہو۔ || Program 4.12 Write a program that finds the largest number using nested if-else || پروګرام ۴.۱۲ داسې پروګرام ولیکئ چې د ځالې if-else په مرسته تر ټولو لوی عدد پیدا کړي
+m #include <iostream>
+m using namespace std;
+m int main()
+m {
+m     float n1, n2, n3;
+m     cout << "Enter three numbers: ";
+m     cin >> n1 >> n2 >> n3;
+m     if(n1 >= n2) {
+m         if(n1 >= n3)
+m             cout << "Largest number: " << n1;
+m         else
+m             cout << "Largest number: " << n3;
+m     }
+m     else {
+m         if(n2 >= n3)
+m         cout << "Largest number: " << n2;
+m         else
+m         cout << "Largest number: " << n3;
+m     }
+m     return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter three numbers: 2.3
+m 8.3
+m -4.2
+m Largest number: 8.3
+endbox
+@sec 4-key | اہم نکات || Key points || مهم ټکي
+## اہم نکات || Key points || مهم ټکي
+- کنٹرول سٹرکچر پروگرام کے چلنے کی عمومی ترتیب کو بدلنے کے لئے استعمال ہوتے ہیں۔ || Control structures are used to change the normal order in which a program runs. || د کنټرول جوړښتونه د پروګرام د چلېدو د عادي ترتیب د بدلولو لپاره کارېږي.
+- ایسی اسٹیٹمنٹ جو پروگرام چلنے کے دوران اس کی اسٹیٹمنٹ کی ترتیب کو متاثر کرتی ہیں، کنٹرول اسٹیٹمنٹس (Control Statement) کہلاتی ہیں۔ || Statements that affect the order of a program's statements while it runs are called control statements. || هغه بیانونه چې د پروګرام د چلېدو پر مهال د بیانونو ترتیب اغېزمنوي د کنټرول بیانونه (Control Statement) بلل کېږي.
+- if اسٹیٹمنٹ ایک فیصلہ ساز اسٹیٹمنٹ ہے۔ یہ سلیکشن سٹرکچر کی آسان ترین شکل ہے۔ || The if statement is a decision-making statement; it is the simplest form of selection structure. || if بیان د پرېکړې بیان دی؛ د انتخابي جوړښت تر ټولو اسانه بڼه ده.
+- if-else اسٹیٹمنٹ بھی فیصلے کرنے کے لیے استعمال ہوتی ہے۔ یہ اسٹیٹمنٹ کے اندر ایک بلاک کو چلاتی ہے اگر شرط کا نتیجہ True ہو اور دوسرے بلاک کو چلاتی ہے جب شرط کا نتیجہ False ہو۔ || The if-else statement is also used for taking decisions. It runs one block if the condition is true and the other block when the condition is false. || if-else بیان هم د پرېکړې لپاره کارېږي. که شرط True وي یو بلاک او که False وي بل بلاک چلوي.
+- switch اسٹیٹمنٹ کثیر الانتخاب اسٹیٹمنٹ ہے۔ || The switch statement is a multiple-choice statement. || switch بیان څو انتخابي بیان دی.
+- نیسٹڈ سلیکشن سٹرکچر میں، ایک سلیکشن سٹرکچر، دوسرے سلیکشن سٹرکچر کے اندر بند ہو سکتا ہے۔ || In a nested selection structure, one selection structure can be enclosed inside another selection structure. || په ځالې انتخابي جوړښت کې یو انتخابي جوړښت د بل انتخابي جوړښت دننه تړل کېدای شي.

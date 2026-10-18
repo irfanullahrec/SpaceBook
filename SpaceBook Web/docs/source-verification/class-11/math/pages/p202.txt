@@ -1,0 +1,21 @@
+@printed 202
+eq P(A\cap B)=P(A)P(B)
+endbox
+p The above theorem can be extended to any finite number of mutually independent events. If $A_1,A_2,A_3,\ldots,A_n$ are mutually independent events, then || اوپر کا قضیہ باہم آزاد واقعات کی کسی بھی محدود تعداد تک بڑھایا جا سکتا ہے۔ اگر $A_1,A_2,A_3,\ldots,A_n$ باہم آزاد واقعات ہوں، تو || پورته قضیه د متقابلاً خپلواکو پېښو هر محدود شمېر ته غځېدای شي. که $A_1,A_2,A_3,\ldots,A_n$ متقابلاً خپلواکې پېښې وي، نو
+eq P(A_1\cap A_2\cap A_3\cap\cdots\cap A_n)=P(A_1)P(A_2)P(A_3)\cdots P(A_n)
+example 27 | A space shuttle has four independent computer control systems. If the probability of failure of any one system is 0.001, what is the probability of failure of all four systems? || ایک خلائی شٹل کے چار آزاد کمپیوٹر کنٹرول نظام ہیں۔ اگر کسی ایک نظام کی ناکامی کا احتمال 0.001 ہو تو چاروں نظاموں کی ناکامی کا احتمال کیا ہے؟ || یوه فضايي بېړۍ څلور خپلواک کمپیوټري کنټرول سیستمونه لري. که د هر یوه سیستم د ناکامۍ احتمال 0.001 وي، د څلورو واړو سیستمونو د ناکامۍ احتمال څومره دی؟
+p **Solution:** Let $E_i=\{\text{failure of system }i,\ i=1,2,3,4\}$. || **حل:** فرض کریں $E_i=\{\text{نظام }i\text{ کی ناکامی},\ i=1,2,3,4\}$۔ || **حل:** فرض کړئ $E_i=\{\text{د }i\text{ سیستم ناکامي},\ i=1,2,3,4\}$.
+p Since the events $E_i$, $i=1,2,3,4$ are given to be independent, so using the following: || چونکہ واقعات $E_i$، $i=1,2,3,4$ آزاد دیے گئے ہیں، اس لیے درج ذیل استعمال کرتے ہوئے: || څرنګه چې $E_i$، $i=1,2,3,4$ پېښې خپلواکې ورکړل شوې دي، نو د لاندې په کارولو:
+eq P(E_1\cap E_2\cap E_3\cap E_4)=P(E_1)P(E_2)P(E_3)P(E_4),\quad i=1,2,3,4
+eq =(0.001)^4=0.000000000001
+endexample
+exercise 6.5
+q 1 | Suppose events A and B are such that $P(A)=\dfrac25$, $P(B)=\dfrac25$ and $P(A\cup B)=\dfrac12$. Find $P(A\cap B)$. || فرض کریں واقعات A اور B کے لیے $P(A)=\dfrac25$، $P(B)=\dfrac25$ اور $P(A\cup B)=\dfrac12$۔ $P(A\cap B)$ معلوم کریں۔ || فرض کړئ د A او B پېښو لپاره $P(A)=\dfrac25$، $P(B)=\dfrac25$ او $P(A\cup B)=\dfrac12$. $P(A\cap B)$ پیدا کړئ.
+q 2 | If A and B are 2 events in a sample space S such that $P(A)=\dfrac12$, $P(\overline B)=\dfrac58$, $P(A\cup B)=\dfrac34$. Find || اگر A اور B نمونہ فضا S میں دو واقعات ہوں، جن کے لیے $P(A)=\dfrac12$، $P(\overline B)=\dfrac58$، $P(A\cup B)=\dfrac34$۔ معلوم کریں || که A او B د نمونې په S فضا کې دوه پېښې وي چې $P(A)=\dfrac12$، $P(\overline B)=\dfrac58$، $P(A\cup B)=\dfrac34$. پیدا کړئ
+qp (i) | $P(A\cap B)$ || $P(A\cap B)$ || $P(A\cap B)$
+qp (ii) | $P(\overline A\cap\overline B)$ || $P(\overline A\cap\overline B)$ || $P(\overline A\cap\overline B)$
+q 3 | Given $P(A)=0.5$ and $P(A\cup B)=0.6$, find $P(B)$ if A and B are mutually exclusive. || $P(A)=0.5$ اور $P(A\cup B)=0.6$ دیے ہیں۔ اگر A اور B باہم خارج ہوں تو $P(B)$ معلوم کریں۔ || $P(A)=0.5$ او $P(A\cup B)=0.6$ ورکړل شوي دي. که A او B متقابلاً جلا وي، $P(B)$ پیدا کړئ.
+q 4 | A bag contains 30 tickets numbered from 1 to 30. One ticket is selected at random. Find the probability that its number is either odd or the square of an integer. || ایک تھیلے میں 1 سے 30 تک نمبر والے 30 ٹکٹ ہیں۔ ایک ٹکٹ بے ترتیب منتخب کیا جاتا ہے۔ اس کے نمبر کے طاق یا کسی صحیح عدد کا مربع ہونے کا احتمال معلوم کریں۔ || په یوه کڅوړه کې له 1 تر 30 شمېرې لرونکي 30 ټکټونه دي. یو ټکټ په تصادفي ډول ټاکل کېږي. احتمال پیدا کړئ چې شمېره یې طاق یا د یوه صحیح عدد مربع وي.
+q 5 | A student finds that the probability of passing an algebra test is $\dfrac89$. What is the probability of failing the test? || ایک طالب علم کے لیے الجبرا کا امتحان پاس کرنے کا احتمال $\dfrac89$ ہے۔ امتحان میں ناکامی کا احتمال کیا ہے؟ || یو زده کوونکی ویني چې د الجبر د ازموینې د بریا احتمال $\dfrac89$ دی. په ازموینه کې د ناکامۍ احتمال څومره دی؟
+q 6 | In the two dice experiment, given that the first die shows 4, what is the probability that the second die shows a number greater than 4? || دو پانسوں کے تجربے میں، اگر پہلے پانسے پر 4 آیا ہو تو دوسرے پر 4 سے بڑا عدد آنے کا احتمال کیا ہے؟ || د دوو ځارونو په تجربه کې، په دې شرط چې پر لومړي ځار 4 راغلی وي، پر دویم د 4 څخه د لوی عدد راتلو احتمال څومره دی؟
+q 7 | One card is drawn from a pack of 52 cards, what is the probability that the card drawn is neither red nor king. || 52 پتوں کی گڈی سے ایک پتہ نکالا جاتا ہے۔ اس احتمال کو معلوم کریں کہ نکالا گیا پتہ نہ سرخ ہو اور نہ بادشاہ۔ || د 52 کارتونو له دستې یو کارت ایستل کېږي. احتمال څومره دی چې ایستل شوی کارت نه سور وي او نه پاچا.

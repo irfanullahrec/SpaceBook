@@ -1,0 +1,47 @@
+@printed 80
+@status lesson
+svg شکل نمبر 4.1 if اسٹیٹمنٹ کا فلوچارٹ || Figure 4.1 Flowchart of the if statement || ۴.۱ شکل د if بیان فلوچارټ
+<svg viewBox="0 0 420 260" width="420" role="img" aria-label="Flowchart: arrow into a diamond 'if condition'; true branch goes right to a box 'statement (s)' and then back left to the main line; false branch goes straight down; both continue to 'The rest of code'" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF41" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M150 4 V30" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/>
+<polygon points="150,34 250,74 150,114 50,74" fill="#fff" stroke="#111827" stroke-width="2"/><text x="150" y="70">if</text><text x="150" y="90">condition</text>
+<path d="M250 74 H330 V116" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/><text x="280" y="66">true</text>
+<rect x="260" y="120" width="140" height="44" fill="#e0f2fe" stroke="#111827" stroke-width="2"/><text x="330" y="147">statement (s)</text>
+<path d="M330 164 V196 H156" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/>
+<path d="M150 114 V226" stroke="#111827" stroke-width="2" marker-end="url(#arF41)"/><text x="104" y="132">false</text>
+<text x="150" y="250">The rest of code</text>
+</svg>
+endsvg
+@issue The figure caption is too faint to read in the scan; a descriptive caption numbered 4.1 is supplied.
+p درج ذیل پروگرام if اسٹیٹمنٹ کے استعمال کو واضح کرتا ہے۔ || The following program shows the use of the if statement. || لاندې پروګرام د if بیان کارونه ښيي.
+### پروگرام 4.1 ایک پروگرام جو اس وقت اِن پُٹ کیے ہوئے نمبر کو پرنٹ کرے گا جب وہ 50 سے بڑا ہو۔ || Program 4.1 A program that prints the input number when it is greater than 50 || پروګرام ۴.۱ داسې پروګرام چې داخل شوی عدد هغه وخت چاپوي چې له 50 لوی وي
+m #include<stdio.h>
+m void main()
+m {
+m     int x;
+m     printf("\n Enter an integer = ");
+m     scanf("%d",&x);
+m     if(x >50)
+m     printf("%d", x);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter an integer = 75
+m 75
+endbox
+### پروگرام 4.2 درج ذیل پروگرام ایک اکیلی اسٹیٹمنٹ کو چلائے گا اگر if اسٹیٹمنٹ میں دی گئی شرط کا نتیجہ True آتا ہے۔ || Program 4.2 The following program runs a single statement if the condition given in the if statement is true || پروګرام ۴.۲ لاندې پروګرام یو بیان چلوي که د if په بیان کې ورکړل شوی شرط True وي
+m #include<stdio.h>
+m void main()
+m {
+m     int a, b;
+m     a=1000;
+m     b=500;
+m     if(a>b) {
+m         printf("Value of a is greater than b\n"); }
+m         printf("Thank You");
+m     }
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Value of a is greater than b
+m Thank You
+endbox
+@issue Program 4.2 has an extra closing brace: the if block already closes with "}" after the first printf, so the "}" after "Thank You" ends main() and the last "}" is a syntax error. The "Thank You" line is printed indented as if inside the if, but it runs regardless of the condition. The scan shows typographic quotes (“ ”) in several printf calls; straight quotes are required in C.

@@ -1,0 +1,34 @@
+from urgl import *
+# scan 197 = printed 190
+s=page(197,'farhang','190','Glossary (Farhang): continuation, “Ummeed”, “Naseehat-e-akhlaqi”','فرہنگ: (جاری)، «اُمید»، «نصیحتِ اخلاقی»','فرهنګ: (دوام)، «امید»، «اخلاقي نصیحت»','gl13')
+F=Flow(s)
+F.tb(0)
+H(s,'اُمید','Ummeed (Hope)','امید')
+F.tb(1)
+H(s,'نصیحتِ اخلاقی','Naseehat-e-akhlaqi (Moral advice)','اخلاقي نصیحت')
+F.tb(2)
+F.done()
+a=[('نیساں','بارش','rain (of the month Nisan)','باران'),('بند کشا/عقدہ کشا','گرہیں کھولنے والا، مشکلیں آسان کرنے والا','opener of knots, one who eases difficulties','ګرېڼې خلاصوونکی، ستونزې اسانوونکی'),('آئینہ گر','آئینہ بنانے والا','mirror-maker','هینداره جوړوونکی'),('ہما','ایک خیالی پرندہ، کہا جاتا ہے کہ جس کے سر کے اوپر سے ہما گزر جائے وہ بادشاہ بن جاتا ہے','a legendary bird; it is said that one over whose head the huma passes becomes a king','یو افسانوي مرغه، ویل کېږي چې د چا په سر باندې تېر شي هغه پاچا کېږي'),('خاصانِ خدا','اللہ کے خاص بندے','the chosen servants of God','د الله ځانګړي بندګان'),('عمران','حضرت موسیٰ کے والد کا نام','the name of Hazrat Musa’s father','د حضرت موسی د پلار نوم'),('پشہ','مچھر','mosquito','مچ'),('ہاروت و ماروت','وہ دو فرشتے جو بنی اسرائیل کی آزمائش کے لیے اللہ تعالیٰ نے بابل شہر میں بھیجے تھے','the two angels sent by Allah to the city of Babylon to test the Children of Israel','دوه فرښتې چې الله تعالی د بني اسرائیلو د آزمېښت لپاره بابل ښار ته ولېږلې')]
+b=[('نہ دل بجھا','مایوس نہ کر','do not be disheartened','مه مایوسه کېږه'),('پئے','واسطے، کے لیے','for, for the sake of','لپاره'),('کنعان','حضرت یعقوبؑ اور حضرت یوسفؑ کا وطن','the homeland of Hazrat Yaqub and Hazrat Yusuf','د حضرت یعقوب او حضرت یوسف وطن'),('دردِ پنہاں','چھپا ہوا درد','hidden pain','پټ درد'),('محرم','رازدان','confidant','رازدان'),('سیمیں','روشنی','light (as printed)','رڼا'),('تگاپو','دوڑ دھوپ','running about, effort','ډډ ورځ'),('کئی/کے','ایران کے بادشاہان کا لقب','the title of the kings of Iran (Kai)','د ایران د پاچاهانو لقب'),('کلمبس/کولمبس (Columbus)','ایک سیاح جس نے امریکہ دریافت کیا','a traveller who discovered America','یو سیاح چې امریکا یې کشف کړه'),('نظمِ جہاں','دنیا کا نظم و ضبط','order and discipline of the world','د نړۍ نظم او ضبط'),('جوتا','جوتنے والا، ہل چلانے والا','one who ploughs, ploughman','کروندګر'),('موجزن','موجیں مارتا ہوا','surging, rolling in waves','څپې وهونکی')]
+c3=[('ظہور','ظاہر ہونا','appearance, emergence','ښکاره کېدل'),('پند','نصیحت','advice','نصیحت'),('عقیل','عقل مند','intelligent','عقلمند'),('ہونہار','ہونے والا، جس میں لیاقت اور قابلیت کے آثار پائے جائیں','promising, one showing signs of ability and talent','هغه څوک چې په کې د لیاقت نښې وي'),('معین','مددگار','helper','مرستندوی'),('غیور','غیرت مند','self-respecting','غیرتمن')]
+s['tables']=[gtable('continuation','(جاری)','(دوام)',a,'4 + 4 rows (the section heading is on the previous page).'),gtable('“Ummeed”','«اُمید»','«امید»',b,'6 + 6 rows. The meaning of “سیمیں” is given as printed (“روشنی”).'),gtable('“Naseehat-e-akhlaqi”','«نصیحتِ اخلاقی»','«اخلاقي نصیحت»',c3,'3 + 3 rows.')]
+s['sourceNote']='Printed page 190 (scan 197): continuation of an earlier glossary section (4 + 4 rows), “اُمید” (6 + 6) and “نصیحتِ اخلاقی” (3 + 3). Right edge slightly cropped.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 198 = printed 191
+s=page(198,'farhang','191','Glossary (Farhang): “Jalwa-e-sahar”, “Purana coat”, “Yeh sarkein”','فرہنگ: «جلوۂ سحر»، «پرانا کوٹ»، «یہ سڑکیں»','فرهنګ: «د سهار جلوه»، «زوړ کوټ»، «دا سړکونه»','gl14')
+F=Flow(s)
+H(s,'جلوۂ سحر','Jalwa-e-sahar (The Splendour of Dawn)','د سهار جلوه')
+F.tb(0)
+H(s,'پرانا کوٹ','Purana coat (The Old Coat)','زوړ کوټ')
+F.tb(1)
+H(s,'یہ سڑکیں','Yeh sarkein (These roads)','دا سړکونه')
+F.tb(2)
+F.done()
+a=[('زادگانِ شب','رات کے پیدا کردہ','born of the night','د شپې زېږېدلي'),('مشرق','مشرق','east','ختیځ'),('شہود','شاہد کی جمع، حاضر','witnesses; present','شاهدان، حاضر'),('صنم کدہ','بت خانہ','idol-house, temple','بتخانه'),('پجاری','پوجا کرنے والے','worshipper','پوجا کوونکی'),('جوئبار','بڑی نہر جس میں دوسری نہریں آ کر ملتی ہیں','a big canal into which other canals flow','لویه ویاله چې نورې ویالې پکې راځي'),('شرار','چنگاریاں، یہاں مراد ستارے','sparks; here, stars','څڼې، دلته مراد ستوري'),('فسوں گر','جادوگر','magician','جادوګر'),('نیاز','حاجت، آرزو','need, wish','حاجت، هیله'),('سنکھ','ناقوس، بیل کے سینگ سے بنتا ہے','conch horn, made from the horn of a bull','ناقوس'),('پریت','محبت','love','مینه'),('رباب','ایک آلۂ موسیقی','a musical instrument (rabab)','یو موسیقي آله')]
+b=[('جاڑوں','سردیوں کا موسم','winter season','ژمی'),('نیلام','بولی بول کر بیچنے کا عمل','auction','په نیلام پلورل'),('صلائے عام','عام دعوت','general invitation','عامه بلنه'),('یارانِ نکتہ داں','عقل مند دوست','wise friends','هوښیار ملګري'),('آزمودہ کار','آزمایا ہوا، تجربہ کار','tried and tested, experienced','آزمویل شوی، تجربه لرونکی'),('واسکوڈی گاما','ایک پرتگالی جہازراں','a Portuguese navigator','یو پرتګالي بحري'),('بے بولنا','زندہ باد کہنا','to say “long live”','ژوندی دې وي ویل'),('بابا آدم','حضرت آدم علیہ السلام یعنی کوٹوں کا باپ','Hazrat Adam, i.e. father of coats','حضرت آدم، یعنی د کوټونو پلار'),('دہانِ زخم','مُنھ کے زخم','mouth of a wound','د زخم خوله'),('چینی آنکھیوں','چینیوں کی چھوٹی آنکھیں','small eyes of the Chinese','د چینایانو وړې سترګې'),('خراج','داد، تحسین','tribute; praise','ستاینه'),('ورق','صفحہ','page','پاڼه'),('عبرت','سبق، نصیحت','a lesson, moral','عبرت، درس')]
+c3=[('زائد المیعاد','جس کا مقررہ وقت ختم ہو چکا ہو','expired, past its fixed time','هغه چې مقرر وخت یې پای ته رسېدلی'),('مادر پدر آزاد','جن کا کوئی پرسان حال نہ ہو','completely free, with nobody to look after them','پرته له پرسان حال'),('صید','شکار','prey, hunt','ښکار'),('دمِ باراں','بارش کا وقت','time of rain','د باران وخت'),('خار','کانٹے','thorns','اغزي'),('بہزادیاں','ایرانی مصور کمال الدین بہزاد کے فن پارے','works of the Iranian painter Kamaluddin Behzad','د ایراني انځورګر کمال الدین بهزاد هنري اثار'),('گرداب','بھنور','whirlpool','څرخ'),('پھر کر','بے قابو ہو کر','turning uncontrolled','بې کنټرول شوی'),('رستم و سہراب','ایران کے مشہور پہلوان','Rustam and Sohrab, famous wrestlers of Iran','د ایران مشهور پهلوانان'),('زہرۂ آب','خوف زدہ','frightened (gall turned to water)','ویرېدلی'),('ہر چہ بادا باد','جو ہو کا سو ہو گا','whatever will be, will be','څه چې کېږي کېږي'),('چغتائیاں','لاہور کے مصور عبد الرحمن چغتائی کے فن پارے','works of the Lahore painter Abdur Rahman Chughtai','د لاهور د انځورګر عبدالرحمن چغتايي هنري اثار')]
+s['tables']=[gtable('“Jalwa-e-sahar”','«جلوۂ سحر»','«د سهار جلوه»',a,'6 + 6 rows. “سنکھ” is read from poor print.'),gtable('“Purana coat”','«پرانا کوٹ»','«زوړ کوټ»',b,'7 + 6 rows. “بے بولنا”, “خراج” and “بابا آدم” meanings are given as printed.'),gtable('“Yeh sarkein”','«یہ سڑکیں»','«دا سړکونه»',c3,'6 + 6 rows. The third word on the right is read as “صید” (shikar) from poor print.')]
+s['sourceNote']='Printed page 191 (scan 198): glossary sections “جلوۂ سحر” (6 + 6), “پرانا کوٹ” (7 + 6) and “یہ سڑکیں” (6 + 6).'+NOTE
+s['vocabulary']={}
+save(s)

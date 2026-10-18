@@ -1,0 +1,31 @@
+@printed 69
+@status lesson
+### پوسٹ فکس ڈیکریمنٹ آپریٹرز (Postfix Decrement Operator) || Postfix decrement operator || وروستاړی کموالي عملګر (Postfix Decrement Operator)
+p جب کسی عبارت میں ڈیکریمنٹ آپریٹر پوسٹ فکس انداز میں استعمال کیا جائے تو یہ ویری ایبل کی قیمت کو پہلے عبارت میں استعمال کرے گا اور پھر اس کے بعد اس کی قیمت میں 1 کو گھٹائے گا۔ || When the decrement operator is used in postfix form in an expression, it first uses the variable's value in the expression and then subtracts 1 from its value. || کله چې د کموالي عملګر په عبارت کې په وروستاړې بڼه وکارول شي، لومړی د متغیر ارزښت په عبارت کې کاروي او بیا یې له ارزښت 1 کموي.
+p مثال کے طور پر، اگر مذکورہ بالا مثال میں، ڈیکریمنٹ آپریٹر پوسٹ فکس انداز میں استعمال ہوتا ہے تو نتیجہ مختلف ہو گا۔ اس صورت میں اسٹیٹمنٹ کچھ ایسے لکھی جائے گی: || For example, if in the example above the decrement operator is used in postfix form, the result will be different. In that case the statement is written like this: || د بېلګې په توګه، که په پورتنۍ بېلګه کې د کموالي عملګر په وروستاړې بڼه وکارول شي، پایله به توپیر ولري. په دې حالت کې بیان داسې لیکل کېږي:
+m sum = a+  b  + c--;
+p اس صورت میں، c کی موجودہ قیمت کو عبارت میں استعمال کرنے کے بعد c کی قیمت سے 1 گھٹایا جائے گا۔ اس طرح عمل درآمد کے بعد، sum کی قیمت 5 کے برابر ہو گی اور c کی قیمت 2 ہو گی۔ || In this case, 1 is subtracted from c after its current value has been used in the expression. So after execution the value of sum equals 5 and the value of c is 2. || په دې حالت کې، د c اوسنی ارزښت په عبارت کې له کارولو وروسته د c له ارزښت 1 کمېږي. نو له اجرا وروسته د sum ارزښت له 5 سره برابر او د c ارزښت 2 وي.
+@sec 3-2-6 | 3.2.6 نسبتی آپریٹرز || 3.2.6 Relational operators || ۳.۲.۶ نسبتي عملګرونه
+### 3.2.6 نسبتی آپریٹرز (Relational Operators) || 3.2.6 Relational operators || ۳.۲.۶ نسبتي عملګرونه (Relational Operators)
+p نسبتی یا ریلیشنل آپریٹرز کو پروگراموں میں کسی بھی قسم کی شرط (Condition) کی وضاحت کرنے کے لئے استعمال کیا جاتا ہے۔ ایک ریلیشنل آپریٹر دو قیمتوں کا موازنہ کرتا ہے۔ اس کا نتیجہ درست (True) یا غلط (False) کی صورت میں ہوتا ہے۔ ریلیشنل آپریٹرز کو بعض اوقات موازنہ (comparison) آپریٹرز کہا جاتا ہے کیونکہ وہ ٹیسٹ کنڈیشن میں استعمال ہوتے ہیں جن کا نتیجہ ہاں یا ناں میں ہوتا ہے۔ C / C++ درج ذیل ریلیشنل آپریٹرز فراہم کرتا ہے: || Relational operators are used in programs to state any kind of condition. A relational operator compares two values; its result is either true or false. Relational operators are sometimes called comparison operators, because they are used in test conditions whose result is yes or no. C/C++ provides the following relational operators: || نسبتي (relational) عملګرونه په پروګرامونو کې د هر ډول شرط (Condition) د څرګندولو لپاره کارېږي. نسبتي عملګر دوه ارزښتونه پرتله کوي؛ پایله یې سم (True) یا ناسم (False) وي. نسبتي عملګرونو ته کله کله د پرتلې (comparison) عملګرونه وايي ځکه په ازموینیزو شرطونو کې کارېږي چې پایله یې هو یا نه وي. C/C++ لاندې نسبتي عملګرونه لري:
+table ریلیشنل آپریٹرز || Relational operators || نسبتي عملګرونه
+th | Operator || Operator || عملګر | Symbol || Symbol || نښه | Form || Form || بڼه | Operation || Operation || عملیه
+tr | Greater than || Greater than || تر ... لوی | > || > || > | x > y || x > y || x > y | true if x is greater than y, false otherwise || true if x is greater than y, false otherwise || که x له y لوی وي سم، که نه ناسم
+tr | Less than || Less than || تر ... کوچنی | < || < || < | x < y || x < y || x < y | true if x is less than y, false otherwise || true if x is less than y, false otherwise || که x له y کوچنی وي سم، که نه ناسم
+tr | Greater than or equals || Greater than or equals || لوی یا برابر | >= || >= || >= | x >= y || x >= y || x >= y | true if x is greater than or equal to y, false otherwise || true if x is greater than or equal to y, false otherwise || که x له y لوی یا برابر وي سم، که نه ناسم
+tr | Less than or equals || Less than or equals || کوچنی یا برابر | <= || <= || <= | x <= y || x <= y || x <= y | true if x is less than or equal to y, false otherwise || true if x is less than or equal to y, false otherwise || که x له y کوچنی یا برابر وي سم، که نه ناسم
+tr | Equality || Equality || برابري | == || == || == | x == y || x == y || x == y | true if x equals y, false otherwise || true if x equals y, false otherwise || که x له y سره برابر وي سم، که نه ناسم
+tr | Inequality || Inequality || نابرابري | != || != || != | x != y || x != y || x != y | true if x does not equal y, false otherwise || true if x does not equal y, false otherwise || که x له y سره برابر نه وي سم، که نه ناسم
+endtable
+### ریلیشنل آپریٹرز کا استعمال (Use of Relational Operators) || Use of relational operators || د نسبتي عملګرونو کارونه
+p اگر x = 10، y = 20 اور z = 5 ہوں تو ریلیشنل آپریٹرز کا آؤٹ پُٹ ذیل کے جدول میں دکھایا گیا ہے: || If x = 10, y = 20 and z = 5, the output of the relational operators is shown in the table below: || که x = 10، y = 20 او z = 5 وي، د نسبتي عملګرونو output په لاندې جدول کې ښودل شوی:
+table ریلیشنل آپریٹرز کی مثالیں (x = 10, y = 20, z = 5) || Relational operator examples (x = 10, y = 20, z = 5) || د نسبتي عملګرونو بېلګې (x = 10, y = 20, z = 5)
+th | Form || Form || بڼه | Output Returned || Output returned || راګرځېدلی output
+tr | x > y || x > y || x > y | False || False || False
+tr | y < z || y < z || y < z | False || False || False
+tr | x == z || x == z || x == z | False || False || False
+tr | x <= y || x <= y || x <= y | True || True || True
+tr | z >= y || z >= y || z >= y | False || False || False
+tr | y != x || y != x || y != x | True || True || True
+endtable
+@issue In C a relational expression actually returns the int 1 for true and 0 for false.

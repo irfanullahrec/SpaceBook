@@ -1,0 +1,471 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s123-moments-2",
+  "title": "Mean moments: formulas · Example 3.16: ungrouped data",
+  "headingUrdu": "اوسطی معیارِ اثر: فارمولے · مثال 3.16: غیر گروہی اعداد و شمار",
+  "headingPashto": "اوسط مومنټونه: فورمولونه · بېلګه 3.16: نه‌ګروپ شوي معلومات",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 123,
+    "printedPage": "115"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s123-t1",
+      "en": "m1, m2, m3, m4, … (Sample case) and their formulas are;",
+      "ur": "m1, m2, m3, m4, … (نمونے کی صورت) اور ان کے فارمولے یہ ہیں؛",
+      "ps": "m1, m2, m3, m4, … (د نمونې حالت) او د هغوی فورمولونه دا دي؛",
+      "sourceGap": {
+        "note": "Continues the notation μ1, μ2, μ3, μ4 (Population case) from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s123-lu",
+      "en": "For ungrouped data",
+      "ur": "غیر گروہی اعداد و شمار کے لیے",
+      "ps": "د نه‌ګروپ شویو معلوماتو لپاره"
+    },
+    {
+      "id": "stat11-s123-lg",
+      "en": "For grouped data",
+      "ur": "گروہی اعداد و شمار کے لیے",
+      "ps": "د ګروپي معلوماتو لپاره"
+    },
+    {
+      "id": "stat11-s123-t2",
+      "en": "This is direct method of computation of moments about mean.",
+      "ur": "یہ اوسط کے گرد معیارِ اثر کے حساب کا براہِ راست طریقہ ہے۔",
+      "ps": "دا د اوسط شاوخوا د مومنټونو د محاسبې مستقیمه طریقه ده."
+    },
+    {
+      "id": "stat11-s123-t3",
+      "en": "Computation of moments about mean in case of individual series or ungrouped data",
+      "ur": "انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں اوسط کے گرد معیارِ اثر کا حساب",
+      "ps": "د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې د اوسط شاوخوا د مومنټونو محاسبه"
+    },
+    {
+      "id": "stat11-s123-ex16",
+      "en": "Example: 3.16",
+      "ur": "مثال: 3.16",
+      "ps": "بېلګه: 3.16",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s123-q16",
+      "en": "Calculate the first four moments about mean for the data 1.05, 1.07, 1.19, 1.45.",
+      "ur": "اعداد و شمار 1.05, 1.07, 1.19, 1.45 کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں۔",
+      "ps": "د معلوماتو 1.05, 1.07, 1.19, 1.45 لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s123-sol16",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-16"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s123-t1",
+        "stat11-s123-lu",
+        "stat11-s123-lg"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s123-t2",
+        "stat11-s123-t3",
+        "stat11-s123-ex16",
+        "stat11-s123-q16",
+        "stat11-s123-sol16"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s123-u1",
+      "latex": "m_1=\\dfrac{\\sum(x-\\bar{x})}{n}=0\\qquad\\qquad m_1=\\dfrac{\\sum f(x-\\bar{x})}{\\sum f}=0",
+      "accessible": "m1 = Σ(x − x̄)/n = 0    m1 = Σf(x − x̄)/Σf = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0    m1 = Σf(x − x̄)/Σf = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0    m1 = Σf(x − x̄)/Σf = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0    m1 = Σf(x − x̄)/Σf = 0"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s123-u2",
+      "latex": "m_2=\\dfrac{\\sum(x-\\bar{x})^2}{n}=S^2\\qquad\\qquad m_2=\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}=S^2",
+      "accessible": "m2 = Σ(x − x̄)²/n = S²    m2 = Σf(x − x̄)²/Σf = S²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = Σ(x − x̄)²/n = S²    m2 = Σf(x − x̄)²/Σf = S²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = Σ(x − x̄)²/n = S²    m2 = Σf(x − x̄)²/Σf = S²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = Σ(x − x̄)²/n = S²    m2 = Σf(x − x̄)²/Σf = S²"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s123-u3",
+      "latex": "m_3=\\dfrac{\\sum(x-\\bar{x})^3}{n}\\qquad\\qquad m_3=\\dfrac{\\sum f(x-\\bar{x})^3}{\\sum f}",
+      "accessible": "m3 = Σ(x − x̄)³/n    m3 = Σf(x − x̄)³/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = Σ(x − x̄)³/n    m3 = Σf(x − x̄)³/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = Σ(x − x̄)³/n    m3 = Σf(x − x̄)³/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = Σ(x − x̄)³/n    m3 = Σf(x − x̄)³/Σf"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s123-u4",
+      "latex": "m_4=\\dfrac{\\sum(x-\\bar{x})^4}{n}\\qquad\\qquad m_4=\\dfrac{\\sum f(x-\\bar{x})^4}{\\sum f}",
+      "accessible": "m4 = Σ(x − x̄)⁴/n    m4 = Σf(x − x̄)⁴/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = Σ(x − x̄)⁴/n    m4 = Σf(x − x̄)⁴/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = Σ(x − x̄)⁴/n    m4 = Σf(x − x̄)⁴/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = Σ(x − x̄)⁴/n    m4 = Σf(x − x̄)⁴/Σf"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s123-a",
+      "latex": "\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{4.76}{4}=1.19",
+      "accessible": "x̄ = Σx/n = 4.76/4 = 1.19",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx/n = 4.76/4 = 1.19"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx/n = 4.76/4 = 1.19"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx/n = 4.76/4 = 1.19"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s123-b",
+      "latex": "m_1=\\dfrac{\\sum(x-\\bar{x})}{n}=\\dfrac{0}{4}=0",
+      "accessible": "m1 = Σ(x − x̄)/n = 0/4 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0/4 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0/4 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = Σ(x − x̄)/n = 0/4 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-16"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.16 solution table",
+      "captionUrdu": "مثال 3.16 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.16 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        },
+        {
+          "en": "(x − x̄)³",
+          "ur": "(x − x̄)³",
+          "ps": "(x − x̄)³"
+        },
+        {
+          "en": "(x − x̄)⁴",
+          "ur": "(x − x̄)⁴",
+          "ps": "(x − x̄)⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1.05",
+            "ur": "1.05",
+            "ps": "1.05"
+          },
+          {
+            "en": "-0.14",
+            "ur": "-0.14",
+            "ps": "-0.14"
+          },
+          {
+            "en": "0.0196",
+            "ur": "0.0196",
+            "ps": "0.0196"
+          },
+          {
+            "en": "-0.00274",
+            "ur": "-0.00274",
+            "ps": "-0.00274"
+          },
+          {
+            "en": "0.000384",
+            "ur": "0.000384",
+            "ps": "0.000384"
+          }
+        ],
+        [
+          {
+            "en": "1.07",
+            "ur": "1.07",
+            "ps": "1.07"
+          },
+          {
+            "en": "-0.12",
+            "ur": "-0.12",
+            "ps": "-0.12"
+          },
+          {
+            "en": "0.0144",
+            "ur": "0.0144",
+            "ps": "0.0144"
+          },
+          {
+            "en": "-0.00173",
+            "ur": "-0.00173",
+            "ps": "-0.00173"
+          },
+          {
+            "en": "0.000207",
+            "ur": "0.000207",
+            "ps": "0.000207"
+          }
+        ],
+        [
+          {
+            "en": "1.19",
+            "ur": "1.19",
+            "ps": "1.19"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "1.45",
+            "ur": "1.45",
+            "ps": "1.45"
+          },
+          {
+            "en": "0.26",
+            "ur": "0.26",
+            "ps": "0.26"
+          },
+          {
+            "en": "0.0676",
+            "ur": "0.0676",
+            "ps": "0.0676"
+          },
+          {
+            "en": "0.017576",
+            "ur": "0.017576",
+            "ps": "0.017576"
+          },
+          {
+            "en": "0.00457",
+            "ur": "0.00457",
+            "ps": "0.00457"
+          }
+        ],
+        [
+          {
+            "en": "4.76",
+            "ur": "4.76",
+            "ps": "4.76"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0.1016",
+            "ur": "0.1016",
+            "ps": "0.1016"
+          },
+          {
+            "en": "0.013106",
+            "ur": "0.013106",
+            "ps": "0.013106"
+          },
+          {
+            "en": "0.005161",
+            "ur": "0.005161",
+            "ps": "0.005161"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-16"
+    }
+  ],
+  "sourceNote": "Printed page 115. The formulas for ungrouped data (left) and grouped data (right) are printed side by side and each left/right pair is kept as one equation. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:53:48.507974+00:00",
+    "scope": "Scan 123 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

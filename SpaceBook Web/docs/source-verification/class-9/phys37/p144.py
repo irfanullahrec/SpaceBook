@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Information chart: global gravity model / 5.4 Variation of g with altitude / Eq 5.5'
+SECTIONS = [
+    ('info5b', ('INFORMATION CHART', 'معلوماتی چارٹ', 'معلوماتي چارټ'), [
+        ('p', 'This global model of the Earth’s gravitational strength was constructed from a combination of surface gravity measurements and satellite tracking data. It shows how the acceleration of gravity varies from the value at an idealized “sea level” that takes into account the Earth’s non-spherical shape. (The Earth is somewhat flattened at the poles—its radius is greatest at the equator.) Gravity is strongest in the red areas and weakest in the dark blue areas.', 'زمین کی تجاذبی شدت کا یہ عالمی نمونہ سطحی تجاذب کی پیمائشوں اور سیٹلائٹ ٹریکنگ ڈیٹا کو ملا کر بنایا گیا۔ یہ دکھاتا ہے کہ کششِ ثقل کا اسراع ایک مثالی "سطحِ سمندر" کی قدر سے کیسے بدلتا ہے جو زمین کی غیر کروی شکل کو مدنظر رکھتی ہے۔ (زمین قطبین پر کچھ چپٹی ہے — اس کا نصف قطر خطِ استوا پر سب سے زیادہ ہے۔) سرخ علاقوں میں کششِ ثقل سب سے زیادہ اور گہرے نیلے علاقوں میں سب سے کم ہے۔', 'د ځمکې د جاذبې د شدت دا نړیوال ماډل د سطحي جاذبې د اندازو او د سپوږمکۍ د تعقیب د معلوماتو له ګډولو جوړ شوی. دا ښيي چې د جاذبې تعجیل د یوې مثالي "سمندري سطحې" له ارزښته څنګه بدلېږي چې د ځمکې غیر کروي بڼه په پام کې نیسي. (ځمکه په قطبونو کې یو څه پلنه ده — شعاع یې په استوا کې تر ټولو زیاته ده.) جاذبه په سورو سیمو کې تر ټولو قوي او په تورو شنو سیمو کې تر ټولو کمزورې ده.'),
+        ('fig', 'Pictures: a globe and a world map coloured by gravity strength.', 'تصاویر: تجاذبی شدت کے لحاظ سے رنگا گیا کرہ اور دنیا کا نقشہ۔', 'انځورونه: د جاذبې د شدت له مخې رنګ شوې کره او د نړۍ نقشه.'),
+    ]),
+    ('5.4', ('5.4 VARIATION of ‘g’ WITH ALTITUDE', '5.4 بلندی کے ساتھ \'g\' میں تبدیلی', '5.4 د لوړوالي سره د \'g\' بدلون'), [
+        ('p', 'The value of ‘g’ at a given place depends upon the distance from the centre of earth. Greater the distance from the centre of the earth, smaller will be the value of ‘g’. Equation 5.4 shows that the value of ‘g’ varies inversely as the square of distance. Let ‘g_h’ be the value of acceleration due to garvity at a height ‘h’ from the surface of the earth we can modify Equation 5.4 as.', 'کسی مقام پر \'g\' کی قدر زمین کے مرکز سے فاصلے پر منحصر ہے۔ زمین کے مرکز سے فاصلہ جتنا زیادہ ہوگا، \'g\' کی قدر اتنی ہی کم ہوگی۔ مساوات 5.4 ظاہر کرتی ہے کہ \'g\' کی قدر فاصلے کے مربع کے بالعکس بدلتی ہے۔ فرض کریں زمین کی سطح سے بلندی \'h\' پر کششِ ثقل کے اسراع کی قدر \'g_h\' ہے تو ہم مساوات 5.4 کو یوں بدل سکتے ہیں۔', 'په یوه ځای کې د \'g\' ارزښت د ځمکې له مرکز په واټن پورې اړه لري. څومره چې د ځمکې له مرکز واټن زیات وي، هومره د \'g\' ارزښت کم وي. 5.4 معادله ښيي چې د \'g\' ارزښت د واټن د مربع سره معکوس بدلېږي. فرض کړئ د ځمکې له سطحې په \'h\' لوړوالي کې د جاذبې تعجیل \'g_h\' وي، نو 5.4 معادله داسې بدلولی شو.'),
+        ('eq', None, 'g_h = G [[m_E|(r_E + h)^2]]', '1'),
+        ('fig', 'Figure 5.6: a body at height h above the Earth of radius r_E.', 'شکل 5.6: نصف قطر r_E والی زمین سے بلندی h پر ایک جسم۔', '5.6 شکل: د r_E شعاع لرونکې ځمکې څخه په h لوړوالي کې یو جسم.'),
+        ('p', 'equation 5.3 can also be written as', 'مساوات 5.3 کو یوں بھی لکھا جا سکتا ہے', '5.3 معادله داسې هم لیکل کېدای شي'),
+        ('eq', None, 'g = G [[m_E|r_E^2]]'),
+        ('p', 'or', 'یا', 'یا'),
+        ('eq', None, 'G m_E = g r_E^2', '2'),
+        ('p', 'putting equation 2 in equation 1, we get', 'مساوات 2 کو مساوات 1 میں رکھنے سے ہمیں ملتا ہے', '2 معادله په 1 معادله کې ایښودلو سره لاسته راوړو'),
+        ('eq', 'phys9-u5-eq55', 'g_h = [[g r_E^2|(r_E + h)^2]]', '5.5'),
+        ('p', 'Equation 5.5 shows that as we move away from the center of earth the value of ‘g’ decreases. The change in the value of g is significant only at very large distances.', 'مساوات 5.5 ظاہر کرتی ہے کہ جیسے جیسے ہم زمین کے مرکز سے دور جاتے ہیں \'g\' کی قدر کم ہوتی ہے۔ g کی قدر میں تبدیلی صرف بہت زیادہ فاصلوں پر نمایاں ہوتی ہے۔', '5.5 معادله ښيي چې څومره چې د ځمکې له مرکز لرې کېږو، د \'g\' ارزښت کمېږي. د g په ارزښت کې بدلون یوازې په ډېرو لویو واټنونو کې د پام وړ وي.'),
+    ]),
+]

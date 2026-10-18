@@ -1,0 +1,24 @@
+@pdf 111
+@printed 103
+@status lesson
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m switch(expression)
+m {
+m         case const-1:
+m                 statements;
+m                 break;
+m         case const-2:
+m                 statements;
+m                 break;
+m         .
+m         .
+m         case const-n:
+m                 statements;
+m                 break;
+m         default:
+m         statements;
+m }
+### Explanation: || وضاحت: || تشریح:
+- In the above syntax, the **expression** appears within the *switch* statement. The **expression** is first evaluated and then the value returned by the expression is compared with the values of constants given in each case. If the value matches with constant value of a *case* then the **statements** of that case are executed. || اوپر والے سنٹیکس میں **expression** *switch* اسٹیٹمنٹ کے اندر آتا ہے۔ پہلے **expression** کی قدر معلوم کی جاتی ہے اور پھر اس کی واپس کی گئی قدر کا ہر کیس میں دی گئی کانسٹنٹ قدروں سے موازنہ ہوتا ہے۔ اگر قدر کسی *case* کی کانسٹنٹ قدر سے مل جائے تو اس کیس کی **statements** چلتی ہیں۔ || په پورتني syntax کې **expression** د *switch* بیان دننه راځي. لومړی **expression** ارزول کېږي او بیا یې راګرځېدلی ارزښت په هر case کې له ورکړل شویو ثابتو ارزښتونو سره پرتله کېږي. که ارزښت د کوم *case* له ثابت ارزښت سره سمون ولري، د هماغه case **statements** اجرا کېږي.
+- The **const-1, const-2**, etc. are numeric constants or character constants. || **const-1، const-2** وغیرہ عددی کانسٹنٹس یا حرفی کانسٹنٹس ہیں۔ || **const-1، const-2** او نور عددي یا توري ییز ثابتونه دي.
+- The ***break*** statement in each *case* is used to exit from *switch* body. It is used at the end of each *case* block. If *break* is not used, all *case* blocks that come after the matching *case*, will also be executed. || ہر *case* میں ***break*** اسٹیٹمنٹ *switch* کے جسم سے باہر نکلنے کے لیے استعمال ہوتی ہے۔ یہ ہر *case* بلاک کے آخر میں استعمال ہوتی ہے۔ اگر *break* استعمال نہ ہو تو مطابقت والے *case* کے بعد آنے والے تمام *case* بلاکس بھی چل جائیں گے۔ || په هر *case* کې ***break*** بیان د *switch* له بدنې وتلو لپاره کارېږي. د هر *case* بلاک په پای کې کارېږي. که *break* ونه کارول شي، له سمون لرونکي *case* وروسته ټول *case* بلاکونه هم اجرا کېږي.

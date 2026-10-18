@@ -1,0 +1,39 @@
+@printed 121
+@status lesson
+@sec 6-2-6 | 6.2.6 بولین ایکسپریشن کو لاجک سرکٹ میں تبدیل کرنا || 6.2.6 Converting a Boolean expression into a logic circuit || ۶.۲.۶ د بولین عبارت منطقي سرکټ ته اړول
+### 6.2.6 بولین ایکسپریشن کو لاجک سرکٹ میں تبدیل کرنا || 6.2.6 Converting a Boolean expression into a logic circuit || ۶.۲.۶ د بولین عبارت منطقي سرکټ ته اړول
+p ایک بولین ویری ایبل 0 یا 1 کی ویلیو لے سکتا ہے۔ ویری ایبل کی کسی بھی ویلیو کے لئے، بولین فنکشن 0 یا 1 ہو سکتا ہے۔ مندرجہ ذیل بولین فنکشن پر غور کریں۔ || A Boolean variable can take the value 0 or 1. For any value of the variables, a Boolean function can be 0 or 1. Consider the following Boolean function. || بولین متغیر د 0 یا 1 ارزښت اخیستلای شي. د متغیر د هر ارزښت لپاره بولین فنکشن 0 یا 1 کېدای شي. لاندې بولین فنکشن ته پام وکړئ.
+m F = X + Y
+p F = 0 ہو گا، اگر X = 0 اور Y = 0 ہے۔ X اور Y کے دیگر تمام امتزاج کے لئے، فنکشن 1 کے برابر ہو گا۔ || F = 0 if X = 0 and Y = 0. For all other combinations of X and Y the function equals 1. || F = 0 دی که X = 0 او Y = 0 وي. د X او Y د نورو ټولو ترکیبونو لپاره فنکشن له 1 سره برابر دی.
+p کوئی بھی بولین فنکشن الجبرا کی عبارت سے ایک لاجک سرکٹ میں تبدیل کیا جا سکتا ہے۔ یہ لاجک سرکٹ AND، OR اور NOT گیٹس پر مشتمل ہے۔ || Any Boolean function can be converted from an algebraic expression into a logic circuit. This logic circuit consists of AND, OR and NOT gates. || هر بولین فنکشن له الجبري عبارت څخه منطقي سرکټ ته اړول کېدای شي. دا منطقي سرکټ له AND، OR او NOT دروازو جوړ دی.
+### مثال نمبر 1: بولین فنکشن Y₁ = ABC̅ کو لاجک سرکٹ گیٹ میں تبدیل کرنا || Example 1: Converting the Boolean function Y₁ = ABC̅ into a logic circuit || بېلګه ۱: د Y₁ = ABC̅ بولین فنکشن منطقي سرکټ ته اړول
+p سنگل AND گیٹ کی اصطلاح کیلئے ضروری ہے Y₁ = ABC̅۔ AND گیٹ کو اِن پُٹ کرنے سے پہلے C کو C̅ میں تبدیل کرنے کے لیے ایک NOT گیٹ بھی درکار ہو گا۔ || A single AND gate is needed for the term Y₁ = ABC̅. A NOT gate is also needed to change C into C̅ before it is input to the AND gate. || د Y₁ = ABC̅ اصطلاح لپاره یوه AND دروازه اړینه ده. د AND دروازې ته له ورکولو مخکې د C په C̅ بدلولو لپاره یوه NOT دروازه هم اړینه ده.
+svg مثال 1 کا لاجک سرکٹ || Logic circuit of Example 1 || د ۱ بېلګې منطقي سرکټ
+<svg viewBox="0 0 440 200" width="440" role="img" aria-label="Inputs A and B go straight into a three-input AND gate; input C goes through a NOT gate to give C-bar, which is the third AND input; the output is Y1 = A B C-bar" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">
+<g stroke="#111827" stroke-width="2" fill="none"><path d="M60 40 H250 M60 80 H250"/><path d="M60 170 H90 M146 170 H200 V120 H250"/><path d="M340 80 H400"/></g>
+<text x="40" y="28">A</text><text x="40" y="100">B</text><text x="36" y="176">C</text>
+<path d="M90 145 L135 170 L90 195 Z" fill="#fff" stroke="#111827" stroke-width="2"/><circle cx="141" cy="170" r="6" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="160" y="160">C̅</text>
+<path d="M250 25 H295 A55 55 0 0 1 295 135 H250 Z" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="330" y="106">Y1=ABC̅</text>
+</svg>
+endsvg
+@issue The heading of Example 1 prints "Y₁ = ABC", but the explanation (a NOT gate to change C into C̄) and the figure both give Y₁ = ABC̄. The heading is corrected above to match.
+### مثال 2: بولین فنکشن Y₂ = A + B̅C لاجک سرکٹ میں تبدیل کرنا || Example 2: Converting the Boolean function Y₂ = A + B̅C into a logic circuit || بېلګه ۲: د Y₂ = A + B̅C بولین فنکشن منطقي سرکټ ته اړول
+p اس فنکشن کا لاجک سرکٹ بنانے کے لئے، B̅C اصطلاح کے لئے ایک AND گیٹ کی ضرورت ہوتی ہے، ایک NOT گیٹ چاہیے تاکہ B کو B̅ میں تبدیل کیا جا سکے۔ A اور B̅C پر عملدرآمد کروانے کے لئے OR گیٹ کی ضرورت ہے۔ اس فنکشن کا لاجک سرکٹ نیچے دکھایا گیا ہے۔ || To make the logic circuit of this function, an AND gate is needed for the term B̅C, and a NOT gate is needed to change B into B̅. An OR gate is needed to combine A and B̅C. The logic circuit of this function is shown below. || د دې فنکشن د منطقي سرکټ د جوړولو لپاره د B̅C اصطلاح لپاره یوه AND دروازه، او د B په B̅ بدلولو لپاره یوه NOT دروازه اړینه ده. د A او B̅C د یوځای کولو لپاره OR دروازه اړینه ده. د دې فنکشن منطقي سرکټ لاندې ښودل شوی.
+svg مثال 2 کا لاجک سرکٹ || Logic circuit of Example 2 || د ۲ بېلګې منطقي سرکټ
+<svg viewBox="0 0 460 200" width="460" role="img" aria-label="Input C goes into an AND gate; input B goes through a NOT gate to B-bar, the AND gate's other input; the AND output B-bar C and input A both enter an OR gate, whose output is Y2 = A + B-bar C" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">
+<g stroke="#111827" stroke-width="2" fill="none"><path d="M40 40 H170"/><path d="M30 150 H60 M116 150 H140 V100 H170"/><path d="M260 70 H330 M270 150 H330"/><path d="M405 110 H450"/></g>
+<text x="34" y="30">C</text><text x="10" y="156">B</text>
+<path d="M60 125 L105 150 L60 175 Z" fill="#fff" stroke="#111827" stroke-width="2"/><circle cx="111" cy="150" r="6" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="120" y="140">B̅</text>
+<path d="M170 25 H210 A45 45 0 0 1 210 115 H170 Z" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="268" y="62">B̅C</text><text x="276" y="172">A</text>
+<path d="M320 60 Q345 110 320 160 Q385 160 405 110 Q385 60 320 60 Z" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="376" y="48">Y₂=A+B̅C</text>
+</svg>
+endsvg
+@issue Example 2's heading prints "Y₂ = A+BC" and the figure label prints "Y₂ = AB̄C"; the text and the circuit (an OR of A with B̄C) give Y₂ = A + B̄C, which is used above.
+### مثال 3: بولین فنکشن Y₃ = AB̅ + A̅B کو لاجک سرکٹ میں تبدیل کرنا || Example 3: Converting the Boolean function Y₃ = AB̅ + A̅B into a logic circuit || بېلګه ۳: د Y₃ = AB̅ + A̅B بولین فنکشن منطقي سرکټ ته اړول
+p اس فنکشن کے لاجک سرکٹ میں دو AND گیٹس جو کہ AB̅ اور A̅B بنانے کے لیے، دو NOT گیٹس جو A کو A̅ اور B کو B̅ میں تبدیل کرنے اور ایک OR گیٹ جو کہ دونوں AND گیٹس کی آؤٹ پُٹ پر OR آپریشن کے لیے استعمال ہوں گے۔ جیسا کہ ذیل میں دکھایا گیا ہے۔ || The logic circuit of this function uses two AND gates to make AB̅ and A̅B, two NOT gates to change A into A̅ and B into B̅, and one OR gate to carry out the OR operation on the outputs of the two AND gates, as shown below. || د دې فنکشن په منطقي سرکټ کې د AB̅ او A̅B د جوړولو لپاره دوه AND دروازې، د A په A̅ او B په B̅ بدلولو لپاره دوه NOT دروازې، او د دواړو AND دروازو په outputs د OR عمل لپاره یوه OR دروازه کارېږي، لکه څنګه چې لاندې ښودل شوي.
+@issue Example 3's heading prints "Y₁" for the function; it is Y₃ by sequence.

@@ -1,0 +1,611 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s125-moments-4",
+  "title": "Example 3.17 (end) · Example 3.18: continuous series",
+  "headingUrdu": "مثال 3.17 (اختتام) · مثال 3.18: مسلسل سلسلہ",
+  "headingPashto": "بېلګه 3.17 (پای) · بېلګه 3.18: دوامداره لړۍ",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 125,
+    "printedPage": "117"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s125-t1",
+      "en": "Calculation of moments about mean in case of continuous series;",
+      "ur": "مسلسل سلسلے کی صورت میں اوسط کے گرد معیارِ اثر کا حساب؛",
+      "ps": "د دوامدارې لړۍ په حالت کې د اوسط شاوخوا د مومنټونو محاسبه؛"
+    },
+    {
+      "id": "stat11-s125-ex18",
+      "en": "Example: 3.18",
+      "ur": "مثال: 3.18",
+      "ps": "بېلګه: 3.18",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-18"
+    },
+    {
+      "id": "stat11-s125-q18",
+      "en": "Compute the first four moments about mean for the following data:",
+      "ur": "درج ذیل اعداد و شمار کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں:",
+      "ps": "د لاندې معلوماتو لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-18"
+    },
+    {
+      "id": "stat11-s125-sol18",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-18"
+    },
+    {
+      "id": "stat11-s125-nw",
+      "en": "Now",
+      "ur": "اب",
+      "ps": "اوس",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-18"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s125-t1",
+        "stat11-s125-ex18",
+        "stat11-s125-q18"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s125-sol18"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s125-nw"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s125-a",
+      "latex": "m_2=\\dfrac{\\sum f(x-\\bar{x})^2}{f}=\\dfrac{2350}{50}=47",
+      "accessible": "m2 = Σf(x − x̄)²/f = 2350/50 = 47",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = Σf(x − x̄)²/f = 2350/50 = 47"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = Σf(x − x̄)²/f = 2350/50 = 47"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = Σf(x − x̄)²/f = 2350/50 = 47"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s125-b",
+      "latex": "m_3=\\dfrac{\\sum f(x-\\bar{x})^3}{f}=\\dfrac{-5250}{50}=-105",
+      "accessible": "m3 = Σf(x − x̄)³/f = −5250/50 = −105",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = Σf(x − x̄)³/f = −5250/50 = −105"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = Σf(x − x̄)³/f = −5250/50 = −105"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = Σf(x − x̄)³/f = −5250/50 = −105"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s125-c",
+      "latex": "m_4=\\dfrac{\\sum f(x-\\bar{x})^4}{f}=\\dfrac{281050}{50}=5621",
+      "accessible": "m4 = Σf(x − x̄)⁴/f = 281050/50 = 5621",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = Σf(x − x̄)⁴/f = 281050/50 = 5621"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = Σf(x − x̄)⁴/f = 281050/50 = 5621"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = Σf(x − x̄)⁴/f = 281050/50 = 5621"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s125-d",
+      "latex": "\\bar{x}=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{175}{10}=17.5",
+      "accessible": "x̄ = Σfx/Σf = 175/10 = 17.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 175/10 = 17.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 175/10 = 17.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 175/10 = 17.5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-18"
+    },
+    {
+      "id": "stat11-s125-e",
+      "latex": "m_1=\\dfrac{\\sum f(x-\\bar{x})}{\\sum f}=\\dfrac{0}{10}=0\\qquad\\qquad m_2=\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}=\\dfrac{810}{10}=81",
+      "accessible": "m1 = Σf(x − x̄)/Σf = 0/10 = 0    m2 = Σf(x − x̄)²/Σf = 810/10 = 81",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = Σf(x − x̄)/Σf = 0/10 = 0    m2 = Σf(x − x̄)²/Σf = 810/10 = 81"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = Σf(x − x̄)/Σf = 0/10 = 0    m2 = Σf(x − x̄)²/Σf = 810/10 = 81"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = Σf(x − x̄)/Σf = 0/10 = 0    m2 = Σf(x − x̄)²/Σf = 810/10 = 81"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-18"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.18: classes and frequency",
+      "captionUrdu": "مثال 3.18: طبقات اور تعدد",
+      "captionPashto": "بېلګه 3.18: ټولګي او فریکونسي",
+      "headers": [
+        {
+          "en": "Classes:",
+          "ur": "طبقات:",
+          "ps": "ټولګي:"
+        },
+        {
+          "en": "0 – 9",
+          "ur": "0 – 9",
+          "ps": "0 – 9"
+        },
+        {
+          "en": "10 – 19",
+          "ur": "10 – 19",
+          "ps": "10 – 19"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-18"
+    },
+    {
+      "caption": "Example 3.18 solution table",
+      "captionUrdu": "مثال 3.18 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.18 د حل جدول",
+      "headers": [
+        {
+          "en": "Classes",
+          "ur": "طبقات",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "f(x − x̄)",
+          "ur": "f(x − x̄)",
+          "ps": "f(x − x̄)"
+        },
+        {
+          "en": "f(x − x̄)²",
+          "ur": "f(x − x̄)²",
+          "ps": "f(x − x̄)²"
+        },
+        {
+          "en": "f(x − x̄)³",
+          "ur": "f(x − x̄)³",
+          "ps": "f(x − x̄)³"
+        },
+        {
+          "en": "f(x − x̄)⁴",
+          "ur": "f(x − x̄)⁴",
+          "ps": "f(x − x̄)⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 – 9",
+            "ur": "0 – 9",
+            "ps": "0 – 9"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4.5",
+            "ur": "4.5",
+            "ps": "4.5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "-13",
+            "ur": "-13",
+            "ps": "-13"
+          },
+          {
+            "en": "-26",
+            "ur": "-26",
+            "ps": "-26"
+          },
+          {
+            "en": "338",
+            "ur": "338",
+            "ps": "338"
+          },
+          {
+            "en": "-4394",
+            "ur": "-4394",
+            "ps": "-4394"
+          },
+          {
+            "en": "57122",
+            "ur": "57122",
+            "ps": "57122"
+          }
+        ],
+        [
+          {
+            "en": "10 – 19",
+            "ur": "10 – 19",
+            "ps": "10 – 19"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "14.5",
+            "ur": "14.5",
+            "ps": "14.5"
+          },
+          {
+            "en": "58",
+            "ur": "58",
+            "ps": "58"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "-12",
+            "ur": "-12",
+            "ps": "-12"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          },
+          {
+            "en": "-108",
+            "ur": "-108",
+            "ps": "-108"
+          },
+          {
+            "en": "324",
+            "ur": "324",
+            "ps": "324"
+          }
+        ],
+        [
+          {
+            "en": "20 – 29",
+            "ur": "20 – 29",
+            "ps": "20 – 29"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "24.5",
+            "ur": "24.5",
+            "ps": "24.5"
+          },
+          {
+            "en": "73.5",
+            "ur": "73.5",
+            "ps": "73.5"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "147",
+            "ur": "147",
+            "ps": "147"
+          },
+          {
+            "en": "1029",
+            "ur": "1029",
+            "ps": "1029"
+          },
+          {
+            "en": "7203",
+            "ur": "7203",
+            "ps": "7203"
+          }
+        ],
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "34.5",
+            "ur": "34.5",
+            "ps": "34.5"
+          },
+          {
+            "en": "34.5",
+            "ur": "34.5",
+            "ps": "34.5"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "289",
+            "ur": "289",
+            "ps": "289"
+          },
+          {
+            "en": "4913",
+            "ur": "4913",
+            "ps": "4913"
+          },
+          {
+            "en": "83521",
+            "ur": "83521",
+            "ps": "83521"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "175",
+            "ur": "175",
+            "ps": "175"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "810",
+            "ur": "810",
+            "ps": "810"
+          },
+          {
+            "en": "1440",
+            "ur": "1440",
+            "ps": "1440"
+          },
+          {
+            "en": "148170",
+            "ur": "148170",
+            "ps": "148170"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-18"
+    }
+  ],
+  "sourceNote": "Printed page 117. The first three lines complete Example 3.17 (the printed 281050/50 = 5621 is kept). In the solution table of Example 3.18 the x entry of the total row is empty. m1 and m2 are printed side by side after the word \"Now\" and are kept as one equation. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:53:49.866616+00:00",
+    "scope": "Scan 125 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s133-moments-12",
+  "title": "Example 3.24: workings · 3.6.2 Sheppard's correction",
+  "headingUrdu": "مثال 3.24: حل · 3.6.2 شیپرڈ کی تصحیح",
+  "headingPashto": "بېلګه 3.24: حل · 3.6.2 د شیپرډ سمون",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 133,
+    "printedPage": "125"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s133-a2",
+      "en": "(ii) Mean moments:",
+      "ur": "(ii) اوسطی معیارِ اثر:",
+      "ps": "(ii) اوسط مومنټونه:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-h362",
+      "en": "3.6.2 Sheppard's correction",
+      "ur": "3.6.2 شیپرڈ کی تصحیح",
+      "ps": "3.6.2 د شیپرډ سمون",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s133-t362",
+      "en": "When summary statistics like mean, standard deviation and moments etc. are computed from a continuous grouped frequency distribution, the frequencies are allotted to the mid-points of the classes, which surely create error and need correction. This point was first noticed by W.F Sheppard and suggested the following corrected formulas known as Sheppard's correction. Note that first and",
+      "ur": "جب اوسط، معیاری انحراف اور معیارِ اثر وغیرہ جیسے خلاصی شماریات کسی مسلسل گروہی تعدد تقسیم سے حساب کیے جاتے ہیں تو تعدد کو طبقات کے وسطی نقطوں سے منسوب کیا جاتا ہے، جو یقیناً غلطی پیدا کرتا ہے اور تصحیح کا متقاضی ہے۔ یہ نکتہ سب سے پہلے ڈبلیو۔ایف۔ شیپرڈ نے محسوس کیا اور درج ذیل تصحیح شدہ فارمولے تجویز کیے جو شیپرڈ کی تصحیح کہلاتے ہیں۔ نوٹ کریں کہ پہلا اور",
+      "ps": "کله چې لنډیز احصایې لکه اوسط، معیاري انحراف او مومنټونه او نور له یوه دوامداره ګروپي فریکونسي ویش څخه محاسبه کېږي نو فریکونسي د ټولګیو منځنیو نقطو ته ورکول کېږي، چې یقیناً تېروتنه رامنځته کوي او سمون ته اړتیا لري. دا ټکی لومړی W.F Sheppard ولیدل او لاندې سمون شوي فورمولونه یې وړاندیز کړل چې د شیپرډ سمون بلل کېږي. پام وکړئ چې لومړی او",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"third mean moments need no correction.\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s133-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s133-h362",
+        "stat11-s133-t362"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "sheppard": {
+      "ur": "شیپرڈ",
+      "ps": "شیپرډ"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s133-r1",
+      "latex": "m_1'=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{490}{35}=14\\qquad\\qquad m_2'=\\dfrac{\\sum fx^2}{\\sum f}=\\dfrac{7970}{35}=227.71",
+      "accessible": "m′1 = Σfx/Σf = 490/35 = 14    m′2 = Σfx²/Σf = 7970/35 = 227.71",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 490/35 = 14    m′2 = Σfx²/Σf = 7970/35 = 227.71"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 490/35 = 14    m′2 = Σfx²/Σf = 7970/35 = 227.71"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′1 = Σfx/Σf = 490/35 = 14    m′2 = Σfx²/Σf = 7970/35 = 227.71"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-r3",
+      "latex": "m_3'=\\dfrac{\\sum fx^3}{\\sum f}=\\dfrac{141220}{35}=4034.86\\qquad\\qquad m_4'=\\dfrac{\\sum fx^4}{\\sum f}=\\dfrac{2652350}{35}=75781.43",
+      "accessible": "m′3 = Σfx³/Σf = 141220/35 = 4034.86    m′4 = Σfx⁴/Σf = 2652350/35 = 75781.43",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 141220/35 = 4034.86    m′4 = Σfx⁴/Σf = 2652350/35 = 75781.43"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 141220/35 = 4034.86    m′4 = Σfx⁴/Σf = 2652350/35 = 75781.43"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′3 = Σfx³/Σf = 141220/35 = 4034.86    m′4 = Σfx⁴/Σf = 2652350/35 = 75781.43"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m1",
+      "latex": "m_1=m_1'-m_1'=14-14=0",
+      "accessible": "m1 = m′1 − m′1 = 14 − 14 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 14 − 14 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 14 − 14 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 14 − 14 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m2",
+      "latex": "m_2=m_2'-(m_1')^2=227.71-(14)^2=227.71-196=31.71",
+      "accessible": "m2 = m′2 − (m′1)² = 227.71 − (14)² = 227.71 − 196 = 31.71",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 227.71 − (14)² = 227.71 − 196 = 31.71"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 227.71 − (14)² = 227.71 − 196 = 31.71"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 227.71 − (14)² = 227.71 − 196 = 31.71"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m3a",
+      "latex": "m_3=m_3'-3m_1'm_2'+2(m_1')^3",
+      "accessible": "m3 = m′3 − 3m′1m′2 + 2(m′1)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m3b",
+      "latex": "=4034.86-3(14)(227.71)+2(14)^3",
+      "accessible": "= 4034.86 − 3(14)(227.71) + 2(14)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 4034.86 − 3(14)(227.71) + 2(14)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 4034.86 − 3(14)(227.71) + 2(14)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 4034.86 − 3(14)(227.71) + 2(14)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m3c",
+      "latex": "=4034.86-9563.82+5488",
+      "accessible": "= 4034.86 − 9563.82 + 5488",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 4034.86 − 9563.82 + 5488"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 4034.86 − 9563.82 + 5488"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 4034.86 − 9563.82 + 5488"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m3d",
+      "latex": "=9522.86-9563.82=-40.96",
+      "accessible": "= 9522.86 − 9563.82 = −40.96",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 9522.86 − 9563.82 = −40.96"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 9522.86 − 9563.82 = −40.96"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 9522.86 − 9563.82 = −40.96"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m4b",
+      "latex": "=75781.86-4(14)(4034.86)+6(14)^2(227.71)-3(14)^4",
+      "accessible": "= 75781.86 − 4(14)(4034.86) + 6(14)²(227.71) − 3(14)⁴   [printed 75781.86; the next line has 75781.43]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 75781.86 − 4(14)(4034.86) + 6(14)²(227.71) − 3(14)⁴   [printed 75781.86; the next line has 75781.43]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 75781.86 − 4(14)(4034.86) + 6(14)²(227.71) − 3(14)⁴   [printed 75781.86; the next line has 75781.43]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 75781.86 − 4(14)(4034.86) + 6(14)²(227.71) − 3(14)⁴   [printed 75781.86; the next line has 75781.43]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m4c",
+      "latex": "=75781.43-225952.16+267786.96-115248",
+      "accessible": "= 75781.43 − 225952.16 + 267786.96 − 115248",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 75781.43 − 225952.16 + 267786.96 − 115248"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 75781.43 − 225952.16 + 267786.96 − 115248"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 75781.43 − 225952.16 + 267786.96 − 115248"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    },
+    {
+      "id": "stat11-s133-m4d",
+      "latex": "=343568.39-341200.16=2368.23",
+      "accessible": "= 343568.39 − 341200.16 = 2368.23",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 343568.39 − 341200.16 = 2368.23"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 343568.39 − 341200.16 = 2368.23"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 343568.39 − 341200.16 = 2368.23"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-24"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.24: moments about origin",
+      "captionUrdu": "مثال 3.24: مبدا کے گرد معیارِ اثر",
+      "captionPashto": "بېلګه 3.24: د اصل شاوخوا مومنټونه",
+      "headers": [
+        {
+          "en": "Group",
+          "ur": "گروہ",
+          "ps": "ډله"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "fx²",
+          "ur": "fx²",
+          "ps": "fx²"
+        },
+        {
+          "en": "fx³",
+          "ur": "fx³",
+          "ps": "fx³"
+        },
+        {
+          "en": "fx⁴",
+          "ur": "fx⁴",
+          "ps": "fx⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 – 4",
+            "ur": "0 – 4",
+            "ps": "0 – 4"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ],
+        [
+          {
+            "en": "5 – 9",
+            "ur": "5 – 9",
+            "ps": "5 – 9"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "245",
+            "ur": "245",
+            "ps": "245"
+          },
+          {
+            "en": "1715",
+            "ur": "1715",
+            "ps": "1715"
+          },
+          {
+            "en": "12005",
+            "ur": "12005",
+            "ps": "12005"
+          }
+        ],
+        [
+          {
+            "en": "10 – 14",
+            "ur": "10 – 14",
+            "ps": "10 – 14"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "144",
+            "ur": "144",
+            "ps": "144"
+          },
+          {
+            "en": "1728",
+            "ur": "1728",
+            "ps": "1728"
+          },
+          {
+            "en": "20736",
+            "ur": "20736",
+            "ps": "20736"
+          },
+          {
+            "en": "248832",
+            "ur": "248832",
+            "ps": "248832"
+          }
+        ],
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "153",
+            "ur": "153",
+            "ps": "153"
+          },
+          {
+            "en": "2601",
+            "ur": "2601",
+            "ps": "2601"
+          },
+          {
+            "en": "44217",
+            "ur": "44217",
+            "ps": "44217"
+          },
+          {
+            "en": "751689",
+            "ur": "751689",
+            "ps": "751689"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "154",
+            "ur": "154",
+            "ps": "154"
+          },
+          {
+            "en": "3388",
+            "ur": "3388",
+            "ps": "3388"
+          },
+          {
+            "en": "74536",
+            "ur": "74536",
+            "ps": "74536"
+          },
+          {
+            "en": "1639792",
+            "ur": "1639792",
+            "ps": "1639792"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "490",
+            "ur": "490",
+            "ps": "490"
+          },
+          {
+            "en": "7970",
+            "ur": "7970",
+            "ps": "7970"
+          },
+          {
+            "en": "141220",
+            "ur": "141220",
+            "ps": "141220"
+          },
+          {
+            "en": "2652350",
+            "ur": "2652350",
+            "ps": "2652350"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-24"
+    }
+  ],
+  "sourceNote": "Printed page 125. The table of Example 3.24 (continuing from the previous page) is at the top of the page. The raw moments are printed in two side-by-side pairs, each kept as one equation. The \"m3\" result −40.96 and \"m4\" result 2368.23 are as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:56:28.881581+00:00",
+    "scope": "Scan 133 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

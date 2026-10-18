@@ -1,0 +1,131 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s293-p284",
+  "title": "Types of queries (list); a. Select Query; b. Update Query — start",
+  "headingUrdu": "کوئریز کی اقسام (فہرست)؛ الف۔ سلیکٹ کوئری؛ ب۔ اپ ڈیٹ کوئری — آغاز",
+  "headingPashto": "د پوښتنو ډولونه (لیست)؛ الف. د Select پوښتنه؛ ب. د Update پوښتنه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 293,
+    "printedPage": "284"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s293-t1",
+      "en": "Select",
+      "ur": "سلیکٹ",
+      "ps": "Select (ټاکل)",
+      "listGroup": "qt"
+    },
+    {
+      "id": "cs11-s293-t2",
+      "en": "Update",
+      "ur": "اپ ڈیٹ",
+      "ps": "Update (تازه کول)",
+      "listGroup": "qt"
+    },
+    {
+      "id": "cs11-s293-t3",
+      "en": "Delete",
+      "ur": "ڈیلیٹ",
+      "ps": "Delete (حذف)",
+      "listGroup": "qt"
+    },
+    {
+      "id": "cs11-s293-h1",
+      "en": "a. Select Query",
+      "ur": "الف۔ سلیکٹ کوئری",
+      "ps": "الف. د Select پوښتنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s293-a",
+      "en": "A select query is a type of database object that shows information in Datasheet view. A query can get its data from one or more tables, from existing queries, or from a combination of the two. The tables or queries from which a query gets its data are referred to as its record-source.",
+      "ur": "سلیکٹ کوئری ڈیٹا بیس آبجیکٹ کی ایک قسم ہے جو ڈیٹا شیٹ ویو میں معلومات دکھاتی ہے۔ کوئری اپنا ڈیٹا ایک یا زیادہ ٹیبلز، موجودہ کوئریز یا ان دونوں کے امتزاج سے حاصل کر سکتی ہے۔ وہ ٹیبلز یا کوئریز جن سے کوئری اپنا ڈیٹا حاصل کرتی ہے اس کا ریکارڈ سورس کہلاتے ہیں۔",
+      "ps": "د Select پوښتنه د ډېټابېس د څیز یو ډول دی چې په ډېټا شیټ لید کې معلومات ښيي. پوښتنه کولای شي خپله ډېټا له یو یا ډیرو جدولونو، موجودو پوښتنو، یا د دواړو له ګډون نه ترلاسه کړي. هغه جدولونه یا پوښتنې چې پوښتنه ترې خپله ډېټا اخلي د هغې د ثبت سرچینې په توګه یادېږي."
+    },
+    {
+      "id": "cs11-s293-h2",
+      "en": "Basic steps to create a select query:",
+      "ur": "سلیکٹ کوئری بنانے کے بنیادی اقدامات:",
+      "ps": "د Select پوښتنې د جوړولو بنسټیز ګامونه:",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s293-b",
+      "en": "User can create a select query by using the Query Wizard or by working in Design view. Some design elements are not available when users use the wizard, but user can add these elements later by using Design view. Although the two methods are somewhat different from each other, the basic steps are essentially the same.",
+      "ur": "صارف سلیکٹ کوئری کوئری ویزرڈ استعمال کر کے یا ڈیزائن ویو میں کام کر کے بنا سکتا ہے۔ ویزرڈ استعمال کرتے وقت کچھ ڈیزائن عناصر دستیاب نہیں ہوتے لیکن صارف انہیں بعد میں ڈیزائن ویو کے ذریعے شامل کر سکتا ہے۔ اگرچہ دونوں طریقے ایک دوسرے سے کچھ مختلف ہیں، بنیادی اقدامات بنیادی طور پر ایک جیسے ہیں۔",
+      "ps": "کاروونکی کولای شي د Select پوښتنه د Query Wizard په کارولو یا په ډیزاین لید کې د کار کولو په واسطه جوړه کړي. کله چې کاروونکي مرستندوی کاروي نو ځینې ډیزاین عناصر شته نه وي، خو کاروونکی کولای شي دا عناصر وروسته د ډیزاین لید په کارولو زیات کړي. که څه هم دواړه لارې یو له بل نه یو څه توپیر لري، بنسټیز ګامونه په اصل کې ورته دي."
+    },
+    {
+      "id": "cs11-s293-s1",
+      "en": "Choose the tables or queries that to use as sources of data.",
+      "ur": "وہ ٹیبلز یا کوئریز منتخب کریں جنہیں ڈیٹا کے ماخذ کے طور پر استعمال کرنا ہو۔",
+      "ps": "هغه جدولونه یا پوښتنې وټاکئ چې د ډېټا د سرچینو په توګه کارول کېږي.",
+      "listGroup": "sb"
+    },
+    {
+      "id": "cs11-s293-s2",
+      "en": "Specify the fields that user wants to include from the data sources.",
+      "ur": "وہ فیلڈز متعین کریں جنہیں صارف ڈیٹا ماخذ سے شامل کرنا چاہتا ہے۔",
+      "ps": "هغه ساحې وټاکئ چې کاروونکی یې له ډېټا سرچینو نه شاملول غواړي.",
+      "listGroup": "sb"
+    },
+    {
+      "id": "cs11-s293-s3",
+      "en": "Optionally, specify criteria to limit the records that the query returns.",
+      "ur": "اختیاری طور پر ان ریکارڈز کو محدود کرنے کے لیے معیار متعین کریں جو کوئری واپس کرتی ہے۔",
+      "ps": "اختیاري توګه، د هغو ثبتونو د محدودولو لپاره معیار وټاکئ چې پوښتنه یې بېرته ورکوي.",
+      "listGroup": "sb"
+    },
+    {
+      "id": "cs11-s293-s4",
+      "en": "After user has created a select query, it can be run to see the results.",
+      "ur": "سلیکٹ کوئری بنانے کے بعد نتائج دیکھنے کے لیے اسے چلایا جا سکتا ہے۔",
+      "ps": "وروسته له دې چې کاروونکي د Select پوښتنه جوړه کړه، دا د پایلو د کتلو لپاره چلېدای شي.",
+      "listGroup": "sb"
+    },
+    {
+      "id": "cs11-s293-h3",
+      "en": "b. Update Query",
+      "ur": "ب۔ اپ ڈیٹ کوئری",
+      "ps": "ب. د Update پوښتنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s293-c",
+      "en": "An Update Query is an action query (SQL statement) that changes a set of records according to criteria (search conditions) user specify. It is a very powerful feature and a fundamental part of relational databases since the user can modify a huge number of records at one time. Understanding and using Update Queries improves the performance of applications (versus doing the same changes manually or in code), and makes them easier to maintain.",
+      "ur": "اپ ڈیٹ کوئری ایک ایکشن کوئری (ایس کیو ایل اسٹیٹمنٹ) ہے جو صارف کے متعین کردہ معیار (تلاش کی شرائط) کے مطابق ریکارڈز کے ایک مجموعے کو تبدیل کرتی ہے۔ یہ ایک بہت طاقتور خصوصیت اور ریلیشنل ڈیٹا بیسز کا بنیادی حصہ ہے کیونکہ صارف ایک وقت میں بہت بڑی تعداد میں ریکارڈز میں ترمیم کر سکتا ہے۔ اپ ڈیٹ کوئریز کو سمجھنا اور استعمال کرنا ایپلیکیشنز کی کارکردگی بہتر بناتا ہے (بمقابلہ وہی تبدیلیاں ہاتھ سے یا کوڈ میں کرنے کے) اور انہیں برقرار رکھنا آسان بناتا ہے۔",
+      "ps": "د Update پوښتنه یوه کړنې پوښتنه (SQL بیان) ده چې د ثبتونو یوه ټولګه د هغه معیار (د لټون شرطونو) سره سم بدلوي چې کاروونکی یې ټاکي. دا یوه ډیره پیاوړې ځانګړتیا او د اړوندو ډېټابېسونو بنسټیزه برخه ده ځکه چې کاروونکی کولای شي په یو وخت کې ډیر لوی شمېر ثبتونه تعدیل کړي. د Update پوښتنو پوهېدل او کارول د اپلېکېشنونو فعالیت ښه کوي (د همدغو بدلونونو لاسي یا په کوډ کې د کولو په پرتله) او ساتنه یې اسانوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s293-t1",
+        "cs11-s293-t2",
+        "cs11-s293-t3",
+        "cs11-s293-h1",
+        "cs11-s293-a",
+        "cs11-s293-h2",
+        "cs11-s293-b",
+        "cs11-s293-s1",
+        "cs11-s293-s2",
+        "cs11-s293-s3",
+        "cs11-s293-s4",
+        "cs11-s293-h3",
+        "cs11-s293-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 284: the list of three query types (Select, Update, Delete), “a. Select Query” with its paragraph and “Basic steps to create a select query:” with its paragraph and four steps, and “b. Update Query” with its paragraph (the figure follows on the next page). The right edge of the page is cut. The words Query Wizard and Design view are printed in bold. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:09:59.920078+00:00",
+    "scope": "Scan 293 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

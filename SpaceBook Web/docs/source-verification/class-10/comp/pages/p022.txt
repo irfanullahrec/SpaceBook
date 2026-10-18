@@ -1,0 +1,38 @@
+@printed 12
+@status lesson
+@deco A previous owner has handwritten "Array" near the top and overwritten "Step 5" in Problem 17; the handwriting is not book content.
+m Step 1.  Read n1, n2
+m Step 2.  Set EVEN=n1
+m Step 3.  Repeat Steps 4 and 5 while EVEN<= n2
+m Step 4.  Write EVEN
+m Step 5.  Set EVEN=EVEN +2
+m          [End of while loop]
+m Step 6.  Exit
+p **مسئلہ نمبر 17:** اعداد کی دو علیحدہ فہرستوں میں موجود نمبروں کو جمع کرنا۔ || **Problem 17:** Add the numbers in two separate lists of numbers. || **۱۷ ستونزه:** د عددونو په دوو جلا لېستونو کې شته شمېرې جمع کړئ.
+p الگورتھم: یہ الگورتھم دو فہرستوں L1[n] اور L2[n] میں موجود متعلقہ اعداد کو بالترتیب جمع کر کے ایک تیسری فہرست L3[n] میں رکھتا ہے۔ || Algorithm: this algorithm adds the corresponding numbers in two lists L1[n] and L2[n] in order and stores them in a third list L3[n]. || الګوریتم: دا الګوریتم د دوو لېستونو L1[n] او L2[n] اړوند عددونه په ترتیب جمع کوي او په درېیم لېست L3[n] کې یې ږدي.
+m Step 1.  Read L1[n], L2[n]
+m Step 2.  Set I=1 [Initialize counter.]
+m Step 3.  Repeat Steps 4 and 5 while I<= n
+m Step 4.  Set L3[I]=L1[I]+L2[I]
+m Step 5.  Set I=I+1 [Increment counter.]
+m          [End of while loop]
+m Step 6.  Exit
+p **مسئلہ نمبر 18:** دو اعداد کا عادِ اعظم (GCD) معلوم کرنا۔ || **Problem 18:** Find the greatest common divisor (GCD) of two numbers. || **۱۸ ستونزه:** د دوو عددونو تر ټولو لوی ګډ وېشونکی (GCD) معلوم کړئ.
+p الگورتھم: یہ الگورتھم دیئے گئے دو اعداد M اور N کا عادِ اعظم (GCD) معلوم کرتا ہے۔ || Algorithm: this algorithm finds the GCD of two given numbers M and N. || الګوریتم: دا الګوریتم د دوو ورکړل شویو عددونو M او N تر ټولو لوی ګډ وېشونکی (GCD) معلوموي.
+m Step 1.  Read M, N
+m Step 2.  If N=0, Go to Step 5; otherwise, Proceed to Step 3
+m Step 3.  Divide M by N and assign the value of the remainder to R
+m Step 4.  Assign the value of N to M and the value of R to N and go to Step 2
+m Step 5.  Write M
+m Step 6.  Exit
+p **مسئلہ نمبر 19:** معلوم کرنا کہ ایک دیا گیا عدد مفرد عدد (Prime Number) ہے یا نہیں۔ || **Problem 19:** Find whether a given number is a prime number or not. || **۱۹ ستونزه:** معلوم کړئ چې یو ورکړل شوی عدد اولي عدد (Prime Number) دی که نه.
+p الگورتھم: یہ الگورتھم معلوم کرے گا کہ ایک دیا گیا عدد NUM مفرد عدد (Prime Number) ہے یا نہیں۔ || Algorithm: this algorithm will find whether a given number NUM is a prime number or not. || الګوریتم: دا الګوریتم به معلوم کړي چې ورکړل شوی عدد NUM اولي عدد دی که نه.
+m Step 1.  Read NUM
+m Step 2.  Set i=2 [Initialize counter]
+m Step 3.  Repeat step 4 and 5 while i<=NUM/2
+m Step 4.  If NUM%i=0 Then Write 'Not a prime number' and go to Step 7
+m Step 5.  Set i=i+1 [Increment counter.]
+m          [End of while loop]
+m Step 6.  If i=NUM/2, Then Write 'Prime number'
+m Step 7.  Exit
+@issue Printed logic error in Problem 19: after the loop ends, i equals NUM/2 + 1 (not NUM/2), so Step 6's condition "If i=NUM/2" would not print "Prime number"; it should simply write "Prime number" once the loop finishes (or test i > NUM/2). Kept as printed.

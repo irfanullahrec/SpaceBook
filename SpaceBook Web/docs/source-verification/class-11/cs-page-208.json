@@ -1,0 +1,114 @@
+{
+  "chapter": "cs11-u6",
+  "id": "cs11-s208-p199",
+  "title": "vi. Human interface with device; 6.4.3 Architecture for Communication over Mobile Devices; a. Web Protocol Stack — start",
+  "headingUrdu": "vi۔ آلے کے ساتھ انسانی انٹرفیس؛ ۶.۴.۳ موبائل آلات پر مواصلات کا آرکیٹیکچر؛ الف۔ ویب پروٹوکول اسٹیک — آغاز",
+  "headingPashto": "vi. د وسیلې سره انساني انټرفیس؛ ۶.۴.۳ د ګرځنده وسایلو پر اړیکو جوړښت؛ الف. د ویب پروتوکول ټولګه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 208,
+    "printedPage": "199"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s208-h1",
+      "en": "vi. Human interface with device",
+      "ur": "vi۔ آلے کے ساتھ انسانی انٹرفیس",
+      "ps": "vi. د وسیلې سره انساني انټرفیس",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s208-a",
+      "en": "Screens and keyboards tend to be small, which may make them harder to use. Alternate input methods such as speech or handwriting recognition require training.",
+      "ur": "اسکرینیں اور کی بورڈ چھوٹے ہوتے ہیں جس سے انہیں استعمال کرنا مشکل ہو سکتا ہے۔ متبادل ان پٹ طریقے جیسے آواز یا ہاتھ کی لکھائی کی شناخت کو تربیت درکار ہوتی ہے۔",
+      "ps": "سکرینونه او کیبورډونه کوچني وي چې کېدای شي د کارولو لپاره یې سخت کړي. بدیل دخل طریقې لکه وینا یا د لاسي لیکنې پېژندنه روزنې ته اړتیا لري."
+    },
+    {
+      "id": "cs11-s208-h2",
+      "en": "6.4.3 Architecture for Communication over Mobile Devices",
+      "ur": "۶.۴.۳ موبائل آلات پر مواصلات کا آرکیٹیکچر",
+      "ps": "۶.۴.۳ د ګرځنده وسایلو پر اړیکو جوړښت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s208-b",
+      "en": "The Mobile Device Communication Architecture encompasses the aggregate of all wireless data communication capabilities. These include:",
+      "ur": "موبائل آلات کے مواصلاتی آرکیٹیکچر میں تمام وائرلیس ڈیٹا مواصلاتی صلاحیتوں کا مجموعہ شامل ہے۔ ان میں شامل ہیں:",
+      "ps": "د ګرځنده وسایلو د اړیکو جوړښت د ټولو بې سیمو ډېټا اړیکو وړتیاوو ټولګه پوښي. دا شاملوي:"
+    },
+    {
+      "id": "cs11-s208-t1",
+      "en": "Web Protocol Stack",
+      "ur": "ویب پروٹوکول اسٹیک",
+      "ps": "د ویب پروتوکول ټولګه",
+      "listGroup": "arch"
+    },
+    {
+      "id": "cs11-s208-t2",
+      "en": "Wireless Markup Language (WML)",
+      "ur": "وائرلیس مارک اپ لینگویج (ڈبلیو ایم ایل)",
+      "ps": "بې سیمه نښه کولو ژبه (WML)",
+      "listGroup": "arch"
+    },
+    {
+      "id": "cs11-s208-t3",
+      "en": "Wireless Application Protocol (WAP)",
+      "ur": "وائرلیس ایپلیکیشن پروٹوکول (ڈبلیو اے پی)",
+      "ps": "بې سیمه اپلېکېشن پروتوکول (WAP)",
+      "listGroup": "arch"
+    },
+    {
+      "id": "cs11-s208-h3",
+      "en": "a. Web Protocol Stack",
+      "ur": "الف۔ ویب پروٹوکول اسٹیک",
+      "ps": "الف. د ویب پروتوکول ټولګه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s208-c",
+      "en": "A web service protocol stack is a protocol stack that is used to define, locate, implement, and make Web services to interact with each other. A Web service protocol stack includes the following four protocols.",
+      "ur": "ویب سروس پروٹوکول اسٹیک ایسا پروٹوکول اسٹیک ہے جو ویب سروسز کو متعین کرنے، تلاش کرنے، نافذ کرنے اور ایک دوسرے سے تعامل کرانے کے لیے استعمال ہوتا ہے۔ ویب سروس پروٹوکول اسٹیک میں درج ذیل چار پروٹوکول شامل ہیں۔",
+      "ps": "د ویب خدمت پروتوکول ټولګه یوه پروتوکول ټولګه ده چې د ویب خدمتونو د تعریف، موندلو، پلي کولو او یو له بل سره د متقابل عمل کولو لپاره کارول کېږي. د ویب خدمت پروتوکول ټولګه لاندې څلور پروتوکولونه شاملوي."
+    },
+    {
+      "id": "cs11-s208-h4",
+      "en": "i. Transport Protocol",
+      "ur": "i۔ ٹرانسپورٹ پروٹوکول",
+      "ps": "i. د لېږد پروتوکول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s208-d",
+      "en": "It is responsible for transporting messages between network applications and includes protocols such as HTTP (Hypertext Transfer Protocol), SMTP (Simple Mail Transfer Protocol), FTP (File Transfer Protocol), as well as the more recent Blocks Extensible Exchange Protocol (BEEP).",
+      "ur": "یہ نیٹ ورک ایپلیکیشنز کے درمیان پیغامات کی ترسیل کا ذمہ دار ہے اور اس میں ایچ ٹی ٹی پی (ہائپر ٹیکسٹ ٹرانسفر پروٹوکول)، ایس ایم ٹی پی (سمپل میل ٹرانسفر پروٹوکول)، ایف ٹی پی (فائل ٹرانسفر پروٹوکول)، نیز حالیہ بلاکس ایکسٹینسیبل ایکسچینج پروٹوکول (بی ای ای پی) جیسے پروٹوکولز شامل ہیں۔",
+      "ps": "دا د شبکې اپلېکېشنونو ترمنځ د پیغامونو لېږد مسؤل دی او پروتوکولونه لکه HTTP (هایپر ټېکسټ لېږد پروتوکول)، SMTP (ساده ټپال لېږد پروتوکول)، FTP (د فایل لېږد پروتوکول)، او همداراز نوی بلاکس ایکسټېنسېبل ایکسچینج پروتوکول (BEEP) شاملوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s208-h1",
+        "cs11-s208-a",
+        "cs11-s208-h2",
+        "cs11-s208-b",
+        "cs11-s208-t1",
+        "cs11-s208-t2",
+        "cs11-s208-t3",
+        "cs11-s208-h3",
+        "cs11-s208-c",
+        "cs11-s208-h4",
+        "cs11-s208-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 199: “vi. Human interface with device” (the last limitation), the banner “6.4.3 Architecture for Communication over Mobile Devices” with its lead-in sentence and the list a–c, “a. Web Protocol Stack” and “i. Transport Protocol”. In the print the words “Blocks Extensible” are spread over the line and the page is given in reading order. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:37:42.510033+00:00",
+    "scope": "Scan 208 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

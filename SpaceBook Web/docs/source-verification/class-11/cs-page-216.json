@@ -1,0 +1,165 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s216-u7open",
+  "title": "Unit 7: Database Fundamentals — objectives",
+  "headingUrdu": "یونٹ ۷: ڈیٹا بیس کے بنیادی اصول — مقاصد",
+  "headingPashto": "۷ واحد: د ډېټابېس بنسټیز اصول — موخې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 216,
+    "printedPage": "207"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s216-h",
+      "en": "UNIT 7 DATABASE FUNDAMENTALS",
+      "ur": "یونٹ ۷ ڈیٹا بیس کے بنیادی اصول",
+      "ps": "۷ واحد د ډېټابېس بنسټیز اصول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s216-i",
+      "en": "After the completion of Unit - 7, the Students will be able to:",
+      "ur": "یونٹ ۷ مکمل کرنے کے بعد طلبہ اس قابل ہو جائیں گے کہ:",
+      "ps": "د ۷ واحد له بشپړېدو وروسته به زده کوونکي دې ته وړ شي چې:"
+    },
+    {
+      "id": "cs11-s216-o1",
+      "en": "explain the difference between data and information.",
+      "ur": "ڈیٹا اور معلومات کے درمیان فرق بیان کر سکیں۔",
+      "ps": "د ډېټا او معلوماتو ترمنځ توپیر تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o2",
+      "en": "explain the file management system.",
+      "ur": "فائل مینجمنٹ سسٹم کی وضاحت کر سکیں۔",
+      "ps": "د فایل مدیریت سیسټم تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o3",
+      "en": "define Database.",
+      "ur": "ڈیٹا بیس کی تعریف کر سکیں۔",
+      "ps": "ډېټابېس تعریف کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o4",
+      "en": "explain Database Management System (DBMS).",
+      "ur": "ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس) کی وضاحت کر سکیں۔",
+      "ps": "د ډېټابېس مدیریت سیسټم (DBMS) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o5",
+      "en": "identify advantages of DBMS over the File Management System.",
+      "ur": "فائل مینجمنٹ سسٹم کے مقابلے میں ڈی بی ایم ایس کے فوائد کی نشاندہی کر سکیں۔",
+      "ps": "د فایل مدیریت سیسټم په پرتله د DBMS ګټې وپېژني.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o6",
+      "en": "identify the role of Database Administrator (DBA).",
+      "ur": "ڈیٹا بیس ایڈمنسٹریٹر (ڈی بی اے) کے کردار کی نشاندہی کر سکیں۔",
+      "ps": "د ډېټابېس اداره کوونکي (DBA) رول وپېژني.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o7",
+      "en": "describe the types of Database Models.",
+      "ur": "ڈیٹا بیس ماڈلز کی اقسام بیان کر سکیں۔",
+      "ps": "د ډېټابېس ماډلونو ډولونه بیان کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o8",
+      "en": "explain the types of database languages for relational databases.",
+      "ur": "ریلیشنل ڈیٹا بیسز کے لیے ڈیٹا بیس زبانوں کی اقسام بیان کر سکیں۔",
+      "ps": "د اړوندو ډېټابېسونو لپاره د ډېټابېس ژبو ډولونه تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o9",
+      "en": "define the basic database terminologies (Field/Attribute/Column, Record/Tuple/Row, Table/Relation, View, Data Type, Key).",
+      "ur": "ڈیٹا بیس کی بنیادی اصطلاحات (فیلڈ/ایٹریبیوٹ/کالم، ریکارڈ/ٹپل/رو، ٹیبل/ریلیشن، ویو، ڈیٹا ٹائپ، کی) کی تعریف کر سکیں۔",
+      "ps": "د ډېټابېس بنسټیز اصطلاحات (ساحه/خاصیت/ستون، ثبت/ټپل/قطار، جدول/اړیکه، لید، د ډېټا ډول، کیلي) تعریف کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o10",
+      "en": "explain the steps for designing a database.",
+      "ur": "ڈیٹا بیس ڈیزائن کرنے کے مراحل بیان کر سکیں۔",
+      "ps": "د ډېټابېس د ډیزاین کولو ګامونه تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o11",
+      "en": "explain with examples (Entity, attributes, relationships, keys).",
+      "ur": "مثالوں کے ساتھ وضاحت کر سکیں (انٹیٹی، ایٹریبیوٹس، تعلقات، کیز)۔",
+      "ps": "په بېلګو سره تشریح کړي (وجود، خاصیتونه، اړیکې، کیلي).",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o12",
+      "en": "explain the cardinalities and modalities with the help of pictorial examples.",
+      "ur": "تصویری مثالوں کی مدد سے کارڈینالٹیز اور موڈیلٹیز کی وضاحت کر سکیں۔",
+      "ps": "د انځوریزو بېلګو په مرسته کارډینالټي او موډالټي تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o13",
+      "en": "draw Entity-Relationship (E-R) diagram for library management system, student management system, ticket booking system.",
+      "ur": "لائبریری مینجمنٹ سسٹم، اسٹوڈنٹ مینجمنٹ سسٹم اور ٹکٹ بکنگ سسٹم کے لیے انٹیٹی-ریلیشن شپ (ای-آر) ڈایاگرام بنا سکیں۔",
+      "ps": "د کتابتون مدیریت سیسټم، د زده کوونکو مدیریت سیسټم او د ټکټ بکینګ سیسټم لپاره د وجود-اړیکې (E-R) انځور جوړ کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o14",
+      "en": "transform the E-R diagram to the Relational schema (Transforming entities, transforming attributes, transforming relationships).",
+      "ur": "ای-آر ڈایاگرام کو ریلیشنل اسکیمے میں تبدیل کر سکیں (انٹیٹیز، ایٹریبیوٹس اور تعلقات کی تبدیلی)۔",
+      "ps": "د E-R انځور اړوندې طرحې ته بدل کړي (د وجودونو، خاصیتونو او اړیکو بدلول).",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s216-o15",
+      "en": "normalize relations up to third normal form including integrity rules.",
+      "ur": "سالمیت کے قواعد سمیت تیسرے نارمل فارم تک ریلیشنز کو نارملائز کر سکیں۔",
+      "ps": "د بشپړتیا قواعدو په ګډون تر دریم نورمال بڼې پورې اړیکې نورمال کړي.",
+      "listGroup": "obj"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s216-h",
+        "cs11-s216-i",
+        "cs11-s216-o1",
+        "cs11-s216-o2",
+        "cs11-s216-o3",
+        "cs11-s216-o4",
+        "cs11-s216-o5",
+        "cs11-s216-o6",
+        "cs11-s216-o7",
+        "cs11-s216-o8",
+        "cs11-s216-o9",
+        "cs11-s216-o10",
+        "cs11-s216-o11",
+        "cs11-s216-o12",
+        "cs11-s216-o13",
+        "cs11-s216-o14",
+        "cs11-s216-o15"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 207: the unit opener — a pink circle with “UNIT 7”, the title “DATABASE FUNDAMENTALS” over a photograph of laptops (not reproduced) and the box “After the completion of Unit - 7, the Students will be able to:” with fifteen objectives. Photographs are not reproduced. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:41:02.512164+00:00",
+    "scope": "Scan 216 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

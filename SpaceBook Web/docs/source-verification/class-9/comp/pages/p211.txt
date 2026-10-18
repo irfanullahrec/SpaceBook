@@ -1,0 +1,17 @@
+@pdf 210
+@printed 203
+@status lesson
+p ***width* attribute:** This attribute is inserted in the <img> tag to specify the width of the image in pixels. This can be different than the real width of the image. The browser resizes the width of the image as specified in the <img> tag. || ***width* خصوصیت:** یہ <img> ٹیگ میں تصویر کی چوڑائی پکسلز میں بتانے کے لیے لگائی جاتی ہے۔ یہ اصل چوڑائی سے مختلف ہو سکتی ہے۔ براؤزر <img> ٹیگ کے مطابق چوڑائی بدل دیتا ہے۔ || ***width* attribute:** په <img> کې د انځور پلنوالی په پکسل ټاکي. له اصلي پلنوالي توپیر کولی شي. براوزر یې د <img> سره سم بدلوي.
+### alt attribute: || alt خصوصیت: || alt attribute:
+p The *alt* attribute is an HTML attribute for a text that describes an image. The ALT attribute is placed directly in the image tag. If an image cannot be displayed for some reason, the ALT attribute provides alternative text to display instead of the image. It is also useful to provide an alternative text for users and specifically for visually impaired users who have websites read to them by reader programs. || *alt* خصوصیت تصویر کو بیان کرنے والے متن کے لیے HTML خصوصیت ہے۔ ALT خصوصیت براہِ راست امیج ٹیگ میں رکھی جاتی ہے۔ اگر کسی وجہ سے تصویر نہ دکھائی جا سکے تو ALT خصوصیت تصویر کی جگہ متبادل متن دکھاتی ہے۔ یہ صارفین اور خاص طور پر بصارت سے محروم صارفین کے لیے بھی مفید ہے جنہیں ریڈر پروگرام ویب سائٹس پڑھ کر سناتے ہیں۔ || *alt* attribute د انځور تشریح کوونکي متن لپاره HTML attribute دی. ALT مستقیم په image tag کې ږدل کېږي. که انځور ونه ښودل شي، ALT د انځور پر ځای بدیل متن ښيي. دا د نابینا کاروونکو لپاره هم ګټور دی چې reader پروګرامونه ورته وېب سایټونه لولي.
+p The HTML document in Figure 7.38, demonstrates the use of *height, width* and *alt* attributes in <img> tag to resize an image in web page. || شکل 7.38 کی HTML دستاویز ویب پیج میں تصویر کا سائز بدلنے کے لیے <img> ٹیگ میں *height، width* اور *alt* کا استعمال دکھاتی ہے۔ || د ۷.۳۸ شکل HTML سند د انځور د اندازې بدلولو لپاره د *height، width* او *alt* کارونه ښيي.
+m <html>
+m <head>
+m <title> Specifying Image Size</title>
+m </head>
+m <body>
+m <Img src="image.jpg" width=200 height=150 alt="Image of Faisal Mosque">
+m </body>
+m </html>
+p (Figure 7.38: Resizing an image in HTML document — "Resizing Image.html" in Notepad++.) || (شکل 7.38: HTML دستاویز میں تصویر کا سائز بدلنا۔) || (۷.۳۸ شکل: په HTML سند کې د انځور اندازه بدلول.)
+p The browser window will display it as shown in Figure 7.39. || براؤزر ونڈو اسے شکل 7.39 کی طرح دکھائے گی۔ || براوزر به یې د ۷.۳۹ شکل په څېر ښيي.

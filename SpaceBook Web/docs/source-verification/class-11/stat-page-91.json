@@ -1,0 +1,593 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s091-hm-examples-1",
+  "title": "Example 2.32 solution · Examples 2.33, 2.34: harmonic mean",
+  "headingUrdu": "مثال 2.32 کا حل · مثالیں 2.33، 2.34: ہارمونی اوسط",
+  "headingPashto": "د بېلګې 2.32 حل · بېلګې 2.33، 2.34: هارمونیک اوسط",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 91,
+    "printedPage": "83"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s091-sol32",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-32"
+    },
+    {
+      "id": "stat11-s091-i2",
+      "en": "(ii) Harmonic mean in case of discrete series or grouped data",
+      "ur": "(ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں ہارمونی اوسط",
+      "ps": "(ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې هارمونیک اوسط"
+    },
+    {
+      "id": "stat11-s091-ex33",
+      "en": "Example: 2.33",
+      "ur": "مثال: 2.33",
+      "ps": "بېلګه: 2.33",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-33"
+    },
+    {
+      "id": "stat11-s091-q33",
+      "en": "Calculate harmonic mean of the following distribution:",
+      "ur": "درج ذیل تقسیم کا ہارمونی اوسط حساب کریں:",
+      "ps": "د لاندې ویش هارمونیک اوسط محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-33"
+    },
+    {
+      "id": "stat11-s091-sol33",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-33"
+    },
+    {
+      "id": "stat11-s091-i3",
+      "en": "(iii) Harmonic mean in case of continuous series or grouped data",
+      "ur": "(iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں ہارمونی اوسط",
+      "ps": "(iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې هارمونیک اوسط"
+    },
+    {
+      "id": "stat11-s091-ex34",
+      "en": "Example: 2.34",
+      "ur": "مثال: 2.34",
+      "ps": "بېلګه: 2.34",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-34"
+    },
+    {
+      "id": "stat11-s091-q34",
+      "en": "Calculate the harmonic mean from the following data:",
+      "ur": "درج ذیل اعداد و شمار سے ہارمونی اوسط حساب کریں:",
+      "ps": "له لاندې معلوماتو څخه هارمونیک اوسط محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-34",
+      "sourceGap": {
+        "note": "The solution follows on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s091-sol32"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s091-i2",
+        "stat11-s091-ex33",
+        "stat11-s091-q33"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s091-sol33"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s091-i3",
+        "stat11-s091-ex34",
+        "stat11-s091-q34"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s091-h1",
+      "latex": "\\text{H.M}=\\dfrac{n}{\\sum\\dfrac{1}{x}}=\\dfrac{5}{0.23}=21.9\\ \\text{km/hour.}",
+      "accessible": "H.M = n / (Σ 1/x) = 5/0.23 = 21.9 km/hour.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "H.M = n / (Σ 1/x) = 5/0.23 = 21.9 km/hour."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "H.M = n / (Σ 1/x) = 5/0.23 = 21.9 km/hour."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "H.M = n / (Σ 1/x) = 5/0.23 = 21.9 km/hour."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-32"
+    },
+    {
+      "id": "stat11-s091-h2",
+      "latex": "\\text{H.M}=\\dfrac{\\sum f}{\\sum\\dfrac{f}{x}}=\\dfrac{30}{1.7406}=17.24",
+      "accessible": "H.M = Σf / (Σ f/x) = 30/1.7406 = 17.24",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "H.M = Σf / (Σ f/x) = 30/1.7406 = 17.24"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "H.M = Σf / (Σ f/x) = 30/1.7406 = 17.24"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "H.M = Σf / (Σ f/x) = 30/1.7406 = 17.24"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-33"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.32: x and 1/x",
+      "captionUrdu": "مثال 2.32: x اور 1/x",
+      "captionPashto": "بېلګه 2.32: x او 1/x",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "1/x",
+          "ur": "1/x",
+          "ps": "1/x"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "0.1",
+            "ur": "0.1",
+            "ps": "0.1"
+          }
+        ],
+        [
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "0.05",
+            "ur": "0.05",
+            "ps": "0.05"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "0.03",
+            "ur": "0.03",
+            "ps": "0.03"
+          }
+        ],
+        [
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "0.03",
+            "ur": "0.03",
+            "ps": "0.03"
+          }
+        ],
+        [
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "0.02",
+            "ur": "0.02",
+            "ps": "0.02"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "0.23",
+            "ur": "0.23",
+            "ps": "0.23"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-32",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.33: x and f",
+      "captionUrdu": "مثال 2.33: x اور f",
+      "captionPashto": "بېلګه 2.33: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "14",
+          "ur": "14",
+          "ps": "14"
+        },
+        {
+          "en": "16",
+          "ur": "16",
+          "ps": "16"
+        },
+        {
+          "en": "18",
+          "ur": "18",
+          "ps": "18"
+        },
+        {
+          "en": "20",
+          "ur": "20",
+          "ps": "20"
+        },
+        {
+          "en": "22",
+          "ur": "22",
+          "ps": "22"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-33"
+    },
+    {
+      "caption": "Example 2.33: f/x",
+      "captionUrdu": "مثال 2.33: f/x",
+      "captionPashto": "بېلګه 2.33: f/x",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "f/x",
+          "ur": "f/x",
+          "ps": "f/x"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "0.0833",
+            "ur": "0.0833",
+            "ps": "0.0833"
+          }
+        ],
+        [
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "0.2857",
+            "ur": "0.2857",
+            "ps": "0.2857"
+          }
+        ],
+        [
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0.3750",
+            "ur": "0.3750",
+            "ps": "0.3750"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "0.5556",
+            "ur": "0.5556",
+            "ps": "0.5556"
+          }
+        ],
+        [
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "0.3500",
+            "ur": "0.3500",
+            "ps": "0.3500"
+          }
+        ],
+        [
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0.0909",
+            "ur": "0.0909",
+            "ps": "0.0909"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "1.7406",
+            "ur": "1.7406",
+            "ps": "1.7406"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-33",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.34: class and frequency",
+      "captionUrdu": "مثال 2.34: جماعت اور تعدد",
+      "captionPashto": "بېلګه 2.34: ټولګی او فریکونسي",
+      "headers": [
+        {
+          "en": "Class:",
+          "ur": "جماعت:",
+          "ps": "ټولګی:"
+        },
+        {
+          "en": "0 – 9",
+          "ur": "0 – 9",
+          "ps": "0 – 9"
+        },
+        {
+          "en": "10 – 19",
+          "ur": "10 – 19",
+          "ps": "10 – 19"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        },
+        {
+          "en": "40 – 49",
+          "ur": "40 – 49",
+          "ps": "40 – 49"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-34"
+    }
+  ],
+  "sourceNote": "Printed page 83. In the printed table of Example 2.32 the 1/x values for 30 and 40 are both printed 0.03 (as printed; the exact values 0.0333 and 0.025 are not shown). The right-hand working is shown after each table. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:41:45.774487+00:00",
+    "scope": "Scan 91 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

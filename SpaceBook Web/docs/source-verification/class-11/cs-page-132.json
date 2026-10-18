@@ -1,0 +1,157 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s132-u5open",
+  "title": "Unit 5: Network Communication and Protocols — objectives",
+  "headingUrdu": "یونٹ ۵: نیٹ ورک کمیونیکیشن اور پروٹوکولز — مقاصد",
+  "headingPashto": "۵ واحد: د شبکې اړیکې او پروتوکولونه — موخې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 132,
+    "printedPage": "123"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s132-h",
+      "en": "UNIT 5 NETWORK COMMUNICATION AND PROTOCOLS",
+      "ur": "یونٹ ۵ نیٹ ورک کمیونیکیشن اور پروٹوکولز",
+      "ps": "۵ واحد د شبکې اړیکې او پروتوکولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s132-i",
+      "en": "After the completion of Unit - 5, the Students will be able to:",
+      "ur": "یونٹ ۵ مکمل کرنے کے بعد طلبہ اس قابل ہو جائیں گے کہ:",
+      "ps": "د ۵ واحد له بشپړېدو وروسته به زده کوونکي دې ته وړ شي چې:"
+    },
+    {
+      "id": "cs11-s132-o1",
+      "en": "explain basic network components (Sender, Receiver and Medium).",
+      "ur": "نیٹ ورک کے بنیادی اجزاء (بھیجنے والا، وصول کرنے والا اور ذریعہ) کی وضاحت کر سکیں۔",
+      "ps": "د شبکې بنسټیز اجزا (لېږونکی، ترلاسه کوونکی او منځګړی) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o2",
+      "en": "explain modes of communication (simplex, half-duplex and full-duplex).",
+      "ur": "مواصلات کے طریقوں (سمپلیکس، ہاف ڈپلیکس اور فل ڈپلیکس) کی وضاحت کر سکیں۔",
+      "ps": "د اړیکو حالتونه (یو لورې، نیم دوه لورې او بشپړ دوه لورې) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o3",
+      "en": "describe communication media (Guided and Un-guided).",
+      "ur": "مواصلاتی ذرائع (رہنمائی شدہ اور غیر رہنمائی شدہ) بیان کر سکیں۔",
+      "ps": "د اړیکو رسنۍ (لارښوونه شوې او بې لارښوونې) بیان کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o4",
+      "en": "explain communication devices (Switch, Router and Gateway).",
+      "ur": "مواصلاتی آلات (سوئچ، راؤٹر اور گیٹ وے) کی وضاحت کر سکیں۔",
+      "ps": "د اړیکو وسایل (سویچ، راوټر او ګېټ وی) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o5",
+      "en": "explain network architecture (Client, Server and Peer-to-Peer).",
+      "ur": "نیٹ ورک کے ڈھانچے (کلائنٹ، سرور اور پیئر ٹو پیئر) کی وضاحت کر سکیں۔",
+      "ps": "د شبکې جوړښت (پیرودونکی، خدمتګار او همتا-ته-همتا) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o6",
+      "en": "explain network types (LAN, MAN, WAN and VPN).",
+      "ur": "نیٹ ورک کی اقسام (ایل اے این، ایم اے این، ڈبلیو اے این اور وی پی این) کی وضاحت کر سکیں۔",
+      "ps": "د شبکې ډولونه (LAN، MAN، WAN او VPN) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o7",
+      "en": "explain network topologies (Star, Ring, Bus and Mesh).",
+      "ur": "نیٹ ورک ٹوپولوجیز (اسٹار، رنگ، بس اور میش) کی وضاحت کر سکیں۔",
+      "ps": "د شبکې توپولوجۍ (ستوری، کړۍ، بس او جال) تشریح کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o8",
+      "en": "identify the purpose of communication standards.",
+      "ur": "مواصلاتی معیارات کے مقصد کی شناخت کر سکیں۔",
+      "ps": "د اړیکو د معیارونو موخه وپېژني.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o9",
+      "en": "understand OSI Model and concepts of its layers.",
+      "ur": "او ایس آئی ماڈل اور اس کی تہوں کے تصورات کو سمجھ سکیں۔",
+      "ps": "د OSI ماډل او د هغه د طبقو تصورات وپوهېږي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o10",
+      "en": "provide examples of protocols and devices at each layer of OSI Model.",
+      "ur": "او ایس آئی ماڈل کی ہر تہہ پر پروٹوکولز اور آلات کی مثالیں دے سکیں۔",
+      "ps": "د OSI ماډل په هره طبقه د پروتوکولونو او وسایلو بېلګې ورکړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o11",
+      "en": "describe TCP/IP protocol suite used for communication over the Internet.",
+      "ur": "انٹرنیٹ پر مواصلات کے لیے استعمال ہونے والے ٹی سی پی / آئی پی پروٹوکول سوٹ کو بیان کر سکیں۔",
+      "ps": "د انټرنېټ پر اړیکو لپاره کارېدونکی TCP/IP پروتوکول سوټ بیان کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o12",
+      "en": "compare the TCP suite with OSI Model.",
+      "ur": "ٹی سی پی سوٹ کا او ایس آئی ماڈل سے موازنہ کر سکیں۔",
+      "ps": "د TCP سوټ د OSI ماډل سره پرتله کړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o13",
+      "en": "differentiate between circuit switching and packet switching.",
+      "ur": "سرکٹ سوئچنگ اور پیکٹ سوئچنگ میں فرق کر سکیں۔",
+      "ps": "د سرکټ سویچینګ او پیکټ سویچینګ ترمنځ توپیر وکړي.",
+      "listGroup": "obj"
+    },
+    {
+      "id": "cs11-s132-o14",
+      "en": "describe IP addressing schemes (Classes, Masks and Subnets).",
+      "ur": "آئی پی ایڈریسنگ اسکیمز (کلاسز، ماسکس اور سب نیٹس) بیان کر سکیں۔",
+      "ps": "د IP پتې ورکولو سکیمونه (ټولګي، ماسکونه او فرعي شبکې) بیان کړي.",
+      "listGroup": "obj"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s132-h",
+        "cs11-s132-i",
+        "cs11-s132-o1",
+        "cs11-s132-o2",
+        "cs11-s132-o3",
+        "cs11-s132-o4",
+        "cs11-s132-o5",
+        "cs11-s132-o6",
+        "cs11-s132-o7",
+        "cs11-s132-o8",
+        "cs11-s132-o9",
+        "cs11-s132-o10",
+        "cs11-s132-o11",
+        "cs11-s132-o12",
+        "cs11-s132-o13",
+        "cs11-s132-o14"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 123: the unit opener — a pink circle with “UNIT 5”, the title “NETWORK COMMUNICATION AND PROTOCOLS” over a photograph of a globe of network lines (not reproduced) and the box “After the completion of Unit - 5, the Students will be able to:” with fourteen objectives. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:07:02.875705+00:00",
+    "scope": "Scan 132 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

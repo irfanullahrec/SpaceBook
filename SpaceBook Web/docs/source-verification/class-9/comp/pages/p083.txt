@@ -1,0 +1,33 @@
+@pdf 230
+@printed 75
+@status lesson
+m     printf("a=%d\n",a);        // Here %d will be replaced with the value of a
+m     printf("b=%d\n",b);        // Here %d will be replaced with the value of b
+m }
+### Floating-point Format Specifiers (%f, %e and %g) || فلوٹنگ پوائنٹ فارمیٹ اسپیسیفائرز (%f، %e اور %g) || د floating-point format specifiers (%f، %e او %g)
+p The format specifier **%f** is used to read and print floating-point numbers in decimal notation. The format specifier **%e** is used to read and print floating-point numbers in exponential notation. || فارمیٹ اسپیسیفائر **%f** اعشاری انداز میں فلوٹنگ پوائنٹ اعداد پڑھنے اور پرنٹ کرنے کے لیے، اور **%e** قوت نما انداز میں پڑھنے اور پرنٹ کرنے کے لیے استعمال ہوتا ہے۔ || **%f** په اعشاري بڼه د floating-point عددونو لوستلو او چاپولو لپاره، او **%e** په توان نما بڼه لپاره کارېږي.
+p The format specifier **%g** is used to print floating-point numbers in decimal or exponential notation. || فارمیٹ اسپیسیفائر **%g** فلوٹنگ پوائنٹ اعداد کو اعشاری یا قوت نما انداز میں پرنٹ کرنے کے لیے استعمال ہوتا ہے۔ || **%g** د floating-point عددونو په اعشاري یا توان نما بڼه چاپولو لپاره کارېږي.
+p Program 3.13 demonstrates the use of float format specifiers. || پروگرام 3.13 فلوٹ فارمیٹ اسپیسیفائرز کا استعمال دکھاتا ہے۔ || پروګرام ۳.۱۳ د float format specifiers کارول ښيي.
+### Program 3.13 || پروگرام 3.13 || پروګرام ۳.۱۳
+m #include<stdio.h>
+m #include<conio.h>
+m void main()
+m {
+m     int a;
+m     float b;
+m     a = 15;
+m     b = a / 2;
+m     printf("a=%d\n",a);      // Here %d will be replaced with the value of a
+m     printf("b=%f\n",b);      // Here %f will be replaced with the value of b
+m     printf("b=%e\n",b);      // Here %e will be replaced with the value of b
+m                              //in exponential
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m a=15
+m b=7.500000
+m b=7.5e+0
+endbox
+@issue a/2 with int a is integer division (15/2 = 7), so b becomes 7.000000 (and %e prints 7.000000e+00), not 7.500000 / 7.5e+0 as the sample output shows; kept as printed.
+### Character Format Specifier %c || کریکٹر فارمیٹ اسپیسیفائر %c || د character format specifier %c
+p The character format specifier, **%c**, is used to read or print a single character. || کریکٹر فارمیٹ اسپیسیفائر **%c** ایک حرف پڑھنے یا پرنٹ کرنے کے لیے استعمال ہوتا ہے۔ || **%c** د یوه توري لوستلو یا چاپولو لپاره کارېږي.
+p Program 3.14 demonstrates the use of **%c** format specifier. || پروگرام 3.14 **%c** فارمیٹ اسپیسیفائر کا استعمال دکھاتا ہے۔ || پروګرام ۳.۱۴ د **%c** کارول ښيي.

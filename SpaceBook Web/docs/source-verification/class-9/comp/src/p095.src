@@ -1,0 +1,24 @@
+@printed 87
+@status lesson
+table OR operator (ii) || OR آپریٹر (ii) || OR operator (ii)
+th | Condition 1 || شرط 1 || شرط ۱ | Operator || آپریٹر || operator | Condition 2 || شرط 2 || شرط ۲ | Result || نتیجہ || پایله
+tr | True | {{OR}} | False | True
+tr | True | {{OR}} | True | True
+endtable
+p **Example:** Suppose we have two variables A = 100 and B= 50. The compound condition **(A>50) {{OR}} (B>50) is true**, as one condition is true. || **مثال:** فرض کریں دو متغیرات A = 100 اور B= 50 ہیں۔ مرکب شرط **(A>50) {{OR}} (B>50) درست ہے** کیونکہ ایک شرط درست ہے۔ || **بېلګه:** فرض کړئ A = 100 او B= 50 دي. مرکب شرط **(A>50) {{OR}} (B>50) سم دی** ځکه یو شرط سم دی.
+### c. NOT Operator ! || ج۔ NOT آپریٹر ! || ج. NOT operator !
+p The symbol used for NOT operator is **!**. It is used to reverse the result of a condition. It produces true result if the condition is false and produces false result if the condition is true. || NOT آپریٹر کی علامت **!** ہے۔ یہ شرط کا نتیجہ الٹ دینے کے لیے استعمال ہوتا ہے۔ اگر شرط غلط ہو تو نتیجہ درست، اور اگر شرط درست ہو تو نتیجہ غلط دیتا ہے۔ || د NOT operator نښه **!** ده. د شرط پایله سرچپه کوي. که شرط ناسم وي پایله سمه، او که سم وي پایله ناسمه ورکوي.
+table NOT operator || NOT آپریٹر || NOT operator
+th | Operator || آپریٹر || operator | Condition || شرط || شرط | Result || نتیجہ || پایله
+tr | ! | True | False
+tr | ! | False | True
+endtable
+p **Example:** Suppose we have two variables A= 100 and B=50. The condition **!(A==B)** is **true**, as A is not equal to B. || **مثال:** فرض کریں A= 100 اور B=50 ہیں۔ شرط **!(A==B)** **درست** ہے کیونکہ A برابر نہیں B کے۔ || **بېلګه:** فرض کړئ A= 100 او B=50 دي. شرط **!(A==B)** **سم** دی ځکه A له B سره مساوي نه دی.
+### 3.2.8 Difference between the Assignment Operators = and Equal to Operator = = || 3.2.8 اسائنمنٹ آپریٹر = اور ایکول ٹو آپریٹر == میں فرق || ۳.۲.۸ د assignment operator = او equal to operator == توپیر
+p The assignment operator = is used to assign a value to a variable whereas the equal to operator = = is used to compare two values of same data type. || اسائنمنٹ آپریٹر = متغیر کو قدر دینے کے لیے استعمال ہوتا ہے جبکہ ایکول ٹو آپریٹر == ایک ہی ڈیٹا ٹائپ کی دو قدروں کا موازنہ کرنے کے لیے۔ || assignment operator = متغیر ته د ارزښت ورکولو لپاره، او equal to operator == د یو شان ډېټا ډول د دوو ارزښتونو د پرتلې لپاره کارېږي.
+p For example: || مثلاً: || د بېلګې په توګه:
+m x=11;
+m y=a;
+m c='s';
+p In the above statements, variable *x* is assigned the value **11**, *y* is assigned the value stored in variable *a* and *c* is assigned the character **'s'**. || اوپر والی اسٹیٹمنٹس میں متغیر *x* کو قدر **11**، *y* کو متغیر *a* میں محفوظ قدر اور *c* کو حرف **'s'** دیا گیا ہے۔ || په پورتنیو بیانونو کې *x* ته **11**، *y* ته په *a* کې ساتل شوی ارزښت او *c* ته **'s'** توری ورکړل شوی.
+p The relational operator == is used to build a condition based on which computer takes some action. || ریلیشنل آپریٹر == ایسی شرط بنانے کے لیے استعمال ہوتا ہے جس کی بنیاد پر کمپیوٹر کوئی عمل کرتا ہے۔ || اړیکه ییز operator == د داسې شرط د جوړولو لپاره کارېږي چې کمپیوټر یې پر بنسټ عمل کوي.

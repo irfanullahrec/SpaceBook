@@ -1,0 +1,624 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s105-qd-3",
+  "title": "Example 3.6 (data and solution) · 3.3.2 Merits and demerits of quartile deviation",
+  "headingUrdu": "مثال 3.6 (اعداد و شمار اور حل) · 3.3.2 چوتھائی انحراف کی خوبیاں اور خامیاں",
+  "headingPashto": "بېلګه 3.6 (معلومات او حل) · 3.3.2 د څلورمې انحراف ګټې او زیانونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 105,
+    "printedPage": "97"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s105-sol6",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-h332",
+      "en": "3.3.2 Merits and demerits of quartile deviation",
+      "ur": "3.3.2 چوتھائی انحراف کی خوبیاں اور خامیاں",
+      "ps": "3.3.2 د څلورمې انحراف ګټې او زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s105-mh",
+      "en": "Merits:",
+      "ur": "خوبیاں:",
+      "ps": "ګټې:"
+    },
+    {
+      "id": "stat11-s105-m1",
+      "en": "(i) It is easy to calculate.",
+      "ur": "(i) اس کا حساب آسان ہے۔",
+      "ps": "(i) محاسبه یې اسانه ده.",
+      "listGroup": "qd-merits"
+    },
+    {
+      "id": "stat11-s105-m2",
+      "en": "(ii) It is not affected by extreme values.",
+      "ur": "(ii) یہ انتہائی قدروں سے متاثر نہیں ہوتا۔",
+      "ps": "(ii) دا د سختو ارزښتونو لخوا نه اغېزمن کېږي.",
+      "listGroup": "qd-merits"
+    },
+    {
+      "id": "stat11-s105-dh",
+      "en": "Demerits:",
+      "ur": "خامیاں:",
+      "ps": "زیانونه:"
+    },
+    {
+      "id": "stat11-s105-d1",
+      "en": "(i) It is not based on all observations of a series.",
+      "ur": "(i) یہ سلسلے کے تمام مشاہدات پر مبنی نہیں ہے۔",
+      "ps": "(i) دا د لړۍ پر ټولو کتنو والړ نه دی.",
+      "listGroup": "qd-demerits"
+    },
+    {
+      "id": "stat11-s105-d2",
+      "en": "(ii) It is not capable of further mathematical treatment.",
+      "ur": "(ii) یہ مزید ریاضیاتی عمل کے قابل نہیں ہے۔",
+      "ps": "(ii) دا د نورې ریاضیاتي پروسې وړ نه دی.",
+      "listGroup": "qd-demerits"
+    },
+    {
+      "id": "stat11-s105-q6b",
+      "en": "Marks: 10 – 19, 20 – 29, 30 – 39, 40 – 49, 50 – 49 with frequencies 3, 8, 14, 7, 4 (data of Example 3.6).",
+      "ur": "نمبر: 10 – 19، 20 – 29، 30 – 39، 40 – 49، 50 – 49 اور تعدد 3، 8، 14، 7، 4 (مثال 3.6 کے اعداد و شمار)۔",
+      "ps": "نمرې: 10 – 19، 20 – 29، 30 – 39، 40 – 49، 50 – 49 او فریکونسي 3، 8، 14، 7، 4 (د بېلګې 3.6 معلومات).",
+      "role": "question",
+      "exampleId": "stat11-ex-3-6",
+      "sourceGap": {
+        "note": "Continues the question of Example 3.6 from the previous page; the last class is printed \"50 – 49\" in the question row (a misprint for 50 – 59)."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s105-q6b"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s105-sol6"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s105-h332",
+        "stat11-s105-mh",
+        "stat11-s105-m1",
+        "stat11-s105-m2",
+        "stat11-s105-dh",
+        "stat11-s105-d1",
+        "stat11-s105-d2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s105-e1",
+      "latex": "\\because\\ \\textstyle\\sum f=36\\text{ is even}\\ \\therefore\\ Q_1=\\dfrac{\\sum f}{4}=\\dfrac{36}{4}=9\\text{th value}",
+      "accessible": "∵ Σf = 36 is even ∴ Q1 = Σf/4 = 36/4 = 9th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∵ Σf = 36 is even ∴ Q1 = Σf/4 = 36/4 = 9th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∵ Σf = 36 is even ∴ Q1 = Σf/4 = 36/4 = 9th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∵ Σf = 36 is even ∴ Q1 = Σf/4 = 36/4 = 9th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e2",
+      "latex": "\\Rightarrow\\ Q_1\\text{ lies in the group }(19.5-29.5)",
+      "accessible": "⇒ Q1 lies in the group (19.5 − 29.5)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "⇒ Q1 lies in the group (19.5 − 29.5)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "⇒ Q1 lies in the group (19.5 − 29.5)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "⇒ Q1 lies in the group (19.5 − 29.5)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e3",
+      "latex": "\\text{So }Q_1=l_1+\\dfrac{h}{f}\\left(\\dfrac{\\sum f}{4}-c\\right)=19.5+\\dfrac{10}{8}(9-3)=27",
+      "accessible": "So Q1 = l1 + (h/f)(Σf/4 − c) = 19.5 + (10/8)(9 − 3) = 27",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "So Q1 = l1 + (h/f)(Σf/4 − c) = 19.5 + (10/8)(9 − 3) = 27"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "So Q1 = l1 + (h/f)(Σf/4 − c) = 19.5 + (10/8)(9 − 3) = 27"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "So Q1 = l1 + (h/f)(Σf/4 − c) = 19.5 + (10/8)(9 − 3) = 27"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e4",
+      "latex": "\\text{Also }Q_3=3\\left(\\dfrac{\\sum f}{4}\\right)=3\\left(\\dfrac{36}{4}\\right)=27\\text{th value}",
+      "accessible": "Also Q3 = 3(Σf/4) = 3(36/4) = 27th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Also Q3 = 3(Σf/4) = 3(36/4) = 27th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Also Q3 = 3(Σf/4) = 3(36/4) = 27th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Also Q3 = 3(Σf/4) = 3(36/4) = 27th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e5",
+      "latex": "\\text{It means that }Q_3\\text{ lies in the group }(39.5-49.5)",
+      "accessible": "It means that Q3 lies in the group (39.5 − 49.5)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "It means that Q3 lies in the group (39.5 − 49.5)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "It means that Q3 lies in the group (39.5 − 49.5)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "It means that Q3 lies in the group (39.5 − 49.5)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e6",
+      "latex": "\\text{So }Q_3=l_1+\\dfrac{h}{f}\\left(\\dfrac{3\\sum f}{4}-c\\right)=39.5+\\dfrac{10}{7}(27-25)=42.4",
+      "accessible": "So Q3 = l1 + (h/f)(3Σf/4 − c) = 39.5 + (10/7)(27 − 25) = 42.4",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "So Q3 = l1 + (h/f)(3Σf/4 − c) = 39.5 + (10/7)(27 − 25) = 42.4"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "So Q3 = l1 + (h/f)(3Σf/4 − c) = 39.5 + (10/7)(27 − 25) = 42.4"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "So Q3 = l1 + (h/f)(3Σf/4 − c) = 39.5 + (10/7)(27 − 25) = 42.4"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e7",
+      "latex": "\\text{Q.D}=\\dfrac{Q_3-Q_1}{2}=\\dfrac{42.4-27}{2}=7.7\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "Q.D = (Q3 − Q1)/2 = (42.4 − 27)/2 = 7.7   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (42.4 − 27)/2 = 7.7   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (42.4 − 27)/2 = 7.7   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q.D = (Q3 − Q1)/2 = (42.4 − 27)/2 = 7.7   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "id": "stat11-s105-e8",
+      "latex": "\\text{Coefficient of Q.D}=\\dfrac{Q_3-Q_1}{Q_3+Q_1}=\\dfrac{42.4-27}{42.4+27}=\\dfrac{15.4}{69.4}=0.22\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (42.4 − 27)/(42.4 + 27) = 15.4/69.4 = 0.22   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (42.4 − 27)/(42.4 + 27) = 15.4/69.4 = 0.22   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (42.4 − 27)/(42.4 + 27) = 15.4/69.4 = 0.22   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of Q.D = (Q3 − Q1)/(Q3 + Q1) = (42.4 − 27)/(42.4 + 27) = 15.4/69.4 = 0.22   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-6"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.6: marks and frequency",
+      "captionUrdu": "مثال 3.6: نمبر اور تعدد",
+      "captionPashto": "بېلګه 3.6: نمرې او فریکونسي",
+      "headers": [
+        {
+          "en": "Marks:",
+          "ur": "نمبر:",
+          "ps": "نمرې:"
+        },
+        {
+          "en": "10 – 19",
+          "ur": "10 – 19",
+          "ps": "10 – 19"
+        },
+        {
+          "en": "20 – 29",
+          "ur": "20 – 29",
+          "ps": "20 – 29"
+        },
+        {
+          "en": "30 – 39",
+          "ur": "30 – 39",
+          "ps": "30 – 39"
+        },
+        {
+          "en": "40 – 49",
+          "ur": "40 – 49",
+          "ps": "40 – 49"
+        },
+        {
+          "en": "50 – 49",
+          "ur": "50 – 49",
+          "ps": "50 – 49"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-6"
+    },
+    {
+      "caption": "Example 3.6 solution: marks, f, c.f, class boundaries",
+      "captionUrdu": "مثال 3.6 کا حل: نمبر، f، c.f، طبقاتی حدود",
+      "captionPashto": "د بېلګې 3.6 حل: نمرې، f، c.f، د ټولګیو حدود",
+      "headers": [
+        {
+          "en": "Marks",
+          "ur": "نمبر",
+          "ps": "نمرې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        },
+        {
+          "en": "class boundaries",
+          "ur": "طبقاتی حدود",
+          "ps": "د ټولګیو حدود"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "10 – 19",
+            "ur": "10 – 19",
+            "ps": "10 – 19"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9.5 – 19.5",
+            "ur": "9.5 – 19.5",
+            "ps": "9.5 – 19.5"
+          }
+        ],
+        [
+          {
+            "en": "20 – 29",
+            "ur": "20 – 29",
+            "ps": "20 – 29"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "19.5 – 29.5",
+            "ur": "19.5 – 29.5",
+            "ps": "19.5 – 29.5"
+          }
+        ],
+        [
+          {
+            "en": "30 – 39",
+            "ur": "30 – 39",
+            "ps": "30 – 39"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "29.5 – 39.5",
+            "ur": "29.5 – 39.5",
+            "ps": "29.5 – 39.5"
+          }
+        ],
+        [
+          {
+            "en": "40 – 49",
+            "ur": "40 – 49",
+            "ps": "40 – 49"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "39.5 – 49.5",
+            "ur": "39.5 – 49.5",
+            "ps": "39.5 – 49.5"
+          }
+        ],
+        [
+          {
+            "en": "50 – 59",
+            "ur": "50 – 59",
+            "ps": "50 – 59"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          },
+          {
+            "en": "49.5 – 59.5",
+            "ur": "49.5 – 59.5",
+            "ps": "49.5 – 59.5"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-6"
+    }
+  ],
+  "sourceNote": "Printed page 97. The page begins with the data rows of Example 3.6 (printed as a text row, last class \"50 – 49\" in the question row but \"50 – 59\" in the solution table). In the printed Q.D line the first term of the numerator appears as \"4 .4 − 27\" (read as 42.4 − 27). Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:47:50.182397+00:00",
+    "scope": "Scan 105 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

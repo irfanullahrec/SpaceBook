@@ -1,0 +1,435 @@
+{
+  "id": "cls9-physics-page-059",
+  "pdfPage": 59,
+  "printedPage": 54,
+  "status": "corrected-fresh-review",
+  "chapterNumber": 2,
+  "chapter": "Unit 2: Kinematics",
+  "title": "Free-fall equations2.15–2.17 / lab work / bridge Example2.7 beginning",
+  "sourcePdf": "D:\\SpaceBook\\Books\\9th\\9th physics\\pdf\\9thphysics.pdf",
+  "sections": [
+    {
+      "code": "2.6",
+      "heading": "2.5 MOTION DUE TO GRAVITY:",
+      "headingUrdu": "2.5 کشش ثقل سے حرکت:",
+      "headingPashto": "2.5 د جاذبې له امله حرکت:",
+      "paras": [
+        {
+          "text": "Figure “a” shows the well-known phenomenon of a rock falling faster than a sheet of paper. The effect of air resistance is responsible for the slower fall of the paper. When air is removed from the tube, as in Figure “b”, the rock and the paper have exactly the same acceleration due to gravity. In the absence of air, the rock and the paper both fall freely.",
+          "urdu": "شکل “a” معروف مظہر دکھاتی ہے کہ پتھر کاغذ کی چادر سے تیز گرتا ہے۔ کاغذ کے آہستہ گرنے کی وجہ ہوا کی مزاحمت ہے۔ شکل “b” کی طرح نلی سے ہوا نکال دی جائے تو پتھر اور کاغذ کی ثقلی تعجیل بالکل یکساں ہوتی ہے۔ ہوا نہ ہونے پر دونوں آزادانہ گرتے ہیں۔",
+          "pashto": "شکل “a” هغه پېژندل شوې پدیده ښيي چې ډبره د کاغذ تر پاڼې ګړندۍ لوېږي. د هوا د مقاومت اغېز د کاغذ د ورو لوېدو لامل دی. کله چې د شکل “b” په څېر له نل څخه هوا وایستل شي، ډبره او کاغذ د جاذبې له امله بالکل یو شان تعجیل لري. د هوا په نشتوالي کې دواړه ازاد لوېږي."
+        },
+        {
+          "text": "Since the acceleration is constant in free-fall, the equations of kinematics can be used. In these equations we replace acceleration ‘a’ with acceleration due to gravity ‘g’ and distance ‘s’ with height ‘h’.",
+          "urdu": "آزاد سقوط میں تعجیل مستقل ہوتی ہے، اس لیے حرکیات کی مساوات استعمال کی جا سکتی ہیں۔ ان میں تعجیل ‘a’ کو ثقلی تعجیل ‘g’ اور فاصلہ ‘s’ کو بلندی ‘h’ سے بدلتے ہیں۔",
+          "pashto": "په ازاد سقوط کې تعجیل ثابت دی، نو د کینماتیک معادلې کارول کېدای شي. په دې معادلو کې تعجیل ‘a’ د جاذبې په تعجیل ‘g’ او واټن ‘s’ په لوړوالي ‘h’ بدلوو."
+        },
+        {
+          "text": "When an object moves with the gravity acceleration due to gravity is taken as positive (+g) and when an object moves against gravity, acceleration due to gravity is taken negative (-g).",
+          "urdu": "جب شے کشش ثقل کے ساتھ حرکت کرے تو ثقلی تعجیل مثبت (+g) لیتے ہیں، اور جب کشش ثقل کے خلاف حرکت کرے تو ثقلی تعجیل منفی (-g) لیتے ہیں۔",
+          "pashto": "کله چې یو شی له جاذبې سره حرکت کوي، د جاذبې تعجیل مثبت (+g) ګڼل کېږي، او کله چې د جاذبې پر خلاف حرکت کوي، د جاذبې تعجیل منفي (-g) ګڼل کېږي."
+        },
+        {
+          "text": "LAB WORK",
+          "urdu": "لیبارٹری کا کام",
+          "pashto": "لابراتواري کار"
+        },
+        {
+          "text": "Find the value of “g” by free fall method.",
+          "urdu": "آزاد سقوط کے طریقے سے “g” کی قدر معلوم کریں۔",
+          "pashto": "د ازاد سقوط په طریقه د “g” ارزښت ومومئ."
+        },
+        {
+          "text": "Example 2.7 HEIGHT OF BRIDGE FROM WATER SURFACE",
+          "urdu": "مثال 2.7 پانی کی سطح سے پل کی بلندی",
+          "pashto": "بېلګه 2.7 د اوبو له سطحې د پله لوړوالی"
+        },
+        {
+          "text": "A stone is dropped from the Attock Bridge. The stone reaches the water in 3.2 s. Find the a. height of the bridge from water and b. velocity of the stone when it strikes the water.",
+          "urdu": "اٹک پل سے پتھر گرایا جاتا ہے، جو 3.2 s میں پانی تک پہنچتا ہے۔ a. پانی سے پل کی بلندی اور b. پانی سے ٹکراتے وقت پتھر کی سمتی رفتار معلوم کریں۔",
+          "pashto": "له اټک پله څخه یوه ډبره غورځول کېږي. ډبره په 3.2 s کې اوبو ته رسېږي. a. له اوبو څخه د پله لوړوالی او b. له اوبو سره د لګېدو پر مهال د ډبرې سرعت ومومئ."
+        },
+        {
+          "text": "SOLUTION",
+          "urdu": "حل",
+          "pashto": "حل"
+        },
+        {
+          "text": "GIVEN:",
+          "urdu": "دیے گئے:",
+          "pashto": "ورکړل شوي:"
+        },
+        {
+          "text": "Time t = 3.2 s",
+          "urdu": "وقت t = 3.2 s",
+          "pashto": "وخت t = 3.2 s"
+        },
+        {
+          "text": "Initial velocity vᵢ = 0 ms⁻¹",
+          "urdu": "ابتدائی سمتی رفتار vᵢ = 0 ms⁻¹",
+          "pashto": "لومړنی سرعت vᵢ = 0 ms⁻¹"
+        },
+        {
+          "text": "Acceleration due to gravity g = 9.8 ms⁻²",
+          "urdu": "ثقلی تعجیل g = 9.8 ms⁻²",
+          "pashto": "د جاذبې تعجیل g = 9.8 ms⁻²"
+        },
+        {
+          "text": "REQUIRED:",
+          "urdu": "مطلوب:",
+          "pashto": "غوښتل شوي:"
+        },
+        {
+          "text": "a. Height h = ?",
+          "urdu": "a. بلندی h = ؟",
+          "pashto": "a. لوړوالی h = ؟"
+        },
+        {
+          "text": "b. Final velocity v𝒇 = ?",
+          "urdu": "b. آخری سمتی رفتار v𝒇 = ؟",
+          "pashto": "b. وروستی سرعت v𝒇 = ؟"
+        },
+        {
+          "text": "a. By second equation of motion",
+          "urdu": "a. حرکت کی دوسری مساوات سے",
+          "pashto": "a. د حرکت د دویمې معادلې له مخې"
+        },
+        {
+          "text": "putting values",
+          "urdu": "قدریں رکھنے سے",
+          "pashto": "د ارزښتونو په ایښودلو"
+        },
+        {
+          "text": "therefore",
+          "urdu": "لہٰذا",
+          "pashto": "نو"
+        },
+        {
+          "text": "Rounding off to correct significant figures",
+          "urdu": "درست بامعنی ہندسوں تک قریب ترین قدر لینے سے",
+          "pashto": "د سمو بامعنی شمېرو لپاره په ګردولو"
+        },
+        {
+          "text": "Answer",
+          "urdu": "جواب",
+          "pashto": "ځواب"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "formula",
+          "id": "physics9-free-fall-equation215",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 475 80\" role=\"img\" aria-label=\"Equation2.15 final velocity equals initial velocity plus g times t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan> + gt</text><path d=\"M320 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"385\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"416.5\" y=\"43\" text-anchor=\"middle\">2.15</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 475 80\" role=\"img\" aria-label=\"Equation2.15 final velocity equals initial velocity plus g times t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan> + gt</text><path d=\"M320 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"385\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"416.5\" y=\"43\" text-anchor=\"middle\">2.15</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 475 80\" role=\"img\" aria-label=\"Equation2.15 final velocity equals initial velocity plus g times t\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan> + gt</text><path d=\"M320 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"385\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"416.5\" y=\"43\" text-anchor=\"middle\">2.15</text></g></svg>",
+          "sourceWidthRatio": 0.49
+        },
+        {
+          "type": "formula",
+          "id": "physics9-free-fall-equation216",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 110\" role=\"img\" aria-label=\"Equation2.16 height equals initial velocity times time plus one half g times time squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text><path d=\"M330 58h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"395\" y=\"38\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"426.5\" y=\"66\" text-anchor=\"middle\">2.16</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 110\" role=\"img\" aria-label=\"Equation2.16 height equals initial velocity times time plus one half g times time squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text><path d=\"M330 58h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"395\" y=\"38\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"426.5\" y=\"66\" text-anchor=\"middle\">2.16</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 110\" role=\"img\" aria-label=\"Equation2.16 height equals initial velocity times time plus one half g times time squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text><path d=\"M330 58h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"395\" y=\"38\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"426.5\" y=\"66\" text-anchor=\"middle\">2.16</text></g></svg>",
+          "sourceWidthRatio": 0.51
+        },
+        {
+          "type": "formula",
+          "id": "physics9-free-fall-equation217",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 515 80\" role=\"img\" aria-label=\"Equation2.17 twice g times height equals final velocity squared minus initial velocity squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">2gh = v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan> − v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan></text><path d=\"M365 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"430\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"461.5\" y=\"43\" text-anchor=\"middle\">2.17</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 515 80\" role=\"img\" aria-label=\"Equation2.17 twice g times height equals final velocity squared minus initial velocity squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">2gh = v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan> − v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan></text><path d=\"M365 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"430\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"461.5\" y=\"43\" text-anchor=\"middle\">2.17</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 515 80\" role=\"img\" aria-label=\"Equation2.17 twice g times height equals final velocity squared minus initial velocity squared\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">2gh = v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan> − v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan><tspan baseline-shift=\"super\" font-size=\"17\">2</tspan></text><path d=\"M365 35h65\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"430\" y=\"15\" width=\"63\" height=\"40\" rx=\"4\" fill=\"#3e899d\"/><text x=\"461.5\" y=\"43\" text-anchor=\"middle\">2.17</text></g></svg>",
+          "sourceWidthRatio": 0.53
+        },
+        {
+          "type": "formula",
+          "id": "physics9-example27-height-formula",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text></g></svg>",
+          "sourceWidthRatio": 0.36
+        },
+        {
+          "type": "formula",
+          "id": "physics9-example27-height-values",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = 0 ms⁻¹ × 3.2 s +</text><text x=\"325.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"325.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M310 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"366\" y=\"65\">× 9.8 ms⁻² × (3.2)²</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = 0 ms⁻¹ × 3.2 s +</text><text x=\"325.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"325.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M310 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"366\" y=\"65\">× 9.8 ms⁻² × (3.2)²</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = 0 ms⁻¹ × 3.2 s +</text><text x=\"325.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"325.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M310 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"366\" y=\"65\">× 9.8 ms⁻² × (3.2)²</text></g></svg>",
+          "sourceWidthRatio": 0.76
+        },
+        {
+          "type": "formula",
+          "id": "physics9-example27-height-unrounded",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50.176 m</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50.176 m</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50.176 m</text></g></svg>",
+          "sourceWidthRatio": 0.27
+        },
+        {
+          "type": "formula",
+          "id": "physics9-example27-height-answer",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 170 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50 m</text></g></svg>",
+          "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 170 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50 m</text></g></svg>",
+          "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 170 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50 m</text></g></svg>",
+          "sourceWidthRatio": 0.19
+        }
+      ],
+      "sourceLayout": [
+        {
+          "type": "paragraph",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-free-fall-equation215"
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-free-fall-equation216"
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-free-fall-equation217"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            2
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            3
+          ]
+        },
+        {
+          "type": "quotation",
+          "indices": [
+            4
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            5
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            6
+          ]
+        },
+        {
+          "type": "heading",
+          "indices": [
+            7
+          ]
+        },
+        {
+          "type": "parallelPhrases",
+          "columns": [
+            [
+              8,
+              9,
+              10,
+              11
+            ],
+            [
+              12,
+              13,
+              14
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            15
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-example27-height-formula"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            16
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-example27-height-values"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            17
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-example27-height-unrounded"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            18
+          ]
+        },
+        {
+          "type": "visual",
+          "blockId": "physics9-example27-height-answer"
+        },
+        {
+          "type": "paragraph",
+          "indices": [
+            19
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": "Fresh visible source inspection. Complete tube explanation, constant-gravity substitution paragraph and original +/-g convention restored with native numbered equations2.15–2.17. Free-fall lab instruction and original Attock Bridge3.2s problem/given/required/height solution preserved, including50.176m then50m source rounding. Complete paragraph translations aligned; final velocity subpart explicitly pending consecutive next page.",
+  "numericals": [
+    {
+      "num": "2.7",
+      "name": "HEIGHT OF BRIDGE FROM WATER SURFACE",
+      "statement": "A stone is dropped from the Attock Bridge. The stone reaches the water in 3.2 s. Find the a. height of the bridge from water and b. velocity of the stone when it strikes the water.",
+      "given": "Time t = 3.2 s\nInitial velocity vᵢ = 0 ms⁻¹\nAcceleration due to gravity g = 9.8 ms⁻²",
+      "required": "a. Height h = ?\nb. Final velocity v𝒇 = ?",
+      "formula": "<div style=\"max-width:220px\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan>t +</text><text x=\"200.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"200.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M185 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"242\" y=\"65\">gt²</text></g></svg></div><div style=\"max-width:190px\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 285 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = v<tspan baseline-shift=\"sub\" font-size=\"17\">i</tspan> + gt</text></g></svg></div>",
+      "solution": "<div style=\"max-width:430px\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 110\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"65\">h = 0 ms⁻¹ × 3.2 s +</text><text x=\"325.0\" y=\"34\" text-anchor=\"middle\">1</text><text x=\"325.0\" y=\"92\" text-anchor=\"middle\">2</text><path d=\"M310 54h30\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"366\" y=\"65\">× 9.8 ms⁻² × (3.2)²</text></g></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 245 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">h = 50.176 m</text></g></svg></div><div style=\"max-width:360px\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 565 80\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = 0 ms⁻¹ + 9.8 ms⁻² × 3.2 s</text></g></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 305 75\" role=\"img\" aria-label=\"Textbook equation\"><g font-family=\"sans-serif\" font-size=\"25\" fill=\"currentColor\"><text x=\"5\" y=\"43\">v<tspan baseline-shift=\"sub\" font-size=\"17\">f</tspan> = 31.36 ms⁻¹</text></g></svg></div>",
+      "answer": "a. h = 50 m; b. v𝒇 = 31 ms⁻¹",
+      "answerSource": "textbook",
+      "sourcePendingContinuation": false,
+      "sourcePdfPage": 59,
+      "sourcePrintedPage": 54,
+      "pairedParagraphs": [
+        {
+          "text": "A stone is dropped from the Attock Bridge. The stone reaches the water in 3.2 s. Find the a. height of the bridge from water and b. velocity of the stone when it strikes the water.",
+          "urdu": "اٹک پل سے پتھر گرایا جاتا ہے، جو 3.2 s میں پانی تک پہنچتا ہے۔ a. پانی سے پل کی بلندی اور b. پانی سے ٹکراتے وقت پتھر کی سمتی رفتار معلوم کریں۔",
+          "pashto": "له اټک پله څخه یوه ډبره غورځول کېږي. ډبره په 3.2 s کې اوبو ته رسېږي. a. له اوبو څخه د پله لوړوالی او b. له اوبو سره د لګېدو پر مهال د ډبرې سرعت ومومئ."
+        },
+        {
+          "text": "SOLUTION",
+          "urdu": "حل",
+          "pashto": "حل"
+        },
+        {
+          "text": "GIVEN:",
+          "urdu": "دیے گئے:",
+          "pashto": "ورکړل شوي:"
+        },
+        {
+          "text": "Time t = 3.2 s",
+          "urdu": "وقت t = 3.2 s",
+          "pashto": "وخت t = 3.2 s"
+        },
+        {
+          "text": "Initial velocity vᵢ = 0 ms⁻¹",
+          "urdu": "ابتدائی سمتی رفتار vᵢ = 0 ms⁻¹",
+          "pashto": "لومړنی سرعت vᵢ = 0 ms⁻¹"
+        },
+        {
+          "text": "Acceleration due to gravity g = 9.8 ms⁻²",
+          "urdu": "ثقلی تعجیل g = 9.8 ms⁻²",
+          "pashto": "د جاذبې تعجیل g = 9.8 ms⁻²"
+        },
+        {
+          "text": "REQUIRED:",
+          "urdu": "مطلوب:",
+          "pashto": "غوښتل شوي:"
+        },
+        {
+          "text": "a. Height h = ?",
+          "urdu": "a. بلندی h = ؟",
+          "pashto": "a. لوړوالی h = ؟"
+        },
+        {
+          "text": "b. Final velocity v𝒇 = ?",
+          "urdu": "b. آخری سمتی رفتار v𝒇 = ؟",
+          "pashto": "b. وروستی سرعت v𝒇 = ؟"
+        },
+        {
+          "text": "a. By second equation of motion",
+          "urdu": "a. حرکت کی دوسری مساوات سے",
+          "pashto": "a. د حرکت د دویمې معادلې له مخې"
+        },
+        {
+          "text": "putting values",
+          "urdu": "قدریں رکھنے سے",
+          "pashto": "د ارزښتونو په ایښودلو"
+        },
+        {
+          "text": "therefore",
+          "urdu": "لہٰذا",
+          "pashto": "نو"
+        },
+        {
+          "text": "Rounding off to correct significant figures",
+          "urdu": "درست بامعنی ہندسوں تک قریب ترین قدر لینے سے",
+          "pashto": "د سمو بامعنی شمېرو لپاره په ګردولو"
+        },
+        {
+          "text": "Answer",
+          "urdu": "جواب",
+          "pashto": "ځواب"
+        },
+        {
+          "text": "b. By First equation of motion",
+          "urdu": "b. حرکت کی پہلی مساوات سے",
+          "pashto": "b. د حرکت د لومړۍ معادلې له مخې"
+        },
+        {
+          "text": "putting values",
+          "urdu": "قدریں رکھنے سے",
+          "pashto": "د ارزښتونو په ایښودلو"
+        },
+        {
+          "text": "therefore",
+          "urdu": "لہٰذا",
+          "pashto": "نو"
+        },
+        {
+          "text": "Rounding off to correct significant figures",
+          "urdu": "درست بامعنی ہندسوں تک قریب ترین قدر لینے سے",
+          "pashto": "د سمو بامعنی شمېرو لپاره په ګردولو"
+        },
+        {
+          "text": "Answer",
+          "urdu": "جواب",
+          "pashto": "ځواب"
+        }
+      ],
+      "sourcePdfPages": [
+        59,
+        60
+      ],
+      "sourcePrintedPages": [
+        54,
+        55
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "num": "source-lab-free-fall",
+      "name": "LAB WORK",
+      "procedure": "Find the value of “g” by free fall method.",
+      "urdu": "آزاد سقوط کے طریقے سے “g” کی قدر معلوم کریں۔",
+      "pashto": "د ازاد سقوط په طریقه د “g” ارزښت ومومئ.",
+      "sourcePdfPage": 59,
+      "sourcePrintedPage": 54
+    }
+  ]
+}

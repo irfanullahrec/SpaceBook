@@ -1,0 +1,543 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s130-moments-9",
+  "title": "Example 3.21 (mean moments) · (iii) Moments about origin",
+  "headingUrdu": "مثال 3.21 (اوسطی معیارِ اثر) · (iii) مبدا کے گرد معیارِ اثر",
+  "headingPashto": "بېلګه 3.21 (اوسط مومنټونه) · (iii) د اصل شاوخوا مومنټونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 130,
+    "printedPage": "122"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s130-a1",
+      "en": "(ii) Mean moments:",
+      "ur": "(ii) اوسطی معیارِ اثر:",
+      "ps": "(ii) اوسط مومنټونه:",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-t1",
+      "en": "(iii) Moments about origin",
+      "ur": "(iii) مبدا کے گرد معیارِ اثر",
+      "ps": "(iii) د اصل شاوخوا مومنټونه"
+    },
+    {
+      "id": "stat11-s130-t2",
+      "en": "When moments are computed about P.M = 0, they are called moments about origin or moments about zero. These are also called raw moments. Formulas in this case are:",
+      "ur": "جب معیارِ اثر P.M = 0 کے گرد حساب کیے جائیں تو انہیں مبدا کے گرد معیارِ اثر یا صفر کے گرد معیارِ اثر کہا جاتا ہے۔ انہیں خام معیارِ اثر بھی کہتے ہیں۔ اس صورت میں فارمولے یہ ہیں:",
+      "ps": "کله چې مومنټونه د P.M = 0 شاوخوا محاسبه شي نو دوی ته د اصل شاوخوا مومنټونه یا د صفر شاوخوا مومنټونه ویل کېږي. دې ته خام مومنټونه هم ویل کېږي. پدې حالت کې فورمولونه دا دي:"
+    },
+    {
+      "id": "stat11-s130-lu",
+      "en": "For ungrouped data",
+      "ur": "غیر گروہی اعداد و شمار کے لیے",
+      "ps": "د نه‌ګروپ شویو معلوماتو لپاره"
+    },
+    {
+      "id": "stat11-s130-lg",
+      "en": "For grouped data",
+      "ur": "گروہی اعداد و شمار کے لیے",
+      "ps": "د ګروپي معلوماتو لپاره"
+    },
+    {
+      "id": "stat11-s130-t3",
+      "en": "Put these raw moments in the relations to get mean moments.",
+      "ur": "ان خام معیارِ اثر کو تعلقات میں رکھ کر اوسطی معیارِ اثر حاصل کریں۔",
+      "ps": "دا خام مومنټونه په اړیکو کې کېږدئ ترڅو اوسط مومنټونه ترلاسه شي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s130-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s130-t1",
+        "stat11-s130-t2",
+        "stat11-s130-lu",
+        "stat11-s130-lg"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "equation",
+      "index": 12
+    },
+    {
+      "type": "equation",
+      "index": 13
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s130-t3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s130-m1",
+      "latex": "m_1=m_1'-m_1'=2-2=0",
+      "accessible": "m1 = m′1 − m′1 = 2 − 2 = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2 − 2 = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2 − 2 = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = m′1 − m′1 = 2 − 2 = 0"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m2",
+      "latex": "m_2=m_2'-(m_1')^2=35.7-2^2=35.7-4=31.7",
+      "accessible": "m2 = m′2 − (m′1)² = 35.7 − 2² = 35.7 − 4 = 31.7",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 35.7 − 2² = 35.7 − 4 = 31.7"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 35.7 − 2² = 35.7 − 4 = 31.7"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = m′2 − (m′1)² = 35.7 − 2² = 35.7 − 4 = 31.7"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m3a",
+      "latex": "m_3=m_3'-3m_1'm_2'+2(m_1')^3",
+      "accessible": "m3 = m′3 − 3m′1m′2 + 2(m′1)³",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = m′3 − 3m′1m′2 + 2(m′1)³"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m3b",
+      "latex": "=157.14-3(2)(35.7)+2(2^3)",
+      "accessible": "= 157.14 − 3(2)(35.7) + 2(2³)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 157.14 − 3(2)(35.7) + 2(2³)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 157.14 − 3(2)(35.7) + 2(2³)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 157.14 − 3(2)(35.7) + 2(2³)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m3c",
+      "latex": "=157.14-214.2+16",
+      "accessible": "= 157.14 − 214.2 + 16",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 157.14 − 214.2 + 16"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 157.14 − 214.2 + 16"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 157.14 − 214.2 + 16"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m3d",
+      "latex": "=173.14-214.2=-41.06",
+      "accessible": "= 173.14 − 214.2 = −41.06",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 173.14 − 214.2 = −41.06"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 173.14 − 214.2 = −41.06"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 173.14 − 214.2 = −41.06"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m4a",
+      "latex": "m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4",
+      "accessible": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = m′4 − 4m′1m′3 + 6(m′1)²m′2 − 3(m′1)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m4b",
+      "latex": "=2821.43-4(2)(157.14)+6(2)^2(35.7)-3(2)^4",
+      "accessible": "= 2821.43 − 4(2)(157.14) + 6(2)²(35.7) − 3(2)⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 2821.43 − 4(2)(157.14) + 6(2)²(35.7) − 3(2)⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 2821.43 − 4(2)(157.14) + 6(2)²(35.7) − 3(2)⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 2821.43 − 4(2)(157.14) + 6(2)²(35.7) − 3(2)⁴"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m4c",
+      "latex": "=2821.43-1257.12+856.8-48",
+      "accessible": "= 2821.43 − 1257.12 + 856.8 − 48",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 2821.43 − 1257.12 + 856.8 − 48"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 2821.43 − 1257.12 + 856.8 − 48"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 2821.43 − 1257.12 + 856.8 − 48"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-m4d",
+      "latex": "=3678.23-1305.12=2373.11",
+      "accessible": "= 3678.23 − 1305.12 = 2373.11",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 3678.23 − 1305.12 = 2373.11"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 3678.23 − 1305.12 = 2373.11"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 3678.23 − 1305.12 = 2373.11"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-21"
+    },
+    {
+      "id": "stat11-s130-o1",
+      "latex": "m_1'=\\dfrac{\\sum x}{n}\\qquad\\qquad m_1'=\\dfrac{\\sum fx}{\\sum f}",
+      "accessible": "m′1 = Σx/n    m′1 = Σfx/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′1 = Σx/n    m′1 = Σfx/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′1 = Σx/n    m′1 = Σfx/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′1 = Σx/n    m′1 = Σfx/Σf"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s130-o2",
+      "latex": "m_2'=\\dfrac{\\sum x^2}{n}\\qquad\\qquad m_2'=\\dfrac{\\sum fx^2}{\\sum f}",
+      "accessible": "m′2 = Σx²/n    m′2 = Σfx²/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′2 = Σx²/n    m′2 = Σfx²/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′2 = Σx²/n    m′2 = Σfx²/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′2 = Σx²/n    m′2 = Σfx²/Σf"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s130-o3",
+      "latex": "m_3'=\\dfrac{\\sum x^3}{n}\\qquad\\qquad m_3'=\\dfrac{\\sum fx^3}{\\sum f}",
+      "accessible": "m′3 = Σx³/n    m′3 = Σfx³/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′3 = Σx³/n    m′3 = Σfx³/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′3 = Σx³/n    m′3 = Σfx³/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′3 = Σx³/n    m′3 = Σfx³/Σf"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s130-o4",
+      "latex": "m_4'=\\dfrac{\\sum x^4}{n}\\qquad\\qquad m_4'=\\dfrac{\\sum fx^4}{\\sum f}",
+      "accessible": "m′4 = Σx⁴/n    m′4 = Σfx⁴/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m′4 = Σx⁴/n    m′4 = Σfx⁴/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m′4 = Σx⁴/n    m′4 = Σfx⁴/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m′4 = Σx⁴/n    m′4 = Σfx⁴/Σf"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 122. The formulas for moments about the origin are printed in two columns (ungrouped left, grouped right); each pair is kept as one equation. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:54:53.801501+00:00",
+    "scope": "Scan 130 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s272-p263",
+  "title": "Indexed; 8.2.3 Creating Primary Key and Foreign Key in the Tables; a. Primary key; Figure 8.14",
+  "headingUrdu": "انڈیکسڈ؛ ۸.۲.۳ ٹیبلز میں پرائمری کی اور فارن کی بنانا؛ الف۔ پرائمری کی؛ شکل ۸.۱۴",
+  "headingPashto": "انډېکس شوی؛ ۸.۲.۳ په جدولونو کې لومړنۍ کیلي او بهرنۍ کیلي جوړول؛ الف. لومړنۍ کیلي؛ انځور ۸.۱۴",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 272,
+    "printedPage": "263"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s272-i1",
+      "en": "Indexed determines whether an index is built for the table to search and sort the data.",
+      "ur": "انڈیکسڈ طے کرتا ہے کہ ڈیٹا کو تلاش اور ترتیب دینے کے لیے ٹیبل کے لیے انڈیکس بنایا جاتا ہے یا نہیں۔",
+      "ps": "Indexed ټاکي چې ایا د ډېټا د لټون او ترتیب لپاره د جدول لپاره شاخص جوړېږي که نه.",
+      "listGroup": "fp2"
+    },
+    {
+      "id": "cs11-s272-h1",
+      "en": "8.2.3 Creating Primary Key and Foreign Key in the Tables",
+      "ur": "۸.۲.۳ ٹیبلز میں پرائمری کی اور فارن کی بنانا",
+      "ps": "۸.۲.۳ په جدولونو کې لومړنۍ کیلي او بهرنۍ کیلي جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s272-h2",
+      "en": "a. Primary key",
+      "ur": "الف۔ پرائمری کی",
+      "ps": "الف. لومړنۍ کیلي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s272-a",
+      "en": "Primary key is a unique field in a table. After defining all the field names and their data types in Design View, create a primary key for the table as shown in Figure 8.14.",
+      "ur": "پرائمری کی ٹیبل میں ایک منفرد فیلڈ ہے۔ ڈیزائن ویو میں تمام فیلڈ نام اور ان کی ڈیٹا ٹائپس متعین کرنے کے بعد ٹیبل کے لیے پرائمری کی بنائیں جیسا کہ شکل ۸.۱۴ میں دکھایا گیا ہے۔",
+      "ps": "لومړنۍ کیلي په جدول کې یوه ځانګړې ساحه ده. په ډیزاین لید کې د ټولو ساحو نومونو او د هغو د ډېټا ډولونو له ټاکلو وروسته د جدول لپاره لومړنۍ کیلي جوړه کړئ لکه څنګه چې ۸.۱۴ انځور کې ښودل شوی."
+    },
+    {
+      "id": "cs11-s272-b",
+      "en": "The following steps are used to create a primary key.",
+      "ur": "پرائمری کی بنانے کے لیے درج ذیل اقدامات استعمال ہوتے ہیں۔",
+      "ps": "د لومړنۍ کیلي د جوړولو لپاره لاندې ګامونه کارول کېږي."
+    },
+    {
+      "id": "cs11-s272-s1",
+      "en": "Select the field name Roll No by clicking the selection box on the left side of the field name.",
+      "ur": "فیلڈ نام رول نمبر کے بائیں طرف سلیکشن باکس پر کلک کر کے اسے منتخب کریں۔",
+      "ps": "د ساحې نوم Roll No د ساحې نوم په کیڼ لوري د ټاکنې بکس کلیک کولو په واسطه وټاکئ.",
+      "listGroup": "pk"
+    },
+    {
+      "id": "cs11-s272-s2",
+      "en": "Click the primary key icon on the Tools group of Design tab. OR",
+      "ur": "ڈیزائن ٹیب کے ٹولز گروپ میں پرائمری کی آئیکن پر کلک کریں۔ یا",
+      "ps": "د Design ټب د Tools ډلې کې د لومړنۍ کیلي انځورن کلیک کړئ. یا",
+      "listGroup": "pk"
+    },
+    {
+      "id": "cs11-s272-s3",
+      "en": "Right click on the field name and select Primary Key option from the menu.",
+      "ur": "فیلڈ نام پر رائٹ کلک کریں اور مینو سے پرائمری کی کا اختیار منتخب کریں۔",
+      "ps": "د ساحې نوم په ښي کلیک وکړئ او له مېنو نه د Primary Key اختیار وټاکئ.",
+      "listGroup": "pk"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s272-i1",
+        "cs11-s272-h1",
+        "cs11-s272-h2",
+        "cs11-s272-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s272-b",
+        "cs11-s272-s1",
+        "cs11-s272-s2",
+        "cs11-s272-s3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 445 215\" role=\"img\" aria-label=\"Access Design View: Roll No, St Name, Class, Section, Exam ID\" style=\"width:100%;max-width:445px;height:auto;background:#fff\"><rect x=\"5\" y=\"5\" width=\"435\" height=\"205\" fill=\"#f4f7fb\" stroke=\"#555\"/><rect x=\"5\" y=\"5\" width=\"435\" height=\"16\" fill=\"#cfd9ea\" stroke=\"#555\"/><text x=\"222.5\" y=\"17\" font-size=\"8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Database (Access 2007) — Microsoft Access</text><circle cx=\"22\" cy=\"35\" r=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><text x=\"45\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Home</text><text x=\"113\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Create</text><text x=\"181\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">External Data</text><text x=\"249\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Database Tools</text><text x=\"317\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Design</text><rect x=\"10\" y=\"46\" width=\"420\" height=\"36\" fill=\"#e8eef8\" stroke=\"#aaa\"/><rect x=\"10\" y=\"95\" width=\"100\" height=\"100\" fill=\"#fff\" stroke=\"#888\"/><text x=\"15\" y=\"108\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">All Tables</text><text x=\"15\" y=\"124\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"30\" y=\"136\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Table</text><text x=\"15\" y=\"150\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam</text><text x=\"30\" y=\"162\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Exam : Table</text><rect x=\"115\" y=\"95\" width=\"315\" height=\"62\" fill=\"#fff\" stroke=\"#888\"/><text x=\"135\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Field Name</text><text x=\"240\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Data Type</text><text x=\"340\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Description</text><text x=\"135\" y=\"120\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Roll No</text><text x=\"240\" y=\"120\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Number</text><text x=\"135\" y=\"130\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">St Name</text><text x=\"240\" y=\"130\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Text</text><text x=\"135\" y=\"140\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Class</text><text x=\"240\" y=\"140\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Text</text><text x=\"135\" y=\"150\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Section</text><text x=\"240\" y=\"150\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Text</text><text x=\"135\" y=\"160\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam ID</text><text x=\"240\" y=\"160\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Number</text><rect x=\"120\" y=\"113\" width=\"8\" height=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><rect x=\"115\" y=\"160\" width=\"315\" height=\"40\" fill=\"#fff\" stroke=\"#888\"/><text x=\"120\" y=\"172\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">General  Lookup</text><text x=\"120\" y=\"184\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Field Size    Long Integer</text></svg>",
+      "id": "cs11-s272-fig1",
+      "caption": "Figure 8.14 Creating primary key for STUDENT table",
+      "captionUrdu": "شکل ۸.۱۴ اسٹوڈنٹ ٹیبل کے لیے پرائمری کی بنانا",
+      "captionPashto": "انځور ۸.۱۴ د زده کوونکي جدول لپاره لومړنۍ کیلي جوړول",
+      "labels": [
+        {
+          "en": "Roll No",
+          "ur": "رول نمبر",
+          "ps": "رول شمېره"
+        },
+        {
+          "en": "St Name",
+          "ur": "طالب علم کا نام",
+          "ps": "د زده کوونکي نوم"
+        },
+        {
+          "en": "Class",
+          "ur": "کلاس",
+          "ps": "ټولګی"
+        },
+        {
+          "en": "Section",
+          "ur": "سیکشن",
+          "ps": "برخه"
+        },
+        {
+          "en": "Exam ID",
+          "ur": "ایگزام آئی ڈی",
+          "ps": "د ازموینې پېژند"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 263: the last field property “Indexed” (continuing from page 262), the banner “8.2.3 Creating Primary Key and Foreign Key in the Tables”, “a. Primary key” with its paragraph, Figure 8.14 Creating primary key for STUDENT table (a Design View screenshot with the fields Roll No, St Name, Class, Section and Exam ID; redrawn as simplified coded SVG) and the three steps to create a primary key. The bold words Roll No, Tools group, Design tab, Right click and Primary Key are kept in the steps. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:01:26.090560+00:00",
+    "scope": "Scan 272 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

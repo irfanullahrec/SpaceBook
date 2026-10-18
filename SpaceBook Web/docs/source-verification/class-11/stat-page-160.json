@@ -1,0 +1,570 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s160-index-aggregative-1",
+  "title": "Unweighted composite index numbers · (i) Simple aggregative method · Example 4.4",
+  "headingUrdu": "غیر وزنی مرکب اشاریہ اعداد · (i) سادہ مجموعی طریقہ · مثال 4.4",
+  "headingPashto": "نه‌وزني مرکب شاخص شمېرې · (i) ساده مجموعي طریقه · بېلګه 4.4",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 160,
+    "printedPage": "152"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s160-t1",
+      "en": "The following two unweighted index number formulas are used for composite index numbers:",
+      "ur": "مرکب اشاریہ اعداد کے لیے درج ذیل دو غیر وزنی اشاریہ عدد فارمولے استعمال ہوتے ہیں:",
+      "ps": "د مرکبو شاخص شمېرو لپاره لاندې دوه نه‌وزني شاخص شمېرې فورمولونه کارول کېږي:"
+    },
+    {
+      "id": "stat11-s160-h1",
+      "en": "(i) Simple aggregative price index numbers method",
+      "ur": "(i) سادہ مجموعی قیمتی اشاریہ اعداد کا طریقہ",
+      "ps": "(i) ساده مجموعي د بیو شاخص شمېرو طریقه"
+    },
+    {
+      "id": "stat11-s160-t2",
+      "en": "This method shows the percentage change in the aggregate price of a number of commodities at different periods. According to this method, sum of the prices of commodities in a given year is expressed as percentage of the total of the prices of commodities in the base year. Symbolically, it can be written as",
+      "ur": "یہ طریقہ مختلف مدتوں میں متعدد اجناس کی مجموعی قیمت میں فیصد تبدیلی ظاہر کرتا ہے۔ اس طریقے کے مطابق کسی دیے گئے سال میں اجناس کی قیمتوں کا مجموعہ بنیادی سال میں اجناس کی قیمتوں کے کل کے فیصد کے طور پر ظاہر کیا جاتا ہے۔ علامتی طور پر اسے یوں لکھا جا سکتا ہے",
+      "ps": "دا طریقه په بېلابېلو دورو کې د څو توکو د مجموعي بیې سلنه بدلون ښيي. د دې طریقې له مخې په یوه ورکړل شوي کال کې د توکو د بیو مجموعه د بنسټیز کال د توکو د بیو د ټول په سلنه ښودل کېږي. په علامتي ډول دا داسې لیکل کېدای شي"
+    },
+    {
+      "id": "stat11-s160-t3",
+      "en": "Similarly, simple aggregative quantity index number formula is",
+      "ur": "اسی طرح سادہ مجموعی مقداری اشاریہ عدد کا فارمولا ہے",
+      "ps": "همدارنګه د ساده مجموعي مقدار شاخص شمېرې فورمول دی"
+    },
+    {
+      "id": "stat11-s160-ex44",
+      "en": "Example: 4.4",
+      "ur": "مثال: 4.4",
+      "ps": "بېلګه: 4.4",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-4"
+    },
+    {
+      "id": "stat11-s160-q44",
+      "en": "Compute a simple aggregative price index number for the year 1968 based on 1967 from the following data.",
+      "ur": "درج ذیل اعداد و شمار سے 1967 کی بنیاد پر سال 1968 کے لیے سادہ مجموعی قیمتی اشاریہ عدد حساب کریں۔",
+      "ps": "له لاندې معلوماتو څخه د 1967 پر بنسټ د 1968 کال لپاره ساده مجموعي د بیې شاخص شمېره محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-4"
+    },
+    {
+      "id": "stat11-s160-sol44",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-4"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s160-t1",
+        "stat11-s160-h1",
+        "stat11-s160-t2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s160-t3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s160-ex44",
+        "stat11-s160-q44"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s160-sol44"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {
+    "aggregative": {
+      "ur": "مجموعی",
+      "ps": "مجموعي"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s160-e1",
+      "latex": "P_{0n}=\\dfrac{\\sum p_n}{\\sum p_0}\\times 100",
+      "accessible": "P0n = (Σpn / Σp0) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = (Σpn / Σp0) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = (Σpn / Σp0) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = (Σpn / Σp0) × 100"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s160-e2",
+      "latex": "Q_{0n}=\\dfrac{\\sum q_n}{\\sum q_0}\\times 100",
+      "accessible": "Q0n = (Σqn / Σq0) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q0n = (Σqn / Σq0) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q0n = (Σqn / Σq0) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q0n = (Σqn / Σq0) × 100"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.4: commodities and prices",
+      "captionUrdu": "مثال 4.4: اجناس اور قیمتیں",
+      "captionPashto": "بېلګه 4.4: توکي او بیې",
+      "headers": [
+        {
+          "en": "Commodities",
+          "ur": "اجناس",
+          "ps": "توکي"
+        },
+        {
+          "en": "Unit",
+          "ur": "اکائی",
+          "ps": "واحد"
+        },
+        {
+          "en": "Price (in Rs) 1967",
+          "ur": "قیمت (روپوں میں) 1967",
+          "ps": "بیه (په روپیو) 1967"
+        },
+        {
+          "en": "Price (in Rs) 1968",
+          "ur": "قیمت (روپوں میں) 1968",
+          "ps": "بیه (په روپیو) 1968"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Milk",
+            "ur": "Milk",
+            "ps": "Milk"
+          },
+          {
+            "en": "Seer",
+            "ur": "Seer",
+            "ps": "Seer"
+          },
+          {
+            "en": "0.75",
+            "ur": "0.75",
+            "ps": "0.75"
+          },
+          {
+            "en": "0.85",
+            "ur": "0.85",
+            "ps": "0.85"
+          }
+        ],
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "Maund",
+            "ur": "Maund",
+            "ps": "Maund"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ],
+        [
+          {
+            "en": "Salt",
+            "ur": "Salt",
+            "ps": "Salt"
+          },
+          {
+            "en": "Maund",
+            "ur": "Maund",
+            "ps": "Maund"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          }
+        ],
+        [
+          {
+            "en": "Oil",
+            "ur": "Oil",
+            "ps": "Oil"
+          },
+          {
+            "en": "Gallon",
+            "ur": "Gallon",
+            "ps": "Gallon"
+          },
+          {
+            "en": "1.25",
+            "ur": "1.25",
+            "ps": "1.25"
+          },
+          {
+            "en": "1.35",
+            "ur": "1.35",
+            "ps": "1.35"
+          }
+        ],
+        [
+          {
+            "en": "Cloth",
+            "ur": "Cloth",
+            "ps": "Cloth"
+          },
+          {
+            "en": "Yard",
+            "ur": "Yard",
+            "ps": "Yard"
+          },
+          {
+            "en": "2.25",
+            "ur": "2.25",
+            "ps": "2.25"
+          },
+          {
+            "en": "2.60",
+            "ur": "2.60",
+            "ps": "2.60"
+          }
+        ],
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "Ton",
+            "ur": "Ton",
+            "ps": "Ton"
+          },
+          {
+            "en": "351",
+            "ur": "351",
+            "ps": "351"
+          },
+          {
+            "en": "335",
+            "ur": "335",
+            "ps": "335"
+          }
+        ],
+        [
+          {
+            "en": "Sugar",
+            "ur": "Sugar",
+            "ps": "Sugar"
+          },
+          {
+            "en": "Seer",
+            "ur": "Seer",
+            "ps": "Seer"
+          },
+          {
+            "en": "1.25",
+            "ur": "1.25",
+            "ps": "1.25"
+          },
+          {
+            "en": "1.40",
+            "ur": "1.40",
+            "ps": "1.40"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-4"
+    },
+    {
+      "caption": "Example 4.4 solution table",
+      "captionUrdu": "مثال 4.4 کا حل: جدول",
+      "captionPashto": "د بېلګې 4.4 د حل جدول",
+      "headers": [
+        {
+          "en": "Commodities",
+          "ur": "اجناس",
+          "ps": "توکي"
+        },
+        {
+          "en": "Unit",
+          "ur": "اکائی",
+          "ps": "واحد"
+        },
+        {
+          "en": "1967 (p0)",
+          "ur": "1967 (p0)",
+          "ps": "1967 (p0)"
+        },
+        {
+          "en": "1968 (pn)",
+          "ur": "1968 (pn)",
+          "ps": "1968 (pn)"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Milk",
+            "ur": "Milk",
+            "ps": "Milk"
+          },
+          {
+            "en": "Seer",
+            "ur": "Seer",
+            "ps": "Seer"
+          },
+          {
+            "en": "0.75",
+            "ur": "0.75",
+            "ps": "0.75"
+          },
+          {
+            "en": "0.85",
+            "ur": "0.85",
+            "ps": "0.85"
+          }
+        ],
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "Maund",
+            "ur": "Maund",
+            "ps": "Maund"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ],
+        [
+          {
+            "en": "Salt",
+            "ur": "Salt",
+            "ps": "Salt"
+          },
+          {
+            "en": "Maund",
+            "ur": "Maund",
+            "ps": "Maund"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          }
+        ],
+        [
+          {
+            "en": "Oil",
+            "ur": "Oil",
+            "ps": "Oil"
+          },
+          {
+            "en": "Gallon",
+            "ur": "Gallon",
+            "ps": "Gallon"
+          },
+          {
+            "en": "1.25",
+            "ur": "1.25",
+            "ps": "1.25"
+          },
+          {
+            "en": "1.35",
+            "ur": "1.35",
+            "ps": "1.35"
+          }
+        ],
+        [
+          {
+            "en": "Cloth",
+            "ur": "Cloth",
+            "ps": "Cloth"
+          },
+          {
+            "en": "Yard",
+            "ur": "Yard",
+            "ps": "Yard"
+          },
+          {
+            "en": "2.25",
+            "ur": "2.25",
+            "ps": "2.25"
+          },
+          {
+            "en": "2.60",
+            "ur": "2.60",
+            "ps": "2.60"
+          }
+        ],
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "Tan",
+            "ur": "Tan",
+            "ps": "Tan"
+          },
+          {
+            "en": "351",
+            "ur": "351",
+            "ps": "351"
+          },
+          {
+            "en": "335",
+            "ur": "335",
+            "ps": "335"
+          }
+        ],
+        [
+          {
+            "en": "Sugar",
+            "ur": "Sugar",
+            "ps": "Sugar"
+          },
+          {
+            "en": "Seer",
+            "ur": "Seer",
+            "ps": "Seer"
+          },
+          {
+            "en": "1.25",
+            "ur": "1.25",
+            "ps": "1.25"
+          },
+          {
+            "en": "1.40",
+            "ur": "1.40",
+            "ps": "1.40"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "Σp0 = 401.50",
+            "ur": "Σp0 = 401.50",
+            "ps": "Σp0 = 401.50"
+          },
+          {
+            "en": "Σpn = 384.20",
+            "ur": "Σpn = 384.20",
+            "ps": "Σpn = 384.20"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-4"
+    }
+  ],
+  "sourceNote": "Printed page 152. In the solution table the unit of wheat is printed \"Tan\" (the question table has \"Ton\"); kept as printed. The two-level header \"Price (in Rs) / 1967 / 1968\" is flattened. Handwritten notes near the first formula are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:07:53.858297+00:00",
+    "scope": "Scan 160 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

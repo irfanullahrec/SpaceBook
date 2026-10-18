@@ -1,0 +1,33 @@
+@printed 56
+@status lesson
+p … کیا گیا ہے۔ یہ وہ ویری ایبل ہیں جنہیں کوئی قیمت دینی ہے۔ & کی علامت کو scanf کے ساتھ استعمال کیا جاتا ہے جو میموری ایڈریس کو ظاہر کرتی ہے۔ || … These are the variables that are to be given values. The & sign used with scanf represents the memory address. || … دا هغه متغیرونه دي چې ارزښت ورکول کېږي. د & نښه له scanf سره کارېږي او د حافظې پته (address) ښيي.
+p مثال کے طور پر، ڈیٹا ٹائپ انٹیجر کے دو عددی ویری ایبل، n1 اور n2 میں قیمتیں درج کرنے کے لئے scanf() فنکشن ایسے لکھا جائے گا: || For example, to enter values into two numeric variables of data type integer, n1 and n2, the scanf() function is written like this: || د بېلګې په توګه، د بشپړ عدد ډېټا ډول د دوو عددي متغیرونو n1 او n2 د ارزښت ورکولو لپاره scanf() داسې لیکل کېږي:
+m scanf("%d,%d", &a, &b);
+@issue The text names the variables n1 and n2 but the code uses a and b. Also, with the format "%d,%d" the user must type a comma between the two numbers (e.g. 5,7).
+p %d کا فارمیٹ سپیسیفائیر انٹیجر ویری ایبل کے لیے استعمال ہوتا ہے۔ || The format specifier %d is used for integer variables. || د %d فارمېټ مشخص کوونکی د بشپړ عدد متغیرونو لپاره کارېږي.
+### پروگرام 3.5 طالب علم کے رول نمبر، حاصل کردہ نمبر، کل نمبر اِن پُٹ کروا کے فیصد معلوم کرنے کے لیے پروگرام۔ || Program 3.5 A program that inputs a student's roll number, obtained marks and total marks and finds the percentage || پروګرام ۳.۵ د زده کوونکي رول نمبر، ترلاسه شوې نمرې او ټولې نمرې داخلوي او سلنه پیدا کوي
+m #include<stdio.h>
+m void main()
+m {
+m int rn,tm,om;
+m float pm;
+m printf("\nEnter Roll number= ");
+m scanf("%d",&rn);
+m printf("\nEnter Total marks= ");
+m scanf("%d",&tm);
+m printf("\nEnter Obtained marks= ");
+m scanf("%d",&om);
+m pm=om/tm*100;
+m printf("\nPercentage marks=%f",pm);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter Roll number = 10
+m Enter Total marks = 800
+m Enter Obtained marks = 650
+m Percentage marks = 81.25
+endbox
+@issue Program 3.5 has a logic error: om and tm are int, so om/tm is integer division (650/800 = 0) and pm becomes 0, printed as 0.000000. To get 81.25 write pm = (float)om/tm*100; (or om*100.0/tm). Even then %f prints 81.250000; "%.2f" would print 81.25 as shown.
+### (b) getche()، getch() اور getchar() فنکشنز || (b) The getche(), getch() and getchar() functions || (b) getche()، getch() او getchar() فنکشنونه
+p getch()، getche() اور getchar() اِن پُٹ فنکشنز ہیں جو کی بورڈ سے ایک حرف (Character) کی اِن پُٹ کے لیے استعمال ہوتے ہیں۔ ان فنکشنز میں کسی بھی آرگومنٹ کی ضرورت نہیں ہے۔ ان فنکشنز کے ساتھ صرف خالی بریکٹ ہی استعمال کی جاتی ہے۔ || getch(), getche() and getchar() are input functions used to input one character from the keyboard. These functions need no argument; only empty brackets are used with them. || getch()، getche() او getchar() د input فنکشنونه دي چې له کیبورډ څخه د یوه توري (Character) د داخلولو لپاره کارېږي. دې فنکشنونو ته هېڅ دلیل (argument) نه دی پکار؛ یوازې تش قوسونه ورسره کارېږي.
+### getch() || getch() || getch()
+p getch() کا فنکشن کی بورڈ سے ایک کریکٹر اِن پُٹ کرنے کے لیے استعمال ہوتا ہے لیکن اس فنکشن سے جو کریکٹر اِن پُٹ کیا جاتا ہے وہ سکرین پر دکھائے بغیر اِن پُٹ ہوتا ہے اور ویری ایبل میں اسٹور ہو جاتا ہے۔ || The getch() function is used to input one character from the keyboard, but the character input with this function is taken without being shown on the screen, and is stored in a variable. || getch() فنکشن له کیبورډ څخه د یوه توري د داخلولو لپاره کارېږي، خو په دې فنکشن داخل شوی توری په سکرین له ښودلو پرته داخلېږي او په متغیر کې ساتل کېږي.

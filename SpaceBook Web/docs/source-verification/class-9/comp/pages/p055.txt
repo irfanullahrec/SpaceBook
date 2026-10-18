@@ -1,0 +1,20 @@
+@pdf 52
+@printed 47
+@status lesson
+p ***Syntax:*** || ***سنٹیکس:*** || ***Syntax:***
+m #include<header-file.h>
+p ***Examples:*** || ***مثالیں:*** || ***بېلګې:***
+m #include <stdio.h>
+m #include <conio.h>
+### Some important header files: || چند اہم ہیڈر فائلیں: || ځینې مهم header فایلونه:
+### <stdio.h> || <stdio.h> || <stdio.h>
+p The ***stdio.h*** header file stands for standard input-output header. It includes the standard input/output functions i.e., ***scanf()*** and ***printf()*** in the program. || ***stdio.h*** ہیڈر فائل سے مراد اسٹینڈرڈ ان پٹ آؤٹ پٹ ہیڈر ہے۔ یہ پروگرام میں معیاری ان پٹ/آؤٹ پٹ فنکشنز یعنی ***scanf()*** اور ***printf()*** شامل کرتی ہے۔ || ***stdio.h*** header فایل د معیاري input-output header معنا لري. په پروګرام کې معیاري input/output فنکشنونه یعنې ***scanf()*** او ***printf()*** شاملوي.
+### <conio.h> || <conio.h> || <conio.h>
+p It stands for console input/output. *conio.h* header file used in C programming contains functions for console input/output. Some of the most commonly used functions of *conio.h* are ***clrscr(), getch(), getche()*** etc. Functions of *conio.h* can be used to clear screen, change color of text and background, move text, check if a key is pressed or not and many more. || اس سے مراد کنسول ان پٹ/آؤٹ پٹ ہے۔ C پروگرامنگ میں استعمال ہونے والی *conio.h* ہیڈر فائل میں کنسول ان پٹ/آؤٹ پٹ کے فنکشنز ہوتے ہیں۔ *conio.h* کے چند عام فنکشنز ***clrscr()، getch()، getche()*** وغیرہ ہیں۔ *conio.h* کے فنکشنز اسکرین صاف کرنے، متن اور پس منظر کا رنگ بدلنے، متن ہلانے، یہ جانچنے کہ کوئی کلید دبائی گئی یا نہیں اور بہت سے دیگر کاموں کے لیے استعمال ہو سکتے ہیں۔ || دا د console input/output معنا لري. په C کې کارېدونکی *conio.h* header فایل د console input/output فنکشنونه لري. د *conio.h* ځینې عام فنکشنونه ***clrscr()، getch()، getche()*** او نور دي. د *conio.h* فنکشنونه د پردې پاکولو، د متن او شالید رنګ بدلولو، د متن خوځولو، د دې ازمویلو چې کیلي کېښکېل شوې که نه او نورو لپاره کارېدای شي.
+### <math.h> || <math.h> || <math.h>
+p *math.h* header file contains constants and functions to perform mathematical operations. Users can use functions of *math.h* in C programs to calculate absolute value of a number, calculating logarithms and using trigonometric functions to calculate *sine, cosine* of an angle. || *math.h* ہیڈر فائل میں ریاضیاتی عمل کرنے کے لیے کانسٹنٹس اور فنکشنز ہوتے ہیں۔ صارفین C پروگراموں میں *math.h* کے فنکشنز کسی عدد کی مطلق قدر معلوم کرنے، لوگارتھم نکالنے اور کسی زاویے کا *sine، cosine* معلوم کرنے کے لیے مثلثیاتی فنکشنز استعمال کرنے میں استعمال کر سکتے ہیں۔ || *math.h* header فایل د ریاضي عملیاتو لپاره ثابتونه او فنکشنونه لري. کاروونکي کولای شي په C پروګرامونو کې د *math.h* فنکشنونه د عدد د مطلق ارزښت، لوګاریتم او د زاویې د *sine، cosine* لپاره د مثلثاتي فنکشنونو کارولو لپاره وکاروي.
+### <string.h> || <string.h> || <string.h>
+p The string library *string.h* has some useful functions for working with strings, like ***strcpy(), strcat(), strcmp(), strlen()***, etc. || اسٹرنگ لائبریری *string.h* میں اسٹرنگز کے ساتھ کام کرنے کے چند مفید فنکشنز ہیں جیسے ***strcpy()، strcat()، strcmp()، strlen()*** وغیرہ۔ || د string کتابتون *string.h* له strings سره د کار ځینې ګټور فنکشنونه لري لکه ***strcpy()، strcat()، strcmp()، strlen()*** او نور.
+### The *main()* function || *main()* فنکشن || *main()* فنکشن
+p This function must always be present in every C program. The main function is the point where C program starts execution. || یہ فنکشن ہر C پروگرام میں ہمیشہ موجود ہونا چاہیے۔ main فنکشن وہ مقام ہے جہاں سے C پروگرام کا چلنا شروع ہوتا ہے۔ || دا فنکشن باید تل په هر C پروګرام کې وي. main فنکشن هغه ټکی دی چې د C پروګرام اجرا ترې پیلېږي.
+p The word *main* is followed in the code by a pair of parenthesis ( ). If *main()* function is not included, the program is not compiled and an error message is generated. || کوڈ میں لفظ *main* کے بعد قوسین ( ) کا جوڑا آتا ہے۔ اگر *main()* فنکشن شامل نہ ہو تو پروگرام کمپائل نہیں ہوتا اور غلطی کا پیغام آتا ہے۔ || په کوډ کې د *main* کلمې وروسته د قوسونو جوړه ( ) راځي. که *main()* فنکشن شامل نه وي، پروګرام نه compile کېږي او د تېروتنې پیغام جوړېږي.

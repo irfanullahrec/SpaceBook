@@ -1,0 +1,30 @@
+@printed 60
+@status lesson
+p ایک اہم بات یہ نوٹ کی جائے کہ، یہ لازمی ہے کہ کی بورڈ سے درج کی گئی قیمت ویری ایبل کی ڈیٹا ٹائپ سے مماثل ہونی چاہیئے۔ scanf() فنکشن کی طرح، cin میں ویری ایبل کے نام کے ساتھ & آپریٹر کی ضرورت نہیں ہوتی ہے۔ || An important point to note is that the value entered from the keyboard must match the data type of the variable. Unlike the scanf() function, cin does not need the & operator with the variable name. || یو مهم ټکی دا دی چې له کیبورډ داخل شوی ارزښت باید د متغیر له ډېټا ډول سره سمون ولري. د scanf() فنکشن په خلاف، cin د متغیر له نوم سره د & عملګر اړتیا نه لري.
+@issue The Urdu says "scanf() فنکشن کی طرح" (like the scanf() function), but scanf() does need & — the intended meaning is "unlike scanf()".
+### پروگرام 3.11 || Program 3.11 || پروګرام ۳.۱۱
+p فارن ہائیٹ درجہ حرارت کو سینٹی گریڈ درجہ حرارت میں تبدیل کرنے کے لئے ایک پروگرام لکھیں۔ فارن ہائیٹ درجہ حرارت رن ٹائم پر کی بورڈ سے اِن پُٹ ہونا چاہئے۔ || Write a program to convert a Fahrenheit temperature into a centigrade temperature. The Fahrenheit temperature should be input from the keyboard at run time. || داسې پروګرام ولیکئ چې د فارنهایټ تودوخه په سانتي ګراد تودوخه بدله کړي. د فارنهایټ تودوخه باید د چلېدو پر مهال له کیبورډ داخله شي.
+m using namespace std;
+m #include<iostream>
+m int main( )
+m {
+m   float ftemp, ctemp;
+m   cout<<"\n Please input a value for Fahrenheit temperature: ";
+m   cin>>ftemp;
+m   ctemp = (ftemp-32) * 5 / 9;
+m   cout<<"\nCelsius equivalent of Fahrenheit :"<< ftemp<<" is "<<ctemp;
+m   return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Please input a value for Fahrenheit temperature: 98.6
+m Celsius equivalent of Fahrenheit : 98.6 is 37
+endbox
+@issue As in Program 3.4, "using namespace std;" is placed before "#include<iostream>"; it must come after the include to compile.
+@sec 3-1-3 | 3.1.3 اسٹیٹمنٹ ٹرمینیٹر || 3.1.3 Statement terminator || ۳.۱.۳ د بیان پای ټکی
+### 3.1.3 اسٹیٹمنٹ ٹرمینیٹر (Statement Terminator) || 3.1.3 Statement terminator || ۳.۱.۳ د بیان پای ټکی (Statement Terminator)
+p C کے ہر پروگرام میں ایک اسٹیٹمنٹ کو دوسری اسٹیٹمنٹ سے جدا کرنے کے لیے اسٹیٹمنٹ کے اختتام پر سیمی کالن ( ; ) کا استعمال کیا جاتا ہے۔ یہ سیمی کالن کمپائلر کو بتاتا ہے کہ ایک اسٹیٹمنٹ اس جگہ ختم ہو گئی ہے۔ اگر ایک اسٹیٹمنٹ کو سیمی کالن سے ختم نہیں کیا جاتا تو، C کا کمپائلر کمپائل کرنے کے عمل کے دوران Error Message دے گا اور پروگرام کمپائل نہیں کیا جائے گا۔ || In every C program a semicolon ( ; ) is used at the end of a statement to separate it from the next statement. The semicolon tells the compiler that a statement has ended at that point. If a statement is not ended with a semicolon, the C compiler gives an error message during compilation and the program is not compiled. || د C په هر پروګرام کې د یوه بیان د بل څخه د جلا کولو لپاره د بیان په پای کې سیمي کولن ( ; ) کارېږي. سیمي کولن کمپایلر ته وايي چې بیان دلته پای ته ورسېد. که بیان په سیمي کولن پای ته ونه رسېږي، د C کمپایلر د کمپایل پر مهال Error Message ورکوي او پروګرام نه کمپایلېږي.
+p مثال کے طور پر، || For example, || د بېلګې په توګه،
+m printf("Hello, World! \n"); // Semicolon is used to show end of statement
+@sec 3-1-4 | 3.1.4 فارمیٹ سپیسیفائرز || 3.1.4 Format specifiers || ۳.۱.۴ فارمېټ مشخص کوونکي
+### 3.1.4 فارمیٹ سپیسیفائرز (Format Specifiers) || 3.1.4 Format specifiers || ۳.۱.۴ فارمېټ مشخص کوونکي (Format Specifiers)
+p فارمیٹ سپیسیفائر اِن پُٹ اور آؤٹ پُٹ مقاصد کے لئے C میں استعمال ہوتا ہے۔ اس کے استعمال کرنے سے کمپائلر یہ سمجھ سکتا ہے کہ scanf() فنکشن اور printf() فنکشن میں ویری ایبل کس قسم کا ڈیٹا لیتا یا پرنٹ کرتا ہے۔ ذیل میں فارمیٹ سپیسیفائر کی ایک فہرست دی گئی ہے۔ || Format specifiers are used in C for input and output purposes. Using them, the compiler can understand what kind of data a variable takes or prints in the scanf() and printf() functions. A list of format specifiers is given below. || فارمېټ مشخص کوونکي په C کې د input او output لپاره کارېږي. د دوی په کارولو کمپایلر پوهېږي چې په scanf() او printf() فنکشنونو کې متغیر کوم ډول ډېټا اخلي یا چاپوي. لاندې د فارمېټ مشخص کوونکو لړلیک دی.

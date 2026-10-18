@@ -1,0 +1,147 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s166-p157",
+  "title": "Layer 6: Presentation Layer; Layer 7: Application Layer; 5.2.3 Examples of Devices and Protocols",
+  "headingUrdu": "تہہ ۶: پریزنٹیشن لیئر؛ تہہ ۷: ایپلیکیشن لیئر؛ ۵.۲.۳ آلات اور پروٹوکولز کی مثالیں",
+  "headingPashto": "طبقه ۶: د وړاندې کولو طبقه؛ طبقه ۷: د اپلېکېشن طبقه؛ ۵.۲.۳ د وسایلو او پروتوکولونو بېلګې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 166,
+    "printedPage": "157"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s166-h1",
+      "en": "Layer 6: PRESENTATION LAYER",
+      "ur": "تہہ ۶: پریزنٹیشن لیئر",
+      "ps": "طبقه ۶: د وړاندې کولو طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s166-a",
+      "en": "The presentation layer converts incoming and outgoing data from one presentation format to another (for example, from a text stream into a popup window with the newly arrived text). The presentation layer is sometimes called as the syntax layer. It can be viewed as the translator for the network. The presentation layer provides the following functions.",
+      "ur": "پریزنٹیشن لیئر آنے والے اور جانے والے ڈیٹا کو ایک پیشکش کی شکل سے دوسری میں تبدیل کرتی ہے (مثلاً متن کے دھارے سے نئے آنے والے متن کے ساتھ پاپ اپ ونڈو میں)۔ پریزنٹیشن لیئر کو کبھی کبھی سنٹیکس لیئر بھی کہتے ہیں۔ اسے نیٹ ورک کے مترجم کے طور پر دیکھا جا سکتا ہے۔ پریزنٹیشن لیئر درج ذیل افعال فراہم کرتی ہے۔",
+      "ps": "د وړاندې کولو طبقه راتلونکې او وتونکې ډېټا له یوې وړاندې کولو بڼې نه بلې ته بدلوي (د بېلګې په توګه له متن جریان نه د نوي راغلي متن سره په پاپ اپ کړکۍ). د وړاندې کولو طبقې ته ځینې وخت د ترکیب طبقه هم ویل کېږي. دا د شبکې د ژباړونکي په توګه کتل کېدای شي. د وړاندې کولو طبقه لاندې دندې برابروي."
+    },
+    {
+      "id": "cs11-s166-p1",
+      "en": "Character code translation: for example, ASCII to EBCDIC.",
+      "ur": "کریکٹر کوڈ کا ترجمہ: مثلاً اسکی سے ای بی سی ڈی آئی سی۔",
+      "ps": "د توري کوډ ژباړه: د بېلګې په توګه ASCII نه EBCDIC ته.",
+      "listGroup": "l6"
+    },
+    {
+      "id": "cs11-s166-p2",
+      "en": "Data compression: reduces the number of bits that need to be transmitted on the network.",
+      "ur": "ڈیٹا کمپریشن: ان بٹس کی تعداد کم کرتا ہے جنہیں نیٹ ورک پر منتقل کرنا پڑتا ہے۔",
+      "ps": "د ډېټا فشار: د هغو بټونو شمېر کموي چې په شبکه باید ولېږدول شي.",
+      "listGroup": "l6"
+    },
+    {
+      "id": "cs11-s166-p3",
+      "en": "Data encryption: encrypt data for security purposes. For example, password encryption.",
+      "ur": "ڈیٹا انکرپشن: سیکیورٹی کے مقاصد کے لیے ڈیٹا کو خفیہ کرنا۔ مثلاً پاس ورڈ انکرپشن۔",
+      "ps": "د ډېټا کوډ کول: د امنیت موخو لپاره ډېټا کوډ کول. د بېلګې په توګه د پټنوم کوډ کول.",
+      "listGroup": "l6"
+    },
+    {
+      "id": "cs11-s166-p4",
+      "en": "Specifies architecture-independent data transfer format.",
+      "ur": "تعمیر سے آزاد ڈیٹا منتقلی کی شکل متعین کرتی ہے۔",
+      "ps": "د جوړښت نه خپلواک د ډېټا د لېږد بڼه ټاکي.",
+      "listGroup": "l6"
+    },
+    {
+      "id": "cs11-s166-h2",
+      "en": "Layer 7: APPLICATION LAYER",
+      "ur": "تہہ ۷: ایپلیکیشن لیئر",
+      "ps": "طبقه ۷: د اپلېکېشن طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s166-b",
+      "en": "The application layer serves as the user interface for users and application processes to access network services. The application layer is responsible for displaying data and images to the user in a human-recognizable format. It provides an interface with the presentation layer. Everything at this layer is application-specific. This layer performs the following functions.",
+      "ur": "ایپلیکیشن لیئر صارفین اور ایپلیکیشن پروسیسز کے لیے نیٹ ورک خدمات تک رسائی کے صارف انٹرفیس کا کام کرتی ہے۔ ایپلیکیشن لیئر صارف کو ڈیٹا اور تصاویر انسان کے پہچاننے کے قابل شکل میں دکھانے کی ذمہ دار ہے۔ یہ پریزنٹیشن لیئر کے ساتھ انٹرفیس فراہم کرتی ہے۔ اس تہہ پر ہر چیز ایپلیکیشن کے لیے مخصوص ہے۔ یہ تہہ درج ذیل افعال انجام دیتی ہے۔",
+      "ps": "د اپلېکېشن طبقه د کاروونکو او اپلېکېشن پروسو لپاره د شبکې خدمتونو ته د لاسرسي د کاروونکي انټرفیس په توګه کار کوي. د اپلېکېشن طبقه کاروونکي ته د ډېټا او انځورونو د انسان د پېژندلو وړ بڼه کې د ښودلو مسؤله ده. دا د وړاندې کولو طبقې سره انټرفیس برابروي. پدې طبقه هر څه د اپلېکېشن ځانګړي دي. دا طبقه لاندې دندې ترسره کوي."
+    },
+    {
+      "id": "cs11-s166-a1",
+      "en": "Resource sharing",
+      "ur": "وسائل کا اشتراک",
+      "ps": "د سرچینو ګډون",
+      "listGroup": "l7"
+    },
+    {
+      "id": "cs11-s166-a2",
+      "en": "Remote file access",
+      "ur": "دور دراز فائل رسائی",
+      "ps": "د لیرې فایل لاسرسی",
+      "listGroup": "l7"
+    },
+    {
+      "id": "cs11-s166-a3",
+      "en": "Network management",
+      "ur": "نیٹ ورک انتظام",
+      "ps": "د شبکې مدیریت",
+      "listGroup": "l7"
+    },
+    {
+      "id": "cs11-s166-a4",
+      "en": "Directory services",
+      "ur": "ڈائریکٹری خدمات",
+      "ps": "د لارښود خدمتونه",
+      "listGroup": "l7"
+    },
+    {
+      "id": "cs11-s166-a5",
+      "en": "Electronic messaging (such as e-mail)",
+      "ur": "برقی پیغام رسانی (جیسے ای میل)",
+      "ps": "برېښنايي پیغام لېږل (لکه برېښنالیک)",
+      "listGroup": "l7"
+    },
+    {
+      "id": "cs11-s166-h3",
+      "en": "5.2.3 Examples of Devices and Protocols on Layers of OSI Model",
+      "ur": "۵.۲.۳ او ایس آئی ماڈل کی تہوں پر آلات اور پروٹوکولز کی مثالیں",
+      "ps": "۵.۲.۳ د OSI ماډل په طبقو د وسایلو او پروتوکولونو بېلګې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s166-c",
+      "en": "The following are some common network devices and protocols and where they are implemented in the OSI model.",
+      "ur": "درج ذیل کچھ عام نیٹ ورک آلات اور پروٹوکولز ہیں اور یہ کہ وہ او ایس آئی ماڈل میں کہاں نافذ ہیں۔",
+      "ps": "لاندې د شبکې ځینې عام وسایل او پروتوکولونه دي او دا چې په OSI ماډل کې چېرته پلي کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s166-h1",
+        "cs11-s166-a",
+        "cs11-s166-p1",
+        "cs11-s166-p2",
+        "cs11-s166-p3",
+        "cs11-s166-p4",
+        "cs11-s166-h2",
+        "cs11-s166-b",
+        "cs11-s166-a1",
+        "cs11-s166-a2",
+        "cs11-s166-a3",
+        "cs11-s166-a4",
+        "cs11-s166-a5",
+        "cs11-s166-h3",
+        "cs11-s166-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 157: “Layer 6: PRESENTATION LAYER” with its paragraph and four bullets, “Layer 7: APPLICATION LAYER” with its paragraph and five bullets, and the banner “5.2.3 Examples of Devices and Protocols on Layers of OSI Model” with its lead-in sentence (the table follows on the next page). The words “called as the syntax layer” are printed in a slightly muddled order in the first sentences and are given in reading order. Handwritten marks at the top are excluded. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:22:41.073278+00:00",
+    "scope": "Scan 166 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

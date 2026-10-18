@@ -1,0 +1,18 @@
+@pdf 171
+@printed 218
+@status lesson
+m         </td>
+m       </tr>
+m     </table>
+m   </body>
+m </html>
+p This code will produce the following result in the browser window as shown in Figure 7.55. || یہ کوڈ براؤزر ونڈو میں شکل 7.55 کی طرح نتیجہ دے گا۔ || دا کوډ به په براوزر کې د ۷.۵۵ شکل په څېر پایله ورکړي.
+p (Figure 7.55: Table with nowrap attribute — the first cell shows the sentence on one long line, the second cell wraps it word by word in a narrow column.) || (شکل 7.55: nowrap والا جدول — پہلے خانے میں جملہ ایک لمبی سطر میں، دوسرے میں تنگ کالم میں لفظ بہ لفظ ٹوٹا ہوا۔) || (۷.۵۵ شکل: د nowrap سره جدول — په لومړۍ خانه کې جمله په یوه اوږده کرښه، په دویمه کې په تنګه ستن کې کلمه په کلمه ماته.)
+p *rowspan* attribute will specify the no of rows a cell should span. For example: || *rowspan* خصوصیت بتاتی ہے کہ ایک خانہ کتنی قطاروں پر پھیلے۔ مثلاً: || *rowspan* attribute ټاکي چې یوه خانه به څو قطارونه ونیسي. د بېلګې په توګه:
+m <html>
+m <head>
+m </head>
+m <body>
+m  <table>
+m   <tr>
+m     <th>Month</th>

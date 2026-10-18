@@ -1,0 +1,131 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s082-p073",
+  "title": "3.1 CPU; 3.1.1 Basic Components of CPU: a. ALU; b. Control Unit — start",
+  "headingUrdu": "۳.۱ سی پی یو؛ ۳.۱.۱ سی پی یو کے بنیادی اجزاء: الف۔ اے ایل یو؛ ب۔ کنٹرول یونٹ — آغاز",
+  "headingPashto": "۳.۱ CPU؛ ۳.۱.۱ د CPU بنسټیز اجزا: الف. ALU؛ ب. کنټرول واحد — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 82,
+    "printedPage": "73"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s082-h1",
+      "en": "3.1 CPU (CENTRAL PROCESSING UNIT)",
+      "ur": "۳.۱ سی پی یو (مرکزی پراسیسنگ یونٹ)",
+      "ps": "۳.۱ CPU (مرکزي پروسس واحد)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s082-a",
+      "en": "Central Processing Unit (CPU) is the integral part of any computer system. It is the brain of computer system. Just like the activities of human body, which controls all the human brain which controls all the CPU is connected to all parts of the Computer. CPU not only execute instructions but also controls the storage of data, input output activities and functions of different devices attached. CPU is also called microprocessor or processor.",
+      "ur": "مرکزی پراسیسنگ یونٹ (سی پی یو) کسی بھی کمپیوٹر سسٹم کا لازمی حصہ ہے۔ یہ کمپیوٹر سسٹم کا دماغ ہے۔ جیسے انسانی جسم کی سرگرمیوں کو انسانی دماغ کنٹرول کرتا ہے، اسی طرح سی پی یو کمپیوٹر کے تمام حصوں سے منسلک ہے اور کمپیوٹر کے تمام عمل کو کنٹرول کرتا ہے۔ سی پی یو نہ صرف ہدایات پر عمل کرتا ہے بلکہ ڈیٹا کے ذخیرے، ان پٹ آؤٹ پٹ سرگرمیوں اور منسلک مختلف آلات کے افعال کو بھی کنٹرول کرتا ہے۔ سی پی یو کو مائیکرو پراسیسر یا پراسیسر بھی کہا جاتا ہے۔",
+      "ps": "مرکزي پروسس واحد (CPU) د هر کمپیوټر سیسټم لازمي برخه ده. دا د کمپیوټر سیسټم مغز دی. لکه د انساني بدن فعالیتونه، چې انساني مغز یې کنټرولوي، همداسې CPU د کمپیوټر له ټولو برخو سره وصل دی او د کمپیوټر ټول عملونه کنټرولوي. CPU نه یوازې لارښوونې پلي کوي بلکې د ډېټا ذخیره، د دخل وتل فعالیتونه او د وصل شویو مختلفو وسایلو دندې هم کنټرولوي. CPU ته مایکروپروسیسر یا پروسیسر هم ویل کېږي."
+    },
+    {
+      "id": "cs11-s082-h2",
+      "en": "3.1.1 Basic Components of CPU",
+      "ur": "۳.۱.۱ سی پی یو کے بنیادی اجزاء",
+      "ps": "۳.۱.۱ د CPU بنسټیز اجزا",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s082-b",
+      "en": "CPU consists of the following basic components.",
+      "ur": "سی پی یو درج ذیل بنیادی اجزاء پر مشتمل ہے۔",
+      "ps": "CPU له لاندې بنسټیزو اجزاوو جوړ دی."
+    },
+    {
+      "id": "cs11-s082-t1",
+      "en": "Arithmetic and Logic Unit (ALU)",
+      "ur": "ریاضیاتی اور منطقی یونٹ (اے ایل یو)",
+      "ps": "ریاضیاتي او منطقي واحد (ALU)",
+      "listGroup": "comp"
+    },
+    {
+      "id": "cs11-s082-t2",
+      "en": "Control Unit (CU)",
+      "ur": "کنٹرول یونٹ (سی یو)",
+      "ps": "کنټرول واحد (CU)",
+      "listGroup": "comp"
+    },
+    {
+      "id": "cs11-s082-t3",
+      "en": "Registers",
+      "ur": "رجسٹرز",
+      "ps": "رجسترونه",
+      "listGroup": "comp"
+    },
+    {
+      "id": "cs11-s082-t4",
+      "en": "Cache",
+      "ur": "کیش",
+      "ps": "کېش",
+      "listGroup": "comp"
+    },
+    {
+      "id": "cs11-s082-t5",
+      "en": "Internal Buses",
+      "ur": "اندرونی بسیں",
+      "ps": "دننني بسونه",
+      "listGroup": "comp"
+    },
+    {
+      "id": "cs11-s082-h3",
+      "en": "a. Arithmetic and Logic Unit (ALU)",
+      "ur": "الف۔ ریاضیاتی اور منطقی یونٹ (اے ایل یو)",
+      "ps": "الف. ریاضیاتي او منطقي واحد (ALU)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s082-c",
+      "en": "Arithmetic Logic Unit is the main processing unit of CPU. It performs arithmetic and logic operations on data. Arithmetic means addition, subtraction, multiplication, division and logical operation is the comparison between two data items. ALU processes the data and then gives back the results. The results of an operation are stored in registers (temporary storage locations). Now a days CPUs have more than one ALUs that can do the calculation simultaneously in order to improve the efficiency of computer system.",
+      "ur": "ریاضیاتی منطقی یونٹ سی پی یو کا بنیادی پراسیسنگ یونٹ ہے۔ یہ ڈیٹا پر ریاضیاتی اور منطقی عمل انجام دیتا ہے۔ ریاضیاتی کا مطلب جمع، تفریق، ضرب، تقسیم ہے اور منطقی عمل دو ڈیٹا آئٹمز کا موازنہ ہے۔ اے ایل یو ڈیٹا کو پراسیس کرتا ہے اور پھر نتائج واپس دیتا ہے۔ کسی عمل کے نتائج رجسٹرز (عارضی ذخیرہ مقامات) میں محفوظ ہوتے ہیں۔ آج کل سی پی یوز میں ایک سے زیادہ اے ایل یوز ہوتے ہیں جو کمپیوٹر سسٹم کی کارکردگی بہتر بنانے کے لیے بیک وقت حساب کر سکتے ہیں۔",
+      "ps": "ریاضیاتي منطقي واحد د CPU اصلي پروسس واحد دی. دا پر ډېټا ریاضیاتي او منطقي عملونه کوي. ریاضیاتي مانا جمع، تفریق، ضرب، تقسیم او منطقي عمل د دوو ډېټا توکو پرتله کول دي. ALU ډېټا پروسس کوي او بیا پایلې بېرته ورکوي. د یو عمل پایلې په رجسترونو (لنډمهاله ذخیره ځایونو) کې ساتل کېږي. نن ورځ CPUs له یو نه زیات ALUs لري چې د کمپیوټر سیسټم د اغېزمنتیا ښه کولو لپاره په یو وخت حساب کولای شي."
+    },
+    {
+      "id": "cs11-s082-h4",
+      "en": "b. Control Unit (CU)",
+      "ur": "ب۔ کنٹرول یونٹ (سی یو)",
+      "ps": "ب. کنټرول واحد (CU)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s082-d",
+      "en": "Control Unit manages the functions performed by different parts of the computer. It coordinates and controls the overall computer system, just like the",
+      "ur": "کنٹرول یونٹ کمپیوٹر کے مختلف حصوں کے ذریعے انجام دیے جانے والے افعال کا انتظام کرتا ہے۔ یہ پورے کمپیوٹر سسٹم کی ہم آہنگی اور کنٹرول کرتا ہے، بالکل ایسے جیسے",
+      "ps": "کنټرول واحد د کمپیوټر د مختلفو برخو لخوا ترسره کېدونکې دندې اداره کوي. دا ټول کمپیوټر سیسټم همغږی او کنټرولوي، لکه",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s082-h1",
+        "cs11-s082-a",
+        "cs11-s082-h2",
+        "cs11-s082-b",
+        "cs11-s082-t1",
+        "cs11-s082-t2",
+        "cs11-s082-t3",
+        "cs11-s082-t4",
+        "cs11-s082-t5",
+        "cs11-s082-h3",
+        "cs11-s082-c",
+        "cs11-s082-h4",
+        "cs11-s082-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 73: the banner “3.1 CPU (CENTRAL PROCESSING UNIT)”, its first paragraph (the second sentence of the paragraph is garbled in the print: “Just like the activities of human body, which controls all the human brain which controls all the CPU is connected…” — given as printed), “3.1.1 Basic Components of CPU” with the list a–e, a. ALU and the start of b. Control Unit (the sentence continues on the next page). The left edge of the lines is clipped. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:52:54.237651+00:00",
+    "scope": "Scan 82 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

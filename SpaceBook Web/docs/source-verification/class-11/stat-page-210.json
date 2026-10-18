@@ -1,0 +1,516 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s210-ts-semi-1",
+  "title": "Example 6.2: semi-average trend (a)",
+  "headingUrdu": "مثال 6.2: نیم اوسط رجحان (الف)",
+  "headingPashto": "بېلګه 6.2: د نیمه اوسط تمایل (a)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 210,
+    "printedPage": "200"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s210-ex62",
+      "en": "Example: 6.2",
+      "ur": "مثال: 6.2",
+      "ps": "بېلګه: 6.2",
+      "kind": "heading",
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "id": "stat11-s210-q62",
+      "en": "Draw the trend by the method of semi-average from the following data.",
+      "ur": "درج ذیل اعداد و شمار سے نیم اوسط کے طریقے سے رجحان بنائیں۔",
+      "ps": "له لاندې معلوماتو څخه د نیمه اوسط په طریقه تمایل رسم کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "id": "stat11-s210-qa",
+      "en": "(a)",
+      "ur": "(الف)",
+      "ps": "(a)",
+      "role": "question",
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "id": "stat11-s210-qb",
+      "en": "(b)",
+      "ur": "(ب)",
+      "ps": "(b)",
+      "role": "question",
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "id": "stat11-s210-sol62",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "id": "stat11-s210-a1",
+      "en": "(a) Here the number of years is even, the data is divided in to two equal parts, each having four observations. Simple average of each part is computed and is written at the middle of the group. These averages are plotted on the graph paper. Then a line is drawn crossing these two points, which is the required semi-average trend line.",
+      "ur": "(الف) یہاں سالوں کی تعداد جفت ہے، اعداد و شمار کو دو برابر حصوں میں تقسیم کیا گیا ہے، ہر ایک میں چار مشاہدات ہیں۔ ہر حصے کا سادہ اوسط حساب کیا جاتا ہے اور گروہ کے درمیان لکھا جاتا ہے۔ ان اوسطوں کو گراف پیپر پر بنایا جاتا ہے۔ پھر ان دو نقاط سے گزرتی ہوئی لکیر کھینچی جاتی ہے، جو مطلوبہ نیم اوسط رجحان کی لکیر ہے۔",
+      "ps": "(a) دلته د کلونو شمېر جفت دی، معلومات په دوو مساوي برخو ویشل شوي، هره یوه څلور کتنې لري. د هرې برخې ساده اوسط محاسبه کېږي او د ډلې په منځ کې لیکل کېږي. دا اوسطونه په ګراف کاغذ رسمېږي. بیا دا دوه نقطې تېروونکې کرښه ایستل کېږي، چې اړینه د نیمه اوسط د تمایل کرښه ده.",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-2"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s210-ex62",
+        "stat11-s210-q62",
+        "stat11-s210-qa"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s210-qb"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s210-sol62",
+        "stat11-s210-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "figure",
+      "index": 0
+    }
+  ],
+  "vocabulary": {
+    "semi-average": {
+      "ur": "نیم اوسط",
+      "ps": "نیمه اوسط"
+    }
+  },
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Example 6.2 (a): year and values",
+      "captionUrdu": "مثال 6.2 (الف): سال اور قدریں",
+      "captionPashto": "بېلګه 6.2 (a): کال او ارزښتونه",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "1980",
+          "ur": "1980",
+          "ps": "1980"
+        },
+        {
+          "en": "1981",
+          "ur": "1981",
+          "ps": "1981"
+        },
+        {
+          "en": "1982",
+          "ur": "1982",
+          "ps": "1982"
+        },
+        {
+          "en": "1983",
+          "ur": "1983",
+          "ps": "1983"
+        },
+        {
+          "en": "1984",
+          "ur": "1984",
+          "ps": "1984"
+        },
+        {
+          "en": "1985",
+          "ur": "1985",
+          "ps": "1985"
+        },
+        {
+          "en": "1986",
+          "ur": "1986",
+          "ps": "1986"
+        },
+        {
+          "en": "1987",
+          "ur": "1987",
+          "ps": "1987"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Values",
+            "ur": "قدریں",
+            "ps": "ارزښتونه"
+          },
+          {
+            "en": "97",
+            "ur": "97",
+            "ps": "97"
+          },
+          {
+            "en": "85",
+            "ur": "85",
+            "ps": "85"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "90",
+            "ur": "90",
+            "ps": "90"
+          },
+          {
+            "en": "105",
+            "ur": "105",
+            "ps": "105"
+          },
+          {
+            "en": "83",
+            "ur": "83",
+            "ps": "83"
+          },
+          {
+            "en": "112",
+            "ur": "112",
+            "ps": "112"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "caption": "Example 6.2 (b): year and values",
+      "captionUrdu": "مثال 6.2 (ب): سال اور قدریں",
+      "captionPashto": "بېلګه 6.2 (b): کال او ارزښتونه",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "1976",
+          "ur": "1976",
+          "ps": "1976"
+        },
+        {
+          "en": "1977",
+          "ur": "1977",
+          "ps": "1977"
+        },
+        {
+          "en": "1978",
+          "ur": "1978",
+          "ps": "1978"
+        },
+        {
+          "en": "1979",
+          "ur": "1979",
+          "ps": "1979"
+        },
+        {
+          "en": "1980",
+          "ur": "1980",
+          "ps": "1980"
+        },
+        {
+          "en": "1981",
+          "ur": "1981",
+          "ps": "1981"
+        },
+        {
+          "en": "1982",
+          "ur": "1982",
+          "ps": "1982"
+        },
+        {
+          "en": "1983",
+          "ur": "1983",
+          "ps": "1983"
+        },
+        {
+          "en": "1984",
+          "ur": "1984",
+          "ps": "1984"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Values",
+            "ur": "قدریں",
+            "ps": "ارزښتونه"
+          },
+          {
+            "en": "286",
+            "ur": "286",
+            "ps": "286"
+          },
+          {
+            "en": "260",
+            "ur": "260",
+            "ps": "260"
+          },
+          {
+            "en": "276",
+            "ur": "276",
+            "ps": "276"
+          },
+          {
+            "en": "270",
+            "ur": "270",
+            "ps": "270"
+          },
+          {
+            "en": "302",
+            "ur": "302",
+            "ps": "302"
+          },
+          {
+            "en": "348",
+            "ur": "348",
+            "ps": "348"
+          },
+          {
+            "en": "351",
+            "ur": "351",
+            "ps": "351"
+          },
+          {
+            "en": "321",
+            "ur": "321",
+            "ps": "321"
+          },
+          {
+            "en": "346",
+            "ur": "346",
+            "ps": "346"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-2"
+    },
+    {
+      "caption": "Example 6.2 (a) solution: values and averages",
+      "captionUrdu": "مثال 6.2 (الف) کا حل: قدریں اور اوسط",
+      "captionPashto": "د بېلګې 6.2 (a) حل: ارزښتونه او اوسطونه",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Values",
+          "ur": "قدریں",
+          "ps": "ارزښتونه"
+        },
+        {
+          "en": "Averages",
+          "ur": "اوسط",
+          "ps": "اوسطونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1980",
+            "ur": "1980",
+            "ps": "1980"
+          },
+          {
+            "en": "97",
+            "ur": "97",
+            "ps": "97"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ],
+        [
+          {
+            "en": "1981",
+            "ur": "1981",
+            "ps": "1981"
+          },
+          {
+            "en": "85",
+            "ur": "85",
+            "ps": "85"
+          },
+          {
+            "en": "372 ÷ 4 = 93",
+            "ur": "372 ÷ 4 = 93",
+            "ps": "372 ÷ 4 = 93"
+          }
+        ],
+        [
+          {
+            "en": "1982",
+            "ur": "1982",
+            "ps": "1982"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ],
+        [
+          {
+            "en": "1983",
+            "ur": "1983",
+            "ps": "1983"
+          },
+          {
+            "en": "90",
+            "ur": "90",
+            "ps": "90"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ],
+        [
+          {
+            "en": "1984",
+            "ur": "1984",
+            "ps": "1984"
+          },
+          {
+            "en": "105",
+            "ur": "105",
+            "ps": "105"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ],
+        [
+          {
+            "en": "1985",
+            "ur": "1985",
+            "ps": "1985"
+          },
+          {
+            "en": "83",
+            "ur": "83",
+            "ps": "83"
+          },
+          {
+            "en": "420 ÷ 4 = 105",
+            "ur": "420 ÷ 4 = 105",
+            "ps": "420 ÷ 4 = 105"
+          }
+        ],
+        [
+          {
+            "en": "1986",
+            "ur": "1986",
+            "ps": "1986"
+          },
+          {
+            "en": "112",
+            "ur": "112",
+            "ps": "112"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ],
+        [
+          {
+            "en": "1987",
+            "ur": "1987",
+            "ps": "1987"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-2"
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s210-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 330\" role=\"img\" aria-label=\"Semi-average trend: a straight line passing through the two semi-average points (1981.5, 93) and (1985.5, 105) rising slowly to the right\" style=\"width:100%;max-width:620px;height:auto;background:#fff\"><line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"270\" stroke=\"#111\" stroke-width=\"1.8\"/><line x1=\"60\" y1=\"270\" x2=\"590\" y2=\"270\" stroke=\"#111\" stroke-width=\"1.8\"/><text x=\"52\" y=\"274.0\" font-size=\"12\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">0</text><text x=\"52\" y=\"206.30769230769232\" font-size=\"12\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">40</text><text x=\"52\" y=\"138.6153846153846\" font-size=\"12\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">80</text><text x=\"52\" y=\"70.92307692307693\" font-size=\"12\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">120</text><text x=\"60\" y=\"28\" font-size=\"12\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y-axis</text><text x=\"596\" y=\"274\" font-size=\"12\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">x-axis</text><text x=\"300\" y=\"34\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Graph showing semi-average trend</text><line x1=\"80\" y1=\"266\" x2=\"80\" y2=\"274\" stroke=\"#111\"/><text x=\"80\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1980</text><line x1=\"146\" y1=\"266\" x2=\"146\" y2=\"274\" stroke=\"#111\"/><text x=\"146\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1981</text><line x1=\"212\" y1=\"266\" x2=\"212\" y2=\"274\" stroke=\"#111\"/><text x=\"212\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1982</text><line x1=\"278\" y1=\"266\" x2=\"278\" y2=\"274\" stroke=\"#111\"/><text x=\"278\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1983</text><line x1=\"344\" y1=\"266\" x2=\"344\" y2=\"274\" stroke=\"#111\"/><text x=\"344\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1984</text><line x1=\"410\" y1=\"266\" x2=\"410\" y2=\"274\" stroke=\"#111\"/><text x=\"410\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1985</text><line x1=\"476\" y1=\"266\" x2=\"476\" y2=\"274\" stroke=\"#111\"/><text x=\"476\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1986</text><line x1=\"542\" y1=\"266\" x2=\"542\" y2=\"274\" stroke=\"#111\"/><text x=\"542\" y=\"292\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">1987</text><line x1=\"53.599999999994\" y1=\"121.1\" x2=\"568.400000000006\" y2=\"63.5\" stroke=\"#1c7ab8\" stroke-width=\"1.8\"/><circle cx=\"179.0\" cy=\"112.6\" r=\"4\" fill=\"#111\"/><circle cx=\"443.0\" cy=\"92.3\" r=\"4\" fill=\"#111\"/></svg>",
+      "caption": "Graph showing semi-average trend (Example 6.2 (a))",
+      "captionUrdu": "نیم اوسط رجحان دکھانے والا گراف (مثال 6.2 (الف))",
+      "captionPashto": "د نیمه اوسط د تمایل ښودونکی ګراف (بېلګه 6.2 (a))",
+      "labels": [
+        {
+          "en": "y-axis",
+          "ur": "y-محور",
+          "ps": "y-محور"
+        },
+        {
+          "en": "x-axis",
+          "ur": "x-محور",
+          "ps": "x-محور"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded graph: the two semi-average points are at the mid-years 1981.5 and 1985.5 with values 93 and 105."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 200. In the solution table the averages 93 and 105 are printed beside brackets that group the first four and last four years; they are placed on the second and sixth rows. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:26:48.853477+00:00",
+    "scope": "Scan 210 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

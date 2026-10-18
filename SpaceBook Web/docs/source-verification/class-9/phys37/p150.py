@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Project E sky observation / Unit 5 exercise MCQs 1–9'
+SECTIONS = [
+    ('proj5-e', ('PROJECTS (continued)', 'پروجیکٹس (جاری)', 'پروژې (دوام)'), [
+        ('p', 'planets are observable in the evening during the current month. Venus, Jupiter, or Mars are usually the best candidates.', 'رواں مہینے میں شام کے وقت کون سے سیارے نظر آ سکتے ہیں۔ زہرہ، مشتری یا مریخ عموماً بہترین امیدوار ہوتے ہیں۔', 'په روان میاشت کې د ماښام پر مهال کومې سیارې لیدل کېدای شي. زهره، مشتري یا مریخ معمولاً غوره انتخابونه دي.'),
+        ('ul', [
+            ('a. Locate the planet visually and observe it with binoculars if possible. How does the planet differ in appearance from that of nearby stars?', 'a. سیارے کو آنکھ سے تلاش کریں اور ممکن ہو تو دوربین سے مشاہدہ کریں۔ سیارہ قریبی ستاروں سے ظاہری طور پر کیسے مختلف ہے؟', 'a. سیاره په سترګو ومومئ او که ممکن وي په دوربین یې وګورئ. سیاره د نږدې ستورو په پرتله په بڼه کې څنګه توپیر لري؟'),
+            ('b. Sketch the position of the planet relative to nearby stars for several nights. How does this position change?', 'b. کئی راتوں تک قریبی ستاروں کے لحاظ سے سیارے کے مقام کا خاکہ بنائیں۔ یہ مقام کیسے بدلتا ہے؟', 'b. د څو شپو لپاره د نږدې ستورو په نسبت د سیارې ځای انځور کړئ. دا ځای څنګه بدلېږي؟'),
+        ]),
+    ]),
+    ('ex5-mcq', ('EXERCISE — MULTIPLE CHOICE QUESTIONS', 'مشق — کثیر الانتخابی سوالات', 'تمرین — څو ځوابه پوښتنې'), [
+        ('ul', [
+            ('1. Two masses are separated by a distance r. If both masses are doubled, the force of interaction between the two masses changes by a factor A. 2 B. 4 C. 1/2 D. 1/4', '1. دو کمیتیں فاصلے r پر ہیں۔ اگر دونوں کمیتیں دگنی کر دی جائیں تو دونوں کمیتوں کے درمیان تعامل کی قوت کس عامل سے بدلتی ہے A. 2 B. 4 C. 1/2 D. 1/4', '1. دوه کتلې په r واټن کې دي. که دواړه کتلې دوه چنده شي، د دوو کتلو ترمنځ د متقابل عمل قوت په کوم ضریب بدلېږي A. 2 B. 4 C. 1/2 D. 1/4'),
+            ('2. The radius of earth r_E is A. 9.8 m B. 6.67 × 10^{-11} m C. 6 × 10^{24} m D. 6.4 × 10^6 m', '2. زمین کا نصف قطر r_E ہے A. 9.8 m B. 6.67 × 10^{-11} m C. 6 × 10^{24} m D. 6.4 × 10^6 m', '2. د ځمکې شعاع r_E ده A. 9.8 m B. 6.67 × 10^{-11} m C. 6 × 10^{24} m D. 6.4 × 10^6 m'),
+            ('3. The S.I. unit for gravitational constant “G” is A. N kg^2 B. N m^2 kg^{-2} C. N m^2 kg^2 D. N m^{-2} kg^2', '3. تجاذبی مستقل "G" کی SI اکائی ہے A. N kg^2 B. N m^2 kg^{-2} C. N m^2 kg^2 D. N m^{-2} kg^2', '3. د جاذبې د ثابت "G" SI واحد دی A. N kg^2 B. N m^2 kg^{-2} C. N m^2 kg^2 D. N m^{-2} kg^2'),
+            ('4. What is the mass on planet Mercury of an object that weighs 784 N on the earth’s surface? A. 80.0 kg B. 118 C. 784 kg D. More information needed', '4. ایک جسم جس کا وزن زمین کی سطح پر 784 N ہے، سیارہ عطارد پر اس کی کمیت کیا ہے؟ A. 80.0 kg B. 118 C. 784 kg D. مزید معلومات درکار ہیں', '4. یو جسم چې د ځمکې پر سطحه یې وزن 784 N دی، پر عطارد سیاره یې کتله څومره ده؟ A. 80.0 kg B. 118 C. 784 kg D. نورو معلوماتو ته اړتیا ده'),
+            ('5. An object is orbiting a planet with orbital speed v, if the radius is same and mass is increased 4 times, by what factor orbital speed will change A. 2 B. 4 C. 1/2 D. 1/4', '5. ایک جسم مداری رفتار v سے کسی سیارے کے گرد گھوم رہا ہے؛ اگر نصف قطر وہی رہے اور کمیت 4 گنا ہو جائے تو مداری رفتار کس عامل سے بدلے گی A. 2 B. 4 C. 1/2 D. 1/4', '5. یو جسم په v مداري سرعت د یوې سیارې شاوخوا ګرځي؛ که شعاع هماغه وي او کتله 4 چنده شي، مداري سرعت به په کوم ضریب بدل شي A. 2 B. 4 C. 1/2 D. 1/4'),
+            ('6. The value of ‘g’ at the surface of the moon is; A. 9.8 ms^{-2} B. 1.63 ms^{-2} C. 4.9 ms^{-2} D. 8.9 ms^{-2}', '6. چاند کی سطح پر \'g\' کی قدر ہے؛ A. 9.8 ms^{-2} B. 1.63 ms^{-2} C. 4.9 ms^{-2} D. 8.9 ms^{-2}', '6. د سپوږمۍ پر سطحه د \'g\' ارزښت دی؛ A. 9.8 ms^{-2} B. 1.63 ms^{-2} C. 4.9 ms^{-2} D. 8.9 ms^{-2}'),
+            ('7. The value of ‘g’ ______ with altitude A. increases B. decreases C. gets ZERO D. remains the same', '7. بلندی کے ساتھ \'g\' کی قدر ______ A. بڑھتی ہے B. گھٹتی ہے C. صفر ہو جاتی ہے D. یکساں رہتی ہے', '7. د لوړوالي سره د \'g\' ارزښت ______ A. زیاتېږي B. کمېږي C. صفر کېږي D. یو شان پاتې کېږي'),
+            ('8. When a body is moved from sea level to the top of a mountain, There is change in the body’s A. mass B. weight C. none D. both mass and weight', '8. جب کسی جسم کو سطحِ سمندر سے پہاڑ کی چوٹی پر لے جایا جائے تو جسم کے ______ میں تبدیلی ہوتی ہے A. کمیت B. وزن C. کوئی نہیں D. کمیت اور وزن دونوں', '8. کله چې یو جسم د سمندر له سطحې د غره سر ته یوړل شي، د جسم په ______ کې بدلون راځي A. کتله B. وزن C. هېڅ D. کتله او وزن دواړه'),
+            ('9. The value of ‘g’ at equator is A. Same at poles B. Larger at poles C. Smaller at poles D. none', '9. خطِ استوا پر \'g\' کی قدر ہے A. قطبین پر یکساں B. قطبین پر زیادہ C. قطبین پر کم D. کوئی نہیں', '9. په استوا کې د \'g\' ارزښت دی A. په قطبونو کې یو شان B. په قطبونو کې زیات C. په قطبونو کې کم D. هېڅ'),
+        ]),
+    ]),
+]

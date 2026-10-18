@@ -1,0 +1,136 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s093-p084",
+  "title": "Arithmetic (end); logical; shift; c. Program Control Instructions; 3.2.2 Instruction Format — start",
+  "headingUrdu": "ریاضیاتی (اختتام)؛ منطقی؛ شفٹ؛ ج۔ پروگرام کنٹرول ہدایات؛ ۳.۲.۲ ہدایت کی شکل — آغاز",
+  "headingPashto": "ریاضیاتي (پای)؛ منطقي؛ شفټ؛ ج. د پروګرام کنټرول لارښوونې؛ ۳.۲.۲ د لارښوونې بڼه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 93,
+    "printedPage": "84"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s093-a",
+      "en": "The execution of arithmetic instructions requires bringing the operands in the operational registers so that the data can be processed by ALU. Such functionality is implemented generally within instruction execution steps.",
+      "ur": "ریاضیاتی ہدایات پر عمل کے لیے آپرینڈز کو آپریشنل رجسٹرز میں لانا ضروری ہے تاکہ اے ایل یو ڈیٹا پراسیس کر سکے۔ ایسی فعالیت عموماً ہدایت کے عمل کے مراحل کے اندر نافذ ہوتی ہے۔",
+      "ps": "د ریاضیاتي لارښوونو پلي کول دا غواړي چې عملوندونه په عملیاتي رجسترونو کې راوړل شي ترڅو ډېټا د ALU په واسطه پروسس شي. داسې فعالیت معمولاً د لارښوونې د پلي کېدو په ګامونو کې پلي کېږي."
+    },
+    {
+      "id": "cs11-s093-h1",
+      "en": "ii. Logical Instructions",
+      "ur": "ii۔ منطقی ہدایات",
+      "ps": "ii. منطقي لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s093-b",
+      "en": "AND, OR, NOT, XOR operate on binary data stored in registers.",
+      "ur": "اینڈ، اور، ناٹ، ایکس اور رجسٹرز میں محفوظ بائنری ڈیٹا پر عمل کرتے ہیں۔",
+      "ps": "AND، OR، NOT، XOR په رجسترونو کې ساتل شوې بائنري ډېټا عمل کوي."
+    },
+    {
+      "id": "cs11-s093-h2",
+      "en": "iii. Shift Instructions",
+      "ur": "iii۔ شفٹ ہدایات",
+      "ps": "iii. شفټ لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s093-c",
+      "en": "Shift operation is used for transfer of bits either to the left or to the right of an operand.",
+      "ur": "شفٹ عمل آپرینڈ کے بٹس کو بائیں یا دائیں منتقل کرنے کے لیے استعمال ہوتا ہے۔",
+      "ps": "شفټ عمل د عملوند د بټونو کیڼ یا ښي لوري ته لېږد لپاره کارول کېږي."
+    },
+    {
+      "id": "cs11-s093-h3",
+      "en": "c. Program Control Instructions",
+      "ur": "ج۔ پروگرام کنٹرول ہدایات",
+      "ps": "ج. د پروګرام کنټرول لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s093-d",
+      "en": "These instructions specify conditions for altering the sequence of program execution or in other words the content of PC (program counter) register. Program control or transfer of control is a way of altering the order in which statements are executed. There are a number of instructions used like JMP (Jump) and LOOP.",
+      "ur": "یہ ہدایات پروگرام کے عمل کی ترتیب کو تبدیل کرنے کی شرائط، یا دوسرے لفظوں میں پی سی (پروگرام کاؤنٹر) رجسٹر کے مواد کی وضاحت کرتی ہیں۔ پروگرام کنٹرول یا کنٹرول کی منتقلی اس ترتیب کو تبدیل کرنے کا ایک طریقہ ہے جس میں بیانات چلائے جاتے ہیں۔ بہت سی ہدایات استعمال ہوتی ہیں جیسے جے ایم پی (جمپ) اور لوپ۔",
+      "ps": "دا لارښوونې د پروګرام د پلي کېدو د ترتیب د بدلولو شرایط ټاکي یا په بل عبارت د PC (پروګرام شمېرونکي) رجستر منځپانګه. د پروګرام کنټرول یا د کنټرول لېږد یوه لار ده چې په هغې د بیاناتو د پلي کېدو ترتیب بدلېږي. ډیرې لارښوونې کارول کېږي لکه JMP (ټوپ) او LOOP."
+    },
+    {
+      "id": "cs11-s093-j1",
+      "en": "The JMP instruction jumps to begin the execution at another location.",
+      "ur": "جے ایم پی ہدایت کسی دوسرے مقام پر عمل شروع کرنے کے لیے چھلانگ لگاتی ہے۔",
+      "ps": "د JMP لارښوونه په بل ځای کې د پلي کېدو د پیل لپاره ټوپ وهي.",
+      "listGroup": "jl"
+    },
+    {
+      "id": "cs11-s093-j2",
+      "en": "The LOOP instruction is used when number of statements are to be repeated.",
+      "ur": "لوپ ہدایت اس وقت استعمال ہوتی ہے جب کئی بیانات کو دہرانا ہو۔",
+      "ps": "د LOOP لارښوونه هغه وخت کارول کېږي کله چې د څو بیاناتو تکرار پکار وي.",
+      "listGroup": "jl"
+    },
+    {
+      "id": "cs11-s093-h4",
+      "en": "3.2.2 Instruction Format",
+      "ur": "۳.۲.۲ ہدایت کی شکل",
+      "ps": "۳.۲.۲ د لارښوونې بڼه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s093-e",
+      "en": "An instruction format defines the layout of the bits of an instruction. An instruction format must include an Op-code (Operation-Code) and zero or more Operands. The Op-code will always be present.",
+      "ur": "ہدایت کی شکل ہدایت کے بٹس کی ترتیب متعین کرتی ہے۔ ہدایت کی شکل میں ایک او پی کوڈ (آپریشن کوڈ) اور صفر یا زیادہ آپرینڈز لازماً شامل ہوں۔ او پی کوڈ ہمیشہ موجود رہے گا۔",
+      "ps": "د لارښوونې بڼه د لارښوونې د بټونو ترتیب ټاکي. د لارښوونې بڼه باید یو Op-code (عملیې کوډ) او صفر یا ډیر عملوندونه ولري. Op-code به تل شتون ولري."
+    },
+    {
+      "id": "cs11-s093-f1",
+      "en": "Op-Code",
+      "ur": "او پی کوڈ",
+      "ps": "اپ-کوډ (Op-Code)",
+      "listGroup": "fmt"
+    },
+    {
+      "id": "cs11-s093-f2",
+      "en": "Operand",
+      "ur": "آپرینڈ",
+      "ps": "عملوند",
+      "listGroup": "fmt"
+    },
+    {
+      "id": "cs11-s093-f",
+      "en": "Op-Code field of an instruction is a group of bits that define various processor operations such as LOAD, STORE, ADD, and SHIFT to be performed on some data stored in registers or memory.",
+      "ur": "ہدایت کا او پی کوڈ فیلڈ بٹس کا ایک گروپ ہے جو مختلف پراسیسر اعمال، جیسے لوڈ، اسٹور، ایڈ اور شفٹ، متعین کرتا ہے جو رجسٹرز یا میموری میں محفوظ کسی ڈیٹا پر انجام دیے جانے ہوں۔",
+      "ps": "د لارښوونې Op-Code ساحه د بټونو یوه ډله ده چې مختلف پروسیسر عملونه لکه LOAD، STORE، ADD او SHIFT ټاکي چې په رجسترونو یا حافظه کې ساتل شوې ځینې ډېټا ترسره کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s093-a",
+        "cs11-s093-h1",
+        "cs11-s093-b",
+        "cs11-s093-h2",
+        "cs11-s093-c",
+        "cs11-s093-h3",
+        "cs11-s093-d",
+        "cs11-s093-j1",
+        "cs11-s093-j2",
+        "cs11-s093-h4",
+        "cs11-s093-e",
+        "cs11-s093-f1",
+        "cs11-s093-f2",
+        "cs11-s093-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 84: the end of the arithmetic instructions (continuing from page 83), ii. Logical Instructions, iii. Shift Instructions, c. Program Control Instructions (with JMP and LOOP), “3.2.2 Instruction Format” and the start of the Op-Code explanation. The left edge of the lines is clipped. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:56:55.861881+00:00",
+    "scope": "Scan 93 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

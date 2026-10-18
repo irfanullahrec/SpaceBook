@@ -1,0 +1,11 @@
+@printed 124
+@status lesson
+m }
+m while(condition);
+p where **do:** It is the keyword that indicates the beginning of the loop. **Condition:** The condition is given as a relational expression. The statements of the body are executed if the given condition is true. If the condition is false, then statements of the body are executed only once because the condition comes at the end. The while loop must be ended with a semicolon;. **Body of the loop:** It is a statement or group of statements in braces { } to be repeated. || جہاں **do:** وہ کی ورڈ ہے جو لوپ کا آغاز بتاتا ہے۔ **Condition:** شرط ریلیشنل اظہار کی صورت میں دی جاتی ہے۔ شرط درست ہو تو جسم کی اسٹیٹمنٹس چلتی ہیں۔ اگر شرط غلط ہو تو جسم کی اسٹیٹمنٹس صرف ایک بار چلتی ہیں کیونکہ شرط آخر میں آتی ہے۔ while کو سیمی کولن ; پر ختم ہونا چاہیے۔ **Body of the loop:** بریسز { } میں وہ اسٹیٹمنٹ یا اسٹیٹمنٹس جنہیں دہرانا ہے۔ || چې **do:** هغه keyword دی چې د لوپ پیل ښيي. **Condition:** شرط د اړیکه ییزې افادې په بڼه ورکول کېږي. که شرط سم وي د بدنې بیانونه اجرا کېږي. که ناسم وي یوازې یو ځل اجرا کېږي ځکه شرط په پای کې راځي. while باید په semicolon ; پای ته ورسېږي. **Body of the loop:** په { } کې هغه بیان یا بیانونه چې تکرارېږي.
+fig10 f5.3 || Figure: 5.3 Working of do-while Loop || شکل 5.3 do-while لوپ کا کام || ۵.۳ شکل د do-while لوپ کار
+### Program 5.9: A program to print first ten integers using do-while loop. || پروگرام 5.9: do-while لوپ سے پہلے دس صحیح اعداد پرنٹ کرنے کا پروگرام۔ || پروګرام ۵.۹: د do-while لوپ په مرسته لومړي لس بشپړ عددونه چاپول.
+@issue There is no Program 5.8 in the book; numbering jumps from 5.7 to 5.9.
+m # include <stdio.h>
+m void main()
+m {

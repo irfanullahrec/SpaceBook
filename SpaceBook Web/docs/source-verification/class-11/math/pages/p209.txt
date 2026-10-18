@@ -1,0 +1,28 @@
+@printed 209
+@deco Unit-running header, folio and decorative footer band excluded
+p **Step 3.** Let $n=k+1$ and consider || **مرحلہ 3۔** فرض کریں $n=k+1$ اور غور کریں || **دریم ګام.** فرض کړئ $n=k+1$ او وګورئ
+m $1^2+2^2+3^2+\cdots+k^2+(k+1)^2=\dfrac{k(k+1)(2k+1)}{6}+(k+1)^2$
+p (Adding $(k+1)^2$ to both sides of (i)) || ((i) کے دونوں طرف $(k+1)^2$ جمع کرنے سے) || (د (i) دواړو خواوو ته $(k+1)^2$ ورزیاتولو سره)
+m $=\dfrac{k(k+1)(2k+1)+6(k+1)^2}{6}=\dfrac{(k+1)\{k(2k+1)+6(k+1)\}}{6}$
+m $=\dfrac{(k+1)\{2k^2+k+6k+6\}}{6}=\dfrac{(k+1)(2k^2+7k+6)}{6}$
+m $=\dfrac{(k+1)(k+2)(2k+3)}{6}$
+p Which is just the form taken by the proposition for $n=k+1$. So the above proposition is true for $n=k+1$ and hence by the principle of mathematical induction, it is true for all positive integer $n$. || یہی وہ شکل ہے جو قضیہ $n=k+1$ کے لیے اختیار کرتا ہے۔ لہٰذا مذکورہ قضیہ $n=k+1$ کے لیے درست ہے اور اسی لیے ریاضیاتی استقرا کے اصول سے یہ تمام مثبت صحیح اعداد $n$ کے لیے درست ہے۔ || دا همغه بڼه ده چې قضیه د $n=k+1$ لپاره اخلي. نو پورتنۍ قضیه د $n=k+1$ لپاره سمه ده او له دې امله د ریاضیاتي استقرا د اصل له مخې د ټولو مثبتو صحیحو عددونو $n$ لپاره سمه ده.
+p It must be noted that the application of the principle of mathematical induction is not limited only to $P(n)$ stated by means of an equation. The principle can also be applied in cases where no equation is involved as we shall see in the following examples. || یہ نوٹ کرنا ضروری ہے کہ ریاضیاتی استقرا کے اصول کا اطلاق صرف ان $P(n)$ تک محدود نہیں جو مساوات کے ذریعے بیان ہوں۔ یہ اصول ان صورتوں میں بھی لگایا جا سکتا ہے جہاں کوئی مساوات شامل نہ ہو، جیسا کہ ہم درج ذیل مثالوں میں دیکھیں گے۔ || باید یادونه وشي چې د ریاضیاتي استقرا د اصل کارونه یوازې هغو $P(n)$ ته محدوده نه ده چې د معادلې په وسیله بیان شوي وي. دا اصل په هغو حالاتو کې هم کارېدای شي چې هیڅ معادله پکې نه وي، لکه چې موږ به په لاندې مثالونو کې وګورو.
+endexample
+example 4 | Show that $a-b$ is a factor of $a^n-b^n$ for all positive integer $n$. || دکھائیں کہ تمام مثبت صحیح عدد $n$ کے لیے $a-b$، $a^n-b^n$ کا جز ضربی ہے۔ || وښایاست چې د ټولو مثبتو صحیحو عددونو $n$ لپاره $a-b$ د $a^n-b^n$ فکتور دی.
+p **Solution:** To show that $a-b$ is a factor of $a^n-b^n$, we will use induction on $n$. || **حل:** یہ دکھانے کے لیے کہ $a-b$، $a^n-b^n$ کا جز ضربی ہے، ہم $n$ پر استقرا استعمال کریں گے۔ || **حل:** د دې ښودلو لپاره چې $a-b$ د $a^n-b^n$ فکتور دی، موږ پر $n$ استقرا کاروو.
+p **Step 1.** Let $n=1$, then $a^n-b^n=a-b$ and since $a-b$ divides $a-b$, so $a-b$ is a factor of $a-b$. Therefore the above statement is true for $n=1$. || **مرحلہ 1۔** فرض کریں $n=1$، تب $a^n-b^n=a-b$ اور چونکہ $a-b$، $a-b$ کو تقسیم کرتا ہے اس لیے $a-b$، $a-b$ کا جز ضربی ہے۔ لہٰذا مذکورہ بیان $n=1$ کے لیے درست ہے۔ || **لومړی ګام.** فرض کړئ $n=1$، نو $a^n-b^n=a-b$ او ځکه چې $a-b$، $a-b$ تقسیموي، نو $a-b$ د $a-b$ فکتور دی. له دې امله پورتنی بیان د $n=1$ لپاره سم دی.
+p **Step 2.** Let the above statement is true for $n=k$ then $a-b$ is a factor of $a^k-b^k$. || **مرحلہ 2۔** فرض کریں مذکورہ بیان $n=k$ کے لیے درست ہے تب $a-b$، $a^k-b^k$ کا جز ضربی ہے۔ || **دویم ګام.** فرض کړئ پورتنی بیان د $n=k$ لپاره سم دی، نو $a-b$ د $a^k-b^k$ فکتور دی.
+m $\Rightarrow\ a-b$ divides $a^k-b^k$
+p and as such we can write || اور اس طرح ہم لکھ سکتے ہیں || او په دې توګه موږ لیکلای شو
+m $a^k-b^k=(a-b)Q\qquad\text{(1)}$
+p where $Q$ is the quotient. || جہاں $Q$ خارج قسمت ہے۔ || چېرته چې $Q$ خارج قسمت دی.
+p **Step 3.** Let $n=k+1$ and consider $a^{k+1}-b^{k+1}$. We can write || **مرحلہ 3۔** فرض کریں $n=k+1$ اور $a^{k+1}-b^{k+1}$ پر غور کریں۔ ہم لکھ سکتے ہیں || **دریم ګام.** فرض کړئ $n=k+1$ او $a^{k+1}-b^{k+1}$ وګورئ. موږ لیکلای شو
+m $a^{k+1}-b^{k+1}=a^ka-b^kb$
+p (Adding and subtracting the term $ab^k$) || (جزو $ab^k$ کو جمع اور تفریق کرنے سے) || (د $ab^k$ حد ورزیاتولو او ایستلو سره)
+m $=a^ka-ab^k+ab^k-b^kb$
+m $=a(a^k-b^k)+b^k(a-b)=a(a-b)Q+b^k(a-b)$
+p (Using (1)) || ((1) استعمال کرنے سے) || (د (1) په کارولو سره)
+m $=(a-b)[aQ+b^k]$
+m $\Rightarrow\ a-b$ divides $a^{k+1}-b^{k+1}$ with quotient $aQ+b^k$
+m $\Rightarrow\ a-b$ is a factor of $a^{k+1}-b^{k+1}$

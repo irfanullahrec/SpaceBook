@@ -1,0 +1,32 @@
+@pdf 124
+@printed 114
+@status lesson
+q 4 | Write the program in Q3 using switch-case structure. || سوال 3 والا پروگرام switch-case سے لکھیں۔ || د ۳ پوښتنې پروګرام د switch-case په مرسته ولیکئ.
+q 5 | Write the output of the following program. || درج ذیل پروگرام کا آؤٹ پٹ لکھیں۔ || د لاندې پروګرام output ولیکئ.
+m #include<stdio.h>
+m void main( )
+m {
+m     int a, b, c;
+m     a=b=10;
+m     c=13;
+m     if((a==b)&&(a>c))
+m         printf("condition is true  \n");
+m     else
+m     {
+m         printf("a is equal to b  \n" );
+m         printf("a is not greater than c \n");
+m     }
+m }
+q 6 | Find out error if any in the following program. || درج ذیل پروگرام میں اگر کوئی غلطی ہو تو تلاش کریں۔ || په لاندې پروګرام کې که تېروتنه وي ومومئ.
+m #include<stdio.h>
+m void main( )
+m {
+m     int a;
+m     print("Enter any number = ");
+m     scanf("%f",&a);
+m     if(a>10)
+m     printf("value is greater than 10");
+m     else if
+m     printf("value is less than 10 ")
+m }
+sol Q5 output: a is equal to b / a is not greater than c ## Q5: (a==b) is true but (a>c) is false (10>13), so the else block runs and prints both lines. Q6 errors: print should be printf; %f should be %d for int a; "else if" has no condition (use else); the last printf has no semicolon. Q2: read a,b,c; if(a>=b && a>=c) print a; else if(b>=c) print b; else print c. Q3: if(ch=='a'{{OR}}ch=='e'{{OR}}ch=='i'{{OR}}ch=='o'{{OR}}ch=='u') printf("It is a vowel"); else printf("It is a consonant"); Q4: same with switch(ch) and cases 'a','e','i','o','u' sharing one printf, default for consonant. || سوال 5: (a==b) درست مگر (a>c) غلط ہے (10>13)، اس لیے else بلاک دونوں سطریں چھاپتا ہے۔ سوال 6 کی غلطیاں: print کی جگہ printf؛ int a کے لیے %f کی جگہ %d؛ "else if" میں شرط نہیں (else لکھیں)؛ آخری printf کے بعد سیمی کولن نہیں۔ سوال 2: a,b,c پڑھیں؛ if(a>=b && a>=c) a، else if(b>=c) b، ورنہ c پرنٹ کریں۔ سوال 3: پانچ vowels کے لیے {{OR}} سے شرط بنا کر "It is a vowel" ورنہ "It is a consonant"۔ سوال 4: یہی switch(ch) سے، vowels کے cases اور default میں consonant۔ || ۵ پوښتنه: (a==b) سم خو (a>c) ناسم دی (10>13)، نو else بلاک دواړه کرښې چاپوي. ۶ پوښتنې تېروتنې: print پر ځای printf؛ د int a لپاره %f پر ځای %d؛ "else if" شرط نه لري (else ولیکئ)؛ په وروستي printf کې semicolon نشته. ۲ پوښتنه: a,b,c ولولئ؛ if(a>=b && a>=c) a، else if(b>=c) b، کنه c چاپ کړئ. ۳ پوښتنه: د پنځو vowels لپاره د {{OR}} شرط سره "It is a vowel" کنه "It is a consonant". ۴ پوښتنه: همدا د switch(ch) سره، د vowels cases او په default کې consonant.

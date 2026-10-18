@@ -1,0 +1,21 @@
+@printed 218
+@issue In the printed line for T_{5+1} of Example 10 the factor 2^{10-r} is not yet replaced by 2^5 (r=5); the next line gives 2^5. Preserved as printed.
+@deco Unit-running header, folio and decorative footer band excluded
+p Since we are interested in finding the 6th term i.e. $T_6$, so choosing $r=5$ and putting in the last result, we have, || چونکہ ہم چھٹا رکن یعنی $T_6$ معلوم کرنا چاہتے ہیں اس لیے $r=5$ لے کر آخری نتیجے میں رکھنے پر ہمیں ملتا ہے، || ځکه چې موږ شپږم حد یعنې $T_6$ پیدا کول غواړو، نو $r=5$ اخیستو او په وروستۍ پایله کې ایښودو سره موږ لرو،
+m $T_{5+1}=T_6=\dbinom{12}{5}(3x)^{12-5}\cdot(2y)^5\quad\Rightarrow\quad T_6=\dfrac{12!}{5!\,7!}\,3^7\cdot x^7\cdot2^5\cdot y^5$
+m $\Rightarrow T_6=\dfrac{12\cdot11\cdot10\cdot9\cdot8\cdot7!}{1\cdot2\cdot3\cdot4\cdot5\cdot7!}\times2187\times32x^7y^5\quad\Rightarrow\quad T_6=11\cdot9\cdot8\cdot2187\cdot32x^7y^5$
+m $\Rightarrow T_6=55427328\,x^7y^5$
+endexample
+example 10 | Find the coefficient of $x^5$ in the expansion of $\left(2x^2-\dfrac3x\right)^{10}$ || $\left(2x^2-\dfrac3x\right)^{10}$ کی توسیع میں $x^5$ کا سر معلوم کریں || د $\left(2x^2-\dfrac3x\right)^{10}$ په پراختیا کې د $x^5$ ضریب پیدا کړئ
+p **Solution:** Let $T_{r+1}$ of $\left(2x^2-\dfrac3x\right)^{10}$ be the particular terms containing $x^5$. || **حل:** فرض کریں $\left(2x^2-\dfrac3x\right)^{10}$ کا $T_{r+1}$ وہ مخصوص رکن ہے جس میں $x^5$ ہے۔ || **حل:** فرض کړئ د $\left(2x^2-\dfrac3x\right)^{10}$ $T_{r+1}$ هغه ځانګړی حد دی چې $x^5$ لري.
+p Now for the given expansion $\left(2x^2-\dfrac3x\right)^{10}$ || اب دی گئی توسیع $\left(2x^2-\dfrac3x\right)^{10}$ کے لیے || اوس د ورکړل شوې پراختیا $\left(2x^2-\dfrac3x\right)^{10}$ لپاره
+m $T_{r+1}=\dbinom{10}{r}(2x^2)^{10-r}\left(-\dfrac3x\right)^r=\dbinom{10}{r}2^{10-r}(x^2)^{10-r}(-1)^r\dfrac{3^r}{x^r}$
+m $=(-1)^r\dbinom{10}{r}2^{10-r}\cdot3^r\,x^{20-2r}x^{-r}=(-1)^r\dbinom{10}{r}2^{10-r}\cdot3^r\cdot x^{20-2r-r}$
+m $T_{r+1}=(-1)^r\dbinom{10}{r}2^{10-r}\cdot3^r\cdot x^{20-3r}\qquad\text{(1)}$
+p But this term contains $x^5$ and this is only possible if $x^{20-3r}=x^5$ and thus $20-3r=5\Rightarrow3r=20-5$ or $3r=15\Rightarrow r=5$. Putting this value of $r=5$ in (1) we get || مگر اس رکن میں $x^5$ ہے اور یہ صرف اسی صورت ممکن ہے جب $x^{20-3r}=x^5$ ہو، اس لیے $20-3r=5\Rightarrow3r=20-5$ یعنی $3r=15\Rightarrow r=5$۔ $r=5$ کی یہ قیمت (1) میں رکھنے پر ہمیں ملتا ہے || خو دا حد $x^5$ لري او دا یوازې هغه وخت ممکن دی چې $x^{20-3r}=x^5$ وي، نو $20-3r=5\Rightarrow3r=20-5$ یا $3r=15\Rightarrow r=5$. د $r=5$ دا ارزښت په (1) کې ایښودو سره موږ ترلاسه کوو
+m $T_{5+1}=T_6=(-1)^5\dbinom{10}{5}2^{10-r}\cdot3^5x^{20-15}\qquad\Rightarrow\qquad T_6=(-1)^5\dbinom{10}{5}2^5\cdot3^5x^5$
+p So the required coefficient is $(-1)^5\dbinom{10}{5}2^5\cdot3^5=-\dfrac{10!}{5!\,5!}\,32\cdot243$ || لہٰذا مطلوبہ سر $(-1)^5\dbinom{10}{5}2^5\cdot3^5=-\dfrac{10!}{5!\,5!}\,32\cdot243$ ہے || نو غوښتل شوی ضریب $(-1)^5\dbinom{10}{5}2^5\cdot3^5=-\dfrac{10!}{5!\,5!}\,32\cdot243$ دی
+p $\therefore$ Required coefficient $=-\dfrac{10\cdot9\cdot8\cdot7\cdot6\cdot5!}{1\cdot2\cdot3\cdot4\cdot5\cdot5!}\cdot32\cdot243$, that is the required coefficient of $x^5=-1959552$ || $\therefore$ مطلوبہ سر $=-\dfrac{10\cdot9\cdot8\cdot7\cdot6\cdot5!}{1\cdot2\cdot3\cdot4\cdot5\cdot5!}\cdot32\cdot243$، یعنی $x^5$ کا مطلوبہ سر $=-1959552$ || $\therefore$ غوښتل شوی ضریب $=-\dfrac{10\cdot9\cdot8\cdot7\cdot6\cdot5!}{1\cdot2\cdot3\cdot4\cdot5\cdot5!}\cdot32\cdot243$، یعنې د $x^5$ غوښتل شوی ضریب $=-1959552$
+endexample
+example 11 | Find the term independent of $x$ in $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ || $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ میں $x$ سے آزاد رکن معلوم کریں || په $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ کې له $x$ نه خپلواک حد پیدا کړئ
+p **Solution:** Let $T_{r+1}$th term of $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ be the particular term which is independent of $x$. The $T_{r+1}$th term for the above expansion is || **حل:** فرض کریں $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ کا $T_{r+1}$واں رکن وہ مخصوص رکن ہے جو $x$ سے آزاد ہے۔ مذکورہ توسیع کا $T_{r+1}$واں رکن ہے || **حل:** فرض کړئ د $\left(\dfrac32x^2-\dfrac1{3x}\right)^9$ $T_{r+1}$م حد هغه ځانګړی حد دی چې له $x$ نه خپلواک دی. د پورتنۍ پراختیا $T_{r+1}$م حد دی

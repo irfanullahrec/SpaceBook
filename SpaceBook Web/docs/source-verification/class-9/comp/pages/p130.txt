@@ -1,0 +1,44 @@
+@printed 122
+@status lesson
+m void main()
+m {
+m     int n;
+m     n=1;
+m     while(n<=5)
+m     {
+m         printf("Pakistan\n");
+m         n++;
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+endbox
+### Program 5.6: A program that displays all the odd numbers whom sum is equal to 100. || پروگرام 5.6: وہ تمام طاق اعداد دکھانے کا پروگرام جن کا مجموعہ 100 کے برابر ہو۔ || پروګرام ۵.۶: هغه ټول طاق عددونه ښيي چې مجموعه یې ۱۰۰ وي.
+m # include <stdio.h>
+m void main()
+m {
+m     int n=1; s=0;
+m     while(s<=100)
+m     {
+m         s=s+n;
+m         printf("%d\n",n);
+m         n+=2;
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 1
+m 3
+m 5
+m 7
+m 9
+m 11
+m 13
+m 15
+m 17
+m 19
+endbox
+@issue "int n=1; s=0;" should be "int n=1, s=0;" (s is not declared). With while(s<=100), the loop also runs once more when s = 100 and prints 21; the condition should be s<100. "whom sum" is printed for "whose sum". Kept as printed.

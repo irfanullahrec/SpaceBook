@@ -1,0 +1,17 @@
+@printed 100
+@status lesson
+m     .
+m     .
+m     statement n;
+m }
+p The following flowchart shows the working of *if-else* statement. || درج ذیل فلوچارٹ *if-else* اسٹیٹمنٹ کا کام دکھاتا ہے۔ || لاندې فلوچارټ د *if-else* بیان کار ښيي.
+fig10 f4.2 || Figure: 4.2 if-else structure || شکل 4.2 if-else کا ڈھانچہ || ۴.۲ شکل د if-else جوړښت
+p The following programs demonstrate the use of *if-else* statement. || درج ذیل پروگرام *if-else* اسٹیٹمنٹ کا استعمال دکھاتے ہیں۔ || لاندې پروګرامونه د *if-else* کارونه ښيي.
+### Program 4.4: A program that inputs a number and finds whether it is even or odd using if-else structure. || پروگرام 4.4: if-else کے ذریعے عدد ان پٹ کر کے معلوم کرنا کہ وہ جفت ہے یا طاق۔ || پروګرام ۴.۴: د if-else په مرسته عدد اخلي او ټاکي چې جفت دی که طاق.
+m #include<stdio.h>
+m void main()
+m {
+m     int n;
+m     printf("Enter a number = ");
+m     scanf("%d",&n);
+m     if(n%2==0)     // % operator returns remainder after division

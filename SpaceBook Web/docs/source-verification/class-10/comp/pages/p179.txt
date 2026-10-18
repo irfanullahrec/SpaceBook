@@ -1,0 +1,27 @@
+@printed 165
+@status lesson
+@sec 7-5-3 | 7.5.3 پس منظر اور پیش منظر کا رنگ بدلنا || 7.5.3 Changing the background and foreground colour || ۷.۵.۳ د شالید او مخکینۍ برخې رنګ بدلول
+### 7.5.3 پس منظر اور پیش منظر کا رنگ بدلنا || 7.5.3 Changing the background and foreground colour || ۷.۵.۳ د شالید او مخکینۍ برخې رنګ بدلول
+p ویب پیج کو اچھی شکل دینے اور دلکش بنانے کے لئے رنگ بہت ضروری ہیں۔ آپ <body> ٹیگ کا استعمال کر کے پیج پر رنگ دکھا سکتے ہیں یا آپ bgcolor کا استعمال کرتے ہوئے انفرادی ٹیگ کیلئے رنگ متعین کر سکتے ہیں۔ کسی پیج میں پس منظر کا رنگ لگانے کے لئے، bgcolor اور پیش منظر کے رنگ کے لئے، <body> ٹیگ میں ٹیکسٹ شامل کریں جیسا کہ شکل نمبر 7.41 میں دکھایا گیا ہے۔ || Colours are very important for giving a web page a good look and making it attractive. You can show colour on a page using the <body> tag, or you can set the colour for individual tags using bgcolor. To give a page a background colour, add bgcolor — and, for the foreground colour, text — to the <body> tag, as shown in Figure 7.41. || رنګونه د ویب پاڼې د ښه بڼې او ښکلا لپاره ډېر اړین دي. تاسو د <body> ټیګ په کارولو په پاڼه رنګ ښودلای شئ، یا د bgcolor په کارولو د ځانګړو ټیګونو لپاره رنګ ټاکلای شئ. په پاڼه کې د شالید رنګ لپاره bgcolor، او د مخکینۍ برخې (متن) رنګ لپاره text په <body> ټیګ کې ورزیات کړئ، لکه څنګه چې په ۷.۴۱ شکل کې ښودل شوي.
+### شکل نمبر 7.41 HTML میں پس منظر اور پیش منظر کے رنگوں کا استعمال || Figure 7.41 Using background and foreground colours in HTML || ۷.۴۱ شکل په HTML کې د شالید او مخکینۍ برخې رنګونو کارونه
+m <html>
+m <head>
+m <title> Background & Foreground Color</title>
+m </head>
+m <body bgcolor="pink" text="blue">
+m <font size=4>
+m It is very important that one is both physically and mentally fit.<br>
+m Exercising plays a vital role in our lives.<br>
+m It helps us in staying physically fit.<br>
+m Out human body is designed to move.<br>
+m If we don't walk or exercise daily then we might easily<br>
+m get prone to different diseases overtime.<br>
+m Just like eating food, going to work daily are some of the<br>
+m important aspects of daily life exercise is also important<br>
+m in daily lives and one should make it a habit to<br>
+m at least exercise 4 out of 7 days in a week.
+m </body>
+m </html>
+@issue The <body> and <font> lines of Figure 7.41 are too faint to read; they are reconstructed from the text (pink background, blue text). The sample text has errors kept as printed: "Out human body" (Our), "overtime" (over time), and a missing full stop before "exercise is also important". The <font> tag is never closed.
+p اس HTML ڈاکومنٹ میں، پس منظر کا رنگ pink اور پیش منظر کا رنگ blue ہے۔ براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.42 میں دکھایا گیا ہے۔ || In this HTML document the background colour is pink and the foreground colour is blue. The browser window will show it as in Figure 7.42. || په دې HTML سند کې د شالید رنګ ګلابي (pink) او د مخکینۍ برخې رنګ شین (blue) دی. براوزر کړکۍ به یې لکه په ۷.۴۲ شکل کې وښيي.
+@deco Figure 7.42 پس منظر اور پیش منظر کے رنگ کے ساتھ ویب پیج (Web page with background and foreground colour): the same text in the browser on a pink background; in the scan the text looks magenta rather than blue. Not reproduced.

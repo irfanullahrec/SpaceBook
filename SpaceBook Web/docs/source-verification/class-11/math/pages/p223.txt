@@ -1,0 +1,23 @@
+@printed 223
+@issue In Example 15 the printed fifth-term decimal is 0.000016, whereas 5/(2·3^5·4^3) = 0.00016; the printed sum 1.07719 uses 0.00016. Preserved as printed and clarified separately.
+@deco Unit-running header, folio and decorative footer band excluded
+endexample
+example 15 | Compute $\sqrt[3]{\dfrac54}$ to an accuracy of at least four decimal places using binomial expansion || دو رقمی توسیع کے ذریعے $\sqrt[3]{\dfrac54}$ کو کم از کم چار اعشاریہ مقامات تک درستگی کے ساتھ معلوم کریں || د دوه حدي پراختیا په کارولو $\sqrt[3]{\dfrac54}$ لږ تر لږه څلور اعشاریه ځایونو دقت پورې محاسبه کړئ
+p **Solution:** Given $\sqrt[3]{\dfrac54}=\left(\dfrac54\right)^{\frac13}=\left(\dfrac{4+1}4\right)^{\frac13}$ or || **حل:** دیا گیا ہے $\sqrt[3]{\dfrac54}=\left(\dfrac54\right)^{\frac13}=\left(\dfrac{4+1}4\right)^{\frac13}$ یا || **حل:** ورکړل شوی دی $\sqrt[3]{\dfrac54}=\left(\dfrac54\right)^{\frac13}=\left(\dfrac{4+1}4\right)^{\frac13}$ یا
+m $\left(\dfrac54\right)^{\frac13}=\left(1+\dfrac14\right)^{\frac13}=1+\dfrac13\cdot\dfrac14+\dfrac{\frac13\left(\frac13-1\right)}{2!}\left(\dfrac14\right)^2+\dfrac{\frac13\left(\frac13-1\right)\left(\frac13-2\right)}{3!}\left(\dfrac14\right)^3+\dfrac{\frac13\left(\frac13-1\right)\left(\frac13-2\right)\left(\frac13-3\right)}{4!}\left(\dfrac14\right)^4+\cdots$
+m $\text{or}\quad\left(\dfrac54\right)^{\frac13}=1+\dfrac1{12}+\dfrac{\frac13\left(-\frac23\right)}{2}\cdot\dfrac1{16}+\dfrac{\frac13\left(-\frac23\right)\left(-\frac53\right)}{6}\cdot\dfrac1{64}+\dfrac{\frac13\left(-\frac23\right)\left(-\frac53\right)\left(-\frac83\right)}{24}\cdot\dfrac1{256}+\cdots$
+m $=1+\dfrac1{12}-\dfrac13\cdot\dfrac13\cdot\dfrac1{16}+\dfrac13\cdot\dfrac23\cdot\dfrac53\cdot\dfrac16\cdot\dfrac1{64}-\dfrac13\cdot\dfrac23\cdot\dfrac53\cdot\dfrac83\cdot\dfrac1{24}\cdot\dfrac1{256}+\cdots$
+m $=1+\dfrac1{12}-\dfrac1{144}+\dfrac5{81\times64}-\dfrac5{2\cdot3^5\cdot4^3}+\cdots$
+m $=1+0.08333-0.00694+0.00096-0.000016+\cdots$
+p Taking only these five terms and neglecting the other we can write || صرف یہ پانچ ارکان لے کر باقی کو نظر انداز کرتے ہوئے ہم لکھ سکتے ہیں || یوازې دغه پنځه حدونه اخیستو او نور له پامه غورځولو سره موږ لیکلای شو
+m $\sqrt[3]{\dfrac54}\approx1.00000+0.08333-0.00694+0.00096-0.000016.$
+p Where $\approx$ stands for 'approximately equal to'. We have used here the symbol $\approx$ because we have omitted all the terms after the first five terms. So we cannot expect even think for exactness. || جہاں $\approx$ کا مطلب 'تقریباً برابر' ہے۔ ہم نے یہاں علامت $\approx$ اس لیے استعمال کی ہے کہ ہم نے پہلے پانچ ارکان کے بعد کے تمام ارکان چھوڑ دیے ہیں۔ لہٰذا ہم قطعیت کی توقع نہیں کر سکتے۔ || چېرته چې $\approx$ د 'نږدې برابر' معنا لري. موږ دلته $\approx$ نښه ځکه کارولې چې د لومړیو پنځو حدونو وروسته ټول حدونه مو پرېښي دي. نو موږ دقیقوالي هیله نه شو کولای.
+m $\sqrt[3]{\dfrac54}\approx1.07719\approx1.0772$
+box note | SpaceBook clarification || اسپیس بک کی وضاحت || د سپېس بک وضاحت
+p The fifth term is $\dfrac5{2\cdot3^5\cdot4^3}=\dfrac5{31104}\approx0.00016$, so the printed $0.000016$ lacks a digit; the printed final value $1.07719$ is the one obtained with $0.00016$. || پانچواں رکن $\dfrac5{2\cdot3^5\cdot4^3}=\dfrac5{31104}\approx0.00016$ ہے، اس لیے مطبوعہ $0.000016$ میں ایک ہندسہ کم ہے؛ مطبوعہ آخری قیمت $1.07719$ وہی ہے جو $0.00016$ سے حاصل ہوتی ہے۔ || پنځم حد $\dfrac5{2\cdot3^5\cdot4^3}=\dfrac5{31104}\approx0.00016$ دی، نو چاپ شوی $0.000016$ یو عدد کم لري؛ چاپ شوی وروستی ارزښت $1.07719$ هغه دی چې د $0.00016$ سره ترلاسه کېږي.
+endbox
+endexample
+example 16 | Evaluate $\sqrt{35}$ by Binomial theorem || دو رقمی قضیے سے $\sqrt{35}$ کی قیمت معلوم کریں || د دوه حدي قضیې په کارولو $\sqrt{35}$ ارزول
+p **Solution:** || **حل:** || **حل:**
+m $\sqrt{35}=(36-1)^{\frac12}=\left[36\left(1-\dfrac1{36}\right)\right]^{\frac12}=(36)^{\frac12}\left[1-\dfrac1{36}\right]^{\frac12}$
+m $=6\left[1-\dfrac12\cdot\dfrac1{36}+\dfrac{\frac12\left(\frac12-1\right)}{2!}\left(-\dfrac1{36}\right)^2+\dfrac{\frac12\left(\frac12-1\right)\left(\frac12-2\right)}{3!}\left(-\dfrac1{36}\right)^3+\dfrac{\frac12\left(\frac12-1\right)\left(\frac12-2\right)\left(\frac12-3\right)}{4!}\left(-\dfrac1{36}\right)^4+\cdots\right]$

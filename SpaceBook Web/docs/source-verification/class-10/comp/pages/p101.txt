@@ -1,0 +1,54 @@
+@printed 89
+@status lesson
+m     result = pow(base, exponent);
+m     cout << base << "^" << exponent << " = " << result;
+m     return 0;
+m }
+@issue The code prints the full float value (e.g. 42.4425); the output box shows it rounded to 42.44. Programs 4.9–4.11 are C++ (iostream, cout, cin), although the section is about C code.
+### پروگرام 4.10 جب اُنچائی اور قاعدہ کی لمبائی دی جائے تو مثلث کا رقبہ تلاش کرنا۔ || Program 4.10 Find the area of a triangle when its height and base are given || پروګرام ۴.۱۰ کله چې لوړوالی او قاعده ورکړل شي د مثلث مساحت موندل
+m /* C++ program to find the area of a triangle if base and height are given */
+m #include <iostream>
+m using namespace std;
+m int main()
+m {
+m     float b, h, a;
+m     // b = base
+m     // h = height
+m     // a = area
+m     cout << "Enter the base & height of the triangle::\n";
+m     cin >> b >> h;
+m     // Calculate area of the triangle
+m     a = (float)((b * h) / 2);
+m     // Output
+m     cout << "\nArea of the triangle = " << a << " sq. units";
+m     return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter the base & height of the triangle::
+m 5
+m 7
+m Area of the triangle = 17.5 sq. units
+endbox
+@issue In the scan the comment markers of Program 4.10 are almost invisible (lines such as "b = base" and "Calculate area of the triangle" appear without "//", and "C++" is printed "C−−"); without the markers the program would not compile. They are restored above.
+### پروگرام 4.11 مکعب کے ضلع کی لمبائی اِن پُٹ کر کے اس کا حجم معلوم کر کے پرنٹ کرنا۔ || Program 4.11 Input the side length of a cube, find its volume and print it || پروګرام ۴.۱۱ د مکعب د ضلعې اوږدوالی داخل کړئ، حجم یې پیدا او چاپ کړئ
+m #include <iostream>
+m using namespace std;
+m int main()
+m {
+m     int sid1;
+m     float volcu;
+m     cout << "\n\n Calculate the volume of a cube :\n";
+m     cout << "---------------------------------------\n";
+m     cout<<" Input the side of a cube : ";
+m     cin>>sid1;
+m     volcu=(sid1*sid1*sid1);
+m     cout<<" The volume of a cube is : "<< volcu << endl;
+m     cout << endl;
+m     return 0;
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Calculate the volume of a cube:
+m ---------------------------------------
+m Input the side of a cube: 5
+m The volume of a cube is: 125
+endbox

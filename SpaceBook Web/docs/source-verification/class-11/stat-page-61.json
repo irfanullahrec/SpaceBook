@@ -1,0 +1,694 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s061-exercise1-f",
+  "title": "Exercise-1: Q1.26 – Q1.30",
+  "headingUrdu": "مشق-1: سوال 1.26 – 1.30",
+  "headingPashto": "تمرین-1: پوښتنې 1.26 – 1.30",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 61,
+    "printedPage": "53"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s061-q26",
+      "en": "1.26 Expand the following summation and product signs.",
+      "ur": "1.26 درج ذیل مجموعہ اور حاصلِ ضرب کی علامات کو پھیلائیں۔",
+      "ps": "1.26 د مجموعې او ضرب لاندې نښې پراخې کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-q27",
+      "en": "1.27 Rewrite the following using summation notation.",
+      "ur": "1.27 درج ذیل کو مجموعہ کی علامت استعمال کرتے ہوئے دوبارہ لکھیں۔",
+      "ps": "1.27 لاندې د مجموعې د نښې په کارولو سره بیا ولیکئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex1-27"
+    },
+    {
+      "id": "stat11-s061-q28",
+      "en": "1.28 For x = −4, −2, 0, −1, −1, find the value of each expression",
+      "ur": "1.28 x = −4, −2, 0, −1, −1 کے لیے ہر عبارت کی قدر معلوم کریں",
+      "ps": "1.28 د x = −4, −2, 0, −1, −1 لپاره د هرې بیان ارزښت ومومئ",
+      "role": "question",
+      "exerciseId": "stat11-ex1-28"
+    },
+    {
+      "id": "stat11-s061-q29",
+      "en": "1.29 For the given set of scores, x = 1, 0, 5, 2. Find the value of each of the following expressions;",
+      "ur": "1.29 اسکورز کے دیے گئے مجموعے x = 1, 0, 5, 2 کے لیے درج ذیل میں سے ہر عبارت کی قدر معلوم کریں؛",
+      "ps": "1.29 د نمرو د ورکړل شوې ټولګې x = 1, 0, 5, 2 لپاره د لاندې هر بیان ارزښت ومومئ؛",
+      "role": "question",
+      "exerciseId": "stat11-ex1-29",
+      "sourceGap": {
+        "note": "In items (i), (iii) and (iv) the printed expression shows no visible sigma sign (printed as x², (x − 2), (x − 2)²), probably lost in the scan or the original print; kept as printed."
+      }
+    },
+    {
+      "id": "stat11-s061-q30",
+      "en": "1.30 Calculate Σx/5 for x = 4, 6, 0, 3, 2.",
+      "ur": "1.30 x = 4, 6, 0, 3, 2 کے لیے Σx/5 حساب کریں۔",
+      "ps": "1.30 د x = 4, 6, 0, 3, 2 لپاره Σx/5 محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex1-30"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s061-q26"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s061-q27"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s061-q28"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "equation",
+      "index": 12
+    },
+    {
+      "type": "equation",
+      "index": 13
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s061-q29"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 14
+    },
+    {
+      "type": "equation",
+      "index": 15
+    },
+    {
+      "type": "equation",
+      "index": 16
+    },
+    {
+      "type": "equation",
+      "index": 17
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s061-q30"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [
+    {
+      "id": "stat11-s061-e26i",
+      "latex": "\\text{(i)}\\ \\sum_{i=1}^{n}y_i",
+      "accessible": "(i) Σ (i = 1 to n) yi",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) Σ (i = 1 to n) yi"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) Σ (i = 1 to n) yi"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) Σ (i = 1 to n) yi"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26ii",
+      "latex": "\\text{(ii)}\\ \\sum_{i=2}^{6}x_i^2",
+      "accessible": "(ii) Σ (i = 2 to 6) xi²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(ii) Σ (i = 2 to 6) xi²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(ii) Σ (i = 2 to 6) xi²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(ii) Σ (i = 2 to 6) xi²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26iii",
+      "latex": "\\text{(iii)}\\ \\sum_{i=1}^{5}(y_i-5)",
+      "accessible": "(iii) Σ (i = 1 to 5) (yi − 5)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iii) Σ (i = 1 to 5) (yi − 5)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iii) Σ (i = 1 to 5) (yi − 5)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iii) Σ (i = 1 to 5) (yi − 5)"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26iv",
+      "latex": "\\text{(iv)}\\ \\sum_{i=3}^{8}(x_i-\\mu_i)^2",
+      "accessible": "(iv) Σ (i = 3 to 8) (xi − μi)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iv) Σ (i = 3 to 8) (xi − μi)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iv) Σ (i = 3 to 8) (xi − μi)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iv) Σ (i = 3 to 8) (xi − μi)²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26v",
+      "latex": "\\text{(v)}\\ \\prod_{i=1}^{4}y_i",
+      "accessible": "(v) Π (i = 1 to 4) yi",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(v) Π (i = 1 to 4) yi"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(v) Π (i = 1 to 4) yi"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(v) Π (i = 1 to 4) yi"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26vi",
+      "latex": "\\text{(vi)}\\ \\prod_{i=2}^{7}(ay_i)^2",
+      "accessible": "(vi) Π (i = 2 to 7) (a yi)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(vi) Π (i = 2 to 7) (a yi)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(vi) Π (i = 2 to 7) (a yi)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(vi) Π (i = 2 to 7) (a yi)²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e26vii",
+      "latex": "\\text{(vii)}\\ \\prod_{i=1}^{3}(x_i+y_i)",
+      "accessible": "(vii) Π (i = 1 to 3) (xi + yi)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(vii) Π (i = 1 to 3) (xi + yi)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(vii) Π (i = 1 to 3) (xi + yi)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(vii) Π (i = 1 to 3) (xi + yi)"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-26"
+    },
+    {
+      "id": "stat11-s061-e27i",
+      "latex": "\\text{(i)}\\ x_1+x_2+\\cdots+x_{20}",
+      "accessible": "(i) x1 + x2 + ⋯ + x20",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) x1 + x2 + ⋯ + x20"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) x1 + x2 + ⋯ + x20"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) x1 + x2 + ⋯ + x20"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-27"
+    },
+    {
+      "id": "stat11-s061-e27ii",
+      "latex": "\\text{(ii)}\\ y_1^2+y_2^2+y_3^2+y_4^2+y_5^2",
+      "accessible": "(ii) y1² + y2² + y3² + y4² + y5²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(ii) y1² + y2² + y3² + y4² + y5²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(ii) y1² + y2² + y3² + y4² + y5²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(ii) y1² + y2² + y3² + y4² + y5²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-27"
+    },
+    {
+      "id": "stat11-s061-e27iii",
+      "latex": "\\text{(iii)}\\ 8x_5+8x_6+\\cdots+8x_{14}",
+      "accessible": "(iii) 8x5 + 8x6 + ⋯ + 8x14",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iii) 8x5 + 8x6 + ⋯ + 8x14"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iii) 8x5 + 8x6 + ⋯ + 8x14"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iii) 8x5 + 8x6 + ⋯ + 8x14"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-27"
+    },
+    {
+      "id": "stat11-s061-e27iv",
+      "latex": "\\text{(iv)}\\ (y_1-\\mu)^2+(y_2-\\mu)^2+\\cdots+(y_n-\\mu)^2",
+      "accessible": "(iv) (y1 − μ)² + (y2 − μ)² + ⋯ + (yn − μ)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iv) (y1 − μ)² + (y2 − μ)² + ⋯ + (yn − μ)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iv) (y1 − μ)² + (y2 − μ)² + ⋯ + (yn − μ)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iv) (y1 − μ)² + (y2 − μ)² + ⋯ + (yn − μ)²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-27"
+    },
+    {
+      "id": "stat11-s061-e28i",
+      "latex": "\\text{(i)}\\ \\sum x",
+      "accessible": "(i) Σx",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) Σx"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) Σx"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) Σx"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-28"
+    },
+    {
+      "id": "stat11-s061-e28ii",
+      "latex": "\\text{(ii)}\\ \\sum x^2",
+      "accessible": "(ii) Σx²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(ii) Σx²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(ii) Σx²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(ii) Σx²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-28"
+    },
+    {
+      "id": "stat11-s061-e28iii",
+      "latex": "\\text{(iii)}\\ \\sum(x+4)",
+      "accessible": "(iii) Σ(x + 4)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iii) Σ(x + 4)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iii) Σ(x + 4)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iii) Σ(x + 4)"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-28"
+    },
+    {
+      "id": "stat11-s061-e29i",
+      "latex": "\\text{(i)}\\ x^2",
+      "accessible": "(i) x²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) x²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) x²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) x²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-29"
+    },
+    {
+      "id": "stat11-s061-e29ii",
+      "latex": "\\text{(ii)}\\ \\left(\\sum x\\right)^2",
+      "accessible": "(ii) (Σx)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(ii) (Σx)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(ii) (Σx)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(ii) (Σx)²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-29"
+    },
+    {
+      "id": "stat11-s061-e29iii",
+      "latex": "\\text{(iii)}\\ (x-2)",
+      "accessible": "(iii) (x − 2)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iii) (x − 2)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iii) (x − 2)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iii) (x − 2)"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-29"
+    },
+    {
+      "id": "stat11-s061-e29iv",
+      "latex": "\\text{(iv)}\\ (x-2)^2",
+      "accessible": "(iv) (x − 2)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iv) (x − 2)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iv) (x − 2)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iv) (x − 2)²"
+            }
+          ]
+        ]
+      },
+      "exerciseId": "stat11-ex1-29"
+    }
+  ],
+  "sourceNote": "Printed page 53. Expressions are printed as typeset sums/products and are given as equations. In 1.26 (iv) the printed subscript on μ is i. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:29:05.253279+00:00",
+    "scope": "Scan 61 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

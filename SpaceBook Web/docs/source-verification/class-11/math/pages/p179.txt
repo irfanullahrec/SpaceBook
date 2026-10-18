@@ -1,0 +1,28 @@
+@printed 179
+example 3 | How many different 6-place vehicle number plates are possible if the first 3 places are to be occupied by letters and the final 3 by numbers? || 6 خانوں والی کتنی مختلف گاڑی نمبر پلیٹیں ممکن ہیں اگر پہلے 3 خانوں میں حروف اور آخری 3 میں اعداد ہوں؟ || د 6 ځایونو څومره بېلابېلې د موټر نمبر پلېټې ممکنې دي که لومړي 3 ځایونه په تورو او وروستي 3 په عددونو ډک شي؟
+p **Solution:** Since the first three places are to be occupied by the letters A, B, C,…, Z and the final 3 places by the numbers 0, 1, 2,…, 9. Hence each event $E_i$, $i=1,2,3$ occurs in $m_i=26$, $i=1,2,3$ different ways and each $E_i$, $i=4,5,6$ occurs in $m_i=10$, $i=4,5,6$ different ways. Then by the fundamental counting principle the total number of vehicle number plates is || **حل:** چونکہ پہلے تین خانے حروف A, B, C,…, Z سے اور آخری 3 خانے اعداد 0, 1, 2,…, 9 سے پُر ہوں گے۔ لہٰذا ہر واقعہ $E_i$ ، $i=1,2,3$ ، $m_i=26$ مختلف طریقوں سے اور ہر $E_i$ ، $i=4,5,6$ ، $m_i=10$ مختلف طریقوں سے واقع ہوتا ہے۔ تو گنتی کے بنیادی اصول کے مطابق گاڑی نمبر پلیٹوں کی کل تعداد ہے || **حل:** څرنګه چې لومړي درې ځایونه د A, B, C,…, Z تورو او وروستي 3 ځایونه د 0, 1, 2,…, 9 عددونو په واسطه ډکېږي. نو هره پېښه $E_i$، $i=1,2,3$ په $m_i=26$ بېلابېلو لارو او هره $E_i$، $i=4,5,6$ په $m_i=10$ بېلابېلو لارو پېښېږي. نو د شمېرنې د بنسټیز اصل له مخې د موټر نمبر پلېټو ټول شمېر دی
+m $m_1\cdot m_2\cdot m_3\cdot m_4\cdot m_5\cdot m_6=26\cdot26\cdot26\cdot10\cdot10\cdot10=17576000$
+endexample
+example 4 | How many functions defined on n points is possible if each functional value is either 0 or 1? || n نقاط پر تعریف شدہ کتنے تفاعل ممکن ہیں اگر ہر تفاعلی قیمت 0 یا 1 ہو؟ || په n ټکو تعریف شوې څو تابعګانې ممکنې دي که هر تابعي قیمت 0 یا 1 وي؟
+p **Solution:** Let the points be 1, 2, 3,…, n. Since $f(i)=0$ or 1 for each $i=1,2,3,\ldots,n$. Hence each event $E_i$, $i=1,2,3,\ldots,n$ has $m_i=2$, $i=1,2,3,\ldots,n$ possibilities. Thus by the fundamental counting principle the total numbers of possible functions is || **حل:** فرض کریں نقاط 1, 2, 3,…, n ہیں۔ چونکہ ہر $i=1,2,3,\ldots,n$ کے لیے $f(i)=0$ یا 1 ہے۔ لہٰذا ہر واقعہ $E_i$ ، $i=1,2,3,\ldots,n$ کے $m_i=2$ امکانات ہیں۔ لہٰذا گنتی کے بنیادی اصول کے مطابق ممکنہ تفاعلات کی کل تعداد ہے || **حل:** فرض کړئ ټکي 1, 2, 3,…, n دي. څرنګه چې د هر $i=1,2,3,\ldots,n$ لپاره $f(i)=0$ یا 1 دی. نو هره پېښه $E_i$، $i=1,2,3,\ldots,n$ $m_i=2$ امکانات لري. نو د شمېرنې د بنسټیز اصل له مخې د ممکنو تابعګانو ټول شمېر دی
+m $m_1\cdot m_2\cdot m_3\cdots m_n=2\cdot2\cdots2=2^n$
+endexample
+example 5 | There are 5 roads joining A to B and 3 roads joining B to C. Find how many different routes there are from A to C via B. || A کو B سے ملانے والی 5 سڑکیں اور B کو C سے ملانے والی 3 سڑکیں ہیں۔ معلوم کریں کہ B کے راستے A سے C تک کتنے مختلف راستے ہیں۔ || A له B سره نښلوونکې 5 سړکونه او B له C سره نښلوونکي 3 سړکونه دي. پیدا کړئ چې د B له لارې له A څخه C ته څو بېلابېلې لارې دي.
+svg Roads from A to B and from B to C || A سے B اور B سے C تک سڑکیں || له A څخه B او له B څخه C ته سړکونه
+<svg viewBox="0 0 400 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three circles A, B and C in a row; five curved roads join A to B and three roads join B to C">
+<g fill="none" stroke="#9d174d" stroke-width="1.3">
+<path d="M70,65 Q135,0 200,65"/><path d="M70,65 Q135,30 200,65"/><path d="M70,65 L200,65"/><path d="M70,65 Q135,100 200,65"/><path d="M70,65 Q135,130 200,65"/>
+<path d="M200,65 Q265,20 330,65"/><path d="M200,65 L330,65"/><path d="M200,65 Q265,110 330,65"/>
+</g>
+<g font-family="serif" font-size="30" fill="#fff" text-anchor="middle">
+<circle cx="60" cy="65" r="38" fill="#ec4899" stroke="#9d174d"/><text x="60" y="76">A</text>
+<circle cx="200" cy="65" r="38" fill="#ec4899" stroke="#9d174d"/><text x="200" y="76">B</text>
+<circle cx="340" cy="65" r="38" fill="#ec4899" stroke="#9d174d"/><text x="340" y="76">C</text>
+</g>
+</svg>
+endsvg
+p **Solution:** There are two operations to be performed in succession. A to B: 5 ways; B to C: 3 ways. || **حل:** دو عمل یکے بعد دیگرے انجام دینے ہیں۔ A سے B: 5 طریقے؛ B سے C: 3 طریقے۔ || **حل:** دوه عملیې یو په بل پسې ترسره کېږي. له A څخه B: 5 لارې؛ له B څخه C: 3 لارې.
+m Number of routes from A to C $=5\times3=15$
+endexample
+example 6 | How many 3-letter code symbols can be formed with the letters A, B, C without repetition? || حروف A, B, C سے بغیر تکرار کے 3 حرفی کتنے کوڈ نشانات بنائے جا سکتے ہیں؟ || د A, B, C تورو څخه بې تکراره د 3 تورو څو کوډ نښې جوړېدای شي؟
+p **Solution:** Consider placing the letters in these boxes. $\square\square\square$ || **حل:** ان خانوں میں حروف رکھنے پر غور کریں۔ $\square\square\square$ || **حل:** په دې خانو کې د تورو ایښودو ته پام وکړئ. $\square\square\square$

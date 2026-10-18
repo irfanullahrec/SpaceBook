@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Volume (cubical) thermal expansion of solids: equations 8.9-8.11, Figure 8.6, Recall box'
+SECTIONS = [
+    ('8.4.1', ('8.4.1 THERMAL EXPANSION OF SOLIDS', '8.4.1 ٹھوس اجسام کا حرارتی پھیلاؤ', '8.4.1 د جامدو تودوخیز پراخوالی'), [
+        ('h', 'B. Volume (cubical) thermal expansion of solids', 'B. ٹھوس اجسام کا حجمی (مکعبی) حرارتی پھیلاؤ', 'B. د جامدو حجمي (مکعبي) تودوخیز پراخوالی'),
+        ('q', 'The increase in volume of a substance due to rise in temperature is called volume thermal expansion.', 'درجۂ حرارت بڑھنے سے کسی مادے کے حجم میں اضافہ حجمی حرارتی پھیلاؤ کہلاتا ہے۔', 'د تودوخې په لوړېدو د مادې د حجم زیاتوالی حجمي تودوخیز پراخوالی بلل کېږي.'),
+        ('p', "Consider a metal block having an original volume 'V_o', at temperature 'T_o'. After heating metal block to temperature 'T', the block expand to its new volume 'V_T' as shown in the figure 8.6. This means for the change in temperature ΔT (where ΔT = T − T_o) there is corresponding change in volume ΔV (where ΔV = V_o − V_T, as printed).",
+         "ایک دھاتی بلاک لیں جس کا ابتدائی حجم 'V_o' درجۂ حرارت 'T_o' پر ہے۔ اسے درجۂ حرارت 'T' تک گرم کرنے پر بلاک پھیل کر نیا حجم 'V_T' حاصل کرتا ہے جیسا کہ شکل 8.6 میں ہے۔ یعنی درجۂ حرارت کی تبدیلی ΔT (جہاں ΔT = T − T_o) کے مطابق حجم میں تبدیلی ΔV (کتاب میں ΔV = V_o − V_T) ہوتی ہے۔",
+         "یو فلزي بلاک په پام کې ونیسئ چې لومړنی حجم یې 'V_o' په 'T_o' تودوخه کې دی. 'T' تودوخې ته په تودولو بلاک پراخېږي او نوی حجم 'V_T' مومي لکه په 8.6 شکل کې. یعنې د تودوخې د بدلون ΔT (چېرې چې ΔT = T − T_o) سره سم د حجم بدلون ΔV (په کتاب کې ΔV = V_o − V_T) رامنځته کېږي."),
+        ('p', 'The increase in volume of a metal block, on heating, is directly proportional to original volume of the metal block and rise in temperature. Mathematically,',
+         'گرم کرنے پر دھاتی بلاک کے حجم میں اضافہ بلاک کے ابتدائی حجم اور درجۂ حرارت کے اضافے کے راست متناسب ہے۔ ریاضیاتی طور پر،',
+         'په تودولو د فلزي بلاک د حجم زیاتوالی د بلاک له لومړني حجم او د تودوخې له لوړېدو سره مستقیم متناسب دی. په ریاضي ډول،'),
+        ('eq', 'phys9-u8-vol1', 'ΔV ∝ ΔT   and   ΔV ∝ V_o'),
+        ('p', 'combining these proportionalities, we get', 'ان تناسبات کو ملانے سے', 'د دې تناسبونو په یوځای کولو سره لرو'),
+        ('eq', 'phys9-u8-vol2', 'ΔV ∝ V_o ΔT'),
+        ('p', 'changing proportionality into equality', 'تناسب کو مساوات میں بدلنے سے', 'د تناسب په مساوات بدلولو سره'),
+        ('eq', 'phys9-u8-eq89', 'ΔV = γ V_o ΔT', '8.9'),
+        ('p', "where 'γ' the proportionality constant, is called the coefficient of volume thermal expansion for the particular material and has units of °C^{-1} and in SI as K^{-1}.",
+         "جہاں تناسب کا مستقل 'γ' اس مادے کا حجمی حرارتی پھیلاؤ کا عددی سر کہلاتا ہے اور اس کی اکائی °C^{-1} اور SI میں K^{-1} ہے۔",
+         "چېرې چې د تناسب ثابت 'γ' د هغې مادې د حجمي تودوخیز پراخوالي ضریب بلل کېږي او واحد یې °C^{-1} او په SI کې K^{-1} دی."),
+        ('p', 'since ΔV = V_T − V_o, we can write the above equation as', 'چونکہ ΔV = V_T − V_o، اوپر کی مساوات یوں لکھی جا سکتی ہے', 'څرنګه چې ΔV = V_T − V_o، پورتنۍ معادله داسې لیکو'),
+        ('eq', 'phys9-u8-vol3', 'V_T − V_o = γ V_o ΔT'),
+        ('p', 'taking V_o common', 'V_o کو مشترک لینے سے', 'د V_o په ګډ اخیستو'),
+        ('eq', 'phys9-u8-vol4', 'V_T = V_o + γ V_o ΔT'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', 'phys9-u8-eq810', 'V_T = V_o(1 + γ ΔT)', '8.10'),
+        ('p', 'From equation 8.9, we can define coefficient of volume thermal expansion (γ) of a substance as the change in volume per unit volume per kelvin change in temperature.',
+         'مساوات 8.9 سے ہم کسی مادے کے حجمی حرارتی پھیلاؤ کے عددی سر (γ) کی تعریف یوں کر سکتے ہیں: درجۂ حرارت میں فی کیلون تبدیلی پر فی اکائی حجم میں تبدیلی۔',
+         'له 8.9 معادلې د یوې مادې د حجمي تودوخیز پراخوالي ضریب (γ) داسې تعریفوو: د تودوخې د هر کېلوین بدلون پر وړاندې د هر واحد حجم بدلون.'),
+        ('eq', 'phys9-u8-eq811', 'γ = [[ΔV|V_o ΔT]]', '8.11'),
+        ('fig', 'Figure 8.6: Volume thermal expansion for cubical object (original volume V_o expanding to V).', 'شکل 8.6: مکعبی جسم کا حجمی حرارتی پھیلاؤ (ابتدائی حجم V_o سے V)۔', '8.6 شکل: د مکعبي جسم حجمي تودوخیز پراخوالی (له لومړني حجم V_o څخه V ته).'),
+        ('h', 'RECALL', 'یاد کریں', 'را یاد کړئ'),
+        ('p', 'General Science for class 8, unit 9: SOURCES AND EFFECTS OF HEAT ENERGY, Thermal expansion of solids, liquids and gases. We also learned important applications of thermal expansion, we used bimetallic strip for fire alarms and automatized switching of electric iron. Also the effects of thermal expansion in daily life were discussed.',
+         'جماعت ہشتم کی جنرل سائنس، یونٹ 9: حرارتی توانائی کے ذرائع اور اثرات، ٹھوس، مائعات اور گیسوں کا حرارتی پھیلاؤ۔ ہم نے حرارتی پھیلاؤ کے اہم استعمالات بھی سیکھے؛ آگ کے الارم اور برقی استری کی خودکار سوئچنگ کے لیے دو دھاتی پٹی استعمال کی۔ روزمرہ زندگی میں حرارتی پھیلاؤ کے اثرات پر بھی بات ہوئی۔',
+         'د اتم ټولګي عمومي ساینس، 9 څپرکی: د تودوخیزې انرژۍ سرچینې او اغېزې، د جامدو، مایعاتو او ګازونو تودوخیز پراخوالی. موږ د تودوخیز پراخوالي مهمې کارونې هم زده کړې؛ د اور د خبرتیا او د برېښنايي اوتو د اتومات سویچ لپاره مو دوه فلزي پټۍ کاروله. په ورځني ژوند کې د تودوخیز پراخوالي اغېزې هم وڅېړل شوې.'),
+        ('p', 'This is a general rule for solids that they expand to the same extent in all three directions. It can be proved that the coefficient of volume thermal expansion of solids γ is about three times',
+         'ٹھوس اجسام کا عمومی اصول ہے کہ وہ تینوں سمتوں میں یکساں پھیلتے ہیں۔ ثابت کیا جا سکتا ہے کہ ٹھوس اجسام کا حجمی حرارتی پھیلاؤ کا عددی سر γ تقریباً تین گنا ہے',
+         'د جامدو عمومي قاعده دا ده چې په دریو لورو کې یو شان پراخېږي. ثابتېدای شي چې د جامدو د حجمي تودوخیز پراخوالي ضریب γ شاوخوا درې چنده دی'),
+    ]),
+]
+EXTRA = dict(
+    definitions=[
+        dict(term='Volume thermal expansion', definition='The increase in volume of a substance due to rise in temperature.', urdu='درجۂ حرارت بڑھنے سے مادے کے حجم میں اضافہ۔', pashto='د تودوخې په لوړېدو د مادې د حجم زیاتوالی.'),
+        dict(term='Coefficient of volume thermal expansion (γ)', definition='The change in volume per unit volume per kelvin change in temperature: γ = ΔV/(V₀ ΔT).', urdu='درجۂ حرارت میں فی کیلون تبدیلی پر فی اکائی حجم میں تبدیلی؛ γ = ΔV/(V₀ ΔT)۔', pashto='د تودوخې د هر کېلوین بدلون پر وړاندې د هر واحد حجم بدلون؛ γ = ΔV/(V₀ ΔT).'),
+    ],
+    formulaSourceLinks=[dict(name='Volume thermal expansion', blockIds=['phys9-u8-eq89', 'phys9-u8-eq810', 'phys9-u8-eq811'])],
+)

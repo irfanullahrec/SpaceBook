@@ -1,0 +1,29 @@
+@printed 57
+@status lesson
+p The encoding of instructions from the DNA to RNA takes place in the presence of specific enzymes. In this process the sequence of nucleotides of DNA with the corresponding sequence of nucleotides on mRNA is as follows. || DNA سے RNA تک ہدایات کی منتقلی مخصوص خامروں (انزائمز) کی موجودگی میں ہوتی ہے۔ اس عمل میں DNA کے نیوکلیوٹائیڈز کی ترتیب اور mRNA پر متعلقہ نیوکلیوٹائیڈز کی ترتیب درج ذیل ہے۔ || له DNA څخه RNA ته د لارښوونو کوډ کول د ځانګړو انزایمونو په شتون کې ترسره کېږي. په دې بهیر کې د DNA د نوکلیوټایډونو ترتیب او په mRNA کې د اړوندو نوکلیوټایډونو ترتیب په لاندې ډول دی.
+table DNA and RNA nucleotides || DNA اور RNA نیوکلیوٹائیڈز || د DNA او RNA نوکلیوټایډونه
+th | DNA nucleotide || DNA نیوکلیوٹائیڈ || د DNA نوکلیوټایډ | RNA nucleotide || RNA نیوکلیوٹائیڈ || د RNA نوکلیوټایډ
+tr | Thymine || تھائیمین || تایمین | Adenine || ایڈینین || اډینین
+tr | Adenine || ایڈینین || اډینین | Uracil || یوراسل || یوراسیل
+tr | Cytosine || سائٹوسین || سایټوسین | Guanine || گوانین || ګوانین
+tr | Guanine || گوانین || ګوانین | Cytosine || سائٹوسین || سایټوسین
+endtable
+p It shows that mRNA serves as interpreter between DNA and the sequence of amino acid in a specific protein. || اس سے ظاہر ہوتا ہے کہ mRNA، DNA اور کسی مخصوص پروٹین میں امائنو ایسڈز کی ترتیب کے درمیان ترجمان کا کام کرتا ہے۔ || دا ښيي چې mRNA د DNA او په یوه ځانګړي پروټین کې د امینو اسیدونو د ترتیب ترمنځ د ژباړونکي کار کوي.
+svg Fig: 8.7 An overview of protein synthesis process. || شکل 8.7 پروٹین کی تیاری کے عمل کا جائزہ || ۸.۷ شکل د پروټین د جوړېدو بهیر عمومي کتنه
+<svg viewBox="0 0 440 270" width="440" role="img" aria-label="Protein synthesis overview. In the NUCLEUS (green, left), a DNA double strand unwinds at a gene and mRNA copies the DNA. The mRNA moves out (large green arrow) into the CYTOPLASM, where it is being translated on a ribosome (blue sphere). Clover-shaped tRNAs bring free amino acids (green balls) to the ribosome, which incorporates them into the growing protein chain" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">
+<defs><marker id="ar87" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#65a30d"/></marker></defs>
+<path d="M0 0 H180 Q215 110 170 220 H0 Z" fill="#bbf7d0"/>
+<text x="90" y="40" fill="#dc2626" font-size="14">NUCLEUS</text><text x="270" y="22" fill="#dc2626" font-size="14">CYTOPLASM</text>
+<path d="M20 20 Q60 60 40 100 Q20 140 60 180" fill="none" stroke="#6b21a8" stroke-width="7"/><path d="M50 20 Q90 60 70 100 Q60 140 30 190" fill="none" stroke="#6b21a8" stroke-width="7"/>
+<path d="M70 100 Q120 105 160 95" fill="none" stroke="#16a34a" stroke-width="6"/><text x="10" y="112">DNA</text><text x="90" y="80">Gene</text><text x="100" y="125">mRNA copying</text><text x="100" y="138">DNA in nucleus</text>
+<path d="M80 165 Q130 150 170 180" fill="none" stroke="#3f2a1d" stroke-width="6"/><text x="90" y="160">mRNA</text>
+<path d="M110 185 Q160 200 190 220" fill="none" stroke="#84cc16" stroke-width="10" marker-end="url(#ar87)"/>
+<circle cx="290" cy="225" r="38" fill="#bfdbfe"/><path d="M200 235 Q290 215 380 240" fill="none" stroke="#16a34a" stroke-width="7"/><text x="120" y="255">mRNA being translated</text><text x="330" y="262">Ribosome</text>
+<g fill="#22c55e"><circle cx="250" cy="70" r="5"/><circle cx="260" cy="80" r="5"/><circle cx="268" cy="92" r="5"/><circle cx="272" cy="106" r="5"/><circle cx="276" cy="120" r="5"/><circle cx="280" cy="134" r="5"/><circle cx="284" cy="150" r="5"/><circle cx="286" cy="166" r="5"/><circle cx="288" cy="182" r="5"/><circle cx="350" cy="50" r="5"/><circle cx="380" cy="70" r="5"/><circle cx="410" cy="60" r="5"/><circle cx="395" cy="130" r="5"/></g>
+<text x="215" y="58">Growing protein chain</text><text x="350" y="40">Free amino acids</text>
+<g fill="#fff" stroke="#111827"><path d="M320 100 v30 m-10 -20 h20 m-25 -5 q-5 -10 5 -12 m25 12 q5 -10 -5 -12"/><path d="M360 140 v30 m-10 -20 h20"/><path d="M300 170 v30 m-10 -20 h20"/></g>
+<text x="350" y="100">tRNA bringing</text><text x="350" y="112">amino acid to</text><text x="350" y="124">ribosome</text>
+<text x="340" y="175">Ribosome</text><text x="340" y="187">incorporating</text><text x="340" y="199">amino acids into</text><text x="340" y="211">the growing</text><text x="340" y="223">protein chain</text>
+</svg>
+endsvg
+@issue The table pairs each DNA base with its complementary RNA base (T→A, A→U, C→G, G→C).

@@ -1,0 +1,572 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s193-corr-formula-2",
+  "title": "Example 5.3 (working) · Example 5.4: shortcut method",
+  "headingUrdu": "مثال 5.3 (حل) · مثال 5.4: مختصر طریقہ",
+  "headingPashto": "بېلګه 5.3 (حل) · بېلګه 5.4: لنډه طریقه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 193,
+    "printedPage": "183"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s193-a1",
+      "en": "The coefficient of correlation is",
+      "ur": "ارتباط کا عددی سر ہے",
+      "ps": "د همتړاو ضریب دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-a2",
+      "en": "It means x and y have positive correlation.",
+      "ur": "اس کا مطلب ہے کہ x اور y میں مثبت ارتباط ہے۔",
+      "ps": "دا پدې معنا چې x او y مثبت همتړاو لري.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-ex54",
+      "en": "Examples: 5.4",
+      "ur": "مثالیں: 5.4",
+      "ps": "بېلګې: 5.4",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "id": "stat11-s193-q54",
+      "en": "Compute the product moment coefficient of correlation between x and y by shortcut method from the data given below;",
+      "ur": "نیچے دیے گئے اعداد و شمار سے x اور y کے درمیان حاصلِ ضرب معیارِ اثر ارتباطی عددی سر مختصر طریقے سے حساب کریں؛",
+      "ps": "له لاندې ورکړل شویو معلوماتو څخه د x او y تر منځ د ضرب-مومنټ همتړاو ضریب په لنډه طریقه محاسبه کړئ؛",
+      "role": "question",
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "id": "stat11-s193-sol54",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "id": "stat11-s193-a3",
+      "en": "The necessary calculations are:",
+      "ur": "ضروری حسابات یہ ہیں:",
+      "ps": "اړین محاسبې دا دي:",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-4"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s193-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s193-a2",
+        "stat11-s193-ex54",
+        "stat11-s193-q54"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s193-sol54",
+        "stat11-s193-a3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 5
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s193-m",
+      "latex": "\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{70}{7}=10\\qquad\\qquad\\bar{y}=\\dfrac{\\sum y}{n}=\\dfrac{63}{7}=9",
+      "accessible": "x̄ = Σx/n = 70/7 = 10    ȳ = Σy/n = 63/7 = 9",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx/n = 70/7 = 10    ȳ = Σy/n = 63/7 = 9"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx/n = 70/7 = 10    ȳ = Σy/n = 63/7 = 9"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx/n = 70/7 = 10    ȳ = Σy/n = 63/7 = 9"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-r0",
+      "latex": "r_{xy}=\\dfrac{\\sum(x-\\bar{x})(y-\\bar{y})}{\\sqrt{\\sum(x-\\bar{x})^2\\sum(y-\\bar{y})^2}}",
+      "accessible": "r_xy = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² Σ(y − ȳ)²)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² Σ(y − ȳ)²)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² Σ(y − ȳ)²)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² Σ(y − ȳ)²)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-r1",
+      "latex": "=\\dfrac{46}{\\sqrt{28\\times 84}}",
+      "accessible": "= 46/√(28 × 84)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 46/√(28 × 84)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 46/√(28 × 84)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 46/√(28 × 84)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-r2",
+      "latex": "=\\dfrac{46}{48.4974}",
+      "accessible": "= 46/48.4974",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 46/48.4974"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 46/48.4974"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 46/48.4974"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-r3",
+      "latex": "=0.95",
+      "accessible": "= 0.95",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 0.95"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 0.95"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 0.95"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-3"
+    },
+    {
+      "id": "stat11-s193-s0",
+      "latex": "r_{xy}=\\dfrac{n\\sum xy-\\sum x\\sum y}{\\sqrt{\\left[n\\sum x^2-\\left(\\sum x\\right)^2\\right]\\left[n\\sum y^2-\\left(\\sum y\\right)^2\\right]}}",
+      "accessible": "r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = (nΣxy − ΣxΣy) / √([nΣx² − (Σx)²][nΣy² − (Σy)²])"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-4"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 5.4: x and y",
+      "captionUrdu": "مثال 5.4: x اور y",
+      "captionPashto": "بېلګه 5.4: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "caption": "Example 5.4 solution table",
+      "captionUrdu": "مثال 5.4 کا حل: جدول",
+      "captionPashto": "د بېلګې 5.4 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "y",
+          "ur": "y",
+          "ps": "y"
+        },
+        {
+          "en": "xy",
+          "ur": "xy",
+          "ps": "xy"
+        },
+        {
+          "en": "x²",
+          "ur": "x²",
+          "ps": "x²"
+        },
+        {
+          "en": "y²",
+          "ur": "y²",
+          "ps": "y²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "49",
+            "ur": "49",
+            "ps": "49"
+          }
+        ],
+        [
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "88",
+            "ur": "88",
+            "ps": "88"
+          },
+          {
+            "en": "55",
+            "ur": "55",
+            "ps": "55"
+          },
+          {
+            "en": "151",
+            "ur": "151",
+            "ps": "151"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-4"
+    }
+  ],
+  "sourceNote": "Printed page 183. The means x̄ and ȳ (continuing the working of Example 5.3) are printed side by side and are kept as one equation. Printed heading kept: \"Examples: 5.4\". The formula of the shortcut method at the foot continues on the next page. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:20:19.199122+00:00",
+    "scope": "Scan 193 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

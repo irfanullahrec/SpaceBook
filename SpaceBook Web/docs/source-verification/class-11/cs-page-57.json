@@ -1,0 +1,111 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s057-p048",
+  "title": "L1, L2 and L3 cache; Figure 2.3",
+  "headingUrdu": "ایل ۱، ایل ۲ اور ایل ۳ کیش؛ شکل ۲.۳",
+  "headingPashto": "L1، L2 او L3 کېش؛ انځور ۲.۳",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 57,
+    "printedPage": "48"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s057-a",
+      "en": "cache",
+      "ur": "کیش",
+      "ps": "کېش",
+      "cont": true
+    },
+    {
+      "id": "cs11-s057-b",
+      "en": "Level 1 cache is built into the actual processor core. It is a piece of high speed memory, which operates at the same speed as the CPU. It is directly accessed by the computer’s processor and holds data that the processor needs to execute instructions. It is the fastest memory and closest to the CPU but very expensive and small in size (typically 8, 16, 20, 32, 64 or 128 Kbytes).",
+      "ur": "لیول ۱ کیش اصل پراسیسر کور میں بنی ہوتی ہے۔ یہ تیز رفتار میموری کا ایک ٹکڑا ہے جو سی پی یو کی رفتار پر ہی کام کرتا ہے۔ کمپیوٹر کا پراسیسر اس تک براہِ راست رسائی حاصل کرتا ہے اور اس میں وہ ڈیٹا ہوتا ہے جو پراسیسر کو ہدایات چلانے کے لیے درکار ہوتا ہے۔ یہ سب سے تیز میموری ہے اور سی پی یو کے سب سے قریب ہے لیکن بہت مہنگی اور سائز میں چھوٹی ہے (عموماً ۸، ۱۶، ۲۰، ۳۲، ۶۴ یا ۱۲۸ کلو بائٹس)۔",
+      "ps": "۱ کچې کېش د پروسیسر په اصلي کور کې جوړه شوې ده. دا د لوړ ګړندیتوب حافظې یوه ټوټه ده چې د CPU په ګړندیتوب کار کوي. د کمپیوټر پروسیسر ورته مستقیم لاسرسی لري او هغه ډېټا لري چې پروسیسر ته د لارښوونو د چلولو لپاره پکار وي. دا تر ټولو ګړندۍ حافظه ده او CPU ته تر ټولو نژدې خو ډیره ګرانه او په کچه کوچنۍ ده (معمولاً ۸، ۱۶، ۲۰، ۳۲، ۶۴ یا ۱۲۸ کیلوبایټه)."
+    },
+    {
+      "id": "cs11-s057-h1",
+      "en": "L2 cache",
+      "ur": "ایل ۲ کیش",
+      "ps": "L2 کېش",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s057-c",
+      "en": "Level 2 cache pulls information from the system’s main memory (RAM), which is then accessed by the L1 cache. It is reasonably fast memory, bigger in size and less expensive than L1 cache. It is normally 64 KB to 16 MB. The purpose of the L2 cache is to constantly read in slightly larger quantities of data from RAM, so that these are available to the L1 cache.",
+      "ur": "لیول ۲ کیش سسٹم کی مین میموری (ریم) سے معلومات کھینچتی ہے جس تک پھر ایل ۱ کیش رسائی حاصل کرتی ہے۔ یہ مناسب حد تک تیز میموری ہے، سائز میں بڑی اور ایل ۱ کیش سے کم مہنگی۔ یہ عموماً ۶۴ کے بی سے ۱۶ ایم بی تک ہوتی ہے۔ ایل ۲ کیش کا مقصد ریم سے قدرے بڑی مقدار میں ڈیٹا مسلسل پڑھنا ہے تاکہ وہ ایل ۱ کیش کے لیے دستیاب ہو۔",
+      "ps": "۲ کچې کېش د سیسټم له اصلي حافظې (RAM) نه معلومات راکاږي چې بیا L1 کېش ورته لاسرسی موندي. دا مناسبه ګړندۍ حافظه ده، په کچه لویه او له L1 کېش نه لږ ګرانه. دا معمولاً ۶۴ KB نه تر ۱۶ MB پورې ده. د L2 کېش موخه دا ده چې له RAM نه یو څه لوی مقدار ډېټا په دوامداره توګه ولولي ترڅو هغه L1 کېش ته شته وي."
+    },
+    {
+      "id": "cs11-s057-h2",
+      "en": "L3 cache",
+      "ur": "ایل ۳ کیش",
+      "ps": "L3 کېش",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s057-d",
+      "en": "Level 3 cache is specialized memory that works hand-in-hand with L1 and L2 cache to improve computer performance. L3 cache is the biggest cache",
+      "ur": "لیول ۳ کیش ایک خصوصی میموری ہے جو کمپیوٹر کی کارکردگی بہتر بنانے کے لیے ایل ۱ اور ایل ۲ کیش کے ساتھ مل کر کام کرتی ہے۔ ایل ۳ کیش سب سے بڑی کیش",
+      "ps": "۳ کچې کېش یوه ځانګړې حافظه ده چې د کمپیوټر د فعالیت ښه کولو لپاره له L1 او L2 کېش سره لاس په لاس کار کوي. L3 کېش تر ټولو لویه کېش",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s057-a",
+        "cs11-s057-b",
+        "cs11-s057-h1",
+        "cs11-s057-c"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s057-h2",
+        "cs11-s057-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s057-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 550 370\" role=\"img\" aria-label=\"Cache memory interface: three L1 caches, three L2 caches and a shared L3 cache\" style=\"width:100%;max-width:550px;height:auto;background:#fff\"><rect x=\"30\" y=\"20\" width=\"150\" height=\"260\" fill=\"#2a1a60\" stroke=\"#111\"/><rect x=\"30\" y=\"20\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"105\" y=\"43\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L1 Caches</text><rect x=\"30\" y=\"246\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"105\" y=\"269\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L2 Cache</text><rect x=\"200\" y=\"20\" width=\"150\" height=\"260\" fill=\"#2a1a60\" stroke=\"#111\"/><rect x=\"200\" y=\"20\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"275\" y=\"43\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L1 Caches</text><rect x=\"200\" y=\"246\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"275\" y=\"269\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L2 Cache</text><rect x=\"370\" y=\"20\" width=\"150\" height=\"260\" fill=\"#2a1a60\" stroke=\"#111\"/><rect x=\"370\" y=\"20\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"445\" y=\"43\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L1 Caches</text><rect x=\"370\" y=\"246\" width=\"150\" height=\"34\" fill=\"#d33\" stroke=\"#fff\"/><text x=\"445\" y=\"269\" font-size=\"15\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L2 Cache</text><rect x=\"30\" y=\"296\" width=\"490\" height=\"52\" rx=\"10\" fill=\"#2d4f9a\" stroke=\"#111\"/><text x=\"275\" y=\"332\" font-size=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#fff\">L3 Cache</text></svg>",
+      "caption": "Figure 2.3 Cache memory interface",
+      "captionUrdu": "شکل ۲.۳ کیش میموری کا انٹرفیس",
+      "captionPashto": "انځور ۲.۳ د کېش حافظې انټرفیس",
+      "labels": [
+        {
+          "en": "L1 Caches",
+          "ur": "ایل ۱ کیشز",
+          "ps": "L1 کېشونه"
+        },
+        {
+          "en": "L2 Cache",
+          "ur": "ایل ۲ کیش",
+          "ps": "L2 کېش"
+        },
+        {
+          "en": "L3 Cache",
+          "ur": "ایل ۳ کیش",
+          "ps": "L3 کېش"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 48: the word “cache” (the end of the list from page 47), L1 cache, L2 cache, the diagram of Figure 2.3 (redrawn here as a coded SVG with the printed labels L1 Caches, L2 Cache and L3 Cache; the shaded middle sections are decoration) and the start of L3 cache (the sentence continues on the next page). The left edge of the lines is clipped; the top of the page is cut off. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:45:53.976557+00:00",
+    "scope": "Scan 57 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

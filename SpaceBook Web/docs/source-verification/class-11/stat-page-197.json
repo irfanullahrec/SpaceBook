@@ -1,0 +1,365 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s197-corr-rank-3",
+  "title": "Example 5.7: working · Ranking tied observations",
+  "headingUrdu": "مثال 5.7: حل · برابر مشاہدات کی درجہ بندی",
+  "headingPashto": "بېلګه 5.7: حل · د برابرو کتنو رتبه‌بندي",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 197,
+    "printedPage": "187"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s197-a1",
+      "en": "It implies that the variables are positively correlated.",
+      "ur": "اس سے ظاہر ہوتا ہے کہ متغیرات مثبت طور پر مربوط ہیں۔",
+      "ps": "دا ښيي چې متغیرونه په مثبت ډول همتړي دي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-7"
+    },
+    {
+      "id": "stat11-s197-h",
+      "en": "Ranking tied observations:",
+      "ur": "برابر مشاہدات کی درجہ بندی:",
+      "ps": "د برابرو کتنو رتبه‌بندي:"
+    },
+    {
+      "id": "stat11-s197-t1",
+      "en": "The spearman’s rank coefficient of correlation formula is good if the observations are not repeated. For repeated or tied observations, average of tied ranks is allotted. If an observation is repeated for “m” number of times, then the value (m³ − m)/12 should be added with Σd². This must be carried over for each repeated observation.",
+      "ur": "سپیئرمین کے درجاتی ارتباطی عددی سر کا فارمولا اس صورت میں اچھا ہے جب مشاہدات دہرائے نہ گئے ہوں۔ دہرائے گئے یا برابر مشاہدات کے لیے برابر درجوں کا اوسط دیا جاتا ہے۔ اگر کوئی مشاہدہ “m” بار دہرایا گیا ہو تو قدر (m³ − m)/12 کو Σd² کے ساتھ جمع کیا جانا چاہیے۔ یہ ہر دہرائے گئے مشاہدے کے لیے کیا جانا چاہیے۔",
+      "ps": "د Spearman د رتبه‌یي همتړاو د ضریب فورمول هغه وخت ښه دی چې کتنې تکرار شوې نه وي. د تکرار شویو یا برابرو کتنو لپاره د برابرو رتبو اوسط ورکول کېږي. که یوه کتنه “m” ځله تکرار شي نو ارزښت (m³ − m)/12 باید له Σd² سره جمع شي. دا باید د هرې تکرار شوې کتنې لپاره ترسره شي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s197-a1",
+        "stat11-s197-h",
+        "stat11-s197-t1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s197-r",
+      "latex": "r_s=1-\\dfrac{6\\sum d^2}{n^3-n}=1-\\dfrac{6(60)}{(10)^3-10}=1-\\dfrac{360}{990}=1-0.36=0.64",
+      "accessible": "r_s = 1 − 6Σd²/(n³ − n) = 1 − 6(60)/((10)³ − 10) = 1 − 360/990 = 1 − 0.36 = 0.64",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n) = 1 − 6(60)/((10)³ − 10) = 1 − 360/990 = 1 − 0.36 = 0.64"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n) = 1 − 6(60)/((10)³ − 10) = 1 − 360/990 = 1 − 0.36 = 0.64"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_s = 1 − 6Σd²/(n³ − n) = 1 − 6(60)/((10)³ − 10) = 1 − 360/990 = 1 − 0.36 = 0.64"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-7"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 5.7 solution table",
+      "captionUrdu": "مثال 5.7 کا حل: جدول",
+      "captionPashto": "د بېلګې 5.7 د حل جدول",
+      "headers": [
+        {
+          "en": "Referee A (R1)",
+          "ur": "منصف A (R1)",
+          "ps": "ډاروونکی A (R1)"
+        },
+        {
+          "en": "Referee B (R2)",
+          "ur": "منصف B (R2)",
+          "ps": "ډاروونکی B (R2)"
+        },
+        {
+          "en": "d = R1 − R2",
+          "ur": "d = R1 − R2",
+          "ps": "d = R1 − R2"
+        },
+        {
+          "en": "d²",
+          "ur": "d²",
+          "ps": "d²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "-4",
+            "ur": "-4",
+            "ps": "-4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-5-7"
+    }
+  ],
+  "sourceNote": "Printed page 187. The table at the top completes the working of Example 5.7 from the previous page. A dark tick mark at the lower right of the table is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:21:31.785758+00:00",
+    "scope": "Scan 197 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

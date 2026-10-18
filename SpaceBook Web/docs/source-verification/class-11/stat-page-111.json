@@ -1,0 +1,547 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s111-sd-2",
+  "title": "Sample S.D (n − 1) · 3.5.2 Variance · Example 3.10",
+  "headingUrdu": "نمونے کا S.D (n − 1) · 3.5.2 تغیر · مثال 3.10",
+  "headingPashto": "د نمونې S.D (n − 1) · 3.5.2 وریانس · بېلګه 3.10",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 111,
+    "printedPage": "103"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s111-c1",
+      "en": "n – 1, i.e.",
+      "ur": "n – 1، یعنی",
+      "ps": "n – 1، یعنې",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"…if the denominator in the sample formula is\")."
+      }
+    },
+    {
+      "id": "stat11-s111-smp",
+      "en": "Sample standard deviation: (Statistic)",
+      "ur": "نمونے کا معیاری انحراف: (شماریہ)",
+      "ps": "د نمونې معیاري انحراف: (احصایه)"
+    },
+    {
+      "id": "stat11-s111-h352",
+      "en": "3.5.2 Variance",
+      "ur": "3.5.2 تغیر",
+      "ps": "3.5.2 وریانس",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s111-t352",
+      "en": "The term variance was introduced by R.A Fisher in 1918. It is denoted by σ² in population case and s² in sample case and is defined as the average of squared deviations of observations taken from mean is called variance. Mathematically;",
+      "ur": "تغیر کی اصطلاح آر۔اے۔ فشر نے 1918 میں متعارف کرائی۔ اسے آبادی کی صورت میں σ² اور نمونے کی صورت میں s² سے ظاہر کیا جاتا ہے اور اوسط سے لیے گئے مشاہدات کے مربع انحرافات کے اوسط کو تغیر کہتے ہیں۔ ریاضیاتی طور پر؛",
+      "ps": "د وریانس اصطلاح په 1918 کې R.A Fisher معرفي کړه. دا د ټولنې په حالت کې په σ² او د نمونې په حالت کې په s² ښودل کېږي او له اوسط څخه اخیستل شویو کتنو د مربع انحرافاتو اوسط ته وریانس ویل کېږي. ریاضیاتي ډول؛"
+    },
+    {
+      "id": "stat11-s111-pv",
+      "en": "Population variance: (Parameter)",
+      "ur": "آبادی کا تغیر: (پیرامیٹر)",
+      "ps": "د ټولنې وریانس: (پارامېټر)"
+    },
+    {
+      "id": "stat11-s111-sv1",
+      "en": "Sample variance: (Statistic)",
+      "ur": "نمونے کا تغیر: (شماریہ)",
+      "ps": "د نمونې وریانس: (احصایه)"
+    },
+    {
+      "id": "stat11-s111-sv2",
+      "en": "Sample variance: (Statistic)",
+      "ur": "نمونے کا تغیر: (شماریہ)",
+      "ps": "د نمونې وریانس: (احصایه)"
+    },
+    {
+      "id": "stat11-s111-vm",
+      "en": "Variance measures the average square distance from the mean.",
+      "ur": "تغیر اوسط سے اوسط مربع فاصلہ ناپتا ہے۔",
+      "ps": "وریانس له اوسط څخه اوسط مربع واټن اندازه کوي."
+    },
+    {
+      "id": "stat11-s111-ex10",
+      "en": "Example: 3.10",
+      "ur": "مثال: 3.10",
+      "ps": "بېلګه: 3.10",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-q10",
+      "en": "Calculate standard deviation and variance for values of a population 1, 9, 5, 8, 7.",
+      "ur": "آبادی کی قدروں 1, 9, 5, 8, 7 کے لیے معیاری انحراف اور تغیر حساب کریں۔",
+      "ps": "د ټولنې د ارزښتونو 1, 9, 5, 8, 7 لپاره معیاري انحراف او وریانس محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-sol10",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-i1",
+      "en": "(i)",
+      "ur": "(i)",
+      "ps": "(i)",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-i2",
+      "en": "(ii)",
+      "ur": "(ii)",
+      "ps": "(ii)",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-df",
+      "en": "Standard deviation and variance can simply be defined as: S.D is the square root of the variance i.e. σ = √variance and variance is the square of the S.D i.e. σ² = (S.D)².",
+      "ur": "معیاری انحراف اور تغیر کو سادہ طور پر یوں بیان کیا جا سکتا ہے: S.D تغیر کا جذر ہے یعنی σ = √تغیر اور تغیر S.D کا مربع ہے یعنی σ² = (S.D)²۔",
+      "ps": "معیاري انحراف او وریانس په ساده توګه داسې تعریف کېدای شي: S.D د وریانس جذر دی یعنې σ = √وریانس او وریانس د S.D مربع دی یعنې σ² = (S.D)²."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-c1",
+        "stat11-s111-smp"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-h352",
+        "stat11-s111-t352",
+        "stat11-s111-pv"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-sv1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-sv2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-vm",
+        "stat11-s111-ex10",
+        "stat11-s111-q10",
+        "stat11-s111-sol10"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-i1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-i2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s111-df"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "population variance": {
+      "ur": "آبادی کا تغیر",
+      "ps": "د ټولنې وریانس"
+    },
+    "sample variance": {
+      "ur": "نمونے کا تغیر",
+      "ps": "د نمونې وریانس"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s111-a",
+      "latex": "s=\\sqrt{\\dfrac{\\sum(x-\\bar{x})^2}{n-1}}\\qquad\\text{(Statistic)}",
+      "accessible": "s = √(Σ(x − x̄)²/(n − 1))   (Statistic)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))   (Statistic)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))   (Statistic)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1))   (Statistic)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s111-b",
+      "latex": "\\sigma^2=\\dfrac{\\sum(x-\\mu)^2}{N}\\qquad\\text{(Parameter)}",
+      "accessible": "σ² = Σ(x − μ)²/N   (Parameter)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N   (Parameter)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N   (Parameter)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N   (Parameter)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s111-c",
+      "latex": "s^2=\\dfrac{\\sum(x-\\bar{x})^2}{n}\\qquad\\text{(Statistic)}",
+      "accessible": "s² = Σ(x − x̄)²/n   (Statistic)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/n   (Statistic)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/n   (Statistic)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/n   (Statistic)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s111-d",
+      "latex": "s^2=\\dfrac{\\sum(x-\\bar{x})^2}{n-1}\\qquad\\text{(Statistic)}",
+      "accessible": "s² = Σ(x − x̄)²/(n − 1)   (Statistic)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)   (Statistic)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)   (Statistic)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = Σ(x − x̄)²/(n − 1)   (Statistic)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s111-e",
+      "latex": "\\mu=\\dfrac{\\sum x}{N}=\\dfrac{30}{5}=6",
+      "accessible": "μ = Σx/N = 30/5 = 6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "μ = Σx/N = 30/5 = 6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "μ = Σx/N = 30/5 = 6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "μ = Σx/N = 30/5 = 6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-f",
+      "latex": "\\sigma=\\sqrt{\\dfrac{\\sum(x-\\mu)}{N}}=\\sqrt{\\dfrac{40}{5}}=2.83",
+      "accessible": "σ = √(Σ(x − μ)/N) = √(40/5) = 2.83   [printed without the square on (x − μ)]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)/N) = √(40/5) = 2.83   [printed without the square on (x − μ)]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)/N) = √(40/5) = 2.83   [printed without the square on (x − μ)]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)/N) = √(40/5) = 2.83   [printed without the square on (x − μ)]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-10"
+    },
+    {
+      "id": "stat11-s111-g",
+      "latex": "\\sigma^2=\\dfrac{\\sum(x-\\mu)^2}{N}=\\dfrac{40}{5}=8",
+      "accessible": "σ² = Σ(x − μ)²/N = 40/5 = 8",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N = 40/5 = 8"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N = 40/5 = 8"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "σ² = Σ(x − μ)²/N = 40/5 = 8"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-10"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.10 solution table",
+      "captionUrdu": "مثال 3.10 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.10 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "(x − μ)",
+          "ur": "(x − μ)",
+          "ps": "(x − μ)"
+        },
+        {
+          "en": "(x − μ)²",
+          "ur": "(x − μ)²",
+          "ps": "(x − μ)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-10"
+    }
+  ],
+  "sourceNote": "Printed page 103. In Example 3.10 the printed σ line omits the square on (x − μ) inside the root (kept as printed). The workings (i) and (ii) are printed beside the table and are shown after it. Margin pen marks are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:50:15.021511+00:00",
+    "scope": "Scan 111 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

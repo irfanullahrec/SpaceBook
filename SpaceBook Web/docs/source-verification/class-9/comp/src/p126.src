@@ -1,0 +1,11 @@
+@printed 118
+@status lesson
+p For Example: || مثال کے طور پر: || د بېلګې په توګه:
+m for(x=1;x<=10;x++)
+p (In the book, labels point to x=1 as Initialization, x<=10 as Condition and x++ as Increment.) || (کتاب میں x=1 کو Initialization، x<=10 کو Condition اور x++ کو Increment دکھایا گیا ہے۔) || (په کتاب کې x=1 د Initialization، x<=10 د Condition او x++ د Increment په توګه ښودل شوي.)
+p The number of repetitions/iterations depends on the **initialization, condition** and **increment/decrement** parts. The initialization part is executed only once when control enters the loop. After initialization, the given condition is evaluated. If it is true, the control enters the body of loop and executes all statements in it. Then the increment/decrement part is executed that changes the value of counter variable. The control again moves to condition part. This process continues while the condition remains **true**. The loop is terminated when the condition becomes **false**. || تکرار کی تعداد **initialization، condition** اور **increment/decrement** حصوں پر منحصر ہے۔ کنٹرول لوپ میں داخل ہونے پر initialization صرف ایک بار چلتی ہے۔ اس کے بعد شرط جانچی جاتی ہے؛ اگر درست ہو تو کنٹرول لوپ کے جسم میں داخل ہو کر تمام اسٹیٹمنٹس چلاتا ہے۔ پھر increment/decrement حصہ چل کر کاؤنٹر متغیر کی قدر بدلتا ہے اور کنٹرول دوبارہ شرط پر آتا ہے۔ یہ عمل شرط **درست** رہنے تک جاری رہتا ہے اور شرط **غلط** ہونے پر لوپ ختم ہو جاتا ہے۔ || د تکرارونو شمېر په **initialization، condition** او **increment/decrement** برخو پورې اړه لري. کله چې کنټرول لوپ ته ننوځي initialization یوازې یو ځل اجرا کېږي. بیا شرط ارزول کېږي؛ که سم وي کنټرول د لوپ بدنې ته ننوځي او ټول بیانونه اجرا کوي. بیا increment/decrement برخه د counter ارزښت بدلوي او کنټرول بیا شرط ته ځي. دا بهیر تر هغه دوام کوي چې شرط **سم** وي او کله چې **ناسم** شي لوپ پای ته رسېږي.
+fig10 f5.1 || Figure: 5.1 Working of for loop || شکل 5.1 for لوپ کا کام || ۵.۱ شکل د for لوپ کار
+p The following programs demonstrate the working of *for* loop. || درج ذیل پروگرام *for* لوپ کا کام دکھاتے ہیں۔ || لاندې پروګرامونه د *for* لوپ کار ښيي.
+### Program 5.1: A program to display numbers from 1 to10 by using for loop. || پروگرام 5.1: for لوپ سے 1 تا 10 اعداد دکھانے کا پروگرام۔ || پروګرام ۵.۱: د for لوپ په مرسته له ۱ تر ۱۰ عددونه ښودل.
+m # include <stdio.h>
+m void main()

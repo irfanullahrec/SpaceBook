@@ -1,0 +1,56 @@
+from ishisthelp import *
+c=cell
+def H(s,ur,en,ps): add(s,f'h{len(s["paras"])+1}',en,ur,ps,kind='heading')
+def P(s,ur,en,ps,**m): add(s,f'p{len(s["paras"])+1}',en,ur,ps,**m)
+def Q(s,ur,en,ps,g='q',**m): add(s,f'q{len(s["paras"])+1}',en,ur,ps,listGroup=g,exerciseId='ishist11-ch5-q',tab='exercise',role='question',**m)
+NOTE=' English and Pashto are our translations (need native review); watermark, handwriting, page-edge shadows, a thumb at the page edge and ornamental borders excluded. Scan n = printed page n+1 (file = {p//2:03d}_page_2 for even printed page p, {(p-1)//2:03d}_page_1 for odd p).'
+QNOTE=' The quotations and poems are given as printed in the textbook; the names of the authors are given as printed (their spelling in the print may differ from the usual spelling) and were not checked against the originals.'
+def fin(s,note,q=False):
+    s['sourceNote']=note+(QNOTE if q else '')+NOTE; s['vocabulary']={}; save(s)
+SA='صلی اللہ علیہ و علیٰ آلہ واصحابہ وسلم'
+SP='صلی الله علیه وعلی آله واصحابه وسلم'
+def Qt(s,u,e,p,**m): P(s,u,e,p,kind='quote',**m)
+def V(s,ur,en,ps): P(s,ur,en,ps,kind='verse')
+# scan 117 = file 059_page_2, printed 118
+s=page(117,'ch5','118','The Prophet of Islam and non-Muslim thinkers (end)','پیغمبرِ اسلام اور غیر مسلم مفکرین (اختتام)','د اسلام پېغمبر او غیر مسلم مفکرین (پای)','ch5p118')
+F=Flow(s)
+Qt(s,'بے کسوں کے لیے حقیقی رحمت اور نعمت تھے۔‘‘ (پروفیسر لیک، مغربی دانشور)','… he was a true mercy and a blessing for the helpless.” (Professor Leek, Western scholar)','… هغه د بې وسو لپاره ریښتینې رحمت او نعمت و.” (پروفیسر لیک، لوېدیځ پوه)',cont=False)
+Qt(s,'☆ ’’آپ (صلی اللہ علیہ و آلہ واصحابہ وسلم) نے عورت کی مٹی ہوئی عزت کو بحال کیا اور وراثت کے حقوق مقرر کیے۔‘‘ (کملا دیوی، ہندو خاتون)','☆ “He restored the lost honour of woman and fixed the rights of inheritance.” (Kamla Devi, Hindu lady)','☆ “هغه د ښځې له لاسه تللې عزت بیرته راوګرځاوه او د میراث حقونه یې وټاکل.” (کملا دیوي، هندو خاتون)')
+Qt(s,'☆ ’’حضور نبی کریم (صلی اللہ علیہ و آلہ واصحابہ وسلم) نے غلامی کے خلاف پہلی آواز اٹھائی۔ غلاموں کو سگے بھائیوں جیسا مقام بخش دیا۔ عورتوں کے مقام کو بلند کیا۔ سود کو قطعاً حرام قرار دے کر سرمایہ داری کی جڑ کاٹ کر رکھ دی۔‘‘ (بابو جنگل کشور کھنہ، ہندو ماہرِ قانون)','☆ “The Holy Prophet raised the first voice against slavery. He gave the slaves the position of own brothers. He raised the position of women. By declaring usury absolutely forbidden he cut the root of capitalism.” (Babu Jungle Kishore Khanna, Hindu jurist)','☆ “حضرت نبي کریم د غلامۍ پر ضد لومړی غږ پورته کړ. غلامانو ته یې د سکه ورونو غوندې مقام ورکړ. د ښځو مقام یې لوړ کړ. سود یې په بشپړه توګه حرام وګاڼه او د پانګوالۍ ریښه یې پرې کړه.” (بابو جنګل کشور کهنه، هندو قانون پوه)')
+Qt(s,'☆ ’’تاریخ شاہد ہے کہ جس قدر پیغمبرِ اسلام (صلی اللہ علیہ و آلہ واصحابہ وسلم) کو ستایا گیا اتنا کسی اور نبی کو تنگ نہیں کیا گیا۔ آپ (صلی اللہ علیہ و آلہ واصحابہ وسلم) نے ظالموں کو کچھ نہ کہا بلکہ دعائیں دیں۔ طاقت و اقتدار حاصل ہونے کے بعد انتقام نہ لیا۔‘‘ (بی ایس رندھاوا، ہندو مصنف)','☆ “History is witness that no other prophet was troubled as much as the Prophet of Islam was tormented. He said nothing to the oppressors but gave them prayers. After gaining power and authority he did not take revenge.” (B. S. Randhawa, Hindu author)','☆ “تاریخ شاهد دی چې د اسلام پېغمبر څومره ځورول شو بل هېڅ نبي دومره نه دی ځورول شوی. هغه ظالمانو ته څه ونه ویل بلکې دعاګانې یې ورکړې. د ځواک او اقتدار له ترلاسه کولو وروسته یې غچ ونه اخیست.” (بي ایس رندهاوا، هندو لیکوال)')
+Qt(s,'☆ ’’آپ (صلی اللہ علیہ و آلہ واصحابہ وسلم) نے اپنے دفاع کی غرض سے طاقت کا استعمال کیا، ورنہ اگر آپ (صلی اللہ علیہ و آلہ واصحابہ وسلم) کا بس چلتا تو سرزمینِ عرب میں خون کا ایک قطرہ بھی نہ گرتا۔‘‘ (لالہ مہر چند لدھیانوی، ہندو ماہرِ تعلیم)','☆ “He used force for the purpose of his defence; otherwise, if it had been in his power, not even a drop of blood would have fallen in the land of Arabia.” (Lala Mehr Chand Ludhianvi, Hindu educationist)','☆ “هغه د خپل دفاع لپاره ځواک کارولی، که نه که د هغه زور رسېدای نو د عربو په خاوره کې به د وینې یوه څاڅکی هم نه وای لوېدلی.” (لاله مهرچند لدهیانوي، هندو ښوونکی)')
+F.done()
+fin(s,'Printed page 118: the last part of a quotation (Professor Leek) from page 117 and four more opinions of non-Muslim writers on the Prophet (Kamla Devi, Babu Jungle Kishore Khanna, B. S. Randhawa, Lala Mehr Chand Ludhianvi); the lower part of the page is blank. A thumb at the lower edge is excluded.',True)
+# scan 118 = file 059_page_1, printed 119
+s=page(118,'ch5','119','Offerings of devotion by non-Muslim poets (1)','غیر مسلم شعراء کا نذرانۂ عقیدت (۱)','د غیر مسلمو شاعرانو د عقیدت نذرانه (۱)','ch5p119')
+F=Flow(s)
+H(s,'غیر مسلم شعراء کا نذرانۂ عقیدت','The Offering of Devotion by Non-Muslim Poets','د غیر مسلمو شاعرانو د عقیدت نذرانه')
+V(s,'عفو ہو جائیں گی محشر میں خطائیں ساری\nداورِ حشر کو دوں گا میں حوالہ تیرا\nہو گیا شوق میں وہ آج نثارِ احمدؐ\nدل جو رونق تھا بڑے نازوں کا پالا تیرا\n(پیارے لال رونق، 1915ء)','All my sins will be forgiven on the Day of Resurrection; I shall give your reference to the Judge of Resurrection. In love he has today become a sacrifice for Ahmad: the heart that was the splendour, brought up with great fondness, was yours. (Piyare Lal Rauno, 1915)','ټولې ګناهونه به په محشر کې بښل شي؛ د حشر قاضي ته به ستا حواله ورکوم. په مینه کې نن هغه د احمد قربان شو؛ هغه زړه چې رونق و، په ډېرو نازونو روزل شوی ستا و. (پیارې لال رونق، ۱۹۱۵ز)')
+V(s,'کتب خانے کیے منسوخ سارے\nکتابِ حق ہے قرآنِ محمدؐ\nبتاؤں کوثری کیا شغل اپنا\nمیں ہوں ہر دم ثنا خوانِ محمدؐ\n(چودھری ونورام کوثری، 1931ء)','He has abolished all the libraries; the Book of Truth is the Quran of Muhammad. Kausari, what shall I tell you my occupation is? I am at every moment a praiser of Muhammad. (Chaudhry Vinoram Kausari, 1931)','هغه ټولې کتابتونونه منسوخ کړل؛ د حق کتاب د محمد قرآن دی. کوثري، زه خپل مشغله څه ووایم؟ زه هر دم د محمد ثنا خوان یم. (چودهري وینوارام کوثري، ۱۹۳۱ز)')
+V(s,'وہ گھر ہے خدا کا تو یہ محبوبِ خدا ہیں\nکعبے سے بھی اعلیٰ نہ ہو کیوں شانِ مدینہ\nروکیں گے نہ دربار میں جانے کے لیے شاد\nپہچانتے ہیں سب مجھے دربانِ مدینہ\n(سرکشن پرشاد شاد، 1945ء)','That is the house of Allah, but this is the beloved of Allah; why should the glory of Madinah not be higher even than the Ka’bah? They will not stop Shad from going to the court; all the doorkeepers of Madinah know me. (Sir Kishen Prasad Shad, 1945)','هغه د خدای کور دی نو دا د خدای محبوب دی؛ د مدینې شان له کعبې هم لوړ ولې نه وي؟ شاد به د درباره تګ نه ورسره منع کړي؛ د مدینې ټول دروازه ساتونکي ما پېژني. (سرکشن پرشاد شاد، ۱۹۴۵ز)')
+F.done()
+fin(s,'Printed page 119: the heading “غیر مسلم شعراء کا نذرانۂ عقیدت” and three poems (stanzas of four lines) by non-Muslim poets with the poet and the year printed under each. The line “داور حشر کو دوں گا میں حوالہ تیری” is printed with the feminine “تیری” (as in the scan); it is given in the standard form “تیرا”. Handwritten marks excluded.',True)
+# scan 119 = file 060_page_2, printed 120
+s=page(119,'ch5','120','Offerings of devotion by non-Muslim poets (2)','غیر مسلم شعراء کا نذرانۂ عقیدت (۲)','د غیر مسلمو شاعرانو د عقیدت نذرانه (۲)','ch5p120')
+F=Flow(s)
+V(s,'پہنچایا ہے کس اوجِ سعادت پہ جہاں کو\nپھر رتبہ ہو کم عرش سے کیوں غارِ حرا کا\nحامی، ممدوح مرا شافعِ محشر\nکیفی مجھے اب خوف ہے کیا روزِ جزا کا\n(پنڈت کیفی وتاتریہ)','To what peak of felicity has he brought the world; why should the rank of the cave of Hira then be less than the Throne? My supporter and the one I praise is the intercessor of the Day of Gathering; Kaifi, what fear have I now of the Day of Reckoning? (Pandit Kaifi Dattatreya)','هغه نړۍ د سعادت په کوم اوج رسولې ده؛ نو د حرا د غار رتبه له عرش نه کمه ولې وي؟ زما ملاتړی، زما مدح شوی د محشر شفیع دی؛ کیفي، اوس ما ته د جزا له ورځې څه ویره ده؟ (پنډت کیفي دتاتریه)')
+V(s,'کس کی حکمت نے یتیموں کو کیا دُرِ یتیم\nاور غلاموں کو زمانے بھر کا مولا کر دیا\nکہہ دیا لا تقنطو اختر کسی نے کان میں\nاور دل کو سر بسر محوِ تمنا کر دیا\n(ہری چند اختر)','By whose wisdom were the orphans made the unique pearl, and the slaves made the masters of the whole age? Someone said in the ear “Do not despair”, Akhtar, and made the heart wholly absorbed in longing. (Hari Chand Akhtar)','د چا حکمت یتیمان د یتیم دُر کړل او غلامان یې د ټول زمانې مولا کړل؟ چا په غوږ کې وویل “مه نا امیده کېږئ” اختر، او زړه یې بشپړ د هیلې محو کړ. (هري چند اختر)')
+F.done()
+fin(s,'Printed page 120: two more poems of non-Muslim poets (Pandit Kaifi Dattatreya and Hari Chand Akhtar) in four-line stanzas; the rest of the page is blank. A thumb at the lower edge is excluded.',True)
+# scan 120 = file 060_page_1, printed 121
+s=page(120,'ch5','121','Chapter 5 exercise questions','مشقی سوالات (پانچواں باب)','تمرین پوښتنې (پنځم باب)','ch5p121')
+F=Flow(s)
+H(s,'مشقی سوالات','Exercise Questions','تمرین پوښتنې')
+Q(s,'۱۔ حجۃ الوداع پر ایک مضمون لکھیے۔','1. Write an essay on the Farewell Pilgrimage.','۱. د حجة الوداع په اړه یو مضمون ولیکئ.')
+Q(s,f'۲۔ پیغمبر {SA} پر معاشرتی مصلح اور ایک نئی ملت کے معمار کی حیثیت سے مضمون لکھیے۔','2. Write an essay on the Prophet as a social reformer and as the architect of a new nation.',f'۲. په پېغمبر {SP} د ټولنیز مصلح او د یوې نوې ملت د معمار په توګه مضمون ولیکئ.')
+Q(s,f'۳۔ نبی کریم {SA} کی سیرت اور کارہائے نمایاں پر روشنی ڈالیے۔','3. Throw light on the biography and the outstanding achievements of the Holy Prophet.',f'۳. د نبي کریم {SP} پر سیرت او مهمو کارنامو رڼا واچوئ.')
+Q(s,f'۴۔ نبی کریم {SA} کی سیرتِ طیبہ پر ایک جامع نوٹ لکھیے۔','4. Write a comprehensive note on the blessed biography of the Holy Prophet.',f'۴. د نبي کریم {SP} پر پاکه سیرت یو جامع یادښت ولیکئ.')
+Q(s,'۵۔ خطبۂ حجۃ الوداع پر مفصل نوٹ لکھیے۔ اس خطبے کی تاریخی اہمیت پر روشنی ڈالیے۔','5. Write a detailed note on the sermon of the Farewell Pilgrimage. Throw light on the historical importance of this sermon.','۵. د حجة الوداع پر خطبې مفصل یادښت ولیکئ. د دې خطبې پر تاریخي اهمیت رڼا واچوئ.')
+Q(s,f'۶۔ آنحضرت {SA} کی سیرت پر تبصرہ کیجیے۔','6. Comment on the biography of the Holy Prophet.',f'۶. د حضرت {SP} په سیرت تبصره وکړئ.')
+Q(s,'۷۔ مندرجہ ذیل خالی جگہیں پُر کریں۔','7. Fill in the following blanks.','۷. لاندې تشې ځایونه ډک کړئ.')
+Q(s,f'(i) آپ {SA} حجۃ الوداع کے لیے مدینہ سے ........ ہجری کو روانہ ہوئے۔',f'(i) The Prophet set out from Madinah for the Farewell Pilgrimage in ........ AH.',f'(i) حضرت {SP} د حجة الوداع لپاره له مدینې نه په ........ هجري کې روان شو.',g='q7')
+Q(s,f'(ii) دوپہر کے وقت آپ {SA} وادیِ عرفات کے وسط میں ........ نامی ناقہ پر سوار تھے۔',f'(ii) At noon the Prophet was riding in the middle of the valley of Arafat on a she-camel named ........',f'(ii) په غرمه کې حضرت {SP} د عرفات د درې په منځ کې په ........ نومي ښځینه اوښ سور و.',g='q7')
+Q(s,f'(iii) آپ {SA} نے فرمایا کہ میں ........ کا سود موقوف کرتا ہوں۔',f'(iii) The Prophet said, “I cancel the usury of ........”',f'(iii) حضرت {SP} وفرمایل چې زه د ........ سود بندوم.',g='q7')
+Q(s,f'(iv) آپ {SA} نے فرمایا یہ ........ باتیں سینے کو پاک','(iv) The Prophet said these ........ things purify the chest',f'(iv) حضرت {SP} وفرمایل دا ........ خبرې سینه پاکوي',g='q7',cont=True)
+F.done()
+fin(s,'Printed page 121: the exercise questions of Chapter 5 (questions 1–6 and the blanks (i)–(iv) of question 7; item (iv) continues on the next page). The handwritten answers written in the blanks and the handwritten numerals beside the questions are excluded; the blanks are left empty. The question numbers are printed in a handwriting-like style.')

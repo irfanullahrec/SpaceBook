@@ -1,0 +1,458 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s206-ts-intro-1",
+  "title": "6.1 Time series · Examples · Analysis of time series (start)",
+  "headingUrdu": "6.1 وقتی سلسلہ · مثالیں · وقتی سلسلے کا تجزیہ (آغاز)",
+  "headingPashto": "6.1 د وخت لړۍ · بېلګې · د وخت لړۍ تحلیل (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 206,
+    "printedPage": "196"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s206-h61",
+      "en": "6.1 Time series",
+      "ur": "6.1 وقتی سلسلہ",
+      "ps": "6.1 د وخت لړۍ",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s206-t1",
+      "en": "A series of observations of the same characteristics arranged according to the time of occurrence is known as time series. The time may be hour, day, week, month, quarter, year or decade etc. Examples of time series are:",
+      "ur": "ایک ہی خصوصیات کے مشاہدات کا سلسلہ جو وقوع کے وقت کے مطابق ترتیب دیا گیا ہو وقتی سلسلہ کہلاتا ہے۔ وقت گھنٹہ، دن، ہفتہ، مہینہ، سہ ماہی، سال یا دہائی وغیرہ ہو سکتا ہے۔ وقتی سلسلے کی مثالیں یہ ہیں:",
+      "ps": "د یو شان ځانګړتیاوو د کتنو لړۍ چې د پېښېدو د وخت له مخې ترتیب شوې وي د وخت لړۍ بلل کېږي. وخت ساعت، ورځ، اوونۍ، میاشت، ربع، کال یا لسیزه او نور کېدای شي. د وخت لړۍ بېلګې دا دي:"
+    },
+    {
+      "id": "stat11-s206-e1",
+      "en": "(i) Daily prices (Rs per kg) of a chicken shop are:",
+      "ur": "(i) مرغی کی دکان کی روزانہ قیمتیں (روپے فی کلو) ہیں:",
+      "ps": "(i) د چرګانو د هټۍ ورځنۍ بیې (روپۍ په کیلو) دا دي:"
+    },
+    {
+      "id": "stat11-s206-e2",
+      "en": "(ii) First year admission of a college over a number of years:",
+      "ur": "(ii) کئی سالوں میں ایک کالج کے پہلے سال کے داخلے:",
+      "ps": "(ii) د څو کلونو په اوږدو کې د یو کالج د لومړي کال داخلې:"
+    },
+    {
+      "id": "stat11-s206-e3",
+      "en": "(iii) Quarterly sale of sugar bags at a utility store in a village for the year 2015.",
+      "ur": "(iii) سال 2015 کے لیے ایک گاؤں میں یوٹیلٹی سٹور پر چینی کے تھیلوں کی سہ ماہی فروخت۔",
+      "ps": "(iii) د 2015 کال لپاره په یوه کلي کې د یوټیلټي سټور کې د بورې د کڅوړو ربعوار پلور."
+    },
+    {
+      "id": "stat11-s206-e4",
+      "en": "(iv) Yearly record of export and import (in metric ton) of a company:",
+      "ur": "(iv) ایک کمپنی کی برآمد اور درآمد (میٹرک ٹن میں) کا سالانہ ریکارڈ:",
+      "ps": "(iv) د یوې شرکت د صادراتو او وارداتو (په میټریک ټن) کلنی ریکارډ:"
+    },
+    {
+      "id": "stat11-s206-h2",
+      "en": "Analysis of time series",
+      "ur": "وقتی سلسلے کا تجزیہ",
+      "ps": "د وخت لړۍ تحلیل"
+    },
+    {
+      "id": "stat11-s206-t2",
+      "en": "The description, measurement and isolation of various changes in a time series during a period of time are called analysis of time series. Times series analysis helps in (i) understanding the real behaviour of the past (ii) predicting the future behaviour like demand, production, weather conditions, prices etc. (iii) to compare the present accomplishments with the past performance. (iv) planning",
+      "ur": "کسی مدت کے دوران وقتی سلسلے میں مختلف تبدیلیوں کی تفصیل، پیمائش اور علیحدگی وقتی سلسلے کا تجزیہ کہلاتی ہے۔ وقتی سلسلے کا تجزیہ (i) ماضی کے حقیقی رویے کو سمجھنے (ii) مستقبل کے رویے جیسے طلب، پیداوار، موسمی حالات، قیمتوں وغیرہ کی پیش گوئی (iii) موجودہ کامیابیوں کا ماضی کی کارکردگی سے موازنہ کرنے (iv) منصوبہ بندی میں مدد دیتا ہے",
+      "ps": "د یوې مودې په اوږدو کې په وخت لړۍ کې د بېلابېلو بدلونونو بیان، اندازه کول او جلا کول د وخت لړۍ تحلیل بلل کېږي. د وخت لړۍ تحلیل (i) د تېر وخت د ریښتیني چلند په پوهېدو (ii) د راتلونکي چلند لکه غوښتنه، تولید، هوا حالات، بیې او نورو په وړاندوینه (iii) د اوسنیو لاسته‌راوړنو د تېر فعالیت سره په پرتله کولو (iv) پلان جوړونې کې مرسته کوي",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"… (iv) planning …\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s206-h61",
+        "stat11-s206-t1",
+        "stat11-s206-e1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s206-e2"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s206-e3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s206-e4"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s206-h2",
+        "stat11-s206-t2"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "time series": {
+      "ur": "وقتی سلسلہ",
+      "ps": "د وخت لړۍ"
+    }
+  },
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Daily prices of a chicken shop",
+      "captionUrdu": "مرغی کی دکان کی روزانہ قیمتیں",
+      "captionPashto": "د چرګانو د هټۍ ورځنۍ بیې",
+      "headers": [
+        {
+          "en": "Day",
+          "ur": "دن",
+          "ps": "ورځ"
+        },
+        {
+          "en": "Sunday",
+          "ur": "اتوار",
+          "ps": "یکشنبه"
+        },
+        {
+          "en": "Monday",
+          "ur": "پیر",
+          "ps": "دوشنبه"
+        },
+        {
+          "en": "Tuesday",
+          "ur": "منگل",
+          "ps": "سه‌شنبه"
+        },
+        {
+          "en": "Wednesday",
+          "ur": "بدھ",
+          "ps": "چهارشنبه"
+        },
+        {
+          "en": "Thursday",
+          "ur": "جمعرات",
+          "ps": "پنجشنبه"
+        },
+        {
+          "en": "Friday",
+          "ur": "جمعہ",
+          "ps": "جمعه"
+        },
+        {
+          "en": "Saturday",
+          "ur": "ہفتہ",
+          "ps": "شنبه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Price",
+            "ur": "قیمت",
+            "ps": "بیه"
+          },
+          {
+            "en": "150",
+            "ur": "150",
+            "ps": "150"
+          },
+          {
+            "en": "148",
+            "ur": "148",
+            "ps": "148"
+          },
+          {
+            "en": "150",
+            "ur": "150",
+            "ps": "150"
+          },
+          {
+            "en": "155",
+            "ur": "155",
+            "ps": "155"
+          },
+          {
+            "en": "155",
+            "ur": "155",
+            "ps": "155"
+          },
+          {
+            "en": "145",
+            "ur": "145",
+            "ps": "145"
+          },
+          {
+            "en": "145",
+            "ur": "145",
+            "ps": "145"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "First year admission of a college",
+      "captionUrdu": "ایک کالج کے پہلے سال کے داخلے",
+      "captionPashto": "د یو کالج د لومړي کال داخلې",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "2011",
+          "ur": "2011",
+          "ps": "2011"
+        },
+        {
+          "en": "2012",
+          "ur": "2012",
+          "ps": "2012"
+        },
+        {
+          "en": "2013",
+          "ur": "2013",
+          "ps": "2013"
+        },
+        {
+          "en": "2014",
+          "ur": "2014",
+          "ps": "2014"
+        },
+        {
+          "en": "2015",
+          "ur": "2015",
+          "ps": "2015"
+        },
+        {
+          "en": "2016",
+          "ur": "2016",
+          "ps": "2016"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Number of admissions",
+            "ur": "داخلوں کی تعداد",
+            "ps": "د داخلو شمېر"
+          },
+          {
+            "en": "1180",
+            "ur": "1180",
+            "ps": "1180"
+          },
+          {
+            "en": "1200",
+            "ur": "1200",
+            "ps": "1200"
+          },
+          {
+            "en": "1100",
+            "ur": "1100",
+            "ps": "1100"
+          },
+          {
+            "en": "1240",
+            "ur": "1240",
+            "ps": "1240"
+          },
+          {
+            "en": "1228",
+            "ur": "1228",
+            "ps": "1228"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Quarterly sale of sugar bags, 2015",
+      "captionUrdu": "چینی کے تھیلوں کی سہ ماہی فروخت، 2015",
+      "captionPashto": "د بورې د کڅوړو ربعوار پلور، 2015",
+      "headers": [
+        {
+          "en": "Quarter",
+          "ur": "سہ ماہی",
+          "ps": "ربع"
+        },
+        {
+          "en": "Spring",
+          "ur": "بہار",
+          "ps": "پسرلی"
+        },
+        {
+          "en": "Summer",
+          "ur": "گرمی",
+          "ps": "اوړی"
+        },
+        {
+          "en": "Autumn",
+          "ur": "خزاں",
+          "ps": "مني"
+        },
+        {
+          "en": "Winter",
+          "ur": "سردی",
+          "ps": "ژمی"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "No. of bags sold",
+            "ur": "فروخت شدہ تھیلوں کی تعداد",
+            "ps": "پلورل شوو کڅوړو شمېر"
+          },
+          {
+            "en": "234",
+            "ur": "234",
+            "ps": "234"
+          },
+          {
+            "en": "270",
+            "ur": "270",
+            "ps": "270"
+          },
+          {
+            "en": "190",
+            "ur": "190",
+            "ps": "190"
+          },
+          {
+            "en": "210",
+            "ur": "210",
+            "ps": "210"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Yearly export and import (metric ton)",
+      "captionUrdu": "سالانہ برآمد اور درآمد (میٹرک ٹن)",
+      "captionPashto": "کلنی صادرات او واردات (میټریک ټن)",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Export",
+          "ur": "برآمد",
+          "ps": "صادرات"
+        },
+        {
+          "en": "Import",
+          "ur": "درآمد",
+          "ps": "واردات"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2010",
+            "ur": "2010",
+            "ps": "2010"
+          },
+          {
+            "en": "4000",
+            "ur": "4000",
+            "ps": "4000"
+          },
+          {
+            "en": "1500",
+            "ur": "1500",
+            "ps": "1500"
+          }
+        ],
+        [
+          {
+            "en": "2011",
+            "ur": "2011",
+            "ps": "2011"
+          },
+          {
+            "en": "4500",
+            "ur": "4500",
+            "ps": "4500"
+          },
+          {
+            "en": "2000",
+            "ur": "2000",
+            "ps": "2000"
+          }
+        ],
+        [
+          {
+            "en": "2012",
+            "ur": "2012",
+            "ps": "2012"
+          },
+          {
+            "en": "5000",
+            "ur": "5000",
+            "ps": "5000"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          }
+        ],
+        [
+          {
+            "en": "2013",
+            "ur": "2013",
+            "ps": "2013"
+          },
+          {
+            "en": "3000",
+            "ur": "3000",
+            "ps": "3000"
+          },
+          {
+            "en": "1400",
+            "ur": "1400",
+            "ps": "1400"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 196. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:24:34.934515+00:00",
+    "scope": "Scan 206 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

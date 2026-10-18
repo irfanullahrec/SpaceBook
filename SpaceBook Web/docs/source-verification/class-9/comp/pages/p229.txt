@@ -1,0 +1,18 @@
+@pdf 169
+@printed 221
+@status lesson
+### 7.8.4 Creating Frameset with Multiple Frames || 7.8.4 متعدد فریموں والا فریم سیٹ بنانا || ۷.۸.۴ د څو frames لرونکی frameset جوړول
+### Creating a Vertical Frameset || عمودی فریم سیٹ بنانا || عمودي frameset جوړول
+p The HTML document in Figure 7.57 demonstrates how to create vertical frames. || شکل 7.57 کی HTML دستاویز عمودی فریم بنانا دکھاتی ہے۔ || د ۷.۵۷ شکل HTML سند د عمودي frames جوړول ښيي.
+m <html>
+m <head>
+m <title> Vertical Frames</title>
+m </head>
+m <frameset cols="40%, 60%">
+m     <frame src="frame1.html"/>
+m     <frame src="frame2.html"/>
+m </frameset>
+m </html>
+p (Figure 7.57: The HTML document for creating vertical frames — "Vertical Frames.html" in Notepad++; line 1 <html> is scrolled out of view.) || (شکل 7.57: عمودی فریم بنانے کی HTML دستاویز۔) || (۷.۵۷ شکل: د عمودي frames جوړولو HTML سند.)
+p This will divide the browser window into two columns. The first column is set to 40% of the width of the browser window and the second to 60%. The HTML document *frame1.html* will be placed in the first column and *frame2.html* in the second column as shown in Figure 7.58. || یہ براؤزر ونڈو کو دو کالموں میں تقسیم کرے گا۔ پہلا کالم ونڈو کی چوڑائی کا 40% اور دوسرا 60% ہے۔ HTML دستاویز *frame1.html* پہلے کالم میں اور *frame2.html* دوسرے کالم میں ہوگی، جیسا کہ شکل 7.58 میں ہے۔ || دا کړکۍ په دوو ستنو وېشي. لومړۍ ستن د پلنوالي ۴۰٪ او دویمه ۶۰٪ ده. *frame1.html* په لومړۍ او *frame2.html* په دویمه ستن کې ږدي، لکه په ۷.۵۸ شکل کې.
+p (Figure 7.58: Browser window having two vertical frames — left frame "ROM: ROM stands for Read Only Memory. It is a single IC chip installed on the motherboard. It stores the Basic Input/Output System (BIOS) of the computer that controls the start-up, or boot process. BIOS programs test the computer components when it is turned on and then load the operating system into RAM to make the computer ready for operation."; right frame "RAM: RAM stands for Random Access Memory. It is high speed memory installed on the motherboard. Information can be read from or written into it. Programs are loaded from secondary storage devices such as hard disk or USB flash drive into RAM for execution by the microprocessor. It is volatile memory which means information stored in it is lost when the computer is turned off.") || (شکل 7.58: دو عمودی فریموں والی براؤزر ونڈو — بائیں فریم میں ROM (ریڈ اونلی میموری، مدر بورڈ پر ایک IC چپ جو BIOS محفوظ رکھتی ہے) اور دائیں میں RAM (رینڈم ایکسیس میموری، تیز رفتار عارضی میموری جو کمپیوٹر بند ہونے پر مٹ جاتی ہے) کی وضاحت۔) || (۷.۵۸ شکل: د دوو عمودي frames براوزر کړکۍ — کیڼ کې د ROM (Read Only Memory، پر مدربورډ IC چپ چې BIOS ساتي) او ښي کې د RAM (Random Access Memory، چټکه لنډمهاله حافظه چې د کمپیوټر په بندېدو پاکېږي) تشریح.)

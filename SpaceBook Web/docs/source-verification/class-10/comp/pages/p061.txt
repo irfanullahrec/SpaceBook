@@ -1,0 +1,21 @@
+@printed 51
+@status lesson
+@unit 3 | اِن پُٹ اور آؤٹ پُٹ کا عمل || Input and output operations || د ننوتو او وتو عملیات
+@sec 3-intro | باب 3: اِن پُٹ اور آؤٹ پُٹ کا عمل || Chapter 3: Input and output operations || څپرکی ۳: د ننوتو او وتو عملیات
+@deco Chapter opener: roundel "باب نمبر 3"; illustrations of a person at a machine with an "INPUT" screen ("PLEASE ENTER YOUR NAME / JOHN") and an "OUTPUT" screen ("HELLO JOHN! AND WELCOME!"), a head with gears and arrows "input → process → output", and a keyboard with the diagram "Object cin ⇄ Extraction Operator >> ⇄ Variable" (not reproduced).
+# باب 3 — اِن پُٹ اور آؤٹ پُٹ کا عمل || Chapter 3 — Input and output operations || څپرکی ۳ — د ننوتو او وتو عملیات
+## اس باب کی تکمیل کے بعد طلبہ اس قابل ہو جائیں گے کہ وہ: || After completing this chapter students will be able to: || د دې څپرکي له بشپړېدو وروسته به زده کوونکي وکولای شي چې:
+slo آؤٹ پُٹ فنکشنز: printf()، puts() اور cout کا استعمال کر سکیں۔ || use the output functions printf(), puts() and cout. || د output فنکشنونه printf()، puts() او cout وکاروي.
+slo اِن پُٹ فنکشنز: gets()، getchar()، getch()، getche()، scanf() اور cin کو استعمال کر سکیں۔ || use the input functions gets(), getchar(), getch(), getche(), scanf() and cin. || د input فنکشنونه gets()، getchar()، getch()، getche()، scanf() او cin وکاروي.
+slo اسٹیٹمنٹ ٹرمینیٹر یعنی (semicolon) استعمال کر سکیں۔ || use the statement terminator, i.e. the semicolon. || د بیان پای ټکی یعنې (semicolon) وکاروي.
+slo فارمیٹ سپیسیفائر کی تعریف کر سکیں۔ || define format specifiers. || فارمېټ مشخص کوونکي (format specifiers) تعریف کړي.
+slo اسکیپ سیکونس (Escape Sequence) کی تعریف کر سکیں اور پروگرام میں ان کے استعمال کو جان سکیں۔ || define escape sequences and know their use in programs. || اسکیپ سیکونس (Escape Sequence) تعریف کړي او په پروګرام کې یې کارونه وپېژني.
+slo حسابی عوامل (Arithmetic Operators) کی تعریف کر سکیں اور پروگرام میں ان کے استعمال کو جان سکیں۔ || define arithmetic operators and know their use in programs. || حسابي عملګرونه (Arithmetic Operators) تعریف کړي او په پروګرام کې یې کارونه وپېژني.
+slo اسائنمنٹ آپریٹرز (Assignment Operators) کے استعمال کو جان سکیں۔ || know the use of assignment operators. || د ګمارنې عملګرونو (Assignment Operators) کارونه وپېژني.
+slo نسبتی آپریٹرز (Relational Operators) کی تعریف کر سکیں اور پروگرام میں ان کے استعمال کو جان سکیں۔ || define relational operators and know their use in programs. || نسبتي عملګرونه (Relational Operators) تعریف کړي او په پروګرام کې یې کارونه وپېژني.
+slo منطقی آپریٹرز (Logical Operators) کی تعریف کر سکیں اور پروگرام میں ان کے استعمال کو جان سکیں۔ || define logical operators and know their use in programs. || منطقي عملګرونه (Logical Operators) تعریف کړي او په پروګرام کې یې کارونه وپېژني.
+slo اسائنمنٹ آپریٹرز اور مساوی آپریٹر کے مابین فرق کر سکیں۔ || distinguish between the assignment operator and the equal-to operator. || د ګمارنې عملګر او د برابرۍ عملګر ترمنځ توپیر وکړي.
+slo یونری (Unary) اور بائنری (Binary) آپریٹرز میں فرق بیان کر سکیں۔ || state the difference between unary and binary operators. || د یونري (Unary) او باینري (Binary) عملګرونو توپیر بیان کړي.
+slo ثلاثی (Ternary) آپریٹر کی تعریف کر سکیں۔ || define the ternary operator. || درې ګونی (Ternary) عملګر تعریف کړي.
+slo آپریٹرز کی آپس میں فوقیت کی تعریف کر سکیں اور اسے سمجھ سکیں۔ || define and understand the precedence of operators. || د عملګرونو ترمنځ لومړیتوب (precedence) تعریف کړي او پوه یې شي.
+@issue The objectives list cout and cin, which are C++ stream objects (from <iostream>), not C functions.

@@ -1,0 +1,125 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s158-p149",
+  "title": "Ring disadvantages (end); c. Bus Topology; Figure 5.25; advantages — start",
+  "headingUrdu": "رنگ کے نقصانات (اختتام)؛ ج۔ بس ٹوپولوجی؛ شکل ۵.۲۵؛ فوائد — آغاز",
+  "headingPashto": "د حلقې زیانونه (پای)؛ ج. بس توپولوژي؛ انځور ۵.۲۵؛ ګټې — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 158,
+    "printedPage": "149"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s158-d3",
+      "en": "Network is highly dependent on the wire which connects different components.",
+      "ur": "نیٹ ورک کا انحصار اس تار پر بہت زیادہ ہے جو مختلف اجزاء کو جوڑتی ہے۔",
+      "ps": "شبکه ډیره د هغه تار پورې تړلې ده چې مختلف اجزا نښلوي.",
+      "listGroup": "rg_dis2"
+    },
+    {
+      "id": "cs11-s158-d4",
+      "en": "Ring topologies can be difficult to troubleshoot.",
+      "ur": "رنگ ٹوپولوجیز میں خرابی تلاش کرنا مشکل ہو سکتا ہے۔",
+      "ps": "د حلقه توپولوژیو د ستونزو حل کول ستونزمن کېدای شي.",
+      "listGroup": "rg_dis2"
+    },
+    {
+      "id": "cs11-s158-d5",
+      "en": "Adding or removing computers from this type of topology can disrupt the operation of the network.",
+      "ur": "اس قسم کی ٹوپولوجی میں کمپیوٹرز شامل کرنے یا ہٹانے سے نیٹ ورک کا عمل متاثر ہو سکتا ہے۔",
+      "ps": "په دې ډول توپولوژۍ کې د کمپیوټرونو زیاتول یا لېرې کول د شبکې عملیات خرابولای شي.",
+      "listGroup": "rg_dis2"
+    },
+    {
+      "id": "cs11-s158-h1",
+      "en": "c. Bus Topology",
+      "ur": "ج۔ بس ٹوپولوجی",
+      "ps": "ج. بس توپولوژي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s158-a",
+      "en": "In the bus topology, each node (computer, server or peripheral device) is attached to a single common cable. This topology type is considered a passive topology because the computers on a bus just sit and listen. When they “hear” data on the wire that belongs to them, they accept that data. When they are ready to transmit, they make sure no one else on the bus is transmitting and then they send their packets of information on the network.",
+      "ur": "بس ٹوپولوجی میں ہر نوڈ (کمپیوٹر، سرور یا پیریفرل آلہ) ایک ہی مشترکہ کیبل سے جڑا ہوتا ہے۔ اس قسم کی ٹوپولوجی کو غیر فعال ٹوپولوجی سمجھا جاتا ہے کیونکہ بس پر موجود کمپیوٹرز صرف بیٹھ کر سنتے رہتے ہیں۔ جب وہ تار پر اپنا ڈیٹا ’’سنتے‘‘ ہیں تو اسے قبول کر لیتے ہیں۔ جب وہ ترسیل کے لیے تیار ہوتے ہیں تو یقینی بناتے ہیں کہ بس پر کوئی اور ترسیل نہیں کر رہا اور پھر معلومات کے پیکٹس نیٹ ورک پر بھیجتے ہیں۔",
+      "ps": "په بس توپولوژۍ کې هره غوټه (کمپیوټر، خدمتګار یا پیریفرل وسیله) یوه ګډ کېبل سره نښلول شوې ده. دا ډول توپولوژي غیر فعاله توپولوژي ګڼل کېږي ځکه چې په بس کمپیوټرونه یوازې ناست وي او اورېدل کوي. کله چې دوی په تار هغه ډېټا “واوري” چې دوی پورې اړه لري، هغه مني. کله چې دوی د لېږد لپاره چمتو وي، ډاډ ترلاسه کوي چې په بس بل څوک نه لېږي او بیا د معلوماتو کڅوړې په شبکه لېږي."
+    },
+    {
+      "id": "cs11-s158-b",
+      "en": "Bus network typically uses coaxial networking cable hooked in to each computer using a T-connector. Each end of the network is terminated using a terminator specific to a cable.",
+      "ur": "بس نیٹ ورک عموماً کواکسیئل نیٹ ورکنگ کیبل استعمال کرتا ہے جسے ٹی کنیکٹر کے ذریعے ہر کمپیوٹر سے جوڑا جاتا ہے۔ نیٹ ورک کے ہر سرے کو کیبل کے مخصوص ٹرمینیٹر سے ختم کیا جاتا ہے۔",
+      "ps": "د بس شبکه معمولاً کوکسیل شبکه کېبل کاروي چې د T-نښلوونکي په کارولو سره هر کمپیوټر ته نښلول کېږي. د شبکې هر سر د کېبل ځانګړي ټرمینېټر په کارولو سره پای ته رسول کېږي."
+    },
+    {
+      "id": "cs11-s158-h2",
+      "en": "Advantages of a Bus Topology",
+      "ur": "بس ٹوپولوجی کے فوائد",
+      "ps": "د بس توپولوژۍ ګټې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s158-a1",
+      "en": "Bus topology costs very less.",
+      "ur": "بس ٹوپولوجی کی لاگت بہت کم ہے۔",
+      "ps": "د بس توپولوژۍ لګښت ډیر لږ دی.",
+      "listGroup": "bs_adv"
+    },
+    {
+      "id": "cs11-s158-a2",
+      "en": "Easy to connect a computer or peripheral to a linear bus.",
+      "ur": "خطی بس سے کمپیوٹر یا پیریفرل جوڑنا آسان ہے۔",
+      "ps": "یو کمپیوټر یا پیریفرل خطي بس ته نښلول اسانه دي.",
+      "listGroup": "bs_adv"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s158-d3",
+        "cs11-s158-d4",
+        "cs11-s158-d5",
+        "cs11-s158-h1",
+        "cs11-s158-a",
+        "cs11-s158-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s158-h2",
+        "cs11-s158-a1",
+        "cs11-s158-a2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 160\" role=\"img\" aria-label=\"Bus topology: four computers attached to a single common cable\" style=\"width:100%;max-width:430px;height:auto;background:#fff\"><text x=\"260\" y=\"25\" font-size=\"20\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Bus Topology</text><rect x=\"10\" y=\"10\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"4\" y=\"46\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"170\" y=\"15\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"164\" y=\"51\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"65\" y=\"100\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"59\" y=\"136\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"280\" y=\"95\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"274\" y=\"131\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><line x1=\"30\" y1=\"85\" x2=\"30\" y2=\"85\" stroke=\"#111\" stroke-width=\"1.5\"/><line x1=\"35\" y1=\"60\" x2=\"35\" y2=\"78\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"35\" y1=\"78\" x2=\"300\" y2=\"78\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"60\" x2=\"195\" y2=\"78\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"78\" x2=\"90\" y2=\"100\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"78\" x2=\"300\" y2=\"95\" stroke=\"#d9541e\" stroke-width=\"1.5\"/></svg>",
+      "id": "cs11-s158-fig1",
+      "caption": "Figure 5.25 Bus Topology",
+      "captionUrdu": "شکل ۵.۲۵ بس ٹوپولوجی",
+      "captionPashto": "انځور ۵.۲۵ بس توپولوژي",
+      "labels": [
+        {
+          "en": "Bus Topology",
+          "ur": "بس ٹوپولوجی",
+          "ps": "بس توپولوژي"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 149: the last three disadvantages of a ring topology (continuing from page 148), “c. Bus Topology” with two paragraphs, Figure 5.25 Bus Topology (four computers on one common cable; redrawn as coded SVG) and the first two advantages of a bus topology (the list continues on the next page). The caption of Figure 5.25 is printed “Figure”. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:19:17.603025+00:00",
+    "scope": "Scan 158 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

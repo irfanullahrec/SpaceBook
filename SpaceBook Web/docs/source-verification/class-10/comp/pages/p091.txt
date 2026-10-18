@@ -1,0 +1,39 @@
+@printed 81
+@status lesson
+### پروگرام 4.3 ایک پروگرام جو دو نمبر اِن پُٹ کرتا ہے اور ایک پیغام پرنٹ کرتا ہے کہ یہ دونوں مساوی ہیں یا نہیں۔ || Program 4.3 A program that inputs two numbers and prints a message saying whether they are equal || پروګرام ۴.۳ داسې پروګرام چې دوه عددونه داخلوي او پیغام چاپوي چې دواړه برابر دي که نه
+m #include<stdio.h>
+m void main( )
+m {
+m     int a, b;
+m     printf("\nEnter first number = ");
+m     scanf("%d",&a);
+m     printf("\nEnter second number = ");
+m     scanf("%d",&b);
+m     if(a==b)
+m     printf("Both numbers are equal");
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter first number = 45
+m Enter second number = 45
+m Both numbers are equal
+endbox
+@issue Program 4.3 is printed faintly; the scan drops the backslash in "\n" and the closing brace of main(), restored above. The heading promises a message "whether they are equal or not", but the program prints a message only when they are equal (an else branch would be needed for the other case).
+@sec 4-1-4 | 4.1.4 if-else اسٹیٹمنٹ || 4.1.4 The if-else statement || ۴.۱.۴ if-else بیان
+### 4.1.4 if-else اسٹیٹمنٹ (if-else Statement) || 4.1.4 The if-else statement || ۴.۱.۴ if-else بیان
+p if-else اسٹیٹمنٹ بھی فیصلے کرنے کے لیے استعمال ہوتی ہے۔ اگر شرط کا نتیجہ True ہو تو یہ اسٹیٹمنٹ کے ایک بلاک کو چلاتی ہے اور اگر شرط کا نتیجہ False ہو تو دوسرے بلاک کو چلائے گی۔ کسی بھی صورتحال میں صرف ایک ہی بلاک چلے گا دوسرا بلاک نظر انداز کر دیا جائے گا۔ اسے دو طرفہ سلیکشن اسٹیٹمنٹ بھی کہا جاتا ہے۔ || The if-else statement is also used for taking decisions. If the condition is true it runs one block of statements, and if the condition is false it runs the other block. In any situation only one block runs and the other is skipped. It is also called the two-way selection statement. || if-else بیان هم د پرېکړې لپاره کارېږي. که شرط True وي د بیانونو یو بلاک چلوي، او که False وي بل بلاک چلوي. په هر حالت کې یوازې یو بلاک چلېږي او بل پرېښودل کېږي. دې ته دوه اړخیز انتخابي بیان هم وايي.
+p سائنٹکس: || Syntax: || ترکیب:
+m if(condition)
+m         statement;
+m else
+m         statement;
+p دو یا دو سے زیادہ اسٹیٹمنٹس کو قوسین { } میں لکھا جاتا ہے۔ کمپاؤنڈ اسٹیٹمنٹ کے لیے if-else کا سائنٹکس درج ذیل ہے: || Two or more statements are written in braces { }. The syntax of if-else for compound statements is: || دوه یا ډېر بیانونه په { } قوسونو کې لیکل کېږي. د مرکب بیانونو لپاره د if-else ترکیب دا دی:
+m if(condition)
+m {
+m     statement 1;
+m     statement 2;
+m     .
+m     statement n;
+m }
+m else
+m {
+m     statement 1;

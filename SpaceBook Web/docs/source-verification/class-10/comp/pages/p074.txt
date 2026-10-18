@@ -1,0 +1,32 @@
+@printed 64
+@status lesson
+@sec 3-2-1 | 3.2.1 حسابی آپریٹرز || 3.2.1 Arithmetic operators || ۳.۲.۱ حسابي عملګرونه
+### 3.2.1 حسابی آپریٹرز (Arithmetic Operators) || 3.2.1 Arithmetic operators || ۳.۲.۱ حسابي عملګرونه (Arithmetic Operators)
+p حسابی آپریٹرز وہ علامات ہیں جو ڈیٹا پر ریاضی کے عوامل کے لئے استعمال ہوتی ہیں۔ C لینگویج مختلف آپریٹرز کو مختلف حسابی عمل انجام دینے کے لئے معاونت کرتی ہے جیسے جمع، تفریق، تقسیم، ضرب وغیرہ۔ C میں تمام حسابی آپریٹرز کی فہرست مندرجہ ذیل ہے۔ || Arithmetic operators are symbols used for mathematical operations on data. The C language supports various operators for carrying out various arithmetic operations, such as addition, subtraction, division, multiplication and so on. All the arithmetic operators in C are listed below. || حسابي عملګرونه هغه نښې دي چې پر ډېټا د ریاضي عملیاتو لپاره کارېږي. C ژبه د بېلابېلو حسابي عملیاتو لکه جمع، تفریق، وېش، ضرب او نورو لپاره بېلابېل عملګرونه لري. په C کې د ټولو حسابي عملګرونو لړلیک لاندې دی.
+table حسابی آپریٹرز || Arithmetic operators || حسابي عملګرونه
+th | آپریشن || Operation || عملیه | علامت || Symbol || نښه | تفصیل || Description || تشریح
+tr | جمع || Addition || جمع | + || + || + | دو قیمتوں کو جمع کرتا ہے۔ || Adds two values. || دوه ارزښتونه جمع کوي.
+tr | تفریق || Subtraction || تفریق | - || - || - | ایک قیمت کو دوسری سے تفریق کرتا ہے۔ || Subtracts one value from another. || یو ارزښت له بل څخه کموي.
+tr | ضرب || Multiplication || ضرب | * || * || * | دو قیمتوں کو ضرب دیتا ہے۔ || Multiplies two values. || دوه ارزښتونه ضربوي.
+tr | تقسیم || Division || وېش | / || / || / | ایک قیمت کو دوسری قیمت سے تقسیم کرتا ہے۔ || Divides one value by another. || یو ارزښت پر بل وېشي.
+tr | ماڈولس || Modulus || پاتې (Modulus) | % || % || % | دو انٹیجر کی تقسیم سے حاصل شدہ باقی ماندہ قیمت معلوم کرتا ہے۔ || Finds the remainder left over from dividing two integers. || د دوو بشپړو عددونو له وېش پاتې ارزښت پیدا کوي.
+endtable
+@issue In both tables the division operator is printed as a backslash "\"; the C division operator is the forward slash "/" (shown here). The % sign is printed in a mirrored Urdu form.
+p تمام حسابی آپریٹرز صرف عددی قیمتوں کے ساتھ ہی عمل کر سکتے ہیں۔ فرض کریں ہمارے پاس A اور B دو ویری ایبلز ہیں جہاں A = 8 اور B = 3 ہے۔ A اور B پر مندرجہ ذیل حسابی عوامل استعمال ہو سکتے ہیں۔ || All arithmetic operators work only with numeric values. Suppose we have two variables A and B, where A = 8 and B = 3. The following arithmetic operations can be used on A and B. || ټول حسابي عملګرونه یوازې له عددي ارزښتونو سره کار کوي. فرض کړئ A او B دوه متغیرونه لرو چې A = 8 او B = 3 دي. پر A او B لاندې حسابي عملیات کارېدای شي.
+table حسابی عوامل کی مثالیں (int A=8, B=3) || Examples of arithmetic operations (int A=8, B=3) || د حسابي عملیاتو بېلګې (int A=8, B=3)
+th | آپریٹر || Operator || عملګر | مثال (int A=8, B=3) || Example (int A=8, B=3) || بېلګه (int A=8, B=3) | نتیجہ || Result || پایله
+tr | + || + || + | A+B || A+B || A+B | 11 || 11 || 11
+tr | - || - || - | A-B || A-B || A-B | 5 || 5 || 5
+tr | * || * || * | A*B || A*B || A*B | 24 || 24 || 24
+tr | / || / || / | A/B || A/B || A/B | 2 (Integer Division) || 2 (Integer Division) || 2 (Integer Division)
+tr | % || % || % | A%B || A%B || A%B | 0 (کتاب کے مطابق؛ درست: 2) || 2 (the book prints 0) || 2 (کتاب 0 چاپ کړی)
+endtable
+@issue The book gives 0 as the result of A%B; 8 % 3 = 2 (8 = 2×3 + 2). The original slot keeps the printed 0 with a correction.
+p ماڈولس آپریٹرز کے حوالے سے چند اہم نکات درج ذیل ہیں۔ || Some important points about the modulus operator are as follows. || د پاتې (modulus) عملګر په اړه ځینې مهم ټکي دا دي.
+- C میں ماڈولس آپریٹر فیصد علامت % آپریٹر کے ذریعہ ظاہر کیا جاتا ہے۔ || In C the modulus operator is represented by the percent sign %. || په C کې د پاتې عملګر د سلنې نښې % په واسطه ښودل کېږي.
+- ماڈولس آپریٹر کو ریمینڈر آپریٹر بھی کہا جاتا ہے۔ || The modulus operator is also called the remainder operator. || د پاتې عملګر ته remainder عملګر هم ویل کېږي.
+- ماڈولس آپریٹر صرف دو آپرینڈز کے درمیان کام کرتا ہے۔ || The modulus operator works only between two operands. || د پاتې عملګر یوازې د دوو عملوندونو ترمنځ کار کوي.
+- ماڈولس آپریٹر صرف انٹیجر پر ہی کام کرتا ہے۔ || The modulus operator works only on integers. || د پاتې عملګر یوازې پر بشپړو عددونو کار کوي.
+- اگر ماڈولس آپریٹر میں 0 کو کسی عدد سے تقسیم کیا جائے تو اس کا حاصل ہمیشہ 0 ہو گا۔ مثال کے طور پر 0%7 کا حاصل 0 ہو گا۔ || If 0 is divided by a number with the modulus operator, the result is always 0. For example, 0%7 gives 0. || که د پاتې عملګر سره 0 پر یوه عدد ووېشل شي، پایله تل 0 ده. د بېلګې په توګه 0%7 پایله 0 ده.
+- ایکسپریشن 5%7 میں، 5 عدد 7 سے تقسیم نہیں ہو سکتا، اس کا نتیجہ 5 ہو گا۔ || In the expression 5%7, 5 cannot be divided by 7, so the result is 5. || په 5%7 عبارت کې 5 پر 7 نه وېشل کېږي، نو پایله یې 5 ده.
+@issue The examples are printed "7%0" and "7%5" (operands reversed by the right-to-left layout). The sentences mean 0%7 = 0 and 5%7 = 5, used here. Note that 7%0 (modulus by zero) is undefined in C and must never be written.

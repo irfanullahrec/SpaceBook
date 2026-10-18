@@ -1,0 +1,29 @@
+@printed 8
+@status lesson
+@issue Algorithm steps are printed in English (pseudo-code) and are transcribed verbatim as code lines (not translated).
+### 1.2.4 مسائل کے حل کے لیے الگورتھم کا استعمال (Algorithm for Solving Some Problems) || 1.2.4 Algorithms for solving some problems || ۱.۲.۴ د ستونزو د حل لپاره د الګوریتم کارونه
+p **مسئلہ نمبر 1:** پانچ نمبروں کا حاصلِ جمع، حاصلِ ضرب اور اوسط معلوم کرنا۔ || **Problem 1:** Find the sum, product and average of five numbers. || **۱ ستونزه:** د پنځو شمېرو مجموعه، ضرب او اوسط معلوم کړئ.
+p الگورتھم: فرض کیا کہ پانچ اعداد دیئے گئے ہیں n1, n2, n3, n4, n5۔ یہ الگورتھم ان اعداد کا حاصلِ ضرب PRO، حاصلِ جمع SUM اور اوسط AVG معلوم کرے گا۔ || Algorithm: suppose five numbers n1, n2, n3, n4, n5 are given. This algorithm will find their product PRO, sum SUM and average AVG. || الګوریتم: فرض کړئ پنځه عددونه n1, n2, n3, n4, n5 ورکړل شوي. دا الګوریتم به د دې عددونو ضرب PRO، مجموعه SUM او اوسط AVG معلوم کړي.
+m Step 1.  Read n1, n2, n3, n4, n5
+m Step 2.  Set SUM = n1+n2+n3+n4+n5
+m Step 3.  Set PRO = n1*n2*n3*n4*n5
+m Step 4.  Set AVG = SUM/5
+m Step 5.  Write SUM, PRO, AVG
+m Step 6.  Exit
+p **مسئلہ نمبر 2:** دیئے گئے تین غیر مساوی اعداد میں سے سب سے بڑے عدد کو منتخب کرنا۔ || **Problem 2:** Select the largest of three given unequal numbers. || **۲ ستونزه:** له دریو ورکړل شویو نابرابرو عددونو څخه تر ټولو لوی عدد وټاکئ.
+p الگورتھم: فرض کیا تین اعداد n1, n2, n3 ہیں۔ یہ الگورتھم ان تین اعداد میں سے سب سے بڑا عدد (LARG) معلوم کرے گا۔ || Algorithm: suppose the three numbers are n1, n2, n3. This algorithm will find the largest number (LARG) among them. || الګوریتم: فرض کړئ درې عددونه n1, n2, n3 دي. دا الګوریتم به له دې دریو تر ټولو لوی عدد (LARG) معلوم کړي.
+m Step 1.  Read n1, n2, n3
+m Step 2.  If n1>n2 AND n1>n3 then Set LARG=n1
+m          Else if n2>n3 then Set LARG=n2
+m          Else Set LARG=n3
+m          [End of If structure]
+m Step 3.  Write LARG
+m Step 4.  Exit
+p **مسئلہ نمبر 3:** دی گئی قوت اور کمیت کی بنیاد پر کسی بھی متحرک جسم کا اسراع معلوم کرنا۔ || **Problem 3:** Find the acceleration of any moving body from the given force and mass. || **۳ ستونزه:** د ورکړل شوي ځواک او کتلې پر بنسټ د هر متحرک جسم ګړندیتوب (تعجیل) معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی بھی متحرک چیز کا اسراع ACCEL معلوم کرے گا جبکہ اس چیز کی کمیت MASS اور لگائی گئی قوت FORCE دی گئی ہو۔ || Algorithm: this algorithm will find the acceleration ACCEL of any moving object when its mass MASS and the applied force FORCE are given. || الګوریتم: دا الګوریتم به د هر متحرک شي تعجیل ACCEL معلوم کړي کله چې د هغه کتله MASS او لګېدلی ځواک FORCE ورکړل شوي وي.
+m Step 1.  Read MASS, FORCE
+m Step 2.  Set ACCEL = FORCE / MASS
+m Step 3.  Write ACCEL
+m Step 4.  Exit
+p **مسئلہ نمبر 4:** کسی کُرّے (Sphere) اور مکعب (Cube) کا حجم معلوم کرنا۔ || **Problem 4:** Find the volume of a sphere and a cube. || **۴ ستونزه:** د یوې کرې (Sphere) او مکعب (Cube) حجم معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی مکعب کا حجم VC جس کے ایک ضلع کی لمبائی A ہو اور کُرّے کا حجم VS جس کا رداس R (Radius) ہو، معلوم کرے گا۔ || Algorithm: this algorithm will find the volume VC of a cube whose side length is A, and the volume VS of a sphere whose radius is R. || الګوریتم: دا الګوریتم به د هغه مکعب حجم VC چې د یوې ضلعې اوږدوالی یې A وي، او د هغې کرې حجم VS چې شعاع یې R وي، معلوم کړي.

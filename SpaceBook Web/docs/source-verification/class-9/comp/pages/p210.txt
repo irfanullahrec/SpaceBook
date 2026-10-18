@@ -1,0 +1,10 @@
+@printed 202
+@status lesson
+### Adding Border to an Image || تصویر کو بارڈر دینا || انځور ته پوله ورکول
+p Border is a box of lines that is around the boundary of an image. A border can be set around an image using the *border* attribute in the <img> tag as given below. || بارڈر لکیروں کا ایک خانہ ہے جو تصویر کی حد کے گرد ہوتا ہے۔ <img> ٹیگ میں *border* خصوصیت سے تصویر کے گرد بارڈر لگایا جا سکتا ہے، جیسا کہ نیچے دیا گیا ہے۔ || پوله د کرښو یوه خانه ده چې د انځور شاوخوا وي. د <img> په *border* attribute انځور ته پوله ورکول کېدای شي، لکه لاندې.
+m <img src="image.jpg" border=5>
+p Here, the number 5 specifies the width of the border in pixels. The browser window will display the image with border as shown in Figure 7.37. || یہاں عدد 5 بارڈر کی چوڑائی پکسلز میں بتاتا ہے۔ براؤزر ونڈو تصویر کو بارڈر کے ساتھ شکل 7.37 کی طرح دکھائے گی۔ || دلته ۵ عدد د پولې پلنوالی په پکسل ټاکي. براوزر به انځور له پولې سره د ۷.۳۷ شکل په څېر وښيي.
+p (Figure 7.37: Image with border displayed in browser window.) || (شکل 7.37: براؤزر ونڈو میں بارڈر والی تصویر۔) || (۷.۳۷ شکل: په براوزر کې پوله لرونکی انځور.)
+### 7.5.2 Specifying Image Size in a Web Page || 7.5.2 ویب پیج میں تصویر کا سائز بتانا || ۷.۵.۲ په وېب پاڼه کې د انځور اندازه ټاکل
+p User can use the *height, width* and *alt* attributes in the <img> tag to make change in the image on web page. || صارف ویب پیج پر تصویر میں تبدیلی کے لیے <img> ٹیگ میں *height، width* اور *alt* خصوصیات استعمال کر سکتا ہے۔ || کاروونکی د انځور د بدلون لپاره په <img> کې *height، width* او *alt* attributes کارولی شي.
+p ***height* attribute:** This attribute is inserted in the <img> tag to specify the height of the image in pixels. This can be different than the real height of the image. The browser resizes the height of the image as specified in the <img> tag. || ***height* خصوصیت:** یہ <img> ٹیگ میں تصویر کی اونچائی پکسلز میں بتانے کے لیے لگائی جاتی ہے۔ یہ تصویر کی اصل اونچائی سے مختلف ہو سکتی ہے۔ براؤزر <img> ٹیگ کے مطابق اونچائی بدل دیتا ہے۔ || ***height* attribute:** په <img> کې د انځور لوړوالی په پکسل ټاکي. له اصلي لوړوالي توپیر کولی شي. براوزر لوړوالی د <img> سره سم بدلوي.

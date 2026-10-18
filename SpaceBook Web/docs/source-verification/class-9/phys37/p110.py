@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Rectangular components / Figure 4.7 / Table 4.1 angle values / Eqs 4.2–4.3'
+SECTIONS = [
+    ('4.3-rect', ('4.3 Resolution of forces — rectangular components', '4.3 قوتوں کی تحلیل — مستطیلی اجزا', '4.3 د قوتونو تجزیه — مستطیلي برخې'), [
+        ('p', 'need to separate a vector into rectangular components. For example a ice block is being pulled by a boy using rope. We can think of force as tension in the rope. This single force F⃗ can be resolved into two components - one directed rightward along x-axis (F⃗ₓ) and the other directed upwards along y-axis (F⃗ᵧ) as shown in figure 4.6.',
+         'کسی ویکٹر کو مستطیلی اجزا میں الگ کرنے کی ضرورت ہوتی ہے۔ مثلاً ایک لڑکا رسی سے برف کا ایک بلاک کھینچ رہا ہے۔ ہم قوت کو رسی میں تناؤ سمجھ سکتے ہیں۔ اس واحد قوت F⃗ کو دو اجزا میں تحلیل کیا جا سکتا ہے — ایک x محور کے ساتھ دائیں طرف (F⃗ₓ) اور دوسرا y محور کے ساتھ اوپر کی طرف (F⃗ᵧ)، جیسا کہ شکل 4.6 میں ہے۔',
+         'اړتیا وي چې یو وکټور په مستطیلي برخو جلا کړو. د مثال په توګه یو هلک د یخ یوه ټوټه په رسۍ کاږي. قوت د رسۍ کشش ګڼلی شو. دا واحد قوت F⃗ په دوو برخو تجزیه کېدای شي — یوه د x محور په اوږدو ښي لوري ته (F⃗ₓ) او بله د y محور په اوږدو پورته (F⃗ᵧ)، لکه په 4.6 شکل کې.'),
+        ('p', 'Consider a force F⃗ in the Cartesian coordinate System, represented by the line OP, making an angle θ as shown in the figure 4.7.', 'کارتیسی محددی نظام میں ایک قوت F⃗ پر غور کریں جو لکیر OP سے ظاہر ہے اور θ زاویہ بناتی ہے، جیسا کہ شکل 4.7 میں ہے۔', 'په کارتیزي مختصاتي سیسټم کې یو قوت F⃗ په پام کې ونیسئ چې د OP کرښې په واسطه ښودل شوی او θ زاویه جوړوي، لکه په 4.7 شکل کې.'),
+        ('p', 'Draw perpendiculars from point P on x-axis and y-axis which meets the axis at points Q and S respectively. Put arrow head from the direction of O towards Q and S such that they represent vectors as F⃗ₓ (OQ & SP) and F⃗ᵧ (OS & QP), becomes the rectangular components of vector F⃗ (OP).',
+         'نقطہ P سے x محور اور y محور پر عمود گرائیں جو بالترتیب نقاط Q اور S پر محوروں سے ملتے ہیں۔ O سے Q اور S کی طرف تیر کے سر لگائیں تاکہ یہ ویکٹر F⃗ₓ (OQ اور SP) اور F⃗ᵧ (OS اور QP) کو ظاہر کریں، جو ویکٹر F⃗ (OP) کے مستطیلی اجزا بن جاتے ہیں۔',
+         'له P ټکي څخه پر x او y محورونو عمودونه وکښئ چې په ترتیب سره په Q او S ټکو کې محورونو ته رسېږي. له O څخه د Q او S لوري ته د غشو سرونه کېږدئ څو F⃗ₓ (OQ او SP) او F⃗ᵧ (OS او QP) وکټورونه وښيي، چې د F⃗ (OP) وکټور مستطیلي برخې کېږي.'),
+        ('fig', 'Figure 4.7 Rectangular Components: F⃗ along OP at angle θ; F⃗ₓ along OQ (and SP), F⃗ᵧ along OS (and QP).', 'شکل 4.7 مستطیلی اجزا: θ زاویے پر OP کے ساتھ F⃗؛ OQ (اور SP) کے ساتھ F⃗ₓ، OS (اور QP) کے ساتھ F⃗ᵧ۔', '4.7 شکل مستطیلي برخې: په θ زاویه د OP په اوږدو F⃗؛ د OQ (او SP) په اوږدو F⃗ₓ، د OS (او QP) په اوږدو F⃗ᵧ.'),
+        ('p', 'By head to tail rule of vector addition, we know that force F⃗ is the vector sum of F⃗ₓ and F⃗ᵧ, mathematically', 'ویکٹر جمع کے سر سے دم کے اصول سے ہم جانتے ہیں کہ قوت F⃗، F⃗ₓ اور F⃗ᵧ کا ویکٹر مجموعہ ہے؛ ریاضیاتی طور پر', 'د وکټوري جمع د سر تر لکۍ قاعدې له مخې پوهېږو چې F⃗ قوت د F⃗ₓ او F⃗ᵧ وکټوري مجموعه ده؛ په ریاضي ډول'),
+        ('eq', 'phys9-u4-eq42', 'F⃗ = F⃗_x + F⃗_y', '4.2'),
+        ('tab', 'phys9-u4-table41', 'TABLE 4.1: ANGLE VALUES', ['θ', 'sin θ', 'cos θ', 'tan θ'],
+         [['0°', '0.000', '1.000', '0.000'], ['30°', '0.500', '0.866', '0.577'], ['45°', '0.707', '0.707', '1.000'], ['60°', '0.866', '0.500', '1.732'], ['90°', '1.000', '0.000', 'infinite']],
+         (['θ', 'sin θ', 'cos θ', 'tan θ'], [['0°', '0.000', '1.000', '0.000'], ['30°', '0.500', '0.866', '0.577'], ['45°', '0.707', '0.707', '1.000'], ['60°', '0.866', '0.500', '1.732'], ['90°', '1.000', '0.000', 'لامتناہی']]),
+         (['θ', 'sin θ', 'cos θ', 'tan θ'], [['0°', '0.000', '1.000', '0.000'], ['30°', '0.500', '0.866', '0.577'], ['45°', '0.707', '0.707', '1.000'], ['60°', '0.866', '0.500', '1.732'], ['90°', '1.000', '0.000', 'لایتناهي']])),
+        ('h', 'Components represented in terms of force:', 'قوت کے لحاظ سے اجزا کی نمائندگی:', 'د قوت له مخې د برخو ښودنه:'),
+        ('p', 'Consider a triangle Δ OPQ, without taking the sides as vectors. This forms a right angle triangle for which we have.', 'اضلاع کو ویکٹر سمجھے بغیر ایک مثلث Δ OPQ پر غور کریں۔ یہ قائمۃ الزاویہ مثلث بناتی ہے جس کے لیے ہمارے پاس ہے۔', 'یو مثلث Δ OPQ په پام کې ونیسئ پرته له دې چې ضلعې وکټور وګڼو. دا قایم الزاویه مثلث جوړوي چې د هغې لپاره لرو.'),
+        ('eq', None, 'cos θ = [[Base|hyp]] = [[OQ|OP]]'),
+        ('p', 'or', 'یا', 'یا'),
+        ('eq', None, 'cos θ = [[F_x|F]]'),
+        ('p', 'therefore', 'لہٰذا', 'نو'),
+        ('eq', 'phys9-u4-eq43', 'F_x = F cos θ', '4.3'),
+        ('p', 'similarly', 'اسی طرح', 'همداسې'),
+        ('eq', None, 'sin θ = [[Perp|hyp]] = [[QP|OP]]'),
+        ('p', 'or', 'یا', 'یا'),
+        ('eq', None, 'sin θ = [[F_y|F]]'),
+    ]),
+]

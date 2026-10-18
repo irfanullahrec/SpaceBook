@@ -1,0 +1,23 @@
+@printed 216
+@status lesson
+p The text of the next rows is also defined in the same way. || اگلی قطاروں کا متن بھی اسی طرح متعین کیا جاتا ہے۔ || د راتلونکو قطارونو متن هم په همدې ډول ټاکل کېږي.
+p The browser windows will display the final table as shown Figure 7.53. || براؤزر ونڈو حتمی جدول شکل 7.53 کی طرح دکھائے گی۔ || براوزر به وروستی جدول د ۷.۵۳ شکل په څېر ښيي.
+table Figure 7.53: Final Table || شکل 7.53: حتمی جدول || ۷.۵۳ شکل: وروستی جدول
+th | FINAL EXAMINATIONS (spans all columns) || حتمی امتحانات || وروستۍ ازموینې
+tr | S.No. | Date || تاریخ || نېټه | Class X || جماعت دہم || لسم ټولګی
+tr | 1. | 05-04-2014 | Maths || ریاضی || ریاضي
+tr | 2. | 06-04-2014 | Computer || کمپیوٹر || کمپیوټر
+tr | 3. | 07-04-2014 | Chemistry || کیمیا || کیمیا
+tr | 4. | 08-04-2014 | Urdu || اردو || اردو
+endtable
+p *valign* attribute is used to specify the vertical alignment of the contents in the cell. For example || *valign* خصوصیت خانے کے مواد کی عمودی ترتیب بتانے کے لیے استعمال ہوتی ہے۔ مثلاً || *valign* attribute د خانې د منځپانګې عمودي برابرول ټاکي. د بېلګې په توګه
+m <table style="width:50%;">
+m   <tr>
+m     <th>Month</th>
+m     <th>Savings</th>
+m   </tr>
+m   <tr style="height:100px">
+m     <td valign="bottom">January</td>
+m     <td valign="bottom">RS. 99</td>
+m   </tr>
+m </table>

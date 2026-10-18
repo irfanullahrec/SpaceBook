@@ -1,0 +1,24 @@
+@printed 244
+@status lesson
+@issue Source: 10thphysics7.pdf page 11 (page number partly cut off). Figure 18.8 is redrawn.
+svg Figure 18.8 – Half life curve: the percentage of the sample remaining falls from 100 to 50, 25, 12.5 and 6.25 after 1, 2, 3 and 4 half-lives ($N_0$, $N_0/2$, $N_0/4$, $N_0/8$, $N_0/16$); pie charts show the undecayed fraction shrinking. || شکل 18.8 – نصف عمر کا منحنی: نمونے کا باقی فیصد 1، 2، 3 اور 4 نصف عمروں کے بعد 100 سے 50، 25، 12.5 اور 6.25 رہ جاتا ہے ($N_0$، $N_0/2$، $N_0/4$، $N_0/8$، $N_0/16$)؛ دائری خاکے غیر منحط حصے کو گھٹتا دکھاتے ہیں۔ || ۱۸.۸ شکل – د نیم عمر منحني: د نمونې پاتې سلنه له ۱، ۲، ۳ او ۴ نیم عمرونو وروسته له 100 څخه 50، 25، 12.5 او 6.25 ته راټیټېږي ($N_0$، $N_0/2$، $N_0/4$، $N_0/8$، $N_0/16$)؛ ګردي چارټونه د نه تجزیه شوې برخې کمېدل ښيي.
+<svg viewBox="0 0 300 190" width="300" role="img" aria-label="A decay curve on axes: vertical axis Percentage of Sample with marks 100, 50, 25, 12.5, 6.25; horizontal axis Half Lives with marks 1 to 5 T half. Dots on the curve at 100, 50, 25, 12.5, 6.25 with dotted guide lines; small pie charts next to the dots shrinking in yellow fraction" font-family="Arial" font-size="9">
+<line x1="45" y1="10" x2="45" y2="160" stroke="#111"/><line x1="45" y1="160" x2="290" y2="160" stroke="#111"/>
+<g text-anchor="end"><text x="42" y="23">100</text><text x="42" y="88">50</text><text x="42" y="121">25</text><text x="42" y="138">12.5</text><text x="42" y="150">6.25</text><text x="42" y="163">0</text></g>
+<path d="M45 20 C70 70 85 85 90 85 S120 115 135 118 S165 132 180 135 S215 145 225 145 S260 152 285 153" fill="none" stroke="#dc2626" stroke-width="2"/>
+<g fill="#1e3a8a"><circle cx="45" cy="20" r="3"/><circle cx="90" cy="85" r="3"/><circle cx="135" cy="118" r="3"/><circle cx="180" cy="135" r="3"/><circle cx="225" cy="145" r="3"/></g>
+<g stroke="#111" stroke-dasharray="2 2"><path d="M45 85 H90 V160 M45 118 H135 V160 M45 135 H180 V160 M45 145 H225 V160"/></g>
+<g><text x="82" y="175">1T½</text><text x="127" y="175">2T½</text><text x="172" y="175">3T½</text><text x="217" y="175">4T½</text><text x="262" y="175">5T½</text><text x="150" y="188">Half Lives</text></g>
+<text x="12" y="120" transform="rotate(-90 12 120)">Percentage of Sample</text>
+<circle cx="65" cy="20" r="10" fill="#fde047" stroke="#111"/><text x="78" y="15">N₀</text>
+<circle cx="110" cy="65" r="10" fill="#1e3a8a"/><path d="M110 65 V55 A10 10 0 0 0 110 75 Z" fill="#fde047"/><text x="122" y="58">N₀/2</text>
+<circle cx="155" cy="95" r="10" fill="#1e3a8a"/><path d="M155 95 V85 A10 10 0 0 0 145 95 Z" fill="#fde047"/><text x="165" y="85">N₀/4</text>
+<circle cx="200" cy="112" r="10" fill="#1e3a8a"/><path d="M200 112 V102 A10 10 0 0 0 193 105 Z" fill="#fde047"/><text x="210" y="102">N₀/8</text>
+<circle cx="250" cy="122" r="10" fill="#1e3a8a"/><path d="M250 122 V112 A10 10 0 0 0 246 113 Z" fill="#fde047"/><text x="258" y="112">N₀/16</text>
+</svg>
+endsvg
+p In another 1600 years, one-half of the remaining radium atoms will have disintegrated, leaving only one-fourth of the original number intact. Let N represent the amount of the original sample remaining after any given time interval 'Δt' and '$N_0$' represent the original amount in the sample; given in the same units as 'N'. Then || مزید 1600 سال میں باقی ریڈیم ایٹموں کا آدھا حصہ ٹوٹ چکا ہوگا اور اصل تعداد کا صرف ایک چوتھائی باقی رہ جائے گا۔ فرض کریں N کسی دیے گئے وقفۂ وقت 'Δt' کے بعد اصل نمونے کی باقی مقدار اور '$N_0$' نمونے کی اصل مقدار ہے، دونوں ایک ہی اکائی میں۔ تب || په نورو 1600 کلونو کې د پاتې راډیم اتومونو نیمایي به تجزیه شوې وي او د اصلي شمېر یوازې څلورمه برخه به روغه پاتې وي. فرض کړئ N د یوه ټاکلي وختي واټن 'Δt' وروسته د اصلي نمونې پاتې اندازه او '$N_0$' په نمونه کې اصلي اندازه ده؛ دواړه په یو واحد. نو
+eq \text{After 1 half-life}\quad N = \frac{1}{2}N_0
+eq \text{After 2 half-lives}\quad N = \frac{1}{2}\times\frac{1}{2}N_0 = \left(\frac{1}{2}\right)^2 N_0
+eq \text{After 3 half-lives}\quad N = \frac{1}{2}\times\frac{1}{2}\times\frac{1}{2}N_0 = \left(\frac{1}{2}\right)^3 N_0
+eq \text{Generally}\quad N = \frac{1}{2}\times\frac{1}{2}\times\frac{1}{2}\cdots N_0 = \left(\frac{1}{2}\right)^n N_0 \qquad (18.4)

@@ -1,0 +1,33 @@
+@printed 37
+@status lesson
+p … طرح، ہیڈر فائل <math.h> ریاضی کے فنکشن کو استعمال کرنے کے لیے شامل کی جاتی ہیں۔ مثلاً || … In the same way, the header file <math.h> is included to use mathematical functions. For example: || … په همدې ډول، د ریاضي فنکشنونو د کارولو لپاره <math.h> هېډر فایل شاملېږي. د بېلګې په توګه:
+m # include <math.h>
+svg شکل نمبر 2.13 C زبان میں ہیڈر فائلیں || Figure 2.13 Header files in the C language || ۲.۱۳ شکل په C ژبه کې هېډر فایلونه
+<svg viewBox="0 0 300 220" width="300" role="img" aria-label="Stack under the title C Program: C Library, then Header Files, then Predefined functions, with a curved line linking Header Files and Predefined functions" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+<text x="150" y="18" fill="#0369a1">C Program</text>
+<rect x="95" y="28" width="110" height="40" rx="8" fill="#f87171"/><text x="150" y="53">C Library</text>
+<rect x="95" y="80" width="110" height="64" rx="10" fill="#fcd34d"/><text x="150" y="106">Header</text><text x="150" y="126">Files</text>
+<rect x="95" y="156" width="110" height="52" fill="#38bdf8"/><text x="150" y="178" font-size="12">Predefined</text><text x="150" y="195" font-size="12">functions</text>
+<path d="M95 120 C40 130 40 180 95 182" fill="none" stroke="#475569"/>
+</svg>
+endsvg
+@sec 2-3-2 | 2.3.2 کلیدی الفاظ || 2.3.2 Reserved words || ۲.۳.۲ کلیدي کلمې
+### 2.3.2 کلیدی الفاظ (Reserved Words) || 2.3.2 Reserved words || ۲.۳.۲ کلیدي (خوندي) کلمې
+p وہ الفاظ جو کسی بھی زبان کے ذریعہ خصوصی مقاصد کے لئے استعمال ہوتے ہیں انہیں کلیدی الفاظ یا ریزروڈ ورڈز (Reserved Words) یا (Keywords) کہتے ہیں۔ ہر Keyword کے معنی مستقل ہوتے ہیں اور یوزر کے ذریعہ اسے تبدیل نہیں کیا جا سکتا۔ ہر Keyword کو چھوٹے حروف میں لکھا جاتا ہے جیسے آٹو (auto)، بریک (break) وغیرہ۔ C لینگویج 32 Keywords کو سپورٹ کرتی ہے۔ ذیل میں دیئے گئے جدول میں چند ایک Keywords لکھے گئے ہیں۔ || Words that a language uses for special purposes are called key words, reserved words or keywords. The meaning of every keyword is fixed and cannot be changed by the user. Every keyword is written in small (lower-case) letters, such as auto, break and so on. The C language supports 32 keywords. Some keywords are written in the table below. || هغه کلمې چې یوه ژبه یې د ځانګړو موخو لپاره کاروي کلیدي کلمې، خوندي کلمې (Reserved Words) یا (Keywords) بلل کېږي. د هرې Keyword مانا ثابته وي او کاروونکی یې نه شي بدلولای. هره Keyword په وړو تورو لیکل کېږي لکه auto، break او داسې نور. C ژبه 32 Keywords مني. لاندې جدول کې ځینې Keywords لیکل شوې دي.
+@issue The text says "چند ایک Keywords" (a few keywords), but the table titled "C لینگویج میں 32 کلیدی الفاظ" lists all 32 C89 keywords.
+table C لینگویج میں 32 کلیدی الفاظ || The 32 keywords in the C language || په C ژبه کې 32 کلیدي کلمې
+tr | auto || auto || auto | double || double || double | int || int || int | struct || struct || struct
+tr | break || break || break | else || else || else | long || long || long | switch || switch || switch
+tr | case || case || case | enum || enum || enum | register || register || register | typedef || typedef || typedef
+tr | char || char || char | extern || extern || extern | return || return || return | union || union || union
+tr | const || const || const | float || float || float | short || short || short | unsigned || unsigned || unsigned
+tr | continue || continue || continue | for || for || for | signed || signed || signed | void || void || void
+tr | default || default || default | goto || goto || goto | sizeof || sizeof || sizeof | volatile || volatile || volatile
+tr | do || do || do | if || if || if | static || static || static | while || while || while
+endtable
+@sec 2-3-3 | 2.3.3 C پروگرام کا بنیادی ڈھانچہ || 2.3.3 Basic structure of a C program || ۲.۳.۳ د C پروګرام بنسټیز جوړښت
+### 2.3.3 C پروگرام کا بنیادی ڈھانچہ || 2.3.3 Basic structure of a C program || ۲.۳.۳ د C پروګرام بنسټیز جوړښت
+p C پروگرام میں تین اہم حصے ہوتے ہیں: || A C program has three main parts: || د C پروګرام درې مهمې برخې لري:
+- پری پروسیسر ڈائریکٹیوز (Preprocessor Directives) || Preprocessor directives || پري پروسسر لارښودونه (Preprocessor Directives)
+- مین فنکشن (The main () function) || The main() function || main فنکشن (The main () function)
+- مین فنکشن کی باڈی (Body of main { }) || Body of main { } || د main فنکشن بدنه (Body of main { })

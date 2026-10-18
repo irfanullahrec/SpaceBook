@@ -1,0 +1,25 @@
+@pdf 109
+@printed 107
+@status lesson
+m     {
+m         Statement4;
+m     }
+m }
+### Working of Nested if-else Statement || نیسٹڈ if-else اسٹیٹمنٹ کا کام || د ځالي if-else بیان کار
+p In this example of nested if-else, it first tests Condition1, if this condition is TRUE then it tests Condition2, if Condition2 evaluates to TRUE then Statement1 is executed otherwise, Statement2 will be executed. Similarly, if Condition1 is FALSE then it tests Condition3, if Condition3 evaluates to TRUE then Statement3 is executed otherwise Statement4 is executed. The working of nested *if-else* presented in this example can be further illustrated by following flowchart. || نیسٹڈ if-else کی اس مثال میں پہلے Condition1 جانچی جاتی ہے؛ اگر یہ درست ہو تو Condition2 جانچی جاتی ہے، اگر Condition2 درست ہو تو Statement1 ورنہ Statement2 چلتی ہے۔ اسی طرح اگر Condition1 غلط ہو تو Condition3 جانچی جاتی ہے، اگر وہ درست ہو تو Statement3 ورنہ Statement4 چلتی ہے۔ اس مثال میں نیسٹڈ *if-else* کا کام درج ذیل فلوچارٹ سے مزید واضح ہوتا ہے۔ || د ځالي if-else په دې بېلګه کې لومړی Condition1 ازمویل کېږي؛ که سم وي Condition2 ازمویل کېږي، که Condition2 سم وي Statement1 کنه Statement2 اجرا کېږي. همدارنګه که Condition1 ناسم وي Condition3 ازمویل کېږي، که سم وي Statement3 کنه Statement4 اجرا کېږي. د ځالي *if-else* کار په لاندې فلوچارټ نور هم روښانه کېږي.
+svg Figure: 4.4 Working of Nested if-else Statement || شکل 4.4 نیسٹڈ if-else اسٹیٹمنٹ کا کام || ۴.۴ شکل د ځالي if-else بیان کار
+<svg viewBox="0 0 500 420" width="500" role="img" aria-label="Flowchart: Start, then diamond If Condition; True goes down to If Body; False goes right to diamond Nested If Condition, whose True goes down to Nested If Body and False goes right and down to Nested Else Body; all bodies join to Statement just below if, then Exit" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF43" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#334155"/></marker></defs>
+<ellipse cx="90" cy="24" rx="50" ry="18" fill="#e0f2fe" stroke="#334155"/><text x="90" y="29">Start</text>
+<polygon points="90,70 160,104 90,138 20,104" fill="#fef3c7" stroke="#334155"/><text x="90" y="109" fill="#a16207">If Condition</text>
+<polygon points="300,70 370,104 300,138 230,104" fill="#fff" stroke="#334155"/><text x="300" y="100">Nested If</text><text x="300" y="116">Condition</text>
+<rect x="40" y="186" width="100" height="40" fill="#fff" stroke="#94a3b8"/><text x="90" y="211" fill="#64748b">If Body</text>
+<rect x="250" y="180" width="100" height="46" fill="#fff" stroke="#334155"/><text x="300" y="199">Nested If</text><text x="300" y="215">Body</text>
+<rect x="380" y="180" width="110" height="46" fill="#fff" stroke="#334155"/><text x="435" y="199">Nested Else</text><text x="435" y="215">Body</text>
+<rect x="35" y="280" width="110" height="44" fill="#ecfdf5" stroke="#334155"/><text x="90" y="298">Statement just</text><text x="90" y="314">below if</text>
+<ellipse cx="90" cy="392" rx="50" ry="18" fill="#e0f2fe" stroke="#334155"/><text x="90" y="397">Exit</text>
+<g stroke="#334155" fill="none"><path d="M90 42 V66" marker-end="url(#arF43)"/><path d="M90 138 V182" marker-end="url(#arF43)"/><path d="M160 104 H226" marker-end="url(#arF43)"/><path d="M300 138 V176" marker-end="url(#arF43)"/><path d="M370 104 H435 V176" marker-end="url(#arF43)"/>
+<path d="M90 226 V276" marker-end="url(#arF43)"/><path d="M300 226 V252"/><path d="M435 226 V252 H94" marker-end="url(#arF43)"/><path d="M90 324 V370" marker-end="url(#arF43)"/></g>
+<g font-size="12" fill="#475569"><text x="194" y="96">False</text><text x="70" y="160">True</text><text x="280" y="160">True</text><text x="452" y="150">False</text></g>
+</svg>
+endsvg

@@ -1,0 +1,25 @@
+@printed 54
+@status lesson
+### (c) cout آبجیکٹ || (c) The cout object || (c) cout شی (object)
+p C++ پروگرام میں آؤٹ پُٹ حاصل کرنے کے لیے cout کا استعمال کیا جاتا ہے۔ اسے سی آؤٹ پڑھا جاتا ہے اور اس کا مطلب ہے کنسول آؤٹ پُٹ۔ اس کو << (Insertion Operator) کے ساتھ استعمال کیا جاتا ہے، جسے ڈبل اینگل بریکٹ بھی کہا جاتا ہے جیسا کہ شکل نمبر 1.3 میں دکھایا گیا ہے۔ واضح رہے کہ cout<< کو استعمال کرنے کے لیے ہمیں پروگرام میں ہیڈر فائل iostream کو using namespace std; کے ساتھ لازمی طور پر کوڈ کی پہلی لائن کے طور پر شامل کرنا پڑتا ہے۔ || In a C++ program cout is used to produce output. It is read "see-out" and means console output. It is used with << (the insertion operator), also called the double angle bracket, as shown in Figure 1.3. Note that to use cout<< we must include the header file iostream, together with using namespace std;, at the top of the code. || په C++ پروګرام کې د output لپاره cout کارېږي. "سي اوټ" لوستل کېږي او مانا یې د کنسول output ده. د << (Insertion Operator) سره کارېږي چې دوه ګونی زاویه ییز قوس هم بلل کېږي، لکه څنګه چې په ۱.۳ شکل کې ښودل شوي. پام وکړئ چې د cout<< د کارولو لپاره باید iostream هېډر فایل د using namespace std; سره د کوډ په سر کې شامل کړو.
+@issue The text refers to "شکل نمبر 1.3", but the cout diagram is Figure 3.1 on this page.
+p اس کا سائنٹکس یہ ہے: || Its syntax is: || ترکیب یې دا دی:
+m cout<<Variable/Constant/Expression;
+p جبکہ || where || چېرته چې
+- Variable: کوئی بھی ویری ایبل ہو سکتا ہے جس کی قیمت اسکرین پر دکھانا مقصود ہو۔ || Variable: any variable whose value is to be shown on the screen. || Variable: هر متغیر کېدای شي چې ارزښت یې په سکرین ښودل غوښتل کېږي.
+- Constant: مستقل یا کانسٹنٹ کی قیمت بھی اسکرین پر پرنٹ کی جا سکتی ہے۔ || Constant: the value of a constant can also be printed on the screen. || Constant: د ثابت ارزښت هم په سکرین چاپېدای شي.
+- Expression: ریاضی کی کسی عبارت سے حاصل شدہ نتیجہ کو بھی اسکرین پر پرنٹ کیا جا سکتا ہے۔ || Expression: the result obtained from an arithmetic expression can also be printed on the screen. || Expression: د ریاضي عبارت پایله هم په سکرین چاپېدای شي.
+p پروگرام میں ڈبل اینگل بریکٹ کے بعد لکھا ہوا پیغام بطور آؤٹ پُٹ کے ظاہر ہو گا۔ مثال کے طور پر: || The message written after the double angle bracket in the program appears as output. For example: || په پروګرام کې له دوه ګوني زاویه ییز قوس وروسته لیکل شوی پیغام د output په توګه ښکاري. د بېلګې په توګه:
+m cout<<"I love my country";
+p مذکورہ بالا لائن اسکرین پر I love my country دکھائے گی۔ سٹرنگ کانسٹنٹ ہمیشہ دوہرے کاموں میں بند ہوتا ہے۔ || The line above will show I love my country on the screen. A string constant is always enclosed in double quotes. || پورتنۍ کرښه به په سکرین I love my country وښيي. سټرنګ ثابت تل په دوه ګونو نښو کې تړل کېږي.
+svg شکل نمبر 3.1 cout آبجیکٹ || Figure 3.1 The cout object || ۳.۱ شکل cout شی
+<svg viewBox="0 0 480 220" width="480" role="img" aria-label="A variable box flows by arrows to the insertion operator box (&lt;&lt;), then to the object box cout, and an arrow rises from cout up to a monitor screen" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+<defs><marker id="arF31" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<rect x="20" y="10" width="120" height="80" rx="4" fill="#fff" stroke="#111827" stroke-width="4"/><path d="M80 90 V102 M50 106 H110" stroke="#111827" stroke-width="3"/>
+<g font-size="12" fill="#c2410c"><text x="130" y="150">Object</text><text x="250" y="136">Insertion</text><text x="250" y="150">Operator</text><text x="390" y="150">Variable</text></g>
+<g fill="#fff" stroke="#ea580c"><rect x="90" y="158" width="80" height="40"/><rect x="215" y="158" width="70" height="40"/><rect x="340" y="158" width="100" height="40"/></g>
+<g font-size="18"><text x="130" y="185">cout</text><text x="250" y="185">&lt;&lt;</text><text x="390" y="185">variable</text></g>
+<path d="M338 178 H292 M213 178 H176" stroke="#1d4ed8" stroke-width="5" marker-end="url(#arF31)"/>
+<path d="M88 178 H60 V116" stroke="#1d4ed8" stroke-width="5" fill="none" marker-end="url(#arF31)"/>
+</svg>
+endsvg

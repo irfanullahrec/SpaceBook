@@ -1,0 +1,197 @@
+{
+  "assignment": "All Class 10 non-Mathematics textbooks; assignment.txt contains full user instructions",
+  "complete": true,
+  "currentSubject": null,
+  "sourcePdf": null,
+  "currentBook": "D:/SpaceBook/Books/10th/10th Chemistry/PDF/Doc1.pdf + 2..8.pdf (219 scan pages)",
+  "lastFullyVerifiedPdfPage": null,
+  "nextPdfPage": null,
+  "nextAction": "Physics 10 Units 13-18 DONE (physics_10_book_data.js ?v=20261013_p10d). Chemistry 10 DONE 2026-10-13: chem/pages p000-p218 (219/219 scans, Units 9-16 + MCQ key + glossary + index + back cover), wired chemistry_10_book_data.js ?v=20261013_c10b, reader_check all ok. Missing printed pages recorded: 12, 39, 64-65, 90, 107. Sideways two-page spreads: p203 (206-207), p204 (208-209), p208-p210 (213-218). Book-key vs text conflicts flagged in @issue: Unit 9 Q5/Q7, Unit 12 Q7/Q8/Q10, Unit 15 Q3/Q4/Q7. No Class 10 books remain (Mathematics, Biology skipped per user). Smoke: 31 FAILs, none Class 10 (handleGlobalSearch crash + Class 1/2/3/4/12).",
+  "remaining": "Urdu, Pakistan Studies and Computer Science done 2026-10-12 and wired (CLS10_BOOKS via cls6_book_reader.js). Computer Science: 218/218 PDF pages (6 duplicate scans; printed 18-19 missing; answer key Ch6 Q1(v) wrong). 2026-10-12 user: skip Mathematics, Physics, Biology; complete all remaining Class 10 books. General Science 10 DONE 2026-10-12: 200/200 PDF pages; printed index pp196-197 missing from scan; glossary rendered; Fig numbering gaps 9.14, 10.10, 10.14; MCQ answers given (no printed key). Drawing 10 DONE 2026-10-12: 119/119 PDF pages. HPE 10 DONE 2026-10-12: 160/160 PDF pages; PDF71 duplicate of printed 63; printed 65 missing; no answer key (model answers from text). Remaining: Islamiat Ikhtiari, Mutalia-e-Quran. Islamiat Ikhtiari DONE 2026-10-13. Mutalia-e-Quran DONE 2026-10-13. No Class 10 books remain (Mathematics, Physics, Biology skipped per user).",
+  "progressCounts": {
+    "correctedPages": 935,
+    "verifiedUnchangedPages": 59,
+    "excludedWholePages": 8,
+    "unresolvedItems": 21,
+    "unreviewedPdfPages": 2256
+  },
+  "completedBooks": [
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics1.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics2.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics3.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics4.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics6.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th physics\\pdf\\10thphysics7.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\2.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\3.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\4.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\4.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\5.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\6.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\7.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\8.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th Chemistry\\PDF\\Doc1.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10 urdu\\pdf\\10th urdu1.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10 urdu\\pdf\\10th urdu2.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10 urdu\\pdf\\10th urdu3.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10 urdu\\pdf\\10th urdu4.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th pakstudy\\pdf\\10th pakstudy1.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th pakstudy\\pdf\\10th pakstudy2.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th pakstudy\\pdf\\10th pakstudy3.pdf",
+    "D:\\SpaceBook\\Books\\10th\\10th pakstudy\\pdf\\10thpakstudy4.pdf",
+    "D:/SpaceBook/Books/10th/10th General Science/PDF/General Science 10th book EM.pdf",
+    "D:/SpaceBook/Books/10th/10th  Drawing/PDF/Drawing book 10th EM KPK.pdf",
+    "D:/SpaceBook/Books/10th/10th HPE/PDF/HPE book UM 10th class KPK.pdf",
+    "D:\\SpaceBook\\Books\bth\bth Ismaiat Ikhtiari\\PDF\\Islamiat Elective book 10th kpk.pdf",
+    "D:/SpaceBook/Books/10th/10th M Q/PDF/Mutlia_e_Quran_Book_KPK_10.pdf"
+  ],
+  "validation": "Visible source including enlarged144 crop compared. Focused actual tokenizer/reader checks passed:45 source paragraphs/dialogue turns,19 glossary rows,7 comprehension/6 full MCQs,full writing/speaking instructions,20 grammar prompts,2 rebuilt native SVGs;paired translations. No browser.",
+  "implementation": "Class 10 Biology: js/biology_10_reader.js (wraps renderScienceLessonSubContent for bio/cls10 owned units), js/biology_10_front_source.js (cover/title/contents), js/biology_10_unit<NN>_source.js per unit; wired in index.html under the shared lock via docs/source-verification/class-10/biology_tools.py; checks via biology_check.cjs.",
+  "currentChapter": "Biology complete",
+  "lastVisuallyInspectedPdfPage": 156,
+  "benchmark": {
+    "lastBatch": {
+      "book": "10 english6.pdf",
+      "firstPdfPage": 1,
+      "lastPdfPage": 9,
+      "startedUTC": "2026-10-11T20:35:44.036Z",
+      "endedUTC": "2026-10-11T20:42:25.077Z",
+      "elapsedSeconds": 401,
+      "sourceComparedPages": 9,
+      "fullyVerifiedPages": 8,
+      "unresolvedSourcePages": 1,
+      "pagesPerHour": 71.8,
+      "method": "Elapsed from saved start of continuation; source comparison,repair,translation and focused reader checks. Missing printed151 recorded separately."
+    }
+  },
+  "sourceIssues": [
+    {
+      "subject": "English",
+      "pdfPage": 60,
+      "issue": "Two cropped line continuations in both available scans"
+    },
+    {
+      "subject": "English",
+      "pdfPage": 88,
+      "printedPage": 81,
+      "issue": "Middle sentence of speaking prompt washed out/clipped in master and 10 english3.pdf p28",
+      "evidence": [
+        "tmp/class-10-english/english-088.png",
+        "tmp/class-10-english/english3-28.png",
+        "tmp/class-10-english/review-crop-88.png"
+      ]
+    },
+    {
+      "subject": "English",
+      "pdfPage": 92,
+      "printedPage": 85,
+      "issue": "Learning-outcome subheading immediately before ask-and-express bullet is faded",
+      "evidence": [
+        "tmp/class-10-english/english-092.png",
+        "tmp/class-10-english/review-crop-92.png"
+      ]
+    },
+    {
+      "subject": "Physics",
+      "pdf": "10thphysics5.pdf",
+      "pdfPage": 13,
+      "issue": "MCQ option D unreadable"
+    },
+    {
+      "subject": "English",
+      "pdfPage": 102,
+      "printedPage": 95,
+      "issue": "Word before pressure clipped in master and 10 english4.pdf p12; […] retained without guessing.",
+      "evidence": [
+        "tmp/class-10-english/english-102.png",
+        "tmp/class-10-english/english4-12.png"
+      ]
+    },
+    {
+      "subject": "English",
+      "pdfPage": 155,
+      "printedPage": 148,
+      "issue": "Two SLO continuations faded in master155 and split5p35; explicit […] markers retained.",
+      "evidence": [
+        "tmp/class-10-english/review-crop-155.png"
+      ]
+    },
+    {
+      "subject": "English",
+      "pdf": "10 english6.pdf",
+      "printedPage": 151,
+      "issue": "Printed page151 absent: local split6 jumps from150 to152; complete PDF ends149. Unknown missing text and table headings cannot be reconstructed."
+    },
+    {
+      "subject": "English",
+      "pdf": "10 english6.pdf",
+      "pdfPage": 9,
+      "printedPage": "back cover",
+      "issue": "Publisher name and road address partly obscured by reflected light; enlarged crop inspected and explicit […] retained.",
+      "evidence": [
+        "tmp/class-10-english/back-imprint-crop.png"
+      ]
+    }
+  ],
+  "lastReviewBatch": {
+    "fullyVerifiedPages": [
+      82,
+      83
+    ],
+    "pendingPages": []
+  },
+  "updatedAt": "2026-10-13T08:00:00",
+  "userInstructionUpdate": "2026-10-12: User re-issued Class 10 instructions with BIOLOGY FIRST; after Biology continue Physics, Chemistry, Statistics, English, Urdu, Pakistan Studies, Computer Science, Civics, Economics, General Science, Drawing, HPE, Islamiat Compulsory, Islamiat Ikhtiari, Islamic History, Mutalia-e-Quran, then remaining. Mathematics excluded. No browser testing. English review (pending Unit 7 page 77 repair) and Urdu/other subjects resume after Biology.",
+  "biologyProgress": {
+    "inspectedPages": 197,
+    "correctedPages": 189,
+    "verifiedUnchangedPages": 0,
+    "excludedPages": 8,
+    "unresolvedItems": [
+      {
+        "pdfPage": 13,
+        "issue": "Printed pages 11-12 (pneumonia continuation and any following disorders, e.g. asthma and lung cancer named in the SLOs) are absent from the PDF and from all 197 JPGs (JPGs matched page-for-page to the PDF by thumbnail difference). Text ends with an explicit […] marker and an editorial source note; nothing reconstructed."
+      },
+      {
+        "pdfPage": 107,
+        "issue": "Fig.15.9: genotype labels of three cells in the second Punnett row are hidden by a dark band in both PDF and JPG; shown as [obscured], phenotypes below them are legible and reproduced."
+      },
+      {
+        "pdfPage": 116,
+        "issue": "Unit 15: heading of the side box beside Fig.15.10 is not legible in the scan; shown as [box heading not legible in the scan]; box text reproduced."
+      }
+    ],
+    "remainingPdfPages": 0,
+    "status": "reviewed-with-unresolved",
+    "lastFullyVerifiedPdfPage": 197,
+    "nextPdfPage": null,
+    "complete": true,
+    "summary": "All 197 PDF pages handled: 189 corrected, 8 excluded duplicates (PDF 174-181 rescan printed 165-172). Units 10-18, front matter, glossary, index, authors page implemented in js/biology_10_*_source.js + js/biology_10_back_source.js."
+  },
+  "diskNote": "2026-10-12: D: drive filled to 0 bytes during Biology work. Rendered evidence PNGs for verified PDF pages 1-79 were deleted (regenerable with biology_tools.py render N M). Set BIO_RENDER_DIR to a C: scratch folder for new renders and delete them after use.",
+  "urduProgress": {
+    "complete": true,
+    "record": "urdu-pages.json",
+    "missingPrintedPages": [
+      7,
+      64,
+      73,
+      102,
+      106,
+      107,
+      113,
+      116,
+      165
+    ]
+  },
+  "pakstudyProgress": {
+    "complete": true,
+    "record": "pakstudy-pages.json",
+    "missingPrintedPages": [
+      16,
+      97,
+      98,
+      122
+    ]
+  }
+}

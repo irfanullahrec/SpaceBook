@@ -1,0 +1,50 @@
+@printed 173
+@status lesson
+p امتحان کی ڈیٹ شیٹ بنانے کے لئے شکل نمبر 7.52 میں HTML ڈاکومنٹ دکھایا گیا ہے۔ اس ٹیبل میں 5 قطاریں اور 4 کالم ہیں۔ || Figure 7.52 shows an HTML document for making an examination date sheet. This table has 5 rows and 4 columns. || د ازموینې د نېټو پاڼې (date sheet) جوړولو لپاره په ۷.۵۲ شکل کې HTML سند ښودل شوی. دا جدول 5 کرښې او 4 ستنې لري.
+### شکل نمبر 7.52 ٹیبل بنانے کے لئے HTML ڈاکومنٹ || Figure 7.52 HTML document for making a table || ۷.۵۲ شکل د جدول جوړولو لپاره HTML سند
+m <html>
+m <head>
+m <title>Date Sheet</title>
+m </head>
+m <body>
+m <table border=1 cellspacing=3 cellpadding=8>
+m <tr>
+m <td colspan=4 align=center>
+m <b>FINAL EXAMINATIONS</b></td>
+m </tr>
+m <tr>
+m <td>S.No.</td>
+m <td>Date</td>
+m <td>Class X</td>
+m </tr>
+m <tr>
+m <td>1</td>
+m <td>05-04-2014</td>
+m <td>Maths</td>
+m </tr>
+m <tr>
+m <td>2</td>
+m <td>06-04-2014</td>
+m <td>Computer</td>
+m </tr>
+m <tr>
+m <td>3</td>
+m <td>07-04-2014</td>
+m <td>Chemistry</td>
+m </tr>
+m <tr>
+m <td>4</td>
+m <td>08-04-2014</td>
+m <td>Urdu</td>
+m </tr>
+m </table>
+m </body>
+m </html>
+@issue Figure 7.52 is almost unreadable in the scan: the table code is reconstructed from the visible fragments (dates, subjects, "FINAL EXAMINATIONS") and the explanation on this page. The dates and subjects are confirmed by the finished table in Figure 7.53 (05-04-2014 to 08-04-2014; Maths, Computer, Chemistry, Urdu). The text says the table has 5 rows and 4 columns, but the code shown has 6 rows (title + header + 4 subjects) and 3 data columns; colspan=4 on the title row does not match.
+p شکل نمبر 7.52 کے HTML ڈاکومنٹ میں دکھایا گیا درج ذیل ٹیگ: || The following tag shown in the HTML document of Figure 7.52: || د ۷.۵۲ شکل په HTML سند کې ښودل شوی لاندې ټیګ:
+m <table border=1 cellspacing=3 cellpadding=8>
+p براؤزر کو یہ بتائے گا کہ ایک ٹیبل بارڈر کے ساتھ اور جس کی سیل سپیسنگ (Cell Spacing) 3 پکسلز اور سیل پیڈنگ (Cell Padding) 8 پکسلز کی ہو، ونڈو میں دکھایا جائے۔ سیل سپیسنگ سیل کے درمیان کا فاصلہ اور سیل پیڈنگ سیل کے اندر موجود ٹیکسٹ کا سیل کے بارڈر سے فاصلہ ہے۔ پہلی قطار کے لیے کوڈ، جس میں ٹائٹل لکھا ہوتا ہے، یہ ہے: || tells the browser to show in the window a table with a border, a cell spacing of 3 pixels and a cell padding of 8 pixels. Cell spacing is the distance between cells, and cell padding is the distance between the text inside a cell and the cell's border. The code for the first row, which holds the title, is: || براوزر ته ښيي چې په کړکۍ کې یو جدول د پولې سره وښيي چې د حجرو ترمنځ واټن (Cell Spacing) یې 3 پکسله او د حجرې دننه تشه (Cell Padding) یې 8 پکسله وي. Cell spacing د حجرو ترمنځ واټن او cell padding د حجرې دننه د متن او د حجرې پولې ترمنځ واټن دی. د لومړۍ کرښې کوډ، چې سرلیک پکې لیکل کېږي، دا دی:
+m <tr>
+m     <td colspan=4 align=center>
+m     <b>FINAL EXAMINATIONS</b></td>
+m </tr>

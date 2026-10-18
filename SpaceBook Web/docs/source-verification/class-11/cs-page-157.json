@@ -1,0 +1,141 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s157-p148",
+  "title": "b. Ring Topology; Figure 5.24; advantages and disadvantages — start",
+  "headingUrdu": "ب۔ رنگ ٹوپولوجی؛ شکل ۵.۲۴؛ فوائد اور نقصانات — آغاز",
+  "headingPashto": "ب. حلقه توپولوژي؛ انځور ۵.۲۴؛ ګټې او زیانونه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 157,
+    "printedPage": "148"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s157-h1",
+      "en": "b. Ring Topology",
+      "ur": "ب۔ رنگ ٹوپولوجی",
+      "ps": "ب. حلقه توپولوژي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s157-a",
+      "en": "In a ring topology, every node is logically connected to two other preceding and succeeding nodes, forming a ring. Traffic flows through the entire ring until it reaches its destination.",
+      "ur": "رنگ ٹوپولوجی میں ہر نوڈ منطقی طور پر دو دوسرے پچھلے اور اگلے نوڈز سے جڑا ہوتا ہے اور اس طرح ایک حلقہ بن جاتا ہے۔ ٹریفک پورے حلقے میں اس وقت تک بہتی ہے جب تک وہ اپنی منزل تک نہ پہنچ جائے۔",
+      "ps": "په حلقه توپولوژۍ کې هره غوټه منطقي توګه له دوو نورو مخکینیو او وروستیو غوټو سره وصل وي او حلقه جوړوي. ترافیک په ټوله حلقه کې بهېږي تر څو منزل ته ورسېږي."
+    },
+    {
+      "id": "cs11-s157-b",
+      "en": "Data packets travel in a single direction around the ring from one network device to the next. Each network device acts as a repeater, meaning it regenerates the signal the packets they receive and then send them on to the next computer in the ring.",
+      "ur": "ڈیٹا پیکٹس حلقے کے گرد ایک ہی سمت میں ایک نیٹ ورک آلے سے اگلے تک سفر کرتے ہیں۔ ہر نیٹ ورک آلہ ریپیٹر کا کام کرتا ہے، یعنی وہ جو پیکٹس وصول کرتا ہے ان کے اشارے کو دوبارہ پیدا کرتا ہے اور پھر انہیں حلقے میں اگلے کمپیوٹر کو بھیج دیتا ہے۔",
+      "ps": "د ډېټا کڅوړې د حلقې شاوخوا په یوه لوري کې له یوې شبکې وسیلې نه بلې ته سفر کوي. هره شبکې وسیله د ریپیټر په توګه کار کوي، یعنې هغه سیګنال بیا جوړوي چې کڅوړې یې ترلاسه کوي او بیا هغه د حلقې بل کمپیوټر ته لېږي."
+    },
+    {
+      "id": "cs11-s157-h2",
+      "en": "Advantages of Ring Topology",
+      "ur": "رنگ ٹوپولوجی کے فوائد",
+      "ps": "د حلقه توپولوژۍ ګټې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s157-a1",
+      "en": "Even when the load on the network increases, its performance is better than that of Bus topology.",
+      "ur": "نیٹ ورک پر بوجھ بڑھنے پر بھی اس کی کارکردگی بس ٹوپولوجی سے بہتر رہتی ہے۔",
+      "ps": "حتی کله چې په شبکه بار زیات شي، فعالیت یې د بس توپولوژۍ نه ښه وي.",
+      "listGroup": "rg_adv"
+    },
+    {
+      "id": "cs11-s157-a2",
+      "en": "There is no need for network server to control the connectivity between workstations.",
+      "ur": "ورک اسٹیشنز کے درمیان کنیکٹیویٹی کو کنٹرول کرنے کے لیے نیٹ ورک سرور کی ضرورت نہیں۔",
+      "ps": "د کاري ایستګاوو ترمنځ د نښلولو د کنټرول لپاره د شبکې خدمتګار ته اړتیا نشته.",
+      "listGroup": "rg_adv"
+    },
+    {
+      "id": "cs11-s157-a3",
+      "en": "Additional components do not affect the performance of network.",
+      "ur": "اضافی اجزاء نیٹ ورک کی کارکردگی کو متاثر نہیں کرتے۔",
+      "ps": "اضافي اجزا د شبکې فعالیت نه اغېزمنوي.",
+      "listGroup": "rg_adv"
+    },
+    {
+      "id": "cs11-s157-a4",
+      "en": "Each computer has equal access to resources.",
+      "ur": "ہر کمپیوٹر کو وسائل تک یکساں رسائی حاصل ہے۔",
+      "ps": "هر کمپیوټر سرچینو ته مساوي لاسرسی لري.",
+      "listGroup": "rg_adv"
+    },
+    {
+      "id": "cs11-s157-h3",
+      "en": "Disadvantages of Ring Topology",
+      "ur": "رنگ ٹوپولوجی کے نقصانات",
+      "ps": "د حلقه توپولوژۍ زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s157-d1",
+      "en": "Each packet of data must pass through all the computers between source and destination. This makes it slower than Star topology.",
+      "ur": "ڈیٹا کے ہر پیکٹ کو ماخذ اور منزل کے درمیان تمام کمپیوٹرز سے گزرنا پڑتا ہے۔ اس سے یہ اسٹار ٹوپولوجی سے سست ہو جاتی ہے۔",
+      "ps": "د ډېټا هره کڅوړه باید د سرچینې او منزل ترمنځ له ټولو کمپیوټرونو تېره شي. دا یې د ستورې توپولوژۍ نه ورو کوي.",
+      "listGroup": "rg_dis"
+    },
+    {
+      "id": "cs11-s157-d2",
+      "en": "If one workstation or port goes down, the entire network gets affected.",
+      "ur": "اگر ایک ورک اسٹیشن یا پورٹ خراب ہو جائے تو پورا نیٹ ورک متاثر ہوتا ہے۔",
+      "ps": "که یوه کاري ایستګاه یا پورټ ودرېږي نو ټوله شبکه اغېزمنېږي.",
+      "listGroup": "rg_dis"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s157-h1",
+        "cs11-s157-a",
+        "cs11-s157-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s157-h2",
+        "cs11-s157-a1",
+        "cs11-s157-a2",
+        "cs11-s157-a3",
+        "cs11-s157-a4",
+        "cs11-s157-h3",
+        "cs11-s157-d1",
+        "cs11-s157-d2"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" role=\"img\" aria-label=\"Ring topology: three computers joined in a ring\" style=\"width:100%;max-width:400px;height:auto;background:#fff\"><text x=\"250\" y=\"25\" font-size=\"18\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Ring Topology</text><line x1=\"90\" y1=\"45\" x2=\"160\" y2=\"45\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"100\" x2=\"45\" y2=\"60\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"60\" x2=\"285\" y2=\"95\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"125\" x2=\"285\" y2=\"125\" stroke=\"#d9541e\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"20\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"34\" y=\"56\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"160\" y=\"20\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"154\" y=\"56\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"70\" y=\"100\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"64\" y=\"136\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/><rect x=\"280\" y=\"80\" width=\"50\" height=\"34\" fill=\"#7a7ad6\" stroke=\"#111\"/><rect x=\"274\" y=\"116\" width=\"62\" height=\"8\" fill=\"#999\" stroke=\"#111\"/></svg>",
+      "id": "cs11-s157-fig1",
+      "caption": "Figure 5.24 Ring Topology",
+      "captionUrdu": "شکل ۵.۲۴ رنگ ٹوپولوجی",
+      "captionPashto": "انځور ۵.۲۴ حلقه توپولوژي",
+      "labels": [
+        {
+          "en": "Ring Topology",
+          "ur": "رنگ ٹوپولوجی",
+          "ps": "حلقه توپولوژي"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 148: “b. Ring Topology” with two paragraphs, Figure 5.24 Ring Topology (three computers joined by lines, titled “Ring Topology”; redrawn as coded SVG), the advantages of a ring topology (four bullets) and the first two disadvantages (the list continues on the next page). Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:19:16.916479+00:00",
+    "scope": "Scan 157 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

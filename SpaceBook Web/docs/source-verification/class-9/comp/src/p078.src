@@ -1,0 +1,33 @@
+@printed 70
+@status lesson
+### *getchar()* || *getchar()* || *getchar()*
+p The *getchar()* function is used to read a single character from keyboard. *getchar()* function requires pressing the Enter key after entering a character. || *getchar()* فنکشن کی بورڈ سے ایک حرف پڑھنے کے لیے استعمال ہوتا ہے۔ *getchar()* میں حرف لکھنے کے بعد Enter کلید دبانا ضروری ہے۔ || *getchar()* فنکشن له کیبورډ یو توری لوستلو لپاره کارېږي. *getchar()* د توري له لیکلو وروسته Enter کیلي کېښکېلو ته اړتیا لري.
+### Program 3.8 || پروگرام 3.8 || پروګرام ۳.۸
+m #include<stdio.h>
+m #include<conio.h>
+m void main()
+m {
+m     char ch;
+m     printf( " Enter Char: ");
+m     ch= getchar();
+m     printf("\n");
+m     putchar(ch);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter Char: h
+m h
+endbox
+### *gets()* function || *gets()* فنکشن || *gets()* فنکشن
+p The *gets()* function is used to read and store a line of string into a character array. The *gets()* function reads a line of string or sequence of characters until user presses Enter key. It has the following general format: || *gets()* فنکشن اسٹرنگ کی ایک سطر پڑھ کر کریکٹر ارے میں محفوظ کرنے کے لیے استعمال ہوتا ہے۔ *gets()* اسٹرنگ کی سطر یا حروف کا سلسلہ اس وقت تک پڑھتا ہے جب تک صارف Enter کلید نہ دبائے۔ اس کی عمومی صورت یہ ہے: || *gets()* فنکشن د string یوه کرښه لولي او په character array کې یې ساتي. *gets()* د string کرښه یا د تورو لړۍ تر هغه لولي چې کاروونکی Enter کیلي کېښکاږي. عمومي بڼه یې دا ده:
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m gets(Array_Name);
+### Program 3.9 || پروگرام 3.9 || پروګرام ۳.۹
+m #include<stdio.h>
+m void main()
+m {
+m     char name[20];        // Here [20] specifies the size of the string
+m     printf("Enter your Name:  ");
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter your Name: Muhammad Khalid
+m Muhammad Khalid
+endbox

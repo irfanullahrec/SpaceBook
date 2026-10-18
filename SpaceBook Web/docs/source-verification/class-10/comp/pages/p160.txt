@@ -1,0 +1,26 @@
+@printed 148
+@status lesson
+@sec 7-2-3 | 7.2.3 HTML ٹیگس کا استعمال || 7.2.3 Using HTML tags || ۷.۲.۳ د HTML ټیګونو کارونه
+### 7.2.3 HTML ٹیگس کا استعمال || 7.2.3 Using HTML tags || ۷.۲.۳ د HTML ټیګونو کارونه
+p HTML ٹیگز کلیدی الفاظ (Keywords) کی طرح ہیں جو اس بات کی وضاحت کرتے ہیں کہ ویب براؤزر کس طرح مواد کو فارمیٹ اور ظاہر کرے گا۔ ٹیگز کی مدد سے، ایک ویب براؤزر HTML مواد اور ایک سادہ مواد میں فرق کر سکتا ہے۔ HTML ٹیگ مختلف کام انجام دیتا ہے۔ || HTML tags are like keywords that define how a web browser will format and display content. With tags, a web browser can tell HTML content apart from plain content. HTML tags do different jobs. || HTML ټیګونه د کلیدي کلمو (Keywords) په څېر دي چې ټاکي ویب براوزر به مواد څنګه فارمېټ او ښکاره کړي. د ټیګونو په مرسته ویب براوزر کولای شي د HTML مواد له ساده موادو توپیر کړي. HTML ټیګونه بېلابېل کارونه ترسره کوي.
+p HTML ٹیگز دو زاویہ بریکٹ < اور > سے گھرا ہوتا ہے۔ زیادہ تر ٹیگز کے دو حصے ہوتے ہیں، اوپننگ اور کلوزنگ حصہ۔ مثال کے طور پر، <html> افتتاحی ٹیگ ہے اور </html> کلوزنگ ٹیگ ہے۔ نوٹ کریں کہ اختتامی ٹیگ ابتدائی ٹیگ کی طرح ہی ہے، لیکن اس میں ایک اضافی فارورڈ سلیش (/) ہوتی ہے۔ ان دونوں ٹیگز کے درمیان ٹیکسٹ مواد (content) کے نام سے جانا جاتا ہے جیسا کہ شکل 7.16 میں دکھایا گیا ہے۔ پہلا ٹیگ اسٹارٹ ٹیگ ہے اور دوسرا ٹیگ سٹاپ ٹیگ ہے۔ HTML ٹیگ انگریزی کے چھوٹے اور بڑے دونوں حروف میں لکھا جا سکتا ہے۔ اس پورے یونٹ میں انگریزی کے چھوٹے حروف استعمال کیے جائیں گے۔ کچھ ٹیگز میں کچھ اضافی خصوصیات بھی ہوتی ہیں۔ یہ اوصاف عام طور پر ابتدائی ٹیگ کے اندر لکھے جاتے ہیں۔ || An HTML tag is enclosed in the two angle brackets < and >. Most tags have two parts, an opening and a closing part. For example, <html> is the opening tag and </html> is the closing tag. Note that the closing tag is the same as the opening tag but has an extra forward slash (/). The text between the two tags is known as the content, as shown in Figure 7.16. The first tag is the start tag and the second is the stop tag. HTML tags can be written in both lower-case and upper-case English letters; in this whole unit lower-case letters are used. Some tags also have extra properties (attributes); these are usually written inside the opening tag. || HTML ټیګ د دوو زاویه لرونکو قوسونو < او > په منځ کې وي. ډېری ټیګونه دوه برخې لري: پرانیستونکې او تړونکې. د بېلګې په توګه، <html> پرانیستونکی او </html> تړونکی ټیګ دی. پام وکړئ چې تړونکی ټیګ د پرانیستونکي په څېر دی خو یو اضافي مخکینی سلیش (/) لري. د دې دوو ټیګونو ترمنځ متن مواد (content) بلل کېږي، لکه څنګه چې په ۷.۱۶ شکل کې ښودل شوي. لومړی ټیګ پیل ټیګ او دویم یې بندولو ټیګ دی. HTML ټیګونه په انګرېزي واړو او لویو دواړو تورو لیکل کېدای شي؛ په دې ټول څپرکي کې واړه توري کارېږي. ځینې ټیګونه اضافي ځانګړتیاوې (attributes) هم لري چې معمولاً د پرانیستونکي ټیګ دننه لیکل کېږي.
+svg شکل نمبر 7.16 ٹیگز کھولنا اور بند کرنا || Figure 7.16 Opening and closing tags || ۷.۱۶ شکل د ټیګونو پرانیستل او تړل
+<svg viewBox="0 0 440 210" width="440" role="img" aria-label="The element &lt;p&gt;This is text area&lt;/p&gt;: a bracket labelled Element spans the whole line, a bracket labelled Content spans 'This is text area', and the &lt;p&gt; and &lt;/p&gt; tags are labelled Opening tag and Closing tag" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<rect x="0" y="0" width="440" height="210" rx="6" fill="#1f1f23"/>
+<text x="220" y="34" fill="#f87171" font-size="22">Element</text>
+<path d="M60 70 V50 H380 V70" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="220" y="82" fill="#9ca3af" font-size="18">Content</text>
+<path d="M120 112 V96 H330 V112" fill="none" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="220" y="134" font-size="20" fill="#f3f4f6"><tspan fill="#f87171">&lt;p&gt;</tspan>This is text area<tspan fill="#f87171">&lt;/p&gt;</tspan></text>
+<path d="M78 144 V162 H110 V144 M330 144 V162 H372 V144" fill="none" stroke="#e5e7eb" stroke-width="1.5"/>
+<text x="100" y="192" fill="#64748b" font-size="17">Opening tag</text><text x="352" y="192" fill="#3b82f6" font-size="17">Closing tag</text>
+</svg>
+endsvg
+@sec 7-2-4 | 7.2.4 HTML ہیڈ اور باڈی ٹیگز || 7.2.4 HTML, head and body tags || ۷.۲.۴ د HTML، سر او بدنې ټیګونه
+### 7.2.4 HTML ہیڈ اور باڈی ٹیگز || 7.2.4 HTML, head and body tags || ۷.۲.۴ د HTML، سر او بدنې ټیګونه
+p پہلے HTML ڈاکومنٹ میں HTML ٹیگ کو مارک اپ کرنے کے لئے درج ذیل ٹیگز استعمال کیے گئے ہیں۔ || The following tags are used to mark up the first HTML document. || په لومړي HTML سند کې د نښه کولو لپاره لاندې ټیګونه کارول شوي.
+### <html> </html> ٹیگز || The <html> </html> tags || <html> </html> ټیګونه
+p HTML ڈاکومنٹ میں پہلا ٹیگ <html> ہے جو HTML ڈاکومنٹ کے آغاز کی نشاندہی کرتا ہے۔ آخری ٹیگ </html> ہے جو براؤزر کو بتاتا ہے کہ یہ HTML ڈاکومنٹ کا اختتام ہے۔ || The first tag in an HTML document is <html>, which marks the start of the HTML document. The last tag is </html>, which tells the browser that this is the end of the HTML document. || په HTML سند کې لومړی ټیګ <html> دی چې د HTML سند پیل ښيي. وروستی ټیګ </html> دی چې براوزر ته ښيي دا د HTML سند پای دی.
+### <head> </head> ٹیگز || The <head> </head> tags || <head> </head> ټیګونه
+p یہ ویب پیج کو عنوان دینے کے لئے استعمال ہوتا ہے۔ || It is used to give the web page a title. || دا ویب پاڼې ته د سرلیک ورکولو لپاره کارېږي.
+@issue The head section holds more than the title (meta information, styles, scripts and so on); the title itself goes in the <title> tag inside <head>.

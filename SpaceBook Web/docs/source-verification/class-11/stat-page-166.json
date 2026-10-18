@@ -1,0 +1,585 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s166-index-weighted-2",
+  "title": "Example 4.8: Laspeyre's, Paasche's and Fisher's price index numbers",
+  "headingUrdu": "مثال 4.8: لاسپیئر، پاشے اور فشر کے قیمتی اشاریہ اعداد",
+  "headingPashto": "بېلګه 4.8: د Laspeyre، Paasche او Fisher د بیې شاخص شمېرې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 166,
+    "printedPage": "158"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s166-ex48",
+      "en": "Example: 4.8",
+      "ur": "مثال: 4.8",
+      "ps": "بېلګه: 4.8",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-q48",
+      "en": "Compute Laspyre's, Passche's and Fisher's price index numbers for the following data using 1970 as base.",
+      "ur": "درج ذیل اعداد و شمار کے لیے 1970 کو بنیاد لے کر لاسپیئر، پاشے اور فشر کے قیمتی اشاریہ اعداد حساب کریں۔",
+      "ps": "د لاندې معلوماتو لپاره د 1970 د بنسټ په نیولو سره د Laspyre، Passche او Fisher د بیې شاخص شمېرې محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-sol48",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-a1",
+      "en": "As 1970 is base year therefore we denote the prices and quantities for 1970 by p0 and q0 and those for 1975 by pn and qn. The computations needed are;",
+      "ur": "چونکہ 1970 بنیادی سال ہے اس لیے ہم 1970 کی قیمتوں اور مقداروں کو p0 اور q0 اور 1975 کی قیمتوں اور مقداروں کو pn اور qn سے ظاہر کرتے ہیں۔ ضروری حسابات یہ ہیں؛",
+      "ps": "ځکه چې 1970 بنسټیز کال دی نو موږ د 1970 بیې او مقدارونه په p0 او q0 او د 1975 بیې او مقدارونه په pn او qn ښيو. اړین محاسبې دا دي؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-a2",
+      "en": "Laspeyre's price index number",
+      "ur": "لاسپیئر کا قیمتی اشاریہ عدد",
+      "ps": "د Laspeyre د بیې شاخص شمېره",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-a3",
+      "en": "Passche's price index number",
+      "ur": "پاشے کا قیمتی اشاریہ عدد",
+      "ps": "د Passche د بیې شاخص شمېره",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-a4",
+      "en": "Fisher's price index number.",
+      "ur": "فشر کا قیمتی اشاریہ عدد۔",
+      "ps": "د Fisher د بیې شاخص شمېره.",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-8",
+      "sourceGap": {
+        "note": "The working of Fisher's index continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s166-ex48",
+        "stat11-s166-q48"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s166-sol48",
+        "stat11-s166-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s166-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s166-a3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s166-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s166-l",
+      "latex": "P_{0n}=\\dfrac{\\sum p_nq_0}{\\sum p_0q_0}\\times 100=\\dfrac{9925}{9270}\\times 100=107.07",
+      "accessible": "P0n = (Σ pn q0 / Σ p0 q0) × 100 = (9925/9270) × 100 = 107.07",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100 = (9925/9270) × 100 = 107.07"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100 = (9925/9270) × 100 = 107.07"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = (Σ pn q0 / Σ p0 q0) × 100 = (9925/9270) × 100 = 107.07"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-p",
+      "latex": "P_{0n}=\\dfrac{\\sum p_nq_n}{\\sum p_0q_n}\\times 100=\\dfrac{10710}{10000}\\times 100=107.1",
+      "accessible": "P0n = (Σ pn qn / Σ p0 qn) × 100 = (10710/10000) × 100 = 107.1",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = (Σ pn qn / Σ p0 qn) × 100 = (10710/10000) × 100 = 107.1"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = (Σ pn qn / Σ p0 qn) × 100 = (10710/10000) × 100 = 107.1"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = (Σ pn qn / Σ p0 qn) × 100 = (10710/10000) × 100 = 107.1"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "id": "stat11-s166-f",
+      "latex": "P_{0n}=\\sqrt{\\dfrac{\\sum p_nq_0}{\\sum p_0q_0}\\times\\dfrac{\\sum p_nq_n}{\\sum p_0q_n}}\\times 100",
+      "accessible": "P0n = √((Σ pn q0 / Σ p0 q0) × (Σ pn qn / Σ p0 qn)) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = √((Σ pn q0 / Σ p0 q0) × (Σ pn qn / Σ p0 qn)) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = √((Σ pn q0 / Σ p0 q0) × (Σ pn qn / Σ p0 qn)) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = √((Σ pn q0 / Σ p0 q0) × (Σ pn qn / Σ p0 qn)) × 100"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-4-8"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.8: prices and quantities",
+      "captionUrdu": "مثال 4.8: قیمتیں اور مقداریں",
+      "captionPashto": "بېلګه 4.8: بیې او مقدارونه",
+      "headers": [
+        {
+          "en": "Commodity",
+          "ur": "جنس",
+          "ps": "توکی"
+        },
+        {
+          "en": "Price (Rs. per maund): 1970",
+          "ur": "قیمت (روپے فی من): 1970",
+          "ps": "بیه (روپۍ په من): 1970"
+        },
+        {
+          "en": "Price (Rs. per maund): 1975",
+          "ur": "قیمت (روپے فی من): 1975",
+          "ps": "بیه (روپۍ په من): 1975"
+        },
+        {
+          "en": "Quantities produced (maund): 1970",
+          "ur": "پیداوار کی مقدار (من): 1970",
+          "ps": "تولید شوي مقدارونه (من): 1970"
+        },
+        {
+          "en": "Quantities produced (maund): 1975",
+          "ur": "پیداوار کی مقدار (من): 1975",
+          "ps": "تولید شوي مقدارونه (من): 1975"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Maize",
+            "ur": "Maize",
+            "ps": "Maize"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "110",
+            "ur": "110",
+            "ps": "110"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          }
+        ],
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "180",
+            "ur": "180",
+            "ps": "180"
+          },
+          {
+            "en": "195",
+            "ur": "195",
+            "ps": "195"
+          }
+        ],
+        [
+          {
+            "en": "Barley",
+            "ur": "Barley",
+            "ps": "Barley"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-8"
+    },
+    {
+      "caption": "Example 4.8 solution: computations",
+      "captionUrdu": "مثال 4.8 کا حل: حسابات",
+      "captionPashto": "د بېلګې 4.8 حل: محاسبې",
+      "headers": [
+        {
+          "en": "Commodity",
+          "ur": "جنس",
+          "ps": "توکی"
+        },
+        {
+          "en": "p0",
+          "ur": "p0",
+          "ps": "p0"
+        },
+        {
+          "en": "pn",
+          "ur": "pn",
+          "ps": "pn"
+        },
+        {
+          "en": "q0",
+          "ur": "q0",
+          "ps": "q0"
+        },
+        {
+          "en": "qn",
+          "ur": "qn",
+          "ps": "qn"
+        },
+        {
+          "en": "pn q0",
+          "ur": "pn q0",
+          "ps": "pn q0"
+        },
+        {
+          "en": "p0 q0",
+          "ur": "p0 q0",
+          "ps": "p0 q0"
+        },
+        {
+          "en": "pn qn",
+          "ur": "pn qn",
+          "ps": "pn qn"
+        },
+        {
+          "en": "p0 qn",
+          "ur": "p0 qn",
+          "ps": "p0 qn"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Maize",
+            "ur": "Maize",
+            "ps": "Maize"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "110",
+            "ur": "110",
+            "ps": "110"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          },
+          {
+            "en": "1540",
+            "ur": "1540",
+            "ps": "1540"
+          },
+          {
+            "en": "1320",
+            "ur": "1320",
+            "ps": "1320"
+          },
+          {
+            "en": "1750",
+            "ur": "1750",
+            "ps": "1750"
+          },
+          {
+            "en": "1500",
+            "ur": "1500",
+            "ps": "1500"
+          }
+        ],
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "180",
+            "ur": "180",
+            "ps": "180"
+          },
+          {
+            "en": "195",
+            "ur": "195",
+            "ps": "195"
+          },
+          {
+            "en": "7560",
+            "ur": "7560",
+            "ps": "7560"
+          },
+          {
+            "en": "7200",
+            "ur": "7200",
+            "ps": "7200"
+          },
+          {
+            "en": "8190",
+            "ur": "8190",
+            "ps": "8190"
+          },
+          {
+            "en": "7800",
+            "ur": "7800",
+            "ps": "7800"
+          }
+        ],
+        [
+          {
+            "en": "Barley",
+            "ur": "Barley",
+            "ps": "Barley"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "825",
+            "ur": "825",
+            "ps": "825"
+          },
+          {
+            "en": "750",
+            "ur": "750",
+            "ps": "750"
+          },
+          {
+            "en": "770",
+            "ur": "770",
+            "ps": "770"
+          },
+          {
+            "en": "700",
+            "ur": "700",
+            "ps": "700"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "9925",
+            "ur": "9925",
+            "ps": "9925"
+          },
+          {
+            "en": "9270",
+            "ur": "9270",
+            "ps": "9270"
+          },
+          {
+            "en": "10710",
+            "ur": "10710",
+            "ps": "10710"
+          },
+          {
+            "en": "10000",
+            "ur": "10000",
+            "ps": "10000"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-8"
+    }
+  ],
+  "sourceNote": "Printed page 158. Printed spellings kept: \"Laspyre's\", \"Passche's\" in the question and in the solution labels. The two-level headers \"Price (Rs. per maund)\" and \"Quantities produced (maund)\" with years are flattened. A skin-coloured artefact at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:09:37.025428+00:00",
+    "scope": "Scan 166 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

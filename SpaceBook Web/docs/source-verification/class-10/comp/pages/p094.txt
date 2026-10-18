@@ -1,0 +1,41 @@
+@printed 82
+@status lesson
+m     statement 2;
+m     .
+m     .
+m     statement n;
+m }
+p درج ذیل فلوچارٹ if-else کے عمل کو ظاہر کرتا ہے۔ || The following flowchart shows the working of if-else. || لاندې فلوچارټ د if-else کار ښيي.
+svg شکل نمبر 4.2 if-else کا سٹرکچر || Figure 4.2 The structure of if-else || ۴.۲ شکل د if-else جوړښت
+<svg viewBox="0 0 460 250" width="460" role="img" aria-label="Flowchart: arrow into diamond 'if condition'; false branch goes left down to a box 'statement (s)', true branch goes right down to another box 'statement (s)'; both join below and continue to 'The rest of code'" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF42" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M230 4 V28" stroke="#111827" stroke-width="2" marker-end="url(#arF42)"/>
+<polygon points="230,32 330,72 230,112 130,72" fill="#fef3c7" stroke="#111827" stroke-width="2"/><text x="230" y="68">if</text><text x="230" y="88">condition</text>
+<path d="M130 72 H70 V118" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF42)"/><text x="96" y="64">false</text>
+<path d="M330 72 H390 V118" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF42)"/><text x="364" y="64">true</text>
+<rect x="10" y="122" width="120" height="44" fill="#e0f2fe" stroke="#111827" stroke-width="2"/><text x="70" y="149">statement (s)</text>
+<rect x="330" y="122" width="120" height="44" fill="#e0f2fe" stroke="#111827" stroke-width="2"/><text x="390" y="149">statement (s)</text>
+<path d="M70 166 V190 H390 V166 M230 190 V214" fill="none" stroke="#111827" stroke-width="2"/><path d="M230 200 V216" stroke="#111827" stroke-width="2" marker-end="url(#arF42)"/>
+<text x="230" y="240">The rest of code</text>
+</svg>
+endsvg
+p درج ذیل پروگرام میں if-else اسٹیٹمنٹ کے استعمال کو ظاہر کیا گیا ہے۔ || The following program shows the use of the if-else statement. || لاندې پروګرام د if-else بیان کارونه ښيي.
+### پروگرام 4.4 یہ پروگرام ایک عدد اِن پُٹ کرے گا اور یہ معلوم کرے گا کہ یہ عدد جفت (Even) ہے یا طاق (Odd)۔ || Program 4.4 This program inputs a number and finds whether it is even or odd || پروګرام ۴.۴ دا پروګرام یو عدد داخلوي او پیدا کوي چې جفت (Even) دی که طاق (Odd)
+m #include<stdio.h>
+m void main()
+m {
+m     int n;
+m     printf("Enter a number = ");
+m     scanf("%d",&n);
+m     if(n%2==0)        // % operator returns remainder after division
+m         printf("%d is even",n);
+m     else
+m         printf("%d is odd",n);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter a number = 10
+m 10 is even
+m
+m Enter a number = 17
+m 17 is odd
+endbox

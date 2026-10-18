@@ -1,0 +1,29 @@
+@printed 151
+@status lesson
+p شکل نمبر 7.19 میں HTML ڈاکومنٹ تمام سرخی والے ٹیگز کے استعمال کو ظاہر کرتی ہے۔ || The HTML document in Figure 7.19 shows the use of all the heading tags. || په ۷.۱۹ شکل کې HTML سند د ټولو سرلیک ټیګونو کارونه ښيي.
+### شکل نمبر 7.19 HTML ڈاکومنٹ میں تمام ہیڈنگ ٹیگز کا استعمال || Figure 7.19 Using all the heading tags in an HTML document || ۷.۱۹ شکل په HTML سند کې د ټولو سرلیک ټیګونو کارونه
+m <html>
+m <head>
+m   <title>Types of Headings in HTML</title>
+m </head>
+m <body>
+m   <h1>This is the largest heading h1</h1>
+m   <h2>This is heading h2</h2>
+m   <h3>This is heading h3</h3>
+m   <h4>This is heading h4</h4>
+m   <h5>This is heading h5</h5>
+m   <h6>This is the smallest heading h6</h6>
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.20 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.20. || براوزر کړکۍ به یې لکه په ۷.۲۰ شکل کې وښيي.
+box info | شکل نمبر 7.20 براؤزر ونڈو میں دکھائی جانے والی مختلف ہیڈنگز || Figure 7.20 The different headings shown in the browser window || ۷.۲۰ شکل په براوزر کړکۍ کې ښودل شوي بېلابېل سرلیکونه
+## This is the largest heading h1 || This is the largest heading h1 || This is the largest heading h1
+### This is heading h2 || This is heading h2 || This is heading h2
+p **This is heading h3** || **This is heading h3** || **This is heading h3**
+p **This is heading h4** || **This is heading h4** || **This is heading h4**
+p **This is heading h5** (smaller) || **This is heading h5** (smaller) || **This is heading h5** (کوچنی)
+p **This is the smallest heading h6** (smallest) || **This is the smallest heading h6** (smallest) || **This is the smallest heading h6** (تر ټولو کوچنی)
+endbox
+@sec 7-3-2 | 7.3.2 ٹیکسٹ فارمیٹنگ ٹیگز اور ان کا استعمال || 7.3.2 Text-formatting tags and their use || ۷.۳.۲ د متن فارمېټ ټیګونه او کارونه یې
+### 7.3.2 ٹیکسٹ فارمیٹنگ ٹیگز اور ان کا استعمال || 7.3.2 Text-formatting tags and their use || ۷.۳.۲ د متن فارمېټ ټیګونه او کارونه یې
+p HTML ہمیں ٹیکسٹ فارمیٹ کرنے کی صلاحیت فراہم کرتا ہے بالکل اسی طرح جیسے ہم ایم ایس ورڈ یا کسی بھی ٹیکسٹ ایڈیٹنگ ٹول میں کرتے ہیں۔ ٹیکسٹ فارمیٹنگ ٹیگز کو ٹیکسٹ فارمیٹ کرنے کے لئے استعمال کیا جاتا ہے۔ کچھ عام طور پر استعمال شدہ ٹیکسٹ … || HTML gives us the ability to format text, just as we do in MS Word or any text-editing tool. Text-formatting tags are used to format text. Some commonly used text … || HTML موږ ته د متن د فارمېټ کولو وړتیا راکوي، لکه څنګه چې یې په MS Word یا هر متني اډیټ وسیله کې کوو. د متن فارمېټ ټیګونه د متن د فارمېټ کولو لپاره کارېږي. ځینې عام کارېدونکي متني …

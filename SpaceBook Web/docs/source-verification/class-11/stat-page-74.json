@@ -1,0 +1,618 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s074-median-2",
+  "title": "Example 2.13 solution · 2.3.2 Discrete series or grouped data · Example 2.14",
+  "headingUrdu": "مثال 2.13 کا حل · 2.3.2 منفصل سلسلہ یا گروہی اعداد و شمار · مثال 2.14",
+  "headingPashto": "د بېلګې 2.13 حل · 2.3.2 منفصله لړۍ یا ګروپي معلومات · بېلګه 2.14",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 74,
+    "printedPage": "66"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s074-sol13",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s074-a13",
+      "en": "x = 8, 10, 11, 12, 14, 15. Here n = 6 is even, therefore",
+      "ur": "x = 8, 10, 11, 12, 14, 15۔ یہاں n = 6 جفت ہے، لہٰذا",
+      "ps": "x = 8, 10, 11, 12, 14, 15. دلته n = 6 جفت دی، نو",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s074-h232",
+      "en": "2.3.2 Computation of median in case of discrete series or grouped data",
+      "ur": "2.3.2 منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں وسطانیہ کا حساب",
+      "ps": "2.3.2 د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د میانې محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s074-si",
+      "en": "Step-i: Arrange the data in ascending order along with frequencies.",
+      "ur": "مرحلہ-i: اعداد و شمار کو تعددات کے ساتھ صعودی ترتیب میں ترتیب دیں۔",
+      "ps": "ګام-i: معلومات له فریکونسیو سره په پورته‌والي ترتیب ترتیب کړئ."
+    },
+    {
+      "id": "stat11-s074-sii",
+      "en": "Step-ii: Compute the cumulative frequencies.",
+      "ur": "مرحلہ-ii: جمعی تعددات حساب کریں۔",
+      "ps": "ګام-ii: مجموعي فریکونسۍ محاسبه کړئ."
+    },
+    {
+      "id": "stat11-s074-siii",
+      "en": "Step-iii:",
+      "ur": "مرحلہ-iii:",
+      "ps": "ګام-iii:"
+    },
+    {
+      "id": "stat11-s074-ex14",
+      "en": "Example: 2.14",
+      "ur": "مثال: 2.14",
+      "ps": "بېلګه: 2.14",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-q14",
+      "en": "During the month of March, a teacher recorded the number of absentees for each student in a class of n = 20 and obtained the following distribution:",
+      "ur": "مارچ کے مہینے کے دوران ایک استاد نے n = 20 طلبہ کی جماعت میں ہر طالب علم کی غیر حاضریوں کی تعداد ریکارڈ کی اور درج ذیل تقسیم حاصل کی:",
+      "ps": "د مارچ په میاشت کې یو ښوونکي په n = 20 زده کوونکو ټولګي کې د هر زده کوونکي د غیرحاضرو شمېر ثبت کړ او لاندې ویش یې ترلاسه کړ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-q14b",
+      "en": "Using the median, what is the average number of absentees for the class?",
+      "ur": "وسطانیہ استعمال کرتے ہوئے جماعت کی غیر حاضریوں کی اوسط تعداد کیا ہے؟",
+      "ps": "د میانې په کارولو سره د ټولګي د غیرحاضرو اوسط شمېر څه دی؟",
+      "role": "question",
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-sol14",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-a14",
+      "en": "Arrange the data along with frequencies as follows;",
+      "ur": "اعداد و شمار کو تعددات کے ساتھ اس طرح ترتیب دیں؛",
+      "ps": "معلومات له فریکونسیو سره داسې ترتیب کړئ؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-z",
+      "en": "Look this value in c.f column from the start, which shows that Median = 2",
+      "ur": "اس قدر کو c.f کالم میں شروع سے دیکھیں، جو ظاہر کرتا ہے کہ وسطانیہ = 2",
+      "ps": "دا ارزښت د c.f په ستون کې له پیله وګورئ، چې ښيي میانه = 2",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-14"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s074-sol13",
+        "stat11-s074-a13"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s074-h232",
+        "stat11-s074-si",
+        "stat11-s074-sii",
+        "stat11-s074-siii"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s074-ex14",
+        "stat11-s074-q14"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s074-q14b",
+        "stat11-s074-sol14",
+        "stat11-s074-a14"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s074-z"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s074-m1",
+      "latex": "\\text{Median}=\\dfrac{1}{2}\\left[\\left(\\dfrac{6}{2}\\right)\\text{th value}+\\left(\\dfrac{6}{2}+1\\right)\\text{in value}\\right]",
+      "accessible": "Median = (1/2)[(6/2)th value + (6/2 + 1)in value]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = (1/2)[(6/2)th value + (6/2 + 1)in value]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = (1/2)[(6/2)th value + (6/2 + 1)in value]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = (1/2)[(6/2)th value + (6/2 + 1)in value]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s074-m2",
+      "latex": "\\text{Median}=\\dfrac{1}{2}\\left[3\\text{rd value}+4\\text{th value}\\right]",
+      "accessible": "Median = (1/2)[3rd value + 4th value]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = (1/2)[3rd value + 4th value]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = (1/2)[3rd value + 4th value]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = (1/2)[3rd value + 4th value]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s074-m3",
+      "latex": "=\\dfrac{1}{2}[11+12]=\\dfrac{23}{2}=11.5",
+      "accessible": "= (1/2)[11 + 12] = 23/2 = 11.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (1/2)[11 + 12] = 23/2 = 11.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (1/2)[11 + 12] = 23/2 = 11.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (1/2)[11 + 12] = 23/2 = 11.5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-13"
+    },
+    {
+      "id": "stat11-s074-st",
+      "latex": "\\text{Median}=\\left(\\dfrac{\\sum f}{2}\\right)\\text{th value if }n=\\sum f\\text{ is even and}",
+      "accessible": "Median = (Σf/2)th value if n = Σf is even and",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = (Σf/2)th value if n = Σf is even and"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = (Σf/2)th value if n = Σf is even and"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = (Σf/2)th value if n = Σf is even and"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s074-st2",
+      "latex": "\\text{Median}=\\left(\\dfrac{\\sum f+1}{2}\\right)\\text{th value if }n=\\sum f\\text{ is odd.}",
+      "accessible": "Median = ((Σf + 1)/2)th value if n = Σf is odd.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value if n = Σf is odd."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value if n = Σf is odd."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Median = ((Σf + 1)/2)th value if n = Σf is odd."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s074-n1",
+      "latex": "\\text{Here }n=\\sum f=20\\text{ is even}",
+      "accessible": "Here n = Σf = 20 is even",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Here n = Σf = 20 is even"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Here n = Σf = 20 is even"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Here n = Σf = 20 is even"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "id": "stat11-s074-n2",
+      "latex": "\\therefore\\ \\text{Median}=\\dfrac{\\sum f}{2}\\text{th value}=\\dfrac{20}{2}\\text{th value}=10\\text{th value}",
+      "accessible": "∴ Median = (Σf/2)th value = (20/2)th value = 10th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Median = (Σf/2)th value = (20/2)th value = 10th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Median = (Σf/2)th value = (20/2)th value = 10th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Median = (Σf/2)th value = (20/2)th value = 10th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-14"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.14: number of absentees",
+      "captionUrdu": "مثال 2.14: غیر حاضریوں کی تعداد",
+      "captionPashto": "بېلګه 2.14: د غیرحاضرو شمېر",
+      "headers": [
+        {
+          "en": "No. of absentees:",
+          "ur": "غیر حاضریوں کی تعداد:",
+          "ps": "د غیرحاضرو شمېر:"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "0",
+          "ur": "0",
+          "ps": "0"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-14"
+    },
+    {
+      "caption": "Example 2.14: arranged with cumulative frequency",
+      "captionUrdu": "مثال 2.14: جمعی تعدد کے ساتھ ترتیب",
+      "captionPashto": "بېلګه 2.14: له مجموعي فریکونسي سره ترتیب",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ],
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "19",
+            "ur": "19",
+            "ps": "19"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "−",
+            "ur": "−",
+            "ps": "−"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-14",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 66. The right-hand working of Example 2.14 (Here n = Σf = 20 is even ∴ Median = …) is printed beside the table and is given as equations after it. A thumb is visible at the top-left of the scan; ignored. Printed \"in value\" in the Example 2.13 working is retained. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:34:13.582580+00:00",
+    "scope": "Scan 74 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

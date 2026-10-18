@@ -1,0 +1,55 @@
+@printed 17
+@status lesson
+@deco This page is printed faintly; the flowchart labels are legible.
+p **فلوچارٹ نمبر 3:** کسی بھی متحرک جسم کا اسراع معلوم کرنا جبکہ اس کی کمیت اور عامل قوت معلوم ہو۔ || **Flowchart 3:** Find the acceleration of any moving body when its mass and acting force are known. || **۳ فلوچارټ:** د هر متحرک جسم تعجیل معلوم کړئ کله چې کتله او اغېزناک ځواک یې معلوم وي.
+svg فلوچارٹ نمبر 3 || Flowchart 3 || ۳ فلوچارټ
+<svg viewBox="0 0 320 308" width="320" role="img" aria-label="Flowchart: START; INPUT FORCE, MASS; ACCELERATION=FORCE/MASS; OUTPUT ACCELERATION; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.5">
+<defs><marker id="arF3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" marker-end="url(#arF3)"><line x1="160.0" y1="48" x2="160.0" y2="72"/><line x1="160.0" y1="110" x2="160.0" y2="134"/><line x1="160.0" y1="172" x2="160.0" y2="196"/><line x1="160.0" y1="234" x2="160.0" y2="258"/></g>
+<ellipse cx="160.0" cy="30.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="35.0">START</text>
+<polygon points="30.0,110 60.0,74 290.0,74 260.0,110" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="97.0">INPUT FORCE, MASS</text>
+<rect x="60.0" y="136" width="200" height="36" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="159.0">ACCELERATION=FORCE/MASS</text>
+<polygon points="30.0,234 60.0,198 290.0,198 260.0,234" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="221.0">OUTPUT ACCELERATION</text>
+<ellipse cx="160.0" cy="278.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="283.0">STOP</text>
+</svg>
+endsvg
+@issue The process box is printed "ACCELERATION=FORCE MASS" with the division sign faint/missing in the scan; read as FORCE/MASS (per Algorithm 3).
+p **فلوچارٹ نمبر 4:** کسی بھی مکعب کے ایک ضلع کی لمبائی اِن پُٹ کر کے اس کا حجم معلوم کرنا۔ || **Flowchart 4:** Find the volume of any cube by inputting the length of one side. || **۴ فلوچارټ:** د هر مکعب د یوې ضلعې اوږدوالی ورکړئ او حجم یې معلوم کړئ.
+svg فلوچارٹ نمبر 4 || Flowchart 4 || ۴ فلوچارټ
+<svg viewBox="0 0 320 308" width="320" role="img" aria-label="Flowchart: START; INPUT L; V = L³; OUTPUT V; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.5">
+<defs><marker id="arF4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" marker-end="url(#arF4)"><line x1="160.0" y1="48" x2="160.0" y2="72"/><line x1="160.0" y1="110" x2="160.0" y2="134"/><line x1="160.0" y1="172" x2="160.0" y2="196"/><line x1="160.0" y1="234" x2="160.0" y2="258"/></g>
+<ellipse cx="160.0" cy="30.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="35.0">START</text>
+<polygon points="30.0,110 60.0,74 290.0,74 260.0,110" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="97.0">INPUT L</text>
+<rect x="60.0" y="136" width="200" height="36" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="159.0">V = L³</text>
+<polygon points="30.0,234 60.0,198 290.0,198 260.0,234" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="221.0">OUTPUT V</text>
+<ellipse cx="160.0" cy="278.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="283.0">STOP</text>
+</svg>
+endsvg
+p **فلوچارٹ نمبر 5:** کسی مثلث کا رقبہ معلوم کریں جبکہ اس کا قاعدہ اور اُونچائی کی لمبائی دی گئی ہو۔ || **Flowchart 5:** Find the area of a triangle when its base and height are given. || **۵ فلوچارټ:** د مثلث مساحت معلوم کړئ کله چې قاعده او لوړوالی یې ورکړل شوي وي.
+svg فلوچارٹ نمبر 5 || Flowchart 5 || ۵ فلوچارټ
+<svg viewBox="0 0 320 308" width="320" role="img" aria-label="Flowchart: START; INPUT B, H; A=(B*H)/2; OUTPUT A; STOP" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" stroke-width="1.5">
+<defs><marker id="arF5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111827"/></marker></defs>
+<g stroke="#111827" marker-end="url(#arF5)"><line x1="160.0" y1="48" x2="160.0" y2="72"/><line x1="160.0" y1="110" x2="160.0" y2="134"/><line x1="160.0" y1="172" x2="160.0" y2="196"/><line x1="160.0" y1="234" x2="160.0" y2="258"/></g>
+<ellipse cx="160.0" cy="30.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="35.0">START</text>
+<polygon points="30.0,110 60.0,74 290.0,74 260.0,110" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="97.0">INPUT B, H</text>
+<rect x="60.0" y="136" width="200" height="36" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="159.0">A=(B*H)/2</text>
+<polygon points="30.0,234 60.0,198 290.0,198 260.0,234" fill="#e0f2fe" stroke="#111827"/>
+<text x="160.0" y="221.0">OUTPUT A</text>
+<ellipse cx="160.0" cy="278.0" rx="56" ry="18.0" fill="#fff" stroke="#111827"/>
+<text x="160.0" y="283.0">STOP</text>
+</svg>
+endsvg

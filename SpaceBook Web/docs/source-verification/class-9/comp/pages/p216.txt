@@ -1,0 +1,28 @@
+@pdf 215
+@printed 208
+@status lesson
+p For example: || مثلاً: || د بېلګې په توګه:
+m <a href= "http://www.bisep.edu.pk">Peshawar Board</a>
+p It will be displayed as Peshawar Board (underlined) in the browser window and when the reader clicks on it, it will open the Peshawar Board website that has the URL www.bisep.edu.pk. || یہ براؤزر ونڈو میں Peshawar Board (انڈر لائن) کے طور پر دکھایا جائے گا اور جب قاری اس پر کلک کرے گا تو پشاور بورڈ کی ویب سائٹ کھلے گی جس کا URL www.bisep.edu.pk ہے۔ || دا به په براوزر کې د Peshawar Board (underline) په توګه ښکاري او کله چې لوستونکی پرې کلیک وکړي، د پېښور بورډ وېب سایټ پرانیزي چې URL یې www.bisep.edu.pk دی.
+p Few more examples of creating hyperlinks are given below. || ہائپر لنکس بنانے کی چند مزید مثالیں نیچے دی گئی ہیں۔ || د hyperlinks جوړولو څو نورې بېلګې لاندې دي.
+m <a href= "http://www.urdupoint.com">Urdu Point</a>
+m <a href= "http://www.bbc.com/urdu">BBC Urdu Service</a>
+m <a href="http://www.aiou.edu.pk">Allama Iqbal Open University</a>
+p The HTML document in Figure 7.45 demonstrates the use of hyperlinks in a web page. || شکل 7.45 کی HTML دستاویز ویب پیج میں ہائپر لنکس کا استعمال دکھاتی ہے۔ || د ۷.۴۵ شکل HTML سند په وېب پاڼه کې د hyperlinks کارونه ښيي.
+m <html>
+m <head>
+m <title> Pak Official Websites</title>
+m </head>
+m <body>
+m <font size=5> Educational Websites</font><br>
+m <a href="https://www.eduvision.edu.pk/">Eduvision</a><br>
+m <a href="https://www.bisep.edu.pk/">Peshawar Board</a><br>
+m <a href="https://www.aiou.edu.pk/">Allama Iqbal Open University</a><br>
+m <font size=5> News and Information Websites</font><br>
+m <a href="https://www.urdupoint.com/">Urdu Point</a><br>
+m <a href="https://www.bbc.com/urdu/">BBC Urdu Service</a><br>
+m <a href="https://www.jang.com.pk/">Jang News</a><br>
+m </body>
+m </html>
+p (Figure 7.45: Creating hyperlinks in HTML document — "Anchor Tags.html" in Notepad++.) || (شکل 7.45: HTML دستاویز میں ہائپر لنکس بنانا۔) || (۷.۴۵ شکل: په HTML سند کې hyperlinks جوړول.)
+p The browser window will display it as shown in Figure 7.46. || براؤزر ونڈو اسے شکل 7.46 کی طرح دکھائے گی۔ || براوزر به یې د ۷.۴۶ شکل په څېر ښيي.

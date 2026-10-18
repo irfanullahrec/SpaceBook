@@ -1,0 +1,22 @@
+@printed 196
+p $P(B)=$ the probability of the occurrence of event B; || $P(B)=$ واقعہ B کے وقوع کا احتمال؛ || $P(B)=$ د B پېښې د رامنځته کېدو احتمال؛
+p $P(A\cup B)=$ the probability of the occurrence of $A\cup B$; || $P(A\cup B)=$ $A\cup B$ کے وقوع کا احتمال؛ || $P(A\cup B)=$ د $A\cup B$ د رامنځته کېدو احتمال؛
+p $P(A\cap B)=$ the probability of the occurrence of $A\cap B$; || $P(A\cap B)=$ $A\cap B$ کے وقوع کا احتمال؛ || $P(A\cap B)=$ د $A\cap B$ د رامنځته کېدو احتمال؛
+p The formulae for the addition of probabilities are: || احتمالات کے جمع کے کلیے یہ ہیں: || د احتمالونو د جمع فورمولونه دا دي:
+p i) $P(A\cup B)=P(A)+P(B)$, when A and B are disjoint. || i) $P(A\cup B)=P(A)+P(B)$، جب A اور B جدا ہوں۔ || i) $P(A\cup B)=P(A)+P(B)$، کله چې A او B جلا وي.
+p ii) $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ when A and B are overlapping or $B\subseteq A$. || ii) $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ جب A اور B متداخل ہوں یا $B\subseteq A$۔ || ii) $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ کله چې A او B ګډې برخې ولري یا $B\subseteq A$.
+box theorem | Theorem || قضیہ || قضیه
+p If A and B are any two events in a sample space S, then || اگر A اور B نمونہ فضا S میں کوئی دو واقعات ہوں، تو || که A او B د نمونې په S فضا کې هرې دوې پېښې وي، نو
+eq P(A\cup B)=P(A)+P(B)-P(A\cap B).
+p **Proof:** From the Venn diagram, it is clear that || **ثبوت:** وین خاکے سے واضح ہے کہ || **ثبوت:** د وین له دیاګرام څخه څرګنده ده چې
+svg Events A and B overlap in $A\cap B$ inside sample space S. || نمونہ فضا S میں واقعات A اور B کا مشترک حصہ $A\cap B$ ہے۔ || د نمونې په S فضا کې د A او B پېښو ګډه برخه $A\cap B$ ده.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 245" role="img" aria-label="Two overlapping events in sample space S"><title>Two overlapping events in sample space S</title><g fill="none" stroke="#334155" stroke-width="2"><rect x="30" y="10" width="420" height="220"/><circle cx="200" cy="120" r="75"/><circle cx="285" cy="120" r="75"/></g><g font-family="Arial,sans-serif" font-size="19" fill="#172b4d"><text x="8" y="218">S</text><text x="104" y="104">A</text><text x="349" y="192">B</text><text x="220" y="126">A∩B</text></g></svg>
+endsvg
+eq n(A\cup B)=n(A)+n(B)-n(A\cap B)
+p and $n(A\cap B)$ has been subtracted simply because it has been considered twice. || اور $n(A\cap B)$ صرف اس لیے تفریق کیا گیا ہے کہ اسے دو مرتبہ شمار کیا گیا ہے۔ || او $n(A\cap B)$ یوازې ځکه منفي شوی چې دوه ځله شمېرل شوی دی.
+p Now, by definition we have || اب تعریف سے حاصل ہوتا ہے || اوس د تعریف له مخې لرو
+eq P(A\cup B)=\frac{n(A\cup B)}{n(S)}=\frac{n(A)+n(B)-n(A\cap B)}{n(S)}
+eq =\frac{n(A)}{n(S)}+\frac{n(B)}{n(S)}-\frac{n(A\cap B)}{n(S)}
+eq =P(A)+P(B)-P(A\cap B)
+p This law is generally called, addition law of probability. || یہ قانون عموماً احتمال کا جمعی قانون کہلاتا ہے۔ || دا قانون عموماً د احتمال د جمع قانون بلل کېږي.
+endbox

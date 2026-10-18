@@ -1,0 +1,35 @@
+@pdf 155
+@printed 90
+@status lesson
+table Operator precedence || آپریٹرز کی ترجیح || د operators لومړیتوب
+th | Precedence || ترجیح || لومړیتوب | Operators || آپریٹرز || operators | Type || قسم || ډول
+tr | 1 | !,-,++,-- | Logical NOT, Unary Operators || لاجیکل NOT، یونری آپریٹرز || منطقي NOT، unary operators
+tr | 2 | *, /, % | Multiplication, Division & Modulus || ضرب، تقسیم اور ماڈیولس || ضرب، وېش او باقي
+tr | 3 | +, - | Addition & Subtraction || جمع اور تفریق || جمع او تفریق
+tr | 4 | <, >, <=, >= | Relational operators || ریلیشنل آپریٹرز || اړیکه ییز operators
+tr | 5 | ==, != | Relational operators || ریلیشنل آپریٹرز || اړیکه ییز operators
+tr | 6 | && | Logical AND || لاجیکل AND || منطقي AND
+tr | 7 | {{OR}} | Logical OR || لاجیکل OR || منطقي OR
+tr | 8 | = | Assignment operator || اسائنمنٹ آپریٹر || assignment operator
+endtable
+### Program 3.18: Program to illustrate the operator precedence available in C programming language: || پروگرام 3.18: C پروگرامنگ زبان میں آپریٹر کی ترجیح دکھانے کا پروگرام: || پروګرام ۳.۱۸: په C کې د operator لومړیتوب ښودل:
+m #include <stdio.h>
+m void main()
+m {
+m     int a = 20;
+m     int b = 10;
+m     int c = 15;
+m     int d = 5;
+m     int e;
+m     e = (a + b) * c / d;      // ( 30 * 15 ) / 5
+m     printf("Value of (a + b) * c / d is : %d\n",  e );
+m
+m     e = ((a + b) * c) / d;    // (30 * 15 ) / 5
+m     printf("Value of ((a + b) * c) / d is  : %d\n" ,  e );
+m     e = (a + b) * (c / d);    // (30) * (15/5)
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Value of (a + b) * c / d is : 90
+m Value of ((a + b) * c) / d is  : 90
+m Value of (a + b) * (c / d) is  : 90
+m Value of a + (b * c) / d is  : 50
+endbox

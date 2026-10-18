@@ -1,0 +1,179 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s247-p238",
+  "title": "Figure 7.21 Transformation; c. Transforming Relationships; 7.5.2 Normalization",
+  "headingUrdu": "شکل ۷.۲۱ تبدیلی؛ ج۔ تعلقات کی ریلیشنل اسکیما میں تبدیلی؛ ۷.۵.۲ نارملائزیشن",
+  "headingPashto": "انځور ۷.۲۱ بدلون؛ ج. اړیکې اړوندې طرحې ته بدلول؛ ۷.۵.۲ نورمال کول",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 247,
+    "printedPage": "238"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s247-h1",
+      "en": "c. Transforming Relationships to Relational Schema",
+      "ur": "ج۔ تعلقات کی ریلیشنل اسکیما میں تبدیلی",
+      "ps": "ج. اړیکې اړوندې طرحې ته بدلول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s247-a",
+      "en": "Each relationship in an E-R diagram must also be represented in relational schema. The representation depends upon the nature of relationship. In some cases, a relationship is represented by making the primary key of one relation, a foreign key of another relation. In some cases, a separate relation is created to represent a relationship.",
+      "ur": "ای-آر ڈایاگرام میں ہر تعلق کو بھی ریلیشنل اسکیما میں ظاہر کرنا ضروری ہے۔ نمائندگی تعلق کی نوعیت پر منحصر ہے۔ بعض صورتوں میں تعلق کو ایک ریلیشن کی پرائمری کی کو دوسرے ریلیشن کی فارن کی بنا کر ظاہر کیا جاتا ہے۔ بعض صورتوں میں تعلق کو ظاہر کرنے کے لیے الگ ریلیشن بنایا جاتا ہے۔",
+      "ps": "د E-R انځور هره اړیکه هم باید په اړوند طرحه کې وښودل شي. ښودنه د اړیکې په طبیعت پورې اړه لري. په ځینو حالتونو کې اړیکه د یوې اړیکې لومړنۍ کیلي د بلې اړیکې بهرنۍ کیلي جوړولو په واسطه ښودل کېږي. په ځینو حالتونو کې د اړیکې د ښودلو لپاره جلا اړیکه جوړېږي."
+    },
+    {
+      "id": "cs11-s247-h2",
+      "en": "7.5.2 Normalization",
+      "ur": "۷.۵.۲ نارملائزیشن",
+      "ps": "۷.۵.۲ نورمال کول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s247-b",
+      "en": "Normalization is the process of organizing data in relational database in order to minimize duplication of information (data) and to safeguard the database against certain anomalies. The basic purpose of normalization is to divide large table into smaller and well formed tables/relations and remove the inconsistencies or anomalies.",
+      "ur": "نارملائزیشن ریلیشنل ڈیٹا بیس میں ڈیٹا کو اس طرح منظم کرنے کا عمل ہے کہ معلومات (ڈیٹا) کی تکرار کم سے کم ہو اور ڈیٹا بیس کو کچھ بے قاعدگیوں سے محفوظ رکھا جائے۔ نارملائزیشن کا بنیادی مقصد بڑے ٹیبل کو چھوٹے اور اچھی طرح بنائے گئے ٹیبلز/ریلیشنز میں تقسیم کرنا اور عدم مطابقت یا بے قاعدگیوں کو دور کرنا ہے۔",
+      "ps": "نورمال کول په اړوند ډېټابېس کې د ډېټا د منظمولو پروسه ده ترڅو د معلوماتو (ډېټا) تکرار لږ شي او ډېټابېس د ځینو ناهمغږیو نه وساتل شي. د نورمال کولو بنسټیزه موخه لوی جدول په کوچنیو او ښه جوړ شوو جدولونو/اړیکو وېشل او ناسمونونه یا ناهمغږي لېرې کول دي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s247-h1",
+        "cs11-s247-a",
+        "cs11-s247-h2",
+        "cs11-s247-b"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 205\" role=\"img\" aria-label=\"Entity Student with attributes SID, Name, Major and GPA transformed into a table\" style=\"width:100%;max-width:380px;height:auto;background:#fff\"><rect x=\"160\" y=\"50\" width=\"80\" height=\"28\" fill=\"#4a7ac8\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"68.0\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><ellipse cx=\"95\" cy=\"25\" rx=\"35\" ry=\"15\" fill=\"#4a8ad0\" stroke=\"#111\"/><text x=\"95\" y=\"29\" font-size=\"10\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">SID</text><ellipse cx=\"285\" cy=\"15\" rx=\"40\" ry=\"15\" fill=\"#4a8ad0\" stroke=\"#111\"/><text x=\"285\" y=\"19\" font-size=\"10\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Name</text><ellipse cx=\"100\" cy=\"105\" rx=\"40\" ry=\"15\" fill=\"#4a8ad0\" stroke=\"#111\"/><text x=\"100\" y=\"109\" font-size=\"10\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Major</text><ellipse cx=\"270\" cy=\"105\" rx=\"38\" ry=\"15\" fill=\"#4a8ad0\" stroke=\"#111\"/><text x=\"270\" y=\"109\" font-size=\"10\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">GPA</text><line x1=\"130\" y1=\"35\" x2=\"170\" y2=\"52\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"250\" y1=\"28\" x2=\"225\" y2=\"52\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"135\" y1=\"95\" x2=\"170\" y2=\"78\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"240\" y1=\"95\" x2=\"215\" y2=\"78\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"180,130 220,130 220,165 245,165 200,195 155,165 180,165\" fill=\"#4a7ac8\" stroke=\"#111\"/></svg>",
+      "id": "cs11-s247-fig1",
+      "caption": "Figure 7.21 Transformation of E-R Model into Relational Schema (entity)",
+      "captionUrdu": "شکل ۷.۲۱ ای-آر ماڈل کی ریلیشنل اسکیما میں تبدیلی (انٹیٹی)",
+      "captionPashto": "انځور ۷.۲۱ د E-R ماډل اړوندې طرحې ته بدلون (وجود)",
+      "labels": [
+        {
+          "en": "Student",
+          "ur": "اسٹوڈنٹ",
+          "ps": "زده کوونکی"
+        },
+        {
+          "en": "SID",
+          "ur": "ایس آئی ڈی",
+          "ps": "SID"
+        },
+        {
+          "en": "Name",
+          "ur": "نام",
+          "ps": "نوم"
+        },
+        {
+          "en": "Major",
+          "ur": "میجر",
+          "ps": "Major"
+        },
+        {
+          "en": "GPA",
+          "ur": "جی پی اے",
+          "ps": "GPA"
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Figure 7.21 Transformation of E-R Model into Relational Schema (table)",
+      "captionUrdu": "شکل ۷.۲۱ ای-آر ماڈل کی ریلیشنل اسکیما میں تبدیلی (ٹیبل)",
+      "captionPashto": "انځور ۷.۲۱ د E-R ماډل اړوندې طرحې ته بدلون (جدول)",
+      "headers": [
+        {
+          "en": "SID",
+          "ur": "ایس آئی ڈی",
+          "ps": "SID"
+        },
+        {
+          "en": "Name",
+          "ur": "نام",
+          "ps": "نوم"
+        },
+        {
+          "en": "Major",
+          "ur": "میجر",
+          "ps": "Major"
+        },
+        {
+          "en": "GPA",
+          "ur": "جی پی اے",
+          "ps": "GPA"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1234",
+            "ur": "1234",
+            "ps": "1234"
+          },
+          {
+            "en": "Ali",
+            "ur": "علی",
+            "ps": "علي"
+          },
+          {
+            "en": "CS",
+            "ur": "سی ایس",
+            "ps": "CS"
+          },
+          {
+            "en": "2.8",
+            "ur": "2.8",
+            "ps": "2.8"
+          }
+        ],
+        [
+          {
+            "en": "5678",
+            "ur": "5678",
+            "ps": "5678"
+          },
+          {
+            "en": "Asad",
+            "ur": "اسد",
+            "ps": "اسد"
+          },
+          {
+            "en": "EE",
+            "ur": "ای ای",
+            "ps": "EE"
+          },
+          {
+            "en": "3.6",
+            "ur": "3.6",
+            "ps": "3.6"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 238: Figure 7.21 Transformation of E-R Model into Relational Schema (the entity Student with the attributes SID, Name, Major and GPA, a down arrow and the table with the rows 1234 Ali CS 2.8 and 5678 Asad EE 3.6; the entity redrawn as coded SVG and the table given as a data table), “c. Transforming Relationships to Relational Schema” and the banner “7.5.2 Normalization” with its paragraph. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:53:05.487152+00:00",
+    "scope": "Scan 247 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

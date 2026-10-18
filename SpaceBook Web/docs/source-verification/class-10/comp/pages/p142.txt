@@ -1,0 +1,73 @@
+@printed 130
+@status lesson
+### درج ذیل بولین ایکسپریشن کا K-Map کی مدد سے اختصار اور مختصر شدہ فنکشن کی لاجک ڈائیگرام۔ || Simplify the following Boolean expression with a K-map and draw the logic diagram of the simplified function. || لاندې بولین عبارت د K-Map په مرسته لنډ کړئ او د لنډ شوي فنکشن منطقي ډیاګرام.
+m Y = A̅B̅C̅ + A̅B̅C + A̅BC + AB̅C
+table Y کا ٹرُتھ ٹیبل || Truth table of Y || د Y د حقیقت جدول
+th | A | B | C | Y
+tr | 0 | 0 | 0 | 1
+tr | 0 | 0 | 1 | 1
+tr | 0 | 1 | 0 | 0
+tr | 0 | 1 | 1 | 1
+tr | 1 | 0 | 0 | 0
+tr | 1 | 0 | 1 | 1
+tr | 1 | 1 | 0 | 0
+tr | 1 | 1 | 1 | 0
+endtable
+@issue The truth table's first column is headed "C" (giving "C B C Y"); it is A.
+svg Y کا K-map || K-map of Y || د Y K-map
+<svg viewBox="0 0 400 225" width="400" role="img" aria-label="3-variable K-map for Y with BC (00 01 11 10) across the top and A (0,1) down the side; cells are numbered 0 1 3 2 / 4 5 7 6. Row A=0: 1 1 1 0; row A=1: 0 1 0 0. Groups: A-bar B-bar (cells 0 and 1), A-bar C (cells 1 and 3), B-bar C (cells 1 and 5)" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M68 44 L100 80" stroke="#111827"/>
+<text x="90" y="54" font-weight="700">BC</text><text x="72" y="84" font-weight="700">A</text>
+<text x="131.0" y="72">00</text>
+<text x="193.0" y="72">01</text>
+<text x="255.0" y="72">11</text>
+<text x="317.0" y="72">10</text>
+<text x="90" y="110.0">0</text>
+<text x="90" y="160.0">1</text>
+<rect x="100" y="80" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M162 80 V180 M224 80 V180 M286 80 V180 M100 130 H348" stroke="#111827" stroke-width="2"/>
+<text x="131.0" y="110.0">1</text>
+<text x="193.0" y="110.0">1</text>
+<text x="255.0" y="110.0">1</text>
+<text x="317.0" y="110.0">0</text>
+<text x="131.0" y="160.0">0</text>
+<text x="193.0" y="160.0">1</text>
+<text x="255.0" y="160.0">0</text>
+<text x="317.0" y="160.0">0</text>
+<rect x="106" y="86" width="112" height="38" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="171" y="89" width="106" height="32" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="168" y="86" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="154" y="94" font-size="10" font-family="Arial">0</text>
+<text x="216" y="94" font-size="10" font-family="Arial">1</text>
+<text x="278" y="94" font-size="10" font-family="Arial">3</text>
+<text x="340" y="94" font-size="10" font-family="Arial">2</text>
+<text x="154" y="144" font-size="10" font-family="Arial">4</text>
+<text x="216" y="144" font-size="10" font-family="Arial">5</text>
+<text x="278" y="144" font-size="10" font-family="Arial">7</text>
+<text x="340" y="144" font-size="10" font-family="Arial">6</text>
+<g font-family="Arial" font-weight="700" font-size="14"><text x="120" y="24">A̅B̅</text><text x="250" y="24">A̅C</text><text x="210" y="214">B̅C</text></g>
+<g stroke="#111827" fill="none"><path d="M120 28 L128 92" marker-end="url(#arK)"/><path d="M250 28 L230 92" marker-end="url(#arK)"/><path d="M200 200 L170 160" marker-end="url(#arK)"/></g>
+</svg>
+endsvg
+m Y = A̅B̅ + A̅C + B̅C
+svg Y کا لاجک ڈائیگرام || Logic diagram of Y || د Y منطقي ډیاګرام
+<svg viewBox="0 0 560 300" width="560" role="img" aria-label="Circuit for Y = A-bar B-bar + A-bar C + B-bar C: A through NOT1 gives A-bar and B through NOT2 gives B-bar; AND1 takes A-bar and B-bar, AND2 takes A-bar and C, AND3 takes B-bar and C; the three AND outputs enter OR1, giving Y" font-family="Arial, Helvetica, sans-serif" font-size="13">
+<g stroke="#111827" stroke-width="1.8" fill="none">
+<path d="M20 40 H50 M110 40 H220"/><path d="M20 130 H50 M110 130 H140 V70 H220"/>
+<path d="M170 40 V170 H220"/><path d="M20 220 H120 V190 H220 M120 220 V270 H220"/><path d="M140 130 V250 H220"/>
+<path d="M290 55 H340 V160 H370 M290 180 H370 M290 260 H340 V200 H370"/><path d="M450 180 H480"/></g>
+<circle cx="170" cy="40" r="3" fill="#111827"/><circle cx="140" cy="130" r="3" fill="#111827"/><circle cx="120" cy="220" r="3" fill="#111827"/>
+<text x="6" y="45">A</text><text x="6" y="135">B</text><text x="6" y="225">C</text>
+<path d="M50 20 L100 40 L50 60 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><circle cx="105" cy="40" r="5" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="56" y="45" font-size="10">NOT1</text>
+<path d="M50 110 L100 130 L50 150 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><circle cx="105" cy="130" r="5" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="56" y="135" font-size="10">NOT2</text>
+<text x="112" y="28">A̅</text><text x="112" y="118">B̅</text>
+<path d="M220 25 H255 A35 35 0 0 1 255 95 H220 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="232" y="64">AND1</text>
+<path d="M220 150 H255 A35 35 0 0 1 255 220 H220 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="232" y="189">AND2</text>
+<path d="M220 235 H255 A30 30 0 0 1 255 295 H220 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="232" y="269">AND3</text>
+<path d="M360 140 Q385 180 360 220 Q425 220 450 180 Q425 140 360 140 Z" fill="#fff" stroke="#111827" stroke-width="1.8"/><text x="388" y="185">OR1</text>
+<text x="296" y="46">A̅B̅</text><text x="296" y="172">A̅C</text><text x="296" y="284">B̅C</text>
+<text x="456" y="168">Y=A̅B̅+A̅C+B̅C</text>
+</svg>
+endsvg
+@deco The book draws the three groups as ellipses and numbers the cells 0 1 3 2 / 4 5 7 6. All three groups are essential (cells 0, 3 and 5 each lie in only one group), so Y = A̅B̅ + A̅C + B̅C is minimal.

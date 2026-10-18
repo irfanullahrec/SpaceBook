@@ -1,0 +1,90 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s088-p079",
+  "title": "Special purpose registers: IR, MAR, MBR, PC — start",
+  "headingUrdu": "خصوصی مقصد کے رجسٹرز: آئی آر، ایم اے آر، ایم بی آر، پی سی — آغاز",
+  "headingPashto": "د ځانګړې موخې رجسترونه: IR، MAR، MBR، PC — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 88,
+    "printedPage": "79"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s088-h1",
+      "en": "i. Instruction Register (IR)",
+      "ur": "i۔ انسٹرکشن رجسٹر (آئی آر)",
+      "ps": "i. د لارښوونې رجستر (IR)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s088-a",
+      "en": "Instruction register is a part of control unit, which stores the instructions currently being executed. Each instruction to be executed is loaded into the instruction register. It is also known as current instruction register (CIR) because it holds the current instruction being executed.",
+      "ur": "انسٹرکشن رجسٹر کنٹرول یونٹ کا ایک حصہ ہے جو اس وقت چلائی جانے والی ہدایات محفوظ کرتا ہے۔ چلائی جانے والی ہر ہدایت انسٹرکشن رجسٹر میں لوڈ کی جاتی ہے۔ اسے کرنٹ انسٹرکشن رجسٹر (سی آئی آر) بھی کہتے ہیں کیونکہ یہ اس وقت چلائی جانے والی موجودہ ہدایت رکھتا ہے۔",
+      "ps": "د لارښوونې رجستر د کنټرول واحد یوه برخه ده چې اوس مهال پلي کېدونکې لارښوونې ساتي. هره لارښوونه چې باید پلي شي د لارښوونې رجستر ته پورته کېږي. دې ته د اوسنۍ لارښوونې رجستر (CIR) هم ویل کېږي ځکه چې اوسنۍ پلي کېدونکې لارښوونه ساتي."
+    },
+    {
+      "id": "cs11-s088-h2",
+      "en": "ii. Memory Address Register (MAR)",
+      "ur": "ii۔ میموری ایڈریس رجسٹر (ایم اے آر)",
+      "ps": "ii. د حافظې د پتې رجستر (MAR)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s088-b",
+      "en": "Memory Address Register holds the memory address, the memory address from which data will be provided to the CPU or will have the address to which data will be sent and then stored. It basically holds the memory location of data that needs to be accessed. When reading from memory, the data addressed by MAR is fed into the MDR (Memory Data Register) and then is used by the CPU. When writing to memory, the CPU writes data from Data Register to the memory location whose address is stored in MAR. So, in both reading and writing, it is holding the address of the memory location where the data is to be read or stored.",
+      "ur": "میموری ایڈریس رجسٹر میموری کا پتہ رکھتا ہے، وہ میموری پتہ جس سے ڈیٹا سی پی یو کو فراہم کیا جائے گا یا اس پتے کو رکھے گا جس پر ڈیٹا بھیجا اور پھر محفوظ کیا جائے گا۔ یہ بنیادی طور پر اس ڈیٹا کا میموری مقام رکھتا ہے جس تک رسائی درکار ہو۔ میموری سے پڑھتے وقت ایم اے آر کے ذریعے مخاطب ڈیٹا ایم ڈی آر (میموری ڈیٹا رجسٹر) میں داخل ہوتا ہے اور پھر سی پی یو اسے استعمال کرتا ہے۔ میموری پر لکھتے وقت سی پی یو ڈیٹا رجسٹر سے ڈیٹا اس میموری مقام پر لکھتا ہے جس کا پتہ ایم اے آر میں محفوظ ہو۔ اس لیے پڑھنے اور لکھنے دونوں میں یہ اس میموری مقام کا پتہ رکھتا ہے جہاں ڈیٹا پڑھا یا محفوظ کیا جانا ہو۔",
+      "ps": "د حافظې د پتې رجستر د حافظې پته ساتي، هغه د حافظې پته چې له هغې نه ډېټا CPU ته برابرېږي یا هغه پته به ولري چې ډېټا ورته لېږل کېږي او بیا ساتل کېږي. دا په بنسټیزه توګه د هغې ډېټا د حافظې ځای ساتي چې لاسرسي ته اړتیا لري. کله چې له حافظې لوستل کېږي، د MAR په واسطه پته شوې ډېټا MDR (د حافظې د ډېټا رجستر) ته ورکول کېږي او بیا CPU یې کاروي. کله چې په حافظه لیکل کېږي، CPU د ډېټا له رجستر نه ډېټا هغه د حافظې ځای ته لیکي چې پته یې په MAR کې ساتل شوې. نو په لوستلو او لیکلو دواړو کې دا د هغه د حافظې د ځای پته ساتي چېرته چې ډېټا لوستل یا ساتل کېږي."
+    },
+    {
+      "id": "cs11-s088-h3",
+      "en": "iii. Memory Buffer Register (MBR)",
+      "ur": "iii۔ میموری بفر رجسٹر (ایم بی آر)",
+      "ps": "iii. د حافظې د بفر رجستر (MBR)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s088-c",
+      "en": "The Memory Buffer Register actually holds the contents of the memory which are to be moved from memory to other components or from components to the memory. In order to store a word it must be transferred to the MBR and then from here it will go to the specific memory location. It works as a buffer allowing the processor and memory units to act independently.",
+      "ur": "میموری بفر رجسٹر دراصل میموری کے وہ مندرجات رکھتا ہے جو میموری سے دیگر اجزاء کی طرف یا اجزاء سے میموری کی طرف منتقل کیے جانے ہوں۔ کسی لفظ کو محفوظ کرنے کے لیے اسے ایم بی آر کی طرف منتقل کرنا ضروری ہے اور پھر یہاں سے وہ مخصوص میموری مقام تک جائے گا۔ یہ بفر کے طور پر کام کرتا ہے جو پراسیسر اور میموری یونٹس کو آزادانہ کام کرنے دیتا ہے۔",
+      "ps": "د حافظې د بفر رجستر په اصل کې د حافظې هغه منځپانګه ساتي چې له حافظې نه نورو اجزاوو ته یا له اجزاوو نه حافظې ته لېږدول کېږي. د یوې کلمې د ساتلو لپاره باید MBR ته ولېږدول شي او بیا له دې ځایه به هغه ځانګړي د حافظې ځای ته ولاړ شي. دا د بفر په توګه کار کوي چې پروسیسر او د حافظې واحدونو ته خپلواکه کار کولو اجازه ورکوي."
+    },
+    {
+      "id": "cs11-s088-h4",
+      "en": "iv. Program Counter (PC)",
+      "ur": "iv۔ پروگرام کاؤنٹر (پی سی)",
+      "ps": "iv. پروګرام شمېرونکی (PC)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s088-d",
+      "en": "Program Counter is also known as Instruction Pointer. It is a register in a computer processor that contains the address (location) of the instruction being executed at the current time. As each instruction gets fetched, the program counter increases its stored value by 1. After each instruction is fetched, the program counter points to the next instruction in the sequence.",
+      "ur": "پروگرام کاؤنٹر کو انسٹرکشن پوائنٹر بھی کہا جاتا ہے۔ یہ کمپیوٹر پراسیسر میں ایک رجسٹر ہے جو اس وقت چلائی جانے والی ہدایت کا پتہ (مقام) رکھتا ہے۔ جیسے ہی ہر ہدایت حاصل کی جاتی ہے، پروگرام کاؤنٹر اپنی محفوظ قدر ۱ سے بڑھا دیتا ہے۔ ہر ہدایت حاصل ہو جانے کے بعد پروگرام کاؤنٹر ترتیب میں اگلی ہدایت کی طرف اشارہ کرتا ہے۔",
+      "ps": "پروګرام شمېرونکی ته د لارښوونې اشاره کوونکی هم ویل کېږي. دا د کمپیوټر په پروسیسر کې یو رجستر دی چې په اوسني وخت کې د پلي کېدونکې لارښوونې پته (ځای) لري. څنګه چې هره لارښوونه راوړل کېږي، پروګرام شمېرونکی خپل ساتل شوی ارزښت په ۱ زیاتوي. د هرې لارښوونې له راوړلو وروسته پروګرام شمېرونکی په ترتیب کې راتلونکې لارښوونې ته اشاره کوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s088-h1",
+        "cs11-s088-a",
+        "cs11-s088-h2",
+        "cs11-s088-b",
+        "cs11-s088-h3",
+        "cs11-s088-c",
+        "cs11-s088-h4",
+        "cs11-s088-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 79: i. Instruction Register (IR), ii. Memory Address Register (MAR), iii. Memory Buffer Register (MBR) and iv. Program Counter (PC). The headings i., ii., iii. are printed in a faded colour; some letters of the heading “iii. Memory Buffer Register (MBR)” are blurred. The left edge of the lines is slightly clipped. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:54:17.687406+00:00",
+    "scope": "Scan 88 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

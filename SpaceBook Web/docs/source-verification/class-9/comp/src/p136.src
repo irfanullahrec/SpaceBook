@@ -1,0 +1,26 @@
+@printed 128
+@status lesson
+fig10 f5.5 || Figure: 5.5 Working of continue statement || شکل 5.5 continue اسٹیٹمنٹ کا کام || ۵.۵ شکل د continue بیان کار
+### Program 5.12: Write a program and use the concept of continue statement using while loop. || پروگرام 5.12: while لوپ میں continue کے تصور کو استعمال کرنے والا پروگرام لکھیں۔ || پروګرام ۵.۱۲: د while لوپ سره د continue مفهوم کاروونکی پروګرام ولیکئ.
+m # include <stdio.h>
+m void main()
+m {
+m     int c;
+m     c=1;
+m     while(c<=5)
+m     {
+m         printf("Pakistan\n");
+m         c++;
+m         continue;
+m         printf("Islamabad");
+m         printf("Peshawar");
+m     }
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+m Pakistan
+endbox
+p In the above program, only first three statements inside the *while* loop are executed 5 times. The two statements after *continue* statements are not executed because each time the *continue* statement returns the control back to the beginning of body of loop. || اوپر والے پروگرام میں *while* لوپ کی صرف پہلی تین اسٹیٹمنٹس 5 بار چلتی ہیں۔ *continue* کے بعد والی دو اسٹیٹمنٹس نہیں چلتیں کیونکہ ہر بار *continue* کنٹرول کو لوپ کے جسم کے آغاز پر واپس لے جاتی ہے۔ || په پورتني پروګرام کې د *while* لوپ یوازې لومړي درې بیانونه ۵ ځله اجرا کېږي. له *continue* وروسته دوه بیانونه نه اجرا کېږي ځکه هر ځل *continue* کنټرول د لوپ د بدنې پیل ته بېرته وړي.

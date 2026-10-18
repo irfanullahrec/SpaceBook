@@ -1,0 +1,784 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s115-sd-6",
+  "title": "Example 3.12 (shortcut and step-deviation methods) · 3.5.5 Example 3.13 (question)",
+  "headingUrdu": "مثال 3.12 (مختصر اور قدمی انحراف کے طریقے) · 3.5.5 مثال 3.13 (سوال)",
+  "headingPashto": "بېلګه 3.12 (لنډه او ګام‌انحراف طریقې) · 3.5.5 بېلګه 3.13 (پوښتنه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 115,
+    "printedPage": "107"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s115-n1",
+      "en": "Now",
+      "ur": "اب",
+      "ps": "اوس",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-n2",
+      "en": "and",
+      "ur": "اور",
+      "ps": "او",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-n3",
+      "en": "(iii) By change of origin and scale method or step-deviation method",
+      "ur": "(iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے",
+      "ps": "(iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-n4",
+      "en": "Here A = 3, h = 1, u = (x − A)/h = (x − 3)/1",
+      "ur": "یہاں A = 3, h = 1, u = (x − A)/h = (x − 3)/1",
+      "ps": "دلته A = 3, h = 1, u = (x − A)/h = (x − 3)/1",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-h355",
+      "en": "3.5.5 Calculation of standard deviation and variance in case of continuous series of grouped data",
+      "ur": "3.5.5 مسلسل سلسلے کے گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب",
+      "ps": "3.5.5 د دوامدارې لړۍ د ګروپي معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s115-ex13",
+      "en": "Example: 3.13",
+      "ur": "مثال: 3.13",
+      "ps": "بېلګه: 3.13",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s115-q13",
+      "en": "Find standard deviation and variance for the following frequency distribution.",
+      "ur": "درج ذیل تعدد تقسیم کے لیے معیاری انحراف اور تغیر معلوم کریں۔",
+      "ps": "د لاندې فریکونسي ویش لپاره معیاري انحراف او وریانس ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-13",
+      "sourceGap": {
+        "note": "The data of Example 3.13 are printed at the top of the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s115-n1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s115-n2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s115-n3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s115-n4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s115-h355",
+        "stat11-s115-ex13",
+        "stat11-s115-q13"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s115-a",
+      "latex": "S=\\sqrt{\\dfrac{572}{50}-\\left(\\dfrac{158}{50}\\right)^2}",
+      "accessible": "S = √(572/50 − (158/50)²)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(572/50 − (158/50)²)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(572/50 − (158/50)²)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(572/50 − (158/50)²)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-b",
+      "latex": "=\\sqrt{11.44-9.9856}=1.21",
+      "accessible": "= √(11.44 − 9.9856) = 1.21",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √(11.44 − 9.9856) = 1.21"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √(11.44 − 9.9856) = 1.21"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √(11.44 − 9.9856) = 1.21"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-c",
+      "latex": "S^2=\\dfrac{572}{50}-\\left(\\dfrac{158}{50}\\right)^2",
+      "accessible": "S² = 572/50 − (158/50)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = 572/50 − (158/50)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = 572/50 − (158/50)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = 572/50 − (158/50)²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-d",
+      "latex": "=11.44-9.9856=1.4544",
+      "accessible": "= 11.44 − 9.9856 = 1.4544",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 11.44 − 9.9856 = 1.4544"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 11.44 − 9.9856 = 1.4544"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 11.44 − 9.9856 = 1.4544"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-e",
+      "latex": "s=\\sqrt{\\dfrac{\\sum fu^2}{\\sum f}-\\left(\\dfrac{\\sum fu}{\\sum f}\\right)^2}\\times h",
+      "accessible": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-f",
+      "latex": "s^2=\\left[\\dfrac{\\sum fu^2}{\\sum f}-\\left(\\dfrac{\\sum fu}{\\sum f}\\right)^2\\right]\\times h^2",
+      "accessible": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-g",
+      "latex": "S=\\sqrt{\\dfrac{74}{50}-\\left(\\dfrac{8}{50}\\right)^2}\\times 1=\\sqrt{1.48-0.0256}\\times 1=1.21",
+      "accessible": "S = √(74/50 − (8/50)²) × 1 = √(1.48 − 0.0256) × 1 = 1.21",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(74/50 − (8/50)²) × 1 = √(1.48 − 0.0256) × 1 = 1.21"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(74/50 − (8/50)²) × 1 = √(1.48 − 0.0256) × 1 = 1.21"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(74/50 − (8/50)²) × 1 = √(1.48 − 0.0256) × 1 = 1.21"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s115-h",
+      "latex": "S^2=\\left[\\dfrac{74}{50}-\\left(\\dfrac{8}{50}\\right)^2\\right]\\times 1=1.48-0.0256=1.4544",
+      "accessible": "S² = [74/50 − (8/50)²] × 1 = 1.48 − 0.0256 = 1.4544",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = [74/50 − (8/50)²] × 1 = 1.48 − 0.0256 = 1.4544"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = [74/50 − (8/50)²] × 1 = 1.48 − 0.0256 = 1.4544"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = [74/50 − (8/50)²] × 1 = 1.48 − 0.0256 = 1.4544"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.12: x, f, fx, fx²",
+      "captionUrdu": "مثال 3.12: x, f, fx, fx²",
+      "captionPashto": "بېلګه 3.12: x, f, fx, fx²",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "fx²",
+          "ur": "fx²",
+          "ps": "fx²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "135",
+            "ur": "135",
+            "ps": "135"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          },
+          {
+            "en": "192",
+            "ur": "192",
+            "ps": "192"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "200",
+            "ur": "200",
+            "ps": "200"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "158",
+            "ur": "158",
+            "ps": "158"
+          },
+          {
+            "en": "572",
+            "ur": "572",
+            "ps": "572"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "caption": "Example 3.12: step-deviation table",
+      "captionUrdu": "مثال 3.12: قدمی انحراف کا جدول",
+      "captionPashto": "بېلګه 3.12: د ګام‌انحراف جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "u = (x − 3)/1",
+          "ur": "u = (x − 3)/1",
+          "ps": "u = (x − 3)/1"
+        },
+        {
+          "en": "u²",
+          "ur": "u²",
+          "ps": "u²"
+        },
+        {
+          "en": "fu",
+          "ur": "fu",
+          "ps": "fu"
+        },
+        {
+          "en": "fu²",
+          "ur": "fu²",
+          "ps": "fu²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-10",
+            "ur": "-10",
+            "ps": "-10"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-10",
+            "ur": "-10",
+            "ps": "-10"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "74",
+            "ur": "74",
+            "ps": "74"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-12"
+    }
+  ],
+  "sourceNote": "Printed page 107. The x, f, fx, fx² table and the \"Now … and …\" workings are printed side by side and are shown table first. In the printed S² line of the step-deviation method the closing \"× 1\" and the bracket are placed as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:51:27.495073+00:00",
+    "scope": "Scan 115 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,15 @@
+@pdf 67
+@printed 57
+@status lesson
+p For example, to declare variables **abc, xyz, d** and **s** of **integer** type. The statement is written as: || مثلاً **integer** قسم کے متغیرات **abc، xyz، d** اور **s** کا اعلان کرنے کے لیے اسٹیٹمنٹ یوں لکھی جاتی ہے: || د بېلګې په توګه د **integer** ډول متغیرونو **abc، xyz، d** او **s** د اعلان لپاره بیان داسې لیکل کېږي:
+m int abc,xyz,d,s;
+p To declare variables **a** and **xy** as **int** type, **b** as **float** type, **ch** as **char** type and **sum** as **double**, the statements are written as: || متغیرات **a** اور **xy** کو **int**، **b** کو **float**، **ch** کو **char** اور **sum** کو **double** قسم کے طور پر اعلان کرنے کے لیے اسٹیٹمنٹس یوں لکھی جاتی ہیں: || د **a** او **xy** د **int**، **b** د **float**، **ch** د **char** او **sum** د **double** په توګه د اعلان لپاره بیانونه داسې لیکل کېږي:
+m int a,xy;
+m float  b;
+m char ch;
+m double sum;
+### Initialization of Variables || متغیرات کو ابتدائی قدر دینا || متغیرونو ته پیلنی ارزښت ورکول
+p When a variable is declared, memory location is reserved for it. The value in that memory location is also assigned to the variable. Assigning a known value to a variable at the time of its declaration is called initialization of the variable. || جب کسی متغیر کا اعلان کیا جاتا ہے تو اس کے لیے میموری کا مقام مخصوص ہو جاتا ہے۔ اس میموری مقام میں موجود قدر بھی متغیر کو مل جاتی ہے۔ اعلان کے وقت متغیر کو کوئی معلوم قدر دینا متغیر کا initialization کہلاتا ہے۔ || کله چې متغیر اعلان شي، د حافظې ځای ورته ځانګړی کېږي. په هغه ځای کې شته ارزښت هم متغیر ته ورکول کېږي. د اعلان پر مهال متغیر ته د یوه معلوم ارزښت ورکول د متغیر initialization بلل کېږي.
+p For example, to declare variables *a, b* and *c* of **integer** type and assigning values **60, 43** and **77** and variable of float type by assigning value **3.35**; the statement is written as: || مثلاً **integer** قسم کے متغیرات *a، b* اور *c* کا اعلان کر کے انہیں قدریں **60، 43** اور **77** دینے اور فلوٹ قسم کے متغیر کو قدر **3.35** دینے کے لیے اسٹیٹمنٹ یوں لکھی جاتی ہے: || د بېلګې په توګه د **integer** ډول متغیرونو *a، b* او *c* اعلان او **60، 43** او **77** ارزښتونه ورکول او د float ډول متغیر ته **3.35** ارزښت ورکول؛ بیان داسې لیکل کېږي:
+m int a =60, b=43, c=77;
+m float n=3.35;

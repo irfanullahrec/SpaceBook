@@ -1,0 +1,457 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s088-gm-1",
+  "title": "Geometric mean: example, logarithm form · 2.5.1 Computation · Example 2.29",
+  "headingUrdu": "ہندسی اوسط: مثال، لوگارتھمی صورت · 2.5.1 حساب · مثال 2.29",
+  "headingPashto": "هندسي اوسط: بېلګه، لوګارېتمي بڼه · 2.5.1 محاسبه · بېلګه 2.29",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 88,
+    "printedPage": "80"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s088-ex",
+      "en": "Example:",
+      "ur": "مثال:",
+      "ps": "بېلګه:",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s088-t1",
+      "en": "G.M of the values 2, 4 and 8 is;",
+      "ur": "قدروں 2، 4 اور 8 کا ہندسی اوسط ہے؛",
+      "ps": "د ارزښتونو 2، 4 او 8 هندسي اوسط دی؛"
+    },
+    {
+      "id": "stat11-s088-t2",
+      "en": "G.M by this formula is difficult to calculate when the figures are large in size and greater in number. This can be simplified by using logarithm.",
+      "ur": "اس فارمولے سے ہندسی اوسط کا حساب اس وقت مشکل ہوتا ہے جب اعداد سائز میں بڑے اور تعداد میں زیادہ ہوں۔ اسے لوگارتھم استعمال کر کے آسان بنایا جا سکتا ہے۔",
+      "ps": "د دې فورمول په واسطه د هندسي اوسط محاسبه هغه وخت ستونزمنه وي کله چې شمېرې په کچه لوی او په شمېر ډېرې وي. دا د لوګارېتم په کارولو سره ساده کېدای شي."
+    },
+    {
+      "id": "stat11-s088-t3",
+      "en": "Taking antilog on both sides",
+      "ur": "دونوں اطراف کا اینٹی لوگ لیتے ہوئے",
+      "ps": "په دواړو خواوو انټي‌لوګ اخیستلو سره"
+    },
+    {
+      "id": "stat11-s088-t4",
+      "en": "It is a mathematical average and is an appropriate average to use for the data relating to proportions, ratios, and rate of increase, rate of growth, percentages and index numbers.",
+      "ur": "یہ ایک ریاضیاتی اوسط ہے اور تناسب، شرحوں، اضافے کی شرح، نمو کی شرح، فیصد اور اشاریہ اعداد سے متعلق اعداد و شمار کے لیے استعمال کرنے کے لیے موزوں اوسط ہے۔",
+      "ps": "دا یو ریاضیاتي اوسط دی او د تناسبونو، نسبتونو، د زیاتوالي کچې، د ودې کچې، سلنو او شاخصي شمېرو پورې اړوندو معلوماتو لپاره د کارولو مناسب اوسط دی."
+    },
+    {
+      "id": "stat11-s088-h251",
+      "en": "2.5.1 Computation of geometric mean",
+      "ur": "2.5.1 ہندسی اوسط کا حساب",
+      "ps": "2.5.1 د هندسي اوسط محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s088-i1",
+      "en": "(i) Geometric mean in case of individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں ہندسی اوسط",
+      "ps": "(i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې هندسي اوسط"
+    },
+    {
+      "id": "stat11-s088-ex29",
+      "en": "Example: 2.29",
+      "ur": "مثال: 2.29",
+      "ps": "بېلګه: 2.29",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-29"
+    },
+    {
+      "id": "stat11-s088-q29",
+      "en": "Calculate geometric mean for the data: 50, 51, 52, 53, and 54.",
+      "ur": "اعداد و شمار 50, 51, 52, 53 اور 54 کے لیے ہندسی اوسط حساب کریں۔",
+      "ps": "د معلوماتو 50, 51, 52, 53 او 54 لپاره هندسي اوسط محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-29"
+    },
+    {
+      "id": "stat11-s088-sol29",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-29"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s088-ex",
+        "stat11-s088-t1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s088-t2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s088-t3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s088-t4",
+        "stat11-s088-h251",
+        "stat11-s088-i1",
+        "stat11-s088-ex29",
+        "stat11-s088-q29",
+        "stat11-s088-sol29"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 6
+    }
+  ],
+  "vocabulary": {
+    "antilog": {
+      "ur": "اینٹی لوگ",
+      "ps": "انټي‌لوګ"
+    },
+    "logarithm": {
+      "ur": "لوگارتھم",
+      "ps": "لوګارېتم"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s088-e1",
+      "latex": "\\text{G.M}=(2\\times4\\times8)^{1/3}=(64)^{1/3}=(4^3)^{1/3}=4",
+      "accessible": "G.M = (2 × 4 × 8)^(1/3) = (64)^(1/3) = (4³)^(1/3) = 4",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = (2 × 4 × 8)^(1/3) = (64)^(1/3) = (4³)^(1/3) = 4"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = (2 × 4 × 8)^(1/3) = (64)^(1/3) = (4³)^(1/3) = 4"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = (2 × 4 × 8)^(1/3) = (64)^(1/3) = (4³)^(1/3) = 4"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-l1",
+      "latex": "\\log\\text{G.M}=\\log(x_1\\cdot x_2\\cdots x_n)^{1/n}",
+      "accessible": "log G.M = log(x1 · x2 ··· xn)^(1/n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "log G.M = log(x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "log G.M = log(x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "log G.M = log(x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-l2",
+      "latex": "=\\dfrac{1}{n}\\left(\\log x_1+\\log x_2+\\cdots+\\log x_n\\right)",
+      "accessible": "= (1/n)(log x1 + log x2 + ⋯ + log xn)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (1/n)(log x1 + log x2 + ⋯ + log xn)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (1/n)(log x1 + log x2 + ⋯ + log xn)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (1/n)(log x1 + log x2 + ⋯ + log xn)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-l3",
+      "latex": "=\\dfrac{1}{n}\\left(\\sum_{i=1}^{n}\\log x_i\\right)",
+      "accessible": "= (1/n)(Σ (i = 1 to n) log xi)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (1/n)(Σ (i = 1 to n) log xi)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (1/n)(Σ (i = 1 to n) log xi)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (1/n)(Σ (i = 1 to n) log xi)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-f1",
+      "latex": "\\text{G.M}=\\text{antilog}\\left(\\dfrac{\\sum_{i=1}^{n}\\log x}{n}\\right)\\qquad\\text{(Formula for ungrouped data)}",
+      "accessible": "G.M = antilog((Σ (i = 1 to n) log x)/n)   (Formula for ungrouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n)   (Formula for ungrouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n)   (Formula for ungrouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n)   (Formula for ungrouped data)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-f2",
+      "latex": "=\\text{antilog}\\left(\\dfrac{\\sum_{i=1}^{n}f\\log x}{n}\\right)\\qquad\\text{(Formula for grouped data)}",
+      "accessible": "= antilog((Σ (i = 1 to n) f log x)/n)   (Formula for grouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= antilog((Σ (i = 1 to n) f log x)/n)   (Formula for grouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= antilog((Σ (i = 1 to n) f log x)/n)   (Formula for grouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= antilog((Σ (i = 1 to n) f log x)/n)   (Formula for grouped data)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s088-s",
+      "latex": "\\text{G.M}=\\text{antilog}\\left(\\dfrac{\\sum_{i=1}^{n}\\log x}{n}\\right)=\\text{antilog}\\dfrac{8.5793}{5}=\\text{antilog}(1.71586)=51.991",
+      "accessible": "G.M = antilog((Σ (i = 1 to n) log x)/n) = antilog(8.5793/5) = antilog(1.71586) = 51.991",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n) = antilog(8.5793/5) = antilog(1.71586) = 51.991"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n) = antilog(8.5793/5) = antilog(1.71586) = 51.991"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = antilog((Σ (i = 1 to n) log x)/n) = antilog(8.5793/5) = antilog(1.71586) = 51.991"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-29"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.29: x and log x",
+      "captionUrdu": "مثال 2.29: x اور log x",
+      "captionPashto": "بېلګه 2.29: x او log x",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "log x",
+          "ur": "log x",
+          "ps": "log x"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "1.6990",
+            "ur": "1.6990",
+            "ps": "1.6990"
+          }
+        ],
+        [
+          {
+            "en": "51",
+            "ur": "51",
+            "ps": "51"
+          },
+          {
+            "en": "1.7076",
+            "ur": "1.7076",
+            "ps": "1.7076"
+          }
+        ],
+        [
+          {
+            "en": "52",
+            "ur": "52",
+            "ps": "52"
+          },
+          {
+            "en": "1.7160",
+            "ur": "1.7160",
+            "ps": "1.7160"
+          }
+        ],
+        [
+          {
+            "en": "53",
+            "ur": "53",
+            "ps": "53"
+          },
+          {
+            "en": "1.7243",
+            "ur": "1.7243",
+            "ps": "1.7243"
+          }
+        ],
+        [
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          },
+          {
+            "en": "1.7324",
+            "ur": "1.7324",
+            "ps": "1.7324"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "8.5793",
+            "ur": "8.5793",
+            "ps": "8.5793"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-29",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 80. In the printed table the right-hand working sits beside the table and follows it here. A colour smudge at the top-left is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:40:36.805045+00:00",
+    "scope": "Scan 88 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,26 @@
+@printed 74
+@status lesson
+@sec 3-key | اہم نکات || Key points || مهم ټکي
+## اہم نکات || Key points || مهم ټکي
+- پروگرامنگ میں، اِن پُٹ وہ ڈیٹا ہوتا ہے جو کمپیوٹر کو پروسیسنگ کے لئے دیا جاتا ہے اور آؤٹ پُٹ وہ ہوتا ہے جو ڈیٹا پر کارروائی کے بعد کمپیوٹر تیار کرتا ہے۔ || In programming, input is the data given to the computer for processing, and output is what the computer produces after processing the data. || په پروګرام جوړونه کې input هغه ډېټا ده چې کمپیوټر ته د پروسس لپاره ورکول کېږي او output هغه دی چې کمپیوټر یې له پروسس وروسته جوړوي.
+- اسائنمنٹ / اِن پُٹ اسٹیٹمنٹ کے ذریعہ ڈیٹا ویری ایبل کو تفویض کیا جا سکتا ہے۔ || Data can be assigned to a variable through an assignment or input statement. || ډېټا د ګمارنې یا input بیان له لارې متغیر ته ورکول کېدای شي.
+- فارمیٹ سپیسیفائر اِن پُٹ اور آؤٹ پُٹ فنکشن میں استعمال ہوتے ہیں۔ || Format specifiers are used in input and output functions. || فارمېټ مشخص کوونکي په input او output فنکشنونو کې کارېږي.
+- ایسکیپ سیکوینس سے مراد حرفوں کا مجموعہ ہوتا ہے جس کا آغاز بیک سلیش \ سے ہوتا ہے۔ اس کے بعد صرف خصوصی علامت ہوتی ہے۔ || An escape sequence is a combination of characters that begins with a backslash \, followed by a special character. || اسکیپ سیکونس د تورو ټولګه ده چې په بېک سلیش \ پیلېږي او وروسته یې ځانګړې نښه راځي.
+@issue The key point prints a forward slash "/" for the backslash; escape sequences begin with "\". "Only a special symbol" is also too narrow — letters such as n and t follow the backslash (see 3.1.5).
+- scanf() فنکشن پروگرام کے نفاذ کے دوران ویری ایبل کے لیے values کو اِن پُٹ کرنے کے لئے استعمال ہوتا ہے۔ || The scanf() function is used to input values for variables while a program runs. || scanf() فنکشن د پروګرام د چلېدو پر مهال متغیرونو ته د ارزښتونو د داخلولو لپاره کارېږي.
+- پروگرام پر عمل درآمد کے دوران کی بورڈ سے کسی ایک کیریکٹر کو پڑھنے کے لئے getche()، getch() اور getchar() فنکشن استعمال ہوتے ہیں۔ || The getche(), getch() and getchar() functions are used to read a single character from the keyboard while a program runs. || د پروګرام د چلېدو پر مهال له کیبورډ د یوه توري د لوستلو لپاره getche()، getch() او getchar() فنکشنونه کارېږي.
+- سیمی کالن ; ہر اسٹیٹمنٹ کے آخر میں استعمال ہوتا ہے۔ || The semicolon ; is used at the end of every statement. || سیمي کولن ; د هر بیان په پای کې کارېږي.
+- آپریٹر علامتیں ہیں جو ڈیٹا پر مختلف کارروائیوں کے لئے استعمال کی جاتی ہیں۔ || Operators are symbols used for various operations on data. || عملګرونه هغه نښې دي چې پر ډېټا د بېلابېلو عملیاتو لپاره کارېږي.
+- C لینگویج کمپاؤنڈ اسائنمنٹ آپریٹرز فراہم کرتی ہے جو اسائنمنٹ آپریٹر اور حسابی آپریٹرز کا مجموعہ ہے۔ || The C language provides compound assignment operators, which combine the assignment operator and arithmetic operators. || C ژبه مرکب ګمارنې عملګرونه لري چې د ګمارنې او حسابي عملګرونو یوځای والی دی.
+- انکریمنٹ آپریٹر کی نمائندگی ڈبل پلس ++ کے ذریعہ کی جاتی ہے۔ || The increment operator is represented by a double plus ++. || د زیاتوالي عملګر د دوه ګوني جمع ++ په واسطه ښودل کېږي.
+- ڈیکریمنٹ آپریٹر کی نمائندگی ڈبل مائنس -- کے ذریعہ کی جاتی ہے۔ || The decrement operator is represented by a double minus --. || د کموالي عملګر د دوه ګوني منفي -- په واسطه ښودل کېږي.
+- ریلیشنل آپریٹرز کو پروگراموں میں شرائط لکھنے کے لئے استعمال کیا جاتا ہے۔ || Relational operators are used to write conditions in programs. || نسبتي عملګرونه په پروګرامونو کې د شرطونو د لیکلو لپاره کارېږي.
+- آپریٹر کی ایک قسم جو سنگل اوپیرینڈ کے ساتھ کام کرتی ہے، یونیری آپریٹر کہلاتا ہے۔ || A kind of operator that works with a single operand is called a unary operator. || هغه عملګر چې له یوه عملوند سره کار کوي یونري عملګر بلل کېږي.
+- آپریٹر کی ایک قسم جو دو رقموں کے ساتھ کام کرتی ہے اسے بائنری آپریٹر کہا جاتا ہے۔ || A kind of operator that works with two operands is called a binary operator. || هغه عملګر چې له دوو عملوندونو سره کار کوي باینري عملګر بلل کېږي.
+- آپریٹر کی ایک قسم جو تین رقموں کے ساتھ کام کرتی ہے اسے ٹرنری آپریٹر کہا جاتا ہے۔ || A kind of operator that works with three operands is called a ternary operator. || هغه عملګر چې له درېیو عملوندونو سره کار کوي درې ګونی (ternary) عملګر بلل کېږي.
+@sec 3-ex | مشق || Exercise || تمرین
+@tab doing
+# مشق || Exercise || تمرین
+q 1 | موزوں جواب کا انتخاب کریں۔ || Choose the suitable answer. || مناسب ځواب وټاکئ.
+qp i | ایسے فنکشنز جو ڈیٹا لیتے اور پھر انہیں کسی ویری ایبل میں اسٹور کرتے ہیں ______ کہلاتے ہیں۔ (الف) آؤٹ پُٹ فنکشنز (ب) سٹرنگ فنکشنز (ج) عددی فنکشنز (د) اِن پُٹ فنکشنز || Functions that take data and then store it in a variable are called ______. (a) output functions (b) string functions (c) numeric functions (d) input functions || هغه فنکشنونه چې ډېټا اخلي او بیا یې په متغیر کې ساتي ______ بلل کېږي. (الف) output فنکشنونه (ب) سټرنګ فنکشنونه (ج) عددي فنکشنونه (د) input فنکشنونه
+qp ii | ان میں کون سا فنکشن آؤٹ پُٹ کو سکرین پر دکھانے کے لیے استعمال ہوتا ہے؟ (الف) printf() (ب) scanf() (ج) gets() (د) getchar() || Which of these functions is used to show output on the screen? (a) printf() (b) scanf() (c) gets() (d) getchar() || له دې څخه کوم فنکشن په سکرین د output ښودلو لپاره کارېږي؟ (الف) printf() (ب) scanf() (ج) gets() (د) getchar()

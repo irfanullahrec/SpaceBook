@@ -1,0 +1,24 @@
+@printed 131
+@status lesson
+@sec 6-key | اہم نکات || Key points || مهم ټکي
+## اہم نکات || Key points || مهم ټکي
+- ڈیٹا خام حقائق اور اعداد و شمار ہیں جن پر ڈیجیٹل کمپیوٹر کے ذریعہ کارروائی کی جاتی ہے۔ || Data is raw facts and figures that a digital computer processes. || ډېټا خام حقایق او ارقام دي چې ډیجیټل کمپیوټر پرې کار کوي.
+- لاجک گیٹ ایک الیکٹرانک سرکٹ ہے جو ایک یا زیادہ اِن پُٹ سگنل لیتا ہے اور ایک ہی آؤٹ پُٹ سگنل تیار کرتا ہے۔ || A logic gate is an electronic circuit that takes one or more input signals and produces a single output signal. || منطقي دروازه برېښنايي سرکټ دی چې یو یا څو input سیګنالونه اخلي او یو output سیګنال جوړوي.
+- AND گیٹ لاجیکل ضرب کرتا ہیں۔ || The AND gate performs logical multiplication. || AND دروازه منطقي ضرب کوي.
+- OR گیٹ لاجیکل جمع کے لیے استعمال ہوتا ہے۔ || The OR gate is used for logical addition. || OR دروازه د منطقي جمع لپاره کارېږي.
+- NOT گیٹ اِن پُٹ ویلیو کو تبدیل کرنے کے لئے استعمال ہوتا ہے۔ || The NOT gate is used to invert the input value. || NOT دروازه د input ارزښت د اړولو لپاره کارېږي.
+- ٹرُتھ ٹیبل ایک ٹیبل ہے جس میں اِن پُٹ ویلیوز اور ان کے مطابق آؤٹ پُٹ ویلیوز کے تمام ممکنہ امتزاج ہوتے ہیں۔ || A truth table is a table containing all possible combinations of input values and the corresponding output values. || د حقیقت جدول هغه جدول دی چې د input ارزښتونو او اړوندو output ارزښتونو ټول ممکن ترکیبونه لري.
+- جس گیٹ کی آؤٹ پُٹ 1 ہوتی ہے جب تمام اِن پُٹ 0 ہوتے ہیں تو اسے NOR گیٹ کہتے ہیں۔ || A gate whose output is 1 when all inputs are 0 is called a NOR gate. || هغه دروازه چې کله ټول inputs 0 وي output یې 1 وي، NOR دروازه بلل کېږي.
+- جس گیٹ کی آؤٹ پُٹ 0 ہوتی ہے جب تمام اِن پُٹ 1 ہوتے ہیں تو اسے NAND گیٹ کہتے ہیں۔ || A gate whose output is 0 when all inputs are 1 is called a NAND gate. || هغه دروازه چې کله ټول inputs 1 وي output یې 0 وي، NAND دروازه بلل کېږي.
+- وہ گیٹ جس کی آؤٹ پُٹ 0 ہوتی ہے جب تمام اِن پُٹس میں 0 یا 1 ہوتے ہیں تو اسے XOR گیٹ کہا جاتا ہے۔ || A gate whose output is 0 when all inputs are 0 or all are 1 is called an XOR gate. || هغه دروازه چې کله ټول inputs 0 یا ټول 1 وي output یې 0 وي، XOR دروازه بلل کېږي.
+- وہ گیٹ جس کی آؤٹ پُٹ 1 ہوتی ہے جب تمام اِن پُٹ 0 یا 1 ہوتے ہیں تو اسے XNOR گیٹ کہا جاتا ہے۔ || A gate whose output is 1 when all inputs are 0 or all are 1 is called an XNOR gate. || هغه دروازه چې کله ټول inputs 0 یا ټول 1 وي output یې 1 وي، XNOR دروازه بلل کېږي.
+- بولین فنکشن / ایکسپریشن بولین ویری ایبل، کانسٹنٹ اور آپریٹر کا مجموعہ ہے۔ || A Boolean function/expression is a combination of Boolean variables, constants and operators. || بولین فنکشن/عبارت د بولین متغیرونو، ثابتونو او عملګرونو ټولګه ده.
+- بولین فنکشن کا اختصار حتمی آؤٹ پُٹ کو متاثر کیے بغیر بولین فنکشن میں ٹرم یا ویری ایبل کی تعداد کو کم کرنے کا عمل ہے۔ || Simplifying a Boolean function is the process of reducing the number of terms or variables in it without affecting the final output. || د بولین فنکشن لنډول پرته له دې چې وروستی output اغېزمن شي د اصطلاحګانو یا متغیرونو د شمېر د کمولو عمل دی.
+- K-Map ایک جیسے ایکسپریشن کو ایک ساتھ جوڑنے کا ایک خاکہ فراہم کرتا ہے اور اس طرح، ناپسندیدہ ویری ایبل کو ختم کرتا ہے۔ || A K-map gives a layout for grouping similar terms together, and in this way removes unwanted variables. || K-Map د ورته اصطلاحګانو د یوځای کولو خاکه ورکوي او په دې ډول ناغوښتي متغیرونه لرې کوي.
+@sec 6-ex | مشق || Exercise || تمرین
+@tab doing
+# مشق || Exercise || تمرین
+q 1 | موزوں جواب کا انتخاب کریں۔ || Choose the suitable answer. || مناسب ځواب وټاکئ.
+qp i | جب ڈیٹا کمپیوٹر میں داخل ہوتا ہے تو اُسے ______ میں تبدیل کیا جاتا ہے۔ (الف) بائنری نمبر سسٹم (ب) اعشاری نمبر سسٹم (ج) ہیگزاڈیسیمل نمبر سسٹم (د) آکٹل نمبر سسٹم || When data enters the computer it is converted into ______. (a) the binary number system (b) the decimal number system (c) the hexadecimal number system (d) the octal number system || کله چې ډېټا کمپیوټر ته ننوځي، په ______ بدلېږي. (الف) باینري شمېر سیسټم (ب) لسیز شمېر سیسټم (ج) هګزاډېسیمل شمېر سیسټم (د) اکټل شمېر سیسټم
+qp ii | ایک الیکٹرانک سرکٹ جو ایک یا ایک سے زیادہ سگنل لیتا ہے اور ایک ہی آؤٹ پُٹ دیتا ہے ______ کہلاتا ہے۔ (الف) شکل (ب) ٹیبل (ج) ڈیجیٹل لاجک گیٹ (د) ان میں سے کوئی نہیں || An electronic circuit that takes one or more signals and gives a single output is called ______. (a) a figure (b) a table (c) a digital logic gate (d) none of these || هغه برېښنايي سرکټ چې یو یا څو سیګنالونه اخلي او یو output ورکوي ______ بلل کېږي. (الف) شکل (ب) جدول (ج) ډیجیټل منطقي دروازه (د) له دې هېڅ یو
+@issue The option letter (د) before "ان میں سے کوئی نہیں" is missing in Q1(ii).

@@ -1,0 +1,30 @@
+@printed 194
+p (ii) Let $C=\{\text{having at most one boy}\}=\{BGG,GBG,GGB,GGG\}$ then $P(C)=\dfrac{n(C)}{n(S)}=\dfrac48=\dfrac12$. || (ii) فرض کریں $C=\{\text{زیادہ سے زیادہ ایک لڑکا ہونا}\}=\{BGG,GBG,GGB,GGG\}$، تو $P(C)=\dfrac{n(C)}{n(S)}=\dfrac48=\dfrac12$۔ || (ii) فرض کړئ $C=\{\text{ډېر تر ډېره یو هلک لرل}\}=\{BGG,GBG,GGB,GGG\}$، نو $P(C)=\dfrac{n(C)}{n(S)}=\dfrac48=\dfrac12$.
+p (iii) Let $D=\{\text{having at least one boy}\}=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB\}$ then $P(D)=\dfrac{n(D)}{n(S)}=\dfrac78$. || (iii) فرض کریں $D=\{\text{کم از کم ایک لڑکا ہونا}\}=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB\}$، تو $P(D)=\dfrac{n(D)}{n(S)}=\dfrac78$۔ || (iii) فرض کړئ $D=\{\text{لږ تر لږه یو هلک لرل}\}=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB\}$، نو $P(D)=\dfrac{n(D)}{n(S)}=\dfrac78$.
+p (iv) Let $E=\{\text{having exactly one boy}\}=\{BGG,GBG,GGB\}$ then $P(E)=\dfrac{n(E)}{n(S)}=\dfrac38$. || (iv) فرض کریں $E=\{\text{بالکل ایک لڑکا ہونا}\}=\{BGG,GBG,GGB\}$، تو $P(E)=\dfrac{n(E)}{n(S)}=\dfrac38$۔ || (iv) فرض کړئ $E=\{\text{کټ مټ یو هلک لرل}\}=\{BGG,GBG,GGB\}$، نو $P(E)=\dfrac{n(E)}{n(S)}=\dfrac38$.
+endexample
+exercise 6.4
+q 1 | Let $S=\{1,2,3,4,5,6\}$ be the sample space of rolling a die. What is the probability of || فرض کریں $S=\{1,2,3,4,5,6\}$ پانسہ پھینکنے کی نمونہ فضا ہے۔ ان کا احتمال کیا ہے || فرض کړئ $S=\{1,2,3,4,5,6\}$ د ځار د غورځولو د نمونې فضا ده. د لاندې پېښو احتمال څومره دی
+qp (i) | Rolling a 5? || 5 آنا؟ || 5 راتلل؟
+qp (ii) | Rolling a number less than one? || ایک سے کم عدد آنا؟ || له یوه کم عدد راتلل؟
+qp (iii) | Rolling a number greater than 0? || 0 سے بڑا عدد آنا؟ || له 0 لوی عدد راتلل؟
+qp (iv) | Rolling a multiple of 3? || 3 کا مضرب آنا؟ || د 3 مضرب راتلل؟
+qp (v) | Rolling a number greater than or equal to 4? || 4 سے بڑا یا اس کے برابر عدد آنا؟ || له 4 لوی یا ورسره برابر عدد راتلل؟
+q 2 | A bag contains 4 white, 5 red and 6 green balls. 3 balls are drawn at random. What is the probability that || ایک تھیلے میں 4 سفید، 5 سرخ اور 6 سبز گیندیں ہیں۔ بے ترتیب 3 گیندیں نکالی جاتی ہیں۔ اس کا احتمال کیا ہے کہ || په یوه کڅوړه کې 4 سپین، 5 سره او 6 شنه توپونه دي. په تصادفي ډول 3 توپونه ایستل کېږي. احتمال څومره دی چې
+qp (i) | All are green || سب سبز ہوں || ټول شنه وي
+qp (ii) | All are white. || سب سفید ہوں۔ || ټول سپین وي.
+q 3 | A true or false test contains eight questions. If a student guesses the answer for each question, find the probability: || درست یا غلط کے ایک امتحان میں آٹھ سوالات ہیں۔ اگر طالب علم ہر جواب کا اندازہ لگائے تو احتمال معلوم کریں: || د سم یا ناسم په یوه ازموینه کې اته پوښتنې دي. که زده کوونکی د هرې پوښتنې ځواب اټکل کړي، احتمال پیدا کړئ:
+qp (i) | 8 answers are correct. || 8 جواب درست ہوں۔ || 8 ځوابونه سم وي.
+qp (ii) | 7 answers are correct and 1 is incorrect. || 7 جواب درست اور 1 غلط ہو۔ || 7 ځوابونه سم او 1 ناسم وي.
+qp (iii) | 6 answers are correct and 2 are incorrect. || 6 جواب درست اور 2 غلط ہوں۔ || 6 ځوابونه سم او 2 ناسم وي.
+qp (iv) | at least 6 answers are correct. || کم از کم 6 جواب درست ہوں۔ || لږ تر لږه 6 ځوابونه سم وي.
+q 4 | Three unbiased coins are tossed. What is the probability of obtaining || تین غیر جانب دار سکے اچھالے جاتے ہیں۔ ان نتائج کا احتمال کیا ہے || درې بې طرفه سکې غورځول کېږي. د لاندې پایلو احتمال څومره دی
+qp (i) | all heads || سب چت || ټول مخونه
+qp (ii) | two heads || دو چت || دوه مخونه
+qp (iii) | one head || ایک چت || یو مخ
+qp (iv) | at least one head || کم از کم ایک چت || لږ تر لږه یو مخ
+qp (v) | at least two heads || کم از کم دو چت || لږ تر لږه دوه مخونه
+qp (vi) | All tails. || سب پٹ۔ || ټول شاګانې.
+q 5 | A committee of 5 person is to be selected at random from 6 men and 4 women. Find the probability that the committee will consist of || 6 مردوں اور 4 عورتوں میں سے 5 افراد کی کمیٹی بے ترتیب منتخب کرنی ہے۔ اس احتمال کو معلوم کریں کہ کمیٹی میں ہوں || له 6 نارینه وو او 4 ښځو څخه د 5 کسانو کمیټه په تصادفي ډول ټاکل کېږي. احتمال پیدا کړئ چې کمیټه له دې کسانو جوړه وي
+qp (i) | 3 men and 2 women || 3 مرد اور 2 عورتیں || 3 نارینه او 2 ښځې
+qp (ii) | 2 men and 3 women. || 2 مرد اور 3 عورتیں۔ || 2 نارینه او 3 ښځې.

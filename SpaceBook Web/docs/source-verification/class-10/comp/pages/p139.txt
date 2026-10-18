@@ -1,0 +1,67 @@
+@printed 127
+@status lesson
+svg تین ویری ایبلز — مثال 1 کا K-map || Three variables — K-map of Example 1 || درې متغیره — د ۱ بېلګې K-map
+<svg viewBox="0 0 360 160" width="360" role="img" aria-label="3-variable K-map with columns A-bar B-bar, A-bar B, A B, A B-bar and rows C-bar, C: cells 0 1 1 0 in both rows; one group of four covers the A-bar B and A B columns" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M8 4 L40 40" stroke="#111827"/>
+<text x="30" y="14" font-weight="700">AB</text><text x="12" y="44" font-weight="700">C</text>
+<text x="71.0" y="32">A̅B̅</text>
+<text x="133.0" y="32">A̅B</text>
+<text x="195.0" y="32">AB</text>
+<text x="257.0" y="32">AB̅</text>
+<text x="30" y="70.0">C̅</text>
+<text x="30" y="120.0">C</text>
+<rect x="40" y="40" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 40 V140 M164 40 V140 M226 40 V140 M40 90 H288" stroke="#111827" stroke-width="2"/>
+<text x="71.0" y="70.0">0</text>
+<text x="133.0" y="70.0">1</text>
+<text x="195.0" y="70.0">1</text>
+<text x="257.0" y="70.0">0</text>
+<text x="71.0" y="120.0">0</text>
+<text x="133.0" y="120.0">1</text>
+<text x="195.0" y="120.0">1</text>
+<text x="257.0" y="120.0">0</text>
+<rect x="108" y="46" width="112" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+</svg>
+endsvg
+- یہاں پر ایک ہی گروپ ہے جو چار سیلوں پر مشتمل ہے۔ || Here there is a single group made of four cells. || دلته یوازې یوه ډله ده چې څلور حجرې لري.
+- یہاں قطار وار کوئی ویری ایبل مشترک نہیں ہے لیکن B کالم وار مشترک ویری ایبل ہے۔ || Here no variable is common along the rows, but B is common down the columns. || دلته د کرښو په اوږدو هېڅ متغیر ګډ نه دی، خو B د ستنو ګډ متغیر دی.
+- تو مختصر شدہ ایکسپریشن یہ ہو گا: || So the simplified expression is: || نو لنډ شوی عبارت دا دی:
+m Z = F(A,B,C) = B
+### مثال نمبر 2: || Example 2: || بېلګه ۲:
+p درج بالا ایکسپریشن Z = f(A,B,C) = A.B.C + A̅.B.C + A.B̅.C̅ + A̅.B.C̅ + A.B.C̅ + A.B̅.C کے لیے K-Map || The K-map for the expression Z = f(A,B,C) = A.B.C + A̅.B.C + A.B̅.C̅ + A̅.B.C̅ + A.B.C̅ + A.B̅.C || د Z = f(A,B,C) = A.B.C + A̅.B.C + A.B̅.C̅ + A̅.B.C̅ + A.B.C̅ + A.B̅.C عبارت لپاره K-Map
+svg تین ویری ایبلز — مثال 2 کا K-map || Three variables — K-map of Example 2 || درې متغیره — د ۲ بېلګې K-map
+<svg viewBox="0 0 360 160" width="360" role="img" aria-label="3-variable K-map: cells 0 1 1 1 in both rows (columns A-bar B-bar, A-bar B, A B, A B-bar); group I covers the A B and A B-bar columns (A), group II covers the A-bar B and A B columns (B)" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M8 4 L40 40" stroke="#111827"/>
+<text x="30" y="14" font-weight="700">AB</text><text x="12" y="44" font-weight="700">C</text>
+<text x="71.0" y="32">A̅B̅</text>
+<text x="133.0" y="32">A̅B</text>
+<text x="195.0" y="32">AB</text>
+<text x="257.0" y="32">AB̅</text>
+<text x="30" y="70.0">C̅</text>
+<text x="30" y="120.0">C</text>
+<rect x="40" y="40" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 40 V140 M164 40 V140 M226 40 V140 M40 90 H288" stroke="#111827" stroke-width="2"/>
+<text x="71.0" y="70.0">0</text>
+<text x="133.0" y="70.0">1</text>
+<text x="195.0" y="70.0">1</text>
+<text x="257.0" y="70.0">1</text>
+<text x="71.0" y="120.0">0</text>
+<text x="133.0" y="120.0">1</text>
+<text x="195.0" y="120.0">1</text>
+<text x="257.0" y="120.0">1</text>
+<rect x="170" y="46" width="112" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="111" y="49" width="106" height="82" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+</svg>
+endsvg
+- یہاں پر دو گروپ ہیں اور ہر گروپ میں چار چار ملحقہ سیل موجود ہیں۔ || Here there are two groups, each containing four adjacent cells. || دلته دوه ډلې دي او په هره ډله کې څلور نښتې حجرې دي.
+- گروپ I میں A کالم وار مشترک ویری ایبل ہے جبکہ گروپ II میں B قطار وار مشترک ویری ایبل ہے۔ || In group I, A is the variable common down the columns, while in group II, B is the common variable. || په I ډله کې A د ستنو ګډ متغیر دی، او په II ډله کې B ګډ متغیر دی.
+- ان دونوں ویری ایبلز کو جمع کر کے مختصر شدہ ایکسپریشن حاصل کیا جا سکتا ہے۔ || The simplified expression is obtained by adding these two variables. || د دې دوو متغیرونو په جمع کولو لنډ شوی عبارت ترلاسه کېږي.
+- آخر میں مختصر شدہ ایکسپریشن درج ذیل ہو گا: || Finally, the simplified expression is: || په پای کې لنډ شوی عبارت دا دی:
+m Z = f(A,B,C) = A + B
+@issue Group II's B is common across two columns (A̅B and AB), not "along the row" as printed (قطار وار).
+### مثال نمبر 3: || Example 3: || بېلګه ۳:
+m F(A,B,C) = A̅.BC + A̅.BC̅ + AB̅C̅ + AB̅C
+p درج بالا ایکسپریشن کے لیے K-Map || The K-map for the expression above || د پورتني عبارت لپاره K-Map
+@deco The K-map headings in the book mark the complements with a stray tick (A´B´, C´) rather than a bar.

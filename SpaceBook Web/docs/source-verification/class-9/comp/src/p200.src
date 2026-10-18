@@ -1,0 +1,20 @@
+@printed 192
+@status lesson
+### Superscript <sup></sup> || سپر اسکرپٹ <sup></sup> || Superscript <sup></sup>
+p These tags are used to convert the text to superscript that is within the tags. || یہ ٹیگز اپنے اندر کے متن کو سپر اسکرپٹ (اوپر چھوٹا) بنانے کے لیے استعمال ہوتے ہیں۔ || دا tags خپل دننه متن superscript کوي.
+p For example: X<sup>2</sup> — Result: X² || مثال: X<sup>2</sup> — نتیجہ: X² || بېلګه: X<sup>2</sup> — پایله: X²
+### Subscript <sub></sub> || سب اسکرپٹ <sub></sub> || Subscript <sub></sub>
+p These tags are used to convert the text to subscript that is within the tags. || یہ ٹیگز اپنے اندر کے متن کو سب اسکرپٹ (نیچے چھوٹا) بنانے کے لیے استعمال ہوتے ہیں۔ || دا tags خپل دننه متن subscript کوي.
+p For example: O<sub>2</sub> — Result: O₂ || مثال: O<sub>2</sub> — نتیجہ: O₂ || بېلګه: O<sub>2</sub> — پایله: O₂
+m <html>
+m <head>
+m <title>Title of Page</title>
+m </head>
+m <body>
+m X<sup>Y</sup> Here Y is in superscript.<br><br>
+m X<sup>2.37</sup> Here, 2.37 is in superscript.<br><br>
+m H<sub>2</sub>O Here, 2 is in subscript.<br><br>
+m H<sub>2</sub>SO<sub>4</sub> Here, 2 and 4 are in subscript.<br>
+m </body>
+m </html>
+p (Figure 7.25: Using superscript and subscript in HTML document — "using sup and sub tags.html" in Notepad++.) || (شکل 7.25: HTML دستاویز میں سپر اسکرپٹ اور سب اسکرپٹ کا استعمال۔) || (۷.۲۵ شکل: په HTML سند کې د superscript او subscript کارونه.)

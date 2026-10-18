@@ -1,0 +1,81 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s148-p139",
+  "title": "a. Client/Server Network Architecture; Example",
+  "headingUrdu": "الف۔ کلائنٹ/سرور نیٹ ورک آرکیٹیکچر؛ مثال",
+  "headingPashto": "الف. پېرېدونکی/خدمتګار د شبکې جوړښت؛ بېلګه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 148,
+    "printedPage": "139"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s148-h1",
+      "en": "a. Client/Server Network Architecture",
+      "ur": "الف۔ کلائنٹ/سرور نیٹ ورک آرکیٹیکچر",
+      "ps": "الف. پېرېدونکی/خدمتګار د شبکې جوړښت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s148-a",
+      "en": "Server is a powerful computer that provides centralized administration of the network and serves up the resources that are available on the network, such as printers and files.",
+      "ur": "سرور ایک طاقتور کمپیوٹر ہے جو نیٹ ورک کی مرکزی انتظامیہ فراہم کرتا ہے اور نیٹ ورک پر دستیاب وسائل، جیسے پرنٹرز اور فائلیں، پیش کرتا ہے۔",
+      "ps": "خدمتګار یو پیاوړی کمپیوټر دی چې د شبکې مرکزي اداره برابروي او هغه سرچینې چې په شبکه شته، لکه پرنټرونه او فایلونه، وړاندې کوي."
+    },
+    {
+      "id": "cs11-s148-b",
+      "en": "Client on the other hand is a network device that participates in a client/server relationship by requesting a service from a server. It may be a computer that allows a user or users to log on to the network and take advantage of the resources available on the network.",
+      "ur": "دوسری طرف کلائنٹ ایک نیٹ ورک آلہ ہے جو سرور سے خدمت کی درخواست کر کے کلائنٹ/سرور تعلق میں حصہ لیتا ہے۔ یہ ایسا کمپیوٹر ہو سکتا ہے جو ایک یا زیادہ صارفین کو نیٹ ورک میں لاگ آن ہونے اور نیٹ ورک پر دستیاب وسائل سے فائدہ اٹھانے کی اجازت دے۔",
+      "ps": "پېرېدونکی بل لوري ته د شبکې یوه وسیله ده چې له خدمتګار نه د خدمت په غوښتلو سره د پېرېدونکي/خدمتګار په اړیکه کې برخه اخلي. دا کېدای شي یو کمپیوټر وي چې یو یا ډیر کاروونکو ته اجازه ورکوي چې شبکې ته ننوځي او د شبکې په شته سرچینو ګټه واخلي."
+    },
+    {
+      "id": "cs11-s148-c",
+      "en": "The client/server Architecture is particularly recommended for networks requiring a high degree of reliability. The term Client/server refers to the concept of sharing the work involved in processing data between the client computer and the server computer.",
+      "ur": "کلائنٹ/سرور آرکیٹیکچر خاص طور پر ایسے نیٹ ورکس کے لیے تجویز کیا جاتا ہے جنہیں اعلیٰ درجے کی قابلِ اعتمادیت درکار ہو۔ اصطلاح کلائنٹ/سرور اس تصور کی طرف اشارہ کرتی ہے کہ ڈیٹا کی پراسیسنگ میں شامل کام کلائنٹ کمپیوٹر اور سرور کمپیوٹر کے درمیان بانٹا جاتا ہے۔",
+      "ps": "د پېرېدونکي/خدمتګار جوړښت په ځانګړې توګه هغو شبکو ته سپارښتل کېږي چې لوړه کچه باوري توب غواړي. اصطلاح پېرېدونکی/خدمتګار هغې مفکورې ته اشاره کوي چې د ډېټا په پروسس کې شامل کار د پېرېدونکي کمپیوټر او خدمتګار کمپیوټر ترمنځ وېشل کېږي."
+    },
+    {
+      "id": "cs11-s148-d",
+      "en": "The client begins the exchange by requesting data from the server. The server responds by sending one or more streams of data to the client. In addition to the actual data transfer, this exchange may also require control information, such as user authentication and the identification of a data file to be transferred.",
+      "ur": "کلائنٹ سرور سے ڈیٹا کی درخواست کر کے تبادلہ شروع کرتا ہے۔ سرور کلائنٹ کو ڈیٹا کے ایک یا زیادہ دھارے بھیج کر جواب دیتا ہے۔ اصل ڈیٹا منتقلی کے علاوہ اس تبادلے میں کنٹرول معلومات بھی درکار ہو سکتی ہیں، جیسے صارف کی تصدیق اور منتقل کی جانے والی ڈیٹا فائل کی شناخت۔",
+      "ps": "پېرېدونکی د خدمتګار نه د ډېټا په غوښتلو تبادله پیلوي. خدمتګار د ډېټا یو یا ډیر جریانونه پېرېدونکي ته په لېږلو ځواب ورکوي. د ډېټا له حقیقي لېږد سربېره، دې تبادلې ته کېدای شي کنټرول معلومات هم اړین وي، لکه د کاروونکي تصدیق او د لېږدول کېدونکې ډېټا فایل پېژندنه."
+    },
+    {
+      "id": "cs11-s148-h2",
+      "en": "Example:",
+      "ur": "مثال:",
+      "ps": "بېلګه:",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s148-e",
+      "en": "One example of a client/server network is a corporate environment where employees use a company e-mail server to send, receive and store e-mail. The e-mail client on an employee computer issues a request to the e-mail server for any unread mail. The server responds by sending the requested e-mail to the client. Data transfer from a client to a server is referred to as an upload and data from a server to a client as a download.",
+      "ur": "کلائنٹ/سرور نیٹ ورک کی ایک مثال ایک کارپوریٹ ماحول ہے جہاں ملازمین ای میل بھیجنے، وصول کرنے اور محفوظ کرنے کے لیے کمپنی کا ای میل سرور استعمال کرتے ہیں۔ ملازم کے کمپیوٹر پر ای میل کلائنٹ ای میل سرور سے کسی بھی ان پڑھی میل کی درخواست کرتا ہے۔ سرور مطلوبہ ای میل کلائنٹ کو بھیج کر جواب دیتا ہے۔ کلائنٹ سے سرور کو ڈیٹا کی منتقلی اپ لوڈ اور سرور سے کلائنٹ کو ڈیٹا ڈاؤن لوڈ کہلاتا ہے۔",
+      "ps": "د پېرېدونکي/خدمتګار شبکې یوه بېلګه یو شرکتي چاپېریال دی چېرته چې کارکوونکي د شرکت د برېښنالیک خدمتګار د برېښنالیک لېږلو، ترلاسه کولو او ذخیره کولو لپاره کاروي. د کارکوونکي په کمپیوټر د برېښنالیک پېرېدونکی د هر نالوستل شوي ټپال لپاره د برېښنالیک خدمتګار ته غوښتنه کوي. خدمتګار د غوښتل شوي برېښنالیک په لېږلو سره پېرېدونکي ته ځواب ورکوي. له پېرېدونکي نه خدمتګار ته د ډېټا لېږد اپلوډ او له خدمتګار نه پېرېدونکي ته ډېټا ډاونلوډ بلل کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s148-h1",
+        "cs11-s148-a",
+        "cs11-s148-b",
+        "cs11-s148-c",
+        "cs11-s148-d",
+        "cs11-s148-h2",
+        "cs11-s148-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 139: “a. Client/Server Network Architecture” with the paragraphs on Server, Client, the architecture and the exchange, and the “Example:” paragraph. The words Server and Client at the start of the first two paragraphs are printed in colour. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:15:20.594563+00:00",
+    "scope": "Scan 148 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

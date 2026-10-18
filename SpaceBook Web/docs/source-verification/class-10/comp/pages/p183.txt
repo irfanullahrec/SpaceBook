@@ -1,0 +1,23 @@
+@printed 169
+@status lesson
+### اینکر بنانا || Making an anchor || اینکر جوړول
+p اینکر ٹیگ ایک HTML ٹیگ ہے اور اسے ٹیکسٹ کے اندر دکھائی دینے والے الفاظ کی وضاحت کرنے کے لئے استعمال کیا جاتا ہے جس پر کلک کیا جا سکتا ہے۔ یہ الفاظ (ہائپر لنکس) عام طور پر ویب پر مزید معلومات کا حوالہ دیتے ہیں۔ جس پیج پر آپ ہائپر لنک کرنا چاہتے ہو اس جگہ پر اینکر ٹیگ میں لیبل بنائیں۔ لیبل بنانے کے لئے طریقہ یہ ہے: || The anchor tag is an HTML tag used to mark words shown in the text that can be clicked. These words (hyperlinks) usually refer to more information on the web. At the place on the page you want to link to, make a label in an anchor tag. The way to make a label is: || اینکر ټیګ یو HTML ټیګ دی چې په متن کې د هغو ښکاره کلمو د ټاکلو لپاره کارېږي چې پرې کلیک کېدای شي. دا کلمې (هایپرلینکونه) معمولاً په ویب کې نورو معلوماتو ته اشاره کوي. د پاڼې په هغه ځای کې چې غواړئ لینک ورته وکړئ، په اینکر ټیګ کې لیبل جوړ کړئ. د لیبل جوړولو طریقه دا ده:
+m <a name="label"></a>
+### اینکر کی طرف ہائپر لنک بنانا || Making a hyperlink to an anchor || اینکر ته هایپرلینک جوړول
+p ایک ہائپر لنک بنانے کے لیے، ڈاکومنٹ کی منزل (address) معلوم ہونا چاہئے۔ ایک ہائپر لنک آپ کے ویب پیج کو دوسرے ویب پیجز، یا کسی فائل سے منسلک کر سکتا ہے۔ href کے ساتھ عام <a></a> ٹیگ کا استعمال کر کے یوزر اینکر کو ہائپر لنک دے سکتا ہے۔ href کا مطلب ہے ہائپر ٹیکسٹ ریفرنس۔ یہ href پیج یا ڈاکومنٹ کا ہدف ایڈریس بیان کرتا ہے جیسا کہ شکل نمبر 7.47 میں دکھایا گیا ہے۔ اس کا طریقہ یہ ہے: || To make a hyperlink, the destination (address) of the document must be known. A hyperlink can connect your web page to other web pages or to a file. Using the ordinary <a></a> tag with href, the user can link to an anchor. href means hypertext reference; it states the target address of the page or document, as shown in Figure 7.47. The way to do it is: || د هایپرلینک جوړولو لپاره باید د سند منزل (address) معلوم وي. هایپرلینک ستاسو ویب پاڼه له نورو ویب پاڼو یا یوه فایل سره نښلولای شي. د href سره د عادي <a></a> ټیګ په کارولو کاروونکی اینکر ته هایپرلینک ورکولای شي. href د hypertext reference معنا لري؛ دا د پاڼې یا سند موخه پته ښيي، لکه په ۷.۴۷ شکل کې. طریقه یې دا ده:
+m <a href="#label">text to be displayed</a>
+svg شکل نمبر 7.47 اینکر پر ہائپر لنکس بنانا || Figure 7.47 Making hyperlinks with an anchor || ۷.۴۷ شکل په اینکر هایپرلینکونه جوړول
+<svg viewBox="0 0 560 150" width="560" role="img" aria-label="The code &lt;a href=&quot;http://www.example.com&quot;&gt;My sample page&lt;/a&gt; with arrows labelling its parts: opening anchor tag, where it links to, anchor text, close the tag" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<defs><marker id="arF747" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0284c7"/></marker></defs>
+<rect x="4" y="4" width="552" height="142" rx="10" fill="#fff" stroke="#22c55e" stroke-width="8"/>
+<text x="280" y="50" font-size="17" fill="#1e3a8a">&lt;a href="http://www.example.com"&gt;My sample page&lt;/a&gt;</text>
+<g stroke="#0284c7" stroke-width="4"><path d="M80 100 L92 66" marker-end="url(#arF747)"/><path d="M215 100 L227 66" marker-end="url(#arF747)"/><path d="M370 100 L382 66" marker-end="url(#arF747)"/><path d="M490 100 L502 66" marker-end="url(#arF747)"/></g>
+<g font-size="13" fill="#1d4ed8"><text x="80" y="122">opening anchor tag</text><text x="215" y="122">where it links to</text><text x="370" y="122">anchor text</text><text x="490" y="122">close the tag</text></g>
+</svg>
+endsvg
+p # علامت کو لیبل کے سامنے رکھنا ضروری ہے۔ مثال کے طور پر، Unit 7 سے پہلے درج ذیل اینکر بنائیں اور یہ وہ جگہ ہے جہاں آپ ہائپر لنک کرنا چاہتے ہیں۔ || The # sign must be placed in front of the label. For example, put the following anchor just before Unit 7; this is the place you want to link to. || # نښه باید د لیبل مخې ته کېښودل شي. د بېلګې په توګه، له Unit 7 مخکې لاندې اینکر جوړ کړئ؛ دا هغه ځای دی چې غواړئ لینک ورته وکړئ.
+m <a name="unit7"></a>
+p اب، نیچے دیئے گئے کسی بھی مقام پر اینکر پر ہائپر لنک بنائیں۔ || Now, at any place below, make a hyperlink to the anchor. || اوس په لاندې هر ځای کې اینکر ته هایپرلینک جوړ کړئ.
+m Unit 7 میں جانے کے لئے درج ذیل لنک پر کلک کریں۔
+m <a href="#unit7">here</a>
+@issue The # sentence is garbled in the scan ("…اور یہ وہ جگہ # ہے"); the "#" belongs to the start of the sentence ("# علامت…"). The "Unit 7" sentence is example text that goes in the HTML before the link.

@@ -1,0 +1,41 @@
+{
+  "id": "cls9-chemistry-pdf1-page-036",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "pdfPage": 36,
+  "printedPage": 30,
+  "status": "source-compared-corrected",
+  "chapterNumber": 1,
+  "chapter": "Unit 1: Fundamentals of Chemistry",
+  "title": "Mole definition, gram atomic mass and Table 1.10",
+  "sourceObservations": "The source defines mole as a link between mass and particle number, gives four mass-in-grams examples, defines gram atomic mass, and shows Table 1.10 with hydrogen 1.008 g, oxygen 15.998 g, and carbon 12.00 g.",
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "activeDataTargets": [
+    "chemChapters[0].topics[5].subtopics[0]",
+    "chemChapters[0].tables"
+  ],
+  "comparisonStatus": "Four consecutive source pages rendered and visually compared to the active Chemistry data; OCR supported extraction but was not treated as authoritative.",
+  "correctionsApplied": [
+    "Restored the source counting-unit context and the mole link statement.",
+    "Added Table 1.10 as a semantic three-column table with the exact printed values and equivalents."
+  ],
+  "translationStatus": "Mole definition, four mass-equivalence examples, gram atomic mass definition and all three Table1.10 rows are paired; table masses 1.008 g, 15.998 g and 12.00 g match source.",
+  "unresolvedItems": [
+    "Inspect bilingual table alignment and hover behavior; translation semantics remain open."
+  ],
+  "followUpSourceInspected": true,
+  "followUpTranslationStatus": "Mole definition, four mass-equivalence examples, gram atomic mass definition and all three Table1.10 rows are paired; table masses 1.008 g, 15.998 g and 12.00 g match source.",
+  "followUpUnresolved": [
+    "Alternate table tab gram-mass translations and final source fidelity audit pending."
+  ],
+  "followUpSourceCompared": true,
+  "followUpImageReview": "2026-10-11: pages36–39,40–43,44–47,48–51 inspected in four-image batches.",
+  "followUpTranslationCoverage": {
+    "table110Headers": 3,
+    "table110Cells": 9,
+    "paragraphPairs": 33,
+    "tableWidthRatio": 0.82
+  },
+  "followUpSemanticTranslationVerified": false,
+  "fullyCompleted": false
+}

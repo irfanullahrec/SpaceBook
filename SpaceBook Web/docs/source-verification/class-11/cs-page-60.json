@@ -1,0 +1,123 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s060-p051",
+  "title": "Types of RAM: SRAM and DRAM; SDRAM — start",
+  "headingUrdu": "ریم کی اقسام: ایس ریم اور ڈی ریم؛ ایس ڈی ریم — آغاز",
+  "headingPashto": "د RAM ډولونه: SRAM او DRAM؛ SDRAM — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 60,
+    "printedPage": "51"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s060-h1",
+      "en": "Types of RAM",
+      "ur": "ریم کی اقسام",
+      "ps": "د RAM ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s060-a",
+      "en": "There are two basic types of RAM.",
+      "ur": "ریم کی دو بنیادی اقسام ہیں۔",
+      "ps": "د RAM دوه بنسټیز ډولونه شته."
+    },
+    {
+      "id": "cs11-s060-t1",
+      "en": "Static RAM (SRAM)",
+      "ur": "اسٹیٹک ریم (ایس ریم)",
+      "ps": "جامده RAM (SRAM)",
+      "listGroup": "ram"
+    },
+    {
+      "id": "cs11-s060-t2",
+      "en": "Dynamic RAM (DRAM)",
+      "ur": "ڈائنامک ریم (ڈی ریم)",
+      "ps": "متحرکه RAM (DRAM)",
+      "listGroup": "ram"
+    },
+    {
+      "id": "cs11-s060-h2",
+      "en": "i. Static RAM (SRAM)",
+      "ur": "i۔ اسٹیٹک ریم (ایس ریم)",
+      "ps": "i. جامده RAM (SRAM)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s060-b",
+      "en": "(SRAM) is a type of semiconductor memory where the word “Static” indicates that it does not need to be periodically refreshed to retain its data. SRAM is more expensive, but faster and significantly less power hungry than DRAM. Due to a more complex internal structure, SRAM is less dense than DRAM and is therefore not used for high-capacity, low-cost applications such as the main memory in personal computers. Static RAM is mainly used to make the CPU’s cache.",
+      "ur": "ایس ریم نیم موصل میموری کی ایک قسم ہے جہاں لفظ ’’اسٹیٹک‘‘ اس بات کی طرف اشارہ کرتا ہے کہ اپنا ڈیٹا برقرار رکھنے کے لیے اسے وقتاً فوقتاً ری فریش کرنے کی ضرورت نہیں ہوتی۔ ایس ریم زیادہ مہنگی ہے لیکن ڈی ریم سے تیز اور نمایاں طور پر کم بجلی استعمال کرنے والی ہے۔ زیادہ پیچیدہ اندرونی ساخت کی وجہ سے ایس ریم ڈی ریم سے کم گنجان ہے اور اس لیے اسے زیادہ گنجائش اور کم لاگت والی ایپلیکیشنز جیسے پرسنل کمپیوٹرز کی مین میموری کے لیے استعمال نہیں کیا جاتا۔ اسٹیٹک ریم بنیادی طور پر سی پی یو کی کیش بنانے کے لیے استعمال ہوتی ہے۔",
+      "ps": "SRAM د نیمه تېرونکي حافظې یو ډول دی چېرته چې ټکی “جامد” ښیي چې خپل ډېټا ساتلو لپاره د وخت په وخت تازه کولو ته اړتیا نه لري. SRAM ډیره ګرانه ده خو ګړندۍ او له DRAM نه په څرګنده توګه لږ بریښنا اخلي. د ډیر پیچلي دننني جوړښت له امله SRAM له DRAM نه لږ ګنده ده او نو د لوړې ظرفیت، ټیټ لګښت اپلیکېشنونو لکه په شخصي کمپیوټرونو کې اصلي حافظې لپاره نه کارول کېږي. جامده RAM په عمده توګه د CPU د کېش جوړولو لپاره کارول کېږي."
+    },
+    {
+      "id": "cs11-s060-h3",
+      "en": "ii. Dynamic RAM",
+      "ur": "ii۔ ڈائنامک ریم",
+      "ps": "ii. متحرکه RAM",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s060-c",
+      "en": "DRAM is a type of semiconductor memory where the word “Dynamic” indicates that it needs to be periodically refreshed to retain its data. It stores each bit of data in a separate capacitor within an integrated circuit. The capacitor can be either charged or discharged; these two states are taken to represent the two values of a bit, conventionally called 0 and 1. In personal computers DRAMs are used as internal memory because of their simple structure that allows high storage and low cost as compared to SRAM. There are two main types of DRAM.",
+      "ur": "ڈی ریم نیم موصل میموری کی ایک قسم ہے جہاں لفظ ’’ڈائنامک‘‘ اس بات کی طرف اشارہ کرتا ہے کہ اپنا ڈیٹا برقرار رکھنے کے لیے اسے وقتاً فوقتاً ری فریش کرنا پڑتا ہے۔ یہ ڈیٹا کا ہر بٹ ایک انٹیگریٹڈ سرکٹ کے اندر ایک الگ کپیسیٹر میں محفوظ کرتی ہے۔ کپیسیٹر یا تو چارج ہو سکتا ہے یا ڈسچارج؛ ان دو حالتوں کو بٹ کی دو قدروں کے لیے لیا جاتا ہے جنہیں روایتی طور پر ۰ اور ۱ کہتے ہیں۔ پرسنل کمپیوٹرز میں ڈی ریم اندرونی میموری کے طور پر استعمال ہوتی ہے کیونکہ ان کی سادہ ساخت ایس ریم کے مقابلے میں زیادہ ذخیرے اور کم لاگت کی اجازت دیتی ہے۔ ڈی ریم کی دو بنیادی اقسام ہیں۔",
+      "ps": "DRAM د نیمه تېرونکي حافظې یو ډول دی چېرته چې ټکی “متحرک” ښیي چې خپل ډېټا ساتلو لپاره باید وخت په وخت تازه شي. دا د ډېټا هر بټ په یوه ګډ سرکټ کې په یو جلا کپیسیټر کې ساتي. کپیسیټر کېدای شي یا چارج وي یا ډیسچارج؛ دا دوه حالتونه د بټ دوه ارزښتونو لپاره اخیستل کېږي چې په دود ورته ۰ او ۱ وايي. په شخصي کمپیوټرونو کې DRAMs د دننني حافظې په توګه کارول کېږي د هغوی د ساده جوړښت له امله چې د SRAM په پرتله لوړ ذخیره او ټیټ لګښت اجازه ورکوي. د DRAM دوه اصلي ډولونه شته."
+    },
+    {
+      "id": "cs11-s060-d1",
+      "en": "SDRAM",
+      "ur": "ایس ڈی ریم",
+      "ps": "ایس ډي رام (SDRAM)",
+      "listGroup": "dram"
+    },
+    {
+      "id": "cs11-s060-d2",
+      "en": "DDR SDRAM",
+      "ur": "ڈی ڈی آر ایس ڈی ریم",
+      "ps": "ډي ډي آر ایس ډي رام (DDR SDRAM)",
+      "listGroup": "dram"
+    },
+    {
+      "id": "cs11-s060-d",
+      "en": "SDRAM stands for Synchronous Dynamic Random Access Memory. SDRAM is a high speed semiconductor memory. It is an improved form of the older DRAM (Dynamic Random Access Memory). SDRAM operates synchronously, which means that it operates in sync with the",
+      "ur": "ایس ڈی ریم کا مطلب ہے سنکرونس ڈائنامک رینڈم ایکسیس میموری۔ ایس ڈی ریم ایک تیز رفتار نیم موصل میموری ہے۔ یہ پرانی ڈی ریم (ڈائنامک رینڈم ایکسیس میموری) کی بہتر شکل ہے۔ ایس ڈی ریم ہم وقت کام کرتی ہے، یعنی یہ",
+      "ps": "SDRAM د همغږي متحرکې تصادفي لاسرسي حافظې لنډیز دی. SDRAM د لوړ ګړندیتوب نیمه تېرونکې حافظه ده. دا د زړې DRAM (متحرکه تصادفي لاسرسي حافظه) ښه شوې بڼه ده. SDRAM همغږي کار کوي، مانا دا چې دا له",
+      "cont": true
+    },
+    {
+      "id": "cs11-s060-c1",
+      "en": "Figure 2.5 SDRAM",
+      "ur": "شکل ۲.۵ ایس ڈی ریم",
+      "ps": "انځور ۲.۵ SDRAM",
+      "kind": "caption"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s060-h1",
+        "cs11-s060-a",
+        "cs11-s060-t1",
+        "cs11-s060-t2",
+        "cs11-s060-h2",
+        "cs11-s060-b",
+        "cs11-s060-h3",
+        "cs11-s060-c",
+        "cs11-s060-d1",
+        "cs11-s060-d2",
+        "cs11-s060-d",
+        "cs11-s060-c1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 51: “Types of RAM”, i. Static RAM (SRAM), ii. Dynamic RAM, the two types of DRAM and the start of SDRAM (the sentence continues on the next page) with a photograph (caption “Figure 2.5 SDRAM”). The headings i. and ii. are printed in a faded colour. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:45:55.656814+00:00",
+    "scope": "Scan 60 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

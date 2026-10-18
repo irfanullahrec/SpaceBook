@@ -1,0 +1,469 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s157-index-fixed-1",
+  "title": "Quantity relative · Example 4.1: price relatives (fixed base)",
+  "headingUrdu": "مقداری اضافت · مثال 4.1: قیمتی اضافتیں (مقررہ بنیاد)",
+  "headingPashto": "د مقدار نسبت · بېلګه 4.1: د بیې نسبتونه (ټاکلې بنسټ)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 157,
+    "printedPage": "149"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s157-c1",
+      "en": "current year price i.e. the year which we are considering, p0 is the price of base year “0”. Similarly,",
+      "ur": "موجودہ سال کی قیمت یعنی وہ سال جسے ہم زیر غور لا رہے ہیں، p0 بنیادی سال “0” کی قیمت ہے۔ اسی طرح،",
+      "ps": "د اوسني کال بیه یعنې هغه کال چې موږ یې په پام کې نیسو، p0 د بنسټیز کال “0” بیه ده. همدارنګه،",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"where P0n denote price of current year “n” as compared to bases year “0”, pn\")."
+      }
+    },
+    {
+      "id": "stat11-s157-ex41",
+      "en": "Example: 4.1",
+      "ur": "مثال: 4.1",
+      "ps": "بېلګه: 4.1",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-1"
+    },
+    {
+      "id": "stat11-s157-q41",
+      "en": "Find the price relatives for the following data of salt prices (per kg) by using the price of 2005 as a base.",
+      "ur": "نمک کی قیمتوں (فی کلو) کے درج ذیل اعداد و شمار کے لیے 2005 کی قیمت کو بنیاد لے کر قیمتی اضافتیں معلوم کریں۔",
+      "ps": "د مالګې د بیو (په کیلو) د لاندې معلوماتو لپاره د 2005 بیه د بنسټ په توګه اخیستلو سره د بیې نسبتونه ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-1"
+    },
+    {
+      "id": "stat11-s157-sol41",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-1"
+    },
+    {
+      "id": "stat11-s157-a1",
+      "en": "Since 2005 is given as base period therefore p0 = 15",
+      "ur": "چونکہ 2005 کو بنیادی مدت دیا گیا ہے اس لیے p0 = 15",
+      "ps": "ځکه چې 2005 د بنسټیزې دورې په توګه ورکړل شوی نو p0 = 15",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-1"
+    },
+    {
+      "id": "stat11-s157-a2",
+      "en": "Interpretation of Pon:",
+      "ur": "Pon کی تشریح:",
+      "ps": "د Pon تفسیر:",
+      "sourceGap": {
+        "note": "The interpretation continues on the next page (\"Compare each price relative with the base year relative …\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s157-c1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s157-ex41",
+        "stat11-s157-q41"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s157-sol41",
+        "stat11-s157-a1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s157-a2"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "quantity relative": {
+      "ur": "مقداری اضافت",
+      "ps": "د مقدار نسبت"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s157-qr",
+      "latex": "\\text{Quantity relative}=\\dfrac{\\text{Current period quantity}}{\\text{Base period quantity}}\\times 100",
+      "accessible": "Quantity relative = (Current period quantity / Base period quantity) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Quantity relative = (Current period quantity / Base period quantity) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Quantity relative = (Current period quantity / Base period quantity) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Quantity relative = (Current period quantity / Base period quantity) × 100"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s157-q0n",
+      "latex": "Q_{0n}=\\dfrac{q_n}{q_0}\\times 100",
+      "accessible": "Q0n = (qn / q0) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q0n = (qn / q0) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q0n = (qn / q0) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q0n = (qn / q0) × 100"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.1: years and prices",
+      "captionUrdu": "مثال 4.1: سال اور قیمتیں",
+      "captionPashto": "بېلګه 4.1: کلونه او بیې",
+      "headers": [
+        {
+          "en": "Years:",
+          "ur": "سال:",
+          "ps": "کلونه:"
+        },
+        {
+          "en": "2005",
+          "ur": "2005",
+          "ps": "2005"
+        },
+        {
+          "en": "2006",
+          "ur": "2006",
+          "ps": "2006"
+        },
+        {
+          "en": "2007",
+          "ur": "2007",
+          "ps": "2007"
+        },
+        {
+          "en": "2008",
+          "ur": "2008",
+          "ps": "2008"
+        },
+        {
+          "en": "2009",
+          "ur": "2009",
+          "ps": "2009"
+        },
+        {
+          "en": "2010",
+          "ur": "2010",
+          "ps": "2010"
+        },
+        {
+          "en": "2011",
+          "ur": "2011",
+          "ps": "2011"
+        },
+        {
+          "en": "2012",
+          "ur": "2012",
+          "ps": "2012"
+        },
+        {
+          "en": "2013",
+          "ur": "2013",
+          "ps": "2013"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Price:",
+            "ur": "قیمت:",
+            "ps": "بیه:"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Example 4.1 solution: price relatives",
+      "captionUrdu": "مثال 4.1 کا حل: قیمتی اضافتیں",
+      "captionPashto": "د بېلګې 4.1 حل: د بیې نسبتونه",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Price",
+          "ur": "قیمت",
+          "ps": "بیه"
+        },
+        {
+          "en": "P0n = (pn/p0) × 100",
+          "ur": "P0n = (pn/p0) × 100",
+          "ps": "P0n = (pn/p0) × 100"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2005",
+            "ur": "2005",
+            "ps": "2005"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "15/15 × 100 = 100",
+            "ur": "15/15 × 100 = 100",
+            "ps": "15/15 × 100 = 100"
+          }
+        ],
+        [
+          {
+            "en": "2006",
+            "ur": "2006",
+            "ps": "2006"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "14/15 × 100 = 93.33",
+            "ur": "14/15 × 100 = 93.33",
+            "ps": "14/15 × 100 = 93.33"
+          }
+        ],
+        [
+          {
+            "en": "2007",
+            "ur": "2007",
+            "ps": "2007"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "20/15 × 100 = 133.33",
+            "ur": "20/15 × 100 = 133.33",
+            "ps": "20/15 × 100 = 133.33"
+          }
+        ],
+        [
+          {
+            "en": "2008",
+            "ur": "2008",
+            "ps": "2008"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "21/15 × 100 = 140",
+            "ur": "21/15 × 100 = 140",
+            "ps": "21/15 × 100 = 140"
+          }
+        ],
+        [
+          {
+            "en": "2009",
+            "ur": "2009",
+            "ps": "2009"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "24/15 × 100 = 160",
+            "ur": "24/15 × 100 = 160",
+            "ps": "24/15 × 100 = 160"
+          }
+        ],
+        [
+          {
+            "en": "2010",
+            "ur": "2010",
+            "ps": "2010"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "23/15 × 100 = 153.33",
+            "ur": "23/15 × 100 = 153.33",
+            "ps": "23/15 × 100 = 153.33"
+          }
+        ],
+        [
+          {
+            "en": "2011",
+            "ur": "2011",
+            "ps": "2011"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "25/15 × 100 = 166.67",
+            "ur": "25/15 × 100 = 166.67",
+            "ps": "25/15 × 100 = 166.67"
+          }
+        ],
+        [
+          {
+            "en": "2012",
+            "ur": "2012",
+            "ps": "2012"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "18/15 × 100 = 120",
+            "ur": "18/15 × 100 = 120",
+            "ps": "18/15 × 100 = 120"
+          }
+        ],
+        [
+          {
+            "en": "2013",
+            "ur": "2013",
+            "ps": "2013"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "27/15 × 100 = 180",
+            "ur": "27/15 × 100 = 180",
+            "ps": "27/15 × 100 = 180"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 149. The first line completes the sentence from the previous page. The solution table has three columns; the third column shows each fraction over 15 times 100 with the result and is shown as text. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:06:38.907581+00:00",
+    "scope": "Scan 157 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s087-empirical-gm-start",
+  "title": "2.4.6 table · 2.4.7 Empirical relationship among mean, median and mode · 2.5 Geometric mean",
+  "headingUrdu": "2.4.6 جدول · 2.4.7 اوسط، وسطانیہ اور عادہ کے درمیان تجرباتی تعلق · 2.5 ہندسی اوسط",
+  "headingPashto": "2.4.6 جدول · 2.4.7 د اوسط، میانې او مود ترمنځ تجربوي اړیکه · 2.5 هندسي اوسط",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 87,
+    "printedPage": "79"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s087-h247",
+      "en": "2.4.7 Empirical relationship among mean, median and mode",
+      "ur": "2.4.7 اوسط، وسطانیہ اور عادہ کے درمیان تجرباتی تعلق",
+      "ps": "2.4.7 د اوسط، میانې او مود ترمنځ تجربوي اړیکه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s087-t247",
+      "en": "Knowing the values of mean, median and mode can give us some idea about the shape of a frequency distribution.",
+      "ur": "اوسط، وسطانیہ اور عادہ کی قدریں جاننا ہمیں تعدد تقسیم کی شکل کے بارے میں کچھ اندازہ دے سکتا ہے۔",
+      "ps": "د اوسط، میانې او مود د ارزښتونو پېژندل موږ ته د فریکونسي ویش د بڼې په اړه یو څه اټکل راکولای شي."
+    },
+    {
+      "id": "stat11-s087-s1",
+      "en": "(i) For symmetrical distribution the values of mean, median and mode are identical and they lie at the centre of the distribution.",
+      "ur": "(i) متناسب تقسیم کے لیے اوسط، وسطانیہ اور عادہ کی قدریں یکساں ہوتی ہیں اور وہ تقسیم کے مرکز میں واقع ہوتی ہیں۔",
+      "ps": "(i) د متناسب ویش لپاره د اوسط، میانې او مود ارزښتونه یو شان وي او د ویش په مرکز کې پراته وي."
+    },
+    {
+      "id": "stat11-s087-s2",
+      "en": "(ii) For asymmetrical or moderately skewed distributions like;",
+      "ur": "(ii) غیر متناسب یا اعتدال سے کج تقسیمات کے لیے جیسے؛",
+      "ps": "(ii) د غیرمتناسبو یا منځني کوړو ویشونو لپاره لکه؛"
+    },
+    {
+      "id": "stat11-s087-s3",
+      "en": "Using this relation if any two measures are known then the third one can be evaluated approximately. Note that this relation does not hold in case of extremely skewed distributions.",
+      "ur": "اس تعلق کو استعمال کرتے ہوئے اگر کوئی دو پیمانے معلوم ہوں تو تیسرا تقریباً معلوم کیا جا سکتا ہے۔ نوٹ کریں کہ یہ تعلق انتہائی کج تقسیمات کی صورت میں برقرار نہیں رہتا۔",
+      "ps": "د دې اړیکې په کارولو سره که هر دوه اندازې معلومې وي نو دریمه نږدې ټاکل کېدای شي. یادونه وکړئ چې دا اړیکه د ډېرو کوړو ویشونو په حالت کې نه پاتې کېږي."
+    },
+    {
+      "id": "stat11-s087-h25",
+      "en": "2.5 Geometric mean",
+      "ur": "2.5 ہندسی اوسط",
+      "ps": "2.5 هندسي اوسط",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s087-t25",
+      "en": "The nth root of the product of n positive values is called geometric mean. That is,",
+      "ur": "n مثبت قدروں کے حاصلِ ضرب کا n واں جذر ہندسی اوسط کہلاتا ہے۔ یعنی،",
+      "ps": "د n مثبتو ارزښتونو د ضرب حاصل n‌م جذر هندسي اوسط بلل کېږي. یعنې،"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s087-h247",
+        "stat11-s087-t247",
+        "stat11-s087-s1"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s087-s2"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "figure",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s087-s3",
+        "stat11-s087-h25",
+        "stat11-s087-t25"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    }
+  ],
+  "vocabulary": {
+    "geometric mean": {
+      "ur": "ہندسی اوسط",
+      "ps": "هندسي اوسط"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s087-emp",
+      "latex": "\\text{Mode}=3\\,\\text{Median}-2\\,\\text{Mean}",
+      "accessible": "Mode = 3Median − 2Mean",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Mode = 3Median − 2Mean"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Mode = 3Median − 2Mean"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Mode = 3Median − 2Mean"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s087-gm",
+      "latex": "\\text{G.M}=\\sqrt[n]{x_1\\cdot x_2\\cdots x_n}=(x_1\\cdot x_2\\cdots x_n)^{1/n}",
+      "accessible": "G.M = ⁿ√(x1 · x2 ··· xn) = (x1 · x2 ··· xn)^(1/n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "G.M = ⁿ√(x1 · x2 ··· xn) = (x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "G.M = ⁿ√(x1 · x2 ··· xn) = (x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "G.M = ⁿ√(x1 · x2 ··· xn) = (x1 · x2 ··· xn)^(1/n)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Data level and the average to be used",
+      "captionUrdu": "اعداد و شمار کی سطح اور استعمال ہونے والا اوسط",
+      "captionPashto": "د معلوماتو کچه او کارېدونکی اوسط",
+      "headers": [
+        {
+          "en": "Data level",
+          "ur": "اعداد و شمار کی سطح",
+          "ps": "د معلوماتو کچه"
+        },
+        {
+          "en": "Average to be used",
+          "ur": "استعمال ہونے والا اوسط",
+          "ps": "کارېدونکی اوسط"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Nominal",
+            "ur": "اسمی",
+            "ps": "نومي"
+          },
+          {
+            "en": "Mode",
+            "ur": "عادہ",
+            "ps": "مود"
+          }
+        ],
+        [
+          {
+            "en": "Ordinal",
+            "ur": "ترتیبی",
+            "ps": "ترتیبي"
+          },
+          {
+            "en": "Mode, median",
+            "ur": "عادہ، وسطانیہ",
+            "ps": "مود، میانه"
+          }
+        ],
+        [
+          {
+            "en": "Interval",
+            "ur": "وقفہ جاتی",
+            "ps": "انټروال"
+          },
+          {
+            "en": "Mode, median and mean",
+            "ur": "عادہ، وسطانیہ اور اوسط",
+            "ps": "مود، میانه او اوسط"
+          }
+        ],
+        [
+          {
+            "en": "Ratio",
+            "ur": "تناسبی",
+            "ps": "تناسبي"
+          },
+          {
+            "en": "Mode, median and mean",
+            "ur": "عادہ، وسطانیہ اور اوسط",
+            "ps": "مود، میانه او اوسط"
+          }
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s087-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 190\" role=\"img\" aria-label=\"Symmetrical frequency curve with mean, median and mode coinciding at the centre\" style=\"width:100%;max-width:420px;height:auto;background:#fff\"><line x1=\"30\" y1=\"12\" x2=\"30\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><path d=\"M40,148 C70,146 100,70 190,22 C280,70 310,146 340,148\" fill=\"none\" stroke=\"#1c6aa8\" stroke-width=\"2\"/><line x1=\"190\" y1=\"22\" x2=\"190\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"150\" r=\"4\" fill=\"#1c6aa8\"/><text x=\"375\" y=\"154\" font-size=\"12\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Variable</text><text transform=\"translate(12 80) rotate(-90)\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial\">Frequency</text><text x=\"190\" y=\"176\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Mean = Median = Mode</text></svg>",
+      "caption": "Symmetrical distribution: Mean = Median = Mode",
+      "captionUrdu": "متناسب تقسیم: اوسط = وسطانیہ = عادہ",
+      "captionPashto": "متناسب ویش: اوسط = میانه = مود",
+      "labels": [
+        {
+          "en": "Frequency",
+          "ur": "تعدد",
+          "ps": "فریکونسي"
+        },
+        {
+          "en": "Variable",
+          "ur": "متغیر",
+          "ps": "متغیر"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded schematic curve."
+      }
+    },
+    {
+      "id": "stat11-s087-fig2",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 190\" role=\"img\" aria-label=\"Positively skewed curve with mode, median and mean marked on the x-axis in the order mode, median, mean\" style=\"width:100%;max-width:420px;height:auto;background:#fff\"><line x1=\"30\" y1=\"12\" x2=\"30\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><path d=\"M40,148 C60,100 70,40 105,24 C150,22 170,90 250,128 C300,142 340,146 390,146\" fill=\"none\" stroke=\"#1c6aa8\" stroke-width=\"2\"/><line x1=\"105\" y1=\"24\" x2=\"105\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"105\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"105\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Mode</text><line x1=\"160\" y1=\"72\" x2=\"160\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"160\" y=\"176\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Median</text><line x1=\"215\" y1=\"112\" x2=\"215\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"215\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"215\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Mean</text></svg>",
+      "caption": "Positively skewed distribution: Mode < Median < Mean",
+      "captionUrdu": "مثبت کج تقسیم: عادہ < وسطانیہ < اوسط",
+      "captionPashto": "مثبت کوړ ویش: مود < میانه < اوسط",
+      "labels": [
+        {
+          "en": "Mode",
+          "ur": "عادہ",
+          "ps": "مود"
+        },
+        {
+          "en": "Median",
+          "ur": "وسطانیہ",
+          "ps": "میانه"
+        },
+        {
+          "en": "Mean",
+          "ur": "اوسط",
+          "ps": "اوسط"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded schematic curve."
+      }
+    },
+    {
+      "id": "stat11-s087-fig3",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 190\" role=\"img\" aria-label=\"Negatively skewed curve with mode, median and mean marked on the x-axis in the order mean, median, mode\" style=\"width:100%;max-width:420px;height:auto;background:#fff\"><line x1=\"30\" y1=\"12\" x2=\"30\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><path d=\"M40,148 C100,146 180,118 240,62 C265,42 285,26 300,24 C340,26 360,100 390,148\" fill=\"none\" stroke=\"#1c6aa8\" stroke-width=\"2\"/><line x1=\"190\" y1=\"100\" x2=\"190\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"190\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"190\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Mean</text><line x1=\"245\" y1=\"58\" x2=\"245\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"245\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"245\" y=\"176\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Median</text><line x1=\"300\" y1=\"24\" x2=\"300\" y2=\"150\" stroke=\"#1c6aa8\" stroke-width=\"1.8\"/><circle cx=\"300\" cy=\"150\" r=\"3\" fill=\"#1c6aa8\"/><text x=\"300\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Mode</text></svg>",
+      "caption": "Negatively skewed distribution: Mean < Median < Mode",
+      "captionUrdu": "منفی کج تقسیم: اوسط < وسطانیہ < عادہ",
+      "captionPashto": "منفي کوړ ویش: اوسط < میانه < مود",
+      "labels": [
+        {
+          "en": "Mean",
+          "ur": "اوسط",
+          "ps": "اوسط"
+        },
+        {
+          "en": "Median",
+          "ur": "وسطانیہ",
+          "ps": "میانه"
+        },
+        {
+          "en": "Mode",
+          "ur": "عادہ",
+          "ps": "مود"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded schematic curve."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 79. The 2.4.6 table of data levels continues from the previous page. The page-number badge at the foot is partly cut off. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:40:36.180543+00:00",
+    "scope": "Scan 87 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

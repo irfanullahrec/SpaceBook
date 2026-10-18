@@ -1,0 +1,114 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s273-p264",
+  "title": "b. Foreign Key; 8.2.4 Creating and Editing Relationships between Tables; a. Creating Relationship; Figure 8.15",
+  "headingUrdu": "ب۔ فارن کی؛ ۸.۲.۴ ٹیبلز کے درمیان تعلقات بنانا اور ان میں ترمیم کرنا؛ الف۔ تعلق بنانا؛ شکل ۸.۱۵",
+  "headingPashto": "ب. بهرنۍ کیلي؛ ۸.۲.۴ د جدولونو ترمنځ اړیکې جوړول او سمول؛ الف. اړیکه جوړول؛ انځور ۸.۱۵",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 273,
+    "printedPage": "264"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s273-h1",
+      "en": "b. Foreign Key",
+      "ur": "ب۔ فارن کی",
+      "ps": "ب. بهرنۍ کیلي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s273-a",
+      "en": "Foreign key is a key which is used as primary key in one table and secondary key in the other. It is used to create relationship between entities. In our project of Student Database, we will take Roll No field the foreign key when we create relationship between the Student table and the Exam table.",
+      "ur": "فارن کی وہ کی ہے جو ایک ٹیبل میں پرائمری کی اور دوسرے میں سیکنڈری کی کے طور پر استعمال ہوتی ہے۔ یہ انٹیٹیز کے درمیان تعلق بنانے کے لیے استعمال ہوتی ہے۔ ہمارے اسٹوڈنٹ ڈیٹا بیس کے پراجیکٹ میں ہم اسٹوڈنٹ ٹیبل اور ایگزام ٹیبل کے درمیان تعلق بناتے وقت رول نمبر فیلڈ کو فارن کی لیں گے۔",
+      "ps": "بهرنۍ کیلي هغه کیلي ده چې په یوه جدول کې د لومړنۍ کیلي او په بل کې د دویمي کیلي په توګه کارول کېږي. دا د وجودونو ترمنځ د اړیکې جوړولو لپاره کارول کېږي. زموږ د زده کوونکو ډېټابېس په پروژه کې به موږ کله چې د زده کوونکي جدول او د ازموینې جدول ترمنځ اړیکه جوړوو د Roll No ساحه بهرنۍ کیلي ونیسو."
+    },
+    {
+      "id": "cs11-s273-h2",
+      "en": "8.2.4 Creating and Editing Relationships between Tables",
+      "ur": "۸.۲.۴ ٹیبلز کے درمیان تعلقات بنانا اور ان میں ترمیم کرنا",
+      "ps": "۸.۲.۴ د جدولونو ترمنځ اړیکې جوړول او سمول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s273-b",
+      "en": "Relationships are links that associate a field in one table with a field in another. For example, in our Student Database, we have created two tables, Student table for storing students’ basic information and the Exam table for storing their examination data for different examinations.",
+      "ur": "تعلقات وہ روابط ہیں جو ایک ٹیبل کی فیلڈ کو دوسرے ٹیبل کی فیلڈ سے منسلک کرتے ہیں۔ مثلاً ہمارے اسٹوڈنٹ ڈیٹا بیس میں ہم نے دو ٹیبلز بنائے ہیں، اسٹوڈنٹ ٹیبل طلبہ کی بنیادی معلومات محفوظ کرنے کے لیے اور ایگزام ٹیبل مختلف امتحانات کے امتحانی ڈیٹا کو محفوظ کرنے کے لیے۔",
+      "ps": "اړیکې هغه تړاوونه دي چې د یوه جدول ساحه له بل جدول له ساحې سره تړي. د بېلګې په توګه زموږ د زده کوونکو ډېټابېس کې موږ دوه جدولونه جوړ کړي، د زده کوونکي جدول د زده کوونکو بنسټیزو معلوماتو د ساتلو لپاره او د ازموینې جدول د مختلفو ازموینو د ازموینې ډېټا د ساتلو لپاره."
+    },
+    {
+      "id": "cs11-s273-c",
+      "en": "Relationships also allow creating queries, forms and reports to display information from several tables.",
+      "ur": "تعلقات کئی ٹیبلز سے معلومات دکھانے کے لیے کوئریز، فارمز اور رپورٹس بنانے کی اجازت بھی دیتے ہیں۔",
+      "ps": "اړیکې د څو جدولونو نه د معلوماتو ښودلو لپاره د پوښتنو، فورمونو او راپورونو د جوړولو اجازه هم ورکوي."
+    },
+    {
+      "id": "cs11-s273-h3",
+      "en": "a. Creating Relationship",
+      "ur": "الف۔ تعلق بنانا",
+      "ps": "الف. اړیکه جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s273-d",
+      "en": "The following steps are used to create one-to-many relationship between Student table and Exam Table.",
+      "ur": "اسٹوڈنٹ ٹیبل اور ایگزام ٹیبل کے درمیان ایک سے کئی تعلق بنانے کے لیے درج ذیل اقدامات استعمال ہوتے ہیں۔",
+      "ps": "د زده کوونکي جدول او د ازموینې جدول ترمنځ د یو-ته-ډیر اړیکې د جوړولو لپاره لاندې ګامونه کارول کېږي."
+    },
+    {
+      "id": "cs11-s273-e",
+      "en": "Click the Relationship icon in Database Tools as shown in Figure 8.15.",
+      "ur": "ڈیٹا بیس ٹولز میں ریلیشن شپ آئیکن پر کلک کریں جیسا کہ شکل ۸.۱۵ میں دکھایا گیا ہے۔",
+      "ps": "په Database Tools کې د Relationship انځورن کلیک کړئ لکه څنګه چې ۸.۱۵ انځور کې ښودل شوی."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s273-h1",
+        "cs11-s273-a",
+        "cs11-s273-h2",
+        "cs11-s273-b",
+        "cs11-s273-c",
+        "cs11-s273-h3",
+        "cs11-s273-d",
+        "cs11-s273-e"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 445 205\" role=\"img\" aria-label=\"Access window with the Relationships command on the Database Tools tab\" style=\"width:100%;max-width:445px;height:auto;background:#fff\"><rect x=\"5\" y=\"5\" width=\"435\" height=\"195\" fill=\"#f4f7fb\" stroke=\"#555\"/><rect x=\"5\" y=\"5\" width=\"435\" height=\"16\" fill=\"#cfd9ea\" stroke=\"#555\"/><text x=\"222.5\" y=\"17\" font-size=\"8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Database (Access 2007) — Microsoft Access</text><circle cx=\"22\" cy=\"35\" r=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><text x=\"45\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Home</text><text x=\"113\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Create</text><text x=\"181\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">External Data</text><text x=\"249\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Database Tools</text><text x=\"317\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Design</text><rect x=\"10\" y=\"46\" width=\"420\" height=\"36\" fill=\"#e8eef8\" stroke=\"#aaa\"/><rect x=\"10\" y=\"95\" width=\"100\" height=\"95\" fill=\"#fff\" stroke=\"#888\"/><text x=\"15\" y=\"108\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">All Tables</text><text x=\"15\" y=\"124\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"30\" y=\"136\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Table</text><text x=\"15\" y=\"150\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam</text><text x=\"30\" y=\"162\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Exam : Table</text><rect x=\"115\" y=\"95\" width=\"315\" height=\"95\" fill=\"#fff\" stroke=\"#888\"/><text x=\"135\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Field Name</text><text x=\"240\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Data Type</text><text x=\"340\" y=\"107\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Description</text><rect x=\"120\" y=\"112\" width=\"120\" height=\"30\" fill=\"#fff\" stroke=\"#555\"/><text x=\"125\" y=\"124\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Relationships</text><text x=\"125\" y=\"136\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Define how data in tables is related</text></svg>",
+      "id": "cs11-s273-fig1",
+      "caption": "Figure 8.15 Creating Relationship",
+      "captionUrdu": "شکل ۸.۱۵ تعلق بنانا",
+      "captionPashto": "انځور ۸.۱۵ اړیکه جوړول",
+      "labels": [
+        {
+          "en": "Relationships",
+          "ur": "ریلیشن شپس",
+          "ps": "اړیکې"
+        },
+        {
+          "en": "Database Tools",
+          "ur": "ڈیٹا بیس ٹولز",
+          "ps": "د ډېټابېس وسایل"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 264: “b. Foreign Key”, the banner “8.2.4 Creating and Editing Relationships between Tables” with two paragraphs, “a. Creating Relationship” with its lead-in sentence, the first step and Figure 8.15 Creating Relationship (a screenshot of the Database Tools tab with a Relationships tooltip; redrawn as simplified coded SVG, the small text in the screenshot is illegible). The bold words Roll No, Student table, Exam table, Student Database, Relationship and Database Tools are kept. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:03:00.927393+00:00",
+    "scope": "Scan 273 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

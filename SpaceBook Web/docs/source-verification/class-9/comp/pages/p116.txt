@@ -1,0 +1,30 @@
+@pdf 119
+@printed 108
+@status lesson
+### Program 4.8: A program to find that a number that is input from the keyboard is positive, even, or odd? || پروگرام 4.8: کی بورڈ سے ان پٹ عدد مثبت، جفت یا طاق ہونے کا پروگرام۔ || پروګرام ۴.۸: له کیبورډ داخل شوی عدد مثبت، جفت یا طاق دی؟
+m using namespace std;
+m #include<iostream>
+m int main( )
+m {
+m     int num;
+m     cout<<"\nEnter a number in between -10 and 10:\t";
+m     cin>>num;
+m     if(num>0)
+m     {
+m         cout<<num<<" is a positive number"<<endl;
+m         if(num % 2 == 0)
+m             cout<<num<<" is also an even number"<<endl;
+m         else
+m             cout<<num<<" is also an odd number"<<endl;
+m     }
+m     else
+m         cout<<num<<"is a negative number"<<endl;
+m     return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter a number between -10 and 10:     7
+m 7 is a positive number
+m 7 is also an odd number
+endbox
+@issue The else branch also prints 0 as "a negative number"; kept as printed.
+p In the above program, the input number will be checked first for positive or negative and if the number is positive then the conditions inside the body of first *if* will be execute and checked for the condition that the number is even or odd. It is compulsory that the body of first *if* statement should be enclosed within the braces to make the inner *if* statement as the part of the body of first *if*. || اوپر والے پروگرام میں ان پٹ عدد کو پہلے مثبت یا منفی کے لیے جانچا جائے گا اور اگر عدد مثبت ہو تو پہلے *if* کے جسم کی شرائط چل کر یہ جانچیں گی کہ عدد جفت ہے یا طاق۔ لازمی ہے کہ پہلے *if* کا جسم بریسز میں بند ہو تاکہ اندرونی *if* پہلے *if* کے جسم کا حصہ بنے۔ || په پورتني پروګرام کې داخل شوی عدد لومړی د مثبت یا منفي لپاره ازمویل کېږي او که مثبت وي د لومړي *if* د بدنې شرطونه اجرا کېږي او ټاکي چې جفت دی که طاق. لازمه ده چې د لومړي *if* بدنه په قوسونو کې وي څو داخلي *if* د لومړي *if* د بدنې برخه شي.

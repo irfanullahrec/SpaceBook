@@ -1,0 +1,439 @@
+{
+  "chapter": "stat11-vital-statistics",
+  "id": "stat11-s234-vs-rates-5",
+  "title": "(ii) Indirect method · Example 7.4: crude and standardized death rate (start)",
+  "headingUrdu": "(ii) بالواسطہ طریقہ · مثال 7.4: خام اور معیاری شرحِ اموات (آغاز)",
+  "headingPashto": "(ii) غیر مستقیمه طریقه · بېلګه 7.4: خام او معیاري د مړینې کچه (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 234,
+    "printedPage": "224"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s234-h1",
+      "en": "(ii) Indirect method",
+      "ur": "(ii) بالواسطہ طریقہ",
+      "ps": "(ii) غیر مستقیمه طریقه"
+    },
+    {
+      "id": "stat11-s234-w",
+      "en": "where D_i = number of deaths in the standard population in the ith age group.",
+      "ur": "جہاں D_i = معیاری آبادی میں i ویں عمر کے گروہ میں اموات کی تعداد۔",
+      "ps": "چېرته چې D_i = په معیاري نفوس کې د i‌م عمري ډلې کې د مړینو شمېر."
+    },
+    {
+      "id": "stat11-s234-ex74",
+      "en": "Example: 7.4",
+      "ur": "مثال: 7.4",
+      "ps": "بېلګه: 7.4",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-q74",
+      "en": "Compute crude death rate and standardized death rate of the local population from the data given below and compare it with the crude death rate of the standard population.",
+      "ur": "نیچے دیے گئے اعداد و شمار سے مقامی آبادی کی خام شرحِ اموات اور معیاری شرحِ اموات حساب کریں اور اس کا معیاری آبادی کی خام شرحِ اموات سے موازنہ کریں۔",
+      "ps": "له لاندې ورکړل شویو معلوماتو څخه د سیمه‌ییز نفوس خام د مړینې کچه او معیاري د مړینې کچه محاسبه کړئ او د معیاري نفوس له خام د مړینې کچې سره یې پرتله کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-sol74",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-a1",
+      "en": "Now standardized death rate for local population by direct method is",
+      "ur": "اب مقامی آبادی کے لیے براہِ راست طریقے سے معیاری شرحِ اموات ہے",
+      "ps": "اوس د سیمه‌ییز نفوس لپاره په مستقیمه طریقه معیاري د مړینې کچه ده",
+      "role": "solution",
+      "exampleId": "stat11-ex-7-4",
+      "sourceGap": {
+        "note": "The working continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s234-h1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s234-w",
+        "stat11-s234-ex74",
+        "stat11-s234-q74"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s234-sol74"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s234-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s234-ind",
+      "latex": "S_T.D.R=\\dfrac{\\sum d_i}{\\sum\\left(\\dfrac{D_i}{P_i}\\right)p_i}\\times\\text{C.D.R of standard population}",
+      "accessible": "S_T.D.R = Σd_i / Σ(D_i/P_i)p_i × C.D.R of standard population",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S_T.D.R = Σd_i / Σ(D_i/P_i)p_i × C.D.R of standard population"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S_T.D.R = Σd_i / Σ(D_i/P_i)p_i × C.D.R of standard population"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S_T.D.R = Σd_i / Σ(D_i/P_i)p_i × C.D.R of standard population"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s234-cdr",
+      "latex": "\\text{C.D.R}=\\dfrac{D}{P}\\times 1000",
+      "accessible": "C.D.R = (D/P) × 1000",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.D.R = (D/P) × 1000"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.D.R = (D/P) × 1000"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.D.R = (D/P) × 1000"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-cl",
+      "latex": "\\text{C.D.R for local population}=\\dfrac{67}{5000}\\times 1000=13.4",
+      "accessible": "C.D.R for local population = 67/5000 × 1000 = 13.4",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.D.R for local population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.D.R for local population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.D.R for local population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-cs",
+      "latex": "\\text{C.D.R for standard population}=\\dfrac{67}{5000}\\times 1000=13.4",
+      "accessible": "C.D.R for standard population = 67/5000 × 1000 = 13.4",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.D.R for standard population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.D.R for standard population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.D.R for standard population = 67/5000 × 1000 = 13.4"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-4"
+    },
+    {
+      "id": "stat11-s234-dir",
+      "latex": "S_T.D.R=\\dfrac{\\sum\\left(\\dfrac{d_i}{p_i}\\right)P_i}{\\sum P_i}\\times 1000",
+      "accessible": "S_T.D.R = Σ(d_i/p_i)P_i / ΣP_i × 1000",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S_T.D.R = Σ(d_i/p_i)P_i / ΣP_i × 1000"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S_T.D.R = Σ(d_i/p_i)P_i / ΣP_i × 1000"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S_T.D.R = Σ(d_i/p_i)P_i / ΣP_i × 1000"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-7-4"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 7.4: local and standard population",
+      "captionUrdu": "مثال 7.4: مقامی اور معیاری آبادی",
+      "captionPashto": "بېلګه 7.4: سیمه‌ییز او معیاري نفوس",
+      "headers": [
+        {
+          "en": "Age (years)",
+          "ur": "عمر (سال)",
+          "ps": "عمر (کلونه)"
+        },
+        {
+          "en": "Local population: Population",
+          "ur": "مقامی آبادی: آبادی",
+          "ps": "سیمه‌ییز نفوس: نفوس"
+        },
+        {
+          "en": "Local population: Deaths",
+          "ur": "مقامی آبادی: اموات",
+          "ps": "سیمه‌ییز نفوس: مړینې"
+        },
+        {
+          "en": "Standard population: Population",
+          "ur": "معیاری آبادی: آبادی",
+          "ps": "معیاري نفوس: نفوس"
+        },
+        {
+          "en": "Standard population: Deaths",
+          "ur": "معیاری آبادی: اموات",
+          "ps": "معیاري نفوس: مړینې"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 - 10",
+            "ur": "0 - 10",
+            "ps": "0 - 10"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "600",
+            "ur": "600",
+            "ps": "600"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          }
+        ],
+        [
+          {
+            "en": "10 - 20",
+            "ur": "10 - 20",
+            "ps": "10 - 20"
+          },
+          {
+            "en": "1500",
+            "ur": "1500",
+            "ps": "1500"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ],
+        [
+          {
+            "en": "20 - 60",
+            "ur": "20 - 60",
+            "ps": "20 - 60"
+          },
+          {
+            "en": "2400",
+            "ur": "2400",
+            "ps": "2400"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "3000",
+            "ur": "3000",
+            "ps": "3000"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          }
+        ],
+        [
+          {
+            "en": "60 - 100",
+            "ur": "60 - 100",
+            "ps": "60 - 100"
+          },
+          {
+            "en": "700",
+            "ur": "700",
+            "ps": "700"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "400",
+            "ur": "400",
+            "ps": "400"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "Total",
+            "ps": "Total"
+          },
+          {
+            "en": "5000",
+            "ur": "5000",
+            "ps": "5000"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "5000",
+            "ur": "5000",
+            "ps": "5000"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-7-4"
+    }
+  ],
+  "sourceNote": "Printed page 224. The two-level header \"Local population / Standard population with Population and Deaths\" is flattened. The printed C.D.R values are both 13.4. A dark mark at the top-left corner is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:37:25.652089+00:00",
+    "scope": "Scan 234 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

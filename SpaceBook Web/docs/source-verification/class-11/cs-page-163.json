@@ -1,0 +1,139 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s163-p154",
+  "title": "Layer 1: Physical Layer; Layer 2: Data Link Layer — start",
+  "headingUrdu": "تہہ ۱: فزیکل لیئر؛ تہہ ۲: ڈیٹا لنک لیئر — آغاز",
+  "headingPashto": "طبقه ۱: فزیکي طبقه؛ طبقه ۲: د ډېټا نښلونې طبقه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 163,
+    "printedPage": "154"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s163-h1",
+      "en": "Layer 1: PHYSICAL LAYER",
+      "ur": "تہہ ۱: فزیکل لیئر",
+      "ps": "طبقه ۱: فزیکي طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s163-a",
+      "en": "The physical layer, the lowest layer of the OSI model, is concerned with the transmission and reception of the unstructured raw bit stream over a physical medium. It describes the electrical/optical, mechanical, and functional interfaces to the physical medium, and carries the signals for all of the higher layers. It provides the following functions.",
+      "ur": "فزیکل لیئر، او ایس آئی ماڈل کی سب سے نچلی تہہ، طبعی وسیلے پر غیر ساختہ خام بٹ سٹریم کی ترسیل اور وصولی سے متعلق ہے۔ یہ طبعی وسیلے کے برقی/بصری، میکانکی اور فعلی انٹرفیس بیان کرتی ہے اور تمام اونچی تہوں کے اشارے لے کر چلتی ہے۔ یہ درج ذیل افعال فراہم کرتی ہے۔",
+      "ps": "فزیکي طبقه، د OSI ماډل تر ټولو ټیټه طبقه، د فزیکي رسنۍ پر غیر جوړښت لرونکې خامې بټ جریان د لېږد او ترلاسه کولو سره اړه لري. دا فزیکي رسنۍ ته برېښنايي/نوري، مېخانیکي او دندیز انټرفیسونه بیانوي او د ټولو لوړو طبقو سیګنالونه وړي. دا لاندې دندې ترسره کوي."
+    },
+    {
+      "id": "cs11-s163-p1",
+      "en": "Defines physical means of sending data over network devices.",
+      "ur": "نیٹ ورک آلات پر ڈیٹا بھیجنے کے طبعی ذرائع متعین کرتی ہے۔",
+      "ps": "د شبکې وسایلو پر ډېټا لېږلو فزیکي وسیلې ټاکي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p2",
+      "en": "Defines the characteristics of the physical medium.",
+      "ur": "طبعی وسیلے کی خصوصیات متعین کرتی ہے۔",
+      "ps": "د فزیکي رسنۍ ځانګړتیاوې ټاکي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p3",
+      "en": "Transmission and receipt of data from the physical medium is managed at this layer.",
+      "ur": "طبعی وسیلے سے ڈیٹا کی ترسیل اور وصولی کا انتظام اسی تہہ پر ہوتا ہے۔",
+      "ps": "د فزیکي رسنۍ نه د ډېټا لېږد او ترلاسه کول په دې طبقه اداره کېږي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p4",
+      "en": "Interfaces between network medium and devices.",
+      "ur": "نیٹ ورک وسیلے اور آلات کے درمیان انٹرفیس۔",
+      "ps": "د شبکې رسنۍ او وسایلو ترمنځ انټرفیسونه.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p5",
+      "en": "Defines optical, electrical and mechanical characteristics.",
+      "ur": "بصری، برقی اور میکانکی خصوصیات متعین کرتی ہے۔",
+      "ps": "نوري، برېښنايي او مېخانیکي ځانګړتیاوې ټاکي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p6",
+      "en": "Conversion of the raw bit stream into electrical impulse, light or radio signal.",
+      "ur": "خام بٹ سٹریم کو برقی ضرب، روشنی یا ریڈیو اشارے میں تبدیل کرنا۔",
+      "ps": "د خامې بټ جریان بدلول برېښنايي ضربې، رڼا یا راډیو سیګنال ته.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p7",
+      "en": "Manages the encoding and decoding of data.",
+      "ur": "ڈیٹا کی انکوڈنگ اور ڈی کوڈنگ کا انتظام کرتی ہے۔",
+      "ps": "د ډېټا کوډ کول او کوډ پرانیستل اداره کوي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-p8",
+      "en": "Determines whether the encoded bits will be transmitted by baseband (digital) or broadband (analog) signaling.",
+      "ur": "طے کرتی ہے کہ انکوڈ شدہ بٹس بیس بینڈ (ڈیجیٹل) یا براڈ بینڈ (اینالاگ) سگنلنگ کے ذریعے بھیجے جائیں گے۔",
+      "ps": "ټاکي چې کوډ شوي بټونه به د بیسبېنډ (ډیجیټل) یا براډبېنډ (انالوګ) سیګنالونو په ذریعه ولېږل شي.",
+      "listGroup": "l1"
+    },
+    {
+      "id": "cs11-s163-h2",
+      "en": "Layer 2: DATA LINK LAYER",
+      "ur": "تہہ ۲: ڈیٹا لنک لیئر",
+      "ps": "طبقه ۲: د ډېټا نښلونې طبقه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s163-b",
+      "en": "The data link layer provides reliable transmission of data across a physical link. Data link layer is used by hubs and switches for their operation. The data link layer is concerned with physical addressing, network topology, physical link management, error notification, ordered delivery of frames, and flow control.",
+      "ur": "ڈیٹا لنک لیئر طبعی ربط کے پار ڈیٹا کی قابلِ اعتماد ترسیل فراہم کرتی ہے۔ ڈیٹا لنک لیئر ہب اور سوئچ اپنے عمل کے لیے استعمال کرتے ہیں۔ ڈیٹا لنک لیئر طبعی ایڈریسنگ، نیٹ ورک ٹوپولوجی، طبعی ربط کے انتظام، غلطی کی اطلاع، فریمز کی ترتیب وار ترسیل اور بہاؤ کنٹرول سے متعلق ہے۔",
+      "ps": "د ډېټا نښلونې طبقه د فزیکي تړاو په اوږدو کې د ډېټا باوري لېږد برابروي. د ډېټا نښلونې طبقه هبونه او سویچونه د خپلو عملیاتو لپاره کاروي. د ډېټا نښلونې طبقه د فزیکي پتې کولو، د شبکې توپولوژۍ، د فزیکي تړاو مدیریت، د تېروتنې خبرتیا، د چوکاټونو ترتیب لرونکې رسولو او د جریان کنټرول سره اړه لري."
+    },
+    {
+      "id": "cs11-s163-c",
+      "en": "The data link layer provides:",
+      "ur": "ڈیٹا لنک لیئر فراہم کرتی ہے:",
+      "ps": "د ډېټا نښلونې طبقه برابروي:"
+    },
+    {
+      "id": "cs11-s163-d1",
+      "en": "Segmentation of upper layer datagrams into frames in sizes that can be handled by the communications hardware.",
+      "ur": "اوپری تہہ کے ڈیٹا گرامز کی فریمز میں تقسیم ایسے سائز میں جو مواصلاتی ہارڈ ویئر سنبھال سکے۔",
+      "ps": "د پورتنۍ طبقې د ډېټا ګرامونو چوکاټونو ته وېش په داسې کچو چې د اړیکو هارډویر یې اداره کولای شي.",
+      "listGroup": "l2"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s163-h1",
+        "cs11-s163-a",
+        "cs11-s163-p1",
+        "cs11-s163-p2",
+        "cs11-s163-p3",
+        "cs11-s163-p4",
+        "cs11-s163-p5",
+        "cs11-s163-p6",
+        "cs11-s163-p7",
+        "cs11-s163-p8",
+        "cs11-s163-h2",
+        "cs11-s163-b",
+        "cs11-s163-c",
+        "cs11-s163-d1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 154: “Layer 1: PHYSICAL LAYER” with the paragraph and eight bullets, and “Layer 2: DATA LINK LAYER” with its paragraph and the first bullet of “The data link layer provides:” (the list continues on the next page). Handwriting on the left edge and near the heading is excluded. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:20:43.332142+00:00",
+    "scope": "Scan 163 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

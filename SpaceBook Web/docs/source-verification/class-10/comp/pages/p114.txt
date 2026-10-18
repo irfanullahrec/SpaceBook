@@ -1,0 +1,46 @@
+@printed 102
+@status lesson
+@sec 5-1-5 | 5.1.5 break اسٹیٹمنٹ || 5.1.5 The break statement || ۵.۱.۵ break بیان
+### 5.1.5 break اسٹیٹمنٹ || 5.1.5 The break statement || ۵.۱.۵ break بیان
+p بریک اسٹیٹمنٹ جب لوپ کی باڈی کے اندر استعمال ہو تو یہ لوپ کو منقطع کر دے گی اور لوپ مطلوبہ تکرار (Iteration) مکمل کئے بغیر ہی ختم ہو جائے گی۔ || When the break statement is used inside the body of a loop, it cuts the loop off, and the loop ends without completing the intended iterations. || کله چې break بیان د لوپ په بدنه کې وکارول شي، لوپ پرې کوي او لوپ د ټاکلو تکرارونو (Iteration) له بشپړېدو پرته پای ته رسېږي.
+p سائنٹکس: || Syntax: || ترکیب:
+m break;
+p break اسٹیٹمنٹ کو ان دو صورتوں میں استعمال کیا جاتا ہے۔ || The break statement is used in these two situations: || break بیان په دې دوو حالتونو کې کارېږي:
+- فوری طور پر لوپ سے باہر آنے کے لئے break اسٹیٹمنٹ کا استعمال کریں۔ جب بھی کسی لوپ کے اندر break اسٹیٹمنٹ کا سامنا کرنا پڑتا ہے تو، کنٹرول اسے ختم کر کے براہِ راست لوپ سے نکل آتا ہے۔ لوپ کے اندر اسے کنڈیشنل اسٹیٹمنٹ کے ساتھ استعمال کیا جاتا ہے، تاکہ یہ صرف کسی خاص condition میں ہی چل سکے۔ || Use the break statement to leave a loop immediately. Whenever a break statement is met inside a loop, control ends the loop and comes straight out of it. Inside a loop it is used with a conditional statement, so that it runs only under a particular condition. || له لوپ څخه د سمدستي وتلو لپاره break بیان وکاروئ. هر کله چې د لوپ دننه break بیان ته ورسېږي، کنټرول لوپ پای ته رسوي او مستقیم ترې وځي. د لوپ دننه له شرطي بیان سره کارېږي چې یوازې په یوه ځانګړي شرط کې وچلېږي.
+- یہ switch-case سوئچ کیس کنٹرول اسٹرکچر میں case block کے اندر استعمال ہوتا ہے۔ عام طور پر switch-case میں تمام case کے بعد break اسٹیٹمنٹس لکھی جاتی ہے تاکہ اس کے بعد کے case پر عملدرآمد سے بچا جا سکے۔ جب بھی اس کا سامنا switch-case بلاک میں ہوتا ہے، کنٹرول switch-case باڈی سے باہر نکل آتا ہے۔ break اسٹیٹمنٹ کا کام شکل نمبر 5.4 میں دکھایا گیا ہے۔ || It is used inside a case block of the switch-case control structure. Usually a break statement is written after every case in switch-case so that the following cases are not executed. Whenever it is met in a switch-case block, control comes out of the switch-case body. The working of the break statement is shown in Figure 5.4. || دا د switch-case کنټرول جوړښت د case بلاک دننه کارېږي. معمولاً په switch-case کې له هر case وروسته break لیکل کېږي چې وروسته case اجرا نشي. هر کله چې د switch-case په بلاک کې ورته ورسېږي، کنټرول د switch-case له بدنې وځي. د break بیان کار په ۵.۴ شکل کې ښودل شوی.
+svg شکل نمبر 5.4 break اسٹیٹمنٹ کا کام کرنے کا طریقہ کار || Figure 5.4 How the break statement works || ۵.۴ شکل د break بیان د کار طریقه
+<svg viewBox="0 0 420 240" width="420" role="img" aria-label="Flowchart: arrow into diamond 'condition'; one branch goes down to 'code inside loop', then right to 'break', then right to 'code after loop body'; the other branch from the condition goes right and down directly to 'code after loop body'" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF54" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M70 2 V22" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<polygon points="70,26 125,66 70,106 15,66" fill="#fff" stroke="#111827" stroke-width="2"/><text x="70" y="71">condition</text>
+<path d="M70 106 V126" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="10" y="130" width="120" height="50" fill="#fff" stroke="#111827" stroke-width="2"/><text x="70" y="152">code inside</text><text x="70" y="170">loop</text>
+<path d="M70 180 V210 H166" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="170" y="192" width="70" height="36" fill="#fff" stroke="#111827" stroke-width="2"/><text x="205" y="215">break</text>
+<path d="M240 210 H266" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+<rect x="270" y="180" width="130" height="56" fill="#fff" stroke="#111827" stroke-width="2"/><text x="335" y="203">code after</text><text x="335" y="222">loop body</text>
+<path d="M125 66 H335 V176" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF54)"/>
+</svg>
+endsvg
+### پروگرام 5.10 یہ پروگرام for لوپ کو استعمال کر کے یوزر سے کی بورڈ کی مدد سے ایک عدد اِن پُٹ کرے گا اگر نمبر 0 سے بڑا ہوا تو اسے پرنٹ کر کے اگلا عدد اِن پُٹ کر دیا جائے گا۔ اگر یوزر نے 0 یا اس سے چھوٹا یعنی منفی عدد اِن پُٹ کیا تو لوپ منقطع ہو جائے گا۔ یاد رہے کہ یہاں break اسٹیٹمنٹ استعمال ہوئی ہے۔ || Program 5.10 Using a for loop, this program inputs a number from the user through the keyboard; if the number is greater than 0 it is printed and the next number is input. If the user enters 0 or less (a negative number), the loop is cut off. Note that the break statement is used here. || پروګرام ۵.۱۰ دا پروګرام د for لوپ په کارولو له کاروونکي څخه د کیبورډ په مرسته یو عدد اخلي؛ که عدد له 0 لوی وي، چاپېږي او بل عدد اخیستل کېږي. که کاروونکي 0 یا له هغه کوچنی (منفي) عدد داخل کړ، لوپ پرې کېږي. یاد ولرئ چې دلته break بیان کارول شوی.
+m # include <stdio.h>
+m void main()
+m {
+m     int x, num;
+m     for(x=1;x<=5;x++)
+m     {
+m     printf("\nEnter a number: ");
+m     scanf("%d", &num);
+m     if(num<=0)
+m     break;
+m     printf("\nYou entered  %d\n ",num);
+m     }
+m     printf("\n OK");
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter a number: 3
+m You entered 3
+m Enter a number: 0
+m OK
+endbox
+@issue Figure 5.4 does not label which branch of the condition is true or false. In Program 5.10 the loop also stops on its own after five positive numbers (x<=5); the heading mentions only the break.

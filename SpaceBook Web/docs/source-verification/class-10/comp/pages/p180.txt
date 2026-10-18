@@ -1,0 +1,25 @@
+@printed 166
+@status lesson
+@sec 7-5-4 | 7.5.4 پس منظر میں تصویر لگانا || 7.5.4 Putting a picture in the background || ۷.۵.۴ په شالید کې انځور ایښودل
+### 7.5.4 پس منظر میں تصویر لگانا || 7.5.4 Putting a picture in the background || ۷.۵.۴ په شالید کې انځور ایښودل
+p پس منظر کی تصاویر ویب پیجز میں ایک اہم کردار ادا کرتی ہیں۔ <body> ٹیگ میں background کا استعمال کرتے ہوئے کسی تصویر کو کسی پیج کے پس منظر کے طور پر ترتیب دیا جا سکتا ہے۔ || Background pictures play an important role in web pages. Using background in the <body> tag, a picture can be set as the background of a page. || د شالید انځورونه په ویب پاڼو کې مهم رول لوبوي. په <body> ټیګ کې د background په کارولو یو انځور د پاڼې د شالید په توګه ټاکل کېدای شي.
+m <body background="image.jpg">
+p اگر تصویر براؤزر ونڈو سے چھوٹی ہے تو پھر جب تک پوری ونڈو بھر نہیں جاتی ہے تب تک وہ خود ہی اپنے آپ کو دہرائے گی۔ شکل نمبر 7.43 میں موجود HTML ڈاکومنٹ ویب پیج کے پس منظر کے طور پر تصویری فائل computer.jpg کے استعمال کو ظاہر کرتی ہے۔ || If the picture is smaller than the browser window, it repeats itself until the whole window is filled. The HTML document in Figure 7.43 shows the use of the picture file computer.jpg as the background of a web page. || که انځور له براوزر کړکۍ کوچنی وي، تر هغه پخپله تکرارېږي چې ټوله کړکۍ ډکه شي. په ۷.۴۳ شکل کې HTML سند د ویب پاڼې د شالید په توګه د computer.jpg انځوري فایل کارونه ښيي.
+### شکل نمبر 7.43 HTML ڈاکومنٹ میں پس منظر کے لیے تصویر کا استعمال || Figure 7.43 Using a picture for the background in an HTML document || ۷.۴۳ شکل په HTML سند کې د شالید لپاره د انځور کارونه
+m <html>
+m <head>
+m <title>Background & Foreground Colors</title>
+m </head>
+m <body background="computer.jpg" text="white">
+m <font size="5">
+m Computers are used in all types of businesses to<br>
+m improve productivity. They help in successfully<br>
+m running business activities. They are used to<br>
+m prepare business documents, reports, invoices,<br>
+m charts, etc. Computers help in staying in contact<br>
+m with employees and customers.</font>
+m </body>
+m </html>
+@issue Figure 7.43 is very faint; the <body> line is reconstructed (the white text in Figure 7.44 implies text="white"). Its title still reads "Background & Foreground Colors", copied from the previous example. The background attribute is obsolete in HTML5 (CSS background-image is used instead).
+p براؤزر اس کو دکھائے گا جیسا کہ شکل نمبر 7.44 میں دکھایا گیا ہے۔ || The browser will show it as in Figure 7.44. || براوزر به یې لکه په ۷.۴۴ شکل کې وښيي.
+@deco Figure 7.44 تصویر کو ویب پیج کے پس منظر کے طور پر استعمال کرنا (Using a picture as the background of a web page): the white text shown over a photograph of hands typing on a laptop keyboard. Not reproduced.

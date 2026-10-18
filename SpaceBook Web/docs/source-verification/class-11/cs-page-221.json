@@ -1,0 +1,130 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s221-p212",
+  "title": "Database (end); 7.1.4 Database Management System (DBMS)",
+  "headingUrdu": "ڈیٹا بیس (اختتام)؛ ۷.۱.۴ ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس)",
+  "headingPashto": "ډېټابېس (پای)؛ ۷.۱.۴ د ډېټابېس مدیریت سیسټم (DBMS)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 221,
+    "printedPage": "212"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s221-a",
+      "en": "A database combines records previously stored in separate files into a shared pool of data records that provides data for many applications. The data stored in a database is independent of the application programs using it and the type of secondary storage devices on which it is stored.",
+      "ur": "ڈیٹا بیس پہلے الگ الگ فائلوں میں محفوظ ریکارڈز کو ڈیٹا ریکارڈز کے مشترکہ ذخیرے میں یکجا کرتا ہے جو بہت سی ایپلیکیشنز کو ڈیٹا فراہم کرتا ہے۔ ڈیٹا بیس میں محفوظ ڈیٹا اسے استعمال کرنے والے ایپلیکیشن پروگراموں اور اس ثانوی ذخیرہ آلات کی قسم سے آزاد ہوتا ہے جن پر وہ محفوظ ہے۔",
+      "ps": "ډېټابېس هغه ثبتونه چې مخکې په جلا فایلونو کې ساتل کېدل د ډېټا ثبتونو په ګډ ذخیره کې یوځای کوي چې ډیرو اپلېکېشنونو ته ډېټا برابروي. په ډېټابېس کې ساتل شوې ډېټا د هغو اپلېکېشن پروګرامونو چې یې کاروي او د ثانوي ذخیره وسایلو ډول چې په هغو ساتل کېږي خپلواکه ده.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s221-h1",
+      "en": "7.1.4 Database Management System (DBMS)",
+      "ur": "۷.۱.۴ ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس)",
+      "ps": "۷.۱.۴ د ډېټابېس مدیریت سیسټم (DBMS)",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s221-b",
+      "en": "A database management system (DBMS) is a set of programs that allow users to create, maintain and manipulate database, and store or retrieve data from those database files. Manipulation of data includes the following.",
+      "ur": "ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس) پروگراموں کا ایک مجموعہ ہے جو صارفین کو ڈیٹا بیس بنانے، برقرار رکھنے اور اس میں ترمیم کرنے، اور ان ڈیٹا بیس فائلوں سے ڈیٹا محفوظ یا حاصل کرنے کی اجازت دیتا ہے۔ ڈیٹا میں ترمیم میں درج ذیل شامل ہیں۔",
+      "ps": "د ډېټابېس مدیریت سیسټم (DBMS) د پروګرامونو یوه ټولګه ده چې کاروونکو ته اجازه ورکوي ډېټابېس جوړ کړي، وساتي او ترې کار واخلي، او له هغو ډېټابېس فایلونو نه ډېټا ذخیره یا ترلاسه کړي. د ډېټا کارونه لاندې شاملوي."
+    },
+    {
+      "id": "cs11-s221-m1",
+      "en": "Adding new data, for example adding details of new student.",
+      "ur": "نیا ڈیٹا شامل کرنا، مثلاً نئے طالب علم کی تفصیلات شامل کرنا۔",
+      "ps": "نوې ډېټا زیاتول، د بېلګې په توګه د نوي زده کوونکي تفصیلات زیاتول.",
+      "listGroup": "man"
+    },
+    {
+      "id": "cs11-s221-m2",
+      "en": "Deleting unwanted data, for example deleting the details of students who have completed course.",
+      "ur": "غیر ضروری ڈیٹا حذف کرنا، مثلاً ان طلبہ کی تفصیلات حذف کرنا جنہوں نے کورس مکمل کر لیا ہو۔",
+      "ps": "غیر اړین ډېټا حذف کول، د بېلګې په توګه د هغو زده کوونکو تفصیلات حذف کول چې کورس یې بشپړ کړی.",
+      "listGroup": "man"
+    },
+    {
+      "id": "cs11-s221-m3",
+      "en": "Changing existing data, for example modifying the fee paid by the student.",
+      "ur": "موجودہ ڈیٹا میں تبدیلی کرنا، مثلاً طالب علم کی ادا کردہ فیس میں ترمیم کرنا۔",
+      "ps": "موجوده ډېټا بدلول، د بېلګې په توګه د زده کوونکي لخوا ورکړل شوې فیس تعدیل کول.",
+      "listGroup": "man"
+    },
+    {
+      "id": "cs11-s221-c",
+      "en": "The DBMS helps to create an environment in which users have better access to data. DBMS helps to give an integrated view of the organization’s operations. The DBMS makes it possible to share the data in the database among multiple applications and users.",
+      "ur": "ڈی بی ایم ایس ایسا ماحول بنانے میں مدد دیتا ہے جس میں صارفین کو ڈیٹا تک بہتر رسائی حاصل ہو۔ ڈی بی ایم ایس ادارے کے عمل کا مربوط منظر دینے میں مدد دیتا ہے۔ ڈی بی ایم ایس ڈیٹا بیس میں موجود ڈیٹا کو متعدد ایپلیکیشنز اور صارفین کے درمیان شیئر کرنا ممکن بناتا ہے۔",
+      "ps": "DBMS داسې چاپېریال جوړولو کې مرسته کوي چې په هغه کې کاروونکي ډېټا ته ښه لاسرسی لري. DBMS د ادارې د عملیاتو یو مدغم لید ورکولو کې مرسته کوي. DBMS دا ممکنه کوي چې په ډېټابېس کې ډېټا د ډیرو اپلېکېشنونو او کاروونکو ترمنځ ګډه شي."
+    },
+    {
+      "id": "cs11-s221-d",
+      "en": "The following are few examples of the database systems, managed by DBMS.",
+      "ur": "درج ذیل ڈیٹا بیس سسٹمز کی چند مثالیں ہیں جو ڈی بی ایم ایس کے زیر انتظام ہیں۔",
+      "ps": "لاندې د ډېټابېس سیسټمونو څو بېلګې دي چې د DBMS لخوا اداره کېږي."
+    },
+    {
+      "id": "cs11-s221-x1",
+      "en": "Customer information system",
+      "ur": "کسٹمر انفارمیشن سسٹم",
+      "ps": "د پېرېدونکي معلوماتو سیسټم",
+      "listGroup": "exm"
+    },
+    {
+      "id": "cs11-s221-x2",
+      "en": "Inventory information",
+      "ur": "انوینٹری کی معلومات",
+      "ps": "د موجودۍ معلومات",
+      "listGroup": "exm"
+    },
+    {
+      "id": "cs11-s221-x3",
+      "en": "Library management",
+      "ur": "لائبریری مینجمنٹ",
+      "ps": "د کتابتون مدیریت",
+      "listGroup": "exm"
+    },
+    {
+      "id": "cs11-s221-x4",
+      "en": "Accounting and bookkeeping",
+      "ur": "اکاؤنٹنگ اور بک کیپنگ",
+      "ps": "محاسبه او کتابداري",
+      "listGroup": "exm"
+    },
+    {
+      "id": "cs11-s221-e",
+      "en": "Typical DBMS include Microsoft Access, Microsoft SQL Server, Sybase, IBM DB2, Oracle, Ingres and MySQL.",
+      "ur": "عام ڈی بی ایم ایس میں مائیکروسافٹ ایکسیس، مائیکروسافٹ ایس کیو ایل سرور، سائی بیس، آئی بی ایم ڈی بی ٹو، اوریکل، انگریس اور مائی ایس کیو ایل شامل ہیں۔",
+      "ps": "عادي DBMS مایکروسافټ اېکسېس، مایکروسافټ SQL سرور، سایبېس، IBM DB2، اوریکل، انګریس او MySQL شاملوي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s221-a",
+        "cs11-s221-h1",
+        "cs11-s221-b",
+        "cs11-s221-m1",
+        "cs11-s221-m2",
+        "cs11-s221-m3",
+        "cs11-s221-c",
+        "cs11-s221-d",
+        "cs11-s221-x1",
+        "cs11-s221-x2",
+        "cs11-s221-x3",
+        "cs11-s221-x4",
+        "cs11-s221-e"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 212: the end of the database definition (continuing from page 211), the banner “7.1.4 Database Management System (DBMS)” with its definition, three manipulation points, two paragraphs, four examples and a line on typical DBMS. The bullets of the examples are printed with arrow marks. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:44:07.688936+00:00",
+    "scope": "Scan 221 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

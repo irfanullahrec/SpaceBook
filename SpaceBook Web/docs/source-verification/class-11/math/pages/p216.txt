@@ -1,0 +1,26 @@
+@printed 216
+@sec 7.2.3 | Pascal's Triangle || پاسکل کی مثلث || د پاسکال مثلث
+@issue In property (vi) the printed third coefficient of the (a−b)^n expansion is C(n,0); by the pattern (and the next line) it is C(n,2). Preserved as printed.
+@deco Unit-running header, folio and decorative footer band excluded
+- (v) For $n$ even in $(a+b)^n$, the $\left(\dfrac{n+2}{2}\right)$th term is the only one middle term and for $n$ odd the $\left(\dfrac{n+1}{2}\right)$th and $\left(\dfrac{n+3}{2}\right)$th terms are the two middle terms. || (v) $(a+b)^n$ میں $n$ جفت ہونے پر $\left(\dfrac{n+2}{2}\right)$واں رکن واحد درمیانی رکن ہے اور $n$ طاق ہونے پر $\left(\dfrac{n+1}{2}\right)$واں اور $\left(\dfrac{n+3}{2}\right)$واں ارکان دو درمیانی ارکان ہیں۔ || (v) په $(a+b)^n$ کې د جفت $n$ لپاره $\left(\dfrac{n+2}{2}\right)$م حد یوازینی منځنی حد دی او د تاق $n$ لپاره $\left(\dfrac{n+1}{2}\right)$م او $\left(\dfrac{n+3}{2}\right)$م حدونه دوه منځني حدونه دي.
+- (vi) In $(a+b)^n$ if $b$ is replaced by $-b$ then $(a-b)^n$ has expansion of the form || (vi) $(a+b)^n$ میں اگر $b$ کی جگہ $-b$ رکھا جائے تو $(a-b)^n$ کی توسیع اس شکل کی ہوگی || (vi) په $(a+b)^n$ کې که $b$ د $-b$ سره بدل شي نو $(a-b)^n$ پراختیا دې بڼه لري
+m $(a-b)^n=\dbinom n0a^nb^0-\dbinom n1a^{n-1}b+\dbinom n0a^{n-2}b^2+\cdots+(-1)^n\dbinom nna^0b^n$
+p or || یا || یا
+m $(a-b)^n=a^n-\dbinom n1a^{n-1}b+\dbinom n2a^{n-2}b^2+\cdots+(-1)^nb^n.$
+p We note that in the expansion of $(a-b)^n$ the terms are alternately positive and negative. || ہم نوٹ کرتے ہیں کہ $(a-b)^n$ کی توسیع میں ارکان باری باری مثبت اور منفی ہوتے ہیں۔ || موږ یادونه کوو چې د $(a-b)^n$ په پراختیا کې حدونه په نوبت سره مثبت او منفي دي.
+- (vii) In the expansion of $(a+b)^n$ the $(r+1)$th term which is $\dbinom nra^{n-r}b^r$ is usually called the **general term** and is denoted by $T_{r+1}$. || (vii) $(a+b)^n$ کی توسیع میں $(r+1)$واں رکن جو $\dbinom nra^{n-r}b^r$ ہے عموماً **عمومی رکن** کہلاتا ہے اور اسے $T_{r+1}$ سے ظاہر کیا جاتا ہے۔ || (vii) د $(a+b)^n$ په پراختیا کې $(r+1)$م حد چې $\dbinom nra^{n-r}b^r$ دی معمولاً **عمومي حد** بلل کېږي او په $T_{r+1}$ ښودل کېږي.
+p Thus || یوں || په دې توګه
+m $T_{r+1}=\dbinom nra^{n-r}b^r=\dfrac{n!}{r!\,(n-r)!}a^{n-r}b^r$
+p We note that for using binomial formula for given value of $n$, in the expansion of $(a+b)^n$, the most important task is to find the binomial coefficients $\dbinom n0,\dbinom n1,\dbinom n2,\ldots$ etc. || ہم نوٹ کرتے ہیں کہ $n$ کی دی گئی قیمت کے لیے دو رقمی کلیہ استعمال کرتے ہوئے $(a+b)^n$ کی توسیع میں سب سے اہم کام دو رقمی سروں $\dbinom n0,\dbinom n1,\dbinom n2,\ldots$ وغیرہ کو معلوم کرنا ہے۔ || موږ یادونه کوو چې د $n$ ورکړل شوي ارزښت لپاره د دوه حدي فورمول کارولو سره د $(a+b)^n$ په پراختیا کې تر ټولو مهم کار دوه حدي ضریبونه $\dbinom n0,\dbinom n1,\dbinom n2,\ldots$ او نور پیدا کول دي.
+### 7.2.3 Pascal's Triangle || 7.2.3 پاسکل کی مثلث || 7.2.3 د پاسکال مثلث
+p Consider the following expanded powers of $(a+b)^n$, where $a+b$ is any binomial and $n$ is a whole number. Look for patterns. || $(a+b)^n$ کی درج ذیل پھیلی ہوئی قوتوں پر غور کریں، جہاں $a+b$ کوئی بھی دو رقمی ہے اور $n$ ایک مکمل عدد ہے۔ نمونے تلاش کریں۔ || د $(a+b)^n$ لاندې پراخ شوي توانونه وګورئ، چېرته چې $a+b$ هر دوه حدي دی او $n$ بشپړ عدد دی. بڼې ولټوئ.
+m $(a+b)^0=1$
+m $(a+b)^1=a+b$
+m $(a+b)^2=a^2+2ab+b^2$
+m $(a+b)^3=a^3+3a^2b+3ab^2+b^3$
+m $(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4$
+m $(a+b)^5=a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$
+p Each expansion is a polynomial. There are some patterns to be noted. || ہر توسیع ایک کثیر رقمی ہے۔ کچھ نمونے قابلِ توجہ ہیں۔ || هره پراختیا یو څو حدي ده. څو بڼې دي چې باید یادې شي.
+- (i) There is one more term than the power of the exponent, $n$. That is, there are $n+1$ terms in the expansion of $(a+b)^n$. || (i) قوت نما $n$ سے ایک رکن زیادہ ہوتا ہے۔ یعنی $(a+b)^n$ کی توسیع میں $n+1$ ارکان ہوتے ہیں۔ || (i) د توان $n$ نه یو حد ډېر دی. یعنې د $(a+b)^n$ په پراختیا کې $n+1$ حدونه دي.
+- (ii) In each term, the sum of the exponents is $n$, the power to which the binomial is raised. || (ii) ہر رکن میں قوت نماؤں کا مجموعہ $n$ ہے، یعنی وہ قوت جس تک دو رقمی کو اٹھایا گیا ہے۔ || (ii) په هر حد کې د توانونو مجموعه $n$ ده، یعنې هغه توان چې دوه حدي ته ورکړل شوی.
+- (iii) The exponents of $a$ start with $n$, the power of the binomial, and decrease to 0. The last term has no factor of $a$. The first term has no factor of $b$, so powers of $b$ start with 0 and increase to $n$, || (iii) $a$ کے قوت نما $n$ سے، یعنی دو رقمی کی قوت سے، شروع ہو کر 0 تک کم ہوتے ہیں۔ آخری رکن میں $a$ کا جز نہیں ہوتا۔ پہلے رکن میں $b$ کا جز نہیں ہوتا، اس لیے $b$ کی قوتیں 0 سے شروع ہو کر $n$ تک بڑھتی ہیں، || (iii) د $a$ توانونه له $n$ نه، یعنې د دوه حدي له توان نه، پیلېږي او تر 0 کمېږي. وروستی حد د $a$ فکتور نه لري. لومړی حد د $b$ فکتور نه لري، نو د $b$ توانونه له 0 نه پیلېږي او تر $n$ زیاتېږي،

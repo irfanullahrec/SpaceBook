@@ -1,0 +1,33 @@
+@pdf 121
+@printed 110
+@status lesson
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter base and exponent respectively:  2.3
+m       4.5
+m 2.3^4:5 = 42.44
+endbox
+@issue The sample output prints "2.3^4:5" for 2.3^4.5; kept as printed.
+### Program 4.10: A program to find the area of a triangle when the lengths of height and base are given. || پروگرام 4.10: بلندی اور قاعدے کی لمبائیاں دی ہوں تو مثلث کا رقبہ معلوم کرنے کا پروگرام۔ || پروګرام ۴.۱۰: کله چې لوړوالی او قاعده ورکړل شوي وي، د مثلث مساحت موندل.
+m /* C++ program to find the area of a triangle if base and height are given */
+m #include <iostream>
+m using namespace std;
+m int main()
+m {
+m     float b, h, a;
+m     // b = base
+m     // h = height
+m     // a = area
+m     cout << "Enter the base & height of the triangle::\n";
+m     cin >> b >> h;
+m     // Calculate area of the triangle
+m     a = ((b * h) / 2);
+m     // Output
+m     cout << "\nArea of the triangle = " << a << " sq. units";
+m     return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter the base & height of the triangle:
+m    5
+m    7
+m Area of the triangle = 17.5 sq. units
+endbox

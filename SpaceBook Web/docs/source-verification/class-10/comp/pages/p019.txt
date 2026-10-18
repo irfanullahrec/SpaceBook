@@ -1,0 +1,34 @@
+@printed 9
+@status lesson
+@deco The upper part of this page is printed faintly.
+m Step 1.  Read A, R.
+m Step 2.  Set VC = A*A*A
+m Step 3.  Set VS = 4/3*3.14*R*R*R
+m Step 4.  Write VC, VS
+m Step 5.  Exit
+p **مسئلہ نمبر 5:** مثلث کا رقبہ معلوم کرنا۔ || **Problem 5:** Find the area of a triangle. || **۵ ستونزه:** د مثلث مساحت معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی بھی مثلث، جس کے قاعدہ کی لمبائی B اور اُنچائی H ہو، کا رقبہ AREA معلوم کرتا ہے۔ || Algorithm: this algorithm finds the area AREA of any triangle whose base length is B and height is H. || الګوریتم: دا الګوریتم د هر هغه مثلث مساحت AREA معلوموي چې د قاعدې اوږدوالی یې B او لوړوالی یې H وي.
+m Step 1.  Read B, H
+m Step 2.  Set AREA = B*H / 2
+m Step 3.  Write AREA
+m Step 4.  Exit
+p **مسئلہ نمبر 6:** متوازی الاضلاع (Parallelogram) کا رقبہ معلوم کرنا۔ || **Problem 6:** Find the area of a parallelogram. || **۶ ستونزه:** د موازي الاضلاع (Parallelogram) مساحت معلوم کړئ.
+p الگورتھم: یہ الگورتھم ایسے متوازی الاضلاع کا رقبہ AP معلوم کرے گا جس کے قاعدہ کی لمبائی B اور اُنچائی H ہو۔ || Algorithm: this algorithm will find the area AP of a parallelogram whose base length is B and height is H. || الګوریتم: دا الګوریتم به د هغه موازي الاضلاع مساحت AP معلوم کړي چې د قاعدې اوږدوالی یې B او لوړوالی یې H وي.
+m Step 1.  Read B, H
+m Step 2.  Set AP = B*H
+m Step 3.  Write AP
+m Step 4.  Exit
+p **مسئلہ نمبر 7:** ذوزنقہ (Trapezium) کا رقبہ معلوم کرنا۔ || **Problem 7:** Find the area of a trapezium. || **۷ ستونزه:** د ذوزنقې (Trapezium) مساحت معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی ذوزنقہ کا رقبہ ATRAP معلوم کرتا ہے، جس کے متوازی اضلاع کی لمبائی A اور B ہو اونچائی H (اضلاع کے درمیان عمودی فاصلہ) ہو۔ || Algorithm: this algorithm finds the area ATRAP of a trapezium whose parallel sides have lengths A and B and whose height is H (the perpendicular distance between the sides). || الګوریتم: دا الګوریتم د هغې ذوزنقې مساحت ATRAP معلوموي چې د موازي ضلعو اوږدوالی یې A او B او لوړوالی یې H (د ضلعو ترمنځ عمودي واټن) وي.
+m Step 1.  Read A, B
+m Step 2.  Set ATRAP = (A + B)/2 × H
+m Step 3.  Write ATRAP
+m Step 4.  Exit
+@issue Printed error: Step 1 of Problem 7 reads only "Read A, B" although H is also needed; it should be "Read A, B, H". Kept as printed. Step 2 is printed as a stacked fraction ((A+B) over 2) × H.
+p **مسئلہ نمبر 8:** مضامین میں حاصل شدہ نمبروں کی بنیاد پر گریڈ کا تعین کرنا۔ || **Problem 8:** Determine the grade on the basis of marks obtained in subjects. || **۸ ستونزه:** په مضمونونو کې د ترلاسه شویو نمرو پر بنسټ درجه (Grade) وټاکئ.
+p الگورتھم: یہ الگورتھم مضامین میں حاصل شدہ نمبروں SUBMARKS کی بنیاد پر ان مضامین کے لیے گریڈ GRADE کا تعین کرے گا۔ || Algorithm: this algorithm will determine the grade GRADE for subjects on the basis of the marks obtained SUBMARKS. || الګوریتم: دا الګوریتم به په مضمونونو کې د ترلاسه شویو نمرو SUBMARKS پر بنسټ د هغو مضمونونو لپاره درجه GRADE وټاکي.
+m Step 1.  Read SUBMARKS
+m Step 2.  If SUBMARKS>=80 Set GRADE= A+
+m          Else if SUBMARKS>=70 Set GRADE= A
+m          Else if SUBMARKS>=60 Set GRADE= B
+m          Else if SUBMARKS>=50 Set GRADE= C

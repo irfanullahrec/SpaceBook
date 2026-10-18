@@ -1,0 +1,29 @@
+@pdf 90
+@printed 82
+@status lesson
+m     a%=2;
+m     printf("value of a after a%=2:%d",a);
+m }
+### 3.2.4 Increment Operator ++ || 3.2.4 انکریمنٹ آپریٹر ++ || ۳.۲.۴ increment operator ++
+p The increment operator is represented by a double plus ++ sign. It is used to add 1 to the value of an integer variable. Increment operator can be used only with variables. It can't be used with constants or expressions. || انکریمنٹ آپریٹر دوہرے جمع ++ کی علامت سے ظاہر ہوتا ہے۔ یہ انٹیجر متغیر کی قدر میں 1 جمع کرنے کے لیے استعمال ہوتا ہے۔ انکریمنٹ آپریٹر صرف متغیرات کے ساتھ استعمال ہو سکتا ہے، کانسٹنٹس یا اظہارات کے ساتھ نہیں۔ || increment operator په دوه ګونې جمع ++ نښه ښودل کېږي. د integer متغیر ارزښت ته د 1 زیاتولو لپاره کارېږي. یوازې له متغیرونو سره کارېږي، له ثابتونو یا افادو سره نه.
+p For example, to add *1* to a value of variable *x*, it is normally written as: || مثلاً متغیر *x* کی قدر میں *1* جمع کرنے کے لیے عموماً یوں لکھا جاتا ہے: || د بېلګې په توګه د *x* متغیر ارزښت ته د *1* زیاتولو لپاره معمولاً داسې لیکل کېږي:
+m x = x +1;
+p By using increment operator ++ it is written as: || انکریمنٹ آپریٹر ++ سے یوں لکھا جاتا ہے: || د increment operator ++ په مرسته داسې لیکل کېږي:
+m x++;
+p It is important to note that ++x is same as *x = x + 1* or *x += 1*. || یاد رہے کہ ++x اور *x = x + 1* یا *x += 1* ایک ہی ہیں۔ || په یاد ولرئ چې ++x د *x = x + 1* یا *x += 1* سره یو شان دی.
+p The increment operator can be written either before or after the variable. If it is written before the variable, it is known as prefix increment operator. If it is written after the variable, it is known as postfix increment operator. || انکریمنٹ آپریٹر متغیر سے پہلے یا بعد میں لکھا جا سکتا ہے۔ اگر متغیر سے پہلے لکھا جائے تو پری فکس انکریمنٹ آپریٹر اور بعد میں لکھا جائے تو پوسٹ فکس انکریمنٹ آپریٹر کہلاتا ہے۔ || increment operator له متغیر مخکې یا وروسته لیکل کېدای شي. که مخکې ولیکل شي prefix او که وروسته ولیکل شي postfix increment operator بلل کېږي.
+### Prefix Increment Operator || پری فکس انکریمنٹ آپریٹر || prefix increment operator
+p The prefix increment operator immediately increases the current value of the variable to 1. This value is then used in the expression. || پری فکس انکریمنٹ آپریٹر متغیر کی موجودہ قدر میں فوراً 1 کا اضافہ کرتا ہے۔ پھر یہ قدر اظہار میں استعمال ہوتی ہے۔ || prefix increment operator سمدستي د متغیر اوسني ارزښت ته 1 زیاتوي. بیا دا ارزښت په افاده کې کارېږي.
+p For example, || مثلاً، || د بېلګې په توګه،
+### Program: 3.16 || پروگرام 3.16 || پروګرام ۳.۱۶
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a,b,c,sum;
+m     a=1;
+m     b=1;
+m     c=3;
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Sum = 6
+m c= 4
+endbox

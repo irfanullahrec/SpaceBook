@@ -1,0 +1,44 @@
+{
+  "id": "cls9-chemistry-pdf1-page-031",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "pdfPage": 31,
+  "printedPage": 25,
+  "status": "source-compared-corrected",
+  "chapterNumber": 1,
+  "chapter": "Unit 1: Fundamentals of Chemistry",
+  "title": "Cation and anion formation; Table 1.8",
+  "sourceObservations": "Source shows three cation-forming equations, three anion-forming equations, and Table 1.8 contrasting atom and ion in three rows.",
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "activeDataTargets": [
+    "chemChapters[0].topics[4].subtopics[0]",
+    "chemChapters[0].tables",
+    "chemChapters[0].differences"
+  ],
+  "comparisonStatus": "Four consecutive PDF pages rendered and visually checked against the active Chemistry content; OCR used as an extraction aid only.",
+  "correctionsApplied": [
+    "Added semantic source tables for cation formation, anion formation and Table 1.8.",
+    "Corrected the existing Atom/Ion comparison to match the printed wording and examples."
+  ],
+  "translationStatus": "Cation and anion formation equations and Table1.8 are source-aligned; charge signs and atom/ion comparison content are preserved.",
+  "unresolvedItems": [
+    "Check table wording and interactive rendered alignment; translation semantic/hover QA remains open."
+  ],
+  "followUpSourceInspected": true,
+  "followUpTranslationStatus": "Cation and anion formation equations and Table1.8 are source-aligned; charge signs and atom/ion comparison content are preserved.",
+  "followUpUnresolved": [
+    "Hover-meaning integration and full-reader validation pending."
+  ],
+  "followUpSourceCompared": true,
+  "followUpImageReview": "2026-10-11 source pages28–31 inspected together; printed23 example magnified in four source crops.",
+  "followUpTranslationCoverage": {
+    "table18PairedCells": 9,
+    "table18PairedHeaders": 2,
+    "ionEquationTables": 2,
+    "ionEquationHeadingsPaired": true,
+    "sourceWidthRatio": 0.62
+  },
+  "followUpSemanticTranslationVerified": false,
+  "translationCoverage": "20 paragraph pairs in the ions section; table labels and atom/ion statements are represented.",
+  "fullyCompleted": false
+}

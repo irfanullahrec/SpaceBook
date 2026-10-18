@@ -1,0 +1,194 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s082-quantile-graph-mode",
+  "title": "Example 2.20 (end) · graph · 2.4 Mode",
+  "headingUrdu": "مثال 2.20 (اختتام) · گراف · 2.4 عادہ",
+  "headingPashto": "بېلګه 2.20 (پای) · ګراف · 2.4 مود",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 82,
+    "printedPage": "74"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s082-ap",
+      "en": "Approximate Answers: Q₁ = 27, Q₂ = 38, Q₃ = 49.5, D₈ = 52, P₇₀ = 48",
+      "ur": "تخمینی جوابات: Q₁ = 27، Q₂ = 38، Q₃ = 49.5، D₈ = 52، P₇₀ = 48",
+      "ps": "نږدې ځوابونه: Q₁ = 27، Q₂ = 38، Q₃ = 49.5، D₈ = 52، P₇₀ = 48",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-20"
+    },
+    {
+      "id": "stat11-s082-h24",
+      "en": "2.4 Mode",
+      "ur": "2.4 عادہ",
+      "ps": "2.4 مود",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s082-t24",
+      "en": "A value that appears most often in a data set is called mode. For example, x = 3, 6, 5, 3, 2. As the value 3 appears most number of time i.e. twice and remaining values occur only once so Mode = 3. Sometimes a data set may have no mode or may have more than one mode, whereas, it will have only one mean and only one median. A data set with each value occurring only once has no mode. A data set with only one value occurring with the highest frequency has only one mode. The data set in this case, is called unimodal. A data set with two",
+      "ur": "وہ قدر جو اعداد و شمار کے مجموعے میں سب سے زیادہ بار آئے عادہ کہلاتی ہے۔ مثال کے طور پر x = 3, 6, 5, 3, 2۔ چونکہ قدر 3 سب سے زیادہ بار یعنی دو بار آتی ہے اور باقی قدریں صرف ایک بار آتی ہیں اس لیے عادہ = 3۔ بعض اوقات اعداد و شمار کے مجموعے کا کوئی عادہ نہیں ہو سکتا یا ایک سے زیادہ عادہ ہو سکتے ہیں، جبکہ اس کا صرف ایک اوسط اور صرف ایک وسطانیہ ہوتا ہے۔ جس مجموعے میں ہر قدر صرف ایک بار آئے اس کا کوئی عادہ نہیں ہوتا۔ جس مجموعے میں صرف ایک قدر سب سے زیادہ تعدد کے ساتھ آئے اس کا صرف ایک عادہ ہوتا ہے۔ اس صورت میں مجموعہ یک عادی کہلاتا ہے۔ دو والا مجموعہ",
+      "ps": "هغه ارزښت چې په معلوماتو ټولګه کې تر ټولو ډېر ځله راځي مود بلل کېږي. د مثال په توګه x = 3, 6, 5, 3, 2. څرنګه چې ارزښت 3 تر ټولو ډېر ځله یعنې دوه ځله راځي او پاتې ارزښتونه یوازې یو ځل راځي نو مود = 3. ځینې وختونه د معلوماتو ټولګه کېدای شي هېڅ مود ونه لري یا له یو څخه ډېر مودونه ولري، پداسې حال کې چې یوازې یو اوسط او یوازې یوه میانه لري. هغه ټولګه چې هر ارزښت یوازې یو ځل په کې راځي مود نه لري. هغه ټولګه چې یوازې یو ارزښت لوړې فریکونسۍ سره په کې راځي یوازې یو مود لري. په دې حالت کې ټولګه یو‌مودي بلل کېږي. هغه ټولګه چې دوه",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"…A data set with two modes is called bimodal…\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s082-ap",
+        "stat11-s082-h24",
+        "stat11-s082-t24"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "mode": {
+      "ur": "عادہ",
+      "ps": "مود"
+    },
+    "unimodal": {
+      "ur": "یک عادی",
+      "ps": "یو‌مودي"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s082-e1",
+      "latex": "Q_3=3\\left(\\dfrac{\\sum f}{4}\\right)\\text{th value}=3\\left(\\dfrac{100}{4}\\right)\\text{th value}=75\\text{th value.}",
+      "accessible": "Q3 = 3(Σf/4)th value = 3(100/4)th value = 75th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q3 = 3(Σf/4)th value = 3(100/4)th value = 75th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q3 = 3(Σf/4)th value = 3(100/4)th value = 75th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q3 = 3(Σf/4)th value = 3(100/4)th value = 75th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-20"
+    },
+    {
+      "id": "stat11-s082-e2",
+      "latex": "D_8=8\\left(\\dfrac{\\sum f}{10}\\right)\\text{th value}=8\\left(\\dfrac{100}{10}\\right)\\text{th value}=80\\text{th value.}",
+      "accessible": "D8 = 8(Σf/10)th value = 8(100/10)th value = 80th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "D8 = 8(Σf/10)th value = 8(100/10)th value = 80th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "D8 = 8(Σf/10)th value = 8(100/10)th value = 80th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "D8 = 8(Σf/10)th value = 8(100/10)th value = 80th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-20"
+    },
+    {
+      "id": "stat11-s082-e3",
+      "latex": "P_{70}=70\\left(\\dfrac{\\sum f}{100}\\right)\\text{th value}=70\\left(\\dfrac{100}{100}\\right)\\text{th value}=70\\text{th value}",
+      "accessible": "P70 = 70(Σf/100)th value = 70(100/100)th value = 70th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P70 = 70(Σf/100)th value = 70(100/100)th value = 70th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P70 = 70(Σf/100)th value = 70(100/100)th value = 70th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P70 = 70(Σf/100)th value = 70(100/100)th value = 70th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-20"
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s082-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 360\" role=\"img\" aria-label=\"Cumulative frequency curve with horizontal guides at 25, 50, 75, 80 and 70 meeting the curve and vertical lines to the x-axis giving Q1 about 27, Q2 about 38, Q3 about 49.5, D8 about 52 and P70 about 48\" style=\"width:100%;max-width:600px;height:auto;background:#fff\"><text x=\"270.0\" y=\"18\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"600\" fill=\"#111\">Graphic Estimation of Quartiles, D and P</text><text x=\"64\" y=\"294.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">0</text><line x1=\"67\" y1=\"290.0\" x2=\"70\" y2=\"290.0\" stroke=\"#333\"/><text x=\"64\" y=\"269.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">10</text><line x1=\"67\" y1=\"265.0\" x2=\"70\" y2=\"265.0\" stroke=\"#333\"/><text x=\"64\" y=\"244.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">20</text><line x1=\"67\" y1=\"240.0\" x2=\"70\" y2=\"240.0\" stroke=\"#333\"/><text x=\"64\" y=\"219.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">30</text><line x1=\"67\" y1=\"215.0\" x2=\"70\" y2=\"215.0\" stroke=\"#333\"/><text x=\"64\" y=\"194.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">40</text><line x1=\"67\" y1=\"190.0\" x2=\"70\" y2=\"190.0\" stroke=\"#333\"/><text x=\"64\" y=\"169.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">50</text><line x1=\"67\" y1=\"165.0\" x2=\"70\" y2=\"165.0\" stroke=\"#333\"/><text x=\"64\" y=\"144.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">60</text><line x1=\"67\" y1=\"140.0\" x2=\"70\" y2=\"140.0\" stroke=\"#333\"/><text x=\"64\" y=\"119.00000000000001\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">70</text><line x1=\"67\" y1=\"115.0\" x2=\"70\" y2=\"115.0\" stroke=\"#333\"/><text x=\"64\" y=\"93.99999999999999\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">80</text><line x1=\"67\" y1=\"90.0\" x2=\"70\" y2=\"90.0\" stroke=\"#333\"/><text x=\"64\" y=\"69.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">90</text><line x1=\"67\" y1=\"65.0\" x2=\"70\" y2=\"65.0\" stroke=\"#333\"/><text x=\"64\" y=\"44.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">100</text><line x1=\"67\" y1=\"40.0\" x2=\"70\" y2=\"40.0\" stroke=\"#333\"/><line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"290\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"290\" x2=\"470\" y2=\"290\" stroke=\"#333\" stroke-width=\"1.5\"/><polyline fill=\"none\" stroke=\"#111\" stroke-width=\"2\" points=\"101.0,290.0 157.3,260.0 213.7,215.0 270.0,147.5 326.3,97.5 382.7,55.0 439.0,40.0\"/><path d=\"M97.0,286.0 L105.0,294.0 M97.0,294.0 L105.0,286.0\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"100.98591549295774\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">9.5</text><path d=\"M153.3,256.0 L161.3,264.0 M153.3,264.0 L161.3,256.0\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"157.32394366197184\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">19.5</text><path d=\"M209.7,211.0 L217.7,219.0 M209.7,219.0 L217.7,211.0\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"213.66197183098592\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">29.5</text><path d=\"M266.0,143.5 L274.0,151.5 M266.0,151.5 L274.0,143.5\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"270.0\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">39.5</text><path d=\"M322.3,93.5 L330.3,101.5 M322.3,101.5 L330.3,93.5\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"326.3380281690141\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">49.5</text><path d=\"M378.7,51.0 L386.7,59.0 M378.7,59.0 L386.7,51.0\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"382.67605633802816\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">59.5</text><path d=\"M435.0,36.0 L443.0,44.0 M435.0,44.0 L443.0,36.0\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"439.01408450704224\" y=\"306\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">69.5</text><line x1=\"70\" y1=\"227.5\" x2=\"199.6\" y2=\"227.5\" stroke=\"#111\"/><line x1=\"199.6\" y1=\"227.5\" x2=\"199.6\" y2=\"290\" stroke=\"#111\"/><line x1=\"70\" y1=\"165.0\" x2=\"261.5\" y2=\"165.0\" stroke=\"#111\"/><line x1=\"261.5\" y1=\"165.0\" x2=\"261.5\" y2=\"290\" stroke=\"#111\"/><line x1=\"70\" y1=\"102.5\" x2=\"326.3\" y2=\"102.5\" stroke=\"#111\"/><line x1=\"326.3\" y1=\"102.5\" x2=\"326.3\" y2=\"290\" stroke=\"#111\"/><line x1=\"70\" y1=\"90.0\" x2=\"340.4\" y2=\"90.0\" stroke=\"#111\"/><line x1=\"340.4\" y1=\"90.0\" x2=\"340.4\" y2=\"290\" stroke=\"#111\"/><line x1=\"70\" y1=\"115.0\" x2=\"317.9\" y2=\"115.0\" stroke=\"#111\"/><line x1=\"317.9\" y1=\"115.0\" x2=\"317.9\" y2=\"290\" stroke=\"#111\"/><text x=\"270.0\" y=\"348\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Class boundaries</text><text transform=\"translate(14 165.0) rotate(-90)\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial\">Cumulative frequencies</text><text x=\"490\" y=\"70\" font-size=\"12\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Scale</text><text x=\"490\" y=\"86\" font-size=\"11\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">on x-axis 1.S.S=1</text><text x=\"490\" y=\"100\" font-size=\"11\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">on y-axis 1.S.S=1</text></svg>",
+      "caption": "Graphic Estimation of Quartiles, D and P",
+      "captionUrdu": "چوتھائیوں، D اور P کا گرافی تخمینہ",
+      "captionPashto": "د څلورمو، D او P ګرافي اټکل",
+      "labels": [
+        {
+          "en": "Cumulative frequencies",
+          "ur": "جمعی تعددات",
+          "ps": "مجموعي فریکونسۍ"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "جماعتی سرحدیں",
+          "ps": "د ټولګي پولې"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as coded SVG from the c.f values (9.5→0, 19.5→12, 29.5→30, 39.5→57, 49.5→77, 59.5→94, 69.5→100); the guide lines are drawn at the printed approximate answers (27, 38, 49.5, 52, 48)."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 74. The first three lines continue the Example 2.20 working from the previous page. A colour smudge at the top-left is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:37:13.660662+00:00",
+    "scope": "Scan 82 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

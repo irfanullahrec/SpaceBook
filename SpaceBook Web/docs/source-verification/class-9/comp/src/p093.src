@@ -1,0 +1,22 @@
+@printed 85
+@status lesson
+table Relational operators || ریلیشنل آپریٹرز || اړیکه ییز operators
+th | Operator || آپریٹر || operator | Symbol || علامت || نښه | Form || صورت || بڼه | Operation || عمل || عملیه
+tr | Greater than || سے بڑا || تر لوی | > | x > y | true if x is greater than y, false otherwise || اگر x بڑا ہو y سے تو درست، ورنہ غلط || که x له y لوی وي سم، کنه ناسم
+tr | Less than || سے چھوٹا || تر کوچنی | < | x < y | true if x is less than y, false otherwise || اگر x چھوٹا ہو y سے تو درست، ورنہ غلط || که x له y کوچنی وي سم، کنه ناسم
+tr | Greater than or equals || بڑا یا برابر || لوی یا مساوي | >= | x >= y | true if x is greater than or equal to y, false otherwise || اگر x بڑا یا برابر ہو y کے تو درست، ورنہ غلط || که x له y لوی یا مساوي وي سم، کنه ناسم
+tr | Less than or equals || چھوٹا یا برابر || کوچنی یا مساوي | <= | x <= y | true if x is less than or equal to y, false otherwise || اگر x چھوٹا یا برابر ہو y کے تو درست، ورنہ غلط || که x له y کوچنی یا مساوي وي سم، کنه ناسم
+tr | Equality || برابری || مساوات | == | x == y | true if x equals y, false otherwise || اگر x برابر ہو y کے تو درست، ورنہ غلط || که x له y سره مساوي وي سم، کنه ناسم
+tr | Inequality || عدم مساوات || نامساوات | != | x != y | true if x does not equal y, false otherwise || اگر x برابر نہ ہو y کے تو درست، ورنہ غلط || که x له y سره مساوي نه وي سم، کنه ناسم
+endtable
+### Use of Relational Operators || ریلیشنل آپریٹرز کا استعمال || د اړیکه ییزو operators کارونه
+p If x=10, y=20 and z=5 then the output of the following relational expressions will be: || اگر x=10، y=20 اور z=5 ہو تو درج ذیل ریلیشنل اظہارات کا آؤٹ پٹ یہ ہوگا: || که x=10، y=20 او z=5 وي، د لاندې اړیکه ییزو افادو output به دا وي:
+table Relational expressions with x=10, y=20, z=5 || x=10، y=20، z=5 کے ساتھ ریلیشنل اظہارات || د x=10، y=20، z=5 سره اړیکه ییزې افادې
+th | Relational Expression || ریلیشنل اظہار || اړیکه ییزه افاده | Output Returned || واپس آنے والا آؤٹ پٹ || راګرځېدونکی output
+tr | x>y | False || غلط || ناسم
+tr | y<z | False || غلط || ناسم
+tr | x==z | False || غلط || ناسم
+tr | x<=y | True || درست || سم
+tr | z>=y | False || غلط || ناسم
+tr | y!=x | True || درست || سم
+endtable

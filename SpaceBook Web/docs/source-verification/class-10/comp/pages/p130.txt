@@ -1,0 +1,47 @@
+@printed 118
+@status lesson
+### XNOR گیٹ (Exclusive-NOR Gate) || The XNOR gate (Exclusive-NOR gate) || XNOR دروازه (Exclusive-NOR Gate)
+p وہ گیٹ جس کی تمام اِن پُٹ اگر 0 یا 1 ہوں تو آؤٹ پُٹ '1' ہو گی، ایسے گیٹ کو XNOR گیٹ کہا جاتا ہے۔ لہٰذا XNOR گیٹ میں ایک جیسی اِن پُٹ کے لئے آؤٹ پُٹ '1' ہو گی اور مختلف اِن پُٹس کے لیے '0' آؤٹ پُٹ ہو گی۔ || A gate whose output is '1' when all its inputs are 0 or all are 1 is called an XNOR gate. So in an XNOR gate the output is '1' for identical inputs and '0' for different inputs. || هغه دروازه چې که یې ټول inputs 0 یا ټول 1 وي output یې '1' وي، XNOR دروازه بلل کېږي. نو په XNOR دروازه کې د یو شان inputs لپاره output '1' او د بېلابېلو inputs لپاره '0' وي.
+p اگر A اور B ایک XNOR گیٹ کے دو اِن پُٹ ہیں اور Y اس کا آؤٹ پُٹ ہے تو، اس کی بلاک ڈایاگرام اور XNOR گیٹ کا ٹرُتھ ٹیبل ذیل میں دکھایا گیا ہے۔ || If A and B are the two inputs of an XNOR gate and Y is its output, its block diagram and the truth table of the XNOR gate are shown below. || که A او B د XNOR دروازې دوه inputs وي او Y یې output وي، د هغې بلاک ډیاګرام او د XNOR دروازې د حقیقت جدول لاندې ښودل شوي.
+svg شکل نمبر 6.7 دو اِن پُٹ والا XNOR گیٹ || Figure 6.7 Two-input XNOR gate || ۶.۷ شکل دوه input لرونکې XNOR دروازه
+<svg viewBox="0 0 490 140" width="490" role="img" aria-label="XNOR gate symbol: an XOR gate shape with a small circle at the output; inputs A and B labelled Input; output Y = A ⊙ B = A·B + A-bar·B-bar, labelled Output" font-family="Arial, Helvetica, sans-serif" font-size="17">
+<path d="M130 20 Q160 70 130 120 Q220 120 260 70 Q220 20 130 20 Z" fill="#fff" stroke="#111827" stroke-width="2.5"/>
+<path d="M115 20 Q145 70 115 120" fill="none" stroke="#111827" stroke-width="2.5"/>
+<circle cx="270" cy="70" r="10" fill="#fff" stroke="#111827" stroke-width="2.5"/>
+<path d="M70 40 H137 M70 100 H137 M280 70 H350" stroke="#111827" stroke-width="2.5"/>
+<text x="50" y="47" font-weight="700">A</text><text x="50" y="107" font-weight="700">B</text><text x="4" y="78">Input</text>
+<text x="290" y="58" font-weight="700">Y = A⊙B = A·B + A̅·B̅</text><text x="290" y="96">Output</text>
+</svg>
+endsvg
+### XNOR گیٹ کا ٹرُتھ ٹیبل || Truth table of the XNOR gate || د XNOR دروازې د حقیقت جدول
+table جدول نمبر 6.9 دو اِن پُٹ والے XNOR گیٹ کا ٹرُتھ ٹیبل || Table 6.9 Truth table of a two-input XNOR gate || ۶.۹ جدول د دوه input لرونکې XNOR دروازې د حقیقت جدول
+th | A | B | Y = A·B + A̅·B̅ or Y = A⊙B
+tr | 0 | 0 | 1
+tr | 0 | 1 | 0
+tr | 1 | 0 | 0
+tr | 1 | 1 | 1
+endtable
+@issue Table 6.9's heading has a stray apostrophe ("Ā'B̄") and its ⊙ sign is printed like Θ; normalised above.
+@deco The truth table has a two-level header in the book: "اِن پُٹ" (Input) over A/B and "آؤٹ پُٹ" (Output) over Y.
+@sec 6-2-5 | 6.2.5 بنیادی گیٹس کی مدد سے NAND، NOR، XOR اور XNOR گیٹ بنانا || 6.2.5 Making NAND, NOR, XOR and XNOR gates from basic gates || ۶.۲.۵ د بنسټیزو دروازو په مرسته د NAND، NOR، XOR او XNOR دروازو جوړول
+### 6.2.5 بنیادی گیٹس کی مدد سے NAND، NOR، XOR اور XNOR گیٹ بنانا || 6.2.5 Making NAND, NOR, XOR and XNOR gates from basic gates || ۶.۲.۵ د بنسټیزو دروازو په مرسته د NAND، NOR، XOR او XNOR دروازو جوړول
+p بنیادی گیٹس کو استعمال کر کے NAND، NOR، XOR اور XNOR گیٹس بنائے جا سکتے ہیں۔ || NAND, NOR, XOR and XNOR gates can be made using the basic gates. || د بنسټیزو دروازو په کارولو NAND، NOR، XOR او XNOR دروازې جوړېدای شي.
+### بنیادی گیٹس کا استعمال کرتے ہوئے NAND اور NOR گیٹس بنانا || Making NAND and NOR gates using the basic gates || د بنسټیزو دروازو په کارولو د NAND او NOR دروازو جوړول
+p AND گیٹ اور NOT گیٹ استعمال کر کے NAND گیٹ آسانی سے بنایا جا سکتا ہے جیسا کہ ذیل میں دکھایا گیا ہے۔ || A NAND gate can easily be made using an AND gate and a NOT gate, as shown below. || NAND دروازه د AND دروازې او NOT دروازې په کارولو په اسانۍ جوړېدای شي، لکه څنګه چې لاندې ښودل شوي.
+svg شکل نمبر 6.8 بنیادی گیٹس کی مدد سے NAND گیٹ بنانا || Figure 6.8 Making a NAND gate from basic gates || ۶.۸ شکل د بنسټیزو دروازو په مرسته د NAND دروازې جوړول
+<svg viewBox="0 0 460 230" width="460" role="img" aria-label="Top: inputs A and B go into an AND gate giving Y = A B, which goes into a NOT gate giving Y-bar. Below, an arrow points to the equivalent single NAND gate with inputs A and B and output Y = (A.B) with a bar" font-family="Arial, Helvetica, sans-serif" font-size="16">
+<path d="M70 10 H140 A45 45 0 0 1 140 100 H70 Z" fill="#e5e7eb" stroke="#111827" stroke-width="2"/><text x="102" y="61" font-weight="700">AND</text>
+<path d="M20 30 H70 M20 80 H70 M185 55 H230" stroke="#111827" stroke-width="2"/><circle cx="20" cy="30" r="4" fill="#111827"/><circle cx="20" cy="80" r="4" fill="#111827"/>
+<text x="2" y="36" font-weight="700">A</text><text x="2" y="86" font-weight="700">B</text><text x="186" y="44" font-weight="700">Y=A B</text>
+<path d="M230 25 L290 55 L230 85 Z" fill="#e5e7eb" stroke="#111827" stroke-width="2"/><text x="236" y="61" font-weight="700" font-size="13">NOT</text>
+<circle cx="299" cy="55" r="8" fill="#e5e7eb" stroke="#111827" stroke-width="2"/><path d="M307 55 H360" stroke="#111827" stroke-width="2"/><circle cx="360" cy="55" r="4" fill="#111827"/>
+<text x="324" y="44" font-weight="700">Y</text><path d="M323 28 H337" stroke="#111827" stroke-width="2"/>
+<text x="110" y="180" font-size="30">⇒</text>
+<path d="M200 130 H260 A45 45 0 0 1 260 220 H200 Z" fill="#e5e7eb" stroke="#111827" stroke-width="2"/>
+<circle cx="314" cy="175" r="8" fill="#e5e7eb" stroke="#111827" stroke-width="2"/>
+<path d="M170 150 H200 M170 200 H200 M322 175 H370" stroke="#111827" stroke-width="2"/><circle cx="170" cy="150" r="4" fill="#111827"/><circle cx="170" cy="200" r="4" fill="#111827"/><circle cx="370" cy="175" r="4" fill="#111827"/>
+<text x="152" y="156" font-weight="700">A</text><text x="152" y="206" font-weight="700">B</text>
+<text x="376" y="181" font-weight="700">Y = A.B</text><path d="M406 162 H436" stroke="#111827" stroke-width="2"/>
+</svg>
+endsvg
+@issue The intermediate label in Figure 6.8 reads "Y=A B" with the AND dot missing, and the NOT output is called "Ȳ" although Y was already used for A·B; the final output should be read as (A·B) with a bar.

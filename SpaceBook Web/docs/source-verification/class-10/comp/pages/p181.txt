@@ -1,0 +1,23 @@
+@printed 167
+@status lesson
+@sec 7-6 | 7.6 ہائپر لنک || 7.6 Hyperlinks || ۷.۶ هایپرلینک
+## 7.6 ہائپر لنک (Hyperlink) || 7.6 Hyperlinks || ۷.۶ هایپرلینک (Hyperlink)
+p ورلڈ وائڈ ویب ہائپر لنکس پر مشتمل ہے جس میں کھربوں پیجز اور فائلیں ایک دوسرے سے جڑی ہوئی ہیں۔ ویب پیج میں بہت سے ہائپر لنکس ہوتے ہیں، یہ لنک ہر یوزر کو متعلقہ ویب پیج یا تصویر / فائل پر بھیجتا ہے۔ || The World Wide Web is made of hyperlinks, through which trillions of pages and files are connected to one another. A web page has many hyperlinks; each link sends the user to the related web page or picture/file. || نړیواله ویب له هایپرلینکونو جوړه ده چې پکې ټریلیونونه پاڼې او فایلونه یو له بل سره نښتي دي. په ویب پاڼه کې ډېر هایپرلینکونه وي؛ هر لینک کاروونکی اړوندې ویب پاڼې یا انځور/فایل ته لېږي.
+@sec 7-6-1 | 7.6.1 ہائپر لنک کیا ہے؟ || 7.6.1 What is a hyperlink? || ۷.۶.۱ هایپرلینک څه دی؟
+### 7.6.1 ہائپر لنک کیا ہے؟ || 7.6.1 What is a hyperlink? || ۷.۶.۱ هایپرلینک څه دی؟
+p ہائپر لنکس تقریباً تمام ویب پیجز میں پائے جاتے ہیں، جس سے یوزر کو ایک پیج سے دوسرے پیج تک پہنچنے میں مدد ملتی ہے۔ اپنے راستے پر کلک کرنے کی اجازت ملتی ہے۔ ٹیکسٹ ہائپر لنکس اکثر نیلے اور سرخ رنگ کے ہوتے ہیں۔ جب یوزر کرسر کو ہائپر لنک کے اوپر منتقل کرتا ہے، چاہے وہ ٹیکسٹ ہو یا ایک تصویر، کرسر چھوٹے ہاتھ میں بدل جاتا ہے۔ اس پر کلک کرنے سے یوزر نئے پیج پر منتقل ہو جاتا ہے۔ || Hyperlinks are found on almost all web pages; they help the user get from one page to another, letting them click their way along. Text hyperlinks are often blue or red. When the user moves the cursor over a hyperlink, whether it is text or a picture, the cursor changes to a small hand. Clicking it takes the user to the new page. || هایپرلینکونه نږدې په ټولو ویب پاڼو کې شته، چې کاروونکي ته له یوې پاڼې بلې ته د رسېدو مرسته کوي او په کلیک کولو خپله لار وهلای شي. متني هایپرلینکونه اکثر شین یا سور رنګ لري. کله چې کاروونکی کرسر پر هایپرلینک — که متن وي که انځور — یوسي، کرسر په کوچني لاس بدلېږي. پرې کلیک نوې پاڼې ته وړي.
+@sec 7-6-2 | 7.6.2 اینکر ٹیگ || 7.6.2 Anchor tag || ۷.۶.۲ اینکر ټیګ
+### 7.6.2 اینکر ٹیگ (Anchor Tag) || 7.6.2 Anchor tag || ۷.۶.۲ اینکر ټیګ (Anchor Tag)
+p <a></a> ٹیگ کو اینکر کے نام سے جانا جاتا ہے۔ یہ ایک ہائپر لنک بنانے کے لئے استعمال کیا جاتا ہے جو href کے ساتھ، ٹیکسٹ یا تصویر ہو سکتا ہے۔ || The <a></a> tag is known as the anchor. It is used, with href, to make a hyperlink, which can be text or a picture. || <a></a> ټیګ د اینکر په نوم پېژندل کېږي. دا د href سره د هایپرلینک جوړولو لپاره کارېږي، چې متن یا انځور کېدای شي.
+@sec 7-6-3 | 7.6.3 ویب پیج کی طرف ہائپر لنک بنانا || 7.6.3 Making a hyperlink to a web page || ۷.۶.۳ ویب پاڼې ته هایپرلینک جوړول
+### 7.6.3 ویب پیج کی طرف ہائپر لنک بنانا || 7.6.3 Making a hyperlink to a web page || ۷.۶.۳ ویب پاڼې ته هایپرلینک جوړول
+p کسی اور ویب پیج کی طرف ہائپر لنک بنانے کا طریقہ یہ ہے: || The way to make a hyperlink to another web page is: || بلې ویب پاڼې ته د هایپرلینک جوړولو طریقه دا ده:
+m <a href="URL">text to be displayed</a>
+p مثال کے طور پر: || For example: || د بېلګې په توګه:
+m <a href="http://www.bisep.edu.pk">Peshawar Board</a>
+p اسے براؤزر ونڈو میں Peshawar Board کے طور پر ظاہر کیا جائے گا اور جب قاری اس پر کلک کرے گا تو، یہ پشاور بورڈ کی ویب سائٹ کھولے گا جس کا URL www.bisep.edu.pk ہے۔ ہائپر لنکس بنانے کی کچھ اور مثالیں ذیل میں دی گئی ہیں۔ || It is shown in the browser window as Peshawar Board, and when the reader clicks it, it opens the website of the Peshawar Board, whose URL is www.bisep.edu.pk. Some more examples of making hyperlinks are given below. || دا به په براوزر کړکۍ کې د Peshawar Board په توګه ښکاره شي، او کله چې لوستونکی پرې کلیک وکړي، د پېښور بورډ ویب سایټ به پرانیزي چې URL یې www.bisep.edu.pk دی. د هایپرلینک جوړولو نورې بېلګې لاندې ورکړل شوې.
+m <a href="http://www.urdupoint.com">Urdu Point</a>
+m <a href="http://www.bbc.com/urdu">BBC Urdu Service</a>
+m <a href="http://www.aiou.edu.pk">Allama Iqbal Open University</a>
+@issue The scan prints typographic quotes and drops the colons and dots in the URLs ("http //www.bisep.edu.pk", "http //www.aiou edu pk"); the correct forms are shown above.
+p شکل نمبر 7.45 میں HTML ڈاکومنٹ کسی ویب پیج میں ہائپر لنکس کے استعمال کو ظاہر کرتی ہے۔ || The HTML document in Figure 7.45 shows the use of hyperlinks in a web page. || په ۷.۴۵ شکل کې HTML سند په ویب پاڼه کې د هایپرلینکونو کارونه ښيي.

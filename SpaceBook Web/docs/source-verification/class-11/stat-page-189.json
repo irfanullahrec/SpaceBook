@@ -1,0 +1,358 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s189-reg-ls-3",
+  "title": "Example 5.2 (end) · 5.1.6 Properties of the least squares regression line",
+  "headingUrdu": "مثال 5.2 (اختتام) · 5.1.6 کم از کم مربعات ریگریشن لکیر کی خصوصیات",
+  "headingPashto": "بېلګه 5.2 (پای) · 5.1.6 د لږ تر لږه مربعاتو د ریګرېشن کرښې ځانګړتیاوې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 189,
+    "printedPage": "179"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s189-a1",
+      "en": "Thus the fitted regression line of y on x is ŷ = −7 + 2.5x",
+      "ur": "اس طرح x پر y کی فٹ کی گئی ریگریشن لکیر ہے ŷ = −7 + 2.5x",
+      "ps": "په دې توګه د x پر y برابره شوې ریګرېشن کرښه ده ŷ = −7 + 2.5x",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-a2",
+      "en": "The regression coefficient b = 2.5 means that for a unit change in x there will be 2.5 unit change in y.",
+      "ur": "ریگریشن عددی سر b = 2.5 کا مطلب ہے کہ x میں ایک اکائی تبدیلی کے لیے y میں 2.5 اکائی تبدیلی ہوگی۔",
+      "ps": "د ریګرېشن ضریب b = 2.5 پدې معنا چې په x کې د یو واحد بدلون لپاره به په y کې 2.5 واحد بدلون وي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-a3",
+      "en": "Now put the given value of x = 10 in the equation to find the value of y as follows;",
+      "ur": "اب y کی قدر معلوم کرنے کے لیے مساوات میں x = 10 کی دی گئی قدر رکھیں جیسا کہ درج ذیل ہے؛",
+      "ps": "اوس د y د ارزښت د موندلو لپاره په معادله کې د x = 10 ورکړل شوی ارزښت کېږدئ لکه لاندې؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-a4",
+      "en": "(ii) The regression equation of x on y is x̂ = a + by",
+      "ur": "(ii) y پر x کی ریگریشن مساوات ہے x̂ = a + by",
+      "ps": "(ii) د y پر x د ریګرېشن معادله ده x̂ = a + by",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-a5",
+      "en": "Thus the fitted line of x on y is x̂ = 7.63 + 0.19y",
+      "ur": "اس طرح y پر x کی فٹ کی گئی لکیر ہے x̂ = 7.63 + 0.19y",
+      "ps": "په دې توګه د y پر x برابره شوې کرښه ده x̂ = 7.63 + 0.19y",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-h516",
+      "en": "5.1.6 Properties of the least squares regression line",
+      "ur": "5.1.6 کم از کم مربعات ریگریشن لکیر کی خصوصیات",
+      "ps": "5.1.6 د لږ تر لږه مربعاتو د ریګرېشن کرښې ځانګړتیاوې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s189-t516",
+      "en": "The least squares regression line has the following properties.",
+      "ur": "کم از کم مربعات ریگریشن لکیر کی درج ذیل خصوصیات ہیں۔",
+      "ps": "د لږ تر لږه مربعاتو ریګرېشن کرښه لاندې ځانګړتیاوې لري."
+    },
+    {
+      "id": "stat11-s189-p1",
+      "en": "(i) The least squares regression line always passes through the means of data as shown in the figure.",
+      "ur": "(i) کم از کم مربعات ریگریشن لکیر ہمیشہ اعداد و شمار کے اوسطوں سے گزرتی ہے جیسا کہ شکل میں دکھایا گیا ہے۔",
+      "ps": "(i) د لږ تر لږه مربعاتو ریګرېشن کرښه تل د معلوماتو د اوسطونو څخه تېرېږي لکه څنګه چې په انځور کې ښودل شوي."
+    },
+    {
+      "id": "stat11-s189-p2",
+      "en": "(ii) The sum of deviations of the observed values of y from the least squares regression line ŷ = a + bx is always equal to zero i.e. Σ(y − ŷ) = 0",
+      "ur": "(ii) y کی مشاہدہ شدہ قدروں کے کم از کم مربعات ریگریشن لکیر ŷ = a + bx سے انحرافات کا مجموعہ ہمیشہ صفر کے برابر ہوتا ہے یعنی Σ(y − ŷ) = 0",
+      "ps": "(ii) د y د کتل شویو ارزښتونو د لږ تر لږه مربعاتو د ریګرېشن کرښې ŷ = a + bx څخه د انحرافاتو مجموعه تل له صفر سره مساوي وي یعنې Σ(y − ŷ) = 0"
+    },
+    {
+      "id": "stat11-s189-p3",
+      "en": "(iii) The sum of the squares of the deviations of the observed values y from the least square",
+      "ur": "(iii) y کی مشاہدہ شدہ قدروں کے کم از کم مربعات",
+      "ps": "(iii) د y د کتل شویو ارزښتونو د لږ تر لږه مربعاتو څخه د انحرافاتو د مربعاتو مجموعه",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"regression line ŷ = a + bx is least i.e. Σ(y − ŷ)² is minimum.\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s189-a1",
+        "stat11-s189-a2",
+        "stat11-s189-a3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s189-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s189-a5",
+        "stat11-s189-h516",
+        "stat11-s189-t516",
+        "stat11-s189-p1"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s189-p2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "figure",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s189-p3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s189-ya",
+      "latex": "a=\\dfrac{\\sum y}{n}-b\\left(\\dfrac{\\sum x}{n}\\right)=\\dfrac{230}{10}-(2.5)\\left(\\dfrac{120}{10}\\right)=23-30=-7",
+      "accessible": "a = Σy/n − b(Σx/n) = 230/10 − (2.5)(120/10) = 23 − 30 = −7",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "a = Σy/n − b(Σx/n) = 230/10 − (2.5)(120/10) = 23 − 30 = −7"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "a = Σy/n − b(Σx/n) = 230/10 − (2.5)(120/10) = 23 − 30 = −7"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "a = Σy/n − b(Σx/n) = 230/10 − (2.5)(120/10) = 23 − 30 = −7"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-yb",
+      "latex": "\\hat{y}=-7+2.5(10)=-7+25=18",
+      "accessible": "ŷ = −7 + 2.5(10) = −7 + 25 = 18",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "ŷ = −7 + 2.5(10) = −7 + 25 = 18"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "ŷ = −7 + 2.5(10) = −7 + 25 = 18"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "ŷ = −7 + 2.5(10) = −7 + 25 = 18"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-xb",
+      "latex": "b=\\dfrac{n\\sum xy-\\sum x\\sum y}{n\\sum y^2-\\left(\\sum y\\right)^2}=\\dfrac{10(3075)-(120)(230)}{10(6962)-(230)^2}=\\dfrac{30750-2760}{69620-52900}=\\dfrac{3150}{16720}=0.19",
+      "accessible": "b = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²) = (10(3075) − (120)(230))/(10(6962) − (230)²) = (30750 − 2760)/(69620 − 52900) = 3150/16720 = 0.19",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²) = (10(3075) − (120)(230))/(10(6962) − (230)²) = (30750 − 2760)/(69620 − 52900) = 3150/16720 = 0.19"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²) = (10(3075) − (120)(230))/(10(6962) − (230)²) = (30750 − 2760)/(69620 − 52900) = 3150/16720 = 0.19"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²) = (10(3075) − (120)(230))/(10(6962) − (230)²) = (30750 − 2760)/(69620 − 52900) = 3150/16720 = 0.19"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-xa",
+      "latex": "a=\\dfrac{\\sum x}{n}-b\\left(\\dfrac{\\sum y}{n}\\right)=\\dfrac{120}{10}-0.19\\left(\\dfrac{230}{10}\\right)=12-4.37=7.63",
+      "accessible": "a = Σx/n − b(Σy/n) = 120/10 − 0.19(230/10) = 12 − 4.37 = 7.63",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "a = Σx/n − b(Σy/n) = 120/10 − 0.19(230/10) = 12 − 4.37 = 7.63"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "a = Σx/n − b(Σy/n) = 120/10 − 0.19(230/10) = 12 − 4.37 = 7.63"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "a = Σx/n − b(Σy/n) = 120/10 − 0.19(230/10) = 12 − 4.37 = 7.63"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-2"
+    },
+    {
+      "id": "stat11-s189-sum",
+      "latex": "\\sum(y-\\hat{y})=0",
+      "accessible": "Σ(y − ŷ) = 0",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σ(y − ŷ) = 0"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σ(y − ŷ) = 0"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σ(y − ŷ) = 0"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s189-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 220\" role=\"img\" aria-label=\"Regression line ŷ rising to the right and passing through the point where the horizontal line y-bar and vertical line x-bar meet\" style=\"width:100%;max-width:260px;height:auto;background:#fff\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"190\" stroke=\"#1c7ab8\" stroke-width=\"1.8\"/><line x1=\"40\" y1=\"190\" x2=\"230\" y2=\"190\" stroke=\"#1c7ab8\" stroke-width=\"1.8\"/><text x=\"34\" y=\"26\" font-size=\"13\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y</text><text x=\"236\" y=\"194\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">x</text><text x=\"30\" y=\"102\" font-size=\"13\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">ȳ</text><text x=\"138\" y=\"208\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">x̄</text><line x1=\"40\" y1=\"100\" x2=\"220\" y2=\"100\" stroke=\"#1c7ab8\" stroke-width=\"1.8\"/><line x1=\"138\" y1=\"30\" x2=\"138\" y2=\"190\" stroke=\"#1c7ab8\" stroke-width=\"1.8\"/><line x1=\"40\" y1=\"165\" x2=\"215\" y2=\"38\" stroke=\"#1c7ab8\" stroke-width=\"2\"/><polygon points=\"220,34 207,36 214,46\" fill=\"#1c7ab8\"/><text x=\"216\" y=\"60\" font-size=\"14\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">ŷ</text></svg>",
+      "caption": "Least squares regression line passing through the point of means",
+      "captionUrdu": "اوسطوں کے نقطے سے گزرتی کم از کم مربعات ریگریشن لکیر",
+      "captionPashto": "د اوسطونو له نقطې څخه تېره د لږ تر لږه مربعاتو ریګرېشن کرښه",
+      "labels": [
+        {
+          "en": "ȳ",
+          "ur": "ȳ",
+          "ps": "ȳ"
+        },
+        {
+          "en": "x̄",
+          "ur": "x̄",
+          "ps": "x̄"
+        },
+        {
+          "en": "ŷ",
+          "ur": "ŷ",
+          "ps": "ŷ"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded schematic of the printed figure."
+      }
+    },
+    {
+      "id": "stat11-s189-fig2",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Six observed points y1 to y6 scattered about a fitted regression line ŷ, with the residual e = y minus ŷ shown as a vertical segment from a point to the line\" style=\"width:100%;max-width:300px;height:auto;background:#fff\"><line x1=\"30\" y1=\"20\" x2=\"30\" y2=\"190\" stroke=\"#111\" stroke-width=\"2\"/><line x1=\"30\" y1=\"190\" x2=\"270\" y2=\"190\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"24\" y=\"26\" font-size=\"13\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y</text><line x1=\"30\" y1=\"150\" x2=\"250\" y2=\"58\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"262\" y=\"62\" font-size=\"14\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">ŷ</text><circle cx=\"90\" cy=\"100\" r=\"3.5\" fill=\"#111\"/><text x=\"78\" y=\"92\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">1</tspan></text><circle cx=\"130\" cy=\"95\" r=\"3.5\" fill=\"#111\"/><text x=\"118\" y=\"87\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">2</tspan></text><circle cx=\"100\" cy=\"175\" r=\"3.5\" fill=\"#111\"/><text x=\"102\" y=\"191\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">3</tspan></text><circle cx=\"180\" cy=\"40\" r=\"3.5\" fill=\"#111\"/><text x=\"168\" y=\"32\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">4</tspan></text><circle cx=\"145\" cy=\"170\" r=\"3.5\" fill=\"#111\"/><text x=\"147\" y=\"186\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">5</tspan></text><circle cx=\"195\" cy=\"160\" r=\"3.5\" fill=\"#111\"/><text x=\"197\" y=\"176\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">y<tspan font-size=\"9\" dy=\"3\">6</tspan></text><line x1=\"195\" y1=\"160\" x2=\"195\" y2=\"95\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"206\" y=\"132\" font-size=\"12\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">e = y − ŷ</text></svg>",
+      "caption": "Observed values y1 to y6 and residual e = y − ŷ about the regression line",
+      "captionUrdu": "مشاہدہ شدہ قدریں y1 تا y6 اور ریگریشن لکیر کے گرد باقی e = y − ŷ",
+      "captionPashto": "کتل شوي ارزښتونه y1 تر y6 او د ریګرېشن کرښې شاوخوا پاتې e = y − ŷ",
+      "labels": [
+        {
+          "en": "ŷ",
+          "ur": "ŷ",
+          "ps": "ŷ"
+        },
+        {
+          "en": "e = y − ŷ",
+          "ur": "e = y − ŷ",
+          "ps": "e = y − ŷ"
+        }
+      ],
+      "sourceGap": {
+        "note": "Redrawn as a coded schematic of the printed figure."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 179. The first line completes the working of Example 5.2 (b = 2.5). Printed results kept: 0.19, 7.63. Two figures are printed beside the properties: the line through the means (x̄, ȳ) and the observed points y1 to y6 with the residual e = y − ŷ. A hand-drawn loop around the fitted line and a faded mark are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:18:59.600761+00:00",
+    "scope": "Scan 189 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

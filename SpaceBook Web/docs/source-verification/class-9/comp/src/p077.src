@@ -1,0 +1,35 @@
+@printed 69
+@status lesson
+### *getch()* || *getch()* || *getch()*
+p *getch()* function reads a character from the keyboard without echoing (displaying) it on the screen. || *getch()* فنکشن کی بورڈ سے حرف کو اسکرین پر دکھائے (ایکو کیے) بغیر پڑھتا ہے۔ || *getch()* فنکشن له کیبورډ توری پرته له دې چې پر پرده یې وښيي لولي.
+### Program 3.6 || پروگرام 3.6 || پروګرام ۳.۶
+m #include<stdio.h>
+m void main()
+m {
+m     char ch;
+m     printf("Enter Char:");
+m     ch=getch();
+m     printf("\n");
+m     putchar(ch);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter Char:
+m j
+endbox
+### *getche()* || *getche()* || *getche()*
+p *getche()* function reads a character from the keyboard with echoing (displaying) it on the screen. || *getche()* فنکشن کی بورڈ سے حرف کو اسکرین پر دکھاتے (ایکو کرتے) ہوئے پڑھتا ہے۔ || *getche()* فنکشن له کیبورډ توری لولي او پر پرده یې ښيي.
+### Program 3.7: || پروگرام 3.7: || پروګرام ۳.۷:
+m #include<stdio.h>
+m void main()
+m {
+m     char ch;
+m     printf("Enter Character:");
+m     ch=getche();
+m     printf("\n");
+m     putchar(ch);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter Character: k
+m k
+endbox
+@issue getch() and getche() are declared in conio.h, which Programs 3.6 and 3.7 do not include; kept as printed.

@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Unit 4 comprehensive questions 6–9 / numerical questions 1–6 / web links'
+SECTIONS = [
+    ('ex4-comp2', ('COMPREHENSIVE QUESTIONS (continued)', 'جامع سوالات (جاری)', 'جامع پوښتنې (دوام)'), [
+        ('ul', [
+            ('6. Define equilibrium. Explain its types and state the two conditions of equilibrium.', '6. توازن کی تعریف کریں۔ اس کی اقسام کی وضاحت کریں اور توازن کی دو شرائط بیان کریں۔', '6. توازن تعریف کړئ. ډولونه یې تشریح او د توازن دوه شرطونه بیان کړئ.'),
+            ('7. State and explain principle of moments with examples.', '7. مثالوں کے ساتھ مومنٹس کا اصول بیان کریں اور وضاحت کریں۔', '7. د مومنټونو اصل په مثالونو بیان او تشریح کړئ.'),
+            ('8. What is center of mass or center of garvity [gravity]? Explain how CM/CG can be determined? Is there any difference between CM and CG?', '8. مرکزِ کمیت یا مرکزِ ثقل کیا ہے؟ وضاحت کریں کہ CM/CG کیسے معلوم کیا جا سکتا ہے۔ کیا CM اور CG میں کوئی فرق ہے؟', '8. د کتلې مرکز یا د جاذبې مرکز څه دی؟ تشریح کړئ چې CM/CG څنګه معلومېږي. ایا د CM او CG ترمنځ کوم توپیر شته؟'),
+            ('9. Explain the stability of the objects with reference to position of center of mass.', '9. مرکزِ کمیت کے مقام کے حوالے سے اجسام کے استحکام کی وضاحت کریں۔', '9. د کتلې د مرکز د ځای په تړاو د جسمونو ثبات تشریح کړئ.'),
+        ]),
+    ]),
+    ('ex4-num', ('NUMERICAL QUESTIONS', 'عددی سوالات', 'عددي پوښتنې'), [
+        ('ul', [
+            ('1. To open a door force of 15 N is applied at 30° to the horizontal, find the horizontal and vertical components of force.', '1. دروازہ کھولنے کے لیے افق سے 30° پر 15 N قوت لگائی جاتی ہے؛ قوت کے افقی اور عمودی اجزا معلوم کریں۔', '1. د دروازې د پرانیستلو لپاره له افق سره په 30° کې 15 N قوت اچول کېږي؛ د قوت افقي او عمودي برخې معلومې کړئ.'),
+            ('2. A bolt on a car engine needs to be tightened with a torque of 40 Nm. You use a 25-cm-long wrench and pull on the end of the wrench perpendicularly. How much force do you have to exert?', '2. گاڑی کے انجن کا ایک بولٹ 40 Nm ٹارک سے کسنا ہے۔ آپ 25 cm لمبا رنچ استعمال کرتے ہیں اور اس کے سرے کو عموداً کھینچتے ہیں۔ آپ کو کتنی قوت لگانی ہوگی؟', '2. د موټر د انجن یو بولټ باید په 40 Nm تورک کلک شي. تاسو 25 cm اوږد رېنچ کاروئ او د هغه سر په عمودي ډول کاږئ. څومره قوت باید واچوئ؟'),
+            ('3. Sana, whose mass is 43 kg, sits 1.8 m from the center of a seesaw. Faiz, whose mass is 52 kg, wants to balance Sana. How far from the center of the seesaw should Faiz sit?', '3. ثنا، جس کی کمیت 43 kg ہے، سی سا کے مرکز سے 1.8 m پر بیٹھی ہے۔ فائز، جس کی کمیت 52 kg ہے، ثنا کو متوازن کرنا چاہتا ہے۔ فائز کو سی سا کے مرکز سے کتنی دور بیٹھنا چاہیے؟', '3. ثنا چې کتله یې 43 kg ده، د ټال له مرکز 1.8 m کې ناسته ده. فایز چې کتله یې 52 kg ده، غواړي ثنا متوازنه کړي. فایز باید د ټال له مرکز څومره لرې کېني؟'),
+            ('4. Two kids of weighing 300 N and 350 N are sitting at the ends of 6 m long see-saw. The seesaw is pivoted at its centre. Where would a third kid sit so that the see-saw is in equilibrium in the horizontal position? The weight of third kid is 250 N. (Ignore the weight of see-saw)', '4. 300 N اور 350 N وزن کے دو بچے 6 m لمبے سی سا کے سروں پر بیٹھے ہیں۔ سی سا کا محور اس کے مرکز پر ہے۔ تیسرا بچہ کہاں بیٹھے کہ سی سا افقی حالت میں توازن میں رہے؟ تیسرے بچے کا وزن 250 N ہے۔ (سی سا کا وزن نظر انداز کریں)', '4. د 300 N او 350 N وزن دوه ماشومان د 6 m اوږده ټال پر سرونو ناست دي. د ټال محور په مرکز کې دی. درېیم ماشوم چېرته کېني چې ټال په افقي حالت کې متوازن وي؟ د درېیم ماشوم وزن 250 N دی. (د ټال وزن له پامه وغورځوئ)'),
+            ('5. Two children push on opposite sides of a door during play. Both push horizontally and perpendicular to the door. One child pushes with a force of 20 N at a distance of 0.60 m from the hinges, and the second child pushes at a distance of 0.50 m. What force must the second child exert to keep the door from moving? Assume friction is negligible.', '5. کھیل کے دوران دو بچے دروازے کے مخالف اطراف پر دھکیلتے ہیں۔ دونوں افقی اور دروازے پر عموداً دھکیلتے ہیں۔ ایک بچہ قبضوں سے 0.60 m پر 20 N قوت سے دھکیلتا ہے اور دوسرا 0.50 m پر۔ دروازے کو حرکت سے روکنے کے لیے دوسرے بچے کو کتنی قوت لگانی چاہیے؟ رگڑ کو نظر انداز کریں۔', '5. د لوبې پر مهال دوه ماشومان د دروازې پر مخالفو خواوو ټېل وهي. دواړه افقي او پر دروازه عمودي ټېل وهي. یو ماشوم له قبضو 0.60 m کې په 20 N قوت ټېل وهي او دویم په 0.50 m کې. دویم ماشوم باید څومره قوت واچوي چې دروازه ونه خوځېږي؟ اصطکاک له پامه وغورځوئ.'),
+            ('6. A construction crane lifts building material of mass 1500 kg by moving its crane arm, calculate moment of force when moment arm is 20 m. After lifting the crane arm, which reduces moment arm to 12 m calculate moment.', '6. ایک تعمیراتی کرین اپنے بازو کو حرکت دے کر 1500 kg کمیت کا تعمیراتی سامان اٹھاتی ہے؛ مومنٹ آرم 20 m ہونے پر قوت کا مومنٹ معلوم کریں۔ کرین کا بازو اٹھانے کے بعد جو مومنٹ آرم کو 12 m کر دیتا ہے، مومنٹ معلوم کریں۔', '6. یو ساختماني کرین د خپل بازو په خوځولو د 1500 kg کتلې ساختماني مواد پورته کوي؛ کله چې مومنټ بازو 20 m وي د قوت مومنټ محاسبه کړئ. د کرین د بازو له پورته کولو وروسته چې مومنټ بازو 12 m ته راکموي، مومنټ محاسبه کړئ.'),
+        ]),
+    ]),
+    ('web4', ('WEB LINKS', 'ویب لنکس', 'وېب لینکونه'), [
+        ('ul', [
+            ('http://www.learneasy.info/MDME/MEMmods/MEM30005A/add_forces/add_forces.html', 'http://www.learneasy.info/MDME/MEMmods/MEM30005A/add_forces/add_forces.html', 'http://www.learneasy.info/MDME/MEMmods/MEM30005A/add_forces/add_forces.html'),
+            ('https://courses.lumenlearning.com/boundless-physics/chapter/center-of-mass/', 'https://courses.lumenlearning.com/boundless-physics/chapter/center-of-mass/', 'https://courses.lumenlearning.com/boundless-physics/chapter/center-of-mass/'),
+            ('http://www.cyberphysics.co.uk/topics/forces/stability.htm', 'http://www.cyberphysics.co.uk/topics/forces/stability.htm', 'http://www.cyberphysics.co.uk/topics/forces/stability.htm'),
+        ]),
+    ]),
+]

@@ -1,0 +1,28 @@
+@printed 7
+@status lesson
+- سرعت یا چلنے کے لیے درکار وقت (Speed or Running Time): یہ وہ وقت ہے جو ایک الگورتھم مکمل ہونے کے لیے لیتا ہے۔ || Speed or running time: the time an algorithm takes to complete. || چټکتیا یا د چلېدو وخت (Speed or Running Time): هغه وخت چې یو الګوریتم یې د بشپړېدو لپاره اخلي.
+- درکار میموری: کسی آپریشن کے دوران الگورتھم کی طرف سے استعمال کی گئی میموری۔ || Memory required: the memory used by the algorithm during an operation. || اړینه حافظه: د یوه عملیات پر مهال د الګوریتم له خوا کارول شوې حافظه.
+p مزید برآں اس کی کارکردگی کو درج ذیل عوامل کی بنیاد پر ماپا جا سکتا ہے۔ || In addition, its efficiency can be measured on the basis of the following factors. || سربېره پر دې د هغه اغېزمنتیا د لاندې عواملو پر بنسټ اندازه کېدای شي.
+svg شکل نمبر 1.6 الگورتھم کی کارکردگی || Figure 1.6 Working of an algorithm || ۱.۶ شکل د الګوریتم کارکردګي
+<svg viewBox="0 0 520 170" width="520" role="img" aria-label="Flow diagram: input parallelogram, arrow to a rectangle labelled algorithm describing a step-by-step computation that takes a value or set of values as input and gives a value or set of values as output, arrow to output parallelogram" font-family="Noto Nastaliq Urdu, Jameel Noori Nastaleeq, serif" font-size="14" text-anchor="middle">
+<polygon points="20,110 50,40 110,40 80,110" fill="#fff" stroke="#111827" stroke-width="2"/><text x="65" y="80">اِن پُٹ</text>
+<line x1="98" y1="75" x2="168" y2="75" stroke="#1d6fb8" stroke-width="3"/><polygon points="168,69 180,75 168,81" fill="#1d6fb8"/>
+<rect x="180" y="20" width="200" height="110" fill="#fff" stroke="#111827" stroke-width="2"/>
+<text x="280" y="44">ایک ایسا مرحلہ وار حسابی عمل ہے جو</text>
+<text x="280" y="66">ایک عدد یا رقم یا اعداد کے مجموعے کو</text>
+<text x="280" y="88">بطور اِن پُٹ لیتا ہے اور کوئی بھی رقم یا</text>
+<text x="280" y="110">اعداد کا مجموعہ آؤٹ پُٹ میں ظاہر کرتا ہے</text>
+<text x="280" y="156">الگورتھم</text>
+<line x1="380" y1="75" x2="430" y2="75" stroke="#1d6fb8" stroke-width="3"/><polygon points="430,69 442,75 430,81" fill="#1d6fb8"/>
+<polygon points="430,110 460,40 510,40 480,110" fill="#fff" stroke="#111827" stroke-width="2"/><text x="470" y="80">آؤٹ پُٹ</text>
+</svg>
+endsvg
+@issue The text inside the algorithm box is the definition from 1.2.1 (lightly abridged in print); it is reproduced as printed in the figure.
+### i. درکار اِن پُٹ (Inputs needed) || i. Inputs needed || i. اړین ننوتي (Inputs)
+p کسی الگورتھم کو ملنے والی اِن پُٹ کی مقدار سے پتا لگایا جا سکتا ہے کہ اس الگورتھم کو کتنا وقت درکار ہے۔ مثال کے طور پر ایک چھوٹے قالب (Matrix) کے مقابلے میں ایک بڑے قالب کو ضرب دینے کے لیے زیادہ وقت درکار ہو گا۔ اسی طرح کبھی کبھار کوئی الگورتھم ایک جیسی مقدار کی اِن پُٹ کے لئے مختلف وقت صرف کرتا ہے۔ || From the amount of input an algorithm receives, one can find how much time the algorithm needs. For example, multiplying a large matrix will take more time than a small one. Likewise, an algorithm sometimes spends different times for inputs of the same size. || له هغه مقدار ننوتو چې یو الګوریتم یې ترلاسه کوي، معلومېدای شي چې الګوریتم څومره وخت ته اړتیا لري. د بېلګې په توګه د یوه لوی میټرېکس ضربول تر وړوکي ډېر وخت غواړي. همداسې کله کله یو الګوریتم د یو شان مقدار ننوتو لپاره بېلابېل وخت لګوي.
+### ii. پروسیسنگ کو مکمل کرنا (Processing to be completed) || ii. Processing to be completed || ii. د پروسس بشپړول
+p الگورتھم کو اپنی پروسیسنگ مکمل کرنے کے لیے کتنا وقت درکار ہے اس سے الگورتھم کی کارکردگی کو ماپا جا سکتا ہے۔ پروسیسنگ کی تکمیل کا وقت سائیکل ٹائم، انتظار (Wait) اور پروسیسنگ کا وقت (Processing Time) پر مشتمل ہوتا ہے۔ || The efficiency of an algorithm can be measured by how much time it needs to complete its processing. The time to complete processing consists of cycle time, wait, and processing time. || د الګوریتم اغېزمنتیا په دې اندازه کېدای شي چې خپل پروسس بشپړولو ته څومره وخت غواړي. د پروسس د بشپړېدو وخت له سایکل وخت، انتظار (Wait) او د پروسس وخت (Processing Time) څخه جوړ دی.
+### iii. فیصلہ کرنا (Decision to be taken) || iii. Decision to be taken || iii. پرېکړه کول
+p مسئلے کو حل کرنے کے دوران مختلف فیصلے کرنا ایک بہت ہی اہم صلاحیت ہے جس سے الگورتھم کی کارکردگی میں بہتری لائی جا سکتی ہے اور موزوں ترین نتائج حاصل کیے جا سکتے ہیں۔ || Making various decisions while solving a problem is a very important ability, by which the efficiency of the algorithm can be improved and the most suitable results obtained. || د ستونزې د حل پر مهال بېلابېلې پرېکړې کول ډېره مهمه وړتیا ده چې د الګوریتم اغېزمنتیا ښه کوي او تر ټولو مناسبې پایلې ترلاسه کوي.
+### iv. حاصل شدہ آؤٹ پُٹ (Outputs to be provided) || iv. Outputs to be provided || iv. ترلاسه شوي وتي (Outputs)
+p اگر ایک الگورتھم اپنی ہر اِن پُٹ کے لیے مطلوبہ نتائج مہیا کرے تو اس کا مطلب یہ ہے کہ یہ الگورتھم درست ہے۔ کیونکہ ایک غلط الگورتھم کچھ اِن پُٹس پر ختم ہی نہیں ہو گا یا وہ ایسے نتائج فراہم کرے گا جو کہ ناقابلِ قبول ہوں گے۔ اس لیے الگورتھم والے حل جو قابلِ قبول نتائج فراہم کریں ان کو ہی مسئلے کا بہترین حل کہا جائے گا۔ || If an algorithm gives the desired results for every input, it means the algorithm is correct, because an incorrect algorithm will not terminate on some inputs or will give unacceptable results. So only algorithmic solutions that give acceptable results will be called the best solution of the problem. || که یو الګوریتم د هر input لپاره غوښتل شوې پایلې ورکړي، مانا یې دا ده چې الګوریتم سم دی، ځکه یو غلط الګوریتم په ځینو ننوتو کې نه پای ته رسېږي یا د نه منلو وړ پایلې ورکوي. نو یوازې هغه الګوریتمي حلونه چې د منلو وړ پایلې ورکړي، د ستونزې غوره حل بلل کېږي.

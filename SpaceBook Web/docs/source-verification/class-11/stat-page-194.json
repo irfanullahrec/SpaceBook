@@ -1,0 +1,335 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s194-corr-props-1",
+  "title": "Example 5.4 (end) · 5.2.2 Properties of coefficient of correlation · Example 5.5 · 5.2.3 Correlation and causation (start)",
+  "headingUrdu": "مثال 5.4 (اختتام) · 5.2.2 ارتباطی عددی سر کی خصوصیات · مثال 5.5 · 5.2.3 ارتباط اور علت (آغاز)",
+  "headingPashto": "بېلګه 5.4 (پای) · 5.2.2 د همتړاو د ضریب ځانګړتیاوې · بېلګه 5.5 · 5.2.3 همتړاو او علت (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 194,
+    "printedPage": "184"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s194-a1",
+      "en": "This implies that x and y have positive correlation.",
+      "ur": "اس سے ظاہر ہوتا ہے کہ x اور y میں مثبت ارتباط ہے۔",
+      "ps": "دا ښيي چې x او y مثبت همتړاو لري.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "id": "stat11-s194-h522",
+      "en": "5.2.2 Properties of coefficient of correlation",
+      "ur": "5.2.2 ارتباطی عددی سر کی خصوصیات",
+      "ps": "5.2.2 د همتړاو د ضریب ځانګړتیاوې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s194-p1",
+      "en": "(i) The coefficient of correlation is symmetrical with respect to the variables x and y i.e. r_xy = r_yx.",
+      "ur": "(i) ارتباطی عددی سر متغیرات x اور y کے لحاظ سے متشاکل ہے یعنی r_xy = r_yx۔",
+      "ps": "(i) د همتړاو ضریب د x او y متغیرونو په نسبت متناسب دی یعنې r_xy = r_yx.",
+      "listGroup": "corr-props-list"
+    },
+    {
+      "id": "stat11-s194-p2",
+      "en": "(ii) The coefficient of correlation lies between −1 and 1.",
+      "ur": "(ii) ارتباطی عددی سر −1 اور 1 کے درمیان ہوتا ہے۔",
+      "ps": "(ii) د همتړاو ضریب د −1 او 1 تر منځ پروت دی.",
+      "listGroup": "corr-props-list"
+    },
+    {
+      "id": "stat11-s194-p3",
+      "en": "(iii) The coefficient of correlation is independent of origin and scale i.e. r_xy = r_uv, where u = (x − a)/h and v = (y − b)/k.",
+      "ur": "(iii) ارتباطی عددی سر مبدا اور پیمانے سے آزاد ہے یعنی r_xy = r_uv، جہاں u = (x − a)/h اور v = (y − b)/k۔",
+      "ps": "(iii) د همتړاو ضریب د اصل او پیمانې څخه خپلواک دی یعنې r_xy = r_uv، چېرته چې u = (x − a)/h او v = (y − b)/k.",
+      "listGroup": "corr-props-list"
+    },
+    {
+      "id": "stat11-s194-p4",
+      "en": "(iv) The coefficient of correlation is the geometric mean of the two regression coefficients i.e.",
+      "ur": "(iv) ارتباطی عددی سر دو ریگریشن عددی سروں کا ہندسی اوسط ہے یعنی",
+      "ps": "(iv) د همتړاو ضریب د دوو ریګرېشن ضریبونو هندسي اوسط دی یعنې",
+      "listGroup": "corr-props-list"
+    },
+    {
+      "id": "stat11-s194-pa",
+      "en": "(if both regression coefficients are positive)",
+      "ur": "(اگر دونوں ریگریشن عددی سر مثبت ہوں)",
+      "ps": "(که دواړه ریګرېشن ضریبونه مثبت وي)"
+    },
+    {
+      "id": "stat11-s194-pb",
+      "en": "(if both regression coefficients are negative).",
+      "ur": "(اگر دونوں ریگریشن عددی سر منفی ہوں)۔",
+      "ps": "(که دواړه ریګرېشن ضریبونه منفي وي)."
+    },
+    {
+      "id": "stat11-s194-ex55",
+      "en": "Example: 5.5",
+      "ur": "مثال: 5.5",
+      "ps": "بېلګه: 5.5",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-q55",
+      "en": "If the regression coefficient of y on x is b_y.x = 0.27 and x on y is b_x.y = 0.6. Find the product moment coefficient of correlation r_xy.",
+      "ur": "اگر x پر y کا ریگریشن عددی سر b_y.x = 0.27 اور y پر x کا b_x.y = 0.6 ہو۔ حاصلِ ضرب معیارِ اثر ارتباطی عددی سر r_xy معلوم کریں۔",
+      "ps": "که د x پر y د ریګرېشن ضریب b_y.x = 0.27 او د y پر x د b_x.y = 0.6 وي. د ضرب-مومنټ همتړاو ضریب r_xy ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-sol55",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-a2",
+      "en": "As both regression coefficients are positive, so r_xy is positive. Therefore,",
+      "ur": "چونکہ دونوں ریگریشن عددی سر مثبت ہیں اس لیے r_xy مثبت ہے۔ لہٰذا،",
+      "ps": "ځکه چې دواړه ریګرېشن ضریبونه مثبت دي نو r_xy مثبت دی. نو،",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-a3",
+      "en": "= 0.40. There is positive correlation between x and y.",
+      "ur": "= 0.40۔ x اور y کے درمیان مثبت ارتباط ہے۔",
+      "ps": "= 0.40. د x او y تر منځ مثبت همتړاو شته.",
+      "role": "solution",
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-h523",
+      "en": "5.2.3 Correlation and causation",
+      "ur": "5.2.3 ارتباط اور علت",
+      "ps": "5.2.3 همتړاو او علت",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s194-t523",
+      "en": "Correlation does not establish a cause and effect relationship between two variables. It does not provide any information about the size of the change in one variable as a result of a certain change in the other variable. In correlation both variables are interdependent. Relationship between them may be zero, weak or strong. Sometimes correlation between two unconnected variables will be nonsense or spurious. For example, two variables, sale of milk and death rate from accidents in a city may produce high positive correlation which may be due",
+      "ur": "ارتباط دو متغیرات کے درمیان علت و معلول کا تعلق قائم نہیں کرتا۔ یہ دوسرے متغیر میں کسی خاص تبدیلی کے نتیجے میں ایک متغیر میں تبدیلی کی مقدار کے بارے میں کوئی معلومات فراہم نہیں کرتا۔ ارتباط میں دونوں متغیرات باہم منحصر ہوتے ہیں۔ ان کے درمیان تعلق صفر، کمزور یا مضبوط ہو سکتا ہے۔ بعض اوقات دو غیر متعلقہ متغیرات کے درمیان ارتباط بے معنی یا جعلی ہوگا۔ مثال کے طور پر، دو متغیرات، کسی شہر میں دودھ کی فروخت اور حادثات سے اموات کی شرح، اعلیٰ مثبت ارتباط پیدا کر سکتے ہیں جو ہو سکتا ہے",
+      "ps": "همتړاو د دوو متغیرونو تر منځ د علت او معلول اړیکه نه جوړوي. دا د بل متغیر په یو ټاکلي بدلون په پایله کې د یوه متغیر د بدلون د کچې په اړه هېڅ معلومات نه ورکوي. په همتړاو کې دواړه متغیره متقابل تړلي وي. د هغوی تر منځ اړیکه صفر، کمزورې یا ځواکمنه کېدای شي. ځینې وختونه د دوو غیر اړوندو متغیرونو تر منځ همتړاو بې‌معنا یا جعلي وي. د مثال په توګه، دوه متغیره، په یوه ښار کې د شېدو پلور او د پېښو له امله د مړینې کچه، ښايي لوړ مثبت همتړاو رامنځته کړي چې ښايي له امله وي",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"…to the growth of population …\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s194-a1",
+        "stat11-s194-h522",
+        "stat11-s194-p1",
+        "stat11-s194-p2",
+        "stat11-s194-p3",
+        "stat11-s194-p4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s194-pa"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s194-pb",
+        "stat11-s194-ex55",
+        "stat11-s194-q55",
+        "stat11-s194-sol55",
+        "stat11-s194-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s194-a3",
+        "stat11-s194-h523",
+        "stat11-s194-t523"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s194-e1",
+      "latex": "\\dfrac{5(88)-(15)(25)}{\\sqrt{[5(55)-(15)^2][5(151)-(25)^2]}}=\\dfrac{440-375}{\\sqrt{50\\times 130}}=\\dfrac{65}{\\sqrt{6500}}=\\dfrac{65}{80.623}=0.81",
+      "accessible": "r_xy = (5(88) − (15)(25)) / √([5(55) − (15)²][5(151) − (25)²]) = (440 − 375)/√(50 × 130) = 65/√6500 = 65/80.623 = 0.81",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = (5(88) − (15)(25)) / √([5(55) − (15)²][5(151) − (25)²]) = (440 − 375)/√(50 × 130) = 65/√6500 = 65/80.623 = 0.81"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = (5(88) − (15)(25)) / √([5(55) − (15)²][5(151) − (25)²]) = (440 − 375)/√(50 × 130) = 65/√6500 = 65/80.623 = 0.81"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = (5(88) − (15)(25)) / √([5(55) − (15)²][5(151) − (25)²]) = (440 − 375)/√(50 × 130) = 65/√6500 = 65/80.623 = 0.81"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-4"
+    },
+    {
+      "id": "stat11-s194-g1",
+      "latex": "r_{xy}=\\sqrt{b_{y.x}\\times b_{x.y}}",
+      "accessible": "r_xy = √(b_y.x × b_x.y)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s194-g2",
+      "latex": "r_{xy}=-\\sqrt{b_{y.x}\\times b_{x.y}}",
+      "accessible": "r_xy = −√(b_y.x × b_x.y)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = −√(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = −√(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = −√(b_y.x × b_x.y)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s194-e5a",
+      "latex": "r_{xy}=\\sqrt{b_{y.x}\\times b_{x.y}}",
+      "accessible": "r_xy = √(b_y.x × b_x.y)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "r_xy = √(b_y.x × b_x.y)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-5"
+    },
+    {
+      "id": "stat11-s194-e5b",
+      "latex": "=\\sqrt{(0.27)(0.6)}=0.40",
+      "accessible": "= √((0.27)(0.6)) = 0.40",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √((0.27)(0.6)) = 0.40"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √((0.27)(0.6)) = 0.40"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √((0.27)(0.6)) = 0.40"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-5-5"
+    }
+  ],
+  "sourceNote": "Printed page 184. The first line (the result 0.81 of Example 5.4 in a chain of fractions) completes Example 5.4. In the printed text the symbols r_xy, b_y.x and b_x.y carry subscripts; they are written with underscores in the plain text here. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:20:20.016961+00:00",
+    "scope": "Scan 194 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

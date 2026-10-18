@@ -1,0 +1,21 @@
+@printed 127
+@status lesson
+@issue Source: 10thphysics4.pdf page 14. The book repeats "as the series combination" in the definition of Cₑ for the parallel case; kept as printed.
+svg FIGURE 13.20 – Parallel Combination of Capacitors: C₁, C₂, C₃ in separate branches across the same battery V, each with charges Q₁, Q₂, Q₃; and the single equivalent capacitor Cₑ. || شکل 13.20 – کیپیسیٹرز کا متوازی ملاپ: C₁، C₂، C₃ ایک ہی بیٹری V کے ساتھ الگ الگ شاخوں میں، ہر ایک پر چارج Q₁، Q₂، Q₃؛ اور ایک مساوی کیپیسیٹر Cₑ۔ || ۱۳.۲۰ شکل – د خازنونو موازي ترکیب: C₁، C₂، C₃ له یوې بیټرۍ V سره په جلا څانګو کې، هر یو د Q₁، Q₂، Q₃ چارج سره؛ او یو معادل خازن Cₑ.
+<svg viewBox="0 0 300 160" width="300" role="img" aria-label="Left circuit: three capacitors C1, C2, C3 each in its own rung between two vertical wires, with charges Q1, Q2, Q3; a battery V at the bottom. Right: one equivalent capacitor Ce with a battery V" font-family="Arial" font-size="10">
+<g stroke="#111" fill="none" stroke-width="1.5">
+<path d="M30 20 V140 H75 M85 140 H130 V20"/><path d="M75 130 V150 M85 134 V146"/>
+<path d="M30 20 H77 M83 20 H130 M77 10 V30 M83 10 V30"/><path d="M30 60 H77 M83 60 H130 M77 50 V70 M83 50 V70"/><path d="M30 100 H77 M83 100 H130 M77 90 V110 M83 90 V110"/>
+<path d="M200 50 H232 M238 50 H270 V130 H240 M230 130 H200 V50 M232 40 V60 M238 40 V60 M230 120 V140 M240 124 V136"/></g>
+<text x="90" y="12">C₁</text><text x="90" y="52">C₂</text><text x="90" y="92">C₃</text>
+<text x="90" y="38">Q₁</text><text x="90" y="78">Q₂</text><text x="90" y="118">Q₃</text>
+<text x="70" y="158">+  V  −</text><text x="228" y="34">Cₑ</text><text x="230" y="154">V</text>
+</svg>
+endsvg
+p Since the capacitance of capacitor is $C = \dfrac{Q}{V}$ or $Q = CV$, therefore, each charge can be written as || چونکہ کیپیسیٹر کی کیپیسیٹنس $C = \dfrac{Q}{V}$ یا $Q = CV$ ہے، اس لیے ہر چارج کو یوں لکھا جا سکتا ہے || څرنګه چې د خازن ظرفیت $C = \dfrac{Q}{V}$ یا $Q = CV$ دی، نو هر چارج داسې لیکل کېږي
+eq Q_1 = C_1V_1\ \text{and}\ Q_2 = C_2V_2\ \text{and}\ Q_3 = C_3V_3\ \text{and}\ Q = C_eV
+p Where $C_e$ is the equivalent capacitance of a single capacitor that has the same effect on the circuit as the series combination when it is connected to the battery. Hence equation 2 can be written as || جہاں $C_e$ اس ایک کیپیسیٹر کی مساوی کیپیسیٹنس ہے جو بیٹری سے جڑنے پر سرکٹ پر ملاپ جیسا ہی اثر ڈالتا ہے۔ لہٰذا مساوات 2 کو یوں لکھا جا سکتا ہے || چې $C_e$ د هغه یوه خازن معادل ظرفیت دی چې له بیټرۍ سره د نښلولو پر مهال پر سرکټ د ترکیب په څېر اغېز لري. نو (۲) معادله داسې لیکل کېږي
+eq C_eV = C_1V_1 + C_2V_2 + C_3V_3 \quad \text{--- (3)}
+p Putting equation 1 in equation 3 we get || مساوات 1 کو مساوات 3 میں رکھنے سے || (۱) معادله په (۳) کې ږدو نو
+eq C_eV = C_1V + C_2V + C_3V \quad \text{or} \quad C_eV = V(C_1 + C_2 + C_3)
+eq \text{Therefore}\quad C_e = C_1 + C_2 + C_3 \qquad (13.9)

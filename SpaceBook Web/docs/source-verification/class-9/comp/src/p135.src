@@ -1,0 +1,29 @@
+@printed 127
+@status lesson
+### Program 5.11: A program that inputs a number from the user using for loop. If the number is greater than 0, it is displayed and the next number is input. The program exits the loop if the number is 0 or negative using break statement. || پروگرام 5.11: for لوپ سے صارف سے عدد ان پٹ کرنے والا پروگرام۔ اگر عدد 0 سے بڑا ہو تو دکھایا جاتا ہے اور اگلا عدد لیا جاتا ہے۔ عدد 0 یا منفی ہو تو break سے لوپ ختم ہو جاتا ہے۔ || پروګرام ۵.۱۱: د for لوپ په مرسته له کاروونکي عدد اخلي. که عدد له ۰ لوی وي ښودل کېږي او بل عدد اخیستل کېږي. که عدد ۰ یا منفي وي د break په مرسته له لوپ وځي.
+m # include <stdio.h>
+m void main()
+m {
+m     int x, num;
+m     for(x=1;x<=5;x++)
+m     {
+m         printf("\nEnter a number: ");
+m         scanf("%d", &num);
+m         if(num<=0)
+m             break;
+m         printf("\nYou entered  %d\n ",num);
+m     }
+m     printf("\n OK");
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter a number: 3
+m You entered 3
+m Enter a number: 0
+m OK
+endbox
+p The above program uses *break* statement in *for* loop. The counter variable **x** indicates that the loop should execute for five times. But it is executed only twice. In the first iteration, 3 is displayed on the screen. In second iteration, the *printf()* statement in the loop displays question and control moves to *break* statement. This statement moves the control out of the loop. So the message appears only once. || اوپر والا پروگرام *for* لوپ میں *break* استعمال کرتا ہے۔ کاؤنٹر متغیر **x** بتاتا ہے کہ لوپ پانچ بار چلنا چاہیے، لیکن یہ صرف دو بار چلتا ہے۔ پہلی تکرار میں اسکرین پر 3 دکھایا جاتا ہے۔ دوسری تکرار میں لوپ کی *printf()* سوال دکھاتی ہے اور کنٹرول *break* پر جاتا ہے جو کنٹرول کو لوپ سے باہر لے جاتی ہے۔ اس لیے پیغام صرف ایک بار ظاہر ہوتا ہے۔ || پورتنی پروګرام په *for* لوپ کې *break* کاروي. counter متغیر **x** ښيي چې لوپ باید پنځه ځله اجرا شي، خو یوازې دوه ځله اجرا کېږي. په لومړي تکرار کې 3 پر پرده ښودل کېږي. په دویم تکرار کې *printf()* پوښتنه ښيي او کنټرول *break* ته ځي چې کنټرول له لوپ باسي. نو پیغام یوازې یو ځل ښکاري.
+### 5.1.6 The *continue* Statement || 5.1.6 *continue* اسٹیٹمنٹ || ۵.۱.۶ *continue* بیان
+p The ***continue*** statement shifts the control back to the beginning of the loop. It is used inside the body of the loop. Whenever, a *continue* statement is encountered inside a loop, control directly jumps to the beginning of the loop for next iteration, skipping the execution of statements inside loop's body for the current iteration. Working of ***continue*** statement is shown in figure 5.5. || ***continue*** اسٹیٹمنٹ کنٹرول کو لوپ کے آغاز پر واپس لے جاتی ہے۔ یہ لوپ کے جسم کے اندر استعمال ہوتی ہے۔ جب بھی لوپ میں *continue* آئے تو کنٹرول موجودہ تکرار کی باقی اسٹیٹمنٹس چھوڑ کر سیدھا اگلی تکرار کے لیے لوپ کے آغاز پر چلا جاتا ہے۔ ***continue*** کا کام شکل 5.5 میں دکھایا گیا ہے۔ || ***continue*** بیان کنټرول د لوپ پیل ته بېرته وړي. د لوپ په بدنه کې کارېږي. کله چې په لوپ کې *continue* راشي، کنټرول د اوسني تکرار پاتې بیانونه پرېږدي او د راتلونکي تکرار لپاره مستقیم د لوپ پیل ته ځي. د ***continue*** کار په ۵.۵ شکل کې ښودل شوی.
+p The ***continue*** statement is exactly opposite to the *break* statement. It is also called as bypass statement. || ***continue*** اسٹیٹمنٹ *break* کے بالکل برعکس ہے۔ اسے بائی پاس اسٹیٹمنٹ بھی کہتے ہیں۔ || ***continue*** بیان د *break* بشپړ مخالف دی. bypass بیان هم ورته وايي.
+p **Syntax:** || **سنٹیکس:** || **Syntax:**
+m continue;

@@ -1,0 +1,379 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s221-key-points-unit6",
+  "title": "Key points of Unit 6",
+  "headingUrdu": "یونٹ 6 کے اہم نکات",
+  "headingPashto": "د شپږم واحد مهم ټکي",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 221,
+    "printedPage": "211"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s221-h",
+      "en": "Key points",
+      "ur": "اہم نکات",
+      "ps": "مهم ټکي",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s221-k1",
+      "en": "A series of observations of the same characteristics arranged according to the time of occurrence is known as time series.",
+      "ur": "ایک ہی خصوصیات کے مشاہدات کا سلسلہ جو وقوع کے وقت کے مطابق ترتیب دیا گیا ہو وقتی سلسلہ کہلاتا ہے۔",
+      "ps": "د یو شان ځانګړتیاوو د کتنو لړۍ چې د پېښېدو د وخت له مخې ترتیب شوې وي د وخت لړۍ بلل کېږي.",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k2",
+      "en": "The description, measurement and isolation of various changes in a time series during a period of time are called analysis of time series.",
+      "ur": "کسی مدت کے دوران وقتی سلسلے میں مختلف تبدیلیوں کی تفصیل، پیمائش اور علیحدگی وقتی سلسلے کا تجزیہ کہلاتی ہے۔",
+      "ps": "د یوې مودې په اوږدو کې په وخت لړۍ کې د بېلابېلو بدلونونو بیان، اندازه کول او جلا کول د وخت لړۍ تحلیل بلل کېږي.",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k3",
+      "en": "The term secular trend means changes occurring in a time series in one direction over a fairly long period of time.",
+      "ur": "صدیوی رجحان کی اصطلاح کا مطلب وقتی سلسلے میں ایک سمت میں خاصے طویل عرصے میں واقع ہونے والی تبدیلیاں ہیں۔",
+      "ps": "د عمري تمایل اصطلاح پدې معنا چې په وخت لړۍ کې په یو لوري کې په ښه اوږده مودې کې رامنځته کېدونکي بدلونونه.",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k4",
+      "en": "A journey from one peak (say prosperity) to another peak (prosperity) is called a cycle.",
+      "ur": "ایک چوٹی (مثلاً خوشحالی) سے دوسری چوٹی (خوشحالی) تک کا سفر چکر کہلاتا ہے۔",
+      "ps": "له یوې څوکې (لکه سوکالۍ) څخه بلې څوکې (سوکالۍ) ته سفر یو دوره بلل کېږي.",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k5",
+      "en": "In a time series only time (t) and values (y) are given. The variable x is obtained by coding the time variable.",
+      "ur": "وقتی سلسلے میں صرف وقت (t) اور قدریں (y) دی جاتی ہیں۔ متغیر x وقت کے متغیر کی کوڈنگ سے حاصل کیا جاتا ہے۔",
+      "ps": "په وخت لړۍ کې یوازې وخت (t) او ارزښتونه (y) ورکول کېږي. متغیر x د وخت د متغیر په کوډ کولو سره ترلاسه کېږي.",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k6",
+      "en": "If the number of years is odd, take x = … −2, −1, 0, 1, 2, … i.e.",
+      "ur": "اگر سالوں کی تعداد طاق ہو تو x = … −2, −1, 0, 1, 2, … لیں یعنی",
+      "ps": "که د کلونو شمېر طاق وي نو x = … −2, −1, 0, 1, 2, … واخلئ یعنې",
+      "listGroup": "unit6-kp-1"
+    },
+    {
+      "id": "stat11-s221-k7",
+      "en": "If the number of years is even, take x = … −7, −5, −3, −1, 1, 3, 5, 7, … i.e.",
+      "ur": "اگر سالوں کی تعداد جفت ہو تو x = … −7, −5, −3, −1, 1, 3, 5, 7, … لیں یعنی",
+      "ps": "که د کلونو شمېر جفت وي نو x = … −7, −5, −3, −1, 1, 3, 5, 7, … واخلئ یعنې",
+      "listGroup": "unit6-kp-2"
+    },
+    {
+      "id": "stat11-s221-k8",
+      "en": "The equation of second degree parabola/quadratic trend is given by ŷ = a + bx + cx²",
+      "ur": "دوسرے درجے کے قطع مکافی/دو درجی رجحان کی مساوات یوں دی جاتی ہے ŷ = a + bx + cx²",
+      "ps": "د دویم درجې پیراپولا/دوه‌درجي تمایل معادله داسې ورکول کېږي ŷ = a + bx + cx²",
+      "listGroup": "unit6-kp-3"
+    },
+    {
+      "id": "stat11-s221-k9",
+      "en": "Three normal equation for a, b and c are;",
+      "ur": "a, b اور c کے لیے تین معمول کی مساواتیں یہ ہیں؛",
+      "ps": "د a, b او c لپاره درې نورمال معادلې دا دي؛",
+      "listGroup": "unit6-kp-3"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s221-h",
+        "stat11-s221-k1",
+        "stat11-s221-k2",
+        "stat11-s221-k3",
+        "stat11-s221-k4",
+        "stat11-s221-k5",
+        "stat11-s221-k6"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s221-k7"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s221-k8",
+        "stat11-s221-k9"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s221-n1",
+      "latex": "\\sum y=na+b\\sum x+c\\sum x^2\\qquad\\text{(i)}",
+      "accessible": "Σy = na + bΣx + cΣx²   (i)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s221-n2",
+      "latex": "\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3\\qquad\\text{(ii)}",
+      "accessible": "Σxy = aΣx + bΣx² + cΣx³   (ii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s221-n3",
+      "latex": "\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4\\qquad\\text{(iii)}",
+      "accessible": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Odd number of years: coded time",
+      "captionUrdu": "سالوں کی طاق تعداد: کوڈ شدہ وقت",
+      "captionPashto": "د کلونو طاق شمېر: کوډ شوی وخت",
+      "headers": [
+        {
+          "en": "Years",
+          "ur": "سال",
+          "ps": "کلونه"
+        },
+        {
+          "en": "2001",
+          "ur": "2001",
+          "ps": "2001"
+        },
+        {
+          "en": "2002",
+          "ur": "2002",
+          "ps": "2002"
+        },
+        {
+          "en": "2003",
+          "ur": "2003",
+          "ps": "2003"
+        },
+        {
+          "en": "2004",
+          "ur": "2004",
+          "ps": "2004"
+        },
+        {
+          "en": "2005",
+          "ur": "2005",
+          "ps": "2005"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Coded time (x)",
+            "ur": "کوڈ شدہ وقت (x)",
+            "ps": "کوډ شوی وخت (x)"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Even number of years: coded time",
+      "captionUrdu": "سالوں کی جفت تعداد: کوڈ شدہ وقت",
+      "captionPashto": "د کلونو جفت شمېر: کوډ شوی وخت",
+      "headers": [
+        {
+          "en": "Years",
+          "ur": "سال",
+          "ps": "کلونه"
+        },
+        {
+          "en": "2010",
+          "ur": "2010",
+          "ps": "2010"
+        },
+        {
+          "en": "2011",
+          "ur": "2011",
+          "ps": "2011"
+        },
+        {
+          "en": "2012",
+          "ur": "2012",
+          "ps": "2012"
+        },
+        {
+          "en": "2013",
+          "ur": "2013",
+          "ps": "2013"
+        },
+        {
+          "en": "2014",
+          "ur": "2014",
+          "ps": "2014"
+        },
+        {
+          "en": "2015",
+          "ur": "2015",
+          "ps": "2015"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Coded time (x)",
+            "ur": "کوڈ شدہ وقت (x)",
+            "ps": "کوډ شوی وخت (x)"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 211. Key points of the unit as a bulleted list. A black dot near the first coded-time table is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:32:47.948313+00:00",
+    "scope": "Scan 221 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

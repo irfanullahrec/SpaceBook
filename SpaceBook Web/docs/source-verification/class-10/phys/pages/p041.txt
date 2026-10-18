@@ -1,0 +1,28 @@
+@printed 144
+@status lesson
+@issue Source: 10thphysics4.pdf page 31 (page number cut off).
+svg FIGURE 14.7 – Series combination of resistors: three bulbs R₁, R₂, R₃ in one loop with a battery ΔV (picture and circuit diagram with voltages ΔV₁, ΔV₂, ΔV₃), and the equivalent resistor R_eq. || شکل 14.7 – مزاحمتوں کا سلسلہ وار ملاپ: بیٹری ΔV کے ساتھ ایک ہی لوپ میں تین بلب R₁، R₂، R₃ (تصویر اور سرکٹ ڈایاگرام جس میں وولٹیج ΔV₁، ΔV₂، ΔV₃ ہیں)، اور مساوی مزاحمت R_eq۔ || ۱۴.۷ شکل – د مقاومتونو لړۍ ییز ترکیب: له بیټرۍ ΔV سره په یوه کړۍ کې درې بلبونه R₁، R₂، R₃ (انځور او د سرکټ ډیاګرام د ΔV₁، ΔV₂، ΔV₃ ولټیجونو سره)، او معادل مقاومت R_eq.
+<svg viewBox="0 0 330 110" width="330" role="img" aria-label="A circuit of three zig-zag resistors R1, R2, R3 in a row with a battery ΔV, voltages ΔV1, ΔV2, ΔV3 marked over each; beside it a single resistor Req with a battery ΔV" font-family="Arial" font-size="10">
+<path d="M20 40 H35 l4 -6 l8 12 l8 -12 l8 12 l4 -6 H90 l4 -6 l8 12 l8 -12 l8 12 l4 -6 H145 l4 -6 l8 12 l8 -12 l8 12 l4 -6 H200 V90 H115 M105 90 H20 V40" fill="none" stroke="#111" stroke-width="1.5"/>
+<g stroke="#111" stroke-width="2"><line x1="105" y1="80" x2="105" y2="100"/><line x1="113" y1="84" x2="113" y2="96"/></g>
+<text x="45" y="60">R₁</text><text x="100" y="60">R₂</text><text x="155" y="60">R₃</text><text x="38" y="22">ΔV₁</text><text x="93" y="22">ΔV₂</text><text x="148" y="22">ΔV₃</text><text x="100" y="78">+ΔV−</text>
+<path d="M240 40 H255 l4 -6 l8 12 l8 -12 l8 12 l4 -6 H310 V90 H280 M270 90 H240 V40" fill="none" stroke="#111" stroke-width="1.5"/>
+<g stroke="#111" stroke-width="2"><line x1="270" y1="80" x2="270" y2="100"/><line x1="278" y1="84" x2="278" y2="96"/></g><text x="262" y="25">R_eq</text><text x="265" y="76">ΔV</text>
+</svg>
+endsvg
+p Where I is the current leaving the battery, $I_1$ is the current in resistor $R_1$, $I_2$ is the current in resistor $R_2$ and $I_3$ is the current in resistor $R_3$. The potential difference applied across the series combination of resistors divides between the resistors: || جہاں I بیٹری سے نکلنے والا کرنٹ ہے، $I_1$ مزاحمت $R_1$ میں، $I_2$ مزاحمت $R_2$ میں اور $I_3$ مزاحمت $R_3$ میں کرنٹ ہے۔ مزاحمتوں کے سلسلہ وار ملاپ پر لگایا گیا پوٹینشل ڈفرنس مزاحمتوں میں تقسیم ہو جاتا ہے: || چې I له بیټرۍ وتونکی جریان دی، $I_1$ په $R_1$ کې، $I_2$ په $R_2$ کې او $I_3$ په $R_3$ کې جریان دی. د مقاومتونو پر لړۍ ییز ترکیب لګول شوی د پوټانشیل توپیر د مقاومتونو ترمنځ وېشل کېږي:
+eq \Delta V = \Delta V_1 + \Delta V_2 + \Delta V_3 \quad \text{--- (2)}
+p Since by Ohm's Law, the potential difference across the battery is also applied to the equivalent resistance $R_{eq}$ in Figure 14.7 || چونکہ اوہم کے قانون کے مطابق بیٹری کا پوٹینشل ڈفرنس شکل 14.7 میں مساوی مزاحمت $R_{eq}$ پر بھی لگتا ہے || څرنګه چې د اوم د قانون له مخې د بیټرۍ د پوټانشیل توپیر په ۱۴.۷ شکل کې پر معادل مقاومت $R_{eq}$ هم لګېږي
+eq \Delta V = IR_{eq}
+p Where $R_{eq}$ is the equivalent resistance; a single resistor that has the same effect on the circuit as the series combination of all resistors when it is connected to the battery. Therefore, the voltage across each resistor by Ohm's Law can be written as || جہاں $R_{eq}$ مساوی مزاحمت ہے؛ یعنی ایک ایسی مزاحمت جو بیٹری سے جڑنے پر سرکٹ پر وہی اثر ڈالے جو تمام مزاحمتوں کا سلسلہ وار ملاپ ڈالتا ہے۔ لہٰذا اوہم کے قانون سے ہر مزاحمت پر وولٹیج یوں لکھا جا سکتا ہے || چې $R_{eq}$ معادل مقاومت دی؛ یعنې یو داسې مقاومت چې له بیټرۍ سره د تړلو پر مهال پر سرکټ همغه اغېز ولري چې د ټولو مقاومتونو لړۍ ییز ترکیب یې لري. نو د اوم د قانون له مخې پر هر مقاومت ولټیج داسې لیکل کېږي
+eq \Delta V_1 = I_1R_1 \quad \text{and} \quad \Delta V_2 = I_2R_2 \quad \text{and} \quad \Delta V_3 = I_3R_3
+p Hence equation 2 can be written as || لہٰذا مساوات 2 کو یوں لکھا جا سکتا ہے || نو (۲) معادله داسې لیکل کېږي
+eq IR_{eq} = I_1R_1 + I_2R_2 + I_3R_3 \quad \text{--- (3)}
+p Putting equation 1 in equation 3, we get || مساوات 1 کو مساوات 3 میں رکھنے سے || (۱) معادله په (۳) کې ږدو نو
+eq IR_{eq} = IR_1 + IR_2 + IR_3 \quad \text{or} \quad IR_{eq} = I(R_1 + R_2 + R_3)
+eq \text{Therefore}\quad R_{eq} = R_1 + R_2 + R_3 \qquad (14.5)
+p Generally for 'n' number of resistors connected in series || عمومی طور پر سلسلہ وار جڑی 'n' مزاحمتوں کے لیے || په عمومي ډول د 'n' په لړۍ تړل شوو مقاومتونو لپاره
+eq R_{eq} = R_1 + R_2 + R_3 + \cdots + R_n \qquad (14.6)
+box tip | TIP: Equivalent Circuit || اہم نکتہ: مساوی سرکٹ || لارښوونه: معادل سرکټ
+p A resistor $R_{eq}$ is 'equivalent' to a certain arrangement of several resistors mean that if that arrangement of resistors is replaced by $R_{eq}$, the current through the rest of the circuit is unchanged. This notion of equivalence applies to many types of circuit elements, including capacitors. || کسی مزاحمت $R_{eq}$ کا کئی مزاحمتوں کی ایک خاص ترتیب کے 'مساوی' ہونے کا مطلب یہ ہے کہ اگر اس ترتیب کو $R_{eq}$ سے بدل دیا جائے تو باقی سرکٹ میں کرنٹ نہیں بدلتا۔ مساوات کا یہ تصور کیپیسیٹرز سمیت سرکٹ کے کئی اجزا پر لاگو ہوتا ہے۔ || د یوه مقاومت $R_{eq}$ د څو مقاومتونو له یوه ټاکلي ترتیب سره 'معادل' کېدل دا مانا لري چې که هغه ترتیب په $R_{eq}$ بدل شي، د سرکټ په پاتې برخه کې جریان نه بدلېږي. د معادل والي دا مفهوم د خازنونو په ګډون پر ډېرو سرکټي اجزاوو پلي کېږي.
+endbox

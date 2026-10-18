@@ -1,0 +1,33 @@
+@printed 10
+@status lesson
+m          Else if SUBMARKS>=40 Set GRADE= D
+m          Else if SUBMARKS>=33 Set GRADE= E
+m          Else Set GRADE=FAIL
+m          [End of if structure]
+m Step 3.  Write GRADE
+m Step 4.  Exit
+p **مسئلہ نمبر 9:** کئی سال بعد متوقع آبادی معلوم کرنا۔ || **Problem 9:** Find the expected population after some years. || **۹ ستونزه:** له څو کلونو وروسته متوقع نفوس معلوم کړئ.
+p الگورتھم: یہ الگورتھم موجود آبادی P اور نمو کی شرح R رکھنے والے علاقے کی T سال بعد متوقع آبادی PE کو معلوم کرتا ہے۔ || Algorithm: this algorithm finds the expected population PE after T years of an area with present population P and growth rate R. || الګوریتم: دا الګوریتم د هغې سیمې متوقع نفوس PE له T کلونو وروسته معلوموي چې اوسنی نفوس یې P او د ودې کچه یې R وي.
+m Step 1.  Read P, R, T
+m Step 2.  Set EP= P*R*T
+m Step 3.  Write EP
+m Step 4.  Exit
+@issue Printed errors in Problem 9: the text names the result "PE" but the steps use "EP"; and EP = P*R*T is not a correct population-growth formula (expected population would be P + P*R*T for simple growth, or P*(1+R)^T for compound growth). Kept as printed.
+p **مسئلہ نمبر 10:** دیئے گئے عدد کی طاقت معلوم کرنا۔ || **Problem 10:** Find the power of a given number. || **۱۰ ستونزه:** د ورکړل شوي عدد طاقت (توان) معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی بھی دیئے گئے عدد NUM کی X طاقت EXP معلوم کرتا ہے۔ || Algorithm: this algorithm finds the power EXP of any given number NUM raised to X. || الګوریتم: دا الګوریتم د هر ورکړل شوي عدد NUM د X طاقت EXP معلوموي.
+m Step 1.  Read NUM, X
+m Step 2.  Set EXP= NUM ^ X
+m Step 3.  Write EXP
+m Step 4.  Exit
+p ( ^ کیرٹ قوت نما کے لیے استعمال ہوتا ہے ) || (The caret ^ is used for the exponent.) || (کېرټ ^ د توان لپاره کارول کېږي)
+p **مسئلہ نمبر 11:** دیئے گئے دو اعداد کے درمیان پے در پے طاق اعداد معلوم کرنا۔ || **Problem 11:** Find the consecutive odd numbers between two given numbers. || **۱۱ ستونزه:** د دوو ورکړل شویو عددونو ترمنځ پرله پسې طاق عددونه معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی عدد NUM سے لے کر آخری عدد N تک مسلسل طاق اعداد کو معلوم کرتا ہے۔ || Algorithm: this algorithm finds the consecutive odd numbers from a number NUM up to the last number N. || الګوریتم: دا الګوریتم له یوه عدد NUM څخه تر وروستي عدد N پورې پرله پسې طاق عددونه معلوموي.
+m Step 1.  Read NUM, N
+m Step 2.  Repeat Steps 3 and 4 while NUM<= N
+m Step 3.  Write NUM
+m Step 4.  Set NUM=NUM+2
+m          [End of while loop]
+m Step 5.  Exit
+@issue Problem 11 assumes the starting number NUM is itself odd; this is not stated in the book.
+p **مسئلہ نمبر 12:** کسی بھی دیئے ہوئے عدد کے لیے دو اعداد کے درمیان جزوِ ضربی (Multiples) کی کل تعداد معلوم کرنا۔ || **Problem 12:** Find the total number of multiples of a given number between two numbers. || **۱۲ ستونزه:** د یوه ورکړل شوي عدد لپاره د دوو عددونو ترمنځ د مضربونو (Multiples) ټول شمېر معلوم کړئ.
+p الگورتھم: یہ الگورتھم کسی عدد NUM کے لیے دو اعداد N1 اور N2 کے درمیان آنے والے اجزائے ضربی کی کل تعداد معلوم کرتا ہے جبکہ N2 بڑا ہے N1 سے۔ || Algorithm: this algorithm finds the total number of multiples of a number NUM lying between two numbers N1 and N2, where N2 is greater than N1. || الګوریتم: دا الګوریتم د یوه عدد NUM لپاره د N1 او N2 ترمنځ د مضربونو ټول شمېر معلوموي، په داسې حال کې چې N2 له N1 لوی دی.

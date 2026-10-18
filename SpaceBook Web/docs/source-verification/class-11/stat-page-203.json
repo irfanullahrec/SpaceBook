@@ -1,0 +1,582 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s203-exercise5-c",
+  "title": "Exercise-5: Q5.3 (x) · Q5.4 – Q5.11",
+  "headingUrdu": "مشق-5: سوال 5.3 (x) · سوال 5.4 – 5.11",
+  "headingPashto": "تمرین-5: پوښتنه 5.3 (x) · پوښتنې 5.4 – 5.11",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 203,
+    "printedPage": "193"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s203-m10",
+      "en": "(x) The geometric mean of the two regression coefficients b_y.x and b_x.y is equal to",
+      "ur": "(x) دو ریگریشن عددی سروں b_y.x اور b_x.y کا ہندسی اوسط برابر ہے",
+      "ps": "(x) د دوو ریګرېشن ضریبونو b_y.x او b_x.y هندسي اوسط له … سره مساوي دی",
+      "role": "question",
+      "exerciseId": "stat11-ex5-3-10"
+    },
+    {
+      "id": "stat11-s203-m10a",
+      "en": "(a) r_xy",
+      "ur": "(الف) r_xy",
+      "ps": "(الف) r_xy",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-10"
+    },
+    {
+      "id": "stat11-s203-m10b",
+      "en": "(b) r²_xy",
+      "ur": "(ب) r²_xy",
+      "ps": "(ب) r²_xy",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-10"
+    },
+    {
+      "id": "stat11-s203-m10c",
+      "en": "(c) 1",
+      "ur": "(ج) 1",
+      "ps": "(ج) 1",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-10"
+    },
+    {
+      "id": "stat11-s203-m10d",
+      "en": "(d) 0",
+      "ur": "(د) 0",
+      "ps": "(د) 0",
+      "role": "option",
+      "exerciseId": "stat11-ex5-3-10"
+    },
+    {
+      "id": "stat11-s203-q54",
+      "en": "5.4 Explain the concepts of the following (i) Regression (ii) Linear and nonlinear regression (iii) Dependent and independent variables",
+      "ur": "5.4 درج ذیل کے تصورات کی وضاحت کریں (i) ریگریشن (ii) خطی اور غیر خطی ریگریشن (iii) تابع اور آزاد متغیرات",
+      "ps": "5.4 د لاندې مفهومونه تشریح کړئ (i) ریګرېشن (ii) خطي او غیر خطي ریګرېشن (iii) تابع او خپلواک متغیرونه",
+      "role": "question",
+      "exerciseId": "stat11-ex5-4"
+    },
+    {
+      "id": "stat11-s203-q55",
+      "en": "5.5 What do you mean by (i) Regression lines (ii) Regression coefficient (iii) Least squares principle",
+      "ur": "5.5 آپ کی کیا مراد ہے (i) ریگریشن لکیریں (ii) ریگریشن عددی سر (iii) کم از کم مربعات کا اصول",
+      "ps": "5.5 تاسو څه مطلب لرئ (i) د ریګرېشن کرښې (ii) ریګرېشن ضریب (iii) د لږ تر لږه مربعاتو اصل",
+      "role": "question",
+      "exerciseId": "stat11-ex5-5"
+    },
+    {
+      "id": "stat11-s203-q56",
+      "en": "5.6 Distinguish between the following. (i) Simple and multiple regression. (ii) Scatter diagram and curve fitting.",
+      "ur": "5.6 درج ذیل میں فرق کریں۔ (i) سادہ اور متعدد ریگریشن۔ (ii) بکھراؤ خاکہ اور منحنی فٹ کرنا۔",
+      "ps": "5.6 په لاندې کې توپیر وکړئ. (i) ساده او څو‌ګونی ریګرېشن. (ii) د خپرېدو ډیاګرام او د منحني برابرول.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-6"
+    },
+    {
+      "id": "stat11-s203-q57",
+      "en": "5.7 Construct a scatter diagram for the following data",
+      "ur": "5.7 درج ذیل اعداد و شمار کے لیے بکھراؤ خاکہ بنائیں",
+      "ps": "5.7 د لاندې معلوماتو لپاره د خپرېدو ډیاګرام جوړ کړئ",
+      "role": "question",
+      "exerciseId": "stat11-ex5-7"
+    },
+    {
+      "id": "stat11-s203-q58",
+      "en": "5.8 For the following data, find the linear regression equation for predicting y from x",
+      "ur": "5.8 درج ذیل اعداد و شمار کے لیے x سے y کی پیش گوئی کے لیے خطی ریگریشن مساوات معلوم کریں",
+      "ps": "5.8 د لاندې معلوماتو لپاره د x څخه د y د وړاندوینې لپاره خطي ریګرېشن معادله ومومئ",
+      "role": "question",
+      "exerciseId": "stat11-ex5-8"
+    },
+    {
+      "id": "stat11-s203-q59",
+      "en": "5.9 The following table shows the ages (x) and systolic blood pressure (y) of eight persons",
+      "ur": "5.9 درج ذیل جدول آٹھ افراد کی عمروں (x) اور سسٹولک بلڈ پریشر (y) کو ظاہر کرتا ہے",
+      "ps": "5.9 لاندې جدول د اتو کسانو عمرونه (x) او سیسټولیک د وینې فشار (y) ښيي",
+      "role": "question",
+      "exerciseId": "stat11-ex5-9"
+    },
+    {
+      "id": "stat11-s203-q59a",
+      "en": "(i) Fit a linear regression equation of y on x and estimate the blood pressure of a 70 years old person.",
+      "ur": "(i) x پر y کی خطی ریگریشن مساوات فٹ کریں اور 70 سال کی عمر کے شخص کے بلڈ پریشر کا تخمینہ لگائیں۔",
+      "ps": "(i) د x پر y خطي ریګرېشن معادله برابره کړئ او د 70 کلن کس د وینې فشار اټکل کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-9"
+    },
+    {
+      "id": "stat11-s203-q59b",
+      "en": "(ii) What is the regression coefficient and what does it mean?",
+      "ur": "(ii) ریگریشن عددی سر کیا ہے اور اس کا کیا مطلب ہے؟",
+      "ps": "(ii) ریګرېشن ضریب څه دی او څه مطلب لري؟",
+      "role": "question",
+      "exerciseId": "stat11-ex5-9"
+    },
+    {
+      "id": "stat11-s203-q510",
+      "en": "5.10 Find the regression lines or equations for the data given below",
+      "ur": "5.10 نیچے دیے گئے اعداد و شمار کے لیے ریگریشن لکیریں یا مساواتیں معلوم کریں",
+      "ps": "5.10 د لاندې ورکړل شویو معلوماتو لپاره د ریګرېشن کرښې یا معادلې ومومئ",
+      "role": "question",
+      "exerciseId": "stat11-ex5-10"
+    },
+    {
+      "id": "stat11-s203-q511",
+      "en": "5.11 Consider the following data, determine the estimated regression equation ŷ = a + bx: n = 10, Σx = 1710, Σy = 760, Σxy = 130628, Σx² = 293162, Σy² = 59390",
+      "ur": "5.11 درج ذیل اعداد و شمار پر غور کریں، تخمینی ریگریشن مساوات ŷ = a + bx معلوم کریں: n = 10, Σx = 1710, Σy = 760, Σxy = 130628, Σx² = 293162, Σy² = 59390",
+      "ps": "5.11 لاندې معلومات په پام کې ونیسئ، اټکل شوې ریګرېشن معادله ŷ = a + bx ومومئ: n = 10, Σx = 1710, Σy = 760, Σxy = 130628, Σx² = 293162, Σy² = 59390",
+      "role": "question",
+      "exerciseId": "stat11-ex5-11"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s203-m10",
+        "stat11-s203-m10a",
+        "stat11-s203-m10b",
+        "stat11-s203-m10c",
+        "stat11-s203-m10d",
+        "stat11-s203-q54",
+        "stat11-s203-q55",
+        "stat11-s203-q56",
+        "stat11-s203-q57"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s203-q58"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s203-q59"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s203-q59a",
+        "stat11-s203-q59b",
+        "stat11-s203-q510"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s203-q511"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q5.7: x and y",
+      "captionUrdu": "سوال 5.7: x اور y",
+      "captionPashto": "پوښتنه 5.7: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q57"
+    },
+    {
+      "caption": "Q5.8: x and y",
+      "captionUrdu": "سوال 5.8: x اور y",
+      "captionPashto": "پوښتنه 5.8: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q58"
+    },
+    {
+      "caption": "Q5.9: age and blood pressure",
+      "captionUrdu": "سوال 5.9: عمر اور بلڈ پریشر",
+      "captionPashto": "پوښتنه 5.9: عمر او د وینې فشار",
+      "headers": [
+        {
+          "en": "Age (x):",
+          "ur": "عمر (x):",
+          "ps": "عمر (x):"
+        },
+        {
+          "en": "56",
+          "ur": "56",
+          "ps": "56"
+        },
+        {
+          "en": "42",
+          "ur": "42",
+          "ps": "42"
+        },
+        {
+          "en": "60",
+          "ur": "60",
+          "ps": "60"
+        },
+        {
+          "en": "50",
+          "ur": "50",
+          "ps": "50"
+        },
+        {
+          "en": "54",
+          "ur": "54",
+          "ps": "54"
+        },
+        {
+          "en": "49",
+          "ur": "49",
+          "ps": "49"
+        },
+        {
+          "en": "39",
+          "ur": "39",
+          "ps": "39"
+        },
+        {
+          "en": "45",
+          "ur": "45",
+          "ps": "45"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Blood pressure (y):",
+            "ur": "بلڈ پریشر (y):",
+            "ps": "د وینې فشار (y):"
+          },
+          {
+            "en": "160",
+            "ur": "160",
+            "ps": "160"
+          },
+          {
+            "en": "130",
+            "ur": "130",
+            "ps": "130"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          },
+          {
+            "en": "135",
+            "ur": "135",
+            "ps": "135"
+          },
+          {
+            "en": "145",
+            "ur": "145",
+            "ps": "145"
+          },
+          {
+            "en": "115",
+            "ur": "115",
+            "ps": "115"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q59"
+    },
+    {
+      "caption": "Q5.10: x and y",
+      "captionUrdu": "سوال 5.10: x اور y",
+      "captionPashto": "پوښتنه 5.10: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "15",
+          "ur": "15",
+          "ps": "15"
+        },
+        {
+          "en": "20",
+          "ur": "20",
+          "ps": "20"
+        },
+        {
+          "en": "22",
+          "ur": "22",
+          "ps": "22"
+        },
+        {
+          "en": "28",
+          "ur": "28",
+          "ps": "28"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q510"
+    }
+  ],
+  "sourceNote": "Printed page 193. The subscripts of b_y.x, b_x.y and r_xy are written with underscores in the plain text; r²_xy stands for r with the square. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:24:32.202783+00:00",
+    "scope": "Scan 203 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

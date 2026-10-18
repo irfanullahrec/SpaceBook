@@ -1,0 +1,172 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s095-p086",
+  "title": "c. Two Address Instruction; 3.2.3 Instruction Cycle: fetch and decode — start",
+  "headingUrdu": "ج۔ دو پتہ ہدایت؛ ۳.۲.۳ ہدایتی چکر: حاصل کرنا اور سمجھنا — آغاز",
+  "headingPashto": "ج. د دوو پتو لارښوونه؛ ۳.۲.۳ د لارښوونې دوره: راوړل او پوهېدل — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 95,
+    "printedPage": "86"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s095-h1",
+      "en": "c. Two Address Instruction",
+      "ur": "ج۔ دو پتہ ہدایت",
+      "ps": "ج. د دوو پتو لارښوونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s095-a",
+      "en": "Two Address instruction format requires one op-code and two operands. Example of such instruction format is the MOV (Move), which moves data from the memory location to the register and from register to the memory location.",
+      "ur": "دو پتہ ہدایت کی شکل میں ایک او پی کوڈ اور دو آپرینڈز درکار ہوتے ہیں۔ ایسی ہدایتی شکل کی مثال ایم او وی (مو) ہے جو ڈیٹا کو میموری مقام سے رجسٹر میں اور رجسٹر سے میموری مقام میں منتقل کرتی ہے۔",
+      "ps": "د دوو پتو لارښوونې بڼه یو op-code او دوه عملوندونه غواړي. د داسې لارښوونې بڼې بېلګه MOV (خوځول) ده چې ډېټا د حافظې له ځای نه رجستر ته او له رجستر نه د حافظې ځای ته لېږدوي."
+    },
+    {
+      "id": "cs11-s095-b",
+      "en": "Example: ADD A, B",
+      "ur": "مثال: ایڈ اے، بی",
+      "ps": "بېلګه: ADD A, B"
+    },
+    {
+      "id": "cs11-s095-h2",
+      "en": "3.2.3 Instruction Cycle",
+      "ur": "۳.۲.۳ ہدایتی چکر",
+      "ps": "۳.۲.۳ د لارښوونې دوره",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s095-c",
+      "en": "Instruction cycle (sometimes called fetch-and-execute cycle, fetch-decode-execute cycle) is the basic operation cycle of a computer. It is the process by which a computer retrieves a program instruction from its memory, determines what actions the instruction requires, and carries out those actions. This cycle is repeated continuously by the central processing unit (CPU), from booting of computer till it is shut down.",
+      "ur": "ہدایتی چکر (جسے کبھی کبھی حاصل کرنے اور چلانے کا چکر، حاصل کرنے سمجھنے چلانے کا چکر بھی کہتے ہیں) کمپیوٹر کا بنیادی عملی چکر ہے۔ یہ وہ عمل ہے جس کے ذریعے کمپیوٹر اپنی میموری سے پروگرام کی ہدایت حاصل کرتا ہے، طے کرتا ہے کہ ہدایت کن اعمال کا تقاضا کرتی ہے اور ان اعمال کو انجام دیتا ہے۔ یہ چکر مرکزی پراسیسنگ یونٹ (سی پی یو) کمپیوٹر کے بوٹ ہونے سے بند ہونے تک مسلسل دہراتا ہے۔",
+      "ps": "د لارښوونې دوره (ځینې وخت ورته راوړل-او-پلي کولو دوره، راوړل-پوهېدل-پلي کولو دوره هم ویل کېږي) د کمپیوټر بنسټیزه عملیه دوره ده. دا هغه پروسه ده چې د هغې په واسطه کمپیوټر د خپلې حافظې نه د پروګرام لارښوونه راباسي، ټاکي چې لارښوونه کوم عملونه غواړي، او هغه عملونه ترسره کوي. دا دوره د مرکزي پروسس واحد (CPU) په واسطه د کمپیوټر له بوټ کېدو نه تر بندېدو پورې پرله پسې تکرارېږي."
+    },
+    {
+      "id": "cs11-s095-d",
+      "en": "There are typically four stages of an instruction cycle that the CPU carries out:",
+      "ur": "ہدایتی چکر کے عموماً چار مراحل ہوتے ہیں جو سی پی یو انجام دیتا ہے:",
+      "ps": "د لارښوونې د دورې معمولاً څلور پړاوونه دي چې CPU یې ترسره کوي:"
+    },
+    {
+      "id": "cs11-s095-s1",
+      "en": "Fetch the instruction from memory",
+      "ur": "ہدایت میموری سے حاصل کرنا",
+      "ps": "لارښوونه له حافظې نه راوړل",
+      "listGroup": "stg"
+    },
+    {
+      "id": "cs11-s095-s2",
+      "en": "Decode the instruction",
+      "ur": "ہدایت کو سمجھنا",
+      "ps": "لارښوونه پوهېدل",
+      "listGroup": "stg"
+    },
+    {
+      "id": "cs11-s095-s3",
+      "en": "Execute the instruction",
+      "ur": "ہدایت کو چلانا",
+      "ps": "لارښوونه پلي کول",
+      "listGroup": "stg"
+    },
+    {
+      "id": "cs11-s095-s4",
+      "en": "Store the result",
+      "ur": "نتیجہ محفوظ کرنا",
+      "ps": "پایله ساتل",
+      "listGroup": "stg"
+    },
+    {
+      "id": "cs11-s095-h3",
+      "en": "a. Fetch the instruction",
+      "ur": "الف۔ ہدایت حاصل کرنا",
+      "ps": "الف. لارښوونه راوړل",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s095-e",
+      "en": "The instruction is fetched from the memory address that is currently in the Program Counter (PC), and store it in the Instruction Register (IR).",
+      "ur": "ہدایت اس میموری پتے سے حاصل کی جاتی ہے جو اس وقت پروگرام کاؤنٹر (پی سی) میں ہے اور اسے انسٹرکشن رجسٹر (آئی آر) میں محفوظ کیا جاتا ہے۔",
+      "ps": "لارښوونه له هغه حافظې پتې راوړل کېږي چې اوس مهال په پروګرام شمېرونکي (PC) کې ده، او په لارښوونې رجستر (IR) کې ساتل کېږي."
+    },
+    {
+      "id": "cs11-s095-h4",
+      "en": "b. Decode the instruction",
+      "ur": "ب۔ ہدایت کو سمجھنا",
+      "ps": "ب. لارښوونه پوهېدل",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s095-f",
+      "en": "The instruction decoder interprets the instruction. If the instruction has an indirect address, the effective address is read from main memory, and any",
+      "ur": "انسٹرکشن ڈی کوڈر ہدایت کی تشریح کرتا ہے۔ اگر ہدایت کا بالواسطہ پتہ ہو تو مؤثر پتہ مین میموری سے پڑھا جاتا ہے اور کوئی بھی",
+      "ps": "د لارښوونې ډیکوډر لارښوونه تشریح کوي. که لارښوونه غیرمستقیمه پته ولري، مؤثره پته له اصلي حافظې نه لوستل کېږي او هر",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s095-h1",
+        "cs11-s095-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s095-b",
+        "cs11-s095-h2",
+        "cs11-s095-c",
+        "cs11-s095-d",
+        "cs11-s095-s1",
+        "cs11-s095-s2",
+        "cs11-s095-s3",
+        "cs11-s095-s4",
+        "cs11-s095-h3",
+        "cs11-s095-e",
+        "cs11-s095-h4",
+        "cs11-s095-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s095-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 80\" role=\"img\" aria-label=\"Two-address instruction format (op-code and two operands)\" style=\"width:100%;max-width:480px;height:auto;background:#fff\"><text x=\"20\" y=\"16\" font-size=\"13\" font-family=\"Arial,sans-serif\" fill=\"#111\">0.....................7, 8................19, 20..................31 bits</text><rect x=\"20\" y=\"26\" width=\"130\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"85.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Op-Code</text><rect x=\"150\" y=\"26\" width=\"150\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Operand</text><rect x=\"300\" y=\"26\" width=\"150\" height=\"40\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"375.0\" y=\"52\" font-size=\"14\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Operand</text></svg>",
+      "caption": "Two-address instruction format (op-code and two operands)",
+      "captionUrdu": "دو پتہ ہدایت کی شکل (او پی کوڈ اور دو آپرینڈز)",
+      "captionPashto": "د دوو پتو لارښوونې بڼه (op-code او دوه عملوندونه)",
+      "labels": [
+        {
+          "en": "Op-Code",
+          "ur": "Op-Code",
+          "ps": "Op-Code"
+        },
+        {
+          "en": "Operand",
+          "ur": "Operand",
+          "ps": "Operand"
+        },
+        {
+          "en": "Operand",
+          "ur": "Operand",
+          "ps": "Operand"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 86: “c. Two Address Instruction” with a box diagram of bit fields (redrawn here as a coded SVG; the caption is supplied here), “3.2.3 Instruction Cycle” with its four stages and the start of “b. Decode the instruction” (the sentence continues on the next page). Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:56:56.854293+00:00",
+    "scope": "Scan 95 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

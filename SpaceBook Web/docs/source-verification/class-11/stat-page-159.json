@@ -1,0 +1,597 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s159-index-chain-1",
+  "title": "Link relative and chain indices · Example 4.3",
+  "headingUrdu": "کڑی اضافت اور زنجیری اشاریے · مثال 4.3",
+  "headingPashto": "پیوندي نسبت او زنځیري شاخصونه · بېلګه 4.3",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 159,
+    "printedPage": "151"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s159-c1",
+      "en": "According to this method price of current period is divided by price of the preceding period and this ratio is multiplied by 100. That is",
+      "ur": "اس طریقے کے مطابق موجودہ مدت کی قیمت کو پچھلی مدت کی قیمت سے تقسیم کیا جاتا ہے اور اس تناسب کو 100 سے ضرب دیا جاتا ہے۔ یعنی",
+      "ps": "د دې طریقې له مخې د اوسنۍ دورې بیه د تېرې دورې پر بیه ویشل کېږي او دا نسبت په 100 ضرب کېږي. یعنې",
+      "sourceGap": {
+        "note": "Continues the chain base method paragraph from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s159-c2",
+      "en": "Similarly link relative for quantity is",
+      "ur": "اسی طرح مقدار کے لیے کڑی اضافت ہے",
+      "ps": "همدارنګه د مقدار لپاره پیوندي نسبت دی"
+    },
+    {
+      "id": "stat11-s159-ex43",
+      "en": "Example: 4.3",
+      "ur": "مثال: 4.3",
+      "ps": "بېلګه: 4.3",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-3"
+    },
+    {
+      "id": "stat11-s159-q43",
+      "en": "Consider the following price data of a single commodity. Find link relatives and then chain indices.",
+      "ur": "ایک ہی جنس کے درج ذیل قیمتی اعداد و شمار پر غور کریں۔ کڑی اضافتیں اور پھر زنجیری اشاریے معلوم کریں۔",
+      "ps": "د یوه واحد توکي لاندې د بیو معلومات په پام کې ونیسئ. پیوندي نسبتونه او بیا زنځیري شاخصونه ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-4-3"
+    },
+    {
+      "id": "stat11-s159-sol43",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-3"
+    },
+    {
+      "id": "stat11-s159-n1",
+      "en": "Note that the chain indices are the same as the prices relatives with 1964 as base.",
+      "ur": "نوٹ کریں کہ زنجیری اشاریے 1964 کو بنیاد لے کر قیمتی اضافتوں کے برابر ہیں۔",
+      "ps": "پام وکړئ چې زنځیري شاخصونه د 1964 د بنسټ په نیولو سره د بیې له نسبتونو سره مساوي دي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-3"
+    },
+    {
+      "id": "stat11-s159-n2",
+      "en": "Calculation of unweighted price index numbers (composite are more variable case)",
+      "ur": "غیر وزنی قیمتی اشاریہ اعداد کا حساب (مرکب یا ایک سے زیادہ متغیر کی صورت)",
+      "ps": "د نه‌وزني بیو شاخص شمېرو محاسبه (مرکب یا له یو څخه ډېر متغیر حالت)",
+      "sourceGap": {
+        "note": "The printed phrase \"composite are more variable case\" is kept as printed."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s159-c1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s159-c2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s159-ex43",
+        "stat11-s159-q43"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s159-sol43"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s159-n1",
+        "stat11-s159-n2"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "chain indices": {
+      "ur": "زنجیری اشاریے",
+      "ps": "زنځیري شاخصونه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s159-lr",
+      "latex": "\\text{Link relative}=\\dfrac{\\text{Current period price}}{\\text{Preceding period price}}\\times 100",
+      "accessible": "Link relative = (Current period price / Preceding period price) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Link relative = (Current period price / Preceding period price) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Link relative = (Current period price / Preceding period price) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Link relative = (Current period price / Preceding period price) × 100"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s159-p0n",
+      "latex": "P_{0n}=\\dfrac{p_n}{p_{n-1}}\\times 100",
+      "accessible": "P0n = (pn / pn−1) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = (pn / pn−1) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = (pn / pn−1) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = (pn / pn−1) × 100"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s159-q0n",
+      "latex": "Q_{0n}=\\dfrac{q_n}{q_{n-1}}\\times 100",
+      "accessible": "Q0n = (qn / qn−1) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q0n = (qn / qn−1) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q0n = (qn / qn−1) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q0n = (qn / qn−1) × 100"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.3: years and prices",
+      "captionUrdu": "مثال 4.3: سال اور قیمتیں",
+      "captionPashto": "بېلګه 4.3: کلونه او بیې",
+      "headers": [
+        {
+          "en": "Years:",
+          "ur": "سال:",
+          "ps": "کلونه:"
+        },
+        {
+          "en": "1964",
+          "ur": "1964",
+          "ps": "1964"
+        },
+        {
+          "en": "1965",
+          "ur": "1965",
+          "ps": "1965"
+        },
+        {
+          "en": "1966",
+          "ur": "1966",
+          "ps": "1966"
+        },
+        {
+          "en": "1967",
+          "ur": "1967",
+          "ps": "1967"
+        },
+        {
+          "en": "1968",
+          "ur": "1968",
+          "ps": "1968"
+        },
+        {
+          "en": "1969",
+          "ur": "1969",
+          "ps": "1969"
+        },
+        {
+          "en": "1970",
+          "ur": "1970",
+          "ps": "1970"
+        },
+        {
+          "en": "1971",
+          "ur": "1971",
+          "ps": "1971"
+        },
+        {
+          "en": "1972",
+          "ur": "1972",
+          "ps": "1972"
+        },
+        {
+          "en": "1973",
+          "ur": "1973",
+          "ps": "1973"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Price:",
+            "ur": "قیمت:",
+            "ps": "بیه:"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "33",
+            "ur": "33",
+            "ps": "33"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-3"
+    },
+    {
+      "caption": "Example 4.3 solution: link relatives and chain indices",
+      "captionUrdu": "مثال 4.3 کا حل: کڑی اضافتیں اور زنجیری اشاریے",
+      "captionPashto": "د بېلګې 4.3 حل: پیوندي نسبتونه او زنځیري شاخصونه",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "Price",
+          "ur": "قیمت",
+          "ps": "بیه"
+        },
+        {
+          "en": "P0n = (pn/pn−1) × 100",
+          "ur": "P0n = (pn/pn−1) × 100",
+          "ps": "P0n = (pn/pn−1) × 100"
+        },
+        {
+          "en": "Chain indices",
+          "ur": "زنجیری اشاریے",
+          "ps": "زنځیري شاخصونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1964",
+            "ur": "1964",
+            "ps": "1964"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "20/20 × 100 = 100",
+            "ur": "20/20 × 100 = 100",
+            "ps": "20/20 × 100 = 100"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          }
+        ],
+        [
+          {
+            "en": "1965",
+            "ur": "1965",
+            "ps": "1965"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "18/20 × 100 = 90",
+            "ur": "18/20 × 100 = 90",
+            "ps": "18/20 × 100 = 90"
+          },
+          {
+            "en": "100 × 90/100 = 90",
+            "ur": "100 × 90/100 = 90",
+            "ps": "100 × 90/100 = 90"
+          }
+        ],
+        [
+          {
+            "en": "1966",
+            "ur": "1966",
+            "ps": "1966"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "23/18 × 100 = 127.8",
+            "ur": "23/18 × 100 = 127.8",
+            "ps": "23/18 × 100 = 127.8"
+          },
+          {
+            "en": "90 × 127.8/100 = 115",
+            "ur": "90 × 127.8/100 = 115",
+            "ps": "90 × 127.8/100 = 115"
+          }
+        ],
+        [
+          {
+            "en": "1967",
+            "ur": "1967",
+            "ps": "1967"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "24/23 × 100 = 104.3",
+            "ur": "24/23 × 100 = 104.3",
+            "ps": "24/23 × 100 = 104.3"
+          },
+          {
+            "en": "115 × 104.3/100 = 120",
+            "ur": "115 × 104.3/100 = 120",
+            "ps": "115 × 104.3/100 = 120"
+          }
+        ],
+        [
+          {
+            "en": "1968",
+            "ur": "1968",
+            "ps": "1968"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "104.2",
+            "ur": "104.2",
+            "ps": "104.2"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          }
+        ],
+        [
+          {
+            "en": "1969",
+            "ur": "1969",
+            "ps": "1969"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "108",
+            "ur": "108",
+            "ps": "108"
+          },
+          {
+            "en": "135",
+            "ur": "135",
+            "ps": "135"
+          }
+        ],
+        [
+          {
+            "en": "1970",
+            "ur": "1970",
+            "ps": "1970"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "103.7",
+            "ur": "103.7",
+            "ps": "103.7"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          }
+        ],
+        [
+          {
+            "en": "1971",
+            "ur": "1971",
+            "ps": "1971"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "107.1",
+            "ur": "107.1",
+            "ps": "107.1"
+          },
+          {
+            "en": "150",
+            "ur": "150",
+            "ps": "150"
+          }
+        ],
+        [
+          {
+            "en": "1972",
+            "ur": "1972",
+            "ps": "1972"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "106.6",
+            "ur": "106.6",
+            "ps": "106.6"
+          },
+          {
+            "en": "160",
+            "ur": "160",
+            "ps": "160"
+          }
+        ],
+        [
+          {
+            "en": "1973",
+            "ur": "1973",
+            "ps": "1973"
+          },
+          {
+            "en": "33",
+            "ur": "33",
+            "ps": "33"
+          },
+          {
+            "en": "103.1",
+            "ur": "103.1",
+            "ps": "103.1"
+          },
+          {
+            "en": "165",
+            "ur": "165",
+            "ps": "165"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-3"
+    }
+  ],
+  "sourceNote": "Printed page 151. In the solution table the first rows show the full working (fraction × 100 = value; chain index as product / 100) and later rows only the values. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:07:52.247685+00:00",
+    "scope": "Scan 159 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

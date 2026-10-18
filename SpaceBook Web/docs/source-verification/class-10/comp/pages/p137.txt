@@ -1,0 +1,73 @@
+@printed 125
+@status lesson
+- گروپ ٹیبل کے اطراف میں بھی پھیلا ہو سکتا ہے۔ ایک قطار میں بالکل بائیں طرف والا سیل بالکل دائیں طرف والے اور بالکل زیریں سیل بالکل بالائی سیل کے ساتھ گروپ میں لایا جا سکتا ہے۔ || A group can also wrap around the edges of the table. The leftmost cell in a row can be grouped with the rightmost cell, and the bottom cell with the top cell. || ډله د جدول تر غاړو هم غځېدای شي. په یوه کرښه کې تر ټولو کیڼه حجره له تر ټولو ښي حجرې سره، او تر ټولو ښکته حجره له تر ټولو پورته حجرې سره په ډله کې راتلای شي.
+svg شکل نمبر 6.18 K-map کے اطراف میں موجود سیل آپس میں گروپ بنا سکتے ہیں || Figure 6.18 Cells on the edges of a K-map can form a group together || ۶.۱۸ شکل د K-map پر غاړو حجرې یوځای ډله جوړولای شي
+<svg viewBox="0 0 560 250" width="560" role="img" aria-label="3-variable K-map, AB across the top (00 01 11 10) and C down the side: top row 1 1 1 1, bottom row 1, blank, 1, 1. The 1s in the leftmost column (AB = 00) and the rightmost column (AB = 10) are grouped across the edge; labels point to the top cell, bottom cell, leftmost cell and rightmost cell" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M138 44 L170 80" stroke="#111827"/>
+<text x="160" y="54" font-weight="700">AB</text><text x="142" y="84" font-weight="700">C</text>
+<text x="201.0" y="72">00</text>
+<text x="263.0" y="72">01</text>
+<text x="325.0" y="72">11</text>
+<text x="387.0" y="72">10</text>
+<text x="160" y="110.0">0</text>
+<text x="160" y="160.0">1</text>
+<rect x="170" y="80" width="248" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M232 80 V180 M294 80 V180 M356 80 V180 M170 130 H418" stroke="#111827" stroke-width="2"/>
+<text x="201.0" y="110.0">1</text>
+<text x="263.0" y="110.0">1</text>
+<text x="325.0" y="110.0">1</text>
+<text x="387.0" y="110.0">1</text>
+<text x="201.0" y="160.0">1</text>
+<text x="325.0" y="160.0">1</text>
+<text x="387.0" y="160.0">1</text>
+<rect x="176" y="86" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="365" y="89" width="44" height="82" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<g font-size="13" font-family="Arial" text-anchor="start"><text x="180" y="20">Top cell</text><text x="10" y="120">Leftmost cell</text><text x="460" y="120">Rightmost cell</text><text x="120" y="236">Bottom cell</text></g>
+<g stroke="#111827" fill="none"><path d="M200 24 L200 76" marker-end="url(#arK)"/><path d="M70 108 L166 96" marker-end="url(#arK)"/><path d="M456 112 L424 96" marker-end="url(#arK)"/><path d="M200 222 L200 190" marker-end="url(#arK)"/></g>
+</svg>
+endsvg
+- جہاں تک ممکن ہو گروپ کی تعداد کم سے کم ہونی چاہیے بشرطیکہ پہلے بیان کردہ قواعد میں سے کسی کے خلاف نہ ہو۔ || The number of groups should be as small as possible, provided none of the rules stated above is broken. || تر وسه پورې د ډلو شمېر باید لږ وي، په دې شرط چې له پورته قواعدو یو هم مات نشي.
+@sec 6-3-2 | 6.3.2 دو ویری ایبلز والے بولین فنکشنز کا K-Map کے ذریعے اختصار || 6.3.2 Simplifying two-variable Boolean functions with a K-map || ۶.۳.۲ د K-Map په مرسته د دوه متغیره بولین فنکشنونو لنډول
+### 6.3.2 دو ویری ایبلز والے بولین فنکشنز کا K-Map کے ذریعے اختصار || 6.3.2 Simplifying two-variable Boolean functions with a K-map || ۶.۳.۲ د K-Map په مرسته د دوه متغیره بولین فنکشنونو لنډول
+### مثال نمبر 1: || Example 1: || بېلګه ۱:
+p درج ذیل میپ کو دیکھیں، جو فنکشن اس میں پلاٹ کیا گیا ہے وہ یہ ہے: Z = F(A,B) = AB̅ + AB || Look at the following map; the function plotted in it is: Z = F(A,B) = AB̅ + AB || لاندې نقشې ته وګورئ؛ هغه فنکشن چې پکې ښودل شوی دا دی: Z = F(A,B) = AB̅ + AB
+### درج بالا بولین فنکشن کے لیے ٹرُتھ ٹیبل || Truth table for the Boolean function above || د پورتني بولین فنکشن لپاره د حقیقت جدول
+table جدول نمبر 6.13 Z = F(A,B) = AB̅ + AB کے لیے ٹرُتھ ٹیبل || Table 6.13 Truth table for Z = F(A,B) = AB̅ + AB || ۶.۱۳ جدول د Z = F(A,B) = AB̅ + AB لپاره د حقیقت جدول
+th | A | B | Z = F(A,B) = AB̅ + AB
+tr | 0 | 0 | 0
+tr | 0 | 1 | 0
+tr | 1 | 0 | 1
+tr | 1 | 1 | 1
+endtable
+p اب ٹرُتھ ٹیبل کی تمام قیمتوں کو درج ذیل K-Map میں درج کریں۔ || Now enter all the values of the truth table in the following K-map. || اوس د حقیقت جدول ټول ارزښتونه په لاندې K-Map کې ولیکئ.
+svg مثال 1 کا K-map || K-map of Example 1 || د ۱ بېلګې K-map
+<svg viewBox="0 0 470 180" width="470" role="img" aria-label="Two equivalent 2-variable K-maps for Z = AB-bar + AB. Left: A (0,1) across the top and B (0,1) down the side, with 1s in both cells of the A = 1 column, grouped. Right: the same map labelled A-bar/A and B-bar/B, with 0s in the A-bar column and a group round the two 1s in the A column, which gives A" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arK" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<path d="M8 4 L40 40" stroke="#111827"/>
+<text x="30" y="14" font-weight="700">A</text><text x="12" y="44" font-weight="700">B</text>
+<text x="71.0" y="32">0</text>
+<text x="133.0" y="32">1</text>
+<text x="30" y="70.0">0</text>
+<text x="30" y="120.0">1</text>
+<rect x="40" y="40" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M102 40 V140 M40 90 H164" stroke="#111827" stroke-width="2"/>
+<text x="133.0" y="70.0">1</text>
+<text x="133.0" y="120.0">1</text>
+<rect x="108" y="46" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<path d="M268 4 L300 40" stroke="#111827"/>
+<text x="290" y="14" font-weight="700">A</text><text x="272" y="44" font-weight="700">B</text>
+<text x="331.0" y="32">A̅</text>
+<text x="393.0" y="32">A</text>
+<text x="290" y="70.0">B̅</text>
+<text x="290" y="120.0">B</text>
+<rect x="300" y="40" width="124" height="100" fill="#fff" stroke="#111827" stroke-width="2"/>
+<path d="M362 40 V140 M300 90 H424" stroke="#111827" stroke-width="2"/>
+<text x="331.0" y="70.0">0</text>
+<text x="393.0" y="70.0">1</text>
+<text x="331.0" y="120.0">0</text>
+<text x="393.0" y="120.0">1</text>
+<rect x="368" y="46" width="50" height="88" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/><path d="M424 140 V160" stroke="#111827" marker-end="url(#arK)"/><text x="436" y="168">A</text><text x="225" y="92" font-family="Arial">OR</text>
+</svg>
+endsvg
+@issue The left map of Example 1 leaves the 0 cells blank, and the right map labels the complemented headings with a stray tick ("A´", "B´") instead of bars; shown as A̅ and B̅ above.

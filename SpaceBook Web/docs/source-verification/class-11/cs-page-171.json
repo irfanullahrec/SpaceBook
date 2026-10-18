@@ -1,0 +1,160 @@
+{
+  "chapter": "cs11-u5",
+  "id": "cs11-s171-p162",
+  "title": "Port ranges; well-known, registered, dynamic ports; c. TCP/IP Applications — start",
+  "headingUrdu": "پورٹ کی حدیں؛ معروف، رجسٹرڈ اور متحرک پورٹس؛ ج۔ ٹی سی پی / آئی پی ایپلیکیشنز — آغاز",
+  "headingPashto": "د پورټ کچې؛ مشهور، ثبت شوي او متحرک پورټونه؛ ج. د TCP/IP اپلېکېشنونه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 171,
+    "printedPage": "162"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s171-a",
+      "en": "The port numbers are divided into three ranges:",
+      "ur": "پورٹ نمبروں کو تین حدوں میں تقسیم کیا گیا ہے:",
+      "ps": "د پورټ شمېرې په درې کچو وېشل شوې دي:"
+    },
+    {
+      "id": "cs11-s171-r1",
+      "en": "The Well Known Ports.",
+      "ur": "معروف پورٹس۔",
+      "ps": "مشهور پورټونه.",
+      "listGroup": "pr"
+    },
+    {
+      "id": "cs11-s171-r2",
+      "en": "The Registered Ports.",
+      "ur": "رجسٹرڈ پورٹس۔",
+      "ps": "ثبت شوي پورټونه.",
+      "listGroup": "pr"
+    },
+    {
+      "id": "cs11-s171-r3",
+      "en": "The Dynamic and/or Private Ports.",
+      "ur": "متحرک اور/یا نجی پورٹس۔",
+      "ps": "متحرک او/یا خصوصي پورټونه.",
+      "listGroup": "pr"
+    },
+    {
+      "id": "cs11-s171-h1",
+      "en": "WELL KNOWN PORT NUMBERS",
+      "ur": "معروف پورٹ نمبر",
+      "ps": "مشهور پورټ شمېرې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s171-b",
+      "en": "Well-known ports (0-1023) are used for the major Internet applications, such as Web and e-mail. For example, all port 80 packets (HTTP packets) are directed to and processed by a Web server.",
+      "ur": "معروف پورٹس (۰ سے ۱۰۲۳) بڑی انٹرنیٹ ایپلیکیشنز، جیسے ویب اور ای میل، کے لیے استعمال ہوتے ہیں۔ مثلاً پورٹ ۸۰ کے تمام پیکٹس (ایچ ٹی ٹی پی پیکٹس) ویب سرور کی طرف بھیجے اور اس کے ذریعے پراسیس کیے جاتے ہیں۔",
+      "ps": "مشهور پورټونه (۰-۱۰۲۳) د لویو انټرنېټ اپلېکېشنونو لکه ویب او برېښنالیک لپاره کارول کېږي. د بېلګې په توګه د ۸۰ پورټ ټولې کڅوړې (HTTP کڅوړې) د ویب خدمتګار ته لارښوونه کېږي او د هغه لخوا پروسس کېږي."
+    },
+    {
+      "id": "cs11-s171-h2",
+      "en": "REGISTERED PORT NUMBERS",
+      "ur": "رجسٹرڈ پورٹ نمبر",
+      "ps": "ثبت شوې پورټ شمېرې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s171-c",
+      "en": "Registered ports are assigned to applications that are mostly vendor specific, such as Skype and BitTorrent. The Registered Ports are in the range 1024-49151.",
+      "ur": "رجسٹرڈ پورٹس ان ایپلیکیشنز کو تفویض ہوتے ہیں جو زیادہ تر فروخت کنندہ سے مخصوص ہوتی ہیں، جیسے اسکائپ اور بٹ ٹورنٹ۔ رجسٹرڈ پورٹس کی حد ۱۰۲۴ سے ۴۹۱۵۱ ہے۔",
+      "ps": "ثبت شوي پورټونه هغو اپلېکېشنونو ته ټاکل کېږي چې ډیر یې د پلورونکي ځانګړي دي، لکه سکایپ او بټ تورنټ. ثبت شوي پورټونه د ۱۰۲۴-۴۹۱۵۱ په کچه کې دي."
+    },
+    {
+      "id": "cs11-s171-h3",
+      "en": "DYNAMIC PORT NUMBERS",
+      "ur": "متحرک پورٹ نمبر",
+      "ps": "متحرک پورټ شمېرې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s171-d",
+      "en": "The Dynamic and/or Private Ports are those in the range 49152–65535. These ports are not used by any defined application.",
+      "ur": "متحرک اور/یا نجی پورٹس وہ ہیں جو ۴۹۱۵۲ سے ۶۵۵۳۵ کی حد میں ہیں۔ یہ پورٹس کسی متعین ایپلیکیشن کے ذریعے استعمال نہیں ہوتے۔",
+      "ps": "متحرک او/یا خصوصي پورټونه هغه دي چې د ۴۹۱۵۲–۶۵۵۳۵ په کچه کې دي. دا پورټونه د کومې ټاکل شوې اپلېکېشن لخوا نه کارول کېږي."
+    },
+    {
+      "id": "cs11-s171-h4",
+      "en": "c. TCP/IP Applications",
+      "ur": "ج۔ ٹی سی پی / آئی پی ایپلیکیشنز",
+      "ps": "ج. د TCP/IP اپلېکېشنونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s171-e",
+      "en": "All modern operating systems support TCP/IP, and most large private networks rely on TCP/IP for much of their traffic. A technology used for connecting dissimilar systems. Many TCP/IP application protocols were designed to access and transfer data between dissimilar systems. These protocols include HTTP, FTP, and Telnet. TCP/IP provides a robust, scalable, cross-platform client/server framework.",
+      "ur": "تمام جدید آپریٹنگ سسٹمز ٹی سی پی / آئی پی کی حمایت کرتے ہیں اور زیادہ تر بڑے نجی نیٹ ورکس اپنی بہت سی ٹریفک کے لیے ٹی سی پی / آئی پی پر انحصار کرتے ہیں۔ یہ غیر مماثل سسٹمز کو جوڑنے کے لیے استعمال ہونے والی ٹیکنالوجی ہے۔ ٹی سی پی / آئی پی کے بہت سے ایپلیکیشن پروٹوکولز غیر مماثل سسٹمز کے درمیان ڈیٹا تک رسائی اور اس کی منتقلی کے لیے بنائے گئے تھے۔ ان پروٹوکولز میں ایچ ٹی ٹی پی، ایف ٹی پی اور ٹیل نیٹ شامل ہیں۔ ٹی سی پی / آئی پی ایک مضبوط، قابلِ توسیع، کراس پلیٹ فارم کلائنٹ/سرور فریم ورک فراہم کرتا ہے۔",
+      "ps": "ټول مدرن عملیاتي سیسټمونه TCP/IP ملاتړ کوي، او ډیری لویې خصوصي شبکې د خپل ډېر ترافیک لپاره پر TCP/IP تکیه کوي. دا یوه ټکنالوجي ده چې د ناورته سیسټمونو د نښلولو لپاره کارول کېږي. ډیری د TCP/IP اپلېکېشن پروتوکولونه د ناورته سیسټمونو ترمنځ د ډېټا د لاسرسي او لېږد لپاره ډیزاین شوي. دا پروتوکولونه HTTP، FTP او ټېلنېټ شاملوي. TCP/IP یو پیاوړی، د پراختیا وړ، څو پلیټفورمي پېرېدونکی/خدمتګار چوکاټ برابروي."
+    },
+    {
+      "id": "cs11-s171-f",
+      "en": "The TCP/IP is used by the following applications.",
+      "ur": "ٹی سی پی / آئی پی درج ذیل ایپلیکیشنز استعمال کرتی ہیں۔",
+      "ps": "TCP/IP د لاندې اپلېکېشنونو لخوا کارول کېږي."
+    },
+    {
+      "id": "cs11-s171-a1",
+      "en": "Web browsers (Internet Explorer, Firefox, Safari, Opera etc.)",
+      "ur": "ویب براؤزرز (انٹرنیٹ ایکسپلورر، فائر فاکس، سفاری، اوپرا وغیرہ)",
+      "ps": "د ویب براوزرونه (انټرنېټ اېکسپلورر، فایرفاکس، سفاري، اوپېرا او نور)",
+      "listGroup": "tcpapp"
+    },
+    {
+      "id": "cs11-s171-a2",
+      "en": "Web Servers",
+      "ur": "ویب سرورز",
+      "ps": "د ویب خدمتګاران",
+      "listGroup": "tcpapp"
+    },
+    {
+      "id": "cs11-s171-a3",
+      "en": "File Servers",
+      "ur": "فائل سرورز",
+      "ps": "د فایل خدمتګاران",
+      "listGroup": "tcpapp"
+    },
+    {
+      "id": "cs11-s171-a4",
+      "en": "Terminal Servers",
+      "ur": "ٹرمینل سرورز",
+      "ps": "د ټرمینل خدمتګاران",
+      "listGroup": "tcpapp"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s171-a",
+        "cs11-s171-r1",
+        "cs11-s171-r2",
+        "cs11-s171-r3",
+        "cs11-s171-h1",
+        "cs11-s171-b",
+        "cs11-s171-h2",
+        "cs11-s171-c",
+        "cs11-s171-h3",
+        "cs11-s171-d",
+        "cs11-s171-h4",
+        "cs11-s171-e",
+        "cs11-s171-f",
+        "cs11-s171-a1",
+        "cs11-s171-a2",
+        "cs11-s171-a3",
+        "cs11-s171-a4"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 162: the three port ranges, “WELL KNOWN PORT NUMBERS”, “REGISTERED PORT NUMBERS”, “DYNAMIC PORT NUMBERS”, “c. TCP/IP Applications” with its paragraph and the first four applications (the list continues on the next page). The range “1024-49151” breaks across a line in the print. Photographs and clip-art are not reproduced; diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:24:12.609266+00:00",
+    "scope": "Scan 171 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

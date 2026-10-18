@@ -1,0 +1,25 @@
+@printed 15
+@status lesson
+m Step 3. Write C
+m Step 4. Exit
+### Problem 16 || مسئلہ 16 || ستونزه ۱۶
+p **Find even numbers in integers ranging from n1 to n2. (Where n1 is less than n2 and n1 is an even number).** || **n1 سے n2 تک کے صحیح اعداد میں جفت اعداد معلوم کریں۔ (جہاں n1 چھوٹا ہے n2 سے اور n1 جفت عدد ہے)۔** || **له n1 څخه تر n2 پورې په بشپړو عددونو کې جفت عددونه ومومئ. (چېرې چې n1 له n2 کوچنی او n1 جفت عدد دی).**
+p **Algorithm:** This algorithm finds even numbers *EVEN* in integers ranging from n1 to n2 (where n1 is less than n2 and n1 is an even number). || **الگورتھم:** یہ الگورتھم n1 سے n2 تک کے صحیح اعداد میں جفت اعداد *EVEN* معلوم کرتا ہے (جہاں n1 چھوٹا ہے n2 سے اور n1 جفت عدد ہے)۔ || **الګوریتم:** دا الګوریتم له n1 تر n2 پورې په بشپړو عددونو کې جفت عددونه *EVEN* مومي (چېرې چې n1 له n2 کوچنی او n1 جفت عدد دی).
+m Step 1. Read n1, n2
+m Step 2. Set EVEN=n1
+m Step 3. Repeat  Steps 4 and 5 while EVEN<= n2
+m Step 4. Write EVEN
+m Step 5. Set EVEN=EVEN +2
+m          [End of while loop]
+m Step 6. Exit
+### Problem 17 || مسئلہ 17 || ستونزه ۱۷
+p **Add members of two lists.** || **دو فہرستوں کے ارکان جمع کرنا۔** || **د دوو لستونو غړي جمع کول.**
+p **Algorithm:** This algorithm adds members of two list *L1[n]* and *L2[n]* in list *L3[n]*. || **الگورتھم:** یہ الگورتھم دو فہرستوں *L1[n]* اور *L2[n]* کے ارکان جمع کر کے فہرست *L3[n]* میں رکھتا ہے۔ || **الګوریتم:** دا الګوریتم د دوو لستونو *L1[n]* او *L2[n]* غړي جمع کوي او په *L3[n]* لست کې یې ږدي.
+m Step 1. Read L1[n], L2[n]
+m Step 2. Set I=1 [Initialize counter.]
+m Step 3. Repeat  Steps 4 and 5 while I<= n
+m Step 4. Set L3[I]=L1[I]+L2[I]
+m Step 6. Set I=I+1 [Increment counter.]
+m          [End of while loop]
+m Step 6. Exit
+@issue Step numbers are printed 1, 2, 3, 4, 6, 6 (the increment step should be Step 5); kept as printed.

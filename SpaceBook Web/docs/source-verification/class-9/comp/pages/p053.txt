@@ -1,0 +1,24 @@
+@pdf 53
+@printed 45
+@status lesson
+svg Figure: 2.13 Header Files in C Language || شکل 2.13 C زبان میں ہیڈر فائلیں || ۲.۱۳ شکل په C ژبه کې header فایلونه
+<svg viewBox="0 0 300 220" width="300" role="img" aria-label="Stack under the title C Program: C Library, then Header Files, then Predefined functions, with a curved line linking Header Files and Predefined functions" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+<text x="150" y="18" fill="#0369a1">C Program</text>
+<rect x="95" y="28" width="110" height="40" rx="8" fill="#f87171"/><text x="150" y="53">C Library</text>
+<rect x="95" y="80" width="110" height="64" rx="10" fill="#fcd34d"/><text x="150" y="106">Header</text><text x="150" y="126">Files</text>
+<rect x="95" y="156" width="110" height="52" fill="#38bdf8"/><text x="150" y="178" font-size="12">Predefined</text><text x="150" y="195" font-size="12">functions</text>
+<path d="M95 120 C40 130 40 180 95 182" fill="none" stroke="#475569"/>
+</svg>
+endsvg
+### 2.3.2 Reserved words || 2.3.2 مخصوص الفاظ || ۲.۳.۲ ساتل شوې کلمې
+p The words that are used by the language for special purposes are called reserved words or keywords. Each keyword has fixed meaning and that cannot be changed by user. Every Keyword exists in lower case letter like auto, break, case, const, continue, int etc. C Language supports 32 keywords. || وہ الفاظ جو زبان خاص مقاصد کے لیے استعمال کرتی ہے مخصوص الفاظ یا کی ورڈز کہلاتے ہیں۔ ہر کی ورڈ کا ایک مقررہ مطلب ہوتا ہے جسے صارف تبدیل نہیں کر سکتا۔ ہر کی ورڈ چھوٹے حروف میں ہوتا ہے جیسے auto، break، case، const، continue، int وغیرہ۔ C زبان 32 کی ورڈز رکھتی ہے۔ || هغه کلمې چې ژبه یې د ځانګړو موخو لپاره کاروي ساتل شوې کلمې یا keywords بلل کېږي. هره keyword ټاکلې معنا لري چې کاروونکی یې نه شي بدلولی. هره keyword په وړو تورو ده لکه auto، break، case، const، continue، int او نور. C ژبه ۳۲ keywords لري.
+table 32 Keywords in C Language || C زبان کے 32 کی ورڈز || د C ژبې ۳۲ keywords
+tr | auto | double | int | struct
+tr | break | else | long | switch
+tr | case | enum | register | typedef
+tr | char | extern | return | union
+tr | const | float | short | unsigned
+tr | continue | for | signed | void
+tr | default | goto | sizeof | volatile
+tr | do | if | static | while
+endtable

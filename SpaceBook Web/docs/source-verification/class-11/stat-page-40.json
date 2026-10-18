@@ -1,0 +1,270 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s040-histogram-discrete",
+  "title": "Histogram for discrete series · Example 1.13 · Histogram for continuous series",
+  "headingUrdu": "منفصل سلسلے کا ہسٹوگرام · مثال 1.13 · مسلسل سلسلے کا ہسٹوگرام",
+  "headingPashto": "د منفصلې لړۍ هیسټوګرام · بېلګه 1.13 · د دوامدارې لړۍ هیسټوګرام",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 40,
+    "printedPage": "32"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s040-hi",
+      "en": "(i) Histogram for discrete series",
+      "ur": "(i) منفصل سلسلے کا ہسٹوگرام",
+      "ps": "(i) د منفصلې لړۍ هیسټوګرام",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s040-ti",
+      "en": "Take values of the variable on x-axis and frequency on y-axis. Erect a vertical line above each value according to the size of the frequency.",
+      "ur": "متغیر کی قدریں x-محور پر اور تعدد y-محور پر لیں۔ ہر قدر کے اوپر تعدد کی مقدار کے مطابق ایک عمودی لکیر کھڑی کریں۔",
+      "ps": "د متغیر ارزښتونه په x-محور او فریکونسي په y-محور واخلئ. د هر ارزښت پر سر د فریکونسي د کچې سره سم یوه عمودي کرښه ودروئ.",
+      "sourceGap": {
+        "note": "The right edge of this line is clipped by the scan (\"…vertical line\" ends at the page edge)."
+      }
+    },
+    {
+      "id": "stat11-s040-ex",
+      "en": "Example: 1.13",
+      "ur": "مثال: 1.13",
+      "ps": "بېلګه: 1.13",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-13"
+    },
+    {
+      "id": "stat11-s040-q",
+      "en": "Draw a histogram for the following frequency distribution",
+      "ur": "درج ذیل تعدد تقسیم کے لیے ہسٹوگرام بنائیں",
+      "ps": "د لاندې فریکونسي ویش لپاره هیسټوګرام رسم کړئ",
+      "role": "question",
+      "exampleId": "stat11-ex-1-13"
+    },
+    {
+      "id": "stat11-s040-sol",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-1-13"
+    },
+    {
+      "id": "stat11-s040-hii",
+      "en": "(ii) Histogram for continuous series",
+      "ur": "(ii) مسلسل سلسلے کا ہسٹوگرام",
+      "ps": "(ii) د دوامدارې لړۍ هیسټوګرام",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s040-c1",
+      "en": "i. Arrange the classes in ascending order.",
+      "ur": "i. جماعتوں کو صعودی ترتیب میں ترتیب دیں۔",
+      "ps": "i. ټولګي په پورته‌والي ترتیب ترتیب کړئ.",
+      "listGroup": "steps"
+    },
+    {
+      "id": "stat11-s040-c2",
+      "en": "ii. Compute class boundaries (c.b).",
+      "ur": "ii. جماعتی سرحدیں (c.b) حساب کریں۔",
+      "ps": "ii. د ټولګي پولې (c.b) محاسبه کړئ.",
+      "listGroup": "steps"
+    },
+    {
+      "id": "stat11-s040-c3",
+      "en": "iii. Take class boundaries on x-axis and frequency on y-axis.",
+      "ur": "iii. جماعتی سرحدیں x-محور پر اور تعدد y-محور پر لیں۔",
+      "ps": "iii. د ټولګي پولې په x-محور او فریکونسي په y-محور واخلئ.",
+      "listGroup": "steps"
+    },
+    {
+      "id": "stat11-s040-c4",
+      "en": "iv. Erect a vertical line on the lower limit of the class boundaries.",
+      "ur": "iv. جماعتی سرحدوں کی زیریں حد پر ایک عمودی لکیر کھڑی کریں۔",
+      "ps": "iv. د ټولګي د پولو په ښکتنی حد یوه عمودي کرښه ودروئ.",
+      "listGroup": "steps"
+    },
+    {
+      "id": "stat11-s040-c5",
+      "en": "v. Join the lines from left to right. The resulting set of adjacent rectangles is the required histogram.",
+      "ur": "v. لکیروں کو بائیں سے دائیں ملائیں۔ نتیجتاً ملحق مستطیلوں کا مجموعہ مطلوبہ ہسٹوگرام ہے۔",
+      "ps": "v. کرښې له کیڼ څخه ښي ته وصل کړئ. پایله کې د نښتو مستطیلونو ټولګه مطلوب هیسټوګرام دی.",
+      "listGroup": "steps"
+    },
+    {
+      "id": "stat11-s040-c6",
+      "en": "vi. In case of unequal class interval, take proportional heights on y-axis in place of frequency which are computed as,",
+      "ur": "vi. غیر مساوی جماعتی وقفے کی صورت میں y-محور پر تعدد کی بجائے متناسب اونچائیاں لیں جو اس طرح حساب کی جاتی ہیں،",
+      "ps": "vi. د غیرمساوي ټولګي وقفې په صورت کې په y-محور د فریکونسي پر ځای متناسب لوړوالي واخلئ چې داسې محاسبه کېږي،",
+      "listGroup": "steps",
+      "sourceGap": {
+        "note": "The formula announced here is at the top of the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s040-hi",
+        "stat11-s040-ti",
+        "stat11-s040-ex",
+        "stat11-s040-q"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s040-sol"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s040-hii",
+        "stat11-s040-c1",
+        "stat11-s040-c2",
+        "stat11-s040-c3",
+        "stat11-s040-c4",
+        "stat11-s040-c5",
+        "stat11-s040-c6"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "tables": [
+    {
+      "caption": "Frequency distribution of shoe sizes",
+      "captionUrdu": "جوتوں کے سائز کا تعدد تقسیم",
+      "captionPashto": "د بوټانو د کچې فریکونسي ویش",
+      "headers": [
+        {
+          "en": "Size of shoes:",
+          "ur": "جوتوں کا سائز:",
+          "ps": "د بوټانو کچه:"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "11",
+          "ur": "11",
+          "ps": "11"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "No. of shoes:",
+            "ur": "جوتوں کی تعداد:",
+            "ps": "د بوټانو شمېر:"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-1-13"
+    }
+  ],
+  "figures": [
+    {
+      "id": "stat11-s040-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 320\" role=\"img\" aria-label=\"Histogram for a discrete frequency distribution of shoe sizes 6 to 12 with frequencies 8, 12, 15, 17, 15, 12, 8\" style=\"width:100%;max-width:560px;height:auto;background:#fff\"><text x=\"300.0\" y=\"18\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"600\" fill=\"#111\">Histogram for discrete frequency distribution</text><text x=\"64\" y=\"276.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">0</text><line x1=\"67\" y1=\"272.0\" x2=\"70\" y2=\"272.0\" stroke=\"#333\"/><text x=\"64\" y=\"221.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">5</text><line x1=\"67\" y1=\"217.0\" x2=\"70\" y2=\"217.0\" stroke=\"#333\"/><text x=\"64\" y=\"166.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">10</text><line x1=\"67\" y1=\"162.0\" x2=\"70\" y2=\"162.0\" stroke=\"#333\"/><text x=\"64\" y=\"111.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">15</text><line x1=\"67\" y1=\"107.0\" x2=\"70\" y2=\"107.0\" stroke=\"#333\"/><text x=\"64\" y=\"56.0\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">20</text><line x1=\"67\" y1=\"52.0\" x2=\"70\" y2=\"52.0\" stroke=\"#333\"/><line x1=\"70\" y1=\"52\" x2=\"70\" y2=\"272\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"272\" x2=\"530\" y2=\"272\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"102.9\" y1=\"184.0\" x2=\"102.9\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"102.9\" cy=\"184.0\" r=\"4.5\" fill=\"#111\"/><text x=\"102.85714285714286\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">6</text><line x1=\"168.6\" y1=\"140.0\" x2=\"168.6\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"168.6\" cy=\"140.0\" r=\"4.5\" fill=\"#111\"/><text x=\"168.57142857142856\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">7</text><line x1=\"234.3\" y1=\"107.0\" x2=\"234.3\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"234.3\" cy=\"107.0\" r=\"4.5\" fill=\"#111\"/><text x=\"234.28571428571428\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">8</text><line x1=\"300.0\" y1=\"85.0\" x2=\"300.0\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"300.0\" cy=\"85.0\" r=\"4.5\" fill=\"#111\"/><text x=\"300.0\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">9</text><line x1=\"365.7\" y1=\"107.0\" x2=\"365.7\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"365.7\" cy=\"107.0\" r=\"4.5\" fill=\"#111\"/><text x=\"365.7142857142857\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">10</text><line x1=\"431.4\" y1=\"140.0\" x2=\"431.4\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"431.4\" cy=\"140.0\" r=\"4.5\" fill=\"#111\"/><text x=\"431.42857142857144\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">11</text><line x1=\"497.1\" y1=\"184.0\" x2=\"497.1\" y2=\"272.0\" stroke=\"#111\" stroke-width=\"1.5\"/><circle cx=\"497.1\" cy=\"184.0\" r=\"4.5\" fill=\"#111\"/><text x=\"497.14285714285717\" y=\"288\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">12</text><text x=\"300.0\" y=\"314\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Size of shoes</text><text transform=\"translate(14 162.0) rotate(-90)\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial\">No. of shoes</text><text x=\"540\" y=\"70\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Scale</text><text x=\"540\" y=\"86\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">On x-axis 4 s.s = 1</text><text x=\"540\" y=\"102\" font-size=\"11\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">On y-axis 1 s.s = 0.5</text></svg>",
+      "caption": "Histogram for discrete frequency distribution",
+      "captionUrdu": "منفصل تعدد تقسیم کا ہسٹوگرام",
+      "captionPashto": "د منفصل فریکونسي ویش هیسټوګرام",
+      "labels": [
+        {
+          "en": "Size of shoes",
+          "ur": "جوتوں کا سائز",
+          "ps": "د بوټانو کچه"
+        },
+        {
+          "en": "No. of shoes",
+          "ur": "جوتوں کی تعداد",
+          "ps": "د بوټانو شمېر"
+        }
+      ],
+      "exampleId": "stat11-ex-1-13",
+      "sourceGap": {
+        "note": "Redrawn as coded SVG (vertical lines with dots) from the table values. In the printed graph the dots for 6, 7, 9 and 11 sit slightly off the stated frequencies; the table values are used."
+      }
+    }
+  ],
+  "sourceNote": "Printed page 32. The right edge of the page is clipped for a few words (\"line\", \"is\", \"in\"). The scale note is part of the printed graph. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:21:41.194947+00:00",
+    "scope": "Scan 40 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

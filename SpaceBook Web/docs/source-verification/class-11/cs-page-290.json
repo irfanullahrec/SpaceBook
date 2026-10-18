@@ -1,0 +1,108 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s290-p281",
+  "title": "Planning (end); 8.4.1 Creating the Query; a. To Build a Query using the Query Design Command — start",
+  "headingUrdu": "منصوبہ بندی (اختتام)؛ ۸.۴.۱ کوئری بنانا؛ الف۔ کوئری ڈیزائن کمانڈ سے کوئری بنانا — آغاز",
+  "headingPashto": "پلانول (پای)؛ ۸.۴.۱ پوښتنه جوړول؛ الف. د Query Design حکم په کارولو پوښتنه جوړول — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 290,
+    "printedPage": "281"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s290-p1",
+      "en": "What fields do we want to see in the results? Roll No, Student Name, Class, Section, Marks",
+      "ur": "ہم نتائج میں کون سی فیلڈز دیکھنا چاہتے ہیں؟ رول نمبر، طالب علم کا نام، کلاس، سیکشن، نمبر",
+      "ps": "موږ غواړو په پایلو کې کومې ساحې وګورو؟ رول شمېره، د زده کوونکي نوم، ټولګی، برخه، نمرې",
+      "listGroup": "pl"
+    },
+    {
+      "id": "cs11-s290-p2",
+      "en": "In which tables is the information stored? Student table - to get the Students’ roll numbers, names, classes and sections. Exam table - to get students’ marks",
+      "ur": "معلومات کن ٹیبلز میں محفوظ ہیں؟ اسٹوڈنٹ ٹیبل - طلبہ کے رول نمبر، نام، کلاسیں اور سیکشن حاصل کرنے کے لیے۔ ایگزام ٹیبل - طلبہ کے نمبر حاصل کرنے کے لیے",
+      "ps": "معلومات په کومو جدولونو کې ساتل شوي؟ د زده کوونکي جدول - د زده کوونکو د رول شمېرو، نومونو، ټولګیو او برخو ترلاسه کولو لپاره. د ازموینې جدول - د زده کوونکو د نمرو ترلاسه کولو لپاره",
+      "listGroup": "pl"
+    },
+    {
+      "id": "cs11-s290-p3",
+      "en": "What is the condition we want the data to meet? We want to look for the marks of students where the section is B.",
+      "ur": "وہ شرط کیا ہے جسے ہم ڈیٹا سے پورا کروانا چاہتے ہیں؟ ہم ان طلبہ کے نمبر دیکھنا چاہتے ہیں جن کا سیکشن بی ہے۔",
+      "ps": "هغه شرط څه دی چې غواړو ډېټا یې پوره کړي؟ موږ غواړو د هغو زده کوونکو نمرې وګورو چې برخه یې B ده.",
+      "listGroup": "pl"
+    },
+    {
+      "id": "cs11-s290-h1",
+      "en": "8.4.1 Creating the Query",
+      "ur": "۸.۴.۱ کوئری بنانا",
+      "ps": "۸.۴.۱ پوښتنه جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s290-a",
+      "en": "Once users have planned out their query, they can build and run it using Access query tools.",
+      "ur": "جب صارفین اپنی کوئری کی منصوبہ بندی کر لیں تو وہ ایکسیس کوئری ٹولز استعمال کر کے اسے بنا اور چلا سکتے ہیں۔",
+      "ps": "کله چې کاروونکي خپله پوښتنه پلان کړي نو دوی کولای شي د Access د پوښتنو وسایلو په کارولو هغه جوړه او چالان کړي."
+    },
+    {
+      "id": "cs11-s290-h2",
+      "en": "a. To Build a Query using the Query Design Command",
+      "ur": "الف۔ کوئری ڈیزائن کمانڈ سے کوئری بنانا",
+      "ps": "الف. د Query Design حکم په کارولو پوښتنه جوړول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s290-b",
+      "en": "The following steps are used to build and run a query using the Query Design command.",
+      "ur": "کوئری ڈیزائن کمانڈ سے کوئری بنانے اور چلانے کے لیے درج ذیل اقدامات استعمال ہوتے ہیں۔",
+      "ps": "د Query Design حکم په کارولو د پوښتنې د جوړولو او چلولو لپاره لاندې ګامونه کارول کېږي."
+    },
+    {
+      "id": "cs11-s290-s1",
+      "en": "Select the Query Design command from the Create tab on the Ribbon. Show Table dialog box appears.",
+      "ur": "ربن پر کریٹ ٹیب سے کوئری ڈیزائن کمانڈ منتخب کریں۔ شو ٹیبل ڈائیلاگ باکس ظاہر ہوتا ہے۔",
+      "ps": "په ربن د Create ټب نه د Query Design حکم وټاکئ. د Show Table خبرې اترې بکس راښکاره کېږي.",
+      "listGroup": "qd"
+    },
+    {
+      "id": "cs11-s290-s2",
+      "en": "Use the Show Table dialog box to select which tables (and/or queries) to include in the query. According to our query and plan, we will select both the tables.",
+      "ur": "کوئری میں شامل کرنے کے لیے ٹیبلز (اور/یا کوئریز) منتخب کرنے کے لیے شو ٹیبل ڈائیلاگ باکس استعمال کریں۔ ہماری کوئری اور منصوبے کے مطابق ہم دونوں ٹیبلز منتخب کریں گے۔",
+      "ps": "د Show Table خبرې اترې بکس وکاروئ ترڅو وټاکئ چې کوم جدولونه (او/یا پوښتنې) په پوښتنه کې شامل کړئ. زموږ د پوښتنې او پلان سره سم، موږ به دواړه جدولونه وټاکو.",
+      "listGroup": "qd"
+    },
+    {
+      "id": "cs11-s290-s3",
+      "en": "Click Close button.",
+      "ur": "کلوز بٹن پر کلک کریں۔",
+      "ps": "د Close تڼۍ کلیک کړئ.",
+      "listGroup": "qd"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s290-p1",
+        "cs11-s290-p2",
+        "cs11-s290-p3",
+        "cs11-s290-h1",
+        "cs11-s290-a",
+        "cs11-s290-h2",
+        "cs11-s290-b",
+        "cs11-s290-s1",
+        "cs11-s290-s2",
+        "cs11-s290-s3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 281: the answers to the three planning questions, the banner “8.4.1 Creating the Query”, “a. To Build a Query using the Query Design Command” with its lead-in sentence and three steps (Figure 8.30 follows on the next page). The words fields, tables and condition are underlined in the print. The words Query Design, Create, Show Table and Close are printed in bold. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:08:39.185387+00:00",
+    "scope": "Scan 290 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

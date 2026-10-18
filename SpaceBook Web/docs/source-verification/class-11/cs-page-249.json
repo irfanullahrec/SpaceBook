@@ -1,0 +1,365 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s249-p240",
+  "title": "Employee Table (Figure 7.23); 2nd Normal Form; Figure 7.24",
+  "headingUrdu": "ایمپلائی ٹیبل (شکل ۷.۲۳)؛ سیکنڈ نارمل فارم؛ شکل ۷.۲۴",
+  "headingPashto": "د کارکوونکي جدول (انځور ۷.۲۳)؛ دویمه نورمال بڼه؛ انځور ۷.۲۴",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 249,
+    "printedPage": "240"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s249-h1",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s249-a",
+      "en": "Attribute Proj_no is not an adequate key and does not uniquely identifies all the records. To maintain a proper primary key, the new key must be composed of a combination of Proj_no and Emp_no.",
+      "ur": "ایٹریبیوٹ پراجیکٹ_نمبر مناسب کی نہیں ہے اور تمام ریکارڈز کو منفرد طور پر شناخت نہیں کرتا۔ مناسب پرائمری کی برقرار رکھنے کے لیے نئی کی پراجیکٹ_نمبر اور ملازم_نمبر کے امتزاج پر مشتمل ہونی چاہیے۔",
+      "ps": "خاصیت Proj_no یوه کافي کیلي نه ده او ټول ثبتونه په ځانګړي ډول نه پېژني. د سمې لومړنۍ کیلي د ساتلو لپاره نوې کیلي باید د Proj_no او Emp_no له ګډون جوړه وي."
+    },
+    {
+      "id": "cs11-s249-h2",
+      "en": "2nd Normal Form",
+      "ur": "سیکنڈ نارمل فارم",
+      "ps": "دویمه نورمال بڼه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s249-b",
+      "en": "A relation will be in 2nd NF if it is in the first normal form and all non key attributes must be fully functional dependent on the whole primary key (No partial dependencies). Consider the table 7.24",
+      "ur": "ریلیشن ۲ این ایف میں ہو گا اگر وہ پہلے نارمل فارم میں ہو اور تمام غیر کی ایٹریبیوٹس پوری پرائمری کی پر مکمل فعلی طور پر منحصر ہوں (کوئی جزوی انحصار نہیں)۔ ٹیبل ۷.۲۴ پر غور کریں",
+      "ps": "اړیکه به په 2nd NF کې وي که چېرې په لومړۍ نورمال بڼه کې وي او ټول غیر-کیلي خاصیتونه باید په ټوله لومړنۍ کیلي بشپړ دندیز ډول تړلي وي (هېڅ جزوي تکیه نه). ۷.۲۴ جدول ته پام وکړئ"
+    },
+    {
+      "id": "cs11-s249-h3",
+      "en": "Employee Table",
+      "ur": "ایمپلائی ٹیبل",
+      "ps": "د کارکوونکي جدول",
+      "kind": "heading"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s249-h1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s249-a",
+        "cs11-s249-h2",
+        "cs11-s249-b",
+        "cs11-s249-h3"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Figure 7.23 Employee Table",
+      "captionUrdu": "شکل ۷.۲۳ ایمپلائی ٹیبل",
+      "captionPashto": "انځور ۷.۲۳ د کارکوونکي جدول",
+      "headers": [
+        {
+          "en": "Proj_no",
+          "ur": "پراجیکٹ نمبر",
+          "ps": "د پروژې شمېره"
+        },
+        {
+          "en": "Proj_name",
+          "ur": "پراجیکٹ نام",
+          "ps": "د پروژې نوم"
+        },
+        {
+          "en": "Emp_no",
+          "ur": "ملازم نمبر",
+          "ps": "د کارکوونکي شمېره"
+        },
+        {
+          "en": "Emp_name",
+          "ur": "ملازم نام",
+          "ps": "د کارکوونکي نوم"
+        },
+        {
+          "en": "Job_class",
+          "ur": "ملازمت کی قسم",
+          "ps": "د دندې ډول"
+        },
+        {
+          "en": "Charge_per_hour",
+          "ur": "فی گھنٹہ چارج",
+          "ps": "په ساعت چارج"
+        },
+        {
+          "en": "Hours",
+          "ur": "گھنٹے",
+          "ps": "ساعتونه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "Evergreen",
+            "ur": "ایور گرین",
+            "ps": "ایورګرین"
+          },
+          {
+            "en": "103",
+            "ur": "103",
+            "ps": "103"
+          },
+          {
+            "en": "Jameel Khan",
+            "ur": "جمیل خان",
+            "ps": "جمیل خان"
+          },
+          {
+            "en": "Elect. Engineer",
+            "ur": "الیکٹریکل انجینئر",
+            "ps": "برېښنايي انجینیر"
+          },
+          {
+            "en": "1000",
+            "ur": "1000",
+            "ps": "1000"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          }
+        ],
+        [
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "Evergreen",
+            "ur": "ایور گرین",
+            "ps": "ایورګرین"
+          },
+          {
+            "en": "101",
+            "ur": "101",
+            "ps": "101"
+          },
+          {
+            "en": "Faisal Naeem",
+            "ur": "فیصل نعیم",
+            "ps": "فیصل نعیم"
+          },
+          {
+            "en": "DB Designer",
+            "ur": "ڈی بی ڈیزائنر",
+            "ps": "ډېټابېس ډیزاینر"
+          },
+          {
+            "en": "900",
+            "ur": "900",
+            "ps": "900"
+          },
+          {
+            "en": "19",
+            "ur": "19",
+            "ps": "19"
+          }
+        ],
+        [
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "Evergreen",
+            "ur": "ایور گرین",
+            "ps": "ایورګرین"
+          },
+          {
+            "en": "105",
+            "ur": "105",
+            "ps": "105"
+          },
+          {
+            "en": "Bilal Ahmad",
+            "ur": "بلال احمد",
+            "ps": "بلال احمد"
+          },
+          {
+            "en": "DB Designer",
+            "ur": "ڈی بی ڈیزائنر",
+            "ps": "ډېټابېس ډیزاینر"
+          },
+          {
+            "en": "900",
+            "ur": "900",
+            "ps": "900"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "MIS",
+            "ur": "ایم آئی ایس",
+            "ps": "MIS"
+          },
+          {
+            "en": "114",
+            "ur": "114",
+            "ps": "114"
+          },
+          {
+            "en": "Zubair Ahmad",
+            "ur": "زبیر احمد",
+            "ps": "زبیر احمد"
+          },
+          {
+            "en": "Programmer",
+            "ur": "پروگرامر",
+            "ps": "پروګرامر"
+          },
+          {
+            "en": "750",
+            "ur": "750",
+            "ps": "750"
+          },
+          {
+            "en": "12.6",
+            "ur": "12.6",
+            "ps": "12.6"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "MIS",
+            "ur": "ایم آئی ایس",
+            "ps": "MIS"
+          },
+          {
+            "en": "118",
+            "ur": "118",
+            "ps": "118"
+          },
+          {
+            "en": "M. Waseem",
+            "ur": "ایم۔ وسیم",
+            "ps": "م. وسیم"
+          },
+          {
+            "en": "System Analyst",
+            "ur": "سسٹم اینالسٹ",
+            "ps": "سیسټم تحلیلګر"
+          },
+          {
+            "en": "800",
+            "ur": "800",
+            "ps": "800"
+          },
+          {
+            "en": "45.3",
+            "ur": "45.3",
+            "ps": "45.3"
+          }
+        ],
+        [
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "MIS",
+            "ur": "ایم آئی ایس",
+            "ps": "MIS"
+          },
+          {
+            "en": "104",
+            "ur": "104",
+            "ps": "104"
+          },
+          {
+            "en": "Shaukat Ali",
+            "ur": "شوکت علی",
+            "ps": "شوکت علي"
+          },
+          {
+            "en": "App Designer",
+            "ur": "ایپ ڈیزائنر",
+            "ps": "اپ ډیزاینر"
+          },
+          {
+            "en": "600",
+            "ur": "600",
+            "ps": "600"
+          },
+          {
+            "en": "32.4",
+            "ur": "32.4",
+            "ps": "32.4"
+          }
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 618 60\" role=\"img\" aria-label=\"Table structure: Proj_no, Proj_name, Emp_no, Emp_name, Job_class, Charge_per_hour, Hours\" style=\"width:100%;max-width:618px;height:auto;background:#fff\"><rect x=\"10\" y=\"10\" width=\"72\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"46.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Proj_no</text><line x1=\"18\" y1=\"33\" x2=\"74\" y2=\"33\" stroke=\"#111\"/><rect x=\"82\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"126.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Proj_name</text><rect x=\"170\" y=\"10\" width=\"64\" height=\"30\" fill=\"#c9a6a6\" stroke=\"#111\"/><text x=\"202.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_no</text><line x1=\"178\" y1=\"33\" x2=\"226\" y2=\"33\" stroke=\"#111\"/><rect x=\"234\" y=\"10\" width=\"80\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"274.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emp_name</text><rect x=\"314\" y=\"10\" width=\"88\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"358.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Job_class</text><rect x=\"402\" y=\"10\" width=\"136\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"470.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Charge_per_hour</text><rect x=\"538\" y=\"10\" width=\"60\" height=\"30\" fill=\"#8fb4e0\" stroke=\"#111\"/><text x=\"568.0\" y=\"30\" font-size=\"11\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Hours</text><polyline points=\"50,45 50,70 120,70 120,45\" fill=\"none\" stroke=\"#223a8a\" stroke-width=\"1.5\"/><text x=\"10\" y=\"95\" font-size=\"10\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Partial dependency</text><polyline points=\"215,45 215,70 440,70 440,45\" fill=\"none\" stroke=\"#223a8a\" stroke-width=\"1.5\"/><text x=\"300\" y=\"95\" font-size=\"10\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Partial dependency</text></svg>",
+      "id": "cs11-s249-fig1",
+      "caption": "Figure 7.24",
+      "captionUrdu": "شکل ۷.۲۴",
+      "captionPashto": "انځور ۷.۲۴",
+      "labels": [
+        {
+          "en": "Partial dependency",
+          "ur": "جزوی انحصار",
+          "ps": "جزوي تکیه"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 240: Figure 7.23 Employee Table (the same table as Figure 7.22 with the project number and name repeated in every row, six rows), the paragraph on the key, “2nd Normal Form” and Figure 7.24 Employee Table (the seven column names with arrows and the labels “Partial dependency” twice; redrawn as coded SVG). The printed “does not uniquely identifies” is kept. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:54:31.793261+00:00",
+    "scope": "Scan 249 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

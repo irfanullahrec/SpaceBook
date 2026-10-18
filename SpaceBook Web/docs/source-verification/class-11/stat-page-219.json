@@ -1,0 +1,802 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s219-ts-quad-3",
+  "title": "Example 6.8: table and normal equations",
+  "headingUrdu": "مثال 6.8: جدول اور معمول کی مساواتیں",
+  "headingPashto": "بېلګه 6.8: جدول او نورمال معادلې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 219,
+    "printedPage": "209"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s219-a1",
+      "en": "Putting values in the above equation",
+      "ur": "اوپر دی گئی مساوات میں قدریں رکھنے سے",
+      "ps": "په پورتنۍ معادله کې ارزښتونه ایښودو سره",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-a2",
+      "en": "Multiply equation (4) by 21 and subtract it from equation (6)",
+      "ur": "مساوات (4) کو 21 سے ضرب دیں اور اسے مساوات (6) سے منہا کریں",
+      "ps": "معادله (4) په 21 ضرب کړئ او له معادلې (6) څخه یې تفریق کړئ",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-8"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s219-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s219-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s219-n2",
+      "latex": "\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3\\qquad\\text{(ii)}",
+      "accessible": "Σxy = aΣx + bΣx² + cΣx³   (ii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-n3",
+      "latex": "\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4\\qquad\\text{(iii)}",
+      "accessible": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e4",
+      "latex": "1330=8a+618c\\qquad\\text{(4)}",
+      "accessible": "1330 = 8a + 618c   (4)   [the printed coefficient 618 is a misprint of 168]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "1330 = 8a + 618c   (4)   [the printed coefficient 618 is a misprint of 168]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "1330 = 8a + 618c   (4)   [the printed coefficient 618 is a misprint of 168]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "1330 = 8a + 618c   (4)   [the printed coefficient 618 is a misprint of 168]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e5",
+      "latex": "2838=168b\\qquad\\text{(5)}\\qquad\\Rightarrow\\ b=\\dfrac{2838}{168}=16.89",
+      "accessible": "2838 = 168b   (5)   ⇒ b = 2838/168 = 16.89",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "2838 = 168b   (5)   ⇒ b = 2838/168 = 16.89"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "2838 = 168b   (5)   ⇒ b = 2838/168 = 16.89"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "2838 = 168b   (5)   ⇒ b = 2838/168 = 16.89"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e6",
+      "latex": "32338=168a+6216c\\qquad\\text{(6)}",
+      "accessible": "32338 = 168a + 6216c   (6)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e6b",
+      "latex": "32338=168a+6216c\\qquad\\text{(6)}",
+      "accessible": "32338 = 168a + 6216c   (6)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "32338 = 168a + 6216c   (6)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e4b",
+      "latex": "27930=168a+3528c\\qquad\\text{(4)}",
+      "accessible": "27930 = 168a + 3528c   (4)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "27930 = 168a + 3528c   (4)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "27930 = 168a + 3528c   (4)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "27930 = 168a + 3528c   (4)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    },
+    {
+      "id": "stat11-s219-e7",
+      "latex": "4408=2688c\\qquad\\Rightarrow\\ c=\\dfrac{4408}{2688}=1.64",
+      "accessible": "4408 = 2688c   ⇒ c = 4408/2688 = 1.64",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "4408 = 2688c   ⇒ c = 4408/2688 = 1.64"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "4408 = 2688c   ⇒ c = 4408/2688 = 1.64"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "4408 = 2688c   ⇒ c = 4408/2688 = 1.64"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-8"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 6.8 solution table",
+      "captionUrdu": "مثال 6.8 کا حل: جدول",
+      "captionPashto": "د بېلګې 6.8 د حل جدول",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "y",
+          "ur": "y",
+          "ps": "y"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x²",
+          "ur": "x²",
+          "ps": "x²"
+        },
+        {
+          "en": "xy",
+          "ur": "xy",
+          "ps": "xy"
+        },
+        {
+          "en": "x³",
+          "ur": "x³",
+          "ps": "x³"
+        },
+        {
+          "en": "x²y",
+          "ur": "x²y",
+          "ps": "x²y"
+        },
+        {
+          "en": "x⁴",
+          "ur": "x⁴",
+          "ps": "x⁴"
+        },
+        {
+          "en": "ŷ",
+          "ur": "ŷ",
+          "ps": "ŷ"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1980",
+            "ur": "1980",
+            "ps": "1980"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "-7",
+            "ur": "-7",
+            "ps": "-7"
+          },
+          {
+            "en": "49",
+            "ur": "49",
+            "ps": "49"
+          },
+          {
+            "en": "-700",
+            "ur": "-700",
+            "ps": "-700"
+          },
+          {
+            "en": "-343",
+            "ur": "-343",
+            "ps": "-343"
+          },
+          {
+            "en": "4900",
+            "ur": "4900",
+            "ps": "4900"
+          },
+          {
+            "en": "2401",
+            "ur": "2401",
+            "ps": "2401"
+          },
+          {
+            "en": "93.94",
+            "ur": "93.94",
+            "ps": "93.94"
+          }
+        ],
+        [
+          {
+            "en": "1981",
+            "ur": "1981",
+            "ps": "1981"
+          },
+          {
+            "en": "87",
+            "ur": "87",
+            "ps": "87"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "-435",
+            "ur": "-435",
+            "ps": "-435"
+          },
+          {
+            "en": "-125",
+            "ur": "-125",
+            "ps": "-125"
+          },
+          {
+            "en": "2175",
+            "ur": "2175",
+            "ps": "2175"
+          },
+          {
+            "en": "625",
+            "ur": "625",
+            "ps": "625"
+          },
+          {
+            "en": "88.36",
+            "ur": "88.36",
+            "ps": "88.36"
+          }
+        ],
+        [
+          {
+            "en": "1982",
+            "ur": "1982",
+            "ps": "1982"
+          },
+          {
+            "en": "96",
+            "ur": "96",
+            "ps": "96"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "-288",
+            "ur": "-288",
+            "ps": "-288"
+          },
+          {
+            "en": "-27",
+            "ur": "-27",
+            "ps": "-27"
+          },
+          {
+            "en": "864",
+            "ur": "864",
+            "ps": "864"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          },
+          {
+            "en": "95.90",
+            "ur": "95.90",
+            "ps": "95.90"
+          }
+        ],
+        [
+          {
+            "en": "1983",
+            "ur": "1983",
+            "ps": "1983"
+          },
+          {
+            "en": "102",
+            "ur": "102",
+            "ps": "102"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-102",
+            "ur": "-102",
+            "ps": "-102"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "102",
+            "ur": "102",
+            "ps": "102"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "116.56",
+            "ur": "116.56",
+            "ps": "116.56"
+          }
+        ],
+        [
+          {
+            "en": "1984",
+            "ur": "1984",
+            "ps": "1984"
+          },
+          {
+            "en": "139",
+            "ur": "139",
+            "ps": "139"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "139",
+            "ur": "139",
+            "ps": "139"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "139",
+            "ur": "139",
+            "ps": "139"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "150.34",
+            "ur": "150.34",
+            "ps": "150.34"
+          }
+        ],
+        [
+          {
+            "en": "1985",
+            "ur": "1985",
+            "ps": "1985"
+          },
+          {
+            "en": "210",
+            "ur": "210",
+            "ps": "210"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "630",
+            "ur": "630",
+            "ps": "630"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "1890",
+            "ur": "1890",
+            "ps": "1890"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          },
+          {
+            "en": "197.24",
+            "ur": "197.24",
+            "ps": "197.24"
+          }
+        ],
+        [
+          {
+            "en": "1986",
+            "ur": "1986",
+            "ps": "1986"
+          },
+          {
+            "en": "289",
+            "ur": "289",
+            "ps": "289"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "1445",
+            "ur": "1445",
+            "ps": "1445"
+          },
+          {
+            "en": "125",
+            "ur": "125",
+            "ps": "125"
+          },
+          {
+            "en": "7225",
+            "ur": "7225",
+            "ps": "7225"
+          },
+          {
+            "en": "625",
+            "ur": "625",
+            "ps": "625"
+          },
+          {
+            "en": "257.26",
+            "ur": "257.26",
+            "ps": "257.26"
+          }
+        ],
+        [
+          {
+            "en": "1987",
+            "ur": "1987",
+            "ps": "1987"
+          },
+          {
+            "en": "307",
+            "ur": "307",
+            "ps": "307"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "49",
+            "ur": "49",
+            "ps": "49"
+          },
+          {
+            "en": "2149",
+            "ur": "2149",
+            "ps": "2149"
+          },
+          {
+            "en": "343",
+            "ur": "343",
+            "ps": "343"
+          },
+          {
+            "en": "15043",
+            "ur": "15043",
+            "ps": "15043"
+          },
+          {
+            "en": "2401",
+            "ur": "2401",
+            "ps": "2401"
+          },
+          {
+            "en": "330.40",
+            "ur": "330.40",
+            "ps": "330.40"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "1330",
+            "ur": "1330",
+            "ps": "1330"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "168",
+            "ur": "168",
+            "ps": "168"
+          },
+          {
+            "en": "2839",
+            "ur": "2839",
+            "ps": "2839"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "32338",
+            "ur": "32338",
+            "ps": "32338"
+          },
+          {
+            "en": "6216",
+            "ur": "6216",
+            "ps": "6216"
+          },
+          {
+            "en": "1330",
+            "ur": "1330",
+            "ps": "1330"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-8"
+    }
+  ],
+  "sourceNote": "Printed page 209. The first lines complete the normal equations (ii) and (iii) from the previous page. In the printed equation (4) the coefficient of c reads 618 (a misprint; the working below uses 168 → 168 × 21 = 3528). The subtraction line is printed with minus signs under each term. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:32:46.244708+00:00",
+    "scope": "Scan 219 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

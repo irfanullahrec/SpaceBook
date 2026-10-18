@@ -1,0 +1,263 @@
+{
+  "chapter": "stat11-collection-presentation",
+  "id": "stat11-s054-product-rules",
+  "title": "1.7.4 Rules for product notation",
+  "headingUrdu": "1.7.4 حاصلِ ضرب کی علامت کے قواعد",
+  "headingPashto": "1.7.4 د ضرب د نښې قواعد",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 54,
+    "printedPage": "46"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s054-h174",
+      "en": "1.7.4 Rules for product notation",
+      "ur": "1.7.4 حاصلِ ضرب کی علامت کے قواعد",
+      "ps": "1.7.4 د ضرب د نښې قواعد",
+      "kind": "heading"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s054-h174"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s054-i",
+      "latex": "\\text{i.}\\ \\prod_{i=1}^{n}c=c\\times c\\times\\cdots\\times c=c^n",
+      "accessible": "i. Π (i = 1 to n) c = c × c × ⋯ × c = cⁿ",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "i. Π (i = 1 to n) c = c × c × ⋯ × c = cⁿ"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "i. Π (i = 1 to n) c = c × c × ⋯ × c = cⁿ"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "i. Π (i = 1 to n) c = c × c × ⋯ × c = cⁿ"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-ii",
+      "latex": "\\text{ii.}\\ \\prod_{i=1}^{n}c\\,x_i=c^n\\prod_{i=1}^{n}x_i",
+      "accessible": "ii. Π (i = 1 to n) c xi = cⁿ Π (i = 1 to n) xi",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "ii. Π (i = 1 to n) c xi = cⁿ Π (i = 1 to n) xi"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "ii. Π (i = 1 to n) c xi = cⁿ Π (i = 1 to n) xi"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "ii. Π (i = 1 to n) c xi = cⁿ Π (i = 1 to n) xi"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-iii",
+      "latex": "\\text{iii.}\\ \\log\\left(\\prod_{i=1}^{n}x_i\\right)=\\log\\left[(x_1)(x_2)\\cdots(x_n)\\right]=\\log(x_1)+\\log(x_2)+\\cdots+\\log(x_n)=\\sum_{i=1}^{n}\\log(x_i)",
+      "accessible": "iii. log(Π xi) = log[(x1)(x2)···(xn)] = log(x1) + log(x2) + ⋯ + log(xn) = Σ log(xi)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "iii. log(Π xi) = log[(x1)(x2)···(xn)] = log(x1) + log(x2) + ⋯ + log(xn) = Σ log(xi)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "iii. log(Π xi) = log[(x1)(x2)···(xn)] = log(x1) + log(x2) + ⋯ + log(xn) = Σ log(xi)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "iii. log(Π xi) = log[(x1)(x2)···(xn)] = log(x1) + log(x2) + ⋯ + log(xn) = Σ log(xi)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-iv",
+      "latex": "\\text{iv.}\\ \\prod_{i=1}^{n}\\frac{x_i}{y_i}=\\frac{\\prod_{i=1}^{n}x_i}{\\prod_{i=1}^{n}y_i}",
+      "accessible": "iv. Π (xi / yi) = (Π xi) / (Π yi)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "iv. Π (xi / yi) = (Π xi) / (Π yi)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "iv. Π (xi / yi) = (Π xi) / (Π yi)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "iv. Π (xi / yi) = (Π xi) / (Π yi)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-v",
+      "latex": "\\text{v.}\\ \\prod_{i=1}^{n}x_iy_i=\\prod_{i=1}^{n}x_i\\prod_{i=1}^{n}y_i",
+      "accessible": "v. Π xi yi = Π xi × Π yi",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "v. Π xi yi = Π xi × Π yi"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "v. Π xi yi = Π xi × Π yi"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "v. Π xi yi = Π xi × Π yi"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-vi",
+      "latex": "\\text{vi.}\\ \\prod_{i=1}^{n}(x_i+y_i)=(x_1+y_1)(x_2+y_2)\\cdots(x_n+y_n)",
+      "accessible": "vi. Π (xi + yi) = (x1 + y1)(x2 + y2)···(xn + yn)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "vi. Π (xi + yi) = (x1 + y1)(x2 + y2)···(xn + yn)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "vi. Π (xi + yi) = (x1 + y1)(x2 + y2)···(xn + yn)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "vi. Π (xi + yi) = (x1 + y1)(x2 + y2)···(xn + yn)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s054-vii",
+      "latex": "\\text{vii.}\\ \\prod_{i=1}^{n}(x_i-y_i)=(x_1-y_1)(x_2-y_2)\\cdots(x_n-y_n)",
+      "accessible": "vii. Π (xi − yi) = (x1 − y1)(x2 − y2)···(xn − yn)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "vii. Π (xi − yi) = (x1 − y1)(x2 − y2)···(xn − yn)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "vii. Π (xi − yi) = (x1 − y1)(x2 − y2)···(xn − yn)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "vii. Π (xi − yi) = (x1 − y1)(x2 − y2)···(xn − yn)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 46. Rule i is printed \"c×c×  ×c = c^n\" with the middle dots missing; it is given with the ellipsis. The lower half of the page is blank. The top of the scan shows a white band and the foot shows a ghost of the page-number bar. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:25:51.626661+00:00",
+    "scope": "Scan 54 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

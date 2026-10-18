@@ -1,0 +1,35 @@
+@printed 61
+@status lesson
+table فارمیٹ سپیسیفائرز || Format specifiers || فارمېټ مشخص کوونکي
+th | Format specifier || Format specifier || Format specifier | Purpose || Purpose || موخه
+tr | %d or %i || %d or %i || %d یا %i | Signed integer || Signed integer || نښه لرونکی بشپړ عدد (signed integer)
+tr | %ld || %ld || %ld | long integer || long integer || اوږد بشپړ عدد (long integer)
+tr | %f || %f || %f | floating-point (decimal notation) || floating-point (decimal notation) || اعشاري عدد (لسیزه بڼه)
+tr | %g || %g || %g | floating-point (exponential notation) || floating-point (exponential notation) || اعشاري عدد (توانیزه بڼه)
+tr | %e || %e || %e | floating-point (Exponential notation) || floating-point (exponential notation) || اعشاري عدد (توانیزه بڼه)
+tr | %c || %c || %c | single character || single character || یو توری
+tr | %s || %s || %s | String || String || سټرنګ
+endtable
+@issue %g is not purely exponential: it prints in %f or %e style, whichever is shorter for the value (dropping trailing zeros).
+p یہ بنیادی فارمیٹ سپیسیفائرز ہیں۔ ہم فارمیٹ سپیسیفائر کے ساتھ کچھ اور حصے بھی شامل کر سکتے ہیں۔ || These are the basic format specifiers. We can add some other parts to a format specifier too. || دا بنسټیز فارمېټ مشخص کوونکي دي. له فارمېټ مشخص کوونکي سره نورې برخې هم زیاتولای شو.
+- ایک مائنس علامت (-) بائیں سیدھ (left alignment) کو بتاتا ہے۔ || A minus sign (-) indicates left alignment. || د منفي نښه (-) کیڼ اړخ برابرول (left alignment) ښيي.
+- % کے بعد کا نمبر فیلڈ کی کم سے کم چوڑائی متعین کرتا ہے۔ اگر سٹرنگ چوڑائی سے کم ہے تو، یہ خالی جگہوں سے پُر ہو گا۔ || A number after % sets the minimum width of the field; if the string is shorter than the width, it is filled with spaces. || له % وروسته عدد د ساحې (field) لږ تر لږه پلنوالی ټاکي؛ که سټرنګ له پلنوالي لنډ وي، په تشو ډکېږي.
+- ایک پیریڈ (.) فیلڈ کی چوڑائی کو پریسین سے الگ کرنے کے لئے استعمال کیا جاتا ہے۔ || A period (.) is used to separate the field width from the precision. || ټکی (.) د ساحې پلنوالی له دقت (precision) څخه د جلا کولو لپاره کارېږي.
+### انٹیجر فارمیٹ سپیسیفائر (%d, %ld and %i) || Integer format specifiers (%d, %ld and %i) || د بشپړ عدد فارمېټ مشخص کوونکي (%d, %ld and %i)
+p %d کا فارمیٹ سپیسیفائر انٹیجر اور %ld کا فارمیٹ سپیسیفائر لانگ انٹیجر کو پرنٹ کرنے کے لیے استعمال کیا جاتا ہے۔ || The %d format specifier is used to print an integer and the %ld format specifier to print a long integer. || د %d فارمېټ مشخص کوونکی د بشپړ عدد او %ld د اوږد بشپړ عدد (long integer) د چاپولو لپاره کارېږي.
+### پروگرام 3.12 انٹیجر فارمیٹ سپیسیفائر کے استعمال کو ظاہر کرتا ہے۔ || Program 3.12 shows the use of the integer format specifier || پروګرام ۳.۱۲ د بشپړ عدد فارمېټ مشخص کوونکي کارونه ښيي
+m #include<stdio.h>
+m void main()
+m {
+m     int a, b;
+m     a = 14;
+m     b = a / 2;
+m     printf("a=%d\n",a);        // Here %d will be replaced with the value of a
+m     printf("b=%d\n",b);        // Here %d will be replaced with the value of b
+m }
+box info | آؤٹ پُٹ || Output || Output
+m a=14
+m b=7
+endbox
+### فلوٹنگ پوائنٹ فارمیٹ سپیسیفائر (%f, %e and %g) || Floating-point format specifiers (%f, %e and %g) || د اعشاري عدد فارمېټ مشخص کوونکي (%f, %e and %g)
+p %f کا فارمیٹ سپیسیفائر فلوٹنگ پوائنٹ اعداد کو نقطہ اعشاریہ کے ساتھ دکھاتا ہے۔ فارمیٹ سپیسیفائر %e فلوٹنگ پوائنٹ نمبر کو ایکسپونینشل نوٹیشن (Exponential Notation) میں اِن پُٹ کرنے اور دکھانے کے لیے استعمال کیا جاتا ہے۔ %g کا فارمیٹ سپیسیفائر بھی %e کی طرح ہی کام کرتا ہے۔ || The %f format specifier shows floating-point numbers with a decimal point. The format specifier %e is used to input and show a floating-point number in exponential notation. The %g format specifier also works like %e. || د %f فارمېټ مشخص کوونکی اعشاري عددونه د اعشاري ټکي سره ښيي. %e فارمېټ مشخص کوونکی اعشاري عدد په توانیزه بڼه (Exponential Notation) کې د داخلولو او ښودلو لپاره کارېږي. %g هم د %e په څېر کار کوي.

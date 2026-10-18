@@ -1,0 +1,16 @@
+@printed 51
+@status lesson
+p Similarly, in the following statement: || اسی طرح درج ذیل اسٹیٹمنٹ میں: || همدارنګه په لاندې بیان کې:
+m int age= 19;
+p Age is an integer variable and 19 is a literal constant. || Age ایک صحیح عدد (integer) متغیر ہے اور 19 لٹرل کانسٹنٹ ہے۔ || Age یو بشپړ عدد (integer) متغیر دی او 19 literal ثابت دی.
+fig10 f2.17 || Figure: 2.17 Types of Variable and Constant || شکل 2.17 متغیر اور کانسٹنٹ کی اقسام || ۲.۱۷ شکل د متغیر او ثابت ډولونه
+### 2.4.3 Rules for Writing Variables || 2.4.3 متغیرات لکھنے کے قواعد || ۲.۴.۳ د متغیرونو د لیکلو قواعد
+p Any variable declared in a C program should conform to the following rules: || C پروگرام میں اعلان کیا گیا ہر متغیر درج ذیل قواعد کے مطابق ہونا چاہیے: || په C پروګرام کې اعلان شوی هر متغیر باید له لاندې قواعدو سره سم وي:
+p 1. They must always begin with a letter, although some systems permit underscore as the first character. || 1. انہیں ہمیشہ کسی حرف سے شروع ہونا چاہیے، اگرچہ بعض سسٹم پہلے حرف کے طور پر انڈر اسکور کی اجازت دیتے ہیں۔ || ۱. باید تل په توري پیل شي، که څه هم ځینې سیسټمونه underscore د لومړي توري په توګه مني.
+p 2. The length of a variable name depends upon the compiler of C. || 2. متغیر کے نام کی لمبائی C کے کمپائلر پر منحصر ہے۔ || ۲. د متغیر د نوم اوږدوالی د C په compiler پورې اړه لري.
+p 3. Blank space is not allowed. || 3. خالی جگہ (اسپیس) کی اجازت نہیں۔ || ۳. تش ځای اجازه نه لري.
+p 4. A variable should not be a Keyword. || 4. متغیر کوئی کی ورڈ نہیں ہونا چاہیے۔ || ۴. متغیر باید keyword نه وي.
+p 5. It should not contain any special characters like, #, ^ etc. || 5. اس میں کوئی خاص حروف جیسے #، ^ وغیرہ نہیں ہونے چاہئیں۔ || ۵. باید ځانګړي توري لکه #، ^ او نور ونه لري.
+p 6. A variable name declared for one data-type cannot be used for a different data-type. || 6. ایک ڈیٹا ٹائپ کے لیے اعلان کردہ متغیر کا نام کسی دوسری ڈیٹا ٹائپ کے لیے استعمال نہیں ہو سکتا۔ || ۶. د یوه ډېټا ډول لپاره اعلان شوی د متغیر نوم د بل ډېټا ډول لپاره نه شي کارېدای.
+p C is a case-sensitive language. Thus variable names with same spellings but different cases are treated as different variable names. For example, variables Pay and pay are two different variables. || C ایک کیس سینسیٹو زبان ہے۔ اس لیے ایک جیسے ہجوں مگر مختلف کیس (بڑے/چھوٹے حروف) والے متغیر نام مختلف متغیر سمجھے جاتے ہیں۔ مثلاً Pay اور pay دو مختلف متغیرات ہیں۔ || C د غټو او وړو تورو ترمنځ توپیر کوونکې ژبه ده. نو د یو شان املا خو بېلابېلو (غټو/وړو) تورو نومونه بېل متغیرونه ګڼل کېږي. د بېلګې په توګه Pay او pay دوه بېل متغیرونه دي.
+p Following are some examples of the valid and invalid variable names. || درست اور غلط متغیر ناموں کی چند مثالیں درج ذیل ہیں۔ || د سمو او ناسمو متغیر نومونو ځینې بېلګې دا دي.

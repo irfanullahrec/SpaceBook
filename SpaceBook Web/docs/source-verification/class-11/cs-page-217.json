@@ -1,0 +1,90 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s217-p208",
+  "title": "7.1 Introduction; 7.1.1 Data and Information",
+  "headingUrdu": "۷.۱ تعارف؛ ۷.۱.۱ ڈیٹا اور معلومات",
+  "headingPashto": "۷.۱ پېژندنه؛ ۷.۱.۱ ډېټا او معلومات",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 217,
+    "printedPage": "208"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s217-h1",
+      "en": "7.1 INTRODUCTION",
+      "ur": "۷.۱ تعارف",
+      "ps": "۷.۱ پېژندنه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s217-a",
+      "en": "In past, databases were found only in special research laboratories where computer scientists struggled with ways to make them efficient and useful, and published their findings in countless research papers. Today databases are a ubiquitous part of the information technology (IT) industry and business in general. We directly and indirectly use databases every day banking transactions, travel reservations, employment relationships, web site searches, purchases, and most other transactions are recorded in and served by databases.",
+      "ur": "ماضی میں ڈیٹا بیسز صرف خصوصی تحقیقی لیبارٹریوں میں پائے جاتے تھے جہاں کمپیوٹر سائنسدان انہیں مؤثر اور مفید بنانے کے طریقوں پر کام کرتے تھے اور اپنے نتائج بے شمار تحقیقی مقالوں میں شائع کرتے تھے۔ آج ڈیٹا بیسز انفارمیشن ٹیکنالوجی (آئی ٹی) کی صنعت اور عمومی طور پر کاروبار کا ہر جگہ موجود حصہ ہیں۔ ہم ہر روز بالواسطہ اور بلاواسطہ ڈیٹا بیسز استعمال کرتے ہیں؛ بینکاری کے لین دین، سفری بکنگ، ملازمت کے تعلقات، ویب سائٹ کی تلاش، خریداری اور دیگر زیادہ تر لین دین ڈیٹا بیسز میں ریکارڈ ہوتے اور ان سے فراہم ہوتے ہیں۔",
+      "ps": "په تېر وخت کې ډېټابېسونه یوازې په ځانګړو څېړنیزو لابراتوارونو کې موندل کېدل چېرته چې کمپیوټر پوهانو هڅه کوله چې هغه اغېزمن او ګټور کړي، او خپل موندنې یې په بې شمېره څېړنیزو مقالو کې خپرولې. نن ورځ ډېټابېسونه د معلوماتي ټکنالوجۍ (IT) صنعت او په عمومي توګه د سوداګرۍ هر ځای شتون لرونکې برخه ده. موږ هره ورځ مستقیم او غیر مستقیم ډېټابېسونه کاروو؛ بانکي معاملې، د سفر ثبتونه، د کار اړیکې، د ویب پاڼو لټون، پېرودنې، او ډیری نورې معاملې په ډېټابېسونو کې ثبتېږي او له هغو نه وړاندې کېږي."
+    },
+    {
+      "id": "cs11-s217-b",
+      "en": "A database is a collection of related files that are usually integrated, linked or cross-referenced to one another. The advantage of a database is that data and records contained in different files can be easily organized and retrieved using specialized database management software called database management system (DBMS).",
+      "ur": "ڈیٹا بیس متعلقہ فائلوں کا مجموعہ ہے جو عموماً مربوط، منسلک یا ایک دوسرے کے حوالے سے ہوتی ہیں۔ ڈیٹا بیس کا فائدہ یہ ہے کہ مختلف فائلوں میں موجود ڈیٹا اور ریکارڈز کو ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس) نامی مخصوص ڈیٹا بیس مینجمنٹ سافٹ ویئر کے ذریعے آسانی سے منظم اور حاصل کیا جا سکتا ہے۔",
+      "ps": "ډېټابېس د اړوندو فایلونو ټولګه ده چې معمولاً مدغم، نښلول شوي یا یو بل ته حواله شوي وي. د ډېټابېس ګټه دا ده چې په مختلفو فایلونو کې شته ډېټا او ثبتونه د ډېټابېس مدیریت سیسټم (DBMS) په نوم ځانګړي ډېټابېس مدیریت سافټویر په کارولو سره په اسانۍ منظم او ترلاسه کېدای شي."
+    },
+    {
+      "id": "cs11-s217-h2",
+      "en": "7.1.1 Data and Information",
+      "ur": "۷.۱.۱ ڈیٹا اور معلومات",
+      "ps": "۷.۱.۱ ډېټا او معلومات",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s217-h3",
+      "en": "Data",
+      "ur": "ڈیٹا",
+      "ps": "ډېټا",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s217-c",
+      "en": "The word Data is the Latin plural of Datum which means “to give” or “something given” (The word data is usually used as a singular term). Data is a collection of facts, figures, numbers or ideas that can be organized and processed. Data may or may not be meaningful and cannot be used for decision making process",
+      "ur": "لفظ ڈیٹا ڈیٹم کی لاطینی جمع ہے جس کا مطلب ’’دینا‘‘ یا ’’کوئی دی گئی چیز‘‘ ہے (لفظ ڈیٹا عموماً واحد اصطلاح کے طور پر استعمال ہوتا ہے)۔ ڈیٹا حقائق، اعداد و شمار، نمبروں یا خیالات کا مجموعہ ہے جسے منظم اور پراسیس کیا جا سکتا ہے۔ ڈیٹا بامعنی ہو بھی سکتا ہے اور نہیں بھی اور اسے فیصلہ سازی کے عمل کے لیے استعمال نہیں کیا جا سکتا۔",
+      "ps": "کلمه ډېټا د ډېټم لاتیني جمع ده چې مانا یې “ورکول” یا “یو ورکړل شوی شی” ده (کلمه ډېټا معمولاً د مفرد اصطلاح په توګه کارول کېږي). ډېټا د حقایقو، شمېرو، عددونو یا مفکورو ټولګه ده چې منظم او پروسس کېدای شي. ډېټا کېدای شي مانادار وي یا نه وي او د پرېکړې کولو پروسې لپاره نشي کارېدای."
+    },
+    {
+      "id": "cs11-s217-h4",
+      "en": "Information",
+      "ur": "معلومات",
+      "ps": "معلومات",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s217-d",
+      "en": "When facts, figures or numbers (data) are processed and converted into meaningful form that can be used for decision making or any other useful activity, it is called Information.",
+      "ur": "جب حقائق، اعداد و شمار یا نمبرز (ڈیٹا) کو پراسیس کر کے بامعنی شکل میں تبدیل کیا جائے جو فیصلہ سازی یا کسی اور مفید سرگرمی کے لیے استعمال ہو سکے تو اسے معلومات کہتے ہیں۔",
+      "ps": "کله چې حقایق، شمېرې یا عددونه (ډېټا) پروسس شي او مانادار بڼې ته بدل شي چې د پرېکړې کولو یا کوم بل ګټور فعالیت لپاره کارېدای شي، نو دې ته معلومات ویل کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s217-h1",
+        "cs11-s217-a",
+        "cs11-s217-b",
+        "cs11-s217-h2",
+        "cs11-s217-h3",
+        "cs11-s217-c",
+        "cs11-s217-h4",
+        "cs11-s217-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 208: the banner “7.1 INTRODUCTION” with two paragraphs, the banner “7.1.1 Data and Information” with the definitions of Data and Information. The first line of the page is cut by the banner. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:42:38.303545+00:00",
+    "scope": "Scan 217 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

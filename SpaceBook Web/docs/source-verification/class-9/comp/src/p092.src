@@ -1,0 +1,27 @@
+@printed 84
+@status lesson
+### Program 3.17 || پروگرام 3.17 || پروګرام ۳.۱۷
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a, b, c, sum;
+m     a=1;
+m     b=1;
+m     c=3;
+m     sum= a + b +(-- c);
+m     printf("sum=  %d\n",sum);
+m     printf("c  =  %d",c);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m sum=  4
+m c = 2
+endbox
+p In the above program, *1* will be subtracted from the value of **c** before it is used in the expression. Thus after execution, the sum will be equal to *4* and value of **c** will be *2*. || اوپر والے پروگرام میں **c** کی قدر سے اظہار میں استعمال ہونے سے پہلے *1* تفریق ہوگا۔ یوں چلنے کے بعد مجموعہ *4* اور **c** کی قدر *2* ہوگی۔ || په پورتني پروګرام کې د **c** له ارزښت په افاده کې له کارېدو مخکې *1* کمېږي. نو له اجرا وروسته مجموعه *4* او د **c** ارزښت *2* کېږي.
+### Postfix Decrement Operators || پوسٹ فکس ڈیکریمنٹ آپریٹرز || postfix decrement operators
+p When a decrement operator is used in postfix mode in an expression, it subtracts 1 from the value of the variable after the value of the variable has been used in the expression. || جب کسی اظہار میں ڈیکریمنٹ آپریٹر پوسٹ فکس صورت میں استعمال ہو تو یہ متغیر کی قدر اظہار میں استعمال ہونے کے بعد اس سے 1 تفریق کرتا ہے۔ || کله چې decrement operator په افاده کې په postfix بڼه وکارول شي، د متغیر ارزښت په افاده کې له کارېدو وروسته 1 ترې کموي.
+p For example, if in the above example, decrement operator is used in postfix mode, the result will be different. The statement will be as shown below: || مثلاً اگر اوپر والی مثال میں ڈیکریمنٹ آپریٹر پوسٹ فکس صورت میں استعمال ہو تو نتیجہ مختلف ہوگا۔ اسٹیٹمنٹ یوں ہوگی: || د بېلګې په توګه که په پورتنۍ بېلګه کې decrement operator په postfix بڼه وکارول شي، پایله بله وي. بیان به داسې وي:
+m sum = a+ b + c--;
+p In this case, 1 will be subtracted from the value of **c** after its existing value has been used in the expression. Thus after execution, the sum will be equal to *5* and the value of **c** will be *2*. || اس صورت میں **c** کی موجودہ قدر اظہار میں استعمال ہونے کے بعد اس سے 1 تفریق ہوگا۔ یوں چلنے کے بعد مجموعہ *5* اور **c** کی قدر *2* ہوگی۔ || په دې حالت کې د **c** موجود ارزښت له کارېدو وروسته 1 ترې کمېږي. نو له اجرا وروسته مجموعه *5* او د **c** ارزښت *2* کېږي.
+### 3.2.6 Relational Operators || 3.2.6 ریلیشنل آپریٹرز || ۳.۲.۶ اړیکه ییز operators
+p The relational operators are used to specify conditions in programs. A relational operator compares two values. It produces result as true or false. The relational operators are sometimes called the comparison operators as they are used in test conditions that are either true or false. C/C++ provides the following relational operators: || ریلیشنل آپریٹرز پروگراموں میں شرائط بیان کرنے کے لیے استعمال ہوتے ہیں۔ ریلیشنل آپریٹر دو قدروں کا موازنہ کرتا ہے اور نتیجہ درست یا غلط دیتا ہے۔ ریلیشنل آپریٹرز کو بعض اوقات موازنہ کے آپریٹرز بھی کہا جاتا ہے کیونکہ یہ ایسی شرائط جانچنے میں استعمال ہوتے ہیں جو یا تو درست ہوں یا غلط۔ C/C++ درج ذیل ریلیشنل آپریٹرز فراہم کرتی ہے: || اړیکه ییز operators په پروګرامونو کې د شرطونو د ټاکلو لپاره کارېږي. اړیکه ییز operator دوه ارزښتونه پرتله کوي او سم یا ناسم پایله ورکوي. ځینې وخت ورته د پرتلې operators هم وايي ځکه د سمو یا ناسمو شرطونو په ازموینه کې کارېږي. C/C++ دا اړیکه ییز operators لري:
+@issue The paragraph runs onto page 85.

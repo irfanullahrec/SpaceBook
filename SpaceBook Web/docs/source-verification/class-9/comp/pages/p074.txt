@@ -1,0 +1,36 @@
+@pdf 118
+@printed 66
+@status lesson
+p The message written after double angle brackets in program will be displayed as output. || پروگرام میں دوہرے زاویہ دار بریکٹس کے بعد لکھا پیغام آؤٹ پٹ کے طور پر ظاہر ہوگا۔ || په پروګرام کې له دوه زاویه ییزو قوسونو وروسته لیکل شوی پیغام د output په توګه ښودل کېږي.
+p For example: || مثلاً: || د بېلګې په توګه:
+m cout<<"I love my country";
+p The above line will display "I love my country" on the screen. The string constant is always enclosed in double quotes. || اوپر والی سطر اسکرین پر "I love my country" دکھائے گی۔ اسٹرنگ کانسٹنٹ ہمیشہ دوہرے واوین میں بند ہوتا ہے۔ || پورتنۍ کرښه پر پرده "I love my country" ښيي. string ثابت تل په دوه ګونو quotes کې تړل کېږي.
+svg Figure: 3.1 Working of 'cout' object || شکل 3.1 'cout' آبجیکٹ کا کام || ۳.۱ شکل د 'cout' object کار
+<svg viewBox="0 0 480 220" width="480" role="img" aria-label="A variable box flows by arrows to the insertion operator box (&lt;&lt;), then to the object box cout, and an arrow rises from cout up to a monitor screen" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+<defs><marker id="arF31" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#1d4ed8"/></marker></defs>
+<rect x="20" y="10" width="120" height="80" rx="4" fill="#fff" stroke="#111827" stroke-width="4"/><path d="M80 90 V102 M50 106 H110" stroke="#111827" stroke-width="3"/>
+<g font-size="12" fill="#c2410c"><text x="130" y="150">Object</text><text x="250" y="136">Insertion</text><text x="250" y="150">Operator</text><text x="390" y="150">Variable</text></g>
+<g fill="#fff" stroke="#ea580c"><rect x="90" y="158" width="80" height="40"/><rect x="215" y="158" width="70" height="40"/><rect x="340" y="158" width="100" height="40"/></g>
+<g font-size="18"><text x="130" y="185">cout</text><text x="250" y="185">&lt;&lt;</text><text x="390" y="185">variable</text></g>
+<path d="M338 178 H292 M213 178 H176" stroke="#1d4ed8" stroke-width="5" marker-end="url(#arF31)"/>
+<path d="M88 178 H60 V116" stroke="#1d4ed8" stroke-width="5" fill="none" marker-end="url(#arF31)"/>
+</svg>
+endsvg
+### Program 3.4: Program to show the sum and product of two numbers. || پروگرام 3.4: دو اعداد کا مجموعہ اور حاصلِ ضرب دکھانے کا پروگرام۔ || پروګرام ۳.۴: د دوو عددونو مجموعه او حاصل ضرب ښودل.
+m using namespace std;
+m #include<iostream>
+m int main()
+m {
+m     int a=15, b=22, c;
+m     cout<<"\nThis program will add and multiply two numbers"<<endl;
+m     c=a+b;
+m     cout<<"\nThe sum of "<<a<<" and "<<b<<" is "<<c<<endl;
+m     cout<<"\n The product of "<<a<<" and "<<b<<" is "<<a*b<<endl;
+m     return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m This program will add and multiply two numbers
+m The sum of 15 and 22 is 37
+m The product of 15 and 22 is 330
+endbox
+@issue "using namespace std;" is printed before "#include<iostream>"; it should come after the include. Kept as printed.

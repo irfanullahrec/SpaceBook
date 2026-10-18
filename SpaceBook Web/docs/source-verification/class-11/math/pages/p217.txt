@@ -1,0 +1,35 @@
+@printed 217
+@deco Unit-running header, "Did You Know" tag, folio and decorative footer band excluded
+p (iv) The coefficients start at 1 and increase through certain values about "half-way" and then decrease through these same values back to 1. || (iv) سر 1 سے شروع ہوتے ہیں، "آدھے راستے" تک چند قیمتوں سے بڑھتے ہیں اور پھر انہی قیمتوں سے گھٹتے ہوئے دوبارہ 1 پر آ جاتے ہیں۔ || (iv) ضریبونه له 1 نه پیلېږي، تر "نیمې لارې" څو ارزښتونو له لارې زیاتېږي او بیا همدغو ارزښتونو له لارې بیرته تر 1 کمېږي.
+p The above binomial expansions can be written in the following triangular form || مذکورہ دو رقمی توسیعات درج ذیل تکونی شکل میں لکھی جا سکتی ہیں || پورتنۍ دوه حدي پراختیاوې په لاندې درې ګوني بڼه کې لیکل کېدای شي
+m $1$
+m $a+b$
+m $a^2+2ab+b^2$
+m $a^3+3a^2b+3ab^2+b^3$
+m $a^4+4a^3b+6a^2b^2+4ab^3+b^4$
+m $a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5$
+box info | Did You Know? || کیا آپ جانتے ہیں؟ || ایا تاسو پوهېږئ؟
+p Pascal's triangle is most convenient to obtain the coefficients of the binomial expansion $(a+b)^n$ when $n$ is a small number. || جب $n$ چھوٹا عدد ہو تو دو رقمی توسیع $(a+b)^n$ کے سر حاصل کرنے کے لیے پاسکل کی مثلث سب سے آسان ہے۔ || کله چې $n$ کوچنی عدد وي نو د دوه حدي پراختیا $(a+b)^n$ ضریبونو د ترلاسه کولو لپاره د پاسکال مثلث تر ټولو اسانه دی.
+endbox
+p For each of the above expansions, we write down the binomial coefficients in the following fashion || مذکورہ ہر توسیع کے لیے ہم دو رقمی سر درج ذیل انداز میں لکھتے ہیں || د پورتنیو هرې پراختیا لپاره موږ دوه حدي ضریبونه په لاندې ډول لیکو
+table n / Values of binomial coefficients || $n$ / دو رقمی سروں کی قیمتیں || $n$ / د دوه حدي ضریبونو ارزښتونه
+th | n | Values of binomial coefficients
+tr | 0 | 1
+tr | 1 | 1 1
+tr | 2 | 1 2 1
+tr | 3 | 1 3 3 1
+tr | 4 | 1 4 6 4 1
+tr | 5 | 1 5 10 10 5 1
+endtable
+p The above configuration of numbers is called **Pascal's Triangle**. || اعداد کی مذکورہ ترتیب **پاسکل کی مثلث** کہلاتی ہے۔ || د عددونو دا پورتنی ترتیب **د پاسکال مثلث** بلل کېږي.
+example 8 | Find the expansion of $(x+y)^6$. || $(x+y)^6$ کی توسیع معلوم کریں۔ || د $(x+y)^6$ پراختیا پیدا کړئ.
+p **Solution:** By the formula, || **حل:** کلیے سے، || **حل:** د فورمول په کارولو سره،
+m $(x+y)^6=x^6+{}^6C_1x^5y+{}^6C_2x^4y^2+{}^6C_3x^3y^3+{}^6C_4x^2y^4+{}^6C_5xy^5+{}^6C_6y^6$
+m $=x^6+6x^5y+15x^4y^2+20x^3y^3+15x^2y^4+6xy^5+y^6.$
+p On calculating the value of ${}^6C_1,\ {}^6C_2,\ {}^6C_3,\ldots$ || ${}^6C_1,\ {}^6C_2,\ {}^6C_3,\ldots$ کی قیمتیں نکالنے پر || د ${}^6C_1,\ {}^6C_2,\ {}^6C_3,\ldots$ ارزښتونو په محاسبه کولو سره
+endexample
+example 9 | Find the 6th term in the expansion of $(3x+2y)^{12}$. || $(3x+2y)^{12}$ کی توسیع میں چھٹا رکن معلوم کریں۔ || د $(3x+2y)^{12}$ په پراختیا کې شپږم حد پیدا کړئ.
+p **Solution:** Let $T_{r+1}$th term be the sixth term of the expansion $(3x+2y)^{12}$. We remember that the $T_{r+1}$th term for the expansion of $(a+b)^n$ is $T_{r+1}=\dbinom nra^{n-r}b^r$ || **حل:** فرض کریں $T_{r+1}$واں رکن توسیع $(3x+2y)^{12}$ کا چھٹا رکن ہے۔ ہمیں یاد ہے کہ $(a+b)^n$ کی توسیع کا $T_{r+1}$واں رکن $T_{r+1}=\dbinom nra^{n-r}b^r$ ہے || **حل:** فرض کړئ $T_{r+1}$م حد د پراختیا $(3x+2y)^{12}$ شپږم حد دی. موږ په یاد لرو چې د $(a+b)^n$ د پراختیا $T_{r+1}$م حد $T_{r+1}=\dbinom nra^{n-r}b^r$ دی
+p So, for the given expansion $(3x+2y)^{12}$ || لہٰذا دی گئی توسیع $(3x+2y)^{12}$ کے لیے || نو د ورکړل شوې پراختیا $(3x+2y)^{12}$ لپاره
+m $T_{r+1}=\dbinom{12}{r}(3x)^{12-r}(2y)^r.$
+p Here we have $n=12$, $a=3x$ and $b=2y$ || یہاں ہمارے پاس $n=12$، $a=3x$ اور $b=2y$ ہے || دلته موږ $n=12$، $a=3x$ او $b=2y$ لرو

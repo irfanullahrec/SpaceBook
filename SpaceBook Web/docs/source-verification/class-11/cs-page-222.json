@@ -1,0 +1,120 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s222-p213",
+  "title": "7.1.5 Advantages of DBMS over the File Management System (i–v)",
+  "headingUrdu": "۷.۱.۵ فائل مینجمنٹ سسٹم پر ڈی بی ایم ایس کے فوائد (i تا v)",
+  "headingPashto": "۷.۱.۵ د فایل مدیریت سیسټم په پرتله د DBMS ګټې (i تر v)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 222,
+    "printedPage": "213"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s222-h1",
+      "en": "7.1.5 Advantages of DBMS over the File Management System",
+      "ur": "۷.۱.۵ فائل مینجمنٹ سسٹم پر ڈی بی ایم ایس کے فوائد",
+      "ps": "۷.۱.۵ د فایل مدیریت سیسټم په پرتله د DBMS ګټې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-a",
+      "en": "The DBMS is preferred over Conventional File Management System due to the following advantages:",
+      "ur": "روایتی فائل مینجمنٹ سسٹم کے مقابلے میں ڈی بی ایم ایس کو درج ذیل فوائد کی وجہ سے ترجیح دی جاتی ہے:",
+      "ps": "DBMS د دودیز فایل مدیریت سیسټم په پرتله د لاندې ګټو له امله ترجیح ورکول کېږي:"
+    },
+    {
+      "id": "cs11-s222-h2",
+      "en": "i. Controlled Data Redundancy",
+      "ur": "i۔ قابو شدہ ڈیٹا ری ڈنڈنسی",
+      "ps": "i. کنټرول شوی د ډېټا تکرار",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-b",
+      "en": "In the Conventional File Management System, every user maintains its own files for handling data. The database approach combines redundant data into a single, logical structure. Every primary fact is stored at only one place in the database.",
+      "ur": "روایتی فائل مینجمنٹ سسٹم میں ہر صارف ڈیٹا سنبھالنے کے لیے اپنی فائلیں رکھتا ہے۔ ڈیٹا بیس اپروچ غیر ضروری ڈیٹا کو ایک واحد منطقی ساخت میں یکجا کرتی ہے۔ ہر بنیادی حقیقت ڈیٹا بیس میں صرف ایک جگہ محفوظ ہوتی ہے۔",
+      "ps": "په دودیز فایل مدیریت سیسټم کې هر کاروونکی د ډېټا د اداره کولو لپاره خپل فایلونه ساتي. د ډېټابېس طریقه تکراري ډېټا په یو واحد، منطقي جوړښت کې یوځای کوي. هر لومړنی حقیقت په ډېټابېس کې یوازې په یوه ځای کې ساتل کېږي."
+    },
+    {
+      "id": "cs11-s222-h3",
+      "en": "ii. Data Consistency",
+      "ur": "ii۔ ڈیٹا کی مطابقت",
+      "ps": "ii. د ډېټا همغږي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-c",
+      "en": "Minimal data redundancy leads to consistent data. By controlling data redundancy, data inconsistency is greatly reduced. If a data item appears only at one place it is easy to maintain. Any change will automatically take effect at all places wherever this data is used.",
+      "ur": "کم سے کم ڈیٹا ری ڈنڈنسی مطابقت پذیر ڈیٹا کی طرف لے جاتی ہے۔ ڈیٹا ری ڈنڈنسی کو قابو کرنے سے ڈیٹا کی عدم مطابقت بہت کم ہو جاتی ہے۔ اگر کوئی ڈیٹا آئٹم صرف ایک جگہ ہو تو اسے برقرار رکھنا آسان ہے۔ کوئی بھی تبدیلی خود بخود ان تمام جگہوں پر اثر کرے گی جہاں یہ ڈیٹا استعمال ہوتا ہے۔",
+      "ps": "لږ تر لږه د ډېټا تکرار همغږي ډېټا ته لار هواروي. د ډېټا د تکرار په کنټرولولو سره د ډېټا ناسمون ډیر کمېږي. که یو ډېټا توکی یوازې په یوه ځای کې وي نو ساتل یې اسان دي. هر بدلون به په اتوماتیک ډول په ټولو ځایونو اغېز وکړي چېرته چې دا ډېټا کارول کېږي."
+    },
+    {
+      "id": "cs11-s222-h4",
+      "en": "iii. Data Sharing",
+      "ur": "iii۔ ڈیٹا کا اشتراک",
+      "ps": "iii. د ډېټا ګډون",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-d",
+      "en": "A database is designed as shared resource compared to Conventional File System. Authorized users are granted access to use the shared database according to their needs and rights.",
+      "ur": "روایتی فائل سسٹم کے مقابلے میں ڈیٹا بیس مشترکہ وسیلے کے طور پر بنایا جاتا ہے۔ مجاز صارفین کو اپنی ضروریات اور حقوق کے مطابق مشترکہ ڈیٹا بیس استعمال کرنے کی رسائی دی جاتی ہے۔",
+      "ps": "ډېټابېس د دودیز فایل سیسټم په پرتله د ګډې سرچینې په توګه ډیزاین شوی. مجاز کاروونکو ته د خپلو اړتیاوو او حقونو سره سم د ګډ ډېټابېس کارولو لاسرسی ورکول کېږي."
+    },
+    {
+      "id": "cs11-s222-h5",
+      "en": "iv. Enforcement of Standards",
+      "ur": "iv۔ معیارات کا نفاذ",
+      "ps": "iv. د معیارونو پلي کول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-e",
+      "en": "Since all access to database must be through DBMS so standards are easier to enforce. Standards may relate to the naming of data, format of data, and structure of data.",
+      "ur": "چونکہ ڈیٹا بیس تک تمام رسائی ڈی بی ایم ایس کے ذریعے ہونی چاہیے اس لیے معیارات کا نفاذ آسان ہے۔ معیارات ڈیٹا کی نام گذاری، ڈیٹا کی شکل اور ڈیٹا کی ساخت سے متعلق ہو سکتے ہیں۔",
+      "ps": "ځکه چې ډېټابېس ته ټول لاسرسی باید د DBMS له لارې وي نو معیارونه په اسانۍ پلي کېږي. معیارونه کېدای شي د ډېټا نومولو، د ډېټا بڼې، او د ډېټا جوړښت پورې اړه ولري."
+    },
+    {
+      "id": "cs11-s222-h6",
+      "en": "v. Security",
+      "ur": "v۔ تحفظ",
+      "ps": "v. امنیت",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s222-f",
+      "en": "In Conventional filing systems there is no centralized security system which restricts users according to their role in the organization. DBMS makes it easier to enforce security restrictions since database is centralized. Users are provided permissions to access data according to their rights.",
+      "ur": "روایتی فائلنگ سسٹمز میں کوئی مرکزی تحفظاتی نظام نہیں ہوتا جو صارفین کو ادارے میں ان کے کردار کے مطابق محدود کرے۔ ڈی بی ایم ایس تحفظاتی پابندیاں لاگو کرنا آسان بناتا ہے کیونکہ ڈیٹا بیس مرکزی ہوتا ہے۔ صارفین کو ان کے حقوق کے مطابق ڈیٹا تک رسائی کی اجازتیں دی جاتی ہیں۔",
+      "ps": "په دودیز فایلینګ سیسټمونو کې هېڅ مرکزي امنیتي سیسټم نشته چې کاروونکي په اداره کې د دوی د رول سره سم محدود کړي. DBMS د امنیتي محدودیتونو پلي کول اسانوي ځکه چې ډېټابېس مرکزي دی. کاروونکو ته د دوی د حقونو سره سم ډېټا ته د لاسرسي اجازې ورکول کېږي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s222-h1",
+        "cs11-s222-a",
+        "cs11-s222-h2",
+        "cs11-s222-b",
+        "cs11-s222-h3",
+        "cs11-s222-c",
+        "cs11-s222-h4",
+        "cs11-s222-d",
+        "cs11-s222-h5",
+        "cs11-s222-e",
+        "cs11-s222-h6",
+        "cs11-s222-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 213: the banner “7.1.5 Advantages of DBMS over the File Management System” with its lead-in sentence and the first five advantages i–v (the list continues on the next page). The sub-headings are printed in bold blue. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:44:08.944741+00:00",
+    "scope": "Scan 222 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

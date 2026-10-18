@@ -1,0 +1,481 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s117-sd-8",
+  "title": "Example 3.13 (shortcut end, step-deviation) · 3.5.6 Difference between S.D and variance",
+  "headingUrdu": "مثال 3.13 (مختصر کا اختتام، قدمی انحراف) · 3.5.6 معیاری انحراف اور تغیر میں فرق",
+  "headingPashto": "بېلګه 3.13 (د لنډې پای، ګام‌انحراف) · 3.5.6 د معیاري انحراف او وریانس توپیر",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 117,
+    "printedPage": "109"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s117-n1",
+      "en": "(iii) By change of origin and scale method or step deviation method",
+      "ur": "(iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے",
+      "ps": "(iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-n2",
+      "en": "Here A = 17, h = 5 so u = (x − A)/h = (x − 17)/5",
+      "ur": "یہاں A = 17, h = 5 لہٰذا u = (x − A)/h = (x − 17)/5",
+      "ps": "دلته A = 17, h = 5 نو u = (x − A)/h = (x − 17)/5",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-h356",
+      "en": "3.5.6 Difference between standard deviation and variance",
+      "ur": "3.5.6 معیاری انحراف اور تغیر میں فرق",
+      "ps": "3.5.6 د معیاري انحراف او وریانس توپیر",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s117-t356",
+      "en": "Both tell us about the average variability of the given data about the mean but the unit of S.D is the same as the unit of measurement of the original data i.e. if observations have unit k.g, then unit of S.D will also be k.g, whereas, the unit of variance is square of the unit of measurement (i.e. if the observations are in meters, the unit of variance will be expressed in square meters, so many times, it becomes difficult to actually determine the magnitude of variation also variance is sensitive to extreme values. However, variance is the backbone of inferential statistics.",
+      "ur": "دونوں ہمیں دیے گئے اعداد و شمار کی اوسط کے گرد اوسط تغیر پذیری کے بارے میں بتاتے ہیں لیکن S.D کی اکائی اصل اعداد و شمار کی پیمائش کی اکائی کے برابر ہوتی ہے یعنی اگر مشاہدات کی اکائی کلوگرام ہو تو S.D کی اکائی بھی کلوگرام ہوگی، جبکہ تغیر کی اکائی پیمائش کی اکائی کا مربع ہوتی ہے (یعنی اگر مشاہدات میٹر میں ہوں تو تغیر کی اکائی مربع میٹر میں ظاہر ہوگی، اس لیے کئی بار تغیر کی مقدار کا اصل تعین مشکل ہو جاتا ہے، نیز تغیر انتہائی قدروں کے لیے حساس ہے۔ تاہم، تغیر استنباطی شماریات کی ریڑھ کی ہڈی ہے۔",
+      "ps": "دواړه موږ ته د ورکړل شویو معلوماتو د اوسط شاوخوا اوسط متغیرتیا په اړه وايي خو د S.D واحد د اصلي معلوماتو د اندازې له واحد سره یو شان دی یعنې که کتنې د کیلوګرام واحد ولري نو د S.D واحد به هم کیلوګرام وي، پداسې حال کې چې د وریانس واحد د اندازې د واحد مربع دی (یعنې که کتنې په مترو کې وي د وریانس واحد به په مربع مترو کې ښودل کېږي، نو ډېر ځله د تغیر د اندازې ټاکل ستونزمن کېږي او وریانس د سختو ارزښتونو لپاره هم حساس دی. خو وریانس د استنباطي احصایې بنسټ دی.",
+      "sourceGap": {
+        "note": "The opening parenthesis after \"(i.e. if the observations are in meters, …\" is never closed in the printed text."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s117-n1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s117-n2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s117-h356",
+        "stat11-s117-t356"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s117-a",
+      "latex": "\\therefore\\ S=\\sqrt{\\dfrac{19300}{75}-\\left(\\dfrac{1150}{75}\\right)^2}=\\sqrt{257.33-235.11}=\\sqrt{22.22}=4.71",
+      "accessible": "∴ S = √(19300/75 − (1150/75)²) = √(257.33 − 235.11) = √22.22 = 4.71",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ S = √(19300/75 − (1150/75)²) = √(257.33 − 235.11) = √22.22 = 4.71"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ S = √(19300/75 − (1150/75)²) = √(257.33 − 235.11) = √22.22 = 4.71"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ S = √(19300/75 − (1150/75)²) = √(257.33 − 235.11) = √22.22 = 4.71"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-b",
+      "latex": "S^2=\\dfrac{19300}{75}-\\left(\\dfrac{1150}{75}\\right)^2=257.33-235.11=22.22",
+      "accessible": "S² = 19300/75 − (1150/75)² = 257.33 − 235.11 = 22.22   [the printed subtrahend reads (93001/75), a misprint for (1150/75)]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = 19300/75 − (1150/75)² = 257.33 − 235.11 = 22.22   [the printed subtrahend reads (93001/75), a misprint for (1150/75)]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = 19300/75 − (1150/75)² = 257.33 − 235.11 = 22.22   [the printed subtrahend reads (93001/75), a misprint for (1150/75)]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = 19300/75 − (1150/75)² = 257.33 − 235.11 = 22.22   [the printed subtrahend reads (93001/75), a misprint for (1150/75)]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-c",
+      "latex": "s=\\sqrt{\\dfrac{\\sum fu^2}{\\sum f}-\\left(\\dfrac{\\sum fu}{\\sum f}\\right)^2}\\times h",
+      "accessible": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-d",
+      "latex": "s^2=\\left[\\dfrac{\\sum fu^2}{\\sum f}-\\left(\\dfrac{\\sum fu}{\\sum f}\\right)^2\\right]\\times h^2",
+      "accessible": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = [Σfu²/Σf − (Σfu/Σf)²] × h²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-e",
+      "latex": "S=\\sqrt{\\dfrac{75}{75}-\\left(\\dfrac{-25}{75}\\right)^2}\\times 5=\\sqrt{1-0.111}\\times 5=(0.943)\\times 5=4.71",
+      "accessible": "S = √(75/75 − (−25/75)²) × 5 = √(1 − 0.111) × 5 = (0.943) × 5 = 4.71",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(75/75 − (−25/75)²) × 5 = √(1 − 0.111) × 5 = (0.943) × 5 = 4.71"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(75/75 − (−25/75)²) × 5 = √(1 − 0.111) × 5 = (0.943) × 5 = 4.71"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(75/75 − (−25/75)²) × 5 = √(1 − 0.111) × 5 = (0.943) × 5 = 4.71"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    },
+    {
+      "id": "stat11-s117-f",
+      "latex": "S^2=\\dfrac{75}{75}-\\left(\\dfrac{-25}{75}\\right)^2\\times 5^2=(1-0.111)\\times 25=(0.889)(25)=22.22",
+      "accessible": "S² = 75/75 − (−25/75)² × 5² = (1 − 0.111) × 25 = (0.889)(25) = 22.22",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = 75/75 − (−25/75)² × 5² = (1 − 0.111) × 25 = (0.889)(25) = 22.22"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = 75/75 − (−25/75)² × 5² = (1 − 0.111) × 25 = (0.889)(25) = 22.22"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = 75/75 − (−25/75)² × 5² = (1 − 0.111) × 25 = (0.889)(25) = 22.22"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-13"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.13: step-deviation table",
+      "captionUrdu": "مثال 3.13: قدمی انحراف کا جدول",
+      "captionPashto": "بېلګه 3.13: د ګام‌انحراف جدول",
+      "headers": [
+        {
+          "en": "Marks",
+          "ur": "نمبر",
+          "ps": "نمرې"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "u = (x − 17)/5",
+          "ur": "u = (x − 17)/5",
+          "ps": "u = (x − 17)/5"
+        },
+        {
+          "en": "fu",
+          "ur": "fu",
+          "ps": "fu"
+        },
+        {
+          "en": "fu²",
+          "ur": "fu²",
+          "ps": "fu²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "5 – 9",
+            "ur": "5 – 9",
+            "ps": "5 – 9"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "-20",
+            "ur": "-20",
+            "ps": "-20"
+          },
+          {
+            "en": "+40",
+            "ur": "+40",
+            "ps": "+40"
+          }
+        ],
+        [
+          {
+            "en": "10 – 14",
+            "ur": "10 – 14",
+            "ps": "10 – 14"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "-20",
+            "ur": "-20",
+            "ps": "-20"
+          },
+          {
+            "en": "+20",
+            "ur": "+20",
+            "ps": "+20"
+          }
+        ],
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "-25",
+            "ur": "-25",
+            "ps": "-25"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-13"
+    }
+  ],
+  "sourceNote": "Printed page 109. The page number at the bottom is partly cut off by the scan. The first lines complete the shortcut method of Example 3.13. In the S² line the printed subtrahend reads (93001/75) (misprint for 1150/75) and the printed \"×\" placement in the step-deviation S² line is kept. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:51:28.769395+00:00",
+    "scope": "Scan 117 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

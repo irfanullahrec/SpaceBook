@@ -1,0 +1,41 @@
+@printed 160
+@status lesson
+### نیسٹڈ لسٹ || Nested list || ځالې لېست
+p بعض اوقات، کسی ویب پیج میں کسی اور لسٹ کے اندر دوسری لسٹ کو نیسٹڈ کرنے کی ضرورت ہوتی ہے۔ اس سے پڑھنے والے کے لیے ویب پیج میں پیش کردہ معلومات کو سمجھنا آسان ہو جاتا ہے۔ مندرجہ ذیل مثال پر غور کریں: || Sometimes a web page needs one list nested inside another list. This makes the information presented on the web page easier for the reader to understand. Consider the following example: || کله کله په ویب پاڼه کې د یوه لېست دننه د بل لېست ځالې کولو ته اړتیا وي. دا لوستونکي ته په ویب پاڼه کې وړاندې شوي معلومات پوهېدل اسانه کوي. لاندې بېلګې ته پام وکړئ:
+box info | مثال || Example || بېلګه
+p **Types of Computer Memories** || **Types of Computer Memories** || **Types of Computer Memories**
+m 1. Primary Memory
+m      • Random Access Memory
+m      • Read Only Memory
+m 2. Secondary Memory
+m      • Magnetic Memory
+m      • Optical Memory
+m      • USB Flash Drive
+m      • Memory Card
+endbox
+@issue The left edge of this example is cut off in the scan ("…nary Memory", "…dom Access Memory"); it is restored from the code in Figure 7.33.
+p اس مثال میں، ایک ان آرڈرڈ لسٹ کو آرڈرڈ لسٹ میں بند کیا گیا ہے۔ شکل نمبر 7.33 میں دکھائے گئے HTML ڈاکومنٹ میں نیسٹڈ لسٹ تیار کی گئی ہے۔ یہاں پر <h3></h3> ہیڈنگ ٹیگ کو استعمال کر کے ٹائٹل Types of Computer Memories بنایا گیا ہے۔ آرڈرڈ لسٹ کے دو ذیلی عنوانات ہیں جو کہ Primary Memory اور Secondary Memory ہیں۔ اسی طرح پہلے ذیلی عنوان کے دو اجزاء ہیں جو ان آرڈرڈ ہیں اور دوسرے عنوان کے چار اجزاء ان آرڈرڈ ہیں۔ || In this example an unordered list is enclosed in an ordered list. The nested list is made in the HTML document shown in Figure 7.33. Here the <h3></h3> heading tag is used to make the title Types of Computer Memories. The ordered list has two sub-headings, Primary Memory and Secondary Memory. Under the first sub-heading there are two unordered items, and under the second there are four unordered items. || په دې بېلګه کې یو بې ترتیبه لېست په ترتیبي لېست کې تړل شوی. ځالې لېست په ۷.۳۳ شکل کې ښودل شوي HTML سند کې جوړ شوی. دلته د <h3></h3> سرلیک ټیګ په کارولو Types of Computer Memories سرلیک جوړ شوی. ترتیبي لېست دوه فرعي سرلیکونه لري: Primary Memory او Secondary Memory. د لومړي فرعي سرلیک لاندې دوه بې ترتیبه توکي او د دویم لاندې څلور بې ترتیبه توکي دي.
+### شکل نمبر 7.33 نیسٹڈ لسٹ بنانا || Figure 7.33 Making a nested list || ۷.۳۳ شکل ځالې لېست جوړول
+m <html>
+m <head>
+m <title>Nested List</title>
+m </head>
+m <body>
+m <h3>Types of Computer Memories</h3>
+m <ol>
+m <li>Primary Memory</li>
+m <ul>
+m <li>Random Access Memory</li>
+m <li>Read Only Memory</li>
+m </ul>
+m <li>Secondary Memory</li>
+m <ul>
+m <li>Magnetic Memory</li>
+m <li>Optical Memory</li>
+m <li>USB Flash Drive</li>
+m <li>Memory Card</li>
+m </ul>
+m </ol>
+m </body>
+m </html>
+@issue In Figure 7.33 each <ul> is placed directly inside <ol>, after a closed </li>. Browsers display it as intended, but in valid HTML a nested list must go inside the <li> it belongs to (…<li>Primary Memory<ul>…</ul></li>).

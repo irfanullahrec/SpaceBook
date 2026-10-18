@@ -1,0 +1,23 @@
+@printed 65
+@status lesson
+p Its syntax is: || اس کا سنٹیکس یہ ہے: || syntax یې دا دی:
+m puts(string);
+- The **string** may be a string constant or string type variable. || **string** اسٹرنگ کانسٹنٹ یا اسٹرنگ قسم کا متغیر ہو سکتا ہے۔ || **string** کېدای شي string ثابت یا د string ډول متغیر وي.
+- In case of a string constant, the string is enclosed in double quotes. || اسٹرنگ کانسٹنٹ کی صورت میں اسٹرنگ دوہرے واوین میں بند ہوتی ہے۔ || د string ثابت په حالت کې string په دوه ګونو نښو (") کې تړل کېږي.
+- In case of a string variable, it is written without using quotes. || اسٹرنگ متغیر کی صورت میں یہ واوین کے بغیر لکھا جاتا ہے۔ || د string متغیر په حالت کې پرته له quotes لیکل کېږي.
+### Program 3.3: Program to output a string on the screen by using the *puts()* function. || پروگرام 3.3: *puts()* فنکشن سے اسکرین پر اسٹرنگ آؤٹ پٹ کرنے کا پروگرام۔ || پروګرام ۳.۳: د *puts()* فنکشن په مرسته پر پرده د string ښودل.
+m #include<string.h>
+m void main()
+m {
+m     puts("My name is Khalid ") ;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m My name is Khalid
+endbox
+@issue Program 3.3 includes string.h, but puts() is declared in stdio.h (as the text above says); kept as printed.
+### c. *cout* || ج۔ *cout* || ج. *cout*
+p In C++ program the output on the screen can be obtained by using cout. The word 'cout' stands for console output and is used with insertion operator (<<), also called double angle brackets as depicted in figure 3.1. It is to be noted that in order to use the cout<< we must include the header file *iostream* in the program with *using namespace std*; as the first line of code. || C++ پروگرام میں اسکرین پر آؤٹ پٹ cout سے حاصل کیا جا سکتا ہے۔ لفظ 'cout' کنسول آؤٹ پٹ کا مخفف ہے اور انسرشن آپریٹر (<<) کے ساتھ استعمال ہوتا ہے جسے دوہرے زاویہ دار بریکٹس بھی کہتے ہیں، جیسا کہ شکل 3.1 میں دکھایا گیا ہے۔ یاد رہے کہ cout<< استعمال کرنے کے لیے پروگرام میں ہیڈر فائل *iostream* اور کوڈ کی پہلی سطر کے طور پر *using namespace std;* شامل کرنا ضروری ہے۔ || په C++ پروګرام کې پر پرده output د cout په مرسته ترلاسه کېږي. 'cout' کلمه د console output لنډیز دی او د insertion operator (<<) سره کارېږي چې دوه زاویه ییز قوسونه هم بلل کېږي، لکه په ۳.۱ شکل کې. پام وکړئ چې د cout<< د کارولو لپاره باید *iostream* header فایل او د کوډ د لومړۍ کرښې په توګه *using namespace std;* شامل کړو.
+p The syntax is: || سنٹیکس یہ ہے: || syntax دا دی:
+m cout<<Variable/Constant/Expression;
+p Where **Variable:** Can be any variable whose value is to be displayed on the screen. **Constant:** Value of constant can also be printed on the screen. **Expression:** Value obtained from any arithmetic expression can also be printed on the screen. || جہاں **Variable:** کوئی بھی متغیر جس کی قدر اسکرین پر دکھانی ہو۔ **Constant:** کانسٹنٹ کی قدر بھی اسکرین پر پرنٹ ہو سکتی ہے۔ **Expression:** کسی بھی حسابی اظہار سے حاصل قدر بھی اسکرین پر پرنٹ ہو سکتی ہے۔ || چې **Variable:** هر متغیر چې ارزښت یې پر پرده ښودل کېږي. **Constant:** د ثابت ارزښت هم پر پرده چاپېدای شي. **Expression:** له هرې حسابي افادې ترلاسه شوی ارزښت هم پر پرده چاپېدای شي.
+@issue The scan is worn on "program" and "stands for" in the cout paragraph; read from context.

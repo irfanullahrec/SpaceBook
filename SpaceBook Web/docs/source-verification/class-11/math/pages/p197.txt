@@ -1,0 +1,21 @@
+@printed 197
+box theorem | Corollary 1 || نتیجہ 1 || پایله 1
+p If A and B are mutually exclusive events, then $P(A\cup B)=P(A)+P(B)$. || اگر A اور B باہم خارج واقعات ہوں تو $P(A\cup B)=P(A)+P(B)$۔ || که A او B متقابلاً جلا پېښې وي، نو $P(A\cup B)=P(A)+P(B)$.
+p **Proof:** Since A and B are mutually exclusive events, then $A\cap B=\phi$ and $P(A\cap B)=P(\phi)=0$. || **ثبوت:** چونکہ A اور B باہم خارج واقعات ہیں، اس لیے $A\cap B=\phi$ اور $P(A\cap B)=P(\phi)=0$۔ || **ثبوت:** څرنګه چې A او B متقابلاً جلا پېښې دي، نو $A\cap B=\phi$ او $P(A\cap B)=P(\phi)=0$.
+p Hence $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ reduces to || لہٰذا $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ مختصر ہو کر بنتا ہے || نو $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ داسې ساده کېږي
+eq P(A\cup B)=P(A)+P(B)
+endbox
+p Now, generalizing the above, we have the following: || اب اوپر کے نتیجے کو عمومی بنانے سے درج ذیل حاصل ہوتا ہے: || اوس د پورته پایلې په عمومي کولو لاندې ترلاسه کوو:
+box theorem | Corollary 2 || نتیجہ 2 || پایله 2
+p If $A_1,A_2,\ldots,A_n$ are mutually exclusive events, then || اگر $A_1,A_2,\ldots,A_n$ باہم خارج واقعات ہوں، تو || که $A_1,A_2,\ldots,A_n$ متقابلاً جلا پېښې وي، نو
+eq P(A_1\cup A_2\cup\cdots\cup A_n)=P(A_1)+P(A_2)+\cdots+P(A_n)
+endbox
+example 22 | One integer is chosen at random from the numbers $1,2,3,\ldots,50$. What is the probability that the chosen number is divisible by 6 or 8? || اعداد $1,2,3,\ldots,50$ میں سے ایک صحیح عدد بے ترتیب منتخب کیا جاتا ہے۔ منتخب عدد کے 6 یا 8 پر تقسیم ہونے کا احتمال کیا ہے؟ || له $1,2,3,\ldots,50$ عددونو څخه یو صحیح عدد په تصادفي ډول ټاکل کېږي. د ټاکلي عدد پر 6 یا 8 د وېشل کېدو احتمال څومره دی؟
+p **Solution:** Here $S=\{1,2,3,\ldots,50\}$ and $n(S)=50$. || **حل:** یہاں $S=\{1,2,3,\ldots,50\}$ اور $n(S)=50$۔ || **حل:** دلته $S=\{1,2,3,\ldots,50\}$ او $n(S)=50$.
+p Let $A=\{\text{number is divisible by 6}\}=\{6,12,18,24,30,36,42,48\}$ and $B=\{\text{number is divisible by 8}\}=\{8,16,24,32,40,48\}$ then $A\cap B=\{24,48\}$. || فرض کریں $A=\{\text{عدد 6 پر تقسیم ہوتا ہے}\}=\{6,12,18,24,30,36,42,48\}$ اور $B=\{\text{عدد 8 پر تقسیم ہوتا ہے}\}=\{8,16,24,32,40,48\}$، تو $A\cap B=\{24,48\}$۔ || فرض کړئ $A=\{\text{عدد پر 6 وېشل کېږي}\}=\{6,12,18,24,30,36,42,48\}$ او $B=\{\text{عدد پر 8 وېشل کېږي}\}=\{8,16,24,32,40,48\}$، نو $A\cap B=\{24,48\}$.
+p Now, substituting $P(A)=\dfrac8{50}$, $P(B)=\dfrac6{50}$ and $P(A\cap B)=\dfrac2{50}$ in the following, we obtain || اب درج ذیل میں $P(A)=\dfrac8{50}$، $P(B)=\dfrac6{50}$ اور $P(A\cap B)=\dfrac2{50}$ رکھنے سے حاصل ہوتا ہے || اوس په لاندې کې د $P(A)=\dfrac8{50}$، $P(B)=\dfrac6{50}$ او $P(A\cap B)=\dfrac2{50}$ په ایښودلو ترلاسه کوو
+eq P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac8{50}+\frac6{50}-\frac2{50}=\frac{12}{50}=\frac6{25}
+endexample
+example 23 | If two dice are rolled, find the probability of obtaining a total of 7 or 11. || اگر دو پانسے پھینکے جائیں تو 7 یا 11 کا مجموعہ حاصل ہونے کا احتمال معلوم کریں۔ || که دوه ځارونه وغورځول شي، د 7 یا 11 مجموعې د ترلاسه کېدو احتمال پیدا کړئ.
+p **Solution:** Here $S=\{(i,j):i,j=1,2,3,4,5,6\}$ and $n(S)=36$. || **حل:** یہاں $S=\{(i,j):i,j=1,2,3,4,5,6\}$ اور $n(S)=36$۔ || **حل:** دلته $S=\{(i,j):i,j=1,2,3,4,5,6\}$ او $n(S)=36$.
+p Let $A=\{\text{a total of 7 occurs}\}=\{(6,1),(5,2),(4,3),(3,4),(2,5),(1,6)\}$ and $B=\{\text{a total of 11 occurs}\}$ || فرض کریں $A=\{\text{7 کا مجموعہ آتا ہے}\}=\{(6,1),(5,2),(4,3),(3,4),(2,5),(1,6)\}$ اور $B=\{\text{11 کا مجموعہ آتا ہے}\}$ || فرض کړئ $A=\{\text{د 7 مجموعه راځي}\}=\{(6,1),(5,2),(4,3),(3,4),(2,5),(1,6)\}$ او $B=\{\text{د 11 مجموعه راځي}\}$

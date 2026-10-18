@@ -1,0 +1,29 @@
+@pdf 158
+@printed 156
+@status lesson
+- **There should be as few groups as possible, as long as this does not contradict any of the previous rules.** || **گروپس جتنے کم ہو سکیں ہوں، بشرطیکہ یہ پچھلے کسی قاعدے کے خلاف نہ ہو۔** || **ډلې باید څومره چې ممکن وي لږې وي، په دې شرط چې له مخکنیو قواعدو سره ټکر ونه لري.**
+### 6.3.2 Simplification of two variables Boolean function by K-Map || 6.3.2 دو متغیر والے بولین فنکشن کا K-Map سے اختصار || ۶.۳.۲ د K-Map په مرسته د دوو متغیرونو بولین فنکشن لنډول
+### Example 1: || مثال 1: || ۱ بېلګه:
+p Consider the following map. The function plotted is: Z = f(A,B) = AB̄ + AB || درج ذیل میپ دیکھیں۔ دکھایا گیا فنکشن یہ ہے: Z = f(A,B) = AB̄ + AB || لاندې نقشه وګورئ. ښودل شوی فنکشن دا دی: Z = f(A,B) = AB̄ + AB
+### Truth table for above Boolean function: || اوپر والے بولین فنکشن کا ٹروتھ ٹیبل: || د پورتني بولین فنکشن truth table:
+table Table 6.13: Truth table for the Z = f(A,B) = AB̄ + AB || جدول 6.13: Z = f(A,B) = AB̄ + AB کا ٹروتھ ٹیبل || ۶.۱۳ جدول: د Z = f(A,B) = AB̄ + AB truth table
+th | A | B | Z = f(A,B) = AB̄ + AB
+tr | 0 | 0 | 0
+tr | 0 | 1 | 0
+tr | 1 | 0 | 1
+tr | 1 | 1 | 1
+endtable
+p Now implement these values of truth table in the following K-Map. || اب ٹروتھ ٹیبل کی یہ قدریں درج ذیل K-Map میں لگائیں۔ || اوس د truth table دا ارزښتونه په لاندې K-Map کې ځای پر ځای کړئ.
+table K-Map for Z = AB̄ + AB (rows B, columns A); the two 1s in the A=1 column form one group || Z = AB̄ + AB کا K-Map (قطاریں B، کالم A)؛ A=1 کالم کے دو 1 ایک گروپ بناتے ہیں || د Z = AB̄ + AB K-Map (قطارونه B، ستنې A)؛ د A=1 ستنې دوه 1 یوه ډله جوړوي
+th | B \ A | 0 (Ā) | 1 (A)
+tr | 0 (B̄) | 0 | 1 ▢
+tr | 1 (B) | 0 | 1 ▢
+endtable
+@issue The book draws the K-map twice (with 0/1 labels and with Ā/A, B̄/B labels) and marks the group with a dashed box; here the grouped cells are marked ▢. The second drawing labels both rows "B"; the lower row is B.
+- Note that values of the input variables form the rows and columns. || یاد رہے کہ ان پٹ متغیرات کی قدریں قطاریں اور کالم بناتی ہیں۔ || پام وکړئ چې د input متغیرونو ارزښتونه قطارونه او ستنې جوړوي.
+- There is only one group, covering two adjacent cells. || صرف ایک گروپ ہے جو دو ملحقہ خانوں پر مشتمل ہے۔ || یوازې یوه ډله ده چې دوه څنګ په څنګ خانې پوښي.
+- **A** is column-wise common variable while there is no row-wise common variable. So there is only single variable term **A**. || **A** کالم وار مشترک متغیر ہے جبکہ قطار وار کوئی مشترک متغیر نہیں۔ اس لیے صرف ایک متغیر والا جزو **A** ہے۔ || **A** د ستنې له مخې ګډ متغیر دی خو د قطار له مخې ګډ متغیر نشته. نو یوازې یو متغیره برخه **A** ده.
+- The final simple form would be: || حتمی سادہ صورت یہ ہوگی: || وروستۍ ساده بڼه به دا وي:
+m Z=f(A,B) = A
+### Example 2: || مثال 2: || ۲ بېلګه:
+p Consider the expression Z=f(A,B) = ĀB̄+AB̄+ĀB || اظہار Z=f(A,B) = ĀB̄+AB̄+ĀB دیکھیں || افاده Z=f(A,B) = ĀB̄+AB̄+ĀB وګورئ

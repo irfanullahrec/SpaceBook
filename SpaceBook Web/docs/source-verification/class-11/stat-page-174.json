@@ -1,0 +1,388 @@
+{
+  "chapter": "stat11-index-numbers",
+  "id": "stat11-s174-index-cpi-4",
+  "title": "Example 4.10 (household budget method) · Example 4.11 (question)",
+  "headingUrdu": "مثال 4.10 (گھریلو بجٹ کا طریقہ) · مثال 4.11 (سوال)",
+  "headingPashto": "بېلګه 4.10 (د کورنۍ د بودیجې طریقه) · بېلګه 4.11 (پوښتنه)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 174,
+    "printedPage": "164"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s174-a1",
+      "en": "(ii) CPI for 1940 by household budget method is",
+      "ur": "(ii) 1940 کا CPI گھریلو بجٹ کے طریقے سے ہے",
+      "ps": "(ii) د 1940 CPI د کورنۍ د بودیجې په طریقه دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-10"
+    },
+    {
+      "id": "stat11-s174-a2",
+      "en": "Hence results of both methods are same and indicate that the composite prices in 1940 have been increased by 40.3%.",
+      "ur": "لہٰذا دونوں طریقوں کے نتائج ایک ہی ہیں اور ظاہر کرتے ہیں کہ 1940 میں مرکب قیمتوں میں 40.3 فیصد اضافہ ہوا ہے۔",
+      "ps": "نو د دواړو طریقو پایلې یو شان دي او ښيي چې په 1940 کې مرکب بیې په 40.3 سلنه زیاتې شوې دي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-10"
+    },
+    {
+      "id": "stat11-s174-ex411",
+      "en": "Example: 4.11",
+      "ur": "مثال: 4.11",
+      "ps": "بېلګه: 4.11",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-11"
+    },
+    {
+      "id": "stat11-s174-q411",
+      "en": "Compute consumer price index number for 1958 on the basis of 1948 using (1) Aggregative expenditure method (ii) Household budget method from the following data of eight commodities:",
+      "ur": "1948 کی بنیاد پر 1958 کے لیے صارف قیمتی اشاریہ عدد حساب کریں (1) مجموعی اخراجات کے طریقے (ii) گھریلو بجٹ کے طریقے سے آٹھ اجناس کے درج ذیل اعداد و شمار سے:",
+      "ps": "د 1948 پر بنسټ د 1958 لپاره د مصرف کوونکي د بیې شاخص شمېره محاسبه کړئ د (1) مجموعي لګښت طریقې (ii) د کورنۍ د بودیجې طریقې په واسطه له اتو توکو لاندې معلوماتو څخه:",
+      "role": "question",
+      "exampleId": "stat11-ex-4-11"
+    },
+    {
+      "id": "stat11-s174-sol411",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-4-11"
+    },
+    {
+      "id": "stat11-s174-a3",
+      "en": "Since unit of price is different from the unit of quantities consumed therefore we first convert unit of quantities to unit of price so that both may have same unit. Further calculations required for both methods are given in the same table as follows. Note that one maund has 40 seers.",
+      "ur": "چونکہ قیمت کی اکائی استعمال شدہ مقداروں کی اکائی سے مختلف ہے اس لیے ہم پہلے مقداروں کی اکائی کو قیمت کی اکائی میں تبدیل کرتے ہیں تاکہ دونوں کی اکائی ایک ہی ہو۔ دونوں طریقوں کے لیے مطلوبہ مزید حسابات اسی جدول میں اس طرح دیے گئے ہیں۔ نوٹ کریں کہ ایک من میں 40 سیر ہوتے ہیں۔",
+      "ps": "ځکه چې د بیې واحد د مصرف شویو مقدارونو له واحد څخه توپیر لري نو موږ لومړی د مقدارونو واحد د بیې واحد ته بدلوو ترڅو دواړه یو شان واحد ولري. د دواړو طریقو لپاره اړین نورې محاسبې په همدې جدول کې داسې ورکړل شوې دي. پام وکړئ چې یو من 40 سیره لري.",
+      "role": "solution",
+      "exampleId": "stat11-ex-4-11",
+      "sourceGap": {
+        "note": "The calculation table continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s174-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s174-a2",
+        "stat11-s174-ex411",
+        "stat11-s174-q411"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s174-sol411",
+        "stat11-s174-a3"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s174-e",
+      "latex": "P_{0n}=\\dfrac{\\sum\\left(\\dfrac{p_n}{p_0}\\right)p_0q_0}{\\sum p_0q_0}\\times 100=\\dfrac{231.488}{165}\\times 100=140.3\\%",
+      "accessible": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100 = (231.488/165) × 100 = 140.3%",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100 = (231.488/165) × 100 = 140.3%"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100 = (231.488/165) × 100 = 140.3%"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "P0n = Σ(pn/p0) p0 q0 / Σ p0 q0 × 100 = (231.488/165) × 100 = 140.3%"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-4-10"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 4.11: quantities consumed (1948) and prices",
+      "captionUrdu": "مثال 4.11: استعمال شدہ مقداریں (1948) اور قیمتیں",
+      "captionPashto": "بېلګه 4.11: مصرف شوي مقدارونه (1948) او بیې",
+      "headers": [
+        {
+          "en": "Commodities",
+          "ur": "اجناس",
+          "ps": "توکي"
+        },
+        {
+          "en": "Quantity consumed (1948)",
+          "ur": "استعمال شدہ مقدار (1948)",
+          "ps": "مصرف شوی مقدار (1948)"
+        },
+        {
+          "en": "Unit of price",
+          "ur": "قیمت کی اکائی",
+          "ps": "د بیې واحد"
+        },
+        {
+          "en": "Price: 1948",
+          "ur": "قیمت: 1948",
+          "ps": "بیه: 1948"
+        },
+        {
+          "en": "Price: 1958",
+          "ur": "قیمت: 1958",
+          "ps": "بیه: 1958"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Wheat",
+            "ur": "Wheat",
+            "ps": "Wheat"
+          },
+          {
+            "en": "20 seer",
+            "ur": "20 seer",
+            "ps": "20 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          }
+        ],
+        [
+          {
+            "en": "Rice",
+            "ur": "Rice",
+            "ps": "Rice"
+          },
+          {
+            "en": "8 seer",
+            "ur": "8 seer",
+            "ps": "8 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          }
+        ],
+        [
+          {
+            "en": "Sugar",
+            "ur": "Sugar",
+            "ps": "Sugar"
+          },
+          {
+            "en": "2 seer",
+            "ur": "2 seer",
+            "ps": "2 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          }
+        ],
+        [
+          {
+            "en": "Ghee",
+            "ur": "Ghee",
+            "ps": "Ghee"
+          },
+          {
+            "en": "1 seer",
+            "ur": "1 seer",
+            "ps": "1 seer"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "110",
+            "ur": "110",
+            "ps": "110"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          }
+        ],
+        [
+          {
+            "en": "Milk",
+            "ur": "Milk",
+            "ps": "Milk"
+          },
+          {
+            "en": "25 seer",
+            "ur": "25 seer",
+            "ps": "25 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "0.50",
+            "ur": "0.50",
+            "ps": "0.50"
+          },
+          {
+            "en": "0.75",
+            "ur": "0.75",
+            "ps": "0.75"
+          }
+        ],
+        [
+          {
+            "en": "Vegetables",
+            "ur": "Vegetables",
+            "ps": "Vegetables"
+          },
+          {
+            "en": "16 seer",
+            "ur": "16 seer",
+            "ps": "16 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "0.25",
+            "ur": "0.25",
+            "ps": "0.25"
+          },
+          {
+            "en": "0.50",
+            "ur": "0.50",
+            "ps": "0.50"
+          }
+        ],
+        [
+          {
+            "en": "Mutton",
+            "ur": "Mutton",
+            "ps": "Mutton"
+          },
+          {
+            "en": "5 seer",
+            "ur": "5 seer",
+            "ps": "5 seer"
+          },
+          {
+            "en": "Rs. per seer",
+            "ur": "Rs. per seer",
+            "ps": "Rs. per seer"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "Fuel",
+            "ur": "Fuel",
+            "ps": "Fuel"
+          },
+          {
+            "en": "4 maund",
+            "ur": "4 maund",
+            "ps": "4 maund"
+          },
+          {
+            "en": "Rs. per maund",
+            "ur": "Rs. per maund",
+            "ps": "Rs. per maund"
+          },
+          {
+            "en": "2.5",
+            "ur": "2.5",
+            "ps": "2.5"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-4-11"
+    }
+  ],
+  "sourceNote": "Printed page 164. The two-level header \"Price / 1948 / 1958\" is flattened. Printed text kept: \"using (1) Aggregative expenditure method (ii) …\" in the question. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:12:00.433487+00:00",
+    "scope": "Scan 174 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

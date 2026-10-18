@@ -1,0 +1,63 @@
+{
+  "id": "cls9-chemistry2-page-020",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry2.pdf",
+  "pdfPage": 20,
+  "printedPage": 67,
+  "status": "source-content-partially-corrected",
+  "chapter": "Unit 3: Periodic Table and Periodicity of Properties",
+  "title": "Periodic Table of the Elements",
+  "activeDataTargets": [
+    "chemChapters[2].diagrams[Periodic Table of the Elements]"
+  ],
+  "sourceObservations": "High-resolution four-quadrant review of printed page 67 confirmed its legend categories, family colors, Roman group headings, atomic-number/symbol/weight/name cell order and separate lanthanoid/actinoid rows. The coded chart still lacks source names and weights. A cell-by-cell color preview identified and corrected p-block category overgeneralization.",
+  "comparisonStatus": "All four source pages visually inspected together and compared against the chapter’s active lesson, table and SVG data.",
+  "correctionsApplied": [
+    "Added a responsive coded SVG with 118 element cells, source Roman and modern group numbers, coded family colors, and separated lanthanoid/actinoid rows.",
+    "Removed modern group-number row absent from the print source.",
+    "Recolored periodic table families to match the source key in English, Urdu and Pashto SVGs.",
+    "Recolored each element cell by its source family category; distinguished nonmetals/metalloids from other metals and transition elements.",
+    "Added all 118 source element names, Urdu/Pashto name labels and 114 readable printed atomic weights to all three native SVG variants.",
+    "Added the printed four-field cell key in English/Urdu/Pashto; removed unprinted modern group numbers and transition-group Roman headings from the inline copy.",
+    "Synchronized the lesson and diagram-tab SVGs; matched the source pale-blue alkaline-earth cells, main La/Ac transition cells and white separate lanthanoid row."
+  ],
+  "unresolvedItems": [
+    "Four source weights (Sn, Ra, Th, Pa) remain unreadable or indistinct, and the lead number/symbol characters are damaged. These are visibly marked ?; no values reconstructed from standard reference data.",
+    "Final source-relative chart geometry/type/label-scale and interactive reader/hover review remains open."
+  ],
+  "followUpInspected": true,
+  "fullyCompleted": false,
+  "followUpTranslationStatus": "All 118 element names, diagram title, category labels and four-field key have Urdu/Pashto variants. Chemical symbols and source weight strings retained; full reader semantics/hover QA still open.",
+  "followUpUnresolved": [
+    "Four source weights (Sn, Ra, Th, Pa) remain unreadable or indistinct, and the lead number/symbol characters are damaged. These are visibly marked ?; no values reconstructed from standard reference data.",
+    "Final source-relative chart geometry/type/label-scale and interactive reader/hover review remains open."
+  ],
+  "translationStatus": "All 118 element names, diagram title, category labels and four-field key have Urdu/Pashto variants. Chemical symbols and source weight strings retained; full reader semantics/hover QA still open.",
+  "followUpSemanticTranslationVerified": false,
+  "followUpImageReview": "2026-10-11: original pages14–21 inspected in four-image batches; exercise questions and blank table cells compared to active data.",
+  "contentGap": "Four source weights (Sn, Ra, Th, Pa) remain unreadable or indistinct, and the lead number/symbol characters are damaged. These are visibly marked ?; no values reconstructed from standard reference data.",
+  "sourceCellAudit": {
+    "elementNames": 118,
+    "urduNames": 118,
+    "pashtoNames": 118,
+    "readableWeights": 114,
+    "uncertainWeightCells": [
+      50,
+      88,
+      90,
+      91
+    ],
+    "uncertainNumberSymbolCells": [
+      82
+    ],
+    "sourceRelativeWidth": 0.94,
+    "lessonAndDiagramSynchronized": true
+  },
+  "validationEvidence": [
+    "JavaScript syntax passes.",
+    "Source dataset has 118 named entries and 114 non-null source weights.",
+    "Both active lesson and diagrams tab use identical three-language SVG variants with 118 cells each.",
+    "Three SVGs XML-parse and render successfully; no raster images are embedded."
+  ],
+  "lastUpdated": "2026-10-11T17:09:51.915228+00:00"
+}

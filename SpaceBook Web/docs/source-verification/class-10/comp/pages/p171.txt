@@ -1,0 +1,41 @@
+@printed 159
+@status lesson
+p Local Area Network اور Wide Area Network <dt></dt> ٹیگز کے اندر موجود ہے۔ || Local Area Network and Wide Area Network are inside the <dt></dt> tags. || Local Area Network او Wide Area Network د <dt></dt> ټیګونو دننه دي.
+### شکل نمبر 7.31 اصطلاحات کی تعریف کی فہرست بنانا || Figure 7.31 Making a definition list of terms || ۷.۳۱ شکل د اصطلاحګانو تعریفي لېست جوړول
+m <html>
+m <head>
+m <title>Definition List</title>
+m </head>
+m <body>
+m <dl>
+m <dt><h4>Local Area Network</h4></dt>
+m <dd>Local Area Network (LAN) is the most common type of<br>
+m network. It is a network that spans a limited physical area,<br>
+m usually ranging from a small office to a campus of buildings.<br>
+m A LAN uses high-speed wired or wireless connections<br>
+m between the computers.</dd>
+m <dt><h4>Wide Area Network</h4></dt>
+m <dd>When a network covers a larger area, making it impractical<br>
+m to wire computers together with high-speed communication lines,<br>
+m it becomes a Wide Area Network (WAN). A WAN spans a large<br>
+m physical area, connecting several sites of an organization across<br>
+m cities, countries and continents.</dd>
+m </dl>
+m </body>
+m </html>
+@issue Figure 7.31 is very faint; the tag lines (and the <h4> inside each <dt>) are reconstructed from what can be read. A heading tag inside <dt> is not valid HTML; bold text or CSS should be used instead.
+p اصطلاحات کی وضاحت پیراگراف میں <dd></dd> ٹیگز کے اندر لکھی گئی ہے۔ براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.32 میں دکھایا گیا ہے۔ || The explanations of the terms are written as paragraphs inside the <dd></dd> tags. The browser window will show it as in Figure 7.32. || د اصطلاحګانو تشریح په پاراګراف کې د <dd></dd> ټیګونو دننه لیکل شوې. براوزر کړکۍ به یې لکه په ۷.۳۲ شکل کې وښيي.
+box info | شکل نمبر 7.32 ویب پیج میں تعریفی فہرست کا استعمال || Figure 7.32 A definition list on a web page || ۷.۳۲ شکل په ویب پاڼه کې تعریفي لېست
+p **Local Area Network** || **Local Area Network** || **Local Area Network**
+m     Local Area Network (LAN) is the most common type of
+m     network. It is a network that spans a limited physical area,
+m     usually ranging from a small office to a campus of buildings.
+m     A LAN uses high-speed wired or wireless connections
+m     between the computers.
+p **Wide Area Network** || **Wide Area Network** || **Wide Area Network**
+m     When a network covers a larger area, making it impractical
+m     to wire computers together with high-speed communication lines,
+m     it becomes a Wide Area Network (WAN). A WAN spans a large
+m     physical area, connecting several sites of an organization across
+m     cities, countries and continents.
+endbox

@@ -1,0 +1,25 @@
+@printed 100
+@status lesson
+p سائنٹکس: || Syntax: || ترکیب:
+m do
+m {
+m Body of the loop
+m }
+m while(condition);
+p do: یہ وہ کلیدی لفظ ہے جو لوپ کے آغاز کی طرف اشارہ کرتا ہے۔ || do: the keyword that marks the start of the loop. || do: هغه کلیدي کلمه چې د لوپ پیل ښيي.
+p Condition: یہ ریلیشنل ایکسپریشن ہے۔ اگر شرط کا نتیجہ درست ہو تو باڈی کے اندر اسٹیٹمنٹس پر عمل درآمد کیا جاتا رہے گا۔ اگر شرط کا نتیجہ False ہو جائے، تو باڈی کے اندر اسٹیٹمنٹس صرف ایک بار چلیں گی کیونکہ اس میں شرط آخر میں چیک کی جاتی ہے۔ لوپ کو سیمی کالن کے ساتھ ختم ہونا ضروری ہے۔ || Condition: a relational expression. If the condition is true, the statements in the body keep being executed. If the condition is false, the statements in the body run only once, because in this loop the condition is checked at the end. The loop must end with a semicolon. || Condition: نسبتي عبارت دی. که شرط سم وي، د بدنې بیانونه اجرا کېږي. که شرط False وي، د بدنې بیانونه یوازې یو ځل چلېږي ځکه په دې لوپ کې شرط په پای کې ازمویل کېږي. لوپ باید په سیمي کولن پای ته ورسېږي.
+p Body of the loop: یہ قوسین { } کے درمیان اسٹیٹمنٹ یا اسٹیٹمنٹ کا ایک گروپ ہے جس کو بار بار چلانا ہے۔ || Body of the loop: the statement or group of statements between braces { } that is to be run repeatedly. || Body of the loop: د { } قوسونو ترمنځ بیان یا د بیانونو ډله چې باید بیا بیا وچلېږي.
+svg شکل نمبر 5.3 do-while لوپ کا کام کرنے کا انداز || Figure 5.3 How the do-while loop works || ۵.۳ شکل د do-while لوپ د کار طریقه
+<svg viewBox="0 0 360 300" width="360" role="img" aria-label="Flowchart: Start, then Do Task, then diamond Condition?; True goes left and back up into the line above Do Task; False goes down to End" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF53" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="150" y="6" width="100" height="36" rx="18" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="29">Start</text>
+<path d="M200 42 V82" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/>
+<rect x="150" y="86" width="100" height="36" rx="4" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="109">Do Task</text>
+<path d="M200 122 V146" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/>
+<polygon points="200,150 270,186 200,222 130,186" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="191">Condition?</text>
+<path d="M130 186 H60 V62 H196" fill="none" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/><text x="92" y="178">True</text>
+<path d="M200 222 V250" stroke="#111827" stroke-width="2" marker-end="url(#arF53)"/><text x="230" y="242">False</text>
+<rect x="150" y="254" width="100" height="36" rx="18" fill="#fdf2f8" stroke="#be185d"/><text x="200" y="277">End</text>
+</svg>
+endsvg
+@issue The figure caption under the flowchart is too faint to read in the scan; it is numbered 5.3 as the text on the previous page refers to it.

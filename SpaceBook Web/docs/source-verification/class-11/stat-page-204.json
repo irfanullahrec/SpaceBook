@@ -1,0 +1,665 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s204-exercise5-d",
+  "title": "Exercise-5: Q5.12 – Q5.19",
+  "headingUrdu": "مشق-5: سوال 5.12 – 5.19",
+  "headingPashto": "تمرین-5: پوښتنې 5.12 – 5.19",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 204,
+    "printedPage": "194"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s204-q512",
+      "en": "5.12 Define the term correlation, simple correlation and multiple correlation.",
+      "ur": "5.12 اصطلاح ارتباط، سادہ ارتباط اور متعدد ارتباط کی تعریف کریں۔",
+      "ps": "5.12 د همتړاو، ساده همتړاو او څو‌ګونی همتړاو اصطلاح تعریف کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-12"
+    },
+    {
+      "id": "stat11-s204-q513",
+      "en": "5.13 Explain the following. (i) Correlation (ii) Positive correlation (iii) Negative correlation (iv) Coefficient of correlation.",
+      "ur": "5.13 درج ذیل کی وضاحت کریں۔ (i) ارتباط (ii) مثبت ارتباط (iii) منفی ارتباط (iv) ارتباطی عددی سر۔",
+      "ps": "5.13 لاندې تشریح کړئ. (i) همتړاو (ii) مثبت همتړاو (iii) منفي همتړاو (iv) د همتړاو ضریب.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-13"
+    },
+    {
+      "id": "stat11-s204-q514",
+      "en": "5.14 Find the coefficient of correlation between x and y for the following data.",
+      "ur": "5.14 درج ذیل اعداد و شمار کے لیے x اور y کے درمیان ارتباطی عددی سر معلوم کریں۔",
+      "ps": "5.14 د لاندې معلوماتو لپاره د x او y تر منځ د همتړاو ضریب ومومئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-14"
+    },
+    {
+      "id": "stat11-s204-q515",
+      "en": "5.15 For the following observations (a) sketch a scatter plot and estimate the correlation. (b) compute the Pearson coefficient of correlation.",
+      "ur": "5.15 درج ذیل مشاہدات کے لیے (الف) بکھراؤ پلاٹ بنائیں اور ارتباط کا تخمینہ لگائیں۔ (ب) پیئرسن کا ارتباطی عددی سر حساب کریں۔",
+      "ps": "5.15 د لاندې کتنو لپاره (a) د خپرېدو پلاټ رسم کړئ او همتړاو اټکل کړئ. (b) د Pearson د همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-15"
+    },
+    {
+      "id": "stat11-s204-q516",
+      "en": "5.16 Given the data. (i) Compute the least squares regression line of y on x and of x on y. (ii) Compute coefficient of correlation.",
+      "ur": "5.16 اعداد و شمار دیے گئے ہیں۔ (i) x پر y اور y پر x کی کم از کم مربعات ریگریشن لکیر حساب کریں۔ (ii) ارتباطی عددی سر حساب کریں۔",
+      "ps": "5.16 معلومات ورکړل شوي دي. (i) د x پر y او د y پر x د لږ تر لږه مربعاتو ریګرېشن کرښه محاسبه کړئ. (ii) د همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-16"
+    },
+    {
+      "id": "stat11-s204-q517",
+      "en": "5.17 With the help of following values n = 20, Σx = 40, Σy = 100, Σx² = 180, Σy² = 1424, Σxy = 404 (i) Fit a regression line of y on x. (ii) Find correlation coefficient.",
+      "ur": "5.17 درج ذیل قدروں کی مدد سے n = 20, Σx = 40, Σy = 100, Σx² = 180, Σy² = 1424, Σxy = 404 (i) x پر y کی ریگریشن لکیر فٹ کریں۔ (ii) ارتباطی عددی سر معلوم کریں۔",
+      "ps": "5.17 د لاندې ارزښتونو په مرسته n = 20, Σx = 40, Σy = 100, Σx² = 180, Σy² = 1424, Σxy = 404 (i) د x پر y ریګرېشن کرښه برابره کړئ. (ii) د همتړاو ضریب ومومئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-17"
+    },
+    {
+      "id": "stat11-s204-q518",
+      "en": "5.18 (a) Define rank correlation. When you would use (i) product moment correlation coefficient and (ii) rank correlation coefficient? (b) Calculate spearman’s coefficient of rank correlation for the following data.",
+      "ur": "5.18 (الف) درجاتی ارتباط کی تعریف کریں۔ آپ (i) حاصلِ ضرب معیارِ اثر ارتباطی عددی سر اور (ii) درجاتی ارتباطی عددی سر کب استعمال کریں گے؟ (ب) درج ذیل اعداد و شمار کے لیے سپیئرمین کا درجاتی ارتباطی عددی سر حساب کریں۔",
+      "ps": "5.18 (a) رتبه‌یي همتړاو تعریف کړئ. تاسو به (i) د ضرب-مومنټ همتړاو ضریب او (ii) رتبه‌یي همتړاو ضریب کله وکاروئ؟ (b) د لاندې معلوماتو لپاره د سپیرمن رتبه‌یي همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-18"
+    },
+    {
+      "id": "stat11-s204-q519",
+      "en": "5.19 (a) what do you mean by ranking of tied observations? Explain how you would find the coefficient of rank correlation for tied ranks. (b) Calculate rank correlation coefficient for the following data.",
+      "ur": "5.19 (الف) برابر مشاہدات کی درجہ بندی سے آپ کی کیا مراد ہے؟ وضاحت کریں کہ آپ برابر درجوں کے لیے درجاتی ارتباط کا عددی سر کیسے معلوم کریں گے۔ (ب) درج ذیل اعداد و شمار کے لیے درجاتی ارتباطی عددی سر حساب کریں۔",
+      "ps": "5.19 (a) د برابرو کتنو له رتبه‌بندۍ څخه تاسو څه مطلب لرئ؟ تشریح کړئ چې تاسو به د برابرو رتبو لپاره د رتبه‌یي همتړاو ضریب څنګه ومومئ. (b) د لاندې معلوماتو لپاره رتبه‌یي همتړاو ضریب محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex5-19"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s204-q512",
+        "stat11-s204-q513",
+        "stat11-s204-q514"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s204-q515"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s204-q516"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s204-q517",
+        "stat11-s204-q518"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s204-q519"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q5.14: x and y",
+      "captionUrdu": "سوال 5.14: x اور y",
+      "captionPashto": "پوښتنه 5.14: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q514"
+    },
+    {
+      "caption": "Q5.15: x and y",
+      "captionUrdu": "سوال 5.15: x اور y",
+      "captionPashto": "پوښتنه 5.15: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "0",
+          "ur": "0",
+          "ps": "0"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q515"
+    },
+    {
+      "caption": "Q5.16: x and y",
+      "captionUrdu": "سوال 5.16: x اور y",
+      "captionPashto": "پوښتنه 5.16: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "48",
+          "ur": "48",
+          "ps": "48"
+        },
+        {
+          "en": "40",
+          "ur": "40",
+          "ps": "40"
+        },
+        {
+          "en": "32",
+          "ur": "32",
+          "ps": "32"
+        },
+        {
+          "en": "34",
+          "ur": "34",
+          "ps": "34"
+        },
+        {
+          "en": "30",
+          "ur": "30",
+          "ps": "30"
+        },
+        {
+          "en": "50",
+          "ur": "50",
+          "ps": "50"
+        },
+        {
+          "en": "26",
+          "ur": "26",
+          "ps": "26"
+        },
+        {
+          "en": "50",
+          "ur": "50",
+          "ps": "50"
+        },
+        {
+          "en": "22",
+          "ur": "22",
+          "ps": "22"
+        },
+        {
+          "en": "43",
+          "ur": "43",
+          "ps": "43"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "76",
+            "ur": "76",
+            "ps": "76"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "68",
+            "ur": "68",
+            "ps": "68"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "57",
+            "ur": "57",
+            "ps": "57"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q516"
+    },
+    {
+      "caption": "Q5.18: x and y",
+      "captionUrdu": "سوال 5.18: x اور y",
+      "captionPashto": "پوښتنه 5.18: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "53",
+          "ur": "53",
+          "ps": "53"
+        },
+        {
+          "en": "98",
+          "ur": "98",
+          "ps": "98"
+        },
+        {
+          "en": "95",
+          "ur": "95",
+          "ps": "95"
+        },
+        {
+          "en": "81",
+          "ur": "81",
+          "ps": "81"
+        },
+        {
+          "en": "75",
+          "ur": "75",
+          "ps": "75"
+        },
+        {
+          "en": "71",
+          "ur": "71",
+          "ps": "71"
+        },
+        {
+          "en": "59",
+          "ur": "59",
+          "ps": "59"
+        },
+        {
+          "en": "55",
+          "ur": "55",
+          "ps": "55"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "47",
+            "ur": "47",
+            "ps": "47"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "37",
+            "ur": "37",
+            "ps": "37"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "39",
+            "ur": "39",
+            "ps": "39"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q518"
+    },
+    {
+      "caption": "Q5.19: x and y",
+      "captionUrdu": "سوال 5.19: x اور y",
+      "captionPashto": "پوښتنه 5.19: x او y",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "65",
+          "ur": "65",
+          "ps": "65"
+        },
+        {
+          "en": "63",
+          "ur": "63",
+          "ps": "63"
+        },
+        {
+          "en": "64",
+          "ur": "64",
+          "ps": "64"
+        },
+        {
+          "en": "68",
+          "ur": "68",
+          "ps": "68"
+        },
+        {
+          "en": "62",
+          "ur": "62",
+          "ps": "62"
+        },
+        {
+          "en": "70",
+          "ur": "70",
+          "ps": "70"
+        },
+        {
+          "en": "66",
+          "ur": "66",
+          "ps": "66"
+        },
+        {
+          "en": "68",
+          "ur": "68",
+          "ps": "68"
+        },
+        {
+          "en": "69",
+          "ur": "69",
+          "ps": "69"
+        },
+        {
+          "en": "71",
+          "ur": "71",
+          "ps": "71"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "y:",
+            "ur": "y:",
+            "ps": "y:"
+          },
+          {
+            "en": "66",
+            "ur": "66",
+            "ps": "66"
+          },
+          {
+            "en": "62",
+            "ur": "62",
+            "ps": "62"
+          },
+          {
+            "en": "66",
+            "ur": "66",
+            "ps": "66"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "63",
+            "ur": "63",
+            "ps": "63"
+          },
+          {
+            "en": "71",
+            "ur": "71",
+            "ps": "71"
+          },
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          },
+          {
+            "en": "69",
+            "ur": "69",
+            "ps": "69"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex5-q519"
+    }
+  ],
+  "sourceNote": "Printed page 194. The data of each question are printed as aligned x and y rows and are shown as tables after their questions. Printed spellings kept: \"spearman’s\", \"what do you mean\". Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:24:33.149427+00:00",
+    "scope": "Scan 204 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

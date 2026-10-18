@@ -1,0 +1,15 @@
+@printed 135
+@status lesson
+sol i: b; ii: a; iii: d; iv: c; v: a; vi: d; vii: a; viii: b ## SpaceBook answers from 5.1–5.1.8. || اسپیس بک جوابات (5.1–5.1.8)۔ || د SpaceBook ځوابونه (5.1–5.1.8).
+q 2 | Explain different types of looping structures with examples. || لوپنگ اسٹرکچرز کی مختلف اقسام کی مثالوں سے وضاحت کریں۔ || د لوپ جوړښتونو ډولونه په بېلګو تشریح کړئ.
+q 3 | Differentiate between the *do-while* and *while* loops. Explain with program examples. || *do-while* اور *while* لوپس میں فرق کریں۔ پروگرام کی مثالوں سے وضاحت کریں۔ || د *do-while* او *while* لوپونو توپیر وکړئ. د پروګرام په بېلګو یې تشریح کړئ.
+q 4 | Write a program in C to calculate and print the product of the even numbers from 1 to 100 by using the *while* loop. || *while* لوپ سے 1 سے 100 تک جفت اعداد کا حاصلِ ضرب معلوم کر کے پرنٹ کرنے کا C پروگرام لکھیں۔ || د *while* لوپ په مرسته له ۱ تر ۱۰۰ پورې د جفتو عددونو حاصل ضرب محاسبه او چاپ کړئ.
+q 5 | Write a program to display alphabets from A to Z using for loop. || for لوپ سے A سے Z تک حروفِ تہجی دکھانے کا پروگرام لکھیں۔ || د for لوپ په مرسته له A تر Z توري وښیئ.
+q 6 | Write a program to display the following output using nested for loop. || نیسٹڈ for لوپ سے درج ذیل آؤٹ پٹ دکھانے کا پروگرام لکھیں۔ || د ځالي for لوپ په مرسته لاندې output وښیئ.
+m a
+m a   a
+m a   a   a
+m a   a   a   a
+m a   a   a   a   a
+q 7 | Write a program in C to print the sum of odd numbers from 1 to 50 using the *for* loop. || *for* لوپ سے 1 سے 50 تک طاق اعداد کا مجموعہ پرنٹ کرنے کا C پروگرام لکھیں۔ || د *for* لوپ په مرسته له ۱ تر ۵۰ د طاقو عددونو مجموعه چاپ کړئ.
+sol Q7 model: int n, sum=0; for(n=1;n<=50;n+=2) sum+=n; printf("%d",sum); → 625 ## Q4: use double p=1; n=2; while(n<=100){p=p*n; n+=2;} (the product is far too large for int). Q5: char c; for(c='A';c<='Z';c++) printf("%c ",c); Q6: for(i=1;i<=5;i++){ for(j=1;j<=i;j++) printf("a\t"); printf("\n"); } || سوال 4: double p=1; n=2; while(n<=100){p=p*n; n+=2;} (حاصلِ ضرب int کے لیے بہت بڑا ہے)۔ سوال 5: char c; for(c='A';c<='Z';c++) printf("%c ",c); سوال 6: for(i=1;i<=5;i++){ for(j=1;j<=i;j++) printf("a\t"); printf("\n"); } || ۴ پوښتنه: double p=1; n=2; while(n<=100){p=p*n; n+=2;} (حاصل ضرب د int لپاره ډېر لوی دی). ۵ پوښتنه: char c; for(c='A';c<='Z';c++) printf("%c ",c); ۶ پوښتنه: for(i=1;i<=5;i++){ for(j=1;j<=i;j++) printf("a\t"); printf("\n"); }

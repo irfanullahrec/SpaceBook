@@ -1,0 +1,329 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s134-moments-13",
+  "title": "Sheppard's correction (formulas) · 3.6.3 Moment ratios · Example 3.25 (start)",
+  "headingUrdu": "شیپرڈ کی تصحیح (فارمولے) · 3.6.3 معیارِ اثر کے تناسب · مثال 3.25 (آغاز)",
+  "headingPashto": "د شیپرډ سمون (فورمولونه) · 3.6.3 د مومنټ نسبتونه · بېلګه 3.25 (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 134,
+    "printedPage": "126"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s134-c1",
+      "en": "third mean moments need no correction.",
+      "ur": "تیسرا اوسطی معیارِ اثر کو تصحیح کی ضرورت نہیں۔",
+      "ps": "دریم اوسط مومنټونه سمون ته اړتیا نه لري.",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"Note that first and\")."
+      }
+    },
+    {
+      "id": "stat11-s134-c2",
+      "en": "All moments calculated in previous examples are uncorrected. Put them in these formulas to get corrected moments and variance.",
+      "ur": "پچھلی مثالوں میں حساب کیے گئے تمام معیارِ اثر غیر تصحیح شدہ ہیں۔ تصحیح شدہ معیارِ اثر اور تغیر حاصل کرنے کے لیے انہیں ان فارمولوں میں رکھیں۔",
+      "ps": "په تېرو بېلګو کې محاسبه شوي ټول مومنټونه ناسمون شوي دي. سمون شوي مومنټونه او وریانس ترلاسه کولو لپاره دا په دې فورمولونو کې کېږدئ."
+    },
+    {
+      "id": "stat11-s134-h363",
+      "en": "3.6.3 Moment ratios",
+      "ur": "3.6.3 معیارِ اثر کے تناسب",
+      "ps": "3.6.3 د مومنټ نسبتونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s134-t363",
+      "en": "Name of the ratios tells that both numerators and denominators will have moments: The commonly used moment ratios given by Karl Pearson are:",
+      "ur": "تناسب کا نام بتاتا ہے کہ شمار کنندہ اور نسب نما دونوں میں معیارِ اثر ہوں گے۔ کارل پیئرسن کے دیے ہوئے عام طور پر استعمال ہونے والے معیارِ اثر کے تناسب یہ ہیں:",
+      "ps": "د نسبتونو نوم ښیي چې شمېرونکی او مخرج دواړه به مومنټونه ولري: د Karl Pearson لخوا ورکړل شوي عموماً کارېدونکي د مومنټ نسبتونه دا دي:"
+    },
+    {
+      "id": "stat11-s134-t364",
+      "en": "where β is Greek alphabet pronounced as beta.",
+      "ur": "جہاں β یونانی حرف ہے جسے بیٹا پڑھا جاتا ہے۔",
+      "ps": "چېرته چې β یوناني توری دی چې بیټا تلفظ کېږي."
+    },
+    {
+      "id": "stat11-s134-t365",
+      "en": "Due to some mathematical flaws, Karl Pearson redefined moment ratios which are independent of origin and scale of measurement as follows;",
+      "ur": "کچھ ریاضیاتی نقائص کی وجہ سے کارل پیئرسن نے معیارِ اثر کے تناسب کو دوبارہ بیان کیا جو مبدا اور پیمائش کے پیمانے سے آزاد ہیں، جو یوں ہیں؛",
+      "ps": "د ځینو ریاضیاتي نیمګړتیاوو له امله Karl Pearson د مومنټ نسبتونه بیا تعریف کړل چې د اصل او اندازې د پیمانې څخه خپلواک دي، په دې توګه؛"
+    },
+    {
+      "id": "stat11-s134-t366",
+      "en": "where γ is Greek alphabet pronounced as gamma.",
+      "ur": "جہاں γ یونانی حرف ہے جسے گیما پڑھا جاتا ہے۔",
+      "ps": "چېرته چې γ یوناني توری دی چې ګاما تلفظ کېږي."
+    },
+    {
+      "id": "stat11-s134-t367",
+      "en": "These are standard measures and give important information about the shape of the distribution, that is γ1 tells about skewness and γ2 about kurtosis.",
+      "ur": "یہ معیاری پیمانے ہیں اور تقسیم کی شکل کے بارے میں اہم معلومات دیتے ہیں، یعنی γ1 کجی کے بارے میں اور γ2 نوکیلے پن کے بارے میں بتاتا ہے۔",
+      "ps": "دا معیاري اندازې دي او د ویش د شکل په اړه مهمې معلومات ورکوي، یعنې γ1 د کوړوالي په اړه او γ2 د تېزوالي په اړه وايي."
+    },
+    {
+      "id": "stat11-s134-ex25",
+      "en": "Example 3.25",
+      "ur": "مثال 3.25",
+      "ps": "بېلګه 3.25",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-25"
+    },
+    {
+      "id": "stat11-s134-q25",
+      "en": "The first four moments about the P.M = 35, h = 3 are 0.45, 8.73, 12.15 and 204.93.",
+      "ur": "عارضی اوسط P.M = 35، h = 3 کے گرد پہلے چار معیارِ اثر 0.45, 8.73, 12.15 اور 204.93 ہیں۔",
+      "ps": "د لنډمهاله اوسط P.M = 35، h = 3 شاوخوا لومړي څلور مومنټونه 0.45, 8.73, 12.15 او 204.93 دي.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-25",
+      "sourceGap": {
+        "note": "The question of Example 3.25 continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s134-c1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s134-c2",
+        "stat11-s134-h363",
+        "stat11-s134-t363"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s134-t364"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s134-t365"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s134-t366",
+        "stat11-s134-t367",
+        "stat11-s134-ex25",
+        "stat11-s134-q25"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "moment ratios": {
+      "ur": "معیارِ اثر کے تناسب",
+      "ps": "د مومنټ نسبتونه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s134-s1",
+      "latex": "m_2(\\text{corrected})=m_2(\\text{uncorrected})-\\dfrac{h^2}{12}",
+      "accessible": "m2(corrected) = m2(uncorrected) − h²/12",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2(corrected) = m2(uncorrected) − h²/12"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s134-s2",
+      "latex": "m_4(\\text{corrected})=m_4(\\text{uncorrected})-\\dfrac{h^2}{2}\\,m_2(\\text{uncorrected})+\\dfrac{7}{240}h^4",
+      "accessible": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4(corrected) = m4(uncorrected) − (h²/2)m2(uncorrected) + (7/240)h⁴"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s134-p1",
+      "latex": "\\beta_1=\\dfrac{\\mu_3^2}{\\mu_2^3},\\qquad \\beta_2=\\dfrac{\\mu_4}{\\mu_2^2}\\qquad\\text{(Population case)}",
+      "accessible": "β1 = μ3²/μ2³,  β2 = μ4/μ2²   (Population case)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "β1 = μ3²/μ2³,  β2 = μ4/μ2²   (Population case)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "β1 = μ3²/μ2³,  β2 = μ4/μ2²   (Population case)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "β1 = μ3²/μ2³,  β2 = μ4/μ2²   (Population case)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s134-p2",
+      "latex": "b_1=\\dfrac{m_3^2}{m_2^3},\\qquad b_2=\\dfrac{m_4}{m_2^2}\\qquad\\text{(Sample case)}",
+      "accessible": "b1 = m3²/m2³,  b2 = m4/m2²   (Sample case)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b1 = m3²/m2³,  b2 = m4/m2²   (Sample case)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b1 = m3²/m2³,  b2 = m4/m2²   (Sample case)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b1 = m3²/m2³,  b2 = m4/m2²   (Sample case)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s134-g1",
+      "latex": "\\gamma_1=\\sqrt{b_1}=\\sqrt{\\dfrac{m_3^2}{m_2^3}}=\\dfrac{m_3}{m_2^{3/2}}=\\dfrac{m_3}{S^3},\\qquad -\\infty<\\gamma_1<\\infty",
+      "accessible": "γ1 = √b1 = √(m3²/m2³) = m3/m2^(3/2) = m3/S³,   −∞ < γ1 < ∞",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "γ1 = √b1 = √(m3²/m2³) = m3/m2^(3/2) = m3/S³,   −∞ < γ1 < ∞"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "γ1 = √b1 = √(m3²/m2³) = m3/m2^(3/2) = m3/S³,   −∞ < γ1 < ∞"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "γ1 = √b1 = √(m3²/m2³) = m3/m2^(3/2) = m3/S³,   −∞ < γ1 < ∞"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s134-g2",
+      "latex": "\\gamma_2=b_2-3=\\dfrac{m_4}{m_2^2}-3=\\dfrac{m_4}{S^4}-3,\\qquad -\\infty<\\gamma_2<\\infty",
+      "accessible": "γ2 = b2 − 3 = m4/m2² − 3 = m4/S⁴ − 3,   −∞ < γ2 < ∞",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "γ2 = b2 − 3 = m4/m2² − 3 = m4/S⁴ − 3,   −∞ < γ2 < ∞"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "γ2 = b2 − 3 = m4/m2² − 3 = m4/S⁴ − 3,   −∞ < γ2 < ∞"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "γ2 = b2 − 3 = m4/m2² − 3 = m4/S⁴ − 3,   −∞ < γ2 < ∞"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 126. The first line completes the sentence from the previous page. The two pairs of moment-ratio formulas are printed with a vertical bracket and the labels \"(Population case)\" and \"(Sample case)\" on the right. Printed spellings kept: \"Sheppard\" in the section heading. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:56:29.703669+00:00",
+    "scope": "Scan 134 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

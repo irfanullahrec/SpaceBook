@@ -1,0 +1,19 @@
+@printed 213
+@status lesson
+p The HTML document in Figure 7.50 demonstrates how to create a graphical hyperlink. || شکل 7.50 کی HTML دستاویز گرافیکل ہائپر لنک بنانا دکھاتی ہے۔ || د ۷.۵۰ شکل HTML سند د ګرافیکي hyperlink جوړول ښيي.
+m <html>
+m <head>
+m <title>Inserting Image Anchor</title>
+m </head>
+m <body>
+m <a href="http://www.fbise.edu.pk"><img src="image.jpg"></a>
+m <br><br>
+m <font size=3>Click on the image to visit Federal Board Web site</font>
+m </body>
+m </html>
+p (Figure 7.50: Using graphical hyperlink in HTML document — "image anchor.html" in Notepad++.) || (شکل 7.50: HTML دستاویز میں گرافیکل ہائپر لنک کا استعمال۔) || (۷.۵۰ شکل: په HTML سند کې د ګرافیکي hyperlink کارونه.)
+p The browser window will display it as shown in Figure 7.51. || براؤزر ونڈو اسے شکل 7.51 کی طرح دکھائے گی۔ || براوزر به یې د ۷.۵۱ شکل په څېر ښيي.
+p (Figure 7.51: Graphical link in web page — a photograph of a building with the line "Click on the image to visit Federal Board website".) || (شکل 7.51: ویب پیج میں گرافیکل لنک — عمارت کی تصویر اور سطر "Click on the image to visit Federal Board website"۔) || (۷.۵۱ شکل: په وېب پاڼه کې ګرافیکي لینک — د ودانۍ انځور او "Click on the image to visit Federal Board website" کرښه.)
+@sec 7-7 | 7.7 Creating Tables || 7.7 جدول بنانا || ۷.۷ جدولونه جوړول
+## 7.7 CREATING TABLES || 7.7 جدول بنانا || ۷.۷ جدولونه جوړول
+p Tables are very often used in web pages to present information in an organized manner which is easy to read and understand by the user. A table is made up of rows and columns. A table allows you to quickly and easily look up values that indicate some kind of connection between different types of data, for example, person names and their ages, or a day of the week, or the timetable for classes. || ویب پیجز میں جدول اکثر معلومات کو منظم انداز میں پیش کرنے کے لیے استعمال ہوتے ہیں جسے صارف آسانی سے پڑھ اور سمجھ سکے۔ جدول قطاروں اور کالموں سے بنتا ہے۔ جدول سے آپ جلدی اور آسانی سے ایسی قدریں دیکھ سکتے ہیں جو مختلف قسم کے ڈیٹا کے درمیان تعلق ظاہر کرتی ہیں، مثلاً لوگوں کے نام اور ان کی عمریں، ہفتے کا دن یا کلاسوں کا ٹائم ٹیبل۔ || جدولونه په وېب پاڼو کې د معلوماتو د منظم وړاندې کولو لپاره ډېر کارېږي چې کاروونکی یې په اسانۍ لوستلی او پوهېدلی شي. جدول له قطارونو او ستنو جوړ دی. جدول تاسو ته اجازه درکوي په چټکۍ داسې ارزښتونه وګورئ چې د بېلابېل ډېټا ترمنځ اړیکه ښيي، لکه د خلکو نومونه او عمرونه، د اونۍ ورځ یا د ټولګیو مهال وېش.

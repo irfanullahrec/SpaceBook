@@ -1,0 +1,23 @@
+@printed 152
+@status lesson
+p … فارمیٹنگ ٹیگ ذیل میں بیان کیے گئے ہیں۔ || … formatting tags are described below. || … فارمېټ ټیګونه لاندې بیان شوي.
+### Bold <b></b> || Bold <b></b> || Bold <b></b>
+p ٹیگز کے درمیان موجود ٹیکسٹ bold ہو گا اور اس کے آس پاس موجود ٹیکسٹ کے مقابلہ میں نمایاں ہو گا، جیسے ورڈ پروسیسر میں ہوتا ہے۔ مثال کے طور پر: <b>Chapter 7 Input Devices</b> نتیجہ: **Chapter 7 Input Devices** || The text between the tags becomes bold and stands out from the text around it, as in a word processor. For example: <b>Chapter 7 Input Devices</b> Result: **Chapter 7 Input Devices** || د ټیګونو ترمنځ متن bold کېږي او د شاوخوا متن په پرتله څرګند ښکاري، لکه په ورډ پروسیسر کې. د بېلګې په توګه: <b>Chapter 7 Input Devices</b> پایله: **Chapter 7 Input Devices**
+### Underline <u></u> || Underline <u></u> || Underline <u></u>
+p یہ ٹیگ کے اندر موجود ٹیکسٹ کو اجاگر کریں گے۔ یہ نوٹ کرنا ضروری ہے کہ HTML لنکس کے نیچے پہلے ہی لائن ہوتی ہے، اضافی ٹیگ کی ضرورت نہیں ہے۔ مثال کے طور پر: <u>Please Note:</u> نتیجہ: Please Note (خط کشیدہ) || These tags underline the text inside them. Note that HTML links are already underlined, so no extra tag is needed. For example: <u>Please Note:</u> Result: Please Note (underlined) || دا ټیګونه دننه متن لاندې کرښه کوي. پام وکړئ چې HTML لینکونه دمخه لاندې کرښه لري، اضافي ټیګ ته اړتیا نشته. د بېلګې په توګه: <u>Please Note:</u> پایله: Please Note (لاندې کرښه شوی)
+### Italic <i></i> || Italic <i></i> || Italic <i></i>
+p یہ ٹیگ ٹیکسٹ کو ترچھا بنانے کیلئے استعمال کیا جاتا ہے۔ مثال کے طور پر: <i>Pakistan Cricket Team</i> نتیجہ: *Pakistan Cricket Team* || This tag is used to make text italic. For example: <i>Pakistan Cricket Team</i> Result: *Pakistan Cricket Team* || دا ټیګ متن کږ (italic) کولو لپاره کارېږي. د بېلګې په توګه: <i>Pakistan Cricket Team</i> پایله: *Pakistan Cricket Team*
+### شکل نمبر 7.21 HTML ڈاکومنٹ میں بولڈ، اٹالک اور انڈر لائن کا استعمال || Figure 7.21 Using bold, italic and underline in an HTML document || ۷.۲۱ شکل په HTML سند کې د bold، italic او underline کارونه
+m <html>
+m <head>
+m <title>Title of Page</title>
+m </head>
+m <body>
+m <b>This text is bold.</b><br>
+m <u>This text is underlined.</u><br>
+m <i>This text is italic.</i><br>
+m <b><i>This text is bold and italic.</i></b><br>
+m <b><i><u>This text is bold, italic and underlined.</u></i></b><br>
+m </body>
+m </html>
+@issue The Urdu says the <u> tag "highlights" (اجاگر) the text; it underlines it. The example result "Please Note" drops the colon of "Please Note:".

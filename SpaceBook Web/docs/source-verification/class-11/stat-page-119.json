@@ -1,0 +1,517 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s119-cv-1",
+  "title": "3.5.8 (end) · Example 3.14: coefficient of variation, ungrouped data",
+  "headingUrdu": "3.5.8 (اختتام) · مثال 3.14: تغیر کا عددی سر، غیر گروہی اعداد و شمار",
+  "headingPashto": "3.5.8 (پای) · بېلګه 3.14: د تغیر ضریب، نه‌ګروپ شوي معلومات",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 119,
+    "printedPage": "111"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s119-c1",
+      "en": "better or consistent.",
+      "ur": "بہتر یا مستقل مزاج ہے۔",
+      "ps": "ښه یا یو شان دی.",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"The smaller value of C.V means less variability which shows that performance is\")."
+      }
+    },
+    {
+      "id": "stat11-s119-i1",
+      "en": "(i) Computation of coefficient of variation in case of ungrouped data",
+      "ur": "(i) غیر گروہی اعداد و شمار کی صورت میں تغیر کے عددی سر کا حساب",
+      "ps": "(i) د نه‌ګروپ شویو معلوماتو په حالت کې د تغیر د ضریب محاسبه"
+    },
+    {
+      "id": "stat11-s119-ex14",
+      "en": "Example: 3.14",
+      "ur": "مثال: 3.14",
+      "ps": "بېلګه: 3.14",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s119-q14",
+      "en": "Using the coefficient of variation, determine that which student performance is more consistent by considering their individual scores given below.",
+      "ur": "تغیر کے عددی سر کو استعمال کرتے ہوئے طے کریں کہ نیچے دیے گئے ان کے انفرادی اسکور کو مدنظر رکھتے ہوئے کس طالب علم کی کارکردگی زیادہ مستقل ہے۔",
+      "ps": "د تغیر د ضریب په کارولو سره وټاکئ چې د لاندې ورکړل شویو انفرادي نمرو په پام کې نیولو سره د کوم زده کوونکي فعالیت ډېر یو شان دی.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s119-sol14",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-14"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s119-c1",
+        "stat11-s119-i1",
+        "stat11-s119-ex14",
+        "stat11-s119-q14"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s119-sol14"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s119-a",
+      "latex": "\\bar{x}=\\dfrac{\\sum x_A}{n}=\\dfrac{610}{10}=61\\qquad\\bar{x}_B=\\dfrac{\\sum x_B}{n}=\\dfrac{716}{10}=71.6",
+      "accessible": "x̄ = Σx_A/n = 610/10 = 61    x̄_B = Σx_B/n = 716/10 = 71.6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx_A/n = 610/10 = 61    x̄_B = Σx_B/n = 716/10 = 71.6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx_A/n = 610/10 = 61    x̄_B = Σx_B/n = 716/10 = 71.6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx_A/n = 610/10 = 61    x̄_B = Σx_B/n = 716/10 = 71.6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.14: scores of students A and B",
+      "captionUrdu": "مثال 3.14: طلبہ A اور B کے اسکور",
+      "captionPashto": "بېلګه 3.14: د A او B زده کوونکو نمرې",
+      "headers": [
+        {
+          "en": "x_A:",
+          "ur": "x_A:",
+          "ps": "x_A:"
+        },
+        {
+          "en": "58",
+          "ur": "58",
+          "ps": "58"
+        },
+        {
+          "en": "59",
+          "ur": "59",
+          "ps": "59"
+        },
+        {
+          "en": "60",
+          "ur": "60",
+          "ps": "60"
+        },
+        {
+          "en": "54",
+          "ur": "54",
+          "ps": "54"
+        },
+        {
+          "en": "65",
+          "ur": "65",
+          "ps": "65"
+        },
+        {
+          "en": "66",
+          "ur": "66",
+          "ps": "66"
+        },
+        {
+          "en": "52",
+          "ur": "52",
+          "ps": "52"
+        },
+        {
+          "en": "75",
+          "ur": "75",
+          "ps": "75"
+        },
+        {
+          "en": "69",
+          "ur": "69",
+          "ps": "69"
+        },
+        {
+          "en": "52",
+          "ur": "52",
+          "ps": "52"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "x_B:",
+            "ur": "x_B:",
+            "ps": "x_B:"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "86",
+            "ur": "86",
+            "ps": "86"
+          },
+          {
+            "en": "89",
+            "ur": "89",
+            "ps": "89"
+          },
+          {
+            "en": "78",
+            "ur": "78",
+            "ps": "78"
+          },
+          {
+            "en": "71",
+            "ur": "71",
+            "ps": "71"
+          },
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "84",
+            "ur": "84",
+            "ps": "84"
+          },
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          },
+          {
+            "en": "66",
+            "ur": "66",
+            "ps": "66"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "caption": "Example 3.14 solution table",
+      "captionUrdu": "مثال 3.14 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.14 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x_A²",
+          "ur": "x_A²",
+          "ps": "x_A²"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x_B²",
+          "ur": "x_B²",
+          "ps": "x_B²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "58",
+            "ur": "58",
+            "ps": "58"
+          },
+          {
+            "en": "3364",
+            "ur": "3364",
+            "ps": "3364"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "3136",
+            "ur": "3136",
+            "ps": "3136"
+          }
+        ],
+        [
+          {
+            "en": "59",
+            "ur": "59",
+            "ps": "59"
+          },
+          {
+            "en": "3481",
+            "ur": "3481",
+            "ps": "3481"
+          },
+          {
+            "en": "86",
+            "ur": "86",
+            "ps": "86"
+          },
+          {
+            "en": "7396",
+            "ur": "7396",
+            "ps": "7396"
+          }
+        ],
+        [
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "3600",
+            "ur": "3600",
+            "ps": "3600"
+          },
+          {
+            "en": "89",
+            "ur": "89",
+            "ps": "89"
+          },
+          {
+            "en": "7921",
+            "ur": "7921",
+            "ps": "7921"
+          }
+        ],
+        [
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          },
+          {
+            "en": "2916",
+            "ur": "2916",
+            "ps": "2916"
+          },
+          {
+            "en": "78",
+            "ur": "78",
+            "ps": "78"
+          },
+          {
+            "en": "6084",
+            "ur": "6084",
+            "ps": "6084"
+          }
+        ],
+        [
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          },
+          {
+            "en": "4225",
+            "ur": "4225",
+            "ps": "4225"
+          },
+          {
+            "en": "71",
+            "ur": "71",
+            "ps": "71"
+          },
+          {
+            "en": "5041",
+            "ur": "5041",
+            "ps": "5041"
+          }
+        ],
+        [
+          {
+            "en": "66",
+            "ur": "66",
+            "ps": "66"
+          },
+          {
+            "en": "4356",
+            "ur": "4356",
+            "ps": "4356"
+          },
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "5329",
+            "ur": "5329",
+            "ps": "5329"
+          }
+        ],
+        [
+          {
+            "en": "52",
+            "ur": "52",
+            "ps": "52"
+          },
+          {
+            "en": "2704",
+            "ur": "2704",
+            "ps": "2704"
+          },
+          {
+            "en": "84",
+            "ur": "84",
+            "ps": "84"
+          },
+          {
+            "en": "7056",
+            "ur": "7056",
+            "ps": "7056"
+          }
+        ],
+        [
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "5625",
+            "ur": "5625",
+            "ps": "5625"
+          },
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          },
+          {
+            "en": "4225",
+            "ur": "4225",
+            "ps": "4225"
+          }
+        ],
+        [
+          {
+            "en": "69",
+            "ur": "69",
+            "ps": "69"
+          },
+          {
+            "en": "4761",
+            "ur": "4761",
+            "ps": "4761"
+          },
+          {
+            "en": "66",
+            "ur": "66",
+            "ps": "66"
+          },
+          {
+            "en": "4356",
+            "ur": "4356",
+            "ps": "4356"
+          }
+        ],
+        [
+          {
+            "en": "52",
+            "ur": "52",
+            "ps": "52"
+          },
+          {
+            "en": "2704",
+            "ur": "2704",
+            "ps": "2704"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          },
+          {
+            "en": "2304",
+            "ur": "2304",
+            "ps": "2304"
+          }
+        ],
+        [
+          {
+            "en": "Total 610",
+            "ur": "میزان 610",
+            "ps": "ټولیز 610"
+          },
+          {
+            "en": "37736",
+            "ur": "37736",
+            "ps": "37736"
+          },
+          {
+            "en": "716",
+            "ur": "716",
+            "ps": "716"
+          },
+          {
+            "en": "52848",
+            "ur": "52848",
+            "ps": "52848"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-14"
+    }
+  ],
+  "sourceNote": "Printed page 111. The question data are printed as two aligned rows (xA and xB). In the solution table the first total \"610\" is printed on the same line as the word Total. The two means are printed side by side and are kept as one equation. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:52:38.925701+00:00",
+    "scope": "Scan 119 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

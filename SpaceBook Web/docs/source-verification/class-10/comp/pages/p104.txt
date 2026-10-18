@@ -1,0 +1,25 @@
+@printed 92
+@status lesson
+@tab doing
+m     printf("condition is true \n");
+m     else
+m     {
+m     printf("a is equal to b \n");
+m     printf("a is not greater than c \n");
+m     }
+m }
+q 6 | درج ذیل پروگرام میں موجود غلطیاں معلوم کریں۔ || Find the errors in the following program. || په لاندې پروګرام کې تېروتنې پیدا کړئ.
+m #include<stdio.h>
+m void main( )
+m {
+m     int a;
+m     print("Enter any number = ");
+m     scanf("%f",&a);
+m     if(a>10)
+m     printf("value is greater than 10");
+m     else if
+m     printf("value is less than 10 ")
+m }
+@issue Q5 and Q6 are printed with typographic quotes (“ ” and a stray ’ in scanf("%f’…)); straight quotes are shown here. In Q6 the mismatched quote in scanf is itself one of the errors to be found.
+sol Q5: چونکہ a==b درست ہے لیکن a>c (10>13) غلط ہے، اس لیے && کا نتیجہ False ہے اور else بلاک چلے گا: a is equal to b / a is not greater than c (دو لائنوں میں)۔ Q6: (1) print کی جگہ printf ہونا چاہیے؛ (2) a انٹیجر ہے اس لیے scanf میں %f کی جگہ %d ہونا چاہیے؛ (3) "else if" کے بعد کوئی شرط نہیں — صرف else لکھیں یا else if(a<10) لکھیں؛ (4) آخری printf کے بعد سیمی کالن ; غائب ہے؛ (5) اگر a = 10 ہو تو کوئی درست پیغام نہیں (اختیاری بہتری)۔ ## نمونے کا جواب || Q5: Since a==b is true but a>c (10>13) is false, the && result is false and the else block runs, printing "a is equal to b" and "a is not greater than c" on two lines. Q6: (1) print should be printf; (2) a is an int, so scanf needs %d, not %f; (3) "else if" has no condition — write just else, or else if(a<10); (4) the semicolon ; is missing after the last printf; (5) when a = 10 no correct message is given (optional improvement). || Q5: څرنګه چې a==b سم دی خو a>c (10>13) ناسم دی، د && پایله False ده او else بلاک چلېږي: "a is equal to b" او "a is not greater than c" په دوو کرښو. Q6: (۱) د print پر ځای printf وي؛ (۲) a بشپړ عدد دی، نو په scanf کې د %f پر ځای %d وي؛ (۳) له "else if" وروسته شرط نشته — یوازې else یا else if(a<10) ولیکئ؛ (۴) له وروستي printf وروسته سیمي کولن ; نشته؛ (۵) که a = 10 وي سم پیغام نه ورکول کېږي (اختیاري ښه والی).
+sol Q2 (نمونہ): #include<stdio.h> / void main() { int x, y, z; printf("Enter three numbers: "); scanf("%d %d %d",&x,&y,&z); if(x>=y && x>=z) printf("Largest = %d",x); else if(y>=z) printf("Largest = %d",y); else printf("Largest = %d",z); } — Q3 (نمونہ): char ch; scanf("%c",&ch); if(ch=='a' {{OR}} ch=='e' {{OR}} ch=='i' {{OR}} ch=='o' {{OR}} ch=='u') printf("It is a vowel"); else printf("It is consonant"); — Q4 (نمونہ): switch(ch) { case 'a': case 'e': case 'i': case 'o': case 'u': printf("It is a vowel"); break; default: printf("It is consonant"); } ## نمونے کا جواب || Q2 (model): #include<stdio.h> / void main() { int x, y, z; printf("Enter three numbers: "); scanf("%d %d %d",&x,&y,&z); if(x>=y && x>=z) printf("Largest = %d",x); else if(y>=z) printf("Largest = %d",y); else printf("Largest = %d",z); } — Q3 (model): char ch; scanf("%c",&ch); if(ch=='a' {{OR}} ch=='e' {{OR}} ch=='i' {{OR}} ch=='o' {{OR}} ch=='u') printf("It is a vowel"); else printf("It is consonant"); — Q4 (model): switch(ch) { case 'a': case 'e': case 'i': case 'o': case 'u': printf("It is a vowel"); break; default: printf("It is consonant"); } || Q2 (بېلګه): #include<stdio.h> / void main() { int x, y, z; printf("Enter three numbers: "); scanf("%d %d %d",&x,&y,&z); if(x>=y && x>=z) printf("Largest = %d",x); else if(y>=z) printf("Largest = %d",y); else printf("Largest = %d",z); } — Q3 (بېلګه): char ch; scanf("%c",&ch); if(ch=='a' {{OR}} ch=='e' {{OR}} ch=='i' {{OR}} ch=='o' {{OR}} ch=='u') printf("It is a vowel"); else printf("It is consonant"); — Q4 (بېلګه): switch(ch) { case 'a': case 'e': case 'i': case 'o': case 'u': printf("It is a vowel"); break; default: printf("It is consonant"); }

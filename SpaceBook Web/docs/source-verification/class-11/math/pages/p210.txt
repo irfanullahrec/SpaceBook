@@ -1,0 +1,31 @@
+@printed 210
+@sec 7.1.2 | General (extended) form of principle of Mathematical Induction || ریاضیاتی استقرا کے اصول کی عمومی (توسیعی) صورت || د ریاضیاتي استقرا د اصل عمومي (غځول شوې) بڼه
+@issue The last line of Step 3 of Example 5 prints the exponent difference x^{2(k+1)-1} − y^{2(k+1)-1}; the sum x^{2(k+1)-1} + y^{2(k+1)-1} is what the induction proves. Preserved as printed and clarified separately.
+@deco Unit-running header, folio and decorative footer band excluded
+p Therefore the above statement is true for $n=k+1$ and hence by the principle of induction it is true for all positive integer $n$. || لہٰذا مذکورہ بیان $n=k+1$ کے لیے درست ہے اور اسی لیے اصولِ استقرا سے یہ تمام مثبت صحیح اعداد $n$ کے لیے درست ہے۔ || نو پورتنی بیان د $n=k+1$ لپاره سم دی او له دې امله د استقرا د اصل له مخې د ټولو مثبتو صحیحو عددونو $n$ لپاره سم دی.
+endexample
+example 5 | Prove that if $n$ is a positive odd integer then $x+y$ is a factor of $x^n+y^n$. || ثابت کریں کہ اگر $n$ مثبت طاق صحیح عدد ہو تو $x+y$، $x^n+y^n$ کا جز ضربی ہے۔ || ثابته کړئ چې که $n$ مثبت تاق صحیح عدد وي نو $x+y$ د $x^n+y^n$ فکتور دی.
+p **Solution:** Since $n$ is given to be a positive odd integer, so we can write $n=2m-1$ where $m$ is a positive integer. Therefore $x^n+y^n=x^{2m-1}+y^{2m-1}$. To prove the above statement, we will use the method of induction on $m$. || **حل:** چونکہ $n$ مثبت طاق صحیح عدد دیا گیا ہے اس لیے ہم $n=2m-1$ لکھ سکتے ہیں جہاں $m$ مثبت صحیح عدد ہے۔ لہٰذا $x^n+y^n=x^{2m-1}+y^{2m-1}$۔ مذکورہ بیان ثابت کرنے کے لیے ہم $m$ پر استقرا کا طریقہ استعمال کریں گے۔ || **حل:** ځکه چې $n$ مثبت تاق صحیح عدد ورکړل شوی، نو موږ $n=2m-1$ لیکلای شو چېرته چې $m$ مثبت صحیح عدد دی. له دې امله $x^n+y^n=x^{2m-1}+y^{2m-1}$. د پورتني بیان د ثبوت لپاره موږ پر $m$ د استقرا طریقه کاروو.
+p **Step 1.** Let $m=1$, then $x^{2m-1}+y^{2m-1}=x^{2\cdot1-1}+y^{2\cdot1-1}=x+y$ and since $x+y$ divides $x+y$, so $x+y$ is a factor of $x+y$. Therefore the above statement is true for $m=1$. || **مرحلہ 1۔** فرض کریں $m=1$، تب $x^{2m-1}+y^{2m-1}=x^{2\cdot1-1}+y^{2\cdot1-1}=x+y$ اور چونکہ $x+y$، $x+y$ کو تقسیم کرتا ہے اس لیے $x+y$، $x+y$ کا جز ضربی ہے۔ لہٰذا مذکورہ بیان $m=1$ کے لیے درست ہے۔ || **لومړی ګام.** فرض کړئ $m=1$، نو $x^{2m-1}+y^{2m-1}=x^{2\cdot1-1}+y^{2\cdot1-1}=x+y$ او ځکه چې $x+y$، $x+y$ تقسیموي، نو $x+y$ د $x+y$ فکتور دی. له دې امله پورتنی بیان د $m=1$ لپاره سم دی.
+p **Step 2.** Let the above statement be true for $m=k$ then $x+y$ is a factor of $x^{2k-1}+y^{2k-1}$ || **مرحلہ 2۔** فرض کریں مذکورہ بیان $m=k$ کے لیے درست ہے تب $x+y$، $x^{2k-1}+y^{2k-1}$ کا جز ضربی ہے || **دویم ګام.** فرض کړئ پورتنی بیان د $m=k$ لپاره سم دی، نو $x+y$ د $x^{2k-1}+y^{2k-1}$ فکتور دی
+m $\Rightarrow\ x+y$ divides $x^{2k-1}+y^{2k-1}$.
+p So we can write || تو ہم لکھ سکتے ہیں || نو موږ لیکلای شو
+m $x^{2k-1}+y^{2k-1}=(x+y)Q\qquad\text{(1)}$
+p where $Q$ is the quotient. || جہاں $Q$ خارج قسمت ہے۔ || چېرته چې $Q$ خارج قسمت دی.
+p **Step 3.** Now let $m=k+1$ and consider || **مرحلہ 3۔** اب فرض کریں $m=k+1$ اور غور کریں || **دریم ګام.** اوس فرض کړئ $m=k+1$ او وګورئ
+m $x^{2(k+1)-1}+y^{2(k+1)-1}=x^{2k+2-1}+y^{2k+2-1}=x^{2k-1+2}+y^{2k-1+2}=x^{2k-1}\cdot x^2+y^{2k-1}\cdot y^2$
+m $=x^{2k-1}x^2+y^{2k-1}x^2-y^{2k-1}\cdot x^2+y^{2k-1}y^2$
+m $=x^2\left[x^{2k-1}+y^{2k-1}\right]+y^{2k-1}(y^2-x^2)$
+m $=x^2(x+y)Q+y^{2k-1}(y-x)(y+x)$
+p (Using (1)) || ((1) استعمال کرنے سے) || (د (1) په کارولو سره)
+m $=x^2(x+y)Q+y^{2k-1}(y-x)(x+y)=(x+y)\left[x^2Q+y^{2k-1}(y-x)\right]$
+m $\text{or}\quad x^{2(k+1)-1}+y^{2(k+1)-1}=(x+y)Q_1\quad\text{where }Q_1=x^2Q+y^{2k-1}(y-x)$
+m $\Rightarrow\ x+y$ is a factor of $x^{2(k+1)-1}-y^{2(k+1)-1}$
+p So the above statement is true for $m=k+1$ and hence by induction it is true for all positive integral values of $m$. || لہٰذا مذکورہ بیان $m=k+1$ کے لیے درست ہے اور اسی لیے استقرا سے یہ $m$ کی تمام مثبت صحیح قیمتوں کے لیے درست ہے۔ || نو پورتنی بیان د $m=k+1$ لپاره سم دی او له دې امله د استقرا له مخې د $m$ د ټولو مثبتو صحیحو ارزښتونو لپاره سم دی.
+p Therefore $x+y$ is factor of $x^n+y^n$ where $n$ is a positive odd integer. || لہٰذا $x+y$، $x^n+y^n$ کا جز ضربی ہے جہاں $n$ مثبت طاق صحیح عدد ہے۔ || نو $x+y$ د $x^n+y^n$ فکتور دی چېرته چې $n$ مثبت تاق صحیح عدد دی.
+box note | SpaceBook clarification || اسپیس بک کی وضاحت || د سپېس بک وضاحت
+p In the last printed line of Step 3 the quantity shown with a minus sign should be the sum $x^{2(k+1)-1}+y^{2(k+1)-1}$, which is what the preceding line proves is divisible by $x+y$. || مرحلہ 3 کی آخری مطبوعہ سطر میں منفی علامت کے ساتھ دکھائی گئی مقدار دراصل مجموعہ $x^{2(k+1)-1}+y^{2(k+1)-1}$ ہونی چاہیے، جس کی $x+y$ سے بخوبی تقسیم پذیری پچھلی سطر ثابت کرتی ہے۔ || د دریم ګام په وروستۍ چاپ شوې کرښه کې د منفي نښې سره ښودل شوې کمیت باید مجموعه $x^{2(k+1)-1}+y^{2(k+1)-1}$ وي، چې مخکنۍ کرښه یې د $x+y$ په واسطه د تقسیم وړتیا ثابتوي.
+endbox
+endexample
+### 7.1.2 General (extended) form of principle of Mathematical Induction || 7.1.2 ریاضیاتی استقرا کے اصول کی عمومی (توسیعی) صورت || 7.1.2 د ریاضیاتي استقرا د اصل عمومي (غځول شوې) بڼه
+p Sometimes it happens that a given statement and proposition does not hold for first few positive integral values of $n$ but after those values of $n$ it becomes true; For example let us consider the statement $n^2>n+3$ || کبھی ایسا ہوتا ہے کہ دیا گیا بیان اور قضیہ $n$ کی ابتدائی چند مثبت صحیح قیمتوں کے لیے درست نہیں ہوتا لیکن ان قیمتوں کے بعد $n$ کے لیے درست ہو جاتا ہے؛ مثلاً بیان $n^2>n+3$ پر غور کریں || ځینې وختونه داسې کېږي چې ورکړل شوی بیان او قضیه د $n$ د لومړیو څو مثبتو صحیحو ارزښتونو لپاره نه سمېږي خو له هغو ارزښتونو وروسته د $n$ لپاره سمه کېږي؛ د بېلګې په توګه بیان $n^2>n+3$ وګورئ

@@ -1,0 +1,31 @@
+@printed 115
+@status lesson
+### 2 اِن پُٹ والے OR گیٹ کا ٹرُتھ ٹیبل || Truth table of a 2-input OR gate || د 2 input لرونکې OR دروازې د حقیقت جدول
+p فرض کیا X اور Y دو اِن پُٹ ہیں اور F ایک OR گیٹ سے آؤٹ پُٹ ہے، ٹرُتھ ٹیبل درج ذیل ہے۔ || Suppose X and Y are two inputs and F is the output of an OR gate; the truth table is as follows. || فرض کړئ X او Y دوه inputs دي او F د OR دروازې output دی؛ د حقیقت جدول دا دی.
+table جدول نمبر 6.3 دو اِن پُٹ والے OR گیٹ کا ٹرُتھ ٹیبل || Table 6.3 Truth table of a two-input OR gate || ۶.۳ جدول د دوه input لرونکې OR دروازې د حقیقت جدول
+th | X | Y | F=X+Y
+tr | 0 | 0 | 0
+tr | 0 | 1 | 1
+tr | 1 | 0 | 1
+tr | 1 | 1 | 1
+endtable
+### 3 اِن پُٹ والے OR گیٹ کا ٹرُتھ ٹیبل || Truth table of a 3-input OR gate || د 3 input لرونکې OR دروازې د حقیقت جدول
+p فرض کیا X، Y اور Z تین اِن پُٹ ہیں اور F ایک OR گیٹ سے آؤٹ پُٹ ہے، پھر OR گیٹ کا ٹرُتھ ٹیبل درج ذیل ہے۔ || Suppose X, Y and Z are three inputs and F is the output of an OR gate; then the truth table of the OR gate is as follows. || فرض کړئ X، Y او Z درې inputs دي او F د OR دروازې output دی؛ نو د OR دروازې د حقیقت جدول دا دی.
+table جدول نمبر 6.4 تین اِن پُٹ والے OR گیٹ کا ٹرُتھ ٹیبل || Table 6.4 Truth table of a three-input OR gate || ۶.۴ جدول د درې input لرونکې OR دروازې د حقیقت جدول
+th | X | Y | Z | F=X+Y+Z
+tr | 0 | 0 | 0 | 0
+tr | 0 | 0 | 1 | 1
+tr | 0 | 1 | 0 | 1
+tr | 0 | 1 | 1 | 1
+tr | 1 | 0 | 0 | 1
+tr | 1 | 0 | 1 | 1
+tr | 1 | 1 | 0 | 1
+tr | 1 | 1 | 1 | 1
+endtable
+### NOT گیٹ کا ٹرُتھ ٹیبل || Truth table of the NOT gate || د NOT دروازې د حقیقت جدول
+table جدول نمبر 6.5 NOT گیٹ کا ٹرُتھ ٹیبل || Table 6.5 Truth table of the NOT gate || ۶.۵ جدول د NOT دروازې د حقیقت جدول
+th | X | F = X̄
+tr | 0 | 1
+tr | 1 | 0
+endtable
+@deco All three tables have a two-level header in the book: "اِن پُٹ" (Input) over the input columns and "آؤٹ پُٹ" (Output) over F. The 3-input OR table also repeats its title "3 اِن پُٹ والے OR گیٹ کا ٹرُتھ ٹیبل" just above it.

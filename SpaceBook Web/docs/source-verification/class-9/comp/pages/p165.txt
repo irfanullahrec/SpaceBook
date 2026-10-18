@@ -1,0 +1,25 @@
+@pdf 77
+@printed 157
+@status lesson
+table Table 6.14: Truth table for Z=f(A,B) = ĀB̄+AB̄+ĀB || جدول 6.14: Z=f(A,B) = ĀB̄+AB̄+ĀB کا ٹروتھ ٹیبل || ۶.۱۴ جدول: د Z=f(A,B) = ĀB̄+AB̄+ĀB truth table
+th | A | B | Z
+tr | 0 | 0 | 1
+tr | 0 | 1 | 1
+tr | 1 | 0 | 1
+tr | 1 | 1 | 0
+endtable
+@issue The header row of Table 6.14 is inked over by a previous owner in the scan; the column heads A, B, Z are supplied from the context.
+table K-Map for Z = ĀB̄+AB̄+ĀB: group I = top row (B̄), group II = A=0 column (Ā) || Z = ĀB̄+AB̄+ĀB کا K-Map: گروپ I = اوپری قطار (B̄)، گروپ II = A=0 کالم (Ā) || د Z = ĀB̄+AB̄+ĀB K-Map: ډله I = پورتنی قطار (B̄)، ډله II = د A=0 ستن (Ā)
+th | B \ A | 0 (Ā) | 1 (A)
+tr | 0 (B̄) | 1 (I, II) | 1 (I)
+tr | 1 (B) | 1 (II) | 0
+endtable
+- There are two groups, covering two adjacent cells each. || دو گروپ ہیں جن میں سے ہر ایک دو ملحقہ خانوں پر مشتمل ہے۔ || دوه ډلې دي چې هره یې دوه څنګ په څنګ خانې پوښي.
+- **Ā** is column-wise common variable from group II while **B̄** is row-wise common variable from group I. || **Ā** گروپ II سے کالم وار مشترک متغیر ہے جبکہ **B̄** گروپ I سے قطار وار مشترک متغیر ہے۔ || **Ā** له II ډلې د ستنې له مخې ګډ متغیر دی او **B̄** له I ډلې د قطار له مخې ګډ متغیر دی.
+- Both terms will be added together to get the final simple form. || حتمی سادہ صورت کے لیے دونوں اجزا جمع کیے جائیں گے۔ || د وروستۍ ساده بڼې لپاره دواړه برخې جمع کېږي.
+- The final simple form would be: || حتمی سادہ صورت یہ ہوگی: || وروستۍ ساده بڼه به دا وي:
+m Z= f(A,B)=Ā + B̄
+### 6.3.3 Simplification of three variables Boolean function by K-Map || 6.3.3 تین متغیر والے بولین فنکشن کا K-Map سے اختصار || ۶.۳.۳ د K-Map په مرسته د دریو متغیرونو بولین فنکشن لنډول
+### Example 1 || مثال 1 || ۱ بېلګه
+m Z = f(A,B,C) = A.B.C + Ā.B.C + A.B.C̄ + Ā.B.C̄
+p Now drawing K- Map for the expression. || اب اس اظہار کا K-Map بناتے ہیں۔ || اوس د دې افادې K-Map رسموو.

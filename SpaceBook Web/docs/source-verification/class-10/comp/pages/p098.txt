@@ -1,0 +1,38 @@
+@printed 86
+@status lesson
+m         case 'i':     printf("vowel i");
+m         break ;
+m         case 'u':     printf("vowel u");
+m         break;
+m         default :     printf("not a vowel");
+m     }
+m }
+@issue Program 4.7 checks only lower-case vowels; an upper-case vowel such as 'A' prints "not a vowel".
+@sec 4-1-6 | 4.1.6 نیسٹڈ سلیکشن سٹرکچر کا استعمال || 4.1.6 Using nested selection structures || ۴.۱.۶ د ځالې انتخابي جوړښت کارونه
+### 4.1.6 نیسٹڈ سلیکشن سٹرکچر کا استعمال (Using nested selection structures) || 4.1.6 Using nested selection structures || ۴.۱.۶ د ځالې (nested) انتخابي جوړښت کارونه
+p نیسٹڈ سلیکشن سٹرکچر کا استعمال اس وقت ہوتا ہے جب کسی کام کو انجام دینے سے پہلے ایک سے زیادہ فیصلے کرنے کی ضرورت پیش آئے۔ نیسٹنگ ایک پروگرامنگ سرگرمی ہے، جس میں ایک پروگرام بلاک اسی طرح کے دوسرے پروگرام بلاک کے اندر رکھا جاتا ہے۔ نیسٹنگ پراسس زیادہ تر سلیکشن کنٹرول سٹرکچر میں استعمال ہوتے ہیں۔ || A nested selection structure is used when more than one decision has to be taken before a task is carried out. Nesting is a programming activity in which one program block is placed inside another program block of the same kind. Nesting is mostly used in selection control structures. || ځالې (nested) انتخابي جوړښت هغه وخت کارېږي چې د یوه کار له ترسره کولو مخکې له یوې زیاتې پرېکړې ته اړتیا وي. ځالې کول (nesting) د پروګرام جوړونې یو فعالیت دی چې پکې د پروګرام یو بلاک د همدې ډول بل بلاک دننه ایښودل کېږي. ځالې کول ډېری په انتخابي کنټرول جوړښتونو کې کارېږي.
+p سائنٹکس: || Syntax: || ترکیب:
+m if(Condition1)
+m {
+m     if(Condition2)
+m     {
+m         Statement1;
+m     }
+m     else
+m     {
+m         Statement2;
+m     }
+m }
+m else
+m {
+m     if(Condition3)
+m     {
+m         Statement3;
+m     }
+m     else
+m     {
+m         Statement4;
+m     }
+m }
+### نیسٹڈ if-else کیسے کام کرتا ہے: || How nested if-else works: || ځالې if-else څنګه کار کوي:
+p نیسٹڈ if-else کی اس مثال میں، یہ پہلے Condition 1 کو ٹیسٹ کرتا ہے، اگر یہ Condition درست ہے تو یہ Condition 2 کو ٹیسٹ کرتا ہے، اگر Condition 2 کا نتیجہ درست ہے تو Statement 1 چل جائے گی۔ دوسری صورت … || In this example of nested if-else, Condition 1 is tested first. If it is true, Condition 2 is tested; if Condition 2 is true, Statement 1 runs. Otherwise … || د ځالې if-else په دې بېلګه کې لومړی Condition 1 ازمویل کېږي. که سم وي، Condition 2 ازمویل کېږي؛ که Condition 2 سم وي، Statement 1 چلېږي. که نه …

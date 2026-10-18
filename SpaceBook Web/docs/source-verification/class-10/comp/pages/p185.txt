@@ -1,0 +1,29 @@
+@printed 171
+@status lesson
+p براؤزر ونڈو ویب پیج دکھائے گی جیسا کہ شکل نمبر 7.49 میں دکھایا گیا ہے۔ || The browser window will show the web page as in Figure 7.49. || براوزر کړکۍ به ویب پاڼه لکه په ۷.۴۹ شکل کې وښيي.
+box info | شکل نمبر 7.49 ایک ویب پیج میں ہائپر لنکس || Figure 7.49 Hyperlinks within a web page || ۷.۴۹ شکل په یوه ویب پاڼه کې هایپرلینکونه
+p Types of Computers || Types of Computers || Types of Computers
+p 1. Microcomputer · 2. Minicomputer · 3. Mainframe (لنکس) || 1. Microcomputer · 2. Minicomputer · 3. Mainframe (links) || 1. Microcomputer · 2. Minicomputer · 3. Mainframe (لینکونه)
+p **1. Microcomputer** || **1. Microcomputer** || **1. Microcomputer**
+m Microcomputers are the smallest and the cheapest computer.
+m These computers are the ones, most commonly used in homes …
+endbox
+@sec 7-6-5 | 7.6.5 گرافیکل ہائپر لنک تیار کرنا || 7.6.5 Making a graphical hyperlink || ۷.۶.۵ ګرافیکي هایپرلینک جوړول
+### 7.6.5 گرافیکل ہائپر لنک تیار کرنا || 7.6.5 Making a graphical hyperlink || ۷.۶.۵ ګرافیکي هایپرلینک جوړول
+p اپنے ویب پیج کو مؤثر بنانے کا ایک بہترین طریقہ یہ ہے کہ کچھ گرافکس شامل کریں۔ گرافکس کسی ویب پیج پر رنگ، وسعت اور چمک شامل کر سکتے ہیں اور دیکھنے والوں کی توجہ اور دلچسپی برقرار رکھنے میں مدد کر سکتے ہیں۔ کسی دوسرے ویب پیج پر گرافیکل ہائپر لنک بنانے کے لئے ترکیب یہ ہے: || One of the best ways to make your web page effective is to add some graphics. Graphics can add colour, depth and sparkle to a web page and help keep viewers' attention and interest. The syntax for making a graphical hyperlink to another web page is: || خپله ویب پاڼه اغېزمنه کولو یوه غوره لاره دا ده چې ځینې ګرافیکونه ورزیات کړئ. ګرافیکونه ویب پاڼې ته رنګ، پراختیا او ځلا ورکولای شي او د لیدونکو پام او لېوالتیا ساتلو کې مرسته کوي. بلې ویب پاڼې ته د ګرافیکي هایپرلینک جوړولو ترکیب دا دی:
+m <a href="url"><img src="name of image file"></a>
+p مثال کے طور پر: || For example: || د بېلګې په توګه:
+m <a href="http://www.fbise.edu.pk"><img src="image.jpg"></a>
+p یہ براؤزر ونڈو میں image.jpg تصویری فائل دکھائے گا۔ جب یوزر ماؤس پوائنٹر کو تصویر پر منتقل کرے گا تو، یہ ایک چھوٹے سے ہاتھ میں بدل جائے گا اور اس تصویر پر کلک کرنے سے فیڈرل بورڈ کی ویب سائٹ کھل جائے گی جس کا URL www.fbise.edu.pk ہے۔ شکل نمبر 7.50 میں HTML ڈاکومنٹ یہ ظاہر کرتا ہے کہ گرافیکل ہائپر لنک کیسے بنایا جائے۔ || This shows the picture file image.jpg in the browser window. When the user moves the mouse pointer over the picture it changes to a small hand, and clicking the picture opens the Federal Board website, whose URL is www.fbise.edu.pk. The HTML document in Figure 7.50 shows how to make a graphical hyperlink. || دا به په براوزر کړکۍ کې image.jpg انځوري فایل وښيي. کله چې کاروونکی د موږک نښه پر انځور یوسي، په کوچني لاس بدلېږي، او پر انځور کلیک د فدرال بورډ ویب سایټ پرانیزي چې URL یې www.fbise.edu.pk دی. په ۷.۵۰ شکل کې HTML سند ښيي چې ګرافیکي هایپرلینک څنګه جوړېږي.
+@issue The syntax line misspells src as "scr" (<img scr="…">); corrected above.
+### شکل نمبر 7.50 HTML ڈاکومنٹ میں گرافیکل ہائپر لنک کا استعمال || Figure 7.50 Using a graphical hyperlink in an HTML document || ۷.۵۰ شکل په HTML سند کې د ګرافیکي هایپرلینک کارونه
+m <html>
+m <head>
+m <title>Inserting Image Anchor</title>
+m </head>
+m <body>
+m <a href="http://www.fbise.edu.pk"><img src="image.jpg"></a>
+m <font size=4>Click on the image to visit Federal Board Web site</font>
+m </body>
+m </html>
+@issue Figure 7.50 is very faint; only the title and the last text line can be read clearly, and the rest is reconstructed from the example above.

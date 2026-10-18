@@ -1,0 +1,22 @@
+@printed 221
+@sec 7.3 | Binomial Series || دو رقمی سلسلہ || دوه حدي لړۍ
+@sec 7.3.1 | Expansion of (1 + x)^n where n is a positive integer || (1 + x)^n کی توسیع جہاں n مثبت صحیح عدد ہے || د (1 + x)^n پراختیا چېرته چې n مثبت صحیح عدد دی
+@deco Unit-running header, "Not For Sale" notice, folio and decorative footer band excluded
+### 7.3 Binomial Series || 7.3 دو رقمی سلسلہ || 7.3 دوه حدي لړۍ
+### 7.3.1 Expansion of $(1+x)^n$ where $n$ is a positive integer || 7.3.1 $(1+x)^n$ کی توسیع جہاں $n$ مثبت صحیح عدد ہے || 7.3.1 د $(1+x)^n$ پراختیا چېرته چې $n$ مثبت صحیح عدد دی
+p By Binomial theorem, for any two real numbers $a$ and $b$ and for a positive integer $n$ || دو رقمی قضیے کے مطابق، کسی بھی دو حقیقی اعداد $a$ اور $b$ اور مثبت صحیح عدد $n$ کے لیے || د دوه حدي قضیې په اساس، د هر دوو حقیقي عددونو $a$ او $b$ او مثبت صحیح عدد $n$ لپاره
+m $(a+b)^n=a^n+na^{n-1}b+\dfrac{n(n-1)}{2!}a^{n-2}b^2+\dfrac{n(n-1)(n-2)}{3!}a^{n-3}b^3+\cdots+b^n\qquad\text{(i)}$
+p and this expansion contains $(n+1)$ terms. Now in particular if $a=1$ and $b=x$ then the above expansion becomes || اور اس توسیع میں $(n+1)$ ارکان ہوتے ہیں۔ اب خصوصاً اگر $a=1$ اور $b=x$ ہو تو مذکورہ توسیع یہ بن جاتی ہے || او دا پراختیا $(n+1)$ حدونه لري. اوس په ځانګړې توګه که $a=1$ او $b=x$ وي نو پورتنۍ پراختیا داسې کېږي
+m $(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots+x^n\qquad\text{(ii)}$
+p Thus we observe that when $n$ is a positive integer then the binomial expansion $(a+b)^n$ or $(1+x)^n$ terminates after $(n+1)$th term. || یوں ہم مشاہدہ کرتے ہیں کہ جب $n$ مثبت صحیح عدد ہو تو دو رقمی توسیع $(a+b)^n$ یا $(1+x)^n$ $(n+1)$ویں رکن کے بعد ختم ہو جاتی ہے۔ || په دې توګه موږ ګورو چې کله $n$ مثبت صحیح عدد وي نو دوه حدي پراختیا $(a+b)^n$ یا $(1+x)^n$ تر $(n+1)$م حد وروسته پای ته رسېږي.
+@sec 7.3.2 | Expansion of (1 + x)^n where n, the exponent, is a negative integer or a fraction || (1 + x)^n کی توسیع جہاں قوت نما n منفی صحیح عدد یا کسر ہے || د (1 + x)^n پراختیا چېرته چې توان n منفي صحیح عدد یا کسر دی
+### 7.3.2 Expansion of $(1+x)^n$ where $n$, the exponent, is a negative integer or a fraction || 7.3.2 $(1+x)^n$ کی توسیع جہاں قوت نما $n$ منفی صحیح عدد یا کسر ہے || 7.3.2 د $(1+x)^n$ پراختیا چېرته چې توان $n$ منفي صحیح عدد یا کسر دی
+p If $n$ is a negative integer or a fraction, then the expansion (ii) never ends and thus in such a case the expansion becomes || اگر $n$ منفی صحیح عدد یا کسر ہو تو توسیع (ii) کبھی ختم نہیں ہوتی اور اس لیے ایسی صورت میں توسیع یہ بن جاتی ہے || که $n$ منفي صحیح عدد یا کسر وي نو پراختیا (ii) هېڅکله نه پای ته رسېږي او په داسې حالت کې پراختیا داسې کېږي
+m $(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots\qquad\text{(iii)}$
+p When $n$ is a negative integer or a fraction then the series as given in (iii) is convergent if $-1<x<1$ or $|x|<1$ and it is divergent if $|x|>1$. || جب $n$ منفی صحیح عدد یا کسر ہو تو (iii) میں دیا گیا سلسلہ تب متقارب ہوتا ہے جب $-1<x<1$ یعنی $|x|<1$ ہو، اور $|x|>1$ ہونے پر متباعد ہوتا ہے۔ || کله چې $n$ منفي صحیح عدد یا کسر وي نو په (iii) کې ورکړل شوې لړۍ هغه وخت همګرا ده چې $-1<x<1$ یا $|x|<1$ وي، او که $|x|>1$ وي واګرا ده.
+p Since at this level we will be interested only in those series which are convergent so we will say that if $n$ is a negative integer or a fraction then the series || چونکہ اس سطح پر ہم صرف ان سلسلوں میں دلچسپی رکھیں گے جو متقارب ہیں اس لیے ہم کہیں گے کہ اگر $n$ منفی صحیح عدد یا کسر ہو تو سلسلہ || ځکه چې پدې کچه موږ یوازې په هغو لړیو لیوالتیا لرو چې همګرا دي، نو موږ وایو چې که $n$ منفي صحیح عدد یا کسر وي نو لړۍ
+m $(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots$
+p is valid only if $|x|<1$. || صرف $|x|<1$ کی صورت میں درست ہے۔ || یوازې هغه وخت سمه ده چې $|x|<1$ وي.
+p The series of the type $1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots$ is called the **binomial series**. || اس نوعیت کا سلسلہ $1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots$ **دو رقمی سلسلہ** کہلاتا ہے۔ || دې ډول لړۍ $1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots$ ته **دوه حدي لړۍ** ویل کېږي.
+p The general term of the binomial series is || دو رقمی سلسلے کا عمومی رکن یہ ہے || د دوه حدي لړۍ عمومي حد دا دی
+m $T_{r+1}=\dfrac{n(n-1)(n-2)\cdots(n-r+1)}{r!}\,x^r$

@@ -1,0 +1,23 @@
+@pdf 49
+@printed 41
+@status lesson
+@sec 2-2 | 2.2 Programming Environment || 2.2 پروگرامنگ کا ماحول || ۲.۲ د پروګرام جوړونې چاپېریال
+## 2.2 PROGRAMMING ENVIRONMENT || 2.2 پروگرامنگ کا ماحول || ۲.۲ د پروګرام جوړونې چاپېریال
+p Programming environment is the set of processes and programming tools used to develop computer programs. It includes editor, compiler, linker, debugger, etc. It is called Integrated Development Environment (IDE) for developing computer programs. Integrated Development Environment is application software with a GUI. || پروگرامنگ کا ماحول ان عملوں اور پروگرامنگ ٹولز کا مجموعہ ہے جو کمپیوٹر پروگرام تیار کرنے کے لیے استعمال ہوتے ہیں۔ اس میں ایڈیٹر، کمپائلر، لنکر، ڈیبگر وغیرہ شامل ہیں۔ کمپیوٹر پروگرام تیار کرنے کے لیے اسے انٹیگریٹڈ ڈیولپمنٹ انوائرنمنٹ (IDE) کہا جاتا ہے۔ انٹیگریٹڈ ڈیولپمنٹ انوائرنمنٹ GUI والا ایپلی کیشن سافٹ ویئر ہے۔ || د پروګرام جوړونې چاپېریال د هغو بهیرونو او پروګرامي وسیلو ټولګه ده چې د کمپیوټري پروګرامونو د جوړولو لپاره کارېږي. editor، compiler، linker، debugger او نور پکې شامل دي. د کمپیوټري پروګرامونو د جوړولو لپاره ورته Integrated Development Environment (IDE) وايي. IDE د GUI لرونکی اپلیکېشن سافټوېر دی.
+### 2.2.1 Integrated Developement Environment (IDE) || 2.2.1 انٹیگریٹڈ ڈیولپمنٹ انوائرنمنٹ (IDE) || ۲.۲.۱ یوځای پرمختیایي چاپېریال (IDE)
+@issue Heading printed "Developement"; kept as printed.
+p Integrated Development Environment (IDE) is the programming language development tool to create, compile and run programs. IDE is computer software that brings all the processes and tools required for program development into one environment. Today's modern IDEs have user-friendly GUI. C language also uses IDE, as shown in Figure 2.9. || انٹیگریٹڈ ڈیولپمنٹ انوائرنمنٹ (IDE) پروگرام بنانے، کمپائل کرنے اور چلانے کا پروگرامنگ زبان کا ترقیاتی ٹول ہے۔ IDE ایسا کمپیوٹر سافٹ ویئر ہے جو پروگرام کی تیاری کے لیے درکار تمام عمل اور ٹولز ایک ماحول میں لے آتا ہے۔ آج کے جدید IDEs صارف دوست GUI رکھتے ہیں۔ C زبان بھی IDE استعمال کرتی ہے، جیسا کہ شکل 2.9 میں دکھایا گیا ہے۔ || IDE د پروګرامونو د جوړولو، compile کولو او چلولو لپاره د پروګرامي ژبې پرمختیایي وسیله ده. IDE هغه کمپیوټري سافټوېر دی چې د پروګرام جوړونې ټول اړین بهیرونه او وسیلې یوه چاپېریال ته راولي. نن ورځ نوي IDEs د کاروونکي لپاره اسانه GUI لري. C ژبه هم IDE کاروي، لکه په ۲.۹ شکل کې.
+svg Figure: 2.9 C Language IDE || شکل 2.9 C زبان کا IDE || ۲.۹ شکل د C ژبې IDE
+<svg viewBox="0 0 560 300" width="560" role="img" aria-label="Sketch of the Dev-C++ 5.11 IDE window: menu bar File Edit Search View Project Execute Debug Tools CVS Window Help; project pane with HelloWorld and main.c; editor tab main.c with a numbered Hello World C program; bottom tabs Compiler, Resources, Compile Log, Debug, Find Results, Close; status bar Line 7 Col 2 Lines 7 Length 97 Insert" font-family="Arial, Helvetica, sans-serif" font-size="11">
+<rect x="1" y="1" width="558" height="298" fill="#f8fafc" stroke="#334155"/>
+<rect x="1" y="1" width="558" height="20" fill="#1e3a8a"/><text x="10" y="15" fill="#fff">Dev-C++ 5.11 - [HelloWorld] - HelloWorld.dev</text>
+<text x="10" y="35">File  Edit  Search  View  Project  Execute  Debug  Tools  CVS  Window  Help</text>
+<rect x="1" y="42" width="558" height="18" fill="#e2e8f0"/><text x="10" y="55" fill="#64748b">[toolbar buttons]</text>
+<rect x="6" y="64" width="128" height="160" fill="#fff" stroke="#94a3b8"/><text x="10" y="78" font-weight="700">Project  Classes  Debug</text><text x="16" y="96">▸ HelloWorld</text><text x="30" y="112">main.c</text>
+<rect x="140" y="64" width="414" height="160" fill="#fff" stroke="#94a3b8"/><text x="146" y="78" font-weight="700">main.c</text>
+<g font-family="Consolas, Courier New, monospace" font-size="11"><g fill="#64748b"><text x="150" y="96">1</text><text x="150" y="110">2</text><text x="150" y="124">3</text><text x="150" y="138">4</text><text x="150" y="152">5</text><text x="150" y="166">6</text><text x="150" y="180">7</text></g>
+<text x="172" y="96" fill="#15803d">#include &lt;stdio.h&gt;</text><text x="172" y="124">int main(int argc, char* argv)</text><text x="172" y="138">{</text><text x="190" y="152">printf("Hello World");</text><text x="190" y="166">return 0;</text><text x="172" y="180">}</text></g>
+<rect x="6" y="228" width="548" height="48" fill="#fff" stroke="#94a3b8"/><text x="10" y="242" font-weight="700">Compiler | Resources | Compile Log | Debug | Find Results | Close</text><text x="10" y="258" fill="#64748b">Line   Col   File                                   Message</text>
+<text x="10" y="292" fill="#334155">Line: 7   Col: 2   Sel: 0   Lines: 7   Length: 97   Insert   Done parsing</text>
+</svg>
+endsvg

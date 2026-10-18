@@ -1,0 +1,21 @@
+@pdf 66
+@printed 55
+@status lesson
+### Example: || مثال: || بېلګه:
+p Suppose *x* is an **integer** and *y* is a **long** variable and following expression is evaluated: || فرض کریں *x* ایک **integer** اور *y* ایک **long** متغیر ہے اور درج ذیل اظہار کی قدر معلوم کی جاتی ہے: || فرض کړئ *x* یو **integer** او *y* یو **long** متغیر دی او لاندې افاده ارزول کېږي:
+m x+y
+p In the above expression, data type of **x** is lower than data type of *y*, so the value of *x* will be converted into **long** during the evaluation of expression. || اوپر والے اظہار میں **x** کی ڈیٹا ٹائپ *y* کی ڈیٹا ٹائپ سے نچلی ہے، اس لیے اظہار کی قدر معلوم کرتے وقت *x* کی قدر **long** میں بدل دی جائے گی۔ || په پورتنۍ افاده کې د **x** ډېټا ډول د *y* تر ډېټا ډول ټیټ دی، نو د افادې د ارزونې پر مهال د *x* ارزښت **long** ته اړول کېږي.
+### Explicit Type Casting || صریح ٹائپ کاسٹنگ || ښکاره type casting
+p Explicit casting is performed by programmer. It is performed by using **cast operator**. The cast operator tells the computer to convert the data type of a value. || صریح کاسٹنگ پروگرامر کرتا ہے۔ یہ **کاسٹ آپریٹر** کے ذریعے کی جاتی ہے۔ کاسٹ آپریٹر کمپیوٹر کو کسی قدر کی ڈیٹا ٹائپ بدلنے کا کہتا ہے۔ || ښکاره casting پروګرامر ترسره کوي. د **cast operator** په کارولو کېږي. cast operator کمپیوټر ته وايي چې د یوه ارزښت ډېټا ډول بدل کړي.
+p Syntax of using cast operator is: || کاسٹ آپریٹر کے استعمال کا سنٹیکس یہ ہے: || د cast operator د کارولو syntax دا دی:
+m (type) expression;
+p **type:** It shows the data type to which operand is to be converted. || **type:** یہ وہ ڈیٹا ٹائپ ظاہر کرتی ہے جس میں آپرینڈ کو بدلنا ہے۔ || **type:** هغه ډېټا ډول ښيي چې operand ورته اړول کېږي.
+p **expression:** It shows the constant, variable or expression whose data type is to be converted. || **expression:** یہ وہ کانسٹنٹ، متغیر یا اظہار ظاہر کرتا ہے جس کی ڈیٹا ٹائپ بدلنی ہے۔ || **expression:** هغه ثابت، متغیر یا افاده ښيي چې ډېټا ډول یې اړول کېږي.
+### Example: || مثال: || بېلګه:
+p Suppose *x* and *y* are two float variables. *x* contains 10.3 and *y* contains 5.2 and the following expression is evaluated. || فرض کریں *x* اور *y* دو فلوٹ متغیرات ہیں۔ *x* میں 10.3 اور *y* میں 5.2 ہے اور درج ذیل اظہار کی قدر معلوم کی جاتی ہے۔ || فرض کړئ *x* او *y* دوه float متغیرونه دي. *x* کې 10.3 او *y* کې 5.2 دي او لاندې افاده ارزول کېږي.
+m x%y
+p The above expression will generate an error because data type of *x* and *y* is float. The modulus operator cannot work with float variables. It only works with integers so the expression can be written as follows: || اوپر والا اظہار غلطی پیدا کرے گا کیونکہ *x* اور *y* کی ڈیٹا ٹائپ فلوٹ ہے۔ ماڈیولس آپریٹر فلوٹ متغیرات کے ساتھ کام نہیں کر سکتا۔ یہ صرف انٹیجرز کے ساتھ کام کرتا ہے اس لیے اظہار یوں لکھا جا سکتا ہے: || پورتنۍ افاده تېروتنه جوړوي ځکه د *x* او *y* ډېټا ډول float دی. modulus operator له float متغیرونو سره کار نه شي کولی. یوازې له integers سره کار کوي نو افاده داسې لیکل کېدای شي:
+m (int) x% (int) y
+p The above statement converts the values of *x* and *y* into integers and evaluates the expression. The value of *x* will be converted to 10 and value of *y* will be converted to 5. So the result of the above expression will be 0. || اوپر والی اسٹیٹمنٹ *x* اور *y* کی قدروں کو انٹیجر میں بدل کر اظہار کی قدر معلوم کرتی ہے۔ *x* کی قدر 10 اور *y* کی قدر 5 ہو جائے گی۔ اس لیے اوپر والے اظہار کا نتیجہ 0 ہوگا۔ || پورتنی بیان د *x* او *y* ارزښتونه integers ته اړوي او افاده ارزوي. د *x* ارزښت 10 او د *y* ارزښت 5 کېږي. نو د پورتنۍ افادې پایله 0 ده.
+### 2.4.6 Constant qualifier -- const || 2.4.6 کانسٹنٹ کوالیفائر -- const || ۲.۴.۶ Constant qualifier -- const
+p The ***const*** qualifier is used to define a constant. The constant is declared by specifying its name and data type. The constant must be initialized with some value. The initialized value cannot be changed during program execution. || ***const*** کوالیفائر کانسٹنٹ کی تعریف کے لیے استعمال ہوتا ہے۔ کانسٹنٹ کا اعلان اس کا نام اور ڈیٹا ٹائپ بتا کر کیا جاتا ہے۔ کانسٹنٹ کو کسی قدر کے ساتھ شروع (initialize) کرنا ضروری ہے۔ دی گئی ابتدائی قدر پروگرام کے چلنے کے دوران بدلی نہیں جا سکتی۔ || ***const*** qualifier د ثابت د تعریف لپاره کارېږي. ثابت د نوم او ډېټا ډول په ټاکلو اعلانېږي. ثابت باید په یوه ارزښت پیل شي. پیلنی ارزښت د پروګرام د اجرا پر مهال نه شي بدلېدای.

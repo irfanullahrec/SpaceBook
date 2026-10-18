@@ -1,0 +1,29 @@
+@printed 133
+@status lesson
+m   int i, n, sum = 0;
+m   // Take input from user.
+m   cout << "Print sum of even numbers till : ";
+m   cin >> n;
+m   for(i = 1; i <= n; i++) {
+m     // Check for even or not.
+m     if((i % 2) == 0) {
+m       sum += i;
+m     }
+m   }
+m   cout << endl << "Sum of even numbers from 1 to 50" << n << " is : " << sum;
+m   return 0;
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Print sum of even numbers till: 50
+m Sum of even numbers from 1 to 50 is: 1275
+endbox
+@issue The sum of even numbers from 1 to 50 is 650 (1275 is the sum of all numbers 1–50); the output line also prints n twice ("from 1 to 50" << n). Kept as printed.
+@sec 5-kp | Key Points || اہم نکات || مهم ټکي
+## Key Points || اہم نکات || مهم ټکي
+- A loop is a sequence of instructions that is continually repeated until a certain condition is reached. || لوپ ہدایات کا ایسا سلسلہ ہے جو کسی خاص شرط تک پہنچنے تک مسلسل دہرایا جاتا ہے۔ || لوپ د لارښوونو لړۍ ده چې تر یوه ټاکلي شرط پورې پرله پسې تکرارېږي.
+- The *for* loop executes one or more statements for a specified number of times. || *for* لوپ ایک یا زیادہ اسٹیٹمنٹس کو مقررہ تعداد میں چلاتا ہے۔ || *for* لوپ یو یا څو بیانونه ټاکلی شمېر اجرا کوي.
+- The *while* loop executes one or more statements until the given condition remains true. || *while* لوپ دی گئی شرط درست رہنے تک ایک یا زیادہ اسٹیٹمنٹس چلاتا ہے۔ || *while* لوپ تر هغه یو یا څو بیانونه اجرا کوي چې شرط سم وي.
+- The *do-while* loop executes the statements until the given condition is true. || *do-while* لوپ دی گئی شرط درست رہنے تک اسٹیٹمنٹس چلاتا ہے۔ || *do-while* لوپ تر هغه بیانونه اجرا کوي چې شرط سم وي.
+- The *break* statement terminates the execution of the loop when it is used inside the body of the loop. || *break* اسٹیٹمنٹ لوپ کے جسم میں استعمال ہونے پر لوپ کا چلنا ختم کر دیتی ہے۔ || *break* بیان د لوپ په بدنه کې د لوپ اجرا پای ته رسوي.
+- The *continue* statement shifts the control back to the beginning of the loop. || *continue* اسٹیٹمنٹ کنٹرول کو لوپ کے آغاز پر واپس لے جاتی ہے۔ || *continue* بیان کنټرول د لوپ پیل ته بېرته وړي.
+- A loop inside another loop is called nested loop. || ایک لوپ کے اندر دوسرا لوپ نیسٹڈ لوپ کہلاتا ہے۔ || د یوه لوپ دننه بل لوپ ځالی لوپ بلل کېږي.

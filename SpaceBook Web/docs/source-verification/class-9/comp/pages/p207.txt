@@ -1,0 +1,31 @@
+@pdf 206
+@printed 199
+@status lesson
+p USB Flash Drive; Memory Card || یو ایس بی فلیش ڈرائیو؛ میموری کارڈ || USB Flash Drive؛ Memory Card
+p In this example, an unordered list is nested inside an ordered list. The HTML document in Figure 7.33 creates this nested list. || اس مثال میں ایک غیر ترتیب وار فہرست ترتیب وار فہرست کے اندر ہے۔ شکل 7.33 کی HTML دستاویز یہ نیسٹڈ فہرست بناتی ہے۔ || په دې بېلګه کې بې ترتیبه لست د ترتیب لرونکي لست دننه دی. د ۷.۳۳ شکل HTML سند دا ځالی لست جوړوي.
+p Here, heading tags <h3></h3> are used for the title, **Types of Computer Memories.** || یہاں عنوان **Types of Computer Memories** کے لیے ہیڈنگ ٹیگز <h3></h3> استعمال ہوئے ہیں۔ || دلته د سرلیک **Types of Computer Memories** لپاره <h3></h3> کارول شوي.
+p The ordered list has two items having the subtitles, **Primary Memory** and **Secondary Memory**. The first subtitle has a list of two unordered items and the second subtitle has a list of four unordered items. || ترتیب وار فہرست میں دو اشیا ہیں جن کے ذیلی عنوانات **Primary Memory** اور **Secondary Memory** ہیں۔ پہلے ذیلی عنوان کے تحت دو اور دوسرے کے تحت چار غیر ترتیب وار اشیا ہیں۔ || ترتیب لرونکی لست دوه توکي لري چې فرعي سرلیکونه یې **Primary Memory** او **Secondary Memory** دي. لومړی دوه او دویم څلور بې ترتیبه توکي لري.
+m <html>
+m <head>
+m <title>Nested List</title>
+m </head>
+m <body>
+m <h3>Types of Computer Memories</h3>
+m <ol>
+m <li>Primary Memory</li>
+m <ul>
+m <li>Random Access Memory</li>
+m <li>Read Only Memory</li>
+m </ul>
+m <li>Secondary Memory</li>
+m <ul>
+m <li>Magnetic Memory</li>
+m <li>Optical Memory</li>
+m <li>USB Flash Drive</li>
+m <li>Memory Card</li>
+m </ul>
+m </ol>
+m </body>
+m </html>
+p (Figure 7.33 Creating a nested list — "Nested List.html" in Notepad++.) || (شکل 7.33: نیسٹڈ فہرست بنانا۔) || (۷.۳۳ شکل: ځالی لست جوړول.)
+@issue The scan of page 198 lists only Magnetic and Optical Memory under Secondary Memory; USB Flash Drive and Memory Card continue at the top of page 199.

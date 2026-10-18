@@ -1,0 +1,272 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s230-p221",
+  "title": "Figure 7.4 Table/Relation; 7.3 Planning a Database; 7.3.1 Steps for Designing a Database; a. Problem Identification — start",
+  "headingUrdu": "شکل ۷.۴ ٹیبل/ریلیشن؛ ۷.۳ ڈیٹا بیس کی منصوبہ بندی؛ ۷.۳.۱ ڈیٹا بیس ڈیزائن کرنے کے مراحل؛ الف۔ مسئلے کی شناخت — آغاز",
+  "headingPashto": "انځور ۷.۴ جدول/اړیکه؛ ۷.۳ د ډېټابېس پلانول؛ ۷.۳.۱ د ډېټابېس د ډیزاین کولو ګامونه؛ الف. د ستونزې پېژندنه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 230,
+    "printedPage": "221"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s230-t1",
+      "en": "Key field — Fields/Attributes/Columns — Records/Tuples/Rows. These three printed callouts mark the key column, the columns and the rows of the table.",
+      "ur": "کی فیلڈ — فیلڈز/ایٹریبیوٹس/کالمز — ریکارڈز/ٹپلز/رو۔ یہ تین چھپی ہوئی نشاندہیاں ٹیبل کے کی کالم، کالموں اور قطاروں کو ظاہر کرتی ہیں۔",
+      "ps": "کیلي ساحه — ساحې/خاصیتونه/ستونونه — ثبتونه/ټپلونه/قطارونه. دا درې چاپ شوي نښې د جدول کیلي ستون، ستونونه او قطارونه ښيي.",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s230-h1",
+      "en": "7.3 PLANNING A DATABASE",
+      "ur": "۷.۳ ڈیٹا بیس کی منصوبہ بندی",
+      "ps": "۷.۳ د ډېټابېس پلانول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s230-a",
+      "en": "Database planning is a systematic approach to the development of database that moves from concept to design and development to implementation. A well-designed database promotes consistent data entry and retrieval.",
+      "ur": "ڈیٹا بیس کی منصوبہ بندی ڈیٹا بیس کی ترقی کا منظم طریقہ ہے جو تصور سے ڈیزائن اور ترقی سے نفاذ کی طرف جاتا ہے۔ اچھی طرح ڈیزائن کیا گیا ڈیٹا بیس مطابقت پذیر ڈیٹا اندراج اور حصول کو فروغ دیتا ہے۔",
+      "ps": "د ډېټابېس پلانول د ډېټابېس د جوړولو یوه منظمه طریقه ده چې له مفکورې نه ډیزاین ته او جوړولو نه پلي کولو ته ځي. یو ښه ډیزاین شوی ډېټابېس د همغږي ډېټا د دخل او ترلاسه کولو ملاتړ کوي."
+    },
+    {
+      "id": "cs11-s230-h2",
+      "en": "7.3.1 Steps for Designing a Database",
+      "ur": "۷.۳.۱ ڈیٹا بیس ڈیزائن کرنے کے مراحل",
+      "ps": "۷.۳.۱ د ډېټابېس د ډیزاین کولو ګامونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s230-b",
+      "en": "The process of database design is divided into different steps. These are:",
+      "ur": "ڈیٹا بیس ڈیزائن کا عمل مختلف مراحل میں تقسیم ہے۔ یہ ہیں:",
+      "ps": "د ډېټابېس د ډیزاین پروسه په مختلفو ګامونو وېشل شوې ده. دا دي:"
+    },
+    {
+      "id": "cs11-s230-s1",
+      "en": "Problem Identification/definition",
+      "ur": "مسئلے کی شناخت/تعریف",
+      "ps": "د ستونزې پېژندنه/تعریف",
+      "listGroup": "steps"
+    },
+    {
+      "id": "cs11-s230-s2",
+      "en": "Feasibility Study",
+      "ur": "فزیبلٹی اسٹڈی",
+      "ps": "د شونتیا مطالعه",
+      "listGroup": "steps"
+    },
+    {
+      "id": "cs11-s230-s3",
+      "en": "Requirement Analysis",
+      "ur": "ضروریات کا تجزیہ",
+      "ps": "د اړتیاوو تحلیل",
+      "listGroup": "steps"
+    },
+    {
+      "id": "cs11-s230-s4",
+      "en": "Identifying Entities and Attributes",
+      "ur": "انٹیٹیز اور ایٹریبیوٹس کی شناخت",
+      "ps": "د وجودونو او خاصیتونو پېژندنه",
+      "listGroup": "steps"
+    },
+    {
+      "id": "cs11-s230-s5",
+      "en": "Assigning Names to Tables and Columns",
+      "ur": "ٹیبلز اور کالموں کو نام دینا",
+      "ps": "جدولونو او ستونونو ته نومونه ورکول",
+      "listGroup": "steps"
+    },
+    {
+      "id": "cs11-s230-h3",
+      "en": "a. Problem Identification/definition",
+      "ur": "الف۔ مسئلے کی شناخت/تعریف",
+      "ps": "الف. د ستونزې پېژندنه/تعریف",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s230-c",
+      "en": "One must know what the problem is before it can be solved. In this step a statement is prepared specifying the scope and objective of the problem. For example, the Admission Section Head has been getting complaints of poor service from student. This may lead an initial investigation to find whether a",
+      "ur": "کسی مسئلے کو حل کرنے سے پہلے یہ جاننا ضروری ہے کہ مسئلہ کیا ہے۔ اس مرحلے میں مسئلے کے دائرہ کار اور مقصد کی وضاحت کرنے والا بیان تیار کیا جاتا ہے۔ مثلاً ایڈمیشن سیکشن کے سربراہ کو طلبہ کی طرف سے ناقص خدمت کی شکایات مل رہی ہیں۔ اس سے ابتدائی تحقیق ہو سکتی ہے تاکہ معلوم ہو کہ آیا کوئی",
+      "ps": "مخکې له دې چې ستونزه حل شي باید پوه شو چې ستونزه څه ده. پدې ګام کې یو بیان چې د ستونزې پراخوالی او موخه ټاکي چمتو کېږي. د بېلګې په توګه د داخلې برخې مشر له زده کوونکو نه د ضعیفې خدمت شکایتونه اخیستل. دا کېدای شي لومړنۍ څېړنې ته لار هواره کړي ترڅو وموندل شي چې ایا",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s230-t1",
+        "cs11-s230-h1",
+        "cs11-s230-a",
+        "cs11-s230-h2",
+        "cs11-s230-b",
+        "cs11-s230-s1",
+        "cs11-s230-s2",
+        "cs11-s230-s3",
+        "cs11-s230-s4",
+        "cs11-s230-s5",
+        "cs11-s230-h3",
+        "cs11-s230-c"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Figure 7.4 Table/Relation",
+      "captionUrdu": "شکل ۷.۴ ٹیبل/ریلیشن",
+      "captionPashto": "انځور ۷.۴ جدول/اړیکه",
+      "headers": [
+        {
+          "en": "Employee No",
+          "ur": "ملازم نمبر",
+          "ps": "د کارکوونکي شمېره"
+        },
+        {
+          "en": "Name",
+          "ur": "نام",
+          "ps": "نوم"
+        },
+        {
+          "en": "Date of Birth",
+          "ur": "تاریخ پیدائش",
+          "ps": "د زېږون نېټه"
+        },
+        {
+          "en": "Address",
+          "ur": "پتہ",
+          "ps": "پته"
+        },
+        {
+          "en": "Date of Joining",
+          "ur": "تاریخ شمولیت",
+          "ps": "د ګډون نېټه"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "54",
+            "ur": "54",
+            "ps": "54"
+          },
+          {
+            "en": "Khalid",
+            "ur": "خالد",
+            "ps": "خالد"
+          },
+          {
+            "en": "21/7/1972",
+            "ur": "۲۱/۷/۱۹۷۲",
+            "ps": "۲۱/۷/۱۹۷۲"
+          },
+          {
+            "en": "Rawalpindi",
+            "ur": "راولپنڈی",
+            "ps": "راولپنډي"
+          },
+          {
+            "en": "15/8/2002",
+            "ur": "۱۵/۸/۲۰۰۲",
+            "ps": "۱۵/۸/۲۰۰۲"
+          }
+        ],
+        [
+          {
+            "en": "55",
+            "ur": "55",
+            "ps": "55"
+          },
+          {
+            "en": "Naeem",
+            "ur": "نعیم",
+            "ps": "نعیم"
+          },
+          {
+            "en": "14/5/1972",
+            "ur": "۱۴/۵/۱۹۷۲",
+            "ps": "۱۴/۵/۱۹۷۲"
+          },
+          {
+            "en": "Islamabad",
+            "ur": "اسلام آباد",
+            "ps": "اسلام اباد"
+          },
+          {
+            "en": "17/8/1995",
+            "ur": "۱۷/۸/۱۹۹۵",
+            "ps": "۱۷/۸/۱۹۹۵"
+          }
+        ],
+        [
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "Sajid",
+            "ur": "ساجد",
+            "ps": "ساجد"
+          },
+          {
+            "en": "5/6/1976",
+            "ur": "۵/۶/۱۹۷۶",
+            "ps": "۵/۶/۱۹۷۶"
+          },
+          {
+            "en": "Peshawar",
+            "ur": "پشاور",
+            "ps": "پېښور"
+          },
+          {
+            "en": "3/6/2005",
+            "ur": "۳/۶/۲۰۰۵",
+            "ps": "۳/۶/۲۰۰۵"
+          }
+        ],
+        [
+          {
+            "en": "57",
+            "ur": "57",
+            "ps": "57"
+          },
+          {
+            "en": "Mehmood",
+            "ur": "محمود",
+            "ps": "محمود"
+          },
+          {
+            "en": "8/4/1971",
+            "ur": "۸/۴/۱۹۷۱",
+            "ps": "۸/۴/۱۹۷۱"
+          },
+          {
+            "en": "Peshawar",
+            "ur": "پشاور",
+            "ps": "پېښور"
+          },
+          {
+            "en": "8/4/2000",
+            "ur": "۸/۴/۲۰۰۰",
+            "ps": "۸/۴/۲۰۰۰"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 221: Figure 7.4 Table/Relation (a table of employees with callouts “Key field”, “Fields/Attributes/Columns” and “Records/Tuples/Rows”; given here as a data table with the printed values and a caption paragraph for the callouts), the banner “7.3 PLANNING A DATABASE”, the banner “7.3.1 Steps for Designing a Database” with the list a–e and the start of “a. Problem Identification/definition” (the sentence continues on the next page). The printed spelling of the column header is “Employee No”. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:47:16.856129+00:00",
+    "scope": "Scan 230 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

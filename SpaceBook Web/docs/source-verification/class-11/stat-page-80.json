@@ -1,0 +1,838 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s080-quantile-examples-2",
+  "title": "Example 2.18 solution · Case-iii continuous series · Example 2.19",
+  "headingUrdu": "مثال 2.18 کا حل · صورت-iii مسلسل سلسلہ · مثال 2.19",
+  "headingPashto": "د بېلګې 2.18 حل · حالت-iii دوامداره لړۍ · بېلګه 2.19",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 80,
+    "printedPage": "72"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s080-n1",
+      "en": "Since Σf = 140 is even",
+      "ur": "چونکہ Σf = 140 جفت ہے",
+      "ps": "ځکه چې Σf = 140 جفت دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-c3",
+      "en": "Case-iii: Continuous series or grouped data.",
+      "ur": "صورت-iii: مسلسل سلسلہ یا گروہی اعداد و شمار۔",
+      "ps": "حالت-iii: دوامداره لړۍ یا ګروپي معلومات."
+    },
+    {
+      "id": "stat11-s080-ex19",
+      "en": "Example: 2.19",
+      "ur": "مثال: 2.19",
+      "ps": "بېلګه: 2.19",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-19"
+    },
+    {
+      "id": "stat11-s080-q19",
+      "en": "Calculate Q₁, D₈, and P₆₀ from the following data:",
+      "ur": "درج ذیل اعداد و شمار سے Q₁، D₈ اور P₆₀ حساب کریں:",
+      "ps": "له لاندې معلوماتو څخه Q₁، D₈ او P₆₀ محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-19"
+    },
+    {
+      "id": "stat11-s080-sol19",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-19"
+    },
+    {
+      "id": "stat11-s080-n2",
+      "en": "Here Σf = 60 is even",
+      "ur": "یہاں Σf = 60 جفت ہے",
+      "ps": "دلته Σf = 60 جفت دی",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-19"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s080-n1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s080-c3",
+        "stat11-s080-ex19",
+        "stat11-s080-q19"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s080-sol19"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s080-n2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    }
+  ],
+  "vocabulary": {},
+  "tables": [
+    {
+      "caption": "Example 2.18: arranged data with cumulative frequency",
+      "captionUrdu": "مثال 2.18: جمعی تعدد کے ساتھ ترتیب شدہ اعداد و شمار",
+      "captionPashto": "بېلګه 2.18: له مجموعي فریکونسي سره ترتیب شوي معلومات",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ],
+        [
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "43",
+            "ur": "43",
+            "ps": "43"
+          }
+        ],
+        [
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          }
+        ],
+        [
+          {
+            "en": "44",
+            "ur": "44",
+            "ps": "44"
+          },
+          {
+            "en": "23",
+            "ur": "23",
+            "ps": "23"
+          },
+          {
+            "en": "93",
+            "ur": "93",
+            "ps": "93"
+          }
+        ],
+        [
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "115",
+            "ur": "115",
+            "ps": "115"
+          }
+        ],
+        [
+          {
+            "en": "55",
+            "ur": "55",
+            "ps": "55"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          }
+        ],
+        [
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "08",
+            "ur": "08",
+            "ps": "08"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-18",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.19: classes and frequency",
+      "captionUrdu": "مثال 2.19: جماعتیں اور تعدد",
+      "captionPashto": "بېلګه 2.19: ټولګي او فریکونسي",
+      "headers": [
+        {
+          "en": "Classes:",
+          "ur": "جماعتیں:",
+          "ps": "ټولګي:"
+        },
+        {
+          "en": "0 – 4",
+          "ur": "0 – 4",
+          "ps": "0 – 4"
+        },
+        {
+          "en": "5 – 9",
+          "ur": "5 – 9",
+          "ps": "5 – 9"
+        },
+        {
+          "en": "10–14",
+          "ur": "10–14",
+          "ps": "10–14"
+        },
+        {
+          "en": "15–19",
+          "ur": "15–19",
+          "ps": "15–19"
+        },
+        {
+          "en": "20–24",
+          "ur": "20–24",
+          "ps": "20–24"
+        },
+        {
+          "en": "25–29",
+          "ur": "25–29",
+          "ps": "25–29"
+        },
+        {
+          "en": "30–34",
+          "ur": "30–34",
+          "ps": "30–34"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-19"
+    },
+    {
+      "caption": "Example 2.19: class boundaries and c.f",
+      "captionUrdu": "مثال 2.19: جماعتی سرحدیں اور c.f",
+      "captionPashto": "بېلګه 2.19: د ټولګي پولې او c.f",
+      "headers": [
+        {
+          "en": "Classes",
+          "ur": "جماعتیں",
+          "ps": "ټولګي"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "Class boundaries",
+          "ur": "جماعتی سرحدیں",
+          "ps": "د ټولګي پولې"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "0 – 4",
+            "ur": "0 – 4",
+            "ps": "0 – 4"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "−0.5 – 4.5",
+            "ur": "−0.5 – 4.5",
+            "ps": "−0.5 – 4.5"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "5 – 9",
+            "ur": "5 – 9",
+            "ps": "5 – 9"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4.5 – 9.5",
+            "ur": "4.5 – 9.5",
+            "ps": "4.5 – 9.5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ],
+        [
+          {
+            "en": "10 – 14",
+            "ur": "10 – 14",
+            "ps": "10 – 14"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "9.5 – 14.5",
+            "ur": "9.5 – 14.5",
+            "ps": "9.5 – 14.5"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "15 – 19",
+            "ur": "15 – 19",
+            "ps": "15 – 19"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "14.5 – 19.5",
+            "ur": "14.5 – 19.5",
+            "ps": "14.5 – 19.5"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          }
+        ],
+        [
+          {
+            "en": "20 – 24",
+            "ur": "20 – 24",
+            "ps": "20 – 24"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "19.5 – 24.5",
+            "ur": "19.5 – 24.5",
+            "ps": "19.5 – 24.5"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          }
+        ],
+        [
+          {
+            "en": "25 – 29",
+            "ur": "25 – 29",
+            "ps": "25 – 29"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "24.5 – 29.5",
+            "ur": "24.5 – 29.5",
+            "ps": "24.5 – 29.5"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          }
+        ],
+        [
+          {
+            "en": "30 – 34",
+            "ur": "30 – 34",
+            "ps": "30 – 34"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "29.5 – 34.5",
+            "ur": "29.5 – 34.5",
+            "ps": "29.5 – 34.5"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-19",
+      "role": "solution"
+    }
+  ],
+  "equations": [
+    {
+      "id": "stat11-s080-a1",
+      "latex": "\\text{(i)}\\ \\therefore Q_2=2\\left(\\dfrac{\\sum f}{4}\\right)\\text{th value}=2\\left(\\dfrac{140}{4}\\right)\\text{th value}=70\\text{th value.}",
+      "accessible": "(i) ∴ Q2 = 2(Σf/4)th value = 2(140/4)th value = 70th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) ∴ Q2 = 2(Σf/4)th value = 2(140/4)th value = 70th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) ∴ Q2 = 2(Σf/4)th value = 2(140/4)th value = 70th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) ∴ Q2 = 2(Σf/4)th value = 2(140/4)th value = 70th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-a1b",
+      "latex": "\\Rightarrow Q_2=40",
+      "accessible": "⇒ Q2 = 40",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "⇒ Q2 = 40"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "⇒ Q2 = 40"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "⇒ Q2 = 40"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-a2",
+      "latex": "\\text{(ii)}\\ D_6=6\\left(\\dfrac{\\sum f}{10}\\right)\\text{th value}=6\\left(\\dfrac{140}{10}\\right)\\text{th value}=84\\text{th value.}",
+      "accessible": "(ii) D6 = 6(Σf/10)th value = 6(140/10)th value = 84th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(ii) D6 = 6(Σf/10)th value = 6(140/10)th value = 84th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(ii) D6 = 6(Σf/10)th value = 6(140/10)th value = 84th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(ii) D6 = 6(Σf/10)th value = 6(140/10)th value = 84th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-a2b",
+      "latex": "\\Rightarrow D_6=44",
+      "accessible": "⇒ D6 = 44",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "⇒ D6 = 44"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "⇒ D6 = 44"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "⇒ D6 = 44"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-a3",
+      "latex": "\\text{(iii)}\\ P_{25}=25\\left(\\dfrac{\\sum f}{100}\\right)\\text{th value}=25\\left(\\dfrac{140}{100}\\right)\\text{th value}=35\\text{th value.}",
+      "accessible": "(iii) P25 = 25(Σf/100)th value = 25(140/100)th value = 35th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(iii) P25 = 25(Σf/100)th value = 25(140/100)th value = 35th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(iii) P25 = 25(Σf/100)th value = 25(140/100)th value = 35th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(iii) P25 = 25(Σf/100)th value = 25(140/100)th value = 35th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-a3b",
+      "latex": "\\Rightarrow P_{25}=36",
+      "accessible": "⇒ P25 = 36",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "⇒ P25 = 36"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "⇒ P25 = 36"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "⇒ P25 = 36"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-18"
+    },
+    {
+      "id": "stat11-s080-b1",
+      "latex": "\\text{(i)}\\ Q_1=\\left(\\dfrac{\\sum f}{4}\\right)\\text{th value}=\\left(\\dfrac{60}{4}\\right)\\text{th value}=15\\text{th value.}",
+      "accessible": "(i) Q1 = (Σf/4)th value = (60/4)th value = 15th value.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "(i) Q1 = (Σf/4)th value = (60/4)th value = 15th value."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "(i) Q1 = (Σf/4)th value = (60/4)th value = 15th value."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "(i) Q1 = (Σf/4)th value = (60/4)th value = 15th value."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-19"
+    }
+  ],
+  "sourceNote": "Printed page 72. The right-hand working of Example 2.18 is printed beside the table and follows it here. Printed \"0 – 4\" class with boundary \"−0.5 – 4.5\" and the \"08\" frequency are as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:37:12.602057+00:00",
+    "scope": "Scan 80 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

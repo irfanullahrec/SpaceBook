@@ -1,0 +1,35 @@
+@printed 11
+@status lesson
+m Step 1.  Read NUM, N1, N2
+m Step 2.  Set M = 0 [Initialize M.]
+m Step 3.  For A=N1 to N2
+m Step 4.  Set MUL= NUM % A    (% is used for remainder)
+m Step 5.  If MUL = 0 Then M=M+1
+m Step 6.  Next A
+m Step 7.  Write M
+m Step 8.  Exit
+@issue Printed logic error in Problem 12: "MUL = NUM % A" tests whether A divides NUM (i.e. counts the factors of NUM between N1 and N2), not the multiples of NUM. To count multiples it should be "MUL = A % NUM". Kept as printed.
+p **مسئلہ نمبر 13:** کسی بھی دیئے گئے عدد کے لیے ضرب کا پہاڑہ بنانا۔ || **Problem 13:** Make the multiplication table of any given number. || **۱۳ ستونزه:** د هر ورکړل شوي عدد لپاره د ضرب جدول جوړ کړئ.
+p الگورتھم: یہ الگورتھم دیئے گئے عدد NUM کے لیے پہاڑہ بناتا ہے۔ || Algorithm: this algorithm makes the table for the given number NUM. || الګوریتم: دا الګوریتم د ورکړل شوي عدد NUM لپاره د ضرب جدول جوړوي.
+m Step 1.  Set C=1 [Initialize counter.]
+m Step 2.  Read NUM
+m Step 3.  Repeat Steps 4,5 and 6 while C<=10
+m Step 4.  Set TAB= NUM*C
+m Step 5.  Write NUM '*' C '=' TAB
+m Step 6.  C=C+1 [Increment counter variable.]
+m          [End of while loop]
+m Step 7.  Exit
+p **مسئلہ نمبر 14:** سینٹی گریڈ درجہ حرارت کو فارن ہائیٹ درجہ حرارت میں تبدیل کرنا۔ || **Problem 14:** Convert a centigrade temperature into Fahrenheit. || **۱۴ ستونزه:** د سانتي ګراد تودوخه په فارنهایټ بدله کړئ.
+p الگورتھم: یہ الگورتھم سینٹی گریڈ درجہ حرارت C کو فارن ہائیٹ F درجہ حرارت میں تبدیل کرتا ہے۔ || Algorithm: this algorithm converts the centigrade temperature C into the Fahrenheit temperature F. || الګوریتم: دا الګوریتم د سانتي ګراد تودوخه C په فارنهایټ تودوخه F بدلوي.
+m Step 1.  Read C
+m Step 2.  Set F= 32+C*9/5
+m Step 3.  Write F
+m Step 4.  Exit
+p **مسئلہ نمبر 15:** فارن ہائیٹ درجہ حرارت کو سینٹی گریڈ درجہ حرارت میں تبدیل کرنا۔ || **Problem 15:** Convert a Fahrenheit temperature into centigrade. || **۱۵ ستونزه:** د فارنهایټ تودوخه په سانتي ګراد بدله کړئ.
+p الگورتھم: یہ الگورتھم فارن ہائیٹ درجہ حرارت F کو سینٹی گریڈ C درجہ حرارت میں تبدیل کرتا ہے۔ || Algorithm: this algorithm converts the Fahrenheit temperature F into the centigrade temperature C. || الګوریتم: دا الګوریتم د فارنهایټ تودوخه F په سانتي ګراد تودوخه C بدلوي.
+m Step 1.  Read F
+m Step 2.  Set C= (F-32)*5/9
+m Step 3.  Write C
+m Step 4.  Exit
+p **مسئلہ نمبر 16:** دو صحیح اعداد کے درمیان تمام جفت اعداد معلوم کرنا (جبکہ n2 بڑا ہے n1 سے)۔ || **Problem 16:** Find all even numbers between two integers (where n2 is greater than n1). || **۱۶ ستونزه:** د دوو بشپړو عددونو ترمنځ ټول جفت عددونه معلوم کړئ (په داسې حال کې چې n2 له n1 لوی دی).
+p الگورتھم: یہ الگورتھم دو اعداد n1 اور n2 کے درمیان آنے والے تمام جفت اعداد معلوم کرتا ہے جبکہ n1 چھوٹا ہے n2 سے اور n1 ایک جفت عدد ہے۔ || Algorithm: this algorithm finds all even numbers lying between two numbers n1 and n2, where n1 is smaller than n2 and n1 is an even number. || الګوریتم: دا الګوریتم د n1 او n2 ترمنځ ټول جفت عددونه معلوموي، په داسې حال کې چې n1 له n2 کوچنی او n1 جفت عدد دی.

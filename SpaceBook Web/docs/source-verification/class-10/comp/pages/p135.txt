@@ -1,0 +1,59 @@
+@printed 123
+@status lesson
+p … طرف اور B کی قیمتیں بائیں (Left) طرف ہیں۔ زیرِ نظر شکل اس کی تفصیل بیان کر رہی ہے: || … are along the top and the values of B along the left. The figure below shows this in detail: || … او د B ارزښتونه کیڼ (Left) لوري ته دي. لاندې شکل یې تفصیل ښيي:
+svg شکل نمبر 6.12 K-map اور ٹرُتھ ٹیبل || Figure 6.12 K-map and truth table || ۶.۱۲ شکل K-map او د حقیقت جدول
+<svg viewBox="0 0 480 190" width="480" role="img" aria-label="Left: a truth table with columns A, B, F and rows 0 0 0, 0 1 1, 1 0 1 (marked with an arrow), 1 1 1, labelled Truth Table. Right: a 2-variable K-map with A (0,1) across the top and B (0,1) down the side; cells: B=0 row 0, 1 (marked with an arrow); B=1 row 1, 1; labelled F" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<defs><marker id="arF612" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0e7490"/></marker></defs>
+<path d="M20 30 H170 M120 14 V150" stroke="#111827"/>
+<text x="40" y="24">A</text><text x="75" y="24">B</text><text x="145" y="24">F</text>
+<text x="40" y="52">0</text><text x="75" y="52">0</text><text x="145" y="52">0</text>
+<text x="40" y="80">0</text><text x="75" y="80">1</text><text x="145" y="80">1</text>
+<text x="40" y="108">1</text><text x="75" y="108">0</text><text x="145" y="108">1</text>
+<text x="40" y="136">1</text><text x="75" y="136">1</text><text x="145" y="136">1</text>
+<path d="M190 103 H160" stroke="#0e7490" marker-end="url(#arF612)"/>
+<text x="90" y="178">Truth Table</text>
+<path d="M280 10 L310 40" stroke="#111827"/><text x="300" y="18">A</text><text x="286" y="44">B</text>
+<text x="350" y="34">0</text><text x="420" y="34">1</text><text x="298" y="74">0</text><text x="298" y="134">1</text>
+<rect x="310" y="40" width="140" height="120" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M380 40 V160 M310 100 H450" stroke="#111827" stroke-width="2"/>
+<text x="345" y="76">0</text><text x="415" y="76">1</text><text x="345" y="136">1</text><text x="415" y="136">1</text>
+<path d="M478 70 H458" stroke="#0e7490" marker-end="url(#arF612)"/>
+<text x="380" y="182">F</text>
+</svg>
+endsvg
+p مثال کے طور پر، map کے اوپر دائیں بائیں کونے پر مربع میں A = 1 اور B = 0 ہے۔ یہ مربع ٹرُتھ ٹیبل کی اس قطار سے مطابقت رکھتا ہے جہاں A = 1، B = 0 اور F = 1 ہے۔ یہ بات قابلِ غور ہے کہ F والے کالم میں درج قیمتیں کسی خاص فنکشن کی نمائندگی کرتی ہے جس کے لیے کارناف میپ بنایا گیا ہے۔ || For example, in the square at the top-right corner of the map, A = 1 and B = 0. This square corresponds to the row of the truth table where A = 1, B = 0 and F = 1. Note that the values in the F column represent the particular function for which the Karnaugh map has been made. || د بېلګې په توګه، د نقشې په پورته ښي کونج کې مربع کې A = 1 او B = 0 دي. دا مربع د حقیقت جدول له هغې کرښې سره سمون لري چې A = 1، B = 0 او F = 1 دي. د پام وړ ده چې د F په ستن کې ارزښتونه هغه ځانګړی فنکشن ښيي چې کارناف نقشه ورته جوړه شوې.
+@issue The text says the square is at the "top right-left corner" (اوپر دائیں بائیں کونے); it is the top-right square.
+### کارناف میپ — اختصار کے قواعد || Karnaugh map — rules of simplification || کارناف نقشه — د لنډولو قواعد
+p کارناف میپ اختصار کے لیے متصل سیلوں جن میں 1 درج ہو کو درج ذیل قواعد و ضوابط کے تحت ایک گروپ میں لے آتا ہے۔ اس طرح ان گروپوں کی مدد سے عبارت مختصر ہو جاتی ہے۔ || For simplification, the Karnaugh map brings adjacent cells containing 1 into a group under the following rules. In this way the expression is shortened with the help of these groups. || د لنډولو لپاره کارناف نقشه هغه نښتې حجرې چې 1 لري د لاندې قواعدو له مخې په یوه ډله کې راولي. په دې ډول د دې ډلو په مرسته عبارت لنډېږي.
+- گروپ میں کوئی ایسا سیل نہیں آ سکتا جس میں زیرو درج ہو۔ || A group cannot contain any cell that has a zero in it. || په ډله کې داسې حجره نشي راتلای چې صفر ولري.
+svg شکل نمبر 6.13 1 کے گروپ والا میپ || Figure 6.13 Map with a group of 1s || ۶.۱۳ شکل د 1 ډله لرونکې نقشه
+<svg viewBox="0 0 480 170" width="480" role="img" aria-label="Two K-maps. Left, marked WRONG: a group drawn round the A=0 column containing 0 (top) and 1 (bottom). Right, marked RIGHT: cells 0 at top-left, and a group round the bottom row containing 1 and 1" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<g id="km613">
+<path d="M20 6 L50 36" stroke="#111827"/><text x="40" y="14">A</text><text x="26" y="40">B</text>
+<text x="85" y="30">0</text><text x="155" y="30">1</text><text x="38" y="66">0</text><text x="38" y="116">1</text>
+<rect x="50" y="36" width="140" height="100" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M120 36 V136 M50 86 H190" stroke="#111827" stroke-width="2"/></g>
+<text x="85" y="68">0</text><text x="85" y="118">1</text>
+<rect x="68" y="44" width="34" height="84" rx="12" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="216" y="100" font-size="30">✗</text><text x="120" y="160" font-family="Arial">WRONG ✗</text>
+<use href="#km613" x="250"/>
+<text x="335" y="68">0</text><text x="335" y="118">1</text><text x="405" y="118">1</text>
+<rect x="308" y="98" width="124" height="32" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="462" y="100" font-size="30">✓</text><text x="370" y="160" font-family="Arial">RIGHT ✓</text>
+</svg>
+endsvg
+- گروپ افقی یا عمودی ہو سکتے ہیں، لیکن ترچھے نہیں ہو سکتے۔ || Groups can be horizontal or vertical, but not diagonal. || ډلې افقي یا عمودي کېدای شي، خو کږې (ترچهې) نشي کېدای.
+svg شکل نمبر 6.14 گروپ میں ترچھے سیل شامل نہیں || Figure 6.14 A group cannot contain diagonal cells || ۶.۱۴ شکل په ډله کې کږې حجرې نه شاملېږي
+<svg viewBox="0 0 480 170" width="480" role="img" aria-label="Two K-maps. Left, marked WRONG: cells 0, 1 on top and 1, 0 below, with a diagonal group joining the two 1s. Right, marked RIGHT: cells 0, 1 on top and 1, 1 below, with a vertical group round the A=1 column and a horizontal group round the bottom row" font-family="Georgia, Times New Roman, serif" font-size="15" text-anchor="middle">
+<g id="km614">
+<path d="M20 6 L50 36" stroke="#111827"/><text x="40" y="14">A</text><text x="26" y="40">B</text>
+<text x="85" y="30">0</text><text x="155" y="30">1</text><text x="38" y="66">0</text><text x="38" y="116">1</text>
+<rect x="50" y="36" width="140" height="100" fill="#fff" stroke="#111827" stroke-width="2"/><path d="M120 36 V136 M50 86 H190" stroke="#111827" stroke-width="2"/></g>
+<text x="85" y="68">0</text><text x="155" y="68">1</text><text x="85" y="118">1</text><text x="155" y="118">0</text>
+<path d="M150 50 L172 62 L95 128 L70 116 Z" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="216" y="100" font-size="30">✗</text><text x="120" y="160" font-family="Arial">WRONG ✗</text>
+<use href="#km614" x="250"/>
+<text x="335" y="68">0</text><text x="405" y="68">1</text><text x="335" y="118">1</text><text x="405" y="118">1</text>
+<rect x="388" y="44" width="34" height="86" rx="12" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<rect x="312" y="100" width="124" height="30" rx="10" fill="none" stroke="#475569" stroke-dasharray="4 3"/>
+<text x="462" y="100" font-size="30">✓</text><text x="370" y="160" font-family="Arial">RIGHT ✓</text>
+</svg>
+endsvg

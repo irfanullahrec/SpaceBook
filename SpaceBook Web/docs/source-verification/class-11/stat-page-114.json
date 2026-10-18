@@ -1,0 +1,658 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s114-sd-5",
+  "title": "Example 3.12: direct method · shortcut method formulas",
+  "headingUrdu": "مثال 3.12: براہِ راست طریقہ · مختصر طریقے کے فارمولے",
+  "headingPashto": "بېلګه 3.12: مستقیم طریقه · د لنډې طریقې فورمولونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 114,
+    "printedPage": "106"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s114-c1",
+      "en": "distribution:",
+      "ur": "تقسیم:",
+      "ps": "ویش:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-12",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"Compute standard deviation and variance from the following frequency\")."
+      }
+    },
+    {
+      "id": "stat11-s114-sol12",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-m1",
+      "en": "(i) By direct method",
+      "ur": "(i) براہِ راست طریقے سے",
+      "ps": "(i) په مستقیم طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-m2",
+      "en": "(ii) By shortcut method",
+      "ur": "(ii) مختصر طریقے سے",
+      "ps": "(ii) په لنډه طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-12"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s114-c1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s114-sol12",
+        "stat11-s114-m1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s114-m2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s114-a",
+      "latex": "S=\\sqrt{\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}}",
+      "accessible": "S = √(Σf(x − x̄)²/Σf)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σf(x − x̄)²/Σf)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-b",
+      "latex": "S^2=\\dfrac{\\sum f(x-\\bar{x})^2}{\\sum f}",
+      "accessible": "S² = Σf(x − x̄)²/Σf",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = Σf(x − x̄)²/Σf"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-c",
+      "latex": "\\bar{x}=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{158}{50}=3.16",
+      "accessible": "x̄ = Σfx/Σf = 158/50 = 3.16   [printed \"fx/f\"]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 158/50 = 3.16   [printed \"fx/f\"]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 158/50 = 3.16   [printed \"fx/f\"]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σfx/Σf = 158/50 = 3.16   [printed \"fx/f\"]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-d",
+      "latex": "S=\\sqrt{\\dfrac{72.72}{50}}=\\sqrt{1.4544}=1.21\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "S = √(72.72/50) = √1.4544 = 1.21   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(72.72/50) = √1.4544 = 1.21   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(72.72/50) = √1.4544 = 1.21   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(72.72/50) = √1.4544 = 1.21   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-e",
+      "latex": "S^2=\\dfrac{72.72}{50}=1.4545",
+      "accessible": "S² = 72.72/50 = 1.4545",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = 72.72/50 = 1.4545"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = 72.72/50 = 1.4545"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = 72.72/50 = 1.4545"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-f",
+      "latex": "\\text{Coefficient of S.D}=\\dfrac{S}{\\bar{x}}=\\dfrac{1.22}{3.16}=0.39\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of S.D = S/x̄ = 1.22/3.16 = 0.39   (Relative dispersion)   [printed 1.22]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of S.D = S/x̄ = 1.22/3.16 = 0.39   (Relative dispersion)   [printed 1.22]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of S.D = S/x̄ = 1.22/3.16 = 0.39   (Relative dispersion)   [printed 1.22]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of S.D = S/x̄ = 1.22/3.16 = 0.39   (Relative dispersion)   [printed 1.22]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-g",
+      "latex": "S=\\sqrt{\\dfrac{\\sum fx^2}{\\sum f}-\\left(\\dfrac{\\sum fx}{\\sum f}\\right)^2}",
+      "accessible": "S = √(Σfx²/Σf − (Σfx/Σf)²)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σfx²/Σf − (Σfx/Σf)²)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s114-h",
+      "latex": "S^2=\\dfrac{\\sum fx^2}{\\sum f}-\\left(\\dfrac{\\sum fx}{\\sum f}\\right)^2",
+      "accessible": "S² = Σfx²/Σf − (Σfx/Σf)²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = Σfx²/Σf − (Σfx/Σf)²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-12"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.12: x and f",
+      "captionUrdu": "مثال 3.12: x اور f",
+      "captionPashto": "بېلګه 3.12: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "caption": "Example 3.12: direct method table",
+      "captionUrdu": "مثال 3.12: براہِ راست طریقے کا جدول",
+      "captionPashto": "بېلګه 3.12: د مستقیمې طریقې جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        },
+        {
+          "en": "f(x − x̄)²",
+          "ur": "f(x − x̄)²",
+          "ps": "f(x − x̄)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-2.16",
+            "ur": "-2.16",
+            "ps": "-2.16"
+          },
+          {
+            "en": "4.6656",
+            "ur": "4.6656",
+            "ps": "4.6656"
+          },
+          {
+            "en": "23.328",
+            "ur": "23.328",
+            "ps": "23.328"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "-1.16",
+            "ur": "-1.16",
+            "ps": "-1.16"
+          },
+          {
+            "en": "1.3456",
+            "ur": "1.3456",
+            "ps": "1.3456"
+          },
+          {
+            "en": "13.456",
+            "ur": "13.456",
+            "ps": "13.456"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "-0.16",
+            "ur": "-0.16",
+            "ps": "-0.16"
+          },
+          {
+            "en": "0.0256",
+            "ur": "0.0256",
+            "ps": "0.0256"
+          },
+          {
+            "en": "0.384",
+            "ur": "0.384",
+            "ps": "0.384"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          },
+          {
+            "en": "0.84",
+            "ur": "0.84",
+            "ps": "0.84"
+          },
+          {
+            "en": "0.7056",
+            "ur": "0.7056",
+            "ps": "0.7056"
+          },
+          {
+            "en": "8.467",
+            "ur": "8.467",
+            "ps": "8.467"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "1.84",
+            "ur": "1.84",
+            "ps": "1.84"
+          },
+          {
+            "en": "3.386",
+            "ur": "3.386",
+            "ps": "3.386"
+          },
+          {
+            "en": "27.08",
+            "ur": "27.08",
+            "ps": "27.08"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "158",
+            "ur": "158",
+            "ps": "158"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "72.72",
+            "ur": "72.72",
+            "ps": "72.72"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-12"
+    }
+  ],
+  "sourceNote": "Printed page 106. The x and f rows continue the question of Example 3.12 and are shown as a table. The printed 1.4544 and 1.4545 differ slightly, and the printed coefficient uses 1.22 for S (S = 1.21 above); all kept as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:50:16.712340+00:00",
+    "scope": "Scan 114 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s090-gm-adv-hm",
+  "title": "2.5.2 Advantages and disadvantages of geometric mean · 2.6 Harmonic mean · Example 2.32",
+  "headingUrdu": "2.5.2 ہندسی اوسط کے فوائد اور نقصانات · 2.6 ہارمونی اوسط · مثال 2.32",
+  "headingPashto": "2.5.2 د هندسي اوسط ګټې او زیانونه · 2.6 هارمونیک اوسط · بېلګه 2.32",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 90,
+    "printedPage": "82"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s090-h252",
+      "en": "2.5.2 Advantages and disadvantages of geometric mean.",
+      "ur": "2.5.2 ہندسی اوسط کے فوائد اور نقصانات۔",
+      "ps": "2.5.2 د هندسي اوسط ګټې او زیانونه.",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s090-ah",
+      "en": "Advantages:",
+      "ur": "فوائد:",
+      "ps": "ګټې:"
+    },
+    {
+      "id": "stat11-s090-a1",
+      "en": "(i) It takes into account all values of a series.",
+      "ur": "(i) یہ سلسلے کی تمام قدروں کو مدنظر رکھتا ہے۔",
+      "ps": "(i) دا د لړۍ ټول ارزښتونه په پام کې نیسي.",
+      "listGroup": "gm-adv"
+    },
+    {
+      "id": "stat11-s090-a2",
+      "en": "(ii) It gives more weight to smaller values and less weight to larger values. Hence it is a better measure than arithmetic mean.",
+      "ur": "(ii) یہ چھوٹی قدروں کو زیادہ وزن اور بڑی قدروں کو کم وزن دیتا ہے۔ لہٰذا یہ حسابی اوسط سے بہتر پیمانہ ہے۔",
+      "ps": "(ii) دا کوچنیو ارزښتونو ته ډېر وزن او لویو ارزښتونو ته لږ وزن ورکوي. نو دا له حسابي اوسط څخه ښه اندازه ده.",
+      "listGroup": "gm-adv"
+    },
+    {
+      "id": "stat11-s090-a3",
+      "en": "(iii) It is not affected by fluctuations of sampling.",
+      "ur": "(iii) یہ نمونہ سازی کے اتار چڑھاؤ سے متاثر نہیں ہوتا۔",
+      "ps": "(iii) دا د نمونه‌اخیستنې د بدلونونو لخوا نه اغېزمنېږي.",
+      "listGroup": "gm-adv"
+    },
+    {
+      "id": "stat11-s090-dh",
+      "en": "Disadvantages:",
+      "ur": "نقصانات:",
+      "ps": "زیانونه:"
+    },
+    {
+      "id": "stat11-s090-d1",
+      "en": "(i) It is not easy to calculate.",
+      "ur": "(i) اس کا حساب آسان نہیں۔",
+      "ps": "(i) محاسبه یې اسانه نه ده.",
+      "listGroup": "gm-dis"
+    },
+    {
+      "id": "stat11-s090-d2",
+      "en": "(ii) If one value in the data set is zero, the geometric mean will be zero.",
+      "ur": "(ii) اگر اعداد و شمار کے مجموعے میں ایک قدر صفر ہو تو ہندسی اوسط صفر ہوگا۔",
+      "ps": "(ii) که د معلوماتو په ټولګه کې یو ارزښت صفر وي نو هندسي اوسط به صفر وي.",
+      "listGroup": "gm-dis"
+    },
+    {
+      "id": "stat11-s090-d3",
+      "en": "(iii) If any one or more values are negative, either geometric mean cannot be calculated or an absurd value will be obtained.",
+      "ur": "(iii) اگر کوئی ایک یا زیادہ قدریں منفی ہوں تو یا تو ہندسی اوسط حساب نہیں کیا جا سکتا یا ایک بے معنی قدر حاصل ہوگی۔",
+      "ps": "(iii) که هر یو یا ډېر ارزښتونه منفي وي نو یا هندسي اوسط نشي محاسبه کېدای یا یو بې‌معنا ارزښت به ترلاسه شي.",
+      "listGroup": "gm-dis"
+    },
+    {
+      "id": "stat11-s090-h26",
+      "en": "2.6 Harmonic mean",
+      "ur": "2.6 ہارمونی اوسط",
+      "ps": "2.6 هارمونیک اوسط",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s090-t26",
+      "en": "The reciprocal of the arithmetic mean of the reciprocals of the values is called harmonic mean.",
+      "ur": "قدروں کے معکوسات کے حسابی اوسط کا معکوس ہارمونی اوسط کہلاتا ہے۔",
+      "ps": "د ارزښتونو د معکوسونو د حسابي اوسط معکوس هارمونیک اوسط بلل کېږي."
+    },
+    {
+      "id": "stat11-s090-t2",
+      "en": "It is also mathematical average but not very popular. It is used in those places where largest weight is given to small items. It is suitable for averaging time and speed.",
+      "ur": "یہ بھی ریاضیاتی اوسط ہے لیکن زیادہ مقبول نہیں۔ یہ ان جگہوں پر استعمال ہوتا ہے جہاں چھوٹی اشیاء کو سب سے زیادہ وزن دیا جاتا ہے۔ یہ وقت اور رفتار کا اوسط نکالنے کے لیے موزوں ہے۔",
+      "ps": "دا هم ریاضیاتي اوسط دی خو ډېر مشهور نه دی. دا هغو ځایونو کې کارول کېږي چېرته چې کوچنیو توکو ته تر ټولو ډېر وزن ورکول کېږي. دا د وخت او چټکتیا د اوسط اخیستو لپاره مناسب دی."
+    },
+    {
+      "id": "stat11-s090-h261",
+      "en": "2.6.1 Calculation of harmonic mean",
+      "ur": "2.6.1 ہارمونی اوسط کا حساب",
+      "ps": "2.6.1 د هارمونیک اوسط محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s090-i1",
+      "en": "(i) Harmonic mean in case of individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں ہارمونی اوسط",
+      "ps": "(i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې هارمونیک اوسط"
+    },
+    {
+      "id": "stat11-s090-ex32",
+      "en": "Example: 2.32",
+      "ur": "مثال: 2.32",
+      "ps": "بېلګه: 2.32",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-32"
+    },
+    {
+      "id": "stat11-s090-q32",
+      "en": "Five tractors are running at the rate of 10, 20, 30, 40, 50 km/hour respectively. What would be the average speed? Use harmonic mean.",
+      "ur": "پانچ ٹریکٹر بالترتیب 10, 20, 30, 40, 50 کلومیٹر فی گھنٹہ کی رفتار سے چل رہے ہیں۔ اوسط رفتار کیا ہوگی؟ ہارمونی اوسط استعمال کریں۔",
+      "ps": "پنځه ټراکټورونه په ترتیب سره 10, 20, 30, 40, 50 کیلومتر په ساعت چټکتیا روان دي. اوسط چټکتیا به څومره وي؟ هارمونیک اوسط وکاروئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-32",
+      "sourceGap": {
+        "note": "The solution of Example 2.32 follows on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s090-h252",
+        "stat11-s090-ah",
+        "stat11-s090-a1",
+        "stat11-s090-a2",
+        "stat11-s090-a3",
+        "stat11-s090-dh",
+        "stat11-s090-d1",
+        "stat11-s090-d2",
+        "stat11-s090-d3",
+        "stat11-s090-h26",
+        "stat11-s090-t26"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s090-t2",
+        "stat11-s090-h261",
+        "stat11-s090-i1",
+        "stat11-s090-ex32",
+        "stat11-s090-q32"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "harmonic mean": {
+      "ur": "ہارمونی اوسط",
+      "ps": "هارمونیک اوسط"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s090-hm1",
+      "latex": "\\text{H.M}=\\dfrac{n}{\\sum_{i=1}^{n}\\dfrac{1}{x_i}}\\qquad\\text{(Formula for ungrouped data)}",
+      "accessible": "H.M = n / (Σ (i = 1 to n) 1/xi)   (Formula for ungrouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "H.M = n / (Σ (i = 1 to n) 1/xi)   (Formula for ungrouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "H.M = n / (Σ (i = 1 to n) 1/xi)   (Formula for ungrouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "H.M = n / (Σ (i = 1 to n) 1/xi)   (Formula for ungrouped data)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s090-hm2",
+      "latex": "=\\dfrac{\\sum f_i}{\\sum_{i=1}^{n}\\dfrac{f_i}{x_i}}\\qquad\\text{(Formula for grouped data)}",
+      "accessible": "= (Σ fi) / (Σ (i = 1 to n) fi/xi)   (Formula for grouped data)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (Σ fi) / (Σ (i = 1 to n) fi/xi)   (Formula for grouped data)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (Σ fi) / (Σ (i = 1 to n) fi/xi)   (Formula for grouped data)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (Σ fi) / (Σ (i = 1 to n) fi/xi)   (Formula for grouped data)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 82. A ghost of the following page-number bar shows at the foot. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:40:38.383809+00:00",
+    "scope": "Scan 90 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

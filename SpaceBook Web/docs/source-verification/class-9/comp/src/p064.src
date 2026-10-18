@@ -1,0 +1,19 @@
+@printed 56
+@status lesson
+### Syntax: || سنٹیکس: || Syntax:
+p The Syntax of declaring constants with *const* qualifier is as follows: || *const* کوالیفائر کے ساتھ کانسٹنٹس کے اعلان کا سنٹیکس یہ ہے: || د *const* qualifier سره د ثابتونو د اعلان syntax دا دی:
+m const data type identifier = value;
+p ***const*** is a keyword used to define a constant. ***data type*** indicates the data type of the constant. ***identifier*** represents the name of the constant. ***value*** represents the value with which the constant is initialized. || ***const*** کانسٹنٹ کی تعریف کے لیے کی ورڈ ہے۔ ***data type*** کانسٹنٹ کی ڈیٹا ٹائپ بتاتی ہے۔ ***identifier*** کانسٹنٹ کا نام ہے۔ ***value*** وہ قدر ہے جس سے کانسٹنٹ شروع کیا جاتا ہے۔ || ***const*** د ثابت د تعریف keyword دی. ***data type*** د ثابت ډېټا ډول ښيي. ***identifier*** د ثابت نوم دی. ***value*** هغه ارزښت دی چې ثابت پرې پیلېږي.
+### Examples: || مثالیں: || بېلګې:
+m const int N= 100;
+m const float R=3.5;
+p The above examples define an integer constant N that is initialized with 100 and a float constant R that is initialized with 3.5. These values cannot be changed during the execution of program. || اوپر والی مثالیں ایک انٹیجر کانسٹنٹ N کی تعریف کرتی ہیں جسے 100 سے شروع کیا گیا اور ایک فلوٹ کانسٹنٹ R جسے 3.5 سے شروع کیا گیا۔ یہ قدریں پروگرام کے چلنے کے دوران بدلی نہیں جا سکتیں۔ || پورتنۍ بېلګې یو integer ثابت N تعریفوي چې په 100 پیل شوی او یو float ثابت R چې په 3.5 پیل شوی. دا ارزښتونه د پروګرام د اجرا پر مهال نه شي بدلېدای.
+p The same can be achieved using **#define** preprocessor as: || یہی کام **#define** پری پروسیسر سے یوں کیا جا سکتا ہے: || همدا کار د **#define** preprocessor په مرسته داسې کېدای شي:
+m #define N 100
+m #define R 3.5
+### 2.4.7 Declaration and Initialization of Variables || 2.4.7 متغیرات کا اعلان اور ابتدائی قدر || ۲.۴.۷ د متغیرونو اعلان او پیلنی ارزښت
+### Declaration of Variables || متغیرات کا اعلان || د متغیرونو اعلان
+p Assigning the name and data type that a variable can hold is called declaration of the variable. All variables that are used in a program are declared using variable declaration statement. || متغیر کو نام اور وہ ڈیٹا ٹائپ دینا جو وہ رکھ سکتا ہے متغیر کا اعلان کہلاتا ہے۔ پروگرام میں استعمال ہونے والے تمام متغیرات کا اعلان متغیر کے اعلان کی اسٹیٹمنٹ سے کیا جاتا ہے۔ || متغیر ته نوم او هغه ډېټا ډول ورکول چې ساتلی یې شي د متغیر اعلان بلل کېږي. په پروګرام کې ټول کارېدونکي متغیرونه د متغیر د اعلان بیان په مرسته اعلانېږي.
+p The Syntax to declare a variable in C is: || C میں متغیر کے اعلان کا سنٹیکس یہ ہے: || په C کې د متغیر د اعلان syntax دا دی:
+m DataType  List of variables;
+p Where, **Data Type** specifies data type of variables. For example, **int, float**, etc. **List of variables** specifies a list of variables separated by commas. Different statements are used to declare variables of different data types. || جہاں **Data Type** متغیرات کی ڈیٹا ٹائپ بتاتی ہے، مثلاً **int، float** وغیرہ۔ **List of variables** کوما سے الگ کیے گئے متغیرات کی فہرست ہے۔ مختلف ڈیٹا ٹائپس کے متغیرات کے اعلان کے لیے الگ الگ اسٹیٹمنٹس استعمال ہوتی ہیں۔ || چې **Data Type** د متغیرونو ډېټا ډول ټاکي، لکه **int، float** او نور. **List of variables** په کامو جلا شویو متغیرونو لست دی. د بېلابېلو ډېټا ډولونو متغیرونو لپاره بېل بیانونه کارېږي.

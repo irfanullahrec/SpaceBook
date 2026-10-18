@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Figure 6.8 producing electrical energy / information: flea catapult / Example 6.4 statement'
+SECTIONS = [
+    ('fig6.8', ('Figure 6.8 PRODUCING ELECTRICAL ENERGY', 'شکل 6.8 برقی توانائی پیدا کرنا', '6.8 شکل د برقي انرژۍ تولید'), [
+        ('fig', 'Figure 6.8: In a power station, energy from a fuel (like burning coal) is used to boil water. The light-pressure steam is used to turn a turbine, which turns a generator to produce electricity. (Labels: coal, pollutants, boiler, steam, turbine, generator, transformer, condenser, water, river.)', 'شکل 6.8: بجلی گھر میں ایندھن (جیسے جلتا کوئلہ) کی توانائی سے پانی ابالا جاتا ہے۔ کم دباؤ کی بھاپ سے ٹربائن گھمائی جاتی ہے جو جنریٹر کو گھما کر بجلی پیدا کرتی ہے۔ (لیبل: کوئلہ، آلودگی، بوائلر، بھاپ، ٹربائن، جنریٹر، ٹرانسفارمر، کنڈنسر، پانی، دریا۔)', '6.8 شکل: په برېښنا کور کې د سونګ (لکه سوځېدونکي سکاره) انرژي د اوبو د ایشولو لپاره کارېږي. د ټیټ فشار بخار ټوربین څرخوي چې جنراتور څرخوي او برېښنا تولیدوي. (لیبلونه: سکاره، ککړتیاوې، بویلر، بخار، ټوربین، جنراتور، ټرانسفارمر، کنډنسر، اوبه، سیند.)'),
+        ('h', 'INFORMATION', 'معلومات', 'معلومات'),
+        ('p', 'Some insects jump using a catapult technique. The knee joint of a flea contains an elastic material called resilin (a rubber-like protein). The flea slowly bends its knee, stretching out the resilin and storing elastic energy, and then locks its knee in place. When the flea is ready to jump, the knee is unlocked and the resilin quickly contracts with a sudden conversion of the stored elastic energy into kinetic energy. Some of this kinetic energy is then converted into gravitational potential energy as the flea moves higher and higher.',
+         'کچھ کیڑے غلیل کی تکنیک سے چھلانگ لگاتے ہیں۔ پسو کے گھٹنے کے جوڑ میں ریزیلن (ربڑ جیسا پروٹین) نامی لچکدار مادہ ہوتا ہے۔ پسو آہستہ آہستہ اپنا گھٹنا موڑتا ہے، ریزیلن کو کھینچتا اور لچکدار توانائی ذخیرہ کرتا ہے، پھر گھٹنے کو اپنی جگہ پر لاک کر دیتا ہے۔ جب پسو چھلانگ کے لیے تیار ہوتا ہے تو گھٹنا کھل جاتا ہے اور ریزیلن تیزی سے سکڑتا ہے اور ذخیرہ شدہ لچکدار توانائی اچانک حرکی توانائی میں بدل جاتی ہے۔ پھر اس حرکی توانائی کا کچھ حصہ تجاذبی مخفی توانائی میں بدل جاتا ہے جیسے جیسے پسو اوپر سے اوپر جاتا ہے۔',
+         'ځینې حشرات د غولیل په تخنیک ټوپ وهي. د پرشه د زنګون په بند کې د ریزیلین (د ربړ په څېر پروټین) په نوم ارتجاعي ماده شته. پرشه ورو ورو زنګون کږوي، ریزیلین کش کوي او ارتجاعي انرژي زېرمه کوي، بیا زنګون په خپل ځای قلفوي. کله چې پرشه ټوپ ته چمتو شي، زنګون خلاصېږي او ریزیلین په چټکۍ سره ټولېږي او زېرمه شوې ارتجاعي انرژي ناڅاپه په حرکي انرژۍ اوړي. بیا د دې حرکي انرژۍ یوه برخه د جاذبې په ذخیروي انرژۍ اوړي څومره چې پرشه پورته ځي.'),
+        ('fig', 'Photograph: a flea.', 'تصویر: پسو۔', 'انځور: پرشه.'),
+    ]),
+    ('ex6.4', ('Example 6.4 ENERGY WITHIN US', 'مثال 6.4 ہمارے اندر کی توانائی', '6.4 مثال زموږ دننه انرژي'), [
+        ('p', 'What is the energy released, when 50 kg person is converted completely into energy?', 'جب 50 kg کا شخص مکمل طور پر توانائی میں تبدیل ہو جائے تو کتنی توانائی خارج ہوگی؟', 'کله چې یو 50 kg کس په بشپړه توګه په انرژۍ واوړي، څومره انرژي خپرېږي؟'),
+    ]),
+]

@@ -1,0 +1,21 @@
+@printed 109
+@status lesson
+### 4.1.7 Difference among all Selection Structure || 4.1.7 تمام سلیکشن اسٹرکچرز میں فرق || ۴.۱.۷ د ټولو انتخابي جوړښتونو توپیر
+p ***if* Statement:** It is used when a single block of statements is to be executed if the condition is true. If the condition is false then the block of statements is skipped and the program execution continues from the statement after *if* block. || ***if* اسٹیٹمنٹ:** یہ اس وقت استعمال ہوتی ہے جب شرط درست ہونے پر اسٹیٹمنٹس کا ایک بلاک چلانا ہو۔ اگر شرط غلط ہو تو بلاک چھوڑ دیا جاتا ہے اور پروگرام *if* بلاک کے بعد والی اسٹیٹمنٹ سے جاری رہتا ہے۔ || ***if* بیان:** هغه وخت کارېږي چې د شرط د سموالي پر مهال د بیانونو یو بلاک اجرا شي. که شرط ناسم وي بلاک پرېښودل کېږي او پروګرام له *if* بلاک وروسته بیان څخه دوام کوي.
+p ***if-else* Statement:** It is used when one block of statements is to be executed if the condition is true. If the condition is false then the block of statements following *if* are skipped and the other block of statements following *else* is executed. It selects one block of statements out of two. || ***if-else* اسٹیٹمنٹ:** یہ اس وقت استعمال ہوتی ہے جب شرط درست ہونے پر ایک بلاک چلانا ہو۔ اگر شرط غلط ہو تو *if* کے بعد والا بلاک چھوڑ کر *else* کے بعد والا دوسرا بلاک چلتا ہے۔ یہ دو میں سے ایک بلاک چنتی ہے۔ || ***if-else* بیان:** هغه وخت کارېږي چې د شرط د سموالي پر مهال یو بلاک اجرا شي. که شرط ناسم وي، له *if* وروسته بلاک پرېښودل کېږي او له *else* وروسته بل بلاک اجرا کېږي. له دوو یو بلاک ټاکي.
+p ***switch-case* Statement:** It is a multiple choice statement. It is used to select a block of statements based on the value of a variable or result of an expression. It compares the value of a variable or the result of an expression that is within the parenthesis after the keyword ***switch*** with values specified in each ***case***. If there is a match, the block of statements following that ***case*** is executed. If there is no match, the ***default*** block of statements is executed if it exists otherwise, the control is transferred to the first statement after ***switch*** block. || ***switch-case* اسٹیٹمنٹ:** یہ کثیر انتخابی اسٹیٹمنٹ ہے۔ یہ کسی متغیر کی قدر یا اظہار کے نتیجے کی بنیاد پر بلاک چننے کے لیے استعمال ہوتی ہے۔ یہ ***switch*** کے بعد قوسین میں موجود متغیر کی قدر یا اظہار کے نتیجے کا ہر ***case*** میں دی گئی قدروں سے موازنہ کرتی ہے۔ مطابقت ہو تو اس ***case*** کا بلاک چلتا ہے۔ مطابقت نہ ہو تو ***default*** بلاک (اگر موجود ہو) چلتا ہے، ورنہ کنٹرول ***switch*** بلاک کے بعد والی پہلی اسٹیٹمنٹ پر چلا جاتا ہے۔ || ***switch-case* بیان:** څو انتخابي بیان دی. د متغیر ارزښت یا د افادې پایلې پر بنسټ د بلاک د ټاکلو لپاره کارېږي. له ***switch*** وروسته په قوسونو کې د متغیر ارزښت یا د افادې پایله له هر ***case*** ارزښتونو سره پرتله کوي. که سمون وي د هماغه ***case*** بلاک اجرا کېږي. که سمون نه وي، ***default*** بلاک (که وي) اجرا کېږي، کنه کنټرول له ***switch*** بلاک وروسته لومړي بیان ته ځي.
+### 4.1.8 Codes for flowcharts of unit-1 || 4.1.8 یونٹ 1 کے فلوچارٹس کے کوڈز || ۴.۱.۸ د ۱ څپرکي د فلوچارټونو کوډونه
+### Program 4.9: A program to find the exponent (E) of a given number (N). || پروگرام 4.9: دیے گئے عدد (N) کی قوت (E) معلوم کرنے کا پروگرام۔ || پروګرام ۴.۹: د ورکړل شوي عدد (N) توان (E) موندل.
+m #include <iostream>
+m #include <cmath>
+m using namespace std;
+m int main()
+m {
+m     float base, exponent, result;
+m     cout << "Enter base and exponent respectively:  ";
+m     cin >> base >> exponent;
+m     result = pow(base, exponent);
+m     cout << base << "^" << exponent << " = " << result;
+m     return 0;
+m }
+@deco A previous owner has pencilled notes around Program 4.9 ("own header file", "#Defin", "main function", "variable", "colon", "result", "power", "header file data type"); not book content.

@@ -1,0 +1,418 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s222-exercise6-a",
+  "title": "Exercise-6: Q6.1 Fill in the blanks · Q6.2 Choose the correct statement (i)–(vi)",
+  "headingUrdu": "مشق-6: سوال 6.1 خالی جگہیں پُر کریں · سوال 6.2 صحیح بیان منتخب کریں (i)–(vi)",
+  "headingPashto": "تمرین-6: پوښتنه 6.1 تشې ډکې کړئ · پوښتنه 6.2 سم بیان وټاکئ (i)–(vi)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 222,
+    "printedPage": "212"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s222-h",
+      "en": "Exercise-6",
+      "ur": "مشق-6",
+      "ps": "تمرین-6",
+      "kind": "heading",
+      "exerciseId": "stat11-ex6"
+    },
+    {
+      "id": "stat11-s222-h61",
+      "en": "6.1 Fill in the blanks with suitable words.",
+      "ur": "6.1 خالی جگہوں کو موزوں الفاظ سے پُر کریں۔",
+      "ps": "6.1 تشې په مناسبو کلمو ډکې کړئ.",
+      "kind": "heading",
+      "exerciseId": "stat11-ex6-1"
+    },
+    {
+      "id": "stat11-s222-f1",
+      "en": "(i) A time series is a set of values arranged in ____________ order.",
+      "ur": "(i) وقتی سلسلہ قدروں کا وہ مجموعہ ہے جو ____________ ترتیب میں ہو۔",
+      "ps": "(i) د وخت لړۍ د ارزښتونو هغه ټولګه ده چې په ____________ ترتیب کې وي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-i"
+    },
+    {
+      "id": "stat11-s222-f2",
+      "en": "(ii) Two or more time series can be compared by ____________ analysis.",
+      "ur": "(ii) دو یا زیادہ وقتی سلسلوں کا موازنہ ____________ تجزیے سے کیا جا سکتا ہے۔",
+      "ps": "(ii) دوه یا ډېرې وخت لړۍ د ____________ تحلیل په واسطه پرتله کېدای شي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-ii"
+    },
+    {
+      "id": "stat11-s222-f3",
+      "en": "(iii) A time series consist of at the most ____________ components.",
+      "ur": "(iii) وقتی سلسلہ زیادہ سے زیادہ ____________ اجزاء پر مشتمل ہوتا ہے۔",
+      "ps": "(iii) د وخت لړۍ تر ډېره ____________ برخې لري.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-iii"
+    },
+    {
+      "id": "stat11-s222-f4",
+      "en": "(iv) The component representing the long term fluctuation of a time series is called ____________.",
+      "ur": "(iv) وقتی سلسلے کے طویل مدتی اتار چڑھاؤ کی نمائندگی کرنے والا جزو ____________ کہلاتا ہے۔",
+      "ps": "(iv) هغه برخه چې د وخت لړۍ اوږدمهاله بدلونونه استازیتوب کوي ____________ بلل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-iv"
+    },
+    {
+      "id": "stat11-s222-f5",
+      "en": "(v) Periodic changes in a business time series are called ____________.",
+      "ur": "(v) کاروباری وقتی سلسلے میں دوری تبدیلیاں ____________ کہلاتی ہیں۔",
+      "ps": "(v) په سوداګریزه وخت لړۍ کې دوري بدلونونه ____________ بلل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-v"
+    },
+    {
+      "id": "stat11-s222-f6",
+      "en": "(vi) The moving average method eliminates ____________.",
+      "ur": "(vi) متحرک اوسط کا طریقہ ____________ کو ختم کرتا ہے۔",
+      "ps": "(vi) د خوځېدونکي اوسط طریقه ____________ له منځه وړي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-vi"
+    },
+    {
+      "id": "stat11-s222-f7",
+      "en": "(vii) Cyclic movement in a time series occurs due to ____________.",
+      "ur": "(vii) وقتی سلسلے میں دوری حرکت ____________ کی وجہ سے واقع ہوتی ہے۔",
+      "ps": "(vii) په وخت لړۍ کې دوري حرکت د ____________ له امله رامنځته کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-vii"
+    },
+    {
+      "id": "stat11-s222-f8",
+      "en": "(viii) The conclusions drawn from time series analysis are ____________ true.",
+      "ur": "(viii) وقتی سلسلے کے تجزیے سے اخذ کردہ نتائج ____________ درست ہوتے ہیں۔",
+      "ps": "(viii) د وخت لړۍ له تحلیل څخه ترلاسه شوې پایلې ____________ سمې دي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-viii"
+    },
+    {
+      "id": "stat11-s222-f9",
+      "en": "(ix) Data concerning events over a period of time is called ____________.",
+      "ur": "(ix) ایک مدت کے دوران واقعات سے متعلق اعداد و شمار ____________ کہلاتے ہیں۔",
+      "ps": "(ix) د یوې مودې په اوږدو کې د پېښو په اړه معلومات ____________ بلل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-ix"
+    },
+    {
+      "id": "stat11-s222-f10",
+      "en": "(x) The graph constructed for time series data is known as ____________.",
+      "ur": "(x) وقتی سلسلے کے اعداد و شمار کے لیے بنایا گیا گراف ____________ کہلاتا ہے۔",
+      "ps": "(x) د وخت لړۍ معلوماتو لپاره جوړ شوی ګراف ____________ بلل کېږي.",
+      "role": "question",
+      "exerciseId": "stat11-ex6-1-x"
+    },
+    {
+      "id": "stat11-s222-h62",
+      "en": "6.2 Choose the correct statement.",
+      "ur": "6.2 صحیح بیان منتخب کریں۔",
+      "ps": "6.2 سم بیان وټاکئ.",
+      "kind": "heading",
+      "exerciseId": "stat11-ex6-2"
+    },
+    {
+      "id": "stat11-s222-m1",
+      "en": "(i) A time series consists of",
+      "ur": "(i) وقتی سلسلہ پر مشتمل ہوتا ہے",
+      "ps": "(i) د وخت لړۍ لري",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-1"
+    },
+    {
+      "id": "stat11-s222-m1a",
+      "en": "(a) two components",
+      "ur": "(الف) دو اجزاء پر",
+      "ps": "(a) دوه برخې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-1"
+    },
+    {
+      "id": "stat11-s222-m1b",
+      "en": "(b) three components",
+      "ur": "(ب) تین اجزاء پر",
+      "ps": "(b) درې برخې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-1"
+    },
+    {
+      "id": "stat11-s222-m1c",
+      "en": "(c) four components",
+      "ur": "(ج) چار اجزاء پر",
+      "ps": "(c) څلور برخې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-1"
+    },
+    {
+      "id": "stat11-s222-m1d",
+      "en": "(d) five components",
+      "ur": "(د) پانچ اجزاء پر",
+      "ps": "(d) پنځه برخې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-1"
+    },
+    {
+      "id": "stat11-s222-m2",
+      "en": "(ii) The forecasts on the basis of a time series is",
+      "ur": "(ii) وقتی سلسلے کی بنیاد پر پیش گوئیاں ہوتی ہیں",
+      "ps": "(ii) د وخت لړۍ پر بنسټ وړاندوینې دي",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-2"
+    },
+    {
+      "id": "stat11-s222-m2a",
+      "en": "(a) cent per cent true",
+      "ur": "(الف) سو فیصد درست",
+      "ps": "(a) سلو په سلو سمې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-2"
+    },
+    {
+      "id": "stat11-s222-m2b",
+      "en": "(b) true to a great extent",
+      "ur": "(ب) بڑی حد تک درست",
+      "ps": "(b) ډېره برخه سمې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-2"
+    },
+    {
+      "id": "stat11-s222-m2c",
+      "en": "(c) never true",
+      "ur": "(ج) کبھی درست نہیں",
+      "ps": "(c) هېڅکله سمې نه",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-2"
+    },
+    {
+      "id": "stat11-s222-m2d",
+      "en": "(d) accurate",
+      "ur": "(د) درست",
+      "ps": "(d) دقیقې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-2"
+    },
+    {
+      "id": "stat11-s222-m3",
+      "en": "(iii) The component of a time series attached to long term variations is terms as",
+      "ur": "(iii) وقتی سلسلے کا وہ جزو جو طویل مدتی تغیرات سے وابستہ ہے کہلاتا ہے",
+      "ps": "(iii) د وخت لړۍ هغه برخه چې له اوږدمهاله تغیراتو سره تړلې ده بلل کېږي",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-3"
+    },
+    {
+      "id": "stat11-s222-m3a",
+      "en": "(a) cyclic variation",
+      "ur": "(الف) دوری تغیر",
+      "ps": "(a) دوري تغیر",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-3"
+    },
+    {
+      "id": "stat11-s222-m3b",
+      "en": "(b) secular trend",
+      "ur": "(ب) صدیوی رجحان",
+      "ps": "(b) عمري تمایل",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-3"
+    },
+    {
+      "id": "stat11-s222-m3c",
+      "en": "(c) irregular variation",
+      "ur": "(ج) بے قاعدہ تغیر",
+      "ps": "(c) بې‌قاعده تغیر",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-3"
+    },
+    {
+      "id": "stat11-s222-m3d",
+      "en": "(d) all of the above",
+      "ur": "(د) مندرجہ بالا سب",
+      "ps": "(d) پورتني ټول",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-3"
+    },
+    {
+      "id": "stat11-s222-m4",
+      "en": "(iv) Salient factors responsible for seasonal variations are",
+      "ur": "(iv) موسمی تغیرات کے ذمہ دار نمایاں عوامل ہیں",
+      "ps": "(iv) د موسمي تغیراتو مسوول مهم عوامل دي",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-4"
+    },
+    {
+      "id": "stat11-s222-m4a",
+      "en": "(a) weather",
+      "ur": "(الف) موسم",
+      "ps": "(a) هوا",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-4"
+    },
+    {
+      "id": "stat11-s222-m4b",
+      "en": "(b) special customs",
+      "ur": "(ب) خاص رسوم",
+      "ps": "(b) ځانګړي رواجونه",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-4"
+    },
+    {
+      "id": "stat11-s222-m4c",
+      "en": "(c) festivals",
+      "ur": "(ج) تہوار",
+      "ps": "(c) ختمې",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-4"
+    },
+    {
+      "id": "stat11-s222-m4d",
+      "en": "(d) all of the above",
+      "ur": "(د) مندرجہ بالا سب",
+      "ps": "(d) پورتني ټول",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-4"
+    },
+    {
+      "id": "stat11-s222-m5",
+      "en": "(v) Trend in a time series means",
+      "ur": "(v) وقتی سلسلے میں رجحان کا مطلب ہے",
+      "ps": "(v) په وخت لړۍ کې تمایل پدې معنا",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-5"
+    },
+    {
+      "id": "stat11-s222-m5a",
+      "en": "(a) long term regular movement",
+      "ur": "(الف) طویل مدتی باقاعدہ حرکت",
+      "ps": "(a) اوږدمهاله منظمه حرکت",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-5"
+    },
+    {
+      "id": "stat11-s222-m5b",
+      "en": "(b) short term regular movement",
+      "ur": "(ب) قلیل مدتی باقاعدہ حرکت",
+      "ps": "(b) لنډمهاله منظمه حرکت",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-5"
+    },
+    {
+      "id": "stat11-s222-m5c",
+      "en": "(c) both (a) and (b)",
+      "ur": "(ج) (الف) اور (ب) دونوں",
+      "ps": "(c) (a) او (b) دواړه",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-5"
+    },
+    {
+      "id": "stat11-s222-m5d",
+      "en": "(d) neither (a) or (b)",
+      "ur": "(د) نہ (الف) نہ (ب)",
+      "ps": "(d) نه (a) نه (b)",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-5"
+    },
+    {
+      "id": "stat11-s222-m6",
+      "en": "(vi) Value of b in the trend line ŷ = a + bx is",
+      "ur": "(vi) رجحان کی لکیر ŷ = a + bx میں b کی قدر ہے",
+      "ps": "(vi) د تمایل کرښې ŷ = a + bx کې د b ارزښت دی",
+      "role": "question",
+      "exerciseId": "stat11-ex6-2-6"
+    },
+    {
+      "id": "stat11-s222-m6a",
+      "en": "(a) always positive",
+      "ur": "(الف) ہمیشہ مثبت",
+      "ps": "(a) تل مثبت",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-6"
+    },
+    {
+      "id": "stat11-s222-m6b",
+      "en": "(b) always negative",
+      "ur": "(ب) ہمیشہ منفی",
+      "ps": "(b) تل منفي",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-6"
+    },
+    {
+      "id": "stat11-s222-m6c",
+      "en": "(c) both positive and negative",
+      "ur": "(ج) مثبت اور منفی دونوں",
+      "ps": "(c) مثبت او منفي دواړه",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-6"
+    },
+    {
+      "id": "stat11-s222-m6d",
+      "en": "(d) zero",
+      "ur": "(د) صفر",
+      "ps": "(d) صفر",
+      "role": "option",
+      "exerciseId": "stat11-ex6-2-6"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s222-h",
+        "stat11-s222-h61",
+        "stat11-s222-f1",
+        "stat11-s222-f2",
+        "stat11-s222-f3",
+        "stat11-s222-f4",
+        "stat11-s222-f5",
+        "stat11-s222-f6",
+        "stat11-s222-f7",
+        "stat11-s222-f8",
+        "stat11-s222-f9",
+        "stat11-s222-f10",
+        "stat11-s222-h62",
+        "stat11-s222-m1",
+        "stat11-s222-m1a",
+        "stat11-s222-m1b",
+        "stat11-s222-m1c",
+        "stat11-s222-m1d",
+        "stat11-s222-m2",
+        "stat11-s222-m2a",
+        "stat11-s222-m2b",
+        "stat11-s222-m2c",
+        "stat11-s222-m2d",
+        "stat11-s222-m3",
+        "stat11-s222-m3a",
+        "stat11-s222-m3b",
+        "stat11-s222-m3c",
+        "stat11-s222-m3d",
+        "stat11-s222-m4",
+        "stat11-s222-m4a",
+        "stat11-s222-m4b",
+        "stat11-s222-m4c",
+        "stat11-s222-m4d",
+        "stat11-s222-m5",
+        "stat11-s222-m5a",
+        "stat11-s222-m5b",
+        "stat11-s222-m5c",
+        "stat11-s222-m5d",
+        "stat11-s222-m6",
+        "stat11-s222-m6a",
+        "stat11-s222-m6b",
+        "stat11-s222-m6c",
+        "stat11-s222-m6d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "sourceNote": "Printed page 212. Printed spellings kept: \"terms as\" (for termed as), \"cent per cent\". Q6.1 has ten items (i)–(x); item (viii) is printed over two lines. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:32:48.793105+00:00",
+    "scope": "Scan 222 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

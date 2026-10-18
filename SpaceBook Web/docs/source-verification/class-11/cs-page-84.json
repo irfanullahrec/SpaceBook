@@ -1,0 +1,124 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s084-p075",
+  "title": "d. Cache Memory; Figure 3.2; e. Internal Buses — start",
+  "headingUrdu": "د۔ کیش میموری؛ شکل ۳.۲؛ ہ۔ اندرونی بسیں — آغاز",
+  "headingPashto": "د. کېش حافظه؛ انځور ۳.۲؛ ه. دننني بسونه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 84,
+    "printedPage": "75"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s084-h1",
+      "en": "d. Cache Memory",
+      "ur": "د۔ کیش میموری",
+      "ps": "د. کېش حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s084-a",
+      "en": "It is the small amount of memory located between main memory and processor. Cache memory is also known as high speed buffer or on chip memory. The microprocessor stores a copy of most frequently used data and instructions in the cache memory. The microprocessor when desires the data, it first looks in to the cache memory, if not found there then it will ask for the same from the main memory. This will result in the better efficiency of the microprocessor speed and its usage.",
+      "ur": "یہ میموری کی چھوٹی مقدار ہے جو مین میموری اور پراسیسر کے درمیان واقع ہوتی ہے۔ کیش میموری کو تیز رفتار بفر یا آن چپ میموری بھی کہا جاتا ہے۔ مائیکرو پراسیسر سب سے زیادہ استعمال ہونے والے ڈیٹا اور ہدایات کی نقل کیش میموری میں محفوظ رکھتا ہے۔ مائیکرو پراسیسر جب ڈیٹا چاہتا ہے تو پہلے کیش میموری میں دیکھتا ہے، اگر وہاں نہ ملے تو پھر وہ مین میموری سے اسی کا مطالبہ کرتا ہے۔ اس کے نتیجے میں مائیکرو پراسیسر کی رفتار اور اس کے استعمال کی بہتر کارکردگی حاصل ہوتی ہے۔",
+      "ps": "دا د حافظې کوچنی مقدار دی چې د اصلي حافظې او پروسیسر ترمنځ واقع دی. کېش حافظې ته لوړ ګړندیتوب بفر یا په چپ کې حافظه هم ویل کېږي. مایکروپروسیسر د ډیر کارېدونکې ډېټا او لارښوونو یو کاپي په کېش حافظه کې ساتي. مایکروپروسیسر کله چې ډېټا وغواړي، لومړی په کېش حافظه کې ګوري، که هلته ونه موندل شي نو بیا له اصلي حافظې نه یې غوښتنه کوي. دا به د مایکروپروسیسر د ګړندیتوب او د هغه د کارونې ښه اغېزمنتیا راولي."
+    },
+    {
+      "id": "cs11-s084-b",
+      "en": "There are different levels of cache memory.",
+      "ur": "کیش میموری کی مختلف سطحیں ہوتی ہیں۔",
+      "ps": "د کېش حافظې مختلفې کچې شته."
+    },
+    {
+      "id": "cs11-s084-c",
+      "en": "Level 1 (L1) Cache memory resides inside the microprocessor and is very fast from the other memories. Microprocessor first checks the Level 1 Cache memory.",
+      "ur": "لیول ۱ (ایل ۱) کیش میموری مائیکرو پراسیسر کے اندر ہوتی ہے اور دوسری میموریز سے بہت تیز ہے۔ مائیکرو پراسیسر پہلے لیول ۱ کیش میموری دیکھتا ہے۔",
+      "ps": "۱ کچه (L1) کېش حافظه د مایکروپروسیسر دننه ده او له نورو حافظو نه ډیره ګړندۍ ده. مایکروپروسیسر لومړی ۱ کچه کېش حافظه ګوري."
+    },
+    {
+      "id": "cs11-s084-d",
+      "en": "Level 2 (L2) Cache memory lies just outside the microprocessor, it is slow as compared to Level 1 cache but fast from rest of the memories. If data or instruction not found in Level 1 cache memory then microprocessor will look in to Level 2 cache memory.",
+      "ur": "لیول ۲ (ایل ۲) کیش میموری مائیکرو پراسیسر کے بالکل باہر ہوتی ہے، یہ لیول ۱ کیش کے مقابلے میں سست ہے لیکن باقی میموریز سے تیز ہے۔ اگر ڈیٹا یا ہدایت لیول ۱ کیش میموری میں نہ ملے تو مائیکرو پراسیسر لیول ۲ کیش میموری میں دیکھے گا۔",
+      "ps": "۲ کچه (L2) کېش حافظه د مایکروپروسیسر بهر ژر ده، دا د ۱ کچې کېش په پرتله ورو ده خو له پاتې حافظو نه ګړندۍ ده. که ډېټا یا لارښوونه په ۱ کچه کېش حافظه کې ونه موندل شي نو مایکروپروسیسر به په ۲ کچه کېش حافظه کې وګوري."
+    },
+    {
+      "id": "cs11-s084-e",
+      "en": "Now days modern microprocessor has Level 3 cache on the motherboard.",
+      "ur": "آج کل جدید مائیکرو پراسیسر کا لیول ۳ کیش مدر بورڈ پر ہوتا ہے۔",
+      "ps": "نن ورځ مدرن مایکروپروسیسر ۳ کچه کېش په مدربورډ کې لري."
+    },
+    {
+      "id": "cs11-s084-h2",
+      "en": "e. Internal Buses",
+      "ur": "ہ۔ اندرونی بسیں",
+      "ps": "ه. دننني بسونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s084-f",
+      "en": "Bus is a subsystem that transfers data between computer components inside a computer. Internal bus connects all the components of computer to the",
+      "ur": "بس ایک ذیلی نظام ہے جو کمپیوٹر کے اندر کمپیوٹر کے اجزاء کے درمیان ڈیٹا منتقل کرتا ہے۔ اندرونی بس کمپیوٹر کے تمام اجزاء کو",
+      "ps": "بس یو فرعي سیسټم دی چې په کمپیوټر کې د کمپیوټر د اجزاوو ترمنځ ډېټا لېږدوي. دننني بس د کمپیوټر ټول اجزا",
+      "cont": true
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s084-h1",
+        "cs11-s084-a",
+        "cs11-s084-b",
+        "cs11-s084-c",
+        "cs11-s084-d",
+        "cs11-s084-e"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s084-h2",
+        "cs11-s084-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "id": "cs11-s084-fig1",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 180\" role=\"img\" aria-label=\"Cache memory: CPU, cache and RAM on a board\" style=\"width:100%;max-width:500px;height:auto;background:#fff\"><polygon points=\"30,110 190,70 270,100 100,150\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"2\"/><polygon points=\"60,100 130,78 150,92 80,118\" fill=\"#bbb\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"150\" y1=\"98\" x2=\"215\" y2=\"88\" stroke=\"#d33\" stroke-width=\"3\"/><polygon points=\"200,92 230,84 240,98 212,108\" fill=\"#5a5\" stroke=\"#333\"/><polygon points=\"238,82 268,76 278,92 248,98\" fill=\"#5a5\" stroke=\"#333\"/><polygon points=\"300,20 400,8 410,28 310,40\" fill=\"#999\" stroke=\"#333\"/><polygon points=\"308,44 408,32 418,52 318,64\" fill=\"#999\" stroke=\"#333\"/><polygon points=\"316,68 416,56 426,76 326,88\" fill=\"#999\" stroke=\"#333\"/><polygon points=\"324,92 424,80 434,100 334,112\" fill=\"#999\" stroke=\"#333\"/><text x=\"70\" y=\"152\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">CPU</text><text x=\"240\" y=\"128\" font-size=\"13\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">CACHE</text><text x=\"450\" y=\"70\" font-size=\"13\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">RAM</text></svg>",
+      "caption": "Figure 3.2 Cache memory",
+      "captionUrdu": "شکل ۳.۲ کیش میموری",
+      "captionPashto": "انځور ۳.۲ کېش حافظه",
+      "labels": [
+        {
+          "en": "CPU",
+          "ur": "سی پی یو",
+          "ps": "CPU"
+        },
+        {
+          "en": "CACHE",
+          "ur": "کیش",
+          "ps": "کېش"
+        },
+        {
+          "en": "RAM",
+          "ur": "ریم",
+          "ps": "RAM"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 75: “d. Cache Memory”, its three levels, Figure 3.2 Cache memory (a photograph of a CPU, two cache chips and RAM modules on a board, redrawn here as a simplified coded SVG with the printed labels CPU, CACHE and RAM) and the start of “e. Internal Buses” (the sentence continues on the next page). The first letters of the lines near the bottom are clipped. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:52:55.329889+00:00",
+    "scope": "Scan 84 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

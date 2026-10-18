@@ -1,0 +1,703 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s069-example26-28",
+  "title": "Example 2.6 (continued) · Examples 2.7, 2.8",
+  "headingUrdu": "مثال 2.6 (جاری) · مثالیں 2.7، 2.8",
+  "headingPashto": "بېلګه 2.6 (دوام) · بېلګې 2.7، 2.8",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 69,
+    "printedPage": "61"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s069-n1",
+      "en": "A = 67 because it has highest frequency.",
+      "ur": "A = 67 کیونکہ اس کا تعدد سب سے زیادہ ہے۔",
+      "ps": "A = 67 ځکه چې فریکونسي یې تر ټولو لوړه ده.",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-i3",
+      "en": "(iii) By change of origin and scale or step deviation method",
+      "ur": "(iii) مبدا اور پیمانے کی تبدیلی یا گام انحراف طریقے سے",
+      "ps": "(iii) د اصل او پیمانې په بدلون یا ګام‌انحراف طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-n2",
+      "en": "Here A = 67 and h = 3",
+      "ur": "یہاں A = 67 اور h = 3",
+      "ps": "دلته A = 67 او h = 3",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-ex7",
+      "en": "Example: 2.7",
+      "ur": "مثال: 2.7",
+      "ps": "بېلګه: 2.7",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-7"
+    },
+    {
+      "id": "stat11-s069-q7",
+      "en": "A population with mean μ = 10 has Σx = 250. How many observations are in the population?",
+      "ur": "ایک مجموعے کا اوسط μ = 10 ہے اور Σx = 250 ہے۔ مجموعے میں کتنے مشاہدات ہیں؟",
+      "ps": "یوه ټولنه چې اوسط یې μ = 10 دی او Σx = 250 لري. په ټولنه کې څومره کتنې دي؟",
+      "role": "question",
+      "exampleId": "stat11-ex-2-7"
+    },
+    {
+      "id": "stat11-s069-sol7",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-7"
+    },
+    {
+      "id": "stat11-s069-d7",
+      "en": "By definition",
+      "ur": "تعریف کے مطابق",
+      "ps": "د تعریف له مخې",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-7"
+    },
+    {
+      "id": "stat11-s069-ex8",
+      "en": "Example: 2.8",
+      "ur": "مثال: 2.8",
+      "ps": "بېلګه: 2.8",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-8"
+    },
+    {
+      "id": "stat11-s069-q8",
+      "en": "A sample of n = 6 values has a mean x̄ = 8. What is the value of Σx for this sample?",
+      "ur": "n = 6 قدروں کے ایک نمونے کا اوسط x̄ = 8 ہے۔ اس نمونے کے لیے Σx کی قدر کیا ہے؟",
+      "ps": "د n = 6 ارزښتونو یوې نمونې اوسط x̄ = 8 دی. د دې نمونې لپاره د Σx ارزښت څه دی؟",
+      "role": "question",
+      "exampleId": "stat11-ex-2-8"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s069-n1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s069-i3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s069-n2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s069-ex7",
+        "stat11-s069-q7",
+        "stat11-s069-sol7",
+        "stat11-s069-d7"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s069-ex8",
+        "stat11-s069-q8"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s069-e1",
+      "latex": "\\bar{x}=A+\\dfrac{\\sum fD}{\\sum f}=67+\\dfrac{45}{100}=67+0.45=67.45",
+      "accessible": "x̄ = A + ΣfD / Σf = 67 + 45/100 = 67 + 0.45 = 67.45",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = A + ΣfD / Σf = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-sd",
+      "latex": "\\bar{x}=A+\\dfrac{\\sum fu}{\\sum f}\\times h",
+      "accessible": "x̄ = A + (Σfu / Σf) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = A + (Σfu / Σf) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-e2",
+      "latex": "\\therefore\\ \\bar{x}=A+\\dfrac{\\sum fu}{\\sum f}\\times h=67+\\dfrac{15}{100}\\times3=67+\\dfrac{45}{100}=67+0.45=67.45",
+      "accessible": "∴ x̄ = A + (Σfu / Σf) × h = 67 + (15/100) × 3 = 67 + 45/100 = 67 + 0.45 = 67.45",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ x̄ = A + (Σfu / Σf) × h = 67 + (15/100) × 3 = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ x̄ = A + (Σfu / Σf) × h = 67 + (15/100) × 3 = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ x̄ = A + (Σfu / Σf) × h = 67 + (15/100) × 3 = 67 + 45/100 = 67 + 0.45 = 67.45"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-6"
+    },
+    {
+      "id": "stat11-s069-e7a",
+      "latex": "\\mu=\\dfrac{\\sum x}{N}",
+      "accessible": "μ = Σx / N",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "μ = Σx / N"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "μ = Σx / N"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "μ = Σx / N"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-7"
+    },
+    {
+      "id": "stat11-s069-e7b",
+      "latex": "\\text{Here }10=\\dfrac{250}{N}\\ \\text{ or }\\ 10N=250\\ \\Rightarrow\\ N=\\dfrac{250}{10}=25\\ \\text{observations.}",
+      "accessible": "Here 10 = 250/N or 10N = 250 ⇒ N = 250/10 = 25 observations.",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Here 10 = 250/N or 10N = 250 ⇒ N = 250/10 = 25 observations."
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Here 10 = 250/N or 10N = 250 ⇒ N = 250/10 = 25 observations."
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Here 10 = 250/N or 10N = 250 ⇒ N = 250/10 = 25 observations."
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-2-7"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.6: shortcut method (D = x − 67)",
+      "captionUrdu": "مثال 2.6: مختصر طریقہ (D = x − 67)",
+      "captionPashto": "بېلګه 2.6: لنډه طریقه (D = x − 67)",
+      "headers": [
+        {
+          "en": "Heights",
+          "ur": "قد",
+          "ps": "قدونه"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "D = x − 67",
+          "ur": "D = x − 67",
+          "ps": "D = x − 67"
+        },
+        {
+          "en": "fD",
+          "ur": "fD",
+          "ps": "fD"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "60 – 62",
+            "ur": "60 – 62",
+            "ps": "60 – 62"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "− 6",
+            "ur": "− 6",
+            "ps": "− 6"
+          },
+          {
+            "en": "−30",
+            "ur": "−30",
+            "ps": "−30"
+          }
+        ],
+        [
+          {
+            "en": "63 – 65",
+            "ur": "63 – 65",
+            "ps": "63 – 65"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "− 3",
+            "ur": "− 3",
+            "ps": "− 3"
+          },
+          {
+            "en": "−54",
+            "ur": "−54",
+            "ps": "−54"
+          }
+        ],
+        [
+          {
+            "en": "66 – 68",
+            "ur": "66 – 68",
+            "ps": "66 – 68"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "69 – 71",
+            "ur": "69 – 71",
+            "ps": "69 – 71"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          }
+        ],
+        [
+          {
+            "en": "72 – 74",
+            "ur": "72 – 74",
+            "ps": "72 – 74"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "48",
+            "ur": "48",
+            "ps": "48"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "",
+            "ur": "",
+            "ps": ""
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-6",
+      "role": "solution"
+    },
+    {
+      "caption": "Example 2.6: step-deviation method (u = (x − 67)/3)",
+      "captionUrdu": "مثال 2.6: گام انحراف طریقہ (u = (x − 67)/3)",
+      "captionPashto": "بېلګه 2.6: ګام‌انحراف طریقه (u = (x − 67)/3)",
+      "headers": [
+        {
+          "en": "Heights",
+          "ur": "قد",
+          "ps": "قدونه"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "u = (x − 67)/3",
+          "ur": "u = (x − 67)/3",
+          "ps": "u = (x − 67)/3"
+        },
+        {
+          "en": "fu",
+          "ur": "fu",
+          "ps": "fu"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "60 – 62",
+            "ur": "60 – 62",
+            "ps": "60 – 62"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "− 2",
+            "ur": "− 2",
+            "ps": "− 2"
+          },
+          {
+            "en": "− 10",
+            "ur": "− 10",
+            "ps": "− 10"
+          }
+        ],
+        [
+          {
+            "en": "63 – 65",
+            "ur": "63 – 65",
+            "ps": "63 – 65"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "−1",
+            "ur": "−1",
+            "ps": "−1"
+          },
+          {
+            "en": "−18",
+            "ur": "−18",
+            "ps": "−18"
+          }
+        ],
+        [
+          {
+            "en": "66 – 68",
+            "ur": "66 – 68",
+            "ps": "66 – 68"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "67",
+            "ur": "67",
+            "ps": "67"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "69 – 71",
+            "ur": "69 – 71",
+            "ps": "69 – 71"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "70",
+            "ur": "70",
+            "ps": "70"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          }
+        ],
+        [
+          {
+            "en": "72 – 74",
+            "ur": "72 – 74",
+            "ps": "72 – 74"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "73",
+            "ur": "73",
+            "ps": "73"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "کل",
+            "ps": "ټول"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "-",
+            "ur": "-",
+            "ps": "-"
+          },
+          {
+            "en": "-",
+            "ur": "-",
+            "ps": "-"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-6",
+      "role": "solution"
+    }
+  ],
+  "sourceNote": "Printed page 61. The foot of the scan shows a ghost of the preceding scan's page-number bar (\"93\"), which belongs to another page and is ignored. In the printed step-deviation table the u and fu columns have uneven spacing; values are as printed (\"− 2\", \"−1\", \"0\", \"1\", \"2\" and \"− 10\", \"−18\", \"0\", \"27\", \"16\"). Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:32:49.957385+00:00",
+    "scope": "Scan 69 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

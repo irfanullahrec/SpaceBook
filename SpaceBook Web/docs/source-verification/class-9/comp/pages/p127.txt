@@ -1,0 +1,30 @@
+@pdf 127
+@printed 119
+@status lesson
+m {
+m     int x;
+m     for (x=1;x<=10;x++)
+m         printf("%d\t",x);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 1   2   3   4   5   6   7   8   9   10
+endbox
+@deco A previous owner has written "Assignment operator" in pen beside x=1; not book content.
+### Program 5.2: A program to display numbers in reverse order from 10 to 1. || پروگرام 5.2: 10 سے 1 تک الٹی ترتیب میں اعداد دکھانے کا پروگرام۔ || پروګرام ۵.۲: له ۱۰ تر ۱ په سرچپه ترتیب عددونه ښودل.
+m # include <stdio.h>
+m void main()
+m {
+m     int num;
+m     for (num=10;num>=1;--num)
+m         printf("%d\t",num);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 10   9   8   7   6   5   4   3   2   1
+endbox
+### Program 5.3: A program that inputs a number and displays the table of the number up to 10 using for loop. || پروگرام 5.3: for لوپ سے عدد ان پٹ کر کے اس کا 10 تک پہاڑا دکھانے کا پروگرام۔ || پروګرام ۵.۳: د for لوپ په مرسته عدد اخلي او تر ۱۰ پورې یې جدول ښيي.
+m # include <stdio.h>
+m void main()
+m {
+m     int tab,n,x;
+m     printf("\nEnter number for table: ");
+m     scanf("%d",&n);

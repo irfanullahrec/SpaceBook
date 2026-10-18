@@ -1,0 +1,51 @@
+{
+  "id": "cls9-chemistry-pdf1-page-019",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "pdfPage": 19,
+  "printedPage": 13,
+  "status": "source-compared",
+  "pageType": "practice and comparison table",
+  "sourceObservations": "Practice Problem 1.1 and seven-row Table 1.4. Corrected the practice wording and the active comparison table to source wording.",
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "comparisonStatus": "English source content visually inspected; matching source structures updated where listed.",
+  "correctionsApplied": [
+    "Practice Problem 1.1 wording and Table 1.4 source wording corrected.",
+    "Compounds/Mixtures cached translation pairs now connected to active reader; two source tables and five figures linked with source-sized layouts."
+  ],
+  "translationStatus": "not-yet-audited",
+  "unresolvedItems": [
+    "Review translation wording in Table 1.4 against textbook language; source text and rendered interactive mapping are aligned."
+  ],
+  "activeDataTargets": [
+    "chemChapters[0].topics",
+    "chemChapters[0].tables",
+    "chemChapters[0].differences",
+    "chemChapters[0].diagrams"
+  ],
+  "followUpSourceCompared": true,
+  "followUpTranslationStatus": "Printed page 13: exact source mixture/example prompt now has an Urdu/Pashto interactive pair; source figures remain translated at book-relative size.",
+  "followUpCorrections": [
+    "Recovered reviewed native source-sized schematic figures and exact printed compound/mixture comparison rows."
+  ],
+  "followUpUnresolved": [
+    "Schematic figure detail and Fig1.3 narrow caption wrapping need visual fidelity refinement.",
+    "Full English/Urdu/Pashto source paragraph and label alignment pending."
+  ],
+  "followUpImageReview": "2026-10-11 source pages15–19 inspected; pages16–19 in four-image batch.",
+  "followUpTranslationPairs": {
+    "practicePromptLines": 4,
+    "table14Rows": 7,
+    "table14CellPairs": 14,
+    "table14SourceWidthRatio": 0.82
+  },
+  "followUpSemanticTranslationVerified": false,
+  "followUpReaderSmoke": {
+    "passed": true,
+    "renderer": "renderSLOsAndConcepts",
+    "interactiveTablePairs": 17,
+    "includesTitleAndTwoHeaders": true,
+    "includesAll14TextCells": true
+  },
+  "fullyCompleted": false
+}

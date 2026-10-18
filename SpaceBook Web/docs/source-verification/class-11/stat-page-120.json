@@ -1,0 +1,386 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s120-cv-2",
+  "title": "Example 3.14 (end) · Example 3.15: grouped data (question start)",
+  "headingUrdu": "مثال 3.14 (اختتام) · مثال 3.15: گروہی اعداد و شمار (سوال کا آغاز)",
+  "headingPashto": "بېلګه 3.14 (پای) · بېلګه 3.15: ګروپي معلومات (د پوښتنې پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 120,
+    "printedPage": "112"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s120-c1",
+      "en": "Since C.V_A < C.V_B therefore, student-A performance is more consistent.",
+      "ur": "چونکہ C.V_A < C.V_B لہٰذا طالب علم A کی کارکردگی زیادہ مستقل ہے۔",
+      "ps": "ځکه چې C.V_A < C.V_B نو د A زده کوونکي فعالیت ډېر یو شان دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s120-i3",
+      "en": "(iii) Computation of coefficient of variation from grouped data",
+      "ur": "(iii) گروہی اعداد و شمار سے تغیر کے عددی سر کا حساب",
+      "ps": "(iii) له ګروپي معلوماتو څخه د تغیر د ضریب محاسبه",
+      "sourceGap": {
+        "note": "The scan numbers this item \"(iii)\"; no item \"(ii)\" is printed."
+      }
+    },
+    {
+      "id": "stat11-s120-ex15",
+      "en": "Example: 3.15",
+      "ur": "مثال: 3.15",
+      "ps": "بېلګه: 3.15",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s120-q15",
+      "en": "Expenditure of families in two cities are given below:",
+      "ur": "دو شہروں میں خاندانوں کے اخراجات نیچے دیے گئے ہیں:",
+      "ps": "په دوو ښارونو کې د کورنیو لګښتونه لاندې ورکړل شوي دي:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-15",
+      "sourceGap": {
+        "note": "The question continues on the next page (\"Calculate the coefficient of variation in each case …\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s120-c1",
+        "stat11-s120-i3",
+        "stat11-s120-ex15",
+        "stat11-s120-q15"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s120-a",
+      "latex": "s_A=\\sqrt{\\dfrac{1}{n-1}\\left[\\sum x_A^2-\\dfrac{\\left(\\sum x_A\\right)^2}{n}\\right]}\\qquad s_B=\\sqrt{\\dfrac{1}{n-1}\\left[\\sum x_B^2-\\dfrac{\\left(\\sum x_B\\right)^2}{n}\\right]}",
+      "accessible": "s_A = √((1/(n − 1))[Σx_A² − (Σx_A)²/n])    s_B = √((1/(n − 1))[Σx_B² − (Σx_B)²/n])",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s_A = √((1/(n − 1))[Σx_A² − (Σx_A)²/n])    s_B = √((1/(n − 1))[Σx_B² − (Σx_B)²/n])"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s_A = √((1/(n − 1))[Σx_A² − (Σx_A)²/n])    s_B = √((1/(n − 1))[Σx_B² − (Σx_B)²/n])"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s_A = √((1/(n − 1))[Σx_A² − (Σx_A)²/n])    s_B = √((1/(n − 1))[Σx_B² − (Σx_B)²/n])"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s120-b",
+      "latex": "=\\sqrt{\\dfrac{1}{10-1}\\left[37736-\\dfrac{(610)^2}{10}\\right]}\\qquad=\\sqrt{\\dfrac{1}{10-1}\\left[52848-\\dfrac{(716)^2}{10}\\right]}",
+      "accessible": "= √((1/(10 − 1))[37736 − (610)²/10])    = √((1/(10 − 1))[52848 − (716)²/10])",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √((1/(10 − 1))[37736 − (610)²/10])    = √((1/(10 − 1))[52848 − (716)²/10])"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √((1/(10 − 1))[37736 − (610)²/10])    = √((1/(10 − 1))[52848 − (716)²/10])"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √((1/(10 − 1))[37736 − (610)²/10])    = √((1/(10 − 1))[52848 − (716)²/10])"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s120-c",
+      "latex": "=7.64\\qquad\\qquad=13.26",
+      "accessible": "= 7.64    = 13.26",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 7.64    = 13.26"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 7.64    = 13.26"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 7.64    = 13.26"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s120-d",
+      "latex": "\\text{C.V}_A=\\dfrac{s_A}{\\bar{x}_A}\\times 100\\qquad\\text{C.V}_B=\\dfrac{s_B}{\\bar{x}_B}\\times 100",
+      "accessible": "C.V_A = (s_A/x̄_A) × 100    C.V_B = (s_B/x̄_B) × 100",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.V_A = (s_A/x̄_A) × 100    C.V_B = (s_B/x̄_B) × 100"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.V_A = (s_A/x̄_A) × 100    C.V_B = (s_B/x̄_B) × 100"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.V_A = (s_A/x̄_A) × 100    C.V_B = (s_B/x̄_B) × 100"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    },
+    {
+      "id": "stat11-s120-e",
+      "latex": "=\\dfrac{7.64}{61}\\times 100=12.5\\%\\qquad=\\dfrac{13}{71.6}\\times 100=18.5\\%",
+      "accessible": "= (7.64/61) × 100 = 12.5%    = (13/71.6) × 100 = 18.5%   [printed 13 for s_B]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (7.64/61) × 100 = 12.5%    = (13/71.6) × 100 = 18.5%   [printed 13 for s_B]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (7.64/61) × 100 = 12.5%    = (13/71.6) × 100 = 18.5%   [printed 13 for s_B]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (7.64/61) × 100 = 12.5%    = (13/71.6) × 100 = 18.5%   [printed 13 for s_B]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-14"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.15: expenditure of families in two cities",
+      "captionUrdu": "مثال 3.15: دو شہروں میں خاندانوں کے اخراجات",
+      "captionPashto": "بېلګه 3.15: په دوو ښارونو کې د کورنیو لګښتونه",
+      "headers": [
+        {
+          "en": "Expenditure (in Rs)",
+          "ur": "اخراجات (روپوں میں)",
+          "ps": "لګښت (په روپیو)"
+        },
+        {
+          "en": "No. of families – City A",
+          "ur": "خاندانوں کی تعداد – شہر A",
+          "ps": "د کورنیو شمېر – ښار A"
+        },
+        {
+          "en": "No. of families – City B",
+          "ur": "خاندانوں کی تعداد – شہر B",
+          "ps": "د کورنیو شمېر – ښار B"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "21 – 30",
+            "ur": "21 – 30",
+            "ps": "21 – 30"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ],
+        [
+          {
+            "en": "31 – 40",
+            "ur": "31 – 40",
+            "ps": "31 – 40"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          }
+        ],
+        [
+          {
+            "en": "41 – 50",
+            "ur": "41 – 50",
+            "ps": "41 – 50"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "51 – 60",
+            "ur": "51 – 60",
+            "ps": "51 – 60"
+          },
+          {
+            "en": "153",
+            "ur": "153",
+            "ps": "153"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          }
+        ],
+        [
+          {
+            "en": "61 – 70",
+            "ur": "61 – 70",
+            "ps": "61 – 70"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          }
+        ],
+        [
+          {
+            "en": "71 – 80",
+            "ur": "71 – 80",
+            "ps": "71 – 80"
+          },
+          {
+            "en": "51",
+            "ur": "51",
+            "ps": "51"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ],
+        [
+          {
+            "en": "81 – 90",
+            "ur": "81 – 90",
+            "ps": "81 – 90"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-15"
+    }
+  ],
+  "sourceNote": "Printed page 112. The A and B workings are printed side by side and each pair is kept as one equation. The printed C.V_B line uses 13 (instead of 13.26) over 71.6 giving 18.5%. The two-level table header \"No. of families / City A / City B\" is flattened to two columns. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:52:39.756100+00:00",
+    "scope": "Scan 120 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

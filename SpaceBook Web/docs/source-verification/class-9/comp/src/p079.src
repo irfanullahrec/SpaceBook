@@ -1,0 +1,25 @@
+@printed 71
+@status lesson
+m     gets(name);
+m     puts(name);
+m }
+p The *gets()* function is capable to accept a string with white space characters. In this case the string will be entered from the keyboard while running the program and will end when the user presses the Enter key. So here is a difference between *scanf()* and *gets()* functions. The *scanf()* reads all characters until white space (blanks, tabs, new line) is encountered, whereas *gets()* will read everything (including blanks and tabs) until user presses Enter key. || *gets()* فنکشن خالی جگہوں (white space) والی اسٹرنگ قبول کر سکتا ہے۔ اس صورت میں پروگرام چلتے وقت اسٹرنگ کی بورڈ سے لکھی جائے گی اور صارف کے Enter دبانے پر ختم ہوگی۔ یہی *scanf()* اور *gets()* میں فرق ہے۔ *scanf()* خالی جگہ (اسپیس، ٹیب، نئی سطر) آنے تک تمام حروف پڑھتا ہے، جبکہ *gets()* صارف کے Enter دبانے تک ہر چیز (اسپیس اور ٹیب سمیت) پڑھتا ہے۔ || *gets()* فنکشن د تشو ځایونو (white space) لرونکې string منلی شي. په دې حالت کې string د پروګرام د چلېدو پر مهال له کیبورډ لیکل کېږي او کله چې کاروونکی Enter کېښکاږي پای ته رسېږي. دا د *scanf()* او *gets()* توپیر دی. *scanf()* تر تش ځای (space، tab، نوې کرښه) پورې توري لولي، خو *gets()* هر څه (د space او tab په ګډون) تر Enter پورې لولي.
+### Program 3.10 || پروگرام 3.10 || پروګرام ۳.۱۰
+p **Write a program to get name and age (in years) of a person. Calculate the age in months and print the age in months.** || **کسی شخص کا نام اور عمر (سالوں میں) لینے کا پروگرام لکھیں۔ مہینوں میں عمر معلوم کر کے پرنٹ کریں۔** || **د یوه کس نوم او عمر (په کلونو) اخیستو پروګرام ولیکئ. عمر په میاشتو محاسبه او چاپ کړئ.**
+m #include<stdio.h>
+m void main( )
+m {
+m int age,age_mon;
+m char name[40];
+m printf("Enter your Name: ");
+m gets(name);
+m printf("\nEnter your Age: ");
+m scanf("%d",&age);
+m age_mon=age*12;
+m printf("\nAge in months = %d ",age_mon);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Enter your Name: Muhammad Anwar
+m Enter your Age: 16
+m Age in months   =192
+endbox

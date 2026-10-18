@@ -1,0 +1,88 @@
+{
+  "chapter": "cs11-u8",
+  "id": "cs11-s295-p286",
+  "title": "Figure 8.34 Creating an Update query; Run; backup warning; check results",
+  "headingUrdu": "شکل ۸.۳۴ اپ ڈیٹ کوئری بنانا؛ رن؛ بیک اپ کی تنبیہ؛ نتائج کی جانچ",
+  "headingPashto": "انځور ۸.۳۴ د Update پوښتنې جوړول؛ چلول؛ د بیک اپ ګواښ؛ پایلو کتل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 295,
+    "printedPage": "286"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s295-r1",
+      "en": "Run the query, using the Run button to update the data in Student table that meets the criteria that is applied. The warning dialog box indicates the number of records that will be updated, click Yes to accept.",
+      "ur": "کوئری کو رن بٹن کے ذریعے چلائیں تاکہ اسٹوڈنٹ ٹیبل میں وہ ڈیٹا اپ ڈیٹ ہو جو لاگو کیے گئے معیار پر پورا اترے۔ تنبیہی ڈائیلاگ باکس اپ ڈیٹ ہونے والے ریکارڈز کی تعداد بتاتا ہے، قبول کرنے کے لیے ہاں پر کلک کریں۔",
+      "ps": "پوښتنه د Run تڼۍ په کارولو چلوئ ترڅو په زده کوونکي جدول کې هغه ډېټا تازه شي چې پلي شوی معیار پوره کوي. د خبرتیا خبرې اترې بکس د هغو ثبتونو شمېر ښيي چې تازه کېږي، د منلو لپاره Yes کلیک کړئ.",
+      "listGroup": "ur"
+    },
+    {
+      "id": "cs11-s295-a",
+      "en": "Remember that the update query will permanently update records from the specified table(s), Therefore it is very important that the user has backed up the table(s) or database before running this object.",
+      "ur": "یاد رکھیں کہ اپ ڈیٹ کوئری متعین ٹیبل(ز) کے ریکارڈز کو مستقل طور پر اپ ڈیٹ کر دے گی، اس لیے یہ بہت اہم ہے کہ صارف نے اس آبجیکٹ کو چلانے سے پہلے ٹیبل(ز) یا ڈیٹا بیس کا بیک اپ لے رکھا ہو۔",
+      "ps": "په یاد ولرئ چې د Update پوښتنه به ټاکل شوي جدول(ونو) ثبتونه په دایمي توګه تازه کړي، نو ډیر مهم دی چې کاروونکي د دې څیز د چلولو مخکې جدول(ونه) یا ډېټابېس بیک اپ کړی وي."
+    },
+    {
+      "id": "cs11-s295-c1",
+      "en": "Check the Update Query Results by running the Student table as shown in Figure 8.35.",
+      "ur": "اسٹوڈنٹ ٹیبل چلا کر اپ ڈیٹ کوئری کے نتائج کی جانچ کریں جیسا کہ شکل ۸.۳۵ میں دکھایا گیا ہے۔",
+      "ps": "د Student جدول په چلولو سره د Update پوښتنې پایلې وکتئ لکه څنګه چې ۸.۳۵ انځور کې ښودل شوی.",
+      "listGroup": "uc"
+    }
+  ],
+  "flow": [
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s295-r1",
+        "cs11-s295-a",
+        "cs11-s295-c1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 445 225\" role=\"img\" aria-label=\"Update query design with the Student table fields Roll No, St Name, Class and Section and the value G in the Update To row of Section\" style=\"width:100%;max-width:445px;height:auto;background:#fff\"><rect x=\"5\" y=\"5\" width=\"435\" height=\"215\" fill=\"#f4f7fb\" stroke=\"#555\"/><rect x=\"5\" y=\"5\" width=\"435\" height=\"16\" fill=\"#cfd9ea\" stroke=\"#555\"/><text x=\"222.5\" y=\"17\" font-size=\"8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Database (Access 2007) — Microsoft Access</text><circle cx=\"22\" cy=\"35\" r=\"8\" fill=\"#d9b04a\" stroke=\"#555\"/><text x=\"45\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Home</text><text x=\"113\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Create</text><text x=\"181\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">External Data</text><text x=\"249\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Database Tools</text><text x=\"317\" y=\"39\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Design</text><rect x=\"10\" y=\"46\" width=\"420\" height=\"36\" fill=\"#e8eef8\" stroke=\"#aaa\"/><rect x=\"10\" y=\"95\" width=\"100\" height=\"115\" fill=\"#fff\" stroke=\"#888\"/><text x=\"15\" y=\"108\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">All Tables</text><text x=\"15\" y=\"122\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"25\" y=\"133\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student : Table</text><text x=\"25\" y=\"144\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Percentage</text><text x=\"25\" y=\"155\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Query1</text><text x=\"25\" y=\"166\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student1</text><text x=\"25\" y=\"177\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student Data entry form</text><text x=\"15\" y=\"188\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Exam</text><text x=\"25\" y=\"199\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Exam : Table</text><rect x=\"125\" y=\"95\" width=\"80\" height=\"60\" fill=\"#fff\" stroke=\"#555\"/><text x=\"130\" y=\"106\" font-size=\"8\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Student</text><text x=\"135\" y=\"118\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Roll No</text><text x=\"135\" y=\"129\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">St Name</text><text x=\"135\" y=\"140\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Class</text><text x=\"135\" y=\"151\" font-size=\"7\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Section</text><rect x=\"115\" y=\"170\" width=\"315\" height=\"40\" fill=\"#fff\" stroke=\"#555\"/><text x=\"120\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Field:</text><text x=\"120\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Table:</text><text x=\"120\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Update To:</text><text x=\"120\" y=\"209\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Criteria:</text><text x=\"165\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Roll No</text><text x=\"165\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"165\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\"></text><text x=\"230\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">St Name</text><text x=\"230\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"230\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\"></text><text x=\"295\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Class</text><text x=\"295\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"295\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\"></text><text x=\"360\" y=\"180\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Section</text><text x=\"360\" y=\"190\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"400\" fill=\"#111\">Student</text><text x=\"360\" y=\"200\" font-size=\"6\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">G</text></svg>",
+      "id": "cs11-s295-fig1",
+      "caption": "Figure 8.34 Creating an Update query",
+      "captionUrdu": "شکل ۸.۳۴ اپ ڈیٹ کوئری بنانا",
+      "captionPashto": "انځور ۸.۳۴ د Update پوښتنې جوړول",
+      "labels": [
+        {
+          "en": "Field",
+          "ur": "فیلڈ",
+          "ps": "ساحه"
+        },
+        {
+          "en": "Table",
+          "ur": "ٹیبل",
+          "ps": "جدول"
+        },
+        {
+          "en": "Update To",
+          "ur": "اپ ڈیٹ ٹو",
+          "ps": "تازه کړئ ته"
+        },
+        {
+          "en": "Criteria",
+          "ur": "معیار",
+          "ps": "معیار"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 286: Figure 8.34 Creating an Update query (a screenshot of the query design with the Student table and the design grid showing G in the Update To row of the Section field; redrawn as simplified coded SVG, the small text is illegible), the step on running the query (a small red exclamation mark icon is printed in the sentence and is not reproduced), the warning paragraph on permanent updates and the step to check the results (Figure 8.35 follows on the next page). The words Run button, Student table and Yes are printed in bold. Screenshots are not reproduced; each screenshot is redrawn as simplified coded SVG with the legible printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T14:10:01.457581+00:00",
+    "scope": "Scan 295 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

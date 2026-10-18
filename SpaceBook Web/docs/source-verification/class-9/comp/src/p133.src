@@ -1,0 +1,45 @@
+@printed 125
+@status lesson
+m     int n;
+m     n=1;
+m     do
+m     {
+m         printf("%d\n",n);
+m         n++;
+m     }
+m     while(n<=10);
+m }
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m 1
+m 2
+m 3
+m 4
+m 5
+m 6
+m 7
+m 8
+m 9
+m 10
+endbox
+### Program 5.10: A program to find that an input number is even or odd. || پروگرام 5.10: ان پٹ عدد جفت ہے یا طاق، معلوم کرنے کا پروگرام۔ || پروګرام ۵.۱۰: ټاکي چې داخل شوی عدد جفت دی که طاق.
+m # include <conio.h>
+m # include <stdio.h>
+m void main()
+m {
+m     int num;
+m     char choice;
+m     do
+m     {
+m         printf("\nEnter a number to find even or odd");
+m         scanf("%d", &num);
+m         if((num%2)= =0)
+m             printf("\nNumber is even");
+m         else
+m             printf("\nNumber is odd");
+m     printf("\nDo you want to check another");
+m     choice = getche();
+m     }
+m     while(choice = = 'y');
+m     printf("\nThank You");
+m }
+@issue "= =" is printed with a space; in C it must be written "==". Kept as printed.

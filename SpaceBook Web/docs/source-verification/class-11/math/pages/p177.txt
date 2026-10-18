@@ -1,0 +1,20 @@
+@printed 177
+@issue Example 2(i): the printed factorial rewriting of $\frac{13\cdot17}{9\cdot8\cdot7\cdot5}$ is not internally consistent (e.g. $13\cdot6\cdot4!$ in the second factor); transcribed as printed
+example 1 | Simplify the following expressions: a. $\dfrac{8!}{7!}$ b. $\dfrac{5!}{2!\,3!}$ c. $\dfrac{1}{2!\,4!}+\dfrac{1}{3!\,3!}$ d. $\dfrac{(n+1)!}{n!}$ e. $\dfrac{n!}{(n-3)!}$ || درج ذیل اظہارات کو سادہ کریں: a. $\dfrac{8!}{7!}$ b. $\dfrac{5!}{2!\,3!}$ c. $\dfrac{1}{2!\,4!}+\dfrac{1}{3!\,3!}$ d. $\dfrac{(n+1)!}{n!}$ e. $\dfrac{n!}{(n-3)!}$ || لاندې افادې ساده کړئ: a. $\dfrac{8!}{7!}$ b. $\dfrac{5!}{2!\,3!}$ c. $\dfrac{1}{2!\,4!}+\dfrac{1}{3!\,3!}$ d. $\dfrac{(n+1)!}{n!}$ e. $\dfrac{n!}{(n-3)!}$
+m **Solution:** a. $\dfrac{8!}{7!}=\dfrac{8\cdot7!}{7!}=8$
+m b. $\dfrac{5!}{2!\cdot3!}=\dfrac{5\cdot4\cdot3!}{2!\cdot3!}=\dfrac{5\cdot4}{2\cdot1}=10$
+m c. $\dfrac{1}{2!\cdot4!}+\dfrac{1}{3!\cdot3!}=\dfrac{1}{2!\cdot4!}\cdot\dfrac{3}{3}+\dfrac{1}{3!\cdot3!}\cdot\dfrac{4}{4}=\dfrac{3}{3\cdot2!\cdot4!}+\dfrac{4}{3!\cdot4\cdot3!}=\dfrac{3}{3!\cdot4!}+\dfrac{4}{3!\cdot4!}=\dfrac{7}{3!\cdot4!}=\dfrac{7}{144}$
+m d. $\dfrac{(n+1)!}{n!}=\dfrac{(n+1)\cdot n!}{n!}=n+1$
+m e. $\dfrac{n!}{(n-3)!}=\dfrac{n\cdot(n-1)\cdot(n-2)\cdot(n-3)!}{(n-3)!}=n\cdot(n-1)\cdot(n-2)=n^3-3n^2+2n$
+endexample
+box check | Practice || مشق || تمرین
+p Evaluate each factorial expression: a. $\dfrac{14!}{2!\,12!}$ b. $\dfrac{n}{(n-1)!}$ || ہر فیکٹوریل اظہار کی قیمت معلوم کریں: a. $\dfrac{14!}{2!\,12!}$ b. $\dfrac{n}{(n-1)!}$ || هره فاکتوریل افاده ارزونه کړئ: a. $\dfrac{14!}{2!\,12!}$ b. $\dfrac{n}{(n-1)!}$
+endbox
+example 2 | Write the following in factorial form: (i) $\dfrac{13\cdot17}{9\cdot8\cdot7\cdot5}$ (ii) $\dfrac{(n-3)(n-2)(n-1)}{n(n-4)}$ || درج ذیل کو فیکٹوریل شکل میں لکھیں: (i) $\dfrac{13\cdot17}{9\cdot8\cdot7\cdot5}$ (ii) $\dfrac{(n-3)(n-2)(n-1)}{n(n-4)}$ || لاندې په فاکتوریل بڼه ولیکئ: (i) $\dfrac{13\cdot17}{9\cdot8\cdot7\cdot5}$ (ii) $\dfrac{(n-3)(n-2)(n-1)}{n(n-4)}$
+m **Solution:** (i) $\dfrac{13\cdot17}{9\cdot8\cdot7\cdot5}=\dfrac{17\cdot16\cdot15\cdot14\cdot13\cdot12!}{9\cdot8\cdot7\cdot6\cdot5\cdot4!}\cdot\dfrac{13\cdot6\cdot4!}{16\cdot15\cdot14\cdot13\cdot12!}$
+m $=\dfrac{17!}{9!}\cdot\dfrac{6\cdot5!\cdot4!\cdot13\cdot12!}{16!\cdot5!\cdot12!}=\dfrac{17!\cdot13!\cdot6!\cdot4!}{16!\cdot12!\cdot9!\cdot5!}$
+m (ii) $\dfrac{(n-3)(n-2)(n-1)}{n(n-4)}=\dfrac{(n-1)(n-2)(n-3)}{n(n-4)}=\dfrac{(n-1)(n-2)(n-3)(n-4)!}{n(n-4)(n-4)!}$
+m $=\dfrac{(n-1)!\,(n-1)(n-2)(n-3)(n-5)!}{n(n-1)(n-2)(n-3)(n-4)(n-5)!\,(n-4)!}$
+m $=\dfrac{(n-1)!\,(n-5)!}{n!\,(n-4)!}\cdot\dfrac{(n-1)(n-2)(n-3)(n-4)!}{(n-4)!}$
+m $=\dfrac{(n-1)!\,(n-5)!}{n!\,(n-4)!}\cdot\dfrac{(n-1)!}{(n-4)!}=\dfrac{((n-1)!)^2\,(n-5)!}{n!\,((n-4)!)^2}$
+endexample

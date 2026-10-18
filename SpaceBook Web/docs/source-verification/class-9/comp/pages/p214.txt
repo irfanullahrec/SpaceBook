@@ -1,0 +1,24 @@
+@pdf 213
+@printed 206
+@status lesson
+### 7.5.4 Applying Background Image || 7.5.4 پس منظر کی تصویر لگانا || ۷.۵.۴ د شالید انځور ورکول
+p Background Images play an important role in the web pages. An image can be set as background of a page using the background attribute in the <body> tag. || پس منظر کی تصاویر ویب پیجز میں اہم کردار ادا کرتی ہیں۔ <body> ٹیگ میں background خصوصیت سے کسی تصویر کو صفحے کا پس منظر بنایا جا سکتا ہے۔ || د شالید انځورونه په وېب پاڼو کې مهم رول لري. د <body> په background attribute انځور د پاڼې شالید کېدای شي.
+m <body background="image.jpg">
+p If the image is smaller than the browser window then it will repeat itself till the entire window is filled. || اگر تصویر براؤزر ونڈو سے چھوٹی ہو تو یہ خود کو دہراتی رہے گی یہاں تک کہ پوری ونڈو بھر جائے۔ || که انځور تر براوزر کړکۍ کوچنی وي، ځان تکراروي تر څو ټوله کړکۍ ډکه شي.
+p The HTML document in Figure 7.43 demonstrates the use of image file **computer.jpg** as background of a web page. || شکل 7.43 کی HTML دستاویز ویب پیج کے پس منظر کے طور پر تصویری فائل **computer.jpg** کا استعمال دکھاتی ہے۔ || د ۷.۴۳ شکل HTML سند د **computer.jpg** فایل د وېب پاڼې د شالید په توګه کارونه ښيي.
+m <html>
+m <head>
+m <title>Background & Foreground Color</title>
+m </head>
+m <body background=computer.jpg text=yellow>
+m <font size=5>
+m Computers are used in all types of businesses to<br>
+m improve productivity. They help in successfully<br>
+m running business activities. They are used to<br>
+m prepare business documents, reports, invoices,<br>
+m charts, etc. Computers help in staying in contact<br>
+m with employees and customers.</font>
+m </body>
+m </html>
+p (Figure 7.43: Using image as background in HTML document — "Bg image and Fg Colors.html" in Notepad++.) || (شکل 7.43: HTML دستاویز میں تصویر کو پس منظر بنانا۔) || (۷.۴۳ شکل: په HTML سند کې انځور د شالید په توګه.)
+p The browser will display it as shown in Figure 7.44. || براؤزر اسے شکل 7.44 کی طرح دکھائے گا۔ || براوزر به یې د ۷.۴۴ شکل په څېر ښيي.

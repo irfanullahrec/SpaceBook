@@ -1,0 +1,15 @@
+@printed 113
+@status lesson
+@sec 4-ex | Exercise || مشق || تمرین
+@tab doing
+# Exercise || مشق || تمرین
+q 1 | Select the most appropriate choice. || سب سے موزوں انتخاب کریں۔ || تر ټولو مناسب ځواب وټاکئ.
+qp i | Which programming statement makes a decision? a. if b. break c. Assignment d. printf() || کون سی پروگرامنگ اسٹیٹمنٹ فیصلہ کرتی ہے؟ (الف) if (ب) break (ج) اسائنمنٹ (د) printf() || کوم پروګرامي بیان پرېکړه کوي؟ (الف) if (ب) break (ج) assignment (د) printf()
+qp ii | The conditional portion of *if* statement is enclosed within ______. a. { } b. ( ) c. [ ] d. < > || *if* اسٹیٹمنٹ کا شرطی حصہ ______ میں بند ہوتا ہے۔ (الف) { } (ب) ( ) (ج) [ ] (د) < > || د *if* بیان شرطي برخه په ______ کې تړل کېږي. (الف) { } (ب) ( ) (ج) [ ] (د) < >
+qp iii | Which of the following is NOT part of *if* statement? a. A condition that evaluates as a character. b. A condition that evaluates as true or false. c. A true block. d. A false block. || درج ذیل میں سے کون سا *if* اسٹیٹمنٹ کا حصہ نہیں؟ (الف) ایسی شرط جو حرف کے طور پر قدر دے۔ (ب) ایسی شرط جو درست یا غلط ہو۔ (ج) درست بلاک۔ (د) غلط بلاک۔ || له لاندې کوم یو د *if* بیان برخه نه ده؟ (الف) داسې شرط چې توری ورکوي. (ب) داسې شرط چې سم یا ناسم وي. (ج) سم بلاک. (د) ناسم بلاک.
+qp iv | The *case* block ends with ______. a. } b. { c. break; d. default || *case* بلاک ______ پر ختم ہوتا ہے۔ (الف) } (ب) { (ج) break; (د) default || *case* بلاک په ______ پای ته رسېږي. (الف) } (ب) { (ج) break; (د) default
+qp v | What is output of the following code? if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); a. Good b. Bad c. GoodBad d. No output || درج ذیل کوڈ کا آؤٹ پٹ کیا ہے؟ if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); (الف) Good (ب) Bad (ج) GoodBad (د) کوئی آؤٹ پٹ نہیں || د لاندې کوډ output څه دی؟ if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); (الف) Good (ب) Bad (ج) GoodBad (د) هېڅ output
+sol i: a; ii: b; iii: a; iv: c; v: a ## SpaceBook answers from 4.1.3–4.1.5; in v, (1==1) is true so the OR is true and "Good" is printed. || اسپیس بک جوابات (4.1.3–4.1.5)؛ v میں (1==1) درست ہے اس لیے OR درست ہے اور "Good" چھپتا ہے۔ || د SpaceBook ځوابونه (4.1.3–4.1.5)؛ په v کې (1==1) سم دی نو OR سم دی او "Good" چاپېږي.
+q 2 | Write a program in C to input three integers. Find out the largest among these integers using *if-else* structure and print it on the screen. || C میں تین انٹیجرز ان پٹ کرنے کا پروگرام لکھیں۔ *if-else* سے ان میں سب سے بڑا معلوم کر کے اسکرین پر پرنٹ کریں۔ || په C کې د دریو integers د اخیستو پروګرام ولیکئ. د *if-else* په مرسته تر ټولو لوی ومومئ او چاپ یې کړئ.
+q 3 | Write a program in C to input a single character and print a message "It is a vowel" or "It is a consonant". Use *if-else* structure. || C میں ایک حرف ان پٹ کر کے "It is a vowel" یا "It is a consonant" پیغام پرنٹ کرنے کا پروگرام لکھیں۔ *if-else* استعمال کریں۔ || په C کې یو توری اخلئ او "It is a vowel" یا "It is a consonant" پیغام چاپ کړئ. *if-else* وکاروئ.
+@issue Q3 is printed "If is a vowel"; read as "It is a vowel".

@@ -1,0 +1,425 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s238-p229",
+  "title": "Figure 7.14 Primary keys; iii. Foreign Key; Figure 7.15 Foreign keys",
+  "headingUrdu": "شکل ۷.۱۴ پرائمری کیز؛ iii۔ فارن کی؛ شکل ۷.۱۵ فارن کیز",
+  "headingPashto": "انځور ۷.۱۴ لومړنۍ کیلي؛ iii. بهرنۍ کیلي؛ انځور ۷.۱۵ بهرنۍ کیلي",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 238,
+    "printedPage": "229"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s238-t0",
+      "en": "Primary Keys: the printed arrow points to the StudentId column.",
+      "ur": "پرائمری کیز: چھپا ہوا تیر اسٹوڈنٹ آئی ڈی کالم کی طرف اشارہ کرتا ہے۔",
+      "ps": "لومړنۍ کیلي: چاپ شوی غشی د زده کوونکي پېژند ستون ته اشاره کوي.",
+      "kind": "caption"
+    },
+    {
+      "id": "cs11-s238-h1",
+      "en": "iii. Foreign Key",
+      "ur": "iii۔ فارن کی",
+      "ps": "iii. بهرنۍ کیلي",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s238-a",
+      "en": "A foreign key is generally a primary key from one table that appears as a field in another table where the first table has relationship to the second. For example, if we have a table A with a primary key X that is linked to a table B where X is a field in B, then X would be a foreign key in B.",
+      "ur": "فارن کی عموماً ایک ٹیبل کی پرائمری کی ہوتی ہے جو دوسرے ٹیبل میں فیلڈ کے طور پر ظاہر ہوتی ہے جہاں پہلے ٹیبل کا دوسرے سے تعلق ہو۔ مثلاً اگر ہمارے پاس پرائمری کی ایکس والا ٹیبل اے ہے جو ٹیبل بی سے منسلک ہے جہاں ایکس بی میں ایک فیلڈ ہے تو ایکس بی میں فارن کی ہو گی۔",
+      "ps": "بهرنۍ کیلي معمولاً د یوه جدول لومړنۍ کیلي ده چې په بل جدول کې د ساحې په توګه ښکاري چېرته چې لومړی جدول له دویم سره اړیکه لري. د بېلګې په توګه که موږ یو جدول A ولرو چې لومړنۍ کیلي X لري او له جدول B سره نښلول شوی وي چېرته چې X په B کې یوه ساحه ده، نو X به په B کې بهرنۍ کیلي وي."
+    },
+    {
+      "id": "cs11-s238-t1",
+      "en": "Figure 7.15 Foreign keys: the printed arrows mark the courseId column of the student table as “Foreign Keys”, the courseId column of the courses table as “Primary Keys”, and the link between the two tables as “Relationship”.",
+      "ur": "شکل ۷.۱۵ فارن کیز: چھپے ہوئے تیر اسٹوڈنٹ ٹیبل کے کورس آئی ڈی کالم کو ’’فارن کیز‘‘، کورسز ٹیبل کے کورس آئی ڈی کالم کو ’’پرائمری کیز‘‘ اور دونوں ٹیبلز کے درمیان ربط کو ’’ریلیشن شپ‘‘ ظاہر کرتے ہیں۔",
+      "ps": "انځور ۷.۱۵ بهرنۍ کیلي: چاپ شوي غشي د زده کوونکي جدول د کورس پېژند ستون “بهرنۍ کیلي”، د کورسونو جدول د کورس پېژند ستون “لومړنۍ کیلي”، او د دواړو جدولونو ترمنځ تړاو “اړیکه” ښيي.",
+      "kind": "caption"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s238-t0"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s238-h1",
+        "cs11-s238-a",
+        "cs11-s238-t1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "table",
+      "index": 2
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Figure 7.14 Primary keys",
+      "captionUrdu": "شکل ۷.۱۴ پرائمری کیز",
+      "captionPashto": "انځور ۷.۱۴ لومړنۍ کیلي",
+      "headers": [
+        {
+          "en": "StudentId",
+          "ur": "اسٹوڈنٹ آئی ڈی",
+          "ps": "د زده کوونکي پېژند"
+        },
+        {
+          "en": "firstName",
+          "ur": "پہلا نام",
+          "ps": "لومړی نوم"
+        },
+        {
+          "en": "lastName",
+          "ur": "آخری نام",
+          "ps": "وروستی نوم"
+        },
+        {
+          "en": "courseId",
+          "ur": "کورس آئی ڈی",
+          "ps": "د کورس پېژند"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "L0002345",
+            "ur": "L0002345",
+            "ps": "L0002345"
+          },
+          {
+            "en": "Jim",
+            "ur": "جم",
+            "ps": "جم"
+          },
+          {
+            "en": "Black",
+            "ur": "بلیک",
+            "ps": "بلیک"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001254",
+            "ur": "L0001254",
+            "ps": "L0001254"
+          },
+          {
+            "en": "James",
+            "ur": "جیمز",
+            "ps": "جېمز"
+          },
+          {
+            "en": "Harradine",
+            "ur": "ہیراڈائن",
+            "ps": "هېراډاین"
+          },
+          {
+            "en": "A004",
+            "ur": "A004",
+            "ps": "A004"
+          }
+        ],
+        [
+          {
+            "en": "L0002349",
+            "ur": "L0002349",
+            "ps": "L0002349"
+          },
+          {
+            "en": "Amanda",
+            "ur": "اماندا",
+            "ps": "اماندا"
+          },
+          {
+            "en": "Holland",
+            "ur": "ہالینڈ",
+            "ps": "هالنډ"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001198",
+            "ur": "L0001198",
+            "ps": "L0001198"
+          },
+          {
+            "en": "Simon",
+            "ur": "سائمن",
+            "ps": "سایمن"
+          },
+          {
+            "en": "McCloud",
+            "ur": "میک کلاؤڈ",
+            "ps": "مک کلاوډ"
+          },
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          }
+        ],
+        [
+          {
+            "en": "L0023487",
+            "ur": "L0023487",
+            "ps": "L0023487"
+          },
+          {
+            "en": "Peter",
+            "ur": "پیٹر",
+            "ps": "پېټر"
+          },
+          {
+            "en": "Murray",
+            "ur": "مرے",
+            "ps": "موري"
+          },
+          {
+            "en": "P301",
+            "ur": "P301",
+            "ps": "P301"
+          }
+        ],
+        [
+          {
+            "en": "L0018453",
+            "ur": "L0018453",
+            "ps": "L0018453"
+          },
+          {
+            "en": "Anne",
+            "ur": "این",
+            "ps": "این"
+          },
+          {
+            "en": "Norris",
+            "ur": "نورس",
+            "ps": "نورس"
+          },
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Figure 7.15 Foreign keys: student table (top)",
+      "captionUrdu": "شکل ۷.۱۵ فارن کیز: اسٹوڈنٹ ٹیبل (اوپر)",
+      "captionPashto": "انځور ۷.۱۵ بهرنۍ کیلي: د زده کوونکي جدول (پورته)",
+      "headers": [
+        {
+          "en": "StudentId",
+          "ur": "اسٹوڈنٹ آئی ڈی",
+          "ps": "د زده کوونکي پېژند"
+        },
+        {
+          "en": "firstName",
+          "ur": "پہلا نام",
+          "ps": "لومړی نوم"
+        },
+        {
+          "en": "lastName",
+          "ur": "آخری نام",
+          "ps": "وروستی نوم"
+        },
+        {
+          "en": "courseId",
+          "ur": "کورس آئی ڈی",
+          "ps": "د کورس پېژند"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "L0002345",
+            "ur": "L0002345",
+            "ps": "L0002345"
+          },
+          {
+            "en": "Jim",
+            "ur": "جم",
+            "ps": "جم"
+          },
+          {
+            "en": "Black",
+            "ur": "بلیک",
+            "ps": "بلیک"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001254",
+            "ur": "L0001254",
+            "ps": "L0001254"
+          },
+          {
+            "en": "James",
+            "ur": "جیمز",
+            "ps": "جېمز"
+          },
+          {
+            "en": "Harradine",
+            "ur": "ہیراڈائن",
+            "ps": "هېراډاین"
+          },
+          {
+            "en": "A004",
+            "ur": "A004",
+            "ps": "A004"
+          }
+        ],
+        [
+          {
+            "en": "L0002349",
+            "ur": "L0002349",
+            "ps": "L0002349"
+          },
+          {
+            "en": "Amanda",
+            "ur": "اماندا",
+            "ps": "اماندا"
+          },
+          {
+            "en": "Holland",
+            "ur": "ہالینڈ",
+            "ps": "هالنډ"
+          },
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          }
+        ],
+        [
+          {
+            "en": "L0001198",
+            "ur": "L0001198",
+            "ps": "L0001198"
+          },
+          {
+            "en": "Simon",
+            "ur": "سائمن",
+            "ps": "سایمن"
+          },
+          {
+            "en": "McCloud",
+            "ur": "میک کلاؤڈ",
+            "ps": "مک کلاوډ"
+          },
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": "Figure 7.15 Foreign keys: courses table (bottom)",
+      "captionUrdu": "شکل ۷.۱۵ فارن کیز: کورسز ٹیبل (نیچے)",
+      "captionPashto": "انځور ۷.۱۵ بهرنۍ کیلي: د کورسونو جدول (لاندې)",
+      "headers": [
+        {
+          "en": "courseId",
+          "ur": "کورس آئی ڈی",
+          "ps": "د کورس پېژند"
+        },
+        {
+          "en": "courseName",
+          "ur": "کورس کا نام",
+          "ps": "د کورس نوم"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "A004",
+            "ur": "A004",
+            "ps": "A004"
+          },
+          {
+            "en": "Accounts",
+            "ur": "اکاؤنٹس",
+            "ps": "حسابونه"
+          }
+        ],
+        [
+          {
+            "en": "C002",
+            "ur": "C002",
+            "ps": "C002"
+          },
+          {
+            "en": "Computing",
+            "ur": "کمپیوٹنگ",
+            "ps": "کمپیوټینګ"
+          }
+        ],
+        [
+          {
+            "en": "P301",
+            "ur": "P301",
+            "ps": "P301"
+          },
+          {
+            "en": "History",
+            "ur": "تاریخ",
+            "ps": "تاریخ"
+          }
+        ],
+        [
+          {
+            "en": "S042",
+            "ur": "S042",
+            "ps": "S042"
+          },
+          {
+            "en": "Short Course",
+            "ur": "مختصر کورس",
+            "ps": "لنډ کورس"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 229: Figure 7.14 Primary keys (the student table with the printed arrow label “Primary Keys”), “iii. Foreign Key” with its paragraph and Figure 7.15 Foreign keys (the student table and the courses table with the labels Foreign Keys, Primary Keys and Relationship). The table values are given as read from a small and blurred picture; the courses table values (A004 Accounts, C002 Computing, P301 History, S042 Short Course) are partly illegible and are read as the most likely text. Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:50:00.641996+00:00",
+    "scope": "Scan 238 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

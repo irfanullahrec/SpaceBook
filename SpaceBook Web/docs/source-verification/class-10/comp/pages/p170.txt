@@ -1,0 +1,30 @@
+@printed 158
+@status lesson
+### آرڈرڈ لسٹ بنانا || Making an ordered list || ترتیبي لېست جوړول
+p شکل نمبر 7.29 میں موجود HTML ڈاکومنٹ آرڈر شدہ لسٹ کی تشکیل کو ظاہر کرتی ہے۔ || The HTML document in Figure 7.29 shows how an ordered list is made. || په ۷.۲۹ شکل کې HTML سند د ترتیبي لېست جوړول ښيي.
+### شکل نمبر 7.29 آرڈرڈ لسٹ بنانا || Figure 7.29 Making an ordered list || ۷.۲۹ شکل د ترتیبي لېست جوړول
+m <html>
+m <head>
+m <title>Ordered List</title>
+m </head>
+m <body>
+m <h3>Types of Secondary Memories</h3>
+m <ol>
+m <li>Hard disk</li>
+m <li>CD and DVD</li>
+m <li>USB Flash Drive</li>
+m <li>Memory Cards</li>
+m </ol>
+m </body>
+m </html>
+p براؤزر ونڈو اس کو دکھائے گی جیسا کہ شکل نمبر 7.30 میں دکھایا گیا ہے۔ || The browser window will show it as in Figure 7.30. || براوزر کړکۍ به یې لکه په ۷.۳۰ شکل کې وښيي.
+box info | شکل نمبر 7.30 ویب پیج میں آرڈر شدہ لسٹ کا استعمال || Figure 7.30 An ordered list on a web page || ۷.۳۰ شکل په ویب پاڼه کې ترتیبي لېست
+p **Types of Secondary Memories** || **Types of Secondary Memories** || **Types of Secondary Memories**
+m 1. Hard disk
+m 2. CD and DVD
+m 3. USB Flash Drive
+m 4. Memory Cards
+endbox
+@issue The captions of Figures 7.29 and 7.30 are very faint in the scan; they are read from context.
+### تعریفی فہرست / لسٹ بنانا || Making a definition list || تعریفي لېست جوړول
+p شکل نمبر 7.31 میں HTML ڈاکومنٹ ایک definition لسٹ تیار کرتی ہے جو LAN اور WAN کے نیٹ ورک کی وضاحت کرتی ہے۔ اس HTML ڈاکومنٹ میں، پوری تعریف کی لسٹ <dl></dl> ٹیگز کے اندر ہے۔ || The HTML document in Figure 7.31 makes a definition list that explains LAN and WAN networks. In this HTML document, the whole definition list is inside the <dl></dl> tags. || په ۷.۳۱ شکل کې HTML سند یو definition لېست جوړوي چې د LAN او WAN شبکې تشریح کوي. په دې HTML سند کې ټول تعریفي لېست د <dl></dl> ټیګونو دننه دی.

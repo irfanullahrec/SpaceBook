@@ -1,0 +1,91 @@
+{
+  "chapter": "cs11-u2",
+  "id": "cs11-s053-p044",
+  "title": "Memory Word (end); 2.2 Primary Memory; 2.2.1 Chip memory — start",
+  "headingUrdu": "میموری ورڈ (اختتام)؛ ۲.۲ بنیادی میموری؛ ۲.۲.۱ چپ میموری — آغاز",
+  "headingPashto": "د حافظې کلمه (پای)؛ ۲.۲ لومړنۍ حافظه؛ ۲.۲.۱ چپ حافظه — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 53,
+    "printedPage": "44"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s053-a",
+      "en": "an important characteristic of computer architecture. Modern computers usually have a word size of 16, 32 or 64 bits. A computer that has a bigger word size can transfer more bits into the microprocessor at a time for processing and this improves the processing speed of the computer.",
+      "ur": "کمپیوٹر کے ڈھانچے کی ایک اہم خصوصیت ہے۔ جدید کمپیوٹرز میں عموماً ورڈ سائز ۱۶، ۳۲ یا ۶۴ بٹس ہوتا ہے۔ جس کمپیوٹر کا ورڈ سائز بڑا ہو وہ پراسیسنگ کے لیے ایک وقت میں مائیکرو پراسیسر میں زیادہ بٹس منتقل کر سکتا ہے اور اس سے کمپیوٹر کی پراسیسنگ کی رفتار بہتر ہوتی ہے۔",
+      "ps": "د کمپیوټر د جوړښت یوه مهمه ځانګړتیا ده. مدرن کمپیوټرونه معمولاً د ۱۶، ۳۲ یا ۶۴ بټو د کلمې کچه لري. هغه کمپیوټر چې د کلمې لویه کچه لري کولای شي په یو وخت کې د پروسس لپاره ډیر بټونه مایکروپروسیسر ته ولېږدوي او دا د کمپیوټر د پروسس ګړندیتوب ښه کوي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s053-h1",
+      "en": "2.2 PRIMARY MEMORY",
+      "ur": "۲.۲ بنیادی میموری",
+      "ps": "۲.۲ لومړنۍ حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s053-b",
+      "en": "Main memory or Primary memory is the part of the computer that holds data and instructions for processing. Computer internal memory is used to store data that is used by the system at startup and to run various types of programs such as the operating system. Typically, internal memory is contained on small microchips that are either attached or connected to the computer’s motherboard. Computer memory can range from a couple of megabytes to several gigabytes. Although it is closely associated with the CPU, in fact it is separate from it. When users load software from a storage medium, it is stored in the main memory first and then it is executed. CPU gets programs from the main memory for processing.",
+      "ur": "مین میموری یا بنیادی میموری کمپیوٹر کا وہ حصہ ہے جو پراسیسنگ کے لیے ڈیٹا اور ہدایات رکھتا ہے۔ کمپیوٹر کی اندرونی میموری اس ڈیٹا کو محفوظ کرنے کے لیے استعمال ہوتی ہے جو سسٹم اسٹارٹ اپ پر استعمال کرتا ہے اور مختلف اقسام کے پروگرام جیسے آپریٹنگ سسٹم چلانے کے لیے۔ عموماً اندرونی میموری چھوٹی مائیکرو چپس پر مشتمل ہوتی ہے جو کمپیوٹر کے مدر بورڈ سے لگی یا جڑی ہوتی ہیں۔ کمپیوٹر میموری چند میگا بائٹس سے کئی گیگا بائٹس تک ہو سکتی ہے۔ اگرچہ یہ سی پی یو کے ساتھ گہرا تعلق رکھتی ہے، حقیقت میں یہ اس سے الگ ہے۔ جب صارفین ذخیرہ وسیلے سے سافٹ ویئر لوڈ کرتے ہیں تو وہ پہلے مین میموری میں محفوظ ہوتا ہے اور پھر چلایا جاتا ہے۔ سی پی یو پراسیسنگ کے لیے پروگرام مین میموری سے حاصل کرتا ہے۔",
+      "ps": "اصلي حافظه یا لومړنۍ حافظه د کمپیوټر هغه برخه ده چې د پروسس لپاره ډېټا او لارښوونې ساتي. د کمپیوټر دننني حافظه هغه ډېټا ساتلو لپاره کارول کېږي چې سیسټم یې په پیل کې کاروي او د مختلفو ډولونو پروګرامونو لکه عملیاتي سیسټم چلولو لپاره. معمولاً دننني حافظه په وړو مایکروچپونو کې وي چې د کمپیوټر له مدربورډ سره نښلول شوي یا وصل وي. د کمپیوټر حافظه له څو میګابایټونو نه تر څو ګیګابایټونو پورې کېدای شي. که څه هم دا له CPU سره نژدې تړاو لري، په حقیقت کې له هغې نه جلا ده. کله چې کاروونکي سافټویر له ذخیرې رسنۍ نه پورته کوي نو لومړی په اصلي حافظه کې ساتل کېږي او بیا چلېږي. CPU د پروسس لپاره پروګرامونه له اصلي حافظې نه اخلي."
+    },
+    {
+      "id": "cs11-s053-h2",
+      "en": "2.2.1 Chip memory and Magnetic memory",
+      "ur": "۲.۲.۱ چپ میموری اور مقناطیسی میموری",
+      "ps": "۲.۲.۱ چپ حافظه او مقناطیسي حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s053-c",
+      "en": "Computer memory, as for as its manufacturing is concerned, is divided into two types, i.e. Chip memory and Magnetic memory.",
+      "ur": "کمپیوٹر میموری، جہاں تک اس کی تیاری کا تعلق ہے، دو اقسام میں تقسیم ہے، یعنی چپ میموری اور مقناطیسی میموری۔",
+      "ps": "د کمپیوټر حافظه، تر هغه چې د جوړولو تړاو لري، په دوو ډولونو وېشل شوې ده، یعنې چپ حافظه او مقناطیسي حافظه."
+    },
+    {
+      "id": "cs11-s053-h3",
+      "en": "a. Chip memory",
+      "ur": "الف۔ چپ میموری",
+      "ps": "الف. چپ حافظه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s053-d",
+      "en": "Chip or microchip is a small piece of semi-conducting material (usually silicon). A small circuit called IC (Integrated Circuit) is embeded in it. A typical chip contains millions of electronic components (transistors). It is extremely complex and small module used as computer memory or provides logic circuitry for microprocessors.",
+      "ur": "چپ یا مائیکرو چپ نیم موصل مادے (عموماً سلیکون) کا ایک چھوٹا ٹکڑا ہے۔ اس میں آئی سی (انٹیگریٹڈ سرکٹ) نامی ایک چھوٹا سرکٹ سمایا ہوتا ہے۔ ایک عام چپ میں لاکھوں برقی اجزاء (ٹرانزسٹرز) ہوتے ہیں۔ یہ انتہائی پیچیدہ اور چھوٹا ماڈیول ہے جو کمپیوٹر میموری کے طور پر استعمال ہوتا ہے یا مائیکرو پراسیسرز کے لیے منطقی سرکٹری فراہم کرتا ہے۔",
+      "ps": "چپ یا مایکروچپ د نیمه تېرونکي موادو (معمولاً سلیکون) یوه وړه ټوټه ده. د IC (ګډ سرکټ) په نوم یو کوچنی سرکټ پکې ننوتی دی. یو عادي چپ ملیونونه برېښنايي اجزا (ټرانزیستورونه) لري. دا ډیر پیچلی او کوچنی ماډول دی چې د کمپیوټر حافظې په توګه کارول کېږي یا د مایکروپروسیسرونو لپاره منطقي سرکټري برابروي."
+    },
+    {
+      "id": "cs11-s053-c1",
+      "en": "Figure 2.1 A Chip",
+      "ur": "شکل ۲.۱ ایک چپ",
+      "ps": "انځور ۲.۱ یو چپ",
+      "kind": "caption"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s053-a",
+        "cs11-s053-h1",
+        "cs11-s053-b",
+        "cs11-s053-h2",
+        "cs11-s053-c",
+        "cs11-s053-h3",
+        "cs11-s053-d",
+        "cs11-s053-c1"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 44: the end of the Memory Word sentence (continuing from page 43), the banner “2.2 PRIMARY MEMORY”, “2.2.1 Chip memory and Magnetic memory” and the start of “a. Chip memory” (the paragraph continues on the next page) with a photograph of a chip (caption “Figure 2.1 A Chip”). The word “embeded” is printed so. Photographs are not reproduced; their captions are given. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:43:10.508765+00:00",
+    "scope": "Scan 53 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

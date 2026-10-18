@@ -1,0 +1,24 @@
+@printed 91
+@status lesson
+@sec 4-ex | مشق || Exercise || تمرین
+@tab doing
+# مشق || Exercise || تمرین
+q 1 | موزوں جواب کا انتخاب کریں۔ || Choose the suitable answer. || مناسب ځواب وټاکئ.
+qp i | کونسی پروگرامنگ اسٹیٹمنٹ فیصلہ کرنے کے لیے استعمال ہوتی ہے؟ (الف) if (ب) break (ج) اسائنمنٹ (د) printf() || Which programming statement is used for taking decisions? (a) if (b) break (c) assignment (d) printf() || کوم پروګرامي بیان د پرېکړې لپاره کارېږي؟ (الف) if (ب) break (ج) ګمارنه (د) printf()
+qp ii | if اسٹیٹمنٹ کی شرط کو ______ میں بند کیا جاتا ہے۔ (الف) { } (ب) ( ) (ج) [ ] (د) < > || The condition of an if statement is enclosed in ______. (a) { } (b) ( ) (c) [ ] (d) < > || د if بیان شرط په ______ کې تړل کېږي. (الف) { } (ب) ( ) (ج) [ ] (د) < >
+qp iii | ذیل میں سے کون سا if اسٹیٹمنٹ کا حصہ نہیں ہے؟ (الف) ایسی شرط جس کا نتیجہ کیریکٹر کی صورت میں نکلے۔ (ب) ایسی شرط جس کا نتیجہ True یا False کی صورت میں نکلے۔ (ج) ایک True بلاک (د) ایک False بلاک || Which of the following is not part of an if statement? (a) a condition whose result is a character (b) a condition whose result is True or False (c) a True block (d) a False block || له لاندې څخه کوم یو د if بیان برخه نه ده؟ (الف) داسې شرط چې پایله یې توری وي (ب) داسې شرط چې پایله یې True یا False وي (ج) یو True بلاک (د) یو False بلاک
+qp iv | case کا اختتام ______ پر ہوتا ہے۔ (الف) } (ب) { (ج) break (د) default || A case ends with ______. (a) } (b) { (c) break (d) default || case په ______ پای ته رسېږي. (الف) } (ب) { (ج) break (د) default
+qp v | ذیل میں کوڈ کا آؤٹ پُٹ کیا آئے گا؟ if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); (الف) Good (ب) Bad (ج) GoodBad (د) No output || What will the output of the following code be? if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); (a) Good (b) Bad (c) GoodBad (d) No output || د لاندې کوډ output به څه وي؟ if((1==1){{OR}}(2==3)) printf("Good"); else printf("Bad"); (الف) Good (ب) Bad (ج) GoodBad (د) No output
+@issue Q1(iii): strictly, a False (else) block is optional for a plain if statement; the intended answer is (الف), since the condition must give True or False. Q1(v) is printed with typographic quotes (“Good”), normalised.
+sol i: (الف) if۔ ii: (ب) ( )۔ iii: (الف) ایسی شرط جس کا نتیجہ کیریکٹر کی صورت میں نکلے۔ iv: (ج) break۔ v: (الف) Good — کیونکہ 1==1 درست ہے، اس لیے OR کا نتیجہ True ہے۔ ## نمونے کا جواب || i: (a) if. ii: (b) ( ). iii: (a) a condition whose result is a character. iv: (c) break. v: (a) Good — because 1==1 is true, so the OR is true. || i: (الف) if. ii: (ب) ( ). iii: (الف) داسې شرط چې پایله یې توری وي. iv: (ج) break. v: (الف) Good — ځکه 1==1 سم دی، نو د OR پایله True ده.
+q 2 | C کا ایک پروگرام لکھیں جس میں تین عدد اِن پُٹ کریں۔ پھر if-else سٹرکچر کی مدد سے ان میں سے سب سے بڑے عدد کو معلوم کریں اور سکرین پر پرنٹ کریں۔ || Write a C program that inputs three numbers, then finds the largest of them with an if-else structure and prints it on the screen. || داسې C پروګرام ولیکئ چې درې عددونه داخل کړي، بیا د if-else جوړښت په مرسته تر ټولو لوی پیدا او په سکرین چاپ کړي.
+q 3 | C کا ایک پروگرام لکھیں جو ایک اکیلا کریکٹر اِن پُٹ کرے اور پھر سکرین پر کوئی پیغام پرنٹ کرے۔ "It is a vowel" یا "It is consonant" یاد رہے if-else کا استعمال کرنا ہے۔ || Write a C program that inputs a single character and then prints a message on the screen: "It is a vowel" or "It is consonant". Remember to use if-else. || داسې C پروګرام ولیکئ چې یو توری داخل کړي او بیا په سکرین پیغام چاپ کړي: "It is a vowel" یا "It is consonant". یاد ولرئ چې if-else وکاروئ.
+q 4 | سوال نمبر 3 میں دیئے گئے پروگرام کو switch-case کی مدد سے بنائیں۔ || Write the program of Question 3 with switch-case. || د ۳ پوښتنې پروګرام د switch-case په مرسته جوړ کړئ.
+q 5 | درج ذیل پروگرام کا آؤٹ پُٹ لکھیں۔ || Write the output of the following program. || د لاندې پروګرام output ولیکئ.
+m #include<stdio.h>
+m void main( )
+m {
+m     int a, b, c;
+m     a=b=10;
+m     c=13;
+m     if((a==b)&&(a>c))

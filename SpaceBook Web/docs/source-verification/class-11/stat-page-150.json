@@ -1,0 +1,567 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s150-exercise3-d",
+  "title": "Exercise-3: Q3.13 (end) – Q3.18 (start)",
+  "headingUrdu": "مشق-3: سوال 3.13 (اختتام) – 3.18 (آغاز)",
+  "headingPashto": "تمرین-3: پوښتنه 3.13 (پای) – 3.18 (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 150,
+    "printedPage": "142"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s150-q313",
+      "en": "16, 18. Find its standard deviation and variance.",
+      "ur": "16, 18۔ اس کا معیاری انحراف اور تغیر معلوم کریں۔",
+      "ps": "16, 18. د هغه معیاري انحراف او وریانس ومومئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-13",
+      "sourceGap": {
+        "note": "Completes Q3.13 (b) from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s150-q314",
+      "en": "3.14 Consider the following two data sets: (a) Calculate the mean for each of these two data sets, and comment on the relationship between the two means. (b) Calculate the standard deviation for each of these two data sets and comment on the relationship between the two standard deviations.",
+      "ur": "3.14 درج ذیل دو ڈیٹا سیٹس پر غور کریں: (الف) ان دونوں ڈیٹا سیٹس میں سے ہر ایک کا اوسط حساب کریں اور دونوں اوسطوں کے تعلق پر تبصرہ کریں۔ (ب) ان دونوں ڈیٹا سیٹس میں سے ہر ایک کا معیاری انحراف حساب کریں اور دونوں معیاری انحرافات کے تعلق پر تبصرہ کریں۔",
+      "ps": "3.14 لاندې دوه معلوماتي سیټونه په پام کې ونیسئ: (a) د دې دوو معلوماتي سیټونو له هر یوه اوسط محاسبه کړئ او د دواړو اوسطونو په اړیکه تبصره وکړئ. (b) د دې دوو معلوماتي سیټونو له هر یوه معیاري انحراف محاسبه کړئ او د دواړو معیاري انحرافاتو په اړیکه تبصره وکړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-14"
+    },
+    {
+      "id": "stat11-s150-q315",
+      "en": "3.15 Compute standard deviation, variance and coefficient of standard deviation from the following data:",
+      "ur": "3.15 درج ذیل اعداد و شمار سے معیاری انحراف، تغیر اور معیاری انحراف کا عددی سر حساب کریں:",
+      "ps": "3.15 له لاندې معلوماتو څخه معیاري انحراف، وریانس او د معیاري انحراف ضریب محاسبه کړئ:",
+      "role": "question",
+      "exerciseId": "stat11-ex3-15"
+    },
+    {
+      "id": "stat11-s150-q316",
+      "en": "3.16 The following table gives the frequency distribution of the numbers of computers sold during the past 30 weeks at an electronics store:",
+      "ur": "3.16 درج ذیل جدول ایک الیکٹرانکس اسٹور میں پچھلے 30 ہفتوں کے دوران فروخت ہونے والے کمپیوٹروں کی تعداد کی تعدد تقسیم دیتا ہے:",
+      "ps": "3.16 لاندې جدول په یوه بریښنایي هټۍ کې د تېرو 30 اونیو په اوږدو کې د پلورل شویو کمپیوټرونو د شمېر فریکونسي ویش ورکوي:",
+      "role": "question",
+      "exerciseId": "stat11-ex3-16"
+    },
+    {
+      "id": "stat11-s150-q316b",
+      "en": "Calculate the standard deviation and variance.",
+      "ur": "معیاری انحراف اور تغیر حساب کریں۔",
+      "ps": "معیاري انحراف او وریانس محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-16"
+    },
+    {
+      "id": "stat11-s150-q317",
+      "en": "3.17 (a) Explain in detail the coefficient of variation. What for we use it? (b) Consider the following data",
+      "ur": "3.17 (الف) تغیر کے عددی سر کی تفصیل سے وضاحت کریں۔ ہم اسے کس لیے استعمال کرتے ہیں؟ (ب) درج ذیل اعداد و شمار پر غور کریں",
+      "ps": "3.17 (a) د تغیر ضریب په تفصیل تشریح کړئ. موږ یې د څه لپاره کاروو؟ (b) لاندې معلومات په پام کې ونیسئ",
+      "role": "question",
+      "exerciseId": "stat11-ex3-17"
+    },
+    {
+      "id": "stat11-s150-q317b",
+      "en": "Compare the variation in the distribution of wages of the workers in two factories by computing the C.V in each case and comment on these results.",
+      "ur": "ہر صورت میں C.V حساب کر کے دو کارخانوں میں کارکنوں کی اجرتوں کی تقسیم میں تغیر کا موازنہ کریں اور ان نتائج پر تبصرہ کریں۔",
+      "ps": "په هره حالت کې C.V محاسبه کولو سره په دوو کارخانو کې د کارکوونکو د مزدورۍ په ویش کې تغیر پرتله کړئ او پر دې پایلو تبصره وکړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-17"
+    },
+    {
+      "id": "stat11-s150-q318",
+      "en": "3.18 Two students x and y appeared in first year examination and obtained the following scores:",
+      "ur": "3.18 دو طلبہ x اور y پہلے سال کے امتحان میں شریک ہوئے اور درج ذیل اسکور حاصل کیے:",
+      "ps": "3.18 دوه زده کوونکي x او y د لومړي کال په ازموینه کې ګډون وکړ او لاندې نمرې یې ترلاسه کړې:",
+      "role": "question",
+      "exerciseId": "stat11-ex3-18",
+      "sourceGap": {
+        "note": "The scores of Q3.18 are printed on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s150-q313",
+        "stat11-s150-q314"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s150-q315"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s150-q316"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s150-q316b",
+        "stat11-s150-q317"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s150-q317b",
+        "stat11-s150-q318"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q3.14: two data sets",
+      "captionUrdu": "سوال 3.14: دو ڈیٹا سیٹس",
+      "captionPashto": "پوښتنه 3.14: دوه معلوماتي سیټونه",
+      "headers": [
+        {
+          "en": "Data set i:",
+          "ur": "ڈیٹا سیٹ i:",
+          "ps": "معلوماتي سیټ i:"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "16",
+          "ur": "16",
+          "ps": "16"
+        },
+        {
+          "en": "20",
+          "ur": "20",
+          "ps": "20"
+        },
+        {
+          "en": "35",
+          "ur": "35",
+          "ps": "35"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Data set ii:",
+            "ur": "ڈیٹا سیٹ ii:",
+            "ps": "معلوماتي سیټ ii:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q314"
+    },
+    {
+      "caption": "Q3.15: x and f",
+      "captionUrdu": "سوال 3.15: x اور f",
+      "captionPashto": "پوښتنه 3.15: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "525",
+          "ur": "525",
+          "ps": "525"
+        },
+        {
+          "en": "500",
+          "ur": "500",
+          "ps": "500"
+        },
+        {
+          "en": "475",
+          "ur": "475",
+          "ps": "475"
+        },
+        {
+          "en": "450",
+          "ur": "450",
+          "ps": "450"
+        },
+        {
+          "en": "425",
+          "ur": "425",
+          "ps": "425"
+        },
+        {
+          "en": "400",
+          "ur": "400",
+          "ps": "400"
+        },
+        {
+          "en": "375",
+          "ur": "375",
+          "ps": "375"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "35",
+            "ur": "35",
+            "ps": "35"
+          },
+          {
+            "en": "46",
+            "ur": "46",
+            "ps": "46"
+          },
+          {
+            "en": "37",
+            "ur": "37",
+            "ps": "37"
+          },
+          {
+            "en": "47",
+            "ur": "47",
+            "ps": "47"
+          },
+          {
+            "en": "34",
+            "ur": "34",
+            "ps": "34"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q315"
+    },
+    {
+      "caption": "Q3.16: computers sold",
+      "captionUrdu": "سوال 3.16: فروخت شدہ کمپیوٹر",
+      "captionPashto": "پوښتنه 3.16: پلورل شوي کمپیوټرونه",
+      "headers": [
+        {
+          "en": "Classes:",
+          "ur": "طبقات:",
+          "ps": "ټولګي:"
+        },
+        {
+          "en": "19 – 20",
+          "ur": "19 – 20",
+          "ps": "19 – 20"
+        },
+        {
+          "en": "17 – 18",
+          "ur": "17 – 18",
+          "ps": "17 – 18"
+        },
+        {
+          "en": "15 – 16",
+          "ur": "15 – 16",
+          "ps": "15 – 16"
+        },
+        {
+          "en": "13 – 14",
+          "ur": "13 – 14",
+          "ps": "13 – 14"
+        },
+        {
+          "en": "11 – 12",
+          "ur": "11 – 12",
+          "ps": "11 – 12"
+        },
+        {
+          "en": "9 – 10",
+          "ur": "9 – 10",
+          "ps": "9 – 10"
+        },
+        {
+          "en": "7 – 8",
+          "ur": "7 – 8",
+          "ps": "7 – 8"
+        },
+        {
+          "en": "5 – 6",
+          "ur": "5 – 6",
+          "ps": "5 – 6"
+        },
+        {
+          "en": "3 – 4",
+          "ur": "3 – 4",
+          "ps": "3 – 4"
+        },
+        {
+          "en": "1 – 2",
+          "ur": "1 – 2",
+          "ps": "1 – 2"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q316"
+    },
+    {
+      "caption": "Q3.17: wages and number of workers",
+      "captionUrdu": "سوال 3.17: اجرتیں اور کارکنوں کی تعداد",
+      "captionPashto": "پوښتنه 3.17: مزدورۍ او د کارکوونکو شمېر",
+      "headers": [
+        {
+          "en": "Wages in Rs.",
+          "ur": "اجرتیں روپوں میں",
+          "ps": "مزدورۍ په روپیو"
+        },
+        {
+          "en": "No. of workers – Factory A",
+          "ur": "کارکنوں کی تعداد – کارخانہ A",
+          "ps": "د کارکوونکو شمېر – کارخانه A"
+        },
+        {
+          "en": "No. of workers – Factory B",
+          "ur": "کارکنوں کی تعداد – کارخانہ B",
+          "ps": "د کارکوونکو شمېر – کارخانه B"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2001 – 3000",
+            "ur": "2001 – 3000",
+            "ps": "2001 – 3000"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ],
+        [
+          {
+            "en": "3001 – 4000",
+            "ur": "3001 – 4000",
+            "ps": "3001 – 4000"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          }
+        ],
+        [
+          {
+            "en": "4001 – 5000",
+            "ur": "4001 – 5000",
+            "ps": "4001 – 5000"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "5001 – 6000",
+            "ur": "5001 – 6000",
+            "ps": "5001 – 6000"
+          },
+          {
+            "en": "153",
+            "ur": "153",
+            "ps": "153"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          }
+        ],
+        [
+          {
+            "en": "6001 – 7000",
+            "ur": "6001 – 7000",
+            "ps": "6001 – 7000"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          }
+        ],
+        [
+          {
+            "en": "7001 – 8000",
+            "ur": "7001 – 8000",
+            "ps": "7001 – 8000"
+          },
+          {
+            "en": "51",
+            "ur": "51",
+            "ps": "51"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          }
+        ],
+        [
+          {
+            "en": "8001 – 9000",
+            "ur": "8001 – 9000",
+            "ps": "8001 – 9000"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q317"
+    }
+  ],
+  "sourceNote": "Printed page 142. The first lines complete Q3.13. A black pen mark at the left of Q3.15 and handwritten notes (\"Part B\", a tick) near Q3.17 are ignored. The two-level table header \"No. of workers / Factory A / Factory B\" in Q3.17 is flattened to three columns. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:03:06.791885+00:00",
+    "scope": "Scan 150 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

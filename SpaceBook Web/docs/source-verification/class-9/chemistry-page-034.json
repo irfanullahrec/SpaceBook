@@ -1,0 +1,44 @@
+{
+  "id": "cls9-chemistry-pdf1-page-034",
+  "subject": "Chemistry",
+  "sourcePdf": "D:/SpaceBook/Books/9th/9th Chemistry/pdf/chemistry pdf1.pdf",
+  "pdfPage": 34,
+  "printedPage": 28,
+  "status": "source-compared-corrected",
+  "chapterNumber": 1,
+  "chapter": "Unit 1: Fundamentals of Chemistry",
+  "title": "Table 1.9 and Avogadro’s number introduction",
+  "sourceObservations": "Table 1.9 compares homoatomic and heteroatomic molecules using the source cell text and examples. Section 1.4.1 defines Avogadro’s number; the page also contains an Avogadro portrait and a Scientific Information box.",
+  "activeDataFile": "SpaceBook Web/js/data_chem.js",
+  "activeDataTargets": [
+    "chemChapters[0].topics[4].subtopics[1]",
+    "chemChapters[0].topics[5].subtopics[0]",
+    "chemChapters[0].tables",
+    "chemChapters[0].diagrams"
+  ],
+  "comparisonStatus": "Four consecutive source pages rendered and visually compared to the active Chemistry data; OCR supported extraction but was not treated as authoritative.",
+  "correctionsApplied": [
+    "Added Table 1.9 as a structured source table and synchronized the existing comparison card.",
+    "Added a small coded bust in place of the source portrait, sized to the source’s relative column width.",
+    "Added the Scientific Information box wording as printed."
+  ],
+  "translationStatus": "Table1.9 column headings and both definition/example cells have interactive Urdu/Pashto records; Avogadro introduction and source Scientific Information wording are retained.",
+  "unresolvedItems": [
+    "Review interactive table and translation semantics; retain source atomicity misclassifications for NH3/CH4 with the existing discrepancy note; portrait remains a schematic replacement."
+  ],
+  "followUpSourceCompared": true,
+  "followUpTranslationStatus": "Table1.9 column headings and both definition/example cells have interactive Urdu/Pashto records; Avogadro introduction and source Scientific Information wording are retained.",
+  "followUpUnresolved": [
+    "Avogadro source portrait pending native-code recreation."
+  ],
+  "followUpSourceInspected": true,
+  "followUpImageReview": "2026-10-11: source32–35 inspected together in four-image batch.",
+  "followUpTranslationCoverage": {
+    "table19Headers": 2,
+    "table19Cells": 2,
+    "table19InteractiveDiff": true,
+    "sourceAtomicityErrorRetained": true
+  },
+  "followUpSemanticTranslationVerified": false,
+  "fullyCompleted": false
+}

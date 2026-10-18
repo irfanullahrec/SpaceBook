@@ -1,0 +1,121 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s219-p210",
+  "title": "File Management System (end); Limitations i–v",
+  "headingUrdu": "فائل مینجمنٹ سسٹم (اختتام)؛ حدود i تا v",
+  "headingPashto": "د فایل مدیریت سیسټم (پای)؛ محدودیتونه i تر v",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 219,
+    "printedPage": "210"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s219-a",
+      "en": "of certain file handling program developed in programming languages like C, BASIC and Pascal. Conventional file system is no longer used due to its demerits and limitations as mentioned below.",
+      "ur": "مخصوص فائل ہینڈلنگ پروگرام کی مدد سے ہوتی ہے جو سی، بیسک اور پاسکل جیسی پروگرامنگ زبانوں میں بنائے گئے ہوں۔ روایتی فائل سسٹم اپنی خامیوں اور حدود کی وجہ سے، جیسا کہ نیچے بیان کیا گیا ہے، اب استعمال نہیں ہوتا۔",
+      "ps": "د ځانګړي فایل اداره کولو پروګرام په مرسته کېږي چې په پروګرامنګ ژبو لکه C، BASIC او Pascal کې جوړ شوی وي. دودیز فایل سیسټم د خپلو نیمګړتیاو او محدودیتونو له امله لکه لاندې چې بیان شوي نور نه کارول کېږي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s219-h1",
+      "en": "Limitations of File Management System",
+      "ur": "فائل مینجمنٹ سسٹم کی حدود",
+      "ps": "د فایل مدیریت سیسټم محدودیتونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-h2",
+      "en": "i. Data Redundancy",
+      "ur": "i۔ ڈیٹا ری ڈنڈنسی",
+      "ps": "i. د ډېټا تکرار",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-b",
+      "en": "Independent data files include a lot of duplicated data; the same data is recorded and stored in several files. This data redundancy causes problems when data is to be updated. Hence data redundancy is more in case of file approach.",
+      "ur": "آزاد ڈیٹا فائلوں میں بہت سا نقل شدہ ڈیٹا ہوتا ہے؛ ایک ہی ڈیٹا کئی فائلوں میں ریکارڈ اور محفوظ ہوتا ہے۔ یہ ڈیٹا ری ڈنڈنسی ڈیٹا اپ ڈیٹ کرتے وقت مسائل پیدا کرتی ہے۔ اس لیے فائل اپروچ کی صورت میں ڈیٹا ری ڈنڈنسی زیادہ ہوتی ہے۔",
+      "ps": "خپلواک ډېټا فایلونه ډیره نقل شوې ډېټا لري؛ همدا ډېټا په څو فایلونو کې ثبتېږي او ساتل کېږي. دا د ډېټا تکرار د ډېټا د تازه کولو پر مهال ستونزې رامنځته کوي. نو د فایل طریقې په صورت کې د ډېټا تکرار ډیر وي."
+    },
+    {
+      "id": "cs11-s219-h3",
+      "en": "ii. Inconsistency",
+      "ur": "ii۔ عدم مطابقت",
+      "ps": "ii. ناسمون",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-c",
+      "en": "In this system, data is not consistent due to redundant storage. If a data item is changed all the files containing that data item need to be changed and updated properly. If all the files are not updated properly there may be high risk of inconsistency.",
+      "ur": "اس نظام میں غیر ضروری ذخیرے کی وجہ سے ڈیٹا مطابقت پذیر نہیں ہوتا۔ اگر کسی ڈیٹا آئٹم کو بدلا جائے تو وہ ڈیٹا آئٹم رکھنے والی تمام فائلوں کو مناسب طریقے سے بدلنا اور اپ ڈیٹ کرنا ضروری ہے۔ اگر تمام فائلیں مناسب طور پر اپ ڈیٹ نہ ہوں تو عدم مطابقت کا بڑا خطرہ ہو سکتا ہے۔",
+      "ps": "پدې سیسټم کې ډېټا د تکراري ذخیرې له امله همغږې نه ده. که یو ډېټا توکی بدل شي نو ټولې هغه فایلونه چې دا ډېټا توکی لري باید په سمه توګه بدل او تازه شي. که ټول فایلونه په سمه توګه تازه نه شي نو د ناسمون لوړ خطر کېدای شي."
+    },
+    {
+      "id": "cs11-s219-h4",
+      "en": "iii. Intensive Coding",
+      "ur": "iii۔ زیادہ کوڈنگ",
+      "ps": "iii. ډیر کوډ کول",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-d",
+      "en": "The processing tasks like searching, editing, deletion and updating should have separate programs. It means there are no built in functions available and needs coding every time to perform these operations.",
+      "ur": "تلاش، ترمیم، حذف اور اپ ڈیٹنگ جیسے پراسیسنگ کاموں کے لیے الگ پروگرام ہونے چاہئیں۔ اس کا مطلب ہے کہ کوئی بلٹ اِن فنکشن دستیاب نہیں اور ان کارروائیوں کے لیے ہر بار کوڈنگ کرنی پڑتی ہے۔",
+      "ps": "د پروسس کولو دندې لکه لټون، سمون، حذف او تازه کول باید جلا پروګرامونه ولري. دا مانا لري چې هېڅ جوړ شوي فنکشنونه نشته او د دغو عملیاتو د ترسره کولو لپاره هر ځل کوډ کولو ته اړتیا ده."
+    },
+    {
+      "id": "cs11-s219-h5",
+      "en": "iv. Data Isolation",
+      "ur": "iv۔ ڈیٹا کی علیحدگی",
+      "ps": "iv. د ډېټا جلاوالی",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-e",
+      "en": "Data is scattered in various files and the files may be in different format. The users have to write new application program to retrieve data from these files. This is difficult, time-consuming, and costly.",
+      "ur": "ڈیٹا مختلف فائلوں میں بکھرا ہوتا ہے اور فائلیں مختلف فارمیٹ میں ہو سکتی ہیں۔ صارفین کو ان فائلوں سے ڈیٹا حاصل کرنے کے لیے نیا ایپلیکیشن پروگرام لکھنا پڑتا ہے۔ یہ مشکل، وقت طلب اور مہنگا ہے۔",
+      "ps": "ډېټا په مختلفو فایلونو کې ویشل شوې ده او فایلونه کېدای شي په مختلفو بڼو کې وي. کاروونکي باید د دغو فایلونو نه د ډېټا ترلاسه کولو لپاره نوی اپلېکېشن پروګرام ولیکي. دا ستونزمن، وخت نیوونکی او قیمتي دی."
+    },
+    {
+      "id": "cs11-s219-h6",
+      "en": "v. Data Program Dependence",
+      "ur": "v۔ ڈیٹا پروگرام انحصار",
+      "ps": "v. د ډېټا پروګرام تکیه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s219-f",
+      "en": "In file management systems, changes in the format and structure of data and records in a file require that changes be made to all of the programs that use that file. This program maintenance effort is a major burden of file management systems.",
+      "ur": "فائل مینجمنٹ سسٹمز میں کسی فائل میں ڈیٹا اور ریکارڈز کی شکل اور ساخت میں تبدیلیاں اس بات کا تقاضا کرتی ہیں کہ اس فائل کو استعمال کرنے والے تمام پروگراموں میں تبدیلیاں کی جائیں۔ پروگرام کی دیکھ بھال کی یہ کوشش فائل مینجمنٹ سسٹمز کا ایک بڑا بوجھ ہے۔",
+      "ps": "د فایل مدیریت سیسټمونو کې د فایل کې د ډېټا او ثبتونو په بڼه او جوړښت کې بدلونونه غواړي چې په ټولو هغو پروګرامونو کې بدلونونه وشي چې دا فایل کاروي. د پروګرام د ساتنې دا هڅه د فایل مدیریت سیسټمونو لوی بار دی."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s219-a",
+        "cs11-s219-h1",
+        "cs11-s219-h2",
+        "cs11-s219-b",
+        "cs11-s219-h3",
+        "cs11-s219-c",
+        "cs11-s219-h4",
+        "cs11-s219-d",
+        "cs11-s219-h5",
+        "cs11-s219-e",
+        "cs11-s219-h6",
+        "cs11-s219-f"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "sourceNote": "Printed page 210: the end of the file management system paragraph (continuing from page 209), “Limitations of File Management System” with the first five limitations i–v (each with a bold sub-heading and paragraph). The first line of the page is slightly cut at the left. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:42:40.073651+00:00",
+    "scope": "Scan 219 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

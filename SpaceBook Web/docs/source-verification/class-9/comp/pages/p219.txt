@@ -1,0 +1,37 @@
+@pdf 216
+@printed 211
+@status lesson
+m <html>
+m <head>
+m <title>Using Anchors</title>
+m </head>
+m <body>
+m <font size=4>Types of Computers</font><br><br>
+m <a href=#Microcomputer>1. Microcomputer</a><br>
+m <a href=#Minicomputer>2. Minicomputer</a><br>
+m <a href=#Mainframe>3. Mainframe</a><br><br>
+m 1.<a name=Microcomputer></a><b>Microcomputer</b><br>
+m Microcomputers are the smallest and the cheapest computer.<br>
+m These computers are the ones, most commonly used in homes<br>
+m and offices. Microcomputer was introduced in 1970s when<br>
+m microprocessor was invedted. A microprocessor is a single<br>
+m IC chip that controls the operation of the computer.<br><br>
+m 2.<a name=Minicomputer></a><b>Minicomputer</b><br>
+m Minicomputers were introduced in the 1960s when IC chips were<br>
+m introduced. A minicomputer is bigger than a microcomputer but<br>
+m smaller than a mainframe. These computers can execute billions<br>
+m of instructions per second. Therefore, they can process more<br><br>
+m 3.<a name=Mainframe></a><b>Mainframe</b><br>
+m Mainframe is a very large, very powerful and expensive<br>
+m computers that can support hundreds and thousands of users<br>
+m at the same time. Mainframes are used in large organizations<br>
+m such as banks, airlines, big universities, research centers,<br>
+m and government departments.<br>
+m </body>
+m </html>
+p (Figure 7.48: Using hyperlinks within a web page in HTML document — "Anchor Tags within a doc.html" in Notepad++.) || (شکل 7.48: HTML دستاویز میں ویب پیج کے اندر ہائپر لنکس کا استعمال۔) || (۷.۴۸ شکل: په HTML سند کې د وېب پاڼې دننه hyperlinks.)
+@issue "invedted" (for "invented") and the unfinished sentence "they can process more" are printed so in the listing; kept as printed.
+p The browser window will display it as: || براؤزر ونڈو اسے یوں دکھائے گی: || براوزر به یې داسې ښيي:
+p Click here (underlined) to go to Unit 7. || Click here (انڈر لائن) to go to Unit 7۔ || Click here (underline) to go to Unit 7.
+p When the reader clicks on the word **here**, it will take him to the location where Unit 7 starts within the web page. || جب قاری لفظ **here** پر کلک کرے گا تو یہ اسے ویب پیج میں اس جگہ لے جائے گا جہاں یونٹ 7 شروع ہوتا ہے۔ || کله چې لوستونکی پر **here** کلیک وکړي، د وېب پاڼې هغه ځای ته یې وړي چې ۷ څپرکی پیلېږي.
+p The HTML document in Figure 7.48 demonstrates how to create hyperlinks within a web page. There are three hyperlinks in this HTML document. When the user clicks || شکل 7.48 کی HTML دستاویز دکھاتی ہے کہ ویب پیج کے اندر ہائپر لنکس کیسے بنائے جاتے ہیں۔ اس میں تین ہائپر لنکس ہیں۔ جب صارف || د ۷.۴۸ شکل HTML سند ښيي چې د وېب پاڼې دننه hyperlinks څنګه جوړېږي. درې hyperlinks لري. کله چې کاروونکی

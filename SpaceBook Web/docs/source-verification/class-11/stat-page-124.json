@@ -1,0 +1,723 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s124-moments-3",
+  "title": "Example 3.16 (end) · Example 3.17: discrete series",
+  "headingUrdu": "مثال 3.16 (اختتام) · مثال 3.17: منفصل سلسلہ",
+  "headingPashto": "بېلګه 3.16 (پای) · بېلګه 3.17: منفصله لړۍ",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 124,
+    "printedPage": "116"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s124-t1",
+      "en": "Calculation of moment about mean in case of discrete series or grouped data",
+      "ur": "منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں اوسط کے گرد معیارِ اثر کا حساب",
+      "ps": "د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د اوسط شاوخوا د مومنټ محاسبه"
+    },
+    {
+      "id": "stat11-s124-ex17",
+      "en": "Example: 3.17",
+      "ur": "مثال: 3.17",
+      "ps": "بېلګه: 3.17",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s124-q17",
+      "en": "Find first four moments about the mean for the following data:",
+      "ur": "درج ذیل اعداد و شمار کے لیے اوسط کے گرد پہلے چار معیارِ اثر معلوم کریں:",
+      "ps": "د لاندې معلوماتو لپاره د اوسط شاوخوا لومړي څلور مومنټونه ومومئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s124-sol17",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-17"
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s124-t1",
+        "stat11-s124-ex17",
+        "stat11-s124-q17"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s124-sol17"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s124-a",
+      "latex": "m_2=\\dfrac{(x-\\bar{x})^2}{n}=\\dfrac{0.1016}{4}=0.025",
+      "accessible": "m2 = (x − x̄)²/n = 0.1016/4 = 0.025   [printed without Σ]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m2 = (x − x̄)²/n = 0.1016/4 = 0.025   [printed without Σ]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m2 = (x − x̄)²/n = 0.1016/4 = 0.025   [printed without Σ]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m2 = (x − x̄)²/n = 0.1016/4 = 0.025   [printed without Σ]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s124-b",
+      "latex": "m_3=\\dfrac{(x-\\bar{x})^3}{n}=\\dfrac{0.0131106}{4}=0.0033",
+      "accessible": "m3 = (x − x̄)³/n = 0.0131106/4 = 0.0033   [printed without Σ; 0.0131106 as printed]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m3 = (x − x̄)³/n = 0.0131106/4 = 0.0033   [printed without Σ; 0.0131106 as printed]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m3 = (x − x̄)³/n = 0.0131106/4 = 0.0033   [printed without Σ; 0.0131106 as printed]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m3 = (x − x̄)³/n = 0.0131106/4 = 0.0033   [printed without Σ; 0.0131106 as printed]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s124-c",
+      "latex": "m_4=\\dfrac{(x-\\bar{x})^4}{n}=\\dfrac{0.005161}{4}=0.0013",
+      "accessible": "m4 = (x − x̄)⁴/n = 0.005161/4 = 0.0013   [printed without Σ]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m4 = (x − x̄)⁴/n = 0.005161/4 = 0.0013   [printed without Σ]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m4 = (x − x̄)⁴/n = 0.005161/4 = 0.0013   [printed without Σ]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m4 = (x − x̄)⁴/n = 0.005161/4 = 0.0013   [printed without Σ]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-16"
+    },
+    {
+      "id": "stat11-s124-d",
+      "latex": "\\bar{x}=\\dfrac{fx}{f}=\\dfrac{1950}{50}=39",
+      "accessible": "x̄ = fx/f = 1950/50 = 39   [printed without Σ]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = fx/f = 1950/50 = 39   [printed without Σ]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = fx/f = 1950/50 = 39   [printed without Σ]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = fx/f = 1950/50 = 39   [printed without Σ]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "id": "stat11-s124-e",
+      "latex": "m_1=\\dfrac{f(x-\\bar{x})}{f}=\\dfrac{0}{50}=0",
+      "accessible": "m1 = f(x − x̄)/f = 0/50 = 0   [printed without Σ]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "m1 = f(x − x̄)/f = 0/50 = 0   [printed without Σ]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "m1 = f(x − x̄)/f = 0/50 = 0   [printed without Σ]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "m1 = f(x − x̄)/f = 0/50 = 0   [printed without Σ]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-17"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.17: x and f",
+      "captionUrdu": "مثال 3.17: x اور f",
+      "captionPashto": "بېلګه 3.17: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "22",
+          "ur": "22",
+          "ps": "22"
+        },
+        {
+          "en": "27",
+          "ur": "27",
+          "ps": "27"
+        },
+        {
+          "en": "32",
+          "ur": "32",
+          "ps": "32"
+        },
+        {
+          "en": "37",
+          "ur": "37",
+          "ps": "37"
+        },
+        {
+          "en": "42",
+          "ur": "42",
+          "ps": "42"
+        },
+        {
+          "en": "47",
+          "ur": "47",
+          "ps": "47"
+        },
+        {
+          "en": "52",
+          "ur": "52",
+          "ps": "52"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-17"
+    },
+    {
+      "caption": "Example 3.17 solution table",
+      "captionUrdu": "مثال 3.17 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.17 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "f(x − x̄)",
+          "ur": "f(x − x̄)",
+          "ps": "f(x − x̄)"
+        },
+        {
+          "en": "f(x − x̄)²",
+          "ur": "f(x − x̄)²",
+          "ps": "f(x − x̄)²"
+        },
+        {
+          "en": "f(x − x̄)³",
+          "ur": "f(x − x̄)³",
+          "ps": "f(x − x̄)³"
+        },
+        {
+          "en": "f(x − x̄)⁴",
+          "ur": "f(x − x̄)⁴",
+          "ps": "f(x − x̄)⁴"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "-17",
+            "ur": "-17",
+            "ps": "-17"
+          },
+          {
+            "en": "-17",
+            "ur": "-17",
+            "ps": "-17"
+          },
+          {
+            "en": "289",
+            "ur": "289",
+            "ps": "289"
+          },
+          {
+            "en": "-4913",
+            "ur": "-4913",
+            "ps": "-4913"
+          },
+          {
+            "en": "83521",
+            "ur": "83521",
+            "ps": "83521"
+          }
+        ],
+        [
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "108",
+            "ur": "108",
+            "ps": "108"
+          },
+          {
+            "en": "-12",
+            "ur": "-12",
+            "ps": "-12"
+          },
+          {
+            "en": "-48",
+            "ur": "-48",
+            "ps": "-48"
+          },
+          {
+            "en": "576",
+            "ur": "576",
+            "ps": "576"
+          },
+          {
+            "en": "-6912",
+            "ur": "-6912",
+            "ps": "-6912"
+          },
+          {
+            "en": "82944",
+            "ur": "82944",
+            "ps": "82944"
+          }
+        ],
+        [
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "256",
+            "ur": "256",
+            "ps": "256"
+          },
+          {
+            "en": "-07",
+            "ur": "-07",
+            "ps": "-07"
+          },
+          {
+            "en": "-56",
+            "ur": "-56",
+            "ps": "-56"
+          },
+          {
+            "en": "392",
+            "ur": "392",
+            "ps": "392"
+          },
+          {
+            "en": "-2744",
+            "ur": "-2744",
+            "ps": "-2744"
+          },
+          {
+            "en": "19208",
+            "ur": "19208",
+            "ps": "19208"
+          }
+        ],
+        [
+          {
+            "en": "37",
+            "ur": "37",
+            "ps": "37"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "407",
+            "ur": "407",
+            "ps": "407"
+          },
+          {
+            "en": "-02",
+            "ur": "-02",
+            "ps": "-02"
+          },
+          {
+            "en": "-22",
+            "ur": "-22",
+            "ps": "-22"
+          },
+          {
+            "en": "44",
+            "ur": "44",
+            "ps": "44"
+          },
+          {
+            "en": "-88",
+            "ur": "-88",
+            "ps": "-88"
+          },
+          {
+            "en": "176",
+            "ur": "176",
+            "ps": "176"
+          }
+        ],
+        [
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "630",
+            "ur": "630",
+            "ps": "630"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "45",
+            "ur": "45",
+            "ps": "45"
+          },
+          {
+            "en": "135",
+            "ur": "135",
+            "ps": "135"
+          },
+          {
+            "en": "405",
+            "ur": "405",
+            "ps": "405"
+          },
+          {
+            "en": "1215",
+            "ur": "1215",
+            "ps": "1215"
+          }
+        ],
+        [
+          {
+            "en": "47",
+            "ur": "47",
+            "ps": "47"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "423",
+            "ur": "423",
+            "ps": "423"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "72",
+            "ur": "72",
+            "ps": "72"
+          },
+          {
+            "en": "576",
+            "ur": "576",
+            "ps": "576"
+          },
+          {
+            "en": "4608",
+            "ur": "4608",
+            "ps": "4608"
+          },
+          {
+            "en": "36864",
+            "ur": "36864",
+            "ps": "36864"
+          }
+        ],
+        [
+          {
+            "en": "52",
+            "ur": "52",
+            "ps": "52"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "104",
+            "ur": "104",
+            "ps": "104"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "338",
+            "ur": "338",
+            "ps": "338"
+          },
+          {
+            "en": "4394",
+            "ur": "4394",
+            "ps": "4394"
+          },
+          {
+            "en": "57122",
+            "ur": "57122",
+            "ps": "57122"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "50",
+            "ur": "50",
+            "ps": "50"
+          },
+          {
+            "en": "1950",
+            "ur": "1950",
+            "ps": "1950"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "2350",
+            "ur": "2350",
+            "ps": "2350"
+          },
+          {
+            "en": "-5250",
+            "ur": "-5250",
+            "ps": "-5250"
+          },
+          {
+            "en": "281050",
+            "ur": "281050",
+            "ps": "281050"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-17"
+    }
+  ],
+  "sourceNote": "Printed page 116. The first three formulas complete Example 3.16 (the printed fractions omit the summation signs). In the solution table the x − x̄ entries \"−07\" and \"−02\" are printed with a leading zero for −7 and −2; the word \"Total\" and \"1950\" wrap across two lines in the total row. A handwritten red mark at the top-left is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:53:49.245702+00:00",
+    "scope": "Scan 124 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

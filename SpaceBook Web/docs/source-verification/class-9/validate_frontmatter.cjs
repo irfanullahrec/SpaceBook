@@ -1,0 +1,30 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),path=require('path');
+const root=path.resolve(__dirname,'../../..');
+const context={DATA:{},state:{selectedClass:'cls9'},sanitize:value=>String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')};
+const calls=[];
+context.renderInteractiveParagraphHtml=(text,urdu,pashto,id,paired)=>{assert(text&&urdu&&pashto);assert.equal(paired,true);calls.push({text,urdu,pashto,id});return `<p data-pair="${id}">${context.sanitize(text)}</p>`;};
+vm.createContext(context);
+vm.runInContext(fs.readFileSync(path.join(root,'js/data_phys.js'),'utf8'),context);
+const app=fs.readFileSync(path.join(root,'js/app.js'),'utf8');
+const start=app.indexOf('function renderClass9PhysicsFrontMatterBlocks('),end=app.indexOf('function renderScienceLessonSubContent(',start);
+assert(start>=0&&end>start);
+vm.runInContext(app.slice(start,end),context);
+const chapter=context.DATA.physChapters[0];
+const reviewed=chapter.sourceFrontMatter.filter(p=>p.pairedParagraphs);
+for(const page of reviewed){
+  const expected=JSON.parse(fs.readFileSync(path.join(__dirname,`physics-page-${String(page.pdfPage).padStart(3,'0')}.json`),'utf8'));
+  assert.deepEqual(JSON.parse(JSON.stringify(page.pairedParagraphs)),expected.pairedParagraphs);
+  assert(!JSON.stringify(page).includes('\uFFFD'),'Corrupt replacement character');
+  const before=calls.length;
+  context.renderClass9PhysicsFrontMatterBlocks(page);
+  assert.equal(calls.length-before,page.pairedParagraphs.length,'Each paired text record appears exactly once');
+}
+calls.length=0;
+const html=context.renderClass9PhysicsFrontMatter(chapter);
+assert(!/<img\b|<iframe\b|<object\b|data:image|\.(png|jpg|pdf)["']/i.test(html));
+assert.equal(new Set(calls.map(p=>p.id)).size,calls.length,'Unique pair IDs');
+assert(html.includes('<table')&&html.includes('<thead')&&html.includes('<tbody')&&html.includes('<ul>'));
+assert(html.includes('Newton’s Laws of Motion')&&html.includes('Variation of ‘g’ with altitude'));
+context.state.selectedClass='cls10';
+assert.equal(context.renderClass9PhysicsFrontMatter(chapter),'','Other class untouched');
+console.log(`PASS: ${reviewed.length} front-matter pages; ${calls.length} aligned records; semantic credits/contents; unique IDs; Class 9 scope; no raster embeds.`);

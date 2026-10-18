@@ -1,0 +1,34 @@
+@printed 105
+@status lesson
+p نیسٹڈ لوپ کا سائنٹکس ذیل میں واضح کیا گیا ہے۔ || The syntax of a nested loop is shown below. || د ځالې لوپ ترکیب لاندې روښانه شوی.
+m for (initialize counter; test condition; ++ or --)
+m {
+m     for (initialize counter; test condition; ++ or --)
+m     {
+m     .       // inner for loop
+m     }
+m     .       // outer for loop
+m }
+svg شکل نمبر 5.6 نیسٹڈ لوپ || Figure 5.6 Nested loop || ۵.۶ شکل ځالې لوپ
+<svg viewBox="0 0 440 520" width="440" role="img" aria-label="Flowchart: START, Statements, diamond 'Condition Loop 1'; FALSE goes right and down (End of Loop) to Statements then STOP; TRUE goes down to diamond 'Condition Loop 2'; its TRUE goes to 'Body of Loop', then 'Increment', which loops back to Condition Loop 2; its FALSE goes right and down then back left to Condition Loop 1" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF56" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<rect x="160" y="6" width="100" height="30" rx="15" fill="#fef08a" stroke="#111827"/><text x="210" y="26" font-size="15">START</text>
+<path d="M210 36 V56" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/>
+<rect x="160" y="60" width="100" height="26" fill="#f0f9ff" stroke="#111827"/><text x="210" y="78">Statements</text>
+<path d="M210 86 V106" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/>
+<polygon points="210,110 260,140 210,170 160,140" fill="#fef9c3" stroke="#111827"/><text x="210" y="137">Condition</text><text x="210" y="152">Loop 1</text>
+<path d="M210 170 V198" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/><text x="236" y="190">TRUE</text>
+<polygon points="210,202 260,232 210,262 160,232" fill="#fef9c3" stroke="#111827"/><text x="210" y="229">Condition</text><text x="210" y="244">Loop 2</text>
+<path d="M210 262 V286" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/><text x="236" y="280">TRUE</text>
+<rect x="160" y="290" width="100" height="26" fill="#f0f9ff" stroke="#111827"/><text x="210" y="308">Body of Loop</text>
+<path d="M210 316 V336" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/>
+<rect x="160" y="340" width="100" height="26" fill="#f0f9ff" stroke="#111827"/><text x="210" y="358">Increment</text>
+<path d="M210 366 V384 H120 V186 H206" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/>
+<path d="M260 232 H310 V404 H80 V94 H206" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/><text x="290" y="224">FALSE</text>
+<path d="M260 140 H350 V450 H264" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/><text x="290" y="132">FALSE</text><text x="395" y="250">End of Loop</text>
+<rect x="160" y="438" width="100" height="26" fill="#f0f9ff" stroke="#111827"/><text x="210" y="456">Statements</text>
+<path d="M210 464 V484" stroke="#111827" stroke-width="1.5" marker-end="url(#arF56)"/>
+<rect x="160" y="488" width="100" height="28" rx="14" fill="#fcd34d" stroke="#111827"/><text x="210" y="507" font-size="15">STOP</text>
+</svg>
+endsvg
+@issue In Figure 5.6 the FALSE branch of the inner loop returns to the outer condition without first incrementing the outer counter (and without resetting the inner counter); the flowchart simplifies how a nested for loop really runs.

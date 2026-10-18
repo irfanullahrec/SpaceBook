@@ -1,0 +1,23 @@
+@pdf 54
+@printed 46
+@status lesson
+### 2.3.3 Basic Structure of C Program || 2.3.3 C پروگرام کا بنیادی ڈھانچہ || ۲.۳.۳ د C پروګرام بنسټیز جوړښت
+p A C program consists of three main parts. These are: || C پروگرام تین بنیادی حصوں پر مشتمل ہوتا ہے۔ یہ ہیں: || C پروګرام له دریو اصلي برخو جوړ دی. دا دي:
+- **Preprocessor Directives** || **پری پروسیسر ڈائریکٹوز** || **Preprocessor لارښوونې**
+- **The main () function** || **main () فنکشن** || **main () فنکشن**
+- **Body of main { }** || **main کا جسم { }** || **د main بدنه { }**
+### Preprocessor Directives || پری پروسیسر ڈائریکٹوز || Preprocessor لارښوونې
+p The instructions that are given to the compiler before the start of the actual program are called Preprocessor Directives. These are also known as Compiler Directives. The preprocessor directives consist of instructions for the compiler. The compiler adds special instructions or code from these directives into the program at the time of compilation. || اصل پروگرام شروع ہونے سے پہلے کمپائلر کو دی جانے والی ہدایات پری پروسیسر ڈائریکٹوز کہلاتی ہیں۔ انہیں کمپائلر ڈائریکٹوز بھی کہا جاتا ہے۔ پری پروسیسر ڈائریکٹوز کمپائلر کے لیے ہدایات پر مشتمل ہوتے ہیں۔ کمپائلر کمپائلیشن کے وقت ان ڈائریکٹوز سے خاص ہدایات یا کوڈ پروگرام میں شامل کرتا ہے۔ || هغه لارښوونې چې د اصلي پروګرام له پیل مخکې compiler ته ورکول کېږي Preprocessor Directives بلل کېږي. دې ته Compiler Directives هم وايي. Preprocessor لارښوونې د compiler لپاره لارښوونې لري. Compiler د compilation پر مهال له دې لارښوونو ځانګړې لارښوونې یا کوډ پروګرام ته ورزیاتوي.
+p These preprocessor directives normally start with hash sign # and the keyword, e.g., ***#include, #define,*** etc. || یہ پری پروسیسر ڈائریکٹوز عموماً ہیش کی علامت # اور کی ورڈ سے شروع ہوتے ہیں، مثلاً ***#include، #define*** وغیرہ۔ || دا preprocessor لارښوونې معمولاً د hash نښې # او keyword سره پیلېږي، لکه ***#include، #define*** او نور.
+svg Figure: 2.14 Pre-processor example in C Language || شکل 2.14 C زبان میں پری پروسیسر کی مثال || ۲.۱۴ شکل په C ژبه کې د preprocessor بېلګه
+<svg viewBox="0 0 520 170" width="520" role="img" aria-label="Race picture: three runners labelled Source-Code (behind), Compile (middle) and Preprocessor (in front); a note reads: Preprocessor execute before submit source-code to compiler" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF214" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#94a3b8"/></marker></defs>
+<path d="M20 120 H500" stroke="#94a3b8" stroke-dasharray="6 4" marker-end="url(#arF214)"/>
+<g stroke-width="5" stroke-linecap="round" fill="none"><g stroke="#1e3a8a"><circle cx="70" cy="50" r="13" fill="#bfdbfe" stroke-width="2"/><path d="M70 63 L66 92 M66 92 L50 115 M66 92 L84 112 M68 72 L52 84 M68 72 L88 78"/></g>
+<g stroke="#94a3b8"><circle cx="260" cy="50" r="13" fill="#f1f5f9" stroke-width="2"/><path d="M260 63 L256 92 M256 92 L240 115 M256 92 L274 112 M258 72 L242 84 M258 72 L278 78"/></g>
+<g stroke="#dc2626"><circle cx="440" cy="50" r="13" fill="#fecaca" stroke-width="2"/><path d="M440 63 L436 92 M436 92 L420 115 M436 92 L454 112 M438 72 L422 84 M438 72 L458 78"/></g></g>
+<text x="70" y="150" fill="#dc2626" font-weight="700">Source-Code</text><text x="260" y="150" fill="#15803d" font-weight="700">Compile</text><text x="440" y="150" fill="#0891b2" font-weight="700">Preprocessor</text>
+<g text-anchor="start" font-weight="700" font-size="12"><text x="120" y="34" fill="#0891b2">Preprocessor</text><text x="120" y="50">execute before submit</text><text x="120" y="66"><tspan fill="#dc2626">source-code</tspan> to <tspan fill="#15803d">compiler</tspan></text></g>
+</svg>
+endsvg
+p The **#include** directive allows external header files to be processed by the compiler. When this preprocessor is carried out by the C compiler, it will search for the header file that is written within the angle brackets < > and copy it into the source file. || **#include** ڈائریکٹو بیرونی ہیڈر فائلوں کو کمپائلر کے ذریعے پروسیس ہونے دیتا ہے۔ جب C کمپائلر یہ پری پروسیسر انجام دیتا ہے تو وہ زاویہ دار بریکٹس < > میں لکھی ہیڈر فائل تلاش کر کے اسے سورس فائل میں کاپی کر دیتا ہے۔ || **#include** لارښوونه بهرنیو header فایلونو ته اجازه ورکوي چې د compiler له خوا پروسس شي. کله چې C compiler دا preprocessor ترسره کړي، هغه header فایل لټوي چې په زاویه ییزو قوسونو < > کې لیکل شوی او source فایل ته یې کاپي کوي.

@@ -1,0 +1,648 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s138-skewness-3",
+  "title": "Example 3.26: solution (Karl Pearson and Bowley methods)",
+  "headingUrdu": "مثال 3.26: حل (کارل پیئرسن اور باؤلے کے طریقے)",
+  "headingPashto": "بېلګه 3.26: حل (د Karl Pearson او Bowley طریقې)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 138,
+    "printedPage": "130"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s138-sol26",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-a1",
+      "en": "(i) Karl Pearson's method",
+      "ur": "(i) کارل پیئرسن کا طریقہ",
+      "ps": "(i) د Karl Pearson طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-a2",
+      "en": "Since n = 5 is odd therefore Median = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7",
+      "ur": "چونکہ n = 5 طاق ہے اس لیے وسطانیہ = ((n + 1)/2)ویں قدر = ((5 + 1)/2)ویں قدر = تیسری قدر = 7",
+      "ps": "ځکه چې n = 5 طاق دی نو میانه = ((n + 1)/2) ارزښت = ((5 + 1)/2) ارزښت = دریم ارزښت = 7",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-a3",
+      "en": "It means that given distribution of values is −vely skewed.",
+      "ur": "اس کا مطلب ہے کہ قدروں کی دی گئی تقسیم منفی کج ہے۔",
+      "ps": "دا پدې معنا ده چې د ارزښتونو ورکړل شوی ویش منفي کوړ دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-a4",
+      "en": "(ii) Bowley's method",
+      "ur": "(ii) باؤلے کا طریقہ",
+      "ps": "(ii) د Bowley طریقه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-26"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s138-sol26",
+        "stat11-s138-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s138-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s138-a3",
+        "stat11-s138-a4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "equation",
+      "index": 12
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s138-p0",
+      "latex": "Sk=\\dfrac{3(Mean-Median)}{S}",
+      "accessible": "Sk = 3(Mean − Median)/S",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Sk = 3(Mean − Median)/S"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Sk = 3(Mean − Median)/S"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Sk = 3(Mean − Median)/S"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-p1",
+      "latex": "\\bar{x}=\\dfrac{\\sum x}{n}=\\dfrac{30}{5}=6",
+      "accessible": "x̄ = Σx/n = 30/5 = 6",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = Σx/n = 30/5 = 6"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-p2",
+      "latex": "s=\\sqrt{\\dfrac{\\sum(x-\\bar{x})^2}{n-1}}=\\sqrt{\\dfrac{40}{5-1}}=\\sqrt{\\dfrac{40}{4}}=3.16",
+      "accessible": "s = √(Σ(x − x̄)²/(n − 1)) = √(40/(5 − 1)) = √(40/4) = 3.16",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1)) = √(40/(5 − 1)) = √(40/4) = 3.16"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1)) = √(40/(5 − 1)) = √(40/4) = 3.16"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/(n − 1)) = √(40/(5 − 1)) = √(40/4) = 3.16"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-p3",
+      "latex": "\\therefore\\ Sk=\\dfrac{3(6-7)}{3.16}=\\dfrac{-3}{3.16}=-0.95",
+      "accessible": "∴ Sk = 3(6 − 7)/3.16 = −3/3.16 = −0.95",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ Sk = 3(6 − 7)/3.16 = −3/3.16 = −0.95"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ Sk = 3(6 − 7)/3.16 = −3/3.16 = −0.95"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ Sk = 3(6 − 7)/3.16 = −3/3.16 = −0.95"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b0",
+      "latex": "Sk=\\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}",
+      "accessible": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Sk = (Q1 + Q3 − 2Q2)/(Q3 − Q1)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b1",
+      "latex": "Q_1=\\left(\\dfrac{n+1}{4}\\right)\\text{th value}=\\left(\\dfrac{5+1}{4}\\right)\\text{th value}=(1.5)\\text{th value}",
+      "accessible": "Q1 = ((n + 1)/4)th value = ((5 + 1)/4)th value = (1.5)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q1 = ((n + 1)/4)th value = ((5 + 1)/4)th value = (1.5)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q1 = ((n + 1)/4)th value = ((5 + 1)/4)th value = (1.5)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q1 = ((n + 1)/4)th value = ((5 + 1)/4)th value = (1.5)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b2",
+      "latex": "=1\\text{st value}+0.5(2\\text{nd value}-1\\text{st value})",
+      "accessible": "= 1st value + 0.5(2nd value − 1st value)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1st value + 0.5(2nd value − 1st value)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1st value + 0.5(2nd value − 1st value)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1st value + 0.5(2nd value − 1st value)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b3",
+      "latex": "=1+0.5(5-1)=1+0.5(4)=1+2=3",
+      "accessible": "= 1 + 0.5(5 − 1) = 1 + 0.5(4) = 1 + 2 = 3",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1 + 0.5(5 − 1) = 1 + 0.5(4) = 1 + 2 = 3"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1 + 0.5(5 − 1) = 1 + 0.5(4) = 1 + 2 = 3"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1 + 0.5(5 − 1) = 1 + 0.5(4) = 1 + 2 = 3"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b4",
+      "latex": "Q_2=2\\left(\\dfrac{n+1}{4}\\right)\\text{th value}=\\left(\\dfrac{n+1}{2}\\right)\\text{th value}=\\left(\\dfrac{5+1}{2}\\right)\\text{th value}=3\\text{rd value}=7",
+      "accessible": "Q2 = 2((n + 1)/4)th value = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q2 = 2((n + 1)/4)th value = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q2 = 2((n + 1)/4)th value = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q2 = 2((n + 1)/4)th value = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b5",
+      "latex": "Q_3=3\\left(\\dfrac{n+1}{4}\\right)\\text{th value}=3\\left(\\dfrac{5+1}{4}\\right)\\text{th value}=(4.5)\\text{th value}",
+      "accessible": "Q3 = 3((n + 1)/4)th value = 3((5 + 1)/4)th value = (4.5)th value",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value = 3((5 + 1)/4)th value = (4.5)th value"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value = 3((5 + 1)/4)th value = (4.5)th value"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Q3 = 3((n + 1)/4)th value = 3((5 + 1)/4)th value = (4.5)th value"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b6",
+      "latex": "=4\\text{th value}+0.5(5\\text{th value}-4\\text{th value})",
+      "accessible": "= 4th value + 0.5(5th value − 4th value)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 4th value + 0.5(5th value − 4th value)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 4th value + 0.5(5th value − 4th value)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 4th value + 0.5(5th value − 4th value)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b7",
+      "latex": "=8+0.5(9-8)",
+      "accessible": "= 8 + 0.5(9 − 8)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 8 + 0.5(9 − 8)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 8 + 0.5(9 − 8)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 8 + 0.5(9 − 8)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    },
+    {
+      "id": "stat11-s138-b8",
+      "latex": "=8+0.5=8.5",
+      "accessible": "= 8 + 0.5 = 8.5",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 8 + 0.5 = 8.5"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 8 + 0.5 = 8.5"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 8 + 0.5 = 8.5"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-26"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.26: deviations from the mean",
+      "captionUrdu": "مثال 3.26: اوسط سے انحرافات",
+      "captionPashto": "بېلګه 3.26: له اوسط څخه انحرافات",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "(x − x̄)",
+          "ur": "(x − x̄)",
+          "ps": "(x − x̄)"
+        },
+        {
+          "en": "(x − x̄)²",
+          "ur": "(x − x̄)²",
+          "ps": "(x − x̄)²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-5",
+            "ur": "-5",
+            "ps": "-5"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          }
+        ],
+        [
+          {
+            "en": "Total 30",
+            "ur": "میزان 30",
+            "ps": "ټولیز 30"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-26"
+    }
+  ],
+  "sourceNote": "Printed page 130. The table lists the data in ascending order (1, 5, 7, 8, 9); the mean is printed to its right and is shown after the table. The Bowley working continues on the next page. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:58:00.722488+00:00",
+    "scope": "Scan 138 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

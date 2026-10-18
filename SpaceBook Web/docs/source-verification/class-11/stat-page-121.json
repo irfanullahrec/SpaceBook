@@ -1,0 +1,1012 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s121-cv-3",
+  "title": "Example 3.15: solution",
+  "headingUrdu": "مثال 3.15: حل",
+  "headingPashto": "بېلګه 3.15: حل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 121,
+    "printedPage": "113"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s121-q15b",
+      "en": "Calculate the coefficient of variation in each case, and check which city may be considered more consistent.",
+      "ur": "ہر صورت میں تغیر کا عددی سر حساب کریں اور جانچیں کہ کون سا شہر زیادہ مستقل سمجھا جا سکتا ہے۔",
+      "ps": "په هره حالت کې د تغیر ضریب محاسبه کړئ او وګورئ چې کوم ښار ډېر یو شان ګڼل کېدای شي.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-15",
+      "sourceGap": {
+        "note": "Completes the question of Example 3.15 from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s121-sol15",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-ca",
+      "en": "City A",
+      "ur": "شہر A",
+      "ps": "ښار A",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-cb",
+      "en": "City B",
+      "ur": "شہر B",
+      "ps": "ښار B",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-15"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s121-q15b",
+        "stat11-s121-sol15"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s121-ca"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s121-cb"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "equation",
+      "index": 8
+    },
+    {
+      "type": "equation",
+      "index": 9
+    },
+    {
+      "type": "equation",
+      "index": 10
+    },
+    {
+      "type": "equation",
+      "index": 11
+    },
+    {
+      "type": "equation",
+      "index": 12
+    },
+    {
+      "type": "equation",
+      "index": 13
+    },
+    {
+      "type": "equation",
+      "index": 14
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s121-a1",
+      "latex": "\\bar{x}=a+\\dfrac{\\sum fu}{\\sum f}\\times h",
+      "accessible": "x̄ = a + (Σfu/Σf) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = a + (Σfu/Σf) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = a + (Σfu/Σf) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = a + (Σfu/Σf) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a2",
+      "latex": "=55.5+\\dfrac{(-15)}{542}\\times 10=55.22",
+      "accessible": "= 55.5 + ((−15)/542) × 10 = 55.22",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 55.5 + ((−15)/542) × 10 = 55.22"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 55.5 + ((−15)/542) × 10 = 55.22"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 55.5 + ((−15)/542) × 10 = 55.22"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a3",
+      "latex": "S=\\sqrt{\\dfrac{\\sum fu^2}{\\sum f}-\\left(\\dfrac{\\sum fu}{\\sum f}\\right)^2}\\times h",
+      "accessible": "S = √(Σfu²/Σf − (Σfu/Σf)²) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σfu²/Σf − (Σfu/Σf)²) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a4",
+      "latex": "=\\sqrt{\\dfrac{765}{542}-\\left(\\dfrac{-15}{542}\\right)^2}\\times 10",
+      "accessible": "= √(765/542 − (−15/542)²) × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √(765/542 − (−15/542)²) × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √(765/542 − (−15/542)²) × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √(765/542 − (−15/542)²) × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a5",
+      "latex": "=\\sqrt{1.4114-0.0009}\\times 10",
+      "accessible": "= √(1.4114 − 0.0009) × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √(1.4114 − 0.0009) × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √(1.4114 − 0.0009) × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √(1.4114 − 0.0009) × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a6",
+      "latex": "=\\sqrt{1.4105}\\times 10=1.1876\\times 10",
+      "accessible": "= √1.4105 × 10 = 1.1876 × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-a7",
+      "latex": "=\\sqrt{1.4105}\\times 10=1.1876\\times 10=11.88",
+      "accessible": "= √1.4105 × 10 = 1.1876 × 10 = 11.88   [this line is printed twice in the scan]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10 = 11.88   [this line is printed twice in the scan]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10 = 11.88   [this line is printed twice in the scan]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √1.4105 × 10 = 1.1876 × 10 = 11.88   [this line is printed twice in the scan]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b1",
+      "latex": "\\bar{x}=55.5+\\dfrac{(-6)}{100}\\times 10",
+      "accessible": "x̄ = 55.5 + ((−6)/100) × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̄ = 55.5 + ((−6)/100) × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̄ = 55.5 + ((−6)/100) × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̄ = 55.5 + ((−6)/100) × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b2",
+      "latex": "=55.5-0.6=54.9",
+      "accessible": "= 55.5 − 0.6 = 54.9",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 55.5 − 0.6 = 54.9"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 55.5 − 0.6 = 54.9"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 55.5 − 0.6 = 54.9"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b3",
+      "latex": "S=\\sqrt{\\dfrac{168}{100}-\\left(\\dfrac{-6}{100}\\right)^2}\\times 10",
+      "accessible": "S = √(168/100 − (−6/100)²) × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(168/100 − (−6/100)²) × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(168/100 − (−6/100)²) × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(168/100 − (−6/100)²) × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b4",
+      "latex": "=\\sqrt{1.68-0.0036}\\times 10",
+      "accessible": "= √(1.68 − 0.0036) × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √(1.68 − 0.0036) × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √(1.68 − 0.0036) × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √(1.68 − 0.0036) × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b5",
+      "latex": "=\\sqrt{1.6764}\\times 10",
+      "accessible": "= √1.6764 × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √1.6764 × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √1.6764 × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √1.6764 × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b6",
+      "latex": "=1.2948\\times 10",
+      "accessible": "= 1.2948 × 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 1.2948 × 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 1.2948 × 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 1.2948 × 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b7",
+      "latex": "=12.95",
+      "accessible": "= 12.95",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= 12.95"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= 12.95"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= 12.95"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s121-b8",
+      "latex": "\\text{C.V}=\\dfrac{12.95}{54.9}\\times 100=23.59\\ \\%",
+      "accessible": "C.V = (12.95/54.9) × 100 = 23.59 %",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.V = (12.95/54.9) × 100 = 23.59 %"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.V = (12.95/54.9) × 100 = 23.59 %"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.V = (12.95/54.9) × 100 = 23.59 %"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.15 solution table",
+      "captionUrdu": "مثال 3.15 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.15 د حل جدول",
+      "headers": [
+        {
+          "en": "Expenditure (in Rs)",
+          "ur": "اخراجات (روپوں میں)",
+          "ps": "لګښت (په روپیو)"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "u = (x − 55.5)/10",
+          "ur": "u = (x − 55.5)/10",
+          "ps": "u = (x − 55.5)/10"
+        },
+        {
+          "en": "City A: f",
+          "ur": "شہر A: f",
+          "ps": "ښار A: f"
+        },
+        {
+          "en": "City A: fu",
+          "ur": "شہر A: fu",
+          "ps": "ښار A: fu"
+        },
+        {
+          "en": "City A: fu²",
+          "ur": "شہر A: fu²",
+          "ps": "ښار A: fu²"
+        },
+        {
+          "en": "City B: f",
+          "ur": "شہر B: f",
+          "ps": "ښار B: f"
+        },
+        {
+          "en": "City B: fu",
+          "ur": "شہر B: fu",
+          "ps": "ښار B: fu"
+        },
+        {
+          "en": "City B: fu²",
+          "ur": "شہر B: fu²",
+          "ps": "ښار B: fu²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "21 – 30",
+            "ur": "21 – 30",
+            "ps": "21 – 30"
+          },
+          {
+            "en": "25.5",
+            "ur": "25.5",
+            "ps": "25.5"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "-9",
+            "ur": "-9",
+            "ps": "-9"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "-6",
+            "ur": "-6",
+            "ps": "-6"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          }
+        ],
+        [
+          {
+            "en": "31 – 40",
+            "ur": "31 – 40",
+            "ps": "31 – 40"
+          },
+          {
+            "en": "35.5",
+            "ur": "35.5",
+            "ps": "35.5"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "61",
+            "ur": "61",
+            "ps": "61"
+          },
+          {
+            "en": "-122",
+            "ur": "-122",
+            "ps": "-122"
+          },
+          {
+            "en": "244",
+            "ur": "244",
+            "ps": "244"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "-28",
+            "ur": "-28",
+            "ps": "-28"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          }
+        ],
+        [
+          {
+            "en": "41 – 50",
+            "ur": "41 – 50",
+            "ps": "41 – 50"
+          },
+          {
+            "en": "45.5",
+            "ur": "45.5",
+            "ps": "45.5"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "-132",
+            "ur": "-132",
+            "ps": "-132"
+          },
+          {
+            "en": "132",
+            "ur": "132",
+            "ps": "132"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "-20",
+            "ur": "-20",
+            "ps": "-20"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          }
+        ],
+        [
+          {
+            "en": "51 – 60",
+            "ur": "51 – 60",
+            "ps": "51 – 60"
+          },
+          {
+            "en": "55.5",
+            "ur": "55.5",
+            "ps": "55.5"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "153",
+            "ur": "153",
+            "ps": "153"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "61 – 70",
+            "ur": "61 – 70",
+            "ps": "61 – 70"
+          },
+          {
+            "en": "65.5",
+            "ur": "65.5",
+            "ps": "65.5"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "140",
+            "ur": "140",
+            "ps": "140"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          }
+        ],
+        [
+          {
+            "en": "71 – 80",
+            "ur": "71 – 80",
+            "ps": "71 – 80"
+          },
+          {
+            "en": "75.5",
+            "ur": "75.5",
+            "ps": "75.5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "51",
+            "ur": "51",
+            "ps": "51"
+          },
+          {
+            "en": "102",
+            "ur": "102",
+            "ps": "102"
+          },
+          {
+            "en": "204",
+            "ur": "204",
+            "ps": "204"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          }
+        ],
+        [
+          {
+            "en": "81 – 90",
+            "ur": "81 – 90",
+            "ps": "81 – 90"
+          },
+          {
+            "en": "85.5",
+            "ur": "85.5",
+            "ps": "85.5"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "542",
+            "ur": "542",
+            "ps": "542"
+          },
+          {
+            "en": "-15",
+            "ur": "-15",
+            "ps": "-15"
+          },
+          {
+            "en": "765",
+            "ur": "765",
+            "ps": "765"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          },
+          {
+            "en": "-6",
+            "ur": "-6",
+            "ps": "-6"
+          },
+          {
+            "en": "168",
+            "ur": "168",
+            "ps": "168"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-15"
+    }
+  ],
+  "sourceNote": "Printed page 113. The City A and City B workings are printed in two columns; City A is shown first, then City B. The line \"= √1.4105 × 10 = 1.1876 × 10\" appears twice in City A (the second adds \"= 11.88\"); both are kept. The two-level table header (City A / City B with f, fu, fu²) is flattened to nine columns. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:52:40.380055+00:00",
+    "scope": "Scan 121 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

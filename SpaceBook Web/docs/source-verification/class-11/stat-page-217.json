@@ -1,0 +1,867 @@
+{
+  "chapter": "stat11-time-series",
+  "id": "stat11-s217-ts-quad-1",
+  "title": "Example 6.7: second degree parabola (data, table, normal equations)",
+  "headingUrdu": "مثال 6.7: دوسرے درجے کا قطع مکافی (اعداد و شمار، جدول، معمول کی مساواتیں)",
+  "headingPashto": "بېلګه 6.7: دویم درجې پیراپولا (معلومات، جدول، نورمال معادلې)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 217,
+    "printedPage": "207"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s217-ex67",
+      "en": "Example: 6.7",
+      "ur": "مثال: 6.7",
+      "ps": "بېلګه: 6.7",
+      "kind": "heading",
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-q67",
+      "en": "Fit a second degree parabola to the following data and find the trend values",
+      "ur": "درج ذیل اعداد و شمار پر دوسرے درجے کا قطع مکافی فٹ کریں اور رجحان کی قدریں معلوم کریں",
+      "ps": "پر لاندې معلوماتو دویم درجې پیراپولا برابره کړئ او د تمایل ارزښتونه ومومئ",
+      "role": "question",
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-sol67",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-a1",
+      "en": "The required equation to be fitted is ŷ = a + bx + cx²",
+      "ur": "فٹ کی جانے والی مطلوبہ مساوات ہے ŷ = a + bx + cx²",
+      "ps": "د برابرولو وړ اړینه معادله ده ŷ = a + bx + cx²",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-a2",
+      "en": "Three normal equation for a, b and c are;",
+      "ur": "a, b اور c کے لیے تین معمول کی مساواتیں یہ ہیں؛",
+      "ps": "د a, b او c لپاره درې نورمال معادلې دا دي؛",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-a3",
+      "en": "Putting values in above normal equations we have",
+      "ur": "اوپر دی گئی معمول کی مساواتوں میں قدریں رکھنے سے ہمیں ملتا ہے",
+      "ps": "په پورتنیو نورمالو معادلو کې ارزښتونه ایښودو سره موږ لرو",
+      "role": "solution",
+      "exampleId": "stat11-ex-6-7",
+      "sourceGap": {
+        "note": "The working continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s217-ex67",
+        "stat11-s217-q67"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s217-sol67",
+        "stat11-s217-a1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s217-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s217-a3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "equation",
+      "index": 6
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s217-q",
+      "latex": "\\hat{y}=a+bx+cx^2",
+      "accessible": "ŷ = a + bx + cx²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "ŷ = a + bx + cx²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "ŷ = a + bx + cx²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "ŷ = a + bx + cx²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-n1",
+      "latex": "\\sum y=na+b\\sum x+c\\sum x^2\\qquad\\text{(i)}",
+      "accessible": "Σy = na + bΣx + cΣx²   (i)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σy = na + bΣx + cΣx²   (i)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-n2",
+      "latex": "\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3\\qquad\\text{(ii)}",
+      "accessible": "Σxy = aΣx + bΣx² + cΣx³   (ii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σxy = aΣx + bΣx² + cΣx³   (ii)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-n3",
+      "latex": "\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4\\qquad\\text{(iii)}",
+      "accessible": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σx²y = aΣx² + bΣx³ + cΣx⁴   (iii)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-e4",
+      "latex": "1175=7a+28c\\qquad\\text{(4)}",
+      "accessible": "1175 = 7a + 28c   (4)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "1175 = 7a + 28c   (4)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "1175 = 7a + 28c   (4)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "1175 = 7a + 28c   (4)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-e5",
+      "latex": "333=28b\\qquad\\text{(5)}\\qquad\\Rightarrow\\ b=\\dfrac{333}{28}=11.89",
+      "accessible": "333 = 28b   (5)   ⇒ b = 333/28 = 11.89",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "333 = 28b   (5)   ⇒ b = 333/28 = 11.89"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "333 = 28b   (5)   ⇒ b = 333/28 = 11.89"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "333 = 28b   (5)   ⇒ b = 333/28 = 11.89"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "id": "stat11-s217-e6",
+      "latex": "5707=28a+196c\\qquad\\text{(6)}",
+      "accessible": "5707 = 28a + 196c   (6)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "5707 = 28a + 196c   (6)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "5707 = 28a + 196c   (6)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "5707 = 28a + 196c   (6)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-6-7"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 6.7: years and values",
+      "captionUrdu": "مثال 6.7: سال اور قدریں",
+      "captionPashto": "بېلګه 6.7: کلونه او ارزښتونه",
+      "headers": [
+        {
+          "en": "Years:",
+          "ur": "سال:",
+          "ps": "کلونه:"
+        },
+        {
+          "en": "2006",
+          "ur": "2006",
+          "ps": "2006"
+        },
+        {
+          "en": "2007",
+          "ur": "2007",
+          "ps": "2007"
+        },
+        {
+          "en": "2008",
+          "ur": "2008",
+          "ps": "2008"
+        },
+        {
+          "en": "2009",
+          "ur": "2009",
+          "ps": "2009"
+        },
+        {
+          "en": "2010",
+          "ur": "2010",
+          "ps": "2010"
+        },
+        {
+          "en": "2011",
+          "ur": "2011",
+          "ps": "2011"
+        },
+        {
+          "en": "2012",
+          "ur": "2012",
+          "ps": "2012"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Values:",
+            "ur": "قدریں:",
+            "ps": "ارزښتونه:"
+          },
+          {
+            "en": "187",
+            "ur": "187",
+            "ps": "187"
+          },
+          {
+            "en": "142",
+            "ur": "142",
+            "ps": "142"
+          },
+          {
+            "en": "133",
+            "ur": "133",
+            "ps": "133"
+          },
+          {
+            "en": "129",
+            "ur": "129",
+            "ps": "129"
+          },
+          {
+            "en": "136",
+            "ur": "136",
+            "ps": "136"
+          },
+          {
+            "en": "169",
+            "ur": "169",
+            "ps": "169"
+          },
+          {
+            "en": "279",
+            "ur": "279",
+            "ps": "279"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-7"
+    },
+    {
+      "caption": "Example 6.7 solution table",
+      "captionUrdu": "مثال 6.7 کا حل: جدول",
+      "captionPashto": "د بېلګې 6.7 د حل جدول",
+      "headers": [
+        {
+          "en": "Year",
+          "ur": "سال",
+          "ps": "کال"
+        },
+        {
+          "en": "y",
+          "ur": "y",
+          "ps": "y"
+        },
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x²",
+          "ur": "x²",
+          "ps": "x²"
+        },
+        {
+          "en": "xy",
+          "ur": "xy",
+          "ps": "xy"
+        },
+        {
+          "en": "x³",
+          "ur": "x³",
+          "ps": "x³"
+        },
+        {
+          "en": "x²y",
+          "ur": "x²y",
+          "ps": "x²y"
+        },
+        {
+          "en": "x⁴",
+          "ur": "x⁴",
+          "ps": "x⁴"
+        },
+        {
+          "en": "Trend values ŷ = 119.9 + 11.89x + 11.99x²",
+          "ur": "رجحان کی قدریں ŷ = 119.9 + 11.89x + 11.99x²",
+          "ps": "د تمایل ارزښتونه ŷ = 119.9 + 11.89x + 11.99x²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2006",
+            "ur": "2006",
+            "ps": "2006"
+          },
+          {
+            "en": "187",
+            "ur": "187",
+            "ps": "187"
+          },
+          {
+            "en": "-3",
+            "ur": "-3",
+            "ps": "-3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "-561",
+            "ur": "-561",
+            "ps": "-561"
+          },
+          {
+            "en": "-27",
+            "ur": "-27",
+            "ps": "-27"
+          },
+          {
+            "en": "1683",
+            "ur": "1683",
+            "ps": "1683"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          },
+          {
+            "en": "192",
+            "ur": "192",
+            "ps": "192"
+          }
+        ],
+        [
+          {
+            "en": "2007",
+            "ur": "2007",
+            "ps": "2007"
+          },
+          {
+            "en": "142",
+            "ur": "142",
+            "ps": "142"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-284",
+            "ur": "-284",
+            "ps": "-284"
+          },
+          {
+            "en": "-8",
+            "ur": "-8",
+            "ps": "-8"
+          },
+          {
+            "en": "568",
+            "ur": "568",
+            "ps": "568"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "144",
+            "ur": "144",
+            "ps": "144"
+          }
+        ],
+        [
+          {
+            "en": "2008",
+            "ur": "2008",
+            "ps": "2008"
+          },
+          {
+            "en": "133",
+            "ur": "133",
+            "ps": "133"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "-133",
+            "ur": "-133",
+            "ps": "-133"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "133",
+            "ur": "133",
+            "ps": "133"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "120",
+            "ur": "120",
+            "ps": "120"
+          }
+        ],
+        [
+          {
+            "en": "2009",
+            "ur": "2009",
+            "ps": "2009"
+          },
+          {
+            "en": "129",
+            "ur": "129",
+            "ps": "129"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "119",
+            "ur": "119",
+            "ps": "119"
+          }
+        ],
+        [
+          {
+            "en": "2010",
+            "ur": "2010",
+            "ps": "2010"
+          },
+          {
+            "en": "136",
+            "ur": "136",
+            "ps": "136"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "136",
+            "ur": "136",
+            "ps": "136"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "136",
+            "ur": "136",
+            "ps": "136"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "144",
+            "ur": "144",
+            "ps": "144"
+          }
+        ],
+        [
+          {
+            "en": "2011",
+            "ur": "2011",
+            "ps": "2011"
+          },
+          {
+            "en": "169",
+            "ur": "169",
+            "ps": "169"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "338",
+            "ur": "338",
+            "ps": "338"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "676",
+            "ur": "676",
+            "ps": "676"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "192",
+            "ur": "192",
+            "ps": "192"
+          }
+        ],
+        [
+          {
+            "en": "2012",
+            "ur": "2012",
+            "ps": "2012"
+          },
+          {
+            "en": "279",
+            "ur": "279",
+            "ps": "279"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "837",
+            "ur": "837",
+            "ps": "837"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "2511",
+            "ur": "2511",
+            "ps": "2511"
+          },
+          {
+            "en": "81",
+            "ur": "81",
+            "ps": "81"
+          },
+          {
+            "en": "264",
+            "ur": "264",
+            "ps": "264"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "1175",
+            "ur": "1175",
+            "ps": "1175"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "28",
+            "ur": "28",
+            "ps": "28"
+          },
+          {
+            "en": "333",
+            "ur": "333",
+            "ps": "333"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "5707",
+            "ur": "5707",
+            "ps": "5707"
+          },
+          {
+            "en": "196",
+            "ur": "196",
+            "ps": "196"
+          },
+          {
+            "en": "1175",
+            "ur": "1175",
+            "ps": "1175"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-6-7"
+    }
+  ],
+  "sourceNote": "Printed page 207. In the printed text b = 333/28 = 11.89 stands beside equation (5). The equations (4)–(6) are labelled with underlined slots. A black dot near the right margin of the table is ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:31:34.831207+00:00",
+    "scope": "Scan 217 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

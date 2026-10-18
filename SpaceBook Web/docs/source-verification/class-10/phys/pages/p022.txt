@@ -1,0 +1,16 @@
+@printed 125
+@status lesson
+@issue Source: 10thphysics4.pdf page 12.
+eq \text{Hence}\quad \dfrac{1}{C_e} = \dfrac{1}{C_1} + \dfrac{1}{C_2} + \dfrac{1}{C_3} \qquad (13.7)
+p Generally for 'n' number of capacitors connected in series || عمومی طور پر سلسلہ وار جڑے 'n' کیپیسیٹرز کے لیے || په عمومي ډول د 'n' په لړۍ تړل شوو خازنونو لپاره
+eq \dfrac{1}{C_e} = \dfrac{1}{C_1} + \dfrac{1}{C_2} + \dfrac{1}{C_3} + \cdots + \dfrac{1}{C_n} \qquad (13.8)
+p From equation 13.7 and equation 13.8 it is clear that in series combination, the equivalent capacitance is always smaller than any individual capacitance in combination. || مساوات 13.7 اور 13.8 سے واضح ہے کہ سلسلہ وار ملاپ میں مساوی کیپیسیٹنس ہمیشہ ملاپ کی ہر انفرادی کیپیسیٹنس سے کم ہوتی ہے۔ || له (۱۳.۷) او (۱۳.۸) معادلو څرګندېږي چې په لړۍ ییز ترکیب کې معادل ظرفیت تل د ترکیب له هر انفرادي ظرفیت څخه کوچنی وي.
+example 13.5 | SERIES COMBINATION OF CAPACITORS || کیپیسیٹرز کا سلسلہ وار ملاپ || د خازنونو لړۍ ییز ترکیب
+p Two capacitors of 5 μF and 10 μF are connected in series with the external source of voltage is 100 V. Calculate the total capacitance and the potential drop across each capacitor. || 5 μF اور 10 μF کے دو کیپیسیٹرز کو 100 V کے بیرونی منبع کے ساتھ سلسلہ وار جوڑا گیا ہے۔ کل کیپیسیٹنس اور ہر کیپیسیٹر پر پوٹینشل ڈراپ معلوم کریں۔ || د 5 μF او 10 μF دوه خازنونه د 100 V بهرنۍ سرچینې سره په لړۍ تړل شوي. ټول ظرفیت او پر هر خازن د پوټانشیل کمښت معلوم کړئ.
+p **GIVEN:** Capacitor $C_1$ = 5 μF = $5\times10^{-6}$ F; Capacitor $C_2$ = 10 μF = $10\times10^{-6}$ F; Voltage V = 100 V. **WANTED:** Equivalent capacitance $C_{eq}$ = ?; Potential drops $V_1$ and $V_2$ = ? || **معلوم:** $C_1$ = 5 μF = $5\times10^{-6}$ F؛ $C_2$ = 10 μF = $10\times10^{-6}$ F؛ وولٹیج V = 100 V۔ **مطلوب:** مساوی کیپیسیٹنس $C_{eq}$ = ?؛ پوٹینشل ڈراپ $V_1$ اور $V_2$ = ? || **ورکړل شوي:** $C_1$ = 5 μF = $5\times10^{-6}$ F؛ $C_2$ = 10 μF = $10\times10^{-6}$ F؛ ولټیج V = 100 V. **غوښتل شوي:** معادل ظرفیت $C_{eq}$ = ?؛ د پوټانشیل کمښت $V_1$ او $V_2$ = ?
+p **SOLUTION:** For Series Combination the equivalent capacitance is || **حل:** سلسلہ وار ملاپ کے لیے مساوی کیپیسیٹنس ہے || **حل:** د لړۍ ییز ترکیب لپاره معادل ظرفیت دی
+eq \dfrac{1}{C_e} = \dfrac{1}{C_1} + \dfrac{1}{C_2} \quad \text{or} \quad \dfrac{1}{C_e} = \dfrac{C_2 + C_1}{C_1C_2}
+eq \text{or}\quad C_e = \dfrac{C_1C_2}{C_2 + C_1} \qquad \text{Putting values}\quad C_e = \dfrac{5\times10^{-6}\ \text{F}\times10\times10^{-6}\ \text{F}}{5\times10^{-6}\ \text{F} + 10\times10^{-6}\ \text{F}}
+eq \text{or}\quad C_e = \dfrac{50\times10^{-12}\ \text{F}^2}{15\times10^{-6}\ \text{F}} \qquad C_e = 3.33\times10^{-6}\ \text{F} = 3.33\ \mu\text{F} \quad \text{(Answer)}
+p In series combination, the charge remains the same $q_1 = q_2 = Q$. The charge on each capacitor is $Q = C_eV$ || سلسلہ وار ملاپ میں چارج یکساں رہتا ہے $q_1 = q_2 = Q$۔ ہر کیپیسیٹر پر چارج $Q = C_eV$ ہے || په لړۍ ییز ترکیب کې چارج یو شان پاتې کېږي $q_1 = q_2 = Q$. پر هر خازن چارج $Q = C_eV$ دی
+eq \text{Putting values}\quad Q = 3.33\times10^{-6}\ \text{F}\times100\ \text{V}

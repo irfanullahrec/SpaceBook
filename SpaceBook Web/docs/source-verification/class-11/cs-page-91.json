@@ -1,0 +1,165 @@
+{
+  "chapter": "cs11-u3",
+  "id": "cs11-s091-p082",
+  "title": "3.2 CPU operations (end); 3.2.1 Instructions and their types; a. Data Transfer Instructions — start",
+  "headingUrdu": "۳.۲ سی پی یو کے اعمال (اختتام)؛ ۳.۲.۱ ہدایات اور ان کی اقسام؛ الف۔ ڈیٹا ٹرانسفر ہدایات — آغاز",
+  "headingPashto": "۳.۲ د CPU عملونه (پای)؛ ۳.۲.۱ لارښوونې او د هغو ډولونه؛ الف. د ډېټا لېږد لارښوونې — پیل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 91,
+    "printedPage": "82"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s091-a",
+      "en": "computer memory. There are four steps that CPUs use in their operation, these are fetch, decode, execute and store.",
+      "ur": "کمپیوٹر میموری میں رکھی جاتی ہے۔ سی پی یوز اپنے عمل میں چار مراحل استعمال کرتے ہیں، یہ حاصل کرنا، سمجھنا، چلانا اور محفوظ کرنا ہیں۔",
+      "ps": "کمپیوټر حافظه کې ساتل کېږي. څلور ګامونه شته چې CPUs یې په خپل عمل کې کاروي، دا راوړل، پوهېدل، پلي کول او ساتل دي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s091-h1",
+      "en": "3.2.1 Instructions and their types",
+      "ur": "۳.۲.۱ ہدایات اور ان کی اقسام",
+      "ps": "۳.۲.۱ لارښوونې او د هغو ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s091-b",
+      "en": "An instruction (or instruction code) is a group of bits that tells the computer to perform a specific operation. Instruction is an elementary operation that the processor can accomplish. Instructions are stored in the main memory, waiting to be processed by the processor. An instruction has two fields:",
+      "ur": "ہدایت (یا ہدایتی کوڈ) بٹس کا ایک گروپ ہے جو کمپیوٹر کو ایک مخصوص عمل کرنے کو کہتا ہے۔ ہدایت ایک ابتدائی عمل ہے جسے پراسیسر انجام دے سکتا ہے۔ ہدایات مین میموری میں محفوظ ہوتی ہیں اور پراسیسر کے ذریعے پراسیس ہونے کا انتظار کرتی ہیں۔ ایک ہدایت کے دو حصے (فیلڈز) ہوتے ہیں:",
+      "ps": "لارښوونه (یا د لارښوونې کوډ) د بټونو یوه ډله ده چې کمپیوټر ته وايي یو ځانګړی عمل وکړي. لارښوونه یو لومړنی عمل دی چې پروسیسر یې ترسره کولای شي. لارښوونې په اصلي حافظه کې ساتل کېږي او د پروسیسر په واسطه د پروسس انتظار کوي. یوه لارښوونه دوه ساحې لري:"
+    },
+    {
+      "id": "cs11-s091-f1",
+      "en": "Operation code, which represents the action that the processor execute.",
+      "ur": "آپریشن کوڈ، جو اس عمل کو ظاہر کرتا ہے جو پراسیسر انجام دیتا ہے۔",
+      "ps": "د عملیې کوډ، چې هغه عمل ښیي چې پروسیسر یې پلي کوي.",
+      "listGroup": "flds"
+    },
+    {
+      "id": "cs11-s091-f2",
+      "en": "Operand code, which defines the parameters of the action. The operand code depends on the operation. It can be data or a memory address.",
+      "ur": "آپرینڈ کوڈ، جو عمل کے پیرامیٹرز کی تعریف کرتا ہے۔ آپرینڈ کوڈ عمل پر منحصر ہوتا ہے۔ یہ ڈیٹا یا میموری پتہ ہو سکتا ہے۔",
+      "ps": "د عملوند کوډ، چې د عمل پارامیټرونه تعریفوي. د عملوند کوډ په عملیه پورې اړه لري. دا ډېټا یا د حافظې پته کېدای شي.",
+      "listGroup": "flds"
+    },
+    {
+      "id": "cs11-s091-c",
+      "en": "There are different types of instructions.",
+      "ur": "ہدایات کی مختلف اقسام ہیں۔",
+      "ps": "د لارښوونو مختلف ډولونه شته."
+    },
+    {
+      "id": "cs11-s091-t1",
+      "en": "Data Transfer Instructions",
+      "ur": "ڈیٹا ٹرانسفر ہدایات",
+      "ps": "د ډېټا لېږد لارښوونې",
+      "listGroup": "ity"
+    },
+    {
+      "id": "cs11-s091-t2",
+      "en": "Data Processing Instructions",
+      "ur": "ڈیٹا پراسیسنگ ہدایات",
+      "ps": "د ډېټا پروسس لارښوونې",
+      "listGroup": "ity"
+    },
+    {
+      "id": "cs11-s091-t3",
+      "en": "Program Control Instructions",
+      "ur": "پروگرام کنٹرول ہدایات",
+      "ps": "د پروګرام کنټرول لارښوونې",
+      "listGroup": "ity"
+    },
+    {
+      "id": "cs11-s091-t4",
+      "en": "Miscellaneous Instructions",
+      "ur": "متفرق ہدایات",
+      "ps": "متفرقې لارښوونې",
+      "listGroup": "ity"
+    },
+    {
+      "id": "cs11-s091-h2",
+      "en": "a. Data Transfer Instructions",
+      "ur": "الف۔ ڈیٹا ٹرانسفر ہدایات",
+      "ps": "الف. د ډېټا لېږد لارښوونې",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s091-d",
+      "en": "Most of the operations of the CPU are data transferring. These instructions are used when the data needs to be moved from memory location to register. These instructions transfer data from one location in the computer to another location without changing the data content. The most common transfers are between:",
+      "ur": "سی پی یو کے زیادہ تر اعمال ڈیٹا کی منتقلی ہیں۔ یہ ہدایات اس وقت استعمال ہوتی ہیں جب ڈیٹا کو میموری مقام سے رجسٹر میں منتقل کرنا ہو۔ یہ ہدایات ڈیٹا کے مواد کو تبدیل کیے بغیر ڈیٹا کو کمپیوٹر کے ایک مقام سے دوسرے مقام پر منتقل کرتی ہیں۔ سب سے عام منتقلیاں درج ذیل کے درمیان ہوتی ہیں:",
+      "ps": "د CPU ډیری عملونه د ډېټا لېږد دي. دا لارښوونې هغه وخت کارول کېږي چې ډېټا باید له حافظې ځای نه رجستر ته ولېږدول شي. دا لارښوونې ډېټا د منځپانګې د بدلولو پرته په کمپیوټر کې له یوه ځای نه بل ځای ته لېږدوي. تر ټولو عام لېږدونه د لاندې ترمنځ دي:"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s091-a",
+        "cs11-s091-h1",
+        "cs11-s091-b",
+        "cs11-s091-f1",
+        "cs11-s091-f2"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s091-c",
+        "cs11-s091-t1",
+        "cs11-s091-t2",
+        "cs11-s091-t3",
+        "cs11-s091-t4",
+        "cs11-s091-h2",
+        "cs11-s091-d"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Instruction fields",
+      "captionUrdu": "ہدایت کے حصے",
+      "captionPashto": "د لارښوونې ساحې",
+      "headers": [
+        {
+          "en": "Operation code",
+          "ur": "آپریشن کوڈ",
+          "ps": "د عملیې کوډ"
+        },
+        {
+          "en": "Operand code",
+          "ur": "آپرینڈ کوڈ",
+          "ps": "د عملوند کوډ"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Operation code",
+            "ur": "آپریشن کوڈ",
+            "ps": "د عملیې کوډ"
+          },
+          {
+            "en": "Operand code",
+            "ur": "آپرینڈ کوڈ",
+            "ps": "د عملوند کوډ"
+          }
+        ]
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 82: the end of the “3.2 CPU OPERATIONS” sentence (continuing from page 81), “3.2.1 Instructions and their types” with the two fields of an instruction (the two-box table “Operation code | Operand code” is given as a table), the four types of instructions and the start of “a. Data Transfer Instructions” (the list of transfers continues on the next page). Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T12:55:32.438664+00:00",
+    "scope": "Scan 91 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

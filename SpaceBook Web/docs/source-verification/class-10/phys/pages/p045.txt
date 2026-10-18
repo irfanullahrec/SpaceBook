@@ -1,0 +1,29 @@
+@printed 148
+@status lesson
+@issue Source: 10thphysics4.pdf page 35 (page number cut off). In Example 14.5 the book rounds R_eq = 20/7 = 2.857 Ω to 2.9 Ω before dividing; with the unrounded value I = 31.5 A. The printed working (31.03 A ≈ 31.0 A) is kept.
+p Putting values || قدریں رکھنے سے || ارزښتونه ږدو نو
+eq \dfrac{1}{R_{eq}} = \dfrac{1}{5.0\,\Omega} + \dfrac{1}{10.0\,\Omega} + \dfrac{1}{20.0\,\Omega} \qquad \text{Therefore}\quad \dfrac{1}{R_{eq}} = \dfrac{1\times4 + 1\times2 + 1\times1}{20.0\,\Omega}
+eq \text{or}\quad \dfrac{1}{R_{eq}} = \dfrac{7}{20.0\,\Omega} \qquad \text{Hence}\quad R_{eq} = 2.9\,\Omega
+eq \text{By Ohm's law}\quad I = \dfrac{V}{R_{eq}} \qquad \text{Putting values}\quad I = \dfrac{90\ \text{V}}{2.9\ \Omega} \qquad \text{Therefore}\quad I = 31.03\ \text{A} \quad \text{(Answer)}
+svg FIGURE 14.10 – Example 14.5: resistors of 5.0 Ω, 10.0 Ω and 20.0 Ω in parallel across a 90 V battery; total current I = ? || شکل 14.10 – مثال 14.5: 90 V بیٹری کے ساتھ متوازی 5.0 Ω، 10.0 Ω اور 20.0 Ω کی مزاحمتیں؛ کل کرنٹ I = ? || ۱۴.۱۰ شکل – ۱۴.۵ بېلګه: له 90 V بیټرۍ سره موازي د 5.0 Ω، 10.0 Ω او 20.0 Ω مقاومتونه؛ ټول جریان I = ?
+<svg viewBox="0 0 200 140" width="200" role="img" aria-label="Three resistors R1 = 5.0 ohm, R2 = 10.0 ohm, R3 = 20.0 ohm stacked in parallel between two vertical wires, connected to a 90 V cell at the bottom; arrows marked I = ?" font-family="Arial" font-size="10">
+<path d="M40 20 V125 H95 M105 125 H160 V20 Z M40 20 H85 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H160 M40 50 H85 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H160 M40 80 H85 l3 -5 l6 10 l6 -10 l6 10 l3 -5 H160" fill="none" stroke="#111" stroke-width="1.5"/>
+<g stroke="#111" stroke-width="2"><line x1="95" y1="115" x2="95" y2="135"/><line x1="103" y1="119" x2="103" y2="131"/></g>
+<text x="60" y="12">R₁ = 5.0 Ω</text><text x="60" y="42">R₂ = 10.0 Ω</text><text x="60" y="72">R₃ = 20.0 Ω</text><text x="88" y="108">90 V</text><text x="10" y="100">I = ?</text><text x="165" y="100">I = ?</text>
+</svg>
+endsvg
+p The total current through the circuit is 31.0 A. || سرکٹ میں کل کرنٹ 31.0 A ہے۔ || په سرکټ کې ټول جریان 31.0 A دی.
+endexample
+box assignment | ASSIGNMENT 14.5: RESISTORS IN PARALLEL || اسائنمنٹ 14.5: متوازی مزاحمتیں || دنده ۱۴.۵: موازي مقاومتونه
+q 1 | Three resistors of 60 Ω, 30 Ω and 20 Ω are connected in parallel across a 90 V battery. Calculate the current flowing through the circuit? || 60 Ω، 30 Ω اور 20 Ω کی تین مزاحمتیں 90 V بیٹری کے ساتھ متوازی جڑی ہیں۔ سرکٹ میں بہنے والا کرنٹ معلوم کریں۔ || د 60 Ω، 30 Ω او 20 Ω درې مقاومتونه له 90 V بیټرۍ سره موازي تړل شوي. په سرکټ کې بهېدونکی جریان معلوم کړئ.
+sol I = 9 A ## $\dfrac{1}{R_{eq}} = \dfrac{1}{60} + \dfrac{1}{30} + \dfrac{1}{20} = \dfrac{1 + 2 + 3}{60} = \dfrac{1}{10}$, so $R_{eq} = 10\ \Omega$; $I = \dfrac{90}{10} = 9$ A (book answer key: 9 A) || $R_{eq} = 10\ \Omega$؛ $I = 90/10 = 9$ A || $R_{eq} = 10\ \Omega$؛ $I = 90/10 = 9$ A
+endbox
+box lab | LAB WORK || عملی کام || لابراتواري کار
+- To study resistors in series circuit. || سلسلہ وار سرکٹ میں مزاحمتوں کا مطالعہ کرنا۔ || په لړۍ ییز سرکټ کې د مقاومتونو مطالعه.
+- To study resistors in parallel circuit. || متوازی سرکٹ میں مزاحمتوں کا مطالعہ کرنا۔ || په موازي سرکټ کې د مقاومتونو مطالعه.
+endbox
+@sec 14-5 | 14.5 The I-V characteristics for ohmic and non ohmic conductors || 14.5 اوہمک اور غیر اوہمک موصلوں کی I-V خصوصیات || ۱۴.۵ د اومیک او غیر اومیک هادیو I-V ځانګړنې
+## 14.5 THE I-V CHARACTERISTICS FOR OHMIC AND NON OHMIC CONDUCTORS || 14.5 اوہمک اور غیر اوہمک موصلوں کی I-V خصوصیات || ۱۴.۵ د اومیک او غیر اومیک هادیو I-V ځانګړنې
+p The conductors for which Ohm's law hold are called Ohmic conductors. Thus, these conductors obey || جن موصلوں پر اوہم کا قانون لاگو ہوتا ہے انھیں اوہمک موصل کہتے ہیں۔ لہٰذا یہ موصل پیروی کرتے ہیں || هغه هادي چې د اوم قانون پرې پلي کېږي اومیک هادي بلل کېږي. نو دا هادي پیروي کوي
+eq I \propto \Delta V
+p It means that if we plot a graph between current 'I' and potential difference 'ΔV' (called IV graph), we get a straight line; as for constant resistance the slope 1/R is a straight line. However, not all the materials have straight line graph as we can see from the graph 14.1, only metals show Ohmic behavior. The graphs of filament bulb and thermistor are curved, therefore, they are termed as non-ohmic conductors. || اس کا مطلب ہے کہ اگر ہم کرنٹ 'I' اور پوٹینشل ڈفرنس 'ΔV' کے درمیان گراف (IV گراف) بنائیں تو ایک سیدھی لکیر ملتی ہے، کیونکہ مستقل مزاحمت کے لیے ڈھلوان 1/R ایک سیدھی لکیر ہے۔ تاہم تمام مادوں کا گراف سیدھی لکیر نہیں ہوتا؛ جیسا کہ گراف 14.1 سے دیکھا جا سکتا ہے، صرف دھاتیں اوہمک رویہ ظاہر کرتی ہیں۔ فلامنٹ بلب اور تھرمسٹر کے گراف خم دار ہیں، اس لیے انھیں غیر اوہمک موصل کہا جاتا ہے۔ || دا په دې مانا چې که د جریان 'I' او د پوټانشیل توپیر 'ΔV' ترمنځ ګراف (IV ګراف) رسم کړو، مستقیمه کرښه لاسته راځي؛ ځکه د ثابت مقاومت لپاره میلان 1/R مستقیمه کرښه ده. خو د ټولو موادو ګراف مستقیمه کرښه نه وي؛ لکه څنګه چې له ۱۴.۱ ګراف څخه ښکاري، یوازې فلزات اومیک چلند ښيي. د فلامنټ بلب او ترمیستور ګرافونه کږ دي، نو غیر اومیک هادي بلل کېږي.

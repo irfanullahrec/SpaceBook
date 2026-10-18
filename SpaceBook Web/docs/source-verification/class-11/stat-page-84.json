@@ -1,0 +1,440 @@
+{
+  "chapter": "stat11-central-tendency",
+  "id": "stat11-s084-mode-discrete-continuous",
+  "title": "Example 2.25 · 2.4.2 Mode for discrete series · Example 2.26 · 2.4.3 Mode for continuous series · Example 2.27",
+  "headingUrdu": "مثال 2.25 · 2.4.2 منفصل سلسلے کا عادہ · مثال 2.26 · 2.4.3 مسلسل سلسلے کا عادہ · مثال 2.27",
+  "headingPashto": "بېلګه 2.25 · 2.4.2 د منفصلې لړۍ مود · بېلګه 2.26 · 2.4.3 د دوامدارې لړۍ مود · بېلګه 2.27",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 84,
+    "printedPage": "76"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s084-ex25",
+      "en": "Example: 2.25",
+      "ur": "مثال: 2.25",
+      "ps": "بېلګه: 2.25",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-25"
+    },
+    {
+      "id": "stat11-s084-q25",
+      "en": "Marks obtained by five randomly selected students in a statistics class test are 60, 10, 90, 40 and 30. Find Mode.",
+      "ur": "احصاء کی جماعتی ٹیسٹ میں پانچ بے ترتیب منتخب طلبہ کے حاصل کردہ نمبر 60, 10, 90, 40 اور 30 ہیں۔ عادہ معلوم کریں۔",
+      "ps": "د احصایې د ټولګي په ازموینه کې د پنځو تصادفي ټاکل شویو زده کوونکو ترلاسه شوې نمرې 60, 10, 90, 40 او 30 دي. مود ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-25"
+    },
+    {
+      "id": "stat11-s084-s25",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-25"
+    },
+    {
+      "id": "stat11-s084-a25",
+      "en": "This data has no mode because each value occurs only once. In such cases average value is obtain through other measures of central tendency.",
+      "ur": "اس مجموعے کا کوئی عادہ نہیں کیونکہ ہر قدر صرف ایک بار آتی ہے۔ ایسی صورتوں میں اوسط قدر مرکزی رجحان کے دوسرے پیمانوں سے حاصل کی جاتی ہے۔",
+      "ps": "دې ټولګې مود نه لري ځکه چې هر ارزښت یوازې یو ځل راځي. په داسې حالتونو کې اوسط ارزښت د مرکزي تمایل د نورو اندازو په واسطه ترلاسه کېږي.",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-25"
+    },
+    {
+      "id": "stat11-s084-h242",
+      "en": "2.4.2 Calculation of mode for discrete series or grouped data",
+      "ur": "2.4.2 منفصل سلسلے یا گروہی اعداد و شمار کے لیے عادہ کا حساب",
+      "ps": "2.4.2 د منفصلې لړۍ یا ګروپي معلوماتو لپاره د مود محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s084-t242",
+      "en": "Two methods are used in this case;",
+      "ur": "اس صورت میں دو طریقے استعمال ہوتے ہیں؛",
+      "ps": "پدې حالت کې دوه طریقې کارول کېږي؛"
+    },
+    {
+      "id": "stat11-s084-t242a",
+      "en": "(i) Inspection method and",
+      "ur": "(i) معائنے کا طریقہ اور",
+      "ps": "(i) د معاینې طریقه او"
+    },
+    {
+      "id": "stat11-s084-t242b",
+      "en": "(ii) Grouping method.",
+      "ur": "(ii) گروہ بندی کا طریقہ۔",
+      "ps": "(ii) د ډله‌بندۍ طریقه."
+    },
+    {
+      "id": "stat11-s084-ex26",
+      "en": "Example: 2.26",
+      "ur": "مثال: 2.26",
+      "ps": "بېلګه: 2.26",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-26"
+    },
+    {
+      "id": "stat11-s084-q26",
+      "en": "Calculate mode for the following discrete frequency distribution.",
+      "ur": "درج ذیل منفصل تعدد تقسیم کے لیے عادہ حساب کریں۔",
+      "ps": "د لاندې منفصل فریکونسي ویش لپاره مود محاسبه کړئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-2-26"
+    },
+    {
+      "id": "stat11-s084-s26",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-26"
+    },
+    {
+      "id": "stat11-s084-a26",
+      "en": "By looking at the data, the value of the variable 18 has maximum frequency, so Mode = 18.",
+      "ur": "اعداد و شمار کو دیکھنے سے معلوم ہوتا ہے کہ متغیر کی قدر 18 کا تعدد سب سے زیادہ ہے، اس لیے عادہ = 18۔",
+      "ps": "معلومات کتلو سره معلومېږي چې د متغیر ارزښت 18 اعظمي فریکونسي لري، نو مود = 18.",
+      "role": "solution",
+      "exampleId": "stat11-ex-2-26"
+    },
+    {
+      "id": "stat11-s084-h243",
+      "en": "2.4.3 Calculating the mode for continuous series or grouped data",
+      "ur": "2.4.3 مسلسل سلسلے یا گروہی اعداد و شمار کے لیے عادہ کا حساب",
+      "ps": "2.4.3 د دوامدارې لړۍ یا ګروپي معلوماتو لپاره د مود محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s084-i",
+      "en": "(i) By Formula:",
+      "ur": "(i) فارمولے سے:",
+      "ps": "(i) په فورمول:"
+    },
+    {
+      "id": "stat11-s084-wh",
+      "en": "Where,",
+      "ur": "جہاں،",
+      "ps": "چېرته چې،"
+    },
+    {
+      "id": "stat11-s084-w1",
+      "en": "l₁: lower limit of the model class chosen by inspection method.",
+      "ur": "l₁: معائنے کے طریقے سے منتخب کردہ عادی جماعت کی زیریں حد۔",
+      "ps": "l₁: د معاینې طریقې په واسطه ټاکل شوي مودي ټولګي ښکتنی حد.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s084-w2",
+      "en": "fₘ: frequency of the modal class.",
+      "ur": "fₘ: عادی جماعت کا تعدد۔",
+      "ps": "fₘ: د مودي ټولګي فریکونسي.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s084-w3",
+      "en": "f₀: frequency of the preceding class.",
+      "ur": "f₀: ماقبل جماعت کا تعدد۔",
+      "ps": "f₀: د مخکیني ټولګي فریکونسي.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s084-w4",
+      "en": "f₁: frequency of the following class.",
+      "ur": "f₁: بعد والی جماعت کا تعدد۔",
+      "ps": "f₁: د راتلونکي ټولګي فریکونسي.",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s084-w5",
+      "en": "h: class interval of the modal class",
+      "ur": "h: عادی جماعت کا جماعتی وقفہ",
+      "ps": "h: د مودي ټولګي د ټولګي وقفه",
+      "listGroup": "where"
+    },
+    {
+      "id": "stat11-s084-ii",
+      "en": "(ii) By Graph:",
+      "ur": "(ii) گراف سے:",
+      "ps": "(ii) په ګراف:"
+    },
+    {
+      "id": "stat11-s084-ex27",
+      "en": "Example: 2.27",
+      "ur": "مثال: 2.27",
+      "ps": "بېلګه: 2.27",
+      "kind": "heading",
+      "exampleId": "stat11-ex-2-27"
+    },
+    {
+      "id": "stat11-s084-q27",
+      "en": "Calculate Mode for the following data:",
+      "ur": "درج ذیل اعداد و شمار کے لیے عادہ حساب کریں:",
+      "ps": "د لاندې معلوماتو لپاره مود محاسبه کړئ:",
+      "role": "question",
+      "exampleId": "stat11-ex-2-27"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s084-ex25",
+        "stat11-s084-q25",
+        "stat11-s084-s25",
+        "stat11-s084-a25",
+        "stat11-s084-h242",
+        "stat11-s084-t242",
+        "stat11-s084-t242a",
+        "stat11-s084-t242b",
+        "stat11-s084-ex26",
+        "stat11-s084-q26"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s084-s26",
+        "stat11-s084-a26",
+        "stat11-s084-h243",
+        "stat11-s084-i"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s084-wh",
+        "stat11-s084-w1",
+        "stat11-s084-w2",
+        "stat11-s084-w3",
+        "stat11-s084-w4",
+        "stat11-s084-w5",
+        "stat11-s084-ii",
+        "stat11-s084-ex27",
+        "stat11-s084-q27"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    }
+  ],
+  "vocabulary": {
+    "modal class": {
+      "ur": "عادی جماعت",
+      "ps": "مودي ټولګی"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s084-mf",
+      "latex": "\\text{Mode}=l_1+\\dfrac{f_m-f_0}{2f_m-f_0-f_1}\\times h",
+      "accessible": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Mode = l1 + ((fm − f0)/(2fm − f0 − f1)) × h"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 2.26: x and f",
+      "captionUrdu": "مثال 2.26: x اور f",
+      "captionPashto": "بېلګه 2.26: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "14",
+          "ur": "14",
+          "ps": "14"
+        },
+        {
+          "en": "16",
+          "ur": "16",
+          "ps": "16"
+        },
+        {
+          "en": "18",
+          "ur": "18",
+          "ps": "18"
+        },
+        {
+          "en": "20",
+          "ur": "20",
+          "ps": "20"
+        },
+        {
+          "en": "22",
+          "ur": "22",
+          "ps": "22"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "7",
+            "ur": "7",
+            "ps": "7"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-26"
+    },
+    {
+      "caption": "Example 2.27: marks and frequency",
+      "captionUrdu": "مثال 2.27: نمبر اور تعدد",
+      "captionPashto": "بېلګه 2.27: نمرې او فریکونسي",
+      "headers": [
+        {
+          "en": "Marks:",
+          "ur": "نمبر:",
+          "ps": "نمرې:"
+        },
+        {
+          "en": "10 – 24",
+          "ur": "10 – 24",
+          "ps": "10 – 24"
+        },
+        {
+          "en": "25 – 39",
+          "ur": "25 – 39",
+          "ps": "25 – 39"
+        },
+        {
+          "en": "40 – 54",
+          "ur": "40 – 54",
+          "ps": "40 – 54"
+        },
+        {
+          "en": "55 – 69",
+          "ur": "55 – 69",
+          "ps": "55 – 69"
+        },
+        {
+          "en": "70 – 84",
+          "ur": "70 – 84",
+          "ps": "70 – 84"
+        },
+        {
+          "en": "85 – 99",
+          "ur": "85 – 99",
+          "ps": "85 – 99"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "20",
+            "ur": "20",
+            "ps": "20"
+          },
+          {
+            "en": "44",
+            "ur": "44",
+            "ps": "44"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-2-27"
+    }
+  ],
+  "sourceNote": "Printed page 76. The word \"model class\" in the definition of l₁ is printed so (for \"modal class\") and is retained. A thumb is visible at the top-left of the scan; ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:38:42.867275+00:00",
+    "scope": "Scan 84 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

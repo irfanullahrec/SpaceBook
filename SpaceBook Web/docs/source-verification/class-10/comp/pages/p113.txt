@@ -1,0 +1,56 @@
+@printed 101
+@status lesson
+@deco The code on this page is printed faintly; braces, "%" signs, "#" and "\n" are partly lost and restored from context.
+### پروگرام 5.8 یہ پروگرام do-while لوپ کی مدد سے گنتی کے پہلے دس اعداد کو پرنٹ کرے گا۔ || Program 5.8 This program prints the first ten counting numbers with a do-while loop || پروګرام ۵.۸ دا پروګرام د do-while لوپ په مرسته د شمېرنې لومړي لس عددونه چاپوي
+m # include <stdio.h>
+m void main()
+m {
+m     int n;
+m     n=1;
+m     do
+m     {
+m     printf("%d\n",n);
+m     n++;
+m     }
+m     while(n<=10);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m 1
+m 2
+m 3
+m 4
+m 5
+m 6
+m 7
+m 8
+m 9
+m 10
+endbox
+### پروگرام 5.9 یہ پروگرام do-while لوپ کی مدد سے یہ معلوم کرے گا کہ اِن پُٹ کیا گیا عدد طاق ہے یا جفت۔ || Program 5.9 This program uses a do-while loop to find whether the number input is odd or even || پروګرام ۵.۹ دا پروګرام د do-while لوپ په مرسته پیدا کوي چې داخل شوی عدد طاق دی که جفت
+m #include <conio.h>
+m #include <stdio.h>
+m void main()
+m {
+m     int num;
+m     char choice;
+m     do
+m     {
+m         printf("\nEnter a number to find even or odd");
+m         scanf("%d", &num);
+m         if((num%2)==0)
+m             printf("\nNumber is even");
+m         else
+m             printf("\nNumber is odd");
+m     printf("\nDo you want to check another");
+m     choice = getche();
+m     }
+m     while(choice == 'y');
+m     printf("\nThank You");
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Enter a number to find
+m even or odd
+m 102
+m Number is even
+endbox
+@issue Program 5.9 is printed with typographic quotes (“ ”), normalised to straight quotes. After scanf the Enter key stays in the input buffer, so getche() may read that newline instead of the user's 'y'/'n' and the loop ends at once; a getchar() or " %c" read is usually needed. The output box shows only the first round and omits the "Do you want to check another" prompt and "Thank You".

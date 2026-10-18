@@ -1,0 +1,27 @@
+@printed 47
+@status lesson
+@deco Handwritten margin notes by a previous owner ("Single and multiple line comment …") are not book content.
+p جبکہ: || where: || چېرته چې:
+- const — ایک کی ورڈ ہے جس سے یہ بتایا جاتا ہے کہ کانسٹنٹ بنایا جا رہا ہے۔ || const — a keyword showing that a constant is being created. || const — یوه کلیدي کلمه ده چې ښيي ثابت جوړېږي.
+- data type — بتاتا ہے کہ کانسٹنٹ کی ڈیٹا ٹائپ کونسی ہے۔ || data type — tells which data type the constant has. || data type — ښيي چې د ثابت ډېټا ډول کوم دی.
+- identifier — جو کانسٹنٹ بنایا جا رہا ہے یہ اس کا نام ہے۔ || identifier — the name of the constant being created. || identifier — د جوړېدونکي ثابت نوم دی.
+- value — یہ کانسٹنٹ کی ابتدائی قیمت کو ظاہر کرتا ہے۔ || value — shows the initial value of the constant. || value — د ثابت لومړنی ارزښت ښيي.
+p مثالیں: || Examples: || بېلګې:
+m const int N = 100;
+m const float R = 3.5;
+p مذکورہ بالا مثالوں میں ایک انٹیجر کانسٹنٹ N ہے جس کی ابتدائی قیمت 100 اور ایک فلوٹ کانسٹنٹ R ہے جس کی ابتدائی قیمت 3.5 ہے۔ پروگرام کے چلنے کے دوران ان قیمتوں کو تبدیل نہیں کیا جا سکتا۔ || In the examples above there is an integer constant N with initial value 100 and a float constant R with initial value 3.5. These values cannot be changed while the program is running. || په پورتنیو بېلګو کې یو بشپړ عدد ثابت N دی چې لومړنی ارزښت یې 100 دی او یو float ثابت R دی چې لومړنی ارزښت یې 3.5 دی. د پروګرام د چلېدو پر مهال دا ارزښتونه نه شي بدلېدای.
+@issue The value 100 is printed "001" (digits reversed by the right-to-left layout); it is 100, as in the code above.
+p یہی کام #define پری پروسیسر کا استعمال کرتے ہوئے بھی کیا جا سکتا ہے: || The same can also be done using the #define preprocessor: || همدا کار د #define پري پروسسر په کارولو هم کېدای شي:
+m #define N 100
+m #define R 3.5
+@sec 2-4-7 | 2.4.7 ویری ایبل بنانا اور ابتدائی قیمت رکھنا || 2.4.7 Declaration and initialization || ۲.۴.۷ د متغیر اعلان او لومړنی ارزښت
+### 2.4.7 ویری ایبل بنانا (Declaration) اور ابتدائی قیمت رکھنا (Initialization) || 2.4.7 Declaring variables and initializing them || ۲.۴.۷ د متغیر جوړول (Declaration) او لومړنی ارزښت ورکول (Initialization)
+### ویری ایبل بنانا (Declartion of Variables) || Declaration of variables || د متغیرونو اعلان
+p ویری ایبل کا نام رکھنا اور اس کی ڈیٹا ٹائپ متعین کرنے کو ویری ایبل بنانا یا ویری ایبل ڈکلریشن کہا جاتا ہے۔ تمام ویری ایبل جو پروگرام میں استعمال ہوں گے انہیں ایک اسٹیٹمنٹ کے ذریعے بنایا جاتا ہے جسے ویری ایبل ڈیکلریشن اسٹیٹمنٹ کہا جاتا ہے۔ ویری ایبل بنانے کے لیے ذیل کا سائنٹکس استعمال ہوتا ہے: || Naming a variable and fixing its data type is called creating a variable, or variable declaration. All the variables that will be used in a program are created through a statement called the variable declaration statement. The following syntax is used to create variables: || د متغیر نوم ټاکل او د هغه د ډېټا ډول ټاکل د متغیر جوړول یا اعلان (declaration) بلل کېږي. ټول هغه متغیرونه چې په پروګرام کې کارېږي د یوه بیان له لارې جوړېږي چې د متغیر د اعلان بیان بلل کېږي. د متغیرونو د جوړولو لپاره لاندې ترکیب کارېږي:
+@issue The English heading is misspelled "Declartion"; it should be "Declaration".
+m Datatype List of variables;
+p جبکہ: || where: || چېرته چې:
+- Datatype — ڈیٹا ٹائپ ویری ایبل کی ڈیٹا ٹائپ بتاتا ہے۔ مثال کے طور پر int، float وغیرہ۔ || Datatype — gives the data type of the variable, for example int, float and so on. || Datatype — د متغیر ډېټا ډول ښيي، لکه int، float او نور.
+- List of variables — یہ کافی سارے ویری ایبل کی فہرست ہو گی جو ایک دوسرے سے کاما (Comma) کے ذریعے جدا ہوں گے۔ || List of variables — a list of several variables separated from one another by commas. || List of variables — د ګڼو متغیرونو لړلیک چې یو له بله د کامې (Comma) په واسطه جلا وي.
+p مختلف قسم کے ویری ایبل بنانے کے لیے علیحدہ علیحدہ اسٹیٹمنٹ استعمال کی جائیں گی۔ مثال کے طور پر انٹیجر ویری ایبل abc، xyz، d اور s بنانے کے لیے درج ذیل اسٹیٹمنٹ استعمال ہو گی۔ || Separate statements are used to create variables of different types. For example, the following statement is used to create the integer variables abc, xyz, d and s. || د بېلابېلو ډولونو متغیرونو د جوړولو لپاره بېل بېل بیانونه کارېږي. د بېلګې په توګه د abc، xyz، d او s بشپړ عدد متغیرونو د جوړولو لپاره لاندې بیان کارېږي.
+m int abc, xyz, d, s;

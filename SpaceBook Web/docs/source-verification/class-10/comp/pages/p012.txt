@@ -1,0 +1,28 @@
+@printed 2
+@status lesson
+@deco Running head "باب 1: پروگرامنگ کا طریقۂ کار"; section numbers are printed on green tabs with a small bird icon.
+## تعارف (Introduction) || Introduction || پېژندنه
+p اس باب میں دو اہم نکات زیرِ بحث رہیں گے۔ سب سے پہلے ہم کمپیوٹر سائنس میں الگورتھم اور ڈیٹا سٹرکچر کے برمحل استعمال کا جائزہ لیں گے۔ خاص طور پر یہ کہ ہمیں ان دونوں موضوعات کو کیوں پڑھنا چاہیے اور ان کو جاننے کے بعد ہم کس طرح ایک اچھے حل کنندہ (Problem Solver) بن سکتے ہیں۔ اس کے بعد ہم فلوچارٹ کے تصورات کا جائزہ لیں گے۔ || Two important points will be discussed in this chapter. First we shall review the appropriate use of algorithms and data structures in computer science — especially why we should study these two topics and how, after learning them, we can become good problem solvers. After that we shall review the concepts of the flowchart. || په دې څپرکي کې به دوه مهم ټکي وڅېړل شي. لومړی به په کمپیوټر ساینس کې د الګوریتم او ډېټا جوړښت پرځای کارونه وارزوو — په ځانګړي ډول دا چې ولې باید دا دوه موضوعګانې ولولو او د پوهېدو وروسته څنګه ښه ستونزه حلوونکي (Problem Solver) کېدای شو. له دې وروسته به د فلوچارټ مفاهیم وارزوو.
+@sec 1-1 | 1.1 مسئلے کو سمجھنا || 1.1 Understanding a problem || ۱.۱ د ستونزې پوهېدل
+## 1.1 مسئلے کو سمجھنا (Understanding a Problem) || 1.1 Understanding a problem || ۱.۱ د ستونزې پوهېدل
+p کمپیوٹر کے ذریعے کسی بھی مسئلے کو حل کرنے کے لیے ہمیں ایک کمپیوٹر پروگرام لکھنا پڑتا ہے۔ کمپیوٹر پروگرام لکھنے کے لیے ہمیں دو چیزیں معلوم ہونی چاہئیں؛ آپ کمپیوٹر سے کیا کروانا چاہتے ہیں اور وہ کونسے ذرائع ہیں جن کی مدد سے آپ کمپیوٹر سے کام لینا چاہ رہے ہیں۔ پہلا حصہ (جسے آپ الگورتھم بنانا (Algorithm Development) کہہ سکتے ہیں) دوسرے حصے کے مقابلے میں زیادہ مشکل ہے۔ اس مقصد کے لیے بہت سارے آلات جیسے کہ فلوچارٹ اور سوڈو کوڈ (Pseudo Code) موجود ہیں جن سے اس عمل میں مدد لی جا سکتی ہے۔ || To solve any problem with a computer we have to write a computer program. To write a computer program we must know two things: what you want the computer to do, and the means by which you want to get the work done by the computer. The first part (which you may call algorithm development) is harder than the second. For this purpose many tools exist, such as the flowchart and pseudo code, which can help in this process. || د کمپیوټر په مرسته د هرې ستونزې د حل لپاره باید یو کمپیوټري پروګرام ولیکو. د کمپیوټري پروګرام د لیکلو لپاره باید دوه شیان معلوم وي: له کمپیوټره څه غواړئ چې وکړي، او کومې وسیلې دي چې د هغو په مرسته له کمپیوټره کار اخلئ. لومړۍ برخه (چې ورته د الګوریتم جوړول ویلای شئ) د دویمې په پرتله ډېره سخته ده. د دې موخې لپاره ګڼې وسیلې لکه فلوچارټ او سوډو کوډ (Pseudo Code) شته چې په دې بهیر کې مرسته کوي.
+svg شکل نمبر 1.1 مسئلے کو سمجھنا || Figure 1.1 Understanding a problem || ۱.۱ شکل د ستونزې پوهېدل
+<svg viewBox="0 0 240 240" width="240" role="img" aria-label="A head in profile with a question mark inside, inside a circle with eight arrows pointing outwards" fill="none" stroke="#1d6fb8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="120" cy="120" r="62"/>
+<path d="M98 168 L98 150 C78 140 72 118 80 98 C90 74 120 66 142 76 C158 84 164 100 162 112 L172 126 L162 130 L162 146 L146 148 L146 168"/>
+<path d="M107 104 C107 92 133 90 133 106 C133 118 120 118 120 128 L120 134" stroke="#111827" stroke-width="9"/>
+<circle cx="120" cy="148" r="5" fill="#111827" stroke="none"/>
+<g>
+<path d="M120 52 L120 14 M110 26 L120 14 L130 26"/>
+<path d="M120 188 L120 226 M110 214 L120 226 L130 214"/>
+<path d="M52 120 L14 120 M26 110 L14 120 L26 130"/>
+<path d="M188 120 L226 120 M214 110 L226 120 L214 130"/>
+<path d="M72 72 L42 42 M42 56 L42 42 L56 42"/>
+<path d="M168 72 L198 42 M184 42 L198 42 L198 56"/>
+<path d="M72 168 L42 198 M42 184 L42 198 L56 198"/>
+<path d="M168 168 L198 198 M198 184 L198 198 L184 198"/>
+</g>
+</svg>
+endsvg
+### 1.1.1 مسئلہ (The Problem) || 1.1.1 The problem || ۱.۱.۱ ستونزه
+p مسئلہ ایک رکاوٹ، مشکل یا چیلنج، یا کوئی بھی ایسی صورتِ حال ہے جس کو حل کرنا مقصود ہو۔ مسئلہ کی سب سے پہلی پہچان یہ ہے کہ جو ہونا چاہیئے اور جو ہو رہا ہے اس میں فرق آ جائے۔ مسئلے کی آسان تعریف کرنے کے لیے اپنے آپ سے چند سوالات پوچھیں۔ مثال کے طور پر اگر آپ ایک ایسا پروگرام لکھنا چاہتے ہیں جس میں آپ پانچ نمبروں کا اوسط (Average) معلوم کرنا چاہتے ہیں تو اپنے آپ سے چند سوالات پوچھیں: || A problem is an obstacle, difficulty or challenge, or any situation that is to be solved. The first sign of a problem is that there is a difference between what should happen and what is happening. To define a problem simply, ask yourself a few questions. For example, if you want to write a program in which you find the average of five numbers, ask yourself a few questions: || ستونزه یو خنډ، سختي یا ننګونه، یا هر داسې حالت دی چې حل یې مطلوب وي. د ستونزې لومړۍ نښه دا ده چې څه باید وشي او څه کېږي ترمنځ یې توپیر راشي. د ستونزې د اسانه تعریف لپاره له ځانه څو پوښتنې وکړئ. د بېلګې په توګه که غواړئ داسې پروګرام ولیکئ چې پکې د پنځو شمېرو اوسط (Average) ومومئ، نو له ځانه څو پوښتنې وکړئ:

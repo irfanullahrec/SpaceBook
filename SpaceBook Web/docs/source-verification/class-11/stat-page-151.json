@@ -1,0 +1,672 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s151-exercise3-e",
+  "title": "Exercise-3: Q3.18 (end) – Q3.25",
+  "headingUrdu": "مشق-3: سوال 3.18 (اختتام) – 3.25",
+  "headingPashto": "تمرین-3: پوښتنه 3.18 (پای) – 3.25",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 151,
+    "printedPage": "143"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s151-q318",
+      "en": "Decide by C.V that which student has showed consistent performance.",
+      "ur": "C.V کے ذریعے فیصلہ کریں کہ کس طالب علم نے مستقل مزاج کارکردگی دکھائی ہے۔",
+      "ps": "د C.V په واسطه پرېکړه وکړئ چې کوم زده کوونکي یو شان فعالیت ښودلی دی.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-18",
+      "sourceGap": {
+        "note": "Completes Q3.18 from the previous page."
+      }
+    },
+    {
+      "id": "stat11-s151-q319",
+      "en": "3.19 (a) Write a short note on moments also define different types of moments. (b) Calculate the first four moments about the mean for the following data, 9, 11, 14, 18, 21, 23 and 27, (i) By direct method, (ii) By shortcut method.",
+      "ur": "3.19 (الف) معیارِ اثر پر ایک مختصر نوٹ لکھیں اور معیارِ اثر کی مختلف اقسام کی بھی تعریف کریں۔ (ب) درج ذیل اعداد و شمار 9, 11, 14, 18, 21, 23 اور 27 کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں، (i) براہِ راست طریقے سے، (ii) مختصر طریقے سے۔",
+      "ps": "3.19 (a) پر مومنټونو لنډه یادښت ولیکئ او د مومنټونو بېلابېل ډولونه هم تعریف کړئ. (b) د لاندې معلوماتو 9, 11, 14, 18, 21, 23 او 27 لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ، (i) په مستقیمه طریقه، (ii) په لنډه طریقه.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-19"
+    },
+    {
+      "id": "stat11-s151-q320",
+      "en": "3.20 Calculate the first four moments about the mean for the following data:",
+      "ur": "3.20 درج ذیل اعداد و شمار کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں:",
+      "ps": "3.20 د لاندې معلوماتو لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ:",
+      "role": "question",
+      "exerciseId": "stat11-ex3-20"
+    },
+    {
+      "id": "stat11-s151-q321",
+      "en": "3.21 Find the first four moments about the mean for the frequency distribution given below:",
+      "ur": "3.21 نیچے دی گئی تعدد تقسیم کے لیے اوسط کے گرد پہلے چار معیارِ اثر معلوم کریں:",
+      "ps": "3.21 د لاندې ورکړل شوي فریکونسي ویش لپاره د اوسط شاوخوا لومړي څلور مومنټونه ومومئ:",
+      "role": "question",
+      "exerciseId": "stat11-ex3-21"
+    },
+    {
+      "id": "stat11-s151-q321b",
+      "en": "Also compute moment ratios.",
+      "ur": "معیارِ اثر کے تناسب بھی حساب کریں۔",
+      "ps": "د مومنټ نسبتونه هم محاسبه کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-21"
+    },
+    {
+      "id": "stat11-s151-q322",
+      "en": "3.22 The following sums were obtained from a frequency distribution: Σf = 125, Σfu = −46, Σfu² = 306, Σfu³ = −242, Σfu⁴ = 1962 and x = 10 + 5u compute (i) Raw moments (ii) Mean moments (iii) Moment ratios b1 and b2 (iv) Arithmetic mean and variance.",
+      "ur": "3.22 ایک تعدد تقسیم سے درج ذیل مجموعے حاصل ہوئے: Σf = 125, Σfu = −46, Σfu² = 306, Σfu³ = −242, Σfu⁴ = 1962 اور x = 10 + 5u، حساب کریں (i) خام معیارِ اثر (ii) اوسطی معیارِ اثر (iii) معیارِ اثر کے تناسب b1 اور b2 (iv) حسابی اوسط اور تغیر۔",
+      "ps": "3.22 له یو فریکونسي ویش څخه لاندې مجموعې ترلاسه شوې: Σf = 125, Σfu = −46, Σfu² = 306, Σfu³ = −242, Σfu⁴ = 1962 او x = 10 + 5u محاسبه کړئ (i) خام مومنټونه (ii) اوسط مومنټونه (iii) د مومنټ نسبتونه b1 او b2 (iv) حسابي اوسط او وریانس.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-22"
+    },
+    {
+      "id": "stat11-s151-q323",
+      "en": "3.23 (a) Differentiate between symmetry and skewness. Also define positive and negative skewness. (b) Find Bowley's measure of skewness for the following data: 33, 35, 44, 34, 41, 45, 39, 46, 36, 47. (c) Evaluate the Karl Pearson measure of skewness for the data given below: 2000, 2030, 2100, 2100, 2200, 2300",
+      "ur": "3.23 (الف) تشاکل اور کجی میں فرق کریں۔ مثبت اور منفی کجی کی بھی تعریف کریں۔ (ب) درج ذیل اعداد و شمار کے لیے باؤلے کی کجی کا پیمانہ معلوم کریں: 33, 35, 44, 34, 41, 45, 39, 46, 36, 47۔ (ج) نیچے دیے گئے اعداد و شمار کے لیے کارل پیئرسن کی کجی کا پیمانہ معلوم کریں: 2000, 2030, 2100, 2100, 2200, 2300",
+      "ps": "3.23 (a) په تناسب او کوړوالي کې توپیر وکړئ. مثبت او منفي کوړوالی هم تعریف کړئ. (b) د لاندې معلوماتو لپاره د Bowley د کوړوالي اندازه ومومئ: 33, 35, 44, 34, 41, 45, 39, 46, 36, 47. (c) د لاندې ورکړل شویو معلوماتو لپاره د Karl Pearson د کوړوالي اندازه ارزونه کړئ: 2000, 2030, 2100, 2100, 2200, 2300",
+      "role": "question",
+      "exerciseId": "stat11-ex3-23"
+    },
+    {
+      "id": "stat11-s151-q324",
+      "en": "3.24 From the following frequency table Compute Bowley's coefficient of skewness and interpret the result.",
+      "ur": "3.24 درج ذیل تعدد جدول سے باؤلے کی کجی کا عددی سر حساب کریں اور نتیجے کی تشریح کریں۔",
+      "ps": "3.24 له لاندې فریکونسي جدول څخه د Bowley د کوړوالي ضریب محاسبه کړئ او پایله تفسیر کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-24"
+    },
+    {
+      "id": "stat11-s151-q325",
+      "en": "3.25 Calculate skewness by (i) Karl Pearson's method (ii) Bowley's method from the following frequency distribution and interpret the result.",
+      "ur": "3.25 درج ذیل تعدد تقسیم سے (i) کارل پیئرسن کے طریقے (ii) باؤلے کے طریقے سے کجی حساب کریں اور نتیجے کی تشریح کریں۔",
+      "ps": "3.25 له لاندې فریکونسي ویش څخه د (i) Karl Pearson په طریقه (ii) Bowley په طریقه کوړوالی محاسبه کړئ او پایله تفسیر کړئ.",
+      "role": "question",
+      "exerciseId": "stat11-ex3-25"
+    }
+  ],
+  "flow": [
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s151-q318",
+        "stat11-s151-q319",
+        "stat11-s151-q320"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s151-q321"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s151-q321b",
+        "stat11-s151-q322",
+        "stat11-s151-q323",
+        "stat11-s151-q324"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s151-q325"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "layout": "exercise",
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Q3.18: scores of students x and y",
+      "captionUrdu": "سوال 3.18: طلبہ x اور y کے اسکور",
+      "captionPashto": "پوښتنه 3.18: د x او y زده کوونکو نمرې",
+      "headers": [
+        {
+          "en": "Student x:",
+          "ur": "طالب علم x:",
+          "ps": "زده کوونکی x:"
+        },
+        {
+          "en": "44",
+          "ur": "44",
+          "ps": "44"
+        },
+        {
+          "en": "52",
+          "ur": "52",
+          "ps": "52"
+        },
+        {
+          "en": "45",
+          "ur": "45",
+          "ps": "45"
+        },
+        {
+          "en": "48",
+          "ur": "48",
+          "ps": "48"
+        },
+        {
+          "en": "65",
+          "ur": "65",
+          "ps": "65"
+        },
+        {
+          "en": "78",
+          "ur": "78",
+          "ps": "78"
+        },
+        {
+          "en": "76",
+          "ur": "76",
+          "ps": "76"
+        },
+        {
+          "en": "80",
+          "ur": "80",
+          "ps": "80"
+        },
+        {
+          "en": "56",
+          "ur": "56",
+          "ps": "56"
+        },
+        {
+          "en": "62",
+          "ur": "62",
+          "ps": "62"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Student y:",
+            "ur": "طالب علم y:",
+            "ps": "زده کوونکی y:"
+          },
+          {
+            "en": "58",
+            "ur": "58",
+            "ps": "58"
+          },
+          {
+            "en": "56",
+            "ur": "56",
+            "ps": "56"
+          },
+          {
+            "en": "53",
+            "ur": "53",
+            "ps": "53"
+          },
+          {
+            "en": "55",
+            "ur": "55",
+            "ps": "55"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "72",
+            "ur": "72",
+            "ps": "72"
+          },
+          {
+            "en": "74",
+            "ur": "74",
+            "ps": "74"
+          },
+          {
+            "en": "75",
+            "ur": "75",
+            "ps": "75"
+          },
+          {
+            "en": "60",
+            "ur": "60",
+            "ps": "60"
+          },
+          {
+            "en": "65",
+            "ur": "65",
+            "ps": "65"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q318"
+    },
+    {
+      "caption": "Q3.20: x and f",
+      "captionUrdu": "سوال 3.20: x اور f",
+      "captionPashto": "پوښتنه 3.20: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "1",
+          "ur": "1",
+          "ps": "1"
+        },
+        {
+          "en": "2",
+          "ur": "2",
+          "ps": "2"
+        },
+        {
+          "en": "3",
+          "ur": "3",
+          "ps": "3"
+        },
+        {
+          "en": "4",
+          "ur": "4",
+          "ps": "4"
+        },
+        {
+          "en": "5",
+          "ur": "5",
+          "ps": "5"
+        },
+        {
+          "en": "6",
+          "ur": "6",
+          "ps": "6"
+        },
+        {
+          "en": "7",
+          "ur": "7",
+          "ps": "7"
+        },
+        {
+          "en": "8",
+          "ur": "8",
+          "ps": "8"
+        },
+        {
+          "en": "9",
+          "ur": "9",
+          "ps": "9"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "25",
+            "ur": "25",
+            "ps": "25"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "22",
+            "ur": "22",
+            "ps": "22"
+          },
+          {
+            "en": "9",
+            "ur": "9",
+            "ps": "9"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q320"
+    },
+    {
+      "caption": "Q3.21: groups and frequency",
+      "captionUrdu": "سوال 3.21: گروہ اور تعدد",
+      "captionPashto": "پوښتنه 3.21: ډلې او فریکونسي",
+      "headers": [
+        {
+          "en": "Groups:",
+          "ur": "گروہ:",
+          "ps": "ډلې:"
+        },
+        {
+          "en": "60 – 62",
+          "ur": "60 – 62",
+          "ps": "60 – 62"
+        },
+        {
+          "en": "63 – 65",
+          "ur": "63 – 65",
+          "ps": "63 – 65"
+        },
+        {
+          "en": "66 – 68",
+          "ur": "66 – 68",
+          "ps": "66 – 68"
+        },
+        {
+          "en": "69 – 71",
+          "ur": "69 – 71",
+          "ps": "69 – 71"
+        },
+        {
+          "en": "72 – 74",
+          "ur": "72 – 74",
+          "ps": "72 – 74"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "18",
+            "ur": "18",
+            "ps": "18"
+          },
+          {
+            "en": "42",
+            "ur": "42",
+            "ps": "42"
+          },
+          {
+            "en": "27",
+            "ur": "27",
+            "ps": "27"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q321"
+    },
+    {
+      "caption": "Q3.24: marks and frequency",
+      "captionUrdu": "سوال 3.24: نمبر اور تعدد",
+      "captionPashto": "پوښتنه 3.24: نمرې او فریکونسي",
+      "headers": [
+        {
+          "en": "Marks:",
+          "ur": "نمبر:",
+          "ps": "نمرې:"
+        },
+        {
+          "en": "10",
+          "ur": "10",
+          "ps": "10"
+        },
+        {
+          "en": "11",
+          "ur": "11",
+          "ps": "11"
+        },
+        {
+          "en": "12",
+          "ur": "12",
+          "ps": "12"
+        },
+        {
+          "en": "13",
+          "ur": "13",
+          "ps": "13"
+        },
+        {
+          "en": "14",
+          "ur": "14",
+          "ps": "14"
+        },
+        {
+          "en": "15",
+          "ur": "15",
+          "ps": "15"
+        },
+        {
+          "en": "16",
+          "ur": "16",
+          "ps": "16"
+        },
+        {
+          "en": "17",
+          "ur": "17",
+          "ps": "17"
+        },
+        {
+          "en": "18",
+          "ur": "18",
+          "ps": "18"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Frequency:",
+            "ur": "تعدد:",
+            "ps": "فریکونسي:"
+          },
+          {
+            "en": "26",
+            "ur": "26",
+            "ps": "26"
+          },
+          {
+            "en": "201",
+            "ur": "201",
+            "ps": "201"
+          },
+          {
+            "en": "673",
+            "ur": "673",
+            "ps": "673"
+          },
+          {
+            "en": "1001",
+            "ur": "1001",
+            "ps": "1001"
+          },
+          {
+            "en": "739",
+            "ur": "739",
+            "ps": "739"
+          },
+          {
+            "en": "310",
+            "ur": "310",
+            "ps": "310"
+          },
+          {
+            "en": "80",
+            "ur": "80",
+            "ps": "80"
+          },
+          {
+            "en": "13",
+            "ur": "13",
+            "ps": "13"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q324"
+    },
+    {
+      "caption": "Q3.25: x and f",
+      "captionUrdu": "سوال 3.25: x اور f",
+      "captionPashto": "پوښتنه 3.25: x او f",
+      "headers": [
+        {
+          "en": "x:",
+          "ur": "x:",
+          "ps": "x:"
+        },
+        {
+          "en": "15 – 19",
+          "ur": "15 – 19",
+          "ps": "15 – 19"
+        },
+        {
+          "en": "20 – 24",
+          "ur": "20 – 24",
+          "ps": "20 – 24"
+        },
+        {
+          "en": "25 – 29",
+          "ur": "25 – 29",
+          "ps": "25 – 29"
+        },
+        {
+          "en": "30 – 34",
+          "ur": "30 – 34",
+          "ps": "30 – 34"
+        },
+        {
+          "en": "35 – 39",
+          "ur": "35 – 39",
+          "ps": "35 – 39"
+        },
+        {
+          "en": "40 – 44",
+          "ur": "40 – 44",
+          "ps": "40 – 44"
+        },
+        {
+          "en": "45 – 49",
+          "ur": "45 – 49",
+          "ps": "45 – 49"
+        },
+        {
+          "en": "50 – 54",
+          "ur": "50 – 54",
+          "ps": "50 – 54"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "f:",
+            "ur": "f:",
+            "ps": "f:"
+          },
+          {
+            "en": "29",
+            "ur": "29",
+            "ps": "29"
+          },
+          {
+            "en": "176",
+            "ur": "176",
+            "ps": "176"
+          },
+          {
+            "en": "208",
+            "ur": "208",
+            "ps": "208"
+          },
+          {
+            "en": "173",
+            "ur": "173",
+            "ps": "173"
+          },
+          {
+            "en": "82",
+            "ur": "82",
+            "ps": "82"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "15",
+            "ur": "15",
+            "ps": "15"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          }
+        ]
+      ],
+      "exerciseId": "stat11-ex3-q325"
+    }
+  ],
+  "sourceNote": "Printed page 143. The scores of Q3.18 continue from the previous page. The page number at the bottom is partly cut off by the scan. In Q3.23 (c) the printed data are 2000, 2030, 2100, 2100, 2200, 2300. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:04:57.279025+00:00",
+    "scope": "Scan 151 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

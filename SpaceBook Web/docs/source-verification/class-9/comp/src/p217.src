@@ -1,0 +1,12 @@
+@printed 209
+@status lesson
+p (Figure 7.46: Hyperlinks in web page — the headings Educational Websites and News and Information Websites with the six underlined links below them.) || (شکل 7.46: ویب پیج میں ہائپر لنکس — دو ہیڈنگز اور ان کے نیچے چھ انڈر لائن لنکس۔) || (۷.۴۶ شکل: په وېب پاڼه کې hyperlinks — دوه سرلیکونه او لاندې یې شپږ underline لینکونه.)
+### 7.6.4 Creating a Hyperlink within a Web Page || 7.6.4 ویب پیج کے اندر ہائپر لنک بنانا || ۷.۶.۴ د وېب پاڼې دننه hyperlink جوړول
+p Anchor with a ***name*** attribute is used to create a hyperlink within a web page. It involves two steps, creating the anchor itself and then creating a hyperlink to the anchor. || ویب پیج کے اندر ہائپر لنک بنانے کے لیے ***name*** خصوصیت والا اینکر استعمال ہوتا ہے۔ اس کے دو مراحل ہیں: اینکر بنانا اور پھر اینکر کا ہائپر لنک بنانا۔ || د وېب پاڼې دننه hyperlink لپاره د ***name*** attribute لرونکی anchor کارېږي. دوه ګامونه لري: anchor جوړول او بیا anchor ته hyperlink جوړول.
+### Creating the Anchor || اینکر بنانا || Anchor جوړول
+p An anchor tag is an HTML tag and is used to define visible words within a text that can be clicked. These words (hyperlinks) usually refer to further information on the web. || اینکر ٹیگ ایک HTML ٹیگ ہے جو متن میں ایسے نظر آنے والے الفاظ متعین کرتا ہے جن پر کلک کیا جا سکے۔ یہ الفاظ (ہائپر لنکس) عموماً ویب پر مزید معلومات کی طرف لے جاتے ہیں۔ || anchor tag یو HTML tag دی چې په متن کې د کلیک وړ ښکاره کلمې ټاکي. دا کلمې (hyperlinks) معمولاً په ویب کې نورو معلوماتو ته اشاره کوي.
+p Create the label in the anchor tag at the location in the page where you want to hyperlink. || صفحے میں جس جگہ ہائپر لنک کرنا چاہتے ہیں وہاں اینکر ٹیگ میں لیبل بنائیں۔ || په پاڼه کې چې چېرې hyperlink غواړئ، هلته په anchor tag کې label جوړ کړئ.
+p The syntax for creating the label is: || لیبل بنانے کا سنٹیکس یہ ہے: || د label جوړولو syntax دا دی:
+m <a name="label"></a>
+### Creating a Hyperlink to the Anchor || اینکر کا ہائپر لنک بنانا || anchor ته hyperlink جوړول
+p To create a hyperlink, the destination (address) of the document must be known. A hyperlink can link to pages on your web page, to other web pages, or to a file. The user can make a hyperlink to the anchor using the normal <a></a> tag with the *href* || ہائپر لنک بنانے کے لیے دستاویز کی منزل (پتہ) معلوم ہونی چاہیے۔ ہائپر لنک آپ کے ویب پیج کے حصوں، دوسرے ویب پیجز یا کسی فائل سے جڑ سکتا ہے۔ صارف عام <a></a> ٹیگ کو *href* || د hyperlink لپاره باید د سند منزل (پته) معلومه وي. hyperlink ستاسو پاڼې برخو، نورو پاڼو یا فایل ته نښلېدای شي. کاروونکی د عادي <a></a> tag په *href*

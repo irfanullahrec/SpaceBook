@@ -1,0 +1,23 @@
+@printed 140
+@status lesson
+@issue Source: 10thphysics4.pdf page 27 (page number cut off).
+p Many important devices do not obey Ohm's law. Even a lightbulb has resistance that depends on its temperature and does not obey Ohm's law. || بہت سے اہم آلات اوہم کے قانون کی پیروی نہیں کرتے۔ یہاں تک کہ بلب کی مزاحمت بھی اس کے درجۂ حرارت پر منحصر ہوتی ہے اور یہ اوہم کے قانون کی پیروی نہیں کرتا۔ || ډېرې مهمې وسیلې د اوم له قانون پیروي نه کوي. حتی د بلب مقاومت هم د هغه په تودوخې پورې اړه لري او د اوم قانون نه مني.
+example 14.2 | CURRENT THROUGH RESISTOR || مزاحمت میں کرنٹ || له مقاومت څخه جریان
+p A 30.0-V battery is connected to a 10.0 Ω resistor. What is the current in the circuit? || 30.0 V کی بیٹری 10.0 Ω مزاحمت سے جڑی ہے۔ سرکٹ میں کرنٹ کتنا ہے؟ || یوه 30.0 V بیټري له 10.0 Ω مقاومت سره تړل شوې. په سرکټ کې جریان څومره دی؟
+p **GIVEN:** Potential difference V = 30.0 V; Resistance R = 10.0 Ω. **REQUIRED:** Current I = ? || **معلوم:** پوٹینشل ڈفرنس V = 30.0 V؛ مزاحمت R = 10.0 Ω۔ **مطلوب:** کرنٹ I = ? || **ورکړل شوي:** د پوټانشیل توپیر V = 30.0 V؛ مقاومت R = 10.0 Ω. **غوښتل شوي:** جریان I = ?
+eq \text{SOLUTION: By Ohm's law}\quad I = \dfrac{V}{R} \qquad \text{Putting values}\quad I = \dfrac{30.0\ \text{V}}{10.0\ \Omega} \qquad I = 3.00\ \text{A} \quad \text{(Answer)}
+endexample
+box extension | EXTENSION EXERCISE 14.1 || توسیعی مشق 14.1 || پراخه تمرین ۱۴.۱
+p How V/Ω gives ampere? 3.00 A is a large current, is this current realistic? || V/Ω سے ایمپیئر کیسے بنتا ہے؟ 3.00 A بڑا کرنٹ ہے، کیا یہ کرنٹ حقیقت پسندانہ ہے؟ || V/Ω څنګه امپیر ورکوي؟ 3.00 A لوی جریان دی، آیا دا جریان واقعي دی؟
+endbox
+box assignment | ASSIGNMENT 14.2: CURRENT THROUGH ELECTRIC RANGE || اسائنمنٹ 14.2: برقی چولہے میں کرنٹ || دنده ۱۴.۲: له برېښنايي بخارۍ څخه جریان
+q 1 | A heating element on an electric range operating on 240 V has a resistance of 30.0 Ω. What current does it draw? || 240 V پر چلنے والے برقی چولہے کے ہیٹنگ عنصر کی مزاحمت 30.0 Ω ہے۔ یہ کتنا کرنٹ لیتا ہے؟ || د برېښنايي بخارۍ تودوونکی عنصر چې په 240 V کار کوي 30.0 Ω مقاومت لري. څومره جریان اخلي؟
+sol I = 8.0 A ## $I = \dfrac{V}{R} = \dfrac{240\ \text{V}}{30.0\ \Omega} = 8.0\ \text{A}$ (book answer key: 8.0 A) || $I = \dfrac{240}{30.0} = 8.0\ \text{A}$ || $I = \dfrac{240}{30.0} = 8.0\ \text{A}$
+endbox
+@sec 14-4 | 14.4 Resistance, series and parallel combinations || 14.4 مزاحمت، سلسلہ وار اور متوازی ملاپ || ۱۴.۴ مقاومت، لړۍ ییز او موازي ترکیبونه
+## 14.4 ELECTRICAL RESISTANCE (R) || 14.4 برقی مزاحمت (R) || ۱۴.۴ برېښنايي مقاومت (R)
+p *The opposition offered to the flow of charges is called electrical resistance.* || *چارجز کے بہاؤ میں پیش آنے والی رکاوٹ کو برقی مزاحمت کہتے ہیں۔* || *د چارجونو د بهېدو پر وړاندې خنډ ته برېښنايي مقاومت ویل کېږي.*
+p In metallic conductors, the charge is transported by free electrons. Resistance is due to collisions between these free electrons and fixed atoms inside the conductor. By Ohm's law, the resistance is the ratio of the voltage V across the conductor to the current I it carries, mathematically || دھاتی موصلوں میں چارج آزاد الیکٹرانوں کے ذریعے منتقل ہوتا ہے۔ مزاحمت ان آزاد الیکٹرانوں اور موصل کے اندر جمے ہوئے ایٹموں کے درمیان تصادم کی وجہ سے ہوتی ہے۔ اوہم کے قانون کے مطابق مزاحمت موصل پر وولٹیج V اور اس میں بہنے والے کرنٹ I کی نسبت ہے، ریاضی کی رو سے || په فلزي هادیو کې چارج د ازادو الکترونونو له لارې لېږدول کېږي. مقاومت د دې ازادو الکترونونو او د هادي دننه د ثابتو اټومونو ترمنځ د ټکرونو له امله دی. د اوم د قانون له مخې مقاومت د هادي پر سر د ولټیج V او د هغه د جریان I نسبت دی، په ریاضي ډول
+eq R = \dfrac{V}{I} \qquad (14.4)
+p The SI unit of resistance is **ohm** and is represented by Greek letter (omega) Ω. *The resistance of wire is one ohm if potential difference of one volt applied across its ends causes a current of one ampere to flow through it.* || مزاحمت کی ایس آئی اکائی **اوہم** ہے جسے یونانی حرف اومیگا Ω سے ظاہر کرتے ہیں۔ *کسی تار کی مزاحمت ایک اوہم ہے اگر اس کے سروں پر ایک وولٹ پوٹینشل ڈفرنس لگانے سے اس میں ایک ایمپیئر کرنٹ بہے۔* || د مقاومت SI واحد **اوم** دی چې په یوناني توري اومېګا Ω ښودل کېږي. *د یوه سیم مقاومت یو اوم دی که د هغه پر سرونو د یوه ولټ د پوټانشیل توپیر لګول له هغه څخه د یوه امپیر جریان تېر کړي.*
+eq 1\ \Omega = \dfrac{1\ \text{V}}{1\ \text{A}}

@@ -1,0 +1,151 @@
+{
+  "chapter": "cs11-u7",
+  "id": "cs11-s225-p216",
+  "title": "Hierarchal model (end); Figure 7.1; b. Network Database Model; Figure 7.2",
+  "headingUrdu": "ہائیرارکل ماڈل (اختتام)؛ شکل ۷.۱؛ ب۔ نیٹ ورک ڈیٹا بیس ماڈل؛ شکل ۷.۲",
+  "headingPashto": "درجه بندي ماډل (پای)؛ انځور ۷.۱؛ ب. شبکه ډېټابېس ماډل؛ انځور ۷.۲",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 225,
+    "printedPage": "216"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "cs11-s225-a",
+      "en": "can have many children but each child has only one parent. Figure 7.1 depicts a hierarchical database model.",
+      "ur": "کے کئی بچے ہو سکتے ہیں لیکن ہر بچے کا صرف ایک والدین ہوتا ہے۔ شکل ۷.۱ ہائیرارکیکل ڈیٹا بیس ماڈل دکھاتی ہے۔",
+      "ps": "ډیر ماشومان لرلای شي خو هر ماشوم یوازې یو مور لري. ۷.۱ انځور د درجه بندي ډېټابېس ماډل ښيي.",
+      "cont": true
+    },
+    {
+      "id": "cs11-s225-h1",
+      "en": "b. Network Database Model",
+      "ur": "ب۔ نیٹ ورک ڈیٹا بیس ماڈل",
+      "ps": "ب. شبکه ډېټابېس ماډل",
+      "kind": "heading"
+    },
+    {
+      "id": "cs11-s225-b",
+      "en": "A network database is similar to a hierarchical database model except that each child can have more than one parent record. A child record is referred to as a “member” and a parent record is referred to as an “owner”. The advantage of the network database is its ability to establish relationships between different branches of data records and thus offer increased access capability for the manager. Figure 7.2 shows a network database model.",
+      "ur": "نیٹ ورک ڈیٹا بیس ہائیرارکیکل ڈیٹا بیس ماڈل سے مشابہ ہے سوائے اس کے کہ ہر بچے کے ایک سے زیادہ والدین ریکارڈ ہو سکتے ہیں۔ بچے کے ریکارڈ کو ’’ممبر‘‘ اور والدین کے ریکارڈ کو ’’اونر‘‘ کہا جاتا ہے۔ نیٹ ورک ڈیٹا بیس کا فائدہ یہ ہے کہ یہ ڈیٹا ریکارڈز کی مختلف شاخوں کے درمیان تعلقات قائم کر سکتا ہے اور اس طرح منتظم کے لیے رسائی کی بڑھی ہوئی صلاحیت پیش کرتا ہے۔ شکل ۷.۲ نیٹ ورک ڈیٹا بیس ماڈل دکھاتی ہے۔",
+      "ps": "شبکه ډېټابېس د درجه بندي ډېټابېس ماډل غوندې ده پرته له دې چې هر ماشوم کېدای شي له یوه څخه ډیر د مور ثبتونه ولري. د ماشوم ثبت “غړی” او د مور ثبت “مالک” بلل کېږي. د شبکې ډېټابېس ګټه د ډېټا ثبتونو د مختلفو څانګو ترمنځ د اړیکو جوړولو وړتیا ده او په دې توګه د مدیر لپاره د لاسرسي زیاته وړتیا برابروي. ۷.۲ انځور د شبکې ډېټابېس ماډل ښيي."
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s225-a"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "cs11-s225-h1",
+        "cs11-s225-b"
+      ]
+    },
+    {
+      "type": "figure",
+      "index": 1
+    }
+  ],
+  "vocabulary": {},
+  "equations": [],
+  "figures": [
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 215\" role=\"img\" aria-label=\"Hierarchical database model: Companies with children Invoice and Contacts, Invoice with Payments, Contacts with Letters, Faxes and Emails\" style=\"width:100%;max-width:560px;height:auto;background:#fff\"><rect x=\"160\" y=\"5\" width=\"200\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"28.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Companies</text><rect x=\"5\" y=\"90\" width=\"180\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"113.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Invoice</text><rect x=\"5\" y=\"165\" width=\"180\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"188.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Payments</text><rect x=\"250\" y=\"60\" width=\"170\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"335.0\" y=\"83.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Contacts</text><rect x=\"170\" y=\"120\" width=\"110\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"143.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Letters</text><rect x=\"300\" y=\"120\" width=\"110\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"355.0\" y=\"143.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Faxes</text><rect x=\"430\" y=\"120\" width=\"110\" height=\"38\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"485.0\" y=\"143.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Emails</text><line x1=\"260\" y1=\"43\" x2=\"260\" y2=\"50\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"95\" y1=\"60\" x2=\"260\" y2=\"50\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"95\" y1=\"60\" x2=\"95\" y2=\"90\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"95,90 90,81 100,81\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"360\" y1=\"50\" x2=\"360\" y2=\"60\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"335\" y1=\"50\" x2=\"335\" y2=\"60\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"260\" y1=\"50\" x2=\"335\" y2=\"50\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"335\" y1=\"60\" x2=\"335\" y2=\"60\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"95\" y1=\"128\" x2=\"95\" y2=\"165\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"95,165 90,156 100,156\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"335\" y1=\"98\" x2=\"225\" y2=\"120\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"225,120 220,111 230,111\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"335\" y1=\"98\" x2=\"355\" y2=\"120\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"355,120 350,111 360,111\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"335\" y1=\"98\" x2=\"485\" y2=\"120\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"485,120 480,111 490,111\" fill=\"#3a7a4a\" stroke=\"#111\"/></svg>",
+      "id": "cs11-s225-fig1",
+      "caption": "Figure 7.1 Hierarchical Database Model",
+      "captionUrdu": "شکل ۷.۱ ہائیرارکیکل ڈیٹا بیس ماڈل",
+      "captionPashto": "انځور ۷.۱ درجه بندي ډېټابېس ماډل",
+      "labels": [
+        {
+          "en": "Companies",
+          "ur": "کمپنیاں",
+          "ps": "شرکتونه"
+        },
+        {
+          "en": "Invoice",
+          "ur": "انوائس",
+          "ps": "بیلونه"
+        },
+        {
+          "en": "Payments",
+          "ur": "ادائیگیاں",
+          "ps": "تادیات"
+        },
+        {
+          "en": "Contacts",
+          "ur": "رابطے",
+          "ps": "اړیکې"
+        },
+        {
+          "en": "Letters",
+          "ur": "خطوط",
+          "ps": "لیکونه"
+        },
+        {
+          "en": "Faxes",
+          "ur": "فیکس",
+          "ps": "فیکسونه"
+        },
+        {
+          "en": "Emails",
+          "ur": "ای میلز",
+          "ps": "برېښنالیکونه"
+        }
+      ]
+    },
+    {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 215\" role=\"img\" aria-label=\"Network database model: Store with Customer, Manager and Salesman, linked to Order and Items\" style=\"width:100%;max-width:560px;height:auto;background:#fff\"><rect x=\"170\" y=\"5\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"245.0\" y=\"27.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Store</text><rect x=\"20\" y=\"90\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"112.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Customer</text><rect x=\"200\" y=\"90\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"112.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Manager</text><rect x=\"380\" y=\"90\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"455.0\" y=\"112.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Salesman</text><rect x=\"100\" y=\"170\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"192.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Order</text><rect x=\"300\" y=\"170\" width=\"150\" height=\"36\" fill=\"#fff\" stroke=\"#111\" stroke-width=\"1.5\"/><text x=\"375.0\" y=\"192.0\" font-size=\"12\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-weight=\"700\" fill=\"#111\">Items</text><line x1=\"245\" y1=\"41\" x2=\"95\" y2=\"90\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"95,90 90,81 100,81\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"245\" y1=\"41\" x2=\"275\" y2=\"90\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"275,90 270,81 280,81\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"245\" y1=\"41\" x2=\"455\" y2=\"90\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"455,90 450,81 460,81\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"95\" y1=\"126\" x2=\"175\" y2=\"170\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"275\" y1=\"126\" x2=\"175\" y2=\"170\" stroke=\"#111\" stroke-width=\"1.3\"/><line x1=\"455\" y1=\"126\" x2=\"175\" y2=\"170\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"175,170 170,161 180,161\" fill=\"#3a7a4a\" stroke=\"#111\"/><line x1=\"455\" y1=\"126\" x2=\"375\" y2=\"170\" stroke=\"#111\" stroke-width=\"1.3\"/><polygon points=\"375,170 370,161 380,161\" fill=\"#3a7a4a\" stroke=\"#111\"/></svg>",
+      "id": "cs11-s225-fig2",
+      "caption": "Figure 7.2 Network Database Model",
+      "captionUrdu": "شکل ۷.۲ نیٹ ورک ڈیٹا بیس ماڈل",
+      "captionPashto": "انځور ۷.۲ شبکه ډېټابېس ماډل",
+      "labels": [
+        {
+          "en": "Store",
+          "ur": "اسٹور",
+          "ps": "پلورنځی"
+        },
+        {
+          "en": "Customer",
+          "ur": "کسٹمر",
+          "ps": "پېرېدونکی"
+        },
+        {
+          "en": "Manager",
+          "ur": "مینیجر",
+          "ps": "مدیر"
+        },
+        {
+          "en": "Salesman",
+          "ur": "سیلزمین",
+          "ps": "پلورونکی"
+        },
+        {
+          "en": "Order",
+          "ur": "آرڈر",
+          "ps": "فرمایش"
+        },
+        {
+          "en": "Items",
+          "ur": "آئٹمز",
+          "ps": "توکي"
+        }
+      ]
+    }
+  ],
+  "sourceNote": "Printed page 216: the end of the hierarchical model paragraph (continuing from page 215), Figure 7.1 Hierarchical Database Model (Companies, Invoice, Payments, Contacts, Letters, Faxes and Emails with arrows; redrawn as coded SVG), “b. Network Database Model” with its paragraph and Figure 7.2 Network Database Model (Store, Customer, Manager, Salesman, Order and Items; redrawn as coded SVG). Diagrams are redrawn as simplified coded SVG with the printed labels. Watermark, border lines, page-edge shadows and handwriting are excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-13T13:45:36.145341+00:00",
+    "scope": "Scan 225 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "savedAt": "2026-10-11T10:05:35.720Z",
+  "chapters": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sourceKeyPoints": 103,
+  "explicitInteractivePairs": 103,
+  "newlyAddedPairsByChapter": {
+    "2": 12,
+    "3": 14,
+    "4": 12,
+    "5": 15,
+    "6": 21,
+    "7": 17
+  },
+  "languagePairValidation": "Every pair text exactly matches its sourceKeyPoints entry; every pair includes Urdu and Pashto. Existing verified in-chapter translations were reused when text matched; the 10 unmatched Unit 5 points were translated and are still subject to whole-book semantic review.",
+  "readerRenderer": "js/app.js renderClass9ChemistryLesson maps sourceKeyPointPairs by index to renderInteractiveParagraphHtml; no browser testing performed.",
+  "validation": {
+    "dataChemSyntax": "passed",
+    "pairArrays": 78,
+    "totalTranslationPairs": 1910,
+    "missingUrduOrPashto": 0,
+    "keyPointsMissingPairs": 0
+  },
+  "status": "coverage_and_alignment_structure_complete; semantic translation and reader interaction review remain open"
+}

@@ -1,0 +1,609 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s113-sd-4",
+  "title": "Example 3.11 (shortcut and step-deviation methods) · 3.5.4 Example 3.12 (start)",
+  "headingUrdu": "مثال 3.11 (مختصر اور قدمی انحراف کے طریقے) · 3.5.4 مثال 3.12 (آغاز)",
+  "headingPashto": "بېلګه 3.11 (لنډه او ګام‌انحراف طریقې) · 3.5.4 بېلګه 3.12 (پیل)",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 113,
+    "printedPage": "105"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s113-n1",
+      "en": "Now",
+      "ur": "اب",
+      "ps": "اوس",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-n2",
+      "en": "(iii) By change of origin and scale method or step-deviation method",
+      "ur": "(iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے",
+      "ps": "(iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-n3",
+      "en": "Now",
+      "ur": "اب",
+      "ps": "اوس",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-n4",
+      "en": "Here a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2",
+      "ur": "یہاں a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2",
+      "ps": "دلته a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-h354",
+      "en": "3.5.4 Calculation of standard deviation and variance in case of discrete series or grouped data",
+      "ur": "3.5.4 منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب",
+      "ps": "3.5.4 د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s113-ex12",
+      "en": "Example: 3.12",
+      "ur": "مثال: 3.12",
+      "ps": "بېلګه: 3.12",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-12"
+    },
+    {
+      "id": "stat11-s113-q12",
+      "en": "Compute standard deviation and variance from the following frequency",
+      "ur": "درج ذیل تعدد تقسیم سے معیاری انحراف اور تغیر حساب کریں",
+      "ps": "له لاندې فریکونسي ویش څخه معیاري انحراف او وریانس محاسبه کړئ",
+      "role": "question",
+      "exampleId": "stat11-ex-3-12",
+      "sourceGap": {
+        "note": "The sentence continues on the next page (\"distribution:\")."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s113-n1"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s113-n2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s113-n3"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s113-n4"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 6
+    },
+    {
+      "type": "equation",
+      "index": 7
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s113-h354",
+        "stat11-s113-ex12",
+        "stat11-s113-q12"
+      ]
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s113-a",
+      "latex": "s=\\sqrt{\\dfrac{1}{5-1}\\left[220-\\dfrac{(30)^2}{5}\\right]}",
+      "accessible": "s = √((1/(5 − 1))[220 − (30)²/5])   [printed \"(30)2\"]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √((1/(5 − 1))[220 − (30)²/5])   [printed \"(30)2\"]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √((1/(5 − 1))[220 − (30)²/5])   [printed \"(30)2\"]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √((1/(5 − 1))[220 − (30)²/5])   [printed \"(30)2\"]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-b",
+      "latex": "=\\sqrt{\\dfrac14[220-180]}=\\sqrt{\\dfrac{40}{4}}=\\sqrt{10}=3.16",
+      "accessible": "= √((1/4)[220 − 180]) = √(40/4) = √10 = 3.16",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= √((1/4)[220 − 180]) = √(40/4) = √10 = 3.16"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= √((1/4)[220 − 180]) = √(40/4) = √10 = 3.16"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= √((1/4)[220 − 180]) = √(40/4) = √10 = 3.16"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-c",
+      "latex": "s^2=\\dfrac{1}{5-5}\\left[220-\\dfrac{(30)^2}{5}\\right]",
+      "accessible": "s² = (1/(5 − 5))[220 − (30)²/5]   [printed \"5 − 5\", a misprint for 5 − 1]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s² = (1/(5 − 5))[220 − (30)²/5]   [printed \"5 − 5\", a misprint for 5 − 1]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s² = (1/(5 − 5))[220 − (30)²/5]   [printed \"5 − 5\", a misprint for 5 − 1]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s² = (1/(5 − 5))[220 − (30)²/5]   [printed \"5 − 5\", a misprint for 5 − 1]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-d",
+      "latex": "=\\dfrac14[220-180]=\\dfrac{40}{4}=10",
+      "accessible": "= (1/4)[220 − 180] = 40/4 = 10",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "= (1/4)[220 − 180] = 40/4 = 10"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "= (1/4)[220 − 180] = 40/4 = 10"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "= (1/4)[220 − 180] = 40/4 = 10"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-e",
+      "latex": "S=\\sqrt{\\dfrac{\\sum u^2}{n}-\\left(\\dfrac{\\sum u}{n}\\right)^2}\\times h",
+      "accessible": "S = √(Σu²/n − (Σu/n)²) × h",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S = √(Σu²/n − (Σu/n)²) × h"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S = √(Σu²/n − (Σu/n)²) × h"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S = √(Σu²/n − (Σu/n)²) × h"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-f",
+      "latex": "S^2=\\left[\\dfrac{\\sum u^2}{n}-\\left(\\dfrac{\\sum u}{n}\\right)^2\\right]\\times h^2",
+      "accessible": "S² = [Σu²/n − (Σu/n)²] × h²",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = [Σu²/n − (Σu/n)²] × h²"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = [Σu²/n − (Σu/n)²] × h²"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = [Σu²/n − (Σu/n)²] × h²"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-g",
+      "latex": "\\therefore\\ S=\\sqrt{\\dfrac{10}{5}-\\left(\\dfrac{0}{5}\\right)^2}\\times 2=\\sqrt{2-0}\\times 2=3.16",
+      "accessible": "∴ S = √(10/5 − (0/5)²) × 2 = √(2 − 0) × 2 = 3.16",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ S = √(10/5 − (0/5)²) × 2 = √(2 − 0) × 2 = 3.16"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ S = √(10/5 − (0/5)²) × 2 = √(2 − 0) × 2 = 3.16"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ S = √(10/5 − (0/5)²) × 2 = √(2 − 0) × 2 = 3.16"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "id": "stat11-s113-h",
+      "latex": "S^2=\\left[\\dfrac{10}{5}-\\left(\\dfrac{0}{5}\\right)^2\\right]\\times 2^2=(2-0)\\times 4=2\\times 4=8",
+      "accessible": "S² = [10/5 − (0/5)²] × 2² = (2 − 0) × 4 = 2 × 4 = 8",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "S² = [10/5 − (0/5)²] × 2² = (2 − 0) × 4 = 2 × 4 = 8"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "S² = [10/5 − (0/5)²] × 2² = (2 − 0) × 4 = 2 × 4 = 8"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "S² = [10/5 − (0/5)²] × 2² = (2 − 0) × 4 = 2 × 4 = 8"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-11"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.11: x and x²",
+      "captionUrdu": "مثال 3.11: x اور x²",
+      "captionPashto": "بېلګه 3.11: x او x²",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "x²",
+          "ur": "x²",
+          "ps": "x²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "36",
+            "ur": "36",
+            "ps": "36"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "100",
+            "ur": "100",
+            "ps": "100"
+          }
+        ],
+        [
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "220",
+            "ur": "220",
+            "ps": "220"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-11"
+    },
+    {
+      "caption": "Example 3.11: step-deviation table",
+      "captionUrdu": "مثال 3.11: قدمی انحراف کا جدول",
+      "captionPashto": "بېلګه 3.11: د ګام‌انحراف جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "u = (x − 6)/2",
+          "ur": "u = (x − 6)/2",
+          "ps": "u = (x − 6)/2"
+        },
+        {
+          "en": "u²",
+          "ur": "u²",
+          "ps": "u²"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "-2",
+            "ur": "-2",
+            "ps": "-2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "-1",
+            "ur": "-1",
+            "ps": "-1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          }
+        ],
+        [
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-11"
+    }
+  ],
+  "sourceNote": "Printed page 105. The x, x² table and the \"Now …\" workings are printed side by side and are shown table first. Printed spellings kept: \"origen\". The step-deviation S² gives 8 (population form) while the direct method gave 10; as printed. In the u-table the first total cell is a dash. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:50:16.165990+00:00",
+    "scope": "Scan 113 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

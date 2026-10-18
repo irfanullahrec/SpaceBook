@@ -1,0 +1,27 @@
+@pdf 37
+@printed 12
+@status lesson
+@issue This page is bound out of order in the scan (it sits between printed pages 24 and 29).
+m          Else if SUBMARKS>=50 Set GRADE= C
+m          Else if SUBMARKS>=40 Set GRADE= D
+m          Else if SUBMARKS>=33 Set GRADE= E
+m          Else Set GRADE=FAIL
+m          [End of If structure]
+m Step 3. Write GRADE
+m Step 4. Exit
+### Problem 9 || مسئلہ 9 || ستونزه ۹
+p **To find the expected population after years.** || **کئی سال بعد متوقع آبادی معلوم کرنا۔** || **له څو کلونو وروسته متوقع نفوس موندل.**
+p **Algorithm:** This algorithm finds the expected population **EP** of an area after **T** years having current population **P** and growth rate of **R**. || **الگورتھم:** یہ الگورتھم موجودہ آبادی **P** اور شرحِ نمو **R** والے علاقے کی **T** سال بعد متوقع آبادی **EP** معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د اوسني نفوس **P** او د ودې کچې **R** لرونکې سیمې متوقع نفوس **EP** له **T** کلونو وروسته مومي.
+m Step 1. Read P, R, T
+m Step 2. Set EP= P*R*T
+m Step 3. Write EP
+m Step 4. Exit
+@issue EP = P*R*T is not a correct population-growth formula (simple growth would be P + P*R*T, compound growth P*(1+R)^T); kept as printed.
+### Problem 10 || مسئلہ 10 || ستونزه ۱۰
+p **To calculate the exponent of a given number.** || **دیے گئے عدد کی قوت (ایکسپونینٹ) معلوم کرنا۔** || **د ورکړل شوي عدد توان محاسبه کول.**
+p **Algorithm:** This algorithm calculates exponential power *EXP* of a given number *NUM* having exponent *X*. || **الگورتھم:** یہ الگورتھم دیے گئے عدد *NUM* کی قوت نما *X* کے ساتھ قوت *EXP* معلوم کرتا ہے۔ || **الګوریتم:** دا الګوریتم د ورکړل شوي عدد *NUM* توان *EXP* د *X* توان نما سره محاسبه کوي.
+m Step 1. Read NUM, X
+m Step 2. Set EXP= NUM ^ X      ( ^ Carrot is used for power)
+m Step 3. Write EXP
+m Step 4. Exit
+@issue "Carrot" is printed for "caret"; kept as printed.

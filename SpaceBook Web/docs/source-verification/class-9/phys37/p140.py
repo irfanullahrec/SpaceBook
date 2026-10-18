@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+TITLE = 'Tip: remember these values / Table 5.1 solar system data / 5.3 Gravitational field'
+_TR = [['Mercury', '2,400', '0.330', '3.7', '0.241'], ['Venus', '6,050', '4.87', '8.9', '0.615'], ['Earth', '6,370', '5.97', '9.8', '1'], ['Mars', '3,400', '0.642', '3.7', '1.88'], ['Jupiter', '71,500', '1890', '24.7', '11.9'], ['Saturn', '60,300', '568', '9.0', '29.4'], ['Uranus', '25,600', '86.8', '8.7', '83.8'], ['Neptune', '24,800', '102', '11.0', '164'], ['Sun', '696,000', '1,990,000', '274', '--']]
+_UR = ['عطارد', 'زہرہ', 'زمین', 'مریخ', 'مشتری', 'زحل', 'یورینس', 'نیپچون', 'سورج']
+_PS = ['عطارد', 'زهره', 'ځمکه', 'مریخ', 'مشتري', 'زحل', 'یورانوس', 'نپتون', 'لمر']
+SECTIONS = [
+    ('tip5', ('TIP — REMEMBER THESE VALUES', 'نکتہ — یہ قدریں یاد رکھیں', 'لارښوونه — دا ارزښتونه په یاد ولرئ'), [
+        ('ul', [('Gravitational constant G = 6.67 × 10^{-11} N m^2 kg^{-2}', 'تجاذبی مستقل G = 6.67 × 10^{-11} N m^2 kg^{-2}', 'د جاذبې ثابت G = 6.67 × 10^{-11} N m^2 kg^{-2}'), ('Radius of earth r_E = 6.4 × 10^6 m', 'زمین کا نصف قطر r_E = 6.4 × 10^6 m', 'د ځمکې شعاع r_E = 6.4 × 10^6 m')]),
+        ('tab', 'phys9-u5-table51', 'TABLE 5.1: SELECTED DATA FOR THE SOLAR SYSTEM', ['Planet', 'Radius (km)', 'Mass (10²⁴ kg)', 'g (m/s²)', 'Orbital Period (yr)'], _TR,
+         (['سیارہ', 'نصف قطر (km)', 'کمیت (10²⁴ kg)', 'g (m/s²)', 'مداری دورانیہ (سال)'], [[_UR[i]] + r[1:] for i, r in enumerate(_TR)]),
+         (['سیاره', 'شعاع (km)', 'کتله (10²⁴ kg)', 'g (m/s²)', 'مداري موده (کال)'], [[_PS[i]] + r[1:] for i, r in enumerate(_TR)])),
+    ]),
+    ('5.3', ('5.3 GRAVITATIONAL FIELD', '5.3 تجاذبی میدان', '5.3 د جاذبې ساحه'), [
+        ('h', 'Gravity is a field force:', 'کششِ ثقل ایک میدانی قوت ہے:', 'جاذبه د ساحې قوت دی:'),
+        ('p', 'Newton was unable to explain how objects can exert forces on one another without coming into contact. He developed a mathematical theory to describe gravity, but he did not had a physical explanation for how gravity works. Scientists later developed a theory of fields to explain how gravity and other forces operate.', 'نیوٹن یہ وضاحت نہ کر سکا کہ اجسام ایک دوسرے کو چھوئے بغیر قوتیں کیسے لگا سکتے ہیں۔ اس نے کششِ ثقل بیان کرنے کے لیے ایک ریاضیاتی نظریہ بنایا، لیکن اس کے پاس کششِ ثقل کے کام کرنے کی کوئی طبیعی وضاحت نہیں تھی۔ بعد میں سائنس دانوں نے کششِ ثقل اور دوسری قوتوں کے کام کرنے کی وضاحت کے لیے میدانوں کا نظریہ بنایا۔', 'نیوټن ونه شو کړای تشریح کړي چې جسمونه څنګه پرته له تماسه یو پر بل قوتونه اچوي. هغه د جاذبې د بیان لپاره ریاضي نظریه جوړه کړه، خو د جاذبې د کار فزیکي تشریح یې نه درلوده. وروسته ساینس پوهانو د جاذبې او نورو قوتونو د کار د تشریح لپاره د ساحو نظریه جوړه کړه.'),
+        ('p', 'According to this theory, masses create a gravitational field in space. (Similarly, charged objects generate an electric field and magnets develop a magnetic field.) A gravitational force is', 'اس نظریے کے مطابق کمیتیں خلا میں تجاذبی میدان بناتی ہیں۔ (اسی طرح چارج شدہ اجسام برقی میدان اور مقناطیس مقناطیسی میدان پیدا کرتے ہیں۔) تجاذبی قوت', 'د دې نظریې له مخې کتلې په فضا کې د جاذبې ساحه جوړوي. (همداسې چارج لرونکي جسمونه برقي ساحه او مقناطیسونه مقناطیسي ساحه جوړوي.) د جاذبې قوت'),
+        ('h', 'INFORMATION', 'معلومات', 'معلومات'),
+        ('p', 'We have eight planets in our Solar System. However, outside of our Solar System there are thousands of other planets. The extra-solar planets or exo-planets are in orbit around another star. So far we have almost 3500 confirmed new worlds, with another 2000 awaiting confirmation.', 'ہمارے نظامِ شمسی میں آٹھ سیارے ہیں۔ تاہم ہمارے نظامِ شمسی سے باہر ہزاروں دوسرے سیارے ہیں۔ نظامِ شمسی سے باہر کے سیارے یا ایکسو پلینٹس کسی دوسرے ستارے کے گرد مدار میں ہیں۔ اب تک ہمارے پاس تقریباً 3500 تصدیق شدہ نئی دنیائیں ہیں اور مزید 2000 تصدیق کی منتظر ہیں۔', 'زموږ په لمریز نظام کې اته سیارې دي. خو له زموږ لمریز نظامه بهر زرګونه نورې سیارې شته. له لمریز نظامه بهر سیارې یا اکسو سیارې د بل ستوري شاوخوا په مدار کې دي. تر اوسه نږدې 3500 تایید شوې نوې نړۍ لرو او نورې 2000 د تایید په تمه دي.'),
+    ]),
+]

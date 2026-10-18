@@ -1,0 +1,25 @@
+@pdf 21
+@printed 13
+@status lesson
+@deco Heavy speckle/noise across the scan.
+### Problem 11 || مسئلہ 11 || ستونزه ۱۱
+p **To find a sequence of odd numbers starting from a given number.** || **دیے گئے عدد سے شروع ہونے والے طاق اعداد کا سلسلہ معلوم کرنا۔** || **له یوه ورکړل شوي عدد پیلېدونکې د طاقو عددونو لړۍ موندل.**
+p **Algorithm:** This algorithm finds a sequence of odd numbers starting from a given number *NUM* up to *N*, where *NUM* must be an odd number. || **الگورتھم:** یہ الگورتھم دیے گئے عدد *NUM* سے *N* تک طاق اعداد کا سلسلہ معلوم کرتا ہے، جبکہ *NUM* کا طاق عدد ہونا ضروری ہے۔ || **الګوریتم:** دا الګوریتم له ورکړل شوي عدد *NUM* څخه تر *N* پورې د طاقو عددونو لړۍ مومي، په داسې حال کې چې *NUM* باید طاق عدد وي.
+m Step 1. Read NUM, N
+m Step 2. Repeat Steps 3 and 4 while NUM<= N
+m Step 3. Write NUM
+m Step 4. Set NUM=NUM+2
+m         [End of while loop]
+m Step 5. Exit
+### Problem 12 || مسئلہ 12 || ستونزه ۱۲
+p **To count multiples MUL of a given number lying between two numbers.** || **دو اعداد کے درمیان واقع کسی دیے گئے عدد کے اضعاف MUL گننا۔** || **د دوو عددونو ترمنځ د یوه ورکړل شوي عدد د مضربونو MUL شمېرل.**
+p **Algorithm:** This algorithm counts multiples *M* of a given number *NUM* lying between two numbers *N1* and *N2*, where *N2* is greater than *N1*. || **الگورتھم:** یہ الگورتھم دو اعداد *N1* اور *N2* کے درمیان واقع دیے گئے عدد *NUM* کے اضعاف *M* گنتا ہے، جبکہ *N2* بڑا ہے *N1* سے۔ || **الګوریتم:** دا الګوریتم د *N1* او *N2* ترمنځ د ورکړل شوي عدد *NUM* مضربونه *M* شمېري، په داسې حال کې چې *N2* له *N1* لوی دی.
+m Step 1. Read NUM, N1, N2
+m Step 2. Set M = 0 [Initialize M.]
+m Step 3. For A=N1 to N2
+m Step 4. Set MUL= NUM % A    (% is used for remainder)
+m Step 5. If MUL = 0 Then M=M+1
+m Step 6. Next A
+m Step 7. Write M
+m Step 8. Exit
+@issue As printed, Step 4 computes NUM % A, which counts the divisors of NUM between N1 and N2, not the multiples of NUM; counting multiples needs A % NUM. Kept as printed.

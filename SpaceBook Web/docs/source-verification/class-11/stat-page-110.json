@@ -1,0 +1,289 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s110-sd-1",
+  "title": "Example 3.9 (end) · 3.4.2 Advantages and disadvantages · 3.5 Standard deviation and variance · 3.5.1 Standard deviation",
+  "headingUrdu": "مثال 3.9 (اختتام) · 3.4.2 فوائد اور نقصانات · 3.5 معیاری انحراف اور تغیر · 3.5.1 معیاری انحراف",
+  "headingPashto": "بېلګه 3.9 (پای) · 3.4.2 ګټې او زیانونه · 3.5 معیاري انحراف او وریانس · 3.5.1 معیاري انحراف",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 110,
+    "printedPage": "102"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s110-h342",
+      "en": "3.4.2 Advantages and disadvantages of mean deviation",
+      "ur": "3.4.2 اوسط انحراف کے فوائد اور نقصانات",
+      "ps": "3.4.2 د اوسط انحراف ګټې او زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s110-ah",
+      "en": "Advantages:",
+      "ur": "فوائد:",
+      "ps": "ګټې:"
+    },
+    {
+      "id": "stat11-s110-v1",
+      "en": "(i) It utilizes all the observations of the data set.",
+      "ur": "(i) یہ اعداد و شمار کے مجموعے کے تمام مشاہدات استعمال کرتا ہے۔",
+      "ps": "(i) دا د معلوماتو د ټولګې ټولې کتنې کاروي.",
+      "listGroup": "md-adv"
+    },
+    {
+      "id": "stat11-s110-v2",
+      "en": "(ii) It is simple to understand and easy to calculate.",
+      "ur": "(ii) یہ سمجھنے میں آسان اور حساب کرنے میں سادہ ہے۔",
+      "ps": "(ii) دا د پوهېدو لپاره ساده او د محاسبې لپاره اسانه دی.",
+      "listGroup": "md-adv"
+    },
+    {
+      "id": "stat11-s110-v3",
+      "en": "(iii) In case of mean deviation from median, it is least affected by extreme values.",
+      "ur": "(iii) وسطانیہ سے اوسط انحراف کی صورت میں یہ انتہائی قدروں سے سب سے کم متاثر ہوتا ہے۔",
+      "ps": "(iii) له میانې څخه د اوسط انحراف په حالت کې دا د سختو ارزښتونو لخوا تر ټولو لږ اغېزمن کېږي.",
+      "listGroup": "md-adv"
+    },
+    {
+      "id": "stat11-s110-dh",
+      "en": "Disadvantages:",
+      "ur": "نقصانات:",
+      "ps": "زیانونه:"
+    },
+    {
+      "id": "stat11-s110-w1",
+      "en": "(i) It is not used very often because all the deviations are taken as positive.",
+      "ur": "(i) یہ اکثر استعمال نہیں ہوتا کیونکہ تمام انحرافات کو مثبت لیا جاتا ہے۔",
+      "ps": "(i) دا ډېر نه کارول کېږي ځکه چې ټول انحرافات مثبت اخیستل کېږي.",
+      "listGroup": "md-dis"
+    },
+    {
+      "id": "stat11-s110-w2",
+      "en": "(ii) It is not suited for further algebraic treatment.",
+      "ur": "(ii) یہ مزید الجبری عمل کے لیے موزوں نہیں۔",
+      "ps": "(ii) دا د نورې الجبري پروسې لپاره مناسب نه دی.",
+      "listGroup": "md-dis"
+    },
+    {
+      "id": "stat11-s110-h35",
+      "en": "3.5 Standard deviation and Variance",
+      "ur": "3.5 معیاری انحراف اور تغیر",
+      "ps": "3.5 معیاري انحراف او وریانس",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s110-h351",
+      "en": "3.5.1 Standard deviation",
+      "ur": "3.5.1 معیاری انحراف",
+      "ps": "3.5.1 معیاري انحراف",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s110-t351",
+      "en": "The standard deviation is the most commonly used measure of dispersion. It fulfills all the requisites of a good measure of dispersion except that it is sensitive to extreme values. It is abbreviated as S.D. A small value of the S.D for a data set indicates less spread while a larger value of the S.D indicates more spread around the mean. It is denoted by σ (lower case sigma of the Greek alphabets) in population case and s in sample case. The positive square root of the average of the squared deviations of observations taken from mean is called standard deviation. Mathematically;",
+      "ur": "معیاری انحراف انتشار کا سب سے زیادہ استعمال ہونے والا پیمانہ ہے۔ یہ انتشار کے اچھے پیمانے کے تمام تقاضے پورے کرتا ہے سوائے اس کے کہ یہ انتہائی قدروں کے لیے حساس ہے۔ اسے S.D کے طور پر مختصر کیا جاتا ہے۔ اعداد و شمار کے مجموعے کے لیے S.D کی چھوٹی قدر کم پھیلاؤ ظاہر کرتی ہے جبکہ S.D کی بڑی قدر اوسط کے گرد زیادہ پھیلاؤ ظاہر کرتی ہے۔ اسے آبادی کی صورت میں σ (یونانی حروفِ تہجی کا چھوٹا سگما) اور نمونے کی صورت میں s سے ظاہر کیا جاتا ہے۔ اوسط سے لیے گئے مشاہدات کے مربع انحرافات کے اوسط کا مثبت جذر معیاری انحراف کہلاتا ہے۔ ریاضیاتی طور پر؛",
+      "ps": "معیاري انحراف د خپراوي تر ټولو ډېر کارېدونکې اندازه ده. دا د خپراوي د ښې اندازې ټولې اړتیاوې پوره کوي پرته له دې چې دا د سختو ارزښتونو لپاره حساسه ده. دا د S.D په توګه لنډېږي. د معلوماتو د ټولګې لپاره د S.D کوچنی ارزښت لږ خپراوی ښيي پداسې حال کې چې د S.D لوی ارزښت د اوسط شاوخوا ډېر خپراوی ښيي. دا د ټولنې په حالت کې په σ (د یوناني ابجد کوچنی سیګما) او د نمونې په حالت کې په s ښودل کېږي. له اوسط څخه اخیستل شویو کتنو د مربع انحرافاتو د اوسط مثبت جذر معیاري انحراف بلل کېږي. ریاضیاتي ډول؛"
+    },
+    {
+      "id": "stat11-s110-pop",
+      "en": "Population standard deviation: (Parameter)",
+      "ur": "آبادی کا معیاری انحراف: (پیرامیٹر)",
+      "ps": "د ټولنې معیاري انحراف: (پارامېټر)"
+    },
+    {
+      "id": "stat11-s110-smp",
+      "en": "Sample standard deviation: (Statistic)",
+      "ur": "نمونے کا معیاری انحراف: (شماریہ)",
+      "ps": "د نمونې معیاري انحراف: (احصایه)"
+    },
+    {
+      "id": "stat11-s110-nt",
+      "en": "Note that the sample S.D underestimates the population S.D when the denominator in the sample formula for S.D is n. However, the sample S.D does not underestimate the population S.D if the denominator in the sample formula is",
+      "ur": "نوٹ کریں کہ جب S.D کے نمونے کے فارمولے میں نسب نما n ہو تو نمونے کا S.D آبادی کے S.D کو کم تخمینہ کرتا ہے۔ تاہم، اگر نمونے کے فارمولے میں نسب نما",
+      "ps": "پام وکړئ چې کله د S.D د نمونې په فورمول کې مخرج n وي نو د نمونې S.D د ټولنې S.D کم اټکل کوي. خو که د نمونې په فورمول کې مخرج",
+      "sourceGap": {
+        "note": "The sentence continues on the next page."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s110-h342",
+        "stat11-s110-ah",
+        "stat11-s110-v1",
+        "stat11-s110-v2",
+        "stat11-s110-v3",
+        "stat11-s110-dh",
+        "stat11-s110-w1",
+        "stat11-s110-w2",
+        "stat11-s110-h35",
+        "stat11-s110-h351",
+        "stat11-s110-t351",
+        "stat11-s110-pop"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s110-smp"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s110-nt"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "standard deviation": {
+      "ur": "معیاری انحراف",
+      "ps": "معیاري انحراف"
+    },
+    "variance": {
+      "ur": "تغیر",
+      "ps": "وریانس"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s110-a",
+      "latex": "\\therefore\\ \\text{M.D}=\\dfrac{436.5}{40}=10.91\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ M.D = 436.5/40 = 10.91   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ M.D = 436.5/40 = 10.91   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ M.D = 436.5/40 = 10.91   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ M.D = 436.5/40 = 10.91   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s110-b",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\text{Median}}=\\dfrac{10.91}{146.75}=0.07\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/Median = 10.91/146.75 = 0.07   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 10.91/146.75 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 10.91/146.75 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 10.91/146.75 = 0.07   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-9"
+    },
+    {
+      "id": "stat11-s110-c",
+      "latex": "\\sigma=\\sqrt{\\dfrac{\\sum(x-\\mu)^2}{N}}\\qquad\\text{(Parameter)}",
+      "accessible": "σ = √(Σ(x − μ)²/N)   (Parameter)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)²/N)   (Parameter)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)²/N)   (Parameter)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "σ = √(Σ(x − μ)²/N)   (Parameter)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s110-d",
+      "latex": "s=\\sqrt{\\dfrac{\\sum(x-\\bar{x})^2}{n}}\\qquad\\text{(Statistic)}",
+      "accessible": "s = √(Σ(x − x̄)²/n)   (Statistic)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/n)   (Statistic)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/n)   (Statistic)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "s = √(Σ(x − x̄)²/n)   (Statistic)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 102. The first lines complete Example 3.9. Handwritten Urdu words next to \"Advantages\" and the 3.5 heading are ignored. \"Disadvantages\" is printed as given. The formula lines are printed with the labels \"Population standard deviation:\" and \"Sample standard deviation:\" on the left and \"(Parameter)\", \"(Statistic)\" on the right. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:49:05.212709+00:00",
+    "scope": "Scan 110 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

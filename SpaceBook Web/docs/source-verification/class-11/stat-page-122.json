@@ -1,0 +1,278 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s122-moments-1",
+  "title": "Example 3.15 (end) · 3.5.9–3.5.10 Merits and demerits · 3.6 Moments · 3.6.1 Types of moments",
+  "headingUrdu": "مثال 3.15 (اختتام) · 3.5.9–3.5.10 خوبیاں اور خامیاں · 3.6 معیارِ اثر (مومنٹس) · 3.6.1 معیارِ اثر کی اقسام",
+  "headingPashto": "بېلګه 3.15 (پای) · 3.5.9–3.5.10 ګټې او زیانونه · 3.6 مومنټونه · 3.6.1 د مومنټونو ډولونه",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 122,
+    "printedPage": "114"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s122-r1",
+      "en": "Since C.V for city A is smaller than C.V for city B, it means that there is less variability in the expenditures of families of city A. Hence city A is more consistent.",
+      "ur": "چونکہ شہر A کا C.V شہر B کے C.V سے چھوٹا ہے، اس کا مطلب ہے کہ شہر A کے خاندانوں کے اخراجات میں تغیر پذیری کم ہے۔ لہٰذا شہر A زیادہ مستقل ہے۔",
+      "ps": "ځکه چې د A ښار C.V د B ښار له C.V څخه کوچنی دی، پدې معنا چې د A ښار د کورنیو په لګښتونو کې لږ متغیرتیا شته. نو A ښار ډېر یو شان دی.",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s122-h359",
+      "en": "3.5.9 Merits and demerits of standard deviation",
+      "ur": "3.5.9 معیاری انحراف کی خوبیاں اور خامیاں",
+      "ps": "3.5.9 د معیاري انحراف ګټې او زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s122-mh",
+      "en": "Merits",
+      "ur": "خوبیاں",
+      "ps": "ګټې"
+    },
+    {
+      "id": "stat11-s122-m1",
+      "en": "(i) It is most widely used measure of dispersion.",
+      "ur": "(i) یہ انتشار کا سب سے زیادہ وسیع پیمانے پر استعمال ہونے والا پیمانہ ہے۔",
+      "ps": "(i) دا د خپراوي تر ټولو ډېر کارېدونکې اندازه ده.",
+      "listGroup": "sd-merits"
+    },
+    {
+      "id": "stat11-s122-m2",
+      "en": "(ii) It is based on all values of a variable.",
+      "ur": "(ii) یہ متغیر کی تمام قدروں پر مبنی ہے۔",
+      "ps": "(ii) دا د متغیر پر ټولو ارزښتونو والړ دی.",
+      "listGroup": "sd-merits"
+    },
+    {
+      "id": "stat11-s122-m3",
+      "en": "(iii) It is a reliable measure of dispersion.",
+      "ur": "(iii) یہ انتشار کا قابلِ اعتماد پیمانہ ہے۔",
+      "ps": "(iii) دا د خپراوي د باور وړ اندازه ده.",
+      "listGroup": "sd-merits"
+    },
+    {
+      "id": "stat11-s122-m4",
+      "en": "(iv) It is suitable for further statistical treatment.",
+      "ur": "(iv) یہ مزید شماریاتی عمل کے لیے موزوں ہے۔",
+      "ps": "(iv) دا د نورې احصایوي پروسې لپاره مناسب دی.",
+      "listGroup": "sd-merits"
+    },
+    {
+      "id": "stat11-s122-dh",
+      "en": "Demerits",
+      "ur": "خامیاں",
+      "ps": "زیانونه"
+    },
+    {
+      "id": "stat11-s122-d1",
+      "en": "(i) It is relatively difficult to compute.",
+      "ur": "(i) اس کا حساب نسبتاً مشکل ہے۔",
+      "ps": "(i) محاسبه یې نسبتاً ستونزمنه ده.",
+      "listGroup": "sd-demerits"
+    },
+    {
+      "id": "stat11-s122-d2",
+      "en": "(ii) It is highly affected by extreme values.",
+      "ur": "(ii) یہ انتہائی قدروں سے بہت زیادہ متاثر ہوتا ہے۔",
+      "ps": "(ii) دا د سختو ارزښتونو لخوا ډېر اغېزمن کېږي.",
+      "listGroup": "sd-demerits"
+    },
+    {
+      "id": "stat11-s122-h3510",
+      "en": "3.5.10 Advantages and disadvantages of variance",
+      "ur": "3.5.10 تغیر کے فوائد اور نقصانات",
+      "ps": "3.5.10 د وریانس ګټې او زیانونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s122-ah",
+      "en": "Advantages",
+      "ur": "فوائد",
+      "ps": "ګټې"
+    },
+    {
+      "id": "stat11-s122-v1",
+      "en": "(i) It is based on all the observations of a series.",
+      "ur": "(i) یہ سلسلے کے تمام مشاہدات پر مبنی ہے۔",
+      "ps": "(i) دا د لړۍ پر ټولو کتنو والړ دی.",
+      "listGroup": "var-adv"
+    },
+    {
+      "id": "stat11-s122-v2",
+      "en": "(ii) It possesses all the properties of a good measure of dispersion.",
+      "ur": "(ii) اس میں انتشار کے اچھے پیمانے کی تمام خصوصیات پائی جاتی ہیں۔",
+      "ps": "(ii) دا د خپراوي د ښې اندازې ټولې ځانګړتیاوې لري.",
+      "listGroup": "var-adv"
+    },
+    {
+      "id": "stat11-s122-sh",
+      "en": "Disadvantages",
+      "ur": "نقصانات",
+      "ps": "زیانونه"
+    },
+    {
+      "id": "stat11-s122-w1",
+      "en": "(i) Its unit is square of the unit of measurement of data.",
+      "ur": "(i) اس کی اکائی اعداد و شمار کی پیمائش کی اکائی کا مربع ہے۔",
+      "ps": "(i) واحد یې د معلوماتو د اندازې د واحد مربع دی.",
+      "listGroup": "var-dis"
+    },
+    {
+      "id": "stat11-s122-w2",
+      "en": "(ii) It is sensitive to extreme values.",
+      "ur": "(ii) یہ انتہائی قدروں کے لیے حساس ہے۔",
+      "ps": "(ii) دا د سختو ارزښتونو لپاره حساس دی.",
+      "listGroup": "var-dis"
+    },
+    {
+      "id": "stat11-s122-h36",
+      "en": "3.6 Moments",
+      "ur": "3.6 معیارِ اثر (مومنٹس)",
+      "ps": "3.6 مومنټونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s122-t36",
+      "en": "Measures of central tendency tell us only about the balancing point of a distribution. Measures of dispersion also give only one information that is, about the variability. We need such a technique which gives more information about the distribution at once. This purpose is achieved by computation of moments. That is, First raw moment tells us about the mean, second mean moment tells us about the variance, third mean moment tells us about the Skewness and fourth mean moment tells us about the kurtosis.",
+      "ur": "مرکزی رجحان کے پیمانے ہمیں تقسیم کے صرف توازن کے نقطے کے بارے میں بتاتے ہیں۔ انتشار کے پیمانے بھی صرف ایک معلومات دیتے ہیں یعنی تغیر پذیری کے بارے میں۔ ہمیں ایسی تکنیک چاہیے جو تقسیم کے بارے میں ایک ہی وقت میں زیادہ معلومات دے۔ یہ مقصد معیارِ اثر کے حساب سے حاصل ہوتا ہے۔ یعنی پہلا خام معیارِ اثر ہمیں اوسط کے بارے میں، دوسرا اوسطی معیارِ اثر تغیر کے بارے میں، تیسرا اوسطی معیارِ اثر کجی کے بارے میں اور چوتھا اوسطی معیارِ اثر نوکیلے پن کے بارے میں بتاتا ہے۔",
+      "ps": "د مرکزي تمایل اندازې موږ ته یوازې د ویش د انډول د نقطې په اړه وايي. د خپراوي اندازې هم یوازې یو معلومات ورکوي یعنې د متغیرتیا په اړه. موږ داسې تخنیک ته اړتیا لرو چې د ویش په اړه په یو وخت کې ډېر معلومات ورکړي. دا موخه د مومنټونو په محاسبه ترلاسه کېږي. یعنې لومړی خام مومنټ موږ ته د اوسط په اړه، دویم اوسط مومنټ د وریانس په اړه، دریم اوسط مومنټ د کوړوالي په اړه او څلورم اوسط مومنټ د تېزوالي په اړه وايي."
+    },
+    {
+      "id": "stat11-s122-h361",
+      "en": "3.6.1 Types of moments",
+      "ur": "3.6.1 معیارِ اثر کی اقسام",
+      "ps": "3.6.1 د مومنټونو ډولونه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s122-i1",
+      "en": "(i) Mean moments or moments about arithmetic mean",
+      "ur": "(i) اوسطی معیارِ اثر یا حسابی اوسط کے گرد معیارِ اثر",
+      "ps": "(i) اوسط مومنټونه یا د حسابي اوسط شاوخوا مومنټونه"
+    },
+    {
+      "id": "stat11-s122-t361",
+      "en": "When moments are computed about the A.M, they are called mean moments. Mean moments are denoted by",
+      "ur": "جب معیارِ اثر حسابی اوسط کے گرد حساب کیے جائیں تو انہیں اوسطی معیارِ اثر کہا جاتا ہے۔ اوسطی معیارِ اثر کو ظاہر کیا جاتا ہے",
+      "ps": "کله چې مومنټونه د A.M شاوخوا محاسبه شي نو دوی ته اوسط مومنټونه ویل کېږي. اوسط مومنټونه ښودل کېږي",
+      "sourceGap": {
+        "note": "The notation μ1, μ2, μ3, μ4, … (Population case) at the foot of the page continues the sentence; the next page continues the notation for the sample case."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s122-r1",
+        "stat11-s122-h359",
+        "stat11-s122-mh",
+        "stat11-s122-m1",
+        "stat11-s122-m2",
+        "stat11-s122-m3",
+        "stat11-s122-m4",
+        "stat11-s122-dh",
+        "stat11-s122-d1",
+        "stat11-s122-d2",
+        "stat11-s122-h3510",
+        "stat11-s122-ah",
+        "stat11-s122-v1",
+        "stat11-s122-v2",
+        "stat11-s122-sh",
+        "stat11-s122-w1",
+        "stat11-s122-w2",
+        "stat11-s122-h36",
+        "stat11-s122-t36",
+        "stat11-s122-h361",
+        "stat11-s122-i1",
+        "stat11-s122-t361"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    }
+  ],
+  "vocabulary": {
+    "moments": {
+      "ur": "معیارِ اثر",
+      "ps": "مومنټونه"
+    },
+    "mean moments": {
+      "ur": "اوسطی معیارِ اثر",
+      "ps": "اوسط مومنټونه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s122-c",
+      "latex": "\\text{C.V}=\\dfrac{s}{\\bar{x}}\\times 100=\\dfrac{11.88}{55.22}\\times 100=21.51\\%",
+      "accessible": "C.V = (s/x̄) × 100 = (11.88/55.22) × 100 = 21.51%",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100 = (11.88/55.22) × 100 = 21.51%"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100 = (11.88/55.22) × 100 = 21.51%"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "C.V = (s/x̄) × 100 = (11.88/55.22) × 100 = 21.51%"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-15"
+    },
+    {
+      "id": "stat11-s122-m",
+      "latex": "\\mu_1,\\ \\mu_2,\\ \\mu_3,\\ \\mu_4,\\ \\ldots\\qquad\\text{(Population case)}",
+      "accessible": "μ1, μ2, μ3, μ4, …   (Population case)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "μ1, μ2, μ3, μ4, …   (Population case)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "μ1, μ2, μ3, μ4, …   (Population case)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "μ1, μ2, μ3, μ4, …   (Population case)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 114. The first line completes the City B comparison of Example 3.15 (C.V for City A = 21.51%). The \"s/x̄\" in the printed C.V line is small and blurred. Printed wording kept: \"disadvantages\", \"That is, First raw moment …\". Black scan artefacts at the top-left corner are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:52:41.059785+00:00",
+    "scope": "Scan 122 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

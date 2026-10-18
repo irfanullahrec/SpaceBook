@@ -1,0 +1,637 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s108-md-3",
+  "title": "Example 3.8: solution",
+  "headingUrdu": "مثال 3.8: حل",
+  "headingPashto": "بېلګه 3.8: حل",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 108,
+    "printedPage": "100"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s108-sol8",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-b1",
+      "en": "(i) Mean deviation from mean is given by",
+      "ur": "(i) اوسط سے اوسط انحراف یوں دیا جاتا ہے",
+      "ps": "(i) له اوسط څخه اوسط انحراف داسې ورکول کېږي",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-b2",
+      "en": "(ii) Mean deviation from median is given by M.D = Σf|x − Median| / Σf",
+      "ur": "(ii) وسطانیہ سے اوسط انحراف M.D = Σf|x − Median| / Σf سے دیا جاتا ہے",
+      "ps": "(ii) له میانې څخه اوسط انحراف د M.D = Σf|x − Median| / Σf په واسطه ورکول کېږي",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-b3",
+      "en": "Here Σf = 21 is odd ∴ Median = ((Σf + 1)/2)th value = (22/2)th value = 11th value. This implies that [Median] = 8",
+      "ur": "یہاں Σf = 21 طاق ہے ∴ وسطانیہ = ((Σf + 1)/2)ویں قدر = (22/2)ویں قدر = 11ویں قدر۔ اس کا مطلب ہے کہ [وسطانیہ] = 8",
+      "ps": "دلته Σf = 21 طاق دی ∴ میانه = ((Σf + 1)/2) ارزښت = (22/2) ارزښت = 11م ارزښت. دا پدې معنا ده چې [میانه] = 8",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-8",
+      "sourceGap": {
+        "note": "In the scan the word \"Median\" before \"= 8\" in \"This implies that … = 8\" is missing; it is shown here in square brackets."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s108-sol8"
+      ]
+    },
+    {
+      "type": "table",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s108-b1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s108-b2",
+        "stat11-s108-b3"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "equation",
+      "index": 4
+    }
+  ],
+  "vocabulary": {},
+  "equations": [
+    {
+      "id": "stat11-s108-a",
+      "latex": "\\text{M.D}=\\dfrac{\\sum f|x-\\bar{x}|}{\\sum f}\\quad\\text{where }\\bar{x}=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{204}{21}=9",
+      "accessible": "M.D = Σf|x − x̄|/Σf where x̄ = Σfx/Σf = 204/21 = 9",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where x̄ = Σfx/Σf = 204/21 = 9"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where x̄ = Σfx/Σf = 204/21 = 9"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "M.D = Σf|x − x̄|/Σf where x̄ = Σfx/Σf = 204/21 = 9"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-b",
+      "latex": "\\therefore\\ \\text{M.D}=\\dfrac{69.7}{21}=3.32\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ M.D = 69.7/21 = 3.32   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ M.D = 69.7/21 = 3.32   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ M.D = 69.7/21 = 3.32   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ M.D = 69.7/21 = 3.32   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-c",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\bar{x}}=\\dfrac{3.32}{9.7}=0.34\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/x̄ = 3.32/9.7 = 0.34   (Relative dispersion) [printed 9.7]",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 3.32/9.7 = 0.34   (Relative dispersion) [printed 9.7]"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 3.32/9.7 = 0.34   (Relative dispersion) [printed 9.7]"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/x̄ = 3.32/9.7 = 0.34   (Relative dispersion) [printed 9.7]"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-d",
+      "latex": "\\therefore\\ \\text{M.D}=\\dfrac{68}{21}=3.24\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "∴ M.D = 68/21 = 3.24   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "∴ M.D = 68/21 = 3.24   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "∴ M.D = 68/21 = 3.24   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "∴ M.D = 68/21 = 3.24   (Absolute dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-8"
+    },
+    {
+      "id": "stat11-s108-e",
+      "latex": "\\text{Coefficient of M.D}=\\dfrac{\\text{M.D}}{\\text{Median}}=\\dfrac{3.24}{8}=0.41\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of M.D = M.D/Median = 3.24/8 = 0.41   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 3.24/8 = 0.41   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 3.24/8 = 0.41   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of M.D = M.D/Median = 3.24/8 = 0.41   (Relative dispersion)"
+            }
+          ]
+        ]
+      },
+      "exampleId": "stat11-ex-3-8"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Example 3.8 solution table",
+      "captionUrdu": "مثال 3.8 کا حل: جدول",
+      "captionPashto": "د بېلګې 3.8 د حل جدول",
+      "headers": [
+        {
+          "en": "x",
+          "ur": "x",
+          "ps": "x"
+        },
+        {
+          "en": "f",
+          "ur": "f",
+          "ps": "f"
+        },
+        {
+          "en": "fx",
+          "ur": "fx",
+          "ps": "fx"
+        },
+        {
+          "en": "c.f",
+          "ur": "c.f",
+          "ps": "c.f"
+        },
+        {
+          "en": "|x − x̄|",
+          "ur": "|x − x̄|",
+          "ps": "|x − x̄|"
+        },
+        {
+          "en": "f|x − x̄|",
+          "ur": "f|x − x̄|",
+          "ps": "f|x − x̄|"
+        },
+        {
+          "en": "|x − Median|",
+          "ur": "|x − Median|",
+          "ps": "|x − Median|"
+        },
+        {
+          "en": "f|x − Median|",
+          "ur": "f|x − Median|",
+          "ps": "f|x − Median|"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "5.7",
+            "ur": "5.7",
+            "ps": "5.7"
+          },
+          {
+            "en": "11.4",
+            "ur": "11.4",
+            "ps": "11.4"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "3.7",
+            "ur": "3.7",
+            "ps": "3.7"
+          },
+          {
+            "en": "14.8",
+            "ur": "14.8",
+            "ps": "14.8"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "5",
+            "ur": "5",
+            "ps": "5"
+          },
+          {
+            "en": "40",
+            "ur": "40",
+            "ps": "40"
+          },
+          {
+            "en": "11",
+            "ur": "11",
+            "ps": "11"
+          },
+          {
+            "en": "1.7",
+            "ur": "1.7",
+            "ps": "1.7"
+          },
+          {
+            "en": "8.5",
+            "ur": "8.5",
+            "ps": "8.5"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          },
+          {
+            "en": "0",
+            "ur": "0",
+            "ps": "0"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ur": "10",
+            "ps": "10"
+          },
+          {
+            "en": "3",
+            "ur": "3",
+            "ps": "3"
+          },
+          {
+            "en": "30",
+            "ur": "30",
+            "ps": "30"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "0.3",
+            "ur": "0.3",
+            "ps": "0.3"
+          },
+          {
+            "en": "0.9",
+            "ur": "0.9",
+            "ps": "0.9"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "12",
+            "ur": "12",
+            "ps": "12"
+          },
+          {
+            "en": "2",
+            "ur": "2",
+            "ps": "2"
+          },
+          {
+            "en": "24",
+            "ur": "24",
+            "ps": "24"
+          },
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "2.3",
+            "ur": "2.3",
+            "ps": "2.3"
+          },
+          {
+            "en": "4.6",
+            "ur": "4.6",
+            "ps": "4.6"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          }
+        ],
+        [
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "1",
+            "ur": "1",
+            "ps": "1"
+          },
+          {
+            "en": "14",
+            "ur": "14",
+            "ps": "14"
+          },
+          {
+            "en": "17",
+            "ur": "17",
+            "ps": "17"
+          },
+          {
+            "en": "4.3",
+            "ur": "4.3",
+            "ps": "4.3"
+          },
+          {
+            "en": "4.3",
+            "ur": "4.3",
+            "ps": "4.3"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          },
+          {
+            "en": "6",
+            "ur": "6",
+            "ps": "6"
+          }
+        ],
+        [
+          {
+            "en": "16",
+            "ur": "16",
+            "ps": "16"
+          },
+          {
+            "en": "4",
+            "ur": "4",
+            "ps": "4"
+          },
+          {
+            "en": "64",
+            "ur": "64",
+            "ps": "64"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "6.3",
+            "ur": "6.3",
+            "ps": "6.3"
+          },
+          {
+            "en": "25.2",
+            "ur": "25.2",
+            "ps": "25.2"
+          },
+          {
+            "en": "8",
+            "ur": "8",
+            "ps": "8"
+          },
+          {
+            "en": "32",
+            "ur": "32",
+            "ps": "32"
+          }
+        ],
+        [
+          {
+            "en": "Total",
+            "ur": "میزان",
+            "ps": "ټولیز"
+          },
+          {
+            "en": "21",
+            "ur": "21",
+            "ps": "21"
+          },
+          {
+            "en": "204",
+            "ur": "204",
+            "ps": "204"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "69.7",
+            "ur": "69.7",
+            "ps": "69.7"
+          },
+          {
+            "en": "–",
+            "ur": "–",
+            "ps": "–"
+          },
+          {
+            "en": "68",
+            "ur": "68",
+            "ps": "68"
+          }
+        ]
+      ],
+      "exampleId": "stat11-ex-3-8"
+    }
+  ],
+  "sourceNote": "Printed page 100. In the printed coefficient line the denominator is \"9.7\" although x̄ = 9 (3.32/9 = 0.37; printed result 0.34 matches 3.32/9.7); kept as printed. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:49:04.190566+00:00",
+    "scope": "Scan 108 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

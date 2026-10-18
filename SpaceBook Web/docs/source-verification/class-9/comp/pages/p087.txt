@@ -1,0 +1,32 @@
+@pdf 86
+@printed 79
+@status lesson
+table Arithmetic operators on A and B || A اور B پر حسابی آپریٹرز || پر A او B حسابي operators
+th | Operator || آپریٹر || operator | Example (int A=8, B=3) || مثال (int A=8، B=3) || بېلګه (int A=8، B=3) | Result || نتیجہ || پایله
+tr | + | A+B | 11
+tr | - | A-B | 5
+tr | * | A*B | 24
+tr | / | A/B | 2 (Integer Division) || 2 (انٹیجر تقسیم) || 2 (integer وېش)
+tr | % | A%4 | 0
+endtable
+@issue The last row uses A%4 (= 0) rather than A%B (= 2); kept as printed.
+p Some important points about modulus operator are as follows: || ماڈیولس آپریٹر کے بارے میں چند اہم نکات یہ ہیں: || د modulus operator په اړه ځینې مهم ټکي دا دي:
+- The modulus operator in C is denoted by % (percent sign) operator. || C میں ماڈیولس آپریٹر % (فیصد کی علامت) سے ظاہر ہوتا ہے۔ || په C کې modulus operator په % (سلنې نښه) ښودل کېږي.
+- Modulus operator is also called remainder operator. || ماڈیولس آپریٹر کو باقی (remainder) آپریٹر بھی کہتے ہیں۔ || modulus operator ته remainder operator هم وايي.
+- The modulus operator works in between 2 operands. || ماڈیولس آپریٹر 2 آپرینڈز کے درمیان کام کرتا ہے۔ || modulus operator د ۲ operands ترمنځ کار کوي.
+- The modulus operator works only with integer. || ماڈیولس آپریٹر صرف انٹیجر کے ساتھ کام کرتا ہے۔ || modulus operator یوازې له integer سره کار کوي.
+- If modulus operator is used with the division of 0, the result will always be 0. For example, the expression 0 % 7 will give 0 as a result. || اگر ماڈیولس آپریٹر 0 کی تقسیم کے ساتھ استعمال ہو تو نتیجہ ہمیشہ 0 ہوگا۔ مثلاً اظہار 0 % 7 کا نتیجہ 0 ہوگا۔ || که modulus operator د 0 له وېش سره وکارول شي، پایله تل 0 وي. د بېلګې په توګه 0 % 7 پایله 0 ورکوي.
+- In expression like 5%7, 5 is not divisible by 7, its result is 5. || 5%7 جیسے اظہار میں 5 کو 7 سے تقسیم نہیں کیا جا سکتا، اس کا نتیجہ 5 ہے۔ || په 5%7 په څېر افاده کې 5 پر 7 نه وېشل کېږي، پایله یې 5 ده.
+### Working of Division Operator || تقسیم کے آپریٹر کا کام || د وېش operator کار
+p The calculation of division operator is different from other operators. The result of division operation is always an integer if divisor and dividend are integers. For example, the result of 7/2 is 3, which is called quotient as shown in figure 3.3. || تقسیم کے آپریٹر کا حساب دوسرے آپریٹرز سے مختلف ہے۔ اگر مقسوم علیہ اور مقسوم انٹیجر ہوں تو تقسیم کا نتیجہ ہمیشہ انٹیجر ہوتا ہے۔ مثلاً 7/2 کا نتیجہ 3 ہے جسے خارجِ قسمت کہتے ہیں، جیسا کہ شکل 3.3 میں دکھایا گیا ہے۔ || د وېش operator حساب له نورو operators توپیر لري. که وېشونکی او وېشل کېدونکی integers وي، د وېش پایله تل integer وي. د بېلګې په توګه د 7/2 پایله 3 ده چې خارج قسمت بلل کېږي، لکه په ۳.۳ شکل کې.
+svg Figure 3.3 Division Process || شکل 3.3 تقسیم کا عمل || ۳.۳ شکل د وېش بهیر
+<svg viewBox="0 0 300 170" width="300" role="img" aria-label="Long division of 7 by 2: quotient 3 above, divisor 2, dividend 7, minus 6, remainder 1; caption: The remainder is 1 when 7 is divided by 2" font-family="Georgia, Times New Roman, serif" text-anchor="middle">
+<text x="150" y="16" font-size="11" fill="#dc2626" font-style="italic">quotient</text><text x="150" y="38" font-size="22" font-weight="700" fill="#dc2626">3</text>
+<text x="70" y="70" font-size="12" font-style="italic">divisor</text><text x="108" y="72" font-size="24" font-weight="700">2</text>
+<path d="M124 44 Q132 60 124 80 M124 44 H200" fill="none" stroke="#111827" stroke-width="2"/>
+<text x="150" y="72" font-size="24" font-weight="700">7</text><text x="190" y="72" font-size="12" font-style="italic">dividend</text>
+<text x="150" y="104" font-size="24" font-weight="700">− 6</text><path d="M120 114 H190" stroke="#111827" stroke-width="2"/>
+<text x="150" y="140" font-size="24" font-weight="700">1</text><text x="194" y="140" font-size="12" font-style="italic">remainder</text>
+<text x="150" y="164" font-size="11" font-style="italic">"The remainder is 1 when 7 is divided by 2"</text>
+</svg>
+endsvg

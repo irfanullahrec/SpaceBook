@@ -1,0 +1,253 @@
+{
+  "chapter": "stat11-dispersion-skewness-kurtosis",
+  "id": "stat11-s101-range-1",
+  "title": "Absolute and relative dispersion (end) · 3.1.5 Properties of a good measure · 3.2 Range · Example 3.1",
+  "headingUrdu": "مطلق اور اضافی انتشار (اختتام) · 3.1.5 اچھے پیمانے کی خصوصیات · 3.2 حد (رینج) · مثال 3.1",
+  "headingPashto": "مطلق او نسبي خپراوی (پای) · 3.1.5 د ښې اندازې ځانګړتیاوې · 3.2 رېنج · بېلګه 3.1",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 101,
+    "printedPage": "93"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s101-c1",
+      "en": "of measurement e.g. to compare marks of first year statistics class of a college with the marks of first year statistics class of another college, then absolute dispersion is used. In absolute dispersion case, data and measure of dispersion have same unit of measurement.",
+      "ur": "اکائی، مثلاً ایک کالج کی پہلے سال کی احصاء جماعت کے نمبروں کا دوسرے کالج کی پہلے سال کی احصاء جماعت کے نمبروں سے موازنہ کرنا ہو، تو مطلق انتشار استعمال ہوتا ہے۔ مطلق انتشار کی صورت میں اعداد و شمار اور انتشار کے پیمانے کی پیمائش کی اکائی ایک ہی ہوتی ہے۔",
+      "ps": "د اندازې، لکه د یو کالج د لومړي کال د احصایې ټولګي د نمرو د بل کالج د لومړي کال د احصایې ټولګي له نمرو سره پرتله کول، نو مطلق خپراوی کارول کېږي. د مطلق خپراوي په حالت کې معلومات او د خپراوي اندازه د اندازې یو شان واحد لري.",
+      "sourceGap": {
+        "note": "Completes the sentence from the previous page (\"When it is needed to compare two or more series of data having same unit\")."
+      }
+    },
+    {
+      "id": "stat11-s101-c2",
+      "en": "When it is needed to compare two or more series of data having different units of measurement e.g. to compare weights of students of first year statistics class in a college with the heights of students of first year statistics class of another college, then relative dispersion is used. In relative dispersion case data and measure of dispersion have different units of measurement. Relative dispersion is always expressed in terms of coefficient of dispersion, ratio, and percentage.",
+      "ur": "جب مختلف اکائیوں والے اعداد و شمار کے دو یا زیادہ سلسلوں کا موازنہ کرنا ہو، مثلاً ایک کالج کی پہلے سال کی احصاء جماعت کے طلبہ کے وزن کا دوسرے کالج کی پہلے سال کی احصاء جماعت کے طلبہ کے قد سے موازنہ کرنا ہو، تو اضافی انتشار استعمال ہوتا ہے۔ اضافی انتشار کی صورت میں اعداد و شمار اور انتشار کے پیمانے کی پیمائش کی اکائیاں مختلف ہوتی ہیں۔ اضافی انتشار ہمیشہ انتشار کے عددی سر، تناسب اور فیصد کی صورت میں ظاہر کیا جاتا ہے۔",
+      "ps": "کله چې د اندازې د بېلابېلو واحدونو لرونکو معلوماتو د دوو یا ډېرو لړیو پرتله کول اړین وي لکه د یو کالج د لومړي کال د احصایې ټولګي د زده کوونکو د وزن د بل کالج د لومړي کال د احصایې ټولګي د زده کوونکو له قد سره پرتله کول، نو نسبي خپراوی کارول کېږي. د نسبي خپراوي په حالت کې معلومات او د خپراوي اندازه د اندازې بېلابېل واحدونه لري. نسبي خپراوی تل د خپراوي ضریب، نسبت او سلنې په اصطلاح ښودل کېږي."
+    },
+    {
+      "id": "stat11-s101-h315",
+      "en": "3.1.5 Properties of a good measure of dispersion",
+      "ur": "3.1.5 انتشار کے اچھے پیمانے کی خصوصیات",
+      "ps": "3.1.5 د خپراوي د ښې اندازې ځانګړتیاوې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s101-t315",
+      "en": "A good measure of dispersion is one which is;",
+      "ur": "انتشار کا اچھا پیمانہ وہ ہے جو؛",
+      "ps": "د خپراوي ښه اندازه هغه ده چې؛"
+    },
+    {
+      "id": "stat11-s101-p1",
+      "en": "(i) simple to understand and easy to calculate",
+      "ur": "(i) سمجھنے میں آسان اور حساب کرنے میں سادہ ہو",
+      "ps": "(i) د پوهېدو لپاره ساده او د محاسبې لپاره اسانه وي",
+      "listGroup": "dispersion-props"
+    },
+    {
+      "id": "stat11-s101-p2",
+      "en": "(ii) based on all the observations",
+      "ur": "(ii) تمام مشاہدات پر مبنی ہو",
+      "ps": "(ii) پر ټولو کتنو والړ وي",
+      "listGroup": "dispersion-props"
+    },
+    {
+      "id": "stat11-s101-p3",
+      "en": "(iii) less affected by extreme values",
+      "ur": "(iii) انتہائی قدروں سے کم متاثر ہو",
+      "ps": "(iii) د سختو ارزښتونو لخوا لږ اغېزمن وي",
+      "listGroup": "dispersion-props"
+    },
+    {
+      "id": "stat11-s101-p4",
+      "en": "(iv) follows general rules of mathematics",
+      "ur": "(iv) ریاضی کے عمومی قواعد کی پیروی کرے",
+      "ps": "(iv) د ریاضي عمومي قواعد تعقیب کړي",
+      "listGroup": "dispersion-props"
+    },
+    {
+      "id": "stat11-s101-p5",
+      "en": "(v) capable of further statistical treatment.",
+      "ur": "(v) مزید شماریاتی عمل کے قابل ہو۔",
+      "ps": "(v) د نورې احصایوي پروسې وړ وي.",
+      "listGroup": "dispersion-props"
+    },
+    {
+      "id": "stat11-s101-h32",
+      "en": "3.2 Range",
+      "ur": "3.2 حد (رینج)",
+      "ps": "3.2 رېنج",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s101-t32",
+      "en": "The difference between largest and smallest observations in a data set is called range.",
+      "ur": "اعداد و شمار کے مجموعے میں سب سے بڑے اور سب سے چھوٹے مشاہدات کا فرق حد (رینج) کہلاتا ہے۔",
+      "ps": "په معلوماتو ټولګه کې د تر ټولو لوی او تر ټولو کوچني کتنو توپیر رېنج بلل کېږي."
+    },
+    {
+      "id": "stat11-s101-t32b",
+      "en": "It is the simplest measure of dispersion. It is denoted by R. Mathematically;",
+      "ur": "یہ انتشار کا سب سے سادہ پیمانہ ہے۔ اسے R سے ظاہر کیا جاتا ہے۔ ریاضیاتی طور پر؛",
+      "ps": "دا د خپراوي تر ټولو ساده اندازه ده. دا په R ښودل کېږي. ریاضیاتي ډول؛"
+    },
+    {
+      "id": "stat11-s101-h321",
+      "en": "3.2.1 Computation of range",
+      "ur": "3.2.1 حد کا حساب",
+      "ps": "3.2.1 د رېنج محاسبه",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s101-i1",
+      "en": "(i) Range in case of individual series or ungrouped data",
+      "ur": "(i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں حد",
+      "ps": "(i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې رېنج"
+    },
+    {
+      "id": "stat11-s101-ex1",
+      "en": "Example: 3.1",
+      "ur": "مثال: 3.1",
+      "ps": "بېلګه: 3.1",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-1"
+    },
+    {
+      "id": "stat11-s101-q1",
+      "en": "The marks of 12 students in a class test are 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 and 53. Find range and coefficient of range.",
+      "ur": "ایک جماعتی ٹیسٹ میں 12 طلبہ کے نمبر 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 اور 53 ہیں۔ حد اور حد کا عددی سر معلوم کریں۔",
+      "ps": "په یوه ټولګیزه ازموینه کې د 12 زده کوونکو نمرې 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 او 53 دي. رېنج او د رېنج ضریب ومومئ.",
+      "role": "question",
+      "exampleId": "stat11-ex-3-1"
+    },
+    {
+      "id": "stat11-s101-sol1",
+      "en": "Solution:",
+      "ur": "حل:",
+      "ps": "حل:",
+      "kind": "heading",
+      "exampleId": "stat11-ex-3-1"
+    },
+    {
+      "id": "stat11-s101-h1",
+      "en": "Here xL = 85",
+      "ur": "یہاں xL = 85",
+      "ps": "دلته xL = 85",
+      "role": "solution",
+      "exampleId": "stat11-ex-3-1",
+      "sourceGap": {
+        "note": "The working continues on the next page (xS = 15 …)."
+      }
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s101-c1",
+        "stat11-s101-c2",
+        "stat11-s101-h315",
+        "stat11-s101-t315",
+        "stat11-s101-p1",
+        "stat11-s101-p2",
+        "stat11-s101-p3",
+        "stat11-s101-p4",
+        "stat11-s101-p5",
+        "stat11-s101-h32",
+        "stat11-s101-t32",
+        "stat11-s101-t32b"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s101-h321",
+        "stat11-s101-i1",
+        "stat11-s101-ex1",
+        "stat11-s101-q1",
+        "stat11-s101-sol1",
+        "stat11-s101-h1"
+      ]
+    }
+  ],
+  "vocabulary": {
+    "coefficient of range": {
+      "ur": "حد کا عددی سر",
+      "ps": "د رېنج ضریب"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s101-r",
+      "latex": "R=x_L-x_S\\qquad\\text{(Absolute dispersion)}",
+      "accessible": "R = xL − xS   (Absolute dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "R = xL − xS   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "R = xL − xS   (Absolute dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "R = xL − xS   (Absolute dispersion)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s101-cr",
+      "latex": "\\text{Coefficient of range}=\\dfrac{x_L-x_S}{x_L+x_S}\\qquad\\text{(Relative dispersion)}",
+      "accessible": "Coefficient of range = (xL − xS)/(xL + xS)   (Relative dispersion)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Coefficient of range = (xL − xS)/(xL + xS)   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Coefficient of range = (xL − xS)/(xL + xS)   (Relative dispersion)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Coefficient of range = (xL − xS)/(xL + xS)   (Relative dispersion)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 93. The first lines complete the sentence from the previous page. A handwritten Urdu word after \"percentage.\" and a black corner mark at the top-right are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T12:45:14.619017+00:00",
+    "scope": "Scan 101 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

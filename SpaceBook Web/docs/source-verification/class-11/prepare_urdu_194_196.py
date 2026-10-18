@@ -1,0 +1,51 @@
+from urgl import *
+# scan 194 = printed 187
+s=page(194,'farhang','187','Glossary (Farhang): continuation and “Makatib-e-Iqbal”','فرہنگ: (جاری) اور «مکاتیبِ اقبال»','فرهنګ: (دوام) او «د اقبال مکتوبونه»','gl10')
+F=Flow(s)
+F.tb(0)
+H(s,'مکاتیبِ اقبالؔ','Makatib-e-Iqbal (Letters of Iqbal)','د اقبال مکتوبونه')
+F.tb(1)
+F.done()
+a=[('ورنگ','دیر، توقف، تاخیر','delay, pause, tardiness','ځنډ، توقف'),('منہائی','کم کرنا، گھٹانا','deduction, reducing','کمول'),('قلم رو','حکومت، سلطنت، ملک','realm, dominion, country','حکومت، سلطنت'),('مجتہد العصر','زمانے میں مانا ہوا اجتہاد کرنے والا','the foremost mujtahid of the age','د زمانې مشهور مجتهد'),('قطب الملک','ملک میں مانا ہوا نیک آدمی','a country’s renowned pious man','په هېواد کې مشهور نېک سړی'),('زمزمہ پرداز','گیت گانے والا','singer, one who sings songs','سندرغاړی'),('مہاجن','سود کا کاروبار کرنے والے، مراد ہندو','moneylenders, meaning Hindus','سود کاروبار کوونکي، مراد هندوان'),('حکیم الملک','ملک میں مانا ہوا حکیم یا دانا','a renowned physician or sage of the country','په هېواد کې مشهور حکیم یا دانا'),('یوسفِ ہند','ہندوستان میں سب سے خوب صورت آدمی','the most handsome man in India','په هند کې تر ټولو ښکلی سړی')]
+b=[('مخدوم','جس کی خدمت کی جائے','one who is served','هغه څوک چې خدمت یې کېږي'),('علالت','بیماری، ناسازی','illness, indisposition','ناروغي'),('دینی عصبیت','دین کی طرف داری','religious partisanship','د دین پاسداري'),('رزم گاہ','میدانِ جنگ، عمل کی جگہ','battlefield, place of action','د جګړې ډګر'),('طباعت','چھپائی، پرنٹنگ','printing','چاپ'),('تردّدات','پریشانیاں','anxieties','اندېښنې'),('معنی آفرینی','معنی نکالنا، مطلب پیدا کرنا','creating meaning','معنا جوړول'),('دکھڑا','دکھ کی باتیں','tale of woe','د غم خبرې'),('مناصب','عہدہ، مرتبہ، منصب کی جمع','posts, ranks (plural of “mansab”)','عهدې، مرتبې'),('خانوادے','خاندان','families','کورنۍ'),('احیاء','حیات، زندگی، دنیا','life, living, the world','ژوند، دنیا'),('مفقود','ختم، غائب','lost, missing','ورک، غائب'),
+('نوازش نامہ','محبت نامہ، خط','letter of kindness, letter','مینه لیک، لیک'),('لسانی عصبیت','زبان کی طرف داری','linguistic partisanship','د ژبې پاسداري'),('مُستقر','ٹھکانا، مرکز، رہنے کی جگہ','abode, centre, dwelling place','میشت ځای'),('پبلشنگ سنٹر','اشاعت کا مرکز','publishing centre','د خپرونې مرکز'),('صحرائیوں','صحرا میں رہنے والے','desert dwellers','د صحرا اوسېدونکي'),('سبحان اللہ','اللہ کی ذات پاک ہے، تعریفی جملہ','Allah is pure; an expression of praise','الله پاک دی، د ستاینې جمله'),('دم زدن','سانس لینے کی','of drawing breath','ساه اخیستل'),('متنفس','سانس لینے والا، مراد انسان','one who breathes, meaning a human being','ساه اخیستونکی، مراد انسان'),('متاع','اثاثہ، جمع پونجی، مال','asset, savings, goods','شتمني، پانګه، مال'),('مجدّد','تجدید کرنے والا، پرانے کو نیا کرنے والا','a renewer, one who makes the old new','نوي کوونکی'),('احرار','حُر کی جمع، آزاد لوگ','plural of “hurr”, free people','آزاد خلک'),('اضطراری','بے چینی','restlessness, involuntary','بې قراري')]
+s['tables']=[gtable('continuation','(جاری)','(دوام)',a,'5 + 4 rows. The first word is read as “ورنگ” from poor print.'),gtable('“Makatib-e-Iqbal”','«مکاتیبِ اقبالؔ»','«د اقبال مکتوبونه»',b,'12 + 12 rows.')]
+s['sourceNote']='Printed page 187 (scan 194): the end of an earlier glossary section (5 + 4 rows; the section heading is on the previous page) and “مکاتیبِ اقبالؔ” (12 + 12 rows).'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 195 = printed 188
+s=page(195,'farhang','188','Glossary (Farhang): “Hamd”, “Naat”, “Shehr-ashob”','فرہنگ: «حمد»، «نعت»، «شہر آشوب»','فرهنګ: «حمد»، «نعت»، «شهر اشوب»','gl11')
+F=Flow(s)
+H(s,'حمد','Hamd','حمد')
+F.tb(0)
+H(s,'نعت','Naat','نعت')
+F.tb(1)
+H(s,'شہر آشوب','Shehr-ashob','شهر اشوب')
+F.tb(2)
+F.done()
+a=[('معراج','عظمت، بلندی','greatness, height; the Ascension','عظمت، لوړوالی'),('صانع','کاری گر، خالق','craftsman, creator','جوړوونکی، خالق'),('نکہت','خوش بو','fragrance','خوشبوی'),('گل بانگ','بلبل کی آواز، چہکنا، شادی کا شور','nightingale’s song, warbling, wedding noise','د بلبل غږ، چهچهې'),('وجدان','دریافت، ذکاوت','intuition, perception, wit','ادراک، ذکاوت'),('خلّاق','تخلیق کرنے والا','creator','پیدا کوونکی'),('ترنم','غنا، الاپ، نغمگی','song, melody, chanting','سندره، آهنګ'),('آیات','آیت کی جمع، نشانیاں','verses; signs (plural of “ayat”)','آیتونه، نښې')]
+b=[('مفصّل','تفصیل','detailed','تفصیل'),('ابد','آخر، دنیا کے خاتمے کا وقت','eternity; the end of the world','اخر، د دنیا د پای وخت'),('ازل','آغاز، جب دنیا وجود میں آئی','beginning; when the world came into being','پیل، چې دنیا رامینځته شوه'),('راہِ عدم','دوسری دنیا کا راستہ','the road to non-existence, the way to the next world','د بلې نړۍ لار'),('مدّاح','مدح/تعریف کرنے والا','one who praises','ستاینه کوونکی'),('مجمل','مختصر، خلاصہ','brief, summary','لنډ، لنډیز'),('طرۂ دستار','پگڑی کا اوپری اور بلند حصہ','the upper, raised end of the turban','د پګړۍ پورتنۍ برخه'),('رُخِ انور','روشن چہرہ','radiant face','روښانه مخ'),('مشعل','بڑی شمع، بڑا چراغ دان','torch, a big lamp','لوی شمع'),('مستانہ قصیدہ','سرشار کرنے والا قصیدہ','an intoxicating qasida','سرشاره کوونکی قصیده')]
+c3=[('لیل و نہار','رات اور دن','night and day','شپه او ورځ'),('خلق','لوگ، خلق','people, creation','خلک'),('بنیے','آٹا دال بیچنے والے','grocers, sellers of flour and lentils','د اوړو او دالو پلورونکي'),('ساہوکار','مہاجن، روپے کا کاروبار کرنے والے','moneylender, financier','سود خور، د پیسو سوداګر'),('موج دار','موجوں والا','wavy, full of waves','څپو والا'),('صراف/جوہری','سونے کا کاروبار کرنے والے','money-changer/jeweller, dealer in gold','د سرو زرو سوداګر'),('سیٹھ','امیر، دولت مند','rich man, wealthy','شتمن'),('بھجائیو','بھیجو','send (it)','ولېږئ')]
+s['tables']=[gtable('“Hamd”','«حمد»','«حمد»',a,'4 + 4 rows. The meaning of “وجدان” and “ترنم” are read from faint print.'),gtable('“Naat”','«نعت»','«نعت»',b,'5 + 5 rows.'),gtable('“Shehr-ashob”','«شہر آشوب»','«شهر اشوب»',c3,'4 + 4 rows.')]
+s['sourceNote']='Printed page 188 (scan 195): glossary sections “حمد” (4 + 4), “نعت” (5 + 5) and “شہر آشوب” (4 + 4). Print is faint in places.'+NOTE
+s['vocabulary']={}
+save(s)
+# scan 196 = printed 189
+s=page(196,'farhang','189','Glossary (Farhang): end of Shehr-ashob, “Shehzade ka chhat par sona …”, “Durr-e-Murad”, “Takht-e-faras par Ali Akbar ka khitab”','فرہنگ: «شہر آشوب» (تتمہ)، «شہزادے کا چھت پر سونا اور پری کے ہاتھوں اغوا ہونا»، «دُرِّ مراد»، «تختِ فرس پر علی اکبر کا خطاب»','فرهنګ: «شهر اشوب» (پاتې)، «د شهزاده په چت ويده کېدل او د پري په لاس تښتول کېدل»، «در مراد»، «په تخت فرس باندې د علي اکبر خطاب»','gl12')
+F=Flow(s)
+F.tb(0)
+H(s,'شہزادے کا چھت پر سونا اور پری کے ہاتھوں اغوا ہونا','The prince sleeping on the roof and being abducted by a fairy','د شهزاده په چت ويده کېدل او د پري په لاس تښتول کېدل')
+F.tb(1)
+H(s,'دُرِّ مراد','Durr-e-Murad','در مراد')
+F.tb(2)
+H(s,'تختِ فرس پر علی اکبرؓ کا خطاب','Takht-e-faras par Ali Akbar ka khitab','په تخت فرس باندې د علي اکبر خطاب')
+F.tb(3)
+F.done()
+a=[('شرم سار','شرمندہ','ashamed','شرمنده'),('نابودگی','نہ ہونا','non-existence','نشتوالی'),('بہبودگی','فائدہ، نفع','benefit, profit','ګټه'),('کوڑی','سب سے چھوٹا سکہ، پیسا','a cowrie; the smallest coin, a paisa','تر ټولو واړه سکه'),('مہر','محبت','love, affection','مینه'),('نجیب','شریف، بزرگ','noble, elder','شریف، بزرګ'),('فرسودگی','پرانا پن، یہاں مراد پریشانی','oldness; here distress','زړوالی، دلته مراد پریشاني'),('آسودگی','آرام، چین، امن و امان','ease, comfort, peace and security','آرام، سوله'),('رہ گزر','راستہ','path, thoroughfare','لار')]
+b=[('مہتاب','چاند','moon','سپوږمۍ'),('قضارا','اتّفاقاً، اچانک','by chance, suddenly','ناڅاپه'),('رُخسار','گال','cheek','مخ'),('خلل','خرابی','disturbance, defect','خرابي'),('سیمیں','چاندی جیسا','silvery','د سپینو زرو غوندې'),('منوّر','روشن','illuminated','روښانه')]
+c3=[('شاہ دیں','دین کا بادشاہ، مراد حضرت امام حسینؓ','king of religion, meaning Hazrat Imam Husain','د دین پاچا، مراد امام حسین'),('خُلدِ بریں','جنت','the highest paradise','جنت'),('اوجِ زمیں','زمین کی اونچائی','the height of the earth','د ځمکې لوړوالی'),('تیرِ دیں','دین کا سورج','the sun of religion','د دین لمر'),('زاد','راستے کا خرچ','provisions for the way','د لارې خرڅ'),('طبقے','طبق کی جمع، زمین کا چھوٹا ٹکڑا','plural of “tabaq”; a small piece of land','د طبق جمع، د ځمکې وړه ټوټه'),('آبِ بقا','آبِ حیات','water of life','د ژوند اوبه'),('خوش نہاد','خوش اخلاق','good-natured','ښه اخلاق'),('توشہ','سفر کے دوران مسافروں کا کھانا','food for travellers during a journey','د سفر په وخت کې د مسافرو خواړه'),('فرس','گھوڑا','horse','آس'),('کردگار','اللہ تعالیٰ','the Creator, Allah Almighty','الله تعالی'),('راہوار','تیز رفتار گھوڑا','a swift horse','چټک آس'),('دُرِّ مراد','مطلب کا موتی','the pearl of desire','د مطلب موتی'),('مشہدِ امام','حضرت امام حسینؓ کی شہادت کا مقام','the place of martyrdom of Imam Husain','د امام حسین د شهادت ځای'),('خیام','خیمے کی جمع','tents (plural of “khaima”)','خېمې'),('کرم کار ساز','اللہ تعالیٰ کا کرم','the favour of Allah, the Disposer of affairs','د الله تعالی کرم'),('ناخدا','ملاح، کشتی بان','sailor, boatman','ملاح'),('شاہِ ارجمند','قدر و قیمت والا بادشاہ','a king of worth and value','باارزښته پاچا')]
+d=[('مہرِ مبیں','روشن سورج','the bright sun','روښانه لمر'),('لاہوت','مقامِ فنا فی اللہ','the realm of the Divine; station of annihilation in God','د الله په ذات کې فنا مقام'),('اسکندرِ دوراں','زمانے کا بادشاہ','Alexander of the age, king of the age','د زمانې پاچا'),('کاؤدُں','گھوڑے کے قدموں سے بننے والا دائرہ','the circle made by the horse’s hooves','د آس د پښو دایره'),('سُرعت','تیزی','speed','چټکتیا'),('ناسوت','عالمِ اجسام، دنیا، ظاہر','the world of bodies, the world, the apparent','د اجسامو نړۍ، دنیا'),('یاقوت','سرخ رنگ کا ایک قیمتی پتھر','ruby, a precious red stone','سور رنګ قیمتي ډبره'),('آب','چمک، روشن','lustre, bright','ځلا، روښانه')]
+s['tables']=[gtable('end of Shehr-ashob','«شہر آشوب» (تتمہ)','«شهر اشوب» (پاتې)',a,'5 + 4 rows.'),gtable('“Shehzade ka chhat par sona …”','«شہزادے کا چھت پر سونا اور پری کے ہاتھوں اغوا ہونا»','«د شهزاده په چت ويده کېدل…»',b,'3 + 3 rows.'),gtable('“Durr-e-Murad”','«دُرِّ مراد»','«در مراد»',c3,'9 + 9 rows.'),gtable('“Takht-e-faras par Ali Akbar ka khitab”','«تختِ فرس پر علی اکبرؓ کا خطاب»','«په تخت فرس باندې د علي اکبر خطاب»',d,'4 + 4 rows. The meaning of “لاہوت” is read from poor print.')]
+s['sourceNote']='Printed page 189 (scan 196): end of the “شہر آشوب” glossary (5 + 4), “شہزادے کا چھت پر سونا…” (3 + 3), “دُرِّ مراد” (9 + 9) and “تختِ فرس پر علی اکبرؓ کا خطاب” (4 + 4).'+NOTE
+s['vocabulary']={}
+save(s)

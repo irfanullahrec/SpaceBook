@@ -1,0 +1,46 @@
+@printed 66
+@status lesson
+p سائنٹکس: || Syntax: || ترکیب:
+m variable op= expression;
+p فرض کریں ہمارے پاس A اور B کے دو ویری ایبلز ہیں تو A = 8 اور B = 3 ہے۔ A اور B پر کمپاؤنڈ اسائنمنٹ آپریٹرز استعمال کیے جا سکتے ہیں۔ || Suppose we have two variables A and B, with A = 8 and B = 3. Compound assignment operators can be used on A and B. || فرض کړئ دوه متغیرونه A او B لرو، A = 8 او B = 3. پر A او B مرکب ګمارنې عملګرونه کارېدای شي.
+table کمپاؤنڈ اسائنمنٹ آپریٹرز (int A=8, B=3) || Compound assignment operators (int A=8, B=3) || مرکب ګمارنې عملګرونه (int A=8, B=3)
+th | آپریٹر || Operator || عملګر | مثال (int A=8, B=3) || Example (int A=8, B=3) || بېلګه (int A=8, B=3) | نتیجہ || Result || پایله
+tr | += || += || += | A+=B or A=A+B || A+=B or A=A+B || A+=B or A=A+B | 11 || 11 || 11
+tr | -= || -= || -= | A-=3 or A=A-3 || A-=3 or A=A-3 || A-=3 or A=A-3 | 5 || 5 || 5
+tr | *= || *= || *= | A*=7 or A=A*7 || A*=7 or A=A*7 || A*=7 or A=A*7 | 56 || 56 || 56
+tr | /= || /= || /= | A/=B or A=A/B || A/=B or A=A/B || A/=B or A=A/B | 2 (Integer Division) || 2 (Integer Division) || 2 (Integer Division)
+tr | %= || %= || %= | A%=5 or A=A%5 || A%=5 or A=A%5 || A%=5 or A=A%5 | 3 || 3 || 3
+tr | a=b || a=b || a=b | Value of b will be assigned to a || Value of b will be assigned to a || د b ارزښت a ته ورکول کېږي | — || — || —
+endtable
+@issue Each result assumes A starts again at 8 (they are separate examples, not a sequence). The last row "a=b" is the simple assignment operator, not a compound one.
+### پروگرام 3.15 ایسا پروگرام جو انٹیجر پر تمام کمپاؤنڈ آپریٹرز کو استعمال کرتا ہے۔ || Program 3.15 A program that uses all the compound operators on an integer || پروګرام ۳.۱۵ داسې پروګرام چې پر بشپړ عدد ټول مرکب عملګرونه کاروي
+@issue The program number in its label is printed faintly ("11"); by sequence it is Program 3.15.
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a;
+m     a=10;
+m     printf("value of a :%d\n",a);
+m     a+=5;
+m     printf("value of a after a+=5:%d\n",a);
+m     a-=5;
+m     printf("value of a after a-=5:%d\n",a);
+m     a*=2;
+m     printf("value of a after a*=2:%d\n",a);
+m     a/=2;
+m     printf("value of a after a/=2:%d\n",a);
+m     a%=2;
+m     printf("value of a after a%=2:%d",a);
+m }
+box info | آؤٹ پُٹ || Output || Output
+m Value of a. 10
+m Value of a after a+=5: 15
+m Value of a after a- =5:10
+m Value of a after a*=2: 20
+m Value of a after a/=2: 10
+m Value of a after a%=2: 0
+endbox
+@issue The output box does not match the code exactly: the code prints lower-case "value of a :10" with no space after the colon, not "Value of a. 10". Also, in the last printf "%=" inside the format string is read by printf as a conversion; to print a literal % it must be written "%%=". The numeric results 15, 10, 20, 10, 0 are correct.
+@sec 3-2-4 | 3.2.4 اضافہ / انکریمنٹ آپریٹر ++ || 3.2.4 Increment operator ++ || ۳.۲.۴ د زیاتوالي عملګر ++
+### 3.2.4 اضافہ / انکریمنٹ آپریٹر ++ (Increment Operator) || 3.2.4 The increment operator ++ || ۳.۲.۴ د زیاتوالي عملګر ++ (Increment Operator)
+p انکریمنٹ آپریٹر دوہری جمع کی علامت ++ سے ظاہر کیا جاتا ہے۔ اس کا استعمال عددی ویری ایبل کی قیمت میں 1 کا اضافہ کرنے کے لئے کیا جاتا ہے۔ انکریمنٹ آپریٹر صرف ویری ایبل کے ساتھ استعمال کیا جا سکتا ہے۔ اسے کانسٹنٹ یا ایکسپریشن کے ساتھ استعمال … || The increment operator is shown by the double plus sign ++. It is used to add 1 to the value of a numeric variable. The increment operator can be used only with a variable; it cannot be used with a constant or an expression … || د زیاتوالي عملګر د دوه ګونې جمع نښې ++ په واسطه ښودل کېږي. د عددي متغیر په ارزښت کې د 1 د زیاتولو لپاره کارېږي. د زیاتوالي عملګر یوازې له متغیر سره کارېدای شي؛ له ثابت یا عبارت سره …

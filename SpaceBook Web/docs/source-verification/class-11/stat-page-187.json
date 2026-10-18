@@ -1,0 +1,305 @@
+{
+  "chapter": "stat11-regression-correlation",
+  "id": "stat11-s187-reg-ls-1",
+  "title": "Simple linear regression model (end) · 5.1.4 Least squares principle · 5.1.5 Regression lines or equations",
+  "headingUrdu": "سادہ خطی ریگریشن ماڈل (اختتام) · 5.1.4 کم از کم مربعات کا اصول · 5.1.5 ریگریشن لکیریں یا مساواتیں",
+  "headingPashto": "ساده خطي ریګرېشن ماډل (پای) · 5.1.4 د لږ تر لږه مربعاتو اصل · 5.1.5 د ریګرېشن کرښې یا معادلې",
+  "sourceLanguage": "en",
+  "source": {
+    "pdfPage": 187,
+    "printedPage": "177"
+  },
+  "auditStatus": "corrected; unresolved source",
+  "paras": [
+    {
+      "id": "stat11-s187-a1",
+      "en": "a, b: are the estimators for parameters of the population model respectively.",
+      "ur": "a, b: بالترتیب آبادی کے ماڈل کے پیرامیٹرز کے تخمینہ کار ہیں۔",
+      "ps": "a, b: په ترتیب سره د ټولنې د ماډل د پارامېټرونو اټکل‌کوونکي دي."
+    },
+    {
+      "id": "stat11-s187-a2",
+      "en": "e: is also called residual and e = y − ŷ.",
+      "ur": "e: کو باقی بھی کہا جاتا ہے اور e = y − ŷ۔",
+      "ps": "e: ته پاتې کېدونکی هم ویل کېږي او e = y − ŷ."
+    },
+    {
+      "id": "stat11-s187-a3",
+      "en": "Note that model is called (i) simple because there is only one independent variable x in the model and (ii) linear because X, Y, α, β: all have power equal to one.",
+      "ur": "نوٹ کریں کہ ماڈل کو (i) سادہ کہا جاتا ہے کیونکہ ماڈل میں صرف ایک آزاد متغیر x ہے اور (ii) خطی کہا جاتا ہے کیونکہ X, Y, α, β: سب کی طاقت ایک کے برابر ہے۔",
+      "ps": "پام وکړئ چې ماډل ته (i) ساده ویل کېږي ځکه چې په ماډل کې یوازې یو خپلواک متغیر x دی او (ii) خطي ځکه چې X, Y, α, β: ټولو ځواک یو دی."
+    },
+    {
+      "id": "stat11-s187-h514",
+      "en": "5.1.4 Least squares principle",
+      "ur": "5.1.4 کم از کم مربعات کا اصول",
+      "ps": "5.1.4 د لږ تر لږه مربعاتو اصل",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s187-t514",
+      "en": "To make prediction about the values of a dependent variable through simple linear regression model, it is necessary to first find the values of the estimators a and b. Different methods are used for this purpose but the best one is the method of least squares which guarantee that “of all fitted models, the best is one for which the sum of squares of deviations between the observed values and the corresponding estimated values is least”, that is Σ(y − ŷ)² is a minimum. It is commonly known as least squares principle.",
+      "ur": "سادہ خطی ریگریشن ماڈل کے ذریعے تابع متغیر کی قدروں کے بارے میں پیش گوئی کرنے کے لیے پہلے تخمینہ کاروں a اور b کی قدریں معلوم کرنا ضروری ہے۔ اس مقصد کے لیے مختلف طریقے استعمال ہوتے ہیں لیکن بہترین کم از کم مربعات کا طریقہ ہے جو ضمانت دیتا ہے کہ “تمام فٹ کیے گئے ماڈلز میں بہترین وہ ہے جس کے لیے مشاہدہ شدہ قدروں اور متعلقہ تخمینی قدروں کے درمیان انحرافات کے مربعوں کا مجموعہ کم سے کم ہو”، یعنی Σ(y − ŷ)² کم سے کم ہو۔ اسے عام طور پر کم از کم مربعات کا اصول کہا جاتا ہے۔",
+      "ps": "د ساده خطي ریګرېشن ماډل په واسطه د تابع متغیر د ارزښتونو په اړه د وړاندوینې لپاره لومړی د اټکل‌کوونکو a او b ارزښتونه موندل اړین دي. د دې موخې لپاره بېلابېلې طریقې کارول کېږي خو غوره یې د لږ تر لږه مربعاتو طریقه ده چې تضمین کوي چې “د ټولو برابر شویو ماډلونو څخه غوره هغه دی چې د کتل شویو ارزښتونو او اړوندو اټکل شویو ارزښتونو ترمنځ د انحرافاتو د مربعاتو مجموعه لږ تر لږه وي”، یعنې Σ(y − ŷ)² لږ تر لږه وي. دې ته عموماً د لږ تر لږه مربعاتو اصل ویل کېږي."
+    },
+    {
+      "id": "stat11-s187-h515",
+      "en": "5.1.5 Regression lines or equations",
+      "ur": "5.1.5 ریگریشن لکیریں یا مساواتیں",
+      "ps": "5.1.5 د ریګرېشن کرښې یا معادلې",
+      "kind": "heading"
+    },
+    {
+      "id": "stat11-s187-r1",
+      "en": "(i) The estimated least squares regression line of y depending on x is ŷ = a_y.x + b_y.x x, where ŷ (read as y hat) is the estimated or predicted value of y for a given value of x and",
+      "ur": "(i) x پر منحصر y کی تخمینی کم از کم مربعات ریگریشن لکیر ہے ŷ = a_y.x + b_y.x x، جہاں ŷ (y ہیٹ پڑھا جاتا ہے) x کی دی گئی قدر کے لیے y کی تخمینی یا پیش گوئی شدہ قدر ہے اور",
+      "ps": "(i) د x پورې تړلي د y اټکل شوې د لږ تر لږه مربعاتو ریګرېشن کرښه ده ŷ = a_y.x + b_y.x x، چېرته چې ŷ (د y هټ په توګه لوستل کېږي) د x د ورکړل شوي ارزښت لپاره د y اټکل شوی یا وړاندوینه شوی ارزښت دی او"
+    },
+    {
+      "id": "stat11-s187-r2",
+      "en": "(ii) The estimated least squares regression line of x depending on y is x̂ = a_x.y + b_x.y y, where,",
+      "ur": "(ii) y پر منحصر x کی تخمینی کم از کم مربعات ریگریشن لکیر ہے x̂ = a_x.y + b_x.y y، جہاں،",
+      "ps": "(ii) د y پورې تړلي د x اټکل شوې د لږ تر لږه مربعاتو ریګرېشن کرښه ده x̂ = a_x.y + b_x.y y، چېرته چې،"
+    }
+  ],
+  "flow": [
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s187-a1",
+        "stat11-s187-a2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 0
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s187-a3",
+        "stat11-s187-h514",
+        "stat11-s187-t514"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 1
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s187-h515",
+        "stat11-s187-r1"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 2
+    },
+    {
+      "type": "equation",
+      "index": 3
+    },
+    {
+      "type": "paragraphs",
+      "ids": [
+        "stat11-s187-r2"
+      ]
+    },
+    {
+      "type": "equation",
+      "index": 4
+    },
+    {
+      "type": "equation",
+      "index": 5
+    }
+  ],
+  "vocabulary": {
+    "least squares": {
+      "ur": "کم از کم مربعات",
+      "ps": "لږ تر لږه مربعات"
+    },
+    "regression line": {
+      "ur": "ریگریشن لکیر",
+      "ps": "د ریګرېشن کرښه"
+    }
+  },
+  "equations": [
+    {
+      "id": "stat11-s187-e",
+      "latex": "e=y-\\hat{y}",
+      "accessible": "e = y − ŷ",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "e = y − ŷ"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "e = y − ŷ"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "e = y − ŷ"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s187-ls",
+      "latex": "\\sum(y-\\hat{y})^2\\ \\text{is a minimum}",
+      "accessible": "Σ(y − ŷ)² is a minimum",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "Σ(y − ŷ)² is a minimum"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "Σ(y − ŷ)² is a minimum"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "Σ(y − ŷ)² is a minimum"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s187-ln1",
+      "latex": "\\hat{y}=a_{y.x}+b_{y.x}\\,x",
+      "accessible": "ŷ = a_y.x + b_y.x x",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "ŷ = a_y.x + b_y.x x"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "ŷ = a_y.x + b_y.x x"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "ŷ = a_y.x + b_y.x x"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s187-ln2",
+      "latex": "b_{y.x}=\\dfrac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-\\left(\\sum x\\right)^2}\\ ,\\qquad a_{y.x}=\\dfrac{\\sum y}{n}-b_{y.x}\\left(\\dfrac{\\sum x}{n}\\right)",
+      "accessible": "b_y.x = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²),   a_y.x = Σy/n − b_y.x (Σx/n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b_y.x = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²),   a_y.x = Σy/n − b_y.x (Σx/n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b_y.x = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²),   a_y.x = Σy/n − b_y.x (Σx/n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b_y.x = (nΣxy − ΣxΣy)/(nΣx² − (Σx)²),   a_y.x = Σy/n − b_y.x (Σx/n)"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s187-ln3",
+      "latex": "\\hat{x}=a_{x.y}+b_{x.y}\\,y",
+      "accessible": "x̂ = a_x.y + b_x.y y",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "x̂ = a_x.y + b_x.y y"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "x̂ = a_x.y + b_x.y y"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "x̂ = a_x.y + b_x.y y"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stat11-s187-ln4",
+      "latex": "b_{x.y}=\\dfrac{n\\sum xy-\\sum x\\sum y}{n\\sum y^2-\\left(\\sum y\\right)^2}\\ ,\\qquad a_{x.y}=\\dfrac{\\sum x}{n}-b_{x.y}\\left(\\dfrac{\\sum y}{n}\\right)",
+      "accessible": "b_x.y = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²),   a_x.y = Σx/n − b_x.y (Σy/n)",
+      "nativeLines": {
+        "en": [
+          [
+            {
+              "text": "b_x.y = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²),   a_x.y = Σx/n − b_x.y (Σy/n)"
+            }
+          ]
+        ],
+        "ur": [
+          [
+            {
+              "text": "b_x.y = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²),   a_x.y = Σx/n − b_x.y (Σy/n)"
+            }
+          ]
+        ],
+        "ps": [
+          [
+            {
+              "text": "b_x.y = (nΣxy − ΣxΣy)/(nΣy² − (Σy)²),   a_x.y = Σx/n − b_x.y (Σy/n)"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "sourceNote": "Printed page 177. The formulas ŷ = a_y.x + b_y.x x and x̂ = a_x.y + b_x.y y are printed inline within sentences and also given in the paragraph text; the inline formulas are kept in the text and the displayed coefficient formulas are shown as equations. A hand-drawn loop around \"least squares principle\" and underlines are ignored. Header graphics and watermark excluded.",
+  "review": {
+    "reviewedAtUtc": "2026-10-12T13:18:57.852301+00:00",
+    "scope": "Scan 187 compared with source",
+    "unresolved": "Translations need native review"
+  }
+}

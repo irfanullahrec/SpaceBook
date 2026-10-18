@@ -1,0 +1,36 @@
+@pdf 87
+@printed 81
+@status lesson
+table Compound assignment operators || کمپاؤنڈ اسائنمنٹ آپریٹرز || مرکب assignment operators
+th | Operator || آپریٹر || operator | Example (int A=8, B=3) || مثال (int A=8، B=3) || بېلګه (int A=8، B=3) | Result || نتیجہ || پایله
+tr | += | A+=B or A=A+B | 11
+tr | -= | A-=3 or A=A-3 | 5
+tr | *= | A*=7 or A=A*7 | 56
+tr | /= | A/=B or A=A/B | 2 (Integer Division) || 2 (انٹیجر تقسیم) || 2 (integer وېش)
+tr | %= | A%=5 or A=A%5 | 3
+tr | a=b | Value of b will be assigned to a || b کی قدر a کو دی جائے گی || د b ارزښت a ته ورکول کېږي | —
+endtable
+### Program 3.15: Program that performs all compound assignment operations on an integer. || پروگرام 3.15: ایک انٹیجر پر تمام کمپاؤنڈ اسائنمنٹ عمل کرنے والا پروگرام۔ || پروګرام ۳.۱۵: پر یوه integer ټول مرکب assignment عملیات.
+m # include <stdio.h>
+m void main ( )
+m {
+m     int a;
+m     a=10;
+m     printf("value of a :%d\n",a);
+m     a+=5;
+m     printf("value of a after a+=5:%d\n",a);
+m     a-=5;
+m     printf("value of a after a-=5:%d\n",a);
+m     a*=2;
+m     printf("value of a after a*=2:%d\n",a);
+m     a/=2;
+m     printf("value of a after a/=2:%d\n",a);
+box teach | SAMPLE OUTPUT || نمونہ آؤٹ پٹ || نمونه output
+m Value of a. 10
+m Value of a after a+=5: 15
+m Value of a after a-=5:10
+m Value of a after a*=2: 20
+m Value of a after a/=2: 10
+m Value of a after a%=2: 0
+endbox
+@deco A previous owner has handwritten notes beside Program 3.15 ("pre-processor directive", "header file", "data type", "null", "it is important main function in program"); not book content.

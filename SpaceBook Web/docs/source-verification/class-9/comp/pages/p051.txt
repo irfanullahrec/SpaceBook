@@ -1,0 +1,39 @@
+@pdf 51
+@printed 43
+@status lesson
+svg Figure: 2.11 Linking Process || شکل 2.11 لنکنگ کا عمل || ۲.۱۱ شکل د linking بهیر
+<svg viewBox="0 0 560 220" width="560" role="img" aria-label="Source Program, arrow, Compiler Software, arrow, Object Program, arrow, Linker Software; Linker Software has a two-way arrow with C Library Functions above it and an arrow down to Executable Program (.exe file)" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle">
+<defs><marker id="arF211" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="#111827"/></marker></defs>
+<g fill="none" stroke="#111827"><path d="M10 120 H100 V88"/><path d="M150 120 H240 V88"/><path d="M290 120 H380 V88"/><path d="M420 120 H520 V88"/><path d="M420 50 H520 V10"/><path d="M420 210 H520 V150"/></g>
+<text x="55" y="100">Source</text><text x="55" y="115">Program</text>
+<text x="195" y="100">Compiler</text><text x="195" y="115">Software</text>
+<text x="335" y="100">Object</text><text x="335" y="115">Program</text>
+<text x="470" y="100">Linker</text><text x="470" y="115">Software</text>
+<text x="470" y="26">C Library</text><text x="470" y="42">Functions</text>
+<text x="470" y="166">Executable</text><text x="470" y="181">Program</text><text x="470" y="196">(.exe file)</text>
+<path d="M104 106 H146 M244 106 H286 M384 106 H426" stroke="#111827" marker-end="url(#arF211)"/>
+<path d="M470 54 V82" stroke="#111827" marker-start="url(#arF211)" marker-end="url(#arF211)"/>
+<path d="M470 124 V150" stroke="#111827" marker-end="url(#arF211)"/>
+</svg>
+endsvg
+### 4. Loader || 4. لوڈر || ۴. Loader
+p It is a program that loads C-language programs into memory and then executes them. || یہ ایک پروگرام ہے جو C زبان کے پروگراموں کو میموری میں لوڈ کرتا ہے اور پھر انہیں چلاتا ہے۔ || دا یو پروګرام دی چې د C ژبې پروګرامونه حافظې ته پورته کوي او بیا یې اجرا کوي.
+### 5. Debugger || 5. ڈیبگر || ۵. Debugger
+p In computers, ***debugging*** is the process of locating and fixing bugs (errors) in computer program code. || کمپیوٹرز میں ***ڈیبگنگ*** کمپیوٹر پروگرام کے کوڈ میں بگز (غلطیاں) تلاش کرنے اور ٹھیک کرنے کا عمل ہے۔ || په کمپیوټرونو کې ***debugging*** د کمپیوټري پروګرام په کوډ کې د bugs (تېروتنو) د موندلو او سمولو بهیر دی.
+p A C-language debugger is a computer program that lets users run the program, line by line and examine the values of variables or look at values passed into functions and helps in finding and removing errors in the program. || C زبان کا ڈیبگر ایک کمپیوٹر پروگرام ہے جو صارفین کو پروگرام سطر بہ سطر چلانے، متغیرات کی قدریں جانچنے یا فنکشنز کو بھیجی گئی قدریں دیکھنے دیتا ہے اور پروگرام کی غلطیاں تلاش کرنے اور دور کرنے میں مدد دیتا ہے۔ || د C ژبې debugger یو کمپیوټري پروګرام دی چې کاروونکو ته اجازه ورکوي پروګرام کرښه په کرښه وچلوي، د متغیرونو ارزښتونه وازمويي یا فنکشنونو ته لېږل شوي ارزښتونه وګوري، او د پروګرام د تېروتنو په موندلو او لرې کولو کې مرسته کوي.
+@sec 2-3 | 2.3 Programming Basics || 2.3 پروگرامنگ کی بنیادی باتیں || ۲.۳ د پروګرام جوړونې بنسټونه
+## 2.3 PROGRAMMING BASICS || 2.3 پروگرامنگ کی بنیادی باتیں || ۲.۳ د پروګرام جوړونې بنسټونه
+### Getting Started With C || C کا آغاز || له C سره پیل
+p C is a popular and efficient programming language which is widely used for system and application software. In order to create and run a C program, you need a C-language compiler. There are many free and professional C-language compilers available. || C ایک مقبول اور مؤثر پروگرامنگ زبان ہے جو سسٹم اور ایپلی کیشن سافٹ ویئر کے لیے وسیع پیمانے پر استعمال ہوتی ہے۔ C پروگرام بنانے اور چلانے کے لیے آپ کو C زبان کا کمپائلر درکار ہے۔ بہت سے مفت اور پیشہ ورانہ C کمپائلر دستیاب ہیں۔ || C یوه مشهوره او اغېزمنه پروګرامي ژبه ده چې د سیسټم او اپلیکېشن سافټوېر لپاره پراخه کارېږي. د C پروګرام د جوړولو او چلولو لپاره د C ژبې compiler ته اړتیا لرئ. ډېر وړیا او مسلکي C compilers شته.
+svg Figure: 2.12 Compiling and Linking C Program || شکل 2.12 C پروگرام کو کمپائل اور لنک کرنا || ۲.۱۲ شکل د C پروګرام compile او link کول
+<svg viewBox="0 0 580 150" width="580" role="img" aria-label="Pipeline: .C Source File, arrow, Preprocessor, arrow, temp.c Preprocessor Output file, arrow, Compiler, arrow, .obj Object file, arrow, Linker, arrow, .exe Executable File" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+<defs><marker id="arF212" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#dc2626"/></marker></defs>
+<g fill="#fff" stroke="#9ca3af"><path d="M10 20 H52 L64 32 V86 H10 Z"/><path d="M180 20 H222 L234 32 V86 H180 Z"/><path d="M352 20 H394 L406 32 V86 H352 Z"/><path d="M520 20 H562 L574 32 V86 H520 Z"/></g>
+<g fill="#b91c1c" font-size="14"><text x="37" y="66">.C</text><text x="207" y="66">temp.c</text><text x="379" y="66">.obj</text><text x="547" y="66">.exe</text></g>
+<rect x="84" y="20" width="76" height="66" rx="10" fill="#22d3ee" stroke="#111827"/><text x="122" y="76" font-size="11">Preprocessor</text><text x="122" y="52" font-size="20">⚙</text>
+<rect x="254" y="20" width="78" height="66" rx="10" fill="#86efac" stroke="#111827"/><text x="293" y="38">Compiler</text><text x="293" y="70" font-size="20">⚙</text>
+<rect x="426" y="20" width="76" height="66" rx="10" fill="#15803d" stroke="#111827"/><text x="464" y="38" fill="#fff">Linker</text><text x="464" y="70" font-size="20" fill="#bfdbfe">🔗</text>
+<path d="M64 54 H80 M160 54 H176 M234 54 H250 M332 54 H348 M406 54 H422 M502 54 H516" stroke="#dc2626" stroke-width="2" marker-end="url(#arF212)"/>
+<g fill="#1e3a8a" font-size="11"><text x="37" y="112">Source File</text><text x="207" y="112">Preprocessor</text><text x="207" y="126">Output file</text><text x="379" y="112">Object file</text><text x="547" y="112">Executable</text><text x="547" y="126">File</text></g>
+</svg>
+endsvg

@@ -1,0 +1,20 @@
+@printed 148
+@status lesson
+### Truth table for creating NAND gate using AND and NOT gates || AND اور NOT گیٹس سے NAND گیٹ بنانے کا ٹروتھ ٹیبل || د AND او NOT په مرسته د NAND جوړولو truth table
+table Table 6.10: Truth table for NAND gate using AND and NOT gates || جدول 6.10: AND اور NOT گیٹس سے NAND گیٹ کا ٹروتھ ٹیبل || ۶.۱۰ جدول: د AND او NOT په مرسته د NAND truth table
+th | A | B | Y=A·B | Ȳ
+tr | 0 | 0 | 0 | 1
+tr | 0 | 1 | 0 | 1
+tr | 1 | 0 | 0 | 1
+tr | 1 | 1 | 1 | 0
+endtable
+p The NOR gate can also be created in a similar way by using an OR gate and a NOT gate as shown below. || NOR گیٹ بھی اسی طرح ایک OR گیٹ اور ایک NOT گیٹ سے بنایا جا سکتا ہے، جیسا کہ نیچے دکھایا گیا ہے۔ || NOR دروازه هم په همدې ډول د یوه OR او یوه NOT په مرسته جوړېدای شي، لکه لاندې.
+fig10 f6.9 || Figure 6.9: Creating a NOR gate using OR and NOT gates || شکل 6.9: OR اور NOT گیٹس سے NOR گیٹ بنانا || ۶.۹ شکل: د OR او NOT په مرسته د NOR جوړول
+### Truth table for creating NOR gate using OR and NOT gates || OR اور NOT گیٹس سے NOR گیٹ بنانے کا ٹروتھ ٹیبل || د OR او NOT په مرسته د NOR جوړولو truth table
+table Table 6.11: Truth table for NOR gate using OR and NOT gates || جدول 6.11: OR اور NOT گیٹس سے NOR گیٹ کا ٹروتھ ٹیبل || ۶.۱۱ جدول: د OR او NOT په مرسته د NOR truth table
+th | A | B | Y=A+B | Ȳ
+tr | 0 | 0 | 0 | 1
+tr | 0 | 1 | 1 | 0
+tr | 1 | 0 | 1 | 0
+tr | 1 | 1 | 1 | 0
+endtable

@@ -1,0 +1,26 @@
+@printed 14
+@status lesson
+@issue The printed folio reads "14" with a faint mirror "13" from the facing page; mirror-image show-through of Problem 12 is visible on the right and is not part of this page.
+### Problem 13 || مسئلہ 13 || ستونزه ۱۳
+p **To produce a multiplication table for a given number.** || **دیے گئے عدد کا پہاڑا (ضرب کا جدول) بنانا۔** || **د ورکړل شوي عدد د ضرب جدول جوړول.**
+p **Algorithm:** This algorithm produces a multiplication table *TAB* for a given number *NUM* up to 10. || **الگورتھم:** یہ الگورتھم دیے گئے عدد *NUM* کا 10 تک کا پہاڑا *TAB* بناتا ہے۔ || **الګوریتم:** دا الګوریتم د ورکړل شوي عدد *NUM* لپاره تر ۱۰ پورې د ضرب جدول *TAB* جوړوي.
+m Step 1. Set C=1 [Initialize counter.]
+m Step 2. Read NUM
+m Step 3. Repeat Steps 4,5 and 6 while C<=10
+m Step 4. Set TAB= NUM*C
+m Step 5. Write NUM '*' C '=' TAB
+m Step 6. C=C+1 [Increment counter variable.]
+m          [End of while loop]
+m Step 7. Exit
+### Problem 14 || مسئلہ 14 || ستونزه ۱۴
+p **To convert Celsius to Fahrenheit temperature.** || **سیلسیئس درجۂ حرارت کو فارن ہائیٹ میں بدلنا۔** || **د سلسیوس تودوخې فارنهایټ ته اړول.**
+p **Algorithm:** This algorithm converts Celsius *C* to Fahrenheit *F* temperature. || **الگورتھم:** یہ الگورتھم سیلسیئس *C* کو فارن ہائیٹ *F* درجۂ حرارت میں بدلتا ہے۔ || **الګوریتم:** دا الګوریتم سلسیوس *C* د فارنهایټ *F* تودوخې ته اړوي.
+m Step 1. Read C
+m Step 2. Set F= 32+C*9/5
+m Step 3. Write F
+m Step 4. Exit
+### Problem 15 || مسئلہ 15 || ستونزه ۱۵
+p **To convert Fahrenheit to Celsius temperature.** || **فارن ہائیٹ درجۂ حرارت کو سیلسیئس میں بدلنا۔** || **د فارنهایټ تودوخې سلسیوس ته اړول.**
+p **Algorithm:** This algorithm converts Fahrenheit *F* to Celsius *C* temperature. || **الگورتھم:** یہ الگورتھم فارن ہائیٹ *F* کو سیلسیئس *C* درجۂ حرارت میں بدلتا ہے۔ || **الګوریتم:** دا الګوریتم فارنهایټ *F* د سلسیوس *C* تودوخې ته اړوي.
+m Step 1. Read F
+m Step 2. Set C= (F-32)*5/9

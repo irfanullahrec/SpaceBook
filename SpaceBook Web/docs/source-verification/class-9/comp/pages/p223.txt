@@ -1,0 +1,26 @@
+@pdf 173
+@printed 215
+@status lesson
+p In the HTML document of Figure 7.52, The tag, || شکل 7.52 کی HTML دستاویز میں ٹیگ || د ۷.۵۲ شکل په HTML سند کې tag
+m <table border=1 cellspacing=3 cellpadding=8>
+p tells the browser to display the table with border and to have cell spacing equal to 3 pixels and cell padding to 8 pixels. Cell spacing is the space between the cells of the table and cell padding is the space between the text and the border of the cell. || براؤزر کو بتاتا ہے کہ جدول کو بارڈر کے ساتھ، 3 پکسل سیل اسپیسنگ اور 8 پکسل سیل پیڈنگ کے ساتھ دکھائے۔ سیل اسپیسنگ جدول کے خانوں کے درمیان فاصلہ اور سیل پیڈنگ متن اور خانے کے بارڈر کے درمیان فاصلہ ہے۔ || براوزر ته وايي جدول له پولې، ۳ پکسله cell spacing او ۸ پکسله cell padding سره وښيي. cell spacing د خانو ترمنځ واټن او cell padding د متن او د خانې د پولې ترمنځ واټن دی.
+p The code for the first row that contains the title is: || عنوان والی پہلی قطار کا کوڈ یہ ہے: || د سرلیک لرونکي لومړي قطار کوډ دا دی:
+m <tr>
+m     <td colspan=4 align=center>
+m     <b>FINAL EXAMINATIONS</b></td>
+m </tr>
+p Here, the *colspan* attribute is used to combine the four columns and the align attribute centers the title in the column of the table. The user can also use the *rowspan* attribute to combine the cells of rows of a table. Title can also be aligned to the left or right. || یہاں *colspan* خصوصیت چاروں کالموں کو ملانے اور align خصوصیت عنوان کو جدول کے کالم میں درمیان میں رکھنے کے لیے استعمال ہوئی ہے۔ صارف جدول کی قطاروں کے خانے ملانے کے لیے *rowspan* بھی استعمال کر سکتا ہے۔ عنوان کو بائیں یا دائیں بھی رکھا جا سکتا ہے۔ || دلته *colspan* څلور ستنې یوځای کوي او align سرلیک د جدول په ستن کې منځ ته کوي. کاروونکی د قطارونو د خانو د یوځای کولو لپاره *rowspan* هم کارولی شي. سرلیک کیڼ یا ښي ته هم برابرېدای شي.
+p In the HTML document, the code for creating the heading of each column of second row is given as below. || HTML دستاویز میں دوسری قطار کے ہر کالم کی سرخی بنانے کا کوڈ نیچے دیا گیا ہے۔ || په HTML سند کې د دویم قطار د هرې ستنې سرلیک کوډ لاندې دی.
+m <tr>
+m     <td>S.No.</td>
+m     <td>Date</td>
+m     <td>Class X</td>
+m </tr>
+p The text of all the four cells of second row is within the <tr></tr> tags and the text of each cell is within the <td></td> tags. || دوسری قطار کے چاروں خانوں کا متن <tr></tr> ٹیگز میں اور ہر خانے کا متن <td></td> ٹیگز میں ہے۔ || د دویم قطار د څلورو خانو متن په <tr></tr> کې او د هرې خانې متن په <td></td> کې دی.
+@issue The second row has three cells, not four; kept as printed.
+p The text of the next row is defined as follows. || اگلی قطار کا متن یوں متعین کیا جاتا ہے۔ || د راتلونکي قطار متن داسې ټاکل کېږي.
+m <tr>
+m <td>1.</td>
+m <td>05-04-2014</td>
+m <td>Maths</td>
+m </tr>
