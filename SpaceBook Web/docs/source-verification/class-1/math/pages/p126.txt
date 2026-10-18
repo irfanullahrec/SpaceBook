@@ -1,0 +1,22 @@
+@printed 122
+exercise Patterns (Pages 122-123)
+p Colour the shapes to complete the patterns. || نمونے مکمل کرنے کے لیے اشکال میں رنگ بھریں۔ || بېلګې د بشپړولو لپاره شکلونه رنګ کړئ.
+q 1 | Big, middle and small triangles || بڑے، درمیانے اور چھوٹے مثلث || لوی، منځني او کوچني مثلثونه
+pattern tri.orange@1.5 tri.orange@1.1 tri.orange@0.8 tri.none@1.5 tri.none@1.1 tri.none@0.8 tri.none@1.5 tri.none@1.1 tri.none@0.8 || 3 coloured triangles, then 6 outline triangles || ۳ رنگین مثلث، پھر ۶ خالی مثلث || ۳ رنګه مثلثونه، بیا ۶ خالي مثلثونه
+sol Colour all six outline triangles orange (big, middle, small; big, middle, small). ## The pattern repeats the sizes big, middle, small in one colour. || نمونہ ایک ہی رنگ میں بڑا، درمیانہ، چھوٹا دہراتا ہے۔ || بېلګه په یو رنګ کې لوی، منځنی، کوچنی تکراروي.
+q 2 | Circle, square, triangle || دائرہ، مربع، مثلث || دایره، مربع، مثلث
+pattern circ.green@1.3 sq.purple@1.3 tri.orange@1.3 circ.none@1.3 sq.none@1.3 tri.none@1.3 circ.none@1.3 sq.none@1.3 tri.none@1.3 || green circle, purple square, orange triangle, then 6 outline shapes || سبز دائرہ، جامنی مربع، نارنجی مثلث، پھر ۶ خالی اشکال || شنه دایره، ارغواني مربع، نارنجي مثلث، بیا ۶ خالي شکلونه
+sol Circles green, squares purple, triangles orange. ## Each shape keeps its own colour. || ہر شکل اپنا رنگ رکھتی ہے۔ || هر شکل خپل رنګ ساتي.
+q 3 | Black and red rectangles || سیاہ اور سرخ مستطیل || تور او سره مستطیلونه
+pattern rectv.black@1 rectv.red@1 rectv.black@1 rectv.red@1 rectv.black@1 rectv.red@1 rectv.none@1 rectv.none@1 rectv.none@1 rectv.none@1 rectv.none@1 rectv.none@1 || 6 coloured rectangles (black, red, ...), then 6 outline rectangles || ۶ رنگین مستطیل (سیاہ، سرخ، ...)، پھر ۶ خالی || ۶ رنګه مستطیلونه (تور، سور، ...)، بیا ۶ خالي
+sol Black, red, black, red, black, red. ## The colours alternate. || رنگ باری باری بدلتے ہیں۔ || رنګونه یو په بل پسې بدلېږي.
+p Complete the patterns. || نمونے مکمل کریں۔ || بېلګې بشپړې کړئ.
+q 4 | Big square, small square, ... || بڑا مربع، چھوٹا مربع، ... || لوی مربع، کوچنی مربع، ...
+pattern sq.purple@1.5 sq.purple@0.9 sq.purple@1.5 sq.purple@0.9 sq.purple@1.5 sq.purple@0.9 _ _ || big and small purple squares, then two blanks || بڑے اور چھوٹے جامنی مربع، پھر دو خالی جگہیں || لوی او کوچني ارغواني مربعونه، بیا دوه تش ځایونه
+sol big square, small square ## The sizes alternate big, small. || سائز باری باری بڑا، چھوٹا۔ || اندازه یو په بل پسې لوی، کوچنی.
+q 5 | Green circle, yellow triangle, pink circle, ... || سبز دائرہ، پیلا مثلث، گلابی دائرہ، ... || شنه دایره، ژېړ مثلث، ګلابي دایره، ...
+pattern circ.green@1.3 tri.yellow@1.3 circ.#f9a8a8@1.3 circ.green@1.3 tri.yellow@1.3 circ.#f9a8a8@1.3 _ _ || green circle, yellow triangle, pink circle (twice), then two blanks || سبز دائرہ، پیلا مثلث، گلابی دائرہ (دو بار)، پھر دو خالی جگہیں || شنه دایره، ژېړ مثلث، ګلابي دایره (دوه ځله)، بیا دوه تش ځایونه
+sol green circle, yellow triangle ## The group of three repeats. || تین کا گروہ دہرایا جاتا ہے۔ || د دریو ډله تکرارېږي.
+q 6 | Triangle, circle, ... || مثلث، دائرہ، ... || مثلث، دایره، ...
+pattern tri.#f05a28@1.3 circ.#f05a28@1.3 tri.#f05a28@1.3 circ.#f05a28@1.3 tri.#f05a28@1.3 circ.#f05a28@1.3 _ _ || orange-red triangle and circle, then two blanks || نارنجی سرخ مثلث اور دائرہ، پھر دو خالی جگہیں || نارنجي سور مثلث او دایره، بیا دوه تش ځایونه
+sol triangle, circle ## The shapes alternate triangle, circle. || اشکال باری باری مثلث، دائرہ۔ || شکلونه یو په بل پسې مثلث، دایره.

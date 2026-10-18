@@ -1,0 +1,42 @@
+@printed 250
+@issue The JPG cuts the top-left corner; the first heading ("Constru[ction of Triangles]") and the start of the first line are cropped. The first sentence is read as "A triangle has six elements, its three sides and three angles. When we construct a triangle we do not need all six elements at a time. Before learning to construct triangles let's learn about an important property of triangles which is called triangle inequality property." The Quick Check is printed faintly: "Is it possible to draw a triangle ABC in which AB = 4 cm, BC = 2 cm, AC = 1 cm?".
+@issue The triangle figure shows A(left), B(right), C(top) with sides AB = 6 cm, BC = 4 cm, CA = 7 cm; recreated. The construction figures (compass drawings of XYZ: XY = 5 cm, arcs of 3.5 cm and 2 cm cutting at Z) are recreated as schematics.
+@sec 10.4.1 | Construction of Triangles || مثلثوں کی تعمیر || د مثلثونو جوړول
+# Construction of Triangles || مثلثوں کی تعمیر || د مثلثونو جوړول
+p A triangle has six elements, its three sides and three angles. When we construct a triangle we do not need all six elements at a time. Before learning to construct triangles let's learn about an important property of triangles which is called triangle inequality property. || مثلث کے چھ عناصر ہوتے ہیں، اس کی تین اطراف اور تین زاویے۔ جب ہم مثلث بناتے ہیں تو ہمیں ایک وقت میں تمام چھ عناصر کی ضرورت نہیں ہوتی۔ مثلثوں کی تعمیر سیکھنے سے پہلے آئیے مثلثوں کی ایک اہم خصوصیت کے بارے میں سیکھیں جسے مثلث کی عدم مساوات کی خصوصیت کہتے ہیں۔ || یو مثلث شپږ عناصر لري، درې ضلعې او درې زاویې. کله چې مثلث جوړوو، یو وخت ټولو شپږو عناصرو ته اړتیا نه لرو. د مثلثونو د جوړولو له زده کولو مخکې راځئ د مثلثونو یوې مهمې ځانګړتیا په اړه زده کړو چې د مثلث د نابرابرۍ ځانګړتیا بلل کېږي.
+### Triangle Inequality Property || مثلث کی عدم مساوات کی خصوصیت || د مثلث د نابرابرۍ ځانګړتیا
+p Let's draw a triangle ABC, where $\overline{AB} = 6$ cm and $\overline{BC} = 4$ cm and CA = 7 cm. We can verify the following: || آئیے مثلث ABC بنائیں، جہاں $\overline{AB} = 6$ cm اور $\overline{BC} = 4$ cm اور CA = 7 cm ہے۔ ہم درج ذیل کی تصدیق کر سکتے ہیں: || راځئ مثلث ABC رسم کړو، چېرته چې $\overline{AB} = 6$ cm او $\overline{BC} = 4$ cm او CA = 7 cm دی. موږ لاندې تایید کولی شو:
+svg Triangle ABC with AB = 6 cm, BC = 4 cm, CA = 7 cm || مثلث ABC: AB = 6 cm، BC = 4 cm، CA = 7 cm || ABC مثلث: AB = 6 cm، BC = 4 cm، CA = 7 cm
+<svg viewBox="0 0 230 150" width="230" role="img" aria-label="Triangle with A at the bottom left, B at the bottom right, C at the top; AB 6 cm, BC 4 cm, CA 7 cm" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="30,125 190,125 160,25" fill="#fff" stroke="#0f172a" stroke-width="1.4"/>
+<text x="16" y="136" font-weight="700">A</text><text x="194" y="136" font-weight="700">B</text><text x="160" y="18" font-weight="700">C</text>
+<text x="90" y="142">6 cm</text><text x="176" y="82">4 cm</text><text x="84" y="70">7 cm</text>
+</svg>
+endsvg
+- $m\overline{AB} + m\overline{BC} > m\overline{CA}$ || $m\overline{AB} + m\overline{BC} > m\overline{CA}$ || $m\overline{AB} + m\overline{BC} > m\overline{CA}$
+- $6 + 4 > 7$ or $10 > 7$ || $6 + 4 > 7$ یعنی $10 > 7$ || $6 + 4 > 7$ یا $10 > 7$
+- $m\overline{BC} + m\overline{CA} > m\overline{AB}$ || $m\overline{BC} + m\overline{CA} > m\overline{AB}$ || $m\overline{BC} + m\overline{CA} > m\overline{AB}$
+- $4 + 7 > 6$ or $11 > 6$ || $4 + 7 > 6$ یعنی $11 > 6$ || $4 + 7 > 6$ یا $11 > 6$
+- $m\overline{CA} + m\overline{AB} > m\overline{BC}$ || $m\overline{CA} + m\overline{AB} > m\overline{BC}$ || $m\overline{CA} + m\overline{AB} > m\overline{BC}$
+- $7 + 6 > 4$ or $13 > 4$ || $7 + 6 > 4$ یعنی $13 > 4$ || $7 + 6 > 4$ یا $13 > 4$
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Is it possible to draw a triangle ABC in which $\overline{AB} = 4$ cm, $\overline{BC} = 2$ cm, $\overline{AC} = 1$ cm? || کیا ایسا مثلث ABC بنانا ممکن ہے جس میں $\overline{AB} = 4$ cm، $\overline{BC} = 2$ cm، $\overline{AC} = 1$ cm ہو؟ || ایا داسې مثلث ABC جوړول ممکن دي چې $\overline{AB} = 4$ cm، $\overline{BC} = 2$ cm، $\overline{AC} = 1$ cm ولري؟
+endbox
+p Hence, in any triangle, the sum of the length of any two sides is always greater than the length of the third side. || لہٰذا کسی بھی مثلث میں کسی بھی دو اطراف کی لمبائی کا مجموعہ ہمیشہ تیسری طرف کی لمبائی سے زیادہ ہوتا ہے۔ || نو په هر مثلث کې د هرو دوو ضلعو د اوږدوالي مجموعه تل د درېیمې ضلعې له اوږدوالي څخه زیاته وي.
+### Construction of Triangles when three sides are given (SSS) || تین اطراف دی گئی ہوں تو مثلث کی تعمیر (SSS) || کله چې درې ضلعې ورکړل شي د مثلثونو جوړول (SSS)
+p Construct triangle XYZ in which $\overline{XY} = 5$ cm, $\overline{YZ} = 3.5$ cm, $\overline{XZ} = 2$ cm. || مثلث XYZ بنائیں جس میں $\overline{XY} = 5$ cm، $\overline{YZ} = 3.5$ cm، $\overline{XZ} = 2$ cm ہو۔ || مثلث XYZ جوړ کړئ چې $\overline{XY} = 5$ cm، $\overline{YZ} = 3.5$ cm، $\overline{XZ} = 2$ cm وي.
+p **Step I:** Draw a line segment $\overline{XY} = 5$ cm. || **مرحلہ I:** خط مستقیم $\overline{XY} = 5$ cm کھینچیں۔ || **لومړی پړاو:** مستقیمه کرښه $\overline{XY} = 5$ cm رسم کړئ.
+p **Step II:** Place the pointer of the compass at point X and draw an arc of length 3.5 cm. || **مرحلہ II:** پرکار کی نوک نقطہ X پر رکھیں اور 3.5 cm لمبائی کی قوس کھینچیں۔ || **دوهم پړاو:** د پرکار څوک پر ټکي X کېږدئ او د 3.5 cm اوږدوالي قوس رسم کړئ.
+p **Step III:** Place the pointer of the compass at point Y and draw an arc of radius 2 cm that cuts the previous arc at point Z. || **مرحلہ III:** پرکار کی نوک نقطہ Y پر رکھیں اور 2 cm نصف قطر کی قوس کھینچیں جو پچھلی قوس کو نقطہ Z پر کاٹے۔ || **درېیم پړاو:** د پرکار څوک پر ټکي Y کېږدئ او د 2 cm شعاع قوس رسم کړئ چې مخکینی قوس په ټکي Z کې پرې کړي.
+p **Step IV:** Join Z to X and Y. So, △XYZ is the required triangle. || **مرحلہ IV:** Z کو X اور Y سے ملائیں۔ لہٰذا △XYZ مطلوبہ مثلث ہے۔ || **څلورم پړاو:** Z له X او Y سره وصل کړئ. نو △XYZ اړین مثلث دی.
+svg SSS construction steps: segment XY = 5 cm, arc 3.5 cm from X, arc 2 cm from Y, triangle XYZ || SSS تعمیر کے مراحل || د SSS د جوړولو پړاوونه
+<svg viewBox="0 0 560 150" width="560" role="img" aria-label="Four steps: segment XY of 5 cm; an arc of 3.5 cm about X; a second arc of 2 cm about Y meeting the first at Z; triangle XYZ with XZ 3.5 cm, ZY 2 cm and XY 5 cm" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<g transform="translate(0 0)"><line x1="10" y1="100" x2="125" y2="100" stroke="#0f172a" stroke-width="1.5"/><text x="4" y="118" font-weight="700">X</text><text x="124" y="118" font-weight="700">Y</text><text x="56" y="116">5 cm</text><text x="10" y="20" font-weight="700">I</text></g>
+<g transform="translate(140 0)"><line x1="10" y1="100" x2="125" y2="100" stroke="#0f172a" stroke-width="1.5"/><path d="M10 100 m80 0 a80 80 0 0 0 -26 -60" fill="none" stroke="#0f172a" stroke-dasharray="3 2"/><text x="4" y="118" font-weight="700">X</text><text x="124" y="118" font-weight="700">Y</text><text x="14" y="20" font-weight="700">II</text><text x="60" y="116">5 cm</text></g>
+<g transform="translate(280 0)"><line x1="10" y1="100" x2="125" y2="100" stroke="#0f172a" stroke-width="1.5"/><path d="M90 100 a80 80 0 0 0 -26 -60" fill="none" stroke="#0f172a" stroke-dasharray="3 2"/><path d="M125 100 a45 45 0 0 0 -50 -42" fill="none" stroke="#0f172a" stroke-dasharray="3 2"/><text x="4" y="118" font-weight="700">X</text><text x="124" y="118" font-weight="700">Y</text><text x="66" y="38" font-weight="700">Z</text><text x="14" y="20" font-weight="700">III</text></g>
+<g transform="translate(420 0)"><polygon points="10,100 125,100 76,34" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="4" y="118" font-weight="700">X</text><text x="124" y="118" font-weight="700">Y</text><text x="72" y="28" font-weight="700">Z</text><text x="30" y="62">3.5 cm</text><text x="104" y="62">2 cm</text><text x="56" y="116">5 cm</text><text x="14" y="20" font-weight="700">IV</text></g>
+</svg>
+endsvg
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Make two groups of the students and distribute flash cards of different types of triangles and ask them to sort them according to their sides and angles. || طلبہ کے دو گروپ بنائیں اور مختلف اقسام کے مثلثوں کے فلیش کارڈ تقسیم کریں اور ان سے کہیں کہ انہیں اطراف اور زاویوں کے مطابق الگ کریں۔ || د زده کوونکو دوه ډلې جوړې کړئ او د بېلابېلو ډولونو مثلثونو فلش کارتونه ووېشئ او ورته ووایاست چې د ضلعو او زاویو له مخې یې جلا کړي.
+endbox

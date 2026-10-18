@@ -1,0 +1,23 @@
+@printed 13
+example 1 | Find LCM of 128, 256 and 512 by prime factorization method. || مفرد اجزائے ضربی کے طریقے سے 128، 256 اور 512 کا ذو اضعاف اقل معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د 128، 256 او 512 کوچنی مشترک ضرب معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First find all the prime factors of 128, 256 and 512. || پہلے 128، 256 اور 512 کے تمام مفرد اجزائے ضربی معلوم کریں۔ || لومړی د 128، 256 او 512 ټول لومړني ضربي اجزا معلوم کړئ.
+ladder 2:128, 2:64, 2:32, 2:16, 2:8, 2:4, 2:2, :1
+ladder 2:256, 2:128, 2:64, 2:32, 2:16, 2:8, 2:4, 2:2, :1
+ladder 2:512, 2:256, 2:128, 2:64, 2:32, 2:16, 2:8, 2:4, 2:2, :1
+p Prime factorization of 128 = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || 128 کے مفرد اجزائے ضربی = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || د 128 لومړني ضربي تجزیه = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$
+p Prime factorization of 256 = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || 256 کے مفرد اجزائے ضربی = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || د 256 لومړني ضربي تجزیه = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$
+p Prime factorization of 512 = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || 512 کے مفرد اجزائے ضربی = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$ || د 512 لومړني ضربي تجزیه = $2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2$
+p The common prime factors are of 128, 256 and 512 are 2, 2, 2, 2, 2, 2, 2. || 128، 256 اور 512 کے مشترک مفرد اجزائے ضربی 2، 2، 2، 2، 2، 2، 2 ہیں۔ || د 128، 256 او 512 مشترک لومړني ضربي اجزا 2، 2، 2، 2، 2، 2، 2 دي.
+p The non-common prime factors of 128, 256 and 512 is 2, 2. || 128، 256 اور 512 کے غیر مشترک مفرد اجزائے ضربی 2، 2 ہیں۔ || د 128، 256 او 512 غیر مشترک لومړني ضربي اجزا 2، 2 دي.
+eq \textbf{LCM} = \begin{array}{c}\textbf{Product of common prime}\\ \textbf{factors of 2 or more numbers}\end{array} \times \begin{array}{c}\textbf{Product of non-common}\\ \textbf{prime factors}\end{array} || ذو اضعاف اقل = دو یا زیادہ اعداد کے مشترک مفرد اجزائے ضربی کا حاصلِ ضرب × غیر مشترک مفرد اجزائے ضربی کا حاصلِ ضرب || کوچنی مشترک ضرب = د دوو یا ډېرو عددونو د مشترکو لومړنیو ضربي اجزاوو حاصل ضرب × د غیر مشترکو لومړنیو ضربي اجزاوو حاصل ضرب
+eq \begin{aligned} \text{LCM} &= 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \\ &= 512 \end{aligned}
+p So, the LCM = 512 || لہٰذا ذو اضعاف اقل = 512 || نو کوچنی مشترک ضرب = 512
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find LCM of 114, 216, 425 and 322 by prime factorization method. || مفرد اجزائے ضربی کے طریقے سے 114، 216، 425 اور 322 کا ذو اضعاف اقل معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د 114، 216، 425 او 322 کوچنی مشترک ضرب معلوم کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Put different 2-digit numbers in a basket. Make groups of the students and ask each group to pick 2 or 3 numbers and find the LCM. Then share their answer with the other groups to check if they have done it correctly. || ایک ٹوکری میں دو ہندسوں والے مختلف اعداد رکھیں۔ طلبہ کے گروپ بنائیں اور ہر گروپ سے کہیں کہ 2 یا 3 اعداد اٹھائے اور ذو اضعاف اقل معلوم کرے۔ پھر اپنا جواب دوسرے گروپوں کے ساتھ شیئر کریں تاکہ جانچ سکیں کہ انہوں نے درست حل کیا ہے۔ || په یوه ټوکرۍ کې د دوه رقمي مختلفو عددونو کارتونه کېږدئ. زده کوونکي په ډلو ووېشئ او له هرې ډلې وغواړئ چې 2 یا 3 عددونه واخلي او کوچنی مشترک ضرب معلوم کړي. بیا خپل ځواب له نورو ډلو سره شریک کړي ترڅو وګوري چې سم یې کړی دی که نه.
+endbox
+@issue Source sentence "The common prime factors are of 128, 256 and 512 are ..." contains a printed grammatical slip ("are of ... are"); kept as printed.

@@ -1,0 +1,46 @@
+@printed 167
+q 2 | Find the circumference of the circles having these radii. || ان رداسوں والے دائروں کا محیط معلوم کریں۔ || د دې شعاعو لرونکو دایرو محیط معلوم کړئ.
+qp a | 0.5 cm
+qp b | 4 cm
+qp c | 7.2 m
+qp d | 9.6 cm
+qp e | 10.5 cm
+qp f | 100.5 cm
+q 3 | Find the circumference of the circles having these diameters. || ان قطروں والے دائروں کا محیط معلوم کریں۔ || د دې قطرونو لرونکو دایرو محیط معلوم کړئ.
+qp a | 6.8 cm
+qp b | 5.5 cm
+qp c | 8.3 cm
+qp d | 11.6 m
+qp e | 4.4 m
+qp f | 9.5 cm
+q 4 | The diameter of a circle is 12.4 cm, find its circumference. || ایک دائرے کا قطر 12.4 cm ہے، اس کا محیط معلوم کریں۔ || د یوې دایرې قطر 12.4 cm دی، محیط یې معلوم کړئ.
+q 5 | Find the radius and diameter of a circle whose circumference is 48.984 cm. || اس دائرے کا رداس اور قطر معلوم کریں جس کا محیط 48.984 cm ہے۔ || د هغې دایرې شعاع او قطر معلوم کړئ چې محیط یې 48.984 cm دی.
+q 6 | The radius of a circle is 6.5 cm, find the length of its diameter. || ایک دائرے کا رداس 6.5 cm ہے، اس کے قطر کی لمبائی معلوم کریں۔ || د یوې دایرې شعاع 6.5 cm ده، د قطر اوږدوالی یې معلوم کړئ.
+q 7 | The diameter of a circle is 23.3 cm, find its circumference. || ایک دائرے کا قطر 23.3 cm ہے، اس کا محیط معلوم کریں۔ || د یوې دایرې قطر 23.3 cm دی، محیط یې معلوم کړئ.
+q 8 | Find the circumference of a wheel whose diameter is 34 cm. || اس پہیے کا محیط معلوم کریں جس کا قطر 34 cm ہے۔ || د هغه څرخ محیط معلوم کړئ چې قطر یې 34 cm دی.
+q 9 | Find the area of the circles whose radii are given below. || ان دائروں کا رقبہ معلوم کریں جن کے رداس نیچے دیے گئے ہیں۔ || د هغو دایرو مساحت معلوم کړئ چې شعاعګانې یې لاندې ورکړل شوې.
+qp a | 2.3 cm
+qp b | 6.5 cm
+qp c | 11.2 cm
+qp d | 8.5 cm
+qp e | 10.7 m
+qp f | 14.8 m
+qp g | 2.7 m
+qp h | 9.25 m
+q 10 | Find the area of a circle whose diameter is 6.2 cm. || اس دائرے کا رقبہ معلوم کریں جس کا قطر 6.2 cm ہے۔ || د هغې دایرې مساحت معلوم کړئ چې قطر یې 6.2 cm دی.
+q 11 | The diameter of a circle is 15.5 m, find its area. || ایک دائرے کا قطر 15.5 m ہے، اس کا رقبہ معلوم کریں۔ || د یوې دایرې قطر 15.5 m دی، مساحت یې معلوم کړئ.
+q 12 | The circumference of a circle is 44.588 cm, find its area. || ایک دائرے کا محیط 44.588 cm ہے، اس کا رقبہ معلوم کریں۔ || د یوې دایرې محیط 44.588 cm دی، مساحت یې معلوم کړئ.
+q 13 | Find the circumference of a circle whose area is 54.95 m². || اس دائرے کا محیط معلوم کریں جس کا رقبہ 54.95 m² ہے۔ || د هغې دایرې محیط معلوم کړئ چې مساحت یې 54.95 m² دی.
+endexercise
+@sec 9.3 | Real-Life problems of Circumference and Area of a Circle || دائرے کے محیط اور رقبے کے حقیقی زندگی کے سوالات || د دایرې د محیط او مساحت د ورځني ژوند پوښتنې
+# 9.3 Real-Life problems of Circumference and Area of a Circle || 9.3 دائرے کے محیط اور رقبے کے حقیقی زندگی کے سوالات || 9.3 د دایرې د محیط او مساحت د ورځني ژوند پوښتنې
+example 1 | The distance around a circle shaped ground is 4458.75 metres. What is the radius of the ground? || دائرہ نما میدان کے گرد کا فاصلہ 4458.75 میٹر ہے۔ میدان کا رداس کیا ہے؟ || د یوه دایروي ډګر شاوخوا واټن 4458.75 متره دی. د ډګر شعاع څومره ده؟
+p **Solution:** Here the distance around the ground is its circumference. || **حل:** یہاں میدان کے گرد کا فاصلہ اس کا محیط ہے۔ || **حل:** دلته د ډګر شاوخوا واټن د هغه محیط دی.
+eq \begin{aligned} \text{Circumference of the ground} = C &= 2\pi r \\ r &= \frac{C}{2\pi} \\ r &= \frac{4458.75}{2 \times 3.14} \\ r &= 709.99\,\text{m} \end{aligned}
+p So, the radius of the ground is 709.99 metres (approx.). || لہٰذا میدان کا رداس تقریباً 709.99 میٹر ہے۔ || نو د ډګر شعاع شاوخوا 709.99 متره ده.
+endexample
+example 2 | The diameter of a wheel is 52 cm. If a wire is rolled over the wheel 62 times, find the length of the wire. || ایک پہیے کا قطر 52 cm ہے۔ اگر ایک تار کو پہیے پر 62 بار لپیٹا جائے تو تار کی لمبائی معلوم کریں۔ || د یوه څرخ قطر 52 cm دی. که یو سیم پر څرخ 62 ځله تاو شي، د سیم اوږدوالی معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Diameter of a wheel} = d &= 52\,\text{cm} \\ \text{Radius} = r &= \frac{d}{2} = \frac{52}{2} = 26\,\text{cm} \\ \text{Circumference of the wheel} &= 2\pi r = 2 \times 3.14 \times 26 = 163.28\,\text{cm} \end{aligned}
+p So, length of wire used in 1 round = 163.28 cm. Length of wire in 62 rounds = 163.28 × 62 = 10123.36 cm. So, the length of the wire is 10123.36 cm. || لہٰذا 1 چکر میں استعمال ہونے والے تار کی لمبائی = 163.28 cm۔ 62 چکروں میں تار کی لمبائی = 163.28 × 62 = 10123.36 cm۔ لہٰذا تار کی لمبائی 10123.36 cm ہے۔ || نو په 1 تاو کې د کارول شوي سیم اوږدوالی = 163.28 cm. په 62 تاوونو کې د سیم اوږدوالی = 163.28 × 62 = 10123.36 cm. نو د سیم اوږدوالی 10123.36 cm دی.
+endexample

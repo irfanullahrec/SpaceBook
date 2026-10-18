@@ -1,0 +1,21 @@
+@printed 226
+eq \begin{aligned} \text{then median} &= \left(\frac{n + 1}{2}\right) \text{th item} \\ &= \left(\frac{7 + 1}{2}\right) \text{th item} \\ &= \frac{8}{2} \text{th item} \\ &= 4\text{th item in the given observations} \\ \text{Hence, Median} &= 8 \end{aligned}
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p $\frac{(n + 1)}{2}$ only tells us the position of the median. || $\frac{(n + 1)}{2}$ صرف وسطانیہ کا مقام بتاتا ہے۔ || $\frac{(n + 1)}{2}$ یوازې د منځني ځای ښيي.
+endbox
+p ii. Here $n = 6$ || ii. یہاں $n = 6$ || ii. دلته $n = 6$
+eq \begin{aligned} \text{So, Median} &= \frac{(n + 1)}{2} \text{th item} \\ &= \frac{6 + 1}{2} = \frac{7}{2} \\ &= (3.5) \text{ th item in the given observations.} \end{aligned}
+p 3.5 th item is half way between the 3rd and 4th items. || 3.5 واں رکن تیسرے اور چوتھے رکن کے درمیان آدھے راستے پر ہے۔ || 3.5 م توکی د درېیم او څلورم توکي ترمنځ نیمه لاره کې دی.
+eq \begin{aligned} \text{3rd value} &= 8 \\ \text{4th value} &= 10 \\ \text{Hence, Median} &= \frac{18 + 10}{2} \\ &= \frac{18}{2} \\ \Rightarrow \text{Median} &= 9 \end{aligned}
+endexample
+@issue Median Example 1 ii (page 226) prints "(18 + 10)/2 = 18/2"; it should be (8 + 10)/2 = 18/2 = 9. Kept as printed.
+## 11.4.3 Mode || 11.4.3 عادہ || 11.4.3 ډېرتکراری
+p The **frequently occurring value** (or values) in the data denoted by $\hat{X}$ is called **mode**. || ڈیٹا میں **سب سے زیادہ آنے والی قیمت** (یا قیمتیں)، جسے $\hat{X}$ سے ظاہر کیا جاتا ہے، **عادہ** کہلاتی ہے۔ || په معلوماتو کې **تر ټولو ډېر راتلونکی ارزښت** (یا ارزښتونه)، چې په $\hat{X}$ ښودل کېږي، **ډېرتکراری** بلل کېږي.
+p To find the mode; || عادہ معلوم کرنے کے لیے؛ || د ډېرتکراري د موندلو لپاره؛
+qp i | Calculate frequencies for all values in the data. || ڈیٹا کی تمام قیمتوں کے تعدد معلوم کریں۔ || د معلوماتو د ټولو ارزښتونو تکرارونه معلوم کړئ.
+qp ii | The mode is the value with the greatest frequency. || عادہ وہ قیمت ہے جس کا تعدد سب سے زیادہ ہو۔ || ډېرتکراری هغه ارزښت دی چې تر ټولو ډېر تکرار لري.
+p If each value occurs the same number of times, then there is no mode. If two or more values occur the same number of times but more frequently than any of the other values, then there is more than one modes, which is the main difference between mode and mean and median because a data has only one mean and median. || اگر ہر قیمت ایک جتنی بار آئے تو کوئی عادہ نہیں ہوتا۔ اگر دو یا زیادہ قیمتیں ایک جتنی بار مگر باقی قیمتوں سے زیادہ آئیں تو ایک سے زیادہ عادے ہوتے ہیں، جو عادہ اور اوسط و وسطانیہ کا بنیادی فرق ہے کیونکہ ڈیٹا کا صرف ایک اوسط اور ایک وسطانیہ ہوتا ہے۔ || که هر ارزښت یو شان ځلونه راشي، ډېرتکراری نشته. که دوه یا ډېر ارزښتونه یو شان ځلونه خو تر نورو ډېر راشي، له یو ډېر ډېرتکراري شته، چې دا د ډېرتکراري او اوسط او منځني اصلي توپیر دی ځکه معلومات یوازې یو اوسط او یو منځنی لري.
+example 1 | Find the mode of the following set of observations. i. 2, 3, 3, 3, 4, 4, 5, 5, 5, 5   ii. 8, 8, 9, 10, 11, 11, 13 || مشاہدات کے درج ذیل سیٹ کا عادہ معلوم کریں۔ i. 2، 3، 3، 3، 4، 4، 5، 5، 5، 5   ii. 8، 8، 9، 10، 11، 11، 13 || د مشاهدو د لاندې سېټ ډېرتکراری ومومئ. i. 2، 3، 3، 3، 4، 4، 5، 5، 5، 5   ii. 8، 8، 9، 10، 11، 11، 13
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Share the following online quiz link of finding mean, median and mode. https://www.mathgames.com/skill/7.90-interpret-charts-to-find-mean-median-mode-and-range || اوسط، وسطانیہ اور عادہ معلوم کرنے کا یہ آن لائن کوئز لنک شیئر کریں۔ https://www.mathgames.com/skill/7.90-interpret-charts-to-find-mean-median-mode-and-range || د اوسط، منځني او ډېرتکراري د موندلو دا آنلاین ازموینې لینک شریک کړئ. https://www.mathgames.com/skill/7.90-interpret-charts-to-find-mean-median-mode-and-range
+endbox

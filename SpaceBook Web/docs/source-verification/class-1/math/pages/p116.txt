@@ -1,0 +1,15 @@
+@printed 112
+p Look at the time in a digital clock and match it with an analog clock. || ڈیجیٹل گھڑی میں وقت دیکھیں اور اسے اینالاگ گھڑی سے ملائیں۔ || په ډیجیټل ګړۍ کې وخت وګورئ او له انلاګ ګړۍ سره یې وښلوئ.
+frow digital 10:00 ;; digital 7:00 ;; digital 4:00 ;; digital 2:00 ;; digital 12:00 || Digital clocks: 10:00, 7:00, 4:00, 2:00, 12:00 || ڈیجیٹل گھڑیاں: ۱۰:۰۰، ۷:۰۰، ۴:۰۰، ۲:۰۰، ۱۲:۰۰ || ډیجیټل ګړۍ: ۱۰:۰۰، ۷:۰۰، ۴:۰۰، ۲:۰۰، ۱۲:۰۰
+frow clock 4:00 | A ;; clock 10:00 | B ;; clock 12:00 | C ;; clock 7:00 | D ;; clock 2:00 | E || Analog clocks A to E (top to bottom in the book) || اینالاگ گھڑیاں A تا E (کتاب میں اوپر سے نیچے) || انلاګ ګړۍ A تر E (په کتاب کې له پورته نه ښکته)
+q 5 | Match each digital clock with an analog clock. || ہر ڈیجیٹل گھڑی کو اینالاگ گھڑی سے ملائیں۔ || هره ډیجیټل ګړۍ له انلاګ ګړۍ سره وښلوئ.
+sol 10:00–B, 7:00–D, 4:00–A, 2:00–E, 12:00–C ## Find the clock whose short hand points to the same hour. || وہ گھڑی تلاش کریں جس کی چھوٹی سوئی اسی گھنٹے پر ہو۔ || هغه ګړۍ پیدا کړئ چې لنډه ستن یې همغه ساعت ته اشاره کوي.
+p Colour the box with the correct answer. || درست جواب والے خانے میں رنگ بھریں۔ || د سم ځواب خونه رنګ کړئ.
+q 6 | Which day comes before Friday? (Thursday / Saturday) || جمعہ سے پہلے کون سا دن آتا ہے؟ (جمعرات / ہفتہ) || له جمعې مخکې کومه ورځ راځي؟ (پنجشنبه / شنبه)
+sol Thursday ## Thursday is 4th and Friday is 5th. || جمعرات چوتھا اور جمعہ پانچواں دن ہے۔ || پنجشنبه څلورمه او جمعه پنځمه ورځ ده.
+q 7 | Which day comes after Monday? (Sunday / Tuesday) || پیر کے بعد کون سا دن آتا ہے؟ (اتوار / منگل) || له دوشنبې وروسته کومه ورځ راځي؟ (یکشنبه / سه شنبه)
+sol Tuesday ## Monday is 1st and Tuesday is 2nd. || پیر پہلا اور منگل دوسرا دن ہے۔ || دوشنبه لومړۍ او سه شنبه دویمه ورځ ده.
+q 8 | What is the 3rd day of the week? (Tuesday / Wednesday) || ہفتے کا تیسرا دن کون سا ہے؟ (منگل / بدھ) || د اونۍ درېیمه ورځ کومه ده؟ (سه شنبه / چهارشنبه)
+sol Wednesday ## Monday, Tuesday, Wednesday. || پیر، منگل، بدھ۔ || دوشنبه، سه شنبه، چهارشنبه.
+q 9 | Which Solar month comes before May? (June / April) || مئی سے پہلے کون سا شمسی مہینہ آتا ہے؟ (جون / اپریل) || له مۍ مخکې کومه لمریزه میاشت راځي؟ (جون / اپرېل)
+sol April ## April is 4th and May is 5th. || اپریل چوتھا اور مئی پانچواں مہینہ ہے۔ || اپرېل څلورمه او مۍ پنځمه میاشت ده.

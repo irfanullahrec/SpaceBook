@@ -1,0 +1,49 @@
+@printed 130
+@issue Example 5 prints "If x 1/x = 4" (the + sign is missing in the question; the solution uses x + 1/x = 4); kept as printed. The algebraic proof of Identity III is printed in two columns; the second column is given after the first.
+example 4
+p Solve: || حل کریں: || حل یې کړئ:
+qp i | $52 \times 52$
+qp ii | $(102)^2$
+## Solution: || حل: || حل:
+m i. $52 \times 52$
+m $= (52)^2$
+m $= (50 + 2)^2$
+m $= (50)^2 + 2(50)(2) + (2)^2$
+m $= 2500 + 200 + 4$
+m $= 2704$
+m ii. $(102)^2$
+m $= (100 + 2)^2$
+m $= (100)^2 + 2(100)(2) + (2)^2$
+m $= 10000 + 400 + 4$
+m $= 10404$
+endexample
+example 5
+p If $x \frac{1}{x} = 4$, find the value $x^2 + \frac{1}{x^2}$ || اگر $x \frac{1}{x} = 4$ ہو تو $x^2 + \frac{1}{x^2}$ کی قیمت معلوم کریں || که $x \frac{1}{x} = 4$ وي، د $x^2 + \frac{1}{x^2}$ ارزښت معلوم کړئ
+## Solution: || حل: || حل:
+m $x + \frac{1}{x} = 4$
+m $\left(x + \frac{1}{x}\right)^2 = (4)^2$ (taking square on both sides)
+m $x^2 + 2 + \frac{1}{x^2} = 16$
+m $x^2 + \frac{1}{x^2} = 16 - 2 = 14$
+endexample
+### Identity III: $(a - b)^2 = a^2 - 2ab + b^2$ || مماثلت III || درېیم مطابقت
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+m $(a - b)^2 = a^2 - 2ab + b^2$
+p Proof: || ثبوت: || ثبوت:
+m LHS. $= (a - b)^2$
+m $= (a - b)(a - b)$
+m $= a^2 - ab - ab + b^2$
+m $=$ RHS
+m $= a^2 - ab - ba + b^2$
+m $= a^2 - 2ab + b^2$
+m Hence proved $(a - b)^2 = a^2 - 2ab + b^2$
+p Thus LHS = RHS || اس طرح LHS = RHS || نو LHS = RHS
+p **Geometric Proof:** || **ہندسی ثبوت:** || **هندسي ثبوت:**
+p Look at the figure ACFD. Its length and width is a. It is divided into 4 portions. || شکل ACFD کو دیکھیں۔ اس کی لمبائی اور چوڑائی a ہے۔ یہ 4 حصوں میں تقسیم ہے۔ || ACFD شکل ته وګورئ. اوږدوالی او پلنوالی یې a دی. په 4 برخو وېشل شوی.
+area w=a−b:b | h=a−b:b | cells=(a−b)²,b(a−b);b(a−b),b² | top=a | side=a | pts=A,B,C;G,I,H;D,E,F
+m Now Area of ACFD $=$ Length of ACFD $\times$ Width of ACFD
+m $= a \times a = a^2$
+m But Area of ACFD $=$ Area of ABIG $+$ Area of IHCB $+$ Area of DEIG $+$ Area of EFHI
+p So, || لہٰذا، || نو،
+m $a^2 = (a - b)^2 + b(a - b) + b(a - b) + b^2$
+m $a^2 = (a - b)^2 + b^2 + 2b(a - b)$
+m $a^2 = (a - b)^2 + b^2 + 2ab - 2b^2$

@@ -1,0 +1,9 @@
+@printed 24
+@deco Sana and Mohsin at a desk with a number-line strip 0 to 20; Sana's hand covers 3 and Mohsin's hand covers 18. A pencil, a toy duck and a toy car stand above a number line 0 to 70.
+# Identify value of number on number line || عددی خط پر عدد کی قیمت پہچانیں || د عددونو په کرښه د عدد ارزښت وپېژنئ
+## Look at the values of numbers given on the number line. Can you identify where Sana's and Mohsin's hands are? || عددی خط پر دی گئی اعداد کی قیمتیں دیکھیں۔ کیا آپ پہچان سکتے ہیں کہ ثنا اور محسن کے ہاتھ کہاں ہیں؟ || د عددونو په کرښه ورکړل شوي ارزښتونه وګورئ. ایا پېژندلی شئ چې د ثنا او محسن لاسونه چېرته دي؟
+fig nl3 0..20 | hide=3,18 | top=3:Sana;18:Mohsin || Sana's hand and Mohsin's hand on the number line || عددی خط پر ثنا اور محسن کے ہاتھ || د عددونو په کرښه د ثنا او محسن لاسونه
+p 3 and 18 || 3 اور 18 || 3 او 18
+## Can you identify the values of objects on the number line? || کیا آپ عددی خط پر اشیاء کی قیمتیں پہچان سکتے ہیں؟ || ایا د عددونو په کرښه د شیانو ارزښتونه پېژندلی شئ؟
+fig nl3 0..70 step 10 | top=10:pencil;30:duck;60:car || A pencil, a duck and a car above a number line counting in 10s || دس دس کی گنتی والے عددی خط پر پنسل، بطخ اور گاڑی || په لس لس شمېرنه کرښه پنسل، هیلۍ او موټر
+p 10, 30 and 60 || 10، 30 اور 60 || 10، 30 او 60

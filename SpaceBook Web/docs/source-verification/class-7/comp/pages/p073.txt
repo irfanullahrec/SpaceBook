@@ -1,0 +1,29 @@
+@printed 68
+@status lesson
+### Example 6: Finding sum of two numbers using flowcharts || مثال ۶: فلو چارٹس کے ذریعے دو اعداد کا مجموعہ نکالنا || بېلګه ۶: په فلو چارټونو د دوو عددونو د مجموعې موندل
+svg Flowchart for the sum of two numbers: Start → INPUT a,b (parallelogram) → PROCESS C = a+b (rectangle) → OUTPUT c (parallelogram) → End. || دو اعداد کے مجموعے کا فلو چارٹ: اسٹارٹ ← ان پٹ a,b ← عمل C=a+b ← آؤٹ پٹ c ← اینڈ۔ || د دوو عددونو د مجموعې فلو چارټ: پیل ← ان پټ a,b ← پروسه C=a+b ← آوټ پټ c ← پای.
+<svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13" role="img" aria-label="Sum of two numbers flowchart">
+<g fill="#fff" stroke="#1e293b" stroke-width="2"><rect x="100" y="8" width="100" height="36" rx="18"/><path d="M110 70 H210 L196 106 H96 Z"/><rect x="100" y="128" width="100" height="36" /><path d="M110 186 H210 L196 222 H96 Z"/><rect x="100" y="244" width="100" height="36" rx="18"/></g>
+<g stroke="#1e293b" stroke-width="2" fill="none"><path d="M150 44 V70 M150 106 V128 M150 164 V186 M150 222 V244"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="150" y="31">Start</text><text x="150" y="93">a,b</text><text x="150" y="151">C=a+b</text><text x="150" y="209">c</text><text x="150" y="267">End</text></g>
+<g fill="#db2777" font-weight="bold"><text x="235" y="93">INPUT</text><text x="235" y="151">PROCESS to perform addition</text><text x="235" y="209">OUTPUT</text></g>
+</svg>
+endsvg
+box note | The steps of algorithm for the given problem will be as under || دی گئی مسئلے کے لیے الگورتھم کے مراحل یہ ہوں گے || د ورکړل شوې ستونزې لپاره د الګوریتم ګامونه به دا وي
+- Take input of two numbers let us say a and b || دو اعداد کا ان پٹ لیں، مثلاً a اور b || د دوو عددونو ان پټ واخلئ، لکه a او b
+- Perform sum of a and b || a اور b کا مجموعہ نکالیں || د a او b مجموعه ومومئ
+- The result of sum will be stored in c || مجموعے کا نتیجہ c میں محفوظ ہوگا || د مجموعې پایله په c کې خوندي کېږي
+endbox
+### Example 7: Flowchart for a kid getting ready for school || مثال ۷: بچے کے اسکول کے لیے تیار ہونے کا فلو چارٹ || بېلګه ۷: د ماشوم د ښوونځي ته چمتو کېدو فلو چارټ
+svg Flowchart for a kid getting ready for school (simplest scenario, one iteration): Start → INPUT Dress, Books, hair brush, etc → PROCESS Task 1 Getting the dress ready → Task 2 Taking shower → Task 3 Getting dressed → Task 4 Gathering schoolbooks → OUTPUT Ready for School → End. || بچے کے اسکول کے لیے تیار ہونے کا فلو چارٹ (آسان ترین صورت، ایک تکرار): اسٹارٹ ← ان پٹ لباس، کتابیں، برش وغیرہ ← عمل: کام ۱ لباس تیار کرنا ← کام ۲ نہانا ← کام ۳ کپڑے پہننا ← کام ۴ کتابیں جمع کرنا ← آؤٹ پٹ اسکول کے لیے تیار ← اینڈ۔ || د ماشوم د ښوونځي ته چمتو کېدو فلو چارټ (تر ټولو ساده حالت، یو تکرار): پیل ← ان پټ جامې، کتابونه، برش ← پروسه: ۱ کار جامې چمتو کول ← ۲ کار حمام ← ۳ کار جامې اغوستل ← ۴ کار کتابونه راټولول ← آوټ پټ ښوونځي ته چمتو ← پای.
+<svg viewBox="0 0 540 380" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Kid getting ready for school flowchart">
+<g fill="#fff" stroke="#1e293b" stroke-width="2"><rect x="30" y="8" width="90" height="34" rx="17"/><path d="M25 62 H155 L142 108 H12 Z"/><rect x="20" y="150" width="105" height="48"/><rect x="150" y="150" width="105" height="48"/><rect x="280" y="150" width="105" height="48"/><rect x="410" y="150" width="105" height="48"/><path d="M420 240 H530 L520 282 H410 Z"/><rect x="430" y="320" width="90" height="34" rx="17"/></g>
+<g stroke="#1e293b" stroke-width="2" fill="none"><path d="M75 42 V62 M75 108 V150 M125 174 H150 M255 174 H280 M385 174 H410 M462 198 V240 M462 282 V320"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="75" y="30">Start</text><text x="85" y="82">Dress, Books,</text><text x="85" y="97">hair brush, etc</text><text x="72" y="170">Getting the</text><text x="72" y="186">dress ready</text><text x="202" y="178">Taking shower</text><text x="332" y="178">Getting dressed</text><text x="462" y="170">Gathering</text><text x="462" y="186">schoolbooks</text><text x="465" y="258">Ready for</text><text x="465" y="272">School</text><text x="475" y="342">End</text></g>
+<g fill="#db2777" font-weight="bold"><text x="170" y="92">INPUT</text><text x="72" y="218">TASK 1</text><text x="202" y="218">TASK 2</text><text x="332" y="218">TASK 3</text><text x="462" y="138">TASK 4</text><text x="340" y="278">OUTPUT</text></g>
+<text x="200" y="310" text-anchor="middle" font-weight="bold">PROCESS (Tasks 1–3)</text>
+</svg>
+endsvg
+box note | 1 || ۱ || ۱
+p Simplest scenario showing one day activity (one Iteration). || آسان ترین صورتِ حال جو ایک دن کی سرگرمی (ایک تکرار) دکھاتی ہے۔ || تر ټولو ساده حالت چې د یوې ورځې فعالیت (یو تکرار) ښيي.
+endbox

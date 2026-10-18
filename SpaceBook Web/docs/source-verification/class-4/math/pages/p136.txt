@@ -1,0 +1,19 @@
+@printed 138
+@deco Cartoon boy with a magnifying glass beside "Key Fact".
+- Place the central point of the protractor on point B. || پروٹریکٹر کا مرکزی نقطہ نقطہ B پر رکھیں۔ || د زاویه سنج منځنی ټکی پر B ټکي کېږدئ.
+- Place the baseline of the protractor exactly on $\overrightarrow{BC}$. || پروٹریکٹر کا بنیادی خط بالکل $\overrightarrow{BC}$ پر رکھیں۔ || د زاویه سنج قاعده کرښه دقیقاً پر $\overrightarrow{BC}$ کېږدئ.
+protractor 180 C A || Protractor placed on point B with its baseline on BC || پروٹریکٹر نقطہ B پر، بنیادی خط BC پر || زاویه سنج پر B ټکي، قاعده کرښه یې پر BC
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Draw an angle of 60° and 140° by using a protractor. || پروٹریکٹر استعمال کرتے ہوئے 60° اور 140° کا زاویہ بنائیں۔ || د زاویه سنج په کارولو د 60° او 140° زاویې رسم کړئ.
+endbox
+box info | Key Fact || اہم نکتہ || مهم ټکی
+p This angle can also be drawn by using the inner scale. || یہ زاویہ اندرونی پیمانہ استعمال کر کے بھی بنایا جا سکتا ہے۔ || دا زاویه د دننۍ پیمانې په کارولو هم رسمېدای شي.
+endbox
+- Look at the outer scale on the protractor and mark point A on the angle || پروٹریکٹر کے بیرونی پیمانے کو دیکھیں اور زاویے پر نقطہ A کا نشان لگائیں || د زاویه سنج بهرنۍ پیمانې ته وګورئ او پر زاویه د A ټکی په نښه کړئ
+geo 420 90 ; L 20 55 400 55 #1d4ed8 ; D 80 55 ; D 210 55 ; D 360 55 ; A 210 55 45 0 180 180° ; P 80 80 C ; P 210 80 B ; P 360 80 A || Points C, B and A on one straight line: angle ABC = 180° || ایک سیدھی لکیر پر نقاط C، B اور A: زاویہ ABC = 180° || پر یوه سیده کرښه C، B او A ټکي: ABC زاویه = 180°
+- Remove the protractor and join point B to point A. || پروٹریکٹر ہٹا دیں اور نقطہ B کو نقطہ A سے ملا دیں۔ || زاویه سنج لرې کړئ او B ټکی له A ټکي سره ونښلوئ.
+eq \angle ABC = 180^\circ
+@sec kinds | Difference between Acute, Obtuse, and Right Angle || حادہ، منفرجہ اور قائمہ زاویے میں فرق || د حاده، منفرجه او قایمه زاویې توپیر
+# Difference between Acute, Obtuse, and Right Angle || حادہ، منفرجہ اور قائمہ زاویے میں فرق || د حاده، منفرجه او قایمه زاویې توپیر
+p As you know the unit of measurement of an angle is a degree. There are 360° in a circle. There are 180° in a half circle. There are 90° in a quarter circle. || جیسا کہ آپ جانتے ہیں زاویے کی پیمائش کی اکائی ڈگری ہے۔ ایک دائرے میں 360° ہوتے ہیں۔ آدھے دائرے میں 180° ہوتے ہیں۔ چوتھائی دائرے میں 90° ہوتے ہیں۔ || لکه څنګه چې پوهېږئ د زاویې د اندازې واحد درجه ده. په یوه دایره کې 360° وي. په نیمه دایره کې 180° وي. په څلورمه برخه دایره کې 90° وي.
+frow geo 120 120 ; C 60 60 50 ; A 60 60 25 10 350 360° ; D 60 60 ;; geo 200 120 ; S 10 110 190 110 ; A 100 110 90 0 180 ; A 100 110 40 0 180 180° ; D 100 110 ;; geo 140 120 ; S 10 110 130 110 ; S 10 110 10 10 ; A 10 110 100 0 90 ; A 10 110 35 0 90 90° ; D 10 110 || A full circle (360°), a half circle (180°) and a quarter circle (90°) || پورا دائرہ (360°)، آدھا دائرہ (180°) اور چوتھائی دائرہ (90°) || بشپړه دایره (360°)، نیمه دایره (180°) او څلورمه برخه دایره (90°)

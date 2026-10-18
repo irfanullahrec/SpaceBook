@@ -1,0 +1,36 @@
+@printed 143
+@deco Cartoon book mascot on "Exercise 5".
+p Look at the given figure. On the left there is a square based pyramid and on the right there is the net of the pyramid. It is made up of four triangles and one square. || دی گئی شکل کو دیکھیں۔ بائیں طرف مربع قاعدے والا اہرام ہے اور دائیں طرف اس اہرام کا جال ہے۔ یہ چار مثلثوں اور ایک مربع سے بنا ہے۔ || ورکړل شوي شکل ته وګورئ. کیڼ اړخ ته د مربع قاعدې لرونکی هرم او ښي اړخ ته د هرم جال دی. له څلورو مثلثونو او یوه مربع جوړ دی.
+svg Net of a square pyramid: a square (5) with a triangle (1, 2, 3, 4) on each side, shown beside the pyramid || مربع اہرام کا جال: ایک مربع (5) جس کے ہر ضلع پر ایک مثلث (1، 2، 3، 4)، اہرام کے ساتھ || د مربع هرم جال: یو مربع (5) چې پر هره ضلع یې یو مثلث (1، 2، 3، 4)، د هرم تر څنګ
+<svg viewBox="0 0 420 220" width="400" role="img" aria-label="Square pyramid and its net of one square and four triangles" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a">
+<g stroke="#0f172a" stroke-width="1.4">
+<polygon points="80,10 20,150 75,195" fill="#6ee7b7"/><polygon points="80,10 75,195 145,150" fill="#34d399"/>
+<path d="M80 10 L95 120 M20 150 L95 120 L145 150" fill="none" stroke-dasharray="4 3"/>
+</g>
+<text x="58" y="160" font-size="14">5</text><text x="105" y="150" font-size="14">3</text><text x="60" y="110" font-size="13">1</text><text x="88" y="95" font-size="12" fill="#475569">2</text><text x="48" y="90" font-size="12" fill="#475569">4</text>
+<g fill="#5eead4" stroke="#0f172a" stroke-width="1.4">
+<rect x="260" y="70" width="70" height="70"/><polygon points="260,70 330,70 295,5"/><polygon points="330,70 330,140 395,105"/><polygon points="260,140 330,140 295,210"/><polygon points="260,70 260,140 195,105"/>
+</g>
+<text x="295" y="110" text-anchor="middle" font-size="15">5</text><text x="295" y="55" text-anchor="middle" font-size="15">2</text><text x="350" y="110" text-anchor="middle" font-size="15">3</text><text x="295" y="175" text-anchor="middle" font-size="15">1</text><text x="240" y="110" text-anchor="middle" font-size="15">4</text>
+</svg>
+endsvg
+p Net of a square pyramid || مربع اہرام کا جال || د مربع هرم جال
+exercise 5
+q 1 | Write the names of these figures. Also write the number of faces and identify the shape of the faces. || ان اشکال کے نام لکھیں۔ سطحوں کی تعداد بھی لکھیں اور سطحوں کی شکل پہچانیں۔ || د دې شکلونو نومونه ولیکئ. د سطحو شمېر هم ولیکئ او د سطحو شکل وپېژنئ.
+box3d 2.5 2.5 2.5 | fill=#fb923c || a) || a) || a)
+qp a | Figure a) || شکل a) || شکل a)
+sol Cube; 6 faces; all faces are squares ## A cube has 6 equal square faces. || مکعب؛ 6 سطحیں؛ تمام سطحیں مربع ہیں۔ || مکعب؛ 6 سطحې؛ ټولې سطحې مربع دي.
+svg b) || b) || b)
+<svg viewBox="0 0 150 120" width="140" role="img" aria-label="A pyramid" font-family="Segoe UI, Arial, sans-serif"><polygon points="70,8 10,110 60,100" fill="#1e3a5f" stroke="#0f172a" stroke-width="1.4"/><polygon points="70,8 60,100 140,110" fill="#2b6cb0" stroke="#0f172a" stroke-width="1.4"/></svg>
+endsvg
+qp b | Figure b) || شکل b) || شکل b)
+sol Square pyramid; 5 faces; 1 square and 4 triangles ## As on this page: the base is a square and the four side faces are triangles. || مربع اہرام؛ 5 سطحیں؛ 1 مربع اور 4 مثلث۔ || مربع هرم؛ 5 سطحې؛ 1 مربع او 4 مثلثونه.
+@issue Ex 5 Q1 b) shows a pyramid from the side; its base is not visible. Answered as the square pyramid of this lesson (5 faces); if read as a triangular pyramid the answer would be 4 triangular faces. Check the answer key.
+box3d 4.5 1.2 2 | fill=#e879f9 || c) || c) || c)
+qp c | Figure c) || شکل c) || شکل c)
+sol Cuboid; 6 faces; all faces are rectangles ## A cuboid has 6 rectangular faces; opposite faces are equal. || مکعب نما؛ 6 سطحیں؛ تمام سطحیں مستطیل ہیں۔ || مکعب نما؛ 6 سطحې؛ ټولې سطحې مستطیل دي.
+table
+th | Name of 3-d shape | a) | b) | c)
+tr | Number of faces |  |  |
+tr | Names of faces |  |  |
+endtable

@@ -1,0 +1,25 @@
+@printed 280
+@deco Photograph of a hand writing with a pencil on a test paper (decorative).
+@issue The left edge of the scan is slightly cropped. The text prints "So, the range if this data is 4" ("if" for "of"), "Variance actually tell us", "have spreded widely" and "Variance is dented by S²" (typographical, kept as printed). The Example 1 solution continues on the next page (Step II onward).
+## Solution: || حل: || حل:
+p In the give data, greatest value is 9 and the smallest value is 5. || دیے گئے ڈیٹا میں سب سے بڑی قدر 9 اور سب سے چھوٹی قدر 5 ہے۔ || په ورکړل شویو معلوماتو کې تر ټولو لوی قیمت 9 او تر ټولو کوچنی قیمت 5 دی.
+eq x_{\max} = 9,\qquad x_{\min} = 5
+eq \begin{aligned}\text{Range} &= x_{\max} - x_{\min}\\ &= 9 - 5\\ &= 4\end{aligned}
+p So, the range if this data is 4. || لہٰذا اس ڈیٹا کی حد 4 ہے۔ || نو د دې معلوماتو رینج 4 دی.
+endexample
+@sec 11.2b | Variance || تغیر (ویریئنس) || تغیر (ویریانس)
+## b) Variance || ب) تغیر (ویریئنس) || ب) تغیر (ویریانس)
+p The variance is another measure of dispersion. Variance actually tell us about the spread of data i.e., how broadly the values in a group diverge. If one or more observation within the given data values diverges significantly from the mean, the variance value increases and vice versa. If all the values in a data are same, the value of variance will be zero. The value of variance is always positive. A small result of variance shows that the values in a data set are close to the mean of the data and a high variance indicates that the values of the given data have spreded widely around the mean. Variance is dented by S². || تغیر پھیلاؤ کی ایک اور پیمائش ہے۔ تغیر دراصل ہمیں ڈیٹا کے پھیلاؤ کے بارے میں بتاتا ہے یعنی کسی گروہ کی قدریں کتنی وسیع طور پر بکھری ہوئی ہیں۔ اگر دیے گئے ڈیٹا میں ایک یا ایک سے زیادہ مشاہدات اوسط سے نمایاں طور پر ہٹ جائیں تو تغیر کی قدر بڑھ جاتی ہے اور اس کے برعکس۔ اگر ڈیٹا کی تمام قدریں ایک جیسی ہوں تو تغیر کی قدر صفر ہوگی۔ تغیر کی قدر ہمیشہ مثبت ہوتی ہے۔ تغیر کا چھوٹا نتیجہ ظاہر کرتا ہے کہ ڈیٹا سیٹ کی قدریں ڈیٹا کی اوسط کے قریب ہیں اور زیادہ تغیر ظاہر کرتا ہے کہ دیے گئے ڈیٹا کی قدریں اوسط کے گرد بہت پھیلی ہوئی ہیں۔ تغیر کو S² سے ظاہر کیا جاتا ہے۔ || تغیر د خپرېدو بله اندازه ده. تغیر په اصل کې موږ ته د معلوماتو د خپرېدو په اړه وايي یعنې د یوې ډلې قیمتونه څومره پراخه بېلېږي. که په ورکړل شویو معلوماتو کې یوه یا ډېرې مشاهدې له منځني څخه د پام وړ بېلې شي، د تغیر قیمت زیاتېږي او برعکس. که په معلوماتو کې ټول قیمتونه یو شان وي، د تغیر قیمت به صفر وي. د تغیر قیمت تل مثبت وي. د تغیر وړوکې پایله ښيي چې د معلوماتو سیټ قیمتونه د معلوماتو منځني ته نږدې دي او لوړ تغیر ښيي چې د ورکړل شویو معلوماتو قیمتونه د منځني شاوخوا ډېر خپاره شوي دي. تغیر په S² ښودل کېږي.
+eq \text{Variance} = S^{2} = \frac{\sum (x-\bar{x})^{2}}{n}
+p Where: || جہاں: || چېرته چې:
+p $\bar{x}$ is the mean || $\bar{x}$ اوسط ہے || $\bar{x}$ منځنی دی
+p $n$ is the total number of data values || $n$ ڈیٹا کی قدروں کی کل تعداد ہے || $n$ د معلوماتو د قیمتونو ټوله شمېر دی
+p $x$ stands for each data value. || $x$ ہر ڈیٹا قدر کو ظاہر کرتا ہے۔ || $x$ هر معلومات قیمت ښيي.
+example 1
+p The following data shows the obtained marks of 7 students out of 30 marks in monthly test. || درج ذیل ڈیٹا ماہانہ ٹیسٹ میں 30 نمبروں میں سے 7 طلبہ کے حاصل کردہ نمبر ظاہر کرتا ہے۔ || لاندې معلومات په میاشتنۍ ازموینه کې د ۳۰ نمرو څخه د ۷ زده کوونکو ترلاسه شوې نمرې ښيي.
+eq 10,\ 15,\ 16,\ 18,\ 20,\ 22,\ 25
+p Find the variance for this data. || اس ڈیٹا کا تغیر معلوم کریں۔ || د دې معلوماتو تغیر پیدا کړئ.
+## Solution: || حل: || حل:
+p **Step I:** Find the mean. Add up all the data values, then divide them by the number of values. || **مرحلہ I:** اوسط معلوم کریں۔ تمام ڈیٹا قدروں کو جمع کریں، پھر انہیں قدروں کی تعداد سے تقسیم کریں۔ || **I پړاو:** منځنی پیدا کړئ. ټول معلوماتو قیمتونه سره جمع کړئ، بیا یې د قیمتونو په شمېر وویشئ.
+eq \text{Sum} = \sum x = 10 + 15 + 16 + 18 + 20 + 22 + 25 = 126
+eq \text{Mean} = \bar{x} = \frac{\text{Sum of marks}}{\text{Number of students}} = \frac{\sum x}{n} = \frac{126}{7} = 18

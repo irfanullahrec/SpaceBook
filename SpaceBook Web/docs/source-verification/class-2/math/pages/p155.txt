@@ -1,0 +1,14 @@
+@printed 151
+@sec patterns | Patterns || نمونے || بېلګې
+@deco A boy with glasses speaks; a large square grid with five rows of patterns.
+# Patterns || نمونے || بېلګې
+p “Let us observe the different patterns on a grid.” || ”آئیے جالی پر مختلف نمونے دیکھیں۔“ || ”راځئ په جال کې بېلابېلې بېلګې وګورو.“
+sqgrid 14 15 26 ; poly 0,2 1,0 2,2 #0f172a #fde047 ; rect 3 1 1 1 #0f172a #fde047 ; poly 5,2 6,0 7,2 #0f172a #fde047 ; rect 8 1 1 1 #0f172a #fde047 ; poly 10,2 11,0 12,2 #0f172a #fde047 ; rect 13 1 1 1 #0f172a #fde047 ; sector 2 5 2 90 180 #0ea5e9 ; sector 4 5 1 90 180 #0ea5e9 ; sector 7 5 2 90 180 #0ea5e9 ; sector 9 5 1 90 180 #0ea5e9 ; sector 12 5 2 90 180 #0ea5e9 ; sector 14 5 1 90 180 #0ea5e9 ; poly 0,6 2,7 0,8 #0f172a #86efac ; poly 3,8 4,6 5,8 #0f172a #86efac ; poly 6,6 8,7 6,8 #0f172a #86efac ; poly 9,8 10,6 11,8 #0f172a #86efac ; sector 1 11 1 0 180 #ef4444 ; rect 3 9 1 2 #0f172a #451a03 ; sector 6 11 1 0 180 #ef4444 ; rect 8 9 1 2 #0f172a #451a03 ; sector 11 11 1 0 180 #ef4444 ; rect 13 9 1 2 #0f172a #451a03 ; rect 0 14 2 1 #0f172a #ef4444 ; rect 3 12 3 2 #0f172a #4c1d95 ; rect 7 14 2 1 #0f172a #ef4444 ; rect 10 12 3 2 #0f172a #4c1d95 || Patterns on a square grid (rows 1–5 from the top) || مربع جالی پر نمونے (اوپر سے قطار 1 تا 5) || په مربع جال کې بېلګې (له پورته 1 تر 5 قطارونه)
+- Row 1: Change of pattern in shape (triangle, square, triangle, square, …) || قطار 1: شکل میں نمونے کی تبدیلی (مثلث، مربع، مثلث، مربع، …) || لومړۍ قطار: په شکل کې د بېلګې بدلون (مثلث، مربع، مثلث، مربع، …)
+- Row 2: Change of pattern in size (big and small quarter-circles) || قطار 2: سائز میں نمونے کی تبدیلی (بڑے اور چھوٹے ربع دائرے) || دویمه قطار: په اندازه کې د بېلګې بدلون (لویې او کوچنۍ څلورمې دایرې)
+- Row 3: Change of pattern in direction (triangle pointing right, then up) || قطار 3: سمت میں نمونے کی تبدیلی (مثلث دائیں طرف، پھر اوپر کی طرف) || درېیمه قطار: په لوري کې د بېلګې بدلون (مثلث ښي لوري ته، بیا پورته)
+- Row 4: Change of pattern in shape and colour (red semi-circle, brown rectangle) || قطار 4: شکل اور رنگ میں نمونے کی تبدیلی (سرخ نیم دائرہ، بھورا مستطیل) || څلورمه قطار: په شکل او رنګ کې د بېلګې بدلون (سره نیمه دایره، نسواري مستطیل)
+- Row 5: Change of pattern in size and colour (small red rectangle, big purple rectangle) || قطار 5: سائز اور رنگ میں نمونے کی تبدیلی (چھوٹا سرخ مستطیل، بڑا جامنی مستطیل) || پنځمه قطار: په اندازه او رنګ کې د بېلګې بدلون (کوچنی سور مستطیل، لوی بنفش مستطیل)
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Guide and help the students to make patterns. Provide square grid to the students. || نمونے بنانے میں طلبہ کی رہنمائی کریں۔ طلبہ کو مربع جالی فراہم کریں۔ || د بېلګو په جوړولو کې زده کوونکو ته لارښوونه وکړئ. زده کوونکو ته مربع جال ورکړئ.
+endbox

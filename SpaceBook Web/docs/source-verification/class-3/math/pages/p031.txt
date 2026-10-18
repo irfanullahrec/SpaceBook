@@ -1,0 +1,20 @@
+@printed 26
+@deco Small pictures of objects (school bag, apple, packet, empty box, eraser, tractor, sharpener, box, bag) above number lines; number cards in pink boxes. The scanned copy has a pupil's handwritten answers, not reproduced.
+q 2 | Write the value of objects on the number line. || عددی خط پر اشیاء کی قیمت لکھیں۔ || د عددونو په کرښه د شیانو ارزښت ولیکئ.
+qp i | Number line 0 to 35 in 5s: a school bag and an apple
+fig nl3 0..35 step 5 | hide=10,20,35 | top=10:bag;20:apple || Labels 10, 20 and 35 are left blank in the book || کتاب میں 10، 20 اور 35 کے نشان خالی ہیں || په کتاب کې د 10، 20 او 35 نښې تشې دي
+sol Bag = 10, apple = 20 (the last mark is 35) ## Count on in 5s: 0, 5, 10, 15, 20, 25, 30, 35. || پانچ پانچ کر کے گنیں: 0، 5، 10، 15، 20، 25، 30، 35۔ || پنځه پنځه وشمېرئ: 0، 5، 10، 15، 20، 25، 30، 35.
+qp ii | Number line 0 to 70 in 10s: a packet, an empty box and an eraser
+fig nl3 0..70 step 10 | hide=20,30,50,70 | top=30:packet;50:box;70:eraser || Labels 20, 30, 50 and 70 are left blank in the book || کتاب میں 20، 30، 50 اور 70 کے نشان خالی ہیں || په کتاب کې د 20، 30، 50 او 70 نښې تشې دي
+sol Packet = 30, box = 50, eraser = 70 (the blank after 10 is 20) ## Count on in 10s: 0, 10, 20, 30, 40, 50, 60, 70. || دس دس کر کے گنیں: 0، 10، 20، 30، 40، 50، 60، 70۔ || لس لس وشمېرئ: 0، 10، 20، 30، 40، 50، 60، 70.
+qp iii | Number line 0 to 18 in 2s: a tractor, a sharpener, a box and a bag
+fig nl3 0..18 step 2 | hide=6,10,14,16,18 | top=6:tractor;10:sharpener;14:box;18:bag || Labels 6, 10, 14, 16 and 18 are left blank in the book || کتاب میں 6، 10، 14، 16 اور 18 کے نشان خالی ہیں || په کتاب کې د 6، 10، 14، 16 او 18 نښې تشې دي
+sol Tractor = 6, sharpener = 10, box = 14, bag = 18 ## Count on in 2s: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18. || دو دو کر کے گنیں: 0، 2، 4، 6، 8، 10، 12، 14، 16، 18۔ || دوه دوه وشمېرئ: 0، 2، 4، 6، 8، 10، 12، 14، 16، 18.
+q 3 | Place the correct card on the number line. || عددی خط پر درست کارڈ رکھیں۔ || د عددونو په کرښه سم کارت کېږدئ.
+qp a | Cards 6, 9, 18 and 21
+fig nl3 0..24 step 3 | hide=6,9,18,21 || Number line 0 to 24 in 3s with four blank marks || 0 سے 24 تک تین تین کا عددی خط، چار خالی نشانات کے ساتھ || له 0 تر 24 درې درې کرښه، له څلورو تشو نښو سره
+sol 0, 3, 6, 9, 12, 15, 18, 21, 24 — 6 and 9 go on the two blanks after 3; 18 and 21 on the two blanks after 15. ## The marks go up in 3s. || نشانات تین تین بڑھتے ہیں۔ || نښې درې درې زیاتېږي.
+qp b | Cards 20, 50 and 70
+fig nl3 0..80 step 10 | hide=20,50,70 || Number line 0 to 80 in 10s with three blank marks || 0 سے 80 تک دس دس کا عددی خط، تین خالی نشانات کے ساتھ || له 0 تر 80 لس لس کرښه، له درېیو تشو نښو سره
+sol 0, 10, 20, 30, 40, 50, 60, 70, 80 — 20 goes between 10 and 30, 50 between 40 and 60, 70 between 60 and 80. ## The marks go up in 10s. || نشانات دس دس بڑھتے ہیں۔ || نښې لس لس زیاتېږي.
+endexercise

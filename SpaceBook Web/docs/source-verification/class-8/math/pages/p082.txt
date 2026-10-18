@@ -1,0 +1,35 @@
+@printed 78
+@issue This page starts a second "Example 1" in section 4.3.3 (page 77 already has Example 1); kept as printed.
+@issue The division ladder for 2744 prints "2 | 656" (1372 ÷ 2 = 686); recreated as printed.
+example 1
+p Find the cube root of the following numbers. || درج ذیل اعداد کا جذر المکعب معلوم کریں۔ || د لاندې عددونو مکعب جذر معلوم کړئ.
+qp a | 2744
+qp b | 46,656
+## Solution: || حل: || حل:
+m a) 2744
+p To find the cube root of 2744, we do the following steps; || 2744 کا جذر المکعب معلوم کرنے کے لیے ہم یہ مراحل اختیار کرتے ہیں؛ || د 2744 مکعب جذر موندلو لپاره لاندې پړاوونه ترسره کوو؛
+qp i | Resolve the number into its prime factors. || عدد کو اس کے مفرد اجزائے ضربی میں تقسیم کریں۔ || عدد په خپلو لومړنیو عاملونو ووېشئ.
+qp ii | Form groups of three like factors. || تین یکساں اجزائے ضربی کے گروپ بنائیں۔ || د دریو ورته عاملونو ډلې جوړې کړئ.
+qp iii | The product of single factor from each group is the required cube root. || ہر گروپ سے ایک جزوِ ضربی کا حاصلِ ضرب مطلوبہ جذر المکعب ہے۔ || له هرې ډلې څخه د یوه عامل حاصل ضرب اړین مکعب جذر دی.
+ladder 2:2744; 2:1372; 2:656; 7:343; 7:49; 7:7; :1
+m $2744 = 2 \times 2 \times 2 \times 7 \times 7 \times 7$
+m $= 2^3 \times 7^3$
+m $\therefore \sqrt[3]{2744} = \sqrt[3]{2^3 \times 7^3}$
+m $= 2 \times 7$
+m $= 14$
+m b) 46,656
+m $\sqrt[3]{46,656}$
+ladder 2:46656; 2:23328; 2:11664; 2:5832; 2:2916; 2:1458; 3:729; 3:243; 3:81; 3:27; 3:9; 3:3; :1
+m $46656 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3$
+m $= 2^3 \times 2^3 \times 3^3 \times 3^3$
+m $= \sqrt[3]{46656} = \sqrt[3]{2^3 \times 2^3 \times 3^3 \times 3^3}$
+m $= 2 \times 2 \times 3 \times 3$
+m $= 36$
+m $\therefore \sqrt[3]{46656} = 36$
+endexample
+example 2
+p Find the cube root of $\frac{125}{343}$. || $\frac{125}{343}$ کا جذر المکعب معلوم کریں۔ || د $\frac{125}{343}$ مکعب جذر معلوم کړئ.
+## Solution: || حل: || حل:
+m $\sqrt[3]{\frac{125}{343}}$
+ladder 5:125; 5:25; 5:5; :1
+m $= \sqrt[3]{\frac{5 \times 5 \times 5}{7 \times 7 \times 7}}$

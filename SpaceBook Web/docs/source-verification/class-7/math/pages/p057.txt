@@ -1,0 +1,33 @@
+@printed 53
+m $(\text{length of side})^2 = 121$
+p Taking square root on both sides. || دونوں اطراف کا جذرِ مربع لیں۔ || د دواړو خواوو مربع جذر واخلئ.
+eq \sqrt{(\text{Length of a side})^2} = \sqrt{121}
+ladder 11:121; :11
+eq \text{Length of a side} = \sqrt{11 \times 11} = 11\,\text{m}
+p Hence, the length of a side of the square region is 11m. || لہٰذا مربع خطے کے ضلع کی لمبائی 11m ہے۔ || نو د مربع سیمې د ضلعې اوږدوالی 11m دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+- The area of the square shaped photo frame is 161 cm². Find the length of side of photo frame. || مربع شکل کے فوٹو فریم کا رقبہ 161 cm² ہے۔ فوٹو فریم کے ضلع کی لمبائی معلوم کریں۔ || د مربع شکله عکس چوکاټ مساحت 161 cm² دی. د عکس چوکاټ د ضلعې اوږدوالی معلوم کړئ.
+- Area of the squared shapes room is 961 m². Find the perimeter of the room. || مربع شکل کے کمرے کا رقبہ 961 m² ہے۔ کمرے کا احاطہ معلوم کریں۔ || د مربع شکله کوټې مساحت 961 m² دی. د کوټې محیط معلوم کړئ.
+endbox
+@issue Quick Check: 161 cm² is not a perfect square (likely 169 intended); kept as printed.
+example 3 | Area of square piece of wood is equal to the 6.76 m². Find the length of the side of the piece of wood. || لکڑی کے ایک مربع ٹکڑے کا رقبہ 6.76 m² ہے۔ لکڑی کے ٹکڑے کے ضلع کی لمبائی معلوم کریں۔ || د لرګي د یوې مربع ټوټې مساحت 6.76 m² دی. د لرګي د ټوټې د ضلعې اوږدوالی معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p As the length of four sides of the piece of wood is equal so: || چونکہ لکڑی کے ٹکڑے کے چاروں اضلاع کی لمبائی برابر ہے اس لیے: || څرنګه چې د لرګي د ټوټې د څلورو ضلعو اوږدوالی برابر دی نو:
+m Area of square $= \text{length} \times \text{length} = \ell^2$
+m $\sqrt{6.76} = \sqrt{\ell^2}$ or $\sqrt{6.76} = \ell$
+p Take square root of both sides. || دونوں اطراف کا جذرِ مربع لیں۔ || د دواړو خواوو مربع جذر واخلئ.
+eq \sqrt{6.76} = \frac{\sqrt{676}}{\sqrt{100}}
+p Now find the square root of 676 and 100. || اب 676 اور 100 کا جذرِ مربع معلوم کریں۔ || اوس د 676 او 100 مربع جذر معلوم کړئ.
+sqrtdiv 26 | 6 76 | 2:4:2 76 ; 46:2 76:0
+sqrtdiv 10 | 1 00 | 1:1:00 ; 20:00:0
+eq \frac{\sqrt{676}}{\sqrt{100}} = \frac{26}{10} = 2.6
+p So, the length of the side of the wooden piece is 2.6 m. || لہٰذا لکڑی کے ٹکڑے کے ضلع کی لمبائی 2.6 m ہے۔ || نو د لرګي د ټوټې د ضلعې اوږدوالی 2.6 m دی.
+endexample
+@issue Example 3 prints "√(6.76 = ℓ)" with the radical over the whole statement; shown as √6.76 = ℓ.
+exercise 3.4
+q 1 | There are 784 chairs in a hall arranged in such a way that the chairs in each row are equal to the total number of rows. Find the number of rows. || ایک ہال میں 784 کرسیاں اس طرح لگائی گئی ہیں کہ ہر قطار میں کرسیوں کی تعداد قطاروں کی کل تعداد کے برابر ہے۔ قطاروں کی تعداد معلوم کریں۔ || په یوه تالار کې 784 څوکۍ داسې ایښودل شوې چې په هر قطار کې د څوکیو شمېر د قطارونو له ټول شمېر سره برابر دی. د قطارونو شمېر معلوم کړئ.
+q 2 | The length of the base and altitude of a triangle is 32 cm and 18 cm respectively. If the area of a square is double the area of this triangle, find the length of the square. || ایک مثلث کے قاعدے اور ارتفاع کی لمبائی بالترتیب 32 cm اور 18 cm ہے۔ اگر ایک مربع کا رقبہ اس مثلث کے رقبے کا دگنا ہو تو مربع کی لمبائی معلوم کریں۔ || د یوه مثلث د قاعدې او لوړوالي اوږدوالی په ترتیب سره 32 cm او 18 cm دی. که د یوه مربع مساحت د دې مثلث د مساحت دوه چنده وي، د مربع اوږدوالی معلوم کړئ.
+q 3 | The area of a rectangular sheet is equal to the area of another square shaped paper. Find the length of the square shaped paper if the length and width of the rectangular paper are 28 cm and 7 cm respectively. || ایک مستطیل شیٹ کا رقبہ ایک دوسرے مربع شکل کے کاغذ کے رقبے کے برابر ہے۔ اگر مستطیل کاغذ کی لمبائی اور چوڑائی بالترتیب 28 cm اور 7 cm ہو تو مربع شکل کے کاغذ کی لمبائی معلوم کریں۔ || د یوې مستطیلي پاڼې مساحت د بلې مربع شکله پاڼې له مساحت سره برابر دی. که د مستطیلي پاڼې اوږدوالی او پلنوالی په ترتیب سره 28 cm او 7 cm وي، د مربع شکله پاڼې اوږدوالی معلوم کړئ.
+q 4 | If the length of a square shaped field is 45 metres. What will be the cost of leveling the field at the rate of Rs 455 per square metre? || اگر ایک مربع شکل کے کھیت کی لمبائی 45 میٹر ہو تو 455 روپے فی مربع میٹر کے حساب سے کھیت کو ہموار کرنے کی لاگت کیا ہوگی؟ || که د یوې مربع شکله کروندې اوږدوالی 45 متره وي، په هر مربع متر 455 روپیو د کروندې د هوارولو لګښت به څومره وي؟
+q 5 | Find the length of the square shaped Masjid if its area is 900 m². || مربع شکل کی مسجد کی لمبائی معلوم کریں اگر اس کا رقبہ 900 m² ہو۔ || د مربع شکله جومات اوږدوالی معلوم کړئ که مساحت یې 900 m² وي.

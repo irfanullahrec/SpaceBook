@@ -1,0 +1,36 @@
+@printed 96
+q 8 | Look at each pair of sets to separate the disjoint and overlapping sets. || سیٹوں کے ہر جوڑے کو دیکھ کر غیر مشترک اور مشترک سیٹ الگ کریں۔ || د سېټونو هرې جوړې ته وګورئ او جلا او ګډ سېټونه بېل کړئ.
+qp a | A = {1, 2, 3, 4, 5}, B = {2, 4, 6}
+qp b | N = {1, 2, 3, 4, 5, 6, 7, 8, ...}, D = {−1, −2, −3, −4}
+qp c | S = Set of first five multiples of 2, D = Set of all factors of 9 || S = 2 کے پہلے پانچ اضعاف کا سیٹ، D = 9 کے تمام اجزائے ضربی کا سیٹ || S = د 2 د لومړیو پنځو ضربونو سېټ، D = د 9 د ټولو ضربي اجزاوو سېټ
+qp d | W = Set of whole numbers, K = Set of natural numbers which are neither prime nor composite || W = مکمل اعداد کا سیٹ، K = ان قدرتی اعداد کا سیٹ جو نہ مفرد ہوں نہ مرکب || W = د بشپړو عددونو سېټ، K = د هغو طبیعي عددونو سېټ چې نه لومړني وي او نه مرکب
+qp e | X = Set of natural numbers less than 5, Y = Set of natural numbers greater than or equal to 5 || X = 5 سے کم قدرتی اعداد کا سیٹ، Y = 5 سے بڑے یا اس کے برابر قدرتی اعداد کا سیٹ || X = له 5 څخه کم د طبیعي عددونو سېټ، Y = له 5 څخه لوی یا ورسره برابر د طبیعي عددونو سېټ
+endexercise
+@sec 6.2 | Common Sets and Venn Diagram || عام سیٹ اور وین شکل || عام سېټونه او د وېن ډیاګرام
+# 6.2 Common Sets and Venn Diagram || 6.2 عام سیٹ اور وین شکل || 6.2 عام سېټونه او د وېن ډیاګرام
+p We have studied sets, types of sets and operations on sets in the previous classes. We have also learnt to represent basic operations on sets with the help of Venn diagrams. Let us define some common sets. || ہم نے پچھلی جماعتوں میں سیٹ، سیٹوں کی اقسام اور سیٹوں پر عملیات کا مطالعہ کیا ہے۔ ہم نے وین اشکال کی مدد سے سیٹوں پر بنیادی عملیات ظاہر کرنا بھی سیکھا ہے۔ آئیے کچھ عام سیٹوں کی تعریف کریں۔ || موږ په تېرو ټولګیو کې سېټونه، د سېټونو ډولونه او پر سېټونو عملیې لوستي دي. د وېن ډیاګرامونو په مرسته پر سېټونو د بنسټیزو عملیو ښودل مو هم زده کړي. راځئ ځینې عام سېټونه تعریف کړو.
+table
+th | Sets || سیٹ || سېټونه | Description || تفصیل || تشریح
+tr | i. $N = \{1, 2, 3, 4, 5, \ldots\}$ | Set of natural numbers || قدرتی اعداد کا سیٹ || د طبیعي عددونو سېټ
+tr | ii. $W = \{0, 1, 2, 3, 4, 5, \ldots\}$ | Set of whole numbers || مکمل اعداد کا سیٹ || د بشپړو عددونو سېټ
+tr | iii. $Z = \{0, \pm 1, \pm 2, \pm 3, \ldots\}$ | Set of integers || صحیح اعداد کا سیٹ || د تامو عددونو سېټ
+tr | iv. $Z^+ = \{+1, +2, +3, +4, +5, \ldots\}$ | Set of positive integers || مثبت صحیح اعداد کا سیٹ || د مثبتو تامو عددونو سېټ
+tr | v. $Z^- = \{-1, -2, -3, -4, -5, \ldots\}$ | Set of negative integers || منفی صحیح اعداد کا سیٹ || د منفي تامو عددونو سېټ
+tr | vi. $E = \{0, +2, +4, +6, +8, +10, \ldots\}$ | Set of even numbers || جفت اعداد کا سیٹ || د جفتو عددونو سېټ
+tr | vii. $O = \{+1, +3, +5, +7, +9, \ldots\}$ | Set of odd numbers || طاق اعداد کا سیٹ || د طاقو عددونو سېټ
+tr | viii. $P = \{2, 3, 5, 7, 11, \ldots\}$ | Set of prime numbers || مفرد اعداد کا سیٹ || د لومړنیو عددونو سېټ
+endtable
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The numbers which can be written in the form of $\frac{p}{q}$ where p and q are integers and $q \ne 0$ are known as rational numbers, other wise, they are called irrational numbers. || وہ اعداد جنہیں $\frac{p}{q}$ کی صورت میں لکھا جا سکے جہاں p اور q صحیح اعداد ہوں اور $q \ne 0$، ناطق اعداد کہلاتے ہیں، ورنہ انہیں غیر ناطق اعداد کہتے ہیں۔ || هغه عددونه چې د $\frac{p}{q}$ په بڼه لیکل کېدای شي چې p او q تام عددونه وي او $q \ne 0$، ناطق عددونه بلل کېږي، که نه غیر ناطق عددونه بلل کېږي.
+endbox
+p All the above sets are infinite sets. The set of integers Z can be separated into three sets; || اوپر والے تمام سیٹ لامحدود سیٹ ہیں۔ صحیح اعداد کے سیٹ Z کو تین سیٹوں میں الگ کیا جا سکتا ہے؛ || پورته ټول سېټونه نامحدود سېټونه دي. د تامو عددونو سېټ Z په دریو سېټونو وېشل کېدای شي؛
+- i. $Z^+ = \{+1, +2, +3, +4, +5, \ldots\}$ || i. $Z^+ = \{+1, +2, +3, +4, +5, \ldots\}$ || i. $Z^+ = \{+1, +2, +3, +4, +5, \ldots\}$
+- ii. $Z^- = \{-1, -2, -3, -4, -5, \ldots\}$ || ii. $Z^- = \{-1, -2, -3, -4, -5, \ldots\}$ || ii. $Z^- = \{-1, -2, -3, -4, -5, \ldots\}$
+- iii. Singleton set = {0} || iii. یک رکنی سیٹ = {0} || iii. یو غړی سېټ = {0}
+p Another set is the set of rational numbers, denoted by Q. Can you list some elements of this set? || ایک اور سیٹ ناطق اعداد کا سیٹ ہے جسے Q سے ظاہر کیا جاتا ہے۔ کیا آپ اس سیٹ کے کچھ ارکان لکھ سکتے ہیں؟ || بل سېټ د ناطق عددونو سېټ دی چې په Q ښودل کېږي. ایا تاسو د دې سېټ ځینې غړي لیکلی شئ؟
+p We can represent sets using Venn Diagram. || ہم وین شکل کی مدد سے سیٹوں کو ظاہر کر سکتے ہیں۔ || موږ د وېن ډیاګرام په مرسته سېټونه ښودلی شو.
+example 1 | If U = Set of rational numbers and Z = Set of integers, then this can be represented by the following Venn diagram. || اگر U = ناطق اعداد کا سیٹ اور Z = صحیح اعداد کا سیٹ ہو تو اسے درج ذیل وین شکل سے ظاہر کیا جا سکتا ہے۔ || که U = د ناطق عددونو سېټ او Z = د تامو عددونو سېټ وي، نو دا د لاندې وېن ډیاګرام په واسطه ښودل کېدای شي.
+venn layout=single | U=U | names=Z | a=−1, +1, −5, 0, +6 | shade=a || Z is a subset of U || Z، U کا ذیلی سیٹ ہے || Z د U فرعي سېټ دی
+p This shows that the set of integers is a subset of the set of rational numbers || اس سے ظاہر ہوتا ہے کہ صحیح اعداد کا سیٹ ناطق اعداد کے سیٹ کا ذیلی سیٹ ہے || دا ښيي چې د تامو عددونو سېټ د ناطق عددونو د سېټ فرعي سېټ دی
+endexample
+@issue The Venn diagram for Example 1 also prints a stray letter "A" among the integers inside Z; it is a printing artefact and is not reproduced.

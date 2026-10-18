@@ -1,0 +1,48 @@
+@printed 259
+@issue Exercise 10.6 Q1 prints "WX ∥ YZ, ZY = 4.8 cm, WX = 7 cm, WZ = 2.6 cm and ∠XYZ = 112°". Exercise 10.7 Q3 prints "length of diagonal 4 and length of sides are 5 cm and 6.2 cm" with no unit on the diagonal. The first kite figure (intro) and the figure of Example 1 are recreated; the printed labels are A, B, C, D, O and 3.6cm, 5cm, 5.4cm.
+p **Step 6:** Join S to T. RSTU is the required trapezium. || **مرحلہ 6:** S کو T سے ملائیں۔ RSTU مطلوبہ ذوزنقہ ہے۔ || **شپږم پړاو:** S له T سره وصل کړئ. RSTU اړین ذوزنقه ده.
+svg Trapezium RSTU || ذوزنقہ RSTU || ذوزنقه RSTU
+<svg viewBox="0 0 280 140" width="280" role="img" aria-label="Trapezium RSTU: RS 5 cm at the bottom, UT 3 cm at the top, RU 1.5 cm, angle 75 degrees at R" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="30,115 250,115 165,60 45,60" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><path d="M52 115 A22 22 0 0 0 38 94" fill="none" stroke="#0f172a"/>
+<text x="24" y="130" font-weight="700">R</text><text x="252" y="130" font-weight="700">S</text><text x="168" y="56" font-weight="700">T</text><text x="32" y="56" font-weight="700">U</text><text x="128" y="130">5 cm</text><text x="94" y="52">3 cm</text><text x="2" y="92">1.5 cm</text><text x="54" y="106">75°</text>
+</svg>
+endsvg
+exercise 10.6
+q 1 | Draw a trapezium WXYZ such that WX ∥ YZ, ZY = 4.8 cm, WX = 7 cm, WZ = 2.6 cm and ∠XYZ = 112° || ذوزنقہ WXYZ بنائیں اس طرح کہ WX ∥ YZ، ZY = 4.8 cm، WX = 7 cm، WZ = 2.6 cm اور ∠XYZ = 112° ہو || ذوزنقه WXYZ داسې رسم کړئ چې WX ∥ YZ، ZY = 4.8 cm، WX = 7 cm، WZ = 2.6 cm او ∠XYZ = 112° وي
+q 2 | Draw a trapezium ABCD in which AB ∥ DC, AB = 8.2 cm, BC = 6 cm, AD = 7.5 cm and ∠B = 75° || ذوزنقہ ABCD بنائیں جس میں AB ∥ DC، AB = 8.2 cm، BC = 6 cm، AD = 7.5 cm اور ∠B = 75° ہو || ذوزنقه ABCD رسم کړئ چې AB ∥ DC، AB = 8.2 cm، BC = 6 cm، AD = 7.5 cm او ∠B = 75° وي
+q 3 | Draw a trapezium PQRS in which PQ ∥ RS, PQ = 7.5 cm, QS = 5.9 cm, PR = 4.5 cm and ∠Q = 60° || ذوزنقہ PQRS بنائیں جس میں PQ ∥ RS، PQ = 7.5 cm، QS = 5.9 cm، PR = 4.5 cm اور ∠Q = 60° ہو || ذوزنقه PQRS رسم کړئ چې PQ ∥ RS، PQ = 7.5 cm، QS = 5.9 cm، PR = 4.5 cm او ∠Q = 60° وي
+endexercise
+@sec 10.7 | Construction of a Kite || پتنگ نما چہار ضلعی کی تعمیر || د پتنګ بڼې څلور ضلعي جوړول
+# 10.7 Construction of a Kite || 10.7 پتنگ نما چہار ضلعی کی تعمیر || 10.7 د پتنګ بڼې څلور ضلعي جوړول
+p A quadrilateral with two pairs of equal adjacent sides with unequal diagonals is called a kite. In the figure shown here, ABCD is a kite with $\overline{AB}$ = $\overline{BC}$ and $\overline{AD}$ = $\overline{CD}$. The diagonals are $\overline{AC}$ and $\overline{BD}$. || وہ چہار ضلعی جس کے ملحقہ اطراف کے دو جوڑے برابر ہوں اور وتر غیر برابر ہوں پتنگ (کائٹ) کہلاتا ہے۔ یہاں دکھائے گئے شکل میں ABCD ایک پتنگ ہے جس میں $\overline{AB}$ = $\overline{BC}$ اور $\overline{AD}$ = $\overline{CD}$ ہے۔ وتر $\overline{AC}$ اور $\overline{BD}$ ہیں۔ || هغه څلور ضلعي چې د نږدې ضلعو دوه جوړې یې برابرې او قطرونه یې نابرابر وي پتنګ (کایټ) بلل کېږي. دلته ښودل شوې بڼه کې ABCD یو پتنګ دی چې $\overline{AB}$ = $\overline{BC}$ او $\overline{AD}$ = $\overline{CD}$ پکې دي. قطرونه یې $\overline{AC}$ او $\overline{BD}$ دي.
+svg Kite ABCD with diagonals meeting at O || پتنگ ABCD، وتر O پر ملتے ہیں || پتنګ ABCD، قطرونه په O کې یو بل پرې کوي
+<svg viewBox="0 0 200 220" width="200" role="img" aria-label="Kite ABCD with A on the left, C on the right, B at the top, D at the bottom, diagonals AC and BD meeting at O" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="30,70 100,14 170,70 100,200" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><line x1="30" y1="70" x2="170" y2="70" stroke="#0f172a"/><line x1="100" y1="14" x2="100" y2="200" stroke="#0f172a"/>
+<text x="16" y="74" font-weight="700">A</text><text x="174" y="74" font-weight="700">C</text><text x="96" y="10" font-weight="700">B</text><text x="96" y="214" font-weight="700">D</text><text x="104" y="66">O</text>
+</svg>
+endsvg
+### Construction of kite when its Diagonal and Sides are Given: || پتنگ کی تعمیر جب اس کا وتر اور اطراف دی گئی ہوں: || د پتنګ جوړول کله چې قطر او ضلعې ورکړل شي:
+example 1
+p Construct a kite ABCD when the length of its longer diagonal is 5.4cm and the length of its two sides are 3.6cm and 5cm. || پتنگ ABCD بنائیں جب اس کے بڑے وتر کی لمبائی 5.4cm ہو اور اس کی دو اطراف کی لمبائیاں 3.6cm اور 5cm ہوں۔ || پتنګ ABCD جوړ کړئ کله چې د هغې د لوی قطر اوږدوالی 5.4cm وي او د هغې د دوو ضلعو اوږدوالی 3.6cm او 5cm وي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The longer diagonal of a kite bisects the shorter diagonal perpendicularly. || پتنگ کا بڑا وتر چھوٹے وتر کو عمودی طور پر تنصیف کرتا ہے۔ || د پتنګ لوی قطر وړوکی قطر په عمودي ډول دوه برابره کوي.
+endbox
+## Solution: || حل: || حل:
+p **Steps of Construction.** || **تعمیر کے مراحل۔** || **د جوړولو پړاوونه.**
+qp i | Draw $\overline{AC}$ = 5.4cm. || $\overline{AC}$ = 5.4cm کھینچیں۔ || $\overline{AC}$ = 5.4cm رسم کړئ.
+qp ii | With A as centre, draw arcs of radius 3.6cm above and below $\overline{AC}$. || A کو مرکز لے کر $\overline{AC}$ کے اوپر اور نیچے 3.6cm نصف قطر کی قوسیں کھینچیں۔ || A د مرکز په توګه واخلئ او د $\overline{AC}$ پورته او ښکته د 3.6cm شعاع قوسونه رسم کړئ.
+qp iii | With C as centre, draw arcs of radius 5cm above and below $\overline{AC}$ which intersect the previous arcs at points B and D. || C کو مرکز لے کر $\overline{AC}$ کے اوپر اور نیچے 5cm نصف قطر کی قوسیں کھینچیں جو پچھلی قوسوں کو نقاط B اور D پر کاٹیں۔ || C د مرکز په توګه واخلئ او د $\overline{AC}$ پورته او ښکته د 5cm شعاع قوسونه رسم کړئ چې مخکینیو قوسونو ته په ټکو B او D کې پرې کړي.
+qp iv | Join A with B, B with C, C with D and D with A. ABCD is the required kite. || A کو B سے، B کو C سے، C کو D سے اور D کو A سے ملائیں۔ ABCD مطلوبہ پتنگ ہے۔ || A له B سره، B له C سره، C له D سره او D له A سره وصل کړئ. ABCD اړین پتنګ دی.
+svg Kite ABCD with AC = 5.4 cm, AB = AD = 3.6 cm, CB = CD = 5 cm || پتنگ ABCD: AC = 5.4 cm، AB = AD = 3.6 cm، CB = CD = 5 cm || پتنګ ABCD: AC = 5.4 cm، AB = AD = 3.6 cm، CB = CD = 5 cm
+<svg viewBox="0 0 220 220" width="220" role="img" aria-label="Kite with horizontal diagonal AC of 5.4 cm, B above and D below, AB and AD 3.6 cm, CB and CD 5 cm" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,110 68,13 182,110 68,207" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><line x1="20" y1="110" x2="182" y2="110" stroke="#0f172a"/>
+<text x="4" y="114" font-weight="700">A</text><text x="186" y="114" font-weight="700">C</text><text x="64" y="10" font-weight="700">B</text><text x="64" y="220" font-weight="700">D</text>
+<text x="78" y="106">5.4cm</text><text x="12" y="56">3.6cm</text><text x="12" y="170">3.6cm</text><text x="134" y="56">5cm</text><text x="134" y="170">5cm</text>
+</svg>
+endsvg
+endexample
+exercise 10.7
+q 1 | Construct a kite PQRS in which $\overline{PQ}$ = 3cm, $\overline{QR}$ = 5cm and $\overline{PR}$ (diagonal) = 7cm. || پتنگ PQRS بنائیں جس میں $\overline{PQ}$ = 3cm، $\overline{QR}$ = 5cm اور $\overline{PR}$ (وتر) = 7cm ہو۔ || پتنګ PQRS جوړ کړئ چې $\overline{PQ}$ = 3cm، $\overline{QR}$ = 5cm او $\overline{PR}$ (قطر) = 7cm وي.
+q 2 | Construct a kite KLMN in which $\overline{KL}$ = 2.5cm, $\overline{LM}$ = 4.5cm and $\overline{KM}$ (diagonal) = 5.5cm. || پتنگ KLMN بنائیں جس میں $\overline{KL}$ = 2.5cm، $\overline{LM}$ = 4.5cm اور $\overline{KM}$ (وتر) = 5.5cm ہو۔ || پتنګ KLMN جوړ کړئ چې $\overline{KL}$ = 2.5cm، $\overline{LM}$ = 4.5cm او $\overline{KM}$ (قطر) = 5.5cm وي.
+q 3 | Construct a kite with length of diagonal 4 and length of sides are 5 cm and 6.2 cm respectively. || ایک پتنگ بنائیں جس کے وتر کی لمبائی 4 اور اطراف کی لمبائیاں بالترتیب 5 cm اور 6.2 cm ہوں۔ || یو پتنګ جوړ کړئ چې د قطر اوږدوالی یې 4 او د ضلعو اوږدوالی یې په ترتیب سره 5 cm او 6.2 cm وي.
+endexercise

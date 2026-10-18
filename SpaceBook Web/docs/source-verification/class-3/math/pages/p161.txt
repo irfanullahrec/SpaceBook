@@ -1,0 +1,20 @@
+@printed 156
+@deco Outline figures; a pink square ABCD to measure; children riding a pencil.
+exercise Exercise 2
+q 1 | Write the name of following figures and their number of sides. || درج ذیل اشکال کے نام اور ان کے اضلاع کی تعداد لکھیں۔ || د لاندې شکلونو نومونه او د اړخونو شمېر یې ولیکئ.
+qp i | Figure (i)
+fig geo 140 140 ; G 20 20 100 100 #fff
+sol Square; 4 sides ## Four equal sides. || چار برابر اضلاع۔ || څلور برابر اړخونه.
+qp ii | Figure (ii)
+fig geo 240 140 ; G 20 20 200 100 #fff
+sol Rectangle; 4 sides ## Four sides; opposite sides are equal. || چار اضلاع؛ آمنے سامنے کے اضلاع برابر۔ || څلور اړخونه؛ مخامخ اړخونه برابر.
+qp iii | Figure (iii)
+fig geo 180 140 ; S 20 20 20 120 ; S 20 120 160 120 ; S 160 120 20 20
+sol Triangle; 3 sides ## Three straight sides. || تین سیدھے اضلاع۔ || درې سم اړخونه.
+qp iv | Figure (iv)
+fig geo 160 160 ; C 80 80 65 #fff
+sol Circle; no sides ## A circle has no side and no vertex. || دائرے کا کوئی ضلع اور کوئی راس نہیں ہوتا۔ || دایره هېڅ اړخ او رأس نه لري.
+q 2 | Measure the length of sides and find the perimeter of the following: || اضلاع کی لمبائی ناپیں اور درج ذیل کا احاطہ معلوم کریں: || د اړخونو اوږدوالی اندازه کړئ او د لاندې محیط معلوم کړئ:
+qp i | Square ABCD: $\overline{AB}$ = ___ $\overline{BC}$ = ___ $\overline{CD}$ = ___ $\overline{AD}$ = ___ Perimeter = ___
+fig geo 200 200 ; G 30 30 140 140 #f0abfc ; P 22 184 A ; P 180 184 B ; P 180 24 C ; P 22 24 D
+sol Measure each side on the printed page with a ruler and add the four lengths. ## The book prints no lengths; ABCD is a square, so all four sides measure the same and Perimeter = 4 × side. || کتاب میں لمبائیاں نہیں دی گئیں؛ ABCD مربع ہے، اس لیے چاروں اضلاع برابر ہیں اور احاطہ = 4 × ضلع۔ || کتاب اوږدوالي نه دي ورکړي؛ ABCD مربع ده، نو ټول څلور اړخونه برابر دي او محیط = 4 × اړخ.

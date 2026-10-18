@@ -1,0 +1,33 @@
+@printed 162
+@sec u9-intro | Introduction || تعارف || پېژندنه
+# Introduction || تعارف || پېژندنه
+p In the previous class we have learned area and perimeter of square and rectangle. We have learned about surface area of cube and cuboid. Now will find the area and perimeter of compound shapes. We will also find surface area and volume of 3-D shapes including right prism and cylinder. || پچھلی جماعت میں ہم نے مربع اور مستطیل کا رقبہ اور احاطہ سیکھا۔ ہم نے مکعب اور مکعب نما کے سطحی رقبے کے بارے میں سیکھا۔ اب ہم مرکب اشکال کا رقبہ اور احاطہ معلوم کریں گے۔ ہم قائم منشور اور اسطوانے سمیت سہ جہتی اشکال کا سطحی رقبہ اور حجم بھی معلوم کریں گے۔ || په تېر ټولګي کې موږ د مربع او مستطیل مساحت او محیط زده کړل. د مکعب او مکعب نما د سطحې مساحت په اړه مو زده کړل. اوس به د مرکبو شکلونو مساحت او محیط معلوم کړو. د قایم منشور او استوانې په ګډون به د درې بعدي شکلونو د سطحې مساحت او حجم هم معلوم کړو.
+@sec 9.1 | Perimeter and Area of Composite Figures || مرکب اشکال کا احاطہ اور رقبہ || د مرکبو شکلونو محیط او مساحت
+# 9.1 Perimeter and Area of Composite Figures || 9.1 مرکب اشکال کا احاطہ اور رقبہ || 9.1 د مرکبو شکلونو محیط او مساحت
+p A composite shape is made up of two or more simple shapes placed beside each other. || مرکب شکل دو یا زیادہ سادہ اشکال سے مل کر بنتی ہے جو ایک دوسرے کے ساتھ رکھی ہوں۔ || مرکب شکل له دوو یا ډېرو ساده شکلونو جوړ وي چې یو بل ته څنګ ایښودل شوي وي.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p How we find the perimeter and area of square and rectangle || ہم مربع اور مستطیل کا احاطہ اور رقبہ کیسے معلوم کرتے ہیں || موږ د مربع او مستطیل محیط او مساحت څنګه معلوموو
+endbox
+example 1 | Ahmad has a garden with a swimming pool in it. Find the perimeter and area of the garden as well as the swimming pool. Also find the area of the garden without the pool. || احمد کے پاس ایک باغ ہے جس میں سوئمنگ پول ہے۔ باغ اور سوئمنگ پول کا احاطہ اور رقبہ معلوم کریں۔ پول کے بغیر باغ کا رقبہ بھی معلوم کریں۔ || احمد یو باغ لري چې لامبو حوض پکې دی. د باغ او لامبو حوض محیط او مساحت معلوم کړئ. له حوض پرته د باغ مساحت هم معلوم کړئ.
+svg Garden: an L-shape 11 m long and 9 m high made of square A (4 m × 4 m) and rectangle B (7 m × 9 m); the pool is a 5 m × 3 m rectangle inside B || باغ: 11 m لمبی اور 9 m اونچی L شکل جو مربع A (4 m × 4 m) اور مستطیل B (7 m × 9 m) سے بنی ہے؛ پول B کے اندر 5 m × 3 m کا مستطیل ہے || باغ: د 11 m اوږدوالي او 9 m لوړوالي L شکل چې له مربع A (4 m × 4 m) او مستطیل B (7 m × 9 m) جوړ دی؛ حوض د B دننه 5 m × 3 m مستطیل دی
+<svg viewBox="0 0 300 230" width="300" role="img" aria-label="L-shaped garden: bottom 11 m, right side 9 m, top 7 m, step 5 m down then 4 m left, left side 4 m. Dotted line splits square A (4 by 4) from rectangle B (7 by 9). A 5 m by 3 m pool rectangle sits near the top of B." font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#0f172a">
+<path d="M40 190 H260 V20 H120 V114 H40 Z" fill="#bae6fd" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="120" y1="114" x2="120" y2="190" stroke="#0f172a" stroke-dasharray="3 3"/>
+<rect x="136" y="40" width="95" height="40" fill="#7dd3fc" stroke="#0f172a" stroke-width="1.4"/>
+<text x="150" y="190" dy="16" text-anchor="middle">11 m</text><text x="190" y="14" text-anchor="middle">7 m</text><text x="266" y="110">9 m</text><text x="34" y="156" text-anchor="end">4 m</text><text x="80" y="108" text-anchor="middle">4 m</text><text x="183" y="36" text-anchor="middle">5 m</text><text x="236" y="64">3 m</text><text x="80" y="156" text-anchor="middle" font-weight="700">A</text><text x="190" y="130" text-anchor="middle" font-weight="700">B</text>
+</svg>
+endsvg
+p **Solution:** Let's divide the total area of the garden into 1 rectangle and 1 square. || **حل:** آئیے باغ کے کل رقبے کو 1 مستطیل اور 1 مربع میں تقسیم کریں۔ || **حل:** راځئ د باغ ټول مساحت په 1 مستطیل او 1 مربع ووېشو.
+eq \begin{aligned} \text{Perimeter of whole garden} &= 11\,\text{m} + 9\,\text{m} + 7\,\text{m} + 5\,\text{m} + 4\,\text{m} + 4\,\text{m} = 40\,\text{m} \\ \text{Area of the whole garden} &= \text{Area of square A} + \text{Area of rectangle B} = (4\,\text{m} \times 4\,\text{m}) + (7\,\text{m} \times 9\,\text{m}) \\ &= 16\,\text{m}^2 + 63\,\text{m}^2 = 79\,\text{m}^2 \end{aligned}
+p Let's find the area of the pool. || آئیے پول کا رقبہ معلوم کریں۔ || راځئ د حوض مساحت معلوم کړو.
+eq \begin{aligned} \text{Perimeter of the pool} &= 5\,\text{m} + 3\,\text{m} + 5\,\text{m} + 3\,\text{m} = 16\,\text{m} \\ \text{Area of the pool} &= 5\,\text{m} \times 3\,\text{m} = 15\,\text{m}^2 \end{aligned}
+eq \begin{aligned} \text{So, the area of the garden without the pool} &= \text{total area of the garden} - \text{area of the pool} \\ &= 79\,\text{m}^2 - 15\,\text{m}^2 = 64\,\text{m}^2 \end{aligned}
+endexample
+@issue The perimeter is printed as 11 + 9 + 7 + 5 + 4 + 4 = 40 m; the labelled step is 5 m but the actual vertical drop on the left of B is 9 − 4 = 5 m, so the total is consistent. The figure is read from the printed drawing.
+example 2 | Find the area of the given composite figure. || دی گئی مرکب شکل کا رقبہ معلوم کریں۔ || د ورکړل شوي مرکب شکل مساحت معلوم کړئ.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p To find the area of a composite figure, divide it further into squares and rectangles and then find the area. || مرکب شکل کا رقبہ معلوم کرنے کے لیے اسے مزید مربعوں اور مستطیلوں میں تقسیم کریں اور پھر رقبہ معلوم کریں۔ || د مرکب شکل د مساحت د موندلو لپاره هغه نور په مربعاتو او مستطیلونو ووېشئ او بیا مساحت معلوم کړئ.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Area of square is obtained by multiplying its length with length. || مربع کا رقبہ اس کی لمبائی کو لمبائی سے ضرب دے کر حاصل ہوتا ہے۔ || د مربع مساحت د هغې د اوږدوالي په اوږدوالي کې په ضربولو لاسته راځي.
+endbox

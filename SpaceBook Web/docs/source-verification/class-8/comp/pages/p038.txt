@@ -1,0 +1,27 @@
+@printed 34
+@unit 3 | Algorithmic Thinking and Problem Solving || الگورتھمی سوچ اور مسئلہ حل کرنا || الګوریتمي فکر او د ستونزې حل
+@sec opening | Unit 3 opening || یونٹ 3 کا آغاز || د یونټ 3 پیل
+@deco An orange "3" badge and a blue banner "ALGORITHMIC THINKING AND PROBLEM SOLVING"; a "Learning Outcomes" heading with a notebook icon; two framed columns (Knowledge, Skills). At the foot a cycle diagram "Computational Thinking: Key Concepts" with four circles joined by arrows: Decomposition (purple), Pattern Recognition (green), Abstraction (orange), Algorithm (blue).
+# Unit 3: Algorithmic Thinking and Problem Solving || یونٹ 3: الگورتھمی سوچ اور مسئلہ حل کرنا || دریم څپرکی: الګوریتمي فکر او د ستونزې حل
+box info | Learning Outcomes — Knowledge || تعلیمی حاصلات — علم || د زده کړې پایلې — پوهه
+p Students will be able to: || طلبہ اس قابل ہوں گے کہ: || زده کوونکي به وکولی شي چې:
+slo Define and infer simple and complex problems, and how to identify each. || سادہ اور پیچیدہ مسائل کی تعریف کریں اور نتیجہ اخذ کریں، اور یہ کہ ہر ایک کی شناخت کیسے کی جاتی ہے۔ || ساده او پېچلې ستونزې تعریف او استنباط کړي او دا چې هره یوه څنګه پېژندل کېږي.
+slo Discuss the scope and limitations of some problems that cannot be solved computationally (e.g. factoring very large numbers in a very short time, or Turing's Halting problem, how a computer can never reliably inspect someone's code and tell whether it will halt or run forever). || ان بعض مسائل کی گنجائش اور حدود پر بحث کریں جو کمپیوٹیشنل طور پر حل نہیں ہو سکتے (مثلاً بہت بڑے اعداد کے جزوِ ضربی بہت کم وقت میں نکالنا، یا ٹیورنگ کا ہالٹنگ مسئلہ کہ کمپیوٹر کبھی بھی کسی کے کوڈ کا قابلِ اعتماد معائنہ کر کے یہ نہیں بتا سکتا کہ وہ رک جائے گا یا ہمیشہ چلتا رہے گا)۔ || د ځینو هغو ستونزو پراخوالی او محدودیتونه ولټوي چې په کمپیوټري ډول نه حلېږي (لکه ډېرې لوی شمېرې په ډېر لنډ وخت کې فکتورول، یا د ټیورنګ د ودرېدو (Halting) ستونزه، چې کمپیوټر هېڅکله نشي کولای د چا کوډ په باوري ډول وڅېړي او ووايي چې ودرېږي که تل پر چلېږي).
+slo Discuss basics of writing pseudocode. || سوڈو کوڈ لکھنے کی بنیادی باتوں پر بحث کریں۔ || د سوډو کوډ لیکلو بنسټونه ولټوي.
+slo Discuss the concept of nesting. || نیسٹنگ کے تصور پر بحث کریں۔ || د نیسټینګ مفکوره ولټوي.
+slo Discuss the concept of constants and variables. || مستقل (کانسٹنٹس) اور متغیرات (ویری ایبلز) کے تصور پر بحث کریں۔ || د ثابتونو او متغیرونو مفکوره ولټوي.
+slo Distinguish scenario/problem where If, If then else, and If with multiple conditions can be applied. || ایسے منظرنامے/مسئلے میں فرق کریں جہاں If، If then else اور متعدد شرائط والا If لاگو کیا جا سکتا ہے۔ || هغه حالت/ستونزه توپیر کړي چېرته چې If، If then else او د څو شرطونو سره If پلی کېدای شي.
+endbox
+box info | Learning Outcomes — Skills || تعلیمی حاصلات — مہارتیں || د زده کړې پایلې — مهارتونه
+p Students will be able to: || طلبہ اس قابل ہوں گے کہ: || زده کوونکي به وکولی شي چې:
+slo Create algorithms/solutions to simple and complex problems. || سادہ اور پیچیدہ مسائل کے لیے الگورتھم/حل بنائیں۔ || د ساده او پېچلو ستونزو لپاره الګوریتمونه/حلونه جوړ کړي.
+slo Apply the best possible solution to a problem from a pool of solutions. || حلوں کے مجموعے میں سے کسی مسئلے پر بہترین ممکنہ حل لاگو کریں۔ || د حلونو له ټولګې څخه پر یوې ستونزې غوره ممکن حل پلی کړي.
+slo Describe that there are ways to characterize how well algorithms perform and that two algorithms can perform differently for the same task. || بیان کریں کہ الگورتھمز کی کارکردگی کو پرکھنے کے طریقے موجود ہیں اور یہ کہ ایک ہی کام کے لیے دو الگورتھمز مختلف کارکردگی دکھا سکتے ہیں۔ || بیان کړي چې د الګوریتمونو د کارکردګۍ د ارزولو لارې شته او دا چې دوه الګوریتمونه د یو ډول کار لپاره بېلابېل ډول فعالیت کولای شي.
+slo Explain, with examples, some problems, which cannot be solved computationally. || مثالوں کے ساتھ ان بعض مسائل کی وضاحت کریں جو کمپیوٹیشنل طور پر حل نہیں ہو سکتے۔ || په بېلګو سره هغه ځینې ستونزې تشریح کړي چې په کمپیوټري ډول نه حلېږي.
+slo Represent algorithms using pseudocode. || سوڈو کوڈ کے ذریعے الگورتھمز کی نمائندگی کریں۔ || الګوریتمونه د سوډو کوډ په کارولو سره وړاندې کړي.
+slo Apply the concept of nesting up to level 2 in looping and conditions. || لوپنگ اور شرائط میں لیول 2 تک نیسٹنگ کا تصور لاگو کریں۔ || په لوپینګ او شرطونو کې تر دویم کچې پورې د نیسټینګ مفکوره پلی کړي.
+slo Apply repeat and forever loops in Algorithm building. || الگورتھم بنانے میں ریپیٹ اور فار ایور لوپس لاگو کریں۔ || د الګوریتم په جوړولو کې repeat او forever لوپونه پلی کړي.
+slo Identify problems using the IF statement with multiple conditions. || متعدد شرائط والے IF بیان کے ذریعے مسائل کی شناخت کریں۔ || هغه ستونزې وپېژني چې د څو شرطونو سره IF بیان کاروي.
+slo Identify problem-solving techniques (sequence, loop, and conditions) applicable to a specific problem. || کسی مخصوص مسئلے پر لاگو ہونے والی مسئلہ حل کرنے کی تکنیکوں (ترتیب، لوپ اور شرائط) کی نشاندہی کریں۔ || د ځانګړې ستونزې لپاره د پلي کېدونکو د ستونزې حل تخنیکونه (ترتیب، لوپ او شرطونه) وپېژني.
+endbox
+p Figure: Computational Thinking: Key Concepts — Decomposition → Pattern Recognition → Abstraction → Algorithm (cycle). || تصویر: کمپیوٹیشنل تھنکنگ: کلیدی تصورات — ڈی کمپوزیشن ← پیٹرن ریکگنیشن ← ایبسٹریکشن ← الگورتھم (دائرہ)۔ || انځور: کمپیوټري فکر: کلیدي مفاهیم — تجزیه ← د نمونې پېژندنه ← انتزاع ← الګوریتم (دوره).

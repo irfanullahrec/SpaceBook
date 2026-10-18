@@ -1,0 +1,14 @@
+@printed 172
+@issue The three graphs carry no equations; they are redrawn to match the printed lines (intersecting lines meeting at about (4, 0); parallel lines with slope about 1/4; one steep line for the coincident case).
+qp 4 | In the same way, find coordinates of at least 3 points for the second equation. || اسی طرح دوسری مساوات کے لیے کم از کم 3 نقاط کے محددات معلوم کریں۔ || همدارنګه د دوهمې معادلې لپاره لږ تر لږه د 3 ټکو کوارډینېټونه ومومئ.
+qp 5 | Plot the points for both equations and if needed, extend the length of the lines until they meet. || دونوں مساواتوں کے نقاط لگائیں اور اگر ضرورت ہو تو لکیروں کی لمبائی بڑھائیں یہاں تک کہ وہ مل جائیں۔ || د دواړو معادلو ټکي ولګوئ او که اړتیا وي د کرښو اوږدوالی تر هغه وغځوئ چې سره یوځای شي.
+qp 6 | Look at the point at which the 2 lines meet. These coordinates of this point will give us the solution of the given simultaneous linear equations. || اس نقطے کو دیکھیں جہاں 2 لکیریں ملتی ہیں۔ اس نقطے کے یہ محددات ہمیں دی گئی ہم وقت خطی مساواتوں کا حل دیں گے۔ || هغه ټکي ته وګورئ چې پکې 2 کرښې سره یوځای کېږي. د دې ټکي کوارډینېټونه به موږ ته د ورکړل شویو همزمانه خطي معادلو حل راکړي.
+### One point of intersection- One solution || تقاطع کا ایک نقطہ - ایک حل || د تقاطع یو ټکی - یو حل
+p If the lines intersect at one common point, this shows that there is only one solution for the simultaneous linear equations. || اگر لکیریں ایک مشترک نقطے پر ملیں تو یہ ظاہر کرتا ہے کہ ہم وقت خطی مساواتوں کا صرف ایک حل ہے۔ || که کرښې په یوه ګډ ټکي کې سره پرې شي، دا ښيي چې همزمانه خطي معادلې یوازې یو حل لري.
+plane lines=0.75,-3,-6.67,8;-2,8,0,8 | pts=4,0
+### No point of Intersection (parallel lines) - No Solution || تقاطع کا کوئی نقطہ نہیں (متوازی لکیریں) - کوئی حل نہیں || د تقاطع هېڅ ټکی نشته (موازي کرښې) - هېڅ حل نشته
+p If the lines do not intersect at all i.e. they are parallel to each other, then there is no solution. || اگر لکیریں بالکل نہ ملیں یعنی ایک دوسرے کے متوازی ہوں تو کوئی حل نہیں ہے۔ || که کرښې هېڅ سره پرې نه شي یعنې یو له بل سره موازي وي، نو هېڅ حل نشته.
+plane lines=0.25,3,-8,8;0.25,-1,-8,8
+### If same lines (coincident lines) – Many Solutions || اگر ایک ہی لکیریں ہوں (منطبق لکیریں) - بہت سے حل || که همغه کرښې وي (منطبقې کرښې) - ډېر حلونه
+p Both equations give the same line, then there are infinitely many solutions. || دونوں مساواتیں ایک ہی لکیر دیں تو لامحدود حل ہیں۔ || که دواړه معادلې همغه یوه کرښه ورکړي، نو بې شمېره حلونه شته.
+plane lines=2.4,-4.4,-1.5,5

@@ -1,0 +1,40 @@
+@printed 102
+@issue Q1 matching: the parts in each picture were counted on the scan (strips 6, circle 8, triangle row 7, long strip 9; circle 4, strip 5, triangle 3, oval 2).
+exercise Exercise 1 (Fraction)
+q 1 | Match the shape with the given fraction. || شکل کو دیے گئے کسر سے ملائیں۔ || شکل له ورکړل شوي کسر سره وصل کړئ.
+qp a | Fractions 1/3, 1/4, 1/2, 1/5 with: a circle in 4 parts (1 coloured), a strip of 5 parts (1 coloured), a triangle in 3 parts (1 coloured), an oval in 2 parts (1 coloured)
+pshapes circ4:2 ; rect5:5 ; tri3:3 ; oval2:1 || Left box shapes || بائیں خانے کی اشکال || د کیڼ بکس شکلونه
+sol 1/3 → triangle, 1/4 → circle, 1/2 → oval, 1/5 → strip ## Count the equal parts of each shape. || ہر شکل کے برابر حصے گنیں۔ || د هر شکل برابرې برخې وشمېرئ.
+qp b | Fractions 1/7, 1/9, 1/8, 1/6 with: 6 horizontal strips, a circle in 8 parts, a row of 7 triangles, a strip of 9 parts (one part coloured in each)
+fig parts hstrips6 1 #1e3a8a || 6 strips || 6 پٹیاں || 6 پټۍ
+fig parts circ8 7 #7dd3fc || circle in 8 parts || 8 حصوں والا دائرہ || په 8 برخو دایره
+fig parts trirow7 1 #c026d3 || row of 7 triangles || 7 مثلثوں کی قطار || د 7 مثلثونو قطار
+fig parts bar9 1 #ea580c || strip of 9 parts || 9 حصوں والی پٹی || په 9 برخو پټۍ
+sol 1/7 → row of triangles, 1/9 → long strip, 1/8 → circle, 1/6 → horizontal strips ## Count the equal parts of each shape. || ہر شکل کے برابر حصے گنیں۔ || د هر شکل برابرې برخې وشمېرئ.
+q 2 | Colour one part of each shape and write fraction for the coloured part. || ہر شکل کا ایک حصہ رنگیں اور رنگے ہوئے حصے کا کسر لکھیں۔ || د هر شکل یوه برخه رنګ کړئ او د رنګ شوې برخې کسر ولیکئ.
+qp a | rectangle in 3 horizontal strips, one coloured → 1/3 (done in the textbook)
+qp b | hexagon in 4 parts
+fig parts hexq4 0 || hexagon || مسدس || شپږګوټی
+sol 1/4 ## 4 equal parts. || 4 برابر حصے۔ || 4 برابرې برخې.
+qp c | triangle in 2 parts
+fig parts trimid2 0 || triangle || مثلث || مثلث
+sol 1/2 ## 2 equal parts. || 2 برابر حصے۔ || 2 برابرې برخې.
+qp d | flower with 5 petals
+fig parts flower5 0 || flower || پھول || ګل
+sol 1/5 ## 5 equal petals. || 5 برابر پتیاں۔ || 5 برابرې پاڼې.
+qp e | circle in 6 parts
+fig parts circ6 0 || circle || دائرہ || دایره
+sol 1/6 ## 6 equal parts. || 6 برابر حصے۔ || 6 برابرې برخې.
+qp f | zigzag of 7 panels
+fig parts zig7 0 || zigzag || زگ زیگ || کږه وږه
+sol 1/7 ## 7 equal panels. || 7 برابر حصے۔ || 7 برابرې برخې.
+qp g | triangle in 9 small triangles
+fig parts tritri9 0 || triangle || مثلث || مثلث
+sol 1/9 ## 9 equal small triangles. || 9 برابر چھوٹے مثلث۔ || 9 برابر کوچني مثلثونه.
+qp h | square in 8 triangles
+fig parts sqstar8 0 || square || مربع || مربع
+sol 1/8 ## 8 equal triangles. || 8 برابر مثلث۔ || 8 برابر مثلثونه.
+qp i | 10 chevron parts
+fig parts chevron10 0 || chevrons || شیورون || شېورون
+sol 1/10 ## 10 equal parts. || 10 برابر حصے۔ || 10 برابرې برخې.
+endexercise

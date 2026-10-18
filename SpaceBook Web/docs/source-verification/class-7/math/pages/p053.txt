@@ -1,0 +1,51 @@
+@printed 49
+ladder 2:100; 2:50; 5:25; :5
+ladder 7:49; :7
+@issue The division ladders for 100 and 49 (and later 100 and 81) stop at the last prime (5, 7, 3) without the final quotient 1; reproduced as printed.
+eq \frac{100}{49} = \frac{\overline{2 \times 2} \times \overline{5 \times 5}}{\overline{7 \times 7}}
+eq \sqrt{\frac{100}{49}} = \frac{2 \times 5}{7} = \frac{10}{7}
+p So, the square root of $2\frac{2}{49}$ is $\frac{10}{7}$. || لہٰذا $2\frac{2}{49}$ کا جذرِ مربع $\frac{10}{7}$ ہے۔ || نو د $2\frac{2}{49}$ مربع جذر $\frac{10}{7}$ دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following numbers. || درج ذیل اعداد کا جذرِ مربع معلوم کریں۔ || د لاندې عددونو مربع جذر معلوم کړئ.
+qp a | $\frac{121}{144}$
+qp b | $\frac{169}{256}$
+qp c | 1.44
+qp d | 2.258
+endbox
+example 4 | Find the square root of 0.81. || 0.81 کا جذرِ مربع معلوم کریں۔ || د 0.81 مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First change the decimal number into a fraction and then find the square root. || پہلے اعشاری عدد کو کسر میں تبدیل کریں اور پھر جذرِ مربع معلوم کریں۔ || لومړی اعشاري عدد کسر ته واړوئ او بیا مربع جذر معلوم کړئ.
+ladder 2:100; 2:50; 5:25; :5
+ladder 3:81; 3:27; 3:9; :3
+m $0.81 = \frac{81}{100}$
+eq \frac{81}{100} = \frac{\overline{3 \times 3} \times \overline{3 \times 3}}{\overline{2 \times 2} \times \overline{5 \times 5}}
+eq \sqrt{\frac{81}{100}} = \frac{3 \times 3}{2 \times 5} = \frac{9}{10} = 0.9
+p So, the square root of 0.81 is 0.9. || لہٰذا 0.81 کا جذرِ مربع 0.9 ہے۔ || نو د 0.81 مربع جذر 0.9 دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following. || درج ذیل کا جذرِ مربع معلوم کریں۔ || د لاندې مربع جذر معلوم کړئ.
+qp a | $\frac{121}{144}$
+qp b | $\frac{169}{256}$
+qp c | 0.00064
+qp d | 0.144
+endbox
+@issue The two Quick Check boxes on this page repeat parts (a) and (b); the first box's (d) "2.258" and the second box's (d) "0.144" are not perfect squares. Kept as printed.
+exercise 3.2
+q 1 | Find the square root of the following numbers by factorisation method. || تجزی کے طریقے سے درج ذیل اعداد کا جذرِ مربع معلوم کریں۔ || د تجزیې په طریقه د لاندې عددونو مربع جذر معلوم کړئ.
+qp a | 64
+qp b | 121
+qp c | 169
+qp d | 625
+qp e | 324
+qp f | 225
+qp g | 49
+qp h | 900
+q 2 | Find the square root of the following fractions by factorisation method. || تجزی کے طریقے سے درج ذیل کسور کا جذرِ مربع معلوم کریں۔ || د تجزیې په طریقه د لاندې کسرونو مربع جذر معلوم کړئ.
+qp a | $\frac{256}{361}$
+qp b | $3\frac{1}{16}$
+qp c | $5\frac{125}{100}$
+qp d | $\frac{100}{841}$
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students about the factorisation method to find the square root of numbers. Write some perfect squares on the board and ask them to find the square root of these numbers by factorisation method. || طلبہ کو اعداد کا جذرِ مربع معلوم کرنے کے لیے تجزی کا طریقہ سمجھائیں۔ بورڈ پر کچھ کامل مربع لکھیں اور ان سے تجزی کے طریقے سے ان اعداد کا جذرِ مربع معلوم کرنے کو کہیں۔ || زده کوونکو ته د عددونو د مربع جذر د موندلو لپاره د تجزیې طریقه تشریح کړئ. پر تخته څو بشپړ مربعات ولیکئ او ترې وغواړئ چې د تجزیې په طریقه د دې عددونو مربع جذر معلوم کړي.
+endbox

@@ -1,0 +1,21 @@
+@printed 50
+@deco Two Scratch scripts shown as coloured blocks, each with a picture of the red sprite "Pico" captioned "Move the sprite" (upright) and "Bounce the sprite back" (upside down).
+### 4.2.1 Control the Program with Conditions || 4.2.1 شرائط کے ذریعے پروگرام کو کنٹرول کرنا || 4.2.1 د شرطونو په مرسته پروګرام کنټرول
+p Conditions are simple checks which are either true or false. If the condition matches, then corresponding code is executed else skipped. If we want 'Pico' sprite to move left 10 steps when left-arrow key is pressed then it should only move left. Similarly, with the right-arrow key it should move right. We simply apply an 'if-then' condition as shown in figure where it moves 10 steps right and left when right-arrow and left-arrow keys are pressed, respectively. || شرائط سادہ جانچیں ہیں جو یا تو درست ہوتی ہیں یا غلط۔ اگر شرط پوری ہو تو متعلقہ کوڈ چلتا ہے ورنہ چھوڑ دیا جاتا ہے۔ اگر ہم چاہیں کہ 'Pico' اسپرائٹ بائیں تیر والی کی دبانے پر 10 قدم بائیں چلے تو اسے صرف بائیں چلنا چاہیے۔ اسی طرح دائیں تیر والی کی کے ساتھ اسے دائیں چلنا چاہیے۔ ہم صرف 'if-then' شرط لگاتے ہیں جیسا کہ شکل میں دکھایا گیا ہے جہاں دائیں اور بائیں تیر والی کیز دبانے پر یہ بالترتیب 10 قدم دائیں اور بائیں چلتا ہے۔ || شرطونه ساده کتنې دي چې یا سمې وي یا غلطې. که شرط برابر شي نو اړوند کوډ اجرا کېږي که نه پرېښودل کېږي. که موږ وغواړو چې 'Pico' سپرایټ د کیڼ تیر کیلۍ د ټکولو پر مهال ۱۰ ګامونه کیڼ لورې ته ولاړ شي نو باید یوازې کیڼ لورې ته ولاړ شي. همداسې د ښي تیر کیلۍ سره باید ښي لورې ته ولاړ شي. موږ یوازې 'if-then' شرط پلی کوو لکه څنګه چې په انځور کې ښودل شوی چېرته چې د ښي او کیڼ تیر کیلیو د ټکولو پر مهال په ترتیب ۱۰ ګامونه ښي او کیڼ لورې ته ځي.
+box code | Scratch script — Move the sprite || سکریچ اسکرپٹ — اسپرائٹ کو حرکت دیں || سکریچ سکریپټ — سپرایټ حرکت ورکړئ
+m when (green flag) clicked
+m if <key [left arrow] pressed?> then
+m     move (-10) steps
+m if <key [right arrow] pressed?> then
+m     move (10) steps
+endbox
+p However, if you keep pressing the right-arrow key the sprite will reach the edge and won't be able to move any further. To lessen the number of key-strokes and check the program, we changed the value of steps taken to 100 this time. Next, we add an 'if' condition within the 'if-then' conditions which is 'if on edge, bounce'. This way, when it reaches on the edge on the right hand side and another right-arrow key is pressed, the sprite bounces and is inverted. Continue to press the right arrow key and it will reach the left edge and after one more key press it retains the sprite in upright position again. || تاہم اگر آپ دائیں تیر والی کی دباتے رہیں تو اسپرائٹ کنارے تک پہنچ جائے گا اور مزید آگے نہیں بڑھ سکے گا۔ کی اسٹروکس کی تعداد کم کرنے اور پروگرام کی جانچ کے لیے ہم نے اس بار قدموں کی قدر 100 کر دی۔ اگلے مرحلے میں ہم 'if-then' شرائط کے اندر ایک 'if' شرط شامل کرتے ہیں جو 'if on edge, bounce' ہے۔ اس طرح جب یہ دائیں جانب کنارے پر پہنچتا ہے اور ایک اور دائیں تیر والی کی دبائی جاتی ہے تو اسپرائٹ اچھلتا ہے اور الٹا ہو جاتا ہے۔ دائیں تیر والی کی دباتے رہیں تو یہ بائیں کنارے تک پہنچ جائے گا اور ایک اور کی دبانے کے بعد اسپرائٹ دوبارہ سیدھی حالت میں آ جاتا ہے۔ || خو که تاسو د ښي تیر کیلۍ ټکوئ نو سپرایټ به غاړې ته ورسېږي او نور مخکې نشي تلی. د کیلۍ ټکولو شمېر کمولو او پروګرام ازمایلو لپاره موږ دا ځل د ګامونو ارزښت ۱۰۰ کړ. بیا موږ د 'if-then' شرطونو دننه یو 'if' شرط اضافه کوو چې 'if on edge, bounce' دی. په دې ډول کله چې دا ښي لورې غاړې ته ورسېږي او بله د ښي تیر کیلۍ ټک شي نو سپرایټ شړېږي او اوړي. د ښي تیر کیلۍ ټکول دوام ورکړئ نو دا به کیڼې غاړې ته ورسېږي او د یو بل ټک وروسته به سپرایټ بیا په ولاړه حالت کې شي.
+box code | Scratch script — Bounce the sprite back || سکریچ اسکرپٹ — اسپرائٹ کو واپس اچھالیں || سکریچ سکریپټ — سپرایټ بېرته وټوپوئ
+m when (green flag) clicked
+m if <key [right arrow] pressed?> then
+m     move (100) steps
+m     if on edge, bounce
+m if <key [left arrow] pressed?> then
+m     move (-100) steps
+m     if on edge, bounce
+endbox

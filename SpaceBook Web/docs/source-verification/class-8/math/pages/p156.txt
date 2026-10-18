@@ -1,0 +1,33 @@
+@printed 148
+@sec u7-intro | Introduction || تعارف || پېژندنه
+## Introduction || تعارف || پېژندنه
+p In many of our life situation we use exponent where we want to make lengthy calculation much easier. We use it when we find the area of something. In this unit we will learn about base, exponent and its value. we will also learn about some laws of exponent. || اپنی زندگی کی کئی صورتوں میں ہم قوت نما استعمال کرتے ہیں جہاں ہم لمبے حساب کو بہت آسان بنانا چاہتے ہیں۔ ہم اسے کسی چیز کا رقبہ معلوم کرتے وقت استعمال کرتے ہیں۔ اس اکائی میں ہم اساس، قوت نما اور اس کی قیمت کے بارے میں سیکھیں گے۔ ہم قوت نما کے کچھ قوانین کے بارے میں بھی سیکھیں گے۔ || زموږ د ژوند په ډېرو حالتونو کې هغه وخت توان کاروو چې غواړو اوږد حساب ډېر اسانه کړو. دا د یوه شي د مساحت د موندلو پر مهال کاروو. په دې څپرکي کې به د قاعدې، توان او د هغه د ارزښت په اړه زده کړو. همدارنګه به د توان د ځینو قوانینو په اړه زده کړو.
+@sec 7.1 | Base, Exponent and Value || اساس، قوت نما اور قیمت || قاعده، توان او ارزښت
+# 7.1 Base, Exponent and Value || 7.1 اساس، قوت نما اور قیمت || 7.1 قاعده، توان او ارزښت
+p Several mathematical calculations require writing a number in the form of repeated multiplication when it is being multiplied by itself multiple times. To write lengthy repeated multiplication, we need a lot of space and it's a cumbersome activity. To make repeated multiplication easier to express, we use exponential notation. It shows how many times a number, variable or expression is being multiplied by itself using an exponent that is raised a little when writing it. || کئی ریاضیاتی حسابات میں کسی عدد کو بار بار ضرب کی صورت میں لکھنا پڑتا ہے جب اسے کئی بار اسی سے ضرب دیا جا رہا ہو۔ لمبی بار بار ضرب لکھنے کے لیے بہت جگہ درکار ہوتی ہے اور یہ ایک مشکل کام ہے۔ بار بار ضرب کو آسانی سے ظاہر کرنے کے لیے ہم قوت نمائی علامت استعمال کرتے ہیں۔ یہ ظاہر کرتی ہے کہ کوئی عدد، متغیر یا عبارت کتنی بار اسی سے ضرب ہو رہی ہے، ایک قوت نما کے ذریعے جو لکھتے وقت تھوڑا اوپر رکھا جاتا ہے۔ || ډېر ریاضیاتي حسابونه اړتیا لري چې یو عدد د تکراري ضرب په بڼه ولیکو کله چې څو ځله په خپل ځان کې ضربېږي. د اوږد تکراري ضرب د لیکلو لپاره ډېر ځای ته اړتیا ده او ستړی کوونکی کار دی. د تکراري ضرب د اسانه ښودلو لپاره توانیزه نښه کاروو. دا ښيي چې یو عدد، متغیر یا افاده څو ځله په خپل ځان کې ضربېږي، د یوه توان په مرسته چې د لیکلو پر مهال لږ پورته لیکل کېږي.
+p For example: || مثال کے طور پر: || د بېلګې په توګه:
+p 16 can be written as: || 16 کو یوں لکھا جا سکتا ہے: || 16 داسې لیکل کېدای شي:
+m $2 \times 2 \times 2 \times 2 = 2^4$ (2 to the power 4)
+svg 2 × 2 × 2 × 2 = 2⁴ = 16 || 2 × 2 × 2 × 2 = 2⁴ = 16 || 2 × 2 × 2 × 2 = 2⁴ = 16
+<svg viewBox="0 0 280 110" width="280" role="img" aria-label="Four times 2 written as 2 times 2 times 2 times 2 equals 2 to the power 4 equals 16; 2 is the base, 4 is the exponent (power), 16 is the value" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0f172a">
+<defs><marker id="exA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d4ed8"/></marker></defs>
+<text x="40" y="28" font-size="13" font-weight="700">4 times 2</text>
+<path d="M14 44q0 -8 8 -8h80q8 0 8 8" fill="none" stroke="#0f172a"/>
+<text x="10" y="62">2×2×2×2 = 2</text><text x="113" y="52" font-size="11" fill="#1d4ed8" font-weight="700">4</text><text x="122" y="62"> = 16</text>
+<text x="150" y="20" font-size="13" font-weight="700">exponent (power)</text>
+<line x1="150" y1="25" x2="118" y2="42" stroke="#1d4ed8" marker-end="url(#exA)"/>
+<line x1="106" y1="95" x2="106" y2="70" stroke="#1d4ed8" marker-end="url(#exA)"/><text x="94" y="108" font-size="13" font-weight="700">base</text>
+<line x1="210" y1="58" x2="172" y2="58" stroke="#1d4ed8" marker-end="url(#exA)"/><text x="214" y="63" font-size="13" font-weight="700">value</text>
+</svg>
+endsvg
+p The numbers on the left side of the above example are in expanded form while the number on the right is in exponential form. It represents the same repeated multiplication in short and precise form. || اوپر کی مثال میں بائیں طرف کے اعداد پھیلی ہوئی شکل میں ہیں جبکہ دائیں طرف کا عدد قوت نمائی شکل میں ہے۔ یہ اسی بار بار ضرب کو مختصر اور جامع شکل میں ظاہر کرتا ہے۔ || په پورتنۍ بېلګه کې د کیڼ لوري عددونه په پراخه بڼه دي په داسې حال کې چې د ښي لوري عدد په توانیزه بڼه دی. دا همغه تکراري ضرب په لنډه او دقیقه بڼه ښيي.
+m In $2^4 = 16$,
+m 2 is called the base of $2^4$
+m 4 is called the exponent of $2^4$
+m 16 is the value of $2^4$
+p Similarly, || اسی طرح، || همدارنګه،
+p 25 can be written as: || 25 کو یوں لکھا جا سکتا ہے: || 25 داسې لیکل کېدای شي:
+m $5 \times 5 = 5^2$ (5 to the power 2).
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Exponents are also called Powers or Indices. || قوت نما کو قوتیں یا اشاریے بھی کہتے ہیں۔ || توانونو ته قوتونه یا شاخصونه هم وايي.
+endbox

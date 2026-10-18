@@ -1,0 +1,15 @@
+@printed 102
+@deco Photos of a bookshelf, a football ground (300 m by 200 m) and a boy doing a long jump.
+qp 3 | 7 km 632 m + 8 km 214 m
+qp 4 | 25 km 312 m + 21 km 676 m
+qp 5 | 21 km 815 m + 17 km 183 m
+qp 6 | 41 km 745 m + 38 km 134 m
+qsolve measop
+q 7 | Ahmed used two wooden boards of lengths 3 m 10 cm and 4 m 35 cm for making book shelf. Find the total length of two wood boards. || احمد نے کتابوں کی الماری بنانے کے لیے 3 m 10 cm اور 4 m 35 cm لمبائی کے دو لکڑی کے تختے استعمال کیے۔ دونوں تختوں کی کل لمبائی معلوم کریں۔ || احمد د کتابونو المارۍ جوړولو لپاره د 3 m 10 cm او 4 m 35 cm اوږدوالي دوه لرګین تختې وکارولې. د دواړو تختو ټول اوږدوالی معلوم کړئ.
+qsol measop 3 m 10 cm + 4 m 35 cm
+q 8 | Junaid's father completed one round on jogging track in the morning while exercising. Whose length and width is given in diagram. How much distance did he cover? || جنید کے والد نے صبح ورزش کرتے ہوئے جاگنگ ٹریک کا ایک چکر مکمل کیا، جس کی لمبائی اور چوڑائی شکل میں دی گئی ہے۔ انہوں نے کتنا فاصلہ طے کیا؟ || د جنید پلار سهار د تمرین پر مهال د منډې د لارې یو پړاو بشپړ کړ چې اوږدوالی او پلنوالی یې په شکل کې ورکړل شوي. څومره واټن یې ووهه؟
+fig geo 360 230 ; G 10 10 300 180 #bbf7d0 ; L 10 210 310 210 #0f172a both ; P 160 226 300 m ; L 330 10 330 190 #0f172a both ; P 348 104 200 m || Ground 300 m long and 200 m wide || 300 m لمبا اور 200 m چوڑا میدان || 300 m اوږد او 200 m پلن میدان
+sol 1,000 m (= 1 km) ## One round goes along all four sides: 300 m + 200 m + 300 m + 200 m = 1,000 m. || ایک چکر چاروں اطراف سے گزرتا ہے: 300 + 200 + 300 + 200 = 1,000 m۔ || یو پړاو په څلورو اړخونو تېرېږي: 300 + 200 + 300 + 200 = 1,000 m.
+q 9 | In a long jump, Pervaiz jumps 4 m 25 cm in his first attempt and 5 m 15 cm in his second attempt. Find the total distance he covers in two jumps? || لمبی چھلانگ میں پرویز نے پہلی کوشش میں 4 m 25 cm اور دوسری کوشش میں 5 m 15 cm چھلانگ لگائی۔ دونوں چھلانگوں میں طے کیا گیا کل فاصلہ معلوم کریں؟ || په اوږده ټوپ کې پرویز په لومړۍ هڅه کې 4 m 25 cm او په دویمه هڅه کې 5 m 15 cm ټوپ ووهه. په دواړو ټوپونو کې ټول واټن معلوم کړئ؟
+qsol measop 4 m 25 cm + 5 m 15 cm
+endexercise

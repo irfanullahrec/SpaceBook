@@ -1,0 +1,27 @@
+@printed 149
+example 2 | The altitude of the parallelogram is 19 cm and its area is 570 cm². Find the base of parallelogram. || متوازی الاضلاع کا ارتفاع 19 cm اور رقبہ 570 cm² ہے۔ اس کا قاعدہ معلوم کریں۔ || د متوازي الاضلاع لوړوالی 19 cm او مساحت یې 570 cm² دی. قاعده یې معلومه کړئ.
+shape para | base=? | alt=19 cm
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Altitude} &= 19 \text{ cm} \\ \text{Area} &= 570 \text{ cm}^2 \\ \text{Area of parallelogram} &= \text{base} \times \text{altitude} \\ 570 \text{ cm}^2 &= \text{base} \times 19 \text{ cm} \\ \frac{570 \text{ cm}^2}{19 \text{ cm}} &= \text{base} \\ \text{base} &= 30 \text{ cm} \end{aligned}
+endexample
+## 8.3.3 Area of trapezium || 8.3.3 ذوزنقہ کا رقبہ || 8.3.3 د ذوزنقې مساحت
+p A trapezium is a 4-sided figure with one pair of parallel sides. || ذوزنقہ چار اضلاع والی شکل ہے جس کے متوازی اضلاع کا ایک جوڑا ہوتا ہے۔ || ذوزنقه څلور ضلعي شکل دی چې د موازي ضلعو یوه جوړه لري.
+p The two parallel sides of the trapezium are its two bases and altitude is the shortest distance between the two bases. || ذوزنقہ کے دو متوازی اضلاع اس کے دو قاعدے ہیں اور ارتفاع دونوں قاعدوں کے درمیان سب سے کم فاصلہ ہے۔ || د ذوزنقې دوه موازي ضلعې یې دوه قاعدې دي او لوړوالی د دواړو قاعدو ترمنځ تر ټولو لنډ واټن دی.
+shape trap | top=b₁ | base=b₂ | alt=Altitude
+p We can find the area of the trapezium if the length of its two bases and altitude is given: || اگر ذوزنقہ کے دونوں قاعدوں کی لمبائی اور ارتفاع دیا ہو تو ہم اس کا رقبہ معلوم کر سکتے ہیں: || که د ذوزنقې د دواړو قاعدو اوږدوالی او لوړوالی ورکړل شوی وي، مساحت یې معلومولی شو:
+m Area of trapezium $=$ altitude $\times \left(\frac{b_1 + b_2}{2}\right)$
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A trapezium is a quadrilateral with one pair of parallel sides. || ذوزنقہ ایک چوکور ہے جس کے متوازی اضلاع کا ایک جوڑا ہوتا ہے۔ || ذوزنقه یو څلور ضلعي دی چې د موازي ضلعو یوه جوړه لري.
+endbox
+example 1 | Find the area of the path around the given trapezium. || دی گئی ذوزنقہ کے گرد راستے کا رقبہ معلوم کریں۔ || د ورکړل شوې ذوزنقې شاوخوا د لارې مساحت معلوم کړئ.
+shape trap nest | top=b₁ = 4 cm | base=b₂ = 6 cm | itop=b₃ = 2 cm | ibase=b₄ = 4 cm | ialt=2 cm | oalt=4 cm
+p **Solution:** || **حل:** || **حل:**
+table
+tr | Length of $b_1 = 4$ cm | Length of $b_2 = 6$ cm
+tr | Length of $b_3 = 2$ cm | Length of $b_4 = 4$ cm
+tr | Altitude $= a_1 = 4$ cm | Altitude $= a_2 = 2$ cm
+endtable
+eq \begin{aligned} \text{Area of trapezium} &= a_1 \times \left(\frac{b_1 + b_2}{2}\right) \\ \text{Area of outer trapezium} &= 4 \text{ cm} \times \left(\frac{4 \text{ cm} + 6 \text{ cm}}{2}\right) \\ &= 4 \text{ cm} \times \left(\frac{10 \text{ cm}}{2}\right) \\ &= 20 \text{ cm}^2 \end{aligned}
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The space occupied by the triangle is called its area. || مثلث کی گھیری ہوئی جگہ اس کا رقبہ کہلاتی ہے۔ || هغه ځای چې مثلث یې نیسي مساحت یې بلل کېږي.
+endbox

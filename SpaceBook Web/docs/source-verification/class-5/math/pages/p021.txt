@@ -1,0 +1,19 @@
+@printed 16
+@deco Cartoon children beside the speech bubbles; picture of Pakistani currency notes (Rs 50, 100, 500, 5000).
+box note
+p Divide 76,000 by 10, 100 and 1,000. || 76,000 کو 10، 100 اور 1,000 سے تقسیم کریں۔ || 76,000 پر 10، 100 او 1,000 ووېشئ.
+endbox
+eq 76{,}000 \div 10 = 7{,}600
+eq 76{,}000 \div 100 = 760
+eq 76{,}000 \div 1{,}000 = 76
+box note
+p I have saved Rs 16,620 from my pocket money. I want to distribute this amount among 12 children. How can I find the amount each child will get? || میں نے اپنے جیب خرچ سے 16,620 روپے بچائے ہیں۔ میں یہ رقم 12 بچوں میں تقسیم کرنا چاہتی ہوں۔ میں کیسے معلوم کروں کہ ہر بچے کو کتنی رقم ملے گی؟ || ما له خپل جېب خرڅ څخه 16,620 روپۍ سپمولې دي. غواړم دا پیسې پر 12 ماشومانو ووېشم. څنګه معلومه کړم چې هر ماشوم ته به څومره پیسې ورسېږي؟
+endbox
+box note
+p To find the amount each child will get, we will divide 16,620 by 12. || ہر بچے کو ملنے والی رقم معلوم کرنے کے لیے ہم 16,620 کو 12 سے تقسیم کریں گے۔ || د هر ماشوم د برخې د معلومولو لپاره به 16,620 پر 12 ووېشو.
+endbox
+longdiv 12 | 16620 | 1385@4 | -12@1 ; 46@2 ; -36@2 ; 102@3 ; -96@3 ; 60@4 ; -60@4 ; 0@4 || Long division of 16,620 by 12: divisor 12, dividend 16620, quotient 1385, remainder 0 || 16,620 کی 12 سے لمبی تقسیم: مقسوم علیہ 12، مقسوم 16620، خارجِ قسمت 1385، باقی 0 || د 16,620 پر 12 اوږد وېش: وېشونکی 12، وېشل کېدونکی 16620، خارج قسمت 1385، پاتې شونی 0
+p Thus, each child will gets Rs. 1,385 || پس ہر بچے کو 1,385 روپے ملیں گے۔ || نو هر ماشوم ته به 1,385 روپۍ ورسېږي.
+eq 16{,}620 \div 12 = 1{,}385
+p Quotient = 1,385 || خارجِ قسمت = 1,385 || خارج قسمت = 1,385
+@issue "each child will gets" is a grammar slip in the source; kept as printed. The printed figure labels Divisor (12), Dividend (16620) and Quotient (1385); these labels are given in the figure caption.

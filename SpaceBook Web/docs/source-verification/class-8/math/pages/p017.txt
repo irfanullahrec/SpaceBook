@@ -1,0 +1,23 @@
+@printed 13
+eq = \frac{-12}{20}
+eq = \frac{-12 \div 4}{20 \div 4} \quad \text{(dividing numerator and denominator by 4)}
+eq = \frac{-3}{5}
+p So, the standard form of $\frac{12}{-20}$ is $\frac{-3}{5}$. || لہٰذا $\frac{12}{-20}$ کی معیاری صورت $\frac{-3}{5}$ ہے۔ || نو د $\frac{12}{-20}$ معیاري بڼه $\frac{-3}{5}$ ده.
+endexample
+## 2.1.2 Rules to find whether a given Rational Number is Terminating or Not || 2.1.2 یہ معلوم کرنے کے اصول کہ دیا گیا ناطق عدد مختتم ہے یا نہیں || 2.1.2 د دې معلومولو قاعدې چې ورکړل شوی ناطق عدد ختمېدونکی دی که نه
+p By division process we can find if the given rational numbers are terminating or non-terminating decimals. But there is a rule to check if a rational number is terminating or not without actually dividing. It states that, "If the denominator of a rational number in standard form has no prime factor other than 2, 5 or 2 and 5, then and only then the rational number is a terminating decimal". || تقسیم کے عمل سے ہم معلوم کر سکتے ہیں کہ دیے گئے ناطق اعداد مختتم ہیں یا غیر مختتم اعشاریہ۔ لیکن اصل تقسیم کیے بغیر یہ جانچنے کا ایک اصول ہے کہ ناطق عدد مختتم ہے یا نہیں۔ اس کے مطابق، "اگر معیاری صورت میں ناطق عدد کے نسب نما کا 2، 5 یا 2 اور 5 کے سوا کوئی مفرد جزوِ ضربی نہ ہو، تو صرف اور صرف اسی صورت میں ناطق عدد مختتم اعشاریہ ہوتا ہے"۔ || د وېش په عمل موږ معلومولی شو چې ورکړل شوي ناطق عددونه ختمېدونکي دي که نه ختمېدونکي اعشاري. خو پرته له دې چې په رښتیا ووېشو، د دې ازمویلو لپاره یوه قاعده شته چې ناطق عدد ختمېدونکی دی که نه. هغه وايي: "که په معیاري بڼه د ناطق عدد مخرج له 2، 5 یا 2 او 5 پرته بل لومړنی ضربي جز ونه لري، نو یوازې او یوازې په دې حالت کې ناطق عدد ختمېدونکی اعشاري دی".
+example 1
+p Find if $\frac{28}{8}$ is a terminating decimal or not without dividing. Then verify your answer by division. || تقسیم کیے بغیر معلوم کریں کہ $\frac{28}{8}$ مختتم اعشاریہ ہے یا نہیں۔ پھر تقسیم کے ذریعے اپنے جواب کی تصدیق کریں۔ || پرته له وېش څخه معلوم کړئ چې $\frac{28}{8}$ ختمېدونکی اعشاري دی که نه. بیا د وېش په مرسته خپل ځواب تایید کړئ.
+## Solution: || حل: || حل:
+p Here, $\frac{28}{8}$ is not in standard form. First convert it to standard form. || یہاں $\frac{28}{8}$ معیاری صورت میں نہیں ہے۔ پہلے اسے معیاری صورت میں تبدیل کریں۔ || دلته $\frac{28}{8}$ په معیاري بڼه نه دی. لومړی یې معیاري بڼې ته واړوئ.
+eq \frac{28}{8} = \frac{28 \div 4}{8 \div 4} = \frac{7}{2}
+p The standard form of $\frac{28}{8}$ is $\frac{7}{2}$. The denominator 2 of $\frac{7}{2}$ has only one factor i.e. 2. || $\frac{28}{8}$ کی معیاری صورت $\frac{7}{2}$ ہے۔ $\frac{7}{2}$ کے نسب نما 2 کا صرف ایک جزوِ ضربی ہے یعنی 2۔ || د $\frac{28}{8}$ معیاري بڼه $\frac{7}{2}$ ده. د $\frac{7}{2}$ مخرج 2 یوازې یو ضربي جز لري یعنې 2.
+p So, $\frac{28}{8}$ is a terminating decimal number. || لہٰذا $\frac{28}{8}$ ایک مختتم اعشاری عدد ہے۔ || نو $\frac{28}{8}$ یو ختمېدونکی اعشاري عدد دی.
+## Verification: || تصدیق: || تایید:
+p To verify our answer, let's divide. || اپنے جواب کی تصدیق کے لیے آئیے تقسیم کریں۔ || د خپل ځواب د تایید لپاره راځئ ووېشو.
+longdiv 8 | 28.0 | 3.5@3 | -24@1 ; 40@3 ; -40@3 ; 0@3
+p As, $\frac{28}{8} = 3.5$ (a terminating decimal), so our answer is correct. || چونکہ $\frac{28}{8} = 3.5$ (ایک مختتم اعشاریہ)، لہٰذا ہمارا جواب درست ہے۔ || څرنګه چې $\frac{28}{8} = 3.5$ (یو ختمېدونکی اعشاري)، نو زموږ ځواب سم دی.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students that by dividing rational numbers we can convert them into decimal numbers. Guide them by finding the factors of the denominator. We can guess if the rational number is terminating or not. || طلبہ کو سمجھائیں کہ ناطق اعداد کو تقسیم کر کے ہم انہیں اعشاری اعداد میں تبدیل کر سکتے ہیں۔ نسب نما کے اجزائے ضربی معلوم کر کے ان کی رہنمائی کریں۔ ہم اندازہ لگا سکتے ہیں کہ ناطق عدد مختتم ہے یا نہیں۔ || زده کوونکو ته تشریح کړئ چې د ناطقو عددونو په وېشلو یې اعشاري عددونو ته اړولی شو. د مخرج د ضربي اجزاوو په موندلو یې لارښوونه وکړئ. موږ اټکل کولی شو چې ناطق عدد ختمېدونکی دی که نه.
+endbox

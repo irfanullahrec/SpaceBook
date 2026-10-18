@@ -1,0 +1,30 @@
+@printed 159
+@issue Book pages 157–158 (the rest of 8.5.1 and the start of 8.5.2: volume of a cube and cuboid, and surface area of a cube) are missing from every source copy (JPG scans, the original PDF and the Word export). The scans go from page 156 straight to page 159. A clearly labelled SpaceBook note below gives the formulas that pages 159–161 use; it is not book text.
+box info | SpaceBook note — book pages 157–158 are missing from the source || اسپیس بک نوٹ — کتاب کے صفحات 157–158 ماخذ میں موجود نہیں || د سپېس بوک یادونه — د کتاب 157–158 پاڼې په سرچینه کې نشته
+p The source copy of this book skips pages 157–158. The formulas below are the ones used on the next pages (they also appear in the book's glossary). || اس کتاب کی ماخذ نقل میں صفحات 157–158 موجود نہیں۔ ذیل کے فارمولے اگلے صفحات میں استعمال ہوئے ہیں (یہ کتاب کی فرہنگ میں بھی ہیں)۔ || د دې کتاب په سرچینه نسخه کې 157–158 پاڼې نشته. لاندې فورمولونه په راتلونکو پاڼو کې کارول شوي (د کتاب په لغتنامه کې هم شته).
+m Volume of cube $=$ length $\times$ length $\times$ length $= l^3$
+m Volume of cuboid $=$ length $\times$ width $\times$ height $= l \times w \times h$
+m Surface area of cube $= 6 \times (\text{length})^2$
+p A cuboid has 6 faces in 3 equal pairs: top and bottom, front and back, left and right. Its surface area is the sum of the areas of all 6 faces. || مکعب نما کے 6 رخ ہیں جو 3 برابر جوڑوں میں ہیں: اوپر اور نیچے، آگے اور پیچھے، بائیں اور دائیں۔ اس کا سطحی رقبہ تمام 6 رخوں کے رقبوں کا مجموعہ ہے۔ || مستطیلي مکعب 6 مخونه لري چې په 3 برابرو جوړو کې دي: پورته او لاندې، مخکې او شا، کیڼ او ښي. سطحي مساحت یې د ټولو 6 مخونو د مساحتونو مجموعه ده.
+endbox
+svg Top and bottom faces (l × w), front and back faces (l × h), left and right faces (w × h) of a cuboid || مکعب نما کے اوپر اور نیچے کے رخ (l × w)، آگے اور پیچھے کے رخ (l × h)، بائیں اور دائیں رخ (w × h) || د مستطیلي مکعب پورته او لاندې مخونه (l × w)، مخکې او شا مخونه (l × h)، کیڼ او ښي مخونه (w × h)
+<svg viewBox="0 0 600 120" width="600" role="img" aria-label="Three cuboids: top and bottom faces shaded with sides l and w; front and back faces shaded with sides l and h; left and right faces shaded with sides w and h" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-style="italic" fill="#0f172a">
+<g transform="translate(10,10)"><polygon points="0,30 120,30 145,10 25,10" fill="#e2e8f0" stroke="#0f172a"/><polygon points="0,90 120,90 145,70 25,70" fill="#e2e8f0" stroke="#0f172a"/><polyline points="0,30 0,90 M120,30 120,90 M145,10 145,70" fill="none" stroke="#0f172a"/><line x1="0" y1="30" x2="0" y2="90" stroke="#0f172a"/><line x1="120" y1="30" x2="120" y2="90" stroke="#0f172a"/><line x1="145" y1="10" x2="145" y2="70" stroke="#0f172a"/><text x="60" y="104">l</text><text x="138" y="88">w</text></g>
+<g transform="translate(210,10)"><polygon points="0,30 120,30 120,90 0,90" fill="#e2e8f0" stroke="#0f172a"/><polygon points="25,10 145,10 145,70 25,70" fill="#e2e8f0" fill-opacity=".6" stroke="#0f172a"/><line x1="0" y1="30" x2="25" y2="10" stroke="#0f172a"/><line x1="120" y1="30" x2="145" y2="10" stroke="#0f172a"/><line x1="120" y1="90" x2="145" y2="70" stroke="#0f172a"/><text x="60" y="104">l</text><text x="150" y="45">h</text></g>
+<g transform="translate(410,10)"><polygon points="0,30 25,10 25,70 0,90" fill="#e2e8f0" stroke="#0f172a"/><polygon points="120,30 145,10 145,70 120,90" fill="#e2e8f0" stroke="#0f172a"/><line x1="0" y1="30" x2="120" y2="30" stroke="#0f172a"/><line x1="0" y1="90" x2="120" y2="90" stroke="#0f172a"/><line x1="25" y1="10" x2="145" y2="10" stroke="#0f172a"/><text x="150" y="45">h</text><text x="138" y="88">w</text></g>
+</svg>
+endsvg
+eq \begin{aligned} \text{Total area of top and bottom faces} &= 2 \times (l \times w) \\ \text{Total area of front and back faces} &= 2 \times (l \times h) \\ \text{Total area of left and right faces} &= 2 \times (w \times h) \end{aligned}
+p If we add all the above areas, we get the total surface area of the cuboid. || اگر ہم اوپر کے تمام رقبے جمع کریں تو ہمیں مکعب نما کا کل سطحی رقبہ ملتا ہے۔ || که پورتنۍ ټولې مساحتونه جمع کړو، د مستطیلي مکعب ټوله سطحي مساحت لاسته راځي.
+m Total surface area of cuboid $= 2 \times (l \times w) + 2 \times (l \times h) + 2 \times (w \times h)$
+p Take out 2 as common. || 2 کو مشترک نکالیں۔ || 2 د ګډ په توګه بهر کړئ.
+m Total surface area of the cuboid $= 2 \times [(l \times w) + (l \times h) + (w \times h)]$
+example 1 | Find the surface area of the given cube. || دیے گئے مکعب کا سطحی رقبہ معلوم کریں۔ || د ورکړل شوي مکعب سطحي مساحت معلوم کړئ.
+solid cube || A cube with edge 4 m || 4 m کنارے والا مکعب || د 4 m څنډې مکعب
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Length of the cube} &= 4 \text{ m} \\ \text{Surface area of the cube} &= 6\,(\text{length})^2 \\ &= 6 \times (4 \text{ m})^2 \\ &= 6 \times (4 \text{ m} \times 4 \text{ m}) \\ &= 6 \times 16 \text{ m}^2 \\ &= 96 \text{ m}^2 \end{aligned}
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Ask them to find out the surface area of their Maths book. Then call the students one by one and ask them how did they find the volume. || ان سے اپنی ریاضی کی کتاب کا سطحی رقبہ معلوم کرنے کو کہیں۔ پھر طلبہ کو ایک ایک کر کے بلائیں اور پوچھیں کہ انہوں نے حجم کیسے معلوم کیا۔ || ترې وغواړئ چې د خپل ریاضي کتاب سطحي مساحت ومومي. بیا زده کوونکي یو په یو راوبولئ او وپوښتئ چې حجم یې څنګه وموند.
+p Ask students one day before to bring empty boxes of cube or cuboid shape in class then next day students will find the volume?surface area of those boxes. || ایک دن پہلے طلبہ سے کہیں کہ مکعب یا مکعب نما شکل کے خالی ڈبے کلاس میں لائیں، پھر اگلے دن طلبہ ان ڈبوں کا حجم/سطحی رقبہ معلوم کریں گے۔ || یوه ورځ مخکې زده کوونکو ته ووایاست چې د مکعب یا مستطیلي مکعب شکل تش بکسونه ټولګي ته راوړي، بیا بله ورځ به د هغو بکسونو حجم/سطحي مساحت ومومي.
+endbox

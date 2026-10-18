@@ -1,0 +1,19 @@
+@printed 7
+q 6 | Write capital letters in alphabetical order. || بڑے حروف حروفِ تہجی کی ترتیب سے لکھیں۔ || لوی توري د الفبا په ترتیب ولیکئ.
+tletters _ _ _ _ _ _ _ | _ _ _ _ _ _ _ | _ _ _ _ _ _ _ | _ _ _ _ _ || Four empty writing lines || لکھنے کی چار خالی سطریں || د لیکلو څلور تشې کرښې
+sol A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ## Write all 26 capital letters in order. || تمام ۲۶ بڑے حروف ترتیب سے لکھیں۔ || ټول ۲۶ لوی توري په ترتیب ولیکئ.
+q 7 | Write the letters which come before or after each given letter. || ہر دیے گئے حرف سے پہلے یا بعد میں آنے والے حروف لکھیں۔ || د هر ورکړل شوي توري نه مخکې یا وروسته راتلونکي توري ولیکئ.
+cards _,M || __ M || __ M || __ M
+sol L ## L comes before M. || L، M سے پہلے آتا ہے۔ || L له M نه مخکې راځي.
+q 8 | __ B || __ B || __ B
+cards _,B || __ B || __ B || __ B
+sol A ## A comes before B. || A، B سے پہلے آتا ہے۔ || A له B نه مخکې راځي.
+q 9 | E __ || E __ || E __
+cards E,_ || E __ || E __ || E __
+sol F ## F comes after E. || F، E کے بعد آتا ہے۔ || F له E وروسته راځي.
+q 10 | Y __ || Y __ || Y __
+cards Y,_ || Y __ || Y __ || Y __
+sol Z ## Z comes after Y. || Z، Y کے بعد آتا ہے۔ || Z له Y وروسته راځي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Encourage students to write the alphabet themselves. Ask them to space letters evenly. Guide them to write properly on the lines. Ask them to write the small letters in alphabetical order in their notebooks. Encourage them to read the given letters and write the letter which comes before or after each given letter. || طلبہ کو خود حروفِ تہجی لکھنے کی ترغیب دیں۔ انہیں حروف کے درمیان برابر فاصلہ رکھنے کو کہیں۔ سطروں پر درست لکھنے میں رہنمائی کریں۔ کاپیوں میں چھوٹے حروف ترتیب سے لکھوائیں۔ دیے گئے حروف پڑھ کر ان سے پہلے یا بعد والا حرف لکھنے کی ترغیب دیں۔ || زده کوونکي وهڅوئ چې الفبا پخپله ولیکي. ورته ووایئ چې د تورو ترمنځ برابر واټن پرېږدي. په کرښو د سمې لیکنې لارښوونه وکړئ. واړه توري دې په کتابچو کې په ترتیب ولیکي. وهڅوئ یې چې ورکړل شوي توري ولولي او ترې مخکې یا وروسته توری ولیکي.
+endbox

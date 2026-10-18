@@ -1,0 +1,64 @@
+@printed 172
+q D | Long questions || طویل سوالات || اوږدې پوښتنې
+qp 1 | How does gravity help to keep the planets in their orbits around the sun? || کششِ ثقل سیاروں کو سورج کے گرد مداروں میں رکھنے میں کیسے مدد دیتی ہے؟ || جاذبه د لمر شاوخوا سیارې په مدارونو کې په ساتلو کې څنګه مرسته کوي؟
+sol The sun's huge mass gives it strong gravity. Each planet moves fast sideways (inertia); the sun's pull keeps bending its path toward the sun, acting as a centripetal force, so the planet goes round in an orbit instead of flying away in a straight line. The pull is not strong enough to drag the planet into the sun.
+qp 2 | Differentiate between the mass and weight of a body. || جسم کی کمیت اور وزن میں فرق کریں۔ || د جسم د کتلې او وزن توپیر وکړئ.
+sol Mass: quantity of matter; SI unit kg; measured with a physical/beam balance; same on earth and moon. Weight: force of gravity on the body (W = mg); SI unit newton; measured with a spring balance; changes with g (a 10 kg watermelon weighs 100 N on earth and 16 N on the moon).
+qp 3 | What is the axial tilt of the Earth? Describe its role in the earth's day and night. What role does it play in the earth's seasonal change? || زمین کا محوری جھکاؤ کیا ہے؟ دن اور رات میں اس کا کردار بیان کریں۔ موسموں کی تبدیلی میں یہ کیا کردار ادا کرتا ہے؟ || د ځمکې محوري کږوالی څه دی؟ په ورځ او شپه کې یې رول بیان کړئ. د موسمونو په بدلون کې څه رول لري؟
+sol The axis is tilted 23.5° from the perpendicular to the orbital plane. Day and night come from the earth spinning on its axis; because of the tilt, day length changes through the year (long days in summer, short in winter; near the poles there can be polar day and polar night). The tilt makes each hemisphere lean toward the sun for part of the year (summer, direct rays) and away for another part (winter, slanting rays), with spring and autumn in between.
+qp 4 | Describe how seasons in the earth's hemispheres are related to Earth's annual movement around the sun. || بیان کریں کہ زمین کے نصف کروں کے موسم سورج کے گرد زمین کی سالانہ حرکت سے کیسے متعلق ہیں۔ || بیان کړئ چې د ځمکې د نیمه کرو موسمونه د لمر شاوخوا د ځمکې له کلني حرکت سره څنګه تړلي دي.
+sol Around 21 June the North Pole tilts toward the sun: summer in the Northern Hemisphere, winter in the Southern. Around 22 December the South Pole tilts toward the sun: summer in the south, winter in the north. At the equinoxes (21 March, 23 September) neither pole tilts toward the sun: spring in one hemisphere and autumn in the other. So the seasons in the two hemispheres are always opposite.
+q E | Structured response questions || ساختی جوابی سوالات || جوړښتي ځوابي پوښتنې
+qp 1 | Draw the equator, axial tilt, spinning axis of the earth, longitude and latitude, and the southern and northern hemispheres. || خطِ استوا، محوری جھکاؤ، زمین کا گردشی محور، طول بلد اور عرض بلد، اور جنوبی و شمالی نصف کرے بنائیں۔ || استوا، محوري کږوالی، د ځمکې د څرخېدو محور، طول البلد او عرض البلد، او جنوبي او شمالي نیمه کرې رسم کړئ.
+svg Model answer: Earth with tilted axis, equator, latitude and longitude lines, and the two hemispheres || نمونہ جواب: جھکے محور، خطِ استوا، عرض بلد و طول بلد اور دونوں نصف کروں کے ساتھ زمین || نمونه ځواب: ځمکه د کږ محور، استوا، عرض او طول البلد کرښو او دواړو نیمه کرو سره
+<svg viewBox="0 0 340 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Globe with axis, equator, latitude, longitude and hemispheres">
+<g transform="rotate(23.5 170 140)">
+<circle cx="170" cy="140" r="95" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<ellipse cx="170" cy="140" rx="95" ry="18" fill="none" stroke="#dc2626" stroke-width="2"/>
+<ellipse cx="170" cy="100" rx="87" ry="15" fill="none" stroke="#1e3a8a"/><ellipse cx="170" cy="180" rx="87" ry="15" fill="none" stroke="#1e3a8a"/>
+<ellipse cx="170" cy="140" rx="45" ry="95" fill="none" stroke="#16a34a"/><line x1="170" y1="45" x2="170" y2="235" stroke="#16a34a"/>
+<line x1="170" y1="25" x2="170" y2="255" stroke="#000" stroke-width="2"/>
+</g>
+<line x1="170" y1="20" x2="170" y2="260" stroke="#000" stroke-dasharray="4 4"/>
+<text x="225" y="35" font-weight="bold">N (spinning axis)</text><text x="95" y="270" font-weight="bold">S</text><text x="178" y="30">23.5°</text>
+<text x="270" y="170" fill="#dc2626">equator</text><text x="5" y="90">Northern</text><text x="5" y="104">hemisphere</text><text x="5" y="210">Southern</text><text x="5" y="224">hemisphere</text>
+<text x="255" y="120" fill="#1e3a8a">latitude</text><text x="210" y="250" fill="#16a34a">longitude</text>
+</svg>
+endsvg
+sol See the model drawing: the axis through N and S tilted 23.5°, the equator around the middle dividing the northern and southern hemispheres, latitude lines parallel to the equator and longitude lines from pole to pole.
+qp 2 | Label the diagram with different seasons in the southern hemisphere. (Positions A, B, C and D of the Earth around the Sun; the axis is tilted 23.5° the same way in every position.) || نیچے کی شکل پر جنوبی نصف کرے کے مختلف موسموں کے لیبل لگائیں۔ (سورج کے گرد زمین کے مقامات A، B، C اور D؛ ہر جگہ محور 23.5° ایک ہی طرف جھکا ہے۔) || پر شکل د جنوبي نیمه کرې بېلابېل موسمونه ولیکئ. (د لمر شاوخوا د ځمکې ځایونه A، B، C او D؛ په هر ځای کې محور 23.5° یو لوري ته کږ دی.)
+@deco Diagram: the Sun in the centre with the Earth at four positions — A (right), B (top), C (left), D (bottom) — arrows showing the Earth moving A → B → C → D; each Earth's axis is tilted 23.5° in the same direction.
+sol Where the South Pole leans toward the Sun it is summer in the southern hemisphere; at the opposite position it is winter; at the two positions in between it is autumn and spring. Reading the drawing (north end of each axis leaning toward the left): A — winter, B — spring, C — summer, D — autumn (in the southern hemisphere).
+q F | Project work || منصوبہ جاتی کام || پروژه ییز کار
+p Make a working model of the tilted earth rotating around the Sun which would be helpful in explaining the seasons in different parts of the world during a year. || سورج کے گرد گھومتی جھکی ہوئی زمین کا کام کرتا ماڈل بنائیں جو سال بھر دنیا کے مختلف حصوں میں موسم سمجھانے میں مددگار ہو۔ || د لمر شاوخوا د کږې ځمکې د ګرځېدو کاري ماډل جوړ کړئ چې د کال په اوږدو کې د نړۍ په بېلابېلو برخو کې د موسمونو په تشریح کې ګټور وي.
+@deco Photograph: a tellurion model — a lamp Sun with a tilted globe and Moon on an arm.
+endexercise
+@printed 173
+@sec glossary | Glossary || فرہنگ || ګړنود
+@status back-matter
+# Glossary || فرہنگ || ګړنود
+## Unit 1 || یونٹ 1 || یونټ 1
+- **Aerial parts:** the parts of plants above ground, e.g. stem, leaves, flowers etc. || **ہوائی حصے:** زمین سے اوپر پودے کے حصے مثلاً تنا، پتے، پھول وغیرہ۔ || **هوايي برخې:** د ځمکې پورته د بوټي برخې لکه ډډ، پاڼې، ګلان او نور.
+- **Cellular respiration:** the release of energy in living organisms which occurs when food molecules are broken down. || **خلوی تنفس:** جانداروں میں غذائی سالموں کے ٹوٹنے سے توانائی کا اخراج۔ || **حجروي تنفس:** په ژوندیو موجوداتو کې د خوراکي مالیکولونو د ماتېدو پر مهال د انرژي ازادېدل.
+- **Chlorophyll:** the green pigment in plants responsible for photosynthesis. || **کلوروفل:** پودوں میں سبز رنگ جو ضیائی تالیف کا ذمہ دار ہے۔ || **کلوروفیل:** په بوټو کې شین رنګ چې د فوټوسنتیز مسؤل دی.
+- **Compost:** a type of fertilizer that is made from rotting plants. || **کمپوسٹ:** گلے سڑے پودوں سے بنی کھاد۔ || **کمپوسټ:** هغه سرې چې له وروستو بوټو جوړېږي.
+- **Cuticle:** an outer, shiny, protective covering on green parts of the plant. || **کیوٹیکل:** پودے کے سبز حصوں پر بیرونی چمکدار حفاظتی تہہ۔ || **کیوټیکل:** د بوټي پر شنو برخو بهرنی ځلانده ساتونکی پوښ.
+- **Dermal tissue or epidermis:** covers the plant. || **جلدی بافت یا ایپی ڈرمس:** پودے کو ڈھانپتا ہے۔ || **پوستکي نسج یا اپیډرمس:** بوټی پوښي.
+- **Ground tissue:** fills the soft parts of the plant. || **زمینی بافت:** پودے کے نرم حصوں کو بھرتا ہے۔ || **بنسټیز نسج:** د بوټي نرمې برخې ډکوي.
+- **Phloem:** tiny tubes in a plant that carry food from the leaves to other parts of the plant. || **فلوئم:** پودے کی باریک نالیاں جو پتوں سے غذا دوسرے حصوں تک لے جاتی ہیں۔ || **فلویم:** د بوټي نري نلونه چې خواړه له پاڼو نورو برخو ته وړي.
+- **Photosynthesis:** the process by which plants prepare their own food using water and carbon dioxide in the presence of sunlight and chlorophyll. || **ضیائی تالیف:** وہ عمل جس سے پودے سورج کی روشنی اور کلوروفل کی موجودگی میں پانی اور کاربن ڈائی آکسائیڈ سے اپنی غذا بناتے ہیں۔ || **فوټوسنتیز:** هغه بهیر چې بوټي پکې د لمر وړانګو او کلوروفیل په شتون کې له اوبو او کاربن ډای اکسایډ خپل خواړه جوړوي.
+- **Respiration:** the process by which living things release energy from food. || **تنفس:** وہ عمل جس سے جاندار غذا سے توانائی حاصل کرتے ہیں۔ || **تنفس:** هغه بهیر چې ژوندي موجودات پکې له خوړو انرژي ازادوي.
+- **Root hair:** a single-celled, hair-like structure near the tip of a root for absorption of water and minerals. || **جڑ کا بال:** جڑ کے سرے کے قریب یک خلوی بال نما ساخت جو پانی اور معدنیات جذب کرتی ہے۔ || **د ریښې وېښته:** د ریښې د سر سره نږدې یو حجروي وېښته ډوله جوړښت چې اوبه او منرالونه جذبوي.
+- **Stomata:** many tiny pores in the epidermis of leaves and green stems. || **مسام (اسٹومیٹا):** پتوں اور سبز تنوں کی ایپی ڈرمس میں بہت سے باریک سوراخ۔ || **سټوماټا:** د پاڼو او شنو ډډونو په اپیډرمس کې ډېر کوچني سوري.
+- **Tap root:** a main root of a tap root system that grows vertically downwards. || **مرکزی جڑ:** مرکزی جڑ کے نظام کی اصل جڑ جو سیدھی نیچے بڑھتی ہے۔ || **اصلي ریښه:** د اصلي ریښې د سیستم اصلي ریښه چې سمه ښکته وده کوي.
+- **Transpiration:** the loss of water from the leaf stomata. || **عملِ تبخیر (ٹرانسپائریشن):** پتوں کے مسام سے پانی کا اخراج۔ || **ټرانسپیرېشن:** د پاڼو له سټوماټا څخه د اوبو وتل.
+- **Vascular bundle:** a part of the transport system in plants which contains xylem and phloem. || **وعائی بنڈل:** پودوں کے نقل و حمل کے نظام کا حصہ جس میں زائلم اور فلوئم ہوتے ہیں۔ || **وعايي بنډل:** په بوټو کې د لېږد سیستم برخه چې زایلم او فلویم لري.
+- **Vascular tissue:** transports water, minerals and food to different parts of the plant. || **وعائی بافت:** پانی، معدنیات اور غذا پودے کے مختلف حصوں تک پہنچاتا ہے۔ || **وعايي نسج:** اوبه، منرالونه او خواړه د بوټي بېلابېلو برخو ته لېږدوي.
+- **Wilting:** the drying out, drooping and withering of plant leaves due to less water supply and more transpiration. || **مرجھانا:** کم پانی اور زیادہ تبخیر سے پتوں کا سوکھنا، لٹکنا اور مرجھانا۔ || **مړاوي کېدل:** د لږو اوبو او ډېر ټرانسپیرېشن له امله د پاڼو وچېدل، ځوړندېدل او مړاوي کېدل.
+- **Xylem:** tiny tubes in a plant that carry water and dissolved minerals from the roots to all parts of the plant. || **زائلم:** پودے کی باریک نالیاں جو جڑوں سے پانی اور حل شدہ معدنیات تمام حصوں تک لے جاتی ہیں۔ || **زایلم:** د بوټي نري نلونه چې اوبه او حل شوي منرالونه له ریښو ټولو برخو ته وړي.
+## Unit 2 || یونٹ 2 || یونټ 2
+- **Aerobic respiration:** the process of cellular respiration in the presence of oxygen. || **ہوائی تنفس:** آکسیجن کی موجودگی میں خلوی تنفس۔ || **هوايي تنفس:** د اکسیجن په شتون کې حجروي تنفس.
+- **Alveoli:** tiny, balloon-shaped air sacs where the exchange of gases takes place between blood and air. || **ہوائی تھیلیاں (ایلویولائی):** ننھی غبارہ نما تھیلیاں جہاں خون اور ہوا کے درمیان گیسوں کا تبادلہ ہوتا ہے۔ || **الویولي:** کوچنۍ پوکڼۍ ډوله کڅوړې چې د وینې او هوا ترمنځ د ګازونو تبادله پکې کېږي.
+- **Anaerobic respiration:** the process of cellular respiration in the absence of oxygen. || **غیر ہوائی تنفس:** آکسیجن کی غیر موجودگی میں خلوی تنفس۔ || **غیر هوايي تنفس:** د اکسیجن په نشتوالي کې حجروي تنفس.
+- **Artery:** the blood vessel which takes blood away from the heart. || **شریان:** وہ رگ جو خون دل سے دور لے جاتی ہے۔ || **شریان:** هغه رګ چې وینه له زړه لرې وړي.
+@issue This scan is a two-page spread (printed pages 172 and 173). E2 labels depend on reading the tilt in a small drawing; the general rule is also given. The glossary continues on the next scans.

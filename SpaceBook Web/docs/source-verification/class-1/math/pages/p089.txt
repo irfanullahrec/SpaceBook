@@ -1,0 +1,10 @@
+@printed 85
+q 3 | Colour the shortest flower pot. || سب سے چھوٹے گملے میں رنگ بھریں۔ || تر ټولو لنډ ګملی رنګ کړئ.
+sizes pot:2.6 pot:1.5 pot:2 ;; 1,2,3 || Three flower pots of different heights || مختلف اونچائی کے تین گملے || د بېل لوړوالي درې ګملي
+sol Colour the middle pot (pot 2). ## The middle pot is the shortest. || درمیان والا گملا سب سے چھوٹا ہے۔ || منځنی ګملی تر ټولو لنډ دی.
+q 4 | Draw trees in the given boxes and colour these. (Tall, Taller, Tallest) || دیے گئے خانوں میں درخت بنائیں اور ان میں رنگ بھریں۔ (اونچا، زیادہ اونچا، سب سے اونچا) || په ورکړل شویو خونو کې ونې رسم کړئ او رنګ یې کړئ. (جګ، جګتر، تر ټولو جګ)
+cnt [] [] tree:1 s=1.6 | "Tall" "Taller" "Tallest" || Two empty boxes (Tall, Taller) and a tallest tree already drawn || دو خالی خانے (اونچا، زیادہ اونچا) اور سب سے اونچا درخت بنا ہوا || دوه تشې خونې (جګ، جګتر) او تر ټولو جګه ونه رسم شوې
+sol Draw a small tree under "Tall" and a bigger one under "Taller"; both must be shorter than the printed tallest tree. ## Tall < taller < tallest. || اونچا < زیادہ اونچا < سب سے اونچا۔ || جګ < جګتر < تر ټولو جګ.
+q 5 | Write 1 for high, 2 for higher and 3 for highest. || بلند کے لیے ۱، زیادہ بلند کے لیے ۲ اور سب سے بلند کے لیے ۳ لکھیں۔ || لوړ ته ۱، لوړتر ته ۲ او تر ټولو لوړ ته ۳ ولیکئ.
+sizes building.pink:2.2 school:1.6 building.sky:3 ;; A,B,C || A block of flats, a school building and a tall tower || فلیٹوں کی عمارت، اسکول کی عمارت اور ایک اونچا ٹاور || د فلیټونو ودانۍ، د ښوونځي ودانۍ او یو لوړ برج
+sol A 2, B 1, C 3 ## The tower (C) is the highest and the school building (B) is the lowest. || ٹاور (C) سب سے بلند اور اسکول کی عمارت (B) سب سے نیچی ہے۔ || برج (C) تر ټولو لوړ او د ښوونځي ودانۍ (B) تر ټولو ټیټه ده.

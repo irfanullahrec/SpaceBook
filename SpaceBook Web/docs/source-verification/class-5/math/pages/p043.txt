@@ -1,0 +1,25 @@
+@printed 38
+@deco Ant with "Challenge" sign beside "Try It!"; picture of a red first-aid box; cartoon book mascot on "Exercise 2".
+p **Find the LCM of 12, 20 and 30 using the division method.** || **تقسیم کے طریقے سے 12، 20 اور 30 کا ذو اضعاف اقل معلوم کریں۔** || **د وېش په طریقه د 12، 20 او 30 کوچنی مشترک ضرب معلوم کړئ.**
+ladder 2:12, 20, 30; 2:6, 10, 15; 3:3, 5, 15; 5:1, 5, 5; :1, 1, 1
+eq \text{LCM} = 2 \times 2 \times 3 \times 5
+eq \text{LCM} = 60
+p So, the LCM of 12, 20 and 30 = 60 || لہٰذا 12، 20 اور 30 کا ذو اضعاف اقل = 60 || نو د 12، 20 او 30 کوچنی مشترک ضرب = 60
+box check | Try It! Challenge || کوشش کریں! چیلنج || هڅه وکړئ! ننګونه
+p A welfare organisation is distributing bundles of basic safety items among the people. If a packet of mask has 25 masks, a packet of gloves have 20 pairs of gloves and a packet of sanitizer has 5 sanitizer bottles in it, find the minimum number of packets of each item so that every bundle has one mask, one glove pair and one sanitizer bottle in it and no object is left over. (Hint : first find the LCM of 25,20 and 5) || ایک فلاحی تنظیم لوگوں میں بنیادی حفاظتی اشیاء کے بنڈل تقسیم کر رہی ہے۔ اگر ماسک کے ایک پیکٹ میں 25 ماسک، دستانوں کے ایک پیکٹ میں 20 جوڑے دستانے اور سینیٹائزر کے ایک پیکٹ میں 5 بوتلیں ہوں تو ہر چیز کے پیکٹوں کی کم سے کم تعداد معلوم کریں تاکہ ہر بنڈل میں ایک ماسک، ایک جوڑا دستانے اور ایک سینیٹائزر کی بوتل ہو اور کوئی چیز نہ بچے۔ (اشارہ: پہلے 25، 20 اور 5 کا ذو اضعاف اقل معلوم کریں) || یوه خیریه موسسه پر خلکو د بنسټیزو خوندیتوب توکو بنډلونه وېشي. که د ماسک په یوه پاکټ کې 25 ماسکونه، د دستکشو په یوه پاکټ کې 20 جوړې دستکشې او د سینیټایزر په یوه پاکټ کې 5 بوتلونه وي، د هر توکي د پاکټونو لږ تر لږه شمېر معلوم کړئ چې په هر بنډل کې یو ماسک، یوه جوړه دستکشې او یو بوتل سینیټایزر وي او هېڅ توکی پاتې نه شي. (اشاره: لومړی د 25، 20 او 5 کوچنی مشترک ضرب معلوم کړئ)
+endbox
+exercise 2
+q 1 | Find the LCM of the following numbers using prime factorization || درج ذیل اعداد کا ذو اضعاف اقل مفرد اجزائے ضربی کے ذریعے معلوم کریں۔ || د لاندې عددونو کوچنی مشترک ضرب د لومړني ضربي تجزیې په مرسته معلوم کړئ.
+qsolve lcmpf
+qp a | 3, 21
+qp b | 12, 80
+qp c | 20, 15
+qp d | 4, 10, 16
+qp e | 9, 18, 27
+qp f | 10, 20, 35
+qp g | 20, 60, 75
+qp h | 30, 45, 90
+qp i | 16, 24, 36
+qp j | 18, 60, 75
+qp k | 49, 51, 56
+qp l | 13, 65, 71

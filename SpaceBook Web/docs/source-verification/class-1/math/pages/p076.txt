@@ -1,0 +1,23 @@
+@printed 72
+@issue Apple basket: the apples overlap; read from a zoomed scan as 5 red and 4 green apples (9 in all). Butterfly picture: 2 butterflies on the plant and 3 flying away.
+p Count and subtract. Then use the symbols "−" and "=" and write the correct answer. || گنیں اور تفریق کریں۔ پھر "−" اور "=" کی علامتیں استعمال کر کے درست جواب لکھیں۔ || وشمېرئ او تفریق کړئ. بیا د "−" او "=" نښې وکاروئ او سم ځواب ولیکئ.
+q 9 | Cupcakes || کپ کیک || کپ کېکونه
+cnt cupcake:5x3 | [] [−] [] [=] [] || 5 cupcakes, 3 crossed out || ۵ کپ کیک، ۳ کاٹے گئے || ۵ کپ کېکونه، ۳ کټ شوي
+sol 5 − 3 = 2 ## 3 of the 5 cupcakes are crossed out. || ۵ میں سے ۳ کپ کیک کاٹے گئے۔ || له ۵ نه ۳ کپ کېکونه کټ شوي.
+q 10 | Ladybirds || لیڈی برڈ || لېډي برډ
+cnt ladybird:4x1 | [] [−] [] [=] [] || 4 ladybirds, 1 crossed out || ۴ لیڈی برڈ، ۱ کاٹا گیا || ۴ لېډي برډ، ۱ کټ شوی
+sol 4 − 1 = 3 ## 1 of the 4 ladybirds is crossed out. || ۴ میں سے ۱ لیڈی برڈ کاٹا گیا۔ || له ۴ نه ۱ لېډي برډ کټ شوی.
+p Subtract. || تفریق کریں۔ || تفریق کړئ.
+q 11 | 8 − 6 || ۸ − ۶ || ۸ − ۶
+cnt [8] date:8 | "−" [6] date:6 | [] date:2 || 8 dates take away 6 || ۸ کھجوروں میں سے ۶ نکالیں || له ۸ خرما نه ۶ لرې کړئ
+sol 2 ## 8 − 6 = 2 || ۸ − ۶ = ۲ || ۸ − ۶ = ۲
+q 12 | 9 − 9 || ۹ − ۹ || ۹ − ۹
+cnt [9] cake:9 | "−" [9] cake:9 | [] || 9 slices of cake take away 9 || کیک کے ۹ ٹکڑوں میں سے ۹ نکالیں || د کېک له ۹ ټوټو نه ۹ لرې کړئ
+sol 0 ## A number minus itself is 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰۔ || عدد منفي همغه عدد ۰ کېږي.
+p Look at the pictures and fill in the blanks. || تصویریں دیکھیں اور خالی جگہیں پُر کریں۔ || انځورونه وګورئ او تش ځایونه ډک کړئ.
+q 13 | There are ____ red apples and ____ green apples in the basket. ☐ + ☐ = ☐. There are ____ apples altogether in the basket. || ٹوکری میں ____ سرخ سیب اور ____ سبز سیب ہیں۔ ☐ + ☐ = ☐۔ ٹوکری میں کل ____ سیب ہیں۔ || په ټوکرۍ کې ____ سرې مڼې او ____ شنې مڼې دي. ☐ + ☐ = ☐. په ټوکرۍ کې ټولې ____ مڼې دي.
+cnt apple:5 frame apple.green:4 frame || 5 red apples and 4 green apples in a basket || ٹوکری میں ۵ سرخ اور ۴ سبز سیب || په ټوکرۍ کې ۵ سرې او ۴ شنې مڼې
+sol 5 red and 4 green; 5 + 4 = 9; 9 apples altogether ## Count the red apples, then the green ones, and add. || سرخ سیب گنیں، پھر سبز، اور جمع کریں۔ || سرې مڼې وشمېرئ، بیا شنې، او جمع یې کړئ.
+q 14 | ____ Butterflies were sitting on the plant. ____ Butterflies flew away. ☐ − ☐ = ☐. ____ Butterflies were left on the plant. || ____ تتلیاں پودے پر بیٹھی تھیں۔ ____ تتلیاں اڑ گئیں۔ ☐ − ☐ = ☐۔ ____ تتلیاں پودے پر باقی رہ گئیں۔ || ____ پتنګان په بوټي ناست وو. ____ پتنګان والوتل. ☐ − ☐ = ☐. ____ پتنګان په بوټي پاتې شول.
+cnt butterfly.red:3 "flying" | butterfly.blue:2 "on_the_plant" || 3 butterflies flying away; 2 still on the plant || ۳ تتلیاں اڑ رہی ہیں؛ ۲ پودے پر || ۳ پتنګان الوزي؛ ۲ په بوټي
+sol 5 were sitting; 3 flew away; 5 − 3 = 2; 2 were left on the plant ## All the butterflies were on the plant at first: 3 flying + 2 still there = 5. || پہلے سب تتلیاں پودے پر تھیں: ۳ اڑنے والی + ۲ باقی = ۵۔ || لومړی ټول پتنګان په بوټي وو: ۳ الوتونکي + ۲ پاتې = ۵.

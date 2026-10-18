@@ -1,0 +1,50 @@
+@printed 58
+exercise 3.6
+q 1 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qsolve div
+qp a | (+45) ÷ (–5)
+qp b | (–63) ÷ (–9)
+qp c | (–80) ÷ (+4)
+qp d | (+44) ÷ (–11)
+qp e | (–60) ÷ (+10)
+qp f | (–144) ÷ (+12)
+qp g | (+168) ÷ (– 8)
+qp h | (+390) ÷ (–39)
+qp i | (–600) ÷ (–25)
+qp j | (–85) ÷ (+17)
+q 2 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qsolve div
+qp a | 0 ÷ 4 = ____
+qp b | 0 ÷ 10 = ____
+qp c | 0 ÷ (–90) = ____
+qp d | 0 ÷ (–5) = ____
+qp e | 0 ÷ (–130) = ____
+qp f | 0 ÷ (+300) = ____
+endexercise
+@sec 3.7 | Simplification || تسہیل || ساده کول
+# 3.7 Simplification || 3.7 تسہیل || 3.7 ساده کول
+p In Mathematics we often need to show an expression in "**simplest terms**". || ریاضی میں ہمیں اکثر کسی عبارت کو "**سادہ ترین صورت**" میں دکھانا ہوتا ہے۔ || په ریاضي کې ډېر ځله اړتیا لرو چې یوه افاده په "**تر ټولو ساده بڼه**" وښیو.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p What is the relationship of addition, subtraction, multiplication and division? || جمع، تفریق، ضرب اور تقسیم کا آپس میں کیا تعلق ہے؟ || د جمع، تفریق، ضرب او وېش ترمنځ څه اړیکه ده؟
+endbox
+p An **expression** is a phrase that includes numbers and operators (+, –, ×, ÷) together to show the value of something in mathematical form. || **عبارت** ایک ایسا جملہ ہے جس میں اعداد اور عاملین (+، –، ×، ÷) مل کر کسی چیز کی قیمت کو ریاضیاتی صورت میں ظاہر کرتے ہیں۔ || **افاده** یوه داسې جمله ده چې عددونه او عملګر (+، –، ×، ÷) پکې یوځای د یو شي ارزښت په ریاضي بڼه ښيي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p An expression is a phrase that includes numbers, brackets and operators (+, –, ×, ÷) together to show the value of something in mathematical form. || عبارت ایک ایسا جملہ ہے جس میں اعداد، قوسین اور عاملین (+، –، ×، ÷) مل کر کسی چیز کی قیمت کو ریاضیاتی صورت میں ظاہر کرتے ہیں۔ || افاده یوه داسې جمله ده چې عددونه، قوسونه او عملګر (+، –، ×، ÷) پکې یوځای د یو شي ارزښت په ریاضي بڼه ښيي.
+endbox
+p For example Nida, bought 5 packets of cookies each having 10 cookies in it. Her mother gave her 3 more cookies. || مثلاً ندا نے بسکٹ کے 5 پیکٹ خریدے، ہر پیکٹ میں 10 بسکٹ تھے۔ اس کی امی نے اسے 3 اور بسکٹ دیے۔ || د بېلګې په توګه ندا د بسکټو 5 پاکټونه واخیستل، په هر پاکټ کې 10 بسکټ وو. مور یې هغې ته 3 نور بسکټ ورکړل.
+p The expression for this problem can be shown as "$5 \times 10 + 3$" which can be further simplified to get the total number of cookies. || اس مسئلے کی عبارت "$5 \times 10 + 3$" کی صورت میں دکھائی جا سکتی ہے جسے مزید سادہ کر کے کل بسکٹ معلوم کیے جا سکتے ہیں۔ || د دې پوښتنې افاده د "$5 \times 10 + 3$" په بڼه ښودل کېدای شي چې د ټولو بسکټو د معلومولو لپاره نوره ساده کېدای شي.
+p To solve an expression which has more than one operation or brackets, it is very important to solve it in accurate order; otherwise we will get the wrong answer. || ایسی عبارت حل کرنے کے لیے جس میں ایک سے زیادہ عملیات یا قوسین ہوں، اسے درست ترتیب سے حل کرنا بہت ضروری ہے؛ ورنہ ہمیں غلط جواب ملے گا۔ || د داسې افادې د حل لپاره چې له یوې ډېرې عملیې یا قوسونه ولري، په سم ترتیب یې حل کول ډېر مهم دي؛ که نه نو غلط ځواب به ترلاسه کړو.
+p Let's observe the following. || آئیے درج ذیل پر غور کریں۔ || راځئ لاندې ته پام وکړو.
+box info
+p $4 + 6 \times 2$ (First add 4 and 6) || $4 + 6 \times 2$ (پہلے 4 اور 6 جمع کریں) || $4 + 6 \times 2$ (لومړی 4 او 6 جمع کړئ)
+p $= 10 \times 2$ (Next multiply 10 and 2) || $= 10 \times 2$ (پھر 10 اور 2 کو ضرب دیں) || $= 10 \times 2$ (بیا 10 او 2 ضرب کړئ)
+m $= 20$
+endbox
+box info
+p $4 + 6 \times 2$ (First multiply 6 and 2) || $4 + 6 \times 2$ (پہلے 6 اور 2 کو ضرب دیں) || $4 + 6 \times 2$ (لومړی 6 او 2 ضرب کړئ)
+p $= 4 + 12$ (Next add 4 and 12) || $= 4 + 12$ (پھر 4 اور 12 جمع کریں) || $= 4 + 12$ (بیا 4 او 12 جمع کړئ)
+m $= 16$
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Show the students with examples that BODMAS helps you remember the order in which to solve calculations. Also tell them that BODMAS helps us to easily solve more complicated expression. || طلبہ کو مثالوں سے دکھائیں کہ BODMAS حساب کی ترتیب یاد رکھنے میں مدد دیتا ہے۔ انہیں یہ بھی بتائیں کہ BODMAS زیادہ پیچیدہ عبارتیں آسانی سے حل کرنے میں مدد دیتا ہے۔ || زده کوونکو ته په بېلګو وښیئ چې BODMAS د محاسبې د ترتیب په یادولو کې مرسته کوي. دا هم ورته ووایاست چې BODMAS د ډېرو پېچلو افادو په اسانه حل کې مرسته کوي.
+endbox

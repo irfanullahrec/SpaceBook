@@ -1,0 +1,58 @@
+@printed 248
+@issue The heading "Concyclic Points" is cut at the top of the JPG; read from KPTBB (spread 126). The text prints "Points lying on the circumference of the same circle are called concyclic points." The exercise figure marks points G, C (on the circle top), E, D (inside), O, B (on the circle), F (outside), A (on the circle). Read from the figure: C, B, A lie on the circle; D lies inside; E is just outside the top-right; G and F are outside; recorded without answers.
+### Concyclic Points || ہم دائرہ نقاط || همدایرې ټکي
+p Points lying on the circumference of the same circle are called concyclic points. In the figure, A, B, C, D, E are all concyclic points. || ایک ہی دائرے کے محیط پر واقع نقاط ہم دائرہ نقاط کہلاتے ہیں۔ شکل میں A، B، C، D، E سب ہم دائرہ نقاط ہیں۔ || د یوې ورته دایرې په محیط پراته ټکي همدایرې ټکي بلل کېږي. په شکل کې A، B، C، D، E ټول همدایرې ټکي دي.
+circ r=50 | O | pts=A:100;B:60;C:10;D:-40;E:150
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- The points on the circumference of the circle are neither included in the interior nor in the exterior of the circle. || دائرے کے محیط پر نقاط نہ دائرے کے اندرونی حصے میں شامل ہوتے ہیں نہ بیرونی حصے میں۔ || د دایرې په محیط ټکي نه د دایرې په داخل کې شامل دي او نه په بهر کې.
+- If points A and B on the circumference of the circle divide it into two equal arcs then each arc is called a semi-circle || اگر دائرے کے محیط پر نقاط A اور B اسے دو برابر قوسوں میں تقسیم کریں تو ہر قوس نصف دائرہ کہلاتی ہے || که د دایرې په محیط ټکي A او B دا په دوو برابرو قوسونو وېشي نو هر قوس نیم دایره بلل کېږي
+endbox
+### Secant to a Circle || دائرے کا قاطع || د دایرې قاطع
+p If a line intersects a circle at two distinct points, then this line is called secant to the circle. In the figure, the line AB is secant to the circle. || اگر کوئی خط دائرے کو دو مختلف نقاط پر قطع کرے تو یہ خط دائرے کا قاطع کہلاتا ہے۔ شکل میں خط AB دائرے کا قاطع ہے۔ || که یوه کرښه دایره په دوو بېلو ټکو کې پرې کړي، نو دا کرښه د دایرې قاطع بلل کېږي. په شکل کې AB کرښه د دایرې قاطع ده.
+svg Secant AB to a circle || دائرے کا قاطع AB || د دایرې قاطع AB
+<svg viewBox="0 0 260 130" width="260" role="img" aria-label="A circle with a line AB cutting through it at two points" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<defs><marker id="seA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<circle cx="130" cy="65" r="55" fill="none" stroke="#0f172a" stroke-width="1.3"/><circle cx="130" cy="65" r="2"/>
+<line x1="20" y1="78" x2="240" y2="52" stroke="#0f172a" stroke-width="1.3" marker-start="url(#seA)" marker-end="url(#seA)"/><text x="8" y="76">A</text><text x="244" y="52">B</text>
+</svg>
+endsvg
+### Tangent to a Circle || دائرے کا مماس || د دایرې مماس
+p If a line touches a circle at only one point, then this line is called tangent to the circle. In the figure, the line PQ is tangent to the circle. || اگر کوئی خط دائرے کو صرف ایک نقطے پر چھوئے تو یہ خط دائرے کا مماس کہلاتا ہے۔ شکل میں خط PQ دائرے کا مماس ہے۔ || که یوه کرښه دایره یوازې په یوه ټکي ولګېږي، نو دا کرښه د دایرې مماس بلل کېږي. په شکل کې PQ کرښه د دایرې مماس ده.
+svg Tangent PQ to a circle || دائرے کا مماس PQ || د دایرې مماس PQ
+<svg viewBox="0 0 260 140" width="260" role="img" aria-label="A circle resting on a line PQ that touches it at one point at the bottom" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<defs><marker id="taA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<circle cx="130" cy="65" r="55" fill="none" stroke="#0f172a" stroke-width="1.3"/><circle cx="130" cy="65" r="2"/>
+<line x1="20" y1="120" x2="240" y2="120" stroke="#0f172a" stroke-width="1.3" marker-start="url(#taA)" marker-end="url(#taA)"/><text x="8" y="114">P</text><text x="244" y="114">Q</text>
+</svg>
+endsvg
+### Concentric Circles || ہم مرکز دائرے || همځایه دایرې
+p Two or more circles with the same centre but different radii are called concentric circles. In the figure, all circles are concentric circles. || ایک ہی مرکز لیکن مختلف نصف قطروں والے دو یا زیادہ دائرے ہم مرکز دائرے کہلاتے ہیں۔ شکل میں تمام دائرے ہم مرکز دائرے ہیں۔ || هغه دوه یا ډېرې دایرې چې یو شان مرکز خو بېلې شعاعګانې ولري همځایه دایرې بلل کېږي. په شکل کې ټولې دایرې همځایه دایرې دي.
+svg Concentric circles || ہم مرکز دائرے || همځایه دایرې
+<svg viewBox="0 0 160 140" width="160" role="img" aria-label="Four circles with the same centre but different radii" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a"><g fill="none" stroke="#0f172a" stroke-width="1.3"><circle cx="80" cy="70" r="62"/><circle cx="80" cy="70" r="52"/><circle cx="80" cy="70" r="40"/><circle cx="80" cy="70" r="28"/></g><circle cx="80" cy="70" r="2"/></svg>
+endsvg
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Observe the given figure and sort out the following. || دی گئی شکل کا مشاہدہ کریں اور درج ذیل کو الگ کریں۔ || ورکړل شوی شکل وګورئ او لاندې جلا کړئ.
+qp i | Secants || قاطع || قاطعونه
+qp ii | tangents || مماس || مماسونه
+svg A circle with six horizontal lines: four cut through it, two touch it || ایک دائرہ اور چھ افقی خطوط: چار قاطع، دو مماس || یوه دایره او شپږ افقي کرښې: څلور قاطع، دوه مماس
+<svg viewBox="0 0 160 130" width="160" role="img" aria-label="A circle crossed by four horizontal lines (secants) with one line touching the top and one touching the bottom (tangents)" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a">
+<circle cx="80" cy="65" r="40" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<g stroke="#0f172a" stroke-width="1.2"><line x1="10" y1="25" x2="150" y2="25"/><line x1="10" y1="42" x2="150" y2="42"/><line x1="10" y1="54" x2="150" y2="54"/><line x1="10" y1="66" x2="150" y2="66"/><line x1="10" y1="78" x2="150" y2="78"/><line x1="10" y1="105" x2="150" y2="105"/></g>
+</svg>
+endsvg
+endbox
+exercise 10.3
+q 1 | Sort out points from the given figure. || دی گئی شکل سے نقاط کو الگ کریں۔ || له ورکړل شوي شکل څخه ټکي جلا کړئ.
+qp i | interior points || اندرونی نقاط || داخلي ټکي
+qp ii | exterior points || بیرونی نقاط || بهرني ټکي
+qp iii | concyclic points || ہم دائرہ نقاط || همدایرې ټکي
+svg Points G, C, E, D, O, B, F, A and a circle || نقاط G، C، E، D، O، B، F، A اور ایک دائرہ || ټکي G، C، E، D، O، B، F، A او یوه دایره
+<svg viewBox="0 0 200 170" width="200" role="img" aria-label="A circle with centre O; A, B and C lie on the circle; D and E are inside; G and F are outside" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<circle cx="100" cy="85" r="62" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<g><circle cx="100" cy="23" r="3.5"/><circle cx="162" cy="85" r="3.5"/><circle cx="70" cy="146" r="3.5"/><circle cx="82" cy="70" r="3.5"/><circle cx="130" cy="40" r="3.5"/><circle cx="26" cy="26" r="3.5"/><circle cx="180" cy="120" r="3.5"/><circle cx="100" cy="95" r="1.5"/></g>
+<text x="106" y="18">C</text><text x="168" y="88">B</text><text x="66" y="162">A</text><text x="70" y="68">D</text><text x="136" y="38">E</text><text x="34" y="30">G</text><text x="186" y="124">F</text><text x="104" y="104" font-weight="400">o</text>
+</svg>
+endsvg
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Draw a circle on the board with the help of board geometry and then label its parts and explain about each part of the circle. Then ask them to draw circle in their notebooks and label its parts and discuss with each other about its parts. || بورڈ جیومیٹری کی مدد سے بورڈ پر ایک دائرہ بنائیں اور پھر اس کے حصوں کو نشان زد کریں اور دائرے کے ہر حصے کے بارے میں سمجھائیں۔ پھر ان سے کہیں کہ اپنی کاپیوں میں دائرہ بنائیں، اس کے حصوں کو نشان زد کریں اور اپنے حصوں کے بارے میں ایک دوسرے سے بات کریں۔ || پر تخته د تخته جیومیټرۍ په مرسته یوه دایره رسم کړئ او بیا د هغې برخې په نښه کړئ او د دایرې د هرې برخې په اړه تشریح کړئ. بیا ورته ووایاست چې په خپلو کتابچو کې دایره رسم کړي، برخې یې په نښه کړي او د برخو په اړه یو له بل سره بحث وکړي.
+endbox

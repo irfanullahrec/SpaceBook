@@ -1,0 +1,35 @@
+@printed 42
+@sec u3-intro | Introduction || تعارف || پېژندنه
+# Introduction || تعارف || پېژندنه
+p In the previous class we have learned about multiplication of numbers and also learn about how to write number in exponent form to make calculation easier. We also learn about squares of numbers up to 2-digit numbers. We have learned about HCF and LCM of number. Let's recall about HCF and LCM and then continue learning more about squares and square roots. || پچھلی جماعت میں ہم نے اعداد کی ضرب کے بارے میں سیکھا اور یہ بھی سیکھا کہ حساب کو آسان بنانے کے لیے عدد کو قوت نما کی صورت میں کیسے لکھا جاتا ہے۔ ہم نے 2 ہندسوں تک کے اعداد کے مربع کے بارے میں بھی سیکھا۔ ہم نے اعداد کے عاد اعظم اور ذو اضعاف اقل کے بارے میں سیکھا ہے۔ آئیے عاد اعظم اور ذو اضعاف اقل کو یاد کریں اور پھر مربع اور جذرِ مربع کے بارے میں مزید سیکھیں۔ || په تېر ټولګي کې موږ د عددونو د ضرب په اړه زده کړل او دا مو هم زده کړل چې د حساب د اسانولو لپاره عدد د توان په بڼه څنګه لیکو. موږ تر 2 رقمونو پورې د عددونو د مربعاتو په اړه هم زده کړل. موږ د عددونو د لوی مشترک قاسم او کوچني مشترک ضرب په اړه زده کړي دي. راځئ لوی مشترک قاسم او کوچنی مشترک ضرب را یاد کړو او بیا د مربعاتو او مربع جذرونو په اړه نور زده کړو.
+@sec 3.1 | Highest Common Factor (HCF) || عاد اعظم (HCF) || لوی مشترک قاسم (HCF)
+# 3.1 Highest Common Factor (HCF) || 3.1 عاد اعظم (HCF) || 3.1 لوی مشترک قاسم (HCF)
+p The highest common factor of two or more numbers, abbreviated as HCF, is the greatest number which divides each of the given numbers completely, leaving no remainder. || دو یا زیادہ اعداد کا عاد اعظم، جسے مختصراً HCF کہتے ہیں، وہ سب سے بڑا عدد ہے جو دیے گئے ہر عدد کو بغیر کسی باقی کے مکمل تقسیم کرے۔ || د دوو یا ډېرو عددونو لوی مشترک قاسم، چې په لنډ ډول HCF بلل کېږي، هغه تر ټولو لوی عدد دی چې هر ورکړل شوی عدد پرته له پاتې شوني بشپړ وېشي.
+example 1 | Amir has three ropes of length 20 m, 35 m and 60 m. Find the length of longest possible measuring tape which can measure the length of these ropes exactly. || عامر کے پاس 20 m، 35 m اور 60 m لمبائی کی تین رسیاں ہیں۔ اس سب سے لمبے ممکنہ پیمائشی فیتے کی لمبائی معلوم کریں جو ان رسیوں کی لمبائی ٹھیک ٹھیک ناپ سکے۔ || عامر د 20 m، 35 m او 60 m اوږدوالي درې پړي لري. د هغه تر ټولو اوږد ممکن د اندازه کولو فیتې اوږدوالی معلوم کړئ چې د دې پړو اوږدوالی په سمه توګه اندازه کړای شي.
+p **Solution:** || **حل:** || **حل:**
+p First, find the prime factorization of all these numbers. || پہلے ان تمام اعداد کے مفرد اجزائے ضربی معلوم کریں۔ || لومړی د دې ټولو عددونو لومړني ضربي تجزیه معلوم کړئ.
+m Prime factorization of $20 = 2 \times 2 \times 5$
+m Prime factorization of $35 = 5 \times 7$
+m Prime factorization of $20 = 2 \times 2 \times 3 \times 5$
+m Common prime factors $= 5$
+m HCF $= 5$
+@issue Example 1 (HCF) prints the third line as "Prime factorization of 20 = 2 × 2 × 3 × 5"; the number should be 60. Kept as printed.
+p So, the length of longest possible measuring tape that can measures the ropes of length 20 m, 35 m and 60 m is 5 m. || لہٰذا سب سے لمبے ممکنہ پیمائشی فیتے کی لمبائی جو 20 m، 35 m اور 60 m لمبی رسیوں کو ناپ سکے، 5 m ہے۔ || نو د هغه تر ټولو اوږد ممکن فیتې اوږدوالی چې د 20 m، 35 m او 60 m اوږدو پړو اندازه کولی شي، 5 m دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the HCF of the following || درج ذیل کا عاد اعظم معلوم کریں || د لاندې لوی مشترک قاسم معلوم کړئ
+qp i | 21, 30
+qp ii | 36, 49
+qp iii | 28, 63
+qp iv | 18, 60
+qp v | 54, 72, 108
+endbox
+## 3.1.1 Least Common Multiple (LCM) || 3.1.1 ذو اضعاف اقل (LCM) || 3.1.1 کوچنی مشترک ضرب (LCM)
+p The least common multiple of two or more numbers is the smallest number which is divisible by each of the given numbers completely, leaving no remainder. || دو یا زیادہ اعداد کا ذو اضعاف اقل وہ سب سے چھوٹا عدد ہے جو دیے گئے ہر عدد سے بغیر کسی باقی کے مکمل تقسیم ہو جائے۔ || د دوو یا ډېرو عددونو کوچنی مشترک ضرب هغه تر ټولو کوچنی عدد دی چې پر هر ورکړل شوي عدد پرته له پاتې شوني بشپړ وېشل کېږي.
+example 1 | What is the least number of oranges exactly distributed among groups of 22, 12 and 24 students: || مالٹوں کی وہ کم سے کم تعداد کیا ہے جو 22، 12 اور 24 طلبہ کے گروپوں میں پوری پوری تقسیم ہو جائے: || د مالټو هغه لږ تر لږه شمېر څو دی چې د 22، 12 او 24 زده کوونکو په ډلو کې په سمه توګه ووېشل شي:
+p **Solution:** || **حل:** || **حل:**
+p The least number of oranges can be obtained by finding the L.C.M of 22, 12 and 24. Let's find L.C.M by division method. || مالٹوں کی کم سے کم تعداد 22، 12 اور 24 کا ذو اضعاف اقل معلوم کر کے حاصل کی جا سکتی ہے۔ آئیے تقسیم کے طریقے سے ذو اضعاف اقل معلوم کریں۔ || د مالټو لږ تر لږه شمېر د 22، 12 او 24 د کوچني مشترک ضرب په موندلو لاسته راځي. راځئ د وېش په طریقه کوچنی مشترک ضرب معلوم کړو.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Recall a few basic concepts about LCM, HCF and squares of smaller number they have leant in previous grade. Then ask some concept related question or take a short quiz about the concepts. This will help the student recall their prior learning. || ذو اضعاف اقل، عاد اعظم اور چھوٹے اعداد کے مربعوں کے بارے میں چند بنیادی تصورات یاد کرائیں جو انہوں نے پچھلی جماعت میں سیکھے تھے۔ پھر تصورات سے متعلق کچھ سوالات پوچھیں یا ان تصورات پر ایک مختصر کوئز لیں۔ اس سے طلبہ کو اپنی سابقہ تعلیم یاد کرنے میں مدد ملے گی۔ || د کوچني مشترک ضرب، لوی مشترک قاسم او د کوچنیو عددونو د مربعاتو په اړه هغه څو بنسټیز مفاهیم را یاد کړئ چې په تېر ټولګي کې یې زده کړي. بیا د مفاهیمو اړوند څو پوښتنې وکړئ یا د مفاهیمو په اړه لنډه ازموینه واخلئ. دا به له زده کوونکو سره د خپلې مخکینۍ زده کړې په را یادولو کې مرسته وکړي.
+endbox
+@issue Teaching point prints "they have leant in previous grade" (typo for "learnt"); kept as printed.

@@ -1,0 +1,25 @@
+@printed 197
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Construct 30° using a pair of compasses. || پرکار کی مدد سے 30° بنائیں۔ || د پرکار په مرسته 30° جوړه کړئ.
+endbox
+example 3 | Draw ∠AOB = 90°. || ∠AOB = 90° بنائیں۔ || ∠AOB = 90° رسم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړونې پړاوونه:**
+p **Step I:** Draw a ray $\overrightarrow{OB}$ using a ruler. || **مرحلہ I:** پیمانے کی مدد سے شعاع $\overrightarrow{OB}$ کھینچیں۔ || **لومړی پړاو:** د خطکش په مرسته $\overrightarrow{OB}$ وړانګه رسم کړئ.
+p **Step II:** Place the pointer of the compass at point O and draw an arc of suitable radius that will cut the ray $\overrightarrow{OB}$ at a point X. || **مرحلہ II:** پرکار کی نوک نقطہ O پر رکھیں اور مناسب رداس کی قوس کھینچیں جو شعاع $\overrightarrow{OB}$ کو نقطہ X پر قطع کرے۔ || **دوهم پړاو:** د پرکار څوکه په O ټکي کېږدئ او د مناسبې شعاع قوس رسم کړئ چې $\overrightarrow{OB}$ وړانګه په X ټکي کې قطع کړي.
+angcon O B | arc 140 | pts 0:X || Steps I–II: ray OB and an arc from O cutting it at X || مراحل I–II: شعاع OB اور O سے قوس جو اسے X پر قطع کرے || I–II پړاوونه: OB وړانګه او له O قوس چې په X کې یې قطع کړي
+p **Step III:** With the same opening of the compass, place the pointer of the compass at point X and draw an arc that will cut the previous arc at point D. || **مرحلہ III:** پرکار کے اسی کھلاؤ کے ساتھ اس کی نوک نقطہ X پر رکھیں اور قوس کھینچیں جو پچھلی قوس کو نقطہ D پر قطع کرے۔ || **درېیم پړاو:** د پرکار په هماغه خلاصوالي یې څوکه په X ټکي کېږدئ او قوس رسم کړئ چې مخکینۍ قوس په D ټکي کې قطع کړي.
+angcon O B | arc 140 | pts 0:X 60:D || Step III: arc from X cuts at D || مرحلہ III: X سے قوس D پر قطع کرتی ہے || درېیم پړاو: له X قوس په D کې قطع کوي
+p **Step IV:** Again using the same opening of the compass, place the pointer of the compass at point D and draw an arc that will cut the previous arc at point C. || **مرحلہ IV:** دوبارہ پرکار کے اسی کھلاؤ کے ساتھ اس کی نوک نقطہ D پر رکھیں اور قوس کھینچیں جو پچھلی قوس کو نقطہ C پر قطع کرے۔ || **څلورم پړاو:** بیا د پرکار په هماغه خلاصوالي یې څوکه په D ټکي کېږدئ او قوس رسم کړئ چې مخکینۍ قوس په C ټکي کې قطع کړي.
+angcon O B | arc 140 | pts 0:X 60:D 120:C || Step IV: arc from D cuts at C || مرحلہ IV: D سے قوس C پر قطع کرتی ہے || څلورم پړاو: له D قوس په C کې قطع کوي
+p **Step V:** Place the pointer of the compass at point D and C and draw two arcs of same radius that will cut each other at point E. || **مرحلہ V:** پرکار کی نوک نقطوں D اور C پر رکھیں اور ایک ہی رداس کی دو قوسیں کھینچیں جو ایک دوسرے کو نقطہ E پر قطع کریں۔ || **پنځم پړاو:** د پرکار څوکه په D او C ټکو کېږدئ او د یوې شعاع دوه قوسونه رسم کړئ چې یو بل په E ټکي کې قطع کړي.
+angcon O B | arc 140 | pts 0:X 60:D 120:C | cross 90:E:1.73 || Step V: arcs from D and C cross at E || مرحلہ V: D اور C سے قوسیں E پر قطع کرتی ہیں || پنځم پړاو: له D او C قوسونه په E کې قطع کېږي
+p **Step VI:** Using a ruler draw a ray $\overrightarrow{OA}$ passing through the point E. ∠AOB = 90° is the required angle. || **مرحلہ VI:** پیمانے کی مدد سے نقطہ E سے گزرتی شعاع $\overrightarrow{OA}$ کھینچیں۔ ∠AOB = 90° مطلوبہ زاویہ ہے۔ || **شپږم پړاو:** د خطکش په مرسته له E ټکي تېره $\overrightarrow{OA}$ وړانګه رسم کړئ. ∠AOB = 90° غوښتل شوې زاویه ده.
+angcon O B | arc 140 | pts 0:X 60:D 120:C | cross 90:E:1.73 | ray 90:A | mark 90:90° || Step VI: ∠AOB = 90° || مرحلہ VI: ∠AOB = 90° || شپږم پړاو: ∠AOB = 90°
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If we bisect a 90° angle, we get two 45° angles. || اگر ہم 90° کے زاویے کی تنصیف کریں تو ہمیں دو 45° کے زاویے ملتے ہیں۔ || که 90° زاویه نیمه کړو، دوه 45° زاویې لاسته راځي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain to the students by drawing bisectors we can draw angles which are half in measure of the angles. || طلبہ کو سمجھائیں کہ ناصف کھینچ کر ہم زاویوں کی نصف پیمائش کے زاویے بنا سکتے ہیں۔ || زده کوونکو ته تشریح کړئ چې د نیمونکو په رسمولو کولی شو د زاویو نیمایي اندازې زاویې رسم کړو.
+endbox

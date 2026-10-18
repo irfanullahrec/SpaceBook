@@ -1,0 +1,20 @@
+@printed 71
+q 3 | 11 to 8: So, 8 is ____ less than ____. || ۱۱ سے ۸: لہٰذا ۸، ____ سے ____ کم ہے۔ || له ۱۱ نه تر ۸: نو ۸ له ____ نه ____ لږ دی.
+hops 11,_,_,8 | 1 || Steps back from 11 to 8 || ۱۱ سے ۸ تک پیچھے کے قدم || له ۱۱ نه تر ۸ شاته ګامونه
+sol Boxes 10, 9. So, 8 is 3 less than 11. ## 3 steps back from 11 to 8. || ۱۱ سے ۸ تک ۳ قدم پیچھے۔ || له ۱۱ نه تر ۸ درې ګامه شاته.
+q 4 | 20 to 15: So, 15 is ____ less than ____. || ۲۰ سے ۱۵: لہٰذا ۱۵، ____ سے ____ کم ہے۔ || له ۲۰ نه تر ۱۵: نو ۱۵ له ____ نه ____ لږ دی.
+hops 20,_,_,_,_,15 | 1 || Steps back from 20 to 15 || ۲۰ سے ۱۵ تک پیچھے کے قدم || له ۲۰ نه تر ۱۵ شاته ګامونه
+sol Boxes 19, 18, 17, 16. So, 15 is 5 less than 20. ## 5 steps back from 20 to 15. || ۲۰ سے ۱۵ تک ۵ قدم پیچھے۔ || له ۲۰ نه تر ۱۵ پنځه ګامه شاته.
+p Count, add and fill in the boxes. || گنیں، جمع کریں اور خانے پُر کریں۔ || وشمېرئ، جمع کړئ او خونې ډکې کړئ.
+q 5 | Rackets || ریکٹ || ریکټونه
+cnt racket:3 frame [] "+" racket:3 frame [] "=" racket:6/3 frame [] || 3 rackets + 3 rackets || ۳ ریکٹ + ۳ ریکٹ || ۳ ریکټونه + ۳ ریکټونه
+sol 3 + 3 = 6 ## Count each box: 3, 3 and 6. || ہر خانہ گنیں: ۳، ۳ اور ۶۔ || هره خونه وشمېرئ: ۳، ۳ او ۶.
+q 6 | Pencils || پنسلیں || پنسلې
+cnt pencilv.brown:5 frame [] "+" pencilv.brown:3 frame [] "=" pencilv.brown:8 frame [] || 5 pencils + 3 pencils || ۵ پنسلیں + ۳ پنسلیں || ۵ پنسلې + ۳ پنسلې
+sol 5 + 3 = 8 ## Count each box: 5, 3 and 8. || ہر خانہ گنیں: ۵، ۳ اور ۸۔ || هره خونه وشمېرئ: ۵، ۳ او ۸.
+q 7 | Hats || ٹوپیاں || خولۍ
+cnt [] hat.black:3 | "+" [] hat.black:3 | [] || 3 hats + 3 hats || ۳ ٹوپیاں + ۳ ٹوپیاں || ۳ خولۍ + ۳ خولۍ
+sol 3 + 3 = 6 ## 3 and 3 make 6. || ۳ اور ۳ مل کر ۶۔ || ۳ او ۳ ګډ ۶.
+q 8 | Cherries || چیریاں || ګیلاسونه
+cnt [] cherry:5 | "+" [] cherry:2 | [] || 5 cherries + 2 cherries || ۵ چیریاں + ۲ چیریاں || ۵ ګیلاس + ۲ ګیلاس
+sol 5 + 2 = 7 ## 5 and 2 make 7. || ۵ اور ۲ مل کر ۷۔ || ۵ او ۲ ګډ ۷.

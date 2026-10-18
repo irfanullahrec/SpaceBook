@@ -1,0 +1,17 @@
+@printed 80
+@deco A cartoon boy with a thought bubble.
+q 3 | Match the following figures to the given fractions. || درج ذیل اشکال کو دیے گئے کسور سے ملائیں۔ || لاندې شکلونه له ورکړل شویو کسرونو سره جوړ کړئ.
+p (i) Strip in 5 parts, 2 shaded || (i) 5 حصوں والی پٹی، 2 رنگے ہوئے || (i) په 5 برخو پټۍ، 2 رنګ شوې
+fgrid 1 5 4,5 #4ade80
+p (ii) Rectangle in 3 parts, 2 shaded || (ii) 3 حصوں والا مستطیل، 2 رنگے ہوئے || (ii) په 3 برخو مستطیل، 2 رنګ شوې
+fgrid 1 3 1,2 #4ade80
+p (iii) Circle in 8 parts, 2 shaded || (iii) 8 حصوں والا دائرہ، 2 رنگے ہوئے || (iii) په 8 برخو دایره، 2 رنګ شوې
+fpie 8 2,6 #4ade80
+p (iv) Square cut by its diagonals into 4 parts, 3 shaded || (iv) وتروں سے 4 حصوں میں کٹا مربع، 3 رنگے ہوئے || (iv) د قطرونو په واسطه په 4 برخو پرې مربع، 3 رنګ شوې
+fxsq tbl #4ade80
+p Fractions to match: $\frac{2}{8}$, $\frac{3}{4}$, $\frac{2}{3}$, $\frac{2}{5}$ || ملانے کے لیے کسور: $\frac{2}{8}$، $\frac{3}{4}$، $\frac{2}{3}$، $\frac{2}{5}$ || د جوړولو لپاره کسرونه: $\frac{2}{8}$، $\frac{3}{4}$، $\frac{2}{3}$، $\frac{2}{5}$
+sol (i) → 2/5, (ii) → 2/3, (iii) → 2/8, (iv) → 3/4 ## Count the equal parts (denominator) and the shaded parts (numerator) of each figure. || ہر شکل کے برابر حصے (نسب نما) اور رنگے ہوئے حصے (شمار کنندہ) گنیں۔ || د هر شکل برابرې برخې (مخرج) او رنګ شوې برخې (صورت) وشمېرئ.
+endexercise
+@sec 3.2 | Proper and Improper Fractions || واجب اور غیر واجب کسور || واجب او ناواجب کسرونه
+# Proper and Improper Fractions || واجب اور غیر واجب کسور || واجب او ناواجب کسرونه
+p A pizza is divided into four equal parts. I ate three parts How many parts are left. || ایک پیزا چار برابر حصوں میں تقسیم ہے۔ میں نے تین حصے کھا لیے۔ کتنے حصے بچے؟ || یو پیزا په څلورو برابرو برخو وېشل شوی. ما درې برخې وخوړې. څو برخې پاتې شوې؟

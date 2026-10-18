@@ -1,0 +1,74 @@
+@printed 145
+q 2 | Use the formula to find the area and perimeter of the squares whose lengths are given below: || فارمولے کی مدد سے ان مربعوں کا رقبہ اور احاطہ معلوم کریں جن کی لمبائیاں نیچے دی گئی ہیں: || د فورمول په مرسته د هغو مربعګانو مساحت او محیط معلوم کړئ چې اوږدوالي یې لاندې ورکړل شوي:
+qp a | 4 cm
+solution Area = 16 cm², Perimeter = 16 cm
+suse sqrect sq 4 cm
+endsolution
+qp b | 7.2 cm
+solution Area = 51.84 cm², Perimeter = 28.8 cm
+suse sqrect sq 7.2 cm
+endsolution
+qp c | 10.5 m
+solution Area = 110.25 m², Perimeter = 42 m
+suse sqrect sq 10.5 m
+endsolution
+qp d | 6.2 m
+solution Area = 38.44 m², Perimeter = 24.8 m
+suse sqrect sq 6.2 m
+endsolution
+q 3 | Use the formula to find the area and perimeter of the rectangles having the following lengths and widths. || فارمولے کی مدد سے درج ذیل لمبائیوں اور چوڑائیوں والے مستطیلوں کا رقبہ اور احاطہ معلوم کریں۔ || د فورمول په مرسته د لاندې اوږدوالي او پلنوالي لرونکو مستطیلونو مساحت او محیط معلوم کړئ.
+qp a | Length = 4.7 cm and Width = 2 cm
+solution Area = 9.4 cm², Perimeter = 13.4 cm
+suse sqrect rect 4.7 2 cm
+endsolution
+qp b | Length = 16 m and Width = 15.5 m
+solution Area = 248 m², Perimeter = 63 m
+suse sqrect rect 16 15.5 m
+endsolution
+qp c | Length = 23 cm and Width = 4 cm
+solution Area = 92 cm², Perimeter = 54 cm
+suse sqrect rect 23 4 cm
+endsolution
+qp d | Length = 20 m and Width = 12.2 m
+solution Area = 244 m², Perimeter = 64.4 m
+suse sqrect rect 20 12.2 m
+endsolution
+q 4 | Find the length of the rectangle if its area is 325 m² and width is 13 m. || اگر مستطیل کا رقبہ 325 m² اور چوڑائی 13 m ہو تو اس کی لمبائی معلوم کریں۔ || که د مستطیل مساحت 325 m² او پلنوالی 13 m وي، اوږدوالی یې معلوم کړئ.
+solution 25 m
+ss Area = length × width, so length = area ÷ width. || رقبہ = لمبائی × چوڑائی، اس لیے لمبائی = رقبہ ÷ چوڑائی۔ || مساحت = اوږدوالی × پلنوالی، نو اوږدوالی = مساحت ÷ پلنوالی.
+sm \text{length} = \frac{325}{13} = 25 \text{ m}
+endsolution
+q 5 | Find the length of a square if its perimeter is 48 m. || اگر مربع کا احاطہ 48 m ہو تو اس کی لمبائی معلوم کریں۔ || که د مربع محیط 48 m وي، اوږدوالی یې معلوم کړئ.
+solution 12 m
+ss Perimeter = 4 × side, so side = perimeter ÷ 4. || احاطہ = 4 × ضلع، اس لیے ضلع = احاطہ ÷ 4۔ || محیط = 4 × ضلع، نو ضلع = محیط ÷ 4.
+sm L = \frac{48}{4} = 12 \text{ m}
+endsolution
+q 6 | A rectangular-shaped room is 24 metres long and 20 metres wide. Find the area of the room and the cost to cement the room at the rate of Rs 200 per metre square. || ایک مستطیل کمرہ 24 میٹر لمبا اور 20 میٹر چوڑا ہے۔ کمرے کا رقبہ اور 200 روپے فی مربع میٹر کے حساب سے سیمنٹ کرنے کی لاگت معلوم کریں۔ || یوه مستطیلي کوټه 24 متره اوږده او 20 متره پلنه ده. د کوټې مساحت او په هر مربع متر 200 روپیو د سمنټ کولو لګښت معلوم کړئ.
+solution Area = 480 m²; cost = Rs 96,000
+sm 24 \times 20 = 480 \text{ m}^2
+ss Cost = area × rate per square metre. || لاگت = رقبہ × فی مربع میٹر شرح۔ || لګښت = مساحت × د هر مربع متر نرخ.
+sm 480 \times 200 = \text{Rs } 96000
+endsolution
+q 7 | Find the area of a square shaped swimming pool if its length is 300 m. || اگر مربع شکل کے سوئمنگ پول کی لمبائی 300 m ہو تو اس کا رقبہ معلوم کریں۔ || که د مربع شکله لامبو حوض اوږدوالی 300 m وي، مساحت یې معلوم کړئ.
+solution 90,000 m²
+sm 300 \times 300 = 90000 \text{ m}^2
+endsolution
+q 8 | The perimeter of a rectangular flowerbed is 244 cm. Find the length of the flowerbed if its width is 44 cm. || ایک مستطیل کیاری کا احاطہ 244 cm ہے۔ اگر اس کی چوڑائی 44 cm ہو تو لمبائی معلوم کریں۔ || د یوې مستطیلي ګلزارې محیط 244 cm دی. که پلنوالی یې 44 cm وي، اوږدوالی یې معلوم کړئ.
+solution 78 cm
+ss Perimeter = 2(L + W). Half the perimeter is L + W. || احاطہ = 2(L + W)۔ آدھا احاطہ L + W ہے۔ || محیط = 2(L + W). نیم محیط L + W دی.
+suse lineq 2(L + 44) = 244|L
+endsolution
+q 9 | Find the length of a rectangular room if its area is 2048 cm² and width is 32 cm. Find the cost of flooring the room at the rate of Rs 250 per cm². || اگر ایک مستطیل کمرے کا رقبہ 2048 cm² اور چوڑائی 32 cm ہو تو اس کی لمبائی معلوم کریں۔ 250 روپے فی cm² کے حساب سے فرش بنانے کی لاگت معلوم کریں۔ || که د یوې مستطیلي کوټې مساحت 2048 cm² او پلنوالی 32 cm وي، اوږدوالی یې معلوم کړئ. په هر cm² 250 روپیو د فرش لګښت معلوم کړئ.
+solution Length = 64 cm; cost = Rs 512,000
+sm \text{length} = \frac{2048}{32} = 64 \text{ cm}
+ss Cost = area × rate. || لاگت = رقبہ × شرح۔ || لګښت = مساحت × نرخ.
+sm 2048 \times 250 = \text{Rs } 512000
+endsolution
+q 10 | The cost of fencing a square garden at the rate of Rs. 25 per metre is Rs. 5625. Find the area of the garden. || 25 روپے فی میٹر کے حساب سے ایک مربع باغ کی باڑ لگانے کی لاگت 5625 روپے ہے۔ باغ کا رقبہ معلوم کریں۔ || په هر متر 25 روپیو د یو مربع باغ د کټارې لګښت 5625 روپۍ دی. د باغ مساحت معلوم کړئ.
+solution 3164.0625 m²
+ss Fencing goes around the garden, so the cost tells us the perimeter: 5625 ÷ 25 = 225 m. || باڑ باغ کے گرد لگتی ہے، اس لیے لاگت سے احاطہ معلوم ہوتا ہے: 5625 ÷ 25 = 225 m۔ || کټاره د باغ شاوخوا لګېږي، نو لګښت محیط ښيي: 5625 ÷ 25 = 225 m.
+ss Side of the square = 225 ÷ 4 = 56.25 m. Area = side × side. || مربع کا ضلع = 225 ÷ 4 = 56.25 m۔ رقبہ = ضلع × ضلع۔ || د مربع ضلع = 225 ÷ 4 = 56.25 m. مساحت = ضلع × ضلع.
+sm 56.25 \times 56.25 = 3164.0625 \text{ m}^2
+ss Teacher's note: the book's answer key gives "225 m²", which is the perimeter (225 m), not the area. || استاد کا نوٹ: کتاب کی جوابی کلید "225 m²" دیتی ہے جو دراصل احاطہ (225 m) ہے، رقبہ نہیں۔ || د ښوونکي یادونه: د کتاب د ځوابونو کلي "225 m²" ورکوي چې په اصل کې محیط (225 m) دی، نه مساحت.
+endsolution
+endexercise

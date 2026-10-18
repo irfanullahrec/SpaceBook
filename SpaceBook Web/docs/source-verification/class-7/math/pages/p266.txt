@@ -1,0 +1,28 @@
+@printed 262
+example 14 | The following data shows the number of a popular ice cream favour that sold during ten days in a shop. Calculate Mean, Median, Mode from the following data 85, 96, 76, 108, 85, 80, 100, 85, 70, 95 and then choose and justify, by comparisons, that which of these is representing the data most accurately. || درج ذیل ڈیٹا ایک دکان میں دس دنوں کے دوران آئس کریم کے ایک مقبول ذائقے کی فروخت کی تعداد دکھاتا ہے۔ درج ذیل ڈیٹا 85, 96, 76, 108, 85, 80, 100, 85, 70, 95 سے اوسط، وسطانیہ اور عادہ معلوم کریں اور پھر موازنہ کر کے منتخب کریں اور جواز دیں کہ ان میں سے کون سا ڈیٹا کو سب سے درست ظاہر کرتا ہے۔ || لاندې معلومات په یوه هټۍ کې په لسو ورځو کې د آیس کریم د یوه مشهور خوند د پلور شمېر ښيي. له لاندې معلوماتو 85, 96, 76, 108, 85, 80, 100, 85, 70, 95 څخه اوسط، میډین او موډ محاسبه کړئ او بیا د پرتلې له لارې وټاکئ او دلیل ورکړئ چې کوم یو معلومات تر ټولو دقیق ښيي.
+@issue The book labels this "Example 1"; numbered 14 here. "favour" is printed for "flavour". The top half of this page is very faint and the left edge is cut off; read from the spread PDF.
+p **Solution:** || **حل:** || **حل:**
+eq \text{Mean } \overline{X} = \dfrac{\sum x}{n} = \dfrac{85+96+76+108+85+80+100+85+70+95}{10} = \dfrac{880}{10} = 88
+p **Median:** Observations in the ascending order are: 70, 76, 80, 85, 85, 85, 95, 96, 100, 108. Here n = 10 is even. || **وسطانیہ:** صعودی ترتیب میں مشاہدات یہ ہیں: 70, 76, 80, 85, 85, 85, 95, 96, 100, 108۔ یہاں n = 10 جفت ہے۔ || **میډین:** په صعودي ترتیب مشاهدې دا دي: 70, 76, 80, 85, 85, 85, 95, 96, 100, 108. دلته n = 10 جفت دی.
+eq \text{Median} = \dfrac{\text{Value of 5th observation} + \text{Value of 6th observation}}{2} = \dfrac{85+85}{2} = 85
+p **Mode:** In the given data, the observation 85 occurs maximum number of times. So, the mode is 85. || **عادہ:** دیے گئے ڈیٹا میں مشاہدہ 85 سب سے زیادہ بار آتا ہے۔ لہٰذا عادہ 85 ہے۔ || **موډ:** په ورکړل شویو معلوماتو کې 85 مشاهده تر ټولو ډېر ځله راځي. نو موډ 85 دی.
+p **Comparison of mean median mode:** || **اوسط، وسطانیہ اور عادہ کا موازنہ:** || **د اوسط، میډین او موډ پرتله:**
+- Here the mean value is 88. But 88 is not present in the data. || یہاں اوسط قیمت 88 ہے۔ لیکن 88 ڈیٹا میں موجود نہیں۔ || دلته اوسط ارزښت 88 دی. خو 88 په معلوماتو کې نشته.
+- Median and mode are same i.e. 85 that is occurring the most number of times. || وسطانیہ اور عادہ یکساں ہیں یعنی 85 جو سب سے زیادہ بار آ رہا ہے۔ || میډین او موډ یو شان دي یعنې 85 چې تر ټولو ډېر ځله راځي.
+p Hence, mean and median in this case are representing the most reliable value as the data is about the popularity or demand of a certain item. || لہٰذا اس صورت میں اوسط اور وسطانیہ سب سے قابلِ اعتماد قیمت ظاہر کر رہے ہیں کیونکہ ڈیٹا کسی خاص چیز کی مقبولیت یا مانگ کے بارے میں ہے۔ || نو په دې حالت کې اوسط او میډین تر ټولو باوري ارزښت ښيي ځکه چې معلومات د یوه ځانګړي توکي د شهرت یا غوښتنې په اړه دي.
+@issue "mean and median" is printed in the conclusion; from the comparison it should be "median and mode". The median's numerator is printed faintly and appears as "85 − 85"; it is 85 + 85. Kept as printed otherwise.
+endexample
+exercise 13.6
+q 1 | Find the mean of the following data: || درج ذیل ڈیٹا کا اوسط معلوم کریں: || د لاندې معلوماتو اوسط پیدا کړئ:
+qp a | 30, 34, 40, 25, 21
+qp b | 51, 68, 45, 62, 78, 68
+qp c | 114, 154, 240, 112
+qp d | 500, 560, 640, 520, 480
+q 2 | Weights (in kg) of 10 people are given below. Find their mean weight. || 10 افراد کے وزن (kg میں) نیچے دیے گئے ہیں۔ ان کا اوسط وزن معلوم کریں۔ || د 10 کسانو وزنونه (په kg) لاندې ورکړل شوي. د هغوی اوسط وزن پیدا کړئ.
+m 60, 72, 58, 66, 54, 63, 77, 60, 59, 71
+q 3 | Average daily earning of a person for the first five days of a week is Rs 2400. If he includes the income of the sixth day his average earning becomes Rs 2500, find the income of the sixth day. || ایک شخص کی ہفتے کے پہلے پانچ دنوں کی اوسط یومیہ کمائی 2400 روپے ہے۔ اگر وہ چھٹے دن کی آمدنی شامل کرے تو اس کی اوسط کمائی 2500 روپے ہو جاتی ہے، چھٹے دن کی آمدنی معلوم کریں۔ || د یوه شخص د اونۍ د لومړیو پنځو ورځو اوسط ورځنۍ ګټه 2400 روپۍ ده. که د شپږمې ورځې عاید ورګډ کړي، د هغه اوسط ګټه 2500 روپۍ کېږي، د شپږمې ورځې عاید پیدا کړئ.
+q 4 | The following table shows the grouped data for the no. of wires of different lengths in a store. Find the mean length of the wires. || درج ذیل جدول ایک اسٹور میں مختلف لمبائی کی تاروں کی تعداد کا گروہی ڈیٹا دکھاتا ہے۔ تاروں کی اوسط لمبائی معلوم کریں۔ || لاندې جدول په یوه پلورنځي کې د بېلابېلو اوږدوالو د تارونو د شمېر ډلبندي معلومات ښيي. د تارونو اوسط اوږدوالی پیدا کړئ.
+table
+th | Lengths of wires (in metres) || تاروں کی لمبائی (میٹر میں) || د تارونو اوږدوالی (په متر) | 1 - 10 | 11 - 20 | 21 - 30 | 31 - 40 | 41 - 50
+tr | Frequency || تعدد || تکرار | 2 | 7 | 10 | 3 | 1
+endtable

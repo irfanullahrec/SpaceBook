@@ -1,0 +1,28 @@
+@printed 61
+exercise Subtract 1-digit numbers (Pages 61-62)
+p Count and subtract. Then use the symbol '−' and '=' and write the correct answer. || گنیں اور تفریق کریں۔ پھر '−' اور '=' کی علامت استعمال کر کے درست جواب لکھیں۔ || وشمېرئ او تفریق کړئ. بیا د '−' او '=' نښې وکاروئ او سم ځواب ولیکئ.
+q 1 | Ducks: 5 ☐ ☐ = ☐ || بطخیں: ۵ ☐ ☐ = ☐ || هیلۍ: ۵ ☐ ☐ = ☐
+cnt duck:5x4 | [5] [] [] [=] [] || 5 ducks, 4 crossed out || ۵ بطخیں، ۴ کاٹی گئیں || ۵ هیلۍ، ۴ کټ شوې
+sol 5 − 4 = 1 ## 4 of the 5 ducks are crossed out; 1 is left. || ۵ میں سے ۴ بطخیں کاٹی گئیں؛ ۱ باقی ہے۔ || له ۵ نه ۴ هیلۍ کټ شوې؛ ۱ پاتې ده.
+q 2 | Aeroplanes: 4 − 4 = ☐ || ہوائی جہاز: ۴ − ۴ = ☐ || الوتکې: ۴ − ۴ = ☐
+cnt plane.green:4x4 | [4] [−] [4] [=] [] || 4 aeroplanes, all crossed out || ۴ ہوائی جہاز، سب کاٹے گئے || ۴ الوتکې، ټولې کټ شوې
+sol 0 ## All 4 are taken away, so none is left: 4 − 4 = 0. || چاروں نکال دیے گئے، کوئی باقی نہیں: ۴ − ۴ = ۰۔ || ټولې ۴ لرې شوې، هېڅ پاتې نه شوه: ۴ − ۴ = ۰.
+q 3 | Tomatoes: 7 ☐ ☐ = ☐ || ٹماٹر: ۷ ☐ ☐ = ☐ || رومیان: ۷ ☐ ☐ = ☐
+cnt tomato:7x6 | [7] [] [] [=] [] || 7 tomatoes, 6 crossed out || ۷ ٹماٹر، ۶ کاٹے گئے || ۷ رومیان، ۶ کټ شوي
+sol 7 − 6 = 1 ## 6 tomatoes are crossed out; 1 is left. || ۶ ٹماٹر کاٹے گئے؛ ۱ باقی ہے۔ || ۶ رومیان کټ شوي؛ ۱ پاتې دی.
+q 4 | Turtles: ☐ − ☐ ☐ 2 || کچھوے: ☐ − ☐ ☐ ۲ || کیشپان: ☐ − ☐ ☐ ۲
+cnt turtle:8x6 | [] [−] [] [] [2] || 8 turtles, 6 crossed out || ۸ کچھوے، ۶ کاٹے گئے || ۸ کیشپان، ۶ کټ شوي
+sol 8 − 6 = 2 ## There are 8 turtles and 6 are crossed out; 2 are left. || ۸ کچھوے ہیں اور ۶ کاٹے گئے؛ ۲ باقی ہیں۔ || ۸ کیشپان دي او ۶ کټ شوي؛ ۲ پاتې دي.
+box info | Key Fact || اہم نکتہ || مهم ټکی
+p When a number is subtracted from itself, the result is always zero. || جب کسی عدد کو اسی عدد سے تفریق کیا جائے تو نتیجہ ہمیشہ صفر ہوتا ہے۔ || کله چې یو عدد له خپل ځان نه تفریق شي، پایله تل صفر وي.
+endbox
+p Subtract. || تفریق کریں۔ || تفریق کړئ.
+q 5 | 9 − 7 || ۹ − ۷ || ۹ − ۷
+cnt [9] pencil.green:9 | "−" [7] pencil.green:7 | [] || 9 pencils take away 7 pencils || ۹ پنسلوں میں سے ۷ نکالیں || له ۹ پنسلو نه ۷ لرې کړئ
+sol 2 ## 9 − 7 = 2 || ۹ − ۷ = ۲ || ۹ − ۷ = ۲
+q 6 | 6 − 1 || ۶ − ۱ || ۶ − ۱
+cnt [6] book.orange:6 | "−" [1] book.orange:1 | [] || 6 books take away 1 book || ۶ کتابوں میں سے ۱ نکالیں || له ۶ کتابونو نه ۱ لرې کړئ
+sol 5 ## 6 − 1 = 5 || ۶ − ۱ = ۵ || ۶ − ۱ = ۵
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask students to subtract 1-digit numbers using number and symbol cards. || طلبہ سے نمبر اور علامت کارڈ کی مدد سے ایک ہندسی اعداد تفریق کروائیں۔ || له زده کوونکو وغواړئ چې د عددونو او نښو د کارتونو په مرسته یو رقمي عددونه تفریق کړي.
+endbox

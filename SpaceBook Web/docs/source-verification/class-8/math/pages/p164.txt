@@ -1,0 +1,50 @@
+@printed 156
+@issue Example 1 prints the second exponent as "(4/5)⁻²" and works (5/4)² but then multiplies by (4×4)/(5×5), giving 1024/675 = 64/27 × 16/25 (the ÷ became ×); kept as printed. "(−2)³ = −,8" is printed with a stray comma. The page restarts example numbering after "6) Power of Negative Integers".
+example 1
+p Simplify $\left(\frac{3}{4}\right)^{-3} \div \left(\frac{4}{5}\right)^{-2}$ || $\left(\frac{3}{4}\right)^{-3} \div \left(\frac{4}{5}\right)^{-2}$ کو مختصر کریں || $\left(\frac{3}{4}\right)^{-3} \div \left(\frac{4}{5}\right)^{-2}$ ساده کړئ
+## Solution: || حل: || حل:
+m $\left(\frac{3}{4}\right)^{-3} \div \left(\frac{4}{5}\right)^{-2} = \left(\frac{4}{3}\right)^3 \div \left(\frac{5}{4}\right)^2$
+m $= \frac{4 \times 4 \times 4}{3 \times 3 \times 3} \times \frac{4 \times 4}{5 \times 5}$
+m $= \frac{1024}{675}$
+endexample
+## 6) Power (exponent) of Negative Integers (bases) || 6) منفی صحیح اعداد (اساس) کی قوت (قوت نما) || 6) د منفي تامو عددونو (قاعدو) توان
+p Multiplication of negative integers can also be written in exponential form. Consider these examples: || منفی صحیح اعداد کی ضرب کو بھی قوت نمائی شکل میں لکھا جا سکتا ہے۔ ان مثالوں پر غور کریں: || د منفي تامو عددونو ضرب هم په توانیزه بڼه لیکل کېدای شي. دې بېلګو ته پام وکړئ:
+m $(-2) \times (-2) = (-2)^2 = 4$ (minus × minus = plus)
+m $(-2) \times (-2) \times (-2) = (-2)^3 = -8$
+p (Here, minus × minus = plus. Another minus turns the result into minus). || (یہاں منفی × منفی = مثبت۔ ایک اور منفی نتیجے کو منفی بنا دیتا ہے)۔ || (دلته منفي × منفي = مثبت. بل منفي پایله منفي کوي).
+p Similarly, || اسی طرح، || همدارنګه،
+m $(-2) \times (-2) \times (-2) \times (-2) = (-2)^4 = 16$
+m $(-2) \times (-2) \times (-2) \times (-2) \times (-2) = (-2)^5 = -32$
+p From these examples, we can observe that: || ان مثالوں سے ہم دیکھ سکتے ہیں کہ: || له دې بېلګو لیدلی شو چې:
+- If a negative base has an even exponent, the value (answer) will always be positive. || اگر منفی اساس کا قوت نما جفت ہو تو قیمت (جواب) ہمیشہ مثبت ہوگی۔ || که منفي قاعده جفت توان ولري، ارزښت (ځواب) به تل مثبت وي.
+- If a negative base has an odd exponent, the value (answer) will always be negative. || اگر منفی اساس کا قوت نما طاق ہو تو قیمت (جواب) ہمیشہ منفی ہوگی۔ || که منفي قاعده طاق توان ولري، ارزښت (ځواب) به تل منفي وي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Solve: || حل کریں: || حل یې کړئ:
+qp a | $(-9) \times (-9) \times (-9)$
+qp b | $(-5) \times (-5) \times (-5) \times (-5) \times (-5) \times (-5)$
+qp c | $(-6)^5$
+qp d | $(-4)^4$
+qp e | $(-7)^3$
+endbox
+example 1
+p Find the value of $(-4)^3$. || $(-4)^3$ کی قیمت معلوم کریں۔ || د $(-4)^3$ ارزښت معلوم کړئ.
+m $(-4)^3 = (-4) \times (-4) \times (-4) = -64$
+endexample
+example 2
+p Find the value of $(-3)^5 \times (-3)^7$. || $(-3)^5 \times (-3)^7$ کی قیمت معلوم کریں۔ || د $(-3)^5 \times (-3)^7$ ارزښت معلوم کړئ.
+m $(-3)^5 = (-3) \times (-3) \times (-3) \times (-3) \times (-3) = -243$
+m $(-3)^7 = (-3) \times (-3) \times (-3) \times (-3) \times (-3) \times (-3) \times (-3) = -2187$
+p So, || لہٰذا، || نو،
+m $(-3)^5 \times (-3)^7 = (-3)^{12} = 531441$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Following are the sign rules: || علامات کے اصول یہ ہیں: || د نښو قاعدې دا دي:
+m $(+) \times (+) = (+)$
+m $(-) \times (-) = (+)$
+m $(+) \times (-) = (-)$
+m $(-) \times (+) = (-)$
+endbox
+example 3
+p Find the value of $(-2)^3 \times (-2)^2$. || $(-2)^3 \times (-2)^2$ کی قیمت معلوم کریں۔ || د $(-2)^3 \times (-2)^2$ ارزښت معلوم کړئ.
+m $(-2)^3 \times (-2)^2 = (-2)^{3+2} = (-2)^5 = -32$
+endexample

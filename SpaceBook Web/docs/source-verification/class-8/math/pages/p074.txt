@@ -1,0 +1,30 @@
+@printed 70
+## Solution: || حل: || حل:
+p **Procedure:** || **طریقۂ کار:** || **کړنلاره:**
+qp a | Make pairs of the whole part of the number from right to left and that of decimal part of the number from left to right. || عدد کے مکمل حصے کے جوڑے دائیں سے بائیں اور اعشاری حصے کے جوڑے بائیں سے دائیں بنائیں۔ || د عدد د بشپړې برخې جوړې له ښي څخه کیڼ ته او د اعشاري برخې جوړې له کیڼ څخه ښي ته جوړې کړئ.
+qp b | When a pair of digits after the decimal point is brought down place the decimal point in the quotient. || جب اعشاریہ کے بعد ہندسوں کا کوئی جوڑا نیچے لایا جائے تو خارج قسمت میں اعشاریہ لگائیں۔ || کله چې د اعشاري ټکي وروسته د رقمونو یوه جوړه ښکته راوړل شي، په خارج قسمت کې اعشاري ټکی کېږدئ.
+qp c | Solve, like the whole numbers as explained before in division method for finding the square root of whole numbers. || پہلے بیان کردہ مکمل اعداد کے جذر المربع معلوم کرنے کے تقسیم کے طریقے کی طرح حل کریں۔ || لکه څنګه چې مخکې د بشپړو عددونو د مربع جذر موندلو لپاره د وېش په طریقه کې تشریح شول، همداسې یې حل کړئ.
+m a) 1.0201
+sqdiv q=1.01 | n=1. 02 01 | 1: | :-1____ | 20:02__ | :-00__ | 201:201 | :-201 | :0
+m b) 18.4041
+sqdiv q=4.29 | n=18. 40 41 | 4: | :-16____ | 82:240__ | :-164__ | 849:7641 | :-7641 | :0
+m $\therefore \sqrt{18.4041} = 4.29$
+m c) 904.2049
+sqdiv q=30.07 | n=9 04. 20 49 | 3: | :-9______ | 60:04____ | :-00____ | 600:420__ | :-000__ | 6007:42049 | :-42049 | :0
+m $\therefore \sqrt{904.2049} = 30.07$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In decimal fraction, if the number of digits after the decimal point is odd, we place, '0' to make complete pairs. || اعشاری کسر میں اگر اعشاریہ کے بعد ہندسوں کی تعداد طاق ہو تو مکمل جوڑے بنانے کے لیے ہم '0' لگاتے ہیں۔ || په اعشاري کسر کې، که د اعشاري ټکي وروسته د رقمونو شمېر طاق وي، د بشپړو جوړو د جوړولو لپاره '0' ږدو.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p 1. Find the square root of the following fractions by division method. || 1. تقسیم کے طریقے سے درج ذیل کسور کا جذر المربع معلوم کریں۔ || 1. د وېش په طریقه د لاندې کسرونو مربع جذر معلوم کړئ.
+qp a | $\frac{25}{121}$
+qp b | $\frac{1521}{2809}$
+p 2. Find the square root of the following decimal numbers by division method. || 2. تقسیم کے طریقے سے درج ذیل اعشاری اعداد کا جذر المربع معلوم کریں۔ || 2. د وېش په طریقه د لاندې اعشاري عددونو مربع جذر معلوم کړئ.
+qp a | 0.81
+qp b | 0.02304
+endbox
+## 4.1.4 Number of Digits in the Square Root of a Perfect Square || 4.1.4 کامل مربع کے جذر المربع میں ہندسوں کی تعداد || 4.1.4 د بشپړې مربع په مربع جذر کې د رقمونو شمېر
+p While finding square roots of large numbers, it is useful to determine the number of digits in the square root. || بڑے اعداد کے جذر المربع معلوم کرتے وقت جذر المربع میں ہندسوں کی تعداد معلوم کرنا مفید ہوتا ہے۔ || د لویو عددونو د مربع جذرونو د موندلو پر مهال، په مربع جذر کې د رقمونو د شمېر ټاکل ګټور دي.
+p This help us to avoid confusion, when bringing down two pairs together or solving decimal fractions. || یہ ہمیں دو جوڑے ایک ساتھ نیچے لاتے وقت یا اعشاری کسور حل کرتے وقت الجھن سے بچنے میں مدد دیتا ہے۔ || دا له موږ سره مرسته کوي چې د دوو جوړو د یوځای ښکته راوړلو یا د اعشاري کسرونو د حل پر مهال له ګډوډۍ ډډه وکړو.
+p We use the following rule to determine the number of digits in the square root of a perfect square. || کامل مربع کے جذر المربع میں ہندسوں کی تعداد معلوم کرنے کے لیے ہم درج ذیل اصول استعمال کرتے ہیں۔ || د بشپړې مربع په مربع جذر کې د رقمونو د شمېر ټاکلو لپاره لاندې قاعده کاروو.

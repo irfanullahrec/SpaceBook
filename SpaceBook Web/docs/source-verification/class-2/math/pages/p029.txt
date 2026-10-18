@@ -1,0 +1,31 @@
+@printed 24
+@sec hundreds | Counting in 100s || سو سو کر کے گنتی || په سلګونو شمېرنه
+@deco A girl speaks "Let us count in 100s"; stacks of 1 to 5 hundred-flats.
+@issue The empty cells of Try Yourself Q1 are not printed as boxes; six columns are read from the positions of the printed numbers (row 3 ends with 950 in column 6).
+# Counting in 100s || سو سو کر کے گنتی || په سلګونو شمېرنه
+p “Let us count in 100s.” || ”آئیے سو سو کر کے گنیں۔“ || ”راځئ په سلګونو وشمېرو.“
+table Stacks of hundred-flats || سو کے تختوں کے ڈھیر || د سلګونو د تختو ډېرونه
+th Hundred-flats | 1 | 2 | 3 | 4 | 5
+tr Number | 100 | 200 | 300 | 400 | 500
+endtable
+jumps 100,200,300,400,500 | +100 || Counting on in 100s: +100 each time. || سو سو آگے گنتی: ہر بار +100۔ || په سلګونو مخ ته شمېرنه: هر ځل +100.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q 1 | Complete the following by counting in 100s. || سو سو کر کے گنتے ہوئے درج ذیل کو مکمل کریں۔ || په سلګونو شمېرلو سره لاندې بشپړ کړئ.
+qp a | 300, ___, ___, 600, ___, ___
+sol 400, 500, 700, 800 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+qp b | 210, 310, ___, ___, 610, ___
+sol 410, 510, 710 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+qp c | 450, ___, ___, ___, ___, 950
+sol 550, 650, 750, 850 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+q 2 | Write the next 5 numbers by counting in 100s. || سو سو کر کے گنتے ہوئے اگلے 5 اعداد لکھیں۔ || په سلګونو شمېرلو سره راتلونکي 5 عددونه ولیکئ.
+qp a | 105 → 205, 305, 405, 505, 605 (done in the textbook)
+qp b | 330
+sol 430, 530, 630, 730, 830 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+qp c | 190
+sol 290, 390, 490, 590, 690 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+qp d | 444
+sol 544, 644, 744, 844, 944 ## Add 100 each time. || ہر بار 100 جمع کریں۔ || هر ځل 100 زیات کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Encourage the students to read and write the next numbers from the given numbers by counting in 100s. || طلبہ کی حوصلہ افزائی کریں کہ دیے گئے اعداد سے سو سو کر کے اگلے اعداد پڑھیں اور لکھیں۔ || زده کوونکي وهڅوئ چې له ورکړل شویو عددونو په سلګونو راتلونکي عددونه ولولي او ولیکي.
+endbox

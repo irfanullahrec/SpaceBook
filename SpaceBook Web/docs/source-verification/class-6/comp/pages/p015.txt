@@ -1,0 +1,31 @@
+@printed 11
+@status lesson
+table
+th Device || آلہ || وسیله | Description || تفصیل || تشریح
+tr Wireless Access Point || وائرلیس ایکسیس پوائنٹ || بېسیمه لاسرسي ټکی | **Wireless Access Point (WAP)** is a network device that connects to a wired router and allows communication devices to transfer data wirelessly. || **وائرلیس ایکسیس پوائنٹ (WAP)** نیٹ ورک کا ایسا آلہ ہے جو تار والے راؤٹر سے جڑ کر مواصلاتی آلات کو بغیر تار کے ڈیٹا منتقل کرنے دیتا ہے۔ || **بېسیمه لاسرسي ټکی (WAP)** د شبکې وسیله ده چې له سیمدار روټر سره نښلي او وسایلو ته اجازه ورکوي چې بې سیمه ډېټا ولېږدوي.
+tr Bluetooth || بلوٹوتھ || بلوټوث | **Bluetooth** is a wireless technology for short range wireless interconnection of mobile phones, computer, headphones, speaker, printers and other electronic devices. || **بلوٹوتھ** ایک وائرلیس ٹیکنالوجی ہے جو موبائل فون، کمپیوٹر، ہیڈ فون، اسپیکر، پرنٹر اور دوسرے برقی آلات کو کم فاصلے پر بغیر تار کے جوڑتی ہے۔ || **بلوټوث** بېسیمه ټکنالوژي ده چې ګرځنده تلیفونونه، کمپیوټر، هډفون، سپیکر، پرنټر او نور وسایل په لنډ واټن بې سیمه نښلوي.
+tr DSL Modem || ڈی ایس ایل موڈیم || DSL موډیم | **Digital Subscriber Line (DSL) Modem** provides high speed connectivity to the Internet using ordinary telephone lines. || **ڈیجیٹل سبسکرائبر لائن (DSL) موڈیم** عام ٹیلی فون لائنوں کے ذریعے انٹرنیٹ سے تیز رفتار رابطہ فراہم کرتا ہے۔ || **ډیجیټل ګډون کرښه (DSL) موډیم** د عادي تلیفون لینونو له لارې چټک انټرنېټ ورکوي.
+endtable
+box info | Do you know! || کیا آپ جانتے ہیں! || ایا پوهېږئ!
+p The signal range of bluetooth varies from 10 meters to 240 meters. || بلوٹوتھ کے سگنل کی حد 10 میٹر سے 240 میٹر تک ہوتی ہے۔ || د بلوټوث د سګنال واټن له 10 متره تر 240 متره پورې دی.
+endbox
+## 1.6.4 System Unit || 1.6.4 سسٹم یونٹ || 1.6.4 سیسټم یونټ
+p The system unit is the case that contains all the electronic components of a computer system like mother board, power supply, RAM, CPU (micro processor), Hard Disk Drive, Optical Drive etc. || سسٹم یونٹ وہ ڈبا (کیس) ہے جس میں کمپیوٹر سسٹم کے تمام برقی اجزا ہوتے ہیں، جیسے مدر بورڈ، پاور سپلائی، RAM، CPU (مائیکروپروسیسر)، ہارڈ ڈسک ڈرائیو، آپٹیکل ڈرائیو وغیرہ۔ || سیسټم یونټ هغه بکس دی چې د کمپیوټر ټولې برېښنايي برخې لري، لکه مادربورډ، د برېښنا رسونکی، RAM، CPU (مایکروپروسیسر)، هارډ ډیسک او نوري ډرایو.
+svg System unit: inside are the Power Supply, Fan, ROM chip and RAM module; the front panel has the Power switch, Restart switch, USB Port, Speaker Port and Microphone Port. || سسٹم یونٹ: اندر پاور سپلائی، پنکھا، ROM چپ اور RAM؛ سامنے پاور سوئچ، ری اسٹارٹ سوئچ، USB پورٹ، اسپیکر پورٹ اور مائیکروفون پورٹ۔ || سیسټم یونټ: دننه د برېښنا رسونکی، پکه، ROM او RAM؛ مخې ته د برېښنا تڼۍ، بیا پیلولو تڼۍ، USB، سپیکر او مایکروفون پورټونه.
+<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="System unit parts">
+<rect x="40" y="20" width="150" height="220" rx="6" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<rect x="50" y="30" width="130" height="40" fill="#94a3b8" stroke="#334155"/><text x="115" y="55" text-anchor="middle" fill="#1e293b">Power Supply</text>
+<circle cx="80" cy="110" r="22" fill="#cbd5e1" stroke="#334155"/><path d="M80 90 L80 130 M60 110 L100 110" stroke="#334155"/><text x="80" y="148" text-anchor="middle" fill="#1e293b">Fan</text>
+<rect x="125" y="95" width="45" height="70" fill="#86efac" stroke="#166534"/><text x="147" y="133" text-anchor="middle" fill="#14532d" font-size="10">Mother</text><text x="147" y="145" text-anchor="middle" fill="#14532d" font-size="10">board</text>
+<rect x="55" y="180" width="30" height="25" fill="#1e293b"/><text x="70" y="222" text-anchor="middle" fill="#1e293b">ROM</text>
+<rect x="100" y="185" width="80" height="14" fill="#16a34a" stroke="#14532d"/><text x="140" y="222" text-anchor="middle" fill="#1e293b">RAM</text>
+<rect x="250" y="40" width="170" height="70" rx="4" fill="#1e293b"/>
+<circle cx="390" cy="65" r="9" fill="none" stroke="#38bdf8" stroke-width="2"/><circle cx="395" cy="95" r="4" fill="#94a3b8"/>
+<rect x="265" y="85" width="22" height="9" fill="#e2e8f0"/><circle cx="305" cy="90" r="5" fill="#f9a8d4"/><circle cx="325" cy="90" r="5" fill="#86efac"/>
+<g fill="#1e293b"><text x="370" y="30">Power switch</text><text x="395" y="130">Restart switch</text><text x="245" y="135">USB Port</text><text x="285" y="155">Speaker Port</text><text x="320" y="175">Microphone Port</text><text x="260" y="215" font-weight="bold">Front panel of the system unit</text></g>
+<g stroke="#db2777" fill="none"><path d="M390 34 V55 M397 100 L410 118 M276 95 L270 123 M305 96 L300 143 M325 96 L340 163"/></g>
+</svg>
+endsvg
+box info | Do you know! || کیا آپ جانتے ہیں! || ایا پوهېږئ!
+p 0 or 1 are Binary digits (Bit) · 8 Bit = 1 Byte · 1024 Bytes = 1KB (Kilobyte) || 0 یا 1 بائنری ہندسے (بِٹ) ہیں · 8 بٹ = 1 بائٹ · 1024 بائٹ = 1 کلو بائٹ (KB) || 0 یا 1 دوه ګوني عددونه (بټ) دي · 8 بټه = 1 بایټ · 1024 بایټه = 1 کیلوبایټ (KB)
+endbox

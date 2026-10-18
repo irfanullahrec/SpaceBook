@@ -1,0 +1,18 @@
+@printed 131
+@deco Five wall clocks with answer boxes.
+q 2 | Read the time from the following analog clock and write in the box. || درج ذیل اینالاگ گھڑی سے وقت پڑھیں اور خانے میں لکھیں۔ || له لاندې انالوګ ګړۍ وخت ولولئ او په خانه کې یې ولیکئ.
+qp i | Clock (i)
+clock 5:00
+sol 5:00 ## The long hand is on 12 and the short hand is on 5. || بڑی سوئی 12 پر اور چھوٹی سوئی 5 پر ہے۔ || اوږده ستنه په 12 او لنډه ستنه په 5 ده.
+qp ii | Clock (ii)
+clock 6:40
+sol 6:40 ## The long hand is on 8 (40 minutes) and the short hand is between 6 and 7. || بڑی سوئی 8 پر (40 منٹ) اور چھوٹی 6 اور 7 کے درمیان ہے۔ || اوږده ستنه په 8 (40 دقیقې) او لنډه د 6 او 7 ترمنځ ده.
+qp iii | Clock (iii)
+clock 3:00
+sol 3:00 ## The long hand is on 12 and the short hand is on 3. || بڑی سوئی 12 پر اور چھوٹی سوئی 3 پر ہے۔ || اوږده ستنه په 12 او لنډه ستنه په 3 ده.
+qp iv | Clock (iv)
+clock 4:05
+sol 4:05 ## The long hand is on 1 (5 minutes) and the short hand is just past 4. || بڑی سوئی 1 پر (5 منٹ) اور چھوٹی 4 سے ذرا آگے ہے۔ || اوږده ستنه په 1 (5 دقیقې) او لنډه له 4 لږ وروسته ده.
+qp v | Clock (v)
+clock 4:40
+sol 4:40 ## The long hand is on 8 (40 minutes) and the short hand is between 4 and 5. || بڑی سوئی 8 پر (40 منٹ) اور چھوٹی 4 اور 5 کے درمیان ہے۔ || اوږده ستنه په 8 (40 دقیقې) او لنډه د 4 او 5 ترمنځ ده.

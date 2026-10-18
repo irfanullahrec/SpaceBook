@@ -1,0 +1,37 @@
+@printed 120
+@issue Exercise 6.5 v) prints "20xy³y²"; kept as printed.
+exercise 6.5
+q 1 | Subtract the first polynomial from the second in each of the following questions. || درج ذیل ہر سوال میں پہلی کثیر رقمی کو دوسری سے تفریق کریں۔ || په لاندې هره پوښتنه کې لومړۍ څو حدي افاده له دوهمې څخه تفریق کړئ.
+qp i | $15a - 18b + 24c$, $35a - 40b + 34c$
+qp ii | $a^3 + a^2b + ab^2 + b^3$, $4a^3 + a^2b + 2ab^2 - b^3$
+qp iii | $p^4 - 5p^3 + 3p^2 - 15$, $p^5 + p^4 + 5p^3 + 3p^2 + 15$
+qp iv | $9x^4 - 16x^3 + 12x + 17$, $25x^5 - 36x^3 + 12x^2 + 20x + 40$
+qp v | $10x^5 - 13x^4y^3 + 33x^3y^2$, $37x^5 - 33x^4y^3 + 20xy^3y^2 + 31y^5$
+endexercise
+@sec 6.6 | Multiplication of Polynomials || کثیر رقمیوں کی ضرب || د څو حدي افادو ضرب
+# 6.6 Multiplication of Polynomials || 6.6 کثیر رقمیوں کی ضرب || 6.6 د څو حدي افادو ضرب
+p We have learnt the multiplication of polynomials in detail in Grade VII. It is one of the most basic concepts of algebra. To recall the concept of multiplication of polynomial consider the following examples. || ہم ساتویں جماعت میں کثیر رقمیوں کی ضرب تفصیل سے سیکھ چکے ہیں۔ یہ الجبرا کے سب سے بنیادی تصورات میں سے ایک ہے۔ کثیر رقمیوں کی ضرب کا تصور یاد کرنے کے لیے درج ذیل مثالوں پر غور کریں۔ || موږ په اووم ټولګي کې د څو حدي افادو ضرب په تفصیل زده کړی. دا د الجبر یو له تر ټولو بنسټیزو مفاهیمو څخه دی. د څو حدي افادو د ضرب د مفهوم د را یادولو لپاره لاندې بېلګو ته پام وکړئ.
+example 1
+p Multiply $(x - 2)$ and $(x + 3)$ || $(x - 2)$ اور $(x + 3)$ کو ضرب دیں || $(x - 2)$ او $(x + 3)$ ضرب کړئ
+## Solution: || حل: || حل:
+m $(x - 2)(x + 3)$
+m $= x(x + 3) - 2(x + 3)$
+m $= x^2 + 3x - 2x - 6$
+m $= x^2 + x - 6$
+endexample
+example 2
+p Multiply $(2x + 3)$ and $(x^2 - 7x + 5)$ || $(2x + 3)$ اور $(x^2 - 7x + 5)$ کو ضرب دیں || $(2x + 3)$ او $(x^2 - 7x + 5)$ ضرب کړئ
+## Solution: || حل: || حل:
+m $(2x + 3)(x^2 - 7x + 5)$
+m $= 2x(x^2 - 7x + 5) + 3(x^2 - 7x + 5)$
+m $= 2x^3 - 14x^2 + 10x + 3x^2 - 21x + 15$
+m $= 2x^3 - 14x^2 + 3x^2 + 10x - 21x + 15$
+m $= 2x^3 - 11x^2 - 11x + 15$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- Two or more polynomials can be multiplied with each other. || دو یا زیادہ کثیر رقمیوں کو آپس میں ضرب دیا جا سکتا ہے۔ || دوه یا ډېرې څو حدي افادې یو له بل سره ضربېدای شي.
+- The answer obtained by multiplying two or more polynomials is called their product. || دو یا زیادہ کثیر رقمیوں کو ضرب دینے سے حاصل ہونے والا جواب ان کا حاصلِ ضرب کہلاتا ہے۔ || هغه ځواب چې د دوو یا ډېرو څو حدي افادو د ضربولو سره لاسته راځي، د هغوی حاصل ضرب بلل کېږي.
+- The polynomials being multiplied are the factors of the product. || ضرب دی جانے والی کثیر رقمیاں حاصلِ ضرب کے اجزائے ضربی ہیں۔ || ضربېدونکې څو حدي افادې د حاصل ضرب عاملونه دي.
+- The degree of a product of two or more polynomials can never be smaller than any of its factors. || دو یا زیادہ کثیر رقمیوں کے حاصلِ ضرب کا درجہ کبھی بھی اس کے کسی جزوِ ضربی سے کم نہیں ہو سکتا۔ || د دوو یا ډېرو څو حدي افادو د حاصل ضرب درجه هېڅکله د هغه له کوم عامل څخه کمه نه شي کېدای.
+- The degree of a product of two or more polynomials is equal to the sum of the degree of the polynomials being multiplied. || دو یا زیادہ کثیر رقمیوں کے حاصلِ ضرب کا درجہ ضرب دی جانے والی کثیر رقمیوں کے درجوں کے مجموعے کے برابر ہوتا ہے۔ || د دوو یا ډېرو څو حدي افادو د حاصل ضرب درجه د ضربېدونکو څو حدي افادو د درجو له مجموعې سره برابره ده.
+endbox

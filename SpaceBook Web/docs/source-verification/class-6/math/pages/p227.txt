@@ -1,0 +1,25 @@
+@printed 225
+example 1 | Find the mean of the values 2, 5, 6, 7, 8. || قیمتوں 2، 5، 6، 7، 8 کا اوسط معلوم کریں۔ || د 2، 5، 6، 7، 8 ارزښتونو اوسط معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \overline{X} &= \frac{\Sigma X}{n} \\ \overline{X} &= \frac{2 + 5 + 6 + 7 + 8}{5} \\ \overline{X} &= \frac{28}{5} \text{ or } \overline{X} = 5.6 \end{aligned}
+endexample
+example 2 | The monthly income of five families is Rs. 5000, Rs. 8200, Rs. 9500, Rs. 9530 and Rs. 10000. Calculate their mean. || پانچ خاندانوں کی ماہانہ آمدنی 5000، 8200، 9500، 9530 اور 10000 روپے ہے۔ ان کا اوسط معلوم کریں۔ || د پنځو کورنیو میاشتنی عاید 5000، 8200، 9500، 9530 او 10000 روپۍ دی. اوسط یې معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \overline{X} &= \frac{\Sigma X}{n} \\ \overline{X} &= \frac{500 + 8200 + 9500 + 9530 + 10000}{5} \\ \overline{X} &= \frac{42230}{5} \\ \overline{X} &= \text{Rs. } 8446 \end{aligned}
+endexample
+@issue Example 2 (page 225) prints the first value as "500" in the sum; it should be 5000 (the total 42230 uses 5000). Kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the median of the first 20 even numbers. || پہلے 20 جفت اعداد کا وسطانیہ معلوم کریں۔ || د لومړیو 20 جفتو عددونو منځنی ومومئ.
+endbox
+## 11.4.2 Median || 11.4.2 وسطانیہ || 11.4.2 منځنی
+p The **median** is the value which divides the values into two equal halves arranged either in ascending or descending order. || **وسطانیہ** وہ قیمت ہے جو صعودی یا نزولی ترتیب میں رکھی قیمتوں کو دو برابر حصوں میں تقسیم کرے۔ || **منځنی** هغه ارزښت دی چې په صعودي یا نزولي ترتیب ایښودل شوي ارزښتونه په دوو برابرو نیمو وېشي.
+p To find the median; || وسطانیہ معلوم کرنے کے لیے؛ || د منځني د موندلو لپاره؛
+qp i | Arrange the values in ascending order. || قیمتوں کو صعودی ترتیب میں رکھیں۔ || ارزښتونه په صعودي ترتیب کېږدئ.
+qp ii | If you have odd numbers of values the median is the middle value. || اگر قیمتوں کی تعداد طاق ہو تو وسطانیہ درمیانی قیمت ہے۔ || که د ارزښتونو شمېر طاق وي، منځنی منځنی ارزښت دی.
+qp iii | If you have even number of values, the median is the arithmetic mean of the two middle values i.e, the value of $\frac{(n + 1)}{2}$ th item. || اگر قیمتوں کی تعداد جفت ہو تو وسطانیہ دو درمیانی قیمتوں کا حسابی اوسط ہے، یعنی $\frac{(n + 1)}{2}$ ویں رکن کی قیمت۔ || که د ارزښتونو شمېر جفت وي، منځنی د دوو منځنیو ارزښتونو حسابي اوسط دی، یعنې د $\frac{(n + 1)}{2}$ م توکي ارزښت.
+p Let the solve an example: || آئیے ایک مثال حل کریں: || راځئ یوه بېلګه حل کړو:
+example 1 | Find the median for the following observations. i. 5, 2, 7, 13, 8, 11, 9   ii. 4, 6, 8, 10, 12, 14 || درج ذیل مشاہدات کا وسطانیہ معلوم کریں۔ i. 5، 2، 7، 13، 8، 11، 9   ii. 4، 6، 8، 10، 12، 14 || د لاندې مشاهدو منځنی ومومئ. i. 5، 2، 7، 13، 8، 11، 9   ii. 4، 6، 8، 10، 12، 14
+p **Solution:** || **حل:** || **حل:**
+p i. First we arrange the observations. || i. پہلے ہم مشاہدات کو ترتیب دیتے ہیں۔ || i. لومړی مشاهدې ترتیبوو.
+m 2, 5, 7, 8, 9, 11, 13.
+m Here $n = 7$

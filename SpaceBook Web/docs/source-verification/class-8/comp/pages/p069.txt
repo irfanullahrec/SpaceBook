@@ -1,0 +1,20 @@
+@printed 65
+box code | Output || آؤٹ پٹ || آوټ پټ
+m 1
+m 1 2
+m 1 2 3
+m 1 2 3 4
+m 1 2 3 4 5
+m 1 2 3 4 5 6
+endbox
+p The same program of stars to be printed can be altered to print numbers. This will give you a better understanding how the inner loop is related with the outer loop when we assign the value 'i+1' on line 4. || ستاروں کو پرنٹ کرنے والا وہی پروگرام اعداد پرنٹ کرنے کے لیے بدلا جا سکتا ہے۔ اس سے آپ کو بہتر سمجھ آئے گی کہ جب ہم سطر 4 پر قدر 'i+1' تفویض کرتے ہیں تو اندرونی لوپ کا بیرونی لوپ سے کیا تعلق ہے۔ || د ستورو د چاپولو همدا پروګرام د شمېرو چاپولو لپاره بدلېدای شي. دا به تاسو ته ښه پوهه درکړي چې کله موږ په ۴ کرښه کې ارزښت 'i+1' ورکوو نو دننی لوپ له بهرني لوپ سره څنګه اړیکه لري.
+p The point to note here is that, line 1 and line 3 are the same. Line 1 is initializing the value of the variable 'num' as soon as the program starts while line 3 is doing the same but for every iteration of outer loop. || یہاں نوٹ کرنے کی بات یہ ہے کہ سطر 1 اور سطر 3 ایک جیسی ہیں۔ سطر 1 پروگرام شروع ہوتے ہی متغیر 'num' کی قدر شروع کرتی ہے جبکہ سطر 3 بھی یہی کرتی ہے لیکن بیرونی لوپ کی ہر تکرار کے لیے۔ || دلته د یادولو ټکی دا دی چې ۱ او ۳ کرښې یو شان دي. ۱ کرښه د پروګرام د پیل سره سم د متغیر 'num' ارزښت پیلوي پداسې حال کې چې ۳ کرښه همدا کار کوي خو د بهرني لوپ د هر تکرار لپاره.
+box code | Output (after line 3 is removed) || آؤٹ پٹ (سطر 3 ہٹانے کے بعد) || آوټ پټ (د ۳ کرښې لرې کولو وروسته)
+m 1
+m 2 3
+m 4 5 6
+m 7 8 9 10
+m 11 12 13 14 15
+m 16 17 18 19 20 21
+endbox
+p However, if we remove the line 3 then value of the number to be printed will be in continuation and hence every line will not start with 1. || تاہم اگر ہم سطر 3 ہٹا دیں تو پرنٹ ہونے والے عدد کی قدر تسلسل میں ہوگی اور اس لیے ہر لائن 1 سے شروع نہیں ہوگی۔ || خو که موږ ۳ کرښه لرې کړو نو د چاپېدونکې شمېرې ارزښت په پرله پسې ډول وي او له دې امله به هره کرښه په ۱ نه پیلېږي.

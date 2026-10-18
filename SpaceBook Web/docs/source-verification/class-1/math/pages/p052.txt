@@ -1,0 +1,24 @@
+@printed 48
+exercise Count and add (Page 48)
+p Count and add. || گنیں اور جمع کریں۔ || وشمېرئ او جمع کړئ.
+q 1 | Butterflies || تتلیاں || پتنګان
+cnt butterfly:4 [] "+" butterfly:2 [] "=" butterfly:6 [] || butterflies || تتلیاں || پتنګان
+sol 4 + 2 = 6 ## 4 butterflies and 2 butterflies make 6. || ۴ اور ۲ تتلیاں مل کر ۶ ہیں۔ || ۴ او ۲ پتنګان ګډ ۶ کېږي.
+q 2 | Ice creams || آئس کریم || آیس کرېمونه
+cnt icecream:4 [] "+" icecream:4 [] "=" icecream:8 [] || ice creams || آئس کریم || آیس کرېمونه
+sol 4 + 4 = 8 ## 4 and 4 make 8. || ۴ اور ۴ مل کر ۸۔ || ۴ او ۴ ګډ ۸.
+p Count and add. Then use the symbol '+' and '=' and write the correct answer. || گنیں اور جمع کریں۔ پھر '+' اور '=' کی علامت استعمال کر کے درست جواب لکھیں۔ || وشمېرئ او جمع کړئ. بیا د '+' او '=' نښې وکاروئ او سم ځواب ولیکئ.
+q 3 | Doughnuts || ڈونٹ || ډونټونه
+cnt donut:5/3 frame donut:2 frame donut:7/4 frame | [] [+] [] [] [] || doughnuts || ڈونٹ || ډونټونه
+sol 5 + 2 = 7 ## Count each box: 5, 2 and 7. || ہر خانہ گنیں: ۵، ۲ اور ۷۔ || هره خونه وشمېرئ: ۵، ۲ او ۷.
+q 4 | Sharpeners || شارپنر || تراشونکي
+cnt sharpener.navy:3 frame sharpener.navy:5/3 frame sharpener.navy:8/4 frame | [] [] [] [=] [] || sharpeners || شارپنر || تراشونکي
+sol 3 + 5 = 8 ## Count each box: 3, 5 and 8. || ہر خانہ گنیں: ۳، ۵ اور ۸۔ || هره خونه وشمېرئ: ۳، ۵ او ۸.
+p Count and add. || گنیں اور جمع کریں۔ || وشمېرئ او جمع کړئ.
+q 5 | Strawberries (3 and 2) || اسٹرابیریاں (۳ اور ۲) || سټرابېرۍ (۳ او ۲)
+cnt [] strawberry:3 | "+" [] strawberry:2 | [] || strawberries || اسٹرابیریاں || سټرابېرۍ
+sol 3 + 2 = 5 ## 3 strawberries and 2 strawberries make 5. || ۳ اور ۲ اسٹرابیریاں مل کر ۵۔ || ۳ او ۲ سټرابېرۍ ګډ ۵.
+q 6 | Strawberries (5 and 2) || اسٹرابیریاں (۵ اور ۲) || سټرابېرۍ (۵ او ۲)
+cnt [] strawberry:5 | "+" [] strawberry:2 | [] || strawberries || اسٹرابیریاں || سټرابېرۍ
+sol 5 + 2 = 7 ## 5 strawberries and 2 strawberries make 7. || ۵ اور ۲ اسٹرابیریاں مل کر ۷۔ || ۵ او ۲ سټرابېرۍ ګډ ۷.
+endexercise

@@ -1,0 +1,44 @@
+@printed 221
+@issue The two hemisphere diagrams are recreated as schematics with the printed labels (r, "Curved surface = 2πr² area", "Base area = πr²", O). Example 1's surface area prints "= 154m²" (4 × 22/7 × 3.5 × 3.5 = 154); kept as printed.
+### Surface area and volume of Hemisphere || نصف کرے کی سطح کا رقبہ اور حجم || د نیمه کرې د سطحې مساحت او حجم
+p Hemisphere is half of the sphere, so: || نصف کرہ کرے کا آدھا ہوتا ہے، لہٰذا: || نیمه کره د کرې نیمایي ده، نو:
+p The curved surface area of hemisphere || نصف کرے کی خمدار سطح کا رقبہ || د نیمه کرې د منحني سطحې مساحت
+m $= \frac{1}{2}$ (total surface area of the sphere)
+m $= \frac{1}{2}(4\pi r^2)$
+m $= 2\pi r^2$
+svg Hemisphere with curved surface 2πr² and base area πr² || نصف کرہ: خمدار سطح 2πr² اور قاعدے کا رقبہ πr² || نیمه کره: منحني سطحه 2πr² او د قاعدې مساحت πr²
+<svg viewBox="0 0 300 150" width="300" role="img" aria-label="A hemisphere: curved surface area equals 2 pi r squared, base area equals pi r squared, radius r" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M20 110A130 100 0 0 1 280 110Z" fill="#7dd3fc" stroke="#0369a1" stroke-width="1.3"/>
+<ellipse cx="150" cy="110" rx="130" ry="26" fill="#bae6fd" stroke="#0369a1"/>
+<line x1="150" y1="110" x2="150" y2="14" stroke="#0f172a"/><line x1="150" y1="110" x2="280" y2="110" stroke="#0f172a"/>
+<text x="136" y="66" font-style="italic">r</text><text x="214" y="104" font-style="italic">r</text>
+<text x="158" y="58">Curved surface</text><text x="158" y="73">= 2πr² area</text><text x="60" y="118">Base area = πr²</text>
+</svg>
+endsvg
+p The total surface area of the hemisphere $=$ Curved surface area $+$ base area || نصف کرے کی کل سطح کا رقبہ $=$ خمدار سطح کا رقبہ $+$ قاعدے کا رقبہ || د نیمه کرې ټوله سطحه مساحت $=$ د منحني سطحې مساحت $+$ د قاعدې مساحت
+p As the base of the hemisphere is circular in shape, use the area of the circle. || چونکہ نصف کرے کا قاعدہ دائرہ نما ہے، اس لیے دائرے کا رقبہ استعمال کریں۔ || څرنګه چې د نیمه کرې قاعده دایروي ده، د دایرې مساحت وکاروئ.
+m Base area of hemisphere $= \pi r^2$
+p Therefore, || لہٰذا، || نو،
+box info | Total surface area of the hemisphere || نصف کرے کی کل سطح کا رقبہ || د نیمه کرې ټوله سطحه مساحت
+m The total surface area of the hemisphere $=$ Curved surface area $+$ base area
+m $= 2\pi r^2 + \pi r^2$
+m $= 3\pi r^2$
+endbox
+p The volume of a hemisphere is half the volume of a sphere, therefore, || نصف کرے کا حجم کرے کے حجم کا آدھا ہوتا ہے، لہٰذا، || د نیمه کرې حجم د کرې د حجم نیمایي وي، نو،
+m Volume of hemisphere $= \frac{1}{2}$ (volume of sphere)
+m $= \frac{1}{2} \times \frac{4}{3}\pi r^3$
+m $= \frac{2}{3}\pi r^3$
+svg Hemisphere with centre O and radius r || مرکز O اور نصف قطر r والا نصف کرہ || د O مرکز او r شعاع لرونکې نیمه کره
+<svg viewBox="0 0 300 130" width="300" role="img" aria-label="A hemisphere with centre O of its flat face and radius r drawn upward and sideways" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M20 100A130 90 0 0 1 280 100Z" fill="#38bdf8" stroke="#0369a1"/><ellipse cx="150" cy="100" rx="130" ry="22" fill="#7dd3fc" stroke="#0369a1"/>
+<line x1="150" y1="100" x2="150" y2="12" stroke="#0f172a"/><line x1="150" y1="100" x2="280" y2="100" stroke="#0f172a"/><circle cx="150" cy="100" r="2.5"/>
+<text x="136" y="56" font-style="italic">r</text><text x="214" y="94" font-style="italic">r</text><text x="144" y="118" font-weight="700">O</text>
+</svg>
+endsvg
+p We can solve the problems related to the surface area and volume of the sphere using the formula. || ہم کرے کی سطح کے رقبے اور حجم سے متعلق مسائل فارمولے کی مدد سے حل کر سکتے ہیں۔ || موږ د کرې د سطحې د مساحت او حجم اړوند ستونزې د فورمول په کارولو حلولی شو.
+example 1
+p A solid sphere has a radius of 3.5m. Calculate the surface area and volume of the sphere. ($\pi = \frac{22}{7}$) || ایک ٹھوس کرے کا نصف قطر 3.5m ہے۔ کرے کی سطح کا رقبہ اور حجم معلوم کریں۔ ($\pi = \frac{22}{7}$) || یوه جامده کره 3.5m شعاع لري. د کرې د سطحې مساحت او حجم محاسبه کړئ. ($\pi = \frac{22}{7}$)
+## Solution: || حل: || حل:
+m Surface area of the sphere $= 4\pi r^2$
+m $= 4 \times \left(\frac{22}{7}\right)(3.5)^2$
+m $= 4 \times \frac{22}{7} \times 3.5 \times 3.5 = 154\text{m}^2$

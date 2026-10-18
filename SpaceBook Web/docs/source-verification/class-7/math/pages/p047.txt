@@ -1,0 +1,38 @@
+@printed 43
+ladder 2:22, 12, 24; 2:11, 6, 12; 2:11, 3, 6; 3:11, 3, 3; 11:11, 1, 1; :1, 1, 1
+m LCM $= 2 \times 2 \times 2 \times 3 \times 11 = 264$
+p So, the minimum number of oranges required is 264. || لہٰذا مالٹوں کی کم سے کم مطلوبہ تعداد 264 ہے۔ || نو د مالټو لږ تر لږه اړین شمېر 264 دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the LCM of the following || درج ذیل کا ذو اضعاف اقل معلوم کریں || د لاندې کوچنی مشترک ضرب معلوم کړئ
+qp i | 12, 45
+qp ii | 12, 27, 30
+qp iii | 15, 20, 35
+qp iv | 10, 11, 17
+qp v | 12, 30, 66
+endbox
+@sec 3.1.2 | Square of a Number || کسی عدد کا مربع || د یوه عدد مربع
+## 3.1.2 Square of a Number || 3.1.2 کسی عدد کا مربع || 3.1.2 د یوه عدد مربع
+p When we multiply a number 5 by itself, then we can write the number $5^2$. We read it as 5 raised the power 2. || جب ہم عدد 5 کو خود اسی سے ضرب دیتے ہیں تو ہم اس عدد کو $5^2$ لکھ سکتے ہیں۔ ہم اسے "5 کی قوت 2" پڑھتے ہیں۔ || کله چې عدد 5 په خپل ځان کې ضرب کړو، نو عدد د $5^2$ په بڼه لیکلی شو. موږ یې "5 په توان 2" لولو.
+eq 5 \times 5 = 5^2
+p This shows that when a number is multiplied by itself, the result we get is called the square of that number. || اس سے ظاہر ہوتا ہے کہ جب کسی عدد کو خود اسی سے ضرب دی جائے تو حاصل ہونے والا نتیجہ اس عدد کا مربع کہلاتا ہے۔ || دا ښيي چې کله یو عدد په خپل ځان کې ضرب شي، هغه پایله چې لاسته راځي د هغه عدد مربع بلل کېږي.
+example 1 | Observe the squares of the following numbers. || درج ذیل اعداد کے مربعوں کا مشاہدہ کریں۔ || د لاندې عددونو مربعات وګورئ.
+qp a | $4 \times 4 = 4^2 = 16, \; (-4) \times (-4) = (-4)^2 = 16$
+qp b | $5 \times 5 = 5^2 = 25, \; (-5) \times (-5) = (-5)^2 = 25$
+qp c | $\left(\frac{1}{7}\right) \times \left(\frac{1}{7}\right) = \left(\frac{1}{7}\right)^2 = \left(\frac{1}{49}\right), \; \left(-\frac{1}{7}\right) \times \left(-\frac{1}{7}\right) = \left(\frac{-1}{7}\right)^2 = \left(\frac{1}{49}\right)$
+qp d | $12 \times 12 = 12^2 = 144, \; (-12) \times (-12) = (-12)^2 = 144$
+p We can see that the square of every number (positive, negative, fractional, etc.) is always positive. || ہم دیکھ سکتے ہیں کہ ہر عدد (مثبت، منفی، کسری وغیرہ) کا مربع ہمیشہ مثبت ہوتا ہے۔ || موږ لیدلی شو چې د هر عدد (مثبت، منفي، کسري او نورو) مربع تل مثبت وي.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The square of any integer is always positive. || کسی بھی صحیح عدد کا مربع ہمیشہ مثبت ہوتا ہے۔ || د هر تام عدد مربع تل مثبت وي.
+endbox
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- Find the prime factors of number 81. || عدد 81 کے مفرد اجزائے ضربی معلوم کریں۔ || د عدد 81 لومړني ضربي اجزا معلوم کړئ.
+endbox
+example 2 | Check whether 144 is a perfect square or not. || جانچیں کہ 144 کامل مربع ہے یا نہیں۔ || وګورئ چې 144 بشپړ مربع دی که نه.
+p To find 144 is the perfect square or not we have to find the prime factors of 144 by prime factorization. || یہ معلوم کرنے کے لیے کہ 144 کامل مربع ہے یا نہیں، ہمیں مفرد تجزی کے ذریعے 144 کے مفرد اجزائے ضربی معلوم کرنے ہوں گے۔ || د دې معلومولو لپاره چې 144 بشپړ مربع دی که نه، باید د لومړني ضربي تجزیې په مرسته د 144 لومړني ضربي اجزا معلوم کړو.
+ladder 2:144; 2:72; 2:36; 2:18; 3:9; 3:3; :1
+m The prime factors of $144 = 2 \times 2 \times 2 \times 2 \times 3 \times 3$
+m $= 2^2 \times 2^2 \times 3^2$
+p As all factors of 144 can be written in the form of pairs so, 144 is the perfect square. || چونکہ 144 کے تمام اجزائے ضربی جوڑوں کی صورت میں لکھے جا سکتے ہیں، اس لیے 144 کامل مربع ہے۔ || څرنګه چې د 144 ټول ضربي اجزا د جوړو په بڼه لیکل کېدای شي، نو 144 بشپړ مربع دی.
+endexample

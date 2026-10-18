@@ -1,0 +1,33 @@
+@printed 95
+@status lesson
+@sec 9-10 | نیٹ بال || Netball || نیټبال
+## نیٹ بال || Netball || نیټبال
+### کورٹ || Court || کورټ
+table
+th پیمائش || Measure || اندازه | سائز || Size || کچه
+tr لمبائی || Length || اوږدوالی | 30.5 میٹر || 30.5 m || 30.5 متره
+tr چوڑائی || Width || پلنوالی | 15.25 میٹر || 15.25 m || 15.25 متره
+tr شوٹنگ سرکل || Shooting circle || د شوټ دایره | 4.9 میٹر || 4.9 m (radius) || 4.9 متره (نیم قطر)
+tr سنٹر سرکل || Centre circle || مرکزي دایره | 0.9 میٹر || 0.9 m (diameter) || 0.9 متره (قطر)
+endtable
+### گول پوسٹ || Goalpost || ګول پوسټ
+p زمین سے رنگ تک 10 فٹ۔ 6 فٹ زمین سے متوازی کورٹ کے اندر۔ || 10 ft from the ground to the ring. [The ring projects] 6 [in] into the court, parallel to the ground. || له ځمکې تر کړۍ 10 فټه. 6 [انچه] له ځمکې سره موازي د کورټ دننه.
+svg نیٹ بال کورٹ — 30.5 × 15.25 میٹر، تین حصے، دونوں طرف 4.9 میٹر کا گول سرکل، 0.9 میٹر کا سنٹر سرکل؛ رنگ 3.05 میٹر (10 فٹ) اونچا اور 38 سینٹی میٹر (15 انچ) قطر (کتاب کی شکل سے بنایا گیا) || Netball court: 30.5 × 15.25 m, divided into three thirds by two transverse lines, a 4.9 m goal circle at each end and a 0.9 m centre circle; ring 3.05 m (10 ft) high and 38 cm (15 in) across (redrawn from the book's figure) || د نیټبال کورټ: 30.5 × 15.25 متره، په درېیو برخو وېشل شوی
+<svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10" role="img" aria-label="Netball court plan">
+<rect x="20" y="20" width="400" height="180" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2"/>
+<g fill="none" stroke="#1e3a8a" stroke-width="1.5">
+<line x1="153" y1="20" x2="153" y2="200"/><line x1="287" y1="20" x2="287" y2="200"/>
+<path d="M20 50a64 64 0 0 1 0 120"/><path d="M420 50a64 64 0 0 0 0 120"/>
+<circle cx="220" cy="110" r="6"/>
+</g>
+<g fill="#1e3a8a"><circle cx="26" cy="110" r="3"/><circle cx="414" cy="110" r="3"/></g>
+<g fill="#0f172a" text-anchor="middle">
+<text x="86" y="190">goal third</text><text x="220" y="190">centre third</text><text x="354" y="190">goal third</text>
+<text x="220" y="96">centre circle 0.9 m</text><text x="60" y="114">goal circle 4.9 m</text>
+<text x="220" y="14">side line</text><text x="220" y="218">30.5 m (100 ft)</text>
+</g>
+<text x="432" y="110" fill="#0f172a" text-anchor="middle" transform="rotate(90 432 110)">15.25 m (50 ft)</text>
+</svg>
+endsvg
+@deco A photograph of a boy shooting a ball at a netball ring on a pole.
+@issue Goalpost: the second line prints "6 فٹ زمین سے متوازی کورٹ کے اندر" (6 ft into the court parallel to the ground). In the rules the ring projects 15 cm (about 6 in) from the post; "فٹ" (feet) appears to be a misprint for inches. The bracketed words in the translation are SpaceBook's.

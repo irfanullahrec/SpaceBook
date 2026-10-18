@@ -1,0 +1,19 @@
+@printed 67
+@status lesson
+## 4.2.2 Scratch code blocks || 4.2.2 اسکریچ کوڈ بلاکس || 4.2.2 د سکرېچ کوډ بلاکونه
+p Following table shows different blocks and their uses. || درج ذیل جدول مختلف بلاکس اور ان کے استعمالات دکھاتا ہے۔ || لاندې جدول بېلابېل بلاکونه او کارونې یې ښيي.
+table
+th Block Type || بلاک کی قسم || د بلاک ډول | Block Name || بلاک کا نام || د بلاک نوم | Block Image || بلاک کی تصویر || د بلاک انځور | Block Action / Result || بلاک کا عمل / نتیجہ || کړنه / پایله
+tr Motion || حرکت || خوځښت | Move || حرکت || خوځول | [ move (10) steps ] || [ move (10) steps ] || [ move (10) steps ] | Move sprite 10 steps on the right. || اسپرائٹ کو 10 قدم دائیں حرکت دیتا ہے۔ || سپرایټ 10 ګامه ښي لوري ته خوځوي.
+tr Motion || حرکت || خوځښت | Turn || گھمانا || څرخول | [ turn ↻ (15) degrees ] || [ turn ↻ (15) degrees ] || [ turn ↻ (15) degrees ] | Turn sprite 15 degrees clockwise. || اسپرائٹ کو گھڑی وار 15 درجے گھماتا ہے۔ || سپرایټ د ساعت په لوري 15 درجې څرخوي.
+tr Motion || حرکت || خوځښت | Change by || تبدیلی || بدلول | [ change x by (10) ] || [ change x by (10) ] || [ change x by (10) ] | Changes sprite's position by 10 steps horizontally. || اسپرائٹ کی جگہ افقی طور پر 10 قدم بدلتا ہے۔ || د سپرایټ ځای 10 ګامه افقي بدلوي.
+tr Motion || حرکت || خوځښت | Glide || پھسلنا || ښوییدل | [ glide (1) secs to x: (0) y: (0) ] || [ glide (1) secs to x: (0) y: (0) ] || [ glide (1) secs to x: (0) y: (0) ] | Changes sprite's position to (0,0) coordinates during 1 second. || ایک سیکنڈ میں اسپرائٹ کو (0,0) نقاط پر لے جاتا ہے۔ || سپرایټ په یوه ثانیه کې (0,0) ته وړي.
+tr Condition || شرط || شرط | If-then || اگر-تو || که–نو | [ if ⟨ ⟩ then … ] || [ if ⟨ ⟩ then … ] || [ if ⟨ ⟩ then … ] | If condition is true, then the block will be executed. || شرط درست ہو تو بلاک چلے گا۔ || که شرط سم وي، بلاک اجرا کېږي.
+tr Condition || شرط || شرط | If-then-else || اگر-تو-ورنہ || که–نو–ګنې | [ if ⟨ ⟩ then … else … ] || [ if ⟨ ⟩ then … else … ] || [ if ⟨ ⟩ then … else … ] | If condition is true, then the first block will be executed else second block will be executed. || شرط درست ہو تو پہلا بلاک، ورنہ دوسرا بلاک چلے گا۔ || که شرط سم وي لومړی بلاک، ګنې دوهم بلاک اجرا کېږي.
+tr Loop || لوپ || لوپ | Repeat || دہرانا || تکرار | [ repeat (10) … ] || [ repeat (10) … ] || [ repeat (10) … ] | The loop will iterates for 10 times. || لوپ 10 بار چلے گا۔ || لوپ 10 ځله تکرارېږي.
+tr Loop || لوپ || لوپ | Repeat until || جب تک دہرانا || تر هغه تکرار | [ repeat until ⟨ ⟩ … ] || [ repeat until ⟨ ⟩ … ] || [ repeat until ⟨ ⟩ … ] | The loop will iterates untill the condition is true. || لوپ اس وقت تک چلے گا جب تک شرط درست نہ ہو جائے۔ || لوپ تر هغه تکرارېږي چې شرط سم شي.
+tr Loop || لوپ || لوپ | Repeat forever || ہمیشہ دہرانا || تل تکرار | [ forever … ] || [ forever … ] || [ forever … ] | The loop will remain iterating infinite times. || لوپ لامحدود بار چلتا رہے گا۔ || لوپ بې پایه تکرارېږي.
+endtable
+@issue Table wording: "move 10 steps on the right" (moves in the sprite's current direction, which is right by default); "The loop will iterates" / "iterates untill" should read "will iterate" / "until". Recorded as printed.
+## 4.2.3 Relocating Sprites via Code || 4.2.3 کوڈ کے ذریعے اسپرائٹ کی جگہ بدلنا || 4.2.3 د کوډ په مرسته د سپرایټ ځای بدلول
+p You can relocate or change the position of sprite by using **'go to'** block. Two variations of **'go to'** exist: || آپ **’go to‘** بلاک کے ذریعے اسپرائٹ کی جگہ بدل سکتے ہیں۔ **’go to‘** کی دو صورتیں ہیں: || د **'go to'** بلاک په مرسته د سپرایټ ځای بدلولی شئ. **'go to'** دوه ډوله دی:

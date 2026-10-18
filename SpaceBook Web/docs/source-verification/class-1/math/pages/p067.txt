@@ -1,0 +1,22 @@
+@printed 63
+@deco Hooria builds a tower of letter blocks and gives blocks to her brother.
+@sec subtract-1-from-2 | Subtraction of 1-digit Numbers from 2-digit Numbers || دو ہندسی اعداد سے ایک ہندسی اعداد کی تفریق || له دوه رقمي عددونو نه د یو رقمي عددونو تفریق
+# Subtraction of 1-digit Numbers from 2-digit Numbers || دو ہندسی اعداد سے ایک ہندسی اعداد کی تفریق || له دوه رقمي عددونو نه د یو رقمي عددونو تفریق
+p Hooria had 16 blocks. She gave 5 blocks to her brother. How many blocks are left with Hooria? || حوریہ کے پاس ۱۶ بلاک تھے۔ اس نے ۵ بلاک اپنے بھائی کو دیے۔ حوریہ کے پاس کتنے بلاک باقی ہیں؟ || د حوریې سره ۱۶ بلاکونه وو. ۵ بلاکونه یې خپل ورور ته ورکړل. د حوریې سره څو بلاکونه پاتې دي؟
+p To find the remaining blocks, we need to subtract 5 from 16. Let's count back 5 steps from 16. || باقی بلاک معلوم کرنے کے لیے ہمیں ۱۶ میں سے ۵ تفریق کرنے ہوں گے۔ آئیں ۱۶ سے ۵ قدم پیچھے گنیں۔ || د پاتې بلاکونو د موندلو لپاره باید له ۱۶ نه ۵ تفریق کړو. راځئ له ۱۶ نه ۵ ګامه شا ته وشمېرو.
+hops 16,15,14,13,12,11 | 1 || 16 → 15 → 14 → 13 → 12 → 11 || ۱۶، ۱۵، ۱۴، ۱۳، ۱۲، ۱۱ || ۱۶، ۱۵، ۱۴، ۱۳، ۱۲، ۱۱
+p We can subtract numbers by writing them in tens and ones. || ہم اعداد کو دہائیوں اور اکائیوں میں لکھ کر تفریق کر سکتے ہیں۔ || موږ عددونه په لسیزو او یووونو کې لیکلو سره تفریق کولای شو.
+table Subtracting in tens and ones || دہائیوں اور اکائیوں میں تفریق || په لسیزو او یووونو کې تفریق
+th  | T | O
+tr Total Blocks || کل بلاک || ټول بلاکونه | 1 | 6
+tr Blocks given (−) || دیے گئے بلاک (−) || ورکړل شوي بلاکونه (−) |  | 5
+tr Blocks left || باقی بلاک || پاتې بلاکونه | 1 | 1
+endtable
+tens 1 0 || Tens: 1 ten || دہائیاں: ۱ دہائی || لسیزې: ۱ لسیزه
+cnt cube.green:6x5/3 || Ones: 6 ones with 5 crossed out || اکائیاں: ۶ اکائیاں جن میں سے ۵ کاٹی گئیں || یووونه: ۶ یووونه چې ۵ یې کټ شوي
+p Step 1: Subtract ones from ones. 6 ones − 5 ones = 1 ones || پہلا قدم: اکائیوں سے اکائیاں تفریق کریں۔ ۶ اکائیاں − ۵ اکائیاں = ۱ اکائی || لومړی ګام: له یووونو نه یووونه تفریق کړئ. ۶ یووونه − ۵ یووونه = ۱ یو
+p Step 2: Subtract tens from tens. 1 tens − 0 tens = 1 tens || دوسرا قدم: دہائیوں سے دہائیاں تفریق کریں۔ ۱ دہائی − ۰ دہائیاں = ۱ دہائی || دویم ګام: له لسیزو نه لسیزې تفریق کړئ. ۱ لسیزه − ۰ لسیزې = ۱ لسیزه
+p Now, Hooria has 11 blocks. || اب حوریہ کے پاس ۱۱ بلاک ہیں۔ || اوس د حوریې سره ۱۱ بلاکونه دي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Draw a place value chart on the board and write different 1-digit and 2-digit numbers on it. Now ask students to find the difference between them. || تختے پر مقامی قیمت کا چارٹ بنائیں اور اس پر مختلف ایک ہندسی اور دو ہندسی اعداد لکھیں۔ اب طلبہ سے ان کا فرق معلوم کروائیں۔ || په تخته د مکاني ارزښت چارټ جوړ کړئ او پرې بېل یو رقمي او دوه رقمي عددونه ولیکئ. اوس له زده کوونکو وغواړئ چې د هغوی توپیر پیدا کړي.
+endbox

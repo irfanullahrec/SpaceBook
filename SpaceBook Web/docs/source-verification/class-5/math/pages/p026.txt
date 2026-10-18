@@ -1,0 +1,21 @@
+@printed 21
+p If we look at the terms of this pattern, || اگر ہم اس پیٹرن کے ارکان کو دیکھیں، || که د دې بېلګې توکو ته وګورو،
+eq 4,\ 12,\ 20,\ 28,\ 36,\ \ldots
+- Find its rule. || اس کا اصول معلوم کریں۔ || د هغې قاعده معلومه کړئ.
+- Find the next three terms. || اگلے تین ارکان معلوم کریں۔ || راتلونکي درې توکي معلوم کړئ.
+jumps 4,12,20,28,36,?,?,? | +8,+8,+8,+8
+p **Rule:** this is on addition pattern in which every next number is obtained by adding 8 to the previous number. || **اصول:** یہ جمع کا پیٹرن ہے جس میں ہر اگلا عدد پچھلے عدد میں 8 جمع کر کے حاصل ہوتا ہے۔ || **قاعده:** دا د جمع بېلګه ده چې پکې هر راتلونکی عدد مخکیني عدد ته د 8 په جمع کولو لاسته راځي.
+@issue "this is on addition pattern" (for "an addition pattern") is a printing error; kept as printed.
+p So, the next three terms are: || لہٰذا اگلے تین ارکان یہ ہیں: || نو راتلونکي درې توکي دا دي:
+m 44, 52, 60
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Identify the rule for this pattern and find the next three terms. 52, 47, 42, \_\_, \_\_, \_\_ || اس پیٹرن کا اصول پہچانیں اور اگلے تین ارکان معلوم کریں۔ 52، 47، 42، \_\_، \_\_، \_\_ || د دې بېلګې قاعده وپېژنئ او راتلونکي درې توکي معلوم کړئ. 52، 47، 42، \_\_، \_\_، \_\_
+endbox
+p Now observe this pattern. || اب اس پیٹرن کا مشاہدہ کریں۔ || اوس دې بېلګې ته پام وکړئ.
+p **2, 4, 8, 16, \_\_\_, \_\_\_, \_\_\_** || **2، 4، 8، 16، \_\_\_، \_\_\_، \_\_\_** || **2، 4، 8، 16، \_\_\_، \_\_\_، \_\_\_**
+- Find its rule. || اس کا اصول معلوم کریں۔ || د هغې قاعده معلومه کړئ.
+- Find the next three terms. || اگلے تین ارکان معلوم کریں۔ || راتلونکي درې توکي معلوم کړئ.
+jumps 2,4,8,16,?,?,? | ×2,×2,×2
+p Its a multiplication pattern in which every next number is obtained by multiplying the previous number by 2. || یہ ضرب کا پیٹرن ہے جس میں ہر اگلا عدد پچھلے عدد کو 2 سے ضرب دے کر حاصل ہوتا ہے۔ || دا د ضرب بېلګه ده چې پکې هر راتلونکی عدد د مخکیني عدد په 2 کې د ضربولو له لارې لاسته راځي.
+p Rule of the pattern: Multiplying by 2 || پیٹرن کا اصول: 2 سے ضرب دینا || د بېلګې قاعده: په 2 کې ضربول
+p Next 3 terms = 32, 64, 128. || اگلے 3 ارکان = 32، 64، 128۔ || راتلونکي 3 توکي = 32، 64، 128.

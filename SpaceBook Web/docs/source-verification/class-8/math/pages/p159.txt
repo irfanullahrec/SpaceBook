@@ -1,0 +1,50 @@
+@printed 151
+@issue Q3 e) prints "(2/6)³ = (8/216)" and the exponent in f) "(4)³ = 64" is faint; Example 1 prints "5⁴ × 5² = (5 × 5 × 5 × 5) × (5 × 5)"; kept as printed.
+qp e | $\left(\frac{2}{6}\right)^3 = \left(\frac{8}{216}\right)$
+qp f | $(4)^3 = 64$
+qp g | $\left(\frac{1}{10}\right)^4 = \left(\frac{1}{10000}\right)$
+qp h | $(1)^8 = 1$
+qp i | $\left(\frac{7}{6}\right)^5 = \left(\frac{16807}{7776}\right)$
+qp j | $(12)^3 = 1728$
+q 4 | Express the following rational numbers in exponential form. || درج ذیل ناطق اعداد کو قوت نمائی شکل میں ظاہر کریں۔ || لاندې ناطق عددونه په توانیزه بڼه وښایاست.
+qp a | 196
+qp b | 64
+qp c | 729
+qp d | $\frac{1}{100}$
+qp e | $\frac{36}{441}$
+qp f | $\frac{1}{16}$
+qp g | 27
+qp h | $\frac{64}{216}$
+endexercise
+@sec 7.2 | Laws of Exponents || قوت نما کے قوانین || د توانونو قوانین
+# 7.2 Laws of Exponents || 7.2 قوت نما کے قوانین || 7.2 د توانونو قوانین
+p The laws of exponents help us to simplify expressions involving exponents. We will learn about the following laws of exponents in detail. || قوت نما کے قوانین ہمیں قوت نما والی عبارتوں کو مختصر کرنے میں مدد دیتے ہیں۔ ہم قوت نما کے درج ذیل قوانین تفصیل سے سیکھیں گے۔ || د توانونو قوانین له موږ سره د توانونو لرونکو افادو په ساده کولو کې مرسته کوي. موږ به د توانونو لاندې قوانین په تفصیل زده کړو.
+qp 1 | Product Law || حاصلِ ضرب کا قانون || د ضرب قانون
+qp 2 | Quotient Law || خارج قسمت کا قانون || د خارج قسمت قانون
+qp 3 | Power Law || قوت کا قانون || د توان قانون
+qp 4 | Zero Exponent Law || صفر قوت نما کا قانون || د صفر توان قانون
+qp 5 | Negative Exponent Law || منفی قوت نما کا قانون || د منفي توان قانون
+## 1) Product Law || 1) حاصلِ ضرب کا قانون || 1) د ضرب قانون
+p This law is also called the law for multiplication of exponents. This law addresses the following two cases. || اس قانون کو قوت نماؤں کی ضرب کا قانون بھی کہتے ہیں۔ یہ قانون درج ذیل دو صورتوں سے متعلق ہے۔ || دې قانون ته د توانونو د ضرب قانون هم وايي. دا قانون لاندې دوه حالتونه پوښي.
+p Case I: When bases are the same but exponents are different. || صورت I: جب اساس ایک جیسے ہوں لیکن قوت نما مختلف ہوں۔ || لومړی حالت: کله چې قاعدې یو شان وي خو توانونه بېل وي.
+p Case II: When bases are different but exponents are the same. || صورت II: جب اساس مختلف ہوں لیکن قوت نما ایک جیسے ہوں۔ || دوهم حالت: کله چې قاعدې بېلې وي خو توانونه یو شان وي.
+p **Case I: When bases are the same but exponents are different.** || **صورت I: جب اساس ایک جیسے ہوں لیکن قوت نما مختلف ہوں۔** || **لومړی حالت: کله چې قاعدې یو شان وي خو توانونه بېل وي.**
+example 1
+p Consider the product of $5^4$ and $5^2$. || $5^4$ اور $5^2$ کے حاصلِ ضرب پر غور کریں۔ || د $5^4$ او $5^2$ حاصل ضرب ته پام وکړئ.
+m $5^4 \times 5^2 = (5 \times 5 \times 5 \times 5) \times (5 \times 5)$
+m $= 5 \times 5 \times 5 \times 5 \times 5 \times 5$
+m $= 5^6$
+p We can observe that the exponent 6 of the product $5^6$ is the sum of the exponents 4 and 2, of $5^4$ and $5^2$. || ہم دیکھ سکتے ہیں کہ حاصلِ ضرب $5^6$ کا قوت نما 6، $5^4$ اور $5^2$ کے قوت نماؤں 4 اور 2 کا مجموعہ ہے۔ || موږ لیدلی شو چې د $5^6$ حاصل ضرب توان 6 د $5^4$ او $5^2$ د 4 او 2 توانونو مجموعه ده.
+m So, we can write that $5^4 \times 5^2 = 5^{4+2} = 5^6$
+endexample
+example 2
+p Consider $\left(\frac{4}{7}\right)^2 \times \left(\frac{4}{7}\right)^3$ || $\left(\frac{4}{7}\right)^2 \times \left(\frac{4}{7}\right)^3$ پر غور کریں || $\left(\frac{4}{7}\right)^2 \times \left(\frac{4}{7}\right)^3$ ته پام وکړئ
+m $\left(\frac{4}{7}\right)^2 \times \left(\frac{4}{7}\right)^3 = \left[\left(\frac{4}{7}\right) \times \left(\frac{4}{7}\right)\right] \times \left[\left(\frac{4}{7}\right) \times \left(\frac{4}{7}\right) \times \left(\frac{4}{7}\right)\right]$
+m $= \frac{4}{7} \times \frac{4}{7} \times \frac{4}{7} \times \frac{4}{7} \times \frac{4}{7}$
+m $= \left(\frac{4}{7}\right)^5$
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If the exponents are negative integers, they will be added according to the laws of addition of integers. || اگر قوت نما منفی صحیح اعداد ہوں تو انہیں صحیح اعداد کی جمع کے قوانین کے مطابق جمع کیا جائے گا۔ || که توانونه منفي تام عددونه وي، د تامو عددونو د جمع د قوانینو له مخې به جمع شي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write the examples of product law with both conditions on the board. Now call the students one by one and ask them to differentiate them according to both conditions and then solve the examples using the laws. || بورڈ پر دونوں شرائط کے ساتھ حاصلِ ضرب کے قانون کی مثالیں لکھیں۔ اب طلبہ کو ایک ایک کر کے بلائیں اور ان سے کہیں کہ دونوں شرائط کے مطابق ان میں فرق کریں اور پھر قوانین کی مدد سے مثالیں حل کریں۔ || پر تخته د دواړو شرطونو سره د ضرب د قانون بېلګې ولیکئ. اوس زده کوونکي یو یو راوبولئ او ورته ووایاست چې د دواړو شرطونو له مخې یې توپیر وکړي او بیا د قوانینو په مرسته بېلګې حل کړي.
+endbox

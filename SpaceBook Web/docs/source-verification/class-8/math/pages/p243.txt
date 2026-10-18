@@ -1,0 +1,11 @@
+@printed 241
+@issue The grids are faint. From the printed grid: triangle ABC with A about (1, 3), B about (3, 4), C about (4, 3); the image A′B′C′ with A′ about (1, −1), B′ about (−1, −2), C′ about (−2, −1). Read to the nearest grid unit; the centre is stated on page 242 as X(1, 1). In the second grid dashed lines AA′, BB′ and CC′ are drawn; recreated as segments.
+@sec 10.1.3 | Finding the Center of Rotation || گردش کا مرکز معلوم کرنا || د څرخېدو د مرکز موندل
+## 10.1.3 Finding the Center of Rotation || 10.1.3 گردش کا مرکز معلوم کرنا || 10.1.3 د څرخېدو د مرکز موندل
+p Let's find the center of rotation for the rotated image A′B′C′ of triangle ABC. || آئیے مثلث ABC کی گھمائی ہوئی تصویر A′B′C′ کے لیے گردش کا مرکز معلوم کریں۔ || راځئ د مثلث ABC د څرخول شوي انځور A′B′C′ لپاره د څرخېدو مرکز ومومو.
+plane x=-5..5 | y=-5..5 | step=1 | segs=1,3,3,4;3,4,4,3;4,3,1,3;1,-1,-1,-2;-1,-2,-2,-1;-2,-1,1,-1 | pts=1,3:A;3,4:B;4,3:C;1,-1:A′;-1,-2:B′;-2,-1:C′ | noarrows
+p Draw a line joining the corresponding points i.e. AA′, BB′ and CC′ respectively. || متعلقہ نقاط کو ملانے والی لکیر کھینچیں یعنی بالترتیب AA′، BB′ اور CC′۔ || اړوند ټکي سره وصلوونکې کرښه رسم کړئ یعنې په ترتیب سره AA′، BB′ او CC′.
+plane x=-5..5 | y=-5..5 | step=1 | segs=1,3,3,4;3,4,4,3;4,3,1,3;1,-1,-1,-2;-1,-2,-2,-1;-2,-1,1,-1;1,3,1,-1;3,4,-1,-2;4,3,-2,-1 | pts=1,3:A;3,4:B;4,3:C;1,-1:A′;-1,-2:B′;-2,-1:C′ | noarrows
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the centre of rotation of objects by drawing an object on the Cartesian coordinate plane then rotate the object and then finding the angle of rotation. Instruct students to work in pairs and draw shape of your own choice on Cartesian plane and then rotate and find the centre of rotation. || کارتیسی محددی سطح پر ایک چیز بنا کر، پھر اسے گھما کر اور پھر گردش کا زاویہ معلوم کر کے اشیاء کی گردش کا مرکز سمجھائیں۔ طلبہ کو جوڑیوں میں کام کرنے کی ہدایت دیں اور وہ کارتیسی سطح پر اپنی پسند کی شکل بنائیں، پھر گھمائیں اور گردش کا مرکز معلوم کریں۔ || د کارتیزي کوارډینېټ مستوي پر یو شی رسمولو، بیا د شي څرخولو او بیا د څرخېدو د زاویې په موندلو د شیانو د څرخېدو مرکز تشریح کړئ. زده کوونکو ته ووایاست چې په جوړو کې کار وکړي او پر کارتیزي مستوي د خپلې خوښې شکل رسم کړي، بیا یې وڅرخوي او د څرخېدو مرکز ومومي.
+endbox

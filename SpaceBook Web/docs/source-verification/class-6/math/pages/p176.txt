@@ -1,0 +1,48 @@
+@printed 174
+qp c | Two L-shapes || دو L شکلیں || دوه د L شکلونه
+svg An L-shape and its reflection across a slanting line || L شکل اور ترچھے خط پر اس کا عکس || د L شکل او په کږه کرښه یې انعکاس
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="A blue L-shape at the bottom left and a red L-shape at the top right"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><polygon points="45,85 80,85 80,155 115,155 115,185 45,185" fill="#0ea5e9"/><polygon points="155,20 260,20 260,90 225,90 225,50 155,50" fill="#e11d48"/></svg>
+endsvg
+solution A slanting line between the shapes (the perpendicular bisector of any pair of matching corners).
+ss Join a corner of the blue shape to the matching corner of the red shape, then construct the perpendicular bisector with the compass (Steps I–V on page 172). || نیلی شکل کے ایک کونے کو سرخ شکل کے متناظر کونے سے ملائیں، پھر پرکار سے عمودی ناصف بنائیں (صفحہ 172 کے مراحل I–V)۔ || د آبي شکل یو کونج د سور شکل له اړوند کونج سره ونښلوئ، بیا د پرکار په مرسته عمودي نیمونکې جوړه کړئ (په 172 پاڼه کې I–V پړاوونه).
+endsolution
+qp d | Two arrow shapes || تیر نما دو شکلیں || د غشي په څېر دوه شکلونه
+svg Two arrow shapes pointing towards each other || ایک دوسرے کی طرف اشارہ کرتی دو تیر نما شکلیں || دوه د غشي په څېر شکلونه چې یو بل ته اشاره کوي
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="Two arrow shapes pointing towards each other"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><polygon points="5,50 45,50 115,100 45,155 5,155" fill="#2dd4bf"/><polygon points="295,50 255,50 185,100 255,155 295,155" fill="#0f766e"/></svg>
+endsvg
+solution The vertical line exactly halfway between the two arrow tips.
+ss Join the two arrow tips and construct the perpendicular bisector of that segment; it is a vertical line through the middle. || دونوں تیروں کی نوکیں ملائیں اور اس قطعے کا عمودی ناصف بنائیں؛ یہ درمیان سے گزرنے والا عمودی خط ہے۔ || د دواړو غشو څوکې ونښلوئ او د هغې ټوټې عمودي نیمونکې جوړه کړئ؛ دا له منځه تېره عمودي کرښه ده.
+endsolution
+qp e | Two kite shapes || پتنگ نما دو شکلیں || د کاغذي باد په څېر دوه شکلونه
+svg Two kite shapes leaning away from each other || ایک دوسرے سے دور جھکی دو پتنگ نما شکلیں || دوه د کاغذي باد په څېر شکلونه چې له یو بل لرې کوږ دي
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="Two kite shapes, a pink one on the left and a blue one on the right"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><polygon points="135,35 110,150 85,170 45,135" fill="#f9a8d4" stroke="#9d174d"/><polygon points="165,35 190,150 215,170 255,135" fill="#7dd3fc" stroke="#0369a1"/></svg>
+endsvg
+solution The vertical line halfway between the two kites.
+ss Join the top points of the two kites and construct the perpendicular bisector of that segment. || دونوں پتنگوں کے اوپر کے نقطے ملائیں اور اس قطعے کا عمودی ناصف بنائیں۔ || د دواړو باد پورتني ټکي ونښلوئ او د هغې ټوټې عمودي نیمونکې جوړه کړئ.
+endsolution
+qp f | Two parallelograms || دو متوازی الاضلاع || دوه متوازي الاضلاع
+svg Two parallelograms leaning in opposite directions || مخالف سمتوں میں جھکے دو متوازی الاضلاع || دوه متوازي الاضلاع چې مخالف لوري ته کوږ دي
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="Two parallelograms leaning in opposite directions"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><polygon points="55,60 140,60 115,155 30,155" fill="#34d399" stroke="#065f46"/><polygon points="160,60 245,60 270,155 185,155" fill="#34d399" stroke="#065f46"/></svg>
+endsvg
+solution The vertical line halfway between the two parallelograms.
+ss Join the top-right corner of the left shape to the top-left corner of the right shape and construct the perpendicular bisector. || بائیں شکل کے اوپر دائیں کونے کو دائیں شکل کے اوپر بائیں کونے سے ملائیں اور عمودی ناصف بنائیں۔ || د کیڼ شکل پورتنی ښی کونج د ښي شکل له پورتني کیڼ کونج سره ونښلوئ او عمودي نیمونکې جوړه کړئ.
+endsolution
+endexercise
+@sec 9.2 | Lines and Angles || خطوط اور زاویے || کرښې او زاویې
+# 9.2 Lines and Angles || 9.2 خطوط اور زاویے || 9.2 کرښې او زاویې
+## 9.2.1 Parallel Lines || 9.2.1 متوازی خطوط || 9.2.1 موازي کرښې
+p Observe the given pair of lines $\overleftrightarrow{AB}$ and $\overleftrightarrow{CD}$. || خطوط $\overleftrightarrow{AB}$ اور $\overleftrightarrow{CD}$ کے دیے گئے جوڑے کا مشاہدہ کریں۔ || د $\overleftrightarrow{AB}$ او $\overleftrightarrow{CD}$ کرښو ورکړل شوې جوړې ته وګورئ.
+p If we extend these lines in the same direction, we shall observe that these lines never intersect each other at any point. The distance between them always remains the same. || اگر ہم ان خطوط کو ایک ہی سمت میں بڑھائیں تو دیکھیں گے کہ یہ کبھی ایک دوسرے کو کسی نقطے پر قطع نہیں کرتے۔ ان کا درمیانی فاصلہ ہمیشہ ایک جیسا رہتا ہے۔ || که دا کرښې په یو لوري اوږدې کړو، ګورو چې هېڅکله یو بل په هېڅ ټکي کې نه قطع کوي. ترمنځ یې واټن تل یو شان پاتې کېږي.
+svg Parallel lines AB and CD || متوازی خطوط AB اور CD || موازي کرښې AB او CD
+<svg viewBox="0 0 280 70" width="280" role="img" aria-label="Two parallel lines AB and CD" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#0f172a"><defs><marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z"/></marker></defs><line x1="15" y1="25" x2="265" y2="25" stroke="#0f172a" stroke-width="1.6" marker-start="url(#pa)" marker-end="url(#pa)"/><line x1="15" y1="55" x2="265" y2="55" stroke="#0f172a" stroke-width="1.6" marker-start="url(#pa)" marker-end="url(#pa)"/><text x="30" y="18">A</text><text x="240" y="18">B</text><text x="30" y="48">C</text><text x="240" y="48">D</text></svg>
+endsvg
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p What are parallel and non-parallel lines? What are perpendicular and vertical lines? || متوازی اور غیر متوازی خطوط کیا ہیں؟ عمودی اور سیدھے کھڑے خطوط کیا ہیں؟ || موازي او غیر موازي کرښې څه دي؟ عمودي او ولاړې کرښې څه دي؟
+endbox
+box key
+p The lines which do not intersect each other at a point, when they are extended on either side in the same direction, are called **parallel lines**. || وہ خطوط جو دونوں طرف ایک ہی سمت میں بڑھانے پر بھی ایک دوسرے کو کسی نقطے پر قطع نہ کریں **متوازی خطوط** کہلاتے ہیں۔ || هغه کرښې چې په دواړو خواوو په یو لوري اوږدې شي او بیا هم یو بل په یو ټکي کې قطع نه کړي **موازي کرښې** بلل کېږي.
+endbox
+p In real life, we see many parallel lines. e.g. lines in our note-books, railway lines, etc. See more pairs of parallel lines. || حقیقی زندگی میں ہم بہت سے متوازی خطوط دیکھتے ہیں، مثلاً کاپیوں کی لکیریں، ریلوے لائنیں وغیرہ۔ متوازی خطوط کے مزید جوڑے دیکھیں۔ || په ورځني ژوند کې ډېرې موازي کرښې وینو، لکه د کتابچو کرښې، د اورګاډي پټلۍ او نور. د موازي کرښو نورې جوړې وګورئ.
+svg Pairs of parallel lines: LM and NO, PQ and RS, EF and GH || متوازی خطوط کے جوڑے: LM اور NO، PQ اور RS، EF اور GH || د موازي کرښو جوړې: LM او NO، PQ او RS، EF او GH
+<svg viewBox="0 0 520 110" width="520" role="img" aria-label="Three pairs of parallel lines: LM and NO slanting up, PQ and RS horizontal, EF and GH slanting down" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#0f172a"><defs><marker id="pb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z"/></marker></defs><g stroke="#0f172a" stroke-width="1.5"><line x1="15" y1="90" x2="135" y2="15" marker-start="url(#pb)" marker-end="url(#pb)"/><line x1="30" y1="105" x2="150" y2="30" marker-start="url(#pb)" marker-end="url(#pb)"/><line x1="190" y1="50" x2="330" y2="50" marker-start="url(#pb)" marker-end="url(#pb)"/><line x1="190" y1="72" x2="330" y2="72" marker-start="url(#pb)" marker-end="url(#pb)"/><line x1="375" y1="10" x2="505" y2="85" marker-start="url(#pb)" marker-end="url(#pb)"/><line x1="365" y1="28" x2="495" y2="103" marker-start="url(#pb)" marker-end="url(#pb)"/></g><text x="10" y="80">L</text><text x="128" y="12">M</text><text x="22" y="108">N</text><text x="152" y="34">O</text><text x="196" y="44">P</text><text x="318" y="44">Q</text><text x="196" y="88">R</text><text x="318" y="88">S</text><text x="382" y="8">E</text><text x="500" y="78">F</text><text x="372" y="40">G</text><text x="488" y="100">H</text></svg>
+endsvg

@@ -1,0 +1,29 @@
+@printed 24
+@status lesson
+@sec 2.3 | Managing files and folders || فائلوں اور فولڈروں کا انتظام || د فایلونو او فولډرونو اداره
+# 2.3 Managing files and folders || 2.3 فائلوں اور فولڈروں کا انتظام || 2.3 د فایلونو او فولډرونو اداره
+## 2.3.1 File || 2.3.1 فائل || 2.3.1 فایل
+p The main function of a computer is to manage data and information. The stored data and information on computer are called files. A file can be a text, a photo, a music track, a presentation or a video etc. || کمپیوٹر کا اہم کام ڈیٹا اور معلومات کا انتظام ہے۔ کمپیوٹر پر محفوظ ڈیٹا اور معلومات فائلیں کہلاتی ہیں۔ فائل متن، تصویر، موسیقی، پریزنٹیشن یا ویڈیو وغیرہ ہو سکتی ہے۔ || د کمپیوټر اصلي دنده د ډېټا او معلوماتو اداره ده. پر کمپیوټر خوندي ډېټا او معلومات فایلونه بلل کېږي. فایل متن، انځور، موسیقي، پریزنټېشن یا ویډیو کېدای شي.
+p Each type of file has a specific icon, which helps to understand what kind of file it is. || ہر قسم کی فائل کا ایک خاص آئیکن ہوتا ہے جس سے پتا چلتا ہے کہ وہ کس قسم کی فائل ہے۔ || هر ډول فایل ځانګړی ایکن لري چې د فایل ډول ښيي.
+svg File icons: Document File (W), Image File (picture), Text File (lines on a page), Presentation File (P). || فائل آئیکن: دستاویزی فائل، تصویری فائل، متنی فائل، پریزنٹیشن فائل۔ || د فایل ایکنونه: سند، انځور، متن، پریزنټېشن.
+<svg viewBox="0 0 440 120" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="File icons">
+<rect x="25" y="10" width="60" height="64" rx="4" fill="#1d4ed8"/><text x="45" y="52" fill="#fff" font-size="26" font-weight="bold">W</text>
+<rect x="135" y="14" width="64" height="56" fill="#e0f2fe" stroke="#64748b"/><path d="M140 66 L162 30 L184 66z" fill="#84cc16"/><circle cx="185" cy="30" r="9" fill="#f97316"/>
+<path d="M255 10 h40 l14 14 v52 h-54z" fill="#f1f5f9" stroke="#64748b"/><g stroke="#475569" stroke-width="4"><line x1="262" y1="30" x2="300" y2="30"/><line x1="262" y1="42" x2="300" y2="42"/><line x1="262" y1="54" x2="300" y2="54"/><line x1="262" y1="66" x2="290" y2="66"/></g>
+<rect x="360" y="14" width="50" height="58" rx="4" fill="#dc2626"/><text x="374" y="54" fill="#fff" font-size="26" font-weight="bold">P</text>
+<g font-style="italic" font-weight="bold" text-anchor="middle" fill="#1e293b"><text x="55" y="100">Document File</text><text x="167" y="100">Image File</text><text x="282" y="100">Text File</text><text x="385" y="100">Presentation File</text></g>
+</svg>
+endsvg
+## 2.3.2 Folder || 2.3.2 فولڈر || 2.3.2 فولډر
+p A folder (directory) is a way to organize files on the storage device. A folder can also contain other folders, called sub-folders. || فولڈر (ڈائریکٹری) اسٹوریج آلے پر فائلوں کو منظم کرنے کا طریقہ ہے۔ فولڈر میں دوسرے فولڈر بھی ہو سکتے ہیں جنھیں ذیلی فولڈر کہتے ہیں۔ || فولډر (ډایرکټري) پر زېرمه وسیله د فایلونو د تنظیم لاره ده. فولډر نور فولډرونه هم لري چې فرعي فولډرونه بلل کېږي.
+@deco Two "Project" folder icons on a blue desktop background.
+## 2.3.3 Shortcut || 2.3.3 شارٹ کٹ || 2.3.3 شارټکټ
+p Shortcut is an icon that points to a program or data file for easy access. Shortcut can be placed on the desktop or stored in other folders. Double clicking a shortcut is the same as double clicking the original file. || شارٹ کٹ ایک آئیکن ہے جو آسان رسائی کے لیے کسی پروگرام یا ڈیٹا فائل کی طرف اشارہ کرتا ہے۔ شارٹ کٹ ڈیسک ٹاپ پر رکھا یا دوسرے فولڈروں میں محفوظ کیا جا سکتا ہے۔ شارٹ کٹ پر ڈبل کلک کرنا اصل فائل پر ڈبل کلک کرنے کے برابر ہے۔ || شارټکټ یو ایکن دی چې د اسانه لاسرسي لپاره پروګرام یا فایل ته اشاره کوي. پر ډېسکټاپ یا نورو فولډرونو کې ایښودل کېږي. پر شارټکټ دوه ځله کلیک د اصلي فایل پر دوه ځله کلیک سره یو شان دی.
+@deco A "Project - Shortcut" icon with the small shortcut arrow.
+box note | Tip || ٹپ || لارښوونه
+p Shortcut is a link to original file/Program. || شارٹ کٹ اصل فائل/پروگرام کا ربط (لنک) ہے۔ || شارټکټ اصلي فایل/پروګرام ته لینک دی.
+endbox
+## 2.3.4 Create a New || 2.3.4 نیا بنائیں || 2.3.4 نوی جوړول
+@issue The heading "2.3.4 Create a New" is incomplete as printed (it means "Create a New File/Folder").
+p ***Step 1:*** Navigate to the folder or desktop, you would like to create your file. || ***مرحلہ 1:*** اس فولڈر یا ڈیسک ٹاپ پر جائیں جہاں آپ فائل بنانا چاہتے ہیں۔ || ***لومړی ګام:*** هغه فولډر یا ډېسکټاپ ته ولاړ شئ چې فایل پکې جوړول غواړئ.
+@deco Screenshot (1): the "This PC" window with "Desktop" highlighted in the Quick access list.

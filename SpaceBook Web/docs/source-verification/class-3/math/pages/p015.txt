@@ -1,0 +1,34 @@
+@printed 10
+@deco Numbers in rings with answer boxes; numbers printed on 14 purple flowers; blue (Even) and yellow (Odd) pentagons to fill. The scanned copy has a pupil's handwritten answers, not reproduced.
+@issue The Odd column's first pentagon is pre-filled "25", but 25 is not one of the 14 flower numbers (1, 8, 15, ..., 92 go up in steps of 7). Kept as printed; editorial note added.
+## Write even or odd in front of given numbers. || دیے گئے اعداد کے سامنے جفت یا طاق لکھیں۔ || د ورکړل شویو عددونو مخې ته جفت یا طاق ولیکئ.
+q 1 | 2 → Even (done for you) || 2 → جفت (حل شدہ) || 2 → جفت (حل شوی)
+qp a | 9
+sol Odd ## 9 is not divisible by 2. || 9، 2 پر پورا تقسیم نہیں ہوتا۔ || 9 په 2 پوره نه وېشل کېږي.
+qp b | 16
+sol Even ## 16 ÷ 2 = 8 || 16 ÷ 2 = 8 || 16 ÷ 2 = 8
+qp c | 23
+sol Odd ## 23 ends in 3, which is odd. || 23 کا آخری ہندسہ 3 ہے جو طاق ہے۔ || د 23 وروستی رقم 3 دی چې طاق دی.
+qp d | 26
+sol Even ## 26 ends in 6, which is even. || 26 کا آخری ہندسہ 6 ہے جو جفت ہے۔ || د 26 وروستی رقم 6 دی چې جفت دی.
+qp e | 33 → Odd (done for you)
+qp f | 40
+sol Even ## 40 ends in 0, which is even. || 40 کا آخری ہندسہ 0 ہے جو جفت ہے۔ || د 40 وروستی رقم 0 دی چې جفت دی.
+qp g | 47
+sol Odd ## 47 ends in 7, which is odd. || 47 کا آخری ہندسہ 7 ہے جو طاق ہے۔ || د 47 وروستی رقم 7 دی چې طاق دی.
+## Separate the even and odd in the space below. || نیچے دی گئی جگہ میں جفت اور طاق کو الگ کریں۔ || لاندې ځای کې جفت او طاق جلا کړئ.
+q 2 | Numbers on the flowers: 1, 8, 15, 22, 29, 36, 43, 50, 57, 64, 71, 78, 85, 92 || پھولوں پر لکھے اعداد: 1، 8، 15، 22، 29، 36، 43، 50، 57، 64، 71، 78، 85، 92 || په ګلونو لیکل شوي عددونه: 1، 8، 15، 22، 29، 36، 43، 50، 57، 64، 71، 78، 85، 92
+table
+th Even | Odd
+tr 8 (printed) | 25 (printed)
+tr ____ | ____
+tr ____ | ____
+tr ____ | ____
+tr ____ | ____
+tr ____ | ____
+tr ____ | ____
+endtable
+sol Even: 8, 22, 36, 50, 64, 78, 92 · Odd: 1, 15, 29, 43, 57, 71, 85 ## Numbers ending in 0, 2, 4, 6 or 8 are even; numbers ending in 1, 3, 5, 7 or 9 are odd. || جن اعداد کا آخری ہندسہ 0، 2، 4، 6 یا 8 ہو وہ جفت اور جن کا 1، 3، 5، 7 یا 9 ہو وہ طاق ہیں۔ || هغه عددونه چې وروستی رقم یې 0، 2، 4، 6 یا 8 وي جفت دي او چې 1، 3، 5، 7 یا 9 وي طاق دي.
+box note | Editorial note (SpaceBook) || ادارتی نوٹ (SpaceBook) || اداري یادونه (SpaceBook)
+p The book prints 25 in the first Odd box, but 25 is not on any flower. 25 is odd, but the odd flower numbers are 1, 15, 29, 43, 57, 71 and 85. || کتاب میں طاق کے پہلے خانے میں 25 چھپا ہے، لیکن 25 کسی پھول پر نہیں ہے۔ 25 طاق ہے، مگر پھولوں کے طاق اعداد 1، 15، 29، 43، 57، 71 اور 85 ہیں۔ || کتاب د طاق په لومړۍ خانه کې 25 چاپ کړی، خو 25 په هېڅ ګل نشته. 25 طاق دی، خو د ګلونو طاق عددونه 1، 15، 29، 43، 57، 71 او 85 دي.
+endbox

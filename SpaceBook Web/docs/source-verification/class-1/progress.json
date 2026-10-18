@@ -1,0 +1,1500 @@
+{
+ "class": 1,
+ "updated": "2026-10-13T17:04:48",
+ "sourceDirectory": "D:\\SpaceBook\\Books\\1st",
+ "pipeline": "Page DSL (docs/source-verification/class-1/<subj>/pages/pNNN.txt) -> tools/build_book1.py -> js/<name>_1_book.js (window.CLS1_BOOKS) -> js/cls1_book_reader.js (shared MATH6_READER renderer). Figures: tools/figs1.py (counting icons drawn in exact quantities). index.html wiring: tools/wire_index.py (shared lock).",
+ "note": "Legacy Class 1 files (js/*_1_data.js) are untouched and backed up in legacy-backup/; the reader switches a subject to the rebuilt book only when its js/<name>_1_book.js is loaded. Exercise item numbers are SpaceBook labels where the book prints none; all answers are SpaceBook answers (the book has no answer key) and are labelled as not printed in the textbook.",
+ "order": [
+  "Mathematics",
+  "English",
+  "Urdu",
+  "General Knowledge",
+  "Islamyat",
+  "Nazira-Quran",
+  "Pashto",
+  "Drawing"
+ ],
+ "missingSources": [
+  {
+   "subject": "Urdu (اردو)",
+   "status": "MISSING SOURCE",
+   "note": "No Class 1 Urdu textbook in D:\\SpaceBook\\Books\\1st; legacy cls1-urdu entry left unchanged."
+  },
+  {
+   "subject": "General Knowledge (واقفیتِ عامہ)",
+   "status": "MISSING SOURCE",
+   "note": "No Class 1 General Knowledge textbook in D:\\SpaceBook\\Books\\1st; legacy cls1-gk entry left unchanged."
+  }
+ ],
+ "books": [
+  {
+   "subject": "Mathematics",
+   "code": "math",
+   "title": "Mathematics 1 (KPTBB, based on Curriculum 2020, Test Edition)",
+   "source": "D:/SpaceBook/Books/1st/1st Maths/JPG (146 scans) and PDF/Math book 1 KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\math",
+   "appFile": "js/math_1_book.js",
+   "totalSourcePages": 146,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 146,
+   "implementedPages": 145,
+   "correctedPages": 145,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "1-139",
+   "excludedNonInstructional": [
+    2
+   ],
+   "duplicatePages": [],
+   "figures": 403,
+   "lastSavedPdfPage": 146,
+   "nextPdfPage": null,
+   "currentUnit": 6,
+   "currentSection": "unit6-summary",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Board e-mail address and phone number printed on the credits page are not reproduced (contact details)."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 11,
+     "issues": [
+      "The label under the left (rising) staircase is misprinted as a row of empty boxes (font failure) in every source copy; from the matching right label \"Descending order\" and the Key Fact it is \"Ascending order\", which is what the coded figure shows."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 23,
+     "issues": [
+      "Dot-to-dot dinosaur: the printed dots are tiny; dot positions were measured from a zoomed scan and redrawn in code (numbers 1-50 in the printed order). Small decorative circles (spots, eyes) inside the outline are not redrawn."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 37,
+     "issues": [
+      "The frog picture has no printed path or arrow; the order is read from the given bubbles (1st bottom right, 4th centre left, 8th top centre) following the stream. The SpaceBook answers follow that order."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 41,
+     "issues": [
+      "\"Count backward\" parrots: each row of 7 bubbles gives only the right-most number (88, 96). A backward count that ends at 96 from the left would need 102, so the rows are read from the given number towards the left (88, 87, ... 82 and 96, 95, ... 90). SpaceBook answer follows this reading."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 50,
+     "issues": [
+      "Colour-by-sum boat: the coded picture keeps every printed sum in its region (sun, flag, cabin, eyes, life ring, portholes, hull, background, water); the outline is simplified."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 53,
+     "issues": [
+      "Printed error: the last line says \"Sadia and her sister have made 54 biscuits altogether\", but the worked table on the same page gives 37 + 42 = 79. The printed sentence is kept and an editorial note gives the correct total."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 69,
+     "issues": [
+      "Step 3 is printed as \"Now add 2 tens in the result\", but the working (10 + 2 = 12) adds 1 ten (10). The printed text is kept with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 72,
+     "issues": [
+      "Apple basket: the apples overlap; read from a zoomed scan as 5 red and 4 green apples (9 in all). Butterfly picture: 2 butterflies on the plant and 3 flying away."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 82,
+     "issues": [
+      "The second heading is misprinted \"Light, Lighter, Lighest\" in the source; kept as printed, with the correct spelling given in the translations."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 86,
+     "issues": [
+      "\"Write 1 for light, 2 for lighter and 3 for lightest\" (leaf, tennis ball, pencil) has no single printed answer; the SpaceBook answer orders them by usual mass (ball heaviest, leaf lightest)."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 94,
+     "issues": [
+      "Coin values read from the coin designs: small silver (Faisal Mosque) Re 1, larger silver (Badshahi Mosque) Rs 2, small gold (pentagon \"5\") Rs 5, large gold (Minar-e-Pakistan) Rs 10. With these values the five left groups (40, 30, 80, 50, 100) match the five right groups one to one."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 97,
+     "issues": [
+      "Two labels are misprinted: in Hassan's example the Rs 50 line is labelled \"Total cost\" (it is the money Hassan has), and in Hamza's question the second line is printed with \"+\" although the question needs subtraction. Both are kept as printed with SpaceBook notes."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 99,
+     "issues": [
+      "Coin values read from designs (small dark gold pentagon Rs 5; large silver Rs 2; small silver Re 1). In the Rs. 20 row two groups (middle and right) both make Rs 20; both are given as correct."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 100,
+     "issues": [
+      "Coin values read from designs: small gold pentagon Rs 5, silver mosque coins Rs 2, large gold Minar coins Rs 10. Printed labels \"Cost of the truck\" (the item is a duck) and \"Total Cost\" (Ayesha's money) are kept as printed with SpaceBook notes."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 107,
+     "issues": [
+      "\"Colour the box with the correct answer\": the first two questions are printed without a day (\"Which day comes before?\", \"Which day comes after?\"), so their answers cannot be fixed from the book; kept as printed and left open."
+     ]
+    },
+    {
+     "pdfPage": 139,
+     "printedPage": 134,
+     "issues": [
+      "\"Before/after\" here follows the direction the people, vehicles and animals face (as in the cars example on page 133: the car in front is \"before\"). Everything faces left in the bus queue and right in the other two pictures. If a teacher reads the rows left to right instead, the vehicle and animal answers swap; both readings are noted."
+     ]
+    },
+    {
+     "pdfPage": 140,
+     "printedPage": 135,
+     "issues": [
+      "The printed outcome line \"identifying whether an object is placed ____ of a given picture\" contains a stray blank line; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 144,
+     "printedPage": 139,
+     "issues": [
+      "The queue label reads \"Umar\" while the question says \"Umer\"; both are kept as printed."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 33.5,
+   "ledger": "docs/source-verification/class-1/math/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/math/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "English",
+   "code": "eng",
+   "title": "English 1 (KPTBB)",
+   "source": "D:/SpaceBook/Books/1st/1st English/PDF/English book 1  KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\eng",
+   "appFile": "js/english_1_book.js",
+   "totalSourcePages": 127,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 127,
+   "implementedPages": 126,
+   "correctedPages": 126,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "1-119",
+   "excludedNonInstructional": [
+    81
+   ],
+   "duplicatePages": [],
+   "figures": 101,
+   "lastSavedPdfPage": 127,
+   "nextPdfPage": null,
+   "currentUnit": 15,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 3,
+     "printedPage": null,
+     "issues": [
+      "The last contents row prints \"121 Review 4 116\" (a stray 121 in the Unit column); recorded as Review 4, page 116."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 6,
+     "issues": [
+      "The printed tracing letters carry small numbered arrows showing stroke order; the coded version gives dotted letters on four-line guides without the stroke-order arrows."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 15,
+     "issues": [
+      "\"Write each sight word in the shape box that fits\": the shape boxes show letter heights (tall/short/descender). The SpaceBook answer matches each word's letter shapes; the printed boxes are drawn as plain boxes."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 26,
+     "issues": [
+      "Sub-question numbering on this page jumps from ii to v (no iii or iv printed); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 36,
+     "issues": [
+      "\"We use 'scissors' for cutting ___\": scissors are not mentioned in the lesson; the SpaceBook answer uses general knowledge (paper). \"They need ___ things\": the lesson lists five things (lead pencil, sharpener, colour pencils, glue, paper)."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 37,
+     "issues": [
+      "Sight-word shape boxes: 8 words are given but only 6 shape boxes are printed; the SpaceBook answer fills the 6 boxes by letter shape and notes the 2 words left over."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 44,
+     "issues": [
+      "Copyright: the four-line poem \"Let Others Share\" is by Edward Anthony (20th-century American writer); it is summarised line by line here instead of being reproduced in full. Blue ink marks on the scan partly cover the Pre-reading and Post-reading boxes; the text is still legible."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 47,
+     "issues": [
+      "The poem is summarised (copyright), but these questions quote its words; the answers come from the printed poem on page 44."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 50,
+     "issues": [
+      "These/those: the book gives no key and the hands are all at slightly different distances from the objects. The SpaceBook answers read the gap between each hand and its picture (small gap = these, wide gap = those); the label \"an ins ct\" is misprinted (missing e) in the picture."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 53,
+     "issues": [
+      "Review 2 asks \"What is your favourite fruit and vegetable?\", which belongs to Unit 6 (Blessings of Allah) that comes after this review; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 54,
+     "issues": [
+      "\"healthy\" is asked in the vocabulary review but has not been taught yet in Units 1-5; the SpaceBook meaning is given."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 58,
+     "issues": [
+      "The second \"Yellow Mango\" in the text is printed in very faint yellow ink on the scan but is legible from the first occurrence and the context."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 61,
+     "issues": [
+      "Option list in the first question includes \"d) all\"; the correct word for \"All ___ and vegetables\" is \"fruits\". The second question is printed with a stray \"ii.\" before the blank; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 73,
+     "issues": [
+      "\"Write the sight words learnt earlier in the shape boxes\": four shape boxes are printed; the SpaceBook answer suggests fitting words from the new and earlier sight words."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 75,
+     "issues": [
+      "The page number at the foot of this scan is cut off; it is printed page 75 (between 74 and 76). The scan is slightly warped."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 76,
+     "issues": [
+      "From this scan on, printed page = scan − 5 (scan 80 is a blank inserted page)."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 79,
+     "issues": [
+      "Copyright: the poem \"It's Spring\" by Winnifred Mott is summarised stanza by stanza instead of reproduced in full (author's dates and copyright status not verifiable from the source). Quoted words needed for the exercises are kept."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 80,
+     "issues": [
+      "The dialogue's stage direction says \"Saad and Huma both reply at the same time\", but the second speaker is printed as \"Neesha\"; both names are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 84,
+     "issues": [
+      "The model caption reads \"Its Spring Time\" (missing apostrophe; the unit's poem is \"It's Spring\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 85,
+     "issues": [
+      "The teaching point asks for five lines on 'green environment' using the word bank, but the student task is on 'Personal hygiene'; both kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 92,
+     "issues": [
+      "\"They give the card to their cousin, ___\": the lesson says they WILL present it before Eid; the answer (Asma) is the same."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 93,
+     "issues": [
+      "The first ordinal label is printed \"Ist\" (capital I) instead of \"1st\"; and the adjective sentence \"It is a red sheet of\" is printed without its last word. Both kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 95,
+     "issues": [
+      "The model name card shows a sample phone number \"+92 - 51 - 0000000\"; it is a placeholder, kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 97,
+     "issues": [
+      "\"Who was looking at the classroom manners?\" — in Unit 7 Miss Anum tells Zara she can read the manners from the chart; the SpaceBook answer is Zara."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 100,
+     "issues": [
+      "The page number is cut off at the foot of the scan; it is printed page 100 (between 99 and 101)."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 102,
+     "issues": [
+      "In \"Circle the plurals... /s/ ... /z/\", the word \"hat\" is printed in the singular; the SpaceBook answer treats it as \"hats\" (/s/)."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 103,
+     "issues": [
+      "\"The hare felt ___\" — the word bank gives \"ashamed\", a word not used in the story (the story says the hare said sorry). SpaceBook answer: ashamed."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 110,
+     "issues": [
+      "Copyright: the poem \"My Kitty Cat\" is credited to Ryan Gibbs (a contemporary children's poet); it is summarised stanza by stanza instead of being reproduced in full. Words quoted in the exercises are kept."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 112,
+     "issues": [
+      "The calendar dates are printed too small to read on every source copy; the 12 month names are legible and the questions only need month names. Two sentences (\"What is your favourite\", \"He is a police\") are printed unfinished; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 115,
+     "issues": [
+      "The third comma example (\"I have two storybooks, five pencils, one pen and\") is printed unfinished. \"All of us to him belong\" prints \"him\" in lower case where Allah is meant; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 117,
+     "issues": [
+      "\"surprised\" is asked in the vocabulary review but is not taught in Units 10-11; the SpaceBook meaning is given. \"ashamed\" comes from the Unit 10 word bank."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 148.5,
+   "ledger": "docs/source-verification/class-1/eng/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/eng/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Islamyat",
+   "code": "isl",
+   "title": "Islamiat 1 (KPTBB)",
+   "source": "D:/SpaceBook/Books/1st/1st Islamyat/JPG and PDF/Islamiat book  KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\isl",
+   "appFile": "js/islamyat_1_book.js",
+   "totalSourcePages": 58,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 58,
+   "implementedPages": 57,
+   "correctedPages": 57,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "1-54",
+   "excludedNonInstructional": [
+    2
+   ],
+   "duplicatePages": [],
+   "figures": 10,
+   "lastSavedPdfPage": 58,
+   "nextPdfPage": null,
+   "currentUnit": 5,
+   "currentSection": "zamima",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The contents list ends at Chapter 5 lesson 1 (page 49) on this scan; the next contents page, if any, is not in the sources. The book's later pages show the rest of Chapter 5."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": 2,
+     "issues": [
+      "The book prints the Arabic text of Surah Al-Fatiha and Surah Al-Ikhlas without translation. The English and Pashto meanings beside each verse are SpaceBook additions (standard, widely used renderings), not printed in the textbook. The Arabic is checked against the standard Indo-Pak Mushaf text."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 8,
+     "issues": [
+      "In the scan set this page (printed 8) comes before printed page 7 (scan 011). SpaceBook shows them in printed order (see isl/reorder.txt).",
+      "The book gives no printed answers for this activity. The answers shown are SpaceBook answers (Masha'Allah for something good that already is; In sha'Allah for something we intend to do)."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 11,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 9–10)."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 12,
+     "issues": [
+      "The book gives no printed answers for this table. The ticks shown are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 13,
+     "issues": [
+      "The book leaves the flower centres blank for the pupils. The names listed below the figure are SpaceBook suggestions (well-known Attributive Names of Allah), not printed in the book."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 16,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 14–15)."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 20,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 18–19)."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 24,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 22–23). For 1(c) the lesson says the Azan \"should be given in a beautiful voice\" and \"is given in a loud voice\"; the word supplied in the box is \"بلند\" (loud)."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 25,
+     "issues": [
+      "The book prints the two phrases as outlines with no instruction line under \"My Tasks\"; the colouring instruction is added by SpaceBook in brackets."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 27,
+     "issues": [
+      "Scans 030–033 are upside down and in reverse order (printed 30, 29, 28, 27). SpaceBook shows them in printed order (see isl/reorder.txt)."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 28,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 26–27)."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 29,
+     "issues": [
+      "The book gives no printed answers; the book shades \"فجر\" as the worked example. The other four positions are SpaceBook answers checked against the grid."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 32,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 30–31)."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 34,
+     "issues": [
+      "The book leaves the family-tree ovals blank. The names in the answer are SpaceBook answers taken from the lesson text (printed pages 30–31)."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 37,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 35–36)."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 38,
+     "issues": [
+      "This is a personal self-check (ہاں / نہیں); the book gives no answers, and SpaceBook does not supply any — each pupil answers for themselves."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 39,
+     "issues": [
+      "The \"فرمانِ الٰہی\" box prints only an Urdu rendering with no reference. It is the meaning of Surah Al-Qalam 68:4 (وَاِنَّكَ لَعَلٰى خُلُقٍ عَظِيْمٍ); the reference is a SpaceBook addition."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 41,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 39–40)."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 42,
+     "issues": [
+      "The tick table is a personal self-check, so SpaceBook gives no answers for it. In the flower activity the book fills the first flower (\"سلام کرنا\"); the other four habits are SpaceBook suggestions taken from page 40."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 46,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 43–45). In the book the right-hand column is printed in a shuffled order (20, 30, 10)."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 47,
+     "issues": [
+      "The yes/no questions on printed pages 47–48 are a personal self-check; SpaceBook gives no answers for them."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 48,
+     "issues": [
+      "The \"benefits of Salam\" activity is open-ended; the answer shown is a SpaceBook answer drawn from the lesson (printed pages 43–45)."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 51,
+     "issues": [
+      "The book gives no printed answers for this exercise. The answers shown are SpaceBook answers taken from the lesson text (printed pages 49–50)."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 52,
+     "issues": [
+      "The book leaves the chart frame blank. The qualities listed in the answer are SpaceBook answers taken from page 50."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 165.1,
+   "ledger": "docs/source-verification/class-1/isl/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/isl/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Nazira Quran",
+   "code": "nazira",
+   "title": "Nazira Quran 1 (KPTBB)",
+   "source": "D:/SpaceBook/Books/1st/1st Nazera/JPG and PDF/Nazera book 1 KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\nazira",
+   "appFile": "js/nazira_1_book.js",
+   "totalSourcePages": 62,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 62,
+   "implementedPages": 61,
+   "correctedPages": 61,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "4-60",
+   "excludedNonInstructional": [
+    2
+   ],
+   "duplicatePages": [],
+   "figures": 82,
+   "lastSavedPdfPage": 62,
+   "nextPdfPage": null,
+   "currentUnit": 17,
+   "currentSection": "surahs",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Names of the authors and designers are kept as printed; no contact details are reproduced."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": 4,
+     "issues": [
+      "The preface cites the Hadith \"زَيِّنُوا الْقُرْاٰنَ بِاَصْوَاتِكُمْ\" as Sunan Abi Dawud No. 256. In the standard numbering of Sunan Abi Dawud this Hadith is No. 1468; the printed reference is kept and this note added."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 8,
+     "issues": [
+      "The group descriptions under the three figures (lips / tongue tip / tongue middle, back and throat) are SpaceBook captions; the book shows the hands without labels."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 11,
+     "issues": [
+      "The book gives no printed answers. The sound guides are SpaceBook answers in simple English letters (a = short \"a\" as in \"cup\"; ' = a catch in the throat; ẓ, ṣ, ḍ, ṭ, ḥ = heavy or throat sounds); the child reads each sound aloud."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 12,
+     "issues": [
+      "Each word card shows the word broken into letters (pink, top) and joined (black, below). The small numbers on the cards (e.g. +72) are printed without explanation; they appear to be how often the word occurs in the Quran. They are kept as printed under each card."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 15,
+     "issues": [
+      "The book gives no printed answers. The sound guides are SpaceBook answers in simple English letters (i = short \"i\" as in \"sit\"; ' = a catch in the throat; ẓ, ṣ, ḍ, ṭ, ḥ = heavy or throat sounds)."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 16,
+     "issues": [
+      "The small numbers on the word cards (e.g. +63) are printed without explanation (apparently how often the word occurs in the Quran); they are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 19,
+     "issues": [
+      "The book gives no printed answers. The sound guides are SpaceBook answers in simple English letters (u = short \"u\" as in \"put\"; ' = a catch in the throat; ẓ, ṣ, ṭ, ḥ = heavy or throat sounds)."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 20,
+     "issues": [
+      "The small numbers on the word cards (e.g. +265) are printed without explanation (apparently how often the word occurs in the Quran); they are kept as printed. The last letter of \"بِكُمُ\" and \"لَكُمُ\" is read here with pesh as printed on this pesh page."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 22,
+     "issues": [
+      "The small numbers beside the words (e.g. +3215) are printed without explanation (apparently how often the word occurs in the Quran); kept as printed. The book prints the letter with jazm in pink."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 23,
+     "issues": [
+      "The sentence comparing qalqala with the truck pictures is a SpaceBook caption replacing the three pictures; the definition itself is the book's own (teacher's note)."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 24,
+     "issues": [
+      "The small numbers beside the words are printed without explanation (apparently how often the word occurs in the Quran); kept as printed. The book prints the qalqala letter in pink."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 25,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 27,
+     "issues": [
+      "The small numbers beside the words are printed without explanation (apparently how often the word occurs in the Quran); kept as printed. The book prints the letter with shad in pink."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 28,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. Quranic spellings follow the standard Indo-Pak script (standing zabar ٰ, standing zer ٖ, inverted pesh ٗ), as printed."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 29,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. In the first three rows each card sets a short-vowel word beside its long-vowel partner for comparison."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 30,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The teacher's note ends \"جیسے:\" with no example printed; SpaceBook adds the example مَا (from the page) in brackets."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 31,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 32,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 33,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 34,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 35,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 36,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 37,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 38,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 39,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 40,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 41,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 42,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 43,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 44,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The top row of the page shows the pesh/double-pesh pairs طُ طٌ and ضُ ضٌ."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 45,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 46,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 47,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 48,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The Quranic phrases are kept exactly as printed, including the jazm on noon."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 49,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The Quranic phrases are kept exactly as printed."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 50,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The Quranic phrases are kept as printed.",
+      "In \"سِنَةٌ وَّلَا نَوْمٌ\" the tanween is followed by و, which is idgham (next page) rather than ikhfa; the example is kept where the book prints it."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 51,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The Quranic phrases are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 52,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The book gives no printed answers; the answer below is a SpaceBook answer using the rules on printed pages 48–51."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 53,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The Quranic phrases are kept as printed. In the last row, \"هُمْ فِيْهَا\" and \"هُمْ لَكُمْ\" have ف and ل after the مْ, so by the book's own rule there is no ghunna in them; they appear to be contrast examples."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 54,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The book gives no printed answers; the answer below is a SpaceBook answer using the book's ghunna rules (printed pages 46–53)."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 55,
+     "issues": [
+      "The small numbers beside the words are printed without explanation; kept as printed. The book gives no printed answers; the answer below is a SpaceBook answer using the book's ghunna rules."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 56,
+     "issues": [
+      "The book prints the Arabic text of the Surahs only. The Arabic is checked against the standard Indo-Pak Mushaf. The English and Pashto meanings beside each verse and the Urdu meaning in the note are SpaceBook additions (simple standard renderings), not printed in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 57,
+     "issues": [
+      "The book prints the Arabic text of the Surahs only. The Arabic is checked against the standard Indo-Pak Mushaf. The English and Pashto meanings beside each verse and the Urdu meaning in the note are SpaceBook additions, not printed in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 60,
+     "issues": [
+      "The source PDF ends at printed page 60; no back cover is included in the scans."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 5.9,
+   "ledger": "docs/source-verification/class-1/nazira/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/nazira/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Pashto",
+   "code": "pashto",
+   "title": "Pashto 1 (KPTBB)",
+   "source": "D:/SpaceBook/Books/1st/1st Pashto/JPG and PDF/Pashto book 1 KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\pashto",
+   "appFile": "js/pashto_1_book.js",
+   "totalSourcePages": 88,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 88,
+   "implementedPages": 87,
+   "correctedPages": 87,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "1-84",
+   "excludedNonInstructional": [
+    2
+   ],
+   "duplicatePages": [],
+   "figures": 0,
+   "lastSavedPdfPage": 88,
+   "nextPdfPage": null,
+   "currentUnit": 23,
+   "currentSection": "farhang",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The board's e-mail address and phone number printed on this page are not reproduced (contact details)."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 1,
+     "issues": [
+      "Copyright: this Hamd is by Prof. Abaseen Yousafzai, a living poet. Following the SpaceBook rule for modern poems, it is summarised couplet by couplet in all three languages instead of being reproduced word for word. The lesson outcomes, key words and exercises are given in full."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 3,
+     "issues": [
+      "The book gives no printed answers (only the worked example \"اسمان\" in question 2). All other answers are SpaceBook answers taken from the Hamd."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 4,
+     "issues": [
+      "The book gives no printed answers except the worked examples (زمکه = ز + م + ک + ه; اسمان – جهان). The other answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 5,
+     "issues": [
+      "Scan 011 is printed page 5 and scan 010 is printed page 6; SpaceBook shows them in printed order (see pashto/reorder.txt).",
+      "Copyright: this Naat is by Prof. Dr. Sheherzaman Simab, a modern poet. Following the SpaceBook rule for modern poems, it is summarised couplet by couplet instead of being reproduced word for word. Outcomes, key words and exercises are given in full."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 6,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the Naat (printed page 5)."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 7,
+     "issues": [
+      "The book gives no printed answers except the worked examples (محمد ﷺ; قرآن — انسان). Other answers are SpaceBook answers. Question 5 asks the pupil to add vowel marks; the marked forms shown are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 8,
+     "issues": [
+      "The book gives no printed answers; the digits are SpaceBook answers (Eastern Arabic-Pashto numerals ۱–۱۰ as used in the book)."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 11,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 9–10)."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 12,
+     "issues": [
+      "The book gives no printed answers except the worked examples (عبدالله; مدینه منوره — روضه). The other answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 15,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 13–14). Question 1.1 is printed with a stray \"الف:\" before the names; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 16,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 17,
+     "issues": [
+      "Copyright: this poem is by Noor-ur-Rahman Sahar, a modern poet. Following the SpaceBook rule for modern poems, it is summarised verse by verse instead of being reproduced word for word. Outcomes, key words, grammar and exercises are given in full."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 19,
+     "issues": [
+      "Scan 025 is printed page 19 and scan 024 is printed page 20; SpaceBook shows them in printed order (see pashto/reorder.txt).",
+      "The book gives no printed answers except the worked example (ستا — وښا). The other answers are SpaceBook answers from the poem."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 20,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 22,
+     "issues": [
+      "The moral box is a SpaceBook addition summarising the story; the book does not print a separate moral line."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 23,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story (printed pages 21–22)."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 24,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 25,
+     "issues": [
+      "The book gives no printed answers. The plural forms are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 26,
+     "issues": [
+      "The teacher's name is printed \"مس رښا\" (Miss Rakhshan/Rakhsha); the English spelling is a SpaceBook transliteration. The Pashto day names (ګل، نهه، شورو، زیارت، جمعه، خالي، اتوار) are translated by their usual meanings, Monday to Sunday."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 28,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 26–27)."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 29,
+     "issues": [
+      "The book gives no printed answers except the worked example (ګل — ورځ). The other answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 30,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 32,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed page 31). In question 3 the three bracketed words after each sentence are the given choices."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 33,
+     "issues": [
+      "Copyright: this poem is by Farhad Muhammad Ghalib Tareen, a modern poet. Following the SpaceBook rule for modern poems, it is given couplet by couplet as a summary of meaning, not reproduced word for word. Outcomes, key words and exercises are in full."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 35,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the poem (printed pages 33–34). In question 2 the pupil writes the second line of each couplet; the answers are the poem's own short lines."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 36,
+     "issues": [
+      "The book gives no printed answers except the worked example (ډرائیور — ګاډے). The other matches are SpaceBook answers from the poem."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 39,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story (printed pages 37–38)."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 40,
+     "issues": [
+      "The book gives no printed answers except the worked example (چرګ — چرګان). The other answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 42,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 41–42)."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 43,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers; for question 4 any correct simple sentence is acceptable."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 44,
+     "issues": [
+      "The book gives no printed answers except the worked example (پلار — عبدالستار). The other matches are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 45,
+     "issues": [
+      "Copyright: this poem is by Faiz-ul-Wahab Faiz, a modern poet. Following the SpaceBook rule for modern poems, it is summarised couplet by couplet instead of being reproduced word for word. Outcomes, key words and exercises are given in full."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 46,
+     "issues": [
+      "The word box is printed faintly; the five words (سکرین، کړاو، خبرې، نېټ، خبر) are checked against the poem's own lines.",
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the poem (printed pages 45–46)."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 47,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the poem."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 49,
+     "issues": [
+      "The scan is smeared in its middle (a scanner streak); the story text above it and the exercise below are readable. The page number is not visible; printed 49 is inferred from the sequence. The book gives no printed answers; the answers are SpaceBook answers from the story. This Hadith-based story is told without a reference in the book (it is reported in Sahih Muslim, Hadith 2630); the reference is a SpaceBook note."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 50,
+     "issues": [
+      "Sentence 2 of question 2 is smeared in the scan; its words are read from the story (\"په کور کښې یوه کجوره په لاس ورغله\"). The page number is not visible; printed 50 is inferred. The book gives no printed answers; the answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 51,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 53,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 52–53)."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 54,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 55,
+     "issues": [
+      "The statement that a computer \"makes no mistakes\" is as printed; SpaceBook note: a computer follows instructions exactly, so wrong instructions or data can still give wrong results."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 56,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 55–56)."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 57,
+     "issues": [
+      "Question 3 is printed as five photos with empty name boxes. SpaceBook lists the pictured items in the question text so the exercise works without the photos.",
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 58,
+     "issues": [
+      "Copyright: this poem is by Noor-ur-Rahman Sahar, a modern poet. Following the SpaceBook rule for modern poems, it is summarised verse by verse instead of being reproduced word for word. Outcomes, key words and exercises are given in full."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 59,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the poem (printed pages 58–59)."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 60,
+     "issues": [
+      "The book gives no printed answers except the worked example (اختر — سحر). The other answers are SpaceBook answers. In question 3 the pupil pairs each word in column A with a word in column B to make phrases in column C."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 61,
+     "issues": [
+      "The joke about the mother \"who cannot speak\" is kept as printed; SpaceBook note for teachers: use it kindly, without making fun of people who cannot speak."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 62,
+     "issues": [
+      "The jokes play on the words Masha'Allah and In sha'Allah and are kept as printed. SpaceBook note: \"Masha'Allah\" is said for something good and \"In sha'Allah\" about a future plan; the joke is funny because the doctor uses them at the wrong moments.",
+      "This lesson prints no exercise and no teacher's note; the teacher box above is a SpaceBook addition based on the lesson's outcomes."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 64,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story (printed page 63). In question 2 the three bracketed words after each sentence are the given choices."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 67,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson (printed pages 65–66)."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 68,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the lesson.",
+      "The number box for \"شپږ سوه\" (six hundred) is misprinted \"۲۰۰\" in the book (it should read ۶۰۰). Kept as a note; the answer shows ۶۰۰."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 69,
+     "issues": [
+      "Copyright: these riddle-poems are by Faiz-ul-Wahab Faiz, a modern poet. Following the SpaceBook rule for modern poems, each riddle is retold in prose instead of being reproduced word for word. The book prints no answers; the answers given are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 70,
+     "issues": [
+      "The book prints no answers for the riddles; the answers are SpaceBook answers. Riddle 4 could fit a kite or a balloon (both are pictured); SpaceBook gives the kite, which \"goes its own way\" once free of its string, and accepts the balloon too."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 71,
+     "issues": [
+      "MISSING SOURCE: printed pages 72 and 73 (the rest of this dialogue and the first exercises of the lesson) are absent from every source — the JPG scans, all three PDFs and the Word file jump from page 71 to page 74. SpaceBook does not invent the missing text; the lesson continues with the exercises on page 74."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 74,
+     "issues": [
+      "Exercises 1–2 of this lesson were on the missing printed pages 72–73; this page begins at exercise 3. The book gives no printed answers except the worked example (درزي — ګنډل); the other answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 76,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story (printed pages 75–76)."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 77,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers taken from the story. Question 3.4 offers \"خلې / مخې / پنجو\"; the story says \"د پړانګ پنجو له ورغے\"."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 78,
+     "issues": [
+      "The book gives no printed answers. The answers are SpaceBook answers."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 79,
+     "issues": [
+      "Copyright: this prayer-poem is by Prof. Abaseen Yousafzai, a living poet. Following the SpaceBook rule for modern poems, it is summarised couplet by couplet instead of being reproduced word for word."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 80,
+     "issues": [
+      "The glossary (فرهنګ) gives each Pashto word with a Pashto meaning. The Urdu and English columns are SpaceBook translations of those meanings."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 83,
+     "issues": [
+      "Scan 087 is printed page 83 and scan 086 is printed page 84; SpaceBook shows them in printed order (see pashto/reorder.txt)."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 84,
+     "issues": [
+      "Personal details of the authors (home villages, schools, family names) are summarised; no contact details are printed or reproduced."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 197.2,
+   "ledger": "docs/source-verification/class-1/pashto/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/pashto/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Drawing",
+   "code": "drawing",
+   "title": "Creative Arts and Drawing 1 (KPTBB)",
+   "source": "D:/SpaceBook/Books/1st/1st Drawing/PDF/Drawing Book 1 KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls1_jpg\\drawing",
+   "appFile": "js/drawing_1_book.js",
+   "totalSourcePages": 34,
+   "classVerified": "Class 1 (cover/title page checked)",
+   "status": "complete",
+   "reviewedPages": 34,
+   "implementedPages": 33,
+   "correctedPages": 33,
+   "verifiedUnchangedPages": 0,
+   "printedPagesCovered": "1-32",
+   "excludedNonInstructional": [
+    2
+   ],
+   "duplicatePages": [],
+   "figures": 35,
+   "lastSavedPdfPage": 34,
+   "nextPdfPage": null,
+   "currentUnit": 32,
+   "currentSection": "act32",
+   "unresolved": [],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 0.0,
+   "ledger": "docs/source-verification/class-1/drawing/ledger.json",
+   "transcriptions": "docs/source-verification/class-1/drawing/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  }
+ ],
+ "browserTesting": "Not performed by the agent (user instruction); data-load checks via tools/check1.js.",
+ "nextAction": "All 6 sourced Class 1 books DONE. Urdu and General Knowledge: MISSING SOURCE (no textbook in Books/1st)."
+}

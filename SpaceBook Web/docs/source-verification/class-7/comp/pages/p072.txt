@@ -1,0 +1,27 @@
+@printed 67
+@status lesson
+## 3.2.3 Flowcharts || ۳.۲.۳ فلو چارٹس || ۳.۲.۳ فلو چارټونه
+p Flowcharts are a graphical representation of your algorithm; it means all those actions that were needed step by step to solve a problem, now should be drawn. Computers use the input-process-output model to solve problems and flowcharts are also designed accordingly. || فلو چارٹس آپ کے الگورتھم کی تصویری نمائندگی ہیں؛ یعنی وہ تمام اعمال جو مسئلہ حل کرنے کے لیے قدم بہ قدم درکار تھے، اب انھیں بنانا چاہیے۔ کمپیوٹر مسائل حل کرنے کے لیے ان پٹ-پروسیس-آؤٹ پٹ ماڈل استعمال کرتے ہیں اور فلو چارٹس بھی اسی کے مطابق ڈیزائن کیے جاتے ہیں۔ || فلو چارټونه ستاسو د الګوریتم انځورییزه څرګندونه ده؛ یعنې هغه ټول کړنې چې د ستونزې د حل لپاره ګام په ګام پکار وې، اوس باید رسم شي. کمپیوټرونه ستونزې حلولو لپاره د ان پټ-پروسس-آوټ پټ ماډل کاروي او فلو چارټونه هم همدې سره سم ډیزاین کېږي.
+svg Input → Process → Output: the input-process-output model. || ان پٹ ← پروسیس ← آؤٹ پٹ ماڈل۔ || ان پټ ← پروسس ← آوټ پټ ماډل.
+<svg viewBox="0 0 520 100" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="16" role="img" aria-label="Input process output">
+<text x="60" y="55" text-anchor="middle">Input</text>
+<rect x="170" y="25" width="140" height="55" rx="14" fill="#fff" stroke="#2563eb" stroke-width="3"/><text x="240" y="60" text-anchor="middle">Process</text>
+<path d="M360 30 H430 V15 L490 52 L430 90 V75 H360 Z" fill="#fef3c7" stroke="#d97706"/><text x="410" y="58" text-anchor="middle">Output</text>
+</svg>
+endsvg
+p The flowchart is a tool to analyze the weaknesses of the algorithm for various inputs and identify logical errors that exist, if any. || فلو چارٹ ایسا اوزار ہے جو مختلف ان پٹس کے لیے الگورتھم کی کمزوریوں کا تجزیہ کرتا اور منطقی غلطیاں، اگر ہوں، تو پہچانتا ہے۔ || فلو چارټ داسې وسیله ده چې د بېلابېلو ان پټونو لپاره د الګوریتم کمزورۍ تحلیلوي او منطقي تېروتنې، که وي، پېژني.
+p Flowcharts always start from the top and flow downwards, that is the reason the 'Start' is on the top and 'End' is at the bottom. || فلو چارٹس ہمیشہ اوپر سے شروع ہو کر نیچے کی طرف بہتے ہیں، اسی لیے "اسٹارٹ" اوپر اور "اینڈ" نیچے ہوتا ہے۔ || فلو چارټونه تل له پورته پیلېږي او ښکته ځي، همدا لامل دی چې "Start" پورته او "End" ښکته وي.
+box note | Flowchart || فلو چارٹ || فلو چارټ
+p Diagrammatic representation of an algorithm. || الگورتھم کی خاکہ نما نمائندگی۔ || د الګوریتم انځورییزه څرګندونه.
+endbox
+## Symbols of flowchart || فلو چارٹ کی علامات || د فلو چارټ نښې
+p There are five basic symbols. || پانچ بنیادی علامات ہیں۔ || پنځه بنسټیزې نښې شته.
+table Flowchart symbols
+th Symbol || علامت || نښه | Name || نام || نوم | Function || کام || دنده
+tr oval (rounded rectangle) || بیضوی (گول کونوں والی مستطیل) || بیضوي | Start/End || آغاز/اختتام || پیل/پای | An oval represents a start or end point. || بیضوی آغاز یا اختتام کا نقطہ ظاہر کرتا ہے۔ || بیضوي د پیل یا پای نقطه ښيي.
+tr arrow || تیر || غشی | Arrows || تیر || غشي | A line is a connector that shows logical flow between the representative shapes. || لکیر ایسا جوڑنے والا ہے جو نمائندہ اشکال کے درمیان منطقی بہاؤ دکھاتی ہے۔ || کرښه نښلوونکې ده چې د استازو شکلونو ترمنځ منطقي جریان ښيي.
+tr parallelogram || متوازی الاضلاع || متوازي الاضلاع | Input/Output || ان پٹ/آؤٹ پٹ || ان پټ/آوټ پټ | A parallelogram represents input or output. || متوازی الاضلاع ان پٹ یا آؤٹ پٹ ظاہر کرتا ہے۔ || متوازي الاضلاع ان پټ یا آوټ پټ ښيي.
+tr rectangle || مستطیل || مستطیل | Process || عمل || پروسه | A rectangle represents a process. || مستطیل ایک عمل ظاہر کرتی ہے۔ || مستطیل یوه پروسه ښيي.
+tr diamond || ہیرا || الماس | Decision || فیصلہ || پرېکړه | A diamond indicates a decision. || ہیرے کی شکل فیصلہ ظاہر کرتی ہے۔ || الماس پرېکړه ښيي.
+endtable
+@deco The Symbol column shows the actual drawn shapes (oval, arrow, parallelogram, rectangle, diamond).

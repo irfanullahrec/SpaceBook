@@ -1,0 +1,41 @@
+@printed 98
+q 3 | Maryam bought a water paint and a ball. How much money did she spend? || مریم نے واٹر پینٹ اور ایک گیند خریدی۔ اس نے کتنی رقم خرچ کی؟ || مریم د اوبو رنګ او یو توپ واخیست. څومره پیسې یې ولګولې؟
+table Maryam's shopping || مریم کی خریداری || د مریم سودا
+th  | Rs | T | O
+tr Cost of the water paint || واٹر پینٹ کی قیمت || د اوبو رنګ بیه | Rs | [ ] | [ ]
+tr Cost of the ball (+) || گیند کی قیمت (+) || د توپ بیه (+) | Rs | [ ] | [ ]
+tr Total cost || کل لاگت || ټول لګښت | Rs | [ ] | [ ]
+endtable
+sol Rs 88 ## 58 + 30 = 88 || ۵۸ + ۳۰ = ۸۸ || ۵۸ + ۳۰ = ۸۸
+q 4 | Ali had Rs 95. He bought a book. How much money is left with Ali? || علی کے پاس ۹۵ روپے تھے۔ اس نے ایک کتاب خریدی۔ علی کے پاس کتنی رقم باقی ہے؟ || د علي سره ۹۵ روپۍ وې. یو کتاب یې واخیست. د علي سره څومره پیسې پاتې دي؟
+table Ali's money || علی کی رقم || د علي پیسې
+th  | Rs | T | O
+tr Amount Ali had || علی کے پاس رقم || د علي پیسې | Rs | [ ] | [ ]
+tr Cost of the book (−) || کتاب کی قیمت (−) || د کتاب بیه (−) | Rs | [ ] | [ ]
+tr Amount left || باقی رقم || پاتې پیسې | Rs | [ ] | [ ]
+endtable
+box info | Hint || اشارہ || اشاره
+p Subtract to find out the remaining amount. || باقی رقم معلوم کرنے کے لیے تفریق کریں۔ || د پاتې پیسو د موندلو لپاره تفریق وکړئ.
+endbox
+sol Rs 13 ## The book costs Rs 82: 95 − 82 = 13. || کتاب ۸۲ روپے کی ہے: ۹۵ − ۸۲ = ۱۳۔ || کتاب ۸۲ روپۍ دی: ۹۵ − ۸۲ = ۱۳.
+endexercise
+@sec unit4-summary | I Have Learnt and Review Exercise || میں نے سیکھا اور جائزہ مشق || ما زده کړل او بیاکتنه
+@tab summary
+# I Have Learnt || میں نے سیکھا || ما زده کړل
+- identifying Pakistani currency coins (Rs 1, 2, 5 and 10). || پاکستانی کرنسی کے سکے (۱، ۲، ۵ اور ۱۰ روپے) پہچاننا۔ || د پاکستاني پیسو سکې (۱، ۲، ۵ او ۱۰ روپۍ) پېژندل.
+- identifying Pakistani currency notes (Rs 10, 20, 50 and 100). || پاکستانی کرنسی کے نوٹ (۱۰، ۲۰، ۵۰ اور ۱۰۰ روپے) پہچاننا۔ || د پاکستاني پیسو نوټونه (۱۰، ۲۰، ۵۰ او ۱۰۰ روپۍ) پېژندل.
+- recognizing money change (up to 100) to its equivalents/denominations || رقم کی ریزگاری (۱۰۰ تک) کو اس کے برابر مالیت میں پہچاننا || د پیسو ماته (تر ۱۰۰ پورې) د هغې په برابرو ارزښتونو کې پېژندل
+- adding and subtracting price of objects. || چیزوں کی قیمت جمع اور تفریق کرنا۔ || د شیانو بیه جمع او تفریق کول.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+p money/amount, coin, note, value || رقم، سکہ، نوٹ، مالیت || پیسې، سکه، نوټ، ارزښت
+endbox
+# Review Exercise || جائزہ مشق || د بیاکتنې تمرین
+exercise Review Exercise (Unit 4)
+p Complete the following. || درج ذیل کو مکمل کریں۔ || لاندې بشپړ کړئ.
+q 1 | One 5-rupees coin = ( __ ) 1-rupee coins || پانچ روپے کا ایک سکہ = ( __ ) ایک روپے کے سکے || د پنځو روپیو یوه سکه = ( __ ) د یوې روپۍ سکې
+cnt coin5:1 "→" coin1:5/3 || 5 rupees coin and 1 rupee coins || پانچ روپے کا سکہ اور ایک روپے کے سکے || د پنځو روپیو سکه او د یوې روپۍ سکې
+sol 5 ## 1 + 1 + 1 + 1 + 1 = 5 || ۱ + ۱ + ۱ + ۱ + ۱ = ۵ || ۱ + ۱ + ۱ + ۱ + ۱ = ۵
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q 2 | If you exchange 20 rupee note with anyone, how many 2 rupee coins will you get? || اگر آپ بیس روپے کا نوٹ کسی سے بدلیں تو آپ کو دو روپے کے کتنے سکے ملیں گے؟ || که د شلو روپیو نوټ له چا سره بدل کړئ، د دوو روپیو څو سکې به درکړل شي؟
+sol 10 coins ## Count in twos to 20: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 — that is 10 coins. || دو دو کر کے ۲۰ تک گنیں: ۲، ۴، ۶، ۸، ۱۰، ۱۲، ۱۴، ۱۶، ۱۸، ۲۰ — یعنی ۱۰ سکے۔ || دوه دوه تر ۲۰ پورې وشمېرئ: ۲، ۴، ۶، ۸، ۱۰، ۱۲، ۱۴، ۱۶، ۱۸، ۲۰ — یعنې ۱۰ سکې.
+endbox

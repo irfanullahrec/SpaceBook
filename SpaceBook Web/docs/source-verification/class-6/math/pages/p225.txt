@@ -1,0 +1,36 @@
+@printed 223
+p Now count the number of marks in each group and write the number in the third column. || اب ہر گروپ میں نمبروں کی تعداد گنیں اور تیسرے کالم میں لکھیں۔ || اوس په هره ډله کې د نمرو شمېر وشمېرئ او په درېیمه ستنه کې یې ولیکئ.
+eq \text{Number of marks obtained in Maths test lies between } 1\text{-}15 = 3
+eq \text{Number of marks obtained in Maths test lies between } 16\text{-}30 = 5
+eq \text{Number of marks obtained in Maths test lies between } 31\text{-}45 = 10
+eq \text{Number of marks obtained in Maths test lies between } 46\text{-}60 = 11
+eq \text{Number of marks obtained in Maths test lies between } 61\text{-}75 = 10
+table
+th | Marks || نمبر || نمرې | Tally Marks || ٹیلی نشان || د ټیلي نښې | Number of students || طلبہ کی تعداد || د زده کوونکو شمېر
+tr | 1-15 | $|||$ | 3
+tr | 16-30 | $\cancel{||||}$ | 5
+tr | 31-45 | $\cancel{||||}\ \cancel{||||}$ | 10
+tr | 46-60 | $\cancel{||||}\ \cancel{||||}\ |$ | 11
+tr | 61-75 | $\cancel{||||}\ \cancel{||||}$ | 10
+endtable
+p The maximum marks obtained by the students lies between the group of 46-60. || طلبہ کے حاصل کردہ زیادہ تر نمبر 46-60 کے گروپ میں ہیں۔ || د زده کوونکو ډېرې نمرې د 46-60 په ډله کې دي.
+p The minimum marks obtained by the students lies between the group of 1-15. || طلبہ کے حاصل کردہ سب سے کم نمبر 1-15 کے گروپ میں ہیں۔ || د زده کوونکو لږې نمرې د 1-15 په ډله کې دي.
+endexample
+@issue Example 2 (page 223) says "The maximum marks … lies between the group of 46-60"; it means the group with the most students (11), not the highest marks. Kept as printed.
+exercise 11.3
+q 1 | Azan makes a list of students about their favourite subjects. Show this in the form of grouped data and then answer the given questions. || اذان طلبہ کے پسندیدہ مضامین کی فہرست بناتا ہے۔ اسے گروہ بند ڈیٹا کی صورت میں دکھائیں اور پھر دیے گئے سوالات کے جواب دیں۔ || اذان د زده کوونکو د خوښو مضمونونو لیست جوړوي. دا د ډلبندي شوو معلوماتو په بڼه وښیئ او بیا ورکړل شوو پوښتنو ته ځواب ورکړئ.
+p English · Science · Math · Math · Urdu · Urdu · English · Urdu · Math · Math · Science · English · English · Science · Science · Science · Science · Math · Math · English · Urdu || انگریزی · سائنس · ریاضی · ریاضی · اردو · اردو · انگریزی · اردو · ریاضی · ریاضی · سائنس · انگریزی · انگریزی · سائنس · سائنس · سائنس · سائنس · ریاضی · ریاضی · انگریزی · اردو || انګلیسي · ساینس · ریاضي · ریاضي · اردو · اردو · انګلیسي · اردو · ریاضي · ریاضي · ساینس · انګلیسي · انګلیسي · ساینس · ساینس · ساینس · ساینس · ریاضي · ریاضي · انګلیسي · اردو
+solution Grouped table: English 5, Science 6, Math 6, Urdu 4
+stable
+tr | Subject | Tally Marks | Number of students
+tr | English | 5 tally marks | 5
+tr | Science | 6 tally marks | 6
+tr | Math | 6 tally marks | 6
+tr | Urdu | 4 tally marks | 4
+endtable
+ss Total = 5 + 6 + 6 + 4 = 21 students, which matches the 21 names in the list. || کل = 5 + 6 + 6 + 4 = 21 طلبہ، جو فہرست کے 21 ناموں کے برابر ہے۔ || ټول = 5 + 6 + 6 + 4 = 21 زده کوونکي، چې په لیست کې له 21 نومونو سره برابر دي.
+endsolution
+qp a | Which subject is the most favourite? || سب سے پسندیدہ مضمون کون سا ہے؟ || تر ټولو خوښ مضمون کوم دی؟
+sol Math and Science (6 students each) ## Both have the highest count, 6. || دونوں کی تعداد سب سے زیادہ، 6 ہے۔ || دواړه تر ټولو لوړ شمېر، 6، لري.
+qp b | Which subject is the least favourite? || سب سے کم پسندیدہ مضمون کون سا ہے؟ || تر ټولو لږ خوښ مضمون کوم دی؟
+sol Urdu (4 students) ## Urdu has the smallest count. || اردو کی تعداد سب سے کم ہے۔ || د اردو شمېر تر ټولو لږ دی.

@@ -1,0 +1,38 @@
+@printed 107
+p A sequence of numbers in which each term is obtained by multiplying or dividing the preceding term by a fixed number (known as the **common ratio**) is called a **geometric sequence**. || اعداد کی وہ ترتیب جس میں ہر رکن پچھلے رکن کو ایک مقررہ عدد (جسے **مشترک نسبت** کہتے ہیں) سے ضرب یا تقسیم کر کے حاصل ہو، **ہندسی ترتیب** کہلاتی ہے۔ || د عددونو هغه لړۍ چې پکې هر حد د مخکیني حد په یوه ټاکلي عدد (چې **ګډ نسبت** بلل کېږي) د ضربولو یا وېشلو سره لاسته راځي، **هندسي لړۍ** بلل کېږي.
+p Note that in these examples of sequences, we have applied Term-to-Term rule to find each next term. || غور کریں کہ ترتیب کی ان مثالوں میں ہم نے ہر اگلا رکن معلوم کرنے کے لیے رکن سے رکن کا اصول استعمال کیا ہے۔ || پام وکړئ چې د لړیو په دې بېلګو کې مو د هر راتلونکي حد د موندلو لپاره د حد څخه حد ته قاعده کارولې ده.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The term-to-term rule of a pattern describes how to get next term in that specific pattern. || کسی نمونے کا رکن سے رکن کا اصول بیان کرتا ہے کہ اس مخصوص نمونے میں اگلا رکن کیسے حاصل کیا جائے۔ || د یوې بېلګې د حد څخه حد ته قاعده بیانوي چې په هغه ځانګړې بېلګه کې راتلونکی حد څنګه لاسته راوړو.
+endbox
+example 2
+m 1. $5, \quad 10, \quad 20, \quad 40,........ \qquad (\to \times 2 \to \times 2 \to \times 2)$
+p Here, each term is obtained by multiplying the previous term by 2. || یہاں ہر رکن پچھلے رکن کو 2 سے ضرب دے کر حاصل ہوتا ہے۔ || دلته هر حد د مخکیني حد په 2 کې د ضربولو سره لاسته راځي.
+m 2. $4, \quad 8, \quad 16, \quad 32,.......$
+qp i | Describe the rule of this pattern? || اس نمونے کا اصول بیان کریں؟ || د دې بېلګې قاعده بیان کړئ؟
+qp ii | What will be the next term? || اگلا رکن کیا ہوگا؟ || راتلونکی حد به څه وي؟
+endexample
+p We know that **position to terms rule** helps us to find out what number is in a pattern if its position in the pattern is given. Using this rule, we can compute the value of any term in a sequence by finding the nth term. || ہم جانتے ہیں کہ **مقام سے رکن کا اصول** ہمیں یہ معلوم کرنے میں مدد دیتا ہے کہ نمونے میں کون سا عدد ہے اگر نمونے میں اس کا مقام دیا گیا ہو۔ اس اصول کی مدد سے ہم n واں رکن معلوم کر کے ترتیب کے کسی بھی رکن کی قیمت معلوم کر سکتے ہیں۔ || موږ پوهېږو چې **د ځای څخه حد ته قاعده** له موږ سره مرسته کوي چې ومومو په بېلګه کې کوم عدد دی که په بېلګه کې یې ځای ورکړل شوی وي. د دې قاعدې په کارولو، د n ام حد په موندلو سره د لړۍ د هر حد ارزښت محاسبه کولی شو.
+p Let's find the 10th term of this sequence. || آئیے اس ترتیب کا دسواں رکن معلوم کریں۔ || راځئ د دې لړۍ لسم حد ومومو.
+example 3
+p Consider the sequence of even numbers; || جفت اعداد کی ترتیب پر غور کریں؛ || د جفتو عددونو لړۍ ته پام وکړئ؛
+m $2, 4, 6, 8, 10,..........$
+m Here, First term $= a_1 = 2 \times 1$
+m Second term $= a_2 = 2 \times 2$
+m Third term $= a_3 = 2 \times 3$
+m General Term $=$ nth term $= a_n = 2 \times n = 2n$
+p Since $a_n = 2n$, this mean; || چونکہ $a_n = 2n$، اس کا مطلب ہے؛ || څرنګه چې $a_n = 2n$، دا معنا لري؛
+qp i | We can generate the sequence by substituting n = 1, 2, 3, 4,.... in $a_n$. || ہم $a_n$ میں n = 1، 2، 3، 4،.... رکھ کر ترتیب بنا سکتے ہیں۔ || موږ په $a_n$ کې د n = 1، 2، 3، 4،.... په ایښودلو لړۍ جوړولی شو.
+qp ii | We can find any specific term of the sequence by substituting the term number instead of $n$, in the formula $2n$. || ہم فارمولا $2n$ میں $n$ کی جگہ رکن کا نمبر رکھ کر ترتیب کا کوئی بھی مخصوص رکن معلوم کر سکتے ہیں۔ || موږ په $2n$ فورمول کې د $n$ پر ځای د حد شمېره ایښودلو سره د لړۍ هر ځانګړی حد موندلی شو.
+p We have; || ہمارے پاس ہے؛ || موږ لرو؛
+table
+tr | $n$ | 1 | 2 | 3 | 4 | 5 | 6
+tr | $2n$ | 2 | 4 | 6 | 8 | 10 | 12
+endtable
+m Put n = 10 in $a_n = 2n$,
+m $a_{10} = 2(10) = 20$
+p So, the 10th term is 20. || لہٰذا دسواں رکن 20 ہے۔ || نو لسم حد 20 دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- The fixed number which is added or subtracted in an arithmetic sequence is called common difference because if we find the difference of any two successive terms, we will always get this common difference. || حسابی ترتیب میں جمع یا تفریق کیا جانے والا مقررہ عدد مشترک فرق کہلاتا ہے کیونکہ اگر ہم کسی بھی دو متواتر ارکان کا فرق معلوم کریں تو ہمیں ہمیشہ یہی مشترک فرق ملے گا۔ || په حسابي لړۍ کې جمع یا تفریق کېدونکی ټاکلی عدد ګډ توپیر بلل کېږي ځکه که د هر دوو پرله پسې حدونو توپیر ومومو، تل به همدا ګډ توپیر لاسته راوړو.
+- The number multiplied to each term of the geometric sequence is known as the common ratio, because if we divide any two successive terms, we will always get this common ratio. || ہندسی ترتیب کے ہر رکن سے ضرب دیا جانے والا عدد مشترک نسبت کہلاتا ہے، کیونکہ اگر ہم کسی بھی دو متواتر ارکان کو تقسیم کریں تو ہمیں ہمیشہ یہی مشترک نسبت ملے گی۔ || هغه عدد چې د هندسي لړۍ په هر حد کې ضربېږي ګډ نسبت بلل کېږي، ځکه که هر دوه پرله پسې حدونه ووېشو، تل به همدا ګډ نسبت لاسته راوړو.
+endbox

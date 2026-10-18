@@ -1,0 +1,30 @@
+@printed 54
+@issue Q4 prints "Hamid brought a car" (for "bought"); kept as printed.
+exercise 3.5
+q 1 | Najma insured her life for Rs.650,000. Find the amount of premium at a rate of 5%. || نجمہ نے Rs.650,000 کا زندگی کا بیمہ کرایا۔ 5% کی شرح سے پریمیم کی رقم معلوم کریں۔ || نجمې خپل ژوند د Rs.650,000 لپاره بیمه کړ. د 5% په نرخ د پریمیم مقدار معلوم کړئ.
+q 2 | Find the rate of premium if a person insured his life for Rs.500,000 and he pays annual premium Rs. 25,000. || پریمیم کی شرح معلوم کریں اگر ایک شخص نے Rs.500,000 کا زندگی کا بیمہ کرایا اور وہ سالانہ Rs. 25,000 پریمیم ادا کرتا ہے۔ || د پریمیم نرخ معلوم کړئ که یوه کس خپل ژوند د Rs.500,000 لپاره بیمه کړی وي او کلنی Rs. 25,000 پریمیم ورکوي.
+q 3 | Anwar insured his rickshaw at a rate of 4.2%. He paid an annual premium Rs. 6500. Find the actual price of the rickshaw. || انور نے اپنے رکشے کا 4.2% کی شرح سے بیمہ کرایا۔ اس نے Rs. 6500 سالانہ پریمیم ادا کیا۔ رکشے کی اصل قیمت معلوم کریں۔ || انور خپل رکشه په 4.2% نرخ بیمه کړه. هغه کلنی Rs. 6500 پریمیم ورکړ. د رکشې اصلي بیه معلومه کړئ.
+q 4 | Hamid brought a car for Rs. 700,000. He insured it at a rate of 3.5% for 3 years. Find the total amount paid as premium, while the rate of depreciation is 5% yearly. || حامد نے Rs. 700,000 میں ایک کار خریدی۔ اس نے 3 سال کے لیے 3.5% کی شرح سے اس کا بیمہ کرایا۔ پریمیم کے طور پر ادا کی گئی کل رقم معلوم کریں، جبکہ فرسودگی کی شرح 5% سالانہ ہے۔ || حامد یو موټر په Rs. 700,000 واخیست. هغه یې د 3 کلونو لپاره په 3.5% نرخ بیمه کړ. د پریمیم په توګه ورکړل شوی ټول مقدار معلوم کړئ، په داسې حال کې چې د استهلاک نرخ کلنی 5% دی.
+q 5 | A person insured his vehicle worth Rs. 450,000 at a rate of 2.5% for 4 years. After 3 years he got a claim of damages worth Rs. 750,000. How much loss had he recovered through insurance. || ایک شخص نے Rs. 450,000 مالیت کی اپنی گاڑی کا 4 سال کے لیے 2.5% کی شرح سے بیمہ کرایا۔ 3 سال بعد اسے Rs. 750,000 کے نقصانات کا دعویٰ ملا۔ اس نے بیمہ کے ذریعے کتنا نقصان پورا کیا۔ || یوه کس خپل د Rs. 450,000 په ارزښت موټر د 4 کلونو لپاره په 2.5% نرخ بیمه کړ. له 3 کلونو وروسته یې د Rs. 750,000 د زیانونو ادعا ترلاسه کړه. هغه د بیمې له لارې څومره زیان جبران کړ.
+endexercise
+@sec 3.6 | Converting Currencies || کرنسیوں کی تبدیلی || د اسعارو اړول
+# 3.6 Converting Currencies || 3.6 کرنسیوں کی تبدیلی || 3.6 د اسعارو اړول
+p When we want to know the value of a currency with respect to any other currency, we need to know the exchange rate. By knowing the exchange rate, we can easily convert any currency to other currencies. || جب ہم کسی کرنسی کی قدر کسی دوسری کرنسی کے لحاظ سے جاننا چاہتے ہیں تو ہمیں شرحِ مبادلہ جاننے کی ضرورت ہوتی ہے۔ شرحِ مبادلہ جان کر ہم کسی بھی کرنسی کو آسانی سے دوسری کرنسیوں میں تبدیل کر سکتے ہیں۔ || کله چې غواړو د یوې اسعارې ارزښت د بلې اسعارې په پرتله وپېژنو، د تبادلې نرخ پېژندل اړین دي. د تبادلې د نرخ په پېژندلو سره هره اسعاره په اسانۍ نورو اسعارو ته اړولی شو.
+p **PKR to USD (United States Dollar)** || **PKR سے USD (امریکی ڈالر)** || **PKR څخه USD (امریکايي ډالر)**
+m 1 Pakistani Rupee $= 0.0055809287$ United States Dollar (USD)
+m 1 United States Dollar $= 179.181648$ Pakistani Rupee (Rs)
+example 1
+p convert 650 Pakistani Rupee to United States Dollar || 650 پاکستانی روپے کو امریکی ڈالر میں تبدیل کریں || 650 پاکستاني روپۍ امریکايي ډالرو ته واړوئ
+## Solution: || حل: || حل:
+m 1 Pakistani Rupee $= 0.0055809287$ USD
+m 650 Pakistani Rupee $= 650 \times 0.0055809287$ USD
+m $= 3.627$ USD (approx.)
+endexample
+p **USD to PKR** || **USD سے PKR** || **USD څخه PKR**
+example 2
+p Convert 50 United States Dollar to Pakistani Rupee || 50 امریکی ڈالر کو پاکستانی روپے میں تبدیل کریں || 50 امریکايي ډالر پاکستاني روپیو ته واړوئ
+## Solution: || حل: || حل:
+m 1 United States Dollar $=$ Rs 179.181648
+m 50 United States Dollar $=$ Rs $179.181648 \times 50$
+m $=$ Rs 8959.08
+endexample

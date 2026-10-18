@@ -1,0 +1,33 @@
+@printed 169
+@issue Example 1 states "x − y = 2" in the question but writes "x − y = 12 —— (2)" in the solution and then uses x = 2 + y; Q1 asks for "linear equations in one variable" but calls some pairs simultaneous; "This method has ben further explained"; kept as printed.
+exercise 8.2
+q 1 | In each of the following questions, you have been given a pair of linear equations in one variable. Solve both equations separately and tell which of them are simultaneous equations and which are not. || درج ذیل ہر سوال میں آپ کو ایک متغیر میں خطی مساواتوں کا ایک جوڑا دیا گیا ہے۔ دونوں مساواتوں کو الگ الگ حل کریں اور بتائیں کہ ان میں سے کون سی ہم وقت مساواتیں ہیں اور کون سی نہیں۔ || په لاندې هره پوښتنه کې تاسو ته په یوه متغیر کې د خطي معادلو یوه جوړه درکړل شوې. دواړه معادلې جلا جلا حل کړئ او ووایاست چې کومې یې همزمانه معادلې دي او کومې نه دي.
+qp a | $a + 3 = 9$; $a - 2 = 5$
+qp b | $b + 2 = 11$; $b - 5 = 4$
+qp c | $p - 15 = 15$; $p + 7 = 37$
+qp d | $x - 3 = 10$; $x - 7 = 6$
+qp e | $z - 8 = 12$; $z - 4 = 11$
+q 2 | Solve the following simultaneous equations by using the elimination method: || حذف کے طریقے سے درج ذیل ہم وقت مساواتیں حل کریں: || د حذف په طریقه لاندې همزمانه معادلې حل کړئ:
+qp a | $a + b = 7$; $a - b = 3$
+qp b | $m + n = 10$; $m - n = 4$
+qp c | $p + q = 14$; $p - q = 4$
+qp d | $x + y = 25$; $x - y = 5$
+qp e | $x + y = 11$; $x + 3y = 25$
+qp f | $2x + 3y = 65$; $5x + 3y = 95$
+qp g | $2p - 3q = 13$; $7p + 2q = 8$
+qp h | $5a + 2b = 23$; $2a + 7b = 3$
+qp i | $7x - 6y = 54$; $2x + 3y = 39$
+endexercise
+@sec 8.3 | Substitution Method || تعویض کا طریقہ || د ځای ناستي طریقه
+# 8.3 Substitution Method || 8.3 تعویض کا طریقہ || 8.3 د ځای ناستي طریقه
+p In this method, we take any one of the given equations first and find the value of one of the variables in terms of the other. Then we substitute this value of the variable in the second equation. In this way, the second equation reduces to a third equation which is a linear equation in one variable. Hence, the value of one of the variables is found by solving the third equation. Finally, we substitute (put) this value of one variable in any of the given equations that gives us the value of the other variable on solving it. This method has ben further explained with the help of the following examples. || اس طریقے میں ہم پہلے دی گئی مساواتوں میں سے کوئی ایک لیتے ہیں اور ایک متغیر کی قیمت دوسرے کی صورت میں معلوم کرتے ہیں۔ پھر متغیر کی یہ قیمت دوسری مساوات میں رکھتے ہیں۔ اس طرح دوسری مساوات ایک تیسری مساوات میں بدل جاتی ہے جو ایک متغیر میں خطی مساوات ہے۔ لہٰذا تیسری مساوات حل کر کے ایک متغیر کی قیمت معلوم ہوتی ہے۔ آخر میں ہم ایک متغیر کی یہ قیمت دی گئی کسی بھی مساوات میں رکھتے ہیں جسے حل کرنے سے دوسرے متغیر کی قیمت ملتی ہے۔ اس طریقے کو درج ذیل مثالوں کی مدد سے مزید واضح کیا گیا ہے۔ || په دې طریقه کې لومړی له ورکړل شویو معادلو یوه اخلو او د یوه متغیر ارزښت د بل په بڼه مومو. بیا د متغیر دا ارزښت په دوهمه معادله کې ږدو. په دې ډول دوهمه معادله درېیمې معادلې ته اوړي چې په یوه متغیر کې خطي معادله ده. نو د درېیمې معادلې په حلولو د یوه متغیر ارزښت موندل کېږي. په پای کې د یوه متغیر دا ارزښت په ورکړل شوې هره معادله کې ږدو چې په حلولو یې د بل متغیر ارزښت لاسته راځي. دا طریقه د لاندې بېلګو په مرسته نوره هم تشریح شوې.
+example 1
+p Solve the following simultaneous equations: || درج ذیل ہم وقت مساواتیں حل کریں: || لاندې همزمانه معادلې حل کړئ:
+m $x + y = 12, \quad x - y = 2$
+## Solution: || حل: || حل:
+m $x + y = 12$ —— (1) $\qquad x - y = 12$ —— (2)
+p From equation (2), we get || مساوات (2) سے ہمیں ملتا ہے || له (2) معادلې څخه لاسته راځي
+m $x = 2 + y$ —— (3)
+p Put this value of $x$ in equation (1), || $x$ کی یہ قیمت مساوات (1) میں رکھیں، || د $x$ دا ارزښت په (1) معادله کې کېږدئ،
+m $(2 + y) + y = 12$
+m $2 + y + y = 12$

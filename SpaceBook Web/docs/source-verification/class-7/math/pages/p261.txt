@@ -1,0 +1,38 @@
+@printed 257
+example 8 | The given histogram shows the frequency distribution of height (in inches) of some women. || دیا گیا ہسٹوگرام کچھ خواتین کے قد (انچ میں) کی تعددی تقسیم دکھاتا ہے۔ || ورکړل شوی هسټوګرام د ځینو ښځو د قد (په انچو) د تکرار وېش ښيي.
+@issue The book labels this "Example 2"; numbered 8 here to keep example numbers continuous within the unit.
+bars cats=58.5-60.5,60.5-62.5,62.5-64.5,64.5-66.5 | series=Women:10,12,8,4 | ymax=12 | step=2 | ylab=Number of Women | xlab=Height (in inches) | hist=1 || Histogram of heights of women || خواتین کے قد کا ہسٹوگرام || د ښځو د قد هسټوګرام
+p (i) What is the total number of classes? || (i) جماعتوں کی کل تعداد کیا ہے؟ || (i) د ټولګیو ټول شمېر څو دی؟
+p (ii) What is the width of the class? || (ii) جماعت کی چوڑائی کیا ہے؟ || (ii) د ټولګي پلنوالی څومره دی؟
+p (iii) What is the total number of women? || (iii) خواتین کی کل تعداد کیا ہے؟ || (iii) د ښځو ټول شمېر څو دی؟
+p (iv) Which class has maximum frequency? || (iv) کس جماعت کا تعدد سب سے زیادہ ہے؟ || (iv) کوم ټولګی تر ټولو ډېر تکرار لري؟
+p **Solution:** To see the above histogram we prepare the following distribution table. || **حل:** اوپر والا ہسٹوگرام دیکھ کر ہم درج ذیل تقسیمی جدول تیار کرتے ہیں۔ || **حل:** پورته هسټوګرام ته په کتو لاندې د وېش جدول جوړوو.
+table
+th | Class Interval || جماعتی وقفہ || د ټولګي واټن | Class Boundaries
+tr | 58.5 - 60.5 | 10
+tr | 60.5 - 62.5 | 12
+tr | 62.5 - 64.5 | 8
+tr | 64.5 - 66.5 | 4
+tr | | Total = 34
+endtable
+@issue The second column is headed "Class Boundaries" but holds the frequencies, while the first column holds the class boundaries; kept as printed.
+p i) Total number of classes = 4 || i) جماعتوں کی کل تعداد = 4 || i) د ټولګیو ټول شمېر = 4
+p ii) Width of class = The difference between the lower class boundaries/limits of two consecutive classes = 2 || ii) جماعت کی چوڑائی = دو متواتر جماعتوں کی زیریں جماعتی سرحدوں/حدود کا فرق = 2 || ii) د ټولګي پلنوالی = د دوو پرلپسې ټولګیو د ښکتنیو سرحدونو/پولو توپیر = 2
+p iii) Total number of women = 34 persons || iii) خواتین کی کل تعداد = 34 افراد || iii) د ښځو ټول شمېر = 34 کسان
+p iv) The maximum frequency is 12 which lies between 60.5 - 62.5 || iv) سب سے زیادہ تعدد 12 ہے جو 60.5 - 62.5 کے درمیان ہے || iv) تر ټولو ډېر تکرار 12 دی چې د 60.5 - 62.5 ترمنځ دی
+endexample
+exercise 13.5
+q 1 | Draw a histogram for the following data: || درج ذیل ڈیٹا کے لیے ہسٹوگرام بنائیں: || د لاندې معلوماتو لپاره هسټوګرام رسم کړئ:
+table
+th | Class interval || جماعتی وقفہ || د ټولګي واټن | 30 – 34 | 35 – 39 | 40 – 44 | 45 – 49 | 50 – 54
+tr | Frequency || تعدد || تکرار | 4 | 6 | 12 | 10 | 8
+endtable
+q 2 | Aslam has 30 crates of eggs. The number of rotten eggs are given in the following data. || اسلم کے پاس انڈوں کے 30 کریٹ ہیں۔ خراب انڈوں کی تعداد درج ذیل ڈیٹا میں دی گئی ہے۔ || اسلم د هګیو 30 کرېټونه لري. د خرابو هګیو شمېر په لاندې معلوماتو کې ورکړل شوی.
+table
+th | Rotten eggs || خراب انڈے || خرابې هګۍ | 0 | 1 | 4 | 5 | 6 | 7 | 8 | 9
+tr | Number of crates (f) || کریٹوں کی تعداد (f) || د کرېټونو شمېر (f) | 2 | 9 | 3 | 4 | 2 | 5 | 1 | 4
+endtable
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Help the students construct and then compare histograms for both discrete and continuous data with equal interval range. Ask them to interpret what conclusion they have drawn. || طلبہ کو مساوی وقفے کی حد کے ساتھ منفصل اور مسلسل دونوں ڈیٹا کے ہسٹوگرام بنانے اور پھر موازنہ کرنے میں مدد کریں۔ ان سے کہیں کہ وضاحت کریں کہ انہوں نے کیا نتیجہ اخذ کیا۔ || له زده کوونکو سره مرسته وکړئ چې د مساوي واټن سره د جلا او پرلپسې دواړو معلوماتو هسټوګرامونه جوړ او بیا پرتله کړي. ترې وغواړئ چې تشریح کړي څه پایله یې اخیستې.
+endbox
+@issue Q2's crates add to 30 (2+9+3+4+2+5+1+4); there are no columns for 2 or 3 rotten eggs. The question gives no instruction after the table (the histogram task is implied by the exercise).

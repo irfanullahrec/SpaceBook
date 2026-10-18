@@ -1,0 +1,52 @@
+@printed 23
+@issue Exercise 2.4 Q1(d) prints "3/2, 2ᶦ, 2.2, −2": the mark after the second 2 is an unreadable superscript; shown as "2" with this note.
+@issue Section 2.5.1 is printed as a 2×2 boxed table; each box is reproduced as a bold heading with its statements.
+example 2
+p What is the absolute value of $-\frac{22}{7}$ and $\frac{22}{7}$? || $-\frac{22}{7}$ اور $\frac{22}{7}$ کی مطلق قیمت کیا ہے؟ || د $-\frac{22}{7}$ او $\frac{22}{7}$ مطلق ارزښت څومره دی؟
+## Solution: || حل: || حل:
+p Both $-\frac{22}{7}$ and $\frac{22}{7}$ are same distance away from the origin on a number line. Therefore, || عددی خط پر $-\frac{22}{7}$ اور $\frac{22}{7}$ دونوں مبدا سے برابر فاصلے پر ہیں۔ لہٰذا، || د عددونو پر کرښه $-\frac{22}{7}$ او $\frac{22}{7}$ دواړه له مبدا څخه په برابر واټن دي. نو،
+m $\left|-\frac{22}{7}\right| = \frac{22}{7}$
+m $\left|\frac{22}{7}\right| = \frac{22}{7}$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find is the absolute value of −1.5 and 1.5? || −1.5 اور 1.5 کی مطلق قیمت معلوم کریں؟ || د −1.5 او 1.5 مطلق ارزښت معلوم کړئ؟
+endbox
+exercise 2.4
+q 1 | Represent the following real numbers on a number line. || درج ذیل حقیقی اعداد کو عددی خط پر ظاہر کریں۔ || لاندې حقیقي عددونه د عددونو پر کرښه وښایاست.
+qp a | −1.7, 0.2, 2, −3.2, 4.
+qp b | $\sqrt{2}, -\sqrt{5}$, 2/7, −1/2
+qp c | $-2, -1\frac{2}{3}, -1\frac{1}{3}, -1, -\frac{1}{3}$
+qp d | $\frac{3}{2}$, 2, 2.2, −2
+qp e | $2, 4, 0, 1.5, \frac{1}{2}, -\frac{3}{2}$
+qp f | $1\frac{3}{7}$, 2.5, 3.5, −2.2, $-4\frac{3}{7}, -\frac{30}{6}$
+q 2 | Find the Absolute value of the following real numbers. || درج ذیل حقیقی اعداد کی مطلق قیمت معلوم کریں۔ || د لاندې حقیقي عددونو مطلق ارزښت معلوم کړئ.
+qp a | $\sqrt{11}$ and $-\sqrt{11}$
+qp b | 3.18 and −3.18
+qp c | $-\frac{3}{4}$ and $\frac{3}{4}$
+qp d | −18.9 and 18.9
+qp e | $\sqrt{7}$ and $-\sqrt{7}$
+qp f | 1.44 and −1.44
+endexercise
+@sec 2.5 | Properties of real Numbers || حقیقی اعداد کی خصوصیات || د حقیقي عددونو ځانګړتیاوې
+# 2.5 Properties of real Numbers || 2.5 حقیقی اعداد کی خصوصیات || 2.5 د حقیقي عددونو ځانګړتیاوې
+## 2.5.1 Properties of inequality || 2.5.1 عدم مساوات کی خصوصیات || 2.5.1 د نابرابرۍ ځانګړتیاوې
+p **Trichotomy Property of Inequality** || **عدم مساوات کی ثلاثی خاصیت** || **د نابرابرۍ درې اړخیزه ځانګړتیا**
+p $\forall\, a, b \in R$, one of the following can be true. || $\forall\, a, b \in R$، درج ذیل میں سے ایک درست ہو سکتا ہے۔ || $\forall\, a, b \in R$، په لاندې کې یو سم کېدای شي.
+m Either $a = b$ or $a > b$ or $a < b$
+p **Transitive Property of Inequality** || **عدم مساوات کی متعدی خاصیت** || **د نابرابرۍ لېږدېدونکې ځانګړتیا**
+m $\forall\, a, b \in R$,
+m i) $a > b \wedge b > c \Rightarrow a > c$
+m ii) $a < b \wedge b < c \Rightarrow a < c$
+p **Addition Property of Inequality** || **عدم مساوات کی جمع کی خاصیت** || **د نابرابرۍ د جمع ځانګړتیا**
+m $\forall\, a, b, c \in R$,
+m a) i) $a > b \Rightarrow a + c > b + c$
+m ii) $a < b \Rightarrow a + c < b + c$
+m b) i) $a > b \wedge c > d \Rightarrow a + c > b + d$
+m ii) $a < b \wedge c < d \Rightarrow a + c < b + d$
+p **Multiplication Property of Inequality** || **عدم مساوات کی ضرب کی خاصیت** || **د نابرابرۍ د ضرب ځانګړتیا**
+m a) $\forall\, a, b, c \in R$ and $c > 0$,
+m i) $a > b \Rightarrow ac > bc$
+m ii) $a < b \Rightarrow ac < bc$
+m b) $\forall\, a, b, c \in R$, and $c < 0$.
+m i) $a > b \Rightarrow ac < bc$
+m ii) $a < b \Rightarrow ac > bc$

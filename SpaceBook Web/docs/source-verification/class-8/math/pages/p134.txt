@@ -1,0 +1,38 @@
+@printed 128
+@issue The algebraic proof prints "= x² + (a + b)x² + ab = RHS" (x² for x in the middle term) and "Thus LHS. = RHS."; kept as printed. The figure labels the top edge's split point J (used in the text as EFJD and FGCJ).
+### Identity I: $(x + a)(x + b) = x^2 + (a + b)x + ab$ || مماثلت I || لومړی مطابقت
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+m $(x + a)(x + b) = x^2 + (a + b)x + ab$
+m LHS $= (x + a)(x + b)$
+m $= x(x + b) + a(x + b)$
+m $= x^2 + bx + ax + ab$
+m $= x^2 + (b + a)x + ab$
+m $= x^2 + (a + b)x^2 + ab =$ RHS
+m Hence proved $(x + a)(x + b) = x^2 + (a + b)x + ab$
+p Thus LHS. = RHS. || اس طرح LHS. = RHS. || نو LHS. = RHS.
+p **Geometric Proof:** || **ہندسی ثبوت:** || **هندسي ثبوت:**
+p Look at the figure ABCD. It is divided into 4 portions. || شکل ABCD کو دیکھیں۔ یہ 4 حصوں میں تقسیم ہے۔ || ABCD شکل ته وګورئ. په 4 برخو وېشل شوی.
+area w=x:a | h=x:b | cells=x²,ax;bx,ab | top=x + a | side=x + b | pts=D,J,C;E,F,G;A,H,B
+m Now Area of ABCD $=$ Length of ABCD $\times$ Width of ABCD
+m $= (x + a)(x + b)$
+p But Area of ABCD = Area of EFJD + Area of FGCJ + Area of AHFE + Area of HBGF || لیکن ABCD کا رقبہ = EFJD کا رقبہ + FGCJ کا رقبہ + AHFE کا رقبہ + HBGF کا رقبہ || خو د ABCD مساحت = د EFJD مساحت + د FGCJ مساحت + د AHFE مساحت + د HBGF مساحت
+p So, || لہٰذا، || نو،
+m $(x + a)(x + b) = x^2 + ax + bx + ab$
+m $(x + a)(x + b) = x^2 + (a + b)x + ab$
+p Hence proved. || ثابت ہوا۔ || ثابت شو.
+example 1
+p Simplify the binomials by using the identity. || مماثلت استعمال کر کے دو رقمیوں کو مختصر کریں۔ || د مطابقت په کارولو دوه حدي افادې ساده کړئ.
+m $(x + 2)(x + 3)$
+## Solution: || حل: || حل:
+m $(x + 2)(x + 3)$
+p By using the identity, || مماثلت استعمال کرتے ہوئے، || د مطابقت په کارولو،
+m $(x + a)(x + b) = x^2 + (a + b)x + ab$
+m $(x + 2)(x + 3) = x^2 + (2 + 3)x + (2 \times 3)$
+m $= x^2 + 5x + 6$
+endexample
+example 2
+p Find the unknown term. || نامعلوم رکن معلوم کریں۔ || نامعلوم حد معلوم کړئ.
+m $(x - 1)(x - 2) = x^2 + (\_\_\_) + ab$
+## Solution: || حل: || حل:
+p By using the identity, || مماثلت استعمال کرتے ہوئے، || د مطابقت په کارولو،
+m $(x + a)(x + b) = x^2 + (a + b)x + ab$

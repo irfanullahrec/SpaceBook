@@ -1,0 +1,10 @@
+# reading position -> scan index (scans out of printed order)
+# scan 010 is printed 6 and scan 011 is printed 5
+10 11
+11 10
+# scan 024 is printed 20 and scan 025 is printed 19
+24 25
+25 24
+# scan 086 is printed 84 (authors) and scan 087 is printed 83 (glossary)
+86 87
+87 86

@@ -1,0 +1,27 @@
+@printed 119
+## Circle || دائرہ || دایره
+p I have a Circle-shaped biscuit. It has 0 corners and 0 sides. || میرے پاس دائرہ نما بسکٹ ہے۔ اس کے ۰ کونے اور ۰ اطراف ہیں۔ || زما سره ګرد شکله بسکټ دی. ۰ ګوټونه او ۰ اړخونه لري.
+shapes circle.sky:1 clockicon:1 pizza:1 || A circle, a clock and a pizza || دائرہ، گھڑی اور پیزا || دایره، ګړۍ او پیزا
+exercise Circles (Page 119)
+q 1 | Colour all Circles in the picture below. || نیچے دی گئی تصویر میں تمام دائروں میں رنگ بھریں۔ || په لاندې انځور کې ټولې دایرې رنګ کړئ.
+svg A window with curtains drawn with circles, squares, a triangle and rectangles || پردوں والی کھڑکی جو دائروں، مربع، مثلث اور مستطیلوں سے بنی ہے || د پردو لرونکې کړکۍ چې له دایرو، مربع، مثلث او مستطیلونو جوړه ده
+<svg viewBox="0 0 420 300" width="420" role="img" aria-label="Window with curtains: circles at the rod ends and on the curtains, shapes on the window" font-family="Segoe UI, Arial, sans-serif">
+<g fill="none" stroke="#334155" stroke-width="1.8">
+<circle cx="40" cy="22" r="20"/><circle cx="380" cy="22" r="20"/>
+<rect x="60" y="16" width="300" height="10"/>
+<path d="M75 26 V290 H150 Q100 220 150 140 Q90 120 75 26z"/>
+<path d="M345 26 V290 H270 Q320 220 270 140 Q330 120 345 26z"/>
+<rect x="150" y="30" width="120" height="250"/>
+<circle cx="105" cy="60" r="22"/><circle cx="315" cy="60" r="22"/>
+<circle cx="105" cy="245" r="22"/><circle cx="315" cy="245" r="22"/>
+<circle cx="180" cy="70" r="20"/><rect x="215" y="52" width="38" height="36"/>
+<path d="M180 110 L200 150 L160 150z"/><rect x="210" y="118" width="55" height="30"/>
+<rect x="190" y="170" width="30" height="60"/>
+</g>
+</svg>
+endsvg
+sol Colour 7 circles: 2 at the ends of the curtain rod, 2 on the upper curtains, 2 on the lower curtains and 1 on the window. ## A circle is round with no corners and no sides. || دائرہ گول ہوتا ہے، نہ کونے نہ اطراف۔ || دایره ګرده وي، نه ګوټونه لري نه اړخونه.
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Take students to the school ground and draw a few shapes on the walking path with chalk. Now ask them to step on the circled. In the end, ask them to count how many circles are there? || طلبہ کو اسکول کے میدان میں لے جائیں اور چاک سے راستے پر چند اشکال بنائیں۔ اب ان سے دائروں پر قدم رکھنے کو کہیں۔ آخر میں ان سے پوچھیں کہ کتنے دائرے ہیں؟ || زده کوونکي د ښوونځي میدان ته بوځئ او په تباشیر سره په لاره څو شکلونه رسم کړئ. اوس ورته ووایئ چې په دایرو پښې کېږدي. په پای کې ترې وپوښتئ چې څو دایرې دي؟
+endbox

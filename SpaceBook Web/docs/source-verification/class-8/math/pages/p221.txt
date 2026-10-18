@@ -1,0 +1,57 @@
+@printed 213
+@issue Exercise 9.1 Q1 figures carry no vertex letters: i) legs 8m and 10m with hypotenuse x... read as printed: i) vertical 8m, slanted 10m, base x; ii) top 20m, slanted 25m, right side x; iii) slanted x, right 12m, base 5m. Q2: i) left 12m, slanted x, base 16m; ii) 10m and 20m legs, hypotenuse x; iii) slanted 40m, right x, base 30m. Recreated with the labels placed as printed.
+m $x^2 = 10^2 + 10^2$
+m $x^2 = 100 + 100 = 200$
+p Taking square-root on both sides, || دونوں اطراف کا جذر المربع لینا، || د دواړو خواوو مربع جذر اخیستل،
+m $\sqrt{x^2} = \sqrt{200}$
+m $\Rightarrow x = 10\sqrt{2}$
+m $\Rightarrow x = 10 \times 1.414$
+m $\Rightarrow x = 14.14$
+p Length of the diagonal of the room = 14.1 m || کمرے کے وتر کی لمبائی = 14.1 m || د کوټې د قطر اوږدوالی = 14.1 m
+svg Square room ABCD with diagonal AC = x m || مربع کمرہ ABCD جس کا وتر AC = x m || مربع کوټه ABCD چې قطر یې AC = x m
+<svg viewBox="0 0 200 190" width="200" role="img" aria-label="Square room ABCD with sides 10 m and a dotted diagonal AC labelled x m" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<text x="100" y="14" text-anchor="middle" font-weight="700">Square Room</text>
+<rect x="40" y="30" width="120" height="120" fill="#fff" stroke="#0f172a" stroke-width="1.4"/>
+<line x1="40" y1="150" x2="160" y2="30" stroke="#0f172a" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="28" y="156" font-weight="700">A</text><text x="164" y="156" font-weight="700">B</text><text x="164" y="30" font-weight="700">C</text><text x="28" y="30" font-weight="700">D</text>
+<text x="100" y="170" text-anchor="middle">10m</text><text x="166" y="94">10m</text><text x="92" y="96" font-style="italic">x m</text>
+</svg>
+endsvg
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p △ABC is a right-angled triangle with ∠A=90°. Find the value of the unknowns in the following parts. || △ABC ایک قائمہ زاویہ مثلث ہے جس میں ∠A=90° ہے۔ درج ذیل حصوں میں نامعلوم قیمتیں معلوم کریں۔ || △ABC د قایمې زاویې مثلث دی چې ∠A=90° دی. په لاندې برخو کې نامعلوم ارزښتونه ومومئ.
+p **Note:** In △ABC, the side opposite to the ∠A will be denoted by a, the side opposite the ∠B will be denoted by b and the side opposite the ∠C will be denoted by c. || **نوٹ:** △ABC میں ∠A کے مقابل طرف کو a، ∠B کے مقابل طرف کو b اور ∠C کے مقابل طرف کو c سے ظاہر کیا جائے گا۔ || **یادونه:** په △ABC کې د ∠A مقابل ضلعه په a، د ∠B مقابل ضلعه په b او د ∠C مقابل ضلعه په c ښودل کېږي.
+rtri C,A,B | base=b | alt=c | hyp=a
+qp i | $a = 6$cm, $c = 4$cm
+qp ii | $b = 10$cm, $c = 15$cm
+qp iii | $c = 12$cm, $a = 8$cm
+endbox
+exercise 9.1
+q 1 | Find the value of $x$ in each figure. || ہر شکل میں $x$ کی قیمت معلوم کریں۔ || په هر شکل کې د $x$ ارزښت ومومئ.
+m i)
+rtri ,, | base=x | alt=8m | hyp=10m | flip
+m ii)
+svg Right triangle with top side 20m, hypotenuse 25m and right side x || مثلث: اوپر 20m، وتر 25m، دائیں طرف x || مثلث: پورته 20m، وتر 25m، ښي ضلعه x
+<svg viewBox="0 0 200 180" width="200" role="img" aria-label="Right triangle with the right angle at the top right: top side 20 m, hypotenuse 25 m, right side x" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="40,30 170,30 170,160" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><path d="M158 30v12h12" fill="none" stroke="#0f172a"/>
+<text x="105" y="22" text-anchor="middle">20m</text><text x="178" y="100" font-style="italic">x</text><text transform="translate(86 100) rotate(45)">25m</text>
+</svg>
+endsvg
+m iii)
+rtri ,, | base=5m | alt=12m | hyp=x
+q 2 | Find the value of $x$ in each of the following figures: || درج ذیل ہر شکل میں $x$ کی قیمت معلوم کریں: || په لاندې هر شکل کې د $x$ ارزښت ومومئ:
+m i)
+rtri ,, | base=16m | alt=12m | hyp=x | flip
+m ii)
+svg Right triangle with legs 10m and 20m and hypotenuse x || مثلث: اطراف 10m اور 20m، وتر x || مثلث: ضلعې 10m او 20m، وتر x
+<svg viewBox="0 0 240 150" width="240" role="img" aria-label="Triangle with the right angle at the top vertex: left side 10 m, right side x, base 20 m" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,130 220,130 80,30" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><path d="M74 39l9 -6 6 9" fill="none" stroke="#0f172a"/>
+<text x="120" y="148" text-anchor="middle">20m</text><text x="24" y="84">10m</text><text x="160" y="76" font-style="italic">x</text>
+</svg>
+endsvg
+m iii)
+rtri ,, | base=30m | alt=x | hyp=40m
+q 3 | In △XYZ, ∠Y = 90°. Find the length of the missing side in each of the following: || △XYZ میں ∠Y = 90°۔ درج ذیل ہر ایک میں نامعلوم طرف کی لمبائی معلوم کریں: || په △XYZ کې ∠Y = 90°. په لاندې هر یوه کې د ورکې ضلعې اوږدوالی ومومئ:
+qp i | $\overline{XZ}$ = 15cm, $\overline{YZ}$ = 10cm
+qp ii | $\overline{XY}$ = 16cm, $\overline{YZ}$ = 8cm
+qp iii | $\overline{XY}$ = 2.5cm, $\overline{XZ}$ = 5cm

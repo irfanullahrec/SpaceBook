@@ -1,0 +1,40 @@
+@printed 249
+@issue The JPG cuts the right edge: "right angled triangle)" and the triangle's right-hand vertex/angle are cut off; read as "right angled triangle". The heading "10.4 Triangles" is printed faintly. The circle in Q2 shows lines U, V, Z, Y, X with arrowheads; the line through U touches the top of the circle (tangent); X touches the bottom (tangent); V, Z, Y cut the circle (secants). Q3's figure shows chord FG, a diameter-like chord through O, a central angle at O, a secant J… and a tangent line at the top; labelled boxes: Minor Arc, Secant, Segment, Tangent (left) and Central Angle, Sector, Chord, Major Arc (right). The exercise has no further questions; it is closed here. Two colour triangles (orange, green) and a yellow-angle triangle ABC illustrate the section.
+q 2 | Observe the given figure and write the name of secants and tangents. || دی گئی شکل کا مشاہدہ کریں اور قاطع اور مماس کے نام لکھیں۔ || ورکړل شوی شکل وګورئ او د قاطعونو او مماسونو نومونه ولیکئ.
+svg Circle with centre W and lines U, V, Z, Y, X || مرکز W والا دائرہ اور خطوط U، V، Z، Y، X || د W مرکز لرونکې دایره او کرښې U، V، Z، Y، X
+<svg viewBox="0 0 280 190" width="280" role="img" aria-label="A circle with centre W; line U touches the top, lines V, Z, Y cut through it, line X touches the bottom" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<defs><marker id="q2A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<circle cx="140" cy="95" r="70" fill="none" stroke="#0f172a" stroke-width="1.3"/><circle cx="140" cy="95" r="2"/><text x="136" y="91" font-weight="400">W</text>
+<g stroke="#0f172a" stroke-width="1.2"><line x1="40" y1="42" x2="230" y2="14" marker-start="url(#q2A)" marker-end="url(#q2A)"/><line x1="40" y1="58" x2="230" y2="58" marker-start="url(#q2A)" marker-end="url(#q2A)"/><line x1="40" y1="116" x2="230" y2="116" marker-start="url(#q2A)" marker-end="url(#q2A)"/><line x1="40" y1="132" x2="230" y2="132" marker-start="url(#q2A)" marker-end="url(#q2A)"/><line x1="40" y1="170" x2="230" y2="170" marker-start="url(#q2A)" marker-end="url(#q2A)"/></g>
+<text x="232" y="14">U</text><text x="232" y="62">V</text><text x="232" y="116">Z</text><text x="232" y="136">Y</text><text x="232" y="174">X</text>
+</svg>
+endsvg
+q 3 | Match the labels with the correct part of the circle. || لیبلوں کو دائرے کے درست حصے سے ملائیں۔ || نښې د دایرې له سمې برخې سره ومنئ.
+svg Circle with parts F, G, O, J to match: Minor Arc, Secant, Segment, Tangent, Central Angle, Sector, Chord, Major Arc || دائرہ اور ملانے کے لیے لیبل || دایره او د ورته کولو لپاره نښې
+<svg viewBox="0 0 520 250" width="520" role="img" aria-label="A circle with centre O, a horizontal chord FG, a diameter through O, a radius to J with a central angle at O, a secant leaving the circle at the lower right, and a tangent touching the top; eight labelled boxes surround it" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<defs><marker id="q3A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<circle cx="260" cy="130" r="90" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="170" y1="130" x2="350" y2="130" stroke="#0f172a"/><line x1="188" y1="82" x2="332" y2="82" stroke="#0f172a"/>
+<line x1="260" y1="130" x2="212" y2="205" stroke="#0f172a"/><circle cx="260" cy="130" r="3" fill="#16a34a"/><path d="M244 138a20 20 0 0 0 30 0" fill="none" stroke="#0f172a"/>
+<line x1="150" y1="170" x2="360" y2="80" stroke="#0f172a" marker-end="url(#q3A)"/><line x1="150" y1="170" x2="150" y2="170" stroke="#0f172a"/>
+<line x1="150" y1="80" x2="310" y2="22" stroke="#0f172a" marker-end="url(#q3A)"/>
+<text x="176" y="78">F</text><text x="334" y="78">G</text><text x="256" y="124">O</text><text x="206" y="214">J</text>
+<g fill="#fff" stroke="#0f172a"><rect x="10" y="30" width="110" height="26"/><rect x="10" y="90" width="110" height="26"/><rect x="10" y="150" width="110" height="26"/><rect x="10" y="210" width="110" height="26"/><rect x="400" y="30" width="110" height="26"/><rect x="400" y="90" width="110" height="26"/><rect x="400" y="150" width="110" height="26"/><rect x="400" y="210" width="110" height="26"/></g>
+<g text-anchor="middle" font-weight="700"><text x="65" y="48">Minor Arc</text><text x="65" y="108">Secant</text><text x="65" y="168">Segment</text><text x="65" y="228">Tangent</text><text x="455" y="48">Central Angle</text><text x="455" y="108">Sector</text><text x="455" y="168">Chord</text><text x="455" y="228">Major Arc</text></g>
+</svg>
+endsvg
+endexercise
+@sec 10.4 | Triangles || مثلث || مثلثونه
+# 10.4 Triangles || 10.4 مثلث || 10.4 مثلثونه
+p A geometrical shape that has 3 sides and three angles is called a triangle. The word triangle is made up of two words tri and angle. Tri means three so, it's a figure that has three angles. Look at the triangle ABC. The line segments $\overline{AB}$, $\overline{BC}$ and $\overline{AC}$ are known as three sides of the triangle ABC. ∠ABC, ∠ACB, ∠BAC are the three angles. The sum of the angles of a triangle is 180°. A triangle is denoted by the symbol △. So, this is a △ABC. || وہ جیومیٹری شکل جس کی 3 اطراف اور تین زاویے ہوں مثلث کہلاتی ہے۔ لفظ مثلث دو الفاظ tri اور angle سے بنا ہے۔ Tri کا مطلب تین ہے لہٰذا یہ ایسی شکل ہے جس کے تین زاویے ہوں۔ مثلث ABC کو دیکھیں۔ خط مستقیم $\overline{AB}$، $\overline{BC}$ اور $\overline{AC}$ مثلث ABC کی تین اطراف کہلاتے ہیں۔ ∠ABC، ∠ACB، ∠BAC تین زاویے ہیں۔ مثلث کے زاویوں کا مجموعہ 180° ہوتا ہے۔ مثلث کو علامت △ سے ظاہر کیا جاتا ہے۔ لہٰذا یہ △ABC ہے۔ || هغه جیومیټري شکل چې 3 ضلعې او درې زاویې ولري مثلث بلل کېږي. مثلث ټکی د دوو ټکو tri او angle څخه جوړ شوی. Tri معنا درې ده نو دا داسې شکل دی چې درې زاویې لري. مثلث ABC ته وګورئ. مستقیمې کرښې $\overline{AB}$، $\overline{BC}$ او $\overline{AC}$ د ABC مثلث درې ضلعې بلل کېږي. ∠ABC، ∠ACB، ∠BAC درې زاویې دي. د مثلث د زاویو مجموعه 180° وي. مثلث په △ نښه ښودل کېږي. نو دا △ABC دی.
+svg Triangle ABC with its three angles marked || مثلث ABC کے تین زاویے نشان زد || د ABC مثلث درې زاویې په نښه شوې
+<svg viewBox="0 0 190 150" width="190" role="img" aria-label="Triangle ABC with the three interior angles shaded yellow; A is at the top" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">
+<polygon points="95,14 20,130 170,130" fill="#fff" stroke="#0f172a" stroke-width="1.5"/>
+<path d="M95 14L88 28A15 15 0 0 0 102 28Z" fill="#facc15"/><path d="M20 130L36 130A16 16 0 0 0 30 116Z" fill="#facc15"/><path d="M170 130L154 130A16 16 0 0 1 160 116Z" fill="#facc15"/>
+<text x="90" y="10">A</text><text x="6" y="140">B</text><text x="172" y="140">C</text>
+</svg>
+endsvg
+### Types of Triangles || مثلث کی اقسام || د مثلثونو ډولونه
+p Triangles are classified in two ways: || مثلثوں کی دو طریقوں سے درجہ بندی کی جاتی ہے: || مثلثونه په دوو لارو ډلبندي کېږي:
+- a) With respect to their sides (equilateral triangle, isosceles triangle, scalene triangle). || a) اطراف کے لحاظ سے (مساوی الاضلاع مثلث، متساوی الساقین مثلث، مختلف الاضلاع مثلث)۔ || a) د ضلعو له مخې (متساوي الاضلاع مثلث، متساوي الساقین مثلث، مختلف الاضلاع مثلث).
+- b) With respect to their angles (acute angled triangle, obtuse angled triangle, right angled triangle). || b) زاویوں کے لحاظ سے (حاده زاویہ مثلث، منفرجہ زاویہ مثلث، قائمہ زاویہ مثلث)۔ || b) د زاویو له مخې (حاده زاویه مثلث، منفرجه زاویه مثلث، قایمه زاویه مثلث).

@@ -1,0 +1,23 @@
+@printed 123
+@issue Example 3's side notes print "← −3x² (x − 5)" and "← −3x (x − 5)" (the second should be −4x; the first's sign is shown on the subtracted line); kept as printed. The book draws cancellation strokes through the subtracted terms; the rows are given without strokes.
+@issue Example 4's working is printed with like terms in columns; it is given here right-aligned row by row.
+example 3
+p Divide $(3x^3 - 19x^2 + 10x + 50)$ by $(x - 5)$ || $(3x^3 - 19x^2 + 10x + 50)$ کو $(x - 5)$ سے تقسیم کریں || $(3x^3 - 19x^2 + 10x + 50)$ پر $(x - 5)$ ووېشئ
+pdiv d=x − 5 | q=3x² − 4x − 10 | n=3x³ − 19x² + 10x + 50 | -±3x³ ∓ 15x²___________ >> ← −3x² (x − 5) | − 4x² + 10x + 50 | -∓4x² ∓ 20x_____ >> ← −3x (x − 5) | − 10x + 50 | -− 10x + 50 >> ← −10x (x − 5) | 0
+m Thus, $(3x^3 - 19x^2 + 10x + 50) \div (x - 5) = (3x^2 - 4x - 10)$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p When the division of polynomials is not exact, the divisor and the quotient are not the factors of the dividend. || جب کثیر رقمیوں کی تقسیم مکمل نہ ہو تو مقسوم علیہ اور خارج قسمت مقسوم کے اجزائے ضربی نہیں ہوتے۔ || کله چې د څو حدي افادو وېش بشپړ نه وي، وېشونکی او خارج قسمت د مقسوم عاملونه نه دي.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p We stop the process of division when the degree of the remainder is smaller than the divisor. || جب باقی کا درجہ مقسوم علیہ سے کم ہو تو ہم تقسیم کا عمل روک دیتے ہیں۔ || کله چې د پاتې درجه له وېشونکي څخه کوچنۍ شي، د وېش عمل ودروو.
+endbox
+example 4
+p Divide $x^5 - y^5$ by $x - y$ || $x^5 - y^5$ کو $x - y$ سے تقسیم کریں || $x^5 - y^5$ پر $x - y$ ووېشئ
+pdiv d=x − y | q=x⁴ + x³y + x²y² + xy³ + y⁴ | n=x⁵         − y⁵ | -±x⁵ ∓ x⁴y________ >> ← x⁴(x − y) | x⁴y − y⁵ | -±x⁴y ∓ x³y²_____ >> ← x³y(x − y) | x³y² − y⁵ | -±x³y² ∓ x²y³____ >> ← x²y²(x − y) | x²y³ − y⁵ | -±x²y³ ∓ xy⁴_____ >> ← xy³(x − y) | xy⁴ − y⁵ | -±xy⁴ ∓ y⁵ >> ← y⁴(x − y) | 0
+m Thus, $(x^5 - y^5) \div (x - y) = (x^4 + x^3y + x^2y^2 + xy^3 + y^4)$
+p Note that: || غور کریں کہ: || پام وکړئ چې:
+qp 1 | Only like terms can be written one below the other. || صرف متشابہ ارکان ایک دوسرے کے نیچے لکھے جا سکتے ہیں۔ || یوازې ورته حدونه یو د بل لاندې لیکل کېدای شي.
+qp 2 | It is necessary to arrange the terms in descending order with respect to $x$. That is why $x^4y$ has been written first instead of $-y^5$ in the third line. The same principle has been used in the 5th, 7th and the 9th lines. || ضروری ہے کہ ارکان کو $x$ کے لحاظ سے نزولی ترتیب میں رکھا جائے۔ اسی لیے تیسری سطر میں $-y^5$ کی بجائے $x^4y$ پہلے لکھا گیا ہے۔ یہی اصول پانچویں، ساتویں اور نویں سطر میں استعمال کیا گیا ہے۔ || اړینه ده چې حدونه د $x$ په اړه په نزولي ترتیب کې کېښودل شي. له همدې امله په درېیمه کرښه کې د $-y^5$ پر ځای $x^4y$ لومړی لیکل شوی. همدا اصل په پنځمه، اوومه او نهمه کرښه کې کارول شوی.
+endexample
+p Sometimes, while dividing a polynomial by another polynomial, we obtain a certain non-zero polynomial whose degree is smaller than that of the divisor. Hence the process of division can't be kept continued any more. || کبھی کبھی ایک کثیر رقمی کو دوسری سے تقسیم کرتے ہوئے ہمیں کوئی غیر صفر کثیر رقمی ملتی ہے جس کا درجہ مقسوم علیہ کے درجے سے کم ہوتا ہے۔ لہٰذا تقسیم کا عمل مزید جاری نہیں رکھا جا سکتا۔ || کله ناکله، د یوې څو حدي افادې د بلې پر وېشلو کې، یوه غیر صفري څو حدي افاده ترلاسه کوو چې درجه یې د وېشونکي له درجې کوچنۍ وي. نو د وېش عمل نور نه شي دوام کولی.

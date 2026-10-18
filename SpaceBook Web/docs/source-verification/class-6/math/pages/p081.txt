@@ -1,0 +1,49 @@
+@printed 79
+q 3 | In math test Anum got 40 marks out of 50. And in English test she got 35 marks out of 60. In which subject she got less percentage marks. || ریاضی کے ٹیسٹ میں انعم نے 50 میں سے 40 نمبر حاصل کیے۔ اور انگریزی کے ٹیسٹ میں 60 میں سے 35 نمبر۔ اس نے کس مضمون میں کم فیصد نمبر حاصل کیے؟ || د ریاضي په ازموینه کې انعم له 50 څخه 40 نمرې واخیستې. او د انګلیسي په ازموینه کې له 60 څخه 35. په کوم مضمون کې یې کمه سلنه نمرې واخیستې؟
+solution English (≈ 58.33%) is less than Math (80%)
+suse comparepct 40 out of 50 and 35 out of 60
+ss So she got the lower percentage in English. || لہٰذا اس کے انگریزی میں کم فیصد نمبر آئے۔ || نو په انګلیسي کې یې کمه سلنه واخیسته.
+endsolution
+q 4 | Mahad got 12 out of 15 marks, Hadia got 14 out of 15 marks and Samiha got 11 out of 15 marks in math weekly test. Compare their marks by finding percentage. || ریاضی کے ہفتہ وار ٹیسٹ میں مہد نے 15 میں سے 12، ہادیہ نے 15 میں سے 14 اور سمیحہ نے 15 میں سے 11 نمبر حاصل کیے۔ فیصد معلوم کر کے ان کے نمبروں کا موازنہ کریں۔ || د ریاضي په اونیزه ازموینه کې مهد له 15 څخه 12، هادیې له 15 څخه 14 او سمیحې له 15 څخه 11 نمرې واخیستې. سلنه معلومه کړئ او نمرې یې پرتله کړئ.
+solution Hadia ≈ 93.33% > Mahad 80% > Samiha ≈ 73.33%
+suse comparepct 12 out of 15 and 14 out of 15 and 11 out of 15
+ss Order: Hadia (14 out of 15) got the highest, then Mahad, then Samiha. || ترتیب: ہادیہ (15 میں سے 14) سب سے آگے، پھر مہد، پھر سمیحہ۔ || ترتیب: هادیه (له 15 څخه 14) تر ټولو لوړه، بیا مهد، بیا سمیحه.
+endsolution
+q 5 | Omair's notebook has 82 empty pages out of 120 pages. Sara's notebook has 42 empty pages out of 54 pages. Compare by finding percentage to tell who has more empty pages in his/her notebook. || عمیر کی کاپی کے 120 صفحات میں سے 82 خالی ہیں۔ سارہ کی کاپی کے 54 صفحات میں سے 42 خالی ہیں۔ فیصد معلوم کر کے بتائیں کہ کس کی کاپی میں زیادہ خالی صفحات ہیں۔ || د عمیر په کتابچه کې له 120 پاڼو 82 تشې دي. د سارا په کتابچه کې له 54 پاڼو 42 تشې دي. سلنه معلومه کړئ او ووایاست چې د چا په کتابچه کې ډېرې تشې پاڼې دي.
+solution Sara (≈ 77.78%) > Omair (≈ 68.33%)
+suse comparepct 82 out of 120 and 42 out of 54
+ss So Sara has the greater percentage of empty pages. || لہٰذا سارہ کے خالی صفحات کا فیصد زیادہ ہے۔ || نو د سارا د تشو پاڼو سلنه ډېره ده.
+endsolution
+endexercise
+@sec 4.3 | Increase or decrease a quantity by a given percentage || کسی مقدار کو دیے گئے فیصد سے بڑھانا یا گھٹانا || یو مقدار په ورکړل شوې سلنه زیاتول یا کمول
+# 4.3 Increase or decrease a quantity by a given percentage || 4.3 کسی مقدار کو دیے گئے فیصد سے بڑھانا یا گھٹانا || 4.3 یو مقدار په ورکړل شوې سلنه زیاتول یا کمول
+example 1 | Adnan bought a shirt in Rs 900. After some days the price of the shirt increased by 5%. How much amount increase? What is the price of the shirt now? || عدنان نے 900 روپے میں ایک قمیص خریدی۔ کچھ دنوں بعد قمیص کی قیمت 5% بڑھ گئی۔ کتنی رقم کا اضافہ ہوا؟ اب قمیص کی قیمت کیا ہے؟ || عدنان یو کمیس په 900 روپیو واخیست. څو ورځې وروسته د کمیس بیه 5% لوړه شوه. څومره زیاته شوه؟ اوس د کمیس بیه څومره ده؟
+p **Solution:** || **حل:** || **حل:**
+table
+tr | Price of the shirt | $=$ Rs 900
+tr | Percentage increase | $= 5\%$
+tr | Increase in price | $= 5\%$ of 900
+tr |  | $= \frac{5}{100} \times 900$
+tr |  | $=$ Rs 45
+endtable
+p So the price of the shirt increased by Rs 45. || لہٰذا قمیص کی قیمت 45 روپے بڑھ گئی۔ || نو د کمیس بیه 45 روپۍ لوړه شوه.
+p Now we find the new price of the shirt. || اب ہم قمیص کی نئی قیمت معلوم کرتے ہیں۔ || اوس د کمیس نوې بیه معلوموو.
+m Price of the shirt now $= 900 + 45 =$ Rs 945
+p So, the price of the shirt is increased from Rs 900 to Rs 945. || لہٰذا قمیص کی قیمت 900 روپے سے بڑھ کر 945 روپے ہو گئی۔ || نو د کمیس بیه له 900 روپیو 945 روپیو ته لوړه شوه.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find 7% increase in price of rice that is Rs 146. || چاول کی قیمت 146 روپے ہے، اس میں 7% اضافہ معلوم کریں۔ || د وريجو بیه 146 روپۍ ده، په هغې کې 7% زیاتوالی معلوم کړئ.
+endbox
+example 2 | The cost of the petrol per litre is Rs 160. || پیٹرول کی فی لیٹر قیمت 160 روپے ہے۔ || د پټرول د هر لیټر بیه 160 روپۍ ده.
+qp a | If the price of the petrol is increased by 5%, find the increased price of petrol. || اگر پیٹرول کی قیمت 5% بڑھ جائے تو پیٹرول کی بڑھی ہوئی قیمت معلوم کریں۔ || که د پټرول بیه 5% لوړه شي، د پټرول لوړه شوې بیه معلومه کړئ.
+qp b | If the price of petrol decreased by 3% of the new price, find the decreased price of the petrol. || اگر پیٹرول کی قیمت نئی قیمت کے 3% کم ہو جائے تو پیٹرول کی کم شدہ قیمت معلوم کریں۔ || که د پټرول بیه د نوې بیې 3% کمه شي، د پټرول کمه شوې بیه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+p To find the increase in price of the petrol, first we find the percentage increase in petrol price. || پیٹرول کی قیمت میں اضافہ معلوم کرنے کے لیے پہلے ہم پیٹرول کی قیمت میں فیصد اضافہ معلوم کرتے ہیں۔ || د پټرول په بیه کې د زیاتوالي د معلومولو لپاره لومړی د پټرول په بیه کې سلنیز زیاتوالی معلوموو.
+table
+tr | Price of petrol | $=$ Rs 160
+tr | Percentage increase | $= 5\%$
+tr | Increase price of petrol | $= 5\%$ of Rs 160
+tr |  | $= \frac{5}{100} \times 160$
+tr |  | $= 8$
+endtable
+m New price of petrol $=$ Rs 160 $+$ Rs 8 $=$ Rs 168

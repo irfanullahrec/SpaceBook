@@ -1,0 +1,27 @@
+@printed 54
+@status lesson
+### Example 2: || مثال 2: || بېلګه 2:
+p **Situation:** Hamza loves to eat french fries; Potatoes are a good source of potassium and carbs but his mother is more conscious about his health because he is too bulky. || **صورتِ حال:** حمزہ کو فرنچ فرائز بہت پسند ہیں؛ آلو پوٹاشیم اور کاربوہائیڈریٹس کا اچھا ذریعہ ہیں، لیکن اس کی امی اس کی صحت کے بارے میں فکرمند ہیں کیونکہ وہ بہت موٹا ہے۔ || **حالت:** حمزه کچالو کباب (فرنچ فرایز) ډېر خوښوي؛ کچالو د پوټاشیم او کاربوهایډریټ ښه سرچینه ده، خو مور یې د روغتیا په اړه اندېښمنه ده ځکه چې ډېر چاغ دی.
+@deco Illustration of a knife cutting a potato into chips on a chopping board.
+p The above situation is elaborated following the steps of problem solving. || اوپر کی صورتِ حال کو مسئلہ حل کرنے کے مراحل کے مطابق واضح کیا گیا ہے۔ || پورتنی حالت د ستونزې د حل د ګامونو له مخې تشریح شوی.
+p **(1) Problem Identification** — How to fry perfect french fries with low calories and suitable for bulky people? || **(1) مسئلے کی شناخت** — کم کیلوریز والے، موٹے لوگوں کے لیے موزوں بہترین فرنچ فرائز کیسے تلے جائیں؟ || **(1) د ستونزې پېژندنه** — څنګه لږ کالوري لرونکي او د چاغو خلکو لپاره مناسب کچالو کباب پاخه کړو؟
+p **(2) Problem Decomposition** || **(2) مسئلے کی تقسیم** || **(2) د ستونزې ټوټه کول**
+- Sub-problem 1: What ingredients are required to prepare fries? || ذیلی مسئلہ 1: فرائز بنانے کے لیے کون سے اجزا درکار ہیں؟ || فرعي ستونزه 1: کوم اجزا اړین دي؟
+- Sub-problem 2: How to prepare the recipe? || ذیلی مسئلہ 2: ترکیب کیسے تیار کی جائے؟ || فرعي ستونزه 2: ترکیب څنګه تیار کړو؟
+- Sub-problem 3: How to cook? || ذیلی مسئلہ 3: کیسے پکایا جائے؟ || فرعي ستونزه 3: څنګه پاخه کړو؟
+- Sub-problem 4: What to offer along with fries to balance the body fat? || ذیلی مسئلہ 4: جسم کی چربی متوازن رکھنے کے لیے فرائز کے ساتھ کیا پیش کیا جائے؟ || فرعي ستونزه 4: د بدن د غوړ د توازن لپاره ورسره څه ورکړو؟
+p Each subproblem needs to be solved separately. Each sub-solution, when combined, should come up with a collective solution of the problem identified. Suppose we take sub-problem 3 to solve, that is, **'how to cook?'.** || ہر ذیلی مسئلہ الگ سے حل کرنا ہوتا ہے۔ تمام ذیلی حل مل کر شناخت شدہ مسئلے کا مجموعی حل بنتے ہیں۔ فرض کریں ہم ذیلی مسئلہ 3، یعنی **’کیسے پکایا جائے؟‘** حل کرتے ہیں۔ || هره فرعي ستونزه جلا حلېږي؛ ټول فرعي حلونه یوځای د اصلي ستونزې ټولیز حل جوړوي. فرض کړئ چې فرعي ستونزه 3، یعنې **'څنګه پاخه کړو؟'** حلوو.
+p **(3) Potential Solutions for sub-problem 3** || **(3) ذیلی مسئلہ 3 کے ممکنہ حل** || **(3) د فرعي ستونزې 3 ممکنه حلونه**
+- Fry using stove and frying pan || چولہے اور فرائی پین میں تلنا || په بخارۍ او تابه کې ورېتول
+- Fry using an air-fryer || ایئر فرائر میں تلنا || په هوايي فرایر کې پخول
+- Fry using the deep-fryer || ڈیپ فرائر میں تلنا || په ډیپ فرایر کې ورېتول
+@deco Pictures of a frying pan on a gas flame, an air fryer and a deep fryer.
+svg Inputs (Ingredients) → Process (Follow Recipe) → Output (French Fries) || ان پٹ (اجزا) ← عمل (ترکیب پر عمل) ← آؤٹ پٹ (فرنچ فرائز) || ننوت (اجزا) ← بهیر (ترکیب) ← وتون (کچالو کباب)
+<svg viewBox="0 0 480 90" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" role="img" aria-label="Input process output">
+<defs><marker id="ipo1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#db2777"/></marker></defs>
+<g fill="#7dd3fc" stroke="#0284c7" stroke-width="2"><rect x="10" y="25" width="130" height="55" rx="12"/><rect x="175" y="25" width="130" height="55" rx="12"/><rect x="340" y="25" width="130" height="55" rx="12"/></g>
+<g fill="#fff" stroke="#0284c7" stroke-width="2"><rect x="40" y="8" width="70" height="26" rx="10"/><rect x="205" y="8" width="70" height="26" rx="10"/><rect x="370" y="8" width="70" height="26" rx="10"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="75" y="26">Inputs</text><text x="240" y="26">Process</text><text x="405" y="26" font-weight="bold">Output</text><text x="75" y="63">Ingredients</text><text x="240" y="63">Follow Recipe</text><text x="405" y="63">French Fries</text></g>
+<g stroke="#db2777" stroke-width="4" marker-end="url(#ipo1)"><line x1="145" y1="52" x2="168" y2="52"/><line x1="310" y1="52" x2="333" y2="52"/></g>
+</svg>
+endsvg

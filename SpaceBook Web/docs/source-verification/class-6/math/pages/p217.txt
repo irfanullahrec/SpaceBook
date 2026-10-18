@@ -1,0 +1,40 @@
+@printed 215
+qp f | What is the difference in class strength of grade 4 and Grade 5 in 2021? || 2021 میں چوتھی اور پانچویں جماعت کی تعداد کا فرق کیا ہے؟ || په 2021 کې د څلورم او پنځم ټولګي د شمېر توپیر څومره دی؟
+sol 5 (40 − 35) ## Grade 5 had 40 and Grade 4 had 35 in 2021. || 2021 میں جماعت 5 میں 40 اور جماعت 4 میں 35 تھے۔ || په 2021 کې پنځم ټولګي 40 او څلورم ټولګي 35 درلودل.
+qp g | What is the difference in class strength of grade 1 and Grade 2 in 2020? || 2020 میں پہلی اور دوسری جماعت کی تعداد کا فرق کیا ہے؟ || په 2020 کې د لومړي او دوهم ټولګي د شمېر توپیر څومره دی؟
+sol 5 (30 − 25) ## Grade 1 had 30 and Grade 2 had 25 in 2020. || 2020 میں جماعت 1 میں 30 اور جماعت 2 میں 25 تھے۔ || په 2020 کې لومړي ټولګي 30 او دوهم ټولګي 25 درلودل.
+qp h | Which year has the greatest number of grade 3 students? || کس سال تیسری جماعت کے طلبہ سب سے زیادہ تھے؟ || په کوم کال کې د درېیم ټولګي زده کوونکي تر ټولو ډېر وو؟
+sol 2020 ## Grade 3: 2019 = 25, 2020 = 40, 2021 = 30. || جماعت 3: 2019 = 25، 2020 = 40، 2021 = 30۔ || درېیم ټولګی: 2019 = 25، 2020 = 40، 2021 = 30.
+qp i | Which year has the least number of grade 2 students? || کس سال دوسری جماعت کے طلبہ سب سے کم تھے؟ || په کوم کال کې د دوهم ټولګي زده کوونکي تر ټولو لږ وو؟
+sol 2020 ## Grade 2: 2019 = 35, 2020 = 25, 2021 = 30. || جماعت 2: 2019 = 35، 2020 = 25، 2021 = 30۔ || دوهم ټولګی: 2019 = 35، 2020 = 25، 2021 = 30.
+qp j | In which year the greatest number of students were there in Grade 4? || کس سال چوتھی جماعت میں سب سے زیادہ طلبہ تھے؟ || په کوم کال کې په څلورم ټولګي کې تر ټولو ډېر زده کوونکي وو؟
+sol 2020 ## Grade 4: 2019 = 35, 2020 = 45, 2021 = 35. || جماعت 4: 2019 = 35، 2020 = 45، 2021 = 35۔ || څلورم ټولګی: 2019 = 35، 2020 = 45، 2021 = 35.
+qp k | In which year the least number of students were there in Grade 5? || کس سال پانچویں جماعت میں سب سے کم طلبہ تھے؟ || په کوم کال کې په پنځم ټولګي کې تر ټولو لږ زده کوونکي وو؟
+sol 2020 ## Grade 5: 2019 = 40, 2020 = 35, 2021 = 40. || جماعت 5: 2019 = 40، 2020 = 35، 2021 = 40۔ || پنځم ټولګی: 2019 = 40، 2020 = 35، 2021 = 40.
+endexercise
+@sec 11.2 | Pie Graph || پائی گراف || دایروي ګراف
+# 11.2 Pie Graph || 11.2 پائی گراف || 11.2 دایروي ګراف
+p Pie graphs are a familiar way to display what information is composed of or divided into parts. In a Pie chart, different classes are shown in different sectors of a complete circle: || پائی گراف یہ دکھانے کا ایک جانا پہچانا طریقہ ہے کہ معلومات کن حصوں پر مشتمل ہیں یا کن حصوں میں تقسیم ہیں۔ پائی چارٹ میں مختلف اقسام مکمل دائرے کے مختلف قطاعوں میں دکھائی جاتی ہیں: || دایروي ګراف د دې ښودلو یوه پېژندل شوې لاره ده چې معلومات له کومو برخو جوړ یا په کومو برخو وېشل شوي. په دایروي چارټ کې بېلابېلې کټګورۍ د یوې بشپړې دایرې په بېلابېلو قطاعونو کې ښودل کېږي:
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- What is meant by data and organization of data? || ڈیٹا اور ڈیٹا کی ترتیب سے کیا مراد ہے؟ || له معلوماتو او د معلوماتو له تنظیم څه مطلب دی؟
+- What is bar graph? How many types of bar graph are there? || بار گراف کیا ہے؟ بار گراف کی کتنی اقسام ہیں؟ || میله ییز ګراف څه دی؟ میله ییز ګراف څو ډوله دی؟
+- How can we represent data by using bar graph? || ہم بار گراف کی مدد سے ڈیٹا کیسے ظاہر کر سکتے ہیں؟ || د میله ییز ګراف په مرسته معلومات څنګه ښودلی شو؟
+endbox
+## How to Construct a Pie Graph: || پائی گراف کیسے بنائیں: || دایروي ګراف څنګه جوړ کړو:
+p To construct a **pie graph**, we draw a circle with any radius. As, we know that the measurement of the total angles of a circle is 360°. In order to calculate the angle of different sectors or the measurement of central angle, we divide the numbers of observations of each class by the total number of observations in all classes and then multiply by 360°. i.e. || **پائی گراف** بنانے کے لیے ہم کسی بھی رداس کا دائرہ کھینچتے ہیں۔ جیسا کہ ہم جانتے ہیں کہ دائرے کے کل زاویوں کی پیمائش 360° ہے۔ مختلف قطاعوں کا زاویہ یا مرکزی زاویے کی پیمائش معلوم کرنے کے لیے ہم ہر قسم کے مشاہدات کی تعداد کو تمام اقسام کے کل مشاہدات سے تقسیم کرتے ہیں اور پھر 360° سے ضرب دیتے ہیں، یعنی || د **دایروي ګراف** د جوړولو لپاره د هرې شعاع یوه دایره رسموو. لکه څنګه چې پوهېږو د دایرې د ټولو زاویو اندازه 360° ده. د بېلابېلو قطاعونو د زاویې یا د مرکزي زاویې د اندازې د موندلو لپاره د هرې کټګورۍ د مشاهدو شمېر د ټولو کټګوریو د مشاهدو پر ټول شمېر وېشو او بیا په 360° کې ضربوو، یعنې
+m Angle of the sector $= \dfrac{\text{number of observations of a class}}{\text{total number of observations in all classes}} \times 360^\circ$
+box info | Maths History || ریاضی کی تاریخ || د ریاضي تاریخ
+p William Playfair (1759-1823), a Scottish engineer, introduced pie graph in 1801. || ولیم پلے فیئر (1759-1823)، ایک اسکاٹش انجینئر، نے 1801 میں پائی گراف متعارف کرایا۔ || ویلیم پلې فېر (1759-1823)، یو سکاټلنډي انجنیر، په 1801 کې دایروي ګراف معرفي کړ.
+endbox
+p The procedure is illustrated by the example given below. || طریقۂ کار نیچے دی گئی مثال سے سمجھایا گیا ہے۔ || کړنلاره په لاندې بېلګه کې ښودل شوې.
+example 1 | The following data gives the expenditure of a family on different items. || درج ذیل ڈیٹا ایک خاندان کے مختلف اشیاء پر اخراجات دکھاتا ہے۔ || لاندې معلومات د یوې کورنۍ پر بېلابېلو توکو لګښتونه ښيي.
+table
+th | Items || اشیاء || توکي | Expenditures (Rs.) || اخراجات (روپے) || لګښتونه (روپۍ)
+tr | House rent | 24900
+tr | Food | 30000
+tr | Education | 32100
+tr | Clothing | 21000
+endtable
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The sum of central angles of a Pie graph must be equal to 360°. || پائی گراف کے مرکزی زاویوں کا مجموعہ 360° کے برابر ہونا چاہیے۔ || د دایروي ګراف د مرکزي زاویو مجموعه باید له 360° سره برابره وي.
+endbox

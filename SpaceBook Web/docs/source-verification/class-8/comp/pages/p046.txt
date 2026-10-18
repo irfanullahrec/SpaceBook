@@ -1,0 +1,28 @@
+@printed 42
+@issue The two loop panels are captioned "a: Finite Loop" and "b: Infinite Loop"; the second panel's last line is printed "Line 6 End." (without a full stop after "6") and "Line 6." is used twice; kept as printed.
+### 3.2.4 Repeat Loops || 3.2.4 ریپیٹ لوپس || 3.2.4 تکراري (Repeat) لوپونه
+p Loops, means to repeat an action again and again. While using loops in algorithms, Loop Repeat is used to perform this action. || لوپس کا مطلب کسی عمل کو بار بار دہرانا ہے۔ الگورتھمز میں لوپس استعمال کرتے وقت یہ عمل انجام دینے کے لیے Loop Repeat استعمال ہوتا ہے۔ || لوپونه د یوه عمل بیا بیا تکرارولو معنا لري. په الګوریتمونو کې د لوپونو په کارولو سره دا عمل ترسره کولو لپاره Loop Repeat کارول کېږي.
+p A repeat loop is executed at least once. || ریپیٹ لوپ کم از کم ایک بار ضرور چلتا ہے۔ || تکراري لوپ لږ تر لږه یو ځل اجرا کېږي.
+p In the next step when the pseudocode needs to be executed multiple times. We simply enclose the code in-between repeat and 'Until <condition>'. This way, the said task will be run iteratively till the <condition> is not met. If the condition is met in the very first iteration, the loop will terminate but even then the set of code will be executed at least once. || اگلے مرحلے میں جب سوڈو کوڈ کو کئی بار چلانا ہو تو ہم کوڈ کو repeat اور 'Until <condition>' کے درمیان رکھ دیتے ہیں۔ اس طرح مذکورہ کام اس وقت تک بار بار چلتا رہے گا جب تک <condition> پوری نہیں ہو جاتی۔ اگر شرط پہلی ہی تکرار میں پوری ہو جائے تو لوپ ختم ہو جائے گا لیکن تب بھی کوڈ کا مجموعہ کم از کم ایک بار ضرور چلے گا۔ || په راتلونکي ګام کې کله چې سوډو کوډ باید څو ځله اجرا شي. موږ یوازې کوډ د repeat او 'Until <condition>' ترمنځ وېنو. په دې ډول ویل شوی کار به تر هغه تکراري چلېږي چې شرط پوره نه شي. که شرط په لومړي تکرار کې پوره شي لوپ به پای ته ورسېږي خو بیا هم د کوډ ټولګه به لږ تر لږه یو ځل اجرا شي.
+p On the other hand, if we want the set of code to be run for indefinite times or in a continuous fashion then forever loops is used. || دوسری طرف اگر ہم چاہیں کہ کوڈ کا مجموعہ غیر معینہ بار یا مسلسل چلتا رہے تو فار ایور لوپس استعمال ہوتا ہے۔ || بل خوا که موږ وغواړو چې د کوډ ټولګه نامعلوم ځله یا په دوامداره بڼه اجرا شي نو forever لوپونه کارول کېږي.
+box code | a: Finite Loop || a: محدود لوپ || a: محدود لوپ
+m Line 0. Start
+m Line 1. some lines of pseudocode...
+m Line 2. Loop Repeat:
+m Line 3.     pseudocode...
+m Line 4.     pseudocode...
+m Line 5.     pseudocode...
+m Line 6. Until <condition>
+m Line 7. End
+endbox
+box code | b: Infinite Loop || b: لامحدود لوپ || b: بې پایه لوپ
+m Line 0. Start
+m Line 1. some lines of pseudocode...
+m Line 2.     Loop Forever:
+m Line 3.         pseudocode...
+m Line 4.         pseudocode...
+m Line 5.         pseudocode...
+m Line 6.     End loop
+m Line 6  End.
+endbox
+p Example 5: The following pseudocode generates average of the marks of five subjects. The marks of each subject are obtained and it is added in the marks of the next subject. It continues until the fifth subject and when marks for all the five subjects are obtained. It is divided by five. || مثال 5: درج ذیل سوڈو کوڈ پانچ مضامین کے نمبروں کا اوسط نکالتا ہے۔ ہر مضمون کے نمبر حاصل کیے جاتے ہیں اور انھیں اگلے مضمون کے نمبروں میں جمع کیا جاتا ہے۔ یہ پانچویں مضمون تک جاری رہتا ہے اور جب پانچوں مضامین کے نمبر حاصل ہو جائیں تو اسے پانچ سے تقسیم کیا جاتا ہے۔ || بېلګه ۵: لاندې سوډو کوډ د پنځو مضمونونو د نمبرو اوسط جوړوي. د هر مضمون نمبرې ترلاسه کېږي او په راتلونکي مضمون کې اضافه کېږي. دا تر پنځم مضمون پورې دوام کوي او کله چې د ټولو پنځو مضمونونو نمبرې ترلاسه شي نو پر پنځو وېشل کېږي.

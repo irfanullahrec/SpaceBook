@@ -1,0 +1,27 @@
+@printed 94
+p They are disjoint sets because they have no elements in common. i.e. $A \cap B = \{\}$ or $\varnothing$. || یہ غیر مشترک سیٹ ہیں کیونکہ ان میں کوئی مشترک رکن نہیں۔ یعنی $A \cap B = \{\}$ یا $\varnothing$۔ || دا جلا سېټونه دي ځکه چې هېڅ ګډ غړی نه لري. یعنې $A \cap B = \{\}$ یا $\varnothing$.
+p Let's consider two sets C = {3, 5, 7} and D = {7, 9, 11}. They are not disjoint sets because they have 7 as a common element. i.e. $C \cap D = \{7\}$. || آئیے دو سیٹ C = {3, 5, 7} اور D = {7, 9, 11} لیں۔ یہ غیر مشترک سیٹ نہیں کیونکہ ان میں 7 مشترک رکن ہے۔ یعنی $C \cap D = \{7\}$۔ || راځئ دوه سېټونه C = {3, 5, 7} او D = {7, 9, 11} واخلو. دا جلا سېټونه نه دي ځکه چې 7 پکې ګډ غړی دی. یعنې $C \cap D = \{7\}$.
+p **b) Overlapping Sets** || **b) مشترک سیٹ** || **b) ګډ سېټونه**
+p Two sets are said to be overlapping sets if they contain at least one element in common. For example two sets A = {1, 2, 3, 4} and B = {3, 5, 7} are said to be overlapping sets because they have 3 as a common element. || دو سیٹوں کو مشترک (overlapping) سیٹ کہتے ہیں اگر ان میں کم از کم ایک مشترک رکن ہو۔ مثلاً دو سیٹ A = {1, 2, 3, 4} اور B = {3, 5, 7} مشترک سیٹ ہیں کیونکہ ان میں 3 مشترک رکن ہے۔ || دوه سېټونه ګډ (overlapping) بلل کېږي که لږ تر لږه یو ګډ غړی ولري. د بېلګې په توګه دوه سېټونه A = {1, 2, 3, 4} او B = {3, 5, 7} ګډ سېټونه دي ځکه چې 3 پکې ګډ غړی دی.
+example | If X = {1, 2, 3} and Y = {−3, −2, −1, 0, 1, 2, 3}, find if these are overlapping sets or disjoint sets. || اگر X = {1, 2, 3} اور Y = {−3, −2, −1, 0, 1, 2, 3} ہوں تو معلوم کریں کہ یہ مشترک سیٹ ہیں یا غیر مشترک۔ || که X = {1, 2, 3} او Y = {−3, −2, −1, 0, 1, 2, 3} وي، معلوم کړئ چې دا ګډ سېټونه دي که جلا.
+p **Solution:** || **حل:** || **حل:**
+p Write the above sets in tabular form. || اوپر والے سیٹوں کو جدولی صورت میں لکھیں۔ || پورته سېټونه په جدولي بڼه ولیکئ.
+eq \begin{aligned} X &= \{1, 2, 3\} \\ Y &= \{-3, -2, -1, 0, 1, 2, 3\} \\ X \cap Y &= \{1, 2, 3\} \end{aligned}
+p So set X and Y are overlapping sets. || لہٰذا سیٹ X اور Y مشترک سیٹ ہیں۔ || نو سېټونه X او Y ګډ سېټونه دي.
+endexample
+@issue Example prints Y as "{−3, −2, −1; 0, 1, 2, 3}" with a semicolon; normalised to a comma.
+### 2. Universal Set and Complement of a Set || 2. عالمگیر سیٹ اور سیٹ کا تکملہ || 2. نړیوال سېټ او د سېټ متمم
+p **a) Universal Set** || **a) عالمگیر سیٹ** || **a) نړیوال سېټ**
+p A universal set is the set of all elements of the sets which are under consideration in a particular context. The universal set is denoted by the capital letter "U". In other words, we can say that all the sets which are under consideration are the subsets of the universal set. Let's consider the set of whole numbers, the set of composite numbers and the set of prime numbers. || عالمگیر سیٹ کسی خاص سیاق میں زیرِ غور سیٹوں کے تمام ارکان کا سیٹ ہوتا ہے۔ عالمگیر سیٹ کو بڑے حرف "U" سے ظاہر کیا جاتا ہے۔ دوسرے الفاظ میں ہم کہہ سکتے ہیں کہ زیرِ غور تمام سیٹ عالمگیر سیٹ کے ذیلی سیٹ ہوتے ہیں۔ آئیے مکمل اعداد کا سیٹ، مرکب اعداد کا سیٹ اور مفرد اعداد کا سیٹ لیں۔ || نړیوال سېټ په یوه ټاکلي سیاق کې د تر غور لاندې سېټونو د ټولو غړو سېټ دی. نړیوال سېټ په لوی توري "U" ښودل کېږي. په بل عبارت، ویلی شو چې ټول تر غور لاندې سېټونه د نړیوال سېټ فرعي سېټونه دي. راځئ د بشپړو عددونو سېټ، د مرکبو عددونو سېټ او د لومړنیو عددونو سېټ په پام کې ونیسو.
+p We can see that the set of whole numbers contains all the elements of the remaining two sets. So, in this case, the set of whole numbers is the universal set. || ہم دیکھ سکتے ہیں کہ مکمل اعداد کے سیٹ میں باقی دونوں سیٹوں کے تمام ارکان شامل ہیں۔ لہٰذا اس صورت میں مکمل اعداد کا سیٹ عالمگیر سیٹ ہے۔ || لیدلی شو چې د بشپړو عددونو سېټ د پاتې دوو سېټونو ټول غړي لري. نو په دې حالت کې د بشپړو عددونو سېټ نړیوال سېټ دی.
+p **b) Complement of a Set** || **b) سیٹ کا تکملہ** || **b) د سېټ متمم**
+p If set A is a subset of the given universal set U, then the complement of set A is the set which contains all the elements of set U which are not in set A. The complement of set A is denoted by A' or $A^c$. || اگر سیٹ A دیے گئے عالمگیر سیٹ U کا ذیلی سیٹ ہو تو سیٹ A کا تکملہ وہ سیٹ ہے جس میں سیٹ U کے وہ تمام ارکان ہوں جو سیٹ A میں نہیں ہیں۔ سیٹ A کے تکملے کو A' یا $A^c$ سے ظاہر کیا جاتا ہے۔ || که سېټ A د ورکړل شوي نړیوال سېټ U فرعي سېټ وي، نو د سېټ A متمم هغه سېټ دی چې د سېټ U هغه ټول غړي لري چې په سېټ A کې نشته. د سېټ A متمم په A' یا $A^c$ ښودل کېږي.
+p Let's consider U = {1, 2, 3, 4, ..., 10} and A = {2, 4, 6, 8, 10} || آئیے U = {1, 2, 3, 4, ..., 10} اور A = {2, 4, 6, 8, 10} لیں || راځئ U = {1, 2, 3, 4, ..., 10} او A = {2, 4, 6, 8, 10} په پام کې ونیسو
+eq \begin{aligned} \text{Then } U - A = A^c &= \{1, 2, 3, 4, \ldots, 10\} - \{2, 4, 6, 8, 10\} \\ A^c &= \{1, 3, 5, 7, 9\} \end{aligned}
+p Here, elements of A do not exist in set $A^c$. So, $A^c$ is said to be the complement of A. || یہاں A کے ارکان سیٹ $A^c$ میں موجود نہیں۔ لہٰذا $A^c$ کو A کا تکملہ کہا جاتا ہے۔ || دلته د A غړي په سېټ $A^c$ کې نشته. نو $A^c$ ته د A متمم ویل کېږي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p U − A can be written as U/A. || U − A کو U/A بھی لکھا جا سکتا ہے۔ || U − A د U/A په بڼه هم لیکل کېدای شي.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the complement of the null set. || خالی سیٹ کا تکملہ معلوم کریں۔ || د تش سېټ متمم معلوم کړئ.
+endbox

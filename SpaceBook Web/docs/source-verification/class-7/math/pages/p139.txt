@@ -1,0 +1,27 @@
+@printed 135
+eq 75x + 90 = 48x + 144
+p 90 is being added on LHS, so it will be subtracted on the other side. || بائیں طرف 90 جمع ہو رہا ہے، لہٰذا دوسری طرف یہ تفریق ہوگا۔ || په کیڼ اړخ کې 90 جمع کېږي، نو په بله خوا کې به تفریق شي.
+eq \begin{aligned} 75x &= 48x + 144 - 90 \\ 75x &= 48x + 54 \end{aligned}
+p 48x is being added on RHS, so it will be subtracted on the other side. || دائیں طرف 48x جمع ہو رہا ہے، لہٰذا دوسری طرف یہ تفریق ہوگا۔ || په ښي اړخ کې 48x جمع کېږي، نو په بله خوا کې به تفریق شي.
+eq \begin{aligned} 75x - 48x &= 54 \\ 27x &= 54 \end{aligned}
+p 27 is multiplying x on LHS, by shifting it will divide the RHS. || بائیں طرف 27، x کو ضرب دے رہا ہے، منتقل کرنے پر یہ دائیں طرف کو تقسیم کرے گا۔ || په کیڼ اړخ کې 27 په x کې ضربېږي، په لېږدولو به ښي اړخ ووېشي.
+eq x = \frac{54}{27} \;\Rightarrow\; x = 2
+p **Verification:** $\frac{5(2) + 6}{3(2) + 9} = \frac{16}{15}$, $\frac{10 + 6}{6 + 9} = \frac{16}{15}$, $\frac{16}{15} = \frac{16}{15}$, LHS = RHS || **تصدیق:** $\frac{5(2) + 6}{3(2) + 9} = \frac{16}{15}$، $\frac{10 + 6}{6 + 9} = \frac{16}{15}$، $\frac{16}{15} = \frac{16}{15}$، بایاں طرف = دایاں طرف || **تایید:** $\frac{5(2) + 6}{3(2) + 9} = \frac{16}{15}$، $\frac{10 + 6}{6 + 9} = \frac{16}{15}$، $\frac{16}{15} = \frac{16}{15}$، کیڼ اړخ = ښي اړخ
+endexample
+example 3 | Solve: $\frac{1.6x - 0.2}{1.4x + 2.5} = \frac{2.2}{4.6}$ || حل کریں: $\frac{1.6x - 0.2}{1.4x + 2.5} = \frac{2.2}{4.6}$ || حل کړئ: $\frac{1.6x - 0.2}{1.4x + 2.5} = \frac{2.2}{4.6}$
+p **Solution:** By cross multiplication, || **حل:** آڑی ضرب سے، || **حل:** د متقابل ضرب په مرسته،
+eq \begin{aligned} 4.6(1.6x - 0.2) &= 2.2(1.4x + 2.5) \\ 7.36x - 0.92 &= 3.08x + 5.5 \end{aligned}
+p 0.92 is being subtracted on LHS, so it will be added on the other side. || بائیں طرف 0.92 تفریق ہو رہا ہے، لہٰذا دوسری طرف یہ جمع ہوگا۔ || په کیڼ اړخ کې 0.92 تفریق کېږي، نو په بله خوا کې به جمع شي.
+eq \begin{aligned} 7.36x &= 3.08x + 5.5 + 0.92 \\ 7.36x &= 3.08x + 6.42 \end{aligned}
+p 3.08x is being added on RHS, so it will be subtracted on the other side. || دائیں طرف 3.08x جمع ہو رہا ہے، لہٰذا دوسری طرف یہ تفریق ہوگا۔ || په ښي اړخ کې 3.08x جمع کېږي، نو په بله خوا کې به تفریق شي.
+eq \begin{aligned} 7.36x - 3.08x &= 6.42 \\ 4.28x &= 6.42 \end{aligned}
+p 4.28 is multiplying x on L.H.S, by shifting it will divide 6.42 on the R.H.S. || بائیں طرف 4.28، x کو ضرب دے رہا ہے، منتقل کرنے پر یہ دائیں طرف 6.42 کو تقسیم کرے گا۔ || په کیڼ اړخ کې 4.28 په x کې ضربېږي، په لېږدولو به په ښي اړخ کې 6.42 ووېشي.
+eq x = \frac{6.42}{4.28} \;\Rightarrow\; x = 1.5
+p **Verification:** $\frac{1.6(1.5) - 0.2}{1.4(1.5) + 2.5} = \frac{2.2}{4.6}$, $\frac{2.4 - 0.2}{2.1 + 2.5} = \frac{2.2}{4.6}$, $\frac{2.2}{4.6} = \frac{2.2}{4.6}$, LHS = RHS || **تصدیق:** $\frac{1.6(1.5) - 0.2}{1.4(1.5) + 2.5} = \frac{2.2}{4.6}$، $\frac{2.4 - 0.2}{2.1 + 2.5} = \frac{2.2}{4.6}$، $\frac{2.2}{4.6} = \frac{2.2}{4.6}$، بایاں طرف = دایاں طرف || **تایید:** $\frac{1.6(1.5) - 0.2}{1.4(1.5) + 2.5} = \frac{2.2}{4.6}$، $\frac{2.4 - 0.2}{2.1 + 2.5} = \frac{2.2}{4.6}$، $\frac{2.2}{4.6} = \frac{2.2}{4.6}$، کیڼ اړخ = ښي اړخ
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Sometimes a linear equation has terms that are in the form of fractions. In such situations, use cross multiplication method to bring them into simplified form. || کبھی خطی مساوات میں کسری صورت کے ارکان ہوتے ہیں۔ ایسی صورتوں میں انہیں سادہ صورت میں لانے کے لیے آڑی ضرب کا طریقہ استعمال کریں۔ || کله کله خطي معادله د کسر په بڼه حدونه لري. په داسې حالتونو کې د ساده بڼې ته د راوستلو لپاره د متقابل ضرب طریقه وکاروئ.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Solve: $\frac{4x - 1}{3x - 2} = \frac{2}{3}$ || حل کریں: $\frac{4x - 1}{3x - 2} = \frac{2}{3}$ || حل کړئ: $\frac{4x - 1}{3x - 2} = \frac{2}{3}$
+endbox

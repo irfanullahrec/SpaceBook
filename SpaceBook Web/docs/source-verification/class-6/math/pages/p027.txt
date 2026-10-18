@@ -1,0 +1,27 @@
+@printed 25
+@sec 2.1 | Integers || صحیح اعداد || تام عددونه
+## Introduction || تعارف || پېژندنه
+p We have already learnt about the whole numbers and natural numbers in detail. In this unit we will learn about integers. || ہم پہلے ہی مکمل اعداد اور قدرتی اعداد کے بارے میں تفصیل سے سیکھ چکے ہیں۔ اس اکائی میں ہم صحیح اعداد کے بارے میں سیکھیں گے۔ || موږ مخکې د بشپړو عددونو او طبیعي عددونو په اړه په تفصیل سره زده کړه کړې ده. په دې څپرکي کې به د تامو عددونو په اړه زده کړه وکړو.
+# 2.1 Integers || 2.1 صحیح اعداد || 2.1 تام عددونه
+p We know that the set of whole numbers consists of all **natural numbers** along with 0. **Whole numbers** are either positive numbers or zero. Also, when we add two whole numbers, the result is also a whole number according to closure law. But have you ever noticed why this law doesn't apply on subtraction of whole numbers? The reason is when we subtract two whole numbers, we do not always get a whole number as a result. || ہم جانتے ہیں کہ مکمل اعداد کا سیٹ تمام **قدرتی اعداد** اور 0 پر مشتمل ہے۔ **مکمل اعداد** یا تو مثبت ہوتے ہیں یا صفر۔ نیز جب ہم دو مکمل اعداد جمع کرتے ہیں تو بندش کے قانون کے مطابق نتیجہ بھی مکمل عدد ہوتا ہے۔ لیکن کیا آپ نے کبھی غور کیا کہ یہ قانون مکمل اعداد کی تفریق پر لاگو کیوں نہیں ہوتا؟ وجہ یہ ہے کہ جب ہم دو مکمل اعداد تفریق کرتے ہیں تو نتیجہ ہمیشہ مکمل عدد نہیں ہوتا۔ || موږ پوهېږو چې د بشپړو عددونو سېټ له ټولو **طبیعي عددونو** او 0 څخه جوړ دی. **بشپړ عددونه** یا مثبت وي یا صفر. همدارنګه کله چې دوه بشپړ عددونه جمع کړو، د تړلتیا د قانون له مخې پایله هم بشپړ عدد وي. خو ایا مو کله پام کړی چې ولې دا قانون د بشپړو عددونو په تفریق نه پلی کېږي؟ لامل دا دی چې کله دوه بشپړ عددونه تفریق کړو، پایله تل بشپړ عدد نه وي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Natural numbers start at 1. Whole numbers start at 0. Can you guess what comes before 0? || قدرتی اعداد 1 سے شروع ہوتے ہیں۔ مکمل اعداد 0 سے شروع ہوتے ہیں۔ کیا آپ اندازہ لگا سکتے ہیں کہ 0 سے پہلے کیا آتا ہے؟ || طبیعي عددونه له 1 څخه پیلېږي. بشپړ عددونه له 0 څخه پیلېږي. ایا اټکل کولی شئ چې له 0 مخکې څه راځي؟
+endbox
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- Can you tell about set of whole numbers and natural numbers? || کیا آپ مکمل اعداد اور قدرتی اعداد کے سیٹ کے بارے میں بتا سکتے ہیں؟ || ایا د بشپړو عددونو او طبیعي عددونو د سېټ په اړه ویلی شئ؟
+endbox
+p Let's take 9 and 3. || آئیے 9 اور 3 لیتے ہیں۔ || راځئ 9 او 3 واخلو.
+p $9 - 3 = 6$ (a whole number). || $9 - 3 = 6$ (ایک مکمل عدد)۔ || $9 - 3 = 6$ (یو بشپړ عدد).
+nline 0..11 | 0>9 above | 9>6 below || 9 − 3 = 6 on the whole number line || مکمل اعداد کی عددی لائن پر 9 − 3 = 6 || د بشپړو عددونو په عددي کرښه 9 − 3 = 6
+p But $3 - 9$ doesn't result in a whole number. On the whole number line, we cannot go 9 steps backwards from 3 as it has no numbers before 0. || لیکن $3 - 9$ کا نتیجہ مکمل عدد نہیں ہوتا۔ مکمل اعداد کی عددی لائن پر ہم 3 سے 9 قدم پیچھے نہیں جا سکتے کیونکہ اس پر 0 سے پہلے کوئی عدد نہیں۔ || خو د $3 - 9$ پایله بشپړ عدد نه دی. د بشپړو عددونو په عددي کرښه له 3 څخه 9 ګامه شاته نه شو تللی ځکه له 0 مخکې پکې هېڅ عدد نشته.
+nline -1..11 | q=-1 | 0>3 above | 3>-1 below || 3 − 9: no whole number before 0 || 3 − 9: 0 سے پہلے کوئی مکمل عدد نہیں || 3 − 9: له 0 مخکې هېڅ بشپړ عدد نشته
+p To address the mathematical problems like this, negative numbers were introduced. Every positive number has its opposite negative number. For example, –6 is opposite to 6, –88 is opposite to 88, etc. || اس طرح کے ریاضی کے مسائل حل کرنے کے لیے منفی اعداد متعارف کرائے گئے۔ ہر مثبت عدد کا ایک مخالف منفی عدد ہوتا ہے۔ مثلاً –6، عدد 6 کا مخالف ہے، –88، عدد 88 کا مخالف ہے وغیرہ۔ || د داسې ریاضي ستونزو د حل لپاره منفي عددونه معرفي شول. هر مثبت عدد خپل مخالف منفي عدد لري. د بېلګې په توګه –6 د 6 مخالف دی، –88 د 88 مخالف دی او نور.
+p All positive and negative numbers along with 0 makes the **set of integers**. No fraction or decimal number is included in the set of integers. || تمام مثبت اور منفی اعداد 0 کے ساتھ مل کر **صحیح اعداد کا سیٹ** بناتے ہیں۔ صحیح اعداد کے سیٹ میں کوئی کسر یا اعشاری عدد شامل نہیں ہوتا۔ || ټول مثبت او منفي عددونه له 0 سره یوځای **د تامو عددونو سېټ** جوړوي. د تامو عددونو په سېټ کې هېڅ کسر یا اعشاري عدد نه شاملېږي.
+p Integers can be positive {1, 2, 3, 4, 5, ...}, or negative {–1, –2, –3, –4, –5, ...}, or zero {0}. || صحیح اعداد مثبت {1، 2، 3، 4، 5، ...}، یا منفی {–1، –2، –3، –4، –5، ...}، یا صفر {0} ہو سکتے ہیں۔ || تام عددونه مثبت {1، 2، 3، 4، 5، ...}، یا منفي {–1، –2، –3، –4، –5، ...}، یا صفر {0} کېدای شي.
+p A set of integers is denoted by the capital letter Z: || صحیح اعداد کے سیٹ کو بڑے حرف Z سے ظاہر کیا جاتا ہے: || د تامو عددونو سېټ په لوی توری Z ښودل کېږي:
+m $Z = \{\ldots, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, \ldots\}$
+p or || یا || یا
+m $Z = \{0, \pm 1, \pm 2, \pm 3, \pm 4, \ldots\}$
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Using the number line explain the concept of integers to the students. Ask them to tell the difference between the positive and negative integers. || عددی لائن کی مدد سے طلبہ کو صحیح اعداد کا تصور سمجھائیں۔ ان سے مثبت اور منفی صحیح اعداد کا فرق بتانے کو کہیں۔ || د عددي کرښې په مرسته زده کوونکو ته د تامو عددونو مفهوم تشریح کړئ. ترې وغواړئ چې د مثبتو او منفي تامو عددونو توپیر ووایي.
+endbox

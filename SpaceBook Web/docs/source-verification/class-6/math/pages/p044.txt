@@ -1,0 +1,61 @@
+@printed 42
+example 2 | Find the sum of (+8) and (–4). || (+8) اور (–4) کا مجموعہ معلوم کریں۔ || د (+8) او (–4) مجموعه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+m $(+8) + (-4)$
+p Take the absolute values || مطلق قیمتیں لیں || مطلق ارزښتونه واخلئ
+m $|+8| = 8$ and $|-4| = 4$
+p Now subtract the smaller absolute value from the greater one. || اب چھوٹی مطلق قیمت کو بڑی سے تفریق کریں۔ || اوس کوچنی مطلق ارزښت له لوي څخه تفریق کړئ.
+m $8 - 4 = 4$
+p Put the sign of greater absolute value. So, $(+8) + (-4) = +4$ || بڑی مطلق قیمت کی علامت لگائیں۔ لہٰذا $(+8) + (-4) = +4$ || د لوي مطلق ارزښت نښه ولګوئ. نو $(+8) + (-4) = +4$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the sum of +8 and –7. || +8 اور –7 کا مجموعہ معلوم کریں۔ || د +8 او –7 مجموعه معلومه کړئ.
+endbox
+example 3 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+m $[(-2) + (+5)] + (-3)$
+p **Solution:** || **حل:** || **حل:**
+p First find the absolute value of the given integers. || پہلے دیے گئے صحیح اعداد کی مطلق قیمت معلوم کریں۔ || لومړی د ورکړل شوو تامو عددونو مطلق ارزښت معلوم کړئ.
+m $|-2| = 2,\ |+5| = 5,\ |-3| = 3$
+p then solve brackets. || پھر قوسین حل کریں۔ || بیا قوسونه حل کړئ.
+m $= [(-2) + (+5)] + (-3)$
+p Now subtract the smaller absolute value from the greater one. || اب چھوٹی مطلق قیمت کو بڑی سے تفریق کریں۔ || اوس کوچنی مطلق ارزښت له لوي څخه تفریق کړئ.
+m $= [5 - 2] + (-3)$
+m $= (+3) + (-3)$
+p $= 0$ (The sum of an integer and its opposite always results in 0) || $= 0$ (کسی صحیح عدد اور اس کے مخالف کا مجموعہ ہمیشہ 0 ہوتا ہے) || $= 0$ (د یو تام عدد او د هغه د مخالف مجموعه تل 0 وي)
+endexample
+example 4 | Find the sum of (–7) and (+6). || (–7) اور (+6) کا مجموعہ معلوم کریں۔ || د (–7) او (+6) مجموعه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+m $(+6) = 6,\ |-7| = 7$
+m So $7 - 6 = 1$
+m $= (+6) + (-7) = -1$
+endexample
+exercise 3.1
+q 1 | Represent the sum of the integers on a number line. || صحیح اعداد کے مجموعے کو عددی لائن پر ظاہر کریں۔ || د تامو عددونو مجموعه په عددي کرښه وښیئ.
+qsolve iexpr nl
+qp a | (+1) + (+3)
+qp b | (–3) + (–5)
+qp c | (+4) – (+2)
+qp d | (–3) + (–4) + (–2)
+qp e | (+7) + (–10)
+qp f | (–3) + (–7) + (–4)
+qp g | (–1) + (–2) + (–3)
+qp h | (–3) + (–4)
+qp i | (+9) + (–10)
+q 2 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qsolve iexpr
+qp a | (+9) – (+5)
+qp b | (–4) + (–7)
+qp c | (+4) – (+6)
+qp d | (–9) + (–8) + (–2)
+qp e | (+10) – (–2)
+qp f | (–2) + (–5) + (+3)
+qp g | (–5) + (–2) + (–7)
+qp h | (+3) – (+2)
+qp i | (+6) – (+4)
+qp j | (–4) + (–6) + (–8)
+qp k | (+23) + (–2)+ (–34)
+qp l | (–7) + (+6)
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Ask the students to make a poster in their own creative way of Addition rules of integers with examples and present their working. || طلبہ سے کہیں کہ اپنے تخلیقی انداز میں صحیح اعداد کی جمع کے قواعد کا مثالوں کے ساتھ پوسٹر بنائیں اور اپنا کام پیش کریں۔ || له زده کوونکو وغواړئ چې په خپل تخلیقي ډول د تامو عددونو د جمع قواعدو پوسټر له بېلګو سره جوړ کړي او خپل کار وړاندې کړي.
+endbox
+@issue Example 4 prints "(+6) = 6" where the absolute value |+6| = 6 is meant; kept as printed.

@@ -1,0 +1,105 @@
+@printed 67
+q 2 | Solve the following || درج ذیل کو حل کریں || لاندې حل کړئ
+qsolve iexpr
+qp a | 85 + (–96) = ____
+qp b | 80 + 57 = ____
+qp c | 86 + (–38) = ____
+qp d | 22 + (–41) + (–8) = ____
+qp e | (–18) + (–45) + (–89) = ____
+qp f | (–11) + (–5) + 6 = ____
+qp g | (–4) – (6) = ____
+qp h | 80 – (–7) = ____
+qp i | 6 – (–8) = ____
+qp j | (–34) – (–40) = ____
+qp k | (–18) – (–45) – ( 56) = ____
+qp l | (–101) – (–55) – 43 = ____
+qp m | (+6) × (–9) = ____
+solution –54
+suse mul +6, –9
+endsolution
+qp n | (+8) × (–9) = ____
+solution –72
+suse mul +8, –9
+endsolution
+qp o | (–2) × (–34) = ____
+solution +68
+suse mul –2, –34
+endsolution
+qp p | (+134) × (–123) = ____
+solution –16482
+suse mul +134, –123
+endsolution
+qp q | (+6) ÷ (–2) = ____
+solution –3
+suse div (+6) ÷ (–2)
+endsolution
+qp r | (+340) ÷ (–34) = ____
+solution –10
+suse div (+340) ÷ (–34)
+endsolution
+qp s | (–12) ÷ (–4) = ____
+solution +3
+suse div (–12) ÷ (–4)
+endsolution
+qp t | (+224) ÷ (–22) = ____
+solution $-\frac{112}{11} = -10\frac{2}{11}$ (not a whole number — see note)
+ss Divide the absolute values: 224 ÷ 22 does not divide exactly (22 × 10 = 220, remainder 4). || مطلق قیمتیں تقسیم کریں: 224 ÷ 22 پورا تقسیم نہیں ہوتا (22 × 10 = 220، باقی 4)۔ || مطلق ارزښتونه ووېشئ: 224 ÷ 22 بشپړ نه وېشل کېږي (22 × 10 = 220، پاتې 4).
+sm \frac{224}{22} = \frac{112}{11} = 10\frac{2}{11}
+ss Different signs → negative. So (+224) ÷ (−22) = −10 2/11. Teacher's note: every other part gives a whole number, so the printed numbers may contain a misprint (e.g. 220 or 242). || مختلف علامتیں → منفی۔ لہٰذا (+224) ÷ (−22) = −10 2/11۔ استاد کا نوٹ: باقی تمام حصوں کا جواب مکمل عدد ہے، اس لیے ممکن ہے چھپے اعداد میں غلطی ہو (مثلاً 220 یا 242)۔ || بېلې نښې → منفي. نو (+224) ÷ (−22) = −10 2/11. د ښوونکي یادونه: د نورو ټولو برخو ځواب بشپړ عدد دی، نو کېدای شي چاپ شوي عددونه تېروتنه ولري (لکه 220 یا 242).
+endsolution
+@issue Review Exercise 3 Q2(t) (+224) ÷ (–22) is not a whole number (likely misprint); exact fractional answer given with a note.
+q 3 | The product of two integers is –75. If one of them is –15, then find the other one. || دو صحیح اعداد کا حاصلِ ضرب –75 ہے۔ اگر ان میں سے ایک –15 ہو تو دوسرا معلوم کریں۔ || د دوو تامو عددونو حاصل ضرب –75 دی. که یو یې –15 وي، بل معلوم کړئ.
+solution +5
+ss Division undoes multiplication: other integer = product ÷ known integer. || تقسیم ضرب کو الٹ دیتی ہے: دوسرا صحیح عدد = حاصلِ ضرب ÷ معلوم صحیح عدد۔ || وېش ضرب لغوه کوي: بل تام عدد = حاصل ضرب ÷ معلوم تام عدد.
+suse div (–75) ÷ (–15)
+endsolution
+q 4 | Find an integer which divides –90 to give –45. || وہ صحیح عدد معلوم کریں جو –90 کو تقسیم کر کے –45 دے۔ || هغه تام عدد معلوم کړئ چې –90 ووېشي او –45 ورکړي.
+solution 2
+ss We need x with (−90) ÷ x = −45. Then x = (−90) ÷ (−45). || ہمیں ایسا x چاہیے کہ (−90) ÷ x = −45۔ تو x = (−90) ÷ (−45)۔ || موږ داسې x ته اړتیا لرو چې (−90) ÷ x = −45. نو x = (−90) ÷ (−45).
+suse div (–90) ÷ (–45)
+ss Check: (−90) ÷ 2 = −45 ✓ || جانچ: (−90) ÷ 2 = −45 ✓ || ازموینه: (−90) ÷ 2 = −45 ✓
+endsolution
+q 5 | Verify the following || درج ذیل کی تصدیق کریں || لاندې ثابت کړئ
+qsolve verify
+qp a | (–5) × 3 = 3 × (–5)
+qp b | (–27) + (–97) = (–97) + (–27)
+qp c | 17 + (–9) = –9 + 17
+qp d | –101 + (–77) = –77 + (–101)
+qp e | (–6) + [(–3) + (–4)] = [(–6) + (–3)] + (–4)
+qp f | (–12) × [5 × (–4)] = [(–12) × 5] × (–4)
+qp g | [(–6) – 2)] (–5) = [(–6) (–5)] – [(–6) × (–2)]
+solution Not equal as printed: L.H.S = 40, R.H.S = 18
+ss There is no sign between the brackets, so they are multiplied (Hint, page 61). || قوسین کے درمیان کوئی علامت نہیں، اس لیے انہیں ضرب دیا جاتا ہے (اشارہ، صفحہ 61)۔ || د قوسونو ترمنځ نښه نشته، نو ضربېږي (اشاره، پاڼه 61).
+suse verify [(–6) – 2] × (–5) = [(–6) × (–5)] – [(–6) × (–2)]
+ss Teacher's note: by the Distributive Law the right side should be [(−6) × (−5)] − [2 × (−5)] = 30 + 10 = 40. The printed right side has a misprint. || استاد کا نوٹ: قانونِ تقسیم کے مطابق دایاں طرف [(−6) × (−5)] − [2 × (−5)] = 30 + 10 = 40 ہونا چاہیے۔ چھپے ہوئے دائیں طرف میں غلطی ہے۔ || د ښوونکي یادونه: د توزیع د قانون له مخې ښي اړخ باید [(−6) × (−5)] − [2 × (−5)] = 30 + 10 = 40 وي. چاپ شوی ښي اړخ تېروتنه لري.
+endsolution
+qp h | (–11) × [(5 + (–7)] = (–11 × 5) + [(–11 × (–7)]
+@issue Review Exercise 3 Q5(g) as printed is not a true statement (40 ≠ 18; the second product should be 2 × (–5)); solution explains. Q5(g)/(h) have missing × signs and unbalanced brackets; kept as printed.
+q 6 | Simplify the following expressions. || درج ذیل عبارتیں سادہ کریں۔ || لاندې افادې ساده کړئ.
+qp a | $(2 \times 7) + (12 \div 4)$
+solution 17
+suse bodmas (2*7)+(12:4)
+endsolution
+qp b | $3 \times (7 + 9) - 6$
+solution 42
+suse bodmas 3*(7+9)-6
+endsolution
+qp c | $(8 \times 5) + 5 - 3$
+solution 42
+suse bodmas (8*5)+5-3
+endsolution
+qp d | $204 - [30 \times \{20 + (8 \times 32 \div 4) - (9 \div 63)\}]$
+solution $-2311\frac{5}{7}$
+suse bodmas 204-[30*{20+(8*32:4)-(9:63)}]
+endsolution
+qp e | $\{(9 \times \frac{1}{3} - \frac{3}{9}) \div \frac{5}{16}\} \times (\frac{5}{12} + \frac{3}{4})$
+solution $9\frac{43}{45}$
+suse bodmas {(9*1/3-3/9):5/16}*(5/12+3/4)
+endsolution
+q 7 | While travelling Rohaan paid Rs 36.45 for a ricksaw, Rs 34.50 for a metro bus and Rs 56.56 for a metro train. If he had Rs 1300, find the total amount he was left with. || سفر کے دوران روحان نے رکشے کے 36.45 روپے، میٹرو بس کے 34.50 روپے اور میٹرو ٹرین کے 56.56 روپے ادا کیے۔ اگر اس کے پاس 1300 روپے تھے تو اس کے پاس کل کتنی رقم بچی؟ || د سفر پر مهال روحان د رکشې 36.45 روپۍ، د مترو بس 34.50 روپۍ او د مترو ریل 56.56 روپۍ ورکړې. که هغه سره 1300 روپۍ وې، څومره پیسې ورسره پاتې شوې؟
+solution Rs 1172.49
+ss Money left = money he had − total fares. || بچی رقم = پاس موجود رقم − کل کرایہ۔ || پاتې پیسې = موجودې پیسې − ټول کرایه.
+suse bodmas 1300-(36.45+34.50+56.56)
+ss He was left with Rs 1172.49. || اس کے پاس 1172.49 روپے بچے۔ || هغه سره 1172.49 روپۍ پاتې شوې.
+endsolution
+@issue Q6(d) contains 9 ÷ 63, which makes the answer a negative mixed number (–2311 5/7); kept as printed. Q7 prints "ricksaw"; kept.

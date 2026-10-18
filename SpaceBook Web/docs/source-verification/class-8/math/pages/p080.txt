@@ -1,0 +1,43 @@
+@printed 76
+@sec 4.3 | Cube and Cube Roots || مکعب اور جذر المکعب || مکعب او مکعب جذرونه
+# 4.3 Cube and Cube Roots || 4.3 مکعب اور جذر المکعب || 4.3 مکعب او مکعب جذرونه
+## 4.3.1 Cube || 4.3.1 مکعب || 4.3.1 مکعب
+p Consider the following products; || درج ذیل حاصلِ ضرب پر غور کریں؛ || لاندې حاصل ضربونو ته پام وکړئ؛
+m $2 \times 2 \times 2 = (2)^3 = 8$ and
+m $3 \times 3 \times 3 = (3)^3 = 27$ similarly
+m $4 \times 4 \times 4 = (4)^3 = 64$
+p We observe that; || ہم دیکھتے ہیں کہ؛ || موږ ګورو چې؛
+p $2^3 = 8$ is obtained by multiplying 2 twice by itself. This means 8 is the cube of 2. || $2^3 = 8$، 2 کو دو بار اسی سے ضرب دے کر حاصل ہوتا ہے۔ اس کا مطلب ہے کہ 8، 2 کا مکعب ہے۔ || $2^3 = 8$ د 2 په خپل ځان کې دوه ځله ضربولو سره لاسته راځي. دا په دې معنا ده چې 8 د 2 مکعب دی.
+p $3^3 = 27$ is obtained by multiplying 3 twice by itself. i.e 27 is the cube of 3. || $3^3 = 27$، 3 کو دو بار اسی سے ضرب دے کر حاصل ہوتا ہے۔ یعنی 27، 3 کا مکعب ہے۔ || $3^3 = 27$ د 3 په خپل ځان کې دوه ځله ضربولو سره لاسته راځي. یعنې 27 د 3 مکعب دی.
+box info | Cube || مکعب || مکعب
+p The **cube** of a number is that number raised to the power 3. || کسی عدد کا **مکعب** وہ عدد ہے جس پر قوت 3 ہو۔ || د یوه عدد **مکعب** هغه عدد دی چې درېیم توان ته پورته شوی وي.
+endbox
+## 4.3.2 Perfect cube || 4.3.2 کامل مکعب || 4.3.2 بشپړ مکعب
+p A natural number is said to be a perfect cube if it is the cube of some natural number. For example; || کوئی قدرتی عدد کامل مکعب کہلاتا ہے اگر وہ کسی قدرتی عدد کا مکعب ہو۔ مثال کے طور پر؛ || یو طبیعي عدد بشپړ مکعب بلل کېږي که د کوم طبیعي عدد مکعب وي. د بېلګې په توګه؛
+m $27 = (3)^3 \Rightarrow$ 27 is a perfect cube, similarly
+m $125 = (5)^3 \Rightarrow$ 125 is a perfect cube.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+svg Cube with edges a || ضلع a والا مکعب || د a څنډو لرونکی مکعب
+<svg viewBox="0 0 90 64" width="90" role="img" aria-label="A cube with each edge labelled a" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="none" stroke="#0f172a" stroke-width="1.2">
+<path d="M10 22h40v30H10z M10 22l14-12h40l-14 12 M64 10v30l-14 12"/>
+<text x="68" y="28" fill="#0f172a" stroke="none">a</text><text x="28" y="62" fill="#0f172a" stroke="none">a</text><text x="58" y="58" fill="#0f172a" stroke="none">a</text>
+</svg>
+endsvg
+p If volume of cube is $a^3$, length of each of its dimensions is $a$. || اگر مکعب کا حجم $a^3$ ہو تو اس کی ہر جہت کی لمبائی $a$ ہے۔ || که د مکعب حجم $a^3$ وي، د هر بُعد اوږدوالی یې $a$ دی.
+endbox
+p The following table represent the values of perfect cubes of natural numbers from 1 - 20. || درج ذیل جدول 1 سے 20 تک کے قدرتی اعداد کے کامل مکعب کی قیمتیں ظاہر کرتا ہے۔ || لاندې جدول له 1 څخه تر 20 پورې د طبیعي عددونو د بشپړو مکعبونو ارزښتونه ښيي.
+table
+th | $x$ | $x^3$ | $x$ | $x^3$
+tr | 1 | 1 | 11 | 1331
+tr | 2 | 8 | 12 | 1728
+tr | 3 | 27 | 13 | 2197
+tr | 4 | 64 | 14 | 2744
+tr | 5 | 125 | 15 | 3375
+tr | 6 | 216 | 16 | 4096
+tr | 7 | 343 | 17 | 4913
+tr | 8 | 512 | 18 | 5832
+tr | 9 | 729 | 19 | 6859
+tr | 10 | 1000 | 20 | 8000
+endtable
+p Observe the above table, can you find some thing special for the cube of even and odd numbers? || اوپر والے جدول کا مشاہدہ کریں، کیا آپ جفت اور طاق اعداد کے مکعب کے لیے کوئی خاص بات تلاش کر سکتے ہیں؟ || پورتني جدول ته وګورئ، ایا د جفتو او طاقو عددونو د مکعب لپاره کوم ځانګړی شی موندلی شئ؟
+p To examine that a given number is a perfect cube or not, we find its prime factorization. If it is expressible as the product of cubes of the prime factors, the number is a perfect cube. || یہ جانچنے کے لیے کہ دیا گیا عدد کامل مکعب ہے یا نہیں، ہم اس کے مفرد اجزائے ضربی معلوم کرتے ہیں۔ اگر اسے مفرد اجزائے ضربی کے مکعب کے حاصلِ ضرب کے طور پر ظاہر کیا جا سکے تو عدد کامل مکعب ہے۔ || د دې ازمویلو لپاره چې ورکړل شوی عدد بشپړ مکعب دی که نه، د هغه لومړني عاملونه مومو. که د لومړنیو عاملونو د مکعبونو د حاصل ضرب په توګه وښودل شي، عدد بشپړ مکعب دی.

@@ -1,0 +1,31 @@
+@printed 158
+@deco Purple rectangles with butterfly prints; a yellow right-angled triangle and an orange triangle; four green circles with answer boxes.
+@issue The question after Q5 is numbered 7 (there is no Q6). Kept as printed.
+q 4 | Find the perimeter of the following. || درج ذیل کا احاطہ معلوم کریں۔ || د لاندې محیط معلوم کړئ.
+qp i | Rectangle 5cm by 4cm
+fig geo 200 170 ; G 40 30 120 110 #ddd6fe ; P 100 24 5cm ; P 100 160 5cm ; P 20 88 4cm ; P 180 88 4cm
+sol 18 cm ## 5 + 4 + 5 + 4 = 18 cm || 5 + 4 + 5 + 4 = 18 cm || 5 + 4 + 5 + 4 = 18 cm
+qp ii | Rectangle 4cm by 6cm
+fig geo 200 210 ; G 50 30 100 150 #ddd6fe ; P 100 24 4cm ; P 100 200 4cm ; P 24 108 6cm ; P 176 108 6cm
+sol 20 cm ## 4 + 6 + 4 + 6 = 20 cm || 4 + 6 + 4 + 6 = 20 cm || 4 + 6 + 4 + 6 = 20 cm
+q 5 | Find the perimeter of the following. || درج ذیل کا احاطہ معلوم کریں۔ || د لاندې محیط معلوم کړئ.
+qp i | Triangle with sides 4cm, 5cm, 3cm
+fig geo 200 180 ; S 50 20 50 160 #ca8a04 ; S 50 160 160 160 #ca8a04 ; S 160 160 50 20 #ca8a04 ; P 26 94 4cm ; P 128 84 5cm ; P 105 176 3cm
+sol 12 cm ## 4 + 5 + 3 = 12 cm || 4 + 5 + 3 = 12 cm || 4 + 5 + 3 = 12 cm
+qp ii | Triangle with sides 4cm, 4cm, 5cm
+fig geo 220 170 ; S 20 150 200 150 #ea580c ; S 200 150 110 20 #ea580c ; S 110 20 20 150 #ea580c ; P 50 80 4cm ; P 172 80 4cm ; P 110 166 5cm
+sol 13 cm ## 4 + 4 + 5 = 13 cm || 4 + 4 + 5 = 13 cm || 4 + 4 + 5 = 13 cm
+q 7 | Identify the center, radius and diameter in the following circles. || درج ذیل دائروں میں مرکز، رداس اور قطر پہچانیں۔ || په لاندې دایرو کې مرکز، شعاع او قطر وپېژنئ.
+qp i | Circle (i): a dot A at the middle
+fig geo 160 150 ; C 80 75 60 #fff ; D 80 75 3 ; P 80 98 A
+sol A is the center ## The dot in the middle of a circle is its center. || دائرے کے درمیان والا نقطہ اس کا مرکز ہے۔ || د دایرې په منځ کې ټکی د هغې مرکز دی.
+qp ii | Circle (ii): O at the middle joined to A on the circle
+fig geo 170 150 ; C 80 75 60 #fff ; D 80 75 3 ; S 80 75 140 75 #64748b ; P 80 98 O ; P 154 79 A
+sol OA is a radius (O is the center) ## A line from the center to the circle is a radius. || مرکز سے دائرے تک کا خط رداس ہے۔ || له مرکز څخه تر دایرې پورې کرښه شعاع ده.
+qp iii | Circle (iii): B on the circle joined to C at the middle
+fig geo 170 150 ; C 90 75 60 #fff ; D 90 75 3 ; S 30 75 90 75 #64748b ; P 18 79 B ; P 90 98 C
+sol BC is a radius (C is the center) ## It joins the center C to the point B on the circle. || یہ مرکز C کو دائرے کے نقطے B سے ملاتا ہے۔ || دا مرکز C د دایرې له ټکي B سره نښلوي.
+qp iv | Circle (iv): C and D on the circle, joined through O
+fig geo 160 170 ; C 80 85 60 #fff ; S 80 25 80 145 #64748b ; D 80 85 3 ; P 80 18 C ; P 80 162 D ; P 66 89 O
+sol CD is a diameter (O is the center) ## A line through the center from one side of the circle to the other is a diameter. || مرکز سے گزر کر دائرے کے ایک طرف سے دوسری طرف جانے والا خط قطر ہے۔ || هغه کرښه چې له مرکز تېرېږي او د دایرې له یوې غاړې بلې ته ځي قطر دی.
+endexercise

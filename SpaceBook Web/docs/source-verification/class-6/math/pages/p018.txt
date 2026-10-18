@@ -1,0 +1,75 @@
+@printed 16
+exercise 1.3
+q 1 | Find the HCF of the following numbers using prime factorization method. || مفرد اجزائے ضربی کے طریقے سے درج ذیل اعداد کا عاد اعظم معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د لاندې عددونو لوی مشترک قاسم معلوم کړئ.
+qsolve hcfpf
+qp a | 224, 142
+qp b | 520, 420, 124
+qp c | 168, 400, 540
+qp d | 366, 145, 780
+qp e | 678, 424, 784
+qp f | 905, 560
+qp g | 248, 104, 565
+qp h | 578, 456
+qp i | 385, 855, 620
+q 2 | Find the HCF of the following numbers using division method. || تقسیم کے طریقے سے درج ذیل اعداد کا عاد اعظم معلوم کریں۔ || د وېش په طریقه د لاندې عددونو لوی مشترک قاسم معلوم کړئ.
+qsolve hcfdiv
+qp a | 100, 350, 480
+qp b | 678, 456
+qp c | 400, 350, 250
+qp d | 100, 245, 168
+qp e | 332, 480, 290
+qp f | 734, 202
+q 3 | Find the LCM of the given numbers using prime factorization method. || مفرد اجزائے ضربی کے طریقے سے دیے گئے اعداد کا ذو اضعاف اقل معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د ورکړل شوو عددونو کوچنی مشترک ضرب معلوم کړئ.
+qsolve lcmpf
+qp a | 120, 150, 145
+qp b | 108, 116, 128
+qp c | 240, 412
+qp d | 158, 250, 240
+qp e | 296, 564, 444
+qp f | 246, 378 and 984
+qp g | 112, 142
+qp h | 764, 986, 130
+qp i | 864, 789, 556
+q 4 | Find the LCM of the given numbers using division method. || تقسیم کے طریقے سے دیے گئے اعداد کا ذو اضعاف اقل معلوم کریں۔ || د وېش په طریقه د ورکړل شوو عددونو کوچنی مشترک ضرب معلوم کړئ.
+qsolve lcmdiv
+qp a | 280, 250, 290
+qp b | 456, 230, 900
+qp c | 150, 560, 450
+qp d | 789, 648, 832
+qp e | 898, 986, 786
+qp f | 446, 340, 850
+qp g | 908, 682, 672
+qp h | 408, 126, 522
+qp i | 765, 635, 235
+q 5 | The LCM of two numbers is 456 and HCF is 6. If one number is 24 then find the other number. || دو اعداد کا ذو اضعاف اقل 456 اور عاد اعظم 6 ہے۔ اگر ایک عدد 24 ہو تو دوسرا عدد معلوم کریں۔ || د دوو عددونو کوچنی مشترک ضرب 456 او لوی مشترک قاسم 6 دی. که یو عدد 24 وي، بل عدد معلوم کړئ.
+solution The other number is 114.
+ss For two numbers, remember the rule: HCF × LCM = first number × second number. || دو اعداد کے لیے یہ قاعدہ یاد رکھیں: عاد اعظم × ذو اضعاف اقل = پہلا عدد × دوسرا عدد۔ || د دوو عددونو لپاره دا قاعده په یاد ولرئ: لوی مشترک قاسم × کوچنی مشترک ضرب = لومړی عدد × دوهم عدد.
+sm \text{HCF} \times \text{LCM} = a \times b
+ss Put in what we know: HCF = 6, LCM = 456 and one number a = 24. || جو معلوم ہے وہ رکھیں: عاد اعظم = 6، ذو اضعاف اقل = 456 اور ایک عدد a = 24۔ || هغه څه چې معلوم دي کېږدئ: لوی مشترک قاسم = 6، کوچنی مشترک ضرب = 456 او یو عدد a = 24.
+sm 6 \times 456 = 24 \times b
+ss Multiply the left side: 6 × 456 = 2736. || بائیں طرف ضرب دیں: 6 × 456 = 2736۔ || کیڼ اړخ ضرب کړئ: 6 × 456 = 2736.
+sm 2736 = 24 \times b
+ss To get b alone, divide both sides by 24. || b کو اکیلا کرنے کے لیے دونوں طرف 24 سے تقسیم کریں۔ || د b د یوازې کولو لپاره دواړه اړخونه پر 24 ووېشئ.
+sm b = \dfrac{2736}{24} = 114
+ss Check: 24 × 114 = 2736 and 6 × 456 = 2736. Both sides match, so the other number is 114. || جانچ: 24 × 114 = 2736 اور 6 × 456 = 2736۔ دونوں طرف برابر ہیں، اس لیے دوسرا عدد 114 ہے۔ || ازموینه: 24 × 114 = 2736 او 6 × 456 = 2736. دواړه اړخونه برابر دي، نو بل عدد 114 دی.
+endsolution
+q 6 | The HCF of two numbers is 7 and LCM is 588. Find the product of two numbers. || دو اعداد کا عاد اعظم 7 اور ذو اضعاف اقل 588 ہے۔ دونوں اعداد کا حاصلِ ضرب معلوم کریں۔ || د دوو عددونو لوی مشترک قاسم 7 او کوچنی مشترک ضرب 588 دی. د دواړو عددونو حاصل ضرب معلوم کړئ.
+solution The product of the two numbers is 4116.
+ss The product of two numbers is always equal to their HCF × LCM. || دو اعداد کا حاصلِ ضرب ہمیشہ ان کے عاد اعظم × ذو اضعاف اقل کے برابر ہوتا ہے۔ || د دوو عددونو حاصل ضرب تل د هغوی له لوی مشترک قاسم × کوچني مشترک ضرب سره برابر وي.
+sm a \times b = \text{HCF} \times \text{LCM}
+ss Here HCF = 7 and LCM = 588. || یہاں عاد اعظم = 7 اور ذو اضعاف اقل = 588 ہے۔ || دلته لوی مشترک قاسم = 7 او کوچنی مشترک ضرب = 588 دی.
+sm a \times b = 7 \times 588
+ss Multiply: 7 × 500 = 3500 and 7 × 88 = 616, so 3500 + 616 = 4116. || ضرب دیں: 7 × 500 = 3500 اور 7 × 88 = 616، لہٰذا 3500 + 616 = 4116۔ || ضرب کړئ: 7 × 500 = 3500 او 7 × 88 = 616، نو 3500 + 616 = 4116.
+sm a \times b = 4116
+endsolution
+q 7 | The HCF of two numbers is 4 and the product of the two numbers is 512. Find the LCM of the numbers. || دو اعداد کا عاد اعظم 4 اور ان کا حاصلِ ضرب 512 ہے۔ اعداد کا ذو اضعاف اقل معلوم کریں۔ || د دوو عددونو لوی مشترک قاسم 4 او حاصل ضرب یې 512 دی. د عددونو کوچنی مشترک ضرب معلوم کړئ.
+solution The LCM is 128.
+ss Use the rule: HCF × LCM = product of the two numbers. || یہ قاعدہ استعمال کریں: عاد اعظم × ذو اضعاف اقل = دونوں اعداد کا حاصلِ ضرب۔ || دا قاعده وکاروئ: لوی مشترک قاسم × کوچنی مشترک ضرب = د دواړو عددونو حاصل ضرب.
+sm \text{HCF} \times \text{LCM} = a \times b
+ss We know HCF = 4 and the product of the numbers = 512. || ہمیں معلوم ہے کہ عاد اعظم = 4 اور اعداد کا حاصلِ ضرب = 512۔ || موږ پوهېږو چې لوی مشترک قاسم = 4 او د عددونو حاصل ضرب = 512.
+sm 4 \times \text{LCM} = 512
+ss Divide 512 by 4 to find the LCM. || ذو اضعاف اقل معلوم کرنے کے لیے 512 کو 4 سے تقسیم کریں۔ || د کوچني مشترک ضرب د موندلو لپاره 512 پر 4 ووېشئ.
+sm \text{LCM} = \dfrac{512}{4} = 128
+ss Check: 4 × 128 = 512. Correct! || جانچ: 4 × 128 = 512۔ درست! || ازموینه: 4 × 128 = 512. سم دی!
+endsolution
+endexercise

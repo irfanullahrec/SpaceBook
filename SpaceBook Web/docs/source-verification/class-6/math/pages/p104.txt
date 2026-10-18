@@ -1,0 +1,78 @@
+@printed 102
+exercise 5.3
+q 1 | Separate the finite and infinite sets from the following. || درج ذیل میں سے متناہی اور غیر متناہی سیٹ الگ کریں۔ || له لاندې څخه محدود او نامحدود سېټونه جلا کړئ.
+qp a | A = {10, 15, 20, 25, 30}.
+sol Finite ## It has exactly 5 elements, which we can list. || اس کے ٹھیک 5 ارکان ہیں جن کی فہرست بن سکتی ہے۔ || دا دقیق 5 غړي لري چې لیستولی یې شو.
+qp b | B = set of numbers less than 20. || B = 20 سے کم اعداد کا سیٹ۔ || B = له 20 کم د عددونو سېټ.
+sol Finite (taking natural numbers: 1 to 19) ## For natural numbers there are only 19 such numbers. (If negative integers were included the set would be infinite, so the kind of numbers matters.) || قدرتی اعداد میں ایسے صرف 19 اعداد ہیں۔ (اگر منفی صحیح اعداد شامل کیے جائیں تو سیٹ غیر متناہی ہوگا، اس لیے اعداد کی قسم اہم ہے۔) || په طبیعي عددونو کې داسې یوازې 19 عددونه دي. (که منفي تام عددونه شامل شي، سېټ به نامحدود وي، نو د عددونو ډول مهم دی.)
+qp c | T = The set of all persons in Pakistan. || T = پاکستان کے تمام افراد کا سیٹ۔ || T = د پاکستان د ټولو کسانو سېټ.
+sol Finite ## The number is very large but limited; it can be counted (like the census). || تعداد بہت بڑی مگر محدود ہے؛ اسے گنا جا سکتا ہے (جیسے مردم شماری)۔ || شمېر ډېر لوی خو محدود دی؛ شمېرل کېدای شي (لکه سرشمېرنه).
+qp d | W = {0, 1, 2, 3, ...}.
+sol Infinite ## The three dots show the elements never end. || تین نقطے ظاہر کرتے ہیں کہ ارکان کبھی ختم نہیں ہوتے۔ || درې ټکي ښيي چې غړي هېڅکله نه خلاصېږي.
+qp e | The set of all animals in Lahore zoo. || لاہور چڑیا گھر کے تمام جانوروں کا سیٹ۔ || د لاهور ژوبڼ د ټولو ژویو سېټ.
+sol Finite ## A zoo has a limited number of animals that can be counted. || چڑیا گھر میں جانوروں کی تعداد محدود ہوتی ہے جو گنی جا سکتی ہے۔ || ژوبڼ محدود شمېر ژوي لري چې شمېرل کېدای شي.
+qp f | Set of all positive integers which are multiple of 6. || 6 کے اضعاف والے تمام مثبت صحیح اعداد کا سیٹ۔ || د 6 ضرب لرونکو ټولو مثبتو تامو عددونو سېټ.
+sol Infinite: {6, 12, 18, …} ## Multiples of 6 go on forever. || 6 کے اضعاف ہمیشہ جاری رہتے ہیں۔ || د 6 ضربونه تل دوام لري.
+qp g | N = {1, 2, 3, ...}
+sol Infinite ## Natural numbers never end. || قدرتی اعداد کبھی ختم نہیں ہوتے۔ || طبیعي عددونه هېڅکله نه خلاصېږي.
+q 2 | Identify empty and non-empty sets. Also give the reason. || خالی اور غیر خالی سیٹ کی شناخت کریں۔ وجہ بھی بتائیں۔ || تش او ناتش سېټونه وپېژنئ. دلیل هم ورکړئ.
+qp a | The set of circles with 7 sides. || 7 اضلاع والے دائروں کا سیٹ۔ || د 7 ضلعو لرونکو دایرو سېټ.
+sol Empty ## A circle has no straight sides at all, so no such circle exists. || دائرے کا کوئی سیدھا ضلع نہیں ہوتا، اس لیے ایسا کوئی دائرہ موجود نہیں۔ || دایره هېڅ مستقیمه ضلع نه لري، نو داسې دایره نشته.
+qp b | The set of numbers between 34 and 98. || 34 اور 98 کے درمیان اعداد کا سیٹ۔ || د 34 او 98 ترمنځ د عددونو سېټ.
+sol Non-empty ## For example 35, 36, … , 97 are between 34 and 98. || مثلاً 35، 36، … ، 97، 34 اور 98 کے درمیان ہیں۔ || د بېلګې په توګه 35، 36، … ، 97 د 34 او 98 ترمنځ دي.
+qp c | The set of bicycles having 3 wheels. || 3 پہیوں والی سائیکلوں کا سیٹ۔ || د 3 څرخو لرونکو بایسکلونو سېټ.
+sol Empty ## A bicycle has exactly 2 wheels ("bi" means two); a 3-wheeler is a tricycle. || سائیکل کے ٹھیک 2 پہیے ہوتے ہیں؛ 3 پہیوں والی ٹرائی سائیکل ہوتی ہے۔ || بایسکل دقیق 2 څرخه لري؛ درې څرخیز ټرای سایکل وي.
+qp d | The set of prime numbers. || مفرد اعداد کا سیٹ۔ || د لومړنیو عددونو سېټ.
+sol Non-empty ## 2, 3, 5, 7, … are prime numbers. || 2، 3، 5، 7، … مفرد اعداد ہیں۔ || 2، 3، 5، 7، … لومړني عددونه دي.
+qp e | The set of odd multiples of 4. || 4 کے طاق اضعاف کا سیٹ۔ || د 4 د طاقو ضربونو سېټ.
+sol Empty ## Every multiple of 4 is even (4, 8, 12, …), so none is odd. || 4 کا ہر ضعف جفت ہے (4، 8، 12، …)، اس لیے کوئی طاق نہیں۔ || د 4 هر ضرب جفت دی (4، 8، 12، …)، نو هېڅ طاق نه دی.
+qp f | The set of numbers divisible by 2. || 2 سے تقسیم ہونے والے اعداد کا سیٹ۔ || پر 2 وېشل کېدونکو عددونو سېټ.
+sol Non-empty ## 2, 4, 6, … are divisible by 2. || 2، 4، 6، … 2 سے تقسیم ہوتے ہیں۔ || 2، 4، 6، … پر 2 وېشل کېږي.
+qp g | The set of prime numbers which have at least 5 factors. || ان مفرد اعداد کا سیٹ جن کے کم از کم 5 اجزائے ضربی ہوں۔ || د هغو لومړنیو عددونو سېټ چې لږ تر لږه 5 ضربي اجزا ولري.
+sol Empty ## A prime number has exactly 2 factors (1 and itself), never 5 or more. || مفرد عدد کے ٹھیک 2 اجزائے ضربی ہوتے ہیں (1 اور وہ خود)، کبھی 5 یا زیادہ نہیں۔ || لومړنی عدد دقیق 2 ضربي اجزا لري (1 او پخپله)، هېڅکله 5 یا ډېر نه.
+q 3 | Identify the singleton sets. || اکہرے سیٹوں کی شناخت کریں۔ || یوګړي سېټونه وپېژنئ.
+qp a | The set of composite numbers less than 5. || 5 سے کم مرکب اعداد کا سیٹ۔ || له 5 کم د مرکبو عددونو سېټ.
+sol Singleton: {4} ## 1, 2, 3 are not composite; only 4 (= 2 × 2) is. || 1، 2، 3 مرکب نہیں؛ صرف 4 (= 2 × 2) مرکب ہے۔ || 1، 2، 3 مرکب نه دي؛ یوازې 4 (= 2 × 2) مرکب دی.
+qp b | The set of prime numbers between 8 and 12. || 8 اور 12 کے درمیان مفرد اعداد کا سیٹ۔ || د 8 او 12 ترمنځ د لومړنیو عددونو سېټ.
+sol Singleton: {11} ## 9 = 3 × 3 and 10 = 2 × 5 are not prime; only 11 is. || 9 = 3 × 3 اور 10 = 2 × 5 مفرد نہیں؛ صرف 11 مفرد ہے۔ || 9 = 3 × 3 او 10 = 2 × 5 لومړني نه دي؛ یوازې 11 لومړنی دی.
+qp c | The set of the provinces of Pakistan. || پاکستان کے صوبوں کا سیٹ۔ || د پاکستان د ولایتونو سېټ.
+sol Not singleton (4 elements) ## Punjab, Sindh, Khyber Pakhtunkhwa and Balochistan — more than one element. || پنجاب، سندھ، خیبر پختونخوا اور بلوچستان — ایک سے زیادہ ارکان۔ || پنجاب، سند، خیبر پښتونخوا او بلوچستان — له یو ډېر غړي.
+qp d | The set of days of the week starting with the letter F. || حرف F سے شروع ہونے والے ہفتے کے دنوں کا سیٹ۔ || د F توري پیلېدونکو د اونۍ ورځو سېټ.
+sol Singleton: {Friday} ## Only Friday starts with F. || صرف Friday حرف F سے شروع ہوتا ہے۔ || یوازې Friday په F پیلېږي.
+qp e | The set of common factors of 12, 40, 55. || 12، 40، 55 کے مشترک اجزائے ضربی کا سیٹ۔ || د 12، 40، 55 د ګډو ضربي اجزاوو سېټ.
+sol Singleton: {1} ## Factors: 12 → 1, 2, 3, 4, 6, 12; 40 → 1, 2, 4, 5, 8, 10, 20, 40; 55 → 1, 5, 11, 55. Only 1 is common. || اجزائے ضربی: 12 → 1، 2، 3، 4، 6، 12؛ 40 → 1، 2، 4، 5، 8، 10، 20، 40؛ 55 → 1، 5، 11، 55۔ صرف 1 مشترک ہے۔ || ضربي اجزا: 12 → 1، 2، 3، 4، 6، 12؛ 40 → 1، 2، 4، 5، 8، 10، 20، 40؛ 55 → 1، 5، 11، 55. یوازې 1 ګډ دی.
+qp f | The set of numbers which divide both 8 and 15. || ان اعداد کا سیٹ جو 8 اور 15 دونوں کو تقسیم کریں۔ || د هغو عددونو سېټ چې 8 او 15 دواړه ووېشي.
+sol Singleton: {1} ## Factors of 8: 1, 2, 4, 8; factors of 15: 1, 3, 5, 15. Only 1 divides both. || 8 کے اجزائے ضربی: 1، 2، 4، 8؛ 15 کے: 1، 3، 5، 15۔ صرف 1 دونوں کو تقسیم کرتا ہے۔ || د 8 ضربي اجزا: 1، 2، 4، 8؛ د 15: 1، 3، 5، 15. یوازې 1 دواړه وېشي.
+qp g | The set of multiples of 9 between 10 and 20. || 10 اور 20 کے درمیان 9 کے اضعاف کا سیٹ۔ || د 10 او 20 ترمنځ د 9 د ضربونو سېټ.
+sol Singleton: {18} ## Multiples of 9: 9, 18, 27, …; only 18 lies between 10 and 20. || 9 کے اضعاف: 9، 18، 27، …؛ صرف 18، 10 اور 20 کے درمیان ہے۔ || د 9 ضربونه: 9، 18، 27، …؛ یوازې 18 د 10 او 20 ترمنځ دی.
+q 4 | Draw a Venn diagram which shows A is a subset of B. || ایک وین شکل بنائیں جو ظاہر کرے کہ A، B کا ذیلی سیٹ ہے۔ || یو وین ډیاګرام رسم کړئ چې وښيي A د B فرعي سېټ دی.
+solution Draw circle A completely inside circle B, both inside the rectangle U.
+ss Draw a rectangle for the universal set U. Draw a big closed curve B inside it, then draw A completely inside B — every element of A is also in B. || عالمگیر سیٹ U کے لیے مستطیل بنائیں۔ اس کے اندر ایک بڑا بند منحنی B بنائیں، پھر A کو مکمل طور پر B کے اندر بنائیں — A کا ہر رکن B میں بھی ہے۔ || د عمومي سېټ U لپاره مستطیل رسم کړئ. په هغه کې یو لوی تړلی منحني B رسم کړئ، بیا A په بشپړ ډول د B دننه رسم کړئ — د A هر غړی په B کې هم دی.
+sfig venn 360 170 | E 180 95 125 52 #1d4ed8 B 95 102 | E 210 95 48 28 #4ade80 A 210 102
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Think and create an infinite set and then write it in descriptive and tabular form. Then mention its element using correct symbols. Create a set and then mention at least two sets for which it can be a universal set || ایک غیر متناہی سیٹ سوچیں اور بنائیں اور پھر اسے بیانیہ اور جدولی صورت میں لکھیں۔ پھر درست علامتوں سے اس کے ارکان کا ذکر کریں۔ ایک سیٹ بنائیں اور پھر کم از کم دو ایسے سیٹ بتائیں جن کے لیے یہ عالمگیر سیٹ ہو سکتا ہے || یو نامحدود سېټ فکر او جوړ کړئ او بیا یې په تشریحي او جدولي بڼه ولیکئ. بیا د سمو نښو په مرسته د هغه غړي یاد کړئ. یو سېټ جوړ کړئ او لږ تر لږه دوه داسې سېټونه یاد کړئ چې دا یې عمومي سېټ کېدای شي
+qsolution One example: E = set of even natural numbers = {2, 4, 6, 8, …}
+ss Descriptive form: E = set of even natural numbers. Tabular form: E = {2, 4, 6, 8, …}. || بیانیہ صورت: E = جفت قدرتی اعداد کا سیٹ۔ جدولی صورت: E = {2، 4، 6، 8، …}۔ || تشریحي بڼه: E = د جفتو طبیعي عددونو سېټ. جدولي بڼه: E = {2، 4، 6، 8، …}.
+ss Using symbols: 4 ∈ E, 10 ∈ E, but 7 ∉ E. || علامتوں سے: 4 ∈ E، 10 ∈ E، مگر 7 ∉ E۔ || په نښو: 4 ∈ E، 10 ∈ E، خو 7 ∉ E.
+ss Universal set: N = {1, 2, 3, …} is a universal set for E = even numbers and O = odd numbers, because both are inside N. || عالمگیر سیٹ: N = {1، 2، 3، …}، E = جفت اعداد اور O = طاق اعداد کے لیے عالمگیر سیٹ ہے کیونکہ دونوں N کے اندر ہیں۔ || عمومي سېټ: N = {1، 2، 3، …} د E = جفتو عددونو او O = طاقو عددونو لپاره عمومي سېټ دی، ځکه دواړه د N دننه دي.
+endsolution
+endbox
+@sec u5-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- A well defined collection of distinct objects is called a set. || ممتاز اشیاء کا واضح طور پر متعین مجموعہ سیٹ کہلاتا ہے۔ || د جلا شیانو په ښه ډول ټاکل شوې ټولګه سېټ بلل کېږي.
+- The objects of the set are called "members" or "elements" of the set. || سیٹ کی اشیاء کو سیٹ کے "ارکان" یا "عناصر" کہتے ہیں۔ || د سېټ شیانو ته د سېټ "غړي" یا "عناصر" وايي.
+- The symbol "∈" is used to show that an element "belongs to" the set. || علامت "∈" یہ ظاہر کرنے کے لیے استعمال ہوتی ہے کہ رکن سیٹ سے "تعلق رکھتا ہے"۔ || د "∈" نښه د دې ښودلو لپاره کارېږي چې غړی سېټ ته "تړاو لري".
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Set || سیٹ || سېټ
+- Well-defind || واضح طور پر متعین || په ښه ډول ټاکل شوی
+- Element || رکن || غړی
+- Distinct || ممتاز || جلا
+- Cardinality || عددیت || کارډینالیټي
+- Descriptive form || بیانیہ صورت || تشریحي بڼه
+- Tabular form || جدولی صورت || جدولي بڼه
+- Finite set || متناہی سیٹ || محدود سېټ
+- Infinite set || غیر متناہی سیٹ || نامحدود سېټ
+- Singleton set || اکہرا سیٹ || یوګړی سېټ
+endbox

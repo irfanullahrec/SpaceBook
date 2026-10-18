@@ -1,0 +1,36 @@
+@printed 118
+@status lesson
+q 2 | A battery is a. A single cell b. A combination of cells in which cells are joined (+) to (−) c. A combination of cells in which cells are joined (+) to (+) d. Unlimited supply of electrical energy || بیٹری کیا ہے؟ || بیټري څه ده؟
+sol b. A combination of cells in which cells are joined (+) to (−) ## || سیلوں کا مجموعہ جو (+) سے (−) جڑے ہوں || د سېلونو ډله چې (+) له (−) سره نښتي وي
+q 3 | A substance that allows electricity to pass through it is called: a. A conductor b. An insulator c. Semiconductor d. Superconductor || وہ مادہ جو بجلی کو گزرنے دے کیا کہلاتا ہے؟ || هغه ماده چې برېښنا تېروي څه بلل کېږي؟
+sol a. A conductor ## || موصل || هادي
+q 4 | All of the following are examples of conductors except: a. Tap water b. Salt solution c. Metal wire d. Plastic || ان میں سے کون موصل نہیں ہے؟ || له دې څخه کوم هادي نه دی؟
+sol d. Plastic ## || پلاسٹک || پلاستیک
+q 5 | Choose correct direction of current. (Four drawings a–d of a cell joined to a bulb, with arrows showing the direction around the circuit.) || رو کی درست سمت چنیں۔ || د جریان سم لوری وټاکئ.
+svg Options a–d: cell (positive terminal at top) and bulb; arrows on the upper and lower wires || اختیارات الف تا د: سیل اور بلب کے ساتھ سمت کے تیر || اختیارونه الف-د: سېل او ګروپ د لوري غشو سره
+<svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13" role="img" aria-label="Four current direction options">
+<defs><marker id="c95" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#111"/></marker></defs>
+<g id="cellb"><rect x="20" y="25" width="22" height="70" fill="#111"/><rect x="20" y="25" width="22" height="22" fill="#db2777"/><rect x="27" y="20" width="8" height="5" fill="#9ca3af"/>
+<path d="M31 20 Q80 0 100 55 M31 95 Q80 115 100 65" fill="none" stroke="#111"/><circle cx="102" cy="60" r="7" fill="#e5e7eb" stroke="#111"/></g>
+<use href="#cellb" x="130"/><use href="#cellb" x="260"/><use href="#cellb" x="390"/>
+<g stroke="#111" marker-end="url(#c95)">
+<path d="M55 10 l18 4"/><path d="M60 108 l18 -4"/>
+<path d="M185 10 l18 4"/><path d="M208 104 l-18 4"/>
+<path d="M333 14 l-18 -4"/><path d="M320 108 l18 -4"/>
+<path d="M463 14 l-18 -4"/><path d="M468 104 l-18 4"/>
+</g>
+<g font-weight="bold"><text x="2" y="20">a.</text><text x="132" y="20">b.</text><text x="262" y="20">c.</text><text x="392" y="20">d.</text></g>
+</svg>
+endsvg
+sol b. — current leaves the positive (+) terminal at the top, passes through the bulb and returns to the negative (−) terminal. ## Conventional current flows from + to −. || روایتی رو مثبت سے منفی کی طرف بہتی ہے۔ || دودیز جریان له مثبت څخه منفي ته بهېږي.
+q 6 | If a body is negatively charged, then it has: a. Excess of electrons b. Excess of protons c. Deficiency of electrons d. Deficiency of neutrons || اگر جسم منفی چارج ہو تو اس میں: || که جسم منفي چارج ولري نو:
+sol a. Excess of electrons ## || الیکٹرانوں کی زیادتی || د الکترونونو زیاتوالی
+q 7 | Adding more bulbs to a circuit with one battery would: a. Make them brighter b. Make them sharper c. Make them dimmer d. Make them colourless || ایک بیٹری والے سرکٹ میں مزید بلب لگانے سے: || له یوې بیټرۍ سرکټ ته د نورو ګروپونو زیاتول:
+sol c. Make them dimmer ## (in a series circuit) || انہیں مدھم کرے گا || کمرنګه کوي یې
+q 8 | Cell is a device which converts: a. Chemical energy into electrical energy b. Electrical energy into light energy c. Electrical energy into magnetic energy d. Chemical energy into light energy || سیل ایک ایسا آلہ ہے جو تبدیل کرتا ہے: || سېل هغه آله ده چې اړوي:
+sol a. Chemical energy into electrical energy ## || کیمیائی توانائی کو برقی توانائی میں || کیمیاوي انرژي برېښنايي ته
+@issue MCQ 8 repeats MCQ 1 (same stem "Cell is a device which converts") — printed twice in the book.
+q 9 | An electric device which easily closes or opens an electric circuit is a. filament. b. electric bulb. c. electric switch. d. electric cell. || وہ آلہ جو سرکٹ کو آسانی سے بند یا کھولتا ہے: || هغه آله چې سرکټ په اسانۍ تړي یا خلاصوي:
+sol c. electric switch ## || برقی سوئچ || برېښنايي سویچ
+q 10 | Bulb glows only in: a. Closed circuit b. Open circuit c. In both circuits d. Open circuit if bulb is not fused || بلب صرف کس میں جلتا ہے؟ || ګروپ یوازې په کې بلېږي:
+sol a. Closed circuit ## || بند سرکٹ || تړلی سرکټ

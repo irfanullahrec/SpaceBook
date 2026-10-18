@@ -1,0 +1,40 @@
+@printed 144
+example 2 | Find the length of the rectangular playground if the area of the rectangles 4800 m² and width is 600m. || اگر مستطیل کھیل کے میدان کا رقبہ 4800 m² اور چوڑائی 600 m ہو تو اس کی لمبائی معلوم کریں۔ || که د مستطیلي لوبغالي مساحت 4800 m² او پلنوالی 600 m وي، اوږدوالی یې معلوم کړئ.
+rect 2 1 #fbcfe8 | ? | 14 m | ? | 600 m
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Area of a rectangle} &= 4800 \text{ m}^2 \\ \text{Width of playground} &= 600 \text{ m} \\ \text{Area of rectangle} &= \text{length} \times \text{width} \\ 4800 \text{ m}^2 &= \text{length} \;\; 600 \text{ m} \\ \frac{4800 \text{ m}^2}{600 \text{ m}} & \\ 800 \text{ m} &= \text{length} \end{aligned}
+p The length of the playground is 800 m. || کھیل کے میدان کی لمبائی 800 m ہے۔ || د لوبغالي اوږدوالی 800 m دی.
+endexample
+@issue Example 2 (page 144): 4800 ÷ 600 = 8, so the length is 8 m, not 800 m as printed; the figure also shows an unrelated "14 m". Kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the area and perimeter of their lunch boxes. || اپنے لنچ باکس کا رقبہ اور احاطہ معلوم کریں۔ || د خپلو د غرمې ډوډۍ بکسونو مساحت او محیط معلوم کړئ.
+p Make the layout of their house on a grid sheet and find Area and perimeter of each room. || گرڈ شیٹ پر اپنے گھر کا نقشہ بنائیں اور ہر کمرے کا رقبہ اور احاطہ معلوم کریں۔ || په جال لرونکې پاڼه د خپل کور نقشه جوړه کړئ او د هرې کوټې مساحت او محیط معلوم کړئ.
+p Count the tiles of the room and estimate the area and perimeter of the classroom. || کمرے کی ٹائلیں گنیں اور کلاس روم کے رقبے اور احاطے کا اندازہ لگائیں۔ || د کوټې ټایلونه وشمېرئ او د ټولګي د مساحت او محیط اټکل وکړئ.
+endbox
+example 3 | A rectangular ground is 600 cm in length and 550 cm wide. The cost of fencing the ground Rs 75 per meter. Find the cost of fencing around the ground. || ایک مستطیل میدان 600 cm لمبا اور 550 cm چوڑا ہے۔ میدان کی باڑ لگانے کی لاگت 75 روپے فی میٹر ہے۔ میدان کے گرد باڑ لگانے کی لاگت معلوم کریں۔ || یو مستطیلي ډګر 600 cm اوږد او 550 cm پلن دی. د ډګر د کټارې لګښت په هر متر 75 روپۍ دی. د ډګر شاوخوا د کټارې لګښت معلوم کړئ.
+rect 600 550 #22d3ee | 600 cm | ? | 600 cm | 550
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Perimeter of ground is} &= 2(\text{length} + \text{width}) \\ &= 2(600 \text{ cm} + 550 \text{ cm}) \\ &= 2(1150 \text{ cm}) \\ \text{Perimeter of a ground} &= 2300 \text{ cm} = 23 \text{ m} \\ \text{Cost of fencing per metre square} &= \text{Rs } 75 \text{ m} \\ \text{Cost of fencing } 23 \text{ m} &= 23 \times 75 \\ &= \text{Rs } 1725 \text{ m} \end{aligned}
+endexample
+@issue Example 3 (page 144) writes "per metre square" and "Rs 1725 m"; fencing is per metre and the answer is Rs 1725. Kept as printed.
+exercise 8.1
+q 1 | Find the perimeter of the following figures. || درج ذیل اشکال کا احاطہ معلوم کریں۔ || د لاندې شکلونو محیط معلوم کړئ.
+qp a | Rectangle 2.5 cm by 1.4 cm || مستطیل 2.5 cm ضرب 1.4 cm || مستطیل 2.5 cm په 1.4 cm
+rect 25 14 #22c55e | 2.5 cm | 1.4 cm
+solution 7.8 cm
+ss Perimeter of a rectangle = 2(length + width). || مستطیل کا احاطہ = 2(لمبائی + چوڑائی)۔ || د مستطیل محیط = 2(اوږدوالی + پلنوالی).
+sm 2(2.5 + 1.4) = 2 \times 3.9 = 7.8 \text{ cm}
+endsolution
+qp b | Square of side 15 cm || 15 cm ضلع والا مربع || د 15 cm ضلعې مربع
+rect 1 1 #22c55e | 15 cm | 15 cm
+solution 60 cm
+ss All four sides are 15 cm, so perimeter = 4 × side. || چاروں اضلاع 15 cm ہیں، اس لیے احاطہ = 4 × ضلع۔ || څلورې ضلعې 15 cm دي، نو محیط = 4 × ضلع.
+sm 4 \times 15 = 60 \text{ cm}
+endsolution
+qp c | Rectangle 45 cm by 39 cm || مستطیل 45 cm ضرب 39 cm || مستطیل 45 cm په 39 cm
+rect 45 39 #22c55e | 45 cm | 39 cm
+solution 168 cm
+sm 2(45 + 39) = 2 \times 84 = 168 \text{ cm}
+ss Perimeter of a rectangle = 2(length + width). || مستطیل کا احاطہ = 2(لمبائی + چوڑائی)۔ || د مستطیل محیط = 2(اوږدوالی + پلنوالی).
+endsolution
+@issue Exercise 8.1 Q1 parts a)–c) are pictures only (labelled rectangles); a short text description is added to each part for the coded version.

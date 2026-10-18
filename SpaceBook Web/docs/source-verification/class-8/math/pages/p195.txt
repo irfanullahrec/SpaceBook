@@ -1,0 +1,29 @@
+@printed 187
+@issue The printed number lines circle the boundary point and draw an arrow over the solution side; recreated with the same marks.
+example 1
+p Solve: $x + 1 < 4$. || حل کریں: $x + 1 < 4$۔ || حل کړئ: $x + 1 < 4$.
+## Solution: || حل: || حل:
+p To solve this inequality, follow the same steps that are used in solving linear equations. Here 1 is on the same side as the variable. So, we need to isolate the variable. || اس عدم مساوات کو حل کرنے کے لیے وہی مراحل اختیار کریں جو خطی مساواتیں حل کرنے میں استعمال ہوتے ہیں۔ یہاں 1 متغیر کے ساتھ ایک ہی طرف ہے۔ لہٰذا ہمیں متغیر کو الگ کرنا ہوگا۔ || د دې نابرابرۍ د حل لپاره همغه پړاوونه تعقیب کړئ چې د خطي معادلو په حل کې کارول کېږي. دلته 1 له متغیر سره په یوه خوا دی. نو باید متغیر جلا کړو.
+p Subtract 1 from both sides: || دونوں اطراف سے 1 تفریق کریں: || له دواړو خواوو 1 کم کړئ:
+m $x + 1 - 1 < 4 - 1$
+m $x < 3$
+p So, $x < 3$ is the solution for this inequality. We can say that the solution of this inequality are all the numbers less than 3. || لہٰذا $x < 3$ اس عدم مساوات کا حل ہے۔ ہم کہہ سکتے ہیں کہ اس عدم مساوات کا حل 3 سے کم تمام اعداد ہیں۔ || نو $x < 3$ د دې نابرابرۍ حل دی. ویلی شو چې د دې نابرابرۍ حل له 3 څخه کوچني ټول عددونه دي.
+p We can also show the solution of an inequality on a number line. || ہم عدم مساوات کا حل عددی خط پر بھی دکھا سکتے ہیں۔ || د نابرابرۍ حل د عددونو پر کرښه هم ښودلی شو.
+p Let's represent $x < 3$ on a number line. || آئیے $x < 3$ کو عددی خط پر ظاہر کریں۔ || راځئ $x < 3$ د عددونو پر کرښه وښیو.
+p Draw number line and mark the points on it. Then look for the portion of number line that represents the solution. Here $x < 3$ means numbers less than 3 are the solutions. So, colour the correct portion. || عددی خط بنائیں اور اس پر نقاط لگائیں۔ پھر عددی خط کا وہ حصہ دیکھیں جو حل کو ظاہر کرتا ہے۔ یہاں $x < 3$ کا مطلب ہے کہ 3 سے کم اعداد حل ہیں۔ لہٰذا درست حصے میں رنگ بھریں۔ || د عددونو کرښه رسم کړئ او پر هغې ټکي په نښه کړئ. بیا د کرښې هغه برخه وګورئ چې حل ښيي. دلته $x < 3$ معنا دا ده چې له 3 څخه کوچني عددونه حل دي. نو سمه برخه رنګ کړئ.
+nline -10..10 | circ=3 | top=3:-10:x < 3 || x < 3 on the number line || عددی خط پر x < 3 || د عددونو پر کرښه x < 3
+endexample
+example 2
+p Solve: $x - 2 > 4$. || حل کریں: $x - 2 > 4$۔ || حل کړئ: $x - 2 > 4$.
+## Solution: || حل: || حل:
+p First isolate the variable. || پہلے متغیر کو الگ کریں۔ || لومړی متغیر جلا کړئ.
+p Add 2 to both sides: || دونوں اطراف 2 جمع کریں: || دواړو خواوو ته 2 جمع کړئ:
+m $x - 2 + 2 > 4 + 2$
+m $x > 6$
+p So, $x > 6$ is the solution for this inequality. We can say that the solution of this inequality is "all the numbers greater than 6". || لہٰذا $x > 6$ اس عدم مساوات کا حل ہے۔ ہم کہہ سکتے ہیں کہ اس عدم مساوات کا حل "6 سے بڑے تمام اعداد" ہیں۔ || نو $x > 6$ د دې نابرابرۍ حل دی. ویلی شو چې د دې نابرابرۍ حل "له 6 څخه لوی ټول عددونه" دي.
+p Let's show this solution on a number line. || آئیے یہ حل عددی خط پر دکھائیں۔ || راځئ دا حل د عددونو پر کرښه وښیو.
+nline -10..10 | circ=6 | top=6:10:x > 6 || x > 6 on the number line || عددی خط پر x > 6 || د عددونو پر کرښه x > 6
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the students we can find the solution of an inequality by isolating the variables involved towards one side of the inequality. || طلبہ کو سمجھائیں کہ ہم متعلقہ متغیرات کو عدم مساوات کی ایک طرف الگ کر کے عدم مساوات کا حل معلوم کر سکتے ہیں۔ || زده کوونکو ته تشریح کړئ چې د اړوندو متغیرونو د نابرابرۍ یوې خوا ته په جلا کولو د نابرابرۍ حل موندلی شو.
+endbox

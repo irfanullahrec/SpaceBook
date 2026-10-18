@@ -1,0 +1,38 @@
+@printed 115
+example 2 | Simplify $(5a^3 + 3a^2 - 4a + 5) - (a^3 - 2a^2 + a - 4)$ || سادہ کریں $(5a^3 + 3a^2 - 4a + 5) - (a^3 - 2a^2 + a - 4)$ || ساده کړئ $(5a^3 + 3a^2 - 4a + 5) - (a^3 - 2a^2 + a - 4)$
+p **Solution:** Remove the brackets and change the sign of the terms which are to be subtracted. || **حل:** قوسین ہٹائیں اور تفریق ہونے والے ارکان کی علامت بدلیں۔ || **حل:** قوسونه لرې کړئ او د تفریق کېدونکو حدونو نښه بدله کړئ.
+eq \begin{aligned} &(5a^3 + 3a^2 - 4a + 5) - (a^3 - 2a^2 + a - 4) \\ &= 5a^3 + 3a^2 - 4a + 5 - a^3 + 2a^2 - a + 4 \end{aligned}
+p Now group like terms and add. || اب یکساں ارکان کو گروہ میں لا کر جمع کریں۔ || اوس ورته حدونه یوځای کړئ او جمع یې کړئ.
+eq \begin{aligned} &= 5a^3 - a^3 + 3a^2 + 2a^2 - 4a - a + 5 + 4 \\ &= 4a^3 + 5a^2 - 5a + 9 \end{aligned}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p To add or subtract the like terms of two polynomials, just add or subtract their coefficients. The variables and powers of the like terms remains the same. || دو کثیر رکنیوں کے یکساں ارکان کو جمع یا تفریق کرنے کے لیے صرف ان کے عددی سر جمع یا تفریق کریں۔ یکساں ارکان کے متغیرات اور طاقتیں وہی رہتی ہیں۔ || د دوو څو حدي افادو د ورته حدونو د جمع یا تفریق لپاره یوازې د هغوی ضریبونه جمع یا تفریق کړئ. د ورته حدونو متحولونه او طاقتونه همغه پاتې کېږي.
+endbox
+p To add or subtract the polynomials vertically, arange them in vertical form in such a way that the terms having the same exponents are aligned. Then add them in the usual manner. || کثیر رکنیوں کو عمودی طور پر جمع یا تفریق کرنے کے لیے انہیں عمودی صورت میں اس طرح لکھیں کہ ایک جیسی قوت نما والے ارکان سیدھ میں ہوں۔ پھر انہیں معمول کے مطابق جمع کریں۔ || د څو حدي افادو د عمودي جمع یا تفریق لپاره هغه په عمودي بڼه داسې ولیکئ چې یو شان توانونه لرونکي حدونه په یوه کرښه کې وي. بیا یې په معمول ډول جمع کړئ.
+example 3 | Add the following. $3a^3 - 5a^2 + 8a + 1$, $5a^3 - 3a - 2$ and $9a^2 - 4a + 7$ || درج ذیل کو جمع کریں۔ $3a^3 - 5a^2 + 8a + 1$، $5a^3 - 3a - 2$ اور $9a^2 - 4a + 7$ || لاندې جمع کړئ. $3a^3 - 5a^2 + 8a + 1$، $5a^3 - 3a - 2$ او $9a^2 - 4a + 7$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{array}{rrrr} 3a^3 & -5a^2 & +8a & +1 \\ 5a^3 & & -3a & -2 \\ & +9a^2 & -4a & +7 \\ \hline 8a^3 & +4a^2 & +a & +6 \end{array}
+endexample
+example 4 | Subtract $-3x^3 + x^2 - 2x$ from $9x^3 - 5x^2 - x + 1$. || $9x^3 - 5x^2 - x + 1$ میں سے $-3x^3 + x^2 - 2x$ تفریق کریں۔ || له $9x^3 - 5x^2 - x + 1$ څخه $-3x^3 + x^2 - 2x$ تفریق کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{array}{rrrr} 9x^3 & -5x^2 & -x & +1 \\ \mp 3x^3 & \pm x^2 & \mp 2x & \\ \hline 12x^3 & -6x^2 & +x & +1 \end{array}
+endexample
+example 5 | What should be added to $2a^3 + a^2 - 3a - 1$ to get $7 + 2a - a^2 + 4a^3$? || $2a^3 + a^2 - 3a - 1$ میں کیا جمع کیا جائے کہ $7 + 2a - a^2 + 4a^3$ حاصل ہو؟ || $2a^3 + a^2 - 3a - 1$ ته څه ور زیات شي ترڅو $7 + 2a - a^2 + 4a^3$ لاسته راشي؟
+p **Solution:** || **حل:** || **حل:**
+p Arrange the polynomial $7 + 2a - a^2 + 4a^3$ in descending order as $4a^3 - a^2 + 2a + 7$, then subtract $2a^3 + a^2 - 3a - 1$ from $4a^3 - a^2 + 2a + 7$. || کثیر رکنی $7 + 2a - a^2 + 4a^3$ کو نزولی ترتیب میں $4a^3 - a^2 + 2a + 7$ لکھیں، پھر $4a^3 - a^2 + 2a + 7$ میں سے $2a^3 + a^2 - 3a - 1$ تفریق کریں۔ || څو حدي افاده $7 + 2a - a^2 + 4a^3$ په نزولي ترتیب $4a^3 - a^2 + 2a + 7$ ولیکئ، بیا له $4a^3 - a^2 + 2a + 7$ څخه $2a^3 + a^2 - 3a - 1$ تفریق کړئ.
+eq (4a^3 - a^2 + 2a + 7) - (2a^3 + a^2 - 3a - 1)
+p Remove the brackets and change the sign of the terms which are to be subtracted. || قوسین ہٹائیں اور تفریق ہونے والے ارکان کی علامت بدلیں۔ || قوسونه لرې کړئ او د تفریق کېدونکو حدونو نښه بدله کړئ.
+eq = 4a^3 - a^2 + 2a + 7 - 2a^3 - a^2 + 3a + 1
+p Group like terms, then add and subtract them. || یکساں ارکان کو گروہ میں لائیں، پھر جمع اور تفریق کریں۔ || ورته حدونه یوځای کړئ، بیا یې جمع او تفریق کړئ.
+eq \begin{aligned} &= 4a^3 - 2a^3 - a^2 - a^2 + 2a + 3a + 7 + 1 \\ &= 2a^3 - 2a^2 + 5a + 8 \end{aligned}
+p Thus, $2a^3 - 2a^2 + 5a + 8$ is the required polynomial. || لہٰذا $2a^3 - 2a^2 + 5a + 8$ مطلوبہ کثیر رکنی ہے۔ || نو $2a^3 - 2a^2 + 5a + 8$ غوښتل شوې څو حدي افاده ده.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qp a | $(5y + y^2 + 1) + (y + 8y^2 - 1)$
+qp b | $(6x^2 - 8y^2) - (8y^2 + 7x^2)$
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Assign some questions releted to operations on polynomials to the students by writing them on board or write them on chart paper and paste it on the board. Mention 10-15 minutes time for students to solve the questions. After the time finishes, ask the students to exchange their notebooks with other students to check. || کثیر رکنیوں پر عملیات سے متعلق کچھ سوالات بورڈ پر لکھ کر یا چارٹ پیپر پر لکھ کر بورڈ پر چسپاں کر کے طلبہ کو دیں۔ سوالات حل کرنے کے لیے 10-15 منٹ کا وقت مقرر کریں۔ وقت ختم ہونے کے بعد طلبہ سے کہیں کہ جانچ کے لیے اپنی کاپیاں دوسرے طلبہ سے بدل لیں۔ || پر څو حدي افادو د عملیو اړوند څو پوښتنې پر تخته ولیکئ یا پر چارټ کاغذ ولیکئ او پر تخته یې ونښلوئ او زده کوونکو ته یې ورکړئ. د پوښتنو د حل لپاره 10-15 دقیقې وخت وټاکئ. له وخت پای ته رسېدو وروسته له زده کوونکو وغواړئ چې د کتنې لپاره خپلې کتابچې له نورو زده کوونکو سره بدلې کړي.
+endbox
+@issue Page prints "arange" and "releted"; kept as printed.

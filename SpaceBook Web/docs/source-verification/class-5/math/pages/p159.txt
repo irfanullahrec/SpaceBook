@@ -1,0 +1,34 @@
+@printed 151
+@deco Picture of a square classroom window with a red frame; cartoon boy and girl beside the speech bubbles; cartoon boy with magnifying glass beside "Key Fact".
+p Observe the given square and rectangle. || دیے گئے مربع اور مستطیل کا مشاہدہ کریں۔ || ورکړل شوي مربع او مستطیل ته پام وکړئ.
+poly _a:0,0 _b:9,0 _c:9,3 _d:0,3 | fill=#dcfce7 | sides=9m,3m,9m,3m | scale=30 || Rectangle 9 m by 3 m || 9 m × 3 m کا مستطیل || 9 m × 3 m مستطیل
+poly _a:0,0 _b:2,0 _c:2,2 _d:0,2 | fill=#dcfce7 | sides=2m,2m,2m,2m | scale=45 || Square of side 2 m || 2 m ضلع والا مربع || د 2 m ضلعې مربع
+p The total length of the boundary which highlighted with blue colour is called their perimeter. While the green portion, surrounded by their boundaries is called their area. || نیلے رنگ سے نمایاں حد کی کل لمبائی ان کا احاطہ کہلاتی ہے، جبکہ ان کی حدوں سے گھرا ہوا سبز حصہ ان کا رقبہ کہلاتا ہے۔ || د پولې ټول اوږدوالی چې په نیلي رنګ ښودل شوی د هغوی محیط بلل کېږي، او د هغوی په پولو کې راګیره شنه برخه یې مساحت بلل کېږي.
+@issue The text refers to the boundary "highlighted with blue colour", but the printed outlines are thin black lines. Kept as printed.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Can we calculate the area and perimeter of the given figures? Give reason to support your answer. || کیا ہم دی گئی اشکال کا رقبہ اور احاطہ معلوم کر سکتے ہیں؟ اپنے جواب کی دلیل دیں۔ || ایا موږ د ورکړل شوو شکلونو مساحت او محیط حسابولی شو؟ د خپل ځواب دلیل ورکړئ.
+svg Three open figures (shapes whose boundaries are not closed) || تین کھلی اشکال (جن کی حد بند نہیں) || درې خلاص شکلونه (چې پوله یې تړلې نه ده)
+<svg viewBox="0 0 330 90" width="300" role="img" aria-label="Three open figures that are not closed" font-family="Segoe UI, Arial, sans-serif"><g fill="none" stroke="#0f172a" stroke-width="2"><path d="M30 10 H90 V80 H10"/><path d="M190 5 H130 V80 H195 M140 15 H180 V70 H140"/><path d="M240 5 V80 H315 V5"/></g></svg>
+endsvg
+endbox
+@sec u8-sqperim | Perimeter of a Square || مربع کا احاطہ || د مربع محیط
+# Perimeter of a Square || مربع کا احاطہ || د مربع محیط
+box note
+p The window of our classroom is square shaped and length of one side is 2 metres. How can we find its perimeter? || ہمارے کلاس روم کی کھڑکی مربع شکل کی ہے اور اس کے ایک ضلع کی لمبائی 2 میٹر ہے۔ ہم اس کا احاطہ کیسے معلوم کر سکتے ہیں؟ || زموږ د ټولګي کړکۍ مربع شکله ده او د یوې ضلعې اوږدوالی یې 2 متره دی. موږ یې محیط څنګه معلومولی شو؟
+endbox
+box key | Key Fact || اہم حقیقت || مهم حقیقت
+p The lengths of all sides of a square are equal. || مربع کے تمام اضلاع کی لمبائیاں برابر ہوتی ہیں۔ || د مربع د ټولو ضلعو اوږدوالي برابر دي.
+endbox
+box note
+p We can find its' perimeter by adding the length of one side of the window 4 times or by multiplying length of one side with 4. || ہم کھڑکی کے ایک ضلع کی لمبائی کو 4 بار جمع کر کے یا ایک ضلع کی لمبائی کو 4 سے ضرب دے کر اس کا احاطہ معلوم کر سکتے ہیں۔ || موږ د کړکۍ د یوې ضلعې اوږدوالی څلور ځله جمع کولو یا د یوې ضلعې اوږدوالی په 4 کې ضربولو سره یې محیط معلومولی شو.
+endbox
+p Perimeter of a square = 4 × length of one side || مربع کا احاطہ = 4 × ایک ضلع کی لمبائی || د مربع محیط = 4 × د یوې ضلعې اوږدوالی
+p If we represent the length of the square by L, then: || اگر ہم مربع کی لمبائی کو L سے ظاہر کریں تو: || که د مربع اوږدوالی په L وښیو، نو:
+eq \text{Perimeter of a square} = 4 \times L
+p The length of one side of the window = 2 m || کھڑکی کے ایک ضلع کی لمبائی = 2 m || د کړکۍ د یوې ضلعې اوږدوالی = 2 m
+eq \text{Perimeter of window} = 4 \times 2\ \text{m} = 8\ \text{m}
+poly _a:0,0 _b:2,0 _c:2,2 _d:0,2 | fill=#dcfce7 | sides=2m,,, | ticks=1,1,1,1 | scale=50 || Square window of side 2 m || 2 m ضلع والی مربع کھڑکی || د 2 m ضلعې مربع کړکۍ
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Find the perimeter of the given squared shape. || دی گئی مربع شکل کا احاطہ معلوم کریں۔ || د ورکړل شوي مربع شکل محیط معلوم کړئ.
+poly _a:0,0 _b:2,0 _c:2,2 _d:0,2 | fill=#dcfce7 | sides=,9cm,, | ticks=1,1,1,1 | scale=40 || Square with side 9 cm || 9 cm ضلع والا مربع || د 9 cm ضلعې مربع
+endbox

@@ -1,0 +1,20 @@
+@printed 25
+@deco Two screenshots of an Excel "Result sheet Annual Exam" with the Formula bar showing =C4+D4+E4+F4 (cell G4, Obtained marks, 68, highlighted with a red arrow and a dashed box on C4:F4) and =G4/80*100 (cell I4, Percentage, 85).
+## 2.4 Formulas and Functions || 2.4 فارمولے اور فنکشنز || 2.4 فورمولونه او فنکشنونه
+p There are two basic ways to perform calculations using formulas and functions. || فارمولوں اور فنکشنز کے ذریعے حساب کتاب کرنے کے دو بنیادی طریقے ہیں۔ || د فورمولونو او فنکشنونو په کارولو سره د محاسبې کولو دوه بنسټیز لارې شته.
+### 2.4.1 Formulas || 2.4.1 فارمولے || 2.4.1 فورمولونه
+p A formula is an expression that operates on values in a cell or a range of cells. A formula always begins with an equality sign (=). || فارمولا ایسا اظہار ہے جو کسی سیل یا خلیوں کی حد میں موجود قدروں پر عمل کرتا ہے۔ فارمولا ہمیشہ مساوات کی علامت (=) سے شروع ہوتا ہے۔ || فورمول داسې بیان دی چې په یوه حجره یا د حجرو په پراخوالي کې په ارزښتونو عمل کوي. فورمول تل د برابرۍ نښې (=) سره پیلېږي.
+p For example, sum of marks of 4 subjects are calculated using the formula: = C4+D4+E4+F4. || مثال کے طور پر، 4 مضامین کے نمبروں کا مجموعہ اس فارمولے سے نکالا جاتا ہے: = C4+D4+E4+F4۔ || د بېلګې په توګه، د ۴ مضمونونو د نمبرو مجموعه د دې فورمول په کارولو سره محاسبه کېږي: = C4+D4+E4+F4.
+table
+th | Roll # | Student Name | English marks | Science marks | Math marks | Urdu marks | Obtained marks | Average | Percentage | Remarks (Pass/Fail)
+tr | 1001 | Musab Umair | 18 | 17 | 19 | 14 | 68 | 17 | 85 | Pass
+tr | 1002 | Heeba Fatima | 13 | 12 | 8 | 13 | 46 | 11.5 | 57.5 | Fail
+tr | 1003 | Aoun Khan | 15 | 17 | 18 | 16 | 66 | 16.5 | 82.5 | Pass
+tr | 1004 | Maheen | 18 | 19 | 20 | 17 | 74 | 18.5 | 92.5 | Pass
+tr | 1005 | Ali Raza | 12 | 14 | 15 | 13 | 54 | 13.5 | 67.5 | Pass
+endtable
+p Table: "Result sheet Annual Exam" — Obtained marks in G4 = C4+D4+E4+F4 (Formula bar). || جدول: "نتیجہ شیٹ سالانہ امتحان" — G4 میں حاصل کردہ نمبر = C4+D4+E4+F4 (فارمولا بار)۔ || جدول: "د کلنۍ ازموینې د پایلو پاڼه" — په G4 کې ترلاسه شوي نمبرې = C4+D4+E4+F4 (فورمول بار).
+p Percentage of a student's marks is calculated using formula as shown below. (Formula bar: =G4/80*100, cell I4 = 85) || طالب علم کے نمبروں کا فیصد نیچے دکھائے گئے فارمولے سے نکالا جاتا ہے۔ (فارمولا بار: =G4/80*100، سیل I4 = 85) || د زده کوونکي د نمبرو سلنه لاندې ښودل شوي فورمول په کارولو سره محاسبه کېږي. (فورمول بار: =G4/80*100، حجره I4 = 85)
+box tip | Tip || مشورہ || لارښوونه
+p The obtained marks of the students can also be calculated using AutoSum Σ. || طلبہ کے حاصل کردہ نمبر آٹو سم Σ سے بھی نکالے جا سکتے ہیں۔ || د زده کوونکو ترلاسه شوي نمبرې د AutoSum Σ په مرسته هم محاسبه کېدای شي.
+endbox

@@ -1,0 +1,23 @@
+@printed 94
+@issue Coin values read from the coin designs: small silver (Faisal Mosque) Re 1, larger silver (Badshahi Mosque) Rs 2, small gold (pentagon "5") Rs 5, large gold (Minar-e-Pakistan) Rs 10. With these values the five left groups (40, 30, 80, 50, 100) match the five right groups one to one.
+p Match the same amount of money. || برابر رقم کو ملائیں۔ || برابرې پیسې سره وښلوئ.
+box info | Hint || اشارہ || اشاره
+p First add the values of notes and coins and then match. || پہلے نوٹوں اور سکوں کی مالیت جمع کریں اور پھر ملائیں۔ || لومړی د نوټونو او سکو ارزښت جمع کړئ او بیا یې وښلوئ.
+endbox
+q 5 | Left: six Re 1 coins, two Rs 2 coins and six Rs 5 coins || بائیں: ایک روپے کے چھ سکے، دو روپے کے دو سکے اور پانچ روپے کے چھ سکے || کیڼ: د یوې روپۍ شپږ سکې، د دوو روپیو دوه سکې او د پنځو روپیو شپږ سکې
+cnt coin1:6/2 coin2:2 coin5:6/3 frame || 6 × Re 1, 2 × Rs 2, 6 × Rs 5 || ۶ × ۱ روپیہ، ۲ × ۲ روپے، ۶ × ۵ روپے || ۶ × ۱ روپۍ، ۲ × ۲ روپۍ، ۶ × ۵ روپۍ
+sol Rs 40 — match with two Rs 10 coins and a Rs 20 note. ## 6 + 4 + 30 = 40 || ۶ + ۴ + ۳۰ = ۴۰ || ۶ + ۴ + ۳۰ = ۴۰
+q 6 | Left: three Rs 10 coins || بائیں: دس روپے کے تین سکے || کیڼ: د لسو روپیو درې سکې
+cnt coin10:3 frame || 3 × Rs 10 || ۳ × ۱۰ روپے || ۳ × ۱۰ روپۍ
+sol Rs 30 — match with a Rs 20 note and a Rs 10 note. ## 10 + 10 + 10 = 30 || ۱۰ + ۱۰ + ۱۰ = ۳۰ || ۱۰ + ۱۰ + ۱۰ = ۳۰
+q 7 | Left: four Rs 20 notes || بائیں: بیس روپے کے چار نوٹ || کیڼ: د شلو روپیو څلور نوټونه
+cnt note20:4/2 frame || 4 × Rs 20 || ۴ × ۲۰ روپے || ۴ × ۲۰ روپۍ
+sol Rs 80 — match with five Rs 10 coins, two Rs 5 coins and a Rs 20 note. ## 20 + 20 + 20 + 20 = 80 || ۲۰ + ۲۰ + ۲۰ + ۲۰ = ۸۰ || ۲۰ + ۲۰ + ۲۰ + ۲۰ = ۸۰
+q 8 | Left: one Rs 50 note || بائیں: پچاس روپے کا ایک نوٹ || کیڼ: د پنځوسو روپیو یو نوټ
+cnt note50:1 frame || 1 × Rs 50 || ۱ × ۵۰ روپے || ۱ × ۵۰ روپۍ
+sol Rs 50 — match with six Rs 5 coins and a Rs 20 note. ## 30 + 20 = 50 || ۳۰ + ۲۰ = ۵۰ || ۳۰ + ۲۰ = ۵۰
+q 9 | Left: one Rs 100 note || بائیں: سو روپے کا ایک نوٹ || کیڼ: د سلو روپیو یو نوټ
+cnt note100:1 frame || 1 × Rs 100 || ۱ × ۱۰۰ روپے || ۱ × ۱۰۰ روپۍ
+sol Rs 100 — match with three Rs 20 notes and four Rs 10 coins. ## 60 + 40 = 100 || ۶۰ + ۴۰ = ۱۰۰ || ۶۰ + ۴۰ = ۱۰۰
+p Right-hand groups: || دائیں طرف کے گروہ: || ښي لوري ډلې:
+cnt note20:3 coin10:4 frame "=_100" | coin5:6 note20:1 frame "=_50" | note20:1 note10:1 frame "=_30" | coin10:5 coin5:2 note20:1 frame "=_80" | coin10:2 note20:1 frame "=_40" || Right groups: 3 × Rs 20 + 4 × Rs 10; 6 × Rs 5 + Rs 20; Rs 20 + Rs 10; 5 × Rs 10 + 2 × Rs 5 + Rs 20; 2 × Rs 10 + Rs 20 || دائیں گروہ: ۳ × ۲۰ + ۴ × ۱۰؛ ۶ × ۵ + ۲۰؛ ۲۰ + ۱۰؛ ۵ × ۱۰ + ۲ × ۵ + ۲۰؛ ۲ × ۱۰ + ۲۰ || ښي ډلې: ۳ × ۲۰ + ۴ × ۱۰؛ ۶ × ۵ + ۲۰؛ ۲۰ + ۱۰؛ ۵ × ۱۰ + ۲ × ۵ + ۲۰؛ ۲ × ۱۰ + ۲۰

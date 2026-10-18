@@ -1,0 +1,22 @@
+@printed 152
+grid range=-7..7 | lines=x=-2 | pts=:-2,1;:-2,-3;:-2,4;:-2,-2;:-2,2 | nolabel=1 || Graph of 2x + 4 = 0: the vertical line x = −2 through the plotted points || 2x + 4 = 0 کا گراف: بنائے گئے نقاط سے گزرنے والا عمودی خط x = −2 || د 2x + 4 = 0 ګراف: له ښودل شویو ټکو تېره عمودي کرښه x = −2
+@issue The printed graph for 2x + 4 = 0 shows the grid without the line visible in the scan; the coded figure draws the vertical line x = −2 that the text describes.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p x = c, represents the equation of a vertical line is where c is a constant. || x = c ایک عمودی خط کی مساوات ظاہر کرتا ہے جہاں c ایک مستقل ہے۔ || x = c د یوې عمودي کرښې معادله ښيي چې c یو ثابت دی.
+endbox
+p The vertical line goes through −2 on the x-axis. This is the required graph of the equation $2x + 4 = 0$. This graph is showing an equation of a vertical line. || عمودی خط x-محور پر −2 سے گزرتا ہے۔ یہ مساوات $2x + 4 = 0$ کا مطلوبہ گراف ہے۔ یہ گراف ایک عمودی خط کی مساوات دکھا رہا ہے۔ || عمودي کرښه د x-محور پر −2 څخه تېرېږي. دا د $2x + 4 = 0$ معادلې غوښتل شوی ګراف دی. دا ګراف د یوې عمودي کرښې معادله ښيي.
+endexample
+example 2 | Plot a graph for the equation $3y - 12 = 0$. || مساوات $3y - 12 = 0$ کا گراف بنائیں۔ || د $3y - 12 = 0$ معادلې ګراف رسم کړئ.
+p **Solution:** First solve for y. || **حل:** پہلے y کے لیے حل کریں۔ || **حل:** لومړی د y لپاره حل کړئ.
+eq \begin{aligned} 3y - 12 &= 0 \\ 3y &= 12 \\ y &= \frac{12}{3} \\ y &= 4 \end{aligned}
+p Now for the required graph, the value of y will always be 4. As y is always 4, x can take any value and it will never affect y. Let's put some values for x. || اب مطلوبہ گراف کے لیے y کی قیمت ہمیشہ 4 ہوگی۔ چونکہ y ہمیشہ 4 ہے، x کوئی بھی قیمت لے سکتا ہے اور اس سے y پر کوئی اثر نہیں پڑے گا۔ آئیے x کی کچھ قیمتیں رکھیں۔ || اوس د غوښتل شوي ګراف لپاره به د y ارزښت تل 4 وي. څرنګه چې y تل 4 دی، x هر ارزښت اخیستلی شي او پر y اغېز نه کوي. راځئ د x لپاره څو ارزښتونه کېږدو.
+table
+th | x | 3 | −1 | 4 | −2 | 4
+tr | y | 4 | 4 | 4 | 4 | 4
+endtable
+p So, some of the ordered pairs for the above equation are: (3, 4) (−1, 4) (4, 4), (−2, 4), (−4, 4). Let's plot all these ordered pairs to get the required graph. || لہٰذا اوپر والی مساوات کے کچھ مرتب جوڑے یہ ہیں: (3، 4) (−1، 4) (4، 4)، (−2، 4)، (−4، 4)۔ آئیے مطلوبہ گراف حاصل کرنے کے لیے یہ تمام مرتب جوڑے بنائیں۔ || نو د پورته معادلې ځینې ترتیب شوې جوړې دا دي: (3، 4) (−1، 4) (4، 4)، (−2، 4)، (−4، 4). راځئ د غوښتل شوي ګراف لپاره دا ټولې ترتیب شوې جوړې وښیو.
+@issue The table lists x = 4 twice (the last entry should be −4, as in the ordered pairs below it); kept as printed.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Use variety of daily life examples to explain how to solve surface area and volume related questions. Then ask them to create some questions and solve them. || سطحی رقبے اور حجم سے متعلق سوالات حل کرنا سمجھانے کے لیے روزمرہ زندگی کی مختلف مثالیں استعمال کریں۔ پھر ان سے کچھ سوالات بنانے اور حل کرنے کو کہیں۔ || د سطحې مساحت او حجم اړوند پوښتنو د حل د تشریح لپاره د ورځني ژوند بېلابېلې بېلګې وکاروئ. بیا ترې وغواړئ چې څو پوښتنې جوړې او حل کړي.
+endbox
+@issue This Teaching Point is about surface area and volume, which does not match the topic on this page (graphs of linear equations); kept as printed.

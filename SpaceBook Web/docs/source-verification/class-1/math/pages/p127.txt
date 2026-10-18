@@ -1,0 +1,16 @@
+@printed 123
+p Tick (✓) the correct answer to complete each pattern. || ہر نمونہ مکمل کرنے کے لیے درست جواب پر (✓) کا نشان لگائیں۔ || د هرې بېلګې د بشپړولو لپاره سم ځواب ته (✓) ولګوئ.
+q 7 | Big circle, small circle, big circle, small circle, ... || بڑا دائرہ، چھوٹا دائرہ، بڑا، چھوٹا، ... || لویه دایره، کوچنۍ دایره، لویه، کوچنۍ، ...
+pattern circ.green@1.5 circ.green@1.1 circ.green@1.5 circ.green@1.1 || pattern || نمونہ || بېلګه
+pattern circ.green@1.5 circ.green@1.1 || Choice A: big, small || انتخاب A: بڑا، چھوٹا || انتخاب A: لوی، کوچنی
+pattern circ.green@1.1 circ.green@1.5 || Choice B: small, big || انتخاب B: چھوٹا، بڑا || انتخاب B: کوچنی، لوی
+sol Choice A (big, small) ## After a small circle comes a big circle, then a small one. || چھوٹے دائرے کے بعد بڑا اور پھر چھوٹا آتا ہے۔ || له کوچنۍ دایرې وروسته لویه او بیا کوچنۍ راځي.
+q 8 | Small triangle, big triangle, small, big, ... || چھوٹا مثلث، بڑا مثلث، چھوٹا، بڑا، ... || کوچنی مثلث، لوی مثلث، کوچنی، لوی، ...
+pattern tri.#9d174d@1 tri.#9d174d@1.4 tri.#9d174d@1 tri.#9d174d@1.4 || pattern || نمونہ || بېلګه
+pattern tri.#9d174d@1.4 tri.#9d174d@1 || Choice A: big, small || انتخاب A: بڑا، چھوٹا || انتخاب A: لوی، کوچنی
+pattern tri.#9d174d@1 tri.#9d174d@1.4 || Choice B: small, big || انتخاب B: چھوٹا، بڑا || انتخاب B: کوچنی، لوی
+sol Choice B (small, big) ## After a big triangle comes a small one, then a big one. || بڑے مثلث کے بعد چھوٹا اور پھر بڑا آتا ہے۔ || له لوی مثلث وروسته کوچنی او بیا لوی راځي.
+q 9 | Colour the objects to create patterns of your own choice. || اپنی پسند کے نمونے بنانے کے لیے چیزوں میں رنگ بھریں۔ || د خپلې خوښې بېلګې جوړولو لپاره شیان رنګ کړئ.
+cnt mango.white:9 | sun.white:6 || 9 mango outlines and 6 sun outlines to colour || آم کے ۹ اور سورج کے ۶ خاکے || د ام ۹ او د لمر ۶ بهرنۍ کرښې
+sol Any repeating colour pattern is correct, e.g. yellow, green, yellow, green, ... ## Choose two or three colours and repeat them in the same order. || دو یا تین رنگ چن کر انہیں ایک ہی ترتیب میں دہرائیں۔ || دوه یا درې رنګونه وټاکئ او په یو ترتیب یې تکرار کړئ.
+endexercise

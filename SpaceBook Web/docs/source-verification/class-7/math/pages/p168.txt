@@ -1,0 +1,40 @@
+@printed 164
+@sec 9.2 | Circumference and Area of a Circle || دائرے کا محیط اور رقبہ || د دایرې محیط او مساحت
+# 9.2 Circumference and Area of a Circle || 9.2 دائرے کا محیط اور رقبہ || 9.2 د دایرې محیط او مساحت
+## 9.2.1 Circumference of a cirlce || 9.2.1 دائرے کا محیط || 9.2.1 د دایرې محیط
+p A circle is a plain figure whose boundary consists of points equidistant from its centre. || دائرہ ایک مستوی شکل ہے جس کی حد مرکز سے برابر فاصلے پر واقع نقاط پر مشتمل ہوتی ہے۔ || دایره یو مستوي شکل دی چې پوله یې له مرکز څخه په برابر واټن پرتو ټکو جوړه وي.
+- Radius || رداس || شعاع
+- Diameter || قطر || قطر
+- Circumference || محیط || محیط
+svg Circle with its circumference, a diameter (d) through the centre and a radius (r) || دائرہ اپنے محیط، مرکز سے گزرنے والے قطر (d) اور رداس (r) کے ساتھ || دایره له خپل محیط، له مرکز تېر قطر (d) او شعاع (r) سره
+<svg viewBox="0 0 200 160" width="200" role="img" aria-label="Circle showing the circumference, a diameter d through the centre and a radius r" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<circle cx="100" cy="85" r="60" fill="none" stroke="#0f172a" stroke-width="2"/><circle cx="100" cy="85" r="2.5" fill="#0f172a"/>
+<line x1="48" y1="115" x2="152" y2="55" stroke="#0f172a" stroke-width="1.5"/><line x1="100" y1="85" x2="125" y2="140" stroke="#0f172a" stroke-width="1.5"/>
+<text x="100" y="72" text-anchor="middle" transform="rotate(-30 100 72)">diameter (d)</text><text x="122" y="112">radius (r)</text><text x="100" y="18" text-anchor="middle">circumference (C)</text>
+</svg>
+endsvg
+p We know that the perimeter of a square is the total length of its boundary. Similarly the total length of the boundary of the circle is called the circumference of the circle. || ہم جانتے ہیں کہ مربع کا احاطہ اس کی حد کی کل لمبائی ہے۔ اسی طرح دائرے کی حد کی کل لمبائی دائرے کا محیط کہلاتی ہے۔ || پوهېږو چې د مربع محیط د هغې د پولې ټول اوږدوالی دی. په همدې ډول د دایرې د پولې ټول اوږدوالی د دایرې محیط بلل کېږي.
+### Ratio between Circumference of a Circle and its Diameter || دائرے کے محیط اور قطر کی نسبت || د دایرې د محیط او قطر نسبت
+p Consider three circles with the following values of radius and circumference. || رداس اور محیط کی درج ذیل قیمتوں والے تین دائروں پر غور کریں۔ || د شعاع او محیط د لاندې ارزښتونو لرونکې درې دایرې وګورئ.
+@deco Three circles A, B and C of diameters 3, 6 and 7 with circumferences 9.4, 18.8 and 21.9 marked (the values are given in the text below).
+box info | Math History || ریاضی کی تاریخ || د ریاضي تاریخ
+p Early Greeks used the value $\frac{22}{7}$ for pi. Archimedes (250 BC) proved that the value of pi lies between $3\frac{1}{7}$ and $3\frac{10}{71}$. || ابتدائی یونانی پائی کے لیے $\frac{22}{7}$ کی قیمت استعمال کرتے تھے۔ ارشمیدس (250 قبل مسیح) نے ثابت کیا کہ پائی کی قیمت $3\frac{1}{7}$ اور $3\frac{10}{71}$ کے درمیان ہے۔ || لومړنیو یونانیانو د پای لپاره $\frac{22}{7}$ ارزښت کاراوه. ارشمیدس (250 ق م) ثابته کړه چې د پای ارزښت د $3\frac{1}{7}$ او $3\frac{10}{71}$ ترمنځ دی.
+endbox
+m Circle A: Circumference $= 9.4$ cm, Diameter $= 3$ cm $\qquad$ For Circle A $= \frac{9.4}{3} = 3.14$ (approx.)
+m Circle B: Circumference $= 18.8$ cm, Diameter $= 6$ cm $\qquad$ For Circle B $= \frac{18.8}{6} = 3.14$ (approx.)
+m Circle C: Circumference $= 21.9$ cm, Diameter $= 7$ cm $\qquad$ For Circle C $= \frac{21.9}{7} = 3.14$ (approx.)
+p We can see that the quotient of circumference and diameter of a circle is approximately the same i.e. 3.14. We call this value "Pi" shown by symbol π. It is the ratio between the circumference of a circle to the diameter. The value of π always remains constant. So, || ہم دیکھ سکتے ہیں کہ دائرے کے محیط اور قطر کا خارج قسمت تقریباً ایک جیسا یعنی 3.14 ہے۔ ہم اس قیمت کو "پائی" کہتے ہیں جسے علامت π سے ظاہر کیا جاتا ہے۔ یہ دائرے کے محیط اور قطر کی نسبت ہے۔ π کی قیمت ہمیشہ مستقل رہتی ہے۔ لہٰذا، || لیدلی شو چې د دایرې د محیط او قطر خارج قسمت تقریباً یو شان یعنې 3.14 دی. دې ارزښت ته "پای" وایو چې په π نښه ښودل کېږي. دا د دایرې د محیط او قطر نسبت دی. د π ارزښت تل ثابت پاتې کېږي. نو،
+eq \pi = \frac{\text{circumference}}{\text{diameter}} = \frac{C}{d} \quad \text{or} \quad \text{Circumference} = \pi \times \text{diameter}, \quad C = \pi d
+p We know that diameter = 2 × radius. So, $d = 2r$, $C = \pi \times d$, $C = \pi 2r$ or $2\pi r$ || ہم جانتے ہیں کہ قطر = 2 × رداس۔ لہٰذا $d = 2r$، $C = \pi \times d$، $C = \pi 2r$ یا $2\pi r$ || پوهېږو چې قطر = 2 × شعاع. نو $d = 2r$، $C = \pi \times d$، $C = \pi 2r$ یا $2\pi r$
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Draw three circles with different radii. Next note their diameter, length of the circumference and π. || مختلف رداس والے تین دائرے بنائیں۔ پھر ان کا قطر، محیط کی لمبائی اور π لکھیں۔ || د بېلابېلو شعاعو لرونکې درې دایرې رسم کړئ. بیا د هغوی قطر، د محیط اوږدوالی او π ولیکئ.
+table
+th | Diameter || قطر || قطر | Circumference || محیط || محیط | Circumference ÷ Diameter || محیط ÷ قطر || محیط ÷ قطر
+tr |  |  |
+tr |  |  |
+tr |  |  |
+endtable
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask the students to trace any round object onto a plain piece of paper. Then take a thread and measure the circumference. || طلبہ سے کہیں کہ کسی گول چیز کا خاکہ سادہ کاغذ پر بنائیں۔ پھر ایک دھاگہ لے کر محیط ناپیں۔ || له زده کوونکو وغواړئ چې د یوه ګرد شي خاکه پر ساده کاغذ رسم کړي. بیا یو تار واخلي او محیط اندازه کړي.
+endbox

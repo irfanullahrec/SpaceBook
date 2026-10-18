@@ -1,0 +1,26 @@
+@printed 255
+q 6 | The data below shows the marks out of 100 of 24 students in a class. Make the grouped frequency table. || نیچے دیا گیا ڈیٹا ایک جماعت کے 24 طلبہ کے 100 میں سے نمبر دکھاتا ہے۔ گروہی تعدد کا جدول بنائیں۔ || لاندې معلومات په یوه ټولګي کې د 24 زده کوونکو نمرې (له 100 څخه) ښيي. ډلبندي تکرار جدول جوړ کړئ.
+table
+tr | 55 | 70 | 57 | 73 | 55 | 59 | 64 | 72
+tr | 60 | 48 | 58 | 54 | 69 | 51 | 63 | 78
+tr | 75 | 64 | 65 | 57 | 71 | 78 | 76 | 68
+endtable
+q 7 | The following table shows the marks obtained by students in Maths. || درج ذیل جدول ریاضی میں طلبہ کے حاصل کردہ نمبر دکھاتا ہے۔ || لاندې جدول په ریاضي کې د زده کوونکو اخیستې نمرې ښيي.
+table
+th | Marks || نمبر || نمرې | Number of students
+tr | 55 – 69 | 24
+tr | 70 – 84 | 10
+tr | 85 – 99 | 15
+endtable
+qp a | What is the number of classes? || جماعتوں کی تعداد کیا ہے؟ || د ټولګیو شمېر څو دی؟
+qp b | Tell the total number of students. || طلبہ کی کل تعداد بتائیں۔ || د زده کوونکو ټول شمېر ووایئ.
+qp c | What is the lowest data value? || سب سے کم ڈیٹا کی قیمت کیا ہے؟ || تر ټولو کوچنی ارزښت څه دی؟
+qp d | How many students got marks between 70 to 84? || کتنے طلبہ نے 70 سے 84 کے درمیان نمبر حاصل کیے؟ || څو زده کوونکو له 70 تر 84 پورې نمرې واخیستې؟
+qp e | How many students got 70 or more than 70 marks? || کتنے طلبہ نے 70 یا اس سے زیادہ نمبر حاصل کیے؟ || څو زده کوونکو 70 یا له 70 ډېرې نمرې واخیستې؟
+endexercise
+@sec 13.5 | Histogram || ہسٹوگرام || هسټوګرام
+# 13.5 Histogram || 13.5 ہسٹوگرام || 13.5 هسټوګرام
+p Histogram is used to represent grouped data by taking class-intervals along the horizontal axis and the corresponding frequencies along the vertical axis. Thus || ہسٹوگرام گروہی ڈیٹا کو ظاہر کرنے کے لیے استعمال ہوتا ہے جس میں جماعتی وقفے افقی محور پر اور متعلقہ تعدد عمودی محور پر لیے جاتے ہیں۔ لہٰذا || هسټوګرام د ډلبندي معلوماتو د ښودلو لپاره کارول کېږي چې د ټولګي واټنونه د افقي محور په اوږدو او اړوند تکرارونه د عمودي محور په اوږدو اخیستل کېږي. نو
+p "**Histogram** is a graphical representation of a grouped data with given frequencies in the form of rectangular bars with equal width taken as size of the class-intervals and their corresponding frequencies taken as heights of the rectangular bars. These rectangular bars are drawn in side by side and there is no gap between any two consecutive bars". || "**ہسٹوگرام** دیے گئے تعدد کے ساتھ گروہی ڈیٹا کی گرافی نمائندگی ہے جو مساوی چوڑائی کے مستطیل بارز کی شکل میں ہوتی ہے؛ چوڑائی جماعتی وقفوں کا سائز اور متعلقہ تعدد مستطیل بارز کی اونچائی کے طور پر لیے جاتے ہیں۔ یہ مستطیل بارز ساتھ ساتھ بنائے جاتے ہیں اور کسی دو متواتر بارز کے درمیان کوئی فاصلہ نہیں ہوتا"۔ || "**هسټوګرام** د ورکړل شویو تکرارونو سره د ډلبندي معلوماتو ګرافیکي ښودنه ده چې د مساوي پلنوالي مستطیلي بارونو په بڼه وي؛ پلنوالی د ټولګي د واټنونو اندازه او اړوند تکرارونه د مستطیلي بارونو د لوړوالي په توګه اخیستل کېږي. دا مستطیلي بارونه څنګ په څنګ رسمېږي او د هرو دوو پرلپسې بارونو ترمنځ هېڅ واټن نه وي".
+### Difference between a Bar chart and Histogram || بار چارٹ اور ہسٹوگرام میں فرق || د بار چارټ او هسټوګرام ترمنځ توپیر
+p In a bar chart, we can represent any category along x-axis e.g. days or number of days, favourite fruit, names of students etc. While in a histogram we can only represent data in form of numbers. Similarly in a bar graph, the sequence of bars doesn't matter. For example, if we representing names of students, we can arrange it in any order. But in case of a histogram, we need to follow the sequence of classes of the respective data. The histogram is drawn in such a way that there is no gap between the bars while in a bar graph, there is proper equal spacing between the bars. || بار چارٹ میں ہم x-محور پر کوئی بھی زمرہ ظاہر کر سکتے ہیں مثلاً دن یا دنوں کی تعداد، پسندیدہ پھل، طلبہ کے نام وغیرہ۔ جبکہ ہسٹوگرام میں ہم صرف اعداد کی شکل میں ڈیٹا ظاہر کر سکتے ہیں۔ اسی طرح بار گراف میں بارز کی ترتیب سے فرق نہیں پڑتا۔ مثال کے طور پر اگر ہم طلبہ کے نام ظاہر کر رہے ہوں تو انہیں کسی بھی ترتیب میں رکھ سکتے ہیں۔ لیکن ہسٹوگرام میں ہمیں متعلقہ ڈیٹا کی جماعتوں کی ترتیب کی پیروی کرنی ہوتی ہے۔ ہسٹوگرام اس طرح بنایا جاتا ہے کہ بارز کے درمیان کوئی فاصلہ نہیں ہوتا جبکہ بار گراف میں بارز کے درمیان مناسب یکساں فاصلہ ہوتا ہے۔ || په بار چارټ کې د x-محور په اوږدو هره ډله ښودلی شو لکه ورځې یا د ورځو شمېر، خوښه مېوه، د زده کوونکو نومونه او نور. په داسې حال کې چې په هسټوګرام کې یوازې د عددونو په بڼه معلومات ښودلی شو. همداسې په بار ګراف کې د بارونو ترتیب مهم نه دی. د بېلګې په توګه که د زده کوونکو نومونه ښیو، په هر ترتیب یې ایښودلی شو. خو د هسټوګرام په حالت کې باید د اړوندو معلوماتو د ټولګیو ترتیب تعقیب کړو. هسټوګرام داسې رسمېږي چې د بارونو ترمنځ هېڅ واټن نه وي، په داسې حال کې چې په بار ګراف کې د بارونو ترمنځ مناسب مساوي واټن وي.

@@ -1,0 +1,26 @@
+@printed 22
+rline -6..6 | plus | pts=-1.5:−3/2;0.2:0.2;1.41:√2
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Represent −1.8, 4.5, $\sqrt{3}, \frac{5}{6}, 1\frac{2}{3}$ on number line || −1.8، 4.5، $\sqrt{3}, \frac{5}{6}, 1\frac{2}{3}$ کو عددی خط پر ظاہر کریں || −1.8، 4.5، $\sqrt{3}, \frac{5}{6}, 1\frac{2}{3}$ د عددونو پر کرښه وښایاست
+endbox
+## 2.4.2 Absolute value of a Real Number || 2.4.2 حقیقی عدد کی مطلق قیمت || 2.4.2 د حقیقي عدد مطلق ارزښت
+p The absolute value of a real number $a$ is defined as the distance between zero (the origin) and that real number on the number line. Since it is a distance, it is always positive or zero. || کسی حقیقی عدد $a$ کی مطلق قیمت عددی خط پر صفر (مبدا) اور اس حقیقی عدد کے درمیان فاصلے کو کہتے ہیں۔ چونکہ یہ ایک فاصلہ ہے، اس لیے یہ ہمیشہ مثبت یا صفر ہوتی ہے۔ || د حقیقي عدد $a$ مطلق ارزښت د عددونو پر کرښه د صفر (مبدا) او هغه حقیقي عدد تر منځ واټن دی. څرنګه چې دا واټن دی، نو تل مثبت یا صفر وي.
+p The symbol $|x|$ means the absolute value of $x$ || علامت $|x|$ کا مطلب $x$ کی مطلق قیمت ہے || نښه $|x|$ د $x$ مطلق ارزښت ښيي
+p For example, the absolute value of −5 is 5 and also, absolute value of 5 is 5. || مثال کے طور پر −5 کی مطلق قیمت 5 ہے اور 5 کی مطلق قیمت بھی 5 ہے۔ || د بېلګې په توګه د −5 مطلق ارزښت 5 دی او د 5 مطلق ارزښت هم 5 دی.
+m $|-5| = 5$ and $|5| = 5$
+p Both 5 and −5 are "five" units away the origin 0. || 5 اور −5 دونوں مبدا 0 سے "پانچ" اکائیوں کے فاصلے پر ہیں۔ || 5 او −5 دواړه له مبدا 0 څخه "پنځه" واحده لرې دي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Absolute value of any numbers is simply its distance from 0 and it is always positive. || کسی بھی عدد کی مطلق قیمت صرف 0 سے اس کا فاصلہ ہے اور یہ ہمیشہ مثبت ہوتی ہے۔ || د هر عدد مطلق ارزښت یوازې له 0 څخه د هغه واټن دی او تل مثبت وي.
+endbox
+rline -6..6 | plus | pts=-5:−5;5:+5 | hops=0:-5;0:5 | brace=-5:0:5 units;0:5:5 units | hoplab=-5:0:∣−5∣ = 5;0:5:∣5∣ = 5 || Absolute Value = distance from zero || مطلق قیمت = صفر سے فاصلہ || مطلق ارزښت = له صفر څخه واټن
+example 1
+p What is the absolute value of $-\sqrt{2}$ and $\sqrt{2}$? || $-\sqrt{2}$ اور $\sqrt{2}$ کی مطلق قیمت کیا ہے؟ || د $-\sqrt{2}$ او $\sqrt{2}$ مطلق ارزښت څومره دی؟
+## Solution: || حل: || حل:
+p Both $-\sqrt{2}$ and $\sqrt{2}$ are same distance away from the origin on a number line. Therefore, || عددی خط پر $-\sqrt{2}$ اور $\sqrt{2}$ دونوں مبدا سے برابر فاصلے پر ہیں۔ لہٰذا، || د عددونو پر کرښه $-\sqrt{2}$ او $\sqrt{2}$ دواړه له مبدا څخه په برابر واټن دي. نو،
+m $|-\sqrt{2}| = \sqrt{2}$
+m $|\sqrt{2}| = \sqrt{2}$
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Draw a number line on the board. Say a random real number and call students randomly to show it on the number line. || بورڈ پر عددی خط بنائیں۔ کوئی بھی حقیقی عدد بولیں اور طلبہ کو باری باری بلا کر اسے عددی خط پر دکھانے کو کہیں۔ || پر تخته د عددونو کرښه رسم کړئ. یو تصادفي حقیقي عدد ووایاست او زده کوونکي په تصادفي ډول راوبولئ چې پر کرښه یې وښيي.
+endbox

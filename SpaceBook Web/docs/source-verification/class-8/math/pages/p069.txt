@@ -1,0 +1,48 @@
+@printed 65
+@issue The division ladder for 81 prints "3" beside the final 1 (3|81, 3|27, 3|9, 3|3, 3|1); recreated as printed.
+@issue "The factors of a number that are divisible by 1 and the number itself are called prime factors" is printed as given; kept as printed.
+p For example, 3 is the square root of 9 because $3 \times 3 = (3)^2 = 9$. || مثال کے طور پر 3، 9 کا جذر المربع ہے کیونکہ $3 \times 3 = (3)^2 = 9$۔ || د بېلګې په توګه 3 د 9 مربع جذر دی ځکه چې $3 \times 3 = (3)^2 = 9$.
+m We write $\sqrt{9} = 3$.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- Finding square root is the inverse process of squaring the number. || جذر المربع معلوم کرنا عدد کا مربع لینے کا الٹ عمل ہے۔ || د مربع جذر موندل د عدد د مربع کولو معکوس عمل دی.
+- The numbers that read same onward and backward are called palindromes. || وہ اعداد جو آگے اور پیچھے سے ایک جیسے پڑھے جائیں، پیلنڈروم کہلاتے ہیں۔ || هغه عددونه چې له مخې او شا یو شان لوستل کېږي، پالینډروم بلل کېږي.
+endbox
+### Square Root by Prime Factorization Method || مفرد اجزائے ضربی کے طریقے سے جذر المربع || د لومړنیو عاملونو په طریقه مربع جذر
+p To find the square root of the numbers using factorization method, we follow these steps. || اجزائے ضربی کے طریقے سے اعداد کا جذر المربع معلوم کرنے کے لیے ہم یہ مراحل اختیار کرتے ہیں۔ || د عاملونو په طریقه د عددونو د مربع جذر موندلو لپاره دا پړاوونه تعقیبوو.
+p **Step I:** First find the prime factors of the given numbers and write them in pairs. || **مرحلہ I:** پہلے دیے گئے اعداد کے مفرد اجزائے ضربی معلوم کریں اور انہیں جوڑوں میں لکھیں۔ || **لومړی پړاو:** لومړی د ورکړل شویو عددونو لومړني عاملونه ومومئ او په جوړو کې یې ولیکئ.
+p **Step II:** From each pair, take only one number and find their product. This product will be the square root of the given number. || **مرحلہ II:** ہر جوڑے سے صرف ایک عدد لیں اور ان کا حاصلِ ضرب معلوم کریں۔ یہ حاصلِ ضرب دیے گئے عدد کا جذر المربع ہوگا۔ || **دوهم پړاو:** له هرې جوړې یوازې یو عدد واخلئ او د هغوی حاصل ضرب ومومئ. دا حاصل ضرب به د ورکړل شوي عدد مربع جذر وي.
+box info | Math History || ریاضی کی تاریخ || د ریاضي تاریخ
+p **Al-Nasawi** (1010 – 1075AD), explained the extraction of square and cube roots almost in the modern manner. || **النسوی** (1010 – 1075ء) نے جذر المربع اور جذر المکعب نکالنے کا طریقہ تقریباً جدید انداز میں بیان کیا۔ || **النسوي** (1010 – 1075ز) د مربع او مکعب جذرونو استخراج نږدې په عصري ډول تشریح کړ.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The factors of a number that are divisible by 1 and the number itself are called prime factors. || کسی عدد کے وہ اجزائے ضربی جو 1 اور خود اسی عدد سے تقسیم ہوں، مفرد اجزائے ضربی کہلاتے ہیں۔ || د یوه عدد هغه عاملونه چې پر 1 او پر خپل ځان وېشل کېږي، لومړني عاملونه بلل کېږي.
+endbox
+example 1
+p Find the square root of the following numbers. || درج ذیل اعداد کا جذر المربع معلوم کریں۔ || د لاندې عددونو مربع جذر معلوم کړئ.
+qp a | 81
+qp b | 196
+qp c | 2304
+## Solution: || حل: || حل:
+ladder 3:81; 3:27; 3:9; 3:3; 3:1
+m a) $\sqrt{81}$
+m $= \sqrt{3 \times 3 \times 3 \times 3}$
+m $= \sqrt{3^2 \times 3^2}$
+m $= 3 \times 3 = 9$
+m $\therefore \sqrt{81} = 9$
+ladder 2:196; 2:98; 7:49; 7:7; :1
+m b) $\sqrt{196}$
+m $= \sqrt{2 \times 2 \times 7 \times 7}$
+m $= \sqrt{2^2 \times 7^2}$
+m $= 2 \times 7 = 14$
+m $\therefore \sqrt{196} = 14$
+ladder 2:2304; 2:1152; 2:576; 2:288; 2:144; 2:72; 2:36; 2:18; 3:9; 3:3; :1
+m c) $\sqrt{2304}$
+m $= \sqrt{2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 3 \times 3}$
+m $= \sqrt{2^2 \times 2^2 \times 2^2 \times 2^2 \times 3^2}$
+m $= 2 \times 2 \times 2 \times 2 \times 3$
+m $= 48$
+m $\therefore \sqrt{2304} = 48$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If the prime factors of the given number cannot be written in pairs, the given number is not a perfect square. || اگر دیے گئے عدد کے مفرد اجزائے ضربی جوڑوں میں نہ لکھے جا سکیں تو دیا گیا عدد کامل مربع نہیں ہے۔ || که د ورکړل شوي عدد لومړني عاملونه په جوړو کې ونه لیکل شي، ورکړل شوی عدد بشپړه مربع نه ده.
+endbox

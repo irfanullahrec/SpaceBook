@@ -1,0 +1,19 @@
+- [Class 6 Math source facts](class6-math-source-facts.md) — answer key in Word part 13; book pp157–158 missing everywhere; duplicate scans
+- [Class 6 book pipeline](class6-book-pipeline.md) — build_book6/cls6_book_reader workflow; 12 books done incl. Arabic, Drawing, HPE; next Pashto; glossary pages must be @status lesson; RTL slot order; copyright rule
+- [Class 7 Math source facts](class7-math-source-facts.md) — finished 307/307; ads at JPG 289–290; review answers keyed R<unit>
+- [Class 8 Math source facts](class8-math-source-facts.md) — Math pass DONE (335 scans); JPG=printed+2 late; answer key from KPTBB; browser-verified; English done too
+- [Class 8 book pipeline](class8-book-pipeline.md) — build_book8/CLS8_BOOKS; Eng+Sci+Urdu+Comp+Geo+History+Islamiat DONE; Mutalia-e-Quran DONE (185, 25 units); next Arabic (62), Drawing (121), HPE (122), Pashto (232); each unit needs @unit + @sec lines or it builds empty
+- [Class 7 book pipeline](class7-book-pipeline.md) — build_book7/CLS7_BOOKS; Math+English+Science+Urdu+Computer+Geography+History+Islamiat done; Quran + Arabic + Drawing + HPE done; Pashto has no scans; next browser verification; figs/fill.py, bump_cache lock
+- [Class 4 book pipeline](class4-book-pipeline.md) — build_book4/CLS4_BOOKS; Math 188/188 done; next English; key-error & missing-page facts
+- [Class 9 Biology pipeline](class9-biology-pipeline.md) — bio9_tools/unitN.py/render_check; Biology COMPLETE (U1-9 + back matter G); next Physics via class-9 checkpoint
+- [Class 12 Biology pipeline](class12-biology-pipeline.md) — chNN.py→sections JSON→build.js; COMPLETE 386/386 (2026-10-12); next Class 12 Physics PDF 7; D: disk full risk
+- [Class 10 Biology pipeline](class10-biology-pipeline.md) — DONE 197pp; duplicate PDF 174-181; renders on C:; next English p77 then Urdu
+- [Class 9 English pipeline](class9-english-pipeline.md) — english_data.js verified 2026-10-12; apply_unit.py tools; printed 137 missing; next Urdu
+- [Class 12 Physics fidelity](class12-physics-fidelity.md) — phys_12_data.js patch helpers, page loop, defects; Physics COMPLETE 2026-10-12 (200/200 + headings batch); next Chemistry
+- [Class 10 Urdu pipeline](class10-urdu-pipeline.md) — Urdu, Pak Studies, Computer Science (218/218) done & wired; build_book10 + wire_book10; user: skip Math/Physics/Bio; next General Science, Drawing, HPE, Islamiat Ikhtiari, MQ
+- [Class 9 Urdu pipeline](class9-urdu-pipeline.md) — DONE 150/150; apply_prose lessonNN modules; scan quirks; glossary not rendered
+- [Class 9 Pak Studies pipeline](class9-pakstudies-pipeline.md) — DONE 114 scans; chNN.py+apply_chapter.py; p48 misprint, p52 missing; next Computer Science
+- [Class 12 Chemistry Unit16+ pass](class12-chemistry-unit16-pass.md) — ch_go/ch_run helpers; Units 16–17 done (PDF 53–100); next Unit 18 PDF 101; then Stats, English, Urdu…
+- [Class 9 General Science pipeline](class9-genscience-pipeline.md) — DONE 197 JPG (192 corrected); apply_unit.py glossary hook; no printed key; disks full
+- [Class 3 book pipeline](class3-book-pipeline.md) — build_book3/CLS3_BOOKS/cls3_book_reader; Math in progress; printed = scan−5; only 7 source books
+- [Class 5 book pipeline](class5-book-pipeline.md) — build_math5 + build_book5/cls5_book_reader; Math 201 + English 169 DONE; next Gen Science, Urdu, Isl, SST EM/UM, Pashto; C: full

@@ -1,0 +1,23 @@
+@printed 96
+@sec add-subtract-price | Adding and Subtracting Price || قیمت کی جمع اور تفریق || د بیې جمع او تفریق
+# Adding and Subtracting Price || قیمت کی جمع اور تفریق || د بیې جمع او تفریق
+p Ali has a money Rs 95 rupees. He wants to buy these items given below: || علی کے پاس ۹۵ روپے ہیں۔ وہ نیچے دی گئی چیزیں خریدنا چاہتا ہے: || د علي سره ۹۵ روپۍ دي. هغه غواړي لاندې شیان واخلي:
+cnt book.brown:1 "Rs_20" beachball:1 "Rs_25" || A book Rs 20 and a ball Rs 25 || کتاب ۲۰ روپے اور گیند ۲۵ روپے || کتاب ۲۰ روپۍ او توپ ۲۵ روپۍ
+p Think whether Ali can buy book and ball easily and has enough money. || سوچیں کہ کیا علی آسانی سے کتاب اور گیند خرید سکتا ہے اور اس کے پاس کافی رقم ہے۔ || فکر وکړئ چې ایا علي په اسانۍ کتاب او توپ اخیستلای شي او بسنه پیسې لري.
+box check | Think || سوچیں || فکر وکړئ
+q 1 | Can Ali buy the book and the ball with Rs 95? || کیا علی ۹۵ روپے میں کتاب اور گیند خرید سکتا ہے؟ || ایا علي په ۹۵ روپیو کتاب او توپ اخیستلای شي؟
+sol Yes. 20 + 25 = Rs 45, and Rs 45 is less than Rs 95 (Rs 50 would be left). ## Add the prices, then compare with the money Ali has. || قیمتیں جمع کریں، پھر علی کی رقم سے موازنہ کریں۔ || بیې جمع کړئ، بیا یې د علي له پیسو سره پرتله کړئ.
+endbox
+p Look at the following items. || درج ذیل چیزیں دیکھیں۔ || لاندې شیان وګورئ.
+cnt juice:1 "Rs_25" icecream:1 "Rs_40" burger:1 "Rs_65" || Juice pack Rs 25, ice cream Rs 40, burger Rs 65 || جوس کا ڈبہ ۲۵ روپے، آئس کریم ۴۰ روپے، برگر ۶۵ روپے || د جوس ډبه ۲۵ روپۍ، آیس کرېم ۴۰ روپۍ، برګر ۶۵ روپۍ
+p Hassan buys a juice pack and an ice cream. How much money does he spend? || حسن جوس کا ایک ڈبہ اور ایک آئس کریم خریدتا ہے۔ وہ کتنی رقم خرچ کرتا ہے؟ || حسن د جوس یوه ډبه او یو آیس کرېم اخلي. هغه څومره پیسې لګوي؟
+p To find the total cost, we add. || کل لاگت معلوم کرنے کے لیے ہم جمع کرتے ہیں۔ || د ټول لګښت د موندلو لپاره جمع کوو.
+table Total cost || کل لاگت || ټول لګښت
+th  | Rs | T | O
+tr Cost of the pack of juice || جوس کے ڈبے کی قیمت || د جوس د ډبې بیه | Rs | 2 | 5
+tr Cost of the ice cream (+) || آئس کریم کی قیمت (+) || د آیس کرېم بیه (+) | Rs | 4 | 0
+tr Total cost || کل لاگت || ټول لګښت | Rs | 6 | 5
+endtable
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Place a few items on the table with price tags. Distribute paper coins and notes among students. Ask them to buy any two items. Then ask them to estimate how much money did spent and how much is left. || میز پر قیمت کے ٹیگ کے ساتھ چند چیزیں رکھیں۔ طلبہ میں کاغذی سکے اور نوٹ تقسیم کریں۔ ان سے کوئی دو چیزیں خریدنے کو کہیں۔ پھر ان سے اندازہ لگوائیں کہ کتنی رقم خرچ ہوئی اور کتنی باقی ہے۔ || په مېز د بیې له نښو سره څو شیان کېږدئ. په زده کوونکو کاغذي سکې او نوټونه ووېشئ. ورته ووایئ چې هر دوه شیان واخلي. بیا ترې وغواړئ چې اټکل وکړي څومره پیسې ولګېدې او څومره پاتې دي.
+endbox

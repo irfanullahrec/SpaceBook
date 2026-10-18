@@ -1,0 +1,12 @@
+@printed 27
+@deco Screenshot of the result sheet with the Formula bar =AVERAGE(C4:F4) in H4 (17, red arrow). Screenshot of the result sheet with =IF(I4>=60, "Pass","Fail") in J4 (Pass, red arrow; the 85 in I4 circled), with a Total marks row showing 76 and 62.
+@issue In the IF screenshot the Total marks row shows 62 under Science marks, but the five Science marks (17, 12, 17, 19, 14) add up to 79; kept as printed.
+p Figure: =AVERAGE(C4:F4) in H4 gives the average, 17, for the first student. || تصویر: H4 میں =AVERAGE(C4:F4) پہلے طالب علم کا اوسط، 17، دیتا ہے۔ || انځور: په H4 کې =AVERAGE(C4:F4) د لومړي زده کوونکي اوسط، ۱۷، ورکوي.
+### IF( ) Function || IF( ) فنکشن || IF( ) فنکشن
+p The IF() function is used to check a condition and returns one value for a TRUE result, and another for a FALSE result. || IF() فنکشن شرط جانچنے کے لیے استعمال ہوتا ہے اور TRUE نتیجے پر ایک قدر اور FALSE نتیجے پر دوسری قدر لوٹاتا ہے۔ || IF() فنکشن د یوې شرط د ازمایښت لپاره کارول کېږي او د TRUE پایلې لپاره یو ارزښت او د FALSE پایلې لپاره بل ارزښت بیرته ورکوي.
+p Example: It can be used to calculate the grade of students based on criteria. || مثال: اسے معیار کی بنیاد پر طلبہ کا گریڈ نکالنے کے لیے استعمال کیا جا سکتا ہے۔ || بېلګه: دا د معیار پر بنسټ د زده کوونکو د درجې د محاسبې لپاره کارېدای شي.
+p =IF(I4>=60,"Pass","Fail") || =IF(I4>=60,"Pass","Fail") || =IF(I4>=60,"Pass","Fail")
+p Example: Result (Pass or Fail) of a student is calculated using IF function as shown below. || مثال: طالب علم کا نتیجہ (پاس یا فیل) IF فنکشن سے نکالا جاتا ہے جیسا کہ نیچے دکھایا گیا ہے۔ || بېلګه: د زده کوونکي پایله (بریالی یا ناکام) د IF فنکشن په کارولو سره محاسبه کېږي لکه څنګه چې لاندې ښودل شوي.
+### MAX( ) Function || MAX( ) فنکشن || MAX( ) فنکشن
+p The MAX ( ) function is used to find the maximum value from a range of cells. || MAX ( ) فنکشن خلیوں کی حد میں سے زیادہ سے زیادہ قدر معلوم کرنے کے لیے استعمال ہوتا ہے۔ || MAX ( ) فنکشن د حجرو له پراخوالي څخه د ډېر ارزښت موندلو لپاره کارول کېږي.
+p =MAX(G4:G8) finds the maximum marks obtained by a student in a class. || =MAX(G4:G8) کلاس میں کسی طالب علم کے حاصل کردہ زیادہ سے زیادہ نمبر معلوم کرتا ہے۔ || =MAX(G4:G8) په ټولګي کې د یوه زده کوونکي ترلاسه شوي تر ټولو ډېرې نمبرې موندي.

@@ -1,0 +1,48 @@
+@printed 35
+q 2 | Arrange the absolute or numerical values of the following integers in ascending order and descending order. || درج ذیل صحیح اعداد کی مطلق یا عددی قیمتوں کو صعودی اور نزولی ترتیب میں لکھیں۔ || د لاندې تامو عددونو مطلق یا عددي ارزښتونه په صعودي او نزولي ترتیب ولیکئ.
+qsolve absorder
+qp a | +22, +33, 0, +50, +7, +23
+qp b | +6, +11, – 3, +5, 0, +77
+qp c | –14, 0, –11, –7, –8, +9
+qp d | –11, –3, +5, +18, +13, –7
+qp e | –16, +4, –7, –9, +2, +10
+qp f | –6, +7, –8, –22, +25, –31, –56
+qp g | +23, +12, +11, –14, –6, +8, – 9
+qp h | +23, +13, –15, +6, –5, +7, +9, +3, –10, –8
+q 3 | Aliya and Harris start at the same point. Aliya takes 11 steps upstairs and Harris comes 5 steps down the stairs. Write the integers for the two situations. Also write the absolute value of the integers. || عالیہ اور حارث ایک ہی جگہ سے شروع کرتے ہیں۔ عالیہ 11 سیڑھیاں اوپر جاتی ہے اور حارث 5 سیڑھیاں نیچے آتا ہے۔ دونوں صورتوں کے لیے صحیح اعداد لکھیں۔ ان صحیح اعداد کی مطلق قیمت بھی لکھیں۔ || عالیه او حارث له یو ځای پیل کوي. عالیه 11 زینې پورته ځي او حارث 5 زینې ښکته راځي. د دواړو حالتونو لپاره تام عددونه ولیکئ. د دې تامو عددونو مطلق ارزښت هم ولیکئ.
+solution Aliya: +11, |+11| = 11; Harris: –5, |–5| = 5
+ss Take the starting point as 0. Going up is positive, going down is negative. || ابتدائی جگہ کو 0 مانیں۔ اوپر جانا مثبت اور نیچے آنا منفی ہے۔ || پیلی ځای 0 وګڼئ. پورته تلل مثبت او ښکته راتلل منفي دي.
+ss Aliya: 11 steps up → +11. Harris: 5 steps down → –5. || عالیہ: 11 قدم اوپر → +11۔ حارث: 5 قدم نیچے → –5۔ || عالیه: 11 ګامه پورته → +11. حارث: 5 ګامه ښکته → –5.
+sfig nline -6..12 | circ=-5,11 | top=0:11:Aliya +11;0:-5:Harris –5
+ss Absolute value is just the number of steps (the distance), without direction. || مطلق قیمت صرف قدموں کی تعداد (فاصلہ) ہے، سمت کے بغیر۔ || مطلق ارزښت یوازې د ګامونو شمېر (واټن) دی، پرته له لوري.
+sm |+11| = 11,\qquad |-5| = 5
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Which one of these doesn't belong to the rest? Explain your reasoning. || ان میں سے کون سا باقیوں سے مختلف ہے؟ اپنی دلیل بیان کریں۔ || په دې کې کوم یو له نورو سره سمون نه خوري؟ خپل دلیل بیان کړئ.
+qp • | 3 feet above sea level || سطحِ سمندر سے 3 فٹ اوپر || د سمندر له سطحې 3 فټه پورته
+qp • | A profit of Rs 3 || 3 روپے کا منافع || د 3 روپیو ګټه
+qp • | 3° below freezing point || نقطۂ انجماد سے 3° نیچے || د کنګل کېدو له ټکي 3° ښکته
+qp • | 3rd floor of a building || عمارت کی تیسری منزل || د ودانۍ درېیم پوړ
+qsolution 3° below freezing point
+ss Write each one as an integer: 3 feet above sea level → +3; a profit of Rs 3 → +3; 3° below freezing point → –3; 3rd floor → +3. || ہر ایک کو صحیح عدد کی صورت میں لکھیں: سطحِ سمندر سے 3 فٹ اوپر → +3؛ 3 روپے منافع → +3؛ نقطۂ انجماد سے 3° نیچے → –3؛ تیسری منزل → +3۔ || هر یو د تام عدد په بڼه ولیکئ: د سمندر له سطحې 3 فټه پورته → +3؛ د 3 روپیو ګټه → +3؛ د کنګل له ټکي 3° ښکته → –3؛ درېیم پوړ → +3.
+ss Three of them are +3 (positive), only "3° below freezing point" is –3 (negative), so it does not belong to the rest. || تین +3 (مثبت) ہیں، صرف "نقطۂ انجماد سے 3° نیچے" –3 (منفی) ہے، اس لیے یہ باقیوں سے مختلف ہے۔ || درې یې +3 (مثبت) دي، یوازې "د کنګل له ټکي 3° ښکته" –3 (منفي) دی، نو له نورو سره سمون نه خوري.
+endsolution
+endbox
+@sec u2-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- Zero is also an integer which is neither positive nor negative. || صفر بھی ایک صحیح عدد ہے جو نہ مثبت ہے نہ منفی۔ || صفر هم یو تام عدد دی چې نه مثبت دی نه منفي.
+- Whole numbers that are greater than zero are called positive integers. || وہ مکمل اعداد جو صفر سے بڑے ہوں مثبت صحیح اعداد کہلاتے ہیں۔ || هغه بشپړ عددونه چې له صفر لوی وي مثبت تام عددونه بلل کېږي.
+- Integers that are less than zero are called negative integers. || وہ صحیح اعداد جو صفر سے کم ہوں منفی صحیح اعداد کہلاتے ہیں۔ || هغه تام عددونه چې له صفر کم وي منفي تام عددونه بلل کېږي.
+- Positives or negative integers are represented on the number line in opposite direction. || مثبت یا منفی صحیح اعداد عددی لائن پر مخالف سمتوں میں ظاہر کیے جاتے ہیں۔ || مثبت یا منفي تام عددونه په عددي کرښه په مخالفو لورو ښودل کېږي.
+- The absolute or numerical value of any integer (positive or negative) is always positive. || کسی بھی صحیح عدد (مثبت یا منفی) کی مطلق یا عددی قیمت ہمیشہ مثبت ہوتی ہے۔ || د هر تام عدد (مثبت یا منفي) مطلق یا عددي ارزښت تل مثبت وي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Integers || صحیح اعداد || تام عددونه
+- Absolute value || مطلق قیمت || مطلق ارزښت
+- Positive integers || مثبت صحیح اعداد || مثبت تام عددونه
+- Negative integers || منفی صحیح اعداد || منفي تام عددونه
+- Comparing || موازنہ کرنا || پرتله کول
+- Ordering || ترتیب دینا || ترتیبول
+- Ascending order || صعودی ترتیب || صعودي ترتیب
+- Descending order || نزولی ترتیب || نزولي ترتیب
+endbox

@@ -1,0 +1,30 @@
+@printed 166
+@issue The first table is for 2x − y = 4 but its y-values (−2, 0, 2, 4, 6, 8, 10) fit y = 2x − 4 (x = 7 gives 10); "the equation 2x − y is satisfied" omits "= 4"; "(x, y) = (3; 2)" uses a semicolon; "a pair of simultaneous linear equations always has a unique solution" and "three common methods" (five are listed) are kept as printed.
+@issue Exercise 8.1 has no further questions after Q3 on page 165; it is closed here.
+endexercise
+@sec 8.2 | The Solution of Two Simultaneous Linear Equations in Two Variables || دو متغیرات میں دو ہم وقت خطی مساواتوں کا حل || په دوو متغیرونو کې د دوو همزمانه خطي معادلو حل
+# 8.2 The Solution of Two Simultaneous Linear Equations in Two Variables || 8.2 دو متغیرات میں دو ہم وقت خطی مساواتوں کا حل || 8.2 په دوو متغیرونو کې د دوو همزمانه خطي معادلو حل
+p The discussion of the previous section leads to the result that a linear equation in two variables is satisfied by as many values as required. Let us consider two linear equations. || پچھلے حصے کی بحث اس نتیجے پر پہنچاتی ہے کہ دو متغیرات میں خطی مساوات جتنی چاہیں قیمتوں سے پوری ہوتی ہے۔ آئیے دو خطی مساواتوں پر غور کریں۔ || د مخکینۍ برخې بحث دې پایلې ته رسېږي چې په دوو متغیرونو کې خطي معادله د اړتیا په اندازه ډېرو ارزښتونو سره پوره کېږي. راځئ دوو خطي معادلو ته پام وکړو.
+m $2x - y = 4$ ——(1) $\qquad$ $3x - 2y = 5$ ——(2)
+p As we have discussed earlier, the equation $2x - y$ is satisfied by the following values of $x$ and y. || جیسا کہ ہم پہلے بات کر چکے ہیں، مساوات $2x - y$، $x$ اور y کی درج ذیل قیمتوں سے پوری ہوتی ہے۔ || لکه څنګه چې مخکې مو بحث وکړ، $2x - y$ معادله د $x$ او y د لاندې ارزښتونو سره پوره کېږي.
+table
+tr | $x$ | 1 | 2 | 3 | 4 | 5 | 6 | 7
+tr | y | −2 | 0 | 2 | 4 | 6 | 8 | 10
+endtable
+p Some values of $x$ and y for which the equation $3x - 2y = 5$ is satisfied have been displayed in the following table. || $x$ اور y کی کچھ قیمتیں جن سے مساوات $3x - 2y = 5$ پوری ہوتی ہے، درج ذیل جدول میں دکھائی گئی ہیں۔ || د $x$ او y ځینې ارزښتونه چې د $3x - 2y = 5$ معادله پرې پوره کېږي، په لاندې جدول کې ښودل شوي.
+table
+tr | $x$ | 1 | 2 | 3 | 4 | 5 | 6 | 7
+tr | y | −1 | $\frac{1}{2}$ | 2 | $\frac{7}{2}$ | 5 | $\frac{13}{2}$ | 8
+endtable
+p By studying both tables, it reveals that $(x, y) = (3; 2)$ is the only pair of values of x and y that satisfies both equations. Thus, we say that the pair of equations (1) and (2) constitute a pair of simultaneous linear equations and their solution is $x = 3$ and $y = 2$. This discussion leads us to an important result that a pair of simultaneous linear equations always has a unique solution i.e; they are satisfied by a single pair of values of the variables involved. || دونوں جدولوں کا مطالعہ کرنے سے معلوم ہوتا ہے کہ $(x, y) = (3; 2)$، x اور y کی قیمتوں کا واحد جوڑا ہے جو دونوں مساواتوں کو پورا کرتا ہے۔ لہٰذا ہم کہتے ہیں کہ مساواتوں (1) اور (2) کا جوڑا ہم وقت خطی مساواتوں کا جوڑا بناتا ہے اور ان کا حل $x = 3$ اور $y = 2$ ہے۔ یہ بحث ہمیں اس اہم نتیجے تک پہنچاتی ہے کہ ہم وقت خطی مساواتوں کے جوڑے کا ہمیشہ ایک منفرد حل ہوتا ہے یعنی وہ متعلقہ متغیرات کی قیمتوں کے ایک ہی جوڑے سے پوری ہوتی ہیں۔ || د دواړو جدولونو له مطالعې څرګندېږي چې $(x, y) = (3; 2)$ د x او y د ارزښتونو یوازینۍ جوړه ده چې دواړه معادلې پوره کوي. نو وایو چې د (1) او (2) معادلو جوړه د همزمانه خطي معادلو جوړه جوړوي او حل یې $x = 3$ او $y = 2$ دی. دا بحث موږ یوې مهمې پایلې ته رسوي چې د همزمانه خطي معادلو جوړه تل یو ځانګړی حل لري یعنې د اړوندو متغیرونو د ارزښتونو په یوه جوړه پوره کېږي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The values of $x$ and y can also be written in the form of an ordered pair. For example; $(x, y) = (5, -3)$ means $x = 5$ and $y = -3$. || $x$ اور y کی قیمتیں مرتب جوڑے کی صورت میں بھی لکھی جا سکتی ہیں۔ مثال کے طور پر $(x, y) = (5, -3)$ کا مطلب ہے $x = 5$ اور $y = -3$۔ || د $x$ او y ارزښتونه د مرتبې جوړې په بڼه هم لیکل کېدای شي. د بېلګې په توګه $(x, y) = (5, -3)$ معنا $x = 5$ او $y = -3$ ده.
+endbox
+p To solve simultaneous linear equations means to find the unique pair of values of the variables involved that satisfy both equations and this unique pair of values of variables is known as the solution of the simultaneous equations. || ہم وقت خطی مساواتیں حل کرنے کا مطلب ہے متعلقہ متغیرات کی قیمتوں کا وہ منفرد جوڑا معلوم کرنا جو دونوں مساواتوں کو پورا کرے اور متغیرات کی قیمتوں کا یہ منفرد جوڑا ہم وقت مساواتوں کا حل کہلاتا ہے۔ || د همزمانه خطي معادلو حلول یعنې د اړوندو متغیرونو د ارزښتونو هغه ځانګړې جوړه موندل چې دواړه معادلې پوره کړي او دې ځانګړې جوړې ته د همزمانه معادلو حل وايي.
+## 8.2.1 Methods of Solving Simultaneous Linear Equations || 8.2.1 ہم وقت خطی مساواتیں حل کرنے کے طریقے || 8.2.1 د همزمانه خطي معادلو د حل طریقې
+p There are three common methods of solving a pair of simultaneous linear equations. These are; || ہم وقت خطی مساواتوں کے جوڑے کو حل کرنے کے تین عام طریقے ہیں۔ یہ ہیں؛ || د همزمانه خطي معادلو د جوړې د حل درې عامې طریقې دي. دا دي؛
+qp 1 | Elimination Method || حذف کا طریقہ || د حذف طریقه
+qp 2 | Substitution Method || تعویض کا طریقہ || د ځای ناستي طریقه
+qp 3 | Graphical Method || گرافی طریقہ || ګرافي طریقه
+qp 4 | Division Method || تقسیم کا طریقہ || د وېش طریقه
+qp 5 | Factorization Method || تجزی کا طریقہ || د تجزیې طریقه

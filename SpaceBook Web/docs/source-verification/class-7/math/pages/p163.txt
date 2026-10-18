@@ -1,0 +1,23 @@
+@printed 159
+q 14 | Write the ordered pair for each point. || ہر نقطے کا مرتب جوڑا لکھیں۔ || د هر ټکي ترتیب شوې جوړه ولیکئ.
+grid range=-15..15 | pts=:2,11;:14,10;:-9,5;:8,-1;:-8,-2;:-11,-7;:14,-9 | nolabel=1 || Seven unlabelled points on a grid with no axis numbers (one square = one unit) || بغیر محوری اعداد کے گرڈ پر سات بے نام نقاط (ایک خانہ = ایک اکائی) || د محور له عددونو پرته پر ګرډ اوه بې نومه ټکي (یوه خانه = یو واحد)
+@issue The Q14 grid in the book has no numbers on the axes; the coded figure places the seven points at their approximate printed squares (about (2, 11), (14, 10), (−9, 5), (8, −1), (−8, −2), (−11, −7), (14, −9), counting one square as one unit).
+q 15 | Find the ordered pair(s) with x-ordinate as 5. || وہ مرتب جوڑا (جوڑے) معلوم کریں جن کا x-محدد 5 ہو۔ || هغه ترتیب شوې جوړه (جوړې) پیدا کړئ چې x-مختص یې 5 وي.
+grid range=-5..5 | pts=Q:-2,4;S:1,4;R:4,4;T:-4,2;U:-3,1;J:3,1;B:1,-2;L:-4,-3;A:3,-3 | nameonly=1 || Points Q, S, R, T, U, J, B, L and A on a grid from −5 to 5 || −5 سے 5 تک گرڈ پر نقاط Q، S، R، T، U، J، B، L اور A || له −5 تر 5 پورې پر ګرډ ټکي Q، S، R، T، U، J، B، L او A
+@issue In the Q15 graph the point R is printed close to x = 4 (just left of the 5 mark), so no plotted point clearly has x-coordinate 5; positions are read from the printed grid. Points are labelled with their names only, as in the book.
+q 16 | Plot the graphs for the following linear equations in one variable. || ایک متغیر والی درج ذیل خطی مساواتوں کے گراف بنائیں۔ || د لاندې یو متحوله خطي معادلو ګرافونه رسم کړئ.
+qp a | $x - 5 = 0$
+qp b | $2x + 1 = 0$
+qp c | $y - 5 = 0$
+qp d | $2y + 1 = 0$
+q 17 | Draw the graphs of the following equations. || درج ذیل مساواتوں کے گراف بنائیں۔ || د لاندې معادلو ګرافونه رسم کړئ.
+qp a | $x = 3$
+qp b | $x = -10$
+qp c | $x = -1$
+qp d | $x = -3.5$
+q 18 | Draw the graphs of the following equations. || درج ذیل مساواتوں کے گراف بنائیں۔ || د لاندې معادلو ګرافونه رسم کړئ.
+qp a | $y = -2.5$
+qp b | $y = 3$
+qp c | $y = -7$
+qp d | $y = 4$
+endexercise

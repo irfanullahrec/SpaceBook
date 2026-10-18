@@ -1,0 +1,41 @@
+@printed 107
+exercise Review Exercise (continued)
+q 4 | Look at the fraction and colour each shape. || کسر دیکھیں اور ہر شکل میں رنگ بھریں۔ || کسر وګورئ او هر شکل رنګ کړئ.
+fig parts hexh2 0 || 1/2 — hexagon in 2 parts || 1/2 — مسدس 2 حصوں میں || 1/2 — شپږګوټی په 2 برخو
+fig parts tricentre3 0 || 1/3 — triangle in 3 parts || 1/3 — مثلث 3 حصوں میں || 1/3 — مثلث په 3 برخو
+fig parts diamond4 0 || 1/4 — rhombus in 4 parts || 1/4 — معین 4 حصوں میں || 1/4 — معین په 4 برخو
+fig parts circ6 0 || 5/6 — circle in 6 parts || 5/6 — دائرہ 6 حصوں میں || 5/6 — دایره په 6 برخو
+fig parts star5 0 || 3/5 — star in 5 parts || 3/5 — ستارہ 5 حصوں میں || 3/5 — ستوری په 5 برخو
+fig parts tritri9 0 || 7/9 — triangle in 9 parts || 7/9 — مثلث 9 حصوں میں || 7/9 — مثلث په 9 برخو
+qp a | 1/2 of the hexagon
+sol Colour 1 of the 2 parts. ## The bottom number tells the equal parts, the top number how many to colour. || نیچے کا عدد برابر حصے اور اوپر کا عدد رنگنے والے حصے بتاتا ہے۔ || لاندې عدد برابرې برخې او پورته عدد د رنګولو برخې ښيي.
+qp b | 1/3 of the triangle
+sol Colour 1 of the 3 parts. ## One part out of three. || تین میں سے ایک حصہ۔ || له دریو یوه برخه.
+qp c | 1/4 of the rhombus
+sol Colour 1 of the 4 parts. ## One part out of four. || چار میں سے ایک حصہ۔ || له څلورو یوه برخه.
+qp d | 5/6 of the circle
+sol Colour 5 of the 6 parts. ## Leave one part white. || ایک حصہ سفید چھوڑ دیں۔ || یوه برخه سپینه پرېږدئ.
+qp e | 3/5 of the star
+sol Colour 3 of the 5 points. ## Leave two points white. || دو کونے سفید چھوڑ دیں۔ || دوه څوکې سپینې پرېږدئ.
+qp f | 7/9 of the triangle
+sol Colour 7 of the 9 small triangles. ## Leave two small triangles white. || دو چھوٹے مثلث سفید چھوڑ دیں۔ || دوه کوچني مثلثونه سپین پرېږدئ.
+q 5 | Write the fraction for the coloured part of each shape. Hint: Count the coloured parts and write the fraction. || ہر شکل کے رنگے ہوئے حصے کا کسر لکھیں۔ اشارہ: رنگے ہوئے حصے گن کر کسر لکھیں۔ || د هر شکل د رنګ شوې برخې کسر ولیکئ. اشاره: رنګ شوې برخې وشمېرئ او کسر ولیکئ.
+qp a | strip of 5 parts
+fig parts bar5 1,3,5 #bbf7d0 || strip of 5 parts || 5 حصوں کی پٹی || د 5 برخو پټۍ
+sol 3/5 ## 3 coloured parts out of 5. || 5 میں سے 3 رنگے ہوئے۔ || له 5 څخه 3 رنګ شوې.
+qp b | strip of 7 parts
+fig parts bar7 1,3,5,7 #fde047 || strip of 7 parts || 7 حصوں کی پٹی || د 7 برخو پټۍ
+sol 4/7 ## 4 coloured parts out of 7. || 7 میں سے 4 رنگے ہوئے۔ || له 7 څخه 4 رنګ شوې.
+qp c | rhombus of 4 parts
+fig parts diamond4 2,4 #d946ef || rhombus of 4 parts || 4 حصوں کا معین || د 4 برخو معین
+sol 2/4 ## 2 coloured parts out of 4. || 4 میں سے 2 رنگے ہوئے۔ || له 4 څخه 2 رنګ شوې.
+qp d | zigzag of 9 panels
+fig parts zig9 1,3,5,7,9 #d9f99d || zigzag of 9 panels || 9 حصوں کا زگ زیگ || د 9 برخو کږه وږه
+sol 5/9 ## 5 coloured panels out of 9. || 9 میں سے 5 رنگے ہوئے۔ || له 9 څخه 5 رنګ شوې.
+qp e | circle of 8 parts
+fig parts circ8 2,4,6,8 #7dd3fc || circle of 8 parts || 8 حصوں کی دائرہ || د 8 برخو دایره
+sol 4/8 ## 4 coloured parts out of 8. || 8 میں سے 4 رنگے ہوئے۔ || له 8 څخه 4 رنګ شوې.
+qp f | grid of 10 parts
+fig parts grid10 1,3,5,7,9 #ddd6fe || grid of 10 parts || 10 حصوں کا جال || د 10 برخو جال
+sol 5/10 ## 5 coloured parts out of 10. || 10 میں سے 5 رنگے ہوئے۔ || له 10 څخه 5 رنګ شوې.
+endexercise

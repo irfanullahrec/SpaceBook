@@ -1,0 +1,28 @@
+@printed 109
+p We see that each term is obtained by adding 5 to the position of the term. || ہم دیکھتے ہیں کہ ہر رکن رکن کے مقام میں 5 جمع کرنے سے حاصل ہوتا ہے۔ || ګورو چې هر حد د حد ځای ته د 5 په ورزیاتولو لاسته راځي.
+p Now, to find the 18th term of this pattern, we will add 5 to 18. || اب اس نمونے کا اٹھارواں رکن معلوم کرنے کے لیے ہم 18 میں 5 جمع کریں گے۔ || اوس د دې بېلګې د 18م حد د موندلو لپاره 18 ته 5 ورزیاتوو.
+m So, the $18^{th}$ Term is: $18 + 5 = 23$.
+endexample
+example 2 | Find the position to term rule to find $25^{th}$ term of the pattern: 7, 14, 21, 28, 35, 42, ... || نمونے 7، 14، 21، 28، 35، 42، ... کا $25^{th}$ رکن معلوم کرنے کے لیے مقام سے رکن کا قاعدہ معلوم کریں۔ || د 7، 14، 21، 28، 35، 42، ... بېلګې د $25^{th}$ حد د موندلو لپاره له ځای څخه حد ته قاعده معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First, write the terms and their positions of this pattern in a table. || پہلے اس نمونے کے ارکان اور ان کے مقامات ایک جدول میں لکھیں۔ || لومړی د دې بېلګې حدونه او ځایونه یې په یوه جدول کې ولیکئ.
+table
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 7 | 14 | 21 | 28 | 35 | 42
+endtable
+p Now find the rule for position to terms || اب مقام سے رکن کا قاعدہ معلوم کریں || اوس له ځای څخه حد ته قاعده معلومه کړئ
+table
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 7 | 14 | 21 | 28 | 35 | 42
+tr | Rule | 1×7 | 2×7 | 3×7 | 4×7 | 5×7 | 6×7
+endtable
+p We see that each term is obtained by multiplying the position of the term by 7. || ہم دیکھتے ہیں کہ ہر رکن رکن کے مقام کو 7 سے ضرب دینے سے حاصل ہوتا ہے۔ || ګورو چې هر حد د حد د ځای په 7 کې د ضربولو له لارې لاسته راځي.
+p Now, to find the $25^{th}$ term of this pattern, we will multiply 25 by 7. || اب اس نمونے کا $25^{th}$ رکن معلوم کرنے کے لیے ہم 25 کو 7 سے ضرب دیں گے۔ || اوس د دې بېلګې د $25^{th}$ حد د موندلو لپاره 25 په 7 کې ضربوو.
+m So, the $25^{th}$ term is: $25 \times 7 = 175$.
+endexample
+exercise 6.1
+q 1 | Identify the term-to-term rules for the following patterns and write the next three terms. || درج ذیل نمونوں کے رکن سے رکن کے قواعد معلوم کریں اور اگلے تین ارکان لکھیں۔ || د لاندې بېلګو له حد څخه حد ته قواعد وپېژنئ او راتلونکي درې حدونه ولیکئ.
+qsolve seq
+qp a | 4, 9, 14 19, ___, ___, ___
+qp b | 8, 16, 32, 64 ___, ___, ___, ___
+@issue Q1(b) prints four blanks after 64 although "next three terms" are asked; kept as printed. Each part is followed in the book by answer lines "The term-to-term rule of this pattern is: ___" and "The next three terms are: ___"; these are answered in the SpaceBook solutions.

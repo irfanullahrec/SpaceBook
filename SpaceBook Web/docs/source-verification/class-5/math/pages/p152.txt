@@ -1,0 +1,41 @@
+@printed 144
+@deco Faint pencil marks on the scan inside net c) and between the nets (not part of the figures).
+q 2 | Identify the nets of cube and colour them. || مکعب کے جال پہچانیں اور انہیں رنگیں۔ || د مکعب جالونه وپېژنئ او رنګ یې کړئ.
+net 0,1 1,0 1,1 2,1 2,2 3,1 | fill=#fff || a) || a) || a)
+qp a | Net a) || جال a) || جال a)
+sol Yes — net of a cube ## A column of four squares with one square on each side (on different rows) folds into a cube. || ہاں — چار مربعوں کا ایک کالم اور دونوں طرف ایک ایک مربع، مکعب بن جاتا ہے۔ || هو — د څلورو مربعو یو ستون او هر اړخ ته یوه مربع، مکعب جوړوي.
+net 0,0 1,0 2,0 2,1 2,2 3,2 | fill=#fff || b) || b) || b)
+qp b | Net b) || جال b) || جال b)
+sol No — not a net of a cube ## When folded, two squares land on the same face and one face stays open. || موڑنے پر دو مربع ایک ہی سطح پر آ جاتے ہیں اور ایک سطح کھلی رہ جاتی ہے۔ || په ماتولو دوه مربعګانې پر یوه سطحه راځي او یوه سطحه خلاصه پاتې کېږي.
+net 0,0 1,0 1,1 2,1 2,2 3,2 | fill=#fff || c) || c) || c)
+qp c | Net c) || جال c) || جال c)
+sol Yes — net of a cube ## This staircase pattern folds into a closed cube. || یہ سیڑھی نما ترتیب موڑنے پر بند مکعب بن جاتی ہے۔ || دا زینه ډوله ترتیب په ماتولو تړلی مکعب جوړوي.
+net 0,1 1,0 1,1 1,2 2,1 3,1 | fill=#fff || d) || d) || d)
+qp d | Net d) || جال d) || جال d)
+sol Yes — net of a cube ## The cross shape is the most common net of a cube. || صلیب نما شکل مکعب کا عام جال ہے۔ || د صلیب شکل د مکعب تر ټولو عام جال دی.
+@issue Answers to Ex 5 Q2 were checked by folding each net on a model cube (SpaceBook check); the book prints no answer on this page.
+q 3 | Observe these nets and identify the 3D solid they are made up of. || ان جالوں کا مشاہدہ کریں اور بتائیں کہ یہ کس سہ بعدی ٹھوس کے ہیں۔ || دې جالونو ته پام وکړئ او وپېژنئ چې د کوم درې بعدي جامد دي.
+@issue The question "Observe these nets and identify the 3D solid they are made up of." is printed without a number; numbered 3 here.
+svg a) || a) || a)
+<svg viewBox="0 0 170 270" width="140" role="img" aria-label="Net of four tall rectangles in a row with a square above and below" font-family="Segoe UI, Arial, sans-serif"><g fill="#fff" stroke="#1d4ed8" stroke-width="1.5"><rect x="10" y="70" width="36" height="125"/><rect x="46" y="70" width="36" height="125"/><rect x="82" y="70" width="36" height="125"/><rect x="118" y="70" width="36" height="125"/><rect x="82" y="10" width="36" height="60"/><rect x="82" y="195" width="36" height="60"/></g></svg>
+endsvg
+qp a | Net a) || جال a) || جال a)
+sol Cuboid ## Four long rectangles in a row with a small face at each end make a cuboid. || ایک قطار میں چار لمبے مستطیل اور دونوں سروں پر چھوٹی سطحیں — مکعب نما۔ || په یوه کرښه کې څلور اوږده مستطیلونه او په دواړو سرونو کوچنۍ سطحې — مکعب نما.
+svg b) || b) || b)
+<svg viewBox="0 0 180 190" width="150" role="img" aria-label="A square with a triangle on each side" font-family="Segoe UI, Arial, sans-serif"><g fill="#fff" stroke="#1d4ed8" stroke-width="1.5"><rect x="60" y="60" width="60" height="60"/><polygon points="60,60 120,60 90,5"/><polygon points="120,60 120,120 175,90"/><polygon points="60,120 120,120 90,185"/><polygon points="60,60 60,120 5,90"/></g></svg>
+endsvg
+qp b | Net b) || جال b) || جال b)
+sol Square pyramid ## One square base with a triangle on each side. || ایک مربع قاعدہ اور ہر ضلع پر ایک مثلث — مربع اہرام۔ || یوه مربع قاعده او پر هره ضلع یو مثلث — مربع هرم.
+net 0,2 1,0 1,1 1,2 1,3 2,2 | fill=#fff || c) || c) || c)
+qp c | Net c) || جال c) || جال c)
+sol Cube ## Six equal squares (four in a row, one above and one below) fold into a cube. || چھ برابر مربع (چار ایک قطار میں، ایک اوپر اور ایک نیچے) — مکعب۔ || شپږ برابرې مربعګانې (څلور په یوه کرښه، یوه پورته او یوه لاندې) — مکعب.
+svg d) || d) || d)
+<svg viewBox="0 0 220 130" width="180" role="img" aria-label="Four triangles joined at one point and a square" font-family="Segoe UI, Arial, sans-serif"><g fill="#fff" stroke="#1d4ed8" stroke-width="1.5"><polygon points="80,85 30,25 5,90"/><polygon points="80,85 30,25 95,10"/><polygon points="80,85 95,10 140,48"/><polygon points="80,85 140,48 140,115"/><rect x="140" y="48" width="60" height="67"/></g></svg>
+endsvg
+qp d | Net d) || جال d) || جال d)
+sol Square pyramid ## Four triangles meeting at one point (the apex) and one square base. || ایک نقطے پر ملنے والے چار مثلث اور ایک مربع قاعدہ — مربع اہرام۔ || په یوه ټکي کې سره یو ځای شوي څلور مثلثونه او یوه مربع قاعده — مربع هرم.
+svg e) || e) || e)
+<svg viewBox="0 0 190 250" width="150" role="img" aria-label="Net of six rectangles" font-family="Segoe UI, Arial, sans-serif"><g fill="#fff" stroke="#1d4ed8" stroke-width="1.5"><rect x="50" y="5" width="90" height="40"/><rect x="10" y="45" width="40" height="70"/><rect x="50" y="45" width="90" height="70"/><rect x="140" y="45" width="40" height="70"/><rect x="50" y="115" width="90" height="45"/><rect x="50" y="160" width="90" height="80"/></g></svg>
+endsvg
+qp e | Net e) || جال e) || جال e)
+sol Cuboid ## Six rectangles in the same pattern as the cuboid net on page 142. || صفحہ 142 کے مکعب نما کے جال کی طرح چھ مستطیل — مکعب نما۔ || د 142 مخ د مکعب نما د جال په څېر شپږ مستطیلونه — مکعب نما.

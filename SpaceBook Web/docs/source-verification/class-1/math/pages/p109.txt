@@ -1,0 +1,32 @@
+@printed 105
+p Draw hands to show the correct time. || درست وقت دکھانے کے لیے سوئیاں بنائیں۔ || د سم وخت د ښودلو لپاره ستنې رسم کړئ.
+q 5 | 6 o'clock || چھ بجے || شپږ بجې
+clock - || clock face without hands || بغیر سوئیوں کے گھڑی || بې ستنو ګړۍ
+sol Hour hand on 6, minute hand on 12 ## At an o'clock time the minute hand always points to 12. || پورے گھنٹے پر منٹ کی سوئی ہمیشہ ۱۲ پر ہوتی ہے۔ || په بشپړ ساعت کې د دقیقې ستن تل پر ۱۲ وي.
+q 6 | 9 o'clock || نو بجے || نهه بجې
+clock - || clock face without hands || بغیر سوئیوں کے گھڑی || بې ستنو ګړۍ
+sol Hour hand on 9, minute hand on 12 ## The short hand shows the hour. || چھوٹی سوئی گھنٹہ بتاتی ہے۔ || لنډه ستن ساعت ښيي.
+q 7 | 12 o'clock || بارہ بجے || دولس بجې
+clock - || clock face without hands || بغیر سوئیوں کے گھڑی || بې ستنو ګړۍ
+sol Both hands on 12 ## At 12 o'clock the hour hand and the minute hand are together on 12. || بارہ بجے دونوں سوئیاں ۱۲ پر اکٹھی ہوتی ہیں۔ || په دولسو بجو دواړه ستنې یوځای پر ۱۲ وي.
+p Tick (✓) the digital clock to indicate the time on the analog clock on the left. || بائیں طرف والی اینالاگ گھڑی کا وقت ظاہر کرنے والی ڈیجیٹل گھڑی پر (✓) کا نشان لگائیں۔ || په هغې ډیجیټل ګړۍ (✓) ولګوئ چې د کیڼ لوري انلاګ ګړۍ وخت ښيي.
+q 8 | Analog clock row 1 || اینالاگ گھڑی قطار ۱ || انلاګ ګړۍ قطار ۱
+frow clock 8:00 ;; digital 6:00 ;; digital 8:00 ;; digital 7:00 || analog clock; choices 6:00, 8:00, 7:00 || اینالاگ گھڑی؛ انتخاب ۶:۰۰، ۸:۰۰، ۷:۰۰ || انلاګ ګړۍ؛ انتخابونه ۶:۰۰، ۸:۰۰، ۷:۰۰
+sol 8:00 ## The hour hand points to 8. || گھنٹے کی سوئی ۸ پر ہے۔ || د ساعت ستن پر ۸ ده.
+q 9 | Analog clock row 2 || اینالاگ گھڑی قطار ۲ || انلاګ ګړۍ قطار ۲
+frow clock 4:00 ;; digital 3:00 ;; digital 5:00 ;; digital 4:00 || analog clock; choices 3:00, 5:00, 4:00 || اینالاگ گھڑی؛ انتخاب ۳:۰۰، ۵:۰۰، ۴:۰۰ || انلاګ ګړۍ؛ انتخابونه ۳:۰۰، ۵:۰۰، ۴:۰۰
+sol 4:00 ## The hour hand points to 4. || گھنٹے کی سوئی ۴ پر ہے۔ || د ساعت ستن پر ۴ ده.
+q 10 | Analog clock row 3 || اینالاگ گھڑی قطار ۳ || انلاګ ګړۍ قطار ۳
+frow clock 6:00 ;; digital 6:00 ;; digital 8:00 ;; digital 7:00 || analog clock; choices 6:00, 8:00, 7:00 || اینالاگ گھڑی؛ انتخاب ۶:۰۰، ۸:۰۰، ۷:۰۰ || انلاګ ګړۍ؛ انتخابونه ۶:۰۰، ۸:۰۰، ۷:۰۰
+sol 6:00 ## The hour hand points to 6. || گھنٹے کی سوئی ۶ پر ہے۔ || د ساعت ستن پر ۶ ده.
+q 11 | Analog clock row 4 || اینالاگ گھڑی قطار ۴ || انلاګ ګړۍ قطار ۴
+frow clock 9:00 ;; digital 10:00 ;; digital 9:00 ;; digital 11:00 || analog clock; choices 10:00, 9:00, 11:00 || اینالاگ گھڑی؛ انتخاب ۱۰:۰۰، ۹:۰۰، ۱۱:۰۰ || انلاګ ګړۍ؛ انتخابونه ۱۰:۰۰، ۹:۰۰، ۱۱:۰۰
+sol 9:00 ## The hour hand points to 9. || گھنٹے کی سوئی ۹ پر ہے۔ || د ساعت ستن پر ۹ ده.
+q 12 | Analog clock row 5 || اینالاگ گھڑی قطار ۵ || انلاګ ګړۍ قطار ۵
+frow clock 11:00 ;; digital 11:00 ;; digital 10:00 ;; digital 12:00 || analog clock; choices 11:00, 10:00, 12:00 || اینالاگ گھڑی؛ انتخاب ۱۱:۰۰، ۱۰:۰۰، ۱۲:۰۰ || انلاګ ګړۍ؛ انتخابونه ۱۱:۰۰، ۱۰:۰۰، ۱۲:۰۰
+sol 11:00 ## The hour hand points to 11. || گھنٹے کی سوئی ۱۱ پر ہے۔ || د ساعت ستن پر ۱۱ ده.
+endexercise
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q 13 | At what time do you go to school in the morning? || آپ صبح کس وقت اسکول جاتے ہیں؟ || تاسو سهار څو بجې ښوونځي ته ځئ؟
+sol Answers will vary (for example, 8 o'clock). ## Read the time on a clock when you leave for school. || اسکول جاتے وقت گھڑی پر وقت پڑھیں۔ || کله چې ښوونځي ته ځئ په ګړۍ وخت ولولئ.
+endbox

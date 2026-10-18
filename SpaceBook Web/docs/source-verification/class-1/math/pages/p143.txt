@@ -1,0 +1,17 @@
+@printed 139
+@issue The queue label reads "Umar" while the question says "Umer"; both are kept as printed.
+q 14 | Encircle the object over the lamp. || لیمپ کے اوپر والی چیز کے گرد دائرہ لگائیں۔ || د څراغ پر سر شی په کړۍ کې ونیسئ.
+scene 300 150 ; box 0 120 300 18 #9ca3af #9ca3af ; lamp@150,70,3.5 ; bird.blue@150,8,0.9 ; kitten@175,108,1 || A street lamp with a bird on top and a kitten at its foot || اسٹریٹ لیمپ جس کے اوپر پرندہ اور نیچے بلی کا بچہ || د سړک څراغ چې پر سر یې مرغه او لاندې یې پیشوګی دی
+sol The bird ## The bird sits on top of the lamp; the kitten is at the bottom. || پرندہ لیمپ کے اوپر بیٹھا ہے؛ بلی کا بچہ نیچے ہے۔ || مرغه د څراغ پر سر ناسته ده؛ پیشوګی لاندې دی.
+q 15 | Colour the animal which is near the tree. || درخت کے قریب والے جانور میں رنگ بھریں۔ || ونې ته نږدې ژوی رنګ کړئ.
+scene 380 150 ; box 0 70 380 80 #16a34a #16a34a ; tree@70,70,4 ; goat.white@150,105,2.4 ; dog.white@330,60,1.4 || A tree, a goat beside it and a fox far away on the hill || ایک درخت، اس کے پاس بکری اور دور پہاڑی پر لومڑی || یوه ونه، څنګ ته یې وزه او لرې په غونډۍ ګیدړه
+sol The goat ## The goat stands next to the tree; the fox is far away. || بکری درخت کے پاس کھڑی ہے؛ لومڑی دور ہے۔ || وزه ونې ته څنګ ولاړه ده؛ ګیدړه لرې ده.
+p Some kids are queuing up to get tickets. || کچھ بچے ٹکٹ لینے کے لیے قطار میں کھڑے ہیں۔ || ځینې ماشومان د ټکټ اخیستو لپاره په قطار کې ولاړ دي.
+scene 400 120 ; box 10 30 80 85 #38bdf8 ; text 50 25 Ticket ; boy.orange@140,85,1.6 ; boy.blue@210,85,1.6 ; girl.orange@280,85,1.6 ; boy.navy@350,85,1.6 ; text 140 45 Ahmer ; text 210 45 Umar ; text 280 45 Amna ; text 350 45 Fahad || Ticket counter, then Ahmer, Umar, Amna and Fahad in a queue || ٹکٹ گھر، پھر قطار میں احمر، عمر، آمنہ اور فہد || د ټکټ کړکۍ، بیا په قطار کې احمر، عمر، آمنه او فهد
+q 16 | Who is standing just after Amna? || آمنہ کے فوراً بعد کون کھڑا ہے؟ || سمدستي له آمنې وروسته څوک ولاړ دی؟
+sol Fahad ## The queue starts at the ticket counter: Ahmer, Umar, Amna, Fahad. || قطار ٹکٹ گھر سے شروع ہوتی ہے: احمر، عمر، آمنہ، فہد۔ || قطار د ټکټ له کړکۍ پیلېږي: احمر، عمر، آمنه، فهد.
+q 17 | Who is standing just before Umer? || عمر سے فوراً پہلے کون کھڑا ہے؟ || سمدستي له عمر مخکې څوک ولاړ دی؟
+sol Ahmer ## Ahmer is first in the queue, then Umar. || احمر قطار میں پہلا ہے، پھر عمر۔ || احمر په قطار کې لومړی دی، بیا عمر.
+q 18 | Who is standing just after Ahmer? || احمر کے فوراً بعد کون کھڑا ہے؟ || سمدستي له احمر وروسته څوک ولاړ دی؟
+sol Umar ## Umar stands right behind Ahmer. || عمر احمر کے بالکل پیچھے کھڑا ہے۔ || عمر سمدستي د احمر شاته ولاړ دی.
+endexercise

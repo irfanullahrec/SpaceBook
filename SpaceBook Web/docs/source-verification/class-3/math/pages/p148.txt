@@ -1,0 +1,20 @@
+@printed 143
+@deco A man pointing, with speech bubbles.
+p A line is a straight path that keeps going on in both directions. It is represented by $\overleftrightarrow{AB}$. || خط ایک سیدھا راستہ ہے جو دونوں سمتوں میں چلتا رہتا ہے۔ اسے $\overleftrightarrow{AB}$ سے ظاہر کیا جاتا ہے۔ || کرښه یوه سمه لاره ده چې په دواړو لورو روانه وي. په $\overleftrightarrow{AB}$ ښودل کېږي.
+fig geo 300 70 ; L 10 30 290 30 #1d4ed8 both ; S 60 22 60 38 ; S 240 22 240 38 ; P 60 54 A ; P 240 54 B ; P 150 64 Line || Line AB with arrows at both ends || دونوں سروں پر تیر والا خط AB || په دواړو سرونو غشي لرونکې کرښه AB
+p The above line can be represented by $\overleftrightarrow{AB}$ || اوپر والے خط کو $\overleftrightarrow{AB}$ سے ظاہر کیا جا سکتا ہے || پورتنۍ کرښه په $\overleftrightarrow{AB}$ ښودل کېدای شي
+box note | Key Fact || اہم حقیقت || مهم حقیقت
+- A line has no end point || خط کا کوئی آخری نقطہ نہیں ہوتا || کرښه پای ټکی نه لري
+- A line extends in both directions || خط دونوں سمتوں میں بڑھتا ہے || کرښه په دواړو لورو غځېږي
+endbox
+## Ray || شعاع || وړانګه
+p A ray is a part of a line. It has fixed initial point but can be extended to in that directions. It is represented by $\overrightarrow{AB}$ || شعاع خط کا ایک حصہ ہے۔ اس کا ابتدائی نقطہ مقرر ہوتا ہے لیکن اسے اس سمت میں بڑھایا جا سکتا ہے۔ اسے $\overrightarrow{AB}$ سے ظاہر کیا جاتا ہے || وړانګه د کرښې یوه برخه ده. پیل ټکی یې ټاکلی وي خو په هغه لوري غځېدای شي. په $\overrightarrow{AB}$ ښودل کېږي
+fig geo 340 70 ; L 60 30 300 30 #1d4ed8 end ; D 60 30 4 ; S 240 22 240 38 ; P 60 54 A ; P 240 54 B ; P 28 34 Fixed point ; P 310 20 no end point ; P 170 64 Ray || Ray AB: fixed point A, no end point beyond B || شعاع AB: مقررہ نقطہ A، B سے آگے کوئی آخری نقطہ نہیں || وړانګه AB: ټاکلی ټکی A، له B وروسته پای ټکی نشته
+box note | Key point || اہم نکتہ || مهم ټکی
+- A ray has one end point || شعاع کا ایک آخری نقطہ ہوتا ہے || وړانګه یو پای ټکی لري
+- A ray extends in one direction. || شعاع ایک سمت میں بڑھتی ہے۔ || وړانګه په یوه لوري غځېږي.
+endbox
+box check | Check Point || جانچ || ازموینه
+q - | Can we write? $\overrightarrow{AB} = \overrightarrow{BA}$ || کیا ہم لکھ سکتے ہیں؟ $\overrightarrow{AB} = \overrightarrow{BA}$ || ایا لیکلی شو؟ $\overrightarrow{AB} = \overrightarrow{BA}$
+sol No ## Ray AB starts at A and goes through B; ray BA starts at B and goes the other way through A. They are different rays. || شعاع AB، A سے شروع ہو کر B سے گزرتی ہے؛ شعاع BA، B سے شروع ہو کر دوسری طرف A سے گزرتی ہے۔ یہ مختلف شعاعیں ہیں۔ || وړانګه AB له A پیلېږي او له B تېرېږي؛ وړانګه BA له B پیلېږي او بل لوري ته له A تېرېږي. دا بېلې وړانګې دي.
+endbox

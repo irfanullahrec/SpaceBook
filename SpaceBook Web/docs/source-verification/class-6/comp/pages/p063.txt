@@ -1,0 +1,31 @@
+@printed 59
+@status lesson
+p Therefore, for the given situation the algorithm will use the following steps: || لہٰذا اس صورتِ حال کے لیے الگورتھم یہ مراحل استعمال کرے گا: || نو د دې حالت لپاره الګوریتم دا ګامونه کاروي:
+- Compare elements. || عناصر کا موازنہ کریں۔ || عناصر پرتله کړئ.
+- Determine if one element should be at the left or right of another element. || طے کریں کہ ایک عنصر دوسرے کے بائیں ہو یا دائیں۔ || وټاکئ چې یو عنصر د بل کیڼ لوري ته وي که ښي.
+p **Output:** Ascending list of characters || **آؤٹ پٹ:** حروف کی صعودی فہرست || **وتون:** د تورو صعودي لېست
+svg B, D, A, C (random order) → A, B, C, D (ascending order). || بے ترتیب B، D، A، C ← ترتیب وار A، B، C، D۔ || ګډوډ B، D، A، C ← منظم A، B، C، D.
+<svg viewBox="0 0 460 100" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="26" font-weight="bold" role="img" aria-label="Sorting letters">
+<defs><marker id="sr1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#ea580c"/></marker></defs>
+<g stroke-width="3"><circle cx="35" cy="35" r="24" fill="#f9a8d4" stroke="#db2777"/><circle cx="85" cy="65" r="24" fill="#bae6fd" stroke="#0284c7"/><circle cx="135" cy="30" r="24" fill="#fed7aa" stroke="#ea580c"/><circle cx="185" cy="65" r="24" fill="#bbf7d0" stroke="#16a34a"/></g>
+<g text-anchor="middle" fill="#1e293b"><text x="35" y="44">B</text><text x="85" y="74">D</text><text x="135" y="39">A</text><text x="185" y="74">C</text></g>
+<line x1="220" y1="50" x2="252" y2="50" stroke="#ea580c" stroke-width="5" marker-end="url(#sr1)"/>
+<g stroke-width="3"><circle cx="285" cy="50" r="24" fill="#fed7aa" stroke="#ea580c"/><circle cx="337" cy="50" r="24" fill="#f9a8d4" stroke="#db2777"/><circle cx="389" cy="50" r="24" fill="#bbf7d0" stroke="#16a34a"/><circle cx="441" cy="50" r="17" fill="#bae6fd" stroke="#0284c7"/></g>
+<g text-anchor="middle" fill="#1e293b"><text x="285" y="59">A</text><text x="337" y="59">B</text><text x="389" y="59">C</text><text x="441" y="58" font-size="20">D</text></g>
+</svg>
+endsvg
+p In the above example comparison of elements is a situation that was assessed and a decision is taken accordingly. || اوپر کی مثال میں عناصر کا موازنہ وہ صورتِ حال ہے جس کا جائزہ لیا گیا اور اس کے مطابق فیصلہ کیا گیا۔ || په پورتنۍ بېلګه کې د عناصرو پرتله ارزول شوی حالت دی او پرېکړه ورسره سمه شوې.
+endexample
+### b. Repetition || ب۔ دہرائی (تکرار) || ب. تکرار
+p Repetition refers to the act of doing one thing again and again. However, there must be some instance or event where this repeating activity should be stopped. || دہرائی سے مراد کسی کام کو بار بار کرنا ہے۔ تاہم کوئی موقع یا واقعہ ضرور ہونا چاہیے جہاں یہ دہرانے والا عمل رک جائے۔ || تکرار یو کار بیا بیا کول دي. خو باید یوه پېښه یا شېبه وي چې تکرار پکې ودرېږي.
+example Example 7 | Issuing library books || لائبریری سے کتابیں جاری کرنا || له کتابتون کتابونه اخیستل
+p Hamza wants to issue three books from the school library. He selects his favorite books and goes to the librarian. The librarian follows the given steps: || حمزہ اسکول کی لائبریری سے تین کتابیں جاری کروانا چاہتا ہے۔ وہ اپنی پسندیدہ کتابیں چن کر لائبریرین کے پاس جاتا ہے۔ لائبریرین یہ مراحل اختیار کرتا ہے: || حمزه غواړي له ښوونځي کتابتون درې کتابونه واخلي. خوښ کتابونه ټاکي او کتابتون ساتونکي ته ځي، چې دا ګامونه تعقیبوي:
+- Takes Hamza's library card. || حمزہ کا لائبریری کارڈ لیتا ہے۔ || د حمزه د کتابتون کارت اخلي.
+- Check his book issuance limit (maximum numbers of books that can be issued to a student). || اس کی کتابیں جاری کرنے کی حد چیک کرتا ہے (ایک طالبِ علم کو زیادہ سے زیادہ کتنی کتابیں دی جا سکتی ہیں)۔ || د کتابونو د ورکړې حد ګوري (یو زده کوونکي ته څو کتابونه ورکول کېږي).
+- If there is still a limit available, then the librarian takes one book at a time and makes the relevant entry of book **ID** in his computer. || اگر ابھی حد باقی ہو تو لائبریرین ایک وقت میں ایک کتاب لے کر اپنے کمپیوٹر میں کتاب کی **ID** درج کرتا ہے۔ || که لا حد پاتې وي، یو ځل یو کتاب اخلي او د کتاب **ID** په کمپیوټر کې ثبتوي.
+- The librarian repeats this act for all of these books. || لائبریرین یہ عمل تمام کتابوں کے لیے دہراتا ہے۔ || دا کار د ټولو کتابونو لپاره تکراروي.
+p In the above situation, we were able to identify: || اوپر کی صورتِ حال میں ہم نے پہچانا: || په پورتني حالت کې موږ وپېژندل:
+- a) **Conditional Statement:** if book issuance is with in the limits then issue book || (الف) **مشروط بیان:** اگر کتابوں کا اجرا حد کے اندر ہو تو کتاب جاری کریں۔ || (الف) **شرطي بیان:** که د کتابونو ورکړه په حد کې وي، کتاب ورکړئ.
+- b) **Repetition:** doing the same task repeatedly for issuance of three books. || (ب) **دہرائی:** تین کتابیں جاری کرنے کے لیے ایک ہی کام بار بار کرنا۔ || (ب) **تکرار:** د درې کتابونو لپاره یو کار بیا بیا کول.
+@deco Illustration of a boy at a library counter handing a book to the librarian.
+endexample

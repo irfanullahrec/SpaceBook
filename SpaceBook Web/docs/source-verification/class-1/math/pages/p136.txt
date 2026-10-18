@@ -1,0 +1,12 @@
+@printed 132
+exercise Far and near (Page 132)
+q 1 | Tick (✓) the picture where the kid is far from the ball. || اس تصویر پر (✓) کا نشان لگائیں جس میں بچہ گیند سے دور ہے۔ || په هغه انځور (✓) ولګوئ چې ماشوم له توپ نه لرې دی.
+scene 360 110 ; box 0 0 170 110 #4ade80 ; boy.blue@40,55,2 ; football@140,85 ; text 85 105 A ; box 190 0 170 110 #4ade80 ; boy.brown@285,55,2 ; football@250,85 ; text 275 105 B || A: a boy with the ball far away; B: a boy kicking the ball at his feet || A: بچہ اور گیند دور؛ B: بچہ پاؤں کے پاس گیند کو کک لگا رہا ہے || A: ماشوم او توپ لرې؛ B: ماشوم د پښو سره توپ وهي
+sol Picture A ## In picture A the ball is far from the boy; in picture B it is near his foot. || تصویر A میں گیند بچے سے دور ہے؛ تصویر B میں اس کے پاؤں کے قریب ہے۔ || په A انځور کې توپ له ماشوم لرې دی؛ په B کې یې پښې ته نږدې دی.
+q 2 | Encircle the cow which is near the house. || اس گائے کے گرد دائرہ لگائیں جو گھر کے قریب ہے۔ || هغه غوا په کړۍ کې ونیسئ چې کور ته نږدې ده.
+scene 320 200 ; box 0 0 320 200 #bbf7d0 ; barn@220,55,3 ; cow@120,65,1.8 ; cow@230,160,2 ; text 60 110 near ; text 120 180 far || A barn with one cow beside it and another cow far away in the field || ایک گودام جس کے پاس ایک گائے اور دوسری کھیت میں دور || یو غوجل چې یوه غوا یې څنګ ته او بله په پټي کې لرې ده
+sol Encircle the cow standing beside the house (at the top). ## The other cow stands far away in the field. || دوسری گائے کھیت میں دور کھڑی ہے۔ || بله غوا په پټي کې لرې ولاړه ده.
+q 3 | Draw a cat far from the pond and colour it. || تالاب سے دور ایک بلی بنائیں اور اس میں رنگ بھریں۔ || له ډنډ نه لرې یوه پیشو رسم کړئ او رنګ یې کړئ.
+scene 400 110 ; box 0 0 400 80 #86efac ; box 0 80 400 30 #38bdf8 #38bdf8 ; flower.pink@70,62,0.7 ; leaf@100,75,0.7 || A grassy bank next to a pond || تالاب کے کنارے گھاس والا کنارہ || د ډنډ په غاړه واښه لرونکې غاړه
+sol Draw the cat high up on the grass, away from the water. ## "Far" means a long distance from the pond. || "دور" کا مطلب ہے تالاب سے زیادہ فاصلہ۔ || "لرې" یعنې له ډنډ نه ډېر واټن.
+endexercise

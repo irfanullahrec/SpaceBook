@@ -1,0 +1,45 @@
+@printed 96
+@issue In 5.3.6, O ∩ P is printed "{3, 5, 7, 11, 13, 19, ........}" (17 omitted) and O is written "{± 1, ± 3, ± 5, ......}" for odd integers; kept as printed.
+@issue The Teaching Point mentions "the distributive property of union of sets over intersection of sets"; kept as printed.
+p and || اور || او
+m R.H.S = (X ∪ Y) ∩ (X ∪ T)
+m X ∪ Y = {0, 3, 6, 9, 12, 15} ∪ {−5, −3, −1, 0, 1, 3, 5}
+m = {−5, −3, −1, 0, 1, 3, 5, 6, 9, 12, 15}
+m X ∪ T = {0, 3, 6, 9, 12, 15} ∪ {2, 4, 6,.........16}
+m = {0, 2, 3, 4, 6, 8, 9, 10, 12, 14, 15, 16}
+m (X ∪ Y) ∩ (X ∪ T) = {−5, −3, −1, 0, 1, 3, 5, 6, 9, 12, 15} ∩ {0, 2, 3, 4, 6, 8, 9, 10, 12, 14, 15, 16}
+m = {0, 3, 6, 9, 12, 15} $\qquad$ (ii)
+p Equation (i) and (ii) imply. || مساوات (i) اور (ii) سے ظاہر ہوتا ہے۔ || معادلې (i) او (ii) ښيي.
+m X ∪ (Y ∩ T) = (X ∪ Y) ∩ (X ∪ T)
+endexample
+## 5.3.6 Distributive Property of Intersection of Sets Over Union || 5.3.6 یونین پر سیٹوں کے انٹرسیکشن کی تقسیمی خاصیت || 5.3.6 پر اتحاد د سېټونو د تقاطع وېشونکې ځانګړتیا
+m For any three sets A, B, and C, A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+example 1
+p For the sets; O = Set of odd Integers, W = Set of whole numbers, P = Set of prime numbers. Prove that; O ∩ (W ∪ P) = (O ∩ W) ∪ (O ∩ P) || سیٹوں O = طاق صحیح اعداد کا سیٹ، W = مکمل اعداد کا سیٹ، P = مفرد اعداد کا سیٹ کے لیے ثابت کریں کہ O ∩ (W ∪ P) = (O ∩ W) ∪ (O ∩ P) || د O = د طاقو تامو عددونو سېټ، W = د بشپړو عددونو سېټ، P = د لومړنیو عددونو سېټ لپاره ثابت کړئ چې O ∩ (W ∪ P) = (O ∩ W) ∪ (O ∩ P)
+## Solution: || حل: || حل:
+p First we write the given sets in tabular form as; || پہلے ہم دیے گئے سیٹوں کو جدولی شکل میں یوں لکھتے ہیں؛ || لومړی ورکړل شوي سېټونه په جدولي بڼه داسې لیکو؛
+m O = {± 1, ± 3, ± 5, ......}
+m W = {0, 1, 2, 3, 4, .......}
+m P = {2, 3, 5, 7, 11, .......}
+m Now; L. H. S = O ∩ (W ∪ P)
+m W ∪ P = {0, 1, 2, 3, 4, .......} ∪ {2, 3, 5, 7, 11, .....}
+m = {0, 1, 2, 3, 4, .......}
+m O ∩ (W ∪ P) = {± 1, ± 3, ± 5, ......} ∩ {0, 1, 2, 3, 4, .......}
+m O ∩ (W ∪ P) = {1, 3, 5, 7 .......} ... (i)
+p and || اور || او
+m R. H. S = (O ∩ W) ∪ (O ∩ P)
+m O ∩ W = {± 1, ± 3, ± 5, ......} ∩ {0, 1, 2, 3, 4, .......}
+m = {1, 3, 5, 7 .......}
+m O ∩ P = {± 1, ± 3, ± 5, ......} ∩ {2, 3, 5, 7, 11, .....}
+m = {3, 5, 7, 11, 13, 19, ........}
+m (O ∩ W) ∪ (O ∩ P) = {1, 3, 5, .......} ∪ {3, 5, 7, 11, 13, ........}
+m = {1, 3, 5, 7, 9,....} ... (ii)
+p Equations (i) and (ii) imply || مساوات (i) اور (ii) سے ظاہر ہوتا ہے || معادلې (i) او (ii) ښيي
+m O ∩ (W ∪ P) = (O ∩ W) ∪ (O ∩ P)
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Complement of a set A with respect to a universal set U is the difference of the set A from the set U i.e. $A^c = U - A$. || عالمگیر سیٹ U کے لحاظ سے سیٹ A کا تکملہ سیٹ U سے سیٹ A کا فرق ہے یعنی $A^c = U - A$۔ || د U نړیوال سېټ په اړه د A سېټ متمم له U سېټ څخه د A سېټ توپیر دی یعنې $A^c = U - A$.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Make two groups of students. Instruct each group to write three sets of your own choice and then instruct first group to find the distributive property of union of sets over intersection of sets and the other group find the distributive property of intersection over union. || طلبہ کے دو گروپ بنائیں۔ ہر گروپ کو اپنی پسند کے تین سیٹ لکھنے کی ہدایت دیں اور پھر پہلے گروپ کو انٹرسیکشن پر یونین کی تقسیمی خاصیت اور دوسرے گروپ کو یونین پر انٹرسیکشن کی تقسیمی خاصیت معلوم کرنے کی ہدایت دیں۔ || د زده کوونکو دوه ډلې جوړې کړئ. هرې ډلې ته ووایاست چې د خپلې خوښې درې سېټونه ولیکي او بیا لومړۍ ډلې ته ووایاست چې پر تقاطع د اتحاد وېشونکې ځانګړتیا او بله ډله پر اتحاد د تقاطع وېشونکې ځانګړتیا ومومي.
+endbox

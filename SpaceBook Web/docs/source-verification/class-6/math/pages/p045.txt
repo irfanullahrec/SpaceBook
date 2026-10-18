@@ -1,0 +1,56 @@
+@printed 43
+@deco Cartoon boy beside the explanation bubble (decorative).
+q 3 | Write the missing integers in the given. || دی گئی جگہوں میں نامعلوم صحیح اعداد لکھیں۔ || په ورکړل شوو ځایونو کې ورک تام عددونه ولیکئ.
+qsolve missing
+qp a | (+11) + (+3) = ____
+qp b | (–4) + ____ = (–7)
+qp c | ____ – (+4) = (–7)
+qp d | (–9) + ____ + (–2) = –16
+qp e | ____ – (–3) = +5
+qp f | (–1) + (–3) + (–7) = ____
+qp g | (–5) + (–7) + (+2) = ____
+qp h | (–5) + ____ + (–9) = –16
+q 4 | The difference of two integers is +34. If minuend is –23. Find the subtrahend. || دو صحیح اعداد کا فرق +34 ہے۔ اگر مفروق منہ –23 ہو تو مفروق معلوم کریں۔ || د دوو تامو عددونو توپیر +34 دی. که له کوم څخه تفریق کېږي (minuend) –23 وي، تفریق کېدونکی (subtrahend) معلوم کړئ.
+solution –57
+ss Minuend − subtrahend = difference. The minuend is the number we subtract from. || مفروق منہ − مفروق = فرق۔ مفروق منہ وہ عدد ہے جس میں سے تفریق کرتے ہیں۔ || له کوم څخه تفریق کېږي − تفریق کېدونکی = توپیر.
+sm -23 - s = +34
+ss Subtraction undoes addition, so the subtrahend = minuend − difference. || تفریق جمع کو الٹ دیتی ہے، اس لیے مفروق = مفروق منہ − فرق۔ || تفریق جمع لغوه کوي، نو تفریق کېدونکی = له کوم څخه تفریق کېږي − توپیر.
+sm s = (-23) - (+34) = (-23) + (-34) = -57
+ss Check: (−23) − (−57) = −23 + 57 = +34 ✓ || جانچ: (−23) − (−57) = −23 + 57 = +34 ✓ || ازموینه: (−23) − (−57) = −23 + 57 = +34 ✓
+endsolution
+q 5 | An elevator goes down 5 floors from the ground floor. Then it goes up 2 floors. What floor is the elevator on now? || ایک لفٹ گراؤنڈ فلور سے 5 منزلیں نیچے جاتی ہے۔ پھر 2 منزلیں اوپر جاتی ہے۔ لفٹ اب کس منزل پر ہے؟ || یو لفټ له ځمکني پوړ څخه 5 پوړه ښکته ځي. بیا 2 پوړه پورته ځي. لفټ اوس په کوم پوړ کې دی؟
+solution –3 (3rd floor below the ground floor)
+ss Ground floor = 0. Going down 5 floors = −5; going up 2 floors = +2. || گراؤنڈ فلور = 0۔ 5 منزلیں نیچے = −5؛ 2 منزلیں اوپر = +2۔ || ځمکنی پوړ = 0. 5 پوړه ښکته = −5؛ 2 پوړه پورته = +2.
+suse iexpr (–5) + (+2)|nl
+ss The elevator is at −3, that is, 3 floors below the ground floor. || لفٹ −3 پر ہے، یعنی گراؤنڈ فلور سے 3 منزل نیچے۔ || لفټ په −3 کې دی، یعنې له ځمکني پوړ 3 پوړه ښکته.
+endsolution
+q 6 | The temperature in the night was –10°C. If the temperature rises 4°C in the morning, what is the new temperature? || رات میں درجۂ حرارت –10°C تھا۔ اگر صبح درجۂ حرارت 4°C بڑھ جائے تو نیا درجۂ حرارت کیا ہوگا؟ || د شپې تودوخه –10°C وه. که سهار تودوخه 4°C لوړه شي، نوې تودوخه به څومره وي؟
+solution –6°C
+ss A rise means adding: (−10) + (+4). || بڑھنے کا مطلب جمع کرنا: (−10) + (+4)۔ || لوړېدل یعنې جمع کول: (−10) + (+4).
+suse iexpr (–10) + (+4)|nl
+ss The new temperature is −6°C. || نیا درجۂ حرارت −6°C ہے۔ || نوې تودوخه −6°C ده.
+endsolution
+endexercise
+@sec 3.2 | Subtraction of Integers || صحیح اعداد کی تفریق || د تامو عددونو تفریق
+# 3.2 Subtraction of Integers || 3.2 صحیح اعداد کی تفریق || 3.2 د تامو عددونو تفریق
+## 3.2.1 Relation of Addition and Subtraction || 3.2.1 جمع اور تفریق کا تعلق || 3.2.1 د جمع او تفریق اړیکه
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p How can we subtract two whole numbers? || ہم دو مکمل اعداد کو کیسے تفریق کر سکتے ہیں؟ || موږ څنګه دوه بشپړ عددونه تفریق کولی شو؟
+p What are the steps of subtraction of two or more whole numbers? || دو یا زیادہ مکمل اعداد کی تفریق کے مراحل کیا ہیں؟ || د دوو یا ډېرو بشپړو عددونو د تفریق پړاوونه کوم دي؟
+endbox
+p We have learned about addition and subtraction in previous grades. These two operations are inverse of each other. In Mathematics, an inverse operation means an operation that reverses the effect of earlier operation. || ہم پچھلی جماعتوں میں جمع اور تفریق کے بارے میں سیکھ چکے ہیں۔ یہ دونوں عملیات ایک دوسرے کی الٹ ہیں۔ ریاضی میں الٹی عملیت سے مراد وہ عملیت ہے جو پچھلی عملیت کے اثر کو الٹ دے۔ || موږ په تېرو ټولګیو کې د جمع او تفریق په اړه زده کړه کړې. دا دوه عملیې یو د بل معکوسې دي. په ریاضي کې معکوسه عملیه هغه ده چې د مخکینۍ عملیې اغېز بېرته واړوي.
+p For example, when 2 is added to the number 5, we get 7. Now if 2 is subtracted from 7, we get the original number 5. So subtraction reversed the process of addition and the result is the original number 5. || مثلاً جب عدد 5 میں 2 جمع کیا جائے تو 7 ملتا ہے۔ اب اگر 7 میں سے 2 تفریق کیا جائے تو اصل عدد 5 ملتا ہے۔ اس طرح تفریق نے جمع کے عمل کو الٹ دیا اور نتیجہ اصل عدد 5 ہے۔ || د بېلګې په توګه کله چې 2 له 5 سره جمع شي، 7 لاسته راځي. اوس که 2 له 7 څخه تفریق شي، اصلي عدد 5 لاسته راځي. نو تفریق د جمع عمل بېرته واړاوه او پایله اصلي عدد 5 دی.
+## 3.2.2 Subtracting Integers || 3.2.2 صحیح اعداد کی تفریق کرنا || 3.2.2 د تامو عددونو تفریق کول
+box info
+p When we subtract two integers, we follow these steps. || جب ہم دو صحیح اعداد تفریق کرتے ہیں تو یہ مراحل اختیار کرتے ہیں۔ || کله چې دوه تام عددونه تفریق کوو، دا پړاوونه تعقیبوو.
+endbox
+p **Step I:** First, change the operation from subtraction to addition and change the sign of the integer that is to be subtracted. || **مرحلہ I:** پہلے عملیت کو تفریق سے جمع میں بدلیں اور جس صحیح عدد کو تفریق کرنا ہے اس کی علامت بدل دیں۔ || **لومړی پړاو:** لومړی عملیه له تفریق څخه جمع ته واړوئ او د هغه تام عدد نښه بدله کړئ چې تفریق کېږي.
+p **Step II:** Then, add these according to rules of addition of integers. || **مرحلہ II:** پھر انہیں صحیح اعداد کی جمع کے قواعد کے مطابق جمع کریں۔ || **دوهم پړاو:** بیا یې د تامو عددونو د جمع د قواعدو سره سم جمع کړئ.
+example 1 | A point A on the top of the mountain is 3500 m above the sea level and a point B is 2000 m below sea level. Find the vertical distance between points A and B. || پہاڑ کی چوٹی پر ایک نقطہ A سطحِ سمندر سے 3500 m اوپر ہے اور ایک نقطہ B سطحِ سمندر سے 2000 m نیچے ہے۔ نقطوں A اور B کے درمیان عمودی فاصلہ معلوم کریں۔ || د غره پر سر یوه نقطه A د سمندر له سطحې 3500 m پورته او یوه نقطه B د سمندر له سطحې 2000 m ښکته ده. د A او B نقطو ترمنځ عمودي واټن معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p If we take sea level as 0, then: || اگر ہم سطحِ سمندر کو 0 مانیں تو: || که د سمندر سطحه 0 وګڼو، نو:
+m Point A $= +3500$ m
+m Point B $= -2000$ m
+eq \begin{aligned} \text{Difference} &= 3500 - (-2000) \\ &= 3500 + 2000 \\ &= +5500 \text{ m} \end{aligned}
+p So, the vertical distance between point A and B is +5500 m. || لہٰذا نقطہ A اور B کے درمیان عمودی فاصلہ +5500 m ہے۔ || نو د A او B نقطو ترمنځ عمودي واټن +5500 m دی.
+endexample

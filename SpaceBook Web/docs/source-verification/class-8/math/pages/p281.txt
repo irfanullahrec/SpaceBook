@@ -1,0 +1,30 @@
+@printed 279
+@issue The page continues the sentence "A range is ... It gives us" from the previous page ("a decent indication of how dispersed the data is."). The subscripts of x are small in print and are read as x_max and x_min. In Example 1 the text prints "grade 1-VIII" and "In the give data" (typographical, kept as printed). Example 2's solution continues on the next page.
+p a decent indication of how dispersed the data is. It is the difference between two extreme observations in any given set of data. We denote range by R. || ڈیٹا کتنا بکھرا ہوا ہے اس کا ایک مناسب اشارہ۔ یہ کسی دیے گئے ڈیٹا سیٹ میں دو انتہائی مشاہدات کا فرق ہے۔ ہم حد کو R سے ظاہر کرتے ہیں۔ || د دې یو ښه نښه چې معلومات څومره خپاره دي. دا په هر ورکړل شوي معلوماتو سیټ کې د دوو انتها مشاهدو توپیر دی. موږ رینج په R ښيو.
+eq \text{Range} = R = x_{\max} - x_{\min}
+p Where $x_{\max}$ and $x_{\min}$ are the two extreme observations among the given data values. || جہاں $x_{\max}$ اور $x_{\min}$ دیے گئے ڈیٹا کی قدروں میں دو انتہائی مشاہدات ہیں۔ || چېرته چې $x_{\max}$ او $x_{\min}$ د ورکړل شویو معلوماتو په قیمتونو کې دوه انتها مشاهدې دي.
+p $x_{\max}$ = Greatest value in the data || $x_{\max}$ = ڈیٹا میں سب سے بڑی قدر || $x_{\max}$ = په معلوماتو کې تر ټولو لوی قیمت
+p $x_{\min}$ = Smallest value in the data || $x_{\min}$ = ڈیٹا میں سب سے چھوٹی قدر || $x_{\min}$ = په معلوماتو کې تر ټولو کوچنی قیمت
+p Let's observe some examples regarding the calculation of range. || آئیں حد کے حساب سے متعلق چند مثالیں دیکھیں۔ || راځئ د رینج د محاسبې په اړه څو بېلګې وګورو.
+example 1
+p The following data shows the number of students who participated in Mathematics competition from grade 1-VIII. Find the range of the given data values. || درج ذیل ڈیٹا ان طلبہ کی تعداد ظاہر کرتا ہے جنہوں نے جماعت 1 تا VIII سے ریاضی کے مقابلے میں حصہ لیا۔ دیے گئے ڈیٹا کی قدروں کی حد معلوم کریں۔ || لاندې معلومات د هغو زده کوونکو شمېر ښيي چې له ۱ تر VIII ټولګي څخه یې په ریاضي سیالۍ کې برخه اخیستې وه. د ورکړل شویو معلوماتو د قیمتونو رینج پیدا کړئ.
+eq 8,\ 5,\ 6,\ 5,\ 9,\ 10,\ 7,\ 8
+## Solution: || حل: || حل:
+p In the give data, greatest value is 10 and the smallest value is 5. || دیے گئے ڈیٹا میں سب سے بڑی قدر 10 اور سب سے چھوٹی قدر 5 ہے۔ || په ورکړل شویو معلوماتو کې تر ټولو لوی قیمت 10 او تر ټولو کوچنی قیمت 5 دی.
+eq x_{\max} = 10,\qquad x_{\min} = 5
+eq \begin{aligned}\text{Range} &= x_{\max} - x_{\min}\\ &= 10 - 5\\ &= 5\end{aligned}
+p So, the range of this data is 5. || لہٰذا اس ڈیٹا کی حد 5 ہے۔ || نو د دې معلوماتو رینج 5 دی.
+endexample
+example 2
+p Find the range of the given data values. || دیے گئے ڈیٹا کی قدروں کی حد معلوم کریں۔ || د ورکړل شویو معلوماتو د قیمتونو رینج پیدا کړئ.
+table Students and the number of questions solved in 1 minute || طلبہ اور 1 منٹ میں حل کیے گئے سوالات کی تعداد || زده کوونکي او په ۱ دقیقه کې حل شوې پوښتنې
+th | Students | No. of questions solved in 1 min
+tr | Ibrahim | 8
+tr | Nida | 5
+tr | Ahad | 6
+tr | Sehrish | 5
+tr | Marwa | 9
+tr | Arham | 8
+tr | Sidra | 7
+tr | Zaeem | 6
+endtable

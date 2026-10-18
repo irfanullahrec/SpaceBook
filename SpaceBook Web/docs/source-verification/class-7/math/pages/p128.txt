@@ -1,0 +1,35 @@
+@printed 124
+q 3 | Find $a^2 + b^2$, if $a - b = 8$ and $ab = 3$. || اگر $a - b = 8$ اور $ab = 3$ ہو تو $a^2 + b^2$ معلوم کریں۔ || که $a - b = 8$ او $ab = 3$ وي، $a^2 + b^2$ معلوم کړئ.
+q 4 | Find $x^2 + \frac{1}{x^2}$ if $x - \frac{1}{x} = 4$. || اگر $x - \frac{1}{x} = 4$ ہو تو $x^2 + \frac{1}{x^2}$ معلوم کریں۔ || که $x - \frac{1}{x} = 4$ وي، $x^2 + \frac{1}{x^2}$ معلوم کړئ.
+endexercise
+@sec 7.8 | Factorization of Algebraic Expression || الجبری عبارت کی تجزی || د الجبري افادې تجزیه
+# 7.8 Factorization of Algebraic Expression || 7.8 الجبری عبارت کی تجزی || 7.8 د الجبري افادې تجزیه
+p As we know that factorization of a number means to break it into numbers that can be multiplied together to get the original number. For example; $8 = 2 \times 4$, so factors of 8 are 2 and 4. || جیسا کہ ہم جانتے ہیں کہ کسی عدد کی تجزی کا مطلب ہے اسے ایسے اعداد میں توڑنا جنہیں آپس میں ضرب دینے سے اصل عدد حاصل ہو۔ مثلاً $8 = 2 \times 4$، لہٰذا 8 کے اجزائے ضربی 2 اور 4 ہیں۔ || لکه څنګه چې پوهېږو د یوه عدد تجزیه یعنې هغه په داسې عددونو ماتول چې سره ضرب شي او اصلي عدد لاسته راشي. د بېلګې په توګه $8 = 2 \times 4$، نو د 8 ضربي اجزا 2 او 4 دي.
+m $2 \times 4 = 8$ — 2 and 4 are the factors; 8 is the product.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Factorization of an algebraic expression is the process of finding the factors of it. It is the reverse process of expansion. || الجبری عبارت کی تجزی اس کے اجزائے ضربی معلوم کرنے کا عمل ہے۔ یہ پھیلاؤ کا الٹ عمل ہے۔ || د الجبري افادې تجزیه د هغې د ضربي اجزاوو د موندلو بهیر دی. دا د پراخولو معکوس بهیر دی.
+endbox
+p Similarly, in algebraic expressions the product of y and y+a is $y^2 + ay$. Here, y and y+a are the factors of $y^2 + ay$. Algebraic expression can be factorised by common factors, algebraic identities and making groups. || اسی طرح الجبری عبارتوں میں y اور y+a کا حاصلِ ضرب $y^2 + ay$ ہے۔ یہاں y اور y+a، $y^2 + ay$ کے اجزائے ضربی ہیں۔ الجبری عبارت کی تجزی مشترک اجزائے ضربی، الجبری مماثلتوں اور گروہ بنا کر کی جا سکتی ہے۔ || په همدې ډول په الجبري افادو کې د y او y+a حاصل ضرب $y^2 + ay$ دی. دلته y او y+a د $y^2 + ay$ ضربي اجزا دي. الجبري افاده د ګډو ضربي اجزاوو، الجبري مطابقتونو او ډلو په جوړولو تجزیه کېدای شي.
+## 7.8.1 Factorisation by Common Factors || 7.8.1 مشترک اجزائے ضربی سے تجزی || 7.8.1 د ګډو ضربي اجزاوو په مرسته تجزیه
+p In this method we can factorize an algebraic expression by taking out its highest common factor. This is called the factor of each term of the expression. || اس طریقے میں ہم الجبری عبارت کا عاد اعظم نکال کر اس کی تجزی کر سکتے ہیں۔ اسے عبارت کے ہر رکن کا جزوِ ضربی کہتے ہیں۔ || په دې طریقه کې الجبري افاده د هغې د لوی مشترک قاسم په ایستلو تجزیه کولی شو. دې ته د افادې د هر حد ضربي جز ویل کېږي.
+example 1 | Factorize $4x - 2xy$. || $4x - 2xy$ کی تجزی کریں۔ || $4x - 2xy$ تجزیه کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &4x - 2xy \\ &= 2x(2 - y) \end{aligned}
+p Here, $2x$ and $2 - y$ are the factors of $4x - 2xy$ and $2x$ is the common factor. || یہاں $2x$ اور $2 - y$، $4x - 2xy$ کے اجزائے ضربی ہیں اور $2x$ مشترک جزوِ ضربی ہے۔ || دلته $2x$ او $2 - y$ د $4x - 2xy$ ضربي اجزا دي او $2x$ ګډ ضربي جز دی.
+endexample
+@deco A small diagram shows "2x(2 − y)" expanding to "4x − 2xy" (arrow labelled Expand) and back (arrow labelled Factor).
+example 2 | Factorize $2x^3 - x^2y + 3x^2 - x$. || $2x^3 - x^2y + 3x^2 - x$ کی تجزی کریں۔ || $2x^3 - x^2y + 3x^2 - x$ تجزیه کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &2x^3 - x^2y + 3x^2 - x \\ &= x(2x^2 - xy + 3x - 1) \end{aligned}
+p Here, x and $2x^2 - xy + 3x - 1$ are the factors of $2x^3 - x^2y + 3x$ and x is the common factor. || یہاں x اور $2x^2 - xy + 3x - 1$، $2x^3 - x^2y + 3x$ کے اجزائے ضربی ہیں اور x مشترک جزوِ ضربی ہے۔ || دلته x او $2x^2 - xy + 3x - 1$ د $2x^3 - x^2y + 3x$ ضربي اجزا دي او x ګډ ضربي جز دی.
+endexample
+@issue The last line of Example 2 writes the expression as "2x³ − x²y + 3x" (the terms "² − x" are missing); kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Factorize the following. || درج ذیل کی تجزی کریں۔ || لاندې تجزیه کړئ.
+qp a | $lx - my + mx - ly$
+qp b | $2ab - 6bc + a - 3c$
+qp c | $4x^2 - 9$
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Assign each student a polynomial. Ask them to imagine that each variable within the polynomial is a character. Their task is to create a comic strip that shows how they would factor the polynomial. They can create images personifying their factors. || ہر طالب علم کو ایک کثیر رکنی دیں۔ ان سے کہیں کہ تصور کریں کہ کثیر رکنی کا ہر متغیر ایک کردار ہے۔ ان کا کام ایک مزاحیہ پٹی بنانا ہے جو دکھائے کہ وہ کثیر رکنی کی تجزی کیسے کریں گے۔ وہ اپنے اجزائے ضربی کو کرداروں کی صورت میں تصویریں بنا سکتے ہیں۔ || هر زده کوونکي ته یوه څو حدي افاده ورکړئ. ترې وغواړئ چې تصور وکړي چې د څو حدي افادې هر متحول یو کرکټر دی. دنده یې دا ده چې یوه کارټوني لړۍ جوړه کړي چې وښيي څنګه به څو حدي افاده تجزیه کړي. کولی شي د خپلو ضربي اجزاوو د کرکټرونو انځورونه جوړ کړي.
+endbox

@@ -1,0 +1,44 @@
+@printed 52
+@deco Three Scratch scripts captioned "A repeat loop", "A repeat until loop" and "A forever loop" (reproduced as code boxes below).
+### 4.2.3 Types of Loop || 4.2.3 لوپ کی اقسام || 4.2.3 د لوپ ډولونه
+p A simple objective now is to move 'Pico' sprite 10 steps, turn 15 degrees and take another 10 steps and turn again. This can be iterated multiple times. The same objective can be achieved with various loops, and appropriate code is added accordingly, discussed as follows: || اب ایک سادہ مقصد یہ ہے کہ 'Pico' اسپرائٹ کو 10 قدم حرکت دیں، 15 ڈگری گھمائیں اور مزید 10 قدم لیں اور پھر گھمائیں۔ یہ کئی بار دہرایا جا سکتا ہے۔ یہی مقصد مختلف لوپس کے ذریعے حاصل کیا جا سکتا ہے اور اسی کے مطابق مناسب کوڈ شامل کیا جاتا ہے، جس پر درج ذیل بحث ہے: || اوس یو ساده موخه دا دی چې 'Pico' سپرایټ ۱۰ ګامونه حرکت ورکړو، ۱۵ درجې وګرځوو او نور ۱۰ ګامونه واخلو او بیا وګرځوو. دا څو ځله تکرارېدای شي. همدا موخه د بېلابېلو لوپونو په مرسته ترلاسه کېدای شي او اړونده کوډ ورسره سم اضافه کېږي، چې په لاندې ډول بحث شوی:
+- a) The first loop is a 'repeat' loop. It takes an integer input 'x' and iterates the code in it for 'x' times. In the script shown in figure, the loop iterates 10 times, as value of 'x' is chosen as 10. || (a) پہلا لوپ 'repeat' لوپ ہے۔ یہ ایک صحیح عدد 'x' بطور ان پٹ لیتا ہے اور اس میں موجود کوڈ کو 'x' بار دہراتا ہے۔ شکل میں دکھائے گئے اسکرپٹ میں لوپ 10 بار دہراتا ہے کیونکہ 'x' کی قدر 10 چنی گئی ہے۔ || (a) لومړی لوپ 'repeat' لوپ دی. دا یو بشپړ عدد 'x' ان پټ اخلي او په دې کې شته کوډ 'x' ځله تکراروي. په انځور کې ښودل شوي سکریپټ کې لوپ ۱۰ ځله تکرارېږي ځکه چې د 'x' ارزښت ۱۰ ټاکل شوی.
+- b) Next is the 'repeat until' loop. A repeat until loop requires a matching condition such that as soon as the condition matches the loop terminates. Here a variable 'Counter' is introduced such that the terminating condition can be incorporated. Before the loop, the value of counter is set to 0 and within the loop it is increased by 1 in every iteration. This way after 10 iterations the condition will be TRUE and loop will terminate. || (b) اگلا 'repeat until' لوپ ہے۔ repeat until لوپ کو ایک مماثل شرط درکار ہوتی ہے تاکہ شرط پوری ہوتے ہی لوپ ختم ہو جائے۔ یہاں ایک متغیر 'Counter' متعارف کرایا گیا ہے تاکہ ختم کرنے کی شرط شامل کی جا سکے۔ لوپ سے پہلے counter کی قدر 0 رکھی جاتی ہے اور لوپ کے اندر ہر تکرار میں اسے 1 سے بڑھایا جاتا ہے۔ اس طرح 10 تکرار کے بعد شرط TRUE ہو جائے گی اور لوپ ختم ہو جائے گا۔ || (b) بل 'repeat until' لوپ دی. repeat until لوپ یو برابر شرط غواړي ترڅو د شرط برابرېدو سره لوپ پای ته ورسېږي. دلته یو متغیر 'Counter' معرفي شوی ترڅو د پای شرط پکې شامل شي. د لوپ نه مخکې د counter ارزښت ۰ ټاکل کېږي او د لوپ په دننه کې په هر تکرار کې په ۱ زیاتېږي. په دې ډول د ۱۰ تکرارونو وروسته شرط TRUE کېږي او لوپ پای ته رسېږي.
+p It is suggested to, experiment with such values for better understanding. For example, if the value Counter is set to -1 by mistake, the desired behavior of the code block will not be achieved. Because, rather than increasing the value, the value of Counter will decrease in every iteration and the loop will execute infinite times. || بہتر فہم کے لیے ایسی قدروں کے ساتھ تجربہ کرنے کی تجویز دی جاتی ہے۔ مثال کے طور پر اگر Counter کی قدر غلطی سے -1 رکھ دی جائے تو کوڈ بلاک کا مطلوبہ رویہ حاصل نہیں ہوگا۔ کیونکہ قدر بڑھنے کے بجائے ہر تکرار میں Counter کی قدر کم ہوتی جائے گی اور لوپ لامحدود بار چلے گا۔ || د ښه پوهېدو لپاره وړاندیز کېږي چې په داسې ارزښتونو تجربه وشي. د بېلګې په توګه که د Counter ارزښت په تېروتنه -1 وټاکل شي نو د کوډ بلاک مطلوب چلند به ترلاسه نشي. ځکه چې د ارزښت د زیاتېدو پر ځای د Counter ارزښت په هر تکرار کې کمېږي او لوپ به بې پایه ځله اجرا شي.
+- c) Last but not the least is the 'forever' loop. It does not have a terminating condition rather has to be incorporated within the loop with a conditional statement. To terminate the loop a conditional statement is placed at the beginning of the loop and the rest of the code to execute the said task follows. || (c) آخر میں 'forever' لوپ ہے۔ اس میں ختم کرنے کی شرط نہیں ہوتی بلکہ اسے لوپ کے اندر شرطیہ بیان کے ساتھ شامل کرنا پڑتا ہے۔ لوپ ختم کرنے کے لیے لوپ کے آغاز میں ایک شرطیہ بیان رکھا جاتا ہے اور مذکورہ کام کے لیے باقی کوڈ اس کے بعد آتا ہے۔ || په پای کې 'forever' لوپ دی. دا د پای شرط نه لري بلکې باید په لوپ دننه د شرطي بیان سره شامل شي. د لوپ د پای ته رسولو لپاره د لوپ په پیل کې یو شرطي بیان ایښودل کېږي او د ویل شوي کار د اجرا لپاره پاتې کوډ ورپسې راځي.
+p So, the loop should be chosen according to the task, otherwise it will create complexity. || لہٰذا لوپ کا انتخاب کام کے مطابق ہونا چاہیے ورنہ پیچیدگی پیدا ہوگی۔ || نو لوپ باید د کار له مخې وټاکل شي، که نه نو پېچلتیا جوړوي.
+box code | A repeat loop || ریپیٹ لوپ || تکراري (repeat) لوپ
+m when (green flag) clicked
+m go to x: (0) y: (0)
+m point in direction (90)
+m repeat (10)
+m     next costume
+m     move (10) steps
+m     wait (1) secs
+m     turn (clockwise) (15) degrees
+endbox
+box code | A repeat until loop || ریپیٹ انٹل لوپ || repeat until لوپ
+m when (green flag) clicked
+m go to x: (0) y: (0)
+m point in direction (90)
+m set [Counter] to (0)
+m repeat until <(Counter) = (10)>
+m     change [Counter] by (1)
+m     next costume
+m     move (10) steps
+m     wait (1) secs
+m     turn (clockwise) (15) degrees
+endbox
+box code | A forever loop || فار ایور لوپ || forever لوپ
+m when (green flag) clicked
+m go to x: (0) y: (0)
+m point in direction (90)
+m set [Counter] to (0)
+m forever
+m     if <(Counter) < (10)> then
+m         change [Counter] by (1)
+m         next costume
+m         move (10) steps
+m         wait (1) secs
+m         turn (clockwise) (15) degrees
+endbox

@@ -1,0 +1,33 @@
+@printed 100
+p Similarly, the following sets are infinite sets as they have unlimited number of elements and we cannot enlist their elements. || اسی طرح درج ذیل سیٹ غیر متناہی سیٹ ہیں کیونکہ ان کے ارکان لامحدود ہیں اور ہم ان کی فہرست نہیں بنا سکتے۔ || همدارنګه لاندې سېټونه نامحدود دي ځکه نامحدود غړي لري او د غړو لیست یې نه شو جوړولی.
+table
+tr | J = set of all dust particles in the environment | O = set of all odd numbers
+tr | D = set of all drops of water in the ocean | L = the set of all prime numbers greater than 50
+endtable
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p What is the cardinality of an empty set? || خالی سیٹ کی عددیت کیا ہے؟ || د تش سېټ کارډینالیټي څومره ده؟
+endbox
+## c) Empty set || (c) خالی سیٹ || (c) تش سېټ
+p When a set contains no elements, it is known as an **empty set**. || جب کسی سیٹ میں کوئی رکن نہ ہو تو اسے **خالی سیٹ** کہتے ہیں۔ || کله چې یو سېټ هېڅ غړی ونه لري، **تش سېټ** بلل کېږي.
+p An empty set is denoted by curly brackets without any element. It can also be represented by using the symbol ø (read as phi). So, an empty set A can be denoted as: A = { } or A = ø || خالی سیٹ کو بغیر کسی رکن کے منحنی قوسین سے ظاہر کیا جاتا ہے۔ اسے علامت ø (فائی پڑھیں) سے بھی ظاہر کیا جا سکتا ہے۔ لہٰذا خالی سیٹ A کو یوں لکھا جا سکتا ہے: A = { } یا A = ø || تش سېټ پرته له غړي په ګونجو قوسونو ښودل کېږي. د ø نښې (فای لوستل کېږي) په مرسته هم ښودل کېدای شي. نو تش سېټ A داسې ښودل کېدای شي: A = { } یا A = ø
+p Note that A = { ø } is not an empty set because there is an element ø within the curly brackets. Also, A = {0} is not an empty set and has 0 as its single element. || نوٹ کریں کہ A = { ø } خالی سیٹ نہیں کیونکہ منحنی قوسین کے اندر ایک رکن ø موجود ہے۔ نیز A = {0} خالی سیٹ نہیں اور اس کا واحد رکن 0 ہے۔ || پام وکړئ چې A = { ø } تش سېټ نه دی ځکه په ګونجو قوسونو کې یو غړی ø شته. همدارنګه A = {0} تش سېټ نه دی او یوازینی غړی یې 0 دی.
+p Observe the following sets: || درج ذیل سیٹوں کا مشاہدہ کریں: || لاندې سېټونو ته وګورئ:
+table
+tr | A = the set of odd multiples of 10. | B = the set of triangles having 4 sides.
+tr | C = the set of natural numbers which are even as well as odd. |
+endtable
+p What have you observed in these sets? Can we enlist them? || آپ نے ان سیٹوں میں کیا دیکھا؟ کیا ہم ان کی فہرست بنا سکتے ہیں؟ || په دې سېټونو کې مو څه ولیدل؟ ایا لیست یې جوړولی شو؟
+p The answer is no. These sets have no elements in them because these sets describe the elements which do not exist at all. || جواب نہیں ہے۔ ان سیٹوں میں کوئی رکن نہیں کیونکہ یہ سیٹ ایسے ارکان بیان کرتے ہیں جو موجود ہی نہیں۔ || ځواب نه دی. دا سېټونه هېڅ غړی نه لري ځکه هغه غړي بیانوي چې بیخي شتون نه لري.
+- There is no multiple of 10 which is odd, as all multiples of 10 have 0 in their ones place. || 10 کا کوئی ضعف طاق نہیں، کیونکہ 10 کے تمام اضعاف کے اکائی کے مقام پر 0 ہوتا ہے۔ || د 10 هېڅ ضرب طاق نه دی، ځکه د 10 ټول ضربونه د یوو په ځای کې 0 لري.
+- No triangle can have 4 sides. If a shape has 4 sides, it's a quadrilateral and is never a triangle. || کسی مثلث کے 4 اضلاع نہیں ہو سکتے۔ اگر کسی شکل کے 4 اضلاع ہوں تو وہ چوکور ہے اور کبھی مثلث نہیں ہوتی۔ || هېڅ مثلث 4 ضلعې نه شي لرلی. که یو شکل 4 ضلعې ولري، څلور ضلعي دی او هېڅکله مثلث نه دی.
+- A natural number can either be even or odd. It can never be both. || قدرتی عدد یا تو جفت ہو سکتا ہے یا طاق۔ یہ کبھی دونوں نہیں ہو سکتا۔ || طبیعي عدد یا جفت وي یا طاق. هېڅکله دواړه نه شي کېدای.
+## d) Singleton set || (d) اکہرا سیٹ || (d) یوګړی سېټ
+p When a set contains only **one element** (neither less nor more), it is known as a singleton set. || جب کسی سیٹ میں صرف **ایک رکن** ہو (نہ کم نہ زیادہ) تو اسے اکہرا سیٹ کہتے ہیں۔ || کله چې یو سېټ یوازې **یو غړی** ولري (نه لږ نه ډېر)، یوګړی سېټ بلل کېږي.
+example Examples:
+q i) | F = Set of the names of the month having 3 letters || F = 3 حروف والے مہینوں کے ناموں کا سیٹ || F = د 3 تورو لرونکو میاشتو د نومونو سېټ
+p There is only one month which has 3 letters i.e. May. So, it is a singleton set. || صرف ایک مہینہ ہے جس کے 3 حروف ہیں یعنی May۔ اس لیے یہ اکہرا سیٹ ہے۔ || یوازې یوه میاشت ده چې 3 توري لري یعنې May. نو دا یوګړی سېټ دی.
+q ii) | T = {9}
+p Set T contains only 1 element. So, it is a singleton set. || سیٹ T میں صرف 1 رکن ہے۔ اس لیے یہ اکہرا سیٹ ہے۔ || T سېټ یوازې 1 غړی لري. نو دا یوګړی سېټ دی.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Write some mixed examples of finite and infinite sets on the board. Ask the students to identify finite or infinite sets from the examples and then describe why it is a finite or infinite set. || بورڈ پر متناہی اور غیر متناہی سیٹوں کی ملی جلی مثالیں لکھیں۔ طلبہ سے کہیں کہ مثالوں میں سے متناہی یا غیر متناہی سیٹ پہچانیں اور پھر بیان کریں کہ وہ متناہی یا غیر متناہی کیوں ہے۔ || په تخته د محدودو او نامحدودو سېټونو ګډې بېلګې ولیکئ. له زده کوونکو وغواړئ چې محدود یا نامحدود سېټونه وپېژني او بیا ووایي چې ولې محدود یا نامحدود دی.
+endbox

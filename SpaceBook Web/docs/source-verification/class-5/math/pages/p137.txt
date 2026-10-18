@@ -1,0 +1,35 @@
+@printed 130
+@deco Picture of a ruler laid along the 30° arm with its 0 mark at B; blue arrows between the steps; cartoon book mascot on "Exercise 2".
+p iii) Mark a point C on the arm of 30° such that $\overline{BC} = 3$cm. || iii) 30° کے بازو پر نقطہ C اس طرح لگائیں کہ $\overline{BC} = 3$ cm ہو۔ || iii) د 30° پر بازو داسې ټکی C کېږدئ چې $\overline{BC} = 3$ cm وي.
+angle rays=180,150 | arc=150:180:30:30° | pts=A@180,C@150,B | len=120 || C marked 3 cm from B on the 30° arm (AB = 4 cm) || 30° کے بازو پر B سے 3 cm پر نقطہ C (AB = 4 cm) || د 30° پر بازو له B څخه 3 cm لرې ټکی C (AB = 4 cm)
+p iv) Use ruler to Join A to C. || iv) فٹے سے A کو C سے ملائیں۔ || iv) د خط کش په مرسته A له C سره ونښلوئ.
+poly A:0,0 B:4,0 C:1.4,1.5 | fill=#fff | sides=4 cm,3 cm, | angles=,30°, | scale=45 || $\triangle ABC$: AB = 4 cm, ∠B = 30°, BC = 3 cm || $\triangle ABC$: AB = 4 cm، ∠B = 30°، BC = 3 cm || $\triangle ABC$: AB = 4 cm، ∠B = 30°، BC = 3 cm
+p $\triangle ABC$ is the required triangle. || $\triangle ABC$ مطلوبہ مثلث ہے۔ || $\triangle ABC$ اړین مثلث دی.
+exercise 2
+q 1 | Identify these triangles with respect to their sides. || ان مثلثوں کو ان کے اضلاع کے لحاظ سے پہچانیں۔ || دا مثلثونه د خپلو ضلعو له مخې وپېژنئ.
+poly P:0,2.4 Q:1.2,0 R:4.5,0 | fill=#a78bfa | ticks=3,2,1 | scale=32 || a) || a) || a)
+qp a | Triangle a) || مثلث a) || مثلث a)
+sol Scalene triangle ## The three sides carry different marks (one, two and three ticks), so all sides are different. || تینوں اضلاع پر مختلف نشان (ایک، دو اور تین لکیریں) ہیں، اس لیے تمام اضلاع مختلف ہیں — مختلف الاضلاع مثلث۔ || درې واړه ضلعې بېلې نښې (یوه، دوه او درې کرښې) لري، نو ټولې ضلعې بېلې دي — مختلف الاضلاع مثلث.
+poly A:0,0 B:3,0 C:1.5,3.3 | fill=#f43f5e | ticks=1,2,2 | scale=32 || b) || b) || b)
+qp b | Triangle b) || مثلث b) || مثلث b)
+sol Isosceles triangle ## Two sides carry the same double mark, so two sides are equal. || دو اضلاع پر ایک جیسا دوہرا نشان ہے، اس لیے دو اضلاع برابر ہیں — مساوی الساقین مثلث۔ || دوه ضلعې یو شان دوه ګونې نښه لري، نو دوه ضلعې برابرې دي — متساوي الساقین مثلث.
+poly A:0,0 B:3.6,0 C:1.8,2.3 | fill=#fde047 | ticks=1,1,1 | scale=32 || c) || c) || c)
+qp c | Triangle c) || مثلث c) || مثلث c)
+sol Equilateral triangle ## All three sides carry the same single mark, so all sides are equal. || تینوں اضلاع پر ایک جیسا نشان ہے، اس لیے تمام اضلاع برابر ہیں — مساوی الاضلاع مثلث۔ || درې واړه ضلعې یو شان نښه لري، نو ټولې ضلعې برابرې دي — متساوي الاضلاع مثلث.
+poly A:0,0 B:3,0 C:3,3 | fill=#10b981 | ticks=2,2,1 | scale=32 || d) || d) || d)
+qp d | Triangle d) || مثلث d) || مثلث d)
+sol Isosceles triangle ## The bottom and the upright side both carry a double mark (equal); the slanting side is different. || نیچے والا اور کھڑا ضلع دونوں پر دوہرا نشان ہے (برابر)؛ ترچھا ضلع مختلف ہے — مساوی الساقین مثلث۔ || لاندې او ولاړه ضلع دواړه دوه ګونې نښه لري (برابرې)؛ اریبه ضلع بېله ده — متساوي الساقین مثلث.
+@issue Q1 printed figures: equal-side marks are read from the scan (a: 3/1/2 ticks; b: 2/2/1; c: 1/1/1; d: 1 on the slanting side, 2 on the upright side and 2 on the base).
+q 2 | Identify these triangles with respect to their angles. || ان مثلثوں کو ان کے زاویوں کے لحاظ سے پہچانیں۔ || دا مثلثونه د خپلو زاويو له مخې وپېژنئ.
+poly A:0,0 B:3.2,0 C:1.6,2.6 | fill=#7e22ce | scale=32 || a) all three angles marked equal || a) تینوں زاویے برابر نشان زد || a) درې واړه زاويې برابرې په نښه شوې
+qp a | Triangle a) || مثلث a) || مثلث a)
+sol Acute-angled triangle ## All three angles are marked equal, so each is 60° — all acute. || تینوں زاویے برابر نشان زد ہیں، اس لیے ہر ایک 60° ہے — سب حادہ۔ || درې واړه زاويې برابرې په نښه شوې، نو هره یوه 60° ده — ټولې حاده.
+poly A:0,0 B:2.9,0 C:3.9,2 | fill=#ef4444 | scale=32 || b) || b) || b)
+qp b | Triangle b) || مثلث b) || مثلث b)
+sol Obtuse-angled triangle ## The marked angle at the lower right is wider than a right angle. || نیچے دائیں والا نشان زد زاویہ قائمہ زاویے سے بڑا ہے — منفرجہ زاویہ مثلث۔ || لاندې ښي اړخ ته په نښه شوې زاویه له قایمې زاویې څخه پراخه ده — منفرجه زاویه لرونکی مثلث.
+poly A:0,0 B:2.6,0 C:1.3,3.1 | fill=#155e75 | scale=32 || c) || c) || c)
+qp c | Triangle c) || مثلث c) || مثلث c)
+sol Acute-angled triangle ## All three angles are smaller than a right angle. || تینوں زاویے قائمہ زاویے سے چھوٹے ہیں — حادہ زاویہ مثلث۔ || درې واړه زاويې له قایمې زاویې کوچنۍ دي — حاده زاویه لرونکی مثلث.
+poly A:0,0 B:2.9,0 C:2.9,2.9 | fill=#7dd3fc | right=B | scale=32 || d) || d) || d)
+qp d | Triangle d) || مثلث d) || مثلث d)
+sol Right-angled triangle ## One angle is marked with a square, i.e. 90°. || ایک زاویے پر مربع کا نشان ہے، یعنی 90° — قائمہ زاویہ مثلث۔ || یوه زاویه د مربع نښه لري، یعنې 90° — قایمه زاویه لرونکی مثلث.

@@ -1,0 +1,32 @@
+@printed 6
+exercise Count the objects and write (Page 6)
+p Count the objects and write. || چیزیں گنیں اور لکھیں۔ || شیان وشمېرئ او ولیکئ.
+cnt [] "0" "zero" || Example: nothing — 0 — zero || مثال: کچھ نہیں — ۰ — صفر || بېلګه: هېڅ نه — ۰ — صفر
+q 1 | How many gifts? || کتنے تحفے ہیں؟ || څو ډالۍ دي؟
+cnt gift:1 [] [] || 1 gift || تحفہ || ډالۍ
+sol 1 — one ## There is 1 gift: 1, one. || ایک تحفہ ہے: ۱، ایک۔ || یوه ډالۍ ده: ۱، یو.
+q 2 | How many cars? || کتنی گاڑیاں ہیں؟ || څو موټر دي؟
+cnt car.purple:2 [] [] || cars || گاڑیاں || موټر
+sol 2 — two ## There are 2 cars: 2, two. || دو گاڑیاں ہیں: ۲، دو۔ || دوه موټر دي: ۲، دوه.
+q 3 | How many balls? || کتنی گیندیں ہیں؟ || څو توپونه دي؟
+cnt beachball:3 [] [] || balls || گیندیں || توپونه
+sol 3 — three ## There are 3 balls: 3, three. || تین گیندیں ہیں: ۳، تین۔ || درې توپونه دي: ۳، درې.
+q 4 | How many aeroplanes? || کتنے ہوائی جہاز ہیں؟ || څو الوتکې دي؟
+cnt plane.red:4 [] [] || aeroplanes || ہوائی جہاز || الوتکې
+sol 4 — four ## There are 4 aeroplanes: 4, four. || چار ہوائی جہاز ہیں: ۴، چار۔ || څلور الوتکې دي: ۴، څلور.
+q 5 | How many ladybirds? || کتنے لیڈی برڈ ہیں؟ || څو سرې چینجې (لېډي برډ) دي؟
+cnt ladybird:5 [] [] || ladybirds || لیڈی برڈ || لېډي برډ
+sol 5 — five ## There are 5 ladybirds: 5, five. || پانچ لیڈی برڈ ہیں: ۵، پانچ۔ || پنځه لېډي برډ دي: ۵، پنځه.
+q 6 | How many butterflies? || کتنی تتلیاں ہیں؟ || څو پتنګان دي؟
+cnt butterfly:6 [] [] || butterflies || تتلیاں || پتنګان
+sol 6 — six ## There are 6 butterflies: 6, six. || چھ تتلیاں ہیں: ۶، چھ۔ || شپږ پتنګان دي: ۶، شپږ.
+q 7 | How many snails? || کتنے گھونگھے ہیں؟ || څو حلزونونه (چونګړې) دي؟
+cnt snail:7 [] [] || snails || گھونگھے || چونګړې
+sol 7 — seven ## There are 7 snails: 7, seven. || سات گھونگھے ہیں: ۷، سات۔ || اووه چونګړې دي: ۷، اووه.
+q 8 | How many erasers? || کتنے ربڑ ہیں؟ || څو ربړونه دي؟
+cnt eraser:8/4 [] [] || erasers || ربڑ || ربړونه
+sol 8 — eight ## There are 8 erasers (two rows of 4): 8, eight. || آٹھ ربڑ ہیں (۴ کی دو قطاریں): ۸، آٹھ۔ || اته ربړونه دي (د ۴ دوه قطارونه): ۸، اته.
+q 9 | How many pencils? || کتنی پنسلیں ہیں؟ || څو پنسلې دي؟
+cnt pencil.orange:9 [] [] || pencils || پنسلیں || پنسلې
+sol 9 — nine ## There are 9 pencils: 9, nine. || نو پنسلیں ہیں: ۹، نو۔ || نهه پنسلې دي: ۹، نهه.
+endexercise

@@ -1,0 +1,14 @@
+@printed 59
+@sec subtract-1-digit | Subtraction of 1-digit Numbers || ایک ہندسی اعداد کی تفریق || د یو رقمي عددونو تفریق
+# Subtraction of 1-digit Numbers || ایک ہندسی اعداد کی تفریق || د یو رقمي عددونو تفریق
+p Haleema made 9 biscuits. I took 4 biscuits. How many biscuits are left with Haleema? || حلیمہ نے ۹ بسکٹ بنائے۔ میں نے ۴ بسکٹ لے لیے۔ حلیمہ کے پاس کتنے بسکٹ باقی ہیں؟ || حلیمې ۹ بسکټونه جوړ کړل. ما ۴ بسکټونه واخیستل. د حلیمې سره څو بسکټونه پاتې دي؟
+cnt biscuit:9x4 || 9 biscuits; the last 4 are crossed out (taken away) || ۹ بسکٹ؛ آخری ۴ کاٹ دیے گئے (نکال لیے گئے) || ۹ بسکټونه؛ وروستي ۴ کټ شوي (لرې شوي)
+p To find out the remaining biscuits, take out 4 biscuits and count the remaining biscuits. || باقی بسکٹ معلوم کرنے کے لیے ۴ بسکٹ نکالیں اور باقی بسکٹ گنیں۔ || د پاتې بسکټونو د موندلو لپاره ۴ بسکټونه لرې کړئ او پاتې بسکټونه وشمېرئ.
+cnt [9] "minus" [4] "equals" [5] || 9 minus 4 equals 5 || ۹ منفی ۴ برابر ۵ || ۹ منفي ۴ مساوي ۵
+eq 9 - 4 = 5
+p So, Haleema is left with 5 biscuits. || لہٰذا حلیمہ کے پاس ۵ بسکٹ باقی ہیں۔ || نو د حلیمې سره ۵ بسکټونه پاتې دي.
+p We can also write it as: || ہم اسے یوں بھی لکھ سکتے ہیں: || موږ دا داسې هم لیکلای شو:
+cnt [9] biscuit:5 | "−" [4] biscuit:4x4 | [5] biscuit:5 || 9 − 4 = 5 in a column || ۹ − ۴ = ۵ کالم میں || ۹ − ۴ = ۵ په ستون کې
+box info | Key Fact || اہم نکتہ || مهم ټکی
+p The "−" symbol is used for the subtraction process. || "−" کی علامت تفریق کے عمل کے لیے استعمال ہوتی ہے۔ || "−" نښه د تفریق د عمل لپاره کارېږي.
+endbox

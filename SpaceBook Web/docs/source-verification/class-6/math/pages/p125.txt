@@ -1,0 +1,22 @@
+@printed 121
+example 2 | $3a - 2(a - c) + ab$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &3a - 2(a - c) + ab && \leftarrow \text{First solve the brackets} \\ &= 3a - 2a + 2c + ab && \leftarrow \text{Now add and subtract the like terms} \\ &= a + 2c + ab \end{aligned}
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Simplify the following. || درج ذیل کو سادہ کریں۔ || لاندې ساده کړئ.
+qp a | $[5a + \{a - b + (a - 3b - a)\}]$
+qp b | $[7x - \{4y - 2(5x - y)\}]$
+endbox
+example 3 | $[12a - \{4b - 2(5a - b)\}]$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &[12a - \{4b - 2(5a - b)\}] && \leftarrow \text{First solve the operation within parentheses} \\ &= [12a - \{4b - 10a + 2b\}] && \leftarrow \text{Now solve the like terms in curly brackets} \\ &= [12a - \{6b - 10a\}] && \leftarrow \text{Then open the curly bracket and change the sign} \\ &= [12a - 6b + 10a] && \leftarrow \text{Next add the like terms} \\ &= 22a - 6b \end{aligned}
+endexample
+example 4 | $[4x + \{z - y + (x - \overline{3x + z})\}]$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &[4x + \{z - y + (x - \overline{3x + z})\}] && \leftarrow \text{First solve the operation under the vinculum} \\ &= [4x + \{z - y + (x - 3x - z)\}] && \leftarrow \text{Now solve the like terms in parentheses} \\ &= [4x + \{z - y + (-2x - z)\}] && \leftarrow \text{Then remove the parentheses} \\ &= [4x + \{z - y - 2x - z\}] && \leftarrow \text{Next solve the like terms in the curly brackets} \\ &= [4x + \{-y - 2x\}] && \leftarrow \text{Remove the curly brackets} \\ &= [4x - y - 2x] && \leftarrow \text{Next solve the like terms} \\ &= 2x - y \end{aligned}
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Write different questions related to BODMAS on the board and ask the students to simplify the algebraic expressions according to the rules. || بورڈ پر BODMAS سے متعلق مختلف سوالات لکھیں اور طلبہ سے کہیں کہ قواعد کے مطابق الجبری عبارتیں سادہ کریں۔ || په تخته د BODMAS اړوند بېلابېلې پوښتنې ولیکئ او له زده کوونکو وغواړئ چې د قواعدو له مخې الجبري افادې ساده کړي.
+endbox
+@issue The step labels beside each line of Examples 2–4 are printed in English only; they are kept in English inside the worked equations.

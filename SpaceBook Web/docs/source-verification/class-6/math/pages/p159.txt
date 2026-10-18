@@ -1,0 +1,52 @@
+@printed 155
+exercise 8.4
+q 1 | Name the following shapes and write their number of faces, edges and vertices. || درج ذیل اشکال کے نام لکھیں اور ان کے رخوں، کناروں اور راسوں کی تعداد لکھیں۔ || د لاندې شکلونو نومونه ولیکئ او د مخونو، څنډو او راسونو شمېر یې ولیکئ.
+p For each shape write: Flat faces ___, Curved edges ___, Straight edges ___, Vertices ___, Curved faces ___ || ہر شکل کے لیے لکھیں: چپٹے رخ ___، خمیدہ کنارے ___، سیدھے کنارے ___، راس ___، خمیدہ رخ ___ || د هر شکل لپاره ولیکئ: هوار مخونه ___، کږې څنډې ___، مستقیمې څنډې ___، راسونه ___، کږ مخونه ___
+qp a | (shape a)
+solid cone
+sol Cone — Flat faces 1, Curved edges 1, Straight edges 0, Vertices 1, Curved faces 1 ## A cone has one flat circular base, one pointed vertex and one curved surface (page 154). || مخروط کا ایک چپٹا دائروی قاعدہ، ایک نوکدار راس اور ایک خمیدہ سطح ہوتی ہے (صفحہ 154)۔ || مخروط یوه هواره دایروي قاعده، یو تېره راس او یوه کږه سطحه لري (پاڼه 154).
+qp b | (shape b)
+solid cyl
+sol Cylinder — Flat faces 2, Curved edges 2, Straight edges 0, Vertices 0, Curved faces 1 ## Two flat circular ends joined by one curved surface. || دو چپٹے دائروی سرے ایک خمیدہ سطح سے جڑے ہوئے۔ || دوه هوار دایروي سرونه چې په یوه کږه سطحه نښلي.
+qp c | (shape c)
+solid cube
+sol Cube — Flat faces 6, Curved edges 0, Straight edges 12, Vertices 8, Curved faces 0 ## All six faces are equal squares (page 153). || چھ رخ برابر مربع ہیں (صفحہ 153)۔ || شپږ مخونه برابر مربعګانې دي (پاڼه 153).
+qp d | (shape d)
+solid cuboid
+sol Cuboid — Flat faces 6, Curved edges 0, Straight edges 12, Vertices 8, Curved faces 0 ## Six rectangular faces (page 153). || چھ مستطیل رخ (صفحہ 153)۔ || شپږ مستطیلي مخونه (پاڼه 153).
+qp e | (shape e)
+solid sphere
+sol Sphere — Flat faces 0, Curved edges 0, Straight edges 0, Vertices 0, Curved faces 1 ## A sphere is completely round with one curved face. || کرہ مکمل گول ہے اور اس کا ایک خمیدہ رخ ہے۔ || کره بشپړه ګرده ده او یو کږ مخ لري.
+q 2 | Label the following characteristics/properties of solids. || ٹھوس اشکال کی درج ذیل خصوصیات پر لیبل لگائیں۔ || د جامداتو لاندې ځانګړنې نښه کړئ.
+qp a | Cube (3 labels) || مکعب (3 لیبل) || مکعب (3 نښې)
+solid cube
+solution Vertex, Face, Edge
+sfig solid cube | vertex=Vertex | face=Face | edge=Edge
+endsolution
+qp b | Cone (4 labels) || مخروط (4 لیبل) || مخروط (4 نښې)
+solid cone
+solution Vertex, Curved face, Flat circular face, Curved edge
+sfig solid cone | vertex=Vertex | curved=Curved face | flat=Flat circular face | edge=Curved edge
+endsolution
+qp c | Cuboid (3 labels) || مکعب نما (3 لیبل) || مستطیلي مکعب (3 نښې)
+solid cuboid
+solution Edge, Face, Vertex
+sfig solid cuboid | edge=Edge | face=Face | vertex=Vertex
+endsolution
+qp d | Cylinder (5 labels) || اسطوانہ (5 لیبل) || استوانه (5 نښې)
+solid cyl
+solution Flat circular face (top and bottom), Curved face, Curved edge (top and bottom)
+sfig solid cyl | top=Flat circular face | curved=Curved face | bottom=Flat circular face | edge=Curved edge | edge2=Curved edge
+endsolution
+qp e | Sphere (1 label) || کرہ (1 لیبل) || کره (1 نښه)
+solid sphere
+solution Curved face
+sfig solid sphere | curved=Curved face
+endsolution
+qp f | Hemisphere (2 labels) || نصف کرہ (2 لیبل) || نیمه کره (2 نښې)
+solid hemi
+solution Circular face, Curved surface
+sfig solid hemi | circ=Circular face | curved=Curved surface
+endsolution
+endexercise
+@issue Exercise 8.4 parts are pictures with blank name boxes; the coded version shows each solid and a placeholder "(shape a)" etc., and the name appears in the answer. In Q2 the boxes are unlabelled arrows, so the labels are given as answers.

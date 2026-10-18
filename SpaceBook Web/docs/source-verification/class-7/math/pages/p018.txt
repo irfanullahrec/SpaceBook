@@ -1,0 +1,46 @@
+@printed 14
+q 4 | Represent the following on a number line. || درج ذیل کو عددی خط پر ظاہر کریں۔ || لاندې د عددونو پر کرښه وښایاست.
+qp a | $> 7$
+qp b | $> 5$ and $< 9$
+qp c | $\ge 1$ but $\le 6$
+qp d | $> 5$ but $\le 12$
+qp e | $\ge 6$
+qp f | $\ge 2$ and $< 10$
+qp g | $\le 7$ but $\ge 1$
+qp h | $< 12$ but $\ge 5$
+qp i | $< 9$
+qp j | $\le 12$
+qp k | $< 6$ but $> 2$
+qp l | $\ge 3$ but $\le 8$
+qp m | $\le 9$ but $> 4$
+qp n | odd numbers $> 3$ but $\le 15$ || طاق اعداد $> 3$ لیکن $\le 15$ || طاق عددونه $> 3$ خو $\le 15$
+q 5 | Represent the following sets of integers on a number line. || صحیح اعداد کے درج ذیل سیٹوں کو عددی خط پر ظاہر کریں۔ || د تامو عددونو لاندې سېټونه د عددونو پر کرښه وښایاست.
+qp a | $-7$ to $+6$
+qp b | $-9$ to $+7$
+qp c | $-10$ to $0$
+qp d | $-5$ to $+13$
+qp e | $-5$ to $+10$
+qp f | $-2$ to $+7$
+qp g | $-4$ to $+5$
+qp h | $-2$ to $0$
+q 6 | What are the missing decimals? || گمشدہ اعشاریے کون سے ہیں؟ || ورک شوي اعشاریې کومې دي؟
+qp a | Number line below (the three boxes mark the missing decimals). || نیچے عددی خط (تینوں خانے گمشدہ اعشاریوں کو ظاہر کرتے ہیں)۔ || لاندې د عددونو کرښه (درې خانې ورک شوي اعشاریې ښيي).
+dline 0..0.2 | major=4 | minor=5 | top=0.02:☐;0.11:☐;0.18:☐ | bottom=0;0.05;0.1;0.15;0.2
+q 7 | Represent the following decimals on a number line. || درج ذیل اعشاریوں کو عددی خط پر ظاہر کریں۔ || لاندې اعشاریې د عددونو پر کرښه وښایاست.
+qp a | 6.2, 6.9, 6.6
+qp b | 0.5, 0.1, 0.8. 0.3
+qp c | 0.03, 0.05, 0.07, 0.08
+endexercise
+@sec 1.5 | Types of fractions and their conversion || کسور کی اقسام اور ان کی تبدیلی || د کسرونو ډولونه او د هغوی اړول
+# 1.5 Types of fractions and their conversion || 1.5 کسور کی اقسام اور ان کی تبدیلی || 1.5 د کسرونو ډولونه او د هغوی اړول
+## 1.5.1 Improper Fractions || 1.5.1 غیر واجب کسور || 1.5.1 ناسم کسرونه
+p A fraction in which the numerator is greater than or equal to the denominator is called an improper fraction. Look at the shape. || وہ کسر جس میں شمار کنندہ نسب نما سے بڑا یا اس کے برابر ہو، غیر واجب کسر کہلاتا ہے۔ شکل کو دیکھیں۔ || هغه کسر چې صورت یې له مخرج څخه لوی یا ورسره برابر وي، ناسم کسر بلل کېږي. شکل ته وګورئ.
+shapes pie:3:3 || A circle divided into 3 equal parts, all 3 shaded || دائرہ 3 برابر حصوں میں تقسیم، تینوں حصے رنگے ہوئے || دایره په 3 برابرو برخو وېشل شوې، درې واړه برخې رنګ شوې
+p Three parts out of three parts are shaded. Therefore, the fraction can be represented as $\frac{3}{3}$. The numerator is equal to the denominator. So, it is an improper fraction. || تین میں سے تین حصے رنگے ہوئے ہیں۔ لہٰذا کسر کو $\frac{3}{3}$ سے ظاہر کیا جا سکتا ہے۔ شمار کنندہ نسب نما کے برابر ہے۔ لہٰذا یہ غیر واجب کسر ہے۔ || له دریو برخو څخه درې برخې رنګ شوې دي. نو کسر په $\frac{3}{3}$ ښودل کېدای شي. صورت له مخرج سره برابر دی. نو دا ناسم کسر دی.
+p Similarly, $\frac{3}{2}, \frac{5}{4}, \frac{9}{7}, \frac{6}{6}, \frac{8}{3}, \frac{4}{4}$, etc. are improper fractions. || اسی طرح $\frac{3}{2}, \frac{5}{4}, \frac{9}{7}, \frac{6}{6}, \frac{8}{3}, \frac{4}{4}$ وغیرہ غیر واجب کسور ہیں۔ || په همدې ډول $\frac{3}{2}, \frac{5}{4}, \frac{9}{7}, \frac{6}{6}, \frac{8}{3}, \frac{4}{4}$ او نور ناسم کسرونه دي.
+## 1.5.2 Mixed Fractions || 1.5.2 مخلوط کسور || 1.5.2 مخلوط کسرونه
+p When a fraction is written as a combination of a whole number and a proper fraction, it is called a mixed fraction or mixed number. || جب کسی کسر کو ایک مکمل عدد اور ایک واجب کسر کے مجموعے کے طور پر لکھا جائے تو اسے مخلوط کسر یا مخلوط عدد کہتے ہیں۔ || کله چې یو کسر د یوه بشپړ عدد او یوه سم کسر د یوځای کېدو په توګه ولیکل شي، مخلوط کسر یا مخلوط عدد بلل کېږي.
+p For example, $3\frac{3}{4}, 1\frac{2}{7}, 4\frac{2}{6}, 5\frac{7}{8}$, etc. are mixed fractions. || مثلاً $3\frac{3}{4}, 1\frac{2}{7}, 4\frac{2}{6}, 5\frac{7}{8}$ وغیرہ مخلوط کسور ہیں۔ || د بېلګې په توګه $3\frac{3}{4}, 1\frac{2}{7}, 4\frac{2}{6}, 5\frac{7}{8}$ او نور مخلوط کسرونه دي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Is $\frac{7}{5}$ a proper or an improper fraction? || کیا $\frac{7}{5}$ واجب کسر ہے یا غیر واجب کسر؟ || ایا $\frac{7}{5}$ سم کسر دی که ناسم کسر؟
+endbox

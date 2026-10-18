@@ -1,0 +1,37 @@
+@printed 237
+@deco Pen scribbles and ticks on the scan (a previous owner's marks) are not part of the book.
+q 6 | The following table shows the money Ahmad spends on food in the first 5 months of the year. Draw a pie chart for this data. || درج ذیل جدول سال کے پہلے 5 مہینوں میں احمد کے کھانے پر خرچ کی گئی رقم دکھاتا ہے۔ اس ڈیٹا کا پائی چارٹ بنائیں۔ || لاندې جدول د کال په لومړیو 5 میاشتو کې پر خوړو د احمد لګول شوې پیسې ښيي. د دې معلوماتو دایروي چارټ رسم کړئ.
+table
+th | Months || مہینے || میاشتې | Januar | February | March | April | May
+tr | Spent on food | 9000 | 12000 | 11780 | 1450 | 1340
+endtable
+solution Pie chart with angles January ≈ 91.09°, February ≈ 121.45°, March ≈ 119.22°, April ≈ 14.68°, May ≈ 13.56°
+suse pieq January=9000; February=12000; March=11780; April=1450; May=1340
+endsolution
+q 7 | Find mean, median and mode for the following observations; || درج ذیل مشاہدات کا اوسط، وسطانیہ اور عادہ معلوم کریں؛ || د لاندې مشاهدو اوسط، منځنی او ډېرتکراری ومومئ؛
+qp i | 52, 48, 50, 49, 47
+solution Mean = 49.2, Median = 49, no mode
+suse stat 52, 48, 50, 49, 47|mean
+suse stat 52, 48, 50, 49, 47|median
+suse stat 52, 48, 50, 49, 47|mode
+endsolution
+qp ii | 207, 301, 205, 350, 322, 205
+solution Mean = 265, Median = 254, Mode = 205
+suse stat 207, 301, 205, 350, 322, 205|mean
+suse stat 207, 301, 205, 350, 322, 205|median
+suse stat 207, 301, 205, 350, 322, 205|mode
+endsolution
+endexercise
+@issue Review Exercise 11 Q6 prints "Januar" and the April/May values (1450, 1340) are much smaller than the other months; kept as printed.
+@sec u11-project | Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Material Required: || درکار سامان: || اړین توکي:
+- Sets of several number cards (may include repeated numbers) || متعدد عددی کارڈز کے سیٹ (دہرائے گئے اعداد بھی ہو سکتے ہیں) || د څو عددي کارتونو سېټونه (کېدای شي تکراري عددونه هم ولري)
+- Paper || کاغذ || کاغذ
+- Pencil || پنسل || پنسل
+## Procedure: || طریقۂ کار: || کړنلاره:
+- Get into pairs. || جوڑیوں میں بٹ جائیں۔ || جوړه جوړه شئ.
+- Each pair randomly chooses 5 cards from a set of cards and find the mean, median and mode of the chosen numbers. || ہر جوڑی کارڈز کے سیٹ سے بلا ترتیب 5 کارڈ چنے اور چنے گئے اعداد کا اوسط، وسطانیہ اور عادہ معلوم کرے۔ || هره جوړه د کارتونو له سېټ په تصادفي ډول 5 کارتونه وټاکي او د ټاکل شوو عددونو اوسط، منځنی او ډېرتکراری ومومي.
+- The pair with the smallest mean, median or mode gets a point. || سب سے کم اوسط، وسطانیہ یا عادہ والی جوڑی کو ایک پوائنٹ ملتا ہے۔ || هغه جوړه چې تر ټولو کوچنی اوسط، منځنی یا ډېرتکراری ولري یوه نمره ترلاسه کوي.
+- Repeat this at least 5 times. || یہ کم از کم 5 بار دہرائیں۔ || دا لږ تر لږه 5 ځله تکرار کړئ.
+- The pair with the greatest number of smallest average wins. || سب سے زیادہ بار سب سے کم اوسط والی جوڑی جیتتی ہے۔ || هغه جوړه ګټي چې تر ټولو ډېر ځله تر ټولو کوچنی اوسط ولري.

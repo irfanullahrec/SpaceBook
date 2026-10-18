@@ -1,0 +1,18 @@
+@printed 65
+@status lesson
+@deco Image: a row of seven days Saturday, Sunday, Monday (labelled "Today"), Tuesday, Wednesday, Thursday, Friday with the Sunday box highlighted pink.
+p Algorithmically analyze the situation being assessed "If today is Monday" but what if today is not Monday? Yes, exactly if "today is not Monday" then "yesterday was Not Sunday". || الگورتھمی طور پر جانچی گئی صورتِ حال کا تجزیہ کریں "اگر آج پیر ہے" لیکن اگر آج پیر نہ ہو تو؟ جی ہاں، بالکل اگر "آج پیر نہیں ہے" تو "گزشتہ دن اتوار نہیں تھا"۔ || د الګوریتمي تحلیل په ډول ارزول شوی حالت "که نن دوشنبه وي"، خو که نن دوشنبه نه وي؟ هو، همداسې که "نن دوشنبه نه وي" نو "پرون یکشنبه نه وه".
+@deco Image: the same days row with Today = Monday; Saturday, Tuesday, Wednesday, Thursday, Friday filled blue, Sunday and Monday outlined.
+p Let's write this IF-THEN-ELSE condition: IF today is Monday THEN yesterday was Sunday ELSE yesterday was NOT Sunday. || آئیے اس IF-THEN-ELSE شرط کو لکھیں: اگر آج پیر ہے تو کل اتوار تھا ورنہ کل اتوار نہیں تھا۔ || راځئ دا IF-THEN-ELSE شرط ولیکو: که نن دوشنبه وي نو پرون یکشنبه وه که نه نو پرون یکشنبه نه وه.
+table IF-THEN-ELSE (Example 1)
+th IF || اگر || که | THEN || تو || نو | ELSE || ورنہ || که نه
+tr today is Monday || آج پیر ہے || نن دوشنبه ده | yesterday was Sunday || کل اتوار تھا || پرون یکشنبه وه | yesterday was NOT Sunday || کل اتوار نہیں تھا || پرون یکشنبه نه وه
+endtable
+### Example 2: || مثال ۲: || بېلګه ۲:
+p Rethink the problem of example 1. We handled the situation of one day activity of "getting ready for school" means one iteration. However, we know that the kid daily goes to school so its cyclic in nature and we can handle this with the help of finite loop. || مثال ۱ کے مسئلے پر دوبارہ غور کریں۔ ہم نے "اسکول کے لیے تیار ہونے" کی ایک دن کی سرگرمی کی صورتِ حال سنبھالی، جو ایک تکرار ہے۔ تاہم ہم جانتے ہیں کہ بچہ روزانہ اسکول جاتا ہے اس لیے یہ فطرت میں چکری ہے اور ہم اسے محدود لوپ کی مدد سے سنبھال سکتے ہیں۔ || د ۱ بېلګې ستونزې ته بیا فکر وکړئ. موږ د "ښوونځي ته چمتو کېدو" د یوې ورځې فعالیت حالت سمبال کړ چې یو تکرار دی. خو پوهېږو چې ماشوم هره ورځ ښوونځي ته ځي نو دا په طبیعت کې دوراني دی او موږ دا د محدود لوپ په مرسته سمبالولای شو.
+p Do the kid daily goes to school, No not on weekend, so this can handled with the conditional statement by assessing the day. || کیا بچہ روزانہ اسکول جاتا ہے؟ نہیں، ہفتے کے آخر میں نہیں، لہٰذا اسے دن کو جانچ کر مشروط بیان کے ذریعے سنبھالا جا سکتا ہے۔ || ایا ماشوم هره ورځ ښوونځي ته ځي؟ نه، د اونۍ په پای کې نه، نو دا د ورځې په ارزولو شرطي بیان سره سمبالېدای شي.
+table IF-THEN-ELSE (Example 2)
+th IF || اگر || که | THEN || تو || نو | ELSE || ورنہ || که نه
+tr it is weekend || ہفتے کا آخر ہے || د اونۍ پای دی | wear any dress and do weekend activities || کوئی بھی لباس پہنیں اور ہفتہ وار سرگرمیاں کریں || هره جامه واغوندئ او د اونۍ پای فعالیتونه وکړئ | get ready for school || اسکول کے لیے تیار ہوں || ښوونځي ته چمتو شئ
+endtable
+@issue The first words of the IF line ("today is Monday" / "it is weekend") are faint in the scan and read from the surrounding sentences.

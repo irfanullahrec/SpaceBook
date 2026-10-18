@@ -1,0 +1,39 @@
+@printed 77
+@issue Example 1 prints "Examine that the numbers. a) 13824 b) 6125 are perfect cubes or not."; kept as printed.
+@issue Math History item ii prints "Al-Baghdad" (Al-Baghdadi); kept as printed.
+example 1
+p Examine that the numbers. || جانچیں کہ اعداد || وازمویئ چې عددونه
+qp a | 13824
+qp b | 6125 are perfect cubes or not. || 6125 کامل مکعب ہیں یا نہیں۔ || 6125 بشپړ مکعبونه دي که نه.
+## Solution: || حل: || حل:
+m a) 13824
+p Resolving 13824 into prime factors. || 13824 کو مفرد اجزائے ضربی میں تقسیم کرنا۔ || 13824 په لومړنیو عاملونو وېشل.
+ladder 2:13824; 2:6912; 2:3456; 2:1728; 2:864; 2:432; 2:216; 2:108; 2:54; 3:27; 3:9; 3:3; :1
+m $13824 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 3 \times 3 \times 3$
+m $= 2^3 \times 2^3 \times 2^3 \times 3^3$
+p Since 13824 is expressible as the product of the cubes of prime factors. || چونکہ 13824 کو مفرد اجزائے ضربی کے مکعب کے حاصلِ ضرب کے طور پر ظاہر کیا جا سکتا ہے۔ || څرنګه چې 13824 د لومړنیو عاملونو د مکعبونو د حاصل ضرب په توګه ښودل کېدای شي.
+m $\therefore$ It is a perfect cube.
+m b) 6125
+p Resolving 6125 into prime factors. || 6125 کو مفرد اجزائے ضربی میں تقسیم کرنا۔ || 6125 په لومړنیو عاملونو وېشل.
+ladder 5:6125; 5:1225; 5:245; 7:49; 7:7; :1
+m $6125 = 5 \times 5 \times 5 \times 7 \times 7$
+m $= 5^3 \times 7^2$
+p Since 6125 cannot be expressed as the product of cubes of prime factors, || چونکہ 6125 کو مفرد اجزائے ضربی کے مکعب کے حاصلِ ضرب کے طور پر ظاہر نہیں کیا جا سکتا، || څرنګه چې 6125 د لومړنیو عاملونو د مکعبونو د حاصل ضرب په توګه نه شي ښودل کېدای،
+m $\therefore$ 6125 is not a perfect cube.
+endexample
+## 4.3.3 Cube Root of a Number || 4.3.3 کسی عدد کا جذر المکعب || 4.3.3 د یوه عدد مکعب جذر
+p The **cube root** of a number is a number whose cube is that number. || کسی عدد کا **جذر المکعب** وہ عدد ہے جس کا مکعب وہ عدد ہو۔ || د یوه عدد **مکعب جذر** هغه عدد دی چې مکعب یې هغه عدد وي.
+p For example: || مثال کے طور پر: || د بېلګې په توګه:
+m $8 = (2)^3 \Rightarrow$ 2 is the cube root of 8.
+m Similarly $27 = (3)^3 \Rightarrow$ 3 is the cube root of 27.
+box info | Cube root symbol || جذر المکعب کی علامت || د مکعب جذر نښه
+p The cube root of a number is denoted by the symbol '$\sqrt[3]{\ }$'. For any number $n$, cube root of $n$ is denoted by $\sqrt[3]{n}$. || کسی عدد کا جذر المکعب علامت '$\sqrt[3]{\ }$' سے ظاہر کیا جاتا ہے۔ کسی بھی عدد $n$ کے لیے، $n$ کا جذر المکعب $\sqrt[3]{n}$ سے ظاہر کیا جاتا ہے۔ || د یوه عدد مکعب جذر په '$\sqrt[3]{\ }$' نښه ښودل کېږي. د هر عدد $n$ لپاره، د $n$ مکعب جذر په $\sqrt[3]{n}$ ښودل کېږي.
+m Here $\sqrt[3]{n}$ = radical
+m $\sqrt[3]{\ }$ = radical sign
+m 3 = index of the radical
+endbox
+box info | Math History || ریاضی کی تاریخ || د ریاضي تاریخ
+- i. Al-Uqlidisi worked on square and cube roots in Al-Fusul. || i. الاقلیدسی نے الفصول میں جذر المربع اور جذر المکعب پر کام کیا۔ || i. الاقلیدسي په الفصول کې د مربع او مکعب جذرونو پر کار وکړ.
+- ii. Al-Baghdad, worked on cube roots in Al-Takmila. || ii. البغدادی نے التکملہ میں جذر المکعب پر کام کیا۔ || ii. البغدادي په التکمله کې د مکعب جذرونو پر کار وکړ.
+- iii. Al-Samawal, worked on nth roots in a treatise on Indian arithmetic. || iii. السموأل نے ہندی حساب پر ایک رسالے میں n ویں جذر پر کام کیا۔ || iii. السموأل د هندي حساب په یوه رساله کې د n ام جذرونو پر کار وکړ.
+endbox

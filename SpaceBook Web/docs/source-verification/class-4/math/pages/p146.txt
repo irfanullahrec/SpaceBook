@@ -1,0 +1,14 @@
+@printed 148
+@deco Cartoon girl with a speech bubble; photograph of a bedroom.
+## Area || رقبہ || مساحت
+p Umair's room is of square shape. How many tiles of 1 square metre are required to cover the floor of the room? || عمیر کا کمرہ مربع شکل کا ہے۔ کمرے کے فرش کو ڈھانپنے کے لیے 1 مربع میٹر کی کتنی ٹائلیں درکار ہیں؟ || د عمیر کوټه مربع شکل لري. د کوټې د فرش پوښلو لپاره د 1 مربع متر څو ټایلونه پکار دي؟
+p To find the number of tiles we have to find area of the room first. In the figure below, the area of the room is shown on a square grid. || ٹائلوں کی تعداد معلوم کرنے کے لیے ہمیں پہلے کمرے کا رقبہ معلوم کرنا ہوگا۔ نیچے دی گئی شکل میں کمرے کا رقبہ مربع خانوں پر دکھایا گیا ہے۔ || د ټایلونو د شمېر موندلو لپاره باید لومړی د کوټې مساحت ومومو. په لاندې شکل کې د کوټې مساحت پر مربع جال ښودل شوی دی.
+sqgrid 9 9 ; rect 1 1 7 7 ; label 1 1 1 ; label 2 1 2 ; label 3 1 3 ; label 4 1 4 ; label 5 1 5 ; label 6 1 6 ; label 7 1 7 ; label 7 7 49 || The square room covers 7 × 7 = 49 boxes; each box = 1 m² || مربع کمرہ 7 × 7 = 49 خانوں پر مشتمل ہے؛ ہر خانہ = 1 مربع میٹر || مربع کوټه 7 × 7 = 49 خونې نیسي؛ هره خونه = 1 m²
+p The number of square boxes in the square grid represents the area of the room. The number of squares = 49. Therefore the area of the room = 49 m². Thus, the number of tiles required is 49. || مربع خانوں میں مربع خانوں کی تعداد کمرے کا رقبہ ظاہر کرتی ہے۔ مربعوں کی تعداد = 49۔ لہٰذا کمرے کا رقبہ = 49 مربع میٹر۔ پس درکار ٹائلوں کی تعداد 49 ہے۔ || په مربع جال کې د مربع خونو شمېر د کوټې مساحت ښيي. د مربعګانو شمېر = 49. نو د کوټې مساحت = 49 m². نو د اړینو ټایلونو شمېر 49 دی.
+p **Find the area of the rectangular figure given below.** || **نیچے دی گئی مستطیل شکل کا رقبہ معلوم کریں۔** || **د لاندې ورکړل شوي مستطیل شکل مساحت ومومئ.**
+sqgrid 10 10 ; rect 2 2 6 7 ; label 2 2 1 ; label 3 2 2 ; label 4 2 3 ; label 5 2 4 ; label 6 2 5 ; label 7 2 6 ; label 7 8 42 || A rectangle of 6 × 7 = 42 boxes; each box = 1 m² || 6 × 7 = 42 خانوں کا مستطیل؛ ہر خانہ = 1 مربع میٹر || د 6 × 7 = 42 خونو مستطیل؛ هره خونه = 1 m²
+p The number of square boxes = 42. Therefore, the area of the figure is 42 m². || مربع خانوں کی تعداد = 42۔ لہٰذا شکل کا رقبہ 42 مربع میٹر ہے۔ || د مربع خونو شمېر = 42. نو د شکل مساحت 42 m² دی.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Find the area. || رقبہ معلوم کریں۔ || مساحت ومومئ.
+sqgrid 7 6 ; poly 1,2 3,2 3,1 4,1 4,2 6,2 6,3 1,3 || A shape on a grid of 1 m boxes: a row of 5 boxes with one box on top of the middle || 1 میٹر کے خانوں پر ایک شکل: 5 خانوں کی قطار جس کے درمیانی خانے کے اوپر ایک خانہ ہے || د 1 متر خونو پر یو شکل: د 5 خونو قطار چې د منځنۍ خونې پر سر یوه خونه ده
+endbox

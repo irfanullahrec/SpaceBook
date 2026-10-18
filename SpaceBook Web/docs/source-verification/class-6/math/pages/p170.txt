@@ -1,0 +1,54 @@
+@printed 168
+q 13 | Find the altitude of the triangular field. If its area is 99cm² and base is 9 cm. || ایک مثلثی میدان کا ارتفاع معلوم کریں اگر اس کا رقبہ 99 cm² اور قاعدہ 9 cm ہو۔ || د یو مثلثي ډګر لوړوالی معلوم کړئ که مساحت یې 99 cm² او قاعده یې 9 cm وي.
+solution 22 cm
+ss Area = ½ × base × altitude, so altitude = 2 × area ÷ base. || رقبہ = ½ × قاعدہ × ارتفاع، اس لیے ارتفاع = 2 × رقبہ ÷ قاعدہ۔ || مساحت = ½ × قاعده × لوړوالی، نو لوړوالی = 2 × مساحت ÷ قاعده.
+sm h = \frac{2 \times 99}{9} = \frac{198}{9} = 22 \text{ cm}
+endsolution
+q 14 | Find the volume and surface area of the following cube. || درج ذیل مکعب کا حجم اور سطحی رقبہ معلوم کریں۔ || د لاندې مکعب حجم او سطحي مساحت معلوم کړئ.
+qp a | Cuboid: l = 8 cm, w = 6 cm, h = 5 cm || مکعب نما: l = 8 cm، w = 6 cm، h = 5 cm || مستطیلي مکعب: l = 8 cm، w = 6 cm، h = 5 cm
+solution Volume = 240 cm³, Surface area = 236 cm²
+suse solidq cuboid 8 6 5 cm
+endsolution
+qp b | Cube with edge 69 cm || 69 cm کنارے والا مکعب || د 69 cm څنډې مکعب
+solution Volume = 328509 cm³, Surface area = 28566 cm²
+suse solidq cube 69 cm
+endsolution
+qp c | Cube with edge 5 m || 5 m کنارے والا مکعب || د 5 m څنډې مکعب
+solution Volume = 125 m³, Surface area = 150 m²
+suse solidq cube 5 m
+endsolution
+qp d | Cuboid: l = 9 cm, w = 5 cm, h = 4 cm || مکعب نما: l = 9 cm، w = 5 cm، h = 4 cm || مستطیلي مکعب: l = 9 cm، w = 5 cm، h = 4 cm
+solution Volume = 180 cm³, Surface area = 202 cm²
+suse solidq cuboid 9 5 4 cm
+endsolution
+@issue Review Exercise 8 Q14 says "following cube" but parts a) and d) are cuboids; the parts are drawings, so a short text description is added to each.
+q 15 | Find the total surface area of the block whose length is 9cm, width 2.3cm and height is 3.3cm. || اس بلاک کا کل سطحی رقبہ معلوم کریں جس کی لمبائی 9 cm، چوڑائی 2.3 cm اور اونچائی 3.3 cm ہے۔ || د هغه بلاک ټوله سطحي مساحت معلوم کړئ چې اوږدوالی یې 9 cm، پلنوالی 2.3 cm او جګوالی 3.3 cm دی.
+solution 115.98 cm²
+suse solidq cuboid 9 2.3 3.3 cm
+endsolution
+q 16 | A classroom is 4m long, 5m wide and 3m high. Find the cost of whitewash the all four walls and ceiling the room at the rate of Rs 43 per m². || ایک کلاس روم 4 m لمبا، 5 m چوڑا اور 3 m اونچا ہے۔ 43 روپے فی m² کے حساب سے کمرے کی چاروں دیواروں اور چھت پر سفیدی کی لاگت معلوم کریں۔ || یو ټولګی 4 m اوږد، 5 m پلن او 3 m جګ دی. په هر m² 43 روپیو د کوټې د څلورو دېوالونو او چت د سپینولو لګښت معلوم کړئ.
+solution Rs 3182
+ss Four walls = 2(l + w) × h; the ceiling = l × w (the floor is not whitewashed). || چار دیواریں = 2(l + w) × h؛ چھت = l × w (فرش پر سفیدی نہیں ہوتی)۔ || څلور دېوالونه = 2(l + w) × h؛ چت = l × w (فرش نه سپینېږي).
+sm 2(4 + 5) \times 3 + 4 \times 5 = 54 + 20 = 74 \text{ m}^2
+sm 74 \times 43 = \text{Rs } 3182
+endsolution
+q 17 | A water tank is cuboid in shape. The length, width and height of the tank are 3.5m, 4.2m and 5.3m respectively. If we completely fill it with water. find the volume of water in the tank in litre? || پانی کی ٹنکی مکعب نما شکل کی ہے۔ ٹنکی کی لمبائی، چوڑائی اور اونچائی بالترتیب 3.5 m، 4.2 m اور 5.3 m ہے۔ اگر اسے مکمل پانی سے بھر دیں تو ٹنکی میں پانی کا حجم لیٹر میں معلوم کریں۔ || د اوبو ټانکۍ مستطیلي مکعب شکل لري. د ټانکۍ اوږدوالی، پلنوالی او جګوالی په ترتیب سره 3.5 m، 4.2 m او 5.3 m دي. که په بشپړ ډول له اوبو ډکه شي، په ټانکۍ کې د اوبو حجم په لیټر معلوم کړئ.
+solution 77.91 m³ = 77,910 litres
+sm 3.5 \times 4.2 \times 5.3 = 77.91 \text{ m}^3
+ss 1 m³ holds 1000 litres, so multiply by 1000. || 1 m³ میں 1000 لیٹر آتے ہیں، اس لیے 1000 سے ضرب دیں۔ || په 1 m³ کې 1000 لیټره ځایېږي، نو په 1000 کې ضرب کړئ.
+sm 77.91 \times 1000 = 77910 \text{ litres}
+ss Teacher's note: the answer key stops at 77.91 m³; the question asks for litres. || استاد کا نوٹ: جوابی کلید 77.91 m³ پر رک جاتی ہے؛ سوال لیٹر میں پوچھتا ہے۔ || د ښوونکي یادونه: د ځوابونو کلي په 77.91 m³ درېږي؛ پوښتنه په لیټر کې غواړي.
+endsolution
+q 18 | Find the capacity of a can whose length, width and height are 54cm, 35cm and 56cm respectively. || اس ڈبے کی گنجائش معلوم کریں جس کی لمبائی، چوڑائی اور اونچائی بالترتیب 54 cm، 35 cm اور 56 cm ہے۔ || د هغه قطۍ ګنجایش معلوم کړئ چې اوږدوالی، پلنوالی او جګوالی یې په ترتیب سره 54 cm، 35 cm او 56 cm دي.
+solution 105,840 cm³
+sm 54 \times 35 \times 56 = 105840 \text{ cm}^3
+endsolution
+q 19 | The altitude of the parallelogram is 2.4 cm and its area is 84.4 cm². Find the base of parallelogram. || متوازی الاضلاع کا ارتفاع 2.4 cm اور رقبہ 84.4 cm² ہے۔ اس کا قاعدہ معلوم کریں۔ || د متوازي الاضلاع لوړوالی 2.4 cm او مساحت یې 84.4 cm² دی. قاعده یې معلومه کړئ.
+solution ≈ 35.17 cm
+sm b = \frac{84.4}{2.4} \approx 35.17 \text{ cm}
+endsolution
+q 20 | Find the area of the triangle if the length of its base is 67.2 cm and the length of its altitude is 56.2 cm. || اگر مثلث کے قاعدے کی لمبائی 67.2 cm اور ارتفاع 56.2 cm ہو تو اس کا رقبہ معلوم کریں۔ || که د مثلث د قاعدې اوږدوالی 67.2 cm او لوړوالی 56.2 cm وي، مساحت یې معلوم کړئ.
+solution 1888.32 cm²
+sm \frac{1}{2} \times 67.2 \times 56.2 = 1888.32 \text{ cm}^2
+endsolution
+endexercise

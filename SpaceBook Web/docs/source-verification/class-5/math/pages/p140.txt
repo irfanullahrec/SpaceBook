@@ -1,0 +1,19 @@
+@printed 133
+@deco Picture of two protractors placed at A and at B; blue arrow between the construction pictures. The page edge is damaged on the scan (marks along the left margin; "NOT FOR SALE" faded).
+## Trapezium || ذوزنقہ || ذوزنقه
+p A quadrilateral having only one pair of parallel sides, is called a trapezium. ABCD is a trapezium. || جس چوکور کے صرف ایک جوڑا اضلاع متوازی ہوں اسے ذوزنقہ کہتے ہیں۔ ABCD ایک ذوزنقہ ہے۔ || هغه څلور ضلعي چې یوازې یوه جوړه موازي ضلعې ولري ذوزنقه بلل کېږي. ABCD یوه ذوزنقه ده.
+m $\overline{AB} \parallel \overline{DC}$
+poly D:0,0 C:5,0 B:3.6,1.6 A:1,1.6 | fill=#f0abfc | angles=d,c,b,a | scale=40 || Trapezium ABCD with AB ∥ DC and angles a, b, c, d || ذوزنقہ ABCD جس میں AB ∥ DC اور زاویے a، b، c، d || ذوزنقه ABCD چې AB ∥ DC او زاويې a، b، c، d
+## Kite || پتنگ || پتنګ
+p A quadrilateral having two pairs of equal adjacent sides, is called a kite. STUV is a trapezium. || جس چوکور کے متصل اضلاع کے دو جوڑے برابر ہوں اسے پتنگ کہتے ہیں۔ STUV ایک ذوزنقہ ہے۔ || هغه څلور ضلعي چې د نږدې ضلعو دوه جوړې برابرې ولري پتنګ بلل کېږي. STUV یوه ذوزنقه ده.
+m $m\overline{SV} = m\overline{UV}$, $m\overline{ST} = m\overline{UT}$
+@issue The kite paragraph prints "STUV is a trapezium" (it is the kite); kept as printed. A stray mark is printed over the U in "mUT".
+poly V:0,2 S:-1,1 T:0,-1.145 U:1,1 | fill=#cffafe | angles=90°,110°,50°,110° | ticks=1,2,2,1 | right= | scale=50 || Kite STUV: ∠V = 90°, ∠S = ∠U = 110°, ∠T = 50° || پتنگ STUV: ∠V = 90°، ∠S = ∠U = 110°، ∠T = 50° || پتنګ STUV: ∠V = 90°، ∠S = ∠U = 110°، ∠T = 50°
+@sec u7-construct-quad | Construction of a Square and a Rectangle || مربع اور مستطیل کی تعمیر || د مربع او مستطیل جوړول
+# Construction of a Square and a Rectangle || مربع اور مستطیل کی تعمیر || د مربع او مستطیل جوړول
+## Construction of square || مربع کی تعمیر || د مربع جوړول
+p Construct a square ABCD that has length of a side 3.8 cm. || ایک مربع ABCD بنائیں جس کے ضلع کی لمبائی 3.8 cm ہو۔ || یو مربع ABCD جوړ کړئ چې د ضلعې اوږدوالی یې 3.8 cm وي.
+p i) Draw a line $\overline{AB} = 3.8$ cm. || i) لکیر $\overline{AB} = 3.8$ cm کھینچیں۔ || i) کرښه $\overline{AB} = 3.8$ cm رسم کړئ.
+poly A:0,0 B:3.8,0 | sides=3.8 cm | scale=45 || AB = 3.8 cm || AB = 3.8 cm || AB = 3.8 cm
+p ii) Using a protractor draw right angles at point A and B. || ii) زاویہ پیما کی مدد سے نقطہ A اور B پر قائمہ زاویے بنائیں۔ || ii) د زاویه پیما په مرسته په A او B ټکو کې قایمې زاويې رسم کړئ.
+uprays A,B | 3.8 cm || Right angles drawn at A and at B: two upright rays from the ends of AB = 3.8 cm || A اور B پر قائمہ زاویے: AB = 3.8 cm کے سروں سے دو کھڑی شعاعیں || په A او B کې قایمې زاويې: د AB = 3.8 cm له سرونو دوه ولاړې وړانګې

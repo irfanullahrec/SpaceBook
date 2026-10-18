@@ -1,0 +1,28 @@
+@printed 132
+@deco Teaching-point badge.
+## Types of Quadrilaterals || چوکور کی اقسام || د څلور ضلعیو ډولونه
+## Square || مربع || مربع
+p A quadrilateral having four equal sides and four right angles is called a square. EFGH is a square. || جس چوکور کے چاروں اضلاع برابر اور چاروں زاویے قائمہ ہوں اسے مربع کہتے ہیں۔ EFGH ایک مربع ہے۔ || هغه څلور ضلعي چې څلور برابرې ضلعې او څلور قایمې زاويې ولري مربع بلل کېږي. EFGH یو مربع دی.
+m $m\overline{EF} = m\overline{GH} = m\overline{EH} = m\overline{FG}$
+poly E:0,0 F:3,0 G:3,3 H:0,3 | fill=#7dd3fc | ticks=1,1,1,1 | right=EFGH | scale=40 || Square EFGH: four equal sides, four angles of 90° || مربع EFGH: چار برابر اضلاع، چار 90° کے زاویے || مربع EFGH: څلور برابرې ضلعې، څلور 90° زاويې
+## Rectangle || مستطیل || مستطیل
+p A quadrilateral having opposite sides equal in length is called a rectangle. All four angles are right angles in a rectangle. || جس چوکور کے آمنے سامنے کے اضلاع لمبائی میں برابر ہوں اسے مستطیل کہتے ہیں۔ مستطیل میں چاروں زاویے قائمہ ہوتے ہیں۔ || هغه څلور ضلعي چې مخامخ ضلعې یې په اوږدوالي کې برابرې وي مستطیل بلل کېږي. په مستطیل کې څلور واړه زاويې قایمې دي.
+m $m\overline{LM} = m\overline{ON}$, $m\overline{LO} = m\overline{MN}$
+m $\overline{LM} \parallel \overline{ON}$, $\overline{LO} \parallel \overline{MN}$
+poly L:0,0 M:5,0 N:5,3 O:0,3 | fill=#cffafe | sides=,,5 cm, | ticks=2,1,2,1 | right=LMNO | scale=36 || Rectangle LMNO (ON = 5 cm) || مستطیل LMNO (ON = 5 cm) || مستطیل LMNO (ON = 5 cm)
+@issue The rectangle text gives "mLM = mON, mLO = mMN" and "LM ∥ ON, LO ∥ MN", but in the figure L–M is the bottom side and O–N the top side, so the pairs are consistent; the only printed length is 5 cm on ON.
+## Parallelogram || متوازی الاضلاع || متوازي الاضلاع
+p A quadrilateral with two pairs of opposite parallel sides and opposite equal angles, is called a Parallelogram. ABCD is a parallelogram. || جس چوکور کے آمنے سامنے کے اضلاع کے دو جوڑے متوازی اور آمنے سامنے کے زاویے برابر ہوں اسے متوازی الاضلاع کہتے ہیں۔ ABCD ایک متوازی الاضلاع ہے۔ || هغه څلور ضلعي چې د مخامخ ضلعو دوه جوړې موازي او مخامخ زاويې برابرې ولري متوازي الاضلاع بلل کېږي. ABCD یو متوازي الاضلاع دی.
+m $m\overline{AB} = m\overline{DC}$, $m\overline{AD} = m\overline{BC}$
+m $\overline{AB} \parallel \overline{DC}$, $\overline{AD} \parallel \overline{BC}$
+m $\angle A = \angle C$, $\angle B = \angle D$
+poly A:0,0 B:4,0 C:4.85,1.81 D:0.85,1.81 | fill=#fed7aa | angles=65°,115°,65°,115° | ticks=2,1,2,1 | scale=40 || Parallelogram ABCD: ∠A = ∠C = 65°, ∠B = ∠D = 115° || متوازی الاضلاع ABCD: ∠A = ∠C = 65°، ∠B = ∠D = 115° || متوازي الاضلاع ABCD: ∠A = ∠C = 65°، ∠B = ∠D = 115°
+## Rhombus || معین || معین
+p A quadrilateral having all sides are equal and parallel, is called a rhombus. Opposite angles are equal but there is no right angle in rhombus. WXYZ is a rhombus. || جس چوکور کے تمام اضلاع برابر اور (آمنے سامنے کے) متوازی ہوں اسے معین کہتے ہیں۔ آمنے سامنے کے زاویے برابر ہوتے ہیں لیکن معین میں کوئی قائمہ زاویہ نہیں ہوتا۔ WXYZ ایک معین ہے۔ || هغه څلور ضلعي چې ټولې ضلعې یې برابرې او (مخامخ) موازي وي معین بلل کېږي. مخامخ زاويې برابرې وي خو په معین کې قایمه زاویه نه وي. WXYZ یو معین دی.
+m $m\overline{WX} = m\overline{YZ}$, $m\overline{WZ} = m\overline{XY}$
+m $\overline{WX} \parallel \overline{YZ}$, $\overline{WZ} \parallel \overline{XY}$
+m $\angle X = \angle Z$, $\angle W = \angle Y$
+poly W:0,0 X:2.6,0 Y:2.15,2.56 Z:-0.45,2.56 | fill=#fbcfe8 | angles=100°,80°,100°,80° | ticks=1,1,1,1 | scale=42 || Rhombus WXYZ: ∠W = ∠Y = 100°, ∠X = ∠Z = 80° || معین WXYZ: ∠W = ∠Y = 100°، ∠X = ∠Z = 80° || معین WXYZ: ∠W = ∠Y = 100°، ∠X = ∠Z = 80°
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Divide the student in groups. Ask each group to compare any two quadrilaterals and write their properties. || طلبہ کو گروپوں میں تقسیم کریں۔ ہر گروپ سے کہیں کہ کوئی سے دو چوکوروں کا موازنہ کر کے ان کی خصوصیات لکھیں۔ || زده کوونکي په ډلو ووېشئ. له هرې ډلې وغواړئ چې هر دوه څلور ضلعي پرتله کړي او ځانګړتیاوې یې ولیکي.
+endbox

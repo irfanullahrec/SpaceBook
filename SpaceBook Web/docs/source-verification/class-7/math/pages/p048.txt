@@ -1,0 +1,39 @@
+@printed 44
+example 3 | Check whether 988 is a perfect square or not. || جانچیں کہ 988 کامل مربع ہے یا نہیں۔ || وګورئ چې 988 بشپړ مربع دی که نه.
+p **Solution:** To find 988 is the perfect square or not we have to find the prime factors of 144 by prime factorization. || **حل:** یہ معلوم کرنے کے لیے کہ 988 کامل مربع ہے یا نہیں، ہمیں مفرد تجزی کے ذریعے 144 کے مفرد اجزائے ضربی معلوم کرنے ہوں گے۔ || **حل:** د دې معلومولو لپاره چې 988 بشپړ مربع دی که نه، باید د لومړني ضربي تجزیې په مرسته د 144 لومړني ضربي اجزا معلوم کړو.
+ladder 2:988; 2:484; 2:242; 11:121; 11:11; :1
+m The prime factors of $988 = 2 \times 2 \times 2 \times 11 \times 11$
+m $= 2^2 \times 2 \times 11^2$
+p As all factors of 988 cannot be written in the form of pairs so, 988 is not the perfect square. || چونکہ 988 کے تمام اجزائے ضربی جوڑوں کی صورت میں نہیں لکھے جا سکتے، اس لیے 988 کامل مربع نہیں ہے۔ || څرنګه چې د 988 ټول ضربي اجزا د جوړو په بڼه نه لیکل کېږي، نو 988 بشپړ مربع نه دی.
+endexample
+@issue Example 3 contains printed errors: the solution says "prime factors of 144" (should be 988), and the division ladder gives 988 ÷ 2 = 484 (should be 494), so 2 × 2 × 2 × 11 × 11 = 968, not 988 (988 = 2 × 2 × 13 × 19). The conclusion "988 is not a perfect square" is still correct. Kept as printed.
+### Properties of Perfect Square of a Number || کسی عدد کے کامل مربع کی خصوصیات || د یوه عدد د بشپړ مربع ځانګړتیاوې
+p **i) The square of an even number is even.** || **i) جفت عدد کا مربع جفت ہوتا ہے۔** || **i) د جفت عدد مربع جفت وي.**
+p **ii) The square of an odd number is odd.** || **ii) طاق عدد کا مربع طاق ہوتا ہے۔** || **ii) د طاق عدد مربع طاق وي.**
+p For example, || مثلاً، || د بېلګې په توګه،
+m $3 \times 3 = 3^2 = 9$
+m $5 \times 5 = 5^2 = 25$
+m $8 \times 8 = 8^2 = 64$
+m $12 \times 12 = 12^2 = 144$
+p We can observe that the squares of even numbers are even and squares of all odd numbers are odd. || ہم دیکھ سکتے ہیں کہ جفت اعداد کے مربع جفت اور تمام طاق اعداد کے مربع طاق ہوتے ہیں۔ || موږ لیدلی شو چې د جفتو عددونو مربعات جفت او د ټولو طاقو عددونو مربعات طاق وي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Tell whether the squares of the following numbers are odd or even. || بتائیں کہ درج ذیل اعداد کے مربع طاق ہیں یا جفت۔ || ووایاست چې د لاندې عددونو مربعات طاق دي که جفت.
+qp a | 820
+qp b | 123
+qp c | 90
+qp d | 87
+endbox
+example 1 | Tell whether the square of the following numbers are even or odd. || بتائیں کہ درج ذیل اعداد کا مربع جفت ہے یا طاق۔ || ووایاست چې د لاندې عددونو مربع جفت ده که طاق.
+qp a | 51
+qp b | 34
+qp c | 63
+qp d | 88
+p **Solution:** || **حل:** || **حل:**
+p a) The ones place digit of 51 is odd so the square of 51 will be an odd number. (Check: $51^2 = 51 \times 51 = 2601$) || a) 51 کے اکائی کے مقام کا ہندسہ طاق ہے اس لیے 51 کا مربع طاق عدد ہوگا۔ (جانچ: $51^2 = 51 \times 51 = 2601$) || a) د 51 د یوګونو د ځای رقم طاق دی نو د 51 مربع به طاق عدد وي. (ازموینه: $51^2 = 51 \times 51 = 2601$)
+p b) The ones place digit of 34 is even so the square of 34 will be an even number. (Check: $34^2 = 34 \times 34 = 1156$) || b) 34 کے اکائی کے مقام کا ہندسہ جفت ہے اس لیے 34 کا مربع جفت عدد ہوگا۔ (جانچ: $34^2 = 34 \times 34 = 1156$) || b) د 34 د یوګونو د ځای رقم جفت دی نو د 34 مربع به جفت عدد وي. (ازموینه: $34^2 = 34 \times 34 = 1156$)
+p c) The ones place digit of 63 is odd so the square of 63 will be an odd number. (Check: $63^2 = 63 \times 63 = 3969$) || c) 63 کے اکائی کے مقام کا ہندسہ طاق ہے اس لیے 63 کا مربع طاق عدد ہوگا۔ (جانچ: $63^2 = 63 \times 63 = 3969$) || c) د 63 د یوګونو د ځای رقم طاق دی نو د 63 مربع به طاق عدد وي. (ازموینه: $63^2 = 63 \times 63 = 3969$)
+p d) The ones place digit of 88 is even so the square of 88 will be an even number. (Check: $88^2 = 88 \times 88 = 7744$) || d) 88 کے اکائی کے مقام کا ہندسہ جفت ہے اس لیے 88 کا مربع جفت عدد ہوگا۔ (جانچ: $88^2 = 88 \times 88 = 7744$) || d) د 88 د یوګونو د ځای رقم جفت دی نو د 88 مربع به جفت عدد وي. (ازموینه: $88^2 = 88 \times 88 = 7744$)
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write a few proper fractions on the board and ask the students to find the squares of the given fractions to verify the property. || بورڈ پر چند واجب کسور لکھیں اور طلبہ سے کہیں کہ خاصیت کی تصدیق کے لیے دیے گئے کسور کے مربع معلوم کریں۔ || پر تخته څو سم کسرونه ولیکئ او له زده کوونکو وغواړئ چې د ځانګړتیا د تایید لپاره د ورکړل شویو کسرونو مربعات معلوم کړي.
+endbox

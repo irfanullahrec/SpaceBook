@@ -1,0 +1,25 @@
+@printed 137
+q 8 | Colour the Circles Blue, Squares Green, Rectangles Yellow, Triangles Red. || دائروں کو نیلا، مربعوں کو سبز، مستطیلوں کو پیلا اور مثلثوں کو سرخ رنگ کریں۔ || دایرې شنې (آبي)، مربعونه شنه، مستطیلونه ژېړ او مثلثونه سره رنګ کړئ.
+svg A dotted picture of mountains, a sun, birds, two posts and a house made of shapes || پہاڑوں، سورج، پرندوں، دو کھمبوں اور اشکال سے بنے گھر کی نقطہ دار تصویر || د غرونو، لمر، مرغانو، دوو ستنو او له شکلونو جوړ کور نقطه لرونکی انځور
+<svg viewBox="0 0 440 240" width="440" role="img" aria-label="Dotted shape picture: 3 big triangles (mountains), sun circle with triangle rays, 2 birds (circle body, triangle wings and beak), 2 tall rectangles, house with 5 small squares, 3 triangles on the roof, 3 circles and a rectangle door" font-family="Segoe UI, Arial, sans-serif">
+<g fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="2 3">
+<path d="M10 90 L80 10 L150 90z"/><path d="M150 90 L220 10 L290 90z"/><path d="M290 90 L360 10 L430 90z"/>
+<circle cx="275" cy="30" r="14"/>
+<path d="M275 8 l-4 -8 h8z M275 52 l-4 8 h8z M253 30 l-8 -4 v8z M297 30 l8 -4 v8z"/>
+<circle cx="150" cy="30" r="9"/><path d="M141 26 l-12 -10 l2 12z M159 26 l12 -10 l-2 12z M150 39 l-4 8 h8z"/>
+<circle cx="25" cy="130" r="7"/><path d="M18 127 l-10 -8 l2 10z M32 127 l10 -8 l-2 10z M25 137 l-3 7 h6z"/>
+<rect x="60" y="100" width="20" height="130"/><rect x="95" y="100" width="20" height="130"/>
+<rect x="160" y="100" width="270" height="30"/>
+<rect x="180" y="104" width="20" height="20"/><rect x="225" y="104" width="20" height="20"/><rect x="270" y="104" width="20" height="20"/><rect x="315" y="104" width="20" height="20"/><rect x="360" y="104" width="20" height="20"/>
+<path d="M160 130 L195 160 L230 130z M230 130 L265 160 L300 130z M300 130 L335 160 L370 130z"/>
+<path d="M140 230 V160 L160 130 L190 160 V230z"/>
+<rect x="160" y="160" width="270" height="70"/>
+<rect x="160" y="175" width="40" height="55"/>
+<circle cx="250" cy="195" r="16"/><circle cx="310" cy="195" r="16"/><circle cx="370" cy="195" r="16"/>
+</g>
+</svg>
+endsvg
+sol Blue: the sun, the bird bodies and the 3 circles on the house. Green: the 5 small squares. Yellow: the 2 tall posts, the long roof band, the house wall and the door. Red: the 3 mountains, the sun's rays, the birds' wings and beaks, and the triangles on the house. ## Sort each part by its number of sides. || ہر حصے کو اس کے اطراف کی تعداد کے لحاظ سے پہچانیں۔ || هره برخه د اړخونو د شمېر له مخې وپېژنئ.
+q 9 | Match the objects with the similar shapes. || چیزوں کو ملتی جلتی اشکال سے ملائیں۔ || شیان له ورته شکلونو سره وښلوئ.
+cnt envelope:1 "A" frame:1 "B" pizzaslice:1 "C" button2:1 "D" | circle.none:1 "1" triangle.none:1 "2" rect.none:1 "3" square.none:1 "4" || Left: envelope (A), picture frame (B), pizza slice (C), button (D). Right: circle (1), triangle (2), rectangle (3), square (4) || بائیں: لفافہ (A)، تصویر کا فریم (B)، پیزا کا ٹکڑا (C)، بٹن (D)۔ دائیں: دائرہ (1)، مثلث (2)، مستطیل (3)، مربع (4) || کیڼ: پاکټ (A)، د انځور چوکاټ (B)، د پیزا ټوټه (C)، تڼۍ (D). ښي: دایره (1)، مثلث (2)، مستطیل (3)، مربع (4)
+sol A–3 (rectangle), B–4 (square), C–2 (triangle), D–1 (circle) ## Look at the outline of each object. || ہر چیز کا خاکہ دیکھیں۔ || د هر شي بهرنۍ کرښه وګورئ.

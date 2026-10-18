@@ -1,0 +1,26 @@
+@printed 142
+@deco Cartoon boy beside the speech bubble; teaching-point badge.
+p Look at the given figures. On the left side there is a cube and on the right side there is the net of the cube. It is made up of six squares. || دی گئی اشکال کو دیکھیں۔ بائیں طرف ایک مکعب ہے اور دائیں طرف اس مکعب کا جال ہے۔ یہ چھ مربعوں سے بنا ہے۔ || ورکړل شوو شکلونو ته وګورئ. کیڼ اړخ ته یو مکعب او ښي اړخ ته د مکعب جال دی. له شپږو مربعو جوړ دی.
+box3d 3 3 3 | front=3 top=2 right=1 back=5 left=4 bottom=6 | fill=#d9f99d || Cube with faces numbered 1 to 6 || مکعب جس کی سطحوں پر 1 سے 6 تک نمبر ہیں || مکعب چې پر سطحو یې له 1 تر 6 پورې شمېرې دي
+net 0,1:#3 1,0:#4 1,1:#6 1,2:#1 2,1:#5 3,1:#2 || Net of the cube (3 on top; 4, 6, 1 across; 5 and 2 below) || مکعب کا جال (اوپر 3؛ 4، 6، 1 افقی؛ نیچے 5 اور 2) || د مکعب جال (پورته 3؛ 4، 6، 1 افقي؛ لاندې 5 او 2)
+@issue In the printed 3-D cube the visible front face is numbered 3 and a hidden face 5 near the front-left corner; the face numbers of the drawing are reproduced approximately.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Tell if the given net is the net of a cube or not? || بتائیں کہ دیا گیا جال مکعب کا جال ہے یا نہیں؟ || ووایاست چې ورکړل شوی جال د مکعب جال دی که نه؟
+net 0,0 1,0 1,1 2,1 2,2 3,2 || A staircase of six squares || چھ مربعوں کی سیڑھی نما ترتیب || د شپږو مربعو زینه ډوله ترتیب
+endbox
+box note
+p Observe see the net of a cuboid. || مکعب نما کا جال دیکھیں۔ || د مکعب نما جال ته وګورئ.
+endbox
+p On the left side, there is a cuboid and on the right side there is the net of the cuboid. It is made up of six rectangles. || بائیں طرف ایک مکعب نما ہے اور دائیں طرف اس کا جال ہے۔ یہ چھ مستطیلوں سے بنا ہے۔ || کیڼ اړخ ته یو مکعب نما او ښي اړخ ته یې جال دی. له شپږو مستطیلونو جوړ دی.
+box3d 4.5 2 3 | front=5 top=2 right=4 left=1 back=3 bottom=6 | fill=#fb923c || Cuboid with faces numbered 1 to 6 || مکعب نما جس کی سطحوں پر 1 سے 6 تک نمبر ہیں || مکعب نما چې پر سطحو یې له 1 تر 6 پورې شمېرې دي
+svg Net of the cuboid: six rectangles (1 on top; 6, 5, 4 across; 3 and 2 below) || مکعب نما کا جال: چھ مستطیل (اوپر 1؛ 6، 5، 4 افقی؛ نیچے 3 اور 2) || د مکعب نما جال: شپږ مستطیلونه (پورته 1؛ 6، 5، 4 افقي؛ لاندې 3 او 2)
+<svg viewBox="0 0 270 330" width="240" role="img" aria-label="Net of a cuboid made of six rectangles" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a">
+<g fill="#fcd34d" fill-opacity="0.7" stroke="#0f172a" stroke-width="1.5">
+<rect x="70" y="10" width="130" height="60"/><rect x="10" y="70" width="60" height="100"/><rect x="70" y="70" width="130" height="100"/><rect x="200" y="70" width="60" height="100"/><rect x="70" y="170" width="130" height="60"/><rect x="70" y="230" width="130" height="90"/>
+</g>
+<text x="135" y="45" text-anchor="middle" font-size="15">1</text><text x="40" y="125" text-anchor="middle" font-size="15">6</text><text x="135" y="125" text-anchor="middle" font-size="15">5</text><text x="230" y="125" text-anchor="middle" font-size="15">4</text><text x="135" y="205" text-anchor="middle" font-size="15">3</text><text x="135" y="280" text-anchor="middle" font-size="15">2</text>
+</svg>
+endsvg
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Divide the students into groups and provide them papers in different colours. Ask them to cut these papers to make three dimensional solids and observe their nets. || طلبہ کو گروپوں میں تقسیم کریں اور انہیں مختلف رنگوں کے کاغذ دیں۔ ان سے کہیں کہ یہ کاغذ کاٹ کر سہ بعدی ٹھوس بنائیں اور ان کے جال کا مشاہدہ کریں۔ || زده کوونکي په ډلو ووېشئ او بېلابېل رنګه کاغذونه ورکړئ. ورته ووایاست چې دا کاغذونه پرې کړي، درې بعدي جامدونه جوړ کړي او جالونه یې وګوري.
+endbox

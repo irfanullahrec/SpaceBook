@@ -1,0 +1,31 @@
+@printed 99
+p Let's denote this set $G \cap H$ as X. So, X = {2, 3} || آئیے اس سیٹ $G \cap H$ کو X کہیں۔ لہٰذا X = {2, 3} || راځئ دا سېټ $G \cap H$ په X وښیو. نو X = {2, 3}
+p Now find $X \cap I$. || اب $X \cap I$ معلوم کریں۔ || اوس $X \cap I$ معلوم کړئ.
+eq \begin{aligned} X &= \{2, 3\} \text{ and } I = \{3, 5, 6, 7\} \\ X \cap I &= \{3\} \\ \text{So, } G \cap H \cap I &= X \cap I = \{3\} \end{aligned}
+endexample
+### 3. Difference of two sets || 3. دو سیٹوں کا فرق || 3. د دوو سېټونو توپیر
+p Let's consider two sets A and B. The difference A − B is a set of all those elements of set A which are not the elements of set B. It is denoted by A − B or A\B. || آئیے دو سیٹ A اور B لیں۔ فرق A − B سیٹ A کے ان تمام ارکان کا سیٹ ہے جو سیٹ B کے ارکان نہیں ہیں۔ اسے A − B یا A\B سے ظاہر کیا جاتا ہے۔ || راځئ دوه سېټونه A او B په پام کې ونیسو. توپیر A − B د سېټ A د هغو ټولو غړو سېټ دی چې د سېټ B غړي نه دي. په A − B یا A\B ښودل کېږي.
+example 1 | If A = {1, 5, 7} and B = {3, 5, 8}, then find A − B and B − A. || اگر A = {1, 5, 7} اور B = {3, 5, 8} ہوں تو A − B اور B − A معلوم کریں۔ || که A = {1, 5, 7} او B = {3, 5, 8} وي، نو A − B او B − A معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p A − B means elements of A which are not the elements of B. So, A − B = {1, 5, 7} − {3, 5, 8} = {1, 7}. || A − B کا مطلب ہے A کے وہ ارکان جو B کے ارکان نہیں۔ لہٰذا A − B = {1, 5, 7} − {3, 5, 8} = {1, 7}۔ || A − B یعنې د A هغه غړي چې د B غړي نه دي. نو A − B = {1, 5, 7} − {3, 5, 8} = {1, 7}.
+p Similarly, B − A means elements of B which are not the elements of A. So, B − A = {3, 5, 8} − {1, 5, 7} = {3, 8} || اسی طرح B − A کا مطلب ہے B کے وہ ارکان جو A کے ارکان نہیں۔ لہٰذا B − A = {3, 5, 8} − {1, 5, 7} = {3, 8} || په همدې ډول B − A یعنې د B هغه غړي چې د A غړي نه دي. نو B − A = {3, 5, 8} − {1, 5, 7} = {3, 8}
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the intersection of the following sets. || درج ذیل سیٹوں کا انٹرسیکشن معلوم کریں۔ || د لاندې سېټونو تقاطع معلوم کړئ.
+qp a | A = {3, 4, 5, 6} and B = ∅
+qp b | E = {2, 4}, F = {−2, −3, 0, 1, 2} and G = {0, 2}
+endbox
+## 6.3.2 Properties of Set Operations || 6.3.2 سیٹ کی عملیات کی خصوصیات || 6.3.2 د سېټ د عملیو ځانګړتیاوې
+p We have learnt about different operations on sets including union, intersection, difference and complement of sets. Now we will learn about the properties of these operations on sets. || ہم نے سیٹوں پر مختلف عملیات بشمول یونین، انٹرسیکشن، فرق اور تکملے کے بارے میں سیکھا۔ اب ہم سیٹوں پر ان عملیات کی خصوصیات کے بارے میں سیکھیں گے۔ || موږ پر سېټونو د بېلابېلو عملیو لکه یووالي، تقاطع، توپیر او متمم په اړه زده کړل. اوس به پر سېټونو د دې عملیو د ځانګړتیاوو په اړه زده کړو.
+example 1 | If U = {1, 2, 4, 6, 7, 8, 10} and A = {1, 2, 4, 6, 7} then prove that: a) $A \cap A^c = \varnothing$ b) $A \cup A^c = U$ || اگر U = {1, 2, 4, 6, 7, 8, 10} اور A = {1, 2, 4, 6, 7} ہوں تو ثابت کریں کہ: a) $A \cap A^c = \varnothing$ b) $A \cup A^c = U$ || که U = {1, 2, 4, 6, 7, 8, 10} او A = {1, 2, 4, 6, 7} وي، ثابت کړئ چې: a) $A \cap A^c = \varnothing$ b) $A \cup A^c = U$
+p **a)** $A \cap A^c = \varnothing$ || **a)** $A \cap A^c = \varnothing$ || **a)** $A \cap A^c = \varnothing$
+eq \begin{aligned} \text{L.H.S} &= A \cap A^c \\ &= \{1, 2, 4, 6, 7\} \cap \{8, 10\} \\ &= \{\} \text{ or } \varnothing \\ &= \text{R.H.S} \end{aligned}
+p Hence proven that $A \cap A^c = \varnothing$ || لہٰذا ثابت ہوا کہ $A \cap A^c = \varnothing$ || نو ثابته شوه چې $A \cap A^c = \varnothing$
+p **b)** $A \cup A^c = U$ || **b)** $A \cup A^c = U$ || **b)** $A \cup A^c = U$
+eq \begin{aligned} A^c &= U - A \\ &= \{1, 2, 4, 6, 7, 8, 10\} - \{1, 2, 4, 6, 7\} \\ &= \{8, 10\} \end{aligned}
+eq \begin{aligned} \text{Then find } A \cup A^c &= \{1, 2, 4, 6, 7\} \cup \{8, 10\} \\ &= \{1, 2, 4, 6, 7, 8, 10\} \\ &= U \end{aligned}
+p Hence proven that $A \cup A^c = U$ || لہٰذا ثابت ہوا کہ $A \cup A^c = U$ || نو ثابته شوه چې $A \cup A^c = U$
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write two or three sets on the board. Call the students randomly and ask them to find the intersection and difference of the two sets. Ask the remaining students to check if he/she has done it correctly. || بورڈ پر دو یا تین سیٹ لکھیں۔ طلبہ کو بے ترتیب بلائیں اور ان سے دونوں سیٹوں کا انٹرسیکشن اور فرق معلوم کرنے کو کہیں۔ باقی طلبہ سے پوچھیں کہ کیا اس نے درست کیا ہے۔ || پر تخته دوه یا درې سېټونه ولیکئ. زده کوونکي په تصادفي ډول راوبلئ او ترې وغواړئ چې د دوو سېټونو تقاطع او توپیر معلوم کړي. له پاتې زده کوونکو وپوښتئ چې ایا سم یې کړی.
+endbox

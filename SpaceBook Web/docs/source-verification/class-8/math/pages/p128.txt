@@ -1,0 +1,35 @@
+@printed 122
+@issue Example 2 states the dividend as "14x² + 26x³ − 12x² − 6x" in the question but works with 14x⁴; the working is kept as printed. The short sub-heading for division by a monomial (top of page) is not printed; the page starts "It is the simplest form...".
+@issue The note "the given polynomial" completing the page-121 note is not repeated here.
+p It is the simplest form of the division of the polynomials. Any polynomial can be divided by a monomial. Actual working of this type of division is being explained with the help of the following examples. || یہ کثیر رقمیوں کی تقسیم کی سب سے آسان شکل ہے۔ کسی بھی کثیر رقمی کو یک رقمی سے تقسیم کیا جا سکتا ہے۔ اس قسم کی تقسیم کا اصل طریقہ درج ذیل مثالوں کی مدد سے سمجھایا جا رہا ہے۔ || دا د څو حدي افادو د وېش تر ټولو ساده بڼه ده. هره څو حدي افاده پر یو حدي افادې وېشل کېدای شي. د دې ډول وېش اصلي کار د لاندې بېلګو په مرسته تشریح کېږي.
+example 1
+p Divide $5x^2 - 15x$ by $5x$. || $5x^2 - 15x$ کو $5x$ سے تقسیم کریں۔ || $5x^2 - 15x$ پر $5x$ ووېشئ.
+## Solution: || حل: || حل:
+pdiv d=5x | q=x − 3 | n=5x² − 15x | -∓5x²______ | −15x | -∓15x | 0
+m Thus, $(5x^2 - 15x) \div 5x = x - 3$
+m Here, the dividend $= (5x^2 - 15x)$
+m The divisor $= 5x$
+m The quotient $= x - 3$
+m And the remainder $= 0$
+box info | Rule || اصول || قاعده
+p Dividend = divisor × quotient || مقسوم = مقسوم علیہ × خارج قسمت || مقسوم = وېشونکی × خارج قسمت
+endbox
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If the division is exact, the divisor and the quotient are the polynomials whose product is equal to the dividend. Hence, the divisor and the quotient are the factors of the dividend in such a case. || اگر تقسیم مکمل ہو تو مقسوم علیہ اور خارج قسمت وہ کثیر رقمیاں ہیں جن کا حاصلِ ضرب مقسوم کے برابر ہے۔ لہٰذا ایسی صورت میں مقسوم علیہ اور خارج قسمت مقسوم کے اجزائے ضربی ہیں۔ || که وېش بشپړ وي، وېشونکی او خارج قسمت هغه څو حدي افادې دي چې حاصل ضرب یې له مقسوم سره برابر دی. نو په داسې حالت کې وېشونکی او خارج قسمت د مقسوم عاملونه دي.
+endbox
+example 2
+p Divide $14x^2 + 26x^3 - 12x^2 - 6x$ by $2x$. || $14x^2 + 26x^3 - 12x^2 - 6x$ کو $2x$ سے تقسیم کریں۔ || $14x^2 + 26x^3 - 12x^2 - 6x$ پر $2x$ ووېشئ.
+## Solution: || حل: || حل:
+pdiv d=2x | q=7x³ + 13x² − 6x − 3 | n=14x⁴ + 26x³ − 12x² − 6x | -±14x⁴___________________ | 26x³ − 12x² − 6x | -±26x³____________ | − 12x² − 6x | -∓12x²_____ | − 6x | -∓6x | 0
+m Thus, $(14x^4 + 26x^3 - 12x^2 - 6x) \div 2x = (7x^3 + 13x^2 - 6x - 3)$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- In each step, the lower polynomial is subtracted from the upper polynomial. || ہر مرحلے میں نچلی کثیر رقمی کو اوپر والی کثیر رقمی سے تفریق کیا جاتا ہے۔ || په هر پړاو کې لاندنۍ څو حدي افاده له پورتنۍ څخه تفریق کېږي.
+- Don't forget to change the sign(s) of the polynomial being subtracted. || تفریق کی جانے والی کثیر رقمی کی علامت (علامات) بدلنا نہ بھولیں۔ || د تفریق کېدونکې څو حدي افادې نښه (نښې) بدلول مه هېروئ.
+- In case of exact division the remainder is zero. || مکمل تقسیم کی صورت میں باقی صفر ہوتا ہے۔ || د بشپړ وېش په صورت کې پاتې صفر وي.
+- Zero (0) is also considered a polynomial in Algebra. || الجبرا میں صفر (0) کو بھی کثیر رقمی سمجھا جاتا ہے۔ || په الجبر کې صفر (0) هم څو حدي افاده ګڼل کېږي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the division of polynomial by solving different examples on the board. Put card of different polynomials and ask each student to come forward, select two cards and then find the division of polynomials. || بورڈ پر مختلف مثالیں حل کر کے کثیر رقمیوں کی تقسیم سمجھائیں۔ مختلف کثیر رقمیوں کے کارڈ رکھیں اور ہر طالب علم سے کہیں کہ آگے آئے، دو کارڈ منتخب کرے اور پھر کثیر رقمیوں کی تقسیم معلوم کرے۔ || پر تخته د بېلابېلو بېلګو په حلولو د څو حدي افادو وېش تشریح کړئ. د بېلابېلو څو حدي افادو کارتونه کېږدئ او له هر زده کوونکي وغواړئ چې مخې ته راشي، دوه کارتونه وټاکي او بیا د څو حدي افادو وېش ومومي.
+endbox

@@ -1,0 +1,22 @@
+{
+  "scope": "Class 12 Mathematics, printed pages 55 and 59 learning clarifications and Maple examples",
+  "verification": "Official documentation checked for command syntax; mathematical results calculated independently. Maple was not executed.",
+  "references": [
+    {
+      "title": "Maplesoft: limit",
+      "url": "https://www.maplesoft.com/support/help/view.aspx?path=limit",
+      "supports": "The calling sequence limit(f, x=a), with 1-D or 2-D input."
+    },
+    {
+      "title": "Maplesoft: help",
+      "url": "https://www.maplesoft.com/support/help/view.aspx?path=help",
+      "supports": "The ?topic help syntax, applied as ?limit in the learning clarification."
+    },
+    {
+      "title": "Maplesoft: iscont",
+      "url": "https://www.maplesoft.com/support/help/errors/view.aspx?path=iscont",
+      "supports": "iscont(expr,x=a..b) defaults to open; optional closed checks endpoints; returns true, false or FAIL."
+    }
+  ],
+  "textbookFidelity": "Printed limit. instruction and conflicting -10/-54 results remain preserved in the lesson. Official references support separate learning clarifications, not silent replacement of source text."
+}

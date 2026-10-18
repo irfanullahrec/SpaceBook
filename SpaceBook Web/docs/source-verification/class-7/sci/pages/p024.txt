@@ -1,0 +1,44 @@
+@printed 40
+p 2. The graph shows immune response after first and second dose of vaccination. Primary response is produced after first dose and secondary response is produced after second dose of vaccination. Analyse the graph and response. || 2. گراف ویکسین کی پہلی اور دوسری خوراک کے بعد مدافعتی ردِعمل دکھاتا ہے۔ پہلی خوراک کے بعد ابتدائی ردِعمل اور دوسری خوراک کے بعد ثانوی ردِعمل پیدا ہوتا ہے۔ گراف اور ردِعمل کا تجزیہ کریں۔ || 2. ګراف د واکسین له لومړي او دوهم دوز وروسته معافیتي غبرګون ښيي. له لومړي دوز وروسته لومړنی غبرګون او له دوهم دوز وروسته دوهمی غبرګون جوړېږي. ګراف او غبرګون وڅېړئ.
+svg Graph of plasma antibody concentration against time (days): first exposure to vaccine at day 0 gives a small primary response; second exposure at about day 60 gives a large, fast secondary response peaking near day 90 and slowly falling by day 180. || پلازما میں اینٹی باڈی کی مقدار اور وقت (دن) کا گراف: دن 0 پر ویکسین سے پہلا واسطہ چھوٹا ابتدائی ردِعمل دیتا ہے؛ تقریباً 60ویں دن دوسرا واسطہ بڑا اور تیز ثانوی ردِعمل دیتا ہے جو 90ویں دن کے قریب عروج پر پہنچ کر 180ویں دن تک آہستہ کم ہوتا ہے۔ || د پلازما د انټي باډي اندازې او وخت (ورځې) ګراف: په صفر ورځ له واکسین سره لومړی مخ کېدل کوچنی لومړنی غبرګون ورکوي؛ شاوخوا په 60مه ورځ دوهم مخ کېدل لوی او چټک دوهمی غبرګون ورکوي چې 90مې ورځې ته نږدې لوړ کېږي او تر 180مې ورځې ورو کمېږي.
+<svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Primary and secondary immune response graph">
+<rect x="0" y="0" width="420" height="240" fill="#fefce8"/>
+<path d="M60 20 V200 H400" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+<path d="M60 195 C 90 170, 120 170, 150 190 C 160 196, 170 196, 175 190 C 185 140, 195 90, 220 85 C 260 90, 330 130, 395 160" stroke="#0369a1" stroke-width="2.5" fill="none"/>
+<g text-anchor="middle" fill="#1e293b"><text x="60" y="214">0</text><text x="117" y="214">30</text><text x="175" y="214">60</text><text x="232" y="214">90</text><text x="290" y="214">120</text><text x="347" y="214">150</text><text x="400" y="214">180</text><text x="230" y="232">Time (days)</text></g>
+<text x="20" y="160" transform="rotate(-90 20 160)">Plasma antibody concentration</text>
+<text x="40" y="24">High</text><text x="40" y="200">Low</text>
+<path d="M65 120 V185" stroke="#0f172a" marker-end="url(#a1)"/><path d="M175 60 V180" stroke="#0f172a" marker-end="url(#a1)"/>
+<defs><marker id="a1" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M0 0 L4 8 L8 0" fill="#0f172a"/></marker></defs>
+<text x="68" y="110">First exposure to vaccine</text><text x="180" y="52">Second exposure to vaccine</text>
+<text x="80" y="36" fill="#be185d">Primary response</text><text x="250" y="36" fill="#be185d">Secondary response</text>
+</svg>
+endsvg
+qp a | Which response is capable of controlling disease effectively? || کون سا ردِعمل بیماری کو مؤثر طریقے سے قابو کر سکتا ہے؟ || کوم غبرګون ناروغي په اغېزمنه توګه کنټرولولی شي؟
+sol The secondary response — it makes many more antibodies, quickly.
+qp b | Which response is slow to develop antibodies? || کون سا ردِعمل اینٹی باڈیز بنانے میں سست ہے؟ || کوم غبرګون د انټي باډي په جوړولو کې ورو دی؟
+sol The primary response.
+qp c | What is the importance of booster dose of vaccines? || ویکسین کی بوسٹر خوراک کی کیا اہمیت ہے؟ || د واکسین د بوسټر دوز ارزښت څه دی؟
+sol It triggers the strong secondary response, raising antibody levels high and making memory cells, so protection is stronger and lasts longer.
+qp d | What will happen if the pathogen of this disease enters in the body at day 90? || اگر اس بیماری کا جرثومہ 90ویں دن جسم میں داخل ہو تو کیا ہوگا؟ || که د دې ناروغۍ ناروغي زېږوونکی په 90مه ورځ بدن ته ننوځي څه به وشي؟
+sol Antibody levels are at their highest, so the pathogen will be destroyed quickly and the person will not get the disease.
+qp e | What will happen if the pathogen of this disease enters in the body at day 0? || اگر اس بیماری کا جرثومہ دن 0 پر جسم میں داخل ہو تو کیا ہوگا؟ || که د دې ناروغۍ ناروغي زېږوونکی په صفر ورځ بدن ته ننوځي څه به وشي؟
+sol There are almost no antibodies yet, so the pathogen can grow and the person may become ill before the body responds.
+q E | Project work || منصوبہ جاتی کام || پروژه ییز کار
+p Run a campaign to give awareness about different diseases in your surroundings. || اپنے اردگرد مختلف بیماریوں کے بارے میں آگاہی کی مہم چلائیں۔ || په خپل شاوخوا کې د بېلابېلو ناروغیو په اړه د پوهاوي کمپاین وچلوئ.
+endexercise
+@printed 41
+@unit 4 | Physical and Chemical Changes || طبعی اور کیمیائی تبدیلیاں || فزیکي او کیمیاوي بدلونونه
+@sec opening | Unit 4 opening || یونٹ 4 کا آغاز || د یونټ 4 پیل
+@deco Unit opener (printed page 41): an ice cube and a fire.
+# Unit 4: Physical and Chemical Changes || یونٹ 4: طبعی اور کیمیائی تبدیلیاں || یونټ 4: فزیکي او کیمیاوي بدلونونه
+## Learning outcomes: || سیکھنے کے نتائج: || د زده کړې پایلې:
+p At the end of this unit, students will be able to: || اس یونٹ کے آخر میں طلبہ اس قابل ہوں گے کہ: || د دې یونټ په پای کې به زده کوونکي وکولای شي:
+slo Differentiate between physical and chemical changes while considering daily life examples. || روزمرہ زندگی کی مثالوں کی مدد سے طبعی اور کیمیائی تبدیلیوں میں فرق کر سکیں۔ || د ورځني ژوند د بېلګو په پام کې نیولو فزیکي او کیمیاوي بدلونونو ترمنځ توپیر وکړي.
+slo Recognize that oxygen is needed in combustion, rusting and tarnishing. || پہچان سکیں کہ احتراق، زنگ لگنے اور ماند پڑنے کے لیے آکسیجن ضروری ہے۔ || وپېژني چې په سوځېدو، زنګ وهلو او تورېدو کې اکسیجن اړین دی.
+slo Explore methods of preventing rusting. || زنگ سے بچاؤ کے طریقے دریافت کر سکیں۔ || د زنګ د مخنیوي لارې وپلټي.
+slo Relate uses of materials to their chemical properties (tendency to rust, flammability). || مواد کے استعمال کو ان کی کیمیائی خصوصیات (زنگ لگنے کا رجحان، آتش گیری) سے جوڑ سکیں۔ || د توکو کارونه د هغو له کیمیاوي ځانګړنو (د زنګ وهلو تمایل، د اور اخیستلو وړتیا) سره وتړي.
+slo Evaluate the impact of combustion reaction on environment. || احتراقی تعامل کے ماحول پر اثر کا جائزہ لے سکیں۔ || پر چاپېریال د سوځېدو تعامل اغېز وارزوي.
+slo Relate uses of materials to their physical properties (melting pint, boiling point solubility, thermal conductivity). || مواد کے استعمال کو ان کی طبعی خصوصیات (نقطۂ پگھلاؤ، نقطۂ جوش، حل پذیری، حرارتی موصلیت) سے جوڑ سکیں۔ || د توکو کارونه د هغو له فزیکي ځانګړنو (د ویلې کېدو ټکی، د جوش ټکی، حلېدنه، د تودوخې لېږد) سره وتړي.
+slo Distinguish between physical and chemical properties of matter. || مادے کی طبعی اور کیمیائی خصوصیات میں امتیاز کر سکیں۔ || د مادې فزیکي او کیمیاوي ځانګړنې سره جلا کړي.
+@issue This scan is a two-page spread (printed pages 40 and 41). The graph question is printed as "1." under section D but follows D Q1 on page 39; numbered 2 here. "melting pint" is printed for "melting point".

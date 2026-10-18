@@ -1,0 +1,29 @@
+@printed 166
+p So, the area of this rectangle is equal to the area of the circle. || لہٰذا اس مستطیل کا رقبہ دائرے کے رقبے کے برابر ہے۔ || نو د دې مستطیل مساحت د دایرې له مساحت سره برابر دی.
+eq \begin{aligned} \text{The area of a circle} &= \text{The area of a rectangle} \\ &= \text{length} \times \text{width} \\ &= (\pi \times \text{radius}) \times (\text{radius}) \\ &= (\pi r) \times (r) = \pi r^2 \end{aligned}
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Area is measured in centimetre square (cm²) or metre square m². || رقبہ مربع سینٹی میٹر (cm²) یا مربع میٹر (m²) میں ناپا جاتا ہے۔ || مساحت په مربع سانتي متر (cm²) یا مربع متر (m²) اندازه کېږي.
+endbox
+example 1 | The radius of the circle is 3 cm. What is the area of the circle? || دائرے کا رداس 3 cm ہے۔ دائرے کا رقبہ کیا ہے؟ || د دایرې شعاع 3 cm ده. د دایرې مساحت څومره دی؟
+@deco A circle with its radius r = 3 cm marked.
+p **Solution:** Radius = r = 3 cm, π = 3.14, Area of the circle = ? We know that: || **حل:** رداس = r = 3 cm، π = 3.14، دائرے کا رقبہ = ? ہم جانتے ہیں کہ: || **حل:** شعاع = r = 3 cm، π = 3.14، د دایرې مساحت = ? پوهېږو چې:
+eq \begin{aligned} \text{Area of a circle} &= \pi r^2 \\ &= 3.14 \times (3\,\text{cm}) \times (3\,\text{cm}) \\ &= 3.14 \times 9\,\text{cm}^2 \\ &= 28.26\,\text{cm}^2 \end{aligned}
+endexample
+example 2 | The area of a circle is 165.3 cm². Find the circumference of the circle. || ایک دائرے کا رقبہ 165.3 cm² ہے۔ دائرے کا محیط معلوم کریں۔ || د یوې دایرې مساحت 165.3 cm² دی. د دایرې محیط معلوم کړئ.
+p **Solution:** Area of the circle = 165.3 cm², π = 3.14. We know that: || **حل:** دائرے کا رقبہ = 165.3 cm²، π = 3.14۔ ہم جانتے ہیں کہ: || **حل:** د دایرې مساحت = 165.3 cm²، π = 3.14. پوهېږو چې:
+eq \begin{aligned} \text{Area of a circle} &= \pi r^2 \\ 165.3 &= 3.14 \times r^2 \\ r^2 &= \frac{165.3}{3.14} \quad \text{or} \quad r^2 = 52.64 \end{aligned}
+p Taking the square root on both sides || دونوں اطراف کا جذرِ مربع لیں || د دواړو خواوو مربع جذر واخلئ
+eq \begin{aligned} \sqrt{r^2} &= \sqrt{52.64} \\ r &= 7.255 \\ \text{Circumference} &= 2\pi r = 2 \times 3.14 \times 7.255 = 45.5614\,\text{cm} \end{aligned}
+endexample
+exercise 9.2
+q 1 | Find the circumference of each of the following circles if π = 3.14. || اگر π = 3.14 ہو تو درج ذیل ہر دائرے کا محیط معلوم کریں۔ || که π = 3.14 وي، د لاندې هرې دایرې محیط معلوم کړئ.
+qp a | Circle with diameter 11.5 cm || 11.5 cm قطر والا دائرہ || د 11.5 cm قطر دایره
+qp b | Circle with diameter 2 cm || 2 cm قطر والا دائرہ || د 2 cm قطر دایره
+qp c | Circle with diameter 4.2 cm || 4.2 cm قطر والا دائرہ || د 4.2 cm قطر دایره
+qp d | Circle with radius 5 cm || 5 cm رداس والا دائرہ || د 5 cm شعاع دایره
+qp e | Circle with radius 3.2 cm || 3.2 cm رداس والا دائرہ || د 3.2 cm شعاع دایره
+qp f | Circle with radius 6.2 mm || 6.2 mm رداس والا دائرہ || د 6.2 mm شعاع دایره
+@issue Q1 is printed as six circle drawings with a labelled line; the line is a diameter in (a)–(c) and a radius in (d)–(f), as drawn. They are given here as text.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask the students to trace circles of different sizes on cardboard. Then find the area of those circles by cutting and arranging them in cuboid shape. || طلبہ سے کہیں کہ گتے پر مختلف سائز کے دائرے بنائیں۔ پھر انہیں کاٹ کر اور مکعب نما (مستطیل) شکل میں ترتیب دے کر ان دائروں کا رقبہ معلوم کریں۔ || له زده کوونکو وغواړئ چې پر مقوا د بېلابېلو اندازو دایرې رسم کړي. بیا د هغوی په پرې کولو او د مکعب نما (مستطیل) په بڼه ترتیبولو د هغو دایرو مساحت معلوم کړي.
+endbox

@@ -1,0 +1,18 @@
+@printed 58
+@sec how-much-less | How much Less || کتنا کم || څومره لږ
+# How much Less || کتنا کم || څومره لږ
+p I have two different number cards. Find! Which number is how much smaller than the other? || میرے پاس دو مختلف نمبر کارڈ ہیں۔ معلوم کریں! کون سا عدد دوسرے سے کتنا چھوٹا ہے؟ || زما سره د عددونو دوه بېل کارتونه دي. پیدا کړئ! کوم عدد له بل نه څومره کوچنی دی؟
+cards 14,9 || Number cards 14 and 9 || نمبر کارڈ ۱۴ اور ۹ || د عددونو کارتونه ۱۴ او ۹
+p Let's count backward from 14 to 9. || آئیں ۱۴ سے ۹ تک پیچھے کی طرف گنیں۔ || راځئ له ۱۴ نه تر ۹ پورې شا ته وشمېرو.
+hops 14,13,12,11,10,9 | 1 || Five steps of 1 back from 14 to 9 || ۱۴ سے ۹ تک ۱ کے پانچ قدم پیچھے || له ۱۴ نه تر ۹ پورې د ۱ پنځه ګامه شاته
+p 9 is 5 steps backward from 14. || ۹، ۱۴ سے ۵ قدم پیچھے ہے۔ || ۹ له ۱۴ نه ۵ ګامه شاته دی.
+p So, 9 is 5 less than 14. || لہٰذا ۹، ۱۴ سے ۵ کم ہے۔ || نو ۹ له ۱۴ نه ۵ لږ دی.
+exercise How much less (Page 58)
+p Compare the following numbers and write how much less a number is from the other. || درج ذیل اعداد کا موازنہ کریں اور لکھیں کہ ایک عدد دوسرے سے کتنا کم ہے۔ || لاندې عددونه پرتله کړئ او ولیکئ چې یو عدد له بل نه څومره لږ دی.
+q 1 | 13 to 8: So, 8 is ____ less than ____. || ۱۳ سے ۸: لہٰذا ۸، ____ سے ____ کم ہے۔ || له ۱۳ نه تر ۸: نو ۸ له ____ نه ____ لږ دی.
+hops 13,_,_,_,_,8 | 1 || Steps back from 13 to 8 || ۱۳ سے ۸ تک پیچھے کے قدم || له ۱۳ نه تر ۸ شاته ګامونه
+sol Boxes: 12, 11, 10, 9. So, 8 is 5 less than 13. ## There are 5 steps back from 13 to 8. || ۱۳ سے ۸ تک ۵ قدم پیچھے ہیں۔ || له ۱۳ نه تر ۸ پورې ۵ ګامه شاته دي.
+q 2 | 19 to 13: So, 13 is ____ less than ____. || ۱۹ سے ۱۳: لہٰذا ۱۳، ____ سے ____ کم ہے۔ || له ۱۹ نه تر ۱۳: نو ۱۳ له ____ نه ____ لږ دی.
+hops 19,_,_,_,_,_,13 | _ || Steps back from 19 to 13 (write 1 in each circle) || ۱۹ سے ۱۳ تک پیچھے کے قدم (ہر دائرے میں ۱ لکھیں) || له ۱۹ نه تر ۱۳ شاته ګامونه (په هره کړۍ کې ۱ ولیکئ)
+sol Boxes: 18, 17, 16, 15, 14; each circle 1. So, 13 is 6 less than 19. ## There are 6 steps back from 19 to 13. || ۱۹ سے ۱۳ تک ۶ قدم پیچھے ہیں۔ || له ۱۹ نه تر ۱۳ پورې ۶ ګامه شاته دي.
+endexercise

@@ -1,0 +1,23 @@
+@printed 12
+## Prime Factorization || مفرد اجزائے ضربی کا طریقہ || لومړني ضربي تجزیه
+p To find LCM by prime factorization we follow these steps: || مفرد اجزائے ضربی کے ذریعے ذو اضعاف اقل معلوم کرنے کے لیے ہم یہ مراحل اختیار کرتے ہیں: || د لومړني ضربي تجزیې په مرسته د کوچني مشترک ضرب د معلومولو لپاره دا پړاوونه تعقیبوو:
+p **Step I:** First find all prime factors of the given numbers. || **مرحلہ I:** پہلے دیے گئے اعداد کے تمام مفرد اجزائے ضربی معلوم کریں۔ || **لومړی پړاو:** لومړی د ورکړل شوو عددونو ټول لومړني ضربي اجزا معلوم کړئ.
+p **Step II:** find common prime factors of the given numbers. || **مرحلہ II:** دیے گئے اعداد کے مشترک مفرد اجزائے ضربی معلوم کریں۔ || **دوهم پړاو:** د ورکړل شوو عددونو مشترک لومړني ضربي اجزا معلوم کړئ.
+p **Step III:** Then find the non-common prime factors. || **مرحلہ III:** پھر غیر مشترک مفرد اجزائے ضربی معلوم کریں۔ || **درېیم پړاو:** بیا غیر مشترک لومړني ضربي اجزا معلوم کړئ.
+p **Step IV:** Find the product of common and non-common prime factors. || **مرحلہ IV:** مشترک اور غیر مشترک مفرد اجزائے ضربی کا حاصلِ ضرب معلوم کریں۔ || **څلورم پړاو:** د مشترکو او غیر مشترکو لومړنیو ضربي اجزاوو حاصل ضرب معلوم کړئ.
+p Let us find the LCM of 4 and 12 by prime factorization method. For this here we will use factor trees to find the factors of 4 and 12. || آئیے مفرد اجزائے ضربی کے طریقے سے 4 اور 12 کا ذو اضعاف اقل معلوم کریں۔ اس کے لیے یہاں ہم 4 اور 12 کے اجزائے ضربی معلوم کرنے کے لیے فیکٹر ٹری استعمال کریں گے۔ || راځئ د لومړني ضربي تجزیې په طریقه د 4 او 12 کوچنی مشترک ضرب معلوم کړو. د دې لپاره دلته د 4 او 12 د ضربي اجزاوو د معلومولو لپاره ضربي ونې کاروو.
+ftree #4(2,2) || Factor tree of 4 || 4 کا فیکٹر ٹری || د 4 ضربي ونه
+ftree #12(2,6(2,3)) || Factor tree of 12 || 12 کا فیکٹر ٹری || د 12 ضربي ونه
+p Prime factorization of 4 = $2 \times 2$ || 4 کے مفرد اجزائے ضربی = $2 \times 2$ || د 4 لومړني ضربي تجزیه = $2 \times 2$
+p Prime factorization of 12 = $2 \times 2 \times 3$ || 12 کے مفرد اجزائے ضربی = $2 \times 2 \times 3$ || د 12 لومړني ضربي تجزیه = $2 \times 2 \times 3$
+p The common prime factors of 4 and 12 are 2 and 2. || 4 اور 12 کے مشترک مفرد اجزائے ضربی 2 اور 2 ہیں۔ || د 4 او 12 مشترک لومړني ضربي اجزا 2 او 2 دي.
+p The non-common prime factor of 4 and 12 is 3. || 4 اور 12 کا غیر مشترک مفرد جزوِ ضربی 3 ہے۔ || د 4 او 12 غیر مشترک لومړنی ضربي جز 3 دی.
+p Now use the formula. || اب فارمولا استعمال کریں۔ || اوس فورمول وکاروئ.
+eq \textbf{LCM} = \begin{array}{c}\textbf{Product of common prime}\\ \textbf{factors of 2 or more numbers}\end{array} \times \begin{array}{c}\textbf{Product of non-common}\\ \textbf{prime factors}\end{array} || ذو اضعاف اقل = دو یا زیادہ اعداد کے مشترک مفرد اجزائے ضربی کا حاصلِ ضرب × غیر مشترک مفرد اجزائے ضربی کا حاصلِ ضرب || کوچنی مشترک ضرب = د دوو یا ډېرو عددونو د مشترکو لومړنیو ضربي اجزاوو حاصل ضرب × د غیر مشترکو لومړنیو ضربي اجزاوو حاصل ضرب
+m $\text{LCM} = 2 \times 2 \times 3$
+m $\text{LCM} = 4 \times 3 = 12.$
+p So, the LCM of 4 and 12 is 12. || لہٰذا 4 اور 12 کا ذو اضعاف اقل 12 ہے۔ || نو د 4 او 12 کوچنی مشترک ضرب 12 دی.
+p So, Asim and Amir will next visit the library together after 12 days. || لہٰذا عاصم اور عامر اگلی بار 12 دن بعد ایک ساتھ لائبریری جائیں گے۔ || نو عاصم او عامر به بیا 12 ورځې وروسته یوځای کتابتون ته ورشي.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Put different numbers on the table. Make groups of the students and ask each group to pick 2 or 3 numbers and find the LCM. Then share their answer with the other groups to check if they have done it correctly. || میز پر مختلف اعداد رکھیں۔ طلبہ کے گروپ بنائیں اور ہر گروپ سے کہیں کہ 2 یا 3 اعداد اٹھائے اور ذو اضعاف اقل معلوم کرے۔ پھر اپنا جواب دوسرے گروپوں کے ساتھ شیئر کریں تاکہ جانچ سکیں کہ انہوں نے درست حل کیا ہے۔ || پر مېز مختلف عددونه کېږدئ. زده کوونکي په ډلو ووېشئ او له هرې ډلې وغواړئ چې 2 یا 3 عددونه واخلي او کوچنی مشترک ضرب معلوم کړي. بیا خپل ځواب له نورو ډلو سره شریک کړي ترڅو وګوري چې سم یې کړی دی که نه.
+endbox

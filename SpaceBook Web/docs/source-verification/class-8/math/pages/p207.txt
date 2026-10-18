@@ -1,0 +1,22 @@
+@printed 199
+@issue The Quick Check prints "Gradiente ="; the text prints "Let's lean about the graphs"; kept as printed. The combined graph shows y = 3x, y = 2x and y = x through the origin.
+table
+tr | $x$ | 0 | 1 | 2 | 3
+tr | y | 0 | $\frac{1}{2}$ | 1 | $\frac{3}{2}$
+endtable
+p We can see that the graph is a straight line passing through the origin (0, 0). Similarly, for equations of the type $y = mx$ we will get a graph of a straight line that passes through the origin. In such equations "m" shows the gradient. || ہم دیکھ سکتے ہیں کہ گراف ایک سیدھی لکیر ہے جو مبدا (0, 0) سے گزرتی ہے۔ اسی طرح $y = mx$ قسم کی مساواتوں کے لیے ہمیں ایسی سیدھی لکیر کا گراف ملے گا جو مبدا سے گزرتی ہے۔ ایسی مساواتوں میں "m" ڈھلوان ظاہر کرتا ہے۔ || موږ لیدلی شو چې ګراف یوه مستقیمه کرښه ده چې له مبدا (0, 0) څخه تېرېږي. همدارنګه د $y = mx$ ډول معادلو لپاره به د داسې مستقیمې کرښې ګراف لاسته راوړو چې له مبدا څخه تېرېږي. په داسې معادلو کې "m" میل ښيي.
+plane x=-4..5 | y=-3..5 | step=1 | lines=0.5,0,-3,4.6 | pts=0,0;1,0.5;2,1;3,1.5 | labels=y = ½x@3.4,2.3
+plane x=-4..5 | y=-3..5 | step=1 | lines=3,0,-1.1,1.5;2,0,-1.6,2.3;1,0,-3,4.3 | labels=y = 3x@0.9,4.7;y = 2x@2.5,4.7;y = x@4.1,3.6 || Graph of Equations of the form y = mx. || y = mx شکل کی مساواتوں کا گراف۔ || د y = mx بڼې معادلو ګراف.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Use the formula: || فارمولا استعمال کریں: || فورمول وکاروئ:
+m Gradiente $= \frac{\text{Vertical change}}{\text{Horizontal change}}$
+p And check the gradients of the lines: || اور لکیروں کے ڈھلوان جانچیں: || او د کرښو میلونه وګورئ:
+- $y = x$
+- $y = \frac{1}{2}x$
+- $y = 5x$
+endbox
+## 8.10.1 Graphs of equation of the form $y = mx + c$ || 8.10.1 $y = mx + c$ شکل کی مساوات کے گراف || 8.10.1 د $y = mx + c$ بڼې معادلې ګرافونه
+p We know that the standard form of linear equation in two variables is $ax + by = c$. We have also learnt how to draw a graph of this type of equation. Let's lean about the graphs of straight line when the equation is in the form of $y = mx + c$. || ہم جانتے ہیں کہ دو متغیرات میں خطی مساوات کی معیاری شکل $ax + by = c$ ہے۔ ہم اس قسم کی مساوات کا گراف بنانا بھی سیکھ چکے ہیں۔ آئیے سیدھی لکیر کے گراف کے بارے میں سیکھیں جب مساوات $y = mx + c$ کی شکل میں ہو۔ || موږ پوهېږو چې په دوو متغیرونو کې د خطي معادلې معیاري بڼه $ax + by = c$ ده. همدارنګه مو د دې ډول معادلې د ګراف رسمول زده کړي. راځئ د مستقیمې کرښې د ګرافونو په اړه زده کړو کله چې معادله د $y = mx + c$ په بڼه وي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the students that $y = mx$ is another form of the equation of straight line where the straight line always passes through the origin. Ask the students to draw various lines using the equation $y = mx$ and putting various values of m in it. Then ask them to interpret their results. || طلبہ کو سمجھائیں کہ $y = mx$ سیدھی لکیر کی مساوات کی ایک اور شکل ہے جہاں سیدھی لکیر ہمیشہ مبدا سے گزرتی ہے۔ طلبہ سے کہیں کہ مساوات $y = mx$ میں m کی مختلف قیمتیں رکھ کر مختلف لکیریں بنائیں۔ پھر ان سے اپنے نتائج کی تشریح کرنے کو کہیں۔ || زده کوونکو ته تشریح کړئ چې $y = mx$ د مستقیمې کرښې د معادلې بله بڼه ده چې مستقیمه کرښه تل له مبدا څخه تېرېږي. له زده کوونکو وغواړئ چې د $y = mx$ معادلې په کارولو او پکې د m د بېلابېلو ارزښتونو په ایښودلو بېلابېلې کرښې رسم کړي. بیا ورته ووایاست چې خپلې پایلې تشریح کړي.
+endbox

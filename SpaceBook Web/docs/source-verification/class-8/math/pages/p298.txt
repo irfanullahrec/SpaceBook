@@ -1,0 +1,39 @@
+@printed 296
+@deco Photograph of a red die (beside the Example 4 question; decorative).
+@issue The top of the scan is cropped: the first line reads "We can fin[d the probability of indep]endent events by using the formula:" (the cut words are restored from the visible "…endent events by using the formula:" and the context); the formula is P(A and B) = P(A∩B) = P(A) × P(B). In Example 4 the spinner has four sectors (red 1, yellow 2, red 3 (hidden) and yellow 4) so P(yellow) = 2/4 = 1/2 as printed; the figure is recreated as a four-sector spinner with the numbers 1, 2, 3 and 4 (the "3" is hidden by the scan edge). The Quick Check box (label blurred) reads "A die is rolled. What the probability of getting a 7? A die is rolled. What the probability of getting a number greater than 0?" (printed with "What the" for "What is the"). Example 6 continues on the next page (the sample space is H, T and the number of possible outcomes is 2).
+p We can find the probability of independent events by using the formula: || ہم آزاد واقعات کا احتمال درج ذیل فارمولے سے معلوم کر سکتے ہیں: || موږ د خپلواکو پېښو احتمال د لاندې فورمول په کارولو موندلی شو:
+eq P(A \text{ and } B) = P(A \cap B) = P(A) \times P(B)
+example 4
+p A person rolls a die and spins the spinner. What is the probability that he will get a 6 on the die and landing on a yellow? || ایک شخص پانسہ پھینکتا ہے اور اسپنر گھماتا ہے۔ اس کے پانسے پر 6 آنے اور اسپنر کے پیلے رنگ پر رکنے کا احتمال کیا ہے؟ || یو کس ټاس غورځوي او سپنر څرخوي. د دې احتمال څومره دی چې په ټاس 6 به ترلاسه کړي او سپنر به په ژېړ رنګ ودرېږي؟
+## Solution: || حل: || حل:
+p Let's say: Event A = getting a 6 on the die, B = landing on a yellow. We can see that getting any outcome of the spinner does not depend on the outcome of the die. So, these events are independent. || فرض کریں: واقعہ A = پانسے پر 6 آنا، B = پیلے رنگ پر رکنا۔ ہم دیکھ سکتے ہیں کہ اسپنر کا کوئی بھی نتیجہ پانسے کے نتیجے پر منحصر نہیں ہے۔ لہٰذا یہ واقعات آزاد ہیں۔ || فرض کړئ: پېښه A = په ټاس 6 ترلاسه کول، B = په ژېړ رنګ درېدل. موږ وینو چې د سپنر هره پایله د ټاس په پایله پورې اړه نه لري. نو دا پېښې خپلواکې دي.
+eq P(A) = \frac{1}{6}
+eq P(B) = \frac{2}{4} = \frac{1}{2}
+eq P(A \text{ and } B) = P(A \cap B) = P(A)\,P(B) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12}.
+p So, the probability of getting a 6 and landing on yellow is $\frac{1}{12}$. || لہٰذا 6 آنے اور پیلے رنگ پر رکنے کا احتمال $\frac{1}{12}$ ہے۔ || نو د 6 ترلاسه کولو او په ژېړ رنګ د درېدو احتمال $\frac{1}{12}$ دی.
+svg Four-sector spinner (red 1, yellow 2, red 3, yellow 4) || چار حصوں کا اسپنر (سرخ 1، پیلا 2، سرخ 3، پیلا 4) || څلور برخو سپنر (سور 1، ژېړ 2، سور 3، ژېړ 4)
+<svg viewBox="0 0 160 160" width="160" role="img" aria-label="A spinner divided into four quarter sectors: upper-left red labelled 1, upper-right yellow labelled 2, lower-right red labelled 3 (partly hidden in the scan), lower-left yellow labelled 4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">
+<g transform="translate(80,80)"><path d="M0 0 L0 -70 A70 70 0 0 0 -70 0 Z" fill="#c1195b"/><path d="M0 0 L0 -70 A70 70 0 0 1 70 0 Z" fill="#f4c20d"/><path d="M0 0 L70 0 A70 70 0 0 1 0 70 Z" fill="#c1195b"/><path d="M0 0 L0 70 A70 70 0 0 1 -70 0 Z" fill="#f4c20d"/></g>
+<text x="44" y="48" fill="#fff">1</text><text x="104" y="48">2</text><text x="104" y="116" fill="#fff">3</text><text x="44" y="116">4</text>
+</svg>
+endsvg
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p A die is rolled. What the probability of getting a 7? A die is rolled. What the probability of getting a number greater than 0? || ایک پانسہ پھینکا جاتا ہے۔ 7 آنے کا احتمال کیا ہے؟ ایک پانسہ پھینکا جاتا ہے۔ 0 سے بڑا عدد آنے کا احتمال کیا ہے؟ || یو ټاس غورځول کېږي. د 7 ترلاسه کولو احتمال څومره دی؟ یو ټاس غورځول کېږي. له 0 څخه د لوی عدد ترلاسه کولو احتمال څومره دی؟
+endbox
+endexample
+example 5
+p Two dice are rolled. What is the probability of getting 3s on both? || دو پانسے پھینکے جاتے ہیں۔ دونوں پر 3 آنے کا احتمال کیا ہے؟ || دوه ټاسونه غورځول کېږي. د دواړو په 3 راتلو احتمال څومره دی؟
+## Solution: || حل: || حل:
+p In this case, a combined event has occurred. Let's find the probability of getting 3s. || اس صورت میں ایک مرکب واقعہ رونما ہوا ہے۔ آئیں 3 آنے کا احتمال معلوم کریں۔ || په دې حالت کې یوه ګډه پېښه پېښه شوې. راځئ د 3 راتلو احتمال پیدا کړو.
+eq \text{Probability of an event} = \frac{\text{Number of Favorable outcomes}}{\text{Total number of outcomes}}
+eq \text{Probability of getting } 3\ (1^{\text{st}}\text{ die}) = \frac{1}{6}
+eq \text{Probability of getting } 3\ (2^{\text{nd}}\text{ die}) = \frac{1}{6}
+p As they are independent events, So: || چونکہ یہ آزاد واقعات ہیں، لہٰذا: || څرنګه چې دا خپلواکې پېښې دي، نو:
+eq P(A \cap B) = P(A) \times P(B)
+eq \text{Probability of getting two 3's} = \frac{1}{6} \times \frac{1}{6} = \frac{1}{36}
+endexample
+example 6
+p Ahad tossed a coin. Find the probability of getting a head? || احد نے سکہ اچھالا۔ شیر آنے کا احتمال معلوم کریں۔ || احد سکه وغورځوله. د سر د راتلو احتمال پیدا کړئ.
+## Solution: || حل: || حل:
+p Sample space or total number of possible outcomes = H, T || نمونہ فضا یا ممکنہ نتائج کی کل تعداد = H, T || نمونه فضا یا د ممکنو پایلو ټوله شمېر = H, T
+p Number of possible outcomes = 2 || ممکنہ نتائج کی تعداد = 2 || د ممکنو پایلو شمېر = 2

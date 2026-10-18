@@ -1,0 +1,37 @@
+@printed 62
+@deco Four blue birds fly away from an empty branch.
+q 7 | 5 − 4 || ۵ − ۴ || ۵ − ۴
+cnt [5] eraser.green:5 | "−" [4] eraser.green:4 | [] eraser.green:1 || 5 erasers take away 4 erasers || ۵ ربڑ میں سے ۴ نکالیں || له ۵ ربړونو نه ۴ لرې کړئ
+sol 1 ## 5 − 4 = 1 || ۵ − ۴ = ۱ || ۵ − ۴ = ۱
+q 8 | 7 − 7 || ۷ − ۷ || ۷ − ۷
+cnt [7] sharpener.brown:7 | "−" [7] sharpener.brown:7 | [] || 7 sharpeners take away 7 sharpeners || ۷ شارپنر میں سے ۷ نکالیں || له ۷ تراشونکو نه ۷ لرې کړئ
+sol 0 ## A number minus itself is 0: 7 − 7 = 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰: ۷ − ۷ = ۰۔ || عدد منفي همغه عدد ۰ کېږي: ۷ − ۷ = ۰.
+p Look at the picture and fill in the blanks. || تصویر دیکھیں اور خالی جگہیں پُر کریں۔ || انځور وګورئ او تش ځایونه ډک کړئ.
+q 9 | ____ birds were sitting on the tree. ____ birds flew away. ____ birds are left on the tree. ☐ − ☐ = ☐ || ____ پرندے درخت پر بیٹھے تھے۔ ____ پرندے اڑ گئے۔ ____ پرندے درخت پر باقی ہیں۔ ☐ − ☐ = ☐ || ____ مرغان په ونه ناست وو. ____ مرغان والوتل. ____ مرغان په ونه پاتې دي. ☐ − ☐ = ☐
+cnt bird.blue:4 "flying" | "branch:" [] || 4 birds flying away; no bird is left on the branch || ۴ پرندے اڑ رہے ہیں؛ شاخ پر کوئی پرندہ نہیں || ۴ مرغان الوزي؛ په ښاخ هېڅ مرغه نشته
+sol 4 birds were sitting on the tree. 4 birds flew away. 0 birds are left on the tree. 4 − 4 = 0 ## All the birds in the picture are flying away, so none is left on the branch. || تصویر کے سب پرندے اڑ رہے ہیں، اس لیے شاخ پر کوئی نہیں بچا۔ || په انځور کې ټول مرغان الوزي، نو په ښاخ هېڅ پاتې نه دی.
+p Write the number in the boxes. || خانوں میں عدد لکھیں۔ || په خونو کې عدد ولیکئ.
+q 10 | Take away 3. How many are left? || ۳ نکالیں۔ کتنے باقی ہیں؟ || ۳ لرې کړئ. څو پاتې دي؟
+cnt pear:3x3 [] || 3 pears, all crossed out || ۳ ناشپاتیاں، سب کاٹی گئیں || ۳ ناکان، ټول کټ شوي
+sol 0 ## 3 − 3 = 0 || ۳ − ۳ = ۰ || ۳ − ۳ = ۰
+q 11 | Take away 2. How many are left? || ۲ نکالیں۔ کتنے باقی ہیں؟ || ۲ لرې کړئ. څو پاتې دي؟
+cnt orange:6x2 [] || 6 oranges, 2 crossed out || ۶ مالٹے، ۲ کاٹے گئے || ۶ مالټې، ۲ کټ شوې
+sol 4 ## 6 − 2 = 4 || ۶ − ۲ = ۴ || ۶ − ۲ = ۴
+p Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+q 12 | 3 − 1 || ۳ − ۱ || ۳ − ۱
+sol 2 ## 3 − 1 = 2 || ۳ − ۱ = ۲ || ۳ − ۱ = ۲
+q 13 | 5 − 0 || ۵ − ۰ || ۵ − ۰
+sol 5 ## Taking away 0 leaves the number as it is. || ۰ نکالنے سے عدد وہی رہتا ہے۔ || د ۰ لرې کول عدد نه بدلوي.
+q 14 | 6 − 3 || ۶ − ۳ || ۶ − ۳
+sol 3 ## 6 − 3 = 3 || ۶ − ۳ = ۳ || ۶ − ۳ = ۳
+q 15 | 7 − 2 || ۷ − ۲ || ۷ − ۲
+sol 5 ## 7 − 2 = 5 || ۷ − ۲ = ۵ || ۷ − ۲ = ۵
+q 16 | 8 − 5 || ۸ − ۵ || ۸ − ۵
+sol 3 ## 8 − 5 = 3 || ۸ − ۵ = ۳ || ۸ − ۵ = ۳
+q 17 | 9 − 1 || ۹ − ۱ || ۹ − ۱
+sol 8 ## 9 − 1 = 8 || ۹ − ۱ = ۸ || ۹ − ۱ = ۸
+q 18 | 4 − 2 || ۴ − ۲ || ۴ − ۲
+sol 2 ## 4 − 2 = 2 || ۴ − ۲ = ۲ || ۴ − ۲ = ۲
+q 19 | 5 − 5 || ۵ − ۵ || ۵ − ۵
+sol 0 ## A number minus itself is 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰۔ || عدد منفي همغه عدد ۰ کېږي.
+endexercise

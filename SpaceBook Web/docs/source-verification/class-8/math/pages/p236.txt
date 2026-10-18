@@ -1,0 +1,44 @@
+@printed 230
+@deco Two photographs of a cone (an ice-cream cone and a joker's cap) beside the first paragraph (decorative).
+@issue The scan is low resolution. The step "l = r² + h²" prints without the radical sign (the next line gives "Slant height = √(r² + h²)"). The figure labels the cone's vertex C (top), centre O, base points A and B, height h, slant height, radius r; the second cone is labelled R (apex), P, Q, O, l, h, r. Printed pages 231–232 are missing from the source (see the next page), so the derivation of the total surface area and the cone volume are not in the scans.
+@sec 9.5 | Cone || مخروط || مخروط
+# 9.5 Cone || 9.5 مخروط || 9.5 مخروط
+p We are familiar with the term 'cone. We have also observed cone shaped objects in our daily life. For example, ice-cream cone, Joker's cap, etc. || ہم لفظ 'مخروط' سے واقف ہیں۔ ہم نے اپنی روزمرہ زندگی میں مخروط نما اشیاء بھی دیکھی ہیں۔ مثال کے طور پر آئس کریم کون، جوکر کی ٹوپی وغیرہ۔ || موږ له 'مخروط' اصطلاح سره بلد یو. موږ په خپل ورځني ژوند کې مخروطي شیان هم لیدلي دي. د بېلګې په توګه د آیس کریم کون، د جوکر خولۍ او نور.
+p Cone is a solid region. A right circular cone of radius $r$ with centre O is shown in the figure. The right circular cone has a flat circular shaped end which is called the base of the cone. || مخروط ایک ٹھوس خطہ ہے۔ شکل میں نصف قطر $r$ اور مرکز O والا قائمہ دائری مخروط دکھایا گیا ہے۔ قائمہ دائری مخروط کا ایک ہموار گول سرا ہوتا ہے جسے مخروط کا قاعدہ کہتے ہیں۔ || مخروط یوه جامده سیمه ده. په شکل کې د $r$ شعاع او O مرکز لرونکی قایم دایروي مخروط ښودل شوی. قایم دایروي مخروط یو هواره ګرد پای لري چې د مخروط قاعده بلل کېږي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The vertex of a cone is the farthest point from the base of the cone. || مخروط کا راس مخروط کے قاعدے سے سب سے دور نقطہ ہے۔ || د مخروط راس د مخروط له قاعدې څخه تر ټولو لرې ټکی دی.
+endbox
+svg Right circular cone: vertex C, height h, slant height, radius r, circular base || قائمہ دائری مخروط || قایم دایروي مخروط
+<svg viewBox="0 0 280 220" width="280" role="img" aria-label="Right circular cone with vertex C at the top, height h dashed to the centre O of the circular base, slant height AC, radius r, base points A and B" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="140,14 60,160 220,160" fill="#f9a8d4" stroke="#be185d"/><ellipse cx="140" cy="160" rx="80" ry="22" fill="#f472b6" stroke="#be185d"/>
+<line x1="140" y1="14" x2="140" y2="160" stroke="#0f172a" stroke-dasharray="4 3"/><line x1="140" y1="160" x2="220" y2="160" stroke="#0f172a"/><circle cx="140" cy="160" r="2.5"/>
+<text x="130" y="12" font-weight="700">C</text><text x="156" y="14">vertex</text>
+<text x="146" y="90" font-style="italic">h</text><text x="180" y="156" font-style="italic">r</text><text x="130" y="176" font-weight="700">O</text>
+<text x="46" y="164" font-weight="700">A</text><text x="224" y="164" font-weight="700">B</text>
+<text x="10" y="90">height</text><text x="196" y="88">slant</text><text x="196" y="102">height</text><text x="114" y="206">circular base</text>
+</svg>
+endsvg
+p This cone has also a corner C which is called the vertex of the cone. The height of the cone is the distance between the base and the vertex of the cone. Here, $\overline{OC}$ represents the height of the cone. The distance $\overline{AC}$ is known as the slant height of the right circular cone. || اس مخروط کا ایک کونا C بھی ہے جو مخروط کا راس کہلاتا ہے۔ مخروط کی اونچائی قاعدے اور مخروط کے راس کے درمیان فاصلہ ہے۔ یہاں $\overline{OC}$ مخروط کی اونچائی کو ظاہر کرتا ہے۔ فاصلہ $\overline{AC}$ قائمہ دائری مخروط کی ترچھی اونچائی کہلاتا ہے۔ || دا مخروط یو کونج C هم لري چې د مخروط راس بلل کېږي. د مخروط لوړوالی د قاعدې او د مخروط د راس تر منځ واټن دی. دلته $\overline{OC}$ د مخروط لوړوالی ښيي. واټن $\overline{AC}$ د قایم دایروي مخروط ځوړ لوړوالی بلل کېږي.
+p We have noticed that in the given figure of cone, COB is a right angled triangle. Because of this, the given cone is called a right circular cone. We can find the length of the slant height of the cone using the Pythagoras theorem. || ہم نے دیکھا کہ مخروط کی دی گئی شکل میں COB ایک قائمہ زاویہ مثلث ہے۔ اسی وجہ سے دیا گیا مخروط قائمہ دائری مخروط کہلاتا ہے۔ ہم مسئلہ فیثاغورث کی مدد سے مخروط کی ترچھی اونچائی کی لمبائی معلوم کر سکتے ہیں۔ || موږ لیدلي دي چې د مخروط په ورکړل شوي شکل کې COB د قایمې زاویې مثلث دی. له همدې امله ورکړل شوی مخروط قایم دایروي مخروط بلل کېږي. موږ د فیثاغورث د قضیې په مرسته د مخروط د ځوړ لوړوالي اوږدوالی موندلی شو.
+p Assume that slant height $= l$, then || فرض کریں ترچھی اونچائی $= l$، تو || فرض کړئ ځوړ لوړوالی $= l$، نو
+m $(\overline{BC})^2 = (\overline{OB})^2 + (\overline{OC})^2$
+m $l^2 = r^2 + h^2$
+m $l = r^2 + h^2$
+box info | Slant height of a cone || مخروط کی ترچھی اونچائی || د مخروط ځوړ لوړوالی
+m Slant height $= \sqrt{r^2 + h^2}$
+endbox
+### Surface Area of a Right Circular Cone: || قائمہ دائری مخروط کی سطح کا رقبہ: || د قایم دایروي مخروط د سطحې مساحت:
+p A right circular cone with circular base of radius $r$ is shown in the figure. $h$ be the height and $l$ be the slant height of the cone. || دائری قاعدے کے نصف قطر $r$ والا ایک قائمہ دائری مخروط شکل میں دکھایا گیا ہے۔ $h$ اونچائی اور $l$ مخروط کی ترچھی اونچائی ہو۔ || د r شعاع لرونکې دایروي قاعدې سره یو قایم دایروي مخروط په شکل کې ښودل شوی. $h$ لوړوالی او $l$ د مخروط ځوړ لوړوالی وي.
+svg Cone with apex R, base points P and Q, centre O, slant height l, height h, radius r || رأس R، قاعدے کے نقاط P اور Q والا مخروط || د R راس او د قاعدې د P او Q ټکو لرونکی مخروط
+<svg viewBox="0 0 240 190" width="240" role="img" aria-label="Right circular cone with apex R, slant height l on the left, height h dashed to centre O of the base, radius r, base points P and Q" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="120,12 40,140 200,140" fill="#f9a8d4" stroke="#be185d"/><ellipse cx="120" cy="140" rx="80" ry="20" fill="#f472b6" stroke="#be185d"/>
+<line x1="120" y1="12" x2="120" y2="140" stroke="#0f172a" stroke-dasharray="4 3"/><line x1="120" y1="140" x2="200" y2="140" stroke="#0f172a"/><circle cx="120" cy="140" r="2.5"/>
+<text x="114" y="10" font-weight="700">R</text><text x="66" y="76" font-style="italic">l</text><text x="126" y="80" font-style="italic">h</text><text x="160" y="136" font-style="italic">r</text><text x="114" y="158" font-weight="700">O</text>
+<text x="26" y="146" font-weight="700">P</text><text x="204" y="146" font-weight="700">Q</text><text x="92" y="182">circular base</text>
+</svg>
+endsvg
+p Total surface area of the right circular cone $=$ || قائمہ دائری مخروط کی کل سطح کا رقبہ $=$ || د قایم دایروي مخروط ټوله سطحه مساحت $=$
+m Area of the curved surface $+$ Area of the base ......(i)
+m Area of the curved surface $= \frac{1}{2}$ (perimeter of the base) $\times$ slant height of the right circular cone
+m $= \frac{1}{2} \times (2\pi r)l$
+m $= \pi r l$ ............ (ii)

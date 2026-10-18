@@ -1,0 +1,1661 @@
+{
+ "class": 3,
+ "updated": "2026-10-13T17:07:59",
+ "sourceDirectory": "D:/SpaceBook/Books/3rd",
+ "pipeline": "Page DSL (docs/source-verification/class-3/<subj>/pages/pNNN.txt) -> tools/build_book3.py -> js/<name>_3_data.js -> js/cls3_book_reader.js (uses the shared Class 6 renderer MATH6_READER).",
+ "note": "Class 3 is being rebuilt page by page from the scans. The earlier Class 3 datasets (backed up in legacy-backup/) were generated from the Word OCR companions as summary lessons, not page-faithful transcriptions.",
+ "order": [
+  "Mathematics",
+  "English",
+  "Islamiat",
+  "Pashto",
+  "General Knowledge",
+  "Nazira Quran",
+  "Drawing"
+ ],
+ "subjectsNotInSourceFolder": [
+  "General Science (no Class 3 source in Books/3rd)",
+  "Urdu (no Class 3 source in Books/3rd)",
+  "Social Studies (EM) (no source)",
+  "Social Studies (UM) (no source)",
+  "Computer Science (no source)",
+  "Mutalia-e-Quran (no source; Nazira Quran book present instead)",
+  "Health and Physical Education (no source)"
+ ],
+ "books": [
+  {
+   "subject": "Mathematics",
+   "code": "math",
+   "title": "Mathematics 3 (KPTBB, Curriculum 2020)",
+   "source": "D:/SpaceBook/Books/3rd/3rd Maths/JPG (189 scans; the PDF folder holds the same scans split into 5 parts)",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\math",
+   "appFile": "js/math_3_data.js",
+   "totalSourcePages": 189,
+   "status": "complete",
+   "reviewedPages": 189,
+   "implementedPages": 188,
+   "printedPagesCovered": "1-180",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 189,
+   "nextPdfPage": null,
+   "currentUnit": 7,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 16,
+     "printedPage": 10,
+     "issues": [
+      "The Odd column's first pentagon is pre-filled \"25\", but 25 is not one of the 14 flower numbers (1, 8, 15, ..., 92 go up in steps of 7). Kept as printed; editorial note added."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 14,
+     "issues": [
+      "Printed \"3 x 1,00 = 3,00\" for the hundreds place (should read 3 × 100 = 300; the next line of the book itself uses 300). Kept as printed with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 17,
+     "issues": [
+      "Exercise 3 Q1(f) is printed \"8,0321\" (a misplaced comma). Kept as printed; the SpaceBook answer reads it as 80,321 and says so."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 35,
+     "issues": [
+      "In the worked table \"Round off the following numbers to the nearest 10 and 100\", 345 is printed as 400 to the nearest 100. By the book's own rule (tens digit 4 is less than 5) it should be 300. Kept as printed with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 36,
+     "issues": [
+      "This exercise is printed as \"Exercise 5\" although Exercise 5 already appears on p.32 (it would be Exercise 6). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 39,
+     "issues": [
+      "The question number of \"Write the following in Roman numbers\" is not printed (only a bullet); it sits between Q2 and Q4, so it is Q3."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 67,
+     "issues": [
+      "Questions 1–6 have no printed instruction number; Q7 follows. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 69,
+     "issues": [
+      "The scan's left edge cuts the first question number on this page: only \"2\" is visible, and the next question is numbered 12. It follows Q11, so it is most likely Q12 (two questions printed as 12). Kept as \"12\" with this note."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 74,
+     "issues": [
+      "Q1(i): options (a) and (d) are both printed \"8,888\". Q1: the fourth part is numbered \"vi)\" instead of \"iv)\" (two parts are numbered vi). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 75,
+     "issues": [
+      "Review Exercise Q1 is on p.74; this page starts at Q2 with sub-headings \"Add:\", \"Solve\" and \"Solve using mental strategies:\"."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 76,
+     "issues": [
+      "The unit page is titled \"Fractions\"; the contents page lists \"Fraction\". The heading box reads \"Learning Objects\"."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 81,
+     "issues": [
+      "Under \"Improper Fractions\" the second example prints 4/4 + 4/4 → 8/8. Two wholes of 4 quarters make 8/4, not 8/8. Kept as printed with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 83,
+     "issues": [
+      "Q4: the fractions on the four red hexagons are printed in dark ink on red and are almost unreadable in every local copy (JPG, PDF, Word OCR). Read as: one red hexagon 8/5, one probably 8/15; the other two (top row, third; middle row, right) are unreadable. Recorded as UNRESOLVED; only the readable fractions are listed."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 94,
+     "issues": [
+      "Review Q1(vi): the first fraction's numerator \"1\" is faint in the scan (\"3/'5\"); read as $\\frac{3}{15}$ (the options all have denominators 15 or 30 and the unit only adds fractions with the same denominator)."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 103,
+     "issues": [
+      "The heading says \"Subtract 252 m 34 cm from 357 m 85 cm\" but the board shows 375 m 85 cm − 252 m 34 cm = 123 m 51 cm. The board's working matches 375 m; with 357 m the answer would be 105 m 51 cm. Kept as printed with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 116,
+     "issues": [
+      "The scale on the fifth (small) beaker is too small to read in the scan; it appears to be a full smaller beaker (likely 500 ml). The SpaceBook answer states this assumption."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 118,
+     "issues": [
+      "This exercise is printed \"Exercise 3\" although Exercise 3 (mass) is on p.110 and Exercise 4 on p.114; it would be Exercise 5. Kept as printed. In the oil problem the text gives 20 l 300 ml + 10 l 500 ml, and the working writes 10 l 500 ml + 20 l 300 ml = 30 l 800 ml."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 119,
+     "issues": [
+      "Q2 prints \"3 litres 240\" without a unit after 240; read as 240 millilitres (the second bottle is given in litres and millilitres)."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 121,
+     "issues": [
+      "This exercise is printed \"Exercise 4\" although Exercise 4 (mass) is on p.114. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": 124,
+     "issues": [
+      "Q2(ii) is printed \"7 km 219 cm + 3 km 340 cm\" (kilometres with centimetres); most likely \"m\" was meant. Kept as printed; the SpaceBook answer adds the parts as printed and notes it."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": 140,
+     "issues": [
+      "Q3 gives Lahore→Rawalpindi 5 hours and Lahore→Multan 6 hours and asks Rawalpindi→Multan. The intended working is a subtraction (6 h − 5 h = 1 h), but going from Rawalpindi to Multan through Lahore would take 5 h + 6 h = 11 h. Kept as printed; the SpaceBook answer gives the intended subtraction with a note."
+     ]
+    },
+    {
+     "pdfPage": 150,
+     "printedPage": 144,
+     "issues": [
+      "Sticky note AB: the line has an arrowhead after B only, and runs a little past A with no arrowhead and no dot. Read as a ray (one arrowhead); the same holds for PQ."
+     ]
+    },
+    {
+     "pdfPage": 151,
+     "printedPage": 145,
+     "issues": [
+      "The page ends \"Thus, required line segment A B = 4 cm\" although the segment drawn and the heading are 9 cm. Kept as printed with an editorial note."
+     ]
+    },
+    {
+     "pdfPage": 153,
+     "printedPage": 147,
+     "issues": [
+      "Q2: the segments must be measured on the printed page; the scan is not to scale, so no lengths are given here. Q3(iii) is printed \"5m 6mm\" — almost certainly 5 cm 6 mm (the right edge is also cut). Kept as printed with a note."
+     ]
+    },
+    {
+     "pdfPage": 164,
+     "printedPage": 158,
+     "issues": [
+      "The question after Q5 is numbered 7 (there is no Q6). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 172,
+     "printedPage": 166,
+     "issues": [
+      "Q6: the sides 15 m, 25 m and 40 m cannot form a real triangle (15 + 25 = 40, so the three points would lie on one straight line). The question is kept as printed and answered by adding the sides, with a note."
+     ]
+    },
+    {
+     "pdfPage": 176,
+     "printedPage": 170,
+     "issues": [
+      "(1) The last observation reads \"13,21.25.33\" — 13 should be 18 (as in the diagram on p.169). (2) The tally marks printed in the book (8 → 8, 6 → 6, 7 → 7, 9 → 9, 4 → 4) do not match the 34 marks listed: counting the list gives 8 → 10, 6 → 6, 7 → 5, 9 → 7, 4 → 6 (total 34). Kept as printed with an editorial note."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 8.0,
+   "ledger": "docs/source-verification/class-3/math/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/math/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "English",
+   "code": "eng",
+   "title": "English 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd English",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\eng",
+   "appFile": "js/english_3_data.js",
+   "totalSourcePages": 134,
+   "status": "complete",
+   "reviewedPages": 134,
+   "implementedPages": 133,
+   "printedPagesCovered": "1-127",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 134,
+   "nextPdfPage": null,
+   "currentUnit": 14,
+   "currentSection": "feedback",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Unit 8 oral communication cell: one word after \"weak forms of\" is faded/missing in the scan (\"of ··· and 'have'\"). Unit 11 cell prints \"Pronouns\" for \"Pronounce\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 1,
+     "issues": [
+      "\"two-constant clusters\" is printed for \"two-consonant clusters\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 4,
+     "issues": [
+      "Read Me box: the IPA symbols for the soft and hard g (/dʒ/ and /g/) are printed as empty boxes (\"/d□/\", \"/□/\") in this copy. Shown here as /dʒ/ and /g/."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 14,
+     "issues": [
+      "Line 16 is printed \"From out the side, blue sky.\" (most versions of the poem read \"From out the wide, blue sky\"). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 19,
+     "issues": [
+      "The heading is printed \"Conjuctions\" (for Conjunctions). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 21,
+     "issues": [
+      "The heading is printed \"Neelum Valley\" but the paragraph spells \"Neelam valley\" once and \"Neelum\" later. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 25,
+     "issues": [
+      "The top-left corner of the scan is torn (no text lost)."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 35,
+     "issues": [
+      "\"towords\" is printed for \"towards\" in the first Pre-reading question. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 36,
+     "issues": [
+      "The Naat printed here is an English song credited (in the Teaching Point) to Sami Yusuf; its lyrics are under copyright, so only a short summary and the first line are given here. Read the full Naat from the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 41,
+     "issues": [
+      "The table prints \"ranning\" (for running) in the He/She/It row; the exercise also includes \"She was playing games.\" (past continuous) among present continuous sentences. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 47,
+     "issues": [
+      "This is the book's \"Unit 5\"; in SpaceBook's list it follows \"Review 1\"."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 52,
+     "issues": [
+      "Poem: the yellow light says “start, start, right away” although the picture labels yellow \"Wait\". Kept as printed; the comprehension answer follows the picture (wait/get ready)."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 55,
+     "issues": [
+      "The second Read Me box is cut at the right edge of the scan (\"its contraction is …\"); the contraction is not visible (it is \"can't\"). Instruction \"sings\" is printed for \"signs\"."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 62,
+     "issues": [
+      "The meaning given for \"valuable\" is \"expensive\" and for \"aware\" is \"to know, inform\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 65,
+     "issues": [
+      "Exercise i, first sentence: the story wording suggests \"the things had to be changed\" (set the things right). SpaceBook gives \"the\"."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 71,
+     "issues": [
+      "\"crowd\" appears twice in the cr list. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 78,
+     "issues": [
+      "\"Swum\" in the tongue twister is as printed. The page heading is faded in the scan."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 83,
+     "issues": [
+      "Post-reading question printed as \"What is will happen if we continue to waste water?\" — the extra word \"is\" is a misprint; it should read \"What will happen if we continue to waste water?\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 85,
+     "issues": [
+      "Circle-the-spelling row 2 prints \"people, people, people\" — all three options are the same correct spelling, so there is no wrong option to reject. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 92,
+     "printedPage": 86,
+     "issues": [
+      "The word box prints \"his · ours · mine · yours · ours\" — \"ours\" appears twice and \"hers\", needed for the Beena sentence, is missing. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 99,
+     "issues": [
+      "The meaning printed for \"celebrate\" is \"a feeling of happiness\", which describes a noun such as \"joy\". \"Celebrate\" is a verb meaning \"to mark a happy day or event with enjoyment\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 101,
+     "issues": [
+      "The instruction lists \"is / are / am / are / was / were\" with \"are\" printed twice. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 105,
+     "issues": [
+      "Copyright: the poem \"Our Family Picnic\" is by Kenn Nesbitt, a living poet, adapted by the textbook (\"With some minor changes to suit the cultural sensibilities of students\"). SpaceBook gives a stanza-by-stanza summary instead of the full poem. Pupils should read the poem from the printed book, p.105."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 106,
+     "issues": [
+      "The park map is small in the scan. SpaceBook redrew it as a coded map after counting: 9 flower gardens, 8 trees, 6 benches, 2 slides, 1 seesaw, 2 sand boxes, 2 swings in the south-west, and a duck pond with 4 ducks."
+     ]
+    },
+    {
+     "pdfPage": 114,
+     "printedPage": 108,
+     "issues": [
+      "The Teaching Point clue word \"trian\" is a misprint for \"train\", the word hidden in row 5 of the first box. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 109,
+     "issues": [
+      "\"Did not you get my letter?\" is not standard English; it should be \"Did you not get my letter?\". Its contraction is \"Didn't you get my letter?\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 110,
+     "issues": [
+      "The Read Me says \"May is used to discuss possibility or happening in the future\", but its example \"May I ride your bike?\" asks for permission, not possibility. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 117,
+     "issues": [
+      "The passage names the girl \"Alia\", but the questions call her \"Ayla\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 118,
+     "issues": [
+      "The page number in the scan's footer is smudged and unreadable. 118 comes from the page sequence (p.117 before, p.119 after)."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 119,
+     "issues": [
+      "\"spell\" appears in the list of words for the \"ed\" sounds but has no \"-ed\" ending. Its past form \"spelled\" ends in /d/. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 121,
+     "issues": [
+      "The instruction calls the story \"The Toothy Toad\", but the story's own title is \"Toothy Toad\". The closing quotation mark is printed as a single quote. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 122,
+     "issues": [
+      "The heading \"2. Learning the Speak\" is a misprint for \"2. Learning to Speak\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 127,
+     "issues": [
+      "Privacy: the printed page gives each author's personal e-mail address. SpaceBook leaves the addresses out; see the printed book, p.127."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 175.5,
+   "ledger": "docs/source-verification/class-3/eng/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/eng/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Islamiat",
+   "code": "isl",
+   "title": "Islamiat 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd ISlamyat",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\isl",
+   "appFile": "js/islamyat_3_data.js",
+   "totalSourcePages": 88,
+   "status": "complete",
+   "reviewedPages": 88,
+   "implementedPages": 87,
+   "printedPagesCovered": "1-84",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 88,
+   "nextPdfPage": null,
+   "currentUnit": 22,
+   "currentSection": "farhang",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "A scanner line \"A-PDF Watermark DEMO\" is printed across the top of the scan; it is not part of the textbook and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 34,
+     "issues": [
+      "The third manner prints a double negative: «نہ ہی غیر ضروری باتیں نہ کی جائیں». The second «نہ» is redundant. The intended meaning is \"do not talk about unnecessary things\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 39,
+     "issues": [
+      "The learning outcomes promise \"the main terms\" (اہم شقیں) of Hilf-ul-Fudul, but the lesson does not list them. A historical note: the pact bound its members to help anyone wronged in Makkah, local or stranger, until justice was done. It is given below as editorial help."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 44,
+     "issues": [
+      "The hadith \"One who has no trustworthiness cannot be a believer\" is printed without a reference. It is reported in Musnad Ahmad. The SpaceBook reference is not part of the printed text."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 46,
+     "issues": [
+      "MCQ (ج), option (د): «مسرت ابوبکر صدیق» is a misprint for «حضرت ابوبکر صدیق». Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 64,
+     "issues": [
+      "The short-answer questions are lettered الف، ب، د — letter «ج» is skipped. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 71,
+     "issues": [
+      "This exercise goes straight from Q1 (multiple choice, p.71) to the short answers on p.72. There is no Q2 fill-in-the-blanks, though every other lesson has one. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 72,
+     "issues": [
+      "Both question headings on this page are numbered \"3\". The second, \"answer in detail\", should be \"4\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 73,
+     "issues": [
+      "The birth year is printed «۵۷۴» in Eastern Arabic digits inside Urdu text; it reads as 574 CE (the commonly cited year is 573 CE). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 84,
+     "issues": [
+      "The table \"Importance of Truth\" has an empty \"معنی\" header cell. Also, under the tolerance and patience lesson the glossary lists «عقیدہ», which belongs to the Tawheed lesson. Kept as printed."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 153.2,
+   "ledger": "docs/source-verification/class-3/isl/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/isl/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Pashto",
+   "code": "pashto",
+   "title": "Pashto 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd Pashto",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\pashto",
+   "appFile": "js/pashto_3_data.js",
+   "totalSourcePages": 150,
+   "status": "complete",
+   "reviewedPages": 150,
+   "implementedPages": 149,
+   "printedPagesCovered": "1-144",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 150,
+   "nextPdfPage": null,
+   "currentUnit": 33,
+   "currentSection": "authors",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "The scanner line \"A-PDF Watermark DEMO\" and a \"PERFECT24U.COM\" watermark are printed across the scan. Neither is part of the textbook, so both are ignored."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Privacy: the printed imprint gives an e-mail address and phone number. SpaceBook keeps only the board's website."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 7,
+     "issues": [
+      "Q2 statement ۲ says the child \"climbed the date tree\", but the lesson (p.6) says he threw stones to knock dates down. The printed statement is meant to be false. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 21,
+     "issues": [
+      "Copyright: the poem \"سپرلے\" is by Ghazi Siyal (d. 2014), a published Pashto poet who is not one of this book's authors. SpaceBook gives only the refrain and a verse-by-verse summary. Pupils should read the full poem in the printed book, pp.21–22."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 22,
+     "issues": [
+      "The full poem text is not reproduced, for copyright reasons (see the note on p.21). The summary of all three verses is on the previous page."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 42,
+     "issues": [
+      "A \"PERFECT24U.COM\" watermark is printed across this scan; it is not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 54,
+     "issues": [
+      "Questions ۵ and ۶ both ask the pupil to match column \"A\" with column \"B\". Only question ۶ prints the columns, so ۵ is a duplicated heading. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 61,
+     "issues": [
+      "MCQ ۳ («باران یاد شوے دے») does not say which season the poem describes. The poem speaks of rain ending the summer heat, so the SpaceBook answer is «د اوړي» (summer)."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 84,
+     "issues": [
+      "Only the first blank is numbered; the next one is numbered ۴ (۲ and ۳ are skipped) and the last two are unnumbered. SpaceBook numbers them ۲ to ۵. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 85,
+     "issues": [
+      "Column B's heading is printed as just «کالم» (the «ب» is missing). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 87,
+     "issues": [
+      "The Quran verses and the hadith are printed without references. SpaceBook adds Al-Isra 34, Al-Ma'idah 1 and Bukhari 33 in the Urdu and English text only."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 96,
+     "issues": [
+      "«ام» and «مم» are baby-talk words (roughly \"food\" and \"water/drink\"). The translations are SpaceBook glosses."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 99,
+     "issues": [
+      "The activity reads «د یو شل یو نه تر دوه سوه». «شل» (twenty) is a misprint for «سل» (hundred); the sequence after 91–100 means 101–200. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 101,
+     "issues": [
+      "Question ۲ (\"Use the given words…\") is not numbered in the book. The next question is numbered ۳."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 103,
+     "issues": [
+      "The proverb glosses (Urdu and English) are SpaceBook renderings of the meaning, not word-for-word translations."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 109,
+     "issues": [
+      "Q4 asks for \"opposites\" (اپوټه), but the words are better paired with gender or counterparts (prince–princess, cow–ox). The SpaceBook answers give these pairs."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 110,
+     "issues": [
+      "«ډانګه، غړانګه، ځانګه…» are playful rhyming words in a nonsense-style children's poem. The Urdu and English glosses are SpaceBook approximations."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 111,
+     "issues": [
+      "Some words in this humorous poem are playful or rare (کړاک، غوړدانګه). The Urdu and English renderings are SpaceBook approximations."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 112,
+     "issues": [
+      "MCQ ۵ is ambiguous. The poem tells the camel «مهٔ کوه فتنه» (\"don't make mischief\"), so the SpaceBook answer is «فتنه»."
+     ]
+    },
+    {
+     "pdfPage": 134,
+     "printedPage": 128,
+     "issues": [
+      "MCQ ۳ has two possible answers from the story: «ورغلې» (he dozed off, p.126) and «وغړېدې» (his eyes opened, p.127). The SpaceBook answer gives the waking moment."
+     ]
+    },
+    {
+     "pdfPage": 144,
+     "printedPage": 138,
+     "issues": [
+      "This is a Pashto translation of Allama Iqbal's poem «لب پہ آتی ہے دعا بن کے تمنا میری» (\"A Child's Prayer\"). The Urdu and English lines are SpaceBook renderings of the Pashto meaning."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 139,
+     "issues": [
+      "«پېپنۍ» is glossed «قمیص، خت، خلکه» (a shirt), although in the poem on p.96 it reads as a doll or little one. Kept as printed."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 180.8,
+   "ledger": "docs/source-verification/class-3/pashto/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/pashto/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "General Knowledge",
+   "code": "gk",
+   "title": "General Knowledge 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd  GK",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\gk",
+   "appFile": "js/gk_3_data.js",
+   "totalSourcePages": 130,
+   "status": "complete",
+   "reviewedPages": 130,
+   "implementedPages": 129,
+   "printedPagesCovered": "1-123",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 130,
+   "nextPdfPage": null,
+   "currentUnit": 16,
+   "currentSection": "exercise",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Privacy: the printed imprint gives an e-mail address and phone number. SpaceBook keeps only the board's website."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": 2,
+     "issues": [
+      "The text explains sunrise and sunset by the Earth's revolution (\"revolves around the Sun … from West to East\"). In fact the daily rising and setting of the Sun is caused by the Earth's rotation on its axis from West to East; revolution causes the seasons. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 5,
+     "issues": [
+      "In Q2 the three pictures are not labelled. Picture 1 has the Sun at top-left with a shadow to the right; picture 2 has the Sun overhead with a short shadow; picture 3 has the Sun on the right (East, by the printed compass) with a long shadow to the left. SpaceBook reads them as evening, noon and morning; the order is a SpaceBook reading of the art."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 8,
+     "issues": [
+      "The \"Know That!\" box says the Khewra salt mines are \"the second largest\". They are usually described as the second-largest salt mine in the world. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 9,
+     "issues": [
+      "The activity list has 10 items, but the printed table has only five rows, numbered i, ii, iii, \"vi\", v (\"vi\" is a misprint for iv). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 17,
+     "issues": [
+      "Item viii is numbered \"Viii\" with a capital V. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 18,
+     "issues": [
+      "The \"Know That!\" box says 17th May is the day of endangered animals. Endangered Species Day is usually held on the third Friday of May, so the date changes each year. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 32,
+     "issues": [
+      "In the printed insect life-cycle picture the labels \"Larva\" and \"Pupa\" are swapped: the green chrysalis is labelled \"Larva\" and the caterpillar is labelled \"Pupa\". The SpaceBook diagram below labels them correctly (caterpillar = larva, chrysalis = pupa). Item iv says the pupa develops \"into insects\"; this means the adult insect. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 35,
+     "issues": [
+      "The \"Do you know?\" box says the Sun is \"11990 times bigger than Earth\". This is not correct: the Sun's diameter is about 109 times the Earth's, and its volume is about 1.3 million times the Earth's. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 38,
+     "issues": [
+      "The \"Do you know?\" box misspells Mongolia as \"Mangolia\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 40,
+     "issues": [
+      "The text and picture place polar bears and penguins together. Polar bears live only in the Arctic (north) and wild penguins live mostly in Antarctica and the southern oceans, so they do not meet in nature. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 41,
+     "issues": [
+      "\"90% area of Antarctica is covered with snow\" — about 98% of Antarctica is covered by ice. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 44,
+     "issues": [
+      "A polar bear's skin is actually black; the white colour that hides it in the snow comes from its fur. The label \"the colour of skin\" means the colour of its fur coat. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 46,
+     "issues": [
+      "\"Effecting\"/\"effected\" are printed where \"affecting\"/\"affected\" are meant. The Amazon figure (17% decrease in 50 years) is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 51,
+     "issues": [
+      "The link is printed as \"www.sciencekids.co.n2/…\"; the domain is sciencekids.co.nz. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 55,
+     "issues": [
+      "Pulses (lentils, beans) are listed with grains. Strictly they are seeds of legume plants, not cereal grains, but they are grouped together here as staple foods. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 72,
+     "issues": [
+      "\"sibling sometimes disagree\" is printed for \"siblings sometimes disagree\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 80,
+     "issues": [
+      "Ice \"swimming\" in water means floating. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 84,
+     "issues": [
+      "In Q1 (i) water can exist in all three states (p. 82); \"liquid\" is the expected answer for water itself. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 88,
+     "issues": [
+      "The \"Know That\" box says the energy stored in the Sun is enough for 6 billion years. Scientists usually estimate that the Sun has about 5 billion years left. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 89,
+     "issues": [
+      "\"Turbella\" is printed for Tarbela Dam. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 92,
+     "issues": [
+      "The Key Points list \"Sun, air, coal, and gas\" as natural sources; flowing water and oil (pp. 89, 91) are also natural sources. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 94,
+     "issues": [
+      "The second link is printed as \"https://smileandlearn.com/?lang)=en\" with a stray \")\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 95,
+     "issues": [
+      "\"petting animals\" is printed where \"keeping (domesticating) animals\" is meant. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 106,
+     "issues": [
+      "The link is printed as a goo.gl short link (https://goo.gl/GIhVVj). Google's goo.gl service has been shut down, so the link may no longer work. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 107,
+     "issues": [
+      "\"Axel\" is printed throughout the chapter for \"axle\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 109,
+     "issues": [
+      "\"It increase\" is printed for \"It increases\" in items i and ii; item ii means that a machine lets us apply force over a longer distance. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 110,
+     "issues": [
+      "\"plain surface\" is printed for \"plane (flat) surface\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 112,
+     "issues": [
+      "\"tipcart\" is printed; it probably means a hand-cart or push-cart. Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 117,
+     "issues": [
+      "\"geezer\" is printed for \"geyser\" (water heater). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 119,
+     "issues": [
+      "The \"Do you know that?\" box says 70% of the body is water. Adults' bodies are about 60% water and children's somewhat more, so the figure is approximate. The \"Know that!\" box says \"The most deaths are caused by fire\"; this general claim is not supported. Natural disasters, illnesses and road accidents each cause many deaths. Both kept as printed."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 184.0,
+   "ledger": "docs/source-verification/class-3/gk/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/gk/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Nazira Quran",
+   "code": "nazira",
+   "title": "Nazira Quran 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd Nazira",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\nazira",
+   "appFile": "js/nazira_3_data.js",
+   "totalSourcePages": 99,
+   "status": "complete",
+   "reviewedPages": 99,
+   "implementedPages": 97,
+   "printedPagesCovered": "2-96",
+   "blankOrAdPages": [
+    2,
+    9
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 99,
+   "nextPdfPage": null,
+   "currentUnit": 16,
+   "currentSection": "text",
+   "unresolved": [
+    {
+     "pdfPage": 9,
+     "printedPage": 6,
+     "issues": [
+      "This scan is an exact duplicate of the previous scan (printed page 6, the letter chart); the content is given once on the previous page."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 18,
+     "issues": [
+      "The book's teaching note says the ghunnah is made on مْ when mim or ba follows; with ba the usual name is ikhfa shafawi (a hidden, nasal mim), and with mim it is idgham shafawi. Both are read with ghunnah, as printed."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 19,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 3 (تِلْكَ الرُّسُلُ) begins at Al-Baqarah 2:253."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 20,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 21,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 22,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 23,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 24,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Surah Al-Baqarah ends on this page (2:286). The practice box takes the opening verses of Aal-Imran (3:1-8), which the book does not print in full."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 25,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 26,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 27,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 28,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 29,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 30,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 31,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 32,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 4 (لَنْ تَنَالُوا) begins at Aal-Imran 3:92, inside the practice range of this page."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 33,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 34,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 35,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 36,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 37,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 38,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 39,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 40,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 41,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 42,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Surah Aal-Imran ends on this page (3:200). The practice box takes the opening verses of An-Nisa (4:1-5), which the book does not print in full."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 43,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 44,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 45,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 46,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 5 (وَالْمُحْصَنٰتُ) begins at An-Nisa 4:24."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 47,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 48,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 49,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 50,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 51,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 52,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 53,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 54,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 55,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 56,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 57,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 58,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 59,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 60,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 61,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 6 (لَا يُحِبُّ اللّٰهُ) begins at An-Nisa 4:148 (previous lesson). Surah An-Nisa ends at 4:176 and Al-Ma'idah begins in the practice box; the book prints the main text from Al-Ma'idah 5:3."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 62,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 63,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 64,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 65,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 66,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 67,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 68,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 69,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 70,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 71,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 7 (وَاِذَا سَمِعُوْا) begins at Al-Ma'idah 5:83, inside the practice range of this page."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 72,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 73,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 74,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 75,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Surah Al-Ma'idah ends on this page (5:120). The practice box takes the opening verses of Al-An'am (6:1-8), which the book does not print in full."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 76,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 77,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 78,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 79,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 80,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 81,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 82,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 83,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 84,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Para 8 (وَلَوْ اَنَّنَا) begins at Al-An'am 6:111."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 85,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 86,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 87,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 88,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "Surah Al-An'am ends on this page (6:165). The practice box takes the opening verses of Al-A'raf (7:1-11), which the book does not print in full."
+     ]
+    },
+    {
+     "pdfPage": 92,
+     "printedPage": 89,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 90,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 91,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 92,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes)."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 93,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed words are not reproduced. The book prints only some of the verses of each lesson; the verses it skips are set as practice and homework (see the boxes).",
+      "This is the last Quran page of the book (Al-A'raf 7:87), which is where Para 8 ends."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 576.3,
+   "ledger": "docs/source-verification/class-3/nazira/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/nazira/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Drawing",
+   "code": "drawing",
+   "title": "Drawing 3 (KPTBB)",
+   "source": "D:/SpaceBook/Books/3rd/3rd Drawing",
+   "scanFolder": "D:\\SpaceBook\\_cls3_jpg\\drawing",
+   "appFile": "js/drawing_3_data.js",
+   "totalSourcePages": 33,
+   "status": "complete",
+   "reviewedPages": 33,
+   "implementedPages": 32,
+   "printedPagesCovered": "1-32",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 33,
+   "nextPdfPage": null,
+   "currentUnit": 4,
+   "currentSection": "activities",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": 3,
+     "issues": [
+      "The teacher note prints \"clay plaster of paris\" (meaning clay or plaster of Paris) and \"Assigned\" for \"Assign\". Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 18,
+     "issues": [
+      "This page is scanned upside down; the content is given the right way up."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 22,
+     "issues": [
+      "This page is scanned upside down; the content is given the right way up."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 31,
+     "issues": [
+      "The title calls the folded bird both a duck and a pelican, as printed."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": null,
+   "ledger": "docs/source-verification/class-3/drawing/ledger.json",
+   "transcriptions": "docs/source-verification/class-3/drawing/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  }
+ ],
+ "lastBrowserVerification": null,
+ "environmentBlockers": [
+  "D: has about 2.6 GB free and C: under 1 GB: scans are hard-linked into D:/SpaceBook/_cls3_jpg (no copies) and pages are read from the scan images directly, with the Word OCR companion as a text aid."
+ ],
+ "nextAction": "ALL Class 3 source books DONE"
+}

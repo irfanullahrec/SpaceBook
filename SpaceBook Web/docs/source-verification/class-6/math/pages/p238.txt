@@ -1,0 +1,24 @@
+@printed 236
+q 4 | The following table shows the profit gained by 3 shopkeeper during five months. Draw a multiple bar graph for this data. || درج ذیل جدول 3 دکانداروں کا پانچ مہینوں میں حاصل کردہ منافع دکھاتا ہے۔ اس ڈیٹا کا متعدد بار گراف بنائیں۔ || لاندې جدول د 3 دوکاندارانو په پنځو میاشتو کې ترلاسه شوې ګټه ښيي. د دې معلوماتو ګڼ میله ییز ګراف رسم کړئ.
+table
+th |  | April | May | June | July | August
+tr | Umar | Rs 20000 | Rs 65000 | Rs 55000 | Rs 15000 | Rs 35000
+tr | Ali | Rs 35000 | Rs 45000 | Rs 30000 | Rs 20000 | Rs 76000
+tr | Khalid | Rs 52000 | Rs 19000 | Rs 78000 | Rs 25000 | Rs 54000
+endtable
+solution Vertical multiple bar graph (scale: 1 mark = Rs 10000)
+ss Months go along the x-axis and profit along the y-axis; each shopkeeper has a colour. The largest profit is Rs 78000, so a scale of 1 mark = Rs 10000 up to Rs 80000 fits. || مہینے x-محور پر اور منافع y-محور پر؛ ہر دکاندار کا ایک رنگ۔ سب سے زیادہ منافع 78000 روپے ہے، اس لیے 1 نشان = 10000 روپے، 80000 تک مناسب ہے۔ || میاشتې پر x-محور او ګټه پر y-محور؛ هر دوکاندار یو رنګ لري. تر ټولو لویه ګټه 78000 روپۍ ده، نو 1 نښه = 10000 روپۍ تر 80000 پورې مناسبه ده.
+sfig chart v | max 80000 10000 | title Profit of shopkeepers | x Months | y Profit (Rs) | cats April,May,June,July,August | Umar=20000,65000,55000,15000,35000 | Ali=35000,45000,30000,20000,76000 | Khalid=52000,19000,78000,25000,54000
+endsolution
+q 5 | Look at the bar graph and answer the question below. || بار گراف دیکھیں اور نیچے کے سوال کا جواب دیں۔ || میله ییز ګراف ته وګورئ او لاندې پوښتنې ته ځواب ورکړئ.
+chart h | max 18 2 | title Votes for Recipes | x Votes | y Food Items | cats Pizza,Sandwich,Burger,Pasta,Nuggets | Recipe 1=8,15,10,5,10 | Recipe 2=10,7,9,9,10 | Recipe 3=12,8,11,16,10 | colors #475569,#f87171,#22d3ee || Scale: one mark along x-axis = 2 votes || پیمانہ: x-محور پر ایک نشان = 2 ووٹ || پیمانه: پر x-محور یوه نښه = 2 رایې
+qp a | Which items recipe got the greatest vote? || کس چیز کی ترکیب کو سب سے زیادہ ووٹ ملے؟ || د کوم توکي ترکیب تر ټولو ډېرې رایې ترلاسه کړې؟
+sol Pasta, Recipe 3 (16 votes) ## It is the longest bar in the graph. || یہ گراف کی سب سے لمبی بار ہے۔ || دا په ګراف کې تر ټولو اوږده میله ده.
+qp b | How many people vote for the recipe 3 of the pasta? || پاستا کی ترکیب 3 کو کتنے لوگوں نے ووٹ دیا؟ || د پاستا 3 ترکیب ته څو کسانو رایه ورکړه؟
+sol 16 ## The Recipe 3 bar for Pasta reaches 16. || پاستا کی ترکیب 3 والی بار 16 تک پہنچتی ہے۔ || د پاستا د 3 ترکیب میله تر 16 رسېږي.
+qp c | How many people vote for three recipes of sandwich? || سینڈوچ کی تینوں ترکیبوں کو کتنے لوگوں نے ووٹ دیا؟ || د سینډوچ درې ترکیبونو ته څو کسانو رایه ورکړه؟
+sol 15 + 7 + 8 = 30 ## Add the three Sandwich bars. || سینڈوچ کی تینوں بارز جمع کریں۔ || د سینډوچ درې میلې جمع کړئ.
+qp d | How many people vote for the recipe 2 of the pizza? || پیزا کی ترکیب 2 کو کتنے لوگوں نے ووٹ دیا؟ || د پیزا 2 ترکیب ته څو کسانو رایه ورکړه؟
+sol 10 ## The Recipe 2 bar for Pizza reaches 10. || پیزا کی ترکیب 2 والی بار 10 تک پہنچتی ہے۔ || د پیزا د 2 ترکیب میله تر 10 رسېږي.
+qp e | How many people vote for recipe 1 of the burger? || برگر کی ترکیب 1 کو کتنے لوگوں نے ووٹ دیا؟ || د برګر 1 ترکیب ته څو کسانو رایه ورکړه؟
+sol 10 ## The Recipe 1 bar for Burger reaches 10. || برگر کی ترکیب 1 والی بار 10 تک پہنچتی ہے۔ || د برګر د 1 ترکیب میله تر 10 رسېږي.

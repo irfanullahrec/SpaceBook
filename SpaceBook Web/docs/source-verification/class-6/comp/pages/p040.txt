@@ -1,0 +1,35 @@
+@printed 36
+@status lesson
+@sec 2.6 | Working with 3D Models || تھری ڈی ماڈلز کے ساتھ کام || له درې بُعدي ماډلونو سره کار
+# 2.6 Working with 3D Models || 2.6 تھری ڈی ماڈلز کے ساتھ کام || 2.6 له درې بُعدي ماډلونو سره کار
+p 3D (three dimensional) model is a technique in Computer Graphics used to visualize real world objects using X, Y and Z-axes representing height, width and depth. || تھری ڈی (سہ جہتی) ماڈل کمپیوٹر گرافکس کی ایک تکنیک ہے جس سے حقیقی دنیا کی اشیا کو X، Y اور Z محوروں کے ذریعے دکھایا جاتا ہے جو اونچائی، چوڑائی اور گہرائی ظاہر کرتے ہیں۔ || درې بُعدي (3D) ماډل د کمپیوټري ګرافیک یوه طریقه ده چې د X، Y او Z محورونو په مرسته — لوړوالی، پلنوالی او ژوروالی — د ریښتینې نړۍ شیان ښيي.
+svg A cube drawn on X, Y and Z axes. || X، Y اور Z محوروں پر بنا ہوا مکعب۔ || پر X، Y او Z محورونو مکعب.
+<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13" font-weight="bold" role="img" aria-label="Cube on X Y Z axes">
+<defs><marker id="ax1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#1e293b"/></marker></defs>
+<line x1="100" y1="150" x2="100" y2="12" stroke="#16a34a" stroke-width="2" marker-end="url(#ax1)"/>
+<line x1="20" y1="110" x2="190" y2="60" stroke="#dc2626" stroke-width="2" marker-end="url(#ax1)"/>
+<line x1="40" y1="150" x2="170" y2="20" stroke="#1e3a8a" stroke-width="2" marker-end="url(#ax1)"/>
+<path d="M78 70 L112 60 L132 76 L98 86z" fill="#a3e635" stroke="#1e293b"/><path d="M78 70 L98 86 L98 122 L78 106z" fill="#65a30d" stroke="#1e293b"/><path d="M98 86 L132 76 L132 112 L98 122z" fill="#84cc16" stroke="#1e293b"/>
+<text x="106" y="16" fill="#16a34a">Y</text><text x="176" y="30" fill="#1e3a8a">X</text><text x="180" y="78" fill="#dc2626">Z</text>
+</svg>
+endsvg
+p 3D objects can be moved in and out of the plane of the Canvas. A ***3D View tool*** toggles the object relative to a Canvas backdrop. || تھری ڈی اشیا کو کینوس کی سطح کے اندر اور باہر حرکت دی جا سکتی ہے۔ ***3D View tool*** شے کو کینوس کے پس منظر کے لحاظ سے بدل کر دکھاتا ہے۔ || درې بُعدي شیان د کینوس له سطحې دننه او بهر خوځېدای شي. ***3D View*** وسیله شی د کینوس د شالید په پرتله اړوي.
+@deco Screenshot: a light-blue rounded square on a canvas tilted in 3D view; the "3D view tool" button is marked on the toolbar; the Rounded Square panel shows Fill, Line type, Thickness 3px, Sticker opacity, Matte, Make 3D, Rotate and flip.
+## 2.6.1 Creating 3D shapes || 2.6.1 تھری ڈی اشکال بنانا || 2.6.1 درې بُعدي شکلونه جوړول
+p Following are 3D shapes in Paint 3D: || پینٹ تھری ڈی میں یہ تھری ڈی اشکال ہیں: || په پینټ 3D کې دا درې بُعدي شکلونه دي:
+- ***a) 3D Objects*** — objects (cube, sphere, hemisphere, cone, pyramid) and cylinders (cylinder, tube, capsule, curved tube, ring). || ***الف) تھری ڈی اشیا*** — اشیا (مکعب، کرہ، نصف کرہ، مخروط، اہرام) اور سلنڈر (سلنڈر، نلکی، کیپسول، خمیدہ نلکی، چھلا)۔ || ***الف) درې بُعدي شیان*** — شیان (مکعب، کره، نیمه کره، مخروط، هرم) او سلنډرونه (سلنډر، نل، کپسول، کږ نل، کړۍ).
+- ***b) 3D doodle*** — Tube brush, Soft edge, sharp edge. || ***ب) تھری ڈی ڈوڈل*** — ٹیوب برش، نرم کنارہ، تیز کنارہ۔ || ***ب) درې بُعدي ډوډل*** — د نل برس، نرمه څنډه، تېره څنډه.
+- ***c) 3D models*** — Man Model, Woman Model, Dog Model, Cat Model, Fish Model. || ***ج) تھری ڈی ماڈل*** — مرد، عورت، کتا، بلی اور مچھلی کا ماڈل۔ || ***ج) درې بُعدي ماډلونه*** — سړی، ښځه، سپی، پیشو او کب.
+svg 3D shapes in Paint 3D: objects, cylinders, 3D doodles and 3D models. || پینٹ تھری ڈی کی تھری ڈی اشکال۔ || د پینټ 3D درې بُعدي شکلونه.
+<svg viewBox="0 0 470 150" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="3D shapes">
+<g fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.5">
+<path d="M20 30 L35 22 L50 30 L50 48 L35 56 L20 48z"/><circle cx="80" cy="40" r="15"/><path d="M110 50 A15 15 0 0 1 140 50z"/><path d="M155 55 L170 22 L185 55z"/><path d="M200 55 L215 22 L230 55 L215 48z"/>
+<rect x="260" y="25" width="22" height="30" rx="8"/><rect x="295" y="25" width="22" height="30" rx="8"/><rect x="330" y="22" width="14" height="36" rx="7"/><path d="M360 30 Q380 20 385 50" stroke-width="10" fill="none"/><ellipse cx="420" cy="42" rx="18" ry="10"/>
+</g>
+<g fill="#1e293b" font-style="italic" font-weight="bold"><text x="95" y="78">Objects</text><text x="330" y="78">cylinder</text></g>
+<g fill="#1e3a8a"><path d="M25 115 q10 -25 25 -5 q10 15 -20 15" stroke="#1e3a8a" stroke-width="7" fill="none"/><ellipse cx="90" cy="112" rx="18" ry="13"/><path d="M135 102 L160 98 L165 120 L140 125z"/></g>
+<g fill="#1e293b" font-style="italic" font-weight="bold" font-size="10"><text x="10" y="142">Tube brush</text><text x="70" y="142">Soft edge</text><text x="128" y="142">sharp edge</text></g>
+<g fill="#1d4ed8"><circle cx="255" cy="105" r="10"/><path d="M240 130 q15 -20 30 0z"/><circle cx="300" cy="105" r="10"/><path d="M285 130 q15 -24 30 0z"/><ellipse cx="350" cy="112" rx="16" ry="12"/><path d="M385 100 l6 8 l8 -8 l0 22 l-14 0z"/><path d="M420 112 q15 -14 30 0 q-15 14 -30 0z M450 112 l10 -8 l0 16z"/></g>
+<g fill="#1e293b" font-style="italic" font-weight="bold" font-size="10"><text x="235" y="142">Man</text><text x="282" y="142">Woman</text><text x="335" y="142">Dog</text><text x="382" y="142">Cat</text><text x="425" y="142">Fish</text></g>
+</svg>
+endsvg

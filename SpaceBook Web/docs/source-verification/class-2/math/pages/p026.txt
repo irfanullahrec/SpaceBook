@@ -1,0 +1,55 @@
+@printed 21
+exercise Exercise 4
+q 1 | Encircle the greater number. || بڑے عدد کے گرد دائرہ لگائیں۔ || لوی عدد کې کړۍ وکاږئ.
+qp a | 18, 121
+sol 121 ## A 3-digit number is greater than a 2-digit number. || 3 ہندسی عدد 2 ہندسی عدد سے بڑا ہوتا ہے۔ || 3 رقمي عدد له 2 رقمي عدد لوی وي.
+qp b | 248, 98
+sol 248 ## A 3-digit number is greater than a 2-digit number. || 3 ہندسی عدد 2 ہندسی عدد سے بڑا ہوتا ہے۔ || 3 رقمي عدد له 2 رقمي عدد لوی وي.
+qp c | 198, 218
+sol 218 ## 2 hundreds > 1 hundred. || 2 سینکڑے > 1 سو۔ || 2 سلګونه > 1 سل.
+qp d | 600, 599
+sol 600 ## 6 hundreds > 5 hundreds. || 6 سینکڑے > 5 سینکڑے۔ || 6 سلګونه > 5 سلګونه.
+qp e | 749, 497
+sol 749 ## 7 hundreds > 4 hundreds. || 7 سینکڑے > 4 سینکڑے۔ || 7 سلګونه > 4 سلګونه.
+qp f | 899, 999
+sol 999 ## 9 hundreds > 8 hundreds. || 9 سینکڑے > 8 سینکڑے۔ || 9 سلګونه > 8 سلګونه.
+q 2 | Encircle the smaller number. || چھوٹے عدد کے گرد دائرہ لگائیں۔ || کوچني عدد کې کړۍ وکاږئ.
+qp a | 89, 100
+sol 89 ## A 2-digit number is smaller than a 3-digit number. || 2 ہندسی عدد 3 ہندسی عدد سے چھوٹا ہوتا ہے۔ || 2 رقمي عدد له 3 رقمي عدد کوچنی وي.
+qp b | 212, 169
+sol 169 ## 1 hundred < 2 hundreds. || 1 سو < 2 سینکڑے۔ || 1 سل < 2 سلګونه.
+qp c | 309, 289
+sol 289 ## 2 hundreds < 3 hundreds. || 2 سینکڑے < 3 سینکڑے۔ || 2 سلګونه < 3 سلګونه.
+qp d | 550, 505
+sol 505 ## Hundreds are the same; 0 tens < 5 tens. || سینکڑے برابر ہیں؛ 0 دہائی < 5 دہائیاں۔ || سلګونه برابر دي؛ 0 لسګونه < 5 لسګونه.
+qp e | 700, 699
+sol 699 ## 6 hundreds < 7 hundreds. || 6 سینکڑے < 7 سینکڑے۔ || 6 سلګونه < 7 سلګونه.
+qp f | 998, 989
+sol 989 ## Hundreds are the same; 8 tens < 9 tens. || سینکڑے برابر ہیں؛ 8 دہائیاں < 9 دہائیاں۔ || سلګونه برابر دي؛ 8 لسګونه < 9 لسګونه.
+q 3 | Encircle the greatest number. || سب سے بڑے عدد کے گرد دائرہ لگائیں۔ || تر ټولو لوی عدد کې کړۍ وکاږئ.
+qp a | 115, 85, 135
+sol 135 ## 115 and 135 have 1 hundred; 3 tens > 1 ten. || 115 اور 135 میں 1 سو ہے؛ 3 دہائیاں > 1 دہائی۔ || په 115 او 135 کې 1 سل دی؛ 3 لسګونه > 1 لسګون.
+qp b | 214, 275, 250
+sol 275 ## All have 2 hundreds; 7 tens is the greatest. || سب میں 2 سینکڑے ہیں؛ 7 دہائیاں سب سے زیادہ ہیں۔ || ټولو کې 2 سلګونه دي؛ 7 لسګونه تر ټولو ډېر دي.
+qp c | 390, 388, 369
+sol 390 ## All have 3 hundreds; 9 tens is the greatest, so 390 is the greatest. || سب میں 3 سینکڑے ہیں؛ 9 دہائیاں > 8 دہائیاں۔ || ټولو کې 3 سلګونه دي؛ 9 لسګونه > 8 لسګونه.
+qp d | 689, 700, 599
+sol 700 ## 7 hundreds is the greatest. || 7 سینکڑے سب سے زیادہ ہیں۔ || 7 سلګونه تر ټولو ډېر دي.
+qp e | 809, 799, 690
+sol 809 ## 8 hundreds is the greatest. || 8 سینکڑے سب سے زیادہ ہیں۔ || 8 سلګونه تر ټولو ډېر دي.
+qp f | 998, 899, 999
+sol 999 ## 998 and 999 have the same hundreds and tens; 9 ones > 8 ones. || 998 اور 999 میں سینکڑے اور دہائیاں برابر ہیں؛ 9 اکائیاں > 8 اکائیاں۔ || په 998 او 999 کې سلګونه او لسګونه برابر دي؛ 9 یووونه > 8 یووونه.
+q 4 | Encircle the smallest number. || سب سے چھوٹے عدد کے گرد دائرہ لگائیں۔ || تر ټولو کوچني عدد کې کړۍ وکاږئ.
+qp a | 105, 98, 101
+sol 98 ## 98 is the only 2-digit number. || 98 واحد 2 ہندسی عدد ہے۔ || 98 یوازینی 2 رقمي عدد دی.
+qp b | 318, 381, 183
+sol 183 ## 1 hundred is the smallest. || 1 سو سب سے کم ہے۔ || 1 سل تر ټولو کم دی.
+qp c | 510, 500, 482
+sol 482 ## 4 hundreds is the smallest. || 4 سینکڑے سب سے کم ہیں۔ || 4 سلګونه تر ټولو کم دي.
+qp d | 142, 241, 412
+sol 142 ## 1 hundred is the smallest. || 1 سو سب سے کم ہے۔ || 1 سل تر ټولو کم دی.
+qp e | 689, 660, 691
+sol 660 ## All have 6 hundreds; 6 tens is the smallest. || سب میں 6 سینکڑے ہیں؛ 6 دہائیاں سب سے کم ہیں۔ || ټولو کې 6 سلګونه دي؛ 6 لسګونه تر ټولو کم دي.
+qp f | 989, 998, 889
+sol 889 ## 8 hundreds is the smallest. || 8 سینکڑے سب سے کم ہیں۔ || 8 سلګونه تر ټولو کم دي.
+endexercise

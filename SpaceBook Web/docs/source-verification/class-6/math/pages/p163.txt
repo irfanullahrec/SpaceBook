@@ -1,0 +1,60 @@
+@printed 161
+@deco Photograph of a swimming pool beside Example 1 (decorative).
+q 3 | Look at the following measurements of a cuboid and fill the missing values. || مکعب نما کی درج ذیل پیمائشوں کو دیکھیں اور خالی قیمتیں پُر کریں۔ || د مستطیلي مکعب لاندې اندازو ته وګورئ او تشې ارزښتونه ډک کړئ.
+table
+th | Length (cm) | Width (cm) | Height (cm) | Volume (cm³) | Surface area (cm²)
+tr | a) 23 |  | 4 |  | 452
+tr | b) 21 | 14 | 7 |  |
+tr | c) | 5 | 9 | 321 |
+tr | d) 45 | 3 |  | 453 |
+endtable
+qp a | Length 23, Height 4, Surface area 452 || لمبائی 23، اونچائی 4، سطحی رقبہ 452 || اوږدوالی 23، جګوالی 4، سطحي مساحت 452
+solution Width ≈ 4.96 cm, Volume ≈ 456.3 cm³
+ss Use the surface-area formula to find the width w. || چوڑائی w معلوم کرنے کے لیے سطحی رقبے کا فارمولا استعمال کریں۔ || د پلنوالي w د موندلو لپاره د سطحي مساحت فورمول وکاروئ.
+suse lineq 2(23w + 92 + 4w) = 452|w
+ss Volume = l × w × h = 23 × 4.96 × 4 ≈ 456.3 cm³ (the answer key gives 456.32 using w = 4.96). || حجم = l × w × h = 23 × 4.96 × 4 ≈ 456.3 cm³ (جوابی کلید w = 4.96 لے کر 456.32 دیتی ہے)۔ || حجم = l × w × h = 23 × 4.96 × 4 ≈ 456.3 cm³ (د ځوابونو کلي د w = 4.96 په کارولو 456.32 ورکوي).
+endsolution
+qp b | Length 21, Width 14, Height 7 || لمبائی 21، چوڑائی 14، اونچائی 7 || اوږدوالی 21، پلنوالی 14، جګوالی 7
+solution Volume = 2058 cm³, Surface area = 1078 cm²
+suse solidq cuboid 21 14 7 cm
+endsolution
+qp c | Width 5, Height 9, Volume 321 || چوڑائی 5، اونچائی 9، حجم 321 || پلنوالی 5، جګوالی 9، حجم 321
+solution Length ≈ 7.13 cm, Surface area ≈ 289.7 cm²
+ss Volume = l × w × h, so l = Volume ÷ (w × h). || حجم = l × w × h، اس لیے l = حجم ÷ (w × h)۔ || حجم = l × w × h، نو l = حجم ÷ (w × h).
+sm l = \frac{321}{5 \times 9} = \frac{321}{45} \approx 7.13 \text{ cm}
+ss Surface area = 2 × [(l × w) + (l × h) + (w × h)] with l = 321/45. || سطحی رقبہ = 2 × [(l × w) + (l × h) + (w × h)]، جہاں l = 321/45۔ || سطحي مساحت = 2 × [(l × w) + (l × h) + (w × h)]، چې l = 321/45.
+sm 2 \times [35.67 + 64.2 + 45] \approx 289.7 \text{ cm}^2
+ss The answer key gives 289.64 cm² (using l = 7.13 rounded). || جوابی کلید 289.64 cm² دیتی ہے (l = 7.13 گول کر کے)۔ || د ځوابونو کلي 289.64 cm² ورکوي (l = 7.13 ګردوي).
+endsolution
+qp d | Length 45, Width 3, Volume 453 || لمبائی 45، چوڑائی 3، حجم 453 || اوږدوالی 45، پلنوالی 3، حجم 453
+solution Height ≈ 3.36 cm, Surface area ≈ 592.1 cm²
+sm h = \frac{453}{45 \times 3} = \frac{453}{135} \approx 3.36 \text{ cm}
+ss Surface area = 2 × [(45 × 3) + (45 × h) + (3 × h)] with h = 453/135. || سطحی رقبہ = 2 × [(45 × 3) + (45 × h) + (3 × h)]، جہاں h = 453/135۔ || سطحي مساحت = 2 × [(45 × 3) + (45 × h) + (3 × h)]، چې h = 453/135.
+sm 2 \times [135 + 151 + 10.07] \approx 592.1 \text{ cm}^2
+ss The answer key gives 592.56 cm² (using h = 3.36 rounded). || جوابی کلید 592.56 cm² دیتی ہے (h = 3.36 گول کر کے)۔ || د ځوابونو کلي 592.56 cm² ورکوي (h = 3.36 ګردوي).
+endsolution
+q 4 | Find the surface area and volume of the given cubes and cuboids. || دیے گئے مکعبوں اور مکعب نما کا سطحی رقبہ اور حجم معلوم کریں۔ || د ورکړل شوو مکعبونو او مستطیلي مکعبونو سطحي مساحت او حجم معلوم کړئ.
+qp a | Cube with edge 5 cm || 5 cm کنارے والا مکعب || د 5 cm څنډې مکعب
+solution Surface area = 150 cm², Volume = 125 cm³
+suse solidq cube 5 cm
+endsolution
+qp b | Cuboid 7 cm × 3 cm × 5 cm || مکعب نما 7 cm × 3 cm × 5 cm || مستطیلي مکعب 7 cm × 3 cm × 5 cm
+solution Surface area = 142 cm², Volume = 105 cm³
+suse solidq cuboid 7 3 5 cm
+endsolution
+qp c | Cuboid 4 m × 2 m × 3 m || مکعب نما 4 m × 2 m × 3 m || مستطیلي مکعب 4 m × 2 m × 3 m
+solution Surface area = 52 m², Volume = 24 m³
+suse solidq cuboid 4 2 3 m
+endsolution
+qp d | Cube with edge 7 m || 7 m کنارے والا مکعب || د 7 m څنډې مکعب
+solution Surface area = 294 m², Volume = 343 m³
+suse solidq cube 7 m
+endsolution
+endexercise
+@issue Exercise 8.5 Q4 parts are drawings only (labelled cubes/cuboids); a short text description of each is added for the coded version.
+@sec 8.6 | Real-Life Problems || حقیقی زندگی کے مسائل || د ورځني ژوند ستونزې
+# 8.6 Real-Life Problems || 8.6 حقیقی زندگی کے مسائل || 8.6 د ورځني ژوند ستونزې
+example 1 | A swimming pool is 8 m long, 6 m wide and 1.5 m deep. Find the capacity of the swimming pool. || ایک سوئمنگ پول 8 m لمبا، 6 m چوڑا اور 1.5 m گہرا ہے۔ سوئمنگ پول کی گنجائش معلوم کریں۔ || یو لامبو حوض 8 m اوږد، 6 m پلن او 1.5 m ژور دی. د لامبو حوض ګنجایش معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Here the depth of the pool will be taken as height. || یہاں پول کی گہرائی کو اونچائی لیا جائے گا۔ || دلته د حوض ژوروالی د جګوالي په توګه اخیستل کېږي.
+eq \begin{aligned} \text{Length of pool} &= 8 \text{ m} \\ \text{Width of pool} &= 6 \text{ m} \\ \text{Height of pool} &= 1.5 \text{ m} \\ \text{Capacity of pool} &= \text{length} \times \text{width} \times \text{height} \end{aligned}

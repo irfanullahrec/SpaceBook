@@ -1,0 +1,26 @@
+@printed 195
+@deco Pictures of a compass at each step (the coded figures show the arcs).
+example 1 | Bisect ∠POQ = 60° using a compass and ruler. || پرکار اور پیمانے کی مدد سے ∠POQ = 60° کی تنصیف کریں۔ || د پرکار او خطکش په مرسته ∠POQ = 60° نیمه کړئ.
+angcon O P | ray 60:Q | mark 60:60° || ∠POQ = 60° || ∠POQ = 60° || ∠POQ = 60°
+p **Solution:** || **حل:** || **حل:**
+p **Step I:** Place the pointer of the compass at point O and draw an arc of suitable radius that will cut the ray $\overrightarrow{OP}$ at any point A and cuts the ray $\overrightarrow{OQ}$ at any point B. || **مرحلہ I:** پرکار کی نوک نقطہ O پر رکھیں اور مناسب رداس کی قوس کھینچیں جو شعاع $\overrightarrow{OP}$ کو کسی نقطہ A پر اور شعاع $\overrightarrow{OQ}$ کو کسی نقطہ B پر قطع کرے۔ || **لومړی پړاو:** د پرکار څوکه په O ټکي کېږدئ او د مناسبې شعاع قوس رسم کړئ چې $\overrightarrow{OP}$ وړانګه په یو ټکي A کې او $\overrightarrow{OQ}$ وړانګه په یو ټکي B کې قطع کړي.
+angcon O P | arc 70 | pts 0:A 60:B | ray 60:Q || Step I: arc from O cuts OP at A and OQ at B || مرحلہ I: O سے قوس OP کو A اور OQ کو B پر قطع کرتی ہے || لومړی پړاو: له O قوس OP په A او OQ په B کې قطع کوي
+p **Step II:** Place the pointer of the compass at point A and B and draw two arcs of suitable radius that will cut each other at point C. || **مرحلہ II:** پرکار کی نوک نقطوں A اور B پر رکھیں اور مناسب رداس کی دو قوسیں کھینچیں جو ایک دوسرے کو نقطہ C پر قطع کریں۔ || **دوهم پړاو:** د پرکار څوکه په A او B ټکو کېږدئ او د مناسبې شعاع دوه قوسونه رسم کړئ چې یو بل په C ټکي کې قطع کړي.
+angcon O P | arc 70 | pts 0:A 60:B | cross 30:C:1.73 | ray 60:Q || Step II: arcs from A and B cross at C || مرحلہ II: A اور B سے قوسیں C پر قطع کرتی ہیں || دوهم پړاو: له A او B قوسونه په C کې قطع کېږي
+p **Step III:** Using a ruler draw a ray $\overrightarrow{OC}$ passing through the point C this line is bisecting the angle ∠POQ into two equal parts. So, m∠POC = m∠QOC. || **مرحلہ III:** پیمانے کی مدد سے نقطہ C سے گزرتی شعاع $\overrightarrow{OC}$ کھینچیں؛ یہ خط زاویہ ∠POQ کی دو برابر حصوں میں تنصیف کرتا ہے۔ لہٰذا m∠POC = m∠QOC۔ || **درېیم پړاو:** د خطکش په مرسته له C ټکي تېره $\overrightarrow{OC}$ وړانګه رسم کړئ؛ دا کرښه ∠POQ زاویه په دوو برابرو برخو نیموي. نو m∠POC = m∠QOC.
+angcon O P | arc 70 | pts 0:A 60:B | cross 30:-:1.73 | ray 60:Q 30:C | mark 30:30° || Step III: OC bisects ∠POQ || مرحلہ III: OC، ∠POQ کی تنصیف کرتا ہے || درېیم پړاو: OC د ∠POQ نیمونکې ده
+p **Step IV:** Using a ruler draw a ray OC passing through the point C and bisect the angle ∠POQ = 60° into two equal parts. || **مرحلہ IV:** پیمانے کی مدد سے نقطہ C سے گزرتی شعاع OC کھینچیں اور زاویہ ∠POQ = 60° کی دو برابر حصوں میں تنصیف کریں۔ || **څلورم پړاو:** د خطکش په مرسته له C ټکي تېره OC وړانګه رسم کړئ او ∠POQ = 60° زاویه په دوو برابرو برخو نیمه کړئ.
+m So, $m\angle POC = m\angle QOC = \frac{60^\circ}{2} = 30^\circ$
+endexample
+@issue Steps III and IV on page 195 repeat the same instruction (draw ray OC); kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Construct a bisector of a 70° angle using a pair of compasses. || پرکار کی مدد سے 70° کے زاویے کا ناصف بنائیں۔ || د پرکار په مرسته د 70° زاویې نیمونکې جوړه کړئ.
+endbox
+## 10.2.2 Construction of Angles using a compass || 10.2.2 پرکار کی مدد سے زاویے بنانا || 10.2.2 د پرکار په مرسته د زاویو جوړول
+example 1 | Draw ∠CAB = 60°. || ∠CAB = 60° بنائیں۔ || ∠CAB = 60° رسم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړونې پړاوونه:**
+p **Step I:** Draw a ray $\overrightarrow{AB}$ using a ruler. || **مرحلہ I:** پیمانے کی مدد سے شعاع $\overrightarrow{AB}$ کھینچیں۔ || **لومړی پړاو:** د خطکش په مرسته $\overrightarrow{AB}$ وړانګه رسم کړئ.
+angcon A B || Step I: ray AB || مرحلہ I: شعاع AB || لومړی پړاو: AB وړانګه
+p **Step II:** Place the pointer of the compass at point A and draw an arc of suitable radius that will cut the ray $\overrightarrow{AB}$ at a point P. || **مرحلہ II:** پرکار کی نوک نقطہ A پر رکھیں اور مناسب رداس کی قوس کھینچیں جو شعاع $\overrightarrow{AB}$ کو نقطہ P پر قطع کرے۔ || **دوهم پړاو:** د پرکار څوکه په A ټکي کېږدئ او د مناسبې شعاع قوس رسم کړئ چې $\overrightarrow{AB}$ وړانګه په P ټکي کې قطع کړي.
+angcon A B | arc 80 | pts 0:P || Step II: arc from A cuts AB at P || مرحلہ II: A سے قوس AB کو P پر قطع کرتی ہے || دوهم پړاو: له A قوس AB په P کې قطع کوي

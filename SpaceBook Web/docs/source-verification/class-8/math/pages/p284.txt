@@ -1,0 +1,42 @@
+@printed 282
+@issue Continuation of the standard-deviation Example 1. The last row of the Step III table prints "(x − x̄)² = 1730" (the Σ sign is missing in print; the sum of the squares is 1730 as the column adds up). The final line prints "S = 13.15 cm (correct to 4 significant figures)": the unit "cm" is printed although the data are counts of plants (kept as printed). The line "S ≈ √173" is printed with a faint sign between S and √173 and is read as "S = √173". The Step I mean is 500 ÷ 10 = 50 (checked).
+## Solution: || حل: || حل:
+p **Step I:** Find the mean. Add up all the data values, then divide them by the number of values. || **مرحلہ I:** اوسط معلوم کریں۔ تمام ڈیٹا قدروں کو جمع کریں، پھر انہیں قدروں کی تعداد سے تقسیم کریں۔ || **I پړاو:** منځنی پیدا کړئ. ټول معلوماتو قیمتونه سره جمع کړئ، بیا یې د قیمتونو په شمېر وویشئ.
+eq \text{Sum} = \sum x = 42 + 60 + 28 + 35 + 45 + 40 + 56 + 64 + 60 + 70 = 500
+eq \text{Mean} = \bar{x} = \frac{\text{Sum of marks}}{\text{Number of students}} = \frac{\sum x}{n} = \frac{500}{10} = 50
+p **Step II:** Find the difference of mean and each of the values. Subtract the mean from each value to get the deviations from the mean. Since $\bar{x}$ = 50, take away 50 from each value. || **مرحلہ II:** اوسط اور ہر قدر کا فرق معلوم کریں۔ ہر قدر میں سے اوسط منہا کریں تاکہ اوسط سے انحرافات حاصل ہوں۔ چونکہ $\bar{x}$ = 50 ہے، ہر قدر میں سے 50 منہا کریں۔ || **II پړاو:** د منځني او هر قیمت توپیر پیدا کړئ. له هر قیمت څخه منځنی تفریق کړئ ترڅو له منځني څخه انحرافات ترلاسه شي. څرنګه چې $\bar{x}$ = 50 دی، له هر قیمت څخه 50 کم کړئ.
+table Deviations from the mean || اوسط سے انحرافات || له منځني څخه انحرافات
+th | x | (x − x̄)
+tr | 42 | −8
+tr | 60 | 10
+tr | 28 | −22
+tr | 35 | −15
+tr | 45 | −5
+tr | 40 | −10
+tr | 56 | 6
+tr | 64 | 14
+tr | 60 | 10
+tr | 70 | 20
+endtable
+p **Step III:** Take square of each deviation from the mean. This will result in positive numbers. The find the sum of these squares. || **مرحلہ III:** اوسط سے ہر انحراف کا مربع لیں۔ اس سے مثبت اعداد حاصل ہوں گے۔ پھر ان مربعوں کا مجموعہ معلوم کریں۔ || **III پړاو:** له منځني څخه د هر انحراف مربع واخلئ. دا به مثبت شمېرې جوړې کړي. بیا د دې مربعاتو مجموعه پیدا کړئ.
+table Squares of the deviations || انحرافات کے مربع || د انحرافاتو مربعات
+th | x | (x − x̄) | (x − x̄)²
+tr | 42 | −8 | 64
+tr | 60 | 10 | 100
+tr | 28 | −22 | 484
+tr | 35 | −15 | 225
+tr | 45 | −5 | 25
+tr | 40 | −10 | 100
+tr | 56 | 6 | 36
+tr | 64 | 14 | 196
+tr | 60 | 10 | 100
+tr | 70 | 20 | 400
+tr |  |  | (x − x̄)² = 1730
+endtable
+p Putting the values in the formula: || قدریں فارمولے میں رکھنے پر: || قیمتونه په فورمول کې ایښودل:
+eq \text{Standard deviation} = S = \sqrt{\frac{\sum (x-\bar{x})^{2}}{n}}
+eq S = \sqrt{\frac{1730}{10}}
+eq S = \sqrt{173}
+eq S = 13.15
+p So, the standard deviation of the given data is 13.15 cm (correct to 4 significant figures) || لہٰذا دیے گئے ڈیٹا کا معیاری انحراف 13.15 cm ہے (4 بامعنی ہندسوں تک درست) || نو د ورکړل شویو معلوماتو معیاري انحراف 13.15 cm دی (تر ۴ مهمو رقمونو سم)
+endexample

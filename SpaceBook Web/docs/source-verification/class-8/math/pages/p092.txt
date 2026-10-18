@@ -1,0 +1,49 @@
+@printed 88
+@issue Section 5.1.2 prints "G = {x | x ∈ O ∧ 1 ≤ x ≤ 15}" using O for odd numbers; kept as printed.
+svg Parts of set builder notation || سیٹ بلڈر علامت کے حصے || د سېټ جوړونکې نښې برخې
+<svg viewBox="0 0 470 96" width="470" role="img" aria-label="N = {x | x is a natural number}: x stands for all elements, the bar means such that, and the part after the bar is the condition; similarly N = {x | x ∈ N}" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">
+<text x="10" y="24">N = {<tspan font-style="italic">x</tspan> | <tspan font-style="italic">x</tspan> is a natural number}</text>
+<path d="M98 30v6h150v-6" fill="none" stroke="#0f172a"/><text x="173" y="50" font-size="11" text-anchor="middle">Condition</text>
+<path d="M54 30q-14 20 -20 40" fill="none" stroke="#dc2626"/><text x="30" y="86" font-size="11" fill="#dc2626">All elements</text>
+<path d="M70 30q10 24 30 40" fill="none" stroke="#0f172a"/><text x="96" y="86" font-size="11">Such that</text>
+<text x="300" y="24">N = {<tspan font-style="italic">x</tspan> | <tspan font-style="italic">x</tspan> ∈ N}</text>
+<path d="M386 30v6h40v-6" fill="none" stroke="#0f172a"/><text x="406" y="50" font-size="11" text-anchor="middle">Condition</text>
+<path d="M344 30q-14 20 -20 40" fill="none" stroke="#dc2626"/><text x="300" y="86" font-size="11" fill="#dc2626">All elements</text>
+<path d="M360 30q10 24 30 40" fill="none" stroke="#0f172a"/><text x="378" y="86" font-size="11">Such that</text>
+</svg>
+endsvg
+p Some examples are given below. || کچھ مثالیں نیچے دی گئی ہیں۔ || ځینې بېلګې لاندې ورکړل شوې دي.
+m a) Y = $\{x \mid x$ is an integer, $x > -4\}$, or
+m Y = $\{x \mid x \in Y \wedge x > -4\}$
+p We read it as: "Y is the set of all elements x such that x is an integer and it is greater than −4". We can write it in tabular form as: Y = {−3, −2, −1, 0, +1, +2, +3, ...}. || ہم اسے یوں پڑھتے ہیں: "Y تمام ارکان x کا سیٹ ہے اس طرح کہ x ایک صحیح عدد ہے اور یہ −4 سے بڑا ہے"۔ ہم اسے جدولی شکل میں یوں لکھ سکتے ہیں: Y = {−3, −2, −1, 0, +1, +2, +3, ...}۔ || موږ یې داسې لولو: "Y د ټولو x عناصرو سېټ دی داسې چې x یو تام عدد دی او له −4 څخه لوی دی". په جدولي بڼه یې داسې لیکلی شو: Y = {−3, −2, −1, 0, +1, +2, +3, ...}.
+m b) T = $\{x \mid x$ is an odd number, $5 \leq x \leq 11\}$ or
+m T = $\{x \mid x \in T \wedge 5 \leq x \leq 11\}$
+p We read it as; "T is the set of all elements x such that x is an odd number which is greater than or equal to 5 and less than or equal to 11. || ہم اسے یوں پڑھتے ہیں؛ "T تمام ارکان x کا سیٹ ہے اس طرح کہ x ایک طاق عدد ہے جو 5 سے بڑا یا برابر اور 11 سے کم یا برابر ہے۔ || موږ یې داسې لولو؛ "T د ټولو x عناصرو سېټ دی داسې چې x یو طاق عدد دی چې له 5 څخه لوی یا برابر او له 11 څخه کوچنی یا برابر دی.
+m Thus, we write it in tabular form as: T = {5, 7, 9, 11}
+m c) F = $\{x \mid x =$ vowels in the English alphabet$\}$
+m Thus, we write it in tabular form as: F = {a, e, i, o, u}
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A set can be written by using ":" instead of "|". For example, set builder notation of natural numbers is: N = $\{x : x$ is a natural number$\}$. || سیٹ کو "|" کی جگہ ":" استعمال کر کے بھی لکھا جا سکتا ہے۔ مثال کے طور پر قدرتی اعداد کی سیٹ بلڈر علامت ہے: N = $\{x : x$ ایک قدرتی عدد ہے$\}$۔ || سېټ د "|" پر ځای د ":" په کارولو هم لیکل کېدای شي. د بېلګې په توګه، د طبیعي عددونو د سېټ جوړونکې نښه ده: N = $\{x : x$ یو طبیعي عدد دی$\}$.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Think of a set of your own choice and then write it in descriptive, tabular and set builder forms. || اپنی پسند کا ایک سیٹ سوچیں اور پھر اسے بیانیہ، جدولی اور سیٹ بلڈر شکلوں میں لکھیں۔ || د خپلې خوښې یو سېټ په پام کې ونیسئ او بیا یې په تشریحي، جدولي او د سېټ جوړونکې بڼو ولیکئ.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Express the following sets in set builder notation: || درج ذیل سیٹوں کو سیٹ بلڈر علامت میں ظاہر کریں: || لاندې سېټونه د سېټ جوړونکې په نښه وښایاست:
+qp i | {3, 5, 7, 9, ....21}
+qp ii | {3, 6, 9, 12, ....30}
+qp iii | {2, 3, 5, 7, 11, 17}
+qp iv | {a, e, i, o, u}
+qp v | {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Which of the following sets is in set builder form? || درج ذیل میں سے کون سا سیٹ سیٹ بلڈر شکل میں ہے؟ || په لاندې کې کوم سېټ د سېټ جوړونکې په بڼه دی؟
+m U = {1, 2, 3, 4} $\qquad$ V = $\{x \mid x \in Z \wedge x > 3\}$
+m F = the set of seven colours of the rainbow
+endbox
+## 5.1.2 Set Notation through Venn Diagram || 5.1.2 وین ڈایاگرام کے ذریعے سیٹ کی علامت || 5.1.2 د وین ډیاګرام له لارې د سېټ نښه
+p **Let's represent one set contains odd numbers from 1 to 15 and factors of 24 between 1 to 15.** || **آئیے ایک سیٹ ظاہر کریں جس میں 1 سے 15 تک طاق اعداد اور 1 سے 15 کے درمیان 24 کے اجزائے ضربی ہوں۔** || **راځئ یو سېټ وښیو چې له 1 څخه تر 15 پورې طاق عددونه او له 1 څخه تر 15 پورې د 24 عاملونه ولري.**
+m If G = $\{x \mid x \in O \wedge 1 \leq x \leq 15\}$ and
+m F = $\{x \mid x \in$ factors of 24 $\wedge 1 \leq x \leq 15\}$
+venn sets=G,F | a=13 15 5 7 9 11 | ab=1 3 | b=2 4 6 8 12 | note=G: Odd numbers less than or equal to 15;F: Factors of 24 less than or equal to 15;Middle: Both odd and factors of 24 less than or equal to 15
+p Similarly, we can represent different sets in Venn diagram. || اسی طرح ہم مختلف سیٹوں کو وین ڈایاگرام میں ظاہر کر سکتے ہیں۔ || همدارنګه موږ بېلابېل سېټونه په وین ډیاګرام کې ښودلی شو.

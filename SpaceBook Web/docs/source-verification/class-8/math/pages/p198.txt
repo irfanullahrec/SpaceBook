@@ -1,0 +1,34 @@
+@printed 190
+@deco Two cartoon cyclists on gentle and steep green hills (illustrating rise and run), and four small line-with-cyclist sketches for positive, negative, zero and undefined gradient; recreated as a simple diagram.
+@issue The section is numbered 8.9 (no 8.8 is printed); the previous-knowledge item prints "Draw a graph of linear equation 2x+ 3y= 5"; kept as printed.
+@sec 8.9 | Gradient of a Straight Line || سیدھی لکیر کا ڈھلوان || د مستقیمې کرښې میل
+# 8.9 Gradient of a Straight Line || 8.9 سیدھی لکیر کا ڈھلوان || 8.9 د مستقیمې کرښې میل
+p Gradient is simply the measure of steepness. When we climb up a hilly road, or driving uphill, it is much more effort taking than driving or walking on a straight road or a downhill. Mathematically, we define gradient (also called slope) as "the rise over run". The vertical change between two points is called the rise, and the horizontal change is called the run. || ڈھلوان محض کھڑے پن کی پیمائش ہے۔ جب ہم پہاڑی سڑک پر چڑھتے ہیں یا اوپر کی طرف گاڑی چلاتے ہیں تو یہ سیدھی سڑک یا ڈھلان پر چلنے یا گاڑی چلانے سے کہیں زیادہ محنت طلب ہوتا ہے۔ ریاضیاتی طور پر ہم ڈھلوان (جسے سلوپ بھی کہتے ہیں) کی تعریف "رائز بٹا رن" کے طور پر کرتے ہیں۔ دو نقاط کے درمیان عمودی تبدیلی رائز اور افقی تبدیلی رن کہلاتی ہے۔ || میل په ساده ډول د ځوړتیا اندازه ده. کله چې پر غرنۍ لار پورته خېژو، یا پورته موټر چلوو، دا پر مستقیمه لار یا ځوړ ته د تګ یا موټر چلولو په پرتله ډېره هڅه غواړي. په ریاضیاتي ډول میل (چې سلوپ هم بلل کېږي) د "رایز پر رن" په توګه تعریفوو. د دوو ټکو تر منځ عمودي بدلون رایز او افقي بدلون رن بلل کېږي.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینۍ پوهې ازموینه
+- What is Cartesian coordinate plane? || کارتیسی محددی سطح کیا ہے؟ || کارتیزي کوارډینېټ مستوي څه دی؟
+- Draw a graph of linear equation $2x + 3y = 5$ || خطی مساوات $2x + 3y = 5$ کا گراف بنائیں || د خطي معادلې $2x + 3y = 5$ ګراف رسم کړئ
+- Write two linear equations in one and two variables. || ایک اور دو متغیرات میں دو خطی مساواتیں لکھیں۔ || په یوه او دوو متغیرونو کې دوه خطي معادلې ولیکئ.
+endbox
+p Observe the figures below. In the right-side image, the hill is a lot steeper than the left one. Obviously its much difficult to ride the bicycle there. || نیچے دی گئی شکلوں کا مشاہدہ کریں۔ دائیں طرف کی تصویر میں پہاڑی بائیں والی سے کہیں زیادہ کھڑی ہے۔ ظاہر ہے وہاں سائیکل چلانا بہت مشکل ہے۔ || لاندې شکلونه وګورئ. په ښي انځور کې غونډۍ د کیڼې په پرتله ډېره ځوړه ده. څرګنده ده چې هلته بایسکل چلول ډېر ګران دي.
+svg Gentle and steep hills: rise and run || ہلکی اور کھڑی پہاڑیاں: رائز اور رن || نرمه او ځوړه غونډۍ: رایز او رن
+<svg viewBox="0 0 460 150" width="460" role="img" aria-label="Two hills: a gentle slope with a small rise over a long run, and a steep slope with a large rise over the same run" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M20 120H180V70L20 95Z" fill="#86efac" stroke="#15803d"/><line x1="190" y1="72" x2="190" y2="118" stroke="#0f172a" stroke-width="1.2"/><text transform="translate(206 110) rotate(-90)">Rise</text><text x="100" y="140" text-anchor="middle">Run</text>
+<path d="M260 120H420V20L260 120Z" fill="#5eead4" stroke="#0f766e"/><line x1="430" y1="22" x2="430" y2="118" stroke="#0f172a" stroke-width="1.2"/><text transform="translate(446 110) rotate(-90)">Rise</text><text x="340" y="140" text-anchor="middle">Run</text>
+</svg>
+endsvg
+svg Positive, negative, zero and undefined gradient || مثبت، منفی، صفر اور غیر معین ڈھلوان || مثبت، منفي، صفر او ناټاکلی میل
+<svg viewBox="0 0 460 230" width="460" role="img" aria-label="Four sketches: a line rising left to right (positive gradient), a line falling left to right (negative gradient), a horizontal line (gradient 0) and a vertical line (gradient undefined)" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#0f172a">
+<line x1="230" y1="4" x2="230" y2="226" stroke="#7f1d1d"/><line x1="4" y1="115" x2="456" y2="115" stroke="#7f1d1d"/>
+<text x="10" y="18">The gradient is positive when the line</text><text x="10" y="32">moves upward from left to right.</text>
+<line x1="60" y1="100" x2="170" y2="45" stroke="#15803d" stroke-width="3"/>
+<text x="240" y="18">The gradient is negative when it</text><text x="240" y="32">moves downwards from left to right.</text>
+<line x1="290" y1="45" x2="400" y2="100" stroke="#15803d" stroke-width="3"/>
+<text x="10" y="134">The gradient is 0 when the line is</text><text x="10" y="148">horizontal.</text>
+<line x1="60" y1="190" x2="170" y2="190" stroke="#15803d" stroke-width="3"/>
+<text x="240" y="134">The gradient is undefined and can't</text><text x="240" y="148">be calculated when the line is vertical.</text>
+<line x1="345" y1="160" x2="345" y2="215" stroke="#15803d" stroke-width="3"/>
+</svg>
+endsvg
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Tell students about the gradient of the straight line and how to find the value of gradient. Use various real-life examples to explain the concept. Practically move a line to change the gradients and ask the students how does it effect on x and y coordinates. Then plot a graph and ask students to find the value of gradient from the graph. || طلبہ کو سیدھی لکیر کے ڈھلوان اور اس کی قیمت معلوم کرنے کے طریقے کے بارے میں بتائیں۔ تصور سمجھانے کے لیے حقیقی زندگی کی مختلف مثالیں استعمال کریں۔ عملی طور پر لکیر کو حرکت دے کر ڈھلوان بدلیں اور طلبہ سے پوچھیں کہ اس کا x اور y محددات پر کیا اثر پڑتا ہے۔ پھر گراف بنائیں اور طلبہ سے گراف سے ڈھلوان کی قیمت معلوم کرنے کو کہیں۔ || زده کوونکو ته د مستقیمې کرښې د میل او د میل د ارزښت د موندلو په اړه ووایاست. د مفهوم د تشریح لپاره د ریښتیني ژوند بېلابېلې بېلګې وکاروئ. په عملي ډول کرښه وخوځوئ ترڅو میل بدل شي او له زده کوونکو وپوښتئ چې پر x او y کوارډینېټونو څه اغېز کوي. بیا ګراف رسم کړئ او له زده کوونکو وغواړئ چې له ګراف څخه د میل ارزښت ومومي.
+endbox

@@ -1,0 +1,34 @@
+@printed 177
+@issue The verification of x + 4y = 2 prints "2 − 0 = 2" (should be 2 + 0); kept as printed.
+p **Verification:** || **تصدیق:** || **تایید:**
+p We must verify the solution to avoid any mistake. || کسی غلطی سے بچنے کے لیے ہمیں حل کی تصدیق کرنی چاہیے۔ || د هرې تېروتنې د مخنیوي لپاره باید حل تایید کړو.
+m Put $x = 2$ and $y = 0$ in both equations.
+m $2x + y = 4 \qquad x + 4y = 2$
+m $4 + 0 = 4 \qquad 2 - 0 = 2$
+m $4 = 4 \qquad 2 = 2$
+p As the solution satisfies both the equations, so (2, 0) is the solution for the given simultaneous linear equation. || چونکہ حل دونوں مساواتوں کو پورا کرتا ہے، اس لیے (2, 0) دی گئی ہم وقت خطی مساوات کا حل ہے۔ || څرنګه چې حل دواړه معادلې پوره کوي، نو (2, 0) د ورکړل شوې همزمانه خطي معادلې حل دی.
+endexample
+example 3
+p Solve the following system of linear equations graphically. || درج ذیل خطی مساواتوں کے نظام کو گرافی طریقے سے حل کریں۔ || د خطي معادلو لاندې سیسټم په ګرافي ډول حل کړئ.
+m $3x + 6y = 9$
+m $x + 2y = 3$
+## Solution: || حل: || حل:
+p First find the ordered pairs satisfying these equations. || پہلے ان مساواتوں کو پورا کرنے والے مرتب جوڑے معلوم کریں۔ || لومړی هغه مرتبې جوړې ومومئ چې دا معادلې پوره کوي.
+m Put $x = 0$ in $3x + 6y = 9$
+m $3(0) + 6y = 9$
+m $6y = 9$
+m $y = \frac{3}{2}$
+m Put $y = 0$ in $3x + 6y = 9$
+m $3x + 6(0) = 9$
+m $3x = 9$
+m $x = 3$
+m Put $x = -1$ in $3x + 6y = 9$
+m $3(-1) + 6y = 9$
+m $-3 + 6y = 9$
+m $6y = 12$
+m $y = 2$
+p So, $\left(0, \frac{3}{2}\right)$, (3, 0) and (−1, 2) are the ordered pairs satisfying the equation $3x + 6y = 9$. || لہٰذا $\left(0, \frac{3}{2}\right)$، (3, 0) اور (−1, 2) وہ مرتب جوڑے ہیں جو مساوات $3x + 6y = 9$ کو پورا کرتے ہیں۔ || نو $\left(0, \frac{3}{2}\right)$، (3, 0) او (−1, 2) هغه مرتبې جوړې دي چې د $3x + 6y = 9$ معادله پوره کوي.
+m Now put $x = 0$ in $x + 2y = 3$.
+m $0 + 2y = 3$
+m $2y = 3$
+m $y = \frac{3}{2}$

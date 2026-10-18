@@ -1,0 +1,23 @@
+@printed 49
+@deco Duck pond scene: 2 ducks swim in the pond and 4 ducks stand on the grass.
+exercise Count and add (Page 49)
+q 1 | Strawberries (5 and 4) || اسٹرابیریاں (۵ اور ۴) || سټرابېرۍ (۵ او ۴)
+cnt [] strawberry:5 | "+" [] strawberry:4 | [] || strawberries || اسٹرابیریاں || سټرابېرۍ
+sol 5 + 4 = 9 ## 5 and 4 make 9. || ۵ اور ۴ مل کر ۹۔ || ۵ او ۴ ګډ ۹.
+q 2 | Strawberries (4 and 3) || اسٹرابیریاں (۴ اور ۳) || سټرابېرۍ (۴ او ۳)
+cnt [] strawberry:4 | "+" [] strawberry:3 | [] || strawberries || اسٹرابیریاں || سټرابېرۍ
+sol 4 + 3 = 7 ## 4 and 3 make 7. || ۴ اور ۳ مل کر ۷۔ || ۴ او ۳ ګډ ۷.
+p Look at the picture and fill in the blanks. || تصویر دیکھیں اور خالی جگہیں پُر کریں۔ || انځور وګورئ او تش ځایونه ډک کړئ.
+q 3 | ____ ducks are in the water and ____ ducks are out of the water. ____ + ____ = ____. There are ____ ducks altogether. || ____ بطخیں پانی میں ہیں اور ____ بطخیں پانی سے باہر ہیں۔ ____ + ____ = ____۔ کل ____ بطخیں ہیں۔ || ____ هیلۍ په اوبو کې دي او ____ هیلۍ له اوبو بهر دي. ____ + ____ = ____. ټولې ____ هیلۍ دي.
+cnt duck.white:2 frame "in_water" | duck.white:4 frame "out_of_water" || 2 ducks in the pond, 4 ducks on the grass || ۲ بطخیں تالاب میں، ۴ گھاس پر || ۲ هیلۍ په ډنډ کې، ۴ په واښو
+sol 2 ducks are in the water and 4 ducks are out of the water. 2 + 4 = 6. There are 6 ducks altogether. ## Count the ducks in the pond, then those on the grass, and add. || تالاب کی بطخیں گنیں، پھر گھاس والی، اور جمع کریں۔ || په ډنډ کې هیلۍ وشمېرئ، بیا په واښو، او جمع یې کړئ.
+p Write the number in the boxes. || خانوں میں عدد لکھیں۔ || په خونو کې عدد ولیکئ.
+q 4 | 5 + __ = __ || ۵ + __ = __ || ۵ + __ = __
+cnt [5] apple:5/3 frame "+" apple:4/2 frame [] "=" [] || 5 apples and 4 apples || ۵ سیب اور ۴ سیب || ۵ مڼې او ۴ مڼې
+sol 5 + 4 = 9 ## The second box has 4 apples; 5 + 4 = 9. || دوسرے خانے میں ۴ سیب ہیں؛ ۵ + ۴ = ۹۔ || په دویمه خونه کې ۴ مڼې دي؛ ۵ + ۴ = ۹.
+q 5 | __ + 3 = __ || __ + ۳ = __ || __ + ۳ = __
+cnt [] apple:5/3 frame "+" apple:3 frame [3] "=" [] || 5 apples and 3 apples || ۵ سیب اور ۳ سیب || ۵ مڼې او ۳ مڼې
+sol 5 + 3 = 8 ## The first box has 5 apples; 5 + 3 = 8. || پہلے خانے میں ۵ سیب ہیں؛ ۵ + ۳ = ۸۔ || په لومړۍ خونه کې ۵ مڼې دي؛ ۵ + ۳ = ۸.
+q 6 | 1 + 5 = __ || ۱ + ۵ = __ || ۱ + ۵ = __
+cnt [1] apple:1 frame "+" apple:5/3 frame [5] "=" [] || 1 apple and 5 apples || ۱ سیب اور ۵ سیب || ۱ مڼه او ۵ مڼې
+sol 6 ## 1 + 5 = 6 || ۱ + ۵ = ۶ || ۱ + ۵ = ۶

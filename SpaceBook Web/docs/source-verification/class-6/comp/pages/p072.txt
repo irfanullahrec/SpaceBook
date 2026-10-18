@@ -1,0 +1,35 @@
+@printed 68
+@status lesson
+- **'go to random position'** takes the sprite to a random position on the screen, whenever it is clicked. || **’go to random position‘** کلک کرنے پر اسپرائٹ کو اسکرین پر کسی بے ترتیب جگہ لے جاتا ہے۔ || **'go to random position'** په هر کلیک سپرایټ پر پرده یو تصادفي ځای ته وړي.
+- **'go to x:y'** which relocates the sprite to the coordinates on stage. When the block is clicked the sprite will move to the provided coordinates in the block with respect to center of stage. || **’go to x:y‘** اسپرائٹ کو اسٹیج پر دیے گئے نقاط پر لے جاتا ہے۔ بلاک پر کلک کرنے سے اسپرائٹ اسٹیج کے مرکز کے لحاظ سے بلاک میں دیے گئے نقاط پر چلا جاتا ہے۔ || **'go to x:y'** سپرایټ د سټېج ورکړل شوو همغږو ته وړي؛ د سټېج د مرکز په پرتله.
+svg Motion blocks: [ go to (random position ▾) ] and [ go to x: (-15) y: (79) ]. || حرکت کے بلاک: go to random position اور go to x: -15 y: 79۔ || د خوځښت بلاکونه: go to random position او go to x: -15 y: 79.
+<svg viewBox="0 0 300 90" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" role="img" aria-label="go to blocks">
+<rect x="10" y="8" width="240" height="32" rx="6" fill="#1e3a8a"/><text x="22" y="30" fill="#fff" font-weight="bold">go to</text><text x="80" y="30" fill="#e0e7ff">random position ▾</text>
+<rect x="10" y="50" width="220" height="32" rx="6" fill="#1e3a8a"/><text x="22" y="72" fill="#fff" font-weight="bold">go to  x:</text>
+<rect x="95" y="56" width="44" height="20" rx="10" fill="#fff"/><text x="103" y="71" fill="#1e293b">-15</text><text x="148" y="72" fill="#fff" font-weight="bold">y:</text>
+<rect x="170" y="56" width="40" height="20" rx="10" fill="#fff"/><text x="180" y="71" fill="#1e293b">79</text>
+</svg>
+endsvg
+p You can further change the coordinates and see the resulting placement of the sprite. || آپ نقاط مزید بدل کر اسپرائٹ کی نئی جگہ دیکھ سکتے ہیں۔ || همغږې نورې بدلې کړئ او د سپرایټ نوی ځای وګورئ.
+box teach | Activity || سرگرمی || فعالیت
+p Try changing the position and notice the change in position of the sprite. || جگہ بدل کر دیکھیں اور اسپرائٹ کی جگہ میں تبدیلی نوٹ کریں۔ || ځای بدل کړئ او د سپرایټ په ځای کې بدلون وګورئ.
+endbox
+@sec 4.3 | Fundamentals of Scratch Constructs || اسکریچ کی بنیادی ساختیں || د سکرېچ بنسټیز جوړښتونه
+# 4.3 Fundamentals of Scratch Constructs || 4.3 اسکریچ کی بنیادی ساختیں || 4.3 د سکرېچ بنسټیز جوړښتونه
+## 4.3.1 Events || 4.3.1 ایونٹس || 4.3.1 پېښې
+p An event is an act that the program understand and responds accordingly, for example a key stroke or a mouse click. For the 'Rocket' sprite shown in figure we have created an event for the keyboard named as **'when space key pressed'.** The sprite's direction changes when 'space bar' is pressed. Note the value of -90 for **'point in direction'** motion script. || ایونٹ وہ عمل ہے جسے پروگرام سمجھ کر اس کے مطابق ردِ عمل دیتا ہے، مثلاً کوئی کی دبانا یا ماؤس کلک۔ شکل میں دکھائے گئے ’Rocket‘ اسپرائٹ کے لیے ہم نے کی بورڈ کا ایونٹ **’when space key pressed‘** بنایا ہے۔ اسپیس بار دبانے پر اسپرائٹ کی سمت بدل جاتی ہے۔ **’point in direction‘** حرکت کے اسکرپٹ میں -90 کی قدر نوٹ کریں۔ || پېښه هغه کړنه ده چې پروګرام یې پېژني او غبرګون ښيي، لکه د کیلي کېکاږل یا د موږک کلیک. د 'Rocket' سپرایټ لپاره د کیبورډ پېښه **'when space key pressed'** جوړه شوې؛ د سپېس په کېکاږلو یې لوری بدلېږي. په **'point in direction'** کې -90 ته پام وکړئ.
+p For mouse click we add **'when this sprite clicked'** event. In this way, whenever the sprite is clicked, the image returns to its initial position. || ماؤس کلک کے لیے ہم **’when this sprite clicked‘** ایونٹ شامل کرتے ہیں۔ اس طرح جب بھی اسپرائٹ پر کلک ہو، تصویر اپنی ابتدائی جگہ (سمت) پر واپس آ جاتی ہے۔ || د موږک کلیک لپاره **'when this sprite clicked'** پېښه ورزیاتوو؛ هر کلیک انځور خپل لومړي حالت ته راګرځوي.
+svg Event for keyboard: [ when (space ▾) key pressed ] → [ point in direction (-90) ]. Event for mouse: [ when this sprite clicked ] → [ point in direction (90) ]. (a) Initial position: the rocket points up-right; (b) Resultant output: the rocket points left. || کی بورڈ ایونٹ: اسپیس دبانے پر سمت -90؛ ماؤس ایونٹ: کلک پر سمت 90۔ || د کیبورډ پېښه: سپېس ← لوری -90؛ د موږک پېښه: کلیک ← لوری 90.
+<svg viewBox="0 0 460 120" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13" role="img" aria-label="Event scripts">
+<rect x="10" y="8" width="270" height="28" rx="12" fill="#ffbf00"/><text x="22" y="27" fill="#fff" font-weight="bold">when  space ▾  key pressed</text>
+<rect x="10" y="36" width="250" height="26" rx="4" fill="#4c97ff"/><text x="22" y="54" fill="#fff" font-weight="bold">point in direction</text><rect x="190" y="40" width="44" height="18" rx="9" fill="#fff"/><text x="198" y="54" fill="#1e293b">-90</text>
+<rect x="300" y="22" width="150" height="34" fill="#fbcfe8" stroke="#db2777"/><text x="310" y="44" fill="#1e293b" font-weight="bold">Event for keyboard</text>
+<rect x="10" y="70" width="230" height="28" rx="12" fill="#ffbf00"/><text x="22" y="89" fill="#fff" font-weight="bold">when this sprite clicked</text>
+<rect x="10" y="98" width="250" height="20" rx="4" fill="#4c97ff"/><text x="22" y="113" fill="#fff" font-weight="bold">point in direction</text><rect x="190" y="100" width="40" height="16" rx="8" fill="#fff"/><text x="200" y="113" fill="#1e293b">90</text>
+<rect x="300" y="80" width="150" height="34" fill="#fbcfe8" stroke="#db2777"/><text x="310" y="102" fill="#1e293b" font-weight="bold">Event for mouse</text>
+</svg>
+endsvg
+@deco Pictures of the rocket sprite: (a) Initial position, (b) Resultant output after the space key turns it.
+@issue In Scratch, "point in direction 90" makes a sprite face right (its normal starting direction), so clicking resets it; the text calls this "returns to its initial position", meaning initial direction.
+## 4.3.2 Moving an Object Using Loop || 4.3.2 لوپ کے ذریعے شے کو حرکت دینا || 4.3.2 د لوپ په مرسته د شي خوځول
+p In Scratch, a loop is used to perform an action again and again. In the example scenario, here the rocket sprite is moved 10 steps for 10 times via a loop. Loop is useful in a sense that rather than applying 10 **'glide'** instructions with **'go to'** command, we can simply enclose the task in the loop. The **'wait'** command of 1 second is useful to track the output. || اسکریچ میں کسی عمل کو بار بار کرنے کے لیے لوپ استعمال ہوتا ہے۔ اس مثال میں راکٹ اسپرائٹ کو لوپ کے ذریعے 10 بار 10 قدم چلایا گیا ہے۔ لوپ اس لحاظ سے مفید ہے کہ **’go to‘** کے ساتھ 10 بار **’glide‘** لکھنے کے بجائے ہم کام کو لوپ میں بند کر دیتے ہیں۔ ایک سیکنڈ کا **’wait‘** حکم نتیجے کو دیکھنے میں مدد دیتا ہے۔ || په سکرېچ کې لوپ یو کار بیا بیا کوي. دلته راکټ په لوپ 10 ځله 10 ګامه خوځېږي. د 10 ځله **'glide'** او **'go to'** پر ځای کار په لوپ کې ایښودل کېږي. د یوې ثانیې **'wait'** پایله تعقیبوي.

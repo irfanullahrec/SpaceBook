@@ -1,0 +1,50 @@
+@printed 101
+q 5 | Define difference of sets. If S = {2, 3, 4}, U = {0, 2, 4} and V = {3, 7, 9}, then find: || سیٹوں کے فرق کی تعریف کریں۔ اگر S = {2, 3, 4}، U = {0, 2, 4} اور V = {3, 7, 9} ہوں تو معلوم کریں: || د سېټونو د توپیر تعریف وکړئ. که S = {2, 3, 4}، U = {0, 2, 4} او V = {3, 7, 9} وي، معلوم کړئ:
+qp a | S − U
+qp b | S − V
+qp c | U − V
+qp d | U − S
+qp e | V − S
+qp f | V − U
+q 6 | If A = {3, 5, 7, 9}, B = {2, 3, 4, 5} and K = {1, 5, 10, 15}, then find: || اگر A = {3, 5, 7, 9}، B = {2, 3, 4, 5} اور K = {1, 5, 10, 15} ہوں تو معلوم کریں: || که A = {3, 5, 7, 9}، B = {2, 3, 4, 5} او K = {1, 5, 10, 15} وي، معلوم کړئ:
+qp a | $A \cup B \cup K$
+qp b | $A \cap B \cap K$
+q 7 | If X = {1, 2, 3, ..., 20}, Y = {2, 4, 6, 8, 10, ...} and W = {0, 1, 2, 3, 4, ...}, then find: || اگر X = {1, 2, 3, ..., 20}، Y = {2, 4, 6, 8, 10, ...} اور W = {0, 1, 2, 3, 4, ...} ہوں تو معلوم کریں: || که X = {1, 2, 3, ..., 20}، Y = {2, 4, 6, 8, 10, ...} او W = {0, 1, 2, 3, 4, ...} وي، معلوم کړئ:
+qp a | $X \cup Y \cup W$
+qp b | $X \cap Y \cap W$
+q 8 | If L = {1, 3, 4, 5, 6, 7, 8} and M = ∅, then find: || اگر L = {1, 3, 4, 5, 6, 7, 8} اور M = ∅ ہوں تو معلوم کریں: || که L = {1, 3, 4, 5, 6, 7, 8} او M = ∅ وي، معلوم کړئ:
+qp a | $L \cup M$
+qp b | $L \cap M$
+q 9 | If U = {1, 2, 3, 4, ..., 20}, B = {1, 3, 5, 7, 9, 11}, and D = {2, 4, 6, 8, 10}, then verify the following. || اگر U = {1, 2, 3, 4, ..., 20}، B = {1, 3, 5, 7, 9, 11} اور D = {2, 4, 6, 8, 10} ہوں تو درج ذیل کی تصدیق کریں۔ || که U = {1, 2, 3, 4, ..., 20}، B = {1, 3, 5, 7, 9, 11} او D = {2, 4, 6, 8, 10} وي، لاندې تایید کړئ.
+qp a | $B' \cup B = U$
+qp b | $D \cap D' = \varnothing$
+qp c | $U' = \varnothing$
+qp d | $\varnothing' = U$
+qp e | $U' \cup B = B$
+qp f | $(B \cup D)^c = B^c \cap D^c$
+qp g | $B \cup \varnothing = B$
+qp h | $(B \cap D)^c = B^c \cup D^c$
+endexercise
+box info | Think Higher || اعلیٰ سوچ || لوړ فکر
+- Take all classroom objects as universal set and make some subsets of that universal set. || جماعت کی تمام اشیاء کو عالمگیر سیٹ مانیں اور اس عالمگیر سیٹ کے کچھ ذیلی سیٹ بنائیں۔ || د ټولګي ټول شیان نړیوال سېټ وګڼئ او د هغه نړیوال سېټ ځینې فرعي سېټونه جوړ کړئ.
+- Make three sets of your own choice and take one set as universal set and then perform different operations on sets. || اپنی پسند کے تین سیٹ بنائیں اور ایک سیٹ کو عالمگیر سیٹ مانیں اور پھر سیٹوں پر مختلف عملیات کریں۔ || د خپلې خوښې درې سېټونه جوړ کړئ، یو سېټ نړیوال سېټ وګڼئ او بیا پر سېټونو بېلابېلې عملیې ترسره کړئ.
+endbox
+@sec u6-summary | Summary || خلاصہ || لنډیز
+# Summary || خلاصہ || لنډیز
+- A "set" as a collection of Well-defined and Distinct objects. || "سیٹ" واضح طور پر متعین اور الگ الگ اشیاء کا مجموعہ ہے۔ || "سېټ" د ښه ټاکل شویو او جلا جلا شیانو ټولګه ده.
+- Union of two given sets is the largest set which contains all the elements of both sets. || دو دیے گئے سیٹوں کا یونین وہ سب سے بڑا سیٹ ہے جس میں دونوں سیٹوں کے تمام ارکان ہوں۔ || د دوو ورکړل شویو سېټونو یووالی هغه تر ټولو لوی سېټ دی چې د دواړو سېټونو ټول غړي ولري.
+- Intersection of two given sets is the smallest set which contains all the elements that are common to both sets. || دو دیے گئے سیٹوں کا انٹرسیکشن وہ سب سے چھوٹا سیٹ ہے جس میں دونوں سیٹوں کے تمام مشترک ارکان ہوں۔ || د دوو ورکړل شویو سېټونو تقاطع هغه تر ټولو کوچنی سېټ دی چې د دواړو سېټونو ټول ګډ غړي ولري.
+- The difference A − B is a set of all those elements of set A which are not the element of set B. It is denoted by A − B or A\B. || فرق A − B سیٹ A کے ان تمام ارکان کا سیٹ ہے جو سیٹ B کے رکن نہیں۔ اسے A − B یا A\B سے ظاہر کیا جاتا ہے۔ || توپیر A − B د سېټ A د هغو ټولو غړو سېټ دی چې د سېټ B غړي نه دي. په A − B یا A\B ښودل کېږي.
+- Two sets are said to be disjoint, if they have no common elements. || دو سیٹوں کو غیر مشترک کہتے ہیں اگر ان میں کوئی مشترک رکن نہ ہو۔ || دوه سېټونه جلا بلل کېږي که هېڅ ګډ غړی ونه لري.
+- Two sets are said to be overlapping sets if they contain at least one element in common. || دو سیٹوں کو مشترک سیٹ کہتے ہیں اگر ان میں کم از کم ایک مشترک رکن ہو۔ || دوه سېټونه ګډ بلل کېږي که لږ تر لږه یو ګډ غړی ولري.
+- A diagram that represents mathematical sets and their relationships is called a Venn diagram. || وہ شکل جو ریاضیاتی سیٹوں اور ان کے تعلقات کو ظاہر کرے، وین شکل کہلاتی ہے۔ || هغه ډیاګرام چې ریاضیکي سېټونه او د هغوی اړیکې ښيي، د وېن ډیاګرام بلل کېږي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Set || سیٹ || سېټ
+- Descriptive form || بیانیہ صورت || بیاني بڼه
+- Tabular form || جدولی صورت || جدولي بڼه
+- Intersection || انٹرسیکشن || تقاطع
+- Union || یونین || یووالی
+- Disjoint || غیر مشترک || جلا
+- Universal set || عالمگیر سیٹ || نړیوال سېټ
+- Venn diagram || وین شکل || د وېن ډیاګرام
+endbox

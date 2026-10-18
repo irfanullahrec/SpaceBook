@@ -1,0 +1,41 @@
+@printed 93
+@issue Q3 v) is cut off at the right page edge in both scans; only "T = {−3, −2" is visible.
+@issue Q1 ii) prints "P(A) has 2ⁿ⁻¹ elements" (a statement to judge true or false); kept as printed.
+exercise 5.2
+q 1 | Write T for true statement and F for false statement. || درست بیان کے لیے T اور غلط بیان کے لیے F لکھیں۔ || د سم بیان لپاره T او د ناسم بیان لپاره F ولیکئ.
+qp i | ϕ is the subset of every set. ---------- || ϕ ہر سیٹ کا ذیلی سیٹ ہے۔ ---------- || ϕ د هر سېټ فرعي سېټ دی. ----------
+qp ii | If a set A has $n$ elements then P(A) has $2^{n-1}$ elements. ---------- || اگر سیٹ A میں $n$ ارکان ہوں تو P(A) میں $2^{n-1}$ ارکان ہوں گے۔ ---------- || که A سېټ $n$ عناصر ولري نو P(A) به $2^{n-1}$ عناصر ولري. ----------
+qp iii | If X ∈ X then X ∈ P(X) ----------
+qp iv | If A ⊆ B, then P (A) ⊆ P (B) ----------
+qp v | The set X = {−1, 0, 1, 2} has 12 possible subsets. ---------- || سیٹ X = {−1, 0, 1, 2} کے 12 ممکنہ ذیلی سیٹ ہیں۔ ---------- || د X = {−1, 0, 1, 2} سېټ 12 ممکنه فرعي سېټونه لري. ----------
+q 2 | How many subsets can be made out of the following sets? Find all the subsets of each of the following sets. || درج ذیل سیٹوں سے کتنے ذیلی سیٹ بنائے جا سکتے ہیں؟ درج ذیل ہر سیٹ کے تمام ذیلی سیٹ معلوم کریں۔ || له لاندې سېټونو څو فرعي سېټونه جوړېدای شي؟ د لاندې هر سېټ ټول فرعي سېټونه ومومئ.
+qp i | A = {2}
+qp ii | F = {4, 8}
+qp iii | M = {−1, 0, 1, 2}
+qp iv | S = { }
+qp v | B = {5, 10, 15}
+qp vi | X = {2, 3, 5, 7, 11}
+qp vii | K = $\{x \mid x \in P \wedge 5 \leq x \leq 13\}$
+qp viii | T = $\{x \mid x \in Z \wedge -2 < x < 2\}$
+q 3 | Find the power sets of the following sets; || درج ذیل سیٹوں کے پاور سیٹ معلوم کریں؛ || د لاندې سېټونو د توان سېټونه معلوم کړئ؛
+qp i | X = {$x$, $y$, $z$}
+qp ii | A = {+, −, ×, ÷}
+qp iii | L = {i, $s$, $l$, $a$, $m$}
+qp iv | B = {0}
+qp v | T = {−3, −2
+endexercise
+@sec 5.3 | Properties Involving Operations on Sets || سیٹوں پر عملیات سے متعلق خصوصیات || پر سېټونو د عملیاتو اړوند ځانګړتیاوې
+# 5.3 Properties Involving Operations on Sets || 5.3 سیٹوں پر عملیات سے متعلق خصوصیات || 5.3 پر سېټونو د عملیاتو اړوند ځانګړتیاوې
+p We have learnt about the commutative, associative and distributive properties of whole numbers with respect to addition and multiplication. While manipulating sets the above properties also hold for the operations on union and intersection. Let us learn. || ہم جمع اور ضرب کے لحاظ سے مکمل اعداد کی مبادلہ، تلازمی اور تقسیمی خصوصیات کے بارے میں سیکھ چکے ہیں۔ سیٹوں کے ساتھ کام کرتے ہوئے یہ خصوصیات یونین اور انٹرسیکشن کی عملیات کے لیے بھی درست ہیں۔ آئیے سیکھیں۔ || موږ د جمع او ضرب په اړه د بشپړو عددونو د تبادلوي، اتحادي او وېشونکو ځانګړتیاوو په اړه زده کړې کړې. د سېټونو سره د کار پر مهال پورتنۍ ځانګړتیاوې د اتحاد او تقاطع پر عملیاتو هم صدق کوي. راځئ زده یې کړو.
+## 5.3.1 Commutative Property of Sets (with respect to Union) || 5.3.1 سیٹوں کی مبادلہ خاصیت (یونین کے لحاظ سے) || 5.3.1 د سېټونو تبادلوي ځانګړتیا (د اتحاد په اړه)
+m For any two sets A and B, A ∪ B = B ∪ A
+example 1
+p For the sets S = {1, 3, 5, 7, 9} and T = {5,6,7,8,9}. Prove that S ∪ T = T ∪ S || سیٹ S = {1, 3, 5, 7, 9} اور T = {5,6,7,8,9} کے لیے ثابت کریں کہ S ∪ T = T ∪ S || د S = {1, 3, 5, 7, 9} او T = {5,6,7,8,9} سېټونو لپاره ثابت کړئ چې S ∪ T = T ∪ S
+## Solution: || حل: || حل:
+m S ∪ T = {1, 3, 5, 7, 9} ∪ {5, 6, 7, 8, 9}
+m S ∪ T = {1, 3, 5, 6, 7, 8, 9 } ..........(i)
+p and || اور || او
+m T ∪ S = {5, 6, 7, 8, 9} ∪ {1, 3, 5, 7, 9}
+m T ∪ S = {1, 3, 5, 6, 7, 8, 9 } ..........(ii)
+m Equations (i) and (ii) imply S ∪ T = T ∪ S
+endexample

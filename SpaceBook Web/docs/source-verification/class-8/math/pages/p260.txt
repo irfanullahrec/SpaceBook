@@ -1,0 +1,49 @@
+@printed 258
+@issue Exercise 10.5 continues from the previous page (Q5–Q9). Q5 (ii) prints "AB = 5.8 cm, ∠B = 135°". Q6 prints "AC (diagonal) = 5cm" for (i) and "BD (diagonal) = 7.2cm" for (ii). The step figures of the trapezium construction are recreated; the scan shows R at the left end of RS, a 75° angle at R, U at 1.5 cm on the arm, UT parallel to RS and T at 3 cm.
+q 5 | Construct rhombus ABCD when the measurement of its side and included angle are given: || معین ABCD بنائیں جب اس کی طرف اور درمیانی زاویے کی پیمائش دی گئی ہو: || معین ABCD جوړ کړئ کله چې د هغې د ضلعې او منځنۍ زاویې اندازه ورکړل شي:
+qp i | $\overline{AB}$ = 5 cm, ∠A = 60°
+qp ii | $\overline{AB}$ = 5.8 cm, ∠B = 135°
+q 6 | Construct rhombus ABCD when measure of its side and a diagonal are given: || معین ABCD بنائیں جب اس کی طرف اور ایک وتر کی پیمائش دی گئی ہو: || معین ABCD جوړ کړئ کله چې د هغې د ضلعې او یو قطر اندازه ورکړل شي:
+qp i | $\overline{AB}$ = 5.4 cm, $\overline{AC}$ (diagonal) = 5cm.
+qp ii | $\overline{AB}$ = 6 cm, $\overline{BD}$ (diagonal) = 7.2cm
+q 7 | Construct parallelogram EFGH when $\overline{EG}$ (diagonal) = 4.8cm, $\overline{FH}$ (diagonal) = 6cm and the angle between them is 30°. || متوازی الاضلاع EFGH بنائیں جب $\overline{EG}$ (وتر) = 4.8cm، $\overline{FH}$ (وتر) = 6cm اور ان کے درمیان زاویہ 30° ہو۔ || موازي الاضلاع EFGH جوړ کړئ کله چې $\overline{EG}$ (قطر) = 4.8cm، $\overline{FH}$ (قطر) = 6cm او د هغوی ترمنځ زاویه 30° وي.
+q 8 | Construct a square ABCD when the difference of its diagonal and a side is 4cm. || مربع ABCD بنائیں جب اس کے وتر اور ایک طرف کا فرق 4cm ہو۔ || مربع ABCD جوړ کړئ کله چې د هغې د قطر او یوې ضلعې توپیر 4cm وي.
+q 9 | Construct a square PQRS when the sum of its diagonal and a side is 6cm. || مربع PQRS بنائیں جب اس کے وتر اور ایک طرف کا مجموعہ 6cm ہو۔ || مربع PQRS جوړ کړئ کله چې د هغې د قطر او یوې ضلعې مجموعه 6cm وي.
+endexercise
+@sec 10.6 | Construction of a Trapezium || ذوزنقہ کی تعمیر || د ذوزنقې جوړول
+# 10.6 Construction of a Trapezium || 10.6 ذوزنقہ کی تعمیر || 10.6 د ذوزنقې جوړول
+p Draw trapezium RSTU such that RS = 5 cm, UT = 3 cm, ∠URS = 75°, RU = 1.5 cm and UT ∥ RS. || ذوزنقہ RSTU بنائیں اس طرح کہ RS = 5 cm، UT = 3 cm، ∠URS = 75°، RU = 1.5 cm اور UT ∥ RS ہو۔ || ذوزنقه RSTU داسې رسم کړئ چې RS = 5 cm، UT = 3 cm، ∠URS = 75°، RU = 1.5 cm او UT ∥ RS وي.
+p **Step 1:** Draw line RS = 5 cm. || **مرحلہ 1:** خط RS = 5 cm کھینچیں۔ || **لومړی پړاو:** کرښه RS = 5 cm رسم کړئ.
+svg Step 1: line RS = 5 cm || مرحلہ 1: خط RS = 5 cm || لومړی پړاو: کرښه RS = 5 cm
+<svg viewBox="0 0 280 70" width="280" role="img" aria-label="Horizontal line RS of 5 cm with R at the left and S at the right" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<line x1="30" y1="25" x2="250" y2="25" stroke="#0f172a" stroke-width="1.5"/><text x="26" y="48" font-weight="700">R</text><text x="244" y="48" font-weight="700">S</text><text x="128" y="46">5 cm</text>
+</svg>
+endsvg
+p **Step 2:** Draw an angle of 75° taking R as a vertex using a protractor. || **مرحلہ 2:** R کو راس لے کر چاندے کی مدد سے 75° کا زاویہ بنائیں۔ || **دوهم پړاو:** R د رأس په توګه واخلئ او د زاویه پیمانې په مرسته د 75° زاویه رسم کړئ.
+svg Step 2: 75° angle at R || مرحلہ 2: R پر 75° کا زاویہ || دوهم پړاو: په R کې د 75° زاویه
+<svg viewBox="0 0 280 140" width="280" role="img" aria-label="Ray from R at 75 degrees above the horizontal line RS of 5 cm" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<line x1="30" y1="110" x2="250" y2="110" stroke="#0f172a" stroke-width="1.5"/><line x1="30" y1="110" x2="62" y2="14" stroke="#0f172a" stroke-width="1.5"/><path d="M52 110 A22 22 0 0 0 36 89" fill="none" stroke="#0f172a"/>
+<text x="26" y="128" font-weight="700">R</text><text x="244" y="128" font-weight="700">S</text><text x="128" y="128">5 cm</text><text x="58" y="98">75°</text>
+</svg>
+endsvg
+p **Step 3:** Mark point U such that RU = 1.5 cm. || **مرحلہ 3:** نقطہ U اس طرح نشان زد کریں کہ RU = 1.5 cm ہو۔ || **درېیم پړاو:** ټکی U داسې په نښه کړئ چې RU = 1.5 cm وي.
+svg Step 3: point U with RU = 1.5 cm || مرحلہ 3: نقطہ U، RU = 1.5 cm || درېیم پړاو: ټکی U، RU = 1.5 cm
+<svg viewBox="0 0 280 140" width="280" role="img" aria-label="Point U marked on the 75 degree arm of angle at R, 1.5 cm from R" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<line x1="30" y1="120" x2="250" y2="120" stroke="#0f172a" stroke-width="1.5"/><line x1="30" y1="120" x2="62" y2="24" stroke="#0f172a" stroke-width="1.5"/><circle cx="45" cy="75" r="2.5"/>
+<text x="26" y="136" font-weight="700">R</text><text x="244" y="136" font-weight="700">S</text><text x="128" y="136">5 cm</text><text x="52" y="108">75°</text><text x="45" y="62" font-weight="700">U</text><text x="2" y="80">1.5 cm</text>
+</svg>
+endsvg
+p **Step 4:** Use a set square and ruler to draw a line parallel to RS through U. || **مرحلہ 4:** سیٹ اسکوائر اور فٹے کی مدد سے U سے گزرتا ہوا RS کے متوازی خط کھینچیں۔ || **څلورم پړاو:** د سیټ سکویر او پیمانې په مرسته د U له لارې د RS موازي کرښه رسم کړئ.
+svg Step 4: line through U parallel to RS || مرحلہ 4: U سے RS کے متوازی خط || څلورم پړاو: د U له لارې د RS موازي کرښه
+<svg viewBox="0 0 280 140" width="280" role="img" aria-label="A line through U parallel to RS" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<line x1="30" y1="120" x2="250" y2="120" stroke="#0f172a" stroke-width="1.5"/><line x1="30" y1="120" x2="62" y2="24" stroke="#0f172a" stroke-width="1.5"/><line x1="45" y1="75" x2="200" y2="75" stroke="#0f172a" stroke-width="1.5"/>
+<text x="26" y="136" font-weight="700">R</text><text x="244" y="136" font-weight="700">S</text><text x="128" y="136">5 cm</text><text x="52" y="108">75°</text><text x="34" y="68" font-weight="700">U</text><text x="2" y="100">1.5 cm</text>
+</svg>
+endsvg
+p **Step 5:** Mark point T such that UT = 3 cm. || **مرحلہ 5:** نقطہ T اس طرح نشان زد کریں کہ UT = 3 cm ہو۔ || **پنځم پړاو:** ټکی T داسې په نښه کړئ چې UT = 3 cm وي.
+svg Step 5: point T with UT = 3 cm || مرحلہ 5: نقطہ T، UT = 3 cm || پنځم پړاو: ټکی T، UT = 3 cm
+<svg viewBox="0 0 280 140" width="280" role="img" aria-label="Point T on the parallel line, 3 cm to the right of U" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<line x1="30" y1="120" x2="250" y2="120" stroke="#0f172a" stroke-width="1.5"/><line x1="30" y1="120" x2="62" y2="24" stroke="#0f172a" stroke-width="1.5"/><line x1="45" y1="75" x2="170" y2="75" stroke="#0f172a" stroke-width="1.5"/><circle cx="165" cy="75" r="2.5"/>
+<text x="26" y="136" font-weight="700">R</text><text x="244" y="136" font-weight="700">S</text><text x="128" y="136">5 cm</text><text x="34" y="68" font-weight="700">U</text><text x="162" y="66" font-weight="700">T</text><text x="94" y="68">3 cm</text><text x="2" y="100">1.5 cm</text>
+</svg>
+endsvg

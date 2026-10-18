@@ -1,0 +1,72 @@
+@printed 132
+@issue Example 9's third line prints "x² − 2(x)(1/x) + 1/x² = 16" and then "x² + 1/x² = 16 + 2"; the Quick Check prints "If x² + 1/x² = 6, find the value of x⁴ + 1/x⁴"; kept as printed. In the Identity IV figure the right side is labelled b (top part) and a − b (bottom part), the bottom edge a; reproduced as printed.
+example 8
+p If $x - y = 4$ and $xy = 2$, find $x^2 + y^2$ || اگر $x - y = 4$ اور $xy = 2$ ہو تو $x^2 + y^2$ معلوم کریں || که $x - y = 4$ او $xy = 2$ وي، $x^2 + y^2$ معلوم کړئ
+## Solution: || حل: || حل:
+m $x - y = 4$ (given)
+m $(x - y)^2 = (4)^2$ (taking square of both sides)
+m $x^2 - 2xy + y^2 = 16$
+m $x^2 - 2(2) + y^2 = 16$
+m $x^2 - 4 + y^2 = 16$
+m $x^2 + y^2 = 16 + 4$
+m $x^2 + y^2 = 20$
+endexample
+example 9
+p If $x - \frac{1}{x} = 4$, find $x^2 + \frac{1}{x^2}$ || اگر $x - \frac{1}{x} = 4$ ہو تو $x^2 + \frac{1}{x^2}$ معلوم کریں || که $x - \frac{1}{x} = 4$ وي، $x^2 + \frac{1}{x^2}$ معلوم کړئ
+## Solution: || حل: || حل:
+m $x - \frac{1}{x} = 4$
+m $\left(x - \frac{1}{x}\right)^2 = (4)^2$ (taking square of both sides)
+m $x^2 - 2(x)\left(\frac{1}{x}\right) + \frac{1}{x^2} = 16$
+m $x^2 - 2 + \frac{1}{x^2} = 16$
+m $x^2 + \frac{1}{x^2} = 16 + 2$
+m $x^2 + \frac{1}{x^2} = 18$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p If $x^2 + \frac{1}{x^2} = 6$, find the value of $x^4 + \frac{1}{x^4}$. || اگر $x^2 + \frac{1}{x^2} = 6$ ہو تو $x^4 + \frac{1}{x^4}$ کی قیمت معلوم کریں۔ || که $x^2 + \frac{1}{x^2} = 6$ وي، د $x^4 + \frac{1}{x^4}$ ارزښت معلوم کړئ.
+endbox
+### Identity IV: $a^2 - b^2 = (a - b)(a + b)$ || مماثلت IV || څلورم مطابقت
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+m RHS. $= (a - b)(a + b)$
+m $= a(a + b) - b(a + b)$
+m $= a^2 + ab - ba - b^2$
+m $= a^2 + ab - ab - b^2$
+m $= a^2 - b^2$
+m $=$ LHS
+m Hence proved $(a - b)(a + b) = a^2 - b^2$
+p Thus, LHS. = RHS. || اس طرح LHS. = RHS. || نو LHS. = RHS.
+p **Geometric Proof:** || **ہندسی ثبوت:** || **هندسي ثبوت:**
+p Look at the figure ABCD. Its length and width is a. It is divided into 4 portions. || شکل ABCD کو دیکھیں۔ اس کی لمبائی اور چوڑائی a ہے۔ یہ 4 حصوں میں تقسیم ہے۔ || ABCD شکل ته وګورئ. اوږدوالی او پلنوالی یې a دی. په 4 برخو وېشل شوی.
+svg Square ABCD of side a split into b², b(a − b) and a(a − b) || ضلع a کا مربع ABCD جو b²، b(a − b) اور a(a − b) میں تقسیم ہے || د a ضلع لرونکې مربع ABCD چې په b²، b(a − b) او a(a − b) وېشل شوې
+<svg viewBox="0 0 300 280" width="300" role="img" aria-label="Square ABCD of side a. The top strip of height b is split into a b by b square (b squared) and a b by (a minus b) rectangle; the bottom strip of height a minus b and width a is a(a minus b)" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#0f172a">
+<defs><marker id="i4A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<rect x="60" y="50" width="180" height="120" fill="#bfdbfe" stroke="#0f172a" stroke-width="1.3"/>
+<rect x="190" y="50" width="50" height="120" fill="#a5f3fc" stroke="#0f172a" stroke-width="1.3"/>
+<rect x="60" y="170" width="180" height="60" fill="#a5f3fc" stroke="#0f172a" stroke-width="1.3"/>
+<text x="125" y="115" text-anchor="middle" font-style="italic">b²</text>
+<text x="215" y="115" text-anchor="middle" font-style="italic" font-size="12">b(a−b)</text>
+<text x="150" y="205" text-anchor="middle" font-style="italic">a(a−b)</text>
+<line x1="63" y1="22" x2="237" y2="22" stroke="#0f172a" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="150" y="16" text-anchor="middle" font-style="italic">a</text>
+<line x1="63" y1="40" x2="187" y2="40" stroke="#0f172a" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="125" y="36" text-anchor="middle" font-style="italic">b</text>
+<line x1="193" y1="40" x2="237" y2="40" stroke="#dc2626" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="215" y="36" text-anchor="middle" font-style="italic">a−b</text>
+<line x1="30" y1="53" x2="30" y2="227" stroke="#0f172a" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="20" y="144" text-anchor="middle" font-style="italic">a</text>
+<line x1="48" y1="53" x2="48" y2="167" stroke="#0f172a" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="52" y="114" font-style="italic" font-size="12"> </text>
+<line x1="48" y1="173" x2="48" y2="227" stroke="#dc2626" marker-start="url(#i4A)" marker-end="url(#i4A)"/>
+<text x="38" y="115" text-anchor="end" font-style="italic" font-size="12"> </text>
+<text x="254" y="115" font-style="italic">b</text><text x="254" y="205" font-style="italic" font-size="12">a−b</text>
+<line x1="63" y1="250" x2="237" y2="250" stroke="#0f172a" marker-start="url(#i4A)" marker-end="url(#i4A)"/><text x="150" y="266" text-anchor="middle" font-style="italic">a</text>
+<g font-weight="700" font-size="12"><text x="52" y="46" text-anchor="end">D</text><text x="190" y="46" text-anchor="middle">H</text><text x="248" y="46">C</text>
+<text x="52" y="174" text-anchor="end">E</text><text x="194" y="166">F</text><text x="248" y="174">G</text>
+<text x="52" y="242" text-anchor="end">A</text><text x="248" y="242">B</text></g>
+</svg>
+endsvg
+m Now Area of ABCD $=$ Length of ABCD $\times$ Width of ABCD
+m $= a \times a = a^2$
+m But Area of ABCD $=$ Area of EFHD $+$ Area of FGCH $+$ Area of ABGE
+p So, || لہٰذا، || نو،
+m $a^2 = b^2 + b(a - b) + a(a - b)$
+m $a^2 = b^2 + (a + b)(a - b)$
+m $a^2 - b^2 = (a + b)(a - b)$
+p Hence proved. || ثابت ہوا۔ || ثابت شو.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the geometric and algebraic proofs of the identity with the help of examples. Make small groups of students and ask them to make one example of each identity and then solve it. || مثالوں کی مدد سے مماثلت کے ہندسی اور الجبری ثبوت سمجھائیں۔ طلبہ کے چھوٹے گروپ بنائیں اور ان سے ہر مماثلت کی ایک مثال بنانے اور پھر اسے حل کرنے کو کہیں۔ || د بېلګو په مرسته د مطابقت هندسي او الجبري ثبوتونه تشریح کړئ. د زده کوونکو کوچنۍ ډلې جوړې کړئ او ورته ووایاست چې د هر مطابقت یوه بېلګه جوړه او بیا یې حل کړي.
+endbox

@@ -1,0 +1,15 @@
+@printed 6
+@deco Photos of ten chocolate bars and a pile of six dice; the scanned copy has a pupil's handwritten answers, not reproduced.
+q 3 | Count the chocolate and write in Roman numbers. || چاکلیٹ گنیں اور رومن اعداد میں لکھیں۔ || چاکلیټونه وشمېرئ او په رومي عددونو یې ولیکئ.
+icons chocolate:10 @ 5 || Ten chocolate bars (two rows of five) || دس چاکلیٹ (پانچ پانچ کی دو قطاریں) || لس چاکلیټونه (د پنځو پنځو دوه کرښې)
+sol X ## There are 2 rows of 5 chocolates: 5 + 5 = 10, and 10 is written X. || 5 چاکلیٹ کی 2 قطاریں ہیں: 5 + 5 = 10، اور 10 کو X لکھتے ہیں۔ || د 5 چاکلیټونو 2 کرښې دي: 5 + 5 = 10، او 10 د X په بڼه لیکل کېږي.
+q 4 | Count the given dice and write in roman numbers. || دیے گئے پانسے گنیں اور رومن اعداد میں لکھیں۔ || ورکړل شوې ډانسې وشمېرئ او په رومي عددونو یې ولیکئ.
+icons die:6 || A pile of six dice (picture in the textbook) || چھ پانسوں کا ڈھیر (کتاب کی تصویر) || د شپږو ډانسو ډېرۍ (د کتاب انځور)
+sol VI ## The pile has 6 dice: 1 on top, 2 in the middle row and 3 in the bottom row. 6 is written VI. || ڈھیر میں 6 پانسے ہیں: اوپر 1، درمیانی قطار میں 2 اور نیچے کی قطار میں 3۔ 6 کو VI لکھتے ہیں۔ || په ډېرۍ کې 6 ډانسې دي: پورته 1، په منځنۍ کرښه کې 2 او په لاندینۍ کرښه کې 3. 6 د VI په بڼه لیکل کېږي.
+q 5 | Write the missing numbers. || غائب اعداد لکھیں۔ || ورک عددونه ولیکئ.
+table
+th Number | 6 | ____ | 15 | ____ | XX
+tr Roman number | ____ | IX | ____ | XVII | ____
+endtable
+sol 6 = VI, 9 = IX, 15 = XV, 17 = XVII, XX = 20 ## Each pair shows the same number in two ways. || ہر جوڑا ایک ہی عدد کو دو طریقوں سے دکھاتا ہے۔ || هره جوړه یو عدد په دوو ډولونو ښيي.
+endexercise

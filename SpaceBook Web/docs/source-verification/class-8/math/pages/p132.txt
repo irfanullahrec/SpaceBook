@@ -1,0 +1,29 @@
+@printed 126
+@issue Example 2's working has errors in the source (e.g. 2x·7 = 14x, 5x²·7 = 35x², and the last lines give "2 − 18x − 32x² − 25x³"); every line is kept exactly as printed. The arrow captions beside each line are given after the line.
+example 2
+m $1 + 5x^2 - [\{(2x + 5x^2)(5x + 7)\} - \{(1 + 3x) - (7x - 8x^2)\}]$ $\quad$ ← First solve the operation within parentheses.
+m $= 1 + 5x^2 - [\{10x^2 + 14x + 25x^3 + 35x^2\} - \{1 + 3x - 7x + 8x^2\}]$ $\quad$ ← Now solve the like terms in curly brackets.
+m $= 1 + 5x^2 - [\{+14x + 25x^3 + 45x^2\} - \{1 - 4x + 8x^2\}]$ $\quad$ ← Then open the curly bracket and change the sign.
+m $= 1 + 5x^2 - [+14x + 25x^3 + 45x^2 - 1 + 4x - 8x^2]$ $\quad$ ← Then open the square bracket and change the sign.
+m $= 1 + 5x^2 - [+18x + 25x^3 + 45x^2 - 1 - 8x^2]$ $\quad$ ← Next simplify the like terms
+m $= 1 + 5x^2 - [18x + 25x^3 + 37x^2 - 1]$
+m $= 1 + 5x^2 - 18x - 25x^3 - 37x^2 + 1$
+m $= 2 - 18x - 32x^2 - 25x^3$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Simplify the following. || درج ذیل کو مختصر کریں۔ || لاندې ساده کړئ.
+qp a | $2y - (2 + 4y^2) - 2[4\{4x^2(7x + 9y)\}]$
+qp b | $6ab - [2b^2 + 5a\{(7ab + 2b)(1 + b)\}]$
+endbox
+example 3
+m $7 - [4x^2 + \{(4x + 7x^2)(-3x) - (8x + 3x^2)(1 + 6x^2)\}]$ $\quad$ ← First solve the operation within parentheses.
+m $= 7 - [4x^2 + \{-12x^2 + 21x^3 - (8x + 48x^3 + 3x^2 + 18x^4)\}]$ $\quad$ ← Now solve the like terms in curly brackets.
+m $= 7 - [4x^2 + \{-12x^2 + 21x^3 - 8x - 48x^3 - 3x^2 - 18x^4\}]$ $\quad$ ← Then open the curly bracket and change the sign.
+m $= 7 - [4x^2 + \{-8x - 15x^2 - 27x^3 - 18x^4\}]$ $\quad$ ← Then open the square bracket and change the sign.
+m $= 7 - [4x^2 - 8x - 15x^2 - 27x^3 - 18x^4]$ $\quad$ ← Next simplify the like terms
+m $= 7 - [-8x - 11x^2 - 27x^3 - 18x^4]$
+m $= 7 + 8x + 11x^2 + 27x^3 + 18x^4$
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write different questions related to BODMAS on the board and ask the students to simplify algebraic expressions according to the rule. || بورڈ پر BODMAS سے متعلق مختلف سوالات لکھیں اور طلبہ سے کہیں کہ اصول کے مطابق الجبری عبارتوں کو مختصر کریں۔ || پر تخته د BODMAS اړوند بېلابېلې پوښتنې ولیکئ او له زده کوونکو وغواړئ چې د قاعدې له مخې الجبري افادې ساده کړي.
+endbox

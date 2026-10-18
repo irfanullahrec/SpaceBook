@@ -1,0 +1,36 @@
+@printed 74
+@issue Example 2 writes the area as "116.64 m² = ℓ²" with "length × length = ℓ²"; kept as printed.
+@issue The "Note it down" box beside Example 3 holds two practice questions; Q1 gives the area as "1156 m" (unit printed without ²); kept as printed.
+example 2
+p Area of a square piece of wood is equal to the 116.64 m². Find the length of the side of the piece of wood. || لکڑی کے ایک مربع ٹکڑے کا رقبہ 116.64 m² کے برابر ہے۔ لکڑی کے ٹکڑے کی ضلع کی لمبائی معلوم کریں۔ || د لرګي د یوې مربع ټوټې مساحت له 116.64 m² سره برابر دی. د لرګي د ټوټې د ضلعې اوږدوالی معلوم کړئ.
+## Solution: || حل: || حل:
+p As the length of four sides of a square is equal, so: || چونکہ مربع کی چاروں اطراف کی لمبائی برابر ہے، لہٰذا: || څرنګه چې د مربع د څلورو ضلعو اوږدوالی برابر دی، نو:
+m Area of square $=$ length $\times$ length $= \ell^2$
+m $116.64\ \text{m}^2 = \ell^2$
+p Take the square root of both sides. || دونوں اطراف کا جذر المربع لیں۔ || د دواړو خواوو مربع جذر واخلئ.
+m $\sqrt{116.64} = \frac{\sqrt{11664}}{\sqrt{100}}$
+p Now find the square root of 11664 and 100. || اب 11664 اور 100 کا جذر المربع معلوم کریں۔ || اوس د 11664 او 100 مربع جذر ومومئ.
+sqdiv q=108 | n=1 16 64 | 1: | :-1____ | 20:016__ | :-0__ | 208:1664 | :-1664 | :0
+sqdiv q=10 | n=1 00 | 1: | :-1__ | 20:000 | :-000 | :0
+m $\frac{\sqrt{11664}}{\sqrt{100}} = \frac{108}{10} = 10.8$
+p So, the length of the side of the wooden piece is 10.8 m. || لہٰذا لکڑی کے ٹکڑے کی ضلع کی لمبائی 10.8 m ہے۔ || نو د لرګي د ټوټې د ضلعې اوږدوالی 10.8 m دی.
+endexample
+example 3
+p The area of a square shaped plot is 5929 square metres. Find its perimeter. || ایک مربع شکل کے پلاٹ کا رقبہ 5929 مربع میٹر ہے۔ اس کا احاطہ معلوم کریں۔ || د یوه مربع شکله پلاټ مساحت 5929 مربع متره دی. محیط یې معلوم کړئ.
+## Solution: || حل: || حل:
+p We know that area of a square is obtained by multiplying its length by its length. || ہم جانتے ہیں کہ مربع کا رقبہ اس کی لمبائی کو لمبائی سے ضرب دے کر حاصل ہوتا ہے۔ || موږ پوهېږو چې د مربع مساحت د هغې د اوږدوالي په اوږدوالي کې د ضربولو سره لاسته راځي.
+m Length $\times$ length $=$ Area
+m $\sqrt{\text{Length}^2} = \sqrt{5929}$
+m Length $= \sqrt{5929}$
+m $= 77$ m
+sqdiv q=77 | n=59 29 | 7: | :-49__ | 147:1029 | :-1029 | :0
+p So, length of the plot is 77 metres. || لہٰذا پلاٹ کی لمبائی 77 میٹر ہے۔ || نو د پلاټ اوږدوالی 77 متره دی.
+m Perimeter of the plot $= 4 \times$ Length
+m $= 4 \times 77$ m
+m $= 308$ m
+p So, the perimeter of the square shaped plot is 308 m. || لہٰذا مربع شکل کے پلاٹ کا احاطہ 308 m ہے۔ || نو د مربع شکله پلاټ محیط 308 m دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p 1. The area of the squared shaped ground of the Masjid is 1156 m. Find the length of the ground || 1. مسجد کے مربع شکل کے میدان کا رقبہ 1156 m ہے۔ میدان کی لمبائی معلوم کریں || 1. د جومات د مربع شکله ډګر مساحت 1156 m دی. د ډګر اوږدوالی معلوم کړئ
+p 2. Area of the squared shaped room is 98.01 m². Find the perimeter of the room. || 2. مربع شکل کے کمرے کا رقبہ 98.01 m² ہے۔ کمرے کا احاطہ معلوم کریں۔ || 2. د مربع شکله کوټې مساحت 98.01 m² دی. د کوټې محیط معلوم کړئ.
+endbox

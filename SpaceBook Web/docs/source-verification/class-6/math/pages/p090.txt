@@ -1,0 +1,41 @@
+@printed 88
+q 7 | Divide Rs 5376 between Ayesha, Sadia and Madiha in the ratio 8 : 7 : 6. || 5376 روپے عائشہ، سعدیہ اور مدیحہ میں 8 : 7 : 6 کی نسبت سے تقسیم کریں۔ || 5376 روپۍ د عایشې، سعدیې او مدیحې ترمنځ د 8 : 7 : 6 په نسبت ووېشئ.
+solution Ayesha Rs 2048, Sadia Rs 1792, Madiha Rs 1536
+suse share 5376 | 8 : 7 : 6
+endsolution
+q 8 | Divide 3416 among three persons a, b and c, such that the ratio between their shares is: || 3416 کو تین افراد a، b اور c میں اس طرح تقسیم کریں کہ ان کے حصوں کی نسبت یہ ہو: || 3416 د دریو کسانو a، b او c ترمنځ داسې ووېشئ چې د برخو نسبت یې دا وي:
+m $a : b = 4 : 5$
+m $b : c = 8 : 10$
+solution a = 896, b = 1120, c = 1400
+ss Step 1: make the continued ratio. || مرحلہ 1: مسلسل نسبت بنائیں۔ || لومړی پړاو: پرله پسې نسبت جوړ کړئ.
+suse contr a : b = 4 : 5 and b : c = 8 : 10
+ss Step 2: share 3416 in the ratio 16 : 20 : 25. || مرحلہ 2: 3416 کو 16 : 20 : 25 کی نسبت میں تقسیم کریں۔ || دوهم پړاو: 3416 د 16 : 20 : 25 په نسبت ووېشئ.
+suse share 3416 | 16 : 20 : 25
+endsolution
+endexercise
+@sec 4.6 | Rate || شرح || نرخ
+# 4.6 Rate || 4.6 شرح || 4.6 نرخ
+p A **rate** is a ratio that compares two quantities with different units of measure. || **شرح** ایک ایسی نسبت ہے جو پیمائش کی مختلف اکائیوں والی دو مقداروں کا موازنہ کرتی ہے۔ || **نرخ** هغه نسبت دی چې د اندازه کولو د بېلابېلو واحدونو لرونکي دوه مقدارونه پرتله کوي.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- How can we find the price of 1 kg of apple if the price of 15 kg apple is given? || اگر 15 kg سیب کی قیمت دی گئی ہو تو 1 kg سیب کی قیمت کیسے معلوم کر سکتے ہیں؟ || که د 15 kg مڼو بیه ورکړل شوې وي، د 1 kg مڼو بیه څنګه معلومولی شو؟
+endbox
+p Rates are used almost every day. For example, unit price of items, speed, service charges etc are often given as rates. || شرحیں تقریباً روزانہ استعمال ہوتی ہیں۔ مثلاً اشیاء کی فی اکائی قیمت، رفتار، سروس چارجز وغیرہ اکثر شرح کی صورت میں دیے جاتے ہیں۔ || نرخونه نږدې هره ورځ کارول کېږي. د بېلګې په توګه د توکو د واحد بیه، سرعت، د خدمت فیس او نور اکثراً د نرخ په بڼه ورکول کېږي.
+p For example, the price of one kg of sugar is Rs 90. Here we compare the price in "Rs" with weight in "Kg" (two different units). In unit rate one of the two quantities is always one. || مثلاً ایک kg چینی کی قیمت 90 روپے ہے۔ یہاں ہم "روپے" میں قیمت کا "kg" میں وزن سے موازنہ کرتے ہیں (دو مختلف اکائیاں)۔ اکائی شرح میں دونوں مقداروں میں سے ایک ہمیشہ ایک ہوتی ہے۔ || د بېلګې په توګه د یوه kg بورې بیه 90 روپۍ ده. دلته په "روپیو" کې بیه په "kg" کې له وزن سره پرتله کوو (دوه بېل واحدونه). په واحد نرخ کې له دوو مقدارونو یو تل یو وي.
+example 1 | Rabia covered 6 kilometres in 3 hours. What is her per hour speed? || رابعہ نے 3 گھنٹوں میں 6 کلومیٹر فاصلہ طے کیا۔ اس کی فی گھنٹہ رفتار کیا ہے؟ || رابعې په 3 ساعتونو کې 6 کیلومتره واټن ووهه. په یوه ساعت کې یې سرعت څومره دی؟
+p **Solution:** || **حل:** || **حل:**
+p Given is the distance covered in 3 hours. || 3 گھنٹوں میں طے کیا گیا فاصلہ دیا گیا ہے۔ || په 3 ساعتونو کې وهل شوی واټن ورکړل شوی دی.
+m $\frac{6 \text{ kilometres}}{3 \text{ hours}} = 6$ kilometres : 3 Hours
+p To find her per hour speed, we will simplify the ratio. || اس کی فی گھنٹہ رفتار معلوم کرنے کے لیے ہم نسبت کو سادہ کریں گے۔ || د هغې د یوه ساعت سرعت د موندلو لپاره نسبت ساده کوو.
+m $6 : 3 = \frac{6 \div 3}{3 \div 3} = \frac{2}{1}$
+p So, rabia covered 3 kilometres in one hour or her speed is 2 km/hour. || لہٰذا رابعہ نے ایک گھنٹے میں 3 کلومیٹر طے کیے یا اس کی رفتار 2 km/hour ہے۔ || نو رابعې په یوه ساعت کې 3 کیلومتره ووهل یا سرعت یې 2 km/hour دی.
+endexample
+@issue Example 1 ends "rabia covered 3 kilometres in one hour or her speed is 2 km/hour"; the correct value is 2 km in one hour (6 ÷ 3 = 2). Kept as printed.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The units of the terms of the rate are different. || شرح کے ارکان کی اکائیاں مختلف ہوتی ہیں۔ || د نرخ د حدونو واحدونه بېل وي.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A rate that has 1 unit as its second term is called unit rate. || وہ شرح جس کا دوسرا رکن 1 اکائی ہو، اکائی شرح کہلاتی ہے۔ || هغه نرخ چې دوهم حد یې 1 واحد وي، واحد نرخ بلل کېږي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain the concept of rates to students by giving different examples of rates from real life situation. For more practice visit the website: https://www.brainpop.com/games/unitrates/?topic_id || حقیقی زندگی سے شرح کی مختلف مثالیں دے کر طلبہ کو شرح کا تصور سمجھائیں۔ مزید مشق کے لیے یہ ویب سائٹ دیکھیں: https://www.brainpop.com/games/unitrates/?topic_id || د ورځني ژوند د نرخ بېلابېلې بېلګې ورکړئ او زده کوونکو ته د نرخ مفهوم تشریح کړئ. د نور تمرین لپاره دا ویب پاڼه وګورئ: https://www.brainpop.com/games/unitrates/?topic_id
+endbox

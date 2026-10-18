@@ -1,0 +1,55 @@
+@printed 147
+@deco Photograph of a triangular mirror beside 8.3.1 (decorative).
+exercise 8.2
+q 1 | A rectangle WXYZ is 50 m long and 40 m wide. A path is constructed towards the inner side of the rectangle that is 2 m wide. Find the area of the path. || ایک مستطیل WXYZ، 50 m لمبا اور 40 m چوڑا ہے۔ مستطیل کے اندر کی طرف 2 m چوڑا راستہ بنایا گیا ہے۔ راستے کا رقبہ معلوم کریں۔ || یو مستطیل WXYZ 50 m اوږد او 40 m پلن دی. د مستطیل دننه خوا ته 2 m پلنه لار جوړه شوې. د لارې مساحت معلوم کړئ.
+solution 344 m²
+suse pathq 50 40 2 in m
+endsolution
+q 2 | A square is 1200 cm long. There is a 10 cm wide strip around the square. Find the area of the strip. || ایک مربع 1200 cm لمبا ہے۔ مربع کے گرد 10 cm چوڑی پٹی ہے۔ پٹی کا رقبہ معلوم کریں۔ || یو مربع 1200 cm اوږد دی. د مربع شاوخوا 10 cm پلنه پټۍ ده. د پټۍ مساحت معلوم کړئ.
+solution 48,400 cm²
+ss "Around" the square means the strip is outside it. || مربع کے "گرد" کا مطلب ہے کہ پٹی باہر ہے۔ || د مربع "شاوخوا" یعنې پټۍ بهر ده.
+suse pathq 1200 1200 10 out cm
+ss Teacher's note: the book's answer key gives 1488400 cm², which is the area of the large outer square only; the strip is 1488400 − 1440000 = 48400 cm². || استاد کا نوٹ: کتاب کی جوابی کلید 1488400 cm² دیتی ہے جو صرف بڑے بیرونی مربع کا رقبہ ہے؛ پٹی کا رقبہ 1488400 − 1440000 = 48400 cm² ہے۔ || د ښوونکي یادونه: د کتاب د ځوابونو کلي 1488400 cm² ورکوي چې یوازې د لوی بهرني مربع مساحت دی؛ د پټۍ مساحت 1488400 − 1440000 = 48400 cm² دی.
+endsolution
+q 3 | A 450 cm long and 150 cm wide rectangle is enclosed by a strip outside it that is 4 cm wide. Find the area of the strip. || 450 cm لمبے اور 150 cm چوڑے مستطیل کے باہر 4 cm چوڑی پٹی ہے۔ پٹی کا رقبہ معلوم کریں۔ || د 450 cm اوږده او 150 cm پلن مستطیل بهر 4 cm پلنه پټۍ ده. د پټۍ مساحت معلوم کړئ.
+solution 4,864 cm²
+suse pathq 450 150 4 out cm
+endsolution
+q 4 | A rectangle is 900 m long and 700 m wide. A path is constructed outside the rectangle that is 9 m wide. Find the area of the path. || ایک مستطیل 900 m لمبا اور 700 m چوڑا ہے۔ مستطیل کے باہر 9 m چوڑا راستہ بنایا گیا ہے۔ راستے کا رقبہ معلوم کریں۔ || یو مستطیل 900 m اوږد او 700 m پلن دی. د مستطیل بهر 9 m پلنه لار جوړه شوې. د لارې مساحت معلوم کړئ.
+solution 29,124 m²
+suse pathq 900 700 9 out m
+endsolution
+q 5 | A garden is 75 cm long and 82 cm wide. A 5 cm wide road is made all around the inside of the garden. Find the area of the road. || ایک باغ 75 cm لمبا اور 82 cm چوڑا ہے۔ باغ کے اندر چاروں طرف 5 cm چوڑی سڑک بنائی گئی ہے۔ سڑک کا رقبہ معلوم کریں۔ || یو باغ 75 cm اوږد او 82 cm پلن دی. د باغ دننه شاوخوا 5 cm پلن سړک جوړ شوی. د سړک مساحت معلوم کړئ.
+solution 1,470 cm²
+suse pathq 75 82 5 in cm
+endsolution
+q 6 | A playground is 60 m long and 50 m wide. A 1.5 m wide concrete path is made all around it towards the outer side of the playground. Find the area of the concrete path. || ایک کھیل کا میدان 60 m لمبا اور 50 m چوڑا ہے۔ میدان کے باہر کی طرف چاروں طرف 1.5 m چوڑا کنکریٹ کا راستہ بنایا گیا ہے۔ کنکریٹ کے راستے کا رقبہ معلوم کریں۔ || یو لوبغالی 60 m اوږد او 50 m پلن دی. د لوبغالي بهر شاوخوا 1.5 m پلنه کانکرېټي لار جوړه شوې. د کانکرېټي لارې مساحت معلوم کړئ.
+solution 339 m²
+suse pathq 60 50 1.5 out m
+endsolution
+endexercise
+@sec 8.3 | Area of Parallelogram, Trapezium and Triangle || متوازی الاضلاع، ذوزنقہ اور مثلث کا رقبہ || د متوازي الاضلاع، ذوزنقې او مثلث مساحت
+# 8.3 Area of Parallelogram, Trapezium and Triangle || 8.3 متوازی الاضلاع، ذوزنقہ اور مثلث کا رقبہ || 8.3 د متوازي الاضلاع، ذوزنقې او مثلث مساحت
+## 8.3.1 Altitude || 8.3.1 ارتفاع || 8.3.1 لوړوالی
+p Fatima has a triangular mirror. We can find the area it occupies by finding its altitude and base. || فاطمہ کے پاس ایک مثلثی آئینہ ہے۔ ہم اس کا ارتفاع اور قاعدہ معلوم کر کے اس کی گھیری ہوئی جگہ معلوم کر سکتے ہیں۔ || فاطمه یوه مثلثي هنداره لري. د هغې د لوړوالي او قاعدې په موندلو یې نیول شوی ځای معلومولی شو.
+p The altitude of any shape is the shortest distance between the top or vertex of the shape to the opposite side or base. || کسی شکل کا ارتفاع اس کے اوپر کے سرے یا راس سے مخالف ضلع یا قاعدے تک کا سب سے کم فاصلہ ہے۔ || د هر شکل لوړوالی د شکل له سر یا راس څخه تر مقابلې ضلعې یا قاعدې پورې تر ټولو لنډ واټن دی.
+svg Altitude (height) of a triangle and of a cone || مثلث اور مخروط کا ارتفاع (اونچائی) || د مثلث او مخروط لوړوالی (جګوالی)
+<svg viewBox="0 0 420 170" width="420" role="img" aria-label="A triangle with its altitude drawn from the top vertex to the base, and a cone with its height drawn from the apex to the centre of the base" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#0f172a">
+<path d="M100 20 L20 140 L180 140 Z" fill="#67e8f9" stroke="#0e7490" stroke-width="1.5"/>
+<line x1="100" y1="20" x2="100" y2="140" stroke="#0f172a" stroke-width="1.5"/><path d="M100 132 h8 v8" fill="none" stroke="#0f172a"/>
+<text x="100" y="160" text-anchor="middle">base</text><text x="112" y="70">Altitude or height</text>
+<path d="M330 20 L265 140 A65 14 0 0 0 395 140 Z" fill="#a5f3fc" stroke="#0e7490" stroke-width="1.5"/>
+<ellipse cx="330" cy="140" rx="65" ry="14" fill="none" stroke="#0e7490" stroke-dasharray="3 3"/>
+<line x1="330" y1="20" x2="330" y2="140" stroke="#0f172a" stroke-width="1.5"/>
+<text x="338" y="95">height</text>
+</svg>
+endsvg
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Altitude of a figure is also called the height of the geometric figure. || کسی شکل کے ارتفاع کو جیومیٹریکل شکل کی اونچائی بھی کہتے ہیں۔ || د شکل لوړوالي ته د هندسي شکل جګوالی هم وايي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Teachers can share the following online game links to practice areas and perimeter. || استاد رقبہ اور احاطے کی مشق کے لیے درج ذیل آن لائن کھیلوں کے لنکس شیئر کر سکتے ہیں۔ || ښوونکي کولی شي د مساحت او محیط د تمرین لپاره لاندې آنلاین لوبو لینکونه شریک کړي.
+m https://www.splashlearn.com/s/math-games/find-the-perimeter-of-the-shapes-using-grids
+m https://www.splashlearn.com/s/math-games/find-the-perimeter-of-polygons
+m https://www.splashlearn.com/s/math-games/find-the-area-by-multiplying-the-side-lengths
+endbox

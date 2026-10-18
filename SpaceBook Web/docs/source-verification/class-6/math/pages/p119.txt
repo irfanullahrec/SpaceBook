@@ -1,0 +1,90 @@
+@printed 115
+@deco Pictures of cupcakes and a nugget box illustrating 2 + 3 cupcakes and 5 cupcakes + nuggets (decorative counting pictures; the counts are given in the text).
+exercise 6.4
+q 1 | Substitute the given values for the variables to evaluate each expression. || متغیرات کی جگہ دی گئی قیمتیں رکھ کر ہر عبارت کی قیمت معلوم کریں۔ || د متحولونو پر ځای ورکړل شوي ارزښتونه کېږدئ او د هرې افادې ارزښت معلوم کړئ.
+qp a | $3y + 2y$ when y = 5
+solution 25
+suse evalx 3y + 2y ;; 3*y + 2*y ;; y=5
+ss Shortcut: 3y + 2y are like terms, so 3y + 2y = 5y = 5 × 5 = 25. || مختصر طریقہ: 3y اور 2y یکساں ارکان ہیں، اس لیے 3y + 2y = 5y = 5 × 5 = 25۔ || لنډه لاره: 3y او 2y ورته حدونه دي، نو 3y + 2y = 5y = 5 × 5 = 25.
+endsolution
+qp b | $2a - 2b + c$ when a = 3, b = –2 and c = 4
+solution 14
+suse evalx 2a - 2b + c ;; 2*a - 2*b + c ;; a=3, b=-2, c=4
+endsolution
+qp c | $3(x^2 + 4x) - 3y$ when $x$ = – 5 and y = 3
+solution 6
+suse evalx 3(x^2 + 4x) - 3y ;; 3*(x**2 + 4*x) - 3*y ;; x=-5, y=3
+endsolution
+qp d | $x^2y$ when $x$ = – 3 and y = –4
+solution –36
+suse evalx x^2y ;; x**2*y ;; x=-3, y=-4
+endsolution
+qp e | $(b - d)^2$ when b = 9 and d = –3
+solution 144
+suse evalx (b - d)^2 ;; (b - d)**2 ;; b=9, d=-3
+endsolution
+qp f | $m^4 + 2m^3 - m^2 + 8$ when m = –2
+solution 4
+suse evalx m^4 + 2m^3 - m^2 + 8 ;; m**4 + 2*m**3 - m**2 + 8 ;; m=-2
+endsolution
+qp g | $\frac{3x}{2} + 1$ when $x$ = –5
+solution $-6\frac{1}{2}$ (= –6.5)
+suse evalx \frac{3x}{2} + 1 ;; 3*x/2 + 1 ;; x=-5
+ss −15/2 + 1 = −7.5 + 1 = −6.5, which is −6½. || −15/2 + 1 = −7.5 + 1 = −6.5، یعنی −6½۔ || −15/2 + 1 = −7.5 + 1 = −6.5، یعنې −6½.
+endsolution
+qp h | $5y^2 - 2(x^2 - 4x) - 5y$ when $x$ = 2 and y = – 2
+solution 38
+suse evalx 5y^2 - 2(x^2 - 4x) - 5y ;; 5*y**2 - 2*(x**2 - 4*x) - 5*y ;; x=2, y=-2
+endsolution
+q 2 | Verify the following when; p = 2, q = –3 , s = 5. || p = 2، q = –3، s = 5 کے لیے درج ذیل کی تصدیق کریں۔ || د p = 2، q = –3، s = 5 لپاره لاندې ثابت کړئ.
+qp a | $p + (q + s) = (p + q) + s$
+solution True: both sides = 4
+suse evalx p + (q + s) ;; p + (q + s) ;; p=2, q=-3, s=5
+suse evalx (p + q) + s ;; (p + q) + s ;; p=2, q=-3, s=5
+ss Both sides equal 4, so the statement is verified (Associative Law). || دونوں طرف 4 ہیں، اس لیے بیان ثابت ہوا (قانونِ تلازم)۔ || دواړه اړخونه 4 دي، نو بیان ثابت شو (د اتحاد قانون).
+endsolution
+qp b | $p(q + s) = pq + ps$
+solution True: both sides = 4
+suse evalx p(q + s) ;; p*(q + s) ;; p=2, q=-3, s=5
+suse evalx pq + ps ;; p*q + p*s ;; p=2, q=-3, s=5
+ss Both sides equal 4 (Distributive Law). || دونوں طرف 4 ہیں (قانونِ تقسیم)۔ || دواړه اړخونه 4 دي (د توزیع قانون).
+endsolution
+qp c | $(p + s)q = pq - sq$
+solution As printed it is not true: L.H.S = –21, R.H.S = 9 (it should be pq + sq)
+suse evalx (p + s)q ;; (p + s)*q ;; p=2, q=-3, s=5
+suse evalx pq - sq ;; p*q - s*q ;; p=2, q=-3, s=5
+ss The two sides are different. By the Distributive Law, (p + s)q = pq + sq = −6 + (−15) = −21, which matches the left side. The printed "−" is a misprint. || دونوں طرف مختلف ہیں۔ قانونِ تقسیم کے مطابق (p + s)q = pq + sq = −6 + (−15) = −21، جو بائیں طرف سے ملتا ہے۔ چھپی ہوئی "−" غلطی ہے۔ || دواړه اړخونه بېل دي. د توزیع د قانون له مخې (p + s)q = pq + sq = −6 + (−15) = −21، چې له کیڼ اړخ سره سمون خوري. چاپ شوې "−" تېروتنه ده.
+endsolution
+qp d | $q(p - s) = qp - qs$
+solution True: both sides = 9
+suse evalx q(p - s) ;; q*(p - s) ;; p=2, q=-3, s=5
+suse evalx qp - qs ;; q*p - q*s ;; p=2, q=-3, s=5
+ss Both sides equal 9 (Distributive Law over subtraction). || دونوں طرف 9 ہیں (تفریق پر قانونِ تقسیم)۔ || دواړه اړخونه 9 دي (پر تفریق د توزیع قانون).
+endsolution
+q 3 | If $x = 3$ and y = 2, then prove that $(x + y)^2 = x + 2xy + y^2$. || اگر $x = 3$ اور y = 2 ہو تو ثابت کریں کہ $(x + y)^2 = x + 2xy + y^2$۔ || که $x = 3$ او y = 2 وي، ثابت کړئ چې $(x + y)^2 = x + 2xy + y^2$.
+solution As printed it cannot be proved (25 ≠ 19); with $x^2$ on the right side both sides are 25.
+suse evalx (x + y)^2 ;; (x + y)**2 ;; x=3, y=2
+suse evalx x + 2xy + y^2 ;; x + 2*x*y + y**2 ;; x=3, y=2
+ss The printed right side has "x" instead of "x²" (misprint). The correct identity is (x + y)² = x² + 2xy + y². || چھپے ہوئے دائیں طرف میں "x²" کی جگہ "x" ہے (غلطی)۔ درست کلیہ (x + y)² = x² + 2xy + y² ہے۔ || په چاپ شوي ښي اړخ کې د "x²" پر ځای "x" دی (تېروتنه). سم فورمول (x + y)² = x² + 2xy + y² دی.
+suse evalx x^2 + 2xy + y^2 ;; x**2 + 2*x*y + y**2 ;; x=3, y=2
+ss Now both sides are 25, so (x + y)² = x² + 2xy + y² is proved. || اب دونوں طرف 25 ہیں، لہٰذا (x + y)² = x² + 2xy + y² ثابت ہوا۔ || اوس دواړه اړخونه 25 دي، نو (x + y)² = x² + 2xy + y² ثابت شو.
+endsolution
+q 4 | If a = 1, b = 3 and c = 1, then evaluate $4b^2 - 2ac$. || اگر a = 1، b = 3 اور c = 1 ہو تو $4b^2 - 2ac$ کی قیمت معلوم کریں۔ || که a = 1، b = 3 او c = 1 وي، د $4b^2 - 2ac$ ارزښت معلوم کړئ.
+solution 34
+suse evalx 4b^2 - 2ac ;; 4*b**2 - 2*a*c ;; a=1, b=3, c=1
+endsolution
+endexercise
+@issue Exercise 6.4 Q2(c) and Q3 contain misprints (the statements are false as printed); the SpaceBook solutions show this and give the correct forms.
+@sec 6.5 | Addition and Subtraction of Algebraic Terms || الجبری ارکان کی جمع اور تفریق || د الجبري حدونو جمع او تفریق
+# 6.5 Addition and Subtraction of Algebraic Terms || 6.5 الجبری ارکان کی جمع اور تفریق || 6.5 د الجبري حدونو جمع او تفریق
+p In algebra, we can add or subtract like terms of two or more algebraic expressions. Unlike terms cannot be solved. || الجبرا میں ہم دو یا زیادہ الجبری عبارتوں کے یکساں ارکان جمع یا تفریق کر سکتے ہیں۔ غیر یکساں ارکان کو حل نہیں کیا جا سکتا۔ || په الجبر کې د دوو یا ډېرو الجبري افادو ورته حدونه جمع یا تفریق کولی شو. نا ورته حدونه نه شي حل کېدای.
+## 6.5.1 Addition || 6.5.1 جمع || 6.5.1 جمع
+p Ahmed had 2 cupcakes. He got 3 more cupcakes. || احمد کے پاس 2 کپ کیک تھے۔ اسے 3 اور کپ کیک ملے۔ || احمد سره 2 کپ کېکونه وو. 3 نور یې ترلاسه کړل.
+p So, 2 cupcakes + 3 cupcakes = 5 cupcakes || لہٰذا 2 کپ کیک + 3 کپ کیک = 5 کپ کیک || نو 2 کپ کېکونه + 3 کپ کېکونه = 5 کپ کېکونه
+p If we denote cupcakes with the variable "a", then, by adding we can write that: || اگر ہم کپ کیک کو متغیر "a" سے ظاہر کریں تو جمع کر کے ہم لکھ سکتے ہیں کہ: || که کپ کېکونه په "a" متحول وښیو، نو په جمع کولو لیکلی شو چې:
+m $2a + 3a = 5a$
+p Now Ahmed bought 6 nuggets. || اب احمد نے 6 نگٹس خریدے۔ || اوس احمد 6 نګټس واخیستل.
+p So, 5 cupcakes + 6 nuggets = 5 cupcakes + 6 nuggets || لہٰذا 5 کپ کیک + 6 نگٹس = 5 کپ کیک + 6 نگٹس || نو 5 کپ کېکونه + 6 نګټس = 5 کپ کېکونه + 6 نګټس
+p We cannot add cupcakes to nuggets as they are not like items. If nuggets are denoted by "b", then, we can write that: || ہم کپ کیک کو نگٹس میں جمع نہیں کر سکتے کیونکہ یہ یکساں اشیاء نہیں۔ اگر نگٹس کو "b" سے ظاہر کیا جائے تو ہم لکھ سکتے ہیں کہ: || کپ کېکونه له نګټس سره نه شو جمع کولی ځکه ورته توکي نه دي. که نګټس په "b" وښودل شي، نو لیکلی شو چې:
+m $5a + 6b = 5a + 6b$
+@issue The cupcake pictures show 2 + 3 and 5 cupcakes + 1 nugget box (the text says 6 nuggets); pictures are decorative and the text is used.

@@ -1,0 +1,32 @@
+@printed 58
+@sec mixed | Addition and Subtraction in Mixed Form || جمع اور تفریق ملی جلی شکل میں || جمع او تفریق په ګډه بڼه
+@issue Q2(b): the result row of the working box is labelled "Books sold" although it asks for the books left; kept as printed.
+@issue Q1: the first digit of "528 birds" is partly hidden by a print flaw; read as 528.
+# Addition and Subtraction in Mixed Form || جمع اور تفریق ملی جلی شکل میں || جمع او تفریق په ګډه بڼه
+p Read the stories carefully. Solve the following by identifying the operation of addition and subtraction. || کہانیاں غور سے پڑھیں۔ جمع اور تفریق کے عمل کی پہچان کر کے درج ذیل کو حل کریں۔ || کیسې په ځیر ولولئ. د جمع او تفریق عملیه وپېژنئ او لاندې حل کړئ.
+box info | Hint || اشارہ || اشاره
+p Find the clue words to identify the operation and solve the following. || عمل پہچاننے کے لیے اشارتی الفاظ تلاش کریں اور درج ذیل کو حل کریں۔ || د عملیې د پېژندلو لپاره نښې کلمې ومومئ او لاندې حل کړئ.
+endbox
+exercise Addition and Subtraction in Mixed Form
+q 1 | There are 528 birds and 395 animals in a zoo. || ایک چڑیا گھر میں 528 پرندے اور 395 جانور ہیں۔ || په یوه ژوبڼ کې 528 مرغان او 395 څاروي دي.
+qp a | How many more birds are there than animals? (Number of birds ___ ; Number of animals ___ ; Number of more birds ___) || جانوروں سے کتنے زیادہ پرندے ہیں؟ || له څارویو څو مرغان ډېر دي؟
+solution 133
+suse csub 528 - 395
+endsolution
+qp b | What is the total number of birds and animals altogether in the zoo. (Number of birds ___ ; Number of animals ___ ; Total number of birds and animals ___) || چڑیا گھر میں پرندوں اور جانوروں کی کل تعداد کیا ہے؟ || په ژوبڼ کې د مرغانو او څارویو ټول شمېر څو دی؟
+solution 923
+suse cadd 528 + 395
+endsolution
+q 2 | A bookseller has 385 books. He buys 145 more books. || ایک کتب فروش کے پاس 385 کتابیں ہیں۔ وہ 145 مزید کتابیں خریدتا ہے۔ || یوه کتاب پلورونکي سره 385 کتابونه دي. هغه نور 145 کتابونه اخلي.
+qp a | Find the total number of books. (Number of books ___ ; Books bought ___ ; Total Books ___) || کتابوں کی کل تعداد معلوم کریں۔ || د کتابونو ټول شمېر معلوم کړئ.
+solution 530
+suse cadd 385 + 145
+endsolution
+qp b | He sells 265 books. What is the total number of books has left with him? (Total Books ___ ; books Sold ___ ; Books sold ___) || وہ 265 کتابیں بیچتا ہے۔ اس کے پاس کل کتنی کتابیں بچیں؟ || هغه 265 کتابونه پلوري. هغه سره ټول څو کتابونه پاتې شول؟
+solution 265
+suse csub 530 - 265
+endsolution
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Help the students to find clue words for the identification of correct operations in word problems. || عبارتی سوالات میں درست عمل کی پہچان کے لیے اشارتی الفاظ تلاش کرنے میں طلبہ کی مدد کریں۔ || د لفظي پوښتنو کې د سمې عملیې د پېژندلو لپاره د نښو کلمو په موندلو کې له زده کوونکو سره مرسته وکړئ.
+endbox

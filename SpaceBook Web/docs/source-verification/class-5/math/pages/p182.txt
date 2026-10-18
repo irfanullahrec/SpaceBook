@@ -1,0 +1,20 @@
+@printed 174
+q 4 | A pharmacy earned a profit of Rs.50,000 in the first month, Rs.62,000 in the second month, Rs.68,000 in the third month, Rs.78,000 in the fourth month and Rs. 65,000 in the fifth month. Draw a vertical bar graph of the profit of the company for the five months. || ایک فارمیسی نے پہلے مہینے 50,000 روپے، دوسرے مہینے 62,000 روپے، تیسرے مہینے 68,000 روپے، چوتھے مہینے 78,000 روپے اور پانچویں مہینے 65,000 روپے منافع کمایا۔ پانچ مہینوں کے منافع کا عمودی بار گراف بنائیں۔ || یوې درملتون په لومړۍ میاشت کې 50,000 روپۍ، په دوهمه کې 62,000، په درېیمه کې 68,000، په څلورمه کې 78,000 او په پنځمه میاشت کې 65,000 روپۍ ګټه وکړه. د پنځو میاشتو د ګټې عمودي میله ییز ګراف رسم کړئ.
+bars Month 1=50; Month 2=62; Month 3=68; Month 4=78; Month 5=65 | max=80 | step=10 | sq=2 | x=Months | y=Profit (thousand rupees) | scale=Scale: 1 square = Rs 2,000 || Model answer: vertical bar graph of monthly profit (in thousands of rupees) || نمونہ جواب: ماہانہ منافع کا عمودی بار گراف (ہزار روپے) || نمونه ځواب: د میاشتنۍ ګټې عمودي میله ییز ګراف (زرګونه روپۍ)
+sol Bar graph (model above) ## Choose a scale such as 1 square = Rs 2,000; bars of 25, 31, 34, 39 and 32.5 squares. || 1 خانہ = 2,000 روپے جیسا پیمانہ لیں؛ 25، 31، 34، 39 اور 32.5 خانوں کی بارز۔ || لکه 1 خانه = 2,000 روپۍ پیمانه وټاکئ؛ د 25، 31، 34، 39 او 32.5 خانو میلې.
+q 5 | Fifth graders were asked to vote for their favourite subjects. The following bar graph shows their responses. Read the graph carefully to answer the given questions. || پانچویں جماعت کے طلبہ سے ان کے پسندیدہ مضامین کے لیے ووٹ دینے کو کہا گیا۔ درج ذیل بار گراف ان کے جوابات دکھاتا ہے۔ دیے گئے سوالات کے جواب کے لیے گراف کو غور سے پڑھیں۔ || د پنځم ټولګي زده کوونکو ته وویل شول چې خپلو خوښو مضمونونو ته رایه ورکړي. لاندې میله ییز ګراف د هغوی ځوابونه ښيي. ګراف په ځیر سره ولولئ او پوښتنو ته ځواب ورکړئ.
+bars Urdu=5; English=6; Arts=10; Science=6; Math=8; Social Studies=3 | max=12 | step=1 | sq=1 | x=Number of students | y=Subject | scale=Scale: 1 square = 1 student | horiz || Favourite Subject || پسندیدہ مضمون || خوښ مضمون
+@issue Review Q5 bar lengths are read from the printed graph: Urdu 5, English 6, Arts 10, Science 6, Math 8, Social Studies 3 (the grid is slightly skewed).
+qp a | A total of how many students choose Science and Mathematics? || کل کتنے طلبہ نے سائنس اور ریاضی کو چنا؟ || ټول څو زده کوونکو ساینس او ریاضي غوره کړل؟
+sol 14 students ## 6 + 8 = 14. || 6 + 8 = 14۔ || 6 + 8 = 14.
+qp b | How many students choose Arts? || کتنے طلبہ نے آرٹس کو چنا؟ || څو زده کوونکو هنر غوره کړ؟
+sol 10 students ## The Arts bar is 10 squares long. || آرٹس والی بار 10 خانے لمبی ہے۔ || د هنر میله 10 خانې اوږده ده.
+qp c | How many more students choose Math than science as their favourite subject? || سائنس کے مقابلے میں کتنے زیادہ طلبہ نے ریاضی کو پسندیدہ مضمون چنا؟ || د ساینس په پرتله څو ډېرو زده کوونکو ریاضي خوښ مضمون غوره کړ؟
+sol 2 more ## 8 − 6 = 2. || 8 − 6 = 2۔ || 8 − 6 = 2.
+qp d | Which subjects are liked by the same number of students and what is their number? || کون سے مضامین برابر تعداد میں طلبہ کو پسند ہیں اور ان کی تعداد کیا ہے؟ || کوم مضمونونه د برابر شمېر زده کوونکو خوښ دي او شمېر یې څو دی؟
+sol English and Science, 6 students each ## Both bars are 6 squares long. || دونوں بارز 6 خانے لمبی ہیں۔ || دواړه میلې 6 خانې اوږدې دي.
+qp e | Study the graph to find the total number of students in grade 5. || گراف کی مدد سے پانچویں جماعت کے طلبہ کی کل تعداد معلوم کریں۔ || د ګراف په مرسته د پنځم ټولګي د زده کوونکو ټول شمېر معلوم کړئ.
+sol 38 students ## 5 + 6 + 10 + 6 + 8 + 3 = 38. || 5 + 6 + 10 + 6 + 8 + 3 = 38۔ || 5 + 6 + 10 + 6 + 8 + 3 = 38.
+qp f | Find the most favourite and the least favourite subject of grade 5 students. || پانچویں جماعت کے طلبہ کا سب سے پسندیدہ اور سب سے کم پسندیدہ مضمون معلوم کریں۔ || د پنځم ټولګي د زده کوونکو تر ټولو خوښ او تر ټولو لږ خوښ مضمون معلوم کړئ.
+sol Most: Arts (10); least: Social Studies (3) ## Longest and shortest bars. || سب سے لمبی اور سب سے چھوٹی بار۔ || تر ټولو اوږده او تر ټولو لنډه میله.
+endexercise

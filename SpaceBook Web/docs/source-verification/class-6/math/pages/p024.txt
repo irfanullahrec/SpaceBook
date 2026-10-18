@@ -1,0 +1,73 @@
+@printed 22
+@deco Pencil circles and notes by a previous reader are not part of the printed book and were ignored.
+q 3 | Find the factors of the following numbers. || درج ذیل اعداد کے اجزائے ضربی معلوم کریں۔ || د لاندې عددونو ضربي اجزا معلوم کړئ.
+qsolve factors
+qp a | 78
+qp b | 840
+qp c | 144
+qp d | 705
+q 4 | Find the multiples of the given number less than 250. || دیے گئے عدد کے 250 سے کم اضعاف معلوم کریں۔ || د ورکړل شوي عدد هغه ضربونه معلوم کړئ چې له 250 څخه کم وي.
+qsolve multiples 250
+qp a | 18
+qp b | 30
+qp c | 55
+qp d | 82
+q 5 | Find the prime factorization of the following numbers and write it in the form of index notation. || درج ذیل اعداد کے مفرد اجزائے ضربی معلوم کریں اور انہیں قوت نما کی صورت میں لکھیں۔ || د لاندې عددونو لومړني ضربي تجزیه معلومه کړئ او د توان په بڼه یې ولیکئ.
+qsolve prime
+qp a | 566
+qp b | 788
+qp c | 1000
+qp d | 3088
+qp e | 8777
+qp f | 4026
+qp g | 6054
+qp h | 5478
+q 6 | Write the following in expanded form. || درج ذیل کو پھیلی ہوئی صورت میں لکھیں۔ || لاندې په پراخه بڼه ولیکئ.
+qsolve expand
+qp a | $5^6$
+qp b | $2^3 \times 5^5$
+qp c | $3^7 \times 7^2 \times 11^4$
+qp d | $1^2 \times 5^3 \times 3^6$
+q 7 | Find the HCF of the following numbers using prime factorization method. || مفرد اجزائے ضربی کے طریقے سے درج ذیل اعداد کا عاد اعظم معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د لاندې عددونو لوی مشترک قاسم معلوم کړئ.
+qsolve hcfpf
+qp a | 455, 254
+qp b | 569, 369, 545
+qp c | 690, 468
+qp d | 255, 751, 155
+q 8 | Find the HCF of the following numbers by division method. || تقسیم کے طریقے سے درج ذیل اعداد کا عاد اعظم معلوم کریں۔ || د وېش په طریقه د لاندې عددونو لوی مشترک قاسم معلوم کړئ.
+qsolve hcfdiv
+qp a | 256, 164, 144
+qp b | 178, 278, 240
+qp c | 448, 385, 245
+qp d | 212, 380, 180
+q 9 | Find the LCM of the following numbers using prime factorization method. || مفرد اجزائے ضربی کے طریقے سے درج ذیل اعداد کا ذو اضعاف اقل معلوم کریں۔ || د لومړني ضربي تجزیې په طریقه د لاندې عددونو کوچنی مشترک ضرب معلوم کړئ.
+qsolve lcmpf
+qp a | 600, 345, 476
+qp b | 620, 434, 545
+qp c | 156, 135, 215
+qp d | 165, 425, 725
+q 10 | Find the LCM of the following numbers using division method. || تقسیم کے طریقے سے درج ذیل اعداد کا ذو اضعاف اقل معلوم کریں۔ || د وېش په طریقه د لاندې عددونو کوچنی مشترک ضرب معلوم کړئ.
+qsolve lcmdiv
+qp a | 212, 404, 68
+qp b | 306, 428, 845
+qp c | 340, 146, 456
+qp d | 560, 956, 890
+q 11 | Find square of the following numbers. || درج ذیل اعداد کا مربع معلوم کریں۔ || د لاندې عددونو مربع معلوم کړئ.
+qsolve square
+qp a | 16
+qp b | 12
+qp c | 44
+qp d | 62
+q 12 | The length, breadth and height of a room is 680 cm, 510 cm and 340 cm respectively. Find the longest tape which can measure the dimensions of the room exactly. || ایک کمرے کی لمبائی، چوڑائی اور اونچائی بالترتیب 680 cm، 510 cm اور 340 cm ہے۔ وہ سب سے لمبا فیتہ معلوم کریں جو کمرے کی پیمائشیں ٹھیک ٹھیک ناپ سکے۔ || د یوې کوټې اوږدوالی، پلنوالی او لوړوالی په ترتیب سره 680 cm، 510 cm او 340 cm دی. هغه تر ټولو اوږده فیته معلومه کړئ چې د کوټې اندازې په سمه توګه اندازه کړي.
+solution 170 cm
+ss The longest tape that measures every length exactly must divide 680, 510 and 340. The longest such length is their HCF. || وہ سب سے لمبا فیتہ جو ہر لمبائی ٹھیک ٹھیک ناپے، 680، 510 اور 340 کو تقسیم کرے گا۔ ایسی سب سے بڑی لمبائی ان کا عاد اعظم ہے۔ || هغه تر ټولو اوږده فیته چې هر اوږدوالی په سمه توګه اندازه کړي باید 680، 510 او 340 ووېشي. داسې تر ټولو لوی اوږدوالی د هغوی لوی مشترک قاسم دی.
+suse hcfdiv 680, 510, 340
+ss So the longest tape is 170 cm. || لہٰذا سب سے لمبا فیتہ 170 cm ہے۔ || نو تر ټولو اوږده فیته 170 cm ده.
+endsolution
+q 13 | A light flashes every 12 seconds, another every 18 seconds and a third every single minute. At 2:45 a.m, the three flashed simultaneously. What time the three lights will again flash simultaneously? || ایک روشنی ہر 12 سیکنڈ بعد، دوسری ہر 18 سیکنڈ بعد اور تیسری ہر ایک منٹ بعد چمکتی ہے۔ صبح 2:45 پر تینوں ایک ساتھ چمکیں۔ تینوں روشنیاں دوبارہ کب ایک ساتھ چمکیں گی؟ || یوه رڼا هر 12 ثانیې، بله هر 18 ثانیې او درېیمه هره یوه دقیقه ځلېږي. د سهار په 2:45 درې واړه یوځای وځلېدې. درې واړه رڼاوې به بیا کله یوځای وځلېږي؟
+solution 2:48 a.m.
+ss Use the same unit first: 1 minute = 60 seconds. So the lights flash every 12 s, 18 s and 60 s. || پہلے ایک ہی اکائی لیں: 1 منٹ = 60 سیکنڈ۔ یعنی روشنیاں ہر 12، 18 اور 60 سیکنڈ بعد چمکتی ہیں۔ || لومړی یو واحد وکاروئ: 1 دقیقه = 60 ثانیې. نو رڼاوې هر 12، 18 او 60 ثانیې وروسته ځلېږي.
+ss They flash together again after a time that is a multiple of 12, 18 and 60: the LCM. || وہ دوبارہ اس وقت ایک ساتھ چمکیں گی جو 12، 18 اور 60 کا ضعف ہو: یعنی ذو اضعاف اقل۔ || هغوی به بیا په هغه وخت یوځای وځلېږي چې د 12، 18 او 60 ضرب وي: یعنې کوچنی مشترک ضرب.
+suse lcmdiv 12, 18, 60
+ss 180 seconds = 180 ÷ 60 = 3 minutes. 2:45 a.m. + 3 minutes = 2:48 a.m. || 180 سیکنڈ = 180 ÷ 60 = 3 منٹ۔ صبح 2:45 + 3 منٹ = صبح 2:48۔ || 180 ثانیې = 180 ÷ 60 = 3 دقیقې. د سهار 2:45 + 3 دقیقې = د سهار 2:48.
+endsolution

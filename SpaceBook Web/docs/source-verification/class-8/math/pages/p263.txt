@@ -1,0 +1,32 @@
+@printed 261
+@issue Continuation of 10.8 (perpendicular bisector steps). Step 3 prints "using the same radius take B as center and draw two arcs on both sides of AC" (AC is read as printed; the construction is on AB). The figure labels C, E, G, F, A, D, B are as printed; recreated. In Exercise 10.8 the printed figures are: triangles ABC (yellow), DEF (grey), GHI (blue), JKL (inverted), a rectangle ABCD, a parallelogram ABCD, a square ABCD and a kite ABCD with equal-side tick marks; recreated as outlines.
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړولو پړاوونه:**
+p **Step 1:** Draw a triangle ABC. || **مرحلہ 1:** ایک مثلث ABC بنائیں۔ || **لومړی پړاو:** یو مثلث ABC رسم کړئ.
+p **Step 2:** Take A as the center and draw two arcs on both sides of AB by taking radius a little more than half of segment AB. || **مرحلہ 2:** A کو مرکز لے کر AB کے دونوں طرف دو قوسیں کھینچیں، نصف قطر قطعہ AB کے نصف سے تھوڑا زیادہ لیں۔ || **دوهم پړاو:** A د مرکز په توګه واخلئ او د AB په دواړو خواو کې دوه قوسونه رسم کړئ، شعاع د AB له نیمایي څخه لږ زیاته واخلئ.
+p **Step 3:** Similarly, using the same radius take B as center and draw two arcs on both sides of AC. || **مرحلہ 3:** اسی طرح اسی نصف قطر سے B کو مرکز لے کر AC کے دونوں طرف دو قوسیں کھینچیں۔ || **درېیم پړاو:** په همدې ډول، په همدې شعاع B د مرکز په توګه واخلئ او د AC په دواړو خواو کې دوه قوسونه رسم کړئ.
+p **Step 4:** Join the point of intersection that cuts AB at D. This line is the perpendicular bisector of AB. Similarly, draw line bisectors of side AC and BC. The point G where the three bisectors of sides of triangle meet is called the **circumcenter**. || **مرحلہ 4:** تقاطع کے ان نقاط کو ملائیں جو AB کو D پر کاٹتے ہیں۔ یہ خط AB کا عمودی ناصف ہے۔ اسی طرح اطراف AC اور BC کے خطی ناصف بنائیں۔ وہ نقطہ G جہاں مثلث کی اطراف کے تینوں ناصف ملتے ہیں **مرکز محیطی (سرکم سینٹر)** کہلاتا ہے۔ || **څلورم پړاو:** د تقاطع هغه ټکي وصل کړئ چې AB په D کې پرې کوي. دا کرښه د AB عمودي منصف ده. په همدې ډول د ضلعو AC او BC منصفونه رسم کړئ. هغه ټکی G چېرته چې د مثلث د ضلعو درې واړه منصفونه یو بل ته رسېږي **محیطي مرکز (سرکم سنټر)** بلل کېږي.
+p In the same way we can construct angle or perpendicular line bisectors of any shape. || اسی طرح ہم کسی بھی شکل کے زاویائی یا عمودی خطی ناصف بنا سکتے ہیں۔ || په همدې ډول موږ د هر ډول بڼې د زاویې یا عمودي کرښې منصفونه جوړولی شو.
+svg Triangle ABC with perpendicular bisector of AB at D and circumcenter G || مثلث ABC اور محیطی مرکز G || مثلث ABC او محیطي مرکز G
+<svg viewBox="0 0 240 200" width="240" role="img" aria-label="Triangle ABC with C at the top, A bottom left, B bottom right; D midpoint of AB with a dotted perpendicular bisector; E and F midpoints of the other sides; G where the bisectors meet" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="120,10 30,160 210,160" fill="#cfe8f7" stroke="#0f172a" stroke-width="1.5"/><line x1="120" y1="190" x2="120" y2="95" stroke="#0f172a" stroke-dasharray="3 3"/><line x1="40" y1="85" x2="150" y2="125" stroke="#0f172a" stroke-dasharray="3 3"/><line x1="200" y1="85" x2="90" y2="125" stroke="#0f172a" stroke-dasharray="3 3"/>
+<text x="116" y="8" font-weight="700">C</text><text x="14" y="168" font-weight="700">A</text><text x="214" y="168" font-weight="700">B</text><text x="124" y="176" font-weight="700">D</text><text x="68" y="84" font-weight="700">E</text><text x="166" y="84" font-weight="700">F</text><text x="118" y="108" font-weight="700">G</text>
+</svg>
+endsvg
+exercise 10.8
+p Draw angle bisectors for these shapes. Also draw perpendicular side bisectors. || ان شکلوں کے لیے زاویائی ناصف بنائیں۔ اطراف کے عمودی ناصف بھی بنائیں۔ || د دې بڼو لپاره د زاویې منصفونه رسم کړئ. د ضلعو عمودي منصفونه هم رسم کړئ.
+svg Shapes for Exercise 10.8: triangles ABC, DEF, GHI, JKL; rectangle, parallelogram, square and kite ABCD || د مشق 10.8 کی شکلیں || د 10.8 تمرین بڼې
+<svg viewBox="0 0 520 330" width="520" role="img" aria-label="Four triangles on the first row; a rectangle ABCD, a parallelogram ABCD, a square ABCD and a kite ABCD below" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#0f172a">
+<polygon points="45,10 15,65 75,65" fill="#fdf2a0" stroke="#0f172a"/><text x="42" y="8">A</text><text x="4" y="74">C</text><text x="76" y="74">B</text>
+<polygon points="130,10 130,65 205,65" fill="#b8b8b8" stroke="#0f172a"/><text x="126" y="8">D</text><text x="120" y="74">F</text><text x="206" y="74">E</text>
+<polygon points="300,10 260,65 340,65" fill="#a9d6ef" stroke="#0f172a"/><text x="296" y="8">G</text><text x="250" y="74">I</text><text x="342" y="74">H</text>
+<polygon points="400,10 470,10 435,65" fill="#fff" stroke="#0f172a"/><text x="392" y="8">J</text><text x="472" y="8">K</text><text x="432" y="78">L</text>
+<rect x="20" y="115" width="160" height="70" fill="#fbdcc0" stroke="#0f172a"/><text x="8" y="112">A</text><text x="184" y="112">D</text><text x="8" y="200">B</text><text x="184" y="200">C</text>
+<polygon points="250,175 290,115 380,115 340,175" fill="#d9b5dd" stroke="#0f172a"/><text x="244" y="190">B</text><text x="284" y="112">A</text><text x="384" y="112">D</text><text x="344" y="190">C</text>
+<rect x="100" y="230" width="90" height="90" fill="#a9d6ef" stroke="#0f172a"/><text x="88" y="228">A</text><text x="194" y="228">D</text><text x="88" y="332">B</text><text x="194" y="332">C</text>
+<polygon points="380,225 440,255 380,320 320,255" fill="#fff" stroke="#0f172a"/><text x="376" y="222">A</text><text x="444" y="258">D</text><text x="376" y="332">C</text><text x="306" y="258">B</text>
+</svg>
+endsvg
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask the students to draw various types of quadrilaterals and draw angle and line bisectors for their angles and sides by following the steps given above. || طلبہ سے کہیں کہ مختلف اقسام کے چہار ضلعی بنائیں اور اوپر دیے گئے مراحل کی پیروی کرتے ہوئے ان کے زاویوں اور اطراف کے زاویائی اور خطی ناصف بنائیں۔ || له زده کوونکو وغواړئ چې بېلابېل ډوله څلور ضلعي رسم کړي او پورته ورکړل شویو پړاوونو په تعقیب د هغوی د زاویو او ضلعو د زاویې او کرښې منصفونه رسم کړي.
+endbox

@@ -1,0 +1,83 @@
+@printed 164
+q 6 | A cube shaped gift box has a length of 3 cm. Find whether the surface area of this box is greater or smaller than that of a cuboid box of dimension 5 cm × 6 cm × 3 cm. || مکعب شکل کے تحفے کے ڈبے کی لمبائی 3 cm ہے۔ معلوم کریں کہ اس ڈبے کا سطحی رقبہ 5 cm × 6 cm × 3 cm پیمائش کے مکعب نما ڈبے سے زیادہ ہے یا کم۔ || د مکعب شکله د ډالۍ بکس اوږدوالی 3 cm دی. معلوم کړئ چې د دې بکس سطحي مساحت د 5 cm × 6 cm × 3 cm اندازې مستطیلي مکعب بکس څخه لوی دی که کوچنی.
+solution Smaller: 54 cm² < 126 cm²
+sm \text{Cube: } 6 \times 3^2 = 54 \text{ cm}^2
+sm \text{Cuboid: } 2 \times [(5 \times 6) + (5 \times 3) + (6 \times 3)] = 2 \times 63 = 126 \text{ cm}^2
+ss 54 < 126, so the cube's surface area is smaller. || 54 < 126، اس لیے مکعب کا سطحی رقبہ کم ہے۔ || 54 < 126، نو د مکعب سطحي مساحت کوچنی دی.
+endsolution
+q 7 | The total surface area of a cuboid shoebox is 1296 cm². If its length and width is 18 cm and 9 cm respectively, find the height of the shoebox. || جوتوں کے مکعب نما ڈبے کا کل سطحی رقبہ 1296 cm² ہے۔ اگر اس کی لمبائی اور چوڑائی بالترتیب 18 cm اور 9 cm ہو تو اونچائی معلوم کریں۔ || د بوټانو د مستطیلي مکعب بکس ټوله سطحي مساحت 1296 cm² ده. که اوږدوالی او پلنوالی یې په ترتیب سره 18 cm او 9 cm وي، جګوالی یې معلوم کړئ.
+solution 18 cm
+ss Put the values in the surface-area formula, as in Example 4: 2 × [(18 × 9) + 18h + 9h] = 1296. || مثال 4 کی طرح قیمتیں سطحی رقبے کے فارمولے میں رکھیں: 2 × [(18 × 9) + 18h + 9h] = 1296۔ || د 4 بېلګې په څېر ارزښتونه د سطحي مساحت په فورمول کې کېږدئ: 2 × [(18 × 9) + 18h + 9h] = 1296.
+suse lineq 2(162 + 18h + 9h) = 1296|h
+endsolution
+q 8 | A wooden box has a length of 3 m, width of 2 m and height of 4 m. Find: || لکڑی کے ڈبے کی لمبائی 3 m، چوڑائی 2 m اور اونچائی 4 m ہے۔ معلوم کریں: || د لرګي بکس 3 m اوږد، 2 m پلن او 4 m جګ دی. معلوم کړئ:
+qp a | The volume of the box. || ڈبے کا حجم۔ || د بکس حجم.
+solution 24 m³
+sm 3 \times 2 \times 4 = 24 \text{ m}^3
+endsolution
+qp b | The cost of polishing its surface if the rate of polishing is Rs 220 per square metre. || اگر پالش کی شرح 220 روپے فی مربع میٹر ہو تو اس کی سطح پالش کرنے کی لاگت۔ || که د پالش نرخ په هر مربع متر 220 روپۍ وي، د سطحې د پالش لګښت.
+solution Rs 11,440
+sm 2 \times [(3 \times 2) + (3 \times 4) + (2 \times 4)] = 2 \times 26 = 52 \text{ m}^2
+sm 52 \times 220 = \text{Rs } 11440
+endsolution
+q 9 | A box is 0.56 m high and 21 cm wide. Its volume is 51744 cubic centimetres. Find: || ایک ڈبہ 0.56 m اونچا اور 21 cm چوڑا ہے۔ اس کا حجم 51744 مکعب سینٹی میٹر ہے۔ معلوم کریں: || یو بکس 0.56 m جګ او 21 cm پلن دی. حجم یې 51744 مکعب سانتي متره دی. معلوم کړئ:
+qp a | The length of the box in cm. || ڈبے کی لمبائی cm میں۔ || د بکس اوږدوالی په cm.
+solution 44 cm
+ss Make the units the same: 0.56 m = 56 cm. Then length = volume ÷ (width × height). || اکائیاں ایک جیسی کریں: 0.56 m = 56 cm۔ پھر لمبائی = حجم ÷ (چوڑائی × اونچائی)۔ || واحدونه یو شان کړئ: 0.56 m = 56 cm. بیا اوږدوالی = حجم ÷ (پلنوالی × جګوالی).
+sm l = \frac{51744}{21 \times 56} = \frac{51744}{1176} = 44 \text{ cm}
+endsolution
+qp b | Total surface area of the box in cm². || ڈبے کا کل سطحی رقبہ cm² میں۔ || د بکس ټوله سطحي مساحت په cm².
+solution 9128 cm²
+sm 2 \times [(44 \times 21) + (44 \times 56) + (21 \times 56)] = 2 \times [924 + 2464 + 1176] = 2 \times 4564 = 9128 \text{ cm}^2
+endsolution
+qp c | Cost of painting its complete outer surface at the rate of Rs 145 per square centimetres. (Hint: First make the units of its dimensions the same) || 145 روپے فی مربع سینٹی میٹر کے حساب سے اس کی پوری بیرونی سطح رنگ کرنے کی لاگت۔ (اشارہ: پہلے پیمائشوں کی اکائیاں ایک جیسی کریں) || په هر مربع سانتي متر 145 روپیو د هغه د بشپړې بهرنۍ سطحې د رنګولو لګښت. (اشاره: لومړی د اندازو واحدونه یو شان کړئ)
+solution Rs 1,323,560
+sm 9128 \times 145 = \text{Rs } 1323560
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Find the area and perimeter of the following compound shapes. || درج ذیل مرکب اشکال کا رقبہ اور احاطہ معلوم کریں۔ || د لاندې مرکبو شکلونو مساحت او محیط معلوم کړئ.
+qp a | L-shaped figure (bottom 9 cm, right 7 cm, top 6 cm, step 3 cm, left 4 cm) || L شکل (نیچے 9 cm، دائیں 7 cm، اوپر 6 cm، قدم 3 cm، بائیں 4 cm) || د L شکل (لاندې 9 cm، ښی 7 cm، پورته 6 cm، پوړۍ 3 cm، کیڼ 4 cm)
+svg L-shaped figure || L شکل || د L شکل
+<svg viewBox="0 0 240 170" width="240" role="img" aria-label="L-shaped figure: bottom 9 cm, right 7 cm, top 6 cm, step 3 cm, left 4 cm" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a"><polygon points="40,150 220,150 220,10 100,10 100,70 40,70" fill="#5eead4" stroke="#0f172a"/><text x="130" y="166" text-anchor="middle">9 cm</text><text x="224" y="85">7 cm</text><text x="160" y="8" text-anchor="middle">6 cm</text><text x="70" y="66" text-anchor="middle">3 cm</text><text x="36" y="114" text-anchor="end">4 cm</text></svg>
+endsvg
+solution Area = 54 cm², Perimeter = 32 cm
+ss Split into two rectangles: a 6 cm × 7 cm piece on the right and a 3 cm × 4 cm piece on the left. || دو مستطیلوں میں تقسیم کریں: دائیں طرف 6 cm × 7 cm اور بائیں طرف 3 cm × 4 cm۔ || په دوو مستطیلونو یې ووېشئ: ښي خوا ته 6 cm × 7 cm او کیڼ خوا ته 3 cm × 4 cm.
+sm 6 \times 7 + 3 \times 4 = 42 + 12 = 54 \text{ cm}^2
+ss Perimeter: add all the outside edges. The unmarked step is 7 − 4 = 3 cm. || احاطہ: تمام بیرونی کنارے جمع کریں۔ بغیر نشان والا قدم 7 − 4 = 3 cm ہے۔ || محیط: ټولې بهرنۍ څنډې جمع کړئ. بې نښې پوړۍ 7 − 4 = 3 cm ده.
+sm 9 + 7 + 6 + 3 + 3 + 4 = 32 \text{ cm}
+endsolution
+qp b | C-shaped figure (outer 15 cm by 12 cm, arms 3 cm thick, gap 10 cm deep) || C شکل (باہر 15 cm ضرب 12 cm، بازو 3 cm موٹے، خلا 10 cm گہرا) || د C شکل (بهر 15 cm په 12 cm، لاسونه 3 cm پنډ، تشه 10 cm ژوره)
+svg C-shaped figure || C شکل || د C شکل
+<svg viewBox="0 0 260 170" width="260" role="img" aria-label="C-shaped figure: outer 15 cm by 12 cm, arms 3 cm thick, gap 10 cm deep" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a"><polygon points="40,10 220,10 220,46 100,46 100,118 220,118 220,154 40,154" fill="#5eead4" stroke="#0f172a"/><text x="130" y="168" text-anchor="middle">15 cm</text><text x="34" y="86" text-anchor="end">12 cm</text><text x="226" y="32">3 cm</text><text x="226" y="140">3 cm</text><text x="160" y="112" text-anchor="middle">10 cm</text></svg>
+endsvg
+solution Area = 120 cm², Perimeter = 74 cm
+ss Take the full rectangle 15 × 12 and subtract the cut-out gap. The gap is 10 cm long and 12 − 3 − 3 = 6 cm high. || پورا مستطیل 15 × 12 لیں اور کٹا ہوا خلا تفریق کریں۔ خلا 10 cm لمبا اور 12 − 3 − 3 = 6 cm اونچا ہے۔ || بشپړ مستطیل 15 × 12 واخلئ او پرې شوې تشه ترې کمه کړئ. تشه 10 cm اوږده او 12 − 3 − 3 = 6 cm جګه ده.
+sm 15 \times 12 - 10 \times 6 = 180 - 60 = 120 \text{ cm}^2
+ss Perimeter: go all round the outside edge. || احاطہ: پورے بیرونی کنارے کے گرد چلیں۔ || محیط: د ټولې بهرنۍ څنډې شاوخوا وګرځئ.
+sm 15 + 3 + 10 + 6 + 10 + 3 + 15 + 12 = 74 \text{ cm}
+endsolution
+endbox
+@sec u8-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- Perimeter of a shape is measured by adding the length of all its sides. Its always measured in single units i.e. centimetres (cm), metres (m), etc. || کسی شکل کا احاطہ اس کے تمام اضلاع کی لمبائی جمع کر کے ناپا جاتا ہے۔ اسے ہمیشہ سادہ اکائیوں یعنی سینٹی میٹر (cm)، میٹر (m) وغیرہ میں ناپا جاتا ہے۔ || د شکل محیط د ټولو ضلعو د اوږدوالي په جمع کولو اندازه کېږي. تل په ساده واحدونو یعنې سانتي متر (cm)، متر (m) او نورو کې اندازه کېږي.
+- Area of a figure is the surface covered by that figure. It is always measured in squared units i.e. square centimetres cm², square metres m², etc. || کسی شکل کا رقبہ وہ سطح ہے جو وہ شکل گھیرتی ہے۔ اسے ہمیشہ مربع اکائیوں یعنی cm²، m² وغیرہ میں ناپا جاتا ہے۔ || د شکل مساحت هغه سطحه ده چې شکل یې نیسي. تل په مربع واحدونو یعنې cm²، m² او نورو کې اندازه کېږي.
+- Altitude of a figure is also called the height of the geometric figure. || کسی شکل کے ارتفاع کو جیومیٹریکل شکل کی اونچائی بھی کہتے ہیں۔ || د شکل لوړوالي ته د هندسي شکل جګوالی هم وايي.
+- In a triangle if we choose one side as altitude the opposite side of the altitude is called the base. || مثلث میں اگر ہم ایک ضلع کو ارتفاع چنیں تو ارتفاع کی مخالف ضلع قاعدہ کہلاتی ہے۔ || په مثلث کې که یوه ضلع د لوړوالي په توګه وټاکو، د لوړوالي مقابلې ضلعې ته قاعده وايي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Perimeter || احاطہ || محیط
+- Area || رقبہ || مساحت
+- Surface area || سطحی رقبہ || سطحي مساحت
+- Volume || حجم || حجم
+- Trapezium || ذوزنقہ || ذوزنقه
+- Parallelogram || متوازی الاضلاع || متوازي الاضلاع
+- Triangle || مثلث || مثلث
+- Altitude || ارتفاع || لوړوالی
+- Base || قاعدہ || قاعده
+- Cube || مکعب || مکعب
+- Cuboid || مکعب نما || مستطیلي مکعب
+- Dimensions || ابعاد || بعدونه
+- Sphere || کرہ || کره
+- Hemisphere || نصف کرہ || نیمه کره
+- Cylinder || اسطوانہ || استوانه
+endbox

@@ -1,0 +1,52 @@
+@printed 34
+@deco Cartoon book mascot on "Exercise 1"; Independence Day "14 August" poster; picture of a red first-aid kit.
+exercise 1
+q 1 | Find the HCF of the following numbers by using prime factorization method. || درج ذیل اعداد کا عاد اعظم مفرد اجزائے ضربی کے طریقے سے معلوم کریں۔ || د لاندې عددونو لوی مشترک قاسم د لومړني ضربي تجزیې په طریقه معلوم کړئ.
+qsolve hcfpf
+qp a | 58, 72
+qp b | 21, 48
+qp c | 56, 70
+qp d | 45, 90
+qp e | 42, 49
+qp f | 15, 18, 56
+qp g | 42, 54, 64
+qp h | 18, 30, 90
+qp i | 12, 24, 36
+qp j | 18, 36, 76
+qp k | 5, 35, 40
+qp l | 13, 52, 78
+q 2 | Find the HCF of the following numbers by using division method. || درج ذیل اعداد کا عاد اعظم تقسیم کے طریقے سے معلوم کریں۔ || د لاندې عددونو لوی مشترک قاسم د وېش په طریقه معلوم کړئ.
+qsolve hcfdiv
+qp a | 13, 65
+qp b | 25, 75
+qp c | 42, 98
+qp d | 16, 20, 70
+qp e | 56, 84, 88
+qp f | 57, 76, 95
+qp g | 16, 32, 96
+qp h | 20, 40, 80
+qp i | 48, 76, 96
+qp j | 24, 48, 72
+qp k | 51, 65, 75
+qp l | 13, 39, 78
+q 3 | The lengths of the two ropes is 24 meters and 14 meters. If Ali wants to cut the ropes into pieces of equal length without any rope left. What will be the maximum length of each piece? || دو رسیوں کی لمبائی 24 میٹر اور 14 میٹر ہے۔ اگر علی رسیوں کو برابر لمبائی کے ٹکڑوں میں اس طرح کاٹنا چاہے کہ کوئی رسی نہ بچے تو ہر ٹکڑے کی زیادہ سے زیادہ لمبائی کیا ہوگی؟ || د دوو پړو اوږدوالی 24 متره او 14 متره دی. که علي وغواړي پړي په برابرو ټوټو داسې پرې کړي چې هېڅ پړی پاتې نه شي، د هرې ټوټې تر ټولو ډېر اوږدوالی به څومره وي؟
+solution 2 metres
+ss Equal pieces with nothing left over, as long as possible → HCF of 24 and 14. || برابر ٹکڑے، کچھ نہ بچے اور زیادہ سے زیادہ لمبائی → 24 اور 14 کا عاد اعظم۔ || برابرې ټوټې، هېڅ پاتې نه شي او تر ټولو اوږدې → د 24 او 14 لوی مشترک قاسم.
+suse hcfpf 24, 14
+endsolution
+q 4 | For the Independence Day celebrations, 52 students in white, 65 students in green and 39 students in blue dresses are to be arranged in equal rows in such a way that students of same colour dress are in each row. What is the greatest number of students that could be in each row? || یومِ آزادی کی تقریبات کے لیے سفید لباس میں 52، سبز لباس میں 65 اور نیلے لباس میں 39 طلبہ کو برابر قطاروں میں اس طرح کھڑا کرنا ہے کہ ہر قطار میں ایک ہی رنگ کے لباس والے طلبہ ہوں۔ ہر قطار میں زیادہ سے زیادہ کتنے طلبہ ہو سکتے ہیں؟ || د خپلواکۍ د ورځې د لمانځنې لپاره باید په سپینو جامو کې 52، په شنو جامو کې 65 او په نیلي جامو کې 39 زده کوونکي په برابرو لیکو داسې ودرول شي چې په هره لیکه کې د یو رنګ جامو زده کوونکي وي. په هره لیکه کې تر ټولو ډېر څو زده کوونکي کېدای شي؟
+solution 13 students
+ss Each row must divide 52, 65 and 39 exactly, and be as large as possible → HCF. || ہر قطار کی تعداد 52، 65 اور 39 کو پورا پورا تقسیم کرے اور زیادہ سے زیادہ ہو → عاد اعظم۔ || د هرې لیکې شمېر باید 52، 65 او 39 په بشپړ ډول ووېشي او تر ټولو لوی وي → لوی مشترک قاسم.
+suse hcfpf 52, 65, 39
+endsolution
+q 5 | Find the greatest number that divides 16, 24 and 48 completely. || وہ سب سے بڑا عدد معلوم کریں جو 16، 24 اور 48 کو مکمل طور پر تقسیم کرے۔ || هغه تر ټولو لوی عدد معلوم کړئ چې 16، 24 او 48 په بشپړ ډول ووېشي.
+solution 8
+ss The greatest number that divides all of them is their HCF. || ان سب کو تقسیم کرنے والا سب سے بڑا عدد ان کا عاد اعظم ہے۔ || هغه تر ټولو لوی عدد چې ټول ووېشي، د هغوی لوی مشترک قاسم دی.
+suse hcfdiv 16, 24, 48
+endsolution
+q 6 | Ibrahim and Marwa are preparing first aid kits for the students. They have 30 perforated adhesive bandages, 60 triangular bandages and 75 rectangular bandages. They must distribute these equally in the kits, with nothing left over. What is the greatest number of kits they can make with this quantity of bandages? || ابراہیم اور مروہ طلبہ کے لیے ابتدائی طبی امداد کی کٹس تیار کر رہے ہیں۔ ان کے پاس 30 سوراخ دار چپکنے والی پٹیاں، 60 تکونی پٹیاں اور 75 مستطیل پٹیاں ہیں۔ انہیں یہ پٹیاں کٹس میں برابر تقسیم کرنی ہیں کہ کچھ نہ بچے۔ وہ اتنی پٹیوں سے زیادہ سے زیادہ کتنی کٹس بنا سکتے ہیں؟ || ابراهیم او مروه زده کوونکو ته د لومړنیو مرستو کڅوړې چمتو کوي. دوی 30 سوري لرونکې سرېښناکې پټۍ، 60 درې ګوټې پټۍ او 75 مستطیلي پټۍ لري. باید دا پټۍ په کڅوړو کې برابرې ووېشي چې هېڅ پاتې نه شي. په دې پټیو تر ټولو ډېرې څو کڅوړې جوړولی شي؟
+solution 15 kits
+ss The number of kits must divide 30, 60 and 75 exactly; the greatest such number is the HCF. || کٹس کی تعداد 30، 60 اور 75 کو پورا پورا تقسیم کرے؛ ایسا سب سے بڑا عدد عاد اعظم ہے۔ || د کڅوړو شمېر باید 30، 60 او 75 په بشپړ ډول ووېشي؛ داسې تر ټولو لوی عدد لوی مشترک قاسم دی.
+suse hcfpf 30, 60, 75
+endsolution
+endexercise

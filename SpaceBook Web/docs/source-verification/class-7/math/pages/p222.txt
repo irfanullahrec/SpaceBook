@@ -1,0 +1,29 @@
+@printed 218
+qp b | PQRS is a parallelogram. Find: i) ∠l + ∠m + ∠n + ∠o = ____ ii) ∠m = ∠____ and ∠l = ∠____ || PQRS ایک متوازی الاضلاع ہے۔ معلوم کریں: i) ∠l + ∠m + ∠n + ∠o = ____ ii) ∠m = ∠____ اور ∠l = ∠____ || PQRS یو متوازي الاضلاع دی. معلوم کړئ: i) ∠l + ∠m + ∠n + ∠o = ____ ii) ∠m = ∠____ او ∠l = ∠____
+poly S:40,20;R:200,20;Q:190,110;P:30,110 | fill=#fff | in=n@S;m@R;l@Q;o@P | desc=Parallelogram PQRS with angles n at S, m at R, l at Q and o at P || Parallelogram PQRS for Q5(b) || سوال 5(b) کا متوازی الاضلاع PQRS || د 5(b) پوښتنې متوازي الاضلاع PQRS
+qp c | ABCD is a trapezium. i) ∠z + ∠y = ____ ii) ∠w + ∠x = ____ iii) ∠x + ∠y + ∠z + ∠w = ____ iv) ____ and ____ is the only pair of parallel sides. || ABCD ایک ذوزنقہ ہے۔ i) ∠z + ∠y = ____ ii) ∠w + ∠x = ____ iii) ∠x + ∠y + ∠z + ∠w = ____ iv) ____ اور ____ متوازی اضلاع کا واحد جوڑا ہے۔ || ABCD یوه ذوزنقه ده. i) ∠z + ∠y = ____ ii) ∠w + ∠x = ____ iii) ∠x + ∠y + ∠z + ∠w = ____ iv) ____ او ____ د موازي ضلعو یوازینۍ جوړه ده.
+poly D:60,20;C:180,20;B:240,120;A:20,120 | fill=#fff | in=w@D;z@C;y@B;x@A | desc=Trapezium ABCD with DC parallel to AB; angles w at D, z at C, y at B and x at A || Trapezium ABCD for Q5(c) || سوال 5(c) کا ذوزنقہ ABCD || د 5(c) پوښتنې ذوزنقه ABCD
+@issue Q5(c)(iii) prints "∠x + ∠y + ∠z ÷ ∠w" with a division sign (should be +); kept as written above with +.
+q 6 | Tell whether the polygon is regular or not regular. Also explain if it is convex or concave. || بتائیں کہ کثیر الاضلاع باقاعدہ ہے یا نہیں۔ یہ بھی بتائیں کہ یہ محدب ہے یا مقعر۔ || ووایاست چې څو ضلعي منظمه ده که نه. دا هم تشریح کړئ چې محدبه ده که مقعره.
+svg Six polygons a) to f): a triangle, a concave hexagon with a notch, a square, a concave hexagon with a top notch, an irregular quadrilateral and a regular hexagon || چھ کثیر الاضلاع a) تا f): مثلث، کٹاؤ والا مقعر مسدس، مربع، اوپر کٹاؤ والا مقعر مسدس، بے قاعدہ چوکور اور باقاعدہ مسدس || شپږ څو ضلعي a) تر f): مثلث، د کټاو مقعره شپږ ضلعي، مربع، له پورته کټاو مقعره شپږ ضلعي، غیر منظمه څلور ضلعي او منظمه شپږ ضلعي
+<svg viewBox="0 0 560 90" width="560" role="img" aria-label="a) a right-pointing triangle; b) a concave six-sided shape with a notch on the right; c) a square; d) a concave shape with a dip at the top; e) an irregular quadrilateral; f) a regular hexagon" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a" stroke="#0f172a" stroke-width="1.3"><polygon points="20,20 55,45 20,70" fill="#fff"/><polygon points="90,20 170,20 150,45 170,70 90,70 75,45" fill="#fff"/><rect x="200" y="20" width="50" height="50" fill="#fff"/><polygon points="285,25 305,35 325,25 335,50 315,75 290,75 275,50" fill="#fff"/><polygon points="365,20 420,20 445,70 380,70" fill="#fff"/><polygon points="490,30 530,30 550,48 530,66 490,66 470,48" fill="#fff"/><g stroke="none"><text x="8" y="16">a)</text><text x="78" y="16">b)</text><text x="190" y="16">c)</text><text x="268" y="16">d)</text><text x="352" y="16">e)</text><text x="460" y="16">f)</text></g></svg>
+endsvg
+q 7 | Draw an irregular polygon that has even number of sides. || جفت تعداد کے اضلاع والی ایک بے قاعدہ کثیر الاضلاع بنائیں۔ || د جفت شمېر ضلعو یوه غیر منظمه څو ضلعي رسم کړئ.
+q 8 | Draw a regular polygon that has odd number of sides. || طاق تعداد کے اضلاع والی ایک باقاعدہ کثیر الاضلاع بنائیں۔ || د طاق شمېر ضلعو یوه منظمه څو ضلعي رسم کړئ.
+q 9 | Draw a concave polygon with 5 sides. || 5 اضلاع والی ایک مقعر کثیر الاضلاع بنائیں۔ || د 5 ضلعو یوه مقعره څو ضلعي رسم کړئ.
+q 10 | Draw a convex polygon with 9 sides. || 9 اضلاع والی ایک محدب کثیر الاضلاع بنائیں۔ || د 9 ضلعو یوه محدبه څو ضلعي رسم کړئ.
+q 11 | Calculate the interior angles of a regular polygon having: || اس باقاعدہ کثیر الاضلاع کے اندرونی زاویے معلوم کریں جس کے: || د هغې منظمې څو ضلعي داخلي زاویې حساب کړئ چې:
+qp a | 5 sides
+qp b | 10 sides
+qp c | 7 sides
+q 12 | Describe the relation of: || ان کے تعلق کی وضاحت کریں: || د دې اړیکه بیان کړئ:
+qp a | An exterior angle of a triangle and its opposite interior angles || مثلث کا بیرونی زاویہ اور اس کے مخالف اندرونی زاویے || د مثلث خارجي زاویه او د هغې مقابلې داخلي زاویې
+qp b | Interior and exterior angles of polygons || کثیر الاضلاع کے اندرونی اور بیرونی زاویے || د څو ضلعیو داخلي او خارجي زاویې
+q 13 | Calculate the sum of interior angles of the polygons having the following number of sides using the formula. || فارمولے کی مدد سے درج ذیل اضلاع کی تعداد والی کثیر الاضلاع کے اندرونی زاویوں کا مجموعہ معلوم کریں۔ || د فورمول په مرسته د لاندې ضلعو د شمېر لرونکو څو ضلعیو د داخلي زاویو مجموعه حساب کړئ.
+qp a | 5
+qp b | 3
+qp c | 7
+qp d | 4
+qp e | 8
+q 14 | Find the measure of the exterior angles of a 4-sided regular polygon. || 4 اضلاع والی باقاعدہ کثیر الاضلاع کے بیرونی زاویوں کی پیمائش معلوم کریں۔ || د 4 ضلعي منظمې څو ضلعي د خارجي زاویو اندازه معلومه کړئ.
+q 15 | Find the measure of the interior angles of a 5-sided regular polygon. || 5 اضلاع والی باقاعدہ کثیر الاضلاع کے اندرونی زاویوں کی پیمائش معلوم کریں۔ || د 5 ضلعي منظمې څو ضلعي د داخلي زاویو اندازه معلومه کړئ.

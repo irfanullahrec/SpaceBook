@@ -1,0 +1,26 @@
+@printed 50
+@deco A school bus with passengers at the windows.
+exercise Exercise 1 (Subtraction)
+q 1 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qsolve csub
+qp a | 23 - 5
+qp b | 34 - 8
+qp c | 91 - 2
+qp d | 40 - 6
+qp e | 63 - 27
+qp f | 57 - 18
+qp g | 95 - 36
+qp h | 61 - 42
+qp i | 70 - 41
+qp j | 82 - 55
+qp k | 98 - 59
+qp l | 80 - 72
+q 2 | There are 45 passengers in a bus. If there are 18 women, how many men are there? || ایک بس میں 45 مسافر ہیں۔ اگر ان میں 18 خواتین ہیں تو مرد کتنے ہیں؟ || په یوه بس کې 45 مسافر دي. که 18 ښځې وي، نو نارینه څو دي؟
+table
+th  | T | O
+tr Passengers in the bus | ___ | ___
+tr Number of women (−) | ___ | ___
+tr Number of men | ___ | ___
+endtable
+qsol csub 45 - 18
+endexercise

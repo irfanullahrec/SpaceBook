@@ -1,0 +1,42 @@
+@printed 56
+@issue The CAD to PKR example prints "50 × 144.45 PKR = 7222.71 PKR" (50 × 144.45 = 7222.5); kept as printed.
+@issue The two CAD examples are printed as "Example:" without numbers; kept as printed.
+p **PKR to CAD (Canadian Dollar)** || **PKR سے CAD (کینیڈین ڈالر)** || **PKR څخه CAD (کاناډايي ډالر)**
+m 1 PKR $= 0.0069$ CAD
+m 1 CAD $= 144.45$ PKR
+p **PKR to CAD** || **PKR سے CAD** || **PKR څخه CAD**
+example
+p convert 100 Pakistani Rupee to CAD || 100 پاکستانی روپے کو CAD میں تبدیل کریں || 100 پاکستاني روپۍ CAD ته واړوئ
+## Solution: || حل: || حل:
+m 1 PKR $= 0.0069$ CAD
+m 100 Pakistani Rupee $= 100 \times 0.0069$ CAD
+m $= 0.69$ CAD
+endexample
+p **CAD to PKR** || **CAD سے PKR** || **CAD څخه PKR**
+example
+p Convert 50 CAD to Pakistani Rupee || 50 CAD کو پاکستانی روپے میں تبدیل کریں || 50 CAD پاکستاني روپیو ته واړوئ
+## Solution: || حل: || حل:
+m 1 CAD $= 144.45$ PKR
+m 50 CAD $= 50 \times 144.45$ PKR
+m $= 7222.71$ PKR
+endexample
+exercise 3.6
+q 1 | Convert the following currencies to PKR. (Use updated currency rates from the internet) || درج ذیل کرنسیوں کو PKR میں تبدیل کریں۔ (انٹرنیٹ سے تازہ ترین شرحیں استعمال کریں) || لاندې اسعار PKR ته واړوئ. (له انټرنېټ څخه تازه نرخونه وکاروئ)
+qp a | 340 USD
+qp b | 120 CAD
+qp c | 98 EUR
+qp d | 250 GBP
+qp e | 29 USD
+qp f | 45 CAD
+qp g | 444 EUR
+qp h | 654 GBP
+q 2 | Convert the following amounts given in PKR to the mentioned currencies. (Use updated currency rates from the internet) || PKR میں دی گئی درج ذیل رقوم کو مذکورہ کرنسیوں میں تبدیل کریں۔ (انٹرنیٹ سے تازہ ترین شرحیں استعمال کریں) || په PKR کې ورکړل شوي لاندې مقدارونه ښودل شویو اسعارو ته واړوئ. (له انټرنېټ څخه تازه نرخونه وکاروئ)
+qp a | 600 PKR to USD
+qp b | 35 PKR to CAD
+qp c | 897 PKR to EUR
+qp d | 600 PKR to GBP
+qp e | 425 PKR to USD
+qp f | 98 PKR to CAD
+qp g | 326 PKR to EUR
+qp h | 562 PKR to GBP
+endexercise

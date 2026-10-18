@@ -1,0 +1,33 @@
+@printed 11
+@status lesson
+p Secondly, these rocks are weathered away by the action of wind, air and water and they break down to form sediments and are transported into seas and oceans. The sediments can be seen in the form of sedimentary rocks-wherever the seabed is uplifted. || دوسرے، یہ چٹانیں ہوا اور پانی کے عمل سے گھس جاتی ہیں، ٹوٹ کر رسوب (تلچھٹ) بناتی ہیں اور سمندروں تک پہنچ جاتی ہیں۔ جہاں سمندر کی تہہ اوپر اٹھتی ہے وہاں یہ رسوب رسوبی چٹانوں کی صورت میں نظر آتے ہیں۔ || دوهم، دا ډبرې د باد او اوبو له امله سولېږي، ماتېږي، رسوب جوړوي او سمندرونو ته وړل کېږي؛ هر چېرې چې د سمندر بستر پورته شي، رسوبي ډبرې ښکاري.
+p When heat and pressure is applied on the rocks, both igneous and sedimentary rocks change into metamorphic rocks. When part of the Earth's crust containing different kinds of rocks is subducted into the mantle, these rocks melt in the mantle to form magma again and the rock cycle is completed. || جب چٹانوں پر حرارت اور دباؤ پڑتا ہے تو آتشی اور رسوبی دونوں چٹانیں متغیر چٹانوں میں بدل جاتی ہیں۔ جب مختلف چٹانوں پر مشتمل قشر کا کوئی حصہ مینٹل میں دھنس جاتا ہے تو یہ چٹانیں پگھل کر دوبارہ میگما بن جاتی ہیں اور چٹانی چکر مکمل ہو جاتا ہے۔ || کله چې پر ډبرو تودوخه او فشار راشي، اورلرونکې او رسوبي دواړه په بدلو شوو اوړي. کله چې د پوښ یوه برخه مینټل ته ننوځي، ډبرې ویلې کېږي، بیا ماګما جوړېږي او دوره بشپړېږي.
+svg Rock Cycle: Magma —cooling→ Igneous Rock; Igneous Rock —weathering & erosion→ sediments; sediments —compaction & cementation→ Sedimentary Rock; Sedimentary Rock —heat & pressure→ Metamorphic Rock; Igneous Rock —heat & pressure→ Metamorphic Rock; Metamorphic Rock —weathering & erosion→ sediments; Sedimentary Rock —weathering & erosion→ sediments; Igneous and Metamorphic Rock —melting→ Magma. || چٹانی چکر: میگما ← ٹھنڈا ہونا ← آتشی چٹان ← کٹاؤ ← رسوب ← دباؤ اور جڑنا ← رسوبی چٹان ← حرارت و دباؤ ← متغیر چٹان ← پگھلنا ← میگما۔ || د ډبرو دوره: ماګما ← سړېدل ← اورلرونکې ډبره ← سولېدل ← رسوب ← کلکېدل ← رسوبي ډبره ← تودوخه او فشار ← بدله شوې ډبره ← ویلې کېدل ← ماګما.
+<svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Rock cycle">
+<defs><marker id="rc1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#be123c"/></marker><marker id="rc2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#1e3a8a"/></marker></defs>
+<g font-weight="bold" fill="#fff"><rect x="90" y="40" width="80" height="22" fill="#111827"/><text x="130" y="56" text-anchor="middle">sediments</text>
+<rect x="270" y="40" width="130" height="22" fill="#111827"/><text x="335" y="56" text-anchor="middle">Sedimentary Rock</text>
+<rect x="20" y="190" width="110" height="22" fill="#111827"/><text x="75" y="206" text-anchor="middle">Igneous Rock</text>
+<rect x="290" y="190" width="135" height="22" fill="#111827"/><text x="357" y="206" text-anchor="middle">Metamorphic Rock</text></g>
+<circle cx="220" cy="280" r="22" fill="#be123c"/><text x="220" y="250" text-anchor="middle" fill="#1e293b" font-weight="bold">Magma</text>
+<g fill="none" stroke-width="4">
+<path d="M175 38 Q220 20 265 40" stroke="#be123c" marker-end="url(#rc1)"/>
+<path d="M268 62 L178 62" stroke="#1e3a8a" marker-end="url(#rc2)"/>
+<path d="M360 64 Q400 130 365 185" stroke="#be123c" marker-end="url(#rc1)"/>
+<path d="M135 200 L285 200" stroke="#be123c" marker-end="url(#rc1)"/>
+<path d="M310 188 L160 68" stroke="#1e3a8a" marker-end="url(#rc2)"/>
+<path d="M60 188 Q50 120 110 66" stroke="#1e3a8a" marker-end="url(#rc2)"/>
+<path d="M110 214 L198 270" stroke="#be123c" marker-end="url(#rc1)"/>
+<path d="M200 292 Q120 285 80 216" stroke="#38bdf8" marker-end="url(#rc2)"/>
+<path d="M340 214 Q300 280 245 282" stroke="#be123c" marker-end="url(#rc1)"/>
+</g>
+<g fill="#1e293b"><text x="180" y="18">compaction &amp; cementation</text><text x="185" y="78">weathering &amp; erosion</text><text x="385" y="125">heat &amp;</text><text x="385" y="138">pressure</text><text x="175" y="196">heat &amp; pressure</text><text x="215" y="140">weathering &amp; erosion</text><text x="5" y="130">weathering</text><text x="5" y="143">&amp; erosion</text><text x="150" y="235">melting</text><text x="95" y="275">cooling</text><text x="300" y="265">melting</text></g>
+<text x="220" y="316" text-anchor="middle" fill="#1e293b" font-weight="bold">Rock Cycle</text>
+</svg>
+endsvg
+box teach | Learning Activity || تعلیمی سرگرمی || د زده کړې فعالیت
+p Make an album of different types of rocks collection such as salt, coal, marble, sand stone etc. || مختلف اقسام کی چٹانوں، جیسے نمک، کوئلہ، سنگِ مرمر، ریتلا پتھر وغیرہ، کا البم بنائیں۔ || د بېلابېلو ډبرو (مالګه، ډبرو سکاره، مرمر، شګلنه ډبره) البوم جوړ کړئ.
+endbox
+@sec 1.7 | Rocks in Pakistan || پاکستان میں چٹانیں || په پاکستان کې ډبرې
+# 1.7 Rocks in Pakistan || 1.7 پاکستان میں چٹانیں || 1.7 په پاکستان کې ډبرې
+p A great variety of rocks are found in Pakistan. They can be classified into three major groups i.e. Igneous rocks, Sedimentary rocks and Metamorphic rocks. All these three types of rocks are found in Pakistan. || پاکستان میں چٹانوں کی بہت سی اقسام پائی جاتی ہیں جنھیں تین بڑے گروہوں — آتشی، رسوبی اور متغیر چٹانوں — میں تقسیم کیا جا سکتا ہے۔ یہ تینوں اقسام پاکستان میں پائی جاتی ہیں۔ || په پاکستان کې ډېر ډوله ډبرې شته چې په درې لویو ډلو — اورلرونکې، رسوبي او بدلې شوې — وېشل کېږي؛ درې واړه ډولونه دلته موندل کېږي.

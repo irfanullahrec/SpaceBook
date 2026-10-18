@@ -1,0 +1,21 @@
+@printed 174
+@sec 7.3 | Picture Graph || تصویری گراف || انځوري ګراف
+@deco A boy with speech banners; a row of 23 coloured pencils; the pencils sorted into four coloured columns.
+# Picture Graph || تصویری گراف || انځوري ګراف
+p I want to arrange pencils according to their colours. || میں پنسلوں کو ان کے رنگوں کے مطابق ترتیب دینا چاہتا ہوں۔ || زه غواړم پنسلې د رنګونو له مخې ترتیب کړم.
+p We can arrange these pencils using picture graph || ہم ان پنسلوں کو تصویری گراف سے ترتیب دے سکتے ہیں || موږ دا پنسلې د انځوري ګراف په مرسته ترتیبولی شو
+svg Picture graph of pencils by colour || رنگ کے لحاظ سے پنسلوں کا تصویری گراف || د رنګ له مخې د پنسلو انځوري ګراف
+<svg viewBox="0 0 420 230" width="420" role="img" aria-label="Picture graph: yellow pencils 4, blue 7, green 7, red 5" font-family="sans-serif" font-size="13">
+<g text-anchor="middle" font-weight="700"><rect x="5" y="5" width="100" height="24" fill="#fde047"/><text x="55" y="22">Yellow pencils</text><rect x="110" y="5" width="100" height="24" fill="#0ea5e9"/><text x="160" y="22" fill="#fff">Blue pencils</text><rect x="215" y="5" width="100" height="24" fill="#15803d"/><text x="265" y="22" fill="#fff">Green pencils</text><rect x="320" y="5" width="95" height="24" fill="#db2777"/><text x="367" y="22" fill="#fff">Red pencils</text></g>
+<g id="py"><path d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" fill="#facc15" stroke="#a16207"/><path d="M15 0 L25 -4 L25 4 Z" fill="#fde68a"/></g>
+<g transform="translate(0 50)"><use href="#py"/><use href="#py" y="20"/><use href="#py" y="40"/><use href="#py" y="60"/></g>
+<g transform="translate(105 50)" fill="#0284c7"><path d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 20)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 40)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 60)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 80)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 100)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/><path transform="translate(0 120)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#075985"/></g>
+<g transform="translate(210 50)" fill="#16a34a"><path d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 20)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 40)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 60)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 80)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 100)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/><path transform="translate(0 120)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#14532d"/></g>
+<g transform="translate(315 50)" fill="#dc2626"><path d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#7f1d1d"/><path transform="translate(0 20)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#7f1d1d"/><path transform="translate(0 40)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#7f1d1d"/><path transform="translate(0 60)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#7f1d1d"/><path transform="translate(0 80)" d="M15 0 L25 -4 L95 -4 L95 4 L25 4 Z" stroke="#7f1d1d"/></g>
+</svg>
+endsvg
+p In this picture graph: || اس تصویری گراف میں: || په دې انځوري ګراف کې:
+- i) There are 4 yellow pencils. || i) 4 پیلی پنسلیں ہیں۔ || i) 4 ژېړې پنسلې دي.
+- ii) There are 7 blue pencils. || ii) 7 نیلی پنسلیں ہیں۔ || ii) 7 شنې (اسماني) پنسلې دي.
+- iii) There are 7 green pencils. || iii) 7 سبز پنسلیں ہیں۔ || iii) 7 شنې پنسلې دي.
+- iv) There are 5 red pencils. || iv) 5 سرخ پنسلیں ہیں۔ || iv) 5 سرې پنسلې دي.

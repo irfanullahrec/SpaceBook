@@ -1,0 +1,30 @@
+@printed 106
+table
+th | Position || مقام || ځای | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term || رکن || حد | 10 | 11 | 12 | 13 | 14 | 15
+endtable
+p Now find the rule for position to terms || اب مقام سے رکن کا قاعدہ معلوم کریں || اوس له ځای څخه حد ته قاعده معلومه کړئ
+table
+th | Position || مقام || ځای | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term || رکن || حد | 10 | 11 | 12 | 13 | 14 | 15
+tr | Rule || قاعدہ || قاعده | 1+9 | 2+9 | 3+9 | 4+9 | 5+9 | 6+9
+endtable
+p We see that each term is obtained by adding 9 to the position of the term. || ہم دیکھتے ہیں کہ ہر رکن اس کے مقام میں 9 جمع کرنے سے حاصل ہوتا ہے۔ || ګورو چې هر حد د حد ځای ته د 9 په ور زیاتولو لاسته راځي.
+p Now, to find the 20th term of this pattern, we will add 9 to 20. So, the 20th Term is: $20 + 9 = 29$. || اب اس نمونے کا 20واں رکن معلوم کرنے کے لیے ہم 20 میں 9 جمع کریں گے۔ لہٰذا 20واں رکن ہے: $20 + 9 = 29$۔ || اوس د دې بېلګې د 20م حد د موندلو لپاره 20 ته 9 ور زیاتوو. نو 20م حد دی: $20 + 9 = 29$.
+p Similarly, if we denote any general term as $n$, then the position to term rule is here is $n + 9$. || اسی طرح اگر ہم کسی عمومی رکن کو $n$ سے ظاہر کریں تو یہاں مقام سے رکن کا قاعدہ $n + 9$ ہے۔ || په همدې ډول، که هر عمومي حد په $n$ وښیو، نو دلته له ځای څخه حد ته قاعده $n + 9$ ده.
+endexample
+### The nth term || nواں رکن || nم حد
+p The nth term of a sequence is the general term that can help us find any term of the sequence. We can find any term by putting the value in the nth term. || کسی ترتیب کا nواں رکن وہ عمومی رکن ہے جو ترتیب کا کوئی بھی رکن معلوم کرنے میں مدد دیتا ہے۔ ہم nویں رکن میں قیمت رکھ کر کوئی بھی رکن معلوم کر سکتے ہیں۔ || د لړۍ nم حد هغه عمومي حد دی چې د لړۍ د هر حد په موندلو کې مرسته کوي. موږ کولی شو په nم حد کې د ارزښت په ایښودلو هر حد معلوم کړو.
+p Lets consider the nth term: $2n + 1$. || آئیے nواں رکن $2n + 1$ لیں۔ || راځئ nم حد $2n + 1$ په پام کې ونیسو.
+eq \begin{aligned} &\text{By putting } n = 1, \text{ we get the 1st term.} \\ &\text{1st term of this sequence} = 2(1) + 1 = 2 + 1 = 3 \\ &\text{Put } n = 2, \text{ we get 2nd term.} \\ &\text{2nd term of this sequence} = 2(2) + 1 = 4 + 1 = 5 \\ &\text{To find any term, say 9th, Put } n = 9, \text{ we get 9th term.} \\ &\text{So, 9th term of this sequence} = 2(9) + 1 = 18 + 1 = 19 \end{aligned}
+p Let's observe the examples: || آئیے مثالوں کا مشاہدہ کریں: || راځئ بېلګې وګورو:
+example 1 | If the nth term of a sequence is $3n - 2$, find the 6th term of this sequence. || اگر کسی ترتیب کا nواں رکن $3n - 2$ ہو تو اس ترتیب کا چھٹا رکن معلوم کریں۔ || که د یوې لړۍ nم حد $3n - 2$ وي، د دې لړۍ شپږم حد معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Put $n = 6$ in $3n - 2$. || $3n - 2$ میں $n = 6$ رکھیں۔ || په $3n - 2$ کې $n = 6$ کېږدئ.
+eq 3n - 2 = 3(6) - 2 = 18 - 2 = 16
+p So, the sixth term of this sequence is 16. || لہٰذا اس ترتیب کا چھٹا رکن 16 ہے۔ || نو د دې لړۍ شپږم حد 16 دی.
+endexample
+example 2 | If the nth term of a sequence is $4n + 4$, find the 10th term of this sequence. || اگر کسی ترتیب کا nواں رکن $4n + 4$ ہو تو اس ترتیب کا دسواں رکن معلوم کریں۔ || که د یوې لړۍ nم حد $4n + 4$ وي، د دې لړۍ لسم حد معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Put $n = 10$ in $4n + 4$. || $4n + 4$ میں $n = 10$ رکھیں۔ || په $4n + 4$ کې $n = 10$ کېږدئ.
+eq 4n + 4 = 4(10) + 4 = 40 + 4 = 44

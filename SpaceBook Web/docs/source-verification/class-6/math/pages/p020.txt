@@ -1,0 +1,73 @@
+@printed 18
+@deco Picture of a water tank beside Question 1 (decorative).
+exercise 1.4
+q 1 | Find the minimum capacity of a water tank that can completely measure the amounts of 460 $l$, 245 $l$ and 525 $l$. || پانی کی ٹینکی کی وہ کم سے کم گنجائش معلوم کریں جو 460 $l$، 245 $l$ اور 525 $l$ کی مقداروں کو مکمل طور پر ناپ سکے۔ || د اوبو د ټانکي هغه لږ تر لږه ظرفیت معلوم کړئ چې د 460 $l$، 245 $l$ او 525 $l$ مقدارونه په بشپړ ډول اندازه کړي.
+solution 338100 $l$
+ss "Minimum capacity" that each amount fits into exactly means the smallest common multiple, so we find the LCM of 460, 245 and 525. || "کم سے کم گنجائش" جس میں ہر مقدار پوری پوری آ جائے، یعنی سب سے چھوٹا مشترک ضعف؛ اس لیے ہم 460، 245 اور 525 کا ذو اضعاف اقل معلوم کرتے ہیں۔ || "لږ تر لږه ظرفیت" چې هر مقدار پکې پوره ځای شي، یعنې تر ټولو کوچنی مشترک ضرب؛ نو د 460، 245 او 525 کوچنی مشترک ضرب معلوموو.
+suse lcmpf 460, 245, 525
+ss So the minimum capacity of the tank is 338100 litres. || لہٰذا ٹینکی کی کم سے کم گنجائش 338100 لیٹر ہے۔ || نو د ټانکي لږ تر لږه ظرفیت 338100 لیټره دی.
+endsolution
+q 2 | Find the greatest number that can divide 460, 648 and 984. || وہ سب سے بڑا عدد معلوم کریں جو 460، 648 اور 984 کو تقسیم کر سکے۔ || هغه تر ټولو لوی عدد معلوم کړئ چې 460، 648 او 984 ووېشلی شي.
+solution 4
+ss "The greatest number that divides" all of them is the Highest Common Factor (HCF). || وہ "سب سے بڑا عدد جو تقسیم کرے" عاد اعظم ہے۔ || هغه "تر ټولو لوی عدد چې ووېشي" لوی مشترک قاسم دی.
+suse hcfpf 460, 648, 984
+endsolution
+q 3 | Find the smallest number which exactly divides 406, 348 and 256. || وہ سب سے چھوٹا عدد معلوم کریں جو 406، 348 اور 256 کو پورا پورا تقسیم کرے۔ || هغه تر ټولو کوچنی عدد معلوم کړئ چې 406، 348 او 256 په بشپړ ډول ووېشي.
+solution 155904 (smallest number exactly divisible by all three)
+ss Careful reading: the smallest number that divides every number is always 1. A "smallest number" question in this chapter means the smallest number that is exactly divisible by 406, 348 and 256, i.e. their LCM. || غور سے پڑھیں: ہر عدد کو تقسیم کرنے والا سب سے چھوٹا عدد ہمیشہ 1 ہوتا ہے۔ اس باب میں "سب سے چھوٹا عدد" والے سوال کا مطلب ہے وہ سب سے چھوٹا عدد جو 406، 348 اور 256 سے پورا پورا تقسیم ہو، یعنی ان کا ذو اضعاف اقل۔ || په ځیر سره ولولئ: هغه تر ټولو کوچنی عدد چې هر عدد وېشي تل 1 وي. په دې څپرکي کې د "تر ټولو کوچني عدد" پوښتنه هغه تر ټولو کوچنی عدد غواړي چې پر 406، 348 او 256 په بشپړ ډول ووېشل شي، یعنې د هغوی کوچنی مشترک ضرب.
+suse lcmpf 406, 348, 256
+endsolution
+@issue Exercise 1.4 Q3 is printed as "smallest number which exactly divides 406, 348 and 256" (literally 1); SpaceBook solution explains this and solves the intended LCM reading. Confirm against the answer key (printed p. 238+).
+q 4 | The LCM of two numbers is 96 and HCF is 24. If one number is 32 then find the other number. || دو اعداد کا ذو اضعاف اقل 96 اور عاد اعظم 24 ہے۔ اگر ایک عدد 32 ہو تو دوسرا عدد معلوم کریں۔ || د دوو عددونو کوچنی مشترک ضرب 96 او لوی مشترک قاسم 24 دی. که یو عدد 32 وي، بل عدد معلوم کړئ.
+solution 72 (by the formula)
+ss Use the rule: HCF × LCM = first number × second number. || قاعدہ استعمال کریں: عاد اعظم × ذو اضعاف اقل = پہلا عدد × دوسرا عدد۔ || قاعده وکاروئ: لوی مشترک قاسم × کوچنی مشترک ضرب = لومړی عدد × دوهم عدد.
+sm 24 \times 96 = 32 \times b
+ss Multiply the left side: 24 × 96 = 2304. || بائیں طرف ضرب دیں: 24 × 96 = 2304۔ || کیڼ اړخ ضرب کړئ: 24 × 96 = 2304.
+sm 2304 = 32 \times b
+ss Divide both sides by 32. || دونوں طرف 32 سے تقسیم کریں۔ || دواړه اړخونه پر 32 ووېشئ.
+sm b = \dfrac{2304}{32} = 72
+ss Teacher's note: the data in this question do not fit together exactly — the HCF must divide both numbers, but 24 does not divide 32. The formula still gives 72, which is the expected textbook working. || استاد کا نوٹ: اس سوال کے اعداد و شمار پوری طرح میل نہیں کھاتے — عاد اعظم کو دونوں اعداد تقسیم کرنے چاہئیں، مگر 24، عدد 32 کو تقسیم نہیں کرتا۔ فارمولا پھر بھی 72 دیتا ہے، جو درسی طریقہ ہے۔ || د ښوونکي یادونه: د دې پوښتنې معلومات په بشپړ ډول سره سمون نه خوري — لوی مشترک قاسم باید دواړه عددونه ووېشي، خو 24، عدد 32 نه وېشي. فورمول بیا هم 72 ورکوي، چې درسي طریقه ده.
+endsolution
+@issue Exercise 1.4 Q4 data are inconsistent (HCF 24 does not divide 32); formula answer 72 given with a note.
+q 5 | The HCF of two numbers is 18 and LCM is 75. Find the product of two numbers. || دو اعداد کا عاد اعظم 18 اور ذو اضعاف اقل 75 ہے۔ دونوں اعداد کا حاصلِ ضرب معلوم کریں۔ || د دوو عددونو لوی مشترک قاسم 18 او کوچنی مشترک ضرب 75 دی. د دواړو عددونو حاصل ضرب معلوم کړئ.
+solution 1350 (by the formula)
+ss The product of two numbers = HCF × LCM. || دو اعداد کا حاصلِ ضرب = عاد اعظم × ذو اضعاف اقل۔ || د دوو عددونو حاصل ضرب = لوی مشترک قاسم × کوچنی مشترک ضرب.
+sm a \times b = 18 \times 75
+ss Multiply: 18 × 75 = 18 × 70 + 18 × 5 = 1260 + 90 = 1350. || ضرب دیں: 18 × 75 = 18 × 70 + 18 × 5 = 1260 + 90 = 1350۔ || ضرب کړئ: 18 × 75 = 18 × 70 + 18 × 5 = 1260 + 90 = 1350.
+sm a \times b = 1350
+ss Teacher's note: in real numbers the HCF always divides the LCM, but 18 does not divide 75, so no such pair of numbers exists. The question only practises the formula. || استاد کا نوٹ: حقیقت میں عاد اعظم ہمیشہ ذو اضعاف اقل کو تقسیم کرتا ہے، مگر 18، عدد 75 کو تقسیم نہیں کرتا، اس لیے ایسے دو اعداد موجود نہیں۔ یہ سوال صرف فارمولے کی مشق ہے۔ || د ښوونکي یادونه: په حقیقت کې لوی مشترک قاسم تل کوچنی مشترک ضرب وېشي، خو 18، عدد 75 نه وېشي، نو داسې دوه عددونه نشته. دا پوښتنه یوازې د فورمول تمرین دی.
+endsolution
+@issue Exercise 1.4 Q5 data impossible (HCF 18 does not divide LCM 75); formula answer 1350 given with a note.
+q 6 | LCM of two numbers is 678 and the product of the two numbers is 4746. Find the HCF of the numbers. || دو اعداد کا ذو اضعاف اقل 678 اور ان کا حاصلِ ضرب 4746 ہے۔ اعداد کا عاد اعظم معلوم کریں۔ || د دوو عددونو کوچنی مشترک ضرب 678 او حاصل ضرب یې 4746 دی. د عددونو لوی مشترک قاسم معلوم کړئ.
+solution HCF = 7 (by the formula)
+ss Use HCF × LCM = product of the two numbers. || عاد اعظم × ذو اضعاف اقل = دونوں اعداد کا حاصلِ ضرب استعمال کریں۔ || لوی مشترک قاسم × کوچنی مشترک ضرب = د دواړو عددونو حاصل ضرب وکاروئ.
+sm \text{HCF} \times 678 = 4746
+ss Divide 4746 by 678. Try 7: 678 × 7 = 4746. || 4746 کو 678 سے تقسیم کریں۔ 7 آزمائیں: 678 × 7 = 4746۔ || 4746 پر 678 ووېشئ. 7 وازمویئ: 678 × 7 = 4746.
+sm \text{HCF} = \dfrac{4746}{678} = 7
+ss Teacher's note: the HCF should also divide the LCM, but 7 does not divide 678, so these data cannot belong to real numbers. The formula answer is 7. || استاد کا نوٹ: عاد اعظم کو ذو اضعاف اقل کو بھی تقسیم کرنا چاہیے، مگر 7، عدد 678 کو تقسیم نہیں کرتا، اس لیے یہ اعداد و شمار حقیقی اعداد کے نہیں ہو سکتے۔ فارمولے کا جواب 7 ہے۔ || د ښوونکي یادونه: لوی مشترک قاسم باید کوچنی مشترک ضرب هم ووېشي، خو 7، عدد 678 نه وېشي، نو دا معلومات د ریښتیني عددونو نه شي کېدای. د فورمول ځواب 7 دی.
+endsolution
+@issue Exercise 1.4 Q6 data inconsistent (7 does not divide 678); formula answer 7 given with a note.
+q 7 | Umar has two pieces of ropes. One is 18 metres long and the other is 112 metres long. He wants to cut it into pieces that are all of the same length, without any remainder. What is the greatest length that he can cut them into? || عمر کے پاس رسی کے دو ٹکڑے ہیں۔ ایک 18 میٹر لمبا اور دوسرا 112 میٹر لمبا ہے۔ وہ انہیں ایک جیسی لمبائی کے ٹکڑوں میں بغیر کچھ بچائے کاٹنا چاہتا ہے۔ وہ زیادہ سے زیادہ کتنی لمبائی کے ٹکڑے کاٹ سکتا ہے؟ || عمر د پړي دوه ټوټې لري. یوه 18 متره اوږده او بله 112 متره اوږده ده. غواړي چې په یو شان اوږدوالي ټوټو یې پرته له پاتې شوني پرې کړي. تر ټولو ډېر په څومره اوږدوالي یې پرې کولی شي؟
+solution 2 metres
+ss Same length, nothing left over, and as long as possible → we need the HCF of 18 and 112. || ایک جیسی لمبائی، کچھ نہ بچے اور زیادہ سے زیادہ لمبائی → ہمیں 18 اور 112 کا عاد اعظم چاہیے۔ || یو شان اوږدوالی، هېڅ پاتې نه شي او تر ټولو اوږد → د 18 او 112 لوی مشترک قاسم ته اړتیا لرو.
+suse hcfpf 18, 112
+ss So the greatest length of each piece is 2 metres. || لہٰذا ہر ٹکڑے کی زیادہ سے زیادہ لمبائی 2 میٹر ہے۔ || نو د هرې ټوټې تر ټولو ډېر اوږدوالی 2 متره دی.
+endsolution
+q 8 | For an Iftar party, Aiza wants to serve chicken bread and nuggets to the guests invited. She wants to do it in such a way that each serving contains the same combination of chicken bread and nuggets. If there are 24 slices of chicken bread and 120 nuggets, find the maximum number of servings she can prepare. || ایک افطار پارٹی کے لیے عائزہ مدعو مہمانوں کو چکن بریڈ اور نگٹس پیش کرنا چاہتی ہے۔ وہ اس طرح پیش کرنا چاہتی ہے کہ ہر حصے میں چکن بریڈ اور نگٹس کا ایک جیسا امتزاج ہو۔ اگر چکن بریڈ کے 24 ٹکڑے اور 120 نگٹس ہوں تو وہ زیادہ سے زیادہ کتنے حصے تیار کر سکتی ہے؟ || د افطار د یوې مېلمستیا لپاره عایزه غواړي بلل شویو مېلمنو ته چکن بریډ او نګټس وړاندې کړي. غواړي داسې یې وړاندې کړي چې په هره برخه کې د چکن بریډ او نګټس یو شان ترکیب وي. که د چکن بریډ 24 ټوټې او 120 نګټس وي، تر ټولو ډېرې څو برخې چمتو کولی شي؟
+solution 24 servings
+ss Every serving must be the same, so the number of servings must divide 24 and also divide 120. The maximum such number is the HCF of 24 and 120. || ہر حصہ ایک جیسا ہو، اس لیے حصوں کی تعداد 24 اور 120 دونوں کو تقسیم کرے۔ ایسا سب سے بڑا عدد 24 اور 120 کا عاد اعظم ہے۔ || هره برخه باید یو شان وي، نو د برخو شمېر باید 24 او 120 دواړه ووېشي. داسې تر ټولو لوی عدد د 24 او 120 لوی مشترک قاسم دی.
+suse hcfdiv 24, 120
+ss She can prepare 24 servings: each has 24 ÷ 24 = 1 slice of chicken bread and 120 ÷ 24 = 5 nuggets. || وہ 24 حصے تیار کر سکتی ہے: ہر حصے میں 24 ÷ 24 = 1 ٹکڑا چکن بریڈ اور 120 ÷ 24 = 5 نگٹس ہوں گے۔ || هغه 24 برخې چمتو کولی شي: په هره برخه کې 24 ÷ 24 = 1 ټوټه چکن بریډ او 120 ÷ 24 = 5 نګټس وي.
+endsolution
+q 9 | Nida goes for a walk every 10 days and Sehrish goes for a walk every 25 days to the same park. If they both went for a walk today, then how many days from now will they next be in the park on the same day? || ندا ہر 10 دن بعد اور سحرش ہر 25 دن بعد ایک ہی پارک میں سیر کے لیے جاتی ہیں۔ اگر آج دونوں سیر کے لیے گئیں تو آج سے کتنے دن بعد وہ دوبارہ ایک ہی دن پارک میں ہوں گی؟ || ندا هر 10 ورځې او سحرش هر 25 ورځې یو پارک ته د ګرځېدو لپاره ځي. که دواړه نن ګرځېدو ته تللې وي، له نن څخه څو ورځې وروسته به بیا په یوه ورځ په پارک کې وي؟
+solution 50 days
+ss They meet again on a day that is a multiple of 10 and also a multiple of 25. The first such day is the LCM of 10 and 25. || وہ اس دن دوبارہ ملیں گی جو 10 کا بھی ضعف ہو اور 25 کا بھی۔ ایسا پہلا دن 10 اور 25 کا ذو اضعاف اقل ہے۔ || هغوی به په هغه ورځ بیا سره وګوري چې د 10 ضرب هم وي او د 25 هم. داسې لومړۍ ورځ د 10 او 25 کوچنی مشترک ضرب دی.
+suse lcmpf 10, 25
+ss So they will next be in the park together after 50 days. || لہٰذا وہ 50 دن بعد دوبارہ اکٹھی پارک میں ہوں گی۔ || نو 50 ورځې وروسته به بیا یوځای په پارک کې وي.
+endsolution
+q 10 | Find the smallest number which is exactly divisible by 40, 224 and 400 without leaving any remainder. || وہ سب سے چھوٹا عدد معلوم کریں جو 40، 224 اور 400 سے بغیر کسی باقی کے پورا پورا تقسیم ہو جائے۔ || هغه تر ټولو کوچنی عدد معلوم کړئ چې پر 40، 224 او 400 پرته له پاتې شوني په بشپړ ډول ووېشل شي.
+solution 5600
+ss The smallest number divisible by all of them is their LCM. || ان سب سے تقسیم ہونے والا سب سے چھوٹا عدد ان کا ذو اضعاف اقل ہے۔ || هغه تر ټولو کوچنی عدد چې پر ټولو ووېشل شي د هغوی کوچنی مشترک ضرب دی.
+suse lcmdiv 40, 224, 400
+endsolution
+endexercise

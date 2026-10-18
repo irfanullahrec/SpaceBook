@@ -1,0 +1,20 @@
+@printed 230
+- In this spinner, the chance of stopping at 3 is not same as the chance of stopping at 5. So, the outcomes are not equally likely. || اس اسپنر میں 3 پر رکنے کا موقع 5 پر رکنے کے برابر نہیں۔ اس لیے نتائج یکساں ممکنہ نہیں۔ || په دې سپینر کې په 3 د درېدو چانس په 5 د درېدو له چانس سره برابر نه دی. نو پایلې یو شان احتمالي نه دي.
+spinner 5 1 1 2 3 3 3 4 5 || A spinner where 3 appears three times but 5 only twice || اسپنر جس میں 3 تین بار مگر 5 صرف دو بار ہے || سپینر چې 3 درې ځله خو 5 یوازې دوه ځله لري
+## 11.5.6 Probability of a Single Event || 11.5.6 ایک واقعے کا امکان || 11.5.6 د یوې پېښې احتمال
+p All possible outcomes of an experiment are represented by sample space. We can represent the possible outcome using a tree diagram. It can be used to represent all the possible groupings or outcomes of a sample space. || کسی تجربے کے تمام ممکنہ نتائج سیمپل اسپیس سے ظاہر ہوتے ہیں۔ ہم ممکنہ نتائج کو درخت نما خاکے سے ظاہر کر سکتے ہیں۔ اسے سیمپل اسپیس کے تمام ممکنہ گروپ یا نتائج دکھانے کے لیے استعمال کیا جا سکتا ہے۔ || د یوې تجربې ټولې ممکنې پایلې د نمونې فضا په مرسته ښودل کېږي. ممکنې پایلې د ونې ډوله ډیاګرام په مرسته ښودلی شو. دا د نمونې فضا د ټولو ممکنو ډلو یا پایلو د ښودلو لپاره کارېدای شي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p We can also organize the outcomes in a list or chart. || ہم نتائج کو فہرست یا چارٹ میں بھی ترتیب دے سکتے ہیں۔ || پایلې په لیست یا چارټ کې هم تنظیمولی شو.
+endbox
+p Let's show all the possible outcomes of tossing a coin using tree diagram. || آئیے درخت نما خاکے کی مدد سے سکہ اچھالنے کے تمام ممکنہ نتائج دکھائیں۔ || راځئ د ونې ډوله ډیاګرام په مرسته د سکې د اچولو ټولې ممکنې پایلې وښیو.
+ptree 1/2 | Head, Tail || Tree diagram for tossing a coin || سکہ اچھالنے کا درخت نما خاکہ || د سکې د اچولو د ونې ډوله ډیاګرام
+p The **probability** of a single event is the ratio or comparison of favorable(desired) outcomes to the total number of possible outcomes. In this case, there are 2 possible outcomes, the head and the tail. If all the outcomes of an event are equally likely, the probability of the event occurring, denoted by P(E), will be is: || کسی ایک واقعے کا **امکان** موافق (مطلوبہ) نتائج کا کل ممکنہ نتائج سے تناسب یا موازنہ ہے۔ اس صورت میں 2 ممکنہ نتائج ہیں، چت اور پٹ۔ اگر کسی واقعے کے تمام نتائج یکساں ممکنہ ہوں تو واقعے کے ہونے کا امکان، جسے P(E) سے ظاہر کیا جاتا ہے، یہ ہوگا: || د یوې پېښې **احتمال** د خوښو (غوښتل شوو) پایلو او د ټولو ممکنو پایلو نسبت یا پرتله ده. په دې حالت کې 2 ممکنې پایلې دي، سر او لکۍ. که د یوې پېښې ټولې پایلې یو شان احتمالي وي، د پېښې د پېښېدو احتمال، چې په P(E) ښودل کېږي، به دا وي:
+m Probability of an event $= P(E) = \dfrac{\text{Number of favorable (desired) outcomes}}{\text{Total number of possible outcomes}}$
+example 1 | Umar and Nadia are tossing a coin to take the first turn in a game. Nadia chose tail. Find the probability of getting a tail (favorable outcome). || عمر اور نادیہ کھیل میں پہلی باری لینے کے لیے سکہ اچھال رہے ہیں۔ نادیہ نے پٹ چنا۔ پٹ آنے (موافق نتیجہ) کا امکان معلوم کریں۔ || عمر او نادیه په لوبه کې د لومړۍ نوبت لپاره سکه اچوي. نادیې لکۍ وټاکله. د لکۍ راتلو (خوښې پایلې) احتمال معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Sample space or total number of possible outcomes= H, T || سیمپل اسپیس یا کل ممکنہ نتائج = H، T || د نمونې فضا یا ټولې ممکنې پایلې = H، T
+p Number of possible outcomes = 2 || ممکنہ نتائج کی تعداد = 2 || د ممکنو پایلو شمېر = 2
+p Number of favorable (desired) outcomes = 1 || موافق (مطلوبہ) نتائج کی تعداد = 1 || د خوښو (غوښتل شوو) پایلو شمېر = 1
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Use various suitable items from daily life and ask the students to identify the possible outcomes and sample space for them || روزمرہ زندگی کی مختلف مناسب اشیاء استعمال کریں اور طلبہ سے ان کے ممکنہ نتائج اور سیمپل اسپیس پہچاننے کو کہیں || د ورځني ژوند بېلابېل مناسب توکي وکاروئ او له زده کوونکو وغواړئ چې د هغو ممکنې پایلې او د نمونې فضا وپېژني
+endbox

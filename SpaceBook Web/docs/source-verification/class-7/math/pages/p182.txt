@@ -1,0 +1,20 @@
+@printed 178
+q 2 | Find the volume of the following prism. || درج ذیل منشور کا حجم معلوم کریں۔ || د لاندې منشور حجم معلوم کړئ.
+qp a | Cuboid 12 cm long, 2 cm wide and 7 cm high || 12 cm لمبا، 2 cm چوڑا اور 7 cm اونچا مکعب نما || د 12 cm اوږدوالي، 2 cm پلنوالي او 7 cm لوړوالي مکعب نما
+qp b | Cuboid with a 6 m × 4 m end face and length 11 m || 6 m × 4 m سرے والا اور 11 m لمبا مکعب نما || د 6 m × 4 m سر او 11 m اوږدوالي مکعب نما
+qp c | Triangular prism: triangle with base 13 cm, height 10 cm and slanted side 17.7 cm; length 12 cm || مثلثی منشور: مثلث جس کا قاعدہ 13 cm، اونچائی 10 cm اور ترچھا ضلع 17.7 cm؛ لمبائی 12 cm || مثلثي منشور: مثلث چې قاعده یې 13 cm، لوړوالی 10 cm او کږه ضلع 17.7 cm؛ اوږدوالی 12 cm
+qp d | Triangular prism: triangle with sides 15.6 m and 14.3 m, base 10 m and height 13 m; length 17 m || مثلثی منشور: مثلث جس کے اضلاع 15.6 m اور 14.3 m، قاعدہ 10 m اور اونچائی 13 m؛ لمبائی 17 m || مثلثي منشور: مثلث چې ضلعې یې 15.6 m او 14.3 m، قاعده 10 m او لوړوالی 13 m؛ اوږدوالی 17 m
+qp e | Triangular prism: triangle with sides 7.1 cm and 7.1 cm, base 7 cm and height 6 cm; length 15 cm || مثلثی منشور: مثلث جس کے اضلاع 7.1 cm اور 7.1 cm، قاعدہ 7 cm اور اونچائی 6 cm؛ لمبائی 15 cm || مثلثي منشور: مثلث چې ضلعې یې 7.1 cm او 7.1 cm، قاعده 7 cm او لوړوالی 6 cm؛ اوږدوالی 15 cm
+endexercise
+@issue Q2 is printed as five prism drawings; the measurements are given as text.
+@sec 9.7 | Word Problem of Surface area and Volume of Prism || منشور کے سطحی رقبے اور حجم کے لفظی سوالات || د منشور د سطحې مساحت او حجم لفظي پوښتنې
+# 9.7 Word Problem of Surface area and Volume of Prism || 9.7 منشور کے سطحی رقبے اور حجم کے لفظی سوالات || 9.7 د منشور د سطحې مساحت او حجم لفظي پوښتنې
+p We shall explain the use of surface areas and volumes of cuboids and cubes through the following examples: || ہم درج ذیل مثالوں کے ذریعے مکعب نما اور مکعب کے سطحی رقبوں اور حجموں کا استعمال سمجھائیں گے: || موږ به د لاندې بېلګو له لارې د مکعب نما او مکعب د سطحې مساحتونو او حجمونو کارول تشریح کړو:
+example 1 | How much plastic sheet is required to make a cubical box of length 5m. Find the cost of the sheet at the rate of Rs 25 per m². || 5m لمبائی کا مکعب نما ڈبہ بنانے کے لیے کتنی پلاسٹک شیٹ درکار ہے؟ 25 روپے فی m² کے حساب سے شیٹ کی قیمت معلوم کریں۔ || د 5m اوږدوالي مکعبي بکس د جوړولو لپاره څومره پلاستیکي پاڼه پکار ده؟ په هر m² 25 روپیو د پاڼې بیه معلومه کړئ.
+p **Solution:** Here, l = 5m || **حل:** یہاں l = 5m || **حل:** دلته l = 5m
+eq \begin{aligned} \text{Total surface area of cubical box} &= 6l^2 = 6(5)^2\,\text{m}^2 = 6(25)\,\text{m}^2 = 150\,\text{m}^2 \\ \text{Cost of } 1\,\text{m}^2 \text{ plastic sheet} &= \text{Rs } 25 \\ \text{Cost of } 150\,\text{m}^2 \text{ plastic sheet} &= \text{Rs } 150 \times 25 = \text{Rs } 3750 \end{aligned}
+endexample
+example 2 | Find the capacity of a water container in litres whose length is 20cm, breadth 15cm and height is 10 cm. || اس پانی کے برتن کی گنجائش لیٹر میں معلوم کریں جس کی لمبائی 20cm، چوڑائی 15cm اور اونچائی 10 cm ہے۔ || د اوبو د هغه لوښي ګنجایش په لیټر معلوم کړئ چې اوږدوالی یې 20cm، پلنوالی 15cm او لوړوالی 10 cm دی.
+p **Solution:** Here, l = 20cm, b = 15, h = 10 cm || **حل:** یہاں l = 20cm، b = 15، h = 10 cm || **حل:** دلته l = 20cm، b = 15، h = 10 cm
+eq \text{Capacity (or volume) of the water container} = l \times b \times h = 20 \times 15 \times 10\,\text{cm}^3 = 3000\,\text{cm}^3
+@issue This example is labelled "Example 3" in the book (Example 2 is skipped) and asks for litres but the solution gives cm³ and m³ only; renumbered 2 here and kept otherwise as printed.

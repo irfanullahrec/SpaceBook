@@ -1,0 +1,16 @@
+@printed 138
+q 10 | Draw and colour the shapes to complete each pattern. || ہر نمونہ مکمل کرنے کے لیے اشکال بنائیں اور ان میں رنگ بھریں۔ || د هرې بېلګې د بشپړولو لپاره شکلونه رسم او رنګ کړئ.
+pattern circ.orange circ.pink sq.sky sq.orange circ.orange _ _ _ _ || Row 1: orange circle, pink circle, blue square, orange square, orange circle, then 4 empty boxes || قطار ۱: نارنجی دائرہ، گلابی دائرہ، نیلا مربع، نارنجی مربع، نارنجی دائرہ، پھر ۴ خالی خانے || قطار ۱: نارنجي دایره، ګلابي دایره، آبي مربع، نارنجي مربع، نارنجي دایره، بیا ۴ تشې خونې
+pattern tri.sky rectv.#fca5a5@0.7 circ.dkgreen tri.sky _ _ _ _ _ || Row 2: blue triangle, pink rectangle, green circle, blue triangle, then 5 empty boxes || قطار ۲: نیلا مثلث، گلابی مستطیل، سبز دائرہ، نیلا مثلث، پھر ۵ خالی خانے || قطار ۲: آبي مثلث، ګلابي مستطیل، شنه دایره، آبي مثلث، بیا ۵ تشې خونې
+pattern trir.purple sq.#a3e635 circ.#93c5fd trir.purple _ _ _ _ _ || Row 3: purple triangle, green square, blue circle, purple triangle, then 5 empty boxes || قطار ۳: جامنی مثلث، سبز مربع، نیلا دائرہ، جامنی مثلث، پھر ۵ خالی خانے || قطار ۳: ارغواني مثلث، شین مربع، آبي دایره، ارغواني مثلث، بیا ۵ تشې خونې
+pattern circ.red rectv.dkgreen@0.7 circ.red rectv.dkgreen@0.7 _ _ _ _ _ || Row 4: red circle, green rectangle, red circle, green rectangle, then 5 empty boxes || قطار ۴: سرخ دائرہ، سبز مستطیل، سرخ دائرہ، سبز مستطیل، پھر ۵ خالی خانے || قطار ۴: سره دایره، شین مستطیل، سره دایره، شین مستطیل، بیا ۵ تشې خونې
+sol Row 1: pink circle, blue square, orange square, orange circle. Row 2: pink rectangle, green circle, blue triangle, pink rectangle, green circle. Row 3: green square, blue circle, purple triangle, green square, blue circle. Row 4: red circle, green rectangle, red circle, green rectangle, red circle. ## Find the group that repeats and continue it. || دہرایا جانے والا گروہ تلاش کریں اور اسے آگے بڑھائیں۔ || تکرارېدونکې ډله پیدا کړئ او ویې غځوئ.
+p Look at that picture and tick (✓) the correct answer. || تصویر دیکھیں اور درست جواب پر (✓) کا نشان لگائیں۔ || انځور وګورئ او سم ځواب ته (✓) ولګوئ.
+scene 300 120 ; box 0 0 300 120 #bbf7d0 ; tunnel@170,60,4 ; boy@230,55,1.2 ; girl.red@70,80,1.8 ; text 230 112 Ahmed ; text 70 115 Zara || A play tunnel: Ahmed looks out from inside it; Zara stands outside || کھیلنے کی سرنگ: احمد اندر سے جھانک رہا ہے؛ زارا باہر کھڑی ہے || د لوبې تونل: احمد له دننه نه ګوري؛ زارا بهر ولاړه ده
+q 11 | Where is Ahmed? (outside / inside) || احمد کہاں ہے؟ (باہر / اندر) || احمد چېرته دی؟ (بهر / دننه)
+sol inside ## Ahmed is in the tunnel. || احمد سرنگ میں ہے۔ || احمد په تونل کې دی.
+q 12 | Where is Zara? (outside / inside) || زارا کہاں ہے؟ (باہر / اندر) || زارا چېرته ده؟ (بهر / دننه)
+sol outside ## Zara is standing in front of the tunnel. || زارا سرنگ کے سامنے کھڑی ہے۔ || زارا د تونل مخې ته ولاړه ده.
+q 13 | Colour the object that is under the car. || گاڑی کے نیچے والی چیز میں رنگ بھریں۔ || د موټر لاندې شی رنګ کړئ.
+scene 300 150 ; bird.white@150,25,1.6 ; car.white@150,95,4.5 ; ball.white@150,135,1 || A bird above a car and a ball under the car || گاڑی کے اوپر پرندہ اور گاڑی کے نیچے گیند || د موټر پورته مرغه او د موټر لاندې توپ
+sol The ball ## The bird is above the car; the ball is under it. || پرندہ گاڑی کے اوپر ہے؛ گیند اس کے نیچے ہے۔ || مرغه د موټر پورته ده؛ توپ یې لاندې دی.

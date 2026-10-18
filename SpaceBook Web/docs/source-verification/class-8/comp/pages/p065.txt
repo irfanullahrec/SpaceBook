@@ -1,0 +1,26 @@
+@printed 61
+box code | Program # 5: Display a sentence multiple times || پروگرام #5: ایک جملہ کئی بار دکھائیں || پروګرام #۵: یو جمله څو ځله وښایاست
+m 1 for i in range(3):
+m 2     print (i+1, ' -- Hello!!!')
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m 1  -- Hello!!!
+m 2  -- Hello!!!
+m 3  -- Hello!!!
+endbox
+p For every instruction that ends with ':', as in case of a loop statement, the next instruction(s) are indented and hence are considered part of the loop. In other words, all indented instructions will be executed in every iteration. Space is mandatory in python to differentiate between code blocks. The number of spaces must be evenly spaced in a block of code. If the code block in a conditional or loop statement is not properly indented, it might not give an error to stop the execution of the program; but may result in wrong output due to a logical error. || ہر وہ ہدایت جو ':' پر ختم ہو، جیسا کہ لوپ بیان کی صورت میں، اس کے بعد کی ہدایت(یں) indent کی جاتی ہیں اور اس لیے لوپ کا حصہ سمجھی جاتی ہیں۔ دوسرے الفاظ میں تمام indent شدہ ہدایات ہر تکرار میں چلائی جائیں گی۔ python میں کوڈ بلاکس میں فرق کرنے کے لیے خالی جگہ لازمی ہے۔ کوڈ کے بلاک میں جگہوں کی تعداد یکساں ہونی چاہیے۔ اگر شرطیہ یا لوپ بیان میں کوڈ بلاک ٹھیک سے indent نہ ہو تو ہو سکتا ہے پروگرام کو روکنے والی کوئی غلطی نہ آئے؛ لیکن منطقی غلطی کی وجہ سے غلط آؤٹ پٹ آ سکتا ہے۔ || هره لارښوونه چې په ':' پای ته ورسېږي، لکه د لوپ بیان په صورت کې، راتلونکې لارښوونه (لارښوونې) indent کېږي او له همدې امله د لوپ برخه ګڼل کېږي. په بلو ټکو ټولې indent شوې لارښوونې به په هر تکرار کې اجرا شي. په python کې د کوډ بلاکونو ترمنځ د توپیر لپاره تشه اړینه ده. د تشو شمېر باید په کوډ بلاک کې یو شان وي. که په شرطي یا لوپ بیان کې کوډ بلاک سم indent نه وي نو ښايي د پروګرام د اجرا د درولو لپاره تېروتنه رانشي؛ خو د منطقي تېروتنې له امله ښايي غلط آوټ پټ ورکړي.
+box code | Program # 6: Calculating square of numbers || پروگرام #6: اعداد کا مربع نکالنا || پروګرام #۶: د شمېرو مربع محاسبه کول
+m 1 for i in range(3):
+m 2     number = eval(input('Enter a number: '))
+m 3     print ('The square of your number is' , number*number)
+m 4 print('This Loop is now done.')
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m Enter a number: 3
+m The square of your number is 9
+m Enter a number: 4
+m The square of your number is 16
+m Enter a number: 5
+m The square of your number is 25
+m This Loop is now done.
+endbox

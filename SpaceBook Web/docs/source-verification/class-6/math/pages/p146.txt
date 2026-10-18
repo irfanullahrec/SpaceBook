@@ -1,0 +1,21 @@
+@printed 142
+example 2 | Find the length of the rectangle if its perimeter is 96 m and its width is 14 m. || اگر مستطیل کا احاطہ 96 m اور چوڑائی 14 m ہو تو اس کی لمبائی معلوم کریں۔ || که د مستطیل محیط 96 m او پلنوالی 14 m وي، اوږدوالی یې معلوم کړئ.
+rect 34 14 #4ade80 | ? | 14 m | | | 96 m
+p **Solution:** || **حل:** || **حل:**
+p As perimeter and width of the rectangle is given and we need to find the length, so we put the value of perimeter and width in the formula. || چونکہ مستطیل کا احاطہ اور چوڑائی دی گئی ہے اور ہمیں لمبائی معلوم کرنی ہے، اس لیے ہم احاطے اور چوڑائی کی قیمت فارمولے میں رکھتے ہیں۔ || ځکه چې د مستطیل محیط او پلنوالی ورکړل شوي او اوږدوالی باید ومومو، نو د محیط او پلنوالي ارزښت په فورمول کې ږدو.
+eq \begin{aligned} \text{Perimeter of a rectangle} &= 2(L + W) \\ 96 \text{ m} &= 2(L + 14) \text{ m} \\ 96 \text{ m} &= 2L + 28 \text{ m} \\ 96 \text{ m} - 28 \text{ m} &= 2L \\ 68 \text{ m} &= 2L \\ 34 \text{ m} &= L \end{aligned}
+p So, the length of the rectangle is 34 m. || لہٰذا مستطیل کی لمبائی 34 m ہے۔ || نو د مستطیل اوږدوالی 34 m دی.
+endexample
+example 3 | Find the width of a rectangular park if the length of the park is 250 m and perimeter is 900 m. || اگر پارک کی لمبائی 250 m اور احاطہ 900 m ہو تو مستطیل پارک کی چوڑائی معلوم کریں۔ || که د پارک اوږدوالی 250 m او محیط 900 m وي، د مستطیلي پارک پلنوالی معلوم کړئ.
+rect 250 200 #e9d5ff | 250 cm | ? | 250 cm | ?
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Perimeter of rectangle} &= 2(\text{length} + \text{width}) \\ &= 2(250 \text{ m} + \text{width}) \\ 900 \text{ m} &= 500 \text{ m} + 2\,\text{width} \\ 900 \text{ m} - 500 \text{ m} &= 2\,\text{width} \\ 400 \text{ m} &= 2\,\text{width} \\ \frac{400}{2} &= \text{width} \\ 200 \text{ m} &= \text{width} \end{aligned}
+p The width of the rectangle is 200 m. || مستطیل کی چوڑائی 200 m ہے۔ || د مستطیل پلنوالی 200 m دی.
+endexample
+@issue Example 3 (page 142): the figure labels the length "250 cm" while the question says 250 m; kept as printed.
+## 8.1.3 Area of the Square and rectangle || 8.1.3 مربع اور مستطیل کا رقبہ || 8.1.3 د مربع او مستطیل مساحت
+p We have learnt that area of a figure is the surface covered by that figure. It is always measured in squared units' i.e. square centimetres cm², square meters m² etc. || ہم سیکھ چکے ہیں کہ کسی شکل کا رقبہ وہ سطح ہے جو وہ شکل گھیرتی ہے۔ اسے ہمیشہ مربع اکائیوں یعنی مربع سینٹی میٹر cm²، مربع میٹر m² وغیرہ میں ناپا جاتا ہے۔ || زده مو کړي چې د شکل مساحت هغه سطحه ده چې شکل یې نیسي. تل په مربع واحدونو یعنې مربع سانتي متر cm²، مربع متر m² او نورو کې اندازه کېږي.
+## Area of the Square || مربع کا رقبہ || د مربع مساحت
+p We can find the area of the square by multiplying its length and width. || ہم مربع کا رقبہ اس کی لمبائی اور چوڑائی کو ضرب دے کر معلوم کر سکتے ہیں۔ || د مربع مساحت د اوږدوالي او پلنوالي په ضربولو معلومولی شو.
+rect 1 1 #38bdf8 | | | Length = L
+eq \begin{aligned} \text{Area of square} &= \text{length} \times \text{length} \\ &= L \times L \end{aligned}

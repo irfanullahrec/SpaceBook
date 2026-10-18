@@ -1,0 +1,25 @@
+@printed 167
+q 12 | Write the names and write the properties of each of the given shape. || ہر دی گئی شکل کا نام اور اس کی خصوصیات لکھیں۔ || د هر ورکړل شوي شکل نوم او ځانګړنې یې ولیکئ.
+table
+th | Shape || شکل || شکل | Circular edges || دائروی کنارے || دایروي څنډې | Straight edges || سیدھے کنارے || مستقیمې څنډې | Vertices || راس || راسونه | Circular faces || دائروی رخ || دایروي مخونه | Flat faces || چپٹے رخ || هوار مخونه
+tr | Cone |  |  |  |  |
+tr | Cuboid |  |  |  |  |
+tr | Cube |  |  |  |  |
+tr | Cylinder |  |  |  |  |
+tr | Sphere |  |  |  |  |
+tr | Semisphere |  |  |  |  |
+endtable
+qsolution See the completed table
+ss Use the properties listed on pages 153–154. A circular face is a flat face shaped like a circle. || صفحات 153–154 پر دی گئی خصوصیات استعمال کریں۔ دائروی رخ دائرے کی شکل کا چپٹا رخ ہوتا ہے۔ || په 153–154 پاڼو کې ورکړل شوې ځانګړنې وکاروئ. دایروي مخ د دایرې په شکل هوار مخ دی.
+stable
+tr | Shape | Circular edges | Straight edges | Vertices | Circular faces | Flat faces
+tr | Cone | 1 | 0 | 1 | 1 | 1
+tr | Cuboid | 0 | 12 | 8 | 0 | 6
+tr | Cube | 0 | 12 | 8 | 0 | 6
+tr | Cylinder | 2 | 0 | 0 | 2 | 2
+tr | Sphere | 0 | 0 | 0 | 0 | 0
+tr | Hemisphere | 1 | 0 | 0 | 1 | 1
+endtable
+ss A sphere has only one curved face, so every column is 0. || کرے کا صرف ایک خمیدہ رخ ہے، اس لیے ہر کالم 0 ہے۔ || کره یوازې یو کږ مخ لري، نو هره ستنه 0 ده.
+endsolution
+@issue The question number on page 167 is blacked out in the scan; it is Q12 (between Q11 and Q13). The book prints "Semisphere" for hemisphere; kept in the table, and the answer uses "Hemisphere".

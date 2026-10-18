@@ -1,0 +1,41 @@
+@printed 120
+exercise 7.5
+q 1 | Multiply the following polynomials. || درج ذیل کثیر رکنیوں کو ضرب دیں۔ || لاندې څو حدي افادې ضرب کړئ.
+qp a | $(x^3 + 3x^2 - x), (x - 2)$
+qp b | $(-3x^2 + 2x), 2y$ and $3 + y$
+qp c | $(7a^2 - 3a + 3), (3a - 4)$
+qp d | $(2x + 5), (x + 1)$
+qp e | $8u^2$ and $6u^2 - 4u + 1$
+qp f | $(6a^2 - 3a + 3)$ and $(7a - 4a^2)$
+qp g | $9y^3 - 6y - 3$ and $7y^2 - 4y$
+qp h | $(4k^5 - 5k^3 + k^2), (k^3 - k^5)$
+qp i | $(4a - 9), (4a^2 + 5)$
+qp j | $(5n - 4), (6n^2 - 6n + 6)$
+qp k | $(6x^2 + 3x), (6x^3 + 4x^2)$
+qp l | $(8n^2 + 4n), (6n^2 + 6n - 1)$
+qp m | $(r^2 + 8), (4r^2 + 8r - 9)$
+qp n | $(2a^3 - 5a + 9), (9a - 1)$
+qp o | $(8x^3 + 6x^2), (5x^2 - 8x)$
+qp p | $(5a + 8b), (a - 3b)$
+qp q | $(2a^2 + 6a + 3), (7a^2 - 6a + 1)$
+qp r | $(7u^3 + 8u - 6u^2), (6u^4 + 4u^3 + 3u^2)$
+qp s | $(8v^3 + 7v - 3v^2), (3v^2 + 4v)$
+qp t | $(8m^2 + 4m + 6), (6m^2 - 5m)$
+qp u | $(6l^2 + 2l + 3), (3l^2 + 6)$
+endexercise
+@sec 7.6 | Simplification of Algebraic Expressions || الجبری عبارتوں کو سادہ کرنا || د الجبري افادو ساده کول
+# 7.6 Simplification of Algebraic Expressions || 7.6 الجبری عبارتوں کو سادہ کرنا || 7.6 د الجبري افادو ساده کول
+p To simplify algebraic expressions involving brackets, we follow the same order of preference as we do in arithmetic by following the BODMAS rule in order of operations so that no miscalculations are made. || قوسین والی الجبری عبارتوں کو سادہ کرنے کے لیے ہم ترجیح کی وہی ترتیب اپناتے ہیں جو حساب میں BODMAS قاعدے کے مطابق عملیات کی ترتیب میں اپناتے ہیں تاکہ کوئی غلطی نہ ہو۔ || د قوسونو لرونکو الجبري افادو د ساده کولو لپاره هماغه د لومړیتوب ترتیب تعقیبوو چې په حساب کې د BODMAS قاعدې له مخې د عملیو په ترتیب کې یې تعقیبوو ترڅو هېڅ تېروتنه ونشي.
+p Similarly in algebraic expressions brackets are used to simplify them. Let's consider the following examples. || اسی طرح الجبری عبارتوں میں انہیں سادہ کرنے کے لیے قوسین استعمال ہوتی ہیں۔ آئیے درج ذیل مثالوں پر غور کریں۔ || په همدې ډول په الجبري افادو کې د ساده کولو لپاره قوسونه کارول کېږي. راځئ لاندې بېلګې وګورو.
+example 1 | Simplify: $a^2\{(a - b) - (a + b)\}$ || سادہ کریں: $a^2\{(a - b) - (a + b)\}$ || ساده کړئ: $a^2\{(a - b) - (a + b)\}$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &a^2\{(a - b) - (a + b)\} && \leftarrow \text{First solve the operation within brackets} \\ &= a^2\{a - b - a - b\} && \leftarrow \text{Now add and subtract the like terms} \\ &= a^2\{-2b\} && \leftarrow \text{Next multiply the terms} \\ &= -2a^2b \end{aligned}
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Simplify the following. || درج ذیل کو سادہ کریں۔ || لاندې ساده کړئ.
+qp a | $[3a^2(7a - b) + \{(a - b) + (a - 3b)\}]$
+qp b | $[6x(x^2 + xy + 2) - \{(4y - 2)(5x - y)\}]$
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write different questions related to BODMAS on the board and ask the students to simplify algebraic expressions according to the rule. || بورڈ پر BODMAS سے متعلق مختلف سوالات لکھیں اور طلبہ سے قاعدے کے مطابق الجبری عبارتیں سادہ کرنے کو کہیں۔ || پر تخته د BODMAS اړوند بېلابېلې پوښتنې ولیکئ او له زده کوونکو وغواړئ چې د قاعدې له مخې الجبري افادې ساده کړي.
+endbox

@@ -1,0 +1,2078 @@
+[
+  {
+    "pdfPage": 1,
+    "printedPage": null,
+    "page": "cover",
+    "status": "completed-front-matter",
+    "title": "A Textbook of MATHEMATICS",
+    "paragraphs": [
+      "For Grade IX",
+      "Khyber Pakhtunkhwa Textbook Board Peshawar"
+    ],
+    "visualStatus": "Decorative cover artwork; no lesson or exercise content",
+    "sourceFile": "D:\\SpaceBook\\Books\\9th\\9th MTHA\\PDF\\9th maaths.pdf"
+  },
+  {
+    "pdfPage": 2,
+    "printedPage": null,
+    "page": "publication credits",
+    "status": "completed-front-matter",
+    "title": "Publication and textbook credits",
+    "paragraphs": [
+      "All rights reserved with Khyber Pakhtunkhwa Textbook Board, Peshawar. Developed according to the National Curriculum 2006 and approved by DCTE Abbottabad Vide NOC letter No. 1504-06/F.03/Vol-I/Math-9th dated 28-02-2018.",
+      "Developed By: Khyber Pakhtunkhwa Textbook Board, Peshawar.",
+      "Authors: Prof. Syed Amanat Shah, (Rtd.); Prof. Abdur Rauf Jameel; Shakeel Ahmad, Assistant Professor; Prof. Qazi Muhammad Aslam; Mrs. Shaukat Qadeer, Lecturer",
+      "Review Supervision: Gohar Ali Khan, Director Curriculum & Teacher Education, Khyber Pakhtunkhwa, Abbottabad.",
+      "Focal Person: Zulfiqar Khan, Additional Director, Curriculum & Textbooks Review, DCTE, Abbottabad.",
+      "Reviewers: Nadeem Sultan, Principal, GHS Pawa, Abbottabad.; Basharat Khan, Subject Specialist, GHSS Bandi Dhundan, Abbottabad.; Muhammad Naseem, Subject Specialist, GHSS Trapi, Mansehra.; Mukhtiar Muhammad, Subject Specialist (Desk Officer), DCTE Abbottabad.",
+      "Editor: Ms. Dr. Badeya Danish, Subject Specialist (Mathematics), Khyber Pakhtunkhwa Textbook Board, Peshawar.",
+      "Printing Supervision: Syed Muhammad Farrulsaqlain, Chairman; Abdul Wali Khan, Member (E&P), Khyber Pakhtunkhwa Textbook Board, Peshawar.",
+      "Printed For Academic Year 2024-25",
+      "Website: https://tbb.kp.gov.pk",
+      "Email: membertbb@yahoo.com",
+      "Phone No. 091-9217714-15"
+    ],
+    "visualStatus": "Publication credits only; no lesson or exercise content"
+  },
+  {
+    "pdfPage": 3,
+    "printedPage": null,
+    "page": "title page",
+    "status": "completed-front-matter",
+    "title": "MATHEMATICS",
+    "paragraphs": [
+      "A Textbook For Grade IX",
+      "Khyber Pakhtunkhwa Textbook Board, Peshawar"
+    ],
+    "visualStatus": "Publisher emblem; no instructional content"
+  },
+  {
+    "pdfPage": 4,
+    "printedPage": null,
+    "page": "contents",
+    "status": "completed-front-matter",
+    "title": "Contents",
+    "tables": [
+      {
+        "headers": [
+          "Unit No.",
+          "Topic",
+          "Page No"
+        ],
+        "rows": [
+          [
+            1,
+            "Matrices",
+            1
+          ],
+          [
+            2,
+            "Real And Complex Numbers",
+            50
+          ],
+          [
+            3,
+            "Logarithm",
+            75
+          ],
+          [
+            4,
+            "Algebraic Expressions And Algebraic Formulas",
+            97
+          ],
+          [
+            5,
+            "Factorization",
+            126
+          ],
+          [
+            6,
+            "Algebraic Manipulation",
+            149
+          ],
+          [
+            7,
+            "Linear Equations and Inequalities",
+            173
+          ],
+          [
+            8,
+            "Linear Graphs And Their Applications",
+            192
+          ],
+          [
+            9,
+            "Introduction To Coordinate Geometry",
+            210
+          ],
+          [
+            10,
+            "Congruent Triangles",
+            233
+          ],
+          [
+            11,
+            "Parallelograms And Triangles",
+            242
+          ],
+          [
+            12,
+            "Line Bisectors And Angle Bisectors",
+            256
+          ],
+          [
+            13,
+            "Sides And Angles Of A Triangle",
+            267
+          ],
+          [
+            14,
+            "Ratio And Proportion",
+            275
+          ],
+          [
+            15,
+            "Pythagoras' Theorem",
+            285
+          ],
+          [
+            16,
+            "Theorems Related With Area",
+            291
+          ],
+          [
+            17,
+            "Practical Geometry Triangles",
+            298
+          ],
+          [
+            null,
+            "Answers",
+            313
+          ]
+        ]
+      }
+    ],
+    "visualStatus": "Contents table faithfully transcribed"
+  },
+  {
+    "pdfPage": 5,
+    "printedPage": 1,
+    "page": 1,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "UNIT 01 MATRICES",
+    "objectives": [
+      "Define a matrix with real entries and relate its rectangular layout (formation) with real life.",
+      "Define rows and columns of a matrix.",
+      "Define the order of a matrix.",
+      "Define equality of two matrices.",
+      "Define and identify row matrix, column matrix, rectangular matrix, square matrix, zero/null matrix, identity matrix, scalar matrix, diagonal matrix, transpose of a matrix, symmetric and skew-symmetric matrices.",
+      "Know whether the given matrices are conformable for addition/subtraction.",
+      "Add and subtract matrices.",
+      "Multiply a matrix by a real number.",
+      "Verify commutative and associative laws under addition.",
+      "Define additive identity of a matrix.",
+      "Find additive inverse of a matrix.",
+      "Know whether the given matrices are conformable for multiplication.",
+      "Multiply two (or three) matrices.",
+      "Verify associative law under multiplication.",
+      "Verify distributive laws.",
+      "Show with the help of an example that commutative law under multiplication does not hold in general (i.e. AB ≠ BA).",
+      "Define multiplicative identity of a matrix.",
+      "Verify the result (AB)ᵗ = BᵗAᵗ.",
+      "Define the determinant of a square matrix.",
+      "Evaluate determinant of a matrix.",
+      "Define singular and non-singular matrices.",
+      "Define adjoint of a matrix.",
+      "Find multiplicative inverse of a non-singular matrix A and verify that AA⁻¹ = I = A⁻¹A where I is the identity matrix.",
+      "Use adjoint method to calculate inverse of a non-singular matrix.",
+      "Verify the result (AB)⁻¹ = B⁻¹A⁻¹.",
+      "Solve a system of two linear equations and related real life problems in two unknowns using\n• Matrix inversion method,\n• Cramer’s rule."
+    ],
+    "sections": [
+      {
+        "id": "source-u1-objectives",
+        "title": "Unit 1: Matrices — Learning Objectives",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "After reading this unit, the students will be able to:"
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define a matrix with real entries and relate its rectangular layout (formation) with real life."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define rows and columns of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define the order of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define equality of two matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define and identify row matrix, column matrix, rectangular matrix, square matrix, zero/null matrix, identity matrix, scalar matrix, diagonal matrix, transpose of a matrix, symmetric and skew-symmetric matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Know whether the given matrices are conformable for addition/subtraction."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Add and subtract matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Multiply a matrix by a real number."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Verify commutative and associative laws under addition."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define additive identity of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Find additive inverse of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Know whether the given matrices are conformable for multiplication."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Multiply two (or three) matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Verify associative law under multiplication."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Verify distributive laws."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Show with the help of an example that commutative law under multiplication does not hold in general (i.e. AB ≠ BA)."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define multiplicative identity of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Verify the result (AB)ᵗ = BᵗAᵗ."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define the determinant of a square matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Evaluate determinant of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define singular and non-singular matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Define adjoint of a matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Find multiplicative inverse of a non-singular matrix A and verify that AA⁻¹ = I = A⁻¹A where I is the identity matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Use adjoint method to calculate inverse of a non-singular matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Verify the result (AB)⁻¹ = B⁻¹A⁻¹."
+          },
+          {
+            "type": "paragraph",
+            "text": "• Solve a system of two linear equations and related real life problems in two unknowns using\n• Matrix inversion method,\n• Cramer’s rule."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "Learning objectives; decorative arrows and border do not carry additional lesson content"
+  },
+  {
+    "pdfPage": 6,
+    "printedPage": 2,
+    "page": 2,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "1.1 INTRODUCTION TO MATRICES",
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "1.1 Introduction to Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The word ‘matrices’ is plural of the word ‘matrix’. The term matrix was first introduced by the mathematician Arthur Cayley in 1860. The knowledge of matrices is necessary in the various areas of Mathematics. It has widely been used in the fields of pure mathematics, statistics, engineering and physical and social sciences. Thus, matrix theory finds an important place in modern age and has become an integral part of mathematics."
+          },
+          {
+            "type": "paragraph",
+            "text": "Matrices make presentation of numbers clearer and make calculations easier. The following table presents the information about a series of hockey matches played between Pakistan and India."
+          },
+          {
+            "type": "dataTable",
+            "headers": [
+              "",
+              "Played",
+              "Won",
+              "Drawn",
+              "Lost"
+            ],
+            "rows": [
+              [
+                "Pakistan",
+                8,
+                4,
+                1,
+                3
+              ],
+              [
+                "India",
+                8,
+                3,
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The information is readily available when presented in this way. For example, if we want to know how many matches India lost against Pakistan, we go along the row ‘India’ and column ‘Lost’ and find that it is 4. Similarly, if we want to know how many matches Pakistan drew with India, we go along the row ‘Pakistan’ and column ‘Drawn’ and find that it is 1. As long as we remember what each number represents, we could remove the row and column headings and write just the numbers, enclosing them in square brackets or parenthesis such as"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  8,
+                  4,
+                  1,
+                  3
+                ],
+                [
+                  8,
+                  3,
+                  1,
+                  4
+                ]
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Let us denote this by A."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "Thus A =",
+            "matrices": [
+              [
+                [
+                  8,
+                  4,
+                  1,
+                  3
+                ],
+                [
+                  8,
+                  3,
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "suffix": "is a matrix."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "Hockey table and both matrix displays rebuilt as structured data"
+  },
+  {
+    "pdfPage": 7,
+    "printedPage": 3,
+    "page": 3,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "1.1.1 Matrix / 1.1.2 Rows and Columns of Matrix",
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "1.1 Introduction to Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "1.1.1 Matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix is a rectangular array (arrangements) of real numbers enclosed in square brackets. Each number in a matrix is called an element or entry of the matrix. For example"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  5
+                ]
+              ],
+              [
+                [
+                  -1,
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              [
+                [
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  -1,
+                  1,
+                  -2
+                ],
+                [
+                  -4,
+                  -3,
+                  -3
+                ]
+              ]
+            ],
+            "operators": [
+              ",",
+              "and"
+            ],
+            "suffix": "are all matrices."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "In the matrix",
+            "matrices": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  5
+                ]
+              ]
+            ],
+            "suffix": "the number 2, 3, 6, 5 are the elements or entries of the matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "Similarly in the matrix",
+            "matrices": [
+              [
+                [
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  -1,
+                  1,
+                  -2
+                ],
+                [
+                  -4,
+                  -3,
+                  -3
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "the numbers 3, 4, 2, −1, 1, −2, −4, −3, −5 are the elements or entries of the given matrix. Matrices are frequently denoted by capital letters such as A, B, C and so on. Thus we can write"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "A =",
+            "matrices": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  5
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "B =",
+            "matrices": [
+              [
+                [
+                  -1,
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "C =",
+            "matrices": [
+              [
+                [
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  -1,
+                  1,
+                  -2
+                ],
+                [
+                  -4,
+                  -3,
+                  -3
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "1.1.2 Rows and Columns of Matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "The rows of a matrix run horizontally, and the columns of a matrix run vertically. To make the idea more clear, let us consider the following matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "A =",
+            "matrices": [
+              [
+                [
+                  4,
+                  3,
+                  -2
+                ],
+                [
+                  1,
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  1,
+                  1
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers 4, 3, −2 are arranged horizontally, so they continue the first row."
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers 1, 5, 2 are arranged horizontally, so they continue second row."
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers 3, 1, 1 are arranged horizontally so they continue third row."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "Again consider the same matrix, A =",
+            "matrices": [
+              [
+                [
+                  4,
+                  3,
+                  -2
+                ],
+                [
+                  1,
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  1,
+                  1
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers 4, 1, 3 run vertically, so they constitute the first column."
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers 3, 5, 1 run vertically, so they constitute the second column."
+          },
+          {
+            "type": "paragraph",
+            "text": "The numbers −2, 2, 1 run vertically, so they constitute the third column."
+          }
+        ]
+      }
+    ],
+    "sourceErrata": [
+      {
+        "kind": "printed inconsistency",
+        "text": "The entries sentence ends in −5, while the displayed matrix ends in −3. Both preserved as printed."
+      },
+      {
+        "kind": "printed wording",
+        "text": "Row annotations use “continue”; preserved as printed."
+      }
+    ],
+    "visualStatus": "All matrices rebuilt as structured arrays; each row/column arrow annotation transcribed separately"
+  },
+  {
+    "pdfPage": 8,
+    "printedPage": 4,
+    "page": 4,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "1.1.3 Order (or dimension) of a Matrix",
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "1.1 Introduction to Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "1.1.3 Order (or dimension) of a Matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix with m rows and n columns has order m × n (read “m by n”)."
+          },
+          {
+            "type": "paragraph",
+            "text": "If a matrix has order m × n then m represents the number of rows and n represents the number of columns."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, consider"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "A =",
+            "matrices": [
+              [
+                [
+                  -3,
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  1,
+                  3
+                ]
+              ]
+            ]
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "and B =",
+            "matrices": [
+              [
+                [
+                  2,
+                  1
+                ],
+                [
+                  -4,
+                  3
+                ]
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The order of the matrix A is 2-by-3 or A is a 2-by-3 matrix. Similarly the order of the matrix B is 2-by-2 or B is a 2-by-2 matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "Do You Know?"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "Matrix",
+            "matrices": [
+              [
+                [
+                  6,
+                  10
+                ],
+                [
+                  5,
+                  3
+                ],
+                [
+                  5,
+                  2
+                ]
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Row 1: 6, 10. Row 2: 5, 3. Row 3: 5, 2. Column 1: 6, 5, 5. Column 2: 10, 3, 2. An element of the matrix: 3 (row 2, column 2)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dimension of this matrix is 3 × 2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember: Sometimes we will prefer to write the order of a matrix as m-by-n or sometimes (m × n)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Note: Order of a matrix m × n does not mean to multiply m & n."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tid-Bit: Order of a matrix is also called dimension or size."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "Order diagram and matrix labels represented by their exact row/column relationships; all callouts retained"
+  },
+  {
+    "pdfPage": 9,
+    "printedPage": 5,
+    "page": 5,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "Example 1 / 1.1.4 Equality of two Matrices",
+    "workedExamples": [
+      {
+        "id": "ex1",
+        "number": 1,
+        "title": "Example 1 (Printed page 5)",
+        "sourcePdfPage": 9,
+        "sourcePrintedPage": 5,
+        "problem": "Write the number of rows and column of the following matrices and hence mention their orders:\n(i) A = [[p, q], [r, s]]\n(ii) B = [[3, 4, 7], [5, 6, 8]]",
+        "given": "",
+        "method": "",
+        "steps": [
+          "(i) Given A = [[p, q], [r, s]], we see that:\nA has two rows and two columns, so order of A is 2-by-2, sometimes we will prefer to write the order of A is 2 by 2. Thus A is 2 by 2 matrix.",
+          "(ii) Given B = [[3, 4, 7], [5, 6, 8]]\nB has two rows and three columns. The order of B is 2-by-3, or 2 by 3 i.e. B is a 2 by 3 matrix."
+        ],
+        "answer": "",
+        "solutionOrigin": "textbook",
+        "subquestions": [
+          {
+            "number": "i",
+            "matrix": [
+              [
+                "p",
+                "q"
+              ],
+              [
+                "r",
+                "s"
+              ]
+            ]
+          },
+          {
+            "number": "ii",
+            "matrix": [
+              [
+                3,
+                4,
+                7
+              ],
+              [
+                5,
+                6,
+                8
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "1.1 Introduction to Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Example 1"
+          },
+          {
+            "type": "paragraph",
+            "text": "Write the number of rows and column of the following matrices and hence mention their orders:\n(i) A = [[p, q], [r, s]]\n(ii) B = [[3, 4, 7], [5, 6, 8]]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Solution:"
+          },
+          {
+            "type": "paragraph",
+            "text": "(i) Given A = [[p, q], [r, s]], we see that:\nA has two rows and two columns, so order of A is 2-by-2, sometimes we will prefer to write the order of A is 2 by 2. Thus A is 2 by 2 matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "(ii) Given B = [[3, 4, 7], [5, 6, 8]]\nB has two rows and three columns. The order of B is 2-by-3, or 2 by 3 i.e. B is a 2 by 3 matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  2,
+                  -5,
+                  10
+                ],
+                [
+                  -4,
+                  19,
+                  4
+                ]
+              ]
+            ],
+            "suffix": "Illustrative matrix beside Example 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "1.1.4 Equality of two Matrices"
+          },
+          {
+            "type": "paragraph",
+            "text": "Two given matrices A and B are said to be equal if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "(i) Both the matrices are of the same order i.e. they respectively have the same number of rows and columns."
+          },
+          {
+            "type": "paragraph",
+            "text": "(ii) The elements in the corresponding positions in A and B are equal."
+          },
+          {
+            "type": "figure",
+            "src": "assets/math9-agent1/printed005-equality-equity.png",
+            "alt": "Two panels showing equal-height supports and different-height supports beneath people reaching trees.",
+            "caption": "Equality doesn’t mean Equity"
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the matrices"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  5,
+                  4
+                ]
+              ],
+              [
+                [
+                  "1",
+                  "1+1",
+                  "12/4"
+                ],
+                [
+                  "4+2",
+                  "10/2",
+                  "8/2"
+                ]
+              ]
+            ],
+            "operators": [
+              "and"
+            ],
+            "suffix": "are equal whereas the matrices"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ]
+              ],
+              [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  5,
+                  4
+                ]
+              ]
+            ],
+            "operators": [
+              "and"
+            ],
+            "suffix": "are not equal."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "Equality/equity illustration retained as source crop; matrices structured separately; original example and solution stored separately"
+  },
+  {
+    "pdfPage": 10,
+    "printedPage": 6,
+    "page": 6,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "Exercise 1.1",
+    "exercises": [
+      {
+        "exercise": "1.1",
+        "title": "Exercise 1.1 (Printed page 6)",
+        "problems": [
+          {
+            "qNo": "Question 1",
+            "question": "Which of the following are square and which are rectangular matrices?\n(i) A = [[2, 3], [0, 5]]\n(ii) B = [[6, 3, -1], [1, 5, 2]]\n(iii) C = [[1, 0, 0], [0, 2, 0], [0, 0, 1]]\n(iv) B = [-5]\n(v) E = [-3, 4]\n(vi) E = [[-1], [7]]",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nA matrix is square if the number of rows equals the number of columns (m = n).\nA matrix is rectangular if the number of rows does not equal the number of columns (m ≠ n).\n\n(i) A has 2 rows and 2 columns (2×2): m = n => Square Matrix.\n(ii) B has 2 rows and 3 columns (2×3): m ≠ n => Rectangular Matrix.\n(iii) C has 3 rows and 3 columns (3×3): m = n => Square Matrix.\n(iv) B = [-5] has 1 row and 1 column (1×1): m = n => Square Matrix.\n(v) E = [-3, 4] has 1 row and 2 columns (1×2): m ≠ n => Rectangular Matrix.\n(vi) E = [[-1], [7]] has 2 rows and 1 column (2×1): m ≠ n => Rectangular Matrix.",
+            "answer": "(i) Square, (ii) Rectangular, (iii) Square, (iv) Square, (v) Rectangular, (vi) Rectangular.",
+            "id": "u1-ex1.1-q1",
+            "number": 1,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed",
+            "subquestions": [
+              {
+                "number": "i",
+                "label": "A",
+                "matrix": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    0,
+                    5
+                  ]
+                ]
+              },
+              {
+                "number": "ii",
+                "label": "B",
+                "matrix": [
+                  [
+                    6,
+                    3,
+                    -1
+                  ],
+                  [
+                    1,
+                    5,
+                    2
+                  ]
+                ]
+              },
+              {
+                "number": "iii",
+                "label": "C",
+                "matrix": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    2,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ]
+              },
+              {
+                "number": "iv",
+                "label": "B",
+                "matrix": [
+                  [
+                    -5
+                  ]
+                ]
+              },
+              {
+                "number": "v",
+                "label": "E",
+                "matrix": [
+                  [
+                    -3,
+                    4
+                  ]
+                ]
+              },
+              {
+                "number": "vi",
+                "label": "E",
+                "matrix": [
+                  [
+                    -1
+                  ],
+                  [
+                    7
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "qNo": "Question 2",
+            "question": "List the order of the following matrices:\n(i) A = [[1, 2, -1], [3, 4, 2]]\n(ii) B = [-4]\n(iii) C = [[2, 3, -1], [1, 2, 5]]\n(iv) F = [[2, 1], [3, 2], [4, -1]]\n(v) E = [3, 2]\n(vi) D = [[1, 2, 3], [6, 5, 9], [0, 0, 0]]",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nThe order of a matrix having m rows and n columns is m × n:\n(i) A has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(ii) B has 1 row and 1 column => Order: 1 × 1 (or 1-by-1).\n(iii) C has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(iv) F has 3 rows and 2 columns => Order: 3 × 2 (or 3-by-2).\n(v) E has 1 row and 2 columns => Order: 1 × 2 (or 1-by-2).\n(vi) D has 3 rows and 3 columns => Order: 3 × 3 (or 3-by-3).",
+            "answer": "(i) 2×3, (ii) 1×1, (iii) 2×3, (iv) 3×2, (v) 1×2, (vi) 3×3.",
+            "id": "u1-ex1.1-q2",
+            "number": 2,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed",
+            "subquestions": [
+              {
+                "number": "i",
+                "label": "A",
+                "matrix": [
+                  [
+                    1,
+                    2,
+                    -1
+                  ],
+                  [
+                    3,
+                    4,
+                    2
+                  ]
+                ]
+              },
+              {
+                "number": "ii",
+                "label": "B",
+                "matrix": [
+                  [
+                    -4
+                  ]
+                ]
+              },
+              {
+                "number": "iii",
+                "label": "C",
+                "matrix": [
+                  [
+                    2,
+                    3,
+                    -1
+                  ],
+                  [
+                    1,
+                    2,
+                    5
+                  ]
+                ]
+              },
+              {
+                "number": "iv",
+                "label": "F",
+                "matrix": [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    3,
+                    2
+                  ],
+                  [
+                    4,
+                    -1
+                  ]
+                ]
+              },
+              {
+                "number": "v",
+                "label": "E",
+                "matrix": [
+                  [
+                    3,
+                    2
+                  ]
+                ]
+              },
+              {
+                "number": "vi",
+                "label": "D",
+                "matrix": [
+                  [
+                    1,
+                    2,
+                    3
+                  ],
+                  [
+                    6,
+                    5,
+                    9
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "qNo": "Question 3",
+            "question": "If A = [[3, 2, -4], [-2, 5, 0], [2, 1, 5], [-3, 4, 6]], give the following elements:\n(i) a_12\n(ii) a_23\n(iii) a_32\n(iv) a_43\n(v) a_13\n(vi) a_33",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nIn matrix notation, a_ij represents the element in the i-th row and j-th column:\n(i) a_12 (Row 1, Column 2) = 2\n(ii) a_23 (Row 2, Column 3) = 0\n(iii) a_32 (Row 3, Column 2) = 1\n(iv) a_43 (Row 4, Column 3) = 6\n(v) a_13 (Row 1, Column 3) = -4\n(vi) a_33 (Row 3, Column 3) = 5",
+            "answer": "(i) 2, (ii) 0, (iii) 1, (iv) 6, (v) -4, (vi) 5.",
+            "id": "u1-ex1.1-q3",
+            "number": 3,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed",
+            "givenMatrix": [
+              [
+                3,
+                2,
+                -4
+              ],
+              [
+                -2,
+                5,
+                0
+              ],
+              [
+                2,
+                1,
+                5
+              ],
+              [
+                -3,
+                4,
+                6
+              ]
+            ],
+            "subquestions": [
+              {
+                "number": "i",
+                "element": "a_12"
+              },
+              {
+                "number": "ii",
+                "element": "a_23"
+              },
+              {
+                "number": "iii",
+                "element": "a_32"
+              },
+              {
+                "number": "iv",
+                "element": "a_43"
+              },
+              {
+                "number": "v",
+                "element": "a_13"
+              },
+              {
+                "number": "vi",
+                "element": "a_33"
+              }
+            ]
+          },
+          {
+            "qNo": "Question 4",
+            "question": "Which of the following matrices are equal.\nA = [[2, 5], [1, 3]]\nB = [[2, 5], [4, 3]]\nC = [[1+1, 3+2], [4, 2+1]]\nD = [[2, 4+1], [1, 3]]",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nSimplify matrices C and D:\nC = [[1+1, 3+2], [4, 2+1]] = [[2, 5], [4, 3]].\nD = [[2, 4+1], [1, 3]] = [[2, 5], [1, 3]].\n\nCompare:\n- Matrix A = [[2, 5], [1, 3]] has identical entries to D = [[2, 5], [1, 3]] => A = D.\n- Matrix B = [[2, 5], [4, 3]] has identical entries to C = [[2, 5], [4, 3]] => B = C.",
+            "answer": "A = D and B = C.",
+            "id": "u1-ex1.1-q4",
+            "number": 4,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed"
+          },
+          {
+            "qNo": "Question 5",
+            "question": "Let A = [[2, -3], [u, 0]] and B = [[v, -3], [5, w]], for what values of v, u and w are A and B equal.",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nFor A = B, corresponding entries must be equal:\n[[2, -3], [u, 0]] = [[v, -3], [5, w]]\n- Position (1, 1): 2 = v => v = 2\n- Position (1, 2): -3 = -3\n- Position (2, 1): u = 5 => u = 5\n- Position (2, 2): 0 = w => w = 0",
+            "answer": "u = 5, v = 2, w = 0.",
+            "id": "u1-ex1.1-q5",
+            "number": 5,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed"
+          },
+          {
+            "qNo": "Question 6",
+            "question": "If [[x+3, z+4, 2y-7], [-6, a-1, 0], [b-3, -21, 0]] = [[0, 6, 3y-2], [-6, -3, 2c+2], [2b+4, -21, 0]], find the values of a, b, c, x, y, and z.",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nEquating corresponding elements:\n1) x + 3 = 0  =>  x = -3\n2) z + 4 = 6  =>  z = 2\n3) 2y - 7 = 3y - 2  =>  -y = 5  =>  y = -5\n4) a - 1 = -3  =>  a = -2\n5) 0 = 2c + 2  =>  2c = -2  =>  c = -1\n6) b - 3 = 2b + 4  =>  -b = 7  =>  b = -7",
+            "answer": "a = -2, b = -7, c = -1, x = -3, y = -5, z = 2.",
+            "id": "u1-ex1.1-q6",
+            "number": 6,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed"
+          },
+          {
+            "qNo": "Question 7",
+            "question": "Solve the following equation for a, b, c, d.\n[[a+b, b+2c], [2c+d, 2a-d]] = [[-1, 4], [8, 0]]",
+            "solution": "SpaceBook supplementary solution (not printed on this exercise page):\nEquating corresponding elements:\n(1) a + b = -1\n(2) b + 2c = 4\n(3) 2c + d = 8\n(4) 2a - d = 0  =>  d = 2a\n\nFrom (4) and (3): 2c + 2a = 8 => a + c = 4 => c = 4 - a\nFrom (1): b = -1 - a\nSubstitute b and c into (2):\n(-1 - a) + 2(4 - a) = 4\n-1 - a + 8 - 2a = 4\n7 - 3a = 4 => -3a = -3 => a = 1.\n\nNow substitute a = 1:\nb = -1 - (1) = -2\nc = 4 - 1 = 3\nd = 2(1) = 2.",
+            "answer": "a = 1, b = -2, c = 3, d = 2.",
+            "id": "u1-ex1.1-q7",
+            "number": 7,
+            "sourcePdfPage": 10,
+            "sourcePrintedPage": 6,
+            "solutionOrigin": "SpaceBook supplementary solution; not printed on this source page",
+            "answerOrigin": "SpaceBook supplementary answer; original answer key not yet reviewed"
+          }
+        ],
+        "sourcePdfPages": [
+          10
+        ],
+        "sourcePrintedPages": [
+          6
+        ]
+      }
+    ],
+    "visualStatus": "All seven questions and matrix entries verified against source; original numbering and repeated matrix labels preserved",
+    "solutionStatus": "No solutions printed on this page; existing mathematically checked supplementary solutions explicitly labelled"
+  },
+  {
+    "pdfPage": 11,
+    "printedPage": 7,
+    "page": 7,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "1.2 TYPES OF MATRICES",
+    "sections": [
+      {
+        "id": "1.2",
+        "title": "1.2 Types of Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "a) Row-matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix which has just one and only row in it is called a Row-matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the matrices"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  "a",
+                  "b"
+                ]
+              ],
+              [
+                [
+                  1,
+                  3,
+                  4
+                ]
+              ],
+              [
+                [
+                  2,
+                  4,
+                  6,
+                  8
+                ]
+              ]
+            ],
+            "operators": [
+              ",",
+              ","
+            ],
+            "suffix": "are all row-matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "b) Column-matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix which has just one and only one column in it is called a column-matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example,"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  "a"
+                ],
+                [
+                  "b"
+                ]
+              ],
+              [
+                [
+                  1
+                ],
+                [
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              [
+                [
+                  2
+                ],
+                [
+                  4
+                ],
+                [
+                  6
+                ],
+                [
+                  8
+                ]
+              ]
+            ],
+            "operators": [
+              ",",
+              "and"
+            ],
+            "suffix": "are all column matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "c) Square-matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix in which number of rows and columns are equal is called a square matrix. For example the matrix"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  "l",
+                  "m"
+                ],
+                [
+                  "n",
+                  "p"
+                ]
+              ]
+            ],
+            "suffix": "has two rows and two columns, so it is a square matrix. The order of the matrix"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  "l",
+                  "m"
+                ],
+                [
+                  "n",
+                  "p"
+                ]
+              ]
+            ],
+            "suffix": "is 2-by-2 but for brevity we write the above matrix as a square matrix of order 2 or 2-square matrix. Similarly"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "the matrix",
+            "matrices": [
+              [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  7,
+                  8,
+                  9
+                ],
+                [
+                  -1,
+                  -4,
+                  2
+                ]
+              ]
+            ],
+            "suffix": "is a square matrix of order 3 or 3-square matrix. As a special case the matrix consisting of a single element say [3] is also a square matrix of order 1 or a 1-square matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  1,
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "suffix": "Row matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  1
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ]
+            ],
+            "suffix": "Column matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  1,
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  1,
+                  4
+                ],
+                [
+                  4,
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "suffix": "Square matrix."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "All sample matrices and Remember box rebuilt as structured matrices; cartoon is decorative"
+  },
+  {
+    "pdfPage": 12,
+    "printedPage": 8,
+    "page": 8,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "Rectangular-matrix / Zero matrix or Null matrix",
+    "sections": [
+      {
+        "id": "1.2",
+        "title": "1.2 Types of Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "d) Rectangular-matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A matrix whose number of rows and number of columns are not equal is called rectangular matrix. Thus the matrix"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  "a",
+                  "b",
+                  "c"
+                ],
+                [
+                  "d",
+                  "e",
+                  "f"
+                ]
+              ]
+            ],
+            "suffix": "is a rectangular matrix because its number of rows = 2 = m and its number of Columns = 3 = n obviously 2 ≠ 3. Similarly the matrix"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  1,
+                  4
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  5,
+                  -3
+                ]
+              ]
+            ],
+            "suffix": "is also a rectangular matrix with its order 3-by-2 i.e. number of rows and number of columns are not equal."
+          },
+          {
+            "type": "paragraph",
+            "text": "e) Zero matrix or Null matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "Any matrix (weather it is rectangular or square) of which all the elements (entries) are equal to zero is said to be a Zero matrix or a Null matrix. Thus"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ],
+                [
+                  0
+                ],
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            "operators": [
+              ",",
+              ",",
+              "and"
+            ],
+            "suffix": "are some examples of zero matrices or null matrices."
+          },
+          {
+            "type": "paragraph",
+            "text": "The following points are very important to remember."
+          },
+          {
+            "type": "paragraph",
+            "text": "i) A zero or null matrix is not necessarily a square matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "ii) A null matrix is generally donated by O."
+          },
+          {
+            "type": "paragraph",
+            "text": "iii) Sometimes we prefer to put the order of a null matrix as a proper subscript with the general symbol O."
+          },
+          {
+            "type": "paragraph",
+            "text": "Thus,"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "O₂ₓ₂ =",
+            "matrices": [
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ],
+            "suffix": "is a null-matrix of order 2."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "O₂ₓ₃ =",
+            "matrices": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            "suffix": "is a null-matrix of order 2-by-3."
+          },
+          {
+            "type": "paragraph",
+            "text": "The role of the Zero matrix in matrix manipulation is very similar to that of Zero in ordinary algebra. Provided that they are compatible for multiplication (compatibility of multiplication in matrices will be discussed later on in this chapter), the product of any matrix and the Zero matrix is a zero matrix. When working with matrices involving zero matrices, we choose a zero matrix of such an order which is suitable for solving the problem in hand."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "Matrices and callout text fully structured; calculator cartoon decorative",
+    "sourceErrata": [
+      {
+        "kind": "printed wording",
+        "text": "“weather” and “donated” retained from the source wording."
+      }
+    ]
+  },
+  {
+    "pdfPage": 13,
+    "printedPage": 9,
+    "page": 9,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "Diagonal matrix / Scalar matrix",
+    "sections": [
+      {
+        "id": "1.2",
+        "title": "1.2 Types of Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "f) Diagonal matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A square matrix in which all elements are zero except the diagonal elements is known as diagonal matrix. For example"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "A =",
+            "matrices": [
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            ],
+            "suffix": "is a diagonal matrix of order 2."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "B =",
+            "matrices": [
+              [
+                [
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  -5
+                ]
+              ]
+            ],
+            "suffix": "is a diagonal matrix of order 3."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember: Main diagonal"
+          },
+          {
+            "type": "paragraph",
+            "text": "Start at the top left and goes to the bottom right in the matrix."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "A =",
+            "matrices": [
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "g) Scalar matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "A square matrix in which all the elements lying on the main diagonal of the matrix are equal and the remaining elements off the main diagonal are all zero is called scalar matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "Equivalently scalar matrix can also be defined as under:"
+          },
+          {
+            "type": "paragraph",
+            "text": "A diagonal matrix in which all the diagonal elements are equal is said to be a scalar matrix."
+          },
+          {
+            "type": "paragraph",
+            "text": "For instance"
+          },
+          {
+            "type": "matrixProduct",
+            "matrices": [
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  7,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  7
+                ]
+              ],
+              [
+                [
+                  "1/2",
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  "1/2",
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  "1/2"
+                ]
+              ]
+            ],
+            "operators": [
+              ",",
+              ","
+            ],
+            "suffix": "are scalar matrices of order 2 and 3 respectively."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tid-Bit: Scalar matrix is a special case of a diagonal matrix."
+          }
+        ]
+      }
+    ],
+    "visualStatus": "All matrices and main-diagonal explanation structured; decorative rings omitted"
+  },
+  {
+    "pdfPage": 14,
+    "printedPage": 10,
+    "page": 10,
+    "chapter": "Unit 1: Matrices",
+    "status": "completed-educational-content",
+    "title": "Scalar matrix note / Identity matrix / Transpose of a matrix",
+    "sections": [
+      {
+        "id": "1.2",
+        "title": "1.2 Types of Matrices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Note: Every scalar matrix is a diagonal matrix but every diagonal matrix is not necessarily a scalar matrix. For example,"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "",
+            "matrices": [
+              [
+                [
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  -1
+                ]
+              ]
+            ],
+            "suffix": "is a diagonal matrix,"
+          },
+          {
+            "type": "paragraph",
+            "text": "because all elements of the matrix are zero except the elements of the main diagonal but the above matrix is not a scalar matrix because elements lying on the main diagonal are not all equal."
+          },
+          {
+            "type": "paragraph",
+            "text": "h) Identity matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "The identity matrix (sometimes called the unit matrix) is a square matrix and is denoted by I. It is characterized by the fact that all elements on its main diagonal are 1’s whereas all other elements are zero. Sometime it is useful to write the order of the identity matrix as a subscript of I. thus"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "I₂ =",
+            "matrices": [
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "suffix": "is the identity matrix of order 2."
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "I₃ =",
+            "matrices": [
+              [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            "suffix": "is the identity matrix of order 3."
+          },
+          {
+            "type": "paragraph",
+            "text": "When there is no danger of ambiguity the identity matrices I₂ & I₃ are simply denoted by I."
+          },
+          {
+            "type": "paragraph",
+            "text": "i) Transpose of a matrix"
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose we have a matrix A of any given order. The matrix obtained by interchanging mutually the rows and columns in A is called the transpose of A and is denoted by Aᵗ. For example"
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "If A =",
+            "matrices": [
+              [
+                [
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "suffix": ""
+          },
+          {
+            "type": "matrixProduct",
+            "prefix": "then Aᵗ =",
+            "matrices": [
+              [
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "suffix": ""
+          }
+        ]
+      }
+    ],
+    "visualStatus": "All matrices and callout text structured; identity cartoon decorative"
+  }
+]

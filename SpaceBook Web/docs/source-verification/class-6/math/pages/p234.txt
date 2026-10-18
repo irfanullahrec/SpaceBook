@@ -1,0 +1,39 @@
+@printed 232
+@deco Picture of a jar of candies: 4 chocolate (dark round), 3 strawberry (pink) and 7 orange candies.
+exercise 11.5
+q 1 | Describe the following with examples: || درج ذیل کو مثالوں کے ساتھ بیان کریں: || لاندې له بېلګو سره بیان کړئ:
+qp a | Experiments || تجربات || تجربې
+sol A process which gives some results/outcomes. ## Example: measuring the length of a table. || مثال: میز کی لمبائی ناپنا۔ || بېلګه: د مېز اوږدوالی اندازه کول.
+qp b | Random Experiments || اتفاقی تجربات || تصادفي تجربې
+sol An experiment with two or more possible results, so the result is not known in advance. ## Example: tossing a coin, rolling a die. || مثال: سکہ اچھالنا، پانسا پھینکنا۔ || بېلګه: د سکې اچول، د ډایس اچول.
+qp c | Outcomes || نتائج || پایلې
+sol The possible results of a random experiment. ## Example: a die has 6 outcomes: 1, 2, 3, 4, 5, 6. || مثال: پانسے کے 6 نتائج ہیں: 1، 2، 3، 4، 5، 6۔ || بېلګه: ډایس 6 پایلې لري: 1، 2، 3، 4، 5، 6.
+qp d | sample space || سیمپل اسپیس || د نمونې فضا
+sol The set of all possible outcomes of an experiment. ## Example: tossing a coin: S = {head, tail}. || مثال: سکہ اچھالنا: S = {چت، پٹ}۔ || بېلګه: د سکې اچول: S = {سر، لکۍ}.
+qp e | Events || واقعات || پېښې
+sol A subset of the sample space. ## Example: getting a 5 when a die is rolled. || مثال: پانسا پھینکنے پر 5 آنا۔ || بېلګه: د ډایس په اچولو 5 راتلل.
+qp f | Equally Likely events || یکساں ممکنہ واقعات || یو شان احتمالي پېښې
+sol Outcomes that each have the same chance of happening. ## Example: head and tail when a fair coin is tossed. || مثال: درست سکہ اچھالنے پر چت اور پٹ۔ || بېلګه: د سمې سکې په اچولو سر او لکۍ.
+q 2 | Saad has a bag with 14 blocks. Six are red, two are green, four are blue and two are yellow. What is the probability that if he chooses one block, randomly without seeing, it will be red? || سعد کے پاس 14 بلاکس کا تھیلا ہے۔ چھ سرخ، دو سبز، چار نیلے اور دو پیلے ہیں۔ اگر وہ بغیر دیکھے ایک بلاک چنے تو اس کے سرخ ہونے کا امکان کیا ہے؟ || سعد یوه کڅوړه لري چې 14 بلاکونه پکې دي. شپږ سره، دوه شنه، څلور آبي او دوه ژېړ دي. که پرته له کتلو یو بلاک وټاکي، د سور کېدو احتمال یې څومره دی؟
+solution $\frac{6}{14} = \frac{3}{7}$
+sm P(\text{red}) = \frac{\text{red blocks}}{\text{total blocks}} = \frac{6}{14} = \frac{3}{7}
+endsolution
+q 3 | There are 14 candies in a jar. Hamza takes one candy randomly without looking at the candies. Find: || ایک مرتبان میں 14 ٹافیاں ہیں۔ حمزہ بغیر دیکھے ایک ٹافی نکالتا ہے۔ معلوم کریں: || په یوه لوښي کې 14 خوږې دي. حمزه پرته له کتلو یوه خوږه اخلي. معلوم کړئ:
+qp a | The sample space. || سیمپل اسپیس۔ || د نمونې فضا.
+sol 14 candies: 4 chocolate, 3 strawberry, 7 orange ## Count each kind in the picture; 4 + 3 + 7 = 14. || تصویر میں ہر قسم گنیں؛ 4 + 3 + 7 = 14۔ || په انځور کې هر ډول وشمېرئ؛ 4 + 3 + 7 = 14.
+qp b | The probability of picking a chocolate candy. || چاکلیٹ ٹافی نکالنے کا امکان۔ || د چاکلیټ خوږې د اخیستلو احتمال.
+sol $\frac{4}{14} = \frac{2}{7}$ ## 4 of the 14 candies are chocolate. || 14 میں سے 4 ٹافیاں چاکلیٹ ہیں۔ || له 14 خوږو څخه 4 چاکلیټ دي.
+qp c | The probability of picking a strawberry candy. || اسٹرابیری ٹافی نکالنے کا امکان۔ || د سټرابېري خوږې د اخیستلو احتمال.
+sol $\frac{3}{14}$ ## 3 of the 14 candies are strawberry. || 14 میں سے 3 ٹافیاں اسٹرابیری ہیں۔ || له 14 خوږو څخه 3 سټرابېري دي.
+qp d | The probability of picking an orange candy. || اورنج ٹافی نکالنے کا امکان۔ || د نارنجي خوږې د اخیستلو احتمال.
+sol $\frac{7}{14} = \frac{1}{2}$ ## 7 of the 14 candies are orange. || 14 میں سے 7 ٹافیاں اورنج ہیں۔ || له 14 خوږو څخه 7 نارنجي دي.
+qp e | What is more likely to be picked; an orange candy or a strawberry candy? || کس کے نکلنے کا امکان زیادہ ہے؛ اورنج ٹافی یا اسٹرابیری ٹافی؟ || د کومې د اخیستلو احتمال ډېر دی؛ نارنجي خوږه که سټرابېري خوږه؟
+sol Orange candy ## 7/14 is greater than 3/14. || 7/14، 3/14 سے بڑا ہے۔ || 7/14 له 3/14 لوی دی.
+q 4 | Draw 2D shapes (as sample space) for each of these according to the below mentioned probabilities: || درج ذیل امکانات کے مطابق ہر ایک کے لیے دو جہتی اشکال (سیمپل اسپیس کے طور پر) بنائیں: || د لاندې احتمالاتو له مخې د هر یو لپاره دوه بعدي شکلونه (د نمونې فضا په توګه) رسم کړئ:
+qp a | $P(\text{squares}) = \frac{2}{4}$
+sol Draw 4 shapes, 2 of them squares ## For example: square, square, circle, triangle. || مثلاً: مربع، مربع، دائرہ، مثلث۔ || لکه: مربع، مربع، دایره، مثلث.
+qp b | $P(\text{circles}) = \frac{3}{8}$
+sol Draw 8 shapes, 3 of them circles ## For example: 3 circles and 5 other shapes. || مثلاً: 3 دائرے اور 5 دوسری اشکال۔ || لکه: 3 دایرې او 5 نور شکلونه.
+qp c | $P(\text{triangles}) = \frac{1}{3}$
+sol Draw 3 shapes, 1 of them a triangle ## For example: triangle, square, circle (or 2 triangles out of 6 shapes). || مثلاً: مثلث، مربع، دائرہ (یا 6 اشکال میں سے 2 مثلث)۔ || لکه: مثلث، مربع، دایره (یا له 6 شکلونو 2 مثلثونه).
+@issue Exercise 11.5 Q3 relies on the jar picture; the candy counts (4 chocolate, 3 strawberry, 7 orange) were counted from the picture and agree with the answer key.

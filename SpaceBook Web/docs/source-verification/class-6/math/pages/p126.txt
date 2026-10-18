@@ -1,0 +1,105 @@
+@printed 122
+exercise 6.6
+q 1 | Simplify the following. || درج ذیل کو سادہ کریں۔ || لاندې ساده کړئ.
+qp a | $2(4x + 2)$
+solution $8x + 4$
+ss Multiply each term inside the bracket by 2. || قوسین کے ہر رکن کو 2 سے ضرب دیں۔ || د قوس هر حد په 2 کې ضرب کړئ.
+sm 2(4x + 2) = 8x + 4
+endsolution
+qp b | $2 + 2x\{2(3x + 2) + 2\}$
+solution $12x^2 + 12x + 2$
+ss Solve the small bracket first, then the curly bracket, then multiply by 2x. || پہلے چھوٹے قوسین، پھر منحنی قوسین حل کریں، پھر 2x سے ضرب دیں۔ || لومړی کوچنی قوس، بیا ګونجه قوس حل کړئ، بیا په 2x کې ضرب کړئ.
+sm \begin{aligned} &2 + 2x\{6x + 4 + 2\} \\ &= 2 + 2x\{6x + 6\} \\ &= 2 + 12x^2 + 12x \\ &= 12x^2 + 12x + 2 \end{aligned}
+endsolution
+qp c | $[6x - \{3x + (2x - x)\}]$
+solution $2x$
+sm \begin{aligned} &[6x - \{3x + x\}] \\ &= [6x - 4x] \\ &= 2x \end{aligned}
+ss Work from the innermost bracket outwards: (2x − x) = x first. || اندر والے قوسین سے باہر کی طرف حل کریں: پہلے (2x − x) = x۔ || له دننني قوس څخه بهر ته حل کړئ: لومړی (2x − x) = x.
+endsolution
+qp d | $[7l - \{4m - (4m - 2m)\}]$
+solution $7l - 2m$
+sm \begin{aligned} &[7l - \{4m - 2m\}] \\ &= [7l - 2m] \\ &= 7l - 2m \end{aligned}
+ss Innermost first: (4m − 2m) = 2m, then {4m − 2m} = 2m. || پہلے اندر والا: (4m − 2m) = 2m، پھر {4m − 2m} = 2m۔ || لومړی دننه: (4m − 2m) = 2m، بیا {4m − 2m} = 2m.
+endsolution
+qp e | $3u + \{v - (2u - \overline{t + v})\}$
+solution $u + 2v + t$
+ss The bar (vinculum) over t + v works like a bracket, so solve it first; a minus sign in front changes the signs. || لکیر (ونکیولم) t + v کو قوسین کی طرح جوڑتی ہے، اس لیے پہلے اسے حل کریں؛ آگے منفی علامت علامتیں بدل دیتی ہے۔ || کرښه (وینکولم) t + v د قوس په څېر یوځای کوي، نو لومړی یې حل کړئ؛ مخکې منفي نښه نښې بدلوي.
+sm \begin{aligned} &3u + \{v - (2u - t - v)\} \\ &= 3u + \{v - 2u + t + v\} \\ &= 3u + \{2v - 2u + t\} \\ &= 3u + 2v - 2u + t \\ &= u + 2v + t \end{aligned}
+endsolution
+qp f | $2 + 3x\{4(x + 2) + 2\}$
+solution $12x^2 + 30x + 2$
+sm \begin{aligned} &2 + 3x\{4x + 8 + 2\} \\ &= 2 + 3x\{4x + 10\} \\ &= 2 + 12x^2 + 30x \\ &= 12x^2 + 30x + 2 \end{aligned}
+ss Multiply 3x by each term inside the curly bracket: 3x × 4x = 12x², 3x × 10 = 30x. || 3x کو منحنی قوسین کے ہر رکن سے ضرب دیں: 3x × 4x = 12x²، 3x × 10 = 30x۔ || 3x د ګونجه قوس په هر حد کې ضرب کړئ: 3x × 4x = 12x²، 3x × 10 = 30x.
+endsolution
+qp g | $11a - \{5b - 3(2a + b)\}$
+solution $17a - 2b$
+sm \begin{aligned} &11a - \{5b - 6a - 3b\} \\ &= 11a - \{2b - 6a\} \\ &= 11a - 2b + 6a \\ &= 17a - 2b \end{aligned}
+ss −3 multiplies both 2a and b; removing { } after a minus sign changes every sign. || −3 دونوں 2a اور b سے ضرب ہوتا ہے؛ منفی کے بعد { } ہٹانے سے ہر علامت بدل جاتی ہے۔ || −3 په 2a او b دواړو کې ضربېږي؛ له منفي وروسته د { } لرې کول هره نښه بدلوي.
+endsolution
+qp h | $8\{3(4a + 5b) - 2(6a - 5b)\}$
+solution $200b$
+sm \begin{aligned} &8\{12a + 15b - 12a + 10b\} \\ &= 8\{25b\} \\ &= 200b \end{aligned}
+ss 12a − 12a = 0, so only the b terms remain. || 12a − 12a = 0، اس لیے صرف b والے ارکان بچتے ہیں۔ || 12a − 12a = 0، نو یوازې د b حدونه پاتې کېږي.
+endsolution
+qp i | $[4y + 6z\{7(2y - \overline{y + 2}) + z\}]$
+solution $42yz - 84z + 6z^2 + 4y$
+ss Solve the vinculum and small bracket first: 2y − (y + 2) = y − 2. || پہلے ونکیولم اور چھوٹے قوسین حل کریں: 2y − (y + 2) = y − 2۔ || لومړی وینکولم او کوچنی قوس حل کړئ: 2y − (y + 2) = y − 2.
+sm \begin{aligned} &[4y + 6z\{7(y - 2) + z\}] \\ &= [4y + 6z\{7y - 14 + z\}] \\ &= 4y + 42yz - 84z + 6z^2 \end{aligned}
+ss Here 6z multiplies every term in { }, so z × z = z². No more like terms can be combined. || یہاں 6z، { } کے ہر رکن سے ضرب ہوتا ہے، اس لیے z × z = z²۔ مزید یکساں ارکان نہیں ہیں۔ || دلته 6z د { } په هر حد کې ضربېږي، نو z × z = z². نور ورته حدونه نشته.
+endsolution
+qp j | $8a + 4[(6a + \overline{2b + 3b}) - 2c]$
+solution $32a + 20b - 8c$
+sm \begin{aligned} &8a + 4[(6a + 5b) - 2c] \\ &= 8a + 4[6a + 5b - 2c] \\ &= 8a + 24a + 20b - 8c \\ &= 32a + 20b - 8c \end{aligned}
+ss Under the vinculum: 2b + 3b = 5b. Then multiply each term in [ ] by 4 and add like terms. || ونکیولم کے نیچے: 2b + 3b = 5b۔ پھر [ ] کے ہر رکن کو 4 سے ضرب دیں اور یکساں ارکان جمع کریں۔ || د وینکولم لاندې: 2b + 3b = 5b. بیا د [ ] هر حد په 4 کې ضرب کړئ او ورته حدونه جمع کړئ.
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q 1. | Complete the table. || جدول مکمل کریں۔ || جدول بشپړ کړئ.
+table
+tr | Position | 1 |  |  | 4 |  | 6
+tr | Term |  |  | 11 |  | 13 |
+tr | Position | 1 | 2 + 8 |  | 4 |  | 6
+endtable
+qsolution Rule: term = position + 8
+ss Row 3 shows the rule at position 2 is "2 + 8", so each term = position + 8. Check: 3 + 8 = 11 ✓ and 5 + 8 = 13 ✓. || تیسری قطار میں مقام 2 پر قاعدہ "2 + 8" ہے، اس لیے ہر رکن = مقام + 8۔ جانچ: 3 + 8 = 11 ✓ اور 5 + 8 = 13 ✓۔ || په درېیمه کرښه کې په 2 ځای قاعده "2 + 8" ده، نو هر حد = ځای + 8. ازموینه: 3 + 8 = 11 ✓ او 5 + 8 = 13 ✓.
+stable
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 9 | 10 | 11 | 12 | 13 | 14
+tr | Rule | 1 + 8 | 2 + 8 | 3 + 8 | 4 + 8 | 5 + 8 | 6 + 8
+endtable
+endsolution
+q 2. | Create a real life situation where you can use a pattern with term to term rule of subtracting 3. || حقیقی زندگی کی ایسی صورتحال بنائیں جس میں 3 تفریق کرنے کے رکن سے رکن کے قاعدے والا نمونہ استعمال ہو سکے۔ || د ورځني ژوند داسې حالت جوړ کړئ چې پکې د 3 تفریق د له حد څخه حد ته قاعدې لرونکې بېلګه وکارول شي.
+qsolution One example: 30, 27, 24, 21, … sweets
+ss Example: A jar has 30 sweets and a child eats 3 sweets every day. The sweets left are 30, 27, 24, 21, 18, … The rule is "start at 30 and subtract 3". || مثال: ایک مرتبان میں 30 مٹھائیاں ہیں اور ایک بچہ روزانہ 3 کھاتا ہے۔ بچی ہوئی مٹھائیاں 30، 27، 24، 21، 18، … ہیں۔ قاعدہ: "30 سے شروع کریں اور 3 تفریق کریں"۔ || بېلګه: یو لوښي کې 30 خوږې دي او یو ماشوم هره ورځ 3 خوري. پاتې خوږې 30، 27، 24، 21، 18، … دي. قاعده: "له 30 پیل او 3 تفریق کړئ".
+endsolution
+q 3. | Evaluate $2x + 10y$ and $2(x + 10y)$ if $x = 4$ and $y = 2$. Are both the values same? If yes, explain why? If no, explain why? || اگر $x = 4$ اور $y = 2$ ہو تو $2x + 10y$ اور $2(x + 10y)$ کی قیمت معلوم کریں۔ کیا دونوں قیمتیں برابر ہیں؟ اگر ہاں تو کیوں؟ اگر نہیں تو کیوں؟ || که $x = 4$ او $y = 2$ وي، د $2x + 10y$ او $2(x + 10y)$ ارزښت معلوم کړئ. ایا دواړه ارزښتونه برابر دي؟ که هو، ولې؟ که نه، ولې؟
+qsolution No: 2x + 10y = 28 but 2(x + 10y) = 48
+suse evalx 2x + 10y ;; 2*x + 10*y ;; x=4, y=2
+suse evalx 2(x + 10y) ;; 2*(x + 10*y) ;; x=4, y=2
+ss They are different because in 2(x + 10y) the 2 multiplies both terms: 2(x + 10y) = 2x + 20y, which is not the same as 2x + 10y. || یہ مختلف ہیں کیونکہ 2(x + 10y) میں 2 دونوں ارکان سے ضرب ہوتا ہے: 2(x + 10y) = 2x + 20y، جو 2x + 10y کے برابر نہیں۔ || دا بېل دي ځکه په 2(x + 10y) کې 2 په دواړو حدونو کې ضربېږي: 2(x + 10y) = 2x + 20y، چې له 2x + 10y سره برابر نه دی.
+endsolution
+endbox
+@issue Think Higher table: the third row is labelled "Position" but holds the rule (e.g. "2 + 8"); kept as printed.
+@sec u6-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- Number patterns are sets of numbers that follow a pattern or a rule. || عددی نمونے اعداد کے ایسے سیٹ ہیں جو کسی نمونے یا قاعدے کی پیروی کرتے ہیں۔ || عددي بېلګې د عددونو هغه سېټونه دي چې یوه بېلګه یا قاعده تعقیبوي.
+- The term-to-term rule of a pattern describes how to get next term in that specific pattern. || کسی نمونے کا رکن سے رکن کا قاعدہ بتاتا ہے کہ اس خاص نمونے میں اگلا رکن کیسے حاصل کیا جائے۔ || د بېلګې له حد څخه حد ته قاعده ښيي چې په هغه ځانګړې بېلګه کې راتلونکی حد څنګه ترلاسه کړو.
+- The word "algebra" comes from the Arabic word "al-jabr" which means the reunion of broken parts. || لفظ "الجبرا" عربی لفظ "الجبر" سے نکلا ہے جس کا مطلب ٹوٹے ہوئے حصوں کو جوڑنا ہے۔ || د "الجبر" کلمه له عربي کلمې "الجبر" څخه راغلې چې مانا یې د ماتو برخو بېرته یوځای کول دي.
+- A sentence is a set of words that is complete in itself and conveying full meaning without any ambiguity. || جملہ الفاظ کا ایسا مجموعہ ہے جو اپنے آپ میں مکمل ہو اور بغیر کسی ابہام کے پورا مطلب دے۔ || جمله د کلمو هغه ټولګه ده چې پخپله بشپړه وي او پرته له ابهام بشپړ مانا ورکړي.
+- A statement is a sentence that is either true or false. || بیان ایسی جملہ ہے جو یا تو درست ہو یا غلط۔ || بیان هغه جمله ده چې یا سمه وي یا غلطه.
+- The word variable means a quantity that can vary or change. || لفظ متغیر کا مطلب ہے ایسی مقدار جو بدل سکے۔ || د متحول کلمه یعنې هغه مقدار چې بدلېدای شي.
+- A constant is a number without a variable. || مستقل وہ عدد ہے جس کے ساتھ متغیر نہ ہو۔ || ثابت هغه عدد دی چې متحول ورسره نه وي.
+- In an algebraic expression, the terms whose variables as well as the exponents of those variables are the same are called like terms. || الجبری عبارت میں وہ ارکان جن کے متغیرات اور ان کی قوت نما ایک جیسی ہوں یکساں ارکان کہلاتے ہیں۔ || په الجبري افاده کې هغه حدونه چې متحولونه او توانونه یې یو شان وي ورته حدونه بلل کېږي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Number pattern || عددی نمونہ || عددي بېلګه
+- Term-to-term rule || رکن سے رکن کا قاعدہ || له حد څخه حد ته قاعده
+- Algebra || الجبرا || الجبر
+- Arithmetic || حساب || حساب
+- Variable || متغیر || متحول
+- Algebraic expression || الجبری عبارت || الجبري افاده
+- Expression || عبارت || افاده
+- Exponent || قوت نما || توان
+- Operator || عامل || عملګر
+- Constant || مستقل || ثابت
+- Coefficient || ضارب || ضریب
+endbox

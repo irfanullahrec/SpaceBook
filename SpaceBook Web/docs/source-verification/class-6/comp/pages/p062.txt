@@ -1,0 +1,39 @@
+@printed 58
+@status lesson
+### Example 4: || مثال 4: || بېلګه 4:
+p A person intends to change a flat wheel of a car, following algorithm will be used for this purpose. || ایک شخص گاڑی کا پنکچر پہیا بدلنا چاہتا ہے؛ اس کے لیے یہ الگورتھم استعمال ہوگا۔ || یو کس غواړي د موټر پنچر ټایر بدل کړي؛ دا الګوریتم به وکاروي.
+svg Algorithm to change a flat wheel: 1 Take a spanner and loosen the nuts → 2 Adjust the jack in appropriate place → 3 Raise the car → 4 Loose nuts properly and take off the wheel → 5 Change the wheel → 6 Lower the car → 7 Tight the wheel nuts properly. || پنکچر پہیا بدلنے کا الگورتھم: 1 رینچ سے نٹ ڈھیلے کریں ← 2 جیک مناسب جگہ لگائیں ← 3 گاڑی اٹھائیں ← 4 نٹ کھول کر پہیا اتاریں ← 5 پہیا بدلیں ← 6 گاڑی نیچے کریں ← 7 نٹ اچھی طرح کس دیں۔ || د پنچر ټایر بدلولو الګوریتم: 1 مېخونه سست کړئ ← 2 جیک کېږدئ ← 3 موټر پورته کړئ ← 4 مېخونه خلاص او ټایر لرې کړئ ← 5 ټایر بدل کړئ ← 6 موټر ښکته کړئ ← 7 مېخونه ټینګ کړئ.
+<svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10" role="img" aria-label="Change a flat wheel algorithm">
+<g fill="#fff" stroke-width="6"><circle cx="50" cy="55" r="42" stroke="#7e22ce"/><circle cx="130" cy="125" r="42" stroke="#9d174d"/><circle cx="210" cy="55" r="42" stroke="#db2777"/><circle cx="290" cy="125" r="42" stroke="#ea580c"/><circle cx="370" cy="55" r="42" stroke="#f97316"/><circle cx="450" cy="125" r="42" stroke="#ca8a04"/><circle cx="520" cy="55" r="36" stroke="#1e3a8a"/></g>
+<g fill="#1e293b" font-weight="bold" text-anchor="middle">
+<text x="50" y="48">Take a spanner</text><text x="50" y="60">and loosen the</text><text x="50" y="72">nuts</text>
+<text x="130" y="118">Adjust the jack</text><text x="130" y="130">in appropriate</text><text x="130" y="142">place</text>
+<text x="210" y="58">Raise the car</text>
+<text x="290" y="112">Loose nuts</text><text x="290" y="124">properly and</text><text x="290" y="136">take off the</text><text x="290" y="148">wheel</text>
+<text x="370" y="52">Change</text><text x="370" y="64">the wheel</text>
+<text x="450" y="122">Lower the</text><text x="450" y="134">car</text>
+<text x="520" y="48">Tight the</text><text x="520" y="60">wheel nuts</text><text x="520" y="72">properly</text></g>
+<g fill="#1e293b" font-size="18" font-weight="bold" text-anchor="middle"><text x="50" y="115">1</text><text x="130" y="72">2</text><text x="210" y="115">3</text><text x="290" y="72">4</text><text x="370" y="115">5</text><text x="450" y="72">6</text><text x="520" y="110">7</text></g>
+</svg>
+endsvg
+@issue Steps 4 and 7 read "Loose nuts properly" and "Tight the wheel nuts" — the intended verbs are "Loosen" and "Tighten". Recorded as printed.
+## 3.2.4 Solution Constructs || 3.2.4 حل کی ساختیں || 3.2.4 د حل جوړښتونه
+p For algorithmic solution of a problem, normally the steps are followed in sequence however, sometimes the sequence needs to be changed. For this purpose the following constructs are used: || کسی مسئلے کے الگورتھمی حل میں عام طور پر مراحل ترتیب سے کیے جاتے ہیں، تاہم بعض اوقات ترتیب بدلنی پڑتی ہے۔ اس کے لیے یہ ساختیں استعمال ہوتی ہیں: || د ستونزې په الګوریتمي حل کې معمولاً ګامونه په ترتیب سره کېږي، خو ځینې وخت ترتیب بدلول اړین وي؛ د دې لپاره دا جوړښتونه کارېږي:
+### a. Conditional Statement || الف۔ مشروط بیان || الف. شرطي بیان
+p If we look around our daily life, algorithms are part of it. One aspect of this is the use of conditional statement (*IF-THEN* process) and it is always linked with some goal attainment. We always assess some situation or behavior and take decision accordingly. || اگر ہم اپنی روزمرہ زندگی پر نظر ڈالیں تو الگورتھم اس کا حصہ ہیں۔ اس کا ایک پہلو مشروط بیان (*IF-THEN* یعنی اگر-تو کا عمل) ہے جو ہمیشہ کسی مقصد کے حصول سے جڑا ہوتا ہے۔ ہم کسی صورتِ حال یا رویّے کا جائزہ لے کر اس کے مطابق فیصلہ کرتے ہیں۔ || که خپل ورځني ژوند ته وګورو، الګوریتمونه یې برخه دي. یو اړخ یې شرطي بیان (*IF-THEN*، که–نو) دی چې تل له یوې موخې سره تړلی وي. موږ حالت ارزوو او پرېکړه کوو.
+example Example 5 | IF-THEN || اگر-تو || که–نو
+p If today is Monday, then yesterday was Sunday. || اگر آج پیر ہے تو کل (گزرا ہوا) اتوار تھا۔ || که نن دوشنبه وي، نو پرون یکشنبه وه.
+p In this example, the situation assessed is the day and decision is about yesterday. || اس مثال میں جس صورتِ حال کا جائزہ لیا گیا وہ دن ہے اور فیصلہ گزرے ہوئے کل کے بارے میں ہے۔ || په دې بېلګه کې ارزول شوی حالت ورځ ده او پرېکړه د پرون په اړه ده.
+svg Days of the week: Saturday, Sunday (shaded green — yesterday), Monday (marked "Today"), Tuesday, Wednesday, Thursday, Friday. || ہفتے کے دن: اتوار (کل) سبز، پیر (آج)۔ || د اونۍ ورځې: یکشنبه (پرون) شنه، دوشنبه (نن).
+<svg viewBox="0 0 520 90" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Days of the week">
+<g fill="none" stroke="#16a34a" stroke-width="2"><rect x="10" y="40" width="64" height="44" rx="8"/><rect x="82" y="40" width="64" height="44" rx="8" fill="#4ade80"/><rect x="154" y="40" width="64" height="44" rx="8" fill="#ccfbf1"/><rect x="226" y="40" width="64" height="44" rx="8"/><rect x="298" y="40" width="64" height="44" rx="8"/><rect x="370" y="40" width="64" height="44" rx="8"/><rect x="442" y="40" width="64" height="44" rx="8"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="42" y="34">Saturday</text><text x="114" y="34">Sunday</text><text x="186" y="34">Monday</text><text x="258" y="34">Tuesday</text><text x="330" y="34">Wednesday</text><text x="402" y="34">Thursday</text><text x="474" y="34">Friday</text></g>
+<text x="186" y="16" text-anchor="middle" fill="#0284c7" font-weight="bold" font-size="14">Today</text>
+</svg>
+endsvg
+endexample
+example Example 6 | Arranging letters || حروف کو ترتیب دینا || د تورو ترتیب
+p **Situation:** Arrange the list of random letters into Ascending Order. || **صورتِ حال:** بے ترتیب حروف کی فہرست کو صعودی (چڑھتی) ترتیب میں لگائیں۔ || **حالت:** ګډوډ توري په صعودي ترتیب کېږدئ.
+p **Input:** List of letters || **ان پٹ:** حروف کی فہرست || **ننوت:** د تورو لېست
+p **Process:** Performs specified operations on the input, these operations normally depend on your logic towards a solution. || **عمل:** ان پٹ پر مخصوص کارروائیاں کرتا ہے؛ یہ کارروائیاں عام طور پر حل کی طرف آپ کی منطق پر منحصر ہوتی ہیں۔ || **بهیر:** پر ننوت ټاکلي عملیات کوي چې ستاسو په منطق پورې اړه لري.
+@issue The Input line is printed as "Input: Input: List of letters" with the label repeated.

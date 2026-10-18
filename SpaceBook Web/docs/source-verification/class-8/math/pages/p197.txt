@@ -1,0 +1,34 @@
+@printed 189
+@issue The text prints "the equality sign will be reversed" (for inequality sign) in Example 5 and in the Teaching Point; Exercise 8.7 Q1 b) prints "4x <− 8"; kept as printed.
+example 5
+p Solve: $-3x + 1 < 7$. || حل کریں: $-3x + 1 < 7$۔ || حل کړئ: $-3x + 1 < 7$.
+## Solution: || حل: || حل:
+p First isolate the variable. || پہلے متغیر کو الگ کریں۔ || لومړی متغیر جلا کړئ.
+p Subtract 1 from both sides || دونوں اطراف سے 1 تفریق کریں || له دواړو خواوو 1 کم کړئ
+m $-3x + 1 - 1 < 7 - 1$
+m $-3x < 6$
+p Divide both sides by −3. || دونوں اطراف کو −3 سے تقسیم کریں۔ || دواړه خواوې پر −3 ووېشئ.
+m $\frac{-3x}{-3} > \frac{6}{-3}$
+p (as we divided by a negative number, the equality sign will be reversed) || (چونکہ ہم نے منفی عدد سے تقسیم کیا، اس لیے علامت الٹ جائے گی) || (څرنګه چې پر منفي عدد مو ووېشله، نښه به سرچپه شي)
+m $x > -2$
+p So, $x > -2$ is the solution for this inequality. We can say that the solution of this inequality is "all the numbers greater than −2". || لہٰذا $x > -2$ اس عدم مساوات کا حل ہے۔ ہم کہہ سکتے ہیں کہ اس عدم مساوات کا حل "−2 سے بڑے تمام اعداد" ہیں۔ || نو $x > -2$ د دې نابرابرۍ حل دی. ویلی شو چې د دې نابرابرۍ حل "له −2 څخه لوی ټول عددونه" دي.
+p Let's show this solution on a number line. || آئیے یہ حل عددی خط پر دکھائیں۔ || راځئ دا حل د عددونو پر کرښه وښیو.
+nline -10..10 | circ=-2 | top=-2:10:x > −2 || x > −2 on the number line || عددی خط پر x > −2 || د عددونو پر کرښه x > −2
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Multiplying or dividing an inequality by a negative value changes the direction of the inequality. || عدم مساوات کو منفی قیمت سے ضرب یا تقسیم کرنے سے عدم مساوات کی سمت بدل جاتی ہے۔ || د نابرابرۍ په منفي ارزښت ضربول یا وېشل د نابرابرۍ لوری بدلوي.
+endbox
+exercise 8.7
+q 1 | Solve the following linear inequalities. Also represent the solution on a number line. || درج ذیل خطی عدم مساواتیں حل کریں۔ حل کو عددی خط پر بھی ظاہر کریں۔ || لاندې خطي نابرابرۍ حل کړئ. حل د عددونو پر کرښه هم وښایاست.
+qp a | $-3x - 2 > 8$
+qp b | $4x < -8$
+qp c | $6x - 2 > 12$
+qp d | $7x + 3 < 2$
+qp e | $8x > 16$
+qp f | $2(x + 2) > 10$
+qp g | $5x - 2 < 8$
+qp h | $-5x > 15$
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Tell them that like equations, adding and subtracting the same number on both side of the inequality does not change the inequality. Similarly multiplying and dividing by a positive number does not change the inequality. But when we multiply or divide the inequality by a negative number, the equality sign will be reversed. || انہیں بتائیں کہ مساواتوں کی طرح عدم مساوات کے دونوں اطراف ایک ہی عدد جمع یا تفریق کرنے سے عدم مساوات نہیں بدلتی۔ اسی طرح مثبت عدد سے ضرب یا تقسیم کرنے سے عدم مساوات نہیں بدلتی۔ لیکن جب ہم عدم مساوات کو منفی عدد سے ضرب یا تقسیم کریں تو علامت الٹ جاتی ہے۔ || ورته ووایاست چې د معادلو په څېر، د نابرابرۍ دواړو خواوو ته د یوه عدد جمع یا تفریق کول نابرابري نه بدلوي. همدارنګه په مثبت عدد ضربول یا وېشل نابرابري نه بدلوي. خو کله چې نابرابري په منفي عدد ضرب یا ووېشو، نښه سرچپه کېږي.
+endbox

@@ -1,0 +1,48 @@
+@printed 210
+@issue The three-squares figure (squares of side 5cm, 3cm and 4cm on the sides of triangle ABC) is recreated as a schematic. The sentence "With the help of the Pythagoras theorem, we can find the length..." is printed twice (before Example 1 and before Example 2); kept as printed.
+m Area of square with length 4cm $=$ 4cm $\times$ 4cm $=$ 16cm²
+m Area of square with length 3cm $=$ 3cm $\times$ 3cm $=$ 9cm²
+p It is clear from the above result that: || اوپر کے نتیجے سے واضح ہے کہ: || له پورتنۍ پایلې څرګنده ده چې:
+m $25\text{cm}^2 = 16\text{cm}^2 + 9\text{cm}^2$
+m $(\overline{AC})^2 = (\overline{AB})^2 + (\overline{BC})^2$
+m $(\text{Hypotenuse})^2 = (\text{Base})^2 + (\text{Altitude})^2$
+svg Squares on the three sides of a 3-4-5 triangle || 3-4-5 مثلث کی تینوں اطراف پر مربع || د 3-4-5 مثلث پر دریو ضلعو مربعې
+<svg viewBox="0 0 250 250" width="250" role="img" aria-label="Right triangle ABC with a 4 cm by 4 cm square below the base AB, a 3 cm by 3 cm square to the right of BC, and a tilted 5 cm by 5 cm square on the hypotenuse AC" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#0f172a">
+<polygon points="60,150 140,150 140,90" fill="#fff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="60" y="150" width="80" height="80" fill="#7dd3fc" stroke="#0f172a"/>
+<rect x="140" y="90" width="60" height="60" fill="#818cf8" stroke="#0f172a"/>
+<polygon points="60,150 140,90 92,26 12,86" fill="#f9a8d4" stroke="#0f172a"/>
+<text x="50" y="154" font-weight="700">A</text><text x="144" y="162" font-weight="700">B</text><text x="144" y="86" font-weight="700">C</text>
+<text x="98" y="146">c 4cm</text><text x="128" y="124">a</text><text x="104" y="122">b</text>
+<text x="156" y="124">3cm</text><text x="100" y="196">4cm</text><text transform="translate(96 66) rotate(-37)">5cm</text>
+</svg>
+endsvg
+p With the help of the Pythagoras theorem, we can find the length of any side of a right angled triangle when we have the length of other two sides. || مسئلہ فیثاغورث کی مدد سے ہم قائمہ زاویہ مثلث کی کسی بھی طرف کی لمبائی معلوم کر سکتے ہیں جب ہمارے پاس باقی دو اطراف کی لمبائی ہو۔ || د فیثاغورث د قضیې په مرسته د قایمې زاویې مثلث د هرې ضلعې اوږدوالی موندلی شو کله چې د نورو دوو ضلعو اوږدوالی ولرو.
+example 1
+p Find the length of $\overline{YZ}$ in the given figure. || دی گئی شکل میں $\overline{YZ}$ کی لمبائی معلوم کریں۔ || په ورکړل شوي شکل کې د $\overline{YZ}$ اوږدوالی ومومئ.
+rtri X,Y,Z | base=5cm | alt=x | hyp=13cm
+## Solution: || حل: || حل:
+p According to the Pythagoras theorem, || مسئلہ فیثاغورث کے مطابق، || د فیثاغورث د قضیې له مخې،
+m $(\overline{XZ})^2 = (\overline{XY})^2 + (\overline{YZ})^2$
+m $(13\text{cm})^2 = (5\text{cm})^2 + (x)^2$
+m $169\text{cm}^2 = 25\text{cm}^2 + x^2$
+m $\Rightarrow x^2 = 169\text{cm}^2 - 25\text{cm}^2 = 144\text{cm}^2$
+p Taking square root on both sides, we get || دونوں اطراف کا جذر المربع لینے سے ہمیں ملتا ہے || د دواړو خواوو مربع جذر په اخیستلو لاسته راځي
+m $\sqrt{x^2} = \sqrt{144\text{cm}^2}$
+m $\Rightarrow x = 12\text{cm}$
+m Hence, $\overline{YZ} = 12$cm
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Draw a right angled △ PQR whose hypotenuse $\overline{PR}$ = 5cm, $\overline{PQ}$ = 3cm, $\overline{QR}$ = 4cm and ∠Q=90°. Prove Pythagoras theorem is also true for this triangle. || ایک قائمہ زاویہ △ PQR بنائیں جس کا وتر $\overline{PR}$ = 5cm، $\overline{PQ}$ = 3cm، $\overline{QR}$ = 4cm اور ∠Q=90° ہو۔ ثابت کریں کہ مسئلہ فیثاغورث اس مثلث کے لیے بھی درست ہے۔ || د قایمې زاویې △ PQR رسم کړئ چې وتر یې $\overline{PR}$ = 5cm، $\overline{PQ}$ = 3cm، $\overline{QR}$ = 4cm او ∠Q=90° وي. ثابته کړئ چې د فیثاغورث قضیه د دې مثلث لپاره هم سمه ده.
+endbox
+p With the help of the Pythagoras theorem, we can find the length of any side of a right angled triangle when we have the length of other two sides.. || مسئلہ فیثاغورث کی مدد سے ہم قائمہ زاویہ مثلث کی کسی بھی طرف کی لمبائی معلوم کر سکتے ہیں جب ہمارے پاس باقی دو اطراف کی لمبائی ہو۔ || د فیثاغورث د قضیې په مرسته د قایمې زاویې مثلث د هرې ضلعې اوږدوالی موندلی شو کله چې د نورو دوو ضلعو اوږدوالی ولرو.
+example 2
+p Find the length of $\overline{BC}$ in the given figure. || دی گئی شکل میں $\overline{BC}$ کی لمبائی معلوم کریں۔ || په ورکړل شوي شکل کې د $\overline{BC}$ اوږدوالی ومومئ.
+rtri B,C,A | base=x | alt=24cm | hyp=25cm
+## Solution: || حل: || حل:
+p According to the Pythagoras theorem: || مسئلہ فیثاغورث کے مطابق: || د فیثاغورث د قضیې له مخې:
+m $(\overline{AC})^2 = (\overline{AB})^2 + (\overline{BC})^2$
+m $(25\text{cm})^2 = (24\text{cm})^2 + (x)^2$
+m $625\text{cm}^2 = 576\text{cm}^2 + x^2$
+m $\Rightarrow x^2 = 625\text{cm}^2 - 576\text{cm}^2$
+m $\Rightarrow x^2 = 49\text{cm}^2$

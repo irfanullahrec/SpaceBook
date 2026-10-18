@@ -1,0 +1,19 @@
+@printed 243
+@issue Exercise 10.1 Q4 gives five figures (rotated shapes ABC/A′B′C′, NOPQ/N′O′P′Q′, GHIJ/G′H′I′J′, a brown rectangle ABCD and a green rectangle ABCD with images); their gridlines and vertices are too small and faint to read reliably, so they are not recreated and the vertex coordinates are not guessed. Figure 1 shows a triangle ABC in the upper right with a pink image A′B′C′ below the x-axis; figure 2 a yellow rectangle PQNO and a blue rectangle N′O′P′Q′; figure 3 two quadrilaterals G…J and G′…J′ on a grid up to y = 14; figure 4 brown and green rectangles with labelled corners A–D.
+@issue The right half of the shaded oval prints "If a shape is enlarged, it is similar to the original shape. Similar shapes are the same shape but not the same size."; Example 1's grid is faint with labels A(2,1), B(3,1), C(2,3), C(1,0). The original triangle is drawn from those labels.
+q 4 | Find the center of rotation for the following figures. || درج ذیل اشکال کے لیے گردش کا مرکز معلوم کریں۔ || د لاندې شکلونو لپاره د څرخېدو مرکز ومومئ.
+endexercise
+@sec 10.2 | Enlargement || بڑا کرنا || لویول
+# 10.2 Enlargement || 10.2 بڑا کرنا || 10.2 لویول
+p We know that a transformation is a way of changing the size or position of a shape or object. Enlargement is a type of transformation where the shape of the objects remains the same but the size increases. || ہم جانتے ہیں کہ تبدیلی کسی شکل یا چیز کا سائز یا مقام بدلنے کا ایک طریقہ ہے۔ بڑا کرنا ایک قسم کی تبدیلی ہے جس میں اشیاء کی شکل وہی رہتی ہے لیکن سائز بڑھ جاتا ہے۔ || موږ پوهېږو چې بدلون د یوه شکل یا شي د اندازې یا ځای د بدلولو یوه طریقه ده. لویول د بدلون یو ډول دی چې پکې د شیانو شکل همغسې پاتې کېږي خو اندازه لوېږي.
+box info | Similar shapes || ملتی جلتی اشکال || ورته شکلونه
+p If a shape is enlarged, it is similar to the original shape. Similar shapes are the same shape but not the same size. || اگر کسی شکل کو بڑا کیا جائے تو وہ اصل شکل کے مماثل ہوتی ہے۔ مماثل اشکال کی شکل ایک جیسی لیکن سائز مختلف ہوتا ہے۔ || که یو شکل لوی شي، د اصلي شکل ورته وي. ورته شکلونه یو شان شکل خو بېله اندازه لري.
+endbox
+p For enlargement of a figure, we need the center of enlargement and the scale factor for the enlargement. The scale factor describes the size of an enlargement. For example, a scale factor of 3 means that the new shape is three times the size of the original one. || کسی شکل کو بڑا کرنے کے لیے ہمیں بڑا کرنے کا مرکز اور بڑا کرنے کے لیے پیمانے کا جزو درکار ہوتا ہے۔ پیمانے کا جزو بڑا کرنے کے سائز کو بیان کرتا ہے۔ مثال کے طور پر پیمانے کا جزو 3 کا مطلب ہے کہ نئی شکل اصل شکل سے تین گنا بڑی ہے۔ || د یوه شکل د لویولو لپاره موږ د لویولو مرکز او د لویولو پیمانې ضریب ته اړتیا لرو. د پیمانې ضریب د لویولو اندازه بیانوي. د بېلګې په توګه د 3 پیمانې ضریب معنا دا ده چې نوی شکل د اصلي درېیمه برخه ډېر لوی دی.
+## 10.2.1 Enlargement of a Shape || 10.2.1 کسی شکل کو بڑا کرنا || 10.2.1 د یوه شکل لویول
+p Let's learn how to enlarge a shape. || آئیے سیکھیں کہ کسی شکل کو کیسے بڑا کیا جاتا ہے۔ || راځئ زده کړو چې یو شکل څنګه لوی کړو.
+example 1
+p Enlarge the given triangle by a scale factor of 3 about the centre of enlargement (1, 0). || دیے گئے مثلث کو بڑا کریں پیمانے کے جزو 3 کے ساتھ، بڑا کرنے کا مرکز (1, 0) ہے۔ || ورکړل شوی مثلث د 3 پیمانې ضریب سره لوی کړئ، د لویولو مرکز (1, 0) دی.
+## Solution: || حل: || حل:
+p **Step 1:** Identify and note the coordinates of the shape to be enlarged. || **مرحلہ 1:** بڑا کی جانے والی شکل کے محددات پہچانیں اور لکھیں۔ || **لومړی ګام:** د لویېدونکي شکل کوارډینېټونه وپېژنئ او ولیکئ.
+plane x=0..9 | y=0..6 | step=1 | segs=2,1,3,1;3,1,2,3;2,3,2,1 | pts=1,0:C (1, 0);2,1:A (2, 1);3,1:B (3, 1);2,3:C (2, 3) | noarrows

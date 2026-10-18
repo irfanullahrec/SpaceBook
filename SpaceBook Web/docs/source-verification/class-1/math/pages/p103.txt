@@ -1,0 +1,12 @@
+@printed 99
+@issue Coin values read from designs (small dark gold pentagon Rs 5; large silver Rs 2; small silver Re 1). In the Rs. 20 row two groups (middle and right) both make Rs 20; both are given as correct.
+q 3 | One 50-rupees note = ( __ ) 10-rupees notes || پچاس روپے کا ایک نوٹ = ( __ ) دس روپے کے نوٹ || د پنځوسو روپیو یو نوټ = ( __ ) د لسو روپیو نوټونه
+cnt note50:1 "→" note10:5/3 || 50 rupees note and 10 rupees notes || پچاس روپے کا نوٹ اور دس روپے کے نوٹ || د پنځوسو روپیو نوټ او د لسو روپیو نوټونه
+sol 5 ## 10 + 10 + 10 + 10 + 10 = 50 || ۱۰ + ۱۰ + ۱۰ + ۱۰ + ۱۰ = ۵۰ || ۱۰ + ۱۰ + ۱۰ + ۱۰ + ۱۰ = ۵۰
+p Tick (✓) the group with the correct amount. || درست رقم والے گروہ پر (✓) کا نشان لگائیں۔ || په هغه ډله (✓) ولګوئ چې سمې پیسې لري.
+q 4 | Rs. 30 || ۳۰ روپے || ۳۰ روپۍ
+cnt coin5:7/3 frame [] | note20:1 note10:1 frame [] | coin5:6/3 coin2:2 coin1:1 frame [] || Group A: 7 × Rs 5; Group B: Rs 20 note + Rs 10 note; Group C: 6 × Rs 5 + 2 × Rs 2 + 1 × Re 1 || گروہ A: ۷ × ۵؛ گروہ B: ۲۰ کا نوٹ + ۱۰ کا نوٹ؛ گروہ C: ۶ × ۵ + ۲ × ۲ + ۱ × ۱ || ډله A: ۷ × ۵؛ ډله B: د ۲۰ نوټ + د ۱۰ نوټ؛ ډله C: ۶ × ۵ + ۲ × ۲ + ۱ × ۱
+sol Tick group B (20 + 10 = 30). Group A = 35 and group C = 35. ## Add each group and compare with Rs 30. || ہر گروہ جمع کریں اور ۳۰ روپے سے موازنہ کریں۔ || هره ډله جمع کړئ او له ۳۰ روپیو سره یې پرتله کړئ.
+q 5 | Rs. 20 || ۲۰ روپے || ۲۰ روپۍ
+cnt coin5:3 coin2:2 coin1:2 frame [] | note10:1 coin5:1 coin2:2 coin1:1 frame [] | coin2:8/4 coin1:4 frame [] || Group A: 3 × Rs 5 + 2 × Rs 2 + 2 × Re 1; Group B: Rs 10 note + Rs 5 + 2 × Rs 2 + Re 1; Group C: 8 × Rs 2 + 4 × Re 1 || گروہ A: ۳ × ۵ + ۲ × ۲ + ۲ × ۱؛ گروہ B: ۱۰ کا نوٹ + ۵ + ۲ × ۲ + ۱؛ گروہ C: ۸ × ۲ + ۴ × ۱ || ډله A: ۳ × ۵ + ۲ × ۲ + ۲ × ۱؛ ډله B: د ۱۰ نوټ + ۵ + ۲ × ۲ + ۱؛ ډله C: ۸ × ۲ + ۴ × ۱
+sol Tick groups B and C. B: 10 + 5 + 4 + 1 = 20; C: 16 + 4 = 20. Group A = 15 + 4 + 2 = 21. ## Add each group and compare with Rs 20. || ہر گروہ جمع کریں اور ۲۰ روپے سے موازنہ کریں۔ || هره ډله جمع کړئ او له ۲۰ روپیو سره یې پرتله کړئ.

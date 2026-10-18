@@ -1,0 +1,30 @@
+@printed 73
+@status lesson
+@sec 4-exercise | Exercise || مشق || تمرین
+@tab exercise
+# Exercise || مشق || تمرین
+exercise Unit 4 Exercise
+## Multiple choice questions: || کثیر الانتخابی سوالات: || څو ځوابه پوښتنې:
+q 1 | The computer program interacts with user via ____. a. Input b. Output c. Process d. Software || کمپیوٹر پروگرام صارف سے ____ کے ذریعے رابطہ کرتا ہے: (الف) ان پٹ (ب) آؤٹ پٹ (ج) عمل (د) سافٹ ویئر || پروګرام له کارن سره د ____ له لارې اړیکه نیسي: (الف) ننوت (ب) وتون (ج) بهیر (د) سافټویر
+sol a. Input ## "The program interacts with the user for some input." || پروگرام صارف سے ان پٹ لیتا ہے۔ || پروګرام له کارن ننوت اخلي.
+q 2 | Background is selected from ____ of the screen. a. Upper Right Corner b. Bottom Right Corner c. Upper Left Corner d. Bottom Left Corner || بیک گراؤنڈ اسکرین کے ____ سے منتخب ہوتا ہے: (الف) اوپر دایاں کونا (ب) نیچے دایاں کونا (ج) اوپر بایاں کونا (د) نیچے بایاں کونا || شالید د پردې له ____ ټاکل کېږي: (الف) پورته ښي (ب) ښکته ښي (ج) پورته کیڼ (د) ښکته کیڼ کونج
+sol b. Bottom Right Corner ## || نیچے دایاں کونا || ښکته ښي کونج
+q 3 | To move the Pico sprite 10 spaces to the left from top-right corner of the Stage, ____ block will be used. a. change x by 10 b. set x to 10 c. set x to -10 d. change x by -10 || پیکو اسپرائٹ کو اسٹیج کے اوپر دائیں کونے سے 10 خانے بائیں لے جانے کے لیے ____ بلاک استعمال ہوگا: (الف) change x by 10 (ب) set x to 10 (ج) set x to -10 (د) change x by -10 || Pico سپرایټ له پورته ښي کونجه 10 ځایه کیڼ لوري ته وړلو لپاره ____ بلاک کارېږي.
+sol d. change x by -10 ## Moving left decreases x by 10 from wherever the sprite is; "set x" would jump to a fixed position instead. || بائیں جانے سے x میں 10 کمی ہوتی ہے۔ || کیڼ لوري ته تګ x لس کموي.
+q 4 | Program is written at ____: a. Design Time b. Planning Time c. Implementation Time d. Analysis Time || پروگرام ____ میں لکھا جاتا ہے: (الف) ڈیزائن ٹائم (ب) منصوبہ بندی (ج) نفاذ کا وقت (د) تجزیے کا وقت || پروګرام په ____ کې لیکل کېږي: (الف) ډیزاین (ب) پلان (ج) پلي کولو وخت (د) تحلیل
+sol c. Implementation Time ## || نفاذ کا وقت || د پلي کولو وخت
+q 5 | ____ is the actual working space where you can drag and drop Code Blocks that are to be executed. a. Block Palette b. Backdrop c. Programming Area d. Stage || ____ وہ اصل جگہ ہے جہاں چلائے جانے والے کوڈ بلاکس گھسیٹ کر رکھے جاتے ہیں: (الف) بلاک پیلیٹ (ب) بیک ڈراپ (ج) پروگرامنگ ایریا (د) اسٹیج || ____ هغه ځای دی چې د اجرا بلاکونه پکې کش کېږي: (الف) بلاک پالټ (ب) شالید (ج) پروګرامي سیمه (د) سټېج
+sol c. Programming Area ## || پروگرامنگ ایریا || پروګرامي سیمه
+## Short response questions: || مختصر جوابی سوالات: || لنډ ځوابه پوښتنې:
+q 1 | What is programming language? List few programming languages. || پروگرامنگ زبان کیا ہے؟ چند پروگرامنگ زبانوں کے نام لکھیں۔ || پروګرامي ژبه څه ده؟ څو پروګرامي ژبې ولیکئ.
+sol A programming language is a set of commands (keywords and grammatical structure/syntax) understandable to computers, used to develop computer programs and solve problems. Examples: Python, JavaScript, Ruby, HTML, C++, Java, Scratch. ## || کمپیوٹر کے سمجھنے کے قابل احکامات کا مجموعہ؛ مثالیں: پائتھن، جاوا اسکرپٹ، سی پلس پلس، جاوا، اسکریچ۔ || د کمپیوټر د پوهېدو وړ امرونه؛ بېلګې: پایتون، جاوا سکرېپټ، C++، جاوا، سکرېچ.
+q 2 | Interpret the meaning of different colors of Code Blocks in Scratch. || اسکریچ میں کوڈ بلاکس کے مختلف رنگوں کا مطلب بیان کریں۔ || په سکرېچ کې د بلاکونو د رنګونو مانا ووایاست.
+sol Each colour shows the block's category, so you can tell its purpose at a glance: blue = Motion, purple = Looks, pink/magenta = Sound, yellow = Events, light orange = Control (loops, if-then, wait), light blue = Sensing, green = Operators, dark orange = Variables, red/pink = My Blocks. ## || ہر رنگ بلاک کی کیٹیگری بتاتا ہے: نیلا حرکت، جامنی شکل، پیلا ایونٹس، نارنجی کنٹرول، سبز آپریٹرز، گہرا نارنجی ویری ایبل۔ || هر رنګ کټګوري ښيي: شین خوځښت، بنفش بڼه، ژېړ پېښې، نارنجي کنټرول، زرغون عملیات، تور نارنجي متغیرونه.
+q 3 | How do you create a loop in Scratch? || اسکریچ میں لوپ کیسے بنایا جاتا ہے؟ || په سکرېچ کې لوپ څنګه جوړېږي؟
+sol Open the Control category and drag a loop block — "repeat (10)", "repeat until ⟨ ⟩" or "forever" — into the Programming Area; then drag the blocks to be repeated (e.g. "move 10 steps", "wait 1 secs") inside its mouth, set the count or condition, and attach it under an event such as "when green flag clicked". ## || کنٹرول سے repeat/repeat until/forever بلاک لائیں، دہرائے جانے والے بلاک اس کے اندر رکھیں اور ایونٹ کے نیچے جوڑیں۔ || له Control څخه repeat یا forever بلاک راوړئ، تکرارېدونکي بلاکونه پکې کېږدئ او له پېښې سره یې ونښلوئ.
+q 4 | List down the components of Scratch interface. || اسکریچ انٹرفیس کے اجزا لکھیں۔ || د سکرېچ انټرفېس برخې ولیکئ.
+sol Block Categories, Block Palette (Code Blocks), Programming (Script) Area, Stage (display area), Background/Backdrop, Sprites, Sprite Properties, and Tutorials (menu bar). ## || بلاک کیٹیگریز، بلاک پیلیٹ، پروگرامنگ ایریا، اسٹیج، بیک گراؤنڈ، اسپرائٹس، اسپرائٹ پراپرٹیز، ٹیوٹوریلز۔ || کټګورۍ، پالټ، پروګرامي سیمه، سټېج، شالید، سپرایټونه، ځانګړنې، لارښود.
+q 5 | What is the output of the following block-of-code: [ when this sprite clicked → forever { go to x: (-10) y: (-10) · glide (5) secs to x: (10) y: (10) · wait (0.5) secs } ] || درج ذیل کوڈ کا آؤٹ پٹ کیا ہے؟ [ when this sprite clicked → forever { go to x: -10 y: -10 · glide 5 secs to x: 10 y: 10 · wait 0.5 secs } ] || د دې کوډ وتون څه دی؟
+sol When the sprite is clicked it jumps to (-10, -10), glides diagonally to (10, 10) over 5 seconds, waits half a second, then jumps back to (-10, -10) and repeats — sliding along the same diagonal path again and again forever (until the program is stopped). ## || کلک پر اسپرائٹ (-10,-10) پر جا کر 5 سیکنڈ میں (10,10) تک پھسلتا، آدھا سیکنڈ رکتا اور یہ عمل ہمیشہ دہراتا رہتا ہے۔ || په کلیک سپرایټ (-10,-10) ته ځي، په 5 ثانیو (10,10) ته ښوییږي، نیمه ثانیه دمه کوي او دا تل تکراروي.
+@issue The coordinates in the printed code block for Q5 are blurred (they read as -10/-10 and 10/10 but may be -100/100); the behaviour described in the answer is the same either way.
+endexercise

@@ -1,0 +1,66 @@
+@printed 154
+@issue The exponents in the first Quick Check are very small; re-read from a 260-dpi KPTBB render: a) (3⁴)⁶ and c) (7⁴)⁴ are clear; b) [(3/4)⁴]¹ and d) [(−2/4)⁴]¹ remain uncertain (d's inner exponent may be 4 or 6). Needs checking against a clean copy. The general form prints "(aᵐ)ⁿ = aᵐˣⁿ = aᵐⁿ".
+## 3) Power Law || 3) قوت کا قانون || 3) د توان قانون
+p This law explains how to solve an expression involving multiple powers (exponents). || یہ قانون بتاتا ہے کہ متعدد قوتوں (قوت نماؤں) والی عبارت کو کیسے حل کیا جائے۔ || دا قانون تشریح کوي چې د څو توانونو لرونکې افاده څنګه حل کړو.
+example 1
+p Simplify the expression $(5^2)^3$. || عبارت $(5^2)^3$ کو مختصر کریں۔ || $(5^2)^3$ افاده ساده کړئ.
+p First we consider $5^2$ as the base with exponent 3. || پہلے ہم $5^2$ کو قوت نما 3 کے ساتھ اساس سمجھتے ہیں۔ || لومړی $5^2$ د 3 توان سره قاعده ګڼو.
+## Solution: || حل: || حل:
+m $(5^2)^3 = 5^2 \times 5^2 \times 5^2$
+m $(5^2)^3 = 5^{2+2+2}$ (applying product law)
+m $(5^2)^3 = 5^6$
+m We can note that $(5^2)^3 = 5^6 = 5^{2 \times 3}$
+p It shows that if a number has two or more exponents (powers), we multiply the powers together while keeping the same base. || یہ ظاہر کرتا ہے کہ اگر کسی عدد کے دو یا زیادہ قوت نما (قوتیں) ہوں تو ہم اساس کو برقرار رکھتے ہوئے قوتوں کو آپس میں ضرب دیتے ہیں۔ || دا ښيي چې که یو عدد دوه یا ډېر توانونه ولري، قاعده ثابته ساتو او توانونه سره ضربوو.
+endexample
+example 2
+p Simplify $\left[\left(\frac{-1}{3}\right)^2\right]^2$ || $\left[\left(\frac{-1}{3}\right)^2\right]^2$ کو مختصر کریں || $\left[\left(\frac{-1}{3}\right)^2\right]^2$ ساده کړئ
+## Solution: || حل: || حل:
+m $\left[\left(\frac{-1}{3}\right)^2\right]^2 = \left(\frac{-1}{3}\right)^{2 \times 2}$
+m $= \left(\frac{-1}{3}\right)^4$
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Power law || قوت کا قانون || د توان قانون
+p *If a is any rational number and m, n ∈ Z, then* $(a^m)^n = a^{m \times n} = a^{mn}$ || *اگر a کوئی ناطق عدد ہو اور m، n ∈ Z تو* $(a^m)^n = a^{m \times n} = a^{mn}$ || *که a هر ناطق عدد وي او m، n ∈ Z، نو* $(a^m)^n = a^{m \times n} = a^{mn}$
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Solve: || حل کریں: || حل یې کړئ:
+qp a | $(3^4)^6$
+qp b | $\left[\left(\frac{3}{4}\right)^4\right]^1$
+qp c | $(7^4)^4$
+qp d | $\left[\left(\frac{-2}{4}\right)^4\right]^1$
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p When multiplying two numbers **m** and **n**, **m × n** is same as **m.n** or **mn**. || دو اعداد **m** اور **n** کو ضرب دیتے وقت **m × n** وہی ہے جو **m.n** یا **mn** ہے۔ || کله چې دوه عددونه **m** او **n** ضربوو، **m × n** له **m.n** یا **mn** سره یو شی دی.
+endbox
+## 4) Zero Exponent Law || 4) صفر قوت نما کا قانون || 4) د صفر توان قانون
+example 1
+p Divide $2^4$ by $2^4$. || $2^4$ کو $2^4$ سے تقسیم کریں۔ || $2^4$ پر $2^4$ ووېشئ.
+## Solution: || حل: || حل:
+m $2^4 \div 2^4 = (2 \times 2 \times 2 \times 2) \div (2 \times 2 \times 2 \times 2)$
+m $= \frac{(2 \times 2 \times 2 \times 2)}{(2 \times 2 \times 2 \times 2)}$
+m $= 1$
+m But according to quotient law, $2^4 \div 2^4 = 2^{4-4} = 2^0$
+m So, we can see that $2^0 = 1$.
+p So, we observed that a number having 0 as its exponent is always equal to 1. || لہٰذا ہم نے دیکھا کہ جس عدد کا قوت نما 0 ہو وہ ہمیشہ 1 کے برابر ہوتا ہے۔ || نو مو ولیدل چې هغه عدد چې توان یې 0 وي تل له 1 سره برابر وي.
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Zero exponent law || صفر قوت نما کا قانون || د صفر توان قانون
+p *If a is any non-zero rational number, then* $a^0 = 1$. || *اگر a کوئی غیر صفر ناطق عدد ہو تو* $a^0 = 1$۔ || *که a هر غیر صفري ناطق عدد وي، نو* $a^0 = 1$.
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the value of the following. || درج ذیل کی قیمت معلوم کریں۔ || د لاندې ارزښت معلوم کړئ.
+qp a | $101^0$
+qp b | $2^0$
+qp c | $\left(\frac{22}{9}\right)^0$
+qp d | $(1)^0$
+qp e | $100^0$
+qp f | $5^4 \div 5^4$
+endbox
+## 5) Negative Exponent Law || 5) منفی قوت نما کا قانون || 5) د منفي توان قانون
+example 1
+p Divide $3^3$ by $3^5$. || $3^3$ کو $3^5$ سے تقسیم کریں۔ || $3^3$ پر $3^5$ ووېشئ.
+## Solution: || حل: || حل:
+m $3^3 \div 3^5 = \frac{(3 \times 3 \times 3)}{(3 \times 3 \times 3 \times 3 \times 3)}$
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write the examples of power law, zero exponent law and negative exponent law on the board. Now call the students one by one and ask them to solve the questions using the laws. || بورڈ پر قوت کے قانون، صفر قوت نما کے قانون اور منفی قوت نما کے قانون کی مثالیں لکھیں۔ اب طلبہ کو ایک ایک کر کے بلائیں اور ان سے قوانین کی مدد سے سوالات حل کرنے کو کہیں۔ || پر تخته د توان قانون، د صفر توان قانون او د منفي توان قانون بېلګې ولیکئ. اوس زده کوونکي یو یو راوبولئ او ورته ووایاست چې د قوانینو په مرسته پوښتنې حل کړي.
+endbox

@@ -1,0 +1,40 @@
+@printed 90
+@issue Exercise 5.1 has no closing marker on page 89; it is closed here before section 5.2.
+endexercise
+@sec 5.2 | Some Common Sets || چند عام سیٹ || ځینې عام سېټونه
+# 5.2 Some Common Sets || 5.2 چند عام سیٹ || 5.2 ځینې عام سېټونه
+p We have studied sets, types of sets and operations on sets in the previous classes. We have also learnt to represent basic operations on sets with the help of Venn diagrams. Let us define some common sets. || ہم پچھلی جماعتوں میں سیٹ، سیٹ کی اقسام اور سیٹوں پر عملیات پڑھ چکے ہیں۔ ہم نے وین ڈایاگرام کی مدد سے سیٹوں پر بنیادی عملیات ظاہر کرنا بھی سیکھا ہے۔ آئیے کچھ عام سیٹوں کی تعریف کریں۔ || په تېرو ټولګیو کې مو سېټونه، د سېټونو ډولونه او پر سېټونو عملیات لوستي. همدارنګه مو د وین ډیاګرامونو په مرسته پر سېټونو د بنسټیزو عملیاتو ښودل زده کړي. راځئ ځینې عام سېټونه تعریف کړو.
+table
+th | Sets | Description
+tr | i. N = {1, 2, 3, 4, 5, ...} | Set of natural numbers
+tr | ii. W = {0, 1, 2, 3, 4, 5, ...} | Set of whole numbers
+tr | iii. Z = {0, ± 1, ± 2, ± 3,...} | Set of integers
+tr | iv. Z⁺ = {+1,+2,+3,+4,+5...} | Set of positive integers
+tr | v. Z⁻ = {−1,−2,−3,−4,−5,...} | Set of negative integers
+tr | vi. E = {0, ± 2, ±4, ±6, ±8, ±10, ...} | Set of even numbers
+tr | vii. O = {±1, ±3, ±5, ±7, ±9,...} | Set of odd numbers
+tr | viii. P = {2, 3, 5, 7, 11, ...} | Set of prime numbers
+endtable
+p All the above sets are infinite sets. The set of integers Z can be separated into three sets; || اوپر کے تمام سیٹ لامحدود سیٹ ہیں۔ صحیح اعداد کے سیٹ Z کو تین سیٹوں میں تقسیم کیا جا سکتا ہے؛ || پورته ټول سېټونه بې پایه سېټونه دي. د تامو عددونو سېټ Z په دریو سېټونو وېشل کېدای شي؛
+m i. Z⁺ = {+1, +2, +3, +4, +5, ............}
+m ii. Z⁻ = {−1, −2, −3, −4, −5, ......}
+m iii. Singleton set zero = {0}
+p Another set is the set of rational numbers. || ایک اور سیٹ ناطق اعداد کا سیٹ ہے۔ || بل سېټ د ناطقو عددونو سېټ دی.
+m Q = $\{\frac{p}{q} \mid p \in Z, q \in Z \wedge q \neq 0\}$
+p Can you list some elements of this set? || کیا آپ اس سیٹ کے کچھ ارکان کی فہرست بنا سکتے ہیں؟ || ایا د دې سېټ ځینې عناصر لېست کولی شئ؟
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The numbers which can be written in the form of $\frac{p}{q}$ where p and q are integers and $q \neq 0$ are known as rational numbers, other wise, they are called irrational numbers. || وہ اعداد جو $\frac{p}{q}$ کی صورت میں لکھے جا سکیں جہاں p اور q صحیح اعداد ہوں اور $q \neq 0$، ناطق اعداد کہلاتے ہیں، ورنہ انہیں غیر ناطق اعداد کہتے ہیں۔ || هغه عددونه چې د $\frac{p}{q}$ په بڼه لیکل کېدای شي چې p او q تام عددونه وي او $q \neq 0$، ناطق عددونه بلل کېږي، که نه غیر ناطق عددونه بلل کېږي.
+endbox
+## 5.2.1 Subset of a Set || 5.2.1 کسی سیٹ کا ذیلی سیٹ || 5.2.1 د یوه سېټ فرعي سېټ
+p We know that a set A is called a subset of B if every element of A is also an element of B. We write A ⊆ B. If A is not a subset of a set B, we write A ⊄ B. || ہم جانتے ہیں کہ سیٹ A، B کا ذیلی سیٹ کہلاتا ہے اگر A کا ہر رکن B کا بھی رکن ہو۔ ہم A ⊆ B لکھتے ہیں۔ اگر A، سیٹ B کا ذیلی سیٹ نہ ہو تو ہم A ⊄ B لکھتے ہیں۔ || موږ پوهېږو چې A سېټ د B فرعي سېټ بلل کېږي که د A هر عنصر د B عنصر هم وي. A ⊆ B لیکو. که A د B سېټ فرعي سېټ نه وي، A ⊄ B لیکو.
+example 1
+p Find at least three subsets of B = {2, 3, 5, 7, 9} || B = {2, 3, 5, 7, 9} کے کم از کم تین ذیلی سیٹ معلوم کریں || د B = {2, 3, 5, 7, 9} لږ تر لږه درې فرعي سېټونه ومومئ
+## Solution: || حل: || حل:
+m A = {2, 3, 5}. is a subset of B
+m F = {3, 7, 9} is also a subset of B
+m Another subset of B is D = {2, 5, 7, 9}.
+endexample
+p Subsets can be divided into proper and improper subsets. || ذیلی سیٹوں کو واجب اور غیر واجب ذیلی سیٹوں میں تقسیم کیا جا سکتا ہے۔ || فرعي سېټونه په واجبو او ناواجبو فرعي سېټونو وېشل کېدای شي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the set and subset of a set by giving different examples. Instruct each of them to write a set of your own choice and write two subsets of set. || مختلف مثالیں دے کر سیٹ اور سیٹ کا ذیلی سیٹ سمجھائیں۔ ہر ایک کو ہدایت دیں کہ اپنی پسند کا ایک سیٹ لکھیں اور اس سیٹ کے دو ذیلی سیٹ لکھیں۔ || د بېلابېلو بېلګو په ورکولو سره سېټ او د سېټ فرعي سېټ تشریح کړئ. هر یوه ته ووایاست چې د خپلې خوښې یو سېټ ولیکي او د هغه دوه فرعي سېټونه ولیکي.
+endbox

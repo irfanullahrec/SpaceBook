@@ -1,0 +1,19 @@
+@printed 119
+@deco Clock faces without hands for Q4; cartoon boy with a speech bubble; picture of a boy sleeping in bed.
+q 4 | Draw hour, minute and second hands according to the given time. || دیے گئے وقت کے مطابق گھنٹے، منٹ اور سیکنڈ کی سوئیاں بنائیں۔ || د ورکړل شوي وخت سره سم د ساعت، دقیقې او ثانیې ستنې رسم کړئ.
+qp a | 2:15:30
+qp b | 6:25:03
+qp c | 10:22:55
+qp d | 8:20:01
+qp e | 12:42:16
+qp f | 9:11:31
+frow clock - | 2:15:30 ;; clock - | 6:25:03 ;; clock - | 10:22:55 ;; clock - | 8:20:01 ;; clock - | 12:42:16 ;; clock - | 9:11:31 || Six clock faces without hands for Question 4 || سوال 4 کے لیے بغیر سوئیوں کی چھ گھڑیاں || د 4 پوښتنې لپاره بې ستنو شپږ ساعتونه
+// The book does not letter the six clocks; parts a-f follow the printed reading order.
+endexercise
+@sec convtime | Conversion of Hours, Minutes and Seconds || گھنٹوں، منٹوں اور سیکنڈوں کی تبدیلی || د ساعتونو، دقیقو او ثانیو بدلون
+# Conversion of Hours, Minutes and Seconds || گھنٹوں، منٹوں اور سیکنڈوں کی تبدیلی || د ساعتونو، دقیقو او ثانیو بدلون
+## Conversion of Hours to Minutes || گھنٹوں کو منٹوں میں بدلنا || د ساعتونو بدلول په دقیقو
+p In a day, eight hours of sleep is essential for good health. Can we convert this time into minutes? || اچھی صحت کے لیے دن میں آٹھ گھنٹے کی نیند ضروری ہے۔ کیا ہم اس وقت کو منٹوں میں بدل سکتے ہیں؟ || د ښې روغتیا لپاره په ورځ کې اته ساعته خوب اړین دی. ایا دا وخت په دقیقو بدلولی شو؟
+p Since, there are 60 minutes in an hour, therefore to convert hours to minutes, we multiply hours by 60. || چونکہ ایک گھنٹے میں 60 منٹ ہوتے ہیں، اس لیے گھنٹوں کو منٹوں میں بدلنے کے لیے ہم گھنٹوں کو 60 سے ضرب دیتے ہیں۔ || څرنګه چې په یوه ساعت کې 60 دقیقې وي، نو د ساعتونو د دقیقو بدلولو لپاره ساعتونه په 60 کې ضربوو.
+eq \begin{aligned} 8 \text{ h} &= 8 \times 60 \text{ min} \\ &= 480 \text{ min} \end{aligned}
+p There are 480 minutes in 8 hours. || 8 گھنٹوں میں 480 منٹ ہوتے ہیں۔ || په 8 ساعتونو کې 480 دقیقې وي.

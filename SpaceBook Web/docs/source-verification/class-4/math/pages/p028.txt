@@ -1,0 +1,31 @@
+@printed 30
+@sec patterns | Patterns || نمونے (پیٹرن) || بېلګې (نمونې)
+@deco Cartoon boy with glasses and a speech bubble; photograph of letter beads spelling "WORD"; cartoon girl with a magnifying glass beside "Key Fact".
+# Patterns || نمونے (پیٹرن) || بېلګې (نمونې)
+p Abrar learns a few new words with meanings every week. In the first week, he learns 3 words. In the second week, he learns 5 words, in the third week, 7 words, in the fourth week, 9 words and in the fifth week, he learns 11 words. If he keeps on learning new words like this, find the number of words, he would learn in the sixth week? || ابرار ہر ہفتے معانی کے ساتھ چند نئے الفاظ سیکھتا ہے۔ پہلے ہفتے وہ 3 الفاظ سیکھتا ہے۔ دوسرے ہفتے 5 الفاظ، تیسرے ہفتے 7 الفاظ، چوتھے ہفتے 9 الفاظ اور پانچویں ہفتے 11 الفاظ سیکھتا ہے۔ اگر وہ اسی طرح نئے الفاظ سیکھتا رہے تو معلوم کریں کہ چھٹے ہفتے وہ کتنے الفاظ سیکھے گا؟ || ابرار هره اونۍ له معنا سره یو څو نوي لغتونه زده کوي. په لومړۍ اونۍ کې 3 لغتونه زده کوي. په دوهمه اونۍ کې 5 لغتونه، په درېیمه اونۍ کې 7، په څلورمه اونۍ کې 9 او په پنځمه اونۍ کې 11 لغتونه زده کوي. که همداسې نوي لغتونه زده کوي، معلوم کړئ چې په شپږمه اونۍ کې به څو لغتونه زده کړي؟
+p Write in order all the number of words that he learnt: || اس نے جتنے الفاظ سیکھے ان کی تعداد ترتیب سے لکھیں: || هغه چې څومره لغتونه زده کړل، د هغو شمېر په ترتیب ولیکئ:
+m 3, 5, 7, 9, 11, ____
+p Now identify the rule in this order. || اب اس ترتیب کا اصول پہچانیں۔ || اوس د دې ترتیب قاعده وپېژنئ.
+svg Jumps of +2 from 3 to 5, 7, 9, 11 and the unknown next term. || 3 سے 5، 7، 9، 11 اور اگلے نامعلوم رکن تک +2 کی چھلانگیں۔ || له 3 څخه 5، 7، 9، 11 او راتلونکي نامعلوم حد ته د +2 ټوپونه.
+<svg viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="16" text-anchor="middle">
+<g fill="#0f172a"><text x="30" y="22">3</text><text x="102" y="22">5</text><text x="174" y="22">7</text><text x="246" y="22">9</text><text x="318" y="22">11</text><text x="390" y="22">?</text></g>
+<g fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M32 34 Q66 90 100 34"/><path d="M104 34 Q138 90 172 34"/><path d="M176 34 Q210 90 244 34"/><path d="M248 34 Q282 90 316 34"/><path d="M320 34 Q354 90 388 34"/></g>
+<g fill="#1d4ed8" font-size="14"><text x="66" y="100">+2</text><text x="138" y="100">+2</text><text x="210" y="100">+2</text><text x="282" y="100">+2</text><text x="354" y="100">+2</text></g>
+</svg>
+endsvg
+svg The completed pattern: 3, 5, 7, 9, 11, 13 (add 2 each time). || مکمل نمونہ: 3، 5، 7، 9، 11، 13 (ہر بار 2 جمع)۔ || بشپړه بېلګه: 3، 5، 7، 9، 11، 13 (هر ځل 2 جمع).
+<svg viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="16" text-anchor="middle">
+<g fill="#0f172a"><text x="30" y="22">3</text><text x="102" y="22">5</text><text x="174" y="22">7</text><text x="246" y="22">9</text><text x="318" y="22">11</text><text x="390" y="22">13</text></g>
+<g fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M32 34 Q66 90 100 34"/><path d="M104 34 Q138 90 172 34"/><path d="M176 34 Q210 90 244 34"/><path d="M248 34 Q282 90 316 34"/><path d="M320 34 Q354 90 388 34"/></g>
+<g fill="#1d4ed8" font-size="14"><text x="66" y="100">+2</text><text x="138" y="100">+2</text><text x="210" y="100">+2</text><text x="282" y="100">+2</text><text x="354" y="100">+2</text></g>
+</svg>
+endsvg
+p He would learn 13 words in sixth week. || وہ چھٹے ہفتے 13 الفاظ سیکھے گا۔ || هغه به په شپږمه اونۍ کې 13 لغتونه زده کړي.
+p Abrar is learning with a special order. Here the rule is "adding 2", means that to get the next term, we add 2 in the previous term. This sequence is known as an arithmetic sequence. || ابرار ایک خاص ترتیب سے سیکھ رہا ہے۔ یہاں اصول "2 جمع کرنا" ہے، یعنی اگلا رکن حاصل کرنے کے لیے ہم پچھلے رکن میں 2 جمع کرتے ہیں۔ یہ ترتیب حسابی ترتیب (arithmetic sequence) کہلاتی ہے۔ || ابرار په یو ځانګړي ترتیب زده کړه کوي. دلته قاعده "2 جمع کول" ده، یعنې د راتلونکي حد لپاره مخکیني حد ته 2 ورجمع کوو. دې لړۍ ته حسابي لړۍ (arithmetic sequence) وايي.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Find the next two terms of this sequence. || اس ترتیب کے اگلے دو رکن معلوم کریں۔ || د دې لړۍ راتلونکي دوه حدونه معلوم کړئ.
+m 5, 10, 15, 20, ____, ____
+endbox
+box info | Key Fact || اہم نکتہ || مهم ټکی
+p The rule of number pattern, tell us how one member, or number in this pattern is derived from another member, or number. || عددی نمونے کا اصول ہمیں بتاتا ہے کہ اس نمونے کا ایک رکن یا عدد دوسرے رکن یا عدد سے کیسے حاصل ہوتا ہے۔ || د عددي بېلګې قاعده موږ ته ښيي چې په دې بېلګه کې یو غړی یا عدد له بل غړي یا عدد څخه څنګه لاسته راځي.
+endbox

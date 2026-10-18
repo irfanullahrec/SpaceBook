@@ -1,0 +1,41 @@
+@printed 86
+example 2 | The ratio of Khadija's savings to Maryam's savings is 5 : 3 while the ratio of Maryam's savings to Ayesha's savings is 1 : 4. Find the continued ratio between their savings. || خدیجہ کی بچت اور مریم کی بچت کی نسبت 5 : 3 ہے جبکہ مریم کی بچت اور عائشہ کی بچت کی نسبت 1 : 4 ہے۔ ان کی بچتوں کے درمیان مسلسل نسبت معلوم کریں۔ || د خدیجې د سپما او د مریم د سپما نسبت 5 : 3 دی او د مریم د سپما او د عایشې د سپما نسبت 1 : 4 دی. د هغوی د سپما ترمنځ پرله پسې نسبت معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+m Ratio of Khadija savings to Maryam's savings $= 5 : 3$
+m Ratio of Maryam's savings to Ayesha's savings $= 1 : 4$
+p To find the continued ratio, first we need to find the same value of the common term. For this we can use the following two methods. || مسلسل نسبت معلوم کرنے کے لیے پہلے ہمیں مشترک رکن کی ایک جیسی قیمت معلوم کرنی ہوگی۔ اس کے لیے ہم درج ذیل دو طریقے استعمال کر سکتے ہیں۔ || د پرله پسې نسبت د موندلو لپاره لومړی باید د ګډ حد یو شان ارزښت ومومو. د دې لپاره لاندې دوه طریقې کارولی شو.
+p **Method I:** In this method, multiply both ratios with a suitable number that can make the common term same. || **طریقہ I:** اس طریقے میں دونوں نسبتوں کو کسی موزوں عدد سے ضرب دیں جو مشترک رکن کو ایک جیسا بنا دے۔ || **لومړۍ طریقه:** په دې طریقه کې دواړه نسبتونه په یو مناسب عدد کې ضرب کړئ چې ګډ حد یو شان کړي.
+eq \begin{array}{ccccc} \text{Khadija} & & \text{Maryam} & & \text{Ayesha} \\ 5 \times 1 & : & 3 \times 1 & & \\ & & 1 \times 3 & : & 4 \times 3 \\ \hline 5 & : & 3 & : & 12 \end{array}
+p **Method II:** The product of the first terms of both ratios will become the first term of the continued ratio. The product of the last terms of two ratios will become the last term of the continued ratio. The product of the first term of the second ratio and the second term of the first ratio will become the middle term of the continued ratio. || **طریقہ II:** دونوں نسبتوں کے پہلے ارکان کا حاصلِ ضرب مسلسل نسبت کا پہلا رکن بنے گا۔ دونوں نسبتوں کے آخری ارکان کا حاصلِ ضرب مسلسل نسبت کا آخری رکن بنے گا۔ دوسری نسبت کے پہلے رکن اور پہلی نسبت کے دوسرے رکن کا حاصلِ ضرب مسلسل نسبت کا درمیانی رکن بنے گا۔ || **دوهمه طریقه:** د دواړو نسبتونو د لومړیو حدونو حاصل ضرب به د پرله پسې نسبت لومړی حد شي. د دواړو نسبتونو د وروستیو حدونو حاصل ضرب به د پرله پسې نسبت وروستی حد شي. د دوهم نسبت د لومړي حد او د لومړي نسبت د دوهم حد حاصل ضرب به د پرله پسې نسبت منځنی حد شي.
+svg Method II: cross multiplication (arrows show which terms are multiplied) || طریقہ II: آڑی ضرب (تیر بتاتے ہیں کون سے ارکان ضرب ہوتے ہیں) || دوهمه طریقه: صلیبي ضرب (غشي ښيي چې کوم حدونه ضربېږي)
+<svg viewBox="0 0 330 150" width="330" role="img" aria-label="Method II: Khadija 5 times 1 = 5, Maryam 3 times 1 = 3, Ayesha 3 times 4 = 12; result 5 : 3 : 12" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#0f172a">
+<defs><marker id="m6ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker></defs>
+<text x="45" y="20" text-anchor="middle" font-weight="700">Khadija</text><text x="160" y="20" text-anchor="middle" font-weight="700">Maryam</text><text x="270" y="20" text-anchor="middle" font-weight="700">Ayesha</text>
+<text x="60" y="56">5</text><text x="110" y="56">:</text><text x="160" y="56">3</text>
+<text x="160" y="86">1</text><text x="215" y="86">:</text><text x="265" y="86">4</text>
+<line x1="72" y1="50" x2="152" y2="80" stroke="#334155" marker-end="url(#m6ah)"/>
+<line x1="165" y1="78" x2="165" y2="60" stroke="#334155" marker-end="url(#m6ah)"/>
+<line x1="174" y1="50" x2="256" y2="80" stroke="#334155" marker-end="url(#m6ah)"/>
+<line x1="40" y1="100" x2="300" y2="100" stroke="#0f172a" stroke-width="1.4"/>
+<text x="60" y="126">5</text><text x="110" y="126">:</text><text x="160" y="126">3</text><text x="215" y="126">:</text><text x="265" y="126">12</text>
+<line x1="40" y1="134" x2="300" y2="134" stroke="#0f172a" stroke-width="1.4"/>
+</svg>
+endsvg
+p So, 5 : 3 : 12 is the required continued ratio. || لہٰذا 5 : 3 : 12 مطلوبہ مسلسل نسبت ہے۔ || نو 5 : 3 : 12 مطلوب پرله پسې نسبت دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The ratio between the sides of the triangle are x : y = 3 : 4 and y : z = 6 : 7. Find the ratio x : y : z. || مثلث کے اضلاع کے درمیان نسبتیں x : y = 3 : 4 اور y : z = 6 : 7 ہیں۔ نسبت x : y : z معلوم کریں۔ || د مثلث د ضلعو ترمنځ نسبتونه x : y = 3 : 4 او y : z = 6 : 7 دي. د x : y : z نسبت معلوم کړئ.
+endbox
+p We can also divide a quantity in any given ratio a : b : c. Consider the following example. || ہم کسی مقدار کو کسی بھی دی گئی نسبت a : b : c میں تقسیم کر سکتے ہیں۔ درج ذیل مثال پر غور کریں۔ || موږ کولی شو یو مقدار په هر ورکړل شوي نسبت a : b : c ووېشو. لاندې بېلګې ته پام وکړئ.
+example 3 | Mr Adnan distributed Rs 87000 as charity among three orphanages A, B and C. He shared this amount in the following ratios. || جناب عدنان نے 87000 روپے بطور خیرات تین یتیم خانوں A، B اور C میں تقسیم کیے۔ انہوں نے یہ رقم درج ذیل نسبتوں میں تقسیم کی۔ || ښاغلي عدنان 87000 روپۍ د خیرات په توګه د یتیمانو په دریو ځایونو A، B او C کې ووېشلې. دا پیسې یې په لاندې نسبتونو ووېشلې.
+m $A : B = 4 : 3$
+m $B : C = 2 : 5$
+p Find the share of each orphanage. || ہر یتیم خانے کا حصہ معلوم کریں۔ || د هر یتیمخانې برخه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+m Total amount of charity $=$ Rs 87000
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Write the ratio for the following. || درج ذیل کی نسبت لکھیں۔ || د لاندې نسبت ولیکئ.
+qp a | 50 days, 60 days and 30 days
+qp b | 24 pencils, 15 erasers and 12 sharpeners.
+endbox
+@issue The "Note it down" box on page 86 contains a question (x : y = 3 : 4, y : z = 6 : 7) rather than a note; kept as printed.

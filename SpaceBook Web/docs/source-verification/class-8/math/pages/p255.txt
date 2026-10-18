@@ -1,0 +1,49 @@
+@printed 253
+@issue Exercise 10.4 Q1 asks to draw triangles "if possible" (some side sets, e.g. 2 cm, 8 cm, 5 cm, violate the triangle inequality). Q1 f) prints "PQ = 9 cm, QR = 4 cm, PR = 4 cm"; Q4 b) prints "XY = 2 cm, YZ (Hypotenuse) = 4 cm"; kept as printed. Step iv) prints "Join A with B, B with C, C with D and D with A". The diagram of the square on its diagonal AC (with the perpendicular bisector PQ and circle) is recreated.
+exercise 10.4
+q 1 | Draw the following triangles using a compass and ruler. (if possible) || پرکار اور پیمانے کی مدد سے درج ذیل مثلث بنائیں۔ (اگر ممکن ہو) || د پرکار او پیمانې په کارولو لاندې مثلثونه جوړ کړئ. (که ممکنه وي)
+qp a | $\overline{AB}$ = 4 cm, $\overline{AC}$ = 9 cm, $\overline{BC}$ = 6 cm
+qp b | $\overline{JK}$ = 2 cm, $\overline{KL}$ = 8 cm, $\overline{JL}$ = 5 cm
+qp c | $\overline{XY}$ = 3 cm, $\overline{YZ}$ = 6 cm, $\overline{XZ}$ = 7 cm
+qp d | $\overline{LN}$ = 7 cm, $\overline{LM}$ = 7 cm, $\overline{MN}$ = 8 cm
+qp e | $\overline{DE}$ = 6 cm, $\overline{DF}$ = 8 cm, $\overline{EF}$ = 5 cm
+qp f | $\overline{PQ}$ = 9 cm, $\overline{QR}$ = 4 cm, $\overline{PR}$ = 4 cm
+q 2 | Draw the following triangles using a compass and ruler. || پرکار اور پیمانے کی مدد سے درج ذیل مثلث بنائیں۔ || د پرکار او پیمانې په کارولو لاندې مثلثونه جوړ کړئ.
+qp a | $\overline{GH}$ = 7 cm, $\overline{HI}$ = 5 cm, ∠G = 45°
+qp b | $\overline{XY}$ = 4 cm, $\overline{YZ}$ = 6 cm, ∠Y = 30°
+qp c | ∠M = 30°, $\overline{LM}$ = 8 cm, $\overline{MN}$ = 8 cm
+qp d | $\overline{DE}$ = 9 cm, ∠E = 105°, $\overline{EF}$ = 7 cm
+qp e | ∠P = 15°, $\overline{QR}$ = 4 cm, $\overline{PR}$ = 3 cm
+q 3 | Draw the following triangles using a compass and ruler. || پرکار اور پیمانے کی مدد سے درج ذیل مثلث بنائیں۔ || د پرکار او پیمانې په کارولو لاندې مثلثونه جوړ کړئ.
+qp a | $\overline{AB}$ = 3 cm, ∠A = 45°, ∠B = 30°
+qp b | ∠X = 45°, ∠Y = 75°, $\overline{XZ}$ = 7 cm
+qp c | $\overline{LN}$ = 7 cm, ∠L = 60°, ∠N = 105°
+qp d | ∠E = 15°, ∠F = 105°, $\overline{EF}$ = 5 cm
+qp e | ∠R = 15°, $\overline{QR}$ = 4 cm, ∠Q = 30°
+q 4 | Draw the following right angle triangles using a compass and ruler. || پرکار اور پیمانے کی مدد سے درج ذیل قائمہ زاویہ مثلث بنائیں۔ || د پرکار او پیمانې په کارولو لاندې قایم زاویه مثلثونه جوړ کړئ.
+qp a | $\overline{AB}$ = 4 cm, $\overline{AC}$ (Hypotenuse) = 5 cm
+qp b | $\overline{XY}$ = 2 cm, $\overline{YZ}$ (Hypotenuse) = 4 cm
+qp c | $\overline{LN}$ = 7 cm, $\overline{LM}$ (Hypotenuse) = 9 cm
+qp d | $\overline{DE}$ = 4 cm, $\overline{DF}$ (Hypotenuse) = 6 cm
+qp e | $\overline{PQ}$ = 5 cm, $\overline{QR}$ (Hypotenuse) = 7 cm
+endexercise
+@sec 10.5 | Construction of Square and Rectangle || مربع اور مستطیل کی تعمیر || د مربع او مستطیل جوړول
+# 10.5 Construction of Square and Rectangle || 10.5 مربع اور مستطیل کی تعمیر || 10.5 د مربع او مستطیل جوړول
+## 10.5.1 Construction of Square || 10.5.1 مربع کی تعمیر || 10.5.1 د مربع جوړول
+p In the previous class, you learnt to draw a square when the length of its side was given. Now you will learn the following cases of construction of a square. || پچھلی جماعت میں آپ نے مربع بنانا سیکھا جب اس کی طرف کی لمبائی دی گئی ہو۔ اب آپ مربع کی تعمیر کی درج ذیل صورتیں سیکھیں گے۔ || په تېر ټولګي کې تاسو مربع رسمول زده کړل کله چې د هغې د ضلعې اوږدوالی ورکړل شوی و. اوس به د مربع د جوړولو لاندې حالتونه زده کړئ.
+### Construction of Square When its Diagonal is Given || مربع کی تعمیر جب اس کا وتر دیا گیا ہو || د مربع جوړول کله چې قطر یې ورکړل شي
+p The length of the diagonal of a square is 3.5cm. Construct the square. || ایک مربع کے وتر کی لمبائی 3.5cm ہے۔ مربع بنائیں۔ || د یوه مربع د قطر اوږدوالی 3.5cm دی. مربع جوړ کړئ.
+## Solution: || حل: || حل:
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړولو پړاوونه:**
+qp i | Draw $\overline{AC}$ = 3.5cm. || $\overline{AC}$ = 3.5cm کھینچیں۔ || $\overline{AC}$ = 3.5cm رسم کړئ.
+qp ii | Draw $\overrightarrow{PQ}$ the right bisector of $\overline{AC}$ which cuts $\overline{AC}$ at point M. || $\overline{AC}$ کا عمودی ناصف $\overrightarrow{PQ}$ کھینچیں جو $\overline{AC}$ کو نقطہ M پر کاٹے۔ || د $\overline{AC}$ ښی منصف $\overrightarrow{PQ}$ رسم کړئ چې $\overline{AC}$ په ټکي M کې پرې کړي.
+qp iii | With M as centre, draw a circle with radius $\overline{MA}$ which cuts PQ at points B and D. || M کو مرکز لے کر نصف قطر $\overline{MA}$ کا دائرہ بنائیں جو PQ کو نقاط B اور D پر کاٹے۔ || M د مرکز په توګه واخلئ او د $\overline{MA}$ شعاع دایره رسم کړئ چې PQ په ټکو B او D کې پرې کړي.
+qp iv | Join A with B, B with C, C with D and D with A. Here, ABCD is the required square. || A کو B سے، B کو C سے، C کو D سے اور D کو A سے ملائیں۔ یہاں ABCD مطلوبہ مربع ہے۔ || A له B سره، B له C سره، C له D سره او D له A سره وصل کړئ. دلته ABCD اړین مربع دی.
+svg Square ABCD built on diagonal AC with perpendicular bisector PQ and circle centre M || وتر AC پر مربع ABCD || پر قطر AC مربع ABCD
+<svg viewBox="0 0 200 220" width="200" role="img" aria-label="Diagonal AC horizontal, vertical perpendicular bisector PQ through the midpoint M, a circle of radius MA meeting PQ at B and D, and the square ABCD" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<circle cx="100" cy="110" r="60" fill="none" stroke="#0f172a"/>
+<polygon points="40,110 100,50 160,110 100,170" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="100" y1="14" x2="100" y2="206" stroke="#0f172a"/><line x1="40" y1="110" x2="160" y2="110" stroke="#0f172a"/>
+<text x="100" y="12" text-anchor="middle">P</text><text x="104" y="216">Q</text><text x="26" y="114">A</text><text x="164" y="114">C</text><text x="104" y="48">B</text><text x="104" y="184">D</text><text x="104" y="106" font-weight="400">M</text>
+</svg>
+endsvg

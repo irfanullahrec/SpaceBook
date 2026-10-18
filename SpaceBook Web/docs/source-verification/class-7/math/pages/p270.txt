@@ -1,0 +1,44 @@
+@printed 266
+p **b) P(factor of 12)** || **b) P(12 کا جزوِ ضربی)** || **b) P(د 12 عامل)**
+eq \begin{aligned} \text{Numbers of desired outcomes (factor of 12)} &= 3 \\ \text{Total number of possible outcomes} &= 6 \\ \text{Probability of picking up an even number} &= \dfrac{3}{6} = \dfrac{1}{2} \end{aligned}
+p This shows that the probability of the desired outcome i.e. factors of 12 is $\frac{1}{2}$. The complement of this event will be $P(\text{not factor of 12}) = 1 - \frac{1}{2} = \frac{1}{2}$ || اس سے ظاہر ہوتا ہے کہ مطلوبہ نتیجے یعنی 12 کے اجزائے ضربی کا احتمال $\frac{1}{2}$ ہے۔ اس واقعے کا تکملہ $P(\text{not factor of 12}) = 1 - \frac{1}{2} = \frac{1}{2}$ ہوگا || دا ښيي چې د غوښتل شوې پایلې یعنې د 12 د عاملونو احتمال $\frac{1}{2}$ دی. د دې پېښې متمم به $P(\text{not factor of 12}) = 1 - \frac{1}{2} = \frac{1}{2}$ وي
+@issue The third line says "Probability of picking up an even number" although the event is "factor of 12" (3, 4, 6); kept as printed.
+exercise 13.7
+q 1 | Salma choses a random marble from a bag having 7 blue, 4 green, 4 red and 5 yellow marbles. Find the probability of the following events and tell if any of them is certain, impossible or equally likely. || سلمیٰ ایک تھیلے سے بے ترتیب ایک کنچا چنتی ہے جس میں 7 نیلے، 4 سبز، 4 سرخ اور 5 پیلے کنچے ہیں۔ درج ذیل واقعات کا احتمال معلوم کریں اور بتائیں کہ ان میں سے کوئی یقینی، ناممکن یا یکساں امکان والا ہے۔ || سلمه له یوې کڅوړې په تصادفي ډول یوه ګولۍ ټاکي چې 7 آبي، 4 زرغونې، 4 سرې او 5 ژېړې ګولۍ لري. د لاندې پېښو احتمال پیدا کړئ او ووایئ چې آیا کومه یې یقیني، ناشونې یا مساوي امکان لرونکې ده.
+qp a | P(blue)
+qp b | P(not blue)
+qp c | P(orange)
+qp d | P(marble)
+qp e | P(blue or green)
+q 2 | Use the spinner to find the probability of each event. Also find the complement of each event. || اسپنر استعمال کرتے ہوئے ہر واقعے کا احتمال معلوم کریں۔ ہر واقعے کا تکملہ بھی معلوم کریں۔ || د سپینر په کارولو د هرې پېښې احتمال پیدا کړئ. د هرې پېښې متمم هم پیدا کړئ.
+svg Spinner with 8 equal sectors || 8 برابر حصوں والا اسپنر || د 8 مساوي قطاعونو سپینر
+<svg viewBox="0 0 200 200" width="200" role="img" aria-label="Spinner with 8 equal sectors numbered 3, 2, 6, 3, 2, 4, 5, 1 going clockwise from the top" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a">
+<circle cx="100" cy="100" r="88" fill="#fda4af" stroke="#0f172a" stroke-width="2"/>
+<g stroke="#0f172a" stroke-width="1.6"><line x1="100" y1="12" x2="100" y2="188"/><line x1="12" y1="100" x2="188" y2="100"/><line x1="37.8" y1="37.8" x2="162.2" y2="162.2"/><line x1="162.2" y1="37.8" x2="37.8" y2="162.2"/></g>
+<g font-size="16" font-weight="700" text-anchor="middle"><text x="78" y="45">3</text><text x="122" y="45">2</text><text x="158" y="83">6</text><text x="158" y="128">3</text><text x="122" y="166">2</text><text x="78" y="166">4</text><text x="42" y="128">5</text><text x="42" y="83">1</text></g>
+<polygon points="100,30 94,100 106,100" fill="#0f172a"/><circle cx="100" cy="100" r="5" fill="#0f172a"/>
+</svg>
+endsvg
+qp a | P(<3)
+qp b | P(not 5)
+qp c | P(smaller than 6)
+qp d | P(odd)
+qp e | P(prime)
+qp f | P(even)
+qp g | P(10)
+q 3 | There are 9 buttons in a jar. Sara takes one button randomly without looking at them. Which of these are impossible and which are certain? Also find: || ایک برتن میں 9 بٹن ہیں۔ سارہ بغیر دیکھے بے ترتیب ایک بٹن نکالتی ہے۔ ان میں سے کون سے ناممکن اور کون سے یقینی ہیں؟ یہ بھی معلوم کریں: || په یوه لوښي کې 9 تڼۍ دي. سارا پرته له کتلو په تصادفي ډول یوه تڼۍ اخلي. له دې کومې ناشونې او کومې یقیني دي؟ دا هم پیدا کړئ:
+p a) the probability of the following events. b) the complement of these events. || a) درج ذیل واقعات کا احتمال۔ b) ان واقعات کے تکملے۔ || a) د لاندې پېښو احتمال. b) د دې پېښو متممونه.
+- i. The probability of picking a square button. || i. مربع بٹن اٹھانے کا احتمال۔ || i. د مربع تڼۍ د اخیستلو احتمال.
+- ii. The probability of picking a button. || ii. بٹن اٹھانے کا احتمال۔ || ii. د تڼۍ د اخیستلو احتمال.
+- iii. The probability of NOT picking a button. || iii. بٹن نہ اٹھانے کا احتمال۔ || iii. د تڼۍ د نه اخیستلو احتمال.
+- iv. The probability of picking a circular button. || iv. گول بٹن اٹھانے کا احتمال۔ || iv. د ګردې تڼۍ د اخیستلو احتمال.
+- v. The probability of picking triangular button. || v. مثلثی بٹن اٹھانے کا احتمال۔ || v. د مثلثي تڼۍ د اخیستلو احتمال.
+- vi. The probability of Not picking a rectangular button. || vi. مستطیلی بٹن نہ اٹھانے کا احتمال۔ || vi. د مستطیلي تڼۍ د نه اخیستلو احتمال.
+@deco The picture shows the 9 buttons: 3 square (blue), 3 circular (orange) and 3 triangular (pink).
+q 4 | Madiha randomly picked a number from the set of numbers: 1, 8, 4, 10, 3, 6. Find the probability of each event and describe any impossible or certain event (if any). Also find the compliment of these events. || مدیحہ نے اعداد کے سیٹ 1, 8, 4, 10, 3, 6 میں سے بے ترتیب ایک عدد اٹھایا۔ ہر واقعے کا احتمال معلوم کریں اور کسی ناممکن یا یقینی واقعے (اگر کوئی ہو) کو بیان کریں۔ ان واقعات کے تکملے بھی معلوم کریں۔ || مدیحې د 1, 8, 4, 10, 3, 6 عددونو له سېټ څخه په تصادفي ډول یو عدد واخیست. د هرې پېښې احتمال پیدا کړئ او هره ناشونې یا یقیني پېښه (که وي) بیان کړئ. د دې پېښو متممونه هم پیدا کړئ.
+qp a | P(1-digit)
+qp b | P(multiple of 2)
+qp c | P(9)
+qp d | P(not a number)
+qp e | P(2 digit even number)
+@issue "choses" and "compliment" are printed for "chooses" and "complement".

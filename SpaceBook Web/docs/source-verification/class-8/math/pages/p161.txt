@@ -1,0 +1,55 @@
+@printed 153
+@issue The exponents in both Quick Checks are very small; re-read from a 260-dpi KPTBB render: i) x²⁹ ÷ x¹⁹, ii) a⁴⁹ ÷ a⁴⁴, iii) p⁵⁶ ÷ p⁴³, iv) 2⁹ ÷ 2⁶, v) 4³ ÷ 4⁵; and a) x¹⁹ ÷ y¹⁹, b) a⁴⁹ ÷ b⁴⁹, c) p⁵⁶ ÷ q⁵⁶, d) 2⁹ ÷ 3⁹, e) 4⁵ ÷ 5⁵, f) 4⁶ ÷ 6⁶, g) (1/6)⁵ ÷ (1/7)⁵, h) (3/4)⁹ ÷ (2/3)⁹ (second box confirmed).
+@issue The text says "the exponent 2 of the product 6²" for a quotient; Case II Example 1 says "Divide 2³ by 4³"; kept as printed.
+m $6^5 \div 6^3 = \frac{6 \times 6 \times 6 \times 6 \times 6}{6 \times 6 \times 6}$
+m $= 6 \times 6$
+m $= 6^2$
+p We can observe that the exponent 2 of the product $6^2$ is the difference of the exponents 5 and 3, of $6^5$ and $6^3$. So, we can write $6^5 \div 6^3 = \frac{6^5}{6^3} = 6^{5-3} = 6^2$ || ہم دیکھ سکتے ہیں کہ حاصل $6^2$ کا قوت نما 2، $6^5$ اور $6^3$ کے قوت نماؤں 5 اور 3 کا فرق ہے۔ لہٰذا ہم لکھ سکتے ہیں $6^5 \div 6^3 = \frac{6^5}{6^3} = 6^{5-3} = 6^2$ || موږ لیدلی شو چې د $6^2$ پایلې توان 2 د $6^5$ او $6^3$ د 5 او 3 توانونو توپیر دی. نو لیکلی شو $6^5 \div 6^3 = \frac{6^5}{6^3} = 6^{5-3} = 6^2$
+p When dividing two rational numbers with the same base but different exponents, we subtract the exponent of the denominator from the exponent of the numerator while keeping the base same. || ایک ہی اساس لیکن مختلف قوت نما والے دو ناطق اعداد کو تقسیم کرتے وقت ہم اساس کو برقرار رکھتے ہوئے نسب نما کا قوت نما شمار کنندہ کے قوت نما سے تفریق کرتے ہیں۔ || کله چې د یوې قاعدې خو بېلو توانونو لرونکي دوه ناطق عددونه وېشو، قاعده ثابته ساتو او د مخرج توان د صورت له توان څخه کموو.
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Quotient law (same base) || خارج قسمت کا قانون (ایک اساس) || د خارج قسمت قانون (یوه قاعده)
+p *If a is any non-zero rational number and m, n ∈ Z, then* $a^m \div a^n = a^{m-n}$. || *اگر a کوئی غیر صفر ناطق عدد ہو اور m، n ∈ Z تو* $a^m \div a^n = a^{m-n}$۔ || *که a هر غیر صفري ناطق عدد وي او m، n ∈ Z، نو* $a^m \div a^n = a^{m-n}$.
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Solve: || حل کریں: || حل یې کړئ:
+qp i | $x^{29} \div x^{19}$
+qp ii | $a^{49} \div a^{44}$
+qp iii | $p^{56} \div p^{43}$
+qp iv | $2^9 \div 2^6$
+qp v | $4^3 \div 4^5$
+endbox
+p **Case II: When bases are different but exponents are the same.** || **صورت II: جب اساس مختلف ہوں لیکن قوت نما ایک جیسے ہوں۔** || **دوهم حالت: کله چې قاعدې بېلې وي خو توانونه یو شان وي.**
+example 1
+p Divide $2^3$ by $4^3$. || $2^3$ کو $4^3$ سے تقسیم کریں۔ || $2^3$ پر $4^3$ ووېشئ.
+## Solution: || حل: || حل:
+m $2^3 \div 4^3 = (2 \times 2 \times 2) \div (4 \times 4 \times 4)$
+m $= \frac{2 \times 2 \times 2}{4 \times 4 \times 4}$
+m $= \frac{2}{4} \times \frac{2}{4} \times \frac{2}{4}$
+m $= \frac{2^3}{4^3}$
+m $= \left(\frac{2}{4}\right)^3$
+p We can observe that the quotient of $2^3$ and $4^3$ can be written as the quotient of 2 and 4 with the same exponent 3. || ہم دیکھ سکتے ہیں کہ $2^3$ اور $4^3$ کا خارج قسمت ایک ہی قوت نما 3 کے ساتھ 2 اور 4 کے خارج قسمت کے طور پر لکھا جا سکتا ہے۔ || موږ لیدلی شو چې د $2^3$ او $4^3$ خارج قسمت د یو شان توان 3 سره د 2 او 4 د خارج قسمت په توګه لیکل کېدای شي.
+endexample
+example 2
+m $\left(\frac{1}{4}\right)^3 \div \left(\frac{2}{5}\right)^3$
+## Solution: || حل: || حل:
+m $\left(\frac{1}{4}\right)^3 \div \left(\frac{2}{5}\right)^3 = \left(\frac{1}{4} \times \frac{1}{4} \times \frac{1}{4}\right) \div \left(\frac{2}{5} \times \frac{2}{5} \times \frac{2}{5}\right)$
+m $= \left(\frac{1}{4} \div \frac{2}{5}\right) \times \left(\frac{1}{4} \div \frac{2}{5}\right) \times \left(\frac{1}{4} \div \frac{2}{5}\right)$
+m $= \left(\frac{1}{4} \div \frac{2}{5}\right)^3$
+p So, we observed that when dividing two rational numbers with the same exponents but different bases, we can write it as the quotient of the bases with the common exponent. || لہٰذا ہم نے دیکھا کہ ایک جیسے قوت نما لیکن مختلف اساس والے دو ناطق اعداد کو تقسیم کرتے وقت ہم اسے مشترک قوت نما کے ساتھ اساسوں کے خارج قسمت کے طور پر لکھ سکتے ہیں۔ || نو مو ولیدل چې کله د یو شان توانونو خو بېلو قاعدو لرونکي دوه ناطق عددونه وېشو، دا د ګډ توان سره د قاعدو د خارج قسمت په توګه لیکلی شو.
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Quotient law (same exponent) || خارج قسمت کا قانون (ایک قوت نما) || د خارج قسمت قانون (یو توان)
+p *If a and b are any two rational numbers and m ∈ Z, then* $a^m \div b^m = (a \div b)^m$. || *اگر a اور b کوئی دو ناطق اعداد ہوں اور m ∈ Z تو* $a^m \div b^m = (a \div b)^m$۔ || *که a او b هر دوه ناطق عددونه وي او m ∈ Z، نو* $a^m \div b^m = (a \div b)^m$.
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Apply the quotient law and find the value of the following. || خارج قسمت کا قانون لاگو کریں اور درج ذیل کی قیمت معلوم کریں۔ || د خارج قسمت قانون پلي کړئ او د لاندې ارزښت ومومئ.
+qp a | $x^{19} \div y^{19}$
+qp b | $a^{49} \div b^{49}$
+qp c | $p^{56} \div q^{56}$
+qp d | $2^9 \div 3^9$
+qp e | $4^5 \div 5^5$
+qp f | $4^6 \div 6^6$
+qp g | $\left(\frac{1}{6}\right)^5 \div \left(\frac{1}{7}\right)^5$
+qp h | $\left(\frac{3}{4}\right)^9 \div \left(\frac{2}{3}\right)^9$
+endbox

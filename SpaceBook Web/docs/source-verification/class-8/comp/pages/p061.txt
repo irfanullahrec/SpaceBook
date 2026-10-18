@@ -1,0 +1,13 @@
+@printed 57
+@deco Two maze pictures captioned "Game execution" (left: Pico inside the maze with a red Finish arrow at the top; right: Pico at the top with the speech bubble "You Won!"). Two Scratch scripts (if touching Arrow then broadcast Next Level; when I receive Next Level, next costume). A framed "Activity" box with a pond picture of pink stones, labelled FINISH and START.
+p A broadcast message is used to activate scripts in other sprites. On the other hand, in the new map we need to place a 'when I receive' hat. This way, new map is activated and 'Pico' is moved to the starting spot through a 'go to' script. || براڈکاسٹ پیغام دوسرے اسپرائٹس میں اسکرپٹس کو فعال کرنے کے لیے استعمال ہوتا ہے۔ دوسری طرف نئے نقشے میں ہمیں 'when I receive' ہیٹ بلاک رکھنا ہوگا۔ اس طرح نیا نقشہ فعال ہو جاتا ہے اور 'Pico' کو go to اسکرپٹ کے ذریعے ابتدائی مقام پر پہنچا دیا جاتا ہے۔ || براډکاسټ پیغام په نورو سپرایټونو کې د سکریپټونو د فعالولو لپاره کارول کېږي. بل خوا په نوې نقشه کې موږ باید یو 'when I receive' هټ بلاک کېږدو. په دې ډول نوې نقشه فعاله کېږي او 'Pico' د go to سکریپټ په مرسته پیل ځای ته لېږدول کېږي.
+- Our game, just upgraded to a multi-level game. Henceforth, we can add more levels and have fun. || ہمارا گیم ابھی ایک ملٹی لیول گیم میں اپ گریڈ ہوا ہے۔ اب ہم مزید لیولز شامل کر سکتے ہیں اور لطف اٹھا سکتے ہیں۔ || زموږ لوبه اوس د څو کچې لوبې ته لوړه شوې. له دې وروسته موږ کولای شو نورې کچې اضافه کړو او خوند واخلو.
+box code | Scratch scripts — Next level || سکریچ اسکرپٹس — اگلا لیول || سکریچ سکریپټونه — راتلونکې کچه
+m if <touching [Arrow] ?> then
+m     broadcast [Next Level]
+m when I receive [Next Level]
+m next costume
+endbox
+box activity | Activity || سرگرمی || فعالیت
+p In the maze above, write code block so that the sprite jumps over the stones in the water pond to reach Finish spot. || اوپر دی گئی بھول بھلیاں میں کوڈ بلاک لکھیں تاکہ اسپرائٹ پانی کے تالاب میں پتھروں پر سے چھلانگ لگا کر Finish مقام تک پہنچ سکے۔ || په پورته ګډوډ لار کې داسې کوډ بلاک ولیکئ چې سپرایټ د اوبو په حوض کې له ډبرو څخه ټوپ ووهي او Finish ځای ته ورسېږي.
+endbox

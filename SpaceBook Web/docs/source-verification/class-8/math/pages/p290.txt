@@ -1,0 +1,32 @@
+@printed 288
+@issue The left edge of the scan is cropped: the section number and the first letters of the lines are cut ("3.3 Frequency Polygon", "requency", "quencies", "e joined", "ample 1", "e following"); the section is restored as 11.3.3 Frequency Polygon and the text from the visible words. The example text says "50 people" but the printed frequencies 18, 15, 20, 25 and 22 add to 100; both are kept as printed. The table of class intervals starts with the extra class 130–139 and ends with 190–199 (frequency 0 each) as the solution describes.
+endexample
+@sec 11.3.3 | Frequency Polygon || تعدد کثیر الاضلاع || فریکونسي کثیر الاضلاع
+## 11.3.3 Frequency Polygon || 11.3.3 تعدد کثیر الاضلاع || 11.3.3 فریکونسي کثیر الاضلاع
+p Frequency Polygon is a multi-sided closed figure. It is constructed by plotting the class frequencies against their corresponding class marks (mid-points). Then the points obtained are joined through straight lines. || تعدد کثیر الاضلاع ایک کثیر الاضلاع بند شکل ہے۔ یہ جماعتی تعدد کو ان کے متعلقہ جماعتی نشانات (وسطی نقاط) کے مقابل نقطہ بنا کر بنایا جاتا ہے۔ پھر حاصل ہونے والے نقاط کو سیدھی لکیروں سے ملایا جاتا ہے۔ || فریکونسي کثیر الاضلاع یوه څو ضلعي تړلې بڼه ده. دا د ټولګي فریکونسۍ د هغوی د اړوندو ټولګي نښو (منځنیو ټکو) پر وړاندې په ټکو ایښودو سره جوړېږي. بیا ترلاسه شوي ټکي په مستقیمو کرښو سره وصل کېږي.
+example 1
+p The following data shows the height of 50 people (in cm). Make a Frequency polygon for the data. || درج ذیل ڈیٹا 50 افراد کے قد (سینٹی میٹر میں) ظاہر کرتا ہے۔ ڈیٹا کے لیے تعدد کثیر الاضلاع بنائیں۔ || لاندې معلومات د ۵۰ کسانو قدونه (په سانتي مترو کې) ښيي. د معلوماتو لپاره فریکونسي کثیر الاضلاع جوړ کړئ.
+table Heights of people || لوگوں کے قد || د خلکو قدونه
+th | Height in (cm) | No. of People
+tr | 140 - 149 | 18
+tr | 150 - 159 | 15
+tr | 160 - 169 | 20
+tr | 170 - 179 | 25
+tr | 180 - 189 | 22
+endtable
+## Solution: || حل: || حل:
+- First find the class boundaries of each interval. || پہلے ہر وقفے کی جماعتی حدود معلوم کریں۔ || لومړی د هر وقفې د ټولګي پولې پیدا کړئ.
+- Add two extra classes, one before 140 and one after 189 of same width but with 0 frequency. || دو اضافی جماعتیں شامل کریں، ایک 140 سے پہلے اور ایک 189 کے بعد، اسی چوڑائی کی مگر صفر تعدد کے ساتھ۔ || دوه اضافي ټولګي زیات کړئ، یو له 140 مخکې او یو له 189 وروسته، په همدې پلنوالي خو د صفر فریکونسي سره.
+- Find the mid-point (or class marks) for each class. || ہر جماعت کا وسطی نقطہ (یا جماعتی نشان) معلوم کریں۔ || د هر ټولګي منځنی ټکی (یا د ټولګي نښه) پیدا کړئ.
+table Class intervals, boundaries, mid-points and frequencies || جماعتی وقفے، حدود، وسطی نقاط اور تعدد || د ټولګي وقفې، پولې، منځني ټکي او فریکونسۍ
+th | Class Intervals | Class Boundaries | Mid-Point | Frequency
+tr | 130 - 139 | 129.5 - 139.5 | 134.5 | 0
+tr | 140 - 149 | 139.5 - 149.5 | 144.5 | 18
+tr | 150 - 159 | 149.5 - 159.5 | 154.5 | 15
+tr | 160 - 169 | 159.5 - 169.5 | 164.5 | 20
+tr | 170 - 179 | 169.5 - 179.5 | 174.5 | 25
+tr | 180 - 189 | 179.5 - 189.5 | 184.5 | 22
+tr | 190 - 199 | 189.5 - 199.5 | 194.5 | 0
+endtable
+- Mark mid-points (class marks) along x-axis and frequency along y-axis using appropriate scale. || وسطی نقاط (جماعتی نشانات) کو x-محور پر اور تعدد کو y-محور پر مناسب پیمانے کے ساتھ نشان زد کریں۔ || منځني ټکي (د ټولګي نښې) پر x-محور او فریکونسي پر y-محور په مناسب پیمانه سره په نښه کړئ.
+- Plot all the mid-points (class marks) against the corresponding frequencies. || تمام وسطی نقاط (جماعتی نشانات) کو ان کے متعلقہ تعدد کے مقابل نقطہ بنائیں۔ || ټول منځني ټکي (د ټولګي نښې) د اړوندو فریکونسیو پر وړاندې ولګوئ.

@@ -1,0 +1,32 @@
+@printed 75
+example 2 | What is 50% of 220? || 220 کا 50% کیا ہے؟ || د 220 50% څومره دی؟
+bar parts=0 | fill=0.5 | top=220 | bottom=50% | colour=#ec4899
+m 50% of 220 $= \frac{5\cancel{0}}{10\cancel{0}} \times 22\cancel{0}$
+m $= 5 \times 22$
+m $= 110$
+p So, 50% of 220 is 110. || لہٰذا 220 کا 50%، 110 ہے۔ || نو د 220 50%، 110 دي.
+endexample
+@issue Page 75 numbers this "Example 2" although page 74 already has an Example 2 in 4.1.2; kept as printed.
+exercise 4.1
+q 1 | The following squares are divided into 100 equal parts. Express the coloured parts as a percentage. || درج ذیل مربع 100 برابر حصوں میں تقسیم ہیں۔ رنگے ہوئے حصوں کو فیصد کی صورت میں ظاہر کریں۔ || لاندې مربعات په 100 برابرو برخو وېشل شوي دي. رنګ شوې برخې د سلنې په بڼه وښیئ.
+qp a | (first square) || (پہلا مربع) || (لومړی مربع)
+solution 62%
+ss Count the coloured squares: 6 full columns of 10 = 60, plus 2 more squares in the 7th column. || رنگے مربع گنیں: 10، 10 کے 6 پورے کالم = 60، اور ساتویں کالم میں 2 مزید۔ || رنګ شوي مربعات وشمېرئ: د 10، 10 شپږ بشپړې ستنې = 60، او په اوومه ستنه کې 2 نور.
+sfig grid 10x10 | #f472b6:1-6:1-10 ; #f472b6:7-7:1-2
+sm 60 + 2 = 62 \text{ out of } 100 = 62\%
+endsolution
+qp b | (second square) || (دوسرا مربع) || (دوهم مربع)
+solution 2%
+ss Only 2 squares are coloured (yellow) out of 100. || 100 میں سے صرف 2 مربع (پیلے) رنگے ہوئے ہیں۔ || له 100 څخه یوازې 2 مربعه (ژېړ) رنګ شوي دي.
+sfig grid 10x10 | #fde047:1-1:1-2
+sm 2 \text{ out of } 100 = 2\%
+endsolution
+grid 10x10 | #f472b6:1-6:1-10 ; #f472b6:7-7:1-2 || Square (a) || مربع (a) || مربع (a)
+grid 10x10 | #fde047:1-1:1-2 || Square (b) || مربع (b) || مربع (b)
+q 2 | Colour the squares to show the given percentage. || دیے گئے فیصد کو ظاہر کرنے کے لیے مربعوں میں رنگ بھریں۔ || د ورکړل شوې سلنې د ښودلو لپاره مربعات رنګ کړئ.
+qsolve colourpct
+qp a | 78%
+qp b | 13%
+qp c | 26%
+qp d | 50%
+@issue Exercise 4.1 Q1 squares carry no printed (a)/(b) labels; the labels are added only to address each square. The blank grids of Q2 are left to the student (shown as coded squares inside each solution).

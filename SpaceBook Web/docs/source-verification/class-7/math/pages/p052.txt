@@ -1,0 +1,36 @@
+@printed 48
+example 1 | Find the square root of 144. || 144 کا جذرِ مربع معلوم کریں۔ || د 144 مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First find the prime factors of 144. || پہلے 144 کے مفرد اجزائے ضربی معلوم کریں۔ || لومړی د 144 لومړني ضربي اجزا معلوم کړئ.
+ladder 2:144; 2:72; 2:36; 2:18; 3:9; 3:3; :1
+p Now write the prime factors in the form of pairs. || اب مفرد اجزائے ضربی کو جوڑوں کی صورت میں لکھیں۔ || اوس لومړني ضربي اجزا د جوړو په بڼه ولیکئ.
+m $144 = \overline{2 \times 2} \times \overline{2 \times 2} \times \overline{3 \times 3}$
+m $144 = 2^2 \times 2^2 \times 3^2$
+p Take only one number from each pair and find their product. || ہر جوڑے میں سے صرف ایک عدد لیں اور ان کا حاصلِ ضرب معلوم کریں۔ || له هرې جوړې یوازې یو عدد واخلئ او د هغوی حاصل ضرب معلوم کړئ.
+m $\sqrt{144} = 2 \times 2 \times 3 = 12$
+p So, the square root of 144 is 12. || لہٰذا 144 کا جذرِ مربع 12 ہے۔ || نو د 144 مربع جذر 12 دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The factors of a number that are divisible by 1 and the number itself are called prime factors. || کسی عدد کے وہ اجزائے ضربی جو صرف 1 اور خود اسی عدد سے تقسیم ہوتے ہیں، مفرد اجزائے ضربی کہلاتے ہیں۔ || د یوه عدد هغه ضربي اجزا چې یوازې پر 1 او پر خپل ځان وېشل کېږي، لومړني ضربي اجزا بلل کېږي.
+endbox
+example 2 | Find the square root of $\frac{16}{25}$. || $\frac{16}{25}$ کا جذرِ مربع معلوم کریں۔ || د $\frac{16}{25}$ مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Find the prime factors of the numerator and denominator separately and write them in pairs. || شمار کنندہ اور نسب نما کے مفرد اجزائے ضربی الگ الگ معلوم کریں اور انہیں جوڑوں میں لکھیں۔ || د صورت او مخرج لومړني ضربي اجزا جلا جلا معلوم کړئ او په جوړو یې ولیکئ.
+ladder 2:16; 2:8; 2:4; 2:2; :1
+ladder 5:25; 5:5; :1
+eq \frac{16}{25} = \frac{\overline{2 \times 2} \times \overline{2 \times 2}}{5 \times 5}
+p Take one number from each pair and find their product. || ہر جوڑے میں سے ایک عدد لیں اور ان کا حاصلِ ضرب معلوم کریں۔ || له هرې جوړې یو عدد واخلئ او د هغوی حاصل ضرب معلوم کړئ.
+eq \sqrt{\frac{16}{25}} = \frac{2 \times 2}{5} = \frac{4}{5}
+p So, the square root of $\frac{16}{25}$ is $\frac{4}{5}$. || لہٰذا $\frac{16}{25}$ کا جذرِ مربع $\frac{4}{5}$ ہے۔ || نو د $\frac{16}{25}$ مربع جذر $\frac{4}{5}$ دی.
+endexample
+@issue In Example 2 the denominator 5 × 5 is printed without the pair overline used elsewhere; reproduced as printed.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If the prime factors of the given number cannot be written in pairs, the given number is not a perfect square. || اگر دیے گئے عدد کے مفرد اجزائے ضربی جوڑوں میں نہ لکھے جا سکیں تو دیا گیا عدد کامل مربع نہیں ہے۔ || که د ورکړل شوي عدد لومړني ضربي اجزا په جوړو ونه لیکل شي، ورکړل شوی عدد بشپړ مربع نه دی.
+endbox
+example 3 | Find the square root of $2\frac{2}{49}$. || $2\frac{2}{49}$ کا جذرِ مربع معلوم کریں۔ || د $2\frac{2}{49}$ مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First change the mixed fraction into an improper fraction and then find the square root. || پہلے مخلوط کسر کو غیر واجب کسر میں تبدیل کریں اور پھر جذرِ مربع معلوم کریں۔ || لومړی مخلوط کسر ناسم کسر ته واړوئ او بیا مربع جذر معلوم کړئ.
+eq 2\frac{2}{49} = \frac{100}{49}
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students about the square root of numbers. Write some perfect squares on the board and ask them to find the square root of these numbers. || طلبہ کو اعداد کے جذرِ مربع کے بارے میں سمجھائیں۔ بورڈ پر کچھ کامل مربع لکھیں اور ان سے ان اعداد کا جذرِ مربع معلوم کرنے کو کہیں۔ || زده کوونکو ته د عددونو د مربع جذر په اړه تشریح کړئ. پر تخته څو بشپړ مربعات ولیکئ او ترې وغواړئ چې د دې عددونو مربع جذر معلوم کړي.
+endbox

@@ -1,0 +1,20 @@
+@printed 63
+### 4.5.4 Functions || 4.5.4 فنکشنز || 4.5.4 فنکشنونه
+p A function is a block of code that needs to be used by different sections of a program; rather than having multiple occurrences of the same code. Just like visual programming, Python also provides built-in math functions which can be used by importing math library in the program. The following program shows how to use mathematical functions. || فنکشن کوڈ کا وہ بلاک ہے جسے پروگرام کے مختلف حصوں کو استعمال کرنا ہوتا ہے؛ بجائے اس کے کہ ایک ہی کوڈ بار بار آئے۔ بصری پروگرامنگ کی طرح Python بھی بلٹ اِن ریاضیاتی فنکشنز فراہم کرتا ہے جنھیں پروگرام میں math لائبریری امپورٹ کر کے استعمال کیا جا سکتا ہے۔ درج ذیل پروگرام دکھاتا ہے کہ ریاضیاتی فنکشنز کیسے استعمال کیے جاتے ہیں۔ || فنکشن د کوډ هغه بلاک دی چې د پروګرام بېلابېلې برخې یې کاروي؛ د دې پر ځای چې ورته کوډ څو ځله راشي. لکه لیدنی پروګرامینګ، Python هم ځای پر ځای ریاضيکي فنکشنونه برابروي چې د پروګرام کې د math کتابتون په واردولو سره کارېدای شي. لاندې پروګرام ښيي چې ریاضيکي فنکشنونه څنګه کارول کېږي.
+box code | Program # 8: Math library functions || پروگرام #8: math لائبریری کے فنکشنز || پروګرام #۸: د math کتابتون فنکشنونه
+m 1 from math import sin, pi
+m 2 print('Value of PI is roughly ', pi)
+m 3 print(abs(-4.3))
+m 4 print(round(3.336, 2))
+m 5 print(round(345.2, -1))
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m Value of PI is roughly
+m 3.141592653589793
+m 4.3
+m 3.34
+m 350.0
+endbox
+## 4.6 Writing Simple Programs in Python || 4.6 Python میں سادہ پروگرام لکھنا || 4.6 په Python کې ساده پروګرامونه لیکل
+p Let us write a small program to print stars in the form of a right angled triangle. The screen can be logically divided into columns (vertically) and rows (horizontally). In line 1 we put an outer loop that handles the rows and the loop will run for values of 'i' from 0 to 5, as maximum range is not inclusive. || آئیے ایک چھوٹا پروگرام لکھیں جو ستاروں کو قائمہ زاویہ مثلث کی شکل میں پرنٹ کرے۔ اسکرین کو منطقی طور پر کالموں (عمودی) اور قطاروں (افقی) میں تقسیم کیا جا سکتا ہے۔ سطر 1 میں ہم ایک بیرونی لوپ رکھتے ہیں جو قطاروں کو سنبھالتا ہے اور لوپ 'i' کی قدروں 0 سے 5 تک چلے گا کیونکہ زیادہ سے زیادہ رینج شامل نہیں ہوتی۔ || راځئ یو وړوکی پروګرام ولیکو چې ستورې د قایمې زاویې درې ګونې په بڼه چاپ کړي. سکرین په منطقي ډول په کالمونو (عمودي) او قطارونو (افقي) وېشل کېدای شي. په ۱ کرښه کې موږ یو بهرنی لوپ ږدو چې قطارونه اداره کوي او لوپ به د 'i' د ۰ څخه تر ۵ پورې ارزښتونو لپاره چلېږي، ځکه چې لوړه رینج شامل نه وي.
+p Thereafter, we put another loop for the columns and set values of the range with respect to the outer loop. In other words, the variable 'j' in line 2 will never exceed the value of 'i' in every iteration. || اس کے بعد ہم کالموں کے لیے ایک اور لوپ رکھتے ہیں اور رینج کی قدریں بیرونی لوپ کے لحاظ سے طے کرتے ہیں۔ دوسرے الفاظ میں سطر 2 میں متغیر 'j' ہر تکرار میں 'i' کی قدر سے کبھی تجاوز نہیں کرے گا۔ || له دې وروسته موږ د کالمونو لپاره بل لوپ ږدو او د رینج ارزښتونه د بهرني لوپ په اړه ټاکو. په بلو ټکو په ۲ کرښه کې متغیر 'j' په هر تکرار کې د 'i' له ارزښت څخه هېڅکله نه تېرېږي.

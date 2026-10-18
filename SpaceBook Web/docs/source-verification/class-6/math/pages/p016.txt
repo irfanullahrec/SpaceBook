@@ -1,0 +1,31 @@
+@printed 14
+## Division Method || تقسیم کا طریقہ || د وېش طریقه
+p To find the LCM of two or more numbers by division method, we follow these steps: || تقسیم کے طریقے سے دو یا زیادہ اعداد کا ذو اضعاف اقل معلوم کرنے کے لیے ہم یہ مراحل اختیار کرتے ہیں: || د وېش په طریقه د دوو یا ډېرو عددونو د کوچني مشترک ضرب د معلومولو لپاره دا پړاوونه تعقیبوو:
+p **Step I:** Write the numbers in a horizontal line, separating them by commas. || **مرحلہ I:** اعداد کو ایک افقی لائن میں کوموں سے الگ کر کے لکھیں۔ || **لومړی پړاو:** عددونه په یوه افقي کرښه کې ولیکئ او په کامو یې سره جلا کړئ.
+p **Step II:** Divide the numbers by a suitable prime number, which exactly divides at least two of the given numbers. || **مرحلہ II:** اعداد کو کسی موزوں مفرد عدد سے تقسیم کریں جو دیے گئے اعداد میں سے کم از کم دو کو پورا پورا تقسیم کرے۔ || **دوهم پړاو:** عددونه پر داسې مناسب لومړني عدد ووېشئ چې له ورکړل شوو عددونو څخه لږ تر لږه دوه په بشپړ ډول ووېشي.
+p **Step III:** Continue the process until all quotients of all the numbers become '1'. || **مرحلہ III:** یہ عمل اس وقت تک جاری رکھیں جب تک تمام اعداد کے سب خارجِ قسمت '1' نہ ہو جائیں۔ || **درېیم پړاو:** دا عمل تر هغه دوام ورکړئ چې د ټولو عددونو ټول خارج قسمتونه '1' شي.
+p **Step IV:** Find the product of all the prime factors. || **مرحلہ IV:** تمام مفرد اجزائے ضربی کا حاصلِ ضرب معلوم کریں۔ || **څلورم پړاو:** د ټولو لومړنیو ضربي اجزاوو حاصل ضرب معلوم کړئ.
+example 1 | Find the LCM of 120, 140 and 130 by division method. || تقسیم کے طریقے سے 120، 140 اور 130 کا ذو اضعاف اقل معلوم کریں۔ || د وېش په طریقه د 120، 140 او 130 کوچنی مشترک ضرب معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+ladder 2:120, 140, 130; 2:60, 70, 65; 3:30, 35, 65; 5:10, 35, 65; 2:2, 7, 13; 7:1, 7, 13; 13:1, 1, 13; :1, 1, 1
+p LCM = Product of prime factors || ذو اضعاف اقل = مفرد اجزائے ضربی کا حاصلِ ضرب || کوچنی مشترک ضرب = د لومړنیو ضربي اجزاوو حاصل ضرب
+m $\text{LCM} = 2 \times 2 \times 3 \times 5 \times 2 \times 7 \times 13$
+m $\text{LCM} = 10920$
+endexample
+example 2 | Find the LCM of 160, 248, and 364 by division method. || تقسیم کے طریقے سے 160، 248 اور 364 کا ذو اضعاف اقل معلوم کریں۔ || د وېش په طریقه د 160، 248 او 364 کوچنی مشترک ضرب معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+ladder 2:160, 248, 364; 2:80, 124, 182; 2:40, 62, 91; 2:20, 31, 91; 2:10, 31, 91; 5:5, 31, 91; 7:1, 31, 91; 13:1, 31, 13; 31:1, 31, 1; :1, 1, 1
+p LCM = Product of prime factors || ذو اضعاف اقل = مفرد اجزائے ضربی کا حاصلِ ضرب || کوچنی مشترک ضرب = د لومړنیو ضربي اجزاوو حاصل ضرب
+m $\text{LCM} = 2 \times 2 \times 2 \times 2 \times 2 \times 5 \times 7 \times 13 \times 31$
+m $\text{LCM} = 451360$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find LCM of 400, 456 and 356 by division method. || تقسیم کے طریقے سے 400، 456 اور 356 کا ذو اضعاف اقل معلوم کریں۔ || د وېش په طریقه د 400، 456 او 356 کوچنی مشترک ضرب معلوم کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Share the following online game with students to practice Highest Common Factor (HCF) and Least Common Multiple (LCM). || عاد اعظم (HCF) اور ذو اضعاف اقل (LCM) کی مشق کے لیے طلبہ کے ساتھ درج ذیل آن لائن کھیل شیئر کریں۔ || د لوی مشترک قاسم (HCF) او کوچني مشترک ضرب (LCM) د تمرین لپاره لاندې آنلاین لوبې له زده کوونکو سره شریکې کړئ.
+m https://www.transum.org/software/SW/Starter_of_the_day/Students/HCF_LCM.asp
+m https://www.transum.org/software/SW/Starter_of_the_day/Students/HCF_LCM.asp?Level=2
+m https://www.tes.com/teaching-resource/lcm-and-hcf-treasure-hunt-11743277
+endbox
+@issue Example 1 divides 30, 35, 65 by 3 although 3 divides only one of the numbers, which differs from the book's own Step II rule; kept as printed (result 10920 is correct).

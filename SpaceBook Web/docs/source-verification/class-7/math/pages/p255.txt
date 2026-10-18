@@ -1,0 +1,37 @@
+@printed 251
+table
+tr | 2 | 2 | 2 | 3 | 3 | 5 | 5 | 6 | 6 | 6
+tr | 6 | 6 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7
+tr | 7 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 9 | 9
+tr | 9 | 9 | 9 | 9 | 9 | 10 | 10 | 10 | 10 | 10
+endtable
+p **Solution:** || **حل:** || **حل:**
+p To construct a frequency table, we proceed as follows: || تعدد کا جدول بنانے کے لیے ہم یوں آگے بڑھتے ہیں: || د تکرار جدول جوړولو لپاره داسې مخ ته ځو:
+p **Step I:** Construct a table with three columns. Write the scores in the first column. The lowest score in this data is 2. So, start from 2 in the first column as shown. Similarly write all the obtained scores in the column in ascending order. || **مرحلہ I:** تین کالموں والا جدول بنائیں۔ پہلے کالم میں نمبر لکھیں۔ اس ڈیٹا میں سب سے کم نمبر 2 ہے۔ لہٰذا دکھائے گئے طریقے سے پہلے کالم میں 2 سے شروع کریں۔ اسی طرح تمام حاصل کردہ نمبر کالم میں صعودی ترتیب سے لکھیں۔ || **لومړی ګام:** د درېیو ستنو جدول جوړ کړئ. په لومړۍ ستنه کې نمرې ولیکئ. په دې معلوماتو کې تر ټولو ټیټه نمره 2 ده. نو لکه څنګه چې ښودل شوي په لومړۍ ستنه کې له 2 پیل وکړئ. همداسې ټولې اخیستل شوې نمرې په ستنه کې په صعودي ترتیب ولیکئ.
+p **Step II:** Next count the number of times each score has been obtained and put the corresponding tally marks against it. || **مرحلہ II:** پھر گنیں کہ ہر نمبر کتنی بار حاصل ہوا اور اس کے سامنے متعلقہ ٹیلی نشانات لگائیں۔ || **دوهم ګام:** بیا وشمېرئ چې هره نمره څو ځله اخیستل شوې او د هغې په وړاندې اړوندې ټلي نښې کېږدئ.
+p **Step III:** After all the tally marks are tabulated, count them and write the number in the third column. This gives us the frequency of each score. || **مرحلہ III:** تمام ٹیلی نشانات لگانے کے بعد انہیں گنیں اور تیسرے کالم میں تعداد لکھیں۔ اس سے ہر نمبر کا تعدد ملتا ہے۔ || **درېیم ګام:** وروسته له دې چې ټولې ټلي نښې ولیکل شوې، وې شمېرئ او شمېر په درېیمه ستنه کې ولیکئ. دا موږ ته د هرې نمرې تکرار راکوي.
+table
+th | Score in test || ٹیسٹ میں نمبر || په ازموینه کې نمره | Tally marks | Frequency
+tr | 2 | /// | 3
+tr | 3 | // | 2
+tr | 5 | // | 2
+tr | 6 | 𝍸 | 5
+tr | 7 | 𝍸 //// | 9
+tr | 8 | 𝍸 // | 7
+tr | 9 | 𝍸 // | 7
+tr | 10 | 𝍸 | 5
+tr | Total || کل || ټول | | 40
+endtable
+p This is the required frequency table for the given data. This is an ungrouped frequency distribution (or simply a frequency distribution). || یہ دیے گئے ڈیٹا کے لیے مطلوبہ تعدد کا جدول ہے۔ یہ غیر گروہی تعددی تقسیم (یا صرف تعددی تقسیم) ہے۔ || دا د ورکړل شویو معلوماتو لپاره غوښتل شوی د تکرار جدول دی. دا نا ډلبندي د تکرار وېش (یا په ساده ډول د تکرار وېش) دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Always arrange the data before presenting it in any form. || ڈیٹا کو کسی بھی شکل میں پیش کرنے سے پہلے ہمیشہ ترتیب دیں۔ || معلومات په هره بڼه د وړاندې کولو مخکې تل ترتیب کړئ.
+endbox
+### Grouped frequency distribution || گروہی تعددی تقسیم || ډلبندي د تکرار وېش
+p When the collected data has too many values, it is a difficult and time taking activity to enlist each value along with its tallies and frequencies. Too many rows are required to tabulate that data. In such situations, the observations are divided in groups (called classes) having suitable size (called width). Before learning how to construct a grouped frequency table, let's learn about the important terms of frequency distribution. || جب جمع کردہ ڈیٹا میں بہت زیادہ قیمتیں ہوں تو ہر قیمت کو اس کے ٹیلی نشانات اور تعدد کے ساتھ درج کرنا مشکل اور وقت طلب کام ہے۔ اس ڈیٹا کو جدول میں لکھنے کے لیے بہت زیادہ قطاریں درکار ہوتی ہیں۔ ایسی صورتوں میں مشاہدات کو مناسب سائز (جسے چوڑائی کہتے ہیں) کے گروہوں (جنہیں جماعتیں کہتے ہیں) میں تقسیم کیا جاتا ہے۔ گروہی تعدد کا جدول بنانا سیکھنے سے پہلے آئیے تعددی تقسیم کی اہم اصطلاحات سیکھیں۔ || کله چې راټول شوي معلومات ډېر ارزښتونه ولري، د هر ارزښت د ټلي نښو او تکرار سره لیکل ستونزمن او وخت نیوونکی کار دی. د دې معلوماتو د جدول لپاره ډېرې قطارې اړینې دي. په داسې حالاتو کې مشاهدې د مناسبې اندازې (چې پلنوالی بلل کېږي) په ډلو (چې ټولګي بلل کېږي) وېشل کېږي. د ډلبندي تکرار جدول د جوړولو له زده کړې مخکې، راځئ د تکرار وېش مهم اصطلاحات زده کړو.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask the students to make a chart of comparison between: || طلبہ سے کہیں کہ ان کے درمیان موازنے کا چارٹ بنائیں: || له زده کوونکو وغواړئ چې د دې ترمنځ د پرتلې چارټ جوړ کړي:
+- Discrete and continuous data || منفصل اور مسلسل ڈیٹا || جلا او پرلپسې معلومات
+- Grouped and Ungrouped Data || گروہی اور غیر گروہی ڈیٹا || ډلبندي او نا ډلبندي معلومات
+endbox
+@deco Tally groups of five are printed as four strokes crossed by a fifth; shown here as 𝍸 (tally mark five).

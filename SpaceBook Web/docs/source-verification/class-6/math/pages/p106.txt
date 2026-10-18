@@ -1,0 +1,94 @@
+@printed 104
+q 3 | Which of the following sets are well defined? || درج ذیل میں سے کون سے سیٹ واضح طور پر متعین ہیں؟ || له لاندې سېټونو کوم په ښه ډول ټاکل شوي دي؟
+qp a | The set of intelligent boys. || ذہین لڑکوں کا سیٹ۔ || د هوښیارو هلکانو سېټ.
+sol Not well-defined ## "Intelligent" is an opinion. || "ذہین" ایک رائے ہے۔ || "هوښیار" نظر دی.
+qp b | The set of even numbers. || جفت اعداد کا سیٹ۔ || د جفتو عددونو سېټ.
+sol Well-defined ## Every number is clearly even or not. || ہر عدد واضح طور پر جفت ہے یا نہیں۔ || هر عدد په روښانه ډول جفت دی که نه.
+qp c | The set of cars in a showroom. || شو روم میں گاڑیوں کا سیٹ۔ || په شوروم کې د موټرو سېټ.
+sol Well-defined ## We can check exactly which cars are in the showroom. || ہم بالکل جانچ سکتے ہیں کہ شو روم میں کون سی گاڑیاں ہیں۔ || دقیق کتلی شو چې په شوروم کې کوم موټر دي.
+qp d | The set of prime numbers. || مفرد اعداد کا سیٹ۔ || د لومړنیو عددونو سېټ.
+sol Well-defined ## Each number either has exactly two factors or not. || ہر عدد کے یا تو ٹھیک دو اجزائے ضربی ہیں یا نہیں۔ || هر عدد یا دقیق دوه ضربي اجزا لري یا نه.
+qp e | The set of grains in the sand. || ریت کے ذروں کا سیٹ۔ || د شګو د دانو سېټ.
+sol Well-defined (but very large) ## A grain of sand is clearly a grain of sand, so membership is clear even though the grains are too many to count. Teacher's note: confirm with the answer key, as some books call this "not well-defined". || ریت کا ذرہ واضح طور پر ریت کا ذرہ ہے، اس لیے رکنیت واضح ہے اگرچہ ذرات گننے کے لیے بہت زیادہ ہیں۔ استاد کا نوٹ: جوابی کلید سے تصدیق کریں، کیونکہ بعض کتابیں اسے "غیر متعین" کہتی ہیں۔ || د شګو دانه په روښانه ډول د شګو دانه ده، نو غړیتوب روښانه دی که څه هم دانې د شمېرلو لپاره ډېرې دي. د ښوونکي یادونه: د ځوابونو له کلي سره یې وګورئ، ځکه ځینې کتابونه دې ته "ناټاکل شوی" وايي.
+qp f | The set of numbers which are divisible by 8. || 8 سے تقسیم ہونے والے اعداد کا سیٹ۔ || پر 8 وېشل کېدونکو عددونو سېټ.
+sol Well-defined ## Every number is either divisible by 8 or not. || ہر عدد یا تو 8 سے تقسیم ہوتا ہے یا نہیں۔ || هر عدد یا پر 8 وېشل کېږي یا نه.
+q 4 | List the elements of the following sets. || درج ذیل سیٹوں کے ارکان لکھیں۔ || د لاندې سېټونو غړي ولیکئ.
+qp a | The set of 6 countries of world. || دنیا کے 6 ممالک کا سیٹ۔ || د نړۍ د 6 هېوادونو سېټ.
+sol One answer: {Pakistan, China, Turkey, Iran, Egypt, Japan} ## Any 6 different countries are correct. || کوئی بھی 6 مختلف ممالک درست ہیں۔ || هر 6 بېل هېوادونه سم دي.
+qp b | The set of vowels. || حروفِ علت کا سیٹ۔ || د غږیزو تورو سېټ.
+sol {a, e, i, o, u} ## The English vowels are a, e, i, o, u. || انگریزی حروفِ علت a، e، i، o، u ہیں۔ || انګلیسي غږیز توري a، e، i، o، u دي.
+qp c | Set of the first six months of the year. || سال کے پہلے چھ مہینوں کا سیٹ۔ || د کال د لومړیو شپږو میاشتو سېټ.
+sol {January, February, March, April, May, June} ## Count six months from January. || جنوری سے چھ مہینے گنیں۔ || له جنوري شپږ میاشتې وشمېرئ.
+qp d | Set of colours in a rainbow. || قوسِ قزح کے رنگوں کا سیٹ۔ || د شنه زرغونې (رنګین کمان) د رنګونو سېټ.
+sol {red, orange, yellow, green, blue, indigo, violet} ## A rainbow has these 7 colours. || قوسِ قزح میں یہ 7 رنگ ہوتے ہیں۔ || رنګین کمان دا 7 رنګونه لري.
+qp e | Set of 5 pet animals. || 5 پالتو جانوروں کا سیٹ۔ || د 5 کورني ژویو سېټ.
+sol One answer: {cat, dog, parrot, rabbit, goat} ## Any 5 different pet animals are correct. || کوئی بھی 5 مختلف پالتو جانور درست ہیں۔ || هر 5 بېل کورني ژوي سم دي.
+q 5 | Write the cardinality of the following sets. || درج ذیل سیٹوں کی عددیت لکھیں۔ || د لاندې سېټونو کارډینالیټي ولیکئ.
+qp a | the set of all factors of 45 which are even. || 45 کے ان تمام اجزائے ضربی کا سیٹ جو جفت ہوں۔ || د 45 د هغو ټولو ضربي اجزاوو سېټ چې جفت وي.
+sol 0 ## Factors of 45: 1, 3, 5, 9, 15, 45 — all odd, so the set is empty. || 45 کے اجزائے ضربی: 1، 3، 5، 9، 15، 45 — سب طاق، اس لیے سیٹ خالی ہے۔ || د 45 ضربي اجزا: 1، 3، 5، 9، 15، 45 — ټول طاق، نو سېټ تش دی.
+qp b | the set of prime numbers less than 30. || 30 سے کم مفرد اعداد کا سیٹ۔ || له 30 کم د لومړنیو عددونو سېټ.
+sol 10 ## {2, 3, 5, 7, 11, 13, 17, 19, 23, 29} has 10 elements. || {2، 3، 5، 7، 11، 13، 17، 19، 23، 29} کے 10 ارکان ہیں۔ || {2، 3، 5، 7، 11، 13، 17، 19، 23، 29} 10 غړي لري.
+qp c | the set of odd numbers divisible by 4. || 4 سے تقسیم ہونے والے طاق اعداد کا سیٹ۔ || پر 4 وېشل کېدونکو طاقو عددونو سېټ.
+sol 0 ## A number divisible by 4 is always even, so no odd number qualifies. || 4 سے تقسیم ہونے والا عدد ہمیشہ جفت ہوتا ہے، اس لیے کوئی طاق عدد شامل نہیں۔ || پر 4 وېشل کېدونکی عدد تل جفت وي، نو هېڅ طاق عدد نه شاملېږي.
+q 6 | For A = {10, 20, 30, ...} and B = {5, 10, 15, 20, ...}, which of the following are correct? || A = {10، 20، 30، ...} اور B = {5، 10، 15، 20، ...} کے لیے درج ذیل میں سے کون سے درست ہیں؟ || د A = {10، 20، 30، ...} او B = {5، 10، 15، 20، ...} لپاره له لاندې څخه کوم سم دي؟
+qp a | $5 \in A$
+sol Not correct ## A has multiples of 10; 5 is not one of them. || A میں 10 کے اضعاف ہیں؛ 5 ان میں سے نہیں۔ || A د 10 ضربونه لري؛ 5 په هغو کې نه دی.
+qp b | $20 \in B$
+sol Correct ## 20 is a multiple of 5. || 20، 5 کا ضعف ہے۔ || 20 د 5 ضرب دی.
+qp c | $30 \notin B$
+sol Not correct ## 30 = 5 × 6, so 30 ∈ B. || 30 = 5 × 6، اس لیے 30 ∈ B۔ || 30 = 5 × 6، نو 30 ∈ B.
+qp d | $50 \in A$
+sol Correct ## 50 = 10 × 5 is a multiple of 10. || 50 = 10 × 5، 10 کا ضعف ہے۔ || 50 = 10 × 5 د 10 ضرب دی.
+qp e | $60 \notin B$
+sol Not correct ## 60 = 5 × 12, so 60 ∈ B. || 60 = 5 × 12، اس لیے 60 ∈ B۔ || 60 = 5 × 12، نو 60 ∈ B.
+qp f | $0 \in B$
+sol Not correct ## B starts at 5, so 0 is not listed in B. || B، 5 سے شروع ہوتا ہے، اس لیے 0، B میں نہیں۔ || B له 5 پیلېږي، نو 0 په B کې نشته.
+q 7 | Identify the correct form of the following sets as tabular or descriptive. || درج ذیل سیٹوں کی درست صورت، جدولی یا بیانیہ، کی شناخت کریں۔ || د لاندې سېټونو سمه بڼه، جدولي یا تشریحي، وپېژنئ.
+qp a | A set of odd numbers between 5 and 15. || 5 اور 15 کے درمیان طاق اعداد کا سیٹ۔ || د 5 او 15 ترمنځ د طاقو عددونو سېټ.
+sol Descriptive ## It is written in words, without curly brackets. || یہ الفاظ میں لکھا گیا ہے، منحنی قوسین کے بغیر۔ || په کلمو لیکل شوی، پرته له ګونجو قوسونو.
+qp b | A set of prime numbers. || مفرد اعداد کا سیٹ۔ || د لومړنیو عددونو سېټ.
+sol Descriptive ## Written as a statement. || بیان کی صورت میں لکھا گیا۔ || د بیان په بڼه لیکل شوی.
+qp c | A = {1, 2, 3, 4, 6}.
+sol Tabular ## Elements are listed inside { } separated by commas. || ارکان { } کے اندر کوموں سے الگ لکھے گئے ہیں۔ || غړي په { } کې په کامو جلا لیکل شوي.
+qp d | B = {2, 4, 6, 8, 10}.
+sol Tabular ## Elements are listed inside { }. || ارکان { } کے اندر لکھے گئے ہیں۔ || غړي په { } کې لیکل شوي.
+qp e | A set of days of the week. || ہفتے کے دنوں کا سیٹ۔ || د اونۍ د ورځو سېټ.
+sol Descriptive ## Written as a statement. || بیان کی صورت میں لکھا گیا۔ || د بیان په بڼه لیکل شوی.
+q 8 | Write the following sets into tabular form. || درج ذیل سیٹوں کو جدولی صورت میں لکھیں۔ || لاندې سېټونه په جدولي بڼه ولیکئ.
+qp a | The set of the first five natural numbers. || پہلے پانچ قدرتی اعداد کا سیٹ۔ || د لومړیو پنځو طبیعي عددونو سېټ.
+sol {1, 2, 3, 4, 5} ## Natural numbers start at 1. || قدرتی اعداد 1 سے شروع ہوتے ہیں۔ || طبیعي عددونه له 1 پیلېږي.
+qp b | The set of all vowels of the English alphabet. || انگریزی حروفِ تہجی کے تمام حروفِ علت کا سیٹ۔ || د انګلیسي الفبا د ټولو غږیزو تورو سېټ.
+sol {a, e, i, o, u} ## The five vowels. || پانچ حروفِ علت۔ || پنځه غږیز توري.
+qp c | The set of all odd numbers less than 9. || 9 سے کم تمام طاق اعداد کا سیٹ۔ || له 9 کم د ټولو طاقو عددونو سېټ.
+sol {1, 3, 5, 7} ## 9 itself is not included ("less than"). || 9 خود شامل نہیں ("سے کم")۔ || 9 پخپله نه شاملېږي ("کم").
+qp d | The set of all numbers which divide 12. || ان تمام اعداد کا سیٹ جو 12 کو تقسیم کریں۔ || د هغو ټولو عددونو سېټ چې 12 ووېشي.
+sol {1, 2, 3, 4, 6, 12} ## These are the factors of 12. || یہ 12 کے اجزائے ضربی ہیں۔ || دا د 12 ضربي اجزا دي.
+qp e | The set of all letters in the word MATHEMATICS. || لفظ MATHEMATICS کے تمام حروف کا سیٹ۔ || د MATHEMATICS کلمې د ټولو تورو سېټ.
+sol {M, A, T, H, E, I, C, S} ## Write each letter only once (M, A and T repeat in the word). || ہر حرف صرف ایک بار لکھیں (لفظ میں M، A اور T دہرائے گئے ہیں)۔ || هر توری یوازې یو ځل ولیکئ (په کلمه کې M، A او T تکرار شوي).
+qp f | The set of the last four months of the year. || سال کے آخری چار مہینوں کا سیٹ۔ || د کال د وروستیو څلورو میاشتو سېټ.
+sol {September, October, November, December} ## Count back four months from December. || دسمبر سے چار مہینے پیچھے گنیں۔ || له ډسمبر څخه څلور میاشتې شاته وشمېرئ.
+q 9 | Write the following sets into descriptive form. || درج ذیل سیٹوں کو بیانیہ صورت میں لکھیں۔ || لاندې سېټونه په تشریحي بڼه ولیکئ.
+qp a | A = {7, 8, 9, 10}
+sol A = set of natural numbers from 7 to 10 ## Describe the members in words. || ارکان کو الفاظ میں بیان کریں۔ || غړي په کلمو بیان کړئ.
+qp b | B = {6, 12, 18, 24, 30}
+sol B = set of the first five multiples of 6 ## 6 × 1 to 6 × 5. || 6 × 1 سے 6 × 5 تک۔ || له 6 × 1 تر 6 × 5.
+qp c | T = {3, 5, 7, 11}
+sol T = set of odd prime numbers less than 13 ## 3, 5, 7, 11 are the odd primes below 13. || 3، 5، 7، 11، 13 سے کم طاق مفرد اعداد ہیں۔ || 3، 5، 7، 11 له 13 کم طاق لومړني عددونه دي.
+qp d | D = {r, e, s, t}
+sol D = set of letters of the word "rest" ## The letters r, e, s, t spell "rest". || حروف r، e، s، t سے لفظ "rest" بنتا ہے۔ || توري r، e، s، t "rest" جوړوي.
+qp e | E = {5, 10, 15, 20}
+sol E = set of the first four multiples of 5 ## 5 × 1 to 5 × 4. || 5 × 1 سے 5 × 4 تک۔ || له 5 × 1 تر 5 × 4.
+q 10 | Classify the following sets as finite, infinite, empty or singleton set. || درج ذیل سیٹوں کو متناہی، غیر متناہی، خالی یا اکہرا سیٹ کے طور پر درجہ بندی کریں۔ || لاندې سېټونه د محدود، نامحدود، تش یا یوګړي سېټ په توګه ډلبندي کړئ.
+qp a | The set of stars in the sky. || آسمان کے ستاروں کا سیٹ۔ || په اسمان کې د ستورو سېټ.
+sol Infinite (by the textbook's convention for uncountable collections) ## The stars cannot be counted or listed, like the dust particles on page 100. || ستاروں کو گنا یا فہرست میں نہیں لکھا جا سکتا، جیسے صفحہ 100 پر گرد کے ذرات۔ || ستوري نه شمېرل کېږي او نه لیستېږي، لکه په 100 پاڼه کې د دوړو ذرې.
+qp b | The set of even prime numbers || جفت مفرد اعداد کا سیٹ || د جفتو لومړنیو عددونو سېټ
+sol Singleton: {2} ## 2 is the only even prime; every other even number has 2 as an extra factor. || 2 واحد جفت مفرد عدد ہے؛ ہر دوسرے جفت عدد کا 2 اضافی جزوِ ضربی ہوتا ہے۔ || 2 یوازینی جفت لومړنی عدد دی؛ هر بل جفت عدد 2 اضافي ضربي جز لري.
+qp c | The set of odd numbers. || طاق اعداد کا سیٹ۔ || د طاقو عددونو سېټ.
+sol Infinite ## {1, 3, 5, …} never ends. || {1، 3، 5، …} کبھی ختم نہیں ہوتا۔ || {1، 3، 5، …} هېڅکله نه خلاصېږي.
+qp d | The set of your friends. || آپ کے دوستوں کا سیٹ۔ || د ستاسو د ملګرو سېټ.
+sol Finite ## You have a limited number of friends that you can list. || آپ کے دوستوں کی تعداد محدود ہے جن کی فہرست بن سکتی ہے۔ || ستاسو د ملګرو شمېر محدود دی چې لیستولی یې شئ.
+qp e | The set of all women in the world. || دنیا کی تمام خواتین کا سیٹ۔ || د نړۍ د ټولو ښځو سېټ.
+sol Finite ## Very large, but limited — like "names of people in a city" on page 99. || بہت بڑا مگر محدود — جیسے صفحہ 99 پر "شہر کے لوگوں کے نام"۔ || ډېر لوی خو محدود — لکه په 99 پاڼه کې "د ښار د خلکو نومونه".
+qp f | The set of whole numbers between 88 and 89. || 88 اور 89 کے درمیان مکمل اعداد کا سیٹ۔ || د 88 او 89 ترمنځ د بشپړو عددونو سېټ.
+sol Empty ## 88 and 89 are next to each other; no whole number lies between them. || 88 اور 89 ساتھ ساتھ ہیں؛ ان کے درمیان کوئی مکمل عدد نہیں۔ || 88 او 89 یو بل ته نږدې دي؛ د هغوی ترمنځ هېڅ بشپړ عدد نشته.
+@issue Review Exercise 5 Q3(e) and Q10(a) depend on the book's convention for very large collections; the solutions explain their reasoning and ask teachers to confirm with the answer key.

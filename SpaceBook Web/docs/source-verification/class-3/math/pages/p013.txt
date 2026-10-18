@@ -1,0 +1,24 @@
+@printed 8
+@deco Photos of 4 oranges, 3 apples, 3 mangoes and 2 strawberries with Odd/Even tick boxes; the scanned copy has a pupil's ticks, not reproduced.
+table
+th Odd | Even
+tr 1 = 1 bead | 2 = 1 pair
+tr 3 = 1 pair and 1 bead | 4 = 2 pairs
+tr 5 = 2 pairs and 1 bead | 6 = 3 pairs
+endtable
+## Count the following and tick (✓) the appropriate box || درج ذیل کو گنیں اور مناسب خانے میں (✓) لگائیں || لاندې وشمېرئ او په مناسب خانه کې (✓) ولګوئ
+q a | Oranges: Odd / Even || مالٹے: طاق / جفت || مالټې: طاق / جفت
+icons orange:4
+sol Even ## There are 4 oranges: 2 pairs and none left over, so 4 is even. || 4 مالٹے ہیں: 2 جوڑے اور کوئی نہیں بچا، اس لیے 4 جفت ہے۔ || 4 مالټې دي: 2 جوړې او هېڅ پاتې نه شوه، نو 4 جفت دی.
+q b | Apples: Odd / Even || سیب: طاق / جفت || مڼې: طاق / جفت
+icons apple:3
+sol Odd ## There are 3 apples: 1 pair and 1 left over, so 3 is odd. || 3 سیب ہیں: 1 جوڑا اور 1 بچا، اس لیے 3 طاق ہے۔ || 3 مڼې دي: 1 جوړه او 1 پاتې شوه، نو 3 طاق دی.
+q c | Mangoes: Odd / Even || آم: طاق / جفت || امونه: طاق / جفت
+icons mango:3
+sol Odd ## There are 3 mangoes: 1 pair and 1 left over, so 3 is odd. || 3 آم ہیں: 1 جوڑا اور 1 بچا، اس لیے 3 طاق ہے۔ || 3 امونه دي: 1 جوړه او 1 پاتې شو، نو 3 طاق دی.
+q d | Strawberries: Odd / Even || اسٹرابیری: طاق / جفت || سټرابېري: طاق / جفت
+icons strawberry:2
+sol Even ## There are 2 strawberries: 1 pair, so 2 is even. || 2 اسٹرابیری ہیں: 1 جوڑا، اس لیے 2 جفت ہے۔ || 2 سټرابېري دي: 1 جوړه، نو 2 جفت دی.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Divide the students of your class into pairs and ask the students whether they are an even or odd number. || اپنی جماعت کے طلبہ کو جوڑوں میں تقسیم کریں اور طلبہ سے پوچھیں کہ ان کی تعداد جفت ہے یا طاق۔ || د خپل ټولګي زده کوونکي په جوړو ووېشئ او له زده کوونکو وپوښتئ چې د دوی شمېر جفت دی که طاق.
+endbox

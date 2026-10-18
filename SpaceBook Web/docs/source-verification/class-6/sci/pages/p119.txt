@@ -1,0 +1,37 @@
+@printed 115
+@status lesson
+@sec 9.8 | Series and Parallel Circuits || سلسلہ وار اور متوازی سرکٹ || لړیز او موازي سرکټونه
+# 9.8 SERIES AND PARALLEL CIRCUITS || 9.8 سلسلہ وار اور متوازی سرکٹ || 9.8 لړیز او موازي سرکټونه
+## SERIES CIRCUIT || سلسلہ وار سرکٹ || لړیز سرکټ
+p In this circuit there is only one path through which charges can flow. If the circuit is interrupted at any point in the path, no current can flow through the circuit and no device in the circuit will work. If more bulbs are added in this circuit, they will become dim. This circuit is simple and less expensive to make. An example of a series circuit is a string of fairy lights. If any one of the bulbs is missing or burned out, no current will flow and none of the lights will go on. Refrigerator and freezer also use series circuits. || اس سرکٹ میں چارجز کے بہنے کا صرف ایک راستہ ہوتا ہے۔ اگر راستہ کہیں سے ٹوٹ جائے تو کوئی رو نہیں بہتی اور سرکٹ کا کوئی آلہ کام نہیں کرتا۔ مزید بلب لگانے سے وہ مدھم ہو جاتے ہیں۔ یہ سرکٹ سادہ اور سستا ہے۔ اس کی مثال سجاوٹی (فیری) لائٹس کی لڑی ہے؛ اگر کوئی ایک بلب نکل جائے یا فیوز ہو جائے تو کوئی بتی نہیں جلتی۔ فریج اور فریزر بھی سلسلہ وار سرکٹ استعمال کرتے ہیں۔ || په دې سرکټ کې د چارجونو د بهېدو یوازې یوه لاره وي. که لاره په هر ځای کې پرې شي، جریان نه بهېږي او هېڅ آله کار نه کوي. د نورو ګروپونو په زیاتولو کمرنګه کېږي. دا سرکټ ساده او ارزانه دی. بېلګه یې د ښکلا څراغونو لړۍ ده؛ که یو ګروپ ورک یا وسوځي، هېڅ څراغ نه بلېږي. یخچال او فریزر هم لړیز سرکټ کاروي.
+svg Figure 9.9 Series Circuits — circuit drawing and circuit diagram: one cell and two bulbs in a single loop || شکل 9.9 سلسلہ وار سرکٹ || شکل 9.9 لړیز سرکټونه
+<svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Series circuit diagram">
+<g stroke="#111" stroke-width="2" fill="none">
+<path d="M30 20 h90 M134 20 h96 v70 h-48 M152 90 h-30 M92 90 h-62 v-70"/>
+<path d="M120 8 v24 M134 13 v14"/>
+<circle cx="167" cy="90" r="15"/><path d="M156 79 l22 22 M178 79 l-22 22"/>
+<circle cx="107" cy="90" r="15"/><path d="M96 79 l22 22 M118 79 l-22 22"/>
+</g>
+</svg>
+endsvg
+@deco Figure 9.10 Lights using series circuit — photograph of a building decorated with strings of lights at night.
+## PARALLEL CIRCUIT || متوازی سرکٹ || موازي سرکټ
+p The circuit in which there are more than one path through which charges can flow. If the circuit is interrupted in one of the paths, current can still flow through the other paths. || وہ سرکٹ جس میں چارجز کے بہنے کے ایک سے زیادہ راستے ہوں۔ اگر ایک راستہ ٹوٹ جائے تو رو دوسرے راستوں سے بہتی رہتی ہے۔ || هغه سرکټ چې د چارجونو د بهېدو له یوې ډېرې لارې ولري. که یوه لاره پرې شي، جریان په نورو لارو بهېږي.
+p All paths receive same amount of current. If more bulbs are added in this circuit, they do not become dim. The electrical wiring to the power points in every household is in the form of parallel circuits. The computer hardware also uses parallel circuits. || تمام راستوں کو یکساں رو ملتی ہے۔ مزید بلب لگانے سے وہ مدھم نہیں ہوتے۔ ہر گھر میں پاور پوائنٹس کی وائرنگ متوازی سرکٹ کی صورت میں ہوتی ہے۔ کمپیوٹر ہارڈ ویئر بھی متوازی سرکٹ استعمال کرتا ہے۔ || ټولې لارې ورته جریان ترلاسه کوي. د نورو ګروپونو په زیاتولو کمرنګه نه کېږي. په هر کور کې د پاور پوائنټونو وایرنګ موازي سرکټ دی. د کمپیوټر هارډویر هم موازي سرکټ کاروي.
+@issue Book says "All paths receive same amount of current" — this is only true when the branches are identical; in general each branch gets the same voltage. Recorded as printed.
+svg Figure 9.11 Parallel circuit — one cell with two bulbs on separate branches || شکل 9.11 متوازی سرکٹ || شکل 9.11 موازي سرکټ
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parallel circuit diagram">
+<g stroke="#111" stroke-width="2" fill="none">
+<path d="M30 20 h60 M104 20 h66 v120 h-140 v-120 M30 80 h140"/>
+<path d="M90 8 v24 M104 13 v14"/>
+<circle cx="100" cy="80" r="13" fill="#fff"/><path d="M91 71 l18 18 M109 71 l-18 18"/>
+<circle cx="100" cy="140" r="13" fill="#fff"/><path d="M91 131 l18 18 M109 131 l-18 18"/>
+</g>
+</svg>
+endsvg
+@deco Figure 9.12 Parallel circuits in home — a lamp, TV and other appliances each connected on separate branches of the house wiring.
+example Activity 9.4 | Practical concept of series and parallel circuits || سلسلہ وار اور متوازی سرکٹ کا عملی تصور || د لړیز او موازي سرکټونو عملي مفهوم
+p Set up the following circuits and test the characteristics of series and parallel circuits. Also label the symbols in both circuits. || درج ذیل سرکٹ بنا کر سلسلہ وار اور متوازی سرکٹ کی خصوصیات جانچیں۔ دونوں سرکٹس میں علامات پر لیبل بھی لگائیں۔ || لاندې سرکټونه جوړ کړئ او د لړیز او موازي سرکټونو ځانګړتیاوې وازمویئ. په دواړو کې نښې هم په نوم کړئ.
+q 9.4 | Label the symbols in both circuits and compare them. || دونوں سرکٹس کی علامات پر لیبل لگائیں اور موازنہ کریں۔ || په دواړو سرکټونو کې نښې په نوم کړئ او پرتله یې کړئ.
+sol Both circuits have a cell (long and short line), wires (straight lines) and two bulbs (circle with a cross). In the series circuit the bulbs are in one loop — removing one switches off the other and both are dimmer; in the parallel circuit each bulb has its own branch — removing one leaves the other glowing brightly. ## || دونوں میں سیل، تار اور دو بلب ہیں؛ فرق راستوں کی تعداد کا ہے۔ || په دواړو کې سېل، تار او دوه ګروپونه دي؛ توپیر د لارو په شمېر کې دی.
+endexample

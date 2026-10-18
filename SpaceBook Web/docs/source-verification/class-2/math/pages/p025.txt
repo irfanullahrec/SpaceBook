@@ -1,0 +1,23 @@
+@printed 20
+@sec backward | Backward Counting 10 Steps Down || 10 قدم پیچھے کی طرف گنتی || لس ګامه شاته شمېرنه
+@deco Two cartoon rabbits at the ends of the number line; a girl speaks the example in a speech bubble.
+# Backward Counting 10 Steps Down || 10 قدم پیچھے کی طرف گنتی || لس ګامه شاته شمېرنه
+nline 0..10 | 10>9 above | 9>8 above | 8>7 above | 7>6 above | 6>5 above | 5>4 above | 4>3 above | 3>2 above | 2>1 above | 1>0 above || The rabbit hops back from 10 to 0, one step at a time. || خرگوش 10 سے 0 تک ایک ایک قدم پیچھے کودتا ہے۔ || سوی له 10 څخه تر 0 پورې یو یو ګام شاته ټوپ وهي.
+jumps 10,9,8,7,6,5,4,3,2,1,0 | -1 || Each step back is −1. || ہر قدم پیچھے −1 ہے۔ || هر ګام شاته −1 دی.
+p “Let us count and write backward counting 10 steps down from 111 and 343.” || ”آئیے 111 اور 343 سے 10 قدم پیچھے کی طرف گنیں اور لکھیں۔“ || ”راځئ له 111 او 343 څخه لس ګامه شاته وشمېرو او ولیکو.“
+m 111 → 110, 109, 108, 107, 106, 105, 104, 103, 102, 101
+m 343 → 342, 341, 340, 339, 338, 337, 336, 335, 334, 333
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q - | Write backward counting 10 steps down from the given numbers. || دیے گئے اعداد سے 10 قدم پیچھے کی طرف گنتی لکھیں۔ || له ورکړل شویو عددونو څخه لس ګامه شاته شمېرنه ولیکئ.
+qp a | 96
+sol 95, 94, 93, 92, 91, 90, 89, 88, 87, 86 ## Take away 1 each time, ten times. || ہر بار 1 کم کریں، دس مرتبہ۔ || هر ځل 1 کم کړئ، لس ځله.
+qp b | 125
+sol 124, 123, 122, 121, 120, 119, 118, 117, 116, 115 ## Take away 1 each time, ten times. || ہر بار 1 کم کریں، دس مرتبہ۔ || هر ځل 1 کم کړئ، لس ځله.
+qp c | 278
+sol 277, 276, 275, 274, 273, 272, 271, 270, 269, 268 ## Take away 1 each time, ten times. || ہر بار 1 کم کریں، دس مرتبہ۔ || هر ځل 1 کم کړئ، لس ځله.
+qp d | 350
+sol 349, 348, 347, 346, 345, 344, 343, 342, 341, 340 ## Take away 1 each time, ten times. || ہر بار 1 کم کریں، دس مرتبہ۔ || هر ځل 1 کم کړئ، لس ځله.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Divide the students in groups and give a number. Encourage and guide them to write backward counting 10 steps down from the given numbers on board. || طلبہ کو گروپوں میں تقسیم کریں اور ایک عدد دیں۔ بورڈ پر دیے گئے اعداد سے 10 قدم پیچھے کی طرف گنتی لکھنے کے لیے ان کی حوصلہ افزائی اور رہنمائی کریں۔ || زده کوونکي په ډلو ووېشئ او یو عدد ورکړئ. هغوی وهڅوئ او لارښوونه یې وکړئ چې پر تخته له ورکړل شویو عددونو لس ګامه شاته شمېرنه ولیکي.
+endbox

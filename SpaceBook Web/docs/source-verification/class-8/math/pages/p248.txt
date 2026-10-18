@@ -1,0 +1,25 @@
+@printed 246
+@issue The top edge of the JPG cuts off the question line; read from KPTBB (spread 125): "3 Finding the scale factor and center of enlargement of these shapes." The two grids for Q3 carry faint figures (left: an orange L-shaped piece and a pink L-shaped enlargement; right: a green triangle and a small pink figure); their vertices are not readable and are not reproduced. Exercise 10.2 is closed here.
+q 3 | Finding the scale factor and center of enlargement of these shapes. || ان اشکال کے بڑا کرنے کا پیمانے کا جزو اور مرکز معلوم کرنا۔ || د دې شکلونو د لویولو پیمانې ضریب او مرکز موندل.
+endexercise
+@sec 10.3 | Circle and its Parts || دائرہ اور اس کے حصے || دایره او د هغې برخې
+# 10.3 Circle and its Parts || 10.3 دائرہ اور اس کے حصے || 10.3 دایره او د هغې برخې
+p All points that are equidistant from a fixed point from a circle. The fixed point is called the centre of the circle and the fixed distance is called the radius of the circle. O is the centre of the circle and the distance OA is the radius of the circle, where A is a point on the circumference of the circle. || وہ تمام نقاط جو ایک مقررہ نقطے سے برابر فاصلے پر ہوں دائرہ بناتے ہیں۔ مقررہ نقطہ دائرے کا مرکز اور مقررہ فاصلہ دائرے کا نصف قطر کہلاتا ہے۔ O دائرے کا مرکز ہے اور فاصلہ OA دائرے کا نصف قطر ہے، جہاں A دائرے کے محیط پر ایک نقطہ ہے۔ || ټول ټکي چې له یوه ټاکلي ټکي څخه په برابر واټن وي دایره جوړوي. ټاکلی ټکی د دایرې مرکز او ټاکلی واټن د دایرې شعاع بلل کېږي. O د دایرې مرکز دی او واټن OA د دایرې شعاع ده، چېرته چې A د دایرې په محیط یو ټکی دی.
+circ r=55 | O | pts=A:35
+### Chord || وتر || وتر
+p A line segment with end points on the circle is called chord. In fig. 10.6, $\underline{AB}$, $\underline{CD}$, and $\underline{EF}$ are chords. || وہ خط مستقیم جس کے آخری نقاط دائرے پر ہوں وتر کہلاتا ہے۔ شکل 10.6 میں $\underline{AB}$، $\underline{CD}$ اور $\underline{EF}$ وتر ہیں۔ || هغه مستقیمه کرښه چې پای ټکي یې پر دایره وي وتر بلل کېږي. په 10.6 شکل کې $\underline{AB}$، $\underline{CD}$ او $\underline{EF}$ وترونه دي.
+svg Chords AB, CD and EF of a circle || دائرے کے وتر AB، CD اور EF || د دایرې وترونه AB، CD او EF
+<svg viewBox="0 0 170 140" width="170" role="img" aria-label="A circle with three chords AB, CD and EF; AB passes through the centre" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<circle cx="85" cy="70" r="55" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="31" y1="68" x2="139" y2="70" stroke="#0f172a" stroke-width="1.4"/><line x1="40" y1="42" x2="134" y2="36" stroke="#0f172a" stroke-width="1.4"/><line x1="36" y1="92" x2="132" y2="104" stroke="#0f172a" stroke-width="1.4"/>
+<text x="16" y="72">A</text><text x="142" y="72">B</text><text x="26" y="42">C</text><text x="136" y="34">D</text><text x="22" y="100">E</text><text x="134" y="116">F</text>
+</svg>
+endsvg
+### Arc || قوس || قوس
+p A part or portion of the circumference of a circle is called an arc. Look at the circle. The arc $\overset{\frown}{AB}$ has two end points A and B. It is denoted by $\overset{\frown}{AB}$. || دائرے کے محیط کا کوئی حصہ یا ٹکڑا قوس کہلاتا ہے۔ دائرے کو دیکھیں۔ قوس $\overset{\frown}{AB}$ کے دو آخری نقاط A اور B ہیں۔ اسے $\overset{\frown}{AB}$ سے ظاہر کیا جاتا ہے۔ || د دایرې د محیط یوه برخه یا ټوټه قوس بلل کېږي. دایرې ته وګورئ. $\overset{\frown}{AB}$ قوس دوه پای ټکي A او B لري. په $\overset{\frown}{AB}$ ښودل کېږي.
+circ r=55 | O | dotted | arc=70:-20:A:B | lab=Arc@1.35:25
+p An arc which is smaller than half of the circle is called a minor arc. An arc which is more than half of the circle is called a major arc. Look at the circle. $\overset{\frown}{BC}$ is the minor arc and the arc $\overset{\frown}{BDC}$ is the major arc as it is more than half of the circle. || وہ قوس جو دائرے کے نصف سے چھوٹی ہو چھوٹی قوس کہلاتی ہے۔ وہ قوس جو دائرے کے نصف سے بڑی ہو بڑی قوس کہلاتی ہے۔ دائرے کو دیکھیں۔ $\overset{\frown}{BC}$ چھوٹی قوس ہے اور قوس $\overset{\frown}{BDC}$ بڑی قوس ہے کیونکہ یہ دائرے کے نصف سے زیادہ ہے۔ || هغه قوس چې د دایرې له نیمایي کوچنی وي وړوکی قوس بلل کېږي. هغه قوس چې د دایرې له نیمایي لوی وي لوی قوس بلل کېږي. دایرې ته وګورئ. $\overset{\frown}{BC}$ وړوکی قوس دی او $\overset{\frown}{BDC}$ قوس لوی قوس دی ځکه د دایرې له نیمایي څخه زیات دی.
+circ r=55 | O | chord=C:B:200:340 | arc=340:200:: | pts=D:90 | lab=Major Arc@1.45:60;Minor Arc@1.4:270
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Draw a circle and label its minor and major arcs. || ایک دائرہ بنائیں اور اس کی چھوٹی اور بڑی قوسیں نشان زد کریں۔ || یوه دایره رسم کړئ او د هغې وړوکي او لوی قوسونه په نښه کړئ.
+endbox

@@ -1,0 +1,33 @@
+@printed 213
+q 9 | The measures of four interior angles of a pentagon are 115°, 92°, 107°, and 83°. Find the measure of the fifth interior angle. || ایک مخمس کے چار اندرونی زاویوں کی پیمائش 115°، 92°، 107° اور 83° ہے۔ پانچویں اندرونی زاویے کی پیمائش معلوم کریں۔ || د یوې پنځه ضلعي د څلورو داخلي زاویو اندازې 115°، 92°، 107° او 83° دي. د پنځمې داخلي زاویې اندازه معلومه کړئ.
+q 10 | Find the unknown angles. || نامعلوم زاویے معلوم کریں۔ || نامعلومې زاویې معلوم کړئ.
+qp a | Heptagon STVWXYR with angles S = 129°, T = 116°, V = 120°, W = y°, X = 125°, Y = 135°, R = 130°; find y. || مسبع STVWXYR جس کے زاویے S = 129°، T = 116°، V = 120°، W = y°، X = 125°، Y = 135°، R = 130°؛ y معلوم کریں۔ || اووه ضلعي STVWXYR چې زاویې یې S = 129°، T = 116°، V = 120°، W = y°، X = 125°، Y = 135°، R = 130°؛ y معلوم کړئ.
+qp b | Pentagon PMNQO with angles P = 117°, M = 100°, N = x°, Q = 115°, O = 105°; find x. || مخمس PMNQO جس کے زاویے P = 117°، M = 100°، N = x°، Q = 115°، O = 105°؛ x معلوم کریں۔ || پنځه ضلعي PMNQO چې زاویې یې P = 117°، M = 100°، N = x°، Q = 115°، O = 105°؛ x معلوم کړئ.
+qp c | Hexagon ABCDEF with angles A = 135°, B = 62°, C = 151°, D = 140°, E = n°, F = (n + 6)°; find n. || مسدس ABCDEF جس کے زاویے A = 135°، B = 62°، C = 151°، D = 140°، E = n°، F = (n + 6)°؛ n معلوم کریں۔ || شپږ ضلعي ABCDEF چې زاویې یې A = 135°، B = 62°، C = 151°، D = 140°، E = n°، F = (n + 6)°؛ n معلوم کړئ.
+qp d | Pentagon ABCDE with angles E = 115°, B = 115°, C = 90°, D = 90°; find ∠A. || مخمس ABCDE جس کے زاویے E = 115°، B = 115°، C = 90°، D = 90°؛ ∠A معلوم کریں۔ || پنځه ضلعي ABCDE چې زاویې یې E = 115°، B = 115°، C = 90°، D = 90°؛ ∠A معلوم کړئ.
+qp e | Hexagon with angles 120°, 90° (right angle), 110°, 130°, 160° and x°; find x. || مسدس جس کے زاویے 120°، 90° (قائمہ)، 110°، 130°، 160° اور x° ہیں؛ x معلوم کریں۔ || شپږ ضلعي چې زاویې یې 120°، 90° (قایمه)، 110°، 130°، 160° او x° دي؛ x معلوم کړئ.
+poly S:60,20;T:130,15;V:165,55;W:160,105;X:110,135;Y:40,115;R:25,65 | fill=#fff | in=129°@S;116°@T;120°@V;y°@W;125°@X;135°@Y;130°@R | desc=Q10(a): heptagon STVWXYR with angles 129, 116, 120, y, 125, 135 and 130 degrees || Q10(a) || سوال 10(a) || پوښتنه 10(a)
+endexercise
+@issue Q10 is printed as five polygon drawings; the angles are given in words above and Q10(a) is also drawn. In Q10(e) the unlabelled corner with a square mark is read as a right angle. Several of these polygons do not add up exactly (e.g. in (a) the angles give y = 45°, in (c) 2n = 226°).
+@sec 11.4 | Circle || دائرہ || دایره
+# 11.4 Circle || 11.4 دائرہ || 11.4 دایره
+p A circle is a plane figure that is a set of points that lie at the same distance from the centre of it. Look at the clock. The hands of the clock move around the point and make a circle. || دائرہ ایک مستوی شکل ہے جو ان نقاط کا سیٹ ہے جو اس کے مرکز سے ایک ہی فاصلے پر واقع ہوں۔ گھڑی کو دیکھیں۔ گھڑی کی سوئیاں نقطے کے گرد گھومتی ہیں اور دائرہ بناتی ہیں۔ || دایره یو مستوي شکل دی چې د هغو ټکو سېټ دی چې له مرکز څخه په یو شان واټن پراته وي. ساعت ته وګورئ. د ساعت ستنې د یوه ټکي شاوخوا ګرځي او دایره جوړوي.
+@deco Pictures of a circle with its centre marked and an analogue clock.
+p A circle has many parts. Look at the adjoining figure labelled with several parts. Let's discuss these parts in detail. || دائرے کے بہت سے حصے ہوتے ہیں۔ ساتھ دی گئی شکل کو دیکھیں جس پر کئی حصوں کے نام لکھے ہیں۔ آئیے ان حصوں پر تفصیل سے بات کریں۔ || دایره ډېرې برخې لري. څنګ ته شکل ته وګورئ چې پر څو برخو نومونه لیکل شوي. راځئ دا برخې په تفصیل وڅېړو.
+svg Parts of a circle: centre, radius, diameter, chord, arc, circumference, segment (shaded) and sector (shaded) || دائرے کے حصے: مرکز، رداس، قطر، وتر، قوس، محیط، قطعہ (سایہ دار) اور قطاع (سایہ دار) || د دایرې برخې: مرکز، شعاع، قطر، وتر، قوس، محیط، قطعه (سیوري لرونکې) او قطاع (سیوري لرونکې)
+<svg viewBox="0 0 280 220" width="280" role="img" aria-label="A circle with centre marked; a diameter through the centre; a radius from the centre; a chord near the top cutting off a shaded blue segment; a shaded orange sector at the bottom between two radii; an arc and the circumference labelled" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<defs><clipPath id="cp-c"><circle cx="140" cy="115" r="80"/></clipPath></defs>
+<g clip-path="url(#cp-c)"><polygon points="40,20 260,20 225,75 66,58" fill="#7dd3fc"/></g>
+<path d="M140 115 L82 170 A80 80 0 0 0 213 148 Z" fill="#fed7aa" stroke="#0f172a"/>
+<circle cx="140" cy="115" r="80" fill="none" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="66" y1="85" x2="214" y2="145" stroke="#0f172a"/><line x1="78" y1="64" x2="210" y2="76" stroke="#0f172a"/>
+<circle cx="140" cy="115" r="3" fill="#0f172a"/>
+<text x="150" y="58" text-anchor="middle" font-weight="700">Segment</text><text x="125" y="92">Chord</text><text x="150" y="108">Centre</text><text x="180" y="138">Diameter</text><text x="92" y="130">Radius</text><text x="148" y="180" text-anchor="middle">Sector</text><text x="40" y="110" text-anchor="end">Arc</text><text x="60" y="22">Circumference</text>
+</svg>
+endsvg
+### Centre || مرکز || مرکز
+p The fixed point whose distance from all the points on the boundary of the circle is equal is called the centre of the circle. Look at the circle. The fixed point "A" is the centre of the circle. || وہ مقررہ نقطہ جس کا دائرے کی حد کے تمام نقاط سے فاصلہ برابر ہو، دائرے کا مرکز کہلاتا ہے۔ دائرے کو دیکھیں۔ مقررہ نقطہ "A" دائرے کا مرکز ہے۔ || هغه ټاکلی ټکی چې د دایرې د پولې له ټولو ټکو څخه یې واټن برابر وي، د دایرې مرکز بلل کېږي. دایرې ته وګورئ. ټاکلی ټکی "A" د دایرې مرکز دی.
+@deco A circle with centre A and a radius AB drawn.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Instruct the students how to draw a circle with a compass. Ask them to draw a circle using a compass in their notebook. || طلبہ کو پرکار سے دائرہ بنانا سکھائیں۔ ان سے کہیں کہ اپنی کاپی میں پرکار سے دائرہ بنائیں۔ || زده کوونکو ته د پرکار په مرسته د دایرې رسمول وښایئ. ترې وغواړئ چې په خپله کتابچه کې د پرکار په مرسته دایره رسم کړي.
+endbox

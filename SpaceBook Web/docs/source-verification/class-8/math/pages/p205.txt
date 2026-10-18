@@ -1,0 +1,7 @@
+@printed 197
+@issue The lines carry no labels; from the grid, the vertical lines are at about x = −5, −3, 3 and 5 and the horizontal lines at about y = 4, 2, −3 and −7. Approximate readings.
+q 2 | Write the equation for the following vertical lines. || درج ذیل عمودی لکیروں کی مساوات لکھیں۔ || د لاندې عمودي کرښو معادله ولیکئ.
+plane x=-7..7 | y=-7..7 | step=1 | vlines=-5,-7.5,7.5;-3,-7.5,7.5;3,-7.5,7.5;5,-7.5,7.5 | pts=0,0:O(0, 0)
+q 3 | Write the equation for the following horizontal lines. || درج ذیل افقی لکیروں کی مساوات لکھیں۔ || د لاندې افقي کرښو معادله ولیکئ.
+plane x=-7..7 | y=-7..7 | step=1 | hlines=4,-7.5,7.5;2,-7.5,7.5;-3,-7.5,7.5;-7,-7.5,7.5 | pts=0,0:O(0, 0)
+endexercise

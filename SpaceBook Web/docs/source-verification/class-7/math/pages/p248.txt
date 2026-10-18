@@ -1,0 +1,22 @@
+@printed 244
+endexercise
+@sec 13.2 | Line Graph || لائن گراف || لاین ګراف
+# 13.2 Line Graph || 13.2 لائن گراف || 13.2 لاین ګراف
+p When a graph is drawn using lines only, instead of pictures or rectangular bars, it is called a line graph. Line graphs show gradual changes in data or information. The table given below shows the marks (out of 10) Madiha got in Mathematics weekly tests. Let's look at its line graph and interpret it. || جب گراف تصاویر یا مستطیل بارز کے بجائے صرف خطوط سے بنایا جائے تو اسے لائن گراف کہتے ہیں۔ لائن گراف ڈیٹا یا معلومات میں بتدریج تبدیلیاں دکھاتے ہیں۔ نیچے دیا گیا جدول مدیحہ کے ریاضی کے ہفتہ وار ٹیسٹوں میں (10 میں سے) نمبر دکھاتا ہے۔ آئیے اس کا لائن گراف دیکھیں اور اس کی تشریح کریں۔ || کله چې ګراف د انځورونو یا مستطیلي بارونو پر ځای یوازې په کرښو رسم شي، لاین ګراف بلل کېږي. لاین ګرافونه په معلوماتو کې تدریجي بدلونونه ښيي. لاندې جدول د مدیحې د ریاضي په اونیزو ازموینو کې (له 10 څخه) نمرې ښيي. راځئ د هغې لاین ګراف وګورو او تشریح یې کړو.
+linegraph cats=Week 1,Week 2,Week 3,Week 4,Week 5 | vals=3.5,7.5,5.5,5.5,7.8 | ymax=10 | step=2 | ylab=Marks | xlab=Weeks || Madiha's weekly Mathematics test marks (out of 10) || مدیحہ کے ریاضی کے ہفتہ وار ٹیسٹ کے نمبر (10 میں سے) || د مدیحې د ریاضي اونیزې ازموینې نمرې (له 10 څخه)
+@issue The text says "The table given below" but no table is printed; the marks are read from the line graph (about 3.5, 7.5, 5.5, 5.5, 7.8). These readings do not exactly match the statements below (4 more in week 2, 2 less in week 3), which suggest marks such as 3, 7, 5, 5, 8. Kept as printed.
+p From the line graph above, we can see that: || اوپر والے لائن گراف سے ہم دیکھ سکتے ہیں کہ: || له پورته لاین ګراف څخه لیدلی شو چې:
+- Madiha got 4 more marks in week 2 than in week 1. || مدیحہ نے ہفتہ 2 میں ہفتہ 1 سے 4 نمبر زیادہ حاصل کیے۔ || مدیحې په دوهمه اونۍ کې له لومړۍ اونۍ 4 نمرې ډېرې واخیستې.
+- She got 2 less marks in week 3 than in week 2. || اس نے ہفتہ 3 میں ہفتہ 2 سے 2 نمبر کم حاصل کیے۔ || په درېیمه اونۍ کې یې له دوهمې اونۍ 2 نمرې لږې واخیستې.
+- In week 4, she got the same marks as in week 3. || ہفتہ 4 میں اس نے ہفتہ 3 جتنے نمبر حاصل کیے۔ || په څلورمه اونۍ کې یې د درېیمې اونۍ هومره نمرې واخیستې.
+- She got the highest marks in week 5. || اس نے ہفتہ 5 میں سب سے زیادہ نمبر حاصل کیے۔ || په پنځمه اونۍ کې یې تر ټولو ډېرې نمرې واخیستې.
+- In week 1, she got the least marks. || ہفتہ 1 میں اس نے سب سے کم نمبر حاصل کیے۔ || په لومړۍ اونۍ کې یې تر ټولو لږې نمرې واخیستې.
+exercise 13.2
+q 1 | The following line graph shows the number of toys produced in a toy factory. || درج ذیل لائن گراف کھلونوں کی ایک فیکٹری میں تیار ہونے والے کھلونوں کی تعداد دکھاتا ہے۔ || لاندې لاین ګراف د لوبو په یوه فابریکه کې د جوړو شویو لوبو شمېر ښيي.
+linegraph cats=Jan,Feb,March,April,May,June | vals=2000,3000,1500,5800,3500,4900 | ymax=7000 | step=1000 | ylab=No. of toys | xlab=Months || Toys produced per month || ہر مہینے تیار ہونے والے کھلونے || په هره میاشت کې جوړې شوې لوبې
+@issue The monthly values are read approximately from the printed graph (about 2000, 3000, 1500, 5800, 3500, 4900).
+p Read the line graph carefully. Then answer the questions given below. || لائن گراف کو غور سے پڑھیں۔ پھر نیچے دیے گئے سوالات کے جواب دیں۔ || لاین ګراف په دقت ولولئ. بیا لاندې پوښتنو ته ځواب ورکړئ.
+qp a | Which month experienced the highest production? || کس مہینے میں سب سے زیادہ پیداوار ہوئی؟ || په کومه میاشت کې تر ټولو ډېر تولید وشو؟
+qp b | Which two months experienced a decrease in production? || کن دو مہینوں میں پیداوار میں کمی ہوئی؟ || په کومو دوو میاشتو کې تولید کم شو؟
+qp c | How many more toys were produced in May than in March? || مارچ کی نسبت مئی میں کتنے زیادہ کھلونے تیار ہوئے؟ || د مارچ په پرتله په می کې څو ډېرې لوبې جوړې شوې؟
+qp d | What is the total increase in the number of toys from January to April? || جنوری سے اپریل تک کھلونوں کی تعداد میں کل کتنا اضافہ ہوا؟ || له جنورۍ تر اپرېل پورې د لوبو په شمېر کې ټول څومره زیاتوالی راغی؟

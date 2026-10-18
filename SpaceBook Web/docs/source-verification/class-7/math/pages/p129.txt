@@ -1,0 +1,48 @@
+@printed 125
+## 7.8.2 Factorization by Regrouping || 7.8.2 دوبارہ گروہ بندی سے تجزی || 7.8.2 د بیا ډلبندۍ په مرسته تجزیه
+p Sometimes, an algebraic expression has no common factors and algebraic identities are also useless for finding factors of an algebraic expression. Then we arrange the terms and make groups of common factors. || کبھی کسی الجبری عبارت میں کوئی مشترک جزوِ ضربی نہیں ہوتا اور الجبری مماثلتیں بھی اس کے اجزائے ضربی معلوم کرنے میں کام نہیں آتیں۔ تب ہم ارکان کو ترتیب دے کر مشترک اجزائے ضربی کے گروہ بناتے ہیں۔ || کله کله یوه الجبري افاده ګډ ضربي جز نه لري او الجبري مطابقتونه هم د هغې د ضربي اجزاوو په موندلو کې ګټه نه کوي. بیا حدونه ترتیبوو او د ګډو ضربي اجزاوو ډلې جوړوو.
+example 1 | $x^3 - x^2 - 3x + 3$. || $x^3 - x^2 - 3x + 3$۔ || $x^3 - x^2 - 3x + 3$.
+eq \begin{aligned} &x^3 - x^2 - 3x + 3 \\ &= x^2(x - 1) - 3(x - 1) \end{aligned}
+p Here, $(x - 1)$ is the common factor in both groups || یہاں $(x - 1)$ دونوں گروہوں میں مشترک جزوِ ضربی ہے || دلته $(x - 1)$ په دواړو ډلو کې ګډ ضربي جز دی
+eq = (x^2 - 3)(x - 1)
+endexample
+example 2 | $6u^2 - 3u - 6u + 3$ || $6u^2 - 3u - 6u + 3$ || $6u^2 - 3u - 6u + 3$
+p Rearrange the terms and make groups for taking the common factor. || ارکان کو دوبارہ ترتیب دیں اور مشترک جزوِ ضربی نکالنے کے لیے گروہ بنائیں۔ || حدونه بیا ترتیب کړئ او د ګډ ضربي جز د ایستلو لپاره ډلې جوړې کړئ.
+eq \begin{aligned} &= 6u^2 - 6u - 3u + 3 \\ &= 6u(u - 1) - 3(u - 1) \end{aligned}
+p Here, $(u - 1)$ is the common factor in both groups || یہاں $(u - 1)$ دونوں گروہوں میں مشترک جزوِ ضربی ہے || دلته $(u - 1)$ په دواړو ډلو کې ګډ ضربي جز دی
+eq = (6u - 3)(u - 1)
+endexample
+exercise 7.8
+q 1 | Factorize the following by taking common factors. || مشترک اجزائے ضربی نکال کر درج ذیل کی تجزی کریں۔ || د ګډو ضربي اجزاوو په ایستلو لاندې تجزیه کړئ.
+qp a | $a^4 - 2a^2$
+qp b | $ab - bc$
+qp c | $2xy - 4xy - 6xy$
+qp d | $32xy - 16x$
+qp e | $7a^2b + ab - 7a^2c - ac$
+qp f | $6x^4 - 2x^2y + 3x^4y^2 - x^2y^3$
+qp g | $6x + 9y + 18z$
+qp h | $x(x^2 - y^2) - 5x(x - y)$
+qp i | $(a^2 + bc) - (b + c)a$
+q 2 | Factorize the following using algebraic identities. || الجبری مماثلتوں کی مدد سے درج ذیل کی تجزی کریں۔ || د الجبري مطابقتونو په مرسته لاندې تجزیه کړئ.
+qp a | $4x^2 - 9$
+qp b | $81a^2 - b^2$
+qp c | $4y^2 - 16$
+qp d | $5u^2 - 80v^2$
+qp e | $(a + b)^2 - c^2$
+qp f | $100x^2 - 81$
+qp g | $16x^2 - 49y^2$
+qp h | $\left(\frac{4}{x}\right)^2 - (y + 9)^2$
+qp i | $a^4 - b^4$
+qp j | $4x^2 + 12xy + 9y^2$
+qp k | $a^2 - 2a + 1$
+qp l | $\frac{a^4}{b^2} - 8ab + 16\frac{b^4}{a^2}$
+qp m | $1 + 14n + 49n^2$
+qp n | $25a^2 - 10ab + b^2$
+qp o | $9a^2 + 30ab + 25b^2$
+qp p | $81x^2 + 72xy + 16y^2$
+qp q | $4x^2 - 12 + 9\frac{1}{x^2}$
+qp r | $4x^2 - 36x^2yz + 81x^2y^2z^2$
+q 3 | Factorize the following by making groups. || گروہ بنا کر درج ذیل کی تجزی کریں۔ || د ډلو په جوړولو لاندې تجزیه کړئ.
+qp a | $a^2 + 8a + 4a + 32$
+qp b | $x^2 + 3x - 5x - 15$
+qp c | $7x^2 + 49x + 7x + x^2$

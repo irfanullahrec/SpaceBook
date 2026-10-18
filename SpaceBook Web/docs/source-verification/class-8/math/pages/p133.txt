@@ -1,0 +1,31 @@
+@printed 127
+@issue Example 4 prints "(3t¹ + 9ts²) ÷ 3t" and later lines with mixed powers (e.g. "4t − 45s′ + 5s′"); some exponents are unreadable marks. Transcribed as read: 4t + 5s[3t + 4s² − {(9s + 5t) + (3t² + 9ts²) ÷ 3t}] … = 4t − 45s² + 5s³ − 10st − 5st². The identity text says "true only if x = 2. It cannot be true for values of x other than 1"; kept as printed.
+example 4
+m $4t + 5s[3t + 4s^2 - \{(9s + 5t) + (3t^2 + 9ts^2) \div 3t\}]$ $\quad$ ← First solve the operation within parentheses.
+m $= 4t + 5s[3t + 4s^2 - \{9s + 5t + t^2 + 3s^2\}]$ $\quad$ ← Now solve the like terms in curly brackets.
+m $= 4t + 5s[3t + 4s^2 - 9s - 5t - t^2 - 3s^2]$ $\quad$ ← Then open the curly bracket and change the sign.
+m $= 4t + 5s[-2t + s^2 - 9s - t^2]$ $\quad$ ← Then open the square bracket and change the sign.
+m $= 4t - 10st + 5s^3 - 45s^2 - 5st^2$ $\quad$ ← Next simplify the like terms
+m $= 4t - 45s^2 + 5s^3 - 10st - 5st^2$
+endexample
+exercise 6.8
+q 1 | Simplify the following. || درج ذیل کو مختصر کریں۔ || لاندې ساده کړئ.
+qp i | $2ab + 2b(5a + b)$
+qp ii | $4x + [2y - \{(2xy + 5x)(1 + 2xy)\}]$
+qp iii | $4c - 2d\{4cd - 4c(1 + 2d)\}$
+qp iv | $6m - (2 + 5m) - [\{(2m + n)(5m + 2n)\} - 4m]$
+qp v | $2x[5y - \{3xy + (4y^2 + 3x^3)\}]$
+qp vi | $9e^2 + 5f - \{4e(e + f)\}$
+qp vii | $24a^2 - [4b^2\{(a + b)(b^2 + a) - (a^2 + b^3 + c)\}]$
+qp viii | $4y - 2yz[4 \div \{(8y + 2z^2) - 4y(5z + 2y)\}]$
+endexercise
+@sec 6.9 | Algebraic Identities || الجبری مماثلتیں || الجبري مطابقتونه
+# 6.9 Algebraic Identities || 6.9 الجبری مماثلتیں || 6.9 الجبري مطابقتونه
+p An equation is true conditionally, whereas the identity is always true. We know that an equation is true for specific values of the variable(s) involved. On the other hand, an identity is true for all values of the variable(s) involved. For example, $2x + 5 = 9$ is an equation. It is true only if $x = 2$. It cannot be true for values of $x$ other than 1. || مساوات مشروط طور پر درست ہوتی ہے جبکہ مماثلت ہمیشہ درست ہوتی ہے۔ ہم جانتے ہیں کہ مساوات متعلقہ متغیر(ات) کی مخصوص قیمتوں کے لیے درست ہوتی ہے۔ دوسری طرف مماثلت متعلقہ متغیر(ات) کی تمام قیمتوں کے لیے درست ہوتی ہے۔ مثال کے طور پر $2x + 5 = 9$ ایک مساوات ہے۔ یہ صرف اس صورت میں درست ہے جب $x = 2$۔ یہ $x$ کی 1 کے علاوہ دوسری قیمتوں کے لیے درست نہیں ہو سکتی۔ || معادله په شرطي ډول سمه وي، په داسې حال کې چې مطابقت تل سم وي. موږ پوهېږو چې معادله د اړوندو متغیرونو د ځانګړو ارزښتونو لپاره سمه وي. له بلې خوا، مطابقت د اړوندو متغیرونو د ټولو ارزښتونو لپاره سم وي. د بېلګې په توګه $2x + 5 = 9$ یوه معادله ده. دا یوازې هغه وخت سمه ده چې $x = 2$. د $x$ له 1 پرته د نورو ارزښتونو لپاره سمه نه شي کېدای.
+p Here we will discuss the following 4 basic identities. || یہاں ہم درج ذیل 4 بنیادی مماثلتوں پر بات کریں گے۔ || دلته به لاندې 4 بنسټیز مطابقتونه وڅېړو.
+box info | Identities || مماثلتیں || مطابقتونه
+m **Identity I:** $(x + a)(x + b) = x^2 + (a + b)x + ab$
+m **Identity II:** $(a + b)^2 = a^2 + 2ab + b^2$
+m **Identity III:** $(a - b)^2 = a^2 - 2ab + b^2$
+m **Identity IV:** $a^2 - b^2 = (a - b)(a + b)$
+endbox

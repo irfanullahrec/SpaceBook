@@ -1,0 +1,12 @@
+@printed 130
+exercise Over and under (Page 130)
+q 1 | Tick (✓) the picture where the bird is over the house. || اس تصویر پر (✓) کا نشان لگائیں جس میں پرندہ گھر کے اوپر ہے۔ || په هغه انځور (✓) ولګوئ چې مرغه د کور پر سر ده.
+scene 360 130 ; house@100,75,3 ; bird.brown@35,95 ; text 100 125 A ; house@270,75,3 ; bird.blue@285,20 ; text 270 125 B || A: a bird flying beside a house; B: a bird on the roof of a house || A: گھر کے پاس اڑتا پرندہ؛ B: گھر کی چھت پر پرندہ || A: د کور تر څنګ الوتونکې مرغه؛ B: د کور پر بام مرغه
+sol Picture B ## In picture B the bird sits on top of the roof. || تصویر B میں پرندہ چھت کے اوپر بیٹھا ہے۔ || په B انځور کې مرغه د بام پر سر ناسته ده.
+q 2 | Encircle the boy under the slide. || سلائیڈ کے نیچے والے لڑکے کے گرد دائرہ لگائیں۔ || د ښوییدونکې لاندې هلک په کړۍ کې ونیسئ.
+scene 300 190 ; slide@150,95,5 ; boy@165,55,1.1 ; boy.sky@115,150,1.2 ; text 230 180 boy_on_the_slide ; text 70 185 boy_under_the_slide || One boy slides down; another boy stands under the slide. || ایک لڑکا سلائیڈ پر پھسل رہا ہے؛ دوسرا سلائیڈ کے نیچے کھڑا ہے۔ || یو هلک ښوییږي؛ بل د ښوییدونکې لاندې ولاړ دی.
+sol Encircle the small boy standing under the slide (near the bottom of the posts). ## The other boy is on the slide, not under it. || دوسرا لڑکا سلائیڈ پر ہے، نیچے نہیں۔ || بل هلک په ښوییدونکې دی، لاندې نه.
+q 3 | Tick (✓) the picture where the horse is over the fence. || اس تصویر پر (✓) کا نشان لگائیں جس میں گھوڑا باڑ کے اوپر ہے۔ || په هغه انځور (✓) ولګوئ چې آس د کټارې پر سر دی.
+scene 360 120 ; box 0 0 170 120 #16a34a ; fence@40,75,2 ; horse.black@115,75,2 ; text 85 115 A ; box 190 0 170 120 #16a34a ; fence@275,85,2 ; horse.brown@275,40,2 ; text 275 115 B || A: a horse running beside a fence; B: a horse jumping over a fence || A: باڑ کے پاس دوڑتا گھوڑا؛ B: باڑ کے اوپر سے چھلانگ لگاتا گھوڑا || A: د کټارې تر څنګ ځغلېدونکی آس؛ B: له کټارې پر سر ټوپ وهونکی آس
+sol Picture B ## In picture B the horse is jumping over the fence. || تصویر B میں گھوڑا باڑ کے اوپر سے کود رہا ہے۔ || په B انځور کې آس له کټارې پر سر ټوپ وهي.
+endexercise

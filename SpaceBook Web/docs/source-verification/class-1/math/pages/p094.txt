@@ -1,0 +1,28 @@
+@printed 90
+exercise Value of coins and notes (Page 90)
+p Write the value of each coin and note. || ہر سکے اور نوٹ کی مالیت لکھیں۔ || د هرې سکې او نوټ ارزښت ولیکئ.
+q 1 | Coin with Faisal Mosque (one side of the Rs 1 coin): Rupee ☐ || فیصل مسجد والا سکہ: روپیہ ☐ || د فیصل جومات سکه: روپۍ ☐
+cnt coin:1 "Rupee" [] || coin || سکہ || سکه
+sol 1 ## This is the Rs 1 coin. || یہ ایک روپے کا سکہ ہے۔ || دا د یوې روپۍ سکه ده.
+q 2 | Coin with Badshahi Mosque (Rs 2 coin): Rupees ☐ || بادشاہی مسجد والا سکہ: روپے ☐ || د بادشاهي جومات سکه: روپۍ ☐
+cnt coin:1 "Rupees" [] || coin || سکہ || سکه
+sol 2 ## This is the Rs 2 coin. || یہ دو روپے کا سکہ ہے۔ || دا د دوو روپیو سکه ده.
+q 3 | Small coin with a 5 in a pentagon: Rupees ☐ || پانچ کونوں والا ۵ کا سکہ: روپے ☐ || په پنځه ګوټي کې د ۵ سکه: روپۍ ☐
+cnt coin5:1 "Rupees" [] || coin || سکہ || سکه
+sol 5 ## This is the Rs 5 coin. || یہ پانچ روپے کا سکہ ہے۔ || دا د پنځو روپیو سکه ده.
+q 4 | Coin with Minar-e-Pakistan (Rs 10 coin): Rupees ☐ || مینارِ پاکستان والا سکہ: روپے ☐ || د منار پاکستان سکه: روپۍ ☐
+cnt coin:1 "Rupees" [] || coin || سکہ || سکه
+sol 10 ## This is the Rs 10 coin. || یہ دس روپے کا سکہ ہے۔ || دا د لسو روپیو سکه ده.
+q 5 | Green-brown note: Rupees ☐ || سبز بھورا نوٹ: روپے ☐ || شین نصواري نوټ: روپۍ ☐
+cnt note10:1 "Rupees" [] || note || نوٹ || نوټ
+sol 10 ## This is the Rs 10 note. || یہ دس روپے کا نوٹ ہے۔ || دا د لسو روپیو نوټ دی.
+q 6 | Orange note: Rupees ☐ || نارنجی نوٹ: روپے ☐ || نارنجي نوټ: روپۍ ☐
+cnt note20:1 "Rupees" [] || note || نوٹ || نوټ
+sol 20 ## This is the Rs 20 note. || یہ بیس روپے کا نوٹ ہے۔ || دا د شلو روپیو نوټ دی.
+q 7 | Purple note: Rupees ☐ || جامنی نوٹ: روپے ☐ || ارغواني نوټ: روپۍ ☐
+cnt note50:1 "Rupees" [] || note || نوٹ || نوټ
+sol 50 ## This is the Rs 50 note. || یہ پچاس روپے کا نوٹ ہے۔ || دا د پنځوسو روپیو نوټ دی.
+q 8 | Red note: Rupees ☐ || سرخ نوٹ: روپے ☐ || سور نوټ: روپۍ ☐
+cnt note100:1 "Rupees" [] || note || نوٹ || نوټ
+sol 100 ## This is the Rs 100 note. || یہ سو روپے کا نوٹ ہے۔ || دا د سلو روپیو نوټ دی.
+endexercise

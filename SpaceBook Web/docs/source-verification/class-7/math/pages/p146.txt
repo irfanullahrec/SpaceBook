@@ -1,0 +1,18 @@
+@printed 142
+q 5 | The age of Hassan added to thrice the age of Nida is 30 years. Construct a linear equation in two variables for this situation. || حسن کی عمر اور ندا کی عمر کا تین گنا مل کر 30 سال ہے۔ اس صورتِ حال کے لیے دو متغیرات میں خطی مساوات بنائیں۔ || د حسن عمر له ندا د عمر درې چنده سره یوځای 30 کاله دی. د دې حالت لپاره په دوو متحولونو کې خطي معادله جوړه کړئ.
+q 6 | The price of 10 books and 3 notebooks is RS 2950. Construct a linear equation in two variables for this situation. || 10 کتابوں اور 3 نوٹ بکس کی قیمت 2950 روپے ہے۔ اس صورتِ حال کے لیے دو متغیرات میں خطی مساوات بنائیں۔ || د 10 کتابونو او 3 کتابچو بیه 2950 روپۍ ده. د دې حالت لپاره په دوو متحولونو کې خطي معادله جوړه کړئ.
+endexercise
+@sec 8.4 | The Solution of a Linear Equation in Two Variables || دو متغیرات میں خطی مساوات کا حل || په دوو متحولونو کې د خطي معادلې حل
+# 8.4 The Solution of a Linear Equation in Two Variables || 8.4 دو متغیرات میں خطی مساوات کا حل || 8.4 په دوو متحولونو کې د خطي معادلې حل
+p Consider the following linear equation, $2x - y = 4$. Put $x = 1$, || درج ذیل خطی مساوات پر غور کریں، $2x - y = 4$۔ $x = 1$ رکھیں، || لاندې خطي معادله وګورئ، $2x - y = 4$. $x = 1$ کېږدئ،
+eq \begin{aligned} 2(1) - y &= 4 \\ 2 - y &= 4 \\ -y &= 4 - 2 \\ -y &= 2 \\ y &= -2 \quad \text{[By multiplying both sides by } -1] \\ (x, z) &= (1, -2) \end{aligned}
+p **Check:** $2x - y = 4$. Put $x = 1$ and $y = -2$: $2(1) - (-2) = 4$, $2 + 2 = 4$, $4 = 4$ || **جانچ:** $2x - y = 4$۔ $x = 1$ اور $y = -2$ رکھیں: $2(1) - (-2) = 4$، $2 + 2 = 4$، $4 = 4$ || **ازموینه:** $2x - y = 4$. $x = 1$ او $y = -2$ کېږدئ: $2(1) - (-2) = 4$، $2 + 2 = 4$، $4 = 4$
+@issue The solution pair is printed as "(x, z) = (1, −2)" (should be (x, y)); kept as printed.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- A linear equation in two variables does not possess a unique solution. || دو متغیرات میں خطی مساوات کا کوئی واحد حل نہیں ہوتا۔ || په دوو متحولونو کې خطي معادله یو ځانګړی حل نه لري.
+- A linear equation in one variable possesses a unique || ایک متغیر میں خطی مساوات کا ایک واحد (حل) ہوتا ہے || په یوه متحول کې خطي معادله یو ځانګړی (حل) لري
+endbox
+@issue The second note line ends at "possesses a unique" (the word "solution" is missing in print); kept as printed.
+p We say that the equation $2x - y = 4$ is satisfied by $x = 1$ and $y = -2$. Hence (1, −2) is a solution of this equation. Now, again consider this equation. $2x - y = 4$. Put $x = 2$, || ہم کہتے ہیں کہ مساوات $2x - y = 4$ کو $x = 1$ اور $y = -2$ پورا کرتے ہیں۔ لہٰذا (1، −2) اس مساوات کا ایک حل ہے۔ اب دوبارہ اس مساوات پر غور کریں۔ $2x - y = 4$۔ $x = 2$ رکھیں، || وایو چې $2x - y = 4$ معادله د $x = 1$ او $y = -2$ په واسطه پوره کېږي. نو (1، −2) د دې معادلې یو حل دی. اوس بیا دا معادله وګورئ. $2x - y = 4$. $x = 2$ کېږدئ،
+eq \begin{aligned} 2(2) - y &= 4 \\ 4 - y &= 4 \\ -y &= 4 - 4 \\ -y &= 0 \\ y &= 0 \\ (x, y) &= (2, 0) \end{aligned}
+p If we check this solution by substituting values of x and y in the given equation, we find that the equation $2x - y = 4$ is also satisfied by these values of x and y. Hence (2, 0) is also a solution of the equation $2x - y = 4$. This reveals that a linear equation in two variables is satisfied by more than one || اگر ہم دی گئی مساوات میں x اور y کی قیمتیں رکھ کر اس حل کی جانچ کریں تو ہم دیکھتے ہیں کہ مساوات $2x - y = 4$ کو x اور y کی یہ قیمتیں بھی پورا کرتی ہیں۔ لہٰذا (2، 0) بھی مساوات $2x - y = 4$ کا ایک حل ہے۔ اس سے ظاہر ہوتا ہے کہ دو متغیرات میں خطی مساوات کو ایک سے زیادہ || که دا حل په ورکړل شوې معادله کې د x او y د ارزښتونو په ایښودلو وازمویو، ګورو چې $2x - y = 4$ معادله د x او y د دې ارزښتونو په واسطه هم پوره کېږي. نو (2، 0) هم د $2x - y = 4$ معادلې حل دی. دا ښيي چې په دوو متحولونو کې خطي معادله له یوې زیاتې

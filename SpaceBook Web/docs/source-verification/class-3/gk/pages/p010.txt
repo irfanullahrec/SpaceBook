@@ -1,0 +1,43 @@
+@printed 5
+@sec exercise | Exercise || مشق || تمرین
+@issue In Q2 the three pictures are not labelled. Picture 1 has the Sun at top-left with a shadow to the right; picture 2 has the Sun overhead with a short shadow; picture 3 has the Sun on the right (East, by the printed compass) with a long shadow to the left. SpaceBook reads them as evening, noon and morning; the order is a SpaceBook reading of the art.
+# Exercise || مشق || تمرین
+exercise Exercise (The Sun)
+q 1 | Fill in the blanks with suitable words. || مناسب الفاظ سے خالی جگہیں پُر کریں۔ || په مناسبو ټکو تش ځایونه ډک کړئ.
+qp i | The Earth revolves around the ______ in its orbit. || زمین اپنے مدار میں ______ کے گرد گھومتی ہے۔ || ځمکه په خپل مدار کې د ______ شاوخوا ګرځي.
+sol Sun ## From p. 1. || صفحہ 1 سے۔ || له ۱ مخ څخه.
+qp ii | We can guess ______ with the help of size of a shadow. || سائے کے سائز کی مدد سے ہم ______ کا اندازہ لگا سکتے ہیں۔ || د سیوري د اندازې په مرسته ______ اټکلولی شو.
+sol time ## From p. 3. || صفحہ 3 سے۔ || له ۳ مخ څخه.
+qp iii | Shadow is formed on the ______ side of light. || سایہ روشنی کی ______ سمت میں بنتا ہے۔ || سیوری د رڼا په ______ اړخ جوړېږي.
+sol opposite ## From p. 3. || صفحہ 3 سے۔ || له ۳ مخ څخه.
+qp iv | Sun sets in the ______. || سورج ______ میں ڈوبتا ہے۔ || لمر په ______ کې لوېږي.
+sol West ## From p. 2. || صفحہ 2 سے۔ || له ۲ مخ څخه.
+qp v | Shadow is ______ at morning and evening. || صبح اور شام کو سایہ ______ ہوتا ہے۔ || سهار او ماښام سیوری ______ وي.
+sol long ## From p. 3. || صفحہ 3 سے۔ || له ۳ مخ څخه.
+q 2 | With the help of the following pictures, point out morning, noon and evening. || درج ذیل تصویروں کی مدد سے صبح، دوپہر اور شام کی نشاندہی کریں۔ || د لاندې انځورونو په مرسته سهار، غرمه او ماښام وښیئ.
+svg Three trees with the Sun in different places (North ↑, East →) || سورج کے مختلف مقامات کے ساتھ تین درخت (شمال ↑، مشرق →) || درې ونې چې لمر پکې په بېلابېلو ځایونو دی (شمال ↑، ختیځ →)
+<svg viewBox="0 0 330 120" width="330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three trees: Sun left with shadow right, Sun overhead with short shadow, Sun right with shadow left">
+<g font-family="sans-serif" font-size="11" fill="#334155">
+<rect x="2" y="2" width="104" height="116" fill="#f8fafc" stroke="#94a3b8"/><rect x="113" y="2" width="104" height="116" fill="#f8fafc" stroke="#94a3b8"/><rect x="224" y="2" width="104" height="116" fill="#e0f2fe" stroke="#94a3b8"/>
+<circle cx="18" cy="22" r="8" fill="#fef08a" stroke="#ca8a04"/><circle cx="165" cy="16" r="8" fill="#fef08a" stroke="#ca8a04"/><circle cx="314" cy="40" r="8" fill="#fef08a" stroke="#ca8a04"/>
+<g><rect x="51" y="62" width="5" height="34" fill="#7c2d12"/><circle cx="54" cy="52" r="18" fill="#2dd4bf"/><ellipse cx="74" cy="98" rx="24" ry="5" fill="#1e293b"/></g>
+<g><rect x="162" y="62" width="5" height="34" fill="#7c2d12"/><circle cx="165" cy="52" r="18" fill="#2dd4bf"/><ellipse cx="165" cy="98" rx="12" ry="4" fill="#1e293b"/></g>
+<g><rect x="273" y="62" width="5" height="34" fill="#7c2d12"/><circle cx="276" cy="52" r="18" fill="#2dd4bf"/><ellipse cx="256" cy="99" rx="26" ry="5" fill="#1e293b"/></g>
+<path d="M300 22 V6 M290 14 H322" stroke="#334155"/><text x="296" y="8" font-size="7">N</text><text x="316" y="20" font-size="7">E</text>
+<text x="54" y="114" text-anchor="middle">1</text><text x="165" y="114" text-anchor="middle">2</text><text x="276" y="114" text-anchor="middle">3</text>
+</g>
+</svg>
+endsvg
+sol 1 — evening (Sun low in the West, long shadow) · 2 — noon (Sun overhead, short shadow) · 3 — morning (Sun low in the East, long shadow to the West) ## SpaceBook reading of the pictures (see note). || 1 — شام · 2 — دوپہر · 3 — صبح (SpaceBook کی تشریح، نوٹ دیکھیں) || ۱ — ماښام · ۲ — غرمه · ۳ — سهار (د SpaceBook تشریح، یادښت وګورئ)
+q 3 | Read the following statements carefully and mark them with correct or wrong. || درج ذیل بیانات غور سے پڑھیں اور درست یا غلط کا نشان لگائیں۔ || لاندې بیانونه په پام ولولئ او سم یا غلط یې په نښه کړئ.
+qp i | East is opposite to North. || مشرق، شمال کے مخالف ہے۔ || ختیځ د شمال مخالف دی.
+sol Wrong ## East is opposite to West; South is opposite to North. || مشرق کا مخالف مغرب اور شمال کا مخالف جنوب ہے۔ || د ختیځ مخالف لوېدیځ او د شمال مخالف سوېل دی.
+qp ii | Size of a shadow varies at different times of the day. || دن کے مختلف اوقات میں سائے کا سائز بدلتا ہے۔ || د ورځې په بېلابېلو وختونو کې د سیوري اندازه بدلېږي.
+sol Correct ## || درست || سم
+qp iii | Shadows are longer than their real size at morning and evening. || صبح اور شام کو سائے اپنی اصل جسامت سے لمبے ہوتے ہیں۔ || سهار او ماښام سیوري له خپلې اصلي اندازې اوږده وي.
+sol Correct ## || درست || سم
+qp iv | Time can be guessed with the help of changes in the shadow. || سائے کی تبدیلی سے وقت کا اندازہ لگایا جا سکتا ہے۔ || د سیوري د بدلون په مرسته وخت اټکلېدای شي.
+sol Correct ## || درست || سم
+qp v | Light travels in straight line. || روشنی سیدھی لکیر میں چلتی ہے۔ || رڼا په سمه کرښه حرکت کوي.
+sol Correct ## || درست || سم
+endexercise

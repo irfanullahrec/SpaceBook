@@ -1,0 +1,29 @@
+@printed 40
+example 3 | Find the difference of two positive integers +4 and +1 using the number line. || عددی لائن کی مدد سے دو مثبت صحیح اعداد +4 اور +1 کا فرق معلوم کریں۔ || د عددي کرښې په مرسته د دوو مثبتو تامو عددونو +4 او +1 توپیر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Draw a number line. Start at 0 and reach 4. As both integers 4 and 1 are positive, we will find their difference as we do in whole number. Move 1 step backwards on the number line. We land on number 3. || عددی لائن کھینچیں۔ 0 سے شروع کر کے 4 تک پہنچیں۔ چونکہ دونوں صحیح اعداد 4 اور 1 مثبت ہیں، ہم ان کا فرق ویسے ہی معلوم کریں گے جیسے مکمل اعداد میں کرتے ہیں۔ عددی لائن پر 1 قدم پیچھے جائیں۔ ہم عدد 3 پر پہنچتے ہیں۔ || عددي کرښه رسم کړئ. له 0 پیل وکړئ او 4 ته ورسېږئ. څرنګه چې دواړه تام عددونه 4 او 1 مثبت دي، توپیر یې لکه د بشپړو عددونو په څېر معلوموو. په عددي کرښه یو ګام شاته لاړ شئ. په 3 عدد ورسېږو.
+nline -10..10 | circ=3,4 | 0>4 above | 4>3 below
+m So, $(+4) - (+1) = 4 - 1 = 3$.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If we add two integers with negative signs, the sum will be negative i.e. $(-) + (-) = -$ || اگر ہم منفی علامت والے دو صحیح اعداد جمع کریں تو مجموعہ منفی ہوگا یعنی $(-) + (-) = -$ || که د منفي نښې دوه تام عددونه جمع کړو، مجموعه به منفي وي یعنې $(-) + (-) = -$
+endbox
+example 4 | Find the sum of –3 and +4 using the number line. || عددی لائن کی مدد سے –3 اور +4 کا مجموعہ معلوم کریں۔ || د عددي کرښې په مرسته د –3 او +4 مجموعه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Draw a number line. Start at 0 and reach 4. As the other integer is negative i.e. –3, we will count 3 steps towards the left. We land on 1. || عددی لائن کھینچیں۔ 0 سے شروع کر کے 4 تک پہنچیں۔ چونکہ دوسرا صحیح عدد منفی ہے یعنی –3، ہم 3 قدم بائیں طرف گنیں گے۔ ہم 1 پر پہنچتے ہیں۔ || عددي کرښه رسم کړئ. له 0 پیل وکړئ او 4 ته ورسېږئ. څرنګه چې بل تام عدد منفي دی یعنې –3، درې ګامه کیڼ لوري ته شمېرو. په 1 ورسېږو.
+m So, $(+4) + (-3) = +1$
+nline -10..10 | circ=1,4 | 0>4 above | 4>1 below
+p We can also start at 0 and reach –3. 4 is positive so we will move 4 steps towards the right. We land on 1. So $(-3) + (4) = 1$. || ہم 0 سے شروع کر کے –3 تک بھی پہنچ سکتے ہیں۔ 4 مثبت ہے اس لیے ہم 4 قدم دائیں طرف جائیں گے۔ ہم 1 پر پہنچتے ہیں۔ لہٰذا $(-3) + (4) = 1$۔ || موږ کولی شو له 0 پیل وکړو او –3 ته ورسېږو. 4 مثبت دی نو څلور ګامه ښي لوري ته ځو. په 1 ورسېږو. نو $(-3) + (4) = 1$.
+nline -9..9 | circ=-3,1,4 | 0>-3 above | -3>1 below
+p We can also start at –3. 4 is positive so we will move 4 steps toward the right. We land on 1. So $(-3) + (4) = 1$. || ہم –3 سے بھی شروع کر سکتے ہیں۔ 4 مثبت ہے اس لیے ہم 4 قدم دائیں طرف جائیں گے۔ ہم 1 پر پہنچتے ہیں۔ لہٰذا $(-3) + (4) = 1$۔ || موږ کولی شو له –3 هم پیل وکړو. 4 مثبت دی نو څلور ګامه ښي لوري ته ځو. په 1 ورسېږو. نو $(-3) + (4) = 1$.
+endexample
+## 3.1.1 Addition of Integers without using the Number Line || 3.1.1 عددی لائن کے بغیر صحیح اعداد کی جمع || 3.1.1 پرته له عددي کرښې د تامو عددونو جمع
+### Addition of Integers having Same Signs || یکساں علامت والے صحیح اعداد کی جمع || د ورته نښو لرونکو تامو عددونو جمع
+p To find the sum of two integers with same signs, we have to follow three steps as below: || یکساں علامت والے دو صحیح اعداد کا مجموعہ معلوم کرنے کے لیے ہمیں درج ذیل تین مراحل اختیار کرنے ہوں گے: || د ورته نښو لرونکو دوو تامو عددونو د مجموعې د معلومولو لپاره باید لاندې درې پړاوونه تعقیب کړو:
+p **Step I:** Take absolute values of given integers. || **مرحلہ I:** دیے گئے صحیح اعداد کی مطلق قیمتیں لیں۔ || **لومړی پړاو:** د ورکړل شوو تامو عددونو مطلق ارزښتونه واخلئ.
+p **Step II:** Add the absolute values. || **مرحلہ II:** مطلق قیمتوں کو جمع کریں۔ || **دوهم پړاو:** مطلق ارزښتونه جمع کړئ.
+p **Step III:** Put the common sign of the two integers. || **مرحلہ III:** دونوں صحیح اعداد کی مشترک علامت لگائیں۔ || **درېیم پړاو:** د دواړو تامو عددونو مشترکه نښه ولګوئ.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Ask the students to use the number line explain the addition of integers. Help them to find the sum of integers using the rules. || طلبہ سے کہیں کہ عددی لائن کی مدد سے صحیح اعداد کی جمع کی وضاحت کریں۔ قواعد کی مدد سے صحیح اعداد کا مجموعہ معلوم کرنے میں ان کی مدد کریں۔ || له زده کوونکو وغواړئ چې د عددي کرښې په مرسته د تامو عددونو جمع تشریح کړي. د قواعدو په مرسته د تامو عددونو د مجموعې په موندلو کې ورسره مرسته وکړئ.
+endbox
+@issue Example 3 is titled "difference of two positive integers" inside section 3.1 Addition; kept as printed. Example 4 prints the closing statement twice with different starting points; both kept.

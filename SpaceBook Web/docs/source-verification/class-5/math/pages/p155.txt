@@ -1,0 +1,47 @@
+@printed 147
+@deco Faint pencil marks on the scan around the figures in Q3 (not part of the book).
+qp f | A triangle with sides equal is called an isosceles triangle. (i) 1   ii) 2   iii) 3   iv) 4) || جس مثلث کے \_\_\_ اضلاع برابر ہوں اسے مساوی الساقین مثلث کہتے ہیں۔ (i) 1   ii) 2   iii) 3   iv) 4) || هغه مثلث چې \_\_\_ ضلعې یې برابرې وي متساوي الساقین مثلث بلل کېږي. (i) 1   ii) 2   iii) 3   iv) 4)
+sol ii) 2 ## An isosceles triangle has two equal sides. || مساوی الساقین مثلث کے دو اضلاع برابر ہوتے ہیں۔ || متساوي الساقین مثلث دوه برابرې ضلعې لري.
+@issue Review Q1 f) prints "A triangle with sides equal" with no blank before "sides"; the options show the missing number (2).
+qp g | Which of the following is not the net of a cube? || درج ذیل میں سے کون سا مکعب کا جال نہیں ہے؟ || له لاندې څخه کوم یو د مکعب جال نه دی؟
+net 0,0 0,1 0,2 0,3 1,1 2,1 | fill=#fff || i) || i) || i)
+net 0,1 1,0 1,1 1,2 2,1 3,1 | fill=#fff || ii) || ii) || ii)
+net 0,2 1,0 1,1 1,2 1,3 2,1 | fill=#fff || iii) || iii) || iii)
+net 0,0 1,0 1,1 1,2 1,3 2,2 | fill=#fff || iv) || iv) || iv)
+sol i) ## In net i) the two squares below fold onto the same face, so one face of the cube is missing; ii), iii) and iv) fold into a cube. || جال i) میں نیچے کے دو مربع ایک ہی سطح پر آ جاتے ہیں، اس لیے مکعب کی ایک سطح کم رہتی ہے؛ ii)، iii) اور iv) مکعب بن جاتے ہیں۔ || په i) جال کې لاندې دوه مربعګانې پر یوه سطحه راځي، نو د مکعب یوه سطحه کمه پاتې کېږي؛ ii)، iii) او iv) مکعب جوړوي.
+qp h | The order of the rotational symmetry of the shape (a regular hexagon) is: (i) 1   ii) 2   iii) 3   iv) 4) || شکل (منتظم مسدس) کے گردشی تشاکل کا درجہ ہے: (i) 1   ii) 2   iii) 3   iv) 4) || د شکل (منظم شپږ ضلعي) د څرخیز تناظر درجه ده: (i) 1   ii) 2   iii) 3   iv) 4)
+sol 6 (not among the options) ## A regular hexagon looks the same after every 60° turn — 6 times in a full turn. None of the printed options is correct. || منتظم مسدس ہر 60° گردش پر ویسا ہی لگتا ہے — مکمل چکر میں 6 بار؛ چھپے ہوئے اختیارات میں سے کوئی درست نہیں۔ || منظم شپږ ضلعي په هره 60° څرخه هماغسې ښکاري — په بشپړه څرخه کې 6 ځله؛ هېڅ چاپ شوی اختیار سم نه دی.
+@issue Review Q1 h): the small shape is a regular hexagon (rotational order 6) but the options are only 1, 2, 3, 4. Recorded; check the answer key for the intended answer.
+qp i | Which of the following is showing adjacent angles? || درج ذیل میں سے کون سا متصل زاویے دکھا رہا ہے؟ || له لاندې څخه کوم یو نږدې زاويې ښيي؟
+angle rays=0,55,130 | arc=0:55:20:2;55:130:26:1 | len=80 || i) || i) || i)
+svg ii) || ii) || ii)
+<svg viewBox="0 0 230 110" width="200" role="img" aria-label="Angle 1 at one vertex and angle 2 at another vertex" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a"><g stroke="#0369a1" stroke-width="2" fill="none"><path d="M110 85 H215"/><path d="M110 85 L45 25"/><path d="M75 52 L20 40"/></g><path d="M110 85 m-25 0 a25 25 0 0 1 7 -18" fill="#fde047" stroke="#ca8a04"/><text x="130" y="60" font-size="14">2</text><text x="35" y="30" font-size="13">1</text></svg>
+endsvg
+angle rays=0,25,90 | arc=0:25:20:1;0:90:34:2 | len=80 || iii) || iii) || iii)
+angle rays=0,180,60,120 | arc=0:60:20:2;120:180:20:1 | len=80 || iv) || iv) || iv)
+sol i) ## In i) angles 1 and 2 share the vertex and one arm and lie on opposite sides of it. In ii) they have different vertices, in iii) angle 1 lies inside angle 2, and in iv) they do not share an arm. || i) میں زاویہ 1 اور 2 کا راس اور ایک بازو مشترک ہے اور وہ اس کے مخالف اطراف میں ہیں۔ ii) میں راس مختلف ہیں، iii) میں زاویہ 1، زاویہ 2 کے اندر ہے، اور iv) میں کوئی بازو مشترک نہیں۔ || په i) کې 1 او 2 زاويې ګډ راس او یو ګډ بازو لري او د هغه په مخالفو اړخونو کې دي. په ii) کې راسونه بېل دي، په iii) کې 1 زاویه د 2 زاویې دننه ده، او په iv) کې ګډ بازو نه لري.
+q 2 | Draw these angles using protractor and ruler. || زاویہ پیما اور فٹے کی مدد سے یہ زاویے بنائیں۔ || د زاویه پیما او خط کش په مرسته دا زاويې رسم کړئ.
+qp a | 35°
+qp b | 45°
+qp c | 240°
+qp d | 180°
+qp e | 90°
+qp f | 60°
+qp g | 300°
+qp h | 155°
+sol Construction ## As in Exercise 1 Q2 (page 124): for angles up to 180° measure directly; for 240° and 300° draw 360° − the angle (120° and 60°) below the ray. || مشق 1 سوال 2 (صفحہ 124) کی طرح: 180° تک کے زاویے سیدھے ناپیں؛ 240° اور 300° کے لیے شعاع کے نیچے 360° منفی زاویہ (120° اور 60°) بنائیں۔ || لکه د 1 تمرین 2 پوښتنه (124 مخ): تر 180° پورې زاويې مستقیم اندازه کړئ؛ د 240° او 300° لپاره د وړانګې لاندې 360° منفي زاویه (120° او 60°) رسم کړئ.
+q 3 | Identify the adjacent angles. || متصل زاویے پہچانیں۔ || نږدې زاويې وپېژنئ.
+angle rays=70,0,250 | nums=l@35,m@200 | len=80 || a) || a) || a)
+qp a | Figure a) || شکل a) || شکل a)
+sol ∠l and ∠m are adjacent ## They share the vertex and the middle arm. || ان کا راس اور درمیانی بازو مشترک ہے۔ || ګډ راس او منځنی بازو لري.
+angle rays=8,188,40,220 | nums=p@24,q@204 | len=90 || b) || b) || b)
+qp b | Figure b) || شکل b) || شکل b)
+sol ∠p and ∠q are not adjacent ## They are on opposite sides of the crossing point (vertically opposite angles) and share no arm. || یہ کٹاؤ کے نقطے کے آمنے سامنے ہیں (راسی مقابل زاویے) اور ان کا کوئی بازو مشترک نہیں۔ || دا د پرې کېدو د ټکي مخامخ دي (راسي مقابل زاويې) او ګډ بازو نه لري.
+angle rays=0,-40,-90 | arc=-40:0:24:40°;-90:-40:34:50° | len=90 || c) || c) || c)
+qp c | Figure c) || شکل c) || شکل c)
+sol The 40° and 50° angles are adjacent ## They share the vertex and the slanting arm (together they make 90°). || ان کا راس اور ترچھا بازو مشترک ہے (مل کر 90° بناتے ہیں)۔ || ګډ راس او اریب بازو لري (یوځای 90° جوړوي).
+angle rays=0,30,150 | nums=b@15,a@90 | len=80 || d) || d) || d)
+qp d | Figure d) || شکل d) || شکل d)
+sol ∠a and ∠b are adjacent ## They share the vertex and the arm between them. || ان کا راس اور درمیان والا بازو مشترک ہے۔ || ګډ راس او ترمنځ بازو لري.
+q 4 | Make 5 pairs of each complementary and supplementary angles. || متمم اور مکمل زاویوں کے 5، 5 جوڑے بنائیں۔ || د متممو او مکملو زاويو 5، 5 جوړې جوړې کړئ.
+sol Examples: 30° + 60° = 90°, 45° + 45° = 90°, 20° + 70° = 90°, 10° + 80° = 90°, 35° + 55° = 90°; 100° + 80° = 180°, 120° + 60° = 180°, 90° + 90° = 180°, 150° + 30° = 180°, 135° + 45° = 180° ## Complementary pairs add up to 90°; supplementary pairs add up to 180°. Many answers are possible. || متمم جوڑوں کا مجموعہ 90° اور مکمل جوڑوں کا 180° ہوتا ہے؛ کئی جواب ممکن ہیں۔ || د متممو جوړو مجموعه 90° او د مکملو جوړو 180° ده؛ ډېر ځوابونه ممکن دي.

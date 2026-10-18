@@ -1,0 +1,28 @@
+@printed 81
+@status lesson
+@sec 9-6 | کرکٹ || Cricket || کرکټ
+## کرکٹ || Cricket || کرکټ
+table
+th پیمائش || Measure || اندازه | سائز || Size || کچه
+tr گراؤنڈ || Ground || ډګر | 75 سے 80 گز || 75 to 80 yards || له 75 تر 80 ګزه
+tr پچ: لمبائی || Pitch: length || پچ: اوږدوالی | 22 گز || 22 yards || 22 ګزه
+tr پچ: چوڑائی || Pitch: width || پچ: پلنوالی | 8 فٹ 8 انچ || 8 ft 8 in || 8 فټه 8 انچه
+tr وکٹ || Wicket || وکټ | 3 عدد سٹمپ، اُونچائی 28 انچ، فاصلہ 9 انچ || 3 stumps, 28 in high, 9 in across || 3 سټمپه، لوړوالی 28 انچه، واټن 9 انچه
+tr باؤلنگ کریز || Bowling crease || د بالنګ کرېز | وکٹ سے 4 فٹ کے فاصلے پر 6 فٹ لمبی لکیر لگائیں || Draw a 6-ft line 4 ft from the wicket || له وکټ 4 فټه لرې 6 فټه اوږده کرښه وکاږئ
+endtable
+svg کرکٹ پچ — 22 گز (2012 سینٹی میٹر)، پچ کی چوڑائی 305 سینٹی میٹر، باؤلنگ کریز 264 سینٹی میٹر، ریٹرن کریز کم از کم 366 سینٹی میٹر (کتاب کی شکل سے بنایا گیا) || Cricket pitch: 22 yd (2012 cm) between the wickets; pitch 305 cm wide; bowling crease 264 cm; return creases; popping crease 122 cm in front of the wicket (redrawn from the book's figure) || د کرکټ پچ: د وکټونو ترمنځ 22 ګزه (2012 سانتي متره)
+<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Cricket pitch plan">
+<rect x="40" y="60" width="380" height="70" fill="#fef3c7" stroke="#92400e"/>
+<g stroke="#0f172a" stroke-width="2">
+<line x1="70" y1="40" x2="70" y2="150"/><line x1="390" y1="40" x2="390" y2="150"/>
+<line x1="94" y1="40" x2="94" y2="150" stroke-dasharray="4 3"/><line x1="366" y1="40" x2="366" y2="150" stroke-dasharray="4 3"/>
+<line x1="70" y1="70" x2="94" y2="70"/><line x1="70" y1="120" x2="94" y2="120"/><line x1="366" y1="70" x2="390" y2="70"/><line x1="366" y1="120" x2="390" y2="120"/>
+</g>
+<g fill="#b91c1c"><circle cx="70" cy="90" r="3"/><circle cx="70" cy="95" r="3"/><circle cx="70" cy="100" r="3"/><circle cx="390" cy="90" r="3"/><circle cx="390" cy="95" r="3"/><circle cx="390" cy="100" r="3"/></g>
+<line x1="70" y1="170" x2="390" y2="170" stroke="#475569" marker-end="url(#c83a)" marker-start="url(#c83a)"/>
+<defs><marker id="c83a" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 6 3 0 6z" fill="#475569"/></marker></defs>
+<g fill="#0f172a" text-anchor="middle"><text x="230" y="186">2012 cm (22 yd) wicket to wicket</text><text x="230" y="100">pitch 305 cm wide</text><text x="70" y="30">bowling crease 264 cm</text><text x="390" y="30">wicket (3 stumps)</text><text x="94" y="162" font-size="10">popping crease</text><text x="360" y="162" font-size="10">return crease</text></g>
+</svg>
+endsvg
+@deco A photograph of a packed cricket stadium.
+@issue Measurements: the book says the bowling crease is "a 6-ft line 4 ft from the wicket". In the Laws of Cricket the bowling crease runs through the stumps (8 ft 8 in long), and the popping crease is 4 ft in front of the wicket. The stated ground size "75 to 80 yards" is presumably the boundary radius. The figure's labels (وکٹیں، باؤلنگ کریز، پوپنگ کریز، ریٹرن کریز) are small; read from the visible shapes.

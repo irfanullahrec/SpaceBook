@@ -1,0 +1,39 @@
+@printed 53
+@deco A Scratch script captioned "Nested loops"; a "Counter" monitor showing 5 next to the block "set counter to pick random 1 to 10" (the word random circled); blocks "abs of -9" (result 9), "round 55.5" (result 56), "floor of 55.8" (result 55), "ceiling of 55.2" (result 56).
+@issue The scan's last bullets are printed "round() rounds up a number for every decimal number greater than 4, else the said number is round down"; kept as printed.
+### 4.2.4 Nesting Different type of loops || 4.2.4 مختلف اقسام کے لوپس کی نیسٹنگ || 4.2.4 د بېلابېلو ډولونو لوپونو نیسټینګ
+p Loops can have other loop(s) inside, if required. In the last scenario where 'Pico' sprite moved 15 degrees, we can have another loop which changes different background before movement takes place. For this purpose, four backgrounds (as earlier) are chosen that change one by one before Pico moves, every time. The code is shown in the figure. || ضرورت پڑنے پر لوپس کے اندر دوسرے لوپس ہو سکتے ہیں۔ پچھلے منظر میں جہاں 'Pico' اسپرائٹ 15 ڈگری گھوما، ہم ایک اور لوپ رکھ سکتے ہیں جو حرکت سے پہلے مختلف پس منظر بدلتا ہے۔ اس مقصد کے لیے چار پس منظر (جیسا پہلے) چنے جاتے ہیں جو ہر بار Pico کے حرکت کرنے سے پہلے ایک ایک کر کے بدلتے ہیں۔ کوڈ شکل میں دکھایا گیا ہے۔ || که اړتیا وي نو لوپونه نور لوپونه په دننه کې لرلای شي. په وروستي حالت کې چېرته چې 'Pico' سپرایټ ۱۵ درجې وګرځېد، موږ کولای شو بل لوپ ولرو چې د حرکت له پېښېدو مخکې بېلابېل شالیدونه بدلوي. د دې لپاره څلور شالیدونه (لکه مخکې) ټاکل کېږي چې هر ځل د Pico له حرکت مخکې یو یو بدلېږي. کوډ په انځور کې ښودل شوی.
+box code | Scratch script — Nested loops || سکریچ اسکرپٹ — نیسٹڈ لوپس || سکریچ سکریپټ — نیسټ شوي لوپونه
+m when (green flag) clicked
+m go to x: (0) y: (0)
+m point in direction (90)
+m repeat (10)
+m     set [Counter] to (0)
+m     repeat until <(Counter) = (4)>
+m         wait (0.1) secs
+m         change [Counter] by (1)
+m         switch backdrop to [next backdrop]
+m     next costume
+m     move (10) steps
+m     wait (1) secs
+m     turn (clockwise) (15) degrees
+endbox
+## 4.3 Functions in Scratch || 4.3 اسکریچ میں فنکشنز || 4.3 په Scratch کې فنکشنونه
+p Programming languages give the provision of using simple mathematical operations of addition, subtraction, multiplication and division. Scratch provides some built-in functions, as well. || پروگرامنگ زبانیں جمع، تفریق، ضرب اور تقسیم کے سادہ ریاضیاتی اعمال استعمال کرنے کی سہولت دیتی ہیں۔ Scratch کچھ بلٹ اِن فنکشنز بھی فراہم کرتا ہے۔ || پروګرامینګ ژبې د جمع، تفریق، ضرب او تقسیم د ساده ریاضيکي عملیو کارولو امکان برابروي. Scratch ځینې ځای پر ځای (built-in) فنکشنونه هم برابروي.
+### 4.3.1 Generate Random Numbers || 4.3.1 بے ترتیب اعداد پیدا کرنا || 4.3.1 تصادفي شمېرې جوړول
+p A random integer can be generated in the mentioned range of numbers. In the example a random number in the range of 1 to 10 is generated and correspondingly assigned to the variable counter. || ایک بے ترتیب صحیح عدد مذکورہ حد کے اعداد میں سے پیدا کیا جا سکتا ہے۔ مثال میں 1 سے 10 کی حد میں ایک بے ترتیب عدد پیدا کر کے متغیر counter کو تفویض کیا جاتا ہے۔ || یوه تصادفي بشپړه شمېره په یاد شوي پراخوالي کې جوړېدای شي. په بېلګه کې د ۱ څخه تر ۱۰ پورې په پراخوالي کې یوه تصادفي شمېره جوړېږي او په ورته توګه متغیر counter ته ورکول کېږي.
+m set [counter] to (pick random (1) to (10))    →  Counter = 5
+### 4.3.2 Abs() Function || 4.3.2 Abs() فنکشن || 4.3.2 Abs() فنکشن
+p The absolute function ignores the sign of the value and only considers the positive magnitude. As shown in the figure, absolute value of -9 will return 9. || ابسولیوٹ فنکشن قدر کی علامت کو نظر انداز کرتا ہے اور صرف مثبت مقدار پر غور کرتا ہے۔ جیسا کہ شکل میں دکھایا گیا ہے، -9 کی ابسولیوٹ قدر 9 لوٹائے گی۔ || مطلق (absolute) فنکشن د ارزښت نښه له پامه غورځوي او یوازې مثبت مقدار په پام کې نیسي. لکه څنګه چې په انځور کې ښودل شوی، د -9 مطلق ارزښت ۹ بېرته ورکوي.
+m abs of (-9)  →  9
+### 4.3.3 Rounding off Numbers || 4.3.3 اعداد کو راؤنڈ آف کرنا || 4.3.3 شمېرې شاوخوا کول (Rounding off)
+p To round-off numbers, round( ) function is used. However, for round-down floor( ) function and for round-up. Ceiling( ) function is used as shown in figures. || اعداد کو راؤنڈ آف کرنے کے لیے round( ) فنکشن استعمال ہوتا ہے۔ تاہم نیچے کی طرف راؤنڈ کرنے کے لیے floor( ) فنکشن اور اوپر کی طرف راؤنڈ کرنے کے لیے ceiling( ) فنکشن استعمال ہوتا ہے جیسا کہ شکلوں میں دکھایا گیا ہے۔ || د شمېرو د شاوخوا کولو لپاره round( ) فنکشن کارول کېږي. خو د ښکته شاوخوا کولو لپاره floor( ) فنکشن او د پورته شاوخوا کولو لپاره ceiling( ) فنکشن کارول کېږي لکه څنګه چې په انځورونو کې ښودل شوي.
+- round() rounds up a number for every decimal number greater than 4, else the said number is round down. || round() ہر اس اعشاری عدد کو اوپر راؤنڈ کرتا ہے جو 4 سے بڑا ہو، ورنہ مذکورہ عدد نیچے راؤنڈ ہوتا ہے۔ || round() هره اعشاري شمېره چې له ۴ لویه وي پورته شاوخوا کوي، که نه نو ویل شوې شمېره ښکته شاوخوا کېږي.
+- floor() always rounds down a number. || floor() ہمیشہ عدد کو نیچے راؤنڈ کرتا ہے۔ || floor() تل شمېره ښکته شاوخوا کوي.
+- ceiling() always round up a number. || ceiling() ہمیشہ عدد کو اوپر راؤنڈ کرتا ہے۔ || ceiling() تل شمېره پورته شاوخوا کوي.
+table
+th | Block | Result
+tr | round (55.5) | 56
+tr | floor of (55.8) | 55
+tr | ceiling of (55.2) | 56
+endtable

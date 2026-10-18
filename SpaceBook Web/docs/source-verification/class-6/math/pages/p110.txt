@@ -1,0 +1,28 @@
+@printed 108
+endexample
+example 3 | Find the pattern if the first number is 5 and the term-to-term rule is 'add 10'. || اگر پہلا عدد 5 اور رکن سے رکن کا قاعدہ '10 جمع کریں' ہو تو نمونہ معلوم کریں۔ || که لومړی عدد 5 وي او له حد څخه حد ته قاعده '10 جمع کړئ' وي، بېلګه معلومه کړئ.
+p Here we will start at 5 and keep adding 10 to each term to find the next term. So, the pattern will be: || یہاں ہم 5 سے شروع کریں گے اور اگلا رکن معلوم کرنے کے لیے ہر رکن میں 10 جمع کرتے رہیں گے۔ لہٰذا نمونہ یہ ہوگا: || دلته له 5 پیل کوو او د راتلونکي حد د موندلو لپاره هر حد ته 10 ورزیاتوو. نو بېلګه به دا وي:
+m $5, 15, 25, 35, 45, \ldots$
+endexample
+example 4 | Write down the term-to-term rule and then work out the next two terms in the following sequence. || رکن سے رکن کا قاعدہ لکھیں اور پھر درج ذیل ترتیب کے اگلے دو ارکان معلوم کریں۔ || له حد څخه حد ته قاعده ولیکئ او بیا د لاندې لړۍ راتلونکي دوه حدونه معلوم کړئ.
+m $2, 4, 8, \_\_\_, \_\_\_, \_\_\_.$
+p The first term is 2. The term-to-term rule is "multiply by 2". So, the pattern will continue like this: || پہلا رکن 2 ہے۔ رکن سے رکن کا قاعدہ "2 سے ضرب دیں" ہے۔ لہٰذا نمونہ یوں جاری رہے گا: || لومړی حد 2 دی. له حد څخه حد ته قاعده "په 2 کې ضرب کړئ" ده. نو بېلګه به داسې دوام وکړي:
+m $2, 4, 8, 16, 32, 64, \ldots$
+endexample
+## 6.1.1 Position to Term Rule || 6.1.1 مقام سے رکن کا قاعدہ || 6.1.1 له ځای څخه حد ته قاعده
+p Look at the pattern. || نمونے کو دیکھیں۔ || بېلګې ته وګورئ.
+m $4, 8, 12, 16, 20, \ldots$
+p Here each term has a position. The first term 4 is at position 1, the second term 8 is at position 2, the third term 12 is at position 3 and so on. The **Position to terms rule** helps us to find out what number is in a pattern if its position in the pattern is given. || یہاں ہر رکن کا ایک مقام ہے۔ پہلا رکن 4 مقام 1 پر، دوسرا رکن 8 مقام 2 پر، تیسرا رکن 12 مقام 3 پر ہے، وغیرہ۔ **مقام سے رکن کا قاعدہ** ہمیں یہ معلوم کرنے میں مدد دیتا ہے کہ اگر نمونے میں مقام دیا گیا ہو تو اس پر کون سا عدد ہے۔ || دلته هر حد یو ځای لري. لومړی حد 4 په 1 ځای، دوهم حد 8 په 2 ځای، درېیم حد 12 په 3 ځای کې دی او داسې نور. **له ځای څخه حد ته قاعده** راسره مرسته کوي چې که د بېلګې ځای ورکړل شوی وي، معلوم کړو چې هلته کوم عدد دی.
+example 1 | Find the position to term rule to find 18th term of the pattern: 6, 7, 8, 9, 10, 11.... || نمونے 6، 7، 8، 9، 10، 11.... کا اٹھارواں رکن معلوم کرنے کے لیے مقام سے رکن کا قاعدہ معلوم کریں۔ || د 6، 7، 8، 9، 10، 11.... بېلګې د 18م حد د موندلو لپاره له ځای څخه حد ته قاعده معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First, write the terms and their positions of this pattern in a table. || پہلے اس نمونے کے ارکان اور ان کے مقامات ایک جدول میں لکھیں۔ || لومړی د دې بېلګې حدونه او ځایونه یې په یوه جدول کې ولیکئ.
+table
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 6 | 7 | 8 | 9 | 10 | 11
+endtable
+p Now find the rule for position to terms || اب مقام سے رکن کا قاعدہ معلوم کریں || اوس له ځای څخه حد ته قاعده معلومه کړئ
+table
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 6 | 7 | 8 | 9 | 10 | 11
+tr | Rule | 1+5 | 2+5 | 3+5 | 4+5 | 5+5 | 6+5
+endtable

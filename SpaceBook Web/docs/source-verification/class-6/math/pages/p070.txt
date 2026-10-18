@@ -1,0 +1,44 @@
+@printed 68
+@deco Picture of a roll of red cloth beside Question 8 (decorative). The price list shows fruit pictures (apple, mango, orange, banana); the fruit names are written in the coded table.
+q 8 | A shopkeeper has $42\frac{3}{4}$ m of cloths in his stock, if he sells $6\frac{2}{6}$ m of cloth, then how much cloth he has left? || ایک دکاندار کے اسٹاک میں $42\frac{3}{4}$ m کپڑا ہے، اگر وہ $6\frac{2}{6}$ m کپڑا بیچ دے تو اس کے پاس کتنا کپڑا بچے گا؟ || یو دوکاندار په خپل ذخیره کې $42\frac{3}{4}$ m ټوکر لري، که $6\frac{2}{6}$ m ټوکر وپلوري، څومره ټوکر به ورسره پاتې شي؟
+solution $36\frac{5}{12}$ m
+ss Cloth left = cloth in stock − cloth sold. Change mixed numbers to fractions and use a common denominator (12). || بچا ہوا کپڑا = اسٹاک کا کپڑا − بیچا گیا کپڑا۔ مخلوط اعداد کو کسور میں بدلیں اور مشترک نسب نما (12) لیں۔ || پاتې ټوکر = د ذخیرې ټوکر − پلورل شوی ټوکر. ګډ عددونه په کسرونو بدل کړئ او ګډ مخرج (12) واخلئ.
+suse bodmas 42&3/4-6&2/6
+endsolution
+q 9 | Look at the following price list of the different fruits to answer the questions. || سوالات کے جواب کے لیے مختلف پھلوں کی قیمتوں کی درج ذیل فہرست دیکھیں۔ || پوښتنو ته د ځواب لپاره د بېلابېلو مېوو د بیو لاندې لیست ته وګورئ.
+table Price list || قیمتوں کی فہرست || د بیو لیست
+tr | Apple | Rs 150 per kg
+tr | Mango | Rs 200 per kg
+tr | Orange | Rs 100 per dozen
+tr | Banana | Rs 150 per dozen
+endtable
+qp a | If Rabia bought 3.45 kg of apples and 2.34 dozen of oranges. How much did she pay? || اگر رابعہ نے 3.45 kg سیب اور 2.34 درجن مالٹے خریدے۔ اس نے کتنی رقم ادا کی؟ || که رابعې 3.45 kg مڼې او 2.34 درجنه مالټې واخیستې. څومره یې ورکړل؟
+solution Rs 751.50
+ss Cost = 3.45 kg × Rs 150 + 2.34 dozen × Rs 100. || قیمت = 3.45 kg × 150 روپے + 2.34 درجن × 100 روپے۔ || بیه = 3.45 kg × 150 روپۍ + 2.34 درجنه × 100 روپۍ.
+suse bodmas 3.45*150+2.34*100
+endsolution
+qp b | If the shopkeeper sold 34.45 kg of mangoes, 23.89 kg of apples, 7.67 dozen of oranges and 6.5 dozen banana, find his total sales. || اگر دکاندار نے 34.45 kg آم، 23.89 kg سیب، 7.67 درجن مالٹے اور 6.5 درجن کیلے بیچے تو اس کی کل فروخت معلوم کریں۔ || که دوکاندار 34.45 kg امب، 23.89 kg مڼې، 7.67 درجنه مالټې او 6.5 درجنه کېلې وپلورلې، د هغه ټول پلور معلوم کړئ.
+solution Rs 12215.50
+suse bodmas 34.45*200+23.89*150+7.67*100+6.5*150
+endsolution
+qp c | Also write for it an expression. || اس کے لیے ایک عبارت بھی لکھیں۔ || د دې لپاره یوه افاده هم ولیکئ.
+solution $34.45 \times 200 + 23.89 \times 150 + 7.67 \times 100 + 6.5 \times 150$
+ss Multiply each quantity by its price and add all the costs: || ہر مقدار کو اس کی قیمت سے ضرب دیں اور تمام قیمتیں جمع کریں: || هر مقدار په خپله بیه کې ضرب کړئ او ټولې بیې جمع کړئ:
+sm \text{Total sales} = 34.45 \times 200 + 23.89 \times 150 + 7.67 \times 100 + 6.5 \times 150
+endsolution
+q 10 | The pack of large erasers has 8 pieces; the pack of medium erasers has 15 pieces and the pack of small erasers has 20 erasers. Ibrahim has 3 small, 2 medium and 2 large packs of erasers. How many erasers does he have altogether? || بڑے ربڑ کے پیکٹ میں 8، درمیانے ربڑ کے پیکٹ میں 15 اور چھوٹے ربڑ کے پیکٹ میں 20 ربڑ ہیں۔ ابراہیم کے پاس 3 چھوٹے، 2 درمیانے اور 2 بڑے پیکٹ ہیں۔ اس کے پاس کل کتنے ربڑ ہیں؟ || د لویو ربړونو په پاکټ کې 8، د منځنیو په پاکټ کې 15 او د کوچنیو په پاکټ کې 20 ربړونه دي. ابراهیم 3 کوچني، 2 منځني او 2 لوی پاکټونه لري. ټول څو ربړونه لري؟
+solution 106 erasers
+suse bodmas 3*20+2*15+2*8
+endsolution
+q 11 | Usman and his family use $13\frac{3}{9}$ litres of water for bathing, $10\frac{5}{15}$ litres for cleaning and $6\frac{2}{9}$ litres for cooking respectively. How much water do they use? || عثمان اور اس کا خاندان بالترتیب نہانے کے لیے $13\frac{3}{9}$ لیٹر، صفائی کے لیے $10\frac{5}{15}$ لیٹر اور کھانا پکانے کے لیے $6\frac{2}{9}$ لیٹر پانی استعمال کرتے ہیں۔ وہ کتنا پانی استعمال کرتے ہیں؟ || عثمان او کورنۍ یې په ترتیب سره د لمبلو لپاره $13\frac{3}{9}$ لیټره، د پاکولو لپاره $10\frac{5}{15}$ لیټره او د پخلي لپاره $6\frac{2}{9}$ لیټره اوبه کاروي. څومره اوبه کاروي؟
+solution $29\frac{8}{9}$ litres
+suse bodmas 13&3/9+10&5/15+6&2/9
+endsolution
+q 12 | In a restaurant, a family ordered 3 sandwiches for Rs 250 each, 2 glasses of cold drinks for Rs 180 each and one cup of coffee for Rs 210. They paid additional tax of Rs 112. If they gave a Rs 5000 note to the cashier, how much was their total bill? How much amount did they get as change? || ایک ریستوران میں ایک خاندان نے 250 روپے فی سینڈوچ کے حساب سے 3 سینڈوچ، 180 روپے فی گلاس کے حساب سے 2 گلاس ٹھنڈے مشروب اور 210 روپے کا ایک کپ کافی منگوائی۔ انہوں نے 112 روپے اضافی ٹیکس ادا کیا۔ اگر انہوں نے کیشیئر کو 5000 روپے کا نوٹ دیا تو ان کا کل بل کتنا تھا؟ انہیں کتنی رقم واپس ملی؟ || په یوه رستورانت کې یوې کورنۍ د هر سینډویچ په 250 روپۍ 3 سینډویچونه، د هر ګیلاس په 180 روپۍ 2 ګیلاسه سړې څښاک او د 210 روپیو یوه پیاله کافي وغوښته. هغوی 112 روپۍ اضافي مالیه ورکړه. که یې کیشیر ته د 5000 روپیو نوټ ورکړی وي، ټول بل یې څومره و؟ څومره پیسې یې بېرته ترلاسه کړې؟
+solution Total bill Rs 1432; change Rs 3568
+ss Total bill = 3 × 250 + 2 × 180 + 210 + 112. || کل بل = 3 × 250 + 2 × 180 + 210 + 112۔ || ټول بل = 3 × 250 + 2 × 180 + 210 + 112.
+suse bodmas 3*250+2*180+210+112
+ss Change = 5000 − 1432. || واپس ملنے والی رقم = 5000 − 1432۔ || بېرته پیسې = 5000 − 1432.
+suse bodmas 5000-1432
+ss The total bill was Rs 1432 and they got Rs 3568 as change. || کل بل 1432 روپے تھا اور انہیں 3568 روپے واپس ملے۔ || ټول بل 1432 روپۍ و او 3568 روپۍ یې بېرته ترلاسه کړې.
+endsolution

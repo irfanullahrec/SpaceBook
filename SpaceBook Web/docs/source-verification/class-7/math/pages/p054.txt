@@ -1,0 +1,41 @@
+@printed 50
+qp e | $\frac{400}{361}$
+qp f | $\frac{625}{144}$
+qp g | $\frac{16}{484}$
+qp h | $\frac{36}{961}$
+q 3 | Find the square root of the following decimal numbers by factorisation method. || تجزی کے طریقے سے درج ذیل اعشاری اعداد کا جذرِ مربع معلوم کریں۔ || د تجزیې په طریقه د لاندې اعشاري عددونو مربع جذر معلوم کړئ.
+qp a | 0.49
+qp b | 0.25
+qp c | 1.69
+qp d | 56.25
+qp e | 7.84
+qp f | 11.56
+qp g | 5.29
+qp h | 2.25
+endexercise
+@sec 3.3 | Square Root by Division Method || تقسیم کے طریقے سے جذرِ مربع || د وېش په طریقه مربع جذر
+# 3.3 Square Root by Division Method || 3.3 تقسیم کے طریقے سے جذرِ مربع || 3.3 د وېش په طریقه مربع جذر
+p The square root of the numbers can also be found by division method. Consider the following examples. || اعداد کا جذرِ مربع تقسیم کے طریقے سے بھی معلوم کیا جا سکتا ہے۔ درج ذیل مثالوں پر غور کریں۔ || د عددونو مربع جذر د وېش په طریقه هم معلومېدای شي. لاندې بېلګې وګورئ.
+example 1 | Find the square root of 529 by division method. || تقسیم کے طریقے سے 529 کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د 529 مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p **Step I:** First make pairs of the digits of the number 529 from right to left. || **مرحلہ I:** پہلے عدد 529 کے ہندسوں کو دائیں سے بائیں جوڑوں میں تقسیم کریں۔ || **لومړی پړاو:** لومړی د 529 عدد رقمونه له ښي څخه کیڼ لوري ته جوړې جوړې کړئ.
+p We have, $\overline{5}\;\overline{29}$. || ہمارے پاس ہے، $\overline{5}\;\overline{29}$۔ || موږ لرو، $\overline{5}\;\overline{29}$.
+p **Step II:** Try to find the greatest number whose square is less than or equal to the number in the leftmost pair or number that is 5. || **مرحلہ II:** وہ سب سے بڑا عدد معلوم کریں جس کا مربع سب سے بائیں جوڑے یا عدد یعنی 5 سے کم یا اس کے برابر ہو۔ || **دوهم پړاو:** هغه تر ټولو لوی عدد پیدا کړئ چې مربع یې د تر ټولو کیڼ جوړې یا عدد یعنې 5 څخه کمه یا ورسره برابره وي.
+m $1 \times 1 = 1, \; 2 \times 2 = 4 < 5, \; 3 \times 3 = 9 > 5$
+p Here the number we need is 2. || یہاں ہمیں مطلوبہ عدد 2 ہے۔ || دلته موږ ته اړین عدد 2 دی.
+sqrtdiv 2 | 5 29 | 2:4:1
+p **Step III:** Take this number 2 as divisor and the quotient and write product 4 below the number in the leftmost number 5. We get the remainder 1. || **مرحلہ III:** اس عدد 2 کو مقسوم علیہ اور خارج قسمت کے طور پر لیں اور حاصلِ ضرب 4 کو سب سے بائیں عدد 5 کے نیچے لکھیں۔ ہمیں باقی 1 ملتا ہے۔ || **درېیم پړاو:** دا عدد 2 د قاسم او خارج قسمت په توګه واخلئ او حاصل ضرب 4 د تر ټولو کیڼ عدد 5 لاندې ولیکئ. پاتې شونی 1 لاسته راځي.
+sqrtdiv 2 | 5 29 | 2:4:1 29 ; 4_
+p **Step IV:** Take down the pair 29. Add the divisor with the quotient (or double the quotient 2) $2 \times 2 = 4$ and enter it with a blank to its right. || **مرحلہ IV:** جوڑا 29 نیچے لائیں۔ مقسوم علیہ کو خارج قسمت میں جمع کریں (یا خارج قسمت 2 کو دگنا کریں) $2 \times 2 = 4$ اور اسے دائیں طرف ایک خالی جگہ کے ساتھ لکھیں۔ || **څلورم پړاو:** جوړه 29 ښکته راوړئ. قاسم له خارج قسمت سره جمع کړئ (یا خارج قسمت 2 دوه چنده کړئ) $2 \times 2 = 4$ او د ښي لوري له یوې تشې سره یې ولیکئ.
+p **Step V:** Find the greatest possible digit to fill the blank that will also be the next digit in the quotient, so when the divisor (made up of 4 and the new digit) is multiplied to the new digit in the quotient, the product is less than or equal to the dividend 129. || **مرحلہ V:** خالی جگہ پُر کرنے کے لیے سب سے بڑا ممکنہ ہندسہ معلوم کریں جو خارج قسمت کا اگلا ہندسہ بھی ہوگا، تاکہ جب مقسوم علیہ (4 اور نئے ہندسے سے بنا) کو خارج قسمت کے نئے ہندسے سے ضرب دی جائے تو حاصلِ ضرب مقسوم 129 سے کم یا اس کے برابر ہو۔ || **پنځم پړاو:** د تشې د ډکولو لپاره تر ټولو لوی ممکن رقم پیدا کړئ چې د خارج قسمت راتلونکی رقم به هم وي، داسې چې کله قاسم (له 4 او نوي رقم جوړ) د خارج قسمت په نوي رقم کې ضرب شي، حاصل ضرب له مقسوم 129 څخه کم یا ورسره برابر وي.
+p Here $43 \times 3 = 129 = 129$, so 3 is the required digit here. || یہاں $43 \times 3 = 129 = 129$، لہٰذا یہاں مطلوبہ ہندسہ 3 ہے۔ || دلته $43 \times 3 = 129 = 129$، نو دلته اړین رقم 3 دی.
+p The remainder will be 0. || باقی 0 ہوگا۔ || پاتې شونی به 0 وي.
+sqrtdiv 23 | 5 29 | 2:4:1 29 ; 43:1 29:0
+p The quotient 23 is the square root of 529. || خارج قسمت 23، عدد 529 کا جذرِ مربع ہے۔ || خارج قسمت 23 د 529 مربع جذر دی.
+eq \sqrt{529} = 23
+p **Verification:** $23 \times 23 = 529$ || **تصدیق:** $23 \times 23 = 529$ || **تایید:** $23 \times 23 = 529$
+endexample
+@issue The left margin of this page is cut off in the single-page scan; the full text was read from the two-page spread PDF. Step IV prints "(or double the quotient 2)" with the opening bracket at the cut margin.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In division method, the quotient is the square root of the given number. || تقسیم کے طریقے میں خارج قسمت دیے گئے عدد کا جذرِ مربع ہوتا ہے۔ || د وېش په طریقه کې خارج قسمت د ورکړل شوي عدد مربع جذر وي.
+endbox

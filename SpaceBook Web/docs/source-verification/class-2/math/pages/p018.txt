@@ -1,0 +1,24 @@
+@printed 13
+@deco A boy and a girl speak the questions in speech bubbles.
+p “How many hundreds, tens and ones are there in the given numbers? 308, 400” || ”دیے گئے اعداد میں کتنے سینکڑے، دہائیاں اور اکائیاں ہیں؟ 308، 400“ || ”په ورکړل شویو عددونو کې څو سلګونه، لسګونه او یووونه دي؟ 308، 400“
+fig blocks 3 0 8 | 3 hundreds ; 8 ones || 308: 3 hundreds, 0 tens, 8 ones || 308: 3 سینکڑے، 0 دہائی، 8 اکائیاں || 308: 3 سلګونه، 0 لسګونه، 8 یووونه
+table
+th Hundreds | Tens | Ones
+tr 300 | 00 | 8
+tr 3 hundreds | 0 tens | 8 ones
+endtable
+fig blocks 4 0 0 | 4 hundreds || 400: 4 hundreds, 0 tens, 0 ones || 400: 4 سینکڑے، 0 دہائی، 0 اکائی || 400: 4 سلګونه، 0 لسګونه، 0 یووونه
+table
+th Hundreds | Tens | Ones
+tr 400 | 00 | 0
+tr 4 hundreds | 0 tens | 0 ones
+endtable
+p “Find the place value of the coloured digits. ${\color{red}4}72$, $2{\color{red}3}8$” || ”رنگین ہندسوں کی مقامی قیمت معلوم کریں۔ 472، 238“ || ”د رنګه رقمونو مکاني ارزښت معلوم کړئ. 472، 238“
+m 3 tens = 30 ; 4 hundreds = 400
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q - | How many hundreds, tens and ones are there in 333? || 333 میں کتنے سینکڑے، دہائیاں اور اکائیاں ہیں؟ || په 333 کې څو سلګونه، لسګونه او یووونه دي؟
+sol 3 hundreds, 3 tens, 3 ones ## 333 = 300 + 30 + 3. || 333 = 300 + 30 + 3۔ || 333 = 300 + 30 + 3.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain the concept of place value of numbers using teaching aids (chart, abacus, etc). Write different numbers on board and guide the students how to identify the place value of numbers. || تدریسی معاون اشیاء (چارٹ، اباکس وغیرہ) کی مدد سے اعداد کی مقامی قیمت کا تصور سمجھائیں۔ بورڈ پر مختلف اعداد لکھیں اور طلبہ کی رہنمائی کریں کہ اعداد کی مقامی قیمت کیسے پہچانی جاتی ہے۔ || د تدریسي وسایلو (چارټ، اباکس او نور) په مرسته د عددونو د مکاني ارزښت مفهوم تشریح کړئ. پر تخته بېلابېل عددونه ولیکئ او زده کوونکو ته لارښوونه وکړئ چې د عددونو مکاني ارزښت څنګه پېژندل کېږي.
+endbox

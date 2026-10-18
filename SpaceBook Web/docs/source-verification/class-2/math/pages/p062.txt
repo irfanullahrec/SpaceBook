@@ -1,0 +1,30 @@
+@printed 57
+@deco A blue passenger train.
+exercise Exercise 3 (Subtraction)
+q 1 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qsolve csub
+qp a | 143 - 6
+qp b | 564 - 7
+qp c | 302 - 5
+qp d | 651 - 9
+qp e | 740 - 3
+qp f | 562 - 34
+qp g | 284 - 56
+qp h | 445 - 57
+qp i | 760 - 71
+qp j | 832 - 78
+qp k | 701 - 54
+qp l | 342 - 158
+qp m | 452 - 154
+qp n | 711 - 267
+qp o | 803 - 289
+qp p | 900 - 612
+q 2 | There are 658 passengers in a train. 269 passengers got off the train at a station. How many passengers are left in the train? || ایک ٹرین میں 658 مسافر ہیں۔ ایک اسٹیشن پر 269 مسافر اتر گئے۔ ٹرین میں کتنے مسافر بچے؟ || په یوه اورګاډي کې 658 مسافر دي. په یوه سټېشن کې 269 مسافر کوز شول. په اورګاډي کې څو مسافر پاتې شول؟
+table
+th  | H | T | O
+tr Total passengers | ___ | ___ | ___
+tr Passengers got off (−) | ___ | ___ | ___
+tr Passengers left | ___ | ___ | ___
+endtable
+qsol csub 658 - 269
+endexercise

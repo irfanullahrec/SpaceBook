@@ -1,0 +1,20 @@
+@printed 162
+@issue Q8(a): part of the half-figure near the line of symmetry is whited out on the scan (correction fluid); only the visible part is drawn.
+q 6 | Find the perimeter and area of the shaded figures. || رنگی ہوئی اشکال کا احاطہ اور رقبہ معلوم کریں۔ || د رنګ شویو شکلونو محیط او مساحت ومومئ.
+qp a | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 8 6 22 ; rect 1 1 6 4 #0f172a #3b82f6 || a) a shaded rectangle 6 boxes by 4 boxes || a) 6 بائی 4 خانوں کا رنگا ہوا مستطیل || a) د 6 په 4 خونو رنګ شوی مستطیل
+qp b | (each box 1 cm × 1 cm) || (ہر خانہ 1 سینٹی میٹر × 1 سینٹی میٹر) || (هره خونه 1 cm × 1 cm)
+sqgrid 6 6 22 ; rect 1 1 4 4 || b) an outlined square 4 boxes by 4 boxes || b) 4 بائی 4 خانوں کا مربع خاکہ || b) د 4 په 4 خونو مربع خاکه
+qp c | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 11 7 22 ; rect 1 1 9 5 #1e3a8a #c7d2fe || c) a shaded rectangle 9 boxes by 5 boxes || c) 9 بائی 5 خانوں کا رنگا ہوا مستطیل || c) د 9 په 5 خونو رنګ شوی مستطیل
+q 7 | Identify the symmetry in the given figures and draw lines of symmetry, where possible. || دی گئی اشکال میں تشاکل پہچانیں اور جہاں ممکن ہو خطوطِ تشاکل بنائیں۔ || په ورکړل شویو شکلونو کې تناظر وپېژنئ او چېرته چې ممکن وي د تناظر کرښې رسم کړئ.
+frow geo 200 200 ; S 20 20 70 20 ; S 70 20 100 5 ; S 100 5 130 20 ; S 130 20 180 20 ; S 180 20 180 70 ; S 180 70 195 100 ; S 195 100 180 130 ; S 180 130 180 180 ; S 180 180 130 180 ; S 130 180 100 195 ; S 100 195 70 180 ; S 70 180 20 180 ; S 20 180 20 130 ; S 20 130 5 100 ; S 5 100 20 70 ; S 20 70 20 20 ;; geo 200 150 ; S 120 10 190 80 ; S 190 80 160 140 ; S 160 140 30 145 ; S 30 145 10 125 ; S 10 125 120 10 ;; geo 80 200 ; S 40 5 75 70 ; S 75 70 70 190 ; S 70 190 15 190 ; S 15 190 5 70 ; S 5 70 40 5 ;; geo 140 200 ; S 5 5 70 100 ; S 70 100 135 5 ; S 135 5 115 195 ; S 115 195 25 195 ; S 25 195 5 5 || Figures a) to d): an eight-pointed shape, a five-sided shape, a pencil-like hexagon and a V-topped shape || اشکال a) تا d): آٹھ نوکوں والی شکل، پانچ ضلعی شکل، پنسل نما مسدس اور V نما سر والی شکل || شکلونه a) تر d): اته څوکې لرونکی شکل، پنځه ضلعي شکل، د پنسل په څېر شپږ ضلعي او د V سر لرونکی شکل
+qp a | ____
+qp b | ____
+qp c | ____
+qp d | ____
+q 8 | Complete the given figures and find their perimeter and area as well, where possible. || دی گئی اشکال مکمل کریں اور جہاں ممکن ہو ان کا احاطہ اور رقبہ بھی معلوم کریں۔ || ورکړل شوي شکلونه بشپړ کړئ او چېرته چې ممکن وي محیط او مساحت یې هم ومومئ.
+qp a | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 10 10 22 ; mirror h 5 ; path 3,5 3,6 4,6 4,7 5,7 5,8 6,8 6,7 6.5,7 #9d174d || a) a stepped half-figure below a horizontal line of symmetry || a) افقی خطِ تشاکل کے نیچے سیڑھی نما آدھی شکل || a) د افقي تناظر کرښې لاندې زینه ډوله نیمګړی شکل
+qp b | (each box 1 cm × 1 cm) || (ہر خانہ 1 سینٹی میٹر × 1 سینٹی میٹر) || (هره خونه 1 cm × 1 cm)
+sqgrid 10 10 22 ; mirror v 5 ; poly 7,1 9,1 9,2 10,2 10,3 8,3 8,6 9,6 9,7 7,7 #0f172a #4ade80 || b) a shaded half-figure to the right of a vertical line of symmetry || b) عمودی خطِ تشاکل کے دائیں طرف رنگی ہوئی آدھی شکل || b) د عمودي تناظر کرښې ښي اړخ ته رنګ شوی نیمګړی شکل

@@ -1,0 +1,36 @@
+@printed 132
+## Conversion of temperatures between different scales || مختلف پیمانوں کے درمیان درجۂ حرارت کی تبدیلی || د بېلابېلو پیمانو ترمنځ د تودوخې اړول
+p (a) From Celsius to Kelvin scale: || (a) سیلسیئس سے کیلون: || (a) له سلسیوس څخه کلوین ته:
+eq T(\text{K}) = T(^\circ\text{C}) + 273
+p Here T(K) is the temperature on the Kelvin scale and T(°C) is the temperature on the Celsius/centigrade scale. || یہاں T(K) کیلون پیمانے پر اور T(°C) سیلسیئس/سینٹی گریڈ پیمانے پر درجۂ حرارت ہے۔ || دلته T(K) د کلوین پر پیمانه او T(°C) د سلسیوس/سانتي ګراد پر پیمانه تودوخه ده.
+p (b) From Celsius to Fahrenheit scale: || (b) سیلسیئس سے فارن ہائیٹ: || (b) له سلسیوس څخه فارنهایټ ته:
+eq T(^\circ\text{F}) = 1.8\,T(^\circ\text{C}) + 32
+p Here T(°F) is the temperature on the Fahrenheit scale and T(°C) is the temperature on the Celsius scale. || یہاں T(°F) فارن ہائیٹ اور T(°C) سیلسیئس پیمانے پر درجۂ حرارت ہے۔ || دلته T(°F) د فارنهایټ او T(°C) د سلسیوس پر پیمانه تودوخه ده.
+@deco Figure 10.3 Thermometer: a red thermometer with a sun (hot) and a blue thermometer with a snowflake (cold).
+exercise Example 10.1 Body temperature on three scales
+q 1 | The temperature of a healthy person is 37°C. What is this temperature on the kelvin and Fahrenheit scales? || صحت مند شخص کا درجۂ حرارت 37°C ہے۔ یہ کیلون اور فارن ہائیٹ پیمانوں پر کتنا ہے؟ || د روغ کس تودوخه 37°C ده. دا تودوخه د کلوین او فارنهایټ پر پیمانو څومره ده؟
+sol 310 K and 98.6°F ## T(K) = T(°C) + 273 = 37 + 273 = 310 K. T(°F) = 1.8 T(°C) + 32 = 1.8 × 37 + 32 = 66.6 + 32 = 98.6°F. || T(K) = 37 + 273 = 310 K؛ T(°F) = 1.8 × 37 + 32 = 98.6°F۔ || T(K) = 37 + 273 = 310 K؛ T(°F) = 1.8 × 37 + 32 = 98.6°F.
+endexercise
+box info | Do You Know? || کیا آپ جانتے ہیں؟ || ایا پوهېږئ؟
+p The lowest temperature on the Kelvin scale is 0 K. This is called **absolute zero**. Absolute zero (−273°C) is the temperature at which all molecules stop moving. It is not possible to reach absolute zero because molecules are always moving. || کیلون پیمانے پر سب سے کم درجۂ حرارت 0 K ہے جسے **مطلق صفر** کہتے ہیں۔ مطلق صفر (−273°C) وہ درجۂ حرارت ہے جس پر تمام سالمے حرکت بند کر دیتے ہیں۔ مطلق صفر تک پہنچنا ممکن نہیں کیونکہ سالمے ہمیشہ حرکت میں رہتے ہیں۔ || د کلوین پر پیمانه تر ټولو ټیټه تودوخه 0 K ده چې **مطلق صفر** بلل کېږي. مطلق صفر (−273°C) هغه تودوخه ده چې ټول مالیکولونه پکې خوځښت بندوي. مطلق صفر ته رسېدل ممکن نه دي ځکه چې مالیکولونه تل په حرکت کې دي.
+p The Kelvin scale is mostly used in scientific calculations because it has only positive values in it, while the other two scales have positive as well as negative values. || کیلون پیمانہ زیادہ تر سائنسی حسابات میں استعمال ہوتا ہے کیونکہ اس میں صرف مثبت قیمتیں ہیں، جبکہ باقی دو پیمانوں میں مثبت اور منفی دونوں قیمتیں ہوتی ہیں۔ || د کلوین پیمانه ډېری په ساینسي محاسبو کې کارېږي ځکه چې یوازې مثبت ارزښتونه لري، په داسې حال کې چې نورې دوه پیمانې مثبت او منفي دواړه ارزښتونه لري.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p The teacher can bring thermometers to the class to familiarize students with different temperature scales. || استاد کلاس میں تھرمامیٹر لا کر طلبہ کو درجۂ حرارت کے مختلف پیمانوں سے متعارف کرا سکتے ہیں۔ || ښوونکی کولی شي ټولګي ته ترمامیټرونه راوړي او زده کوونکي د تودوخې له بېلابېلو پیمانو سره اشنا کړي.
+endbox
+@printed 133
+table Figure 10.4 Comparison of temperature scales || شکل 10.4 درجۂ حرارت کے پیمانوں کا موازنہ || شکل 10.4 د تودوخې د پیمانو پرتله
+th | Point || نقطہ || ټکی | Kelvin | Celsius | Fahrenheit
+tr | Water boils || پانی ابلتا ہے || اوبه اېشېږي | 373 K | 100°C | 212°F
+tr | Human body temperature || انسانی جسم کا درجۂ حرارت || د انسان د بدن تودوخه | 310 K | 37°C | 98°F (98.6°F)
+tr | Water freezes || پانی جمتا ہے || اوبه کنګل کېږي | 273 K | 0°C | 32°F
+tr | Absolute zero || مطلق صفر || مطلق صفر | 0 K | −273°C | −459°F
+endtable
+@deco Figure 10.5 Different types of thermometers: digital clinical thermometers, a glass mercury thermometer, infrared (non-contact) thermometers and an ear thermometer.
+@sec 10.4 | Heat || حرارت || تودوخه
+# 10.4 Heat || 10.4 حرارت || 10.4 تودوخه
+p **Heat** is a form of energy that flows from a hotter body to a colder body. || **حرارت** توانائی کی ایک شکل ہے جو گرم جسم سے ٹھنڈے جسم کی طرف بہتی ہے۔ || **تودوخه** د انرژۍ یوه بڼه ده چې له تود جسم څخه سوړ جسم ته بهېږي.
+p At the start of this chapter, we discussed that when water in a pot is heated, its temperature rises due to an increase in kinetic energy of the water particles. It means that when the temperature of a body increases then it absorbs heat and when its temperature falls then it loses heat. A body at a higher temperature will have a greater amount of heat in it and vice versa. || اس باب کے آغاز میں ہم نے بات کی کہ جب برتن میں پانی گرم کیا جاتا ہے تو پانی کے ذرات کی حرکی توانائی بڑھنے سے اس کا درجۂ حرارت بڑھتا ہے۔ یعنی جب کسی جسم کا درجۂ حرارت بڑھتا ہے تو وہ حرارت جذب کرتا ہے اور جب گرتا ہے تو حرارت کھوتا ہے۔ زیادہ درجۂ حرارت والے جسم میں حرارت کی مقدار زیادہ ہوگی اور اس کے برعکس۔ || د دې څپرکي په پیل کې مو وویل چې کله په لوښي کې اوبه تودې شي، د اوبو د ذرو د حرکي انرژۍ د زیاتېدو له امله یې تودوخه لوړېږي. یعنې کله چې د جسم تودوخه لوړه شي تودوخه جذبوي او کله چې ټیټه شي تودوخه بایلي. په لوړه تودوخه جسم کې به د تودوخې اندازه ډېره وي او برعکس.
+@deco Figure 10.6 Water Molecules at Different Temperature: magnified circles of cold water, warm water and hot water — particles spread further apart and move faster as the water gets hotter.
+p Heat will flow faster between objects which have a greater temperature difference. || جن اجسام میں درجۂ حرارت کا فرق زیادہ ہو ان کے درمیان حرارت تیزی سے بہتی ہے۔ || د هغو جسمونو ترمنځ چې د تودوخې توپیر یې ډېر وي، تودوخه چټکه بهېږي.
+@issue This scan is a two-page spread (printed pages 132 and 133). Figure 10.4 shows human body temperature as 98°F; the worked example gives 98.6°F.

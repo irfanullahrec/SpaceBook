@@ -1,0 +1,56 @@
+@printed 90
+@deco Magnifying-glass icon beside "Investigate".
+qp iv | Mark (✓) for pleasant sounds and mark (×) for unpleasant sounds in the given pictures. || دی گئی تصاویر میں خوشگوار آوازوں کے لیے (✓) اور ناخوشگوار آوازوں کے لیے (×) کا نشان لگائیں۔ || په ورکړل شویو انځورونو کې د خوندور غږونو لپاره (✓) او د ناخوندوره غږونو لپاره (×) نښه ولګوئ.
+svg Parrots, thunder and lightning, playing guitar || طوطے، گرج چمک، گٹار بجانا || طوطیان، تندر، ګیټار غږول
+<svg viewBox="0 0 670 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14">
+<rect x="5" y="5" width="216" height="186" fill="#fff" stroke="#334155"/>
+<g transform="translate(5,5)"><rect x="10" y="20" width="200" height="130" fill="#14532d"/><path d="M30 120 l160 -5" stroke="#78350f" stroke-width="6"/><ellipse cx="75" cy="85" rx="20" ry="32" fill="#dc2626"/><circle cx="75" cy="55" r="12" fill="#facc15"/><path d="M82 55 l8 4 l-8 4z" fill="#111827"/><ellipse cx="145" cy="85" rx="20" ry="32" fill="#2563eb"/><circle cx="145" cy="55" r="12" fill="#facc15"/><path d="M152 55 l8 4 l-8 4z" fill="#111827"/></g>
+<rect x="5" y="157" width="216" height="28" fill="#86efac" stroke="#334155"/>
+<text x="113.0" y="176" text-anchor="middle" font-weight="bold">Parrots</text>
+<rect x="225" y="5" width="216" height="186" fill="#fff" stroke="#334155"/>
+<g transform="translate(225,5)"><rect x="10" y="20" width="200" height="130" fill="#581c87"/><path d="M120 22 l-25 55 l18 0 l-22 70 l42 -80 l-18 0 l22 -45z" fill="#f5f3ff"/></g>
+<rect x="225" y="157" width="216" height="28" fill="#86efac" stroke="#334155"/>
+<text x="333.0" y="176" text-anchor="middle" font-weight="bold">Thunder and lightning</text>
+<rect x="445" y="5" width="216" height="186" fill="#fff" stroke="#334155"/>
+<g transform="translate(445,5)"><rect x="10" y="20" width="200" height="130" fill="#fff"/><circle cx="90" cy="50" r="16" fill="#92400e"/><rect x="70" y="66" width="45" height="65" fill="#1e40af"/><ellipse cx="115" cy="110" rx="30" ry="20" fill="#c2410c" transform="rotate(-20 115 110)"/><path d="M130 100 l60 -30" stroke="#78350f" stroke-width="7"/></g>
+<rect x="445" y="157" width="216" height="28" fill="#86efac" stroke="#334155"/>
+<text x="553.0" y="176" text-anchor="middle" font-weight="bold">Playing guitar</text>
+</svg>
+endsvg
+svg Singing, pressure horn || گانا، پریشر ہارن || سندره ویل، پرېشر هارن
+<svg viewBox="0 0 450 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14">
+<rect x="5" y="5" width="216" height="186" fill="#fff" stroke="#334155"/>
+<g transform="translate(5,5)"><rect x="10" y="20" width="200" height="130" fill="#1e3a8a"/><path d="M80 150 q-10 -60 30 -90 q40 30 30 90z" fill="#15803d"/><circle cx="110" cy="65" r="18" fill="#fed7aa"/><path d="M90 60 q20 -35 40 0" fill="#15803d"/><rect x="105" y="80" width="8" height="20" fill="#111827"/></g>
+<rect x="5" y="157" width="216" height="28" fill="#86efac" stroke="#334155"/>
+<text x="113.0" y="176" text-anchor="middle" font-weight="bold">Singing</text>
+<rect x="225" y="5" width="216" height="186" fill="#fff" stroke="#334155"/>
+<g transform="translate(225,5)"><rect x="10" y="20" width="200" height="130" fill="#fff"/><path d="M40 70 l30 0 l40 20 l0 20 l-40 -20 l-30 0z M60 100 l30 0 l60 25 l0 25 l-60 -25 l-30 0z" fill="#dc2626"/><path d="M40 70 l20 30" stroke="#111827" stroke-width="5"/></g>
+<rect x="225" y="157" width="216" height="28" fill="#86efac" stroke="#334155"/>
+<text x="333.0" y="176" text-anchor="middle" font-weight="bold">Pressure horn</text>
+</svg>
+endsvg
+sol Pleasant (✓): parrots, playing guitar, singing. Unpleasant (×): thunder, pressure horn. ## || خوشگوار (✓): طوطے، گٹار بجانا، گانا۔ ناخوشگوار (×): گرج، پریشر ہارن۔ || خوندور (✓): طوطیان، ګیټار غږول، سندره. ناخوندوره (×): تندر، پرېشر هارن.
+q 4 | Investigate: || تحقیق کریں: || وڅېړئ:
+qp i | Have you seen the ears of a frog, locust and fish? How do these animals hear sounds? || کیا آپ نے مینڈک، ٹڈے اور مچھلی کے کان دیکھے ہیں؟ یہ جانور آوازیں کیسے سنتے ہیں؟ || ایا د چونګښې، ملخ او کب غوږونه مو لیدلي؟ دا څاروي غږونه څنګه اوري؟
+sol They have no outer ears. A frog hears through round eardrums on the sides of its head; a locust has hearing organs (eardrums) on the sides of its body; a fish picks up vibrations in the water through inner ears and a line of sense organs along its body. ## || ان کے بیرونی کان نہیں ہوتے۔ مینڈک سر کے دونوں طرف گول کان کے پردوں سے سنتا ہے؛ ٹڈے کے جسم کے اطراف سننے کے اعضا (پردے) ہوتے ہیں؛ مچھلی اندرونی کانوں اور جسم کے ساتھ حسی اعضا کی لکیر کے ذریعے پانی کی تھرتھراہٹ محسوس کرتی ہے۔ || بهرني غوږونه نه لري. چونګښه د سر په دواړو خواوو د غوږ په ګردو پردو اوري؛ ملخ د بدن په اړخونو د اورېدو غړي (پردې) لري؛ کب د دننه غوږونو او د بدن په اوږدو د حسي غړو د کرښې په واسطه د اوبو رپېدنې احساسوي.
+qp ii | By using torch, find out how much light passes from the objects given below? || ٹارچ کی مدد سے معلوم کریں کہ نیچے دی گئی اشیا میں سے کتنی روشنی گزرتی ہے؟ || د ټارچ په مرسته معلوم کړئ چې له لاندې شیانو څومره رڼا تېرېږي؟
+table How much light passes || کتنی روشنی گزرتی ہے || څومره رڼا تېرېږي
+th | Objects || اشیا || شیان | Completely || مکمل طور پر || بشپړه | Partially || جزوی طور پر || یو څه | Do not pass at all || بالکل نہیں گزرتی || هېڅ نه تېرېږي
+tr | 1. Window pane || کھڑکی کا شیشہ || د کړکۍ ښیښه | | |
+tr | 2. Wax paper || موم کاغذ || موم کاغذ | | |
+tr | 3. White thin cloth (dupatta) || سفید باریک کپڑا (دوپٹہ) || سپین نری ټوکر (دوپټه) | | |
+tr | 4. Geometry box || جیومیٹری باکس || د جیومټرۍ بکس | | |
+tr | 5. Kite paper || پتنگ کا کاغذ || د ګوډۍ کاغذ | | |
+tr | 6. Tissue paper || ٹشو پیپر || ټشو کاغذ | | |
+tr | 7. Wooden door || لکڑی کا دروازہ || لرګین دروازه | | |
+tr | 8. Clean water || صاف پانی || پاکې اوبه | | |
+tr | 9. Cardboard || گتا || کارتن | | |
+endtable
+sol Completely: window pane, clean water. Partially: wax paper, white thin cloth, kite paper, tissue paper. Do not pass at all: geometry box, wooden door, cardboard. ## || مکمل: کھڑکی کا شیشہ، صاف پانی۔ جزوی: موم کاغذ، باریک کپڑا، پتنگ کا کاغذ، ٹشو پیپر۔ بالکل نہیں: جیومیٹری باکس، لکڑی کا دروازہ، گتا۔ || بشپړه: د کړکۍ ښیښه، پاکې اوبه. یو څه: موم کاغذ، نری ټوکر، د ګوډۍ کاغذ، ټشو کاغذ. هېڅ نه: د جیومټرۍ بکس، لرګین دروازه، کارتن.
+q 5 | Project: || پراجیکٹ: || پروژه:
+qp i | Make a pinhole camera by using cardboard box, wax paper or tissue paper. Observe the image formed by it. On which principle of light it works? What are the characteristics of its image? || گتے کے ڈبے، موم کاغذ یا ٹشو پیپر سے پن ہول کیمرا بنائیں۔ اس سے بننے والی تصویر کا مشاہدہ کریں۔ یہ روشنی کے کس اصول پر کام کرتا ہے؟ اس کی تصویر کی خصوصیات کیا ہیں؟ || د کارتن بکس، موم کاغذ یا ټشو کاغذ په کارولو د ستنې سوري کمره جوړه کړئ. د هغې جوړ شوی انځور وګورئ. د رڼا په کوم اصل کار کوي؟ د انځور ځانګړنې یې څه دي؟
+sol Project activity ## It works because light travels in a straight line. The image on the screen is upside down (inverted), faint and smaller than the object; it gets bigger as the object comes closer. || یہ اس لیے کام کرتا ہے کہ روشنی سیدھی لکیر میں سفر کرتی ہے۔ پردے پر تصویر الٹی، دھندلی اور چیز سے چھوٹی ہوتی ہے؛ چیز قریب لانے پر بڑی ہو جاتی ہے۔ || ځکه کار کوي چې رڼا په مستقیم کرښه سفر کوي. په پرده انځور سرچپه، تت او تر شي کوچنی وي؛ کله چې شی نږدې شي لوېږي.
+qp ii | Make a simple musical instrument using a wooden board, iron nails, thin steel wires of different lengths and a hammer. On which principle does this instrument work? Observe also the intensity of sound produced by it. || لکڑی کے تختے، لوہے کی کیلوں، مختلف لمبائی کے پتلے اسٹیل کے تاروں اور ہتھوڑی سے ایک سادہ ساز بنائیں۔ یہ ساز کس اصول پر کام کرتا ہے؟ اس سے پیدا ہونے والی آواز کی شدت کا بھی مشاہدہ کریں۔ || د لرګي تختې، د اوسپنې مېخونو، د بېلابېلو اوږدوالو نریو فولادي تارونو او څټک په کارولو یوه ساده موسیقي آله جوړه کړئ. دا آله په کوم اصل کار کوي؟ د هغې د غږ شدت هم وګورئ.
+sol Project activity ## It works because a vibrating object (the plucked wire) produces sound. Plucking harder gives a louder sound (greater intensity); short wires give higher notes than long wires. || یہ اس لیے کام کرتا ہے کہ تھرتھراتی چیز (چھیڑا گیا تار) آواز پیدا کرتی ہے۔ زور سے چھیڑنے پر آواز اونچی (زیادہ شدت) ہوتی ہے؛ چھوٹے تار لمبے تاروں سے باریک سر دیتے ہیں۔ || ځکه کار کوي چې رپېدونکی شی (ټکول شوی تار) غږ پیدا کوي. په زور ټکول لوړ غږ (ډېر شدت) ورکوي؛ لنډ تارونه تر اوږدو نری غږ ورکوي.
+endexercise
+@issue The five Q2 iv pictures carry no captions; panel labels are SpaceBook labels. The Q4 ii table columns are blank in the textbook.

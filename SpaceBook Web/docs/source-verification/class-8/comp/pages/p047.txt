@@ -1,0 +1,29 @@
+@printed 43
+@deco A faint clock watermark beside the first code panel.
+@issue In Example 5's pseudocode the loop condition is printed "Until <count '5>" (the comparison symbol is unclear on the scan; it should mean count = 5); kept as printed.
+p Main Goal: Generate average of the marks of five subjects || بنیادی مقصد: پانچ مضامین کے نمبروں کا اوسط حاصل کرنا || اصلي موخه: د پنځو مضمونونو د نمبرو اوسط جوړول
+box code | Pseudocode (Example 5) || سوڈو کوڈ (مثال 5) || سوډو کوډ (۵ بېلګه)
+m Line 0:  Set subjects = 5
+m Line 1:  Set count = 0
+m Line 2:  Set total = 0
+m Line 3:  Loop Repeat:
+m Line 4:      Take input (subject_marks)
+m Line 5:      Add subject_marks to total
+m Line 6:      Increment count by 1
+m Line 7:  Until <count '5>
+m Line 8:  Average = total / 5
+m Line 9:  Output Average
+endbox
+p Example 6: The following pseudocode generates a random number that is added to total variable. Meanwhile, the variable count keeps track of how many numbers were generated. This way, the running average of the generated numbers is calculated and displayed. To terminate a forever loop, generally a combination of keys is assigned which when pressed the loop terminates. || مثال 6: درج ذیل سوڈو کوڈ ایک بے ترتیب عدد پیدا کرتا ہے جو ٹوٹل متغیر میں جمع ہوتا ہے۔ اس دوران متغیر count اس کا حساب رکھتا ہے کہ کتنے اعداد پیدا ہوئے۔ اس طرح پیدا کیے گئے اعداد کا جاری اوسط نکالا اور دکھایا جاتا ہے۔ فار ایور لوپ ختم کرنے کے لیے عموماً کیز کا ایک مجموعہ مقرر کیا جاتا ہے جسے دبانے پر لوپ ختم ہو جاتا ہے۔ || بېلګه ۶: لاندې سوډو کوډ یوه تصادفي شمېره جوړوي چې په ټوټل متغیر کې اضافه کېږي. په ورته وخت کې متغیر count ساتي چې څو شمېرې جوړې شوې. په دې ډول د جوړو شویو شمېرو روان اوسط محاسبه او ښودل کېږي. د forever لوپ د پای ته رسولو لپاره عموماً د کیلیو یو ترکیب ټاکل کېږي چې د ټکولو سره یې لوپ پای ته رسېږي.
+p Main Goal: Generate running average of random numbers. || بنیادی مقصد: بے ترتیب اعداد کا جاری اوسط حاصل کرنا۔ || اصلي موخه: د تصادفي شمېرو روان اوسط جوړول.
+box code | Pseudocode (Example 6) || سوڈو کوڈ (مثال 6) || سوډو کوډ (۶ بېلګه)
+m Line 0:  Set count = 0
+m Line 1:  Set total = 0
+m Line 2:  Loop Forever:
+m Line 3:      Generate Random Number
+m Line 4:      Increment count by 1
+m Line 5:      Add Random Number to total
+m Line 6:      Run_Average = total / count
+m Line 7:      Output Run_Average
+m Line 8:  End loop
+endbox

@@ -1,0 +1,40 @@
+@printed 129
+@issue Example 2's working prints "x² + {(−1 + (−2)}x + (−1 (−2)"; kept as printed. In the Identity II figure the top length is a + b with A, B, C on the top edge; both a and b parts are drawn.
+m $(x - 1)(x - 2) = x^2 + \{(-1 + (-2)\}x + (-1(-2)$
+m $= x^2 - 3x + 2$
+p So, $-3x$ is the required term. || لہٰذا $-3x$ مطلوبہ رکن ہے۔ || نو $-3x$ اړین حد دی.
+endexample
+### Identity II: $(a + b)^2 = a^2 + 2ab + b^2$ || مماثلت II || دوهم مطابقت
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+m $(a + b)^2 = a^2 + 2ab + b^2$
+p Proof: || ثبوت: || ثبوت:
+m LHS. $= (a + b)^2$
+m $= (a + b)(a + b)$
+m $= a^2 + ab + ba + b^2$
+m $= a^2 + ab + ab + b^2$
+m $= a^2 + 2ab + b^2 =$ RHS.
+p Thus LHS. = RHS. || اس طرح LHS. = RHS. || نو LHS. = RHS.
+m Hence proved $(a + b)^2 = a^2 + 2ab + b^2 =$ R.H.S
+p **Geometric Proof:** || **ہندسی ثبوت:** || **هندسي ثبوت:**
+p Look at the figure ACFD. Its length and width is a+b. It is divided into 4 portions. || شکل ACFD کو دیکھیں۔ اس کی لمبائی اور چوڑائی a+b ہے۔ یہ 4 حصوں میں تقسیم ہے۔ || ACFD شکل ته وګورئ. اوږدوالی او پلنوالی یې a+b دی. په 4 برخو وېشل شوی.
+m Now Area of ACFD $=$ Length of ACFD x Width of ACFD
+m $= (a + b)(a + b) = (a + b)^2$
+m But Area of ACFD $=$ Area of ABIG $+$ Area of IHCB $+$ Area of DEIG $+$ Area of EFHI
+area w=a:b | h=a:b | cells=a²,ab;ba,b² | top=a + b | side=a + b | pts=A,B,C;G,I,H;D,E,F
+p So, || لہٰذا، || نو،
+m $(a + b)^2 = a^2 + ab + ba + b^2$
+m $(a + b)^2 = a^2 + 2ab + b^2$ (because $ab = ba$)
+p Hence proved. || ثابت ہوا۔ || ثابت شو.
+example 3
+p Find the squares of || مربع معلوم کریں || مربع معلوم کړئ
+qp i | $a + 2b$
+qp ii | $4p + 8q$
+qp iii | $2 + 5xy$
+## Solution: || حل: || حل:
+m i. $(a + 2b)^2 = a^2 + 2(a)(2b) + (2b)^2$
+m $= a^2 + 4ab + 4b^2$
+m ii. $(4p + 8q)^2 = (4p)^2 + 2(4p)(8q) + (8q)^2$
+m $= 16p^2 + 64pq + 64q^2$
+m iii. $(2 + 5xy)^2 = (2)^2 + 2(2)(5xy) + (5xy)^2$
+m $= 4 + 20xy + 25x^2y^2$
+endexample

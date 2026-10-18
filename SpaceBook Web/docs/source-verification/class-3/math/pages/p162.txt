@@ -1,0 +1,15 @@
+@printed 157
+@deco Pink rectangle PQRS and triangle XYZ to measure; green squares labelled with side lengths.
+qp ii | Rectangle PQRS: $\overline{PQ}$ = ___ $\overline{QR}$ = ___ $\overline{RS}$ = ___ $\overline{PS}$ = ___ Perimeter = ___
+fig geo 260 150 ; G 30 20 200 110 #f0abfc ; P 22 144 P ; P 240 144 Q ; P 240 16 R ; P 22 16 S
+sol Measure the four sides with a ruler and add them. ## PQ = RS and QR = PS (opposite sides of a rectangle), so Perimeter = 2 × PQ + 2 × QR. || PQ = RS اور QR = PS (مستطیل کے آمنے سامنے کے اضلاع)، اس لیے احاطہ = 2 × PQ + 2 × QR۔ || PQ = RS او QR = PS (د مستطیل مخامخ اړخونه)، نو محیط = 2 × PQ + 2 × QR.
+qp iii | Triangle XYZ: $\overline{XY}$ = ___ $\overline{YZ}$ = ___ $\overline{XZ}$ = ___ Perimeter = ___
+fig geo 260 180 ; S 30 160 230 160 ; S 230 160 130 20 ; S 130 20 30 160 ; P 20 172 X ; P 240 172 Y ; P 130 12 Z
+sol Measure the three sides with a ruler and add them. ## Perimeter of a triangle = sum of its three sides. || مثلث کا احاطہ = تینوں اضلاع کا مجموعہ۔ || د مثلث محیط = د درې اړخونو مجموعه.
+q 3 | Find the perimeter of the following. || درج ذیل کا احاطہ معلوم کریں۔ || د لاندې محیط معلوم کړئ.
+qp i | Square with sides 3cm
+fig geo 180 150 ; G 40 30 100 100 #bbf7d0 ; P 90 24 3cm ; P 90 148 3cm ; P 20 84 3cm ; P 160 84 3cm
+sol 12 cm ## 4 × 3 cm = 12 cm || 4 × 3 cm = 12 cm || 4 × 3 cm = 12 cm
+qp ii | Square with sides 4cm
+fig geo 200 170 ; G 40 30 120 120 #ecfccb ; P 100 24 4cm ; P 100 166 4cm ; P 20 94 4cm ; P 180 94 4cm
+sol 16 cm ## 4 × 4 cm = 16 cm || 4 × 4 cm = 16 cm || 4 × 4 cm = 16 cm

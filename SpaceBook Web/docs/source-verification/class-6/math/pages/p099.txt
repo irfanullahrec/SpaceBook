@@ -1,0 +1,100 @@
+@printed 97
+exercise 5.1
+q 1 | Identify well-defined sets among these. || ان میں سے واضح طور پر متعین سیٹ کی شناخت کریں۔ || په دې کې په ښه ډول ټاکل شوي سېټونه وپېژنئ.
+qp a | A = the set of grades in your school || A = آپ کے اسکول کی جماعتوں کا سیٹ || A = ستاسو د ښوونځي د ټولګیو سېټ
+sol Well-defined ## Everyone agrees which grades the school has, so the members are clear. || ہر کوئی جانتا ہے کہ اسکول میں کون سی جماعتیں ہیں، اس لیے ارکان واضح ہیں۔ || هر څوک پوهېږي چې ښوونځی کوم ټولګي لري، نو غړي روښانه دي.
+qp b | B = the set of interesting games || B = دلچسپ کھیلوں کا سیٹ || B = د په زړه پورې لوبو سېټ
+sol Not well-defined ## "Interesting" means something different to each person, so we cannot say clearly which games belong. || "دلچسپ" ہر شخص کے لیے مختلف ہے، اس لیے واضح نہیں کہ کون سے کھیل اس میں ہیں۔ || "په زړه پورې" هر چا ته بېل مانا لري، نو روښانه نه ده چې کومې لوبې پکې دي.
+qp c | C = the set of the provincial capitals of Pakistan || C = پاکستان کے صوبائی دارالحکومتوں کا سیٹ || C = د پاکستان د ولایتي پلازمېنو سېټ
+sol Well-defined ## The provincial capitals are fixed facts, so the members are clear. || صوبائی دارالحکومت متعین حقائق ہیں، اس لیے ارکان واضح ہیں۔ || ولایتي پلازمېنې ټاکلي حقیقتونه دي، نو غړي روښانه دي.
+qp d | D = the set of intelligent students in the class || D = جماعت کے ذہین طلبہ کا سیٹ || D = په ټولګي کې د هوښیارو زده کوونکو سېټ
+sol Not well-defined ## "Intelligent" is an opinion and differs from person to person. || "ذہین" ایک رائے ہے اور ہر شخص کے لیے مختلف ہے۔ || "هوښیار" نظر دی او له یوه کسه تر بل توپیر لري.
+qp e | E = the set of easy questions in the exams || E = امتحانات کے آسان سوالات کا سیٹ || E = په ازموینو کې د اسانو پوښتنو سېټ
+sol Not well-defined ## A question easy for one student may be hard for another. || ایک طالب علم کے لیے آسان سوال دوسرے کے لیے مشکل ہو سکتا ہے۔ || یوه پوښتنه چې یو زده کوونکي ته اسانه وي بل ته کېدای شي ستونزمنه وي.
+qp f | H = the set of big animals || H = بڑے جانوروں کا سیٹ || H = د لویو ژویو سېټ
+sol Not well-defined ## "Big" has no fixed limit, so the members are not clear. || "بڑا" کی کوئی مقررہ حد نہیں، اس لیے ارکان واضح نہیں۔ || "لوی" هېڅ ټاکلی حد نه لري، نو غړي روښانه نه دي.
+qp g | J = the set of the Prime Ministers of Pakistan || J = پاکستان کے وزرائے اعظم کا سیٹ || J = د پاکستان د لومړیو وزیرانو سېټ
+sol Well-defined ## The list of Prime Ministers is a recorded fact. || وزرائے اعظم کی فہرست ایک ریکارڈ شدہ حقیقت ہے۔ || د لومړیو وزیرانو لیست ثبت شوی حقیقت دی.
+qp h | Set of small birds in the sky || آسمان میں چھوٹے پرندوں کا سیٹ || په اسمان کې د کوچنیو مرغانو سېټ
+sol Not well-defined ## "Small" is not exact, and the birds in the sky keep changing. || "چھوٹا" درست نہیں، اور آسمان کے پرندے بدلتے رہتے ہیں۔ || "کوچنی" دقیق نه دی، او په اسمان کې مرغان بدلېږي.
+qp i | Set of even numbers between 1 and 5 || 1 اور 5 کے درمیان جفت اعداد کا سیٹ || د 1 او 5 ترمنځ د جفتو عددونو سېټ
+sol Well-defined: {2, 4} ## We can list the members exactly: 2 and 4. || ہم ارکان بالکل درست لکھ سکتے ہیں: 2 اور 4۔ || موږ غړي دقیق لیکلی شو: 2 او 4.
+qp j | {+, –, +, –} || {+، –، +، –} || {+، –، +، –}
+sol Well-defined: {+, –} ## The members are clear (+ and –); repeated symbols are written only once, so the set is {+, –}. || ارکان واضح ہیں (+ اور –)؛ دہرائی گئی علامتیں ایک بار لکھی جاتی ہیں، لہٰذا سیٹ {+، –} ہے۔ || غړي روښانه دي (+ او –)؛ تکرار شوې نښې یو ځل لیکل کېږي، نو سېټ {+، –} دی.
+qp k | {1, 3, 5, 7} || {1، 3، 5، 7} || {1، 3، 5، 7}
+sol Well-defined ## The members are listed exactly and are distinct. || ارکان بالکل درست لکھے گئے ہیں اور ممتاز ہیں۔ || غړي دقیق لیکل شوي او جلا دي.
+qp l | Set of durable tables || پائیدار میزوں کا سیٹ || د ټینګو مېزونو سېټ
+sol Not well-defined ## "Durable" is a matter of opinion. || "پائیدار" رائے کا معاملہ ہے۔ || "ټینګ" د نظر خبره ده.
+qp m | Set of nice people in the neighbourhood || محلے کے اچھے لوگوں کا سیٹ || په ګاونډ کې د ښو خلکو سېټ
+sol Not well-defined ## "Nice" means different things to different people. || "اچھا" مختلف لوگوں کے لیے مختلف ہے۔ || "ښه" بېلو خلکو ته بېل مانا لري.
+qp n | Set of beautiful people in a town || قصبے کے خوبصورت لوگوں کا سیٹ || په یوه ښار کې د ښکلو خلکو سېټ
+sol Not well-defined ## Beauty is a personal opinion. || خوبصورتی ذاتی رائے ہے۔ || ښکلا شخصي نظر دی.
+q 2 | List each element of these sets in symbolic form. (e.g. $1 \in a$) || ان سیٹوں کے ہر رکن کو علامتی صورت میں لکھیں۔ (مثلاً $1 \in a$) || د دې سېټونو هر غړی په نښه ییزه بڼه ولیکئ. (لکه $1 \in a$)
+qp a | A = {1, 3, 5, 7, 9}
+sol $1 \in A,\ 3 \in A,\ 5 \in A,\ 7 \in A,\ 9 \in A$ ## Write each element followed by ∈ A. || ہر رکن کے بعد ∈ A لکھیں۔ || هر غړی ولیکئ او وروسته یې ∈ A.
+qp b | B = {a, b, c, d, e}
+sol $a \in B,\ b \in B,\ c \in B,\ d \in B,\ e \in B$ ## Write each element followed by ∈ B. || ہر رکن کے بعد ∈ B لکھیں۔ || هر غړی ولیکئ او وروسته یې ∈ B.
+qp c | C = {s, t, a, r}
+sol $s \in C,\ t \in C,\ a \in C,\ r \in C$ ## Write each element followed by ∈ C. || ہر رکن کے بعد ∈ C لکھیں۔ || هر غړی ولیکئ او وروسته یې ∈ C.
+qp d | D = {Monday, Wednesday, Friday}
+sol Monday ∈ D, Wednesday ∈ D, Friday ∈ D ## Write each element followed by ∈ D. || ہر رکن کے بعد ∈ D لکھیں۔ || هر غړی ولیکئ او وروسته یې ∈ D.
+qp e | E = {chips, cookies, burgers, fries}
+sol chips ∈ E, cookies ∈ E, burgers ∈ E, fries ∈ E ## Write each element followed by ∈ E. || ہر رکن کے بعد ∈ E لکھیں۔ || هر غړی ولیکئ او وروسته یې ∈ E.
+q 3 | Fill in the blanks using the symbols $\in$ or $\notin$. || علامتیں $\in$ یا $\notin$ استعمال کر کے خالی جگہیں پُر کریں۔ || د $\in$ یا $\notin$ نښو په کارولو تش ځایونه ډک کړئ.
+qp a | 5 ____ {1, 4, 5}
+sol $5 \in \{1, 4, 5\}$ ## 5 is in the list, so it belongs. || 5 فہرست میں ہے، اس لیے تعلق رکھتا ہے۔ || 5 په لیست کې دی، نو تړاو لري.
+qp b | 10 ____ {set of even numbers}
+sol 10 ∈ {set of even numbers} ## 10 is even (10 = 2 × 5). || 10 جفت ہے (10 = 2 × 5)۔ || 10 جفت دی (10 = 2 × 5).
+qp c | {u} ____ {a, i, o, e, u}
+sol u ∈ {a, i, o, e, u} (as printed, {u} is a set, so strictly {u} ∉ the set; the element u ∈ it) ## The letter u is an element. But {u} in curly brackets is a set, not an element, so strictly {u} ∉ {a, i, o, e, u}. || حرف u رکن ہے۔ لیکن منحنی قوسین میں {u} ایک سیٹ ہے، رکن نہیں، اس لیے درست طور پر {u} ∉ {a، i، o، e، u}۔ || توری u غړی دی. خو په ګونجو قوسونو کې {u} سېټ دی، غړی نه، نو په دقیق ډول {u} ∉ {a، i، o، e، u}.
+qp d | tiger ____ {set of birds}
+sol tiger ∉ {set of birds} ## A tiger is an animal, not a bird. || شیر جانور ہے، پرندہ نہیں۔ || پړانګ ژوی دی، مرغه نه.
+qp e | January ____ {set of months of a year}
+sol January ∈ {set of months of a year} ## January is a month of the year. || جنوری سال کا ایک مہینہ ہے۔ || جنوري د کال میاشت ده.
+q 4 | Write the following statements in symbolic form. || درج ذیل بیانات کو علامتی صورت میں لکھیں۔ || لاندې بیانونه په نښه ییزه بڼه ولیکئ.
+qp a | 4 is an element of set W || 4 سیٹ W کا رکن ہے || 4 د W سېټ غړی دی
+sol $4 \in W$ ## "is an element of" is written ∈. || "کا رکن ہے" کو ∈ لکھا جاتا ہے۔ || "غړی دی" په ∈ لیکل کېږي.
+qp b | 4 is an element of set P || 4 سیٹ P کا رکن ہے || 4 د P سېټ غړی دی
+sol $4 \in P$ ## "is an element of" is written ∈. || "کا رکن ہے" کو ∈ لکھا جاتا ہے۔ || "غړی دی" په ∈ لیکل کېږي.
+qp c | 0 is not the element of natural numbers || 0 قدرتی اعداد کا رکن نہیں ہے || 0 د طبیعي عددونو غړی نه دی
+sol $0 \notin N$ ## Natural numbers start from 1; "is not an element of" is written ∉, and N is the set of natural numbers. || قدرتی اعداد 1 سے شروع ہوتے ہیں؛ "کا رکن نہیں" کو ∉ لکھا جاتا ہے، اور N قدرتی اعداد کا سیٹ ہے۔ || طبیعي عددونه له 1 پیلېږي؛ "غړی نه دی" په ∉ لیکل کېږي، او N د طبیعي عددونو سېټ دی.
+q 5 | If A = {1, 3, 5, 7, 11} and B = {2, 4, 6, 8, 10} then write true and false for the following statements. || اگر A = {1، 3، 5، 7، 11} اور B = {2، 4، 6، 8، 10} ہو تو درج ذیل بیانات کے لیے درست اور غلط لکھیں۔ || که A = {1، 3، 5، 7، 11} او B = {2، 4، 6، 8، 10} وي، د لاندې بیانونو لپاره سم او غلط ولیکئ.
+qp a | $3 \in A$
+sol True ## 3 is in A. || 3، A میں ہے۔ || 3 په A کې دی.
+qp b | $5 \notin B$
+sol True ## B has only even numbers; 5 is not in B. || B میں صرف جفت اعداد ہیں؛ 5، B میں نہیں۔ || B یوازې جفت عددونه لري؛ 5 په B کې نشته.
+qp c | $11 \in A$
+sol True ## 11 is the last element of A. || 11، A کا آخری رکن ہے۔ || 11 د A وروستی غړی دی.
+qp d | $0 \notin B$
+sol True ## 0 is not listed in B. || 0، B میں نہیں لکھا گیا۔ || 0 په B کې نه دی لیکل شوی.
+qp e | $0 \notin A$
+sol True ## 0 is not listed in A. || 0، A میں نہیں لکھا گیا۔ || 0 په A کې نه دی لیکل شوی.
+qp f | $4 \notin B$
+sol False ## 4 is in B, so 4 ∈ B. || 4، B میں ہے، اس لیے 4 ∈ B۔ || 4 په B کې دی، نو 4 ∈ B.
+qp g | $11 \in B$
+sol False ## 11 is odd and not in B. || 11 طاق ہے اور B میں نہیں۔ || 11 طاق دی او په B کې نشته.
+qp h | $2 \notin A$
+sol True ## 2 is not in A. || 2، A میں نہیں۔ || 2 په A کې نشته.
+qp i | $12 \notin B$
+sol True ## B ends at 10; 12 is not in B. || B، 10 پر ختم ہوتا ہے؛ 12، B میں نہیں۔ || B په 10 پای ته رسېږي؛ 12 په B کې نشته.
+qp j | $\{7\} \in A$
+sol False ## 7 ∈ A is true, but {7} is a set, not an element of A. || 7 ∈ A درست ہے، مگر {7} ایک سیٹ ہے، A کا رکن نہیں۔ || 7 ∈ A سم دی، خو {7} سېټ دی، د A غړی نه دی.
+q 6 | Write the cardinality of the following sets. || درج ذیل سیٹوں کی عددیت لکھیں۔ || د لاندې سېټونو کارډینالیټي ولیکئ.
+qp a | B = {1, 2, 3, 4, 5, 6, 7}
+sol $n(B) = 7$ ## Count the elements: 7. || ارکان گنیں: 7۔ || غړي وشمېرئ: 7.
+qp b | Q = {a, e, i, o, u}
+sol $n(Q) = 5$ ## Count the elements: 5. || ارکان گنیں: 5۔ || غړي وشمېرئ: 5.
+qp c | N = { }
+sol $n(N) = 0$ ## The set has no element. || سیٹ میں کوئی رکن نہیں۔ || سېټ هېڅ غړی نه لري.
+qp d | K = {maths, science, Urdu, English}
+sol $n(K) = 4$ ## Count the elements: 4. || ارکان گنیں: 4۔ || غړي وشمېرئ: 4.
+qp e | R = {2, 4, 6}
+sol $n(R) = 3$ ## Count the elements: 3. || ارکان گنیں: 3۔ || غړي وشمېرئ: 3.
+qp f | S = {5, 10, 15, 20}
+sol $n(S) = 4$ ## Count the elements: 4. || ارکان گنیں: 4۔ || غړي وشمېرئ: 4.
+qp g | P = {k, l, m, n, o}
+sol $n(P) = 5$ ## Count the elements: 5. || ارکان گنیں: 5۔ || غړي وشمېرئ: 5.
+qp h | E = {10, 20, 30, 40, 50}
+sol $n(E) = 5$ ## Count the elements: 5. || ارکان گنیں: 5۔ || غړي وشمېرئ: 5.
+endexercise
+@issue Exercise 5.1 Q3(c) "{u} ___ {a, i, o, e, u}" and Q5(j) "{7} ∈ A" mix sets and elements; the SpaceBook solution explains the distinction.

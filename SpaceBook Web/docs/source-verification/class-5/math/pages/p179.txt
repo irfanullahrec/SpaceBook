@@ -1,0 +1,21 @@
+@printed 171
+q 4 | In the following table the values of temperature in Lahore during a week of August, are given. Draw a horizontal bar graph to represent this data. || درج ذیل جدول میں اگست کے ایک ہفتے کے دوران لاہور کے درجۂ حرارت کی قیمتیں دی گئی ہیں۔ اس ڈیٹا کو ظاہر کرنے کے لیے افقی بار گراف بنائیں۔ || په لاندې جدول کې د اګست په یوه اونۍ کې د لاهور د تودوخې ارزښتونه ورکړل شوي. د دې معلوماتو د ښودلو لپاره افقي میله ییز ګراف رسم کړئ.
+table
+th | Days of week | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
+tr | Temperature (°C) | 32 | 33 | 30 | 32 | 36 | 40 | 38
+endtable
+bars Monday=32; Tuesday=33; Wednesday=30; Thursday=32; Friday=36; Saturday=40; Sunday=38 | max=40 | step=10 | sq=2 | x=Temperature (°C) | y=Days of week | scale=Scale: 1 square = 2°C | horiz || Model answer: horizontal bar graph of temperatures || نمونہ جواب: درجۂ حرارت کا افقی بار گراف || نمونه ځواب: د تودوخې افقي میله ییز ګراف
+sol Bar graph (model above) ## Take 1 square = 2°C; e.g. Monday 32°C = 16 squares, Saturday 40°C = 20 squares. || 1 خانہ = 2°C لیں؛ مثلاً پیر 32°C = 16 خانے، ہفتہ 40°C = 20 خانے۔ || 1 خانه = 2°C ونیسئ؛ لکه دوشنبه 32°C = 16 خانې، شنبه 40°C = 20 خانې.
+q 5 | Study the graph carefully to answer the given questions. || دیے گئے سوالات کے جواب دینے کے لیے گراف کا غور سے مطالعہ کریں۔ || ورکړل شوو پوښتنو ته د ځواب لپاره ګراف په ځیر سره ولولئ.
+bars Bus=100; Rikshaw=60; Car=70; Motor bike=20; Walk=85 | max=120 | step=20 | sq=10 | x=Transportation used for going to school | y=Number of students | scale=Scale: 1 square = 10 students || Transportation used for going to school || اسکول جانے کے لیے استعمال ہونے والی سواری || ښوونځي ته د تګ لپاره کارول شوې وسیله
+@issue Ex 2 Q5 bar heights are read from the printed graph (1 square = 10 students): Bus 100, Rikshaw 60, Car 70, Motor bike 20, Walk about 85 (half a square above 80). The printed bars sit 1–2 units above the grid lines. "Rikshaw" (for "Rickshaw") is a printing error. The answer key (p.184) gives e) 80; the printed bar is clearly above the 80 line, so SpaceBook gives "about 85" and quotes the key value.
+qp a | How many students come to school by car? || کتنے طلبہ کار سے اسکول آتے ہیں؟ || څو زده کوونکي په موټر ښوونځي ته راځي؟
+sol 70 students ## The Car bar reaches 7 squares = 70. || کار والی بار 7 خانے = 70 تک جاتی ہے۔ || د موټر میله تر 7 خانو = 70 پورې رسېږي.
+qp b | Is the number of students coming to school on the motorcycle less than those coming by rikshaw? If yes, then how much less? || کیا موٹر سائیکل پر اسکول آنے والے طلبہ کی تعداد رکشے سے آنے والوں سے کم ہے؟ اگر ہاں تو کتنی کم؟ || ایا په موټر سایکل ښوونځي ته د راتلونکو زده کوونکو شمېر په رکشه کې له راتلونکو کم دی؟ که هو، څومره کم؟
+sol Yes, 40 less ## Rikshaw 60 − Motor bike 20 = 40. || رکشہ 60 − موٹر سائیکل 20 = 40۔ || رکشه 60 − موټر سایکل 20 = 40.
+qp c | Which means of transport do most students use? What is the number of students coming to school by this means? || زیادہ تر طلبہ کون سی سواری استعمال کرتے ہیں؟ اس ذریعے سے آنے والے طلبہ کی تعداد کتنی ہے؟ || ډېری زده کوونکي کومه وسیله کاروي؟ په دې وسیله راتلونکو زده کوونکو شمېر څومره دی؟
+sol Bus, 100 students ## The Bus bar is the tallest (10 squares). || بس والی بار سب سے اونچی ہے (10 خانے)۔ || د بس میله تر ټولو لوړه ده (10 خانې).
+qp d | What is the total number of students coming by car, rikshaw and bus altogether? || کار، رکشہ اور بس سے آنے والے طلبہ کی کل تعداد کیا ہے؟ || په موټر، رکشه او بس کې د راتلونکو زده کوونکو ټول شمېر څومره دی؟
+sol 230 students ## 70 + 60 + 100 = 230. || 70 + 60 + 100 = 230۔ || 70 + 60 + 100 = 230.
+qp e | Write the number of students coming to school on foot. || پیدل اسکول آنے والے طلبہ کی تعداد لکھیں۔ || پر پښو ښوونځي ته د راتلونکو زده کوونکو شمېر ولیکئ.
+sol About 85 students (the answer key on p.184 gives 80) ## The Walk bar ends half a square above 80, i.e. about 85; the printed answer key reads it as 80. || پیدل والی بار 80 سے آدھا خانہ اوپر ختم ہوتی ہے، یعنی تقریباً 85؛ چھپی ہوئی جوابی کلید اسے 80 پڑھتی ہے۔ || د پلي تګ میله له 80 څخه نیمه خانه پورته پای ته رسېږي، یعنې شاوخوا 85؛ چاپ شوې ځوابي کلي یې 80 لولي.

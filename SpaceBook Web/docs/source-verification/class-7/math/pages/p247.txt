@@ -1,0 +1,21 @@
+@printed 243
+bars cats=May,June,July,August,September | series=Research:15,25,10,15,20;Designing:20,25,15,30,35;Editing:5,20,15,10,25 | ymax=40 | step=5 | ylab=No. of employees | xlab=Months || Vertical multiple bar graph of employees joining each department || ہر شعبے میں شامل ہونے والے ملازمین کا عمودی متعدد بار گراف || په هره څانګه کې د شاملو شویو کارکوونکو عمودي ګڼ بار ګراف
+@issue The printed bar graph does not match its own table for some bars (e.g. June editing is drawn at about 18, August designing at about 27, September at about 16, 31 and 20); the coded graph uses the table values.
+endexample
+exercise 13.1
+q 1 | The following data shows the number of new buildings (commercial and residential) constructed during 5 months in a Town. Draw a vertical multiple bar graph for this data using appropriate scale. || درج ذیل ڈیٹا ایک قصبے میں 5 مہینوں کے دوران تعمیر ہونے والی نئی عمارتوں (تجارتی اور رہائشی) کی تعداد دکھاتا ہے۔ موزوں پیمانہ استعمال کرتے ہوئے اس ڈیٹا کے لیے عمودی متعدد بار گراف بنائیں۔ || لاندې معلومات په یوه ښارګوټي کې په 5 میاشتو کې د جوړو شویو نویو ودانیو (سوداګریزو او استوګنیزو) شمېر ښيي. د مناسب پیمانې په کارولو د دې معلوماتو لپاره عمودي ګڼ بار ګراف رسم کړئ.
+table
+th | Type || قسم || ډول | July | August | September | October | November
+tr | Commerical || تجارتی || سوداګریز | 5 | 35 | 15 | 10 | 5
+tr | Residential || رہائشی || استوګنیز | 10 | 15 | 5 | 5 | 20
+endtable
+@issue The right edge of Q1's text and table is cut off in the scan ("commercial and resid…", "graph for…"); completed from context. "Commerical" is printed as shown.
+q 2 | Observe the given multiple bar graph in vertical form and answer the questions. || دیے گئے عمودی متعدد بار گراف کا مشاہدہ کریں اور سوالات کے جواب دیں۔ || ورکړل شوی عمودي ګڼ بار ګراف وګورئ او پوښتنو ته ځواب ورکړئ.
+bars cats=Mon,Tue,Wed,Thu | series=Textbooks:15,19,23,33;Notebook:8,39,18,33 | ymax=45 | step=5 | ylab=No. of Books Sold | xlab=Days | title=Bookshop Sale || Bookshop Sale (scale: one mark along y-axis = 5 items) || کتابوں کی دکان کی فروخت (پیمانہ: y-محور پر ایک نشان = 5 اشیاء) || د کتاب پلورنځي پلور (پیمانه: د y-محور پر یوه نښه = 5 توکي)
+@issue The bar heights are read from the printed graph (Textbooks about 15, 19, 23, 33; Notebooks about 8, 39, 18, 33) and are approximate; the scale note is cut off at the right edge ("= 5 i…").
+qp a | How many textbooks were sold on Monday? || پیر کو کتنی درسی کتابیں فروخت ہوئیں؟ || د دوشنبې په ورځ څو درسي کتابونه وپلورل شول؟
+qp b | How many textbooks were sold on Wednesday? || بدھ کو کتنی درسی کتابیں فروخت ہوئیں؟ || د چهارشنبې په ورځ څو درسي کتابونه وپلورل شول؟
+qp c | On which day the least number of notebooks were sold? || کس دن سب سے کم نوٹ بکس فروخت ہوئیں؟ || په کومه ورځ تر ټولو لږې کتابچې وپلورل شوې؟
+qp d | On which day the greatest number of notebooks were sold? || کس دن سب سے زیادہ نوٹ بکس فروخت ہوئیں؟ || په کومه ورځ تر ټولو ډېرې کتابچې وپلورل شوې؟
+qp e | What is the total number of notebooks sold on Tuesday and Wednesday altogether? || منگل اور بدھ کو کل کتنی نوٹ بکس فروخت ہوئیں؟ || د سه شنبې او چهارشنبې په ورځو ټولې څو کتابچې وپلورل شوې؟
+qp f | On which day the greatest number of books were sold? || کس دن سب سے زیادہ کتابیں فروخت ہوئیں؟ || په کومه ورځ تر ټولو ډېر کتابونه وپلورل شول؟

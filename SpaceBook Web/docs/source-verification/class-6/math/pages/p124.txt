@@ -1,0 +1,76 @@
+@printed 120
+q 4 | Subtract the following expressions vertically. || درج ذیل عبارتوں کو عمودی طور پر تفریق کریں۔ || لاندې افادې په عمودي ډول تفریق کړئ.
+qsolve combine
+qp a | $4a + 5b - 3c$ from $6a - 3b + c$
+qp b | $3x^2 - 6x - 4$ from $5 + x - 2x^2$
+qp c | $3x + y - 3z$ from $9x - 5y + z$
+qp d | $2x + 9y - 7$ from $x - y + 2$
+qp e | $-7x^2 - 5$ from $4x^2 - 5$
+qp f | $-7x^2 + 5y - 4$ from $x^2 - 5y + 2$
+qp g | $9x^2 - 5x + 6$ from $-3x^2 - 4x - 3$
+qp h | $4a + 7b - 7c$ from $9b - c - 3a$
+qp i | $10x^2 - xy + z^2$ from $z^2 + xy - 7x^2$
+qp j | $7a^2 + 5b^2 - c^2 - 3abc$ from $4a^2 - b^2 + 6c^2 - 7abc$
+q 5 | Subtract $x^2 + y^2 + 3xy$ from $4x^2 + 2xy - 3y^2$. || $4x^2 + 2xy - 3y^2$ میں سے $x^2 + y^2 + 3xy$ تفریق کریں۔ || له $4x^2 + 2xy - 3y^2$ څخه $x^2 + y^2 + 3xy$ تفریق کړئ.
+solution $3x^2 - xy - 4y^2$
+suse combine x^2 + y^2 + 3xy from 4x^2 + 2xy - 3y^2
+endsolution
+q 6 | What should be subtracted from $a^3 - 4a^2 + 5a - 6$ to obtain $a^2 - 2a + 1$? || $a^3 - 4a^2 + 5a - 6$ میں سے کیا تفریق کیا جائے کہ $a^2 - 2a + 1$ حاصل ہو؟ || له $a^3 - 4a^2 + 5a - 6$ څخه څه تفریق شي چې $a^2 - 2a + 1$ لاسته راشي؟
+solution $a^3 - 5a^2 + 7a - 7$
+ss The required expression = (given expression) − (expression to obtain). || مطلوبہ عبارت = (دی گئی عبارت) − (حاصل ہونے والی عبارت)۔ || غوښتل شوې افاده = (ورکړل شوې افاده) − (لاسته راتلونکې افاده).
+suse combine a^2 - 2a + 1 from a^3 - 4a^2 + 5a - 6
+ss Check: (a³ − 4a² + 5a − 6) − (a³ − 5a² + 7a − 7) = a² − 2a + 1. ✓ || جانچ: (a³ − 4a² + 5a − 6) − (a³ − 5a² + 7a − 7) = a² − 2a + 1 ✓ || ازموینه: (a³ − 4a² + 5a − 6) − (a³ − 5a² + 7a − 7) = a² − 2a + 1 ✓
+endsolution
+q 7 | Subtract $5a^3 - 2a^2 + a - 6$ from the sum of $6a^3 + a^2 + 1$ and $a^2 - 4$. || $6a^3 + a^2 + 1$ اور $a^2 - 4$ کے مجموعے میں سے $5a^3 - 2a^2 + a - 6$ تفریق کریں۔ || د $6a^3 + a^2 + 1$ او $a^2 - 4$ له مجموعې څخه $5a^3 - 2a^2 + a - 6$ تفریق کړئ.
+solution $a^3 + 4a^2 - a + 3$
+ss First add: (6a³ + a² + 1) + (a² − 4) = 6a³ + 2a² − 3. Then subtract. || پہلے جمع کریں: (6a³ + a² + 1) + (a² − 4) = 6a³ + 2a² − 3۔ پھر تفریق کریں۔ || لومړی جمع کړئ: (6a³ + a² + 1) + (a² − 4) = 6a³ + 2a² − 3. بیا تفریق کړئ.
+suse combine 5a^3 - 2a^2 + a - 6 from 6a^3 + a^2 + 1 ;; a^2 - 4
+endsolution
+q 8 | If $X = a - b + c$, $Y = a + b + c$, $Z = a - b - c$ then find; || اگر $X = a - b + c$، $Y = a + b + c$، $Z = a - b - c$ ہو تو معلوم کریں؛ || که $X = a - b + c$، $Y = a + b + c$، $Z = a - b - c$ وي، نو معلوم کړئ؛
+qp a | X + Y
+solution $2a + 2c$
+suse combine a - b + c ;; a + b + c
+endsolution
+qp b | X – Z
+solution $2c$
+suse combine a - b - c from a - b + c
+endsolution
+qp c | Y + Z
+solution $2a$
+suse combine a + b + c ;; a - b - c
+endsolution
+qp d | Z – X
+solution $-2c$
+suse combine a - b + c from a - b - c
+endsolution
+qp e | X + Y – Z
+solution $a + b + 3c$
+suse combine a - b - c from a - b + c ;; a + b + c
+endsolution
+qp f | X – Y – Z
+solution $-a - b + c$
+ss Subtracting Y and Z is the same as subtracting their sum (Y + Z). || Y اور Z کو تفریق کرنا ان کے مجموعے (Y + Z) کو تفریق کرنے کے برابر ہے۔ || د Y او Z تفریق د هغوی د مجموعې (Y + Z) له تفریق سره برابر دی.
+suse combine a + b + c + a - b - c from a - b + c
+endsolution
+qp g | – X – Y + Z
+solution $-a - b - 3c$
+ss −X − Y + Z = Z − (X + Y). || −X − Y + Z = Z − (X + Y)۔ || −X − Y + Z = Z − (X + Y).
+suse combine a - b + c + a + b + c from a - b - c
+endsolution
+endexercise
+@sec 6.6 | Simplification of Algebraic Expressions || الجبری عبارتوں کی تسہیل || د الجبري افادو ساده کول
+# 6.6 Simplification of Algebraic Expressions || 6.6 الجبری عبارتوں کی تسہیل || 6.6 د الجبري افادو ساده کول
+p Sometimes, an expression contains more than one operation and brackets, etc. In these cases, it's important to remember the order of operations so that no miscalculations are made. || بعض اوقات کسی عبارت میں ایک سے زیادہ عملیات اور قوسین وغیرہ ہوتے ہیں۔ ایسی صورتوں میں عملیات کی ترتیب یاد رکھنا اہم ہے تاکہ حساب میں غلطی نہ ہو۔ || کله کله یوه افاده له یوې ډېرې عملیې او قوسونه او نور لري. په داسې حالتونو کې د عملیو ترتیب په یاد ساتل مهم دي چې په حساب کې تېروتنه ونه شي.
+p To simplify the algebraic expressions involving brackets, we follow the same order of preference as we do in whole numbers. When simplifying algebraic expressions the following points must be kept in mind. || قوسین والی الجبری عبارتوں کو سادہ کرنے کے لیے ہم ترجیح کی وہی ترتیب اختیار کرتے ہیں جو مکمل اعداد میں کرتے ہیں۔ الجبری عبارتوں کو سادہ کرتے وقت درج ذیل نکات ذہن میں رکھنے چاہئیں۔ || د قوسونو لرونکو الجبري افادو د ساده کولو لپاره هماغه د لومړیتوب ترتیب تعقیبوو چې په بشپړو عددونو کې یې کوو. د الجبري افادو د ساده کولو پر مهال باید لاندې ټکي په پام کې وي.
+- If there is no sign between the number and bracket, it means multiplication. || اگر عدد اور قوسین کے درمیان کوئی علامت نہ ہو تو اس کا مطلب ضرب ہے۔ || که د عدد او قوس ترمنځ هېڅ نښه نه وي، مطلب یې ضرب دی.
+m $x(5) = x \times 5 = 5x$
+- If there is a number right before a bracket having more than 1 term, remove the bracket and multiply each term with the number or variable outside. || اگر ایک سے زیادہ ارکان والے قوسین سے بالکل پہلے کوئی عدد ہو تو قوسین ہٹا کر ہر رکن کو باہر والے عدد یا متغیر سے ضرب دیں۔ || که د له یو ډېرو حدونو لرونکي قوس څخه مخکې یو عدد وي، قوس لرې کړئ او هر حد په بهرني عدد یا متحول کې ضرب کړئ.
+m $x(y + z) = xy + xz,$
+m $-x(y + z) = -xy - xz$
+example 1 | $l - m - (l + m)$
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} &l - m - (l + m) && \leftarrow \text{First solve the brackets} \\ &= l - m - l - m && \leftarrow \text{Now subtract the like terms} \\ &= -2m \end{aligned}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p When we solve expression involving brackets, addition and subtraction. First we solve the expression inside the brackets and then addition and at the end subtraction. || جب ہم قوسین، جمع اور تفریق والی عبارت حل کرتے ہیں تو پہلے قوسین کے اندر کی عبارت، پھر جمع اور آخر میں تفریق حل کرتے ہیں۔ || کله چې د قوسونو، جمع او تفریق لرونکې افاده حلوو، لومړی د قوس دننه افاده، بیا جمع او په پای کې تفریق حلوو.
+endbox

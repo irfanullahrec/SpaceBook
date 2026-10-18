@@ -1,0 +1,48 @@
+@printed 152
+@issue The Quick Check exponents are very small; confirmed from a 260-dpi render of the KPTBB PDF: a) 3 times 3⁴, b) 5⁶ × 5⁸, c) 2³ × 2⁶, d) 2⁵ × 2⁻⁴, e) 2⁵ × 2⁵, f) (2/3)² × (1/4)².
+@issue The first sentence prints "...with the same base but different exponents, we can add the exponents while keeping the base same" with "different exponents" running into the next line; kept as printed.
+p So, we can say that when multiplying two or more rational numbers with the same base but different exponents, we can add the exponents while keeping the base same. || لہٰذا ہم کہہ سکتے ہیں کہ ایک ہی اساس لیکن مختلف قوت نما والے دو یا زیادہ ناطق اعداد کو ضرب دیتے وقت ہم اساس کو برقرار رکھتے ہوئے قوت نماؤں کو جمع کر سکتے ہیں۔ || نو ویلی شو چې کله د یوې قاعدې خو بېلو توانونو لرونکي دوه یا ډېر ناطق عددونه ضربوو، قاعده ثابته ساتو او توانونه جمع کوو.
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Product law (same base) || حاصلِ ضرب کا قانون (ایک اساس) || د ضرب قانون (یوه قاعده)
+p *If a is any rational number and m, n ∈ Z, then* $a^n \times a^m = a^{m+n}$. || *اگر a کوئی ناطق عدد ہو اور m، n ∈ Z تو* $a^n \times a^m = a^{m+n}$۔ || *که a هر ناطق عدد وي او m، n ∈ Z، نو* $a^n \times a^m = a^{m+n}$.
+endbox
+endexample
+p **Case II: When bases are different but exponents are the same.** || **صورت II: جب اساس مختلف ہوں لیکن قوت نما ایک جیسے ہوں۔** || **دوهم حالت: کله چې قاعدې بېلې وي خو توانونه یو شان وي.**
+example 1
+p Consider the product of $3^2$ and $2^2$. || $3^2$ اور $2^2$ کے حاصلِ ضرب پر غور کریں۔ || د $3^2$ او $2^2$ حاصل ضرب ته پام وکړئ.
+m $3^2 \times 2^2 = (3 \times 3) \times (2 \times 2)$
+m $= 3 \times 3 \times 2 \times 2$
+m $= (3 \times 2) \times (3 \times 2)$
+m $= (3 \times 2)^2$
+p We can observe that the product of two numbers $3^2$ and $2^2$ having the same exponents can be written as the product of numbers with the common exponent i.e. 2. || ہم دیکھ سکتے ہیں کہ ایک جیسے قوت نما والے دو اعداد $3^2$ اور $2^2$ کے حاصلِ ضرب کو مشترک قوت نما یعنی 2 کے ساتھ اعداد کے حاصلِ ضرب کے طور پر لکھا جا سکتا ہے۔ || موږ لیدلی شو چې د یو شان توانونو لرونکو دوو عددونو $3^2$ او $2^2$ حاصل ضرب د ګډ توان یعنې 2 سره د عددونو د حاصل ضرب په توګه لیکل کېدای شي.
+endexample
+example 2
+m $\left(\frac{1}{3}\right)^3 \times \left(\frac{2}{3}\right)^3$
+m $\left(\frac{1}{3}\right)^3 \times \left(\frac{2}{3}\right)^3 = \left(\frac{1}{3} \times \frac{1}{3} \times \frac{1}{3}\right) \times \left(\frac{2}{3} \times \frac{2}{3} \times \frac{2}{3}\right)$
+m $= \left(\frac{1}{3} \times \frac{2}{3}\right) \times \left(\frac{1}{3} \times \frac{2}{3}\right) \times \left(\frac{1}{3} \times \frac{2}{3}\right)$
+m $= \left(\frac{1}{3} \times \frac{2}{3}\right)^3$
+p So, we can say that when multiplying two or more rational numbers having the same exponents but different bases, we can write it as the product of the bases with the common exponent. || لہٰذا ہم کہہ سکتے ہیں کہ ایک جیسے قوت نما لیکن مختلف اساس والے دو یا زیادہ ناطق اعداد کو ضرب دیتے وقت ہم اسے مشترک قوت نما کے ساتھ اساسوں کے حاصلِ ضرب کے طور پر لکھ سکتے ہیں۔ || نو ویلی شو چې کله د یو شان توانونو خو بېلو قاعدو لرونکي دوه یا ډېر ناطق عددونه ضربوو، دا د ګډ توان سره د قاعدو د حاصل ضرب په توګه لیکلی شو.
+p General form: || عمومی شکل: || عمومي بڼه:
+box info | Product law (same exponent) || حاصلِ ضرب کا قانون (ایک قوت نما) || د ضرب قانون (یو توان)
+p *If a and b are any two rational numbers and m ∈ Z, then* $a^m \times b^m = (a \times b)^m$. || *اگر a اور b کوئی دو ناطق اعداد ہوں اور m ∈ Z تو* $a^m \times b^m = (a \times b)^m$۔ || *که a او b هر دوه ناطق عددونه وي او m ∈ Z، نو* $a^m \times b^m = (a \times b)^m$.
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Apply the product law and find the value of the following. || حاصلِ ضرب کا قانون لاگو کریں اور درج ذیل کی قیمت معلوم کریں۔ || د ضرب قانون پلي کړئ او د لاندې ارزښت ومومئ.
+qp a | 3 times $3^4$
+qp b | $5^6 \times 5^8$
+qp c | $2^3 \times 2^6$
+qp d | $2^5 \times 2^{-4}$
+qp e | $2^5 \times 2^5$
+qp f | $\left(\frac{2}{3}\right)^2 \times \left(\frac{1}{4}\right)^2$
+endbox
+## 2) Quotient Law || 2) خارج قسمت کا قانون || 2) د خارج قسمت قانون
+p This law is also called the law for division because it deals with division of exponents and addresses the following two cases. || اس قانون کو تقسیم کا قانون بھی کہتے ہیں کیونکہ یہ قوت نماؤں کی تقسیم سے متعلق ہے اور درج ذیل دو صورتوں کا احاطہ کرتا ہے۔ || دې قانون ته د وېش قانون هم وايي ځکه د توانونو له وېش سره تړاو لري او لاندې دوه حالتونه پوښي.
+p Case I: When bases are the same but exponents are different. || صورت I: جب اساس ایک جیسے ہوں لیکن قوت نما مختلف ہوں۔ || لومړی حالت: کله چې قاعدې یو شان وي خو توانونه بېل وي.
+p Case II: When bases are different but exponents are the same. || صورت II: جب اساس مختلف ہوں لیکن قوت نما ایک جیسے ہوں۔ || دوهم حالت: کله چې قاعدې بېلې وي خو توانونه یو شان وي.
+p **Case I: When bases are the same but exponents are different.** || **صورت I: جب اساس ایک جیسے ہوں لیکن قوت نما مختلف ہوں۔** || **لومړی حالت: کله چې قاعدې یو شان وي خو توانونه بېل وي.**
+example 1
+p Consider the division of $6^5$ and $6^3$. || $6^5$ اور $6^3$ کی تقسیم پر غور کریں۔ || د $6^5$ او $6^3$ وېش ته پام وکړئ.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write the examples of quotient law with both conditions on the board. Now call the students one by one and ask them to differentiate them according to both conditions and then solve the examples using the laws. || بورڈ پر دونوں شرائط کے ساتھ خارج قسمت کے قانون کی مثالیں لکھیں۔ اب طلبہ کو ایک ایک کر کے بلائیں اور ان سے کہیں کہ دونوں شرائط کے مطابق ان میں فرق کریں اور پھر قوانین کی مدد سے مثالیں حل کریں۔ || پر تخته د دواړو شرطونو سره د خارج قسمت د قانون بېلګې ولیکئ. اوس زده کوونکي یو یو راوبولئ او ورته ووایاست چې د دواړو شرطونو له مخې یې توپیر وکړي او بیا د قوانینو په مرسته بېلګې حل کړي.
+endbox

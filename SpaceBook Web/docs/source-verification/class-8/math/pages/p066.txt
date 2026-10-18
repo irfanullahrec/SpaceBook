@@ -1,0 +1,41 @@
+@printed 62
+@issue The division ladder for 4356 ends at 11 (the last division by 11 is not shown); recreated as printed.
+@issue The first line of the squares table prints "1²  1 × 1  1" faintly; values follow the pattern of the other rows.
+## 4.1.2 Perfect Squares || 4.1.2 کامل مربع || 4.1.2 بشپړې مربعې
+p When a number is multiplied by itself, the product is called the square of that number. A number will be called a perfect square if it is a square of any number. A perfect square has a pair of the same factors. || جب کسی عدد کو اسی سے ضرب دیا جائے تو حاصلِ ضرب اس عدد کا مربع کہلاتا ہے۔ کوئی عدد کامل مربع کہلائے گا اگر وہ کسی عدد کا مربع ہو۔ کامل مربع میں ایک جیسے اجزائے ضربی کا جوڑا ہوتا ہے۔ || کله چې یو عدد په خپل ځان کې ضرب شي، حاصل ضرب د هغه عدد مربع بلل کېږي. یو عدد به بشپړه مربع بلل کېږي که د کوم عدد مربع وي. بشپړه مربع د ورته عاملونو جوړه لري.
+table
+tr | $1^2$ | 1 × 1 | 1
+tr | $2^2$ | 2 × 2 | 4
+tr | $3^2$ | 3 × 3 | 9
+tr | $4^2$ | 4 × 4 | 16
+tr | $5^2$ | 5 × 5 | 25
+tr | $6^2$ | 6 × 6 | 36
+tr | $7^2$ | 7 × 7 | 49
+tr | $8^2$ | 8 × 8 | 64
+tr | $9^2$ | 9 × 9 | 81
+tr | $10^2$ | 10 × 10 | 100
+tr | $11^2$ | 11 × 11 | 121
+tr | $12^2$ | 12 × 12 | 144
+endtable
+p In the above examples, 16, 25, 49, 81, etc., are perfect squares as they are squares of 4, 5, 7, 9, etc. respectively. || اوپر کی مثالوں میں 16، 25، 49، 81 وغیرہ کامل مربع ہیں کیونکہ یہ بالترتیب 4، 5، 7، 9 وغیرہ کے مربع ہیں۔ || په پورتنیو بېلګو کې 16، 25، 49، 81 او نور بشپړې مربعې دي ځکه چې په ترتیب سره د 4، 5، 7، 9 او نورو مربعې دي.
+p If we observe the pattern of perfect squares closely, we can note that: || اگر ہم کامل مربعوں کے نمونے کا غور سے مشاہدہ کریں تو ہم نوٹ کر سکتے ہیں کہ: || که د بشپړو مربعو بېلګې ته په ځیر وګورو، لیدلی شو چې:
+- Numbers that have 2, 3, 7 or 8 in their ones place can never be perfect squares. || جن اعداد کے اکائی کے مقام پر 2، 3، 7 یا 8 ہو وہ کبھی کامل مربع نہیں ہو سکتے۔ || هغه عددونه چې د یووالي په ځای کې 2، 3، 7 یا 8 ولري هېڅکله بشپړې مربعې نه شي کېدای.
+- Only the numbers ending with the digits 1, 4, 6, 9, 00 and 25 **can be** perfect squares. But not all numbers ending with the digits 1, 4, 6, 9, 00 and 25 are perfect squares. || صرف وہ اعداد جو 1، 4، 6، 9، 00 اور 25 پر ختم ہوں کامل مربع **ہو سکتے ہیں**۔ لیکن 1، 4، 6، 9، 00 اور 25 پر ختم ہونے والے تمام اعداد کامل مربع نہیں ہوتے۔ || یوازې هغه عددونه چې په 1، 4، 6، 9، 00 او 25 رقمونو پای ته رسېږي بشپړې مربعې **کېدای شي**. خو ټول هغه عددونه چې په 1، 4، 6، 9، 00 او 25 پای ته رسېږي بشپړې مربعې نه دي.
+- Numbers ending in an odd number of zeros can never be perfect squares. || طاق تعداد میں صفروں پر ختم ہونے والے اعداد کبھی کامل مربع نہیں ہو سکتے۔ || هغه عددونه چې په طاق شمېر صفرونو پای ته رسېږي هېڅکله بشپړې مربعې نه شي کېدای.
+p We can use the above facts to quickly tell if a number can be a perfect square or not. We can also identify a perfect square by finding its prime factors. If all its factors can be written in the form of pairs, then the given number is a perfect square. In other words, if all the factors have even exponents (indices/powers), the number will be a perfect square. || ہم اوپر دیے گئے حقائق سے جلدی بتا سکتے ہیں کہ کوئی عدد کامل مربع ہو سکتا ہے یا نہیں۔ ہم کسی کامل مربع کو اس کے مفرد اجزائے ضربی معلوم کر کے بھی پہچان سکتے ہیں۔ اگر اس کے تمام اجزائے ضربی جوڑوں کی صورت میں لکھے جا سکیں تو دیا گیا عدد کامل مربع ہے۔ دوسرے الفاظ میں، اگر تمام اجزائے ضربی کی قوت نما جفت ہوں تو عدد کامل مربع ہوگا۔ || موږ کولی شو له پورتنیو حقایقو په چټکۍ ووایو چې یو عدد بشپړه مربع کېدای شي که نه. همدارنګه یوه بشپړه مربع د هغې د لومړنیو عاملونو په موندلو پېژندلی شو. که د هغې ټول عاملونه د جوړو په بڼه ولیکل شي، نو ورکړل شوی عدد بشپړه مربع ده. په بل عبارت، که د ټولو عاملونو توانونه جفت وي، عدد به بشپړه مربع وي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- A perfect square is also called a square number. || کامل مربع کو مربع عدد بھی کہتے ہیں۔ || بشپړې مربع ته مربع عدد هم وايي.
+- There are an infinite number of perfect squares as they are infinite natural numbers || کامل مربع لامحدود ہیں کیونکہ قدرتی اعداد لامحدود ہیں || بشپړې مربعې بې شمېره دي ځکه چې طبیعي عددونه بې شمېره دي
+endbox
+example 1
+p Check whether the following numbers are a perfect square or not. || جانچیں کہ درج ذیل اعداد کامل مربع ہیں یا نہیں۔ || وګورئ چې لاندې عددونه بشپړې مربعې دي که نه.
+qp a | 4356
+qp b | 14175
+## Solution: || حل: || حل:
+ladder 2:4356; 2:2178; 3:1089; 3:363; 11:121; :11
+m a) The prime factors of 4356 $= 2 \times 2 \times 3 \times 3 \times 11 \times 11$
+m $= 2^2 \times 3^2 \times 11^2$
+p All factors of 4356 can be written in the form of pairs, so 4356 is a perfect square. || 4356 کے تمام اجزائے ضربی جوڑوں کی صورت میں لکھے جا سکتے ہیں، لہٰذا 4356 کامل مربع ہے۔ || د 4356 ټول عاملونه د جوړو په بڼه لیکل کېدای شي، نو 4356 بشپړه مربع ده.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Make two groups of the students. Give one group even number cards and the other group odd number cards. Instruct them to find the square of the given numbers and write the answer on the blank sheet. Then share the answers with their teacher and class-fellows. || طلبہ کے دو گروپ بنائیں۔ ایک گروپ کو جفت اعداد کے کارڈ اور دوسرے گروپ کو طاق اعداد کے کارڈ دیں۔ انہیں ہدایت دیں کہ دیے گئے اعداد کا مربع معلوم کریں اور جواب خالی شیٹ پر لکھیں۔ پھر جوابات اپنے استاد اور ہم جماعتوں کے ساتھ شیئر کریں۔ || د زده کوونکو دوه ډلې جوړې کړئ. یوې ډلې ته د جفت عددونو کارتونه او بلې ډلې ته د طاق عددونو کارتونه ورکړئ. ورته ووایاست چې د ورکړل شویو عددونو مربع ومومي او ځواب پر تشه پاڼه ولیکي. بیا ځوابونه له خپل ښوونکي او ټولګیوالو سره شریک کړي.
+endbox

@@ -1,0 +1,14 @@
+@printed 70
+@status lesson
+box teach | Activity-1 || سرگرمی 1 || فعالیت 1
+p Create an event that changes the costume of the 'Rocket' sprite when key 'c' is pressed. The two costumes associated with 'Rocket' sprite are: (picture of the rocket in flight) → Change to → (picture of the rocket on its landing legs). || ایک ایونٹ بنائیں جو ’c‘ کی دبانے پر ’Rocket‘ اسپرائٹ کا لباس (کاسٹیوم) بدل دے۔ ’Rocket‘ کے دو کاسٹیوم ہیں: اڑتا ہوا راکٹ ← بدل کر ← ٹانگوں پر کھڑا راکٹ۔ || یوه پېښه جوړه کړئ چې د 'c' کیلي په کېکاږلو د 'Rocket' سپرایټ جامې (کاسټیوم) بدلې کړي: الوتونکی راکټ ← پر پښو ولاړ راکټ.
+endbox
+@deco Pictures of the two rocket costumes with a "Change to" arrow between them.
+box teach | Activity-2 || سرگرمی 2 || فعالیت 2
+p Write code that tracks the movement of the 'Rocket' Sprite with a variable 'counter'. If right-arrow is pressed a counter should increase by 1 and if left-arrow is pressed the counter should decrease by 1. || ایسا کوڈ لکھیں جو ’counter‘ ویری ایبل کے ذریعے ’Rocket‘ اسپرائٹ کی حرکت کا حساب رکھے۔ دائیں تیر کی دبانے پر counter میں 1 کا اضافہ اور بائیں تیر کی دبانے پر 1 کی کمی ہو۔ || داسې کوډ ولیکئ چې د 'counter' متغیر په مرسته د 'Rocket' خوځښت وشمېري: ښي غشی ← 1 زیات، کیڼ غشی ← 1 کم.
+endbox
+@sec 4.4 | Debugging a Program || پروگرام کی غلطیاں دور کرنا || د پروګرام غلطۍ لرې کول
+# 4.4 Debugging a Program || 4.4 پروگرام کی غلطیاں دور کرنا (ڈیبگنگ) || 4.4 د پروګرام ډیبګ کول
+p Debugging a program is the process of finding and removing bugs (errors) in a program. Scratch allows programs to run in single-stepping mode in which program runs slowly so that course-of-program-execution can be monitored. This way, a 'trace' list can be introduced for the variable by which the values can be monitored. Scratch also highlights every command that is executed, so that it becomes easier to track which command is affecting the value of the variable. || پروگرام کو ڈیبگ کرنا پروگرام میں بگز (غلطیاں) ڈھونڈنے اور دور کرنے کا عمل ہے۔ اسکریچ پروگراموں کو سنگل اسٹیپنگ موڈ میں چلنے دیتا ہے جس میں پروگرام آہستہ چلتا ہے تاکہ اس کے چلنے کے عمل کی نگرانی کی جا سکے۔ اس طرح ویری ایبل کے لیے ایک ’trace‘ فہرست بنائی جا سکتی ہے جس سے قدروں کی نگرانی ہو۔ اسکریچ ہر چلنے والے حکم کو نمایاں (ہائی لائٹ) بھی کرتا ہے تاکہ معلوم کرنا آسان ہو کہ کون سا حکم ویری ایبل کی قدر پر اثر ڈال رہا ہے۔ || ډیبګ کول د پروګرام د غلطیو (بګونو) موندل او لرې کول دي. سکرېچ پروګرام په ورو یو یو ګام چلوي چې د اجرا بهیر وڅارل شي؛ د متغیر لپاره 'trace' لېست جوړېدای شي. سکرېچ هر اجرا شوی امر روښانه کوي چې معلومه شي کوم امر پر متغیر اغېز کوي.
+@deco Illustration of a bug under a magnifying glass.
+@issue Scratch 3.0 has no built-in single-step (step-by-step) mode; that feature belonged to older Scratch versions (or third-party add-ons). Scratch 3.0 does highlight a running script with a glow. Recorded as printed.

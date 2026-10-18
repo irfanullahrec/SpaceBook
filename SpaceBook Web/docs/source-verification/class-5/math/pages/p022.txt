@@ -1,0 +1,20 @@
+@printed 17
+@deco Photograph of Minar-e-Pakistan (decorative).
+p For Pakistan Day celebrations, 10,125 students participated from all over the country. If groups of 95 students are to be made, then find: || یومِ پاکستان کی تقریبات کے لیے ملک بھر سے 10,125 طلبہ نے حصہ لیا۔ اگر 95، 95 طلبہ کے گروپ بنانے ہوں تو معلوم کریں: || د پاکستان ورځې د لمانځنې لپاره له ټول هېواد څخه 10,125 زده کوونکو ګډون وکړ. که د 95، 95 زده کوونکو ډلې جوړې شي، نو معلوم کړئ:
+qp a | How many groups can be made? || کتنے گروپ بن سکتے ہیں؟ || څو ډلې جوړېدای شي؟
+qp b | Find the number of un-grouped students. || ان طلبہ کی تعداد معلوم کریں جو کسی گروپ میں نہیں آئے۔ || د هغو زده کوونکو شمېر معلوم کړئ چې په هېڅ ډله کې نه دي.
+qp c | If 720 students cannot participate due to some reason, then how many groups can be made? || اگر کسی وجہ سے 720 طلبہ حصہ نہ لے سکیں تو کتنے گروپ بن سکتے ہیں؟ || که د کوم دلیل له امله 720 زده کوونکي ګډون ونه کړای شي، نو څو ډلې جوړېدای شي؟
+p a) To find the number of groups, we will divide 10,125 by 95. || a) گروپوں کی تعداد معلوم کرنے کے لیے ہم 10,125 کو 95 سے تقسیم کریں گے۔ || a) د ډلو د شمېر معلومولو لپاره به 10,125 پر 95 ووېشو.
+longdiv 95 | 10125 | 106@4 | -95@2 ; 62@3 ; -0@3 ; 625@4 ; -570@4 ; 55@4 || Long division of 10,125 by 95: quotient 106, remainder 55 || 10,125 کی 95 سے لمبی تقسیم: خارجِ قسمت 106، باقی 55 || د 10,125 پر 95 اوږد وېش: خارج قسمت 106، پاتې شونی 55
+m $10{,}125 \div 95 = 106 \quad 55$
+p Number of groups = 106 || گروپوں کی تعداد = 106 || د ډلو شمېر = 106
+p Un-grouped Students = 55 || گروپ سے باہر طلبہ = 55 || له ډلو بهر زده کوونکي = 55
+@issue The answer box prints "10,125 ÷ 95 = 106   55" with no "R" before the remainder 55; kept as printed (106 remainder 55).
+p b) If 720 students cannot participate; || b) اگر 720 طلبہ حصہ نہ لے سکیں؛ || b) که 720 زده کوونکي ګډون ونه کړای شي؛
+@issue The working for question c) is printed under the label "b)"; kept as printed.
+p i) We will subtract 720 from 10,125 to find the students || i) طلبہ کی تعداد معلوم کرنے کے لیے ہم 10,125 میں سے 720 تفریق کریں گے۔ || i) د زده کوونکو د شمېر معلومولو لپاره به 720 له 10,125 څخه تفریق کړو.
+eq 10{,}125 - 720 = 9{,}405
+p ii) Now we will divide 9,405 by 95 to find the number of groups || ii) اب ہم گروپوں کی تعداد معلوم کرنے کے لیے 9,405 کو 95 سے تقسیم کریں گے۔ || ii) اوس به د ډلو د شمېر معلومولو لپاره 9,405 پر 95 ووېشو.
+eq 9{,}405 \div 95 = 99
+longdiv 95 | 9405 | 99@3 | -855@2 ; 855@3 ; -855@3 ; 0@3 || Long division of 9,405 by 95: quotient 99, remainder 0 || 9,405 کی 95 سے لمبی تقسیم: خارجِ قسمت 99، باقی 0 || د 9,405 پر 95 اوږد وېش: خارج قسمت 99، پاتې شونی 0
+p So, 99 groups can be made. || لہٰذا 99 گروپ بن سکتے ہیں۔ || نو 99 ډلې جوړېدای شي.

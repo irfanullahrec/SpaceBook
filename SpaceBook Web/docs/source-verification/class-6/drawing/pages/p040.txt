@@ -1,0 +1,20 @@
+@printed 37
+@status lesson
+p We already know and have practised that the drawing mediums we use can produce many different tones of the same colour. If in our drawing, we place the right tone in the right place, the objects will appear as solid and three dimensional as it is in real. So let's have some practice. || ہم پہلے سے جانتے ہیں اور مشق کر چکے ہیں کہ ڈرائنگ کے ذرائع ایک ہی رنگ کے کئی مختلف ٹون پیدا کر سکتے ہیں۔ اگر ہم ڈرائنگ میں صحیح ٹون صحیح جگہ رکھیں تو چیزیں حقیقت کی طرح ٹھوس اور سہ جہتی نظر آئیں گی۔ تو آئیے کچھ مشق کریں۔ || پوهېږو او تمرین مو کړی چې د انځور وسایل د یو رنګ ډېر بېل ټونونه جوړولی شي. که سم ټون سم ځای ته کېږدو، شیان د ریښتیا په څېر جامد او درې بُعدي ښکاري. راځئ تمرین وکړو.
+p (Fig. 2.17: a cylinder shaded from light to dark, with sample tone squares beside it) || (شکل 2.17: ہلکے سے گہرے تک شیڈ کیا ہوا سلنڈر، ساتھ میں ٹون کے نمونے) || (انځور 2.17: له روښانه تر تیاره سیوري شوې استوانه)
+@sec 2-4 | Rendering Techniques || رینڈرنگ کی تکنیکیں || د رنګولو تخنیکونه
+## Rendering Techniques || رینڈرنگ کی تکنیکیں || د سیوري کولو تخنیکونه
+p Following are a few exercises to help you master the rendering techniques. || رینڈرنگ کی تکنیکوں میں مہارت کے لیے چند مشقیں یہ ہیں۔ || د دې تخنیکونو د زده کړې لپاره یو څو تمرینونه دا دي.
+svg Tonal bar (Fig. 2.18): seven steps from light to dark || ٹونل بار (شکل 2.18): ہلکے سے گہرے تک سات درجے || ټونل پټۍ: له روښانه تر تیاره اووه درجې
+<svg viewBox="0 0 400 70" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Seven-step tonal bar">
+<g stroke="#64748b"><rect x="10" y="30" width="54" height="34" fill="#ffffff"/><rect x="64" y="30" width="54" height="34" fill="#eeeeee"/><rect x="118" y="30" width="54" height="34" fill="#d6d6d6"/><rect x="172" y="30" width="54" height="34" fill="#bdbdbd"/><rect x="226" y="30" width="54" height="34" fill="#9e9e9e"/><rect x="280" y="30" width="54" height="34" fill="#7a7a7a"/><rect x="334" y="30" width="54" height="34" fill="#555555"/></g>
+<text x="120" y="20" fill="#1e3a8a">Light</text><line x1="160" y1="16" x2="250" y2="16" stroke="#1e3a8a"/><polygon points="250,12 258,16 250,20" fill="#1e3a8a"/><text x="265" y="20" fill="#1e3a8a">Dark</text>
+</svg>
+endsvg
+@tab activities
+@sec 2-act5 | Activities 2.5–2.6 || سرگرمیاں 2.5–2.6 || فعالیتونه 2.5–2.6
+q Activity 2.5 | Draw a tonal bar in your sketchbook. Draw two more: one with dark blue and one with dark brown colour. || اپنی اسکیچ بک میں ٹونل بار بنائیں۔ دو اور بنائیں: ایک گہرے نیلے اور ایک گہرے بھورے رنگ سے۔ || په سکېچ کتابچه کې ټونل پټۍ وکاږئ؛ دوه نورې هم: یوه په تیاره شین او یوه په تیاره نسواري رنګ.
+sol Practical activity: divide a strip into about seven boxes; leave the first white and press harder in each box so the tone darkens step by step; repeat with dark blue and dark brown pencils. ## Guidance || عملی سرگرمی: ایک پٹی کو تقریباً سات خانوں میں تقسیم کریں؛ پہلا سفید چھوڑیں اور ہر خانے میں دباؤ بڑھائیں؛ پھر گہرے نیلے اور بھورے سے دہرائیں۔ || عملي فعالیت: پټۍ په اوو خانو ووېشئ؛ لومړۍ سپینه پرېږدئ او په هره خانه کې فشار زیات کړئ؛ بیا په شین او نسواري تکرار کړئ.
+@issue Activity 2.5: the printed instruction runs two sentences together ("Draw two more one with dark blue and one with dark brown colour"); punctuated here.
+q Activity 2.6 | Study and practise the following. (Fig. 2.19: Shading a basic form — a pyramid and a cube drawn in stages from outline to fully shaded) || درج ذیل کا مطالعہ اور مشق کریں۔ (شکل 2.19: ایک بنیادی شکل کی شیڈنگ — اہرام اور مکعب خاکے سے مکمل شیڈ تک مراحل میں) || لاندې وڅېړئ او تمرین یې کړئ. (انځور 2.19: د بنسټیزې بڼې سیوري کول — هرم او مکعب په پړاوونو)
+sol Practical activity: draw the outline lightly, decide where the light comes from, keep the lit face lightest, give the side faces a middle tone and the face away from the light the darkest tone. ## Guidance || عملی سرگرمی: خاکہ ہلکا بنائیں، روشنی کی سمت طے کریں، روشن رخ سب سے ہلکا، اطراف درمیانہ اور روشنی سے دور رخ سب سے گہرا رکھیں۔ || عملي فعالیت: سپک خاکه، د رڼا لوری وټاکئ، روښانه مخ تر ټولو روښانه، اړخونه منځني او لرې مخ تر ټولو تیاره.

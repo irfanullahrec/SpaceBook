@@ -1,0 +1,30 @@
+@printed 174
+@sec 9.6 | Prism || منشور || منشور
+# 9.6 Prism || 9.6 منشور || 9.6 منشور
+p A 3 dimensional solid with 2 identical shapes (polygons) that face each other is known as a prism. These faces are called bases of prism. The bases can be triangles, squares, rectangles etc. A right prism is a prism in which the faces and the joining edges are perpendicular to the base. || وہ سہ جہتی ٹھوس جس کی دو یکساں اشکال (کثیر الاضلاع) ایک دوسرے کے آمنے سامنے ہوں، منشور کہلاتا ہے۔ ان سطحوں کو منشور کے قاعدے کہتے ہیں۔ قاعدے مثلث، مربع، مستطیل وغیرہ ہو سکتے ہیں۔ قائم منشور وہ منشور ہے جس کی سطحیں اور جوڑنے والے کنارے قاعدے پر عمود ہوں۔ || هغه درې بعدي جسم چې دوه یو شان شکلونه (څو ضلعي) یې یو بل ته مخامخ وي، منشور بلل کېږي. دې مخونو ته د منشور قاعدې ویل کېږي. قاعدې کېدای شي مثلثونه، مربعات، مستطیلونه او نور وي. قایم منشور هغه منشور دی چې مخونه او نښلونکې څنډې یې پر قاعده عمود وي.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- Can you tell what is meant by 3D shapes? || کیا آپ بتا سکتے ہیں کہ سہ جہتی اشکال سے کیا مراد ہے؟ || ایا ویلی شئ چې درې بعدي شکلونه څه ته وايي؟
+- Tell the names some 3D shapes and their properties. || کچھ سہ جہتی اشکال کے نام اور ان کی خصوصیات بتائیں۔ || د ځینو درې بعدي شکلونو نومونه او ځانګړتیاوې یې ووایاست.
+endbox
+## 9.6.1 Surface area and volume of right prisms || 9.6.1 قائم منشوروں کا سطحی رقبہ اور حجم || 9.6.1 د قایمو منشورونو د سطحې مساحت او حجم
+### Right rectangular Prism || قائم مستطیلی منشور || قایم مستطیلي منشور
+p Observe the following figure. It is a rectangular prism. It has 8 vertices, 12 sides and 6 rectangular faces. Right rectangular prism is also called cuboid. || درج ذیل شکل کا مشاہدہ کریں۔ یہ ایک مستطیلی منشور ہے۔ اس کے 8 راس، 12 اضلاع اور 6 مستطیلی سطحیں ہیں۔ قائم مستطیلی منشور کو مکعب نما بھی کہتے ہیں۔ || لاندې شکل وګورئ. دا یو مستطیلي منشور دی. 8 راسونه، 12 ضلعې او 6 مستطیلي مخونه لري. قایم مستطیلي منشور ته مکعب نما هم ویل کېږي.
+svg Right rectangular prism (cuboid) with length, width and height marked || قائم مستطیلی منشور (مکعب نما) جس پر لمبائی، چوڑائی اور اونچائی لکھی ہے || قایم مستطیلي منشور (مکعب نما) چې اوږدوالی، پلنوالی او لوړوالی پرې ښودل شوي
+<svg viewBox="0 0 200 150" width="200" role="img" aria-label="Cuboid with length along the bottom front edge, width along the bottom side edge and height along the vertical edge" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M30 40 L55 20 H125 L100 40 Z" fill="#cffafe" stroke="#0f172a"/><rect x="30" y="40" width="70" height="90" fill="#a5f3fc" stroke="#0f172a"/><path d="M100 40 L125 20 V110 L100 130 Z" fill="#67e8f9" stroke="#0f172a"/>
+<text x="65" y="145" text-anchor="middle">Length</text><text x="128" y="128">Width</text><text x="130" y="70">Height</text>
+</svg>
+endsvg
+p As right rectangular prism is same as cuboid. So, we can find the surface area of prism as we find the surface area of the of cuboid. Area of rectangular prism = surface area of cuboid || چونکہ قائم مستطیلی منشور مکعب نما جیسا ہی ہے، اس لیے ہم منشور کا سطحی رقبہ اسی طرح معلوم کر سکتے ہیں جیسے مکعب نما کا سطحی رقبہ۔ مستطیلی منشور کا رقبہ = مکعب نما کا سطحی رقبہ || څرنګه چې قایم مستطیلي منشور له مکعب نما سره یو شان دی، نو د منشور د سطحې مساحت هماغسې معلومولی شو لکه د مکعب نما. د مستطیلي منشور مساحت = د مکعب نما د سطحې مساحت
+eq \begin{aligned} \text{Total surface area of cuboid} &= 2 \times (l \times w) + 2 \times (l \times h) + 2 \times (w \times h) \\ \text{Total surface area of rectangular prism} &= 2 \times [(l \times w) + (l \times h) + (w \times h)] \end{aligned}
+example 1 | A box whose length, breadth and height are 5cm, 2cm and 3 cm respectively. Find its total surface area. || ایک ڈبہ جس کی لمبائی، چوڑائی اور اونچائی بالترتیب 5cm، 2cm اور 3 cm ہیں۔ اس کا کل سطحی رقبہ معلوم کریں۔ || یو بکس چې اوږدوالی، پلنوالی او لوړوالی یې په ترتیب سره 5cm، 2cm او 3 cm دي. د سطحې ټول مساحت یې معلوم کړئ.
+p **Solution:** Here, ℓ = 5 cm, b = 2 cm, h = 3 cm || **حل:** یہاں ℓ = 5 cm، b = 2 cm، h = 3 cm || **حل:** دلته ℓ = 5 cm، b = 2 cm، h = 3 cm
+eq \begin{aligned} \text{Total surface area of the box} &= 2(\ell b + bh + h\ell) \\ &= 2(5 \times 2 + 2 \times 3 + 3 \times 5)\,\text{cm}^2 \\ &= 2(10 + 6 + 15)\,\text{cm}^2 \\ &= 2(31)\,\text{cm}^2 \end{aligned}
+endexample
+@issue Example 1 stops at "2(31) cm²"; the final value 62 cm² is not printed.
+### Right square Prism || قائم مربعی منشور || قایم مربع منشور
+p Observe the give figure. It is a square prism. It has 8 vertices, 12 sides and 6 square faces. Right square prism is also called cube. || دی گئی شکل کا مشاہدہ کریں۔ یہ ایک مربعی منشور ہے۔ اس کے 8 راس، 12 اضلاع اور 6 مربع سطحیں ہیں۔ قائم مربعی منشور کو مکعب بھی کہتے ہیں۔ || ورکړل شوی شکل وګورئ. دا یو مربع منشور دی. 8 راسونه، 12 ضلعې او 6 مربع مخونه لري. قایم مربع منشور ته مکعب هم ویل کېږي.
+@deco A drawing of a cube with length, width and height marked.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain students about prism and types of prism by drawing prism on the board. || بورڈ پر منشور بنا کر طلبہ کو منشور اور اس کی اقسام کے بارے میں سمجھائیں۔ || پر تخته د منشور په رسمولو زده کوونکو ته د منشور او د هغه د ډولونو په اړه تشریح کړئ.
+endbox

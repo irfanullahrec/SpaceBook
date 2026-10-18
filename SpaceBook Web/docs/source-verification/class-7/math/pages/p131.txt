@@ -1,0 +1,43 @@
+@printed 127
+exercise 7.9
+q 1 | Factorize the following by middle term breaking method. || درمیانی رکن توڑنے کے طریقے سے درج ذیل کی تجزی کریں۔ || د منځني حد د ماتولو په طریقه لاندې تجزیه کړئ.
+qp a | $2x^2 + 5x + 2$
+qp b | $x^2 - 9x + 18$
+qp c | $x^2 + 3x - 4 = 0$
+qp d | $x^2 - 12x + 35$
+qp e | $x^2 + 5x + 4$
+qp f | $9x^2 + 6x + 1$
+qp g | $2x^2 + 7x + 3$
+endexercise
+box info | Think Higher || اعلیٰ سوچ || لوړ فکر
+p Find the area of yellow portion. || پیلے حصے کا رقبہ معلوم کریں۔ || د ژېړې برخې مساحت معلوم کړئ.
+svg Yellow rectangle 2x + 4 by 4x containing a blue rectangle 2x − 2 by 2x − 1 and a small purple square x by x || 2x + 4 بائی 4x کا پیلا مستطیل جس میں 2x − 2 بائی 2x − 1 کا نیلا مستطیل اور x بائی x کا چھوٹا جامنی مربع ہے || د 2x + 4 پر 4x ژېړ مستطیل چې پکې د 2x − 2 پر 2x − 1 آبي مستطیل او د x پر x کوچنی بنفش مربع دی
+<svg viewBox="0 0 340 170" width="340" role="img" aria-label="Yellow rectangle of length 2x plus 4 and height 4x. Inside it a blue rectangle of length 2x minus 2 and height 2x minus 1, and a small purple square of side x." font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0f172a">
+<rect x="40" y="30" width="270" height="120" fill="#fde047" stroke="#ca8a04"/>
+<rect x="60" y="62" width="120" height="78" fill="#38bdf8" stroke="#0f172a"/>
+<rect x="250" y="62" width="34" height="34" fill="#6d28d9" stroke="#0f172a"/>
+<text x="175" y="22" text-anchor="middle">2x + 4</text>
+<text x="32" y="95" text-anchor="end">4x</text>
+<text x="120" y="56" text-anchor="middle">2x − 2</text>
+<text x="188" y="105">2x − 1</text>
+<text x="267" y="56" text-anchor="middle">x</text>
+<text x="290" y="84">x</text>
+</svg>
+endsvg
+endbox
+@sec u7-summary | Summary || خلاصہ || لنډیز
+# Summary || خلاصہ || لنډیز
+- In any polynomial the highest exponent /power of the variable is called degree of the polynomial. || کسی بھی کثیر رکنی میں متغیر کی سب سے بڑی قوت نما/طاقت کثیر رکنی کا درجہ کہلاتی ہے۔ || په هره څو حدي افاده کې د متحول تر ټولو لوی توان/طاقت د څو حدي افادې درجه بلل کېږي.
+- Polynomials can contain an infinite number of terms. || کثیر رکنیوں میں لامحدود تعداد میں ارکان ہو سکتے ہیں۔ || څو حدي افادې کولی شي بې شمېره حدونه ولري.
+- In an algebraic expression, the terms whose variables as well as the exponents of those variables are the same are called like terms. || کسی الجبری عبارت میں وہ ارکان جن کے متغیرات اور ان کی قوت نما ایک جیسی ہوں یکساں ارکان کہلاتے ہیں۔ || په الجبري افاده کې هغه حدونه چې متحولونه او د هغوی توانونه یو شان وي ورته حدونه بلل کېږي.
+- The product of two or more polynomials is a polynomial whose degree is equal to the sum of the degree of the polynomials being multiplied. || دو یا زیادہ کثیر رکنیوں کا حاصلِ ضرب ایک ایسی کثیر رکنی ہے جس کا درجہ ضرب دی جانے والی کثیر رکنیوں کے درجوں کے مجموعے کے برابر ہوتا ہے۔ || د دوو یا ډېرو څو حدي افادو حاصل ضرب یوه داسې څو حدي افاده ده چې درجه یې د ضربېدونکو افادو د درجو له مجموعې سره برابره وي.
+- To find the product of any two polynomials we can apply the law of exponents. Multiplying the powers with the same base and add the exponents. || کسی بھی دو کثیر رکنیوں کا حاصلِ ضرب معلوم کرنے کے لیے ہم قوت نما کا قانون لاگو کر سکتے ہیں۔ ایک جیسی اساس والی طاقتوں کو ضرب دیتے وقت قوت نما جمع کریں۔ || د هرو دوو څو حدي افادو د حاصل ضرب د موندلو لپاره د توانونو قانون پلي کولی شو. د یو شان قاعدې طاقتونه ضربوو او توانونه جمع کوو.
+- A factor divides a number or an expression completely without leaving any remainder. || جزوِ ضربی کسی عدد یا عبارت کو بغیر کسی باقی کے مکمل تقسیم کرتا ہے۔ || ضربي جز یو عدد یا افاده پرته له پاتې شوني بشپړ وېشي.
+- Numbers/expressions can be factorized into different combinations. || اعداد/عبارتوں کی مختلف ترکیبوں میں تجزی کی جا سکتی ہے۔ || عددونه/افادې په بېلابېلو ترکیبونو تجزیه کېدای شي.
+- Factorization of an algebraic expression is the process of finding the factors of it. It is the reverse process of expansion. || الجبری عبارت کی تجزی اس کے اجزائے ضربی معلوم کرنے کا عمل ہے۔ یہ پھیلاؤ کا الٹ عمل ہے۔ || د الجبري افادې تجزیه د هغې د ضربي اجزاوو د موندلو بهیر دی. دا د پراخولو معکوس بهیر دی.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Expression || عبارت || افاده
+- Algebraic expression || الجبری عبارت || الجبري افاده
+- Equation || مساوات || معادله
+- Algebraic equation || الجبری مساوات || الجبري معادله
+endbox

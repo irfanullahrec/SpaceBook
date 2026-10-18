@@ -1,0 +1,24 @@
+@printed 54
+@deco A pale-blue snowflake picture; a Scratch script (when flag clicked, create clone of Snowflake) and a second script (when I start as a clone, go to mouse-pointer); a dark panel showing three snowflakes captioned "Output after 2 mouse clicks".
+p Additional functions that are available in Scratch are listed as follows: || Scratch میں دستیاب اضافی فنکشنز درج ذیل ہیں: || په Scratch کې موجود اضافي فنکشنونه په لاندې ډول لیست شوي:
+table
+th | Function Name | Description
+tr | sqrt. | To get the square root of a number.
+tr | type | To inquire about a type of an object
+tr | pow | To get power of x in terms of y.
+tr | max | To get the maximum value from a set of numbers.
+tr | divmod | To get the quotient and remainder both in a single instruction.
+tr | bool | To get the status of a boolean value, whether true or false.
+tr | format | To get a particular format of a value. e.g. display '%' after a number
+tr | help | To get the help about keywords and functions, etc.
+endtable
+p sqrt gets the square root of a number; type inquires about the type of an object; pow gets the power of x in terms of y; max gets the maximum value from a set of numbers; divmod gets the quotient and remainder in a single instruction; bool gets the status of a boolean value; format gets a particular format of a value, e.g. displaying "%" after a number; help gives help about keywords and functions. || sqrt عدد کا جذر معلوم کرتا ہے؛ type کسی شے کی قسم کے بارے میں دریافت کرتا ہے؛ pow y کے لحاظ سے x کی طاقت معلوم کرتا ہے؛ max اعداد کے مجموعے میں سے زیادہ سے زیادہ قدر دیتا ہے؛ divmod ایک ہی ہدایت میں خارج قسمت اور باقی دونوں دیتا ہے؛ bool بولین قدر کی حالت (درست یا غلط) بتاتا ہے؛ format کسی قدر کی مخصوص شکل دیتا ہے، مثلاً عدد کے بعد '%' دکھانا؛ help کلیدی الفاظ اور فنکشنز وغیرہ کے بارے میں مدد دیتا ہے۔ || sqrt د شمېرې جذر موندي؛ type د یو شي د ډول پوښتنه کوي؛ pow د y په ډول د x توان موندي؛ max د شمېرو له ټولګې څخه لوړ ارزښت موندي؛ divmod په یوه لارښوونه کې دواړه خارج قسمت او پاتې موندي؛ bool د بولین ارزښت حالت (سم یا غلط) ښیي؛ format د ارزښت ځانګړې بڼه ورکوي، لکه د شمېرې وروسته "%" ښودل؛ help د کلیدي کلمو او فنکشنونو او نورو په اړه مرسته ورکوي.
+### 4.3.4 Cloning a Sprite || 4.3.4 اسپرائٹ کی کلوننگ || 4.3.4 د سپرایټ کلوننګ
+p Scratch allows a sprite to be duplicated, not only once but multiple times. It is useful in cases where you can create a snowflake and replicate it multiple times to give the effect of snowfall. Similarly, in games you can design a bullet and reproduce it to be used in a game, etc. In the figure, 'create clone of sprite_name' is used to replicate 'Snowflake' sprite wherever a mouse is clicked. The corresponding code is shown as well. || Scratch اسپرائٹ کو نہ صرف ایک بار بلکہ کئی بار نقل کرنے کی اجازت دیتا ہے۔ یہ ان صورتوں میں مفید ہے جہاں آپ ایک برف کا گالا بنا کر اسے کئی بار دہرا سکتے ہیں تاکہ برف باری کا تاثر پیدا ہو۔ اسی طرح گیمز میں آپ ایک گولی ڈیزائن کر کے اسے دوبارہ پیدا کر کے گیم میں استعمال کر سکتے ہیں وغیرہ۔ شکل میں 'create clone of sprite_name' استعمال کیا گیا ہے تاکہ ماؤس کلک ہونے پر 'Snowflake' اسپرائٹ کی نقل ہو۔ متعلقہ کوڈ بھی دکھایا گیا ہے۔ || Scratch اجازه ورکوي چې یو سپرایټ نه یوازې یو ځل بلکې څو ځله نقل شي. دا په هغو حالتونو کې ګټور دی چېرته چې تاسو یو واورې پاڼه جوړولای شئ او څو ځله یې تکرار کړئ ترڅو د واورې اورېدو اغېز ورکړئ. همداسې په لوبو کې تاسو کولای شئ یوه ګولۍ ډیزاین کړئ او یې بیا جوړه کړئ ترڅو په لوبه کې وکارول شي او نور. په انځور کې 'create clone of sprite_name' کارول شوی ترڅو 'Snowflake' سپرایټ هر چېرته چې موږک کلیک شي نقل کړي. اړوند کوډ هم ښودل شوی.
+box code | Scratch scripts — Cloning || سکریچ اسکرپٹس — کلوننگ || سکریچ سکریپټونه — کلوننګ
+m when (green flag) clicked
+m create clone of [Snowflake]
+m when I start as a clone
+m go to [mouse-pointer]
+endbox
+p Figure: Output after 2 mouse clicks. || تصویر: 2 ماؤس کلکس کے بعد آؤٹ پٹ۔ || انځور: د ۲ موږک کلیکونو وروسته آوټ پټ.

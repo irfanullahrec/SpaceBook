@@ -1,0 +1,22 @@
+@printed 80
+@status lesson
+@sec 4.5 | 4.5 Control Block in Scratch || اسکریچ میں کنٹرول بلاک || په سکریچ کې کنټرول بلاک
+# 4.5 Control Block in Scratch || ۴.۵ اسکریچ میں کنٹرول بلاک || ۴.۵ په سکریچ کې کنټرول بلاک
+p **Loops** are used to repeat a certain block of code for a known or unknown number of times. Common loop commands used in scratch are: Repeat, Repeat until, Forever. || **لوپس** کوڈ کے کسی بلاک کو معلوم یا نامعلوم تعداد میں دہرانے کے لیے استعمال ہوتے ہیں۔ اسکریچ میں استعمال ہونے والی عام لوپ کمانڈز یہ ہیں: Repeat، Repeat until، Forever۔ || **لوپونه** د کوډ ټاکلي بلاک د پېژندل شوې یا نه پېژندل شوې شمېرې ځله تکرارولو لپاره کارېږي. په سکریچ کې عام لوپ کمانډونه دا دي: Repeat، Repeat until، Forever.
+@deco Image: the Scratch Control palette (Motion, Looks, Sound, Events, Control, Sensing, Operators, Variables, My Blocks) listing wait 1 seconds, repeat 10, forever, if then, if then else, wait until, repeat until.
+## 4.5.1 Repeat Command || ۴.۵.۱ ریپیٹ کمانڈ || ۴.۵.۱ د تکرار کمانډ
+p **Repeat** command is used when a block of code is required to run for a given number of times. || **ریپیٹ** کمانڈ اس وقت استعمال ہوتی ہے جب کوڈ کے بلاک کو دی گئی تعداد میں چلانا مطلوب ہو۔ || **Repeat** کمانډ هغه مهال کارېږي چې د کوډ بلاک ته ورکړل شوې شمېرې ځله چلېدو ته اړتیا وي.
+### Example: || مثال: || بېلګه:
+p If 5 is used as an argument in repeat command, it will repeat the code blocks inside the 'repeat' loop 5 times. The code in figure will make the sprite to move 10 steps forward and play sound. Then, sprite will take another 10 steps and play the sound again. All together steps taken and playing of sound will iterate for 5 times. || اگر ریپیٹ کمانڈ میں آرگومنٹ کے طور پر ۵ استعمال ہو تو یہ 'ریپیٹ' لوپ کے اندر کوڈ بلاکس کو ۵ بار دہرائے گا۔ شکل میں دیا گیا کوڈ اسپرائٹ کو ۱۰ قدم آگے بڑھائے گا اور آواز بجائے گا۔ پھر اسپرائٹ مزید ۱۰ قدم لے گا اور دوبارہ آواز بجائے گا۔ مجموعی طور پر قدم اٹھانے اور آواز بجانے کا عمل ۵ بار دہرایا جائے گا۔ || که په repeat کمانډ کې ۵ د دلیل په توګه وکارول شي، دا به د 'repeat' لوپ دننه کوډ بلاکونه ۵ ځله تکرار کړي. په انځور کې کوډ به سپرایټ ۱۰ ګامه مخکې وړي او غږ به غږوي. بیا به سپرایټ نور ۱۰ ګامونه واخلي او بیا به غږ وغږوي. ټول یوځای ګامونه اخیستل او غږ غږول به ۵ ځله تکرار شي.
+svg Scratch script: repeat 5 { move 10 steps; play sound Meow until done }. || اسکریچ اسکرپٹ: ۵ بار دہرائیں { ۱۰ قدم چلیں؛ آواز "میاؤں" بجائیں جب تک ختم نہ ہو }۔ || سکریچ سکرېپټ: ۵ ځله تکرار { ۱۰ ګامه حرکت؛ د "میاو" غږ تر پایه }.
+<svg viewBox="0 0 420 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" role="img" aria-label="Repeat 5 move 10 steps play sound">
+<path d="M10 10 H190 V45 H60 V125 H190 V150 H10 Z" fill="#ec4899" stroke="#be185d" stroke-width="2"/>
+<text x="25" y="33" fill="#fff">repeat</text><circle cx="110" cy="28" r="16" fill="#fff"/><text x="110" y="33" text-anchor="middle">5</text>
+<rect x="40" y="52" width="330" height="36" rx="8" fill="#2563eb" stroke="#1e40af"/><text x="55" y="75" fill="#fff">move</text><circle cx="130" cy="70" r="15" fill="#fff"/><text x="130" y="75" text-anchor="middle">10</text><text x="160" y="75" fill="#fff">steps</text>
+<rect x="40" y="92" width="330" height="36" rx="8" fill="#be185d" stroke="#831843"/><text x="55" y="115" fill="#fff">play sound  Meow ▾  until done</text>
+</svg>
+endsvg
+box check | Activity || سرگرمی || فعالیت
+p 1. What will happen if we change the value in repeat to 10? 2. What will happen if we change the value in "move" to 5 or 20? Try it on computer. || ۱۔ اگر ہم ریپیٹ میں قدر ۱۰ کر دیں تو کیا ہوگا؟ ۲۔ اگر ہم "move" میں قدر ۵ یا ۲۰ کر دیں تو کیا ہوگا؟ کمپیوٹر پر آزما کر دیکھیں۔ || ۱. که په repeat کې ارزښت ۱۰ کړو څه به وشي؟ ۲. که په "move" کې ارزښت ۵ یا ۲۰ کړو څه به وشي؟ په کمپیوټر وازمایئ.
+endbox
+@deco Image: a stack of blocks "move 10 steps, turn 90 degrees, move 20 steps, turn 90 degrees, move 20 steps, turn 90 degrees" beside the activity.

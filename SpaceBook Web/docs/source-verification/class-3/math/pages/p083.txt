@@ -1,0 +1,21 @@
+@printed 78
+@deco Children riding a pencil; pink strips cut into 5 parts.
+## Match the given figures to the fraction. || دی گئی اشکال کو کسر سے ملائیں۔ || ورکړل شوي شکلونه له کسر سره جوړ کړئ.
+q - | Fractions printed on the left: $\frac{2}{5}$, $\frac{3}{5}$, $\frac{4}{5}$, $\frac{1}{5}$. Strips A–D on the right. || بائیں طرف لکھے کسور: $\frac{2}{5}$، $\frac{3}{5}$، $\frac{4}{5}$، $\frac{1}{5}$۔ دائیں طرف پٹیاں A–D۔ || په کیڼ لوري لیکل شوي کسرونه: $\frac{2}{5}$، $\frac{3}{5}$، $\frac{4}{5}$، $\frac{1}{5}$. په ښي لوري پټۍ A–D.
+fig frow fgrid 1 5 3 #f9a8d4 | A ;; fgrid 1 5 4,5 #f9a8d4 | B ;; fgrid 1 5 5 #f9a8d4 | C ;; fgrid 1 5 1,2,3,4 #f9a8d4 | D || Strip A: 3 of 5 parts shaded · B: 2 of 5 · C: 1 of 5 · D: 4 of 5 || پٹی A: 5 میں سے 3 رنگے · B: 2 · C: 1 · D: 4 || پټۍ A: له 5 څخه 3 رنګ شوې · B: 2 · C: 1 · D: 4
+sol 2/5 → B, 3/5 → A, 4/5 → D, 1/5 → C ## Count the shaded parts in each strip of 5 equal parts. || 5 برابر حصوں والی ہر پٹی میں رنگے ہوئے حصے گنیں۔ || د 5 برابرو برخو په هره پټۍ کې رنګ شوې برخې وشمېرئ.
+box note | Key Fact || اہم حقیقت || مهم حقیقت
+p In a fraction, the || کسر میں، || په کسر کې،
+- top number, the numerator, says how many parts use have. || اوپر والا عدد، یعنی شمار کنندہ، بتاتا ہے کہ ہمارے پاس کتنے حصے ہیں۔ || پورتنی عدد، یعنې صورت، ښيي چې موږ څو برخې لرو.
+- bottom number, the denominator, says how many equal parts the whole is divided into. || نیچے والا عدد، یعنی نسب نما، بتاتا ہے کہ پورا کتنے برابر حصوں میں تقسیم کیا گیا ہے۔ || لاندینی عدد، یعنې مخرج، ښيي چې بشپړ په څو برابرو برخو وېشل شوی.
+endbox
+exercise Exercise 1
+q 1 | Write in the boxes, the fraction representing the shaded part of the following figures. || درج ذیل اشکال کے رنگے ہوئے حصے کو ظاہر کرنے والا کسر خانوں میں لکھیں۔ || د لاندې شکلونو د رنګ شوې برخې ښودونکی کسر په خانو کې ولیکئ.
+qp a | Circle in 4 parts, 1 shaded → $\frac{1}{4}$ (done for you)
+fpie 4 4 #4ade80
+qp b | Circle in 8 parts, top part shaded
+fpie 8 8,1,2 #4ade80
+sol $\frac{3}{8}$ ## 3 of the 8 equal parts are shaded. || 8 برابر حصوں میں سے 3 رنگے ہوئے ہیں۔ || له 8 برابرو برخو څخه 3 رنګ شوې دي.
+qp c | Circle in 3 parts, 1 shaded
+fpie 3 1 #0d9488
+sol $\frac{1}{3}$ ## 1 of the 3 equal parts is shaded. || 3 برابر حصوں میں سے 1 رنگا ہوا ہے۔ || له 3 برابرو برخو څخه 1 رنګ شوې ده.

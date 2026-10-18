@@ -1,0 +1,17 @@
+---
+name: class5-book-pipeline
+description: "Class 5 rebuild (build_math5.py page DSL, math5_reader, _cls5_jpg scans); Math 201/201 DONE 2026-10-12; next English then Sci, Urdu, SST EM, SST UM, Isl, Pashto"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: e136ca4b-2176-4170-9f3e-8fbf9c9380af
+  modified: 2026-10-12T10:25:08.121Z
+---
+
+Class 5 work lives in `SpaceBook Web/docs/source-verification/class-5/` (progress.json via `tools/save_progress.py --next "..."`; shared index.html edits via `tools/shared_patch.py FILE --replace OLD --with NEW` which takes tmp/class-content-shared.lock).
+
+- Math: pages/pNNN.txt (NNN = JPG idx, printed = NNN-5) → `python tools/build_math5.py` → js/math_5_data.js + js/math_5_solutions.js, rendered by js/math5_reader.js. COMPLETE 201/201 on 2026-10-12 (answer key keyed `ans 2.1 | q | text`, reviews `R<unit>`; key errors logged as @issue, SpaceBook solutions kept). vocab.tsv has 197 hover words.
+- `sol ANSWER ## STEP_EN || STEP_UR || STEP_PS` — answer part is English only.
+- Scans: D:/SpaceBook/_cls5_jpg/<subj>/NNN.jpg; view with `tools/view.py SRC OUT idx --w 1200 [--crop a,b]`. Machine is RAM-starved (bash fork failures); read scans by eye.
+- User rule for this task: no browser testing (user tests the web page).
+- Other 7 books (eng, sci, urdu, sst, sstum, isl, pashto) still legacy data from 2026-10-07, not started. Related: [[class4-book-pipeline]], [[class6-book-pipeline]].

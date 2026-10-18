@@ -1,0 +1,35 @@
+@printed 95
+@issue Example 1 prints "F = {1, 5, 9, 13 17}" (comma missing between 13 and 17); later lines use {1, 5, 9, 13, 17}; kept as printed.
+## 5.3.4 Associative Property of Sets (With respect to Intersection) || 5.3.4 سیٹوں کی تلازمی خاصیت (انٹرسیکشن کے لحاظ سے) || 5.3.4 د سېټونو اتحادي ځانګړتیا (د تقاطع په اړه)
+m For any three sets A, B and C, A ∩ (B ∩ C) = (A ∩ B) ∩ C
+example 1
+p For the sets; F = {1, 5, 9, 13 17}, G = {3, 6, 9, 12, 15} and H = {2, 4, 6, 8, 10} Prove that F ∩ (G ∩ H) = (F ∩ G) ∩ H || سیٹوں F = {1, 5, 9, 13 17}، G = {3, 6, 9, 12, 15} اور H = {2, 4, 6, 8, 10} کے لیے ثابت کریں کہ F ∩ (G ∩ H) = (F ∩ G) ∩ H || د F = {1, 5, 9, 13 17}، G = {3, 6, 9, 12, 15} او H = {2, 4, 6, 8, 10} سېټونو لپاره ثابت کړئ چې F ∩ (G ∩ H) = (F ∩ G) ∩ H
+## Solution: || حل: || حل:
+m L.H.S = F ∩ (G ∩ H)
+m G ∩ H = {3, 6, 9, 12, 15} ∩ {2, 4, 6, 8, 10}
+m = {6}
+m F ∩ (G ∩ H) = {1, 5, 9, 13, 17} ∩ {6}
+m = { }........................(i)
+p and || اور || او
+m R.H.S = (F ∩ G) ∩ H
+m F ∩ G = {1, 5, 9, 13, 17} ∩ {3, 6, 9, 12, 15}
+m = {9}
+m (F ∩ G) ∩ H = {9} ∩ {2, 4, 6, 8, 10}
+m = { }...................(ii)
+p Equation (i) and (ii) imply, || مساوات (i) اور (ii) سے ظاہر ہوتا ہے، || معادلې (i) او (ii) ښيي،
+m F ∩ (G ∩ H) = (F ∩ G) ∩ H
+endexample
+## 5.3.5 Distributive Property of Union of Sets Over Intersection || 5.3.5 انٹرسیکشن پر سیٹوں کی یونین کی تقسیمی خاصیت || 5.3.5 پر تقاطع د سېټونو د اتحاد وېشونکې ځانګړتیا
+m For any three sets A, B, and C, A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)
+example 1
+p For the sets; X = {0, 3, 6, 9, 12, 15}, Y = {−5, −3, −1, 0, 1, 3, 5} and T = {2, 4, 6,.........16} Prove that; X ∪ (Y ∩ T) = (X ∪ Y) ∩ (X ∪ T) || سیٹوں X = {0, 3, 6, 9, 12, 15}، Y = {−5, −3, −1, 0, 1, 3, 5} اور T = {2, 4, 6,.........16} کے لیے ثابت کریں کہ X ∪ (Y ∩ T) = (X ∪ Y) ∩ (X ∪ T) || د X = {0, 3, 6, 9, 12, 15}، Y = {−5, −3, −1, 0, 1, 3, 5} او T = {2, 4, 6,.........16} سېټونو لپاره ثابت کړئ چې X ∪ (Y ∩ T) = (X ∪ Y) ∩ (X ∪ T)
+## Solution: || حل: || حل:
+m L.H.S = X ∪ (Y ∩ T)
+m Y ∩ T = {−5, −3, −1, 0, 1, 3, 5} ∩ {2, 4, 6,.........16}
+m = { }
+p So, || لہٰذا، || نو،
+m X ∪ (Y ∩ T) = {0, 3, 6, 9, 12, 15} ∪ { }
+m = {0, 3, 6, 9, 12, 15}...............(i)
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Make two groups of students. Instruct each group to write three sets of your own choice and then instruct first group to find the associative property of sets with respect to intersection and the other group find the associative property of set with respect to union. || طلبہ کے دو گروپ بنائیں۔ ہر گروپ کو اپنی پسند کے تین سیٹ لکھنے کی ہدایت دیں اور پھر پہلے گروپ کو انٹرسیکشن کے لحاظ سے اور دوسرے گروپ کو یونین کے لحاظ سے سیٹوں کی تلازمی خاصیت معلوم کرنے کی ہدایت دیں۔ || د زده کوونکو دوه ډلې جوړې کړئ. هرې ډلې ته ووایاست چې د خپلې خوښې درې سېټونه ولیکي او بیا لومړۍ ډلې ته ووایاست چې د تقاطع په اړه او بله ډله د اتحاد په اړه د سېټونو اتحادي ځانګړتیا ومومي.
+endbox

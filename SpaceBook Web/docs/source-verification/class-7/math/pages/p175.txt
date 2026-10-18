@@ -1,0 +1,36 @@
+@printed 171
+q 4 | The radius of a cylinder is 2.3 cm and length is 6.3 cm. Calculate the surface area of the cylinder. || ایک اسطوانے کا رداس 2.3 cm اور لمبائی 6.3 cm ہے۔ اسطوانے کا سطحی رقبہ معلوم کریں۔ || د یوې استوانې شعاع 2.3 cm او اوږدوالی 6.3 cm دی. د استوانې د سطحې مساحت حساب کړئ.
+q 5 | Find the total surface area of a 4.3 cm long tin whose radius is 3.5 cm. || 4.3 cm لمبے اس ٹین کا کل سطحی رقبہ معلوم کریں جس کا رداس 3.5 cm ہے۔ || د هغې 4.3 cm اوږدې ټین ډبې د سطحې ټول مساحت معلوم کړئ چې شعاع یې 3.5 cm ده.
+endexercise
+@sec 9.5 | Volume/Capacity of a Cylinder || اسطوانے کا حجم/گنجائش || د استوانې حجم/ګنجایش
+# 9.5 Volume/Capacity of a Cylinder || 9.5 اسطوانے کا حجم/گنجائش || 9.5 د استوانې حجم/ګنجایش
+p Volume refers to the amount of space occupied by any object. Capacity means the quantity that a container can hold. We use the same formulas for volume and capacity. || حجم سے مراد وہ جگہ ہے جو کوئی شے گھیرتی ہے۔ گنجائش سے مراد وہ مقدار ہے جو کوئی برتن سما سکتا ہے۔ ہم حجم اور گنجائش کے لیے ایک ہی فارمولے استعمال کرتے ہیں۔ || حجم هغه ځای ته وايي چې یو شی یې نیسي. ګنجایش هغه مقدار ته وايي چې یو لوښی یې ځایولی شي. د حجم او ګنجایش لپاره یو شان فورمولونه کاروو.
+svg A cylinder (circumference C = 2πr, height h) cut into 16 vertical sectors and rearranged into a cuboid of length πr, width r and height h || ایک اسطوانہ (محیط C = 2πr، اونچائی h) جسے 16 عمودی قطاعوں میں کاٹ کر πr لمبائی، r چوڑائی اور h اونچائی کے مکعب نما میں ترتیب دیا گیا || یوه استوانه (محیط C = 2πr، لوړوالی h) چې په 16 عمودي قطاعونو پرې او د πr اوږدوالي، r پلنوالي او h لوړوالي مکعب نما ته ترتیب شوې
+<svg viewBox="0 0 380 160" width="380" role="img" aria-label="A cylinder with circumference 2 pi r and height h divided into vertical sector slices, then rearranged into a cuboid of length pi r, width r and height h" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M40 35 V125 A45 13 0 0 0 130 125 V35" fill="#f9a8d4" stroke="#0f172a"/><ellipse cx="85" cy="35" rx="45" ry="13" fill="#fbcfe8" stroke="#0f172a"/>
+<g stroke="#0f172a" stroke-width="0.7"><line x1="55" y1="45" x2="55" y2="135"/><line x1="70" y1="47" x2="70" y2="137"/><line x1="85" y1="48" x2="85" y2="138"/><line x1="100" y1="47" x2="100" y2="137"/><line x1="115" y1="45" x2="115" y2="135"/></g>
+<text x="85" y="16" text-anchor="middle">C = 2πr</text><text x="30" y="85" text-anchor="end">h</text>
+<text x="160" y="85" font-size="20">→</text>
+<path d="M210 50 L230 30 H350 L330 50 Z" fill="#fbcfe8" stroke="#0f172a"/><rect x="210" y="50" width="120" height="85" fill="#f9a8d4" stroke="#0f172a"/><path d="M330 50 L350 30 V115 L330 135 Z" fill="#f472b6" stroke="#0f172a"/>
+<g stroke="#0f172a" stroke-width="0.7"><line x1="225" y1="50" x2="225" y2="135"/><line x1="240" y1="50" x2="240" y2="135"/><line x1="255" y1="50" x2="255" y2="135"/><line x1="270" y1="50" x2="270" y2="135"/><line x1="285" y1="50" x2="285" y2="135"/><line x1="300" y1="50" x2="300" y2="135"/><line x1="315" y1="50" x2="315" y2="135"/></g>
+<text x="290" y="24" text-anchor="middle">πr</text><text x="214" y="38" text-anchor="end">r</text><text x="356" y="80">h</text>
+</svg>
+endsvg
+p Let's consider a cylinder of radius r and height h. Divide the circular top into equal sectors. Here we have divided it into 16 equal parts. Cut off each sector vertically and arrange them as shown in the figure. 8 sectors will be on one side and the remaining 8 will be on the other side. We can see that it is a cuboid now. || آئیے رداس r اور اونچائی h والے اسطوانے پر غور کریں۔ گول اوپری سطح کو برابر قطاعوں میں تقسیم کریں۔ یہاں ہم نے اسے 16 برابر حصوں میں تقسیم کیا ہے۔ ہر قطاع کو عمودی طور پر کاٹیں اور شکل کے مطابق ترتیب دیں۔ 8 قطاع ایک طرف اور باقی 8 دوسری طرف ہوں گے۔ ہم دیکھ سکتے ہیں کہ اب یہ مکعب نما ہے۔ || راځئ د r شعاع او h لوړوالي استوانه وګورو. ګرد سر په برابرو قطاعونو ووېشئ. دلته مو په 16 برابرو برخو وېشلی. هر قطاع په عمودي ډول پرې کړئ او لکه په شکل کې یې ترتیب کړئ. 8 قطاعونه به په یوه خوا او پاتې 8 به په بله خوا وي. لیدلی شو چې اوس مکعب نما دی.
+- The circumference of the circular flat surface of the cylinder is $2\pi r$. As half of the length of the circumference is on one side, so the length of this cuboid is $\frac{1}{2} \times 2\pi r = \pi r$. || اسطوانے کی گول چپٹی سطح کا محیط $2\pi r$ ہے۔ چونکہ محیط کی آدھی لمبائی ایک طرف ہے، اس لیے اس مکعب نما کی لمبائی $\frac{1}{2} \times 2\pi r = \pi r$ ہے۔ || د استوانې د ګردې هوارې سطحې محیط $2\pi r$ دی. څرنګه چې د محیط نیمایي اوږدوالی په یوه خوا کې دی، نو د دې مکعب نما اوږدوالی $\frac{1}{2} \times 2\pi r = \pi r$ دی.
+- The radius of the cylinder will become the width of the cuboid, i.e. r. || اسطوانے کا رداس مکعب نما کی چوڑائی یعنی r بن جائے گا۔ || د استوانې شعاع به د مکعب نما پلنوالی یعنې r شي.
+- The height of the cylinder will also be the height of the cuboid, i.e. h. || اسطوانے کی اونچائی مکعب نما کی اونچائی یعنی h بھی ہوگی۔ || د استوانې لوړوالی به د مکعب نما لوړوالی یعنې h هم وي.
+p So, the volume of this cuboid is the volume of the cylinder. || لہٰذا اس مکعب نما کا حجم اسطوانے کا حجم ہے۔ || نو د دې مکعب نما حجم د استوانې حجم دی.
+eq \begin{aligned} \text{The volume of a cuboid} &= \text{length} \times \text{width} \times \text{height} \\ &= \pi r \times r \times h = \pi r^2 h \end{aligned}
+p So, Volume of a cylinder = $\pi r^2 h$ || لہٰذا اسطوانے کا حجم = $\pi r^2 h$ || نو د استوانې حجم = $\pi r^2 h$
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Volume is measured in cubic centimetre (cm³) or cubic metre (m³). || حجم مکعب سینٹی میٹر (cm³) یا مکعب میٹر (m³) میں ناپا جاتا ہے۔ || حجم په مکعب سانتي متر (cm³) یا مکعب متر (m³) اندازه کېږي.
+endbox
+example 1 | Find the volume of a cylinder whose height is 16.3 cm and radius is 3.1 cm. || اس اسطوانے کا حجم معلوم کریں جس کی اونچائی 16.3 cm اور رداس 3.1 cm ہے۔ || د هغې استوانې حجم معلوم کړئ چې لوړوالی یې 16.3 cm او شعاع یې 3.1 cm ده.
+p **Solution:** Radius (r) = 3.1 cm, Height (h) = 16.3 cm, Volume = ? Using the formula of volume: || **حل:** رداس (r) = 3.1 cm، اونچائی (h) = 16.3 cm، حجم = ? حجم کا فارمولا استعمال کرتے ہوئے: || **حل:** شعاع (r) = 3.1 cm، لوړوالی (h) = 16.3 cm، حجم = ? د حجم د فورمول په کارولو:
+eq \begin{aligned} \text{Volume of a cylinder} &= \pi r^2 h \\ &= 3.14 \times 3.1 \times 3.1 \times 16.3 \\ &= 491.8590\,\text{cm}^3 \end{aligned}
+endexample
+example 2 | Find the height of a cylinder whose volume is 2321.2 m³ and radius is 4.2 m. || اس اسطوانے کی اونچائی معلوم کریں جس کا حجم 2321.2 m³ اور رداس 4.2 m ہے۔ || د هغې استوانې لوړوالی معلوم کړئ چې حجم یې 2321.2 m³ او شعاع یې 4.2 m ده.
+p **Solution:** Radius = 4.2 m, Volume = 2321.2 m³, Height (h) = ? Using the formula of volume: || **حل:** رداس = 4.2 m، حجم = 2321.2 m³، اونچائی (h) = ? حجم کا فارمولا استعمال کرتے ہوئے: || **حل:** شعاع = 4.2 m، حجم = 2321.2 m³، لوړوالی (h) = ? د حجم د فورمول په کارولو:
+eq \begin{aligned} V &= \pi r^2 h \\ 2321.2 &= 3.14 \times (4.2)^2 \times h \\ h &= \frac{2321.2}{3.14 \times (4.2)^2} \\ h &= 41.906\,\text{m} \end{aligned}
+endexample

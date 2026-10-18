@@ -1,0 +1,29 @@
+@printed 105
+@issue The Teaching Point begins with a lower-case "explain students what is sequence"; kept as printed.
+@sec u6-intro | Introduction || تعارف || پېژندنه
+## Introduction || تعارف || پېژندنه
+p In the previous classes we learnt about patterns, number patterns and algebraic expressions. Now in our daily life in many situations we will learn arithmetic and geometric sequences and will use them. We will also learn factorization of algebraic expressions. || پچھلی جماعتوں میں ہم نے نمونوں، عددی نمونوں اور الجبری عبارتوں کے بارے میں سیکھا۔ اب ہم اپنی روزمرہ زندگی کی کئی صورتوں میں حسابی اور ہندسی ترتیب سیکھیں گے اور انہیں استعمال کریں گے۔ ہم الجبری عبارتوں کی تجزی بھی سیکھیں گے۔ || په تېرو ټولګیو کې مو د بېلګو، عددي بېلګو او الجبري افادو په اړه زده کړل. اوس به زموږ د ورځني ژوند په ډېرو حالتونو کې حسابي او هندسي لړۍ زده کړو او وبه یې کاروو. همدارنګه به د الجبري افادو تجزیه زده کړو.
+@sec 6.1 | Number Sequences || عددی ترتیب || عددي لړۍ
+# 6.1 Number Sequences || 6.1 عددی ترتیب || 6.1 عددي لړۍ
+p We are familiar with a variety of patterns. Each pattern follows a unique rule. || ہم مختلف نمونوں سے واقف ہیں۔ ہر نمونہ ایک منفرد اصول کی پیروی کرتا ہے۔ || موږ له بېلابېلو بېلګو سره بلد یو. هره بېلګه یوه ځانګړې قاعده تعقیبوي.
+p Let us observe the following pattern. It is made by starting with a single dot, then adding two dots to the second row, three dots to the third row and so on. We can also list these triangular arrays using numbers numerically. || آئیے درج ذیل نمونے کا مشاہدہ کریں۔ یہ ایک نقطے سے شروع کر کے، پھر دوسری قطار میں دو نقطے، تیسری قطار میں تین نقطے وغیرہ شامل کر کے بنایا گیا ہے۔ ہم ان مثلثی ترتیبوں کو اعداد کی صورت میں بھی لکھ سکتے ہیں۔ || راځئ لاندې بېلګې ته وګورو. دا له یوه ټکي څخه په پیل، بیا دوهمې لیکې ته د دوو ټکو، درېیمې لیکې ته د دریو ټکو په زیاتولو او داسې نورو جوړه شوې. موږ دا مثلثي ترتیبونه په عددي ډول هم لیکلی شو.
+pattern kind=tri | n=4 | labels=1,;3,;6,;10,......
+p This list is known as a number sequence and the particular numbers are called triangular numbers. || اس فہرست کو عددی ترتیب کہتے ہیں اور یہ مخصوص اعداد مثلثی اعداد کہلاتے ہیں۔ || دې لېست ته عددي لړۍ وايي او دا ځانګړي عددونه مثلثي عددونه بلل کېږي.
+p Can you describe the rule of this pattern? || کیا آپ اس نمونے کا اصول بیان کر سکتے ہیں؟ || ایا د دې بېلګې قاعده بیانولی شئ؟
+p Observe; || مشاہدہ کریں؛ || وګورئ؛
+m $1, \quad 3, \quad 6, \quad 10, ........$
+m $\to +2 \to +3 \to +4$
+p Begin with the number 1, the rule of the pattern is to add 2 to the first term to get the second term and then add 3 to the second term to get the third term, and so on. || عدد 1 سے شروع کریں، نمونے کا اصول یہ ہے کہ دوسرا رکن حاصل کرنے کے لیے پہلے رکن میں 2 جمع کریں اور پھر تیسرا رکن حاصل کرنے کے لیے دوسرے رکن میں 3 جمع کریں، وغیرہ۔ || له 1 عدد څخه پیل وکړئ، د بېلګې قاعده دا ده چې د دوهم حد د لاسته راوړلو لپاره لومړي حد ته 2 جمع کړئ او بیا د درېیم حد د لاسته راوړلو لپاره دوهم حد ته 3 جمع کړئ، او داسې نور.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینۍ پوهې ازموینه
+p Find the rule of the patterns in the given patterns of numbers. Find the next, three terms of the pattern. || دیے گئے عددی نمونوں کا اصول معلوم کریں۔ نمونے کے اگلے تین ارکان معلوم کریں۔ || په ورکړل شویو عددي بېلګو کې د بېلګو قاعده ومومئ. د بېلګې راتلونکي درې حدونه ومومئ.
+qp a | 1, 5, 9, 13, ...
+qp b | 98, 81, 64, ...
+endbox
+p Consider another sequence; || ایک اور ترتیب پر غور کریں؛ || بلې لړۍ ته پام وکړئ؛
+pattern kind=pyr | n=3 | labels=1,;4,;9, ......
+p Extend the pattern to the next two terms. What is the rule of the sequence? || نمونے کو اگلے دو ارکان تک بڑھائیں۔ ترتیب کا اصول کیا ہے؟ || بېلګه تر راتلونکو دوو حدونو پورې وغځوئ. د لړۍ قاعده څه ده؟
+p Observe that similar to the above sequence, each term is made by adding a row beneath the previous pattern. || غور کریں کہ اوپر والی ترتیب کی طرح ہر رکن پچھلے نمونے کے نیچے ایک قطار شامل کر کے بنایا گیا ہے۔ || وګورئ چې د پورتنۍ لړۍ په څېر، هر حد د مخکینۍ بېلګې لاندې د یوې لیکې په زیاتولو جوړ شوی.
+p We can restate the above sequence as; || ہم اوپر والی ترتیب کو یوں دوبارہ بیان کر سکتے ہیں؛ || پورتنۍ لړۍ داسې بیا بیانولی شو؛
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p explain students what is sequence. Write different sequence of numbers on the board and ask them to observe the sequence and tell the rule of this sequence and difference between two terms of sequence. Ask them use the same rule to make another sequence. || طلبہ کو سمجھائیں کہ ترتیب کیا ہے۔ بورڈ پر اعداد کی مختلف ترتیبیں لکھیں اور ان سے کہیں کہ ترتیب کا مشاہدہ کریں اور اس ترتیب کا اصول اور ترتیب کے دو ارکان کا فرق بتائیں۔ ان سے کہیں کہ اسی اصول سے ایک اور ترتیب بنائیں۔ || زده کوونکو ته تشریح کړئ چې لړۍ څه ده. پر تخته د عددونو بېلابېلې لړۍ ولیکئ او ورته ووایاست چې لړۍ وګوري او د دې لړۍ قاعده او د لړۍ د دوو حدونو توپیر ووایي. ورته ووایاست چې په همدې قاعده بله لړۍ جوړه کړي.
+endbox

@@ -1,0 +1,25 @@
+@printed 14
+example 2
+p Find if $\frac{11}{10}$ is a terminating decimal or not without dividing. Then verify your answer by division. || تقسیم کیے بغیر معلوم کریں کہ $\frac{11}{10}$ مختتم اعشاریہ ہے یا نہیں۔ پھر تقسیم کے ذریعے اپنے جواب کی تصدیق کریں۔ || پرته له وېش څخه معلوم کړئ چې $\frac{11}{10}$ ختمېدونکی اعشاري دی که نه. بیا د وېش په مرسته خپل ځواب تایید کړئ.
+## Solution: || حل: || حل:
+p Here $\frac{11}{10}$ is already in standard form. $\frac{11}{10}$ has the denominator 10 whose factors are 2 and 5. So, it is a terminating decimal number. || یہاں $\frac{11}{10}$ پہلے سے معیاری صورت میں ہے۔ $\frac{11}{10}$ کا نسب نما 10 ہے جس کے اجزائے ضربی 2 اور 5 ہیں۔ لہٰذا یہ ایک مختتم اعشاری عدد ہے۔ || دلته $\frac{11}{10}$ دمخه په معیاري بڼه دی. د $\frac{11}{10}$ مخرج 10 دی چې ضربي اجزا یې 2 او 5 دي. نو دا یو ختمېدونکی اعشاري عدد دی.
+## Verification: || تصدیق: || تایید:
+p To verify our answer, let's divide. || اپنے جواب کی تصدیق کے لیے آئیے تقسیم کریں۔ || د خپل ځواب د تایید لپاره راځئ ووېشو.
+longdiv 10 | 11.0 | 1.1@3 | -10@1 ; 10@3 ; -10@3 ; 0@3
+p As, $\frac{11}{10} = 1.1$ (a terminating decimal), so our answer is correct. || چونکہ $\frac{11}{10} = 1.1$ (ایک مختتم اعشاریہ)، لہٰذا ہمارا جواب درست ہے۔ || څرنګه چې $\frac{11}{10} = 1.1$ (یو ختمېدونکی اعشاري)، نو زموږ ځواب سم دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Identify the terminating rational numbers. || مختتم ناطق اعداد کی شناخت کریں۔ || ختمېدونکي ناطق عددونه وپېژنئ.
+qp a | $\frac{10}{18}$
+qp b | $\frac{11}{15}$
+qp c | $\frac{33}{20}$
+endbox
+example 3
+p Find if $\frac{70}{15}$ is a terminating decimal or not without dividing. Then verify your answer by division. || تقسیم کیے بغیر معلوم کریں کہ $\frac{70}{15}$ مختتم اعشاریہ ہے یا نہیں۔ پھر تقسیم کے ذریعے اپنے جواب کی تصدیق کریں۔ || پرته له وېش څخه معلوم کړئ چې $\frac{70}{15}$ ختمېدونکی اعشاري دی که نه. بیا د وېش په مرسته خپل ځواب تایید کړئ.
+## Solution: || حل: || حل:
+p Here $\frac{70}{15}$ is not in standard form. The standard form of $\frac{70}{15}$ is $\frac{14}{3}$. The denominator 3 of $\frac{14}{3}$ has a factor 3. So, $\frac{70}{15}$ is not a terminating decimal number. || یہاں $\frac{70}{15}$ معیاری صورت میں نہیں ہے۔ $\frac{70}{15}$ کی معیاری صورت $\frac{14}{3}$ ہے۔ $\frac{14}{3}$ کے نسب نما 3 کا جزوِ ضربی 3 ہے۔ لہٰذا $\frac{70}{15}$ مختتم اعشاری عدد نہیں ہے۔ || دلته $\frac{70}{15}$ په معیاري بڼه نه دی. د $\frac{70}{15}$ معیاري بڼه $\frac{14}{3}$ ده. د $\frac{14}{3}$ مخرج 3 ضربي جز 3 لري. نو $\frac{70}{15}$ ختمېدونکی اعشاري عدد نه دی.
+## Verification: || تصدیق: || تایید:
+p To verify our answer, let's divide. || اپنے جواب کی تصدیق کے لیے آئیے تقسیم کریں۔ || د خپل ځواب د تایید لپاره راځئ ووېشو.
+longdiv 15 | 70.000 | 4.666…@6 | -60@1 ; 100@3 ; -90@3 ; 100@4 ; -90@4 ; 100@5 ; -90@5 ; 10@5
+p As, $\frac{70}{15} = 4.666\ldots$ (a non-terminating decimal), so our answer is correct. || چونکہ $\frac{70}{15} = 4.666\ldots$ (ایک غیر مختتم اعشاریہ)، لہٰذا ہمارا جواب درست ہے۔ || څرنګه چې $\frac{70}{15} = 4.666\ldots$ (یو نه ختمېدونکی اعشاري)، نو زموږ ځواب سم دی.
+endexample

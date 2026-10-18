@@ -1,0 +1,20 @@
+@printed 213
+q 5 | Observe the given multiple bar graph in vertical form and answer the questions given. || عمودی شکل میں دیے گئے متعدد بار گراف کو دیکھیں اور دیے گئے سوالات کے جواب دیں۔ || په عمودي بڼه ورکړل شوي ګڼ میله ییز ګراف ته وګورئ او ورکړل شوو پوښتنو ته ځواب ورکړئ.
+chart v | max 45 5 | title Toys Sale | x Days | y No. of Toys Sold | cats Mon,Tue,Wed,Thu,Fri | Plastic Toys=15,20,25,38,34 | Soft Toys=10,40,20,38,29 | colors #f472b6,#fbcfe8 || Scale: one mark along y-axis = 5 toys || پیمانہ: y-محور پر ایک نشان = 5 کھلونے || پیمانه: پر y-محور یوه نښه = 5 لوبونې
+qp a | What is the title of the graph? || گراف کا عنوان کیا ہے؟ || د ګراف عنوان څه دی؟
+sol Toys Sale ## The title is written above the graph. || عنوان گراف کے اوپر لکھا ہے۔ || عنوان د ګراف پورته لیکل شوی.
+qp b | What information is shown on the X-axis? || X-محور پر کون سی معلومات دکھائی گئی ہیں؟ || پر X-محور کوم معلومات ښودل شوي؟
+sol Days ## Mon to Fri are written along the x-axis. || پیر سے جمعہ تک x-محور پر لکھے ہیں۔ || له دوشنبې تر جمعې پر x-محور لیکل شوي.
+qp c | What information is shown on the Y-axis? || Y-محور پر کون سی معلومات دکھائی گئی ہیں؟ || پر Y-محور کوم معلومات ښودل شوي؟
+sol Number of toys sold ## The y-axis is labelled "No. of Toys Sold". || y-محور پر "فروخت شدہ کھلونوں کی تعداد" لکھا ہے۔ || پر y-محور "د پلورل شوو لوبونو شمېر" لیکل شوی.
+qp d | How many plastic toys were sold on Monday? || پیر کو کتنے پلاسٹک کے کھلونے فروخت ہوئے؟ || دوشنبه څو پلاستیکي لوبونې وپلورل شوې؟
+sol 15 ## The Monday plastic-toy bar reaches the 15 line. || پیر کی پلاسٹک کھلونوں کی بار 15 کی لکیر تک پہنچتی ہے۔ || د دوشنبې د پلاستیکي لوبونو میله تر 15 کرښې رسېږي.
+qp e | How many soft toys were sold on Wednesday? || بدھ کو کتنے نرم کھلونے فروخت ہوئے؟ || چهارشنبه څو نرمې لوبونې وپلورل شوې؟
+sol 20 ## The Wednesday soft-toy bar is at about 20. || بدھ کی نرم کھلونوں کی بار تقریباً 20 پر ہے۔ || د چهارشنبې د نرمو لوبونو میله نږدې 20 ده.
+qp f | On which day the least number of plastic toys were sold? || کس دن سب سے کم پلاسٹک کے کھلونے فروخت ہوئے؟ || په کومه ورځ تر ټولو لږې پلاستیکي لوبونې وپلورل شوې؟
+sol Monday ## Monday's plastic-toy bar (15) is the shortest. || پیر کی پلاسٹک بار (15) سب سے چھوٹی ہے۔ || د دوشنبې پلاستیکي میله (15) تر ټولو لنډه ده.
+qp g | On which day the greatest number of soft toys were sold? || کس دن سب سے زیادہ نرم کھلونے فروخت ہوئے؟ || په کومه ورځ تر ټولو ډېرې نرمې لوبونې وپلورل شوې؟
+sol Tuesday ## Tuesday's soft-toy bar (40) is the tallest. || منگل کی نرم کھلونوں کی بار (40) سب سے اونچی ہے۔ || د سه شنبې د نرمو لوبونو میله (40) تر ټولو جګه ده.
+qp h | What is the total number of soft toys sold on Tuesday and Wednesday altogether? || منگل اور بدھ کو کل کتنے نرم کھلونے فروخت ہوئے؟ || سه شنبه او چهارشنبه ټول څو نرمې لوبونې وپلورل شوې؟
+sol 40 + 20 = 60 ## Add the two soft-toy bars. || نرم کھلونوں کی دونوں بارز جمع کریں۔ || د نرمو لوبونو دواړه میلې جمع کړئ.
+@issue Exercise 11.1 Q5: the graph is read from a tilted scan; bar values for Thu and Fri are approximate (about 38/38 and 34/29). The values for Mon–Wed agree with the answer key.

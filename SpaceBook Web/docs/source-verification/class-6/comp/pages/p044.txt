@@ -1,0 +1,28 @@
+@printed 40
+@status lesson
+@deco Screenshot: a yellow 3D cat model with a fur texture next to a red ball, selected with rotation handles; the Fur panel on the right.
+box note | Tip || ٹپ || لارښوونه
+p The ***History Tool*** has ***history slider*** that shows recording steps while creating a Paint 3D model. This file can be opened in any media player. || ***ہسٹری ٹول*** میں ***ہسٹری سلائیڈر*** ہوتا ہے جو پینٹ تھری ڈی ماڈل بناتے وقت کے مراحل کی ریکارڈنگ دکھاتا ہے۔ یہ فائل کسی بھی میڈیا پلیئر میں کھولی جا سکتی ہے۔ || ***History*** وسیله ***د تاریخ سلایډر*** لري چې د ماډل جوړولو ګامونه ثبتوي او ښيي؛ دا فایل په هر میډیا پلېیر کې پرانیستل کېږي.
+endbox
+## 2.6.5 Save more Stickers || 2.6.5 مزید اسٹیکر محفوظ کرنا || 2.6.5 نور سټیکرونه خوندي کول
+- (1) Use Web Browser to search and **save** image for more **stickers.** || (1) مزید **اسٹیکروں** کے لیے ویب براؤزر سے تصویر تلاش کر کے **محفوظ** کریں۔ || (1) د نورو **سټیکرونو** لپاره په وېب براوزر انځور ولټوئ او **خوندي** یې کړئ.
+- (2) Select Stickers, Select **Custom stickers.** || (2) Stickers منتخب کریں، پھر **Custom stickers** منتخب کریں۔ || (2) Stickers وټاکئ، بیا **Custom stickers**.
+- (3) Choose **Your own sticker option,** then add image by **Add Sticker,** and apply to an object. || (3) **Your own sticker** کا اختیار چنیں، **Add Sticker** سے تصویر شامل کریں اور اسے شے پر لگائیں۔ || (3) **Your own sticker** وټاکئ، په **Add Sticker** انځور ورزیات کړئ او پر شي یې ولګوئ.
+@deco Panel "Custom stickers — Choose your own sticker — + Add sticker".
+## 2.6.6 Create 3D Text || 2.6.6 تھری ڈی متن بنانا || 2.6.6 درې بُعدي متن جوړول
+p The **Text tool** provides options for 2D Text, 3D Text, font, size, color, style and alignment. || **ٹیکسٹ ٹول** میں دو جہتی متن، تین جہتی متن، فونٹ، سائز، رنگ، انداز اور ترتیب (الائنمنٹ) کے اختیارات ہوتے ہیں۔ || **د متن وسیله** د 2D متن، 3D متن، فونټ، اندازې، رنګ، سټایل او برابرولو انتخابونه لري.
+- (1) Select **Text tool,** then select the **3D Text** option. || (1) **Text tool** منتخب کریں، پھر **3D Text** کا اختیار چنیں۔ || (1) **Text tool** وټاکئ، بیا **3D Text**.
+- (2) Select required **font** and **style** options. || (2) مطلوبہ **فونٹ** اور **انداز** منتخب کریں۔ || (2) اړین **فونټ** او **سټایل** وټاکئ.
+- (3) Click outside the text box. || (3) ٹیکسٹ باکس کے باہر کلک کریں۔ || (3) د متن له بکسه بهر کلیک وکړئ.
+- (4) Edit, rotate, or flip the text. || (4) متن میں ترمیم کریں، اسے گھمائیں یا پلٹیں۔ || (4) متن سم کړئ، وڅرخوئ یا یې واړوئ.
+svg Text panel: 2D text (T), 3D text, Font (Arial), font size (48), Color, Style (B, I, U) and Alignment (left, centre, right); example 3D word "ICT" in red. || ٹیکسٹ پینل: 2D متن، 3D متن، فونٹ، سائز، رنگ، انداز اور ترتیب؛ مثال کے طور پر سرخ ”ICT“۔ || د متن پانل: 2D، 3D، فونټ، اندازه، رنګ، سټایل او برابرول؛ بېلګه: سور "ICT".
+<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Paint 3D text panel">
+<text x="20" y="120" font-size="54" font-weight="bold" fill="#dc2626" transform="rotate(-8 80 110)">ICT</text>
+<rect x="190" y="10" width="140" height="180" fill="#fff" stroke="#0284c7" stroke-width="2"/>
+<g fill="#1e293b"><text x="200" y="28" font-weight="bold">Text</text><text x="205" y="58" font-size="20" font-weight="bold">T</text><text x="235" y="58" font-size="20" font-weight="bold" fill="#475569">𝐓</text><text x="200" y="90">Arial ⌄</text><text x="200" y="118">48 ⌄</text></g>
+<rect x="296" y="104" width="20" height="18" fill="#ea580c"/>
+<rect x="198" y="130" width="124" height="24" fill="none" stroke="#94a3b8"/><g font-weight="bold" fill="#1e293b"><text x="210" y="147">B</text><text x="255" y="147" font-style="italic">I</text><text x="295" y="147" text-decoration="underline">U</text></g>
+<rect x="198" y="160" width="40" height="22" fill="#1e3a8a"/><text x="255" y="176" fill="#1e293b">≡</text><text x="295" y="176" fill="#1e293b">≡</text>
+<g fill="#db2777" font-style="italic" font-weight="bold"><text x="345" y="45">2D text</text><text x="345" y="65">3D text</text><text x="345" y="90">Font</text><text x="345" y="115">font size</text><text x="345" y="132">Color</text><text x="345" y="150">Style</text><text x="345" y="175">Alignment</text></g>
+</svg>
+endsvg

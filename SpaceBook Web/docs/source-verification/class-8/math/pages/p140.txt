@@ -1,0 +1,37 @@
+@printed 134
+@issue Example 1(a) ends "= x² + 5x + 5" (should be + 6, matching part b); kept as printed. The last note continues on page 135.
+q 7 | Find the value of $x^2 + \frac{1}{x^2}$ when $x + \frac{1}{x} = 3$. || $x^2 + \frac{1}{x^2}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 3$ ہو۔ || د $x^2 + \frac{1}{x^2}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 3$ وي.
+q 8 | Find the value of $x^4 + \frac{1}{x^4}$ when $x + \frac{1}{x} = 7$. || $x^4 + \frac{1}{x^4}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 7$ ہو۔ || د $x^4 + \frac{1}{x^4}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 7$ وي.
+q 9 | Find the value of $x^2 + \frac{1}{x^2}$ when $x - \frac{1}{x} = 10$. || $x^2 + \frac{1}{x^2}$ کی قیمت معلوم کریں جب $x - \frac{1}{x} = 10$ ہو۔ || د $x^2 + \frac{1}{x^2}$ ارزښت معلوم کړئ کله چې $x - \frac{1}{x} = 10$ وي.
+q 10 | Find the value of $b^4 + \frac{1}{b^4}$ when $b - \frac{1}{b} = 4$. || $b^4 + \frac{1}{b^4}$ کی قیمت معلوم کریں جب $b - \frac{1}{b} = 4$ ہو۔ || د $b^4 + \frac{1}{b^4}$ ارزښت معلوم کړئ کله چې $b - \frac{1}{b} = 4$ وي.
+q 11 | Prove that $x + \frac{1}{x} = x^2 + \frac{1}{x^2} = x^4 + \frac{1}{x^4}$ when $x + \frac{1}{x} = 2$. || ثابت کریں کہ $x + \frac{1}{x} = x^2 + \frac{1}{x^2} = x^4 + \frac{1}{x^4}$ جب $x + \frac{1}{x} = 2$ ہو۔ || ثابت کړئ چې $x + \frac{1}{x} = x^2 + \frac{1}{x^2} = x^4 + \frac{1}{x^4}$ کله چې $x + \frac{1}{x} = 2$ وي.
+q 12 | Find the value of $p^4 + \frac{1}{p^4}$ when $p^2 + \frac{1}{p^2} = 30$. || $p^4 + \frac{1}{p^4}$ کی قیمت معلوم کریں جب $p^2 + \frac{1}{p^2} = 30$ ہو۔ || د $p^4 + \frac{1}{p^4}$ ارزښت معلوم کړئ کله چې $p^2 + \frac{1}{p^2} = 30$ وي.
+q 13 | Evaluate the following by using appropriate algebraic formulae. || مناسب الجبری فارمولوں کی مدد سے درج ذیل کی قیمت معلوم کریں۔ || د مناسبو الجبري فورمولونو په کارولو لاندې ارزونه وکړئ.
+qp a | $(98)^2$
+qp b | $(0.98)^2$
+qp c | $(15)^2$
+qp d | $(1.5)^2$
+qp e | $(0.05)^2$
+qp f | $(1205)^2$
+qp g | $(3200)^2$
+qp h | $(3900)^2$
+qp i | $(1.10)^2$
+qp j | $105 \times 95$
+qp k | $325 \times 275$
+qp l | $1010 \times 990$
+endexercise
+@sec 6.10 | Factorization || تجزی || تجزیه
+# 6.10 Factorization || 6.10 تجزی || 6.10 تجزیه
+p Factorization is the reverse process of multiplication. Like numbers, algebraic expressions can also be factorized. Factors of an algebraic expression are such algebraic expressions whose product is the given algebraic expression. || تجزی ضرب کا الٹ عمل ہے۔ اعداد کی طرح الجبری عبارتوں کی بھی تجزی کی جا سکتی ہے۔ کسی الجبری عبارت کے اجزائے ضربی ایسی الجبری عبارتیں ہیں جن کا حاصلِ ضرب دی گئی الجبری عبارت ہو۔ || تجزیه د ضرب معکوس عمل دی. د عددونو په څېر الجبري افادې هم تجزیه کېدای شي. د یوې الجبري افادې عاملونه هغه الجبري افادې دي چې حاصل ضرب یې ورکړل شوې الجبري افاده وي.
+box info | Factorization || تجزی || تجزیه
+p The process of finding factors of an algebraic expression is called factorization. || کسی الجبری عبارت کے اجزائے ضربی معلوم کرنے کا عمل تجزی کہلاتا ہے۔ || د یوې الجبري افادې د عاملونو د موندلو عمل تجزیه بلل کېږي.
+endbox
+p The process of writing an algebraic expression as a product of its factors is an important concept of algebra. In arithmetic, you have learnt that all composite numbers can be factorized. For example, factors of 21 are 3 and 7 and, therefore, we can write $21 = 3 \times 7$. In order to understand algebraic factorization, let us consider an example. || کسی الجبری عبارت کو اس کے اجزائے ضربی کے حاصلِ ضرب کے طور پر لکھنے کا عمل الجبرا کا ایک اہم تصور ہے۔ حساب میں آپ سیکھ چکے ہیں کہ تمام مرکب اعداد کی تجزی کی جا سکتی ہے۔ مثال کے طور پر 21 کے اجزائے ضربی 3 اور 7 ہیں اور اس لیے ہم $21 = 3 \times 7$ لکھ سکتے ہیں۔ الجبری تجزی سمجھنے کے لیے آئیے ایک مثال پر غور کریں۔ || د یوې الجبري افادې د هغې د عاملونو د حاصل ضرب په توګه لیکل د الجبر یو مهم مفهوم دی. په حساب کې مو زده کړي چې ټول مرکب عددونه تجزیه کېدای شي. د بېلګې په توګه د 21 عاملونه 3 او 7 دي او له همدې امله $21 = 3 \times 7$ لیکلی شو. د الجبري تجزیې د پوهېدو لپاره راځئ یوې بېلګې ته پام وکړو.
+example 1
+qp a | Find the product of $(x + 2)$ and $(x + 3)$. || $(x + 2)$ اور $(x + 3)$ کا حاصلِ ضرب معلوم کریں۔ || د $(x + 2)$ او $(x + 3)$ حاصل ضرب معلوم کړئ.
+qp b | Factorise $x^2 + 5x + 6$. || $x^2 + 5x + 6$ کی تجزی کریں۔ || $x^2 + 5x + 6$ تجزیه کړئ.
+## Solution: || حل: || حل:
+m (a) $(x + 2)(x + 3)$
+m $= x(x + 3) + 2(x + 3)$
+m $= x^2 + 3x + 2x + 6$
+m $= x^2 + 5x + 5$

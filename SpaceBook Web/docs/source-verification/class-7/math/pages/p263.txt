@@ -1,0 +1,29 @@
+@printed 259
+example 9 | Find the arithmetic mean of the values 1, 6, 8, 9, 7, 5. || قیمتوں 1, 6, 8, 9, 7, 5 کا حسابی اوسط معلوم کریں۔ || د 1, 6, 8, 9, 7, 5 ارزښتونو حسابي اوسط پیدا کړئ.
+@issue The book labels this "Example 1"; numbered 9 here (and the next examples 10 and 11) to keep example numbers continuous within the unit.
+p **Solution:** Here n = 6 || **حل:** یہاں n = 6 || **حل:** دلته n = 6
+eq \overline{X} = \dfrac{\sum x}{n} = \dfrac{1+6+8+9+7+5}{6} = \dfrac{36}{6} = 6
+endexample
+example 10 | Average weight of four boys is 24 kg. If the weight of another boy is also included, their average weight becomes 24.6 kg. Find the weight of the fifth boy. || چار لڑکوں کا اوسط وزن 24 kg ہے۔ اگر ایک اور لڑکے کا وزن بھی شامل کیا جائے تو ان کا اوسط وزن 24.6 kg ہو جاتا ہے۔ پانچویں لڑکے کا وزن معلوم کریں۔ || د څلورو هلکانو اوسط وزن 24 kg دی. که د یوه بل هلک وزن هم ورګډ شي، د هغوی اوسط وزن 24.6 kg کېږي. د پنځم هلک وزن پیدا کړئ.
+p **Solution:** Here, average weight of 4 boys is 24 kg || **حل:** یہاں 4 لڑکوں کا اوسط وزن 24 kg ہے || **حل:** دلته د 4 هلکانو اوسط وزن 24 kg دی
+eq \overline{X} = 24 \quad \text{and} \quad n = 6
+@issue Printed "n = 6"; with four boys it should be n = 4 (the next line correctly divides by 4). Kept as printed.
+p We have the formula, || ہمارے پاس فارمولا ہے، || موږ فورمول لرو،
+eq \overline{X} = \dfrac{\sum x}{n}, \qquad 24 = \dfrac{\sum x}{4} \quad \text{or} \quad \sum x = 24 \times 4 = 96
+p Suppose the weight of the 5th boy = y, then total weight of 5 boys = 96+y and their average weight = 24.6 kg (given). So using the formula again, we have, || فرض کریں پانچویں لڑکے کا وزن = y، تو 5 لڑکوں کا کل وزن = 96+y اور ان کا اوسط وزن = 24.6 kg (دیا گیا)۔ لہٰذا فارمولا دوبارہ استعمال کرتے ہوئے، || فرض کړئ د پنځم هلک وزن = y، نو د 5 هلکانو ټول وزن = 96+y او د هغوی اوسط وزن = 24.6 kg (ورکړل شوی). نو بیا د فورمول په کارولو،
+eq \overline{X} = \dfrac{\sum x}{n}; \quad \text{now } \overline{X} = 24.6, \ \sum x = 96+y, \ n = 5
+eq 24.6 = \dfrac{96+y}{5}
+p Cross-multiplying, we get || طرفین وسطین کرنے سے || د متقاطع ضرب په واسطه
+eq \begin{aligned} 96+y &= 5 \times 24.6 \\ \text{or} \quad 96+y &= 123 \\ y &= 123-96 = 27 \end{aligned}
+p ∴ Weight of the fifth boy = 27 kg || ∴ پانچویں لڑکے کا وزن = 27 kg || ∴ د پنځم هلک وزن = 27 kg
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Sum of all values = Number of values × their arithmetic mean || تمام قیمتوں کا مجموعہ = قیمتوں کی تعداد × ان کا حسابی اوسط || د ټولو ارزښتونو مجموعه = د ارزښتونو شمېر × د هغو حسابي اوسط
+endbox
+## 13.6.2 Mean of Grouped Data || 13.6.2 گروہی ڈیٹا کا اوسط || 13.6.2 د ډلبندي معلوماتو اوسط
+p When the data is in grouped form, we calculate its mean by the following method. || جب ڈیٹا گروہی شکل میں ہو تو ہم درج ذیل طریقے سے اس کا اوسط معلوم کرتے ہیں۔ || کله چې معلومات په ډلبندي بڼه وي، د هغو اوسط په لاندې طریقه محاسبه کوو.
+example 11 | The marks obtained by students in a math exam are given below. Find the mean marks. || ریاضی کے ایک امتحان میں طلبہ کے حاصل کردہ نمبر نیچے دیے گئے ہیں۔ اوسط نمبر معلوم کریں۔ || د ریاضي په یوه ازموینه کې د زده کوونکو اخیستې نمرې لاندې ورکړل شوې. اوسط نمرې پیدا کړئ.
+table
+th | Classes || جماعتیں || ټولګي | 25 - 39 | 40 - 54 | 55 - 69 | 70 - 84 | 85 - 99
+tr | Frequency || تعدد || تکرار | 3 | 4 | 8 | 9 | 6
+endtable

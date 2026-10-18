@@ -1,0 +1,44 @@
+@printed 188
+q 6 | Find and draw the line of reflection for these images using compass. || پرکار کی مدد سے ان تصاویر کے لیے انعکاس کا خط معلوم کریں اور کھینچیں۔ || د پرکار په مرسته د دې انځورونو لپاره د انعکاس کرښه ومومئ او رسم یې کړئ.
+qp a | Two squares, one up-left and one down-right || دو مربع، ایک اوپر بائیں اور ایک نیچے دائیں || دوه مربعګانې، یوه پورته کیڼ او بله لاندې ښي
+svg Two squares || دو مربع || دوه مربعګانې
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="A square at the top left and a square at the bottom right"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><rect x="45" y="35" width="65" height="65" fill="none" stroke="#0f172a" stroke-width="1.6"/><rect x="190" y="100" width="65" height="65" fill="none" stroke="#0f172a" stroke-width="1.6"/></svg>
+endsvg
+solution A slanting line between the squares: the perpendicular bisector of the segment joining matching corners.
+ss Join a corner of one square to the matching corner of the other, then construct its perpendicular bisector with the compass (Steps I–V, page 172). || ایک مربع کے کونے کو دوسرے کے متناظر کونے سے ملائیں، پھر پرکار سے اس کا عمودی ناصف بنائیں (مراحل I–V، صفحہ 172)۔ || د یوې مربع کونج د بلې له اړوند کونج سره ونښلوئ، بیا د پرکار په مرسته یې عمودي نیمونکې جوړه کړئ (I–V پړاوونه، پاڼه 172).
+endsolution
+qp b | Two P-shapes facing each other || آمنے سامنے دو P شکلیں || مخامخ دوه د P شکلونه
+svg Two shapes facing each other || آمنے سامنے دو شکلیں || مخامخ دوه شکلونه
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="Two P-like shapes that are mirror images of each other"><rect x="5" y="5" width="290" height="190" fill="#fff" stroke="#334155"/><polygon points="40,40 110,40 110,110 75,110 75,150 40,150" fill="none" stroke="#0891b2" stroke-width="1.8"/><polygon points="260,40 190,40 190,110 225,110 225,150 260,150" fill="none" stroke="#0891b2" stroke-width="1.8"/></svg>
+endsvg
+solution The vertical line exactly halfway between the two shapes.
+ss Join a corner to its mirror corner (for example, the two top-inner corners) and construct the perpendicular bisector; it is vertical. || ایک کونے کو اس کے عکس والے کونے سے ملائیں (مثلاً دونوں اوپر کے اندرونی کونے) اور عمودی ناصف بنائیں؛ یہ عمودی ہوگا۔ || یو کونج د هغه له انعکاسي کونج سره ونښلوئ (لکه دواړه پورتني داخلي کونجونه) او عمودي نیمونکې جوړه کړئ؛ دا به ولاړه وي.
+endsolution
+q 7 | Write the order of rotation of each figure and mark the point of rotation for the symmetric figures. || ہر شکل کا گردشی درجہ لکھیں اور متشاکل اشکال کے لیے گردش کا نقطہ نشان زد کریں۔ || د هر شکل د څرخ درجه ولیکئ او د متناظرو شکلونو لپاره د څرخ ټکی نښه کړئ.
+svg Figures a) to d) || اشکال a) تا d) || شکلونه a) تر d)
+<svg viewBox="0 0 560 130" width="560" role="img" aria-label="a) four T-shapes arranged around a centre; b) three lines through a centre with a triangle at each end; c) two ellipses crossing at right angles inside a circle; d) a four-pointed star" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#0f172a"><g fill="none" stroke="#0f172a" stroke-width="1.4"><g transform="translate(70 65)"><g id="tsh"><path d="M-6 -12 h12 v-26 h10 v-10 h-32 v10 h10 z"/></g><use href="#tsh" transform="rotate(90)"/><use href="#tsh" transform="rotate(180)"/><use href="#tsh" transform="rotate(270)"/></g><g transform="translate(210 65)"><line x1="-45" y1="0" x2="45" y2="0"/><line x1="-22" y1="-39" x2="22" y2="39"/><line x1="22" y1="-39" x2="-22" y2="39"/><g id="trg"><polygon points="45,0 60,-10 60,10"/></g><use href="#trg" transform="rotate(60)"/><use href="#trg" transform="rotate(120)"/><use href="#trg" transform="rotate(180)"/><use href="#trg" transform="rotate(240)"/><use href="#trg" transform="rotate(300)"/></g><g transform="translate(350 65)"><ellipse rx="50" ry="25"/><ellipse rx="25" ry="50"/><circle r="22"/><circle r="3" fill="#0f172a"/></g><polygon points="490,10 498,57 540,65 498,73 490,120 482,73 440,65 482,57"/></g><g font-weight="700"><text x="4" y="16">a)</text><text x="148" y="16">b)</text><text x="288" y="16">c)</text><text x="428" y="16">d)</text></g></svg>
+endsvg
+qp a | Four T-shapes || چار T شکلیں || څلور د T شکلونه
+sol Order 4 ## The four T-shapes swap places after every 90° turn; the point of rotation is the centre. || ہر 90° گردش کے بعد چاروں T شکلیں جگہ بدلتی ہیں؛ گردش کا نقطہ مرکز ہے۔ || له هر 90° څرخ وروسته څلور د T شکلونه ځای بدلوي؛ د څرخ ټکی مرکز دی.
+qp b | Three lines with triangles || تکونوں والے تین خطوط || درې کرښې له مثلثونو سره
+sol Order 6 in the coded drawing (six equal arms with a triangle on each) ## Teacher's note: the printed figure is unclear; the book's answer key says every figure in Q7 has order 4. Count how many times the printed figure matches itself in one full turn. || استاد کا نوٹ: چھپی شکل غیر واضح ہے؛ کتاب کی جوابی کلید کہتی ہے کہ سوال 7 کی ہر شکل کا درجہ 4 ہے۔ گنیں کہ چھپی شکل ایک مکمل چکر میں کتنی بار ملتی ہے۔ || د ښوونکي یادونه: چاپ شوی شکل روښانه نه دی؛ د کتاب د ځوابونو کلي وايي چې د 7 پوښتنې هر شکل درجه 4 لري. وشمېرئ چې چاپ شوی شکل په یوه بشپړ څرخ کې څو ځله سمون خوري.
+qp c | Two crossing ellipses in a circle || دائرے میں آپس میں کٹتے دو بیضوی || په دایره کې دوه سره قطع بیضوي
+sol Order 4 ## After a 90° turn the two ellipses swap places, so it matches 4 times; the point of rotation is the centre dot. || 90° گردش کے بعد دونوں بیضوی جگہ بدلتے ہیں، اس لیے یہ 4 بار ملتی ہے؛ گردش کا نقطہ مرکز کا نقطہ ہے۔ || له 90° څرخ وروسته دواړه بیضوي ځای بدلوي، نو 4 ځله سمون خوري؛ د څرخ ټکی د مرکز ټکی دی.
+qp d | Four-pointed star || چار نوکوں والا ستارہ || څلور څوکې ستوری
+sol Order 4 ## Its four equal points match after every 90° turn. || اس کی چار برابر نوکیں ہر 90° کے بعد ملتی ہیں۔ || څلورې برابرې څوکې یې له هر 90° وروسته سمون خوري.
+endexercise
+@sec u9-project | Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Material Required: || درکار سامان: || اړین توکي:
+- Board marker/Chalk || بورڈ مارکر/چاک || د تختې مارکر/تباشیر
+- Scoring sheet || اسکورنگ شیٹ || د نمرو پاڼه
+## Procedure: || طریقۂ کار: || کړنلاره:
+- Get into two groups. || دو گروپوں میں بٹ جائیں۔ || په دوو ډلو ووېشل شئ.
+- A member from group A will come to the whiteboard and draw parallel lines and transversal (not drawn to scale) and mark the angles and lines. || گروپ A کا ایک رکن وائٹ بورڈ پر آ کر متوازی خطوط اور قاطع (پیمانے کے بغیر) بنائے گا اور زاویوں اور خطوط پر نشان لگائے گا۔ || د A ډلې یو غړی به تختې ته راشي، موازي کرښې او قاطع (بې پیمانې) به رسم کړي او زاویې او کرښې به نښه کړي.
+- He/she will leave at least one angle known. || وہ کم از کم ایک زاویہ معلوم رہنے دے گا/گی۔ || هغه به لږ تر لږه یوه زاویه معلومه پرېږدي.
+- Then a member from group B will come and find the unknown angle(s). || پھر گروپ B کا ایک رکن آ کر نامعلوم زاویہ (زاویے) معلوم کرے گا۔ || بیا به د B ډلې یو غړی راشي او نامعلومه زاویه (زاویې) به ومومي.
+- Repeat this and take turns. || یہ دہرائیں اور باری باری کریں۔ || دا تکرار کړئ او په نوبت سره یې وکړئ.
+- The group with accurate and quick answers wins. || درست اور تیز جوابات والا گروپ جیتتا ہے۔ || د سمو او چټکو ځوابونو لرونکې ډله ګټي.
+transv - L - M - N | - x° 130° - | - - - - || Sample card 1: one known angle 130° and the unknown x° || نمونہ کارڈ 1: ایک معلوم زاویہ 130° اور نامعلوم x° || د بېلګې کارت 1: یوه معلومه زاویه 130° او نامعلومه x°
+transv - L - M - N | - x° 128° - | - - - - || Sample card 2: one known angle 128° and the unknown x° || نمونہ کارڈ 2: ایک معلوم زاویہ 128° اور نامعلوم x° || د بېلګې کارت 2: یوه معلومه زاویه 128° او نامعلومه x°
+@issue The two sample cards on page 188 are game examples; the labels L and M mark the two parallel lines and N the transversal. The coded cards place x° and the known angle at the same crossing as in the book.

@@ -1,0 +1,29 @@
+@printed 143
+example 1 | Find the area of the square whose length of one side is 34 cm. || اس مربع کا رقبہ معلوم کریں جس کے ایک ضلع کی لمبائی 34 cm ہے۔ || د هغه مربع مساحت معلوم کړئ چې د یوې ضلعې اوږدوالی یې 34 cm دی.
+rect 1 1 #fde047 | 34 cm | 34 cm | 34 cm | 34 cm
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Area of a square} &= \text{length} \times \text{length} \\ &= 34 \text{ cm} \times 34 \text{ cm} = 1156 \text{ cm}^2 \end{aligned}
+p The area of the square is 1156 cm². || مربع کا رقبہ 1156 cm² ہے۔ || د مربع مساحت 1156 cm² دی.
+endexample
+example 2 | Find the length of a square, if the area of square is 144 m². || اگر مربع کا رقبہ 144 m² ہو تو اس کی لمبائی معلوم کریں۔ || که د مربع مساحت 144 m² وي، اوږدوالی یې معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+m Area of square $=$ length $\times$ length
+p As area of the square is given and we need to find the length, so we put the value of area in this formula. || چونکہ مربع کا رقبہ دیا گیا ہے اور ہمیں لمبائی معلوم کرنی ہے، اس لیے ہم رقبے کی قیمت اس فارمولے میں رکھتے ہیں۔ || ځکه چې د مربع مساحت ورکړل شوی او اوږدوالی باید ومومو، نو د مساحت ارزښت په دې فورمول کې ږدو.
+eq \begin{aligned} 144 \text{ m}^2 &= \text{length} \times \text{length} \\ 12 \text{ m}^2 &= \text{length} \\ \text{Length} &= 12 \text{ m} \end{aligned}
+endexample
+@issue Example 2 (page 143) prints "Area of square = length  length" (× missing) and "12 m² = length"; the step meant is 12 m × 12 m = 144 m², so length = 12 m. Kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find area of a square if the length of one side is $\frac{5}{9}$ m. || اگر ایک ضلع کی لمبائی $\frac{5}{9}$ m ہو تو مربع کا رقبہ معلوم کریں۔ || که د یوې ضلعې اوږدوالی $\frac{5}{9}$ m وي، د مربع مساحت معلوم کړئ.
+endbox
+## Area of Rectangle || مستطیل کا رقبہ || د مستطیل مساحت
+p The total surface covered by a rectangle is called **its area**. The area of the rectangle is the product of their length and width. || مستطیل کی گھیری ہوئی کل سطح کو **اس کا رقبہ** کہتے ہیں۔ مستطیل کا رقبہ اس کی لمبائی اور چوڑائی کا حاصلِ ضرب ہے۔ || هغه ټوله سطحه چې مستطیل یې نیسي **د هغه مساحت** بلل کېږي. د مستطیل مساحت د اوږدوالي او پلنوالي حاصل ضرب دی.
+m Area of rectangle $=$ length $\times$ width
+example 1 | If a length of a rectangular pond is 45 m and width is 2900 cm. Find the area of the rectangular pond in cm². || اگر ایک مستطیل تالاب کی لمبائی 45 m اور چوڑائی 2900 cm ہو تو تالاب کا رقبہ cm² میں معلوم کریں۔ || که د یو مستطیلي حوض اوږدوالی 45 m او پلنوالی 2900 cm وي، د حوض مساحت په cm² معلوم کړئ.
+rect 45 29 #67e8f9 | 45 m | 2900 cm | 45 m | 2900 cm
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Length} &= 45 \text{ m} = 45 \times 100 = 4500 \\ \text{Width} &= 2900 \text{ cm} \\ \text{Area of rectangle} &= \text{length} \times \text{width} \\ &= 4500 \text{ cm} \times 2900 \text{ cm} \\ &= 13050000 \text{ cm}^2 \end{aligned}
+p The area of a rectangle is 13050000 cm². || مستطیل کا رقبہ 13050000 cm² ہے۔ || د مستطیل مساحت 13050000 cm² ده.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain to the students how to find the area of square and rectangle. Draw a few squares and rectangles on the board and ask them to find their areas. || طلبہ کو مربع اور مستطیل کا رقبہ معلوم کرنے کا طریقہ سمجھائیں۔ بورڈ پر چند مربع اور مستطیل بنائیں اور ان سے رقبے معلوم کرنے کو کہیں۔ || زده کوونکو ته د مربع او مستطیل د مساحت د موندلو لاره تشریح کړئ. په تخته څو مربعګانې او مستطیلونه رسم کړئ او ترې وغواړئ چې مساحتونه یې ومومي.
+endbox

@@ -1,0 +1,40 @@
+@printed 87
+@issue The introduction prints "we have leant about sets"; kept as printed.
+@sec u5-intro | Introduction || تعارف || پېژندنه
+## Introduction || تعارف || پېژندنه
+p In the previous grade we have leant about sets, its types and how we can represent different sets and their elements using Venn diagram. We learnt about few more topics related to sets such as, operations on sets such as union, intersection, difference and complement. Now we will learn how to describe sets using different language and by using Venn diagram. We will also learn about power set, some more operations on sets, verify some properties with respect to union and intersection and verify De Morgan's laws. || پچھلی جماعت میں ہم نے سیٹ، ان کی اقسام اور وین ڈایاگرام کے ذریعے مختلف سیٹ اور ان کے ارکان ظاہر کرنے کے بارے میں سیکھا۔ ہم نے سیٹ سے متعلق چند مزید موضوعات بھی سیکھے جیسے سیٹوں پر عملیات مثلاً یونین، انٹرسیکشن، فرق اور تکملہ۔ اب ہم مختلف زبان اور وین ڈایاگرام کے ذریعے سیٹ بیان کرنا سیکھیں گے۔ ہم پاور سیٹ، سیٹوں پر کچھ مزید عملیات، یونین اور انٹرسیکشن کے لحاظ سے کچھ خصوصیات کی تصدیق اور ڈی مورگن کے قوانین کی تصدیق کرنا بھی سیکھیں گے۔ || په تېر ټولګي کې مو د سېټونو، د هغوی د ډولونو او د وین ډیاګرام په مرسته د بېلابېلو سېټونو او د هغوی د عناصرو د ښودلو په اړه زده کړل. همدارنګه مو د سېټونو اړوند څو نور موضوعات لکه پر سېټونو عملیات لکه اتحاد، تقاطع، توپیر او متمم زده کړل. اوس به زده کړو چې څنګه سېټونه په بېلابېلو ژبو او د وین ډیاګرام په مرسته تشریح کړو. همدارنګه به د توان سېټ، پر سېټونو څو نور عملیات، د اتحاد او تقاطع په اړه د ځینو ځانګړتیاوو تایید او د ډي مورګن د قوانینو تایید زده کړو.
+@sec 5.1 | Set Notations || سیٹ کی علامات || د سېټ نښې
+# 5.1 Set Notations || 5.1 سیٹ کی علامات || 5.1 د سېټ نښې
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینۍ پوهې ازموینه
+- Define equal and equivalent sets and give example. || برابر اور مساوی سیٹ کی تعریف کریں اور مثال دیں۔ || برابر او معادل سېټونه تعریف کړئ او بېلګه ورکړئ.
+- Write a set and write one subset and one super set of that set. || ایک سیٹ لکھیں اور اس سیٹ کا ایک ذیلی سیٹ اور ایک فوقی سیٹ لکھیں۔ || یو سېټ ولیکئ او د هغه یو فرعي سېټ او یو لوړ سېټ ولیکئ.
+- Write an example of disjoint and overlapping set. || غیر مشترک اور مشترک سیٹ کی ایک مثال لکھیں۔ || د جلا او یو پر بل لګېدونکو سېټونو یوه بېلګه ولیکئ.
+endbox
+## 5.1.1 Set Builder Form || 5.1.1 سیٹ بلڈر شکل || 5.1.1 د سېټ جوړونکې بڼه
+p Set builder notation is another form to represent a set. In set builder form, instead of listing the elements, a common rule, characteristic or formula is written in the shortest possible form that describes the elements of the set. || سیٹ بلڈر علامت سیٹ ظاہر کرنے کی ایک اور شکل ہے۔ سیٹ بلڈر شکل میں ارکان کی فہرست کے بجائے ایک مشترکہ اصول، خصوصیت یا فارمولا مختصر ترین شکل میں لکھا جاتا ہے جو سیٹ کے ارکان کو بیان کرتا ہے۔ || د سېټ جوړونکې نښه د سېټ د ښودلو بله بڼه ده. د سېټ جوړونکې په بڼه کې د عناصرو د لېست پر ځای، یوه ګډه قاعده، ځانګړتیا یا فورمول په تر ټولو لنډه بڼه لیکل کېږي چې د سېټ عناصر تشریح کوي.
+p **For example,** || **مثال کے طور پر،** || **د بېلګې په توګه،**
+p "N = The set of natural numbers" is the descriptive form, whereas || "N = قدرتی اعداد کا سیٹ" بیانیہ شکل ہے، جبکہ || "N = د طبیعي عددونو سېټ" تشریحي بڼه ده، په داسې حال کې چې
+m N = {1, 2, 3, 4, 5, ...} is the tabular form.
+p The same set can be written in set builder form as: || یہی سیٹ سیٹ بلڈر شکل میں یوں لکھا جا سکتا ہے: || همدا سېټ د سېټ جوړونکې په بڼه داسې لیکل کېدای شي:
+m N = $\{x \mid x$ is a natural number$\}$ or
+m N = $\{x \mid x \in N\}$
+p We can read it as, "*set N is a set of all elements x, such that x is a natural number*". || ہم اسے یوں پڑھ سکتے ہیں، "*سیٹ N تمام ارکان x کا سیٹ ہے، اس طرح کہ x ایک قدرتی عدد ہے*"۔ || موږ یې داسې لوستلی شو، "*N سېټ د ټولو x عناصرو سېټ دی، داسې چې x یو طبیعي عدد دی*".
+p Here, the elements of the set are denoted by the letter $x$ followed by a vertical line "|" which is read as "such that". After the "such that" sign, the specific characteristic of the elements is written. Also the whole description is to be enclosed within the curly brackets "{ }". We can label it as: || یہاں سیٹ کے ارکان کو حرف $x$ سے ظاہر کیا جاتا ہے جس کے بعد ایک عمودی لکیر "|" ہوتی ہے جسے "اس طرح کہ" پڑھا جاتا ہے۔ "اس طرح کہ" کی علامت کے بعد ارکان کی مخصوص خصوصیت لکھی جاتی ہے۔ نیز پوری تفصیل کو مہراب نما قوسین "{ }" میں بند کیا جاتا ہے۔ ہم اسے یوں نشان زد کر سکتے ہیں: || دلته د سېټ عناصر د $x$ توري په واسطه ښودل کېږي چې ورپسې یوه عمودي کرښه "|" راځي چې "داسې چې" لوستل کېږي. د "داسې چې" له نښې وروسته د عناصرو ځانګړې ځانګړتیا لیکل کېږي. همدارنګه ټول تشریح باید په ګونجه قوسونو "{ }" کې وتړل شي. موږ یې داسې نښه کولی شو:
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Are the following sets in descriptive form or tabular form? || کیا درج ذیل سیٹ بیانیہ شکل میں ہیں یا جدولی شکل میں؟ || ایا لاندې سېټونه په تشریحي بڼه دي که جدولي بڼه؟
+m A = {10, 20, 30, 40}
+m B = {0}
+m D = {1}
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+m $\mid$ means "such that"
+m $\in$ means "belongs to"
+m $\notin$ means "does not belong to"
+m $\geq$ means "greater than or equal to"
+m $\leq$ means "less than or equal to"
+m $\wedge$ means "and"
+m $\vee$ means "or"
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write some examples of tabular and descriptive forms of sets on the board and ask the students to write them as set builder form. || بورڈ پر سیٹ کی جدولی اور بیانیہ شکلوں کی کچھ مثالیں لکھیں اور طلبہ سے کہیں کہ انہیں سیٹ بلڈر شکل میں لکھیں۔ || پر تخته د سېټونو د جدولي او تشریحي بڼو څو بېلګې ولیکئ او له زده کوونکو وغواړئ چې د سېټ جوړونکې په بڼه یې ولیکي.
+endbox

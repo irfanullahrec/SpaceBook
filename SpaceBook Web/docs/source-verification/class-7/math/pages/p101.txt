@@ -1,0 +1,35 @@
+@printed 97
+example 2 | If U = Set of integers and N = Set of natural numbers, then this can be represented by the following Venn diagram. || اگر U = صحیح اعداد کا سیٹ اور N = قدرتی اعداد کا سیٹ ہو تو اسے درج ذیل وین شکل سے ظاہر کیا جا سکتا ہے۔ || که U = د تامو عددونو سېټ او N = د طبیعي عددونو سېټ وي، نو دا د لاندې وېن ډیاګرام په واسطه ښودل کېدای شي.
+venn layout=single | U=U | names=N | a=1, 3, 10, 9, 7 | shade=a || N is a subset of U || N، U کا ذیلی سیٹ ہے || N د U فرعي سېټ دی
+p This shows that the set of natural numbers is a subset of the set of integers. || اس سے ظاہر ہوتا ہے کہ قدرتی اعداد کا سیٹ صحیح اعداد کے سیٹ کا ذیلی سیٹ ہے۔ || دا ښيي چې د طبیعي عددونو سېټ د تامو عددونو د سېټ فرعي سېټ دی.
+endexample
+p Similarly, we can represent different sets in Venn diagram. || اسی طرح ہم مختلف سیٹوں کو وین شکل میں ظاہر کر سکتے ہیں۔ || په همدې ډول موږ بېلابېل سېټونه په وېن ډیاګرام کې ښودلی شو.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Represent the set of whole numbers and set of integers using Venn Diagram. || مکمل اعداد کے سیٹ اور صحیح اعداد کے سیٹ کو وین شکل سے ظاہر کریں۔ || د بشپړو عددونو سېټ او د تامو عددونو سېټ د وېن ډیاګرام په مرسته وښایاست.
+endbox
+exercise 6.2
+q 1 | Represent the following sets using tabular form. || درج ذیل سیٹوں کو جدولی صورت میں ظاہر کریں۔ || لاندې سېټونه په جدولي بڼه وښایاست.
+qp a | N = The set of natural numbers || N = قدرتی اعداد کا سیٹ || N = د طبیعي عددونو سېټ
+qp b | W = The set of whole numbers || W = مکمل اعداد کا سیٹ || W = د بشپړو عددونو سېټ
+qp c | Z = The set of integers || Z = صحیح اعداد کا سیٹ || Z = د تامو عددونو سېټ
+qp d | E = The set of even numbers || E = جفت اعداد کا سیٹ || E = د جفتو عددونو سېټ
+qp e | O = The set of odd numbers || O = طاق اعداد کا سیٹ || O = د طاقو عددونو سېټ
+qp f | P = The set of prime numbers || P = مفرد اعداد کا سیٹ || P = د لومړنیو عددونو سېټ
+qp g | K = The set of composite numbers || K = مرکب اعداد کا سیٹ || K = د مرکبو عددونو سېټ
+q 2 | Use Venn diagrams to represent the relation between each of the given sets. || دیے گئے ہر سیٹ کے درمیان تعلق کو وین اشکال سے ظاہر کریں۔ || د ورکړل شویو هرو سېټونو ترمنځ اړیکه د وېن ډیاګرامونو په مرسته وښایاست.
+qp a | N and Z
+qp b | W and E
+qp c | P and W
+qp d | Q and N
+qp e | W and N
+endexercise
+@sec 6.3 | Operations on Sets and their Properties || سیٹوں پر عملیات اور ان کی خصوصیات || پر سېټونو عملیې او د هغوی ځانګړتیاوې
+# 6.3 Operations on Sets and their Properties || 6.3 سیٹوں پر عملیات اور ان کی خصوصیات || 6.3 پر سېټونو عملیې او د هغوی ځانګړتیاوې
+## 6.3.1 Operations on Sets || 6.3.1 سیٹوں پر عملیات || 6.3.1 پر سېټونو عملیې
+p We have learnt how to carry out the four basic arithmetic operations on whole numbers, fractions and decimals. Now we will learn about some special operations on sets. The operations are performed when the sets are expressed in tabular form. || ہم نے مکمل اعداد، کسور اور اعشاریوں پر چار بنیادی حسابی عملیات کرنا سیکھا ہے۔ اب ہم سیٹوں پر کچھ خاص عملیات کے بارے میں سیکھیں گے۔ یہ عملیات اس وقت کی جاتی ہیں جب سیٹ جدولی صورت میں لکھے گئے ہوں۔ || موږ پر بشپړو عددونو، کسرونو او اعشاریو د څلورو بنسټیزو حسابي عملیو ترسره کول زده کړي دي. اوس به پر سېټونو د ځینو ځانګړو عملیو په اړه زده کړو. دا عملیې هغه وخت ترسره کېږي چې سېټونه په جدولي بڼه لیکل شوي وي.
+p Let's learn about the following basic operations on sets. || آئیے سیٹوں پر درج ذیل بنیادی عملیات کے بارے میں سیکھیں۔ || راځئ پر سېټونو د لاندې بنسټیزو عملیو په اړه زده کړو.
+### 1. Union of sets || 1. سیٹوں کا یونین || 1. د سېټونو یووالی
+p The union of two or more sets is a set which consists of all the elements of both sets. The operation is done by combining the elements of two or more sets into a single set. In union of sets, we do not write an element more than once. The symbol for denoting union of sets is '∪'. We write the union of two sets A and B as $A \cup B$ and read it as "A union B". || دو یا زیادہ سیٹوں کا یونین ایک ایسا سیٹ ہے جس میں دونوں سیٹوں کے تمام ارکان شامل ہوں۔ یہ عمل دو یا زیادہ سیٹوں کے ارکان کو ملا کر ایک سیٹ بنا کر کیا جاتا ہے۔ سیٹوں کے یونین میں ہم کسی رکن کو ایک سے زیادہ بار نہیں لکھتے۔ سیٹوں کا یونین ظاہر کرنے کی علامت '∪' ہے۔ ہم دو سیٹوں A اور B کا یونین $A \cup B$ لکھتے ہیں اور "A یونین B" پڑھتے ہیں۔ || د دوو یا ډېرو سېټونو یووالی هغه سېټ دی چې د دواړو سېټونو ټول غړي ولري. دا عملیه د دوو یا ډېرو سېټونو د غړو په یو سېټ کې په یوځای کولو ترسره کېږي. د سېټونو په یووالي کې یو غړی له یو ځل زیات نه لیکو. د سېټونو د یووالي نښه '∪' ده. د دوو سېټونو A او B یووالی داسې لیکو $A \cup B$ او لولو یې "A یووالی B".
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Union of two given sets is the smallest set which contains all the elements of both sets. || دو دیے گئے سیٹوں کا یونین وہ سب سے چھوٹا سیٹ ہے جس میں دونوں سیٹوں کے تمام ارکان ہوں۔ || د دوو ورکړل شویو سېټونو یووالی هغه تر ټولو کوچنی سېټ دی چې د دواړو سېټونو ټول غړي ولري.
+endbox

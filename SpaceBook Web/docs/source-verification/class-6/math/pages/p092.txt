@@ -1,0 +1,57 @@
+@printed 90
+q 2 | The entry ticket for 8 persons in the museum costs Rs 1760. What is the rate per ticket? || عجائب گھر میں 8 افراد کے داخلہ ٹکٹ کی قیمت 1760 روپے ہے۔ فی ٹکٹ شرح کیا ہے؟ || په موزیم کې د 8 کسانو د ننوتو ټکټ بیه 1760 روپۍ ده. د هر ټکټ نرخ څومره دی؟
+solution Rs 220 per ticket
+suse urate 1760 | rupees | 8 | ticket
+endsolution
+q 3 | The cost of tiling a floor having an area of 234 meter square is Rs 205,920. What is the per square meter rate of tiling? || 234 مربع میٹر رقبے والے فرش پر ٹائلیں لگانے کی لاگت 205,920 روپے ہے۔ ٹائلیں لگانے کی فی مربع میٹر شرح کیا ہے؟ || د 234 مربع متره مساحت لرونکي فرش د ټایل کولو لګښت 205,920 روپۍ دی. د ټایل کولو د هر مربع متر نرخ څومره دی؟
+solution Rs 880 per square metre
+suse urate 205920 | rupees | 234 | square metre
+endsolution
+q 4 | Dania bought 12 kg of apples in Rs 720. Find the rate of 1 kg of apples. || دانیہ نے 720 روپے میں 12 kg سیب خریدے۔ 1 kg سیب کی شرح معلوم کریں۔ || دانیا په 720 روپیو 12 kg مڼې واخیستې. د 1 kg مڼو نرخ معلوم کړئ.
+solution Rs 60 per kg
+suse urate 720 | rupees | 12 | kg
+endsolution
+q 5 | Aleem's income is Rs 3000 after working for 19 hours. What is his per hour pay? || 19 گھنٹے کام کرنے کے بعد علیم کی آمدنی 3000 روپے ہے۔ اس کی فی گھنٹہ اجرت کیا ہے؟ || علیم له 19 ساعته کار وروسته 3000 روپۍ عاید لري. په یوه ساعت کې یې مزد څومره دی؟
+solution ≈ Rs 157.89 per hour
+suse urate 3000 | rupees | 19 | hour
+ss 3000 ÷ 19 does not divide exactly; rounded to two decimal places it is about Rs 157.89 per hour. || 3000 ÷ 19 پورا تقسیم نہیں ہوتا؛ دو اعشاری مقامات تک تقریباً 157.89 روپے فی گھنٹہ۔ || 3000 ÷ 19 بشپړ نه وېشل کېږي؛ تر دوو اعشاري ځایونو نږدې 157.89 روپۍ په یوه ساعت کې.
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Colour the following shapes and show that 0.5 is not equal to 5%. || درج ذیل اشکال میں رنگ بھریں اور دکھائیں کہ 0.5، 5% کے برابر نہیں۔ || لاندې شکلونه رنګ کړئ او وښیئ چې 0.5 له 5% سره برابر نه دی.
+grid 10x10 || Grid for 0.5 || 0.5 کے لیے خانے || د 0.5 لپاره خانې
+grid 10x10 || Grid for 5% || 5% کے لیے خانے || د 5% لپاره خانې
+qsolution 0.5 = 50% (50 squares) but 5% = 5 squares
+ss 0.5 = 50/100 = 50%, so colour 50 squares (5 full columns). || 0.5 = 50/100 = 50%، اس لیے 50 مربع (5 پورے کالم) رنگیں۔ || 0.5 = 50/100 = 50%، نو 50 مربعات (5 بشپړې ستنې) رنګ کړئ.
+sfig grid 10x10 | #22c55e:1-5:1-10
+ss 5% = 5/100, so colour only 5 squares. || 5% = 5/100، اس لیے صرف 5 مربع رنگیں۔ || 5% = 5/100، نو یوازې 5 مربعات رنګ کړئ.
+sfig grid 10x10 | #22c55e:1-1:1-5
+ss 50 squares ≠ 5 squares, so 0.5 is not equal to 5% (0.5 = 50%, while 5% = 0.05). || 50 مربع ≠ 5 مربع، اس لیے 0.5، 5% کے برابر نہیں (0.5 = 50%، جبکہ 5% = 0.05)۔ || 50 مربعات ≠ 5 مربعات، نو 0.5 له 5% سره برابر نه دی (0.5 = 50%، په داسې حال کې چې 5% = 0.05).
+endsolution
+q • | According to a criterion, for every 6 square metre of area, the garden should have 4 plants. A garden that has an area of 54 square metre has 32 plants. Is the number of trees is correct according to the set criterion? Justify your answer. || ایک معیار کے مطابق ہر 6 مربع میٹر رقبے میں باغ میں 4 پودے ہونے چاہئیں۔ 54 مربع میٹر رقبے والے ایک باغ میں 32 پودے ہیں۔ کیا مقررہ معیار کے مطابق درختوں کی تعداد درست ہے؟ اپنا جواب ثابت کریں۔ || د یوه معیار له مخې په هر 6 مربع متره ساحه کې باید باغ 4 بوټي ولري. یو باغ چې 54 مربع متره مساحت لري 32 بوټي لري. ایا د ټاکلي معیار له مخې د ونو شمېر سم دی؟ خپل ځواب ثابت کړئ.
+qsolution No — 54 m² needs 36 plants, but it has only 32
+ss Find how many groups of 6 m² are in 54 m²: 54 ÷ 6 = 9. || معلوم کریں کہ 54 m² میں 6 m² کے کتنے حصے ہیں: 54 ÷ 6 = 9۔ || معلوم کړئ چې په 54 m² کې د 6 m² څو برخې دي: 54 ÷ 6 = 9.
+ss Each group needs 4 plants, so 9 × 4 = 36 plants are needed. || ہر حصے کو 4 پودے چاہئیں، اس لیے 9 × 4 = 36 پودے درکار ہیں۔ || هره برخه 4 بوټو ته اړتیا لري، نو 9 × 4 = 36 بوټي اړین دي.
+sm \frac{54}{6} \times 4 = 9 \times 4 = 36
+ss The garden has only 32 plants, which is 4 fewer than 36. So the number is not correct by the criterion. || باغ میں صرف 32 پودے ہیں، جو 36 سے 4 کم ہیں۔ اس لیے معیار کے مطابق تعداد درست نہیں۔ || باغ یوازې 32 بوټي لري، چې له 36 څخه 4 کم دي. نو د معیار له مخې شمېر سم نه دی.
+endsolution
+endbox
+@sec u4-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- Percent (%) means out of 100. || فیصد (%) کا مطلب ہے 100 میں سے۔ || سلنه (%) یعنې له 100 څخه.
+- % is the symbol for percent. || % فیصد کی علامت ہے۔ || % د سلنې نښه ده.
+- A term used to compare two or more quantities of the same kind is called "Ratio". || ایک ہی قسم کی دو یا زیادہ مقداروں کا موازنہ کرنے والی اصطلاح کو "نسبت" کہتے ہیں۔ || هغه اصطلاح چې د یو ډول دوو یا ډېرو مقدارونو د پرتلې لپاره کارېږي "نسبت" بلل کېږي.
+- The first term of the ratio is called the antecedent and the second term is called the consequent. || نسبت کے پہلے رکن کو مقدم اور دوسرے رکن کو تالی کہتے ہیں۔ || د نسبت لومړي حد ته مقدم او دوهم حد ته تالي وايي.
+- When two ratios x : y and y : z are expressed in the form of x : y : z, the ratio is called a continued ratio. || جب دو نسبتیں x : y اور y : z کو x : y : z کی صورت میں لکھا جائے تو اس نسبت کو مسلسل نسبت کہتے ہیں۔ || کله چې دوه نسبتونه x : y او y : z د x : y : z په بڼه ولیکل شي، دې نسبت ته پرله پسې نسبت وايي.
+- A continued ratio is a comparison of three or more quantities in a certain order. || مسلسل نسبت تین یا زیادہ مقداروں کا ایک خاص ترتیب میں موازنہ ہے۔ || پرله پسې نسبت په یو ټاکلي ترتیب د دریو یا ډېرو مقدارونو پرتله ده.
+- A rate is a ratio that compares two quantities with different units of measure. || شرح ایک ایسی نسبت ہے جو پیمائش کی مختلف اکائیوں والی دو مقداروں کا موازنہ کرتی ہے۔ || نرخ هغه نسبت دی چې د اندازه کولو د بېلابېلو واحدونو لرونکي دوه مقدارونه پرتله کوي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Percent || فیصد || سلنه
+- Percentage || فیصد || سلنه
+- Ratio || نسبت || نسبت
+- Antecedent || مقدم || مقدم
+- Consequent || تالی || تالي
+- Continued ratio || مسلسل نسبت || پرله پسې نسبت
+- Rate || شرح || نرخ
+endbox
+@issue Think Higher prints "Is the number of trees is correct" (grammar) and mixes "plants"/"trees"; kept as printed.

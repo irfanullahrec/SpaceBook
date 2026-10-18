@@ -1,0 +1,48 @@
+@printed 254
+@issue The example headings are printed in a handwriting font and are partly cut at the left; "Chose a point B", "Construct a square ABCD when the difference of its diagonal and side is 3cm" and the figure labels (D, C, Z, M, 3cm, X, A, L, B, Y, 90°) are read as printed. In step v) "mark a point A on XY, such that LA = LM". In the second construction the labels R, D, C, Z, Q, 5cm, X, A, B, P, Y and 90° are read as printed; the segment BQ is the diagonal-direction line. Both figures are recreated as schematics.
+### Construction of square when difference of diagonal and side is given || مربع کی تعمیر جب وتر اور طرف کا فرق دیا گیا ہو || د مربع جوړول کله چې د قطر او ضلعې توپیر ورکړل شي
+p The method is explained in the following example. || طریقہ درج ذیل مثال میں سمجھایا گیا ہے۔ || طریقه په لاندې بېلګه کې تشریح شوې.
+example
+p Construct a square ABCD when the difference of its diagonal and side is 3cm. || ایک مربع ABCD بنائیں جب اس کے وتر اور طرف کا فرق 3cm ہو۔ || یو مربع ABCD جوړ کړئ کله چې د هغې د قطر او ضلعې توپیر 3cm وي.
+## Solution: || حل: || حل:
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړولو پړاوونه:**
+qp i | Draw a line $\overleftrightarrow{XY}$. || ایک خط $\overleftrightarrow{XY}$ کھینچیں۔ || یوه کرښه $\overleftrightarrow{XY}$ رسم کړئ.
+qp ii | Chose a point B on $\overleftrightarrow{XY}$ and draw ∠XBZ = 90°. || $\overleftrightarrow{XY}$ پر ایک نقطہ B چنیں اور ∠XBZ = 90° بنائیں۔ || پر $\overleftrightarrow{XY}$ یو ټکی B وټاکئ او ∠XBZ = 90° رسم کړئ.
+qp iii | On $\overrightarrow{XY}$, mark a point L such that $\overline{LB}$ = 3 cm. || $\overrightarrow{XY}$ پر ایک نقطہ L اس طرح نشان زد کریں کہ $\overline{LB}$ = 3 cm ہو۔ || پر $\overrightarrow{XY}$ یو ټکی L داسې په نښه کړئ چې $\overline{LB}$ = 3 cm وي.
+qp iv | On $\overrightarrow{BZ}$, mark a point M such that $\overline{BM}$ = 3 cm where 3 cm is the difference between the diagonal and the side of the required square. || $\overrightarrow{BZ}$ پر ایک نقطہ M اس طرح نشان زد کریں کہ $\overline{BM}$ = 3 cm ہو جہاں 3 cm مطلوبہ مربع کے وتر اور طرف کا فرق ہے۔ || پر $\overrightarrow{BZ}$ یو ټکی M داسې په نښه کړئ چې $\overline{BM}$ = 3 cm وي چېرته چې 3 cm د اړین مربع د قطر او ضلعې توپیر دی.
+qp v | Join $\overline{LM}$ and mark a point A on XY, such that $\overline{LA}$ = $\overline{LM}$. || $\overline{LM}$ کو ملائیں اور XY پر نقطہ A اس طرح نشان زد کریں کہ $\overline{LA}$ = $\overline{LM}$ ہو۔ || $\overline{LM}$ وصل کړئ او پر XY یو ټکی A داسې په نښه کړئ چې $\overline{LA}$ = $\overline{LM}$ وي.
+qp vi | Taking $\overline{AB}$ as one side, complete the square ABCD. Here, ABCD is the required square in which $\overline{AC}$ − $\overline{AB}$ = 3cm. || $\overline{AB}$ کو ایک طرف لے کر مربع ABCD مکمل کریں۔ یہاں ABCD مطلوبہ مربع ہے جس میں $\overline{AC}$ − $\overline{AB}$ = 3cm ہے۔ || $\overline{AB}$ د یوې ضلعې په توګه واخلئ او مربع ABCD بشپړ کړئ. دلته ABCD اړین مربع دی چې $\overline{AC}$ − $\overline{AB}$ = 3cm پکې دی.
+svg Square ABCD when the difference of diagonal and side is 3 cm || وتر اور طرف کا فرق 3 cm والا مربع ABCD || مربع ABCD چې د قطر او ضلعې توپیر یې 3 cm دی
+<svg viewBox="0 0 300 200" width="300" role="img" aria-label="Line XY with point B; perpendicular BZ up; L 3 cm left of B; M 3 cm up BZ; LM joined; A on XY with LA equal to LM; square ABCD above AB" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<defs><marker id="sdA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<line x1="10" y1="170" x2="290" y2="170" stroke="#0f172a" marker-start="url(#sdA)" marker-end="url(#sdA)"/><line x1="230" y1="170" x2="230" y2="14" stroke="#0f172a" marker-end="url(#sdA)"/>
+<rect x="90" y="52" width="140" height="118" fill="#fff" stroke="#0f172a" stroke-dasharray="4 3" opacity="0"/>
+<polygon points="90,170 230,170 230,52 90,52" fill="none" stroke="#0f172a" stroke-width="1.4"/>
+<line x1="198" y1="170" x2="230" y2="132" stroke="#0f172a"/><circle cx="198" cy="170" r="2.5"/><circle cx="230" cy="132" r="2.5"/>
+<text x="94" y="188">A</text><text x="80" y="188" font-weight="400">X</text><text x="190" y="188">L</text><text x="234" y="188">B</text><text x="276" y="186" font-weight="400">Y</text><text x="236" y="22" font-weight="400">Z</text>
+<text x="234" y="56">C</text><text x="76" y="50">D</text><text x="236" y="130">M</text><text x="238" y="150" font-weight="400">3cm</text><text x="204" y="186" font-weight="400">3cm</text><text x="206" y="162" font-weight="400">90°</text>
+</svg>
+endsvg
+endexample
+### Construction of Square when Sum of Diagonal and Side is Given || مربع کی تعمیر جب وتر اور طرف کا مجموعہ دیا گیا ہو || د مربع جوړول کله چې د قطر او ضلعې مجموعه ورکړل شي
+p The method is explained as follows, || طریقہ درج ذیل ہے، || طریقه داسې تشریح کېږي،
+example
+p Construct a square ABCD when the sum of its diagonal and side is 5cm. || ایک مربع ABCD بنائیں جب اس کے وتر اور طرف کا مجموعہ 5cm ہو۔ || یو مربع ABCD جوړ کړئ کله چې د هغې د قطر او ضلعې مجموعه 5cm وي.
+## Solution: || حل: || حل:
+p **Steps of construction:** || **تعمیر کے مراحل:** || **د جوړولو پړاوونه:**
+qp i | Draw a line XY. || ایک خط XY کھینچیں۔ || یوه کرښه XY رسم کړئ.
+qp ii | Mark a point P on XY. || XY پر ایک نقطہ P نشان زد کریں۔ || پر XY یو ټکی P په نښه کړئ.
+qp iii | Draw ∠XPZ = 90°. || ∠XPZ = 90° بنائیں۔ || ∠XPZ = 90° رسم کړئ.
+qp iv | As the sum of the diagonal and a side is 5cm, so cut off $\overline{PB}$ = 5cm on $\overline{PX}$ and cut off $\overline{PQ}$ = 5cm on PZ. || چونکہ وتر اور ایک طرف کا مجموعہ 5cm ہے، اس لیے $\overline{PX}$ پر $\overline{PB}$ = 5cm اور PZ پر $\overline{PQ}$ = 5cm کاٹیں۔ || څرنګه چې د قطر او یوې ضلعې مجموعه 5cm ده، نو پر $\overline{PX}$ د $\overline{PB}$ = 5cm او پر PZ د $\overline{PQ}$ = 5cm پرې کړئ.
+qp v | Mark a point A on $\overrightarrow{XY}$, such that PA = BQ. || $\overrightarrow{XY}$ پر نقطہ A اس طرح نشان زد کریں کہ PA = BQ ہو۔ || پر $\overrightarrow{XY}$ ټکی A داسې په نښه کړئ چې PA = BQ وي.
+qp vi | On side $\overrightarrow{AB}$, construct a square ABCD. Here, ABCD is the required square in which $\overrightarrow{AC}$ + $\overrightarrow{AB}$ = 5cm. || ضلع $\overrightarrow{AB}$ پر مربع ABCD بنائیں۔ یہاں ABCD مطلوبہ مربع ہے جس میں $\overrightarrow{AC}$ + $\overrightarrow{AB}$ = 5cm ہے۔ || پر ضلعه $\overrightarrow{AB}$ مربع ABCD جوړ کړئ. دلته ABCD اړین مربع دی چې $\overrightarrow{AC}$ + $\overrightarrow{AB}$ = 5cm پکې دی.
+svg Square ABCD when the sum of diagonal and side is 5 cm || وتر اور طرف کا مجموعہ 5 cm والا مربع ABCD || مربع ABCD چې د قطر او ضلعې مجموعه یې 5 cm ده
+<svg viewBox="0 0 320 230" width="320" role="img" aria-label="Line XY with point P; PZ drawn up at 90 degrees; PQ equal to 5 cm on PZ; B on PX with PB equal 5 cm; A on XY with PA equal BQ; square ABCD with R above D" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<defs><marker id="s2A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<line x1="10" y1="190" x2="310" y2="190" stroke="#0f172a" marker-start="url(#s2A)" marker-end="url(#s2A)"/><line x1="258" y1="190" x2="258" y2="12" stroke="#0f172a" marker-end="url(#s2A)"/><line x1="70" y1="190" x2="70" y2="20" stroke="#0f172a" marker-end="url(#s2A)"/>
+<line x1="150" y1="190" x2="258" y2="78" stroke="#0f172a"/><polygon points="70,190 150,190 150,110 70,110" fill="none" stroke="#0f172a" stroke-width="1.4"/>
+<text x="76" y="206">A</text><text x="154" y="206">B</text><text x="256" y="206">P</text><text x="296" y="206" font-weight="400">Y</text><text x="20" y="206" font-weight="400">X</text>
+<text x="56" y="108">D</text><text x="154" y="106">C</text><text x="60" y="22">R</text><text x="262" y="74">Q</text><text x="262" y="30" font-weight="400">Z</text><text x="264" y="130" font-weight="400">5cm</text><text x="228" y="184" font-weight="400">90°</text><text x="174" y="206" font-weight="400"> </text>
+</svg>
+endsvg
+endexample

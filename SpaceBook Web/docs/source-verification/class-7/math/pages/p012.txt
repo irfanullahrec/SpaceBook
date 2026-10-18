@@ -1,0 +1,47 @@
+@printed 8
+box info
+p The number 0, positive natural numbers and negative of natural numbers are known as integers. || عدد 0، مثبت قدرتی اعداد اور قدرتی اعداد کے منفی، صحیح اعداد کہلاتے ہیں۔ || عدد 0، مثبت طبیعي عددونه او د طبیعي عددونو منفي، تام عددونه بلل کېږي.
+endbox
+p Integers are categorized into three major types: || صحیح اعداد کو تین بڑی اقسام میں تقسیم کیا جاتا ہے: || تام عددونه په درې لویو ډولونو وېشل کېږي:
+- i. Positive integers || i. مثبت صحیح اعداد || i. مثبت تام عددونه
+- ii. Negative integers || ii. منفی صحیح اعداد || ii. منفي تام عددونه
+- iii. 0 (neutral integer) || iii. 0 (غیر جانبدار صحیح عدد) || iii. 0 (بې طرفه تام عدد)
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Separate the positive and negative numbers from the following: || درج ذیل میں سے مثبت اور منفی اعداد کو الگ کریں: || له لاندې څخه مثبت او منفي عددونه جلا کړئ:
+m $+1, +10, -7, +15, -5, -20, +17, +13, -3, -11$
+endbox
+@sec 1.3.1 | Absolute or Numerical Value of Integers || صحیح اعداد کی مطلق یا عددی قیمت || د تامو عددونو مطلق یا عددي ارزښت
+## 1.3.1 Absolute or Numerical Value of Integers || 1.3.1 صحیح اعداد کی مطلق یا عددی قیمت || 1.3.1 د تامو عددونو مطلق یا عددي ارزښت
+p Observe the number line below; || نیچے دیے گئے عددی خط کو دیکھیں؛ || لاندې د عددونو کرښه وګورئ؛
+nline -5..5
+p How far is −5 from 0? || −5، 0 سے کتنا دور ہے؟ || −5 له 0 څخه څومره لرې دی؟
+p How far is +5 from 0? || +5، 0 سے کتنا دور ہے؟ || +5 له 0 څخه څومره لرې دی؟
+p The distance of 5 and +5 from 0 is the same. The only difference is that they are on the opposite directions. || 0 سے 5 اور +5 کا فاصلہ ایک جیسا ہے۔ فرق صرف یہ ہے کہ وہ مخالف سمتوں میں ہیں۔ || له 0 څخه د 5 او +5 واټن یو شان دی. یوازینی توپیر دا دی چې دوی په مخالفو لورو کې دي.
+@issue Source prints "The distance of 5 and +5 from 0 is the same" (the first number should be −5); kept as printed.
+p So, the integers have two features; || لہٰذا صحیح اعداد کی دو خصوصیات ہیں؛ || نو تام عددونه دوه ځانګړنې لري؛
+- numeric value || عددی قیمت || عددي ارزښت
+- signs $(+, -)$ || علامات $(+, -)$ || نښې $(+, -)$
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The numerical values or absolute value of the same positive and negative numbers is equal. The numerical values of '−5' and '+5' is '5', '−3' and +3' is '3', '−50' and '+50' is '50'. || ایک جیسے مثبت اور منفی اعداد کی عددی قیمتیں یا مطلق قیمت برابر ہوتی ہے۔ '−5' اور '+5' کی عددی قیمت '5'، '−3' اور '+3' کی '3'، '−50' اور '+50' کی '50' ہے۔ || د یو شان مثبتو او منفي عددونو عددي ارزښتونه یا مطلق ارزښت سره برابر وي. د '−5' او '+5' عددي ارزښت '5'، د '−3' او '+3' عددي ارزښت '3'، او د '−50' او '+50' عددي ارزښت '50' دی.
+endbox
+p The value of integers is measured from '0'. The distance measured form '0' is also called the 'Numerical Value' or 'Absolute Value'. The appropriate sign with 'Numerical Value' or 'Absolute Value' will be the indication of direction only. So, −5 indicates 5 units towards the left of 0 while +5 indicates 5 units towards the right of 0. || صحیح اعداد کی قیمت '0' سے ناپی جاتی ہے۔ '0' سے ناپے گئے فاصلے کو 'عددی قیمت' یا 'مطلق قیمت' بھی کہتے ہیں۔ 'عددی قیمت' یا 'مطلق قیمت' کے ساتھ مناسب علامت صرف سمت کی نشاندہی کرے گی۔ لہٰذا −5، 0 کے بائیں طرف 5 اکائیاں ظاہر کرتا ہے جبکہ +5، 0 کے دائیں طرف 5 اکائیاں ظاہر کرتا ہے۔ || د تامو عددونو ارزښت له '0' څخه اندازه کېږي. له '0' څخه اندازه شوي واټن ته 'عددي ارزښت' یا 'مطلق ارزښت' هم ویل کېږي. د 'عددي ارزښت' یا 'مطلق ارزښت' سره مناسبه نښه یوازې د لوري نښه ده. نو −5 د 0 کیڼ لوري ته 5 واحدونه ښيي، په داسې حال کې چې +5 د 0 ښي لوري ته 5 واحدونه ښيي.
+@issue Source prints "The distance measured form '0'" (typo for "from"); kept as printed. Left margin of the lower half of the page is cut off in the scan; the missing first letters are certain from context.
+p If a person walks 2 kilometers towards North from a certain point and another person covers the same distance towards South, we shall say that both persons have covered the same distance. The opposition of directions does not make any difference in the numerical value of the distance covered. || اگر ایک شخص کسی خاص نقطے سے شمال کی طرف 2 کلومیٹر چلے اور دوسرا شخص اتنا ہی فاصلہ جنوب کی طرف طے کرے تو ہم کہیں گے کہ دونوں اشخاص نے ایک جیسا فاصلہ طے کیا ہے۔ سمتوں کے مخالف ہونے سے طے کیے گئے فاصلے کی عددی قیمت میں کوئی فرق نہیں پڑتا۔ || که یو کس له یوه ټاکلي ټکي څخه شمال لوري ته 2 کیلومتره ولاړ شي او بل کس هماغومره واټن جنوب لوري ته ووهي، نو وایو چې دواړو کسانو یو شان واټن وهلی دی. د لورو مخالفت د وهل شوي واټن په عددي ارزښت کې هېڅ توپیر نه راولي.
+svg Directions N, S, E and W as printed in the textbook || کتاب میں چھپی ہوئی سمتیں N، S، E اور W || هغه لوري N، S، E او W لکه څنګه چې په کتاب کې چاپ شوي
+<svg viewBox="0 0 160 150" width="150" role="img" aria-label="Direction cross: N at top, S at bottom, E on the left and W on the right, as printed" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#0f172a">
+<defs><marker id="m7dir" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker></defs>
+<line x1="80" y1="75" x2="80" y2="24" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m7dir)"/>
+<line x1="80" y1="75" x2="80" y2="126" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m7dir)"/>
+<line x1="80" y1="75" x2="32" y2="75" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m7dir)"/>
+<line x1="80" y1="75" x2="128" y2="75" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m7dir)"/>
+<text x="80" y="17" text-anchor="middle" font-weight="700">N</text>
+<text x="80" y="144" text-anchor="middle" font-weight="700">S</text>
+<text x="20" y="80" text-anchor="middle" font-weight="700">E</text>
+<text x="140" y="80" text-anchor="middle" font-weight="700">W</text>
+</svg>
+endsvg
+@issue The direction figure prints E on the left and W on the right (on a map E is normally to the right of N); reproduced as printed.
+box info
+p The absolute or numerical value of an integer is the distance of the integer from "0" on the number line. || کسی صحیح عدد کی مطلق یا عددی قیمت عددی خط پر "0" سے اس صحیح عدد کا فاصلہ ہے۔ || د یوه تام عدد مطلق یا عددي ارزښت د عددونو پر کرښه له "0" څخه د هغه تام عدد واټن دی.
+endbox
+@issue The last three lines of this page ("We represent the absolute value of any number x as |x|. Thus, |+5| = |−5| = 5. Therefore, the absolute or numeric value of +5 and −5 is 5.") are cut off at the left margin here and are printed again in full at the top of printed page 9; they are reproduced once, on page 9.

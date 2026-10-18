@@ -1,0 +1,54 @@
+@printed 92
+@issue The symbol table in "Note it down" lists ∈ belongs, ∉ does not belong, ⊂ proper subset, ⊆ improper subset, ⊄ not a subset, ↔ equivalent to, ⊃ superset; reproduced as printed.
+## 5.2.2 Power Set || 5.2.2 پاور سیٹ || 5.2.2 د توان سېټ
+p The set that consists of all the subsets of a set is called the power set of that set. For any set X; the power set of X is written as P (X). || وہ سیٹ جو کسی سیٹ کے تمام ذیلی سیٹوں پر مشتمل ہو، اس سیٹ کا پاور سیٹ کہلاتا ہے۔ کسی بھی سیٹ X کے لیے X کا پاور سیٹ P (X) لکھا جاتا ہے۔ || هغه سېټ چې د یوه سېټ ټول فرعي سېټونه ولري، د هغه سېټ د توان سېټ بلل کېږي. د هر سېټ X لپاره، د X د توان سېټ P (X) لیکل کېږي.
+example 1
+p Find the power set of the set Y = {0, 1} || سیٹ Y = {0, 1} کا پاور سیٹ معلوم کریں || د Y = {0, 1} سېټ د توان سېټ معلوم کړئ
+## Solution: || حل: || حل:
+m Y = {0, 1}
+m Power set of Y = P (Y) = {ϕ, {0}, {1}, {0, 1}}
+p Note: || نوٹ: || یادونه:
+m Number of elements of the set Y = 2
+m Number of possible subsets of Y = $2^2 = 4$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p If A is an infinite set then P(A) is also infinite || اگر A لامحدود سیٹ ہو تو P(A) بھی لامحدود ہوگا || که A بې پایه سېټ وي، نو P(A) هم بې پایه دی
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the power set of, || پاور سیٹ معلوم کریں، || د توان سېټ معلوم کړئ،
+m M = { {r}, {s}, {t}}
+endbox
+example 2
+p Find the power set of the set A = {a, e, i} || سیٹ A = {a, e, i} کا پاور سیٹ معلوم کریں || د A = {a, e, i} سېټ د توان سېټ معلوم کړئ
+## Solution: || حل: || حل:
+m P (A) = {ϕ, {a}, {e}, {i}, {a, e}, {a, i}, {e, i}, {a, e, i}}
+p Observe that the elements of power set are all subsets themselves. || غور کریں کہ پاور سیٹ کے ارکان خود تمام ذیلی سیٹ ہیں۔ || وګورئ چې د توان سېټ عناصر پخپله ټول فرعي سېټونه دي.
+endexample
+example 3
+p Find the power set of the set X = {a, b, c, d} || سیٹ X = {a, b, c, d} کا پاور سیٹ معلوم کریں || د X = {a, b, c, d} سېټ د توان سېټ معلوم کړئ
+## Solution: || حل: || حل:
+p The power set of X is; || X کا پاور سیٹ ہے؛ || د X د توان سېټ دی؛
+m P (X) = {ϕ, {a}, {b}, {c}, {d}, {a, b}, {b, c}, {b, d}, {a, c}, {a, d}, {c, d}, {a, b, c}, {a, b, d}, {a, c, d}, {b, c, d}, {a, b, c, d}}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+table
+th | Symbol | Meaning
+tr | ∈ | belongs
+tr | ∉ | does not belong
+tr | ⊂ | proper subset
+tr | ⊆ | improper subset
+tr | ⊄ | not a subset
+tr | ↔ | equivalent to
+tr | ⊃ | superset
+endtable
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p 1. Find the power set of the null set using the rule. Is it a null set? || 1. اصول استعمال کر کے خالی سیٹ کا پاور سیٹ معلوم کریں۔ کیا یہ خالی سیٹ ہے؟ || 1. د قاعدې په کارولو د تش سېټ د توان سېټ ومومئ. ایا دا تش سېټ دی؟
+p 2. Find the power set of; || 2. پاور سیٹ معلوم کریں؛ || 2. د توان سېټ معلوم کړئ؛
+qp i | {0, 1, 2}
+qp ii | {1, 3, 5}
+qp iii | J = $\{y \mid y \in P \wedge y < 9\}$
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the power set of set to students by solving examples on the board and tell them the formula to find the number of possible subsets of set. Ask them to write a set that have 3 to 4 elements and then find the power set of that set. || بورڈ پر مثالیں حل کر کے طلبہ کو سیٹ کا پاور سیٹ سمجھائیں اور انہیں سیٹ کے ممکنہ ذیلی سیٹوں کی تعداد معلوم کرنے کا فارمولا بتائیں۔ ان سے کہیں کہ 3 سے 4 ارکان والا ایک سیٹ لکھیں اور پھر اس سیٹ کا پاور سیٹ معلوم کریں۔ || پر تخته د بېلګو په حلولو زده کوونکو ته د سېټ د توان سېټ تشریح کړئ او د سېټ د ممکنه فرعي سېټونو د شمېر موندلو فورمول ورته ووایاست. ورته ووایاست چې د 3 څخه تر 4 عناصرو لرونکی سېټ ولیکي او بیا د هغه سېټ د توان سېټ ومومي.
+endbox

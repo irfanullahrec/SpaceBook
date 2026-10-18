@@ -1,0 +1,15 @@
+@printed 139
+@deco Cartoon girl with a speech bubble; pictures of a clock (obtuse angle), the Pakistan flag on a pole (right angle) and open scissors (acute angle); picture of a pizza slice.
+p Look at the angles formed in the following figures. They are of different measurements. || درج ذیل اشکال میں بننے والے زاویوں کو دیکھیں۔ ان کی پیمائشیں مختلف ہیں۔ || په لاندې شکلونو کې جوړې شوې زاویې وګورئ. اندازې یې بېلابېلې دي.
+p A clock shows an obtuse angle, a flag pole on the ground shows a right angle and open scissors show an acute angle. || گھڑی منفرجہ زاویہ، زمین پر جھنڈے کا ڈنڈا قائمہ زاویہ اور کھلی قینچی حادہ زاویہ دکھاتی ہے۔ || ساعت منفرجه زاویه، پر ځمکه د بیرغ لښته قایمه زاویه او خلاصه قیچي حاده زاویه ښيي.
+// The sentence above lists the three labelled pictures (obtuse angle, right angle, acute angle).
+geo 300 200 ; L 60 170 270 170 #0f172a end ; L 60 170 60 20 #0f172a end ; D 60 170 ; D 60 30 ; D 250 170 ; G 60 140 30 30 #fde047 ; P 75 160 90° ; P 45 30 A ; P 55 190 O ; P 250 190 B || Right angle AOB || قائمہ زاویہ AOB || قایمه زاویه AOB
+p An angle which measures 90° is called right angle. Angle AOB in the figure is a right angle. || وہ زاویہ جس کی پیمائش 90° ہو، قائمہ زاویہ کہلاتا ہے۔ شکل میں زاویہ AOB قائمہ زاویہ ہے۔ || هغه زاویه چې اندازه یې 90° وي، قایمه زاویه بلل کېږي. په شکل کې AOB زاویه قایمه زاویه ده.
+eq m\angle AOB = 90^\circ
+geo 280 170 ; L 40 140 250 140 #0f172a end ; L 40 140 170 15 #0f172a end ; D 40 140 ; D 155 30 ; D 225 140 ; A 40 140 45 0 44 45° ; P 155 18 E ; P 28 145 F ; P 225 162 G || Acute angle EFG = 45° || حادہ زاویہ EFG = 45° || حاده زاویه EFG = 45°
+p All the angles which measure less than 90° (right angle) are called acute angles. ∠EFG in the given figure is an acute angle. || وہ تمام زاویے جن کی پیمائش 90° (قائمہ زاویہ) سے کم ہو، حادہ زاویے کہلاتے ہیں۔ دی گئی شکل میں ∠EFG حادہ زاویہ ہے۔ || ټولې هغه زاویې چې اندازه یې له 90° (قایمه زاویه) څخه لږه وي، حاده زاویې بلل کېږي. په ورکړل شوي شکل کې ∠EFG حاده زاویه ده.
+eq m\angle EFG = 45^\circ
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Which of the following angles is acute? || درج ذیل میں سے کون سا زاویہ حادہ ہے؟ || له لاندې زاویو څخه کومه حاده ده؟
+frow clock 3:00 ;; clock 2:00 || Two clocks: one showing 3 o'clock and one showing 2 o'clock || دو گھڑیاں: ایک 3 بجے اور ایک 2 بجے دکھا رہی ہے || دوه ساعتونه: یو 3 بجې او بل 2 بجې ښيي
+endbox

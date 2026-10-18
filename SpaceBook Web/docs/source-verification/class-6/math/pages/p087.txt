@@ -1,0 +1,36 @@
+@printed 85
+@deco Picture of a pack of bread beside Question 8 (decorative).
+q 8 | The price of a pack of bread increased to Rs 50 from Rs 48. Find the ratio of the increase in price to the original price. || ڈبل روٹی کے ایک پیکٹ کی قیمت 48 روپے سے بڑھ کر 50 روپے ہو گئی۔ قیمت میں اضافے اور اصل قیمت کی نسبت معلوم کریں۔ || د ډبل روټۍ د یوه پاکټ بیه له 48 روپیو 50 روپیو ته لوړه شوه. د بیې د زیاتوالي او اصلي بیې نسبت معلوم کړئ.
+solution 1 : 24
+ss Increase in price = 50 − 48 = Rs 2. Original price = Rs 48. || قیمت میں اضافہ = 50 − 48 = 2 روپے۔ اصل قیمت = 48 روپے۔ || د بیې زیاتوالی = 50 − 48 = 2 روپۍ. اصلي بیه = 48 روپۍ.
+suse ratio 2 : 48
+endsolution
+q 9 | If Rs 340 is divided between Sara and Sonia according to the ratio 3 : 7, find the amount each gets. || اگر 340 روپے سارہ اور سونیا میں 3 : 7 کی نسبت سے تقسیم کیے جائیں تو ہر ایک کو کتنی رقم ملے گی؟ || که 340 روپۍ د سارا او سونیا ترمنځ د 3 : 7 په نسبت ووېشل شي، هر یو ته به څومره ورسېږي؟
+solution Sara Rs 102, Sonia Rs 238
+ss Add the parts of the ratio: 3 + 7 = 10 parts in total. || نسبت کے حصے جمع کریں: 3 + 7 = کل 10 حصے۔ || د نسبت برخې جمع کړئ: 3 + 7 = ټولې 10 برخې.
+ss One part = 340 ÷ 10 = Rs 34. || ایک حصہ = 340 ÷ 10 = 34 روپے۔ || یوه برخه = 340 ÷ 10 = 34 روپۍ.
+sm \text{Sara} = \frac{3}{10} \times 340 = 3 \times 34 = 102
+sm \text{Sonia} = \frac{7}{10} \times 340 = 7 \times 34 = 238
+ss Check: 102 + 238 = 340 ✓ and 102 : 238 = 3 : 7 ✓ || جانچ: 102 + 238 = 340 ✓ اور 102 : 238 = 3 : 7 ✓ || ازموینه: 102 + 238 = 340 ✓ او 102 : 238 = 3 : 7 ✓
+endsolution
+endexercise
+@sec 4.5 | Continued Ratio || مسلسل نسبت || پرله پسې نسبت
+# 4.5 Continued Ratio || 4.5 مسلسل نسبت || 4.5 پرله پسې نسبت
+p We have learnt about ratios when comparing two quantities of the same kind. In some situations we need to compare more than two quantities. In such cases where two ratios x : y and y : z are expressed in the form of x : y : z, the ratio is called a continued ratio. || ہم ایک ہی قسم کی دو مقداروں کا موازنہ کرتے وقت نسبت کے بارے میں سیکھ چکے ہیں۔ بعض صورتوں میں ہمیں دو سے زیادہ مقداروں کا موازنہ کرنا پڑتا ہے۔ ایسی صورتوں میں جب دو نسبتیں x : y اور y : z کو x : y : z کی صورت میں لکھا جائے تو اس نسبت کو مسلسل نسبت کہتے ہیں۔ || موږ د یو ډول دوو مقدارونو د پرتلې پر مهال د نسبت په اړه زده کړه کړې. په ځینو حالتونو کې باید له دوو ډېر مقدارونه پرتله کړو. په داسې حالتونو کې چې دوه نسبتونه x : y او y : z د x : y : z په بڼه ولیکل شي، دې نسبت ته پرله پسې نسبت وايي.
+p A **continued ratio** is a comparison of three or more quantities in a certain order. || **مسلسل نسبت** تین یا زیادہ مقداروں کا ایک خاص ترتیب میں موازنہ ہے۔ || **پرله پسې نسبت** په یو ټاکلي ترتیب د دریو یا ډېرو مقدارونو پرتله ده.
+p In x : y and y : z we can see that y is common in both ratios. So we write it one time. Thus, the continued ratio will be x : y : z. || x : y اور y : z میں ہم دیکھ سکتے ہیں کہ y دونوں نسبتوں میں مشترک ہے۔ اس لیے ہم اسے ایک بار لکھتے ہیں۔ لہٰذا مسلسل نسبت x : y : z ہوگی۔ || په x : y او y : z کې ګورو چې y په دواړو نسبتونو کې ګډ دی. نو یو ځل یې لیکو. نو پرله پسې نسبت به x : y : z وي.
+p If a number is repeated two times in a ratio, then the number is called the common term of the given ratio. || اگر کوئی عدد نسبت میں دو بار آئے تو اس عدد کو دی گئی نسبت کا مشترک رکن کہتے ہیں۔ || که یو عدد په نسبت کې دوه ځله راشي، هغه عدد ته د ورکړل شوي نسبت ګډ حد وايي.
+p We write the continued ratio as: || ہم مسلسل نسبت یوں لکھتے ہیں: || پرله پسې نسبت داسې لیکو:
+eq \begin{array}{ccccc} x & : & y & & \\ & & y & : & z \\ \hline x & : & y & : & z \end{array}
+example 1 | If a : b = 2 : 3 and b : c = 3 : 4, find the continued ratio between the quantities a, b and c. || اگر a : b = 2 : 3 اور b : c = 3 : 4 ہو تو مقداروں a، b اور c کے درمیان مسلسل نسبت معلوم کریں۔ || که a : b = 2 : 3 او b : c = 3 : 4 وي، د a، b او c مقدارونو ترمنځ پرله پسې نسبت معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p The given ratios are: || دی گئی نسبتیں یہ ہیں: || ورکړل شوي نسبتونه دا دي:
+m $a : b = 2 : 3$
+m $b : c = 3 : 4$
+p Here the common term is b, so write it in the middle of the continued ratio. || یہاں مشترک رکن b ہے، اس لیے اسے مسلسل نسبت کے درمیان لکھیں۔ || دلته ګډ حد b دی، نو د پرله پسې نسبت په منځ کې یې ولیکئ.
+eq \begin{array}{ccccc} a & & b & & c \\ 2 & : & 3 & & \\ & & 3 & : & 4 \\ \hline 2 & : & 3 & : & 4 \end{array}
+p So, the required continued ratio $a : b : c = 2 : 3 : 4$ || لہٰذا مطلوبہ مسلسل نسبت $a : b : c = 2 : 3 : 4$ || نو مطلوب پرله پسې نسبت $a : b : c = 2 : 3 : 4$
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Describe continued ratio with examples. Then ask the students to write some examples of continued ratio in their notebooks. || مثالوں کے ساتھ مسلسل نسبت کی وضاحت کریں۔ پھر طلبہ سے کہیں کہ اپنی کاپیوں میں مسلسل نسبت کی کچھ مثالیں لکھیں۔ || پرله پسې نسبت له بېلګو سره تشریح کړئ. بیا له زده کوونکو وغواړئ چې په خپلو کتابچو کې د پرله پسې نسبت ځینې بېلګې ولیکي.
+endbox

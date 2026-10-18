@@ -1,0 +1,38 @@
+@printed 113
+@status lesson
+@sec 9.7 | Open and Closed Circuits || کھلے اور بند سرکٹ || خلاص او تړلي سرکټونه
+# 9.7 OPEN AND CLOSED CIRCUITS || 9.7 کھلے اور بند سرکٹ || 9.7 خلاص او تړلي سرکټونه
+p The basic difference between closed and open circuits is; || بند اور کھلے سرکٹ میں بنیادی فرق یہ ہے: || د تړلي او خلاص سرکټ اساسي توپیر دا دی:
+- Closed circuit means, electrons can move through the complete circuit. || بند سرکٹ کا مطلب ہے الیکٹران پورے سرکٹ میں حرکت کر سکتے ہیں۔ || تړلی سرکټ دا دی چې الکترونونه په ټول سرکټ کې حرکت کولای شي.
+- Open circuit means, electrons cannot travel through a circuit because the path is broken. || کھلے سرکٹ کا مطلب ہے راستہ ٹوٹا ہونے کی وجہ سے الیکٹران سرکٹ میں نہیں چل سکتے۔ || خلاص سرکټ دا دی چې لاره پرې ده نو الکترونونه نشي تېرېدای.
+svg Figure 9.7 Closed and open circuit; Figure 9.8 Use of switch — with the switch open the bulb is off, with it closed the bulb glows || شکل 9.7 بند اور کھلا سرکٹ؛ شکل 9.8 سوئچ کا استعمال || شکل 9.7 تړلی او خلاص سرکټ؛ شکل 9.8 د سویچ کارونه
+<svg viewBox="0 0 440 130" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Open and closed circuits">
+<g stroke="#111" stroke-width="2" fill="none">
+<rect x="20" y="30" width="170" height="70"/>
+<path d="M240 30 h170 v70 h-170z M300 100 h-10"/>
+</g>
+<rect x="232" y="85" width="16" height="16" fill="#fff"/>
+<g stroke="#111" stroke-width="2"><path d="M330 100 l25 -12" /></g><rect x="326" y="94" width="34" height="12" fill="#fff"/><path d="M328 100 h4 M354 100 h6" stroke="#111" stroke-width="2"/><path d="M332 100 l22 -12" stroke="#111" stroke-width="2"/>
+<g><circle cx="105" cy="30" r="12" fill="#fde047" stroke="#111"/><rect x="95" y="92" width="20" height="16" fill="#374151"/><rect x="45" y="92" width="34" height="16" fill="#fff"/><path d="M45 100 h34" stroke="#111" stroke-width="2"/></g>
+<circle cx="325" cy="30" r="12" fill="#fff" stroke="#111"/><rect x="250" y="92" width="20" height="16" fill="#374151"/>
+<g fill="#111"><text x="60" y="65">Closed circuit</text><text x="40" y="125">switch closed — bulb ON</text><text x="290" y="65">Open circuit</text><text x="260" y="125">switch open — bulb OFF</text></g>
+</svg>
+endsvg
+example Activity 9.2 | The flow of charges in a closed circuit || بند سرکٹ میں چارجز کا بہاؤ || په تړلي سرکټ کې د چارجونو بهیر
+p Make your own electric circuit: || اپنا برقی سرکٹ بنائیں: || خپل برېښنايي سرکټ جوړ کړئ:
+p **Materials:** Light bulb; Cell; Switch; Connecting wires || **سامان:** بلب؛ سیل؛ سوئچ؛ جوڑنے والے تار || **توکي:** ګروپ؛ سېل؛ سویچ؛ نښلوونکي تارونه
+p **Procedure:** Use the items provided to make an electric circuit as shown in diagram. Following circuit diagram is showing open circuit. Draw a circuit diagram to show closed circuit by using electric symbols. || **طریقہ:** دیے گئے سامان سے خاکے کے مطابق برقی سرکٹ بنائیں۔ نیچے کا خاکہ کھلا سرکٹ دکھاتا ہے۔ برقی علامات سے بند سرکٹ کا خاکہ بنائیں۔ || **طریقه:** ورکړل شوو توکو سره د ډیاګرام په څېر سرکټ جوړ کړئ. لاندې ډیاګرام خلاص سرکټ ښيي. په برېښنايي نښو د تړلي سرکټ ډیاګرام رسم کړئ.
+svg Open circuit drawn with symbols: a cell, a bulb and an open switch in one loop || علامات سے کھلا سرکٹ: سیل، بلب اور کھلا سوئچ || په نښو خلاص سرکټ: سېل، ګروپ او خلاص سویچ
+<svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Open circuit diagram">
+<g stroke="#111" stroke-width="2" fill="none">
+<path d="M30 30 h100 M160 30 h110 v80 M270 140 v20 h-120 M135 160 h-105 v-130"/>
+<circle cx="145" cy="30" r="15"/><path d="M134 19 l22 22 M156 19 l-22 22"/>
+<path d="M270 110 l12 30"/><circle cx="270" cy="110" r="3" fill="#111"/><circle cx="270" cy="142" r="3" fill="#111"/>
+<path d="M150 148 v24 M137 153 v14"/>
+</g>
+</svg>
+endsvg
+q 9.2 | Draw a circuit diagram to show closed circuit by using electric symbols. || برقی علامات سے بند سرکٹ کا خاکہ بنائیں۔ || په برېښنايي نښو د تړلي سرکټ ډیاګرام رسم کړئ.
+sol Draw the same loop — cell, bulb and wires — but with the switch drawn closed (a straight line joining both contacts) so the path is complete and the bulb glows. ## Closed switch symbol: —o—o— joined. || سوئچ کو بند (جڑا ہوا) دکھائیں۔ || سویچ تړلی وښیئ.
+@deco Photograph-style drawing of a bulb, switch and cell joined by wires with arrows for the flow of charges.
+endexample

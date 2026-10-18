@@ -1,0 +1,43 @@
+@printed 187
+q 3 | Differentiate between parallel lines, perpendicular lines and transversals. || متوازی خطوط، عمودی خطوط اور قاطع میں فرق کریں۔ || د موازي کرښو، عمودي کرښو او قاطع ترمنځ توپیر وکړئ.
+solution Parallel lines never meet; perpendicular lines meet at 90°; a transversal crosses two or more lines at different points.
+stable
+tr | | Parallel lines | Perpendicular lines | Transversal
+tr | Do they meet? | Never | Yes, at one point | Crosses each given line
+tr | Angle | No angle between them | 90° | Any angle
+tr | Example | Railway lines | Clock hands at 3 o'clock | A road crossing two parallel roads
+endtable
+endsolution
+q 4 | Find unknown angles of the following figures. || درج ذیل اشکال کے نامعلوم زاویے معلوم کریں۔ || د لاندې شکلونو نامعلومې زاویې ومومئ.
+qp a | BD ∥ EG cut by AH at C and F; angles 32° and 148° at F || BD ∥ EG جنہیں AH، C اور F پر قطع کرتا ہے؛ F پر 32° اور 148° || BD ∥ EG چې AH یې په C او F کې قطع کوي؛ په F کې 32° او 148°
+solution x = 148°
+ss x at C (upper right) and 148° at F (upper right) are corresponding angles, so they are equal. || C پر x (اوپر دائیں) اور F پر 148° (اوپر دائیں) متناظر زاویے ہیں، اس لیے برابر ہیں۔ || په C کې x (پورته ښي) او په F کې 148° (پورته ښي) متناظرې زاویې دي، نو برابرې دي.
+ss Check: 32° + 148° = 180° (angles on a straight line). || جانچ: 32° + 148° = 180° (خطِ مستقیم پر زاویے)۔ || ازموینه: 32° + 148° = 180° (پر مستقیمه کرښه زاویې).
+endsolution
+qp b | EF ∥ GH cut by JI; 70° at the top crossing || EF ∥ GH جنہیں JI قطع کرتا ہے؛ اوپر کے قطع پر 70° || EF ∥ GH چې JI یې قطع کوي؛ په پورتني قطع کې 70°
+transv E F G H J I | 70° b c d | e f g h
+solution d = e = h = 70°, b = c = f = g = 110°
+ss d is vertically opposite 70°, so d = 70°. b and c each make a straight line with 70°, so b = c = 110°. || d، 70° کے راسی متقابل ہے، اس لیے d = 70°۔ b اور c ہر ایک 70° کے ساتھ خطِ مستقیم بناتے ہیں، اس لیے b = c = 110°۔ || d د 70° عمودي مقابل دی، نو d = 70°. b او c هر یو له 70° سره مستقیمه کرښه جوړوي، نو b = c = 110°.
+ss At the bottom crossing the same pattern repeats (corresponding angles): e = 70°, f = 110°, g = 110°, h = 70°. || نیچے کے قطع پر یہی ترتیب دہرائی جاتی ہے (متناظر زاویے): e = 70°، f = 110°، g = 110°، h = 70°۔ || په لاندیني قطع کې همدا ترتیب تکرارېږي (متناظرې زاویې): e = 70°، f = 110°، g = 110°، h = 70°.
+endsolution
+qp c | PQ ∥ RS cut by TU; 110° below PQ on the right || PQ ∥ RS جنہیں TU قطع کرتا ہے؛ PQ کے نیچے دائیں 110° || PQ ∥ RS چې TU یې قطع کوي؛ د PQ لاندې ښي خوا ته 110°
+transv P Q R S T U | - - - 110° | - - x y
+solution x = 70°, y = 110°
+ss y and 110° are corresponding angles (both lower right), so y = 110°. x and y lie on the straight line RS, so x = 180° − 110° = 70°. || y اور 110° متناظر زاویے ہیں (دونوں نیچے دائیں)، اس لیے y = 110°۔ x اور y خطِ مستقیم RS پر ہیں، اس لیے x = 180° − 110° = 70°۔ || y او 110° متناظرې زاویې دي (دواړه لاندې ښي)، نو y = 110°. x او y پر RS مستقیمه کرښه دي، نو x = 180° − 110° = 70°.
+endsolution
+q 5 | Reflect the images on grid paper. || گرڈ پیپر پر تصاویر کا عکس بنائیں۔ || په جال لرونکي کاغذ انځورونه منعکس کړئ.
+qp a | Diamond below a horizontal line of reflection || افقی انعکاس کے خط کے نیچے معین || د افقي انعکاس کرښې لاندې معین
+reflect 8 6 h 3 | 4,4 5,5 4,6 3,5 | #ffffff | none
+solution The image is the same diamond above the line.
+sfig reflect 8 6 h 3 | 4,4 5,5 4,6 3,5 | #ffffff | show
+endsolution
+qp b | Triangle left of a vertical line of reflection || عمودی انعکاس کے خط کے بائیں مثلث || د عمودي انعکاس کرښې کیڼ خوا ته مثلث
+reflect 8 6 v 4 | 3,2 3,5 1,3.5 | #ffffff | none
+solution The image is the same triangle pointing right, 1 square to the right of the line.
+sfig reflect 8 6 v 4 | 3,2 3,5 1,3.5 | #ffffff | show
+endsolution
+qp c | Plus shape right of a vertical line of reflection || عمودی انعکاس کے خط کے دائیں جمع کی شکل || د عمودي انعکاس کرښې ښي خوا ته د جمع شکل
+reflect 12 7 v 6 | 9,2 10,2 10,3 11,3 11,4 10,4 10,5 9,5 9,4 8,4 8,3 9,3 | #ffffff | none
+solution The image is the same plus shape on the left of the line, 2 squares from it.
+sfig reflect 12 7 v 6 | 9,2 10,2 10,3 11,3 11,4 10,4 10,5 9,5 9,4 8,4 8,3 9,3 | #ffffff | show
+endsolution

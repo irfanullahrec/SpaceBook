@@ -1,0 +1,20 @@
+@printed 21
+@issue The number line in Example 1 is labelled "−5, −5, −4, ..." in the source (the leftmost tick is misprinted as −5 instead of −6); recreated with −6.
+p It is not necessary that the distance between two marks is always 1. It can be altered based upon the set of numbers we are representing on it. For example, for greater numbers, we can set the scale such that the distance between each mark on the number line is 5 units. || یہ ضروری نہیں کہ دو نشانوں کے درمیان فاصلہ ہمیشہ 1 ہو۔ اسے ان اعداد کے سیٹ کے مطابق بدلا جا سکتا ہے جنہیں ہم اس پر ظاہر کر رہے ہیں۔ مثال کے طور پر بڑے اعداد کے لیے ہم پیمانہ ایسا رکھ سکتے ہیں کہ عددی خط پر ہر نشان کے درمیان فاصلہ 5 اکائیاں ہو۔ || اړینه نه ده چې د دوو نښو تر منځ واټن تل 1 وي. دا د هغو عددونو د سېټ له مخې بدلېدای شي چې پر هغې یې ښیو. د بېلګې په توګه د لویو عددونو لپاره کولی شو پیمانه داسې وټاکو چې د عددونو پر کرښه د هرې نښې تر منځ واټن 5 واحده وي.
+rline -20..20 | step=5 | minor=1
+p Sometimes when representing rational numbers and irrational numbers on number line, we need to first converted them to equivalent decimal numbers before plotting them on number line. As there can be non-terminating decimals, so many times it is not possible to mark a number on the exact point. In such cases, we use estimated value of numbers to plot on the number line. || کبھی کبھی ناطق اور غیر ناطق اعداد کو عددی خط پر ظاہر کرتے وقت ہمیں انہیں عددی خط پر لگانے سے پہلے مساوی اعشاری اعداد میں تبدیل کرنا پڑتا ہے۔ چونکہ غیر مختتم اعشاریہ بھی ہو سکتے ہیں، اس لیے کئی بار کسی عدد کو بالکل درست نقطے پر نشان زد کرنا ممکن نہیں ہوتا۔ ایسی صورتوں میں ہم عددی خط پر لگانے کے لیے اعداد کی تخمینی قیمت استعمال کرتے ہیں۔ || کله ناکله د ناطقو او غیر ناطقو عددونو د عددونو پر کرښه ښودلو پر مهال، باید مخکې له دې چې پر کرښه یې ولګوو، معادلو اعشاري عددونو ته یې واړوو. څرنګه چې نه ختمېدونکي اعشاري هم کېدای شي، نو ډېر ځله ممکنه نه ده چې عدد په دقیق ټکي په نښه کړو. په داسې حالتونو کې د عددونو اټکلي ارزښت د کرښې پر مخ د لګولو لپاره کاروو.
+example 1
+p Let's represent $-4, \sqrt{5}, \frac{3}{4}, \sqrt{11}$ on number line. || آئیے $-4, \sqrt{5}, \frac{3}{4}, \sqrt{11}$ کو عددی خط پر ظاہر کریں۔ || راځئ $-4, \sqrt{5}, \frac{3}{4}, \sqrt{11}$ د عددونو پر کرښه وښیو.
+## Solution: || حل: || حل:
+p First, we will convert $\sqrt{5}, \frac{3}{4}$ and $\sqrt{11}$ to decimal equivalents. || پہلے ہم $\sqrt{5}, \frac{3}{4}$ اور $\sqrt{11}$ کو مساوی اعشاریہ میں تبدیل کریں گے۔ || لومړی به $\sqrt{5}, \frac{3}{4}$ او $\sqrt{11}$ معادلو اعشاري عددونو ته واړوو.
+m $\sqrt{5} = 2.2360 \approx 2.24$
+m $\frac{3}{4} = 0.75$
+m $\sqrt{11} = 3.3166 \approx 3.32$
+rline -6..6 | plus | pts=-4:−4;0.75:3/4;2.24:√5;3.32:√11
+endexample
+example 2
+p Let's represent $-\frac{3}{2}$, 0.2 and $\sqrt{2}$ on a number line. || آئیے $-\frac{3}{2}$، 0.2 اور $\sqrt{2}$ کو عددی خط پر ظاہر کریں۔ || راځئ $-\frac{3}{2}$، 0.2 او $\sqrt{2}$ د عددونو پر کرښه وښیو.
+## Solution: || حل: || حل:
+p Here || یہاں || دلته
+m $-\frac{3}{2} = -1.5$
+m $\sqrt{2} = 1.4142 \approx 1.41$

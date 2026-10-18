@@ -1,0 +1,39 @@
+@printed 166
+@deco The left edge of the scan cuts the part numbers (i)–(v).
+@issue Q6: the sides 15 m, 25 m and 40 m cannot form a real triangle (15 + 25 = 40, so the three points would lie on one straight line). The question is kept as printed and answered by adding the sides, with a note.
+qp iii | A triangle has ______ vertices. (a) 3 (b) 2 (c) 5 (d) 4 || مثلث کے ______ راس ہوتے ہیں۔ (a) 3 (b) 2 (c) 5 (d) 4 || مثلث ______ رأسونه لري. (a) 3 (b) 2 (c) 5 (d) 4
+sol (a) 3 ## A triangle has 3 corners. || مثلث کے 3 کونے ہوتے ہیں۔ || مثلث 3 کونجونه لري.
+qp iv | In the given figure A——B (dots at both ends) is ______ (a) Point (b) line (c) line segment (d) Ray || دی گئی شکل A——B (دونوں سروں پر نقطے) ______ ہے || ورکړل شوی شکل A——B (په دواړو سرونو ټکي) ______ دی
+fig geo 240 40 ; S 20 15 220 15 #1d4ed8 ; D 20 15 3 ; D 220 15 3 ; P 20 36 A ; P 220 36 B
+sol (c) line segment ## Two end points. || دو آخری نقطے۔ || دوه پای ټکي.
+qp v | A↔B (arrows at both ends) is ______ (a) line (b) Ray (c) line segment (d) Point || A↔B (دونوں سروں پر تیر) ______ ہے || A↔B (په دواړو سرونو غشي) ______ دی
+fig geo 240 40 ; L 10 15 230 15 #1d4ed8 both ; D 40 15 3 ; D 200 15 3 ; P 40 36 A ; P 200 36 B
+sol (a) line ## Arrowheads at both ends. || دونوں سروں پر تیر۔ || په دواړو سرونو غشي.
+q 2 | Fill in the blanks. || خالی جگہیں پُر کریں۔ || تشې ځایونه ډک کړئ.
+qp i | Line of symmetry divides any shape into ______ equal parts. || خطِ تشاکل کسی بھی شکل کو ______ برابر حصوں میں تقسیم کرتا ہے۔ || د تناظر کرښه هر شکل په ______ برابرو برخو وېشي.
+sol two ## The two halves match exactly. || دونوں آدھے بالکل ملتے ہیں۔ || دواړه نیمې سم سره برابرې دي.
+qp ii | Line segment has ______ end points || قطعۂ خط کے ______ آخری نقطے ہوتے ہیں || د کرښې ټوټه ______ پای ټکي لري
+sol two ## A segment ends at both sides. || قطعہ دونوں طرف ختم ہوتا ہے۔ || ټوټه په دواړو خواوو پای ته رسېږي.
+qp iii | A square shape has ______ sides and ______ vertices || مربع شکل کے ______ اضلاع اور ______ راس ہوتے ہیں || مربع شکل ______ اړخونه او ______ رأسونه لري
+sol 4 sides and 4 vertices ## A square is a quadrilateral. || مربع ایک چوکور ہے۔ || مربع څلور اړخیز دی.
+qp iv | The sum of all sides of any closed shape is equal to ______ || کسی بند شکل کے تمام اضلاع کا مجموعہ ______ کے برابر ہے || د هر تړلي شکل د ټولو اړخونو مجموعه له ______ سره برابره ده
+sol perimeter ## Perimeter = sum of all sides. || احاطہ = تمام اضلاع کا مجموعہ۔ || محیط = د ټولو اړخونو مجموعه.
+qp v | The perimeter of rectangle = ______ || مستطیل کا احاطہ = ______ || د مستطیل محیط = ______
+sol 2 × length + 2 × width (sum of all four sides) ## As on p.152. || جیسا کہ صفحہ 152 پر۔ || لکه په 152 مخ کې.
+q 3 | Draw the line segments according to given measurement || دی گئی پیمائش کے مطابق قطعاتِ خط کھینچیں || د ورکړل شوې اندازې سره سم ټوټې رسم کړئ
+qp i | $\overline{RS}$ = 7cm
+fig ruler 8 | seg=R:0,S:7
+sol Put R at 0 and S at 7 cm, then join R and S. ## Use a ruler. || پیمانہ استعمال کریں۔ || خط کش وکاروئ.
+qp ii | $\overline{XY}$ = 3cm
+fig ruler 8 | seg=X:0,Y:3
+sol Put X at 0 and Y at 3 cm, then join X and Y. ## Use a ruler. || پیمانہ استعمال کریں۔ || خط کش وکاروئ.
+qp iii | $\overline{AB}$ = 5cm
+fig ruler 8 | seg=A:0,B:5
+sol Put A at 0 and B at 5 cm, then join A and B. ## Use a ruler. || پیمانہ استعمال کریں۔ || خط کش وکاروئ.
+q 4 | Ahmed walks a square shaped ground with length 249 meters. How much distance he covers in one round? || احمد 249 میٹر لمبائی والے مربع میدان کے گرد چلتا ہے۔ وہ ایک چکر میں کتنا فاصلہ طے کرتا ہے؟ || احمد د 249 متره اوږدوالي مربع میدان شاوخوا ګرځي. په یوه پړاو کې څومره واټن وهي؟
+qsol colop 249 x 4
+q 5 | The classroom door is 210 centimetres long and 120 centimetres wide. Find its perimeter. || جماعت کا دروازہ 210 سینٹی میٹر لمبا اور 120 سینٹی میٹر چوڑا ہے۔ اس کا احاطہ معلوم کریں۔ || د ټولګي دروازه 210 سانتي متره اوږده او 120 سانتي متره پلنه ده. محیط یې معلوم کړئ.
+sol 660 cm ## 210 + 210 + 120 + 120 = 660 cm || 210 + 210 + 120 + 120 = 660 cm || 210 + 210 + 120 + 120 = 660 cm
+q 6 | Find the perimeter of a trangular field with lenghts of 15 m, 25 m and 40 m. || 15 m، 25 m اور 40 m لمبائی والے مثلث نما کھیت کا احاطہ معلوم کریں۔ || د 15 m، 25 m او 40 m اوږدوالو مثلث ډوله پټي محیط معلوم کړئ.
+sol 80 m ## 15 + 25 + 40 = 80 m. SpaceBook note: such a triangle cannot really be drawn, because 15 + 25 equals 40. || 15 + 25 + 40 = 80 m۔ SpaceBook نوٹ: ایسی مثلث بنائی نہیں جا سکتی کیونکہ 15 + 25 = 40۔ || 15 + 25 + 40 = 80 m. SpaceBook یادونه: داسې مثلث نه شي رسمېدای ځکه 15 + 25 = 40.
+endexercise

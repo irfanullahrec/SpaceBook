@@ -1,0 +1,49 @@
+@printed 212
+qp i | What is the difference between the number of women during week 1 and week 3? || ہفتہ 1 اور ہفتہ 3 میں خواتین کی تعداد کا فرق کیا ہے؟ || په 1 او 3 اونیو کې د ښځو د شمېر توپیر څومره دی؟
+m $40 - 30 = 10$
+qp j | What is the sum of the number of men during week 2 and week 3? || ہفتہ 2 اور ہفتہ 3 میں مردوں کی تعداد کا مجموعہ کیا ہے؟ || په 2 او 3 اونیو کې د نارینه وو د شمېر مجموعه څومره ده؟
+m $40 + 15 = 55$
+endexample
+exercise 11.1
+q 1 | The following data shows the number of new books added to a library during 5 months. Draw a vertical multiple bar graph for this data using appropriate scale. || درج ذیل ڈیٹا 5 مہینوں میں لائبریری میں شامل نئی کتابوں کی تعداد دکھاتا ہے۔ مناسب پیمانہ استعمال کر کے اس ڈیٹا کا عمودی متعدد بار گراف بنائیں۔ || لاندې معلومات په 5 میاشتو کې کتابتون ته د ورزیات شوو نویو کتابونو شمېر ښيي. د مناسبې پیمانې په کارولو د دې معلوماتو عمودي ګڼ میله ییز ګراف رسم کړئ.
+table
+th | Language || زبان || ژبه | July | August | September | October | November
+tr | English | 20 | 60 | 80 | 30 | 20
+tr | Urdu | 10 | 75 | 55 | 25 | 45
+endtable
+solution Vertical multiple bar graph (scale: 1 mark = 10 books)
+ss Months go along the x-axis and number of books along the y-axis. The largest value is 80, so a scale of 1 mark = 10 books up to 80 fits. || مہینے x-محور پر اور کتابوں کی تعداد y-محور پر۔ سب سے بڑی قیمت 80 ہے، اس لیے 1 نشان = 10 کتابیں، 80 تک مناسب ہے۔ || میاشتې پر x-محور او د کتابونو شمېر پر y-محور. تر ټولو لوی ارزښت 80 دی، نو 1 نښه = 10 کتابونه تر 80 پورې مناسب دی.
+sfig chart v | max 80 10 | title New books added to the library | x Months | y No. of books | cats July,August,September,October,November | English=20,60,80,30,20 | Urdu=10,75,55,25,45
+endsolution
+q 2 | The following data shows the number of girls and boys in different groups made for a mathematics competition. Draw a horizontal multiple bar graph for this data using appropriate scale. || درج ذیل ڈیٹا ریاضی کے مقابلے کے لیے بنائے گئے مختلف گروپوں میں لڑکیوں اور لڑکوں کی تعداد دکھاتا ہے۔ مناسب پیمانہ استعمال کر کے اس ڈیٹا کا افقی متعدد بار گراف بنائیں۔ || لاندې معلومات د ریاضي سیالۍ لپاره جوړو شوو بېلابېلو ډلو کې د نجونو او هلکانو شمېر ښيي. د مناسبې پیمانې په کارولو د دې معلوماتو افقي ګڼ میله ییز ګراف رسم کړئ.
+table
+th | Students || طلبہ || زده کوونکي | Group A | Group B | Group C | Group D | Group E
+tr | Boys | 20 | 60 | 80 | 30 | 20
+tr | Girls | 10 | 75 | 55 | 25 | 45
+endtable
+solution Horizontal multiple bar graph (scale: 1 mark = 10 students)
+ss Groups go along the y-axis and number of students along the x-axis. || گروپ y-محور پر اور طلبہ کی تعداد x-محور پر۔ || ډلې پر y-محور او د زده کوونکو شمېر پر x-محور.
+sfig chart h | max 80 10 | title Students in competition groups | x No. of students | y Groups | cats Group A,Group B,Group C,Group D,Group E | Boys=20,60,80,30,20 | Girls=10,75,55,25,45
+endsolution
+q 3 | The following data shows the average daily temperature of three cities. Draw a vertical multiple bar graph for this data using appropriate scale. || درج ذیل ڈیٹا تین شہروں کا اوسط روزانہ درجۂ حرارت دکھاتا ہے۔ مناسب پیمانہ استعمال کر کے اس ڈیٹا کا عمودی متعدد بار گراف بنائیں۔ || لاندې معلومات د دریو ښارونو منځنۍ ورځنۍ تودوخه ښيي. د مناسبې پیمانې په کارولو د دې معلوماتو عمودي ګڼ میله ییز ګراف رسم کړئ.
+table
+th | Cities || شہر || ښارونه | Monday | Tuesday | Wednesday | Thursday | Friday
+tr | City A | 12° | 11° | 14° | 16° | 13°
+tr | City B | 7° | 8° | 10° | 12° | 10°
+tr | City C | 22° | 20° | 22° | 18° | 24°
+endtable
+solution Vertical multiple bar graph (scale: 1 mark = 2°)
+ss Days go along the x-axis and temperature along the y-axis. The highest temperature is 24°, so 1 mark = 2° up to 24° (or 1 mark = 5° up to 25°) works. || دن x-محور پر اور درجۂ حرارت y-محور پر۔ سب سے زیادہ درجۂ حرارت 24° ہے، اس لیے 1 نشان = 2°، 24° تک (یا 1 نشان = 5°، 25° تک) مناسب ہے۔ || ورځې پر x-محور او تودوخه پر y-محور. تر ټولو لوړه تودوخه 24° ده، نو 1 نښه = 2° تر 24° پورې (یا 1 نښه = 5° تر 25° پورې) مناسبه ده.
+sfig chart v | max 24 2 | title Average daily temperature | x Days | y Temperature (°) | cats Mon,Tue,Wed,Thu,Fri | City A=12,11,14,16,13 | City B=7,8,10,12,10 | City C=22,20,22,18,24
+endsolution
+q 4 | The following data shows the amount collected by Marwa, Hadia, Mohid, Fatima and Hassan during three weeks to donate to the construction of a local Masjid. Draw a Horizontal multiple bar graph for this data using appropriate scale. || درج ذیل ڈیٹا مقامی مسجد کی تعمیر کے لیے عطیہ دینے کو تین ہفتوں میں مروہ، ہادیہ، موحد، فاطمہ اور حسن کی جمع کی گئی رقم دکھاتا ہے۔ مناسب پیمانہ استعمال کر کے اس ڈیٹا کا افقی متعدد بار گراف بنائیں۔ || لاندې معلومات د سیمه ییز جومات د جوړولو لپاره د مروې، هادیې، موحد، فاطمې او حسن له خوا په دریو اونیو کې راټولې شوې پیسې ښيي. د مناسبې پیمانې په کارولو د دې معلوماتو افقي ګڼ میله ییز ګراف رسم کړئ.
+table
+th | Weeks || ہفتے || اونۍ | Marwa | Hadia | Mohid | Fatima | Hassan
+tr | Week 1 | Rs 3200 | Rs 1000 | Rs 2000 | Rs 1400 | Rs 1000
+tr | Week 2 | Rs 1200 | Rs 1500 | Rs 3000 | Rs 2200 | Rs 4000
+tr | Week 3 | Rs 4000 | Rs 1600 | Rs 900 | Rs 2000 | Rs 1200
+endtable
+solution Horizontal multiple bar graph (scale: 1 mark = Rs 500)
+ss Names go along the y-axis and amount along the x-axis; each week has its own colour. The largest amount is Rs 4000, so 1 mark = Rs 500 up to Rs 4000 fits. || نام y-محور پر اور رقم x-محور پر؛ ہر ہفتے کا اپنا رنگ ہے۔ سب سے بڑی رقم 4000 روپے ہے، اس لیے 1 نشان = 500 روپے، 4000 تک مناسب ہے۔ || نومونه پر y-محور او پیسې پر x-محور؛ هره اونۍ خپل رنګ لري. تر ټولو لویه اندازه 4000 روپۍ ده، نو 1 نښه = 500 روپۍ تر 4000 پورې مناسبه ده.
+sfig chart h | max 4000 500 | title Amount collected for the Masjid | x Amount (Rs) | y Names | cats Marwa,Hadia,Mohid,Fatima,Hassan | Week 1=3200,1000,2000,1400,1000 | Week 2=1200,1500,3000,2200,4000 | Week 3=4000,1600,900,2000,1200
+endsolution

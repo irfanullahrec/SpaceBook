@@ -1,0 +1,36 @@
+@printed 181
+@issue Example 2's "division method" divides the equations side by side, which is not a valid operation in general; the answer (9/16, −1/8) does not satisfy x − 3y = 6. The step "Dividing by 2" from (−9/2)y + 2y = 2 to −9y + y = 1 is also printed as is. Kept exactly as printed.
+example 2
+p Let us solve the simultaneous linear equation by division method. || آئیے ہم وقت خطی مساوات کو تقسیم کے طریقے سے حل کریں۔ || راځئ همزمانه خطي معادله د وېش په طریقه حل کړو.
+m $x + 2y = 2; \quad x - 3y = 6$
+p Divide first equation by second equation. || پہلی مساوات کو دوسری مساوات سے تقسیم کریں۔ || لومړۍ معادله پر دوهمې ووېشئ.
+m $\frac{x + 2y}{x - 3y} = \frac{2}{6}$
+p By cross multiplying we get: || کراس ضرب سے ہمیں ملتا ہے: || د چلیپا ضرب په مرسته لاسته راځي:
+m $6(x + 2y) = 2(x - 3y)$
+m $6x + 12y = 2x - 6y$
+m $6x - 2x = -12y - 6y$
+m $4x = -18y$
+m $x = \frac{-9}{2}y$
+p Put the value of $x$ in first equation we have: || پہلی مساوات میں $x$ کی قیمت رکھنے سے ہمارے پاس ہے: || په لومړۍ معادله کې د $x$ ارزښت په ایښودلو لرو:
+m $\frac{-9}{2}y + 2y = 2$
+p Dividing by 2 we have: || 2 سے تقسیم کرنے پر ہمارے پاس ہے: || پر 2 په وېشلو لرو:
+m $-9y + y = 1$
+m $-8y = 1$
+m $y = \frac{-1}{8}$
+p Put the value of y in the value of $x$ we have: || y کی قیمت $x$ کی قیمت میں رکھنے سے ہمارے پاس ہے: || د y ارزښت د $x$ په ارزښت کې په ایښودلو لرو:
+m $x = \frac{-9}{2} \times \frac{-1}{8} = \frac{9}{16}$
+endexample
+exercise 8.5
+q 1 | Solve the following simultaneous linear equation using division method. || تقسیم کے طریقے سے درج ذیل ہم وقت خطی مساوات حل کریں۔ || د وېش په طریقه لاندې همزمانه خطي معادله حل کړئ.
+qp a | $5x + 10y = 15$; $3x + 12y = 9$
+qp b | $4x + 8y = 12$; $7x + 14y = 14$
+qp c | $9x + 9y = 18$; $2x + 8y = 4$
+qp d | $3x + 12y = 3$; $6x + 12y = 24$
+qp e | $11x + 33y = 44$; $5x + 15y = 30$
+qp f | $x + y = 2$; $4x + 2y = 4$
+q 2 | Solve the following simultaneous linear equation using factorization method. || تجزی کے طریقے سے درج ذیل ہم وقت خطی مساوات حل کریں۔ || د تجزیې په طریقه لاندې همزمانه خطي معادله حل کړئ.
+qp a | $x + y = 4$; $x - y = 8$
+qp b | $3x + 5y = 2$; $4x - 3y = 5$
+qp c | $x + 4y = 1$; $3x - 7y = 5$
+qp d | $6x + 7y = 10$; $2x - 5y = 7$
+endexercise

@@ -1,0 +1,52 @@
+@printed 111
+@issue Examples 1 and 2 are printed side by side; they are given one after the other.
+example 1
+p Find the general term of the following arithmetic sequence, −2, 3, 8, 13, 18, ... Also find the 9th and the 19th terms. || درج ذیل حسابی ترتیب کا عمومی رکن معلوم کریں، −2، 3، 8، 13، 18، ... نواں اور انیسواں رکن بھی معلوم کریں۔ || د لاندې حسابي لړۍ عمومي حد معلوم کړئ، −2، 3، 8، 13، 18، ... نهم او نولسم حد هم معلوم کړئ.
+## Solution: || حل: || حل:
+p In the sequence, || ترتیب میں، || په لړۍ کې،
+m $-2, 3, 8, 13, 18, ...$
+m $a_1 = -2$
+m $d = 5 \quad (\because 3 - (-2) = 8 - 3 = 13 - 8 = 5)$
+p Therefore, || لہٰذا، || نو،
+m $a_n = a_1 + (n - 1)d$
+m $= -2 + (n - 1)(5)$
+m $= -2 + 5n - 5$
+m $a_n = 5n - 7$
+m Hence, $a_9 = 5(9) - 7$
+m $= 45 - 7$
+m $a_9 = 38$
+p and || اور || او
+m $a_{19} = 5(19) - 7$
+m $= 95 - 7$
+m $a_{19} = 88$
+endexample
+example 2
+p For the sequence given below, 3, −1, −5, −9, −13, ... || نیچے دی گئی ترتیب کے لیے، 3، −1، −5، −9، −13، ... || لاندې ورکړل شوې لړۍ لپاره، 3، −1، −5، −9، −13، ...
+qp i | Find the general term. || عمومی رکن معلوم کریں۔ || عمومي حد معلوم کړئ.
+qp ii | Find the 16th, 20th and 27th terms. || سولہواں، بیسواں اور ستائیسواں رکن معلوم کریں۔ || شپاړسم، شلم او اوه ویشتم حد معلوم کړئ.
+## Solution: || حل: || حل:
+m i. Here $a_1 = 3$ and $d = -4$
+p Therefore, || لہٰذا، || نو،
+m $a_n = a_1 + (n - 1)d$
+m $= 3 + (n - 1)(-4)$
+m $= 3 - 4n + 4$
+m $\Rightarrow a_n = 7 - 4n$
+m ii. $a_{16} = 7 - 4(16)$
+m $= 7 - 64$
+m $\Rightarrow a_{16} = -57$
+m $a_{20} = 7 - 4(20)$
+m $\Rightarrow a_{20} = 7 - 80$
+m $a_{20} = -73$
+m $a_{27} = 7 - 4(27)$
+m $a_{27} = 7 - 108$
+m $\Rightarrow a_{27} = -101$
+endexample
+example 3
+p The given table shows the costs paid by a customer for renting a car for some period of time. If the sequence continues, how much would it cost the customer if he rent the car for 12 months? || دیا گیا جدول ایک گاہک کی طرف سے کچھ عرصے کے لیے کار کرائے پر لینے کی ادا کی گئی لاگت ظاہر کرتا ہے۔ اگر یہ ترتیب جاری رہے تو 12 ماہ کے لیے کار کرائے پر لینے پر گاہک کو کتنی لاگت آئے گی؟ || ورکړل شوی جدول هغه لګښت ښيي چې یوه پېرودونکي د یوې مودې لپاره د موټر په کرایه نیولو ورکړی. که لړۍ دوام ومومي، پېرودونکي ته به د 12 میاشتو لپاره د موټر په کرایه نیولو څومره لګښت راشي؟
+table
+th | Month | Charges (in Rs)
+tr | 1 | 7500
+tr | 2 | 9000
+tr | 3 | 10500
+tr | 4 | 12000
+endtable

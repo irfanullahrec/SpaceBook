@@ -1,0 +1,25 @@
+@printed 51
+@deco Pictures: the upside-down red sprite captioned "Collision of two sprites"; a Scratch script captioned "Plays sound repeatedly"; four backdrop thumbnails (library shelves, a shop shelf, a blue sky with green hills, a red room) captioned "Selected Backdrops", under the label "Load multiple backdrops".
+p Let's add another sprite 'Cat' and place it in the path of 'Pico'. Whenever 'Pico' touches the other sprite while moving it means that the two sprites collide. For this purpose, we introduce an 'If-Then-Else' condition. If 'Pico' touches the 'Cat', it gets inverted (just like it bounced from the edge), else it remains in upright position and keeps moving forward. || آئیے ایک اور اسپرائٹ 'Cat' شامل کریں اور اسے 'Pico' کے راستے میں رکھیں۔ جب بھی 'Pico' حرکت کے دوران دوسرے اسپرائٹ کو چھوتا ہے اس کا مطلب ہے کہ دونوں اسپرائٹس ٹکرا گئے۔ اس مقصد کے لیے ہم 'If-Then-Else' شرط متعارف کراتے ہیں۔ اگر 'Pico' 'Cat' کو چھوتا ہے تو وہ الٹ جاتا ہے (جیسے کنارے سے اچھلتے وقت)، ورنہ وہ سیدھی حالت میں رہتا ہے اور آگے بڑھتا رہتا ہے۔ || راځئ بل سپرایټ 'Cat' اضافه کړو او د 'Pico' په لار کې یې کېږدو. هر کله چې 'Pico' په حرکت کې بل سپرایټ ته ورسېږي نو دا معنا لري چې دوه سپرایټونه سره ټکر کوي. د دې لپاره موږ 'If-Then-Else' شرط معرفي کوو. که 'Pico' 'Cat' ته ورسېږي نو اوړي (لکه څنګه چې له غاړې څخه شړل شوی)، که نه نو په ولاړه حالت کې پاتې کېږي او مخکې ځي.
+box code | Scratch script — Collision of two sprites || سکریچ اسکرپٹ — دو اسپرائٹس کا ٹکراؤ || سکریچ سکریپټ — د دوو سپرایټونو ټکر
+m when (green flag) clicked
+m if <touching [Cat] ?> then
+m     point in direction (-90)
+m else
+m     point in direction (90)
+endbox
+### 4.2.2 Loop in Scratch || 4.2.2 اسکریچ میں لوپ || 4.2.2 په Scratch کې لوپ
+p A loop is a set of instructions which needs to be iterated repeatedly, to acquire a particular result. In given example when a simple loop is executed it plays a sound file. Delay of 1 second with wait command is incorporated such that output can be monitored and tracked. || لوپ ہدایات کا ایک مجموعہ ہے جسے کسی خاص نتیجے کے حصول کے لیے بار بار دہرانا ہوتا ہے۔ دی گئی مثال میں جب ایک سادہ لوپ چلایا جاتا ہے تو وہ ساؤنڈ فائل چلاتا ہے۔ wait کمانڈ کے ساتھ 1 سیکنڈ کی تاخیر شامل کی گئی ہے تاکہ آؤٹ پٹ کی نگرانی اور ٹریکنگ ہو سکے۔ || لوپ د لارښوونو یوه ټولګه ده چې د ځانګړې پایلې د ترلاسه کولو لپاره باید بیا بیا تکرار شي. په ورکړل شوې بېلګه کې کله چې یو ساده لوپ اجرا کېږي نو یو غږیز فایل غږوي. د wait قومندې سره د ۱ ثانیې ځنډ شامل شوی ترڅو آوټ پټ وڅارل شي او تعقیب شي.
+box code | Scratch script — Plays sound repeatedly || سکریچ اسکرپٹ — آواز بار بار چلتا ہے || سکریچ سکریپټ — غږ بیا بیا غږېږي
+m when (green flag) clicked
+m forever
+m     wait (1) secs
+m     play sound [meow]
+endbox
+p Similarly, we can load multiple backgrounds and with a loop we can change the backgrounds iteratively. || اسی طرح ہم کئی پس منظر لوڈ کر سکتے ہیں اور لوپ کے ذریعے پس منظر بار بار بدل سکتے ہیں۔ || همداسې موږ کولای شو څو شالیدونه پورته کړو او د لوپ په مرسته شالیدونه تکراري بدل کړو.
+box code | Scratch script — Load multiple backdrops || سکریچ اسکرپٹ — متعدد بیک ڈراپس لوڈ کریں || سکریچ سکریپټ — څو شالیدونه پورته کړئ
+m when (green flag) clicked
+m forever
+m     wait (1) secs
+m     switch backdrop to [next backdrop]
+endbox

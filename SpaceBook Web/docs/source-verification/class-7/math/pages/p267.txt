@@ -1,0 +1,40 @@
+@printed 263
+q 5 | The following data shows the duration of job (in years) of employees in a certain office. Find the mean duration of job of employees in that office || درج ذیل ڈیٹا ایک دفتر میں ملازمین کی ملازمت کی مدت (سالوں میں) دکھاتا ہے۔ اس دفتر میں ملازمین کی ملازمت کی اوسط مدت معلوم کریں || لاندې معلومات په یوه دفتر کې د کارکوونکو د دندې موده (په کلونو) ښيي. په هغه دفتر کې د کارکوونکو د دندې اوسط موده پیدا کړئ
+table
+th | Duration (in years) || مدت (سالوں میں) || موده (په کلونو) | No. of employees
+tr | 1 - 3 | 12
+tr | 3 - 5 | 22
+tr | 5 - 7 | 27
+tr | 7 - 9 | 19
+endtable
+q 6 | Marks obtained by 15 students of a class in a test of 40 marks are given below. Find their median and mode. || ایک جماعت کے 15 طلبہ کے 40 نمبروں کے ٹیسٹ میں حاصل کردہ نمبر نیچے دیے گئے ہیں۔ ان کا وسطانیہ اور عادہ معلوم کریں۔ || د یوه ټولګي د 15 زده کوونکو د 40 نمرو په ازموینه کې اخیستې نمرې لاندې ورکړل شوې. د هغو میډین او موډ پیدا کړئ.
+m 36, 25, 32, 40, 28, 35, 26, 32, 30, 27, 32, 28, 39, 20, 35.
+q 7 | A student got 92 marks in Maths, 75 marks in English, 80 marks in Islamiat and 86 marks in Science. Find the weighted mean if weights of 5, 4, 3, 4 are allotted to these subjects respectively. || ایک طالب علم نے ریاضی میں 92، انگریزی میں 75، اسلامیات میں 80 اور سائنس میں 86 نمبر حاصل کیے۔ اگر ان مضامین کو بالترتیب 5، 4، 3، 4 وزن دیے جائیں تو موزوں اوسط معلوم کریں۔ || یوه زده کوونکي په ریاضي کې 92، په انګرېزي کې 75، په اسلامیاتو کې 80 او په ساینس کې 86 نمرې واخیستې. که دې مضمونونو ته په ترتیب 5، 4، 3، 4 وزنونه ورکړل شي، وزني اوسط پیدا کړئ.
+@issue Weighted mean is not explained anywhere in the unit.
+q 8 | Find the median of the following data: || درج ذیل ڈیٹا کا وسطانیہ معلوم کریں: || د لاندې معلوماتو میډین پیدا کړئ:
+qp a | 18, 15, 16, 13, 11
+qp b | 200, 150, 230, 175, 300, 250
+q 9 | Find the mode of the following data: || درج ذیل ڈیٹا کا عادہ معلوم کریں: || د لاندې معلوماتو موډ پیدا کړئ:
+qp a | 6, 7, 7, 12, 14, 15, 17
+qp b | 12, 15, 14, 15, 17, 18, 14, 16
+endexercise
+@sec 13.7 | Probability || احتمال || احتمال
+# 13.7 Probability || 13.7 احتمال || 13.7 احتمال
+p Probability means how likely something is to happen. It is a measure of the likelihood or possibility of an event. Let's recall some terms associated with probability. We will also learn about some further concepts related to probability || احتمال کا مطلب ہے کسی چیز کے ہونے کا کتنا امکان ہے۔ یہ کسی واقعے کے امکان کی پیمائش ہے۔ آئیے احتمال سے متعلق کچھ اصطلاحات یاد کریں۔ ہم احتمال سے متعلق کچھ مزید تصورات بھی سیکھیں گے۔ || احتمال یعنې یو شی څومره د پېښېدو امکان لري. دا د یوې پېښې د امکان اندازه ده. راځئ له احتمال سره تړلي ځینې اصطلاحات را یاد کړو. د احتمال اړوند ځینې نور مفاهیم به هم زده کړو.
+### Experiment || تجربہ || تجربه
+@issue The "Experiment" sub-heading is printed faintly and partly hidden; read from context.
+p An experiment (or trial) is a process that can be repeated infinite number of times. It has a well-defined possible outcome. An experiment will be called a random experiment if it has two or more possible results. For example: || تجربہ (یا آزمائش) ایک عمل ہے جسے لامحدود بار دہرایا جا سکتا ہے۔ اس کا واضح طور پر متعین ممکنہ نتیجہ ہوتا ہے۔ تجربے کو بے ترتیب تجربہ کہا جائے گا اگر اس کے دو یا زیادہ ممکنہ نتائج ہوں۔ مثال کے طور پر: || تجربه (یا آزمېښت) یو بهیر دی چې بې شمېره ځله تکرارېدای شي. ښه ټاکلې ممکنه پایله لري. تجربې ته به تصادفي تجربه وویل شي که دوه یا ډېرې ممکنې پایلې ولري. د بېلګې په توګه:
+- Flipping a coin as we don't know the result (if it would be head or tail). || سکہ اچھالنا کیونکہ ہمیں نتیجہ معلوم نہیں (کہ ہیڈ آئے گا یا ٹیل)۔ || د سکې اچول ځکه چې پایله نه پېژنو (چې سر به وي که لکۍ).
+- Rolling a dice as we don't know the result (would it be 1, 2, 3, 4, 5, or 6). || پانسہ پھینکنا کیونکہ ہمیں نتیجہ معلوم نہیں (کہ 1، 2، 3، 4، 5 یا 6 آئے گا)۔ || د ډایس اچول ځکه چې پایله نه پېژنو (چې 1، 2، 3، 4، 5 که 6 به وي).
+- Spinning a spinner || اسپنر گھمانا || د سپینر څرخول
+- Picking an object randomly from a group of objects without looking, etc. || بغیر دیکھے اشیاء کے گروہ میں سے بے ترتیب کوئی چیز اٹھانا وغیرہ۔ || له توکو د یوې ډلې پرته له کتلو په تصادفي ډول یو توکی اخیستل او نور.
+p All these are examples of random experiments. || یہ سب بے ترتیب تجربات کی مثالیں ہیں۔ || دا ټول د تصادفي تجربو بېلګې دي.
+### Outcomes || نتائج || پایلې
+p The possible result of a random experiment is called an outcome. || بے ترتیب تجربے کے ممکنہ نتیجے کو آؤٹ کم (نتیجہ) کہتے ہیں۔ || د تصادفي تجربې ممکنه پایله ته پایله (آوټکم) وایي.
+### Sample Space || نمونہ فضا || نمونه فضا
+p The **sample space** is the set of all possible outcomes of a random experiment. || **نمونہ فضا** کسی بے ترتیب تجربے کے تمام ممکنہ نتائج کا سیٹ ہے۔ || **نمونه فضا** د یوې تصادفي تجربې د ټولو ممکنو پایلو سېټ دی.
+- The sample space for rolling a dice is: S = {1, 2, 3, 4, 5, 6} || پانسہ پھینکنے کی نمونہ فضا یہ ہے: S = {1, 2, 3, 4, 5, 6} || د ډایس د اچولو نمونه فضا دا ده: S = {1, 2, 3, 4, 5, 6}
+- The sample space for tossing a coin is: S = {head, tail} || سکہ اچھالنے کی نمونہ فضا یہ ہے: S = {head, tail} || د سکې د اچولو نمونه فضا دا ده: S = {head, tail}
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A sample space act like a universal set for possible outcomes. || نمونہ فضا ممکنہ نتائج کے لیے عالمگیر سیٹ کی طرح کام کرتی ہے۔ || نمونه فضا د ممکنو پایلو لپاره د نړیوال سېټ په څېر کار کوي.
+endbox

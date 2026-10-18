@@ -1,0 +1,20 @@
+@printed 150
+eq \begin{aligned} \text{Area of inner trapezium} &= 2 \text{ cm} \times \left(\frac{2 \text{ cm} + 4 \text{ cm}}{2}\right) \\ &= 2 \text{ cm} \times \left(\frac{6 \text{ cm}}{2}\right) \\ &= 6 \text{ cm}^2 \\ \text{Area of the border} &= 20 \text{ cm}^2 - 6 \text{ cm}^2 = 14 \text{ cm}^2 \end{aligned}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In triangle if we choose one side as altitude the opposite side of the altitude is called base. || مثلث میں اگر ہم ایک ضلع کو ارتفاع چنیں تو ارتفاع کی مخالف ضلع قاعدہ کہلاتی ہے۔ || په مثلث کې که یوه ضلع د لوړوالي په توګه وټاکو، د لوړوالي مقابلې ضلعې ته قاعده وايي.
+endbox
+## 8.3.4 Area of triangle || 8.3.4 مثلث کا رقبہ || 8.3.4 د مثلث مساحت
+p A triangle is a 3-sided figure with one pair of parallel sides. || مثلث تین اضلاع والی شکل ہے جس کے متوازی اضلاع کا ایک جوڑا ہوتا ہے۔ || مثلث درې ضلعي شکل دی چې د موازي ضلعو یوه جوړه لري.
+@issue Page 150 says "A triangle is a 3-sided figure with one pair of parallel sides"; a triangle has no parallel sides. Kept as printed.
+p We can find the area of the triangle if the length of its base and altitude is given: || اگر مثلث کے قاعدے کی لمبائی اور ارتفاع دیا ہو تو ہم اس کا رقبہ معلوم کر سکتے ہیں: || که د مثلث د قاعدې اوږدوالی او لوړوالی ورکړل شوی وي، مساحت یې معلومولی شو:
+shape tri | base=B | alt=Altitude
+m Area of triangle $= \frac{1}{2}$ (altitude $\times$ base)
+example 1 | Find the area of the path around the given triangle. || دیے گئے مثلث کے گرد راستے کا رقبہ معلوم کریں۔ || د ورکړل شوي مثلث شاوخوا د لارې مساحت معلوم کړئ.
+shape tri nest | base=24 cm | ibase=20 cm | ialt=8 cm | oalt=12 cm
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Base of outer triangle} &= 24 \text{ cm} \\ \text{Base of inner triangle} &= 20 \text{ cm} \\ \text{Altitude of outer triangle} &= 12 \text{ cm} \\ \text{Altitude of inner triangle} &= 8 \text{ cm} \\ \text{Area of outer triangle} &= \frac{1}{2}(\text{altitude} \times \text{base}) \\ &= \frac{1}{2}(12 \text{ cm} \times 24 \text{ cm}) \\ &= 144 \text{ cm}^2 \\ \text{Area of inner triangle} &= \frac{1}{2}(\text{altitude} \times \text{base}) \\ &= \frac{1}{2}(8 \text{ cm} \times 20 \text{ cm}) \\ &= 80 \text{ cm}^2 \\ \text{Area of the path around the triangle} &= 144 \text{ cm}^2 - 80 \text{ cm}^2 = 64 \text{ cm}^2 \end{aligned}
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain to the students about triangle by drawing some triangles on the board and instruct them to find its area. || بورڈ پر کچھ مثلث بنا کر طلبہ کو مثلث کے بارے میں سمجھائیں اور ان کا رقبہ معلوم کرنے کی ہدایت دیں۔ || په تخته ځینې مثلثونه رسم کړئ، زده کوونکو ته د مثلث په اړه تشریح ورکړئ او ورته ووایاست چې مساحت یې ومومي.
+endbox

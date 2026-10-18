@@ -1,0 +1,30 @@
+@printed 17
+@deco Small drawings of a coiled rope and a pipe beside the examples (decorative).
+@sec 1.4 | Real-Life Problems || حقیقی زندگی کے مسائل || د ورځني ژوند پوښتنې
+# 1.4 Real-Life Problems || 1.4 حقیقی زندگی کے مسائل || 1.4 د ورځني ژوند پوښتنې
+example 1 | What is the greatest length of meter tape that can exactly measure the three ropes of length 150 cm, 125 cm and 120 cm? || پیمائشی فیتے کی وہ سب سے بڑی لمبائی کیا ہے جو 150 cm، 125 cm اور 120 cm لمبائی کی تین رسیوں کو ٹھیک ٹھیک ناپ سکے؟ || د اندازه کولو فیتې تر ټولو لوی اوږدوالی څومره دی چې د 150 cm، 125 cm او 120 cm اوږدوالي درې پړي په سمه توګه اندازه کړي؟
+p **Solution:** || **حل:** || **حل:**
+p To find the greatest length of meter tape, find the HCF. || پیمائشی فیتے کی سب سے بڑی لمبائی معلوم کرنے کے لیے عاد اعظم معلوم کریں۔ || د فیتې د تر ټولو لوی اوږدوالي د معلومولو لپاره لوی مشترک قاسم معلوم کړئ.
+ladder 2:150, 5:75, 5:15, 3:3, :1
+ladder 5:125, 5:25, 5:5, :1
+ladder 2:120, 2:60, 2:30, 3:15, 5:5, :1
+p Prime factorization of 150 = $2 \times 3 \times 5 \times 5 = 2 \times 3 \times 5^2$ || 150 کے مفرد اجزائے ضربی = $2 \times 3 \times 5 \times 5 = 2 \times 3 \times 5^2$ || د 150 لومړني ضربي تجزیه = $2 \times 3 \times 5 \times 5 = 2 \times 3 \times 5^2$
+p Prime factorization of 125 = $5 \times 5 \times 5 = 5^3$ || 125 کے مفرد اجزائے ضربی = $5 \times 5 \times 5 = 5^3$ || د 125 لومړني ضربي تجزیه = $5 \times 5 \times 5 = 5^3$
+p Prime factorization of 120 = $2 \times 2 \times 2 \times 3 \times 5 = 2^3 \times 3 \times 5$ || 120 کے مفرد اجزائے ضربی = $2 \times 2 \times 2 \times 3 \times 5 = 2^3 \times 3 \times 5$ || د 120 لومړني ضربي تجزیه = $2 \times 2 \times 2 \times 3 \times 5 = 2^3 \times 3 \times 5$
+p Common factors = 5 || مشترک اجزائے ضربی = 5 || مشترک ضربي اجزا = 5
+m $\text{HCF} = 5$
+p So, the greatest length of the tape is 5 cm. || لہٰذا فیتے کی سب سے بڑی لمبائی 5 cm ہے۔ || نو د فیتې تر ټولو لوی اوږدوالی 5 cm دی.
+endexample
+example 2 | Find the minimum length of the pipe which can exactly be cut into pieces of length 140 cm, 180 cm and 60 cm. || پائپ کی وہ کم سے کم لمبائی معلوم کریں جسے 140 cm، 180 cm اور 60 cm لمبائی کے ٹکڑوں میں ٹھیک ٹھیک کاٹا جا سکے۔ || د پایپ هغه لږ تر لږه اوږدوالی معلوم کړئ چې په سمه توګه د 140 cm، 180 cm او 60 cm اوږدوالي ټوټو ته پرې کېدای شي.
+p **Solution:** || **حل:** || **حل:**
+p To find the minimum length of the pipe we have to find LCM. || پائپ کی کم سے کم لمبائی معلوم کرنے کے لیے ہمیں ذو اضعاف اقل معلوم کرنا ہوگا۔ || د پایپ د لږ تر لږه اوږدوالي د معلومولو لپاره باید کوچنی مشترک ضرب معلوم کړو.
+ladder 2:140, 180, 60; 2:70, 90, 30; 3:35, 45, 15; 3:35, 15, 5; 5:35, 5, 5; 7:7, 1, 1; :1, 1, 1
+p So, prime factorization is $= 2 \times 2 \times 3 \times 3 \times 5 \times 7$ || لہٰذا مفرد اجزائے ضربی $= 2 \times 2 \times 3 \times 3 \times 5 \times 7$ || نو لومړني ضربي تجزیه $= 2 \times 2 \times 3 \times 3 \times 5 \times 7$
+m $\text{LCM} = 1260\ \text{cm}$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p If the lengths of the three ribbons are 32 cm, 44 cm and 64 cm. Find the maximum length of the three ribbons. || اگر تین ربنوں کی لمبائیاں 32 cm، 44 cm اور 64 cm ہوں۔ تینوں ربنوں کی زیادہ سے زیادہ لمبائی معلوم کریں۔ || که د دریو فیتو اوږدوالي 32 cm، 44 cm او 64 cm وي. د دریو فیتو اعظمي اوږدوالی معلوم کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Tell the students clue word of LCM and HCF and then ask them by using these clue words make word problems of HCF and LCM. Share their word problems with their class- fellows. || طلبہ کو ذو اضعاف اقل اور عاد اعظم کے اشارتی الفاظ بتائیں اور پھر ان سے کہیں کہ ان الفاظ کی مدد سے عاد اعظم اور ذو اضعاف اقل کے لفظی سوالات بنائیں۔ اپنے لفظی سوالات ہم جماعتوں کے ساتھ شیئر کریں۔ || زده کوونکو ته د کوچني مشترک ضرب او لوی مشترک قاسم نښه لرونکي ټکي ووایاست او بیا ترې وغواړئ چې د دې ټکو په مرسته د لوی مشترک قاسم او کوچني مشترک ضرب لفظي پوښتنې جوړې کړي. خپلې لفظي پوښتنې له ټولګیوالو سره شریکې کړي.
+endbox

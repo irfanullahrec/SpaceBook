@@ -1,0 +1,39 @@
+@printed 98
+example 1 | Find $A \cup B$ if A = {1, 2, 4, 5} and B = {2, 3, 4, 6}. || $A \cup B$ معلوم کریں اگر A = {1, 2, 4, 5} اور B = {2, 3, 4, 6}۔ || $A \cup B$ معلوم کړئ که A = {1, 2, 4, 5} او B = {2, 3, 4, 6}.
+p **Solution:** || **حل:** || **حل:**
+p Here, 2 and 4 belong to set A and set B both. By taking every element of both sets A and B, without repeating any element, we get: $A \cup B = \{1, 2, 3, 4, 5, 6\}$ || یہاں 2 اور 4 سیٹ A اور سیٹ B دونوں میں ہیں۔ دونوں سیٹوں A اور B کا ہر رکن کسی رکن کو دہرائے بغیر لینے سے ہمیں ملتا ہے: $A \cup B = \{1, 2, 3, 4, 5, 6\}$ || دلته 2 او 4 په دواړو سېټونو A او B کې دي. د دواړو سېټونو A او B د هر غړي په اخیستلو پرته له تکراره، لاسته راځي: $A \cup B = \{1, 2, 3, 4, 5, 6\}$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Union of two given sets is the largest set which contains all the elements of both sets. || دو دیے گئے سیٹوں کا یونین وہ سب سے بڑا سیٹ ہے جس میں دونوں سیٹوں کے تمام ارکان ہوں۔ || د دوو ورکړل شویو سېټونو یووالی هغه تر ټولو لوی سېټ دی چې د دواړو سېټونو ټول غړي ولري.
+endbox
+@issue This note says the union is the "largest" set containing all elements of both sets, while the note on printed p.97 says "smallest"; "smallest" is the correct wording. Both kept as printed.
+example 2 | If K = {0, 1, 2, 3, 4, ..., 10}, D = {4, 8, 12} and F = {3, 5, 7, 9}, find $K \cup D \cup F$. || اگر K = {0, 1, 2, 3, 4, ..., 10}، D = {4, 8, 12} اور F = {3, 5, 7, 9} ہوں تو $K \cup D \cup F$ معلوم کریں۔ || که K = {0, 1, 2, 3, 4, ..., 10}، D = {4, 8, 12} او F = {3, 5, 7, 9} وي، $K \cup D \cup F$ معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First find $C \cup D$. || پہلے $C \cup D$ معلوم کریں۔ || لومړی $C \cup D$ معلوم کړئ.
+eq \begin{aligned} K &= \{0, 1, 2, 3, 4, \ldots, 10\} \text{ and } D = \{4, 8, 12\} \\ K \cup D &= \{0, 1, 2, 3, \ldots, 10, 12\} \end{aligned}
+p Let's denote this set $K \cup D$ as M. So, M = {0, 1, 2, 3, ..., 10, 12} || آئیے اس سیٹ $K \cup D$ کو M کہیں۔ لہٰذا M = {0, 1, 2, 3, ..., 10, 12} || راځئ دا سېټ $K \cup D$ په M وښیو. نو M = {0, 1, 2, 3, ..., 10, 12}
+p Now find $M \cup F$. || اب $M \cup F$ معلوم کریں۔ || اوس $M \cup F$ معلوم کړئ.
+eq \begin{aligned} M &= \{0, 1, 2, 3, \ldots, 10, 12\} \text{ and } O = \{3, 5, 7, 9\} \\ M \cup F &= \{0, 1, 2, 3, \ldots, 10, 12\} \\ \text{So, } K \cup D \cup F &= M \cup F = \{0, 1, 2, 3, \ldots, 10, 12\} \end{aligned}
+endexample
+@issue Example 2 prints "First find C∪D" (should be K∪D) and names the third set "O" in one line (should be F); kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the union of the following sets. || درج ذیل سیٹوں کا یونین معلوم کریں۔ || د لاندې سېټونو یووالی معلوم کړئ.
+qp a | A = {1, 2, 3, 4, ...} and B = ∅
+qp b | E = {2, 4}, F = {−2, −3} and G = {0}
+endbox
+### 2. Intersection of sets || 2. سیٹوں کا انٹرسیکشن || 2. د سېټونو تقاطع
+p The intersection of two given sets is a set which consists of all the common elements of both sets. The symbol for denoting the intersection of sets is '∩'. We write the intersection of two sets A and B as $A \cap B$ and read it as "A intersection B". || دو دیے گئے سیٹوں کا انٹرسیکشن وہ سیٹ ہے جس میں دونوں سیٹوں کے تمام مشترک ارکان ہوں۔ سیٹوں کا انٹرسیکشن ظاہر کرنے کی علامت '∩' ہے۔ ہم دو سیٹوں A اور B کا انٹرسیکشن $A \cap B$ لکھتے ہیں اور "A انٹرسیکشن B" پڑھتے ہیں۔ || د دوو ورکړل شویو سېټونو تقاطع هغه سېټ دی چې د دواړو سېټونو ټول ګډ غړي ولري. د سېټونو د تقاطع نښه '∩' ده. د دوو سېټونو A او B تقاطع داسې لیکو $A \cap B$ او لولو یې "A تقاطع B".
+example 1 | Find the intersection of set U = {2, 3, 4, 5, 6} and set V = {3, 5, 7, 9}. || سیٹ U = {2, 3, 4, 5, 6} اور سیٹ V = {3, 5, 7, 9} کا انٹرسیکشن معلوم کریں۔ || د سېټ U = {2, 3, 4, 5, 6} او سېټ V = {3, 5, 7, 9} تقاطع معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Here, the elements 3 and 5 are common in both sets U and V. So, $U \cap V = \{3, 5\}$. || یہاں ارکان 3 اور 5 دونوں سیٹوں U اور V میں مشترک ہیں۔ لہٰذا $U \cap V = \{3, 5\}$۔ || دلته غړي 3 او 5 په دواړو سېټونو U او V کې ګډ دي. نو $U \cap V = \{3, 5\}$.
+endexample
+example 2 | If G = {0, 1, 2, 3}, H = {2, 3, 4} and I = {3, 5, 6, 7}, then find $G \cap H \cap I$. || اگر G = {0, 1, 2, 3}، H = {2, 3, 4} اور I = {3, 5, 6, 7} ہوں تو $G \cap H \cap I$ معلوم کریں۔ || که G = {0, 1, 2, 3}، H = {2, 3, 4} او I = {3, 5, 6, 7} وي، نو $G \cap H \cap I$ معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First find $G \cap H$. || پہلے $G \cap H$ معلوم کریں۔ || لومړی $G \cap H$ معلوم کړئ.
+eq \begin{aligned} G &= \{0, 1, 2, 3\}, \; H = \{2, 3, 4\} \\ G \cap H &= \{2, 3\} \end{aligned}
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Intersection of two given sets is the smallest set which contains all the elements that are common to both sets. || دو دیے گئے سیٹوں کا انٹرسیکشن وہ سب سے چھوٹا سیٹ ہے جس میں وہ تمام ارکان ہوں جو دونوں سیٹوں میں مشترک ہیں۔ || د دوو ورکړل شویو سېټونو تقاطع هغه تر ټولو کوچنی سېټ دی چې هغه ټول غړي ولري چې په دواړو سېټونو کې ګډ دي.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write two or three sets on the board. Call students randomly and ask them to find their union. Ask the remaining students to check if he/she has done it correctly. || بورڈ پر دو یا تین سیٹ لکھیں۔ طلبہ کو بے ترتیب بلائیں اور ان سے ان کا یونین معلوم کرنے کو کہیں۔ باقی طلبہ سے پوچھیں کہ کیا اس نے درست کیا ہے۔ || پر تخته دوه یا درې سېټونه ولیکئ. زده کوونکي په تصادفي ډول راوبلئ او ترې وغواړئ چې د هغوی یووالی معلوم کړي. له پاتې زده کوونکو وپوښتئ چې ایا سم یې کړی.
+endbox

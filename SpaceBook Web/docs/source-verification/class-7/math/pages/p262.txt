@@ -1,0 +1,32 @@
+@printed 258
+q 3 | Draw a histogram for the following data: || درج ذیل ڈیٹا کے لیے ہسٹوگرام بنائیں: || د لاندې معلوماتو لپاره هسټوګرام رسم کړئ:
+table
+th | Class Interval || جماعتی وقفہ || د ټولګي واټن | Frequency
+tr | 15 - 19 | 5
+tr | 20 - 24 | 9
+tr | 25 - 29 | 12
+tr | 30 - 34 | 10
+tr | 35 - 39 | 4
+tr | | Total = 40
+endtable
+q 4 | Draw a histogram for the following frequency distribution table. || درج ذیل تعددی تقسیم کے جدول کے لیے ہسٹوگرام بنائیں۔ || د لاندې تکرار وېش جدول لپاره هسټوګرام رسم کړئ.
+table
+th | Class Interval || جماعتی وقفہ || د ټولګي واټن | Frequency
+tr | 5 - 14 | 3
+tr | 15 - 24 | 5
+tr | 25 - 34 | 2
+tr | 35 - 44 | 4
+tr | 45 - 54 | 12
+tr | | Total = 26
+endtable
+endexercise
+@sec 13.6 | Measures of Central Tendency || مرکزی رجحان کی پیمائشیں || د مرکزي تمایل اندازې
+# 13.6 Measures of Central Tendency || 13.6 مرکزی رجحان کی پیمائشیں || 13.6 د مرکزي تمایل اندازې
+p After arranging the given data in the form of frequency distribution, the data becomes more meaningful. We can analyse the data and many useful informations / trends can be observed. Sometimes, we look for a suitable value which can be considered as representative value for the whole data. Such a representative value of given data is called average. || دیے گئے ڈیٹا کو تعددی تقسیم کی شکل میں ترتیب دینے کے بعد ڈیٹا زیادہ بامعنی ہو جاتا ہے۔ ہم ڈیٹا کا تجزیہ کر سکتے ہیں اور بہت سی مفید معلومات / رجحانات دیکھے جا سکتے ہیں۔ بعض اوقات ہم ایک مناسب قیمت تلاش کرتے ہیں جسے پورے ڈیٹا کی نمائندہ قیمت سمجھا جا سکے۔ دیے گئے ڈیٹا کی ایسی نمائندہ قیمت کو اوسط کہتے ہیں۔ || د ورکړل شویو معلوماتو د تکرار وېش په بڼه له ترتیبولو وروسته معلومات ډېر معنا لرونکي کېږي. معلومات تحلیلولی شو او ډېر ګټور معلومات / رجحانونه لیدل کېدای شي. کله کله یو مناسب ارزښت لټوو چې د ټولو معلوماتو د استازي ارزښت په توګه وګڼل شي. د ورکړل شویو معلوماتو داسې استازي ارزښت ته اوسط وایي.
+p Since average value is usually found in the middle or centre of the data (in arranged form), so the averages are also called "measures of central tendency". || چونکہ اوسط قیمت عام طور پر ڈیٹا کے درمیان یا مرکز میں (ترتیب شدہ شکل میں) پائی جاتی ہے، اس لیے اوسط کو "مرکزی رجحان کی پیمائشیں" بھی کہتے ہیں۔ || څرنګه چې اوسط ارزښت معمولاً د معلوماتو په منځ یا مرکز کې (په ترتیب شوې بڼه) پیدا کېږي، نو اوسطونو ته "د مرکزي تمایل اندازې" هم وایي.
+p Here we shall discuss the following three types of averages: || یہاں ہم اوسط کی درج ذیل تین اقسام پر بات کریں گے: || دلته به د اوسط لاندې درې ډولونه وڅېړو:
+p i) Arithmetic Mean ii) Median iii) Mode || i) حسابی اوسط ii) وسطانیہ iii) عادہ || i) حسابي اوسط ii) منځنی (میډین) iii) موډ
+## 13.6.1 Arithmetic Mean || 13.6.1 حسابی اوسط || 13.6.1 حسابي اوسط
+p Arithmetic mean of a given set of data can be calculated by dividing the sum of all values by the number of values in the data. So if $x$ denotes any value of the data, n is the number of values in the given set of data, then their arithmetic mean ($\overline{X}$) is calculated by the following formula, || دیے گئے ڈیٹا کا حسابی اوسط تمام قیمتوں کے مجموعے کو ڈیٹا میں قیمتوں کی تعداد سے تقسیم کر کے معلوم کیا جا سکتا ہے۔ لہٰذا اگر $x$ ڈیٹا کی کوئی قیمت ظاہر کرے اور n دیے گئے ڈیٹا میں قیمتوں کی تعداد ہو تو ان کا حسابی اوسط ($\overline{X}$) درج ذیل فارمولے سے معلوم کیا جاتا ہے، || د ورکړل شویو معلوماتو حسابي اوسط د ټولو ارزښتونو مجموعه د ارزښتونو پر شمېر وېشلو سره محاسبه کېږي. نو که $x$ د معلوماتو هر ارزښت وښيي او n په ورکړل شویو معلوماتو کې د ارزښتونو شمېر وي، نو د هغو حسابي اوسط ($\overline{X}$) د لاندې فورمول په واسطه محاسبه کېږي،
+eq \overline{X} = \dfrac{\sum x}{n}
+p Where $\sum x$ (read as summation $x$) denotes the sum of all values of the given data. || جہاں $\sum x$ (جسے سمیشن $x$ پڑھتے ہیں) دیے گئے ڈیٹا کی تمام قیمتوں کا مجموعہ ظاہر کرتا ہے۔ || چېرته چې $\sum x$ (چې سمېشن $x$ لوستل کېږي) د ورکړل شویو معلوماتو د ټولو ارزښتونو مجموعه ښيي.

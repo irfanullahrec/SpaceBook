@@ -1,0 +1,21 @@
+@printed 110
+qp c | 78125, 15625, 3125, ___, ___, ___
+qp d | 122, 111, 100, 89, ___, ___, ___
+qp e | 5, 10, 20, 40, ___, ___, ___
+qp f | 26, 42, 58, 74, ___, ___, ___
+q 2 | Ahad daily read the storybook. On Monday, he read 3 pages. The next day, he read 6 pages. On Wednesday, he read 9 pages. If he keeps increasing the number of pages daily, how many pages will he read on Thursday and Friday? || احد روزانہ کہانیوں کی کتاب پڑھتا ہے۔ پیر کو اس نے 3 صفحات پڑھے۔ اگلے دن 6 صفحات پڑھے۔ بدھ کو 9 صفحات پڑھے۔ اگر وہ روزانہ صفحات کی تعداد بڑھاتا رہے تو جمعرات اور جمعہ کو کتنے صفحات پڑھے گا؟ || احد هره ورځ د کیسو کتاب لولي. دوشنبه یې 3 پاڼې ولوستې. بله ورځ یې 6 پاڼې ولوستې. چهارشنبه یې 9 پاڼې ولوستې. که هره ورځ د پاڼو شمېر زیاتوي، پنجشنبه او جمعه به څو پاڼې ولولي؟
+solution Thursday 12 pages, Friday 15 pages
+suse seq 3, 6, 9|2
+ss He will read 12 pages on Thursday and 15 pages on Friday. || وہ جمعرات کو 12 اور جمعہ کو 15 صفحات پڑھے گا۔ || هغه به پنجشنبه 12 او جمعه 15 پاڼې ولولي.
+endsolution
+q 3 | Rida goes for a walk in the nearby park. On Monday, she completes 2 rounds of the walking track. The next day, she completes 4 rounds of the walking track. On Wednesday, she completes 6 rounds. If she keeps increasing the number of rounds daily, how many rounds does she complete over the next three days of the week? || ردا قریبی پارک میں سیر کے لیے جاتی ہے۔ پیر کو وہ واکنگ ٹریک کے 2 چکر لگاتی ہے۔ اگلے دن 4 چکر لگاتی ہے۔ بدھ کو 6 چکر لگاتی ہے۔ اگر وہ روزانہ چکروں کی تعداد بڑھاتی رہے تو ہفتے کے اگلے تین دنوں میں وہ کتنے چکر لگائے گی؟ || ردا نږدې پارک ته د ګرځېدو لپاره ځي. دوشنبه د ګرځېدو د لارې 2 دورې پوره کوي. بله ورځ 4 دورې پوره کوي. چهارشنبه 6 دورې پوره کوي. که هره ورځ د دورو شمېر زیاتوي، د اونۍ په راتلونکو دریو ورځو کې به څو دورې پوره کړي؟
+solution Thursday 8, Friday 10, Saturday 12 rounds (30 rounds in total)
+suse seq 2, 4, 6|3
+ss Over the next three days she completes 8 + 10 + 12 = 30 rounds. || اگلے تین دنوں میں وہ 8 + 10 + 12 = 30 چکر لگاتی ہے۔ || په راتلونکو دریو ورځو کې 8 + 10 + 12 = 30 دورې پوره کوي.
+endsolution
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Use the following online game link for practice of sequence. https://mathsframe.co.uk/en/resources/resource/42/sequences || ترتیب کی مشق کے لیے یہ آن لائن کھیل کا لنک استعمال کریں: https://mathsframe.co.uk/en/resources/resource/42/sequences || د لړۍ د تمرین لپاره دا آنلاین لوبه وکاروئ: https://mathsframe.co.uk/en/resources/resource/42/sequences
+p Paste a hundred square grid on board to ask students to color squares to explore different number patterns like odd numbers, even numbers, counting in multiples from times tables and ten more and ten less. || بورڈ پر سو خانوں کا گرڈ چسپاں کریں اور طلبہ سے کہیں کہ مختلف عددی نمونے، جیسے طاق اعداد، جفت اعداد، پہاڑوں کے اضعاف میں گنتی، اور دس زیادہ اور دس کم، تلاش کرنے کے لیے خانوں میں رنگ بھریں۔ || په تخته د سلو خانو جال ونښلوئ او له زده کوونکو وغواړئ چې خانې رنګ کړي ترڅو بېلابېلې عددي بېلګې لکه طاق عددونه، جفت عددونه، د ضرب جدول په ضربونو شمېرل، او لس زیات او لس کم ومومي.
+endbox
+@issue Q3 asks "how many rounds does she complete over the next three days" — answered both per day (8, 10, 12) and in total (30).

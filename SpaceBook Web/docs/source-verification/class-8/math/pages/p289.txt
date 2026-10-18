@@ -1,0 +1,29 @@
+@printed 287
+@issue The class-boundary table prints the last boundary as "34.4 – 39.5" where 34.5 – 39.5 is expected, and the x-axis of the histogram prints the tick "34.4" and "14 5" for "14.5" (kept as printed here; the corresponding class boundary 34.5 is what the method gives). The histogram is recreated: six adjacent bars with heights 4, 6, 7, 4, 6, 3 over the boundaries 9.5, 14.5, 19.5, 24.5, 29.5, 34.5 (printed 34.4) and 39.5; the y-axis runs from 0 to 7 (title "Library Visitors", y-axis label "No. of Visitors", x-axis label "Ages"). The bars are coloured in print. The example continues on the next page, if it does.
+p b) To draw histogram, let's find the class boundaries for each class. For this, first subtract the upper-class limit of the first class from the lower-class limit for the second class. Divide this result by two. Subtract the result of division from the lower-class limit of each class. Similarly add the result of division to the upper-class limit of each class. In this way we will find the class boundaries. || ب) ہسٹوگرام بنانے کے لیے آئیں ہر جماعتی وقفے کی حدود معلوم کریں۔ اس کے لیے پہلے دوسرے وقفے کی زیریں حد میں سے پہلے وقفے کی بالائی حد منہا کریں۔ اس نتیجے کو دو پر تقسیم کریں۔ تقسیم کا نتیجہ ہر وقفے کی زیریں حد میں سے منہا کریں۔ اسی طرح تقسیم کا نتیجہ ہر وقفے کی بالائی حد میں جمع کریں۔ اس طرح ہمیں جماعتی حدود مل جائیں گی۔ || ب) د هسټوګرام رسمولو لپاره راځئ د هر ټولګي پولې پیدا کړو. د دې لپاره لومړی د دوهم ټولګي له ښکتنۍ حد څخه د لومړي ټولګي پاسنی حد تفریق کړئ. دا پایله په دوو وویشئ. د وېش پایله د هر ټولګي له ښکتنۍ حد څخه تفریق کړئ. په همدې ډول د وېش پایله د هر ټولګي له پاسني حد سره جمع کړئ. په دې ډول به موږ د ټولګیو پولې ومومو.
+table Class intervals, class boundaries and frequencies || جماعتی وقفے، جماعتی حدود اور تعدد || د ټولګي وقفې، د ټولګي پولې او فریکونسي
+th | Class Intervals | Class Boundaries | Frequency
+tr | 10-14 | 9.5 – 14.5 | 4
+tr | 15-19 | 14.5 – 19.5 | 6
+tr | 20-24 | 19.5 – 24.5 | 7
+tr | 25-29 | 24.5 – 29.5 | 4
+tr | 30-34 | 29.5 – 34.5 | 6
+tr | 35-39 | 34.4 – 39.5 | 3
+tr |  |  | Σf = 30
+endtable
+- Draw x and y axis. || x اور y محور بنائیں۔ || x او y محورونه رسم کړئ.
+- Label x-axis and y axis as ages and no. of visitors respectively. || x-محور اور y-محور کو بالترتیب عمر اور زائرین کی تعداد کا نام دیں۔ || x-محور او y-محور په ترتیب سره عمر او د لیدونکو شمېر نومول.
+- On the horizontal axis, label the lower boundary of each interval. || افقی محور پر ہر وقفے کی زیریں حد لکھیں۔ || په افقي محور هر وقفې ښکتنی حد ولیکئ.
+- Draw a bar extending from the lower value of each interval to the lower value of the next interval. || ہر وقفے کی زیریں قدر سے اگلے وقفے کی زیریں قدر تک پھیلی ہوئی ایک پٹی بنائیں۔ || د هرې وقفې له ښکتني قیمت څخه تر راتلونکې وقفې ښکتني قیمت پورې غځېدلې یوه پټۍ رسم کړئ.
+- The height of each bar should be equal to its corresponding frequency. || ہر پٹی کی اونچائی اس کے متعلقہ تعدد کے برابر ہونی چاہیے۔ || د هرې پټۍ لوړوالی باید د هغې له اړوندې فریکونسۍ سره برابر وي.
+svg Histogram "Library Visitors": ages on the x-axis (9.5 to 39.5), number of visitors on the y-axis (0 to 7) || ہسٹوگرام "Library Visitors": عمر (x-محور) اور زائرین کی تعداد (y-محور) || هسټوګرام "Library Visitors": عمر (x-محور) او د لیدونکو شمېر (y-محور)
+<svg viewBox="0 0 520 330" width="520" role="img" aria-label="Histogram titled Library Visitors with six adjacent bars over the boundaries 9.5, 14.5, 19.5, 24.5, 29.5, 34.4 and 39.5 with heights 4, 6, 7, 4, 6 and 3; y-axis labelled No. of Visitors from 0 to 7, x-axis labelled Ages" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<text x="150" y="14" font-weight="700">Library Visitors</text><text x="46" y="14">y-axis</text><text x="472" y="262">x-axis</text>
+<line x1="60" y1="270" x2="470" y2="270" stroke="#0f172a" stroke-width="1.5"/><line x1="60" y1="270" x2="60" y2="24" stroke="#0f172a" stroke-width="1.5"/>
+<g stroke="#cbd5e1" stroke-width="0.7"><line x1="60" y1="235" x2="470" y2="235"/><line x1="60" y1="200" x2="470" y2="200"/><line x1="60" y1="165" x2="470" y2="165"/><line x1="60" y1="130" x2="470" y2="130"/><line x1="60" y1="95" x2="470" y2="95"/><line x1="60" y1="60" x2="470" y2="60"/></g>
+<rect x="80" y="130" width="62" height="140" fill="#e8445f" stroke="#0f172a"/><rect x="142" y="60" width="62" height="210" fill="#f69c86" stroke="#0f172a"/><rect x="204" y="25" width="62" height="245" fill="#9fd27a" stroke="#0f172a"/><rect x="266" y="130" width="62" height="140" fill="#b23a48" stroke="#0f172a"/><rect x="328" y="60" width="62" height="210" fill="#e3b5ec" stroke="#0f172a"/><rect x="390" y="165" width="62" height="105" fill="#7fd6cf" stroke="#0f172a"/>
+<text x="48" y="274">0</text><text x="48" y="239">1</text><text x="48" y="204">2</text><text x="48" y="169">3</text><text x="48" y="134">4</text><text x="48" y="99">5</text><text x="48" y="64">6</text><text x="48" y="29">7</text>
+<text x="72" y="286">9.5</text><text x="134" y="286">14.5</text><text x="196" y="286">19.5</text><text x="258" y="286">24.5</text><text x="320" y="286">29.5</text><text x="382" y="286">34.4</text><text x="444" y="286">39.5</text>
+<text x="250" y="312" font-weight="700">Ages</text><text x="8" y="170" transform="rotate(-90 14 170)" font-weight="700">No. of Visitors</text>
+</svg>
+endsvg

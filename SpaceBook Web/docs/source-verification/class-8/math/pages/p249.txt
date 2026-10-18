@@ -1,0 +1,36 @@
+@printed 247
+@issue The text prints "the smaller part of the circle is called the called the minor segment" and "One is a shaded region and the other is an unshaded region"; kept as printed. The segment symbol and the sector figure's shaded wedge are recreated from the figures (D marks the top of the minor segment; E the bottom of the circle).
+### Semicircle || نصف دائرہ || نیم دایره
+p The diameter of the circle divides the circle into two equal parts. Both equal parts of the circle are called semicircles. Look at the circle, the diameter $\overline{BC}$ divides the circle into two equal parts. Each part is called a semicircle. || دائرے کا قطر دائرے کو دو برابر حصوں میں تقسیم کرتا ہے۔ دائرے کے دونوں برابر حصے نصف دائرے کہلاتے ہیں۔ دائرے کو دیکھیں، قطر $\overline{BC}$ دائرے کو دو برابر حصوں میں تقسیم کرتا ہے۔ ہر حصہ نصف دائرہ کہلاتا ہے۔ || د دایرې قطر دایره په دوو برابرو برخو وېشي. د دایرې دواړه برابرې برخې نیمې دایرې بلل کېږي. دایرې ته وګورئ، قطر $\overline{BC}$ دایره په دوو برابرو برخو وېشي. هره برخه نیم دایره بلل کېږي.
+svg Semicircle: diameter BC through the centre O || نصف دائرہ: مرکز O سے گزرتا قطر BC || نیم دایره: د O مرکز له لارې قطر BC
+<svg viewBox="0 0 220 150" width="220" role="img" aria-label="A circle with diameter BC through the centre O; the two halves are labelled Semicircle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<circle cx="110" cy="75" r="60" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="68" y1="117" x2="152" y2="33" stroke="#0f172a" stroke-width="1.4"/><circle cx="110" cy="75" r="2.5"/>
+<text x="150" y="30">B</text><text x="54" y="124">C</text><text x="114" y="72">O</text><text x="6" y="22" font-weight="400">Semicircle</text><text x="170" y="84" font-weight="400">Semicircle</text>
+</svg>
+endsvg
+### Segment of a Circle || دائرے کا قطعہ || د دایرې قطعه
+p A segment is a region of a circle which is separated by a chord. When a circle is cut into unequal parts by a chord, the smaller part of the circle is called the called the minor segment and the larger part of the circle is called the major segment. The symbol ⌓ is used to show a segment. Look at the circle in the figure. The shaded region enclosed by the chord PQ and the minor arc PDQ is the minor segment of the circle. The unshaded region enclosed by the chord PQ and the major arc PEQ is the major segment of the circle. || قطعہ دائرے کا وہ حصہ ہے جو ایک وتر سے الگ ہو۔ جب دائرے کو وتر سے غیر برابر حصوں میں کاٹا جائے تو دائرے کا چھوٹا حصہ چھوٹا قطعہ اور بڑا حصہ بڑا قطعہ کہلاتا ہے۔ قطعہ ظاہر کرنے کے لیے علامت ⌓ استعمال ہوتی ہے۔ شکل میں دائرے کو دیکھیں۔ وتر PQ اور چھوٹی قوس PDQ سے گھرا ہوا سایہ دار حصہ دائرے کا چھوٹا قطعہ ہے۔ وتر PQ اور بڑی قوس PEQ سے گھرا ہوا بغیر سایہ حصہ دائرے کا بڑا قطعہ ہے۔ || قطعه د دایرې هغه سیمه ده چې د یوه وتر په واسطه جلا شوې وي. کله چې دایره د یوه وتر په واسطه په نابرابرو برخو پرې شي، د دایرې وړوکې برخه وړوکې قطعه او لویه برخه لویه قطعه بلل کېږي. د قطعې د ښودلو لپاره ⌓ نښه کارول کېږي. په شکل کې دایرې ته وګورئ. د PQ وتر او د PDQ وړوکي قوس په واسطه محصوره سیوري شوې سیمه د دایرې وړوکې قطعه ده. د PQ وتر او د PEQ لوی قوس په واسطه محصوره بې سیوري سیمه د دایرې لویه قطعه ده.
+svg Segments of a circle: chord PQ, minor arc PDQ shaded, centre O, E at the bottom || دائرے کے قطعے: وتر PQ، چھوٹی قوس PDQ || د دایرې قطعې: وتر PQ، وړوکی قوس PDQ
+<svg viewBox="0 0 200 180" width="200" role="img" aria-label="A circle with chord PQ near the top; the small segment between the chord and the arc PDQ is shaded green; centre O and point E on the circle below" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+<circle cx="100" cy="95" r="70" fill="none" stroke="#0f172a" stroke-width="1.3"/>
+<path d="M40 57A70 70 0 0 1 160 57Z" fill="#16a34a" fill-opacity="0.8" stroke="#0f172a"/>
+<circle cx="100" cy="95" r="3.5"/><circle cx="100" cy="165" r="3"/><text x="106" y="92">O</text><text x="100" y="180" text-anchor="middle">E</text>
+<text x="26" y="58">P</text><text x="164" y="58">Q</text><text x="96" y="22">D</text>
+</svg>
+endsvg
+### Sector of a Circle || دائرے کا قطاع || د دایرې قطاع
+p If we join points A and B of the circle with centre O, the circle is divided into two regions. One is a shaded region and the other is an unshaded region. Both regions are called sectors. The smaller region is called the minor sector and the larger region is called the major sector. || اگر ہم مرکز O والے دائرے کے نقاط A اور B کو مرکز سے ملائیں تو دائرہ دو حصوں میں تقسیم ہو جاتا ہے۔ ایک سایہ دار حصہ اور دوسرا بغیر سایہ حصہ۔ دونوں حصے قطاع کہلاتے ہیں۔ چھوٹا حصہ چھوٹا قطاع اور بڑا حصہ بڑا قطاع کہلاتا ہے۔ || که د O مرکز لرونکې دایرې A او B ټکي له مرکز سره وصل کړو، دایره په دوو سیمو ووېشل کېږي. یوه سیوري شوې سیمه او بله بې سیوري سیمه. دواړه سیمې قطاعونه بلل کېږي. وړوکې سیمه وړوکی قطاع او لویه سیمه لوی قطاع بلل کېږي.
+circ r=55 | O | sector=210:330 | pts=A:210;B:330
+p An angle formed by two radii having the center of circle as its vertex is called central angle. Here ∠AOB is the central angle. || دو نصف قطروں سے بننے والا زاویہ جس کا راس دائرے کا مرکز ہو مرکزی زاویہ کہلاتا ہے۔ یہاں ∠AOB مرکزی زاویہ ہے۔ || هغه زاویه چې د دوو شعاعونو په واسطه جوړېږي او د دایرې مرکز یې راس وي مرکزي زاویه بلل کېږي. دلته ∠AOB مرکزي زاویه ده.
+circ r=55 | O | sector=0:70 | pts=A:70;B:0 | angle=θ | rl=r
+### Interior of a Circle || دائرے کا اندرونی حصہ || د دایرې داخل
+p The points lying inside the circumference of a circle form the interior of the circle. In the figure, the interior of the circle is shaded. || دائرے کے محیط کے اندر واقع نقاط دائرے کا اندرونی حصہ بناتے ہیں۔ شکل میں دائرے کا اندرونی حصہ سایہ دار ہے۔ || د دایرې د محیط دننه پراتې ټکي د دایرې داخل جوړوي. په شکل کې د دایرې داخل سیوری شوی دی.
+svg Interior of a circle shaded || دائرے کا اندرونی حصہ سایہ دار || د دایرې داخل سیوری شوی
+<svg viewBox="0 0 150 150" width="150" role="img" aria-label="A circle with its interior shaded grey and a centre dot" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a"><circle cx="75" cy="75" r="62" fill="#9ca3af" stroke="#0f172a" stroke-width="1.5"/><circle cx="75" cy="75" r="2.5"/></svg>
+endsvg
+### Exterior of a Circle || دائرے کا بیرونی حصہ || د دایرې بهر
+p The points which lie outside the circle form the exterior of the circle. In the figure the exterior of the circle is shaded. || وہ نقاط جو دائرے کے باہر واقع ہوں دائرے کا بیرونی حصہ بناتے ہیں۔ شکل میں دائرے کا بیرونی حصہ سایہ دار ہے۔ || هغه ټکي چې د دایرې بهر پراته وي د دایرې بهر جوړوي. په شکل کې د دایرې بهر سیوری شوی دی.
+svg Exterior of a circle shaded || دائرے کا بیرونی حصہ سایہ دار || د دایرې بهر سیوری شوی
+<svg viewBox="0 0 190 150" width="190" role="img" aria-label="A grey rectangle with a white circle in the middle; the region outside the circle is shaded" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a"><rect x="4" y="4" width="182" height="142" fill="#9ca3af"/><circle cx="95" cy="75" r="55" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><circle cx="95" cy="75" r="2.5"/></svg>
+endsvg

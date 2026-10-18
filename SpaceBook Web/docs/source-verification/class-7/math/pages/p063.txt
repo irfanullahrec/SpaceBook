@@ -1,0 +1,31 @@
+@printed 59
+example 2 | If the wage of a factory worker for 5 days is Rs 6000, what will be his wage for 11 days? || اگر ایک فیکٹری مزدور کی 5 دن کی اجرت 6000 روپے ہو تو 11 دن کی اجرت کیا ہوگی؟ || که د یوه فابریکې کارګر د 5 ورځو مزد 6000 روپۍ وي، د 11 ورځو مزد به یې څومره وي؟
+p **Solution:** || **حل:** || **حل:**
+p To find the answer, we must first calculate his daily wage. || جواب معلوم کرنے کے لیے پہلے اس کی یومیہ اجرت معلوم کرنی ہوگی۔ || د ځواب د موندلو لپاره لومړی باید د هغه ورځنی مزد حساب کړو.
+eq \text{The wage for 1 day} = \frac{6000\ (\text{Rs})}{5\ (\text{days})} = \text{Rs } 1200 \text{ per day}
+p So, the rate is Rs 1200 per day. || لہٰذا شرح 1200 روپے یومیہ ہے۔ || نو نرخ په ورځ 1200 روپۍ دی.
+p Therefor the wage for 11 days will be: || لہٰذا 11 دن کی اجرت ہوگی: || نو د 11 ورځو مزد به وي:
+m Rs $1200 \times 11 =$ Rs 13,200
+endexample
+@deco Photograph of factory workers in helmets and masks (decorative).
+### Average rate || اوسط شرح || منځنی نرخ
+p Rate depends on the quantities involved. Sometimes the rate remains the same(constant) throughout. But there are some situations where it varies. Observe the example: || شرح شامل مقداروں پر منحصر ہوتی ہے۔ کبھی شرح پورے عرصے میں یکساں (مستقل) رہتی ہے۔ لیکن کچھ صورتوں میں یہ بدلتی رہتی ہے۔ مثال کا مشاہدہ کریں: || نرخ په شاملو مقدارونو پورې اړه لري. کله کله نرخ په ټوله موده کې یو شان (ثابت) پاتې کېږي. خو ځینې حالتونه شته چې بدلېږي. بېلګه وګورئ:
+p **Haris is learning new vocabulary words. He learned 12 new words in 3 days.** || **حارث نئے الفاظ سیکھ رہا ہے۔ اس نے 3 دنوں میں 12 نئے الفاظ سیکھے۔** || **حارث نوي لغتونه زده کوي. هغه په 3 ورځو کې 12 نوي لغتونه زده کړل.**
+eq \text{Rate of learning new words} = \frac{12\ (\text{words})}{3\ (\text{days})} = 4 \text{ words per day}
+p We assume that his learning rate is constant throughout the 12 days. So according to this, his rate of learning new words is 4 words per day. || ہم فرض کرتے ہیں کہ اس کی سیکھنے کی شرح 12 دنوں میں مستقل رہی۔ اس کے مطابق اس کے نئے الفاظ سیکھنے کی شرح 4 الفاظ یومیہ ہے۔ || موږ فرض کوو چې د هغه د زده کړې نرخ په ټولو 12 ورځو کې ثابت دی. نو د دې له مخې د نویو لغتونو د زده کړې نرخ یې په ورځ 4 لغتونه دی.
+p In actual situation, the rate may or may not be the same. For instance, he might have learned 5 words on day one, 3 words on day two and 4 words on day three. || حقیقی صورتِ حال میں شرح یکساں ہو بھی سکتی ہے اور نہیں بھی۔ مثلاً اس نے پہلے دن 5، دوسرے دن 3 اور تیسرے دن 4 الفاظ سیکھے ہوں۔ || په اصلي حالت کې کېدای شي نرخ یو شان وي او کېدای شي نه وي. د بېلګې په توګه، کېدای شي هغه په لومړۍ ورځ 5، په دوهمه ورځ 3 او په درېیمه ورځ 4 لغتونه زده کړي وي.
+p In many real-life situations, the rate changes and doesn't remain the same throughout and the rate calculated is in fact the **average rate**. || حقیقی زندگی کی بہت سی صورتوں میں شرح بدلتی رہتی ہے اور یکساں نہیں رہتی اور جو شرح حساب کی جاتی ہے وہ دراصل **اوسط شرح** ہوتی ہے۔ || د ورځني ژوند په ډېرو حالتونو کې نرخ بدلېږي او یو شان نه پاتې کېږي او هغه نرخ چې حساب کېږي په حقیقت کې **منځنی نرخ** دی.
+eq \text{Average rate of learning new words} = \frac{5 + 3 + 4}{3} = \frac{12\ (\text{words})}{3\ (\text{days})} = 12 \text{ words per day}
+@issue The average-rate calculation prints the result as "= 12 words per day" (12 words ÷ 3 days = 4 words per day), and the text says "constant throughout the 12 days" where the period is 3 days. Both kept as printed.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Average rate is the rate in which something is done during a definite time interval. Constant rate assumes that the average rate of something being done is the same during the whole-time interval. || اوسط شرح وہ شرح ہے جس سے کوئی کام ایک مقررہ وقفے میں کیا جاتا ہے۔ مستقل شرح یہ فرض کرتی ہے کہ کسی کام کی اوسط شرح پورے وقفے کے دوران یکساں رہتی ہے۔ || منځنی نرخ هغه نرخ دی چې یو کار په یوه ټاکلې موده کې پرې ترسره کېږي. ثابت نرخ فرض کوي چې د یوه کار منځنی نرخ په ټوله موده کې یو شان دی.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Write 3 situations from daily life where: || روزمرہ زندگی سے 3 ایسی صورتیں لکھیں جہاں: || د ورځني ژوند 3 داسې حالتونه ولیکئ چې:
+qp a | Constant rate is used || مستقل شرح استعمال ہوتی ہے || ثابت نرخ کارول کېږي
+qp b | Average rate is used. || اوسط شرح استعمال ہوتی ہے۔ || منځنی نرخ کارول کېږي.
+endbox
+@deco Photograph of a child writing at a desk (decorative).
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Get students into groups and ask them to make three examples on real life situations involving average rate. || طلبہ کو گروپوں میں تقسیم کریں اور ان سے اوسط شرح پر مشتمل حقیقی زندگی کی تین مثالیں بنانے کو کہیں۔ || زده کوونکي په ډلو ووېشئ او ترې وغواړئ چې د منځني نرخ اړوند د ورځني ژوند درې بېلګې جوړې کړي.
+endbox

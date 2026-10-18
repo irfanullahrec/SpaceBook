@@ -1,0 +1,22 @@
+@printed 100
+@issue Q8 ii) prints "B = Z⁻ (Set of negative integers)" and Q10 i) uses E⁺ and O⁺; kept as printed.
+q 8 | State and verify the De Morgan's laws for the following sets: || درج ذیل سیٹوں کے لیے ڈی مورگن کے قوانین بیان کریں اور ان کی تصدیق کریں: || د لاندې سېټونو لپاره د ډي مورګن قوانین بیان او تایید کړئ:
+qp i | U = {1, 2, 3, 4, 5,..., 30}, A = {1, 3, 5, 7,..., 25} and B = {2, 4, 6, 8,..., 26}
+qp ii | U = Z (Set of integers), A = E (Set of even integers) and B = Z⁻ (Set of negative integers) || U = Z (صحیح اعداد کا سیٹ)، A = E (جفت صحیح اعداد کا سیٹ) اور B = Z⁻ (منفی صحیح اعداد کا سیٹ) || U = Z (د تامو عددونو سېټ)، A = E (د جفتو تامو عددونو سېټ) او B = Z⁻ (د منفي تامو عددونو سېټ)
+q 9 | Verify; || تصدیق کریں؛ || تایید کړئ؛
+qp i | X ∪ (Y ∩ T) = (X ∪ Y) ∩ (X ∪ T)
+qp ii | X ∩ (Y ∪ T) = (X ∩ Y) ∪ (X ∩ T)
+m For X = {−9, −7, −5, −3, −1, 0, 1, 3}
+m Y = {−5, −3, −1, 0, 1, 3, 5}
+m and T = {−10, −5, 0, +5, +10}
+q 10 | State and verify the associative and distributive laws for the sets: || درج ذیل سیٹوں کے لیے تلازمی اور تقسیمی قوانین بیان کریں اور ان کی تصدیق کریں: || د لاندې سېټونو لپاره اتحادي او وېشونکي قوانین بیان او تایید کړئ:
+qp i | E⁺ = {2, 4, 6, 8,.................}, O⁺ = {1, 3, 5, 7,..............}, P = {2, 3, 5, 7, 11,............}
+qp ii | M = $\{x \mid x \in W \wedge 1 \leq x < 10\}$, N = $\{x \mid x \in P \wedge 2 < x \leq 13\}$, T = $\{x \mid x \in N \wedge 1 \leq x \leq 8\}$
+q 11 | On a certain day 80 customers visited a stationary shop. 30 customer bought pencils, 25 customer bought erasers and 15 bought both pencils and erasers. Remaining customer bought other stationary items. Show this information using Venn diagram. || ایک دن 80 گاہک ایک اسٹیشنری کی دکان پر آئے۔ 30 گاہکوں نے پنسلیں، 25 گاہکوں نے ربڑ اور 15 نے پنسلیں اور ربڑ دونوں خریدے۔ باقی گاہکوں نے اسٹیشنری کی دوسری اشیاء خریدیں۔ اس معلومات کو وین ڈایاگرام کے ذریعے ظاہر کریں۔ || په یوه ورځ 80 پېرودونکي یوه قرطاسیه پلورنځي ته راغلل. 30 پېرودونکو پنسلونه، 25 پېرودونکو پاکوونکي او 15 دواړه پنسلونه او پاکوونکي واخیستل. پاتې پېرودونکو د قرطاسیې نور توکي واخیستل. دا معلومات د وین ډیاګرام په مرسته وښایاست.
+q 12 | In a math book there are total 15 units, 6 units are based on algebra and 5 units are based on numbers and operation. 2 units are based on both algebra and numbers operation. Other units are based on other strands. Show this information through Venn diagram. || ریاضی کی ایک کتاب میں کل 15 اکائیاں ہیں، 6 اکائیاں الجبرا پر اور 5 اکائیاں اعداد اور عملیات پر مبنی ہیں۔ 2 اکائیاں الجبرا اور اعداد کی عملیات دونوں پر مبنی ہیں۔ باقی اکائیاں دوسرے شعبوں پر مبنی ہیں۔ اس معلومات کو وین ڈایاگرام کے ذریعے ظاہر کریں۔ || د ریاضي په یوه کتاب کې ټول 15 څپرکي دي، 6 څپرکي پر الجبر او 5 څپرکي پر عددونو او عملیاتو ولاړ دي. 2 څپرکي پر دواړو الجبر او د عددونو عملیاتو ولاړ دي. نور څپرکي پر نورو برخو ولاړ دي. دا معلومات د وین ډیاګرام له لارې وښایاست.
+q 13 | The data of 160 students who like math, science, and other subjects. || ریاضی، سائنس اور دوسرے مضامین پسند کرنے والے 160 طلبہ کا ڈیٹا۔ || د 160 زده کوونکو معلومات چې ریاضي، ساینس او نور مضامین خوښوي.
+table
+th | Students who like Maths | Students who like Science | Students who like Maths and science both | Students who like subjects other than math and science
+tr | 70 | 50 | 20 | 20
+endtable
+p Create a Venn diagram to illustrate this information. || اس معلومات کو ظاہر کرنے کے لیے وین ڈایاگرام بنائیں۔ || د دې معلوماتو د ښودلو لپاره وین ډیاګرام جوړ کړئ.

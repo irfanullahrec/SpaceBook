@@ -1,0 +1,44 @@
+@printed 51
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following natural numbers by division method. || تقسیم کے طریقے سے درج ذیل قدرتی اعداد کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې طبیعي عددونو مربع جذر معلوم کړئ.
+qp a | 64
+qp b | 121
+qp c | 900
+qp d | 324
+endbox
+example 2 | Find the square root of $\frac{676}{900}$ using division. || تقسیم کے ذریعے $\frac{676}{900}$ کا جذرِ مربع معلوم کریں۔ || د وېش په مرسته د $\frac{676}{900}$ مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p To find the square root of the given fraction by division method, we find the square root of the numerator and denominator separately. || تقسیم کے طریقے سے دیے گئے کسر کا جذرِ مربع معلوم کرنے کے لیے ہم شمار کنندہ اور نسب نما کا جذرِ مربع الگ الگ معلوم کرتے ہیں۔ || د وېش په طریقه د ورکړل شوي کسر د مربع جذر د موندلو لپاره، د صورت او مخرج مربع جذر جلا جلا معلوموو.
+m $676 = 6\,\overline{76}$
+m $289 = 2\,\overline{89}$
+p Now follow the same steps as in the previous example and find the square root of 676 and 289. || اب پچھلی مثال والے مراحل اختیار کریں اور 676 اور 289 کا جذرِ مربع معلوم کریں۔ || اوس د تېرې بېلګې پړاوونه تعقیب کړئ او د 676 او 289 مربع جذر معلوم کړئ.
+sqrtdiv 26 | 6 76 | 2:4:2 76 ; 46:2 76:0
+sqrtdiv 17 | 2 89 | 1:1:1 89 ; 27:1 89:0
+p The square root of $\frac{676}{900} = \frac{26}{17}$ || $\frac{676}{900}$ کا جذرِ مربع $= \frac{26}{17}$ || د $\frac{676}{900}$ مربع جذر $= \frac{26}{17}$
+p **Verification:** $26 \times 26 = 676$, $17 \times 17 = 676$ || **تصدیق:** $26 \times 26 = 676$، $17 \times 17 = 676$ || **تایید:** $26 \times 26 = 676$، $17 \times 17 = 676$
+endexample
+@issue Example 2 contains printed errors: the question asks for √(676/900) but the solution works with 676/289 and states √(676/900) = 26/17 (the correct value is 26/30 = 13/15; 26/17 is √(676/289)); the verification line prints "17 × 17 = 676" (should be 289); "289 = 2 89" is printed with the overline over all three digits. Kept as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following fractions by division method. || تقسیم کے طریقے سے درج ذیل کسور کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې کسرونو مربع جذر معلوم کړئ.
+qp a | $\frac{25}{121}$
+qp b | $\frac{400}{900}$
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following decimals by division method. || تقسیم کے طریقے سے درج ذیل اعشاریوں کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې اعشاریو مربع جذر معلوم کړئ.
+qp a | 0.81
+qp b | 9.61
+endbox
+example 3 | Find the square root of 4.41 by division method. || تقسیم کے طریقے سے 4.41 کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د 4.41 مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p To find the square root of the given decimal, first change it into a fraction and then find the square root. || دیے گئے اعشاریے کا جذرِ مربع معلوم کرنے کے لیے پہلے اسے کسر میں تبدیل کریں اور پھر جذرِ مربع معلوم کریں۔ || د ورکړل شوې اعشاریې د مربع جذر د موندلو لپاره لومړی هغه کسر ته واړوئ او بیا مربع جذر معلوم کړئ.
+m $4.41 = \frac{441}{100}$
+sqrtdiv 21 | 4 41 | 2:4:0 41 ; 41:41:0
+sqrtdiv 10 | 1 00 | 1:1:0 00 ; 20:00:0
+p The square root of $4.41 = \frac{21}{10} = 2.1$. || 4.41 کا جذرِ مربع $= \frac{21}{10} = 2.1$۔ || د 4.41 مربع جذر $= \frac{21}{10} = 2.1$.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p For any two positive numbers a and b, $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$ and $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$. || کسی بھی دو مثبت اعداد a اور b کے لیے $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$ اور $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$۔ || د هر دوو مثبتو عددونو a او b لپاره $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$ او $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students the steps to find the square root of numbers by division method. Make three groups of the students. Give each group some cards of numbers and ask them to find the square root of these numbers. || طلبہ کو تقسیم کے طریقے سے اعداد کا جذرِ مربع معلوم کرنے کے مراحل سمجھائیں۔ طلبہ کے تین گروپ بنائیں۔ ہر گروپ کو اعداد کے کچھ کارڈ دیں اور ان سے ان اعداد کا جذرِ مربع معلوم کرنے کو کہیں۔ || زده کوونکو ته د وېش په طریقه د عددونو د مربع جذر د موندلو پړاوونه تشریح کړئ. د زده کوونکو درې ډلې جوړې کړئ. هرې ډلې ته د عددونو څو کارتونه ورکړئ او ترې وغواړئ چې د دې عددونو مربع جذر معلوم کړي.
+endbox

@@ -1,0 +1,15 @@
+@printed 106
+@deco A green lace; picture of an airport with a taxi and a bus; Try it box with two routes from a primary school to a house.
+q 3 | Rehana bought 19 m 82 cm lace and used 8 m 61 cm from it on her shirt. Find the length of remaining lace. || ریحانہ نے 19 m 82 cm لیس خریدی اور اس میں سے 8 m 61 cm اپنی قمیص پر استعمال کی۔ بچی ہوئی لیس کی لمبائی معلوم کریں۔ || ریحانې 19 m 82 cm لیس واخیست او له هغه څخه یې 8 m 61 cm په خپل کمیس وکاراوه. د پاتې لیس اوږدوالی معلوم کړئ.
+qsol measop 19 m 82 cm - 8 m 61 cm
+q 4 | On returning from London Subhan travelled 950 km 460 m distance by bus and taxi. If he travelled 900 km 230 m distance by bus. Find the distance he travelled by taxi. || لندن سے واپسی پر سبحان نے بس اور ٹیکسی سے 950 km 460 m فاصلہ طے کیا۔ اگر اس نے بس سے 900 km 230 m فاصلہ طے کیا تو ٹیکسی سے طے کیا گیا فاصلہ معلوم کریں۔ || له لندن څخه د راستنېدو پر مهال سبحان په بس او ټکسي 950 km 460 m واټن ووهه. که په بس یې 900 km 230 m واټن وهلی وي، په ټکسي وهل شوی واټن معلوم کړئ.
+qsol measop 950 km 460 m - 900 km 230 m
+endexercise
+box check | Try it || کوشش کریں || هڅه وکړئ
+p Route-1 = 5800 · Route-2 = ☐ || روٹ-1 = 5800 · روٹ-2 = ☐ || لار-1 = 5800 · لار-2 = ☐
+p Suleman travels 5,800 meter to reach school via route-1, while the distance from rout-2 to reach the school is 800 meters less. || سلیمان روٹ-1 سے اسکول پہنچنے کے لیے 5,800 میٹر سفر کرتا ہے، جبکہ روٹ-2 سے اسکول کا فاصلہ 800 میٹر کم ہے۔ || سلیمان د لار-1 له لارې ښوونځي ته د رسېدو لپاره 5,800 متره سفر کوي، په داسې حال کې چې د لار-2 له لارې ښوونځي ته واټن 800 متره کم دی.
+q - | What is distance of route-2? || روٹ-2 کا فاصلہ کیا ہے؟ || د لار-2 واټن څومره دی؟
+qsol colop 5800 - 800
+q - | What is total distance of rout-1 and route-2? || روٹ-1 اور روٹ-2 کا کل فاصلہ کیا ہے؟ || د لار-1 او لار-2 ټول واټن څومره دی؟
+qsol colop 5800 + 5000
+endbox

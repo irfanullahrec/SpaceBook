@@ -1,0 +1,35 @@
+@printed 11
+example 1
+p Express $\frac{4}{9}$ as a decimal fraction. || $\frac{4}{9}$ کو اعشاری کسر کی صورت میں لکھیں۔ || $\frac{4}{9}$ د اعشاري کسر په بڼه ولیکئ.
+## Solution: || حل: || حل:
+longdiv 9 | 4.000 | 0.444…@5 | -0@0 ; 40@2 ; -36@2 ; 40@3 ; -36@3 ; 40@4 ; -36@4 ; 4@4
+- First divide the dividend 4 by the divisor 9. Here the dividend 4 is less than the divisor 9. So, $9 \times 0 = 0$ r 4. || پہلے مقسوم 4 کو مقسوم علیہ 9 سے تقسیم کریں۔ یہاں مقسوم 4، مقسوم علیہ 9 سے چھوٹا ہے۔ لہٰذا $9 \times 0 = 0$ باقی 4۔ || لومړی وېشل کېدونکی 4 په وېشونکي 9 ووېشئ. دلته وېشل کېدونکی 4 له وېشونکي 9 څخه کوچنی دی. نو $9 \times 0 = 0$ پاتې 4.
+- Now the remainder 4 is less than the divisor 9. So, put a decimal point in the quotient. Also put a decimal point after the dividend 4 and write an additional zero after it. So, 4 will be written as 4.0 (4 is same as 4.0). The decimal point in the quotient and dividend must be aligned. || اب باقی 4، مقسوم علیہ 9 سے کم ہے۔ لہٰذا خارج قسمت میں اعشاریہ لگائیں۔ مقسوم 4 کے بعد بھی اعشاریہ لگائیں اور اس کے بعد ایک اضافی صفر لکھیں۔ یوں 4 کو 4.0 لکھا جائے گا (4 اور 4.0 ایک ہی ہیں)۔ خارج قسمت اور مقسوم میں اعشاریہ ایک سیدھ میں ہونا چاہیے۔ || اوس پاتې شونی 4 له وېشونکي 9 څخه کوچنی دی. نو په خارج قسمت کې اعشاري ټکی کېږدئ. د وېشل کېدونکي 4 وروسته هم اعشاري ټکی کېږدئ او ورپسې یو اضافي صفر ولیکئ. نو 4 به 4.0 ولیکل شي (4 او 4.0 یو شان دي). په خارج قسمت او وېشل کېدونکي کې اعشاري ټکي باید په یوه لیکه کې وي.
+- Bring down the 0. Now the remainder of 4 will become 40. || 0 کو نیچے لائیں۔ اب باقی 4، 40 بن جائے گا۔ || 0 ښکته راوړئ. اوس پاتې شونی 4 به 40 شي.
+- Carry on the division process. We can see that the division process continues infinitely and we cannot get the remainder of zero. || تقسیم کا عمل جاری رکھیں۔ ہم دیکھ سکتے ہیں کہ تقسیم کا عمل لامتناہی طور پر جاری رہتا ہے اور ہمیں صفر باقی نہیں ملتا۔ || د وېش عمل ته دوام ورکړئ. موږ لیدلی شو چې د وېش عمل بې پایه دوام کوي او صفر پاتې شونی نه ترلاسه کوو.
+p So, $\frac{4}{9} = 0.444\ldots$ is a repeating or recurring decimal number as the number 4 is infinitely repeated. || لہٰذا $\frac{4}{9} = 0.444\ldots$ ایک دہرایا جانے والا یا متواتر اعشاری عدد ہے کیونکہ عدد 4 لامحدود بار دہرایا جاتا ہے۔ || نو $\frac{4}{9} = 0.444\ldots$ یو تکرارېدونکی اعشاري عدد دی ځکه چې 4 عدد بې شمېره ځله تکرارېږي.
+p We can represent it as $0.444\ldots = 0.\overline{4}$. || ہم اسے $0.444\ldots = 0.\overline{4}$ کی صورت میں ظاہر کر سکتے ہیں۔ || موږ دا د $0.444\ldots = 0.\overline{4}$ په بڼه ښودلی شو.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A small bar over the repeated digit(s) after the decimal point is used to represent the repeating or recurring decimals. || اعشاریہ کے بعد دہرائے جانے والے ہندسے (ہندسوں) پر ایک چھوٹی لکیر متواتر اعشاریہ کو ظاہر کرنے کے لیے استعمال ہوتی ہے۔ || د اعشاري ټکي وروسته د تکرارېدونکي رقم (رقمونو) پر سر یوه کوچنۍ کرښه د تکرارېدونکو اعشاري عددونو د ښودلو لپاره کارول کېږي.
+endbox
+p Few more examples of recurring decimals include: || متواتر اعشاریہ کی چند مزید مثالیں یہ ہیں: || د تکرارېدونکو اعشاري عددونو څو نورې بېلګې دا دي:
+m $\frac{12}{9} = 1.333\ldots = 1.\overline{3},\ \frac{8}{11} = 0.727272\ldots = 0.\overline{72}$
+p In the above examples, a digit or a block of digits is infinitely repeating after the decimal point. So, these are recurring decimals. || اوپر کی مثالوں میں اعشاریہ کے بعد ایک ہندسہ یا ہندسوں کا مجموعہ لامحدود بار دہرایا جا رہا ہے۔ لہٰذا یہ متواتر اعشاریہ ہیں۔ || په پورتنیو بېلګو کې د اعشاري ټکي وروسته یو رقم یا د رقمونو یوه ډله بې شمېره ځله تکرارېږي. نو دا تکرارېدونکي اعشاري دي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Identify the recurring decimal. || متواتر اعشاریہ کی شناخت کریں۔ || تکرارېدونکی اعشاري وپېژنئ.
+qp a | 0.3456754
+qp b | 0.66666
+qp c | 0.343434
+qp d | 0.123123
+endbox
+example 2
+p Express $\frac{2}{3}$ as a decimal fraction. || $\frac{2}{3}$ کو اعشاری کسر کی صورت میں لکھیں۔ || $\frac{2}{3}$ د اعشاري کسر په بڼه ولیکئ.
+## Solution: || حل: || حل:
+longdiv 3 | 2.000 | 0.666…@5 | -0@0 ; 20@2 ; -18@2 ; 20@3 ; -18@3 ; 20@4 ; -18@4 ; 2@4
+p By performing the division, we can see that: || تقسیم کرنے سے ہم دیکھ سکتے ہیں کہ: || د وېش په ترسره کولو سره لیدلی شو چې:
+p $\frac{2}{3} = 0.666\ldots$ is a repeating or recurring decimal number as the number 6 is infinitely repeated. || $\frac{2}{3} = 0.666\ldots$ ایک دہرایا جانے والا یا متواتر اعشاری عدد ہے کیونکہ عدد 6 لامحدود بار دہرایا جاتا ہے۔ || $\frac{2}{3} = 0.666\ldots$ یو تکرارېدونکی اعشاري عدد دی ځکه چې 6 عدد بې شمېره ځله تکرارېږي.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The dot over the repeated digit(s) after the decimal point is also used to show that the digit or blocks of digits repeats itself an infinite number of times. || اعشاریہ کے بعد دہرائے جانے والے ہندسے (ہندسوں) پر نقطہ بھی یہ ظاہر کرنے کے لیے استعمال ہوتا ہے کہ ہندسہ یا ہندسوں کا مجموعہ لامحدود بار دہرایا جاتا ہے۔ || د اعشاري ټکي وروسته د تکرارېدونکي رقم (رقمونو) پر سر ټکی هم د دې ښودلو لپاره کارول کېږي چې رقم یا د رقمونو ډله بې شمېره ځله تکرارېږي.
+endbox

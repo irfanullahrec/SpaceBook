@@ -1,0 +1,24 @@
+@printed 69
+@status lesson
+svg Flowchart with a loop: the same school-preparation flowchart with a loop arrow from Ready for School/End back to the input ("Daily Activity"), so the tasks are performed repeatedly. || لوپ والا فلو چارٹ: اسی اسکول کی تیاری کے فلو چارٹ میں "روزانہ سرگرمی" کا لوپ تیر ہے جو آخر سے واپس ان پٹ تک جاتا ہے تاکہ کام بار بار ہوں۔ || د لوپ سره فلو چارټ: همدا د ښوونځي د چمتووالي فلو چارټ چې د "ورځنی فعالیت" لوپ غشی لري چې له پای نه بېرته ان پټ ته ځي تر څو کارونه بیا بیا ترسره شي.
+<svg viewBox="0 0 540 330" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="School preparation flowchart with loop">
+<g fill="#fff" stroke="#1e293b" stroke-width="2"><rect x="60" y="8" width="90" height="34" rx="17"/><path d="M55 60 H185 L172 104 H42 Z"/><rect x="40" y="140" width="100" height="44"/><rect x="165" y="140" width="100" height="44"/><rect x="290" y="140" width="100" height="44"/><rect x="415" y="140" width="100" height="44"/><path d="M420 215 H525 L515 255 H410 Z"/><rect x="430" y="285" width="90" height="34" rx="17"/></g>
+<g stroke="#1e293b" stroke-width="2" fill="none"><path d="M105 42 V60 M105 104 V140 M140 162 H165 M265 162 H290 M390 162 H415 M465 184 V215 M465 255 V285"/><path stroke="#db2777" d="M410 235 H12 V28 H60"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="105" y="30">Start</text><text x="115" y="80">Dress, Books,</text><text x="115" y="94">hair brush, etc</text><text x="90" y="160">Getting the</text><text x="90" y="175">dress ready</text><text x="215" y="166">Taking shower</text><text x="340" y="166">Getting dressed</text><text x="465" y="160">Gathering</text><text x="465" y="175">schoolbooks</text><text x="465" y="232">Ready for</text><text x="465" y="246">School</text><text x="475" y="307">End</text></g>
+<text x="200" y="260" font-weight="bold" fill="#db2777" text-anchor="middle">Daily Activity</text>
+</svg>
+endsvg
+box note | 2 || ۲ || ۲
+p Include loop to perform the tasks repeatedly. See next flowchart when to terminate the loop. || کاموں کو بار بار انجام دینے کے لیے لوپ شامل کریں۔ لوپ کب ختم کرنا ہے یہ اگلے فلو چارٹ میں دیکھیں۔ || کارونه بیا بیا ترسره کولو لپاره لوپ شامل کړئ. لوپ کله ختمول دي، راتلونکي فلو چارټ وګورئ.
+endbox
+svg Flowchart with a conditional statement: Start → decision diamond "If it is weekday?"; YES → Input Dress, Books, hair brush → Tasks 1–4 → Output Ready for School → End; NO → Wear any dress & do weekend activities → End. The daily-activity loop surrounds the YES branch. || مشروط بیان والا فلو چارٹ: اسٹارٹ ← فیصلے کا ہیرا "کیا آج کام کا دن ہے؟"؛ ہاں ← لباس، کتابیں، برش ان پٹ ← کام ۱ تا ۴ ← آؤٹ پٹ اسکول کے لیے تیار ← اینڈ؛ نہیں ← کوئی بھی لباس پہن کر ہفتہ وار سرگرمیاں ← اینڈ۔ روزانہ سرگرمی کا لوپ ہاں والی شاخ کو گھیرتا ہے۔ || د شرطي بیان سره فلو چارټ: پیل ← پرېکړې الماس "که ورځ کاري وي؟"؛ هو ← جامې، کتابونه، برش ان پټ ← ۱ تر ۴ کارونه ← آوټ پټ ښوونځي ته چمتو ← پای؛ نه ← هره جامه واغوندئ او د اونۍ پای فعالیتونه ← پای. د ورځني فعالیت لوپ د هو څانګه ګېرچاپېره کوي.
+<svg viewBox="0 0 540 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Flowchart with conditional statement">
+<g fill="#fff" stroke="#1e293b" stroke-width="2"><rect x="30" y="8" width="90" height="30" rx="15"/><path d="M75 50 L135 82 L75 114 L15 82 Z" stroke="#db2777"/><path d="M40 140 H150 L140 178 H30 Z"/><rect x="25" y="205" width="90" height="42"/><rect x="135" y="205" width="90" height="42"/><rect x="245" y="205" width="90" height="42"/><rect x="355" y="205" width="90" height="42"/><path d="M200 270 H290 L282 305 H192 Z"/><path d="M430 270 H530 L520 312 H420 Z"/><rect x="250" y="345" width="130" height="40" rx="20"/></g>
+<g stroke="#1e293b" stroke-width="2" fill="none"><path d="M75 38 V50 M75 114 V140 M75 178 V205 M115 226 H135 M225 226 H245 M335 226 H355 M400 247 V258 H245 V270 M135 82 H475 V270 M245 305 V345 M475 312 V365 H380"/><path stroke="#db2777" d="M10 110 V330 H190"/></g>
+<g fill="#1e293b" text-anchor="middle"><text x="75" y="28">Start</text><text x="75" y="80">If it is</text><text x="75" y="95">weekday?</text><text x="95" y="162">Dress, Books, hair brush</text><text x="70" y="224">Getting dress</text><text x="180" y="224">Taking shower</text><text x="290" y="224">Getting dressed</text><text x="400" y="220">Gathering</text><text x="400" y="235">schoolbooks</text><text x="241" y="292">Ready for School</text><text x="475" y="286">Wear any dress &amp;</text><text x="475" y="300">do weekend activities</text><text x="315" y="370">End</text></g>
+<g fill="#db2777" font-weight="bold"><text x="150" y="76">YES</text><text x="300" y="78">NO — Conditional Statement</text><text x="80" y="350">Daily Activity</text></g>
+</svg>
+endsvg
+box note | 3 || ۳ || ۳
+p Include the conditional statement, where decisions are required. || جہاں فیصلے درکار ہوں وہاں مشروط بیان شامل کریں۔ || چېرته چې پرېکړې پکار وي هلته شرطي بیان شامل کړئ.
+endbox

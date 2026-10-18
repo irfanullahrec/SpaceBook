@@ -1,0 +1,40 @@
+@printed 121
+@issue Example 3's final line prints "+ 9xy" where the working gives −9xy + 18xy = +9xy; kept as printed. The last note ends mid-sentence ("by the") and continues on page 122.
+example 3
+p Simplify: $(2x + 3y)(x^2 - 3x + 4) - 3(x - 3y)^2$ || مختصر کریں: $(2x + 3y)(x^2 - 3x + 4) - 3(x - 3y)^2$ || ساده کړئ: $(2x + 3y)(x^2 - 3x + 4) - 3(x - 3y)^2$
+## Solution: || حل: || حل:
+m $(2x + 3y)(x^2 - 3x + 4) - 3(x - 3y)^2$
+m $= 2x(x^2 - 3x + 4) + 3y(x^2 - 3x + 4) - 3[x^2 - 2(x)(3y) + 9y^2]$
+m $= 2x^3 - 6x^2 + 8x + 3x^2y - 9xy + 12y - 3(x^2 - 6xy + 9y^2)$
+m $= 2x^3 - 6x^2 + 8x + 3x^2y - 9xy + 12y - 3x^2 + 18xy - 27y^2$
+m $= 2x^3 - 6x^2 - 3x^2 + 8x + 3x^2y - 9xy + 18xy + 12y - 27y^2$
+m $= 2x^3 - 9x^2 + 8x + 3x^2y + 9xy + 12y - 27y^2$
+endexample
+exercise 6.6
+q 1 | Simplify: || مختصر کریں: || ساده کړئ:
+qp i | $(2x + 3)(3x + 2y)$
+qp ii | $(5x - 2y)(2x - 3xy + 5y)$
+qp iii | $(7f + 5g)(7f - 5g)$
+qp iv | $(2p + 3q - r)(5p - 4r)$
+qp v | $(p^2 + 2p)(p^2 + q^2 - r^2)$
+qp vi | $(x - 2)^2(x^2 - 4x + 4)$
+q 2 | Multiply the polynomials given in each of the following cases: || درج ذیل ہر صورت میں دی گئی کثیر رقمیوں کو ضرب دیں: || په لاندې هره قضیه کې ورکړل شوې څو حدي افادې ضرب کړئ:
+qp i | $x$, $(x - 5)$ and $(x + 7)$
+qp ii | $3x$, $(x^2 + y^2)$ and $(x^2 - y^2)$
+qp iii | $2b$, $(10c - a)$, $(a - 2c)$
+qp iv | $(p + q)$, $(p - q)$ and $(p^2 - q^2)$
+q 3 | Simplify the following: || درج ذیل کو مختصر کریں: || لاندې ساده کړئ:
+qp i | $5(a - 2)(a + 3) - 2(a + 2)(a - 3)$
+qp ii | $7x(x^2 + 4y - z) + 4(x + 2z)(x^2 - x)$
+qp iii | $9(3p - 1)(2p + 2) - 7(3p - 2)^2$
+qp iv | $5(x^2 - 2x + 5)(x - 5) - 2(x + 5)^2$
+qp v | $4(2x + 5y)^2 - 2(3x - 2y)^2$
+qp vi | $(2x + 3y)^2 + (3x - 2y)^2 - (4x + 3y)^2$
+endexercise
+@sec 6.7 | Division of Polynomials || کثیر رقمیوں کی تقسیم || د څو حدي افادو وېش
+# 6.7 Division of Polynomials || 6.7 کثیر رقمیوں کی تقسیم || 6.7 د څو حدي افادو وېش
+p Division of a polynomial by another polynomial is the reverse process of the multiplication of two polynomials. The division of polynomials is a bit different from the division of numbers. However, the basic terms of 'dividend', 'quotient' and 'divisor' are also used in the same sense in algebra. || ایک کثیر رقمی کی دوسری کثیر رقمی سے تقسیم دو کثیر رقمیوں کی ضرب کا الٹ عمل ہے۔ کثیر رقمیوں کی تقسیم اعداد کی تقسیم سے تھوڑی مختلف ہے۔ تاہم 'مقسوم'، 'خارج قسمت' اور 'مقسوم علیہ' کی بنیادی اصطلاحات الجبرا میں بھی اسی مفہوم میں استعمال ہوتی ہیں۔ || د یوې څو حدي افادې وېش پر بلې څو حدي افادې د دوو څو حدي افادو د ضرب معکوس عمل دی. د څو حدي افادو وېش د عددونو له وېش څخه یو څه توپیر لري. خو د 'مقسوم'، 'خارج قسمت' او 'وېشونکي' بنسټیزې اصطلاحګانې په الجبر کې هم په همدې معنا کارول کېږي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- Division of polynomials is the reverse process of multiplication of polynomials. || کثیر رقمیوں کی تقسیم کثیر رقمیوں کی ضرب کا الٹ عمل ہے۔ || د څو حدي افادو وېش د څو حدي افادو د ضرب معکوس عمل دی.
+- If we know that the product of any two polynomials and one of the two polynomials, we can find the other polynomial by dividing the product by the given polynomial. || اگر ہمیں کسی بھی دو کثیر رقمیوں کا حاصلِ ضرب اور ان دونوں میں سے ایک کثیر رقمی معلوم ہو تو ہم حاصلِ ضرب کو دی گئی کثیر رقمی سے تقسیم کر کے دوسری کثیر رقمی معلوم کر سکتے ہیں۔ || که د هر دوو څو حدي افادو حاصل ضرب او له دې دوو څخه یوه څو حدي افاده معلومه وي، بله څو حدي افاده د حاصل ضرب پر ورکړل شوې څو حدي افادې د وېشلو سره موندلی شو.
+endbox

@@ -1,0 +1,21 @@
+@printed 93
+cnt note50:1 frame "→" note20:2 coin10:1 frame || One 50 rupees note = Two 20 rupees notes and one 10 rupees coin; Rs. 50 = Rs. 20 + Rs. 20 + Rs. 10 || پچاس روپے کا ایک نوٹ = بیس روپے کے دو نوٹ اور دس روپے کا ایک سکہ؛ ۵۰ روپے = ۲۰ + ۲۰ + ۱۰ روپے || د پنځوسو روپیو یو نوټ = د شلو روپیو دوه نوټونه او د لسو روپیو یوه سکه؛ ۵۰ روپۍ = ۲۰ + ۲۰ + ۱۰ روپۍ
+cnt note100:1 frame "→" note50:1 note20:2 coin10:1 frame || One 100 rupees note = One 50 rupees note, two 20 rupees notes and one 10 rupees coin; Rs. 100 = Rs. 50 + Rs. 20 + Rs. 20 + Rs. 10 || سو روپے کا ایک نوٹ = پچاس روپے کا ایک نوٹ، بیس روپے کے دو نوٹ اور دس روپے کا ایک سکہ؛ ۱۰۰ روپے = ۵۰ + ۲۰ + ۲۰ + ۱۰ روپے || د سلو روپیو یو نوټ = د پنځوسو روپیو یو نوټ، د شلو روپیو دوه نوټونه او د لسو روپیو یوه سکه؛ ۱۰۰ روپۍ = ۵۰ + ۲۰ + ۲۰ + ۱۰ روپۍ
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q 1 | Can you think of other ways to exchange the Rs 100? || کیا آپ ۱۰۰ روپے کو بدلنے کے دوسرے طریقے سوچ سکتے ہیں؟ || ایا تاسو د ۱۰۰ روپیو د بدلولو نورې لارې فکر کولای شئ؟
+sol For example: Rs 50 + Rs 50; ten Rs 10 notes; Rs 50 + Rs 20 + Rs 10 + Rs 10 + Rs 10. ## Any group of coins and notes that adds up to 100 is correct. || سکوں اور نوٹوں کا کوئی بھی گروہ جس کا مجموعہ ۱۰۰ ہو درست ہے۔ || د سکو او نوټونو هره ډله چې ټولګه یې ۱۰۰ وي سمه ده.
+endbox
+exercise Changing money; matching and buying (Pages 93-95)
+p Complete the following. || درج ذیل کو مکمل کریں۔ || لاندې بشپړ کړئ.
+q 1 | One 10 rupees coin = ( __ ) 5 rupees coins || دس روپے کا ایک سکہ = ( __ ) پانچ روپے کے سکے || د لسو روپیو یوه سکه = ( __ ) د پنځو روپیو سکې
+cnt coin10:1 "→" coin5:2 || 10 rupees coin and 5 rupees coins || دس روپے کا سکہ اور پانچ روپے کے سکے || د لسو روپیو سکه او د پنځو روپیو سکې
+sol 2 ## 5 + 5 = 10 || ۵ + ۵ = ۱۰ || ۵ + ۵ = ۱۰
+q 2 | One 10 rupees note = ( __ ) 2 rupees coins || دس روپے کا ایک نوٹ = ( __ ) دو روپے کے سکے || د لسو روپیو یو نوټ = ( __ ) د دوو روپیو سکې
+cnt note10:1 "→" coin2:5 || 10 rupees note and 2 rupees coins || دس روپے کا نوٹ اور دو روپے کے سکے || د لسو روپیو نوټ او د دوو روپیو سکې
+sol 5 ## 2 + 2 + 2 + 2 + 2 = 10 || ۲ + ۲ + ۲ + ۲ + ۲ = ۱۰ || ۲ + ۲ + ۲ + ۲ + ۲ = ۱۰
+q 3 | One 50 rupees note = ( __ ) 20 rupees notes and ( __ ) 5 rupees coins || پچاس روپے کا ایک نوٹ = ( __ ) بیس روپے کے نوٹ اور ( __ ) پانچ روپے کے سکے || د پنځوسو روپیو یو نوټ = ( __ ) د شلو روپیو نوټونه او ( __ ) د پنځو روپیو سکې
+cnt note50:1 "→" note20:2 coin5:2 || 50 rupees note; 20 rupees notes and 5 rupees coins || پچاس روپے کا نوٹ؛ بیس روپے کے نوٹ اور پانچ روپے کے سکے || د پنځوسو روپیو نوټ؛ د شلو روپیو نوټونه او د پنځو روپیو سکې
+sol 2 twenty-rupee notes and 2 five-rupee coins ## 20 + 20 + 5 + 5 = 50 || ۲۰ + ۲۰ + ۵ + ۵ = ۵۰ || ۲۰ + ۲۰ + ۵ + ۵ = ۵۰
+q 4 | One 100 rupees note = ( __ ) 50 rupees notes || سو روپے کا ایک نوٹ = ( __ ) پچاس روپے کے نوٹ || د سلو روپیو یو نوټ = ( __ ) د پنځوسو روپیو نوټونه
+cnt note100:1 "→" note50:2 || 100 rupees note and 50 rupees notes || سو روپے کا نوٹ اور پچاس روپے کے نوٹ || د سلو روپیو نوټ او د پنځوسو روپیو نوټونه
+sol 2 ## 50 + 50 = 100 || ۵۰ + ۵۰ = ۱۰۰ || ۵۰ + ۵۰ = ۱۰۰

@@ -1,0 +1,37 @@
+@printed 165
+example 1 | The radius of a circle is 9 cm. What is the length of its circumference? || ایک دائرے کا رداس 9 cm ہے۔ اس کے محیط کی لمبائی کیا ہے؟ || د یوې دایرې شعاع 9 cm ده. د هغې د محیط اوږدوالی څومره دی؟
+p **Solution:** $r = 9$ cm, $\pi = 3.14$. We know that: || **حل:** $r = 9$ cm، $\pi = 3.14$۔ ہم جانتے ہیں کہ: || **حل:** $r = 9$ cm، $\pi = 3.14$. پوهېږو چې:
+eq \begin{aligned} C &= 2\pi r \\ C &= 2 \times 3.14 \times 9 \\ C &= 56.52\,\text{cm} \end{aligned}
+endexample
+example 2 | The circumference of a circle is 430 cm. Calculate the diameter of the circle. || ایک دائرے کا محیط 430 cm ہے۔ دائرے کا قطر معلوم کریں۔ || د یوې دایرې محیط 430 cm دی. د دایرې قطر حساب کړئ.
+p **Solution:** $C = 430$ cm, $d = ?$, $\pi = 3.14$. We know that $C = \pi d$ || **حل:** $C = 430$ cm، $d = ?$، $\pi = 3.14$۔ ہم جانتے ہیں کہ $C = \pi d$ || **حل:** $C = 430$ cm، $d = ?$، $\pi = 3.14$. پوهېږو چې $C = \pi d$
+eq \text{So, } d = \frac{C}{\pi} = \frac{430}{3.14} = 136.94\,\text{cm}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The value of π remains the same for all circles which is 3.14 or $\frac{22}{7}$ (approximately). || تمام دائروں کے لیے π کی قیمت یکساں رہتی ہے جو تقریباً 3.14 یا $\frac{22}{7}$ ہے۔ || د ټولو دایرو لپاره د π ارزښت یو شان پاتې کېږي چې شاوخوا 3.14 یا $\frac{22}{7}$ دی.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Complete the following table. || درج ذیل جدول مکمل کریں۔ || لاندې جدول بشپړ کړئ.
+table
+th | Radius (r) || رداس (r) || شعاع (r) | Diameter (d) || قطر (d) || قطر (d) | Circumference (c) || محیط (c) || محیط (c)
+tr |  | 11.2 cm |
+tr | 6 cm |  |
+tr |  |  | 3.45 cm
+endtable
+endbox
+## 9.2.2 Area of Circular Region || 9.2.2 دائروی خطے کا رقبہ || 9.2.2 د دایروي سیمې مساحت
+p We know that the area of a circle is all the space inside a circle's circumference. Here is a way to find the formula for the area of a circle. || ہم جانتے ہیں کہ دائرے کا رقبہ دائرے کے محیط کے اندر کی تمام جگہ ہے۔ دائرے کے رقبے کا فارمولا معلوم کرنے کا ایک طریقہ یہ ہے۔ || پوهېږو چې د دایرې مساحت د دایرې د محیط دننه ټول ځای دی. د دایرې د مساحت د فورمول د موندلو یوه طریقه دا ده.
+p Draw a circle on cardboard. Divide the circle into an even number of equal sectors. Here the circle is divided into 20 equal sectors. Now place the sectors in such a way that they are all on one line, as shown in the figure. || گتے پر ایک دائرہ بنائیں۔ دائرے کو جفت تعداد کے برابر قطاعوں میں تقسیم کریں۔ یہاں دائرہ 20 برابر قطاعوں میں تقسیم کیا گیا ہے۔ اب قطاعوں کو اس طرح رکھیں کہ وہ سب ایک خط پر ہوں، جیسا کہ شکل میں دکھایا گیا ہے۔ || پر مقوا یوه دایره رسم کړئ. دایره په جفت شمېر برابرو قطاعونو ووېشئ. دلته دایره په 20 برابرو قطاعونو وېشل شوې. اوس قطاعونه داسې کېږدئ چې ټول پر یوه کرښه وي، لکه څنګه چې په شکل کې ښودل شوي.
+svg A circle cut into 20 equal sectors, the sectors laid in a row, then rearranged into an approximate rectangle of length πr and width r || 20 برابر قطاعوں میں کٹا ہوا دائرہ، قطاع ایک قطار میں، پھر πr لمبائی اور r چوڑائی کے تقریباً مستطیل میں ترتیب || په 20 برابرو قطاعونو پرې شوې دایره، قطاعونه په یوه قطار کې، بیا د πr اوږدوالي او r پلنوالي نږدې مستطیل ته ترتیب شوي
+<svg viewBox="0 0 420 200" width="420" role="img" aria-label="A circle divided into 20 equal sectors; the sectors are laid side by side in a zig-zag row; arranged alternately up and down they form a shape close to a rectangle whose length is pi r and whose width is r" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<circle cx="60" cy="60" r="45" fill="#fff" stroke="#0f172a" stroke-width="1.5"/>
+<g stroke="#0f172a" stroke-width="0.8"><line x1="15" y1="60" x2="105" y2="60"/><line x1="60" y1="15" x2="60" y2="105"/><line x1="28" y1="28" x2="92" y2="92"/><line x1="28" y1="92" x2="92" y2="28"/><line x1="19" y1="42" x2="101" y2="78"/><line x1="19" y1="78" x2="101" y2="42"/><line x1="42" y1="19" x2="78" y2="101"/><line x1="78" y1="19" x2="42" y2="101"/><line x1="17" y1="51" x2="103" y2="69"/><line x1="17" y1="69" x2="103" y2="51"/></g>
+<path d="M140 90 L150 40 L160 90 L170 40 L180 90 L190 40 L200 90 L210 40 L220 90 L230 40 L240 90 L250 40 L260 90 L270 40 L280 90 L290 40 L300 90 L310 40 L320 90 L330 40 L340 90 Z" fill="#fff" stroke="#0f172a"/>
+<path d="M150 180 L160 130 L170 180 L180 130 L190 180 L200 130 L210 180 L220 130 L230 180 L240 130 L250 180 L260 130 L270 180 L280 130 L290 180 L300 130 L310 180 L320 130 L330 180 L340 130" fill="none" stroke="#0f172a"/>
+<path d="M150 130 H340 M150 180 H340 M150 130 V180 M340 130 V180" fill="none" stroke="#0f172a"/>
+<text x="245" y="196" text-anchor="middle">πr</text><text x="140" y="160" text-anchor="end">r</text>
+</svg>
+endsvg
+p Next flip half of the sectors upside-down and arrange them as shown in the figure. Divide one of these sectors into two equal parts and place them at both ends. We can see that it has become a rectangle. || اس کے بعد آدھے قطاعوں کو الٹا کر کے شکل کے مطابق ترتیب دیں۔ ان میں سے ایک قطاع کو دو برابر حصوں میں تقسیم کر کے دونوں سروں پر رکھیں۔ ہم دیکھ سکتے ہیں کہ یہ ایک مستطیل بن گیا ہے۔ || بیا نیمایي قطاعونه سرچپه کړئ او لکه په شکل کې یې ترتیب کړئ. له دې قطاعونو یو په دوو برابرو برخو ووېشئ او دواړو سرونو ته یې کېږدئ. لیدلی شو چې یو مستطیل جوړ شو.
+- The radius of the circle will become the width of this rectangle. || دائرے کا رداس اس مستطیل کی چوڑائی بن جائے گا۔ || د دایرې شعاع به د دې مستطیل پلنوالی شي.
+- The circumference of the circle is $2\pi r$. As half the length of the circumference is on one side, the length of this rectangle is $\frac{1}{2} \times 2\pi r = \pi r$. || دائرے کا محیط $2\pi r$ ہے۔ چونکہ محیط کی آدھی لمبائی ایک طرف ہے، اس لیے اس مستطیل کی لمبائی $\frac{1}{2} \times 2\pi r = \pi r$ ہے۔ || د دایرې محیط $2\pi r$ دی. څرنګه چې د محیط نیمایي اوږدوالی په یوه خوا کې دی، د دې مستطیل اوږدوالی $\frac{1}{2} \times 2\pi r = \pi r$ دی.

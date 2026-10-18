@@ -1,0 +1,34 @@
+@printed 167
+@issue The working shows cancellation strokes (30/6, 6/3); given without strokes.
+## 8.2.2 Elimination Method || 8.2.2 حذف کا طریقہ || 8.2.2 د حذف طریقه
+p In this method, we eliminate one of the variables in the given simultaneous linear equations and hence get a third linear equation in only one variable. By solving the third linear equation, we get the value of one of the variables involved. By substituting this value of one variable in any of the given equations, the value of the other variable can be found. The following examples may help you to learn this method. || اس طریقے میں ہم دی گئی ہم وقت خطی مساواتوں میں سے ایک متغیر کو حذف کرتے ہیں اور اس طرح صرف ایک متغیر میں تیسری خطی مساوات حاصل کرتے ہیں۔ تیسری خطی مساوات حل کر کے ہمیں ایک متغیر کی قیمت ملتی ہے۔ ایک متغیر کی یہ قیمت دی گئی کسی بھی مساوات میں رکھ کر دوسرے متغیر کی قیمت معلوم کی جا سکتی ہے۔ درج ذیل مثالیں آپ کو یہ طریقہ سیکھنے میں مدد دے سکتی ہیں۔ || په دې طریقه کې په ورکړل شویو همزمانه خطي معادلو کې یو متغیر حذفوو او په دې ډول یوازې په یوه متغیر کې درېیمه خطي معادله لاسته راوړو. د درېیمې خطي معادلې په حلولو د یوه متغیر ارزښت لاسته راځي. د یوه متغیر د دې ارزښت په ورکړل شوې هره معادله کې په ایښودلو د بل متغیر ارزښت موندل کېدای شي. لاندې بېلګې ستاسو سره د دې طریقې په زده کولو کې مرسته کولی شي.
+example 1
+p Solve the following simultaneous equations. || درج ذیل ہم وقت مساواتیں حل کریں۔ || لاندې همزمانه معادلې حل کړئ.
+m $4x + 3y = 26, \quad 2x - 3y = 4$
+## Solution: || حل: || حل:
+m $4x + 3y = 26$ ——(1)
+m $2x - 3y = 4$ ——(2)
+p Add equations (1) and (2), || مساوات (1) اور (2) کو جمع کریں، || (1) او (2) معادلې جمع کړئ،
+m $(4x + 3y) + (2x - 3y) = 26 + 4$
+m $4x + 3y + 2x - 3y = 30$
+m $6x = 30$
+m $x = \frac{30}{6}$
+m $x = 5$
+p Substitute this value of $x$ in equation (1), || $x$ کی یہ قیمت مساوات (1) میں رکھیں، || د $x$ دا ارزښت په (1) معادله کې کېږدئ،
+m $4(5) + 3y = 26$
+m $20 + 3y = 26$
+m $3y = 26 - 20$
+m $3y = 6$
+m $y = \frac{6}{3}$
+m $y = 2$
+p Thus $x = 5$ and $y = 2$ is the solution of the given simultaneous equations. || لہٰذا $x = 5$ اور $y = 2$ دی گئی ہم وقت مساواتوں کا حل ہے۔ || نو $x = 5$ او $y = 2$ د ورکړل شویو همزمانه معادلو حل دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In example 1, we found $x = 5$ and $y = 2$. It can be written as $(x, y) = (5, 2)$ and is called the solution of the given equations. Sometimes, this solution is written in the form of a set and is called the solution set. The solution set of example1 is {(5,2)} || مثال 1 میں ہمیں $x = 5$ اور $y = 2$ ملا۔ اسے $(x, y) = (5, 2)$ لکھا جا سکتا ہے اور یہ دی گئی مساواتوں کا حل کہلاتا ہے۔ کبھی کبھی یہ حل سیٹ کی صورت میں لکھا جاتا ہے اور حل کا سیٹ کہلاتا ہے۔ مثال 1 کا حل کا سیٹ {(5,2)} ہے || په 1 بېلګه کې مو $x = 5$ او $y = 2$ وموندل. دا د $(x, y) = (5, 2)$ په بڼه لیکل کېدای شي او د ورکړل شویو معادلو حل بلل کېږي. کله ناکله دا حل د سېټ په بڼه لیکل کېږي او د حل سېټ بلل کېږي. د 1 بېلګې د حل سېټ {(5,2)} دی
+endbox
+example 2
+p Solve the following simultaneous linear equations. || درج ذیل ہم وقت خطی مساواتیں حل کریں۔ || لاندې همزمانه خطي معادلې حل کړئ.
+m $x + y = 28, \quad x + 3y = 52$
+## Solution: || حل: || حل:
+m $x + y = 28$ ——(1)
+m $x + 3y = 52$ ——(2)

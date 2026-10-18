@@ -1,0 +1,28 @@
+@printed 264
+### Event || واقعہ || پېښه
+p An **event** is an outcome or a collection of outcomes. For example, tossing a coin and getting a head is an event, rolling a dice and getting a 3 is an event. || **واقعہ** ایک نتیجہ یا نتائج کا مجموعہ ہے۔ مثال کے طور پر سکہ اچھالنا اور ہیڈ آنا ایک واقعہ ہے، پانسہ پھینکنا اور 3 آنا ایک واقعہ ہے۔ || **پېښه** یوه پایله یا د پایلو ټولګه ده. د بېلګې په توګه د سکې اچول او سر راتلل یوه پېښه ده، د ډایس اچول او 3 راتلل یوه پېښه ده.
+### Probability of an event || کسی واقعے کا احتمال || د پېښې احتمال
+p The probability of an event can be defined as the number of favourable or desired outcomes divided by the total number of outcomes in a sample space. || کسی واقعے کے احتمال کی تعریف یوں کی جا سکتی ہے کہ موافق یا مطلوبہ نتائج کی تعداد کو نمونہ فضا میں نتائج کی کل تعداد سے تقسیم کیا جائے۔ || د یوې پېښې احتمال داسې تعریفېدای شي: د غوره یا غوښتل شویو پایلو شمېر د نمونه فضا د پایلو پر ټول شمېر وېشل.
+eq \text{Probability of an event} = P(E) = \dfrac{\text{Number of favorable (desired) outcomes}}{\text{Total number of possible outcomes}}
+@issue The left edge of this page is cut off in the scan; the first letters of several lines (and the sub-headings "Event", "Probability of an event") are completed from context.
+## 13.7.1 Types of Events || 13.7.1 واقعات کی اقسام || 13.7.1 د پېښو ډولونه
+p There are different types of events in probability. Let's discuss a few of them. || احتمال میں واقعات کی مختلف اقسام ہیں۔ آئیے ان میں سے چند پر بات کریں۔ || په احتمال کې د پېښو بېلابېل ډولونه شته. راځئ د هغو څو یو وڅېړو.
+### Equally Likely and Not Equally Likely Outcomes || یکساں امکان اور غیر یکساں امکان والے نتائج || مساوي امکان لرونکې او نامساوي امکان لرونکې پایلې
+p There are 4 red, 5 blue and 1 green colour pencils in a pouch. Ali picks a pencil randomly without looking. What is the probability that he will pick a blue pencil? || ایک تھیلی میں 4 سرخ، 5 نیلی اور 1 سبز رنگ کی پنسلیں ہیں۔ علی بغیر دیکھے بے ترتیب ایک پنسل اٹھاتا ہے۔ اس بات کا احتمال کیا ہے کہ وہ نیلی پنسل اٹھائے گا؟ || په یوه کڅوړه کې 4 سرې، 5 شنې (آبي) او 1 زرغونه پنسلې دي. علي پرته له کتلو په تصادفي ډول یوه پنسل اخلي. احتمال څومره دی چې هغه به آبي پنسل واخلي؟
+p Here the number of favorable or desired outcomes is 5, as there are 5 blue pencils. || یہاں موافق یا مطلوبہ نتائج کی تعداد 5 ہے، کیونکہ 5 نیلی پنسلیں ہیں۔ || دلته د غوره یا غوښتل شویو پایلو شمېر 5 دی، ځکه چې 5 آبي پنسلې دي.
+eq \begin{aligned} \text{Numbers of blue pencils (desired outcome)} &= 5 \\ \text{Total number of possible outcomes} &= 10 \\ \text{Probability of picking up blue pencil} &= \dfrac{5}{10} = \dfrac{1}{2} \end{aligned}
+p This shows that the probability of the desired outcome i.e. blue pencil is $\frac{1}{2}$. || اس سے ظاہر ہوتا ہے کہ مطلوبہ نتیجے یعنی نیلی پنسل کا احتمال $\frac{1}{2}$ ہے۔ || دا ښيي چې د غوښتل شوې پایلې یعنې آبي پنسل احتمال $\frac{1}{2}$ دی.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p A desired or favorable outcome is an outcome which we want to get from an experiment or the one we are looking for. || مطلوبہ یا موافق نتیجہ وہ نتیجہ ہے جو ہم کسی تجربے سے حاصل کرنا چاہتے ہیں یا جس کی ہمیں تلاش ہے۔ || غوښتل شوې یا غوره پایله هغه پایله ده چې غواړو له تجربې یې ترلاسه کړو یا یې لټوو.
+endbox
+p So, there is a 50-50 chance for him to pick or not to pick the blue pencil as the number of un-desired outcome and desired outcomes is the same. Or we can say that it is as **equally likely** for him to pick a blue pencil as it is for not picking a blue one. || لہٰذا اس کے نیلی پنسل اٹھانے یا نہ اٹھانے کا 50-50 امکان ہے کیونکہ غیر مطلوبہ اور مطلوبہ نتائج کی تعداد یکساں ہے۔ یا ہم کہہ سکتے ہیں کہ اس کے لیے نیلی پنسل اٹھانا اتنا ہی **یکساں امکان** رکھتا ہے جتنا نیلی پنسل نہ اٹھانا۔ || نو د هغه لپاره د آبي پنسل د اخیستلو یا نه اخیستلو 50-50 چانس دی ځکه چې د نا غوښتل شویو او غوښتل شویو پایلو شمېر یو شان دی. یا ویلی شو چې د هغه لپاره د آبي پنسل اخیستل هومره **مساوي امکان** لري لکه د نه اخیستلو.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p When there is 50% chance of an event, i.e. 1/2, then the event is said to be equally likely. || جب کسی واقعے کا 50% امکان ہو، یعنی 1/2، تو واقعہ یکساں امکان والا کہلاتا ہے۔ || کله چې د یوې پېښې 50% چانس وي، یعنې 1/2، پېښه مساوي امکان لرونکې بلل کېږي.
+endbox
+### Impossible and Certain Events || ناممکن اور یقینی واقعات || ناشونې او یقیني پېښې
+p Now, let's find the probability of him picking a pencil. || اب آئیے اس کے پنسل اٹھانے کا احتمال معلوم کریں۔ || اوس راځئ د هغه د پنسل اخیستلو احتمال پیدا کړو.
+eq \begin{aligned} \text{Numbers of pencils (desired outcome)} &= 10 \\ \text{Total number of possible outcomes} &= 10 \\ \text{Probability of picking up a pencil (desired outcome)} &= \dfrac{10}{10} = 1 \end{aligned}
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Use the following link to explain the concept of probability. https://www.mathsisfun.com/data/probability.html || احتمال کا تصور سمجھانے کے لیے درج ذیل لنک استعمال کریں۔ https://www.mathsisfun.com/data/probability.html || د احتمال د مفهوم د تشریح لپاره لاندې لینک وکاروئ. https://www.mathsisfun.com/data/probability.html
+endbox
+@deco Small pictures of a pencil pouch and of coloured pencils are printed beside the text.

@@ -1,0 +1,33 @@
+@printed 211
+qp c | What information is shown on the Y-axis? || Y-محور پر کون سی معلومات دکھائی گئی ہیں؟ || پر Y-محور کوم معلومات ښودل شوي؟
+p Number of ice-cream sold || فروخت ہونے والی آئس کریم کی تعداد || د پلورل شوو آیس کریمونو شمېر
+qp d | How many coconut ice-creams were sold on Wednesday? || بدھ کو کتنی ناریل آئس کریم فروخت ہوئیں؟ || چهارشنبه څو د ناریل آیس کریمونه وپلورل شول؟
+p 65 || 65 || 65
+qp e | Which flavour was sold the most on Friday? || جمعہ کو کون سا ذائقہ سب سے زیادہ فروخت ہوا؟ || جمعه کوم خوند تر ټولو ډېر وپلورل شو؟
+p Vanilla || ونیلا || وانیلا
+qp f | Which flavour was sold the least on Monday? || پیر کو کون سا ذائقہ سب سے کم فروخت ہوا؟ || دوشنبه کوم خوند تر ټولو لږ وپلورل شو؟
+p Mango || آم || امب
+qp g | Which flavour of ice-cream was sold the most from Mon to Sat? || پیر سے ہفتے تک آئس کریم کا کون سا ذائقہ سب سے زیادہ فروخت ہوا؟ || له دوشنبې تر شنبې د آیس کریم کوم خوند تر ټولو ډېر وپلورل شو؟
+p Vanilla || ونیلا || وانیلا
+qp h | What is the difference between the number of Vanilla ice-creams sold on Monday and Thursday? || پیر اور جمعرات کو فروخت ہونے والی ونیلا آئس کریم کی تعداد کا فرق کیا ہے؟ || د دوشنبې او پنجشنبې د پلورل شوو وانیلا آیس کریمونو د شمېر توپیر څه دی؟
+m $35 - 24 = 11$
+endexample
+example 2 | Observe the given multiple bar graph in horizontal form and answer the questions given. || افقی شکل میں دیے گئے متعدد بار گراف کو دیکھیں اور دیے گئے سوالات کے جواب دیں۔ || په افقي بڼه ورکړل شوي ګڼ میله ییز ګراف ته وګورئ او ورکړل شوو پوښتنو ته ځواب ورکړئ.
+chart h | max 70 10 | title Museum Visitors | x No. of Visitors | y No. of Weeks | cats Week 1,Week 2,Week 3,Week 4 | Men=55,40,15,60 | Women=30,65,40,35 | Children=15,25,10,20 | colors #22d3ee,#ec4899,#fb7185 || Scale: one mark = 10 visitors || پیمانہ: ایک نشان = 10 زائرین || پیمانه: یوه نښه = 10 لیدونکي
+qp a | What is the title of the graph? || گراف کا عنوان کیا ہے؟ || د ګراف عنوان څه دی؟
+p Museum Visitors || عجائب گھر کے زائرین || د موزیم لیدونکي
+qp b | What information is shown on the X-axis? || X-محور پر کون سی معلومات دکھائی گئی ہیں؟ || پر X-محور کوم معلومات ښودل شوي؟
+p No. of visitors || زائرین کی تعداد || د لیدونکو شمېر
+qp c | What information is shown on the Y-axis? || Y-محور پر کون سی معلومات دکھائی گئی ہیں؟ || پر Y-محور کوم معلومات ښودل شوي؟
+p Weeks || ہفتے || اونۍ
+qp d | How many men visited the museum during week 2?. || دوسرے ہفتے میں کتنے مرد عجائب گھر آئے؟ || په دوهمه اونۍ کې څو نارینه موزیم ته راغلل؟
+p 40 || 40 || 40
+qp e | Which week has the greatest number of women? || کس ہفتے میں خواتین کی تعداد سب سے زیادہ ہے؟ || په کومه اونۍ کې د ښځو شمېر تر ټولو ډېر دی؟
+p Week 2 || ہفتہ 2 || 2 اونۍ
+qp f | What is the total number of children who visited the museum during all the four weeks altogether? || چاروں ہفتوں میں عجائب گھر آنے والے بچوں کی کل تعداد کیا ہے؟ || په ټولو څلورو اونیو کې موزیم ته د راغلو ماشومانو ټول شمېر څومره دی؟
+p 70 || 70 || 70
+qp g | Which week has the least number of children? || کس ہفتے میں بچوں کی تعداد سب سے کم ہے؟ || په کومه اونۍ کې د ماشومانو شمېر تر ټولو لږ دی؟
+p Week 3 || ہفتہ 3 || 3 اونۍ
+qp h | How many visitors visited the museum during week 2 and 3 altogether? || ہفتہ 2 اور 3 میں کل کتنے زائرین عجائب گھر آئے؟ || په 2 او 3 اونیو کې ټول څو لیدونکي موزیم ته راغلل؟
+p 195 visitors || 195 زائرین || 195 لیدونکي
+@issue Example 2 (page 211): the y-axis is labelled "No. of Weeks" although it lists the weeks; the bar values (read from the graph) were matched to the book's answers d)–j).

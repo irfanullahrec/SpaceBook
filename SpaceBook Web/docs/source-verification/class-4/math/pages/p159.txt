@@ -1,0 +1,24 @@
+@printed 161
+@deco Curved orange arrows point from the answer boxes a)-d) of Q5 to parts of the circle.
+q 2 | Encircle the parallel lines from the following. || درج ذیل میں سے متوازی خطوط پر دائرہ لگائیں۔ || له لاندې څخه موازي کرښې په کړۍ کې ونیسئ.
+frow geo 150 110 ; L 15 30 135 30 #1d4ed8 ; L 15 70 135 70 #1d4ed8 ;; geo 150 130 ; L 10 30 140 30 #1d4ed8 ; L 30 5 30 125 #1d4ed8 ; R 30 30 ;; geo 150 130 ; L 40 5 40 125 #1d4ed8 ; L 10 10 140 115 #1d4ed8 || Line pairs a), b) and c) || خطوط کے جوڑے a)، b) اور c) || د کرښو جوړې a)، b) او c)
+qp a | (two horizontal lines one above the other) || (دو افقی خطوط ایک دوسرے کے اوپر) || (دوه افقي کرښې یوه د بلې پورته)
+qp b | (a horizontal and a vertical line meeting at a right angle) || (ایک افقی اور ایک عمودی خط جو قائمہ زاویے پر ملتے ہیں) || (یوه افقي او یوه عمودي کرښه چې په قایمه زاویه سره یوځای کېږي)
+qp c | (a vertical line crossed by a slanting line) || (ایک عمودی خط جسے ایک ترچھا خط کاٹتا ہے) || (یوه عمودي کرښه چې یوه کږه کرښه یې قطع کوي)
+q 3 | Differentiate the right, acute and obtuse angle, in the following. || درج ذیل میں قائمہ، حادہ اور منفرجہ زاویوں میں فرق کریں۔ || په لاندې کې قایمه، حاده او منفرجه زاویې سره توپیر کړئ.
+frow geo 130 100 ; L 20 80 120 80 #dc2626 end ; L 20 80 80 15 #dc2626 end ;; geo 180 100 ; L 70 80 175 80 #dc2626 end ; L 70 80 10 15 #dc2626 end ;; geo 180 100 ; L 85 85 15 15 #dc2626 end ; L 85 85 170 15 #dc2626 end || Angles a), b) and c) || زاویے a)، b) اور c) || زاویې a)، b) او c)
+qp a | ____
+qp b | ____
+qp c | ____
+q 4 | Draw the angles of given measurements. || دی گئی پیمائشوں کے زاویے بنائیں۔ || د ورکړل شویو اندازو زاویې رسم کړئ.
+qp a | 135°
+qp b | 95°
+qp c | 70°
+qp d | 20°
+q 5 | Label the circle. || دائرے کے حصوں کے نام لکھیں۔ || د دایرې برخې په نښه کړئ.
+geo 300 260 ; C 150 130 115 #fff ; S 150 15 150 245 #9d174d ; S 150 130 270 130 #9d174d ; D 150 130 4 ; P 30 40 a) ; P 30 230 b) ; P 275 40 c) ; P 275 230 d) ; L 45 45 145 85 #ea580c end ; L 45 225 90 205 #ea580c end ; L 265 45 156 125 #ea580c end ; L 265 222 205 140 #ea580c end || A circle with a vertical line through the centre and a line from the centre to the edge; arrows from boxes a)-d) point to its parts || ایک دائرہ جس کے مرکز سے عمودی خط گزرتا ہے اور مرکز سے کنارے تک ایک خط ہے؛ خانوں a) تا d) سے تیر اس کے حصوں کی طرف اشارہ کرتے ہیں || یوه دایره چې له مرکز څخه یې عمودي کرښه تېرېږي او له مرکز څخه تر څنډې یوه کرښه ده؛ له a) تر d) خونو څخه غشي د هغې برخو ته اشاره کوي
+qp a | ____
+qp b | ____
+qp c | ____
+qp d | ____
+@issue Q5: the arrows on the scan point roughly to the vertical line (a), the circle's boundary (b), the centre point (c) and the line from the centre (d); their exact targets are reproduced approximately.

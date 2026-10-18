@@ -1,0 +1,13 @@
+@printed 163
+@deco Pictures in Q9: a dark-blue cube, a light-blue cylinder, a cuboid outline, and an upside-down cone outline.
+qp c | (each dot space 1 m) || (نقطوں کا ہر فاصلہ 1 میٹر) || (د ټکو هر واټن 1 m)
+sqgrid 8 8 24 dots ; mirror v 4 ; mirror h 4 ; path 1,0 3,0 3,2 2,2 2,4 1,4 1,3 0,3 0,1 1,1 1,0 #86198f || c) a figure in one quarter of dot paper with a vertical and a horizontal line of symmetry || c) نقطوں والے کاغذ کے ایک چوتھائی حصے میں شکل، ایک عمودی اور ایک افقی خطِ تشاکل کے ساتھ || c) د ټکي لرونکې پاڼې په یوه څلورمه برخه کې شکل، د یوې عمودي او یوې افقي تناظر کرښې سره
+qp d | (each dot space 1 cm) || (نقطوں کا ہر فاصلہ 1 سینٹی میٹر) || (د ټکو هر واټن 1 cm)
+sqgrid 8 8 24 dots ; path 0,0 8,8 #be185d ; path 8,0 0,8 #be185d ; path 1,1 2,0 4,0 4,1 3,1 4,2 5,1 5,3 3,3 #15803d || d) a figure on dot paper with two diagonal lines of symmetry || d) نقطوں والے کاغذ پر شکل، دو وتری خطوطِ تشاکل کے ساتھ || d) پر ټکي لرونکې پاڼه شکل، د دوو قطري تناظر کرښو سره
+q 9 | Encircle the figures which have the following properties: || ان اشکال پر دائرہ لگائیں جن کی درج ذیل خصوصیات ہیں: || هغه شکلونه په کړۍ کې ونیسئ چې لاندې ځانګړنې لري:
+qp a | 6 flat surfaces: (cube) (cylinder) (cuboid) || 6 ہموار سطحیں: (مکعب) (اسطوانہ) (مکعب نما) || 6 هوارې سطحې: (مکعب) (استوانه) (مکعب نما)
+frow solid cube ;; solid cyl ;; solid cuboid || Cube, cylinder and cuboid || مکعب، اسطوانہ اور مکعب نما || مکعب، استوانه او مکعب نما
+qp b | 1 vertex: (cylinder) (cuboid) (cone) || 1 راس: (اسطوانہ) (مکعب نما) (مخروط) || 1 راس: (استوانه) (مکعب نما) (مخروط)
+frow solid cyl ;; solid cuboid ;; solid cone || Cylinder, cuboid and cone || اسطوانہ، مکعب نما اور مخروط || استوانه، مکعب نما او مخروط
+endexercise
+@issue The cone in Q9(b) is printed upside down (vertex at the bottom); it is drawn upright here.

@@ -1,0 +1,38 @@
+@printed 55
+@deco A tall Scratch script captioned "Single level game code" (when flag clicked; go to x:63 y:-174; forever with four key-pressed ifs for left, right, up and down arrows, each changing x or y by ±3, "next costume", a nested "touching color" if that undoes the move, and a final "if touching Arrow then say You Won!!! for 2 secs"). A callout shows the value -3.
+## 4.4 Developing Game with Scratch || 4.4 اسکریچ کے ذریعے گیم تیار کرنا || 4.4 د Scratch په مرسته لوبه جوړول
+### 4.4.1 Creating Single Level Game || 4.4.1 سنگل لیول گیم بنانا || 4.4.1 یو کچه لرونکې لوبه جوړول
+p To create a maze game, first of all, a map of a maze is required and the additional steps required are as follows: || بھول بھلیاں (maze) کا گیم بنانے کے لیے سب سے پہلے بھول بھلیاں کا نقشہ درکار ہوتا ہے اور اضافی مطلوبہ مراحل درج ذیل ہیں: || د ګډوډ لارې (maze) لوبې د جوړولو لپاره لومړی د ګډوډ لارې نقشه اړینه ده او اضافي اړین ګامونه په لاندې ډول دي:
+- We paint a new sprite and name it 'Maze-Map'. || ہم ایک نیا اسپرائٹ پینٹ کرتے ہیں اور اس کا نام 'Maze-Map' رکھتے ہیں۔ || موږ یو نوی سپرایټ رنګ کوو او نوم یې 'Maze-Map' ږدو.
+- Next we assign our 'Pico' sprite on the map and fix it's starting position by using a go to script. Using the shrink tool, we can adjust the size of our sprite so that it fits in the open space between maze-lines. || اگلے مرحلے میں ہم اپنے 'Pico' اسپرائٹ کو نقشے پر رکھتے ہیں اور go to اسکرپٹ کے ذریعے اس کی ابتدائی پوزیشن طے کرتے ہیں۔ شرنک ٹول استعمال کر کے ہم اپنے اسپرائٹ کا سائز اس طرح ایڈجسٹ کر سکتے ہیں کہ وہ بھول بھلیاں کی لکیروں کے درمیان کھلی جگہ میں فٹ ہو جائے۔ || بیا موږ خپل 'Pico' سپرایټ پر نقشه ږدو او د go to سکریپټ په کارولو سره یې پیل ځای ټاکو. د shrink وسیلې په کارولو سره موږ کولای شو د سپرایټ اندازه داسې تنظیم کړو چې د ګډوډ لارې د کرښو ترمنځ په خلاص ځای کې ځای شي.
+- For moving the sprite in the maze, we need to provide code for the arrow keys and adjust x/y coordinate accordingly. For instance, if left-arrow is pressed then we change x by -3. The value that we choose for movement is to be adjusted according to the size of the sprites. || بھول بھلیاں میں اسپرائٹ کو حرکت دینے کے لیے ہمیں تیر والی کیز کا کوڈ دینا ہوگا اور x/y محور کو اسی کے مطابق ایڈجسٹ کرنا ہوگا۔ مثال کے طور پر اگر بائیں تیر دبایا جائے تو ہم x کو -3 سے بدلتے ہیں۔ حرکت کے لیے جو قدر ہم چنتے ہیں وہ اسپرائٹس کے سائز کے مطابق ایڈجسٹ کی جاتی ہے۔ || په ګډوډ لار کې د سپرایټ د حرکت لپاره موږ باید د تیر کیلیو کوډ ورکړو او x/y همغږي ورسره سم تنظیم کړو. د بېلګې په توګه که کیڼ تیر ټک شي نو موږ x په -3 بدلوو. هغه ارزښت چې موږ یې د حرکت لپاره ټاکو د سپرایټونو د اندازې له مخې تنظیمېږي.
+- Additionally, to create a walking effect we can add the script of 'next-costume'. || اس کے علاوہ چلنے کا اثر پیدا کرنے کے لیے ہم 'next-costume' کا اسکرپٹ شامل کر سکتے ہیں۔ || سربېره پر دې د قدم وهلو اغېز جوړولو لپاره موږ د 'next-costume' سکریپټ اضافه کولای شو.
+- Thereafter, we need to ensure that 'Pico' does not walk through the lines in the maze. For instance, if we pressed left arrow and Pico touches a line then we need to cancel the last key-stroke; and return to the last position. || اس کے بعد ہمیں یقینی بنانا ہوگا کہ 'Pico' بھول بھلیاں کی لکیروں کے آر پار نہ چلے۔ مثال کے طور پر اگر ہم نے بائیں تیر دبایا اور Pico کسی لکیر کو چھوتا ہے تو ہمیں آخری کی اسٹروک منسوخ کرنا اور آخری پوزیشن پر واپس آنا ہوگا۔ || له دې وروسته موږ باید ډاډ ترلاسه کړو چې 'Pico' د ګډوډ لارې له کرښو نه تېرېږي. د بېلګې په توګه که موږ کیڼ تیر وټکاوه او Pico کرښې ته ورسېد نو موږ باید وروستی کیلۍ ټک لغوه کړو او بېرته وروستي ځای ته ورشو.
+- This is attained by using a nested if-statement where we check for the 'touching color' is maze-line-color. If true, we adjust the value as per the last key stroke, i.e., if left-arrow was pressed and x was changed to -3 then we need to read just x by adding +3. This way, the last position is of the sprite is retained, before touching the line. || یہ نیسٹڈ if-statement کے ذریعے حاصل ہوتا ہے جس میں ہم جانچتے ہیں کہ 'touching color' بھول بھلیاں کی لکیر کا رنگ ہے۔ اگر درست ہو تو ہم آخری کی اسٹروک کے مطابق قدر ایڈجسٹ کرتے ہیں، یعنی اگر بائیں تیر دبایا گیا اور x کو -3 کیا گیا تو ہمیں +3 جمع کر کے x ایڈجسٹ کرنا ہوگا۔ اس طرح لکیر کو چھونے سے پہلے اسپرائٹ کی آخری پوزیشن برقرار رہتی ہے۔ || دا د نیسټ شوي if-statement په کارولو سره ترلاسه کېږي چېرته چې موږ ګورو چې 'touching color' د ګډوډ لارې د کرښې رنګ دی. که سم وي نو موږ ارزښت د وروستي کیلۍ ټک سره سم تنظیموو، یعنې که کیڼ تیر ټک شوی و او x په -3 بدل شوی و نو موږ باید x د +3 په اضافه کولو سره تنظیم کړو. په دې ډول د کرښې ته له رسېدو مخکې د سپرایټ وروستی ځای ساتل کېږي.
+box code | Scratch script — Single level game code || سکریچ اسکرپٹ — سنگل لیول گیم کوڈ || سکریچ سکریپټ — د یو کچې لوبې کوډ
+m when (green flag) clicked
+m go to x: (63) y: (-174)
+m forever
+m     if <key [left arrow] pressed?> then
+m         change x by (-3)
+m         next costume
+m         if <touching color [maze-line colour] ?> then
+m             change x by (3)
+m     if <key [right arrow] pressed?> then
+m         change x by (3)
+m         next costume
+m         if <touching color [maze-line colour] ?> then
+m             change x by (-3)
+m     if <key [up arrow] pressed?> then
+m         change y by (3)
+m         next costume
+m         if <touching color [maze-line colour] ?> then
+m             change y by (-3)
+m     if <key [down arrow] pressed?> then
+m         change y by (-3)
+m         next costume
+m         if <touching color [maze-line colour] ?> then
+m             change y by (3)
+m     if <touching [Arrow] ?> then
+m         say [You Won !!!] for (2) secs
+endbox

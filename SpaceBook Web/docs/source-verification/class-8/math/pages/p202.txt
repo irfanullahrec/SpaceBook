@@ -1,0 +1,34 @@
+@printed 194
+@issue Figure (b) marks the points (0, 3) and (3, 3) but the line passes through (0, 3) and (3, 0); the triangle legs are labelled 3 and 3. Kept as printed in the recreated figure (the point label "(3, 3)" is reproduced). The Quick Check prints "What is the x-intercepts for these graphs?".
+example 1
+p Interpret the gradients of the following lines. Also find the x and y-intercepts. || درج ذیل لکیروں کے ڈھلوان کی تشریح کریں۔ x اور y-قطع بھی معلوم کریں۔ || د لاندې کرښو میلونه تشریح کړئ. x او y-تقاطعونه هم ومومئ.
+m a)
+plane x=-3..4 | y=-3..4 | step=1 | lines=1.5,1,-2.6,2.2 | tri=0,1;2,1;2,4 | pts=0,1;2,4 | labels=2@0.9,0.6;3@2.2,2.6
+m b)
+plane x=-3..4 | y=-3..4 | step=1 | lines=-1,3,-0.8,3.9 | tri=0,0;0,3;3,0 | pts=0,3:(0, 3);3,0:(3, 3) | labels=3@-0.7,2.2;3@1.2,-0.5
+## Solution: || حل: || حل:
+p In (a), the gradient is positive as the line is going upward from left to right. || (a) میں ڈھلوان مثبت ہے کیونکہ لکیر بائیں سے دائیں اوپر کی طرف جا رہی ہے۔ || په (a) کې میل مثبت دی ځکه کرښه له کیڼ څخه ښي ته پورته ځي.
+m Gradient $= \frac{\text{Vertical change}}{\text{Horizontal change}} = \frac{3}{2}$
+p The line is crossing the y-axis at (0,1), so the y-intercept is 1. || لکیر y-محور کو (0,1) پر قطع کر رہی ہے، لہٰذا y-قطع 1 ہے۔ || کرښه y-محور په (0,1) کې پرې کوي، نو y-تقاطع 1 دی.
+p In (b), the gradient is negative as the line is going downward from left to right || (b) میں ڈھلوان منفی ہے کیونکہ لکیر بائیں سے دائیں نیچے کی طرف جا رہی ہے || په (b) کې میل منفي دی ځکه کرښه له کیڼ څخه ښي ته ښکته ځي
+m Gradient $= \frac{\text{Vertical change}}{\text{Horizontal change}} = \frac{-3}{3} = -1$
+p The line is crossing the y-axis at (0,3), so the y-intercept is 3. || لکیر y-محور کو (0,3) پر قطع کر رہی ہے، لہٰذا y-قطع 3 ہے۔ || کرښه y-محور په (0,3) کې پرې کوي، نو y-تقاطع 3 دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p What is the x-intercepts for these graphs? || ان گرافوں کے x-قطع کیا ہیں؟ || د دې ګرافونو x-تقاطعونه څه دي؟
+endbox
+example 2
+p Find the x and y intercepts of the graph of $y = x - 4$ || $y = x - 4$ کے گراف کے x اور y قطع معلوم کریں || د $y = x - 4$ د ګراف x او y تقاطعونه ومومئ
+## Solution: || حل: || حل:
+m We have $y = x - 4$
+p To find x-intercept, put $y = 0$ || x-قطع معلوم کرنے کے لیے $y = 0$ رکھیں || د x-تقاطع د موندلو لپاره $y = 0$ کېږدئ
+m $y = x - 4 \Rightarrow 0 = x - 4$ or $x = 4$
+p To find y-intercept, put $x = 0$ || y-قطع معلوم کرنے کے لیے $x = 0$ رکھیں || د y-تقاطع د موندلو لپاره $x = 0$ کېږدئ
+m $y = x - 4 \Rightarrow y = 0 - 4$ or $y = -4$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Plot the graph for $y = x - 4$ and verify the intercepts graphically || $y = x - 4$ کا گراف بنائیں اور قطع کی گرافی طور پر تصدیق کریں || د $y = x - 4$ ګراف رسم کړئ او تقاطعونه په ګرافي ډول تایید کړئ
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Make the student clear about x and y intercepts. Tell them that x and y intercepts are actually the coordinates x and y and not the points where they meet on the x and y axis. For example if the line intersects y axis at (0, −3), the y-intercept will be −3 and not (0, −3). || طلبہ کو x اور y قطع کے بارے میں واضح کریں۔ انہیں بتائیں کہ x اور y قطع دراصل محددات x اور y ہیں، نہ کہ وہ نقاط جہاں وہ x اور y محور پر ملتے ہیں۔ مثال کے طور پر اگر لکیر y محور کو (0, −3) پر قطع کرے تو y-قطع −3 ہوگا، (0, −3) نہیں۔ || زده کوونکو ته د x او y تقاطعونو په اړه روښانه کړئ. ورته ووایاست چې x او y تقاطعونه په حقیقت کې x او y کوارډینېټونه دي، نه هغه ټکي چې پر x او y محور یې پرې کوي. د بېلګې په توګه که کرښه y محور په (0, −3) کې پرې کړي، y-تقاطع به −3 وي نه (0, −3).
+endbox

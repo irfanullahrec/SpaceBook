@@ -1,0 +1,21 @@
+@printed 22
+@deco Picture of a potted plant in the Try Yourself box (decorative).
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Ahad had a plant in the pot. He observed that the height of the plant is increasing by 4 cm daily. If on Monday the height of plant was 12 cm, find on which day the plant will be 24 cm high? || احد کے پاس گملے میں ایک پودا تھا۔ اس نے دیکھا کہ پودے کی اونچائی روزانہ 4 cm بڑھ رہی ہے۔ اگر پیر کو پودے کی اونچائی 12 cm تھی تو معلوم کریں کہ کس دن پودا 24 cm اونچا ہوگا؟ || احد په ګلدان کې یو بوټی درلود. هغه ولیدل چې د بوټي لوړوالی هره ورځ 4 cm زیاتېږي. که د دوشنبې په ورځ د بوټي لوړوالی 12 cm و، معلوم کړئ چې په کومه ورځ به بوټی 24 cm لوړ وي؟
+endbox
+p Look at this number patterm: || اس عددی پیٹرن کو دیکھیں: || دې عددي بېلګې ته وګورئ:
+@issue "patterm" (for "pattern") is a printing error in the source; kept as printed.
+eq 400{,}000,\ 40{,}000,\ 4{,}000,\ \ldots
+- Find its rule. || اس کا اصول معلوم کریں۔ || د هغې قاعده معلومه کړئ.
+- Find the next three terms. || اگلے تین ارکان معلوم کریں۔ || راتلونکي درې توکي معلوم کړئ.
+jumps 400,000; 40,000; 4,000; ? | ÷10; ÷10; ÷10 | gap=120
+p If we look at the terms of this pattern, we see that by dividing 400,000 by 10, we get 40,000 and by dividing 40,000 by 10, we get 4,000. || اگر ہم اس پیٹرن کے ارکان کو دیکھیں تو معلوم ہوتا ہے کہ 400,000 کو 10 سے تقسیم کرنے پر 40,000 اور 40,000 کو 10 سے تقسیم کرنے پر 4,000 ملتا ہے۔ || که د دې بېلګې توکو ته وګورو، ګورو چې 400,000 پر 10 د وېشلو سره 40,000 او 40,000 پر 10 د وېشلو سره 4,000 لاسته راځي.
+p It means this is division pattern. || اس کا مطلب ہے کہ یہ تقسیم کا پیٹرن ہے۔ || دا پدې مانا چې دا د وېش بېلګه ده.
+p This is a division pattern in which next term is obtained by dividing the previous term by 10. || یہ تقسیم کا پیٹرن ہے جس میں اگلا رکن پچھلے رکن کو 10 سے تقسیم کر کے حاصل ہوتا ہے۔ || دا د وېش بېلګه ده چې پکې راتلونکی توکی د مخکیني توکي پر 10 د وېشلو له لارې لاسته راځي.
+p **Rule:** dividing by 10. || **اصول:** 10 سے تقسیم کرنا۔ || **قاعده:** پر 10 وېشل.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Identify if this pattern is increasing or decreasing and then find the next three terms. || پہچانیں کہ یہ پیٹرن بڑھ رہا ہے یا گھٹ رہا ہے اور پھر اگلے تین ارکان معلوم کریں۔ || وپېژنئ چې دا بېلګه زیاتېږي که کمېږي او بیا راتلونکي درې توکي معلوم کړئ.
+m 60, 600, 6,000, 60,000, \_\_\_, \_\_\_, \_\_\_
+endbox
+p Its next 3 terms = || اس کے اگلے 3 ارکان = || د هغې راتلونکي 3 توکي =
+m 400, 40, 4

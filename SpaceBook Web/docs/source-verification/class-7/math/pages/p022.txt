@@ -1,0 +1,32 @@
+@printed 18
+example 4 | Arrange the following set of integers in ascending and descending order. || صحیح اعداد کے درج ذیل سیٹ کو صعودی اور نزولی ترتیب میں لکھیں۔ || د تامو عددونو لاندې سېټ په صعودي او نزولي ترتیب ولیکئ.
+m $-9, -0, +4, +6, -6, +5$
+p **Solution:** || **حل:** || **حل:**
+p Compare the negative numbers separately. || منفی اعداد کا الگ سے موازنہ کریں۔ || منفي عددونه جلا جلا پرتله کړئ.
+- $-9 < -6$ (A greater number with a negative sign is always smaller than every smaller number with a negative sign). Similarly, compare the positive integers separately. 6 is the greatest and 4 is the smallest positive integer here. So, $4 > 5 < 6$. 0 is smaller than the positive integers and greater than the negative integers. So it will be between them. || $-9 < -6$ (منفی علامت والا بڑا عدد ہمیشہ منفی علامت والے ہر چھوٹے عدد سے چھوٹا ہوتا ہے)۔ اسی طرح مثبت صحیح اعداد کا الگ سے موازنہ کریں۔ یہاں 6 سب سے بڑا اور 4 سب سے چھوٹا مثبت صحیح عدد ہے۔ لہٰذا $4 > 5 < 6$۔ 0 مثبت صحیح اعداد سے چھوٹا اور منفی صحیح اعداد سے بڑا ہے۔ لہٰذا یہ ان کے درمیان ہوگا۔ || $-9 < -6$ (د منفي نښې سره لوی عدد تل د منفي نښې سره له هر کوچني عدد څخه کوچنی وي). په همدې ډول مثبت تام عددونه جلا پرتله کړئ. دلته 6 تر ټولو لوی او 4 تر ټولو کوچنی مثبت تام عدد دی. نو $4 > 5 < 6$. 0 له مثبتو تامو عددونو څخه کوچنی او له منفي تامو عددونو څخه لوی دی. نو د هغوی ترمنځ به وي.
+@issue Example 4 prints the set as "−9, −0, +4, +6, −6, +5" (−0) and the comparison as "4 > 5 < 6" (should read 4 < 5 < 6); both kept as printed. The final orders printed (−9, −6, 0, 4, 5, 6 and 6, 5, 4, 0, −6, −9) are correct.
+p Arranging the integers from the smallest to the greatest i.e. in ascending order, we get: $-9, -6, 0, 4, 5, 6$. || صحیح اعداد کو سب سے چھوٹے سے سب سے بڑے تک یعنی صعودی ترتیب میں لکھنے سے ہمیں ملتا ہے: $-9, -6, 0, 4, 5, 6$۔ || تام عددونه له تر ټولو کوچني څخه تر ټولو لوی پورې یعنې په صعودي ترتیب سره ترتیبوو: $-9, -6, 0, 4, 5, 6$.
+p Arranging the integers from the greatest to the smallest i.e. in descending order, we get: $6, 5, 4, 0, -6, -9$ || صحیح اعداد کو سب سے بڑے سے سب سے چھوٹے تک یعنی نزولی ترتیب میں لکھنے سے ہمیں ملتا ہے: $6, 5, 4, 0, -6, -9$ || تام عددونه له تر ټولو لوی څخه تر ټولو کوچني پورې یعنې په نزولي ترتیب سره ترتیبوو: $6, 5, 4, 0, -6, -9$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Arrange the following set of integers in ascending and descending order. || صحیح اعداد کے درج ذیل سیٹ کو صعودی اور نزولی ترتیب میں لکھیں۔ || د تامو عددونو لاندې سېټ په صعودي او نزولي ترتیب ولیکئ.
+m $-50, +15, -18, -100, +9, -40$
+endbox
+@sec 1.6.3 | Comparing and Ordering Rational Numbers || ناطق اعداد کا موازنہ اور ترتیب || د ناطق عددونو پرتله او ترتیب
+## 1.6.3 Comparing and Ordering Rational Numbers || 1.6.3 ناطق اعداد کا موازنہ اور ترتیب || 1.6.3 د ناطق عددونو پرتله او ترتیب
+### Comparing Rational Numbers || ناطق اعداد کا موازنہ || د ناطق عددونو پرتله
+p We can compare rational numbers in two ways: || ہم ناطق اعداد کا دو طریقوں سے موازنہ کر سکتے ہیں: || موږ ناطق عددونه په دوو طریقو پرتله کولی شو:
+- i. By representing them on a number line. || i. انہیں عددی خط پر ظاہر کر کے۔ || i. د عددونو پر کرښه د هغوی په ښودلو سره.
+- ii. By making their denominators the same and comparing the numerators of the rational numbers. || ii. ان کے نسب نما ایک جیسے بنا کر اور ناطق اعداد کے شمار کنندوں کا موازنہ کر کے۔ || ii. د هغوی د مخرجونو یو شان کولو او د ناطق عددونو د صورتونو په پرتله کولو سره.
+### i. By representing them on a number line || i. انہیں عددی خط پر ظاہر کر کے || i. د عددونو پر کرښه د هغوی په ښودلو سره
+p Two or more rational numbers can be compared easily by representing them on a number line. When we move on a number line towards the right the numbers becoming greater and when we move towards the left of the number line the numbers become smaller. || دو یا زیادہ ناطق اعداد کو عددی خط پر ظاہر کر کے آسانی سے ان کا موازنہ کیا جا سکتا ہے۔ جب ہم عددی خط پر دائیں طرف جاتے ہیں تو اعداد بڑے ہوتے جاتے ہیں اور جب ہم عددی خط کے بائیں طرف جاتے ہیں تو اعداد چھوٹے ہوتے جاتے ہیں۔ || دوه یا ډېر ناطق عددونه د عددونو پر کرښه په ښودلو سره په اسانۍ پرتله کېدای شي. کله چې د عددونو پر کرښه ښي لوري ته ځو عددونه لوییږي او کله چې د کرښې کیڼ لوري ته ځو عددونه کوچني کېږي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p On a number line, the rational number to the right of another rational number is always greater. || عددی خط پر کسی ناطق عدد کے دائیں طرف والا ناطق عدد ہمیشہ بڑا ہوتا ہے۔ || د عددونو پر کرښه د یوه ناطق عدد ښي لوري ته ناطق عدد تل لوی وي.
+endbox
+example 1 | Fahad has two ropes of length $\frac{1}{3}$ m and $\frac{5}{3}$ m. which rope is longer? || فہد کے پاس $\frac{1}{3}$ m اور $\frac{5}{3}$ m لمبائی کی دو رسیاں ہیں۔ کون سی رسی لمبی ہے؟ || فهد د $\frac{1}{3}$ m او $\frac{5}{3}$ m اوږدوالي دوه پړي لري. کوم پړی اوږد دی؟
+dline -4..4 | major=8 | minor=3 | top=1/3:1/3;5/3:5/3 | bottom=-4;-3;-2;-1;0;1;2;3;4
+p As we know the rational numbers to the right side of the number line are greater. So, $\frac{5}{3} > \frac{1}{3}$. || جیسا کہ ہم جانتے ہیں عددی خط کے دائیں طرف کے ناطق اعداد بڑے ہوتے ہیں۔ لہٰذا $\frac{5}{3} > \frac{1}{3}$۔ || لکه څنګه چې پوهېږو د عددونو د کرښې ښي لوري ته ناطق عددونه لوی وي. نو $\frac{5}{3} > \frac{1}{3}$.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students how we compare rational numbers by using a number line. Write pairs of rational numbers on the board and ask them to represent it on a number line and compare which is greater or smaller. || طلبہ کو سمجھائیں کہ ہم عددی خط کی مدد سے ناطق اعداد کا موازنہ کیسے کرتے ہیں۔ بورڈ پر ناطق اعداد کے جوڑے لکھیں اور ان سے کہیں کہ انہیں عددی خط پر ظاہر کریں اور موازنہ کریں کہ کون سا بڑا یا چھوٹا ہے۔ || زده کوونکو ته تشریح کړئ چې څنګه د عددونو د کرښې په مرسته ناطق عددونه پرتله کوو. پر تخته د ناطق عددونو جوړې ولیکئ او ترې وغواړئ چې د عددونو پر کرښه یې وښيي او پرتله کړي چې کوم لوی یا کوچنی دی.
+endbox

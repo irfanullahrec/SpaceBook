@@ -1,0 +1,21 @@
+@printed 84
+@deco Ten red apples; rows of apples with a ringed pair taken away each time.
+p Divide 10 apples in 2 children using successive subtracting. || 10 سیب مسلسل تفریق کے ذریعے 2 بچوں میں تقسیم کریں۔ || 10 مڼې د پرله پسې تفریق په مرسته په 2 ماشومانو ووېشئ.
+icons apple:10 @ 5 || Ten apples || دس سیب || لس مڼې
+table
+th Apples | Subtract | Time
+tr 10 | − 2 | First time
+tr 8 | − 2 | Second time
+tr 6 | − 2 | Third time
+tr 4 | − 2 | Fourth time
+tr 2 | − 2 | Fifth time
+tr 0 |  |
+endtable
+m 10 − 2 − 2 − 2 − 2 − 2 = 0
+p Subtracting 2 five times from 10, we get 0. So, each child gets 5 apples. || 10 میں سے پانچ مرتبہ 2 تفریق کرنے سے 0 ملتا ہے۔ لہٰذا ہر بچے کو 5 سیب ملتے ہیں۔ || له 10 څخه پنځه ځله 2 تفریق کړو، 0 ترلاسه کېږي. نو هر ماشوم ته 5 مڼې رسېږي.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+q 1 | Divide 20 eggs in 4 children using successive subtraction. 20 − 4 − ___ − ___ − ___ − ___ = 0. Subtracting ___ times 4 from 20, we get 0. So, each child gets ___ eggs. || 20 انڈے مسلسل تفریق کے ذریعے 4 بچوں میں تقسیم کریں۔ || 20 هګۍ د پرله پسې تفریق په مرسته په 4 ماشومانو ووېشئ.
+qsol cdiv 20 ÷ 4
+q 2 | Divide 12 balloons in 3 children using successive subtraction. 12 − 3 − ___ − ___ − ___ = 0. Subtracting ___ times 3 from 12, we get 0. So, each child gets ___ balloons. || 12 غبارے مسلسل تفریق کے ذریعے 3 بچوں میں تقسیم کریں۔ || 12 پوکڼي د پرله پسې تفریق په مرسته په 3 ماشومانو ووېشئ.
+qsol cdiv 12 ÷ 3
+endbox

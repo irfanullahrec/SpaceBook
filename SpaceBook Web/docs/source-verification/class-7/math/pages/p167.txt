@@ -1,0 +1,59 @@
+@printed 163
+p **Solution:** Divide it into 2 rectangles and name them as A and B. || **حل:** اسے 2 مستطیلوں میں تقسیم کریں اور ان کے نام A اور B رکھیں۔ || **حل:** هغه په 2 مستطیلونو ووېشئ او نومونه یې A او B کېږدئ.
+svg Composite figure ABCDEF (AB = 5 cm, BC = 2 cm, CD step, DE = 2 cm, EF = 3 cm, AF = 4 cm) split into rectangle A (5 cm × 2 cm) on top and rectangle B (3 cm × 2 cm) below || مرکب شکل ABCDEF (AB = 5 cm، BC = 2 cm، DE = 2 cm، EF = 3 cm، AF = 4 cm) جو اوپر مستطیل A (5 cm × 2 cm) اور نیچے مستطیل B (3 cm × 2 cm) میں تقسیم ہے || مرکب شکل ABCDEF (AB = 5 cm، BC = 2 cm، DE = 2 cm، EF = 3 cm، AF = 4 cm) چې پورته مستطیل A (5 cm × 2 cm) او ښکته مستطیل B (3 cm × 2 cm) ویشل شوی
+<svg viewBox="0 0 400 160" width="400" role="img" aria-label="Left: shape with vertices A, B, C, D, E, F; AB 5 cm, BC 2 cm, DE 2 cm, EF 3 cm, AF 4 cm. Right: the same shape split by a dotted line into rectangle A, 5 cm by 2 cm, and rectangle B, 3 cm by 2 cm." font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M40 25 H165 V75 H115 V125 H40 Z" fill="#fff" stroke="#0f172a" stroke-width="1.6"/>
+<text x="36" y="20" text-anchor="end">A</text><text x="170" y="20">B</text><text x="170" y="82">C</text><text x="103" y="85">D</text><text x="120" y="138">E</text><text x="36" y="132" text-anchor="end">F</text>
+<text x="102" y="18" text-anchor="middle">5 cm</text><text x="170" y="52">2 cm</text><text x="120" y="104">2 cm</text><text x="78" y="140" text-anchor="middle">3 cm</text><text x="34" y="78" text-anchor="end">4 cm</text>
+<text x="200" y="80" font-size="18" fill="#dc2626">⇒</text>
+<path d="M240 25 H365 V75 H315 V125 H240 Z" fill="#fff" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="240" y1="75" x2="315" y2="75" stroke="#0f172a" stroke-dasharray="3 3"/>
+<text x="302" y="55" text-anchor="middle" font-weight="700">A</text><text x="277" y="105" text-anchor="middle" font-weight="700">B</text>
+<text x="302" y="18" text-anchor="middle">5 cm</text><text x="370" y="52">2 cm</text><text x="234" y="52" text-anchor="end">2 cm</text><text x="320" y="104">2 cm</text><text x="277" y="140" text-anchor="middle">3 cm</text>
+</svg>
+endsvg
+p Find the area of each rectangle separately. || ہر مستطیل کا رقبہ الگ الگ معلوم کریں۔ || د هر مستطیل مساحت جلا جلا معلوم کړئ.
+eq \text{The area of rectangle A} = \text{length} \times \text{width} = 5 \times 2 = 10\,\text{cm}^2
+eq \text{The area of rectangle B} = \text{length} \times \text{width} = 3 \times 2 = 6\,\text{cm}^2
+endexample
+@issue Example 2 stops after the two separate areas; the total area (10 + 6 = 16 cm²) is not printed.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Area of rectangle is obtained by multiplying its length by width. || مستطیل کا رقبہ اس کی لمبائی کو چوڑائی سے ضرب دے کر حاصل ہوتا ہے۔ || د مستطیل مساحت د اوږدوالي په پلنوالي کې په ضربولو لاسته راځي.
+endbox
+exercise 9.1
+q 1 | Find the perimeter and area of these composite shapes. || ان مرکب اشکال کا احاطہ اور رقبہ معلوم کریں۔ || د دې مرکبو شکلونو محیط او مساحت معلوم کړئ.
+svg a) T-shape QRSTUVWX: top QR = 6 m, RS = 2 m, TS = 2 m, TU = 5 m, VU = 3 m || a) T شکل QRSTUVWX: اوپر QR = 6 m، RS = 2 m، TS = 2 m، TU = 5 m، VU = 3 m || a) T شکل QRSTUVWX: پورته QR = 6 m، RS = 2 m، TS = 2 m، TU = 5 m، VU = 3 m
+<svg viewBox="0 0 220 180" width="220" role="img" aria-label="T-shaped figure QRSTUVWX: top bar QR 6 metres with height RS 2 metres; the overhang TS is 2 metres; stem TU 5 metres high and VU 3 metres wide" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M30 20 H180 V60 H130 V160 H55 V60 H30 Z" fill="#f9a8d4" stroke="#0f172a" stroke-width="1.5"/>
+<text x="26" y="16" text-anchor="end">Q</text><text x="184" y="16">R</text><text x="184" y="66">S</text><text x="134" y="74">T</text><text x="134" y="170">U</text><text x="50" y="170" text-anchor="end">V</text><text x="60" y="74">W</text><text x="26" y="66" text-anchor="end">X</text>
+<text x="105" y="14" text-anchor="middle">6 m</text><text x="186" y="44">2 m</text><text x="155" y="74" text-anchor="middle">2 m</text><text x="136" y="114">5 m</text><text x="92" y="174" text-anchor="middle">3 m</text>
+</svg>
+endsvg
+svg b) L-shape LMNOPQ: LM vertical with MN = 4 m, NO = 3 m, OP = 2 m, QP = 5 m || b) L شکل LMNOPQ: MN = 4 m، NO = 3 m، OP = 2 m، QP = 5 m || b) L شکل LMNOPQ: MN = 4 m، NO = 3 m، OP = 2 m، QP = 5 m
+<svg viewBox="0 0 220 190" width="220" role="img" aria-label="L-shaped figure LMNOPQ: a vertical bar from L to M down to N (MN 4 metres), then a horizontal arm NO 3 metres, OP 2 metres high, bottom QP 5 metres" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M50 20 H90 V120 H165 V160 H50 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5"/>
+<text x="46" y="16" text-anchor="end">L</text><text x="94" y="16">M</text><text x="78" y="134" text-anchor="end">N</text><text x="170" y="118">O</text><text x="170" y="170">P</text><text x="46" y="170" text-anchor="end">Q</text>
+<text x="96" y="74">4 m</text><text x="128" y="114" text-anchor="middle">3 m</text><text x="170" y="144">2 m</text><text x="108" y="178" text-anchor="middle">5 m</text>
+</svg>
+endsvg
+@issue In Q1 the figures give only some side lengths (e.g. the width XW and the height of the T's top bar on the left, and LM in part b); missing lengths must be worked out from the given ones.
+q 2 | Find the perimeter and area of the shaded regions. || سایہ دار حصوں کا احاطہ اور رقبہ معلوم کریں۔ || د سیوري لرونکو برخو محیط او مساحت معلوم کړئ.
+svg a) Shape 6 m wide and 12 m high, with a 4 m notch at the bottom left leaving a 1 m wide strip; a 1 m × 1 m square hole near the top || a) 6 m چوڑی اور 12 m اونچی شکل جس کے نیچے بائیں 4 m کا کٹاؤ ہے اور 1 m چوڑی پٹی رہ جاتی ہے؛ اوپر 1 m × 1 m مربع سوراخ || a) د 6 m پلنوالي او 12 m لوړوالي شکل چې ښکته کیڼ اړخ کې 4 m پرې شوی او 1 m پلنه پټۍ پاتې ده؛ پورته 1 m × 1 m مربع سوری
+<svg viewBox="0 0 200 200" width="200" role="img" aria-label="Shape: top 6 m, right side 12 m, bottom strip 1 m wide, notch 4 m wide at lower left; a small square hole 1 m by 1 m near the top" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M40 20 H150 V180 H130 V130 H40 Z" fill="#fde68a" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="80" y="40" width="22" height="22" fill="#fff" stroke="#0f172a"/>
+<text x="95" y="14" text-anchor="middle">6 m</text><text x="156" y="100">12 m</text><text x="140" y="194" text-anchor="middle">1 m</text><text x="85" y="146" text-anchor="middle">4 m</text><text x="91" y="36" text-anchor="middle">1 m</text><text x="76" y="56" text-anchor="end">1 m</text><text x="106" y="56">1 m</text><text x="91" y="76" text-anchor="middle">1 m</text>
+</svg>
+endsvg
+svg b) Cross-like shape: top 8 m by 4 m with a 4 m × 2 m rectangular hole; left arm 3 m by 3 m; lower part 4 m wide down to the base, right step 2 m || b) صلیب نما شکل: اوپر 8 m × 4 m جس میں 4 m × 2 m کا مستطیل سوراخ؛ بایاں بازو 3 m × 3 m؛ نیچے کا حصہ 4 m چوڑا، دایاں قدم 2 m || b) صلیب ډوله شکل: پورته 8 m × 4 m چې پکې 4 m × 2 m مستطیلي سوری دی؛ کیڼ بازو 3 m × 3 m؛ ښکته برخه 4 m پلنه، ښي ګام 2 m
+<svg viewBox="0 0 260 200" width="260" role="img" aria-label="Shaded shape: an upper bar 8 m wide and 4 m high containing a white rectangle 4 m by 2 m; a left arm 3 m by 3 m; a lower part 4 m wide; a right step of 2 m" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<path d="M90 20 H230 V90 H200 V180 H110 V125 H40 V70 H90 Z" fill="#fde68a" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="130" y="40" width="80" height="34" fill="#fff" stroke="#0f172a"/>
+<text x="160" y="14" text-anchor="middle">8 m</text><text x="236" y="58">4 m</text><text x="104" y="40" text-anchor="end">3 m</text><text x="65" y="64" text-anchor="middle">3 m</text><text x="36" y="100" text-anchor="end">3 m</text><text x="170" y="86" text-anchor="middle">4 m</text><text x="205" y="62">2 m</text><text x="104" y="150" text-anchor="end">4 m</text><text x="206" y="130">2 m</text>
+</svg>
+endsvg
+@issue The Q2 figures are reproduced from the printed drawings with every printed length; some segments are unlabelled in the book, so the drawings are approximate in proportion.
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Teaching Point: explain student how to find the perimeter and area of the shaded and un-shaded region of a composite figures by drawing different composite figures on the board. || تدریسی نکتہ: بورڈ پر مختلف مرکب اشکال بنا کر طلبہ کو سمجھائیں کہ مرکب اشکال کے سایہ دار اور غیر سایہ دار حصوں کا احاطہ اور رقبہ کیسے معلوم کیا جاتا ہے۔ || د تدریس ټکی: پر تخته د بېلابېلو مرکبو شکلونو په رسمولو زده کوونکو ته تشریح کړئ چې د مرکبو شکلونو د سیوري لرونکو او بې سیوري برخو محیط او مساحت څنګه معلومېږي.
+endbox

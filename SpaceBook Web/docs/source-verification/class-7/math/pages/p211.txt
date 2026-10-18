@@ -1,0 +1,22 @@
+@printed 207
+exercise 11.2
+q 1 | Identify regular and irregular polygons among the following. Justify your answer. || درج ذیل میں سے باقاعدہ اور بے قاعدہ کثیر الاضلاع پہچانیں۔ اپنے جواب کا جواز پیش کریں۔ || له لاندې څخه منظمې او غیر منظمې څو ضلعي وپېژنئ. د خپل ځواب دلیل ووایاست.
+@deco Sixteen small polygons are printed for Q1: an equilateral triangle, a regular octagon, an irregular pentagon, a zig-zag hexagon, an irregular quadrilateral, a regular heptagon, a right triangle, an irregular hexagon, a square, a rectangle, a regular hexagon, a regular pentagon, a square on its corner, a star-like concave polygon and a zig-zag concave polygon (plus one more irregular shape).
+q 2 | Draw an irregular polygon that has odd number of sides. || طاق تعداد کے اضلاع والی ایک بے قاعدہ کثیر الاضلاع بنائیں۔ || د طاق شمېر ضلعو لرونکې یوه غیر منظمه څو ضلعي رسم کړئ.
+q 3 | Draw a regular polygon that has even number of sides. || جفت تعداد کے اضلاع والی ایک باقاعدہ کثیر الاضلاع بنائیں۔ || د جفت شمېر ضلعو لرونکې یوه منظمه څو ضلعي رسم کړئ.
+q 4 | Draw a concave polygon with 5 sides. || 5 اضلاع والی ایک مقعر کثیر الاضلاع بنائیں۔ || د 5 ضلعو لرونکې یوه مقعره څو ضلعي رسم کړئ.
+endexercise
+@sec 11.3 | Interior and Exterior angles of a Regular Polygon || باقاعدہ کثیر الاضلاع کے اندرونی اور بیرونی زاویے || د منظمې څو ضلعي داخلي او خارجي زاویې
+# 11.3 Interior and Exterior angles of a Regular Polygon || 11.3 باقاعدہ کثیر الاضلاع کے اندرونی اور بیرونی زاویے || 11.3 د منظمې څو ضلعي داخلي او خارجي زاویې
+## 11.3.1 Interior angles of a Polygon || 11.3.1 کثیر الاضلاع کے اندرونی زاویے || 11.3.1 د څو ضلعي داخلي زاویې
+p Let's find the sum of measures of interior angles of a polygon, which will later help us finding each of the interior and exterior angles of a polygon. || آئیے کثیر الاضلاع کے اندرونی زاویوں کی پیمائش کا مجموعہ معلوم کریں جو بعد میں کثیر الاضلاع کا ہر اندرونی اور بیرونی زاویہ معلوم کرنے میں مدد دے گا۔ || راځئ د څو ضلعي د داخلي زاویو د اندازو مجموعه معلومه کړو چې وروسته به د څو ضلعي د هرې داخلي او خارجي زاویې په موندلو کې مرسته وکړي.
+eq \text{Sum of interior angles} = 180° \times (n - 2), \text{ where n is number of sides of the polygon.}
+table
+th | Polygon || کثیر الاضلاع || څو ضلعي | Number of sides of the polygon || اضلاع کی تعداد || د ضلعو شمېر | Sum of interior angles = 180° × (n − 2) || اندرونی زاویوں کا مجموعہ = 180° × (n − 2) || د داخلي زاویو مجموعه = 180° × (n − 2)
+tr | Triangle || مثلث || مثلث | 3 | 180° × (3 − 2) = 180° × 1 = 180°
+tr | Quadrilateral || چوکور || څلور ضلعي | 4 | 180° × (4 − 2) = 180° × 2 = 360°
+tr | Pentagon || مخمس || پنځه ضلعي | 5 | 180° × (5 − 2) = 180° × 3 = 540°
+tr | Hexagon || مسدس || شپږ ضلعي | 6 | 180° × (6 − 2) = 180° × 4 = 720°
+tr | Heptagon || مسبع || اووه ضلعي | 7 | 180° × (7 − 2) = 180° × 5 = 900°
+tr | Octagon || مثمن || اته ضلعي | 8 | 180° × (8 − 2) = 180° × 6 = 1080°
+endtable

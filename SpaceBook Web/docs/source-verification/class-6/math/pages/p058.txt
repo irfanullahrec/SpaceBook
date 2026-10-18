@@ -1,0 +1,57 @@
+@printed 56
+exercise 3.5
+q 1 | Verify the Commutative Law under multiplication for the following. || درج ذیل کے لیے ضرب کے تحت قانونِ مبادلہ کی تصدیق کریں۔ || د لاندې لپاره د ضرب لاندې د تبادلې قانون ثابت کړئ.
+qsolve comm mul
+qp a | –2, +6
+qp b | 8, –4
+qp c | –6, 3
+qp d | –38, –94
+qp e | –95, 34
+qp f | 48, –82
+q 2 | Verify the Associative Law under multiplication for the following. || درج ذیل کے لیے ضرب کے تحت قانونِ تلازم کی تصدیق کریں۔ || د لاندې لپاره د ضرب لاندې د اتحاد قانون ثابت کړئ.
+qsolve assoc mul
+qp a | –4, +7, –8
+qp b | –3, –2, 7
+qp c | –13, 52, –68
+qp d | –85, –44, 76
+qp e | –63, –93, –81
+qp f | 15, –38, –39
+q 3 | Write the multiplicative inverse of each of the following. || درج ذیل میں سے ہر ایک کا ضربی معکوس لکھیں۔ || د لاندې هر یو ضربي معکوس ولیکئ.
+qsolve inverse
+qp a | –3
+qp b | –2
+qp c | +7
+qp d | +100
+qp e | –77
+qp f | –243
+qp g | –48
+qp h | –55
+qp i | +60
+qp j | $\frac{1}{-2}$
+qp k | $\frac{3}{2}$
+qp l | $\frac{-2}{7}$
+q 4 | Verify the Distributive Law. || قانونِ تقسیم کی تصدیق کریں۔ || د توزیع قانون ثابت کړئ.
+qsolve verify
+qp a | –4 × [(1 + (–3)] = (–4 × 1) + [(–4 × (–3)]
+qp b | –4 × [(–5) + 1] = [(–4) × (–5)] + [(–4) × 1]
+qp c | [(–5) – 2)] × (–2) = [(–5) × (–2)] – [2 × (–2)]
+qp d | –8 × [(1 + (–3)] = (–8 × 1) + [(–8 × (–3)]
+qp e | [(–6) – 1)] × (–4) = [(–6) × (–4)] – [1 × (–4)]
+qp f | –2 × [(1 + (–3)] = (–2 × 1) + [(–2 × (–3)]
+qp g | [(–7) – 1)] × (–3) = [(–7) × (–3)] – [1 × (–3)]
+qp h | –4 × [(7 + (–8)] = (–4 × 7) + [(–4 × (–8)]
+endexercise
+@issue Exercise 3.5 Q4 prints unbalanced brackets in most parts (e.g. "[(1 +(–3)]"); kept as printed, and the SpaceBook solutions close the brackets at the end of each side before evaluating. Part (b) is printed "b –4 × …" without the ")" after b.
+@sec 3.6 | Division of Integers || صحیح اعداد کی تقسیم || د تامو عددونو وېش
+# 3.6 Division of Integers || 3.6 صحیح اعداد کی تقسیم || 3.6 د تامو عددونو وېش
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- How we can relate the multiplication and division of whole numbers? || ہم مکمل اعداد کی ضرب اور تقسیم میں کیسے تعلق جوڑ سکتے ہیں؟ || موږ څنګه د بشپړو عددونو ضرب او وېش سره تړلی شو؟
+- How we can divide two whole numbers? || ہم دو مکمل اعداد کو کیسے تقسیم کر سکتے ہیں؟ || موږ څنګه دوه بشپړ عددونه وېشلی شو؟
+- Write any two numbers and divide them step by step. || کوئی سے دو اعداد لکھیں اور انہیں قدم بہ قدم تقسیم کریں۔ || هر دوه عددونه ولیکئ او ګام په ګام یې ووېشئ.
+endbox
+## 3.6.1 Relation of Multiplication and Division || 3.6.1 ضرب اور تقسیم کا تعلق || 3.6.1 د ضرب او وېش اړیکه
+p We have learned how to multiply and divide numbers in previous grades. These two operations are inverse of each other. We know that an inverse operation in Mathematics means an operation that reverses the effect of an earlier operation. || ہم پچھلی جماعتوں میں اعداد کی ضرب اور تقسیم سیکھ چکے ہیں۔ یہ دونوں عملیات ایک دوسرے کی الٹ ہیں۔ ہم جانتے ہیں کہ ریاضی میں الٹی عملیت سے مراد وہ عملیت ہے جو پچھلی عملیت کے اثر کو الٹ دے۔ || موږ په تېرو ټولګیو کې د عددونو ضرب او وېش زده کړي. دا دوه عملیې یو د بل معکوسې دي. پوهېږو چې په ریاضي کې معکوسه عملیه هغه ده چې د مخکینۍ عملیې اغېز بېرته واړوي.
+p For example, when 3 is multiplied to number 4, we get 12. Now if 12 is divided by 3, we get the original number 4. So the division reversed the process of multiplication and result is the original number 4. || مثلاً جب 3 کو عدد 4 سے ضرب دیا جائے تو 12 ملتا ہے۔ اب اگر 12 کو 3 سے تقسیم کیا جائے تو اصل عدد 4 ملتا ہے۔ اس طرح تقسیم نے ضرب کے عمل کو الٹ دیا اور نتیجہ اصل عدد 4 ہے۔ || د بېلګې په توګه کله چې 3 په 4 کې ضرب شي، 12 لاسته راځي. اوس که 12 پر 3 ووېشل شي، اصلي عدد 4 لاسته راځي. نو وېش د ضرب عمل بېرته واړاوه او پایله اصلي عدد 4 دی.
+## 3.6.2 Division of Integers || 3.6.2 صحیح اعداد کی تقسیم || 3.6.2 د تامو عددونو وېش
+p When we divide two integers, we follow these rules. || جب ہم دو صحیح اعداد تقسیم کرتے ہیں تو یہ قواعد اختیار کرتے ہیں۔ || کله چې دوه تام عددونه وېشو، دا قواعد تعقیبوو.
+- 1. The quotient of two positive integers will be a positive integer. || 1۔ دو مثبت صحیح اعداد کا خارجِ قسمت مثبت صحیح عدد ہوگا۔ || 1. د دوو مثبتو تامو عددونو خارج قسمت به مثبت تام عدد وي.

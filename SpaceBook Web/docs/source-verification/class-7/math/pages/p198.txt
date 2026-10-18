@@ -1,0 +1,23 @@
+@printed 194
+exercise 10.4
+q 1 | Rizwan covered distance of 125 km in 2 hours on bike. Find the average speed. || رضوان نے موٹر سائیکل پر 2 گھنٹوں میں 125 km فاصلہ طے کیا۔ اوسط رفتار معلوم کریں۔ || رضوان په موټرسایکل په 2 ساعتونو کې 125 km واټن ووهه. منځنۍ چټکتیا معلومه کړئ.
+q 2 | Hadia covered a distance of 640 km by car in 8 hours. Find the average speed. || ہادیہ نے کار کے ذریعے 8 گھنٹوں میں 640 km فاصلہ طے کیا۔ اوسط رفتار معلوم کریں۔ || هادیې د موټر په واسطه په 8 ساعتونو کې 640 km واټن ووهه. منځنۍ چټکتیا معلومه کړئ.
+q 3 | If the total distance covered in 7 hours is 12 km, what is the average speed? || اگر 7 گھنٹوں میں طے کیا گیا کل فاصلہ 12 km ہو تو اوسط رفتار کیا ہے؟ || که په 7 ساعتونو کې وهل شوی ټول واټن 12 km وي، منځنۍ چټکتیا څومره ده؟
+q 4 | A train covered a distance of 200 kilometer per hours for first 3 hours and then its speed changed and it covered a distance of 150 km per hour for the next 5 hours. Find the average speed of the train. || ایک ٹرین نے پہلے 3 گھنٹے 200 کلومیٹر فی گھنٹہ کی رفتار سے فاصلہ طے کیا اور پھر اس کی رفتار بدل گئی اور اگلے 5 گھنٹے 150 km فی گھنٹہ کی رفتار سے چلی۔ ٹرین کی اوسط رفتار معلوم کریں۔ || یوه اورګاډي لومړي 3 ساعته په ساعت کې 200 کیلومتره واټن ووهه او بیا یې چټکتیا بدله شوه او راتلونکي 5 ساعته یې په ساعت کې 150 km واټن ووهه. د اورګاډي منځنۍ چټکتیا معلومه کړئ.
+q 5 | A car covered a distance at a speed of 109 km/hr for 5 hours and then at a speed of 100 km/hr for 2 hours. Calculate the average speed of the car. || ایک کار نے 5 گھنٹے 109 km/hr کی رفتار سے اور پھر 2 گھنٹے 100 km/hr کی رفتار سے فاصلہ طے کیا۔ کار کی اوسط رفتار معلوم کریں۔ || یوه موټر 5 ساعته د 109 km/hr په چټکتیا او بیا 2 ساعته د 100 km/hr په چټکتیا واټن ووهه. د موټر منځنۍ چټکتیا حساب کړئ.
+endexercise
+@sec 10.5 | Real-Life Problems of Distance, Time and Speed || فاصلہ، وقت اور رفتار کے حقیقی زندگی کے سوالات || د واټن، وخت او چټکتیا د ورځني ژوند پوښتنې
+# 10.5 Real-Life Problems of Distance, Time and Speed || 10.5 فاصلہ، وقت اور رفتار کے حقیقی زندگی کے سوالات || 10.5 د واټن، وخت او چټکتیا د ورځني ژوند پوښتنې
+example 27 | The average speed of the car is 56km/hr. Find the total distance covered in 7 hours. || کار کی اوسط رفتار 56km/hr ہے۔ 7 گھنٹوں میں طے کیا گیا کل فاصلہ معلوم کریں۔ || د موټر منځنۍ چټکتیا 56km/hr ده. په 7 ساعتونو کې وهل شوی ټول واټن معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Average speed} &= 56\,\text{km/hr}, \quad \text{Total time} = 7\,\text{hours}, \quad \text{Total distance} = ? \\ \text{Average speed} &= \text{total distance/total time} \\ \text{Average speed} \times \text{total time} &= \text{total distance} \\ 56 \times 7 &= \text{total distance} \\ \text{Total distance} &= 392\,\text{km} \end{aligned}
+endexample
+example 28 | A truck covers a distance of 117 km in 3 hours. Find the speed of the truck in m/sec. || ایک ٹرک 3 گھنٹوں میں 117 km فاصلہ طے کرتا ہے۔ ٹرک کی رفتار m/sec میں معلوم کریں۔ || یو ټرک په 3 ساعتونو کې 117 km واټن وهي. د ټرک چټکتیا په m/sec معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Distance} &= 117\,\text{km}, \quad \text{Time} = 3\,\text{hours} \\ \text{Speed} &= \frac{\text{Distance covered}}{\text{Time taken}} = \frac{117}{3} = 39\,\text{km/hr} \end{aligned}
+p To convert it into m/sec, multiply it by 1000 and divide it by 3600. || اسے m/sec میں تبدیل کرنے کے لیے 1000 سے ضرب دیں اور 3600 سے تقسیم کریں۔ || د m/sec ته د اړولو لپاره هغه په 1000 کې ضرب او پر 3600 ووېشئ.
+eq \text{Speed} = \frac{39 \times 1000}{3600} = 10.83\,\text{m/sec}
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Distance is the measurement of how far one thing is from another thing. Time is the duration in which all things happen. || فاصلہ اس بات کی پیمائش ہے کہ ایک چیز دوسری چیز سے کتنی دور ہے۔ وقت وہ دورانیہ ہے جس میں تمام چیزیں وقوع پذیر ہوتی ہیں۔ || واټن د دې اندازه ده چې یو شی له بل څخه څومره لرې دی. وخت هغه موده ده چې ټول شیان پکې پېښېږي.
+endbox

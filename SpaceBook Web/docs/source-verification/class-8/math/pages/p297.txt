@@ -1,0 +1,38 @@
+@printed 295
+@issue The 6 × 6 table of outcomes of two dice is printed with the first die in the left column and the second in the top row; the top-left cell is empty. The text prints "A = {the sum is 5} = {(1, 4), (2, 3), (3, 2), (4, 1)}" and "B = {both numbers are odd} = {(1, 1), (1, 3), (1, 5), (3, 1), (3, 3), (3, 5), (5, 1), (5, 3), (5, 5)}". In the working, P(A or B) = P(A∪B) = 4/36 + 9/36 = 13/36 and the right-hand column shows = P(A) + P(B) = 1/9 + 1/4 (equivalent forms, checked). The Teaching Point gives a web link, transcribed as text only.
+example 3
+p Two fair dice are tossed and different events are recorded. || دو منصفانہ پانسے اچھالے جاتے ہیں اور مختلف واقعات ریکارڈ کیے جاتے ہیں۔ || دوه عادلانه ټاسونه غورځول کېږي او بېلابېلې پېښې ثبتېږي.
+table Outcomes of tossing two fair dice || دو منصفانہ پانسوں کو اچھالنے کے نتائج || د دوو عادلانه ټاسونو د غورځولو پایلې
+th |  | 1 | 2 | 3 | 4 | 5 | 6
+tr | 1 | (1, 1) | (1, 2) | (1, 3) | (1, 4) | (1, 5) | (1, 6)
+tr | 2 | (2, 1) | (2, 2) | (2, 3) | (2, 4) | (2, 5) | (2, 6)
+tr | 3 | (3, 1) | (3, 2) | (3, 3) | (3, 4) | (3, 5) | (3, 6)
+tr | 4 | (4, 1) | (4, 2) | (4, 3) | (4, 4) | (4, 5) | (4, 6)
+tr | 5 | (5, 1) | (5, 2) | (5, 3) | (5, 4) | (5, 5) | (5, 6)
+tr | 6 | (6, 1) | (6, 2) | (6, 3) | (6, 4) | (6, 5) | (6, 6)
+endtable
+p Let the events A and B be as follows: || فرض کریں واقعات A اور B درج ذیل ہیں: || پېښې A او B داسې وي:
+eq A = \{\text{the sum is } 5\} = \{(1,4),(2,3),(3,2),(4,1)\}
+eq B = \{\text{both numbers are odd}\} = \{(1,1),(1,3),(1,5),(3,1),(3,3),(3,5),(5,1),(5,3),(5,5)\}
+p Then: || تب: || بیا:
+qp a | Are events A and B mutually exclusive? || کیا واقعات A اور B باہمی طور پر خارج ہیں؟ || ایا پېښې A او B متقابل ځانګړې دي؟
+qp b | Find P(A∪B) and P(A∩B) || P(A∪B) اور P(A∩B) معلوم کریں || P(A∪B) او P(A∩B) پیدا کړئ
+## Solution: || حل: || حل:
+p a) A and B cannot occur at the same time because the sum of two odd numbers is always even and 5 is not even. So, A and B are mutually exclusive. || الف) A اور B بیک وقت رونما نہیں ہو سکتے کیونکہ دو طاق اعداد کا مجموعہ ہمیشہ جفت ہوتا ہے اور 5 جفت نہیں ہے۔ لہٰذا A اور B باہمی طور پر خارج ہیں۔ || الف) A او B په یو وخت نشي پېښېدای ځکه چې د دوو طاقو عددونو مجموعه تل جفت وي او 5 جفت نه دی. نو A او B متقابل ځانګړې دي.
+p b) We know that for mutually exclusive events: || ب) ہم جانتے ہیں کہ باہمی طور پر خارج واقعات کے لیے: || ب) موږ پوهېږو چې د متقابل ځانګړو پېښو لپاره:
+eq P(A \text{ and } B) = P(A \cap B) = 0\ \text{ (as the two events cannot have any common element).}
+p There are 36 total outcomes. || کل 36 نتائج ہیں۔ || ټول 36 پایلې شته.
+eq \begin{aligned}P(A \text{ or } B) &= P(A \cup B) = P(A) + P(B)\\ &= \frac{4}{36} + \frac{9}{36} = \frac{1}{9} + \frac{1}{4}\\ &= \frac{13}{36}\end{aligned}
+endexample
+### Probability of an Independent Event || آزاد واقعے کا احتمال || د خپلواکې پېښې احتمال
+p Consider the example. If A and B are two events where: || مثال پر غور کریں۔ اگر A اور B دو واقعات ہوں جہاں: || بېلګې ته پام وکړئ. که A او B دوې پېښې وي چېرته چې:
+p A = rolling a die || A = پانسہ پھینکنا || A = ټاس غورځول
+p B = Tossing a coin || B = سکہ اچھالنا || B = سکه غورځول
+p As we can see that the result of the first event doesn't affect the result of the second event, so these two are independent events. No matter what the outcome of rolling a die is, there will be no effect of it on tossing a coin. || جیسا کہ ہم دیکھ سکتے ہیں پہلے واقعے کا نتیجہ دوسرے واقعے کے نتیجے پر اثر انداز نہیں ہوتا، لہٰذا یہ دونوں آزاد واقعات ہیں۔ پانسہ پھینکنے کا نتیجہ کچھ بھی ہو، اس کا سکہ اچھالنے پر کوئی اثر نہیں پڑے گا۔ || لکه څنګه چې موږ وینو د لومړۍ پېښې پایله د دوهمې پېښې په پایله اغېز نه کوي، نو دا دوه خپلواکې پېښې دي. د ټاس د غورځولو پایله هر څه وي، د سکې پر غورځولو به یې هېڅ اغېز نه وي.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The probability of two independent events can be found by multiplying the probability of the first event by the probability of the second event. || دو آزاد واقعات کا احتمال پہلے واقعے کے احتمال کو دوسرے واقعے کے احتمال سے ضرب دے کر معلوم کیا جا سکتا ہے۔ || د دوو خپلواکو پېښو احتمال د لومړۍ پېښې احتمال د دوهمې پېښې په احتمال کې ضربولو سره موندل کېدای شي.
+eq P(A \text{ and } B) = P(A)\,P(B)
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Share the following link with the students to have them practice probability problems through online games: https://www.transum.org/software/SW/Dice/ || طلبہ کے ساتھ درج ذیل لنک شیئر کریں تاکہ وہ آن لائن کھیلوں کے ذریعے احتمال کے مسائل کی مشق کر سکیں: https://www.transum.org/software/SW/Dice/ || له زده کوونکو سره لاندې لینک شریک کړئ ترڅو د آنلاین لوبو له لارې د احتمال ستونزې تمرین کړي: https://www.transum.org/software/SW/Dice/
+endbox

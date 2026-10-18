@@ -1,0 +1,48 @@
+@printed 58
+@deco Compass rose with Urdu direction names; legend table of conventional signs (ریلوے لائن، پکی سڑک، کچی سڑک، پُل، ریلوے پُل، درخت، کنٹورز، دریا، زیرِ کاشت رقبہ، بستی); footer "NOT FOR SALE".
+### حدود (Border) || Border || پوله
+p نقشے کی حدود سے مراد اس کے چاروں سمت لگی لائنیں ہیں جو اسے ایک تصویر کے فریم کی طرح بند کر لیتی ہیں۔ اسے حاشیہ بھی کہتے ہیں۔ || Map borders are the lines on all four sides of a map which enclose it like a picture frame. A border is also called a hem. || د نقشې د څلورو خواوو هغه کرښې چې د انځور د چوکاټ په څېر یې راګیروي، د نقشې پوله بلل کېږي. "هېم" هم ورته وایي.
+### سمتیں (Orientation) || Orientation || لوری
+p نقشے پر سمت کو معلوم کرنا اورینٹیشن (Orientation) کہلاتا ہے۔ شمال، جنوب، مشرق اور مغرب چار بنیادی سمتیں (Cardinal Directions) ہیں۔ || Finding directions on a map is called orientation. North, East, West and South are the four cardinal directions. || پر نقشه د لوریو موندل لوری موندنه (اورینټېشن) بلل کېږي. شمال، ختیځ، لوېدیځ او جنوب څلور اصلي لوري دي.
+svg قطب نما: بنیادی اور درمیانی سمتیں || Compass rose with cardinal and intermediate directions || قطب نما: اصلي او منځني لوري
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14">
+<g transform="translate(180,150)"><circle r="60" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+<path d="M0 -95 L12 0 L0 95 L-12 0 Z" fill="#4338ca"/><path d="M-95 0 L0 12 L95 0 L0 -12 Z" fill="#4338ca"/>
+<path d="M-55 -55 L8 -8 L55 55 L-8 8 Z" fill="#818cf8"/><path d="M55 -55 L8 8 L-55 55 L-8 -8 Z" fill="#818cf8"/>
+<text y="-104" text-anchor="middle" font-weight="bold">North</text><text y="118" text-anchor="middle" font-weight="bold">South</text><text x="-110" y="5" text-anchor="end" font-weight="bold">West</text><text x="110" y="5" font-weight="bold">East</text>
+<text x="-62" y="-62" text-anchor="end">North West</text><text x="62" y="-62">North East</text><text x="-62" y="72" text-anchor="end">South West</text><text x="62" y="72">South East</text></g>
+</svg>
+endsvg
+box check | ذرا رکیں اور بتائیں (Stop and Tell) || Stop and Tell || ودرېږئ او ووایئ
+- ثانوی سمتوں (Intermediate Directions) کے نام بتائیں۔ || Tell the names of the intermediate directions. || د منځنیو لوریو نومونه ووایئ.
+endbox
+exercise Stop and Tell 5.1
+qp 1 | ثانوی سمتوں کے نام بتائیں۔ || Tell the names of the intermediate directions. || د منځنیو لوریو نومونه.
+sol شمال مشرق، جنوب مشرق، جنوب مغرب اور شمال مغرب۔ ## || North East, South East, South West and North West. || شمال ختیځ، جنوب ختیځ، جنوب لوېدیځ او شمال لوېدیځ.
+endexercise
+### علامتی فہرست (Legend) || Legend || کیلي
+p زمینی خدوخال مثلاً پہاڑ، میدان، صحرا وغیرہ اور درختوں، پودوں، سڑکوں، عمارات کو ظاہر کرنے کے لیے نقشوں پر خاص علامات استعمال کی جاتی ہیں۔ نقشے پر علامات کو ایک فہرست کی صورت میں دکھایا جاتا ہے جسے علامتی فہرست کہتے ہیں۔ || The features of the Earth, such as mountains, plains, deserts, trees, buildings and roads, are shown by special signs on maps. These signs are given in a list on the map, which is called the legend. || د ځمکې ځانګړنې لکه غرونه، میدانونه، دښتې، ونې، ودانۍ او سړکونه پر نقشه په ځانګړو نښو ښودل کېږي. دا نښې پر نقشه په یوه لست کې ورکول کېږي چې کیلي (لیجنډ) بلل کېږي.
+svg روایتی علامات (کلید) || Conventional signs (legend) || دودیزې نښې (کیلي)
+<svg viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
+<g fill="#f0f9ff" stroke="#0369a1"><rect x="5" y="5" width="126" height="105" rx="6"/><rect x="136" y="5" width="126" height="105" rx="6"/><rect x="267" y="5" width="126" height="105" rx="6"/><rect x="398" y="5" width="126" height="105" rx="6"/><rect x="529" y="5" width="126" height="105" rx="6"/><rect x="5" y="120" width="126" height="105" rx="6"/><rect x="136" y="120" width="126" height="105" rx="6"/><rect x="267" y="120" width="126" height="105" rx="6"/><rect x="398" y="120" width="126" height="105" rx="6"/><rect x="529" y="120" width="126" height="105" rx="6"/></g>
+<g text-anchor="middle" font-weight="bold"><text x="68" y="28">Railway Line</text><text x="199" y="28">Metalled Road</text><text x="330" y="28">Unmetalled Road</text><text x="461" y="28">Bridge</text><text x="592" y="28">Railway Bridge</text><text x="68" y="143">Trees</text><text x="199" y="143">Contours</text><text x="330" y="143">River</text><text x="461" y="143">Agriculture Land</text><text x="592" y="143">Settlements</text></g>
+<g><rect x="20" y="66" width="96" height="8" fill="#fff" stroke="#111"/><g fill="#111"><rect x="20" y="66" width="16" height="8"/><rect x="52" y="66" width="16" height="8"/><rect x="84" y="66" width="16" height="8"/></g>
+<line x1="150" y1="70" x2="248" y2="70" stroke="#dc2626" stroke-width="6"/>
+<line x1="282" y1="64" x2="378" y2="64" stroke="#111" stroke-dasharray="8 5" stroke-width="2"/><line x1="282" y1="76" x2="378" y2="76" stroke="#111" stroke-dasharray="8 5" stroke-width="2"/>
+<path d="M412 58 L424 64 L498 64 L510 58 M412 82 L424 76 L498 76 L510 82" stroke="#111" fill="none" stroke-width="2"/>
+<path d="M543 58 L560 64 L585 64 L592 54 L599 64 L624 64 L641 58 M543 82 L560 76 L585 76 L592 86 L599 76 L624 76 L641 82" stroke="#111" fill="none" stroke-width="2"/>
+<g fill="#15803d"><ellipse cx="50" cy="190" rx="7" ry="11"/><ellipse cx="72" cy="185" rx="7" ry="11"/><ellipse cx="90" cy="192" rx="7" ry="11"/></g>
+<path d="M150 175 Q200 160 248 172 M150 195 Q200 180 248 192" stroke="#dc2626" fill="none" stroke-width="2"/><text x="152" y="172" font-size="10">100</text><text x="152" y="205" font-size="10">50</text>
+<path d="M285 165 Q330 185 378 205" stroke="#0891b2" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M420 185 Q430 160 460 168 Q490 158 500 180 Q495 205 460 200 Q425 210 420 185 Z" fill="#16a34a"/>
+<g fill="#dc2626"><rect x="545" y="168" width="40" height="14"/><rect x="590" y="168" width="22" height="14"/><rect x="616" y="168" width="22" height="38"/><rect x="545" y="188" width="18" height="18"/><rect x="567" y="188" width="45" height="18"/></g></g>
+</svg>
+endsvg
+box info | کیا آپ مزید جاننا چاہتے ہیں؟ (Do you want to know more?) || Do you want to know more? || ایا نور پوهېدل غواړئ؟
+p علامات کو مروجہ علامات یا رواجی علامات (Conventional Signs) بھی کہتے ہیں۔ || Signs are also called conventional signs. || دې نښو ته دودیزې نښې هم وایي.
+endbox
+### عنوان (Title) || Title || سرلیک
+p نقشے کو ایک عنوان دیا جاتا ہے جو نقشے میں سب سے اوپر جلی حروف میں لکھا جاتا ہے۔ اس سے نقشے کے علاقے اور مقصد کا پتا چلتا ہے۔ || A map is given a title, which is written on top of the map in bold and visible letters. It shows the area and purpose of the map. || نقشه یو سرلیک لري چې د نقشې پر سر په غټو او ښکاره تورو لیکل کېږي. د نقشې سیمه او موخه ښيي.
+box teach | برائے اساتذہ || For Teachers || د ښوونکو لپاره
+p طلبہ سے ”BOLTS“ کی اصطلاح کے بارے میں پوچھیں۔ انھیں نقشہ دکھاتے ہوئے ”BOLTS“ یعنی نقشے کے عناصر کے بارے میں سوالات کریں۔ || Ask students about the term "BOLTS". Show them a map and ask them questions about its elements. || له زده کوونکو د "BOLTS" په اړه وپوښتئ. یوه نقشه ورته وښیئ او د عناصرو په اړه یې پوښتنې وکړئ.
+endbox

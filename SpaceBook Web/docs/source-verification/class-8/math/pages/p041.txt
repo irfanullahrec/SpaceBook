@@ -1,0 +1,27 @@
+@printed 37
+m Let the number of days $= x$
+m The number of pages $= y$
+m Here $y \propto x$
+p So, we can write this relation as || لہٰذا ہم اس تعلق کو یوں لکھ سکتے ہیں || نو دا اړیکه داسې لیکلی شو
+m $y = kx$
+m $y = 2x$ (where 2 is the constant of proportionality)
+p We will find a few pairs of numbers for $x$ and y which satisfy the equation $y = 2x$. || ہم $x$ اور y کے لیے اعداد کے چند جوڑے معلوم کریں گے جو مساوات $y = 2x$ کو پورا کرتے ہیں۔ || موږ به د $x$ او y لپاره د عددونو څو جوړې ومومو چې د $y = 2x$ معادله پوره کوي.
+m Put $x = 0$ in $y = 2x$;
+m $y = 2(0) = 0$
+m Put $x = 1$ in $y = 2x$;
+m $y = 2(1) = 2$
+m Put $x = 2$ in $y = 2x$;
+m $y = 2(2) = 4$
+m Put $x = 3$ in $y = 2x$;
+m $y = 2(3) = 6$
+m Put $x = 4$ in $y = 2x$;
+m $y = 2(4) = 8$
+p and so on. || وغیرہ۔ || او داسې نور.
+p So, by showing this values on table, we get: || لہٰذا ان قیمتوں کو جدول میں ظاہر کرنے سے ہمیں ملتا ہے: || نو د دې ارزښتونو په جدول کې ښودلو سره لاسته راوړو:
+table
+tr | $x$ (No. of days) | 0 | 1 | 2 | 3 | 4
+tr | y (No. of pages) | 0 | 2 | 4 | 6 | 8
+endtable
+p If we plot these points on the graphs we get: || اگر ہم یہ نقاط گراف پر لگائیں تو ہمیں ملتا ہے: || که دا ټکي پر ګراف ولګوو، لاسته راوړو:
+graph x=0..4.5:0.5 | y=0..9:1 | xl=Number of days | yl=Number of pages | pts=0,0;1,2;2,4;3,6;4,8 | line
+endexample

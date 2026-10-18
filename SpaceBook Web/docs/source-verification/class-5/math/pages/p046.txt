@@ -1,0 +1,63 @@
+@printed 41
+q 2 | Find the HCF of the following numbers using prime factorization. || درج ذیل اعداد کا عاد اعظم مفرد اجزائے ضربی کے ذریعے معلوم کریں۔ || د لاندې عددونو لوی مشترک قاسم د لومړني ضربي تجزیې په مرسته معلوم کړئ.
+qsolve hcfpf
+qp a | 15, 18
+qp b | 10, 20
+qp c | 25, 40
+qp d | 56, 88
+qp e | 10, 18, 22
+qp f | 20, 40, 82
+qp g | 16, 38, 98
+qp h | 39, 51, 75
+q 3 | Find the HCF of the following numbers by using the division method. || درج ذیل اعداد کا عاد اعظم تقسیم کے طریقے سے معلوم کریں۔ || د لاندې عددونو لوی مشترک قاسم د وېش په طریقه معلوم کړئ.
+qsolve hcfdiv
+qp a | 20, 50
+qp b | 15, 45
+qp c | 60, 70, 80
+qp d | 22, 28, 32
+qp e | 44, 55, 99
+qp f | 34, 48, 62
+qp g | 30, 45, 70
+qp h | 26, 52, 65
+q 4 | Find the LCM of the following numbers using prime factorization. || درج ذیل اعداد کا ذو اضعاف اقل مفرد اجزائے ضربی کے ذریعے معلوم کریں۔ || د لاندې عددونو کوچنی مشترک ضرب د لومړني ضربي تجزیې په مرسته معلوم کړئ.
+qsolve lcmpf
+qp a | 2, 5
+qp b | 3, 7
+qp c | 5, 8
+qp d | 4, 10, 16
+qp e | 20, 25, 50
+qp f | 45, 90, 95
+qp g | 32, 70, 80
+qp h | 33, 66
+q 5 | Find the LCM of the following numbers by using the division method. || درج ذیل اعداد کا ذو اضعاف اقل تقسیم کے طریقے سے معلوم کریں۔ || د لاندې عددونو کوچنی مشترک ضرب د وېش په طریقه معلوم کړئ.
+qsolve lcmdiv
+qp a | 4, 9
+qp b | 7, 11
+qp c | 14, 26
+qp d | 20, 40
+qp e | 6, 24, 42
+qp f | 10, 20, 30
+qp g | 12, 18, 38
+qp h | 6, 15, 21
+q 6 | 84 apples, 56 bananas and 21 oranges were distributed equally among some children. If the same combination of all kinds of fruits is distributed among all the children, find the maximum possible number of children who can receive the fruits? || 84 سیب، 56 کیلے اور 21 مالٹے کچھ بچوں میں برابر تقسیم کیے گئے۔ اگر تمام بچوں میں ہر قسم کے پھلوں کا ایک جیسا مجموعہ تقسیم کیا جائے تو زیادہ سے زیادہ کتنے بچوں کو پھل مل سکتے ہیں؟ || 84 مڼې، 56 کېلې او 21 مالټې پر ځینو ماشومانو برابرې ووېشل شوې. که ټولو ماشومانو ته د هر ډول مېوو یو شان ترکیب ورکړل شي، تر ټولو ډېر څو ماشومان مېوې ترلاسه کولی شي؟
+solution 7 children
+ss The number of children must divide 84, 56 and 21 exactly; the greatest such number is the HCF. || بچوں کی تعداد 84، 56 اور 21 کو پورا پورا تقسیم کرے؛ ایسا سب سے بڑا عدد عاد اعظم ہے۔ || د ماشومانو شمېر باید 84، 56 او 21 په بشپړ ډول ووېشي؛ داسې تر ټولو لوی عدد لوی مشترک قاسم دی.
+suse hcfpf 84, 56, 21
+endsolution
+q 7 | Three water containers contain 12 litres, 24 litres and 42 litres of water. || پانی کے تین برتنوں میں 12 لیٹر، 24 لیٹر اور 42 لیٹر پانی ہے۔ || د اوبو په دریو لوښو کې 12 لیټره، 24 لیټره او 42 لیټره اوبه دي.
+qp a | Find the maximum capacity of a measuring container that can fully measure the amount of water in all three containers. || ماپنے والے اس برتن کی زیادہ سے زیادہ گنجائش معلوم کریں جو تینوں برتنوں کے پانی کو پوری طرح ماپ سکے۔ || د اندازه کولو د هغه لوښي تر ټولو ډېر ظرفیت معلوم کړئ چې د دریو واړو لوښو اوبه په بشپړ ډول اندازه کړي.
+sol 6 litres ## HCF of 12, 24 and 42: 12 = 2×2×3, 24 = 2×2×2×3, 42 = 2×3×7; common factors 2 × 3 = 6. || 12، 24 اور 42 کا عاد اعظم: 12 = 2×2×3، 24 = 2×2×2×3، 42 = 2×3×7؛ مشترک اجزائے ضربی 2 × 3 = 6۔ || د 12، 24 او 42 لوی مشترک قاسم: 12 = 2×2×3، 24 = 2×2×2×3، 42 = 2×3×7؛ مشترک ضربي اجزا 2 × 3 = 6.
+qp b | Find how many times the container needs to be filled to each empty container. || معلوم کریں کہ ہر خالی برتن کو بھرنے کے لیے ماپنے والا برتن کتنی بار بھرنا ہوگا۔ || معلوم کړئ چې د هر تش لوښي ډکولو لپاره به د اندازه کولو لوښی څو ځله ډکېږي.
+sol 2 times, 4 times and 7 times ## 12 ÷ 6 = 2, 24 ÷ 6 = 4, 42 ÷ 6 = 7. || 12 ÷ 6 = 2، 24 ÷ 6 = 4، 42 ÷ 6 = 7۔ || 12 ÷ 6 = 2، 24 ÷ 6 = 4، 42 ÷ 6 = 7.
+q 8 | Find the smallest number that can be completely divided by 32 and 55 without leaving any remain. || وہ سب سے چھوٹا عدد معلوم کریں جو 32 اور 55 سے بغیر کچھ باقی بچے مکمل طور پر تقسیم ہو سکے۔ || هغه تر ټولو کوچنی عدد معلوم کړئ چې پر 32 او 55 پرته له پاتې شوني په بشپړ ډول ووېشل شي.
+solution 1,760
+ss The smallest number divisible by both is the LCM of 32 and 55. || دونوں سے تقسیم ہونے والا سب سے چھوٹا عدد 32 اور 55 کا ذو اضعاف اقل ہے۔ || هغه تر ټولو کوچنی عدد چې پر دواړو ووېشل شي د 32 او 55 کوچنی مشترک ضرب دی.
+suse lcmpf 32, 55
+endsolution
+@issue Q8 prints "without leaving any remain" (for "remainder"); kept as printed.
+q 9 | Find the least number of stickers which can be equally distributed among 15, 12 and 10 children. || اسٹیکرز کی وہ کم سے کم تعداد معلوم کریں جو 15، 12 اور 10 بچوں میں برابر تقسیم ہو سکے۔ || د سټیکرونو هغه لږ تر لږه شمېر معلوم کړئ چې پر 15، 12 او 10 ماشومانو برابر ووېشل شي.
+solution 60 stickers
+ss The number must be divisible by 15, 12 and 10; the least such number is the LCM. || تعداد 15، 12 اور 10 سے تقسیم ہو؛ ایسی کم سے کم تعداد ذو اضعاف اقل ہے۔ || شمېر باید پر 15، 12 او 10 ووېشل شي؛ داسې تر ټولو کوچنی شمېر کوچنی مشترک ضرب دی.
+suse lcmdiv 15, 12, 10
+endsolution
+endexercise

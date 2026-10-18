@@ -1,0 +1,39 @@
+@printed 130
+p **Let's write "3 times a number is 20 more than half of the number" as an equation.** || **آئیے "ایک عدد کا 3 گنا اس عدد کے نصف سے 20 زیادہ ہے" کو مساوات کی صورت میں لکھیں۔** || **راځئ "د یو عدد 3 چنده د هماغه عدد له نیمایي 20 ډېر دی" د معادلې په بڼه ولیکو.**
+p First choose a variable to represent the unknown number. Let's say the number is $x$. || پہلے نامعلوم عدد کو ظاہر کرنے کے لیے ایک متغیر چنیں۔ فرض کریں عدد $x$ ہے۔ || لومړی د نامعلوم عدد د ښودلو لپاره یو متحول وټاکئ. فرض کړئ عدد $x$ دی.
+- 3 times a number means $3x$. || ایک عدد کا 3 گنا کا مطلب $3x$ ہے۔ || د یو عدد 3 چنده یعنې $3x$.
+- Half of a number means $\frac{x}{2}$. || ایک عدد کا نصف کا مطلب $\frac{x}{2}$ ہے۔ || د یو عدد نیمایي یعنې $\frac{x}{2}$.
+p Now $3x$ is 20 more than $\frac{x}{2}$. It means, to make them equal, we need to add 20 to the smaller expression or subtract 20 from the greater expression. || اب $3x$، $\frac{x}{2}$ سے 20 زیادہ ہے۔ اس کا مطلب ہے کہ انہیں برابر کرنے کے لیے ہمیں چھوٹی عبارت میں 20 جمع کرنا یا بڑی عبارت سے 20 تفریق کرنا ہوگا۔ || اوس $3x$ له $\frac{x}{2}$ څخه 20 ډېر دی. یعنې د برابرولو لپاره باید کوچنۍ افادې ته 20 ورزیات کړو یا له لویې افادې 20 کم کړو.
+p So, the equation for this is: || لہٰذا اس کی مساوات یہ ہے: || نو د دې معادله دا ده:
+m $3x - 20 = \frac{x}{2}$ or $3x = \frac{x}{2} + 20$
+p Now observe these examples (using variable $x$): || اب ان مثالوں کا مشاہدہ کریں (متغیر $x$ استعمال کرتے ہوئے): || اوس دې بېلګو ته وګورئ (د $x$ متحول په کارولو):
+table
+th | Statement || بیان || بیان | Algebraic expression || الجبری عبارت || الجبري افاده
+tr | 3 times a number is 57 | $3x = 57$
+tr | 8 more than a number is 12 | $x + 8 = 12$
+tr | 30 divided by a number is 10 | $\frac{30}{x} = 10$
+tr | The quotient of a number and 5 is 100 | $\frac{x}{5} = 100$
+tr | 6 is same as twice a number | $6 = 2x$
+tr | Sum of 4 and a number when divided by 10 equals 3 | $\frac{(4 + x)}{10} = 3$
+tr | Sum of 7 and a number is 4 more than twice the number | $7 + x = 4 + 2x$
+tr | 79 less than 6 times a number is equal to the number | $6x - 79 = x$
+tr | 123 added to a number is 75 more than 4 times the number | $123 + x = 4x + 75$
+endtable
+@issue The table's second column is headed "Algebraic expression" although it lists equations; kept as printed.
+exercise 7.3
+q 1 | Write algebraic expressions for the following phrases. || درج ذیل فقروں کے لیے الجبری عبارتیں لکھیں۔ || د لاندې جملو لپاره الجبري افادې ولیکئ.
+qp a | 5 added to a number || ایک عدد میں 5 جمع کیا گیا || یو عدد ته 5 ورزیات شو
+sol $x + 5$ ## Let the number be x; "added to" means +. || فرض کریں عدد x ہے؛ "جمع کیا گیا" کا مطلب + ہے۔ || فرض کړئ عدد x دی؛ "ورزیات شو" یعنې +.
+qp b | A number subtracted from 8 || 8 میں سے ایک عدد تفریق کیا گیا || له 8 څخه یو عدد تفریق شو
+sol $8 - x$ ## "subtracted from 8" means start with 8 and take the number away. || "8 میں سے تفریق" کا مطلب ہے 8 سے شروع کر کے عدد کم کریں۔ || "له 8 تفریق" یعنې له 8 پیل او عدد کم کړئ.
+qp c | 20 decreased by a number || 20 میں ایک عدد کی کمی || 20 په یوه عدد کم شو
+sol $20 - x$ ## "decreased by" means minus. || "کمی" کا مطلب منفی ہے۔ || "کم شو" یعنې منفي.
+qp d | Twice a number decreased by 2 || ایک عدد کا دگنا 2 کم || د یو عدد دوه چنده 2 کم
+sol $2x - 2$ ## Twice a number = 2x, then subtract 2. || عدد کا دگنا = 2x، پھر 2 تفریق کریں۔ || دوه چنده = 2x، بیا 2 کم کړئ.
+qp e | Half of a number added to 7 || 7 میں ایک عدد کا نصف جمع کیا گیا || 7 ته د یو عدد نیمایي ورزیاته شوه
+sol $7 + \frac{x}{2}$ ## Half of a number = x/2. || عدد کا نصف = x/2۔ || د عدد نیمایي = x/2.
+qp f | 12 subtracted from the sum of 6 and a number || 6 اور ایک عدد کے مجموعے میں سے 12 تفریق کیا گیا || د 6 او یو عدد له مجموعې 12 تفریق شو
+sol $(6 + x) - 12$ (which simplifies to $x - 6$) ## First make the sum 6 + x, then take away 12. || پہلے مجموعہ 6 + x بنائیں، پھر 12 کم کریں۔ || لومړی مجموعه 6 + x جوړه کړئ، بیا 12 کم کړئ.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Divide the students in two groups. Ask both groups to write 5 sentences on pieces of paper using a unique variable for each. Ask them to use different operations in each sentence. The group will then exchange their papers with each other and the other group will write the equation for those sentences. The group with correct equation in less time wins. || طلبہ کو دو گروپوں میں تقسیم کریں۔ دونوں گروپوں سے کہیں کہ ہر ایک کے لیے الگ متغیر استعمال کر کے کاغذ کے ٹکڑوں پر 5 جملے لکھیں۔ ہر جملے میں مختلف عملیات استعمال کرنے کو کہیں۔ پھر گروپ اپنے کاغذ ایک دوسرے سے بدلیں گے اور دوسرا گروپ ان جملوں کی مساوات لکھے گا۔ کم وقت میں درست مساوات لکھنے والا گروپ جیتے گا۔ || زده کوونکي په دوو ډلو ووېشئ. له دواړو ډلو وغواړئ چې د هر یو لپاره بېل متحول وکاروي او د کاغذ په ټوټو 5 جملې ولیکي. په هره جمله کې بېلې عملیې وکاروي. بیا ډلې خپل کاغذونه سره بدلوي او بله ډله د هغو جملو معادله لیکي. هغه ډله ګټي چې په لږ وخت کې سمه معادله ولیکي.
+endbox

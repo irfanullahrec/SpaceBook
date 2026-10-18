@@ -1,0 +1,26 @@
+@printed 67
+@issue The division ladder for 4761 prints 3|4761, 3|1587, 23|23, 23|1 (1587 ÷ 3 = 529 is missing); recreated as printed.
+example 3
+p Find the square root of the following decimal fractions, using the prime factorization method. || مفرد اجزائے ضربی کے طریقے سے درج ذیل اعشاری کسور کا جذر المربع معلوم کریں۔ || د لومړنیو عاملونو په طریقه د لاندې اعشاري کسرونو مربع جذر معلوم کړئ.
+qp a | 1.21
+qp b | 0.1089
+qp c | 47.61
+m a) $\sqrt{1.21} = \sqrt{\frac{121}{100}}$
+m $= \frac{\sqrt{121}}{\sqrt{100}} = \frac{11}{10} = 1.1$
+m $\therefore \sqrt{1.21} = 1.1$
+ladder 3:1089; 3:363; 11:121; 11:11; :1
+ladder 2:10000; 2:5000; 2:2500; 2:1250; 5:625; 5:125; 5:25; 5:5; :1
+m b) $\sqrt{0.1089} = \sqrt{\frac{1089}{10000}}$
+m $= \sqrt{\frac{1089}{10000}} = \frac{\sqrt{3 \times 3 \times 11 \times 11}}{\sqrt{2 \times 2 \times 2 \times 2 \times 5 \times 5 \times 5 \times 5}}$
+m $= \frac{\sqrt{3^2 \times 11^2}}{\sqrt{2^2 \times 2^2 \times 5^2 \times 5^2}}$
+m $= \frac{3 \times 11}{2 \times 2 \times 5 \times 5}$
+m $= \frac{33}{100}$
+m $\therefore \sqrt{0.1089} = 0.33$
+ladder 3:4761; 3:1587; 23:23; 23:1
+m c) 47.61
+m $\sqrt{47.61} = \sqrt{\frac{4761}{100}}$
+m $= \sqrt{\frac{4761}{100}} = \frac{\sqrt{3 \times 3 \times 23 \times 23}}{\sqrt{2 \times 2 \times 5 \times 5}}$
+m $= \frac{\sqrt{3^2 \times 23^2}}{\sqrt{2^2 \times 5^2}}$
+m $= \frac{3 \times 23}{2 \times 5} = \frac{69}{10}$
+m $\therefore \sqrt{47.61} = 6.9$
+endexample

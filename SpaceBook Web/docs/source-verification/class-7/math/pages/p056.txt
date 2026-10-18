@@ -1,0 +1,50 @@
+@printed 52
+example 4 | Find the square root of 1.69 by division method. || تقسیم کے طریقے سے 1.69 کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د 1.69 مربع جذر معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p To find the square root of the given decimal, first make the pairs of the digits from left to right and then find the square root in the usual manner. Put the decimal point in the quotient just before bringing down the first decimal pair. || دیے گئے اعشاریے کا جذرِ مربع معلوم کرنے کے لیے پہلے ہندسوں کے بائیں سے دائیں جوڑے بنائیں اور پھر معمول کے مطابق جذرِ مربع معلوم کریں۔ پہلا اعشاری جوڑا نیچے لانے سے ذرا پہلے خارج قسمت میں اعشاری نقطہ لگائیں۔ || د ورکړل شوې اعشاریې د مربع جذر د موندلو لپاره، لومړی د رقمونو جوړې له کیڼ څخه ښي لوري ته جوړې کړئ او بیا په معمول ډول مربع جذر معلوم کړئ. د لومړۍ اعشاري جوړې له ښکته راوړلو مخکې په خارج قسمت کې اعشاري ټکی کېږدئ.
+sqrtdiv 1.3 | 1.69 | 1:1:0 69 ; 23:0 69:0
+p So, the square root of 1.69 is 1.3. || لہٰذا 1.69 کا جذرِ مربع 1.3 ہے۔ || نو د 1.69 مربع جذر 1.3 دی.
+endexample
+@issue In Example 4 the dividend 1.69 is printed with an overline over 1 and over 69; the coded figure overlines the whole token "1.69".
+exercise 3.3
+q 1 | Find the square root of the following natural numbers by division method. || تقسیم کے طریقے سے درج ذیل قدرتی اعداد کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې طبیعي عددونو مربع جذر معلوم کړئ.
+qp a | 729
+qp b | 400
+qp c | 576
+qp d | 841
+qp e | 225
+qp f | 36
+qp g | 144
+qp h | 625
+q 2 | Find the square root of the following fractions by division method. || تقسیم کے طریقے سے درج ذیل کسور کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې کسرونو مربع جذر معلوم کړئ.
+qp a | $\frac{25}{625}$
+qp b | $\frac{784}{81}$
+qp c | $\frac{169}{256}$
+qp d | $\frac{289}{324}$
+qp e | $\frac{9}{49}$
+qp f | $\frac{676}{576}$
+qp g | $\frac{121}{49}$
+qp h | $\frac{64}{900}$
+q 3 | Find the square root of the following decimal numbers by division method. || تقسیم کے طریقے سے درج ذیل اعشاری اعداد کا جذرِ مربع معلوم کریں۔ || د وېش په طریقه د لاندې اعشاري عددونو مربع جذر معلوم کړئ.
+qp a | 62.41
+qp b | 79.21
+qp c | 86.49
+qp d | 92.16
+qp e | 2.89
+qp f | 1.69
+qp g | 1.21
+qp h | 7.84
+endexercise
+@sec 3.4 | Real-Life Problems of Square Root || جذرِ مربع کے حقیقی زندگی کے سوالات || د مربع جذر د ورځني ژوند پوښتنې
+# 3.4 Real-Life Problems of Square Root || 3.4 جذرِ مربع کے حقیقی زندگی کے سوالات || 3.4 د مربع جذر د ورځني ژوند پوښتنې
+example 1 | 729 tiles are required for tiling the floor of a masjid. If the length and width of the masjid is equal, how many tiles are there in each row? || ایک مسجد کے فرش پر ٹائلیں لگانے کے لیے 729 ٹائلیں درکار ہیں۔ اگر مسجد کی لمبائی اور چوڑائی برابر ہو تو ہر قطار میں کتنی ٹائلیں ہیں؟ || د یوه جومات د فرش د ټایل کولو لپاره 729 ټایلونه پکار دي. که د جومات اوږدوالی او پلنوالی برابر وي، په هر قطار کې څو ټایلونه دي؟
+p **Solution:** || **حل:** || **حل:**
+p As the length and width are equal, the masjid is in square shape. To find the number of tiles in each row, we have to find the square root of 729. || چونکہ لمبائی اور چوڑائی برابر ہیں، اس لیے مسجد مربع شکل کی ہے۔ ہر قطار میں ٹائلوں کی تعداد معلوم کرنے کے لیے ہمیں 729 کا جذرِ مربع معلوم کرنا ہوگا۔ || څرنګه چې اوږدوالی او پلنوالی برابر دي، جومات مربع شکل لري. په هر قطار کې د ټایلونو د شمېر د موندلو لپاره باید د 729 مربع جذر معلوم کړو.
+sqrtdiv 27 | 7 29 | 2:4:3 29 ; 47:3 29:0
+p So, there are 27 tiles in each row. || لہٰذا ہر قطار میں 27 ٹائلیں ہیں۔ || نو په هر قطار کې 27 ټایلونه دي.
+endexample
+example 2 | The area of a square region is 121 m². Find the length of its side. || ایک مربع خطے کا رقبہ 121 m² ہے۔ اس کے ضلع کی لمبائی معلوم کریں۔ || د یوې مربع سیمې مساحت 121 m² دی. د هغې د ضلعې اوږدوالی معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Area of square region = 121 m² || مربع خطے کا رقبہ = 121 m² || د مربع سیمې مساحت = 121 m²
+p As we know that, area of square = (length of a side)² || جیسا کہ ہم جانتے ہیں، مربع کا رقبہ = (ضلع کی لمبائی)² || لکه څنګه چې پوهېږو، د مربع مساحت = (د ضلعې اوږدوالی)²
+p According to the given condition, || دی گئی شرط کے مطابق، || د ورکړل شوي شرط له مخې،

@@ -1,0 +1,46 @@
+@printed 224
+q 2 | The given data is the weight of class 6 students: Show it in the form of grouped data. Also: || دیا گیا ڈیٹا چھٹی جماعت کے طلبہ کا وزن ہے: اسے گروہ بند ڈیٹا کی صورت میں دکھائیں۔ نیز: || ورکړل شوي معلومات د شپږم ټولګي د زده کوونکو وزن دی: د ډلبندي شوو معلوماتو په بڼه یې وښیئ. همدارنګه:
+eq 20\text{ kg} \quad 24\text{ kg} \quad 21\text{ kg} \quad 18\text{ kg} \quad 20\text{ kg} \quad 24\text{ kg} \quad 21\text{ kg} \quad 18\text{ kg}
+eq 19\text{ kg} \quad 24\text{ kg} \quad 19\text{ kg} \quad 21\text{ kg} \quad 24\text{ kg} \quad 20\text{ kg} \quad 18\text{ kg} \quad 18\text{ kg}
+eq 20\text{ kg} \quad 24\text{ kg} \quad 18\text{ kg} \quad 24\text{ kg} \quad 26\text{ kg} \quad 21\text{ kg} \quad 19\text{ kg} \quad 26\text{ kg}
+solution Grouped table of 24 students
+stable
+tr | Weight (kg) | Number of students
+tr | 18 | 5
+tr | 19 | 3
+tr | 20 | 4
+tr | 21 | 4
+tr | 24 | 6
+tr | 26 | 2
+endtable
+ss Total = 5 + 3 + 4 + 4 + 6 + 2 = 24 students. || کل = 5 + 3 + 4 + 4 + 6 + 2 = 24 طلبہ۔ || ټول = 5 + 3 + 4 + 4 + 6 + 2 = 24 زده کوونکي.
+endsolution
+qp a | Tell the number of students that have a weight less than 20 kg. || 20 kg سے کم وزن والے طلبہ کی تعداد بتائیں۔ || د هغو زده کوونکو شمېر ووایاست چې وزن یې له 20 kg کم دی.
+sol 8 (18 kg: 5, 19 kg: 3) ## "Less than 20" does not include 20. || "20 سے کم" میں 20 شامل نہیں۔ || "له 20 کم" کې 20 نه شاملېږي.
+qp b | Tell the number of students that have a weight greater than 21 kg. || 21 kg سے زیادہ وزن والے طلبہ کی تعداد بتائیں۔ || د هغو زده کوونکو شمېر ووایاست چې وزن یې له 21 kg ډېر دی.
+sol 8 (24 kg: 6, 26 kg: 2) ## "Greater than 21" does not include 21. || "21 سے زیادہ" میں 21 شامل نہیں۔ || "له 21 ډېر" کې 21 نه شاملېږي.
+endexercise
+@sec 11.4 | Measures of Central Tendency || مرکزی رجحان کی پیمائش || د مرکزي تمایل اندازې
+# 11.4 Measures of Central Tendency || 11.4 مرکزی رجحان کی پیمائش || 11.4 د مرکزي تمایل اندازې
+p When the data have been arranged into a **frequency distribution**, the information contained in the data is easily understood. We can also find a single value which will represent all the values of the distribution in some definite way. || جب ڈیٹا کو **تعددی تقسیم** میں ترتیب دیا جائے تو اس میں موجود معلومات آسانی سے سمجھ آتی ہیں۔ ہم ایک ایسی واحد قیمت بھی معلوم کر سکتے ہیں جو کسی خاص طریقے سے تقسیم کی تمام قیمتوں کی نمائندگی کرے۔ || کله چې معلومات په **تکراري وېش** کې تنظیم شي، په هغو کې معلومات په اسانۍ پوهېدای شي. یو واحد ارزښت هم موندلی شو چې په یوه ټاکلي ډول د وېش ټول ارزښتونه استازیتوب کړي.
+box key
+p A central value that represents all the values of a distribution is called an **average**. || وہ مرکزی قیمت جو تقسیم کی تمام قیمتوں کی نمائندگی کرے **اوسط** کہلاتی ہے۔ || هغه مرکزي ارزښت چې د وېش ټول ارزښتونه استازیتوب کوي **اوسط** بلل کېږي.
+endbox
+p Since the averages tend to lie in the centre of a distribution they are called measures of central tendency. || چونکہ اوسط تقسیم کے مرکز میں ہونے کا رجحان رکھتے ہیں اس لیے انہیں مرکزی رجحان کی پیمائش کہتے ہیں۔ || ځکه چې اوسطونه د وېش په مرکز کې د پرتېدو تمایل لري، د مرکزي تمایل اندازې بلل کېږي.
+p The most commonly used averages are; || سب سے زیادہ استعمال ہونے والے اوسط یہ ہیں؛ || تر ټولو ډېر کارېدونکي اوسطونه دا دي؛
+qp i | Arithmetic Mean || حسابی اوسط || حسابي اوسط
+qp ii | Median || وسطانیہ || منځنی
+qp iii | Mode || عادہ || ډېرتکراری
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p **Arithmetic mean** is the most commonly used average. In view of its common use, it is usually called average or simply mean. || **حسابی اوسط** سب سے زیادہ استعمال ہونے والا اوسط ہے۔ عام استعمال کی وجہ سے اسے عموماً اوسط یا صرف mean کہتے ہیں۔ || **حسابي اوسط** تر ټولو ډېر کارېدونکی اوسط دی. د عام کارونې له امله معمولاً اوسط یا یوازې mean بلل کېږي.
+endbox
+## 11.4.1 Arithmetic Mean || 11.4.1 حسابی اوسط || 11.4.1 حسابي اوسط
+p The sum of values divided by the number of values is called **arithmetic** mean. || قیمتوں کے مجموعے کو قیمتوں کی تعداد سے تقسیم کرنے کو **حسابی** اوسط کہتے ہیں۔ || د ارزښتونو مجموعه د ارزښتونو پر شمېر وېشل **حسابي** اوسط بلل کېږي.
+eq \text{i.e., Arithmetic mean} = \frac{\text{sum of values}}{\text{number of values}}
+p If 'X' represent the values, Σ(sigma) represent the sum, 'n' represent the total number of values and $\overline{X}$ (read as X bar) represent the arithmetic mean, we can write. || اگر 'X' قیمتوں کو، Σ (سگما) مجموعے کو، 'n' قیمتوں کی کل تعداد کو اور $\overline{X}$ (ایکس بار پڑھیں) حسابی اوسط کو ظاہر کرے تو ہم لکھ سکتے ہیں۔ || که 'X' ارزښتونه، Σ (سیګما) مجموعه، 'n' د ارزښتونو ټول شمېر او $\overline{X}$ (ایکس بار لوستل کېږي) حسابي اوسط وښيي، لیکلی شو.
+eq \overline{X} = \frac{\Sigma X}{n}
+p If there are three observations $X_1$, $X_2$ and $X_3$ then, || اگر تین مشاہدات $X_1$، $X_2$ اور $X_3$ ہوں تو، || که درې مشاهدې $X_1$، $X_2$ او $X_3$ وي، نو
+eq \overline{X} = \frac{X_1 + X_2 + X_3}{n}
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p How can we find the arithmetic mean of different quantities? || ہم مختلف مقداروں کا حسابی اوسط کیسے معلوم کر سکتے ہیں؟ || د بېلابېلو مقدارونو حسابي اوسط څنګه معلومولی شو؟
+endbox

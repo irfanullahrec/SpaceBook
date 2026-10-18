@@ -1,0 +1,24 @@
+@printed 40
+@deco Birthday party picture: children in party hats around a cake under a "HAPPY BIRTHDAY" banner; Hint bubble. The scanned copy has a pupil's handwritten answers, not reproduced.
+q 8 | Write the missing numbers on the number line. || عددی خط پر غائب اعداد لکھیں۔ || د عددونو په کرښه ورک عددونه ولیکئ.
+fig nl3 0..450 step 50 | hide=100,250,300,450 || Blank boxes after 50, after 200 (two) and after 400 || 50 کے بعد، 200 کے بعد (دو) اور 400 کے بعد خالی خانے || له 50، له 200 (دوه) او له 400 وروسته تشې خانې
+sol 100, 250, 300, 450 ## The marks go up in 50s: 0, 50, 100, 150, 200, 250, 300, 350, 400, 450. || نشانات 50، 50 بڑھتے ہیں: 0، 50، 100، 150، 200، 250، 300، 350، 400، 450۔ || نښې 50، 50 زیاتېږي: 0، 50، 100، 150، 200، 250، 300، 350، 400، 450.
+q 9 | Compare 928 and 985 by inserting > or < sign. || 928 اور 985 کا موازنہ > یا < کی علامت لگا کر کریں۔ || 928 او 985 د > یا < نښې په ایښودلو پرتله کړئ.
+sol 928 < 985 (or 985 > 928) ## Hundreds are the same (9); tens: 2 < 8. || سینکڑے ایک جیسے (9)؛ دہائی: 2 < 8۔ || سلیزې یو شان (9)؛ لسیزې: 2 < 8.
+q 10 | Round off the following numbers to the nearest 10 and 100. || درج ذیل اعداد کو قریب ترین 10 اور 100 تک تخمیناً لکھیں۔ || لاندې عددونه تر نږدې 10 او 100 پورې ګرد کړئ.
+qp a | 46
+sol Nearest 10: 50 · Nearest 100: 0 ## Ones 6 ≥ 5 → 50; tens 4 < 5 → 0. || اکائی 6 ≥ 5 → 50؛ دہائی 4 < 5 → 0۔ || یووالی 6 ≥ 5 → 50؛ لسیزه 4 < 5 → 0.
+qp b | 83
+sol Nearest 10: 80 · Nearest 100: 100 ## Ones 3 < 5 → 80; tens 8 ≥ 5 → 100. || اکائی 3 < 5 → 80؛ دہائی 8 ≥ 5 → 100۔ || یووالی 3 < 5 → 80؛ لسیزه 8 ≥ 5 → 100.
+qp c | 765
+sol Nearest 10: 770 · Nearest 100: 800 ## Ones 5 → 770; tens 6 ≥ 5 → 800. || اکائی 5 → 770؛ دہائی 6 ≥ 5 → 800۔ || یووالی 5 → 770؛ لسیزه 6 ≥ 5 → 800.
+qp d | 847
+sol Nearest 10: 850 · Nearest 100: 800 ## Ones 7 ≥ 5 → 850; tens 4 < 5 → 800. || اکائی 7 ≥ 5 → 850؛ دہائی 4 < 5 → 800۔ || یووالی 7 ≥ 5 → 850؛ لسیزه 4 < 5 → 800.
+qp e | 956
+sol Nearest 10: 960 · Nearest 100: 1,000 ## Ones 6 ≥ 5 → 960; tens 5 → 9 hundreds become 10 hundreds = 1,000. || اکائی 6 ≥ 5 → 960؛ دہائی 5 → 9 سو بڑھ کر 10 سو = 1,000۔ || یووالی 6 ≥ 5 → 960؛ لسیزه 5 → 9 سوه کېږي 10 سوه = 1,000.
+endexercise
+box info | Activity || سرگرمی || فعالیت
+q - | Suleman called his friends on his birthday. There were _____ girls and _____ boys. Which group has even number of people? || سلیمان نے اپنی سالگرہ پر اپنے دوستوں کو بلایا۔ وہاں _____ لڑکیاں اور _____ لڑکے تھے۔ کس گروہ میں لوگوں کی تعداد جفت ہے؟ || سلیمان د خپلې کالیزې پر ورځ خپل ملګري راوبلل. هلته _____ نجونې او _____ هلکان وو. په کومه ډله کې د خلکو شمېر جفت دی؟
+p Hint: Count the number of boys and girls. || اشارہ: لڑکوں اور لڑکیوں کی تعداد گنیں۔ || اشاره: د هلکانو او نجونو شمېر وشمېرئ.
+sol Count the girls and the boys in the picture; the group whose number ends in 0, 2, 4, 6 or 8 is the even group. ## The book gives no answer; the counts come from the class picture. || کتاب میں جواب نہیں دیا گیا؛ تعداد تصویر سے گنی جاتی ہے۔ || کتاب ځواب نه دی ورکړی؛ شمېر له انځور څخه شمېرل کېږي.
+endbox

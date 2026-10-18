@@ -1,0 +1,13 @@
+@printed 134
+@issue "Before/after" here follows the direction the people, vehicles and animals face (as in the cars example on page 133: the car in front is "before"). Everything faces left in the bus queue and right in the other two pictures. If a teacher reads the rows left to right instead, the vehicle and animal answers swap; both readings are noted.
+exercise Before and after (Page 134)
+q 1 | Encircle the girl who is before the boy. || اس لڑکی کے گرد دائرہ لگائیں جو لڑکے سے پہلے ہے۔ || هغه نجلۍ په کړۍ کې ونیسئ چې له هلک مخکې ده.
+scene 340 130 ; box 0 0 340 130 #bae6fd ; bus@80,70,3.4 ; girl.red@190,80,1.6 ; boy.green@235,80,1.6 ; girl.brown@280,80,1.6 ; text 190 125 girl_1 ; text 280 125 girl_2 || Children queue at a bus stop facing the school bus: a girl, a boy, then another girl || بس اسٹاپ پر بچے اسکول بس کی طرف منہ کر کے قطار میں: ایک لڑکی، ایک لڑکا، پھر ایک اور لڑکی || ماشومان د بس په تمځای کې د ښوونځي بس ته مخ قطار ولاړ دي: یوه نجلۍ، یو هلک، بیا بله نجلۍ
+sol Encircle girl 1, the girl nearest the bus. ## The queue moves towards the bus, so the girl in front of the boy is before him. || قطار بس کی طرف جاتی ہے، اس لیے لڑکے سے آگے والی لڑکی اس سے پہلے ہے۔ || قطار بس ته ځي، نو له هلک مخکې نجلۍ تر هغه مخکې ده.
+q 2 | Encircle the vehicle which is after the bus. || اس گاڑی کے گرد دائرہ لگائیں جو بس کے بعد ہے۔ || هغه موټر په کړۍ کې ونیسئ چې له بس وروسته دی.
+scene 360 80 ; box 0 40 360 30 #374151 #374151 ; jeep@60,45,2 ; bus@180,40,2.8 ; rickshaw@305,45,1.8 || A jeep, a school bus and a rickshaw driving to the right || ایک جیپ، اسکول بس اور رکشہ دائیں طرف جاتے ہوئے || یو جیپ، د ښوونځي بس او رکشه ښي لوري ته روان
+sol The jeep (behind the bus). Reading left to right instead, the rickshaw would come after the bus. ## The vehicles drive to the right, so the jeep comes after the bus and the rickshaw is before it. || گاڑیاں دائیں جا رہی ہیں، اس لیے جیپ بس کے بعد اور رکشہ اس سے پہلے ہے۔ || موټرونه ښي لوري ته ځي، نو جیپ له بس وروسته او رکشه ترې مخکې ده.
+q 3 | Colour the animal which is before the camel and cross out (×) the animal that is after the camel. || اونٹ سے پہلے والے جانور میں رنگ بھریں اور اونٹ کے بعد والے جانور پر (×) لگائیں۔ || له اوښ مخکې ژوی رنګ کړئ او له اوښ وروسته ژوي ته (×) ولګوئ.
+scene 380 110 ; bear@70,65,2.6 ; camel@190,55,3.4 ; lion@315,65,2.4 || A polar bear, a camel and a lion, all facing right || قطبی ریچھ، اونٹ اور شیر، سب دائیں طرف منہ کیے || سپین یږ، اوښ او زمری، ټول ښي لوري ته مخ
+sol Colour the lion (in front of the camel); cross out the bear (behind the camel). Reading left to right instead, the bear is before and the lion after. ## The animals walk to the right. || جانور دائیں طرف چل رہے ہیں۔ || ژوي ښي لوري ته روان دي.
+endexercise

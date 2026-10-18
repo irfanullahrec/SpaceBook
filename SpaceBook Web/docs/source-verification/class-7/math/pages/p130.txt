@@ -1,0 +1,29 @@
+@printed 126
+qp d | $9 - 9n - n + n^2$
+qp e | $ax + bx - ay - by$
+qp f | $25a^2 + 3b^2 + 15b + 5a^2b$
+qp g | $x^2 - 6xy - 3x^2y + 18xy^2$
+qp h | $a^2 - 2a + ab - 2b$
+qp i | $c^2 - 7c + 5c - 35$
+endexercise
+@sec 7.9 | Factorization of Quadratic Expression || دو درجی عبارت کی تجزی || د دوه درجې افادې تجزیه
+# 7.9 Factorization of Quadratic Expression || 7.9 دو درجی عبارت کی تجزی || 7.9 د دوه درجې افادې تجزیه
+p A quadratic expression is an expression where the highest power of the variable involved is 2. It must not be higher than 2 or lower than 2. The standard form of a quadratic expression is $ax^2 + bx + c$; where a, b and c are numbers, x is the variable and a must not be equal to 0. The following are a few examples of quadratic expressions. || دو درجی عبارت وہ عبارت ہے جس میں شامل متغیر کی سب سے بڑی طاقت 2 ہو۔ یہ 2 سے زیادہ یا کم نہیں ہونی چاہیے۔ دو درجی عبارت کی معیاری صورت $ax^2 + bx + c$ ہے؛ جہاں a، b اور c اعداد ہیں، x متغیر ہے اور a صفر کے برابر نہیں ہونا چاہیے۔ دو درجی عبارتوں کی چند مثالیں یہ ہیں۔ || دوه درجې افاده هغه افاده ده چې د شامل متحول تر ټولو لوی طاقت یې 2 وي. باید له 2 لوړ یا ټیټ نه وي. د دوه درجې افادې معیاري بڼه $ax^2 + bx + c$ ده؛ چې a، b او c عددونه دي، x متحول دی او a باید له 0 سره برابر نه وي. لاندې د دوه درجې افادو څو بېلګې دي.
+- a) $x^2 - 2x + 1$ || a) $x^2 - 2x + 1$ || a) $x^2 - 2x + 1$
+- b) $6x^2 + 3x + 2$ || b) $6x^2 + 3x + 2$ || b) $6x^2 + 3x + 2$
+- c) $7x^2 + 4x + 8$ || c) $7x^2 + 4x + 8$ || c) $7x^2 + 4x + 8$
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p An expression having the variable with the highest power of 2 is called a quadratic expression. || وہ عبارت جس کے متغیر کی سب سے بڑی طاقت 2 ہو، دو درجی عبارت کہلاتی ہے۔ || هغه افاده چې د متحول تر ټولو لوی طاقت یې 2 وي، دوه درجې افاده بلل کېږي.
+endbox
+p We can factorize a quadratic expression by breaking the middle term (the term with variable having power 1. Let's observe the examples. || ہم درمیانی رکن (وہ رکن جس کے متغیر کی طاقت 1 ہو) توڑ کر دو درجی عبارت کی تجزی کر سکتے ہیں۔ آئیے مثالوں کا مشاہدہ کریں۔ || موږ د منځني حد (هغه حد چې د متحول طاقت یې 1 وي) په ماتولو دوه درجې افاده تجزیه کولی شو. راځئ بېلګې وګورو.
+example 1 | Factorize $x^2 - 5x + 4$ by middle term breaking method. || درمیانی رکن توڑنے کے طریقے سے $x^2 - 5x + 4$ کی تجزی کریں۔ || د منځني حد د ماتولو په طریقه $x^2 - 5x + 4$ تجزیه کړئ.
+p **Solution:** In order to factorize $x^2 - 5x + 4$, we have to find two numbers such that their sum is −5 and their product is $(+1) \times (+4) = +4$. Clearly, $(-4) + (-1) = -5$ and $(-4) \times (-1) = +4$. We now split the middle term $5x$ of $x^2 - 5x + 4$ as $-4x - x$. || **حل:** $x^2 - 5x + 4$ کی تجزی کے لیے ہمیں دو ایسے اعداد معلوم کرنے ہیں جن کا مجموعہ −5 اور حاصلِ ضرب $(+1) \times (+4) = +4$ ہو۔ واضح ہے کہ $(-4) + (-1) = -5$ اور $(-4) \times (-1) = +4$۔ اب ہم $x^2 - 5x + 4$ کے درمیانی رکن $5x$ کو $-4x - x$ میں توڑتے ہیں۔ || **حل:** د $x^2 - 5x + 4$ د تجزیې لپاره باید دوه داسې عددونه پیدا کړو چې مجموعه یې −5 او حاصل ضرب یې $(+1) \times (+4) = +4$ وي. څرګنده ده چې $(-4) + (-1) = -5$ او $(-4) \times (-1) = +4$. اوس د $x^2 - 5x + 4$ منځنی حد $5x$ په $-4x - x$ وېشو.
+eq \begin{aligned} x^2 - 5x + 4 &= x^2 - 4x - x + 4 \\ &= x(x - 4) - 1(x - 4) \\ &= (x - 1)(x - 4) \end{aligned}
+p So, the factors of $x^2 - 5x + 4$ are $(x - 1)$ and $(x - 4)$. || لہٰذا $x^2 - 5x + 4$ کے اجزائے ضربی $(x - 1)$ اور $(x - 4)$ ہیں۔ || نو د $x^2 - 5x + 4$ ضربي اجزا $(x - 1)$ او $(x - 4)$ دي.
+endexample
+example 2 | Factorize $3x^2 - 10x - 8$ by middle term breaking method. || درمیانی رکن توڑنے کے طریقے سے $3x^2 - 10x - 8$ کی تجزی کریں۔ || د منځني حد د ماتولو په طریقه $3x^2 - 10x - 8$ تجزیه کړئ.
+p **Solution:** In order to factorize $3x^2 - 10x - 8$, we have to find two numbers such that their sum is −10 and their product is $(+3) \times (-8) = -24$. Clearly, $-12 + 2 = -10$ and $-12 \times 2 = -24$. We now split the middle term $10x$ of $3x^2 - 10x - 8$ as $-12x + 2x$. || **حل:** $3x^2 - 10x - 8$ کی تجزی کے لیے ہمیں دو ایسے اعداد معلوم کرنے ہیں جن کا مجموعہ −10 اور حاصلِ ضرب $(+3) \times (-8) = -24$ ہو۔ واضح ہے کہ $-12 + 2 = -10$ اور $-12 \times 2 = -24$۔ اب ہم $3x^2 - 10x - 8$ کے درمیانی رکن $10x$ کو $-12x + 2x$ میں توڑتے ہیں۔ || **حل:** د $3x^2 - 10x - 8$ د تجزیې لپاره باید دوه داسې عددونه پیدا کړو چې مجموعه یې −10 او حاصل ضرب یې $(+3) \times (-8) = -24$ وي. څرګنده ده چې $-12 + 2 = -10$ او $-12 \times 2 = -24$. اوس د $3x^2 - 10x - 8$ منځنی حد $10x$ په $-12x + 2x$ وېشو.
+eq \begin{aligned} 3x^2 - 10x - 8 &= 3x^2 - 12x + 2x - 8 \\ &= 3x(x - 4) + 2(x - 4) = (3x - 2)(x - 4) \end{aligned}
+p So, the factors of $3x^2 - 10x - 8$ are $(3x - 2)$ and $(x - 4)$ || لہٰذا $3x^2 - 10x - 8$ کے اجزائے ضربی $(3x - 2)$ اور $(x - 4)$ ہیں || نو د $3x^2 - 10x - 8$ ضربي اجزا $(3x - 2)$ او $(x - 4)$ دي
+endexample
+@issue Example 2 ends with "(3x − 2)(x − 4)"; from 3x(x − 4) + 2(x − 4) the correct factors are (3x + 2)(x − 4). Kept as printed.

@@ -1,0 +1,37 @@
+@printed 125
+@issue Q1 ii prints "9a² + 30ab + 25b², 3a + 5b" with a stray comma above b²; Example 1's last lines print "−4 + 2x + 27x² − 8x³ + 28x⁴" (the 4x − 2x = 2x step drops the sign of −4 from the bracket); kept as printed. The arrows' captions beside Example 1 are given as notes after each line.
+exercise 6.7
+q 1 | Divide the first polynomial by the second polynomial. || پہلی کثیر رقمی کو دوسری کثیر رقمی سے تقسیم کریں۔ || لومړۍ څو حدي افاده پر دوهمې ووېشئ.
+qp i | $2x^3 - 4x^2 + 5x$, $x$
+qp ii | $9a^2 + 30ab + 25b^2$, $3a + 5b$
+qp iii | $8p^2 - 12pq$, $4p$
+qp iv | $x^2 - 2xy + y^2$, $x - y$
+qp v | $x^2 + 2xy + y^2$, $x + y$
+qp vi | $x^3 - y^3$, $x - y$
+qp vii | $x^2 - y^2$, $x + y$
+qp viii | $6x^2 + 27x + 30$, $3x + 6$
+qp ix | $y^3 + y^2 + y + 1$, $y + 1$
+q 2 | Divide the second polynomial by the first polynomial. || دوسری کثیر رقمی کو پہلی کثیر رقمی سے تقسیم کریں۔ || دوهمه څو حدي افاده پر لومړۍ ووېشئ.
+qp i | $x - 2$, $x^2 - 5x + 6$
+qp ii | $2x + 3y$, $6x^2 + 19xy + 15y^2$
+qp iii | $a + b$, $a^3 + b^3$
+qp iv | $5x - 3$, $20x^3 - 17x^2 + 34x + 15$
+qp v | $3p - 2q$, $3p^2 + pq - 2q^2$
+q 3 | Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
+qp i | $x^2 + 5x + 6 \div (x + 2)$
+qp ii | $(2r^2 - 3rs - 20s^2) \div (r - 4s)$
+qp iii | $(x^5 - y^5) \div (x - y)$
+qp iv | $(p^4 - q^4) \div (p + q)$
+qp v | $(2x^3 - 5x^2y + 5xy^2 - 3y^3) \div (2x - 3y)$
+endexercise
+@sec 6.8 | Simplification of Algebraic Expressions || الجبری عبارتوں کی تخفیف || د الجبري افادو ساده کول
+# 6.8 Simplification of Algebraic Expressions || 6.8 الجبری عبارتوں کی تخفیف || 6.8 د الجبري افادو ساده کول
+p Like whole numbers to simplify the algebraic expression involving brackets, we follow the BODMAS rule in order of operations so that no miscalculations are made. Let's recall simplification of algebraic expressions involving the 4 operations. || مکمل اعداد کی طرح قوسین والی الجبری عبارت کو مختصر کرنے کے لیے ہم عملیات کی ترتیب میں BODMAS اصول پر عمل کرتے ہیں تاکہ کوئی غلط حساب نہ ہو۔ آئیے چاروں عملیات پر مشتمل الجبری عبارتوں کی تخفیف کو یاد کریں۔ || د بشپړو عددونو په څېر، د قوسونو لرونکې الجبري افادې د ساده کولو لپاره د عملیاتو په ترتیب کې د BODMAS قاعده تعقیبوو ترڅو هېڅ غلط حساب ونه شي. راځئ د څلورو عملیاتو لرونکو الجبري افادو ساده کول را په یاد کړو.
+example 1
+m $4x + [2(4x + 3) - \{(2 + 2x - 7x^2)(5 + 4x^2)\}]$ $\quad$ ← First solve the operation within parentheses.
+m $= 4x + [2(4x + 3) - \{(10 + 8x^2 + 10x + 8x^3 - 35x^2 - 28x^4)\}]$ $\quad$ ← Now solve the like terms in curly brackets
+m $= 4x + [8x + 6 - 10 - 8x^2 - 10x - 8x^3 + 35x^2 + 28x^4]$ $\quad$ ← Then open the curly bracket and change the sign.
+m $= 4x + [-4 - 2x - 8x^3 + 27x^2 + 28x^4]$ $\quad$ ← Then open the square bracket and change the sign.
+m $= 4x - 4 - 2x - 8x^3 + 27x^2 + 28x^4$ $\quad$ ← Next simplify the like terms
+m $= -4 + 2x + 27x^2 - 8x^3 + 28x^4$
+endexample

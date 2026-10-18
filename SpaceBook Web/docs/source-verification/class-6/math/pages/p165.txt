@@ -1,0 +1,38 @@
+@printed 163
+example 4 | A chocolate box has a length of 0.2 m and height of 8 cm. Find the width of the box in cm if its surface area is 992 cm². || چاکلیٹ کے ڈبے کی لمبائی 0.2 m اور اونچائی 8 cm ہے۔ اگر اس کا سطحی رقبہ 992 cm² ہو تو ڈبے کی چوڑائی cm میں معلوم کریں۔ || د چاکلیټ د بکس اوږدوالی 0.2 m او جګوالی 8 cm دی. که سطحي مساحت یې 992 cm² وي، د بکس پلنوالی په cm معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p First we need to make the units same. || پہلے ہمیں اکائیاں ایک جیسی کرنی ہوں گی۔ || لومړی باید واحدونه یو شان کړو.
+eq \begin{aligned} \text{Length} &= 0.2 \text{ m} = 0.2 \times 100 \text{ cm} = 20 \text{ cm} \\ \text{Height} &= 8 \text{ cm} \\ \text{Surface area} &= 992 \text{ cm}^2 \\ \text{Width} &= ? \end{aligned}
+p As the surface area is given, we put the values of length, height and surface area in the formula. || چونکہ سطحی رقبہ دیا گیا ہے، ہم لمبائی، اونچائی اور سطحی رقبے کی قیمتیں فارمولے میں رکھتے ہیں۔ || ځکه چې سطحي مساحت ورکړل شوی، د اوږدوالي، جګوالي او سطحي مساحت ارزښتونه په فورمول کې ږدو.
+eq \begin{aligned} \text{Total surface area of the cuboid box} &= 2 \times [(l \times w) + (l \times h) + (w \times h)] \\ 992 &= 2 \times [(20 \times w) + (20 \times 8) + (w \times 8)] \\ 992 &= 2 \times [20w + 160 + 8w] \\ 992 &= 40w + 320 + 16w \\ 992 &= 56w + 320 \\ 992 - 320 &= 56w \\ 672 &= 56w \\ \frac{672}{56} &= w \\ 12 &= w \end{aligned}
+p So, the width of the chocolate box is 12 cm. || لہٰذا چاکلیٹ کے ڈبے کی چوڑائی 12 cm ہے۔ || نو د چاکلیټ د بکس پلنوالی 12 cm دی.
+endexample
+exercise 8.6
+q 1 | A cuboid glass box has dimensions 3 m × 2 m × 1 m. Find the volume of water that it can hold. || مکعب نما شیشے کے ڈبے کی پیمائش 3 m × 2 m × 1 m ہے۔ اس میں سمانے والے پانی کا حجم معلوم کریں۔ || د مستطیلي مکعب د ښیښې بکس اندازې 3 m × 2 m × 1 m دي. د هغو اوبو حجم معلوم کړئ چې پکې ځایېږي.
+solution 6 m³
+sm 3 \times 2 \times 1 = 6 \text{ m}^3
+ss The water it can hold is its volume = length × width × height. || اس میں سمانے والا پانی اس کا حجم ہے = لمبائی × چوڑائی × اونچائی۔ || هغه اوبه چې پکې ځایېږي حجم یې دی = اوږدوالی × پلنوالی × جګوالی.
+endsolution
+q 2 | A box of cereal is 22 cm high, 12 cm long and 6 cm wide. What is the capacity of the cereal box? || سیریل کا ڈبہ 22 cm اونچا، 12 cm لمبا اور 6 cm چوڑا ہے۔ سیریل کے ڈبے کی گنجائش کیا ہے؟ || د سیریل بکس 22 cm جګ، 12 cm اوږد او 6 cm پلن دی. د سیریل د بکس ګنجایش څومره دی؟
+solution 1584 cm³
+sm 12 \times 6 \times 22 = 1584 \text{ cm}^3
+ss Capacity = volume = length × width × height. || گنجائش = حجم = لمبائی × چوڑائی × اونچائی۔ || ګنجایش = حجم = اوږدوالی × پلنوالی × جګوالی.
+endsolution
+q 3 | A cube shaped container has a length of 72 cm. If it is filled with blocks up to a height of 42 cm, find the remaining capacity of the container. || مکعب شکل کے برتن کی لمبائی 72 cm ہے۔ اگر اسے 42 cm اونچائی تک بلاکس سے بھرا جائے تو برتن کی باقی گنجائش معلوم کریں۔ || د مکعب شکله لوښي اوږدوالی 72 cm دی. که تر 42 cm جګوالي پورې په بلاکونو ډک شي، د لوښي پاتې ګنجایش معلوم کړئ.
+solution 155,520 cm³
+ss The empty part is a cuboid 72 cm long, 72 cm wide and 72 − 42 = 30 cm high. || خالی حصہ ایک مکعب نما ہے جو 72 cm لمبا، 72 cm چوڑا اور 72 − 42 = 30 cm اونچا ہے۔ || تشه برخه یو مستطیلي مکعب دی چې 72 cm اوږد، 72 cm پلن او 72 − 42 = 30 cm جګ دی.
+sm 72 \times 72 \times 30 = 155520 \text{ cm}^3
+ss Teacher's note: the book's answer key gives 299160 cm³, which does not match this question (full cube 373248 − filled part 217728 = 155520). || استاد کا نوٹ: کتاب کی جوابی کلید 299160 cm³ دیتی ہے جو اس سوال سے مطابقت نہیں رکھتی (پورا مکعب 373248 − بھرا حصہ 217728 = 155520)۔ || د ښوونکي یادونه: د کتاب د ځوابونو کلي 299160 cm³ ورکوي چې له دې پوښتنې سره سمون نه خوري (بشپړ مکعب 373248 − ډکه برخه 217728 = 155520).
+endsolution
+q 4 | A Masjid is 22 m long, 12 m wide and 18 m high. Find the cost of painting its four walls at the rate of Rs 450 per square metre. || ایک مسجد 22 m لمبی، 12 m چوڑی اور 18 m اونچی ہے۔ 450 روپے فی مربع میٹر کے حساب سے اس کی چار دیواریں رنگ کرنے کی لاگت معلوم کریں۔ || یو جومات 22 m اوږد، 12 m پلن او 18 m جګ دی. په هر مربع متر 450 روپیو د هغه د څلورو دېوالونو د رنګولو لګښت معلوم کړئ.
+solution Rs 550,800 (four walls only)
+ss The four walls are the front, back, left and right faces: 2(l × h) + 2(w × h) = 2(l + w) × h. || چار دیواریں آگے، پیچھے، بائیں اور دائیں رخ ہیں: 2(l × h) + 2(w × h) = 2(l + w) × h۔ || څلور دېوالونه مخکې، شا، کیڼ او ښي مخونه دي: 2(l × h) + 2(w × h) = 2(l + w) × h.
+sm 2(22 + 12) \times 18 = 2 \times 34 \times 18 = 1224 \text{ m}^2
+sm 1224 \times 450 = \text{Rs } 550800
+ss Teacher's note: the book's answer key gives Rs 788400, which is the cost for all six faces (1752 m², including floor and ceiling). The question asks for the four walls only. || استاد کا نوٹ: کتاب کی جوابی کلید 788400 روپے دیتی ہے جو تمام چھ رخوں (1752 m²، فرش اور چھت سمیت) کی لاگت ہے۔ سوال صرف چار دیواروں کا ہے۔ || د ښوونکي یادونه: د کتاب د ځوابونو کلي 788400 روپۍ ورکوي چې د ټولو شپږو مخونو (1752 m²، د فرش او چت په ګډون) لګښت دی. پوښتنه یوازې د څلورو دېوالونو ده.
+endsolution
+q 5 | Find the cost of painting a cuboid container of length 4 m, width 3.5 m and height of 6 m at the rate of Rs 43.78 per square metre. || 43.78 روپے فی مربع میٹر کے حساب سے 4 m لمبے، 3.5 m چوڑے اور 6 m اونچے مکعب نما برتن کو رنگ کرنے کی لاگت معلوم کریں۔ || په هر مربع متر 43.78 روپیو د 4 m اوږده، 3.5 m پلن او 6 m جګ مستطیلي مکعب لوښي د رنګولو لګښت معلوم کړئ.
+solution Rs 5166.04
+suse solidq cuboid 4 3.5 6 m
+sm 118 \times 43.78 = \text{Rs } 5166.04
+endsolution

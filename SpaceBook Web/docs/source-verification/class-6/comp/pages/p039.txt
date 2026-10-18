@@ -1,0 +1,38 @@
+@printed 35
+@status lesson
+## 2.5.5 Drawing straight lines || 2.5.5 سیدھی لکیریں کھینچنا || 2.5.5 سمې کرښې رسمول
+- (1) Select **2D shapes** tool. || (1) **2D shapes** ٹول منتخب کریں۔ || (1) **2D shapes** وسیله وټاکئ.
+- (2) Select **Straight line** tool. || (2) **Straight line** (سیدھی لکیر) ٹول منتخب کریں۔ || (2) **Straight line** وسیله وټاکئ.
+- (3) Drag the line to the required position. || (3) لکیر کو مطلوبہ جگہ تک گھسیٹیں۔ || (3) کرښه اړین ځای ته کش کړئ.
+- (4) Control lines to be either horizontal, vertical or at 45 degree angle by selecting any of the **corners** or **midpoints.** || (4) کسی بھی **کونے** یا **درمیانی نقطے** کو منتخب کر کے لکیروں کو افقی، عمودی یا 45 درجے کے زاویے پر رکھیں۔ || (4) د **کونجونو** یا **منځني ټکو** په ټاکلو کرښې افقي، عمودي یا په 45 درجو زاویه برابرې کړئ.
+@deco Screenshot: Paint 3D canvas with green, brown and blue straight lines; the 2D shapes panel with "Straight line tool" highlighted under "Line and curve".
+## 2.5.6 Draw Multi-Point Curves || 2.5.6 کثیر نقطہ خمیدہ لکیریں بنانا || 2.5.6 څو ټکي کږې کرښې رسمول
+svg "Line and curve" tools: straight line, 3-point curve (highlighted), 4-point curve, 5-point curve. A 3-point curve has small circles (drag points) on the line used to change its shape. || ”لائن اینڈ کرو“ ٹولز: سیدھی لکیر، تین نقطہ، چار نقطہ اور پانچ نقطہ خم۔ ڈریگ پوائنٹس سے لکیر کی شکل بدلتی ہے۔ || "Line and curve" وسایل: سمه کرښه، 3، 4 او 5 ټکي کږ. د کش ټکو په مرسته شکل بدلېږي.
+<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Line and curve tools">
+<rect x="10" y="10" width="250" height="60" fill="#fff" stroke="#0284c7" stroke-width="2"/>
+<text x="20" y="28" fill="#1e293b">Line and curve</text>
+<g stroke="#1e293b" stroke-width="2.5" fill="none"><line x1="25" y1="60" x2="55" y2="38"/><rect x="72" y="34" width="44" height="32" fill="#1d4ed8" stroke="none"/><path d="M78 60 Q94 32 110 60" stroke="#fff"/><path d="M130 52 Q140 30 150 50 T170 52"/><path d="M190 58 L200 36 L210 58 L220 36 L230 58"/></g>
+<g fill="#1e293b"><circle cx="25" cy="60" r="3"/><circle cx="55" cy="38" r="3"/></g>
+<text x="80" y="88" fill="#db2777" font-style="italic" font-weight="bold">3-point curve</text>
+<rect x="280" y="20" width="150" height="110" fill="#fff" stroke="#94a3b8"/>
+<rect x="295" y="45" width="120" height="65" fill="none" stroke="#475569" stroke-dasharray="3 3"/>
+<path d="M300 55 Q350 40 405 100" fill="none" stroke="#1e3a8a" stroke-width="4"/>
+<g fill="#fff" stroke="#1e3a8a" stroke-width="2"><circle cx="300" cy="55" r="4"/><circle cx="350" cy="58" r="4"/><circle cx="405" cy="100" r="4"/></g>
+<rect x="60" y="140" width="330" height="48" rx="8" fill="#a5f3fc"/>
+<text x="225" y="160" text-anchor="middle" fill="#1e293b" font-style="italic" font-weight="bold">drag points (small circles on</text>
+<text x="225" y="178" text-anchor="middle" fill="#1e293b" font-style="italic" font-weight="bold">line used to change the shape of line)</text>
+<path d="M350 62 Q300 120 260 140" fill="none" stroke="#db2777" stroke-width="1.5"/>
+</svg>
+endsvg
+- (1) Select ***2D shapes*** tool. || (1) ***2D shapes*** ٹول منتخب کریں۔ || (1) ***2D shapes*** وسیله وټاکئ.
+- (2) Select ***Straight line*** tool. || (2) ***Straight line*** ٹول منتخب کریں۔ || (2) ***Straight line*** وسیله وټاکئ.
+- (3) Drag the line to the required position. || (3) لکیر کو مطلوبہ جگہ تک گھسیٹیں۔ || (3) کرښه اړین ځای ته کش کړئ.
+- (4) Control lines to be either horizontal, vertical or at 45 degree angle by selecting any of the ***corners*** or ***midpoints.*** || (4) کسی ***کونے*** یا ***درمیانی نقطے*** کو منتخب کر کے لکیروں کو افقی، عمودی یا 45 درجے پر رکھیں۔ || (4) د ***کونجونو*** یا ***منځني ټکو*** په ټاکلو کرښې افقي، عمودي یا 45 درجې کړئ.
+@issue The four steps under 2.5.6 "Draw Multi-Point Curves" are a repeat of the straight-line steps in 2.5.5; for a curve, step 2 should be "Select the 3-point curve tool" and step 4 should say "drag the drag points to bend the line". Recorded as printed.
+box note | Tip || ٹپ || لارښوونه
+p 4-Point and 5-Point lines can be drawn similar to 3-Point line by using 4-Point and 5-Point curve tool having more drag points. || چار نقطہ اور پانچ نقطہ لکیریں بھی تین نقطہ لکیر کی طرح چار نقطہ اور پانچ نقطہ خم ٹول سے بنائی جا سکتی ہیں جن میں زیادہ ڈریگ پوائنٹس ہوتے ہیں۔ || 4 او 5 ټکي کرښې هم د 3 ټکي کرښې په څېر د 4 او 5 ټکي وسیلو په مرسته رسمېږي چې ډېر د کش ټکي لري.
+endbox
+box teach | Activities || سرگرمیاں || فعالیتونه
+p Design a face by using 4-point and 5-point curve tool. || چار نقطہ اور پانچ نقطہ خم ٹول سے ایک چہرہ بنائیں۔ || د 4 او 5 ټکي کږې وسیلې په مرسته یو مخ ډیزاین کړئ.
+endbox
+@deco Cartoon face drawn with curves (eyebrows, eyes, nose, mouth).

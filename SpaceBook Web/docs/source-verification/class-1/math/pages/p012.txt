@@ -1,0 +1,32 @@
+@printed 8
+exercise Count and write; count and encircle (Page 8)
+p Count the objects and write the correct number. || چیزیں گنیں اور درست عدد لکھیں۔ || شیان وشمېرئ او سم عدد ولیکئ.
+q 1 | How many bananas? || کتنے کیلے ہیں؟ || څو کېلې دي؟
+cnt banana:2 [] || bananas || کیلے || کېلې
+sol 2 ## There are 2 bananas. || دو کیلے ہیں۔ || دوه کېلې دي.
+q 2 | How many oranges? || کتنے مالٹے ہیں؟ || څو مالټې دي؟
+cnt orange:7/4 [] || oranges || مالٹے || مالټې
+sol 7 ## There are 7 oranges. || سات مالٹے ہیں۔ || اووه مالټې دي.
+q 3 | How many apples? || کتنے سیب ہیں؟ || څو مڼې دي؟
+cnt apple:9/4 [] || apples || سیب || مڼې
+sol 9 ## There are 9 apples (4, 4 and 1). || نو سیب ہیں (۴، ۴ اور ۱)۔ || نهه مڼې دي (۴، ۴ او ۱).
+q 4 | How many chicks? || کتنے چوزے ہیں؟ || څو چرګوړي دي؟
+cnt chick:8/4 [] || chicks || چوزے || چرګوړي
+sol 8 ## There are 8 chicks (two rows of 4). || آٹھ چوزے ہیں (۴ کی دو قطاریں)۔ || اته چرګوړي دي (د ۴ دوه قطارونه).
+q 5 | How many pears? || کتنی ناشپاتیاں ہیں؟ || څو ناکان دي؟
+cnt pear:4/2 [] || pears || ناشپاتیاں || ناکان
+sol 4 ## There are 4 pears. || چار ناشپاتیاں ہیں۔ || څلور ناکان دي.
+q 6 | How many tulips? || کتنے گل لالہ ہیں؟ || څو ټیولپ ګلونه دي؟
+cnt tulip:6/3 [] || tulips || گل لالہ || ټیولپ ګلونه
+sol 6 ## There are 6 tulips (two rows of 3). || چھ گل لالہ ہیں (۳ کی دو قطاریں)۔ || شپږ ټیولپ ګلونه دي (د ۳ دوه قطارونه).
+p Count the objects and encircle the correct number. || چیزیں گنیں اور درست عدد کے گرد دائرہ لگائیں۔ || شیان وشمېرئ او سم عدد په کړۍ کې ونیسئ.
+q 7 | Rocking horses: 5, 7 or 6? || جھولنے والے گھوڑے: ۵، ۷ یا ۶؟ || ټالي اسونه: ۵، ۷ که ۶؟
+cnt horse:7 "5" "7" "6" || rocking horses || جھولنے والے گھوڑے || ټالي اسونه
+sol 7 ## Count the rocking horses: there are 7, so encircle 7. || گھوڑے گنیں: ۷ ہیں، اس لیے ۷ کے گرد دائرہ لگائیں۔ || اسونه وشمېرئ: ۷ دي، نو ۷ په کړۍ کې ونیسئ.
+q 8 | Strawberries: 8, 0 or 9? || اسٹرابیریاں: ۸، ۰ یا ۹؟ || سټرابېرۍ: ۸، ۰ که ۹؟
+cnt strawberry:9 "8" "0" "9" || strawberries || اسٹرابیریاں || سټرابېرۍ
+sol 9 ## Count the strawberries: there are 9, so encircle 9. || اسٹرابیریاں گنیں: ۹ ہیں، اس لیے ۹ کے گرد دائرہ لگائیں۔ || سټرابېرۍ وشمېرئ: ۹ دي، نو ۹ په کړۍ کې ونیسئ.
+q 9 | Toy cars: 7, 8 or 9? || کھلونا گاڑیاں: ۷، ۸ یا ۹؟ || لوبو موټرونه: ۷، ۸ که ۹؟
+cnt car.purple:8 "7" "8" "9" || toy cars || کھلونا گاڑیاں || د لوبو موټرونه
+sol 8 ## Count the toy cars: there are 8, so encircle 8. || گاڑیاں گنیں: ۸ ہیں، اس لیے ۸ کے گرد دائرہ لگائیں۔ || موټرونه وشمېرئ: ۸ دي، نو ۸ په کړۍ کې ونیسئ.
+endexercise

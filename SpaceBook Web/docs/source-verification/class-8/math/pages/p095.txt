@@ -1,0 +1,43 @@
+@printed 91
+@issue The note prints "An infinite set has an infinite number of subsets"; the subset diagram prints "{1, 2,}" with a trailing comma; kept as printed.
+p Let us now find all possible subsets of a set. || آئیے اب کسی سیٹ کے تمام ممکنہ ذیلی سیٹ معلوم کریں۔ || راځئ اوس د یوه سېټ ټول ممکنه فرعي سېټونه ومومو.
+example 2
+p List all possible subsets of the set X = {1, 2, 3} || سیٹ X = {1, 2, 3} کے تمام ممکنہ ذیلی سیٹوں کی فہرست بنائیں || د X = {1, 2, 3} سېټ ټول ممکنه فرعي سېټونه لېست کړئ
+## Solution: || حل: || حل:
+qp i | ϕ is the subset of the set X. || ϕ سیٹ X کا ذیلی سیٹ ہے۔ || ϕ د X سېټ فرعي سېټ دی.
+qp ii | Singleton subsets of X are, {1}, {2}, {3} || X کے واحد رکنی ذیلی سیٹ {1}، {2}، {3} ہیں || د X یو عنصري فرعي سېټونه {1}، {2}، {3} دي
+qp iii | Subset of X having two elements are; {1, 2}, {2,3}, {1,3} || X کے دو ارکان والے ذیلی سیٹ ہیں؛ {1, 2}، {2,3}، {1,3} || د X دوه عنصري فرعي سېټونه دي؛ {1, 2}، {2,3}، {1,3}
+qp iv | Since each set is an improper subset of itself, therefore the set itself i.e. {1, 2, 3} is also a subset of itself. || چونکہ ہر سیٹ اپنا غیر واجب ذیلی سیٹ ہوتا ہے، اس لیے سیٹ خود یعنی {1, 2, 3} بھی اپنا ذیلی سیٹ ہے۔ || څرنګه چې هر سېټ د خپل ځان ناواجب فرعي سېټ دی، نو سېټ پخپله یعنې {1, 2, 3} هم د خپل ځان فرعي سېټ دی.
+p Now count the subsets of X. These are 8. We can organise the subsets as follows; || اب X کے ذیلی سیٹ گنیں۔ یہ 8 ہیں۔ ہم ذیلی سیٹوں کو یوں ترتیب دے سکتے ہیں؛ || اوس د X فرعي سېټونه وشمېرئ. دا 8 دي. فرعي سېټونه داسې تنظیمولی شو؛
+svg Subsets of {1, 2, 3} || {1, 2, 3} کے ذیلی سیٹ || د {1, 2, 3} فرعي سېټونه
+<svg viewBox="0 0 420 130" width="420" role="img" aria-label="Subsets of {1,2,3}: the empty set joins {1}, {2}, {3}; {1} joins {1,2} and {1,3}; {2} joins {1,2} and {2,3}; {3} joins {1,3} and {2,3}; the three two-element subsets join {1,2,3}" font-family="system-ui, sans-serif" font-size="13" fill="#0f172a" stroke="#0f172a" stroke-width="1">
+<text x="14" y="69" stroke="none">ϕ</text>
+<text x="110" y="24" stroke="none">{1}</text><text x="110" y="69" stroke="none">{2}</text><text x="110" y="114" stroke="none">{3}</text>
+<text x="230" y="24" stroke="none">{1, 2,}</text><text x="230" y="69" stroke="none">{1, 3}</text><text x="230" y="114" stroke="none">{2, 3}</text>
+<text x="340" y="69" stroke="none">{1, 2, 3}</text>
+<path d="M28 62L104 22M28 65H104M28 68L104 110"/>
+<path d="M136 20H224M136 20L224 64M136 66L224 22M136 66L224 110M136 112L224 68M136 112H224"/>
+<path d="M282 20L334 62M282 65H334M282 110L334 68"/>
+</svg>
+endsvg
+p Observe that the set X has 3 elements and the number of subsets of X is $2^3 = 8$. || غور کریں کہ سیٹ X میں 3 ارکان ہیں اور X کے ذیلی سیٹوں کی تعداد $2^3 = 8$ ہے۔ || وګورئ چې X سېټ 3 عناصر لري او د X د فرعي سېټونو شمېر $2^3 = 8$ دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p I. An infinite set has an infinite number of subsets. || I. لامحدود سیٹ کے لامحدود ذیلی سیٹ ہوتے ہیں۔ || I. بې پایه سېټ بې شمېره فرعي سېټونه لري.
+p ii. ϕ is the subset of every set. || ii. ϕ ہر سیٹ کا ذیلی سیٹ ہے۔ || ii. ϕ د هر سېټ فرعي سېټ دی.
+endbox
+example 3
+p Find all the possible subsets of the set B = {2, 4, 6, 8} || سیٹ B = {2, 4, 6, 8} کے تمام ممکنہ ذیلی سیٹ معلوم کریں || د B = {2, 4, 6, 8} سېټ ټول ممکنه فرعي سېټونه ومومئ
+## Solution: || حل: || حل:
+p All possible subsets of the set B are listed as; || سیٹ B کے تمام ممکنہ ذیلی سیٹ یوں درج ہیں؛ || د B سېټ ټول ممکنه فرعي سېټونه داسې لېست شوي؛
+m ϕ, {2}, {4}, {6}, {8}, {2, 4}, {2, 6}, {2, 8}, {4, 6}, {4, 8}, {6, 8}, {2, 4, 6}, {2, 4, 8}, {2, 6, 8}, {4, 6, 8}, {2, 4, 6, 8}.
+p These are 16. Observe that the set B has 4 elements and $2^4 = 16$ || یہ 16 ہیں۔ غور کریں کہ سیٹ B میں 4 ارکان ہیں اور $2^4 = 16$ || دا 16 دي. وګورئ چې B سېټ 4 عناصر لري او $2^4 = 16$
+endexample
+p From the above two examples; we see that the set having 3 elements has $2^3 = 8$ subsets and the set having 4 elements has $2^4 = 16$ subsets. || اوپر کی دونوں مثالوں سے ہم دیکھتے ہیں کہ 3 ارکان والے سیٹ کے $2^3 = 8$ ذیلی سیٹ اور 4 ارکان والے سیٹ کے $2^4 = 16$ ذیلی سیٹ ہوتے ہیں۔ || له پورتنیو دوو بېلګو ګورو چې د 3 عناصرو لرونکی سېټ $2^3 = 8$ فرعي سېټونه او د 4 عناصرو لرونکی سېټ $2^4 = 16$ فرعي سېټونه لري.
+p In general; || عام طور پر؛ || په عمومي ډول؛
+p A set having n elements has $2^n$ possible subsets. || n ارکان والے سیٹ کے $2^n$ ممکنہ ذیلی سیٹ ہوتے ہیں۔ || د n عناصرو لرونکی سېټ $2^n$ ممکنه فرعي سېټونه لري.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find all the subsets of the following sets; || درج ذیل سیٹوں کے تمام ذیلی سیٹ معلوم کریں؛ || د لاندې سېټونو ټول فرعي سېټونه ومومئ؛
+qp i | A = {a, b, c}
+qp ii | B = {2, 3, 5, 7}
+endbox

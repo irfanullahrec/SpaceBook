@@ -1,0 +1,35 @@
+@printed 116
+@status lesson
+example Activity 9.5 | Testing of the brightness of bulbs || بلب کی چمک کی جانچ || د ګروپونو د رڼا ازموینه
+p To Investigate the factors that affect the brightness of bulbs or speed of motors: a. Number of batteries b. Number of Bulbs c. Type of wire d. Length of wire e. Thickness of wire || بلب کی چمک یا موٹر کی رفتار پر اثر ڈالنے والے عوامل کی تحقیق: الف۔ بیٹریوں کی تعداد ب۔ بلبوں کی تعداد ج۔ تار کی قسم د۔ تار کی لمبائی ہ۔ تار کی موٹائی || د ګروپونو رڼا یا د موټرونو چټکتیا اغېزمنوونکي عوامل وڅېړئ: الف. د بیټریو شمېر ب. د ګروپونو شمېر ج. د تار ډول د. د تار اوږدوالی ه. د تار پنډوالی
+p **Materials:** i. Batteries ii. Bulbs iii. Copper wire (thin) iv. Copper wire (thick) v. Aluminium wire (thin) || **سامان:** بیٹریاں؛ بلب؛ تانبے کا تار (باریک)؛ تانبے کا تار (موٹا)؛ ایلومینیم کا تار (باریک) || **توکي:** بیټرۍ؛ ګروپونه؛ د مسو تار (نری)؛ د مسو تار (پنډ)؛ د المونیم تار (نری)
+svg Single battery — bulb dimmer; multiple batteries — bulb brighter || ایک بیٹری — بلب مدھم؛ زیادہ بیٹریاں — بلب زیادہ روشن || یوه بیټري — ګروپ کمرنګه؛ ډېرې بیټرۍ — ګروپ روښانه
+<svg viewBox="0 0 400 130" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="One battery versus two batteries">
+<g stroke="#111" stroke-width="2" fill="none"><rect x="20" y="35" width="160" height="70"/><rect x="220" y="35" width="160" height="70"/></g>
+<rect x="80" y="27" width="40" height="16" fill="#fde047" stroke="#111"/><rect x="260" y="27" width="40" height="16" fill="#fde047" stroke="#111"/><rect x="300" y="27" width="40" height="16" fill="#fde047" stroke="#111"/>
+<circle cx="100" cy="105" r="9" fill="#fef9c3" stroke="#111"/><circle cx="300" cy="105" r="11" fill="#facc15" stroke="#111"/>
+<g stroke="#ca8a04"><path d="M300 88 v-6 M285 95 l-5 -4 M315 95 l5 -4"/></g>
+<g fill="#111" text-anchor="middle" font-weight="bold"><text x="100" y="15">Single battery</text><text x="300" y="15">Multiple batteries</text></g>
+<g fill="#111" text-anchor="middle"><text x="100" y="75">dimmer</text><text x="300" y="75">brighter</text></g>
+</svg>
+endsvg
+p Brightness of bulb in a circuit can be affected by many factors. Make six circuits according to the given table. As this is activity, so it will show that changing the nature of the wire, will change the conductivity or brightness of bulbs. Use first circuit as standard and compare the brightness of bulb in all circuits with the first one. Fill the last column with stars to show brightness. || سرکٹ میں بلب کی چمک کئی عوامل سے متاثر ہوتی ہے۔ جدول کے مطابق چھ سرکٹ بنائیں۔ یہ سرگرمی دکھائے گی کہ تار کی نوعیت بدلنے سے موصلیت یا بلب کی چمک بدلتی ہے۔ پہلے سرکٹ کو معیار مان کر باقی سب کا اس سے موازنہ کریں۔ آخری خانے میں ستاروں سے چمک دکھائیں۔ || په سرکټ کې د ګروپ رڼا په ډېرو عواملو اغېزمنېږي. د جدول سره سم شپږ سرکټونه جوړ کړئ. دا فعالیت ښيي چې د تار د ډول بدلول هدایت یا رڼا بدلوي. لومړی سرکټ معیار ونیسئ او نور ورسره پرتله کړئ. په وروستي ستون کې په ستورو رڼا وښیئ.
+table
+th Circuit set up | Number of Batteries | Number of Bulbs | Type of wire | Length of wire | Thickness of wire | Brightness (Dim ☆, Bright ☆☆, V. Bright ☆☆☆)
+tr I | One | One | Copper | 20 cm | Thin | ☆☆ (standard)
+tr II | Two | One | Copper | 20 cm | Thin | ☆☆☆
+tr III | One | Two | Copper | 20 cm | Thin | ☆ (series)
+tr IV | One | One | Aluminium | 20 cm | Thin | ☆ to ☆☆ (slightly dimmer)
+tr V | One | One | Copper | 40 cm | Thin | ☆ to ☆☆ (slightly dimmer)
+tr VI | One | One | Copper | 20 cm | Thick | ☆☆ (slightly brighter)
+endtable
+p *The brightness column is left blank in the book for students to fill; SpaceBook shows the expected results.* || *کتاب میں چمک کا خانہ طلبہ کے بھرنے کے لیے خالی ہے؛ اسپیس بک متوقع نتائج دکھاتا ہے۔* || *په کتاب کې د رڼا ستون د زده کوونکو لپاره تش دی؛ سپېس بوک تمه شوې پایلې ښيي.*
+q 9.5a | Which set up gives maximum brightness of bulb? || کس سرکٹ میں بلب سب سے زیادہ روشن ہوتا ہے؟ || په کوم سرکټ کې ګروپ تر ټولو روښانه دی؟
+sol Set up II (two batteries). ## || سیٹ اپ II (دو بیٹریاں) || سرکټ II (دوه بیټرۍ)
+q 9.5b | Which set up gives minimum brightness of bulb? || کس سرکٹ میں بلب سب سے کم روشن ہوتا ہے؟ || په کوم سرکټ کې ګروپ تر ټولو کمرنګه دی؟
+sol Set up III (two bulbs in series with one battery). ## || سیٹ اپ III (ایک بیٹری کے ساتھ دو بلب) || سرکټ III (له یوې بیټرۍ سره دوه ګروپونه)
+q 9.5c | Which type of wire gives more brightness in this circuit? || کس قسم کا تار زیادہ چمک دیتا ہے؟ || کوم ډول تار ډېره رڼا ورکوي؟
+sol Copper wire (it is a better conductor than aluminium). ## || تانبے کا تار || د مسو تار
+q 9.5d | Which thickness of wire gives more brightness in this circuit? || تار کی کون سی موٹائی زیادہ چمک دیتی ہے؟ || د تار کوم پنډوالی ډېره رڼا ورکوي؟
+sol Thick wire (it has less resistance than thin wire). ## || موٹا تار || پنډ تار
+endexample

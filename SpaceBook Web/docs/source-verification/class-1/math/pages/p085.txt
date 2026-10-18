@@ -1,0 +1,13 @@
+@printed 81
+exercise High and higher (Page 81)
+p Write 1 for high, 2 for higher and 3 for highest. || بلند کے لیے ۱، زیادہ بلند کے لیے ۲ اور سب سے بلند کے لیے ۳ لکھیں۔ || لوړ ته ۱، لوړتر ته ۲ او تر ټولو لوړ ته ۳ ولیکئ.
+q 1 | Mountains || پہاڑ || غرونه
+sizes mountain:2.3 mountain:3 mountain:1.7 ;; A,B,C || Three mountains (left, middle, right) || تین پہاڑ (بائیں، درمیان، دائیں) || درې غرونه (کیڼ، منځ، ښي)
+sol Left 2, middle 3, right 1 ## The middle mountain is the highest and the right one is the lowest. || درمیان والا پہاڑ سب سے بلند اور دائیں والا سب سے نیچا ہے۔ || منځنی غر تر ټولو لوړ او ښي اړخ ته تر ټولو ټیټ دی.
+q 2 | Street lamps || اسٹریٹ لیمپ || د سړک څراغونه
+sizes lamp:2.2 lamp:1.4 lamp:3 ;; A,B,C || Three street lamps (left, middle, right) || تین اسٹریٹ لیمپ (بائیں، درمیان، دائیں) || د سړک درې څراغونه (کیڼ، منځ، ښي)
+sol Left 2, middle 1, right 3 ## The right lamp is the highest and the middle one is the lowest. || دائیں والا لیمپ سب سے بلند اور درمیان والا سب سے نیچا ہے۔ || ښي اړخ څراغ تر ټولو لوړ او منځنی تر ټولو ټیټ دی.
+q 3 | Colour the highest building. || سب سے بلند عمارت میں رنگ بھریں۔ || تر ټولو لوړه ودانۍ رنګ کړئ.
+sizes building.white:2.2 building.white:1.6 building.white:3.2 ;; A,B,C || Three buildings || تین عمارتیں || درې ودانۍ
+sol Colour the building on the right (C). ## It is the highest of the three. || یہ تینوں میں سب سے بلند ہے۔ || دا په دریو کې تر ټولو لوړه ده.
+endexercise

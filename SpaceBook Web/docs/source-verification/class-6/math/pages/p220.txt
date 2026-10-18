@@ -1,0 +1,59 @@
+@printed 218
+q 2 | Draw pie charts for the following data: || درج ذیل ڈیٹا کے پائی چارٹ بنائیں: || د لاندې معلوماتو دایروي چارټونه رسم کړئ:
+qp i | The population of 6 cities of Pakistan is given below. || پاکستان کے 6 شہروں کی آبادی نیچے دی گئی ہے۔ || د پاکستان د 6 ښارونو نفوس لاندې ورکړل شوی.
+table
+th | City || شہر || ښار | Population (in Millions) || آبادی (ملین میں) || نفوس (په میلیون)
+tr | A | 18
+tr | B | 15
+tr | C | 12
+tr | D | 10
+tr | E | 4
+tr | F | 1
+endtable
+solution Pie chart with angles A 108°, B 90°, C 72°, D 60°, E 24°, F 6°
+suse pieq A=18; B=15; C=12; D=10; E=4; F=1
+endsolution
+qp ii | The following table shows Amna's activities in a day: || درج ذیل جدول آمنہ کی ایک دن کی سرگرمیاں دکھاتا ہے: || لاندې جدول د آمنې د یوې ورځې فعالیتونه ښيي:
+table
+th | Activities || سرگرمیاں || فعالیتونه | Time (Hours) || وقت (گھنٹے) || وخت (ساعتونه)
+tr | Reciting Quran | 2
+tr | School | 6
+tr | Meal | 1
+tr | Play | 2
+tr | Study | 4
+tr | Using Computer | 1
+tr | Sleep | 8
+endtable
+solution Pie chart with angles Reciting Quran 30°, School 90°, Meal 15°, Play 30°, Study 60°, Using Computer 15°, Sleep 120°
+suse pieq Reciting Quran=2; School=6; Meal=1; Play=2; Study=4; Using Computer=1; Sleep=8
+endsolution
+q 3 | The number of students in different sections of class VII are given below: Draw pie chart for the given data. || ساتویں جماعت کے مختلف سیکشنز میں طلبہ کی تعداد نیچے دی گئی ہے۔ دیے گئے ڈیٹا کا پائی چارٹ بنائیں۔ || د اووم ټولګي په بېلابېلو برخو کې د زده کوونکو شمېر لاندې ورکړل شوی. د ورکړل شوو معلوماتو دایروي چارټ رسم کړئ.
+table
+th | Sections || سیکشن || برخې | Number of Students || طلبہ کی تعداد || د زده کوونکو شمېر
+tr | A | 73
+tr | B | 65
+tr | C | 50
+tr | D | 42
+tr | E | 30
+endtable
+solution Pie chart with angles A ≈ 101.08°, B = 90°, C ≈ 69.23°, D ≈ 58.15°, E ≈ 41.54°
+suse pieq A=73; B=65; C=50; D=42; E=30
+ss The angles are rounded to two decimal places, so draw them as closely as the protractor allows (about 101°, 90°, 69°, 58°, 42°). || زاویے دو اعشاری مقامات تک گول کیے گئے ہیں، اس لیے انہیں چاندے سے جتنا ممکن ہو قریب بنائیں (تقریباً 101°، 90°، 69°، 58°، 42°)۔ || زاویې تر دوو اعشاري ځایونو ګردې شوې، نو په زاویه پیما یې څومره چې ممکن وي نږدې رسم کړئ (نږدې 101°، 90°، 69°، 58°، 42°).
+endsolution
+q 4 | The pie graph shows the sale of 180 litres of milk by a milkman in a day. Read this pie graph and answer the following questions: || پائی گراف ایک گوالے کی ایک دن میں 180 لیٹر دودھ کی فروخت دکھاتا ہے۔ اس پائی گراف کو پڑھیں اور درج ذیل سوالات کے جواب دیں: || دایروي ګراف د یوه شیدې پلورونکي په یوه ورځ کې د 180 لیټره شیدو پلور ښيي. دا دایروي ګراف ولولئ او لاندې پوښتنو ته ځواب ورکړئ:
+pie Supply Home=180; Customers=120; Yogurt=60 | deg || Sale of 180 litres of milk || 180 لیٹر دودھ کی فروخت || د 180 لیټره شیدو پلور
+qp i | How many litres does he supply to homes? || وہ گھروں کو کتنے لیٹر دیتا ہے؟ || هغه کورونو ته څو لیټره ورکوي؟
+solution 90 litres
+sm \frac{180^\circ}{360^\circ} \times 180 = 90 \text{ litres}
+endsolution
+qp ii | How many litres does he sell to the customers? || وہ گاہکوں کو کتنے لیٹر بیچتا ہے؟ || هغه پېرودونکو ته څو لیټره پلوري؟
+solution 60 litres
+sm \frac{120^\circ}{360^\circ} \times 180 = 60 \text{ litres}
+endsolution
+qp iii | How many litres does he use for yogurt? || وہ دہی کے لیے کتنے لیٹر استعمال کرتا ہے؟ || هغه د مستو لپاره څو لیټره کاروي؟
+solution 30 litres
+sm \frac{60^\circ}{360^\circ} \times 180 = 30 \text{ litres}
+endsolution
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Ask the students to work in groups and make a pie chart of the time they spend out of 24 hours in following activities: Studying, Playing, Eating, Sleeping, Watching TV, Spending time with family etc. || طلبہ سے کہیں کہ گروپوں میں کام کر کے 24 گھنٹوں میں درج ذیل سرگرمیوں پر گزارے گئے وقت کا پائی چارٹ بنائیں: پڑھائی، کھیل، کھانا، سونا، ٹی وی دیکھنا، خاندان کے ساتھ وقت گزارنا وغیرہ۔ || له زده کوونکو وغواړئ چې په ډلو کې کار وکړي او په 24 ساعتونو کې په لاندې فعالیتونو د تېر شوي وخت دایروي چارټ جوړ کړي: زده کړه، لوبې، خوراک، خوب، تلویزیون کتل، له کورنۍ سره وخت تېرول او نور.
+endbox

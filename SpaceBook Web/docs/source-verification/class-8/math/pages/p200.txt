@@ -1,0 +1,20 @@
+@printed 192
+@issue Example 1's solution is printed on this page (the question is on page 191); the text prints "vertical and horizontal rise"; kept as printed.
+## Solution: || حل: || حل:
+p On a straight line, the value of gradient (slope) is always constant, So, to find the gradient, choose any two points on the line and calculate vertical and horizontal rise. We choose point A and B. Draw a right-angled triangle, so that the straight line is the hypotenuse of the triangle. || سیدھی لکیر پر ڈھلوان (سلوپ) کی قیمت ہمیشہ مستقل ہوتی ہے، لہٰذا ڈھلوان معلوم کرنے کے لیے لکیر پر کوئی بھی دو نقاط چنیں اور عمودی اور افقی تبدیلی معلوم کریں۔ ہم نقاط A اور B چنتے ہیں۔ ایک قائمہ زاویہ مثلث بنائیں تاکہ سیدھی لکیر مثلث کا وتر ہو۔ || پر مستقیمه کرښه د میل (سلوپ) ارزښت تل ثابت وي، نو د میل د موندلو لپاره پر کرښه هر دوه ټکي وټاکئ او عمودي او افقي بدلون محاسبه کړئ. موږ A او B ټکي ټاکو. د قایمې زاویې مثلث رسم کړئ داسې چې مستقیمه کرښه د مثلث وتر وي.
+plane x=-4..9 | y=-3..7 | step=2 | lines=0.5,2,-4,8.5 | tri=2,3;6,3;6,5 | pts=0,2;2,3:A;6,5:B | labels=4@3.6,2.6;2@6.3,4.2
+p Calculate the vertical change and horizontal change. || عمودی تبدیلی اور افقی تبدیلی معلوم کریں۔ || عمودي بدلون او افقي بدلون محاسبه کړئ.
+p Therefore: || لہٰذا: || نو:
+m Gradient of a straight line $= \frac{\text{Vertical change}}{\text{Horizontal change}}$
+m $= \frac{2}{4}$
+m $= \frac{1}{2}$
+p So, the gradient of the given line is $\frac{1}{2}$ || لہٰذا دی گئی لکیر کا ڈھلوان $\frac{1}{2}$ ہے || نو د ورکړل شوې کرښې میل $\frac{1}{2}$ دی
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Draw a line for the equation $\frac{3}{2}x - y = -1$ and find its gradient. || مساوات $\frac{3}{2}x - y = -1$ کے لیے لکیر بنائیں اور اس کا ڈھلوان معلوم کریں۔ || د $\frac{3}{2}x - y = -1$ معادلې لپاره کرښه رسم کړئ او میل یې ومومئ.
+endbox
+## 8.9.2 x and y intercepts || 8.9.2 x اور y قطع || 8.9.2 د x او y تقاطعونه
+p The points where a graph of an equation intersects the coordinate axes are called **intercepts**. The x-coordinate a of the point (a,0) at which the graph intersects x-axis is called x-intercepts, and the y-coordinate b of the point (0,b) at which the graph intersects y-axis is called y-intercept. || وہ نقاط جہاں کسی مساوات کا گراف محددی محوروں کو قطع کرتا ہے، **قطع** کہلاتے ہیں۔ نقطہ (a,0) کا x-محدد a جہاں گراف x-محور کو قطع کرتا ہے، x-قطع کہلاتا ہے، اور نقطہ (0,b) کا y-محدد b جہاں گراف y-محور کو قطع کرتا ہے، y-قطع کہلاتا ہے۔ || هغه ټکي چې د یوې معادلې ګراف پکې کوارډینېټ محورونه پرې کوي، **تقاطعونه** بلل کېږي. د (a,0) ټکي x-کوارډینېټ a چې ګراف پکې x-محور پرې کوي، x-تقاطع بلل کېږي، او د (0,b) ټکي y-کوارډینېټ b چې ګراف پکې y-محور پرې کوي، y-تقاطع بلل کېږي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Tell the students that gradient on a straight line remains constant throughout so they can choose any two points on the line and make a right-angle triangle to find the change in x and change in y. || طلبہ کو بتائیں کہ سیدھی لکیر پر ڈھلوان ہر جگہ مستقل رہتا ہے، لہٰذا وہ لکیر پر کوئی بھی دو نقاط چن کر قائمہ زاویہ مثلث بنا سکتے ہیں تاکہ x اور y میں تبدیلی معلوم کریں۔ || زده کوونکو ته ووایاست چې پر مستقیمه کرښه میل په ټوله کې ثابت پاتې کېږي نو کولی شي پر کرښه هر دوه ټکي وټاکي او د قایمې زاویې مثلث جوړ کړي ترڅو په x او y کې بدلون ومومي.
+endbox

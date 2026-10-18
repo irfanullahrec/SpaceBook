@@ -1,0 +1,38 @@
+@printed 101
+@issue Q14's printed Venn diagram puts burger at the top, sandwich bottom-left and pizza bottom-right; it is redrawn with burger and pizza on top and sandwich below, keeping every region's number (burger only 8, pizza only 10, sandwich only 7, burger∩sandwich 5, burger∩pizza 4, sandwich∩pizza 2, all three 6).
+q 14 | The following venn diagram shows the data of number of students and their favourite food. Look at it and answer the questions: || درج ذیل وین ڈایاگرام طلبہ کی تعداد اور ان کے پسندیدہ کھانے کا ڈیٹا ظاہر کرتا ہے۔ اسے دیکھ کر سوالات کے جواب دیں: || لاندې وین ډیاګرام د زده کوونکو شمېر او د هغوی د خوښې خوړو معلومات ښيي. ورته وګورئ او پوښتنو ته ځواب ورکړئ:
+venn sets=burger,pizza,sandwich | a=8 | b=10 | c=7 | ab=4 | ac=5 | bc=2 | abc=6
+qp a | How many students like only pizza? || کتنے طلبہ صرف پیزا پسند کرتے ہیں؟ || څو زده کوونکي یوازې پیزا خوښوي؟
+qp b | How many students like only sandwich? || کتنے طلبہ صرف سینڈوچ پسند کرتے ہیں؟ || څو زده کوونکي یوازې سینډوچ خوښوي؟
+qp c | How many students like both pizza and burger? || کتنے طلبہ پیزا اور برگر دونوں پسند کرتے ہیں؟ || څو زده کوونکي دواړه پیزا او برګر خوښوي؟
+qp d | How many students like both sandwich and pizza? || کتنے طلبہ سینڈوچ اور پیزا دونوں پسند کرتے ہیں؟ || څو زده کوونکي دواړه سینډوچ او پیزا خوښوي؟
+qp e | How many students like only pizza and sandwich? || کتنے طلبہ صرف پیزا اور سینڈوچ پسند کرتے ہیں؟ || څو زده کوونکي یوازې پیزا او سینډوچ خوښوي؟
+qp f | How many students like all three types of food? || کتنے طلبہ تینوں قسم کے کھانے پسند کرتے ہیں؟ || څو زده کوونکي درې واړه ډوله خواړه خوښوي؟
+endexercise
+box info | Think Higher || مزید سوچیں || نور فکر وکړئ
+p Observe the given Venn diagram and write the information given below: || دیے گئے وین ڈایاگرام کا مشاہدہ کریں اور نیچے دی گئی معلومات لکھیں: || ورکړل شوي وین ډیاګرام ته وګورئ او لاندې معلومات ولیکئ:
+p Write the elements of sets A, B and C. || سیٹ A، B اور C کے ارکان لکھیں۔ || د A، B او C سېټونو عناصر ولیکئ.
+p Write sets of A ∩ B, B ∩ C, A ∩ C and A ∩ B ∩ C. || A ∩ B، B ∩ C، A ∩ C اور A ∩ B ∩ C کے سیٹ لکھیں۔ || د A ∩ B، B ∩ C، A ∩ C او A ∩ B ∩ C سېټونه ولیکئ.
+venn sets=A,B,C | a=1 2 | ab=3 | b=9 10 | abc=4 5 | ac=6 | bc=7 8 | c=11 12
+endbox
+@sec u5-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- In set builder form, instead of listing the elements, a common rule, characteristic or formula is written in the shortest possible form that describes the elements of the set. || سیٹ بلڈر شکل میں ارکان کی فہرست کے بجائے ایک مشترکہ اصول، خصوصیت یا فارمولا مختصر ترین شکل میں لکھا جاتا ہے جو سیٹ کے ارکان کو بیان کرتا ہے۔ || د سېټ جوړونکې په بڼه کې د عناصرو د لېست پر ځای، یوه ګډه قاعده، ځانګړتیا یا فورمول په تر ټولو لنډه بڼه لیکل کېږي چې د سېټ عناصر تشریح کوي.
+- The set that consists of all the subsets of a set is called the power set of that set. For any set X; the power set of X is written as P (X). || وہ سیٹ جو کسی سیٹ کے تمام ذیلی سیٹوں پر مشتمل ہو، اس سیٹ کا پاور سیٹ کہلاتا ہے۔ کسی بھی سیٹ X کے لیے X کا پاور سیٹ P (X) لکھا جاتا ہے۔ || هغه سېټ چې د یوه سېټ ټول فرعي سېټونه ولري، د هغه سېټ د توان سېټ بلل کېږي. د هر سېټ X لپاره، د X د توان سېټ P (X) لیکل کېږي.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Set builder notation || سیٹ بلڈر علامت || د سېټ جوړونکې نښه
+- Tabular form || جدولی شکل || جدولي بڼه
+- Descriptive form || بیانیہ شکل || تشریحي بڼه
+- Commutative property || مبادلہ خاصیت || تبادلوي ځانګړتیا
+- Associative property || تلازمی خاصیت || اتحادي ځانګړتیا
+- Distributive property || تقسیمی خاصیت || وېشونکې ځانګړتیا
+- De-Morgan's Law || ڈی مورگن کا قانون || د ډي مورګن قانون
+endbox
+@sec u5-review | Review Exercise || جائزہ مشق || د بیاکتنې تمرین
+exercise Review Exercise 5
+q 1 | Choose the correct option. || درست جواب منتخب کریں۔ || سم ځواب وټاکئ.
+q a | In ________ form of set characteristics of numbers or elements of a particular set are described. || ________ شکل میں کسی مخصوص سیٹ کے اعداد یا ارکان کی خصوصیات بیان کی جاتی ہیں۔ || په ________ بڼه کې د یوه ځانګړي سېټ د عددونو یا عناصرو ځانګړتیاوې تشریح کېږي.
+qp i | descriptive || بیانیہ || تشریحي
+qp ii | power || پاور || توان
+qp iii | tabular || جدولی || جدولي
+qp iv | set builder || سیٹ بلڈر || د سېټ جوړونکې

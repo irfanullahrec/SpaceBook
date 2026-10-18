@@ -1,0 +1,36 @@
+@printed 5
+@deco Cartoon boy and girl each holding a clock with Roman numerals; two children riding a pencil. The scanned copy has a pupil's handwritten answers, which are not part of the printed book and are not reproduced.
+## Challenge yourself || خود کو آزمائیں || ځان وازمایئ
+p Write the time by looking at the clocks. || گھڑیاں دیکھ کر وقت لکھیں۔ || ګړۍ وګورئ او وخت ولیکئ.
+frow clock R 12:15 ;; clock R 12:30 || Clock 1: hands at XII and III · Clock 2: hands at XII and VI || گھڑی 1: سوئیاں XII اور III پر · گھڑی 2: سوئیاں XII اور VI پر || ګړۍ 1: ستنې په XII او III · ګړۍ 2: ستنې په XII او VI
+q - | Clock 1 || گھڑی 1 || ګړۍ 1
+sol 12:15 ## The short (hour) hand is at XII and the long (minute) hand is at III, which means 15 minutes past 12. || چھوٹی (گھنٹے کی) سوئی XII پر اور بڑی (منٹ کی) سوئی III پر ہے، یعنی 12 بج کر 15 منٹ۔ || لنډه (د ساعت) ستنه په XII او اوږده (د دقیقې) ستنه په III ده، یعنې له 12 بجو 15 دقیقې تېرې.
+q - | Clock 2 || گھڑی 2 || ګړۍ 2
+sol 12:30 ## The hour hand is at XII and the minute hand is at VI, which means 30 minutes past 12 (half past twelve). || گھنٹے کی سوئی XII پر اور منٹ کی سوئی VI پر ہے، یعنی 12 بج کر 30 منٹ (ساڑھے بارہ)۔ || د ساعت ستنه په XII او د دقیقې ستنه په VI ده، یعنې له 12 بجو 30 دقیقې تېرې (نیم ساعت پس له دولسو).
+exercise Exercise 1
+q 1 | (Write the missing Roman numbers) || (غائب رومن اعداد لکھیں) || (ورک رومي عددونه ولیکئ)
+table
+tr I | ___ | III | ___ | ___ | VI | ___ | ___ | ___ | ___
+tr XI | ___ | XIII | ___ | ___ | XVI | ___ | ___ | ___ | XX
+endtable
+sol I, II, III, IV, V, VI, VII, VIII, IX, X; XI, XII, XIII, XIV, XV, XVI, XVII, XVIII, XIX, XX ## Missing: II, IV, V, VII, VIII, IX, X in the first row and XII, XIV, XV, XVII, XVIII, XIX in the second row. || غائب: پہلی قطار میں II، IV، V، VII، VIII، IX، X اور دوسری قطار میں XII، XIV، XV، XVII، XVIII، XIX۔ || ورک: په لومړۍ کرښه کې II، IV، V، VII، VIII، IX، X او په دویمه کرښه کې XII، XIV، XV، XVII، XVIII، XIX.
+q 2 | Write in the Roman Numbers || رومن اعداد میں لکھیں || په رومي عددونو یې ولیکئ
+qp a | 2 = ____
+sol II ## 2 = II || 2 = II || 2 = II
+qp b | 5 = ____
+sol V ## 5 = V || 5 = V || 5 = V
+qp c | 7 = ____
+sol VII ## 7 = 5 + 2 = VII || 7 = 5 + 2 = VII || 7 = 5 + 2 = VII
+qp d | 9 = ____
+sol IX ## 9 = 10 − 1 = IX || 9 = 10 − 1 = IX || 9 = 10 − 1 = IX
+qp e | 12 = ____
+sol XII ## 12 = 10 + 2 = XII || 12 = 10 + 2 = XII || 12 = 10 + 2 = XII
+qp f | 16 = ____
+sol XVI ## 16 = 10 + 5 + 1 = XVI || 16 = 10 + 5 + 1 = XVI || 16 = 10 + 5 + 1 = XVI
+qp g | 19 = ____
+sol XIX ## 19 = 10 + 9 = XIX || 19 = 10 + 9 = XIX || 19 = 10 + 9 = XIX
+qp h | 20 = ____
+sol XX ## 20 = 10 + 10 = XX || 20 = 10 + 10 = XX || 20 = 10 + 10 = XX
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Give different cards to children on which numbers and roman numerals are written, to help them recognize both types of numbers. || بچوں کو مختلف کارڈ دیں جن پر اعداد اور رومن اعداد لکھے ہوں، تاکہ وہ دونوں قسم کے اعداد پہچان سکیں۔ || ماشومانو ته بېلابېل کارتونه ورکړئ چې پرې عددونه او رومي عددونه لیکل شوي وي، څو دواړه ډوله عددونه وپېژني.
+endbox

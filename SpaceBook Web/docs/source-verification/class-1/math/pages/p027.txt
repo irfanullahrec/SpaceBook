@@ -1,0 +1,33 @@
+@printed 23
+@issue Dot-to-dot dinosaur: the printed dots are tiny; dot positions were measured from a zoomed scan and redrawn in code (numbers 1-50 in the printed order). Small decorative circles (spots, eyes) inside the outline are not redrawn.
+exercise Between numbers; join the dots; tens and ones (Page 23)
+p Write the number that comes between the given numbers. || دیے گئے اعداد کے درمیان آنے والا عدد لکھیں۔ || د ورکړل شویو عددونو ترمنځ راتلونکی عدد ولیکئ.
+q 1 | 13, __, 15 || ۱۳، __، ۱۵ || ۱۳، __، ۱۵
+sol 14 ## 14 comes between 13 and 15. || ۱۴، ۱۳ اور ۱۵ کے درمیان آتا ہے۔ || ۱۴ د ۱۳ او ۱۵ ترمنځ راځي.
+q 2 | 28, __, 30 || ۲۸، __، ۳۰ || ۲۸، __، ۳۰
+sol 29 ## 29 comes between 28 and 30. || ۲۹، ۲۸ اور ۳۰ کے درمیان آتا ہے۔ || ۲۹ د ۲۸ او ۳۰ ترمنځ راځي.
+q 3 | 39, __, 41 || ۳۹، __، ۴۱ || ۳۹، __، ۴۱
+sol 40 ## 40 comes between 39 and 41. || ۴۰، ۳۹ اور ۴۱ کے درمیان آتا ہے۔ || ۴۰ د ۳۹ او ۴۱ ترمنځ راځي.
+q 4 | 46, __, 48 || ۴۶، __، ۴۸ || ۴۶، __، ۴۸
+sol 47 ## 47 comes between 46 and 48. || ۴۷، ۴۶ اور ۴۸ کے درمیان آتا ہے۔ || ۴۷ د ۴۶ او ۴۸ ترمنځ راځي.
+q 5 | Complete the picture by joining the dots and colour it. || نقطوں کو ملا کر تصویر مکمل کریں اور اس میں رنگ بھریں۔ || ټکي سره وښلوئ، انځور بشپړ کړئ او رنګ یې کړئ.
+dots 680 720 | 190,670 165,650 165,620 193,538 110,513 65,465 42,417 35,380 48,347 80,342 124,362 158,377 212,345 273,320 332,320 385,350 395,265 382,225 373,180 372,128 396,77 430,42 470,25 520,25 567,53 606,110 626,172 626,228 602,267 578,300 542,313 520,310 500,325 493,347 493,369 490,395 486,421 482,452 479,475 583,525 573,553 536,589 515,597 480,588 432,540 412,551 435,665 416,682 393,682 368,682 | M450 230 Q540 315 602 267 M510 210 Q560 165 620 185 M290 640 V535 M315 640 V535 M290 565 H315 M290 590 H315 M385 350 Q365 395 355 435 || Join the dots from 1 to 50 in order to draw a dinosaur. || ۱ سے ۵۰ تک نقطوں کو ترتیب سے ملا کر ڈائنوسار بنائیں۔ || له ۱ نه تر ۵۰ پورې ټکي په ترتیب سره وښلوئ او ډاینوسور جوړ کړئ.
+p Write the numbers with the help of ones and tens. || اکائیوں اور دہائیوں کی مدد سے اعداد لکھیں۔ || د یووونو او لسیزو په مرسته عددونه ولیکئ.
+table Example || مثال || بېلګه
+th Picture || تصویر || انځور | Tens || دہائیاں || لسیزې | Ones || اکائیاں || یووونه | Numbers || اعداد || عددونه
+tr 1 bundle and 4 pencils || ۱ بنڈل اور ۴ پنسلیں || ۱ بنډل او ۴ پنسلې | 1 | 4 | 14
+endtable
+cnt bundle:1 pencilv.sky:4 || Example: 1 ten and 4 ones = 14 || مثال: ۱ دہائی اور ۴ اکائیاں = ۱۴ || بېلګه: ۱ لسیزه او ۴ یووونه = ۱۴
+q 6 | 2 bundles and 7 pencils || ۲ بنڈل اور ۷ پنسلیں || ۲ بنډلونه او ۷ پنسلې
+cnt bundle:2 pencilv.sky:7 || 2 bundles, 7 pencils || ۲ بنڈل، ۷ پنسلیں || ۲ بنډلونه، ۷ پنسلې
+sol Tens 2, Ones 7, Number 27 ## 2 tens and 7 ones = 27 || ۲ دہائیاں اور ۷ اکائیاں = ۲۷ || ۲ لسیزې او ۷ یووونه = ۲۷
+q 7 | 3 bundles || ۳ بنڈل || ۳ بنډلونه
+cnt bundle:3 || 3 bundles || ۳ بنڈل || ۳ بنډلونه
+sol Tens 3, Ones 0, Number 30 ## 3 tens and 0 ones = 30 || ۳ دہائیاں اور ۰ اکائیاں = ۳۰ || ۳ لسیزې او ۰ یووونه = ۳۰
+q 8 | 4 bundles and 8 pencils || ۴ بنڈل اور ۸ پنسلیں || ۴ بنډلونه او ۸ پنسلې
+cnt bundle:4 pencilv.sky:8 || 4 bundles, 8 pencils || ۴ بنڈل، ۸ پنسلیں || ۴ بنډلونه، ۸ پنسلې
+sol Tens 4, Ones 8, Number 48 ## 4 tens and 8 ones = 48 || ۴ دہائیاں اور ۸ اکائیاں = ۴۸ || ۴ لسیزې او ۸ یووونه = ۴۸
+q 9 | 5 bundles || ۵ بنڈل || ۵ بنډلونه
+cnt bundle:5 || 5 bundles || ۵ بنڈل || ۵ بنډلونه
+sol Tens 5, Ones 0, Number 50 ## 5 tens and 0 ones = 50 || ۵ دہائیاں اور ۰ اکائیاں = ۵۰ || ۵ لسیزې او ۰ یووونه = ۵۰
+endexercise

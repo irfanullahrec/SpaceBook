@@ -1,0 +1,25 @@
+@printed 48
+@issue The third compound-proportion rule is printed "c/x = d/a × e/b" (with c over x); kept as printed.
+q 4 | Mr Amir paid a markup of Rs 520 on an item that costs Rs 5800. If the time period is 2 years, calculate the rate of the markup. || مسٹر عامر نے Rs 5800 کی ایک چیز پر Rs 520 مارک اپ ادا کیا۔ اگر مدت 2 سال ہو تو مارک اپ کی شرح معلوم کریں۔ || ښاغلي عامر پر یوه توکي چې بیه یې Rs 5800 ده Rs 520 مارک اپ ورکړ. که موده 2 کاله وي، د مارک اپ نرخ محاسبه کړئ.
+q 5 | Find the markup on a principal amount of Rs 95,400 at the rate of 13% per annum for 5 years. || Rs 95,400 کی اصل رقم پر 13% سالانہ کی شرح سے 5 سال کا مارک اپ معلوم کریں۔ || د Rs 95,400 اصلي پیسو پر په کلني 13% نرخ د 5 کلونو مارک اپ معلوم کړئ.
+q 6 | The price of a mobile including markup is Rs 15610. If the markup rate is 7% per annum, find the amount of mark up for 2 years. || مارک اپ سمیت ایک موبائل کی قیمت Rs 15610 ہے۔ اگر مارک اپ کی شرح 7% سالانہ ہو تو 2 سال کے مارک اپ کی رقم معلوم کریں۔ || د مارک اپ په ګډون د یوه موبایل بیه Rs 15610 ده. که د مارک اپ نرخ کلنی 7% وي، د 2 کلونو د مارک اپ مقدار معلوم کړئ.
+q 7 | Qasir bought a motorbike for Rs 125,000 and paid a markup of Rs 25,000 for 2 years. What markup rate did he pay? || قاصر نے Rs 125,000 میں ایک موٹر سائیکل خریدی اور 2 سال کے لیے Rs 25,000 مارک اپ ادا کیا۔ اس نے مارک اپ کی کون سی شرح ادا کی؟ || قاصر یو موټرسایکل په Rs 125,000 واخیست او د 2 کلونو لپاره یې Rs 25,000 مارک اپ ورکړ. هغه د مارک اپ کوم نرخ ورکړ؟
+endexercise
+@sec 3.4 | Compound Proportion || مرکب تناسب || مرکب تناسب
+# 3.4 Compound Proportion || 3.4 مرکب تناسب || 3.4 مرکب تناسب
+p The relationship between two or more proportions is known as compound proportion. In compound proportion two or more quantities are involved. Let "$x$" be the quantity required. || دو یا زیادہ تناسبوں کے درمیان تعلق کو مرکب تناسب کہتے ہیں۔ مرکب تناسب میں دو یا زیادہ مقداریں شامل ہوتی ہیں۔ فرض کریں "$x$" مطلوبہ مقدار ہے۔ || د دوو یا ډېرو تناسبونو تر منځ اړیکې ته مرکب تناسب وايي. په مرکب تناسب کې دوه یا ډېر کمیتونه شامل وي. فرض کړئ "$x$" اړین کمیت دی.
+table
+th | Quantity 1 | Quantity 2 | Quantity 3
+tr | $a$ | $b$ | $c$
+tr | $d$ | $e$ | $x$
+endtable
+p If quantity 1 and quantity 3 are directly proportion and quantity 2 and quantity 3 are also directly proportion, then we will use this rule: || اگر مقدار 1 اور مقدار 3 راست متناسب ہوں اور مقدار 2 اور مقدار 3 بھی راست متناسب ہوں تو ہم یہ اصول استعمال کریں گے: || که کمیت 1 او کمیت 3 مستقیم متناسب وي او کمیت 2 او کمیت 3 هم مستقیم متناسب وي، نو دا قاعده کاروو:
+eq \frac{x}{c} = \frac{d}{a} \times \frac{e}{b}
+p Now if quantity 1 and quantity 3 are directly proportion, but quantity 2 and quantity 3 are inversely proportion then we use this rule: || اب اگر مقدار 1 اور مقدار 3 راست متناسب ہوں لیکن مقدار 2 اور مقدار 3 معکوس متناسب ہوں تو ہم یہ اصول استعمال کرتے ہیں: || اوس که کمیت 1 او کمیت 3 مستقیم متناسب وي، خو کمیت 2 او کمیت 3 معکوس متناسب وي، نو دا قاعده کاروو:
+eq \frac{x}{c} = \frac{d}{a} \times \frac{b}{e}
+p Once again if quantity 2 and quantity 3 are directly proportional but quantity 1 and quantity 3 are inversely proportion, then we use this rule: || ایک بار پھر اگر مقدار 2 اور مقدار 3 راست متناسب ہوں لیکن مقدار 1 اور مقدار 3 معکوس متناسب ہوں تو ہم یہ اصول استعمال کرتے ہیں: || بیا که کمیت 2 او کمیت 3 مستقیم متناسب وي خو کمیت 1 او کمیت 3 معکوس متناسب وي، نو دا قاعده کاروو:
+eq \frac{c}{x} = \frac{d}{a} \times \frac{e}{b}
+## 3.4.1 Partnership and Inheritance || 3.4.1 شراکت داری اور وراثت || 3.4.1 شراکت او میراث
+p Partnership is a business in which two or more than two individuals called the partners, establish and manage a business. All partners share the profit or loss of the business according to their shares. || شراکت داری ایک ایسا کاروبار ہے جس میں دو یا دو سے زیادہ افراد، جنہیں شراکت دار کہتے ہیں، کاروبار قائم کرتے اور چلاتے ہیں۔ تمام شراکت دار اپنے حصوں کے مطابق کاروبار کے منافع یا نقصان میں شریک ہوتے ہیں۔ || شراکت داسې سوداګري ده چې پکې دوه یا تر دوو ډېر کسان چې شریکان بلل کېږي، یوه سوداګري جوړوي او اداره کوي. ټول شریکان د خپلو برخو له مخې د سوداګرۍ په ګټه یا تاوان کې شریک وي.
+p Inheritance is the act of giving any property or share upon the death of an individual. || وراثت کسی فرد کی وفات پر کوئی جائیداد یا حصہ دینے کا عمل ہے۔ || میراث د یوه کس د مړینې پر مهال د کوم ملکیت یا برخې ورکول دي.
+p In our daily life we have to deal with numerous problems involving proportion, partnership and inheritance. The method of solving such question and problems is illustrated in the following examples. || اپنی روزمرہ زندگی میں ہمیں تناسب، شراکت داری اور وراثت سے متعلق بے شمار مسائل سے نمٹنا پڑتا ہے۔ ایسے سوالات اور مسائل حل کرنے کا طریقہ درج ذیل مثالوں میں واضح کیا گیا ہے۔ || په ورځني ژوند کې باید د تناسب، شراکت او میراث اړوند له ګڼو ستونزو سره مخ شو. د داسې پوښتنو او ستونزو د حل طریقه په لاندې بېلګو کې ښودل شوې ده.

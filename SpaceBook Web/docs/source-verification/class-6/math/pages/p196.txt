@@ -1,0 +1,74 @@
+@printed 194
+q 2 | Draw the following line segments and bisect them. || درج ذیل قطعاتِ خط بنائیں اور ان کی تنصیف کریں۔ || لاندې د کرښو ټوټې رسم او نیمې یې کړئ.
+qp a | 9 cm
+sol Each half = 4.5 cm ## Draw 9 cm with a ruler, then construct the perpendicular bisector (compass opening more than 4.5 cm). || پیمانے سے 9 cm کھینچیں، پھر عمودی ناصف بنائیں (پرکار کا کھلاؤ 4.5 cm سے زیادہ)۔ || په خطکش 9 cm رسم کړئ، بیا عمودي نیمونکې جوړه کړئ (د پرکار خلاصوالی له 4.5 cm ډېر).
+qp b | 7.9 cm
+sol Each half = 3.95 cm ## Compass opening more than 3.95 cm. || پرکار کا کھلاؤ 3.95 cm سے زیادہ۔ || د پرکار خلاصوالی له 3.95 cm ډېر.
+qp c | 8.6 cm
+sol Each half = 4.3 cm ## Compass opening more than 4.3 cm. || پرکار کا کھلاؤ 4.3 cm سے زیادہ۔ || د پرکار خلاصوالی له 4.3 cm ډېر.
+qp d | 9.5 cm
+sol Each half = 4.75 cm ## Compass opening more than 4.75 cm. || پرکار کا کھلاؤ 4.75 cm سے زیادہ۔ || د پرکار خلاصوالی له 4.75 cm ډېر.
+q 3 | Draw perpendiculars to the lines from the given points on it using a compass. || پرکار کی مدد سے دیے گئے نقطوں سے خطوط پر عمود کھینچیں (نقطے خطوط پر ہیں)۔ || د پرکار په مرسته له ورکړل شوو ټکو پر کرښو عمودونه رسم کړئ (ټکي پر کرښو دي).
+qp a | Line AB with point P on it || خط AB اور اس پر نقطہ P || AB کرښه او پرې P ټکی
+solution Perpendicular at P
+ss Follow Steps I–IV of 10.1.3 with the point P. || 10.1.3 کے مراحل I–IV نقطہ P کے ساتھ دہرائیں۔ || د 10.1.3 I–IV پړاوونه له P ټکي سره تکرار کړئ.
+sfig perpon 4 A B P - - T U
+endsolution
+qp b | Line EF with point P on it || خط EF اور اس پر نقطہ P || EF کرښه او پرې P ټکی
+solution Perpendicular at P
+sfig perpon 4 E F P - - T U
+endsolution
+qp c | Line CD with point O on it || خط CD اور اس پر نقطہ O || CD کرښه او پرې O ټکی
+solution Perpendicular at O
+sfig perpon 4 C D O - - T U
+endsolution
+qp d | Line AB with point C on it || خط AB اور اس پر نقطہ C || AB کرښه او پرې C ټکی
+solution Perpendicular at C
+sfig perpon 4 A B C - - T U
+endsolution
+q 4 | Draw perpendiculars to the given lines from the point P not on it using a compass. || پرکار کی مدد سے دیے گئے خطوط پر ان سے باہر نقطہ P سے عمود کھینچیں۔ || د پرکار په مرسته پر ورکړل شوو کرښو له بهر P ټکي عمودونه رسم کړئ.
+qp a | Line AB, point P above it || خط AB، اس کے اوپر نقطہ P || AB کرښه، پورته یې P ټکی
+solution Perpendicular from P to AB
+ss Follow Steps I–III of 10.1.4. || 10.1.4 کے مراحل I–III دہرائیں۔ || د 10.1.4 I–III پړاوونه تکرار کړئ.
+sfig perpoff 3 A B P - - S
+endsolution
+qp b | Line LM, point P above it || خط LM، اس کے اوپر نقطہ P || LM کرښه، پورته یې P ټکی
+solution Perpendicular from P to LM
+sfig perpoff 3 L M P - - S
+endsolution
+qp c | Line CD, point P above it || خط CD، اس کے اوپر نقطہ P || CD کرښه، پورته یې P ټکی
+solution Perpendicular from P to CD
+sfig perpoff 3 C D P - - S
+endsolution
+qp d | Line OQ, point P above it || خط OQ، اس کے اوپر نقطہ P || OQ کرښه، پورته یې P ټکی
+solution Perpendicular from P to OQ
+sfig perpoff 3 O Q P - - S
+endsolution
+q 5 | Draw a line $\overleftrightarrow{AB}$ and draw a perpendicular on it from a point C not on it. || ایک خط $\overleftrightarrow{AB}$ بنائیں اور اس سے باہر نقطہ C سے اس پر عمود کھینچیں۔ || یوه $\overleftrightarrow{AB}$ کرښه رسم کړئ او ترې بهر له C ټکي پرې عمود رسم کړئ.
+solution Perpendicular from C to AB (method of 10.1.4)
+sfig perpoff 3 A B C - - D
+endsolution
+q 6 | Draw a line $\overleftrightarrow{LM}$ and draw a perpendicular on it from point F on it. || ایک خط $\overleftrightarrow{LM}$ بنائیں اور اس پر نقطہ F سے عمود کھینچیں۔ || یوه $\overleftrightarrow{LM}$ کرښه رسم کړئ او پرې له F ټکي عمود رسم کړئ.
+solution Perpendicular at F (method of 10.1.3)
+sfig perpon 4 L M F - - T U
+endsolution
+q 7 | Draw a line segment m$\overline{PQ}$ = 7.5 cm. Draw a perpendicular from point S not on it. || قطعۂ خط m$\overline{PQ}$ = 7.5 cm بنائیں۔ اس سے باہر نقطہ S سے عمود کھینچیں۔ || د m$\overline{PQ}$ = 7.5 cm کرښې ټوټه رسم کړئ. ترې بهر له S ټکي عمود رسم کړئ.
+solution Perpendicular from S to PQ (method of 10.1.4)
+ss Draw PQ = 7.5 cm with a ruler, mark a point S above it, then follow Steps I–III of 10.1.4. || پیمانے سے PQ = 7.5 cm کھینچیں، اس کے اوپر نقطہ S لگائیں، پھر 10.1.4 کے مراحل I–III دہرائیں۔ || په خطکش PQ = 7.5 cm رسم کړئ، پورته یې S ټکی کېږدئ، بیا د 10.1.4 I–III پړاوونه تکرار کړئ.
+sfig perpoff 3 P Q S - - T
+endsolution
+q 8 | Draw a line segment m$\overline{XY}$ = 8 cm. Construct a perpendicular at point Z on it such that $\overline{XZ}$ = 3 cm. || قطعۂ خط m$\overline{XY}$ = 8 cm بنائیں۔ اس پر نقطہ Z پر اس طرح عمود بنائیں کہ $\overline{XZ}$ = 3 cm ہو۔ || د m$\overline{XY}$ = 8 cm کرښې ټوټه رسم کړئ. پرې په Z ټکي داسې عمود جوړ کړئ چې $\overline{XZ}$ = 3 cm وي.
+solution Perpendicular at Z, 3 cm from X
+ss Draw XY = 8 cm, measure 3 cm from X with the ruler and mark Z, then follow Steps I–IV of 10.1.3 at Z. || XY = 8 cm کھینچیں، پیمانے سے X سے 3 cm ناپ کر Z لگائیں، پھر Z پر 10.1.3 کے مراحل I–IV دہرائیں۔ || XY = 8 cm رسم کړئ، په خطکش له X څخه 3 cm اندازه او Z نښه کړئ، بیا په Z کې د 10.1.3 I–IV پړاوونه تکرار کړئ.
+sfig perpon 4 X Y Z - - T U
+endsolution
+endexercise
+@sec 10.2 | Angles and their construction || زاویے اور ان کی تعمیر || زاویې او د هغو جوړونه
+# 10.2 Angles and their construction || 10.2 زاویے اور ان کی تعمیر || 10.2 زاویې او د هغو جوړونه
+p As we know that when two non-parallel lines meet at a common end point, they form **an angle**. We are familiar with the method of constructing an angle using a protractor. Now we will learn how to construct an angle using the compass. || جیسا کہ ہم جانتے ہیں کہ جب دو غیر متوازی خطوط ایک مشترک آخری نقطے پر ملیں تو **زاویہ** بناتے ہیں۔ ہم چاندے سے زاویہ بنانے کا طریقہ جانتے ہیں۔ اب ہم پرکار سے زاویہ بنانا سیکھیں گے۔ || لکه څنګه چې پوهېږو کله دوه غیر موازي کرښې په یو ګډ پای ټکي کې یوځای شي، **زاویه** جوړوي. د زاویه پیما په مرسته د زاویې جوړولو له طریقې سره بلد یو. اوس به د پرکار په مرسته د زاویې جوړول زده کړو.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The line /ray dividing an angle in two equal angles is called bisector of that angle. || زاویے کو دو برابر زاویوں میں تقسیم کرنے والا خط/شعاع اس زاویے کا ناصف کہلاتا ہے۔ || هغه کرښه/وړانګه چې زاویه په دوو برابرو زاویو وېشي د هغې زاویې نیمونکې بلل کېږي.
+endbox
+## 10.2.1 Bisection of an angle || 10.2.1 زاویے کی تنصیف || 10.2.1 د زاویې نیمول
+p When we divide an angle into two equal parts is called **bisection of the angle**. || جب ہم کسی زاویے کو دو برابر حصوں میں تقسیم کرتے ہیں تو اسے **زاویے کی تنصیف** کہتے ہیں۔ || کله چې یوه زاویه په دوو برابرو برخو ووېشو، **د زاویې نیمول** بلل کېږي.
+@issue Exercise 10.1 Q3–Q4 lines are drawings only; each part is described in words. In Q3 the book's points lie on the lines, so the method of 10.1.3 is used; in Q4 the point P is off the line, so 10.1.4 is used.

@@ -1,0 +1,12 @@
+@printed 77
+exercise Long and short (Page 77)
+q 1 | Tick (✓) the shortest object and cross (×) the longest object. || سب سے چھوٹی چیز پر (✓) اور سب سے لمبی چیز پر (×) کا نشان لگائیں۔ || تر ټولو لنډ شي ته (✓) او تر ټولو اوږد شي ته (×) نښه ولګوئ.
+sizes carrot:2.4 brinjal:1.5 chilli:0.9 ;; carrot,brinjal,chilli || A carrot, a brinjal and a chilli || گاجر، بینگن اور مرچ || ګازره، بانجان او مرچ
+sol Tick (✓) the chilli (shortest); cross (×) the carrot (longest). ## Compare the lengths: chilli < brinjal < carrot. || لمبائی کا موازنہ کریں: مرچ < بینگن < گاجر۔ || اوږدوالی پرتله کړئ: مرچ < بانجان < ګازره.
+q 2 | Tick (✓) the longest object and cross (×) the shortest object. || سب سے لمبی چیز پر (✓) اور سب سے چھوٹی چیز پر (×) کا نشان لگائیں۔ || تر ټولو اوږد شي ته (✓) او تر ټولو لنډ شي ته (×) نښه ولګوئ.
+sizes ladybird:0.8 caterpillar:1.6 shark:3 ;; ladybird,caterpillar,shark || A ladybird, a caterpillar and a shark || لیڈی برڈ، سنڈی اور شارک || لېډي برډ، چینجی او شارک
+sol Tick (✓) the shark (longest); cross (×) the ladybird (shortest). ## Compare the lengths: ladybird < caterpillar < shark. || لمبائی کا موازنہ کریں: لیڈی برڈ < سنڈی < شارک۔ || اوږدوالی پرتله کړئ: لېډي برډ < چینجی < شارک.
+q 3 | Colour the long object blue, longer object yellow and the longest object red. || لمبی چیز کو نیلا، زیادہ لمبی کو پیلا اور سب سے لمبی کو سرخ رنگ کریں۔ || اوږد شی شین، اوږدتر ژېړ او تر ټولو اوږد سور رنګ کړئ.
+cnt car.white:1 bus.white:1 | train.white:1 train.white:1 train.white:1 train.white:1 train.white:1 train.white:1 || a car, a bus and a train (engine with five coaches) to colour || ایک کار، ایک بس اور ایک ریل گاڑی (انجن اور پانچ ڈبے) || یو موټر، یو بس او یو اورګاډی (انجن او پنځه ډبې)
+sol Car — blue (long); bus — yellow (longer); train — red (longest). ## The car is the shortest of the three, the bus is longer and the train is the longest. || تینوں میں کار سب سے چھوٹی، بس زیادہ لمبی اور ریل گاڑی سب سے لمبی ہے۔ || په دریو کې موټر تر ټولو لنډ، بس اوږد تر او اورګاډی تر ټولو اوږد دی.
+endexercise

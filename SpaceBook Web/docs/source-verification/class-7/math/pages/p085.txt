@@ -1,0 +1,27 @@
+@printed 81
+p There is a certain amount of income on which one person did not pay tax. If the income increases from that certain amount income tax is applied that income is called **taxable income**. The amount at which the rate of income tax is '0' is called **rebate**. || آمدنی کی ایک خاص مقدار ہوتی ہے جس پر کوئی شخص ٹیکس ادا نہیں کرتا۔ اگر آمدنی اس خاص مقدار سے بڑھ جائے تو انکم ٹیکس لاگو ہوتا ہے اور اس آمدنی کو **قابلِ ٹیکس آمدنی** کہتے ہیں۔ جس رقم پر انکم ٹیکس کی شرح '0' ہو اسے **چھوٹ (rebate)** کہتے ہیں۔ || د عاید یوه ټاکلې اندازه شته چې پرې یو کس مالیه نه ورکوي. که عاید له هغې ټاکلې اندازې زیات شي د عاید مالیه پرې لګېږي او هغه عاید ته **د مالیې وړ عاید** ویل کېږي. هغه اندازې ته چې پرې د عاید مالیې نرخ '0' وي **معافیت (rebate)** ویل کېږي.
+example 1 | Ali earns Rs. 60000 per month. Calculate his income tax at a rate of 5% while the amount of rebate is Rs. 400,000 and the amount he paid as Zaakat is Rs 5500. || علی ماہانہ 60000 روپے کماتا ہے۔ 5% کی شرح سے اس کا انکم ٹیکس معلوم کریں جبکہ چھوٹ کی رقم 400,000 روپے ہے اور اس نے زکوٰۃ کے طور پر 5500 روپے ادا کیے۔ || علي په میاشت کې 60000 روپۍ ګټي. د 5% په نرخ د هغه د عاید مالیه حساب کړئ په داسې حال کې چې د معافیت اندازه 400,000 روپۍ ده او د زکات په توګه یې 5500 روپۍ ورکړې.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{array}{lcl} \text{Monthly income of Ali (gross salary)} &=& \text{Rs } 60{,}000 \\ \text{Annual Income} &=& \text{Rs } 60{,}000 \times 12 = \text{Rs } 720{,}000 \\ \text{Amount paid as Zakat} &=& \text{Rs } 5500 \\ \text{Net income} &=& \text{Rs } 720{,}000 - \text{Rs } 5500 = 714500 \\ \text{Rebate} &=& \text{Rs } 400000 \\ \text{Taxable income} &=& \text{Rs } 714500 - \text{Rs } 400000 = \text{Rs } 314500 \end{array}
+m Income tax @ 5% $=$ Rs 5% of Taxable income $=$ 5% of Rs 314500 $= \frac{30}{150} \times 100 =$ Rs 15725
+p So, he paid Rs 15725 as income tax. || لہٰذا اس نے 15725 روپے انکم ٹیکس ادا کیا۔ || نو هغه 15725 روپۍ د عاید مالیه ورکړه.
+endexample
+@issue The income-tax example prints the last step as "5% of Rs 314500 = 30/150 × 100 = Rs 15725"; the fraction 30/150 is a printing slip (5/100 × 314500 = 15725). The question also spells "Zaakat". Kept as printed.
+### Property Tax || پراپرٹی ٹیکس || د ملکیت مالیه
+p The tax which is paid on a property (house, shop, land, etc.) by its owner is called property tax. In Pakistan property tax is a provincial tax imposed on the citizens from the government. Property tax is based on the annual value of a property. The rates of property tax can vary. || کسی جائیداد (مکان، دکان، زمین وغیرہ) پر اس کے مالک کی طرف سے ادا کیا جانے والا ٹیکس پراپرٹی ٹیکس کہلاتا ہے۔ پاکستان میں پراپرٹی ٹیکس ایک صوبائی ٹیکس ہے جو حکومت شہریوں پر عائد کرتی ہے۔ پراپرٹی ٹیکس جائیداد کی سالانہ مالیت پر مبنی ہوتا ہے۔ پراپرٹی ٹیکس کی شرحیں مختلف ہو سکتی ہیں۔ || هغه مالیه چې د یوه ملکیت (کور، دوکان، ځمکې او نورو) پر سر یې څښتن ورکوي، د ملکیت مالیه بلل کېږي. په پاکستان کې د ملکیت مالیه یوه ولایتي مالیه ده چې حکومت یې پر اوسېدونکو لګوي. د ملکیت مالیه د ملکیت پر کلني ارزښت ولاړه ده. د ملکیت د مالیې نرخونه توپیر کولی شي.
+box info | Math History || ریاضی کی تاریخ || د ریاضي تاریخ
+p Abu-Al-Wafa (940-998 AD) worked on arithmetic involving different kinds of problems on taxes as well as problems of exchange and valuation. || ابوالوفا (940-998 عیسوی) نے حساب پر کام کیا جس میں ٹیکسوں کے ساتھ ساتھ تبادلے اور قیمت کاری کے مختلف سوالات شامل تھے۔ || ابوالوفا (940-998 م) پر حساب کار وکړ چې د مالیو او همدارنګه د تبادلې او ارزونې بېلابېلې پوښتنې پکې وې.
+endbox
+p Let's understand the concept of property tax by solving some examples. || آئیے کچھ مثالیں حل کر کے پراپرٹی ٹیکس کا تصور سمجھیں۔ || راځئ د څو بېلګو په حلولو د ملکیت د مالیې مفهوم وپوهېږو.
+example 1 | Find the amount of the property tax paid by an owner of a house worth Rs 7,600,000 at the rate of 5%. || 7,600,000 روپے مالیت کے مکان کے مالک کی طرف سے 5% کی شرح سے ادا کیے گئے پراپرٹی ٹیکس کی رقم معلوم کریں۔ || د 7,600,000 روپیو په ارزښت د یوه کور د څښتن له خوا د 5% په نرخ ورکړل شوې د ملکیت مالیه معلومه کړئ.
+p **Solution:** || **حل:** || **حل:**
+m Value of the house $=$ Rs 7600000
+m Tax rate $= 5\%$
+eq \text{Property tax} = 5\% \text{ of Rs } 7600000 = 5\% \times \text{Rs } 7600000 = \frac{5}{100} \times \text{Rs } 7600000 = \text{Rs } 380000
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the property tax on a property of Rs 9,200,000 at the rate of 1.7%. || 9,200,000 روپے کی جائیداد پر 1.7% کی شرح سے پراپرٹی ٹیکس معلوم کریں۔ || د 9,200,000 روپیو پر ملکیت د 1.7% په نرخ د ملکیت مالیه معلومه کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain the student the term income tax and texable amount write different amounts on the board and ask them to tell the amount is taxable and how much amount have to be paid as tax on the given amount. || طلبہ کو انکم ٹیکس اور قابلِ ٹیکس رقم کی اصطلاح سمجھائیں، بورڈ پر مختلف رقمیں لکھیں اور ان سے پوچھیں کہ کون سی رقم قابلِ ٹیکس ہے اور دی گئی رقم پر کتنا ٹیکس ادا کرنا ہوگا۔ || زده کوونکو ته د عاید مالیې او د مالیې وړ اندازې اصطلاح تشریح کړئ، پر تخته بېلابېلې اندازې ولیکئ او ترې وپوښتئ چې کومه اندازه د مالیې وړ ده او پر ورکړل شوې اندازه څومره مالیه ورکول کېږي.
+endbox

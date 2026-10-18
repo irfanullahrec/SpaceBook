@@ -1,0 +1,5244 @@
+{
+ "class": 4,
+ "updated": "2026-10-13T20:41:09",
+ "sourceDirectory": "D:\\SpaceBook\\Books\\4th\\4th",
+ "pipeline": "Page DSL (docs/source-verification/class-4/<subj>/pages/pNNN.txt) -> tools/build_book4.py -> js/<name>_4_data.js -> js/cls4_book_reader.js (uses the shared Class 6 renderer MATH6_READER).",
+ "note": "Class 4 is being rebuilt page by page from the scans. The earlier Class 4 datasets (backed up in legacy-backup/) were generated from Word OCR with placeholder answers and untranslated \"translations\"; their \"verified\" status was not supported by the content.",
+ "order": [
+  "Mathematics",
+  "English",
+  "Urdu",
+  "General Science",
+  "Social Studies",
+  "Social Studies (Urdu)",
+  "Islamiat",
+  "Pashto"
+ ],
+ "subjectsNotInSourceFolder": [
+  "General Knowledge (no separate book; the General Science PDF set has \"general knowledge\" split files of the same book)",
+  "Computer Science",
+  "Mutalia-e-Quran",
+  "Geography",
+  "History",
+  "Arabic",
+  "Drawing / Art",
+  "Health and Physical Education"
+ ],
+ "books": [
+  {
+   "subject": "Mathematics",
+   "code": "math",
+   "title": "Mathematics 4 (KPTBB, Curriculum 2020)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\Math books 4 KPK.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\math",
+   "appFile": "js/math_4_data.js",
+   "totalSourcePages": 188,
+   "status": "complete",
+   "reviewedPages": 188,
+   "implementedPages": 186,
+   "printedPagesCovered": "1-188",
+   "blankOrAdPages": [
+    2,
+    3
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 188,
+   "nextPdfPage": null,
+   "currentUnit": 10,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 8,
+     "printedPage": 1,
+     "issues": [
+      "Printed pages 2-9 (the Whole Numbers lessons and their exercises) are missing from every available source: the PDF goes from printed page 1 straight to printed page 10, and the JPG set and Word transcripts have the same gap. Not reconstructed."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 19,
+     "issues": [
+      "In Question 1 a previous user of the scanned copy wrote borrowing marks over the top numbers and answers below. The printed top numbers were read under the marks and each one checked against the printed bottom number and the hand-written difference; they agree in all eight parts."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 31,
+     "issues": [
+      "The text calls the diagonal 95, 84, 73, 62, 51 \"yellow boxes\"; on this scan they are printed light pink. Reproduced in a light shade."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 51,
+     "issues": [
+      "The middle circle of the sevenths example is drawn with 3 of 7 parts shaded and labelled 3/7, while the sentence under it lists 2/7, 4/7 and 6/7. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 65,
+     "issues": [
+      "The \"Try Yourself\" box states that the product of two mixed numbers is always a mixed number. This is not true in general (e.g. $1\\frac{1}{2} \\times 1\\frac{1}{3} = 2$). Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 69,
+     "issues": [
+      "Q2(f): the numerator of the first fraction is faintly printed; it reads as 3 ($\\frac{3}{10}$)."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 70,
+     "issues": [
+      "Q12 asks \"how many mango trees\" but gives only fractions of two gardens with no tree counts; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 74,
+     "issues": [
+      "The 10 × 10 grid for \"77 out of 100 equal parts are coloured\" shows no visible colouring on this scan. Shown here with 77 of 100 parts shaded, as the text states."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 79,
+     "issues": [
+      "\"0.4 students participated ... from each group\" is printed as is; it means 0.4 (four tenths) of each group."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 102,
+     "issues": [
+      "The last line of the 60 kg 234 g example is printed \"= 6,0234g\" (misplaced comma); the correct value is 60,234 g, as the line above it (60,000 g + 234 g) shows. Shown as printed with a note."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 118,
+     "issues": [
+      "The clocks were read from the scan: Q2a hour hand halfway between 7 and 8, minute hand on 6, second hand on 3; Q2b hour hand halfway between 5 and 6, minute hand on 6, second hand just past 7 (the key reads 5:30:36); Q2c hour hand on 9, minute hand on 12, thin second hand just before 12. Q3: (a) hour hand on 5, minute hand on 12, second hand on 3; (b) hour hand on 5, minute hand on 12, second hand on 7; (c) hour hand between 7 and 8, minute hand on 8, second hand on 12; (d) short hand on 3, long hand on 2, thin hand on 12. Redrawn with these hand positions."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 128,
+     "issues": [
+      "Q2(e) is printed \"Time to watch TV at noon\" with choices 3:00 a.m / 3:00 p.m; 3:00 is in the afternoon, not at noon. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 134,
+     "issues": [
+      "The six line pairs of Exercise 1 carry no letters on the scan, although the question asks for \"their names\"; parts a-f are described and redrawn from the scan."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 137,
+     "issues": [
+      "The two \"Try Yourself\" angles are redrawn with the same shape as on the scan (about 100° and about 40°); their exact sizes cannot be measured from the scan."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 142,
+     "issues": [
+      "Q4 figures carry no vertex letters on the scan although the question asks for names. Q2 angle sizes are redrawn to match the scan's shapes and cannot be measured exactly from it."
+     ]
+    },
+    {
+     "pdfPage": 142,
+     "printedPage": 143,
+     "issues": [
+      "The PDF copy of this page renders as a blank white page; the content was taken from the separate JPG scan of the same page (Math books 4 KPK_page_142.jpg), which matches the Word transcript."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": 147,
+     "issues": [
+      "The \"=\" sign before \"12 cm\" is missing on the scan (\"... + 3 cm   12 cm\"); shown with \"=\"."
+     ]
+    },
+    {
+     "pdfPage": 148,
+     "printedPage": 149,
+     "issues": [
+      "Exercise 4 Q2(b): the shading of the large 14 × 9 grid is too faint on the scan to count the shaded boxes; the grid is reproduced without shading."
+     ]
+    },
+    {
+     "pdfPage": 150,
+     "printedPage": 151,
+     "issues": [
+      "The two grid figures were redrawn on whole grid points read from the scan; the step heights of the first figure are approximate (within half a box)."
+     ]
+    },
+    {
+     "pdfPage": 154,
+     "printedPage": 155,
+     "issues": [
+      "The sphere box shows the label \"Curved surface\" but no picture of a sphere in the PDF scan or the separate JPG scan; a coded sphere is drawn here to match the text."
+     ]
+    },
+    {
+     "pdfPage": 155,
+     "printedPage": 156,
+     "issues": [
+      "Exercise 6 Q1(d) has no figure in the PDF scan or the separate JPG scan (only the letter \"d)\"); it is left blank and not guessed."
+     ]
+    },
+    {
+     "pdfPage": 156,
+     "printedPage": 157,
+     "issues": [
+      "Row a) of the Q2 table has no picture (as with the sphere on page 155, the sphere pictures did not print); it is left blank."
+     ]
+    },
+    {
+     "pdfPage": 157,
+     "printedPage": 158,
+     "issues": [
+      "In row c) the first picture is almost invisible on the scan (a faint pale shape, probably the sphere); it is listed as \"(faint picture, not legible)\"."
+     ]
+    },
+    {
+     "pdfPage": 160,
+     "printedPage": 161,
+     "issues": [
+      "Q5: the arrows on the scan point roughly to the vertical line (a), the circle's boundary (b), the centre point (c) and the line from the centre (d); their exact targets are reproduced approximately."
+     ]
+    },
+    {
+     "pdfPage": 161,
+     "printedPage": 162,
+     "issues": [
+      "Q8(a): part of the half-figure near the line of symmetry is whited out on the scan (correction fluid); only the visible part is drawn."
+     ]
+    },
+    {
+     "pdfPage": 162,
+     "printedPage": 163,
+     "issues": [
+      "The cone in Q9(b) is printed upside down (vertex at the bottom); it is drawn upright here."
+     ]
+    },
+    {
+     "pdfPage": 163,
+     "printedPage": 164,
+     "issues": [
+      "On the opening pie chart the label \"Animals living in water and on land both\" points at a dark-blue sector whose number reads 7,302; the slice is not otherwise named."
+     ]
+    },
+    {
+     "pdfPage": 167,
+     "printedPage": 168,
+     "issues": [
+      "The Khyber Pakhtunkhwa bar ends very close to the 10 line (read as 10); AJ&K is read as 5."
+     ]
+    },
+    {
+     "pdfPage": 169,
+     "printedPage": 170,
+     "issues": [
+      "In the Try It! graph the points read about 125, 225, 150, 175, 150, so the plotted value for Sialkot (about 225) does not match the table (275): this is the intended \"mistake\"."
+     ]
+    },
+    {
+     "pdfPage": 171,
+     "printedPage": 172,
+     "issues": [
+      "Printed pages 173-174 (the rest of the pie chart lesson, \"I Have Learnt\" and the first part of the Unit 7 Review Exercise up to Q1 c) are missing from every available source: the PDF, the JPG set and the Word transcript all go from printed page 172 to page 175. Not reconstructed."
+     ]
+    },
+    {
+     "pdfPage": 172,
+     "printedPage": 175,
+     "issues": [
+      "This page continues the Unit 7 Review Exercise whose beginning (printed pages 173-174) is missing from every source. It starts at Q1 d).",
+      "Bar values were checked against the printed answer key (page 185). Q2: the key confirms 1st year 8 kg, 3rd and 4th years 14 kg, 6th year 22 kg and 7th year 30 kg; 2nd year (about 12 kg) and 5th year (about 17 kg) are read from the scan and are approximate. Q3 (5 flowers per square): the key confirms Rose 10, Chrysanthemum 8, Tulip 11, Gul-e-qasidi 12 and Spring flower 20 out of 71 flowers; Daffodil is drawn as 10 (71 minus the others), which matches its bar on the scan."
+     ]
+    },
+    {
+     "pdfPage": 173,
+     "printedPage": 176,
+     "issues": [
+      "Q4 points read from the scan: hour 1 about 7, hour 2 about 15, hour 3 20, hour 4 about 35, hour 5 about 15; hours 1, 2, 4 and 5 are approximate."
+     ]
+    },
+    {
+     "pdfPage": 174,
+     "printedPage": 177,
+     "issues": [
+      "The answer key lists Exercise 1 (Page 5) and Exercise 2 (Page 8) of Whole Numbers; those textbook pages (printed 2-9) are missing from every source, so these answers are kept here but have no questions to attach to. The heading prints \"Unit 1 Whore Numbers\" (typo for Whole Numbers). In \"Exercise (Page 10)\" the answer to Q1 a) is not printed."
+     ]
+    },
+    {
+     "pdfPage": 175,
+     "printedPage": 178,
+     "issues": [
+      "Two answers are blurred on the scan: Exercise 1 (Page 16) Q2 d) reads \"1?,?784\" and Q3 reads \"Rs.72,1?5\"; the legible digits match 53,241 + 67,543 = 120,784 and 59,453 + 12,652 = 72,105, which are shown. The Review Exercise (Page 10) Q5 answers are printed in the form \"5,000 thousand\" (i.e. 5 thousands = 5,000) and are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 176,
+     "printedPage": 179,
+     "issues": [
+      "Key check: Unit 2 Exercise 1 (Page 39) Q2 is printed \"b, c, e\", but d) 6,720 (6+7+2+0 = 15) and f) 52,110 (5+2+1+1+0 = 9) are also divisible by 3. Printed answer kept; a SpaceBook note is added on the question page. Exercise 2 (Page 42) Q6 is keyed a)-h) while the question lists parts a, b, c, d, f, g, h, i (no e); the key's order matches the question's order."
+     ]
+    },
+    {
+     "pdfPage": 177,
+     "printedPage": 180,
+     "issues": [
+      "Fractions Exercise 1 (Page 59) Q4 key prints \"mined number\" (typo for mixed number)."
+     ]
+    },
+    {
+     "pdfPage": 178,
+     "printedPage": 181,
+     "issues": [
+      "Key check: Decimals Exercise 1 (Page 76) Q3 (colouring) has no printed answer. All other answers on this page were checked against the questions and agree."
+     ]
+    },
+    {
+     "pdfPage": 179,
+     "printedPage": 182,
+     "issues": [
+      "Key checks: (1) Measurements Exercise 2 (Page 100) Q6 b) is printed \"1m 12cm\"; 12 m 56 cm − 10 m 44 cm = 2 m 12 cm. Printed answer kept; a SpaceBook note is added on the question page. (2) Decimals Exercise 4 (Page 87): Q1-Q3 parts g)-i) and Exercise 5 (Page 90) Q1 d) have no printed answers; the Review Exercise (Page 92) Q8 d) gives only \"8,420; 8,400;\" (nearest 1,000 not printed). (3) Measurements Exercise 1 (Page 98) Q1 b) key gives \"cm\" for the ant."
+     ]
+    },
+    {
+     "pdfPage": 180,
+     "printedPage": 183,
+     "issues": [
+      "Key notes: Time Exercise 1 (Page 117) Q2 asks for the 24-hour format, but the key gives 7:30:15, 5:30:36 and 9:00:58 (12-hour readings). Measurements Exercise 3 (Page 105) Q5 asks for grams; the key gives 114kg 958g. All values were checked against the questions."
+     ]
+    },
+    {
+     "pdfPage": 181,
+     "printedPage": 184,
+     "issues": [
+      "Key check: Time Exercise 4 (Page 126) Q3 b) is printed \"ii) 283 min\", but 6 h 43 min = 6 × 60 + 43 = 403 min (the Review Exercise Q9 b) key gives 403 min for the same time). Printed answer kept; a SpaceBook note is added on the question page. Review Exercise (Page 127) Q11 b) uses 360 days a year and 30 days a month (9 × 360 + 11 × 30 + 9 = 3,579)."
+     ]
+    },
+    {
+     "pdfPage": 182,
+     "printedPage": 185,
+     "issues": [
+      "Key checks for Units 6-7: (1) Data Handling Exercise 1 (Page 167) Q1 c) asks how many hours less 13-18 years sleep than 3-5 years (10 − 7 = 3 h) but the key prints \"7h\". (2) Review Exercise (Page 174) Q4 d): 92 − (15 + 20 + 35 + 15) = 7, but the key prints \"8cupcakes\". (3) Review Exercise (Page 174) Q2: the key's own values (1st year 8 kg, least increase 4 kg between 2nd and 3rd year) imply a 2nd-year weight of 10 kg, which would make the 1st-2nd year increase only 2 kg; reproduced as printed. (4) Exercise 3 (Page 173) belongs to the missing printed pages 173-174, so its answers have no questions here. (5) Review Exercise (Page 174) Q5 a) is blurred on the scan (\"a) 2\" is the likely reading; the pie chart shows Vanilla = 2). (6) Geometry Exercise 4 (Page 149) Q2 b) key gives 84 m²; the shading of that grid is not legible on the scan. Printed answers are kept; SpaceBook notes are added on the question pages for (1) and (2)."
+     ]
+    },
+    {
+     "pdfPage": 185,
+     "printedPage": 188,
+     "issues": [
+      "Links are reproduced as printed (some contain print errors such as \"interac_ve\", \"ac_vi_es\" and \".htmh\"); they are shown as plain text, not as clickable links."
+     ]
+    },
+    {
+     "pdfPage": 187,
+     "printedPage": null,
+     "issues": [
+      "Item 7 prints \"effective skills\" for \"affective skills\". Kept as printed. This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 188,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the English/Pashto columns give a meaning translation. Line breaks are shown with \" / \"."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 22.9,
+   "ledger": "docs/source-verification/class-4/math/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/math/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "English",
+   "code": "eng",
+   "title": "English 4 (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\English Book for 4 class KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\eng",
+   "appFile": "js/english_4_data.js",
+   "totalSourcePages": 152,
+   "status": "complete",
+   "reviewedPages": 152,
+   "implementedPages": 148,
+   "printedPagesCovered": "1-138",
+   "blankOrAdPages": [
+    2,
+    47,
+    107,
+    152
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 152,
+   "nextPdfPage": null,
+   "currentUnit": 17,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 7,
+     "printedPage": null,
+     "issues": [
+      "The sub-theme printed for Unit 4 (\"Amazing inventions\") repeats Unit 3's; the Unit 4 and 5 sub-themes appear shifted by one row. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": null,
+     "issues": [
+      "For Units 11-13 the \"Language Focus\" column repeats the \"Reading and Critical Thinking\" column, as printed."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 2,
+     "issues": [
+      "The Prophet's name is followed in the book by the Arabic honorific \"رسول الله خاتم النبيين صلى الله عليه وعلى آله وأصحابه وسلم\" and each Caliph's name by \"رضي الله تعالى عنه\"; they are shown here as (ﷺ) and (رضی اللہ عنہ)."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 14,
+     "issues": [
+      "The stage names (eggs, caterpillar, pupa, butterfly) are not printed on the picture; they are added as labels in the coded figure."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 17,
+     "issues": [
+      "The first letters of \"Select\" and \"some\" in the Analytical Reading heading are cut off at the left edge of the scan."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 23,
+     "issues": [
+      "Line 4 is printed \"What other things do these plant need to grow decide air, light and water?\" (\"decide\" is a misprint for \"beside\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 31,
+     "issues": [
+      "Review-1 Q (B1) asks \"What are the benefits of personal hygiene?\", but personal hygiene is not covered in Units 1-3 (it is the theme of Unit 9). Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 36,
+     "issues": [
+      "\"buidling\" is a misprint for \"building\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 37,
+     "issues": [
+      "The narrator's friend is called \"Kashif\" earlier in the lesson but \"Tashif\" on this page (\"Tashif took their pictures\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 40,
+     "issues": [
+      "In the third multiple-choice question the first option is labelled \"1) two\" instead of \"a) two\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 47,
+     "issues": [
+      "Copyright: the poem \"Thank you, Lord\" is by Mary Fairchild, a modern author. It is summarised stanza by stanza here instead of being reproduced; read the full poem in the printed textbook (page 47)."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 50,
+     "issues": [
+      "The two clocks of Q iii were read from the scan: blue clock — long hand on 9, short hand just before 4 (3:45); red clock — long hand on 9, short hand just before 6 (5:45). The answer boxes are blank in the book."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 68,
+     "issues": [
+      "The printed map is an unlabelled outline; SpaceBook's code map is simplified and labelled so learners can find their region."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 71,
+     "issues": [
+      "The Teaching Point at the bottom of printed page 71 is cut off in the scan; only \"Ask students different questi…\" is visible."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 72,
+     "issues": [
+      "Printed instruction reads \"long vowel sounds and dyhtmy\" (misprint of \"diphthongs\"); corrected in the digital text.",
+      "The book prints the third sound as /a:/; standard IPA for this long vowel is /ɑː/."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 74,
+     "issues": [
+      "Teaching Point C1 (ii) is misprinted as \"Have them recall the of compound words\"; \"concept\" supplied."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 75,
+     "issues": [
+      "The first pronoun cell (\"I\") is cut off at the left edge of the scan; restored from the sentences in the row."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 79,
+     "issues": [
+      "Pre-reading is misprinted \"Look at the little and guess\"; \"title\" intended."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 89,
+     "issues": [
+      "The poem title is cut off at the top of the scan (\"Whole Duty o…\"); completed as \"Whole Duty of Children\", the title of this Robert Louis Stevenson poem."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 91,
+     "issues": [
+      "Instruction iii is misprinted \"fil in the blanks\"; corrected to \"fill\"."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 94,
+     "issues": [
+      "The subject of the first sentence on printed page 94 is cut off at the top of the scan (\"… (should / should not) eat too many chocolates.\"); the visible letter shapes suggest \"She\"."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 97,
+     "issues": [
+      "\"eagerly\" is misprinted \"eargerly\" in the Review-3 adverb text; kept as printed in the passage.",
+      "Q10 asks for \"possessive pronouns\", but every blank needs a possessive adjective (our, my, their, his, her) as taught in Unit 9."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 99,
+     "issues": [
+      "The narration line is misprinted \"when She and her brother\" (capital S); corrected to \"she\"."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 101,
+     "issues": [
+      "Question c is misprinted \"stragers\"; corrected to \"strangers\". The heading is printed \"'and', 'of' 'or' and 'but'\" without a comma."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 102,
+     "issues": [
+      "The calendar dates of Saturdays and Sundays are printed in red; the coded table does not colour them. The second calendar question reads \"in the July\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 114,
+     "printedPage": 104,
+     "issues": [
+      "Table iv continues on page 105 (need, demand, accept); the four rows are shown together here. The Teaching Point reads \"regular verbs formed by adding -d or -ed\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 105,
+     "issues": [
+      "The last three rows of table iv (need, demand, accept) are printed at the top of this page; they are shown with the table on page 104.",
+      "The Read Me box says \"Adverbs of time tells\" as printed. The last Teaching Point line is cut at the right edge (\"that w...\"); read as \"that we\"."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 106,
+     "issues": [
+      "The story boxes list \"Solution\" where the story elements on page 102 call the last element \"Ending\"; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 109,
+     "issues": [
+      "The table reads \"our voice raises\" and \"Our voice fall\" as printed. The rising/falling arrows printed beside each sentence are shown as ↗ and ↘. The story pages give the Allah honorific in Arabic script, shown here as (سبحانہ وتعالیٰ)."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 110,
+     "issues": [
+      "The last two rows of the intonation table (In commands; In exclamations) are printed at the top of this page; they are shown with the table on page 109."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 111,
+     "issues": [
+      "The page number at the foot of this page is cut off on the scan; it is printed page 111 by sequence."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 112,
+     "issues": [
+      "The \"C) Language Focus\" heading is cut at the top edge of the scan. The interjection bubble has no matching word in the story text."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 113,
+     "issues": [
+      "The heading of iv is cut at the top edge (\"...in your notebook.\"). In the table \"her\" in \"Rida received a letter from her\" is an object pronoun as printed."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 114,
+     "issues": [
+      "\"although\" is misprinted \"altough\" twice on this page (sentence 2 of v and the oval in vi); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 115,
+     "issues": [
+      "The Read Me box reads \"Questions words\" as printed. The right edge of the Creative Writing heading and of the Teaching Point is cut on the scan (\"quarrel\", \"Ask students to\", \"Guide\", \"with\"); read from the visible letters."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 117,
+     "issues": [
+      "The lesson title printed on page 117 and in the unit opening is \"Time to Think!\" (the Contents list gives \"Time to think!\")."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 119,
+     "issues": [
+      "The first line of the page is partly cut at the top edge (\"...doesn't follow the rules. There is always a\"); read from the visible letters."
+     ]
+    },
+    {
+     "pdfPage": 131,
+     "printedPage": 121,
+     "issues": [
+      "The first dialogue line is cut at the top edge (\"What happen...\"); read as \"What happened?\". The book prints \"in front\", \"above\", \"behind\" and \"next to\" in red but \"between\" in black. The printed picture shows the family sitting round a fire beside the tent; the coded picture is a simplified version showing the position words."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 122,
+     "issues": [
+      "The pictures are coded as simplified versions of the printed colour illustrations. The page number at the foot is cut off on the scan; it is printed page 122 by sequence."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 123,
+     "issues": [
+      "The exercise numbering goes from ii to iv on this page (there is no iii). \"enquired\" is in the spelling list although the word does not appear in the lesson text."
+     ]
+    },
+    {
+     "pdfPage": 134,
+     "printedPage": 124,
+     "issues": [
+      "The Read Me box starts a sentence with lower-case \"some words require -es\" as printed. The fourth spelling word is \"en__uire\" (enquire), while the spelling list on page 123 has \"enquired\"."
+     ]
+    },
+    {
+     "pdfPage": 135,
+     "printedPage": 125,
+     "issues": [
+      "The task \"Read the given sentence structures for the past continuous tense\" is printed without a number between i (page 124) and iii; it is shown here as ii. The page number at the foot is partly cut (\"125\")."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 126,
+     "issues": [
+      "\"fourminutes\" hyphenates as \"four-minutes\" only in the printed form; as an adjective the usual form is \"four-minute\". The Creative Writing question ends with a full stop instead of a question mark, as printed."
+     ]
+    },
+    {
+     "pdfPage": 137,
+     "printedPage": 127,
+     "issues": [
+      "\"the english language\" is printed with a lower-case e; kept as printed. The page number is not printed on this unit-opening page (printed page 127 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 139,
+     "printedPage": 129,
+     "issues": [
+      "The poem title is partly cut at the top edge of the scan (\"Little Thing…\"); it is the unit title \"Little Things\"."
+     ]
+    },
+    {
+     "pdfPage": 140,
+     "printedPage": 130,
+     "issues": [
+      "The heading is printed \"Stress, Rythm and Intonation\" (\"Rythm\" for \"Rhythm\"); kept as printed. The page number is hidden behind the scan footer (printed page 130 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 131,
+     "issues": [
+      "The top of this page is cut on the scan: a third comprehension question beginning \"What is th...\" is unreadable, and the heading of ii is cut after \"Read the given map an...\"; the same gap is in the legacy Word transcript. The unreadable question is not reconstructed; the heading is completed as \"Read the given map and direction key.\"",
+      "Only \"playground\" is labelled on the printed map. The other buildings are identified from their pictures (a shop-like building with a round sign = post office; a building with a bus = school; a dark red building = police station; a building with a red cross = hospital) and labelled in the coded map.",
+      "The vocabulary table starts on this page (eternity) and continues on page 132 (pleasant, mighty, stray, virtue); the five rows are shown together here."
+     ]
+    },
+    {
+     "pdfPage": 142,
+     "printedPage": 132,
+     "issues": [
+      "The last four vocabulary rows (pleasant, mighty, stray, virtue) are printed at the top of this page; they are shown with the table on page 131."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 135,
+     "issues": [
+      "The central idea is printed \"Therefore, we should ignore little things\", which contradicts the sentence before it and the Teaching Point on page 129 (\"We should not look down upon little things\"); the intended sense is \"we should not ignore little things\". The English is kept as printed; the translations add [نہیں]/[ونه] in brackets to give the intended meaning."
+     ]
+    },
+    {
+     "pdfPage": 147,
+     "printedPage": 137,
+     "issues": [
+      "Question 4(a) says \"to his house\", but in the story (page 108) the fox is \"she\" and the stork comes \"to her place\"; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 148,
+     "printedPage": 138,
+     "issues": [
+      "Question 7(a) is printed \"The fox is making prank on the stork\" (without \"a\"); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 149,
+     "printedPage": null,
+     "issues": [
+      "This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 150,
+     "printedPage": null,
+     "issues": [
+      "Item 7 prints \"effective skills\" for \"affective skills\". Kept as printed. This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 151,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the English/Pashto columns give a meaning translation. Line breaks are shown with \" / \"."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 4.4,
+   "ledger": "docs/source-verification/class-4/eng/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/eng/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Urdu",
+   "code": "urdu",
+   "title": "Urdu 4 (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\Urdu book 4th KPK.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\urdu",
+   "appFile": "js/urdu_4_data.js",
+   "totalSourcePages": 166,
+   "status": "complete",
+   "reviewedPages": 166,
+   "implementedPages": 164,
+   "printedPagesCovered": "1-152",
+   "blankOrAdPages": [
+    2,
+    3
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 166,
+   "nextPdfPage": null,
+   "currentUnit": 28,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 7,
+     "printedPage": null,
+     "issues": [
+      "The contents run over pages (i)-(v) (scans 6-10); the whole table is shown here. The lesson 21 card prints its first heading as \"اپ نے کیا سمجھا؟\" (alif without madda). The page numbers match the lesson pages (printed page = scan - 10)."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": null,
+     "issues": [
+      "Contents page (ii) is part of the contents table shown with page (i)."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": null,
+     "issues": [
+      "Contents page (iii) is part of the contents table shown with page (i)."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": null,
+     "issues": [
+      "Contents page (iv) is part of the contents table shown with page (i)."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": null,
+     "issues": [
+      "Contents page (v) is part of the contents table shown with page (i)."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 4,
+     "issues": [
+      "The four plus-shaped letter grids are shown as a table: each grid shares one empty middle square between a down word and an across word. Grid 2's across word reads \"تھراتا\" (the poem has \"تھرتھراتا\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 5,
+     "issues": [
+      "Copyright: the verses are by Hafeez Jalandhari (1900-1982), still in copyright in Pakistan (life + 50 years), so they are summarised here, not transcribed; read the printed verses in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 7,
+     "issues": [
+      "The book prints the Prophet's name with the Arabic honorific \"صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم\" (and \"خاتم النبیین\"); it is shown here as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 8,
+     "issues": [
+      "Copyright: the naat is by Maher-ul-Qadri (1906-1978), still in copyright in Pakistan (life + 50 years), so it is summarised line by line here, not transcribed; read the printed naat in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 10,
+     "issues": [
+      "\"پسینا\" is printed with alif (more often spelt \"پسینہ\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 11,
+     "issues": [
+      "The pictures beside the sentences (a boy writing, a garden, a sunset and a sunrise) illustrate the four sentences; they are described here, not coded. The word \"نے\" in the clouds is not strictly a preposition but is needed for the last sentence; reproduced as printed. The book's teacher note reads \"کسی سبق میں سے\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 12,
+     "issues": [
+      "The book calls Hazrat Zaid bin Haritha (RA) \"غلام\" (he was the Prophet's freed slave and adopted son); kept as printed. The passage prints \"اے اللہؐ\" with a small honorific mark; shown as \"اے اللہ\"."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 17,
+     "issues": [
+      "On this scan the three dots under \"پل\" are faint and it looks like \"یل\"; read as \"پل\" from the clue (removing two of its dots leaves \"بل\")."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 25,
+     "issues": [
+      "The book gives six answer boxes in each column but the split is seven common and five proper nouns; \"گلاب\" (rose) is a kind of flower, treated here as a common noun."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 28,
+     "issues": [
+      "The passage prints \"جج نے دوسرے آدمی سے پوچھا؟\" with a question mark after \"پوچھا\" and \"نہیں جناب:\" with a colon; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 29,
+     "issues": [
+      "The verses of question 6 are from Ismail Merathi's poem \"ہماری گائے\" (Our Cow), which is in the public domain; the matching is checked against that poem. The scan has faint pencil marks in some answer boxes of question 5; they are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 30,
+     "issues": [
+      "The third paragraph prints the name with \"صدیق\" twice (\"حضرت ابوبکر صدیق صدیق\"); reproduced as printed. The book writes the honorific \"رضی اللہ تعالیٰ عنہ\" in full each time; kept."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 32,
+     "issues": [
+      "The book prints the questions under \"سمجھیں اور بتائیں\" without a question number or an instruction line; the contents page says these study lessons are answered orally, so the heading \"سوالات کے جوابات زبانی دیں\" is supplied here."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 37,
+     "issues": [
+      "The correct and wrong columns differ only in their vowel marks (jazm or zabar on the middle letter); they are shown with transliteration to make the difference visible."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 38,
+     "issues": [
+      "The ordinals are counted from the right, the reading direction of Urdu (counted from the left they would be second, second, fourth and second). The pigeon sentence reads \"کبوتر کا رنگ\" (the pigeon's colour) as printed."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 40,
+     "issues": [
+      "The area figure \"سات لاکھ ۹۶ ہزار ۹۶ مربع کلو میٹر\" (796,096 km²) is reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 41,
+     "issues": [
+      "Copyright: the poem is by Faiz Ludhianvi (named at its end on page 42), a 20th-century poet whose work is not known to be in the public domain; it is summarised stanza by stanza here, not transcribed. Read the printed poem in the textbook.",
+      "The web address in the teacher note is printed \"https://www.youtube/sckodym21Xw\" (it lacks \".com\" and is not a complete YouTube link); reproduced as printed, not as a live link."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 44,
+     "issues": [
+      "The letter grid is shown with its columns in right-to-left order, as printed (the first cell of each row is the rightmost box)."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 45,
+     "issues": [
+      "The answer table is blank in the book; the filled-in table above is the agent's answer. Urdu number words follow standard spelling (e.g. \"چون\" for 54, \"انسٹھ\" for 59)."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 46,
+     "issues": [
+      "The book shows a scanned page (page 663) from an Urdu dictionary with the entry \"مستحق\" circled; the dictionary page is not reproduced here (its small print is illegible on the scan and it is a third-party work)."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 47,
+     "issues": [
+      "The question letters under the price list are printed as a bullet \"ب\" and a circle, without \"الف\"; they are numbered الف، ب، ج here. The prices are printed in English numerals."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 49,
+     "issues": [
+      "\"ٹمیاری\" (Tamiari, near Hala Haveli) and \"ماں ڈرک بند\" (Maan Drak Band) are spelt as printed."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 50,
+     "issues": [
+      "The book prints the questions under \"سمجھیں اور بتائیں\" without an instruction line; as with Lesson 5, they are answered orally (\"سوالات کے جوابات زبانی دیں\" is supplied). The biographical details (e.g. Lalla Arifa's village \"یاندرھن\" and family) are reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 56,
+     "issues": [
+      "Each word pair differs only in its vowel mark (zabar, pesh or zer); the marks are shown as printed."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 61,
+     "issues": [
+      "The three spellings in each row differ only in the vowel mark on the first letter; they are given in the order printed (right to left), with transliterations to show the difference.",
+      "The petal numbers are partly hidden by the petal folds on the scan; read as the ten numbers 61-70."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 63,
+     "issues": [
+      "The teacher note names the poem of question 9 as \"ہمدردی\" (Hamdardi), by Allama Iqbal; the poem is public domain and is transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 65,
+     "issues": [
+      "The words in question 3 are printed right to left in this order: گلہری، پہاڑ، ہاتھی، بندر، شیر، زرافہ، کمپیوٹر، پاکستان."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 66,
+     "issues": [
+      "The book says \"computer\" is a Latin word meaning \"one who calculates\"; it comes from Latin \"computare\" (to calculate) through English. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 68,
+     "issues": [
+      "The book says Babbage proposed the \"digital computer\"; his designs (the Analytical Engine) were mechanical calculating machines. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 71,
+     "issues": [
+      "The grid is shown with columns in right-to-left order, as printed (first cell = rightmost box). The words \"موبائل\" and \"ٹیبلٹ\" share the letter \"ب\"."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 72,
+     "issues": [
+      "Both \"اور\" and \"و\" are possible in every blank; the answers give the usual set phrases (\"صبر و شکر\", \"صبح و شام\").",
+      "The question uses \"باأثر\" (ba-asar); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 74,
+     "issues": [
+      "The first outcome reads \"اس سبق کی تکمیل کے بعد پر آپ\" with an extra \"پر\" on the scan; shown as \"اس سبق کی تکمیل کے بعد آپ\"."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 75,
+     "issues": [
+      "Copyright: the poem is by Hafeez Jalandhari (1900-1982), still in copyright in Pakistan (life + 50 years), so it is summarised here, not transcribed; read the printed poem in the textbook. The matching exercise on page 76 quotes single lines of it for study."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 76,
+     "issues": [
+      "The column-B lines are given in the printed (jumbled) order; the full couplets are matched against the poem on page 75."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 77,
+     "issues": [
+      "The grid is shown with columns in right-to-left order, as printed (first cell = rightmost box). In \"نیکی\" the second letter is printed as a final \"ے\" in its box, as in the scan."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 78,
+     "issues": [
+      "Copyright: the poem is by Zia-ul-Hasan Zia, whose dates could not be confirmed; it is treated as in copyright and summarised here, not transcribed. Read the printed poem in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 80,
+     "issues": [
+      "The \"Do you know?\" note paraphrases Surah An-Nisa 4:36; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 82,
+     "issues": [
+      "The book says \"رسول اللہ ﷺ فرمایا کرتے تھے\" without \"نے\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 84,
+     "issues": [
+      "The book gives seven boxes in each column, but the 14 words split six masculine and eight feminine (دُم \"tail\" is feminine in Urdu)."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 86,
+     "issues": [
+      "The pictures in column A are portraits of real people and are described in words here, not reproduced. Column B has eight statements for four pictures, so each picture takes two; \"کام، کام اور بس کام\" is Quaid-e-Azam's motto \"Work, work and work\"."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 88,
+     "issues": [
+      "This is a retelling of the Greek legend of King Midas (the book does not name him)."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 90,
+     "issues": [
+      "The garden \"pond\" (تالاب) of the stranger's instruction becomes a \"stream\" (نہر) when the king jumps in; reproduced as printed. \"اور بولی!\" has an exclamation mark after \"بولی\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 92,
+     "issues": [
+      "The flowers hold 18 words (the 18th, \"تم\", is on a lower flower) for a table of six rows; the nouns number seven, the verbs five and the pronouns six."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 94,
+     "issues": [
+      "The story prints \"آخرِ وہ\" (with a zer) for \"آخر وہ\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 100,
+     "issues": [
+      "The grid is shown with columns in right-to-left order, as printed; a few faint letters are read as best as the scan allows (e.g. \"ذ\", \"ڈ\", \"ڑ\" in the last rows). The words are placed horizontally and vertically in the grid; the answer list uses the teacher note's spellings."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 101,
+     "issues": [
+      "The book gives 15 words but 14 answer boxes."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 102,
+     "issues": [
+      "Copyright: the verses are by Farhat Shahjahanpuri, whose dates could not be confirmed; they are treated as in copyright and summarised here, not transcribed. Read the printed verses in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 104,
+     "issues": [
+      "The book prints the Prophet's name with the Arabic honorific and \"خاتم النبیین\"; shown as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 105,
+     "issues": [
+      "The narration \"تو کہنے لگیں!\" has an exclamation mark as printed."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 106,
+     "issues": [
+      "Blank (d) says \"سفر پر جاتے\" (when he went on a journey), while the lesson (page 105) says \"سفر سے واپس آتے\" (when he returned from a journey); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 107,
+     "issues": [
+      "The grid is shown with columns in right-to-left order, as printed (first cell = rightmost hexagon)."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 108,
+     "issues": [
+      "The questions for this paragraph are printed on the next page (page 109)."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 111,
+     "issues": [
+      "Copyright: the poem is by Inayat Ali Khan (named on page 112), whose dates could not be confirmed; it is treated as in copyright and summarised here, not transcribed. Read the printed poem in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 113,
+     "issues": [
+      "Column B line 1 is printed \"مخلوق کھا رہی ہیں\" (with \"ہیں\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 114,
+     "issues": [
+      "In row (c) both \"غم\" and \"دُکھ\" are opposites of \"خوشی\"; the book asks for one tick."
+     ]
+    },
+    {
+     "pdfPage": 126,
+     "printedPage": 115,
+     "issues": [
+      "Copyright: the verses are by Shafi-ud-Din Nayyar (died 1978), still in copyright in Pakistan (life + 50 years), so they are summarised here, not transcribed. Read the printed verses in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 117,
+     "issues": [
+      "Both fables are retellings of stories from Sheikh Saadi's Bostan/Gulistan (13th century, public domain); the Urdu retelling is the textbook's own and is transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 118,
+     "issues": [
+      "A \"maund\" (من) is an old unit of weight (about 37 kg); \"دو چار من\" means a few maunds."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": 119,
+     "issues": [
+      "The answer choices in question 2 are printed as pairs in coloured frames beside the blanks (عالم/سخی، شیراز/دمشق، ہاتھ/پاؤں، علم/دولت); they are shown in brackets after each sentence."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 121,
+     "issues": [
+      "The exercise numbering goes from question 6 (page 120) to question 8 on this page; there is no question 7 in this lesson's exercise."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 122,
+     "issues": [
+      "The anecdote about Nausherwan the Just is a well-known tale (from Saadi's Gulistan); the Urdu retelling is transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 134,
+     "printedPage": 123,
+     "issues": [
+      "The fable is from Saadi's Gulistan (public domain); the Urdu retelling is transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 125,
+     "issues": [
+      "The book says Pakistan was first named \"Islamic Republic of Pakistan\" in the 1973 constitution; that name was in fact first adopted in the 1956 constitution. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 140,
+     "printedPage": 129,
+     "issues": [
+      "The words are printed without dots (\"ٮعارف، ٮوارں، مٮداں، حاموسی، احلاف\"); the second word, read with dots, gives \"تواریں\", an unusual spelling — \"تلواریں\" (swords) is likely meant. The answers are the agent's.",
+      "The idiom pictures are described in brackets, not reproduced; the idioms are completed by the agent from the pictures (fire, nose, five fingers, stars, eyes)."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 130,
+     "issues": [
+      "Question 9 is printed with the number \"۸\" (a second \"8\") on this page; it is numbered 9 here."
+     ]
+    },
+    {
+     "pdfPage": 142,
+     "printedPage": 131,
+     "issues": [
+      "The portraits are described, not reproduced. The empty frame has no printed picture; the teacher note mentions a national bird, so the chukar is suggested."
+     ]
+    },
+    {
+     "pdfPage": 144,
+     "printedPage": 133,
+     "issues": [
+      "The contents page lists Lesson 20 as \"تصویری کہانی\" (A picture story); the lesson page itself is titled \"دیانت داری\" (Honesty). The eight pictures are coded as simplified panels. The story is the well-known fable of the honest woodcutter."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 134,
+     "issues": [
+      "The \"Think and tell\" question \"آپ نے کبھی کوئی مزاحیہ نظم سنی ہے۔\" ends with a full stop instead of a question mark, as printed."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": 135,
+     "issues": [
+      "Copyright: the poem is by Ahmad Hatib Siddiqui (named on page 136), a contemporary poet, so it is summarised stanza by stanza here, not transcribed. Read the printed poem in the textbook. The pun on \"باجی/باجا\" (elder sister / a musical band) cannot be kept in translation."
+     ]
+    },
+    {
+     "pdfPage": 149,
+     "printedPage": 138,
+     "issues": [
+      "The example column pairs \"آسمان\" (sky) with \"اسکول، باغ، بستہ\" (school, garden, school bag), which do not clearly link to \"sky\"; the teacher note explains linked words as related words. Reproduced as printed; the sample answers give clearly related words."
+     ]
+    },
+    {
+     "pdfPage": 150,
+     "printedPage": 139,
+     "issues": [
+      "In (d) \"کل\" can mean \"yesterday\" or \"tomorrow\"; with \"کھیل رہے\" the past form \"تھے\" is taken (were playing yesterday). The future form would need \"ہوں گے\", which is not among the choices.",
+      "The jokes are short anonymous jokes from the textbook and are transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 153,
+     "printedPage": 142,
+     "issues": [
+      "The question letters are printed (الف، ب، ج، د، ہ، ل); the last is \"ل\" in the book, shown here as \"و\". As with the other study lessons, the questions are answered orally (\"سوالات کے جوابات زبانی دیں\" is supplied)."
+     ]
+    },
+    {
+     "pdfPage": 156,
+     "printedPage": 145,
+     "issues": [
+      "The Diwan-e-Aam of Lahore Fort is generally dated to Shah Jahan's reign (1628); the book calls it the fort's oldest building. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 157,
+     "printedPage": 146,
+     "issues": [
+      "The \"We learnt\" box says \"سوا دو سو برس\" for Kot Diji, matching the lesson; Mahabat Khan Mosque (1670) is called \"ساڑھے تین سو سال پرانی\" (350 years old) as printed."
+     ]
+    },
+    {
+     "pdfPage": 158,
+     "printedPage": 147,
+     "issues": [
+      "Word \"محراب\" is glossed as the place where the imam stands in a mosque, as printed; in the lesson it also means an arch."
+     ]
+    },
+    {
+     "pdfPage": 159,
+     "printedPage": 148,
+     "issues": [
+      "The grid is shown with columns in right-to-left order, as printed. All six answers run downwards in one column each. Minar-e-Pakistan is coded as a simplified drawing."
+     ]
+    },
+    {
+     "pdfPage": 161,
+     "printedPage": 150,
+     "issues": [
+      "This page numbers its tasks 7, 8 and 9 again (\"۷۔ دی ہوئی عبارت ...\", \"۸۔ اپنے علاقے ...\", \"۹۔ مختلف تاریخی ...\") after question 7 on page 149; they are numbered 8, 9 and 10 here to keep the exercise in order."
+     ]
+    },
+    {
+     "pdfPage": 162,
+     "printedPage": 151,
+     "issues": [
+      "The fable of the hen that laid golden eggs is Aesop's (public domain); the passage on natural disasters is transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 163,
+     "printedPage": 152,
+     "issues": [
+      "The portrait of Quaid-e-Azam is described, not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 164,
+     "printedPage": null,
+     "issues": [
+      "This page has no page number (inside back cover). The verse prints a small honorific mark after \"اللہ\"; kept."
+     ]
+    },
+    {
+     "pdfPage": 165,
+     "printedPage": null,
+     "issues": [
+      "Item 7 prints \"effective skills\" for \"affective skills\". Kept as printed. This page is unnumbered.",
+      "This form is printed in English only; because this is the Urdu book, the Urdu translation is shown first and the printed English second."
+     ]
+    },
+    {
+     "pdfPage": 166,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the English/Pashto columns give a meaning translation. Line breaks are shown with \" / \"."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 6.4,
+   "ledger": "docs/source-verification/class-4/urdu/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/urdu/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "General Science",
+   "code": "sci",
+   "title": "General Science 4 (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\General Science Book for 4 class KPTBB.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\sci",
+   "appFile": "js/general_science_4_data.js",
+   "totalSourcePages": 149,
+   "status": "complete",
+   "reviewedPages": 149,
+   "implementedPages": 138,
+   "printedPagesCovered": "1-131",
+   "blankOrAdPages": [
+    2,
+    51,
+    101,
+    149
+   ],
+   "duplicatePages": [
+    28,
+    91,
+    95,
+    125,
+    126,
+    127,
+    128
+   ],
+   "lastSavedPdfPage": 149,
+   "nextPdfPage": null,
+   "currentUnit": 10,
+   "currentSection": "glossary",
+   "unresolved": [
+    {
+     "pdfPage": 3,
+     "printedPage": null,
+     "issues": [
+      "\"Khyber Pakhtunkwha\" is misprinted in the Printing Supervision line; corrected to \"Pakhtunkhwa\"."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": 1,
+     "issues": [
+      "Two outcomes are printed \"in term of\" and \"the stem transport\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 2,
+     "issues": [
+      "The running header reads \"Characteristics and Life Processes of Organism\" (singular) as printed. The six pictures are coded as simplified panels."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": 3,
+     "issues": [
+      "The question \"If both plants and animals are living, but what is the difference between them?\" is printed with both \"If\" and \"but\"; kept as printed. The photographs of the goat and the mango tree are described, not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 4,
+     "issues": [
+      "The animal photographs are shown as labelled tables; the photographs themselves are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 5,
+     "issues": [
+      "The plant photographs are shown as a labelled table; the photographs are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 6,
+     "issues": [
+      "\"Its wood\" refers to conifers (plural) as printed. Sago palm is a cycad, not a conifer, though the book groups it with conifers; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 7,
+     "issues": [
+      "\"among one of the largest man-made forest\" is printed with singular \"forest\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 9,
+     "issues": [
+      "The book's \"Picture\" column is shown as a separate coded drawing beside a Name | Functions table. The \"Do you know?\" box contains questions; answers are agent-written."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 10,
+     "issues": [
+      "\"Bone of Hand\" in the book points to the forearm/wrist region; labels kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 12,
+     "issues": [
+      "\"digestive track\" (for tract) and \"Our hearts pumps\" are printed as shown; kept with this note."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 13,
+     "issues": [
+      "\"14 muscle are needed\" is printed with singular \"muscle\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 15,
+     "issues": [
+      "Printed \"it's leaves\" (for its), \"What do you notice?\" with a capital W, and \"apricot peach\" without a comma are kept as printed. The fruit photographs are shown as a table."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 16,
+     "issues": [
+      "The weblinks are reproduced as printed; they were not checked and may no longer work."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 17,
+     "issues": [
+      "Short-answer stems i and ii end with \"?\" although they are instructions; kept as printed. No answer key is printed in this book; all answers are agent-written."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 19,
+     "issues": [
+      "Step vi \"Push the middle part of the two straws\" is printed as shown; in practice the balloon between the straws is pressed. \"Red color\" and \"red colour\" both appear as printed."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 20,
+     "issues": [
+      "The third question bubble has no question mark, and the second outcome reads \"abiotic factor\" (singular); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 21,
+     "issues": [
+      "\"Every living things lives\" is printed with plural \"things\"; kept as printed. Antarctica is in fact the largest desert overall; the Sahara is the largest hot desert — the printed statement is reproduced unchanged."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 22,
+     "issues": [
+      "\"Antilope\" (for antelope) and lower-case \"snow\" in the table heading are printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 22,
+     "issues": [
+      "Scan 27 is a second scan of printed page 22 (scan 26: \"Various ecosystems\" photographs and Activity 2.2). Content is identical; it is recorded once on scan 26."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 23,
+     "issues": [
+      "\"breakdown\" (for break down) is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 25,
+     "issues": [
+      "The squirrel and fox are placed by the book in the omnivore overlap and the spider among carnivores; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 26,
+     "issues": [
+      "Printed grammar kept as shown: \"the herbivores animal\", \"a carnivores\", \"another living things\". The book calls a goat a \"predator\" of grass; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 27,
+     "issues": [
+      "\"Now a days\" (for nowadays) is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 28,
+     "issues": [
+      "\"The animal eats by killing other organisms is called predator\" is printed without \"which/that\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 30,
+     "issues": [
+      "Printed grammar kept as shown: \"The ostrich are\", \"70 kilometer\", \"male warm them\", \"Why female warms eggs at day time?\"."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 31,
+     "issues": [
+      "The figure's labels sit at the right edge in the book; positions are approximate in the coded drawing."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 32,
+     "issues": [
+      "Printed as shown: \"Why we do exercise?\", \"flue\" (for flu) and a missing closing bracket after \"flue\", and \"suitable for drinking water\"."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 33,
+     "issues": [
+      "The first letter of \"Health\" is damaged in the scan (\"·ealth\"); restored as \"Health\". \"any one of your class fellow\" is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 34,
+     "issues": [
+      "Printed as shown: \"an other persons\", \"Tuberculosis(TB)\" without a space, \"the sugar level becomes high in the blood is increased\" (two verbs), and \"cencer\" (for cancer). A small paper mark covers the letters \"in\" of \"intestine\" and \"c\" of \"affected\"; the words are restored from context."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 35,
+     "issues": [
+      "Each step in the book has a photograph of hands; the photographs are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 36,
+     "issues": [
+      "Printed as shown: \"dispose it off\" and \"upto\"."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 37,
+     "issues": [
+      "The section heading is printed \"Balance Diet\" (for balanced diet); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 39,
+     "issues": [
+      "The book numbers two different activities as \"Activity 3.3\" (lunch-box menu and the two glasses of water); both are kept with the printed number. \"chorine\" is a misprint for chlorine; kept as printed in English, translated as chlorine."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 40,
+     "issues": [
+      "The sentence \"There are many ways to make water clean and suitable for drinking. We\" breaks off after \"We\" in the book; nothing is added. Printed \"make them polluted\" and the caption \"Simple Filteration Plant\" (for filtration) are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 41,
+     "issues": [
+      "The third weblink contains a stray \"?\" (\"how-things-?work\") as printed; kept unchanged. \"administrating\" (for administering) and \"four groups i.e., milk, grain, meat, fruit and vegetable\" (five names) are printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 42,
+     "issues": [
+      "Printed \"it's cause\" (for its), \"what you will do\" and \"washing hand sitting in the sun\" (missing comma) are kept as printed. Question 3 continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 43,
+     "issues": [
+      "Printed \"Can filtration also stops the germs?\" and numbering \"I.\" for the first sub-question are kept as printed (rendered as i)."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 46,
+     "issues": [
+      "Printed \"Is the shape of water in these vessels is same\" and \"These includes\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 47,
+     "issues": [
+      "The book numbers two activities on this page as \"Activity 4.4\" (balloons on a rod, and volume) and the next page has Activity 4.6, so Activity 4.5 is missing; the printed numbers are kept."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 50,
+     "issues": [
+      "\"ornaments knife\" (missing comma) is printed as shown. The book says \"All the metals are shiny\" and \"metals are usually solid\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 51,
+     "issues": [
+      "The book's colour list (\"Tin and Nickel are light pink\", \"Zinc, Chromium and Aluminum are light blue\") is reproduced as printed; these colour descriptions are unusual. \"Aluminum\" spelling kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 52,
+     "issues": [
+      "Printed \"and attracted by a magnet\" (missing \"are\") kept as printed. The book lists zinc among heavy metals; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 53,
+     "issues": [
+      "Printed \"these particle varies\" and \"The forces of attraction among them is weaker\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 54,
+     "issues": [
+      "Printed \"Cricketbat\", \"the steel spoon become hot\" and \"heats the water quickly than wood\" kept as printed. In question ii none of the options gives a solid, a liquid and water vapour exactly; option (a) is the closest (cloud for the gas state) — agent judgement."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 55,
+     "issues": [
+      "Question 2(iii) is printed \"lowest destiny\" — a misprint for \"lowest density\"; kept as printed and answered as density."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 56,
+     "issues": [
+      "Question bubbles are printed \"Why should not we use...\" and \"Why petrol is needed...\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 59,
+     "issues": [
+      "Printed \"have not to face problems\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 60,
+     "issues": [
+      "Printed \"Is the shadow on the wall is like your hand?\" and \"infront\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 61,
+     "issues": [
+      "\"it find the way\" is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 62,
+     "issues": [
+      "The scale numbers on the book's thermometers are partly unclear; the coded drawing shows representative values. The book's drawing lines up 10 °C with about 40 °F and 0 °C with about 20 °F, which does not match the true conversion (0 °C = 32 °F); the printed text is unaffected."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 65,
+     "issues": [
+      "Printed \"5-meter distance\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 66,
+     "issues": [
+      "Printed \"Its electric path has broken\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 67,
+     "issues": [
+      "The first question bubble is printed \"sometime found in a state of rest and motion\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 73,
+     "issues": [
+      "The name written in the drawing (\"Hurram\") is reproduced as it appears."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 75,
+     "issues": [
+      "\"A pulley is a simple machine, consists of\" is printed without \"that\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 78,
+     "issues": [
+      "Printed \"How force and motion are related?\" and \"On which objects it acts?\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 80,
+     "issues": [
+      "Printed \"why do we need to sharp it?\" kept as printed. The right edge of the project text is cut off in the scan (\"a sma…\", \"with thi…\"); restored as \"a small\" and \"with this\"."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 81,
+     "issues": [
+      "The chapter title is printed \"Earth and it's Resources\" (for its) on this page and in the running head; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 82,
+     "issues": [
+      "Printed \"We hardly ever thought\", \"our daily used required items\" and \"You will see a small as green\" (a word seems to be missing after \"small\") are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 83,
+     "issues": [
+      "Scan 90 is a second scan of printed page 83 (scan 89: Distribution of Water on Earth's Surface, Earth's Resources, Water). Content is identical; it is recorded once on scan 89."
+     ]
+    },
+    {
+     "pdfPage": 92,
+     "printedPage": 84,
+     "issues": [
+      "The book says soil is used to make glass; sand (a part of soil) is meant. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 85,
+     "issues": [
+      "Printed \"Crude oil found underground, is a major source\" (extra comma) and \"coaltar\" kept as printed. The book places coal under \"Natural Gas\"; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 86,
+     "issues": [
+      "Scan 94 is a second scan of printed page 86 (scan 93: Activity 7.3, Fossils, Activity 7.4). Content is identical; it is recorded once on scan 93."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 87,
+     "issues": [
+      "\"lizards-like\" is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 88,
+     "issues": [
+      "\"can not\" is printed as two words; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 91,
+     "issues": [
+      "The exercise continues on printed page 92, which is scan 101; scan 100 between them is a website advertisement."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 93,
+     "issues": [
+      "The question bubbles are printed \"How do weathers change?\" and \"Why climate of the Earth is different…\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 94,
+     "issues": [
+      "The book's example of climate (\"This year, it is expected that Monsoon rains will begin early\") is really a seasonal forecast; reproduced as printed. \"sometime\" (for sometimes) kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 95,
+     "issues": [
+      "\"Partial cloudy\" is printed for \"partly cloudy\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 96,
+     "issues": [
+      "The Polar Zone paragraph continues onto printed page 97; it is joined here for reading. The record temperatures (Turbat 53.7 °C, 2017) and the Libya 1922 figure are reproduced as printed; the Libya record has since been officially withdrawn by the WMO."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 98,
+     "issues": [
+      "Question 1 is printed without its number \"1-\"; numbered here for consistency. \"In how many zones the Earth is divided\" and \"sometime\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 99,
+     "issues": [
+      "Printed \"How many weathers are there on the Moon?\" and \"In which zone, our country is located\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 110,
+     "printedPage": 100,
+     "issues": [
+      "The first question bubble is printed \"How do change of seasons take place?\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 102,
+     "issues": [
+      "The figures are reproduced as printed (they are rounded; e.g. Venus's mean distance is about 108 million km and Neptune's diameter about 49,500 km)."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 103,
+     "issues": [
+      "Printed \"The brightest objects appearing in the sky after the Sun is the Moon\" and \"Sometime\" kept as printed. The Moon's diameter is printed as \"about 3,500 kilometres\" (the accepted value is about 3,474 km); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 114,
+     "printedPage": 104,
+     "issues": [
+      "\"Eid-ul-Fitar\" and \"How does the Moon … look like?\" are printed as shown. The phase strip's shading is drawn schematically. The book says Jupiter and Saturn have the most moons; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 105,
+     "issues": [
+      "Printed \"globe represent\", \"the size of shadows gradually increase\" and \"Just before the Sun set\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 106,
+     "issues": [
+      "The page shows the Sun's rays falling \"vertically at the northern hemisphere\" without naming the time of year; from the diagram this describes June. Reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 107,
+     "issues": [
+      "Printed \"does this model shows lunar eclipse?\" and \"sometime\" kept as printed. The section heading \"Eclipses\" groups the book's two sub-headings Lunar Eclipse and Solar Eclipse."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 108,
+     "issues": [
+      "Key points are printed without bullet marks on this page; shown as a list. \"The Moon completes its rotation around the Earth\" (for revolution) is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 109,
+     "issues": [
+      "Question ii is printed \"The Earth completes its rotation around the Sun\" (for revolution); kept as printed. The short-answer section continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 110,
+     "issues": [
+      "Printed \"how would have it affected the seasons?\" kept as printed. The sun-rotation arrow in part ii is the agent's reading of the figure."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 113,
+     "issues": [
+      "\"boxshelf\" is printed as one word; kept as printed. The section numbering 10.1 is the agent's (the book has no section numbers)."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 114,
+     "issues": [
+      "\"our dears\" (for our dear ones) is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 111,
+     "issues": [
+      "Scan 124 is a second, out-of-order scan of printed page 111 (Chapter 9 exercise: seasons figure, Investigate, Project), placed inside Chapter 10. Content is identical to scan 120, where it is recorded."
+     ]
+    },
+    {
+     "pdfPage": 126,
+     "printedPage": 112,
+     "issues": [
+      "Scan 125 is a second scan of printed page 112 (Chapter 10 opening); the PDF repeats this block. Content is identical to scan 121, where it is recorded."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 113,
+     "issues": [
+      "Scan 126 is a second scan of printed page 113 (Safety Measures); the PDF repeats this block. Content is identical to scan 122, where it is recorded."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 114,
+     "issues": [
+      "Scan 127 is a second scan of printed page 114 (Computer and Mobile, Basic Craft Making); the PDF repeats this block. Content is identical to scan 123, where it is recorded."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 115,
+     "issues": [
+      "\"Fold the Paper\" is printed with a capital P; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 131,
+     "printedPage": 117,
+     "issues": [
+      "Printed \"its corners be on vertical and horizontal lines\" kept as printed. The envelope activity continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 118,
+     "issues": [
+      "\"upto\" is printed as one word; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 119,
+     "issues": [
+      "Printed \"Face mask made of clothes are used\" and \"chappati\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 135,
+     "printedPage": 121,
+     "issues": [
+      "Printed \"basic informations\" and \"The scissors is used\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 122,
+     "issues": [
+      "Printed \"Medical tap\" (picture caption, for tape) and \"inflamation\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 137,
+     "printedPage": 123,
+     "issues": [
+      "Step 5 (\"Add 1 in this reading\") does not state the unit; for a Fahrenheit thermometer this is about 1 °F (roughly 0.5 °C on a centigrade scale). Reproduced as printed with this note."
+     ]
+    },
+    {
+     "pdfPage": 139,
+     "printedPage": 125,
+     "issues": [
+      "Printed as shown: \"a alarm clock\", \"make shape\", \"The number of corners of a prism are\", MCQ i stem not in blue, and the weblink \"first-aid-kids-are-created-equal\" (likely \"kits\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 140,
+     "printedPage": 126,
+     "issues": [
+      "Printed \"Write short answer\", \"Constructive Response Questions\", \"Why a line is drawn…\" and \"Why any soil cannot be used…\" kept as printed. Question ii mixes a flat shape (circle) with solids; answered as printed. The printed page number is partly hidden by the scan's lower edge (read as 126 from the sequence)."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 127,
+     "issues": [
+      "Printed \"Why mobile phone technology is progressing rapidly?\", \"How will be the mobile phone of the future?\" and \"it can be hanged\" kept as printed. Question iii's shapes (sphere, cube, pyramid, cone, prism) are named by the agent from the drawings; the page gives only pictures."
+     ]
+    },
+    {
+     "pdfPage": 142,
+     "printedPage": 128,
+     "issues": [
+      "Glossary pages are kept as lesson pages in the last unit so they render; they also feed the vocabulary tab. \"Organism which decompose\" is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 143,
+     "printedPage": 129,
+     "issues": [
+      "\"Orbital motion: Earth's annual rotation around the Sun\" (for revolution) and \"Organism which prepare their food\" are printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 131,
+     "issues": [
+      "\"forty five\" and \"for distinguished author and educationist\" are printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": null,
+     "issues": [
+      "Item 7 prints \"effective skills\" for \"affective skills\". Kept as printed. This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 147,
+     "printedPage": null,
+     "issues": [
+      "The page prints only the Urdu translation of Surah Al-Hujurat 49:10; the Urdu slot reproduces it, and the English and Pashto slots give meaning translations. This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 148,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the English/Pashto columns give a meaning translation. Line breaks are shown with \" / \"."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 105.9,
+   "ledger": "docs/source-verification/class-4/sci/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/sci/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Social Studies",
+   "code": "sst",
+   "title": "Social Studies 4, English medium (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\Social Study Book 4th EM KPK.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\sst",
+   "appFile": "js/social_studies_4_data.js",
+   "totalSourcePages": 131,
+   "status": "complete",
+   "reviewedPages": 131,
+   "implementedPages": 129,
+   "printedPagesCovered": "1-125",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [
+    114
+   ],
+   "lastSavedPdfPage": 131,
+   "nextPdfPage": null,
+   "currentUnit": 6,
+   "currentSection": "glossary",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "This copy is a phone-camera scan (CamScanner) of a used book: pages show shadows, bleed-through and a pupil's handwriting. Handwritten marks are not treated as printed text or printed answers."
+     ]
+    },
+    {
+     "pdfPage": 3,
+     "printedPage": null,
+     "issues": [
+      "The saying is printed in Urdu only; the English and Pashto slots give meaning translations."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The credits page (approval, author, reviewers, editor, printing supervision) is not scanned; only its mirror image shows through this page and cannot be read reliably, so it is not transcribed. Readable fragments suggest approval by DCTE Khyber Pakhtunkhwa, Abbottabad (dated 16-07-2021) and author Asma Hafeez; these are not confirmed. A pupil's handwritten name is not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": 1,
+     "issues": [
+      "The text uses \"he/his\" for any citizen as printed. Handwritten answers in the Think and Answer box are a pupil's, not the book's."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 2,
+     "issues": [
+      "A teacher's handwritten marks (\"R.T 3/5\" and a tick) at the top of the page are not part of the book. Printed \"the matters of world\" and \"became a single community\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": 3,
+     "issues": [
+      "The second green heading on this page repeats \"Responsibilities of Digital/Cyber Citizen\" although the text below it is about Human Rights; it is shown here as \"Human Rights\" with this note. A pupil's handwritten \"برابر\" (equal) above the printed word is not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 4,
+     "issues": [
+      "A pupil's handwritten Urdu glosses (بنیادی حقوق، قانون، مخلص، ایمانداری) and numbers in the margin are not part of the book. Printed \"Using of resources\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 5,
+     "issues": [
+      "No answer key is printed in this book; all answers are agent-written from the chapter text."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 6,
+     "issues": [
+      "The pupil's handwritten answers (Dr. Ruth Pfau; Malala Yousafzai) are not part of the book; Malala Yousafzai's name is misspelt in the handwriting. The weblink is reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 7,
+     "issues": [
+      "The right edge of the paragraph is cut off in the scan (\"Pakista…\", \"countr…\", \"commo…\"); restored as \"Pakistan\", \"country\", \"common\". The printed text repeats nearly the same sentence twice; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 8,
+     "issues": [
+      "Printed \"Everybody takes care of their happiness and help each other\", \"about other\" and \"Peace and confidence builds\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 9,
+     "issues": [
+      "Printed \"How can an effort is made…\" and \"Following of traffic rules\" kept as printed. The right edge of the top lines is slightly cut in the scan (\"our\", \"for\", \"peace\", \"resolving\", \"dialogue\") and restored from context."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 10,
+     "issues": [
+      "The For Teachers note is printed with sentences lacking a subject (\"Uses zebra-crossing…\", \"Keeps his home…\"); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 11,
+     "issues": [
+      "Printed \"how tolerance can be flourish in a society?\" kept as printed. The right edge of question 2(i) is cut in the scan (\"society\") and restored. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 12,
+     "issues": [
+      "Printed \"Which of the fundamental right…\" and \"which principles does a good student adopts\" kept as printed. The internet link is reproduced exactly as printed (it is a text-fragment URL)."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 13,
+     "issues": [
+      "The right edge of the last Column B entry is cut in the scan (\"socie…\"); restored as \"society\"."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 14,
+     "issues": [
+      "Printed \"Human being cannot live alone. He lives…\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 15,
+     "issues": [
+      "The right edge of several lines is cut off in the scan (\"cultur…\", \"Baloc…\", \"kn…\", \"Pakist…\", \"Pash…\", \"Broshisk…\", \"more\", \"th…\", \"Sindh…\", \"a…\", \"ar…\", \"Chitra…\"); restored from context as \"culture of\", \"Balochi\", \"know\", \"Pakistan\", \"Pashto\", \"Broshiski\", \"the\", \"Sindhi\", \"as\", \"are\", \"Chitral\". The language name \"Broshiski\" (Burushaski) is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 16,
+     "issues": [
+      "Printed \"Biryani and fish is\", \"Milk, lassi, tea and qahwa is used\" and \"the poors\" are kept as printed. A pupil's pen underlining and brackets are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 17,
+     "issues": [
+      "The scan cuts the right edge of several lines (\"Muhammad\", \"the\", \"with\", \"available.\", \"Among\", \"are\", \"Minorities\", \"its\", \"their\", \"with\", \"to\", \"in\", \"makes\", \"of\", \"dresses,\", \"various\"); restored from context. Printed \"Budhists\", \"sikhs\", \"Every group make\" and \"festival of colours-'Holi'\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 18,
+     "issues": [
+      "Printed \"Pakistan is such Islamic state\", \"un derstood\" (split word) and \"Mehar Garh\" kept as printed (shown as \"understood\"). The list of reasons continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 19,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 20,
+     "issues": [
+      "The pupil's handwritten answers in the table are not part of the book and contain spelling slips (e.g. \"Attern Dance\" for Attan, \"Paaeg\", \"Motton Rogan\", \"Chaps hoaro\" for chapshoro, \"rabe\"); the printed table is shown empty."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 21,
+     "issues": [
+      "The right edge of the page is cut off in the scan; restored words: \"Have\", \"another\", \"books\", \"which\", \"related\", \"different\", \"them in\", \"the\", \"them\", \"Pakistani\", \"for\", \"of\", \"the\". Printed \"makes you take pride on it\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 22,
+     "issues": [
+      "A pupil's handwritten Urdu glosses (ذرائع ابلاغ، تبادلہ کرنا، معلومات، ضرورت، ذریعہ، پیغامات) are not part of the book."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 23,
+     "issues": [
+      "Printed \"prime mean of communication\" (for means), \"sculptor\" (for sculpture) and \"Different words … give birth\" are kept as printed. The book's statement that English, Chinese and Arabic are the most spoken languages is reproduced as printed. A pupil's pen underlining and Urdu glosses are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 24,
+     "issues": [
+      "Printed \"mean of communication\" (for means) is used several times and kept as printed. A pupil's pen marks and Urdu glosses are not reproduced; a sentence crossed out in pen by the pupil is printed text and is transcribed."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 25,
+     "issues": [
+      "The inventor's name is printed \"Baird John Logie\" (he is John Logie Baird); kept as printed. Printed \"listen the news\", \"Every kind of programmes are shown\" and \"mean of messaging\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 26,
+     "issues": [
+      "The scan of this page is rotated 90°. Printed \"what kind of help can be taken from computer with the help of computer\" is kept as printed. Charles Babbage designed the first mechanical computer (the Analytical Engine) in the 19th century; the book's wording is reproduced as printed. The printed page number is not visible in the rotated scan (26 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 27,
+     "issues": [
+      "Printed \"Why mobile phone is called smart phone?\" and \"How computer is the best means…\" are kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 28,
+     "issues": [
+      "Printed \"mean of communication\", \"awaring them\" and \"every student deliver\" are kept as printed. The For Teachers Activity-1 topic (\"Save the Natural Resources\") differs from the pupils' Activity-1 (\"Save Water and Plant Trees\"); both kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 29,
+     "issues": [
+      "In question 1(v) the options mix devices; LED is the only form of television listed (page 25 names LCD and LED). \"sculptor\" (for sculpture) and \"slow mean\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 30,
+     "issues": [
+      "Printed \"thousands year ago\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 31,
+     "issues": [
+      "Printed \"Ensure equities and justice\" and \"sovereignty rest with\" are kept as printed. The scan cuts the right edge of the quotation box (\"state\", \"people\", \"state\", \"it\", \"specific\", \"rests\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 32,
+     "issues": [
+      "Printed \"every law be constituted\" and \"are obligatory to be Muslims\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 33,
+     "issues": [
+      "The right edge of the opening sentence is cut in the scan (\"by th…\"); restored as \"by the\"."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 34,
+     "issues": [
+      "The \"Work for me to do\" banner on this page uses the group-work icon; kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 35,
+     "issues": [
+      "Printed \"listen your teachers\" kept as printed. The right edge of question 3 is cut in the scan (\"according to\"); restored."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 36,
+     "issues": [
+      "Printed \"Why government is necessary…\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 37,
+     "issues": [
+      "The book places the President under the legislature (with the National Assembly and Senate) and the Governor under the provincial legislature in its chart; reproduced as printed. The book says the legislature has \"two parts, Senate and National Assembly\" (Parliament also includes the President); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 38,
+     "issues": [
+      "The membership figures (Senate 104, National Assembly 342) are reproduced as printed for the book's edition; these numbers have since changed after constitutional amendments. Printed \"Democratic system of government are of two types\", \"Prime minister and its cabinet\" and \"presides the meeting\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 39,
+     "issues": [
+      "The scan cuts the right edge (\"Chief Justice\", \"the\", \"their\", \"for\", \"status\", \"violation\", \"for\", \"and\", \"the\"); restored from context. The second \"Let's do something new!\" box gives information but no task; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 40,
+     "issues": [
+      "Printed \"listen such talk shows\", \"realizing as their responsibilities\" and \"Individuals whose opinions … make a political party\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 41,
+     "issues": [
+      "Printed \"Why government is made?\", \"Why rules and laws are made?\" and \"General elections is a process where public elect…\" are kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 42,
+     "issues": [
+      "Printed \"mocked environment\" kept as printed. The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 43,
+     "issues": [
+      "Question 1(iii) depends on the National Assembly size stated in this edition (342); the current figure differs. The right edge of question 2's instruction is cut in the scan (\"statements\"); restored."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 44,
+     "issues": [
+      "The book uses \"He/his\" for early human beings as printed. The objects in the Think and Answer box are identified by the agent from the photographs; the book gives no labels."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 45,
+     "issues": [
+      "The book's statement that Mesopotamia was \"located in the south of Persian gulf\" is geographically inaccurate (it lies north-west of the Persian Gulf); reproduced as printed with this note. The photograph captioned \"Haikal\" shows a South-Asian temple tower rather than a Mesopotamian ziggurat; the caption is kept as printed. \"upto\" and the cut right edges (\"developed at\", \"to\", \"The\", \"those\", \"the\", \"Tell\") are kept or restored from context."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 46,
+     "issues": [
+      "Printed \"Wheat and barely\" (for barley), \"The relics of man lived thousands of years ago\", \"mean of transportation\" and \"which are called 'mummies'\" are kept as printed. Map place names are reproduced as printed; some temple positions on the book's map are approximate."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 47,
+     "issues": [
+      "The right edge of the page is cut in the scan (\"early\", \"clay\", \"them\", \"for\", \"ancient\", \"called\"); restored from context. The book gives \"Pakistan, India and north eastern Afghanistan\" as printed. The paragraph on Indus Valley cities continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 48,
+     "issues": [
+      "Printed \"They had a little weapons of war\" and \"jewelry\" are kept as printed. The book places the Aryan arrival at about 1500 BC and its timeline ends Indus Valley Civilization at 1700 BC; reproduced as printed. The book's view of the Aryans and of Dravidian worship reflects one historical account; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 49,
+     "issues": [
+      "The scan of this page is rotated 90°. The comparison table prints three filled cells (Idol worship, Farmer, Clay pots); the remaining answers are agent-written."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 50,
+     "issues": [
+      "The right edge of the For Teachers note is cut in the scan; the text is complete."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 51,
+     "issues": [
+      "Islamic honorifics are kept in Arabic script as printed (where the book uses a calligraphic ﷺ sign it is shown as ﷺ). A pupil's handwritten Urdu glosses are not reproduced. The right edge of several lines is cut in the scan (\"the\", \"mother's\", \"his\", \"to\", \"Muhammad\", \"for\", \"was\", \"years\", \"of\", \"his\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 52,
+     "issues": [
+      "The book writes \"Hazrat Abu Bakar\" and \"quarreled\" as printed; Hazrat Gabriel is spelled as printed. A pupil's pen marks and Urdu glosses are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 53,
+     "issues": [
+      "The book writes \"Hijat-ul-Wida\" (for Hajjat-ul-Wida), \"force them lay\", \"on 10th Hijri\" and \"many advices\" as printed. The right edge of the page is cut in the scan (\"enemies\", \"Sometimes\", \"despite all\", \"non-\", \"Allah\", \"Madina\", \"Islam\", \"the\", \"Nabi\", \"pay\", \"the\", \"army\", \"about\", \"Makkah\", \"Hazrat\", \"followers\", \"people of\", \"Madina\", \"companions\", \"ill\", \"though\", \"for\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 54,
+     "issues": [
+      "The book spells the cave \"Sor\" (Thawr) and \"Masjid-e-Nabwi\", \"Abu Bakar\" and \"AbuBakar\" as printed. A pupil's pen marks and glosses are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 55,
+     "issues": [
+      "Printed \"Inspite of\" and \"aged women\" are kept as printed. The book's account of Hazrat Umar's words after the Prophet's passing is reproduced as printed. The right edge of the scan is cut (\"being\", \"and\", \"health\", \"remaining\", \"land\", \"title of\", \"his\", \"way\", \"Islam\", \"there he\", \"and\", \"also\", \"his\", \"began\", \"Muhammad\", \"had\", \"Hazrat\", \"anyone\", \"as\", \"areas\", \"and\", \"and\", \"agriculture\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 56,
+     "issues": [
+      "Printed \"salves\" (for slaves), \"Inspite of\", \"Juma Prayer\", \"Umme Kalsoom\" and \"Zunnurain\" are kept as printed (translated as slaves). A pupil's pen marks are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 57,
+     "issues": [
+      "Printed \"jew wrestler\", \"Tabook\", \"Imam-e-Hassan\" and \"Umm-e-Kalsoom\" are kept as printed. The right edge of the scan is cut (\"illegal\", \"deeds\", \"the\", \"they\", \"He\", \"was\", \"those\", \"liked\", \"Muhammad\", \"He\", \"the\", \"in\", \"Muhammad\", \"his\", \"of\", \"wars\", \"knowledge\", \"his\", \"I\", \"to\", \"the\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 58,
+     "issues": [
+      "Printed \"Fajar\", \"Kharji\", \"straight forwardness\" and \"set an example\" are kept as printed. The detailed questions continue on the next page."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 59,
+     "issues": [
+      "In the book the \"Work for us to do\" activities appear before questions 3 and 4 of the exercise; here the exercise is kept together. A pupil's handwritten blanks (Makkah, Nabi, Hazrat Abu Bakar, Farooq, Quraish) are not reproduced. \"Cave of Sor\" is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 60,
+     "issues": [
+      "A pen mark at the top of the scan is a pupil's. The book calls 1857 \"the war of independence\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 61,
+     "issues": [
+      "The book says \"Quaid-e-Azam also belonged to Sindh\" (he was born in Karachi); kept as printed. \"Ghulam Hussain Hidayatuallah\" is spelt as printed. The scan cuts the right and lower-left edges (\"Balochistan\", \"in the\", \"in\", \"Indo-\", \"of\", \"British\", \"province\", \"Sheikh\", \"raised\", \"to\", \"the\", \"Ghulam\", \"active\", \"a\", \"Iqbal\", \"and\", \"of\", \"separate\", \"identity\", \"Resolution\", \"was\", \"1940\", \"The\", \"Pakistan\"); restored from context. A pupil's pen marks and Urdu glosses are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 62,
+     "issues": [
+      "Printed \"constituent assembly of Khyber Pakhtunkhwa\" (for the provincial legislative assembly), \"the people f Balochistan\", \"Aware them\" and \"Jehad\" are kept as printed. The Kashmir paragraph continues on the next page and is joined here for reading. The left edge of the scan is cut (\"Role\", \"The\", \"very\", \"Khyber\", \"for\", \"through\", \"lovers\", \"Khyber\", \"Nishtar\", \"constituent\", \"duties\", \"Aurangzeb\", \"the\", \"future\", \"when\", \"June\", \"Pakhtunkhwa\", \"referendum\", \"The\", \"dominance\", \"movement\", \"Qazi\", \"Balochistan\", \"Movement\", \"Quaid-e-Azam\", \"active\", \"Resolution\", \"the\", \"The\", \"Pak\", \"Hindu\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 63,
+     "issues": [
+      "The opening lines of this page complete the Kashmir paragraph from the previous page, where the full text is given. Printed \"has been brighten\", \"renown barrister\", \"They have also their valuable services\" and \"These are the names of Pakistan Movement who influenced\" are kept as printed. The paragraph on Quaid-e-Azam continues on the next page. The right edge is cut (\"people of\", \"so. The\", \"of the\", \"with\", \"Christian\", \"Christians\", \"Indo-\", \"the\", \"supported\", \"their\", \"of\", \"Chief\", \"Kamini\", \"sister\", \"prominent\", \"and\", \"the\", \"know\", \"of\", \"renowned\", \"was\", \"realized\", \"Muslim\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 64,
+     "issues": [
+      "This page begins mid-sentence (\"League in 1913…\"); the start of the sentence is on the previous page (\"he joined All India Muslim League\"). The Urdu couplet by Allama Iqbal (public domain) is printed in Urdu only; it is reproduced in all three slots with a meaning translation. Printed \"He rose the slogan\", \"presiding a meeting\", \"His this concept\" and \"the presidentship of Quaid-e-Azam on 22-24th March\" are kept as printed. The left edge of the scan is cut (\"League\", \"president\", \"under\", \"homeland\", \"had\", \"dream\", \"movement\", \"fulfillment\", \"and\", \"British\", \"1947\", \"Pakistan\", \"seriously\", \"11,1948\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 66,
+     "issues": [
+      "MISSING SOURCE: printed page 65 is not in the scan sequence (scan 68 is printed page 64 and this scan is printed page 66; scan 71 shows page number 68). Page 65 would hold the section on Mohtarma Fatima Jinnah, the \"I have learnt!\" box and question 1 (short answers) of this exercise; it is not transcribed and nothing is invented. From this scan on, printed page = scan number − 3."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 67,
+     "issues": [
+      "Printed \"Roy Braili\" (Rae Bareli), \"erstwhile\" and place spellings are kept as printed. The right edge of the scan is cut (\"Pakhtunkhwa\", \"the\", \"of\", \"us\", \"Many\", \"Muslims\", \"and\", \"Shaidu\", \"Jihad\", \"He\", \"some\", \"against\", \"1819\", \"in\", \"government\", \"rule\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 68,
+     "issues": [
+      "Printed \"over thrown\", \"the Muslims Khalafat\" and \"pulling out the British from Indo-Pak\" are kept as printed. The last sentence continues on the next page. The left edge of the scan is cut (\"War\", \"People\", \"present\", \"and\", \"people\", \"British\", \"After\", \"1947\", \"Chief\", \"Act\", \"The\", \"World\", \"the\", \"promised\", \"Muslims\", \"Muslims\", \"Movement\", \"During\", \"Muslims\", \"migrated\", \"part\", \"As\", \"was\", \"Khan\", \"in\", \"British\", \"great\", \"violence\", \"pulling\", \"Civil\", \"The\", \"April\", \"Lawyers\", \"was\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 69,
+     "issues": [
+      "Printed \"did military intervention\", \"has been overcomed\" and \"Kurrum\" (Kurram) are kept as printed. The right edge of the scan is cut (\"monument\", \"opened on\", \"more\", \"Ali\", \"Khyber\", \"in\", \"Union\", \"happy\", \"the\", \"of\", \"the\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 70,
+     "issues": [
+      "The table dates the Mujahideen movement to 1826 and page 67 dates Syed Ahmad Shaheed's martyrdom to 1831; both kept as printed. The page number is not visible in the scan (70 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 71,
+     "issues": [
+      "Names are reproduced as printed (e.g. \"Darwaiza\", \"Ghouse\", \"Kurrum\" elsewhere, \"Noorud-din\"). Printed \"awarness\" kept as printed. The page number is not visible in the scan (71 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 72,
+     "issues": [
+      "The verse of Khushal Khan Khattak is given in the book only as an English paraphrase; it is reproduced as printed. \"Mualana\" (Maulana) is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 73,
+     "issues": [
+      "Printed \"Ali Garh\", \"Dera Ismial Khan\" and \"Qayum\" are kept as printed. The book says Sahibzada Abdul Qayum Khan \"became Chief Minister of the province in 1937\" and died on 4 December 1937; reproduced as printed. The right edge of the scan is cut (\"He\", \"He\", \"command\"); restored from context."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 74,
+     "issues": [
+      "Names and spellings are reproduced as printed (\"Hasn-ul-Bana\", \"Akhwanul Muslimeen\", \"Ab-ul-Aala Mudodi\", \"Jamat-i-Islami\", \"Mujlis\", \"Chechenia\", \"Ahmed\" in the text and \"Ahmad\" in the caption, \"were casted\")."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 75,
+     "issues": [
+      "Printed \"insecureness\", \"he was just arrived\" and \"Karnal\" are kept as printed. The right edge of the scan is cut (\"from\", \"English\", \"post of\", \"armed\", \"Tahira\", \"the\", \"was\", \"gave\", \"the\", \"1st\"); restored from context. The page number is not visible (75 by sequence)."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 76,
+     "issues": [
+      "Printed \"personalties\" kept as printed. No answer key is printed; all answers are agent answers drawn from the unit text (pages 67–74)."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 77,
+     "issues": [
+      "Printed \"personalties\" kept as printed. No answer key is printed. The Objective exercise continues on the next page. Cross-page references use printed page numbers. The pupil's pen marks on statements iv–v are not treated as answers."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 78,
+     "issues": [
+      "Printed \"Was consisted of\", \"Roy Braili\" and \"Erstwhile\" are kept as printed. Column 'B' is in the printed (shuffled) order. No answer key is printed. The pupil's pencil scribble in a box (row \"Khan Abdul Ghaffar Khan\") is not treated as an answer."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 79,
+     "issues": [
+      "Printed \"How does our earth look like?\" kept as printed. The page number is hidden under the bottom bar (79 by sequence). The \"sea located in the south of Pakistan\" (Arabian Sea) is not answered in the book."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 80,
+     "issues": [
+      "The world map and globe photograph are redrawn schematically as SVG; the shapes are not to scale."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 81,
+     "issues": [
+      "The political map is redrawn schematically as SVG from the printed map; boundaries are simplified and not to scale. The Kashmir labels follow the printed map (\"Indian Illegally Occupied Jammu & Kashmir — disputed territory, final status to be decided in line with relevant UNSC resolutions\"; \"Frontier Undefined\"). Printed \"The information about the elements of a map are given below\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 82,
+     "issues": [
+      "The symbols in the \"Symbols used on the map\" panel are described in words in the table. Printed \"greenery or forest are\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 83,
+     "issues": [
+      "Printed \"Why the elements of map are used?\" kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 84,
+     "issues": [
+      "The sub-questions of Q3 are not numbered in the book; letters a–e are added here for reference. The pupil's handwritten answers are not treated as printed answers. The world map is the same as on page 80, redrawn schematically."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 85,
+     "issues": [
+      "The practice map is redrawn schematically as SVG; distances in the redrawing are not to the printed scale."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 86,
+     "issues": [
+      "The weblinks are reproduced as printed and were not checked. Printed \"at which direction do these places are\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 87,
+     "issues": [
+      "The background photograph of mountains is decorative and not redrawn. The \"Think and Answer!\" question is personal and has no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 92,
+     "printedPage": 88,
+     "issues": [
+      "The physical map is printed sideways and is redrawn schematically as an upright SVG; height zones and feature positions are approximate. The insets \"Sir Creek\" and \"Junagadh & Manavadar\" (as on page 81) and the Kashmir labels (\"Indian Illegally Occupied Jammu & Kashmir — disputed territory\"; \"Frontier Undefined\") are part of the printed map; the insets are not repeated here. Printed \"Hamun-e-Mashkhel\", \"Siwalak\" and \"Rass Koh\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 89,
+     "issues": [
+      "The book gives the height of the Potwar plateau as \"350 meters to 375 meters\" (other sources give roughly 350–575 m); reproduced as printed. Printed \"There are rain here\" and \"Hangol\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 90,
+     "issues": [
+      "Printed \"is mostly consisted of\", \"soil came from\" and \"met together\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 91,
+     "issues": [
+      "Printed \"woolen\" and \"very less vegetation\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 92,
+     "issues": [
+      "Printed \"uptill\", \"effects lives\" (affects) and \"aware the students\" are kept as printed. The book's 10 Billion Tree campaign dates (2018 to 2023) are reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 93,
+     "issues": [
+      "Printed \"catttle\" (cattle), \"in place of the one we need to cut\" and \"The best and in time cultivation of crops may be made possible and food security is our responsibility\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 94,
+     "issues": [
+      "The first words of the top line (\"Cows, buffalos, sheep, goats\") are partly cut in the scan; restored from context. Printed \"Dera Bughti\" and \"buffalos\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 95,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 96,
+     "issues": [
+      "The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 97,
+     "issues": [
+      "The \"Think and Answer!\" questions ask about the pupil's own area and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 98,
+     "issues": [
+      "Printed \"The atmospheric conditions … is called weather\" and \"how much hot or cold is today\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 99,
+     "issues": [
+      "Printed \"The temperature will be as much low as the region gains its height\" and \"different weathers\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 100,
+     "issues": [
+      "Printed \"Water neither get hot\", \"Abbottabd\" and \"remains according to its own region\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 101,
+     "issues": [
+      "Printed \"The cyclone formed here are called\", \"uptill\" and \"'Gono'\" (Cyclone Gonu) are kept as printed. The earthquake death toll (about 80,000) is reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 102,
+     "issues": [
+      "Printed \"riverlets\", \"Kachy Ke Alaqy\" and \"no ones property\" are kept as printed. The top-left of the page curves away in the scan; \"Before\" restored from context."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 103,
+     "issues": [
+      "Printed \"How can the change of weather is estimated?\" and \"How cyclones are formed?\" are kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 104,
+     "issues": [
+      "Printed \"35C°\" kept as printed. The answers in the hint table are the weather elements; the instruments named in the hints (rain gauge, centigrade/thermometer, wind vane and anemometer) are part of the question. The two pictures are the same as on pages 99–100, redrawn as SVG."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 105,
+     "issues": [
+      "The weather chart has six empty day columns. The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 110,
+     "printedPage": 106,
+     "issues": [
+      "The \"Think and Answer!\" questions are about the pupil's own family and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 107,
+     "issues": [
+      "The book says \"China is the world's largest country … on the basis of population\"; reproduced as printed (true as of the edition's date). Printed \"uptill\" and \"conduction of census\" are kept as printed. Population figures (1951: about 3.5 crore; 2017: about 21 crore) are reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 108,
+     "issues": [
+      "Printed \"most least populated\" kept as printed. The For Teachers note says the (000) is added to the population \"on x-axis\"; the population values are actually on the bars/y-axis — reproduced as printed. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 109,
+     "issues": [
+      "The dot map is redrawn schematically as SVG; dot positions only show the general pattern. The insets \"Sir Creek\" and \"Junagadh & Manavadar\" (as on page 81) are part of the printed map and are not repeated here."
+     ]
+    },
+    {
+     "pdfPage": 114,
+     "printedPage": 110,
+     "issues": [
+      "Scan 113 is a partial (cropped) scan of printed page 110 — the page number and the bottom line are cut off. Scan 114 is a complete scan of the same page; the content is recorded once on scan 114."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 110,
+     "issues": [
+      "Printed \"The problems which are faced … is the lack of water\" and \"The people living in a country is called\" are kept as printed. Scan 113 is a cropped duplicate of this page. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 111,
+     "issues": [
+      "Printed \"overcomed\" and \"uptill\" are kept as printed. From this scan on, printed page = scan − 4 (scan 113 is a cropped duplicate of printed page 110)."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 112,
+     "issues": [
+      "The book prints the census table as two side-by-side tables (rows 1–3 and 4–6); they are combined here. Printed \"according to those census\" and \"uptill\" are kept as printed. The weblink was not checked. Expected entries (from page 108): 1951 — 33,740 thousand; 1961 — 42,880; 1972 — 65,309; 1981 — 84,254; 1998 — 132,352; 2017 — 207,774."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 113,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. Printed \"the hottest one\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 114,
+     "issues": [
+      "Printed \"how it effects purchasing power\" (affects) kept as printed. The \"Think and Answer!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 115,
+     "issues": [
+      "Printed \"spendthriftness\" and \"we chose one thing in many\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 116,
+     "issues": [
+      "Printed \"When these fruits ripe and ready\", \"potentials\" and \"lesser supply\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 117,
+     "issues": [
+      "The photographs of imported goods are given as a labelled table. Printed \"means the goods become cheap\" and \"in a form of a report\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 118,
+     "issues": [
+      "The photographs of exported goods are given as a labelled table. The book's definition \"A regular or a permanent profession is called entrepreneurship\" is reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 119,
+     "issues": [
+      "Printed \"Bank and their Services\" and \"can keep their saved amount\" are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 120,
+     "issues": [
+      "Printed \"When a person pays money for buying something of his use, is called consumer\" kept as printed. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 126,
+     "printedPage": 121,
+     "issues": [
+      "Printed \"give questions\", \"Has Pakistan need to increase\" and \"increase it exports\" are kept as printed. The sub-questions of Q3 are not numbered in the book; letters a–e are added here. The pupil's handwritten answers are not treated as printed answers."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 122,
+     "issues": [
+      "The cheque is redrawn without the sample cheque number and code line printed in the book. The three statements of Q6 are not lettered in the book; letters a–c are added here. Printed \"whom services\" and \"lesser than\" are kept as printed. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 123,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. The pupil's pen lines in the matching question are not treated as answers. The final Objective page of the book; the glossary follows."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 124,
+     "issues": [
+      "The glossary is printed as two side-by-side word/meaning columns; it is given here as one list in the printed order (left column, then right column). \"Statistics\" appears twice in the book with different meanings; both are kept. Printed \"The land where grows nothing\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": 125,
+     "issues": [
+      "\"Participation\" is printed in both glossary pages; kept as printed. The verse box prints only the Urdu translation of Surah Al-Hujurat 49:10; the Urdu slot reproduces it and the English and Pashto slots give meaning translations. Printed \"A place of situation\" kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 131,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the other slots give a meaning translation. Line breaks are shown with \" / \". This page is unnumbered; the anthem text is the same as on the other Class 4 books."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 95.4,
+   "ledger": "docs/source-verification/class-4/sst/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/sst/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Social Studies (Urdu)",
+   "code": "sstum",
+   "title": "Social Studies 4, Urdu medium (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\Social Study book 4th KPK.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\sstum",
+   "appFile": "js/social_studies_um_4_data.js",
+   "totalSourcePages": 136,
+   "status": "complete",
+   "reviewedPages": 136,
+   "implementedPages": 132,
+   "printedPagesCovered": "1-125",
+   "blankOrAdPages": [
+    2,
+    3
+   ],
+   "duplicatePages": [
+    113,
+    114
+   ],
+   "lastSavedPdfPage": 136,
+   "nextPdfPage": null,
+   "currentUnit": 6,
+   "currentSection": "glossary",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "This is the Urdu-medium edition of the Class 4 Social Studies book (a separate book from the English-medium edition). The website watermark of the scanning site is not part of the book."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The book prints the honorific as a calligraphic sign; it is written here as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 5,
+     "printedPage": null,
+     "issues": [
+      "The handwritten owner's name on this page is not printed content and is not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 2,
+     "issues": [
+      "The sentence on digital citizens continues on the next page. Printed \"وسائل کامل بانٹ کر\" is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 3,
+     "issues": [
+      "Honorifics after Hazrat Adam and Hazrat Hawwa are kept in Arabic script in the English and Pashto slots."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 5,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 6,
+     "issues": [
+      "The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 7,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 8,
+     "issues": [
+      "The pictures are given as described table cells. Printed \"سپرنگ فیسٹول\" is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 9,
+     "issues": [
+      "The list of the ethics of civic sense continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 11,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 12,
+     "issues": [
+      "The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 13,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. The matching column (ب) is in the printed (shuffled) order."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 16,
+     "issues": [
+      "Photographs are given as captioned tables. The book says Eid-ul-Adha is celebrated \"on the second day of Hajj\"; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 17,
+     "issues": [
+      "The book prints the calligraphic honorific after the Prophet's name; it is written here as ﷺ. Photographs are given as captioned tables."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 19,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 21,
+     "issues": [
+      "The \"For Teachers\" note labels the coins-and-stamps activity as Activity 2 although it is Activity 3 in the list above; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 22,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 23,
+     "issues": [
+      "The decorative pattern of Urdu letters and the empty postcard frame are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 25,
+     "issues": [
+      "The book writes the inventor's name as \"Baird John Logie\" (John Logie Baird); reproduced as printed in the Urdu slot."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 27,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 28,
+     "issues": [
+      "The weblink is reproduced as printed (\"modren\") and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 29,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. The option letters of Q1 are faint in the scan; they are given as (ا)–(د) in the printed order."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 30,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 31,
+     "issues": [
+      "The book prints the calligraphic honorific after the Prophet's name; it is written here as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 33,
+     "issues": [
+      "The four pictures are given as described table cells."
+     ]
+    },
+    {
+     "pdfPage": 41,
+     "printedPage": 34,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 35,
+     "issues": [
+      "The two pictures are given as described table cells. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 37,
+     "issues": [
+      "The flow chart is redrawn as an SVG with the printed Urdu and English labels. The sentence on the legislature continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 38,
+     "issues": [
+      "The book gives the National Assembly as 342 members and the Senate as 104 members; reproduced as printed (both numbers have since changed)."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 39,
+     "issues": [
+      "The Abraham Lincoln quotation is printed in English in the Urdu book; it is placed in the first slot as printed."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 41,
+     "issues": [
+      "The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 42,
+     "issues": [
+      "The weblink is reproduced as printed and was not checked."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 43,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. The numbering of Q2 items i–iii is faint in the scan; restored by sequence."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 44,
+     "issues": [
+      "Printed \"پیتل\" (brass) is kept as printed; the English slot follows the Urdu."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 45,
+     "issues": [
+      "Printed \"Persion Gulf\" and \"اُر (Ashur)\" are kept as printed (Ur and Ashur are different cities). The map is redrawn schematically as SVG (same as the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 46,
+     "issues": [
+      "The map of ancient Egypt is redrawn schematically as SVG (same as the English edition). The clay-tablet photograph is not redrawn. The reference link was not checked."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 47,
+     "issues": [
+      "Printed \"دو بڑے شہروں ہڑپہ، موئن جو دڑو اور 100 سے زیادہ\" is kept as printed. The map and photograph are redrawn schematically as SVG."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 48,
+     "issues": [
+      "The timeline is redrawn as an SVG with the same dates as the English edition (Mesopotamia 3500–2000 BC; Egypt 3100–1070 BC; Indus Valley 2500–1700 BC). The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 49,
+     "issues": [
+      "The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 50,
+     "issues": [
+      "The book prints the full calligraphic salutation after each mention of the Holy Prophet; it is written here as ﷺ, and رضی اللہ عنہ/عنہم is kept in Arabic script in all slots. The sentence about his mother's death continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 51,
+     "issues": [
+      "The book prints the calligraphic salutation after each mention of the Holy Prophet; it is written here as ﷺ. Honorifics رضی اللہ عنہ/عنہا and علیہ السلام are kept in Arabic script in all slots. The \"شادی (Marriage)\" heading is faded in the scan and restored from context."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 52,
+     "issues": [
+      "The book prints the calligraphic salutation after each mention of the Holy Prophet; it is written here as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 53,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ/عنہم in all slots. The account of Hazrat Abu Bakr continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 54,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ in all slots."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 55,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ in all slots."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 56,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ/عنہا in all slots."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 57,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ/عنہا in all slots. The date of Hazrat Usman's martyrdom is printed as \"18 ذی الحجہ 35ھ\" (the \"1\" is partly faint in the scan)."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 58,
+     "issues": [
+      "The book prints calligraphic honorifics; they are written here as ﷺ, رضی اللہ عنہ/عنہا/عنہم and کرم اللہ وجہہ in all slots. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 59,
+     "issues": [
+      "In the book the \"Work for us to do\" banner and activities appear between Q2 and Q3; they are placed after the exercise here. The two fill-in items printed as \"i\" and \"i\" are numbered i and ii here (misprint). The book prints calligraphic honorifics; they are written here as ﷺ and رضی اللہ عنہ/عنہم in all slots."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 60,
+     "issues": [
+      "The book prints the calligraphic \"رحمۃ اللہ علیہ\" after the names of Quaid-e-Azam and Allama Iqbal; it is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 61,
+     "issues": [
+      "The sentence on Punjab continues on the next page. The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 62,
+     "issues": [
+      "The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 63,
+     "issues": [
+      "Names are reproduced as printed. The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 64,
+     "issues": [
+      "Portraits are given as captioned tables. The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 65,
+     "issues": [
+      "The couplet by Allama Iqbal (public domain) is reproduced in full in the Urdu slot with meaning translations. This Urdu-medium edition includes the Fatima Jinnah section that is missing from the scanned English-medium copy (its printed page 65). The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 66,
+     "issues": [
+      "No answer key is printed; all answers are agent answers."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 67,
+     "issues": [
+      "The book writes \"سید احمد رحمۃ اللہ علیہ شہید\" with the honorific after \"احمد\"; reproduced as printed. The sentence on Sikh rule continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 68,
+     "issues": [
+      "The sentence on the Civil Disobedience Movement continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 69,
+     "issues": [
+      "The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 70,
+     "issues": [
+      "The events table is printed in Urdu only; the English and Pashto slots give translations. The list of religious personalities continues on the next page. The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 71,
+     "issues": [
+      "The verse of Khushal Khan Khattak is given in the book only as an Urdu paraphrase; it is reproduced as printed. Printed \"Personalties\" in the heading is kept as printed. The account of Haji Sahib continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 72,
+     "issues": [
+      "The book says Sahibzada Abdul Qayyum Khan became Chief Minister in 1937 and died on 4 December 1937; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 73,
+     "issues": [
+      "This edition gives Mufti Mahmood's birth (January 1919) and death date (14 October 1980), which differ from the English-medium edition (birth year not given; 11 October 1980); each is reproduced as printed. The account of Jalal Baba continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 74,
+     "issues": [
+      "This edition says Hayat Sherpao became Governor (the English-medium edition says Chief Minister); each is reproduced as printed. The calligraphic \"رحمۃ اللہ علیہ\" is written out in all slots."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 75,
+     "issues": [
+      "The first letters of \"کرنل\" at the left edge of two lines are cut in the scan; restored from context. Printed \"سکول\" and \"اسکول\" are both used as printed."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 76,
+     "issues": [
+      "The Objective exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 77,
+     "issues": [
+      "No answer key is printed; all answers are agent answers. Some option letters of Q1 iii and the numbers ii and v of Q2 are faint in the scan; restored by sequence. The Objective exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 78,
+     "issues": [
+      "Column (ب) of Q3 is in the printed (shuffled) order. No answer key is printed; all answers are agent answers."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 80,
+     "issues": [
+      "The globe and world map are redrawn schematically as SVG (shared with the English edition); the printed map has Urdu labels while the redrawn map uses English labels."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 81,
+     "issues": [
+      "The political map is redrawn schematically as SVG (shared with the English edition, English labels); the printed map has Urdu labels. Kashmir labels follow the printed map."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 82,
+     "issues": [
+      "The compass rose and the sunrise drawing are redrawn as SVG (shared with the English edition, English labels); the printed drawings have Urdu labels. The sentence on the title continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 83,
+     "issues": [
+      "The scale figure is redrawn as SVG (shared with the English edition). The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 84,
+     "issues": [
+      "The sub-questions of Q3 are not numbered in the book; letters a–e are added here. The world map is redrawn schematically as SVG with English labels; the printed map has Urdu labels. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 92,
+     "printedPage": 85,
+     "issues": [
+      "The practice map is redrawn schematically as SVG (shared with the English edition, English labels); the printed map has Urdu labels and its bridges are numbered from right to left."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 86,
+     "issues": [
+      "The weblinks were not checked."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 87,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 88,
+     "issues": [
+      "The physical map is printed sideways with Urdu labels and is redrawn schematically as an upright SVG with English labels (shared with the English edition); height zones and feature positions are approximate. The insets and the Kashmir labels (\"Indian Illegally Occupied Jammu & Kashmir — disputed territory\"; \"Frontier Undefined\") are part of the printed map."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 89,
+     "issues": [
+      "The book gives the height of the Potwar plateau as 350–375 metres; reproduced as printed. Printed \"ہامون مشخیل\" is kept as printed. The paragraph on the Balochistan plateau continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 90,
+     "issues": [
+      "The desert photograph is redrawn as a simple SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 91,
+     "issues": [
+      "The port photograph is redrawn as a simple SVG (shared with the English edition). The first letters of three lines at the left edge are cut in the scan and restored from context. The sentence about orchards continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 92,
+     "issues": [
+      "The dam photograph is redrawn as a simple SVG (shared with the English edition). The paragraph on dams continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 93,
+     "issues": [
+      "The factory photograph is redrawn as a simple SVG (shared with the English edition). Printed \"اکتوبر اور دسمبر کے مہینوں میں\" is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 95,
+     "issues": [
+      "Page references in the answers use printed page numbers, which are the same in both editions. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 96,
+     "issues": [
+      "The traffic picture is redrawn as a simple SVG (shared with the English edition). The answer to Q4 (mountainous and coastal areas) is given after the second table. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 97,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are about the pupil's own area and have no fixed answer. The weather symbols are redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 98,
+     "issues": [
+      "The weather map and thermometer are redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 99,
+     "issues": [
+      "Photographs and the drawing are redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 100,
+     "issues": [
+      "Photographs are redrawn as simple SVGs (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 101,
+     "issues": [
+      "Photographs are redrawn as simple SVGs (shared with the English edition). The death toll of the 2005 earthquake is reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 102,
+     "issues": [
+      "The drawing is redrawn as a simple SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 110,
+     "printedPage": 103,
+     "issues": [
+      "Answers reuse the agent answers of the English-medium edition (printed page references are the same in both editions). The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 104,
+     "issues": [
+      "Answers reuse the agent answers of the English-medium edition. The two pictures are redrawn as SVG."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 105,
+     "issues": [
+      "The weather chart has six empty day columns. The safety pictograms are redrawn as SVG (shared with the English edition); one printed pictogram is partly covered by an ink blot. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 106,
+     "issues": [
+      "Scan 112 is a first scan of printed page 106 in which a hand covers the right half of the lower page. Scan 114 is a clear scan of the same page; the content is recorded once on scan 114."
+     ]
+    },
+    {
+     "pdfPage": 114,
+     "printedPage": 105,
+     "issues": [
+      "Scan 113 is a second (clearer) scan of printed page 105 (scan 111). Content is recorded once on scan 111; this scan shows the third safety pictogram without the ink blot. From scan 114 on, printed page = scan − 8."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 107,
+     "issues": [
+      "The book says Pakistan is sixth by population; reproduced as printed. The pie-chart picture is redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 108,
+     "issues": [
+      "The bar graph is redrawn as SVG (shared with the English edition, English axis labels). The teachers' note says the population is \"on the x-axis\"; reproduced as printed. The reference link was not checked."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 109,
+     "issues": [
+      "The dot map and the photograph are redrawn as SVG (shared with the English edition, English labels). The map insets and Kashmir labels are part of the printed map."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 110,
+     "issues": [
+      "Answers reuse the agent answers of the English-medium edition. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 111,
+     "issues": [
+      "Answers reuse the agent answers of the English-medium edition."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 112,
+     "issues": [
+      "The book prints the census table as two side-by-side tables (rows 1–3 and 4–6); they are combined here. Expected entries (from page 108): 1951 — 33,740 thousand; 1961 — 42,880; 1972 — 65,309; 1981 — 84,254; 1998 — 132,352; 2017 — 207,774. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 113,
+     "issues": [
+      "No answer key is printed; all answers are agent answers (the true/false and matching answers reuse those of the English-medium edition)."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 114,
+     "issues": [
+      "The \"سوچیں اور جواب دیں!\" questions are personal and have no fixed answer."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 115,
+     "issues": [
+      "The pictures are redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 116,
+     "issues": [
+      "The fruit photograph is redrawn as SVG (shared with the English edition). The paragraph on inflation continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 126,
+     "printedPage": 117,
+     "issues": [
+      "The trade chart is redrawn as SVG with the printed Urdu labels; the import photographs are given as a labelled table. Printed \"ایک خصوص وقت\" (for مخصوص) is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": 118,
+     "issues": [
+      "The export photographs are given as a labelled table."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 119,
+     "issues": [
+      "The bank drawing is redrawn as SVG (shared with the English edition)."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 120,
+     "issues": [
+      "In this edition Q1 iii and iv are in the reverse order of the English-medium edition; answers are matched to the questions. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": 121,
+     "issues": [
+      "The five sub-questions of Q3 are not lettered in the book; letters a–e are added here. Answers reuse the agent answers of the English-medium edition. The exercise continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 131,
+     "printedPage": 122,
+     "issues": [
+      "Statement (a) of Q6 differs from the English-medium edition (here it describes a producer); answers are given for this edition. The three statements are not lettered in the book; letters a–c are added. The weblink was not checked."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 123,
+     "issues": [
+      "No answer key is printed; all answers are agent answers (the true/false and matching answers reuse those of the English-medium edition)."
+     ]
+    },
+    {
+     "pdfPage": 133,
+     "printedPage": 124,
+     "issues": [
+      "The glossary is printed as two side-by-side word/meaning columns; it is given here as one list in the printed order (right column, then left column). The English and Pashto slots give translations."
+     ]
+    },
+    {
+     "pdfPage": 134,
+     "printedPage": 125,
+     "issues": [
+      "The entry \"E-mail — Electronic-Mail\" is printed in English in the Urdu book. \"ڈھلوان\" is glossed as \"ناہموار\" in the book; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 135,
+     "printedPage": null,
+     "issues": [
+      "The verse box prints only the Urdu translation of Surah Al-Hujurat 49:10; the English and Pashto slots give meaning translations. The second saying is printed without a source; it is reproduced as printed. This page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": null,
+     "issues": [
+      "The anthem is printed in Urdu only; the other slots give a meaning translation. Line breaks are shown with \" / \"."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 81.2,
+   "ledger": "docs/source-verification/class-4/sstum/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/sstum/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Islamiat",
+   "code": "isl",
+   "title": "Islamiat 4 (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\Islamiat Book for 4 class KPTBB_JPGs\\pdf\\islamiyat1.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\isl",
+   "appFile": "js/islamiat_4_data.js",
+   "totalSourcePages": 117,
+   "status": "complete",
+   "reviewedPages": 117,
+   "implementedPages": 113,
+   "printedPagesCovered": "1-108",
+   "blankOrAdPages": [],
+   "duplicatePages": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "lastSavedPdfPage": 117,
+   "nextPdfPage": null,
+   "currentUnit": 7,
+   "currentSection": "glossary",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "This scan shows only the right half of the cover; scan 1 shows the left half. The stamped phone number and the website watermark belong to the scanning site, not the book."
+     ]
+    },
+    {
+     "pdfPage": 2,
+     "printedPage": null,
+     "issues": [
+      "Scan 1 is the left half of the front cover (scan 0 is the right half); the cover is recorded once on scan 0."
+     ]
+    },
+    {
+     "pdfPage": 3,
+     "printedPage": null,
+     "issues": [
+      "Scan 2 is the right half of the title page; the complete title page is scan 6 and is recorded there."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Scan 3 is the left half of the title page; the complete title page is scan 6 and is recorded there."
+     ]
+    },
+    {
+     "pdfPage": 5,
+     "printedPage": null,
+     "issues": [
+      "Scan 4 is the left half of the contents page; the complete contents page is scan 7 and is recorded there."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": null,
+     "issues": [
+      "The first letters of the last four lines are cut at the left edge of the scan; letters in [square brackets] are restored from the same credits on other KPTBB books."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": null,
+     "issues": [
+      "The book prints the calligraphic salutation after the Prophet's name; it is written here as ﷺ. Honorifics are kept in Arabic script in all slots."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 1,
+     "issues": [
+      "The teacher-note line runs off the right edge of the scan after \"دکھانے وا…\"; the words in [square brackets] are restored from context. Para names are given in Arabic script in every slot, with an English transliteration."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 2,
+     "issues": [
+      "The book gives the Arabic text of the surah without a translation on this page; the English and Pashto meanings are agent-provided, not printed. Verse-end marks are written as ۝ with the verse number."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 3,
+     "issues": [
+      "The book gives these two surahs in Arabic without a translation; the English and Pashto meanings are agent-provided, not printed."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 4,
+     "issues": [
+      "The Urdu translation is printed in the book; the English and Pashto slots translate it. The last words of the translation are faint in the scan and read as \"بے نام و نشان رہے گا\"."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 6,
+     "issues": [
+      "From this page on, the full Arabic salutation printed after the Prophet's name is kept in the Urdu slot and written as ﷺ in the English and Pashto slots."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 7,
+     "issues": [
+      "The book titles in the photograph are partly cut at the left edge (the sixth reads \"سنن ابن ما…\"); the names are given in full."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 10,
+     "issues": [
+      "Chapter 1 has no printed exercise; it ends with activities and the teachers' note on this page."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 12,
+     "issues": [
+      "The translation in the \"فرمانِ الٰہی\" box is printed very faintly; it was read from a contrast-enhanced crop. One word inside the brackets on the second line (\"…\") cannot be read and is left out rather than guessed. The Arabic verse is not printed in this box."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 13,
+     "issues": [
+      "The parts are lettered الف، ب، ج، د، ہ and the options inside each part are also lettered الف–د, as printed. In part (ب) the book prints \"فرشتے\" as option ج and \"حیوان\" as option ب."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 16,
+     "issues": [
+      "The left edge of several lines is cut in the scan; letters in [square brackets] and the cut ends of the Khatm-e-Nubuwwat paragraph are restored from the visible context. In the \"فرمانِ الٰہی\" box the first words are partly hidden by a fold and are read as \"(یہ) کتاب\"."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 17,
+     "issues": [
+      "The fifth part is printed with the letter \"د\" again instead of \"ہ\" (two parts are lettered \"د\"); it is given here as \"ہ\" and the misprint is noted."
+     ]
+    },
+    {
+     "pdfPage": 26,
+     "printedPage": 18,
+     "issues": [
+      "Column A prints \"قرآن مجید مقدس\" (unusual wording); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 21,
+     "issues": [
+      "The fifth part is printed with the letter \"د\" again instead of \"ہ\"; it is given here as \"ہ\"."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 24,
+     "issues": [
+      "The right edge of the text is cut in the scan; the last word of several lines (\"اعتراف\", \"کسی کے\", \"دور\", \"چاہیے\", \"اُسی پر\") is restored from the visible beginnings and the sense."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 26,
+     "issues": [
+      "All blanks are answered by the agent from the lesson text; the book prints no answers."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 28,
+     "issues": [
+      "The hadith box is printed very faintly and is only partly legible even after contrast enhancement; the visible words match Jami' at-Tirmidhi 2913 and the hadith number is read as 2913."
+     ]
+    },
+    {
+     "pdfPage": 37,
+     "printedPage": 29,
+     "issues": [
+      "The fourth and fifth parts are both printed with the letter \"د\"; the fifth is given here as \"ہ\"."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 32,
+     "issues": [
+      "The book writes the angel's name both as \"جبریل\" (page 31) and \"جبرائیل\" (this page); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 34,
+     "issues": [
+      "Question 2 (ہ) gives no context for the blank; it is answered with the first quality named by Hazrat Khadijah on page 32."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 35,
+     "issues": [
+      "The last sentence continues on the next page (printed 36)."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 36,
+     "issues": [
+      "The left edge of several lines is cut in the scan; the cut words (e.g. \"سامنے\", \"عنہ نے\", \"تھی\", \"وتبلیغ\", \"حضرت\", \"اس [وعدے]\") are restored from context. The closing quotation mark after \"نہیں چھوڑوں گا\" has no matching opening mark in the book."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 37,
+     "issues": [
+      "Option ج of part (ج) is printed \"سورۃ شعرآ\"; written here as \"سورۃ الشعراء\"."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 38,
+     "issues": [
+      "The question text on this page is printed faintly; it was read from a contrast-enhanced crop."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 39,
+     "issues": [
+      "The map is redrawn as a simple coded sketch; place labels follow the printed map (مکہ، جدہ، شعیبہ، حبشہ). The labels \"عرب\" and \"بحیرۂ احمر\" are added for clarity and are not printed on the map."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 40,
+     "issues": [
+      "The right edge of a few lines is cut in the scan (\"گھر بار\", \"اضافہ ہو رہا تھا\", \"شامل\"); restored from the visible text."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 42,
+     "issues": [
+      "The fifth part is printed with the letter \"و\" (looks like \"د\") instead of \"ہ\"; given here as \"ہ\"."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 44,
+     "issues": [
+      "The \"حاصلاتِ تعلم\" box is badly blurred in the scan (and in the Word version); the four outcomes are the best reading of the visible word shapes and may differ slightly from the print. The last sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 45,
+     "issues": [
+      "The text on this page is blurred in the scan; it was read from a contrast-enhanced crop together with the Word version. The photograph has no printed caption; the caption here is editorial."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 47,
+     "issues": [
+      "Question 3 (ب) asks for the year, which the lesson does not state directly; the agent answer derives it from the lesson (\"six years had passed\")."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 48,
+     "issues": [
+      "The hadith reference is printed as \"مسند احمد حدیث نمبر: 10560\"; reproduced as printed (the hadith number differs between editions)."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 51,
+     "issues": [
+      "Question 2 has four parts; the fourth is printed with the letter \"ا\" (a misprint for \"د\")."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 58,
+     "issues": [
+      "Question 2 continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 61,
+     "issues": [
+      "The hadith box is printed faintly; the number is read as 4869 (Sunan Abi Dawud, \"المجالس بالامانة\"), but the third digit is unclear in the scan."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 64,
+     "issues": [
+      "The \"حاصلاتِ تعلم\" box is extremely blurred in the scan; the outcomes are the best reading of the visible word shapes, and words that cannot be read are shown as \"…\"."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 65,
+     "issues": [
+      "The text on this page is blurred in the scan; it was read from a contrast-enhanced crop together with the Word version. The clock picture has no caption in the book."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 68,
+     "issues": [
+      "The \"حاصلاتِ تعلم\" box is very blurred and its left column is cut by the scan; the five outcomes are the best reading of the visible words. The left edge of the first paragraph is also cut (\"ذمہ دار[ی]\", \"کرتا ہو\"); restored from context.",
+      "The chapter title is printed here as \"حُسنِ معاشرت و معاملات\" but as \"حسنِ معاملات و معاشرت\" on the contents page; both are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 69,
+     "issues": [
+      "The \"فرمانِ نبوی\" box is printed very faintly; it is read as the Tirmidhi hadith on the honest merchant (no. 1209), which matches the visible word shapes."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 71,
+     "issues": [
+      "In Q2 (الف) the printed words between \"دیانت داری\" and the blank are smudged; they are read as \"سکون اور\", matching the lesson text on page 69."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 72,
+     "issues": [
+      "The \"حاصلاتِ تعلم\" box is extremely blurred in both the scan and the Word version; one outcome (the third, right column) cannot be read and is left as \"…\". The verse reference is printed \"سورۃ النحل، آیت: 90\"."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 73,
+     "issues": [
+      "The text on this page is blurred in the scan; it was read from a contrast-enhanced crop together with the Word version."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 77,
+     "issues": [
+      "The printed photograph shows the flag in a turquoise shade; it is drawn here in the official dark green."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 86,
+     "issues": [
+      "The fifth part has no visible letter in the scan (cut at the right edge); it is given as \"ہ\"."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 88,
+     "issues": [
+      "The page ends mid-sentence; the first line of the next scan (printed 89) is cut off at the top, so the words linking the two pages cannot be read."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 89,
+     "issues": [
+      "The first line of this page is cut off in the scan and the start of the second line is partly hidden; only the visible words are given and the gap is marked \"…\". The right edge is cut on several lines; letters in [square brackets] are restored from context. The hadith reference number is printed faintly and is read as 3683. The map has no printed caption; the caption here is editorial, and the map itself is not redrawn because its borders cannot be read accurately from the scan."
+     ]
+    },
+    {
+     "pdfPage": 98,
+     "printedPage": 90,
+     "issues": [
+      "Part (د) asks for the year of Hazrat Umar's martyrdom, which the lesson (pages 88–89) does not state; the answer is agent-supplied from general knowledge."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 91,
+     "issues": [
+      "Questions 2 (د), 2 (ہ) and 3 (ج) ask for facts (his assassin, the area of his rule, the length of his rule) that are not in the lesson text on pages 88–89; the agent answers come from general historical knowledge and are marked as such. The teachers' strip is printed faintly."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 92,
+     "issues": [
+      "The map beside the first paragraph has no printed caption and its labels are too small to read; it is described here, not redrawn."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 93,
+     "issues": [
+      "The hadith \"فرشتے بھی عثمان سے حیا کرتے ہیں\" and the sub-headings \"خدمات\" and \"شہادت\" are printed very faintly; read from a contrast-enhanced crop."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 96,
+     "issues": [
+      "The book translates \"اَلطُّهُوْرُ شَطْرُ الْاِيْمَانِ\" as \"پاکیزگی ایمان کا حصہ ہے\" (literally \"half of faith\"); reproduced as printed. The Nasa'i hadith number is printed \"05\"."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 98,
+     "issues": [
+      "The exercise jumps from question 1 to question 3; there is no printed question 2 (misprint, reproduced as printed). Question 3 continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 99,
+     "issues": [
+      "The yes/no and write-in activities are for the pupil and have no answers."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 100,
+     "issues": [
+      "The Urdu translations of Surah Al-Hijr 22 and Surah Al-A'raf 31 are printed so faintly that they are only partly legible; the visible words match the Jalandhari translation used elsewhere in the book, and the full wording is taken from it."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 101,
+     "issues": [
+      "The hadith at the top is printed faintly; the reference is read as Sunan Ibn Majah 425."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 104,
+     "issues": [
+      "The glossary is printed in two side-by-side columns of tables; it is given here in reading order (right column, then left column). English and Pashto slots translate the Urdu."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 105,
+     "issues": [
+      "In the entry \"نزول\" the meaning is printed as \"نازل ہونا\". In \"چچازاد\" the meaning is \"چچا کا بیٹا / بیٹی\"."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 107,
+     "issues": [
+      "The first table on this page continues the \"وقت کی پابندی\" list from page 106."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 108,
+     "issues": [
+      "This page is extremely blurred in the scan. Only entries whose word and meaning could be read with reasonable confidence are given; meanings shown as \"…\" could not be read. In the \"حضرت عثمان غنی\" table, about five further rows after \"غنی\" (meanings beginning \"اللہ تعالیٰ کی…\", \"…والا\", \"…کا جہاز…\") and several rows in the cleanliness and water tables are illegible and are left out rather than guessed."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": null,
+     "issues": [
+      "The feedback form is printed in English in the Urdu book; it is kept in English in the first two slots. \"effective skills\" is printed for \"affective\"; reproduced as printed. The phone and fax numbers are too small to read in the scan and are left out."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 113.8,
+   "ledger": "docs/source-verification/class-4/isl/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/isl/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Pashto",
+   "code": "pashto",
+   "title": "Pashto 4 (KPTBB)",
+   "source": "D:\\SpaceBook\\Books\\4th\\4th\\PASHTO\\pdf\\pashtu.pdf",
+   "scanFolder": "D:\\SpaceBook\\_cls4_jpg\\pashto",
+   "appFile": "js/pashto_4_data.js",
+   "totalSourcePages": 148,
+   "status": "complete",
+   "reviewedPages": 148,
+   "implementedPages": 141,
+   "printedPagesCovered": "1-135",
+   "blankOrAdPages": [
+    53,
+    54
+   ],
+   "duplicatePages": [
+    3,
+    126,
+    127,
+    130,
+    131
+   ],
+   "lastSavedPdfPage": 148,
+   "nextPdfPage": null,
+   "currentUnit": 31,
+   "currentSection": "glossary",
+   "unresolved": [
+    {
+     "pdfPage": 3,
+     "printedPage": null,
+     "issues": [
+      "Scan 2 is a cropped, angled photo of the second contents page (lessons 17–32), recorded on scan 3. The first contents page (lessons 1–16) is missing from every source (PDF, JPG folder and Word file); those lesson titles are taken from the lesson headings."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "Only the second contents page (lessons 17–32) survives; the page listing lessons 1–16 is missing from all sources."
+     ]
+    },
+    {
+     "pdfPage": 5,
+     "printedPage": 1,
+     "issues": [
+      "The poem is by Abdul Rahman Baba (d. c. 1715) and is in the public domain; it is given in full. The Urdu and English lines are agent translations."
+     ]
+    },
+    {
+     "pdfPage": 6,
+     "printedPage": 2,
+     "issues": [
+      "The fill-in lines quote the poem; their Urdu and English slots keep the Pashto line (with a transliteration in English) because the blank must be filled with the Pashto word."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 3,
+     "issues": [
+      "The third option list is printed with only three options and the second is faint (\"جواب\")."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": 4,
+     "issues": [
+      "Copyright: this na'at is by Mustaqeem Khan (one of the book's living authors), so its verses are summarised rather than reproduced in full. The salutation written after the Prophet's name in the poem is given as ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 9,
+     "printedPage": 5,
+     "issues": [
+      "Copyright: the verses on this page are summarised (poet living); see page 4."
+     ]
+    },
+    {
+     "pdfPage": 10,
+     "printedPage": 6,
+     "issues": [
+      "Question 4 (۲) prints \"سبوا\" in both the poem and the options; the agent answer follows the poem. Quoted lines in answers are kept short (copyright)."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 8,
+     "issues": [
+      "The learning-outcomes box is printed so faintly that only its first line can be read. The last sentence continues on the next page. In the Pashto slot the salutation is kept as printed (\"صلی الله علیه وعلی آله واصحابه وسلم\"); the Urdu and English slots use ﷺ."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 9,
+     "issues": [
+      "One word in the fourth saying is unclear in the scan and is marked \"…\"."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 10,
+     "issues": [
+      "Question 1 continues on the same exercise on the next page."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 11,
+     "issues": [
+      "In question 2 (۳) the book prints the salutation sign after \"هغوي\". The matching table's right column is printed in a different order; the agent answer pairs each word with its opposite or companion."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 13,
+     "issues": [
+      "In the Pashto slot the honorifics are kept as printed; the Urdu and English slots use ﷺ and رضی اللہ عنہ / رضي الله عنهم."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 14,
+     "issues": [
+      "The book says Hazrat Abu Bakr's caliphate lasted \"two years\" (historically about two years and three months); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 15,
+     "issues": [
+      "The book names Hazrat Aishah رضي الله عنها in this story; reproduced as printed. \"دوه ویشت نیم لکه مربع مېله\" is printed as given."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 17,
+     "issues": [
+      "The book repeats \"خاندان ئې تعلق ئې\" in the first line (misprint), reproduced. The couplet at the end is anonymous in the book. Battle unnamed in the text (it is Khaybar)."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 20,
+     "issues": [
+      "Copyright: the song is by Mustaqeem Khan (one of the book's living authors; named on page 21), so its verses are summarised. The refrain \"هره سیمه دې ده ښکلې هره لار\" (\"every region and every road of yours is beautiful\") is quoted as a short line."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 21,
+     "issues": [
+      "Copyright: verses summarised (poet Mustaqeem Khan, living). The poet's name on this page confirms the authorship noted on page 20."
+     ]
+    },
+    {
+     "pdfPage": 27,
+     "printedPage": 23,
+     "issues": [
+      "This page is badly faded; it was read together with the Word version. The Arabic of the Qur'anic verse is not printed — only its Pashto translation. One learning outcome is only partly legible (\"…\")."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 24,
+     "issues": [
+      "This page is badly faded; it was read together with the Word version."
+     ]
+    },
+    {
+     "pdfPage": 29,
+     "printedPage": 25,
+     "issues": [
+      "The question bands on this page are printed very faintly; their wording follows the standard instructions used elsewhere in the book and the Word version."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 26,
+     "issues": [
+      "Question 3 has no printed instruction legible beyond \"د لاندېنو لفظونو جمع ولیکئ\" (faint). Column C of the table is for the pupil; the agent answer pairs the opposites."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 27,
+     "issues": [
+      "The Qur'anic verses are given only in Pashto translation in the book (no Arabic printed). The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 28,
+     "issues": [
+      "The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 30,
+     "issues": [
+      "The grammar note's example \"چرګ نه چرګان\" ends with \"ان\", not \"ګان\", as printed."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 31,
+     "issues": [
+      "The left edge of the page is cut in the scan; the missing letters (e.g. \"مردان\", \"ګڼ شمېر\", \"اولنې ځل\") are restored from the Word version."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 32,
+     "issues": [
+      "The page is photographed at an angle; the first line is partly cut and is completed from the Word version."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 34,
+     "issues": [
+      "The synonyms in question 3 are agent suggestions; the book prints no answers."
+     ]
+    },
+    {
+     "pdfPage": 39,
+     "printedPage": 35,
+     "issues": [
+      "Copyright: the poem is by Intizar Aziz (a modern poet), so its verses are summarised rather than reproduced. A pupil's handwriting over the title area is not part of the print and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 36,
+     "issues": [
+      "Part of the first question (۱) is hidden under a pupil's pen scribbles and cannot be read (\"…\"). The pupil's handwritten answers on the scan are ignored; the answers here are agent answers."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 38,
+     "issues": [
+      "The learning-outcomes box is printed very faintly; it is read together with the Word version."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 40,
+     "issues": [
+      "The pupil's pen arrows on the matching table are not part of the print and are ignored."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 41,
+     "issues": [
+      "Question 3's instruction is faint; read as \"پهٔ سبق کښې یو لفظ ګاونډ پنځهٔ حرفیز ټکے دے\". The grammar note continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 42,
+     "issues": [
+      "The example for \"څهٔ\" is printed as a proverb-like phrase (\"څهٔ ژړانده ورانه څهٔ دانې لوندې\"); reproduced as printed and translated literally."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 43,
+     "issues": [
+      "The left edge of this page is cut in the scan; the cut words are restored from the Word version, and the end of the \"خاص لفظونه\" list is cut off (\"…\"). The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 44,
+     "issues": [
+      "The page is photographed at an angle; a few words at the line ends are restored from the Word version."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 46,
+     "issues": [
+      "The column headings of the table are faint and read as \"کالم الف / کالم ب\". The left part of the grammar panel is faint; the names of the marks (\"ختمه\", \"کامه\", \"دوه لاندې باندې ټکي\") are partly cut and are read with the help of the Word version."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 47,
+     "issues": [
+      "The activity line is printed in faint pink; read with the help of the Word version. The photographs (an elderly man and a tomb) have no captions."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 48,
+     "issues": [
+      "The learning-outcomes box is printed so faintly that only parts can be read (\"…\"). The book says \"شپږ مېله\" (six miles); read from \"شپږ\" which is partly faint."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": null,
+     "issues": [
+      "Scan 52 is an advertisement page from the scanning website (awazeinqilab.com, \"Available Subjects\" list), inserted by the scanner between printed pages 48 and 49; it is not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": null,
+     "issues": [
+      "Scan 53 is the second half of the scanning website's advertisement (levels, exams list); not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 49,
+     "issues": [
+      "This story follows the parable of the owners of the garden in Surah Al-Qalam (68:17–33); the book does not cite the Qur'an here."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 51,
+     "issues": [
+      "Question 5's sentences are printed without numbers; they are numbered here in reading order."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 52,
+     "issues": [
+      "Copyright: this poem about Rahman Baba is by Mustaqeem Khan (one of the book's living authors), so its verses are summarised rather than reproduced."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 53,
+     "issues": [
+      "The fill-in lines quote the (copyrighted) poem only as short phrases needed to set the blanks."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 55,
+     "issues": [
+      "The learning-outcomes box is printed faintly; the third outcome (\"… کردار ادا کولے شي\") is partly unclear. The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 56,
+     "issues": [
+      "\"توکے/جز\" is printed with a slash as shown."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 57,
+     "issues": [
+      "\"هېټلونه\" is printed for \"هوټلونه\" (hotels); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 59,
+     "issues": [
+      "\"بوروږ\" is printed for \"بوروزه/کوټه\" (room) in the grammar example; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 60,
+     "issues": [
+      "The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 67,
+     "printedPage": 61,
+     "issues": [
+      "The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 65,
+     "issues": [
+      "The learning-outcomes box is printed faintly. \"دوه درې ویشت\" is read as \"twenty-two or twenty-three\"."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 66,
+     "issues": [
+      "\"منلوه وهم\" (I will run) is printed as shown."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 68,
+     "issues": [
+      "The grammar note says the genitive particle comes \"after\" these words (\"وروستو\"), although in the examples \"د\" comes before the possessor; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 69,
+     "issues": [
+      "Copyright: the poem is by Mustaqeem Khan (one of the book's living authors; named on page 70), so its verses are summarised rather than reproduced."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 70,
+     "issues": [
+      "The question band is printed faintly. Copyright: the last couplets are summarised."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 72,
+     "issues": [
+      "The opening couplet is a well-known classical Pashto verse quoted without attribution (traditionally ascribed to Khushal Khan Khattak, public domain). The sentence continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 73,
+     "issues": [
+      "The page is photographed at an angle; \"دفعه 144\" (Section 144) is printed in Latin digits as shown."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 74,
+     "issues": [
+      "\"قبد\" is printed for \"قید\" (imprisonment) and \"د ډېرې\" for \"د ږیرې\" (by the beard); both are read in context and reproduced as printed. The year \"2005\" is printed in Latin digits."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 75,
+     "issues": [
+      "The question bands on this page are printed faintly; their wording is read with the help of the standard instructions."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 77,
+     "issues": [
+      "A pupil's blue pen mark near the bullet list is not part of the print."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 80,
+     "issues": [
+      "In question 2 the example's arrow goes from the plural (\"مونږ\") to the singular (\"ما\"); the agent answers apply both directions as instructed."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 82,
+     "issues": [
+      "The \"خاص لفظونه\" band is printed faintly; read as listed. The story continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 83,
+     "issues": [
+      "The story continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 85,
+     "issues": [
+      "The question bands on this page are faint and photographed at an angle; read with the help of the standard instructions."
+     ]
+    },
+    {
+     "pdfPage": 93,
+     "printedPage": 87,
+     "issues": [
+      "Copyright: the poet's name is not legible on this page, so the poem is summarised rather than reproduced. The learning-outcomes box and the \"خاص لفظونه\" band are printed very faintly."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 88,
+     "issues": [
+      "The question bands are printed faintly; read with the help of the standard instructions. The fill-ins quote only short phrases of the poem."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 90,
+     "issues": [
+      "The picture captions are printed small; read as \"ډاکټر سلمیٰ شاهین\", \"زېتون بانو\" and \"ملاله\". The text continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 91,
+     "issues": [
+      "Malalai's tappa is a traditional folk couplet (public domain), given in full. The text continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 96,
+     "issues": [
+      "The left edge is cut in the scan: the end of the fourth bullet (\"… وسیله …\") and the end of a few lines are restored from context. \"بندیانو\" is printed for \"بندګانو\" (people/servants); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 97,
+     "issues": [
+      "The left edge of the opening paragraph is cut in the scan; restored from context."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 98,
+     "issues": [
+      "The pupil's pen arrow on the table is not part of the print and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 106,
+     "printedPage": 100,
+     "issues": [
+      "The two photographs have no printed captions; the captions here are editorial. The book calls Islamia College \"وړومبے تعلیمي پوهنتون\" (first university); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 107,
+     "printedPage": 101,
+     "issues": [
+      "The closing couplet is a traditional Pashto verse quoted without attribution (public domain)."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 102,
+     "issues": [
+      "A pupil's pen line on the matching table is not part of the print and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 103,
+     "issues": [
+      "The grammar table is printed as three pairs per row (پلار/مور، ورور/خور، سخر/خواښې over هلک/جینۍ، سړے/ښځه، خورېے/خورزه); it is given here as one list of masculine–feminine pairs. \"خورېے / خورزه\" are read as nephew/niece (sister's son/daughter)."
+     ]
+    },
+    {
+     "pdfPage": 110,
+     "printedPage": 104,
+     "issues": [
+      "Copyright: this poem is by Shams-ul-Qamar Andesh (a modern poet), so it is summarised rather than reproduced. It is about Khushal Khan Khattak (1613–1689), whose own poetry is public domain."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 105,
+     "issues": [
+      "The question 3 instruction is partly hidden (\"… خوش خطه ولیکئ\"); read as shown."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 106,
+     "issues": [
+      "The text continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 107,
+     "issues": [
+      "The book gives Aman Akhun's dates as 1845–1954 (a lifespan of about 109 years); reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 109,
+     "issues": [
+      "The matching boxes have no column headings in the book; \"شاعر / ځائے\" are added here."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": 111,
+     "issues": [
+      "The text continues on the next page."
+     ]
+    },
+    {
+     "pdfPage": 119,
+     "printedPage": 113,
+     "issues": [
+      "\"قولو\" (fold) is read from the scan; reproduced as printed."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 114,
+     "issues": [
+      "Question 4 is an open search activity; the agent note gives examples only."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 115,
+     "issues": [
+      "Copyright: the poem is by Mustaqeem Khan (one of the book's living authors; named on page 116), so it is summarised rather than reproduced."
+     ]
+    },
+    {
+     "pdfPage": 122,
+     "printedPage": 116,
+     "issues": [
+      "Copyright: the last couplets are summarised (poet living). The question band is printed faintly."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 118,
+     "issues": [
+      "The book's claim that Charles Babbage \"introduced the computer to the world in 1832\" is reproduced as printed (Babbage designed his Difference and Analytical Engines in the 1820s–1830s)."
+     ]
+    },
+    {
+     "pdfPage": 126,
+     "printedPage": null,
+     "issues": [
+      "Scan 125 is a second photograph of printed page 118 (the opening page of \"Computer\"), already recorded on scan 123."
+     ]
+    },
+    {
+     "pdfPage": 127,
+     "printedPage": null,
+     "issues": [
+      "Scan 126 is a second photograph of printed page 119, already recorded on scan 124."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 120,
+     "issues": [
+      "The \"مشغولتیا\" badge and the question bands are printed very faintly; the instruction for question 2 is faint and is read as a singular/plural exercise."
+     ]
+    },
+    {
+     "pdfPage": 129,
+     "printedPage": 121,
+     "issues": [
+      "Column B of the matching table contains pictures only; they are described in words here. The pupil's pen arrow is not part of the print."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": null,
+     "issues": [
+      "Scan 129 is a second photograph of printed page 120, already recorded on scan 127."
+     ]
+    },
+    {
+     "pdfPage": 131,
+     "printedPage": null,
+     "issues": [
+      "Scan 130 is a second photograph of printed page 121, already recorded on scan 128."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 122,
+     "issues": [
+      "The \"خاص لفظونه\" band is printed faintly; the last word (\"ورخه\") cannot be read with confidence and its meaning is left as \"…\". \"شرمښ\" (wolf) is confirmed by the story. The pictures show goats, while the text says \"ګډې\" (sheep)."
+     ]
+    },
+    {
+     "pdfPage": 134,
+     "printedPage": 124,
+     "issues": [
+      "\"اوبهٔ له ورخه تېرې وې\" is a Pashto idiom (\"the water had passed the ditch\" — it was too late), reproduced as printed. The picture shows a tiger-like animal, while the text says \"شرمښ\" (wolf)."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 126,
+     "issues": [
+      "The activity \"د محنت پهٔ عظمت یو تقریري مقابله وکړئ\" repeats the activity from lesson 20 as printed."
+     ]
+    },
+    {
+     "pdfPage": 137,
+     "printedPage": 127,
+     "issues": [
+      "The poem by Mustaqeem Khan, a living poet, is summarised rather than reproduced (copyright rule). The lesson has no exercise page in the book; the next page begins the glossary."
+     ]
+    },
+    {
+     "pdfPage": 138,
+     "printedPage": 128,
+     "issues": [
+      "The glossary is printed in two side-by-side pairs of columns per lesson; it is given here in reading order (right pair, then left pair). The glossary is Pashto–Pashto: the Pashto meaning is printed; the Urdu and English slots are translations. The section lists for lessons 1–4 (حمد، نعت، امانت داري، څلور یاران) are on this page; the \"حمد\" words بیان، جمله، مشکل، افتاب appear under the heading as printed."
+     ]
+    },
+    {
+     "pdfPage": 139,
+     "printedPage": 129,
+     "issues": [
+      "The first fourteen entries continue the \"څلور یاران\" list from page 128. Several meanings in the left columns are printed in very pale pink; they were read from a contrast-enhanced crop. \"خصمانه\" is glossed as \"پالنه\" as printed."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 131,
+     "issues": [
+      "The first four entries continue the \"رضیه سلطانه\" list from page 130. \"پخوا\" is glossed as \"د اوس متضاد\" (the opposite of \"now\") as printed."
+     ]
+    },
+    {
+     "pdfPage": 143,
+     "printedPage": 133,
+     "issues": [
+      "The meanings in the left columns of the \"تېمور باچا\" and \"مشهورې پښتنې مېرمنې\" lists are printed very faintly. \"مېړانه\" (for توروزني) and \"د پښو کولو څیزونه\" (for پېزار) were read from an enhanced crop and are not fully certain. The meaning of \"کمان\" in the \"مشهورې پښتنې مېرمنې\" list is illegible and that entry is left out. \"اورومرو\" appears in two lessons; \"اطاعت\" appears twice in the forgiveness list with different meanings, as printed."
+     ]
+    },
+    {
+     "pdfPage": 144,
+     "printedPage": 134,
+     "issues": [
+      "The word \"افسانو\" in the folk-poets list is partly faint. In \"رپورټر\" the last word of the meaning is unclear and is rendered \"راوړونکے\" (bringer)."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 135,
+     "issues": [
+      "The first six entries continue the \"اخبار\" list from page 134."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": null,
+     "issues": [
+      "The author biographies are summarised rather than reproduced in full. The biography of Mustaqeem Khan continues on the next page. The page is unnumbered (it falls after printed page 135)."
+     ]
+    },
+    {
+     "pdfPage": 147,
+     "printedPage": null,
+     "issues": [
+      "The author biographies are summarised rather than reproduced in full. Some words of the scan are small and blurred (for example the title of Mustaqeem Khan's unpublished book), so names are given as best read. The page is unnumbered."
+     ]
+    },
+    {
+     "pdfPage": 148,
+     "printedPage": null,
+     "issues": [
+      "The feedback form is printed in English; the Pashto and Urdu slots are translations. \"effective skills\" is printed for \"affective\"; reproduced as printed. The bottom of the form (address, phone and email lines) is cut off in the scan."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 164.5,
+   "ledger": "docs/source-verification/class-4/pashto/ledger.json",
+   "transcriptions": "docs/source-verification/class-4/pashto/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  }
+ ],
+ "lastBrowserVerification": "2026-10-11: Mathematics 10 units x 5 tabs rendered in the reader with 0 KaTeX errors, 0 raw LaTeX/markup; answers attach (19 in Unit 1b exercises); translations open on click; 96 vocab words tagged; no horizontal overflow at 375px.",
+ "environmentBlockers": [
+  "Machine RAM nearly exhausted (about 0.4 GB free, page file full on C:): RapidOCR batch OCR fails with allocation errors, so pages are transcribed by reading the scan images directly."
+ ],
+ "nextAction": "All 8 Class 4 books with sources are transcribed (math 188, eng 152, urdu 166, sci 149, sst 131, sstum 136, isl 117, pashto 148). Next: the user's own browser check of the Class 4 reader; remaining subjects have no source (see subjectsNotInSourceFolder)."
+}

@@ -1,0 +1,12 @@
+@printed 86
+@issue "Write 1 for light, 2 for lighter and 3 for lightest" (leaf, tennis ball, pencil) has no single printed answer; the SpaceBook answer orders them by usual mass (ball heaviest, leaf lightest).
+q 6 | Compare the objects and write 1 for light, 2 for lighter and 3 for lightest. || چیزوں کا موازنہ کریں اور ہلکی کے لیے ۱، زیادہ ہلکی کے لیے ۲ اور سب سے ہلکی کے لیے ۳ لکھیں۔ || شیان پرتله کړئ او سپک ته ۱، سپکتر ته ۲ او تر ټولو سپک ته ۳ ولیکئ.
+cnt leaf:1 tennis:1 pencil.orange:1 || a leaf, a tennis ball and a pencil || پتا، ٹینس بال اور پنسل || پاڼه، د ټینس توپ او پنسل
+sol Tennis ball 1 (light), pencil 2 (lighter), leaf 3 (lightest) ## The ball is the heaviest of the three, so it gets 1; the leaf is the lightest. || گیند تینوں میں سب سے بھاری ہے، اس لیے ۱؛ پتا سب سے ہلکا ہے۔ || توپ په دریو کې تر ټولو دروند دی، نو ۱؛ پاڼه تر ټولو سپکه ده.
+q 7 | Tick (✓) for the heaviest object. || سب سے بھاری چیز پر (✓) کا نشان لگائیں۔ || تر ټولو دروند شي ته (✓) نښه ولګوئ.
+sizes cupboard:2.6 chair.brown:1.2 cabinet:1.8 ;; cupboard,chair,cabinet || A cupboard, a chair and a small cabinet || الماری، کرسی اور چھوٹی الماری || المارۍ، څوکۍ او کوچنۍ المارۍ
+sol Tick (✓) the cupboard. ## The big wooden cupboard is the heaviest. || بڑی لکڑی کی الماری سب سے بھاری ہے۔ || لویه لرګینه المارۍ تر ټولو درنه ده.
+q 8 | Colour the lightest object, blue and the heaviest object, yellow. || سب سے ہلکی چیز کو نیلا اور سب سے بھاری چیز کو پیلا رنگ کریں۔ || تر ټولو سپک شی شین او تر ټولو دروند شی ژېړ رنګ کړئ.
+cnt schoolbag:1 book.white:1 clipboard:1 s=1.4 || A school bag, a book and a clipboard to colour || بستہ، کتاب اور کلپ بورڈ || ښوونیز بکس، کتاب او کلیپ بورډ
+sol Clipboard — blue (lightest); school bag — yellow (heaviest). ## A school bag holds books, so it is the heaviest; a clipboard is the lightest. || بستے میں کتابیں ہوتی ہیں اس لیے وہ سب سے بھاری ہے؛ کلپ بورڈ سب سے ہلکا ہے۔ || په بکس کې کتابونه وي نو تر ټولو دروند دی؛ کلیپ بورډ تر ټولو سپک دی.
+endexercise

@@ -1,0 +1,18 @@
+@printed 151
+@sec 6.4 | Perimeter of Square || مربع کا احاطہ || د مربع محیط
+@deco A boy running at corner A of a green square ground; the left edge of the scan cuts "The" in "The sum of all lengths".
+# Perimeter of Square || مربع کا احاطہ || د مربع محیط
+p Furqan runs around a square shaped ground with the length of a side is 40m. How much distance does Furqan covers in one round? || فرقان ایک مربع شکل کے میدان کے گرد دوڑتا ہے جس کے ایک ضلع کی لمبائی 40m ہے۔ فرقان ایک چکر میں کتنا فاصلہ طے کرتا ہے؟ || فرقان د یوه مربع شکله میدان شاوخوا منډې وهي چې د یوه اړخ اوږدوالی یې 40m دی. فرقان په یوه پړاو کې څومره واټن وهي؟
+fig geo 260 200 ; G 40 30 160 140 #86efac ; P 30 26 A ; P 210 186 C ; P 30 186 D ; P 120 22 40 m ; P 120 190 40 m ; P 18 104 40 m ; P 232 104 40 m || Square ground ABCD with each side 40 m || ہر ضلع 40 m والا مربع میدان ABCD || مربع میدان ABCD چې هر اړخ یې 40 m دی
+p To find the total distance he covers in one round, we will add lengths of all sides || ایک چکر میں طے کیا گیا کل فاصلہ معلوم کرنے کے لیے ہم تمام اضلاع کی لمبائیاں جمع کریں گے || په یوه پړاو کې د وهل شوي ټول واټن موندلو لپاره د ټولو اړخونو اوږدوالي جمع کوو
+eq \text{Total distance} = \underset{\text{side}}{40\text{m}} + \underset{\text{side}}{40\text{m}} + \underset{\text{side}}{40\text{m}} + \underset{\text{side}}{40\text{m}} = 160\text{m}
+p The sum of all lengths of a closed figure is called perimeter. || کسی بند شکل کی تمام لمبائیوں کا مجموعہ احاطہ کہلاتا ہے۔ || د یوه تړلي شکل د ټولو اوږدوالو مجموعه محیط بلل کېږي.
+box note | Key Fact || اہم حقیقت || مهم حقیقت
+p Perimeter of a square = sum of all sides. or 4 x length of a side || مربع کا احاطہ = تمام اضلاع کا مجموعہ، یا 4 × ایک ضلع کی لمبائی || د مربع محیط = د ټولو اړخونو مجموعه، یا 4 × د یوه اړخ اوږدوالی
+endbox
+p Thus, the perimeter of the ground is also 160 m. || لہٰذا میدان کا احاطہ بھی 160 m ہے۔ || نو د میدان محیط هم 160 m دی.
+## If the length of one side of a square is 5 cm. Find its perimeter. || اگر کسی مربع کے ایک ضلع کی لمبائی 5 cm ہو تو اس کا احاطہ معلوم کریں۔ || که د یوې مربع د یوه اړخ اوږدوالی 5 cm وي، محیط یې معلوم کړئ.
+fig geo 180 160 ; G 40 30 100 100 #fff ; P 90 24 5cm ; P 90 148 5cm ; P 20 84 5cm ; P 160 84 5cm || Square with side 5 cm || 5 cm ضلع والا مربع || 5 cm اړخ لرونکې مربع
+m Length of a side = 5cm
+eq \text{Perimeter of square} = 4 \times \text{length of one side} = 4 \times 5\text{ cm} = 20\text{ cm}
+p The perimeter of a square is 20 cm || مربع کا احاطہ 20 cm ہے || د مربع محیط 20 cm دی

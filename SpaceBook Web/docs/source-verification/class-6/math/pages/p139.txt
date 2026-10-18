@@ -1,0 +1,63 @@
+@printed 135
+@deco Pictures of a shirt, a pen and a paintbrush beside Q3–Q4 (decorative).
+q 2 | Dania is 6 years older than her younger sister. After 10 years, the sum of their ages will be 48 years. Find their present ages. || دانیہ اپنی چھوٹی بہن سے 6 سال بڑی ہے۔ 10 سال بعد ان کی عمروں کا مجموعہ 48 سال ہوگا۔ ان کی موجودہ عمریں معلوم کریں۔ || دانیا له خپلې کوچنۍ خور 6 کاله مشره ده. له 10 کلونو وروسته به د دواړو د عمرونو مجموعه 48 کاله وي. اوسني عمرونه یې معلوم کړئ.
+solution Sister 11 years, Dania 17 years
+ss Let the sister's present age be x. Dania's age is x + 6. After 10 years they will be x + 10 and x + 16. || فرض کریں بہن کی موجودہ عمر x ہے۔ دانیہ کی عمر x + 6۔ 10 سال بعد ان کی عمریں x + 10 اور x + 16 ہوں گی۔ || فرض کړئ د خور اوسنی عمر x دی. د دانیا عمر x + 6. له 10 کلونو وروسته به x + 10 او x + 16 وي.
+suse lineq (x + 10) + (x + 16) = 48
+ss Sister = 11 years, Dania = 11 + 6 = 17 years. || بہن = 11 سال، دانیہ = 11 + 6 = 17 سال۔ || خور = 11 کاله، دانیا = 11 + 6 = 17 کاله.
+endsolution
+q 3 | The price of a shirt has decreased after a sale by Rs 215. Find the original price if the new price is Rs 345. || سیل کے بعد ایک قمیض کی قیمت 215 روپے کم ہو گئی۔ اگر نئی قیمت 345 روپے ہو تو اصل قیمت معلوم کریں۔ || د پلور وروسته د یو کمیس بیه 215 روپۍ کمه شوه. که نوې بیه 345 روپۍ وي، اصلي بیه معلومه کړئ.
+solution Rs 560
+ss Let the original price be Rs x. After decreasing by 215 it becomes 345. || فرض کریں اصل قیمت Rs x ہے۔ 215 کم ہونے کے بعد یہ 345 ہو جاتی ہے۔ || فرض کړئ اصلي بیه Rs x ده. له 215 کمېدو وروسته 345 کېږي.
+suse lineq x - 215 = 345
+endsolution
+q 4 | The total price of a paintbrush and a pen is Rs 156. Find the price of both the items if the price of the paintbrush is half the price of the pen. || ایک پینٹ برش اور ایک قلم کی کل قیمت 156 روپے ہے۔ اگر پینٹ برش کی قیمت قلم کی قیمت کا نصف ہو تو دونوں اشیاء کی قیمت معلوم کریں۔ || د یو رنګ برس او یو قلم ټوله بیه 156 روپۍ ده. که د رنګ برس بیه د قلم د بیې نیمایي وي، د دواړو توکو بیه معلومه کړئ.
+solution Pen Rs 104, paintbrush Rs 52
+ss Let the pen cost Rs x. The paintbrush costs half of it: x/2. || فرض کریں قلم کی قیمت Rs x ہے۔ پینٹ برش اس کا نصف: x/2۔ || فرض کړئ د قلم بیه Rs x ده. رنګ برس یې نیمایي: x/2.
+suse lineq x + \frac{x}{2} = 156
+ss Pen = Rs 104; paintbrush = 104 ÷ 2 = Rs 52. || قلم = 104 روپے؛ پینٹ برش = 104 ÷ 2 = 52 روپے۔ || قلم = 104 روپۍ؛ رنګ برس = 104 ÷ 2 = 52 روپۍ.
+endsolution
+q 5 | Ali's weight is 13 kg less than Umar's weight. Find the weight of Umar if the sum of their weights is 59 kg. || علی کا وزن عمر کے وزن سے 13 kg کم ہے۔ اگر ان کے وزنوں کا مجموعہ 59 kg ہو تو عمر کا وزن معلوم کریں۔ || د علي وزن د عمر له وزن 13 kg کم دی. که د دواړو د وزنونو مجموعه 59 kg وي، د عمر وزن معلوم کړئ.
+solution Umar 36 kg (Ali 23 kg)
+ss Let Umar's weight be x kg; Ali's weight is x − 13. || فرض کریں عمر کا وزن x kg ہے؛ علی کا وزن x − 13۔ || فرض کړئ د عمر وزن x kg دی؛ د علي وزن x − 13.
+suse lineq x + (x - 13) = 59
+endsolution
+q 6 | The difference between 45 and 5 times a number is 15. Find the number. || 45 اور ایک عدد کے 5 گنا کا فرق 15 ہے۔ عدد معلوم کریں۔ || د 45 او د یو عدد د 5 چنده توپیر 15 دی. عدد معلوم کړئ.
+solution 6
+ss Let the number be x: 45 − 5x = 15. || فرض کریں عدد x ہے: 45 − 5x = 15۔ || فرض کړئ عدد x دی: 45 − 5x = 15.
+suse lineq 45 - 5x = 15
+endsolution
+q 7 | Madiha thinks of a number. She multiplied it by 6.2 and added 8 to the product, she got the answer 39. Find the number. || مدیحہ نے ایک عدد سوچا۔ اس نے اسے 6.2 سے ضرب دی اور حاصلِ ضرب میں 8 جمع کیا، اسے جواب 39 ملا۔ عدد معلوم کریں۔ || مدیحې یو عدد فکر کړ. په 6.2 کې یې ضرب کړ او حاصل ضرب ته یې 8 ورزیات کړل، ځواب 39 شو. عدد معلوم کړئ.
+solution 5
+suse lineq 6.2x + 8 = 39
+endsolution
+q 8 | Ayesha was asked to divide a number by 3 but by mistake she multiplied it by 3. If the correct number is 72 less than the wrong number, find the number. || عائشہ سے ایک عدد کو 3 سے تقسیم کرنے کو کہا گیا لیکن غلطی سے اس نے اسے 3 سے ضرب دے دی۔ اگر درست جواب غلط جواب سے 72 کم ہو تو عدد معلوم کریں۔ || له عایشې وغوښتل شول چې یو عدد پر 3 ووېشي خو په تېروتنه یې په 3 کې ضرب کړ. که سم ځواب له غلط ځواب 72 کم وي، عدد معلوم کړئ.
+solution 27
+ss Correct answer = x/3; wrong answer = 3x. The wrong answer minus the correct answer is 72. || درست جواب = x/3؛ غلط جواب = 3x۔ غلط جواب منفی درست جواب 72 ہے۔ || سم ځواب = x/3؛ غلط ځواب = 3x. غلط ځواب منفي سم ځواب 72 دی.
+suse lineq 3x - \frac{x}{3} = 72
+ss Check: 3 × 27 = 81 and 27 ÷ 3 = 9; 81 − 9 = 72 ✓ || جانچ: 3 × 27 = 81 اور 27 ÷ 3 = 9؛ 81 − 9 = 72 ✓ || ازموینه: 3 × 27 = 81 او 27 ÷ 3 = 9؛ 81 − 9 = 72 ✓
+ss Teacher's note: the book's answer key prints −27; the check above shows the number is 27. || استاد کا نوٹ: کتاب کی جوابی کلید −27 چھاپتی ہے؛ اوپر کی جانچ سے ظاہر ہے کہ عدد 27 ہے۔ || د ښوونکي یادونه: د کتاب د ځوابونو کلي −27 چاپوي؛ پورتنۍ ازموینه ښيي چې عدد 27 دی.
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Create and solve a real-world situation that can be represented by the given linear equation "2x + 18 = 54". || ایک حقیقی صورتحال بنائیں اور حل کریں جسے دی گئی خطی مساوات "2x + 18 = 54" سے ظاہر کیا جا سکے۔ || د ریښتینې نړۍ یو حالت جوړ او حل کړئ چې د ورکړل شوې خطي معادلې "2x + 18 = 54" په مرسته وښودل شي.
+qsolution One example: each notebook costs Rs 18
+ss Example: Sana bought 2 notebooks of the same price and a pen for Rs 18. She paid Rs 54 in all. What is the price of one notebook? || مثال: ثناء نے ایک جیسی قیمت کی 2 کاپیاں اور 18 روپے کا ایک قلم خریدا۔ اس نے کل 54 روپے دیے۔ ایک کاپی کی قیمت کیا ہے؟ || بېلګه: ثنا د یوې بیې 2 کتابچې او د 18 روپیو یو قلم واخیست. ټولې 54 روپۍ یې ورکړې. د یوې کتابچې بیه څومره ده؟
+suse lineq 2x + 18 = 54
+endsolution
+endbox
+@sec u7-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- A mathematical sentence which has equal sides separated by an equals sign is called an equation. || وہ ریاضیاتی جملہ جس کے برابر اطراف مساوات کی علامت سے الگ ہوں مساوات کہلاتا ہے۔ || هغه ریاضي جمله چې برابر اړخونه یې د مساوات په نښه جلا وي معادله بلل کېږي.
+- An algebraic equation is an open mathematical statement that shows the equality of two or more expressions (with at least one variable). || الجبری مساوات ایک کھلا ریاضیاتی بیان ہے جو دو یا زیادہ عبارتوں کی برابری ظاہر کرتا ہے (کم از کم ایک متغیر کے ساتھ)۔ || الجبري معادله یو خلاص ریاضي بیان دی چې د دوو یا ډېرو افادو برابري ښيي (لږ تر لږه له یو متحول سره).
+- A linear equation is an algebraic equation where the highest power of the variables involved is 1. || خطی مساوات ایسی الجبری مساوات ہے جس میں شامل متغیرات کی سب سے بڑی طاقت 1 ہو۔ || خطي معادله هغه الجبري معادله ده چې د شاملو متحولونو تر ټولو لوی توان 1 وي.
+- Solving linear equation is the process to find the value of the involved variable. || خطی مساوات حل کرنا شامل متغیر کی قیمت معلوم کرنے کا عمل ہے۔ || د خطي معادلې حلول د شامل متحول د ارزښت د موندلو بهیر دی.
+- Any situation where there is an unknown quantity and some condition is given, we can easily solve it through linear equations. || کوئی بھی صورتحال جس میں نامعلوم مقدار اور کوئی شرط دی گئی ہو، ہم اسے خطی مساواتوں سے آسانی سے حل کر سکتے ہیں۔ || هر هغه حالت چې پکې نامعلوم مقدار او یو شرط ورکړل شوی وي، د خطي معادلو په مرسته یې په اسانۍ حلولی شو.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Expression || عبارت || افاده
+- Algebraic expression || الجبری عبارت || الجبري افاده
+- Equation || مساوات || معادله
+- Algebraic equation || الجبری مساوات || الجبري معادله
+- Linear equation || خطی مساوات || خطي معادله
+- Linear expression || خطی عبارت || خطي افاده
+endbox

@@ -1,0 +1,20 @@
+@printed 107
+q 30 | Open the window. || کھڑکی کھولو۔ || کړکۍ خلاصه کړه.
+sol ✓ command ## It tells someone to do something. || یہ حکم ہے۔ || دا امر دی.
+q 31 | What are you doing? || تم کیا کر رہے ہو؟ || ته څه کوې؟
+sol ✗ not a command (it is a question) ## It asks something. || یہ سوال ہے۔ || دا پوښتنه ده.
+q 32 | Complete your homework. || اپنا ہوم ورک مکمل کرو۔ || خپل کورنی کار بشپړ کړه.
+sol ✓ command ## It tells someone to do something. || یہ حکم ہے۔ || دا امر دی.
+# D) Writing || د) تحریر || د) لیکنه
+## 1. Learning to Write || ۱۔ لکھنا سیکھنا || ۱. لیکل زده کول
+q 33 | Read and fill in the speech bubbles with the given sentences/phrases: 1. How are you? 2. I am fine. 3. What are you doing? 4. I am playing with my rabbit. || دیے گئے جملوں سے تقریری غبارے پُر کریں: ۱۔ How are you? ۲۔ I am fine. ۳۔ What are you doing? ۴۔ I am playing with my rabbit. || په ورکړل شویو جملو د خبرو پوکاڼي ډک کړئ: ۱. How are you? ۲. I am fine. ۳. What are you doing? ۴. I am playing with my rabbit.
+scene 380 150 ; text 70 20 Hello! ; text 300 20 Hi. ; text 70 60 ______ ; text 70 100 ______ ; text 300 60 ______ ; text 300 100 ______ ; girl.orange@160,90,2 ; rabbit.white@175,130,0.8 ; girl.pink@230,90,2 || Two girls talk: first girl says "Hello!", second says "Hi."; four empty bubbles || دو لڑکیاں بات کرتی ہیں: پہلی "Hello!"، دوسری "Hi."؛ چار خالی غبارے || دوه نجونې خبرې کوي: لومړۍ "Hello!"، دویمه "Hi."؛ څلور تش پوکاڼي
+sol Girl who says "Hello!": 1. "How are you?" and 3. "What are you doing?" Girl who says "Hi.": 2. "I am fine." and 4. "I am playing with my rabbit." ## The two girls take turns, following the numbers 1-4. || دونوں لڑکیاں باری باری ۱ تا ۴ کی ترتیب سے بولتی ہیں۔ || دواړه نجونې په وار د ۱ تر ۴ په ترتیب خبرې کوي.
+## 2. Creative Writing || ۲۔ تخلیقی تحریر || ۲. تخلیقي لیکنه
+q 34 | Look at the picture and write three to four sentences about it. You may take help from the given word bank: green, beak, love, play. (I have a parrot. Its name is Mithu.) || تصویر دیکھیں اور اس کے بارے میں تین چار جملے لکھیں۔ الفاظ کے ذخیرے سے مدد لیں: green، beak، love، play۔ (میرے پاس ایک طوطا ہے۔ اس کا نام مٹھو ہے۔) || انځور وګورئ او د هغه په اړه درې څلور جملې ولیکئ. له کلمو زېرمې مرسته واخلئ: green، beak، love، play.
+cnt bird.green:1 s=2.5 || A green parrot with a red beak || سرخ چونچ والا سبز طوطا || سره مښوکه لرونکی شین طوطی
+sol For example: I have a parrot. Its name is Mithu. It is green. It has a red beak. I love my parrot. I play with it every day. ## Use the word bank. || الفاظ کا ذخیرہ استعمال کریں۔ || د کلمو زېرمه وکاروئ.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p D2 Help students write a paragraph on their own. || D2 طلبہ کو خود ایک پیراگراف لکھنے میں مدد دیں۔ || D2 زده کوونکو سره د یوه پاراګراف په پخپله لیکلو کې مرسته وکړئ.
+endbox
+endexercise

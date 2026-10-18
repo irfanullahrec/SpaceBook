@@ -1,0 +1,47 @@
+@printed 268
+@issue The left edge of the scan is cropped: the Solution of the AAS Example 1 is read as "From △ABC and △YXZ we can see that: ∠A = ∠Y, ∠C = ∠Z, AB = YX. Therefore, both triangles are congruent by AAS property." The RHS Example 1 solution prints "AB = AB = 9 cm, AC = BD = 5 cm" (the first AB is a typographical repeat for AB = BA; kept as printed). The statement "The length of the base is 5 cm of both triangles" is as printed. Exercise 10.10 Q1 a) shows B (90°) and D (90°) with BC = 7 cm and CD = 7 cm and the common side CA; Q1 b) shows ABC and DEF with 60°, 1.2 cm and 55°. Exercise 10.10 continues on the next page. Figures are recreated.
+## Solution: || حل: || حل:
+p From △ABC and △YXZ we can see that: || △ABC اور △YXZ سے ہم دیکھ سکتے ہیں کہ: || له △ABC او △YXZ څخه موږ لیدلی شو چې:
+eq \angle A = \angle Y,\quad \angle C = \angle Z,\quad \overline{AB} = \overline{YX}
+p Therefore, both triangles are congruent by AAS property. || لہٰذا دونوں مثلث AAS خاصیت کے مطابق مماثل ہیں۔ || نو دواړه مثلثونه د AAS ځانګړنې له مخې همخوا دي.
+svg Triangle ABC (A = 75°, C = 65°) and triangle XYZ (Y = 75°, Z = 65°) with equal sides AB and XY || مثلث ABC اور XYZ || مثلثونه ABC او XYZ
+<svg viewBox="0 0 440 130" width="440" role="img" aria-label="Triangle ABC with C at the top (65 degrees), A at the bottom left (75 degrees) and B at the bottom right; triangle XYZ with Z at the top (65 degrees), X at the bottom left and Y at the bottom right (75 degrees); AB and XY carry one tick" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,100 180,100 70,12" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="6" y="108" font-weight="700">A</text><text x="184" y="108" font-weight="700">B</text><text x="66" y="10" font-weight="700">C</text><text x="38" y="94">75°</text><text x="64" y="30">65°</text><line x1="100" y1="96" x2="100" y2="104" stroke="#0f172a"/>
+<polygon points="250,100 410,100 360,12" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="236" y="108" font-weight="700">X</text><text x="414" y="108" font-weight="700">Y</text><text x="356" y="10" font-weight="700">Z</text><text x="368" y="94">75°</text><text x="340" y="30">65°</text><line x1="330" y1="96" x2="330" y2="104" stroke="#0f172a"/>
+</svg>
+endsvg
+endexample
+### Property 5: Right-Angle-Hypotenuse-Side (RHS ≅ RHS) || خاصیت 5: قائمہ زاویہ-وتر-ضلع (RHS ≅ RHS) || ځانګړنه 5: قایم زاویه-وتر-ضلعه (RHS ≅ RHS)
+p The property states that "In a right-angled triangle, if the hypotenuse and one side of a triangle is equal to the corresponding hypotenuse and the side of the other triangle, then the triangles are congruent". Look at the triangles ABC and DEF. The length of one side and the hypotenuse of triangle ABC are congruent to the corresponding side and the hypotenuse of triangle DEF i.e. || یہ خاصیت بتاتی ہے کہ "قائمہ زاویہ مثلث میں اگر ایک مثلث کا وتر اور ایک طرف دوسرے مثلث کے متناظر وتر اور طرف کے برابر ہوں تو مثلث مماثل ہوتے ہیں"۔ مثلث ABC اور DEF کو دیکھیں۔ مثلث ABC کی ایک طرف اور وتر کی لمبائی مثلث DEF کی متناظر طرف اور وتر کے مماثل ہے یعنی || دا ځانګړنه وايي چې "په قایم زاویه مثلث کې که د یوه مثلث وتر او یوه ضلعه د بل مثلث له متناظر وتر او ضلعې سره برابره وي، نو مثلثونه همخوا وي". مثلثونو ABC او DEF ته وګورئ. د مثلث ABC د یوې ضلعې او وتر اوږدوالی د مثلث DEF له متناظرې ضلعې او وتر سره همخوا دی یعنې
+eq \overline{AC} = \overline{DF}\quad\text{and}\quad \overline{BC} = \overline{EF}.
+eq \therefore\ \triangle ABC \cong \triangle DEF
+svg Right triangles ABC and DEF with right angles at B and E || قائمہ مثلث ABC اور DEF || قایم مثلثونه ABC او DEF
+<svg viewBox="0 0 330 140" width="330" role="img" aria-label="Right triangle ABC with the right angle at B bottom left, A above B, C bottom right; right triangle DEF with the right angle at E bottom left, D above E, F bottom right; hypotenuses AC and DF carry one tick, bases BC and EF carry two ticks" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,120 20,12 150,120" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><rect x="20" y="112" width="8" height="8" fill="none" stroke="#0f172a"/><text x="16" y="10" font-weight="700">A</text><text x="6" y="134" font-weight="700">B</text><text x="152" y="134" font-weight="700">C</text><line x1="82" y1="62" x2="90" y2="68" stroke="#0f172a"/><line x1="82" y1="116" x2="82" y2="124" stroke="#0f172a"/><line x1="86" y1="116" x2="86" y2="124" stroke="#0f172a"/>
+<polygon points="190,120 190,12 320,120" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><rect x="190" y="112" width="8" height="8" fill="none" stroke="#0f172a"/><text x="186" y="10" font-weight="700">D</text><text x="176" y="134" font-weight="700">E</text><text x="322" y="134" font-weight="700">F</text><line x1="252" y1="62" x2="260" y2="68" stroke="#0f172a"/><line x1="252" y1="116" x2="252" y2="124" stroke="#0f172a"/><line x1="256" y1="116" x2="256" y2="124" stroke="#0f172a"/>
+</svg>
+endsvg
+example 1
+p Find if the △ABC and △BAD are congruent triangles. || معلوم کریں کہ آیا △ABC اور △BAD مماثل مثلث ہیں۔ || پیدا کړئ چې ایا △ABC او △BAD همخوا مثلثونه دي.
+## Solution: || حل: || حل:
+p The hypotenuse AB is the common side of both triangles. The length of the base is 5 cm of both triangles, so || وتر AB دونوں مثلثوں کی مشترک طرف ہے۔ دونوں مثلثوں کی قاعدے کی لمبائی 5 cm ہے، لہٰذا || وتر AB د دواړو مثلثونو گډه ضلعه ده. د دواړو مثلثونو د قاعدې اوږدوالی 5 cm دی، نو
+eq \overline{AB} = \overline{AB} = 9\ \text{cm},\quad \overline{AC} = \overline{BD} = 5\ \text{cm}
+p So, according to RHS property △ABC ≅ △BAD. || لہٰذا RHS خاصیت کے مطابق △ABC ≅ △BAD۔ || نو د RHS ځانګړنې له مخې △ABC ≅ △BAD.
+svg Right triangles ABC and BAD sharing the hypotenuse AB = 9 cm, with AC = BD = 5 cm || قائمہ مثلث ABC اور BAD || قایم مثلثونه ABC او BAD
+<svg viewBox="0 0 340 170" width="340" role="img" aria-label="Segment AB of 9 cm at the bottom, A at the left and B at the right; C above A on the left with a 90 degree angle, D above B on the right with a 90 degree angle; AC and BD are 5 cm; the lines AD and BC cross inside" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,140 320,140 250,30" fill="none" stroke="#0f172a" stroke-width="1.5"/><polygon points="20,140 320,140 90,30" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="82" y="34" width="10" height="10" fill="none" stroke="#0f172a"/><rect x="240" y="34" width="10" height="10" fill="none" stroke="#0f172a"/>
+<text x="6" y="148" font-weight="700">A</text><text x="324" y="148" font-weight="700">B</text><text x="86" y="24" font-weight="700">C</text><text x="252" y="24" font-weight="700">D</text><text x="150" y="156">9 cm</text><text x="104" y="60">90°</text><text x="212" y="60">90°</text><text x="36" y="82">5 cm</text><text x="286" y="92">5 cm</text>
+</svg>
+endsvg
+endexample
+exercise 10.10
+q 1 | Apply properties of congruent triangles and find if the following triangles are congruent or not. || مماثل مثلثوں کی خصوصیات استعمال کر کے معلوم کریں کہ آیا درج ذیل مثلث مماثل ہیں یا نہیں۔ || د همخوا مثلثونو ځانګړتیاوې وکاروئ او پیدا کړئ چې ایا لاندې مثلثونه همخوا دي که نه.
+svg Q1 a) triangles ABC and ADC with right angles at B and D, BC = CD = 7 cm; b) triangles ABC and DEF with 60°, 1.2 cm and 55° || سوال 1 الف) اور ب) || 1 پوښتنه الف) او ب)
+<svg viewBox="0 0 520 170" width="520" role="img" aria-label="a) a kite-like figure with B at the top and D at the bottom both with 90 degree angles, C on the left joined to A on the right by a horizontal line, BC and CD of 7 cm; b) triangle ABC with A at the top (60 degrees), B bottom left, C bottom right (55 degrees) and AC of 1.2 cm, and triangle DEF identical with D, E, F" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<text x="4" y="14">a)</text><polygon points="40,90 90,20 180,90 90,160" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><line x1="40" y1="90" x2="180" y2="90" stroke="#0f172a"/>
+<text x="86" y="16" font-weight="700">B</text><text x="26" y="94" font-weight="700">C</text><text x="184" y="94" font-weight="700">A</text><text x="86" y="174" font-weight="700">D</text><text x="86" y="44">90°</text><text x="86" y="142">90°</text><text x="40" y="48">7 cm</text><text x="40" y="140">7 cm</text>
+<text x="250" y="14">b)</text><polygon points="290,14 270,150 370,150" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="286" y="12" font-weight="700">A</text><text x="258" y="162" font-weight="700">B</text><text x="372" y="162" font-weight="700">C</text><text x="284" y="40">60°</text><text x="336" y="142">55°</text><text x="340" y="80">1.2 cm</text>
+<polygon points="440,14 420,150 520,150" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="436" y="12" font-weight="700">D</text><text x="408" y="162" font-weight="700">E</text><text x="522" y="162" font-weight="700">F</text><text x="434" y="40">60°</text><text x="486" y="142">55°</text><text x="490" y="80">1.2 cm</text>
+</svg>
+endsvg

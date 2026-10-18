@@ -1,0 +1,29 @@
+@printed 37
+@status lesson
+## 2.6.2 Create 3D Objects || 2.6.2 تھری ڈی اشیا بنانا || 2.6.2 درې بُعدي شیان جوړول
+svg Editing a selected 3D cube: handles for Z-axis rotation, Z-axis position, Y-axis rotation and X-axis rotation; the "3D selection" panel offers Edit color, Select all objects, Multi select, Group, Cut, Copy, Paste, Delete, Rotate and flip, and Texturing (Smooth). || منتخب تھری ڈی مکعب کی ترمیم: محوروں کے گرد گھمانے کے ہینڈل اور ”3D selection“ پینل کے اختیارات۔ || د ټاکل شوي درې بُعدي مکعب سمون: د محورونو څرخولو لاستي او د "3D selection" پانل انتخابونه.
+<svg viewBox="0 0 470 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="3D selection tools">
+<rect x="70" y="40" width="170" height="140" fill="#fff" stroke="#94a3b8"/>
+<rect x="110" y="70" width="90" height="80" fill="none" stroke="#475569" stroke-dasharray="3 3"/>
+<path d="M120 90 L160 78 L190 92 L150 104z" fill="#fb923c"/><path d="M120 90 L150 104 L150 140 L120 126z" fill="#ea580c"/><path d="M150 104 L190 92 L190 128 L150 140z" fill="#f97316"/>
+<g fill="#fff" stroke="#475569"><circle cx="155" cy="62" r="7"/><circle cx="104" cy="110" r="7"/><circle cx="206" cy="110" r="7"/><circle cx="155" cy="158" r="7"/></g>
+<g fill="#1e293b" font-style="italic" font-weight="bold"><text x="5" y="80">Z-axis</text><text x="5" y="94">rotation</text><text x="5" y="200">Z-axis position</text><text x="110" y="220">Y-axis rotation</text><text x="200" y="200">X-axis rotation</text></g>
+<g stroke="#db2777" fill="none"><path d="M148 60 Q90 40 40 70 M98 112 Q60 150 50 188 M155 165 L150 205 M212 112 Q240 160 240 188"/></g>
+<rect x="280" y="10" width="110" height="210" fill="#fff" stroke="#0284c7" stroke-width="2"/>
+<g fill="#1e293b" font-size="10"><text x="288" y="26" font-weight="bold">3D selection</text><text x="300" y="45">Edit colour</text><text x="288" y="62">Select</text><text x="292" y="78">Select all · Multiselect</text><text x="288" y="96">Grouping</text><text x="292" y="112">Group · Ungroup</text><text x="288" y="130">Edit</text><text x="292" y="146">✂  ⧉  ⎘  🗑</text><text x="288" y="164">Rotate and flip</text><text x="288" y="190">Texturing</text><text x="292" y="206">✓ Smooth</text></g>
+<g fill="#db2777" font-style="italic" font-weight="bold"><text x="400" y="45">Edit color</text><text x="400" y="70">Multi select</text><text x="400" y="88">Select all</text><text x="400" y="128">Cut</text><text x="400" y="146">Delete</text><text x="400" y="164">Paste</text><text x="400" y="182">Copy</text></g>
+</svg>
+endsvg
+p Following are the steps to create a 3D Shape: || تھری ڈی شکل بنانے کے مراحل یہ ہیں: || د درې بُعدي شکل جوړولو ګامونه:
+- (1) Select ***3D shapes*** tool. || (1) ***3D shapes*** ٹول منتخب کریں۔ || (1) ***3D shapes*** وسیله وټاکئ.
+- (2) Select the ***Cube*** object. || (2) ***Cube*** (مکعب) شے منتخب کریں۔ || (2) ***مکعب*** وټاکئ.
+- (3) Select material (appearance of surface). || (3) مادّہ (سطح کی ظاہری صورت) منتخب کریں۔ || (3) مواد (د سطحې بڼه) وټاکئ.
+- (4) Drag out a cube. || (4) گھسیٹ کر مکعب بنائیں۔ || (4) مکعب کش کړئ.
+- (5) Rotate the Cube around each of the 3 axes. || (5) مکعب کو تینوں محوروں کے گرد گھمائیں۔ || (5) مکعب د درېواړو محورونو شاوخوا وڅرخوئ.
+- (6) Skew the Cube. || (6) مکعب کو ترچھا کریں۔ || (6) مکعب کږ کړئ.
+- (7) Change the color of the Cube. || (7) مکعب کا رنگ بدلیں۔ || (7) د مکعب رنګ بدل کړئ.
+- (8) Flip the Cube horizontally or vertically. || (8) مکعب کو افقی یا عمودی طور پر پلٹیں۔ || (8) مکعب افقي یا عمودي واړوئ.
+@deco Screenshot: four yellow cones showing the materials Matte, Gloss, Dull and Polished material, with the 3D shapes panel on the right.
+box note | Tip || ٹپ || لارښوونه
+p Page Up and Page Down Keys can be used for Zoom in and Zoom out of working area. || کام کی جگہ کو بڑا یا چھوٹا (زوم اِن/زوم آؤٹ) کرنے کے لیے پیج اپ اور پیج ڈاؤن کیز استعمال کی جا سکتی ہیں۔ || د کار سیمې د لویولو او کوچني کولو لپاره Page Up او Page Down کیلي کارول کېږي.
+endbox

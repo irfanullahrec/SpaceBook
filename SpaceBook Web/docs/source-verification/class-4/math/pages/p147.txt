@@ -1,0 +1,30 @@
+@printed 149
+@deco Cartoon boy with a magnifying glass beside "Key Fact"; cartoon book character beside "Exercise 4".
+@issue Exercise 4 Q2(b): the shading of the large 14 × 9 grid is too faint on the scan to count the shaded boxes; the grid is reproduced without shading.
+box info | Key Fact || اہم نکتہ || مهم ټکی
+p The surface covered by a 2-D shape is called its area. The area of a figure can be calculated in centimetre square and metre square. || دو ابعادی شکل کے گھیرے ہوئے سطح کو اس کا رقبہ کہتے ہیں۔ کسی شکل کا رقبہ مربع سینٹی میٹر اور مربع میٹر میں معلوم کیا جا سکتا ہے۔ || هغه سطحه چې یو دوه بُعدي شکل یې نیسي، د هغه مساحت بلل کېږي. د شکل مساحت په مربع سانتي متر او مربع متر محاسبه کېدای شي.
+endbox
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Draw a square and a rectangle on the square grid, with the same perimeter and area. || مربع خانوں پر ایک مربع اور ایک مستطیل بنائیں جن کا احاطہ اور رقبہ ایک جیسا ہو۔ || پر مربع جال یو مربع او یو مستطیل رسم کړئ چې محیط او مساحت یې یو شان وي.
+endbox
+exercise Exercise 4 (Page 149)
+q 1 | Find the perimeter of the shaded figures. || رنگے ہوئے اشکال کا احاطہ معلوم کریں۔ || د رنګ شویو شکلونو محیط ومومئ.
+qp a | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 7 7 22 ; fillcells #bae6fd 1,1 2,1 3,1 4,1 5,1 1,2 2,2 3,2 4,2 5,2 1,3 2,3 3,3 4,3 5,3 1,4 2,4 3,4 4,4 5,4 1,5 2,5 3,5 4,5 5,5 || a) a shaded square 5 boxes by 5 boxes || a) 5 بائی 5 خانوں کا رنگا ہوا مربع || a) د 5 په 5 خونو رنګ شوی مربع
+qp b | (each box 1 cm × 1 cm) || (ہر خانہ 1 سینٹی میٹر × 1 سینٹی میٹر) || (هره خونه 1 cm × 1 cm)
+sqgrid 8 7 22 ; fillcells #f9a8d4 1,1 2,1 3,1 4,1 5,1 6,1 7,1 1,2 2,2 3,2 4,2 5,2 6,2 7,2 1,3 2,3 3,3 4,3 5,3 6,3 7,3 1,4 2,4 3,4 4,4 5,4 6,4 7,4 || b) a shaded rectangle 7 boxes by 4 boxes || b) 7 بائی 4 خانوں کا رنگا ہوا مستطیل || b) د 7 په 4 خونو رنګ شوی مستطیل
+qp c | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 7 5 22 ; fillcells #f5d0fe 0,1 1,1 2,1 3,1 4,1 5,1 0,2 1,2 2,2 3,2 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3 0,4 1,4 2,4 3,4 4,4 5,4 || c) a shaded rectangle 6 boxes by 4 boxes || c) 6 بائی 4 خانوں کا رنگا ہوا مستطیل || c) د 6 په 4 خونو رنګ شوی مستطیل
+q 2 | Find the area of the shaded figures. || رنگے ہوئے اشکال کا رقبہ معلوم کریں۔ || د رنګ شویو شکلونو مساحت ومومئ.
+qp a | (each box 1 cm × 1 cm) || (ہر خانہ 1 سینٹی میٹر × 1 سینٹی میٹر) || (هره خونه 1 cm × 1 cm)
+sqgrid 7 5 22 ; fillcells #1e3a8a 0,0 1,0 2,0 3,0 0,1 1,1 2,1 3,1 0,2 1,2 2,2 3,2 || a) shaded part 4 boxes by 3 boxes || a) رنگا ہوا حصہ 4 بائی 3 خانے || a) رنګ شوې برخه 4 په 3 خونې
+qp b | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 14 9 18 || b) grid of 14 × 9 boxes (shading not legible on the scan) || b) 14 × 9 خانوں کا جال (اسکین پر رنگ واضح نہیں) || b) د 14 × 9 خونو جال (رنګ په سکین کې نه ښکاري)
+qp c | (each box 1 cm × 1 cm) || (ہر خانہ 1 سینٹی میٹر × 1 سینٹی میٹر) || (هره خونه 1 cm × 1 cm)
+sqgrid 7 5 22 ; fillcells #86efac 2,2 3,2 4,2 5,2 2,3 3,3 4,3 5,3 || c) shaded part 4 boxes by 2 boxes || c) رنگا ہوا حصہ 4 بائی 2 خانے || c) رنګ شوې برخه 4 په 2 خونې
+qp d | (each box 1 m × 1 m) || (ہر خانہ 1 میٹر × 1 میٹر) || (هره خونه 1 m × 1 m)
+sqgrid 7 5 22 ; fillcells #f472b6 3,1 4,1 3,2 4,2 2,3 3,3 4,3 5,3 2,4 3,4 4,4 5,4 || d) a T-shaped figure: 2 × 2 boxes on top of 4 × 2 boxes || d) T شکل: 4 × 2 خانوں کے اوپر 2 × 2 خانے || d) د T شکل: د 4 × 2 خونو پر سر 2 × 2 خونې
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Give a square grid paper to students and ask them to draw squares and rectangles of different lengths on it and find their perimeter and area. || طلبہ کو مربع خانوں والا کاغذ دیں اور ان سے کہیں کہ اس پر مختلف لمبائی کے مربع اور مستطیل بنائیں اور ان کا احاطہ اور رقبہ معلوم کریں۔ || زده کوونکو ته مربع جال لرونکې پاڼه ورکړئ او ورته ووایاست چې پرې د بېلابېلو اوږدوالو مربع او مستطیلونه رسم کړي او محیط او مساحت یې ومومي.
+endbox

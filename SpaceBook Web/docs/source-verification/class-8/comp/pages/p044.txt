@@ -1,0 +1,41 @@
+@printed 40
+@deco Light-blue code panels with pseudocode lines (reproduced below as code boxes).
+p Example 4: Main Goal: The program allows a user to check whether the input (any number) is even or odd. || مثال 4: بنیادی مقصد: پروگرام صارف کو یہ جانچنے دیتا ہے کہ ان پٹ (کوئی بھی عدد) جفت ہے یا طاق۔ || بېلګه ۴: اصلي موخه: پروګرام کاروونکي ته اجازه ورکوي وګوري چې ان پټ (هره شمېره) جفت دی که طاق.
+box code | Pseudocode (Example 4) || سوڈو کوڈ (مثال 4) || سوډو کوډ (۴ بېلګه)
+m Line 0. Start
+m Line 1.    Take input (any number)
+m Line 2.    If number mod 2 = 0
+m Line 3.        It is Even
+m Line 4.    Else
+m Line 5.        It is Odd
+m Line 6. End
+endbox
+### 3.2.2 Constant and Variables || 3.2.2 مستقل اور متغیرات || 3.2.2 ثابتونه او متغیرونه
+p During the execution of a program, value of reference may change or remain static. The ones that remain static during the whole execution of program are constants. || پروگرام کے عمل کے دوران حوالے کی قدر تبدیل ہو سکتی ہے یا مستقل رہ سکتی ہے۔ جو پروگرام کے پورے عمل کے دوران مستقل رہیں وہ کانسٹنٹس (مستقل) ہیں۔ || د پروګرام د اجرا په جریان کې د حوالې ارزښت بدلېدای شي یا ثابت پاتې کېدای شي. هغه چې د پروګرام د ټول اجرا په جریان کې ثابت پاتې کېږي ثابتونه (constants) دي.
+box code | Constant || مستقل || ثابت
+m Constant Name : static value        PI : 3.14
+endbox
+p On the other hand, the identifier which may update during execution and newer values can be overwritten are variables. Additionally, the memory space is assigned based on the type of variable. || دوسری طرف وہ شناخت کنندہ جو عمل کے دوران اپ ڈیٹ ہو سکتا ہے اور جس کی نئی قدریں پرانی قدروں پر لکھی جا سکتی ہیں وہ ویری ایبلز (متغیرات) ہیں۔ مزید یہ کہ میموری کی جگہ متغیر کی قسم کی بنیاد پر مختص کی جاتی ہے۔ || بل خوا هغه پېژندونکی چې د اجرا په جریان کې تازه کېدای شي او نوي ارزښتونه پکې لیکل کېدای شي متغیرونه (variables) دي. سربېره پر دې د حافظې ځای د متغیر د ډول پر بنسټ ټاکل کېږي.
+box code | Variable || متغیر || متغیر
+m Variable Name : value        int count = 0
+endbox
+### 3.2.3 Conditional Statements || 3.2.3 شرطیہ بیانات || 3.2.3 شرطي بیانات
+p Conditions are check points in a program which determine the flow of a program among possible branches based on variable values or events. The scenario presented in the pseudocode reflects the use of a conditional statement in daily life. || شرائط پروگرام میں جانچ کے وہ نقاط ہیں جو متغیرات کی قدروں یا واقعات کی بنیاد پر ممکنہ شاخوں میں پروگرام کے بہاؤ کا تعین کرتے ہیں۔ سوڈو کوڈ میں پیش کیا گیا منظرنامہ روزمرہ زندگی میں شرطیہ بیان کے استعمال کی عکاسی کرتا ہے۔ || شرطونه په پروګرام کې د کتنې ټکي دي چې د متغیر ارزښتونو یا پېښو پر بنسټ د ممکنو څانګو ترمنځ د پروګرام جریان ټاکي. په سوډو کوډ کې وړاندې شوی حالت په ورځني ژوند کې د شرطي بیان کارونه څرګندوي.
+box code | Conditional statement — simple || شرطیہ بیان — سادہ || شرطي بیان — ساده
+m Line 0:  IF it is weekday
+m Line 1:      Dress Up for School
+m Line 2:  ELSE
+m Line 3:      DO Weekend Activity
+m Line 4:  END IF
+endbox
+box code | Conditional statement — nested || شرطیہ بیان — نیسٹڈ || شرطي بیان — نیسټ شوی
+m Line 0:  IF it is weekday
+m Line 1:      IF I am feeling temperature
+m Line 2:          Take Medicine Rest
+m Line 3:      ELSE
+m Line 4:          Dress Up for School
+m Line 5:      END IF
+m Line 6:  ELSE
+m Line 7:      Do Weekend Activity
+m Line 8:  END IF
+endbox

@@ -1,0 +1,51 @@
+@printed 148
+q 5 | How many types of triangles are there with respect to their sides and angles? || اضلاع اور زاویوں کے لحاظ سے مثلث کی کتنی اقسام ہیں؟ || د ضلعو او زاويو له مخې د مثلث څو ډولونه دي؟
+sol 3 types by sides and 3 types by angles ## By sides: equilateral, isosceles, scalene. By angles: acute-angled, right-angled, obtuse-angled. || اضلاع کے لحاظ سے: مساوی الاضلاع، مساوی الساقین، مختلف الاضلاع۔ زاویوں کے لحاظ سے: حادہ زاویہ، قائمہ زاویہ، منفرجہ زاویہ۔ || د ضلعو له مخې: متساوي الاضلاع، متساوي الساقین، مختلف الاضلاع. د زاويو له مخې: حاده، قایمه، منفرجه زاویه لرونکي.
+q 6 | Draw a triangle IJK in which, $m\angle I = 70°$, $\overline{IJ} = 6.8$ cm and $m\angle J = 28°$. || ایک مثلث IJK بنائیں جس میں $m\angle I = 70°$، $\overline{IJ} = 6.8$ cm اور $m\angle J = 28°$ ہو۔ || یو مثلث IJK رسم کړئ چې پکې $m\angle I = 70°$، $\overline{IJ} = 6.8$ cm او $m\angle J = 28°$ وي.
+poly I:0,0 J:6.8,0 K:1.1,3.03 | fill=#fff | sides=6.8 cm,, | angles=70°,28°,82° | scale=34 || Triangle IJK (SpaceBook construction) || مثلث IJK || مثلث IJK
+sol ∠K = 82°, IK ≈ 3.2 cm, JK ≈ 6.5 cm ## ∠K = 180° − (70° + 28°) = 82°; measuring gives IK ≈ 3.2 cm and JK ≈ 6.5 cm. || ∠K = 180° − (70° + 28°) = 82°؛ ناپنے پر IK ≈ 3.2 cm اور JK ≈ 6.5 cm۔ || ∠K = 180° − (70° + 28°) = 82°؛ په اندازه کولو IK ≈ 3.2 cm او JK ≈ 6.5 cm.
+q 7 | Draw a triangle PQR in which, $\overline{QR} = 3.3$cm, $\overline{PQ} = 5.2$ cm and $m\angle PQR = 75°$. || ایک مثلث PQR بنائیں جس میں $\overline{QR} = 3.3$ cm، $\overline{PQ} = 5.2$ cm اور $m\angle PQR = 75°$ ہو۔ || یو مثلث PQR رسم کړئ چې پکې $\overline{QR} = 3.3$ cm، $\overline{PQ} = 5.2$ cm او $m\angle PQR = 75°$ وي.
+poly Q:0,0 R:3.3,0 P:1.35,5.02 | fill=#fff | sides=3.3 cm,,5.2 cm | angles=75°,, | scale=34 || Triangle PQR (SpaceBook construction) || مثلث PQR || مثلث PQR
+sol PR ≈ 5.4 cm, ∠P ≈ 36°, ∠R ≈ 69° ## Draw QR = 3.3 cm, make 75° at Q, mark P 5.2 cm along that arm and join P to R; measuring gives PR ≈ 5.4 cm, ∠P ≈ 36° and ∠R ≈ 69°. || QR = 3.3 cm کھینچیں، Q پر 75° بنائیں، اس بازو پر 5.2 cm پر P لگائیں اور P کو R سے ملائیں؛ ناپنے پر PR ≈ 5.4 cm، ∠P ≈ 36° اور ∠R ≈ 69°۔ || QR = 3.3 cm رسم کړئ، پر Q 75° جوړه کړئ، په هغه بازو 5.2 cm لرې P کېږدئ او P له R سره ونښلوئ؛ په اندازه کولو PR ≈ 5.4 cm، ∠P ≈ 36° او ∠R ≈ 69°.
+q 8 | Draw squares according to the given lengths with the help of protractor and ruler. || زاویہ پیما اور فٹے کی مدد سے دی گئی لمبائیوں کے مطابق مربع بنائیں۔ || د زاویه پیما او خط کش په مرسته د ورکړل شوو اوږدوالو سره سم مربعونه رسم کړئ.
+qp a | 4 cm
+qp b | 5.1 cm
+qp c | 3.6 cm
+qp d | 4.9 cm
+sol Construction ## As for square ABCD on page 133. || صفحہ 133 کے مربع ABCD کی طرح۔ || لکه د 133 مخ مربع ABCD.
+q 9 | Draw rectangles with the help of protractor and ruler according to the given lengths and widths. || زاویہ پیما اور فٹے کی مدد سے دی گئی لمبائیوں اور چوڑائیوں کے مطابق مستطیل بنائیں۔ || د زاویه پیما او خط کش په مرسته د ورکړل شوو اوږدوالو او پلنوالو سره سم مستطیلونه رسم کړئ.
+qp a | L = 4 cm, W = 3.4 cm
+qp b | L = 5 cm, W = 3 cm
+qp c | L = 6.6 cm, W = 4.2 cm
+qp d | L = 7 cm, W = 2.4 cm
+sol Construction ## As for rectangle KLMN on pages 134–135. || صفحہ 134–135 کے مستطیل KLMN کی طرح۔ || لکه د 134–135 مخونو مستطیل KLMN.
+q 10 | Circle the figures which have reflective symmetry. Also draw their line of symmetry. || انعکاسی تشاکل والی اشکال پر دائرہ لگائیں۔ ان کا خطِ تشاکل بھی کھینچیں۔ || انعکاسي تناظر لرونکي شکلونه په کړۍ کې ونیسئ. د تناظر کرښه یې هم رسم کړئ.
+shape righttri || a) || a) || a)
+qp a | Figure a) || شکل a) || شکل a)
+sol No ## A right triangle with three different sides has no line of symmetry. || تین مختلف اضلاع والی قائمہ زاویہ مثلث کا کوئی خطِ تشاکل نہیں۔ || د دریو بېلو ضلعو قایمه زاویه لرونکی مثلث د تناظر کرښه نه لري.
+shape notchrect | line=both || b) || b) || b)
+qp b | Figure b) || شکل b) || شکل b)
+sol Yes — 2 lines (vertical and horizontal) ## Its four cut corners are alike, so both middle lines are lines of symmetry. || چاروں کٹے کونے ایک جیسے ہیں، اس لیے دونوں درمیانی لکیریں خطِ تشاکل ہیں۔ || څلور واړه پرې شوي کونجونه یو شان دي، نو دواړه منځنۍ کرښې د تناظر کرښې دي.
+shape chevron | line=h || c) || c) || c)
+qp c | Figure c) || شکل c) || شکل c)
+sol Yes — 1 line (horizontal) ## The top half folds exactly onto the bottom half. || اوپر کا آدھا حصہ نیچے والے آدھے پر بالکل پورا آتا ہے۔ || پورتنۍ نیمه پر لاندې نیمه سمه پرته کېږي.
+shape divide | line=both || d) || d) || d)
+qp d | Figure d) || شکل d) || شکل d)
+sol Yes — 2 lines (vertical and horizontal) ## The division sign matches itself left–right and top–bottom. || تقسیم کی علامت دائیں بائیں اور اوپر نیچے یکساں ہے۔ || د وېش نښه ښي–کیڼ او پورته–ښکته یو شان ده.
+q 11 | Circle the figures having rotational symmetry. Also write the order of their rotation and mark their center of rotation. || گردشی تشاکل والی اشکال پر دائرہ لگائیں۔ ان کی گردش کا درجہ بھی لکھیں اور مرکزِ گردش پر نشان لگائیں۔ || د څرخیز تناظر لرونکي شکلونه په کړۍ کې ونیسئ. د څرخ درجه یې ولیکئ او د څرخ مرکز په نښه کړئ.
+shape xcross | centre || a) || a) || a)
+qp a | Figure a) || شکل a) || شکل a)
+sol Yes — order 4 ## The two equal crossing bars look the same after every 90° turn. || دو برابر کٹتی پٹیاں ہر 90° گردش پر ویسی ہی لگتی ہیں۔ || دوه برابرې سره پرې کېدونکې پټۍ په هره 90° څرخه هماغسې ښکاري.
+shape plusarrows | centre || b) || b) || b)
+qp b | Figure b) || شکل b) || شکل b)
+sol Yes — order 2 ## Only the left and right arms have arrow heads, so it matches itself after a half turn (180°) but not after 90°. || صرف دائیں اور بائیں بازو پر تیر ہیں، اس لیے یہ آدھے چکر (180°) پر ملتی ہے، 90° پر نہیں۔ || یوازې ښي او کیڼ بازوګان غشي لري، نو په نیمه څرخه (180°) سمون خوري، په 90° نه.
+shape wave | centre || c) || c) || c)
+qp c | Figure c) || شکل c) || شکل c)
+sol Yes — order 2 ## The wavy strip looks the same after a half turn about its centre. || لہریا پٹی اپنے مرکز کے گرد آدھے چکر پر ویسی ہی لگتی ہے۔ || څپه ډوله پټۍ د خپل مرکز شاوخوا په نیمه څرخه هماغسې ښکاري.
+shape star4 | centre || d) || d) || d)
+qp d | Figure d) || شکل d) || شکل d)
+sol Yes — order 4 ## The four equal points look the same after every 90° turn. || چار برابر نوکیں ہر 90° گردش پر ویسی ہی لگتی ہیں۔ || څلور برابرې څوکې په هره 90° څرخه هماغسې ښکاري.
+@issue Review Q10–11 answers are read from the small printed pictures (SpaceBook reading); the arms of 11 a) and the points of 11 d) look equal on the scan. Check against the answer key.
+q 12 | Use a cardboard to make nets of various solids. Also write the number of their faces and the name of shape. Then fold them and verify whether you have created the correct net or not. || گتے سے مختلف ٹھوس اشکال کے جال بنائیں۔ ان کی سطحوں کی تعداد اور شکل کا نام بھی لکھیں۔ پھر انہیں موڑ کر جانچیں کہ آپ نے درست جال بنایا ہے یا نہیں۔ || له کارتن څخه د بېلابېلو جامدو جالونه جوړ کړئ. د سطحو شمېر او د شکل نوم یې هم ولیکئ. بیا یې ماتې کړئ او وازمویئ چې سم جال مو جوړ کړی که نه.
+sol Activity ## e.g. cube — 6 square faces; cuboid — 6 rectangular faces; square pyramid — 5 faces (1 square, 4 triangles). || مثلاً مکعب — 6 مربع سطحیں؛ مکعب نما — 6 مستطیل سطحیں؛ مربع اہرام — 5 سطحیں (1 مربع، 4 مثلث)۔ || لکه مکعب — 6 مربع سطحې؛ مکعب نما — 6 مستطیلي سطحې؛ مربع هرم — 5 سطحې (1 مربع، 4 مثلثونه).
+endexercise

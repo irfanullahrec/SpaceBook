@@ -1,0 +1,62 @@
+@printed 95
+exercise 6.1
+q 1 | Write the following sets in descriptive form. || درج ذیل سیٹوں کو بیانیہ صورت میں لکھیں۔ || لاندې سېټونه په بیاني بڼه ولیکئ.
+qp a | A = {January, June, July}
+qp b | B = {a, b, c, d, e}
+qp c | L = {−1, −2, −3, −4}
+qp d | D = {Thursday, Saturday}
+qp e | T = {2, 4, 6, 8}
+qp f | F = {14, 16, 18, ...}
+qp g | G = {1, 3, 5, 7, 9, ...}
+qp h | H = {10, 12, 14, 16, 20}
+qp i | E = {2, 4, 6, 8, ...}
+qp j | J = {101, 103, 105, 107, 109}
+qp k | W = {0, 1, 2, 3, 4, 5, ...}
+qp l | S = {1, 4, 9, 16, 25}
+qp m | U = {1, 3, 5, 7, 9}
+qp n | V = {22, 33, 44, 55,}
+@issue Q1(h) prints H = {10, 12, 14, 16, 20} (18 missing) and Q1(n) ends with a stray comma "55,}"; kept as printed.
+q 2 | Write the following in tabular form. || درج ذیل کو جدولی صورت میں لکھیں۔ || لاندې په جدولي بڼه ولیکئ.
+qp a | A set of odd numbers between 30 and 60. || 30 اور 60 کے درمیان طاق اعداد کا سیٹ۔ || د 30 او 60 ترمنځ د طاقو عددونو سېټ.
+qp b | A set of natural numbers less than 40. || 40 سے کم قدرتی اعداد کا سیٹ۔ || له 40 څخه کم د طبیعي عددونو سېټ.
+qp c | A set of multiples of 12 less than 60. || 60 سے کم 12 کے اضعاف کا سیٹ۔ || له 60 څخه کم د 12 د ضربونو سېټ.
+qp d | The set of common factors of 18, 30, 42. || 18، 30، 42 کے مشترک اجزائے ضربی کا سیٹ۔ || د 18، 30، 42 د ګډو ضربي اجزاوو سېټ.
+qp e | The set of numbers which are divisible by both 3 and 4. || ان اعداد کا سیٹ جو 3 اور 4 دونوں سے تقسیم ہوں۔ || د هغو عددونو سېټ چې پر 3 او 4 دواړو وېشل کېږي.
+qp f | The set of factors of 81 between 5 and 30. || 5 اور 30 کے درمیان 81 کے اجزائے ضربی کا سیٹ۔ || د 5 او 30 ترمنځ د 81 د ضربي اجزاوو سېټ.
+q 3 | Which of the following pairs of sets are equal? || درج ذیل میں سے سیٹوں کے کون سے جوڑے مساوی ہیں؟ || له لاندې څخه د سېټونو کومې جوړې مساوي دي؟
+qp a | A = {a, c, t}, B = {c, a, t}
+qp b | U = {22, 24, 26, 28}, D = {24, 26, 22, 28}
+qp c | V = {1, 3, 5, 7}, F = {1, 3, 5, 7, 9, 11}
+qp d | I = { }, J = ∅
+qp e | K = {∅}, L = ∅
+qp e | G = {eraser, pen, marker}, H = {sharpener, scale}
+qp f | M = {△}, N = {△}
+qp g | T = set of odd numbers between 4 and 10, P = {5, 7, 9}
+qp h | Y = {73, 79, 83, 87}, L = set of prime numbers between 72 and 88
+@issue Q3 prints two parts labelled "e)"; both kept as printed.
+q 4 | Which of these pairs of sets are equivalent and which are not? || سیٹوں کے ان جوڑوں میں سے کون سے ہم قدر ہیں اور کون سے نہیں؟ || د سېټونو له دې جوړو څخه کومې معادل دي او کومې نه؟
+qp a | A = {P, Q, R, S}, B = {February, March, April, May}
+qp b | L = {Sweater, Scarf, Jacket}, D = {Apples, Bananas, Peaches, Grapes}
+qp c | U = {∅}, S = ∅
+qp d | K = {a, b, c, d}, Y = {a, b, c}
+qp e | I = { }, J = ∅
+qp f | G = set of 5 rivers of Pakistan, H = {set of odd multiples of 7 between 5 and 65}
+qp g | T = set of all multiples of 8, E = set of all even numbers
+q 5 | If A = {1, 2, 3}, B = {2, 3, 4}, Y = {3, 4, 5} and D = {1, 2, 3, 4} then which of the following statements are true? || اگر A = {1, 2, 3}، B = {2, 3, 4}، Y = {3, 4, 5} اور D = {1, 2, 3, 4} ہوں تو درج ذیل میں سے کون سے بیانات درست ہیں؟ || که A = {1, 2, 3}، B = {2, 3, 4}، Y = {3, 4, 5} او D = {1, 2, 3, 4} وي، نو له لاندې څخه کوم بیانونه سم دي؟
+qp a | $A \subseteq B$
+qp b | $B \not\subseteq D$
+qp c | $D \supset Y$
+qp d | $A \subset D$
+qp e | $B \not\subset A$
+qp f | $Y \subset A$
+q 6 | If U = {a, b, c, ..., z}, S = {a, b, c, d, e}, T = {f, g, h, i}, and V = {a, b, e}, then find: || اگر U = {a, b, c, ..., z}، S = {a, b, c, d, e}، T = {f, g, h, i} اور V = {a, b, e} ہوں تو معلوم کریں: || که U = {a, b, c, ..., z}، S = {a, b, c, d, e}، T = {f, g, h, i} او V = {a, b, e} وي، نو معلوم کړئ:
+qp a | $S^c$
+qp b | $T^c$
+qp c | $V^c$
+qp d | $U^c$
+q 7 | If U = {0, 1, 2, ..., 20}, A = {0, 2, 4, ..., 18} and B = {3, 6, 9, ..., 15}, then prove that: || اگر U = {0, 1, 2, ..., 20}، A = {0, 2, 4, ..., 18} اور B = {3, 6, 9, ..., 15} ہوں تو ثابت کریں کہ: || که U = {0, 1, 2, ..., 20}، A = {0, 2, 4, ..., 18} او B = {3, 6, 9, ..., 15} وي، ثابت کړئ چې:
+qp a | $B^c = A$
+qp b | $A^c = B$
+qp c | $A \setminus B = A$
+qp d | $B \setminus A = B$
+@issue Exercise 6.1 Q7 cannot be proved as printed: with these U, A and B, $B^c \ne A$ and $A^c \ne B$ (and A and B share 6 and 12). Kept as printed.

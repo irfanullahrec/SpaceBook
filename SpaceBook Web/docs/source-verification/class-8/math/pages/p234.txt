@@ -1,0 +1,42 @@
+@printed 226
+@issue Example 3 labels "Total lateral surface area = 2bh + b²" and equates it to the total surface area 1000 m²; kept as printed. The text says the slant height is 'l' ("The slant height (lateral face height) 'l'") but all formulas use h; the pyramid figure labels "Slant Height h", "Perpendicular height a", "b" and "Base". Kept as printed.
+example 3
+p Find the slant height of a square pyramid if its base length is 10 metres and total surface area is 1000 metres squares. || ایک مربع ہرم کی ترچھی اونچائی معلوم کریں اگر اس کے قاعدے کی لمبائی 10 میٹر اور کل سطح کا رقبہ 1000 مربع میٹر ہو۔ || د یوه مربع هرم ځوړ لوړوالی ومومئ که د قاعدې اوږدوالی یې 10 متره او ټول سطحه مساحت یې 1000 مربع متره وي.
+## Solution: || حل: || حل:
+p Here; || یہاں؛ || دلته؛
+m $h = ?$
+m $b = 10$ m
+m Total surface area $= 1000$ m²
+m Total lateral surface area $= 2bh + b^2$
+m $1000\text{ m}^2 = 2 \times 10\text{ m} \times h + (10\text{ m})^2$
+m $1000\text{ m}^2 = 20\text{ m} \times h + 100\text{ m}^2$
+p Solving for h, we get: || h کے لیے حل کرنے پر ہمیں ملتا ہے: || د h لپاره په حلولو لاسته راځي:
+m $1000\text{ m}^2 - 100\text{ m}^2 = 20\text{ m} \times h$
+m $h = \frac{900\text{ m}^2}{20\text{ m}}$
+m $= 45$ m
+p So, the slant height of the pyramid is 45 m. || لہٰذا ہرم کی ترچھی اونچائی 45 m ہے۔ || نو د هرم ځوړ لوړوالی 45 m دی.
+endexample
+## 9.4.2 Volume of Square Pyramid || 9.4.2 مربع ہرم کا حجم || 9.4.2 د مربع هرم حجم
+p The volume is the space occupied by any object. The volume of a square pyramid means the space occupied by its square base and the four triangular lateral surfaces. || حجم کسی بھی چیز کا گھیرا ہوا خلا ہے۔ مربع ہرم کے حجم کا مطلب اس کے مربع قاعدے اور چار مثلثی جانبی سطحوں کا گھیرا ہوا خلا ہے۔ || حجم د هر شي نیول شوی ځای دی. د مربع هرم حجم یعنې د هغې د مربع قاعدې او څلورو مثلثي ضلعي سطحو نیول شوی ځای.
+p Let us consider a square pyramid whose base's length or length of one side of the square is 'b'. The slant height (lateral face height) 'l'. The altitude or height of the pyramid "a". || آئیے ایک مربع ہرم پر غور کریں جس کے قاعدے کی لمبائی یا مربع کی ایک طرف کی لمبائی 'b' ہے۔ ترچھی اونچائی (جانبی سطح کی اونچائی) 'l' ہے۔ ہرم کا ارتفاع یا اونچائی "a" ہے۔ || راځئ یو مربع هرم ته پام وکړو چې د قاعدې اوږدوالی یا د مربع د یوې ضلعې اوږدوالی یې 'b' دی. ځوړ لوړوالی (د ضلعي سطحې لوړوالی) 'l' دی. د هرم ارتفاع یا لوړوالی "a" دی.
+svg Square pyramid: slant height h, perpendicular height a, base b || مربع ہرم: ترچھی اونچائی h، عمودی اونچائی a، قاعدہ b || مربع هرم: ځوړ لوړوالی h، عمودي لوړوالی a، قاعده b
+<svg viewBox="0 0 330 230" width="330" role="img" aria-label="A square pyramid with slant height h, perpendicular height a drawn dashed from the apex to the centre of the base, base edge b and the base labelled" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<defs><marker id="pyA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0f172a"/></marker></defs>
+<polygon points="165,12 40,160 170,200 280,150" fill="#bae6fd" stroke="#0369a1" stroke-width="1.3"/>
+<polygon points="165,12 170,200 280,150" fill="#7dd3fc" fill-opacity="0.6" stroke="#0369a1"/>
+<line x1="165" y1="12" x2="140" y2="165" stroke="#0f172a" stroke-dasharray="4 3"/>
+<line x1="40" y1="160" x2="205" y2="180" stroke="#0369a1" stroke-dasharray="4 3"/><line x1="170" y1="200" x2="150" y2="145" stroke="#0369a1" stroke-dasharray="4 3" opacity="0"/>
+<rect x="132" y="150" width="9" height="9" fill="#2563eb"/>
+<text x="20" y="46">Slant</text><text x="20" y="60">Height</text><line x1="48" y1="64" x2="100" y2="92" stroke="#0f172a" marker-end="url(#pyA)"/>
+<text x="110" y="88" font-style="italic">h</text>
+<text x="238" y="64">Perpendicular</text><text x="238" y="78">height</text><text x="300" y="80" font-weight="700">a</text><line x1="236" y1="82" x2="160" y2="82" stroke="#0f172a" marker-end="url(#pyA)"/>
+<text x="100" y="190" font-style="italic">b</text><line x1="86" y1="178" x2="128" y2="210" stroke="#0f172a" marker-start="url(#pyA)" marker-end="url(#pyA)"/>
+<text x="250" y="206">Base</text><line x1="250" y1="196" x2="222" y2="180" stroke="#0f172a" marker-end="url(#pyA)"/>
+</svg>
+endsvg
+p Each lateral face is a triangle with height h and base length "b". || ہر جانبی سطح ایک مثلث ہے جس کی اونچائی h اور قاعدے کی لمبائی "b" ہے۔ || هره ضلعي سطحه یو مثلث دی چې لوړوالی یې h او د قاعدې اوږدوالی یې "b" دی.
+p So, the area of this square pyramid can be calculated using the following formula: || لہٰذا اس مربع ہرم کا رقبہ درج ذیل فارمولے سے معلوم کیا جا سکتا ہے: || نو د دې مربع هرم مساحت د لاندې فورمول په کارولو محاسبه کېدای شي:
+box info | Volume of a square pyramid || مربع ہرم کا حجم || د مربع هرم حجم
+m Volume of a square pyramid $= \frac{1}{3} \times \text{base area} \times \text{perpendicular height (altitude)}$
+m $= \frac{1}{3} \times b^2 \times a \qquad = \frac{1}{3} \times b^2 a$
+endbox

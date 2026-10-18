@@ -1,0 +1,18 @@
+@printed 136
+@deco Empty answer boxes beside each figure.
+poly A:0,0 B:4,0 C:3,1.9 D:0.8,1.9 | fill=#c7d2fe | scale=38 || b) one pair of parallel sides (arrows on the top and bottom) || b) متوازی اضلاع کا ایک جوڑا (اوپر اور نیچے تیر) || b) د موازي ضلعو یوه جوړه (پورته او لاندې غشي)
+qp b | Figure b) || شکل b) || شکل b)
+sol Trapezium ## Only one pair of opposite sides is parallel (marked with arrows); the other two sides are not parallel. || صرف آمنے سامنے کے اضلاع کا ایک جوڑا متوازی ہے (تیر کا نشان)؛ باقی دو اضلاع متوازی نہیں — ذوزنقہ۔ || یوازې د مخامخ ضلعو یوه جوړه موازي ده (په غشي نښه)؛ نورې دوه ضلعې موازي نه دي — ذوزنقه.
+poly A:0,0 B:3.4,0 C:4.2,2 D:0.8,2 | fill=#fefce8 | ticks=2,1,2,1 | scale=38 || c) opposite sides equal and parallel, opposite angles marked equal || c) آمنے سامنے کے اضلاع برابر اور متوازی، آمنے سامنے کے زاویے برابر نشان زد || c) مخامخ ضلعې برابرې او موازي، مخامخ زاويې برابرې په نښه شوې
+qp c | Figure c) || شکل c) || شکل c)
+sol Parallelogram ## Opposite sides are equal and parallel; opposite angles are equal; no right angle. || آمنے سامنے کے اضلاع برابر اور متوازی ہیں؛ آمنے سامنے کے زاویے برابر ہیں؛ کوئی قائمہ زاویہ نہیں — متوازی الاضلاع۔ || مخامخ ضلعې برابرې او موازي دي؛ مخامخ زاويې برابرې دي؛ قایمه زاویه نشته — متوازي الاضلاع.
+poly A:0,1.9 B:1.7,0 C:3.4,1.9 D:1.7,3.8 | fill=#f9a8d4 | ticks=1,1,1,1 | scale=34 || d) four equal sides, opposite sides parallel || d) چار برابر اضلاع، آمنے سامنے کے اضلاع متوازی || d) څلور برابرې ضلعې، مخامخ ضلعې موازي
+qp d | Figure d) || شکل d) || شکل d)
+sol Rhombus ## All four sides are equal and opposite sides are parallel; no right angle is marked. || چاروں اضلاع برابر اور آمنے سامنے کے اضلاع متوازی ہیں؛ کوئی قائمہ زاویہ نشان زد نہیں — معین۔ || څلور واړه ضلعې برابرې او مخامخ ضلعې موازي دي؛ هېڅ قایمه زاویه په نښه شوې نه ده — معین.
+@issue Figure d) shows parallel-arrow marks on all four sides but no equal-side ticks; read as a rhombus (it is drawn as a diamond with no right-angle marks).
+poly A:0,0 B:4.3,0 C:4.3,2.7 D:0,2.7 | fill=#22d3ee | ticks=2,1,2,1 | right=ABCD | scale=34 || e) opposite sides equal and parallel, four right angles || e) آمنے سامنے کے اضلاع برابر اور متوازی، چار قائمہ زاویے || e) مخامخ ضلعې برابرې او موازي، څلور قایمې زاويې
+qp e | Figure e) || شکل e) || شکل e)
+sol Rectangle ## Opposite sides are equal and parallel, and all four angles are right angles. || آمنے سامنے کے اضلاع برابر اور متوازی ہیں اور چاروں زاویے قائمہ ہیں — مستطیل۔ || مخامخ ضلعې برابرې او موازي دي او څلور واړه زاويې قایمې دي — مستطیل.
+poly A:1.2,3.8 B:2.4,2.4 C:1.2,0 D:0,2.4 | fill=#a5b4fc | ticks=1,2,2,1 | scale=34 || f) two pairs of equal adjacent sides || f) متصل اضلاع کے دو برابر جوڑے || f) د نږدې ضلعو دوه برابرې جوړې
+qp f | Figure f) || شکل f) || شکل f)
+sol Kite ## Two pairs of equal adjacent sides (the two short upper sides are equal, the two long lower sides are equal). || متصل اضلاع کے دو جوڑے برابر ہیں (دو چھوٹے اوپر والے اضلاع برابر، دو لمبے نیچے والے اضلاع برابر) — پتنگ۔ || د نږدې ضلعو دوه جوړې برابرې دي (دوه لنډې پورتنۍ ضلعې برابرې، دوه اوږدې لاندنۍ ضلعې برابرې) — پتنګ.

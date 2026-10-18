@@ -1,0 +1,46 @@
+@printed 267
+@issue The page begins with the end of the SAS Example 1 solution: AB = CD (given), ∠ABD = ∠CDB (given) and DB = DB (common in both). The Note it down box under Property 3 prints "In congruent triangles if the triangles have congruent SSS and SAS then they also have fulfilled the property ASA." (kept as printed). Property 4 Example 1 ("Prove that the two given triangles are congruent.") continues on the next page with its figures and solution. Figures are recreated; tick marks are as printed.
+eq \overline{AB} = \overline{CD}\ (\text{given}),\quad \angle ABD = \angle CDB\ (\text{given})\ \text{and}\ \overline{DB} = \overline{DB}\ (\text{common in both})
+p As two sides and one included angle are equal to the corresponding two sides and included angle so, || چونکہ دو اطراف اور ایک درمیانی زاویہ متناظر دو اطراف اور درمیانی زاویے کے برابر ہیں، لہٰذا || ځکه چې دوې ضلعې او یوه منځنۍ زاویه د متناظرو دوو ضلعو او منځنۍ زاویې سره برابرې دي، نو
+eq \triangle ABD \cong \triangle CDB.
+endexample
+### Property 3: Angle-Side-Angle (ASA ≅ ASA) || خاصیت 3: زاویہ-ضلع-زاویہ (ASA ≅ ASA) || ځانګړنه 3: زاویه-ضلعه-زاویه (ASA ≅ ASA)
+p This property states that "If two angles and their included side of a triangle are equal to the two corresponding angles and their included side of the other triangle, then the two triangles are congruent". Look at triangle ABC and triangle PQR. The two angles ∠A and ∠B and their included side AB is equal to the corresponding angle ∠P and ∠Q and their included side PQ of the other triangle PQR i.e. ∠A = ∠P, ∠B = ∠Q and AB = PQ. || یہ خاصیت بتاتی ہے کہ "اگر ایک مثلث کے دو زاویے اور ان کی درمیانی طرف دوسرے مثلث کے متناظر دو زاویوں اور ان کی درمیانی طرف کے برابر ہوں تو دونوں مثلث مماثل ہوتے ہیں"۔ مثلث ABC اور مثلث PQR کو دیکھیں۔ دو زاویے ∠A اور ∠B اور ان کی درمیانی طرف AB دوسرے مثلث PQR کے متناظر زاویوں ∠P اور ∠Q اور ان کی درمیانی طرف PQ کے برابر ہیں یعنی ∠A = ∠P، ∠B = ∠Q اور AB = PQ۔ || دا ځانګړنه وايي چې "که د یوه مثلث دوې زاویې او د هغوی منځنۍ ضلعه د بل مثلث له متناظرو دوو زاویو او د هغوی له منځنۍ ضلعې سره برابرې وي، نو دواړه مثلثونه همخوا وي". مثلث ABC او مثلث PQR ته وګورئ. دوې زاویې ∠A او ∠B او د هغوی منځنۍ ضلعه AB د بل مثلث PQR له متناظرو زاویو ∠P او ∠Q او د هغوی له منځنۍ ضلعې PQ سره برابرې دي یعنې ∠A = ∠P، ∠B = ∠Q او AB = PQ.
+svg Triangles ABC and PQR with equal angles A = P, B = Q and AB = PQ || مثلث ABC اور PQR || مثلثونه ABC او PQR
+<svg viewBox="0 0 330 130" width="330" role="img" aria-label="Triangle ABC with A at the top, B bottom left, C bottom right; triangle PQR with P at the top, Q bottom left, R bottom right; angles A and P marked, angles B and Q marked, sides AB and PQ with one tick" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="70,12 10,110 150,110" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="66" y="10" font-weight="700">A</text><text x="0" y="122" font-weight="700">B</text><text x="152" y="122" font-weight="700">C</text><path d="M62 28 A18 18 0 0 0 80 28" fill="none" stroke="#0f172a"/><path d="M26 110 A16 16 0 0 0 20 94" fill="none" stroke="#0f172a"/><line x1="36" y1="58" x2="44" y2="62" stroke="#0f172a"/>
+<polygon points="250,12 190,110 320,110" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="246" y="10" font-weight="700">P</text><text x="180" y="122" font-weight="700">Q</text><text x="322" y="122" font-weight="700">R</text><path d="M242 28 A18 18 0 0 0 260 28" fill="none" stroke="#0f172a"/><path d="M206 110 A16 16 0 0 0 200 94" fill="none" stroke="#0f172a"/><line x1="216" y1="58" x2="224" y2="62" stroke="#0f172a"/>
+</svg>
+endsvg
+eq \therefore\ \triangle ABC \cong \triangle PQR
+example 1
+p Look at the pair of triangles and find out if these are congruent. || مثلثوں کے جوڑے کو دیکھیں اور معلوم کریں کہ آیا یہ مماثل ہیں۔ || د مثلثونو جوړې ته وګورئ او پیدا کړئ چې ایا دا همخوا دي.
+## Solution: || حل: || حل:
+p In △ABC and △FED || △ABC اور △FED میں || په △ABC او △FED کې
+eq \angle A = \angle F = 50^\circ,\quad \overline{AB} = \overline{FE} = 6\ \text{cm},\quad \angle B = \angle E = 70^\circ.
+p So, according to ASA property, △ABC is congruent to △FED. || لہٰذا ASA خاصیت کے مطابق △ABC، △FED کے مماثل ہے۔ || نو د ASA ځانګړنې له مخې △ABC له △FED سره همخوا دی.
+svg Triangle ABC (A = 50°, B = 70°, AB = 6 cm) and triangle DEF (E = 70°, F = 50°, EF = 6 cm) || مثلث ABC اور DEF || مثلثونه ABC او DEF
+<svg viewBox="0 0 400 140" width="400" role="img" aria-label="Triangle ABC hanging below AB of 6 cm with 50 degrees at A and 70 degrees at B, C at the bottom; triangle DEF with D at the top, E at the left with 70 degrees, F at the right with 50 degrees and EF of 6 cm at the bottom" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="20,24 170,24 95,124" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="4" y="22" font-weight="700">A</text><text x="174" y="22" font-weight="700">B</text><text x="92" y="138" font-weight="700">C</text><text x="82" y="16">6 cm</text><text x="34" y="40">50°</text><text x="130" y="40">70°</text>
+<polygon points="300,10 230,110 390,110" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="296" y="8" font-weight="700">D</text><text x="216" y="114" font-weight="700">E</text><text x="392" y="114" font-weight="700">F</text><text x="290" y="128">6 cm</text><text x="240" y="104">70°</text><text x="354" y="104">50°</text>
+</svg>
+endsvg
+endexample
+### Property 4: Angle-Angle-Side (AAS ≅ AAS) || خاصیت 4: زاویہ-زاویہ-ضلع (AAS ≅ AAS) || ځانګړنه 4: زاویه-زاویه-ضلعه (AAS ≅ AAS)
+p This property states that "If two angles and one of the non-included sides of a triangle are equal to the two corresponding angles and one non-included sides of the other triangle, then the two triangles are congruent". || یہ خاصیت بتاتی ہے کہ "اگر ایک مثلث کے دو زاویے اور غیر درمیانی اطراف میں سے ایک دوسرے مثلث کے متناظر دو زاویوں اور ایک غیر درمیانی طرف کے برابر ہوں تو دونوں مثلث مماثل ہوتے ہیں"۔ || دا ځانګړنه وايي چې "که د یوه مثلث دوې زاویې او یوه غیر منځنۍ ضلعه د بل مثلث له متناظرو دوو زاویو او یوې غیر منځنۍ ضلعې سره برابرې وي، نو دواړه مثلثونه همخوا وي".
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In congruent triangles if the triangles have congruent SSS and SAS then they also have fulfilled the property ASA. || مماثل مثلثوں میں اگر مثلث SSS اور SAS کے لحاظ سے مماثل ہوں تو وہ خاصیت ASA بھی پوری کرتے ہیں۔ || په همخوا مثلثونو کې که مثلثونه د SSS او SAS له مخې همخوا وي نو هغوی د ASA ځانګړنه هم پوره کوي.
+endbox
+p Look at triangle ABC and triangle DEF. The two angles ∠B and ∠C and the non-included side AB is equal to the corresponding angle ∠E and ∠F and one non-included side DE of the other triangle DEF. i.e. ∠B = ∠E, ∠C = ∠F and AB = DE. || مثلث ABC اور مثلث DEF کو دیکھیں۔ دو زاویے ∠B اور ∠C اور غیر درمیانی طرف AB دوسرے مثلث DEF کے متناظر زاویوں ∠E اور ∠F اور ایک غیر درمیانی طرف DE کے برابر ہیں یعنی ∠B = ∠E، ∠C = ∠F اور AB = DE۔ || مثلث ABC او مثلث DEF ته وګورئ. دوې زاویې ∠B او ∠C او غیر منځنۍ ضلعه AB د بل مثلث DEF له متناظرو زاویو ∠E او ∠F او یوې غیر منځنۍ ضلعې DE سره برابرې دي یعنې ∠B = ∠E، ∠C = ∠F او AB = DE.
+svg Triangles ABC and DEF with equal angles B = E, C = F and non-included sides AB = DE || مثلث ABC اور DEF || مثلثونه ABC او DEF
+<svg viewBox="0 0 420 130" width="420" role="img" aria-label="Triangle ABC with A at the top, B at the bottom left, C at the bottom right; triangle DEF with D at the top right, E at the bottom left, F at the bottom right; angles at B and E marked with one arc, angles at C and F marked with two arcs; AB and DE carry one tick" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a">
+<polygon points="120,12 20,100 180,100" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="116" y="10" font-weight="700">A</text><text x="6" y="112" font-weight="700">B</text><text x="184" y="112" font-weight="700">C</text><path d="M44 100 A22 22 0 0 0 38 86" fill="none" stroke="#0f172a"/><path d="M158 100 A22 22 0 0 1 164 90" fill="none" stroke="#0f172a"/><line x1="66" y1="52" x2="74" y2="58" stroke="#0f172a"/>
+<polygon points="400,12 240,100 400,100" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><text x="398" y="10" font-weight="700">D</text><text x="226" y="112" font-weight="700">E</text><text x="402" y="112" font-weight="700">F</text><path d="M264 100 A22 22 0 0 0 258 90" fill="none" stroke="#0f172a"/><path d="M380 100 A20 20 0 0 1 394 82" fill="none" stroke="#0f172a"/><line x1="316" y1="52" x2="324" y2="58" stroke="#0f172a"/>
+</svg>
+endsvg
+eq \therefore\ \triangle ABC \cong \triangle DEF
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In two triangles if two angles are equal then the third angle is also equal as the sum of three angles of a triangle is 180°. || دو مثلثوں میں اگر دو زاویے برابر ہوں تو تیسرا زاویہ بھی برابر ہوتا ہے کیونکہ مثلث کے تینوں زاویوں کا مجموعہ 180° ہوتا ہے۔ || په دوو مثلثونو کې که دوې زاویې برابرې وي نو درېیمه زاویه هم برابره وي ځکه چې د مثلث د درېیو زاویو مجموعه 180° وي.
+endbox
+example 1
+p Prove that the two given triangles are congruent. || ثابت کریں کہ دیے گئے دو مثلث مماثل ہیں۔ || ثابته کړئ چې ورکړل شوي دوه مثلثونه همخوا دي.

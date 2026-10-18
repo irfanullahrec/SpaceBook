@@ -1,0 +1,45 @@
+@printed 33
+@status lesson
+## 2.5.1 Use of Brushes || 2.5.1 برش کا استعمال || 2.5.1 د برسونو کارونه
+- (1) If you place a mouse cursor over a brush, a **tooltip** will pop-up showing the name of the brush. || (1) اگر ماؤس کا کرسر کسی برش پر رکھیں تو ایک **ٹول ٹپ** ظاہر ہو کر برش کا نام دکھائے گا۔ || (1) که د موږک نښه پر برس کېږدئ، **ټولټپ** د برس نوم ښيي.
+- (2) Select a **brush** and draw lines by dragging the mouse from start point to end point. || (2) کوئی **برش** منتخب کریں اور ماؤس کو شروع کے نقطے سے آخری نقطے تک گھسیٹ کر لکیریں کھینچیں۔ || (2) **برس** وټاکئ او موږک له پیل څخه تر پای کش کړئ چې کرښې رسم کړئ.
+- (3) Try different brushes, colors, thickness and capacity settings. || (3) مختلف برش، رنگ، موٹائی اور شفافیت کی ترتیبات آزمائیں۔ || (3) بېلابېل برسونه، رنګونه، پنډوالی او روڼتیا وازمویئ.
+- (4) From the **Menu** select **Save** option, enter the file name and click **Save.** || (4) **Menu** سے **Save** منتخب کریں، فائل کا نام لکھیں اور **Save** پر کلک کریں۔ || (4) له **Menu** **Save** وټاکئ، د فایل نوم ولیکئ او **Save** کلیک کړئ.
+@deco Screenshot of a Paint 3D canvas with strokes of different brushes and colours (marker, pen, spray can) and the brush panel.
+box note | Tip || ٹپ || لارښوونه
+p Moving the mouse while pressing and holding the left mouse button is called drag the mouse. || ماؤس کا بایاں بٹن دبائے رکھ کر ماؤس کو حرکت دینا ماؤس کو ڈریگ (گھسیٹنا) کہلاتا ہے۔ || د موږک کیڼه تڼۍ کېکښل ساتل او موږک خوځول کش کول بلل کېږي.
+endbox
+## 2.5.2 Creating 2D shapes || 2.5.2 دو جہتی اشکال بنانا || 2.5.2 دوه بُعدي شکلونه جوړول
+- 1. Select **2D shapes** option. || 1. **2D shapes** کا اختیار منتخب کریں۔ || 1. **2D shapes** وټاکئ.
+- 2. Select a shape, drag out the shape on the drawing area. || 2. کوئی شکل منتخب کر کے ڈرائنگ کی جگہ پر گھسیٹ کر بنائیں۔ || 2. شکل وټاکئ او د رسم پر سیمه یې کش کړئ.
+- 3. Modify the shape by using different options on the right side panel. || 3. دائیں طرف کے پینل کے مختلف اختیارات سے شکل میں تبدیلی کریں۔ || 3. د ښي اړخ پانل په انتخابونو شکل بدل کړئ.
+svg A blue circle drawn with 2D shapes, with its editing handles: 1 Brushes, 2 make 3D, 3 rotate tool, 4 flip horizontal, 5 flip vertical, 6 fill color, 7 stamp tool, 8 commit tool, 9 rotate left, 10 rotate right, 11 grab points. || نیلا دائرہ اور اس کے ترمیمی ٹولز (1 تا 11)۔ || شین دایره او د سمون وسایل (1–11).
+<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="2D shape tools">
+<rect x="10" y="10" width="400" height="200" fill="#cbd5e1"/>
+<rect x="40" y="35" width="220" height="155" fill="#fff"/>
+<rect x="105" y="70" width="90" height="70" fill="none" stroke="#475569" stroke-dasharray="3 3"/>
+<ellipse cx="150" cy="105" rx="42" ry="32" fill="#1d4ed8"/>
+<g fill="#fff" stroke="#475569"><circle cx="105" cy="70" r="3"/><circle cx="195" cy="70" r="3"/><circle cx="105" cy="140" r="3"/><circle cx="195" cy="140" r="3"/><circle cx="150" cy="56" r="7"/><circle cx="96" cy="105" r="7"/><circle cx="204" cy="105" r="7"/></g>
+<g fill="#1e293b" font-weight="bold" font-size="10"><text x="166" y="52">3</text><text x="78" y="108">7</text><text x="214" y="108">8</text><text x="200" y="150">11</text></g>
+<rect x="280" y="35" width="120" height="155" fill="#fff" stroke="#94a3b8"/>
+<rect x="290" y="45" width="14" height="14" fill="#1d4ed8"/><text x="310" y="57" fill="#1e293b" font-weight="bold">6 Fill</text>
+<text x="290" y="100" fill="#1e293b" font-weight="bold">2 Make 3D</text>
+<text x="290" y="140" fill="#1e293b">Rotate and flip:</text>
+<text x="290" y="160" fill="#1e293b" font-weight="bold">9  10  5  4</text>
+<text x="20" y="28" fill="#1e293b" font-weight="bold">1 Brushes (top menu)</text>
+</svg>
+endsvg
+table
+th No. || نمبر || شمېره | Tool || ٹول || وسیله
+tr 1. | Brushes || برش || برسونه
+tr 2. | make 3D || تھری ڈی بنائیں || درې بُعدي کول
+tr 3. | rotate tool (rotate the shape) || گھمانے کا ٹول (شکل گھمائیں) || د څرخولو وسیله (شکل څرخوي)
+tr 4. | flip horizontal || افقی پلٹنا || افقي اړول
+tr 5. | flip vertical || عمودی پلٹنا || عمودي اړول
+tr 6. | fill color || بھرنے کا رنگ || ډکوونکی رنګ
+tr 7. | Stamp tool (makes a copy) || اسٹیمپ ٹول (نقل بناتا ہے) || د ټاپې وسیله (کاپي جوړوي)
+tr 8. | commit tool (completes shape) || کمٹ ٹول (شکل مکمل کرتا ہے) || د تایید وسیله (شکل بشپړوي)
+tr 9. | rotate left || بائیں گھمائیں || کیڼ لور ته څرخول
+tr 10. | rotate right || دائیں گھمائیں || ښي لور ته څرخول
+tr 11. | grab points (change the size and proportion of the shape) || گرفت کے نقطے (شکل کا سائز اور تناسب بدلیں) || د نیولو ټکي (د شکل اندازه او تناسب بدلوي)
+endtable

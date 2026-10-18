@@ -1,0 +1,20 @@
+@printed 240
+@deco Photographs of a colour spinner, a bicycle and a stand fan (examples of centres of rotation; decorative).
+@issue Example 1 prints "(x,y) → (−y,x)" and the rotated coordinates "A′(−6, 2), B′(−6, 7), C′(−2, 7), D′(−2, 2)" (rotating (2,6) by 90° counterclockwise gives (−6, 2); B(7,6) gives (−6, 7); C(7,2) gives (−2, 7); D(2,2) gives (−2, 2)). The two grids are very faint; the vertex labels are read from the text. The original rectangle is drawn with A(2,6), B(7,6), C(7,2), D(2,2); the image with A′(−6,2), B′(−6,7), C′(−2,7), D′(−2,2).
+example 1
+p Rotate the given image ABCD through 90° counterclockwise about the origin. || دی گئی تصویر ABCD کو مبدا کے گرد 90° گھڑی کی مخالف سمت میں گھمائیں۔ || ورکړل شوی انځور ABCD له مبدا څخه 90° د ساعت پر خلاف لوري وڅرخوئ.
+## Solution || حل || حل
+p To rotate the rectangle ABCD about the origin 90° counterclockwise we would follow the rule $(x, y) \to (-y, x)$, where the y-value of the original point becomes the new x-value with opposite sign and the x-value of the original point becomes the new y-value. || مستطیل ABCD کو مبدا کے گرد 90° گھڑی کی مخالف سمت میں گھمانے کے لیے ہم قاعدہ $(x, y) \to (-y, x)$ استعمال کریں گے، جہاں اصل نقطے کی y-قیمت مخالف علامت کے ساتھ نئی x-قیمت بن جاتی ہے اور اصل نقطے کی x-قیمت نئی y-قیمت بن جاتی ہے۔ || د مستطیل ABCD د مبدا شاوخوا 90° د ساعت پر خلاف لوري د څرخولو لپاره به قاعده $(x, y) \to (-y, x)$ تعقیب کړو، چې د اصلي ټکي y-ارزښت د مخالفې نښې سره نوی x-ارزښت کېږي او د اصلي ټکي x-ارزښت نوی y-ارزښت کېږي.
+p Let's apply the rule to the vertices to create the new rectangle A′B′C′D′: || آئیے راسوں پر قاعدہ لاگو کر کے نیا مستطیل A′B′C′D′ بنائیں: || راځئ قاعده پر راسونو پلي کړو ترڅو نوی مستطیل A′B′C′D′ جوړ کړو:
+m A (2, 6) becomes A′ (−6, 2)
+m B (7, 6) becomes B′ (−6, 7)
+m C (7, 2) becomes C′ (−2, 7)
+m D (2, 2) becomes D′ (−2, 2)
+p Mark the coordinates which will be the vertices of the reflected object/image. || وہ محددات نشان زد کریں جو منعکس شدہ چیز/تصویر کے راس ہوں گے۔ || هغه کوارډینېټونه په نښه کړئ چې د منعکس شوي شي/انځور راسونه به وي.
+p Join the vertices. || راسوں کو ملائیں۔ || راسونه سره وصل کړئ.
+p The rectangle A′B′C′D′ is the required rotated image of rectangle ABCD. || مستطیل A′B′C′D′ مستطیل ABCD کی مطلوبہ گھمائی ہوئی تصویر ہے۔ || مستطیل A′B′C′D′ د مستطیل ABCD اړین څرخول شوی انځور دی.
+plane x=-8..8 | y=-8..8 | step=1 | segs=2,6,7,6;7,6,7,2;7,2,2,2;2,2,2,6 | pts=2,6:A (2, 6);7,6:B (7, 6);7,2:C (7, 2);2,2:D (2, 2) | noarrows
+plane x=-8..8 | y=-8..8 | step=1 | segs=-6,2,-6,7;-6,7,-2,7;-2,7,-2,2;-2,2,-6,2 | pts=-6,2:A′ (−6, 2);-6,7:B′ (−6, 7);-2,7:C′ (−2, 7);-2,2:D′ (−2, 2) | noarrows
+endexample
+## 10.1.2 Centre of Rotation || 10.1.2 گردش کا مرکز || 10.1.2 د څرخېدو مرکز
+p The point around which a shape rotates around is called Centre of rotation. For example, the center of a wheel, a fan, Ferris wheel, spinner etc. || وہ نقطہ جس کے گرد کوئی شکل گھومتی ہے گردش کا مرکز کہلاتا ہے۔ مثال کے طور پر پہیے، پنکھے، فیرس وہیل، اسپنر وغیرہ کا مرکز۔ || هغه ټکی چې د هغه شاوخوا یو شکل ګرځي، د څرخېدو مرکز بلل کېږي. د بېلګې په توګه د ټایر، پکې، فیریس ویل، سپینر او نورو مرکز.

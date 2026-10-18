@@ -1,0 +1,35 @@
+@printed 9
+@status lesson
+## Units of Computer Memory Measurements || کمپیوٹر میموری کی پیمائش کی اکائیاں || د کمپیوټر حافظې د اندازې واحدونه
+p The most common units of measurement for memory are the byte, kilobyte, megabyte, gigabyte and terabyte. || میموری کی پیمائش کی سب سے عام اکائیاں بائٹ، کلو بائٹ، میگا بائٹ، گیگا بائٹ اور ٹیرا بائٹ ہیں۔ || د حافظې د اندازې تر ټولو عام واحدونه بایټ، کیلوبایټ، میګابایټ، ګیګابایټ او ټیرابایټ دي.
+box info | Do you know? || کیا آپ جانتے ہیں؟ || ایا پوهېږئ؟
+table Memory units
+th Unit || اکائی || واحد | Equals || برابر || برابر
+tr 1 Bit || ایک بٹ || یو بټ | Binary Digit || بائنری ہندسہ || دوهمیز عدد
+tr 8 Bits || ۸ بٹس || ۸ بټونه | 1 Byte || ۱ بائٹ || ۱ بایټ
+tr 1024 Bytes || ۱۰۲۴ بائٹس || ۱۰۲۴ بایټونه | 1 KB [Kilo Byte] || ۱ کے بی [کلو بائٹ] || ۱ KB [کیلو بایټ]
+tr 1024 KB || ۱۰۲۴ کے بی || ۱۰۲۴ KB | 1 MB [Mega Byte] || ۱ ایم بی [میگا بائٹ] || ۱ MB [میګا بایټ]
+tr 1024 MB || ۱۰۲۴ ایم بی || ۱۰۲۴ MB | 1 GB [Giga Byte] || ۱ جی بی [گیگا بائٹ] || ۱ GB [ګیګا بایټ]
+tr 1024 GB || ۱۰۲۴ جی بی || ۱۰۲۴ GB | 1 TB [Terra Byte] || ۱ ٹی بی [ٹیرا بائٹ] || ۱ TB [ټیرا بایټ]
+tr 1024 TB || ۱۰۲۴ ٹی بی || ۱۰۲۴ TB | 1 PB [Peta Byte] || ۱ پی بی [پیٹا بائٹ] || ۱ PB [پېټا بایټ]
+tr 1024 PB || ۱۰۲۴ پی بی || ۱۰۲۴ PB | 1 EB [Exa Byte] || ۱ ای بی [ایکسا بائٹ] || ۱ EB [ایکسا بایټ]
+endtable
+endbox
+## Difference between RAM and ROM || ریم اور روم میں فرق || د RAM او ROM توپیر
+table Difference between RAM and ROM
+th RAM || ریم || RAM | ROM || روم || ROM
+tr RAM stores operating system, application programs and data in use. || ریم آپریٹنگ سسٹم، ایپلی کیشن پروگرام اور زیرِ استعمال ڈیٹا محفوظ کرتی ہے۔ || RAM عملیاتي سیسټم، اپلېکېشن پروګرامونه او کارول کېدونکي معلومات ساتي. | ROM contains programs used for booting up the computer and BIOS. || روم میں کمپیوٹر کو شروع کرنے اور بائیوس کے لیے استعمال ہونے والے پروگرام ہوتے ہیں۔ || ROM هغه پروګرامونه لري چې کمپیوټر پیلولو او BIOS لپاره کارېږي.
+tr Data in RAM can be modified. || ریم میں ڈیٹا تبدیل کیا جا سکتا ہے۔ || په RAM کې معلومات بدلېدای شي. | Data in ROM cannot be modified. || روم میں ڈیٹا تبدیل نہیں کیا جا سکتا۔ || په ROM کې معلومات نشي بدلېدای.
+tr RAM is volatile memory. || ریم غیر مستقل (عارضی) میموری ہے۔ || RAM بې ثباته حافظه ده. | ROM is non volatile memory. || روم مستقل میموری ہے۔ || ROM ثابته حافظه ده.
+tr Types of RAM are: Dynamic RAM; Static RAM. || ریم کی اقسام: ڈائنامک ریم؛ اسٹیٹک ریم۔ || د RAM ډولونه: ډینامیک RAM؛ سټېټیک RAM. | Types of ROM are: PROM (Programmable ROM); EPROM (Erasable PROM); EEPROM (Electronically Erasable PROM); UVEPROM (Ultra Violet Erasable PROM). || روم کی اقسام: پی روم (پروگرام ہونے والی روم)؛ ای پی روم (مٹائی جا سکنے والی پی روم)؛ ای ای پی روم (برقی طور پر مٹائی جا سکنے والی پی روم)؛ یو وی ای پی روم (الٹرا وائلٹ سے مٹائی جا سکنے والی پی روم)۔ || د ROM ډولونه: PROM (پروګرام کېدونکی ROM)؛ EPROM؛ EEPROM؛ UVEPROM.
+endtable
+svg Primary Memory is divided into Random Access Memory (RAM: DRAM, SRAM) and Read Only Memory (ROM: PROM, EPROM, EEPROM, UVEPROM). || پرائمری میموری ریم (ڈی ریم، ایس ریم) اور روم (پی روم، ای پی روم، ای ای پی روم، یو وی ای پی روم) میں تقسیم ہے۔ || لومړنۍ حافظه په RAM (DRAM، SRAM) او ROM (PROM، EPROM، EEPROM، UVEPROM) ویشل کېږي.
+<svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="Primary memory tree">
+<g fill="#fff" stroke="#1e293b" stroke-width="1.5">
+<rect x="230" y="8" width="100" height="36" rx="5"/><rect x="95" y="80" width="120" height="40" rx="5"/><rect x="345" y="80" width="120" height="40" rx="5"/>
+<rect x="30" y="160" width="80" height="34" rx="5"/><rect x="130" y="160" width="80" height="34" rx="5"/><rect x="225" y="160" width="70" height="34" rx="5"/><rect x="305" y="160" width="70" height="34" rx="5"/><rect x="385" y="160" width="75" height="34" rx="5"/><rect x="470" y="160" width="80" height="34" rx="5"/>
+</g>
+<g stroke="#1e293b" stroke-width="1.5" fill="none"><path d="M280 44 V62 M155 62 H405 M155 62 V80 M405 62 V80 M155 120 V140 M70 140 H170 M70 140 V160 M170 140 V160 M405 120 V140 M260 140 H510 M260 140 V160 M340 140 V160 M422 140 V160 M510 140 V160"/></g>
+<g text-anchor="middle" font-weight="bold"><text x="280" y="30">Primary Memory</text><text x="155" y="104">RAM</text><text x="405" y="104">ROM</text><text x="70" y="182">DRAM</text><text x="170" y="182">SRAM</text><text x="260" y="182">PROM</text><text x="340" y="182">EPROM</text><text x="422" y="182">EEPROM</text><text x="510" y="182">UVEPROM</text></g>
+</svg>
+endsvg

@@ -1,0 +1,25 @@
+@printed 64
+box code | Program # 9: Printing right angled triangle of '*' || پروگرام #9: '*' کا قائمہ زاویہ مثلث پرنٹ کرنا || پروګرام #۹: د '*' قایمه زاویه درې ګوني چاپول
+m 1 for i in range(0, 6):
+m 2     for j in range(0, i+1):
+m 3         print("* ",end="")
+m 4     print("\r")
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m *
+m * *
+m * * *
+m * * * *
+m * * * * *
+m * * * * * *
+endbox
+p This way, as the outer loop increases, so will increase the range of inner loop, for every row. Note that, in textual programming, as soon as output reaches on next row, previous rows can not be altered. Thereafter, we print '*' and after the inner loop finishes we move to the next line in output via code mentioned in the last line. || اس طرح جیسے جیسے بیرونی لوپ بڑھتا ہے، ہر قطار کے لیے اندرونی لوپ کی رینج بھی بڑھتی ہے۔ نوٹ کریں کہ متنی پروگرامنگ میں جیسے ہی آؤٹ پٹ اگلی قطار پر پہنچتا ہے، پچھلی قطاروں میں تبدیلی نہیں کی جا سکتی۔ اس کے بعد ہم '*' پرنٹ کرتے ہیں اور اندرونی لوپ ختم ہونے کے بعد آخری سطر میں دیے گئے کوڈ کے ذریعے آؤٹ پٹ میں اگلی لائن پر چلے جاتے ہیں۔ || په دې ډول لکه څنګه چې بهرنی لوپ زیاتېږي، د هرې قطار لپاره د دننني لوپ رینج هم زیاتېږي. یادونه وکړئ چې په متني پروګرامینګ کې هر کله چې آوټ پټ بلې قطار ته ورسېږي نو پخوانۍ قطارونه نشي بدلېدای. له دې وروسته موږ '*' چاپوو او د دننني لوپ د پای ته رسېدو وروسته په وروستۍ کرښه کې ورکړل شوي کوډ په مرسته په آوټ پټ کې بلې کرښې ته ځو.
+box code | Program # 10: Printing right angled triangle of numbers (starting from 1) || پروگرام #10: اعداد کا قائمہ زاویہ مثلث پرنٹ کرنا (1 سے شروع) || پروګرام #۱۰: د شمېرو قایمه زاویه درې ګوني چاپول (له ۱ پیل)
+m 1 num = 1
+m 2 for i in range(0, 6):
+m 3     num = 1
+m 4     for j in range(0, i+1):
+m 5         print(num, end=" ")
+m 6         num = num + 1
+m 7     print("\r")
+endbox

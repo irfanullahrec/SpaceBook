@@ -1,0 +1,37 @@
+@printed 41
+@issue The pseudocode "Line 3: ELSEIF(num>100):" uses "num" where the line before uses "number"; kept as printed.
+p For example, if a required user input is a positive number then, a negative value is entered it should be checked, discarded and taken again from the user. || مثال کے طور پر اگر مطلوبہ صارف ان پٹ ایک مثبت عدد ہو اور منفی قدر درج کی جائے تو اسے جانچا جائے، رد کیا جائے اور صارف سے دوبارہ لیا جائے۔ || د بېلګې په توګه که اړین کاروونکي ان پټ مثبته شمېره وي او منفي ارزښت داخل شي نو باید وکتل شي، رد شي او بیا له کاروونکي څخه واخیستل شي.
+box code | Pseudocode || سوڈو کوڈ || سوډو کوډ
+m Line 0:  Take input (any number)
+m Line 1:  IF (number < 0) then
+m Line 2:      Take again input (any positive number)
+m Line 3:  END IF
+endbox
+p There may be two or more possible branches and every one of them need to be checked and handled accordingly in the program code. The following program takes user input and check conditions applied for negative number and number greater than 100. Main Goal: Check whether the input number is positive and less than 100. || دو یا زیادہ ممکنہ شاخیں ہو سکتی ہیں اور ان میں سے ہر ایک کو پروگرام کوڈ میں جانچنا اور اس کے مطابق سنبھالنا ضروری ہے۔ درج ذیل پروگرام صارف سے ان پٹ لیتا ہے اور منفی عدد اور 100 سے بڑے عدد کے لیے لاگو شرائط کو جانچتا ہے۔ بنیادی مقصد: جانچیں کہ ان پٹ عدد مثبت اور 100 سے کم ہے یا نہیں۔ || دوه یا زیاتې ممکنې څانګې کېدای شي وي او هره یوه باید د پروګرام په کوډ کې وکتل شي او ورسره سم اداره شي. لاندې پروګرام له کاروونکي ان پټ اخلي او د منفي شمېرې او له ۱۰۰ لویې شمېرې لپاره پلي شوي شرطونه ازمويي. اصلي موخه: وګورئ چې ان پټ شمېره مثبته او له ۱۰۰ لږه ده.
+box code | Pseudocode || سوڈو کوڈ || سوډو کوډ
+m Line 0:  Take input (any number)
+m Line 1:  IF(number < 0) then:
+m Line 2:      Take again input (any positive number)
+m Line 3:  ELSEIF(num>100):
+m Line 4:      Take again input (any two digit number)
+m Line 5:  ELSE:
+m Line 6:      Output (the number is correct)
+m Line 7:  ENDIF
+endbox
+p The same if-else for separate conditions can also be applied in a single 'if-statement', as shown. || علیحدہ شرائط کے لیے وہی if-else ایک ہی 'if-statement' میں بھی لاگو کیا جا سکتا ہے، جیسا کہ دکھایا گیا ہے۔ || د جلا شرطونو لپاره همدا if-else په یوه 'if-statement' کې هم پلی کېدای شي لکه څنګه چې ښودل شوی.
+p Lastly, it is important to highlight that conditions can also be nested. In the next code, nested condition is applied. Main Goal: Compare three different numbers A, B and C and find out the largest number. || آخر میں یہ نمایاں کرنا ضروری ہے کہ شرائط نیسٹڈ بھی ہو سکتی ہیں۔ اگلے کوڈ میں نیسٹڈ شرط لاگو کی گئی ہے۔ بنیادی مقصد: تین مختلف اعداد A، B اور C کا موازنہ کریں اور سب سے بڑا عدد معلوم کریں۔ || په پای کې دا څرګندول مهم دي چې شرطونه نیسټ هم کېدای شي. په راتلونکي کوډ کې نیسټ شوی شرط پلی شوی. اصلي موخه: درې بېلابېلې شمېرې A، B او C پرتله کړئ او تر ټولو لویه شمېره ومومئ.
+box code | Pseudocode (largest of three) || سوڈو کوڈ (تین میں سے سب سے بڑا) || سوډو کوډ (له دریو لویه)
+m Line 0:  IF A>B then:
+m Line 1:      IF A>C then:
+m Line 2:          Output (A is greatest number)
+m Line 3:      ELSE:
+m Line 4:          Output (C is greatest number)
+m Line 5:      ENDIF
+m Line 6:  ELSE:
+m Line 7:      IF B>C then:
+m Line 8:          Output (B is greatest number)
+m Line 9:      ELSE:
+m Line 10:         Output (C is greatest number)
+m Line 11:     ENDIF
+m Line 12: ENDIF
+endbox

@@ -1,0 +1,28 @@
+@printed 24
+p Consider the following sequence: || درج ذیل ترتیب پر غور کریں: || لاندې لړۍ ته پام وکړئ:
+eq 3,\ 6,\ 9,\ 12,\ \ldots\ldots
+p We can find the position number and term using the following. || ہم درج ذیل کی مدد سے مقام نمبر اور رکن معلوم کر سکتے ہیں۔ || موږ د لاندې په مرسته د ځای شمېره او توکی معلومولی شو.
+table Position and term || مقام اور رکن || ځای او توکی
+th | Position: | 1st | 2nd | 3rd | 4th | 5th | …….
+tr | Term: | 3 | 6 | 9 | 12, | ……. | …….
+endtable
+jumps 3,6,9,12,… | +3,+3,+3,+3 | gap=80
+p Rule * of pattern is adding 3 to previous term. || پیٹرن کا اصول * پچھلے رکن میں 3 جمع کرنا ہے۔ || د بېلګې قاعده * مخکیني توکي ته 3 جمع کول دي.
+@issue A stray "*" is printed after "Rule"; kept as printed.
+p We can write this pattern in table form as: || ہم اس پیٹرن کو جدول کی شکل میں یوں لکھ سکتے ہیں: || موږ دا بېلګه د جدول په بڼه داسې لیکلی شو:
+table
+th | Position | Term
+tr | 1 | 3
+tr | 2 | 3 + 3 = 6
+tr | 3 | 6 + 3 = 9
+tr | 4 | 9 + 3 = 12
+tr | 5 | 12 + 3 = 15
+endtable
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Identify the rules of these pattern and also find the next three terms. || ان پیٹرن کے اصول پہچانیں اور اگلے تین ارکان بھی معلوم کریں۔ || د دې بېلګو قاعدې وپېژنئ او راتلونکي درې توکي هم معلوم کړئ.
+qp a | 3, 6, 12, 24, \_\_\_, \_\_\_, \_\_\_.
+qp b | 5, 7, 10, 14, \_\_\_, \_\_\_, \_\_\_.
+qp c | 100, 96, 92, 88, 84, \_\_\_, \_\_\_, \_\_\_.
+qp d | 8, 80, 800, 8,000, \_\_\_, \_\_\_, \_\_\_.
+qp e | 900,000, 90,000, 9,000, \_\_\_, \_\_\_, \_\_\_.
+endbox

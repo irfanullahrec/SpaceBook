@@ -1,0 +1,28 @@
+@printed 12
+example 1 | Represent whole numbers 0 to 11 on a number line. || مکمل اعداد 0 سے 11 تک کو عددی خط پر ظاہر کریں۔ || بشپړ عددونه له 0 څخه تر 11 پورې د عددونو پر کرښه وښایاست.
+p **Solution:** || **حل:** || **حل:**
+p i) Draw a horizontal straight line. Mark a point on it and label it as "0". || i) ایک افقی سیدھا خط کھینچیں۔ اس پر ایک نقطہ لگائیں اور اس پر "0" لکھیں۔ || i) یوه افقي مستقیمه کرښه رسم کړئ. پر هغې یو ټکی وټاکئ او پرې "0" ولیکئ.
+nline 0..0
+p ii) Mark points with equal distance on the right side of the "0" and label them with numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... || ii) "0" کے دائیں طرف برابر فاصلے پر نقاط لگائیں اور ان پر اعداد 1، 2، 3، 4، 5، 6، 7، 8، 9، 10، 11، ... لکھیں۔ || ii) د "0" ښي لوري ته په برابر واټن ټکي وټاکئ او پرې عددونه 1، 2، 3، 4، 5، 6، 7، 8، 9، 10، 11، ... ولیکئ.
+nline 0..11
+p We can observe that each number is less than all the numbers to its right and greater than all the numbers to its left. || ہم دیکھ سکتے ہیں کہ ہر عدد اپنے دائیں طرف کے تمام اعداد سے چھوٹا اور اپنے بائیں طرف کے تمام اعداد سے بڑا ہے۔ || موږ لیدلی شو چې هر عدد د خپل ښي لوري له ټولو عددونو څخه کوچنی او د خپل کیڼ لوري له ټولو عددونو څخه لوی دی.
+p 0 is less than 1. i.e. $0 < 1$ Or 1 is greater than 0. i.e. $1 > 0$. || 0، 1 سے چھوٹا ہے یعنی $0 < 1$ یا 1، 0 سے بڑا ہے یعنی $1 > 0$۔ || 0 له 1 څخه کوچنی دی یعنې $0 < 1$ یا 1 له 0 څخه لوی دی یعنې $1 > 0$.
+p 11 is greater than 10. i.e. $11 > 10$ Or 10 is less than 11. i.e. $10 < 11$. || 11، 10 سے بڑا ہے یعنی $11 > 10$ یا 10، 11 سے چھوٹا ہے یعنی $10 < 11$۔ || 11 له 10 څخه لوی دی یعنې $11 > 10$ یا 10 له 11 څخه کوچنی دی یعنې $10 < 11$.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p 0 is the smallest whole number. || 0 سب سے چھوٹا مکمل عدد ہے۔ || 0 تر ټولو کوچنی بشپړ عدد دی.
+endbox
+example 2 | Represent whole numbers 3, 5, 7, 11 on a number line. || مکمل اعداد 3، 5، 7، 11 کو عددی خط پر ظاہر کریں۔ || بشپړ عددونه 3، 5، 7، 11 د عددونو پر کرښه وښایاست.
+p **Solution:** || **حل:** || **حل:**
+nline 0..11 | circ=3,5,7,11
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Numbers that come next to each other in order are called consecutive numbers. || وہ اعداد جو ترتیب میں ایک دوسرے کے بعد آتے ہیں، متواتر اعداد کہلاتے ہیں۔ || هغه عددونه چې په ترتیب سره یو د بل پسې راځي، پرله پسې عددونه بلل کېږي.
+endbox
+### Integers on a Number Line || عددی خط پر صحیح اعداد || د عددونو پر کرښه تام عددونه
+p A number line goes on forever in both directions and is indicated by arrows. Positive integers (greater than zero) are represented in the right direction after zero. Negative integers (less than zero) are represented in the left direction before zero. || عددی خط دونوں سمتوں میں ہمیشہ چلتا رہتا ہے اور اسے تیروں سے ظاہر کیا جاتا ہے۔ مثبت صحیح اعداد (صفر سے بڑے) صفر کے بعد دائیں سمت میں ظاہر کیے جاتے ہیں۔ منفی صحیح اعداد (صفر سے چھوٹے) صفر سے پہلے بائیں سمت میں ظاہر کیے جاتے ہیں۔ || د عددونو کرښه په دواړو لورو تل دوام کوي او په غشو ښودل کېږي. مثبت تام عددونه (له صفر څخه لوی) له صفر وروسته ښي لوري ته ښودل کېږي. منفي تام عددونه (له صفر څخه کوچني) له صفر مخکې کیڼ لوري ته ښودل کېږي.
+nline -4..4 | circ=0 | top=-1:-4:Negative Integers;1:4:Positive Integers || Negative integers to the left of 0, positive integers to the right || منفی صحیح اعداد 0 کے بائیں، مثبت دائیں || منفي تام عددونه د 0 کیڼ او مثبت ښي لوري ته
+p The arrows at both sides indicate that the positive and negative integers keep continuing. We can represent different groups of integers on the number line easily. || دونوں طرف کے تیر ظاہر کرتے ہیں کہ مثبت اور منفی صحیح اعداد جاری رہتے ہیں۔ ہم عددی خط پر صحیح اعداد کے مختلف گروپ آسانی سے ظاہر کر سکتے ہیں۔ || په دواړو خواوو غشي ښيي چې مثبت او منفي تام عددونه دوام کوي. موږ د عددونو پر کرښه د تامو عددونو بېلابېلې ډلې په اسانۍ ښودلی شو.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Using a number line explain the concept of integers to the students. Help them to represent the positive and negative integers on a number line. || عددی خط کی مدد سے طلبہ کو صحیح اعداد کا تصور سمجھائیں۔ مثبت اور منفی صحیح اعداد کو عددی خط پر ظاہر کرنے میں ان کی مدد کریں۔ || د عددونو د کرښې په مرسته زده کوونکو ته د تامو عددونو مفهوم تشریح کړئ. د عددونو پر کرښه د مثبتو او منفي تامو عددونو په ښودلو کې ورسره مرسته وکړئ.
+endbox

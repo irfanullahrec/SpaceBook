@@ -1,0 +1,35 @@
+@printed 147
+@deco Figures with yellow answer boxes; four blue line segments to measure.
+@issue Q2: the segments must be measured on the printed page; the scan is not to scale, so no lengths are given here. Q3(iii) is printed "5m 6mm" — almost certainly 5 cm 6 mm (the right edge is also cut). Kept as printed with a note.
+qp c | A dot named X
+fig geo 120 50 ; D 60 30 4 ; P 60 16 X
+sol Point (X) ## A single dot. || صرف ایک ڈاٹ۔ || یوازې یو ټکی.
+qp d | EF with arrowheads at both ends
+fig geo 260 50 ; L 10 20 250 20 #1d4ed8 both ; S 40 12 40 28 ; S 220 12 220 28 ; P 40 44 E ; P 220 44 F
+sol Line ($\overleftrightarrow{EF}$) ## Arrowheads at both ends. || دونوں سروں پر تیر۔ || په دواړو سرونو غشي.
+qp e | XY with an arrowhead after Y and an end point at X
+fig geo 260 50 ; L 220 20 10 20 #1d4ed8 end ; D 220 20 3 ; S 40 12 40 28 ; P 40 44 Y ; P 220 44 X
+sol Ray ($\overrightarrow{XY}$) ## It starts at X and goes on through Y. || یہ X سے شروع ہو کر Y سے آگے جاتی ہے۔ || له X پیلېږي او له Y وروسته روانه ده.
+qp f | PQ with end points P and Q
+fig geo 260 50 ; S 20 20 240 20 #1d4ed8 ; D 20 20 3 ; D 240 20 3 ; P 20 42 P ; P 240 42 Q
+sol Line segment ($\overline{PQ}$) ## Two end points. || دو آخری نقطے۔ || دوه پای ټکي.
+qp g | RS with arrowheads at both ends
+fig geo 260 50 ; L 10 20 250 20 #1d4ed8 both ; S 40 12 40 28 ; S 220 12 220 28 ; P 40 44 R ; P 220 44 S
+sol Line ($\overleftrightarrow{RS}$) ## Arrowheads at both ends. || دونوں سروں پر تیر۔ || په دواړو سرونو غشي.
+qp h | A dot named Y
+fig geo 120 50 ; D 60 30 4 ; P 60 16 Y
+sol Point (Y) ## A single dot. || صرف ایک ڈاٹ۔ || یوازې یو ټکی.
+q 2 | Measure the length of the given line segments in centimeters and millimeters. || دیے گئے قطعاتِ خط کی لمبائی سینٹی میٹر اور ملی میٹر میں ناپیں۔ || د ورکړل شویو ټوټو اوږدوالی په سانتي متر او ملي متر اندازه کړئ.
+p Segments AB, CD, PQ and EF are printed in the book. || کتاب میں قطعاتِ خط AB، CD، PQ اور EF چھپے ہیں۔ || په کتاب کې ټوټې AB، CD، PQ او EF چاپ شوې دي.
+sol Measure each segment in the book with a ruler: put 0 on the first point and read the mark at the second point (cm, then the small mm marks). ## The book prints no answers; the lengths depend on the printed page (screens do not show true size). || کتاب میں جوابات نہیں دیے گئے؛ لمبائیاں چھپے ہوئے صفحے پر منحصر ہیں (اسکرین اصل سائز نہیں دکھاتی)۔ || کتاب ځوابونه نه دي ورکړي؛ اوږدوالي په چاپي مخ پورې اړه لري (سکرین اصلي اندازه نه ښيي).
+q 3 | Draw the line segments of the given length || دی گئی لمبائی کے قطعاتِ خط کھینچیں || د ورکړل شوي اوږدوالي ټوټې رسم کړئ
+qp i | 3cm 9mm
+fig ruler 6 | seg=A:0,B:3.9
+sol Mark A at 0 and B at 3 cm 9 mm, then join A and B. ## 3 cm 9 mm = 3.9 cm || 3 cm 9 mm || 3 cm 9 mm
+qp ii | 4cm 5mm
+fig ruler 6 | seg=A:0,B:4.5
+sol Mark A at 0 and B at 4 cm 5 mm, then join A and B. ## 4 cm 5 mm || 4 cm 5 mm || 4 cm 5 mm
+qp iii | 5m 6mm (as printed; read as 5 cm 6 mm)
+fig ruler 6 | seg=A:0,B:5.6
+sol Mark A at 0 and B at 5 cm 6 mm, then join A and B. ## "5m" is a misprint for 5 cm: a 5-metre segment cannot be drawn in a notebook. || "5m" دراصل 5 cm ہے: 5 میٹر کا قطعہ کاپی میں نہیں کھینچا جا سکتا۔ || "5m" په اصل کې 5 cm دی: 5 متره ټوټه په کتابچه کې نه رسمېږي.
+endexercise

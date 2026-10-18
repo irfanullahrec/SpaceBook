@@ -1,0 +1,52 @@
+@printed 124
+q 6 | Simplify. || سادہ کریں۔ || ساده کړئ.
+qp a | $[9x^2 - \{x^2 - 5y(5x - 2y)\}]$
+solution $8x^2 + 25xy - 10y^2$
+ss Multiply −5y into the small bracket first. || پہلے −5y کو چھوٹے قوسین میں ضرب دیں۔ || لومړی −5y په کوچني قوس کې ضرب کړئ.
+sm \begin{aligned} &[9x^2 - \{x^2 - 25xy + 10y^2\}] \\ &= 9x^2 - x^2 + 25xy - 10y^2 \\ &= 8x^2 + 25xy - 10y^2 \end{aligned}
+ss Removing { } after the minus sign changes every sign inside. || منفی علامت کے بعد { } ہٹانے سے اندر کی ہر علامت بدل جاتی ہے۔ || له منفي نښې وروسته د { } لرې کول دننه هره نښه بدلوي.
+endsolution
+qp b | $x - [2y - \{3x - (2y + 3z)\}]$
+solution $4x - 4y - 3z$
+sm \begin{aligned} &x - [2y - \{3x - 2y - 3z\}] \\ &= x - [2y - 3x + 2y + 3z] \\ &= x - [4y - 3x + 3z] \\ &= x - 4y + 3x - 3z \\ &= 4x - 4y - 3z \end{aligned}
+ss Work from the innermost bracket outwards; each minus sign in front of a bracket changes the signs inside it. || اندر والے قوسین سے باہر کی طرف حل کریں؛ قوسین سے پہلے ہر منفی علامت اندر کی علامتیں بدل دیتی ہے۔ || له دننني قوس څخه بهر ته حل کړئ؛ د قوس مخکې هره منفي نښه دننه نښې بدلوي.
+endsolution
+q 7 | If $x = -2$, y = 4 and z = 5, then find the value of the following. || اگر $x = -2$، y = 4 اور z = 5 ہو تو درج ذیل کی قیمت معلوم کریں۔ || که $x = -2$، y = 4 او z = 5 وي، د لاندې ارزښت معلوم کړئ.
+qp a | $9x - 5y + z$
+solution –33
+suse evalx 9x - 5y + z ;; 9*x - 5*y + z ;; x=-2, y=4, z=5
+endsolution
+qp b | $5x^2 + y - z$
+solution 19
+suse evalx 5x^2 + y - z ;; 5*x**2 + y - z ;; x=-2, y=4, z=5
+endsolution
+qp c | $-2x^2 - x - 5$
+solution –11
+suse evalx -2x^2 - x - 5 ;; -2*x**2 - x - 5 ;; x=-2
+endsolution
+qp d | $6xy - yz + z$
+solution –63
+suse evalx 6xy - yz + z ;; 6*x*y - y*z + z ;; x=-2, y=4, z=5
+endsolution
+endexercise
+@sec u6-project | Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Material Required: || درکار سامان: || اړین توکي:
+- Chart papers || چارٹ پیپر || چارټ کاغذونه
+- Glue stick || گلو اسٹک || ګلو سټیک
+- Paper slips || کاغذ کی پرچیاں || د کاغذ ټوټې
+- Variable Value cards ($x = -2$, $x = 3$, $x = -10$ etc.) || متغیر کی قیمت کے کارڈ ($x = -2$، $x = 3$، $x = -10$ وغیرہ) || د متحول د ارزښت کارتونه ($x = -2$، $x = 3$، $x = -10$ او نور)
+- Markers || مارکر || مارکرونه
+- Scales || پیمانے || پیمانې
+## Procedure: || طریقۂ کار: || کړنلاره:
+- Distribute paper slips among the groups. || کاغذ کی پرچیاں گروپوں میں تقسیم کریں۔ || د کاغذ ټوټې په ډلو کې ووېشئ.
+- Each group will write at least 10 expressions on their slips. (like "Evaluate $x^4 + 2x^3 - x^2 + 8$", "Evaluate $4(x^2 + 5x) - 2x$" etc.) || ہر گروپ اپنی پرچیوں پر کم از کم 10 عبارتیں لکھے گا۔ (جیسے "$x^4 + 2x^3 - x^2 + 8$ کی قیمت معلوم کریں"، "$4(x^2 + 5x) - 2x$ کی قیمت معلوم کریں" وغیرہ) || هره ډله به په خپلو ټوټو لږ تر لږه 10 افادې ولیکي. (لکه "د $x^4 + 2x^3 - x^2 + 8$ ارزښت معلوم کړئ"، "د $4(x^2 + 5x) - 2x$ ارزښت معلوم کړئ" او نور)
+- The teacher will then paste each sum on the chart paper. || پھر استاد ہر سوال کو چارٹ پیپر پر چسپاں کرے گا۔ || بیا به ښوونکی هره پوښتنه په چارټ کاغذ ونښلوي.
+- Teacher will call students from each group and ask him/her to choose a value card randomly. || استاد ہر گروپ سے طلبہ کو بلائے گا اور اسے کوئی بھی قیمت کا کارڈ چننے کو کہے گا۔ || ښوونکی به له هرې ډلې زده کوونکي راوبولي او ترې به وغواړي چې په ناڅاپي ډول د ارزښت یو کارت وټاکي.
+- Then he/she will evaluate the expression according to the value of variable written on the value card she/he chooses. || پھر وہ چنے گئے کارڈ پر لکھی متغیر کی قیمت کے مطابق عبارت کی قیمت معلوم کرے گا/گی۔ || بیا به هغه د ټاکل شوي کارت د متحول د ارزښت له مخې د افادې ارزښت معلوم کړي.
+- The group with quick and accurate solutions wins. || تیز اور درست حل والا گروپ جیتتا ہے۔ || د چټکو او سمو حلونو لرونکې ډله ګټي.
+box info | Group A || گروپ A || A ډله
+p Evaluate $x^4 + 2x^3 - x^2 + 8$. || $x^4 + 2x^3 - x^2 + 8$ کی قیمت معلوم کریں۔ || د $x^4 + 2x^3 - x^2 + 8$ ارزښت معلوم کړئ.
+m $4(x^2 + 5x) - 2x$
+endbox
+@issue Math Project says "paste each sum on the chart paper" (each expression is meant); kept as printed.

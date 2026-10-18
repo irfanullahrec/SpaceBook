@@ -1,0 +1,58 @@
+@printed 23
+@deco Two illustrations of a boy and a girl playing with number cards at a table (one card shows 12; a sheet shows 1, 2, 3, 4, 6, 12); activity pictures, not mathematical diagrams.
+q 14 | Find the greatest number which exactly divides 145, 360 and 578. || وہ سب سے بڑا عدد معلوم کریں جو 145، 360 اور 578 کو پورا پورا تقسیم کرے۔ || هغه تر ټولو لوی عدد معلوم کړئ چې 145، 360 او 578 په بشپړ ډول ووېشي.
+solution 1
+ss The greatest number that divides all of them exactly is their HCF. || ان سب کو پورا پورا تقسیم کرنے والا سب سے بڑا عدد ان کا عاد اعظم ہے۔ || هغه تر ټولو لوی عدد چې ټول په بشپړ ډول وېشي د هغوی لوی مشترک قاسم دی.
+suse hcfpf 145, 360, 578
+endsolution
+q 15 | Find the smallest number which is exactly divisible by 200, 400 and 800. || وہ سب سے چھوٹا عدد معلوم کریں جو 200، 400 اور 800 سے پورا پورا تقسیم ہو۔ || هغه تر ټولو کوچنی عدد معلوم کړئ چې پر 200، 400 او 800 په بشپړ ډول ووېشل شي.
+solution 800
+ss The smallest number divisible by all of them is their LCM. || ان سب سے تقسیم ہونے والا سب سے چھوٹا عدد ان کا ذو اضعاف اقل ہے۔ || هغه تر ټولو کوچنی عدد چې پر ټولو ووېشل شي د هغوی کوچنی مشترک ضرب دی.
+suse lcmdiv 200, 400, 800
+ss Quick check: 800 ÷ 200 = 4 and 800 ÷ 400 = 2, and 800 is itself in the list, so 800 is the answer. || فوری جانچ: 800 ÷ 200 = 4 اور 800 ÷ 400 = 2، اور 800 خود فہرست میں ہے، اس لیے جواب 800 ہے۔ || چټکه ازموینه: 800 ÷ 200 = 4 او 800 ÷ 400 = 2، او 800 پخپله په لیست کې دی، نو ځواب 800 دی.
+endsolution
+q 16 | Find the minimum length of ribbon that can be exactly cut into pieces of length 450 cm, 750 cm and 800 cm. || ربن کی وہ کم سے کم لمبائی معلوم کریں جسے 450 cm، 750 cm اور 800 cm لمبائی کے ٹکڑوں میں ٹھیک ٹھیک کاٹا جا سکے۔ || د فیتې هغه لږ تر لږه اوږدوالی معلوم کړئ چې په سمه توګه د 450 cm، 750 cm او 800 cm اوږدوالي ټوټو ته پرې شي.
+solution 36000 cm
+ss The ribbon length must be a multiple of 450, 750 and 800; the minimum is their LCM. || ربن کی لمبائی 450، 750 اور 800 کا ضعف ہونی چاہیے؛ کم سے کم لمبائی ان کا ذو اضعاف اقل ہے۔ || د فیتې اوږدوالی باید د 450، 750 او 800 ضرب وي؛ لږ تر لږه اوږدوالی یې کوچنی مشترک ضرب دی.
+suse lcmpf 450, 750, 800
+ss So the minimum length of ribbon is 36000 cm (that is 360 m). || لہٰذا ربن کی کم سے کم لمبائی 36000 cm (یعنی 360 m) ہے۔ || نو د فیتې لږ تر لږه اوږدوالی 36000 cm (یعنې 360 m) دی.
+endsolution
+q 17 | If LCM of two numbers is 678 and product of two numbers is 4986. Find HCF of the numbers. || اگر دو اعداد کا ذو اضعاف اقل 678 اور ان کا حاصلِ ضرب 4986 ہو تو اعداد کا عاد اعظم معلوم کریں۔ || که د دوو عددونو کوچنی مشترک ضرب 678 او حاصل ضرب یې 4986 وي، د عددونو لوی مشترک قاسم معلوم کړئ.
+solution By the formula HCF = 4986 ÷ 678 = 831/113 (not a whole number — see note)
+ss Use HCF × LCM = product of the two numbers. || عاد اعظم × ذو اضعاف اقل = دونوں اعداد کا حاصلِ ضرب استعمال کریں۔ || لوی مشترک قاسم × کوچنی مشترک ضرب = د دواړو عددونو حاصل ضرب وکاروئ.
+sm \text{HCF} = \dfrac{4986}{678}
+ss Simplify the fraction: divide top and bottom by 6 → 831/113. 113 × 7 = 791 and 113 × 8 = 904, so 4986 is not an exact multiple of 678. || کسر کو مختصر کریں: اوپر اور نیچے کو 6 سے تقسیم کریں → 831/113۔ 113 × 7 = 791 اور 113 × 8 = 904، اس لیے 4986، عدد 678 کا پورا ضعف نہیں۔ || کسر ساده کړئ: پورته او لاندې پر 6 ووېشئ → 831/113. 113 × 7 = 791 او 113 × 8 = 904، نو 4986 د 678 بشپړ ضرب نه دی.
+sm \text{HCF} = \dfrac{831}{113} \approx 7.35
+ss Teacher's note: an HCF must be a whole number, so the printed data cannot be correct (Exercise 1.4 Q6 uses 4746, which gives 7). Check the book's answer key for the intended value. || استاد کا نوٹ: عاد اعظم ہمیشہ مکمل عدد ہوتا ہے، اس لیے چھپے ہوئے اعداد درست نہیں ہو سکتے (مشق 1.4 سوال 6 میں 4746 ہے جس سے 7 آتا ہے)۔ مطلوبہ قیمت کے لیے کتاب کی جوابی کلید دیکھیں۔ || د ښوونکي یادونه: لوی مشترک قاسم باید بشپړ عدد وي، نو چاپ شوي معلومات سم نه دي (د 1.4 تمرین 6مه پوښتنه 4746 کاروي چې 7 ورکوي). د مطلوب ارزښت لپاره د کتاب د ځوابونو کلي وګورئ.
+endsolution
+@issue Review Exercise Q17: 4986 / 678 is not a whole number (printed data error; Exercise 1.4 Q6 has 4746 → 7). Solution flags this; confirm with answer key.
+q 18 | If HCF of two numbers is 64 and LCM is 1024. Find the product of the two numbers. || اگر دو اعداد کا عاد اعظم 64 اور ذو اضعاف اقل 1024 ہو تو دونوں اعداد کا حاصلِ ضرب معلوم کریں۔ || که د دوو عددونو لوی مشترک قاسم 64 او کوچنی مشترک ضرب 1024 وي، د دواړو عددونو حاصل ضرب معلوم کړئ.
+solution 65536
+ss Product of the two numbers = HCF × LCM. || دونوں اعداد کا حاصلِ ضرب = عاد اعظم × ذو اضعاف اقل۔ || د دواړو عددونو حاصل ضرب = لوی مشترک قاسم × کوچنی مشترک ضرب.
+sm a \times b = 64 \times 1024
+ss 64 × 1000 = 64000 and 64 × 24 = 1536, so 64000 + 1536 = 65536. || 64 × 1000 = 64000 اور 64 × 24 = 1536، لہٰذا 64000 + 1536 = 65536۔ || 64 × 1000 = 64000 او 64 × 24 = 1536، نو 64000 + 1536 = 65536.
+sm a \times b = 65536
+endsolution
+q 19 | The HCF of two numbers is 20 and LCM is 5604. If one number is 467 then find the other number. || دو اعداد کا عاد اعظم 20 اور ذو اضعاف اقل 5604 ہے۔ اگر ایک عدد 467 ہو تو دوسرا عدد معلوم کریں۔ || د دوو عددونو لوی مشترک قاسم 20 او کوچنی مشترک ضرب 5604 دی. که یو عدد 467 وي، بل عدد معلوم کړئ.
+solution 240 (by the formula — see note)
+ss Use HCF × LCM = first number × second number. || عاد اعظم × ذو اضعاف اقل = پہلا عدد × دوسرا عدد استعمال کریں۔ || لوی مشترک قاسم × کوچنی مشترک ضرب = لومړی عدد × دوهم عدد وکاروئ.
+sm 20 \times 5604 = 467 \times b
+ss 20 × 5604 = 112080. Now divide by 467. || 20 × 5604 = 112080۔ اب 467 سے تقسیم کریں۔ || 20 × 5604 = 112080. اوس پر 467 ووېشئ.
+sm b = \dfrac{112080}{467} = 240
+ss Check: 467 × 240 = 112080 ✓. Teacher's note: 467 is a prime number, so it cannot have HCF 20 with any number; the data only practise the formula. || جانچ: 467 × 240 = 112080 ✓۔ استاد کا نوٹ: 467 مفرد عدد ہے، اس لیے کسی بھی عدد کے ساتھ اس کا عاد اعظم 20 نہیں ہو سکتا؛ یہ اعداد صرف فارمولے کی مشق ہیں۔ || ازموینه: 467 × 240 = 112080 ✓. د ښوونکي یادونه: 467 لومړنی عدد دی، نو له هېڅ عدد سره یې لوی مشترک قاسم 20 کېدای نه شي؛ دا معلومات یوازې د فورمول تمرین دی.
+endsolution
+@issue Review Exercise Q19 data inconsistent (467 is prime, so HCF with any number cannot be 20); formula answer 240 given with a note.
+endexercise
+@sec u1-project | Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Material Required: || درکار سامان: || اړین توکي:
+- Number cards (1-100) || نمبر کارڈ (1-100) || د عددونو کارتونه (1-100)
+- Paper || کاغذ || کاغذ
+- Pencil || پنسل || پنسل
+## Procedure: || طریقۂ کار: || کړنلاره:
+- Get into pairs. || جوڑوں میں تقسیم ہو جائیں۔ || جوړه جوړه شئ.
+- Put the number cards on the table. || نمبر کارڈ میز پر رکھیں۔ || د عددونو کارتونه پر مېز کېږدئ.
+- Member 1 picks up a card randomly. || پہلا رکن بلا ترتیب ایک کارڈ اٹھائے۔ || لومړی غړی په ناڅاپي ډول یو کارت پورته کړي.
+- Member 2 has to find a factor or multiple of that number. || دوسرے رکن کو اس عدد کا جزوِ ضربی یا ضعف معلوم کرنا ہے۔ || دوهم غړی باید د هغه عدد ضربي جز یا ضرب معلوم کړي.
+- The member who fails to find a factor or multiple loses a point. || جو رکن جزوِ ضربی یا ضعف معلوم نہ کر سکے وہ ایک پوائنٹ کھو دیتا ہے۔ || کوم غړی چې ضربي جز یا ضرب ونه مومي یو امتیاز له لاسه ورکوي.
+- Repeat the activity several times with different numbers. || مختلف اعداد کے ساتھ یہ سرگرمی کئی بار دہرائیں۔ || دا فعالیت له مختلفو عددونو سره څو ځله تکرار کړئ.

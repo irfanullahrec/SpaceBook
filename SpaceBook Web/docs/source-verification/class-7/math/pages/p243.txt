@@ -1,0 +1,20 @@
+@printed 239
+q 11 | Name the images. Then describe the translation of the given images (the image in lighter shades is the translated image). || تصاویر کے نام لکھیں۔ پھر دی گئی تصاویر کی منتقلی کی وضاحت کریں (ہلکے رنگ والی تصویر منتقل شدہ ہے)۔ || انځورونه نوم کړئ. بیا د ورکړل شویو انځورونو انتقال تشریح کړئ (روښانه رنګ انځور انتقال شوی دی).
+grid range=-10..10 | shape=-8,6;-8,2;-3,2/2,-2;2,-6;7,-6 || Q11 (first graph): a blue triangle (−8, 6), (−8, 2), (−3, 2) and its translated image (2, −2), (2, −6), (7, −6) || سوال 11 (پہلا گراف): نیلا مثلث اور اس کی منتقل شدہ تصویر || پوښتنه 11 (لومړی ګراف): آبي مثلث او د هغه انتقال شوی انځور
+grid range=-10..10 | shape=-7,-2;-3,-2;-4,-8;-8,-8/3,4;7,4;6,-2;2,-2 || Q11 (second graph): a pink parallelogram in the third quadrant and its translated image in the first and fourth quadrants || سوال 11 (دوسرا گراف): تیسرے ربع میں گلابی متوازی الاضلاع اور اس کی منتقل شدہ تصویر || پوښتنه 11 (دوهم ګراف): په درېیم ربع کې ګلابي متوازي الاضلاع او د هغه انتقال شوی انځور
+@issue The vertices of both pairs of shapes in Q11 are read approximately from the printed grids.
+q 12 | Construct an equilateral triangle PQR where PQ = QR = 7 cm. || مساوی الاضلاع مثلث PQR بنائیں جہاں PQ = QR = 7 cm۔ || متساوي الاضلاع مثلث PQR جوړ کړئ چې PQ = QR = 7 cm.
+q 13 | Construct an isosceles triangle ABC where AB = 4 cm, BC = AC = 6 cm. || متساوی الساقین مثلث ABC بنائیں جہاں AB = 4 cm، BC = AC = 6 cm۔ || متساوي الساقین مثلث ABC جوړ کړئ چې AB = 4 cm، BC = AC = 6 cm.
+q 14 | Construct a right-angled triangle LMN where ∠LMN = 90°, LM = 6.3 cm, MN = 4.5 cm. || قائمہ زاویہ مثلث LMN بنائیں جہاں ∠LMN = 90°، LM = 6.3 cm، MN = 4.5 cm۔ || قایمه زاویه مثلث LMN جوړ کړئ چې ∠LMN = 90°، LM = 6.3 cm، MN = 4.5 cm.
+q 15 | Construct a scalene triangle DEF where ∠DEF = 40°, ∠EDF = 20° DE = 7 cm. || مختلف الاضلاع مثلث DEF بنائیں جہاں ∠DEF = 40°، ∠EDF = 20°، DE = 7 cm۔ || مختلف الاضلاع مثلث DEF جوړ کړئ چې ∠DEF = 40°، ∠EDF = 20°، DE = 7 cm.
+q 16 | Construct an acute angled triangle PQR where ∠PRQ = 70°, PR = 6 cm, QR = 5 cm. || حادہ زاویہ مثلث PQR بنائیں جہاں ∠PRQ = 70°، PR = 6 cm، QR = 5 cm۔ || حاده زاویه مثلث PQR جوړ کړئ چې ∠PRQ = 70°، PR = 6 cm، QR = 5 cm.
+q 17 | Construct an obtuse angled triangle DEF where ∠EFD = 140°, EF = 5 cm, FD = 3 cm. || منفرجہ زاویہ مثلث DEF بنائیں جہاں ∠EFD = 140°، EF = 5 cm، FD = 3 cm۔ || منفرجه زاویه مثلث DEF جوړ کړئ چې ∠EFD = 140°، EF = 5 cm، FD = 3 cm.
+@issue The ends of Q16 and Q17 ("QR = 5 cm", "FD = 3 cm") are cut off in the single-page scan and were read from the two-page spread PDF.
+q 18 | Find the unknown angles in the following triangles. || درج ذیل مثلثوں میں نامعلوم زاویے معلوم کریں۔ || په لاندې مثلثونو کې نامعلومې زاویې معلوم کړئ.
+qp a | Triangle with angles 20°, 110° and x. || مثلث جس کے زاویے 20°، 110° اور x ہیں۔ || مثلث چې زاویې یې 20°، 110° او x دي.
+qp b | Triangle with angles 60°, a and b, where the exterior angle next to b is 128°. || مثلث جس کے زاویے 60°، a اور b ہیں جبکہ b کے ساتھ بیرونی زاویہ 128° ہے۔ || مثلث چې زاویې یې 60°، a او b دي او د b څنګ ته خارجي زاویه 128° ده.
+qp c | Isosceles triangle with apex angle 86° (equal sides marked) and base angle a. || متساوی الساقین مثلث جس کا راسی زاویہ 86° (برابر اضلاع کے نشان کے ساتھ) اور قاعدے کا زاویہ a ہے۔ || متساوي الساقین مثلث چې د سر زاویه یې 86° (د برابرو ضلعو نښو سره) او د قاعدې زاویه یې a ده.
+qp d | Triangle ABC with ∠A = 55°; BC is extended to D and the exterior angle ∠ACD = 150°; find ∠B and ∠ACB. || مثلث ABC جس میں ∠A = 55°؛ BC بڑھا کر D تک اور بیرونی زاویہ ∠ACD = 150°؛ ∠B اور ∠ACB معلوم کریں۔ || مثلث ABC چې ∠A = 55°؛ BC تر D اوږده او خارجي زاویه ∠ACD = 150°؛ ∠B او ∠ACB معلوم کړئ.
+qp e | Isosceles triangle with two equal sides marked, one base angle 60°, and the other angles b and c. || متساوی الساقین مثلث جس کے دو برابر اضلاع پر نشان ہیں، قاعدے کا ایک زاویہ 60° اور باقی زاویے b اور c ہیں۔ || متساوي الساقین مثلث چې دوه برابرې ضلعې یې نښه شوې، د قاعدې یوه زاویه 60° او نورې زاویې b او c دي.
+endexercise
+@issue Q18(c)'s figure is cut off at the right edge of the scan; it is described from the visible part.

@@ -1,0 +1,24 @@
+@printed 225
+exercise 12.1
+q 1 | Draw line(s) of symmetry for the following. || درج ذیل کے تشاکل کے خطوط بنائیں۔ || د لاندې د تناظر کرښې رسم کړئ.
+@deco Q1 shows six shapes: a yellow semicircle (D-shape), an inverted T, a red trapezium, a crescent, the letter U and a red regular hexagon.
+q 2 | Determine if the dotted line in the following figures is a line of symmetry. || معلوم کریں کہ درج ذیل اشکال میں نقطہ دار خط تشاکل کا خط ہے یا نہیں۔ || معلوم کړئ چې په لاندې شکلونو کې نقطه یي کرښه د تناظر کرښه ده که نه.
+qp a | The letter B with a vertical dotted line || حرف B عمودی نقطہ دار خط کے ساتھ || توری B له عمودي نقطه یي کرښې سره
+qp b | The letter N with a vertical dotted line || حرف N عمودی نقطہ دار خط کے ساتھ || توری N له عمودي نقطه یي کرښې سره
+qp c | The letter E with a horizontal dotted line || حرف E افقی نقطہ دار خط کے ساتھ || توری E له افقي نقطه یي کرښې سره
+qp d | A tall rectangle with a horizontal dotted line || ایک اونچا مستطیل افقی نقطہ دار خط کے ساتھ || یو لوړ مستطیل له افقي نقطه یي کرښې سره
+qp e | A zig-zag (step) shape with a vertical dotted line || سیڑھی نما شکل عمودی نقطہ دار خط کے ساتھ || د زینې ډوله شکل له عمودي نقطه یي کرښې سره
+qp f | An ellipse with a vertical dotted line || بیضوی شکل عمودی نقطہ دار خط کے ساتھ || بیضوي شکل له عمودي نقطه یي کرښې سره
+p Which figures have lines of symmetry? || کن اشکال کے تشاکل کے خطوط ہیں؟ || کوم شکلونه د تناظر کرښې لري؟
+q 3 | Write the order of symmetry for each shape that has rotational symmetry. || ہر اس شکل کے تشاکل کا درجہ لکھیں جس میں گردشی تشاکل ہو۔ || د هر هغه شکل د تناظر درجه ولیکئ چې دوراني تناظر لري.
+qp a | A plus-sign (cross) shape || جمع کی علامت (صلیب) والی شکل || د جمع نښې (صلیب) شکل
+qp b | An hourglass shape || ریت گھڑی نما شکل || د ریګ ساعت ډوله شکل
+qp c | An L-shape || L شکل || L شکل
+qp d | A bow-tie shaped figure || بو ٹائی نما شکل || د بو ټای ډوله شکل
+q 4 | Rotate the given images about the origin. || دی گئی تصاویر کو مبدا کے گرد گھمائیں۔ || ورکړل شوي انځورونه د مبدا شاوخوا وګرځوئ.
+qp a | Through 180° counterclockwise || 180° گھڑی کی مخالف سمت || 180° د ساعت پر خلاف
+grid range=-5..5 | shape=1,5;1,1;5,1 || Q4(a): right triangle with vertices (1, 5), (1, 1) and (5, 1) || سوال 4(a): قائمہ مثلث جس کے راس (1، 5)، (1، 1) اور (5، 1) ہیں || پوښتنه 4(a): قایم مثلث چې راسونه یې (1، 5)، (1، 1) او (5، 1) دي
+qp b | Through 90° clockwise || 90° گھڑی کی سمت || 90° د ساعت په لوري
+grid range=-5..5 | shape=1,-1;5,-1;5,-4;3,-5;1,-4 || Q4(b): pentagon with vertices (1, −1), (5, −1), (5, −4), (3, −5), (1, −4) || سوال 4(b): مخمس جس کے راس (1، −1)، (5، −1)، (5، −4)، (3، −5)، (1، −4) ہیں || پوښتنه 4(b): پنځه ضلعي چې راسونه یې (1، −1)، (5، −1)، (5، −4)، (3، −5)، (1، −4) دي
+@issue The vertices of the two shapes in Q4 are read from the printed grids.
+q 5 | Draw a triangle on coordinate plane. Then rotate it through 270° clockwise about the origin. || محددی سطح پر ایک مثلث بنائیں۔ پھر اسے مبدا کے گرد 270° گھڑی کی سمت گھمائیں۔ || د مختصاتو پر سطحه یو مثلث رسم کړئ. بیا یې د مبدا شاوخوا 270° د ساعت په لوري وګرځوئ.

@@ -1,0 +1,38 @@
+@printed 12
+@status lesson
+p **RAM (Random Access Memory)** is used to store data to be processed by CPU temporarily. The storage capacity of memory is very important for the computer's functionality and speed. || **RAM (رینڈم ایکسیس میموری)** اس ڈیٹا کو عارضی طور پر محفوظ کرتی ہے جس پر CPU نے عمل کرنا ہو۔ کمپیوٹر کی کارکردگی اور رفتار کے لیے میموری کی گنجائش بہت اہم ہے۔ || **RAM (تصادفي لاسرسي حافظه)** هغه ډېټا لنډمهاله ساتي چې CPU یې پروسس کوي. د حافظې ظرفیت د کمپیوټر د کار او چټکتیا لپاره ډېر مهم دی.
+p **ROM (Read Only Memory)** is used to permanently store programs. These programs start the computer and control all the input/output operations. It is a single IC chip. || **ROM (ریڈ اونلی میموری)** پروگراموں کو مستقل طور پر محفوظ رکھتی ہے۔ یہ پروگرام کمپیوٹر کو چالو کرتے اور تمام ان پٹ/آؤٹ پٹ کارروائیوں کو کنٹرول کرتے ہیں۔ یہ ایک واحد آئی سی چپ ہے۔ || **ROM (یوازې لوستلو حافظه)** پروګرامونه تل لپاره ساتي. دا پروګرامونه کمپیوټر پیلوي او ټول ننوت/وتون کنټرولوي. یو واحد IC چپ دی.
+p ***CPU (Central Processing Unit)*** performs all the arithmetic, logical operations and controls input and output operations. || ***CPU (سنٹرل پروسیسنگ یونٹ)*** تمام حسابی اور منطقی کارروائیاں کرتا ہے اور ان پٹ اور آؤٹ پٹ کو کنٹرول کرتا ہے۔ || ***CPU (مرکزي پروسس یونټ)*** ټول حسابي او منطقي عملیات کوي او ننوت او وتون کنټرولوي.
+svg CPU Cycle: 1 Fetch data & instructions → 2 Decode instructions → 3 Execute commands → 4 Store results → back to Fetch. || سی پی یو کا چکر: 1 ڈیٹا اور ہدایات لانا ← 2 ہدایات سمجھنا (ڈی کوڈ) ← 3 احکامات پر عمل ← 4 نتائج محفوظ کرنا ← پھر لانا۔ || د CPU دوره: 1 ډېټا او لارښوونې راوړل ← 2 لارښوونې ډیکوډ ← 3 امرونه اجرا ← 4 پایلې ساتل ← بېرته راوړل.
+<svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" role="img" aria-label="CPU cycle">
+<defs><marker id="cc1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#ea580c"/></marker></defs>
+<rect x="140" y="85" width="80" height="55" rx="6" fill="#1e293b"/><text x="180" y="117" text-anchor="middle" fill="#fff" font-weight="bold">CPU</text>
+<rect x="120" y="10" width="120" height="44" rx="8" fill="#0ea5e9"/><text x="180" y="29" text-anchor="middle" fill="#fff" font-weight="bold">1. Fetch</text><text x="180" y="45" text-anchor="middle" fill="#fff" font-size="10">Data &amp; Instructions</text>
+<rect x="245" y="90" width="110" height="44" rx="8" fill="#22c55e"/><text x="300" y="109" text-anchor="middle" fill="#fff" font-weight="bold">2. Decode</text><text x="300" y="125" text-anchor="middle" fill="#fff" font-size="10">Instructions</text>
+<rect x="120" y="172" width="120" height="44" rx="8" fill="#facc15"/><text x="180" y="191" text-anchor="middle" fill="#1e293b" font-weight="bold">3. Execute</text><text x="180" y="207" text-anchor="middle" fill="#1e293b" font-size="10">Commands</text>
+<rect x="5" y="90" width="110" height="44" rx="8" fill="#84cc16"/><text x="60" y="109" text-anchor="middle" fill="#fff" font-weight="bold">4. Store</text><text x="60" y="125" text-anchor="middle" fill="#fff" font-size="10">Results</text>
+<g stroke="#ea580c" stroke-width="3" fill="none" marker-end="url(#cc1)"><path d="M245 32 Q300 32 300 85"/><path d="M300 138 Q300 194 245 194"/><path d="M115 194 Q60 194 60 139"/><path d="M60 86 Q60 32 115 32"/></g>
+</svg>
+endsvg
+p A **motherboard** is one of the most essential part of the computer system. It holds together many of the components of a computer, including the CPU, memory and connectors for input and output devices. || **مدر بورڈ** کمپیوٹر سسٹم کے سب سے اہم حصوں میں سے ایک ہے۔ یہ کمپیوٹر کے بہت سے اجزا کو جوڑے رکھتا ہے، جن میں CPU، میموری اور ان پٹ و آؤٹ پٹ آلات کے کنیکٹر شامل ہیں۔ || **مادربورډ** د کمپیوټر له تر ټولو اړینو برخو یو دی. ډېرې برخې سره نښلوي، لکه CPU، حافظه او د ننوتو او وتو وسایلو نښلونکي.
+@deco Photographs of a CPU chip and of a motherboard.
+p ***Data*** consists of raw, unorganized facts and figures that need to be processed. Data may be in many forms like text, numbers and symbols etc. || ***ڈیٹا*** خام اور غیر منظم حقائق اور اعداد و شمار پر مشتمل ہوتا ہے جن پر عمل کرنا ضروری ہو۔ ڈیٹا کئی صورتوں میں ہو سکتا ہے، جیسے متن، اعداد اور علامات وغیرہ۔ || ***ډېټا*** خام او نامنظم حقایق او شمېرې دي چې پروسس ته اړتیا لري. په بېلابېلو بڼو وي، لکه متن، شمېرې او نښې.
+p ***Information*** is the form of data that has been processed and organized and is used for decision making. || ***معلومات*** ڈیٹا کی وہ صورت ہے جس پر عمل کر کے اسے منظم کیا گیا ہو اور جو فیصلے کرنے میں استعمال ہو۔ || ***معلومات*** د ډېټا هغه بڼه ده چې پروسس او منظمه شوې وي او د پرېکړې لپاره کارېږي.
+svg Input (Data) → Process → Output (Information) || ان پٹ (ڈیٹا) ← پروسیس ← آؤٹ پٹ (معلومات) || ننوت (ډېټا) ← پروسس ← وتون (معلومات)
+<svg viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" role="img" aria-label="Data to information">
+<defs><marker id="dp1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#1e293b"/></marker></defs>
+<text x="55" y="18" text-anchor="middle" font-style="italic" font-weight="bold" font-size="12">Input</text><text x="285" y="18" text-anchor="middle" font-style="italic" font-weight="bold" font-size="12">Output</text>
+<rect x="15" y="28" width="80" height="36" fill="#a5f3fc"/><text x="55" y="52" text-anchor="middle">Data</text>
+<line x1="100" y1="46" x2="225" y2="46" stroke="#1e293b" stroke-width="2" marker-end="url(#dp1)"/><text x="162" y="38" text-anchor="middle">Process</text>
+<rect x="230" y="28" width="115" height="36" fill="#a5f3fc"/><text x="287" y="52" text-anchor="middle">Information</text>
+</svg>
+endsvg
+box info | Do you know! || کیا آپ جانتے ہیں! || ایا پوهېږئ!
+p Data processing converts raw data into a useful form. Some examples are: || ڈیٹا پروسیسنگ خام ڈیٹا کو کارآمد صورت میں بدلتی ہے۔ چند مثالیں: || د ډېټا پروسس خامه ډېټا ګټورې بڼې ته اړوي. ځینې بېلګې:
+- A digital camera converts data from sensor into a photo file. || ڈیجیٹل کیمرا سینسر کے ڈیٹا کو تصویری فائل میں بدلتا ہے۔ || ډیجیټل کمره د سینسر ډېټا په انځوري فایل اړوي.
+- An electricity billing system calculates the monthly charges based on customer's usage for the month. || بجلی کے بل کا نظام صارف کے مہینے بھر کے استعمال کی بنیاد پر ماہانہ رقم کا حساب لگاتا ہے۔ || د برېښنا بل سیسټم د میاشتې د مصرف پر بنسټ میاشتنۍ پیسې حسابوي.
+endbox
+p The following are some examples of data processing. || ڈیٹا پروسیسنگ کی چند مثالیں درج ذیل ہیں۔ || د ډېټا پروسس ځینې بېلګې دا دي.
+example Example 1 | Report cards || رپورٹ کارڈ || د پایلو کارتونه
+p The names, marks and some related information of students are entered as data into the computer. After processing this data, the computer prints students' report cards including total marks and rank in the class as information. || طلبہ کے نام، نمبر اور کچھ متعلقہ معلومات بطور ڈیٹا کمپیوٹر میں داخل کی جاتی ہیں۔ اس ڈیٹا پر عمل کے بعد کمپیوٹر طلبہ کے رپورٹ کارڈ بطور معلومات پرنٹ کرتا ہے جن میں کل نمبر اور جماعت میں درجہ شامل ہوتا ہے۔ || د زده کوونکو نومونه، نمرې او اړوند معلومات د ډېټا په توګه کمپیوټر ته ورکول کېږي. له پروسس وروسته کمپیوټر د پایلو کارتونه د معلوماتو په توګه چاپوي چې ټولې نمرې او په ټولګي کې درجه لري.
+endexample

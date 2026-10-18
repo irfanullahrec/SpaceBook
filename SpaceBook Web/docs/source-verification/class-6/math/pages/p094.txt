@@ -1,0 +1,56 @@
+@printed 92
+@deco Illustration of children buying from a tuck shop beside the Math Project (decorative).
+q 6 | Aleena covers a distance of 40 m in 25 sec. How much time will she take to cover the distance of: || علینہ 25 سیکنڈ میں 40 m فاصلہ طے کرتی ہے۔ وہ درج ذیل فاصلہ طے کرنے میں کتنا وقت لے گی: || علینه په 25 ثانیو کې 40 m واټن وهي. لاندې واټن به په څومره وخت کې ووهي:
+qp a | 50 m
+solution 31.25 seconds
+ss Find the unit rate first: time for 1 m = 25 ÷ 40 = 0.625 s. || پہلے اکائی شرح معلوم کریں: 1 m کا وقت = 25 ÷ 40 = 0.625 s۔ || لومړی واحد نرخ معلوم کړئ: د 1 m وخت = 25 ÷ 40 = 0.625 s.
+suse urate 25 | seconds | 40 | metre
+sm 0.625 \times 50 = 31.25 \text{ s}
+endsolution
+qp b | 120 m
+solution 75 seconds
+ss Time for 1 m = 0.625 s, so time for 120 m = 0.625 × 120. || 1 m کا وقت = 0.625 s، اس لیے 120 m کا وقت = 0.625 × 120۔ || د 1 m وخت = 0.625 s، نو د 120 m وخت = 0.625 × 120.
+sm 0.625 \times 120 = 75 \text{ s}
+endsolution
+q 7 | There are 800 eggs. If 120 are rotten, find: || 800 انڈے ہیں۔ اگر 120 گلے سڑے ہوں تو معلوم کریں: || 800 هګۍ دي. که 120 خرابې وي، معلوم کړئ:
+qp a | What percentage of eggs are fresh? || کتنے فیصد انڈے تازہ ہیں؟ || څو سلنه هګۍ تازه دي؟
+solution 85%
+ss Fresh eggs = 800 − 120 = 680. || تازہ انڈے = 800 − 120 = 680۔ || تازه هګۍ = 800 − 120 = 680.
+suse pct 680 out of 800
+endsolution
+qp b | What is the ratio between the number of rotten and fresh eggs. || گلے سڑے اور تازہ انڈوں کی تعداد کی نسبت کیا ہے؟ || د خرابو او تازه هګیو د شمېر نسبت څه دی؟
+solution 3 : 17
+suse ratio 120 : 680
+endsolution
+qp c | What is the ratio between the fresh and total number of eggs? || تازہ انڈوں اور کل انڈوں کی نسبت کیا ہے؟ || د تازه او ټولو هګیو نسبت څه دی؟
+solution 17 : 20
+suse ratio 680 : 800
+endsolution
+q 8 | The ratio of Saad's salary to Sania's salary is 2 : 3 and the ratio of Sania's salary to Mauz's Salary is 4 : 3. Find the continued ratio among their salary. || سعد کی تنخواہ اور ثانیہ کی تنخواہ کی نسبت 2 : 3 اور ثانیہ کی تنخواہ اور معاذ کی تنخواہ کی نسبت 4 : 3 ہے۔ ان کی تنخواہوں کی مسلسل نسبت معلوم کریں۔ || د سعد د معاش او د ثانیې د معاش نسبت 2 : 3 او د ثانیې د معاش او د معاذ د معاش نسبت 4 : 3 دی. د هغوی د معاشونو پرله پسې نسبت معلوم کړئ.
+solution Saad : Sania : Mauz = 8 : 12 : 9
+suse contr Saad : Sania = 2 : 3 and Sania : Mauz = 4 : 3|Saad,Sania,Mauz
+endsolution
+q 9 | An author charges Rs 82,500 for writing 55 pages. What is his per page rate for? || ایک مصنف 55 صفحات لکھنے کے 82,500 روپے لیتا ہے۔ اس کی فی صفحہ شرح کیا ہے؟ || یو لیکوال د 55 پاڼو د لیکلو لپاره 82,500 روپۍ اخلي. د هرې پاڼې نرخ یې څومره دی؟
+solution Rs 1500 per page
+suse urate 82500 | rupees | 55 | page
+endsolution
+q 10 | Umar got 15 marks out of 20 marks in Islamic study and 22 marks out of 25 marks in Urdu. Compare and tell in which subject he got more percentage marks? || عمر نے اسلامیات میں 20 میں سے 15 اور اردو میں 25 میں سے 22 نمبر حاصل کیے۔ موازنہ کر کے بتائیں کہ کس مضمون میں اس کے زیادہ فیصد نمبر آئے؟ || عمر په اسلامیاتو کې له 20 څخه 15 او په اردو کې له 25 څخه 22 نمرې واخیستې. پرتله یې کړئ او ووایاست چې په کوم مضمون کې یې ډېره سلنه نمرې واخیستې؟
+solution Urdu (88%) > Islamic Study (75%)
+suse comparepct 15 out of 20 and 22 out of 25
+endsolution
+q 11 | Madeeha bought a table in Rs 1500. If its price decreased by 4% during sale, find the decreased price of table. || مدیحہ نے 1500 روپے میں ایک میز خریدی۔ اگر سیل کے دوران اس کی قیمت 4% کم ہو جائے تو میز کی کم شدہ قیمت معلوم کریں۔ || مدیحې یوه مېز په 1500 روپیو واخیسته. که د پلور پر مهال یې بیه 4% کمه شي، د مېز کمه شوې بیه معلومه کړئ.
+solution Rs 1440
+suse change 1500 decreased by 4%
+endsolution
+endexercise
+@sec u4-project | Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Math Project || ریاضی پروجیکٹ || د ریاضي پروژه
+## Material Required: || درکار سامان: || اړین توکي:
+- Dummy coins and notes || نقلی سکے اور نوٹ || نقلي سکې او نوټونه
+- food items || کھانے کی اشیاء || د خوړو توکي
+## Procedure: || طریقۂ کار: || کړنلاره:
+p Instruct the students to play like customer and shopkeeper. || طلبہ کو گاہک اور دکاندار کا کھیل کھیلنے کی ہدایت دیں۔ || زده کوونکو ته ووایاست چې د پېرودونکي او دوکاندار لوبه وکړي.
+p One student will open the tuck shop and play the character of shopkeeper. He will sell food items at decreased percentage prices from the original cost of the items. || ایک طالب علم کینٹین کھولے گا اور دکاندار کا کردار ادا کرے گا۔ وہ کھانے کی اشیاء ان کی اصل قیمت سے فیصد کم قیمت پر بیچے گا۔ || یو زده کوونکی به کنټین پرانیزي او د دوکاندار رول به لوبوي. هغه به د خوړو توکي د اصلي بیې په سلنیزه کمه بیه پلوري.
+p Other students buy those items by finding the new prices of the items. || دوسرے طلبہ اشیاء کی نئی قیمتیں معلوم کر کے انہیں خریدتے ہیں۔ || نور زده کوونکي د توکو نوې بیې معلوموي او هغه اخلي.
+p Students stand in queue and wait for their turn and one by one go to the tuck shop and buy the things with decreased percentage price. || طلبہ قطار میں کھڑے ہو کر اپنی باری کا انتظار کرتے ہیں اور ایک ایک کر کے کینٹین جا کر فیصد کم قیمت پر چیزیں خریدتے ہیں۔ || زده کوونکي په کتار کې درېږي، د خپلې نوبت انتظار کوي او یو په یو کنټین ته ځي او په سلنیزه کمه بیه شیان اخلي.
+p Instruct them to find the ratio of the old price and the new price of the food items they buy and also tell the rate of 1 item. || انہیں ہدایت دیں کہ خریدی گئی کھانے کی اشیاء کی پرانی اور نئی قیمت کی نسبت معلوم کریں اور 1 چیز کی شرح بھی بتائیں۔ || ورته ووایاست چې د اخیستل شوو خوړو توکو د زړې او نوې بیې نسبت معلوم کړي او د 1 توکي نرخ هم ووایي.

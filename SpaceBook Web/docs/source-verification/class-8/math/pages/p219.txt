@@ -1,0 +1,39 @@
+@printed 211
+@issue Example 1 prints "⇒ x² = 64cm²" for a problem in metres and "√x² = √64" without units; the first Note prints "Phythagoras"; kept as printed. The broken-pole note refers to a figure that is not printed on this page.
+p Taking square-root on both sides, we get || دونوں اطراف کا جذر المربع لینے سے ہمیں ملتا ہے || د دواړو خواوو مربع جذر په اخیستلو لاسته راځي
+m $\sqrt{x^2} = \sqrt{49\text{cm}^2}$
+m $x = 7\text{cm}$
+m $\overline{BC} = 7\text{cm}$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p By applying Pythagoras theorem we can find the measurement of an unknown side when the lengths of the other two sides are known. || مسئلہ فیثاغورث لاگو کر کے ہم نامعلوم طرف کی پیمائش معلوم کر سکتے ہیں جب باقی دو اطراف کی لمبائیاں معلوم ہوں۔ || د فیثاغورث د قضیې په پلي کولو د نامعلومې ضلعې اندازه موندلی شو کله چې د نورو دوو ضلعو اوږدوالی معلوم وي.
+endbox
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Construct a right-angled triangle in which the length of the hypotenuse is 10cm and the length of other two sides are 8cm and 6cm. Verify the Pythagoras theorem by constructing squares on its sides. || ایک قائمہ زاویہ مثلث بنائیں جس کے وتر کی لمبائی 10cm اور باقی دو اطراف کی لمبائی 8cm اور 6cm ہو۔ اس کی اطراف پر مربع بنا کر مسئلہ فیثاغورث کی تصدیق کریں۔ || د قایمې زاویې مثلث جوړ کړئ چې د وتر اوږدوالی یې 10cm او د نورو دوو ضلعو اوږدوالی یې 8cm او 6cm وي. پر ضلعو یې د مربعو په جوړولو د فیثاغورث قضیه تایید کړئ.
+endbox
+## 9.1.2 Practical Application of Pythagoras Theorem || 9.1.2 مسئلہ فیثاغورث کا عملی اطلاق || 9.1.2 د فیثاغورث د قضیې عملي کارونه
+p Now, we shall explain the practical application of the Phythagoras theorem through the following examples: || اب ہم درج ذیل مثالوں کے ذریعے مسئلہ فیثاغورث کا عملی اطلاق سمجھائیں گے: || اوس به د لاندې بېلګو له لارې د فیثاغورث د قضیې عملي کارونه تشریح کړو:
+example 1
+p A ladder is 10m long and reaches the top of a wall. If the distance between the wall and the foot of the ladder is 6m, find the height of the wall. || ایک سیڑھی 10m لمبی ہے اور دیوار کی چوٹی تک پہنچتی ہے۔ اگر دیوار اور سیڑھی کے پاؤں کے درمیان فاصلہ 6m ہو تو دیوار کی اونچائی معلوم کریں۔ || یوه زینه 10m اوږده ده او د دېوال سر ته رسېږي. که د دېوال او د زینې د پښې تر منځ واټن 6m وي، د دېوال لوړوالی ومومئ.
+## Solution: || حل: || حل:
+p Let $\overline{AC}$ be the ladder, $\overline{BC}$ be the height of the wall and $\overline{AB}$ be the distance between the foot of the ladder and the wall. || فرض کریں $\overline{AC}$ سیڑھی، $\overline{BC}$ دیوار کی اونچائی اور $\overline{AB}$ سیڑھی کے پاؤں اور دیوار کے درمیان فاصلہ ہے۔ || فرض کړئ $\overline{AC}$ زینه، $\overline{BC}$ د دېوال لوړوالی او $\overline{AB}$ د زینې د پښې او دېوال تر منځ واټن دی.
+rtri A,B,C | base=6m | alt=x | hyp=10 m
+p According to the Pythagoras theorem, || مسئلہ فیثاغورث کے مطابق، || د فیثاغورث د قضیې له مخې،
+m $(\overline{AC})^2 = (\overline{AB})^2 + (\overline{BC})^2$
+m $(10\text{m})^2 = (6\text{m})^2 + (x)^2$
+m $100\text{m}^2 = 36\text{m}^2 + x^2$
+m $100\text{m}^2 - 36\text{m}^2 = x^2$
+m $\Rightarrow x^2 = 64\text{cm}^2$
+p Taking square root on both sides || دونوں اطراف کا جذر المربع لینا || د دواړو خواوو مربع جذر اخیستل
+m $\sqrt{x^2} = \sqrt{64}$
+m $\Rightarrow x = 8\text{m}$
+p Hence, height of the wall = 8m || لہٰذا دیوار کی اونچائی = 8m || نو د دېوال لوړوالی = 8m
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Always draw rough figure before solving the given problem. || دیے گئے مسئلے کو حل کرنے سے پہلے ہمیشہ خاکہ بنائیں۔ || د ورکړل شوې ستونزې له حل مخکې تل خام شکل رسم کړئ.
+endbox
+example 2
+p A ladder touches the top of a wall whose height is 12m. Find the length of the ladder if the distance between the foot of the ladder and wall is 5m. || ایک سیڑھی ایک دیوار کی چوٹی کو چھوتی ہے جس کی اونچائی 12m ہے۔ اگر سیڑھی کے پاؤں اور دیوار کے درمیان فاصلہ 5m ہو تو سیڑھی کی لمبائی معلوم کریں۔ || یوه زینه د یوه دېوال سر ته رسېږي چې لوړوالی یې 12m دی. که د زینې د پښې او دېوال تر منځ واټن 5m وي، د زینې اوږدوالی ومومئ.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p An electric pole breaks at point C and its top touches the ground at the distance 3m as shown in the figure. If height of broken electric pole from the ground is 4m, find the total height of the pole. || ایک بجلی کا کھمبا نقطہ C پر ٹوٹتا ہے اور اس کی چوٹی شکل میں دکھائے گئے مطابق 3m کے فاصلے پر زمین کو چھوتی ہے۔ اگر ٹوٹے ہوئے کھمبے کی زمین سے اونچائی 4m ہو تو کھمبے کی کل اونچائی معلوم کریں۔ || د برق یو ستن په C ټکي کې ماتېږي او سر یې لکه په شکل کې ښودل شوي په 3m واټن ځمکې ته رسېږي. که د مات ستن لوړوالی له ځمکې 4m وي، د ستن ټول لوړوالی ومومئ.
+endbox

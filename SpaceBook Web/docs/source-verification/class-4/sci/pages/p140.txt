@@ -1,0 +1,34 @@
+@printed 127
+@deco Drawings of a sphere, a cube, a triangular pyramid, a cone and a triangular prism with answer lines for corners, edges and surfaces; "Investigate" label; "5. Project — Making a Nest" box with a photograph of two bird nests made from juice cartons.
+qp iii | Write below each shape, number of its corners, edges and surfaces. (sphere, cube, pyramid, cone, prism) || ہر شکل کے نیچے اس کے کونوں، کناروں اور سطحوں کی تعداد لکھیں۔ (کرّہ، مکعب، اہرام، مخروط، منشور) || د هر شکل لاندې یې د کونجونو، څنډو او سطحو شمېر ولیکئ. (کره، مکعب، هرم، مخروط، منشور)
+table Corners, edges and surfaces || کونے، کنارے اور سطحیں || کونجونه، څنډې او سطحې
+th Shape || شکل || شکل | Corners || کونے || کونجونه | Edges || کنارے || څنډې | Surfaces || سطحیں || سطحې
+tr Sphere || کرّہ || کره | ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+tr Cube || مکعب || مکعب | ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+tr Pyramid (triangular) || اہرام (تکونا) || هرم (درې ګوټی) | ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+tr Cone || مخروط || مخروط | ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+tr Prism (triangular) || منشور (تکونا) || منشور (درې ګوټی) | ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+endtable
+sol Sphere: 0 corners, 0 edges, 1 curved surface. Cube: 8 corners, 12 edges, 6 surfaces. Triangular pyramid: 4 corners, 6 edges, 4 surfaces. Cone: 1 corner (apex), 1 curved edge, 2 surfaces (1 flat + 1 curved). Triangular prism: 6 corners, 9 edges, 5 surfaces. ## Agent answer. || کرّہ: ۰ کونے، ۰ کنارے، ۱ خم دار سطح۔ مکعب: ۸ کونے، ۱۲ کنارے، ۶ سطحیں۔ تکونا اہرام: ۴ کونے، ۶ کنارے، ۴ سطحیں۔ مخروط: ۱ کونا (چوٹی)، ۱ خم دار کنارہ، ۲ سطحیں (۱ ہموار + ۱ خم دار)۔ تکونا منشور: ۶ کونے، ۹ کنارے، ۵ سطحیں۔ || کره: ۰ کونجونه، ۰ څنډې، ۱ کږه سطحه. مکعب: ۸ کونجونه، ۱۲ څنډې، ۶ سطحې. درې ګوټی هرم: ۴ کونجونه، ۶ څنډې، ۴ سطحې. مخروط: ۱ کونج (څوکه)، ۱ کږه څنډه، ۲ سطحې (۱ هواره + ۱ کږه). درې ګوټی منشور: ۶ کونجونه، ۹ څنډې، ۵ سطحې.
+svg Five solids in a row: a blue sphere, an orange cube, a green triangular pyramid, a pink cone and a brown triangular prism. || ایک قطار میں پانچ ٹھوس: نیلا کرّہ، نارنجی مکعب، سبز تکونا اہرام، گلابی مخروط اور بھورا تکونا منشور۔ || په یوه قطار کې پنځه جامد شکلونه: آبي کره، نارنجي مکعب، شین درې ګوټی هرم، ګلابي مخروط او نسواري درې ګوټی منشور.
+<svg viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg">
+<circle cx="45" cy="55" r="38" fill="#1e3a8a"/><ellipse cx="34" cy="28" rx="8" ry="3" fill="#fff"/>
+<path d="M100 40 l30 -20 l36 14 v40 l-30 20 l-36 -14z" fill="#fb923c" stroke="#111827"/><path d="M100 40 l36 14 l30 -20 M136 54 v40" fill="none" stroke="#111827"/>
+<path d="M230 14 L196 90 L264 96z" fill="#16a34a" stroke="#111827"/><path d="M230 14 L240 84 L196 90 M240 84 L264 96" fill="none" stroke="#111827"/>
+<path d="M330 10 L296 90 a36 10 0 0 0 66 0z" fill="#e879f9" stroke="#111827"/><ellipse cx="329" cy="90" rx="34" ry="10" fill="#a855f7" stroke="#111827"/>
+<path d="M370 96 L390 60 L412 96z" fill="#f97316" stroke="#111827"/><path d="M390 60 L414 20 L416 66 L412 96 M414 20 L370 96" fill="#b45309" fill-opacity=".6" stroke="#111827"/>
+</svg>
+endsvg
+q 4 | Investigate: Why mobile phone technology is progressing rapidly? How will be the mobile phone of the future? || تحقیق کریں: موبائل فون کی ٹیکنالوجی تیزی سے ترقی کیوں کر رہی ہے؟ مستقبل کا موبائل فون کیسا ہوگا؟ || وپلټئ: د ګرځنده تلیفون ټکنالوژي ولې په چټکۍ وده کوي؟ د راتلونکي ګرځنده تلیفون به څنګه وي؟
+sol It is progressing rapidly because millions of people use it every day for talking, learning, banking and business, so companies keep competing to make it faster, smaller and more useful. A future phone may be foldable or wearable, charge very fast or by sunlight, translate languages instantly and help with health checks. ## Agent answer. || یہ تیزی سے ترقی کر رہی ہے کیونکہ کروڑوں لوگ اسے روزانہ بات چیت، پڑھائی، بینکاری اور کاروبار کے لیے استعمال کرتے ہیں، اس لیے کمپنیاں اسے تیز، چھوٹا اور زیادہ مفید بنانے کے لیے مقابلہ کرتی رہتی ہیں۔ مستقبل کا فون تہہ ہونے والا یا پہننے والا ہو سکتا ہے، بہت جلد یا دھوپ سے چارج ہو سکتا ہے، فوراً زبانوں کا ترجمہ کر سکتا ہے اور صحت کی جانچ میں مدد دے سکتا ہے۔ || په چټکۍ وده کوي ځکه ملیونونه خلک یې هره ورځ د خبرو، زده کړې، بانکدارۍ او سوداګرۍ لپاره کاروي، نو شرکتونه سیالي کوي چې ګړندی، کوچنی او ډېر ګټور یې کړي. راتلونکی تلیفون کېدای شي قاتېدونکی یا اغوستونکی وي، ډېر ژر یا په لمر چارج شي، سمدستي ژبې وژباړي او د روغتیا په معاینه کې مرسته وکړي.
+q 5 | Project — Making a Nest: For the project you will need an empty pack of juices or milk, cotton or cloth, various items for decoration. || پروجیکٹ — گھونسلا بنانا: اس پروجیکٹ کے لیے آپ کو جوس یا دودھ کا خالی ڈبا، روئی یا کپڑا اور سجاوٹ کی مختلف اشیا درکار ہوں گی۔ || پروژه — ځاله جوړول: د دې پروژې لپاره د جوس یا شیدو تش ډبه، مالوچ یا ټوکر او د سینګار بېلابېلو توکو ته اړتیا لرئ.
+- 1. Cut the empty pack side for entering and leaving the birds as shown in the figure. || ۱۔ شکل کے مطابق خالی ڈبے کی ایک طرف پرندوں کے آنے جانے کے لیے کاٹیں۔ || ۱. لکه په شکل کې، د مرغیو د ننوتو او وتلو لپاره د تشې ډبې یو اړخ پرې کړئ.
+- 2. Make it comfortable using cotton and cloths. || ۲۔ روئی اور کپڑوں سے اسے آرام دہ بنائیں۔ || ۲. د مالوچو او ټوکرونو په مرسته یې ارامه کړئ.
+- 3. Make a hole and insert a wire through the upper edge so that it can be hanged on a tree. || ۳۔ اوپری کنارے میں سوراخ کر کے تار ڈالیں تاکہ اسے درخت پر لٹکایا جا سکے۔ || ۳. په پورتنۍ څنډه کې سوری جوړ کړئ او سیم پکې ننباسئ چې پر ونه وځړول شي.
+- 4. Use colour ribbon and cardboard to make it fancy. || ۴۔ اسے خوب صورت بنانے کے لیے رنگین فیتے اور گتّا استعمال کریں۔ || ۴. د ښکلي کولو لپاره رنګین فیتې او مقوا وکاروئ.
+- 5. Hang it somewhere near your home or school so that birds can use it. Observe if the birds use it as their nest or not. || ۵۔ اسے اپنے گھر یا اسکول کے قریب کہیں لٹکا دیں تاکہ پرندے اسے استعمال کر سکیں۔ مشاہدہ کریں کہ پرندے اسے اپنے گھونسلے کے طور پر استعمال کرتے ہیں یا نہیں۔ || ۵. د خپل کور یا ښوونځي سره نږدې یې چېرته وځړوئ چې مرغۍ یې وکاروي. وګورئ چې مرغۍ یې د ځالې په توګه کاروي که نه.
+table Making a Nest || گھونسلا بنانا || ځاله جوړول
+tr two bird nests made from juice cartons, decorated, with entrance holes and hanging wires || جوس کے ڈبوں سے بنے دو سجے ہوئے گھونسلے، داخلے کے سوراخوں اور لٹکانے والی تاروں کے ساتھ || د جوس له ډبو جوړې دوه ښکلې ځالې، د ننوتو سوریو او ځړولو سیمونو سره
+endtable
+endexercise
+@issue Printed "Why mobile phone technology is progressing rapidly?", "How will be the mobile phone of the future?" and "it can be hanged" kept as printed. Question iii's shapes (sphere, cube, pyramid, cone, prism) are named by the agent from the drawings; the page gives only pictures.

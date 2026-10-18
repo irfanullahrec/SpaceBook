@@ -1,0 +1,24 @@
+@printed 98
+@issue The solution says "subtract the sum of these three sets from the total 225" and computes 225 − 200 = 25 (76 + 92 + 32 = 200); kept as printed. The A ∩ B region is also labelled "A∩B" in the figure.
+## 5.3.8 Real life Situation involving sets || 5.3.8 سیٹوں پر مشتمل حقیقی زندگی کی صورتحال || 5.3.8 د سېټونو اړوند د ریښتیني ژوند حالتونه
+p There are many situations in our daily life where the concepts of sets can be used. Let's consider the example. || ہماری روزمرہ زندگی میں بہت سی صورتیں ہیں جہاں سیٹ کے تصورات استعمال کیے جا سکتے ہیں۔ آئیے مثال پر غور کریں۔ || زموږ په ورځني ژوند کې ډېر حالتونه شته چې د سېټونو مفاهیم پکې کارول کېدای شي. راځئ بېلګې ته پام وکړو.
+example 1
+p The data of 225 people who bought various ice cream flavors is given below. || مختلف ذائقوں کی آئس کریم خریدنے والے 225 افراد کا ڈیٹا نیچے دیا گیا ہے۔ || د 225 کسانو معلومات چې د آیس کریم بېلابېل خوندونه یې اخیستي لاندې ورکړل شوي.
+table
+th | People who bought only Vanilla | People who bought only strawberry | People who bought both
+tr | 76 | 92 | 32
+endtable
+p Create a Venn diagram to illustrate this information. || اس معلومات کو ظاہر کرنے کے لیے وین ڈایاگرام بنائیں۔ || د دې معلوماتو د ښودلو لپاره وین ډیاګرام جوړ کړئ.
+## Solution: || حل: || حل:
+p Let's denote each set first. || آئیے پہلے ہر سیٹ کو ظاہر کریں۔ || راځئ لومړی هر سېټ وښیو.
+m A = People who bought only vanilla flavour
+m B = People who bought only strawberry flavour
+m Also, A ∩ B = 32
+p Then finally, subtract the sum of these three sets from the total 225 people that will be shown outside the circles. || پھر آخر میں ان تین سیٹوں کا مجموعہ کل 225 افراد سے تفریق کریں جو دائروں کے باہر دکھایا جائے گا۔ || بیا په پای کې د دې دریو سېټونو مجموعه له ټولو 225 کسانو څخه کمه کړئ چې د دایرو بهر به ښودل کېږي.
+m The quantity outside the circles $= 225 - 200 = 25$
+p So, the Venn diagram for the above information is given below. || لہٰذا اوپر کی معلومات کا وین ڈایاگرام نیچے دیا گیا ہے۔ || نو د پورتنیو معلوماتو وین ډیاګرام لاندې ورکړل شوی.
+venn sets=A,B | U=U | a=76 | ab=32 | b=92 | out=25 | shade=ab | note=A ∩ B = 32
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Ask students to tell the uses of set and their operations in our daily life. Get students into small groups and ask them to make real word problem in which sets are involved. Ask them to share the problems with their class-fellows and teacher. || طلبہ سے ہماری روزمرہ زندگی میں سیٹ اور ان کی عملیات کے استعمالات بتانے کو کہیں۔ طلبہ کو چھوٹے گروپوں میں تقسیم کریں اور ان سے سیٹوں پر مشتمل حقیقی لفظی سوالات بنانے کو کہیں۔ ان سے کہیں کہ سوالات اپنے ہم جماعتوں اور استاد کے ساتھ شیئر کریں۔ || له زده کوونکو وغواړئ چې زموږ په ورځني ژوند کې د سېټونو او د هغوی د عملیاتو کارونې ووایي. زده کوونکي په کوچنیو ډلو ووېشئ او ورته ووایاست چې داسې ریښتینې لفظي پوښتنې جوړې کړي چې سېټونه پکې شامل وي. ورته ووایاست چې پوښتنې له ټولګیوالو او ښوونکي سره شریکې کړي.
+endbox

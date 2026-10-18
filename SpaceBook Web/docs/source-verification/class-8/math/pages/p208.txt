@@ -1,0 +1,22 @@
+@printed 200
+@issue The ordered-pair table is partly hidden by the scanner's thumb; read as x = 0, 1/2, 1 and y = −1, 0, 1 (consistent with y = 2x − 1). "Gradiente" kept as printed. The shaded right triangle in the figure is drawn between (1/2, 0) and (1, 1).
+p Now observe an equation: $y = 2x - 1$. || اب ایک مساوات کا مشاہدہ کریں: $y = 2x - 1$۔ || اوس یوه معادله وګورئ: $y = 2x - 1$.
+p Let's find some ordered pairs satisfying this equation by putting a few values of x or y and get the corresponding values of y or x. || آئیے x یا y کی چند قیمتیں رکھ کر اور y یا x کی متعلقہ قیمتیں حاصل کر کے اس مساوات کو پورا کرنے والے کچھ مرتب جوڑے معلوم کریں۔ || راځئ د x یا y د څو ارزښتونو په ایښودلو او د y یا x د اړوندو ارزښتونو په ترلاسه کولو د دې معادلې پوره کوونکې څو مرتبې جوړې ومومو.
+table
+tr | $x$ | 0 | $\frac{1}{2}$ | 1
+tr | y | −1 | 0 | 1
+endtable
+p Plot these ordered pairs to get the required graph of equation || مطلوبہ مساوات کا گراف حاصل کرنے کے لیے یہ مرتب جوڑے لگائیں || د معادلې د اړین ګراف د ترلاسه کولو لپاره دا مرتبې جوړې ولګوئ
+plane x=-4..5 | y=-3..5 | step=1 | lines=2,-1,-0.9,2.4 | tri=0.5,0;1,0;1,1 | pts=0,-1;0.5,0;1,1
+p Choose any two points on the line and draw a right triangle and calculate the gradient || لکیر پر کوئی بھی دو نقاط چنیں اور قائمہ مثلث بنا کر ڈھلوان معلوم کریں || پر کرښه هر دوه ټکي وټاکئ او قایم مثلث رسم کړئ او میل محاسبه کړئ
+m Gradiente $= \frac{\text{Vertical change}}{\text{Horizontal change}} = \frac{2}{1} = 2$
+p Now find the y-intercept. When $x = 0$ the value of y is −1. So this line cuts the y-axis at $y = -1$. So, the y intercept is −1. || اب y-قطع معلوم کریں۔ جب $x = 0$ ہو تو y کی قیمت −1 ہے۔ لہٰذا یہ لکیر y-محور کو $y = -1$ پر قطع کرتی ہے۔ لہٰذا y قطع −1 ہے۔ || اوس y-تقاطع ومومئ. کله چې $x = 0$ وي د y ارزښت −1 دی. نو دا کرښه y-محور په $y = -1$ کې پرې کوي. نو y تقاطع −1 دی.
+p Observe the equation again: || مساوات کا دوبارہ مشاہدہ کریں: || معادله بیا وګورئ:
+m $y = 2x + (-1)$
+p We can see that in this form, 2 is representing the gradient(slope) and −1 is representing the y-intercept of the straight line. || ہم دیکھ سکتے ہیں کہ اس شکل میں 2 ڈھلوان (سلوپ) اور −1 سیدھی لکیر کے y-قطع کو ظاہر کر رہا ہے۔ || موږ لیدلی شو چې په دې بڼه کې 2 میل (سلوپ) او −1 د مستقیمې کرښې y-تقاطع ښيي.
+p In general, when the equation of a straight line is in the form $y = mx + c$, m represents the gradient (or slope) and c represents the y-intercept of the line. || عام طور پر جب سیدھی لکیر کی مساوات $y = mx + c$ کی شکل میں ہو تو m ڈھلوان (یا سلوپ) اور c لکیر کے y-قطع کو ظاہر کرتا ہے۔ || په عمومي ډول کله چې د مستقیمې کرښې معادله د $y = mx + c$ په بڼه وي، m میل (یا سلوپ) او c د کرښې y-تقاطع ښيي.
+box info | Slope-intercept form || ڈھلوان-قطع شکل || د میل-تقاطع بڼه
+m $y = mx + c$
+m m $=$ gradient
+m c $=$ y-intercept
+endbox

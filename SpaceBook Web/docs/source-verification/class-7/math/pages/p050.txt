@@ -1,0 +1,83 @@
+@printed 46
+example 2 | Verify that the square of 0.009 is smaller than it. || تصدیق کریں کہ 0.009 کا مربع اس سے چھوٹا ہے۔ || تایید کړئ چې د 0.009 مربع له هغه څخه کوچنۍ ده.
+p **Solution:** || **حل:** || **حل:**
+eq (0.009)^2 = 0.009 \times 0.009 = \frac{9}{1000} \times \frac{9}{1000} = \frac{81}{1000000} = 0.000081
+p We can see that 0.000081 is smaller than 0.009. || ہم دیکھ سکتے ہیں کہ 0.000081، 0.009 سے چھوٹا ہے۔ || موږ لیدلی شو چې 0.000081 له 0.009 څخه کوچنی دی.
+p Hence verified. || لہٰذا تصدیق ہو گئی۔ || نو تایید شوه.
+endexample
+exercise 3.1
+q 1 | Find the square of the following numbers. || درج ذیل اعداد کا مربع معلوم کریں۔ || د لاندې عددونو مربع معلومه کړئ.
+qp a | 16
+qp b | 625
+qp c | 2560
+qp d | 1089
+qp e | 562
+qp f | 1600
+qp g | 810
+qp h | 2500
+qp i | 490
+qp j | 5600
+qp k | 10200
+qp l | 1210
+q 2 | Without solving, check whether the following numbers *can be* perfect squares by looking at their ending digit(s). || حل کیے بغیر، آخری ہندسے (ہندسوں) کو دیکھ کر جانچیں کہ درج ذیل اعداد کامل مربع ہو سکتے ہیں یا نہیں۔ || پرته له حل څخه، د وروستي رقم (رقمونو) په کتلو وګورئ چې لاندې عددونه بشپړ مربعات کېدای شي که نه.
+qp a | 441
+qp b | 625
+qp c | 2560
+qp d | 1089
+qp e | 562
+qp f | 1600
+qp g | 810
+qp h | 2500
+qp i | 490
+qp j | 5600
+qp k | 10200
+qp l | 1210
+q 3 | Test whether the following are a perfect squares or not by using prime factorisation. || مفرد تجزی کے ذریعے جانچیں کہ درج ذیل کامل مربع ہیں یا نہیں۔ || د لومړني ضربي تجزیې په مرسته وازمویئ چې لاندې بشپړ مربعات دي که نه.
+qp a | 49
+qp b | 98
+qp c | 144
+qp d | 784
+qp e | 125
+qp f | 1600
+qp g | 147
+qp h | 81
+qp i | 450
+qp j | 630
+qp k | 90
+qp l | 900
+q 4 | Tick (✓) the perfect squares of even numbers. || جفت اعداد کے کامل مربعوں پر (✓) کا نشان لگائیں۔ || د جفتو عددونو پر بشپړو مربعاتو (✓) نښه ولګوئ.
+qp a | 81
+qp b | 121
+qp c | 256
+qp d | 324
+qp e | 49
+qp f | 625
+qp g | 25
+q 5 | Verify that the square of each of the following proper fractions is less than the fraction. || تصدیق کریں کہ درج ذیل ہر واجب کسر کا مربع اس کسر سے کم ہے۔ || تایید کړئ چې د لاندې هر سم کسر مربع له هغه کسر څخه کمه ده.
+qp a | $\frac{3}{4}$
+qp b | $\frac{9}{10}$
+qp c | $\frac{17}{20}$
+qp d | $\frac{15}{17}$
+qp e | $\frac{2}{7}$
+qp f | $\frac{4}{11}$
+qp g | $\frac{6}{13}$
+qp h | $\frac{11}{21}$
+qp i | $\frac{45}{46}$
+qp j | $\frac{99}{100}$
+qp k | $\frac{34}{45}$
+qp l | $\frac{17}{100}$
+q 6 | Verify that the square of each of the following decimals is smaller than the decimal. || تصدیق کریں کہ درج ذیل ہر اعشاریے کا مربع اس اعشاریے سے چھوٹا ہے۔ || تایید کړئ چې د لاندې هرې اعشاریې مربع له هغې اعشاریې څخه کوچنۍ ده.
+qp a | 0.2
+qp b | 5.1
+qp c | 2.1
+qp d | 6.8
+qp e | 1.02
+qp f | 0.05
+qp g | 0.23
+qp h | 0.98
+qp i | 0.55
+qp j | 0.10
+qp k | 0.89
+qp l | 3.24
+endexercise
+@issue Exercise 3.1 Q6 includes decimals greater than 1 (5.1, 2.1, 6.8, 1.02, 3.24), whose squares are larger, not smaller; the question is kept as printed.

@@ -1,0 +1,51 @@
+@printed 139
+@issue This page is faint in both scans; the exponents are read from context. Q1 k) prints "a² − 25    1" (a stray "1"), p) "a + 5)² − c²" (opening bracket missing); kept as printed. There is no item s) after r).
+qp i | $t^2 - \frac{4}{5}tv + \frac{4}{25}v^2$
+qp j | $16x^2 - 56xy + 49y^2$
+qp k | $a^2 - 25 \quad 1$
+qp l | $4b^2 - 81$
+qp m | $9r^2 - 49q^2$
+qp n | $\frac{9}{16}u^2 - \frac{25}{49}v^2$
+qp o | $225x^2 - 256y^2$
+qp p | $a + 5)^2 - c^2$
+qp q | $9b^2 + 42b + 49 - d^2$
+qp r | $25p^2 - 70pq + 49q^2 - 25r^2$
+endexercise
+@sec 6.12 | Some More Algebraic Formulae || چند مزید الجبری فارمولے || ځینې نور الجبري فورمولونه
+# 6.12 Some More Algebraic Formulae || 6.12 چند مزید الجبری فارمولے || 6.12 ځینې نور الجبري فورمولونه
+p You have learnt some most basic algebraic formulae in Grade VII. You not only revised these formulae in Grade VIII but also learnt the application of these formulae to solve certain problems involving evaluation and factorization of algebraic expressions. Let us learn two more algebraic formulae, which are: || آپ ساتویں جماعت میں کچھ سب سے بنیادی الجبری فارمولے سیکھ چکے ہیں۔ آپ نے آٹھویں جماعت میں نہ صرف ان فارمولوں کو دہرایا بلکہ الجبری عبارتوں کی قیمت اور تجزی سے متعلق کچھ مسائل حل کرنے کے لیے ان فارمولوں کا استعمال بھی سیکھا۔ آئیے دو مزید الجبری فارمولے سیکھیں، جو یہ ہیں: || تاسو په اووم ټولګي کې ځینې تر ټولو بنسټیز الجبري فورمولونه زده کړي. په اتم ټولګي کې مو نه یوازې دا فورمولونه تکرار کړل بلکې د الجبري افادو د ارزونې او تجزیې اړوند د ځینو ستونزو د حل لپاره د دې فورمولونو کارول مو هم زده کړل. راځئ دوه نور الجبري فورمولونه زده کړو، چې دا دي:
+m a) $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$
+m b) $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$
+## 6.12.1 Proof of the First Formula || 6.12.1 پہلے فارمولے کا ثبوت || 6.12.1 د لومړي فورمول ثبوت
+p We know that || ہم جانتے ہیں کہ || موږ پوهېږو چې
+m $(a + b)^3 = (a + b)(a + b)^2$
+m $(a + b)^3 = (a + b)(a^2 + 2ab + b^2) \quad [\because (a + b)^2 = a^2 + 2ab + b^2]$
+m $(a + b)^3 = a(a^2 + 2ab + b^2) + b(a^2 + 2ab + b^2)$
+m $(a + b)^3 = a^3 + 2a^2b + ab^2 + a^2b + 2ab^2 + b^3$
+m $(a + b)^3 = a^3 + 2a^2b + a^2b + ab^2 + 2ab^2 + b^3$
+m $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$
+box info | Result || نتیجہ || پایله
+m Thus, $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$
+endbox
+## 6.12.2 Proof of the Second Formula || 6.12.2 دوسرے فارمولے کا ثبوت || 6.12.2 د دوهم فورمول ثبوت
+p We also know that, || ہم یہ بھی جانتے ہیں کہ، || موږ دا هم پوهېږو چې،
+m $(a - b)^3 = (a - b)(a - b)^2$
+m $(a - b)^3 = (a - b)(a^2 - 2ab + b^2) \quad [\because (a - b)^2 = a^2 - 2ab + b^2]$
+m $(a - b)^3 = a(a^2 - 2ab + b^2) - b(a^2 - 2ab + b^2)$
+m $(a - b)^3 = a^3 - 2a^2b + ab^2 - a^2b + 2ab^2 - b^3$
+m $(a - b)^3 = a^3 - 2a^2b - a^2b + ab^2 + 2ab^2 - b^3$
+m $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$
+box info | Result || نتیجہ || پایله
+m Thus, $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Consider || غور کریں || پام وکړئ
+m $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$
+m $(a + b)^3 = a^3 + 3ab(a + b) + b^3$
+p Similarly, || اسی طرح، || همدارنګه،
+m $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$
+m $(a - b)^3 = a^3 - 3ab(a - b) - b^3$
+p Thus, these formulae can also be written as, || لہٰذا یہ فارمولے یوں بھی لکھے جا سکتے ہیں، || نو دا فورمولونه داسې هم لیکل کېدای شي،
+m $(a + b)^3 = a^3 + b^3 + 3ab(a + b)$
+m $(a - b)^3 = a^3 - b^3 - 3ab(a - b)$
+endbox

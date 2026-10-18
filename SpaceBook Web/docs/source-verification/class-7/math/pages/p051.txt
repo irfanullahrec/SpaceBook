@@ -1,0 +1,42 @@
+@printed 47
+@sec 3.2 | Square Roots || جذرِ مربع || مربع جذرونه
+# 3.2 Square Roots || 3.2 جذرِ مربع || 3.2 مربع جذرونه
+p The square root is opposite to "squaring a number". Look at the square given below: || جذرِ مربع "کسی عدد کا مربع لینے" کا الٹ ہے۔ نیچے دیے گئے مربع کو دیکھیں: || مربع جذر د "یوه عدد د مربع کولو" پر عکس دی. لاندې ورکړل شوي مربع ته وګورئ:
+svg Squares made of 1, 4 and 9 small squares: $1 = 1^2$, $4 = 2^2$, $9 = 3^2$ || 1، 4 اور 9 چھوٹے مربعوں سے بنے مربع: $1 = 1^2$، $4 = 2^2$، $9 = 3^2$ || له 1، 4 او 9 کوچنیو مربعاتو جوړ مربعات: $1 = 1^2$، $4 = 2^2$، $9 = 3^2$
+<svg viewBox="0 0 340 150" width="340" role="img" aria-label="Three squares: 1 by 1 grid (1 = 1 squared), 2 by 2 grid (4 = 2 squared), 3 by 3 grid (9 = 3 squared)" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#0f172a">
+<rect x="20" y="78" width="30" height="30" fill="#bbf7d0" stroke="#0f172a" stroke-width="1.3"/>
+<g fill="#7dd3fc" stroke="#0f172a" stroke-width="1.3"><rect x="90" y="48" width="30" height="30"/><rect x="120" y="48" width="30" height="30"/><rect x="90" y="78" width="30" height="30"/><rect x="120" y="78" width="30" height="30"/></g>
+<g fill="#fda4af" stroke="#0f172a" stroke-width="1.3"><rect x="200" y="18" width="30" height="30"/><rect x="230" y="18" width="30" height="30"/><rect x="260" y="18" width="30" height="30"/><rect x="200" y="48" width="30" height="30"/><rect x="230" y="48" width="30" height="30"/><rect x="260" y="48" width="30" height="30"/><rect x="200" y="78" width="30" height="30"/><rect x="230" y="78" width="30" height="30"/><rect x="260" y="78" width="30" height="30"/></g>
+<text x="35" y="135" text-anchor="middle">1 = 1²</text><text x="120" y="135" text-anchor="middle">4 = 2²</text><text x="245" y="135" text-anchor="middle">9 = 3²</text>
+</svg>
+endsvg
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The product of rows and columns is equal to the total number of small squares. || قطاروں اور کالموں کا حاصلِ ضرب چھوٹے مربعوں کی کل تعداد کے برابر ہوتا ہے۔ || د قطارونو او ستنو حاصل ضرب د کوچنیو مربعاتو له ټول شمېر سره برابر وي.
+endbox
+p Count the number of small squares in each of the above. || اوپر والے ہر مربع میں چھوٹے مربعوں کی تعداد گنیں۔ || په پورته هر یوه کې د کوچنیو مربعاتو شمېر وشمېرئ.
+p The first square has one column and one row. $1^2 = 1 \times 1 = 1$ || پہلے مربع میں ایک کالم اور ایک قطار ہے۔ $1^2 = 1 \times 1 = 1$ || لومړی مربع یوه ستنه او یو قطار لري. $1^2 = 1 \times 1 = 1$
+p The second square has two columns and two rows. $2^2 = 2 \times 2 = 4$ || دوسرے مربع میں دو کالم اور دو قطاریں ہیں۔ $2^2 = 2 \times 2 = 4$ || دوهم مربع دوه ستنې او دوه قطارونه لري. $2^2 = 2 \times 2 = 4$
+p The third square has three columns and three rows. $3^2 = 3 \times 3 = 9$ || تیسرے مربع میں تین کالم اور تین قطاریں ہیں۔ $3^2 = 3 \times 3 = 9$ || درېیم مربع درې ستنې او درې قطارونه لري. $3^2 = 3 \times 3 = 9$
+p The numbers 1, 4 and 9 are the squares of the numbers 1, 2 and 3 respectively. Each square has an equal number of rows and columns. The number of rows or columns is actually the square root of each number. || اعداد 1، 4 اور 9 بالترتیب اعداد 1، 2 اور 3 کے مربع ہیں۔ ہر مربع میں قطاروں اور کالموں کی تعداد برابر ہے۔ قطاروں یا کالموں کی تعداد دراصل ہر عدد کا جذرِ مربع ہے۔ || عددونه 1، 4 او 9 په ترتیب سره د 1، 2 او 3 عددونو مربعات دي. هر مربع برابر شمېر قطارونه او ستنې لري. د قطارونو یا ستنو شمېر په حقیقت کې د هر عدد مربع جذر دی.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Finding square root is the inverse process of squaring the number. || جذرِ مربع معلوم کرنا عدد کا مربع لینے کا الٹ عمل ہے۔ || د مربع جذر موندل د عدد د مربع کولو معکوس عمل دی.
+endbox
+p From the above squares we can say: || اوپر والے مربعوں سے ہم کہہ سکتے ہیں: || له پورته مربعاتو څخه ویلی شو:
+p The square root of 1 is 1, square root of 4 is 2 and square root of 9 is 3. We use the symbol '$\sqrt{\phantom{x}}$' to represent square root. It is called the radical sign. So, || 1 کا جذرِ مربع 1، 4 کا جذرِ مربع 2 اور 9 کا جذرِ مربع 3 ہے۔ ہم جذرِ مربع ظاہر کرنے کے لیے علامت '$\sqrt{\phantom{x}}$' استعمال کرتے ہیں۔ اسے جذر کی علامت (radical sign) کہتے ہیں۔ لہٰذا، || د 1 مربع جذر 1، د 4 مربع جذر 2 او د 9 مربع جذر 3 دی. د مربع جذر د ښودلو لپاره د '$\sqrt{\phantom{x}}$' نښه کاروو. دې ته د جذر نښه (radical sign) ویل کېږي. نو،
+eq \sqrt{1} = 1, \quad \sqrt{4} = 2, \quad \sqrt{9} = 3,
+p The numbers 1, 4 and 9 are called the radicands. || اعداد 1، 4 اور 9 کو مجذور (radicands) کہتے ہیں۔ || عددونه 1، 4 او 9 ته مجذور (radicands) ویل کېږي.
+p In general we can say that if a and b are any positive numbers, then $a^2 = b$ implies that $\sqrt{b} = a$. It is read as "square root of b is a". || عام طور پر ہم کہہ سکتے ہیں کہ اگر a اور b کوئی مثبت اعداد ہوں تو $a^2 = b$ کا مطلب ہے $\sqrt{b} = a$۔ اسے "b کا جذرِ مربع a ہے" پڑھا جاتا ہے۔ || په عمومي ډول ویلی شو چې که a او b هر مثبت عددونه وي، نو $a^2 = b$ معنا لري چې $\sqrt{b} = a$. دا داسې لوستل کېږي: "د b مربع جذر a دی".
+p There are two methods to find the square root of numbers. || اعداد کا جذرِ مربع معلوم کرنے کے دو طریقے ہیں۔ || د عددونو د مربع جذر د موندلو دوه طریقې دي.
+- i) Factorisation method || i) تجزی کا طریقہ || i) د تجزیې طریقه
+- ii) Division method || ii) تقسیم کا طریقہ || ii) د وېش طریقه
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following numbers. || درج ذیل اعداد کا جذرِ مربع معلوم کریں۔ || د لاندې عددونو مربع جذر معلوم کړئ.
+qp a | 25
+qp b | 64
+qp c | 81
+endbox
+@issue Quick Check part (c) is cut off at the right edge of both scans ("c) 8…"); the faint second digit in the spread PDF reads 81.
+## 3.2.1 Square Root by Factorisation Method || 3.2.1 تجزی کے طریقے سے جذرِ مربع || 3.2.1 د تجزیې په طریقه مربع جذر
+p To find the square root of the numbers using factorisation method, we follow these steps. || تجزی کے طریقے سے اعداد کا جذرِ مربع معلوم کرنے کے لیے ہم یہ مراحل اختیار کرتے ہیں۔ || د تجزیې په طریقه د عددونو د مربع جذر د موندلو لپاره دا پړاوونه تعقیبوو.
+p **Step I:** First find the prime factors of the given numbers and write them in pairs. || **مرحلہ I:** پہلے دیے گئے اعداد کے مفرد اجزائے ضربی معلوم کریں اور انہیں جوڑوں میں لکھیں۔ || **لومړی پړاو:** لومړی د ورکړل شویو عددونو لومړني ضربي اجزا معلوم کړئ او په جوړو یې ولیکئ.
+p **Step II:** From each pair, take only one number and find their product. This product will be the square root of the given number. || **مرحلہ II:** ہر جوڑے میں سے صرف ایک عدد لیں اور ان کا حاصلِ ضرب معلوم کریں۔ یہ حاصلِ ضرب دیے گئے عدد کا جذرِ مربع ہوگا۔ || **دوهم پړاو:** له هرې جوړې څخه یوازې یو عدد واخلئ او د هغوی حاصل ضرب معلوم کړئ. دا حاصل ضرب به د ورکړل شوي عدد مربع جذر وي.

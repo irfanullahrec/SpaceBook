@@ -1,0 +1,17 @@
+@printed 28
+@deco Screenshot with Formula bar =MAX(G4:G8) in G9 (Maximum marks, 74, red arrow; F9 labelled "Maximum marks"). Screenshot with =MIN(G4:G8) in G9 (Minimum marks, 46). Screenshot of the sorted "Result sheet Annual Exam" with a red arrow pointing at the Percentage column.
+p Figure: =MAX(G4:G8) gives the maximum obtained marks, 74. || تصویر: =MAX(G4:G8) زیادہ سے زیادہ حاصل کردہ نمبر، 74، دیتا ہے۔ || انځور: =MAX(G4:G8) تر ټولو ډېرې ترلاسه شوې نمبرې، ۷۴، ورکوي.
+### MIN( ) Function || MIN( ) فنکشن || MIN( ) فنکشن
+p The MIN( ) function is used to find the minimum value from a range of cells. || MIN( ) فنکشن خلیوں کی حد میں سے کم سے کم قدر معلوم کرنے کے لیے استعمال ہوتا ہے۔ || MIN( ) فنکشن د حجرو له پراخوالي څخه د تر ټولو ټیټ ارزښت موندلو لپاره کارول کېږي.
+p =MIN(G4:G8) finds the minimum marks obtained by a student in a class. || =MIN(G4:G8) کلاس میں کسی طالب علم کے حاصل کردہ کم سے کم نمبر معلوم کرتا ہے۔ || =MIN(G4:G8) په ټولګي کې د یوه زده کوونکي ترلاسه شوې تر ټولو لږې نمبرې موندي.
+p Figure: =MIN(G4:G8) gives the minimum obtained marks, 46. || تصویر: =MIN(G4:G8) کم سے کم حاصل کردہ نمبر، 46، دیتا ہے۔ || انځور: =MIN(G4:G8) تر ټولو لږې ترلاسه شوې نمبرې، ۴۶، ورکوي.
+### 2.4.3 Sorting Data || 2.4.3 ڈیٹا کی ترتیب (سورٹنگ) || 2.4.3 د ډېټا ترتیبول (سورټینګ)
+p Sorting is the process of arranging data in specific order. The data can be sorted in ascending or descending order. Result sheet is displayed according to percentage in descending order. || سورٹنگ ڈیٹا کو مخصوص ترتیب میں لگانے کا عمل ہے۔ ڈیٹا کو صعودی یا نزولی ترتیب میں لگایا جا سکتا ہے۔ نتیجہ شیٹ فیصد کے مطابق نزولی ترتیب میں دکھائی گئی ہے۔ || سورټینګ د ډېټا په ځانګړې ترتیب کې ترتیبولو بهیر دی. ډېټا په پورته کېدونکې یا ښکته کېدونکې ترتیب کې ترتیبېدای شي. د پایلو پاڼه د سلنې له مخې په ښکته کېدونکې ترتیب ښودل شوې.
+table
+th | Roll# | Student Name | English marks | Science marks | Math marks | Urdu marks | Obtained marks | Average | Percentage | Remarks (Pass/Fail)
+tr | 1004 | Maheen | 18 | 19 | 20 | 17 | 74 | 18.5 | 92.5 | Pass
+tr | 1001 | Musab Umair | 18 | 17 | 19 | 14 | 68 | 17 | 85 | Pass
+tr | 1003 | Aoun Khan | 15 | 17 | 18 | 16 | 66 | 16.5 | 82.5 | Pass
+tr | 1005 | Ali Raza | 12 | 14 | 15 | 13 | 54 | 13.5 | 67.5 | Pass
+tr | 1002 | Heeba Fatima | 13 | 12 | 8 | 13 | 46 | 11.5 | 57.5 | Fail
+endtable

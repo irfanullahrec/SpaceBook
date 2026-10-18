@@ -1,0 +1,36 @@
+@printed 106
+@issue Quick Check ii prints "3, 7, 10, 17, 27, ..."; kept as printed.
+m $\to +3 \to +5 \to +7$
+m $1, \quad 4, \quad 9, \quad 16, ...$
+m $1, (1 + 3), (1 + 3 + 5), (1 + 3 + 5 + 7), ...$
+p Can you describe the rule of this pattern now? || کیا اب آپ اس نمونے کا اصول بیان کر سکتے ہیں؟ || ایا اوس د دې بېلګې قاعده بیانولی شئ؟
+p What will be the 7th term? || ساتواں رکن کیا ہوگا؟ || اووم حد به څه وي؟
+p What will be the 10th term? || دسواں رکن کیا ہوگا؟ || لسم حد به څه وي؟
+p We can also present the pattern in another way, as; || ہم اس نمونے کو ایک اور طریقے سے بھی پیش کر سکتے ہیں، جیسے؛ || موږ دا بېلګه په بل ډول هم وړاندې کولی شو، لکه؛
+pattern kind=grid | n=4 | labels=1,;4,;9,;16,...
+p The sequence can also be represented as squares of natural numbers. || ترتیب کو قدرتی اعداد کے مربعوں کے طور پر بھی ظاہر کیا جا سکتا ہے۔ || لړۍ د طبیعي عددونو د مربعو په توګه هم ښودل کېدای شي.
+m $1 = 1 \times 1 = 1^2 \qquad 4 = 2 \times 2 = 2^2$
+m $9 = 3 \times 3 = 3^2 \qquad 16 = 4 \times 4 = 4^2$
+p Since the numbers forming the sequence can be represented as squares, so these numbers are called **square numbers**. || چونکہ ترتیب بنانے والے اعداد کو مربعوں کی صورت میں ظاہر کیا جا سکتا ہے، اس لیے یہ اعداد **مربع اعداد** کہلاتے ہیں۔ || څرنګه چې د لړۍ جوړوونکي عددونه د مربعو په بڼه ښودل کېدای شي، نو دې عددونو ته **مربع عددونه** وايي.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Define the rules of the following patterns: || درج ذیل نمونوں کے اصول بیان کریں: || د لاندې بېلګو قاعدې تعریف کړئ:
+qp i | 1, 8, 27, 64,....
+qp ii | 3, 7, 10, 17, 27,...
+qp iii | A, C, F, J,....
+endbox
+p You can recognize the following interesting sequence; || آپ درج ذیل دلچسپ ترتیب پہچان سکتے ہیں؛ || تاسو لاندې په زړه پورې لړۍ پېژندلی شئ؛
+m $1, \quad 1, \quad 2, \quad 3, \quad 5, \quad 8, ...$
+p This sequence is known as a **Fibonacci sequence**. Each term of the sequence is obtained by adding the two previous terms together. || اس ترتیب کو **فبوناچی ترتیب** کہتے ہیں۔ ترتیب کا ہر رکن پچھلے دو ارکان کو جمع کر کے حاصل ہوتا ہے۔ || دې لړۍ ته **فیبوناچي لړۍ** وايي. د لړۍ هر حد د مخکینیو دوو حدونو د جمع کولو سره لاسته راځي.
+p Let us now recall the two major types of number sequences i.e arithmetic sequences and geometric sequences. || آئیے اب عددی ترتیب کی دو بڑی اقسام یعنی حسابی ترتیب اور ہندسی ترتیب کو یاد کریں۔ || راځئ اوس د عددي لړیو دوه لوی ډولونه یعنې حسابي لړۍ او هندسي لړۍ را په یاد کړو.
+## 6.1.1 Arithmetic and Geometric Sequence || 6.1.1 حسابی اور ہندسی ترتیب || 6.1.1 حسابي او هندسي لړۍ
+p A sequence of numbers in which each new term is obtained by adding or subtracting a fixed number (known as the **common difference**) in the previous term is called an **arithmetic sequence**. || اعداد کی وہ ترتیب جس میں ہر نیا رکن پچھلے رکن میں ایک مقررہ عدد (جسے **مشترک فرق** کہتے ہیں) جمع یا تفریق کر کے حاصل ہو، **حسابی ترتیب** کہلاتی ہے۔ || د عددونو هغه لړۍ چې پکې هر نوی حد په مخکیني حد کې د یوه ټاکلي عدد (چې **ګډ توپیر** بلل کېږي) د جمع یا تفریق سره لاسته راځي، **حسابي لړۍ** بلل کېږي.
+example 1
+p 1. Sequence of even numbers: || 1. جفت اعداد کی ترتیب: || 1. د جفتو عددونو لړۍ:
+m $2, \ 4, \ 6, \ 8, \ 10,... \qquad (\to +2 \to +2 \to +2 \to +2)$
+p 2. Sequence of odd numbers: || 2. طاق اعداد کی ترتیب: || 2. د طاقو عددونو لړۍ:
+m $1, \ 3, \ 5, \ 7, \ 9,... \qquad (\to +2 \to +2 \to +2 \to +2)$
+p 3. Sequence of multiples of 3. || 3. 3 کے اضعاف کی ترتیب۔ || 3. د 3 د مضربونو لړۍ.
+m $3, \ 6, \ 9, \ 12,... \qquad (\to +3 \to +3 \to +3 \to +3)$
+p 4. Sequence of decreasing numbers. || 4. گھٹتے ہوئے اعداد کی ترتیب۔ || 4. د کمېدونکو عددونو لړۍ.
+m $100, \ 97, \ 94, \ 91, ... \qquad (\to -3 \to -3 \to -3 \to -3)$
+endexample

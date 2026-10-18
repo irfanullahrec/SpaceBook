@@ -1,0 +1,23 @@
+@printed 81
+@deco Picture of a pizza in 4 slices and of the same pizza with only one slice left.
+@issue Under "Improper Fractions" the second example prints 4/4 + 4/4 → 8/8. Two wholes of 4 quarters make 8/4, not 8/8. Kept as printed with an editorial note.
+fig frow fpie 4 4 #fb923c | whole pizza ;; ftext → ;; fpie 4 2 #fb923c | 1 part left || A pizza in 4 equal parts; after eating 3 parts, 1 part is left || 4 برابر حصوں والا پیزا؛ 3 حصے کھانے کے بعد 1 حصہ بچا || په 4 برابرو برخو پیزا؛ د 3 برخو له خوړلو وروسته 1 برخه پاتې ده
+p Similarly, the left over part can be written as fraction = $\frac{1}{4}$ || اسی طرح بچے ہوئے حصے کو کسر میں یوں لکھا جا سکتا ہے = $\frac{1}{4}$ || همداسې پاتې برخه د کسر په بڼه لیکل کېدای شي = $\frac{1}{4}$
+p Look at the following fraction. || درج ذیل کسر دیکھیں۔ || لاندې کسر وګورئ.
+fig frow fpie 4 3,4 #3b82f6 | 2/4 ;; fpie 8 1,2,3 #3b82f6 | 3/8 || $\frac{2}{4}$ and $\frac{3}{8}$ || $\frac{2}{4}$ اور $\frac{3}{8}$ || $\frac{2}{4}$ او $\frac{3}{8}$
+p In these fractions, numerator is less than denominator. Therefore, these fractions are called proper fractions. || ان کسور میں شمار کنندہ نسب نما سے کم ہے۔ اس لیے یہ کسور واجب کسور کہلاتے ہیں۔ || په دې کسرونو کې صورت له مخرج کم دی. نو دا کسرونه واجب کسرونه بلل کېږي.
+box note | Key Point || اہم نکتہ || مهم ټکی
+p In $\frac{1}{4}$, 1 is numerator, 4 is denominator || $\frac{1}{4}$ میں 1 شمار کنندہ اور 4 نسب نما ہے || په $\frac{1}{4}$ کې 1 صورت او 4 مخرج دی
+endbox
+box check | Check Point || جانچ || ازموینه
+q - | Is $\frac{2}{3}$ a proper fraction? || کیا $\frac{2}{3}$ واجب کسر ہے؟ || ایا $\frac{2}{3}$ واجب کسر دی؟
+sol Yes ## The numerator 2 is less than the denominator 3. || شمار کنندہ 2، نسب نما 3 سے کم ہے۔ || صورت 2 له مخرج 3 کم دی.
+endbox
+## Improper Fractions || غیر واجب کسور || ناواجب کسرونه
+fig frow fpie 4 4 #f9a8d4 | 4/4 ;; fpie 4 1,3,4 #f9a8d4 | 3/4 || $\frac{4}{4}$ and $\frac{3}{4}$ together make $\frac{7}{4}$ || $\frac{4}{4}$ اور $\frac{3}{4}$ مل کر $\frac{7}{4}$ || $\frac{4}{4}$ او $\frac{3}{4}$ یوځای $\frac{7}{4}$
+eq \frac{4}{4} \text{ and } \frac{3}{4} \;\rightarrow\; \frac{7}{4}
+fig frow fpie 4 0 | 4/4 ;; fpie 4 0 | 4/4 || Two circles of 4/4 each || دو دائرے، ہر ایک 4/4 || دوه دایرې، هره یوه 4/4
+eq \frac{4}{4} \text{ and } \frac{4}{4} \;\rightarrow\; \frac{8}{8} \;\text{(as printed)}
+box note | Editorial note (SpaceBook) || ادارتی نوٹ (SpaceBook) || اداري یادونه (SpaceBook)
+p Two wholes, each cut into 4 quarters, make 8 quarters: $\frac{4}{4}$ and $\frac{4}{4}$ give $\frac{8}{4}$ (not $\frac{8}{8}$, which is only one whole). || دو پورے، جن میں سے ہر ایک 4 چوتھائیوں میں کٹا ہو، 8 چوتھائیاں بناتے ہیں: $\frac{4}{4}$ اور $\frac{4}{4}$ سے $\frac{8}{4}$ بنتا ہے ($\frac{8}{8}$ نہیں، جو صرف ایک پورا ہے)۔ || دوه بشپړ، چې هر یو په 4 څلورمو پرې وي، 8 څلورمې جوړوي: $\frac{4}{4}$ او $\frac{4}{4}$ کېږي $\frac{8}{4}$ (نه $\frac{8}{8}$، چې یوازې یو بشپړ دی).
+endbox

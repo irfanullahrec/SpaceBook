@@ -1,0 +1,15 @@
+@printed 227
+example 2 | Graph the image of the shape using the translation given. 2 units right and 3 units up || دی گئی منتقلی سے شکل کی تصویر کا گراف بنائیں۔ 2 اکائیاں دائیں اور 3 اکائیاں اوپر || د ورکړل شوي انتقال په مرسته د شکل انځور ګراف کړئ. 2 واحده ښي او 3 واحده پورته
+p **Solution:** We can write it as: (x, y) → (x+2, y+3). First find the coordinates of the pre-image ABC. A(−4, 1), B(−6, 4), C(−2, 4) || **حل:** ہم اسے یوں لکھ سکتے ہیں: (x, y) → (x+2, y+3)۔ پہلے اصل تصویر ABC کے محددات معلوم کریں۔ A(−4، 1)، B(−6، 4)، C(−2، 4) || **حل:** داسې یې لیکلی شو: (x, y) → (x+2, y+3). لومړی د اصلي انځور ABC مختصات معلوم کړئ. A(−4، 1)، B(−6، 4)، C(−2، 4)
+grid range=-10..10 | shape=-4,1;-6,4;-2,4 | pts=A:-4,1;B:-6,4;C:-2,4 || Triangle ABC with A(−4, 1), B(−6, 4), C(−2, 4) || مثلث ABC جس میں A(−4، 1)، B(−6، 4)، C(−2، 4) || مثلث ABC چې A(−4، 1)، B(−6، 4)، C(−2، 4)
+@issue The book's first graph labels C as "B(−2, 4)" (two vertices named B); shown as C.
+p According to given description of translation, the coordinates of the points in the translated image will be: A(−4, 1) → A'(−4+2, 1+3) or A'(−2, 4); B(−6, 4) → B'(−6+2, 4+3) or B'(−4, 7); C(−2, 4) → C'(−2+2, 4+3) or A'(0, 7). Let's plot the new coordinates for the translated image. || منتقلی کی دی گئی وضاحت کے مطابق منتقل شدہ تصویر کے نقاط کے محددات ہوں گے: A(−4، 1) → A'(−4+2، 1+3) یا A'(−2، 4)؛ B(−6، 4) → B'(−6+2، 4+3) یا B'(−4، 7)؛ C(−2، 4) → C'(−2+2، 4+3) یا A'(0، 7)۔ آئیے منتقل شدہ تصویر کے نئے محددات بنائیں۔ || د انتقال د ورکړل شوې تشریح له مخې به د انتقال شوي انځور د ټکو مختصات دا وي: A(−4، 1) → A'(−4+2، 1+3) یا A'(−2، 4)؛ B(−6، 4) → B'(−6+2، 4+3) یا B'(−4، 7)؛ C(−2، 4) → C'(−2+2، 4+3) یا A'(0، 7). راځئ د انتقال شوي انځور نوي مختصات وښیو.
+grid range=-10..10 | shape=-2,4;-4,7;0,7 | pts=A':-2,4;B':-4,7;C':0,7 || The translated image A'B'C' || منتقل شدہ تصویر A'B'C' || انتقال شوی انځور A'B'C'
+p The image A'B'C' is the required translated image of ABC. || تصویر A'B'C' مثلث ABC کی مطلوبہ منتقل شدہ تصویر ہے۔ || انځور A'B'C' د ABC غوښتل شوی انتقال شوی انځور دی.
+endexample
+@issue The book labels this "Example 1" and writes the last image point as "A'(0, 7)" (should be C'); the example is numbered 2 here and kept otherwise as printed.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Graph the image of the shape using the translation given. 6 units left and 7 units up || دی گئی منتقلی سے شکل کی تصویر کا گراف بنائیں۔ 6 اکائیاں بائیں اور 7 اکائیاں اوپر || د ورکړل شوي انتقال په مرسته د شکل انځور ګراف کړئ. 6 واحده کیڼ او 7 واحده پورته
+grid range=-10..10 | shape=2,-5;9,-5;9,-7;2,-7 || A rectangle in the fourth quadrant to be translated (vertices about (2, −5), (9, −5), (9, −7), (2, −7)) || چوتھے ربع میں ایک مستطیل جسے منتقل کرنا ہے || په څلورم ربع کې یو مستطیل چې باید انتقال شي
+@issue The Quick Check graph is small and blurred; the rectangle's vertices are approximate, and a stray label "A'(−2, 4)" from the example appears on it in print.
+endbox

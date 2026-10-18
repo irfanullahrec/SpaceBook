@@ -1,0 +1,38 @@
+@printed 141
+@issue Example 4 asks for "x³ + 1/x³" but works and answers "x³ − 1/x³ = 264"; the cube of 7 is printed "= 243" (7³ = 343); kept as printed. Exercise 6.12 items k)–p) are printed as part of Q1.
+example 4
+p Find the value of $x^3 + \frac{1}{x^3}$ when $x - \frac{1}{x} = 7$ || $x^3 + \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x - \frac{1}{x} = 7$ ہو || د $x^3 + \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x - \frac{1}{x} = 7$ وي
+## Solution: || حل: || حل:
+m As, $x - \frac{1}{x} = 7$
+m $\left(x - \frac{1}{x}\right)^3 = 7^3$ (Take cube of the both sides of the equation)
+m $x^3 - 3(x)^2\left(\frac{1}{x}\right) + 3(x)\left(\frac{1}{x}\right)^2 - \left(\frac{1}{x}\right)^3 = 243$
+m $x^3 - 3 \times x \times x \times \frac{1}{x} + 3 \times x \times \frac{1}{x} \times \frac{1}{x} - \frac{1}{x^3} = 243$
+m $x^3 - 3x + 3 \times \frac{1}{x} - \frac{1}{x^3} = 243$
+m $x^3 - 3\left(x - \frac{1}{x}\right) - \frac{1}{x^3} = 243$
+m $x^3 - 3 \times 7 - \frac{1}{x^3} = 243 \quad$ [Put $x - \frac{1}{x} = 7$]
+m $x^3 - 21 - \frac{1}{x^3} = 243$
+m $x^3 - \frac{1}{x^3} = 243 + 21$
+m Thus, $x^3 - \frac{1}{x^3} = 264$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Write and memorize the cubes of first 10 natural numbers. || پہلے 10 قدرتی اعداد کے مکعب لکھیں اور یاد کریں۔ || د لومړیو 10 طبیعي عددونو مکعبونه ولیکئ او یاد یې کړئ.
+endbox
+exercise 6.12
+q 1 | Expand the following algebraic expressions by using the algebraic formulae. || الجبری فارمولوں کی مدد سے درج ذیل الجبری عبارتوں کو پھیلائیں۔ || د الجبري فورمولونو په کارولو لاندې الجبري افادې پراخې کړئ.
+qp a | $(2a + 3b)^3$
+qp b | $(x + 5y)^3$
+qp c | $(a - 5b)^3$
+qp d | $(3p + 4q)^3$
+qp e | $(5p - 7q)^3$
+qp f | $(2t - 3u)^3$
+qp g | $\left(x + \frac{1}{x}\right)^3$
+qp h | $\left(x - \frac{1}{x}\right)^3$
+qp i | $\left(4p - \frac{1}{4}\right)^3$
+qp j | $\left(5x + \frac{1}{5x}\right)^3$
+qp k | Find the value of $x^3 + \frac{1}{x^3}$ when $x + \frac{1}{x} = 4$ || $x^3 + \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 4$ ہو || د $x^3 + \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 4$ وي
+qp l | Find the value of $x^3 + \frac{1}{x^3}$ when $x + \frac{1}{x} = 7$ || $x^3 + \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 7$ ہو || د $x^3 + \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 7$ وي
+qp m | Find the value of $x^3 - \frac{1}{x^3}$ when $x - \frac{1}{x} = 3$ || $x^3 - \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x - \frac{1}{x} = 3$ ہو || د $x^3 - \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x - \frac{1}{x} = 3$ وي
+qp n | Find the value of $x^3 - \frac{1}{x^3}$ when $x - \frac{1}{x} = 5$ || $x^3 - \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x - \frac{1}{x} = 5$ ہو || د $x^3 - \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x - \frac{1}{x} = 5$ وي
+qp o | Find the value of $x^3 + \frac{1}{x^3}$ when $x + \frac{1}{x} = 8$ || $x^3 + \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 8$ ہو || د $x^3 + \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 8$ وي
+qp p | Find the value of $x^3 - \frac{1}{x^3}$ when $x - \frac{1}{x} = 10$ || $x^3 - \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x - \frac{1}{x} = 10$ ہو || د $x^3 - \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x - \frac{1}{x} = 10$ وي
+endexercise

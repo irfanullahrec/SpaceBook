@@ -1,0 +1,44 @@
+@printed 233
+q 5 | Look at the spinner and find: || اسپنر کو دیکھیں اور معلوم کریں: || سپینر ته وګورئ او معلوم کړئ:
+spinner green green red yellow red red blue green || Spinner with 8 equal parts: 3 green, 3 red, 1 yellow, 1 blue || 8 برابر حصوں والا اسپنر: 3 سبز، 3 سرخ، 1 پیلا، 1 نیلا || د 8 برابرو برخو سپینر: 3 شنه، 3 سره، 1 ژیړ، 1 آبي
+qp a | The sample space || سیمپل اسپیس || د نمونې فضا
+sol S = {green, green, red, yellow, red, red, blue, green} (8 equally likely sectors) ## Each of the 8 equal parts is one outcome. || 8 برابر حصوں میں سے ہر ایک ایک نتیجہ ہے۔ || هره له 8 برابرو برخو یوه پایله ده.
+qp b | The probability: i. P(red)   ii. P(Green)   iii. P(Blue)   iv. P(yellow) || امکان: i. P(سرخ)   ii. P(سبز)   iii. P(نیلا)   iv. P(پیلا) || احتمال: i. P(سور)   ii. P(شین)   iii. P(آبي)   iv. P(ژیړ)
+solution P(red) = 3/8, P(green) = 3/8, P(blue) = 1/8, P(yellow) = 1/8
+sm P(\text{red}) = \frac{3}{8}, \quad P(\text{green}) = \frac{3}{8}, \quad P(\text{blue}) = \frac{1}{8}, \quad P(\text{yellow}) = \frac{1}{8}
+ss Check: 3/8 + 3/8 + 1/8 + 1/8 = 8/8 = 1. || جانچ: 3/8 + 3/8 + 1/8 + 1/8 = 8/8 = 1۔ || ازموینه: 3/8 + 3/8 + 1/8 + 1/8 = 8/8 = 1.
+endsolution
+q 6 | The pond has 10 blue, 8 red, 7 green and 4 yellow fish. What is the probability that a randomly caught fish will be a: || تالاب میں 10 نیلی، 8 سرخ، 7 سبز اور 4 پیلی مچھلیاں ہیں۔ بلا ترتیب پکڑی گئی مچھلی کے ہونے کا امکان کیا ہے: || په حوض کې 10 آبي، 8 سرې، 7 شنې او 4 ژېړې کبان دي. د تصادفي نیول شوي کب د کېدو احتمال څومره دی:
+qp a | Red fish || سرخ مچھلی || سور کب
+sol $\frac{8}{29}$ ## Total fish = 10 + 8 + 7 + 4 = 29. || کل مچھلیاں = 10 + 8 + 7 + 4 = 29۔ || ټول کبان = 10 + 8 + 7 + 4 = 29.
+qp b | Blue fish || نیلی مچھلی || آبي کب
+sol $\frac{10}{29}$ ## 10 of the 29 fish are blue. || 29 میں سے 10 مچھلیاں نیلی ہیں۔ || له 29 کبانو 10 آبي دي.
+qp c | Green fish || سبز مچھلی || شین کب
+sol $\frac{7}{29}$ ## 7 of the 29 fish are green. || 29 میں سے 7 مچھلیاں سبز ہیں۔ || له 29 کبانو 7 شنه دي.
+q 7 | A box contains 8 buttons out of which 5 are transparent. What is the probability that a randomly selected button will not be a transparent one? || ایک ڈبے میں 8 بٹن ہیں جن میں سے 5 شفاف ہیں۔ بلا ترتیب چنے گئے بٹن کے شفاف نہ ہونے کا امکان کیا ہے؟ || په یوه بکس کې 8 تڼۍ دي چې 5 یې روڼې دي. د تصادفي ټاکل شوې تڼۍ د نه روڼې کېدو احتمال څومره دی؟
+solution $\frac{3}{8}$
+ss Buttons that are not transparent = 8 − 5 = 3. || غیر شفاف بٹن = 8 − 5 = 3۔ || نا روڼې تڼۍ = 8 − 5 = 3.
+sm P(\text{not transparent}) = \frac{3}{8}
+endsolution
+q 8 | In a pack of randomly packed 14 pencils, 11 are blue ones. What is the probability that a randomly selected pencil will be blue? || 14 پنسلوں کے ایک پیکٹ میں 11 نیلی ہیں۔ بلا ترتیب چنی گئی پنسل کے نیلی ہونے کا امکان کیا ہے؟ || د 14 پنسلو په یوه بسته کې 11 آبي دي. د تصادفي ټاکل شوې پنسل د آبي کېدو احتمال څومره دی؟
+solution $\frac{11}{14}$
+sm P(\text{blue}) = \frac{11}{14}
+endsolution
+q 9 | Ali picks a card randomly. Cards: 4, 7, 7, 0, 3, 8 || علی بلا ترتیب ایک کارڈ اٹھاتا ہے۔ کارڈ: 4، 7، 7، 0، 3، 8 || علي په تصادفي ډول یو کارت اخلي. کارتونه: 4، 7، 7، 0، 3، 8
+qp a | What are the possible outcomes? || ممکنہ نتائج کیا ہیں؟ || ممکنې پایلې کومې دي؟
+sol 4, 7, 7, 0, 3, 8 (6 cards) ## Each card is one outcome; 7 appears on two cards. || ہر کارڈ ایک نتیجہ ہے؛ 7 دو کارڈوں پر ہے۔ || هر کارت یوه پایله ده؛ 7 پر دوو کارتونو دی.
+qp b | What is the probability that a randomly selected card will have a 7? || بلا ترتیب چنے گئے کارڈ پر 7 ہونے کا امکان کیا ہے؟ || د تصادفي ټاکل شوي کارت د 7 لرلو احتمال څومره دی؟
+sol $\frac{2}{6} = \frac{1}{3}$ ## Two of the six cards show 7. || چھ میں سے دو کارڈوں پر 7 ہے۔ || له شپږو کارتونو دوه 7 ښيي.
+qp c | What is the probability that a randomly selected card will have a 3? || بلا ترتیب چنے گئے کارڈ پر 3 ہونے کا امکان کیا ہے؟ || د تصادفي ټاکل شوي کارت د 3 لرلو احتمال څومره دی؟
+sol $\frac{1}{6}$ ## Only one card shows 3. || صرف ایک کارڈ پر 3 ہے۔ || یوازې یو کارت 3 ښيي.
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | Observe the bar graph. Interpret it and make a report about the marks of the students in different subjects. Compare their results by interpreting. || بار گراف دیکھیں۔ اس کی تشریح کریں اور مختلف مضامین میں طلبہ کے نمبروں پر رپورٹ بنائیں۔ تشریح کر کے ان کے نتائج کا موازنہ کریں۔ || میله ییز ګراف ته وګورئ. تشریح یې کړئ او په بېلابېلو مضمونونو کې د زده کوونکو د نمرو په اړه راپور جوړ کړئ. د تشریح له لارې د هغوی پایلې پرته کړئ.
+chart v | max 120 20 | title Marks of students | x Subjects | y Marks | cats Maths,Eng,Urdu,Sci,ICT,I.study,Geo,History | Madiha=100,79,80,71,72,73,54,83 | Ali=80,77,90,73,47,70,74,74 | Salma=90,68,61,91,76,72,80,73 | colors #2563eb,#e11d48,#22c55e || Scale: one mark along y-axis = 20 marks (bar heights are read from the printed graph and are approximate) || پیمانہ: y-محور پر ایک نشان = 20 نمبر (بارز کی اونچائی چھپے گراف سے پڑھی گئی ہے اور تقریبی ہے) || پیمانه: پر y-محور یوه نښه = 20 نمرې (د میلو جګوالی له چاپ شوي ګراف لوستل شوی او تقریبي دی)
+qsolution A sample report
+ss Madiha scored highest in Maths (about 100) and History; her lowest mark is in Geography (about 54). || مدیحہ نے ریاضی (تقریباً 100) اور تاریخ میں سب سے زیادہ نمبر لیے؛ اس کے سب سے کم نمبر جغرافیہ (تقریباً 54) میں ہیں۔ || مدیحې په ریاضي (نږدې 100) او تاریخ کې تر ټولو لوړې نمرې واخیستې؛ تر ټولو ټیټې یې په جغرافیه (نږدې 54) کې دي.
+ss Ali did best in Urdu (about 90) and weakest in ICT (about 47). || علی نے اردو (تقریباً 90) میں سب سے اچھا اور ICT (تقریباً 47) میں سب سے کمزور کیا۔ || علي په اردو (نږدې 90) کې تر ټولو ښه او په ICT (نږدې 47) کې تر ټولو کمزوری و.
+ss Salma did best in Science (about 91) and Maths (about 90), and weakest in Urdu (about 61). || سلمیٰ نے سائنس (تقریباً 91) اور ریاضی (تقریباً 90) میں سب سے اچھا اور اردو (تقریباً 61) میں سب سے کمزور کیا۔ || سلمې په ساینس (نږدې 91) او ریاضي (نږدې 90) کې تر ټولو ښه او په اردو (نږدې 61) کې تر ټولو کمزورې وه.
+ss Overall, all three students score between about 50 and 100. Each has a different strongest subject, so their results are fairly close. || مجموعی طور پر تینوں طلبہ کے نمبر تقریباً 50 سے 100 کے درمیان ہیں۔ ہر ایک کا سب سے مضبوط مضمون مختلف ہے، اس لیے ان کے نتائج کافی قریب ہیں۔ || په ټوله کې د دریو زده کوونکو نمرې د نږدې 50 او 100 ترمنځ دي. هر یو بېل قوي مضمون لري، نو پایلې یې سره نږدې دي.
+endsolution
+endbox

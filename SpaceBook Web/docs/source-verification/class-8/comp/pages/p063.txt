@@ -1,0 +1,27 @@
+@printed 59
+p Next, we consider three variables, namely x, y and z. x and y are initialized with values of 3 & 4 respectively, whereas z is initialized by summing up x and y, meaning 3+4=7. In line 4, value of z is incremented to 1. Next, we assign the value of y to x this way, both x & y have the value 4, now. Thereafter in line 6, y is assigned a new value of 5. Finally, in the last 3 lines we print the values of all variables and corresponding output is shown. || اگلے مرحلے میں ہم تین متغیرات x، y اور z پر غور کرتے ہیں۔ x اور y کو بالترتیب 3 اور 4 کی قدروں سے شروع کیا جاتا ہے جبکہ z کو x اور y کے مجموعے سے شروع کیا جاتا ہے یعنی 3+4=7۔ سطر 4 میں z کی قدر 1 سے بڑھائی جاتی ہے۔ پھر ہم y کی قدر x کو تفویض کرتے ہیں اس طرح x اور y دونوں کی قدر اب 4 ہے۔ اس کے بعد سطر 6 میں y کو نئی قدر 5 دی جاتی ہے۔ آخر میں آخری 3 سطروں میں ہم تمام متغیرات کی قدریں پرنٹ کرتے ہیں اور متعلقہ آؤٹ پٹ دکھایا گیا ہے۔ || بیا موږ درې متغیرونه x، y او z په پام کې نیسو. x او y په ترتیب په ۳ او ۴ ارزښتونو پیل کېږي پداسې حال کې چې z د x او y په جمع کولو سره پیل کېږي، یعنې ۳+۴=۷. په ۴ کرښه کې د z ارزښت په ۱ زیاتېږي. بیا موږ د y ارزښت x ته ورکوو، په دې ډول x او y دواړه اوس ارزښت ۴ لري. له دې وروسته په ۶ کرښه کې y ته نوی ارزښت ۵ ورکول کېږي. په پای کې په وروستیو ۳ کرښو کې موږ د ټولو متغیرونو ارزښتونه چاپوو او اړوند آوټ پټ ښودل شوی.
+box code | Program #2: Assigning and updating values of variables || پروگرام #2: متغیرات کی قدروں کی تفویض اور اپ ڈیٹ || پروګرام #۲: د متغیرونو د ارزښتونو ورکړه او تازه کول
+m 1 x = 3
+m 2 y = 4
+m 3 z = x + y
+m 4 z = z + 1
+m 5 x = y
+m 6 y = 5
+m 7 print('Value of x: ', x)
+m 8 print('Value of y: ', y)
+m 9 print('Value of z: ', z)
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m Value of x:  4
+m Value of y:  5
+m Value of z:  8
+endbox
+### 4.5.2 Conditional Statment || 4.5.2 شرطیہ بیان || 4.5.2 شرطي بیان
+@issue The heading is printed "Conditional Statment" (missing "e"); kept as printed.
+p A conditional statement is a composite instruction that satisfies "if...then" provision. For better understanding, let us create a small guessing game. For this purpose, we take a variable 'num' and assign it some number that we want to be guessed. Then we ask the user to guess the number and his input is stored in another variable, say 'guess'. Next, we put an 'if' statement and compare the two variables whether they are same or not. In case, the guess matches we print a message on screen. || شرطیہ بیان ایک مرکب ہدایت ہے جو "if...then" کی شرط پوری کرتی ہے۔ بہتر فہم کے لیے آئیے ایک چھوٹا اندازہ لگانے کا کھیل بنائیں۔ اس مقصد کے لیے ہم ایک متغیر 'num' لیتے ہیں اور اسے کوئی عدد دیتے ہیں جس کا اندازہ لگوانا ہو۔ پھر ہم صارف سے عدد کا اندازہ لگانے کو کہتے ہیں اور اس کا ان پٹ ایک اور متغیر، مثلاً 'guess'، میں محفوظ ہوتا ہے۔ اس کے بعد ہم 'if' بیان لگاتے ہیں اور دونوں متغیرات کا موازنہ کرتے ہیں کہ وہ برابر ہیں یا نہیں۔ اگر اندازہ درست ہو تو ہم اسکرین پر پیغام پرنٹ کرتے ہیں۔ || شرطي بیان یو مرکب لارښود دی چې د "if...then" شرط پوره کوي. د ښه پوهېدو لپاره راځئ یوه وړه اټکل لوبه جوړه کړو. د دې لپاره موږ یو متغیر 'num' اخلو او یوه شمېره ورکوو چې غواړو اټکل شي. بیا موږ له کاروونکي غواړو چې شمېره اټکل کړي او ان پټ یې په بل متغیر، لکه 'guess'، کې ساتل کېږي. بیا موږ یو 'if' بیان ږدو او دواړه متغیرونه پرتله کوو چې ایا یو شان دي که نه. که اټکل برابر شي نو موږ په سکرین پیغام چاپوو.
+box code | Program #3: Guess the number || پروگرام #3: عدد کا اندازہ لگائیں || پروګرام #۳: شمېره اټکل کړئ
+m 1 num = 5
+m 2 guess = eval(input('Enter your guess: '))
+m 3 if guess == num:
+m 4     print('You got it Right!!!')
+endbox

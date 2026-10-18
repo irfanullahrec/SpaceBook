@@ -1,0 +1,12 @@
+@printed 126
+exercise Inside and outside (Page 126)
+q 1 | Tick (✓) the picture where the cat is outside the box. || اس تصویر پر (✓) کا نشان لگائیں جس میں بلی ڈبے کے باہر ہے۔ || په هغه انځور (✓) ولګوئ چې پیشو د بکس بهر ده.
+scene 360 140 ; open 20 50 90 70 ; cat@65,45,1.4 ; text 65 135 A ; open 200 50 90 70 ; cat@170,90,1.4 ; text 230 135 B || A: the cat sits in the box; B: the cat sits in front of the box || A: بلی ڈبے میں؛ B: بلی ڈبے کے سامنے || A: پیشو په بکس کې؛ B: پیشو د بکس مخې ته
+sol Picture B ## In picture A the cat is inside the box; in picture B it sits outside. || تصویر A میں بلی ڈبے کے اندر ہے؛ تصویر B میں باہر بیٹھی ہے۔ || په A انځور کې پیشو د بکس دننه ده؛ په B کې بهر ناسته ده.
+q 2 | Colour the picture where the biscuits are inside the jar. || اس تصویر میں رنگ بھریں جس میں بسکٹ مرتبان کے اندر ہیں۔ || هغه انځور رنګ کړئ چې بسکټونه د مرتبان دننه دي.
+scene 300 130 ; jar@70,60,2.6 ; biscuit@62,72,1.1 ; biscuit@80,66,1.1 ; text 70 125 A ; jar@200,60,2.6 ; biscuit@265,85 ; text 200 125 B || A: biscuits in the jar; B: an empty jar with a biscuit beside it || A: مرتبان میں بسکٹ؛ B: خالی مرتبان اور ساتھ بسکٹ || A: په مرتبان کې بسکټ؛ B: تش مرتبان او څنګ ته بسکټ
+sol Picture A ## In picture B the biscuit is outside the jar. || تصویر B میں بسکٹ مرتبان کے باہر ہے۔ || په B انځور کې بسکټ د مرتبان بهر دی.
+q 3 | Encircle the hen and chicks which are outside their home. || ان مرغی اور چوزوں کے گرد دائرہ لگائیں جو اپنے گھر کے باہر ہیں۔ || هغه چرګه او چرګوړي په کړۍ کې ونیسئ چې له خپل کور بهر دي.
+scene 360 130 ; coop@80,70,3 ; chick@72,80,0.6 ; chick@88,80,0.6 ; hen.brown@240,70,1.6 ; chick@200,100 ; chick@230,110 ; chick@280,105 || A hen house with 2 chicks inside; a hen and 3 chicks outside || مرغیوں کا ڈربہ جس کے اندر ۲ چوزے؛ باہر ایک مرغی اور ۳ چوزے || د چرګانو کوټه چې دننه یې ۲ چرګوړي دي؛ بهر یوه چرګه او ۳ چرګوړي
+sol Encircle the hen and the 3 chicks standing outside the hen house. ## The 2 chicks in the doorway are inside their home. || دروازے میں موجود ۲ چوزے گھر کے اندر ہیں۔ || په دروازه کې ۲ چرګوړي د کور دننه دي.
+endexercise

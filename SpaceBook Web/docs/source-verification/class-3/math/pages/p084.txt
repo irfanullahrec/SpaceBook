@@ -1,0 +1,36 @@
+@printed 79
+@deco Green shaded grids and figures with empty answer boxes; outline figures to colour.
+qp d | 4 × 4 grid, 5 squares shaded
+fgrid 4 4 1,2,6,11,16 #4ade80
+sol $\frac{5}{16}$ ## 5 of the 16 equal squares are shaded. || 16 برابر خانوں میں سے 5 رنگے ہوئے ہیں۔ || له 16 برابرو خانو څخه 5 رنګ شوې دي.
+qp e | 4 × 4 grid, 4 squares shaded
+fgrid 4 4 4,7,10,13 #4ade80
+sol $\frac{4}{16}$ ## 4 of the 16 equal squares are shaded. || 16 برابر خانوں میں سے 4 رنگے ہوئے ہیں۔ || له 16 برابرو خانو څخه 4 رنګ شوې دي.
+qp f | Square cut into 8 triangles, 5 shaded
+fig sq8 1,2,3,4,5
+sol $\frac{5}{8}$ ## 5 of the 8 equal triangles are shaded. || 8 برابر مثلثوں میں سے 5 رنگی ہوئی ہیں۔ || له 8 برابرو مثلثونو څخه 5 رنګ شوي دي.
+qp g | 2 × 4 grid, 3 squares shaded
+fgrid 2 4 2,4,7 #4ade80
+sol $\frac{3}{8}$ ## 3 of the 8 equal parts are shaded. || 8 برابر حصوں میں سے 3 رنگے ہوئے ہیں۔ || له 8 برابرو برخو څخه 3 رنګ شوې دي.
+qp h | 2 × 3 grid, 2 parts shaded
+fgrid 2 3 1,3 #4ade80
+sol $\frac{2}{6}$ ## 2 of the 6 equal parts are shaded. || 6 برابر حصوں میں سے 2 رنگے ہوئے ہیں۔ || له 6 برابرو برخو څخه 2 رنګ شوې دي.
+q 2 | Colour the following figures according to the given fractions. || دیے گئے کسور کے مطابق درج ذیل اشکال میں رنگ بھریں۔ || د ورکړل شویو کسرونو سره سم لاندې شکلونه رنګ کړئ.
+qp a | Rectangle in 3 parts → $\frac{2}{3}$
+fgrid 1 3 0
+sol Colour 2 of the 3 parts. ## The denominator 3 is the number of parts; the numerator 2 is the number to colour. || نسب نما 3 حصوں کی تعداد ہے؛ شمار کنندہ 2 رنگنے والے حصے ہیں۔ || مخرج 3 د برخو شمېر دی؛ صورت 2 د رنګولو برخې دي.
+qp b | Square cut by its diagonals into 4 parts → $\frac{3}{4}$
+fxsq -
+sol Colour 3 of the 4 triangles. ## 4 equal parts, colour 3. || 4 برابر حصے، 3 میں رنگ بھریں۔ || 4 برابرې برخې، 3 رنګ کړئ.
+qp c | Circle in 8 parts → $\frac{3}{8}$
+fpie 8 0
+sol Colour 3 of the 8 parts. ## 8 equal parts, colour 3. || 8 برابر حصے، 3 میں رنگ بھریں۔ || 8 برابرې برخې، 3 رنګ کړئ.
+qp d | Rectangle in 6 strips → $\frac{3}{6}$
+fgrid 1 6 0
+sol Colour 3 of the 6 strips. ## 6 equal parts, colour 3. || 6 برابر حصے، 3 میں رنگ بھریں۔ || 6 برابرې برخې، 3 رنګ کړئ.
+qp e | 4 × 4 grid → $\frac{8}{16}$
+fgrid 4 4 0
+sol Colour 8 of the 16 squares. ## 16 equal parts, colour 8. || 16 برابر حصے، 8 میں رنگ بھریں۔ || 16 برابرې برخې، 8 رنګ کړئ.
+qp f | 2 × 4 grid → $\frac{5}{8}$
+fgrid 2 4 0
+sol Colour 5 of the 8 squares. ## 8 equal parts, colour 5. || 8 برابر حصے، 5 میں رنگ بھریں۔ || 8 برابرې برخې، 5 رنګ کړئ.

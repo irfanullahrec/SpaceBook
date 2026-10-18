@@ -1,0 +1,57 @@
+@printed 15
+example 4
+p Find if $\frac{6}{7}$ is a terminating decimal or not without dividing. Then verify your answer by division. || تقسیم کیے بغیر معلوم کریں کہ $\frac{6}{7}$ مختتم اعشاریہ ہے یا نہیں۔ پھر تقسیم کے ذریعے اپنے جواب کی تصدیق کریں۔ || پرته له وېش څخه معلوم کړئ چې $\frac{6}{7}$ ختمېدونکی اعشاري دی که نه. بیا د وېش په مرسته خپل ځواب تایید کړئ.
+## Solution: || حل: || حل:
+p Here, $\frac{6}{7}$ is in standard form. It has a denominator whose factors is not 2 or 5. So, $\frac{6}{7}$ is a non-terminating decimal number. || یہاں $\frac{6}{7}$ معیاری صورت میں ہے۔ اس کا نسب نما ایسا ہے جس کے اجزائے ضربی 2 یا 5 نہیں ہیں۔ لہٰذا $\frac{6}{7}$ ایک غیر مختتم اعشاری عدد ہے۔ || دلته $\frac{6}{7}$ په معیاري بڼه دی. داسې مخرج لري چې ضربي اجزا یې 2 یا 5 نه دي. نو $\frac{6}{7}$ یو نه ختمېدونکی اعشاري عدد دی.
+## Verification: || تصدیق: || تایید:
+p To verify our answer, lets divide. || اپنے جواب کی تصدیق کے لیے آئیے تقسیم کریں۔ || د خپل ځواب د تایید لپاره راځئ ووېشو.
+longdiv 7 | 6.000 | 0.857…@5 | -0@0 ; 60@2 ; -56@2 ; 40@3 ; -35@3 ; 50@4 ; -49@4 ; 1@4
+p As $\frac{6}{7} = 0.857\ldots$ (a non-terminating decimal), so our answer is correct. || چونکہ $\frac{6}{7} = 0.857\ldots$ (ایک غیر مختتم اعشاریہ)، لہٰذا ہمارا جواب درست ہے۔ || څرنګه چې $\frac{6}{7} = 0.857\ldots$ (یو نه ختمېدونکی اعشاري)، نو زموږ ځواب سم دی.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Identify the non-terminating rational numbers. || غیر مختتم ناطق اعداد کی شناخت کریں۔ || نه ختمېدونکي ناطق عددونه وپېژنئ.
+qp a | $\frac{3}{7}$
+qp b | $\frac{7}{5}$
+qp c | $\frac{-65}{-55}$
+endbox
+exercise 2.1
+q 1 | Identify terminating and non-terminating decimal numbers. || مختتم اور غیر مختتم اعشاری اعداد کی شناخت کریں۔ || ختمېدونکي او نه ختمېدونکي اعشاري عددونه وپېژنئ.
+qp a | $0.\overline{45}$
+qp b | $2.\overline{6}$
+qp c | 0.12
+qp d | $3.\overline{67}$
+qp e | $8.\overline{3}$
+qp f | 0.26
+qp g | 1.2747
+qp h | $2.\dot{6}\dot{3}$
+qp i | $0.\dot{1}\dot{2}\dot{3}$
+qp j | 3.12
+qp k | 9.62
+qp l | $8.\dot{7}\dot{1}$
+q 2 | Identify recurring and non-recurring decimal numbers. || متواتر اور غیر متواتر اعشاری اعداد کی شناخت کریں۔ || تکرارېدونکي او نه تکرارېدونکي اعشاري عددونه وپېژنئ.
+qp a | 0.561345...
+qp b | 0.4324567...
+qp c | 0.123123...
+qp d | 0.1289765...
+qp e | 0.9999999...
+qp f | 4.231...
+qp g | 0.781...
+qp h | 8.1454545...
+q 3 | Convert the following to decimals and identify which type of decimal it is. || درج ذیل کو اعشاریہ میں تبدیل کریں اور شناخت کریں کہ یہ کس قسم کا اعشاریہ ہے۔ || لاندې اعشاري ته واړوئ او وپېژنئ چې کوم ډول اعشاري دی.
+qp a | $\frac{2}{3}$
+qp b | $\frac{15}{4}$
+qp c | $\frac{1}{7}$
+qp d | $\frac{11}{8}$
+qp e | $\frac{20}{21}$
+qp f | $\frac{13}{8}$
+qp g | $\frac{4}{7}$
+qp h | $\frac{23}{15}$
+q 4 | Write the following in short form. || درج ذیل کو مختصر صورت میں لکھیں۔ || لاندې په لنډه بڼه ولیکئ.
+qp a | 0.353535
+qp b | 0.1272727
+qp c | 7.44444
+qp d | 8.123123123
+qp e | 0.666666
+qp f | 3.46464646
+qp g | 12.33333
+qp h | 9.333333

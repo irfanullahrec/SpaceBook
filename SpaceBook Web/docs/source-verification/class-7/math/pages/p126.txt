@@ -1,0 +1,26 @@
+@printed 122
+qp g | $3m^2 - [(2m^2 - m + 1)(m^2 + m) - \{2m(m + 1)\}]$
+qp h | $6k^2 - [(2k^2 - k) + \{(k^2 + k)(k + 3)\}]$
+qp i | $8u^2 - [(2u^2 - u)(u^2 + u + 3) - 6u^2(u^3 + 1)\}]$
+qp j | $21v^2 - [(2v^2(v + 1)(v^2 + v) - \{4v^2(v + 1)\}]$
+qp k | $\{64x - (12x - 5x)\} \div 3$
+qp l | $(12x^2 + 5x^2) \div 4x$
+endexercise
+@issue Exercise 7.6 labels the second-last part "j)" again (shown here as k) and has unbalanced brackets in (i) and (j); kept as printed.
+@sec 7.7 | Algebraic Identities || الجبری مماثلتیں || الجبري مطابقتونه
+# 7.7 Algebraic Identities || 7.7 الجبری مماثلتیں || 7.7 الجبري مطابقتونه
+p An equation is true conditionally, whereas the identity is always true. We know that an equation is true for specific values of the variable(s) involved. On the other hand, an identity is true for all values of the variable(s) involved. For example, $2x + 5 = 9$ is an equation. It is true only if $x = 2$. It cannot be true for values of x other than 1. || مساوات مشروط طور پر درست ہوتی ہے جبکہ مماثلت ہمیشہ درست ہوتی ہے۔ ہم جانتے ہیں کہ مساوات شامل متغیر (متغیرات) کی مخصوص قیمتوں کے لیے درست ہوتی ہے۔ دوسری طرف مماثلت شامل متغیر (متغیرات) کی تمام قیمتوں کے لیے درست ہوتی ہے۔ مثلاً $2x + 5 = 9$ ایک مساوات ہے۔ یہ صرف اس وقت درست ہے جب $x = 2$ ہو۔ یہ x کی 1 کے علاوہ قیمتوں کے لیے درست نہیں ہو سکتی۔ || معادله په شرطي ډول سمه وي په داسې حال کې چې مطابقت تل سم وي. پوهېږو چې معادله د شامل متحول (متحولونو) د ټاکلو ارزښتونو لپاره سمه وي. له بلې خوا مطابقت د شامل متحول (متحولونو) د ټولو ارزښتونو لپاره سم وي. د بېلګې په توګه $2x + 5 = 9$ یوه معادله ده. یوازې هغه وخت سمه ده چې $x = 2$ وي. د x له 1 پرته د نورو ارزښتونو لپاره سمه نشي کېدای.
+@issue This paragraph says the equation 2x + 5 = 9 is true only if x = 2 and then "other than 1" (should be "other than 2"); kept as printed.
+### Algebraic Proof: || الجبری ثبوت: || الجبري ثبوت:
+p **Identity I:** $(a + b)^2 = a^2 + 2ab + b^2$ || **مماثلت I:** $(a + b)^2 = a^2 + 2ab + b^2$ || **لومړی مطابقت:** $(a + b)^2 = a^2 + 2ab + b^2$
+p **Proof:** || **ثبوت:** || **ثبوت:**
+eq \begin{aligned} \text{L.H.S.} &= (a + b)^2 \\ &= (a + b)(a + b) \\ &= a^2 + ab + ba + b^2 \\ &= a^2 + ab + ab + b^2 \\ &= a^2 + 2ab + b^2 \end{aligned}
+p Hence proved $(a + b)^2 = a^2 + 2ab + b^2$. Thus L.H.S. = R.H.S. || لہٰذا ثابت ہوا $(a + b)^2 = a^2 + 2ab + b^2$۔ اس طرح بایاں طرف = دایاں طرف۔ || نو ثابته شوه $(a + b)^2 = a^2 + 2ab + b^2$. په دې توګه کیڼ اړخ = ښي اړخ.
+example 1 | Find the square of the following by using the identity. $(a + 5b)^2$ || مماثلت کی مدد سے درج ذیل کا مربع معلوم کریں۔ $(a + 5b)^2$ || د مطابقت په مرسته د لاندې مربع معلومه کړئ. $(a + 5b)^2$
+p **Solution:** By using the identity, $(a + b)^2 = a^2 + 2ab + b^2$ || **حل:** مماثلت $(a + b)^2 = a^2 + 2ab + b^2$ کی مدد سے || **حل:** د مطابقت $(a + b)^2 = a^2 + 2ab + b^2$ په مرسته
+eq \begin{aligned} (a + 5b)^2 &= a^2 + 2(a)(5b) + (5b)^2 \\ &= a^2 + 10ab + 25b^2 \end{aligned}
+endexample
+example 2 | Evaluate $(45)^2$ using the algebraic identity. || الجبری مماثلت کی مدد سے $(45)^2$ کی قیمت معلوم کریں۔ || د الجبري مطابقت په مرسته د $(45)^2$ ارزښت معلوم کړئ.
+p **Solution:** $(45)^2 = (40 + 5)^2$. By using the identity, $(a + b)^2 = a^2 + 2ab + b^2$ || **حل:** $(45)^2 = (40 + 5)^2$۔ مماثلت $(a + b)^2 = a^2 + 2ab + b^2$ کی مدد سے || **حل:** $(45)^2 = (40 + 5)^2$. د مطابقت $(a + b)^2 = a^2 + 2ab + b^2$ په مرسته
+eq \begin{aligned} (40 + 5)^2 &= (40)^2 + 2(40)(5) + (5)^2 \\ &= 1600 + 400 + 25 \\ &= 2025 \end{aligned}
+endexample

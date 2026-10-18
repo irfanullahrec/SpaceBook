@@ -1,0 +1,33 @@
+@printed 92
+p **Examples:** || **مثالیں:** || **بېلګې:**
+m i) F = {1, 3, 5}, G = {1, 3, 5, 7, 9}
+p F is a proper subset of G because all elements of F are in set G but all the elements of G are not in F. We can write it as: $F \subsetneq G$. || F، G کا واجب ذیلی سیٹ ہے کیونکہ F کے تمام ارکان سیٹ G میں ہیں لیکن G کے تمام ارکان F میں نہیں ہیں۔ ہم اسے یوں لکھ سکتے ہیں: $F \subsetneq G$۔ || F د G سم فرعي سېټ دی ځکه چې د F ټول غړي په سېټ G کې دي خو د G ټول غړي په F کې نشته. داسې یې لیکلی شو: $F \subsetneq G$.
+p ii) N = set of all numbers, E = set of odd numbers || ii) N = تمام اعداد کا سیٹ، E = طاق اعداد کا سیٹ || ii) N = د ټولو عددونو سېټ، E = د طاقو عددونو سېټ
+p All elements of E are in set N but all the elements of N are not in E. So, E is a proper subset of N. || E کے تمام ارکان سیٹ N میں ہیں لیکن N کے تمام ارکان E میں نہیں ہیں۔ لہٰذا E، N کا واجب ذیلی سیٹ ہے۔ || د E ټول غړي په سېټ N کې دي خو د N ټول غړي په E کې نشته. نو E د N سم فرعي سېټ دی.
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Is the set of multiples of 10 a proper subset of the set of even numbers? Give the reason for your answer. || کیا 10 کے اضعاف کا سیٹ جفت اعداد کے سیٹ کا واجب ذیلی سیٹ ہے؟ اپنے جواب کی وجہ بتائیں۔ || ایا د 10 د ضربونو سېټ د جفتو عددونو د سېټ سم فرعي سېټ دی؟ د خپل ځواب دلیل ووایاست.
+endbox
+p **b) Improper subset** || **b) غیر واجب ذیلی سیٹ** || **b) ناسم فرعي سېټ**
+p A set L is called an improper subset of M if all elements of L are in M and all the elements of M are in L. So, to be an improper subset of M, L must be a subset of M and it must also be equal to M. || سیٹ L کو M کا غیر واجب ذیلی سیٹ کہتے ہیں اگر L کے تمام ارکان M میں ہوں اور M کے تمام ارکان L میں ہوں۔ لہٰذا M کا غیر واجب ذیلی سیٹ ہونے کے لیے L کا M کا ذیلی سیٹ ہونا اور M کے برابر ہونا بھی ضروری ہے۔ || سېټ L ته د M ناسم فرعي سېټ ویل کېږي که د L ټول غړي په M کې وي او د M ټول غړي په L کې وي. نو د M د ناسم فرعي سېټ لپاره باید L د M فرعي سېټ وي او له M سره برابر هم وي.
+p **Examples:** || **مثالیں:** || **بېلګې:**
+m i) C = {◇, △, ○, □}, D = {△, ◇, □, ○}
+p Here all elements of C are in D and also C=D. So, C is an improper subset of D because all elements of C are in set D and all the elements of D are also in C. || یہاں C کے تمام ارکان D میں ہیں اور C=D بھی ہے۔ لہٰذا C، D کا غیر واجب ذیلی سیٹ ہے کیونکہ C کے تمام ارکان سیٹ D میں ہیں اور D کے تمام ارکان بھی C میں ہیں۔ || دلته د C ټول غړي په D کې دي او C=D هم دی. نو C د D ناسم فرعي سېټ دی ځکه چې د C ټول غړي په سېټ D کې دي او د D ټول غړي هم په C کې دي.
+@issue The shapes in set C/D are small printed symbols (a rhombus/diamond, triangle, circle and square); rendered with the nearest text symbols.
+m ii) H = {4, 8, 12, 16, 20}, I = {8, 4, 12, 20, 16}
+p Here, all elements of H are in I and all elements of I are in H. Even though the order of the elements of these sets is not the same, it does not matter. Both are equal sets. So, H is an improper subset of I. || یہاں H کے تمام ارکان I میں ہیں اور I کے تمام ارکان H میں ہیں۔ اگرچہ ان سیٹوں کے ارکان کی ترتیب ایک جیسی نہیں، اس سے فرق نہیں پڑتا۔ دونوں مساوی سیٹ ہیں۔ لہٰذا H، I کا غیر واجب ذیلی سیٹ ہے۔ || دلته د H ټول غړي په I کې دي او د I ټول غړي په H کې دي. که څه هم د دې سېټونو د غړو ترتیب یو شان نه دی، توپیر نه کوي. دواړه مساوي سېټونه دي. نو H د I ناسم فرعي سېټ دی.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Every set is a subset of itself. || ہر سیٹ اپنا ذیلی سیٹ ہوتا ہے۔ || هر سېټ د خپل ځان فرعي سېټ دی.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p An empty set is a subset of every set. || خالی سیٹ ہر سیٹ کا ذیلی سیٹ ہوتا ہے۔ || تش سېټ د هر سېټ فرعي سېټ دی.
+endbox
+### Equal sets || مساوی سیٹ || مساوي سېټونه
+p If two sets have exactly the same elements they are said to be equal sets. Every element of one set must also be an element of the other. There must not be any extra element in either of the two sets. || اگر دو سیٹوں کے بالکل ایک جیسے ارکان ہوں تو انہیں مساوی سیٹ کہتے ہیں۔ ایک سیٹ کا ہر رکن دوسرے کا بھی رکن ہونا چاہیے۔ دونوں سیٹوں میں سے کسی میں بھی کوئی اضافی رکن نہیں ہونا چاہیے۔ || که دوه سېټونه دقیقاً یو شان غړي ولري، مساوي سېټونه بلل کېږي. د یوه سېټ هر غړی باید د بل غړی هم وي. په دواړو سېټونو کې باید هېڅ اضافي غړی نه وي.
+p **Examples:** || **مثالیں:** || **بېلګې:**
+m i) E = {a, b, c, d, e, f}, F = {a, f, d, c, e, b}
+p Sets E and F are equal because they have the same elements even though they are listed in different order. We can write it as E=F. || سیٹ E اور F مساوی ہیں کیونکہ ان کے ارکان ایک جیسے ہیں اگرچہ وہ مختلف ترتیب میں لکھے گئے ہیں۔ ہم اسے E=F لکھ سکتے ہیں۔ || سېټونه E او F مساوي دي ځکه چې یو شان غړي لري که څه هم په بېلابېل ترتیب لیکل شوي. داسې یې لیکلی شو E=F.
+m ii) S = {3, 4, 5}, T = {4, 5, 6}
+p Set S and T are not equal because they don't have exactly the same elements. Symbolically $S \ne T$. || سیٹ S اور T مساوی نہیں کیونکہ ان کے ارکان بالکل ایک جیسے نہیں۔ علامتی طور پر $S \ne T$۔ || سېټونه S او T مساوي نه دي ځکه چې دقیقاً یو شان غړي نه لري. په سمبولیک ډول $S \ne T$.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Write a set on the board. Call the students one by one and ask them to write at least one subset of the set. Ask them to define the subset as well. Write some mixed examples of empty and singleton set on the board. Ask the students to identify empty and singleton sets from the examples. || بورڈ پر ایک سیٹ لکھیں۔ طلبہ کو ایک ایک کر کے بلائیں اور ان سے سیٹ کا کم از کم ایک ذیلی سیٹ لکھنے کو کہیں۔ ان سے ذیلی سیٹ کی تعریف بھی پوچھیں۔ بورڈ پر خالی اور یک رکنی سیٹوں کی ملی جلی مثالیں لکھیں۔ طلبہ سے مثالوں میں سے خالی اور یک رکنی سیٹ پہچاننے کو کہیں۔ || پر تخته یو سېټ ولیکئ. زده کوونکي یو په یو راوبلئ او ترې وغواړئ چې د سېټ لږ تر لږه یو فرعي سېټ ولیکي. د فرعي سېټ تعریف هم ترې وغواړئ. پر تخته د تشو او یو غړي سېټونو ګډې بېلګې ولیکئ. له زده کوونکو وغواړئ چې له بېلګو څخه تش او یو غړي سېټونه وپېژني.
+endbox

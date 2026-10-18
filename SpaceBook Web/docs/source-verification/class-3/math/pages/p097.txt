@@ -1,0 +1,25 @@
+@printed 92
+@deco Green shaded figures with empty answer boxes; children riding a pencil.
+exercise Exercise 6
+q 1-9 | Solve. || حل کریں۔ || حل کړئ.
+qp 1 | $\frac{3}{7}$ − $\frac{1}{7}$
+qp 2 | $\frac{5}{9}$ − $\frac{1}{9}$
+qp 3 | $\frac{3}{5}$ − $\frac{2}{5}$
+qp 4 | $\frac{5}{8}$ − $\frac{2}{8}$
+qp 5 | $\frac{7}{12}$ − $\frac{3}{12}$
+qp 6 | $\frac{5}{6}$ − $\frac{3}{6}$
+qp 7 | $\frac{5}{8}$ − $\frac{3}{8}$
+qp 8 | $\frac{5}{11}$ − $\frac{3}{11}$
+qp 9 | $\frac{7}{15}$ − $\frac{3}{15}$
+qsolve fracop
+q 10-12 | Write fractions and solve. || کسور لکھیں اور حل کریں۔ || کسرونه ولیکئ او حل کړئ.
+qp 10 | Circles in 4 parts
+fig frow fpie 4 4,1,2 #4ade80 ;; ftext − ;; fpie 4 1 #4ade80 ;; ftext = ;; fpie 4 4,1 #16a34a || 3 parts shaded − 1 part shaded = 2 parts shaded || 3 رنگے حصے − 1 رنگا حصہ = 2 رنگے حصے || 3 رنګ شوې برخې − 1 رنګ شوې برخه = 2 رنګ شوې برخې
+sol $\frac{3}{4} - \frac{1}{4} = \frac{2}{4}$ ## Count the shaded quarters in each circle: 3, 1 and 2. || ہر دائرے میں رنگی ہوئی چوتھائیاں گنیں: 3، 1 اور 2۔ || په هره دایره کې رنګ شوې څلورمې وشمېرئ: 3، 1 او 2.
+qp 11 | Circles in 8 parts
+fig frow fpie 8 7,8,1,2,3 #4ade80 ;; ftext − ;; fpie 8 1,2 #4ade80 ;; ftext = ;; fpie 8 8,1,2 #16a34a || 5 parts shaded − 2 parts shaded = 3 parts shaded || 5 رنگے حصے − 2 رنگے حصے = 3 رنگے حصے || 5 رنګ شوې برخې − 2 رنګ شوې برخې = 3 رنګ شوې برخې
+sol $\frac{5}{8} - \frac{2}{8} = \frac{3}{8}$ ## Count the shaded eighths: 5, 2 and 3. || رنگے ہوئے آٹھویں حصے گنیں: 5، 2 اور 3۔ || رنګ شوې اتمې برخې وشمېرئ: 5، 2 او 3.
+qp 12 | Rectangles in 10 parts
+fig frow fgrid 2 5 7 #4ade80 ;; ftext − ;; fgrid 2 5 4 #4ade80 ;; ftext = ;; fgrid 2 5 3 #16a34a || 7 parts shaded − 4 parts shaded = 3 parts shaded || 7 رنگے حصے − 4 رنگے حصے = 3 رنگے حصے || 7 رنګ شوې برخې − 4 رنګ شوې برخې = 3 رنګ شوې برخې
+sol $\frac{7}{10} - \frac{4}{10} = \frac{3}{10}$ ## Count the shaded tenths: 7, 4 and 3. || رنگے ہوئے دسویں حصے گنیں: 7، 4 اور 3۔ || رنګ شوې لسمې برخې وشمېرئ: 7، 4 او 3.
+endexercise

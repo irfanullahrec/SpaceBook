@@ -1,0 +1,33 @@
+@printed 204
+exercise 11.1
+q 1 | Draw and describe the properties of the following quadrilaterals based on parallel sides, equal sides, equal angles, right angles, lines of symmetry etc. || متوازی اضلاع، برابر اضلاع، برابر زاویوں، قائمہ زاویوں، تشاکل کے خطوط وغیرہ کی بنیاد پر درج ذیل چوکوروں کو بنائیں اور ان کی خصوصیات بیان کریں۔ || د موازي ضلعو، برابرو ضلعو، برابرو زاویو، قایمو زاویو، د تناظر کرښو او نورو پر بنسټ لاندې څلور ضلعي رسم کړئ او ځانګړتیاوې یې بیان کړئ.
+qp a | Square || مربع || مربع
+qp b | rectangle || مستطیل || مستطیل
+qp c | parallelogram || متوازی الاضلاع || متوازي الاضلاع
+qp d | rhombus || معین || معین
+qp e | trapezium || ذوزنقہ || ذوزنقه
+qp f | kite || پتنگ || پتنګ
+q 2 | Name the following figures. || درج ذیل اشکال کے نام بتائیں۔ || د لاندې شکلونو نومونه ووایاست.
+svg Five shapes to name: a tilted square/rhombus with equal-side marks, a flat rhombus, a trapezium with one pair of parallel sides, a dark parallelogram, and a right trapezium with two right angles || نام بتانے کے لیے پانچ اشکال: برابر اضلاع کے نشانوں والا جھکا ہوا مربع/معین، چپٹا معین، ایک جوڑا متوازی اضلاع والا ذوزنقہ، گہرا متوازی الاضلاع، اور دو قائمہ زاویوں والا قائم ذوزنقہ || د نوم ښودلو لپاره پنځه شکلونه: د برابرو ضلعو نښو سره کوږ مربع/معین، هوار معین، د موازي ضلعو یوه جوړه لرونکې ذوزنقه، تور متوازي الاضلاع، او د دوو قایمو زاویو قایمه ذوزنقه
+<svg viewBox="0 0 560 100" width="560" role="img" aria-label="Five shapes: a square standing on a corner with equal sides, a wide flat rhombus, a trapezium, a dark parallelogram, and a right trapezium with right angles on its left side" stroke="#0f172a" stroke-width="1.4"><path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#fbcfe8"/><path d="M110 50 L170 30 L230 50 L170 70 Z" fill="#fde047"/><path d="M265 30 H320 L340 75 H245 Z" fill="#7dd3fc"/><path d="M375 40 H455 L445 75 H365 Z" fill="#57534e"/><path d="M480 25 H530 L555 75 H480 Z" fill="#f1f5f9"/><path d="M480 35 H490 V25" fill="none"/><path d="M490 75 V65 H480" fill="none"/></svg>
+endsvg
+q 3 | Find the unknown marked angles in the following parallelograms. || درج ذیل متوازی الاضلاع میں نامعلوم نشان زدہ زاویے معلوم کریں۔ || په لاندې متوازي الاضلاعو کې نامعلومې نښه شوې زاویې معلوم کړئ.
+qp a | Parallelogram with one angle 78° and the opposite angle a. || متوازی الاضلاع جس کا ایک زاویہ 78° اور مخالف زاویہ a ہے۔ || متوازي الاضلاع چې یوه زاویه یې 78° او مقابله زاویه a ده.
+qp b | Parallelogram with one angle 110° and the opposite angle b. || متوازی الاضلاع جس کا ایک زاویہ 110° اور مخالف زاویہ b ہے۔ || متوازي الاضلاع چې یوه زاویه یې 110° او مقابله زاویه b ده.
+qp c | Parallelogram with one angle 85°; c is the angle opposite to it and d is the angle next to 85°. || متوازی الاضلاع جس کا ایک زاویہ 85° ہے؛ c اس کا مخالف زاویہ اور d، 85° کے ساتھ والا زاویہ ہے۔ || متوازي الاضلاع چې یوه زاویه یې 85° ده؛ c د هغې مقابله زاویه او d د 85° څنګ ته زاویه ده.
+qp d | Parallelogram with one angle 125°; e, f and g are the other three angles. || متوازی الاضلاع جس کا ایک زاویہ 125° ہے؛ e، f اور g باقی تین زاویے ہیں۔ || متوازي الاضلاع چې یوه زاویه یې 125° ده؛ e، f او g نورې درې زاویې دي.
+poly P:20,20;Q:140,20;R:170,90;S:50,90 | fill=#7dd3fc | in=78°@P;a@R | desc=Q3(a): parallelogram with 78 degrees at the top-left vertex and unknown angle a at the bottom-right vertex || Q3(a) || سوال 3(a) || پوښتنه 3(a)
+@issue The four parallelograms (Q3), rhombuses (Q4), trapeziums (Q5) and kites (Q6) are printed as small coloured drawings with angle labels; each is described in words, and Q3(a) is also drawn as an example. The positions of the unknown angles (opposite or adjacent) are read from the drawings.
+q 4 | Find the unknown marked angles in each of these rhombuses. || ان میں سے ہر معین میں نامعلوم نشان زدہ زاویے معلوم کریں۔ || په دې هر معین کې نامعلومې نښه شوې زاویې معلوم کړئ.
+qp a | Rhombus with 65° at the bottom-left angle and a at the opposite (top-right) angle. || معین جس کے نیچے بائیں زاویے پر 65° اور مخالف (اوپر دائیں) زاویے پر a ہے۔ || معین چې ښکته کیڼ زاویه یې 65° او مقابله (پورته ښي) زاویه یې a ده.
+qp b | Rhombus with 118° at the top angle and b at the left angle. || معین جس کے اوپر والے زاویے پر 118° اور بائیں زاویے پر b ہے۔ || معین چې پورته زاویه یې 118° او کیڼ زاویه یې b ده.
+qp c | Rhombus with 60° at the top angle; c at the left angle and d at the bottom angle. || معین جس کے اوپر والے زاویے پر 60°؛ بائیں زاویے پر c اور نیچے والے زاویے پر d ہے۔ || معین چې پورته زاویه یې 60°؛ کیڼ زاویه یې c او ښکته زاویه یې d ده.
+qp d | Rhombus with 15° at the top angle; e at the left, f at the bottom and g at the right. || معین جس کے اوپر والے زاویے پر 15°؛ بائیں e، نیچے f اور دائیں g ہے۔ || معین چې پورته زاویه یې 15°؛ کیڼ e، ښکته f او ښي g ده.
+q 5 | Find the unknown marked angles in each of these trapeziums. || ان میں سے ہر ذوزنقہ میں نامعلوم نشان زدہ زاویے معلوم کریں۔ || په دې هره ذوزنقه کې نامعلومې نښه شوې زاویې معلوم کړئ.
+qp a | Right trapezium with vertical parallel sides; the bottom-right angle is 90° and the bottom-left angle is a. || قائم ذوزنقہ جس کے عمودی اضلاع متوازی ہیں؛ نیچے دایاں زاویہ 90° اور نیچے بایاں زاویہ a ہے۔ || قایمه ذوزنقه چې عمودي ضلعې یې موازي دي؛ ښکته ښي زاویه 90° او ښکته کیڼ زاویه a ده.
+qp b | Trapezium with horizontal parallel sides; the bottom-right angle is 22° and b is the top-right angle. || ذوزنقہ جس کے افقی اضلاع متوازی ہیں؛ نیچے دایاں زاویہ 22° اور b اوپر دایاں زاویہ ہے۔ || ذوزنقه چې افقي ضلعې یې موازي دي؛ ښکته ښي زاویه 22° او b پورته ښي زاویه ده.
+qp c | Trapezium with horizontal parallel sides; the top-left angle is 105°, the bottom-right angle is 18°, c is the bottom-left angle and d is the top-right angle. || ذوزنقہ جس کے افقی اضلاع متوازی ہیں؛ اوپر بایاں زاویہ 105°، نیچے دایاں 18°، c نیچے بایاں اور d اوپر دایاں زاویہ ہے۔ || ذوزنقه چې افقي ضلعې یې موازي دي؛ پورته کیڼ زاویه 105°، ښکته ښي 18°، c ښکته کیڼ او d پورته ښي زاویه ده.
+q 6 | Find the unknown angles in these kites. || ان پتنگوں میں نامعلوم زاویے معلوم کریں۔ || په دې پتنګونو کې نامعلومې زاویې معلوم کړئ.
+qp a | Kite UXWV with ∠W = 53° and ∠V = 135°; find ∠U and ∠X. || پتنگ UXWV جس میں ∠W = 53° اور ∠V = 135°؛ ∠U اور ∠X معلوم کریں۔ || پتنګ UXWV چې ∠W = 53° او ∠V = 135°؛ ∠U او ∠X معلوم کړئ.
+qp b | Kite BEDC with ∠B = 104° and ∠D = 40°; find ∠E and ∠C. || پتنگ BEDC جس میں ∠B = 104° اور ∠D = 40°؛ ∠E اور ∠C معلوم کریں۔ || پتنګ BEDC چې ∠B = 104° او ∠D = 40°؛ ∠E او ∠C معلوم کړئ.
+qp c | Kite PQRS with ∠Q = 122° and ∠P = 50°; find ∠R and ∠S. || پتنگ PQRS جس میں ∠Q = 122° اور ∠P = 50°؛ ∠R اور ∠S معلوم کریں۔ || پتنګ PQRS چې ∠Q = 122° او ∠P = 50°؛ ∠R او ∠S معلوم کړئ.

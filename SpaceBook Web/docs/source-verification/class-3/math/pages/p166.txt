@@ -1,0 +1,42 @@
+@printed 161
+@deco Coloured shapes; a reader's thumb covers part of the left margin (the "iv)" label) in the scan; children riding a pencil.
+exercise Exercise 3
+q 1 | Draw the line of symmetry in following figures. || درج ذیل اشکال میں خطِ تشاکل کھینچیں۔ || په لاندې شکلونو کې د تناظر کرښه رسم کړئ.
+qp i | Rounded rectangle
+fig symf roundrect #1f2937
+sol One horizontal line through the middle. ## The top half folds onto the bottom half; a vertical line does not work because one end is round. || اوپر کا آدھا نیچے والے آدھے پر آ جاتا ہے؛ عمودی خط کام نہیں کرتا کیونکہ ایک سرا گول ہے۔ || پورتنۍ نیمه پر لاندینۍ نیمې پرېوځي؛ عمودي کرښه سمه نه ده ځکه یو سر ګرد دی.
+qp ii | Square
+fig symf square #4c1d95
+sol 4 lines: vertical, horizontal and both diagonals. ## Each of these folds the square onto itself. || ان میں سے ہر ایک مربع کو اپنے اوپر موڑ دیتا ہے۔ || هره یوه مربع پر خپل ځان ورقاتوي.
+qp iii | Letter A
+fig symf A #1f2937
+sol 1 vertical line down the middle. ## The left half of A matches the right half. || A کا بایاں آدھا دائیں آدھے سے ملتا ہے۔ || د A کیڼه نیمه له ښۍ نیمې سره سمون لري.
+qp iv | Triangle
+fig symf tri #f59e0b
+sol 3 lines (each from a corner to the middle of the opposite side) if all sides are equal; at least the vertical line through the top. ## The printed triangle looks equal-sided. || چھپی ہوئی مثلث مساوی الاضلاع نظر آتی ہے۔ || چاپ شوی مثلث متساوي الاضلاع ښکاري.
+qp v | Long hexagon
+fig symf hexlong #db2777
+sol 2 lines: one vertical and one horizontal through the middle. ## Both halves match across each line. || ہر خط کے دونوں طرف آدھے حصے ملتے ہیں۔ || د هرې کرښې دواړه خواوې سره سمون لري.
+qp vi | Kite
+fig symf kite #f472b6
+sol 1 vertical line from the top point to the bottom point. ## The kite's left and right halves match. || پتنگ کا بایاں اور دایاں حصہ ملتا ہے۔ || د کاغذ باد کیڼه او ښۍ برخه سمون لري.
+q 2 | Count the numbers of line of symmetry in the following figures. || درج ذیل اشکال میں خطوطِ تشاکل کی تعداد گنیں۔ || په لاندې شکلونو کې د تناظر کرښې وشمېرئ.
+qp i | Circle with 2 dashed lines
+fig symf circle #fda4af | 50,0,50,100 ; 0,50,100,50
+sol 2 shown (a circle really has endless lines of symmetry) ## Count the dashed lines drawn: 2. Every line through the centre of a circle is a line of symmetry. || کھینچے گئے خطوط گنیں: 2۔ دائرے کے مرکز سے گزرنے والا ہر خط خطِ تشاکل ہے۔ || رسم شوې کرښې وشمېرئ: 2. د دایرې له مرکز تېرېدونکې هره کرښه د تناظر کرښه ده.
+qp ii | Rhombus
+fig symf rhombus #db2777 | 50,0,50,100 ; 0,50,100,50
+sol 2 ## A vertical and a horizontal line through the corners. || کونوں سے گزرتا ایک عمودی اور ایک افقی خط۔ || له کونجونو تېرېدونکې یوه عمودي او یوه افقي کرښه.
+qp iii | Flower with 8 petals
+fig symf flower #f472b6
+sol 8 ## The 8 equal petals can be folded along 8 lines through the centre (4 through petals, 4 between petals). || 8 برابر پنکھڑیاں مرکز سے گزرنے والے 8 خطوط پر موڑی جا سکتی ہیں۔ || 8 برابرې پاڼې د مرکز له لارې په 8 کرښو ورقاتېدای شي.
+qp iv | Plus sign with 4 dashed lines
+fig symf plus #6b21a8 | 50,0,50,100 ; 0,50,100,50 ; 0,0,100,100 ; 100,0,0,100
+sol 4 ## Vertical, horizontal and the two diagonals. || عمودی، افقی اور دونوں وتر۔ || عمودي، افقي او دواړه قطرونه.
+qp v | Letter H
+fig symf H #1d4ed8 | 50,0,50,100 ; 0,50,100,50
+sol 2 ## One vertical and one horizontal line. || ایک عمودی اور ایک افقی خط۔ || یوه عمودي او یوه افقي کرښه.
+qp vi | Pentagon with 5 dashed lines
+fig symf pent #ef4444 | 50,0,50,100 ; 92,40,16,65 ; 8,40,84,65 ; 76,90,29,24 ; 24,90,71,24
+sol 5 ## A regular pentagon has 5 lines of symmetry, one from each corner. || باقاعدہ مخمس کے 5 خطوطِ تشاکل ہوتے ہیں، ہر کونے سے ایک۔ || منظم پنځه ضلعي 5 د تناظر کرښې لري، له هر کونج څخه یوه.
+endexercise

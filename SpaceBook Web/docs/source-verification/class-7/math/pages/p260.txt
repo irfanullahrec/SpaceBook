@@ -1,0 +1,25 @@
+@printed 256
+## 13.5.1 Construction of Histogram || 13.5.1 ہسٹوگرام بنانا || 13.5.1 د هسټوګرام جوړول
+p The presentation of the frequency distribution in vertical rectangle bars with no gaps is called histogram. || تعددی تقسیم کو بغیر فاصلے کے عمودی مستطیل بارز میں پیش کرنا ہسٹوگرام کہلاتا ہے۔ || د تکرار وېش په عمودي مستطیلي بارونو کې پرته له واټن وړاندې کول هسټوګرام بلل کېږي.
+p In histogram representation bases of the rectangles are equal but height of each rectangle will be proportional to the frequency. || ہسٹوگرام میں مستطیلوں کے قاعدے برابر ہوتے ہیں لیکن ہر مستطیل کی اونچائی تعدد کے متناسب ہوگی۔ || په هسټوګرام کې د مستطیلونو قاعدې مساوي وي خو د هر مستطیل لوړوالی به له تکرار سره متناسب وي.
+example 7 | The maximum temperature (in °C) for each day of August, 2021 in Lahore was: 35, 38, 38, 38, 40, 42, 40, 45, 46, 48, 46, 43, 42, 42, 38, 39, 38, 45, 45, 46, 48, 50, 49, 50, 49, 45, 49, 46, 45, 48, 51. Make frequency distribution of the data and draw histogram to represent it. (Take 3 as size of class interval) || اگست 2021 میں لاہور کا ہر دن کا زیادہ سے زیادہ درجۂ حرارت (°C میں) یہ تھا: 35, 38, 38, 38, 40, 42, 40, 45, 46, 48, 46, 43, 42, 42, 38, 39, 38, 45, 45, 46, 48, 50, 49, 50, 49, 45, 49, 46, 45, 48, 51۔ ڈیٹا کی تعددی تقسیم بنائیں اور اسے ظاہر کرنے کے لیے ہسٹوگرام بنائیں۔ (جماعتی وقفے کا سائز 3 لیں) || د 2021 کال د اګست په هره ورځ کې د لاهور اعظمي تودوخه (په °C) دا وه: 35, 38, 38, 38, 40, 42, 40, 45, 46, 48, 46, 43, 42, 42, 38, 39, 38, 45, 45, 46, 48, 50, 49, 50, 49, 45, 49, 46, 45, 48, 51. د معلوماتو د تکرار وېش جوړ کړئ او د ښودلو لپاره یې هسټوګرام رسم کړئ. (د ټولګي د واټن اندازه 3 واخلئ)
+@issue The book labels this "Example 1"; numbered 7 here to keep example numbers continuous within the unit.
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Small value} &= 35 \\ \text{Largest value} &= 52 \\ \text{Size of interval} &= 3 \\ \text{Number of intervals} &= \dfrac{52-35}{3} = 5.6 \end{aligned}
+@issue The largest value in the data is 51, not 52 as printed; and 17 ÷ 3 = 5.67 (about 6 intervals). Kept as printed.
+table
+th | Class Interval || جماعتی وقفہ || د ټولګي واټن | Class Boundaries | Tally | Frequency (f)
+tr | 35 - 37 | 34.5 - 37.5 | / | 1
+tr | 38 - 40 | 37.5 - 40.5 | 𝍸 /// | 8
+tr | 41 - 43 | 40.5 - 43.5 | //// | 4
+tr | 44 - 46 | 43.5 - 46.5 | 𝍸 //// | 9
+tr | 47 - 49 | 46.5 - 49.5 | 𝍸 / | 6
+tr | 50 - 52 | 49.5 - 52.5 | /// | 3
+tr | | | | Total = 31
+endtable
+p Now, we draw histogram. || اب ہم ہسٹوگرام بناتے ہیں۔ || اوس هسټوګرام رسموو.
+bars cats=34.5-37.5,37.5-40.5,40.5-43.5,43.5-46.5,46.5-49.5,49.5-52.5 | series=Days:1,8,4,9,6,3 | ymax=10 | step=1 | ylab=Number of Days | xlab=Temperature in °C | hist=1 || Histogram of maximum temperatures in Lahore, August 2021 || اگست 2021 میں لاہور کے زیادہ سے زیادہ درجۂ حرارت کا ہسٹوگرام || د 2021 اګست کې د لاهور د اعظمي تودوخې هسټوګرام
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The width of each bar in a histogram represents the width or size of the class. || ہسٹوگرام میں ہر بار کی چوڑائی جماعت کی چوڑائی یا سائز ظاہر کرتی ہے۔ || په هسټوګرام کې د هر بار پلنوالی د ټولګي پلنوالی یا اندازه ښيي.
+endbox

@@ -1,0 +1,63 @@
+@printed 151
+exercise 8.3
+q 1 | Find the shaded area of the following figures. || درج ذیل اشکال کا سایہ دار رقبہ معلوم کریں۔ || د لاندې شکلونو سیوري شوې مساحت معلوم کړئ.
+qp a | Parallelogram path: outer base 50 cm, outer altitude 32 cm; inner base 46 cm, inner altitude 28 cm || متوازی الاضلاع راستہ: بیرونی قاعدہ 50 cm، بیرونی ارتفاع 32 cm؛ اندرونی قاعدہ 46 cm، اندرونی ارتفاع 28 cm || د متوازي الاضلاع لار: بهرنۍ قاعده 50 cm، بهرنی لوړوالی 32 cm؛ دننۍ قاعده 46 cm، دننی لوړوالی 28 cm
+shape para nest | base=50 cm | ibase=46 cm | ialt=28 cm | oalt=32 cm
+solution 312 cm²
+ss Area of a parallelogram = base × altitude. Shaded area = outer − inner. || متوازی الاضلاع کا رقبہ = قاعدہ × ارتفاع۔ سایہ دار رقبہ = بیرونی − اندرونی۔ || د متوازي الاضلاع مساحت = قاعده × لوړوالی. سیوري شوې مساحت = بهرنۍ − دننۍ.
+sm 50 \times 32 - 46 \times 28 = 1600 - 1288 = 312 \text{ cm}^2
+endsolution
+qp b | Triangle path: outer base 9 m, outer altitude 6 m; inner base 7 m, inner altitude 4 m || مثلث راستہ: بیرونی قاعدہ 9 m، بیرونی ارتفاع 6 m؛ اندرونی قاعدہ 7 m، اندرونی ارتفاع 4 m || د مثلث لار: بهرنۍ قاعده 9 m، بهرنی لوړوالی 6 m؛ دننۍ قاعده 7 m، دننی لوړوالی 4 m
+shape tri nest | base=9 m | ibase=7 m | ialt=4 m | oalt=6 m
+solution 13 m²
+ss Area of a triangle = ½ × altitude × base. Shaded area = outer − inner. || مثلث کا رقبہ = ½ × ارتفاع × قاعدہ۔ سایہ دار رقبہ = بیرونی − اندرونی۔ || د مثلث مساحت = ½ × لوړوالی × قاعده. سیوري شوې مساحت = بهرنۍ − دننۍ.
+sm \frac{1}{2}(6 \times 9) - \frac{1}{2}(4 \times 7) = 27 - 14 = 13 \text{ m}^2
+endsolution
+qp c | Trapezium path: outer bases 4 cm and 10 cm, outer altitude 6 cm; inner bases 2 cm and 8 cm, inner altitude 4 cm || ذوزنقہ راستہ: بیرونی قاعدے 4 cm اور 10 cm، بیرونی ارتفاع 6 cm؛ اندرونی قاعدے 2 cm اور 8 cm، اندرونی ارتفاع 4 cm || د ذوزنقې لار: بهرنۍ قاعدې 4 cm او 10 cm، بهرنی لوړوالی 6 cm؛ دننۍ قاعدې 2 cm او 8 cm، دننی لوړوالی 4 cm
+shape trap nest | top=4 cm | base=10 cm | itop=2 cm | ibase=8 cm | ialt=4 cm | oalt=6 cm
+solution 22 cm²
+ss Area of a trapezium = altitude × (b₁ + b₂)/2. Shaded area = outer − inner. || ذوزنقہ کا رقبہ = ارتفاع × (b₁ + b₂)/2۔ سایہ دار رقبہ = بیرونی − اندرونی۔ || د ذوزنقې مساحت = لوړوالی × (b₁ + b₂)/2. سیوري شوې مساحت = بهرنۍ − دننۍ.
+sm 6 \times \frac{4 + 10}{2} - 4 \times \frac{2 + 8}{2} = 42 - 20 = 22 \text{ cm}^2
+endsolution
+q 2 | Find the altitude of a trapezium if the length of two bases are 5.6 cm and 2.9 cm respectively. The area of the trapezium is 42 m². || اگر ذوزنقہ کے دونوں قاعدوں کی لمبائی بالترتیب 5.6 cm اور 2.9 cm ہو اور رقبہ 42 m² ہو تو ارتفاع معلوم کریں۔ || که د ذوزنقې د دواړو قاعدو اوږدوالی په ترتیب سره 5.6 cm او 2.9 cm وي او مساحت 42 m² وي، لوړوالی یې معلوم کړئ.
+solution ≈ 9.88 (taking all lengths in cm and the area as 42 cm²)
+ss The question mixes cm and m²; using the same unit (cm) throughout: area = altitude × (b₁ + b₂)/2. || سوال میں cm اور m² ملے ہوئے ہیں؛ ایک ہی اکائی (cm) لیتے ہوئے: رقبہ = ارتفاع × (b₁ + b₂)/2۔ || پوښتنه cm او m² ګډوي؛ په ټوله کې یو واحد (cm) په پام کې نیسو: مساحت = لوړوالی × (b₁ + b₂)/2.
+sm 42 = h \times \frac{5.6 + 2.9}{2} = h \times 4.25 \;\Rightarrow\; h = \frac{42}{4.25} \approx 9.88 \text{ cm}
+endsolution
+q 3 | Find the area of a trapezium if the length of two bases are 8.8 m and 12.9 m respectively. The perpendicular distance between two bases are 12 m. || اگر ذوزنقہ کے دونوں قاعدوں کی لمبائی بالترتیب 8.8 m اور 12.9 m ہو اور ان کے درمیان عمودی فاصلہ 12 m ہو تو رقبہ معلوم کریں۔ || که د ذوزنقې د دواړو قاعدو اوږدوالی په ترتیب سره 8.8 m او 12.9 m وي او د قاعدو ترمنځ عمودي واټن 12 m وي، مساحت یې معلوم کړئ.
+solution 130.2 m²
+sm 12 \times \frac{8.8 + 12.9}{2} = 12 \times 10.85 = 130.2 \text{ m}^2
+ss The perpendicular distance between the bases is the altitude. || قاعدوں کے درمیان عمودی فاصلہ ارتفاع ہے۔ || د قاعدو ترمنځ عمودي واټن لوړوالی دی.
+endsolution
+q 4 | Find the altitude of the triangular field. If its area is 946 cm² and base is 104 cm. || ایک مثلثی میدان کا ارتفاع معلوم کریں اگر اس کا رقبہ 946 cm² اور قاعدہ 104 cm ہو۔ || د یو مثلثي ډګر لوړوالی معلوم کړئ که مساحت یې 946 cm² او قاعده یې 104 cm وي.
+solution ≈ 18.19 cm
+ss Area = ½ × base × altitude, so altitude = 2 × area ÷ base. || رقبہ = ½ × قاعدہ × ارتفاع، اس لیے ارتفاع = 2 × رقبہ ÷ قاعدہ۔ || مساحت = ½ × قاعده × لوړوالی، نو لوړوالی = 2 × مساحت ÷ قاعده.
+sm h = \frac{2 \times 946}{104} = \frac{1892}{104} \approx 18.19 \text{ cm}
+endsolution
+q 5 | Find the area of the triangle if the length of its base is 2.5 m and the length of its altitude is 1.2 m. || اگر مثلث کے قاعدے کی لمبائی 2.5 m اور ارتفاع 1.2 m ہو تو اس کا رقبہ معلوم کریں۔ || که د مثلث د قاعدې اوږدوالی 2.5 m او لوړوالی 1.2 m وي، مساحت یې معلوم کړئ.
+solution 1.5 m²
+sm \frac{1}{2} \times 1.2 \times 2.5 = 1.5 \text{ m}^2
+endsolution
+q 6 | Find the base of the triangular piece of carpet. If its area is 1568 cm² and altitude is 9.04 m. || مثلثی قالین کے ٹکڑے کا قاعدہ معلوم کریں اگر اس کا رقبہ 1568 cm² اور ارتفاع 9.04 m ہو۔ || د مثلثي غالۍ د ټوټې قاعده معلومه کړئ که مساحت یې 1568 cm² او لوړوالی یې 9.04 m وي.
+solution ≈ 3.47 cm
+ss Change the altitude to cm so the units match: 9.04 m = 904 cm. || اکائیاں ملانے کے لیے ارتفاع کو cm میں بدلیں: 9.04 m = 904 cm۔ || د واحدونو د سمون لپاره لوړوالی په cm بدل کړئ: 9.04 m = 904 cm.
+sm b = \frac{2 \times 1568}{904} = \frac{3136}{904} \approx 3.47 \text{ cm}
+endsolution
+q 7 | The altitude of the parallelogram is 56 m and its area is 6424 cm². Find the base of parallelogram. || متوازی الاضلاع کا ارتفاع 56 m اور رقبہ 6424 cm² ہے۔ اس کا قاعدہ معلوم کریں۔ || د متوازي الاضلاع لوړوالی 56 m او مساحت یې 6424 cm² دی. قاعده یې معلومه کړئ.
+solution ≈ 1.147 cm
+ss Use the same unit for both: altitude 56 m = 5600 cm. Then base = area ÷ altitude. || دونوں کے لیے ایک ہی اکائی لیں: ارتفاع 56 m = 5600 cm۔ پھر قاعدہ = رقبہ ÷ ارتفاع۔ || دواړو لپاره یو واحد وکاروئ: لوړوالی 56 m = 5600 cm. بیا قاعده = مساحت ÷ لوړوالی.
+sm b = \frac{6424}{5600} \approx 1.147 \text{ cm}
+endsolution
+q 8 | The area of the parallelogram is 900 m² and base is 30 m. Find the altitude of parallelogram. || متوازی الاضلاع کا رقبہ 900 m² اور قاعدہ 30 m ہے۔ اس کا ارتفاع معلوم کریں۔ || د متوازي الاضلاع مساحت 900 m² او قاعده یې 30 m ده. لوړوالی یې معلوم کړئ.
+solution 30 m
+sm h = \frac{900}{30} = 30 \text{ m}
+endsolution
+endexercise
+@issue Exercise 8.3 Q2, Q6 and Q7 mix units (cm with m²; cm² with m); the SpaceBook solutions convert to one unit (Q7 follows the answer key: 1.147 cm). Q1 parts are figures only; a short description is added to each.
+@sec 8.4 | Three Dimensional Solids || سہ جہتی ٹھوس اشکال || درې بعدي جامدات
+# 8.4 Three Dimensional Solids || 8.4 سہ جہتی ٹھوس اشکال || 8.4 درې بعدي جامدات
+p In the previous class we have learnt about points, line segments, and 2-D shapes (flat shapes). Before learning about some other shapes, let's gain some knowledge of dimensions in geometry. || پچھلی جماعت میں ہم نے نقطوں، قطعاتِ خط اور دو جہتی (چپٹی) اشکال کے بارے میں سیکھا۔ کچھ اور اشکال سیکھنے سے پہلے آئیے جیومیٹری میں ابعاد کے بارے میں کچھ جانیں۔ || په تېر ټولګي کې مو د ټکو، د کرښې ټوټو او دوه بعدي (هوارو) شکلونو په اړه زده کړل. د نورو شکلونو له زده کړې مخکې راځئ په هندسه کې د بعدونو په اړه پوه شو.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- Define 2-D and 3-D shape? And give examples of some 2D and 3D shapes. || دو جہتی اور سہ جہتی شکل کی تعریف کریں؟ اور کچھ مثالیں دیں۔ || دوه بعدي او درې بعدي شکل تعریف کړئ؟ او ځینې بېلګې ورکړئ.
+- Differentiate between 3-D and 2-D shapes? || سہ جہتی اور دو جہتی اشکال میں فرق کریں؟ || د درې بعدي او دوه بعدي شکلونو توپیر وکړئ؟
+endbox

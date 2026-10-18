@@ -1,0 +1,1958 @@
+{
+ "class": 2,
+ "updated": "2026-10-13T11:01:34",
+ "sourceDirectory": "D:/SpaceBook/Books/2nd",
+ "pipeline": "Page DSL (docs/source-verification/class-2/<subj>/pages/pNNN.txt) -> tools/build_book2.py -> js/<name>_2_data.js -> js/cls2_page_reader.js (uses the shared Class 6 renderer MATH6_READER).",
+ "note": "Class 2 is being rebuilt page by page from the scans (from 2026-10-12). The earlier Class 2 records, backed up in legacy-backup/ (including the old progress.json that claimed 772/772 pages), were not page-faithful: paraphrased outcomes, website watermark text, placeholder answers and untranslated copies.",
+ "order": [
+  "Mathematics",
+  "English",
+  "Urdu",
+  "General Knowledge",
+  "Islamiat",
+  "Nazira Quran",
+  "Pashto",
+  "Drawing"
+ ],
+ "subjectsNotInSourceFolder": [
+  "General Science (no Class 2 source in Books/2nd; Class 2 has General Knowledge instead)"
+ ],
+ "books": [
+  {
+   "subject": "Mathematics",
+   "code": "math",
+   "title": "Mathematics 2 (KPTBB, Curriculum 2020)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Maths/JPG (168 scans in two parts; PDF \"Math Book for 2 class KPTBB.pdf\" has 167 pages)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\math",
+   "appFile": "js/math_2_data.js",
+   "totalSourcePages": 168,
+   "status": "complete",
+   "reviewedPages": 168,
+   "implementedPages": 166,
+   "printedPagesCovered": "1-160",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [
+    83
+   ],
+   "lastSavedPdfPage": 168,
+   "nextPdfPage": null,
+   "currentUnit": 6,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 22,
+     "printedPage": 16,
+     "issues": [
+      "Misprint kept as printed: \"So, 518 is greater than 375.\" The numbers compared are 518 and 376 (editorial note added)."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 19,
+     "issues": [
+      "Misprint kept as printed: \"So, 202 is the greatest number.\" The given numbers are 162, 203, 168, so the greatest is 203 (editorial note added)."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 24,
+     "issues": [
+      "The empty cells of Try Yourself Q1 are not printed as boxes; six columns are read from the positions of the printed numbers (row 3 ends with 950 in column 6)."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 28,
+     "issues": [
+      "Q6 and Q7 rows have 8 cells; the empty cells are read from the positions of the printed numbers."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 48,
+     "issues": [
+      "Mix-up kept as printed: Raza says \"My age is 8 years\" and Salman \"My age is 24 years\", but the working labels 24 as Raza's age and the text ends \"So, Raza is 16 years older than Salman.\" By the speech bubbles, Salman is 16 years older (editorial note added)."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 58,
+     "issues": [
+      "Q2(b): the result row of the working box is labelled \"Books sold\" although it asks for the books left; kept as printed.",
+      "Q1: the first digit of \"528 birds\" is partly hidden by a print flaw; read as 528."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 59,
+     "issues": [
+      "Part (a) splits 34 − 20, but the last line prints \"34 − 12 =\"; kept as printed (editorial note added)."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": null,
+     "issues": [
+      "Duplicate scan: the second JPG part (\"...pdf2222\", page 1) repeats printed p.76, the last page of the first part (scan idx 081). From here on printed page = scan idx − 6."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 79,
+     "issues": [
+      "Q2: the number of balloons in each bunch is read from the pictures (blue bunches of 3, mixed bunches of 4 and 5, purple-green pairs)."
+     ]
+    },
+    {
+     "pdfPage": 100,
+     "printedPage": 93,
+     "issues": [
+      "Question numbering restarts at 4 on this page (the previous page ends at 6); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 101,
+     "printedPage": 94,
+     "issues": [
+      "The scanner's hand covers part of the unit title (\"Fract...\"); the title \"Fraction\" is taken from the contents page (scan idx 005)."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 96,
+     "issues": [
+      "Try Yourself Q1 numbers its pictures (i), (ii), (iii), (vi); kept as printed. The biscuit is broken into two unequal-looking halves and the banana is cut off-centre (read from the picture)."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 102,
+     "issues": [
+      "Q1 matching: the parts in each picture were counted on the scan (strips 6, circle 8, triangle row 7, long strip 9; circle 4, strip 5, triangle 3, oval 2)."
+     ]
+    },
+    {
+     "pdfPage": 110,
+     "printedPage": 105,
+     "issues": [
+      "Printed pages 103–104 are missing in every source (both JPG parts, \"Math Book for 2 class KPTBB.pdf\", the split PDFs \"Maths 2nd 1–4.pdf\" and the Word OCR): scan idx 108 is p.102 and idx 109 is p.105. Their content (probably fractions like 2/3 … 9/10, see the Learning Outcomes) is not invented. From here on printed page = scan idx − 4."
+     ]
+    },
+    {
+     "pdfPage": 111,
+     "printedPage": 106,
+     "issues": [
+      "Q1 parts are numbered i, ii, iii, then \"vi\" and \"v\" (as printed). Q3 is printed \"Match the cloured shapes\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 125,
+     "printedPage": 120,
+     "issues": [
+      "The text says \"The basket holds more water than the bowl.\" but the picture shows a bucket; kept as printed (editorial note added).",
+      "Try Yourself: the first pair (a bottle and a glass) is very faint in the scan; read from the visible outlines."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 123,
+     "issues": [
+      "Misprint kept as printed: \"9ℓd of milk\" (a stray \"d\") and \"it give in one day\". The teaching point is cut off at its left edge in the scan; its wording matches the identical notes on pages 113 and 118."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 127,
+     "issues": [
+      "Q5 is printed \"How much ice-cream did left with him?\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 135,
+     "printedPage": 130,
+     "issues": [
+      "The Try Yourself clocks are small; the times are read from the hands on the scan (SpaceBook answers, no printed key)."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 131,
+     "issues": [
+      "As printed: the sunny picture is labelled \"Noon\" (it stands for day-time) and the title reads \"Using of a.m. and p.m. in Time\"."
+     ]
+    },
+    {
+     "pdfPage": 137,
+     "printedPage": 132,
+     "issues": [
+      "The clock times are read from the hands on the scan (SpaceBook answers, no printed key)."
+     ]
+    },
+    {
+     "pdfPage": 139,
+     "printedPage": 134,
+     "issues": [
+      "The year is not printed; the layout (1 January on Friday, 1 February on Monday, …) is the calendar of 2021, used for the Try Yourself answers on page 135."
+     ]
+    },
+    {
+     "pdfPage": 140,
+     "printedPage": 135,
+     "issues": [
+      "Answers use the calendar printed on page 134 (the calendar of 2021); no printed key."
+     ]
+    },
+    {
+     "pdfPage": 141,
+     "printedPage": 136,
+     "issues": [
+      "The month grids are copied as printed (first weekday and number of days of each month); the textbook does not give the Hijri year."
+     ]
+    },
+    {
+     "pdfPage": 142,
+     "printedPage": 137,
+     "issues": [
+      "Answers use the lunar calendar grids printed on page 136 (10th Muharram = Monday is given in the textbook and matches that grid); no printed key. Shawwal is printed \"Shawal\" here."
+     ]
+    },
+    {
+     "pdfPage": 144,
+     "printedPage": 139,
+     "issues": [
+      "Q2 times are read from the hands on the scan (SpaceBook answers, no printed key); in clocks 2 and 3 the hour hand is drawn a little before the exact position."
+     ]
+    },
+    {
+     "pdfPage": 145,
+     "printedPage": 140,
+     "issues": [
+      "Q4 \"Ahmad goes to school at 8o'clock\" is printed without a space (as printed). Answers are SpaceBook answers (no printed key)."
+     ]
+    },
+    {
+     "pdfPage": 146,
+     "printedPage": 141,
+     "issues": [
+      "The last outcome is printed split over two bullets (\"recognize and name 3-D.\" / \"objects (cubes, cuboids, cylinder, cone, sphere).\"); joined here as one outcome."
+     ]
+    },
+    {
+     "pdfPage": 147,
+     "printedPage": 142,
+     "issues": [
+      "Counts are SpaceBook answers counted on the scan; the car's sloping sides are counted as triangles and the car window (wider than tall) as a rectangle."
+     ]
+    },
+    {
+     "pdfPage": 149,
+     "printedPage": 144,
+     "issues": [
+      "Counts are SpaceBook answers counted on the scan (no printed key); the crab's eye rings and the small circles at the ends of its legs are counted as circles."
+     ]
+    },
+    {
+     "pdfPage": 150,
+     "printedPage": 145,
+     "issues": [
+      "\"sqaure\" is misspelt in the second Key Fact (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 153,
+     "printedPage": 148,
+     "issues": [
+      "Q2 counts are SpaceBook answers counted on the scan (no printed key): shape (a) has 2 straight and 2 curved sides; in shape (b) the vase base is counted as 4 straight lines; in shape (c) the long base is counted as one line."
+     ]
+    },
+    {
+     "pdfPage": 155,
+     "printedPage": 150,
+     "issues": [
+      "Exercise 3 begins with question 2; no question 1 is printed on pages 149–150 (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 161,
+     "printedPage": 156,
+     "issues": [
+      "Q3 counts are SpaceBook answers counted on the scan (no printed key). Questions iv–v are printed \"How many curved lines do a semi-circle have?\" and \"How many sides do a circle have?\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 162,
+     "printedPage": 157,
+     "issues": [
+      "Q4 counts are SpaceBook answers counted on the scan (only \"Circle 4\" is printed); the robot's body is wider than tall and counted as a rectangle."
+     ]
+    },
+    {
+     "pdfPage": 164,
+     "printedPage": 159,
+     "issues": [
+      "As printed, 4,000 = MV, 5,000 = V and 10,000 = X; in Roman numerals these large values are written with a bar over V and X (V̄ = 5,000, X̄ = 10,000), which the scan does not show (editorial note added)."
+     ]
+    },
+    {
+     "pdfPage": 168,
+     "printedPage": null,
+     "issues": [
+      "National Anthem (Hafeez Jalandhari, 1952): reproduced as printed because it is the national anthem printed in every KPTBB textbook."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 10.6,
+   "ledger": "docs/source-verification/class-2/math/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/math/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "English",
+   "code": "eng",
+   "title": "English 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd English/JPG (138 scans in two parts)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\eng",
+   "appFile": "js/english_2_data.js",
+   "totalSourcePages": 138,
+   "status": "complete",
+   "reviewedPages": 138,
+   "implementedPages": 133,
+   "printedPagesCovered": "1-127",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [
+    76,
+    82,
+    83,
+    84
+   ],
+   "lastSavedPdfPage": 138,
+   "nextPdfPage": null,
+   "currentUnit": 16,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 5,
+     "printedPage": null,
+     "issues": [
+      "The scan cuts off the right edge of three lines (\"Khyber Pakhtunkhw…\", \"Mansehra\", \"Peshawa…\"); completed from the same lines in the Class 2 Mathematics book. The e-mail address printed for the Board is not reproduced. \"Mmuhammad\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 8,
+     "printedPage": null,
+     "issues": [
+      "Contents (continued) is printed as the right half of the contents table; \"Chose the correct answer\" and \"Witting sentences\" are printed so."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 3,
+     "issues": [
+      "Copyright: the poem \"The Bug\" is by Marjorie Barrows (1892–1983) and is still under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 11,
+     "issues": [
+      "Printed misspellings kept: \"softhard, big-small, blackwhite\" (missing hyphens) and \"thee/four\" (three/four)."
+     ]
+    },
+    {
+     "pdfPage": 20,
+     "printedPage": 12,
+     "issues": [
+      "\"its a good thing\" and the mixed spellings \"honor/honour\" are printed so."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 13,
+     "issues": [
+      "The teaching point is cut off at the right edge of the scan (\"understandin…\", \"bett…\", \"Islam al…\"); the cut words are completed in the obvious way."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 15,
+     "issues": [
+      "\"Asslam-o-alikum\" and \"Wa Alaikum-As-Salaam\" are printed so."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 16,
+     "issues": [
+      "Printed spellings kept: \"slip of\" (slip off), \"in ordered and right place\", \"dinningroom\", \"home work\"."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 23,
+     "issues": [
+      "\"Kathrine\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 24,
+     "issues": [
+      "Question i asks for \"the second step to plant a seedling\"; the story's steps are for planting a seed (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 25,
+     "issues": [
+      "Two printed questions do not match the story: \"Zain's ___ was planting a seedling\" (the story says a seed) and \"___ steps are there to plant a seedling\" (the story gives five steps for a seed). Kept as printed; answers follow the story."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 28,
+     "issues": [
+      "This exercise is numbered \"vi\" and \"vii\" (iv and v are skipped), as printed."
+     ]
+    },
+    {
+     "pdfPage": 38,
+     "printedPage": 30,
+     "issues": [
+      "\"wide\" is asked for in the meanings table but was not taught in Units 1–3; its meaning is a SpaceBook answer."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 32,
+     "issues": [
+      "The contents page gives page 33 for Unit 4, but the unit opener is printed page 32."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 34,
+     "issues": [
+      "Copyright: the poem \"Bee on my Nose\" is by R. Wayne Edwards (a modern poet) and is under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 43,
+     "printedPage": 35,
+     "issues": [
+      "Read Me prints \"Consonant cluster on a word …\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 44,
+     "printedPage": 36,
+     "issues": [
+      "The teaching point prints \"a combination of two constants\" (consonants), as printed."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 37,
+     "issues": [
+      "The teaching point says \"wicked crouch means the painful feeling after being stung by bee\" (as printed); in the poem it describes the bee crouching, ready to sting."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 42,
+     "issues": [
+      "The contents page gives page 43 for Unit 5, but the unit opener is printed page 42."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 44,
+     "issues": [
+      "The page title is mostly cut off in the scan (\"Atten…\"); it is the unit title \"Attention!\"."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 45,
+     "issues": [
+      "Printed wording kept: \"Can we run traffic lights\", \"rikshaws\", \"sharing these information\"."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 48,
+     "issues": [
+      "Read Me prints \"larg.est\" and \"diff.er.ent\" (as printed); \"different\" is usually divided dif·fer·ent."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 49,
+     "issues": [
+      "Faded print: the coloured possessive words (her, my, your, his) are pale but legible. Only two of the shape boxes are visible; the box under \"walk/know\" is blank in the scan. \"ii.\" is printed twice (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 51,
+     "issues": [
+      "The \"D) Writing\" heading is very faint in the scan. The four signs are read from their pictures (stop, no parking, no overtaking, no pedestrians)."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 52,
+     "issues": [
+      "The contents page gives page 53 for Unit 6, but the unit opener is printed page 52."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 55,
+     "issues": [
+      "\"grinny\" is printed in the table (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 57,
+     "issues": [
+      "Q ii: the items are read from the pictures; which count as \"classroom items\" is a SpaceBook answer."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 61,
+     "issues": [
+      "This page asks for sentences about a \"Bee\" although Unit 6 is \"Be Honest\"; it is printed page 61, right after the Unit 6 grammar page, and is kept here as printed."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 62,
+     "issues": [
+      "Scan order problem (same in every source): the Unit 7 opener is printed page 62, followed by Review 2 pages 63–64, then Unit 7 pages 65–66 (Oral Communication, Reading) before its Getting Started page 67. The first page of Review 2 (printed p.62 by the contents) is missing in every source (JPGs, KPTBB PDF and the split PDFs). Pages are kept in scan order; the reader shows each page under its unit. Some words in the outcomes are faded (\"surro…ings\", \"wh-questions\", \"oth…s\"); read from the visible letters."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 63,
+     "issues": [
+      "Review 2 begins here; its first page (printed p.62: the Review 2 heading, A) Oral Communication and the start of B) Reading) is missing in every source."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 64,
+     "issues": [
+      "\"Last day\" and \"Swat river\" are printed so."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 65,
+     "issues": [
+      "Q ii mixes one-syllable and two-syllable words in the same boxes (father, player, mother / game, medal, pedal); the answer sorts them by syllables and rhyme."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 66,
+     "issues": [
+      "These questions are about the story on page 68, which comes later in the scans. The teaching point says \"The big hand shows the hour and the small hand shows the minutes\" — the opposite of the page itself (\"The big hand on the clock shows minutes\", \"The small hand on the clock shows hours\"); kept as printed (editorial note added). Q iv clocks read from the hands on the scan."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": null,
+     "issues": [
+      "Duplicate scan: the second JPG part (\"...pdf2\", page 1) repeats printed p.67 (Getting Started), the last page of the first part (scan idx 074). From here on printed page = scan idx − 8."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 68,
+     "issues": [
+      "The While-reading question asks what was written on the notice board; the story says only that \"instructions\" for guests and players were written on it."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 71,
+     "issues": [
+      "Question iv (the five clocks) is printed again here exactly as on page 66; answered there. The calendar months match 2020 (1 September and 1 December are Tuesdays)."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": null,
+     "issues": [
+      "Alternate print (footer style of the Punjab \"PESRP\" edition, printed p.73): a shorter, three-stanza version of the Unit 8 poem by Ruth Donnelly, titled \"My School\". The KPTBB page with the full poem \"First Day of School\" is scan idx 086 (printed p.78), where the poem is summarised. Not repeated here."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": null,
+     "issues": [
+      "Alternate print (footer \"NOT FOR SALE-PESRP\", printed p.74) of the Unit 8 Oral Communication page; the same exercises appear on the KPTBB page scan idx 087 (printed p.79), where they are transcribed."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": null,
+     "issues": [
+      "Printed p.75 (KPTBB footer) repeats the Unit 7 \"D) Writing\" page — \"Write numbers from 1 to 50 in words\" and \"Write five sentences about your favourite sport\" with the word bank game, win, friends, enjoy, compete — already transcribed from printed p.70 (scan idx 078)."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 78,
+     "issues": [
+      "Copyright: the poem \"First Day of School\" is by Ruth Donnelly (a modern poet) and is under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook. The words \"shiny\", \"peek\" and \"kind\" are highlighted in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 79,
+     "issues": [
+      "\"Syilable\" is printed as the sub-heading (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 89,
+     "printedPage": 80,
+     "issues": [
+      "The left edge of the scan is cut off (the first words and the question numbers are partly hidden). The top line is the end of a speaking task \"(ii.) Get students into pairs and ask them to discuss their favourite things in school.\" The second question in the textbook is numbered \"i.\" again (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 90,
+     "printedPage": 81,
+     "issues": [
+      "Option \"tore\" is printed for \"torn\"; kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 82,
+     "issues": [
+      "Printed wording kept: \"dinning room\" (dining) and \"The cat is climbing ⇩ ___ the tree\" (the arrow points down)."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 86,
+     "issues": [
+      "\"specific factual. information\" has a stray full stop (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 97,
+     "printedPage": 88,
+     "issues": [
+      "The While-reading question asks why Bayazid Bastami went to the canal, but the story names him only in the last line (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 99,
+     "printedPage": 90,
+     "issues": [
+      "\"ii.\" is printed twice on this page (the chart and the fill-in-the-blanks), as printed."
+     ]
+    },
+    {
+     "pdfPage": 102,
+     "printedPage": 93,
+     "issues": [
+      "The sentences in Q iv are printed without punctuation; \"How old you are\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 104,
+     "printedPage": 95,
+     "issues": [
+      "The example date \"9-4-2020\" is printed with the day \"Friday\"; 9 April 2020 was a Thursday (4 September 2020 was a Friday). Kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 105,
+     "printedPage": 96,
+     "issues": [
+      "\"Bayazid's mother wake up during the night\" — in the story she woke up in the morning after sleeping all night; the question is kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 108,
+     "printedPage": 99,
+     "issues": [
+      "The contents page gives page 101 for Unit 10; the unit opener is printed page 99."
+     ]
+    },
+    {
+     "pdfPage": 112,
+     "printedPage": 103,
+     "issues": [
+      "The cover in the picture is labelled \"Model Textbook English 2 … National Curriculum Council\" (the federal model book); the contents rows match this KPTBB book. \"Let's Plant Tree\" is printed so in the table."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 104,
+     "issues": [
+      "Q iv says \"The ant swam and climbed up onto the ___\"; the story does not say the ant swam (as printed). The bird names in Q iii are read from the photographs (SpaceBook answers)."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 107,
+     "issues": [
+      "The exercise \"Use commas in the given sentences\" is numbered \"iii.\" again after \"iv.\" (as printed). The rebus pictures are read as park, birds, tree and seeds."
+     ]
+    },
+    {
+     "pdfPage": 118,
+     "printedPage": 109,
+     "issues": [
+      "\"your father birthday party\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 120,
+     "printedPage": 111,
+     "issues": [
+      "\"The short form of two word\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 121,
+     "printedPage": 112,
+     "issues": [
+      "The short passage about Zara and Neha has mismatched quotation marks (\"I have missed classwork today. 'Don't worry. …' 'You are so nice, said Zara.); punctuation kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 123,
+     "printedPage": 114,
+     "issues": [
+      "\"Following the given directions and make a collage\" is printed so."
+     ]
+    },
+    {
+     "pdfPage": 124,
+     "printedPage": 115,
+     "issues": [
+      "\"Can you help me finding my scarf?\" is printed so (usually \"help me find\")."
+     ]
+    },
+    {
+     "pdfPage": 128,
+     "printedPage": 119,
+     "issues": [
+      "Copyright: the poem \"Seasons of the Year\" is by Meish Goldish (a modern writer) and is under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 130,
+     "printedPage": 121,
+     "issues": [
+      "The brochure labels look swapped (the ice-cream picture is labelled Spring and the watering picture Summer); kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 132,
+     "printedPage": 123,
+     "issues": [
+      "Read Me prints \"question words we used to ask questions\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 135,
+     "printedPage": 126,
+     "issues": [
+      "The \"D)\" is missing before \"Writing\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 136,
+     "printedPage": 127,
+     "issues": [
+      "Spelling as printed: \"her hand but M.A TEFL\", \"She herself, has written\"."
+     ]
+    },
+    {
+     "pdfPage": 138,
+     "printedPage": null,
+     "issues": [
+      "National Anthem (Hafeez Jalandhari, 1952): reproduced as printed because it is the national anthem printed in every KPTBB textbook."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 46.1,
+   "ledger": "docs/source-verification/class-2/eng/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/eng/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Urdu",
+   "code": "urdu",
+   "title": "Urdu 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Urdu/JPG (117 scans in two parts)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\urdu",
+   "appFile": "js/urdu_2_data.js",
+   "totalSourcePages": 117,
+   "status": "complete",
+   "reviewedPages": 117,
+   "implementedPages": 116,
+   "printedPagesCovered": "1-144",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 117,
+   "nextPdfPage": null,
+   "currentUnit": 26,
+   "currentSection": "review",
+   "unresolved": [
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The e-mail address printed for the Board is not reproduced; the phone number at the bottom is cut off in the scan."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 2,
+     "issues": [
+      "Copyright: the Hamd is by Saqi Javed (a modern poet) and is under copyright; it is summarised couplet by couplet instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 3,
+     "issues": [
+      "Q2 matches the first and second halves of four couplets of the Hamd; because the poem is summarised (copyright), the halves are described by their meaning here. The first pair (moon, sun, flowers and stars → how lovely You made them) is joined in the textbook."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 5,
+     "issues": [
+      "The grid is written row by row in reading order (right to left), as printed."
+     ]
+    },
+    {
+     "pdfPage": 16,
+     "printedPage": 7,
+     "issues": [
+      "The syllable grid is written row by row in reading order (right to left), as printed."
+     ]
+    },
+    {
+     "pdfPage": 17,
+     "printedPage": 8,
+     "issues": [
+      "Both tasks on this page are numbered \"۱۰\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 10,
+     "issues": [
+      "Copyright: the Naat is by Khwaja Abid Nizami (a modern poet) and is under copyright; it is summarised couplet by couplet instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 23,
+     "printedPage": 14,
+     "issues": [
+      "Copyright: the short poem in Q7 is unattributed in the book and may be a modern work; it is summarised line by line instead of being reproduced. Read it in the printed textbook.",
+      "Question 8 is not printed: the page goes from ۷ to ۹ (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 19,
+     "issues": [
+      "Question 4 is not printed: the page goes from ۳ to ۵ (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 23,
+     "issues": [
+      "The right edge of the teacher note is cut off in the scan; the missing words are restored from context in brackets."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 33,
+     "issues": [
+      "The contents page (scan idx 005) lists \"جائزہ-۱\" after lesson 6, but in the book it is printed on pp. 33–34, between lesson 5 and lesson 6 (p. 35). SpaceBook follows the printed page order."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 44,
+     "issues": [
+      "Copyright: the poem \"تارے\" is by Sufi Ghulam Mustafa Tabassum (d. 1978) and is still under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 46,
+     "issues": [
+      "The word bank for Q2 prints \"دوست\" twice (as printed); only one blank needs it."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 49,
+     "issues": [
+      "Copyright: the poem in Q7 is by Muhammad Ishaq Jalalpuri; its copyright status could not be confirmed, so it is summarised instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 55,
+     "issues": [
+      "In Q4 the third part is labelled \"(الف)\" instead of \"(ج)\" (as printed); SpaceBook labels it (ج)."
+     ]
+    },
+    {
+     "pdfPage": 68,
+     "printedPage": 59,
+     "issues": [
+      "The right edge of the teacher note is cut off in the scan; the last words (\"بچّوں کو بلوچستان\") are completed from context."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 60,
+     "issues": [
+      "The second sentence begins \"خوش ہو گئے\" with no subject (as printed; the \"Stop and Tell\" box sits beside it). The translations supply the subject \"[the children]\" in brackets."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 68,
+     "issues": [
+      "Missing source pages: printed pp. 69–105 are not in any source for this book — they are absent from the JPG scans, from all four split PDFs and from the Word OCR (which jumps from p. 68 to p. 108). The next scan (idx 077) is printed p. 106. The missing pages hold the rest of lesson 10 (from p. 69), Review 2, lessons 11–16 (آؤ بجلی بچائیں، میرا پیارا وطن، آؤ مل کے درخت لگائیں، صفائی کا رکھیں خیال، ساری دنیا اپنا گھر، علامہ محمد اقبالؒ), Review 3 and the opening page of lesson 17 (p. 105). SpaceBook does not invent these pages."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 106,
+     "issues": [
+      "This scan is printed p. 106. The lesson's opening page (p. 105, with its learning outcomes) is missing from every source; see the note on p. 68."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 107,
+     "issues": [
+      "The text says \"اسلم اور رابعہ چھپ گئے\" although the sister in the story is called ارم; \"رابعہ\" appears to be a misprint for \"ارم\" (kept as printed)."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 110,
+     "issues": [
+      "The second wagon prints only \"ری\" (as printed); it probably stands for a word beginning with \"ر\" (for example \"رسی\"/\"ریل\")."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 115,
+     "issues": [
+      "Q2 labels its last two parts both \"(د)\" (as printed); SpaceBook labels the fifth part (ہ)."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 119,
+     "issues": [
+      "The lesson number on the opener is hidden behind the tree photograph in the scan; the contents page gives it as lesson 19."
+     ]
+    },
+    {
+     "pdfPage": 94,
+     "printedPage": 122,
+     "issues": [
+      "Scan order: printed p. 122 is scan idx 094, which comes after p. 123 (idx 093) in the scans. SpaceBook shows the pages in printed order: this file (scan 093's slot) holds p. 122."
+     ]
+    },
+    {
+     "pdfPage": 95,
+     "printedPage": 123,
+     "issues": [
+      "Scan order: in the scans this page (printed p. 123) comes before p. 122 — the two leaves were bound/scanned in the wrong order (scan idx 093 = p. 123, idx 094 = p. 122). SpaceBook puts them back in printed order, so the file for scan 093 holds p. 122 and the file for scan 094 holds p. 123."
+     ]
+    },
+    {
+     "pdfPage": 96,
+     "printedPage": 124,
+     "issues": [
+      "Copyright: the poem in Q8 is by Sufi Ghulam Mustafa Tabassum (d. 1978) and is still under copyright; it is summarised instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 109,
+     "printedPage": 137,
+     "issues": [
+      "Copyright: the poem \"ٹوٹ بٹوٹ کی موٹر کار\" is by Sufi Ghulam Mustafa Tabassum (d. 1978) and is still under copyright; it is summarised stanza by stanza instead of being reproduced. Read the full text in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 113,
+     "printedPage": 141,
+     "issues": [
+      "The word-search grid is written row by row in reading order (right to left), as printed. Some words in it run downwards and some across. The example \"بات\" is circled in the book."
+     ]
+    },
+    {
+     "pdfPage": 115,
+     "printedPage": 143,
+     "issues": [
+      "The Speaking task's instruction is partly hidden in the scan (\"…بنائیں اور … سنائیں\"); it is read here as \"ان کے متعلق کہانی بنائیں اور سنائیں\"."
+     ]
+    },
+    {
+     "pdfPage": 116,
+     "printedPage": 144,
+     "issues": [
+      "The reading task and the language task are both numbered \"۴\", and there is no \"۳\" (as printed). The language task is labelled ۴ (ب) here so that the two can be told apart. The question \"کس جان ور کو شیر کی خالہ کہا جاتا ہے؟\" is not answered in the passage; SpaceBook gives the commonly known answer (the cat)."
+     ]
+    },
+    {
+     "pdfPage": 117,
+     "printedPage": null,
+     "issues": [
+      "The book's back cover (outside) is not in the scans; this last scan is the inside back cover."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 53.5,
+   "ledger": "docs/source-verification/class-2/urdu/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/urdu/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "General Knowledge",
+   "code": "gk",
+   "title": "General Knowledge 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd GK/JPG (103 scans in two parts)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\gk",
+   "appFile": "js/gk_2_data.js",
+   "totalSourcePages": 103,
+   "status": "complete",
+   "reviewedPages": 103,
+   "implementedPages": 101,
+   "printedPagesCovered": "1-100",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [
+    52
+   ],
+   "lastSavedPdfPage": 103,
+   "nextPdfPage": null,
+   "currentUnit": 16,
+   "currentSection": "exercise",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "A website watermark (\"perfect24u.com\") is stamped on many scans of this book; it is not part of the textbook and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 2,
+     "printedPage": null,
+     "issues": [
+      "Website advertisement page (awazeinqilab.com) inserted by the scanner; not part of the textbook. The textbook's title page, credits and contents are not in the scans — the book starts directly with chapter 1 on the next scan."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": 2,
+     "issues": [
+      "The map is not redrawn: SpaceBook does not draw political boundaries freehand, because an approximate border could be wrong. Use the map in the printed book; the regions it shows are listed in the table below."
+     ]
+    },
+    {
+     "pdfPage": 5,
+     "printedPage": 3,
+     "issues": [
+      "The blank map is not redrawn (see p. 2); children can label the map in the printed book."
+     ]
+    },
+    {
+     "pdfPage": 11,
+     "printedPage": 9,
+     "issues": [
+      "Scan order: printed pp. 9 and 10 are swapped in the scans (scan idx 010 = p. 10, idx 011 = p. 9). SpaceBook shows them in printed order: this file (scan 010's slot) holds p. 9."
+     ]
+    },
+    {
+     "pdfPage": 12,
+     "printedPage": 10,
+     "issues": [
+      "Scan order: this file (scan 011's slot) holds printed p. 10, which is scan idx 010 (see the note on p. 9)."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 12,
+     "issues": [
+      "The province shapes are not redrawn: SpaceBook does not draw political boundaries freehand (see p. 2). Trace the shapes from the printed book."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 19,
+     "issues": [
+      "In Q2 the book draws one example line, from \"Fresh Air\" to \"Village\"."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 30,
+     "issues": [
+      "Q4's third clue (Soam, Aftaar, Sacred Month) describes the month of Ramzan-ul-Mubarak, which is not itself a festival in this chapter; SpaceBook gives \"Ramzan-ul-Mubarak\", the month that ends with Eid-ul-Fitr."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 45,
+     "issues": [
+      "The banner text \"We should carefully use water and must not w…\" is torn at the right edge of the scan; it is completed here as \"waste it\"."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 46,
+     "issues": [
+      "Q1(iii) is ambiguous. The book lists the natural sources as rain, snow and underground water (p. 42), and says underground water is obtained \"through wells\" (p. 43). SpaceBook marks it ✗, because a well is made by people, and explains why; a teacher may accept ✓ if a well is treated as a source of underground water.",
+      "The globe outline for Q4 is not redrawn (continent outlines cannot be drawn faithfully by hand); colour the outline in the printed book."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 49,
+     "issues": [
+      "Five leaf pictures are given but only four words (Wide, Oval, Small, Oblong); the last two pictures both show small leaves."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 49,
+     "issues": [
+      "Duplicate scan: this is the last page of JPG part 1 (…pdf1111_page-0051), and it repeats printed p. 49 (scan idx 050). The second part continues with p. 50."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 50,
+     "issues": [
+      "The photograph labelled \"Beetroot\" shows sweet potatoes (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 54,
+     "issues": [
+      "Q1: on p. 52 the book says ginger and mint \"grow from roots\". Ginger is really an underground stem and mint is eaten for its leaves, so SpaceBook ticks only carrot, turnip and radish, the roots shown on p. 50, and explains why."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 59,
+     "issues": [
+      "Q1's fourth item is numbered \"(vi)\" instead of \"(iv)\" (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 76,
+     "issues": [
+      "The caption under the wood fire reads \"By burnina wood\" (a misprint for \"burning\")."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 77,
+     "issues": [
+      "Part of the caption \"We need fire/heat to cook meal\" is smudged in the scan; it reads \"cook meal\"."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 79,
+     "issues": [
+      "The right edge of this scan has dark scanner smudges; no text is lost."
+     ]
+    },
+    {
+     "pdfPage": 103,
+     "printedPage": 100,
+     "issues": [
+      "This is the last page in the scans. The book's back cover is not included."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 230.5,
+   "ledger": "docs/source-verification/class-2/gk/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/gk/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Islamiat",
+   "code": "isl",
+   "title": "Islamiat 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Islamyat/JPG (58 scans)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\isl",
+   "appFile": "js/islamyat_2_data.js",
+   "totalSourcePages": 58,
+   "status": "complete",
+   "reviewedPages": 58,
+   "implementedPages": 57,
+   "printedPagesCovered": "1-52",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 58,
+   "nextPdfPage": null,
+   "currentUnit": 16,
+   "currentSection": "exercise",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "A website watermark (\"perfect24u.com\") is stamped on many scans of this book; it is not part of the textbook and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 2,
+     "printedPage": null,
+     "issues": [
+      "Website advertisement page (awazeinqilab.com) inserted by the scanner; not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The e-mail address on this page is omitted."
+     ]
+    },
+    {
+     "pdfPage": 13,
+     "printedPage": 7,
+     "issues": [
+      "\"Before reading a book\" and \"before sleeping\" are times for saying the tasmiyah or a dua rather than \"Alhamdulillah\"; SpaceBook leaves those two boxes uncoloured and explains why."
+     ]
+    },
+    {
+     "pdfPage": 30,
+     "printedPage": 24,
+     "issues": [
+      "The word-search grid is written row by row in reading order (right to left), as printed."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 25,
+     "issues": [
+      "\"جمعہ پڑھنا\" (offering the Friday prayer) is not only done in Ramadan, but it is an act of worship Muslims also perform in Ramadan, so SpaceBook counts it as one of the things to colour; this is a personal-choice activity."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 34,
+     "issues": [
+      "The Arabic verse \"وَاِنَّكَ لَعَلٰى خُلُقٍ عَظِيْمٍ\" and its translation are faint in the scan; the verse is given from Surah Al-Qalam 68:4."
+     ]
+    },
+    {
+     "pdfPage": 42,
+     "printedPage": 36,
+     "issues": [
+      "The word-search grid is written row by row in reading order (right to left), as printed."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 50,
+     "issues": [
+      "Q3(1) asks which miracle Allah gave Hazrat Isa; the lesson (p. 48) says that the sick were healed through his prayer, so SpaceBook gives that as the answer."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 51,
+     "issues": [
+      "The colouring picture of the Ka'bah is not redrawn; colour it in the printed book."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 52,
+     "issues": [
+      "This is the last scan. The book's back cover is not included."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 206.0,
+   "ledger": "docs/source-verification/class-2/isl/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/isl/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Nazira Quran",
+   "code": "nazira",
+   "title": "Nazira Quran 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Nazira/JPG (91 scans in two parts)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\nazira",
+   "appFile": "js/nazira_2_data.js",
+   "totalSourcePages": 91,
+   "status": "complete",
+   "reviewedPages": 91,
+   "implementedPages": 89,
+   "printedPagesCovered": "4-88",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [
+    46
+   ],
+   "lastSavedPdfPage": 91,
+   "nextPdfPage": null,
+   "currentUnit": 15,
+   "currentSection": "para2",
+   "unresolved": [
+    {
+     "pdfPage": 2,
+     "printedPage": null,
+     "issues": [
+      "Website advertisement page (awazeinqilab.com) inserted by the scanner; not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 26,
+     "issues": [
+      "In the second group the book prints \"فِیْهِ\" with a standing zer on the ha (as printed)."
+     ]
+    },
+    {
+     "pdfPage": 32,
+     "printedPage": 30,
+     "issues": [
+      "The scan has dark smudges over the madd signs on the left; the words are read from the clear parts and from the same words elsewhere in the Quran."
+     ]
+    },
+    {
+     "pdfPage": 36,
+     "printedPage": 34,
+     "issues": [
+      "The double-zabar row prints the alif after each letter (تًا etc.), as written in the book."
+     ]
+    },
+    {
+     "pdfPage": 40,
+     "printedPage": 38,
+     "issues": [
+      "The second teaching point in the book lists the excepted letters as \"ء ھ ع ح غ خ ل ی ا ر د\", as printed. Standard tajweed treats ل and ر as idgham without ghunnah, and the throat letters as izhar."
+     ]
+    },
+    {
+     "pdfPage": 46,
+     "printedPage": 43,
+     "issues": [
+      "Duplicate scan: this is the last page of JPG part 1 (…pdf1111_page-0045) and repeats printed p. 43 (scan idx 044). The second part starts with p. 44."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 44,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 48,
+     "printedPage": 45,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 46,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 50,
+     "printedPage": 47,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 51,
+     "printedPage": 48,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 49,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 53,
+     "printedPage": 50,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 51,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 55,
+     "printedPage": 52,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 53,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "The top of this scan is blurred by a scanning fault; the Mushaf text itself is clear."
+     ]
+    },
+    {
+     "pdfPage": 57,
+     "printedPage": 54,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "The top of this scan is blurred by a scanning fault; the Mushaf text itself is clear."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 55,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 59,
+     "printedPage": 56,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 60,
+     "printedPage": 57,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "A corner of this page is torn in the scan; only the margin is affected and the Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 61,
+     "printedPage": 58,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "A corner of this page is torn in the scan; only the margin is affected and the Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 59,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 60,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": 61,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 65,
+     "printedPage": 62,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 66,
+     "printedPage": 63,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "This page ends the first Para (Al-Baqarah 2:141)."
+     ]
+    },
+    {
+     "pdfPage": 69,
+     "printedPage": 66,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 70,
+     "printedPage": 67,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 71,
+     "printedPage": 68,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 72,
+     "printedPage": 69,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 73,
+     "printedPage": 70,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 74,
+     "printedPage": 71,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 75,
+     "printedPage": 72,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 76,
+     "printedPage": 73,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 77,
+     "printedPage": 74,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 78,
+     "printedPage": 75,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "A tear runs down the side panel of this scan; the side box is read from the visible parts. The Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 79,
+     "printedPage": 76,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "A tear runs down the side panel of this scan; the side box is read from the visible parts. The Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 80,
+     "printedPage": 77,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 81,
+     "printedPage": 78,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 82,
+     "printedPage": 79,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 83,
+     "printedPage": 80,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 84,
+     "printedPage": 81,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 85,
+     "printedPage": 82,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced."
+     ]
+    },
+    {
+     "pdfPage": 86,
+     "printedPage": 83,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "The top corner of this page is torn in the scan; only the margin is affected and the Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 87,
+     "printedPage": 84,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "The top corner of this page is torn in the scan; only the margin is affected and the Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 88,
+     "printedPage": 85,
+     "issues": [
+      "Quran text: Indo-Pak script (quran.com). English meaning: M. M. Pickthall (1930, public domain); the book prints no translation, and no verified public-domain Pashto translation is available, so the Pashto slot repeats the Arabic text. Ruku (ع) marks and the colour coding of tajweed letters are not reproduced.",
+      "This page ends the second Para (Al-Baqarah 2:252), which is also where Juz 2 ends; the book is complete. The top corner of this page is torn in the scan; only the margin is affected and the Mushaf text is complete."
+     ]
+    },
+    {
+     "pdfPage": 91,
+     "printedPage": 88,
+     "issues": [
+      "This is the last scan; the book's back cover is not included."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 245.7,
+   "ledger": "docs/source-verification/class-2/nazira/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/nazira/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Pashto",
+   "code": "pashto",
+   "title": "Pashto 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Pashto/JPG (64 scans)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\pashto",
+   "appFile": "js/pashto_2_data.js",
+   "totalSourcePages": 64,
+   "status": "complete",
+   "reviewedPages": 64,
+   "implementedPages": 63,
+   "printedPagesCovered": "2-116",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 64,
+   "nextPdfPage": null,
+   "currentUnit": 28,
+   "currentSection": "feedback",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "Every scan of this book is a two-page spread (right page first, as the book reads right to left). A website watermark (\"awaz e inqilab.com\") is stamped on the scans; it is not part of the textbook and is ignored."
+     ]
+    },
+    {
+     "pdfPage": 2,
+     "printedPage": null,
+     "issues": [
+      "Website advertisement page (awazeinqilab.com) inserted by the scanner; not part of the textbook."
+     ]
+    },
+    {
+     "pdfPage": 4,
+     "printedPage": null,
+     "issues": [
+      "The e-mail address on the credits page is omitted."
+     ]
+    },
+    {
+     "pdfPage": 5,
+     "printedPage": null,
+     "issues": [
+      "Spread: the right page is the second contents page; the left page is printed p. 1 (lesson 1).",
+      "Copyright: the poem is by Dr. Didar Yousafzai (a modern poet) and is summarised stanza by stanza (on p. 2) instead of being reproduced. Read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 7,
+     "printedPage": 4,
+     "issues": [
+      "Copyright: the Naat is by Sultan Faridi (a modern poet) and is summarised couplet by couplet instead of being reproduced. Read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 15,
+     "printedPage": 20,
+     "issues": [
+      "These are anonymous Pashto folk rhymes (children's oral tradition), so they are transcribed in full. \"اکو بکو\" is a counting-out nonsense phrase with no meaning."
+     ]
+    },
+    {
+     "pdfPage": 18,
+     "printedPage": 26,
+     "issues": [
+      "The right edge of the right page is cut off in the scan; a few final letters of some lines are completed from context."
+     ]
+    },
+    {
+     "pdfPage": 19,
+     "printedPage": 28,
+     "issues": [
+      "Copyright: the poem is by Sultan Faridi (a modern poet) and is summarised instead of being reproduced. Read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 34,
+     "issues": [
+      "The right edge of the right page is cut off in the scan; the last letter or two of some lines are completed from context."
+     ]
+    },
+    {
+     "pdfPage": 24,
+     "printedPage": 38,
+     "issues": [
+      "The right edge of the right page is cut off in the scan; a few final letters are completed from context."
+     ]
+    },
+    {
+     "pdfPage": 25,
+     "printedPage": 40,
+     "issues": [
+      "Copyright: the poem is by Dr. Didar Yousafzai (a modern poet; name printed on p. 42) and is summarised instead of being reproduced. Read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 28,
+     "printedPage": 46,
+     "issues": [
+      "Q1(4) and Q2(1) ask how a human differs from an animal (\"by understanding and knowledge\"); the passage on p. 45 does not say this directly. SpaceBook answers from general knowledge and the given choices."
+     ]
+    },
+    {
+     "pdfPage": 31,
+     "printedPage": 52,
+     "issues": [
+      "These are anonymous folk jokes, so they are transcribed in full."
+     ]
+    },
+    {
+     "pdfPage": 33,
+     "printedPage": 56,
+     "issues": [
+      "Copyright: the poet's name for this poem is on the next page; it is treated as a modern poem and summarised instead of being reproduced. Read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 34,
+     "printedPage": 58,
+     "issues": [
+      "Copyright: the poem is by Muhammad Din Muqbil (محمد دین مقبل), a modern poet. It is summarised here, not reproduced; read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 35,
+     "printedPage": 60,
+     "issues": [
+      "Copyright: question 3 prints the fourth stanza of Muhammad Din Muqbil's poem; it is not reproduced here. See the stanza in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 45,
+     "printedPage": 80,
+     "issues": [
+      "The contents list shows this unit as \"اشر غوبل\" (communal work and threshing); an earlier draft of this book's unit list had misread it as a person's name."
+     ]
+    },
+    {
+     "pdfPage": 47,
+     "printedPage": 84,
+     "issues": [
+      "Source error kept as printed: the text calls Hazrat Umar bin Abdul Aziz an \"Abbasid\" (عباسي) caliph. He was an Umayyad caliph."
+     ]
+    },
+    {
+     "pdfPage": 49,
+     "printedPage": 88,
+     "issues": [
+      "Copyright: the poem is by Sardar Yousafzai (سردار یوسفزے), a modern poet. It is summarised here, not reproduced; read the full poem in the printed textbook. \"داجي\" here means father (the outcomes speak of the father relationship); an earlier draft of this book's unit list had it as \"grandmother\"."
+     ]
+    },
+    {
+     "pdfPage": 52,
+     "printedPage": 94,
+     "issues": [
+      "These are traditional folk riddles, so they are transcribed in full. The printed answers are on p. 96. An earlier draft of this book's unit list had the title as \"Rivers (poem)\"."
+     ]
+    },
+    {
+     "pdfPage": 54,
+     "printedPage": 98,
+     "issues": [
+      "Copyright: the poem is by Zaryab Yousafzai (زریاب یوسفزے), a modern poet. It is summarised here, not reproduced; read the full poem in the printed textbook."
+     ]
+    },
+    {
+     "pdfPage": 56,
+     "printedPage": 102,
+     "issues": [
+      "This is an anonymous humorous story, so it is transcribed in full. One word in the patient's list (چونګ نینې, a mugful of some drink) is not clearly identifiable, so its English gloss is kept general."
+     ]
+    },
+    {
+     "pdfPage": 58,
+     "printedPage": 106,
+     "issues": [
+      "Copyright: the poem is by Abaseen Yousafzai (اباسین یوسفزے), a modern poet. It is summarised here, not reproduced; read the full poem in the printed textbook. This unit has no exercise in the book.",
+      "The glossary gives Pashto meanings for hard words, lesson by lesson. The English glosses are SpaceBook additions. Some glossary lesson headings (for example صفائي, کونتره, همدردي, د ماشومانو سندرې) do not match the lesson titles in this edition's contents; they are kept as printed."
+     ]
+    },
+    {
+     "pdfPage": 62,
+     "printedPage": 114,
+     "issues": [
+      "The glossary glosses شناز (Foods lesson) as an inflated skin float, while the lesson itself uses it for a stomach ache; both are kept as printed.",
+      "Possible misprint kept as printed: Noor-ul-Amin Yousafzai's birth year is given as 1922, which sits oddly with a BA from Swabi College; it may be a misprint, but no source here can confirm the correct year."
+     ]
+    },
+    {
+     "pdfPage": 63,
+     "printedPage": 116,
+     "issues": [
+      "This scan is a spread: the right page is printed p. 116; the left page is the unnumbered KPTBB textbook feedback form (back matter), summarised in the box above."
+     ]
+    },
+    {
+     "pdfPage": 64,
+     "printedPage": null,
+     "issues": [
+      "National Anthem (Hafeez Jalandhari, 1952): reproduced as printed because it is the national anthem printed in every KPTBB textbook. The scan cuts the anthem's frame in half across the spread; the text is complete across both halves. The publisher's name is cut off (\"… PRINTERS AND PUBLISHERS, Industrial area Peshawar\"), and only part of the print quantity is visible."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": 99.1,
+   "ledger": "docs/source-verification/class-2/pashto/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/pashto/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  },
+  {
+   "subject": "Drawing",
+   "code": "drawing",
+   "title": "Drawing 2 (KPTBB)",
+   "source": "D:/SpaceBook/Books/2nd/2nd Drawing/JPG (34 scans)",
+   "scanFolder": "D:\\SpaceBook\\_cls2_jpg\\drawing",
+   "appFile": "js/drawing_2_data.js",
+   "totalSourcePages": 34,
+   "status": "complete",
+   "reviewedPages": 34,
+   "implementedPages": 33,
+   "printedPagesCovered": "1-32",
+   "blankOrAdPages": [
+    2
+   ],
+   "duplicatePages": [],
+   "lastSavedPdfPage": 34,
+   "nextPdfPage": null,
+   "currentUnit": 4,
+   "currentSection": "activities",
+   "unresolved": [
+    {
+     "pdfPage": 1,
+     "printedPage": null,
+     "issues": [
+      "The source has no title page, contents, preface or back cover: after the front cover it goes straight to the 32 activity pages. The Word file is only an OCR dump of the same scans."
+     ]
+    },
+    {
+     "pdfPage": 14,
+     "printedPage": 12,
+     "issues": [
+      "This page is scanned upside down in the source; it was read the right way up."
+     ]
+    },
+    {
+     "pdfPage": 21,
+     "printedPage": 19,
+     "issues": [
+      "The printed heading names no object; the page shows a potato and an onion."
+     ]
+    },
+    {
+     "pdfPage": 22,
+     "printedPage": 20,
+     "issues": [
+      "Misprint kept as printed in the heading: \"maiz comb\" (maize cob)."
+     ]
+    }
+   ],
+   "untranslatedBlocks": [],
+   "pagesPerHour": null,
+   "ledger": "docs/source-verification/class-2/drawing/ledger.json",
+   "transcriptions": "docs/source-verification/class-2/drawing/pages/pNNN.txt (NNN = scan index = PDF page - 1)"
+  }
+ ],
+ "lastBrowserVerification": null,
+ "environmentBlockers": [
+  "D: has about 2.6 GB free and C: under 1 GB: scans are hard-linked into D:/SpaceBook/_cls2_jpg (no copies) and pages are read from the scan images directly, with the Word OCR companion as a text aid."
+ ],
+ "nextAction": "ALL Class 2 books DONE. Drawing 34/34. Next: final missing-sources report."
+}

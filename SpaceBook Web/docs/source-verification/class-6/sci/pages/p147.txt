@@ -1,0 +1,22 @@
+@printed 143
+@status lesson
+example Let's Do it | Construct an electric bell circuit || برقی گھنٹی کا سرکٹ بنائیں || د برېښنايي زنګ سرکټ جوړ کړئ
+p Study the given picture and follow the steps to construct it. || دی گئی تصویر دیکھیں اور اسے بنانے کے مراحل پر عمل کریں۔ || ورکړل شوی انځور وګورئ او د جوړولو ګامونه تعقیب کړئ.
+svg Figure 11.14 Circuit of Electric Bell — a bell on a board, a cell and a push switch joined in one loop of wire || شکل 11.14 برقی گھنٹی کا سرکٹ || شکل 11.14 د برېښنايي زنګ سرکټ
+<svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Electric bell circuit">
+<rect x="90" y="15" width="8" height="90" fill="#b45309"/><rect x="98" y="40" width="10" height="20" fill="#111"/><rect x="110" y="60" width="40" height="35" fill="#e5e7eb" stroke="#111"/>
+<rect x="190" y="60" width="70" height="22" rx="4" fill="#facc15" stroke="#111"/><rect x="190" y="60" width="12" height="22" fill="#111"/><rect x="248" y="60" width="12" height="22" fill="#111"/>
+<rect x="140" y="135" width="40" height="12" fill="#e5e7eb" stroke="#111"/><rect x="160" y="128" width="12" height="8" fill="#ec4899"/>
+<g fill="none" stroke="#dc2626" stroke-width="2"><path d="M90 95 C20 110 30 150 140 141"/><path d="M260 71 C320 80 300 145 180 141"/></g><path d="M150 71 H190" stroke="#2563eb" stroke-width="2"/>
+<g fill="#111"><text x="110" y="12">Bell</text><text x="205" y="55">Cell</text><text x="130" y="160">Push switch</text></g>
+</svg>
+endsvg
+p Make a simple connection between electric bell and battery. Connect the end of the wires with a battery. Connect the switch by putting wires. Now What did you observe? || برقی گھنٹی اور بیٹری کے درمیان سادہ کنکشن بنائیں۔ تاروں کے سروں کو بیٹری سے جوڑیں۔ تاروں سے سوئچ جوڑیں۔ اب آپ نے کیا دیکھا؟ || د زنګ او بیټرۍ ترمنځ ساده نښلون جوړ کړئ. د تارونو سرونه له بیټرۍ سره ونښلوئ. په تارونو سویچ ونښلوئ. اوس مو څه ولیدل؟
+q 11.3a | Now what did you observe? || اب آپ نے کیا دیکھا؟ || اوس مو څه ولیدل؟
+sol When the circuit is complete (switch pressed), the bell rings. ## || سرکٹ مکمل ہونے پر گھنٹی بجتی ہے۔ || کله چې سرکټ بشپړ شي زنګ وهي.
+q 11.3b | What would happen when you switch ON and OFF the button? Write your observation || بٹن آن اور آف کرنے پر کیا ہوگا؟ مشاہدہ لکھیں۔ || کله چې تڼۍ چالان او بنده کړئ څه کېږي؟ مشاهده ولیکئ.
+sol ON: the circuit is closed, current flows and the bell rings. OFF: the circuit is open, no current flows and the bell stops. ## || آن پر گھنٹی بجتی ہے، آف پر رک جاتی ہے۔ || چالان کې زنګ وهي، بند کې ودرېږي.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Teacher will demonstrate how to join a circuit and will also discuss the safety measures. || استاد سرکٹ جوڑنے کا طریقہ دکھائیں گے اور حفاظتی تدابیر پر بھی بات کریں گے۔ || ښوونکی به د سرکټ نښلول وښيي او د خوندیتوب تدابیر به هم بحث کړي.
+endbox

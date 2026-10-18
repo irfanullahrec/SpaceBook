@@ -1,0 +1,26 @@
+@printed 216
+p Make a Pie graph for the above data. || اوپر کے ڈیٹا کا پائی گراف بنائیں۔ || د پورتنیو معلوماتو دایروي ګراف جوړ کړئ.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Pie graph is also known as Pie chart. || پائی گراف کو پائی چارٹ بھی کہتے ہیں۔ || دایروي ګراف ته دایروي چارټ هم وايي.
+endbox
+p **Solution:** || **حل:** || **حل:**
+p First, we find the measurement of the central angles by using the following table: || پہلے ہم درج ذیل جدول کی مدد سے مرکزی زاویوں کی پیمائش معلوم کرتے ہیں: || لومړی د لاندې جدول په مرسته د مرکزي زاویو اندازه معلوموو:
+table
+th | Items || اشیاء || توکي | Expenditure (Rs.) || اخراجات (روپے) || لګښت (روپۍ) | Measurement of Central Angle || مرکزی زاویے کی پیمائش || د مرکزي زاویې اندازه
+tr | House rent | 24900 | $\frac{24900}{108000} \times 360^\circ = 83^\circ$
+tr | Food | 30000 | $\frac{30000}{108000} \times 360^\circ = 100^\circ$
+tr | Education | 32100 | $\frac{32100}{108000} \times 360^\circ = 107^\circ$
+tr | Clothing | 21000 | $\frac{21000}{108000} \times 360^\circ = 70^\circ$
+tr | Total | 108000 | Sum of central angles $= 360^\circ$
+endtable
+p Let us show information in a pie graph. || آئیے معلومات کو پائی گراف میں دکھائیں۔ || راځئ معلومات په دایروي ګراف کې وښیو.
+p **Step I:** Draw a circle of any radius and draw radius $\overline{OP}$ of the circle at the right side of the circle. || **مرحلہ I:** کسی بھی رداس کا دائرہ بنائیں اور دائرے کے دائیں طرف رداس $\overline{OP}$ کھینچیں۔ || **لومړی پړاو:** د هرې شعاع دایره رسم کړئ او د دایرې ښي خوا ته $\overline{OP}$ شعاع رسم کړئ.
+pie House rent=24900; Food=30000; Education=32100; Clothing=21000 | upto 0 || Step I: a circle with radius OP || مرحلہ I: رداس OP والا دائرہ || لومړی پړاو: د OP شعاع لرونکې دایره
+p **Step II:** Place the centre of a protractor at the centre of the circle and align it with radius $\overline{OP}$. Measure 83° angle and mark a point A on it. Join O to A. The sector of the circle formed by ∠83° represents the house rent. || **مرحلہ II:** چاندے کا مرکز دائرے کے مرکز پر رکھیں اور اسے رداس $\overline{OP}$ کے ساتھ ملائیں۔ 83° کا زاویہ ناپ کر نقطہ A لگائیں۔ O کو A سے ملائیں۔ ∠83° سے بننے والا قطاع گھر کے کرائے کو ظاہر کرتا ہے۔ || **دوهم پړاو:** د زاویه پیما مرکز د دایرې پر مرکز کېږدئ او له $\overline{OP}$ شعاع سره یې برابر کړئ. 83° زاویه اندازه کړئ او A ټکی نښه کړئ. O له A سره ونښلوئ. د ∠83° جوړ شوی قطاع د کور کرایه ښيي.
+pie House rent=24900; Food=30000; Education=32100; Clothing=21000 | upto 1 || Step II: the 83° sector for house rent || مرحلہ II: گھر کے کرائے کا 83° قطاع || دوهم پړاو: د کور کرایې 83° قطاع
+p **Step III:** Place the centre of the protractor at the centre of circle and align it with radius $\overline{OA}$. Measure 100° angle and mark a point B on it. Join O to B. The sector AOB of the circle represent the food expenditure. || **مرحلہ III:** چاندے کا مرکز دائرے کے مرکز پر رکھیں اور اسے رداس $\overline{OA}$ کے ساتھ ملائیں۔ 100° کا زاویہ ناپ کر نقطہ B لگائیں۔ O کو B سے ملائیں۔ قطاع AOB کھانے کے اخراجات کو ظاہر کرتا ہے۔ || **درېیم پړاو:** د زاویه پیما مرکز د دایرې پر مرکز کېږدئ او له $\overline{OA}$ شعاع سره یې برابر کړئ. 100° زاویه اندازه کړئ او B ټکی نښه کړئ. O له B سره ونښلوئ. AOB قطاع د خوړو لګښت ښيي.
+pie House rent=24900; Food=30000; Education=32100; Clothing=21000 | upto 2 || Step III: the 100° sector for food || مرحلہ III: کھانے کا 100° قطاع || درېیم پړاو: د خوړو 100° قطاع
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The pie chart can be drawn anticlockwise by drawing angle using inner scale of protector. || چاندے کے اندرونی پیمانے سے زاویے بنا کر پائی چارٹ گھڑی کی سوئیوں کی مخالف سمت میں بنایا جا سکتا ہے۔ || د زاویه پیما د داخلي پیمانې په کارولو زاویې رسمولو سره دایروي چارټ د ساعت د ستنو مخالف لوري ته رسمېدای شي.
+endbox
+@issue Page 216 note prints "protector" for protractor; kept as printed.

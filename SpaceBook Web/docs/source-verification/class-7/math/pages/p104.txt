@@ -1,0 +1,24 @@
+@printed 100
+example 2 | If U = {1, 2, 3, 4, ..., 10}, A = {1, 2, 3, 4, 5} and B = {2, 4, 5, 6, 7}, then verify that: a) $(A \cup B)^c = A^c \cap B^c$ b) $(A \cap B)^c = A^c \cup B^c$ || اگر U = {1, 2, 3, 4, ..., 10}، A = {1, 2, 3, 4, 5} اور B = {2, 4, 5, 6, 7} ہوں تو تصدیق کریں کہ: a) $(A \cup B)^c = A^c \cap B^c$ b) $(A \cap B)^c = A^c \cup B^c$ || که U = {1, 2, 3, 4, ..., 10}، A = {1, 2, 3, 4, 5} او B = {2, 4, 5, 6, 7} وي، تایید کړئ چې: a) $(A \cup B)^c = A^c \cap B^c$ b) $(A \cap B)^c = A^c \cup B^c$
+p **a)** $(A \cup B)^c = A^c \cap B^c$ || **a)** $(A \cup B)^c = A^c \cap B^c$ || **a)** $(A \cup B)^c = A^c \cap B^c$
+eq \begin{aligned} \text{First find } A \cup B &= \{1, 2, 3, 4, 5\} \cup \{2, 4, 5, 6, 7\} = \{1, 2, 3, 4, 5, 6, 7\} \\ \text{L.H.S} = (A \cup B)^c &= U - (A \cup B) = \{1, 2, 3, 4, \ldots, 10\} - \{1, 2, 3, 4, 5, 6, 7\} = \{8, 9, 10\} \\ A^c = U - A &= \{1, 2, 3, 4, \ldots, 10\} - \{1, 2, 3, 4, 5\} = \{6, 7, 8, 9, 10\} \\ B^c = U - B &= \{1, 2, 3, 4, \ldots, 10\} - \{2, 4, 5, 6, 7\} = \{1, 3, 8, 9, 10\} \\ \text{R.H.S} = A^c \cap B^c &= \{6, 7, 8, 9, 10\} \cap \{1, 3, 8, 9, 10\} = \{8, 9, 10\} \end{aligned}
+p L.H.S = R.H.S. Hence proved. || بایاں طرف = دایاں طرف۔ لہٰذا ثابت ہوا۔ || کیڼ اړخ = ښي اړخ. نو ثابته شوه.
+p **b)** $(A \cap B)^c = A^c \cup B^c$ || **b)** $(A \cap B)^c = A^c \cup B^c$ || **b)** $(A \cap B)^c = A^c \cup B^c$
+eq \begin{aligned} \text{First find } A \cap B &= \{1, 2, 3, 4, 5\} \cap \{2, 4, 5, 6, 7\} = \{2, 4, 5\} \\ \text{L.H.S} = (A \cap B)^c &= U - (A \cap B) = \{1, 2, 3, 4, \ldots, 10\} - \{2, 4, 5\} = \{1, 3, 6, 7, 8, 9, 10\} \\ \text{R.H.S} = A^c \cup B^c &= \{6, 7, 8, 9, 10\} \cup \{1, 3, 8, 9, 10\} = \{1, 3, 6, 7, 8, 9, 10\} \end{aligned}
+p L.H.S = R.H.S. Hence proved. || بایاں طرف = دایاں طرف۔ لہٰذا ثابت ہوا۔ || کیڼ اړخ = ښي اړخ. نو ثابته شوه.
+endexample
+exercise 6.3
+q 1 | Define union of sets and find the union of the following sets. || سیٹوں کے یونین کی تعریف کریں اور درج ذیل سیٹوں کا یونین معلوم کریں۔ || د سېټونو د یووالي تعریف وکړئ او د لاندې سېټونو یووالی معلوم کړئ.
+qp a | A = {2, 4, 6}, B = {1, 3, 5, 7}
+qp b | U = {a, b, c, d, e}, V = {c, d, e}
+qp c | K = {2, 4, 6, 8, 10}, D = {1, 5, 10}
+qp d | Z = {0, ±1, ±2, ±3, ±4, ±5, ...}, X = {−1, −2, −3}, Y = {1, 2, 3, 4, 5, 6, 7, 8}
+qp e | E = {2, 4, 6, 8, ...}, F = {4, 8, 12, 16}, N = {1, 2, 3, 4, ...}
+q 2 | Define intersection of sets and find the intersection of the following sets. || سیٹوں کے انٹرسیکشن کی تعریف کریں اور درج ذیل سیٹوں کا انٹرسیکشن معلوم کریں۔ || د سېټونو د تقاطع تعریف وکړئ او د لاندې سېټونو تقاطع معلومه کړئ.
+qp a | A = {0, 1, 2, 3}, B = {−3, −2, −1, 0}
+qp b | P = {1, 2, ..., 10}, R = {1, 3, 5, 7, 9}
+qp c | S = {2, 6, 10, 14, 16}, T = {4, 8, 12, 16}
+qp d | X = {3, 5, 7, 9}, Y = {1, 2, 3}, W = {0, 1, 2, ...}
+qp e | L = {a, f, g}, M = {g, h, p, r, s, m}, N = {l, m, n, o}
+q 3 | If E = Set of even positive numbers and W = Set of whole numbers, then find $E \cup W$ and $E \cap W$. || اگر E = مثبت جفت اعداد کا سیٹ اور W = مکمل اعداد کا سیٹ ہو تو $E \cup W$ اور $E \cap W$ معلوم کریں۔ || که E = د مثبتو جفتو عددونو سېټ او W = د بشپړو عددونو سېټ وي، نو $E \cup W$ او $E \cap W$ معلوم کړئ.
+q 4 | If P = Set of prime numbers and Z = Set of integers, then find $P \cup Z$ and $P \cap Z$. || اگر P = مفرد اعداد کا سیٹ اور Z = صحیح اعداد کا سیٹ ہو تو $P \cup Z$ اور $P \cap Z$ معلوم کریں۔ || که P = د لومړنیو عددونو سېټ او Z = د تامو عددونو سېټ وي، نو $P \cup Z$ او $P \cap Z$ معلوم کړئ.

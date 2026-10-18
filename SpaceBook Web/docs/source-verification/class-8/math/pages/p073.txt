@@ -1,0 +1,38 @@
+@printed 69
+@issue Step VI of Example 1 continues from page 68 ("dividend 5796 ... The remainder will be 0"); it is kept whole in the page-68 paragraph.
+p The quotient 486 is the square root of 236196. || خارج قسمت 486، 236196 کا جذر المربع ہے۔ || خارج قسمت 486 د 236196 مربع جذر دی.
+m So, $\sqrt{236196} = 486$
+box info | Verification || تصدیق || تایید
+m $486 \times 486 = 236196$
+endbox
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p In division method, the quotient is the square root of the given number. || تقسیم کے طریقے میں خارج قسمت دیے گئے عدد کا جذر المربع ہوتا ہے۔ || د وېش په طریقه کې خارج قسمت د ورکړل شوي عدد مربع جذر وي.
+endbox
+example 2
+p Find the square root of $\frac{3136}{4096}$ by division method. || تقسیم کے طریقے سے $\frac{3136}{4096}$ کا جذر المربع معلوم کریں۔ || د وېش په طریقه د $\frac{3136}{4096}$ مربع جذر معلوم کړئ.
+## Solution: || حل: || حل:
+p To find the square root of the given fraction by division method, we find the square root of the numerator and denominator separately. || تقسیم کے طریقے سے دیے گئے کسر کا جذر المربع معلوم کرنے کے لیے ہم شمار کنندہ اور نسب نما کا جذر المربع الگ الگ معلوم کرتے ہیں۔ || د وېش په طریقه د ورکړل شوي کسر د مربع جذر موندلو لپاره د صورت او مخرج مربع جذر جلا جلا مومو.
+m $3136 = \overline{31}\ \overline{36}$
+m $4096 = \overline{40}\ \overline{96}$
+p Now follow the same steps as in the previous example and find the square root of 3136 and 4096 || اب پچھلی مثال والے مراحل اختیار کریں اور 3136 اور 4096 کا جذر المربع معلوم کریں || اوس د مخکینۍ بېلګې پړاوونه تعقیب کړئ او د 3136 او 4096 مربع جذر ومومئ
+sqdiv q=56 | n=31 36 | 5: | :-25__ | 106:636 | :-636 | :0
+sqdiv q=64 | n=40 96 | 6: | :-36__ | 124:496 | :-496 | :0
+m The square root of $\frac{3136}{4096} = \frac{56}{64}$.
+box info | Verification || تصدیق || تایید
+m $56 \times 56 = 3136$
+m $64 \times 64 = 4096$
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the square root of the following numbers by division method. || تقسیم کے طریقے سے درج ذیل اعداد کا جذر المربع معلوم کریں۔ || د وېش په طریقه د لاندې عددونو مربع جذر معلوم کړئ.
+qp a | 2209
+qp b | 4624
+qp c | 10816
+qp d | 13225
+endbox
+example 3
+p Find the square root of the following decimal fractions using the division method. || تقسیم کے طریقے سے درج ذیل اعشاری کسور کا جذر المربع معلوم کریں۔ || د وېش په طریقه د لاندې اعشاري کسرونو مربع جذر معلوم کړئ.
+qp a | 1.0201
+qp b | 18.4041
+qp c | 904.2049

@@ -1,0 +1,22 @@
+@printed 60
+box code | Output (Program #3) || آؤٹ پٹ (پروگرام #3) || آوټ پټ (۳ پروګرام)
+m Enter your guess: 5
+m You got it Right!!!
+m ==========================
+m Enter your guess: 6
+endbox
+p But in case of a mismatch nothing is displayed on the screen and program ends. This is quite confusing that program ends without any sort of intimation. Thus, as a next step we extend our 'if' statement to 'if-else' statement, so that if guess is not correct another message should be displayed. || لیکن عدم مطابقت کی صورت میں اسکرین پر کچھ نہیں دکھایا جاتا اور پروگرام ختم ہو جاتا ہے۔ یہ خاصا الجھن پیدا کرنے والا ہے کہ پروگرام بغیر کسی اطلاع کے ختم ہو جائے۔ لہٰذا اگلے قدم کے طور پر ہم اپنے 'if' بیان کو 'if-else' بیان تک بڑھاتے ہیں تاکہ اگر اندازہ درست نہ ہو تو ایک اور پیغام دکھایا جائے۔ || خو د نه برابرېدو په صورت کې په سکرین هېڅ نه ښودل کېږي او پروګرام پای ته رسېږي. دا ډېر ګډوډوونکی دی چې پروګرام پرته له کومې خبرتیا پای ته ورسېږي. نو د راتلونکي ګام په توګه موږ خپل 'if' بیان 'if-else' بیان ته غځوو ترڅو که اټکل سم نه وي بل پیغام ښودل شي.
+box code | Program # 4: Guess the number (if - else) || پروگرام #4: عدد کا اندازہ لگائیں (if - else) || پروګرام #۴: شمېره اټکل کړئ (if - else)
+m 1 num = 5
+m 2 guess = eval(input('Enter your guess: '))
+m 3 if guess == num:
+m 4     print('You got it Right!!!')
+m 5 else:
+m 6     print('Wrong guess!!! Correct number was ', num)
+endbox
+box code | Output || آؤٹ پٹ || آوټ پټ
+m Enter your guess: 9
+m Wrong guess!!! Correct number was  5
+endbox
+### 4.5.3 Loops || 4.5.3 لوپس || 4.5.3 لوپونه
+p A loop is a set of instructions which needs to be iterated repeatedly, to acquire a particular result. A 'for' loop syntax is shown in program-5. Python sets the value of variable 'i' to 0 by default and is incremented by 1 in every iteration. Since, the range we have defined is '3', the program will iterate 3 times but as the value of variable 'i' started from 0, therefore at the end of the loop the value of 'i' will be 2. Note that the for loop statement ends with a colon and the following line(s) need to be indented such that Python considers them to be part of the loop. || لوپ ہدایات کا ایک مجموعہ ہے جسے کسی خاص نتیجے کے حصول کے لیے بار بار دہرانا ہوتا ہے۔ 'for' لوپ کی ساخت پروگرام-5 میں دکھائی گئی ہے۔ Python متغیر 'i' کی قدر بطور طے شدہ 0 رکھتا ہے اور ہر تکرار میں اسے 1 سے بڑھاتا ہے۔ چونکہ ہم نے جو رینج طے کی ہے وہ '3' ہے اس لیے پروگرام 3 بار دہرائے گا لیکن چونکہ متغیر 'i' کی قدر 0 سے شروع ہوئی اس لیے لوپ کے اختتام پر 'i' کی قدر 2 ہوگی۔ نوٹ کریں کہ for لوپ کا بیان کولن پر ختم ہوتا ہے اور اگلی سطر(یں) کو اس طرح indent کرنا ضروری ہے کہ Python انھیں لوپ کا حصہ سمجھے۔ || لوپ د لارښوونو یوه ټولګه ده چې د ځانګړې پایلې د ترلاسه کولو لپاره باید بیا بیا تکرار شي. د 'for' لوپ جوړښت په پروګرام-۵ کې ښودل شوی. Python د متغیر 'i' ارزښت په ډیفالټ ۰ ټاکي او په هر تکرار کې په ۱ زیاتېږي. ځکه چې هغه رینج چې موږ تعریف کړی '۳' دی نو پروګرام به ۳ ځله تکرار شي خو لکه څنګه چې د متغیر 'i' ارزښت له ۰ پیل شو نو د لوپ په پای کې به د 'i' ارزښت ۲ وي. یادونه وکړئ چې د for لوپ بیان په کولن پای ته رسېږي او راتلونکې کرښې (کرښې) باید داسې indent شي چې Python یې د لوپ برخه وګڼي.

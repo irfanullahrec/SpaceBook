@@ -1,0 +1,33 @@
+@printed 298
+@deco Photograph of a pink die (beside Example 1; decorative).
+@issue The top and left edges of the scan are slightly cropped (the question numbers are partly hidden). Q7 prints "Event A: randomly selected card will have a 7. Event A: randomly selected card will be even." (the second event is printed "Event A" for "Event B"; kept as printed). The cards shown are 4, 7, 7, 0, 3, 8 (six red cards with white digits). Q5 asks for the sample space, whether the events are mutually exclusive, P(A∪B) and P(A∩B). The page number is not visible in this scan (printed 298 by sequence).
+q 5 | Two dice are rolled. Event A: the sum of the numbers shown on the two dice is 3. Event B: both the numbers are odd. Find: || دو پانسے پھینکے جاتے ہیں۔ واقعہ A: دونوں پانسوں پر ظاہر ہونے والے اعداد کا مجموعہ 3 ہے۔ واقعہ B: دونوں اعداد طاق ہیں۔ معلوم کریں: || دوه ټاسونه غورځول کېږي. پېښه A: په دواړو ټاسونو ښودل شویو عددونو مجموعه 3 ده. پېښه B: دواړه عددونه طاق دي. پیدا کړئ:
+qp a | The sample space || نمونہ فضا || نمونه فضا
+qp b | If the two events mutually exclusive || اگر دو واقعات باہمی طور پر خارج ہوں || که دوه پېښې متقابل ځانګړې وي
+qp c | P(A∪B) || P(A∪B) || P(A∪B)
+qp d | P(A∩B) || P(A∩B) || P(A∩B)
+q 6 | A coin is tossed 4 times. What is the probability of every time getting a tail? || ایک سکہ 4 بار اچھالا جاتا ہے۔ ہر بار ہندسہ (ٹیل) آنے کا احتمال کیا ہے؟ || یوه سکه ۴ ځله غورځول کېږي. په هر ځل کې د لکۍ (ټیل) راتلو احتمال څومره دی؟
+q 7 | Nida picks a card randomly. Event A: randomly selected card will have a 7. Event A: randomly selected card will be even. Find: || نیدا بے ترتیب ایک کارڈ اٹھاتی ہے۔ واقعہ A: منتخب کارڈ پر 7 ہوگا۔ واقعہ A: منتخب کارڈ جفت ہوگا۔ معلوم کریں: || نیدا په تصادفي ډول یو کارډ اخلي. پېښه A: ټاکل شوي کارډ 7 لري. پېښه A: ټاکل شوی کارډ جفت دی. پیدا کړئ:
+qp a | If the two events mutually exclusive || اگر دو واقعات باہمی طور پر خارج ہوں || که دوه پېښې متقابل ځانګړې وي
+qp b | P(A∪B) || P(A∪B) || P(A∪B)
+qp c | P(A∩B) || P(A∩B) || P(A∩B)
+svg Q7: six cards 4, 7, 7, 0, 3, 8 || سوال 7: چھ کارڈ 4، 7، 7، 0، 3، 8 || 7 پوښتنه: شپږ کارډونه 4، 7، 7، 0، 3، 8
+<svg viewBox="0 0 290 56" width="290" role="img" aria-label="Six red rounded cards showing the digits 4, 7, 7, 0, 3 and 8" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">
+<g fill="#d8341f"><rect x="4" y="6" width="38" height="44" rx="8"/><rect x="52" y="6" width="38" height="44" rx="8"/><rect x="100" y="6" width="38" height="44" rx="8"/><rect x="148" y="6" width="38" height="44" rx="8"/><rect x="196" y="6" width="38" height="44" rx="8"/><rect x="244" y="6" width="38" height="44" rx="8"/></g>
+<text x="16" y="36">4</text><text x="64" y="36">7</text><text x="112" y="36">7</text><text x="160" y="36">0</text><text x="208" y="36">3</text><text x="256" y="36">8</text>
+</svg>
+endsvg
+endexercise
+@sec 11.5 | Theoretical and Experimental Probability || نظریاتی اور تجرباتی احتمال || نظري او تجربوي احتمال
+# 11.5 Theoretical and Experimental Probability || 11.5 نظریاتی اور تجرباتی احتمال || 11.5 نظري او تجربوي احتمال
+p We have learnt that the probability of an event occurring, denoted by P(E), is: || ہم نے سیکھا ہے کہ کسی واقعے کے رونما ہونے کا احتمال، جسے P(E) سے ظاہر کیا جاتا ہے، یہ ہے: || موږ زده کړې چې د یوې پېښې د پېښېدو احتمال چې په P(E) ښودل کېږي دا دی:
+eq \text{Probability of an event} = P(E) = \frac{\text{Number of favorable (desired) outcomes}}{\text{Total number of possible outcomes}}
+p This is the **Theoretical probability** of an event. Theoretical probability of a single event is the ratio or comparison of favorable (desired) outcomes to the total number of possible outcomes. || یہ کسی واقعے کا **نظریاتی احتمال** ہے۔ کسی ایک واقعے کا نظریاتی احتمال سازگار (مطلوبہ) نتائج کا ممکنہ نتائج کی کل تعداد سے تناسب یا موازنہ ہے۔ || دا د یوې پېښې **نظري احتمال** دی. د یوې پېښې نظري احتمال د مناسبو (اړینو) پایلو د ممکنو پایلو له ټولې شمېرې سره تناسب یا پرتله ده.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Probability of an event built on known facts is called **theoretical probability**. || معلوم حقائق پر مبنی کسی واقعے کا احتمال **نظریاتی احتمال** کہلاتا ہے۔ || د یوې پېښې احتمال چې پر معلومو حقایقو والړ وي **نظري احتمال** بلل کېږي.
+endbox
+example 1
+p If a die is rolled, what is the probability of getting a 6? || اگر پانسہ پھینکا جائے تو 6 آنے کا احتمال کیا ہے؟ || که ټاس وغورځول شي، د 6 راتلو احتمال څومره دی؟
+## Solution: || حل: || حل:
+eq \text{Theoretical probability} = P(6) = \frac{\text{Number of favorable (desired) outcomes}}{\text{Total number of possible outcomes}} = \frac{1}{6}
+endexample

@@ -1,0 +1,41 @@
+@printed 41
+@issue "Count backward" parrots: each row of 7 bubbles gives only the right-most number (88, 96). A backward count that ends at 96 from the left would need 102, so the rows are read from the given number towards the left (88, 87, ... 82 and 96, 95, ... 90). SpaceBook answer follows this reading.
+q 6 | __, 73, __ || __، ۷۳، __ || __، ۷۳، __
+cards _,73,_ || shirts on a line || رسی پر قمیضیں || په رسۍ کمیسونه
+sol 72, 73, 74 ## 72 comes before 73 and 74 comes after it. || ۷۲، ۷۳ سے پہلے اور ۷۴ اس کے بعد آتا ہے۔ || ۷۲ له ۷۳ نه مخکې او ۷۴ وروسته راځي.
+q 7 | __, 97, __ || __، ۹۷، __ || __، ۹۷، __
+cards _,97,_ || shirts on a line || رسی پر قمیضیں || په رسۍ کمیسونه
+sol 96, 97, 98 ## 96 comes before 97 and 98 comes after it. || ۹۶، ۹۷ سے پہلے اور ۹۸ اس کے بعد آتا ہے۔ || ۹۶ له ۹۷ نه مخکې او ۹۸ وروسته راځي.
+p Write the number that comes between the following numbers. || درج ذیل اعداد کے درمیان آنے والا عدد لکھیں۔ || د لاندې عددونو ترمنځ راتلونکی عدد ولیکئ.
+q 8 | 23 __ 25 || ۲۳ __ ۲۵ || ۲۳ __ ۲۵
+sol 24 ## 23, 24, 25 || ۲۳، ۲۴، ۲۵ || ۲۳، ۲۴، ۲۵
+q 9 | 43 __ 45 || ۴۳ __ ۴۵ || ۴۳ __ ۴۵
+sol 44 ## 43, 44, 45 || ۴۳، ۴۴، ۴۵ || ۴۳، ۴۴، ۴۵
+q 10 | 36 __ 38 || ۳۶ __ ۳۸ || ۳۶ __ ۳۸
+sol 37 ## 36, 37, 38 || ۳۶، ۳۷، ۳۸ || ۳۶، ۳۷، ۳۸
+q 11 | 98 __ 100 || ۹۸ __ ۱۰۰ || ۹۸ __ ۱۰۰
+sol 99 ## 98, 99, 100 || ۹۸، ۹۹، ۱۰۰ || ۹۸، ۹۹، ۱۰۰
+p Count backward and write the correct number. || پیچھے کی طرف گنیں اور درست عدد لکھیں۔ || شا ته وشمېرئ او سم عدد ولیکئ.
+q 12 | Parrots row 1 (last number 88) || طوطے پہلی قطار (آخری عدد ۸۸) || طوطیان لومړی قطار (وروستی عدد ۸۸)
+cnt bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [88] s=0.8 || 7 parrots; the last bubble shows 88 || ۷ طوطے؛ آخری بلبلے میں ۸۸ || ۷ طوطیان؛ په وروستي پوکاڼي کې ۸۸
+sol From the right: 88, 87, 86, 85, 84, 83, 82 (so the row reads 82, 83, 84, 85, 86, 87, 88 from the left) ## Start at 88 and count back one at a time towards the left. || ۸۸ سے شروع کریں اور بائیں طرف ایک ایک کم کرتے جائیں۔ || له ۸۸ نه پیل وکړئ او کیڼ لوري ته یو یو کم کړئ.
+q 13 | Parrots row 2 (last number 96) || طوطے دوسری قطار (آخری عدد ۹۶) || طوطیان دویم قطار (وروستی عدد ۹۶)
+cnt bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [] bird.green:1 [96] s=0.8 || 7 parrots; the last bubble shows 96 || ۷ طوطے؛ آخری بلبلے میں ۹۶ || ۷ طوطیان؛ په وروستي پوکاڼي کې ۹۶
+sol From the right: 96, 95, 94, 93, 92, 91, 90 (so the row reads 90, 91, 92, 93, 94, 95, 96 from the left) ## Start at 96 and count back one at a time towards the left. || ۹۶ سے شروع کریں اور بائیں طرف ایک ایک کم کرتے جائیں۔ || له ۹۶ نه پیل وکړئ او کیڼ لوري ته یو یو کم کړئ.
+p Write the ordinal number for each animal, (right to left). || ہر جانور کا ترتیبی عدد لکھیں (دائیں سے بائیں)۔ || د هر ژوي ترتیبي عدد ولیکئ (له ښي نه کیڼ ته).
+q 14 | Animals in a line, counted from the right. || قطار میں جانور، دائیں سے گنے گئے۔ || په قطار کې ژوي، له ښي لوري نه شمېرل شوي.
+cnt grasshopper:1 ant:1 spider:1 snail:1 dragonfly:1 caterpillar.dkgreen:1 butterfly.purple:1 caterpillar:1 ladybird:1 firefly:1 || grasshopper, ant, spider, snail, dragonfly, caterpillar (dark), butterfly, caterpillar (light), ladybird, firefly — arrow points right to left || ٹڈا، چیونٹی، مکڑی، گھونگھا، ڈریگن فلائی، سنڈی (گہری)، تتلی، سنڈی (ہلکی)، لیڈی برڈ، جگنو — تیر دائیں سے بائیں || ملخ، مېږی، جولا، چونګړه، ډرېګن فلای، چینجی (تیاره)، پتنګ، چینجی (روښانه)، لېډي برډ، اورلګی — غشی له ښي نه کیڼ ته
+sol firefly 1st, ladybird 2nd, light caterpillar 3rd, butterfly 4th, dark caterpillar 5th, dragonfly 6th, snail 7th, spider 8th, ant 9th, grasshopper 10th ## Start counting with the firefly at the right end. || دائیں سرے پر جگنو سے گننا شروع کریں۔ || په ښي سر کې له اورلګي نه شمېرل پیل کړئ.
+p Write 'more than' or 'less than' in the blanks. || خالی جگہوں میں "سے زیادہ" یا "سے کم" لکھیں۔ || په تشو ځایونو کې "ډېر" یا "لږ" ولیکئ.
+q 15 | 12 is ____ 18. || ۱۲، ۱۸ ____ ہے۔ || ۱۲ له ۱۸ ____ دی.
+sol less than ## 12 < 18 || ۱۲ < ۱۸ || ۱۲ < ۱۸
+q 16 | 99 is ____ 90. || ۹۹، ۹۰ ____ ہے۔ || ۹۹ له ۹۰ ____ دی.
+sol more than ## 99 > 90 || ۹۹ > ۹۰ || ۹۹ > ۹۰
+q 17 | 40 is ____ 41. || ۴۰، ۴۱ ____ ہے۔ || ۴۰ له ۴۱ ____ دی.
+sol less than ## 40 < 41 || ۴۰ < ۴۱ || ۴۰ < ۴۱
+q 18 | 70 is ____ 60. || ۷۰، ۶۰ ____ ہے۔ || ۷۰ له ۶۰ ____ دی.
+sol more than ## 70 > 60 || ۷۰ > ۶۰ || ۷۰ > ۶۰
+q 19 | 23 is ____ 3. || ۲۳، ۳ ____ ہے۔ || ۲۳ له ۳ ____ دی.
+sol more than ## A 2-digit number is greater than a 1-digit number: 23 > 3. || دو ہندسی عدد ایک ہندسی عدد سے بڑا ہے: ۲۳ > ۳۔ || دوه رقمي عدد له یو رقمي نه لوی دی: ۲۳ > ۳.
+q 20 | 61 is ____ 62. || ۶۱، ۶۲ ____ ہے۔ || ۶۱ له ۶۲ ____ دی.
+sol less than ## 61 < 62 || ۶۱ < ۶۲ || ۶۱ < ۶۲

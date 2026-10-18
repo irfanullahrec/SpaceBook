@@ -1,0 +1,32 @@
+@printed 5
+@sec 1.2.1 | Significant figures || معنی خیز ہندسے || معنا لرونکي رقمونه
+## 1.2.1 Significant figures || 1.2.1 معنی خیز ہندسے || 1.2.1 معنا لرونکي رقمونه
+@issue Heading "1.2.1 Significant figures" is partly obscured in the scan ("Sig ificant"); wording confirmed from context.
+p Let's learn how to determine the number of significant figures in any number. || آئیے سیکھیں کہ کسی بھی عدد میں معنی خیز ہندسوں کی تعداد کیسے معلوم کی جاتی ہے۔ || راځئ زده کړو چې په هر عدد کې د معنا لرونکو رقمونو شمېر څنګه معلوموو.
+- All non-zero digits are significant figures. For example, 172.3 has 4 significant figures. || تمام غیر صفر ہندسے معنی خیز ہندسے ہیں۔ مثلاً 172.3 میں 4 معنی خیز ہندسے ہیں۔ || ټول غیر صفر رقمونه معنا لرونکي رقمونه دي. د بېلګې په توګه 172.3 کې 4 معنا لرونکي رقمونه دي.
+- Zeros at the start of a number are never significant. For example, 0.0789 has 3 significant figures. || کسی عدد کے شروع میں آنے والے صفر کبھی معنی خیز نہیں ہوتے۔ مثلاً 0.0789 میں 3 معنی خیز ہندسے ہیں۔ || د عدد په پیل کې صفرونه هېڅکله معنا لرونکي نه وي. د بېلګې په توګه 0.0789 کې 3 معنا لرونکي رقمونه دي.
+- Zeros that are within any two non-zero digits and at the end of a number after the decimal point are significant. For example, 89.045 has 5 and 9.500 has 4 significant figures. || وہ صفر جو کسی دو غیر صفر ہندسوں کے درمیان ہوں اور اعشاریہ کے بعد عدد کے آخر میں ہوں، معنی خیز ہوتے ہیں۔ مثلاً 89.045 میں 5 اور 9.500 میں 4 معنی خیز ہندسے ہیں۔ || هغه صفرونه چې د دوو غیر صفر رقمونو ترمنځ وي او د اعشاري ټکي وروسته د عدد په پای کې وي، معنا لرونکي دي. د بېلګې په توګه 89.045 کې 5 او 9.500 کې 4 معنا لرونکي رقمونه دي.
+### Rules to round to the specified number of significant figures || معنی خیز ہندسوں کی مقررہ تعداد تک round کرنے کے قواعد || د ټاکلي شمېر معنا لرونکو رقمونو ته د ګردولو قواعد
+p When rounding to the specified number of significant digits, rounds down if the next digit is less than 5 and round up when the next digit is greater than or equal to 5. || معنی خیز ہندسوں کی مقررہ تعداد تک round کرتے وقت اگر اگلا ہندسہ 5 سے کم ہو تو نیچے کی طرف round کریں اور جب اگلا ہندسہ 5 سے بڑا یا اس کے برابر ہو تو اوپر کی طرف round کریں۔ || د معنا لرونکو رقمونو ټاکلي شمېر ته د ګردولو پر مهال، که راتلونکی رقم له 5 څخه کم وي ښکته یې ګرد کړئ او کله چې راتلونکی رقم له 5 څخه لوی یا ورسره برابر وي پورته یې ګرد کړئ.
+example 1 | Round 153,268 to four significant figures. || 153,268 کو چار معنی خیز ہندسوں تک round کریں۔ || 153,268 څلورو معنا لرونکو رقمونو ته ګرد کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Here we consider 1532. The digit next to 2 is 6 which is greater than 5. So, we will round up. Keep 1532 as it is and add 1 to the digit 2 and replace next digits by 0. || یہاں ہم 1532 کو لیتے ہیں۔ 2 کے بعد والا ہندسہ 6 ہے جو 5 سے بڑا ہے۔ لہٰذا ہم اوپر کی طرف round کریں گے۔ 1532 کو جوں کا توں رکھیں، ہندسہ 2 میں 1 جمع کریں اور اگلے ہندسوں کی جگہ 0 لکھیں۔ || دلته موږ 1532 په پام کې نیسو. له 2 وروسته رقم 6 دی چې له 5 څخه لوی دی. نو پورته به یې ګرد کړو. 1532 هماغسې وساتئ، رقم 2 ته 1 ور زیات کړئ او وروسته رقمونه په 0 بدل کړئ.
+p So, 153268 rounded to 4 significant figures is 153,300. || لہٰذا 153268 کو 4 معنی خیز ہندسوں تک round کرنے سے 153,300 حاصل ہوتا ہے۔ || نو 153268 څلورو معنا لرونکو رقمونو ته ګرد شوی 153,300 دی.
+endexample
+example 2 | Round 67.282 to three significant figures. || 67.282 کو تین معنی خیز ہندسوں تک round کریں۔ || 67.282 درېیو معنا لرونکو رقمونو ته ګرد کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Here we consider 67.2. The next digit to 2 is 8 which is greater than 5. So, we will round up and add 1 to the digit 2. So, 67.282 rounded to 3 significant figures is 67.3 || یہاں ہم 67.2 کو لیتے ہیں۔ 2 کے بعد والا ہندسہ 8 ہے جو 5 سے بڑا ہے۔ لہٰذا ہم اوپر کی طرف round کریں گے اور ہندسہ 2 میں 1 جمع کریں گے۔ لہٰذا 67.282 کو 3 معنی خیز ہندسوں تک round کرنے سے 67.3 حاصل ہوتا ہے۔ || دلته موږ 67.2 په پام کې نیسو. له 2 وروسته رقم 8 دی چې له 5 څخه لوی دی. نو پورته به یې ګرد کړو او رقم 2 ته به 1 ور زیات کړو. نو 67.282 درېیو معنا لرونکو رقمونو ته ګرد شوی 67.3 دی.
+endexample
+@sec 1.2.2 | Estimation || تخمینہ || اټکل
+## 1.2.2 Estimation || 1.2.2 تخمینہ || 1.2.2 اټکل
+example 1 | Find the value of the following. Then estimate to check if the answer is reasonable. || درج ذیل کی قیمت معلوم کریں۔ پھر تخمینہ لگا کر جانچیں کہ جواب معقول ہے یا نہیں۔ || د لاندې ارزښت معلوم کړئ. بیا اټکل وکړئ ترڅو وګورئ چې ځواب معقول دی که نه.
+p The capacity of an oil tank is 8259 litres and the capacity of another tank is 4820 litres. Estimate the total capacity of both oil tanks and then verify the answer. || تیل کے ایک ٹینک کی گنجائش 8259 لیٹر اور دوسرے ٹینک کی گنجائش 4820 لیٹر ہے۔ دونوں ٹینکوں کی کل گنجائش کا تخمینہ لگائیں اور پھر جواب کی تصدیق کریں۔ || د تېلو د یوه ټانک ګنجایش 8259 لیټره او د بل ټانک ګنجایش 4820 لیټره دی. د دواړو ټانکونو ټول ګنجایش اټکل کړئ او بیا ځواب تایید کړئ.
+p **Solution:** || **حل:** || **حل:**
+p Let's add these: $8259 + 4820 = 13{,}079$ || آئیے انہیں جمع کریں: $8259 + 4820 = 13{,}079$ || راځئ دا جمع کړو: $8259 + 4820 = 13{,}079$
+p Let's estimate to check if the answer is reasonable. || آئیے تخمینہ لگا کر جانچیں کہ جواب معقول ہے یا نہیں۔ || راځئ اټکل وکړو ترڅو وګورو چې ځواب معقول دی که نه.
+p Round off 8259 to the nearest thousand: $8259 \approx 8000$ || 8259 کو قریب ترین ہزار تک round off کریں: $8259 \approx 8000$ || 8259 تر ټولو نږدې زرګون ته ګرد کړئ: $8259 \approx 8000$
+p Round off 4820 to the nearest thousand: $4820 \approx 5000$ || 4820 کو قریب ترین ہزار تک round off کریں: $4820 \approx 5000$ || 4820 تر ټولو نږدې زرګون ته ګرد کړئ: $4820 \approx 5000$
+p Add: $8259 + 4820 \approx 8000 + 5000 = 13{,}000$ || جمع کریں: $8259 + 4820 \approx 8000 + 5000 = 13{,}000$ || جمع کړئ: $8259 + 4820 \approx 8000 + 5000 = 13{,}000$
+p The calculated answer 13,079 is close to the estimated answer is 13,000. || حساب سے حاصل شدہ جواب 13,079 تخمینی جواب 13,000 کے قریب ہے۔ || حساب شوی ځواب 13,079 اټکل شوي ځواب 13,000 ته نږدې دی.
+p So, our answer 13,079 is reasonable. || لہٰذا ہمارا جواب 13,079 معقول ہے۔ || نو زموږ ځواب 13,079 معقول دی.
+endexample

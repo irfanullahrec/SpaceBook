@@ -1,0 +1,41 @@
+@printed 227
+p **Solution:** || **حل:** || **حل:**
+p i. Frequency of 5 is 4 which is the greatest frequency. Hence, || i. 5 کا تعدد 4 ہے جو سب سے زیادہ تعدد ہے۔ لہٰذا، || i. د 5 تکرار 4 دی چې تر ټولو ډېر تکرار دی. نو،
+m Mode $= \hat{X} = 5$
+p ii. Frequency of the values 8 and 11 is 2, hence there are two modes. || ii. قیمتوں 8 اور 11 کا تعدد 2 ہے، لہٰذا دو عادے ہیں۔ || ii. د 8 او 11 ارزښتونو تکرار 2 دی، نو دوه ډېرتکراري دي.
+m Mode $= \hat{X} = 8, 11$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find mode of the following; 2, 5, 6, 7, 8, 9. || درج ذیل کا عادہ معلوم کریں؛ 2، 5، 6، 7، 8، 9۔ || د لاندې ډېرتکراری ومومئ؛ 2، 5، 6، 7، 8، 9.
+endbox
+exercise 11.4
+q 1 | Calculate the mean of the following data. || درج ذیل ڈیٹا کا اوسط معلوم کریں۔ || د لاندې معلوماتو اوسط معلوم کړئ.
+qsolve stat mean
+qp i | 46, 50, 39, 50, 38
+qp ii | 108, 115, 138, 190
+qp iii | 210, 237, 340
+q 2 | The monthly income of 10 employees of a factory is; Rs. 6000, Rs. 65230, Rs. 78600, Rs. 8000, Rs. 9350, Rs. 9680, Rs. 1030, Rs. 1236, Rs. 14340, Rs. 15000. Calculate the average of their monthly income. || ایک فیکٹری کے 10 ملازمین کی ماہانہ آمدنی یہ ہے؛ 6000، 65230، 78600، 8000، 9350، 9680، 1030، 1236، 14340، 15000 روپے۔ ان کی ماہانہ آمدنی کا اوسط معلوم کریں۔ || د یوې فابریکې د 10 کارکوونکو میاشتنی عاید دا دی؛ 6000، 65230، 78600، 8000، 9350، 9680، 1030، 1236، 14340، 15000 روپۍ. د میاشتني عاید اوسط یې معلوم کړئ.
+solution Rs. 20846.6
+suse stat 6000, 65230, 78600, 8000, 9350, 9680, 1030, 1236, 14340, 15000|mean
+endsolution
+q 3 | Find the median of the following sets of observations. || مشاہدات کے درج ذیل سیٹوں کا وسطانیہ معلوم کریں۔ || د مشاهدو د لاندې سېټونو منځنی ومومئ.
+qsolve stat median
+qp i | 15, 12, 13, 10, 8
+qp ii | 100, 106, 101, 108, 98, 93
+qp iii | 84, 72, 95, 90, 65, 68, 69, 70
+q 4 | Find out the mode for each of the following: || درج ذیل میں سے ہر ایک کا عادہ معلوم کریں: || د لاندې هر یو ډېرتکراری ومومئ:
+qsolve stat mode
+qp i | 7, 8, 8, 13, 15, 15, 16
+qp ii | 100, 120, 120, 120, 120, 150
+qp iii | 357, 402, 427, 500
+endexercise
+@sec 11.5 | Probability || امکان || احتمال
+# 11.5 Probability || 11.5 امکان || 11.5 احتمال
+p Many times in daily life we cannot be sure about the **outcome** (result) of an **event** (action or situation). We can only predict or guess about the result. In such situation we can talk about probability of certain outcomes (results). Let's discuss about some basic terms relevant to probability. It is the chance of an event taking place. || روزمرہ زندگی میں کئی بار ہم کسی **واقعے** (عمل یا صورتحال) کے **نتیجے** کے بارے میں یقین سے نہیں کہہ سکتے۔ ہم صرف نتیجے کی پیش گوئی یا اندازہ لگا سکتے ہیں۔ ایسی صورت میں ہم بعض نتائج کے امکان کی بات کر سکتے ہیں۔ آئیے امکان سے متعلق کچھ بنیادی اصطلاحات پر بات کریں۔ یہ کسی واقعے کے ہونے کا موقع ہے۔ || په ورځني ژوند کې ډېر ځله د یوې **پېښې** (عمل یا حالت) د **پایلې** په اړه ډاډه نه یو. یوازې د پایلې وړاندوینه یا اټکل کولی شو. په داسې حالت کې د ځینو پایلو د احتمال خبره کولی شو. راځئ د احتمال اړوند ځینې بنسټیزې اصطلاحګانې وڅېړو. دا د یوې پېښې د رامنځته کېدو چانس دی.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- Can you tell about what is the weather forecast for next four days of a week? || کیا آپ بتا سکتے ہیں کہ ہفتے کے اگلے چار دنوں کا موسم کیسا ہوگا؟ || ایا ویلی شئ چې د اونۍ د راتلونکو څلورو ورځو هوا به څنګه وي؟
+- What are the chances that Pakistan will win the toss and bat first? || پاکستان کے ٹاس جیتنے اور پہلے بیٹنگ کرنے کے کیا امکانات ہیں؟ || د پاکستان د ټاس ګټلو او لومړی د بیټینګ کولو چانس څومره دی؟
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Probability means how likely something is to happen. It is a measure of the likelihood or possibility of an event. || امکان کا مطلب ہے کہ کسی چیز کے ہونے کا کتنا امکان ہے۔ یہ کسی واقعے کے امکان کی پیمائش ہے۔ || احتمال یعنې یو شی څومره احتمال لري چې پېښ شي. دا د یوې پېښې د احتمال اندازه ده.
+endbox

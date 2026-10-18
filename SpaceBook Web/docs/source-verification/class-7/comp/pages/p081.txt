@@ -1,0 +1,44 @@
+@printed 76
+@status lesson
+## 4.1.2 Binary Number System || ۴.۱.۲ بائنری عددی نظام || ۴.۱.۲ دوهمیز عددي سیسټم
+p Just like an electric switch has two states, one to start and other to stop a fan. Similarly, in binary number system, only 2 digits are used, 0 and 1; rather than 10 distinct digits that form the decimal system. The decimal numbers from 0 to 10 are represented in binary form as: 0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, and 1010, respectively. For example, (101)₂ is a binary number. The importance of binary number system is that computers understand instructions in the form of binary numbers, only. || جس طرح بجلی کے سوئچ کی دو حالتیں ہوتی ہیں، ایک پنکھا چلانے کی اور دوسری روکنے کی۔ اسی طرح بائنری عددی نظام میں صرف دو ہندسے استعمال ہوتے ہیں، ۰ اور ۱؛ اعشاری نظام بنانے والے ۱۰ الگ ہندسوں کے بجائے۔ ۰ سے ۱۰ تک کے اعشاری اعداد بائنری شکل میں بالترتیب یوں ہیں: ۰، ۱، ۱۰، ۱۱، ۱۰۰، ۱۰۱، ۱۱۰، ۱۱۱، ۱۰۰۰، ۱۰۰۱ اور ۱۰۱۰۔ مثلاً (101)₂ ایک بائنری عدد ہے۔ بائنری عددی نظام کی اہمیت یہ ہے کہ کمپیوٹر ہدایات کو صرف بائنری اعداد کی شکل میں سمجھتے ہیں۔ || لکه څنګه چې بریښنايي سوېچ دوه حالتونه لري، یو د پنکې د چلولو او بل د درولو. همداسې په دوهمیز عددي سیسټم کې یوازې ۲ عددونه کارېږي، ۰ او ۱؛ د ۱۰ جلا عددونو پر ځای چې اعشاري سیسټم جوړوي. له ۰ تر ۱۰ اعشاري شمېرې په دوهمیزه بڼه په ترتیب سره دا دي: ۰، ۱، ۱۰، ۱۱، ۱۰۰، ۱۰۱، ۱۱۰، ۱۱۱، ۱۰۰۰، ۱۰۰۱ او ۱۰۱۰. د بېلګې په توګه (101)₂ یو دوهمیز عدد دی. د دوهمیز عددي سیسټم اهمیت دا دی چې کمپیوټرونه لارښوونې یوازې د دوهمیزو عددونو په بڼه پوهېږي.
+@sec 4.2 | 4.2 Number System Conversion || عددی نظام کی تبدیلی || د عددي سیسټم بدلون
+# 4.2 Number System Conversion || ۴.۲ عددی نظام کی تبدیلی || ۴.۲ د عددي سیسټم بدلون
+## 4.2.1 Conversion of Binary Number to Decimal Number || ۴.۲.۱ بائنری عدد کی اعشاری عدد میں تبدیلی || ۴.۲.۱ دوهمیز عدد اعشاري عدد ته بدلول
+p To convert a binary number into decimal, put the respective power of 2 on the binary digits from right to left side while starting from 0. || بائنری عدد کو اعشاری میں بدلنے کے لیے بائنری ہندسوں پر دائیں سے بائیں ۰ سے شروع کرتے ہوئے ۲ کی متعلقہ طاقت لگائیں۔ || د دوهمیز عدد اعشاري کولو لپاره په دوهمیز عددونو له ښي نه چپ ته له ۰ پیل کولو سره د ۲ اړوند ځواک ولګوئ.
+### Example 1: Find the decimal value of (1001)₂ || مثال ۱: (1001)₂ کی اعشاری قدر معلوم کریں || بېلګه ۱: د (1001)₂ اعشاري ارزښت ومومئ
+table Binary number to decimal
+th Binary number || بائنری عدد || دوهمیز عدد | 1 | 0 | 0 | 1
+tr power of 2 || ۲ کی طاقت || د ۲ ځواک | 2³ | 2² | 2¹ | 2⁰
+endtable
+eq (1001)₂ = 1×2³ + 0×2² + 0×2¹ + 1×2⁰ = (9)₁₀
+### Example 2: Find the decimal value of (111001)₂ || مثال ۲: (111001)₂ کی اعشاری قدر معلوم کریں || بېلګه ۲: د (111001)₂ اعشاري ارزښت ومومئ
+table Binary number to decimal
+th Binary number || بائنری عدد || دوهمیز عدد | 1 | 1 | 1 | 0 | 0 | 1
+tr power of 2 || ۲ کی طاقت || د ۲ ځواک | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰
+endtable
+eq (111001)₂ = 1×2⁵ + 1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 1×2⁰ = (57)₁₀
+## 4.2.2 Conversion of Decimal Number to Binary Number || ۴.۲.۲ اعشاری عدد کی بائنری عدد میں تبدیلی || ۴.۲.۲ اعشاري عدد دوهمیز عدد ته بدلول
+p To convert a decimal number into its corresponding binary number, first divide the number by 2, you will get an integer quotient and a remainder (even if it is 0). The integer quotient is repeatedly divided by 2 till the quotient is no further divisible by 2. Meanwhile all the remainder are noted down in sequence. When merged (from bottom up format as depicted by arrow), corresponding binary number is attained. || اعشاری عدد کو اس کے مطابق بائنری عدد میں بدلنے کے لیے پہلے عدد کو ۲ سے تقسیم کریں، آپ کو صحیح خارجِ قسمت اور باقی (چاہے ۰ ہو) ملے گا۔ صحیح خارجِ قسمت کو بار بار ۲ سے تقسیم کریں یہاں تک کہ خارجِ قسمت ۲ سے مزید تقسیم نہ ہو سکے۔ اس دوران تمام باقی ترتیب سے لکھتے جائیں۔ جب انھیں (تیر کی سمت میں نیچے سے اوپر کی شکل میں) ملایا جائے تو متعلقہ بائنری عدد حاصل ہو جاتا ہے۔ || د اعشاري عدد د مطابق دوهمیز عدد ته د بدلولو لپاره لومړی عدد پر ۲ ووېشئ، تاسو به صحیح خارج قسمت او پاتې (حتی که ۰ وي) ترلاسه کړئ. صحیح خارج قسمت بیا بیا پر ۲ ویشل کېږي تر هغه چې خارج قسمت نور پر ۲ نه ویشل کېږي. په دې ترڅ کې ټول پاتې شوي په ترتیب لیکل کېږي. کله چې یوځای شي (له ښکته پورته د غشي په اړخ)، اړوند دوهمیز عدد ترلاسه کېږي.
+### Example 3: (17)₁₀ = (10001)₂ || مثال ۳: (17)₁₀ = (10001)₂ || بېلګه ۳: (17)₁₀ = (10001)₂
+table Division by 2: 17
+th Divide by 2 || ۲ سے تقسیم || پر ۲ ویش | Quotient || خارجِ قسمت || خارج قسمت | Remainder || باقی || پاتې
+tr 2 | 17 |
+tr 2 | 8 | 1
+tr 2 | 4 | 0
+tr 2 | 2 | 0
+tr  | 1 | 0
+endtable
+p Read the remainders from bottom to top (arrow): 1 0 0 0 1 → (10001)₂. || باقی نیچے سے اوپر پڑھیں (تیر): ۱ ۰ ۰ ۰ ۱ ← (10001)₂۔ || پاتې له ښکته پورته ولولئ (غشی): ۱ ۰ ۰ ۰ ۱ ← (10001)₂.
+@issue The remainders column of the printed figure is aligned one row lower than the quotients; the last quotient 1 carries the remainder 1 read at the bottom (the book's figure shows the remainders 1, 0, 0, 0 against 8, 4, 2, 1). The printed conversion (17)₁₀ = (10001)₂ is correct.
+### Example 4: (57)₁₀ = (111001)₂ || مثال ۴: (57)₁₀ = (111001)₂ || بېلګه ۴: (57)₁₀ = (111001)₂
+table Division by 2: 57
+th Divide by 2 || ۲ سے تقسیم || پر ۲ ویش | Quotient || خارجِ قسمت || خارج قسمت | Remainder || باقی || پاتې
+tr 2 | 57 |
+tr 2 | 28 | 1
+tr 2 | 14 | 0
+tr 2 | 7 | 0
+tr 2 | 3 | 1
+tr  | 1 | 1
+endtable
+p Read the remainders from bottom to top (arrow): 1 1 1 0 0 1 → (111001)₂. || باقی نیچے سے اوپر پڑھیں (تیر): ۱ ۱ ۱ ۰ ۰ ۱ ← (111001)₂۔ || پاتې له ښکته پورته ولولئ (غشی): ۱ ۱ ۱ ۰ ۰ ۱ ← (111001)₂.

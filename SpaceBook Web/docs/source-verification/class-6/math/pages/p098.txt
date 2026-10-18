@@ -1,0 +1,32 @@
+@printed 96
+q 4. | A set of multiples of 2 greater than 10 but less than 100. || 10 سے بڑے مگر 100 سے کم 2 کے اضعاف کا سیٹ۔ || د 2 د هغو ضربونو سېټ چې له 10 لوی خو له 100 کم وي.
+p Let's denote this set by the capital letter M. || آئیے اس سیٹ کو بڑے حرف M سے ظاہر کریں۔ || راځئ دا سېټ په لوي توري M وښیو.
+m So, M $= \{12, 14, 16, 18, \ldots, 98\}$
+p Here the ellipsis (the three dots) between 18 and 98 show that the set keeps continuing in this pattern and the elements of this set are limited (it ends at 98). || یہاں 18 اور 98 کے درمیان ایلپسس (تین نقطے) ظاہر کرتا ہے کہ سیٹ اسی طرز پر جاری رہتا ہے اور اس سیٹ کے ارکان محدود ہیں (یہ 98 پر ختم ہوتا ہے)۔ || دلته د 18 او 98 ترمنځ ایلپسس (درې ټکي) ښيي چې سېټ په همدې بڼه دوام لري او د دې سېټ غړي محدود دي (په 98 پای ته رسېږي).
+endexample
+## Elements of a Set || سیٹ کے ارکان || د سېټ غړي
+p Every element of a set belongs to that set. || سیٹ کا ہر رکن اسی سیٹ سے تعلق رکھتا ہے۔ || د سېټ هر غړی هماغه سېټ ته تړاو لري.
+p The symbol "$\in$" is used to show that an element "**belongs to**" the set. For example, for the set A $= \{10, 15, 20, 35\}$. we can say that $10 \in A$. || علامت "$\in$" یہ ظاہر کرنے کے لیے استعمال ہوتی ہے کہ کوئی رکن سیٹ سے "**تعلق رکھتا ہے**"۔ مثلاً سیٹ A $= \{10, 15, 20, 35\}$ کے لیے ہم کہہ سکتے ہیں کہ $10 \in A$۔ || د "$\in$" نښه د دې ښودلو لپاره کارېږي چې یو غړی سېټ ته "**تړاو لري**". د بېلګې په توګه د A $= \{10, 15, 20, 35\}$ سېټ لپاره ویلی شو چې $10 \in A$.
+p We read it as 10 belongs to set A or 10 is an element/member of set A. || ہم اسے یوں پڑھتے ہیں: 10 سیٹ A سے تعلق رکھتا ہے یا 10 سیٹ A کا رکن ہے۔ || موږ یې داسې لولو: 10 د A سېټ ته تړاو لري یا 10 د A سېټ غړی دی.
+m Similarly we can write that: $15 \in A,\ 20 \in A,\ 35 \in A$.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p Order of elements in a set doesn't matter. || سیٹ میں ارکان کی ترتیب اہم نہیں۔ || په سېټ کې د غړو ترتیب مهم نه دی.
+endbox
+p Also if an element doesn't belong to a set, we use the symbol "$\notin$" to denote it. || نیز اگر کوئی رکن سیٹ سے تعلق نہ رکھے تو اسے ظاہر کرنے کے لیے ہم علامت "$\notin$" استعمال کرتے ہیں۔ || همدارنګه که یو غړی سېټ ته تړاو ونه لري، د ښودلو لپاره یې "$\notin$" نښه کاروو.
+p For example, in the above set A, $25 \notin A$. || مثلاً اوپر والے سیٹ A میں $25 \notin A$۔ || د بېلګې په توګه په پورتني A سېټ کې $25 \notin A$.
+p We read it as: "25 does not belong to set A" or "25 is not a member/element of set A." || ہم اسے یوں پڑھتے ہیں: "25 سیٹ A سے تعلق نہیں رکھتا" یا "25 سیٹ A کا رکن نہیں ہے۔" || موږ یې داسې لولو: "25 د A سېټ ته تړاو نه لري" یا "25 د A سېټ غړی نه دی."
+p Consider the set E. || سیٹ E پر غور کریں۔ || E سېټ ته پام وکړئ.
+p E $= \{$set of stationery items$\}$ In this set, we can write that pencil $\in$ E, but apple $\notin$ E. || E $= \{$اسٹیشنری کی اشیاء کا سیٹ$\}$ اس سیٹ میں ہم لکھ سکتے ہیں کہ پنسل $\in$ E، مگر سیب $\notin$ E۔ || E $= \{$د قرطاسیې توکو سېټ$\}$ په دې سېټ کې لیکلی شو چې پنسل $\in$ E، خو مڼه $\notin$ E.
+p The elements of a set must be distinct. Distinct elements mean the elements which are unique in themselves when compared to the other objects of the set. In simple words, we can say that the objects are said to be distinct if they do not appear more than once in a set. || سیٹ کے ارکان ممتاز ہونے چاہئیں۔ ممتاز ارکان سے مراد وہ ارکان ہیں جو سیٹ کی دوسری اشیاء کے مقابلے میں منفرد ہوں۔ سادہ الفاظ میں اشیاء اس وقت ممتاز کہلاتی ہیں جب وہ سیٹ میں ایک سے زیادہ بار نہ آئیں۔ || د سېټ غړي باید جلا وي. جلا غړي هغه دي چې د سېټ د نورو شیانو په پرتله یوازیني وي. په ساده الفاظو، شیان هغه وخت جلا بلل کېږي چې په سېټ کې له یو ځل ډېر نه راشي.
+example 3 | Let's consider a set of alphabets in the word "student" denoted by the letter R. || آئیے لفظ "student" کے حروف کا سیٹ لیں جسے حرف R سے ظاہر کیا گیا ہے۔ || راځئ د "student" کلمې د تورو سېټ په پام کې ونیسو چې په R توري ښودل شوی.
+m R $= \{s, t, u, d, e, n, t\}$
+p Here letter "t" appeared twice but we will write it one time as below: || یہاں حرف "t" دو بار آیا ہے مگر ہم اسے ایک بار لکھیں گے جیسا کہ نیچے: || دلته "t" توری دوه ځله راغلی خو موږ به یې یو ځل ولیکو لکه لاندې:
+m R $= \{s, t, u, d, e, n\}$
+p If we write it twice then the elements of this set will not be distinct. || اگر ہم اسے دو بار لکھیں تو اس سیٹ کے ارکان ممتاز نہیں رہیں گے۔ || که یې دوه ځله ولیکو، د دې سېټ غړي به جلا نه وي.
+endexample
+## Cardinality of a Set || سیٹ کی عددیت || د سېټ کارډینالیټي
+p The cardinality of a set shows the number of the elements of the set. || سیٹ کی عددیت سیٹ کے ارکان کی تعداد ظاہر کرتی ہے۔ || د سېټ کارډینالیټي د سېټ د غړو شمېر ښيي.
+p For example, for the set B $= \{3, 6, 9, 12\}$, the **cardinality** of set B is 4 as it has 4 elements. Symbolically we can write it as: $n(B) = 4$. We read it as the number of elements of set B is 4. || مثلاً سیٹ B $= \{3, 6, 9, 12\}$ کے لیے سیٹ B کی **عددیت** 4 ہے کیونکہ اس کے 4 ارکان ہیں۔ علامتی طور پر ہم اسے یوں لکھ سکتے ہیں: $n(B) = 4$۔ ہم اسے پڑھتے ہیں: سیٹ B کے ارکان کی تعداد 4 ہے۔ || د بېلګې په توګه د B $= \{3, 6, 9, 12\}$ سېټ لپاره د B سېټ **کارډینالیټي** 4 ده ځکه 4 غړي لري. په نښه کې یې داسې لیکلی شو: $n(B) = 4$. داسې یې لولو: د B سېټ د غړو شمېر 4 دی.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Write 3 different sets on the board. Divide the board into 2 sections. Write 'belongs to' at one side and 'does not belong to' at the other side. Now call the students one by one and ask them to point out if one number belongs to other sets or not using symbols. || بورڈ پر 3 مختلف سیٹ لکھیں۔ بورڈ کو 2 حصوں میں تقسیم کریں۔ ایک طرف 'تعلق رکھتا ہے' اور دوسری طرف 'تعلق نہیں رکھتا' لکھیں۔ اب طلبہ کو ایک ایک کر کے بلائیں اور علامتوں کی مدد سے بتانے کو کہیں کہ کوئی عدد دوسرے سیٹ سے تعلق رکھتا ہے یا نہیں۔ || په تخته 3 بېل سېټونه ولیکئ. تخته په 2 برخو ووېشئ. یوه خوا 'تړاو لري' او بله خوا 'تړاو نه لري' ولیکئ. اوس زده کوونکي یو په یو راوبولئ او ترې وغواړئ چې د نښو په مرسته وښيي چې یو عدد بل سېټ ته تړاو لري که نه.
+endbox

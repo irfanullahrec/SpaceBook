@@ -1,0 +1,37 @@
+@printed 123
+p **Identity II:** $(a - b)^2 = a^2 - 2ab + b^2$ || **مماثلت II:** $(a - b)^2 = a^2 - 2ab + b^2$ || **دوهم مطابقت:** $(a - b)^2 = a^2 - 2ab + b^2$
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+eq \begin{aligned} \text{L.H.S.} &= (a - b)^2 \\ &= (a - b)(a - b) \\ &= a^2 - ab - ba + b^2 \\ &= a^2 - ab - ab + b^2 \\ &= a^2 - 2ab + b^2 \\ &= \text{R.H.S} \end{aligned}
+p Thus LHS = RHS. Hence proved $(a - b)^2 = a^2 - 2ab + b^2$ || اس طرح بایاں طرف = دایاں طرف۔ لہٰذا ثابت ہوا $(a - b)^2 = a^2 - 2ab + b^2$ || په دې توګه کیڼ اړخ = ښي اړخ. نو ثابته شوه $(a - b)^2 = a^2 - 2ab + b^2$
+example 1 | Find the square of $(3a - 4b)$. || $(3a - 4b)$ کا مربع معلوم کریں۔ || د $(3a - 4b)$ مربع معلومه کړئ.
+p **Solution:** By using the identity, $(a - b)^2 = a^2 - 2ab + b^2$ || **حل:** مماثلت $(a - b)^2 = a^2 - 2ab + b^2$ کی مدد سے || **حل:** د مطابقت $(a - b)^2 = a^2 - 2ab + b^2$ په مرسته
+eq \begin{aligned} (3a - 4b)^2 &= (3a)^2 - 2(3a)(4b) + (4b)^2 \\ &= 9a^2 - 24ab + 16b^2 \end{aligned}
+endexample
+p **Identity III:** $a^2 - b^2 = (a - b)(a + b)$ || **مماثلت III:** $a^2 - b^2 = (a - b)(a + b)$ || **درېیم مطابقت:** $a^2 - b^2 = (a - b)(a + b)$
+p **Algebraic Proof:** || **الجبری ثبوت:** || **الجبري ثبوت:**
+eq \begin{aligned} \text{R.H.S.} &= (a - b)(a + b) \\ &= a(a + b) - b(a + b) \\ &= a^2 + ab - ba - b^2 \\ &= a^2 + ab - ab - b^2 \\ &= a^2 - b^2 \\ &= \text{LHS} \end{aligned}
+p Thus, L.H.S. = R.H.S. Hence proved $(a - b)(a + b) = a^2 - b^2$ || اس طرح بایاں طرف = دایاں طرف۔ لہٰذا ثابت ہوا $(a - b)(a + b) = a^2 - b^2$ || په دې توګه کیڼ اړخ = ښي اړخ. نو ثابته شوه $(a - b)(a + b) = a^2 - b^2$
+example 1 | Find the product of $(4x - 2y)$ and $(4x + 2y)$ using the algebraic identity. || الجبری مماثلت کی مدد سے $(4x - 2y)$ اور $(4x + 2y)$ کا حاصلِ ضرب معلوم کریں۔ || د الجبري مطابقت په مرسته د $(4x - 2y)$ او $(4x + 2y)$ حاصل ضرب معلوم کړئ.
+p **Solution:** By using the identity, $(a + b)(a - b) = a^2 - b^2$ || **حل:** مماثلت $(a + b)(a - b) = a^2 - b^2$ کی مدد سے || **حل:** د مطابقت $(a + b)(a - b) = a^2 - b^2$ په مرسته
+eq \begin{aligned} (4x - 2y)(4x + 2y) &= (4x)^2 - (2y)^2 \\ &= 16x^2 - 4y^2 \end{aligned}
+endexample
+exercise 7.7
+q 1 | Using the identity, find the square of the following binomials. || مماثلت کی مدد سے درج ذیل دو رکنیوں کا مربع معلوم کریں۔ || د مطابقت په مرسته د لاندې دوه حدي افادو مربع معلومه کړئ.
+qp a | $a + b$
+qp b | $5a + 4b$
+qp c | $x - y$
+qp d | $7a - b$
+qp e | $4c + 3d$
+qp f | $2m - n$
+qp g | $6x - 2y$
+qp h | $5x + 7y$
+q 2 | Find the product of the following binomials by using the identity. || مماثلت کی مدد سے درج ذیل دو رکنیوں کا حاصلِ ضرب معلوم کریں۔ || د مطابقت په مرسته د لاندې دوه حدي افادو حاصل ضرب معلوم کړئ.
+qp a | $(2x + y)(2x - y)$
+qp b | $(4a - 5)(4a + 5)$
+qp c | $(6a + 7b)(6a - 7b)$
+qp d | $\left(m + \frac{1}{2}n\right)\left(m - \frac{1}{2}n\right)$
+qp e | $\left(\frac{7}{2}c - 2d\right)\left(\frac{7}{2}c + 2d\right)$
+qp f | $(11a - 11b)(11a + 11b)$
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Explain to the students how to derive algebraic identities by solving some examples on the board. || بورڈ پر کچھ مثالیں حل کر کے طلبہ کو سمجھائیں کہ الجبری مماثلتیں کیسے اخذ کی جاتی ہیں۔ || پر تخته د څو بېلګو په حلولو زده کوونکو ته تشریح کړئ چې الجبري مطابقتونه څنګه لاسته راوړل کېږي.
+endbox

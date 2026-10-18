@@ -1,0 +1,49 @@
+@printed 32
+m So, $155 > 52 > 12 > 10$.
+p Arranging the integers from the greatest to the smallest i.e. in descending order, we get: || صحیح اعداد کو سب سے بڑے سے سب سے چھوٹے تک یعنی نزولی ترتیب میں لکھنے سے ہمیں ملتا ہے: || کله چې تام عددونه له تر ټولو لوي تر ټولو کوچني پورې یعنې په نزولي ترتیب ولیکو، لاسته راځي:
+m $155,\ 52,\ 12,\ 10,\ -12,\ -88,\ -100.$
+endexample
+exercise 2.2
+q 1 | Represent the following sets of integers on a number line. || درج ذیل صحیح اعداد کے سیٹوں کو عددی لائن پر ظاہر کریں۔ || د تامو عددونو لاندې سېټونه په عددي کرښه وښیئ.
+qsolve represent
+qp a | –4 to +4
+qp b | –7 to + 9
+qp c | –8 to 0
+qp d | –5 to +13
+qp e | –4 to +20
+qp f | –2 to +7
+qp g | –4 to + 5
+qp h | –6 to 0
+qp i | –3 to +20
+qp j | –9 to +23
+q 2 | Which is greater? Give the reason. || کون سا بڑا ہے؟ وجہ بتائیں۔ || کوم یو لوی دی؟ دلیل یې ووایاست.
+qsolve greater
+qp a | –666 or –6666
+qp b | –2340 or –234
+qp c | –10000 or –1000
+qp d | –55 or –555
+q 3 | Arrange the following integers in ascending order. || درج ذیل صحیح اعداد کو صعودی ترتیب میں لکھیں۔ || لاندې تام عددونه په صعودي ترتیب ولیکئ.
+qsolve order asc
+qp a | –5, +4, –13, –1, 0, +3, +7
+qp b | –5, –3, +3, +2, +11, –12
+qp c | –33, –12, 0, +11, +9, +5, –16
+qp d | –12, 0, +17, +11, +6, –8, –5
+qp e | –3, 0, +1, +8, +7, –5, –4, +9
+qp f | –15, –11, 0, +23, +24, +27, –14
+q 4 | Arrange the following integers in descending order. || درج ذیل صحیح اعداد کو نزولی ترتیب میں لکھیں۔ || لاندې تام عددونه په نزولي ترتیب ولیکئ.
+qsolve order desc
+qp a | –5, –1, 0, 7, 9, –3, –2
+qp b | –11, –13, –8, +9, +12, +23
+qp c | +24, +45, –17, 0, +10, –12, –20
+qp d | –9, –7, 0, +16, +8, –8
+qp e | –8, –1, +4, +1, +10, –10, –9
+qp f | –34, –78, 0, +56, +78, +90, –45, –11
+endexercise
+@sec 2.3 | Absolute or Numerical Value of an Integer || صحیح عدد کی مطلق یا عددی قیمت || د تام عدد مطلق یا عددي ارزښت
+# 2.3 Absolute or Numerical Value of an Integer || 2.3 صحیح عدد کی مطلق یا عددی قیمت || 2.3 د تام عدد مطلق یا عددي ارزښت
+p Let's observe how far –7 is from 0 and how far +7 is from 0 using the number line. Look at the number line below. || آئیے عددی لائن کی مدد سے دیکھیں کہ –7، صفر سے کتنا دور ہے اور +7، صفر سے کتنا دور ہے۔ نیچے دی گئی عددی لائن دیکھیں۔ || راځئ د عددي کرښې په مرسته وګورو چې –7 له 0 څومره لرې دی او +7 له 0 څومره لرې دی. لاندې عددي کرښې ته وګورئ.
+nline -10..10 | circ=-7,0,7 | top=0:-7:7;0:7:7 || –7 and +7 are both 7 steps from 0 || –7 اور +7 دونوں 0 سے 7 قدم دور ہیں || –7 او +7 دواړه له 0 څخه 7 ګامه لرې دي
+p Here, –7 is 7 steps away from 0 to its left. +7 is also 7 steps away from 0 but to its right. So the distance of –7 and +7 from zero is the same but in the opposite directions. || یہاں –7، صفر سے اس کے بائیں طرف 7 قدم دور ہے۔ +7 بھی صفر سے 7 قدم دور ہے لیکن دائیں طرف۔ اس لیے –7 اور +7 کا صفر سے فاصلہ ایک جیسا ہے لیکن مخالف سمتوں میں۔ || دلته –7 له 0 څخه کیڼ لوري ته 7 ګامه لرې دی. +7 هم له 0 څخه 7 ګامه لرې دی خو ښي لوري ته. نو د –7 او +7 واټن له صفر څخه یو شان دی خو په مخالفو لورو کې.
+p In Mathematics, this distance of –7 and +7 from 0 on the number line is known as its **absolute value**. Absolute value of an integer is always positive. || ریاضی میں عددی لائن پر –7 اور +7 کا صفر سے یہ فاصلہ ان کی **مطلق قیمت** کہلاتا ہے۔ کسی صحیح عدد کی مطلق قیمت ہمیشہ مثبت ہوتی ہے۔ || په ریاضي کې په عددي کرښه د –7 او +7 دا واټن له 0 څخه د هغوی **مطلق ارزښت** بلل کېږي. د تام عدد مطلق ارزښت تل مثبت وي.
+p There are two features of integers. || صحیح اعداد کی دو خصوصیات ہیں۔ || تام عددونه دوه ځانګړنې لري.
+@issue Printed 2.3 diagram shows a boxed 7 above a double-headed arrow from −7 to 7; coded as two labelled arrows from 0 (same meaning).

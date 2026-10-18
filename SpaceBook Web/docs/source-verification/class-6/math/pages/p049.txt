@@ -1,0 +1,77 @@
+@printed 47
+@deco Two small car pictures beside Question 6 (decorative).
+exercise 3.2
+q 1 | Represent the difference of the integers on the number line. || صحیح اعداد کے فرق کو عددی لائن پر ظاہر کریں۔ || د تامو عددونو توپیر په عددي کرښه وښیئ.
+qsolve iexpr nl
+qp a | (+3) – (+8)
+qp b | (–4) – (–6)
+qp c | (+2) – (+3)
+qp d | (–9) – (+6)
+qp e | (–7) – (–5)
+qp f | (–1) – (–8)
+qp g | (+7) – (–3)
+qp h | (–9) – (–3)
+qp i | (–3) – (–3)
+q 2 | Solve the following without using a number line. || عددی لائن استعمال کیے بغیر درج ذیل حل کریں۔ || پرته له عددي کرښې لاندې حل کړئ.
+qsolve iexpr
+qp a | (+4) – (+18)
+qp b | (–8) – (–3)
+qp c | (+5) – (+7)
+qp d | (–11) – (–5)
+qp e | (–3) – (–2)
+qp f | (–5) – (–4)
+qp g | (–6) – (–4)
+qp h | (–7) – (–3)
+qp i | (–4) – (+2)
+qp j | (+7) – (–8)
+qp k | (–9) – (+2)
+qp l | (+6) – (+8)
+q 3 | Write the missing integers in the given. || دی گئی جگہوں میں نامعلوم صحیح اعداد لکھیں۔ || په ورکړل شوو ځایونو کې ورک تام عددونه ولیکئ.
+qsolve missing
+qp a | (+3) – (+8) = ____
+qp b | (–3) – ____ = (–2)
+qp c | ____ – (+5) = (–9)
+qp d | (–8) – ____ = (–3)
+qp e | ____ – (–8) = +7
+qp f | (–9) – (–5) – (–2) = ____
+q 4 | The sum of two integers is +54. One of them is –11. Find the other. || دو صحیح اعداد کا مجموعہ +54 ہے۔ ان میں سے ایک –11 ہے۔ دوسرا معلوم کریں۔ || د دوو تامو عددونو مجموعه +54 ده. له هغوی څخه یو –11 دی. بل یې معلوم کړئ.
+solution +65
+ss We know: first + second = +54, and one integer is −11. || ہمیں معلوم ہے: پہلا + دوسرا = +54، اور ایک صحیح عدد −11 ہے۔ || موږ پوهېږو: لومړی + دوهم = +54، او یو تام عدد −11 دی.
+sm (-11) + b = +54
+ss To find the other integer, subtract −11 from +54 (subtraction undoes addition). || دوسرا صحیح عدد معلوم کرنے کے لیے +54 میں سے −11 تفریق کریں (تفریق جمع کو الٹ دیتی ہے)۔ || بل تام عدد د موندلو لپاره له +54 څخه −11 تفریق کړئ (تفریق جمع لغوه کوي).
+suse iexpr (+54) – (–11)
+ss Check: (−11) + (+65) = +54 ✓ || جانچ: (−11) + (+65) = +54 ✓ || ازموینه: (−11) + (+65) = +54 ✓
+endsolution
+q 5 | A place is 213 m above sea level and another is 114 m below sea level. What is the distance between the two places? || ایک جگہ سطحِ سمندر سے 213 m اوپر اور دوسری 114 m نیچے ہے۔ دونوں جگہوں کے درمیان فاصلہ کیا ہے؟ || یو ځای د سمندر له سطحې 213 m پورته او بل 114 m ښکته دی. د دواړو ځایونو ترمنځ واټن څومره دی؟
+solution 327 m
+ss Take sea level as 0: the first place is +213 and the other is −114. || سطحِ سمندر کو 0 مانیں: پہلی جگہ +213 اور دوسری −114 ہے۔ || د سمندر سطحه 0 وګڼئ: لومړی ځای +213 او بل −114 دی.
+ss Distance = higher − lower. || فاصلہ = اوپر والی − نیچے والی۔ || واټن = لوړ − ښکته.
+suse iexpr (+213) – (–114)
+ss So the distance between the two places is 327 m. || لہٰذا دونوں جگہوں کے درمیان فاصلہ 327 m ہے۔ || نو د دواړو ځایونو ترمنځ واټن 327 m دی.
+endsolution
+q 6 | Two cars started from the same point. First car went towards the east and covered 44 km in an hour. The second car went towards the west and covered 62 km in 1 hour. Find the distance between the two cars after an hour. || دو گاڑیاں ایک ہی نقطے سے روانہ ہوئیں۔ پہلی گاڑی مشرق کی طرف گئی اور ایک گھنٹے میں 44 km طے کیے۔ دوسری گاڑی مغرب کی طرف گئی اور 1 گھنٹے میں 62 km طے کیے۔ ایک گھنٹے بعد دونوں گاڑیوں کے درمیان فاصلہ معلوم کریں۔ || دوه موټرې له یوې نقطې روانې شوې. لومړی موټر ختیځ لوري ته لاړ او په یو ساعت کې یې 44 km واټن وهه. دوهم موټر لویدیځ لوري ته لاړ او په 1 ساعت کې یې 62 km واټن وهه. د یو ساعت وروسته د دواړو موټرو ترمنځ واټن معلوم کړئ.
+solution 106 km
+ss They go in opposite directions. Take east as positive: the first car is at +44 and the second car is at −62. || وہ مخالف سمتوں میں جاتی ہیں۔ مشرق کو مثبت مانیں: پہلی گاڑی +44 پر اور دوسری −62 پر ہے۔ || دا په مخالفو لورو ځي. ختیځ مثبت وګڼئ: لومړی موټر په +44 او دوهم په −62 کې دی.
+suse iexpr (+44) – (–62)
+ss So the two cars are 106 km apart. || لہٰذا دونوں گاڑیاں 106 km کے فاصلے پر ہیں۔ || نو دواړه موټرې 106 km لرې دي.
+endsolution
+q 7 | Sifwa borrowed Rs 56 from her brother. She returned Rs 45. How much does she owe? || صفوا نے اپنے بھائی سے 56 روپے ادھار لیے۔ اس نے 45 روپے واپس کیے۔ اس پر کتنے روپے باقی ہیں؟ || صفوا له خپل ورور څخه 56 روپۍ پور واخیستې. هغې 45 روپۍ بېرته ورکړې. هغه څومره پور لري؟
+solution Rs 11
+ss Borrowing is money owed, so it is −56. Returning Rs 45 adds +45 back. || ادھار لینا واجب الادا رقم ہے، اس لیے −56۔ 45 روپے واپس کرنے سے +45 جمع ہوتا ہے۔ || پور اخیستل د ورکولو وړ پیسې دي، نو −56. 45 روپۍ بېرته ورکول +45 جمع کوي.
+suse iexpr (–56) + (+45)|nl
+ss The result is −11, which means she still owes Rs 11. || نتیجہ −11 ہے، یعنی اس پر ابھی 11 روپے باقی ہیں۔ || پایله −11 ده، یعنې هغه لا هم 11 روپۍ پور لري.
+endsolution
+endexercise
+@sec 3.3 | Laws of Integers under Addition || جمع کے تحت صحیح اعداد کے قوانین || د جمع لاندې د تامو عددونو قوانین
+# 3.3 Laws of Integers under Addition || 3.3 جمع کے تحت صحیح اعداد کے قوانین || 3.3 د جمع لاندې د تامو عددونو قوانین
+p There are the three laws of integers with respect to addition. || جمع کے لحاظ سے صحیح اعداد کے تین قوانین ہیں۔ || د جمع په اړه د تامو عددونو درې قوانین شته.
+qp a | Closure Law || قانونِ بندش || د تړلتیا قانون
+qp b | Commutative Law || قانونِ مبادلہ || د تبادلې قانون
+qp c | Associative Law || قانونِ تلازم || د اتحاد قانون
+qp d | Additive Identity || جمعی ذاتی عدد || جمعي پېژند
+qp e | Additive Inverse || جمعی معکوس || جمعي معکوس
+p Let's discuss these in detail. || آئیے ان پر تفصیل سے بات کریں۔ || راځئ دا په تفصیل سره وڅېړو.
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Write two or three numbers on the board and ask the students to verify the Commutative and Associate Law using these integers. || بورڈ پر دو یا تین اعداد لکھیں اور طلبہ سے کہیں کہ ان صحیح اعداد کی مدد سے قانونِ مبادلہ اور قانونِ تلازم کی تصدیق کریں۔ || په تخته دوه یا درې عددونه ولیکئ او له زده کوونکو وغواړئ چې د دې تامو عددونو په مرسته د تبادلې او اتحاد قوانین وڅېړي.
+endbox
+@issue Page 47 prints "Associate Law" in the Teaching Point (for Associative Law); kept as printed.

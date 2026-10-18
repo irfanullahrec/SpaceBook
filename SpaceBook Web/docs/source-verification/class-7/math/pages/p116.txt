@@ -1,0 +1,22 @@
+@printed 112
+example 3 | $5x^{\frac{1}{2}} + 1$ || $5x^{\frac{1}{2}} + 1$ || $5x^{\frac{1}{2}} + 1$
+p Here, x is a variable that has a fractional exponent. So, the expression is not a polynomial. || یہاں x ایک متغیر ہے جس کی قوت نما کسری ہے۔ لہٰذا یہ عبارت کثیر رکنی نہیں۔ || دلته x یو متحول دی چې کسري توان لري. نو دا افاده څو حدي نه ده.
+endexample
+@issue Example 3's fractional exponent is printed too small to read in both scans; it is shown as 1/2.
+example 4 | $(8y^2 + 4y) \div 2y$. || $(8y^2 + 4y) \div 2y$۔ || $(8y^2 + 4y) \div 2y$.
+p We can observe that the above polynomial can be simplified as below: || ہم دیکھ سکتے ہیں کہ اوپر والی کثیر رکنی کو یوں سادہ کیا جا سکتا ہے: || لیدلی شو چې پورته څو حدي افاده داسې ساده کېدای شي:
+eq \frac{8y^2 + 4y}{2y} = \frac{2y(4y + 2)}{2y} = 4y + 2
+p Here, y is the variable whose exponents are whole numbers, i.e. 1 and 0. So, the expression is a polynomial. || یہاں y وہ متغیر ہے جس کی قوت نما مکمل اعداد یعنی 1 اور 0 ہیں۔ لہٰذا یہ عبارت کثیر رکنی ہے۔ || دلته y هغه متحول دی چې توانونه یې بشپړ عددونه یعنې 1 او 0 دي. نو دا افاده څو حدي ده.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Which of these are polynomials? || ان میں سے کون سی کثیر رکنی ہیں؟ || له دې څخه کومې څو حدي دي؟
+qp a | $3xy - 2$
+qp b | $-6y^2 - \left(\frac{7}{9}\right)x$
+qp c | $\frac{2}{(x + 2)}$
+qp d | $512v^5 + 99w^5$
+endbox
+## 7.3.1 Terms of a Polynomial || 7.3.1 کثیر رکنی کے ارکان || 7.3.1 د څو حدي افادې حدونه
+p Consider the polynomial $6x^3 + 5x^2 - 4x + 7$. It has 4 terms; $6x^3, 5x^2, 4x$ and 7. Here x is a variable. || کثیر رکنی $6x^3 + 5x^2 - 4x + 7$ پر غور کریں۔ اس کے 4 ارکان ہیں؛ $6x^3, 5x^2, 4x$ اور 7۔ یہاں x متغیر ہے۔ || څو حدي افاده $6x^3 + 5x^2 - 4x + 7$ وګورئ. 4 حدونه لري؛ $6x^3, 5x^2, 4x$ او 7. دلته x متحول دی.
+p 3, 2, and 1 are the exponents. 6 is the coefficient of the first term, 5 is the coefficient of the second term, and −4 is the coefficient of the third term. The number 7 is the constant and not a coefficient because it is not being multiplied by the variable x. || 3، 2 اور 1 قوت نما ہیں۔ 6 پہلے رکن کا عددی سر، 5 دوسرے رکن کا عددی سر اور −4 تیسرے رکن کا عددی سر ہے۔ عدد 7 مستقل ہے، عددی سر نہیں کیونکہ یہ متغیر x سے ضرب نہیں کھا رہا۔ || 3، 2 او 1 توانونه دي. 6 د لومړي حد ضریب، 5 د دوهم حد ضریب او −4 د درېیم حد ضریب دی. عدد 7 ثابت دی نه ضریب ځکه چې په متحول x کې نه ضربېږي.
+## 7.3.2 Degree of a Polynomial || 7.3.2 کثیر رکنی کا درجہ || 7.3.2 د څو حدي افادې درجه
+p As we know a polynomial consists of one or more than one term whose variables have non-negative exponents. The power or exponent of each variable in a term is called the degree of that term. In the above polynomial $6x^3 + 5x^2 - 4x + 7$, the degree of the first term is 3, the degree of the second term is 2, the degree of the third term is 1 and degree of the fourth term is 0 because the fourth term has no variable. The degree of the polynomial is 3 because 3 is the greatest exponent/power of the variable x. || جیسا کہ ہم جانتے ہیں کثیر رکنی ایک یا ایک سے زیادہ ارکان پر مشتمل ہوتی ہے جن کے متغیرات کی قوت نما غیر منفی ہوتی ہے۔ کسی رکن میں ہر متغیر کی طاقت یا قوت نما اس رکن کا درجہ کہلاتی ہے۔ اوپر والی کثیر رکنی $6x^3 + 5x^2 - 4x + 7$ میں پہلے رکن کا درجہ 3، دوسرے کا 2، تیسرے کا 1 اور چوتھے رکن کا درجہ 0 ہے کیونکہ چوتھے رکن میں کوئی متغیر نہیں۔ کثیر رکنی کا درجہ 3 ہے کیونکہ 3 متغیر x کی سب سے بڑی قوت نما/طاقت ہے۔ || لکه څنګه چې پوهېږو څو حدي افاده له یوه یا ډېرو حدونو جوړه وي چې د متحولونو توانونه یې غیر منفي وي. په یوه حد کې د هر متحول طاقت یا توان د هغه حد درجه بلل کېږي. په پورته $6x^3 + 5x^2 - 4x + 7$ افاده کې د لومړي حد درجه 3، د دوهم 2، د درېیم 1 او د څلورم حد درجه 0 ده ځکه چې څلورم حد متحول نه لري. د څو حدي افادې درجه 3 ده ځکه چې 3 د متحول x تر ټولو لوی توان/طاقت دی.

@@ -1,0 +1,30 @@
+@printed 177
+p To find the volume of the prism use the formula: || منشور کا حجم معلوم کرنے کے لیے فارمولا استعمال کریں: || د منشور د حجم د موندلو لپاره فورمول وکاروئ:
+eq \text{Volume of square prism} = l \times l \times l = 10\,\text{cm} \times 10\,\text{cm} \times 10\,\text{cm} = 1000\,\text{cm}^3
+p Now we convert the given volume of square into m³ by dividing it by 1000000. Volume of Prism in m³ = 1000/1000000 = 0.001. Now we convert the given volume of square into mm³ by multiplying it by 1000. Volume of Prism in m³ = 1000×1000 = 1,000,000 mm³ || اب ہم دیے گئے مربعی حجم کو 1000000 سے تقسیم کر کے m³ میں تبدیل کرتے ہیں۔ m³ میں منشور کا حجم = 1000/1000000 = 0.001۔ اب ہم دیے گئے حجم کو 1000 سے ضرب دے کر mm³ میں تبدیل کرتے ہیں۔ mm³ میں منشور کا حجم = 1000×1000 = 1,000,000 mm³ || اوس ورکړل شوی حجم پر 1000000 په وېشلو m³ ته اړوو. په m³ کې د منشور حجم = 1000/1000000 = 0.001. اوس ورکړل شوی حجم په 1000 کې په ضربولو mm³ ته اړوو. په mm³ کې د منشور حجم = 1000×1000 = 1,000,000 mm³
+endexample
+@issue The last line prints "Volume of Prism in m³ = 1000×1000 = 1,000,000 mm³" (the label should say mm³); the value is correct.
+### Volume of triangular prism || مثلثی منشور کا حجم || د مثلثي منشور حجم
+p As the base of the triangular prim is in triangle shape so || چونکہ مثلثی منشور کا قاعدہ مثلث شکل کا ہوتا ہے لہٰذا || څرنګه چې د مثلثي منشور قاعده د مثلث شکل لري نو
+eq \begin{aligned} \text{Area of base} &= \text{area of the triangle} = \frac{1}{2} bh \\ \text{Volume of the prism} &= \text{base area} \times \text{length of the prism} = \frac{1}{2} bh \times L \end{aligned}
+example 3 | Let us find the volume of the given triangular prism in cm³. || آئیے دیے گئے مثلثی منشور کا حجم cm³ میں معلوم کریں۔ || راځئ د ورکړل شوي مثلثي منشور حجم په cm³ کې معلوم کړو.
+svg Triangular prism with a right-angled triangular face (legs 12 and 5, hypotenuse 13) and length 11 || قائم الزاویہ مثلثی سطح (اضلاع 12 اور 5، وتر 13) اور 11 لمبائی والا مثلثی منشور || مثلثي منشور چې قایم الزاویه مثلثي مخ (ضلعې 12 او 5، وتر 13) او اوږدوالی 11 لري
+<svg viewBox="0 0 240 140" width="240" role="img" aria-label="Triangular prism: right-angled triangular face with vertical leg 12, base 5 and hypotenuse 13; length 11" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#0f172a"><path d="M30 120 V40 L70 120 Z" fill="#fde68a" stroke="#0f172a"/><path d="M30 40 L170 20 L210 100 L70 120 Z" fill="#fef3c7" stroke="#0f172a"/><rect x="30" y="110" width="10" height="10" fill="#f9a8d4" stroke="#0f172a"/><text x="24" y="84" text-anchor="end">12</text><text x="50" y="134" text-anchor="middle">5</text><text x="58" y="72">13</text><text x="150" y="122">11</text></svg>
+endsvg
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Base area} &= \frac{1}{2}(12\,\text{m} \times 5\,\text{m}) = 30\,\text{m}^2 \\ \text{Volume of the prism} &= \text{Base area} \times \text{length} = 30\,\text{m}^2 \times 11\,\text{m} = 330\,\text{m}^3 \end{aligned}
+p Now to find the volume of the prism in cm³, we have to multiply it 1,000,000. Volume in cm³ = 331 × 100 × 100 × 100 = 331,000,000 cm³ || اب منشور کا حجم cm³ میں معلوم کرنے کے لیے ہمیں اسے 1,000,000 سے ضرب دینی ہوگی۔ cm³ میں حجم = 331 × 100 × 100 × 100 = 331,000,000 cm³ || اوس د منشور د حجم په cm³ کې د موندلو لپاره باید هغه په 1,000,000 کې ضرب کړو. په cm³ کې حجم = 331 × 100 × 100 × 100 = 331,000,000 cm³
+endexample
+@issue Example 3 converts using 331 instead of 330 m³ (the correct result is 330,000,000 cm³); kept as printed. The figure gives no units; the solution uses metres.
+exercise 9.6
+q 1 | Find the surface area of the following prism. || درج ذیل منشور کا سطحی رقبہ معلوم کریں۔ || د لاندې منشور د سطحې مساحت معلوم کړئ.
+qp a | Cuboid 13 m long, 9 m wide and 3 m high || 13 m لمبا، 9 m چوڑا اور 3 m اونچا مکعب نما || د 13 m اوږدوالي، 9 m پلنوالي او 3 m لوړوالي مکعب نما
+qp b | Cuboid 20 cm long, 4 cm wide and 6 cm high || 20 cm لمبا، 4 cm چوڑا اور 6 cm اونچا مکعب نما || د 20 cm اوږدوالي، 4 cm پلنوالي او 6 cm لوړوالي مکعب نما
+qp c | Cube with edges 4 cm || 4 cm کناروں والا مکعب || د 4 cm څنډو مکعب
+qp d | Triangular prism: right triangle with legs 2 m and 1.5 m, hypotenuse 2.5 m; length 10 m || مثلثی منشور: قائم مثلث جس کے اضلاع 2 m اور 1.5 m اور وتر 2.5 m؛ لمبائی 10 m || مثلثي منشور: قایم مثلث چې ضلعې یې 2 m او 1.5 m او وتر 2.5 m؛ اوږدوالی 10 m
+qp e | Triangular prism: triangle with sides 8.4 cm, 13 cm and 14.9 cm and height 9 cm; length 14 cm || مثلثی منشور: مثلث جس کے اضلاع 8.4 cm، 13 cm اور 14.9 cm اور اونچائی 9 cm؛ لمبائی 14 cm || مثلثي منشور: مثلث چې ضلعې یې 8.4 cm، 13 cm او 14.9 cm او لوړوالی 9 cm؛ اوږدوالی 14 cm
+qp f | Triangular prism: triangle with sides 11.4 m, 12 m and 14.2 m and height 11 m; length 7 m || مثلثی منشور: مثلث جس کے اضلاع 11.4 m، 12 m اور 14.2 m اور اونچائی 11 m؛ لمبائی 7 m || مثلثي منشور: مثلث چې ضلعې یې 11.4 m، 12 m او 14.2 m او لوړوالی 11 m؛ اوږدوالی 7 m
+@issue Q1 is printed as six prism drawings; the measurements are given as text. In (e) the printed height (9 cm) is greater than the slanted side (8.4 cm), which is impossible; kept as printed.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Get students into pair and ask them to use card board and made prism of square, rectangle and triangle shape and then measure the length of the sides and find the volume of the given prisms. || طلبہ کو جوڑوں میں تقسیم کریں اور ان سے کہیں کہ گتے سے مربع، مستطیل اور مثلث شکل کے منشور بنائیں اور پھر اضلاع کی لمبائی ناپ کر دیے گئے منشوروں کا حجم معلوم کریں۔ || زده کوونکي جوړه جوړه کړئ او ترې وغواړئ چې له مقوا څخه د مربع، مستطیل او مثلث شکل منشورونه جوړ کړي او بیا د ضلعو اوږدوالی اندازه او د ورکړل شویو منشورونو حجم معلوم کړي.
+endbox

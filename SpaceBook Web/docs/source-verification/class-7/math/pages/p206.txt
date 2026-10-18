@@ -1,0 +1,20 @@
+@printed 202
+p Here are some other examples of a trapezium. || ذوزنقہ کی کچھ دوسری مثالیں یہ ہیں۔ || د ذوزنقې ځینې نورې بېلګې دا دي.
+@deco Three more trapezium shapes (a right trapezium and two tall trapeziums), each with one pair of parallel sides marked by arrowheads.
+example 3 | Find the value of ∠h in trapezium. || ذوزنقہ میں ∠h کی قیمت معلوم کریں۔ || په ذوزنقه کې د ∠h ارزښت معلوم کړئ.
+poly E:20,25;F:230,25;G:190,120;H:60,120 | fill=#a8a29e | in=55°@E;h@H | desc=Trapezium EFGH with EF parallel to HG; angle at E is 55 degrees and the angle at H is h || Trapezium EFGH with 55° at E || ذوزنقہ EFGH جس میں E پر 55° || ذوزنقه EFGH چې په E کې 55°
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \angle h + 55° &= 180° \\ \angle h &= 180° - 55° = 125° \end{aligned}
+endexample
+@issue The trapezium example is labelled "Example 1" in the book; numbered 3 here.
+## 11.1.6 Kite || 11.1.6 پتنگ || 11.1.6 پتنګ
+p In a kite, both pairs of distinct adjacent sides are equal in length. $m\overline{DE} = m\overline{EF}$, $m\overline{DG} = m\overline{GF}$. Opposite sides are not equal in length and only one pair of opposite angles is equal. The sum of the interior angles of a kite is equal to 360°. i.e. ∠E + ∠F + ∠G + ∠H = 360°. Here ∠D = ∠F = 100° || پتنگ میں ملحق اضلاع کے دونوں الگ الگ جوڑے لمبائی میں برابر ہوتے ہیں۔ $m\overline{DE} = m\overline{EF}$، $m\overline{DG} = m\overline{GF}$۔ مخالف اضلاع کی لمبائی برابر نہیں ہوتی اور مخالف زاویوں کا صرف ایک جوڑا برابر ہوتا ہے۔ پتنگ کے اندرونی زاویوں کا مجموعہ 360° کے برابر ہوتا ہے۔ یعنی ∠E + ∠F + ∠G + ∠H = 360°۔ یہاں ∠D = ∠F = 100° || په پتنګ کې د نږدې ضلعو دواړه جلا جوړې په اوږدوالي کې برابرې دي. $m\overline{DE} = m\overline{EF}$، $m\overline{DG} = m\overline{GF}$. مقابلې ضلعې په اوږدوالي کې برابرې نه دي او یوازې د مقابلو زاویو یوه جوړه برابره ده. د پتنګ د داخلي زاویو مجموعه له 360° سره برابره ده. یعنې ∠E + ∠F + ∠G + ∠H = 360°. دلته ∠D = ∠F = 100°
+poly E:110,20;F:190,75;G:110,175;D:30,75 | fill=#bfdbfe | in=90°@E;100°@F;70°@G;100°@D | desc=Kite DEFG with DE = EF and DG = GF; angles E = 90 degrees, F = 100 degrees, G = 70 degrees, D = 100 degrees || Kite DEFG || پتنگ DEFG || پتنګ DEFG
+@issue The angle-sum line is printed as "∠E + ∠F + ∠G + ∠H = 360°" although the kite's vertices are D, E, F, G; kept as printed.
+example 4 | Find the measure of ∠A and ∠C. || ∠A اور ∠C کی پیمائش معلوم کریں۔ || د ∠A او ∠C اندازه معلومه کړئ.
+poly A:110,20;B:230,95;C:110,160;D:30,95 | fill=#38bdf8 | in=A@A;60°@B;C@C;80°@D | desc=Kite ABCD with angle B = 60 degrees and angle D = 80 degrees; angles A and C are unknown and equal || Kite ABCD with ∠B = 60° and ∠D = 80° || پتنگ ABCD جس میں ∠B = 60° اور ∠D = 80° || پتنګ ABCD چې ∠B = 60° او ∠D = 80°
+p **Solution:** As we know that the sum of all the angles in a kite equals 360°. Also one pair of opposite angles is equal. So, we can write that: ∠A = ∠C. Also, || **حل:** جیسا کہ ہم جانتے ہیں پتنگ کے تمام زاویوں کا مجموعہ 360° ہوتا ہے۔ نیز مخالف زاویوں کا ایک جوڑا برابر ہوتا ہے۔ لہٰذا ہم لکھ سکتے ہیں: ∠A = ∠C۔ نیز، || **حل:** لکه څنګه چې پوهېږو د پتنګ د ټولو زاویو مجموعه 360° ده. همدارنګه د مقابلو زاویو یوه جوړه برابره ده. نو لیکلی شو: ∠A = ∠C. همدارنګه،
+eq \begin{aligned} \angle A + \angle C + \angle B + \angle D &= 360° \\ \angle A + \angle A + \angle B + \angle D &= 360° \\ 2(\angle A) + 80° + 60° &= 360° \\ 2(\angle A) &= 360° - 140° \\ 2(\angle A) &= 220° \\ \angle A &= \frac{220°}{2} = 110° \end{aligned}
+p So, ∠A = ∠C = 110°. || لہٰذا ∠A = ∠C = 110°۔ || نو ∠A = ∠C = 110°.
+endexample
+@issue This example is labelled "Example 1" in the book; numbered 4 here.

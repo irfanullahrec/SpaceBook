@@ -1,0 +1,50 @@
+@printed 85
+q 9 | Round-off the following decimals to the nearest tenths and hundreths. || درج ذیل اعشاریہ اعداد کو قریب ترین دسویں اور سوویں تک مدور کریں۔ || لاندې اعشاري عددونه تر نږدې لسمې او سلمې پورې ګرد کړئ.
+table
+th |  | Decimals | Rounded-off upto 1 decimal place (nearest tenths) | Rounded-off upto 2 decimal places (nearest hundredths)
+tr | a) | 2.2342 |  |
+tr | b) | 3.1723 |  |
+tr | c) | 5.3671 |  |
+tr | d) | 9.5191 |  |
+endtable
+qp a | 2.2342
+sol 2.2; 2.23 ## Tenths: next digit 3 < 5 → 2.2. Hundredths: next digit 4 < 5 → 2.23. || دسواں: اگلا ہندسہ 3 < 5 → 2.2۔ سواں: اگلا ہندسہ 4 < 5 → 2.23۔ || لسمه: راتلونکی رقم 3 < 5 → 2.2. سلمه: راتلونکی رقم 4 < 5 → 2.23.
+qp b | 3.1723
+sol 3.2; 3.17 ## Tenths: next digit 7 ≥ 5 → 3.2. Hundredths: next digit 2 < 5 → 3.17. || دسواں: اگلا ہندسہ 7 ≥ 5 → 3.2۔ سواں: اگلا ہندسہ 2 < 5 → 3.17۔ || لسمه: راتلونکی رقم 7 ≥ 5 → 3.2. سلمه: راتلونکی رقم 2 < 5 → 3.17.
+qp c | 5.3671
+sol 5.4; 5.37 ## Tenths: next digit 6 ≥ 5 → 5.4. Hundredths: next digit 7 ≥ 5 → 5.37. || دسواں: اگلا ہندسہ 6 ≥ 5 → 5.4۔ سواں: اگلا ہندسہ 7 ≥ 5 → 5.37۔ || لسمه: راتلونکی رقم 6 ≥ 5 → 5.4. سلمه: راتلونکی رقم 7 ≥ 5 → 5.37.
+qp d | 9.5191
+sol 9.5; 9.52 ## Tenths: next digit 1 < 5 → 9.5. Hundredths: next digit 9 ≥ 5 → 9.52. || دسواں: اگلا ہندسہ 1 < 5 → 9.5۔ سواں: اگلا ہندسہ 9 ≥ 5 → 9.52۔ || لسمه: راتلونکی رقم 1 < 5 → 9.5. سلمه: راتلونکی رقم 9 ≥ 5 → 9.52.
+@issue Q9 prints "hundreths" (for "hundredths"); kept as printed.
+q 10 | Complete the table. || جدول مکمل کریں۔ || جدول بشپړ کړئ.
+table
+th |  | fractions | decimals | percent
+tr | a) | $\dfrac{21}{50}$ |  |
+tr | b) |  |  | 82%
+tr | c) | $\dfrac{7}{25}$ |  |
+tr | d) |  | 0.65 |
+tr | e) |  |  | 25%
+endtable
+qp a | $\dfrac{21}{50}$
+sol 0.42; 42% ## $\dfrac{21}{50} = \dfrac{42}{100} = 0.42 = 42\%$. || $\dfrac{21}{50} = \dfrac{42}{100} = 0.42 = 42\%$۔ || $\dfrac{21}{50} = \dfrac{42}{100} = 0.42 = 42\%$.
+qp b | 82%
+sol $\dfrac{41}{50}$; 0.82 ## $82\% = \dfrac{82}{100} = \dfrac{41}{50} = 0.82$. || $82\% = \dfrac{82}{100} = \dfrac{41}{50} = 0.82$۔ || $82\% = \dfrac{82}{100} = \dfrac{41}{50} = 0.82$.
+qp c | $\dfrac{7}{25}$
+sol 0.28; 28% ## $\dfrac{7}{25} = \dfrac{28}{100} = 0.28 = 28\%$. || $\dfrac{7}{25} = \dfrac{28}{100} = 0.28 = 28\%$۔ || $\dfrac{7}{25} = \dfrac{28}{100} = 0.28 = 28\%$.
+qp d | 0.65
+sol $\dfrac{13}{20}$; 65% ## $0.65 = \dfrac{65}{100} = \dfrac{13}{20} = 65\%$. || $0.65 = \dfrac{65}{100} = \dfrac{13}{20} = 65\%$۔ || $0.65 = \dfrac{65}{100} = \dfrac{13}{20} = 65\%$.
+qp e | 25%
+sol $\dfrac{1}{4}$; 0.25 ## $25\% = \dfrac{25}{100} = \dfrac{1}{4} = 0.25$. || $25\% = \dfrac{25}{100} = \dfrac{1}{4} = 0.25$۔ || $25\% = \dfrac{25}{100} = \dfrac{1}{4} = 0.25$.
+q 11 | Junaid spent Rs 432 out of Rs 600. What is the percentage of the total amount spent by Junaid? Write the answer in fraction and decimal form. || جنید نے 600 روپے میں سے 432 روپے خرچ کیے۔ جنید کی خرچ کی گئی رقم کل رقم کا کتنا فیصد ہے؟ جواب کسر اور اعشاریہ کی صورت میں لکھیں۔ || جنید له 600 روپیو څخه 432 روپۍ ولګولې. د جنید لګول شوې پیسې د ټولو پیسو څو سلنه دي؟ ځواب د کسر او اعشاریې په بڼه ولیکئ.
+sol 72% = $\dfrac{18}{25}$ = 0.72 ## $\dfrac{432}{600} = \dfrac{72}{100} = 72\% = \dfrac{18}{25} = 0.72$. || $\dfrac{432}{600} = \dfrac{72}{100} = 72\% = \dfrac{18}{25} = 0.72$۔ || $\dfrac{432}{600} = \dfrac{72}{100} = 72\% = \dfrac{18}{25} = 0.72$.
+q 12 | There are 32 students in a class. If 25% students wear glasses. || ایک جماعت میں 32 طلبہ ہیں۔ اگر 25% طلبہ عینک لگاتے ہوں۔ || په یوه ټولګي کې 32 زده کوونکي دي. که 25% زده کوونکي عینکې اغوندي.
+qp a | the number of students who wear glasses? || عینک لگانے والے طلبہ کی تعداد؟ || د عینکې اغوستونکو زده کوونکو شمېر؟
+sol 8 students ## $\dfrac{25}{100} \times 32 = 8$. || $\dfrac{25}{100} \times 32 = 8$۔ || $\dfrac{25}{100} \times 32 = 8$.
+qp b | how many students do not wear glasses? || کتنے طلبہ عینک نہیں لگاتے؟ || څو زده کوونکي عینکې نه اغوندي؟
+sol 24 students ## 32 − 8 = 24. || 32 − 8 = 24۔ || 32 − 8 = 24.
+q 13 | A mathematics paper has 20 questions out of which 60% are based on "Numbers and Operations". || ریاضی کے ایک پرچے میں 20 سوالات ہیں جن میں سے 60% "اعداد اور عملیات" پر مبنی ہیں۔ || د ریاضي یوه پاڼه 20 پوښتنې لري چې له هغو څخه 60% د "عددونه او عملیې" پر بنسټ دي.
+qp a | How many questions are based on "Numbers and Operations"? || "اعداد اور عملیات" پر کتنے سوالات مبنی ہیں؟ || څو پوښتنې د "عددونه او عملیې" پر بنسټ دي؟
+sol 12 questions ## $\dfrac{60}{100} \times 20 = 12$. || $\dfrac{60}{100} \times 20 = 12$۔ || $\dfrac{60}{100} \times 20 = 12$.
+qp b | Write the number of remaining questions in fraction and decimal. || باقی سوالات کی تعداد کو کسر اور اعشاریہ میں لکھیں۔ || د پاتې پوښتنو شمېر په کسر او اعشاریه ولیکئ.
+sol 8 questions = $\dfrac{8}{20} = \dfrac{2}{5}$ = 0.4 of the paper ## Remaining = 20 − 12 = 8; as a part of the paper $\dfrac{8}{20} = \dfrac{2}{5} = 0.4$ (i.e. 40%). || باقی = 20 − 12 = 8؛ پرچے کے حصے کے طور پر $\dfrac{8}{20} = \dfrac{2}{5} = 0.4$ (یعنی 40%)۔ || پاتې = 20 − 12 = 8؛ د پاڼې د برخې په توګه $\dfrac{8}{20} = \dfrac{2}{5} = 0.4$ (یعنې 40%).
+endexercise

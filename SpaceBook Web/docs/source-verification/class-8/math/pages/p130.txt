@@ -1,0 +1,35 @@
+@printed 124
+@issue Example 5 writes "(x³ − 6x² + 5x − 4) ÷ x = (x² − 6x + 5) + (−4)/x" and then "Where 'r' denotes the remainder" although r is not shown; Example 6 prints "÷ (x · 3)" for (x − 3); the second Quick Check bullet gives no expression; all kept as printed.
+p Let us consider the following examples: || آئیے درج ذیل مثالوں پر غور کریں: || راځئ لاندې بېلګو ته پام وکړو:
+example 5
+p Divide $(x^3 - 6x^2 + 5x - 4)$ by $x$. || $(x^3 - 6x^2 + 5x - 4)$ کو $x$ سے تقسیم کریں۔ || $(x^3 - 6x^2 + 5x - 4)$ پر $x$ ووېشئ.
+## Solution: || حل: || حل:
+pdiv d=x | q=x² − 6x + 5 | n=x³ − 6x² + 5x − 4 | -±x³_______________ | − 6x² + 5x − 4 | -∓6x²_________ | 5x − 4 | -±5x____ | −4
+p Note that in the last step, the degree of the polynomial '−4' is zero while the degree of the divisor is 1. So, we stop here and say that || غور کریں کہ آخری مرحلے میں کثیر رقمی '−4' کا درجہ صفر ہے جبکہ مقسوم علیہ کا درجہ 1 ہے۔ لہٰذا ہم یہاں رک جاتے ہیں اور کہتے ہیں کہ || پام وکړئ چې په وروستي پړاو کې د '−4' څو حدي افادې درجه صفر ده په داسې حال کې چې د وېشونکي درجه 1 ده. نو دلته ودرېږو او وایو چې
+m $(x^3 - 6x^2 + 5x - 4) \div x = (x^2 - 6x + 5) + \frac{(-4)}{x}$
+p Where 'r' denotes the remainder. || جہاں 'r' باقی کو ظاہر کرتا ہے۔ || چې 'r' پاتې ښيي.
+m Now, the divisor $\times$ the quotient $+$ the remainder
+m $= x(x^2 - 6x + 5) + (-4)$
+m $= x^3 - 6x^2 + 5x - 4$
+m $=$ The dividend
+p This observation leads us to discover an important fact that || یہ مشاہدہ ہمیں ایک اہم حقیقت دریافت کرنے کی طرف لے جاتا ہے کہ || دا مشاهده موږ ته یو مهم حقیقت راښيي چې
+box info | Rule || اصول || قاعده
+p The dividend = The divisor × the quotient + the remainder || مقسوم = مقسوم علیہ × خارج قسمت + باقی || مقسوم = وېشونکی × خارج قسمت + پاتې
+endbox
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+- If the product of two polynomials is $4x^4 + 7x^3 - 15y^2$ and one of the polynomials is $(x + 3)$, find the second polynomial. || اگر دو کثیر رقمیوں کا حاصلِ ضرب $4x^4 + 7x^3 - 15y^2$ ہو اور ایک کثیر رقمی $(x + 3)$ ہو تو دوسری کثیر رقمی معلوم کریں۔ || که د دوو څو حدي افادو حاصل ضرب $4x^4 + 7x^3 - 15y^2$ وي او یوه یې $(x + 3)$ وي، دوهمه څو حدي افاده ومومئ.
+- If the product of two polynomials is $2a^3 - 11a^2 - 11a + 15$ and one of the polynomials is $(2a + 3)$, find the other. || اگر دو کثیر رقمیوں کا حاصلِ ضرب $2a^3 - 11a^2 - 11a + 15$ ہو اور ایک کثیر رقمی $(2a + 3)$ ہو تو دوسری معلوم کریں۔ || که د دوو څو حدي افادو حاصل ضرب $2a^3 - 11a^2 - 11a + 15$ وي او یوه یې $(2a + 3)$ وي، بله ومومئ.
+endbox
+example 6
+p Divide $x^2 - 5x + 11$ by $(x - 3)$ || $x^2 - 5x + 11$ کو $(x - 3)$ سے تقسیم کریں || $x^2 - 5x + 11$ پر $(x - 3)$ ووېشئ
+## Solution: || حل: || حل:
+pdiv d=x − 3 | q=x − 2 | n=x² − 5x + 11 | -±x² ∓ 3x_____ >> ← x (x − 3) | − 2x + 11 | -∓2x ± 6 >> ← −2 (x − 3) | 5
+m Thus, $(x^2 - 5x + 11) \div (x \cdot 3) = (x - 2) + \frac{5}{x - 3}$
+m i.e. Quotient $= x - 2$, remainder $= 5$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+- Solve and verify that Dividend = Divisor x Quotient || حل کریں اور تصدیق کریں کہ مقسوم = مقسوم علیہ × خارج قسمت || حل یې کړئ او تایید کړئ چې مقسوم = وېشونکی × خارج قسمت
+m i) $(x^2 - 12x + 12) \div (x - 10)$
+- Solve and verify that Dividend = Divisor x Quotient + Remainder || حل کریں اور تصدیق کریں کہ مقسوم = مقسوم علیہ × خارج قسمت + باقی || حل یې کړئ او تایید کړئ چې مقسوم = وېشونکی × خارج قسمت + پاتې
+endbox

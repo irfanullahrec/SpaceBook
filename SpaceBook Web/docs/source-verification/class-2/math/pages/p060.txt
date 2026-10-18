@@ -1,0 +1,16 @@
+@printed 55
+@deco A festival with a swing boat, a merry-go-round and a toy train; a girl speaks the hint.
+p In a festival, Maryam spent Rs 465. Her friend spent Rs 26 less than Maryam. How much amount did her friend spend? || ایک میلے میں مریم نے 465 روپے خرچ کیے۔ اس کی سہیلی نے مریم سے 26 روپے کم خرچ کیے۔ اس کی سہیلی نے کتنی رقم خرچ کی؟ || په یوه مېله کې مریم 465 روپۍ ولګولې. ملګرې یې له مریم څخه 26 روپۍ کمې ولګولې. ملګرې یې څومره پیسې ولګولې؟
+p “We cannot subtract 6 from 5. Therefore, we borrow 1 ten as 10 ones from the tens place.” || ”5 میں سے 6 تفریق نہیں ہو سکتا۔ اس لیے ہم دہائی کی جگہ سے 1 دہائی یعنی 10 اکائیاں ادھار لیتے ہیں۔“ || ”له 5 څخه 6 نه تفریق کېږي. نو د لسګونو له ځای 1 لسګون یعنې 10 یووونه پور اخلو.“
+fig blocks 4 6 5 | 4 hundreds ; 6 tens ; 5 ones || 465: one ten is changed into 10 ones (4 hundreds, 5 tens, 15 ones); after taking away 26 the answer is 4 hundreds, 3 tens and 9 ones. || 465: ایک دہائی کو 10 اکائیوں میں بدلا (4 سو، 5 دہائیاں، 15 اکائیاں)؛ 26 نکالنے کے بعد جواب 4 سو، 3 دہائیاں اور 9 اکائیاں ہے۔ || 465: یو لسګون په 10 یووونو بدل شو (4 سلګونه، 5 لسګونه، 15 یووونه)؛ د 26 له لرې کولو وروسته ځواب 4 سلګونه، 3 لسګونه او 9 یووونه دي.
+table
+th  | H | T | O
+tr Amount spent by Maryam | 4 | 6 → 5 | 5 → 15
+tr Less amount spent by her friend (−) |  | 2 | 6
+tr Amount spent by her friend | 4 | 3 | 9
+endtable
+colop 465 - 26 || Column working: 465 − 26 = 439 || عمودی طریقہ: 465 − 26 = 439 || عمودي طریقه: 465 − 26 = 439
+p Step 1: Subtract the ones. Borrow 1 ten as 10 ones from the tens place and carry to the ones place. 15 ones − 6 ones = 9 ones || مرحلہ 1: اکائیاں تفریق کریں۔ دہائی کی جگہ سے 1 دہائی یعنی 10 اکائیاں ادھار لیں۔ 15 اکائیاں − 6 اکائیاں = 9 اکائیاں || لومړی ګام: یووونه تفریق کړئ. د لسګونو له ځای 1 لسګون یعنې 10 یووونه پور واخلئ. 15 یووونه − 6 یووونه = 9 یووونه
+p Step 2: Subtract the tens. 5 tens − 2 tens = 3 tens || مرحلہ 2: دہائیاں تفریق کریں۔ 5 دہائیاں − 2 دہائیاں = 3 دہائیاں || دویم ګام: لسګونه تفریق کړئ. 5 لسګونه − 2 لسګونه = 3 لسګونه
+p Step 3: Subtract the hundreds. 4 hundreds − 0 hundreds = 4 hundreds || مرحلہ 3: سینکڑے تفریق کریں۔ 4 سو − 0 سو = 4 سو || درېیم ګام: سلګونه تفریق کړئ. 4 سلګونه − 0 سلګونه = 4 سلګونه
+p So, Maryam's friend spent Rs 439. || لہٰذا مریم کی سہیلی نے 439 روپے خرچ کیے۔ || نو د مریم ملګرې 439 روپۍ ولګولې.

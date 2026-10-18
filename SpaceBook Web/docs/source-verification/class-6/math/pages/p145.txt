@@ -1,0 +1,27 @@
+@printed 141
+example 2 | Find the length of a side of the square, if the perimeter of the square is 40 cm. || اگر مربع کا احاطہ 40 cm ہو تو اس کے ایک ضلع کی لمبائی معلوم کریں۔ || که د مربع محیط 40 cm وي، د یوې ضلعې اوږدوالی معلوم کړئ.
+rect 1 1 #c4b5fd | | | | | Perimeter = 40 cm
+p **Solution:** || **حل:** || **حل:**
+m Perimeter of a square $= 4 \times L$
+p As perimeter is given and we need to find the length, so we put the value of perimeter in this formula. || چونکہ احاطہ دیا گیا ہے اور ہمیں لمبائی معلوم کرنی ہے، اس لیے ہم اس فارمولے میں احاطے کی قیمت رکھتے ہیں۔ || ځکه چې محیط ورکړل شوی او اوږدوالی باید ومومو، نو د محیط ارزښت په دې فورمول کې ږدو.
+m $40 \text{ cm} = 4 \times L$
+p Divide both sides by 4 || دونوں اطراف کو 4 سے تقسیم کریں || دواړه اړخونه پر 4 ووېشئ
+m $\frac{\cancel{40}^{\,10} \text{ cm}}{\cancel{4}} = \frac{\cancel{4} \times L}{\cancel{4}} = 10 \text{ cm} = L$
+p So, the length of the side of the square is 10 cm. || لہٰذا مربع کے ضلع کی لمبائی 10 cm ہے۔ || نو د مربع د ضلعې اوږدوالی 10 cm دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Find the perimeter of a square if the length of one side is 4.5 m. || اگر ایک ضلع کی لمبائی 4.5 m ہو تو مربع کا احاطہ معلوم کریں۔ || که د یوې ضلعې اوږدوالی 4.5 m وي، د مربع محیط معلوم کړئ.
+endbox
+## 8.1.2 Perimeter of Rectangle || 8.1.2 مستطیل کا احاطہ || 8.1.2 د مستطیل محیط
+p We know that length of opposite sides of a rectangle are the same. So, its perimeter can be measured by adding all 4 sides. If L is the length of a side of the rectangle, and W is the width, we can write the perimeter as: || ہم جانتے ہیں کہ مستطیل کے آمنے سامنے کے اضلاع کی لمبائی برابر ہوتی ہے۔ اس لیے اس کا احاطہ چاروں اضلاع جمع کر کے ناپا جا سکتا ہے۔ اگر L مستطیل کی لمبائی اور W چوڑائی ہو تو ہم احاطہ یوں لکھ سکتے ہیں: || پوهېږو چې د مستطیل مخامخ ضلعې یو شان اوږدوالی لري. نو محیط یې د څلورو ضلعو په جمع کولو اندازه کېدای شي. که L د مستطیل اوږدوالی او W پلنوالی وي، محیط داسې لیکلی شو:
+rect 2 1 #fbbf24 | L | W
+eq \begin{aligned} \text{Perimeter of a rectangle} &= \text{length} + \text{length} + \text{width} + \text{width} \\ &= 2 \times \text{length} + 2 \times \text{width} \\ &= 2(\text{length} + \text{width}) \\ &= 2(L + W) \end{aligned}
+example 1 | Find the perimeter of the rectangle if its length is 15 cm and width is 12 cm. || اگر مستطیل کی لمبائی 15 cm اور چوڑائی 12 cm ہو تو اس کا احاطہ معلوم کریں۔ || که د مستطیل اوږدوالی 15 cm او پلنوالی 12 cm وي، محیط یې معلوم کړئ.
+rect 15 12 #1e3a8a | 15 cm | 12 cm | 15 cm | 12 cm
+p **Solution:** || **حل:** || **حل:**
+eq \begin{aligned} \text{Perimeter of rectangle} &= 2(\text{length} + \text{width}) \\ &= 2(15 \text{ cm} + 12 \text{ cm}) \\ &= 2 \times 27 \text{ cm} \\ &= 54 \text{ cm} \end{aligned}
+p So, the perimeter of the rectangle is 54 cm. || لہٰذا مستطیل کا احاطہ 54 cm ہے۔ || نو د مستطیل محیط 54 cm دی.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain to the students how to find the perimeter of a rectangle. Draw a few rectangles on the board and ask them to find the perimeter. || طلبہ کو مستطیل کا احاطہ معلوم کرنے کا طریقہ سمجھائیں۔ بورڈ پر چند مستطیل بنائیں اور ان سے احاطہ معلوم کرنے کو کہیں۔ || زده کوونکو ته د مستطیل د محیط د موندلو لاره تشریح کړئ. په تخته څو مستطیلونه رسم کړئ او ترې وغواړئ چې محیط ومومي.
+endbox

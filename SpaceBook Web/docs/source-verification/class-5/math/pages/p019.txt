@@ -1,0 +1,32 @@
+@printed 14
+@deco Picture of four apple trees and a cartoon boy with the speech bubble; teaching-point badge.
+box note
+p There are 243 rows of apple trees in a farm. If each row has 21 apple trees, find the total trees in the farm. || ایک فارم میں سیب کے درختوں کی 243 قطاریں ہیں۔ اگر ہر قطار میں 21 درخت ہوں تو فارم میں کل درخت معلوم کریں۔ || په یوه فارم کې د مڼو د ونو 243 لیکې دي. که په هره لیکه کې 21 ونې وي، په فارم کې ټولې ونې معلومې کړئ.
+endbox
+p First write both numbers in their expanded form. || پہلے دونوں اعداد کو ان کی پھیلی ہوئی شکل میں لکھیں۔ || لومړی دواړه عددونه په پراخه بڼه ولیکئ.
+eq 243 = 200 + 40 + 3
+eq 21 = 20 + 1
+p Now write one number horizontally and the other one vertically in grid as shown in the table. || اب ایک عدد کو افقی اور دوسرے کو عمودی طور پر خانوں (گرڈ) میں لکھیں جیسا کہ جدول میں دکھایا گیا ہے۔ || اوس یو عدد افقي او بل عمودي په خانو (ګرېډ) کې ولیکئ لکه څنګه چې په جدول کې ښودل شوي.
+table
+th | × | 200 | 40 | 3
+tr | 20 |  |  |
+tr | 1 |  |  |
+endtable
+p Now multiply every digit in horizontal grid by every digit in vertical grid one by one. || اب افقی خانوں کے ہر عدد کو عمودی خانوں کے ہر عدد سے ایک ایک کر کے ضرب دیں۔ || اوس د افقي خانو هر عدد د عمودي خانو په هر عدد کې یو په یو ضرب کړئ.
+p Finally add the resulting products (in blue grids). This will give us the product of 243 and 21. || آخر میں حاصل ہونے والے حاصلِ ضرب (نیلے خانوں والے) جمع کریں۔ اس سے ہمیں 243 اور 21 کا حاصلِ ضرب مل جائے گا۔ || په پای کې لاسته راغلي حاصل ضربونه (په شنو/نیلو خانو کې) جمع کړئ. دا به موږ ته د 243 او 21 حاصل ضرب راکړي.
+table Box (grid) method; products in the blue cells || باکس (گرڈ) طریقہ؛ حاصلِ ضرب نیلے خانوں میں || د بکس (ګرېډ) طریقه؛ حاصل ضربونه په نیلو خانو کې
+th | × | 200 | 40 | 3 | Row total
+tr | 20 | 4,000 | 800 | 60 | 4,860
+tr | 1 | 200 | 40 | 3 | 243
+tr | Column total | 4,200 | 840 | 63 | 5,103
+endtable
+@issue The printed grid leaves the last header cell and the first cell of the bottom row empty; labelled "Row total" and "Column total" here so the table reads correctly.
+eq 4{,}000 + 800 + 60 + 200 + 40 + 3 = 5{,}103
+p So, there are 5,103 apple tress altogether in the farm. || لہٰذا فارم میں کل 5,103 سیب کے درخت ہیں۔ || نو په فارم کې ټولټال 5,103 د مڼو ونې دي.
+@issue "apple tress" (for "trees") is a printing error in the source; kept as printed.
+box check | Try Yourself || خود کوشش کریں || پخپله هڅه وکړئ
+p Find the product of 5,623 and 418 using box method. || باکس طریقے سے 5,623 اور 418 کا حاصلِ ضرب معلوم کریں۔ || د بکس طریقې په مرسته د 5,623 او 418 حاصل ضرب معلوم کړئ.
+endbox
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Explain the box or grid method of multiplication to the students by multiplying various numbers. || مختلف اعداد کو ضرب دے کر طلبہ کو ضرب کا باکس یا گرڈ طریقہ سمجھائیں۔ || د بېلابېلو عددونو په ضربولو سره زده کوونکو ته د ضرب بکس یا ګرېډ طریقه تشریح کړئ.
+endbox

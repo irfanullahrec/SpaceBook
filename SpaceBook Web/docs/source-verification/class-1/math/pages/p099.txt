@@ -1,0 +1,21 @@
+@printed 95
+p Tick (✓) the box if you can buy the objects with the given money. || اگر آپ دی گئی رقم سے چیز خرید سکتے ہیں تو خانے میں (✓) کا نشان لگائیں۔ || که په ورکړل شویو پیسو شی اخیستلای شئ، په خونه کې (✓) ولګوئ.
+q 10 | Book Rs 75: Rs 50 note, Rs 20 note, Rs 5 coin || کتاب ۷۵ روپے: ۵۰ کا نوٹ، ۲۰ کا نوٹ، ۵ کا سکہ || کتاب ۷۵ روپۍ: د ۵۰ نوټ، د ۲۰ نوټ، د ۵ سکه
+cnt book.orange:1 "Rs_75" note50:1 note20:1 coin5:1 [] || book and money || کتاب اور رقم || کتاب او پیسې
+sol ✓ Yes — 50 + 20 + 5 = Rs 75, exactly the price. ## Add the money and compare it with the price. || رقم جمع کریں اور قیمت سے موازنہ کریں۔ || پیسې جمع کړئ او له بیې سره یې پرتله کړئ.
+q 11 | Pencil Rs 10: five Re 1 coins || پنسل ۱۰ روپے: ایک روپے کے پانچ سکے || پنسل ۱۰ روپۍ: د یوې روپۍ پنځه سکې
+cnt pencil.orange:1 "Rs_10" coin1:5 [] || pencil and money || پنسل اور رقم || پنسل او پیسې
+sol ✗ No — 5 × Re 1 = Rs 5, which is less than Rs 10. ## Rs 5 < Rs 10, so the money is not enough. || ۵ روپے < ۱۰ روپے، اس لیے رقم کافی نہیں۔ || ۵ روپۍ < ۱۰ روپۍ، نو پیسې بسنه نه کوي.
+q 12 | Football Rs 90: four Rs 20 notes and one Rs 10 note || فٹ بال ۹۰ روپے: بیس کے چار نوٹ اور دس کا ایک نوٹ || فوټبال ۹۰ روپۍ: د شلو څلور نوټونه او د لسو یو نوټ
+cnt football:1 "Rs_90" note20:4 note10:1 [] || football and money || فٹ بال اور رقم || فوټبال او پیسې
+sol ✓ Yes — 20 + 20 + 20 + 20 + 10 = Rs 90. ## The money equals the price. || رقم قیمت کے برابر ہے۔ || پیسې له بیې سره برابرې دي.
+q 13 | Packet of crisps Rs 52: five Rs 10 notes and one Re 1 coin || چپس کا پیکٹ ۵۲ روپے: دس کے پانچ نوٹ اور ایک روپے کا ایک سکہ || د چپس پاکټ ۵۲ روپۍ: د لسو پنځه نوټونه او د یوې روپۍ یوه سکه
+cnt crisps:1 "Rs_52" note10:5 coin1:1 [] || crisps and money || چپس اور رقم || چپس او پیسې
+sol ✗ No — 50 + 1 = Rs 51, which is less than Rs 52. ## Rs 51 is 1 rupee short. || ۵۱ روپے میں ۱ روپیہ کم ہے۔ || په ۵۱ روپیو کې ۱ روپۍ کمه ده.
+q 14 | Cricket bat Rs 95: Rs 50 note, two Rs 20 notes, Rs 5 coin || کرکٹ بیٹ ۹۵ روپے: ۵۰ کا نوٹ، ۲۰ کے دو نوٹ، ۵ کا سکہ || د کرکټ بیټ ۹۵ روپۍ: د ۵۰ نوټ، د ۲۰ دوه نوټونه، د ۵ سکه
+cnt bat:1 "Rs_95" note50:1 note20:2 coin5:1 [] || bat and money || بیٹ اور رقم || بیټ او پیسې
+sol ✓ Yes — 50 + 20 + 20 + 5 = Rs 95. ## The money equals the price. || رقم قیمت کے برابر ہے۔ || پیسې له بیې سره برابرې دي.
+endexercise
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Place a few toys with price tags on the table. Distribute paper coins and notes among the students and ask if they can buy these toys with the money they have. || میز پر قیمت کے ٹیگ کے ساتھ چند کھلونے رکھیں۔ طلبہ میں کاغذی سکے اور نوٹ تقسیم کریں اور پوچھیں کہ کیا وہ اپنے پاس موجود رقم سے یہ کھلونے خرید سکتے ہیں۔ || په مېز د بیې له نښو سره څو لوبونه کېږدئ. په زده کوونکو کاغذي سکې او نوټونه ووېشئ او وپوښتئ چې ایا په خپلو پیسو دا لوبونه اخیستلای شي.
+endbox

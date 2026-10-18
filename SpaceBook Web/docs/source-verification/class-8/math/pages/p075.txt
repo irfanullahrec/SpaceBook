@@ -1,0 +1,35 @@
+@printed 71
+@issue The rule prints "than its square root contains" (for "then"); kept as printed.
+@issue Example 1 c) counts 8 digits in 20.331081 and gives 4 digits in its square root; kept as printed.
+@issue The small division diagram for √2 beside 4.1.5 shows only the first step (1 | 2, 1, 2 | 1) without a minus sign; recreated with the subtraction marked.
+p **Rule:** Let $n$ be the number of digits in a perfect square, than its square root contains. || **اصول:** فرض کریں $n$ کسی کامل مربع میں ہندسوں کی تعداد ہے، تو اس کے جذر المربع میں ہوں گے۔ || **قاعده:** فرض کړئ $n$ په یوه بشپړه مربع کې د رقمونو شمېر دی، نو د هغې مربع جذر لري.
+m i) $\frac{n}{2}$ digits if $n$ is even and $\qquad$ ii) $\frac{n+1}{2}$ digits if $n$ is odd
+example 1
+p Find the number of digits in the square root of the following numbers in perfect square form. || کامل مربع شکل میں درج ذیل اعداد کے جذر المربع میں ہندسوں کی تعداد معلوم کریں۔ || د بشپړې مربع په بڼه د لاندې عددونو په مربع جذر کې د رقمونو شمېر معلوم کړئ.
+qp a | 157609
+qp b | 1,014,049
+qp c | 20.331081
+## Solution: || حل: || حل:
+p The number of digits in 157609 is 6. i. e, $n = 6$ (an even number) || 157609 میں ہندسوں کی تعداد 6 ہے۔ یعنی $n = 6$ (ایک جفت عدد) || په 157609 کې د رقمونو شمېر 6 دی. یعنې $n = 6$ (یو جفت عدد)
+m a) $\therefore \sqrt{157609}$ contains $\frac{n}{2} = \frac{6}{2} = 3$ digits.
+p b) The number of digits in 1,014,049 is 7. i.e $n = 7$ (odd) || b) 1,014,049 میں ہندسوں کی تعداد 7 ہے۔ یعنی $n = 7$ (طاق) || b) په 1,014,049 کې د رقمونو شمېر 7 دی. یعنې $n = 7$ (طاق)
+m Therefore, the number of digits in $\sqrt{1,014,049}$
+m $= \frac{n+1}{2} = \frac{7+1}{2} = \frac{8}{2} = 4$
+p c) The number of digits in the decimal 20.331081 is 8. || c) اعشاریہ 20.331081 میں ہندسوں کی تعداد 8 ہے۔ || c) په 20.331081 اعشاري کې د رقمونو شمېر 8 دی.
+m Here $n = 8$ (even)
+m $\therefore$ Number of digits in $\sqrt{20.331081}$
+m $\frac{n}{2} = \frac{8}{2} = 4$
+endexample
+## 4.1.5 Square Root of a Number which is not a Perfect Square || 4.1.5 ایسے عدد کا جذر المربع جو کامل مربع نہ ہو || 4.1.5 د هغه عدد مربع جذر چې بشپړه مربع نه وي
+p Let us find the square root of numbers or fractions which are not perfect square; || آئیے ان اعداد یا کسور کا جذر المربع معلوم کریں جو کامل مربع نہیں ہیں؛ || راځئ د هغو عددونو یا کسرونو مربع جذر ومومو چې بشپړې مربعې نه دي؛
+example 1
+p Find the square root of: || جذر المربع معلوم کریں: || مربع جذر معلوم کړئ:
+qp a | 2
+qp b | 3
+qp c | 2.5
+qp d | 4.225
+## Solution: || حل: || حل:
+m a) 2
+p Using the division method, in the second trial, the divisor is less than the dividend. So to continue the process, we place a decimal point afer 2 along with three pairs of zeros as follows; || تقسیم کے طریقے سے، دوسری کوشش میں مقسوم علیہ مقسوم سے کم ہے۔ لہٰذا عمل جاری رکھنے کے لیے ہم 2 کے بعد اعشاریہ اور صفروں کے تین جوڑے لگاتے ہیں؛ || د وېش په طریقه، په دوهمه هڅه کې وېشونکی له مقسوم څخه کم دی. نو د عمل د دوام لپاره له 2 وروسته اعشاري ټکی او د صفرونو درې جوړې ږدو؛
+sqdiv q=1 | n=2 | 1: | :-1 | 2:1
+p We observe that the process does not end, and if we continue the process, no digit or block of digits will repeat. || ہم دیکھتے ہیں کہ عمل ختم نہیں ہوتا، اور اگر ہم عمل جاری رکھیں تو کوئی ہندسہ یا ہندسوں کا گروہ نہیں دہرائے گا۔ || موږ ګورو چې عمل نه ختمېږي، او که عمل ته دوام ورکړو، هېڅ رقم یا د رقمونو ډله نه تکرارېږي.

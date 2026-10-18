@@ -1,0 +1,56 @@
+@printed 140
+@issue Example 3's second line prints "So, (x − 1/x)³ = 3³" although x + 1/x = 3 is cubed; the steps also write "3 × x × x × x × 1/x" with cancellation strokes; kept as printed (strokes omitted). The Note prints "5³ is read as 5 cube and x³ is read as x cube".
+p These formulae can also help us to solve certain problems of different kinds, like evaluation and factorization. Let us study some examples to understand the application of these formulae. || یہ فارمولے ہمیں مختلف قسم کے کچھ مسائل جیسے قیمت معلوم کرنے اور تجزی کو حل کرنے میں بھی مدد دے سکتے ہیں۔ آئیے ان فارمولوں کا استعمال سمجھنے کے لیے کچھ مثالوں کا مطالعہ کریں۔ || دا فورمولونه له موږ سره د بېلابېلو ډولونو ځینو ستونزو لکه ارزونې او تجزیې په حل کې هم مرسته کولی شي. راځئ د دې فورمولونو د کارونې د پوهېدو لپاره څو بېلګې وڅېړو.
+example 1
+p Expand the following: || درج ذیل کو پھیلائیں: || لاندې پراخې کړئ:
+qp a | $(2a + 3b)^3$
+qp b | $(4x + y)^3$
+## Solution: || حل: || حل:
+m a) $(2a + 3b)^3$
+m $= (2a)^3 + 3(2a)^2(3b) + 3(2a)(3b)^2 + (3b)^3$
+m $= 8a^3 + 3(4a^2)(3b) + 6a(9b^2) + 27b^3$
+m $= 8a^3 + 36a^2b + 54ab^2 + 27b^3$
+m b) $(4x + y)^3$
+m $= (4x)^3 + 3(4x)^2(y) + 3(4x)(y^2) + y^3$
+m $= 64x^3 + 3(16x^2)(y) + 12xy^2 + y^3$
+m $= 64x^3 + 48x^2y + 12xy^2 + y^3$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The formulae of $(a + b)^3$ and $(a - b)^3$ are called perfect cubes. Be careful about signs of the terms while using the formula $(a - b)^3$ || $(a + b)^3$ اور $(a - b)^3$ کے فارمولے کامل مکعب کہلاتے ہیں۔ فارمولا $(a - b)^3$ استعمال کرتے وقت ارکان کی علامات کا خیال رکھیں || د $(a + b)^3$ او $(a - b)^3$ فورمولونه بشپړ مکعبونه بلل کېږي. د $(a - b)^3$ فورمول د کارولو پر مهال د حدونو نښو ته پام وکړئ
+endbox
+example 2
+p Expand the following: || درج ذیل کو پھیلائیں: || لاندې پراخې کړئ:
+qp a | $(5a - 3)^3$
+qp b | $(4p - 5q)^3$
+## Solution: || حل: || حل:
+m a) $(5a - 3)^3$
+m $= (5a)^3 - 3(5a)^2(3) + 3(5a)(3)^2 - (3)^3$
+m $= 125a^3 - 3(25a^2)(3) + 15a \times 9 - 27$
+m $= 125a^3 - 225a^2 + 135a - 27$
+m b) $(4p - 5q)^3$
+m $= (4p)^3 - 3(4p)^2(5q) + 3(4p)(5q)^2 - (5q)^3$
+m $= 64p^3 - 3(16p^2)(5q) + 12p(25q^2) - 125q^3$
+m $= 64p^3 - 240p^2q + 300pq^2 - 125q^3$
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Evaluate || قیمت معلوم کریں || ارزونه وکړئ
+qp a | $(10 + 5)^3$
+qp b | $(10 - 5)^3$
+endbox
+example 3
+p Find the value of $x^3 + \frac{1}{x^3}$ when $x + \frac{1}{x} = 3$ || $x^3 + \frac{1}{x^3}$ کی قیمت معلوم کریں جب $x + \frac{1}{x} = 3$ ہو || د $x^3 + \frac{1}{x^3}$ ارزښت معلوم کړئ کله چې $x + \frac{1}{x} = 3$ وي
+## Solution: || حل: || حل:
+m As, $x + \frac{1}{x} = 3$
+m So, $\left(x - \frac{1}{x}\right)^3 = 3^3$ (Take the cube of the both sides)
+m $x^3 + 3(x)^2\left(\frac{1}{x}\right) + 3(x)\left(\frac{1}{x}\right)^2 + \left(\frac{1}{x}\right)^3 = 27$
+m $x^3 + 3 \times x \times x \times \frac{1}{x} + 3 \times x \times \frac{1}{x} \times \frac{1}{x} + \frac{1}{x^3} = 27$
+m $x^3 + 3x + 3 \times \frac{1}{x} + \frac{1}{x^3} = 27$
+m $x^3 + 3\left(x + \frac{1}{x}\right) + \frac{1}{x^3} = 27$
+m $x^3 + 3 \times 3 + \frac{1}{x^3} = 27 \quad$ [Put $\left(x + \frac{1}{x}\right) = 3$]
+m $x^3 + 9 + \frac{1}{x^3} = 27$
+m $x^3 + \frac{1}{x^3} = 27 - 9$
+m $x^3 + \frac{1}{x^3} = 18$
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The power or exponent 3 of a number is called cube. So, $5^3$ is read as 5 cube and $x^3$ is read as $x$ cube || کسی عدد کی قوت یا قوت نما 3 کو مکعب کہتے ہیں۔ لہٰذا $5^3$ کو 5 کا مکعب اور $x^3$ کو $x$ کا مکعب پڑھا جاتا ہے || د یوه عدد 3 توان یا اس مکعب بلل کېږي. نو $5^3$ د 5 مکعب او $x^3$ د $x$ مکعب لوستل کېږي
+endbox

@@ -1,0 +1,31 @@
+@printed 79
+@issue Example 3 asks for "the cube root of ∛5.832"; kept as printed.
+@issue Property vi) is printed "For any rational number ∛(a × b) = ∛a × ∛b"; kept as printed.
+ladder 7:343; 7:49; 7:7; :1
+m $= \sqrt[3]{\frac{5^3}{7^3}} = \sqrt[3]{\left(\frac{5}{7}\right)^3} = \frac{5}{7}$
+m $\therefore \sqrt[3]{\frac{125}{343}} = \frac{5}{7}$
+m Since $5 = \sqrt[3]{125}$
+m and $7 = \sqrt[3]{343}$
+m $\therefore \sqrt[3]{\frac{125}{343}} = \frac{\sqrt[3]{125}}{\sqrt[3]{343}}$
+p In general; || عام طور پر؛ || په عمومي ډول؛
+box info | Rule || اصول || قاعده
+m For rational number $\frac{a}{b}$, $\sqrt[3]{\frac{a}{b}} = \frac{\sqrt[3]{a}}{\sqrt[3]{b}}$
+endbox
+endexample
+example 3
+p Find the cube root of $\sqrt[3]{5.832}$. || $\sqrt[3]{5.832}$ کا جذر المکعب معلوم کریں۔ || د $\sqrt[3]{5.832}$ مکعب جذر معلوم کړئ.
+## Solution: || حل: || حل:
+ladder 2:5832; 2:2916; 2:1458; 3:729; 3:243; 3:81; 3:27; 3:9; 3:3; :1
+m $= \sqrt[3]{\frac{5832}{1000}}$
+m $= \frac{\sqrt[3]{5832}}{\sqrt[3]{1000}}$
+m $= \frac{\sqrt[3]{2 \times 2 \times 2 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3}}{\sqrt[3]{2 \times 2 \times 2 \times 5 \times 5 \times 5}}$
+m $= \frac{2 \times 3 \times 3}{2 \times 5}$
+m $= \frac{18}{10} = 1.8$
+endexample
+## 4.3.4 Properties of Cubes of Numbers || 4.3.4 اعداد کے مکعب کی خصوصیات || 4.3.4 د عددونو د مکعبونو ځانګړتیاوې
+qp i | The cube of an even number is even. || جفت عدد کا مکعب جفت ہوتا ہے۔ || د جفت عدد مکعب جفت وي.
+qp ii | The cube of an odd number is odd. || طاق عدد کا مکعب طاق ہوتا ہے۔ || د طاق عدد مکعب طاق وي.
+qp iii | The cube of a positive number is positive. || مثبت عدد کا مکعب مثبت ہوتا ہے۔ || د مثبت عدد مکعب مثبت وي.
+qp iv | The cube of a negative number is negative. || منفی عدد کا مکعب منفی ہوتا ہے۔ || د منفي عدد مکعب منفي وي.
+qp v | For any rational number $\frac{a}{b}$, $\sqrt[3]{\frac{a}{b}} = \frac{\sqrt[3]{a}}{\sqrt[3]{b}}$. || کسی بھی ناطق عدد $\frac{a}{b}$ کے لیے، $\sqrt[3]{\frac{a}{b}} = \frac{\sqrt[3]{a}}{\sqrt[3]{b}}$۔ || د هر ناطق عدد $\frac{a}{b}$ لپاره، $\sqrt[3]{\frac{a}{b}} = \frac{\sqrt[3]{a}}{\sqrt[3]{b}}$.
+qp vi | For any rational number $\sqrt[3]{a \times b} = \sqrt[3]{a} \times \sqrt[3]{b}$. || کسی بھی ناطق عدد کے لیے $\sqrt[3]{a \times b} = \sqrt[3]{a} \times \sqrt[3]{b}$۔ || د هر ناطق عدد لپاره $\sqrt[3]{a \times b} = \sqrt[3]{a} \times \sqrt[3]{b}$.

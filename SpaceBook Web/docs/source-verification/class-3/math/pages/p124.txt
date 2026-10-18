@@ -1,0 +1,13 @@
+@printed 119
+@deco Photos of water bottles, oil bottles and a saucepan of milk.
+@issue Q2 prints "3 litres 240" without a unit after 240; read as 240 millilitres (the second bottle is given in litres and millilitres).
+qp v | 54 l 800 ml + 25 l 125 ml
+qp vi | 73 l 342 ml + 23 l 610 ml
+qsolve measop
+q 2 | One bottle has 3 litres 240 and other has 5 litres 350 millilitres of water. How many litres of water is in both bottles? || ایک بوتل میں 3 لیٹر 240 اور دوسری میں 5 لیٹر 350 ملی لیٹر پانی ہے۔ دونوں بوتلوں میں کتنے لیٹر پانی ہے؟ || په یوه بوتل کې 3 لیتره 240 او په بل کې 5 لیتره 350 ملي لیتره اوبه دي. په دواړو بوتلونو کې څو لیتره اوبه دي؟
+qsol measop 3 l 240 ml + 5 l 350 ml
+q 3 | A small restaurant uses 35 litres of canola oil and 15 litres of soybean oil in a week. How many litres of oil is used in this restaurant, weekly? || ایک چھوٹا ریستوران ہفتے میں 35 لیٹر کینولا آئل اور 15 لیٹر سویابین آئل استعمال کرتا ہے۔ اس ریستوران میں ہفتہ وار کتنے لیٹر تیل استعمال ہوتا ہے؟ || یو کوچنی رستورانت په اونۍ کې 35 لیتره کانولا تېل او 15 لیتره سویابین تېل کاروي. په دې رستورانت کې په اونۍ کې څو لیتره تېل کارول کېږي؟
+sol 50 litres ## 35 l + 15 l = 50 l || 35 l + 15 l = 50 l || 35 l + 15 l = 50 l
+q 4 | Farida orders for 3 l 500 ml of milk for the children to drink and four litres of milk for tea. How many litres of milk does Farida order? || فریدہ بچوں کے پینے کے لیے 3 l 500 ml دودھ اور چائے کے لیے چار لیٹر دودھ منگواتی ہے۔ فریدہ کتنے لیٹر دودھ منگواتی ہے؟ || فریده د ماشومانو د څښلو لپاره 3 l 500 ml شیدې او د چای لپاره څلور لیتره شیدې غواړي. فریده څو لیتره شیدې غواړي؟
+qsol measop 3 l 500 ml + 4 l 0 ml
+endexercise

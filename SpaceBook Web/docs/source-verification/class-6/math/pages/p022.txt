@@ -1,0 +1,74 @@
+@printed 20
+@deco Cartoon boy beside the hint bubble (decorative).
+exercise 1.5
+q 1 | Find the square of the following numbers. || درج ذیل اعداد کا مربع معلوم کریں۔ || د لاندې عددونو مربع معلوم کړئ.
+qsolve square
+qp a | 25
+qp b | 77
+qp c | 98
+qp d | 11
+qp e | 46
+qp f | 69
+qp g | 13
+qp h | 37
+qp i | 45
+qp j | 79
+qp k | 67
+qp l | 50
+q 2 | A glass is cut into square shape. If the length of the glass is 98 cm, what is the area of the surface of the glass? (Hint: Area of Square = Length × Length) || ایک شیشے کو مربع شکل میں کاٹا گیا ہے۔ اگر شیشے کی لمبائی 98 cm ہو تو شیشے کی سطح کا رقبہ کیا ہے؟ (اشارہ: مربع کا رقبہ = لمبائی × لمبائی) || یوه ښیښه د مربع په شکل پرې شوې ده. که د ښیښې اوږدوالی 98 cm وي، د ښیښې د سطحې مساحت څومره دی؟ (اشاره: د مربع مساحت = اوږدوالی × اوږدوالی)
+solution 9604 cm²
+ss Area of a square = length × length. Here the length is 98 cm. || مربع کا رقبہ = لمبائی × لمبائی۔ یہاں لمبائی 98 cm ہے۔ || د مربع مساحت = اوږدوالی × اوږدوالی. دلته اوږدوالی 98 cm دی.
+sm \text{Area} = 98 \times 98
+suse square 98
+ss So the area of the glass is 9604 square centimetres (cm²). || لہٰذا شیشے کا رقبہ 9604 مربع سینٹی میٹر (cm²) ہے۔ || نو د ښیښې مساحت 9604 مربع سانتي متره (cm²) دی.
+endsolution
+endexercise
+box info | Think Higher || مزید غور کریں || نور فکر وکړئ
+q • | The length of a side of a square shaped park is 26 metres. What will be the cost of grassing the park at the rate of Rs 320 per metre square? || مربع شکل کے ایک پارک کے ضلع کی لمبائی 26 میٹر ہے۔ 320 روپے فی مربع میٹر کی شرح سے پارک میں گھاس لگانے کی لاگت کیا ہوگی؟ || د یو مربع شکله پارک د یوې ضلعې اوږدوالی 26 متره دی. په هر مربع متر 320 روپۍ نرخ د پارک د واښه کولو لګښت به څومره وي؟
+solution Rs 216320
+ss First find the area of the square park: side × side. || پہلے مربع پارک کا رقبہ معلوم کریں: ضلع × ضلع۔ || لومړی د مربع پارک مساحت معلوم کړئ: ضلع × ضلع.
+suse square 26
+ss The area is 676 square metres. Each square metre costs Rs 320, so multiply 676 by 320. || رقبہ 676 مربع میٹر ہے۔ ہر مربع میٹر کی لاگت 320 روپے ہے، اس لیے 676 کو 320 سے ضرب دیں۔ || مساحت 676 مربع متره ده. هر مربع متر 320 روپۍ لګښت لري، نو 676 په 320 کې ضرب کړئ.
+sm 676 \times 320 = 676 \times 300 + 676 \times 20 = 202800 + 13520 = 216320
+ss The cost of grassing the park is Rs 216320. || پارک میں گھاس لگانے کی لاگت 216320 روپے ہے۔ || د پارک د واښه کولو لګښت 216320 روپۍ دی.
+endsolution
+q • | Sehrish wants to distribute Rs 1000 among needy children on Eid. For this purpose, she needs change of Rs 1000 in smaller denominations. In how many ways can she get the change in smaller denominations? || سحرش عید پر ضرورت مند بچوں میں 1000 روپے تقسیم کرنا چاہتی ہے۔ اس مقصد کے لیے اسے 1000 روپے کی چھوٹے نوٹوں میں ریزگاری چاہیے۔ وہ کتنے طریقوں سے چھوٹے نوٹوں میں ریزگاری لے سکتی ہے؟ || سحرش غواړي د اختر پر ورځ اړو ماشومانو ته 1000 روپۍ ووېشي. د دې لپاره د 1000 روپیو په کوچنیو نوټونو ماتولو ته اړتیا لري. په څو ډوله کولی شي په کوچنیو نوټونو ماتې ترلاسه کړي؟
+solution Open-ended: e.g. 2 × Rs 500, 5 × Rs 100 + 1 × Rs 500, 10 × Rs 100, 20 × Rs 50, 50 × Rs 20, 100 × Rs 10 …
+ss Think of the note values that divide 1000 exactly: Rs 500, 100, 50, 20 and 10 (they are factors of 1000). || ان نوٹوں کے بارے میں سوچیں جو 1000 کو پورا پورا تقسیم کرتے ہیں: 500، 100، 50، 20 اور 10 روپے (یہ 1000 کے اجزائے ضربی ہیں)۔ || هغه نوټونه په پام کې ونیسئ چې 1000 په بشپړ ډول وېشي: 500، 100، 50، 20 او 10 روپۍ (دا د 1000 ضربي اجزا دي).
+sm 1000 = 2 \times 500 = 10 \times 100 = 20 \times 50 = 50 \times 20 = 100 \times 10
+ss Each line above is one way using a single kind of note. Mixing notes gives many more ways, e.g. 1 × Rs 500 + 5 × Rs 100, so the question is open-ended; list as many ways as you can. || اوپر ہر سطر ایک ہی قسم کے نوٹ سے ایک طریقہ ہے۔ نوٹ ملا کر اور بہت سے طریقے بنتے ہیں، مثلاً 500 روپے کا 1 نوٹ + 100 روپے کے 5 نوٹ، اس لیے یہ کھلا سوال ہے؛ جتنے طریقے ہو سکیں لکھیں۔ || پورته هره کرښه د یو ډول نوټ په مرسته یوه لاره ده. د نوټونو په ګډولو نورې ډېرې لارې جوړېږي، لکه د 500 روپیو 1 نوټ + د 100 روپیو 5 نوټونه، نو دا خلاصه پوښتنه ده؛ هر څومره لارې چې کولی شئ ولیکئ.
+endsolution
+q • | Hamza is thinking of a number between 1 to 100. Use the given clues to find the number. || حمزہ 1 سے 100 کے درمیان ایک عدد کے بارے میں سوچ رہا ہے۔ دیے گئے اشاروں سے وہ عدد معلوم کریں۔ || حمزه د 1 او 100 ترمنځ د یو عدد په اړه فکر کوي. د ورکړل شوو نښو په مرسته هغه عدد معلوم کړئ.
+qp • | The number is greater than 10. || عدد 10 سے بڑا ہے۔ || عدد له 10 څخه لوی دی.
+qp • | The number is not a multiple of 4. || عدد 4 کا ضعف نہیں ہے۔ || عدد د 4 ضرب نه دی.
+qp • | The number is not a multiple of 8 as well. || عدد 8 کا بھی ضعف نہیں ہے۔ || عدد د 8 ضرب هم نه دی.
+qp • | 6 is the factor of this number. || 6 اس عدد کا جزوِ ضربی ہے۔ || 6 د دې عدد ضربي جز دی.
+qp • | The number is a multiple of 9. || عدد 9 کا ضعف ہے۔ || عدد د 9 ضرب دی.
+qp • | The number is even. || عدد جفت ہے۔ || عدد جفت دی.
+qp • | Its ones digit is greater than its tens digit. || اس کا اکائی کا ہندسہ دہائی کے ہندسے سے بڑا ہے۔ || د یوو رقم یې د لسو له رقم څخه لوی دی.
+qp • | Its tens digit ☐ || اس کا دہائی کا ہندسہ ☐ || د لسو رقم یې ☐
+box info
+p Hint: Use the hundreds chart to help you. || اشارہ: مدد کے لیے سو کے چارٹ کا استعمال کریں۔ || اشاره: د مرستې لپاره د سلو چارټ وکاروئ.
+endbox
+qsolution 18 (tens digit 1)
+ss Clue: "6 is a factor" and "multiple of 9" → the number is a multiple of both 6 and 9, so it is a multiple of their LCM, 18. || اشارہ: "6 جزوِ ضربی ہے" اور "9 کا ضعف" → عدد 6 اور 9 دونوں کا ضعف ہے، یعنی ان کے ذو اضعاف اقل 18 کا ضعف ہے۔ || نښه: "6 ضربي جز دی" او "د 9 ضرب" → عدد د 6 او 9 دواړو ضرب دی، یعنې د هغوی د کوچني مشترک ضرب 18 ضرب دی.
+sm 18,\ 36,\ 54,\ 72,\ 90
+ss These are the multiples of 18 up to 100. All are even and greater than 10. || یہ 100 تک 18 کے اضعاف ہیں۔ سب جفت ہیں اور 10 سے بڑے ہیں۔ || دا تر 100 پورې د 18 ضربونه دي. ټول جفت او له 10 څخه لوی دي.
+ss Remove multiples of 4 (and 8): 36 = 4 × 9 and 72 = 4 × 18 are crossed out. Left: 18, 54, 90. || 4 (اور 8) کے اضعاف نکال دیں: 36 = 4 × 9 اور 72 = 4 × 18 کٹ گئے۔ باقی: 18، 54، 90۔ || د 4 (او 8) ضربونه لرې کړئ: 36 = 4 × 9 او 72 = 4 × 18 لرې شول. پاتې: 18، 54، 90.
+sm \cancel{36},\ \cancel{72} \;\Rightarrow\; 18,\ 54,\ 90
+ss Ones digit greater than tens digit: 18 → 8 > 1 ✓; 54 → 4 < 5 ✗; 90 → 0 < 9 ✗. || اکائی کا ہندسہ دہائی سے بڑا: 18 → 8 > 1 ✓؛ 54 → 4 < 5 ✗؛ 90 → 0 < 9 ✗۔ || د یوو رقم د لسو تر رقم لوی: 18 → 8 > 1 ✓؛ 54 → 4 < 5 ✗؛ 90 → 0 < 9 ✗.
+ss Hamza's number is 18, and its tens digit is 1. || حمزہ کا عدد 18 ہے اور اس کا دہائی کا ہندسہ 1 ہے۔ || د حمزه عدد 18 دی او د لسو رقم یې 1 دی.
+endsolution
+endbox
+@sec u1-summary | Summary || خلاصہ || لنډیز
+## Summary || خلاصہ || لنډیز
+- The smallest factor of any number is 1 and the greatest factor of any number is the number itself. || کسی بھی عدد کا سب سے چھوٹا جزوِ ضربی 1 اور سب سے بڑا جزوِ ضربی وہ عدد خود ہوتا ہے۔ || د هر عدد تر ټولو کوچنی ضربي جز 1 او تر ټولو لوی ضربي جز پخپله هماغه عدد وي.
+- The numbers greater than 1 have at least two factors. || 1 سے بڑے اعداد کے کم از کم دو اجزائے ضربی ہوتے ہیں۔ || له 1 څخه لوی عددونه لږ تر لږه دوه ضربي اجزا لري.
+box info | Vocabulary || ذخیرۂ الفاظ || لغتونه
+- Factors || اجزائے ضربی || ضربي اجزا
+- Multiples || اضعاف || ضربونه
+- Prime factorization || مفرد اجزائے ضربی میں تجزیہ || لومړني ضربي تجزیه
+- HCF || عاد اعظم || لوی مشترک قاسم
+- LCM || ذو اضعاف اقل || کوچنی مشترک ضرب
+endbox
+@issue Think Higher: Hamza's last clue "Its tens digit ☐" is an unfinished box in the source; kept as printed. Sehrish's question is open-ended (no single answer).

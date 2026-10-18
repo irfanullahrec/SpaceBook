@@ -1,0 +1,22 @@
+@printed 51
+@sec add-2digit-1digit | Addition of 2-digit Numbers and 1-digit Numbers || دو ہندسی اور ایک ہندسی اعداد کی جمع || د دوه رقمي او یو رقمي عددونو جمع
+# Addition of 2-digit Numbers and 1-digit Numbers || دو ہندسی اور ایک ہندسی اعداد کی جمع || د دوه رقمي او یو رقمي عددونو جمع
+p Attiya had 12 storybooks. Her mother gave her 3 more books. How many storybooks does she have altogether? || عطیہ کے پاس ۱۲ کہانیوں کی کتابیں تھیں۔ اس کی امی نے اسے ۳ اور کتابیں دیں۔ اب اس کے پاس کل کتنی کہانیوں کی کتابیں ہیں؟ || د عطیې سره ۱۲ د کیسو کتابونه وو. مور یې ورته ۳ نور کتابونه ورکړل. اوس یې ټول څو د کیسو کتابونه دي؟
+cnt book.teal:3 frame book.teal:12/4 frame || 3 books and 12 books || ۳ کتابیں اور ۱۲ کتابیں || ۳ کتابونه او ۱۲ کتابونه
+p To find the total number of books, we need to add 12 and 3. Let's count forward 3 steps from 12. || کتابوں کی کل تعداد معلوم کرنے کے لیے ہمیں ۱۲ اور ۳ جمع کرنے ہوں گے۔ آئیں ۱۲ سے ۳ قدم آگے گنیں۔ || د کتابونو د ټول شمېر موندلو لپاره باید ۱۲ او ۳ جمع کړو. راځئ له ۱۲ نه ۳ ګامه مخ ته وشمېرو.
+hops 12,13,14,15 | 1 || 12 → 13 → 14 → 15 || ۱۲ ← ۱۳ ← ۱۴ ← ۱۵ || ۱۲ ← ۱۳ ← ۱۴ ← ۱۵
+p We can add numbers by writing them in tens and ones. || ہم اعداد کو دہائیوں اور اکائیوں میں لکھ کر جمع کر سکتے ہیں۔ || موږ عددونه په لسیزو او یووونو کې لیکلو سره جمع کولای شو.
+tens 1 2 || 12 = 1 ten and 2 ones || ۱۲ = ۱ دہائی اور ۲ اکائیاں || ۱۲ = ۱ لسیزه او ۲ یووونه
+tens 0 3 || + 3 ones || + ۳ اکائیاں || + ۳ یووونه
+table Adding in tens and ones || دہائیوں اور اکائیوں میں جمع || په لسیزو او یووونو کې جمع
+th  | T | O
+tr Storybooks Attiya had || عطیہ کی کتابیں || د عطیې کتابونه | 1 | 2
+tr Mother gave her (+) || امی نے دیں (+) || مور یې ورکړل (+) |  | 3
+tr Total books || کل کتابیں || ټول کتابونه | 1 | 5
+endtable
+p Step 1: Add the ones. 2 ones + 3 ones = 5 ones || پہلا قدم: اکائیاں جمع کریں۔ ۲ اکائیاں + ۳ اکائیاں = ۵ اکائیاں || لومړی ګام: یووونه جمع کړئ. ۲ یووونه + ۳ یووونه = ۵ یووونه
+p Step 2: Add the tens. 1 ten + 0 tens = 1 ten || دوسرا قدم: دہائیاں جمع کریں۔ ۱ دہائی + ۰ دہائیاں = ۱ دہائی || دویم ګام: لسیزې جمع کړئ. ۱ لسیزه + ۰ لسیزې = ۱ لسیزه
+p So, Attiya has 15 storybooks altogether. || لہٰذا عطیہ کے پاس کل ۱۵ کہانیوں کی کتابیں ہیں۔ || نو د عطیې سره ټول ۱۵ د کیسو کتابونه دي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Draw a place value chart on the board and write different 1-digit numbers on it. Now ask students to add these numbers. || تختے پر مقامی قیمت کا چارٹ بنائیں اور اس پر مختلف ایک ہندسی اعداد لکھیں۔ اب طلبہ سے یہ اعداد جمع کروائیں۔ || په تخته د مکاني ارزښت چارټ جوړ کړئ او پرې بېل یو رقمي عددونه ولیکئ. اوس له زده کوونکو وغواړئ چې دا عددونه جمع کړي.
+endbox

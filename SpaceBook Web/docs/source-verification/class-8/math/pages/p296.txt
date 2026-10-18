@@ -1,0 +1,26 @@
+@printed 294
+@issue The top of the scan is cropped: the sentence about the word "and" begins "The word 'and' means that we are talking about the probability of only those outcomes that satisfy more than one event at the same time." (the first words are partly cut and are restored from the visible text: "…we are talking about the probability of only those outcomes that satisfy more than one event at the same time."). The text prints "Find weather the events are mutually exclusive or not" (for "whether"), and "A = {an odd}" and "B = {2}" in braces as printed. The Example 2 solution prints "= 4/6 = 2/3" on separate lines. The right-hand Note it down boxes read: "To describe the probability of a single event A occurring, we use the notation P(A)." and "For mutually exclusive events: P(A or B) = P(A∪B) = P(A) + P(B); P(A and B) = P(A∩B) = 0".
+p The word "and" means that we are talking about the probability of only those outcomes that satisfy more than one event at the same time. The word "or" means that we are talking about the probability of any of the outcomes. || لفظ "اور" کا مطلب ہے کہ ہم صرف ان نتائج کے احتمال کی بات کر رہے ہیں جو ایک سے زیادہ واقعات کو بیک وقت پورا کرتے ہوں۔ لفظ "یا" کا مطلب ہے کہ ہم کسی بھی نتیجے کے احتمال کی بات کر رہے ہیں۔ || کلمه "او" معنا دا ده چې موږ یوازې د هغو پایلو د احتمال خبره کوو چې له یوې څخه ډېرې پېښې په یو وخت کې پوره کوي. کلمه "یا" معنا دا ده چې موږ د هرې پایلې د احتمال خبره کوو.
+example 1
+p Suppose, A = the vehicle's movement is towards east, B = the vehicle's movement is towards west. Then we can say that both the events cannot occur at the same time. So, "the probability of **A and B** together equals 0 (impossible)": || فرض کریں A = گاڑی کی حرکت مشرق کی طرف ہے، B = گاڑی کی حرکت مغرب کی طرف ہے۔ تب ہم کہہ سکتے ہیں کہ دونوں واقعات بیک وقت رونما نہیں ہو سکتے۔ لہٰذا "**A اور B** کا مشترکہ احتمال 0 (ناممکن) کے برابر ہے": || فرض کړئ A = د موټر حرکت ختیځ ته دی، B = د موټر حرکت لویدیځ ته دی. نو موږ ویلی شو چې دواړه پېښې په یو وخت نشي پېښېدای. نو "د **A او B** ګډ احتمال له 0 (ناشونې) سره برابر دی":
+eq P(A \text{ and } B) = 0 \text{ as A and B can never occur together.}
+p But also, we can say that "The probability of **A or B** equals the sum of their individual probabilities". || لیکن ہم یہ بھی کہہ سکتے ہیں کہ "**A یا B** کا احتمال ان کے انفرادی احتمالات کے مجموعے کے برابر ہے"۔ || خو موږ دا هم ویلی شو چې "د **A یا B** احتمال د هغوی د انفرادي احتمالاتو له مجموعې سره برابر دی".
+eq P(A \text{ or } B) = P(A) + P(B)
+p Consider the examples. || مثالوں پر غور کریں۔ || بېلګو ته پام وکړئ.
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p To describe the probability of a single event A occurring, we use the notation P(A). || کسی ایک واقعے A کے رونما ہونے کے احتمال کو بیان کرنے کے لیے ہم علامت P(A) استعمال کرتے ہیں۔ || د یوې پېښې A د پېښېدو د احتمال د بیانولو لپاره موږ نښه P(A) کاروو.
+endbox
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p For mutually exclusive events: || باہمی طور پر خارج واقعات کے لیے: || د متقابل ځانګړو پېښو لپاره:
+eq P(A \text{ or } B) = P(A \cup B) = P(A) + P(B)
+eq P(A \text{ and } B) = P(A \cap B) = 0
+endbox
+endexample
+example 2
+p A die is rolled. Find weather the events are mutually exclusive or not. Then calculate the probability P(A and B) and P(A or B). || ایک پانسہ پھینکا جاتا ہے۔ معلوم کریں کہ واقعات باہمی طور پر خارج ہیں یا نہیں۔ پھر احتمال P(A اور B) اور P(A یا B) کا حساب کریں۔ || یو ټاس غورځول کېږي. پیدا کړئ چې پېښې متقابل ځانګړې دي که نه. بیا احتمال P(A او B) او P(A یا B) محاسبه کړئ.
+eq A = \{\text{an odd}\},\qquad B = \{2\}
+## Solution: || حل: || حل:
+p The events A and B are mutually exclusive as these two events cannot happen at the same time. Either we can get an odd or we can get 2. There is no number which is both odd and 2. The intersection of these two events A and B is the empty set. So, the probability of occurring both at a time is zero. || واقعات A اور B باہمی طور پر خارج ہیں کیونکہ یہ دونوں واقعات ایک ہی وقت میں نہیں ہو سکتے۔ یا تو ہمیں طاق عدد مل سکتا ہے یا 2۔ کوئی ایسا عدد نہیں جو طاق بھی ہو اور 2 بھی۔ ان دونوں واقعات A اور B کا تقاطع خالی سیٹ ہے۔ لہٰذا دونوں کے ایک ساتھ ہونے کا احتمال صفر ہے۔ || پېښې A او B متقابل ځانګړې دي ځکه چې دا دوه پېښې په یو وخت نشي پېښېدای. یا خو موږ طاق عدد ترلاسه کولی شو یا 2. داسې هېڅ عدد نشته چې هم طاق وي او هم 2. د دې دوو پېښو A او B تقاطع تش سیټ دی. نو د دواړو د یو ځای پېښېدو احتمال صفر دی.
+eq P(A \text{ and } B) = P(A \cap B) = 0\ \text{ (as the two events cannot have any common element).}
+eq \begin{aligned}P(A \text{ or } B) &= P(A \cup B)\\ &= P(A) + P(B) = \frac{3}{6} + \frac{1}{6}\\ &= \frac{4}{6}\\ &= \frac{2}{3}\end{aligned}
+endexample

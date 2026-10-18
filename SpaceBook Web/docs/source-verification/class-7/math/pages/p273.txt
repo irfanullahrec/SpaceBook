@@ -1,0 +1,26 @@
+@printed 269
+q 8 | The following data are the weight (in grams) of different kinds of candies). Draw a histogram for this continuous data. || درج ذیل ڈیٹا مختلف قسم کی ٹافیوں کا وزن (گرام میں) ہے۔ اس مسلسل ڈیٹا کے لیے ہسٹوگرام بنائیں۔ || لاندې معلومات د بېلابېلو ډولونو ټافیو وزن (په ګرام) دی. د دې پرلپسې معلوماتو لپاره هسټوګرام رسم کړئ.
+m 60, 60.5, 61, 61, 61.5, 63.5, 63.5, 63.5, 64, 64, 64, 64, 64, 64, 64, 64.5, 64.5, 64.5, 64.5, 64.5, 64.5, 64.5, 64.5, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 66.5, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67.5, 67.5, 67.5, 67.5, 67.5, 67.5, 67.5, 68, 68, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69.5, 69.5, 69.5, 69.5, 69.5, 70, 70, 70, 70, 70, 70, 70.5, 70.5, 70.5, 71, 71, 71
+@issue A stray closing bracket is printed after "candies)".
+q 9 | Draw histogram for the discrete data. || منفصل ڈیٹا کے لیے ہسٹوگرام بنائیں۔ || د جلا معلوماتو لپاره هسټوګرام رسم کړئ.
+m 9, 9, 9.5, 9.5, 10, 10, 10, 10, 10, 10, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11.5, 11.5, 11.5, 11.5, 11.5, 11.5, 11.5, 12, 12, 12, 12, 12, 12, 12, 12.5, 12.5, 12.5, 12.5, 14
+@issue The data in Q9 include decimals (9.5, 10.5, …), so it is not discrete data as the question says; kept as printed.
+q 10 | Construct the frequency distribution of 35 persons when their heights (in inches) are given below. Then calculate the mean for the grouped data. || 35 افراد کی تعددی تقسیم بنائیں جن کے قد (انچ میں) نیچے دیے گئے ہیں۔ پھر گروہی ڈیٹا کا اوسط معلوم کریں۔ || د 35 کسانو د تکرار وېش جوړ کړئ چې قدونه یې (په انچو) لاندې ورکړل شوي. بیا د ډلبندي معلوماتو اوسط محاسبه کړئ.
+m 60, 72, 70, 69, 58, 59, 60, 63, 62, 60, 72, 72, 70, 71, 57, 65, 67, 65, 66, 53, 55, 65, 60, 72, 70, 69, 72, 72, 60, 57, 63, 65, 66, 72, 59
+q 11 | Find the mean, median and mode of the following. || درج ذیل کا اوسط، وسطانیہ اور عادہ معلوم کریں۔ || د لاندې اوسط، میډین او موډ پیدا کړئ.
+qp a | 250, 125, 620, 180, 200, 125, 200, 180
+qp b | 12, 18, 15, 16, 12, 15, 18, 18, 18, 18, 16, 19
+q 12 | Look at the marbles. Sidra picked up one marble without looking at it. Find: || کنچوں کو دیکھیں۔ سدرہ نے بغیر دیکھے ایک کنچا اٹھایا۔ معلوم کریں: || ګولیو ته وګورئ. سدرې پرته له کتلو یوه ګولۍ پورته کړه. پیدا کړئ:
+@deco The picture shows a bag of marbles: about 9 blue marbles and 3 red marbles (no green or yellow marbles are visible).
+p a) The probability: || a) احتمال: || a) احتمال:
+p i) P(red) ii) P(Green) iii) P(Blue) iv) P(not blue) v) P(marble) vi) P(yellow) vii) P(not a marble) || i) P(سرخ) ii) P(سبز) iii) P(نیلا) iv) P(نیلا نہیں) v) P(کنچا) vi) P(پیلا) vii) P(کنچا نہیں) || i) P(سره) ii) P(زرغونه) iii) P(آبي) iv) P(آبي نه) v) P(ګولۍ) vi) P(ژېړه) vii) P(ګولۍ نه)
+p b) Find the complement of each event || b) ہر واقعے کا تکملہ معلوم کریں || b) د هرې پېښې متمم پیدا کړئ
+p c) Identify certain, impossible and equally likely events (If any) || c) یقینی، ناممکن اور یکساں امکان والے واقعات کی نشاندہی کریں (اگر کوئی ہوں) || c) یقیني، ناشونې او مساوي امکان لرونکې پېښې وپېژنئ (که وي)
+endexercise
+box info | Math Project || ریاضی کا منصوبہ || د ریاضي پروژه
+p **Material Required:** Chart papers • Graph papers • Glu stick/thumb pins || **درکار سامان:** چارٹ پیپر • گراف پیپر • گلو اسٹک/تھمب پن || **اړین توکي:** چارټ کاغذونه • ګراف کاغذونه • ګلو سټک/ډرډ پنونه
+p **Procedure:** || **طریقۂ کار:** || **کړنلاره:**
+- Work in groups. || گروپوں میں کام کریں۔ || په ډلو کې کار وکړئ.
+- Each member of a group will be assigned a task e.g. organize the data using graphs, calculating mean, median and mode, draw frequency distribution chart and histogram for the data. || گروپ کے ہر رکن کو ایک کام دیا جائے گا مثلاً گراف سے ڈیٹا ترتیب دینا، اوسط، وسطانیہ اور عادہ معلوم کرنا، ڈیٹا کے لیے تعددی تقسیم کا چارٹ اور ہسٹوگرام بنانا۔ || د ډلې هر غړي ته به یوه دنده ورکړل شي لکه د ګرافونو په مرسته د معلوماتو تنظیمول، د اوسط، میډین او موډ محاسبه، د معلوماتو لپاره د تکرار وېش چارټ او هسټوګرام رسمول.
+- Each group then Present their work and explain what they have concluded about what type of chart was suitable for which kind of data, or what measure of central tendency for various collected data values is more suitable than the other. || پھر ہر گروپ اپنا کام پیش کرے اور وضاحت کرے کہ انہوں نے کیا نتیجہ نکالا کہ کس قسم کا چارٹ کس قسم کے ڈیٹا کے لیے موزوں تھا، یا مختلف جمع کردہ ڈیٹا کے لیے مرکزی رجحان کی کون سی پیمائش دوسری سے زیادہ موزوں ہے۔ || بیا هره ډله خپل کار وړاندې کړي او تشریح کړي چې څه پایلې ته رسېدلي چې کوم ډول چارټ د کوم ډول معلوماتو لپاره مناسب و، یا د بېلابېلو راټولو شویو معلوماتو لپاره د مرکزي تمایل کومه اندازه له بلې ډېره مناسبه ده.
+endbox

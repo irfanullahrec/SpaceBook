@@ -1,0 +1,31 @@
+@printed 97
+@issue The printed shading differs from the captions: Fig. 1.15 also shades the A ∩ B lens, and Fig. 1.17 leaves the A-only and B-only parts unshaded. The figures are redrawn with the regions each caption names: (A ∪ B)′ and A′ ∩ B′ = outside both circles; (A ∩ B)′ and A′ ∪ B′ = everything except the lens.
+@issue Figure numbers are printed "Fig. 1.15–1.18" in Unit 5; kept as printed. Example 2 says "the above sets A, B, C" although only A and B are used.
+## 5.3.7 De-Morgan's Law || 5.3.7 ڈی مورگن کا قانون || 5.3.7 د ډي مورګن قانون
+m It has two parts: i) $(A \cup B)^c = A^c \cap B^c$
+box info | Math History || ریاضی کی تاریخ || د ریاضي تاریخ
+p Augustus De-Morgan (1806 - 1871) a British Mathematician formulated the De-Morgan's Laws. || آگسٹس ڈی مورگن (1806 - 1871)، ایک برطانوی ریاضی دان، نے ڈی مورگن کے قوانین وضع کیے۔ || اګسټس ډي مورګن (1806 - 1871) یو برتانوي ریاضي پوه، د ډي مورګن قوانین جوړ کړل.
+endbox
+example 1
+m For U = {1,2,3,...,12}
+m A = {7,8,9,10,11,12}
+m B = {3,5,7,9,11}
+p (A ∪ B)ᶜ and Aᶜ ∩ Bᶜ are shown below: || (A ∪ B)ᶜ اور Aᶜ ∩ Bᶜ نیچے دکھائے گئے ہیں: || (A ∪ B)ᶜ او Aᶜ ∩ Bᶜ لاندې ښودل شوي:
+venn sets=A,B | U=U | a=8 10 12 | ab=7 9 11 | b=3 5 | out=1 2 4 6 | shade=out | note=Fig. 1.15 (A ∪ B)′
+venn sets=A,B | U=U | a=8 10 12 | ab=7 9 11 | b=3 5 | out=1 2 4 6 | shade=out | note=Fig. 1.16 A′ ∩ B′
+p The shaded region in above diagrams show that (A ∪ B)′ = A′ ∩ B′. || اوپر کی شکلوں میں سایہ دار حصہ ظاہر کرتا ہے کہ (A ∪ B)′ = A′ ∩ B′۔ || په پورتنیو شکلونو کې سیوري شوې سیمه ښيي چې (A ∪ B)′ = A′ ∩ B′.
+endexample
+m ii) (A ∩ B)′ = A′ ∪ B′
+example 2
+p For the above sets A, B, C this law is demonstrated through the following figures: || اوپر کے سیٹوں A، B، C کے لیے یہ قانون درج ذیل شکلوں سے واضح کیا گیا ہے: || د پورتنیو A، B، C سېټونو لپاره دا قانون په لاندې شکلونو ښودل شوی:
+venn sets=A,B | U=U | a=8 10 12 | ab=7 9 11 | b=3 5 | out=1 2 4 6 | shade=out,a,b | note=Fig. 1.17 (A ∩ B)′
+venn sets=A,B | U=U | a=8 10 12 | ab=7 9 11 | b=3 5 | out=1 2 4 6 | shade=out,a,b | note=Fig. 1.18 A′ ∪ B′
+p The shaded region in both figures show that (A ∩ B)′ = A′ ∪ B′. || دونوں شکلوں میں سایہ دار حصہ ظاہر کرتا ہے کہ (A ∩ B)′ = A′ ∪ B′۔ || په دواړو شکلونو کې سیوري شوې سیمه ښيي چې (A ∩ B)′ = A′ ∪ B′.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+m If A = $\{x \mid x \in N \wedge x < 6\}$, B = $\{x \mid x \in W \wedge 3 \leq x \leq 5\}$, F = $\{x \mid x \in Z \wedge -1 \leq x < 4\}$
+p Verify the following using the Venn diagrams. || وین ڈایاگرام کے ذریعے درج ذیل کی تصدیق کریں۔ || د وین ډیاګرامونو په مرسته لاندې تایید کړئ.
+qp i | A ∩ (B ∩ F) = (A ∩ B) ∩ F
+qp ii | A ∪ (B ∩ F) = (A ∪ B) ∩ (A ∪ F)
+qp iii | A ∩ (B ∪ F) = (A ∩ B) ∪ (A ∩ F)
+endbox

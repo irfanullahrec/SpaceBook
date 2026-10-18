@@ -1,0 +1,43 @@
+@printed 104
+@deco Question strips with diamond numerals; six empty answer boxes; a three-column hint table; two pictures (a beach; the sun's rays reaching the earth) with lined answer boxes.
+q 3 | دیے ہوئے موسمی حالات کے بارے میں بتائیں کہ یہ موسمی کیفیت ہے یا آب و ہوا؟ || Tell about the given weather conditions whether they are weather or climate. || د ورکړل شویو هوايي حالاتو په اړه ووایئ چې هوا (موسم) دي که اقلیم؟
+qp i | لاہور میں پچھلے تین دن سے بارش ہو رہی ہے۔ || It has been raining in Lahore for the last three days. || په لاهور کې د تېرو درېیو ورځو راهیسې باران اورېږي.
+sol موسم ## Agent answer (a short-time condition). || Weather || هوا (موسم)
+qp ii | پاکستان میں دسمبر اور جنوری میں شدید سردی پڑتی ہے۔ || In Pakistan it is very cold in December and January. || په پاکستان کې په ډسمبر او جنورۍ کې سخته یخني وي.
+sol آب و ہوا ## Agent answer (the usual condition every year). || Climate || اقلیم
+qp iii | ہر سال بارشوں کا موسم جولائی اور اگست میں آتا ہے۔ || Every year the rainy season comes in July and August. || هر کال د بارانونو موسم په جولای او اګست کې راځي.
+sol آب و ہوا ## Agent answer. || Climate || اقلیم
+qp iv | کل پشاور کا درجۂ حرارت 35 ڈگری سینٹی گریڈ تھا۔ || Yesterday the temperature of Peshawar was 35 degrees centigrade. || پرون د پېښور تودوخه ۳۵ درجې سانتي ګراد وه.
+sol موسم ## Agent answer. || Weather || هوا (موسم)
+qp v | اس وقت ہوا کا رخ مغرب کی جانب ہے۔ || At present the wind is blowing towards the west. || اوس مهال د باد لوری لوېديځ ته دی.
+sol موسم ## Agent answer. || Weather || هوا (موسم)
+qp vi | صحرائے اعظم (ریگستان) میں سالانہ 4 انچ بارش ہوتی ہے۔ || The Sahara (desert) gets 4 inches of rain a year. || په صحرای اعظم (شګلن دښته) کې کلنی ۴ انچه باران اورېږي.
+sol آب و ہوا ## Agent answer (an average over many years). || Climate || اقلیم
+q 4 | دیے گئے اشاروں کے نیچے لکھیں کہ یہ کون سا موسمی عنصر ہے؟ || Write under the given hints which element of weather it is. || د ورکړل شویو نښو لاندې ولیکئ چې دا د هوا کوم توکی دی؟
+table || ||
+th پانی کے قطرے، مقیاس المطر || Drops of water, rain gauge || د اوبو څاڅکي، باران میچ | سردی یا گرمی کی شدت، سینٹی گریڈ || Intensity of cold or heat, centigrade || د یخنۍ یا ګرمۍ شدت، سانتي ګراد | سمت اور رفتار، بادنما اور باد پیما || Direction and speed, wind vane and anemometer || لوری او سرعت، باد نما او انیمومیټر
+tr ______ || ______ || ______ | ______ || ______ || ______ | ______ || ______ || ______
+endtable
+sol پانی کے قطرے، بارش پیما — بارش؛ گرمی یا سردی کی شدت، سینٹی گریڈ — درجۂ حرارت؛ سمت اور رفتار، بادنما اور باد پیما — ہوائیں۔ ## Agent answer from pages 98–99. || Water drops, rain gauge — Rain; intensity of hot or cold, centigrade — Temperature; direction and speed, wind vane and anemometer — Winds. || د اوبو څاڅکي، باران میچ — باران؛ د ګرمۍ یا یخنۍ شدت، سانتي ګراد — تودوخه؛ لوری او سرعت، باد نما او انیمومیټر — بادونه.
+q 5 | تصاویر دیکھ کر بتائیں کہ یہ عوامل کس طرح موسم پر اثر انداز ہوتے ہیں؟ || Look at the pictures and tell how these factors affect the weather. || انځورونه وګورئ او ووایئ چې دا عوامل څنګه پر هوا اغېز کوي؟
+svg سمندر سے فاصلہ — سمندر کے کنارے ساحل پر چلتے لوگ || Picture 1 — a beach at the edge of the sea || له سمندر واټن — د سمندر پر غاړه په ساحل ګرځېدونکي خلک
+<svg viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Beach">
+<rect width="240" height="150" fill="#7a8fa8"/><path d="M0 40 H240 V70 Q120 60 0 90z" fill="#5f6f7f"/><path d="M0 90 Q120 60 240 70 V150 H0z" fill="#b98863"/><path d="M0 90 Q60 82 110 96 Q60 110 0 120z" fill="#e8eef4" opacity=".8"/>
+<g fill="#222"><rect x="60" y="104" width="3" height="12"/><rect x="74" y="108" width="3" height="12"/><rect x="120" y="116" width="3" height="12"/><rect x="190" y="120" width="3" height="12"/></g>
+</svg>
+endsvg
+svg خطِ استوا سے فاصلہ — سورج کی متوازی شعاعیں خطِ استوا پر سیدھی اور قطبین کے قریب ترچھی پڑتی ہیں || Picture 2 — parallel rays from the sun strike the earth straight at the equator and at a slant near the poles || له استوا کرښې واټن — د لمر موازي وړانګې پر استوا مستقیمې او قطبونو ته نږدې کږې لګېږي
+<svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sun rays on the earth">
+<rect width="260" height="160" fill="#fff"/>
+<circle cx="70" cy="80" r="70" fill="#3d8fd6"/>
+<path d="M40 40 q20 -10 40 0 q-6 20 6 30 q-10 20 -30 14 q-10 -20 -16 -44z M90 96 q16 -4 24 10 q-6 22 -18 26 q-8 -18 -6 -36z" fill="#6aa84f"/>
+<path d="M0 80 H140" stroke="#fff" stroke-dasharray="4 3"/>
+<circle cx="250" cy="80" r="34" fill="#ffb300"/><g stroke="#ff8f00" stroke-width="3"><path d="M206 50 l-10 -6 M206 110 l-10 6 M210 80 h-12"/></g>
+<g stroke="#5d4037" stroke-width="1.5" fill="#5d4037"><path d="M212 30 L118 30"/><path d="M212 55 L136 55"/><path d="M212 80 L140 80"/><path d="M212 105 L136 105"/><path d="M212 130 L118 130"/></g>
+<g fill="#5d4037"><path d="M118 30 l6 -3 v6z M136 55 l6 -3 v6z M140 80 l6 -3 v6z M136 105 l6 -3 v6z M118 130 l6 -3 v6z"/></g>
+<g transform="translate(108,70)"><circle r="4" fill="#5d4037"/><rect x="-3" y="4" width="6" height="12" fill="#e53935"/></g>
+</svg>
+endsvg
+sol تصویر ۱ (سمندر سے فاصلہ): پانی جلدی گرم یا ٹھنڈا نہیں ہوتا اس لیے سمندر کے قریب ساحلی علاقے معتدل رہتے ہیں؛ سمندر سے دور جگہوں پر یہ اثر نہیں ہوتا۔ تصویر ۲ (خطِ استوا سے فاصلہ): خطِ استوا کے قریب جگہوں پر سارا سال سورج کی شعاعیں عموداً پڑتی ہیں اس لیے وہ گرم ہیں؛ دور جگہوں پر شعاعیں ترچھی پڑتی ہیں اس لیے کم گرم ہیں۔ ## Agent answer from pages 99–100. || Picture 1 (distance from the sea): water does not heat or cool quickly, so coastal areas near the sea stay moderate; places far from the sea do not get this effect. Picture 2 (distance from the equator): places near the equator get vertical sun-rays the whole year and are hot; places far from the equator get slanting rays and are less hot. || ۱ انځور (له سمندر واټن): اوبه ژر نه ګرمېږي او نه سړېږي، نو سمندر ته نږدې ساحلي سیمې معتدلې وي؛ له سمندر لرې ځایونه دا اغېز نه لري. ۲ انځور (له استوا واټن): استوا ته نږدې ځایونو ته ټول کال د لمر وړانګې عمودي لګېږي نو ګرم دي؛ لرې ځایونو ته وړانګې کږې لګېږي نو لږ ګرم دي.
+endexercise
+@issue Answers reuse the agent answers of the English-medium edition. The two pictures are redrawn as SVG.

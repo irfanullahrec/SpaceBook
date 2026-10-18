@@ -1,0 +1,43 @@
+@printed 281
+@deco Photograph of potted seedlings (decorative).
+@issue The right edge of the scan is cut off, so the right-hand column of the Step II table is partly cropped (the values −8, −3, −2, 0, 2, 4, 7 are legible). The Step III table prints "(−0)² = 0" for the deviation 0. The variance is printed as "S² = 20.85"; 146 ÷ 7 = 20.857…, which would round to 20.86 (the printed value is kept as printed). The standard-deviation Example 1 continues on the next page. The Teaching Point box is as printed.
+p **Step II:** Find the difference of mean and each of the values. Subtract the mean from each value to get the deviations from the mean. Since $\bar{x}$ = 18, take away 18 from each value. || **مرحلہ II:** اوسط اور ہر قدر کا فرق معلوم کریں۔ ہر قدر میں سے اوسط منہا کریں تاکہ اوسط سے انحرافات حاصل ہوں۔ چونکہ $\bar{x}$ = 18 ہے، ہر قدر میں سے 18 منہا کریں۔ || **II پړاو:** د منځني او هر قیمت توپیر پیدا کړئ. له هر قیمت څخه منځنی تفریق کړئ ترڅو له منځني څخه انحرافات ترلاسه شي. څرنګه چې $\bar{x}$ = 18 دی، له هر قیمت څخه 18 کم کړئ.
+table Deviations from the mean || اوسط سے انحرافات || له منځني څخه انحرافات
+th | x | (x − x̄)
+tr | 10 | 10 − 18 = −8
+tr | 15 | 15 − 18 = −3
+tr | 16 | 16 − 18 = −2
+tr | 18 | 18 − 18 = 0
+tr | 20 | 20 − 18 = 2
+tr | 22 | 22 − 18 = 4
+tr | 25 | 25 − 18 = 7
+endtable
+p **Step III:** Take square of each deviation from the mean. This will result in positive numbers. Then find the sum of these squares. || **مرحلہ III:** اوسط سے ہر انحراف کا مربع لیں۔ اس سے مثبت اعداد حاصل ہوں گے۔ پھر ان مربعوں کا مجموعہ معلوم کریں۔ || **III پړاو:** له منځني څخه د هر انحراف مربع واخلئ. دا به مثبت شمېرې جوړې کړي. بیا د دې مربعاتو مجموعه پیدا کړئ.
+table Squares of the deviations || انحرافات کے مربع || د انحرافاتو مربعات
+th | x | (x − x̄) | (x − x̄)²
+tr | 10 | 10 − 18 = −8 | (−8)² = 64
+tr | 15 | 15 − 18 = −3 | (−3)² = 9
+tr | 16 | 16 − 18 = −2 | (−2)² = 4
+tr | 18 | 18 − 18 = 0 | (−0)² = 0
+tr | 20 | 20 − 18 = 2 | (2)² = 4
+tr | 22 | 22 − 18 = 4 | (4)² = 16
+tr | 25 | 25 − 18 = 7 | (7)² = 49
+tr |  |  | Σ(x − x̄)² = 146
+endtable
+p Putting the values in the formula: || قدریں فارمولے میں رکھنے پر: || قیمتونه په فورمول کې ایښودل:
+eq S^{2} = \frac{\sum (x-\bar{x})^{2}}{n}
+eq S^{2} = \frac{146}{7}
+eq S^{2} = 20.85
+p This is the required variance for the given data values. || یہ دیے گئے ڈیٹا کی قدروں کا مطلوبہ تغیر ہے۔ || دا د ورکړل شویو معلوماتو د قیمتونو اړین تغیر دی.
+endexample
+@sec 11.2c | Standard Deviation || معیاری انحراف || معیاري انحراف
+## c) Standard Deviation || ج) معیاری انحراف || ج) معیاري انحراف
+p The standard deviation is another measure the dispersion of a data values (relative to its mean). It is the positive square root of the variance. We use the symbol σ or S to show standard deviation. || معیاری انحراف ڈیٹا کی قدروں کے پھیلاؤ (اس کی اوسط کے لحاظ سے) کی ایک اور پیمائش ہے۔ یہ تغیر کا مثبت جذر المربع ہے۔ ہم معیاری انحراف ظاہر کرنے کے لیے علامت σ یا S استعمال کرتے ہیں۔ || معیاري انحراف د معلوماتو د قیمتونو د خپرېدو (د هغه د منځني په پرتله) بله اندازه ده. دا د تغیر مثبت مربع جذر دی. موږ د معیاري انحراف د ښودلو لپاره σ یا S نښه کاروو.
+eq \text{Standard deviation} = S = \sqrt{\frac{\sum (x-\bar{x})^{2}}{n}}
+example 1
+p Grade 8 students planted some plants during plantation campaign. The following data shows the number of plants planted by 10 groups. || آٹھویں جماعت کے طلبہ نے شجرکاری مہم کے دوران کچھ پودے لگائے۔ درج ذیل ڈیٹا 10 گروہوں کے لگائے گئے پودوں کی تعداد ظاہر کرتا ہے۔ || د اتمې ټولګي زده کوونکو د ونو د کښت په کمپاین کې ځینې نباتات کېښودل. لاندې معلومات د ۱۰ ډلو لخوا د کښت شوو نباتاتو شمېر ښيي.
+eq 42,\ 60,\ 28,\ 35,\ 45,\ 40,\ 56,\ 64,\ 60,\ 70
+p Find the standard deviation for this data. || اس ڈیٹا کا معیاری انحراف معلوم کریں۔ || د دې معلوماتو معیاري انحراف پیدا کړئ.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p Conduct a poster making competition among students for making a step by step poster for calculating various measures of dispersion (range, sd, variance etc.) || طلبہ کے درمیان پوسٹر بنانے کا مقابلہ کروائیں جس میں پھیلاؤ کی مختلف پیمائشوں (حد، معیاری انحراف، تغیر وغیرہ) کے حساب کے مراحل کا پوسٹر بنایا جائے۔ || د زده کوونکو ترمنځ د پوسټر جوړولو سیالي وکړئ ترڅو د خپرېدو د بېلابېلو اندازو (رینج، معیاري انحراف، تغیر او نور) د محاسبې لپاره پړاو په پړاو پوسټر جوړ کړي.
+endbox

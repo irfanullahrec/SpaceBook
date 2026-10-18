@@ -1,0 +1,12 @@
+@printed 128
+exercise Above and below (Page 128)
+q 1 | Tick (✓) the picture where the plane is above the cloud. || اس تصویر پر (✓) کا نشان لگائیں جس میں ہوائی جہاز بادل کے اوپر ہے۔ || په هغه انځور (✓) ولګوئ چې الوتکه د ورېځې پورته ده.
+scene 360 130 ; plane@80,35,2 ; cloud@80,95,2 ; text 80 125 A ; cloud@260,30,2 ; plane@260,90,2 ; text 260 125 B || A: plane over a cloud; B: cloud over a plane || A: بادل کے اوپر جہاز؛ B: جہاز کے اوپر بادل || A: د ورېځې پورته الوتکه؛ B: د الوتکې پورته ورېځ
+sol Picture A ## In picture A the plane is higher than the cloud. || تصویر A میں جہاز بادل سے اونچا ہے۔ || په A انځور کې الوتکه له ورېځې لوړه ده.
+q 2 | Colour the objects that are below the boat. || کشتی کے نیچے والی چیزوں میں رنگ بھریں۔ || د کښتۍ لاندې شیان رنګ کړئ.
+scene 380 200 ; cloud2@80,40,2.4 ; plane.white@300,35,1.6 ; boat.white@190,100,2.2 ; line 0 125 380 125 #38bdf8 2 ; fish.white@100,165,1.4 ; fish.white@210,175,1.2 ; seahorse.white@300,170,1.2 || A cloud and a plane above; a sailing boat on the water; two fish and a sea horse in the water below || اوپر بادل اور جہاز؛ پانی پر بادبانی کشتی؛ نیچے پانی میں دو مچھلیاں اور ایک سمندری گھوڑا || پورته ورېځ او الوتکه؛ په اوبو بادباني کښتۍ؛ لاندې په اوبو کې دوه کبان او یو سمندري آس
+sol Colour the two fish and the sea horse. ## They are in the water below the boat; the cloud and the plane are above it. || وہ کشتی کے نیچے پانی میں ہیں؛ بادل اور جہاز اس کے اوپر ہیں۔ || هغوی د کښتۍ لاندې په اوبو کې دي؛ ورېځ او الوتکه یې پورته دي.
+q 3 | Encircle the object that is above the board. || تختے کے اوپر والی چیز کے گرد دائرہ لگائیں۔ || د تختې پورته شی په کړۍ کې ونیسئ.
+scene 320 180 ; box 0 0 320 180 #fef9c3 ; clockicon@160,25,1 ; board@160,75,3 ; table@80,150,1.4 ; table@160,150,1.4 ; table@240,150,1.4 || A classroom: a clock on the wall, a board below it and desks || جماعت: دیوار پر گھڑی، اس کے نیچے تختہ اور میزیں || ټولګی: په دېوال ګړۍ، لاندې یې تخته او مېزونه
+sol The clock ## The clock hangs above the board. || گھڑی تختے کے اوپر لٹکی ہے۔ || ګړۍ د تختې پورته ځړېدلې ده.
+endexercise

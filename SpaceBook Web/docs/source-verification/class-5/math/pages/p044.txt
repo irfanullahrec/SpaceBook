@@ -1,0 +1,49 @@
+@printed 39
+@deco Cartoon star mascot on the "I Have Learnt" banner.
+q 2 | Find the LCM of the following numbers using division. || درج ذیل اعداد کا ذو اضعاف اقل تقسیم کے طریقے سے معلوم کریں۔ || د لاندې عددونو کوچنی مشترک ضرب د وېش په طریقه معلوم کړئ.
+qsolve lcmdiv
+qp a | 14, 70
+qp b | 15, 30
+qp c | 45, 90
+qp d | 35, 60, 75
+qp e | 7, 21, 49
+qp f | 25, 45, 95
+qp g | 16, 32, 48
+qp h | 28, 32, 40
+qp i | 12, 14, 26
+qp j | 10, 20, 25
+qp k | 7, 14, 21
+qp l | 8, 32, 42
+q 3 | Find the minimum length of the ribbon which can be completely cut into pieces of length 45 cm, 75 cm and 85 cm without any leftover. || ربن کی وہ کم سے کم لمبائی معلوم کریں جسے 45 cm، 75 cm اور 85 cm لمبائی کے ٹکڑوں میں بغیر کچھ بچائے مکمل طور پر کاٹا جا سکے۔ || د فیتې هغه لږ تر لږه اوږدوالی معلوم کړئ چې په 45 cm، 75 cm او 85 cm اوږدو ټوټو پرته له پاتې شوني په بشپړ ډول پرې شي.
+solution 3,825 cm
+ss The length must be a multiple of 45, 75 and 85, and as small as possible → LCM. || لمبائی 45، 75 اور 85 کا ضعف ہو اور کم سے کم ہو → ذو اضعاف اقل۔ || اوږدوالی باید د 45، 75 او 85 ضرب وي او تر ټولو کوچنی وي → کوچنی مشترک ضرب.
+suse lcmpf 45, 75, 85
+endsolution
+q 4 | Find the smallest number that can be completely divided by 42, 38 and 16. || وہ سب سے چھوٹا عدد معلوم کریں جو 42، 38 اور 16 سے مکمل طور پر تقسیم ہو سکے۔ || هغه تر ټولو کوچنی عدد معلوم کړئ چې پر 42، 38 او 16 په بشپړ ډول ووېشل شي.
+solution 6,384
+ss The smallest number divisible by all of them is their LCM. || ان سب سے تقسیم ہونے والا سب سے چھوٹا عدد ان کا ذو اضعاف اقل ہے۔ || هغه تر ټولو کوچنی عدد چې پر ټولو ووېشل شي د هغوی کوچنی مشترک ضرب دی.
+suse lcmdiv 42, 38, 16
+endsolution
+q 5 | The tour buses for Badshahi Masjid leaves the station every 25 minutes, for the interior city every 15 minutes and for the zoo every 30 minutes. If the three buses leave the station simultaneously at 11:05 am, find the time when the three buses will next leave the station simultaneously. || بادشاہی مسجد کے لیے سیاحتی بسیں ہر 25 منٹ بعد، اندرونِ شہر کے لیے ہر 15 منٹ بعد اور چڑیا گھر کے لیے ہر 30 منٹ بعد اسٹیشن سے روانہ ہوتی ہیں۔ اگر تینوں بسیں صبح 11:05 بجے ایک ساتھ روانہ ہوں تو وہ وقت معلوم کریں جب تینوں بسیں دوبارہ ایک ساتھ اسٹیشن سے روانہ ہوں گی۔ || د بادشاهي جومات لپاره سیاحتي بسونه هر 25 دقیقې، د ښار دننه لپاره هر 15 دقیقې او د ژوبڼ لپاره هر 30 دقیقې وروسته له تمځای څخه حرکت کوي. که درې واړه بسونه د سهار په 11:05 یوځای حرکت وکړي، هغه وخت معلوم کړئ چې درې واړه بسونه به بیا یوځای له تمځای څخه حرکت کوي.
+solution 1:35 pm (after 150 minutes)
+ss They leave together again after the LCM of 25, 15 and 30 minutes. || وہ 25، 15 اور 30 منٹ کے ذو اضعاف اقل کے بعد دوبارہ اکٹھی روانہ ہوں گی۔ || هغوی به د 25، 15 او 30 دقیقو د کوچني مشترک ضرب وروسته بیا یوځای حرکت کوي.
+suse lcmdiv 25, 15, 30
+ss 150 minutes = 2 hours 30 minutes; 11:05 am + 2 h 30 min = 1:35 pm. || 150 منٹ = 2 گھنٹے 30 منٹ؛ صبح 11:05 + 2 گھنٹے 30 منٹ = دوپہر 1:35۔ || 150 دقیقې = 2 ساعته 30 دقیقې؛ د سهار 11:05 + 2 ساعته 30 دقیقې = د غرمې وروسته 1:35.
+endsolution
+q 6 | Boxes having 22 centimetre, 35 centimetre and 50 centimetre height respectively are to be stacked next to each other. What is the shortest possible height at which the three types of boxes will be at the same height? || بالترتیب 22 سینٹی میٹر، 35 سینٹی میٹر اور 50 سینٹی میٹر اونچائی والے ڈبوں کو ایک دوسرے کے ساتھ تہہ در تہہ رکھنا ہے۔ وہ کم سے کم اونچائی کیا ہے جس پر تینوں قسم کے ڈبے برابر اونچائی پر ہوں گے؟ || په ترتیب سره د 22 سانتي متره، 35 سانتي متره او 50 سانتي متره لوړوالي بکسونه باید یو د بل تر څنګ پر یو بل کېښودل شي. هغه لږ تر لږه لوړوالی څومره دی چې درې واړه ډوله بکسونه پکې برابر لوړ شي؟
+solution 3,850 cm
+ss Each stack height is a multiple of the box height; the first common height is the LCM of 22, 35 and 50. || ہر تہہ کی اونچائی ڈبے کی اونچائی کا ضعف ہے؛ پہلی مشترک اونچائی 22، 35 اور 50 کا ذو اضعاف اقل ہے۔ || د هرې کتار لوړوالی د بکس د لوړوالي ضرب دی؛ لومړی مشترک لوړوالی د 22، 35 او 50 کوچنی مشترک ضرب دی.
+suse lcmpf 22, 35, 50
+endsolution
+q 7 | Students of grade 5 have a mathematics test after every 3 days, English test after every 6 days and Science test after every 9 days. If all the three tests were conducted today, find, when will the three tests be conducted together again? || پانچویں جماعت کے طلبہ کا ریاضی کا ٹیسٹ ہر 3 دن بعد، انگریزی کا ہر 6 دن بعد اور سائنس کا ہر 9 دن بعد ہوتا ہے۔ اگر آج تینوں ٹیسٹ ہوئے ہوں تو معلوم کریں کہ تینوں ٹیسٹ دوبارہ ایک ساتھ کب ہوں گے؟ || د پنځم ټولګي زده کوونکي هر 3 ورځې وروسته د ریاضي ازموینه، هر 6 ورځې وروسته د انګلیسي او هر 9 ورځې وروسته د ساینس ازموینه لري. که نن درې واړه ازموینې شوې وي، معلوم کړئ چې درې واړه ازموینې به بیا کله یوځای کېږي؟
+solution After 18 days
+ss The tests fall together again after the LCM of 3, 6 and 9 days. || ٹیسٹ 3، 6 اور 9 دن کے ذو اضعاف اقل کے بعد دوبارہ اکٹھے ہوں گے۔ || ازموینې به د 3، 6 او 9 ورځو د کوچني مشترک ضرب وروسته بیا یوځای کېږي.
+suse lcmdiv 3, 6, 9
+endsolution
+endexercise
+@sec u2-summary | I Have Learnt || میں نے سیکھا || ما زده کړل
+# I Have Learnt || میں نے سیکھا || ما زده کړل
+- finding HCF of || عاد اعظم معلوم کرنا || د لوی مشترک قاسم معلومول
+-- two numbers up to 2 - digit numbers || 2 ہندسوں تک کے دو اعداد کا || د تر 2 رقمونو پورې دوو عددونو
+-- three numbers up to 2 - digit numbers || 2 ہندسوں تک کے تین اعداد کا || د تر 2 رقمونو پورې دریو عددونو
+p using prime factorization method and division method || مفرد اجزائے ضربی کے طریقے اور تقسیم کے طریقے سے || د لومړني ضربي تجزیې طریقې او د وېش طریقې په مرسته

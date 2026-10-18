@@ -1,0 +1,28 @@
+@printed 246
+p d) What percentage of the total books were sold in the 4th week? || d) کل کتابوں کا کتنا فیصد چوتھے ہفتے میں فروخت ہوا؟ || d) د ټولو کتابونو څو سلنه په څلورمه اونۍ کې وپلورل شول؟
+eq \text{Number of books sold in the 4th week} = \dfrac{\text{angle of the sector of 4th week}}{360^\circ} \times 4320 = \dfrac{42^\circ}{360^\circ} \times 4320 = 504 \text{ books}
+eq \text{Percentage of books sold in the 4th week} = \dfrac{504}{4320} \times 100 = 11.7\%
+endexample
+## Drawing a Pie Graph || پائی گراف بنانا || د پای ګراف رسمول
+p To construct a pie graph, we need to find the size of each sector (i.e. angle of each sector). It can be calculated by dividing the frequency of each observation of the data by the total number of data observations and then multiplying the answer by 360°. || پائی گراف بنانے کے لیے ہمیں ہر قطاع کا سائز (یعنی ہر قطاع کا زاویہ) معلوم کرنا ہوتا ہے۔ یہ ڈیٹا کے ہر مشاہدے کے تعدد کو مشاہدات کی کل تعداد سے تقسیم کر کے اور جواب کو 360° سے ضرب دے کر معلوم کیا جا سکتا ہے۔ || د پای ګراف د جوړولو لپاره باید د هر قطاع اندازه (یعنې د هر قطاع زاویه) معلومه کړو. دا د معلوماتو د هر مشاهدې تکرار د مشاهدو پر ټول شمېر وېشلو او بیا ځواب په 360° کې ضربولو سره محاسبه کېږي.
+eq \text{Angle of each sector} = \dfrac{\text{Frequency of each observation}}{\text{Total number of observations}} \times 360^\circ
+example 3 | The following data shows the amount five students spent on helping needy children in paying their school fees. Draw a pie graph for this data. || درج ذیل ڈیٹا وہ رقم دکھاتا ہے جو پانچ طلبہ نے ضرورت مند بچوں کی اسکول فیس ادا کرنے میں مدد پر خرچ کی۔ اس ڈیٹا کے لیے پائی گراف بنائیں۔ || لاندې معلومات هغه پیسې ښيي چې پنځو زده کوونکو د اړو ماشومانو سره د ښوونځي د فیس په ورکولو کې د مرستې لپاره مصرف کړې. د دې معلوماتو لپاره پای ګراف رسم کړئ.
+@issue The book labels this "Example 1"; numbered 3 here to keep example numbers continuous within the unit.
+table
+th | Students || طلبہ || زده کوونکي | Dania | Marwa | Fahad | Afnan | Rohaan
+tr | Amount (in Rs) || رقم (روپے میں) || پیسې (په روپیو) | 940 | 800 | 1000 | 1200 | 1100
+endtable
+p **Solution:** || **حل:** || **حل:**
+p **Step I:** Find the total amount: || **مرحلہ I:** کل رقم معلوم کریں: || **لومړی ګام:** ټولې پیسې پیدا کړئ:
+eq \text{Rs } 940 + \text{Rs } 800 + \text{Rs } 1000 + \text{Rs } 1200 + \text{Rs } 1100 = \text{Rs } 5040
+p Now calculate the angle for the sector of each category. || اب ہر زمرے کے قطاع کا زاویہ معلوم کریں۔ || اوس د هرې ډلې د قطاع زاویه محاسبه کړئ.
+p **Step II:** Next find the measurement of the central angles by using the formula. || **مرحلہ II:** اب فارمولا استعمال کر کے مرکزی زاویوں کی پیمائش معلوم کریں۔ || **دوهم ګام:** بیا د فورمول په کارولو د مرکزي زاویو اندازه پیدا کړئ.
+table
+th | Students || طلبہ || زده کوونکي | Amount (in Rs) | Measurement of central angle for each month
+tr | Dania || دانیہ || دانیه | 940 | $\frac{\text{Amount spent}}{\text{Total Amount}} \times 360^\circ = \frac{940}{5040} \times 360 = 67^\circ$
+tr | Marwa || مروہ || مروه | 800 | $\frac{\text{Amount spent}}{\text{Total Amount}} \times 360^\circ = \frac{800}{5040} \times 360 = 57^\circ$
+tr | Fahad || فہد || فهد | 1000 | $\frac{\text{Amount spent}}{\text{Total Amount}} \times 360^\circ = \frac{1000}{5040} \times 360 = 71^\circ$
+tr | Afnan || افنان || افنان | 1200 | $\frac{\text{Amount spent}}{\text{Total Amount}} \times 360^\circ = \frac{1200}{5040} \times 360 = 86^\circ$
+tr | Rohaan || روحان || روحان | 1100 | $\frac{\text{Amount spent}}{\text{Total Amount}} \times 360^\circ = \frac{1100}{5040} \times 360 = 79^\circ$
+endtable
+@issue The column header says "for each month" although the rows are students. The angles are rounded to whole degrees (67.1°, 57.1°, 71.4°, 85.7°, 78.6°) and add to 360°. Kept as printed.

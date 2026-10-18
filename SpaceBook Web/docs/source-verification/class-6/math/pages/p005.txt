@@ -1,0 +1,45 @@
+@printed 3
+@deco Cartoon girl beside the definition bubble (decorative).
+example 2 | Find the factors of 56. || 56 کے اجزائے ضربی معلوم کریں۔ || د 56 ضربي اجزا معلوم کړئ.
+p **Solution:** We can find the factors of 56 as: || **حل:** ہم 56 کے اجزائے ضربی اس طرح معلوم کر سکتے ہیں: || **حل:** موږ د 56 ضربي اجزا داسې معلومولی شو:
+m $56 = 1 \times 56$
+m $56 = 2 \times 28$
+m $56 = 4 \times 14$
+p $56 = 7 \times 8$ (factors are repeating so, we will stop here) || $56 = 7 \times 8$ (اجزائے ضربی دہرائے جا رہے ہیں، اس لیے ہم یہیں رک جائیں گے) || $56 = 7 \times 8$ (ضربي اجزا تکرارېږي، نو دلته به ودرېږو)
+p Factors of 56 are 1, 2, 4, 7, 8, 14, 28 and 56. || 56 کے اجزائے ضربی 1، 2، 4، 7، 8، 14، 28 اور 56 ہیں۔ || د 56 ضربي اجزا 1، 2، 4، 7، 8، 14، 28 او 56 دي.
+p All these factors divide the number 56 completely leaving no remainder. || یہ تمام اجزائے ضربی عدد 56 کو مکمل طور پر تقسیم کرتے ہیں اور کوئی باقی نہیں بچتا۔ || دا ټول ضربي اجزا عدد 56 په بشپړ ډول وېشي او هېڅ پاتې شونی نه پرېږدي.
+endexample
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+p The number greater than 1 has at least two factors. || 1 سے بڑے عدد کے کم از کم دو اجزائے ضربی ہوتے ہیں۔ || له 1 څخه لوی عدد لږ تر لږه دوه ضربي اجزا لري.
+endbox
+p From the above examples, we can see that: || اوپر دی گئی مثالوں سے ہم دیکھ سکتے ہیں کہ: || له پورتنیو بېلګو څخه لیدلی شو چې:
+- 1 is a factor of every number and it is the smallest factor of the numbers. || 1 ہر عدد کا جزوِ ضربی ہے اور یہ اعداد کا سب سے چھوٹا جزوِ ضربی ہے۔ || 1 د هر عدد ضربي جز دی او دا د عددونو تر ټولو کوچنی ضربي جز دی.
+- Every number is the factor of itself and it is the greatest factor. || ہر عدد اپنا جزوِ ضربی خود ہے اور یہ سب سے بڑا جزوِ ضربی ہے۔ || هر عدد د ځان ضربي جز دی او دا تر ټولو لوی ضربي جز دی.
+example 3 | Is 15 a factor of 250 ? || کیا 15، عدد 250 کا جزوِ ضربی ہے؟ || ایا 15 د 250 ضربي جز دی؟
+p **Solution:** To find if 15 is a factor of 250 or not, divide 250 by 15. || **حل:** یہ معلوم کرنے کے لیے کہ 15، عدد 250 کا جزوِ ضربی ہے یا نہیں، 250 کو 15 سے تقسیم کریں۔ || **حل:** د دې معلومولو لپاره چې 15 د 250 ضربي جز دی که نه، 250 پر 15 ووېشئ.
+longdiv 15 | 250 | 16@2 | -15@1 ; 100@2 ; -90@2 ; 10@2
+p As 15 does not divide 250 completely, it is not a factor of 250. || چونکہ 15، عدد 250 کو مکمل طور پر تقسیم نہیں کرتا، اس لیے یہ 250 کا جزوِ ضربی نہیں ہے۔ || څرنګه چې 15، عدد 250 په بشپړ ډول نه وېشي، نو دا د 250 ضربي جز نه دی.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+qp a | Find all the factors of 220. || 220 کے تمام اجزائے ضربی معلوم کریں۔ || د 220 ټول ضربي اجزا معلوم کړئ.
+qp b | Is 7 the factor of 52? || کیا 7، عدد 52 کا جزوِ ضربی ہے؟ || ایا 7 د 52 ضربي جز دی؟
+endbox
+## 1.1.2 Multiples || 1.1.2 اضعاف || 1.1.2 ضربونه
+box info
+p Multiples are the numbers obtained by multiplying a certain number by another number/integer. || اضعاف وہ اعداد ہیں جو کسی خاص عدد کو کسی دوسرے عدد/صحیح عدد سے ضرب دے کر حاصل ہوتے ہیں۔ || ضربونه هغه عددونه دي چې یو ټاکلی عدد په بل عدد/تام عدد کې د ضربولو له لارې لاسته راځي.
+endbox
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+- How we can find the multiples of numbers? || ہم اعداد کے اضعاف کیسے معلوم کر سکتے ہیں؟ || موږ څنګه د عددونو ضربونه معلومولی شو؟
+- Find the first ten multiples of two1-digit numbers? || ایک ہندسے والے دو اعداد کے پہلے دس اضعاف معلوم کریں؟ || د دوو یو رقمي عددونو لومړي لس ضربونه معلوم کړئ؟
+endbox
+example 1 | Find the first 10 multiples of 18. || 18 کے پہلے 10 اضعاف معلوم کریں۔ || د 18 لومړي 10 ضربونه معلوم کړئ.
+p **Solution:** || **حل:** || **حل:**
+p To find the multiples of 18 we recall the table of 18. || 18 کے اضعاف معلوم کرنے کے لیے ہم 18 کا پہاڑا یاد کرتے ہیں۔ || د 18 د ضربونو معلومولو لپاره د 18 جدول (پهاړه) را یادوو.
+m $1 \times 18 = 18,\quad 2 \times 18 = 36,\quad 3 \times 18 = 54,\quad 4 \times 18 = 72,$
+m $5 \times 18 = 90,\quad 6 \times 18 = 108\quad 7 \times 18 = 126,\quad 8 \times 18 = 144,$
+m $9 \times 18 = 162,\quad 10 \times 18 = 180$
+p Multiples of 18 are 18, 36, 54, 72, 90, 108, 126, 144, 162, 180. || 18 کے اضعاف 18، 36، 54، 72، 90، 108، 126، 144، 162، 180 ہیں۔ || د 18 ضربونه 18، 36، 54، 72، 90، 108، 126، 144، 162، 180 دي.
+endexample
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Write different numbers on the board and explain to the students that a multiple is a dividend into which a factor can divide. Instruct them to find the first 5 multiples of the numbers. || بورڈ پر مختلف اعداد لکھیں اور طلبہ کو سمجھائیں کہ ضعف وہ مقسوم ہے جسے جزوِ ضربی تقسیم کر سکتا ہے۔ انہیں اعداد کے پہلے 5 اضعاف معلوم کرنے کی ہدایت دیں۔ || په تخته مختلف عددونه ولیکئ او زده کوونکو ته تشریح کړئ چې ضرب هغه وېشل کېدونکی دی چې ضربي جز یې وېشلی شي. ورته ووایاست چې د عددونو لومړي 5 ضربونه معلوم کړي.
+endbox

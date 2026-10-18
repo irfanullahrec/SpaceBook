@@ -1,0 +1,37 @@
+@printed 159
+@deco Cartoon star mascot on the "I Have Learnt" banner.
+q 7 | The area of a school's main gate is $19.55\text{m}^2$. || اسکول کے مرکزی دروازے کا رقبہ $19.55\text{m}^2$ ہے۔ || د ښوونځي د اصلي دروازې مساحت $19.55\text{m}^2$ دی.
+qp a | If the width of the gate is 2.3m find its length. || اگر دروازے کی چوڑائی 2.3m ہو تو اس کی لمبائی معلوم کریں۔ || که د دروازې پلنوالی 2.3m وي، اوږدوالی یې معلوم کړئ.
+sol 8.5 m ## L = 19.55 ÷ 2.3 = 8.5. || L = 19.55 ÷ 2.3 = 8.5۔ || L = 19.55 ÷ 2.3 = 8.5.
+qp B | Find the cost of painting the gate if the rate of painting is Rs. 275 per $\text{m}^2$. || اگر رنگ کرنے کی شرح 275 روپے فی $\text{m}^2$ ہو تو دروازے کو رنگ کرنے کی لاگت معلوم کریں۔ || که د رنګ کولو نرخ په هر $\text{m}^2$ کې 275 روپۍ وي، د دروازې د رنګ کولو لګښت معلوم کړئ.
+sol Rs. 5,376.25 ## 19.55 × 275 = 5,376.25. || 19.55 × 275 = 5,376.25 روپے۔ || 19.55 × 275 = 5,376.25 روپۍ.
+q 8 | The area of a square shaped Masjid is $27{,}540\text{m}^2$ and its length is 255 metres. Calcualte: || ایک مربع شکل کی مسجد کا رقبہ $27{,}540\text{m}^2$ اور اس کی لمبائی 255 میٹر ہے۔ معلوم کریں: || د یوه مربع شکله جومات مساحت $27{,}540\text{m}^2$ او اوږدوالی یې 255 متره دی. حساب کړئ:
+qp a | The perimeter of the masjid. || مسجد کا احاطہ۔ || د جومات محیط.
+sol 1,020 m ## 4 × 255 = 1,020. Teacher's note: a square of side 255 m would have area 255 × 255 = 65,025 m², not 27,540 m², so the data do not match (27,540 = 255 × 108, a rectangle). || 4 × 255 = 1,020۔ استاد کا نوٹ: 255 m ضلع والے مربع کا رقبہ 65,025 m² ہوگا، 27,540 m² نہیں؛ اعداد میل نہیں کھاتے (27,540 = 255 × 108، ایک مستطیل)۔ || 4 × 255 = 1,020. د ښوونکي یادونه: د 255 m ضلعې مربع مساحت 65,025 m² کېږي، نه 27,540 m²؛ معلومات سره سمون نه خوري (27,540 = 255 × 108، یو مستطیل).
+qp b | The cost of carpeting the masjid if the rate of carpeting is Rs 275 per $\text{m}^2$. || اگر قالین بچھانے کی شرح 275 روپے فی $\text{m}^2$ ہو تو مسجد میں قالین بچھانے کی لاگت۔ || که د غالۍ غوړولو نرخ په هر $\text{m}^2$ کې 275 روپۍ وي، په جومات کې د غالۍ غوړولو لګښت.
+sol Rs. 7,573,500 ## Using the given area: 27,540 × 275 = 7,573,500. || دیے گئے رقبے سے: 27,540 × 275 = 7,573,500 روپے۔ || د ورکړل شوې مساحت څخه: 27,540 × 275 = 7,573,500 روپۍ.
+@issue Ex 2 Q8: a "square" Masjid of length 255 m cannot have area 27,540 m² (255² = 65,025); the numbers fit a 255 m × 108 m rectangle. Answers use the printed data with a teacher's note. "Calcualte" is a printing error.
+q 9 | Find the area of the blue part. || نیلے حصے کا رقبہ معلوم کریں۔ || د نیلي برخې مساحت معلوم کړئ.
+svg A 22 cm by 10 cm blue rectangle containing a yellow 6 cm by 2 cm rectangle and a green 4 cm square || 22 cm × 10 cm کا نیلا مستطیل جس میں 6 cm × 2 cm کا پیلا مستطیل اور 4 cm کا سبز مربع ہے || د 22 cm × 10 cm نیلي مستطیل چې پکې د 6 cm × 2 cm ژېړ مستطیل او د 4 cm شین مربع دی
+<svg viewBox="0 0 400 200" width="380" role="img" aria-label="Blue rectangle 22 by 10 cm with a yellow 6 by 2 cm rectangle and a green 4 cm square inside" font-family="Segoe UI, Arial, sans-serif" fill="#0f172a"><rect x="20" y="25" width="330" height="150" fill="#1e3a8a" stroke="#0f172a" stroke-width="2"/><rect x="45" y="85" width="120" height="40" fill="#fde047" stroke="#0f172a"/><rect x="230" y="55" width="80" height="80" fill="#0f766e" stroke="#0f172a"/><text x="185" y="18" text-anchor="middle" font-size="14">22 cm</text><text x="356" y="105" font-size="14">10 cm</text><text x="105" y="78" text-anchor="middle" font-size="13" fill="#fff">6 cm</text><text x="172" y="110" font-size="13" fill="#fff">2 cm</text><text x="270" y="50" text-anchor="middle" font-size="13" fill="#fff">4 cm</text><text x="315" y="100" font-size="13" fill="#fff">4 cm</text></svg>
+endsvg
+sol $192\ \text{cm}^2$ ## Blue part = whole rectangle − yellow rectangle − green square = 22 × 10 − 6 × 2 − 4 × 4 = 220 − 12 − 16 = 192. || نیلا حصہ = پورا مستطیل − پیلا مستطیل − سبز مربع = 22 × 10 − 6 × 2 − 4 × 4 = 220 − 12 − 16 = 192۔ || نیلي برخه = ټول مستطیل − ژېړ مستطیل − شین مربع = 22 × 10 − 6 × 2 − 4 × 4 = 220 − 12 − 16 = 192.
+endexercise
+@sec u8-summary | I Have Learnt || میں نے سیکھا || ما زده کړل
+# I Have Learnt || میں نے سیکھا || ما زده کړل
+- differentiation between perimeter and area of a square and rectangular region. || مربع اور مستطیل شکل کے احاطے اور رقبے میں فرق۔ || د مربع او مستطیلي سیمې د محیط او مساحت توپیر.
+- identifying the units for measurement of perimeter and area. || احاطے اور رقبے کی پیمائش کی اکائیاں پہچاننا۔ || د محیط او مساحت د اندازه کولو واحدونه پېژندل.
+- finding and applying formulas to find perimeter and area of a square and rectangular region || مربع اور مستطیل شکل کا احاطہ اور رقبہ معلوم کرنے کے فارمولے معلوم کرنا اور لاگو کرنا || د مربع او مستطیلي سیمې د محیط او مساحت د معلومولو فورمولونه موندل او کارول
+- solving real life situations involving perimeter and area of square and rectangular regions. || مربع اور مستطیل شکلوں کے احاطے اور رقبے پر مشتمل روزمرہ مسائل حل کرنا۔ || د مربع او مستطیلي سیمو د محیط او مساحت ورځني ژوند ستونزې حلول.
+box note | Vocabulary || ذخیرۂ الفاظ || لغتونه
+table Vocabulary || ذخیرۂ الفاظ || لغتونه
+tr | perimeter
+tr | area
+tr | square
+tr | rectangle
+tr | unit
+tr | formula
+tr | region
+tr | measurement
+endtable
+endbox

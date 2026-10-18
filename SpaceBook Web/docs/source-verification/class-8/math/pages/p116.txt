@@ -1,0 +1,29 @@
+@printed 110
+@issue The text prints "the co-efficient of d is 1 less then the index"; kept as printed.
+@sec 6.2 | General Term of an arithmetic Sequence || حسابی ترتیب کا عمومی رکن || د حسابي لړۍ عمومي حد
+# 6.2 General Term of an arithmetic Sequence || 6.2 حسابی ترتیب کا عمومی رکن || 6.2 د حسابي لړۍ عمومي حد
+p A sequence of numbers in which the difference between any two consecutive numbers is the same, is called an arithmetic sequence. For example, the sequence of odd numbers, i.e, 1, 3, 5, 7, 9,... is an arithmetic sequence. || اعداد کی وہ ترتیب جس میں کسی بھی دو متواتر اعداد کا فرق ایک جیسا ہو، حسابی ترتیب کہلاتی ہے۔ مثال کے طور پر طاق اعداد کی ترتیب یعنی 1، 3، 5، 7، 9،... ایک حسابی ترتیب ہے۔ || د عددونو هغه لړۍ چې پکې د هر دوو پرله پسې عددونو توپیر یو شان وي، حسابي لړۍ بلل کېږي. د بېلګې په توګه د طاقو عددونو لړۍ یعنې 1، 3، 5، 7، 9،... یوه حسابي لړۍ ده.
+p In the previous class, we have learnt to find the general term of various sequences by breaking out the terms in a uniform way. Let us now investigate the general term of an arithmetic sequence. || پچھلی جماعت میں ہم نے ارکان کو یکساں طریقے سے توڑ کر مختلف ترتیبوں کا عمومی رکن معلوم کرنا سیکھا۔ آئیے اب حسابی ترتیب کے عمومی رکن کی جانچ کریں۔ || په تېر ټولګي کې مو د حدونو په یو شان ماتولو سره د بېلابېلو لړیو عمومي حد موندل زده کړل. راځئ اوس د حسابي لړۍ عمومي حد وڅېړو.
+p In the above sequence of odd numbers; 1, 3, 5, 7, 9,.... || طاق اعداد کی اوپر والی ترتیب میں؛ 1، 3، 5، 7، 9،.... || د طاقو عددونو په پورتنۍ لړۍ کې؛ 1، 3، 5، 7، 9،....
+m First term $= a_1 = 1$
+m Common difference $= d = 3 - 1 = 5 - 3 = 7 - 5 = 2$.
+p We can write the terms of this sequence as; || ہم اس ترتیب کے ارکان یوں لکھ سکتے ہیں؛ || د دې لړۍ حدونه داسې لیکلی شو؛
+m $1, \ 1 + 2, \ 3 + 2, \ 5 + 2, \ 7 + 2, ....$
+m or $1, \ 1 + 1(2), \ 1 + 2(2), \ 1 + 3(2), \ 1 + 4(2), ....$
+p Replacing the first term by $a_1$ and the common difference by $d$, we can write the arithmetic progression in general as; || پہلے رکن کو $a_1$ اور مشترک فرق کو $d$ سے بدل کر ہم حسابی ترتیب کو عمومی طور پر یوں لکھ سکتے ہیں؛ || د لومړي حد پر ځای $a_1$ او د ګډ توپیر پر ځای $d$ په ایښودلو، حسابي لړۍ په عمومي ډول داسې لیکلی شو؛
+m $a, \ a + d, \ a + 2d, \ a + 3d, ....$
+p What would be the $n$th term of the sequence? || ترتیب کا $n$ واں رکن کیا ہوگا؟ || د لړۍ $n$ ام حد به څه وي؟
+p We can write, || ہم لکھ سکتے ہیں، || لیکلی شو،
+m $a_1 = a$
+m $a_2 = a + d = a + (2 - 1)d$
+m $a_3 = a + 2d = a + (3 - 1)d$
+m $a_4 = a + 3d = a + (4 - 1)d$, etc.
+p In each of these terms, the co-efficient of $d$ is 1 less then the index of the term. Therefore for the $n$th term $a_n$, the co-efficient of $d$ would be $(n - 1)$, so we have, || ان میں سے ہر رکن میں $d$ کا عددی سر رکن کے اشاریے سے 1 کم ہے۔ لہٰذا $n$ ویں رکن $a_n$ کے لیے $d$ کا عددی سر $(n - 1)$ ہوگا، لہٰذا ہمارے پاس ہے، || په دې هر حد کې د $d$ ضریب د حد له شاخص څخه 1 کم دی. نو د $n$ ام حد $a_n$ لپاره به د $d$ ضریب $(n - 1)$ وي، نو لرو،
+box info | General term || عمومی رکن || عمومي حد
+m $a_n = a + (n - 1)d$
+endbox
+p which is the **general term of an arithmetic sequence**. || جو **حسابی ترتیب کا عمومی رکن** ہے۔ || چې **د حسابي لړۍ عمومي حد** دی.
+p The following examples help to understand the concept. || درج ذیل مثالیں تصور سمجھنے میں مدد دیتی ہیں۔ || لاندې بېلګې د مفهوم په پوهېدو کې مرسته کوي.
+box teach | Teaching Point || تدریسی نکتہ || د تدریس ټکی
+p write some arithmetic sequences on the board and ask students to find the general term of this sequence of the these arithmetic sequences and also find the 23rd and 18th term of the given sequence. || بورڈ پر کچھ حسابی ترتیبیں لکھیں اور طلبہ سے ان حسابی ترتیبوں کا عمومی رکن معلوم کرنے کو کہیں اور دی گئی ترتیب کا تئیسواں اور اٹھارہواں رکن بھی معلوم کرنے کو کہیں۔ || پر تخته څو حسابي لړۍ ولیکئ او له زده کوونکو وغواړئ چې د دې حسابي لړیو عمومي حد ومومي او د ورکړل شوې لړۍ درویشتم او اتلسم حد هم ومومي.
+endbox

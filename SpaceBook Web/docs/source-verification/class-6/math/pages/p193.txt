@@ -1,0 +1,23 @@
+@printed 191
+@deco Pictures of a compass placed at A and at B drawing the arcs (the coded figures show the arcs).
+## 10.1.2 Perpendicular Bisector || 10.1.2 عمودی ناصف || 10.1.2 عمودي نیمونکې
+p A bisector is a line that divides a given segment into two equal parts. It doesn't necessarily bisect at 90°. **Perpendicular bisector** is a line that divides a given line segment into two equal parts and make an angle of 90° at the point of bisection. Perpendicular bisector always passes through the midpoint of the line segment. || ناصف وہ خط ہے جو دیے گئے قطعے کو دو برابر حصوں میں تقسیم کرے۔ یہ ضروری نہیں کہ 90° پر تقسیم کرے۔ **عمودی ناصف** وہ خط ہے جو دیے گئے قطعۂ خط کو دو برابر حصوں میں تقسیم کرے اور تنصیف کے نقطے پر 90° کا زاویہ بنائے۔ عمودی ناصف ہمیشہ قطعۂ خط کے درمیانی نقطے سے گزرتا ہے۔ || نیمونکې هغه کرښه ده چې ورکړل شوې ټوټه په دوو برابرو برخو وېشي. اړینه نه ده چې په 90° کې یې ووېشي. **عمودي نیمونکې** هغه کرښه ده چې ورکړل شوې د کرښې ټوټه په دوو برابرو برخو وېشي او د نیمولو په ټکي کې 90° زاویه جوړوي. عمودي نیمونکې تل د کرښې ټوټې له منځني ټکي تېرېږي.
+bisect 3 A B - - - || The perpendicular bisector of AB makes four 90° angles || AB کا عمودی ناصف چار 90° زاویے بناتا ہے || د AB عمودي نیمونکې څلور 90° زاویې جوړوي
+box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
+- In Greek, "geo" means earth, and "metron" means measure. Egyptians were among the first people to use geometry to explore the land or earth. || یونانی میں "geo" کا مطلب زمین اور "metron" کا مطلب پیمائش ہے۔ مصری ان اولین لوگوں میں تھے جنہوں نے زمین کو جانچنے کے لیے جیومیٹری استعمال کی۔ || په یوناني کې "geo" یعنې ځمکه او "metron" یعنې اندازه. مصریان له لومړنیو خلکو وو چې د ځمکې د سپړلو لپاره یې هندسه وکاروله.
+- 'Bi' means two and bisection means to divide into two equal sections or parts. || 'Bi' کا مطلب دو ہے اور تنصیف کا مطلب دو برابر حصوں میں تقسیم کرنا ہے۔ || 'Bi' یعنې دوه او نیمول یعنې په دوو برابرو برخو وېشل.
+endbox
+## Drawing of a right bisector of a given line segment || دیے گئے قطعۂ خط کا عمودی ناصف بنانا || د ورکړل شوې کرښې ټوټې عمودي نیمونکې رسمول
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p What is point and how many dimensions a point has? What is a perpendicular line? What is right angle? || نقطہ کیا ہے اور اس کے کتنے ابعاد ہوتے ہیں؟ عمودی خط کیا ہے؟ قائمہ زاویہ کیا ہے؟ || ټکی څه دی او څو بعدونه لري؟ عمودي کرښه څه ده؟ قایمه زاویه څه ده؟
+endbox
+p Draw a right bisector of a line segment $\overline{AB}$. || قطعۂ خط $\overline{AB}$ کا عمودی ناصف بنائیں۔ || د $\overline{AB}$ کرښې ټوټې عمودي نیمونکې رسم کړئ.
+p **Steps of Construction:** || **تعمیر کے مراحل:** || **د جوړونې پړاوونه:**
+p A line segment $\overline{AB}$ is given. || قطعۂ خط $\overline{AB}$ دیا گیا ہے۔ || د $\overline{AB}$ کرښې ټوټه ورکړل شوې.
+p **Step I:** Place the pointer of the compass at point A. Open the compass with more than half of the measure of the line segment $\overline{AB}$ and draw an arc on the top and bottom of $\overline{AB}$. || **مرحلہ I:** پرکار کی نوک نقطہ A پر رکھیں۔ پرکار کو قطعۂ خط $\overline{AB}$ کی نصف پیمائش سے زیادہ کھولیں اور $\overline{AB}$ کے اوپر اور نیچے ایک قوس کھینچیں۔ || **لومړی پړاو:** د پرکار څوکه په A ټکي کېږدئ. پرکار د $\overline{AB}$ ټوټې له نیمایي اندازې ډېر خلاص کړئ او د $\overline{AB}$ پورته او لاندې یوه قوس رسم کړئ.
+bisect 1 A B || Step I: arcs from A above and below AB || مرحلہ I: A سے AB کے اوپر اور نیچے قوسیں || لومړی پړاو: له A څخه د AB پورته او لاندې قوسونه
+p **Step II:** Similarly, using the same opening of the compass, place the pointer of the compass at point B and draw two arc on the top and bottom of $\overline{AB}$ which intersects the previous arcs at point C and D respectively. || **مرحلہ II:** اسی طرح پرکار کے اسی کھلاؤ کے ساتھ پرکار کی نوک نقطہ B پر رکھیں اور $\overline{AB}$ کے اوپر اور نیچے دو قوسیں کھینچیں جو پچھلی قوسوں کو بالترتیب نقطوں C اور D پر قطع کریں۔ || **دوهم پړاو:** همدارنګه د پرکار په هماغه خلاصوالي، د پرکار څوکه په B ټکي کېږدئ او د $\overline{AB}$ پورته او لاندې دوه قوسونه رسم کړئ چې مخکیني قوسونه په ترتیب سره په C او D ټکو کې قطع کړي.
+bisect 2 A B C D || Step II: arcs from B cross the first arcs at C and D || مرحلہ II: B سے قوسیں پہلی قوسوں کو C اور D پر قطع کرتی ہیں || دوهم پړاو: له B قوسونه لومړني قوسونه په C او D کې قطع کوي
+box teach | Teaching Point || تدریسی نکتہ || تدریسي ټکی
+p Teachers can use the following web link to show construction of angle and line bisector. https://www.mathspad.co.uk/i2/construct.php || استاد زاویے اور خط کے ناصف کی تعمیر دکھانے کے لیے یہ لنک استعمال کر سکتے ہیں۔ https://www.mathspad.co.uk/i2/construct.php || ښوونکي کولی شي د زاویې او کرښې د نیمونکې د جوړونې د ښودلو لپاره دا لینک وکاروي. https://www.mathspad.co.uk/i2/construct.php
+endbox

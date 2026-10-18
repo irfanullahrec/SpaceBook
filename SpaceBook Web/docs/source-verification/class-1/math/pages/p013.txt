@@ -1,0 +1,39 @@
+@printed 9
+exercise Count and match; eggs in nests (Page 9)
+p Count the objects and match with the correct number. || چیزیں گنیں اور درست عدد سے ملائیں۔ || شیان وشمېرئ او له سم عدد سره یې وښلوئ.
+cards 4,0,8,5,7 || Number cards in the book (right side): 4, 0, 8, 5, 7 || کتاب میں نمبر کارڈ (دائیں طرف): ۴، ۰، ۸، ۵، ۷ || په کتاب کې د عددونو کارتونه (ښي لوري): ۴، ۰، ۸، ۵، ۷
+q 1 | Baskets || ٹوکریاں || ټوکرۍ
+cnt basket:7/4 || baskets || ٹوکریاں || ټوکرۍ
+sol 7 ## There are 7 baskets (4 and 3), so match them with 7. || ۷ ٹوکریاں ہیں (۴ اور ۳)، اس لیے انہیں ۷ سے ملائیں۔ || ۷ ټوکرۍ دي (۴ او ۳)، نو له ۷ سره یې وښلوئ.
+q 2 | Racing cars || ریس کار || د منډو موټرونه
+cnt car.orange:4/2 || racing cars || ریس کار || د منډو موټرونه
+sol 4 ## There are 4 cars, so match them with 4. || ۴ گاڑیاں ہیں، اس لیے ۴ سے ملائیں۔ || ۴ موټرونه دي، نو له ۴ سره یې وښلوئ.
+q 3 | Sailing boats || بادبانی کشتیاں || بادباني کښتۍ
+cnt boat:5 || sailing boats || بادبانی کشتیاں || بادباني کښتۍ
+sol 5 ## There are 5 boats, so match them with 5. || ۵ کشتیاں ہیں، اس لیے ۵ سے ملائیں۔ || ۵ کښتۍ دي، نو له ۵ سره یې وښلوئ.
+q 4 | Empty box || خالی خانہ || تش خونه
+cnt [] || an empty box || خالی خانہ || تشه خونه
+sol 0 ## The box is empty, so match it with 0. || خانہ خالی ہے، اس لیے اسے ۰ سے ملائیں۔ || خونه تشه ده، نو له ۰ سره یې وښلوئ.
+q 5 | Balls || گیندیں || توپونه
+cnt ball.blue:8/4 || balls || گیندیں || توپونه
+sol 8 ## There are 8 balls (two rows of 4), so match them with 8. || ۸ گیندیں ہیں (۴ کی دو قطاریں)، اس لیے ۸ سے ملائیں۔ || ۸ توپونه دي (د ۴ دوه قطارونه)، نو له ۸ سره یې وښلوئ.
+p Write the number of eggs in the following nests. || نیچے دیے گئے گھونسلوں میں انڈوں کی تعداد لکھیں۔ || په لاندې ځالو کې د هګیو شمېر ولیکئ.
+q 6 | Nest 1 || گھونسلا ۱ || ځاله ۱
+cnt nest3:1 [] || nest || گھونسلا || ځاله
+sol 3 ## 3 eggs. || ۳ انڈے۔ || ۳ هګۍ.
+q 7 | Nest 2 || گھونسلا ۲ || ځاله ۲
+cnt nest4:1 [] || nest || گھونسلا || ځاله
+sol 4 ## 4 eggs. || ۴ انڈے۔ || ۴ هګۍ.
+q 8 | Nest 3 || گھونسلا ۳ || ځاله ۳
+cnt nest0:1 [] || nest || گھونسلا || ځاله
+sol 0 ## The nest is empty: 0 eggs. || گھونسلا خالی ہے: ۰ انڈے۔ || ځاله تشه ده: ۰ هګۍ.
+q 9 | Nest 4 || گھونسلا ۴ || ځاله ۴
+cnt nest2:1 [] || nest || گھونسلا || ځاله
+sol 2 ## 2 eggs. || ۲ انڈے۔ || ۲ هګۍ.
+q 10 | Nest 5 || گھونسلا ۵ || ځاله ۵
+cnt nest0:1 [] || nest || گھونسلا || ځاله
+sol 0 ## The nest is empty: 0 eggs. || گھونسلا خالی ہے: ۰ انڈے۔ || ځاله تشه ده: ۰ هګۍ.
+q 11 | Nest 6 || گھونسلا ۶ || ځاله ۶
+cnt nest1:1 [] || nest || گھونسلا || ځاله
+sol 1 ## 1 egg. || ۱ انڈا۔ || ۱ هګۍ.
+endexercise

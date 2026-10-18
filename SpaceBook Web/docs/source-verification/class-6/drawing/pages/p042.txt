@@ -1,0 +1,19 @@
+@printed 39
+@status lesson
+### Tones in a Sphere || کرے میں ٹون || په کره کې ټونونه
+p Now let's study the effect of light and the various tones it creates on a sphere which are: || اب کرے پر روشنی کا اثر اور اس سے پیدا ہونے والے مختلف ٹونز کا مطالعہ کرتے ہیں، جو یہ ہیں: || اوس پر کره د رڼا اغېز او هغه ټونونه وڅېړو چې جوړوي یې:
+- Highlight || ہائی لائٹ (سب سے روشن حصہ) || هایلایټ (تر ټولو روښانه برخه)
+- Body Tone || باڈی ٹون (جسم کا عام رنگ) || د بدن ټون
+- Body Shadow || باڈی شیڈو (جسم پر سایہ) || د بدن سیوری
+- Reflection || عکس (منعکس روشنی) || انعکاس
+- Cast Shadow || کاسٹ شیڈو (زمین پر پڑنے والا سایہ) || غورځول شوی سیوری
+svg Tones in a sphere (Fig. 2.23): light from the upper left gives a highlight, the body tone, a dark body shadow, a faint reflection near the lower edge, and a cast shadow on the ground || کرے میں ٹون (شکل 2.23) || په کره کې ټونونه (انځور 2.23)
+<svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Tones in a shaded sphere">
+<defs><radialGradient id="d42s" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="0.12" stop-color="#e2e2e2"/><stop offset="0.5" stop-color="#8a8a8a"/><stop offset="0.85" stop-color="#2f2f2f"/><stop offset="1" stop-color="#5a5a5a"/></radialGradient></defs>
+<ellipse cx="210" cy="180" rx="120" ry="28" fill="#3a3a3a" opacity="0.55"/>
+<circle cx="160" cy="115" r="80" fill="url(#d42s)"/>
+<g stroke="#0f172a" fill="none"><line x1="130" y1="78" x2="70" y2="40"/><line x1="200" y1="60" x2="250" y2="25"/><line x1="200" y1="185" x2="290" y2="140"/><line x1="280" y1="190" x2="320" y2="205"/><line x1="140" y1="190" x2="110" y2="215"/></g>
+<g fill="#0f172a"><text x="15" y="38">(Highlight)</text><text x="250" y="22">(Body Tone)</text><text x="292" y="138">(Reflection)</text><text x="290" y="220">(Cast Shadow)</text><text x="40" y="225">(Body Shadow)</text></g>
+</svg>
+endsvg
+@issue Fig. 2.23: the label "(Body Shadow)" is printed broken as "(Body Shad e)". Corrected here.

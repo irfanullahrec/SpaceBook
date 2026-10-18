@@ -1,0 +1,46 @@
+@printed 123
+@sec u6-review | Review Exercise || مشق برائے اعادہ || د بیاکتنې تمرین
+exercise Review Exercise 6
+q 1 | Choose the correct option. || درست جواب منتخب کریں۔ || سم ځواب وټاکئ.
+qp a | In algebra, a fixed or unchanged value is called a ______. (i. constant   ii. variable   iii. term   iv. coefficient) || الجبرا میں مقررہ یا نہ بدلنے والی قیمت ______ کہلاتی ہے۔ || په الجبر کې ټاکلی یا نه بدلېدونکی ارزښت ______ بلل کېږي.
+sol i. constant ## A constant is a number without a variable; its value never changes. || مستقل بغیر متغیر کا عدد ہے؛ اس کی قیمت نہیں بدلتی۔ || ثابت پرته له متحول عدد دی؛ ارزښت یې نه بدلېږي.
+qp b | Unlike terms are those terms whose ______ are different with different exponents. (i. signs   ii. variables   iii. coefficients   iv. constants) || غیر یکساں ارکان وہ ہیں جن کے ______ مختلف ہوں یا قوت نما مختلف ہو۔ || نا ورته حدونه هغه دي چې ______ یې بېل وي یا توانونه یې بېل وي.
+sol ii. variables ## Unlike terms have different variables or different powers (page 113). || غیر یکساں ارکان کے متغیرات یا طاقتیں مختلف ہوتی ہیں (صفحہ 113)۔ || نا ورته حدونه بېل متحولونه یا توانونه لري (پاڼه 113).
+qp c | In $3x^2$, 2 is the ______. (i. variable   ii. constant   iii. coefficient   iv. exponent) || $3x^2$ میں 2 ______ ہے۔ || په $3x^2$ کې 2 ______ دی.
+sol iv. exponent ## 3 is the coefficient, x is the variable and 2 is the exponent (power). || 3 ضارب، x متغیر اور 2 قوت نما ہے۔ || 3 ضریب، x متحول او 2 توان دی.
+qp d | If a = 1, b = 2, the value of the expression $a^2 + 2a - b$ is ______. (i. 1   ii. 0   iii. –1   iv. 2) || اگر a = 1، b = 2 ہو تو عبارت $a^2 + 2a - b$ کی قیمت ______ ہے۔ || که a = 1، b = 2 وي، د $a^2 + 2a - b$ افادې ارزښت ______ دی.
+solution i. 1
+suse evalx a^2 + 2a - b ;; a**2 + 2*a - b ;; a=1, b=2
+endsolution
+qp e | If $x = 3$, y = 2, then $3x^2y$ = ______. (i. –54   ii. 54   iii. 36   iv. –36) || اگر $x = 3$، y = 2 ہو تو $3x^2y$ = ______ || که $x = 3$، y = 2 وي، $3x^2y$ = ______
+solution ii. 54
+suse evalx 3x^2y ;; 3*x**2*y ;; x=3, y=2
+endsolution
+q 2 | Identify the position-to-term rules for the pattern and find 20th term: 11, 22, 33, 44, 55, ... || نمونے کا مقام سے رکن کا قاعدہ معلوم کریں اور بیسواں رکن معلوم کریں: 11، 22، 33، 44، 55، ... || د بېلګې له ځای څخه حد ته قاعده معلومه کړئ او شلم حد ومومئ: 11، 22، 33، 44، 55، ...
+solution Rule: term = position × 11; 20th term = 220
+stable
+tr | Position | 1 | 2 | 3 | 4 | 5
+tr | Term | 11 | 22 | 33 | 44 | 55
+tr | Rule | 1 × 11 | 2 × 11 | 3 × 11 | 4 × 11 | 5 × 11
+endtable
+ss Each term is its position multiplied by 11. || ہر رکن اس کے مقام کو 11 سے ضرب دینے سے ملتا ہے۔ || هر حد د خپل ځای او 11 حاصل ضرب دی.
+sm 20^{th} \text{ term} = 20 \times 11 = 220
+endsolution
+q 3 | Identify the position-to-term rules for the pattern and find 55th term: 16, 17, 18, 19, 20, 21, ... || نمونے کا مقام سے رکن کا قاعدہ معلوم کریں اور 55واں رکن معلوم کریں: 16، 17، 18، 19، 20، 21، ... || د بېلګې له ځای څخه حد ته قاعده معلومه کړئ او 55م حد ومومئ: 16، 17، 18، 19، 20، 21، ...
+solution Rule: term = position + 15; 55th term = 70
+stable
+tr | Position | 1 | 2 | 3 | 4 | 5 | 6
+tr | Term | 16 | 17 | 18 | 19 | 20 | 21
+tr | Rule | 1 + 15 | 2 + 15 | 3 + 15 | 4 + 15 | 5 + 15 | 6 + 15
+endtable
+ss Each term is its position plus 15. || ہر رکن اس کے مقام جمع 15 ہے۔ || هر حد د خپل ځای او 15 مجموعه ده.
+sm 55^{th} \text{ term} = 55 + 15 = 70
+endsolution
+q 4 | Identify the term-to-term rules for the following patterns and write the next three terms. || درج ذیل نمونوں کے رکن سے رکن کے قواعد معلوم کریں اور اگلے تین ارکان لکھیں۔ || د لاندې بېلګو له حد څخه حد ته قواعد وپېژنئ او راتلونکي درې حدونه ولیکئ.
+qsolve seq
+qp a | 15, 21, 27, 33, ___, ___, ___
+qp b | 5, 10, 20, 40, 80, ___, ___, ___
+q 5 | Subtract the following. || درج ذیل تفریق کریں۔ || لاندې تفریق کړئ.
+qsolve combine
+qp a | $-3x - 5y - z$ from $3x - 6y - 6z$
+qp b | $19p - q + r$ from $8p - 3q - 4r$

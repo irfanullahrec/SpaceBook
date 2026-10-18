@@ -1,0 +1,34 @@
+@printed 172
+reflect 8 6 v 4 | 1,1 3,1 3,3 1,3 | #f9a8d4 | show || The reflected square || منعکس مربع || منعکس مربع
+p Join the marked points and the reflected object is obtained. || نشان زدہ نقطوں کو ملائیں تو منعکس شے حاصل ہو جاتی ہے۔ || نښه شوي ټکي سره ونښلوئ، منعکس شی لاسته راځي.
+endexample
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Draw a triangle on a square grid and reflect its image. || مربع گرڈ پر ایک مثلث بنائیں اور اس کا عکس بنائیں۔ || په مربع جال کې یو مثلث رسم کړئ او انعکاس یې جوړ کړئ.
+endbox
+## 9.1.2 Finding Line of Reflection || 9.1.2 انعکاس کا خط معلوم کرنا || 9.1.2 د انعکاس کرښه موندل
+p When an **object** is reflected, the line of reflection is the perpendicular bisector of the corresponding line segments joining each point of the original object and **reflected image**. Let's observe the following object and its reflected image. Follow the steps to construct the line of reflection. || جب کسی **شے** کا عکس بنتا ہے تو انعکاس کا خط اصل شے اور **منعکس تصویر** کے ہر متناظر نقطے کو ملانے والے قطعاتِ خط کا عمودی ناصف ہوتا ہے۔ آئیے درج ذیل شے اور اس کے عکس کو دیکھیں۔ انعکاس کا خط بنانے کے لیے مراحل پر عمل کریں۔ || کله چې یو **شی** منعکس شي، د انعکاس کرښه د هغو کرښو ټوټو عمودي نیمونکې ده چې د اصلي شي او **منعکس انځور** هر اړوند ټکی سره نښلوي. راځئ لاندې شي او منعکس انځور ته یې وګورو. د انعکاس کرښې د جوړولو لپاره پړاوونه تعقیب کړئ.
+box prior | Previous Knowledge Check || سابقہ معلومات کی جانچ || د مخکینیو معلوماتو ازموینه
+p What is symmetry? What is meant by line of symmetry? What is reflective symmetry? || تشاکل کیا ہے؟ تشاکل کے خط سے کیا مراد ہے؟ انعکاسی تشاکل کیا ہے؟ || تناظر څه دی؟ د تناظر له کرښې څه مطلب دی؟ انعکاسي تناظر څه دی؟
+endbox
+svg Triangle ABC and its reflection DEF; LM is the perpendicular bisector of BE || مثلث ABC اور اس کا عکس DEF؛ LM، BE کا عمودی ناصف ہے || مثلث ABC او انعکاس یې DEF؛ LM د BE عمودي نیمونکې ده
+<svg viewBox="0 0 420 220" width="420" role="img" aria-label="Triangle ABC on the left and its mirror image DEF on the right. B and E are joined; arcs from B and E meet at L above and M below, and the line LM is the perpendicular bisector of BE" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0f172a">
+<polygon points="30,40 150,110 20,170" fill="#ec4899" fill-opacity=".8" stroke="#9d174d"/>
+<polygon points="390,40 270,110 400,170" fill="#ec4899" fill-opacity=".8" stroke="#9d174d"/>
+<line x1="150" y1="110" x2="270" y2="110" stroke="#15803d" stroke-width="2"/>
+<circle cx="150" cy="110" r="3.5" fill="#15803d"/><circle cx="270" cy="110" r="3.5" fill="#15803d"/>
+<path d="M190 40 A90 90 0 0 1 230 40" fill="none" stroke="#64748b" stroke-dasharray="2 3"/><path d="M190 180 A90 90 0 0 0 230 180" fill="none" stroke="#64748b" stroke-dasharray="2 3"/>
+<path d="M175 50 Q185 110 175 170" fill="none" stroke="#64748b" stroke-dasharray="2 3"/><path d="M245 50 Q235 110 245 170" fill="none" stroke="#64748b" stroke-dasharray="2 3"/>
+<line x1="210" y1="15" x2="210" y2="205" stroke="#be123c" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="22" y="34">A</text><text x="140" y="134">B</text><text x="6" y="186">C</text><text x="392" y="34">D</text><text x="266" y="134">E</text><text x="400" y="190">F</text><text x="196" y="30">L</text><text x="192" y="200">M</text>
+</svg>
+endsvg
+box check | Quick Check || فوری جانچ || چټکه ازموینه
+p Write your name in all capital letters and draw line of symmetry for each letter. || اپنا نام بڑے حروف میں لکھیں اور ہر حرف کے لیے تشاکل کا خط کھینچیں۔ || خپل نوم په لویو تورو ولیکئ او د هر توري لپاره د تناظر کرښه رسم کړئ.
+endbox
+p **Step I:** Join any vertex of triangle ABC to its corresponding vertex of the reflected image DEF. Let's join B to E through a straight segment. || **مرحلہ I:** مثلث ABC کے کسی راس کو منعکس تصویر DEF کے متناظر راس سے ملائیں۔ آئیے B کو E سے ایک سیدھے قطعے کے ذریعے ملائیں۔ || **لومړی پړاو:** د ABC مثلث هر راس د منعکس انځور DEF له اړوند راس سره ونښلوئ. راځئ B له E سره په یوه مستقیمه ټوټه ونښلوو.
+p **Step II:** Place the pointer of the compass at point B. || **مرحلہ II:** پرکار کی نوک نقطہ B پر رکھیں۔ || **دوهم پړاو:** د پرکار څوکه په B ټکي کېږدئ.
+p **Step III:** Open the compass with more than half of the measure of the line segment BE and draw an arc on the top and bottom of BE. || **مرحلہ III:** پرکار کو قطعۂ خط BE کی نصف پیمائش سے زیادہ کھولیں اور BE کے اوپر اور نیچے ایک قوس کھینچیں۔ || **درېیم پړاو:** پرکار د BE ټوټې له نیمایي اندازې ډېر خلاص کړئ او د BE پورته او لاندې یوه قوس رسم کړئ.
+p **Step IV:** Similarly, using the same opening of the compass, place the pointer of the compass at point E and draw two arc on the top and bottom of BE which intersects the previous arcs at point L and M respectively. || **مرحلہ IV:** اسی طرح پرکار کے اسی کھلاؤ کے ساتھ پرکار کی نوک نقطہ E پر رکھیں اور BE کے اوپر اور نیچے دو قوسیں کھینچیں جو پچھلی قوسوں کو بالترتیب نقطوں L اور M پر قطع کریں۔ || **څلورم پړاو:** همدارنګه د پرکار په هماغه خلاصوالي، د پرکار څوکه په E ټکي کېږدئ او د BE پورته او لاندې دوه قوسونه رسم کړئ چې مخکیني قوسونه په ترتیب سره په L او M ټکو کې قطع کړي.
+p **Step V:** Join the point L and M by a line using a ruler. || **مرحلہ V:** پیمانے کی مدد سے نقطوں L اور M کو ایک خط سے ملائیں۔ || **پنځم پړاو:** د خطکش په مرسته L او M ټکي په یوه کرښه ونښلوئ.
+p LM is the perpendicular bisector of BE. || LM، BE کا عمودی ناصف ہے۔ || LM د BE عمودي نیمونکې ده.
+p The perpendicular bisector LM to the line BE is the required line of reflection. || خط BE کا عمودی ناصف LM مطلوبہ انعکاس کا خط ہے۔ || د BE کرښې عمودي نیمونکې LM غوښتل شوې د انعکاس کرښه ده.

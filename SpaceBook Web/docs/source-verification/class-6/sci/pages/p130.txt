@@ -1,0 +1,30 @@
+@printed 126
+@status lesson
+@sec 10.3 | Magnetic Field around a Conductor || موصل کے گرد مقناطیسی میدان || د هادي شاوخوا مقناطیسي ساحه
+# 10.3 MAGNETIC FIELD AROUND A CONDUCTOR || 10.3 موصل کے گرد مقناطیسی میدان || 10.3 د هادي شاوخوا مقناطیسي ساحه
+p Electric current produces a magnetic field around it. When we pass current through a straight wire, a circular magnetic field lines are produced. The magnetic field lines are concentric circles with common centre of the wire. This can be verified by using a compass needle. This magnetic field can be visualized as a display of circular field lines enveloping a wire, which is similar to magnetic field lines around bar magnet. The strength of magnetic field increases on getting closer to wire and increases if the current increases. || برقی رو اپنے گرد مقناطیسی میدان پیدا کرتی ہے۔ سیدھے تار میں رو گزارنے سے دائرہ نما میدانی لکیریں بنتی ہیں جو تار کو مرکز مان کر ہم مرکز دائرے ہوتی ہیں۔ اس کی تصدیق قطب نما کی سوئی سے کی جا سکتی ہے۔ یہ میدان تار کو گھیرے دائروں کی طرح ہے، جو سلاخی مقناطیس کے میدان جیسا ہے۔ تار کے قریب جانے اور رو بڑھانے سے میدان کی طاقت بڑھتی ہے۔ || برېښنايي جریان شاوخوا مقناطیسي ساحه جوړوي. کله چې جریان له مستقیم تار تېر کړو، دایروي کرښې جوړېږي چې د تار په شاوخوا هم مرکزه دایرې دي. دا په قطب نما ستنه ثابتېږي. دا ساحه د تار شاوخوا دایرو په څېر ده، د میلې مقناطیس ساحې ته ورته. تار ته نږدې کېدو او د جریان په زیاتېدو ساحه پیاوړې کېږي.
+svg Figure 10.3 Magnetic field around a conductor — a vertical wire through paper with iron filings forming concentric circles; a compass needle follows the circles || شکل 10.3 موصل کے گرد مقناطیسی میدان || شکل 10.3 د هادي شاوخوا مقناطیسي ساحه
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Field around a current-carrying wire">
+<path d="M60 90 L260 90 L300 160 L20 160z" fill="#f8fafc" stroke="#111"/>
+<g fill="none" stroke="#111"><ellipse cx="160" cy="125" rx="25" ry="10"/><ellipse cx="160" cy="125" rx="50" ry="20"/><ellipse cx="160" cy="125" rx="75" ry="28"/></g>
+<path d="M160 20 V195" stroke="#b45309" stroke-width="3"/><path d="M160 30 l-5 10 h10z" fill="#b45309"/>
+<circle cx="225" cy="140" r="8" fill="#e5e7eb" stroke="#111"/><path d="M220 143 l10 -6" stroke="#dc2626" stroke-width="2"/>
+<g fill="#111"><text x="80" y="35">Current direction ↑</text><text x="200" y="60">Magnetic field</text><text x="245" y="185">Compass needle</text><text x="20" y="185">Paper with iron filings</text><text x="168" y="195">Wire</text></g>
+</svg>
+endsvg
+box info | DO YOU KNOW? || کیا آپ جانتے ہیں؟ || ایا پوهېږئ؟
+svg 10.2 a. Current and Magnetic field — a coil with no current has no field; with current it acts like a bar magnet; reversing the current swaps its poles || 10.2 الف۔ رو اور مقناطیسی میدان || 10.2 الف. جریان او مقناطیسي ساحه
+<svg viewBox="0 0 480 100" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Coil with and without current">
+<g fill="none" stroke="#111"><path d="M20 40 c5 -20 10 20 15 0 c5 -20 10 20 15 0 c5 -20 10 20 15 0 c5 -20 10 20 15 0 c5 -20 10 20 15 0 c5 -20 10 20 15 0 c5 -20 10 20 15 0"/></g>
+<rect x="175" y="30" width="60" height="20" fill="#16a34a"/><rect x="235" y="30" width="60" height="20" fill="#dc2626"/><text x="180" y="44" fill="#fff" font-weight="bold">S</text><text x="282" y="44" fill="#fff" font-weight="bold">N</text>
+<rect x="330" y="30" width="60" height="20" fill="#dc2626"/><rect x="390" y="30" width="60" height="20" fill="#16a34a"/><text x="335" y="44" fill="#fff" font-weight="bold">N</text><text x="438" y="44" fill="#fff" font-weight="bold">S</text>
+<g fill="#111" text-anchor="middle"><text x="70" y="80">No current – no magnetic field</text><text x="235" y="75">Current flowing – coil has a</text><text x="235" y="88">magnetic field like a bar magnet</text><text x="390" y="75">If the current switches direction,</text><text x="390" y="88">so does the magnetic field</text></g>
+</svg>
+endsvg
+@issue Figure label printed "10.2 a. Current and Magnetic filed" — spelling "filed" and the number 10.2a sits inside section 10.3.
+endbox
+@sec 10.4 | Types of Magnet || مقناطیس کی اقسام || د مقناطیس ډولونه
+# 10.4 TYPES OF MAGNET || 10.4 مقناطیس کی اقسام || 10.4 د مقناطیس ډولونه
+## Permanent Magnet || مستقل مقناطیس || دایمي مقناطیس
+p A permanent magnet retains its magnetic properties in the absence of any other magnet or current. It produces its own magnetic field. Permanent magnets are made from special alloys having iron, nickel and cobalt, || مستقل مقناطیس کسی دوسرے مقناطیس یا رو کے بغیر بھی اپنی مقناطیسی خصوصیات برقرار رکھتا ہے۔ یہ اپنا مقناطیسی میدان خود پیدا کرتا ہے۔ مستقل مقناطیس لوہے، نکل اور کوبالٹ والے خاص بھرتوں سے بنتے ہیں، || دایمي مقناطیس پرته له بل مقناطیس یا جریان خپلې مقناطیسي ځانګړتیاوې ساتي. خپله ساحه جوړوي. دایمي مقناطیسونه د اوسپنې، نکل او کوبالټ له ځانګړو الیاژونو جوړېږي،
+@deco Figure 10.4 Different shapes of permanent magnets — horseshoe, U-shaped, cylindrical and bar magnets.

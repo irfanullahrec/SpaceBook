@@ -1,0 +1,20 @@
+@printed 70
+@deco Photo of 30 marbles in 5 rows of 6; chalkboards showing long division (the scan has a fold crease down the middle of the page).
+p Dividing 30 by 6, we get 5. || 30 کو 6 پر تقسیم کرنے سے ہمیں 5 ملتا ہے۔ || 30 په 6 د وېشلو سره 5 لاسته راځي.
+m The total number of marble = 30
+m The number of jars = 6
+m The number of marbles in jar = 30 ÷ 6 = 5
+longdiv 6 | 30 | 5@1 | -30@1 ; 00@1 || divisor 6, dividend 30, quotient 5, remainder 00 || مقسوم علیہ 6، مقسوم 30، خارج قسمت 5، باقی 00 || وېشونکی 6، وېشل کېدونکی 30، خارج قسمت 5، پاتې 00
+table Parts of a division || تقسیم کے حصے || د وېش برخې
+tr quotient | 5
+tr divisor | 6
+tr dividend | 30
+tr remainder | 00
+endtable
+p 5 marbles can be placed in 1 jar. || ایک مرتبان میں 5 کنچے رکھے جا سکتے ہیں۔ || په یوه لوښي کې 5 ګولۍ اېښودل کېدای شي.
+## There are 72 mango trees in 6 rows. How many mango trees are in 1 row? || 6 قطاروں میں آم کے 72 درخت ہیں۔ ایک قطار میں آم کے کتنے درخت ہیں؟ || په 6 کرښو کې د امو 72 ونې دي. په یوه کرښه کې د امو څو ونې دي؟
+m The number of mango trees = 72
+m The rows of trees = 6
+m The number of trees in 1 row = 72 ÷ 6
+longdiv 6 | 72 | 12@1 | -6@0 ; 12@1 ; -12@1 ; 00@1 || 72 ÷ 6 = 12 || 72 ÷ 6 = 12 || 72 ÷ 6 = 12
+p So, there are 12 trees in 1 row. || لہٰذا ایک قطار میں 12 درخت ہیں۔ || نو په یوه کرښه کې 12 ونې دي.

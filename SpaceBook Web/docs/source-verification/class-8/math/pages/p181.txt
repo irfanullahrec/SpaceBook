@@ -1,0 +1,40 @@
+@printed 173
+example 1
+p Arham and Ahad have 8 marbles. Ahad has 2 more marbles than Arham. || ارحم اور احد کے پاس 8 کنچے ہیں۔ احد کے پاس ارحم سے 2 کنچے زیادہ ہیں۔ || ارحم او احد 8 بلورۍ لري. احد له ارحم څخه 2 بلورۍ ډېرې لري.
+qp a | Construct a simultaneous equation for this condition. || اس شرط کے لیے ہم وقت مساوات بنائیں۔ || د دې شرط لپاره همزمانه معادله جوړه کړئ.
+qp b | Find how many marbles does each of them have. || معلوم کریں کہ ہر ایک کے پاس کتنے کنچے ہیں۔ || معلوم کړئ چې هر یو څو بلورۍ لري.
+## Solution: || حل: || حل:
+m **a)** Let the number of marbles Ahad has be $= x$
+m Let the number of marbles Arham has be $=$ y
+p According to the given condition: || دی گئی شرط کے مطابق: || د ورکړل شوي شرط له مخې:
+m $x + y = 8$ -----------(i)
+m $x = y + 2$ or $x - y = 2$ -----------(ii)
+p So, (i) and (ii) are the required equations for this condition. || لہٰذا (i) اور (ii) اس شرط کے لیے مطلوبہ مساواتیں ہیں۔ || نو (i) او (ii) د دې شرط لپاره اړینې معادلې دي.
+m **b)** The equations are:
+m $x + y = 8$ -----------(i) $\qquad x - y = 2$ -----------(ii)
+m Put $x = 0$ in (i)
+m $x + y = 8$
+m $0 + y = 8$
+m $y = 8$
+m $\therefore (x, y) = (0, 8)$
+m Put $y = 0$ in (i)
+m $x + y = 8$
+m $x + (0) = 8$
+m $x = 8$
+m $\therefore (x, y) = (8, 0)$
+m Put $x = 1$ in (i)
+m $x + y = 8$
+m $1 + y = 8$
+m $y = 8 - 1 = 7$
+m $\therefore (x, y) = (1, 7)$
+p So, we get the coordinates of $x + y = 8$ as follows. || لہٰذا ہمیں $x + y = 8$ کے محددات یوں ملتے ہیں۔ || نو د $x + y = 8$ کوارډینېټونه داسې لاسته راځي.
+table
+tr | $x$ | 0 | 8 | 1
+tr | y | 8 | 0 | 7
+endtable
+p Now calculate values of $x$ and y for equation $x - y = 2$. || اب مساوات $x - y = 2$ کے لیے $x$ اور y کی قیمتیں معلوم کریں۔ || اوس د $x - y = 2$ معادلې لپاره د $x$ او y ارزښتونه محاسبه کړئ.
+m Put $x = 0$ in (ii)
+m $x - y = 2$
+m $(0) - y = 2$
+m $y = -2$
+m $\therefore (x, y) = (0, -2)$
