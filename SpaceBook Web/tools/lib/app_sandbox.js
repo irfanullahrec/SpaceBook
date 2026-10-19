@@ -40,11 +40,11 @@ function memoryStorage() {
 function load(opts = {}) {
   const page = opts.page || 'index.html';
   const html = fs.readFileSync(path.join(ROOT, page), 'utf8');
-  // scripts in page order; the only inline script run is the lazy-loading manifest of lazy.html (tools/build/make_lazy.js)
+  // scripts in page order; the only inline scripts run are the lazy-loading manifest and the attachData call of lazy.html (tools/build/make_lazy.js)
   const items = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].map(m => {
     const src = (m[1].match(/\bsrc="([^"]+)"/) || [])[1];
     if (src) return { src: src.split('?')[0] };
-    return /^\s*window\.SB_LAZY_MANIFEST\s*=/.test(m[2]) ? { inline: m[2] } : null;
+    return /^\s*(?:window\.SB_LAZY_MANIFEST\s*=|SBLazy\.attachData\()/.test(m[2]) ? { inline: m[2] } : null;
   }).filter(Boolean);
   const srcs = items.filter(i => i.src).map(i => i.src);
   const registry = {};

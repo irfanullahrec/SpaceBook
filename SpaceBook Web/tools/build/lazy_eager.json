@@ -1,5 +1,17 @@
 {
-  "comment": "Data-like files that must stay in the page's own script list: the registry every script reads at load, plus files found by tools/build/measure_lazy.js to be needed at page load anyway.",
-  "files": ["data.js", "word_stats_summary.js"],
-  "privateHelpers": ["unitOf", "isAuthored"]
+  "comment": "Data-like files that must stay in the page's own script list: the registry every script reads at load, plus files found by tools/build/measure_lazy.js to be needed at page load anyway. privateHelpers: top-level names that only their own file uses (functions, helper objects): they load with the file and are neither stubbed nor treated as the file's public data.",
+  "files": [
+    "data.js",
+    "word_stats_summary.js"
+  ],
+  "privateHelpers": [
+    "bio11C7",
+    "isAuthored",
+    "p",
+    "pages",
+    "phys11Page318FringePosition",
+    "unitOf",
+    "use",
+    "words"
+  ]
 }

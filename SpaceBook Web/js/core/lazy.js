@@ -5,8 +5,9 @@
  *   - a global array/object (ENGLISH_12_DATA, MATH_2_DATA, ...) is a forwarding Proxy: `typeof X`, Array.isArray(X) and
  *     `X in window` do not load anything; the first real use (X.length, X[0], for..of, JSON.stringify, ...) loads the file,
  *     replaces the stand-in by the real value, and forwards.
- *   - a book in a container (CLS2_BOOKS.math) is an accessor property of the pre-created container: the first read of
- *     CLS2_BOOKS.math loads the file, which then assigns the real value. Object.keys(CLS2_BOOKS) lists every book without loading.
+ *   - a book in a container (CLS2_BOOKS.math, CLASS11_BOOKS.chem) is an accessor property of the pre-created container: the first read
+ *     loads the file, which then assigns the real value. Object.keys(CLS2_BOOKS) lists every book without loading.
+ *   - a public function of such a file (renderChemistry11Tab...) is a stub that loads the file and calls the real function.
  * A file is fetched with a synchronous request (same origin, once per file) and run in global scope with its top-level
  * const/let/var turned into window properties. SBLazy.stats() says what has been loaded.
  * In tests (Node) set window.SB_LAZY_FETCH = url => text. Nothing here changes what the data contains. */
@@ -84,8 +85,40 @@
     });
   });
 
+  // ---- public functions of a lazy file (the Class 11 renderers, Class 12 Maths helpers...): a stub that loads the file, then calls
+  // the real function, which the file's own declaration has put in the stub's place. The build refuses files whose functions
+  // another script reassigns (that wrapper would be overwritten when the file loads).
+  M.files.forEach(f => {
+    (f.fns || []).forEach(name => {
+      if (name in window) return;
+      const forward = function () {
+        loadFile(f.src);
+        const real = window[name];
+        if (real === forward) throw new Error('SBLazy: ' + f.src + ' did not define ' + name);
+        return real.apply(this, arguments);
+      };
+      window[name] = forward;
+    });
+  });
+
+  // ---- keys a lazy file adds to the shared registry (Object.assign(DATA, { chemChapters, chem10Chapters }) and DATA.urduChapters = URDU_DATA):
+  // DATA is a const of data.js, so the generated page calls attachData(DATA) right after that script. Until the file loads each key is an
+  // accessor; the file's own assignment turns it back into a plain value.
+  function attachData(data) {
+    M.files.forEach(f => {
+      (f.dataKeys || []).forEach(key => {
+        Object.defineProperty(data, key, {
+          configurable: true, enumerable: true,
+          get() { loadFile(f.src); const d = Object.getOwnPropertyDescriptor(data, key); return d && 'value' in d ? d.value : undefined; },
+          set(v) { Object.defineProperty(data, key, { value: v, writable: true, configurable: true, enumerable: true }); },
+        });
+      });
+    });
+  }
+
   window.SBLazy = {
     manifest: M,
+    attachData,
     isLoaded: src => loaded.has(src),
     loadAll() { M.files.forEach(f => loadFile(f.src)); },
     stats() {

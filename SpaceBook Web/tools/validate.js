@@ -309,6 +309,19 @@ const changed = [...new Set([...Object.keys(lock), ...Object.keys(bookUnits)])]
 check('CLSn_BOOKS unit counts match tests/contract/cls_books.json (' + Object.keys(bookUnits).length + ' books)',
   changed.length === 0, changed.join(', '));
 
+// Class 11 registry: app.js class11BookBySubject() looks a book up by key (a scan of the values would load every Class 11 book on the lazy page),
+// which holds only while every registration is { key: K, subjectId: 'cls11-' + K } and the registry slot is K.
+safe('CLASS11_BOOKS registrations: slot = key, subjectId = cls11-key', () => {
+  const bad = [], found = [];
+  for (const f of jsFiles.filter(f => /_11_data\.js$/.test(f))) {
+    const m = fs.readFileSync(JS + f, 'utf8').match(/CLASS11_BOOKS = window\.CLASS11_BOOKS \|\| \{\}\)\['([a-z0-9]+)'\] = \{\s*key: '([a-z0-9]+)', subjectId: '([a-z0-9-]+)'/);
+    if (!m) continue;
+    found.push(m[1]);
+    if (m[2] !== m[1] || m[3] !== 'cls11-' + m[1]) bad.push(f + ': slot ' + m[1] + ', key ' + m[2] + ', subjectId ' + m[3]);
+  }
+  check('CLASS11_BOOKS registrations: slot = key, subjectId = cls11-key (' + found.length + ' books)', found.length >= 8 && bad.length === 0, bad.join('; ') || 'only ' + found.length + ' found');
+});
+
 // --------------------------------------------------- 3. index.html wiring
 console.log('--- index.html ---');
 const html = fs.readFileSync(INDEX, 'utf8');

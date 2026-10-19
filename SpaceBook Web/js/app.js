@@ -19202,7 +19202,13 @@ function playParaTTSFromBtn(btn, lang) {
 }
 
 function class11BookByKey(key) { const r = window.CLASS11_BOOKS || {}; return r[key] || null; }
-function class11BookBySubject(id) { const r = window.CLASS11_BOOKS || {}; return Object.values(r).find(b => b.subjectId === id) || null; }
+function class11BookBySubject(id) {
+  // every registration is { key, subjectId: 'cls11-' + key } (tools/validate.js checks it), so look the book up by key: scanning the values reads, and with lazy loading loads, every Class 11 book
+  const r = window.CLASS11_BOOKS || {}, key = String(id).replace(/^cls11-/, '');
+  if (!Object.prototype.hasOwnProperty.call(r, key)) return null;
+  const book = r[key];
+  return book && book.subjectId === id ? book : null;
+}
 
 function getSubjectChapterList(subjKey, classId) {
   // the class asked for wins; state.selectedClass only answers when the caller names none (ARCH-02: it used to be OR-ed in)

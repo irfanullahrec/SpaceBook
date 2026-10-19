@@ -169,9 +169,14 @@
     // as well as globalThis so focused VM checks can exercise the same adapter.
     globalThis.getMath12StudyBank = getMath12StudyBank;
     globalThis.getMath12TopicExercises = getMath12TopicExercises;
-    if (typeof MATH_12_DATA !== 'undefined' && Array.isArray(MATH_12_DATA)) {
-        MATH_12_DATA.forEach(chapter => {
-            chapter.studyBank = makeBank(chapter, liveExercises(chapter), 'chapter', true);
-        });
-    }
+    // Every chapter's bank is built once the book is in. js/math12_study_bank_warm.js calls this right after this script on the
+    // normal page, and right after the book has loaded on the lazy page (tools/build/lazy_overlays.json): touching MATH_12_DATA
+    // here would load the 6 MB book at start-up.
+    globalThis.warmMath12StudyBanks = function () {
+        if (typeof MATH_12_DATA !== 'undefined' && Array.isArray(MATH_12_DATA)) {
+            MATH_12_DATA.forEach(chapter => {
+                chapter.studyBank = makeBank(chapter, liveExercises(chapter), 'chapter', true);
+            });
+        }
+    };
 })();
