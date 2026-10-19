@@ -18,10 +18,10 @@ const norm = s => String(s || '').replace(/<[^>]+>/g, ' ').replace(/[^\p{L}\p{N}
 
 // ---- 1. Papers MCQ pool per subject: keys, skew, duplicate stems
 const bank = {};
-let total = 0, noKey = 0, skewedSubjects = [], dupTotal = 0;
+let total = 0, noKey = 0, skewedSubjects = [], dupTotal = 0, genPool = 0;
 for (const s of subjects) {
   let list;
-  try { list = JSON.parse(run(`JSON.stringify(getCurriculumQuestionsForCategory(${JSON.stringify(s.classId)}, ${JSON.stringify(s.id)}, 'mcqs').map(q => ({ a: q.ans, q: q.q, n: (q.opts || []).length })))`)); } catch (e) { continue; }
+  try { list = JSON.parse(run(`JSON.stringify(getCurriculumQuestionsForCategory(${JSON.stringify(s.classId)}, ${JSON.stringify(s.id)}, 'mcqs').map(q => ({ a: q.ans, q: q.q, n: (q.opts || []).length, g: q.generated ? 1 : 0 })))`)); } catch (e) { continue; }
   if (!list.length) continue;
   const dist = [0, 0, 0, 0, 0];
   list.forEach(q => { if (q.a === null || q.a === undefined) dist[4]++; else dist[Math.min(q.a, 3)]++; });
@@ -30,7 +30,7 @@ for (const s of subjects) {
   const seen = new Map(); let dup = 0;
   list.forEach(q => { const k = norm(q.q); if (seen.has(k)) dup++; else seen.set(k, 1); });
   bank[s.id] = { mcqs: list.length, noKey: dist[4], skewPct: Math.round(top * 100), dupStems: dup };
-  total += list.length; noKey += dist[4]; dupTotal += dup;
+  total += list.length; noKey += dist[4]; dupTotal += dup; genPool += list.filter(q => q.g).length;
   if (keyed >= 20 && top >= 0.8) skewedSubjects.push(s.id);
 }
 
@@ -47,7 +47,7 @@ Object.values(genByClass).forEach(g => { for (const k of Object.keys(generated))
 const placeholder = JSON.parse(run(`(() => { const rows = []; const book = ISLAMYAT_DATA || []; for (const ch of book) if (ch.video && !sbRealVideo(ch.video)) rows.push(ch.title || ch.id); return JSON.stringify(rows); })()`));
 
 const metrics = {
-  paperMcqs: total, paperMcqsWithoutKey: noKey, paperSubjectsSkewedOver80: skewedSubjects.length, paperDuplicateStems: dupTotal,
+  paperMcqs: total, paperMcqsWithoutKey: noKey, paperGeneratedMcqs: genPool, paperSubjectsSkewedOver80: skewedSubjects.length, paperDuplicateStems: dupTotal,
   generatedSloItems: generated.mcqs + generated.shortQuestions + generated.longQuestions, generatedSloSections: generated.sections,
   placeholderVideoChapters: placeholder.length,
 };

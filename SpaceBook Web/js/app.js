@@ -11915,6 +11915,11 @@ function sbMcqKey(m) {
 }
 
 function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
+  const list = getCurriculumQuestionsForCategoryAll(classId, subjectId, catId);
+  return sbFlag('hideGeneratedSlo') ? list.filter(q => !q.generated) : list;   // owner switch, off until approved (docs/CONTENT_REVIEW.md)
+}
+
+function getCurriculumQuestionsForCategoryAll(classId, subjectId, catId) {
   const sid = (subjectId || "").toLowerCase();
   const result = [];
 
@@ -12018,7 +12023,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                   id: `math-rev-m-${u.number}-${sIdx}`,
                   q: sm[2].trim(),
                   opts: [sm[3].trim(), sm[4].trim(), sm[5].trim(), sm[6].trim()],
-                  ans: 0,
+                  ans: null,                       // the review exercise text carries no key (it is printed apart in the book): never "A"
                   exp: `Textbook Review Exercise ${u.number} (${sm[1]})`,
                   chapter: chTitle,
                   topic: `Review Exercise ${u.number}`,
@@ -12126,6 +12131,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                 "Technical terminology without contextual synthesis"
               ],
               ans: 0,
+              generated: true,                     // one template per unit (the same question and options with the unit title): see docs/CONTENT_REVIEW.md
               exp: `Board SLO thematic assessment for Unit ${u.number}`,
               chapter: chTitle,
               topic: "SLO Concept Drills",
@@ -13518,24 +13524,9 @@ function filterUnitVocabByLetter(letter, unitNum, btnEl) {
 // ─── INTERACTIVE FLOATING WORD POPUP / TOOLTIP ───
 let currentPopoverEl = null;
 
+// Formerly asked MyMemory for a meaning and stored the machine text in ENG_URDU_DICT as if it were a dictionary entry. Nothing is sent to a
+// website any more: a word without a meaning on the device simply has none (the popover says so).
 async function fetchOnlineWordTranslation(cleanWord) {
-  try {
-    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(cleanWord)}&langpair=en|ur`);
-    if (!res.ok) return null;
-    const data = await res.json();
-    if (data && data.responseData && data.responseData.translatedText) {
-      const trans = data.responseData.translatedText.trim();
-      const isWarning = /MYMEMORY|WARNING|USAGE|LIMIT|QUOTA|TRANSLATED\.NET|QUERY LENGTH/i.test(trans);
-      if (!isWarning && trans && trans.toLowerCase() !== cleanWord.toLowerCase()) {
-        if (typeof ENG_URDU_DICT !== 'undefined') {
-          ENG_URDU_DICT[cleanWord] = { u: trans, p: '' };
-        }
-        return trans;
-      }
-    }
-  } catch (err) {
-    console.warn('Online dictionary lookup error:', err);
-  }
   return null;
 }
 

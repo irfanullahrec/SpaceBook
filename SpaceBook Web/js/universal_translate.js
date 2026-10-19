@@ -89,25 +89,16 @@
     return v;
   }
 
-  async function viaGoogle(text, src, tgt) {
-    const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=' +
-      encodeURIComponent(src) + '&tl=' + encodeURIComponent(tgt) + '&q=' + encodeURIComponent(text);
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('google ' + res.status);
+  // No text a student selects is sent to any website. If the owner approves a translation service, it is reached only through the
+  // owner's own server: set window.SB_TRANSLATE_PROXY to its URL (POST {text, src, tgt} -> {text}). Unset by default: nothing goes online.
+  const proxyUrl = () => (typeof window.SB_TRANSLATE_PROXY === 'string' ? window.SB_TRANSLATE_PROXY : '');
+  async function viaProxy(text, src, tgt) {
+    const res = await fetch(proxyUrl(), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text, src, tgt }) });
+    if (!res.ok) throw new Error('proxy ' + res.status);
     const data = await res.json();
-    const out = (data && data[0] || []).map(p => p && p[0] || '').join('').trim();
-    if (!out) throw new Error('google empty');
-    return { text: out, detected: data[2] || '' };
-  }
-
-  async function viaMyMemory(text, src, tgt) {
-    const pair = (src === 'auto' ? 'ur' : src) + '|' + tgt;
-    const res = await fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text.slice(0, 480)) + '&langpair=' + pair);
-    if (!res.ok) throw new Error('mymemory ' + res.status);
-    const data = await res.json();
-    const out = data && data.responseData && String(data.responseData.translatedText || '').trim();
-    if (!out || /MYMEMORY|WARNING|QUOTA|LIMIT|INVALID/i.test(out)) throw new Error('mymemory empty');
-    return { text: out, detected: '' };
+    const out = data && String(data.text || '').trim();
+    if (!out) throw new Error('proxy empty');
+    return { text: out };
   }
 
   // ── offline lexicon: SB_OFFLINE_LEXICON rows + ENG_URDU_DICT + every book's word list (built once, no network) ──
@@ -124,6 +115,10 @@
       if (!cur) LX[l].set(k, Object.assign({}, rec));
       else ORDER.forEach(t => { if (!cur[t] && rec[t]) cur[t] = rec[t]; });
     }));
+    // Built at build time (tools/build/make_lexicon.js: the same sources in the same order): one file instead of reading the word list of
+    // every book, which loaded all of them on the lazy page at the first lookup (106 files, 150 MB, about 10 s).
+    const V1 = window.SB_LEXICON_V1;
+    if (V1 && Array.isArray(V1.rows)) { V1.rows.forEach(r => add({ en: r[0], ur: r[1], ps: r[2], ar: r[3] })); return LX; }
     try { String(window.SB_OFFLINE_LEXICON || '').split('\n').forEach(r => { const p = r.split('|'); if (p.length === 4) add({ en: p[0], ur: p[1], ps: p[2], ar: p[3] }); }); } catch (e) { /* none */ }
     try {
       ['CLS1_BOOKS', 'CLS2_BOOKS', 'CLS3_BOOKS', 'CLS4_BOOKS', 'CLS5_BOOKS', 'CLS6_BOOKS', 'CLS7_BOOKS', 'CLS8_BOOKS', 'CLS9_BOOKS', 'CLS10_BOOKS', 'CLASS11_BOOKS'].forEach(n => {
@@ -186,17 +181,10 @@
 
     let result = null;
     const dict = (src === 'en' && !/\s/.test(clean)) ? dictLookup(clean.replace(/[^A-Za-z'-]/g, ''), tgt) : '';
-    try {
-      const g = await viaGoogle(clean, sure ? src : 'auto', tgt);
-      result = { text: g.text, source: 'online', dict, detected: g.detected };
-    } catch (e1) {
-      try {
-        const m = await viaMyMemory(clean, src, tgt);
-        result = { text: m.text, source: 'online', dict };
-      } catch (e2) {
-        result = dict ? { text: dict, source: 'dictionary' } : glossOffline(clean, src, tgt);
-      }
+    if (proxyUrl()) {
+      try { const m = await viaProxy(clean, src, tgt); result = { text: m.text, source: 'online', dict }; } catch (e) { result = null; }
     }
+    if (!result) result = dict ? { text: dict, source: 'dictionary' } : glossOffline(clean, src, tgt);
     if (result.text && result.source !== 'gloss' && result.source !== 'offline') {
       memCache.set(key, result);
       if (clean.length <= 300) store.set('c:' + key, result);

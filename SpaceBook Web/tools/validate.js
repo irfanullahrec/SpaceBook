@@ -446,6 +446,12 @@ console.log('--- offline ---');
     check('no third-party request at start-up (fonts, scripts, styles)', external.length === 0, external.join(', '));
     check('index.html links the web manifest', /<link rel="manifest" href="manifest\.webmanifest"/.test(html));
   });
+  safe('no script sends text to a third-party translation service', () => {
+    const code = f => read('js/' + f).split(String.fromCharCode(10)).filter(l => { const t = l.trim(); return !(t.startsWith('//') || t.startsWith('*') || t.startsWith('/*')); }).join(String.fromCharCode(10));
+    const bad = fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && !/_data\.js$/.test(f)).filter(f => /translate\.googleapis\.com|api\.mymemory|translate\.google\.com/.test(code(f)));
+    check('no script sends text to a third-party translation service', bad.length === 0, bad.join(','));
+    check('the generated lexicon is present', exists('js/lexicon_data.js') && /SB_LEXICON_V1/.test(read('js/lexicon_data.js').slice(0, 400)));
+  });
   safe('read-aloud never asks a website for speech', () => {
     const offenders = ['app.js', 'universal_translate.js', 'word_stats.js', 'sb_four_lang.js', 'reader_tools.js', 'sb_trilingual.js', 'sb_global_ui.js'].filter(f => exists('js/' + f) && /translate_tts/.test(read('js/' + f)));
     check('read-aloud never asks a website for speech', offenders.length === 0, offenders.join(','));

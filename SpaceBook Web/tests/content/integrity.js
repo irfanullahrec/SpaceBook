@@ -71,6 +71,18 @@ for (const id of ['cls2-urdu', 'cls9-isl', 'cls10-chem', 'cls9-pakstudy']) {
   check('with the flag, Papers no longer offers generated Maths MCQs', pool < pool0, pool + ' vs ' + pool0);
 }
 
+// ---- the paper pool: no fabricated key, generated items marked
+{
+  const keys = J("(() => { const out = { revNull: 0, revOther: 0 }; for (const [c, id] of [['cls8','cls8-math'], ['cls10','cls10-math'], ['cls7','cls7-math']]) for (const q of getCurriculumQuestionsForCategory(c, id, 'mcqs')) if (q.exp && /Textbook Review Exercise/.test(q.exp)) { if (q.ans === null) out.revNull++; else out.revOther++; } return out; })()");
+  check('review-exercise MCQs parsed from text have no key (null), never A', keys.revOther === 0, JSON.stringify(keys));
+  const eng = J("(() => { const l = getCurriculumQuestionsForCategory('cls9', 'cls9-eng', 'mcqs'); return { n: l.length, gen: l.filter(q => q.generated).length }; })()");
+  check('the one-template-per-unit English thematic MCQs are marked generated', eng.gen > 0, JSON.stringify(eng));
+  run('window.SB_FLAGS = { hideGeneratedSlo: true }');
+  const eng2 = J("getCurriculumQuestionsForCategory('cls9', 'cls9-eng', 'mcqs').length");
+  run('window.SB_FLAGS = {}');
+  check('the owner switch removes them from the paper pool', eng2 === eng.n - eng.gen, eng2 + ' vs ' + (eng.n - eng.gen));
+}
+
 // ---- PDFs: no button that leads nowhere
 {
   check('sbPdf gives nothing for a path that is not packaged', run("[sbPdf('assets/books/Class-9-Biology-KPK.pdf'), sbPdf('file:///D:/x.pdf'), sbPdf(null)].join('|')") === '||');

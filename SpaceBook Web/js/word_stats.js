@@ -219,18 +219,6 @@
     return v;
   }
 
-  async function googleBatch(words, src, tgt) {
-    const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=' + src + '&tl=' + tgt +
-      '&q=' + encodeURIComponent(words.join('\n'));
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('google ' + res.status);
-    const data = await res.json();
-    const text = ((data && data[0]) || []).map(p => (p && p[0]) || '').join('');
-    const lines = text.split('\n').map(x => x.trim());
-    if (lines.length !== words.length) throw new Error('line mismatch');
-    return lines;
-  }
-
   async function translateMany(words, src, tgt) {
     const pair = src + '>' + tgt;
     const store = tStore(pair);
@@ -245,7 +233,7 @@
     for (let i = 0; i < todo.length; i += 40) {
       const chunk = todo.slice(i, i + 40);
       let lines = null;
-      try { lines = await googleBatch(chunk, src, tgt); } catch (e) { lines = null; }
+      // no batch request to a website: each word goes through SBTranslate (dictionary and word lists on the device)
       if (lines) {
         chunk.forEach((w, j) => { out[w] = lines[j] || ''; if (lines[j]) store[w] = lines[j]; });
       } else if (window.SBTranslate && typeof window.SBTranslate.translate === 'function') {

@@ -366,3 +366,24 @@ Not verified: in a real browser; the render-time behaviour of the 19 `MutationOb
 Risks: a new file that still wraps a function itself is caught by CI only after the fact; a function not defined when a module registers (hooking a name that does not exist yet) now throws instead of silently skipping where the old code returned early.
 
 Next: a DOM-level comparison tool (jsdom with working observers) so the observers can be converted module by module; then the rest of the Phase 5 list.
+
+## 2026-10-20 — Phase 7 (first part): offline meanings from one generated lexicon, no text sent to third parties
+Done (`docs/PHASE7_LEXICON.md`, `docs/LEXICON_COVERAGE.md`):
+- The first word lookup on the lazy page loaded 106 book files (150 MB, ~10 s) to build the offline lexicon. `tools/build/make_lexicon.js` now builds it at build time into `js/lexicon_data.js` (12,738 rows, 0.64 MB; part of `tools/build/all.js`); `universal_translate.js` adds the rows instead of scanning the books: 1 file / 1 MB / 0.4 s.
+- SEC-04: the calls to Google (selection translation, word statistics) and MyMemory (selection translation, the word popover, which also wrote machine text into the dictionary) are removed. Nothing is sent to any website; an owner-approved server proxy (`window.SB_TRANSLATE_PROXY`) is the only possible way online, off by default.
+- Coverage report (per direction and class, types and occurrences) and six review queues of the most frequent words without a meaning: `tools/build/lexicon_report.js`.
+
+Verified by: `tests/lexicon/equivalence.js` 5/0 (the generated rows answer exactly like the old book scan on ~4,800 lookups in 12 directions; a lookup loads the lexicon and the dictionary, no book); `tests/lexicon/privacy.js` 8/0 (no request to any website while translating a sentence, a word, or using the old word lookup; with a proxy only the proxy is called; no script names a third-party translation/speech host); validate and smoke see below.
+
+Not verified: the hover/selection UI in a browser; the proxy path against a real server (none exists); lexicon rows have no per-row provenance yet.
+
+Result for the owner: offline coverage by occurrences: English->Urdu 84.3 %, ->Pashto 78.7 %, ->Arabic 63.2 % (targets 95 / 95 / 85 not met: translation work, queues in `docs/lexicon_review/`).
+
+Risks: students who relied on Google for sentences no book translates now get a word-by-word gloss or "meaning not yet available"; the previously cached online translations in their browsers stay (labelled as machine text).
+
+Next: Phase 7 interaction component and per-row provenance when reviewed meanings arrive; Phase 8 and the modules.
+
+## 2026-10-20 — Phase 6 (addendum), Phase 8 (what could be done), Phase 10 (first part)
+- Papers pool: the 288 "Review Exercise" MCQs parsed from book text no longer get the key A (they are key-less, "Key not available"); the per-unit English thematic MCQs are marked `generated` and hidden by the same owner switch (`docs/CONTENT_REVIEW.md`). `tools/content_lint.js` baseline updated (paperMcqsWithoutKey 5 -> 293: the 288 were hidden as "A" before). `tests/content/integrity.js` 35/0.
+- Phase 8 (`docs/PHASE8_SECURITY.md`): security headers and a **report-only** CSP in `deploy/spacebook.htaccess`; no third parties (validate); everything that needs a decision of yours (signing key, licensing model, repository visibility) or the Phase 5 refactor (enforcing the CSP: 418 inline handlers in `app.js`, `eval`) is listed with the reason, plus the threat model in plain words. Nothing was faked: no signing, licensing, encryption or watermark exists.
+- Phase 10 (`docs/CLEANUP_LOG.md`): `tools/cleanup/archive.js` moved 10,264 untracked files (7.2 GB: `tmp/`, `tools/source-review/`, staging folders, page images, backups) to `D:\SpaceBook\SpaceBook_Archive` with a path/size/SHA-256 log; nothing deleted. Working folder 8.0 GB -> 1.4 GB, production payload unchanged, disk freed 0 (same drive). validate 999/0 and smoke 0 failed after the move. The tracked leftovers, the 404/network-log checks and `git gc` are listed with their reasons.

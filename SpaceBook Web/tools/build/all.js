@@ -23,6 +23,8 @@ const STEPS = [
     outputs: ['js/test_prep_bank.js'], touches: ['tools/test_prep/last_bank_report.txt'], run: node('tools/test_prep/build_mcq_bank.js') },
   { id: 'study-index', what: 'chapter and question counts per subject (Study Plan)',
     outputs: ['js/study_plan_index.js'], touches: ['tools/study_plan/last_build_report.txt'], run: node('tools/study_plan/build_study_index.js') },
+  { id: 'lexicon', what: 'offline word meanings of all books in one file (Lexicon v1: hover and selection lookups, no book is loaded)',
+    outputs: ['js/lexicon_data.js'], run: node('tools/build/make_lexicon.js') },
   // last: lazy.html carries the content hash of every script, including the generated ones above
   { id: 'lazy', what: 'lazy page and its manifest (client-side lazy loading of the book files)',
     outputs: ['lazy.html', 'content/lazy_manifest.json'], run: node('tools/build/make_lazy.js'), checkNative: node('tools/build/make_lazy.js', '--check') },

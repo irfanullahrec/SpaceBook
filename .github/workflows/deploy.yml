@@ -73,6 +73,9 @@ jobs:
         run: |
           node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
           node --max-old-space-size=6144 tests/hooks/hooks.js
+      - name: lexicon: the generated file answers like the old book scan and loads no book
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tests/lexicon/equivalence.js
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js
