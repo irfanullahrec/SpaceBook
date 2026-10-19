@@ -143,3 +143,19 @@ Not verified: PHP 7.4 and MySQL 5.7 (CI job not yet run); no client uses v2 yet;
 
 Next: step 4 (GET since cursor, plan and test-prep events, merge rules) — still waiting for the owner to confirm the server steps before any push.
 
+## 2026-10-19 — Phase 2, step 4: pull, plans, test prep (branch phase/p2-server)
+Done:
+- Migration `003_sync_state.sql` (+ down): `sync_changes`, `user_sync_state`, `tp_answers`, `tp_days`, `tp_runs`, `study_plans.rev`.
+- `api/v2/sync.php` GET `?since=` (absolute state of changed objects, paged by 2,000 changes) and new events `plan.save`, `plan.delete`, `tp.answer`, `tp.session`, `tp.run`, `tp.run.clear`; libs `changes.php`, `plans.php`, `testprep.php`, `pull.php`.
+- v1 `study_plans.php`, `test_prep.php` and the rewards library write the change log; v1 test-prep saves also merge into the v2 tables (more attempts wins); first v2 contact imports the old `test_prep_records` blob once.
+- Design section 11 documents what differs from the approved design (answers are additive; change log as cursor).
+
+Verified by:
+- `php tests/php/run.php` -> 152 passed, 0 failed (two runs, ~40 s). New checks: pull empty/full/incremental/paged (1,100 answers over 3 pages, all delivered), absolute and repeatable; plan fast-forward, concurrent edit (later arrival wins fields, done = max, removed task stays removed), tombstones (delete, late offline edit, delete-before-create), 50-plan limit, 512 KB limit, bad ids; v1 plan save/delete visible to v2 and the reverse; two devices answering one MCQ add up; out-of-order answers keep the newest last_correct; time caps; daily numbers per track with derived `all`; session stored once; unfinished-run ordering around a clear; old record import once, old client cannot lower totals and an unchanged resend adds no change rows; cookie pull; wrong bearer 401.
+- Mutations caught: plan merge off, tombstone check off (after strengthening the test), answers overwrite instead of add, last_correct ignoring time, paging off.
+- `node tools/php74_lint.js` -> 18 files, 0 problems.
+
+Not verified: PHP 7.4 / MySQL 5.7 (only PHP 8.2 + MariaDB 10.4 here; CI job php-test not yet run); the ALTER TABLE in migration 003 on the live database (no IF NOT EXISTS on MySQL 5.7, so it must run exactly once: take a mysqldump first); performance of pulls for a user with all 6,000 MCQs answered; no client uses any of this yet. The working tree also holds another session's Class 1 changes (index.html, js/english_1_book.js, js/cls1_*.js, figs1.py); they are not in my commits.
+
+Next: steps 5-7 are client work (js/core/store.js + sync.js outbox, convert sb_rewards/sb_study_plan/test_prep, guest-merge prompt, profile/export/delete, password change). Server steps in docs/PHASE0_SERVER_STEPS.md still pending; nothing pushed.
+

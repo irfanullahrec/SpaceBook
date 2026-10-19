@@ -151,3 +151,14 @@ Gate: zero lost or duplicated events in all scripted scenarios; coins cannot be 
 4. **Backup destination** off the server (second hosting account, cloud drive, local machine).
 5. Confirm the live host's PHP (7.4.33 seen on 2026-10-19) and whether it can be raised to 8.x, which would let the v2 code use modern syntax.
 6. Approval to run migrations on the live DB (after a verified dump) — not before the Phase 0 server steps are done.
+
+## 11. As built, steps 3-4 (2026-10-19)
+
+Differences between this design and what was implemented in `api/v2/sync.php` and `api/lib/*`:
+
+- **Pull cursor** is a change log (`sync_changes`: kind + ref per change), not `sync_events.server_seq`. `GET ?since=N` returns the *current* state of the objects named after N (absolute, so replays are harmless); `since=0` returns everything; pages of 2,000 changes with `more`. v1 endpoints (`progress.php`, `study_plans.php`, `test_prep.php`) also write to the change log, so v1 and v2 clients see each other's changes during the transition.
+- **Test-prep answers are additive** (`tp.answer {mcqId, track, day, correct, ms, ts}`): attempts, correct and milliseconds are added per event, exactly once thanks to the ledger, so two devices answering the same MCQ both count. This replaces the "max attempts wins" rule written in section 6, which would lose one device's answers. "More attempts wins" is kept only for old-format records (v1 `save` and the one-time import of `test_prep_records`). `last_correct` follows the answer with the newest `ts`, whatever the delivery order. The `all` track is not stored; the pull computes it as the sum of the tracks.
+- **Plans** merge by server revision as in section 6; plus tombstones for deletes that arrive before the plan; at most 50 plans (`plan_limit`); plan events up to 512 KB, sessions and runs up to 200 KB. The `rev` is added to plans in the pull.
+- **Unfinished test-prep run** (`tp.run`, `tp.run.clear`) is ordered by the device-supplied `savedAt`/`clearedAt` (as the page already did), clamped to at most one day in the future.
+- New event types are `plan.save`, `plan.delete`, `tp.answer`, `tp.session`, `tp.run`, `tp.run.clear` (see the header of `api/v2/sync.php`). Migration 003 adds `sync_changes`, `user_sync_state`, `tp_answers`, `tp_days`, `tp_runs` and `study_plans.rev`.
+- Still open: the client (outbox, `js/core/*`), and the guest-merge prompt (steps 5-7).

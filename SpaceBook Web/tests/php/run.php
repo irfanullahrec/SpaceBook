@@ -55,11 +55,11 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 2 pending', $s['current'] === 0 && count($s['pending']) === 2 && $s['latest'] === 2, json_encode($s));
+check('empty database is at version 0 with 3 pending', $s['current'] === 0 && count($s['pending']) === 3 && $s['latest'] === 3, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies 001 and 002', count($applied) === 2, json_encode($applied));
+check('up applies 001, 002 and 003', count($applied) === 3, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
-foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version'] as $t) {
+foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
 }
 check('second up changes nothing', sb_migrate_up($pdo) === []);
@@ -68,10 +68,11 @@ $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
 $undone = sb_migrate_down($pdo, 1);
-check('down 1 removes the 002 tables only', $undone === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone));
+check('down 1 removes the 003 tables and the plan rev column only', $undone === ['003_sync_state.sql'] && !in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone));
+check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 2', count(sb_migrate_up($pdo)) === 1 && sb_schema_version($pdo) === 2);
+check('up again restores version 3', count(sb_migrate_up($pdo)) === 2 && sb_schema_version($pdo) === 3);
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -172,7 +173,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 2 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 3 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -263,8 +264,8 @@ function fresh_user(): array
 function act_key(string $n): string { return 'cls2|math|u0|trace|' . $n . '|0'; }
 
 $u = fresh_user();
-$x = http('GET', 'v2/sync.php', null, ['Authorization: Bearer ' . $u['token']]);
-check('GET is not allowed yet', $x['code'] === 405);
+$x = http('DELETE', 'v2/sync.php', null, ['Authorization: Bearer ' . $u['token']]);
+check('only GET and POST are allowed', $x['code'] === 405);
 $x = sync_post(null, []);
 check('no credentials -> 401', $x['code'] === 401);
 $x = sync_post(str_repeat('a', 64), []);
@@ -301,7 +302,7 @@ $bad = [
     ['bad_total', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 0, 'step' => 0])],
     ['bad_step', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 3, 'step' => -1])],
     ['bad_step', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 3, 'step' => 5000])],
-    ['unsupported_type', ev('plan.save', ['plan' => []])],
+    ['bad_plan_id', ev('plan.save', ['plan' => []])],
     ['unsupported_type', ev('coins', ['amount' => 99999])],
     ['too_large', ev('step', ['key' => act_key('bbb'), 'title' => str_repeat('x', 70000), 'total' => 3, 'step' => 0])],
 ];
@@ -403,6 +404,192 @@ $times1 = (int)test_pdo()->query("SELECT times_completed FROM activity_progress 
 $x2 = sync_post($u8['token'], [$eAgain, $eAgain]);
 $times2 = (int)test_pdo()->query("SELECT times_completed FROM activity_progress WHERE user_id = {$u8['id']}")->fetchColumn();
 check('a replayed repeat (same event id, even twice in one batch) is applied once', $times1 === 2 && $times2 === 2 && $x1['json']['coins'] === 8 && $x2['json']['coins'] === 8 && $x2['json']['accepted'] === [$eAgain['eventId'], $eAgain['eventId']], json_encode([$times1, $times2, $x1['json']['coins'], $x2['json']['coins']]));
+
+// ============================================================ 5. plans, test prep, pull
+echo "--- plans, test prep, pull ---\n";
+function pull(?string $token, int $since = 0, ?string $jar = null): array
+{
+    return http('GET', 'v2/sync.php?since=' . $since, null, $token ? ['Authorization: Bearer ' . $token] : [], $jar);
+}
+function mk_plan(string $id, string $name, array $tasks): array
+{
+    return ['id' => $id, 'name' => $name, 'updatedAt' => 1700000000000, 'sessions' => [['id' => 's1', 'date' => '2026-10-20', 'tasks' => $tasks]]];
+}
+function task(string $id, int $n, int $done): array { return ['id' => $id, 'n' => $n, 'done' => $done, 'cat' => 'rd']; }
+function plan_of(array $pullJson, string $id): ?array
+{
+    foreach ($pullJson['plans'] as $p) if ($p['id'] === $id) return $p;
+    return null;
+}
+function task_done(array $plan, string $tid): ?int
+{
+    foreach ($plan['sessions'] as $s) foreach ($s['tasks'] as $t) if ($t['id'] === $tid) return $t['done'];
+    return null;
+}
+function ans(string $mcq, bool $correct, int $ms, int $ts, string $track = 'cls9-bio', string $day = '2026-10-20'): array
+{
+    return ev('tp.answer', ['mcqId' => $mcq, 'track' => $track, 'day' => $day, 'correct' => $correct, 'ms' => $ms, 'ts' => $ts]);
+}
+
+// ---- pull basics
+$p = fresh_user();
+check('GET without credentials -> 401', pull(null)['code'] === 401);
+$g = pull($p['token']);
+check('an empty account pulls an empty state', $g['code'] === 200 && $g['json']['cursor'] === 0 && $g['json']['more'] === false && $g['json']['progress'] === [] && $g['json']['plans'] === [] && $g['json']['tp']['q'] === [] && $g['json']['tp']['run'] === null, $g['body']);
+
+// ---- progress in a pull, incremental
+sync_post($p['token'], [stepEv(act_key('pa'), 3, 0), stepEv(act_key('pa'), 3, 1)]);
+$g1 = pull($p['token']);
+check('a full pull lists progress with steps and total', isset($g1['json']['progress'][act_key('pa')]) && $g1['json']['progress'][act_key('pa')]['done'] === [0, 1] && $g1['json']['progress'][act_key('pa')]['total'] === 3 && $g1['json']['coins'] === 2, $g1['body']);
+$c0 = $g1['json']['cursor'];
+sync_post($p['token'], [stepEv(act_key('pb'), 2, 0)]);
+$g2 = pull($p['token'], $c0);
+check('an incremental pull returns only what changed since the cursor', array_keys($g2['json']['progress']) === [act_key('pb')] && $g2['json']['cursor'] > $c0, $g2['body']);
+$g3 = pull($p['token'], $g2['json']['cursor']);
+check('pulling again from the new cursor returns nothing', $g3['json']['progress'] === [] && $g3['json']['cursor'] === $g2['json']['cursor'] && $g3['json']['more'] === false);
+check('pull is absolute: the same request twice gives the same answer', pull($p['token'])['json'] === pull($p['token'])['json']);
+
+// ---- plans
+$pl = fresh_user();
+$A = $pl['token']; $B = sb_device_issue(test_pdo(), $pl['id'], 'second')['token'];
+$x = sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Mine', [task('t1', 3, 0), task('t2', 2, 0)]), 'baseRev' => 0])]);
+check('a new plan is accepted', count($x['json']['accepted']) === 1 && $x['json']['rejected'] === [], $x['body']);
+$g = pull($A);
+check('the pull shows the plan at revision 1', ($pp = plan_of($g['json'], 'plan_aaa1')) && $pp['rev'] === 1 && $pp['name'] === 'Mine');
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Mine v2', [task('t1', 3, 2), task('t2', 2, 0)]), 'baseRev' => 1])]);
+$pp = plan_of(pull($A)['json'], 'plan_aaa1');
+check('an edit based on the latest revision replaces the plan (rev 2)', $pp['rev'] === 2 && $pp['name'] === 'Mine v2' && task_done($pp, 't1') === 2);
+// two devices edit revision 2 independently; A arrives first, then B
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Mine v2', [task('t1', 3, 3), task('t2', 2, 0)]), 'baseRev' => 2])]);
+sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Renamed on B', [task('t1', 3, 1)]), 'baseRev' => 2])]);
+$pp = plan_of(pull($A)['json'], 'plan_aaa1');
+check('concurrent edit: the later arrival wins the fields, ticked work is never lost (t1 done = max(3,1))', $pp['name'] === 'Renamed on B' && task_done($pp, 't1') === 3 && $pp['rev'] === 4, json_encode($pp));
+check('a task the later device removed stays removed', task_done($pp, 't2') === null);
+// delete + resurrect attempts
+$x = sync_post($B, [ev('plan.delete', ['id' => 'plan_aaa1'])]);
+$g = pull($A);
+check('delete leaves a tombstone: gone from plans, listed in plansDeleted', plan_of($g['json'], 'plan_aaa1') === null && in_array('plan_aaa1', $g['json']['plansDeleted'], true));
+$x = sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Offline edit', [task('t1', 3, 3)]), 'baseRev' => 4])]);
+$g = pull($A);
+check('an offline edit of a deleted plan does not bring it back', count($x['json']['accepted']) === 1 && plan_of($g['json'], 'plan_aaa1') === null);
+sync_post($A, [ev('plan.delete', ['id' => 'plan_never'])]);
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_never', 'Late', [task('t1', 1, 0)]), 'baseRev' => 0])]);
+check('a delete that arrives before the plan blocks the plan', plan_of(pull($A)['json'], 'plan_never') === null);
+$tomb = test_pdo()->query("SELECT plan_id, plan_json, rev, deleted FROM study_plans WHERE user_id = {$pl['id']} AND plan_id IN ('plan_aaa1', 'plan_never') ORDER BY plan_id")->fetchAll();
+check('tombstones stay empty and keep their revision when a late save arrives', count($tomb) === 2 && $tomb[0]['plan_json'] === '{}' && (int)$tomb[0]['rev'] === 5 && $tomb[1]['plan_json'] === '{}' && (int)$tomb[1]['rev'] === 1 && (int)$tomb[0]['deleted'] === 1, json_encode($tomb));
+$x = sync_post($A, [ev('plan.save', ['plan' => ['id' => 'x', 'sessions' => []], 'baseRev' => 0]), ev('plan.delete', ['id' => '../x'])]);
+check('bad plan ids are rejected', array_column($x['json']['rejected'], 'code') === ['bad_plan_id', 'bad_plan_id']);
+$x = sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_big1', str_repeat('n', 530000), [task('t1', 1, 0)]), 'baseRev' => 0])]);
+check('a plan over 512 KB is rejected', $x['json']['rejected'][0]['code'] === 'too_large', $x['body']);
+
+$many = fresh_user();
+$evs = [];
+for ($i = 0; $i < 51; $i++) $evs[] = ev('plan.save', ['plan' => mk_plan('plan_m' . str_pad((string)$i, 3, '0', STR_PAD_LEFT), 'P' . $i, [task('t1', 1, 0)]), 'baseRev' => 0]);
+$x = sync_post($many['token'], $evs);
+check('at most 50 plans: the 51st is rejected as plan_limit', count($x['json']['accepted']) === 50 && $x['json']['rejected'][0]['code'] === 'plan_limit', json_encode($x['json']['rejected']));
+
+// v1 plan endpoints still work and v2 sees their changes
+$v1 = fresh_user();
+http('POST', 'auth.php?action=login', ['whatsapp' => $v1['num'], 'password' => 'secret123'], [], $v1['jar']);
+$o = ['Origin: http://127.0.0.1:' . $port];
+$x = http('POST', 'study_plans.php?action=save', ['plan' => mk_plan('plan_v1aa', 'From v1', [task('t1', 2, 1)])], $o, $v1['jar']);
+check('v1 plan save still works', $x['code'] === 200 && $x['json']['ok'] === true, $x['body']);
+$gv = pull($v1['token']);
+check('v2 pull sees a plan saved through v1 (rev 1)', ($pp = plan_of($gv['json'], 'plan_v1aa')) && $pp['rev'] === 1 && $pp['name'] === 'From v1', $gv['body']);
+$cv = $gv['json']['cursor'];
+http('POST', 'study_plans.php?action=delete', ['id' => 'plan_v1aa'], $o, $v1['jar']);
+$gv = pull($v1['token'], $cv);
+check('v2 incremental pull sees a v1 delete', in_array('plan_v1aa', $gv['json']['plansDeleted'], true));
+$x = http('GET', 'study_plans.php?action=list', null, [], $v1['jar']);
+check('v1 list reports the same deletion', in_array('plan_v1aa', $x['json']['deleted'], true));
+
+// ---- test prep
+$t = fresh_user();
+$T = $t['token']; $T2 = sb_device_issue(test_pdo(), $t['id'], 'second')['token'];
+sync_post($T, [ans('m001', true, 4000, 1000), ans('m001', false, 6000, 2000), ans('m001', true, 5000, 3000)]);
+$q = pull($T)['json']['tp']['q'];
+check('answers are added up per MCQ: attempts 3, correct 2, last at 3000, last right, 15,000 ms', $q['m001'] === [3, 2, 3000, 1, 15000], json_encode($q));
+sync_post($T2, [ans('m001', true, 1000, 4000), ans('m001', true, 1000, 5000)]);
+$q = pull($T)['json']['tp']['q'];
+check('a second device answering the same MCQ adds to it (5 attempts) instead of overwriting', $q['m001'][0] === 5 && $q['m001'][1] === 4 && $q['m001'][2] === 5000, json_encode($q));
+sync_post($T, [ans('m002', true, 100, 200), ans('m002', false, 100, 100)]);   // the older answer arrives last
+$q = pull($T)['json']['tp']['q'];
+check('last_correct follows the newest answer even when delivered out of order', $q['m002'] === [2, 1, 200, 1, 200], json_encode($q['m002']));
+sync_post($T, [ans('m003', true, 99999999, 10, 'cls9-bio', '2026-10-21')]);
+$g = pull($T)['json']['tp'];
+check('one answer counts at most an hour, and at most 5 minutes of daily time', $g['q']['m003'][4] === 3600000 && $g['days']['cls9-bio']['2026-10-21'][0] === 300000);
+sync_post($T, [ans('m004', true, 1000, 10, 'cls9-phy', '2026-10-22'), ans('m005', false, 2000, 11, 'cls9-bio', '2026-10-22')]);
+$g = pull($T)['json']['tp'];
+check("daily numbers per track, plus an 'all' track that is their sum", $g['days']['cls9-phy']['2026-10-22'] === [1000, 1, 1] && $g['days']['cls9-bio']['2026-10-22'] === [2000, 1, 0] && $g['days']['all']['2026-10-22'] === [3000, 2, 1], json_encode($g['days']));
+$x = sync_post($T, [ans('', true, 1, 1), ans('m1', true, 1, 1, 'all'), ans('m1', true, 1, 1, 'cls9-bio', '2026-1-1'), ev('tp.answer', ['mcqId' => 'bad id!', 'track' => 'cls9-bio', 'day' => '2026-10-20'])]);
+check('bad MCQ id, track "all", bad day are rejected', array_column($x['json']['rejected'], 'code') === ['bad_mcq', 'bad_track', 'bad_day', 'bad_mcq'], json_encode($x['json']['rejected']));
+
+$sess = ['id' => 'sess_one1', 'track' => 'cls9-bio', 'mode' => 'practice', 'ts' => 1700000000000, 'n' => 10, 'c' => 7, 'ms' => 60000, 'items' => [1, 2, 3]];
+sync_post($T, [ev('tp.session', ['session' => $sess]), ev('tp.session', ['session' => $sess])]);
+$g = pull($T)['json']['tp'];
+check('a session is stored once however often it is sent', count($g['sessions']) === 1 && $g['sessions'][0]['id'] === 'sess_one1' && (int)test_pdo()->query("SELECT COUNT(*) FROM test_prep_sessions WHERE user_id = {$t['id']}")->fetchColumn() === 1);
+$x = sync_post($T, [ev('tp.session', ['session' => ['id' => 'x', 'track' => 'a', 'mode' => 'practice']]), ev('tp.session', ['session' => ['id' => 'sess_two2', 'track' => 'cls9-bio', 'mode' => 'cheating']])]);
+check('a malformed session is rejected', array_column($x['json']['rejected'], 'code') === ['bad_session', 'bad_session'], json_encode($x['json']));
+
+// the unfinished session
+$runA = ['id' => 'run1', 'track' => 'cls9-bio', 'mode' => 'practice', 'ids' => ['m001'], 'answers' => [null], 'i' => 0, 'savedAt' => 1000];
+sync_post($T, [ev('tp.run', ['run' => $runA])]);
+check('an unfinished session is stored', pull($T)['json']['tp']['run']['id'] === 'run1');
+sync_post($T2, [ev('tp.run', ['run' => ['id' => 'older', 'savedAt' => 500] + $runA])]);
+check('an older copy from another device does not replace it', pull($T)['json']['tp']['run']['id'] === 'run1');
+sync_post($T2, [ev('tp.run.clear', ['clearedAt' => 2000])]);
+$g = pull($T)['json']['tp'];
+check('clearing hides it and reports when', $g['run'] === null && $g['runClearedAt'] === 2000);
+sync_post($T, [ev('tp.run', ['run' => ['id' => 'run2', 'savedAt' => 1500] + $runA])]);
+check('a copy saved before the clear stays hidden', pull($T)['json']['tp']['run'] === null);
+sync_post($T, [ev('tp.run', ['run' => ['id' => 'run3', 'savedAt' => 3000] + $runA])]);
+check('a copy saved after the clear is back', pull($T)['json']['tp']['run']['id'] === 'run3');
+$x = sync_post($T, [ev('tp.run', ['run' => ['id' => 'nosave']]), ev('tp.run.clear', ['clearedAt' => 0])]);
+check('a run without savedAt and a clear without a time are rejected', array_column($x['json']['rejected'], 'code') === ['bad_run', 'bad_run']);
+
+// ---- old test-prep records (v1) reach the v2 tables
+$leg = fresh_user();
+$rec = ['v' => 1, 'updatedAt' => 5000, 'q' => ['L1' => [5, 3, 1000, 1, 9000], 'L2' => [1, 0, 2000, 0, 500]], 'days' => ['cls9-bio' => ['2026-10-01' => [60000, 5, 3]]], 'run' => null, 'runClearedAt' => 0];
+test_pdo()->prepare('INSERT INTO test_prep_records (user_id, record_json, updated_ms) VALUES (?, ?, 5000)')->execute([$leg['id'], json_encode($rec)]);
+$g = pull($leg['token']);
+check('first v2 contact imports the old record (once)', $g['json']['tp']['q']['L1'] === [5, 3, 1000, 1, 9000] && $g['json']['tp']['days']['cls9-bio']['2026-10-01'] === [60000, 5, 3] && $g['json']['tp']['days']['all']['2026-10-01'] === [60000, 5, 3], $g['body']);
+sync_post($leg['token'], [ans('L1', true, 1000, 3000)]);
+pull($leg['token']);
+check('the import is not repeated on later pulls (L1 stays at 6 attempts)', pull($leg['token'])['json']['tp']['q']['L1'][0] === 6);
+http('POST', 'auth.php?action=login', ['whatsapp' => $leg['num'], 'password' => 'secret123'], [], $leg['jar']);
+$o = ['Origin: http://127.0.0.1:' . $port];
+$rec2 = ['v' => 1, 'updatedAt' => 6000, 'q' => ['L1' => [2, 1, 500, 0, 100], 'L9' => [4, 4, 9000, 1, 700]], 'days' => [], 'run' => null, 'runClearedAt' => 0];
+$x = http('POST', 'test_prep.php?action=save', ['record' => $rec2], $o, $leg['jar']);
+$q = pull($leg['token'])['json']['tp']['q'];
+check('an old client saving fewer attempts cannot reduce the totals; a new MCQ arrives', $x['code'] === 200 && $q['L1'][0] === 6 && $q['L9'] === [4, 4, 9000, 1, 700], json_encode($q));
+$rec3 = ['v' => 1, 'updatedAt' => 7000, 'q' => ['L9' => [9, 8, 9500, 1, 900]], 'days' => [], 'run' => null, 'runClearedAt' => 0];
+http('POST', 'test_prep.php?action=save', ['record' => $rec3], $o, $leg['jar']);
+check('an old client with more attempts raises them (more attempts wins)', pull($leg['token'])['json']['tp']['q']['L9'] === [9, 8, 9500, 1, 900]);
+$cl = pull($leg['token'])['json']['cursor'];
+http('POST', 'test_prep.php?action=save', ['record' => $rec3], $o, $leg['jar']);
+check('an old client re-sending an unchanged record adds no change-log rows', pull($leg['token'])['json']['cursor'] === $cl);
+http('POST', 'test_prep.php?action=session', ['session' => ['id' => 'v1sess1', 'track' => 'cls9-bio', 'mode' => 'mock', 'ts' => 5, 'n' => 3, 'c' => 1, 'ms' => 10]], $o, $leg['jar']);
+check('a session saved through v1 is pulled by v2', in_array('v1sess1', array_column(pull($leg['token'], $cl)['json']['tp']['sessions'], 'id'), true));
+
+// ---- paging of the change log
+$pg = fresh_user();
+$evs = [];
+for ($i = 0; $i < 1100; $i++) $evs[] = ans('pg' . $i, true, 10, 1000 + $i);
+foreach (array_chunk($evs, 500) as $chunk) sync_post($pg['token'], $chunk);
+$p1 = pull($pg['token'], 1);
+check('a long change log is paged: first page has more = true', $p1['code'] === 200 && $p1['json']['more'] === true && $p1['json']['cursor'] > 1, $p1['code'] . ' ' . substr($p1['body'], 0, 120));
+$p2 = pull($pg['token'], $p1['json']['cursor']);
+$p3 = $p2['json']['more'] ? pull($pg['token'], $p2['json']['cursor']) : $p2;
+$seen = count($p1['json']['tp']['q']) + count($p2['json']['tp']['q']) + ($p2['json']['more'] ? count($p3['json']['tp']['q']) : 0);
+check('following the cursor reaches the end with every answered MCQ delivered (1,100)', $p3['json']['more'] === false && $seen >= 1099 && pull($pg['token'])['json']['cursor'] === $p3['json']['cursor'], "seen=$seen");
+
+// cookie GET
+$ck = fresh_user();
+http('POST', 'auth.php?action=login', ['whatsapp' => $ck['num'], 'password' => 'secret123'], [], $ck['jar']);
+sync_post($ck['token'], [stepEv(act_key('ckp'), 1, 0)]);
+$x = pull(null, 0, $ck['jar']);
+check('a cookie session can pull', $x['code'] === 200 && $x['json']['coins'] === 6, $x['body']);
+check('a wrong bearer token cannot pull even with a cookie', pull(str_repeat('c', 64), 0, $ck['jar'])['code'] === 401);
 
 // ============================================================ done
 if (is_resource($proc)) { proc_terminate($proc); proc_close($proc); }

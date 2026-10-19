@@ -10,6 +10,8 @@
 //
 // Every function here expects to run inside a transaction (rows are locked with FOR UPDATE).
 
+require_once __DIR__ . '/changes.php';
+
 const SB_STEP_COIN            = 1;
 const SB_COMPLETE_COIN        = 5;
 const SB_PRACTICE_COIN        = 2;
@@ -113,6 +115,7 @@ function sb_reward_add_steps(PDO $pdo, int $uid, string $key, string $title, int
                        last_completed_at  = IF(?, NOW(), last_completed_at)
                    WHERE user_id = ? AND activity_key = ?')
         ->execute([implode(',', $done), $earned, $times, $completedNow ? 1 : 0, $completedNow ? 1 : 0, $uid, $key]);
+    sb_change_log($pdo, $uid, 'act', $key);
     return ['earned' => $earned, 'completed' => $completedNow, 'times' => $times, 'created' => true];
 }
 
@@ -127,5 +130,6 @@ function sb_reward_again(PDO $pdo, int $uid, string $key): ?array
     $earned = $doneToday ? 0 : sb_budget_take($pdo, 'coins:u:' . $uid, SB_PRACTICE_COIN, SB_DAILY_COINS, SB_BUDGET_WINDOW);
     $pdo->prepare('UPDATE activity_progress SET times_completed = times_completed + 1, coins_earned = coins_earned + ?, last_completed_at = NOW()
                    WHERE user_id = ? AND activity_key = ?')->execute([$earned, $uid, $key]);
+    sb_change_log($pdo, $uid, 'act', $key);
     return ['earned' => $earned, 'times' => (int)$row['times_completed'] + 1];
 }

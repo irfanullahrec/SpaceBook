@@ -9,6 +9,8 @@
 require __DIR__ . '/db.php';
 require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
+require_once __DIR__ . '/lib/changes.php';
+require_once __DIR__ . '/lib/testprep.php';
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -78,6 +80,10 @@ try {
                          record_json = IF(VALUES(updated_ms) >= updated_ms, VALUES(record_json), record_json),
                          updated_ms  = GREATEST(updated_ms, VALUES(updated_ms))')
             ->execute([$uid, $json, $ms]);
+        // old clients keep working and their numbers reach the v2 tables (more attempts wins)
+        $pdo->beginTransaction();
+        sb_tp_merge_blob($pdo, $uid, $rec);
+        $pdo->commit();
         reply(200, ['ok' => true]);
 
     case 'session':
@@ -94,6 +100,7 @@ try {
         $pdo->prepare('INSERT IGNORE INTO test_prep_sessions (user_id, session_id, track, mode, questions, correct, duration_ms, started_ms, session_json)
                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)')
             ->execute([$uid, $id, $track, $mode, $n, $c, max(0, (int)($s['ms'] ?? 0)), max(0, (int)($s['ts'] ?? 0)), $json]);
+        sb_change_log($pdo, $uid, 'tps', $id);
         reply(200, ['ok' => true]);
 
     default:

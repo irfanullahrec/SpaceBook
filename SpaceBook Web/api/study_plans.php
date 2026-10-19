@@ -8,6 +8,7 @@
 require __DIR__ . '/db.php';
 require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
+require_once __DIR__ . '/lib/changes.php';
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -80,19 +81,22 @@ try {
         $st->execute([$uid, $id]);
         if ((int)$st->fetchColumn() >= MAX_PLANS) fail(409, 'You can keep up to ' . MAX_PLANS . ' plans');
         // keep the newer copy when two devices edit the same plan
-        $pdo->prepare('INSERT INTO study_plans (user_id, plan_id, plan_json, updated_ms, deleted) VALUES (?, ?, ?, ?, 0)
+        $pdo->prepare('INSERT INTO study_plans (user_id, plan_id, plan_json, updated_ms, deleted, rev) VALUES (?, ?, ?, ?, 0, 1)
                        ON DUPLICATE KEY UPDATE
                          plan_json  = IF(VALUES(updated_ms) >= updated_ms, VALUES(plan_json), plan_json),
                          deleted    = IF(VALUES(updated_ms) >= updated_ms, 0, deleted),
+                         rev        = rev + 1,
                          updated_ms = GREATEST(updated_ms, VALUES(updated_ms))')
             ->execute([$uid, $id, $json, $ms]);
+        sb_change_log($pdo, $uid, 'plan', $id);
         reply(200, ['ok' => true]);
 
     case 'delete':
         $id = valid_id(input()['id'] ?? '');
         if (!$id) fail(422, 'Bad plan id');
-        $pdo->prepare('UPDATE study_plans SET deleted = 1, plan_json = \'{}\', updated_ms = ? WHERE user_id = ? AND plan_id = ?')
+        $pdo->prepare('UPDATE study_plans SET deleted = 1, rev = rev + 1, plan_json = \'{}\', updated_ms = ? WHERE user_id = ? AND plan_id = ?')
             ->execute([(int)round(microtime(true) * 1000), $uid, $id]);
+        sb_change_log($pdo, $uid, 'plan', $id);
         reply(200, ['ok' => true]);
 
     default:
