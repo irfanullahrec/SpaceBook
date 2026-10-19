@@ -224,14 +224,15 @@
   // ── routing into the shared Class 9 renderer ───────────────────────────
   const originalList = getSubjectChapterList;
   getSubjectChapterList = function (key, classId) {
-    if ((isClass11(classId) || state.selectedClass === 'cls11') && SOURCES[key]) {
+    const cur = classId || state.selectedClass; // the class asked for wins over the selected one (ARCH-02)
+    if (isClass11(cur) && SOURCES[key]) {
       const list = adapted(key);
       if (list) return list;
     }
     // the internal view id must read the same Class 11 chapter list as the sidebar (Physics: front matter first)
     const list = classId === VIEW_CLASS ? originalList.call(this, key, 'cls11') : originalList.apply(this, arguments);
     // the Urdu language book already reads its Urdu field; its Translations view needs English as English
-    return (classId === 'cls12' || state.selectedClass === 'cls12') && key !== 'math' && key !== 'urdu' ? urduMedium12(list) : list;
+    return cur === 'cls12' && key !== 'math' && key !== 'urdu' ? urduMedium12(list) : list;
   };
 
   const originalWorkspace = openSubjectWorkspace;

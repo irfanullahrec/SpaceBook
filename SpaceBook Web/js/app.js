@@ -19205,78 +19205,80 @@ function class11BookByKey(key) { const r = window.CLASS11_BOOKS || {}; return r[
 function class11BookBySubject(id) { const r = window.CLASS11_BOOKS || {}; return Object.values(r).find(b => b.subjectId === id) || null; }
 
 function getSubjectChapterList(subjKey, classId) {
+  // the class asked for wins; state.selectedClass only answers when the caller names none (ARCH-02: it used to be OR-ed in)
+  const cur = classId || state.selectedClass;
   if (subjKey === 'math') return getMathChapterList(classId);
-  { const _b11 = class11BookByKey(subjKey); if (_b11 && (classId === 'cls11' || state.selectedClass === 'cls11')) return _b11.data; }
+  { const _b11 = class11BookByKey(subjKey); if (_b11 && (cur === 'cls11')) return _b11.data; }
   if (subjKey === 'eng') {
-    if ((classId === 'cls11' || state.selectedClass === 'cls11') && typeof ENG_11_DATA !== 'undefined') return ENG_11_DATA;
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if ((cur === 'cls11') && typeof ENG_11_DATA !== 'undefined') return ENG_11_DATA;
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof ENGLISH_5_DATA !== 'undefined' && Array.isArray(ENGLISH_5_DATA)) {
       return ENGLISH_5_DATA;
     }
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof ENGLISH_6_DATA !== 'undefined' && Array.isArray(ENGLISH_6_DATA)) {
       return ENGLISH_6_DATA;
     }
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof ENGLISH_7_DATA !== 'undefined' && Array.isArray(ENGLISH_7_DATA)) {
       return ENGLISH_7_DATA;
     }
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof ENGLISH_8_DATA !== 'undefined' && Array.isArray(ENGLISH_8_DATA)) {
       return ENGLISH_8_DATA;
     }
-    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    const isCls12 = (cur === 'cls12');
     if (isCls12 && typeof ENGLISH_12_DATA !== 'undefined' && Array.isArray(ENGLISH_12_DATA)) {
       return ENGLISH_12_DATA;
     }
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
       return ENGLISH_10_DATA;
     }
-    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    const isCls3 = (cur === 'cls3');
     if (isCls3 && typeof ENGLISH_3_DATA !== 'undefined' && Array.isArray(ENGLISH_3_DATA)) {
       return ENGLISH_3_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof ENGLISH_2_DATA !== 'undefined' && Array.isArray(ENGLISH_2_DATA)) {
       return ENGLISH_2_DATA;
     }
-    const isCls1 = (classId === 'cls1' || state.selectedClass === 'cls1');
+    const isCls1 = (cur === 'cls1');
     if (isCls1 && typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) {
       return ENGLISH_1_DATA;
     }
     // Class 9 English: page-by-page textbook (ENGLISH_DATA stays as the older data and the cls10 fallback).
-    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof ENGLISH_9_BOOK !== 'undefined' && Array.isArray(ENGLISH_9_BOOK)) return ENGLISH_9_BOOK;
+    if ((cur === 'cls9') && typeof ENGLISH_9_BOOK !== 'undefined' && Array.isArray(ENGLISH_9_BOOK)) return ENGLISH_9_BOOK;
     return (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA))
       ? ENGLISH_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof URDU_7_DATA !== 'undefined' && Array.isArray(URDU_7_DATA)) {
       return URDU_7_DATA;
     }
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof URDU_8_DATA !== 'undefined' && Array.isArray(URDU_8_DATA)) {
       return URDU_8_DATA;
     }
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof URDU_5_DATA !== 'undefined' && Array.isArray(URDU_5_DATA)) {
       return URDU_5_DATA;
     }
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof URDU_6_DATA !== 'undefined' && Array.isArray(URDU_6_DATA)) {
       return URDU_6_DATA;
     }
-    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    const isCls12 = (cur === 'cls12');
     if (isCls12 && typeof URDU_12_DATA !== 'undefined' && Array.isArray(URDU_12_DATA)) {
       return URDU_12_DATA;
     }
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof URDU_10_DATA !== 'undefined' && Array.isArray(URDU_10_DATA)) {
       return URDU_10_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof URDU_2_DATA !== 'undefined' && Array.isArray(URDU_2_DATA)) {
       return URDU_2_DATA;
     }
@@ -19287,14 +19289,14 @@ function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'phys') {
     if (classId === 'cls11' && typeof PHYS_11_DATA !== 'undefined') return PHYS_11_DATA;
     if (classId === 'cls12' && typeof PHYS_12_DATA !== 'undefined') return PHYS_12_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && DATA && DATA.phys10Chapters) return DATA.phys10Chapters;
     return (DATA && DATA.physChapters) ? DATA.physChapters : [];
   }
   if (subjKey === 'chem') {
     if (classId === 'cls11' && typeof CHEM_11_DATA !== 'undefined') return CHEM_11_DATA;
       if (classId === 'cls12' && typeof CHEM_12_DATA !== 'undefined') return CHEM_12_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && DATA && DATA.chem10Chapters) return DATA.chem10Chapters;
     return (DATA && DATA.chemChapters) ? DATA.chemChapters : [];
   }
@@ -19302,47 +19304,47 @@ function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'stat' && classId === 'cls12' && typeof STAT_12_DATA !== 'undefined') return STAT_12_DATA;
   if (subjKey === 'bio') {
     if (classId === 'cls11' && typeof BIO_11_DATA !== 'undefined') return BIO_11_DATA;
-    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    const isCls12 = (cur === 'cls12');
     if (isCls12 && typeof BIOLOGY_12_DATA !== 'undefined' && Array.isArray(BIOLOGY_12_DATA)) {
       return BIOLOGY_12_DATA;
     }
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && DATA && DATA.bio10Chapters) return DATA.bio10Chapters;
     return (typeof BIO_DATA !== 'undefined' && Array.isArray(BIO_DATA))
       ? BIO_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.bioChapters || DATA.bio10Chapters)) ? (DATA.bioChapters || DATA.bio10Chapters) : []);
   }
   if (subjKey === 'pakstudy') {
-    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    const isCls12 = (cur === 'cls12');
     if (isCls12 && typeof PAKSTUDY_12_DATA !== 'undefined' && Array.isArray(PAKSTUDY_12_DATA)) {
       return PAKSTUDY_12_DATA;
     }
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof PAKSTUDY_10_DATA !== 'undefined' && Array.isArray(PAKSTUDY_10_DATA)) {
       return PAKSTUDY_10_DATA;
     }
     // Class 9 Pakistan Studies: page-by-page textbook (PAKSTUDY_DATA stays as the older data and the cls10 fallback).
-    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof PAKSTUDY_9_BOOK !== 'undefined' && Array.isArray(PAKSTUDY_9_BOOK)) return PAKSTUDY_9_BOOK;
+    if ((cur === 'cls9') && typeof PAKSTUDY_9_BOOK !== 'undefined' && Array.isArray(PAKSTUDY_9_BOOK)) return PAKSTUDY_9_BOOK;
     return (typeof PAKSTUDY_DATA !== 'undefined' && Array.isArray(PAKSTUDY_DATA))
       ? PAKSTUDY_DATA
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
   }
   if (subjKey === 'isl') {
     // Class 10 studies the same Islamiat (lazmi) book as Class 9, so both classes open the Class 9 book.
-    if ((classId === 'cls9' || state.selectedClass === 'cls9' || classId === 'cls10' || state.selectedClass === 'cls10') && typeof ISLAMIAT_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_9_DATA)) return ISLAMIAT_9_DATA;
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if ((cur === 'cls9' || cur === 'cls10') && typeof ISLAMIAT_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_9_DATA)) return ISLAMIAT_9_DATA;
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof ISLAMIAT_7_DATA !== 'undefined' && Array.isArray(ISLAMIAT_7_DATA)) {
       return ISLAMIAT_7_DATA;
     }
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof ISLAMIAT_8_DATA !== 'undefined' && Array.isArray(ISLAMIAT_8_DATA)) {
       return ISLAMIAT_8_DATA;
     }
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof ISLAMIAT_5_DATA !== 'undefined' && Array.isArray(ISLAMIAT_5_DATA)) {
       return ISLAMIAT_5_DATA;
     }
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof ISLAMIAT_6_DATA !== 'undefined' && Array.isArray(ISLAMIAT_6_DATA)) {
       return ISLAMIAT_6_DATA;
     }
@@ -19350,11 +19352,11 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
       return ISLAMYAT_10_DATA;
     }
-    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    const isCls3 = (cur === 'cls3');
     if (isCls3 && typeof ISLAMYAT_3_DATA !== 'undefined' && Array.isArray(ISLAMYAT_3_DATA)) {
       return ISLAMYAT_3_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof ISLAMYAT_2_DATA !== 'undefined' && Array.isArray(ISLAMYAT_2_DATA)) {
       return ISLAMYAT_2_DATA;
     }
@@ -19367,11 +19369,11 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
   }
   if (subjKey === 'nazira') {
-    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    const isCls3 = (cur === 'cls3');
     if (isCls3 && typeof NAZIRA_3_DATA !== 'undefined' && Array.isArray(NAZIRA_3_DATA)) {
       return NAZIRA_3_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof NAZIRA_2_DATA !== 'undefined' && Array.isArray(NAZIRA_2_DATA)) {
       return NAZIRA_2_DATA;
     }
@@ -19381,23 +19383,23 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof PASHTO_8_DATA !== 'undefined' && Array.isArray(PASHTO_8_DATA)) {
       return PASHTO_8_DATA;
     }
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof PASHTO_5_DATA !== 'undefined' && Array.isArray(PASHTO_5_DATA)) {
       return PASHTO_5_DATA;
     }
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof PASHTO_6_DATA !== 'undefined' && Array.isArray(PASHTO_6_DATA)) {
       return PASHTO_6_DATA;
     }
-    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    const isCls3 = (cur === 'cls3');
     if (isCls3 && typeof PASHTO_3_DATA !== 'undefined' && Array.isArray(PASHTO_3_DATA)) {
       return PASHTO_3_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof PASHTO_2_DATA !== 'undefined' && Array.isArray(PASHTO_2_DATA)) {
       return PASHTO_2_DATA;
     }
@@ -19407,52 +19409,52 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.pashto1Chapters) ? DATA.pashto1Chapters : [];
   }
   if (subjKey === 'gk') {
-    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    const isCls3 = (cur === 'cls3');
     if (isCls3 && typeof GK_3_DATA !== 'undefined' && Array.isArray(GK_3_DATA)) {
       return GK_3_DATA;
     }
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof GK_2_DATA !== 'undefined' && Array.isArray(GK_2_DATA)) {
       return GK_2_DATA;
     }
     return (typeof DATA !== 'undefined' && DATA && DATA.gk2Chapters) ? DATA.gk2Chapters : [];
   }
   if (subjKey === 'comp') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof COMPUTER_7_DATA !== 'undefined' && Array.isArray(COMPUTER_7_DATA)) {
       return COMPUTER_7_DATA;
     }
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof COMPUTER_8_DATA !== 'undefined' && Array.isArray(COMPUTER_8_DATA)) {
       return COMPUTER_8_DATA;
     }
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof COMPUTER_6_DATA !== 'undefined' && Array.isArray(COMPUTER_6_DATA)) {
       return COMPUTER_6_DATA;
     }
-    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    const isCls12 = (cur === 'cls12');
     if (isCls12 && typeof COMP_12_DATA !== 'undefined' && Array.isArray(COMP_12_DATA)) {
       return COMP_12_DATA;
     }
-    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof COMPUTER_9_DATA !== 'undefined' && Array.isArray(COMPUTER_9_DATA)) return COMPUTER_9_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if ((cur === 'cls9') && typeof COMPUTER_9_DATA !== 'undefined' && Array.isArray(COMPUTER_9_DATA)) return COMPUTER_9_DATA;
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof COMPUTER_10_DATA !== 'undefined' && Array.isArray(COMPUTER_10_DATA)) {
       return COMPUTER_10_DATA;
     }
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
   if (subjKey === 'sci') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof GENERAL_SCIENCE_7_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_7_DATA)) return GENERAL_SCIENCE_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof GENERAL_SCIENCE_8_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_8_DATA)) return GENERAL_SCIENCE_8_DATA;
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof GENERAL_SCIENCE_6_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_6_DATA)) return GENERAL_SCIENCE_6_DATA;
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof GENERAL_SCIENCE_5_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_5_DATA)) return GENERAL_SCIENCE_5_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
-    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    const isCls9 = (cur === 'cls9');
     if (isCls9 && typeof GENERAL_SCIENCE_9_BOOK !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_BOOK)) return GENERAL_SCIENCE_9_BOOK;
     if (isCls9 && typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
     if (typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
@@ -19460,27 +19462,27 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters)) ? (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters) : [];
   }
   if (subjKey === 'geo') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof GEOGRAPHY_7_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_7_DATA)) return GEOGRAPHY_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof GEOGRAPHY_8_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_8_DATA)) return GEOGRAPHY_8_DATA;
     if (typeof GEOGRAPHY_6_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_6_DATA)) return GEOGRAPHY_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.geo6Chapters) ? DATA.geo6Chapters : [];
   }
   if (subjKey === 'hist') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof HISTORY_7_DATA !== 'undefined' && Array.isArray(HISTORY_7_DATA)) return HISTORY_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof HISTORY_8_DATA !== 'undefined' && Array.isArray(HISTORY_8_DATA)) return HISTORY_8_DATA;
     if (typeof HISTORY_6_DATA !== 'undefined' && Array.isArray(HISTORY_6_DATA)) return HISTORY_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.hist6Chapters) ? DATA.hist6Chapters : [];
   }
   if (subjKey === 'hg') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof GEOGRAPHY_7_DATA !== 'undefined' && typeof HISTORY_7_DATA !== 'undefined') {
       return GEOGRAPHY_7_DATA.concat(HISTORY_7_DATA);
     }
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof GEOGRAPHY_8_DATA !== 'undefined' && typeof HISTORY_8_DATA !== 'undefined') {
       return GEOGRAPHY_8_DATA.concat(HISTORY_8_DATA);
     }
@@ -19494,47 +19496,47 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.econ12Chapters) ? DATA.econ12Chapters : [];
   }
   if (subjKey === 'hpe') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof HPE_7_DATA !== 'undefined' && Array.isArray(HPE_7_DATA)) return HPE_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof HPE_8_DATA !== 'undefined' && Array.isArray(HPE_8_DATA)) return HPE_8_DATA;
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof HPE_6_DATA !== 'undefined' && Array.isArray(HPE_6_DATA)) return HPE_6_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof HPE_10_DATA !== 'undefined' && Array.isArray(HPE_10_DATA)) return HPE_10_DATA;
-    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    const isCls9 = (cur === 'cls9');
     if (isCls9 && typeof HPE_9_DATA !== 'undefined' && Array.isArray(HPE_9_DATA)) return HPE_9_DATA;
     if (typeof HPE_12_DATA !== 'undefined') return HPE_12_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters))) ? (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters)) : [];
   }
   if (subjKey === 'drawing') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof DRAWING_7_DATA !== 'undefined' && Array.isArray(DRAWING_7_DATA)) return DRAWING_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof DRAWING_8_DATA !== 'undefined' && Array.isArray(DRAWING_8_DATA)) return DRAWING_8_DATA;
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof DRAWING_6_DATA !== 'undefined' && Array.isArray(DRAWING_6_DATA)) return DRAWING_6_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof DRAWING_10_DATA !== 'undefined' && Array.isArray(DRAWING_10_DATA)) return DRAWING_10_DATA;
-    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    const isCls9 = (cur === 'cls9');
     if (isCls9 && typeof DRAWING_9_DATA !== 'undefined' && Array.isArray(DRAWING_9_DATA)) return DRAWING_9_DATA;
-    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    const isCls2 = (cur === 'cls2');
     if (isCls2 && typeof DRAWING_2_DATA !== 'undefined' && Array.isArray(DRAWING_2_DATA)) return DRAWING_2_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters)) ? (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters) : [];
   }
   if (subjKey === 'arabic') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof ARABIC_7_DATA !== 'undefined' && Array.isArray(ARABIC_7_DATA)) return ARABIC_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof ARABIC_8_DATA !== 'undefined' && Array.isArray(ARABIC_8_DATA)) return ARABIC_8_DATA;
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof ARABIC_6_DATA !== 'undefined' && Array.isArray(ARABIC_6_DATA)) return ARABIC_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.arabic6Chapters) ? DATA.arabic6Chapters : [];
   }
   if (subjKey === 'islopt') {
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
-    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    const isCls9 = (cur === 'cls9');
     // Class 9 and Class 10 study the same Islamiat Ikhtiari book: Class 9 shows the source-reviewed Class 10 book.
     if (isCls9 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
     if (isCls9 && typeof ISLAMIAT_IKHTIARI_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_9_DATA)) return ISLAMIAT_IKHTIARI_9_DATA;
@@ -19546,27 +19548,27 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.islHist12Chapters) ? DATA.islHist12Chapters : [];
   }
   if (subjKey === 'quran') {
-    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    const isCls7 = (cur === 'cls7');
     if (isCls7 && typeof MUTALIA_QURAN_7_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_7_DATA)) return MUTALIA_QURAN_7_DATA;
-    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    const isCls8 = (cur === 'cls8');
     if (isCls8 && typeof MUTALIA_QURAN_8_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_8_DATA)) return MUTALIA_QURAN_8_DATA;
-    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    const isCls6 = (cur === 'cls6');
     if (isCls6 && typeof MUTALIA_QURAN_6_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_6_DATA)) return MUTALIA_QURAN_6_DATA;
-    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    const isCls10 = (cur === 'cls10');
     if (isCls10 && typeof MUTALIA_QURAN_10_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_10_DATA)) return MUTALIA_QURAN_10_DATA;
-    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    const isCls9 = (cur === 'cls9');
     if (isCls9 && typeof MUTALIA_QURAN_9_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_9_DATA)) return MUTALIA_QURAN_9_DATA;
     if (typeof QURAN_12_DATA !== 'undefined') return QURAN_12_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters))) ? (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters)) : [];
   }
   if (subjKey === 'sst') {
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof SOCIAL_STUDIES_5_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_5_DATA)) return SOCIAL_STUDIES_5_DATA;
     if (typeof SOCIAL_STUDIES_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_DATA)) return SOCIAL_STUDIES_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.sst5Chapters) ? DATA.sst5Chapters : [];
   }
   if (subjKey === 'sstum') {
-    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    const isCls5 = (cur === 'cls5');
     if (isCls5 && typeof SOCIAL_STUDIES_UM_5_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_UM_5_DATA)) return SOCIAL_STUDIES_UM_5_DATA;
     if (typeof SOCIAL_STUDIES_UM_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_UM_DATA)) return SOCIAL_STUDIES_UM_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.sstUm5Chapters) ? DATA.sstUm5Chapters : [];

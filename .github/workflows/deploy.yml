@@ -43,6 +43,9 @@ jobs:
       - name: smoke (loads the whole app, opens every rebuilt book and tab)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/smoke.js
+      - name: ARCH-02 matrix (a subject opens the same book whatever class was selected before)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tools/arch02_matrix.js
       - name: lazy page is up to date (lazy.html, content/lazy_manifest.json)
         working-directory: SpaceBook Web
         run: node tools/build/make_lazy.js --check

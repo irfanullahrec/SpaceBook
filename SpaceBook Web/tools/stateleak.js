@@ -1,6 +1,6 @@
 'use strict';
 /* Which keys of the app's `state` object change while subjects are opened and their first chapters rendered, i.e. which
- * selections one subject leaves behind for the next (finding ARCH-02, docs/PHASE3_LAZY_LOADING.md).
+ * selections one subject leaves behind for the next (finding ARCH-02b, docs/PHASE3_LAZY_LOADING.md).
  *   node --max-old-space-size=8192 tools/stateleak.js [--reverse] [--only=cls12,cls10-math]
  * tools/snapshot_html.js resets the sticky keys this lists before each render. Dev-only. */
 const { load } = require(process.cwd() + '/tools/lib/app_sandbox');

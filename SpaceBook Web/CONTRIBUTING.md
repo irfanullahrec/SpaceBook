@@ -43,7 +43,7 @@ Setup for the browser tools only: `npm install` (Playwright, dev-only; nothing f
 
 `js/data.js` is the registry (classes, subjects, books). Add a subject there and one `<script>` line in `index.html` **before** `js/app.js`.
 
-Chapter lookup must come from the arguments (`classId`, `subjKey`), never from `state.selectedClass` (known defect ARCH-02: stale state returns another class's book).
+Chapter lookup must come from the arguments (`classId`, `subjKey`), never from `state.selectedClass` (defect ARCH-02, fixed: `getSubjectChapterList('eng', 'cls9')` returned the Class 7 book while `state.selectedClass` was `cls7`; `node tools/arch02_matrix.js` and CI keep it fixed).
 
 ## 3. Never hand-edit generated files
 

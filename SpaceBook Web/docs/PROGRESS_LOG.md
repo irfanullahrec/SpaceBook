@@ -247,7 +247,7 @@ Phase 2 summary: migrations 001-005, auth hardening, device tokens, v2 sync (pus
 ## 2026-10-20 — Phase 3, part 1: lazy book data, and the corrected HTML baseline (branch phase/p2-server)
 Done:
 - Lazy loading of large book data (PERF-01), nothing in `index.html` changed: `js/core/lazy.js` (forwarding stand-ins that load a data file on first use), `tools/build/make_lazy.js` (generates `lazy.html` + `content/lazy_manifest.json`, `--check` for CI), eager list and 15 overlay scripts in `tools/build/*.json`, measurement and parity tools. 129 of 261 scripts (289 MB) are lazy. Measured in the Node sandbox: ready 7.2-7.5 s -> 1.8 s, heap 1,063 MB -> 241 MB, 0 lazy files loaded at start. Design, rules and limits: `docs/PHASE3_LAZY_LOADING.md`.
-- The HTML snapshot tool had a fidelity hole (found while checking order dependence): it hashed stale content for the five Maths subjects (their own view, `selectMathChapter`) and skipped the 12 chapterless pre-school pages. `tools/snapshot_html.js` now follows the three real views, blanks the content element before every tab, starts each render from the `state` values at load (sticky sub-selections, listed by the new `tools/stateleak.js`: finding ARCH-02), and renames per-render random ids (sb_mcq, ids inside Maths diagrams, class prefix of shared-book answer ids) by first appearance. Baseline regenerated: `tests/baseline/html-2026-10-20` (old `html-2026-10-19` removed).
+- The HTML snapshot tool had a fidelity hole (found while checking order dependence): it hashed stale content for the five Maths subjects (their own view, `selectMathChapter`) and skipped the 12 chapterless pre-school pages. `tools/snapshot_html.js` now follows the three real views, blanks the content element before every tab, starts each render from the `state` values at load (sticky sub-selections, listed by the new `tools/stateleak.js`: finding ARCH-02b), and renames per-render random ids (sb_mcq, ids inside Maths diagrams, class prefix of shared-book answer ids) by first appearance. Baseline regenerated: `tests/baseline/html-2026-10-20` (old `html-2026-10-19` removed).
 
 Verified by (clean checkout of the committed state, `git worktree` sparse):
 - Snapshot of the eager page: 147 subjects, 1,843 chapters, 9,710 tab renders, 0 step errors. Forward vs reverse subject order on the eager page: 0 differences (before the fixes: 190; with the first tool version 1,522).
@@ -259,6 +259,21 @@ Not verified: any of it in a real browser (Chrome cannot run here: the Proxy sta
 
 Regressions: none known. `index.html` is untouched by this phase (the committed one still loads everything).
 
-Risks: the lazy page blocks the page for one synchronous transfer + parse the first time a book is touched (about 1 s for the 20 MB Class 12 Physics file here); features that scan every book (global search, word statistics, Papers) still load them all. The 79 data-like files that stay eager (about 40 MB: legacy `DATA` extenders, Class 11, `urdu_data.js`, `math_*_data.js`) are not lazy yet. ARCH-02 stays open: the sticky `state` keys are only neutralised in the test tool, not in the app.
+Risks: the lazy page blocks the page for one synchronous transfer + parse the first time a book is touched (about 1 s for the 20 MB Class 12 Physics file here); features that scan every book (global search, word statistics, Papers) still load them all. The 79 data-like files that stay eager (about 40 MB: legacy `DATA` extenders, Class 11, `urdu_data.js`, `math_*_data.js`) are not lazy yet. ARCH-02b stays open: the sticky `state` keys are only neutralised in the test tool, not in the app.
 
 Next: make the remaining eager data lazy one subject group at a time with the same parity proof; JSON Schema + validator for Book Content Contract v1; one-command generation of manifest/search index/MCQ bank/study index; registry-driven `openSubject`; then the cut-over decision (owner) described in `docs/PHASE3_LAZY_LOADING.md`.
+
+## 2026-10-20 — Phase 3: ARCH-02 fixed (book lookup no longer depends on the previously selected class)
+Done:
+- `js/app.js` `getSubjectChapterList`: 82 tests of the form `classId === 'clsN' || state.selectedClass === 'clsN'` became `cur === 'clsN'` with `const cur = classId || state.selectedClass` (the class asked for wins; the selected class only answers when the caller names none). `js/class11_study_views.js` wrapper likewise. Reproduced first: `getSubjectChapterList('eng', 'cls9')` with `state.selectedClass = 'cls7'` returned the Class 7 book.
+- New test `tools/arch02_matrix.js` (`--page lazy.html` too) and a CI step: records the (subject, class) pairs the app asks for while opening all 147 subjects, then fetches each list with `state.selectedClass` set to every class id, `''` and `null`.
+
+Verified by:
+- Before the fix: 143 pairs x 17 values = 2,431 lookups, 186 differences. After: 0 differences on `index.html` and on `lazy.html`.
+- Rendering unchanged: snapshot of the working tree vs `tests/baseline/html-2026-10-20`: 9,710 renders, only the 20 known `cls1-eng` differences (another session's uncommitted edits). validate 975/0, smoke 0 failed, trace_globals 147 subjects 0 step errors.
+
+Not verified: in a real browser; callers that pass a class id different from the selected class on purpose and relied on the old OR (the snapshot, smoke and trace runs found none, but they only cover what those tools open).
+
+Risks: 67 other `state.selectedClass ===` tests remain in `app.js` (outside this function); they move with their consumers. The matrix proves the list lookup only, not every consumer that reads `state` (papers, search, word statistics).
+
+Next: registry-driven `openSubject` / one lookup table replacing the if-chains (ARCH-03), JSON Schema + validator for Book Content Contract v1.

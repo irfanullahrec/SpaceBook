@@ -54,7 +54,7 @@ const VIEWS = {
 };
 const unesc = oc => oc.replace(/&#39;|&quot;/g, "'");
 // The app remembers the last sub-selection (question category, lesson sub-tab, exercise number...) in `state` and the next subject
-// inherits it (finding ARCH-02, docs/PHASE3_LAZY_LOADING.md). Each render starts from the values `state` had at load, so a snapshot
+// inherits it (finding ARCH-02b, docs/PHASE3_LAZY_LOADING.md). Each render starts from the values `state` had at load, so a snapshot
 // depends only on subject + chapter + tab, never on what was opened before. tools/stateleak.js (kept in the notes) lists these keys.
 const STICKY = ['activeSubjLessonSubTab', 'activeSubjWordsSubTab', 'activeSubjExCat', 'activeMathSloCategory', 'activeMathEx', 'class12ExerciseCategory', 'class12StudyCategory'];
 const STICKY_INIT = JSON.parse(app.run(`JSON.stringify(${JSON.stringify(STICKY)}.map(k => [k, state[k]]))`));
