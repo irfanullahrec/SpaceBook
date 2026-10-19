@@ -50,3 +50,22 @@ Known tests dropped (reasons in commit messages): old Drawing 2/3, Maths 1/2/3 t
 
 Risks / owner decisions: baseline needs ~1.5 GB free RAM; close other programs or run it on a bigger machine.
 Next: re-run the baseline with free RAM, then tracer, CI gate, CONTRIBUTING.md.
+
+## 2026-10-19 — Phase 1 (continued): tracer, CI gate, CONTRIBUTING
+Done:
+- `tools/trace_globals.js` + `tools/lib/app_sandbox.js` trace mode: opens every class x subject, selects first/middle/last chapter, renders every tab, and records the data globals read. Output `tests/trace/<class>/<subject>.json`, `tests/trace/index.json` (globalsToSubjects), `tests/trace/never_read.json`.
+- `.github/workflows/deploy.yml`: new `test` job (validate + smoke on Node 22); `deploy` now `needs: test` and is skipped on pull requests, which also run `test`.
+- `CONTRIBUTING.md` rewritten to the real structure (five contracts, generators, regression rule, secrets, deploy).
+
+Verified by:
+- `node tools/trace_globals.js` → 147 subjects traced, 0 step errors, 56 s, 147 trace files. (The brief said 115 subjects; the registry has 147.) Class 2 Maths reads `CLS2_BOOKS`, not `MATH_2_DATA`.
+- `deploy.yml` parses as YAML; jobs `test`, `deploy`; `deploy.needs == test`.
+
+Not verified:
+- The `test` job has not run on GitHub (nothing pushed); Linux case-sensitivity of file names is therefore untested there.
+- Functions called are not traced (cannot be wrapped from outside). `never_read.json` (69 globals) is a hint only: reads during script load are not captured, and e.g. Class 11 source globals feed `CLASS11_BOOKS` at load.
+- Browser baseline (screenshots, DOM hashes, 99.5 % stability) still pending: needs ~1.5 GB free RAM. The baseline subset is NOT in CI yet, because it has never completed a run.
+- Phase 1 exit gate is not met (baseline missing).
+
+Next: run the baseline when memory allows; push Phase 0 and Phase 1 branches only after the owner confirms the server steps.
+

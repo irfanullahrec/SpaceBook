@@ -1,159 +1,71 @@
 # Contributing to SpaceBook
 
-SpaceBook is a dependency-free vanilla-JS portal. Anyone can add or improve a
-subject, as long as everyone follows the same file-ownership and sync rules.
-The goal of these rules is simple: **no contributor's work is ever lost or
-reverted during a merge or rebase.**
+SpaceBook is a vanilla-JS portal (no bundler, no framework) for KPTBB textbooks, Classes 1–12, with a small PHP/MySQL API for user records. `index.html` loads 248 scripts in order; `js/app.js` is the controller; each book is a data file plus a reader.
 
----
+The rule that matters most: **a change must not alter any subject you did not mean to touch.** The checks below exist to prove that.
 
-## 1. TL;DR
+## 1. Every change
 
 ```bash
-git switch -c feat/chem-unit-9        # 1. branch per subject/feature
-# ...edit ONLY your subject's files  # 2. stay inside your lane
-node tools/validate.js                # 3. 104 static + dataset checks
-node tools/smoke.js                   # 4. 51 UI smoke tests
-git add <your files>                  # 5. stage only your files
-git commit -m "chem: unit 9 notes"
-git fetch origin
-git rebase origin/main                # 6. sync before pushing
-git push -u origin feat/chem-unit-9   # 7. open a PR
+git switch -c fix/short-name            # one branch per task or per subject
+# ... edit ...
+node tools/validate.js                  # syntax, datasets, wiring, rebuilt-book contract (~950 checks)
+node --max-old-space-size=8192 tools/smoke.js   # loads the whole app, opens every rebuilt book and tab (~20 s)
+git commit                              # small commits, one finding or one subject each
 ```
 
-Never force-push `main`. Never reset a branch you did not create.
+Both scripts must print 0 failures; CI (`.github/workflows/deploy.yml`, job `test`) runs them and **blocks the deploy** if either fails. Never force-push `main`; undo with `git revert`.
 
----
+Setup for the browser tools only: `npm install` (Playwright, dev-only; nothing from `package.json`, `node_modules/` or `tests/` is deployed).
 
-## 2. File ownership table
+## 2. Where content lives (five contracts, all still in use)
 
-Exactly one person/subject owns each file. If you need a change in a file you
-do not own, ask the owner (or send a PR that touches only the lines you need).
-
-| Area | File(s) | Notes |
+| Contract | Classes | Shape |
 |---|---|---|
-| Core registry (shared) | `js/data.js` | `stats`, `classes`, `subjects`, `books`, `studyPlan`, roadmap `chapters` map — **append-only** |
-| Chemistry | `js/data_chem.js` | `DATA.chemChapters`, `DATA.chem10Chapters` |
-| Physics | `js/data_phys.js` | `DATA.physChapters`, `DATA.phys10Chapters` |
-| English (chapter arrays) | `js/data_eng.js` | `DATA.engChapters`, `DATA.eng10Chapters` (search fallbacks) |
-| Biology (chapter arrays) | `js/data_bio.js` | `DATA.bioChapters`, `DATA.bio10Chapters` |
-| Biology (full textbook) | `js/bio_data.js` | `BIO_DATA` |
-| Chemistry vocabulary | *(in `js/data_chem.js`)* | unit `tables` live inside `chemChapters` |
-| English (full textbook) | `js/english_data.js` | `ENGLISH_DATA` — summaries, exercises, vocabulary |
-| English lexicon | `js/dictionary_data.js` | `ENG_UNIT_VOCAB_WORDS`, `lookupEngWord()` |
-| Mathematics | `js/math_data.js` | `MATH_DATA` + `DATA.mathChapters` |
-| Pakistan Studies | `js/pakstudy_data.js` | `PAKSTUDY_DATA` |
-| Urdu | `js/urdu_data.js` | `URDU_DATA` → `DATA.urduChapters` |
-| Islamyat 9 / 10 | `js/islamyat_data.js`, `js/islamyat_10_data.js` | `ISLAMYAT_DATA`, `ISLAMYAT_10_DATA` |
-| Controller / routing | `js/app.js` | **shared** — small, additive edits only |
-| Styles | `css/style.css` | **shared** — add rules inside your own section |
-| Page shell | `index.html` | **shared** — one `<script>` line per data file |
-| Docs | `docs/*.md` | one doc per topic, owner of that topic |
+| A. `Object.assign(DATA, …)` | legacy 9/10 | `js/data_chem.js`, `data_phys.js`, `data_eng.js`, `data_bio.js`, `data_comp.js` |
+| B. Named globals | legacy | `BIO_DATA`, `ENGLISH_DATA`, `MATH_DATA`, … picked by if-chains in `getSubjectChapterList` (`js/app.js`) |
+| C. `window.CLSn_BOOKS[subject] = {units, book, words}` | **1–10 rebuilt books** | one file per book, e.g. `js/math_2_data.js`; `CLS6_SOLUTIONS` is shared |
+| D. `CLASS11_BOOKS` + render functions | 11 | routed by `js/class11_study_views.js` |
+| E. per-subject data + exercise banks | 12 | routed by `js/class12_study_views.js` |
 
-Shared files (`data.js`, `app.js`, `style.css`, `index.html`) are the only
-places where two contributors can meet. They are all **append/insert-only**:
-you add lines in a new place instead of rewriting existing lines, so git can
-auto-merge two people's work line-by-line.
+`js/data.js` is the registry (classes, subjects, books). Add a subject there and one `<script>` line in `index.html` **before** `js/app.js`.
 
----
+Chapter lookup must come from the arguments (`classId`, `subjKey`), never from `state.selectedClass` (known defect ARCH-02: stale state returns another class's book).
 
-## 3. Adding a new subject
+## 3. Never hand-edit generated files
 
-1. **Content** — create `js/<subject>_data.js` (export a global like
-   `const CHEM_DATA = [...]`), or extend your `js/data_<subject>.js` file and
-   assign into the registry: `Object.assign(DATA, { ... })`.
-2. **Register the subject** in `js/data.js`:
-   - push an entry into `DATA.subjects.cls9` / `DATA.subjects.cls10`
-   - push a matching entry into `DATA.books`
-   - bump `classes[].subjects` (kept in sync automatically — `tools/validate.js`
-     fails if the count drifts)
-3. **Wire the script** in `index.html`, after `js/data.js` and before `js/app.js`.
-4. **Route it** in `js/app.js` → `openSubject()`:
-   ```js
-   } else if (subj.hasYouSubject) {
-     state.activeSubject = "yousubject";
-     openYouSubjectView(classId, subj);
-   }
-   ```
-5. **Add state** fields (`selectedXChapter`, `activeXTab`) to the `state` object
-   at the top of `app.js`.
-6. **Style it** in `css/style.css` inside your own commented section.
-7. **Validate**: `node tools/validate.js && node tools/smoke.js`.
-8. Add the subject to `docs/03_CURRICULUM_DATASETS_AND_SUBJECTS.md`.
-
----
-
-## 4. Sync workflow (how work is never lost)
-
-* `main` is the integration branch. Work on a short-lived feature branch.
-* Before every push:
-
-  ```bash
-  git fetch origin
-  git rebase origin/main
-  ```
-
-* Prefer **rebase** for your own un-pushed commits (keeps history linear) and
-  a normal **merge** if a branch is already shared with someone else.
-* If you must integrate two shared branches: `git merge` — never rewrite
-  history someone else has already pulled.
-
-### Conflict rules
-
-Conflicts are git telling you two people wrote the same lines. Resolve
-hunk-by-hunk and **keep both sides**:
-
-| Conflict location | Resolution |
+| File | Regenerate with |
 |---|---|
-| `js/data.js` `subjects` / `books` | keep **both** entries, restore the surrounding commas |
-| `js/data.js` roadmap `chapters` map | each subject owns its own keys — keep both |
-| `index.html` `<script>` list | keep **both** lines, then run `tools/validate.js` |
-| `css/style.css` | keep **both** rule blocks |
-| `js/app.js` | keep both features; only merge truly shared helpers |
-| your own `js/data_<subject>.js` | it is yours — your version wins |
+| Rebuilt book data, `js/<subject>_<class>_data.js` | the class pipeline in `docs/source-verification/class-N/tools/` (e.g. `build_book2.py`); edit the page transcriptions, not the JS |
+| `js/test_prep_bank.js` | `node --max-old-space-size=8192 tools/test_prep/build_mcq_bank.js` |
+| `js/study_plan_index.js` | `node tools/study_plan/build_study_index.js` |
+| `js/word_stats_words.js`, `js/word_stats_summary.js` | `node tools/word_stats/build_word_stats.js` |
+| `tests/contract/cls_books.json` (unit counts) | `node tools/validate.js --update-books` — only after an intended rebuild; commit the diff |
+| `tests/trace/**` | `node --max-old-space-size=8192 tools/trace_globals.js` |
 
-Never resolve a conflict with `git checkout --theirs .` /
-`git checkout --ours .` on the whole tree, and never `git reset --hard`
-another contributor's branch.
+Rerun the generators after data changes. Data changes are reviewed as diffs; do not invent textbook text, translations presented as book text, or board questions. Qur'anic text is never translated or altered.
 
----
+## 4. Regression rule
 
-## 5. Conventions
+- Changing a **shared file** (`js/app.js`, `css/style.css`, `index.html`, any `sb_*.js`, readers, `structure_harmonizer.js`, `universal_translate.js`, `class11_study_views.js`, `class12_*`): run validate + smoke, and check the subjects that use it. `tests/trace/index.json` (`globalsToSubjects`) lists which subjects read which data global, so you can find a subject's neighbours.
+- Changing **one subject's data**: validate + smoke, then open that book in the browser.
+- No broad search-and-replace across `js/` or `css/` without a dependency check.
+- Unused files are moved to `D:\SpaceBook\SpaceBook_Archive\` with a log, never deleted.
 
-* **Line endings:** LF everywhere (`.gitattributes` enforces it; Windows
-  contributors get LF in the worktree too). UTF-8 without BOM.
-* **No build step, no dependencies.** Plain `<script>` tags in `index.html`,
-  load order matters (core registry first).
-* **Data is data.** Keep curriculum content out of `app.js`; put it in a data
-  file so two contributors can edit different subjects simultaneously.
-* **Validate before pushing** — both commands must exit `0`:
+`tests/trace` records only data globals read while a subject is opened and its tabs rendered (first/middle/last chapter). A global that appears "never read" may still be used at load time or by features the tracer does not open; do not remove a file on that evidence alone.
 
-  ```bash
-  node tools/validate.js   # syntax, datasets, index.html wiring, app.js statics, css balance
-  node tools/smoke.js      # renders every subject/tab/search path in a DOM stub
-  ```
+## 5. Secrets
 
----
+`api/config.php` is gitignored and **never** goes into an upload package (`tools/build_upload_zip.py` refuses to include it). Create it once on the server from `api/config.sample.php`. CI writes it from repository secrets. Never put passwords, tokens or keys in the repository, in front-end code, or in any web-reachable file. Server steps for the owner: `docs/PHASE0_SERVER_STEPS.md`.
 
-## 6. Data file map
+## 6. Deploy
 
-```
-js/
-├── data.js            core registry (SHARED, append-only)
-├── data_chem.js       ┐
-├── data_phys.js       │ per-subject DATA.* chapter arrays
-├── data_eng.js        │ (one file per subject owner)
-├── data_bio.js        ┘
-├── bio_data.js        BIO_DATA
-├── english_data.js    ENGLISH_DATA
-├── dictionary_data.js lexicon + lookupEngWord()
-├── math_data.js       MATH_DATA
-├── pakstudy_data.js   PAKSTUDY_DATA
-├── urdu_data.js       URDU_DATA
-├── islamyat_data.js   ISLAMYAT_DATA      (Class 9)
-├── islamyat_10_data.js ISLAMYAT_10_DATA  (Class 10)
-└── app.js             controller (SHARED)
-```
+Push to `main` → `test` job → FTPS upload to wantuch.pk (`security: strict`) → live check (`index.html` 200, no `spacebook_upload.zip`, `api/health.php` reports `"db":true`). Manual fallback: `python tools/build_upload_zip.py`, upload and extract, then delete the zip from the server. `api/` must stay compatible with the server's PHP (7.4 at last check).
 
-Every file above is loaded by `index.html` in that order; `tools/validate.js`
-fails if a `<script src>` points at a missing file or a data file is skipped.
+## 7. Reader UI decisions to keep
+
+No language tabs or drop-downs in readers; clicking a sentence opens a drawer with the other languages. Topic cards start collapsed, each with its own full-screen button. Chapter order follows the book: Lessons → Summary → Exercise → practice, nothing repeated. Class 9/10 layout is the reference for 11/12. Tab labels follow the subject's medium; only tabs with content appear.
+
+## 8. Progress notes
+
+Record each task in `docs/PROGRESS_LOG.md`: what was done, how it was verified (command and numbers), what was not verified, risks, next step. Do not write "complete" without a verification line.

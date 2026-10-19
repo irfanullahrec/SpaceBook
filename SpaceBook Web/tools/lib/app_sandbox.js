@@ -76,7 +76,10 @@ function load(opts = {}) {
   if (opts.before) opts.before(sb);
   const t0 = Date.now(), loadFails = [];
   for (const s of srcs) {
-    try { vm.runInContext(fs.readFileSync(path.join(ROOT, s), 'utf8'), sb, { filename: s, timeout: 60000 }); }
+    let code = fs.readFileSync(path.join(ROOT, s), 'utf8');
+    // tracing: top-level data constants become configurable globals so they can later be swapped for logging getters
+    if (opts.trace) code = code.replace(/^(?:const|let|var)\s+([A-Z][A-Z0-9_]{2,})\s*=/gm, 'globalThis.$1 =');
+    try { vm.runInContext(code, sb, { filename: s, timeout: 60000 }); }
     catch (e) { loadFails.push(s + ': ' + (e && e.message)); }
   }
   const ms = Date.now() - t0;
@@ -84,7 +87,18 @@ function load(opts = {}) {
     console.log('loaded ' + srcs.length + ' scripts in ' + ms + ' ms; load failures: ' + loadFails.length);
     loadFails.forEach(x => console.log('  LOADFAIL ' + x.slice(0, 200)));
   }
-  return { sb, registry, srcs, loadFails, ms, run: (code, t) => vm.runInContext(code, sb, { timeout: t || 30000 }) };
+  // opts.trace: every global named like DATA / ENGLISH_9_DATA / CLS2_BOOKS now logs its reads into reads (a Set)
+  const reads = new Set();
+  if (opts.trace) {
+    const names = vm.runInContext('Object.keys(globalThis).filter(k => /^[A-Z][A-Z0-9_]{2,}$/.test(k))', sb);
+    for (const n of names) {
+      const d = Object.getOwnPropertyDescriptor(sb, n);
+      if (!d || !d.configurable || !('value' in d) || typeof d.value === 'function' || d.value == null) continue;
+      let v = d.value;
+      Object.defineProperty(sb, n, { configurable: true, enumerable: d.enumerable, get() { reads.add(n); return v; }, set(x) { v = x; } });
+    }
+  }
+  return { sb, registry, srcs, loadFails, ms, reads, run: (code, t) => vm.runInContext(code, sb, { timeout: t || 30000 }) };
 }
 
 module.exports = { load, ROOT };
