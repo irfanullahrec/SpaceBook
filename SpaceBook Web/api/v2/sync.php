@@ -21,6 +21,7 @@
 //   tp.session    {session}                             a finished Tests Preps session
 //   tp.run        {run}                                 the unfinished session (run.savedAt decides)
 //   tp.run.clear  {clearedAt}
+//   tp.import     {record}                              an old-format record from this device ({q, days, run, runClearedAt}): more attempts wins
 //
 // Authentication: 'Authorization: Bearer <device token>' (issued by api/auth.php with want_device), or the
 // session cookie (then the request must be same-site).
@@ -39,7 +40,7 @@ const SB_SYNC_MAX_EVENT  = 65536;
 const SB_SYNC_RATE       = 60;      // requests per minute per user
 
 // events that may be larger than the default 64 KB
-$SB_SYNC_BIG = ['plan.save' => 524288, 'tp.session' => 200000, 'tp.run' => 200000];
+$SB_SYNC_BIG = ['plan.save' => 524288, 'tp.session' => 200000, 'tp.run' => 200000, 'tp.import' => 900000];
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -141,6 +142,10 @@ function sync_apply(PDO $pdo, int $uid, string $deviceId, string $type, array $p
         return isset($p['run']) && is_array($p['run']) ? sb_tp_run_save($pdo, $uid, $p['run']) : 'bad_payload';
     case 'tp.run.clear':
         return sb_tp_run_clear($pdo, $uid, $p);
+    case 'tp.import':
+        if (!isset($p['record']) || !is_array($p['record'])) return 'bad_payload';
+        sb_tp_merge_blob($pdo, $uid, $p['record']);
+        return null;
     default:
         return 'unsupported_type';
     }

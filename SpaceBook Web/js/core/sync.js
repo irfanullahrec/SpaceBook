@@ -74,6 +74,7 @@
     let authLost = false;
     let failures = 0, nextAttemptAt = 0, retryTimer = null, debounceTimer = null;
     let flushing = null, again = false, pulling = null, lastTs = 0, lastError = null;
+    let inflight = new Set();     // outbox keys of the batch being sent right now
     let batchSize = BATCH;
 
     const ready = (async () => {
@@ -106,6 +107,7 @@
       }
       fire('user', id);
     }
+    const credentials = () => (user || '') + '|' + ((device && device.token) || '');
     function bearerHeaders() { return device && device.token ? { Authorization: 'Bearer ' + device.token } : {}; }
 
     // ---- outbox ----
@@ -117,6 +119,18 @@
       await store.put('outbox', key, { uid: user || 'guest', ev });
       schedule(FLUSH_DEBOUNCE);
       return ev;
+    }
+    // For state that is "the latest copy wins" (the unfinished test): replaces the waiting events of this type with a new
+    // one so the outbox does not fill with copies. An event that is being sent right now is left alone.
+    let latestChain = Promise.resolve();       // emitLatest calls run one after another, else they all read the outbox before any writes
+    function emitLatest(type, payload) {
+      const job = latestChain.then(async () => {
+        await ready;
+        for (const [k, v] of await rows(user || 'guest')) if (v.ev.type === type && !inflight.has(k)) await store.del('outbox', k);
+        return emit(type, payload);
+      });
+      latestChain = job.catch(() => {});
+      return job;
     }
     async function rows(uid) {
       await ready;
@@ -177,7 +191,10 @@
         if (!batch.length) break;
         const keyOf = {};
         batch.forEach(([k, v]) => { keyOf[v.ev.eventId] = k; });
+        inflight = new Set(batch.map(b => b[0]));
+        const sentWith = credentials();
         const r = await request('POST', endpoint, { events: batch.map(b => b[1].ev) });
+        inflight = new Set();
         if (r.kind === 'http' && r.status === 200 && r.json && r.json.ok) {
           const acc = (r.json.accepted || []).map(id => keyOf[String(id).toLowerCase()]).filter(Boolean);
           const rej = (r.json.rejected || []).filter(x => keyOf[String(x.eventId).toLowerCase()]);
@@ -190,7 +207,12 @@
           if (acc.length + rej.length === 0) { res.status = 'stalled'; backoff(0); break; }
           continue;
         }
-        if (r.kind === 'http' && r.status === 401) { authLost = true; lastError = 'auth-lost'; res.status = 'auth-lost'; fire('authlost'); break; }
+        if (r.kind === 'http' && r.status === 401) {
+          // a 401 only counts if the credentials are still the ones the request was sent with; if the token or the user
+          // changed meanwhile (sign-in finishing), the answer is stale and the events are simply sent again
+          if (credentials() !== sentWith) { res.status = 'retry'; schedule(0); break; }
+          authLost = true; lastError = 'auth-lost'; res.status = 'auth-lost'; fire('authlost'); break;
+        }
         if (r.kind === 'http' && (r.status === 413 || r.status === 422)) {
           if (batch.length > 1) { batchSize = Math.max(1, Math.floor(batch.length / 2)); continue; }   // find the poison event
           await store.del('outbox', batch[0][0]);                 // a single event the server can never accept
@@ -225,6 +247,7 @@
       let cursor = (await store.get('meta', 'cursor:' + uid)) || 0;
       let snap = await snapshot(uid), pages = 0;
       for (let n = 0; n < 50; n++) {
+        const sentWith = credentials();
         const r = await request('GET', endpoint + '?since=' + cursor);
         if (r.kind === 'http' && r.status === 200 && r.json && r.json.ok) {
           applyPull(snap, r.json);
@@ -236,7 +259,10 @@
           if (!r.json.more) return { status: 'ok', pages, cursor };
           continue;
         }
-        if (r.kind === 'http' && r.status === 401) { authLost = true; fire('authlost'); return { status: 'auth-lost' }; }
+        if (r.kind === 'http' && r.status === 401) {
+          if (credentials() !== sentWith) { schedule(0); return { status: 'retry' }; }      // stale answer, see flushNow
+          authLost = true; fire('authlost'); return { status: 'auth-lost' };
+        }
         lastError = r.kind === 'network' ? 'network' : 'http ' + r.status;
         backoff(r.retryAfter || 0);
         return { status: r.kind === 'network' ? 'network-error' : 'http-' + r.status, pages };
@@ -265,7 +291,7 @@
     }
 
     return {
-      ready, on, emit, flush, pull, sync, start, setUser, setDevice, clearDevice, bearerHeaders,
+      ready, on, emit, emitLatest, flush, pull, sync, start, setUser, setDevice, clearDevice, bearerHeaders,
       pending, pendingGuest, pendingEvents, adoptGuest, isEnabled: () => !!enabled(), snapshot: () => (user ? snapshot(user) : Promise.resolve(emptySnapshot())),
       rejected: async () => (await store.get('meta', 'rejected')) || [],
       status: async () => ({ user, signedIn: !!user, hasDeviceToken: !!(device && device.token), pending: await pending(), pendingGuest: await pendingGuest(),

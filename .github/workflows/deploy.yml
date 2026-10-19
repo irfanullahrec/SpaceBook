@@ -98,6 +98,7 @@ jobs:
           node tests/sync/e2e.js
           node --max-old-space-size=4096 tests/sync/rewards.js
           node --max-old-space-size=4096 tests/sync/planner.js
+          node --max-old-space-size=4096 tests/sync/testprep.js
 
   deploy:
     needs: test

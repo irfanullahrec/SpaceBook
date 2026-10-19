@@ -207,3 +207,19 @@ Verified by:
 Not verified: in a real browser; reminders (they read local plans and are unchanged); two tabs of one browser editing at once (they share one outbox and one device id, so the server treats them as one device: a stale save from the second tab fast-forwards instead of merging); the "ask before adding this device's plans to the account" prompt (step 7).
 
 Next: 6c `test_prep.js` (tp.answer/session/run events, snapshot-based statistics).
+
+## 2026-10-19 — Phase 2, step 6c: Tests Preps on the sync core (SYNC-03)
+Done:
+- `js/test_prep.js`: with the flag on and a signed-in student, every answer (`tp.answer`), finished session (`tp.session`), change of the unfinished test (`tp.run`, kept to one waiting copy by `emitLatest`) and its clearing (`tp.run.clear`) is written to the outbox first. The statistics the page reads are rebuilt from the last pulled snapshot plus unconfirmed events (`derive()`), so two devices answering the same MCQ both count. Records made as a guest, or by the old version on this device, are sent once at sign-in as `tp.import` (+ their sessions); the guest copy is removed so it joins one account only (SYNC-03a). The v1 whole-record push/pull is not used in v2. Flag off: unchanged.
+- Server: `tp.import` event (more attempts wins per MCQ, larger numbers per day).
+- `js/core/sync.js`: `emitLatest()` (serialised); a 401 only counts as "auth lost" when the credentials are still the ones the request was sent with (a stale 401 while the device token was arriving used to latch auth-lost and block all syncing: found by the integration test).
+- `tests/sync/testprep.js`.
+
+Verified by:
+- `node tests/sync/testprep.js` (real module, real 6,120-MCQ bank, real API) -> 15 passed, 0 failed, run after the final code: offline practice (3 answers + session + run changes queued, numbers visible at once, student stays signed in); delivered, nothing waits; a second device sees attempts, session and daily numbers; the other device's answer to the same MCQ adds (1 -> 2); guest practice kept locally, then joins the account at sign-in with the guest copy removed and not given to another student on the same browser; pre-update local record imported (5 attempts, old session, day); the unfinished test follows the student to another device and disappears when finished; 5 answers leave 5 answer events and a single run event; flag off: no outbox, no v2 requests. Mutation (answers not emitted) caught.
+- `node tests/sync/unit.js` -> 42 passed (new: emitLatest keeps one copy under concurrent calls; stale 401 ignored and retried; mutation caught).
+- Whole battery on the final code: validate 971/0, smoke 0 failed, unit 42/0, e2e 17/0, rewards 15/0, planner 13/0, testprep 15/0, PHP 155/0, php74_lint 0 problems; HTML snapshot: only the 20 known cls1-eng differences.
+
+Not verified: in a real browser (Chrome cannot run here); IndexedDB itself (tests use fake-indexeddb or the localStorage fallback); statistics screens beyond what the stored record shows; the Tests Preps "My Stats" counters on the home page (separate, local, unchanged); PHP 7.4/MySQL 5.7; the CI jobs on GitHub.
+
+Phase 2 status: server steps 1-4 and client steps 5-6 are done behind the `sb_sync_v2` flag (default off). Remaining: step 7 (guest-merge prompt before adding guest data to an account, profile edit/export/delete, change password) and step 8 (backups + restore drill, v1 deprecation) — these need owner decisions on the reset channel and backup destination.

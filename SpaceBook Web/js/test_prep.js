@@ -169,8 +169,101 @@
     try { const r = await fetch(API + '?action=' + action, o); return await r.json(); } catch (e) { return { ok: false }; }
   }
   let pushTimer = null, pulledFor = null;
+
+  // ---- v2: offline-safe sync (js/core/sync.js, behind the sb_sync_v2 flag) ----
+  // Every answer, finished session and change of the unfinished test is written to the outbox first (tp.answer, tp.session,
+  // tp.run, tp.run.clear). What the page shows is rebuilt from the last pulled snapshot plus the events the server has not
+  // confirmed yet (derive), so two devices answering the same MCQ both count and nothing is lost offline. Records made as a
+  // guest, or by the old version on this device, are sent once as tp.import (more attempts wins per MCQ).
+  const v2 = () => { try { return !!(signedIn() && window.SBSync && window.SBSync.isEnabled && window.SBSync.isEnabled()); } catch (e) { return false; } };
+  const emit = (type, payload) => { window.SBSync.emit(type, payload).catch(() => {}); };
+  const emitLatest = (type, payload) => { window.SBSync.emitLatest(type, payload).catch(() => {}); };
+  const clone = o => JSON.parse(JSON.stringify(o));
+  let hooked = false;
+  function hookV2() {
+    if (hooked || !window.SBSync) return;
+    hooked = true;
+    window.SBSync.on('pulled', () => { if (v2()) derive().then(() => { if (S.B && document.querySelector('.tp-root') && !S.run) render(); }); });
+  }
+  // old-format record {q, days, run, runClearedAt} merged into q/days: more attempts wins, larger numbers per day
+  function mergeBlob(q, days, rec) {
+    Object.keys(rec.q || {}).forEach(id => {
+      const v = rec.q[id], mine = q[id];
+      if (!mine || v[0] > mine[0] || (v[0] === mine[0] && v[2] > mine[2])) q[id] = v.slice();
+    });
+    Object.keys(rec.days || {}).forEach(t => {
+      if (t === 'all') return;
+      Object.keys(rec.days[t]).forEach(day => {
+        const v = rec.days[t][day];
+        [t, 'all'].forEach(k => { const m = ((days[k] = days[k] || {})[day]) || [0, 0, 0]; days[k][day] = [Math.max(m[0], v[0]), Math.max(m[1], v[1]), Math.max(m[2], v[2])]; });
+      });
+    });
+  }
+  async function derive() {
+    const d = db();
+    const snap = await window.SBSync.snapshot(), pend = await window.SBSync.pendingEvents();
+    const q = clone(snap.tp.q || {}), days = clone(snap.tp.days || {}), sess = Object.assign({}, snap.tp.sessions || {});
+    let run = snap.tp.run || null, cleared = snap.tp.runClearedAt || 0;
+    for (const ev of pend) {
+      const p = ev.payload || {};
+      if (ev.type === 'tp.answer') {
+        const r = q[p.mcqId] || [0, 0, 0, 0, 0];
+        r[0]++; if (p.correct) r[1]++;
+        if (p.ts >= r[2]) { r[2] = p.ts; r[3] = p.correct ? 1 : 0; }
+        r[4] += Math.round(p.ms || 0);
+        q[p.mcqId] = r;
+        [p.track, 'all'].forEach(k => {
+          const x = ((days[k] = days[k] || {})[p.day]) || (days[k][p.day] = [0, 0, 0]);
+          x[0] += Math.round(Math.min(p.ms || 0, 5 * 60000)); x[1]++; if (p.correct) x[2]++;
+        });
+      } else if (ev.type === 'tp.session' && p.session && p.session.id) sess[p.session.id] = p.session;
+      else if (ev.type === 'tp.run' && p.run) { if (!run || p.run.savedAt >= (run.savedAt || 0)) run = p.run; }
+      else if (ev.type === 'tp.run.clear') cleared = Math.max(cleared, p.clearedAt || 0);
+      else if (ev.type === 'tp.import' && p.record) { mergeBlob(q, days, p.record); (p.record.sessions || []).forEach(s => { if (s && s.id) sess[s.id] = s; }); }
+    }
+    d.q = q; d.days = days;
+    d.sessions = Object.keys(sess).map(k => sess[k]).sort((a, b) => (a.ts || 0) - (b.ts || 0));
+    d.run = run && run.savedAt > cleared ? run : null;
+    d.runClearedAt = cleared;
+    d.pushed = [];
+    save(true);                               // only the local copy; the outbox already holds every change
+    return true;
+  }
+  // once per account: what this device holds from before (as a guest, or from the old version) goes to the account
+  async function importLocal() {
+    let u = null;
+    try { u = window.SpaceBookAuth && window.SpaceBookAuth.user; } catch (e) { u = null; }
+    if (!u) return;
+    const flag = 'sbTP:imported:' + u.id;
+    let done = false;
+    try { done = !!localStorage.getItem(flag); } catch (e) { done = false; }
+    if (done) return;
+    const d = db();
+    for (const key of ['sbTP:v1:guest', d.key]) {
+      let rec = null;
+      try { rec = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) { rec = null; }
+      if (!rec || !(Object.keys(rec.q || {}).length || (rec.sessions || []).length)) continue;
+      const blob = { q: rec.q || {}, days: rec.days || {}, run: rec.run || null, runClearedAt: rec.runClearedAt || 0 };
+      await window.SBSync.emit('tp.import', { record: blob });
+      for (const s of (rec.sessions || [])) if (s && s.id && !(rec.pushed || []).includes(s.id)) await window.SBSync.emit('tp.session', { session: s });
+      if (key === 'sbTP:v1:guest') { try { localStorage.removeItem(key); } catch (e) { /* fine */ } }   // a guest copy joins one account, not the next
+    }
+    try { localStorage.setItem(flag, '1'); } catch (e) { /* fine */ }
+  }
+  async function pullV2() {
+    const d = db();
+    if (pulledFor === d.key) return false;
+    pulledFor = d.key;
+    hookV2();
+    await window.SBSync.setUser(window.SpaceBookAuth.user);
+    await importLocal();
+    await derive();
+    try { await window.SBSync.sync(); } catch (e) { /* offline: the outbox keeps everything */ }
+    return derive();
+  }
+
   function schedulePush() {
-    if (!signedIn()) return;
+    if (!signedIn() || v2()) return;
     clearTimeout(pushTimer);
     pushTimer = setTimeout(push, 2500);
   }
@@ -189,6 +282,7 @@
   }
   async function pull() {
     if (!signedIn()) return false;
+    if (v2()) return pullV2();
     const d = db();
     if (pulledFor === d.key) return false;
     const r = await api('load');
@@ -230,12 +324,14 @@
       opts: r.opts, lang: r.lang, elapsed: Math.round(performance.now() - r.started), savedAt: Date.now(), startedAt: r.startedAt || Date.now()
     };
     save();
+    if (v2()) emitLatest('tp.run', { run: d.run });
   }
   function clearRun() {
     const d = db();
     if (!d.run) return;
     d.run = null; d.runClearedAt = Date.now();
     save();
+    if (v2()) emit('tp.run.clear', { clearedAt: d.runClearedAt });
   }
   function runSummary(run) {
     const answered = run.answers.filter(a => a != null).length;
@@ -273,6 +369,7 @@
       x[0] += Math.round(Math.min(ms, 5 * 60000)); x[1]++; if (correct) x[2]++;
     }
     save();
+    if (v2()) emit('tp.answer', { mcqId: m.i, track: trackId, day: today, correct: !!correct, ms: Math.round(ms), ts: Date.now() });
     // home "My Stats" counters
     try {
       if (typeof getStudyStats === 'function' && typeof saveStudyStats === 'function') {
@@ -872,9 +969,11 @@
         (lv[m.l] = lv[m.l] || [0, 0])[0]++; if (ok) lv[m.l][1]++;
       });
       const d = db();
-      d.sessions.push({ id: r.id, track: S.track, mode: r.mode, ts: Date.now(), n: idx.length, c, ms: Math.round(ms),
-        items: idx.map(i => [r.qs[i].i, r.answers[i] == null ? null : r.answers[i], Math.round(r.times[i])]), secs: secsAgg, lv });
+      const sessRec = { id: r.id, track: S.track, mode: r.mode, ts: Date.now(), n: idx.length, c, ms: Math.round(ms),
+        items: idx.map(i => [r.qs[i].i, r.answers[i] == null ? null : r.answers[i], Math.round(r.times[i])]), secs: secsAgg, lv };
+      d.sessions.push(sessRec);
       save();
+      if (v2()) emit('tp.session', { session: sessRec });
     }
     renderRun();
   }

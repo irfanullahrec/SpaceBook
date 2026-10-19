@@ -60,6 +60,7 @@ async function start() {
         },
       });
       const sb = app.sb;
+      if (opts.bank) app.run(fs.readFileSync(path.join(ROOT, 'js', 'test_prep_bank.js'), 'utf8'), 60000);   // the page loads it lazily with a script tag
       return {
         app, sb, net,
         async signIn(acct, dev) {
@@ -68,6 +69,7 @@ async function start() {
           await sb.SBSync.setDevice(acct.user.id, dev || acct.device);
           sb.document.dispatchEvent(new sb.CustomEvent('spacebook:auth', { detail: { user: acct.user } }));
           await sleep(400);                                 // background sync started by the modules settles
+          if (opts.flag) { await sb.SBSync.sync(); await sleep(250); }   // stands in for the retry timer, which never fires in the sandbox
         },
         offline() { net.down = true; sb.navigator.onLine = false; },
         online() { net.down = false; sb.navigator.onLine = true; },

@@ -192,6 +192,31 @@ function make(opts) {
     check('a new device token resumes sending, with the Authorization header', r2.accepted === 1 && t.srv.calls[1].headers.Authorization === 'Bearer ' + 'a'.repeat(64));
   }
   {
+    // emitLatest: "the latest copy wins" state does not pile up, even when called many times at once
+    const t = make({ server: stubServer(() => new Error('offline')) });
+    await t.sync.setUser({ id: 1 });
+    await Promise.all([1, 2, 3, 4, 5, 6].map(i => t.sync.emitLatest('tp.run', { run: { savedAt: i } })));
+    await t.sync.emit('tp.answer', { n: 1 });
+    await t.sync.emitLatest('tp.run', { run: { savedAt: 7 } });
+    const evs = await t.sync.pendingEvents();
+    const runs = evs.filter(e => e.type === 'tp.run');
+    check('emitLatest keeps one waiting copy (the newest) however it is called, and leaves other events alone', runs.length === 1 && runs[0].payload.run.savedAt === 7 && evs.filter(e => e.type === 'tp.answer').length === 1, evs.map(e => e.type + ':' + (e.payload.run ? e.payload.run.savedAt : '')));
+  }
+  {
+    // a 401 for a request that was sent before the device token arrived must not latch "auth lost"
+    let t;
+    t = make({ server: stubServer(async call => {
+      if (!call.headers.Authorization) { await t.sync.setDevice(5, { id: 'd', token: 'c'.repeat(64) }); return { status: 401, body: { ok: false } }; }   // the token arrives while the first request is in flight
+      return okAll(call);
+    }) });
+    await t.sync.setUser({ id: 5 });
+    await t.sync.emit('step', {});
+    const r1 = await t.sync.flush();
+    check('a 401 that answers a request sent with old credentials is ignored (not auth-lost) and retried', r1.status === 'retry' && (await t.sync.status()).authLost === false && t.clk.armed() >= 1, r1);
+    t.clk.advance(100); await settle();
+    check('and the retry with the new token delivers the event', (await t.sync.pending()) === 0 && t.srv.calls.some(c => c.headers.Authorization === 'Bearer ' + 'c'.repeat(64)));
+  }
+  {
     // the server answers 413 for more than 3 events per batch, and 422 for a poison event
     const t = make({ server: stubServer(call => {
       if (call.events.some(e => e.payload.poison)) return call.events.length > 1 ? { status: 422, body: { ok: false } } : { status: 422, body: { ok: false } };
