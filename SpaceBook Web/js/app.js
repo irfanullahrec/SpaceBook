@@ -1732,93 +1732,107 @@ function goToSubjects(classId) {
   };
 
   const coverPageMap = {
-    "cls1-eng": "Books/1st/Futuristic English Class 1 Cover.png",
-    "cls1-urdu": "Books/1st/Gemini_Generated_Image_rug1r6rug1r6rug1.jfif",
-    "cls1-math": "Books/1st/Gemini_Generated_Image_qbm1djqbm1djqbm1.jfif",
-    "cls1-gk": "Books/1st/Gemini_Generated_Image_wlxxp7wlxxp7wlxx.jfif",
-    "cls1-isl": "Books/1st/Gemini_Generated_Image_ecenaxecenaxecen.jfif",
-    "cls1-nazira": "Books/1st/Gemini_Generated_Image_baq9e3baq9e3baq9.jfif",
-    "cls1-pashto": "Books/1st/Gemini_Generated_Image_xrql7oxrql7oxrql.jfif",
-    "cls1-drawing": "Books/1st/Gemini_Generated_Image_moaefjmoaefjmoae.jfif",
-    "cls2-eng": "2nd English.jpg", "cls2-urdu": "2nd Urdu.jpg", "cls2-math": "2nd Maths.jpg",
-    "cls2-gk": "2nd GK.jpg", "cls2-isl": "2nd Islamyat.jpg", "cls2-nazira": "2nd Nazira.jpg",
-    "cls2-pashto": "2nd Pashto.jpg", "cls2-drawing": "2nd Drawing.jpg",
-    "cls3-eng": "3rd English.jpg", "cls3-urdu": "3rd Urdu.jpg", "cls3-math": "3rd Maths.jpg",
-    "cls3-gk": "3rd  GK.jpg", "cls3-isl": "3rd ISlamyat.jpg", "cls3-nazira": "3rd Nazira.jpg",
-    "cls3-pashto": "3rd Pashto.jpg", "cls3-drawing": "3rd Drawing.jpg",
-    "cls5-eng": "5th English.jpg", "cls5-urdu": "5th Urdu.jpg", "cls5-math": "5th Maths.jpg",
-    "cls5-sci": "5th General Science.jpg", "cls5-sst": "5th Social Study.jpg", "cls5-isl": "5th Islamiat.jpg",
-    "cls5-sstum": "5th Social Study UM.jpg", "cls5-pashto": "5th Pashto.jpg",
-    "cls6-math": "Math.jpg", "cls6-sci": "General science.jpg", "cls6-eng": "English.jpg",
-    "cls6-urdu": "Urdu.jpg", "cls6-isl": "Islamiat.jpg", "cls6-comp": "Computer.jpg",
-    "cls6-geo": "Geography.jpg", "cls6-hist": "History.jpg", "cls6-hpe": "Hpe.jpg",
-    "cls6-drawing": "Drawing.jpg", "cls6-arabic": "Arabic.jpg", "cls6-quran": "M-Q.jpg",
-    "cls6-pashto": "Pashto.jpg",
-    "cls7-eng": "7th English.jpg", "cls7-urdu": "7th Urdu.jpg", "cls7-math": "7th MAths.jpg",
-    "cls7-sci": "7th General Science.jpg", "cls7-hg": "7th History.jpg", "cls7-comp": "7th CS.jpg",
-    "cls7-isl": "7th Islamiat.jpg", "cls7-pashto": "7th PAshto.jpg",
-    "cls8-eng": "Books/8th/8 English.png",
-    "cls8-urdu": "Books/8th/8 Urdu.png",
-    "cls8-math": "Books/8th/8 Maths.png",
-    "cls8-sci": "Books/8th/8 General Science.png",
-    "cls8-comp": "Books/8th/8 Computer Science.png",
-    "cls8-geo": "Books/8th/8 Geography.png",
-    "cls8-hist": "8th History.jpg",
-    "cls8-isl": "Books/8th/8 Islamyat.png",
+    "cls1-eng": "Books/1st/kptb_cls1_eng.webp",
+    "cls1-urdu": "Books/1st/kptb_cls1_urdu.webp",
+    "cls1-math": "Books/1st/kptb_cls1_math.webp",
+    "cls1-gk": "Books/1st/kptb_cls1_gk.webp",
+    "cls1-isl": "Books/1st/kptb_cls1_isl.webp",
+    "cls1-nazira": "Books/1st/kptb_cls1_nazira.webp",
+    "cls1-pashto": "Books/1st/kptb_cls1_pashto.webp",
+    "cls1-drawing": "Books/1st/kptb_cls1_drawing.webp",
+    "cls2-eng": "Books/2nd/kptb_cls2_eng.webp", "cls2-urdu": "Books/2nd/kptb_cls2_urdu.webp", "cls2-math": "Books/2nd/kptb_cls2_math.webp",
+    "cls2-gk": "Books/2nd/kptb_cls2_gk.webp", "cls2-isl": "Books/2nd/kptb_cls2_isl.webp", "cls2-nazira": "Books/2nd/kptb_cls2_nazira.webp",
+    "cls2-pashto": "Books/2nd/kptb_cls2_pashto.webp", "cls2-drawing": "Books/2nd/kptb_cls2_drawing.webp",
+    "cls3-eng": "Books/3rd/kptb_cls3_eng.webp", "cls3-urdu": "Books/3rd/kptb_cls3_urdu.webp", "cls3-math": "Books/3rd/kptb_cls3_math.webp",
+    "cls3-gk": "Books/3rd/kptb_cls3_gk.webp", "cls3-isl": "Books/3rd/kptb_cls3_isl.webp", "cls3-nazira": "Books/3rd/kptb_cls3_nazira.webp",
+    "cls3-pashto": "Books/3rd/kptb_cls3_pashto.webp", "cls3-drawing": "Books/3rd/kptb_cls3_drawing.webp",
+    "cls4-eng": "Books/4th/kptb_cls4_eng.webp", "cls4-urdu": "Books/4th/kptb_cls4_urdu.webp", "cls4-math": "Books/4th/kptb_cls4_math.webp",
+    "cls4-sci": "Books/4th/kptb_cls4_sci.webp", "cls4-sst": "Books/4th/kptb_cls4_sst.webp", "cls4-isl": "Books/4th/kptb_cls4_isl.webp",
+    "cls4-sstum": "Books/4th/kptb_cls4_sst.webp", "cls4-pashto": "Books/4th/kptb_cls4_pashto.webp",
+    "cls5-eng": "Books/5th/kptb_cls5_eng.webp", "cls5-urdu": "Books/5th/kptb_cls5_urdu.webp", "cls5-math": "Books/5th/kptb_cls5_math.webp",
+    "cls5-sci": "Books/5th/kptb_cls5_sci.webp", "cls5-sst": "Books/5th/kptb_cls5_sst.webp", "cls5-isl": "Books/5th/kptb_cls5_isl.webp",
+    "cls5-sstum": "Books/5th/kptb_cls5_sst.webp", "cls5-pashto": "Books/5th/kptb_cls5_pashto.webp",
+    "cls6-math": "Books/6th/kptb_cls6_math.webp", "cls6-sci": "Books/6th/kptb_cls6_sci.webp", "cls6-eng": "Books/6th/kptb_cls6_eng.webp",
+    "cls6-urdu": "Books/6th/kptb_cls6_urdu.webp", "cls6-isl": "Books/6th/kptb_cls6_isl.webp", "cls6-comp": "Books/6th/kptb_cls6_comp.webp",
+    "cls6-geo": "Books/6th/kptb_cls6_geo.webp", "cls6-hist": "Books/6th/kptb_cls6_hist.webp", "cls6-hpe": "Books/6th/kptb_cls6_hpe.webp",
+    "cls6-drawing": "Books/6th/kptb_cls6_drawing.webp", "cls6-arabic": "Books/6th/kptb_cls6_arabic.webp", "cls6-quran": "M-Q.jpg",
+    "cls6-pashto": "Books/6th/kptb_cls6_pashto.webp",
+    "cls7-eng": "Books/7th/kptb_cls7_eng.webp", "cls7-urdu": "Books/7th/kptb_cls7_urdu.webp", "cls7-math": "Books/7th/kptb_cls7_math.webp",
+    "cls7-sci": "Books/7th/kptb_cls7_sci.webp", "cls7-hg": "7th History.jpg", "cls7-comp": "Books/7th/kptb_cls7_comp.webp",
+    "cls7-isl": "Books/7th/kptb_cls7_isl.webp", "cls7-pashto": "Books/7th/kptb_cls7_pashto.webp",
+    "cls7-geo": "Books/7th/kptb_cls7_geo.webp", "cls7-hist": "Books/7th/kptb_cls7_hist.webp",
+    "cls7-arabic": "Books/7th/kptb_cls7_arabic.webp", "cls7-drawing": "Books/7th/kptb_cls7_drawing.webp",
+    "cls7-quran": "Books/7th/kptb_cls7_quran.webp", "cls7-hpe": "Books/7th/kptb_cls7_hpe.webp",
+    "cls8-eng": "Books/8th/kptb_cls8_eng.webp",
+    "cls8-urdu": "Books/8th/kptb_cls8_urdu.webp",
+    "cls8-math": "Books/8th/kptb_cls8_math.webp",
+    "cls8-sci": "Books/8th/kptb_cls8_sci.webp",
+    "cls8-comp": "Books/8th/kptb_cls8_comp.webp",
+    "cls8-geo": "Books/8th/kptb_cls8_geo.webp",
+    "cls8-hist": "Books/8th/kptb_cls8_hist.webp",
+    "cls8-isl": "Books/8th/kptb_cls8_isl.webp",
     "cls8-quran": "Books/8th/8 Motalia Quaran.png",
-    "cls8-pashto": "8th PAshto.jpg",
-    "cls8-arabic": "Books/8th/8 Arabi.png",
-    "cls8-drawing": "Books/8th/8 Drawing.png",
-    "cls8-hpe": "Books/8th/HPE.png",
-    "cls9-math": "Books/9th/Gemini_Generated_Image_w8lq8vw8lq8vw8lq.jfif",
-    "cls9-phy": "Books/9th/Gemini_Generated_Image_pw7qnrpw7qnrpw7q.jfif",
-    "cls9-chem": "Books/9th/Gemini_Generated_Image_30qsex30qsex30qs.jfif",
-    "cls9-bio": "Books/9th/Gemini_Generated_Image_boa8wdboa8wdboa8.jfif",
-    "cls9-eng": "Books/9th/Gemini_Generated_Image_rnk4elrnk4elrnk4.jfif",
-    "cls9-urdu": "Books/9th/Gemini_Generated_Image_ad08umad08umad08.jfif",
-    "cls9-isl": "Books/9th/Gemini_Generated_Image_75g27n75g27n75g2.jfif",
-    "cls9-comp": "Books/9th/Gemini_Generated_Image_vtqsonvtqsonvtqs.jfif",
-    "cls9-pakstudy": "Books/9th/Gemini_Generated_Image_db55esdb55esdb55.jfif",
-    "cls9-sci": "9th General Science.jpg",
+    "cls8-pashto": "Books/8th/kptb_cls8_pashto.webp",
+    "cls8-arabic": "Books/8th/kptb_cls8_arabic.webp",
+    "cls8-drawing": "Books/8th/kptb_cls8_drawing.webp",
+    "cls8-hpe": "Books/8th/kptb_cls8_hpe.webp",
+    "cls9-math": "Books/9th/kptb_cls9_math.webp",
+    "cls9-phy": "Books/9th/kptb_cls9_phy.webp",
+    "cls9-chem": "Books/9th/kptb_cls9_chem.webp",
+    "cls9-bio": "Books/9th/kptb_cls9_bio.webp",
+    "cls9-eng": "Books/9th/kptb_cls9_eng.webp",
+    "cls9-urdu": "Books/9th/kptb_cls9_urdu.webp",
+    "cls9-isl": "Books/9th/kptb_cls9_isl.webp",
+    "cls9-comp": "Books/9th/kptb_cls9_comp.webp",
+    "cls9-pakstudy": "Books/9th/kptb_cls9_pakstudy.webp",
+    "cls9-sci": "Books/9th/kptb_cls9_sci.webp",
     "cls9-hpe": "9th  HPE.jpg",
-    "cls9-drawing": "Books/9th/Gemini_Generated_Image_nn0i77nn0i77nn0i.jfif",
-    "cls9-islopt": "Books/9th/Gemini_Generated_Image_5i15sy5i15sy5i15.jfif",
-    "cls9-quran": "Books/9th/Gemini_Generated_Image_wguwwowguwwowguw.jfif",
-    "cls10-math": "Books/10th/Gemini_Generated_Image_vyx6guvyx6guvyx6.jfif",
-    "cls10-phy": "Books/10th/Gemini_Generated_Image_4h1fv24h1fv24h1f.jfif",
-    "cls10-chem": "Books/10th/Gemini_Generated_Image_gzpnyrgzpnyrgzpn.jfif",
-    "cls10-bio": "Books/10th/Gemini_Generated_Image_dcv58kdcv58kdcv5.jfif",
-    "cls10-eng": "Books/10th/Gemini_Generated_Image_cghnsfcghnsfcghn.jfif",
-    "cls10-pakstudy": "Books/10th/Gemini_Generated_Image_rq47jrrq47jrrq47.jfif",
+    "cls9-drawing": "Books/9th/kptb_cls9_drawing.webp",
+    "cls9-islopt": "Books/9th/kptb_cls9_islopt.webp",
+    "cls9-quran": "Books/9th/kptb_cls9_quran.webp",
+    "cls10-math": "Books/10th/kptb_cls10_math.webp",
+    "cls10-phy": "Books/10th/kptb_cls10_phy.webp",
+    "cls10-chem": "Books/10th/kptb_cls10_chem.webp",
+    "cls10-bio": "Books/10th/kptb_cls10_bio.webp",
+    "cls10-eng": "Books/10th/kptb_cls10_eng.webp",
+    "cls10-pakstudy": "Books/10th/kptb_cls10_pakstudy.webp",
     "cls10-isl": "Books/10th/Gemini_Generated_Image_njeatcnjeatcnjea.jfif",
-    "cls10-urdu": "Books/10th/Gemini_Generated_Image_9uv30s9uv30s9uv3.jfif",
-    "cls10-comp": "Books/10th/Gemini_Generated_Image_bws44hbws44hbws4.jfif",
-    "cls10-sci": "Books/10th/Gemini_Generated_Image_kxwjfpkxwjfpkxwj.jfif",
-    "cls10-hpe": "Books/10th/Gemini_Generated_Image_qr2ordqr2ordqr2o.jfif",
-    "cls10-drawing": "Books/10th/Gemini_Generated_Image_huah56huah56huah.jfif",
-    "cls10-islopt": "Books/10th/Gemini_Generated_Image_yxqnvmyxqnvmyxqn.jfif",
+    "cls10-urdu": "Books/10th/kptb_cls10_urdu.webp",
+    "cls10-comp": "Books/10th/kptb_cls10_comp.webp",
+    "cls10-sci": "Books/10th/kptb_cls10_sci.webp",
+    "cls10-hpe": "Books/10th/kptb_cls10_hpe.webp",
+    "cls10-drawing": "Books/10th/kptb_cls10_drawing.webp",
+    "cls10-islopt": "Books/10th/kptb_cls10_islopt.webp",
     "cls10-quran": "Books/10th/Gemini_Generated_Image_a9o2uea9o2uea9o2.jfif",
-    "cls11-math": "Books/11th/Gemini_Generated_Image_pfh7dwpfh7dwpfh7.jfif",
-    "cls11-phy": "Books/11th/Gemini_Generated_Image_o245eto245eto245.jfif",
-    "cls11-chem": "Books/11th/Gemini_Generated_Image_lmncvllmncvllmnc.jfif",
-    "cls11-bio": "Books/11th/Gemini_Generated_Image_jw91ygjw91ygjw91.jfif",
-    "cls11-eng": "Books/11th/Gemini_Generated_Image_ol8qruol8qruol8q.jfif",
-    "cls11-stat": "Books/12th/Statistics.jpg",
-    "cls12-math": "Books/12th/Mathematics.jpg",
-    "cls12-phy": "Books/12th/Physics.jpg",
-    "cls12-chem": "Books/12th/Chemistry.jpg",
-    "cls12-stat": "Books/12th/Statistics.jpg",
-    "cls12-eng": "Books/12th/English.jpg",
-    "cls12-urdu": "Books/12th/Urdu.jpg",
-    "cls12-bio": "Books/12th/Biology.jpg",
-    "cls12-pak": "Books/12th/Pakistan Studies.jpg",
-    "cls12-comp": "Books/12th/Computer Science.jpg",
+    "cls11-math": "Books/11th/kptb_cls11_math.webp",
+    "cls11-phy": "Books/11th/kptb_cls11_phy.webp",
+    "cls11-chem": "Books/11th/kptb_cls11_chem.webp",
+    "cls11-bio": "Books/11th/kptb_cls11_bio.webp",
+    "cls11-eng": "Books/11th/kptb_cls11_eng.webp",
+    "cls11-stat": "Books/11th/kptb_cls11_stat.webp",
+    "cls12-math": "Books/12th/kptb_cls12_math.webp",
+    "cls12-phy": "Books/12th/kptb_cls12_phy.webp",
+    "cls12-chem": "Books/12th/kptb_cls12_chem.webp",
+    "cls12-stat": "Books/12th/kptb_cls12_stat.webp",
+    "cls12-eng": "Books/12th/kptb_cls12_eng.webp",
+    "cls12-urdu": "Books/12th/kptb_cls12_urdu.webp",
+    "cls12-bio": "Books/12th/kptb_cls12_bio.webp",
+    "cls12-pak": "Books/12th/kptb_cls12_pak.webp",
+    "cls12-comp": "Books/12th/kptb_cls12_comp.webp",
     "cls12-civics": "Books/12th/Civics.jpg",
-    "cls12-econ": "Books/12th/Economics.jfif",
-    "cls12-hpe": "Books/12th/HPE.jpg",
-    "cls12-islopt": "Books/12th/Islamiat Ikhtiari.jfif",
+    "cls12-econ": "Books/12th/kptb_cls12_econ.webp",
+    "cls12-hpe": "Books/12th/kptb_cls12_hpe.webp",
+    "cls12-islopt": "Books/12th/kptb_cls12_islopt.webp",
     "cls12-islhist": "Books/12th/Islamic History.jfif",
-    "cls12-quran": "Books/12th/Motalia Quran.jfif"
+    "cls12-quran": "Books/12th/Motalia Quran.jfif",
+    "cls11-urdu": "Books/11th/kptb_cls11_urdu.webp",
+    "cls11-ikhtiari": "Books/11th/kptb_cls11_ikhtiari.webp",
+    "cls11-cs": "Books/11th/kptb_cls11_cs.webp",
+    "cls11-hpe": "Books/11th/kptb_cls11_hpe.webp",
+    "cls11-isl": "Books/11th/kptb_cls11_isl.webp",
+    "cls11-mq": "Books/11th/kptb_cls11_mq.webp",
+    "cls11-ishist": "Books/11th/kptb_cls11_ishist.webp",
+    "cls11-civics": "Books/11th/kptb_cls11_civics.webp"
   };
 
   const getCoverPage = (subjId) => {
@@ -1838,7 +1852,7 @@ function goToSubjects(classId) {
 
   const gridColsClass = getGridColsClass(displaySubs.length);
 
-if (classId === 'cls1') {
+if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(classId)) {
     pageContent().innerHTML = `
       <div class="cls1-cover-stage-grid">
         ${displaySubs.map(s => {
@@ -9699,7 +9713,7 @@ function clearGlobalSearch() {
 
 
 // ═════════════════════════════════════════════════
-//  COMPETITIVE TESTS PREPARATION DATA BANK (15 POSTS)
+//  COMPETITIVE TESTS PREPARATION DATA BANK
 // ═════════════════════════════════════════════════
 const COMPETITIVE_TESTS_DATA = [
   {
@@ -9914,6 +9928,88 @@ const COMPETITIVE_TESTS_DATA = [
       { q: "Which statistical test is used to compare means between two independent groups?", opts: ["Chi-Square Test", "Student's t-test", "One-way ANOVA", "Pearson Correlation"], ans: 1, exp: "Independent two-sample t-test compares means across two groups." }
     ]
   },
+  // Subject-wise College Lecturer tracks (KPPSC / FPSC, BPS-17)
+  ...[
+    ["maths", "Mathematics", "📐", "#2563eb", "Calculus · Algebra · Analysis · Differential Eq.",
+      [["Real & Complex Analysis, Calculus", "35%"], ["Linear & Abstract Algebra", "25%"], ["Differential Equations & Numerical Methods", "20%"]],
+      [{ q: "The derivative of sin x with respect to x is:", opts: ["−cos x", "cos x", "tan x", "sec x"], ans: 1, exp: "d/dx (sin x) = cos x." },
+       { q: "The order of the group of integers modulo 7 under addition (ℤ₇) is:", opts: ["6", "7", "8", "14"], ans: 1, exp: "ℤ₇ = {0,1,…,6} has 7 elements." }]],
+    ["physics", "Physics", "⚛️", "#4f46e5", "Mechanics · Electromagnetism · Quantum · Modern",
+      [["Classical & Quantum Mechanics", "30%"], ["Electromagnetism & Optics", "25%"], ["Thermodynamics, Nuclear & Solid State", "25%"]],
+      [{ q: "The SI unit of magnetic flux is the:", opts: ["Tesla", "Weber", "Henry", "Gauss"], ans: 1, exp: "Magnetic flux is measured in weber (Wb = T·m²)." },
+       { q: "According to de Broglie, the wavelength of a particle of momentum p is:", opts: ["h·p", "h/p", "p/h", "hc/p"], ans: 1, exp: "λ = h / p." }]],
+    ["chemistry", "Chemistry", "🧪", "#0d9488", "Physical · Organic · Inorganic · Analytical",
+      [["Physical Chemistry", "27%"], ["Organic Chemistry", "27%"], ["Inorganic & Analytical Chemistry", "26%"]],
+      [{ q: "The hybridisation of carbon in ethyne (C₂H₂) is:", opts: ["sp³", "sp²", "sp", "dsp²"], ans: 2, exp: "Each carbon in the C≡C triple bond is sp hybridised (linear)." },
+       { q: "Avogadro's number is approximately:", opts: ["6.02 × 10²³", "3.0 × 10⁸", "1.6 × 10⁻¹⁹", "9.1 × 10⁻³¹"], ans: 0, exp: "Nₐ ≈ 6.022 × 10²³ per mole." }]],
+    ["zoology", "Zoology", "🦋", "#ea580c", "Animal Diversity · Physiology · Genetics · Ecology",
+      [["Animal Diversity & Taxonomy", "25%"], ["Physiology & Cell Biology", "30%"], ["Genetics, Evolution & Ecology", "25%"]],
+      [{ q: "Which phylum includes animals with jointed appendages and an exoskeleton?", opts: ["Annelida", "Mollusca", "Arthropoda", "Echinodermata"], ans: 2, exp: "Arthropods have jointed legs and a chitinous exoskeleton." },
+       { q: "The functional unit of the kidney is the:", opts: ["Neuron", "Nephron", "Alveolus", "Villus"], ans: 1, exp: "Each kidney contains about a million nephrons." }]],
+    ["botany", "Botany", "🌿", "#16a34a", "Plant Diversity · Physiology · Anatomy · Ecology",
+      [["Plant Diversity & Systematics", "25%"], ["Plant Physiology & Biochemistry", "30%"], ["Anatomy, Genetics & Ecology", "25%"]],
+      [{ q: "The light-dependent reactions of photosynthesis take place in the:", opts: ["Stroma", "Thylakoid membranes", "Cytoplasm", "Mitochondria"], ans: 1, exp: "Photosystems I and II sit in the thylakoid membranes." },
+       { q: "Xylem tissue mainly conducts:", opts: ["Food", "Water and minerals", "Hormones only", "Gases"], ans: 1, exp: "Xylem carries water and dissolved minerals upward from roots." }]],
+    ["cs", "Computer Science", "🖥️", "#0284c7", "Programming · DSA · DBMS · Networks · OS",
+      [["Programming & Data Structures", "30%"], ["Databases & Software Engineering", "25%"], ["Operating Systems & Networks", "25%"]],
+      [{ q: "The worst-case time complexity of binary search on n sorted items is:", opts: ["O(n)", "O(log n)", "O(n log n)", "O(1)"], ans: 1, exp: "Binary search halves the range each step: O(log n)." },
+       { q: "Which data structure follows Last-In-First-Out (LIFO)?", opts: ["Queue", "Stack", "Linked list", "Tree"], ans: 1, exp: "A stack removes the most recently added item first." }]],
+    ["english", "English", "📘", "#9333ea", "Literature · Linguistics · Poetry · Drama · Novel",
+      [["English Literature (Poetry, Drama, Novel)", "40%"], ["Literary Criticism & Theory", "20%"], ["Linguistics & Grammar", "20%"]],
+      [{ q: "'Paradise Lost' was written by:", opts: ["William Shakespeare", "John Milton", "Geoffrey Chaucer", "John Donne"], ans: 1, exp: "John Milton published Paradise Lost in 1667." },
+       { q: "A fourteen-line poem in iambic pentameter is called a:", opts: ["Ode", "Sonnet", "Ballad", "Elegy"], ans: 1, exp: "The sonnet has fourteen lines, usually in iambic pentameter." }]],
+    ["urdu", "Urdu", "✒️", "#be185d", "Classical & Modern Poetry · Prose · Criticism",
+      [["Urdu Poetry (Ghazal, Nazm, Marsiya)", "35%"], ["Urdu Prose, Fiction & Drama", "25%"], ["Tanqeed & Urdu Language History", "20%"]],
+      [{ q: "'Bang-e-Dra' is a poetry collection by:", opts: ["Mirza Ghalib", "Allama Iqbal", "Faiz Ahmad Faiz", "Mir Taqi Mir"], ans: 1, exp: "Bang-e-Dra (1924) was Allama Iqbal's first Urdu collection." },
+       { q: "'Ghubar-e-Khatir' is a collection of letters by:", opts: ["Sir Syed", "Maulana Abul Kalam Azad", "Mirza Ghalib", "Shibli Nomani"], ans: 1, exp: "Maulana Abul Kalam Azad wrote these letters in Ahmednagar Fort." }]],
+    ["history", "History", "🏺", "#b45309", "Muslim Rule · South Asia · World History",
+      [["History of Muslim Rule in South Asia", "30%"], ["Freedom Movement & Modern South Asia", "25%"], ["World & Islamic History", "25%"]],
+      [{ q: "The First Battle of Panipat (1526) was fought between Babur and:", opts: ["Rana Sanga", "Ibrahim Lodhi", "Hemu", "Sher Shah Suri"], ans: 1, exp: "Babur defeated Ibrahim Lodhi and founded Mughal rule." },
+       { q: "The Treaty of Versailles was signed in:", opts: ["1914", "1919", "1939", "1945"], ans: 1, exp: "It ended World War I in June 1919." }]],
+    ["economics", "Economics", "📈", "#059669", "Micro · Macro · Development · Pakistan Economy",
+      [["Microeconomics", "25%"], ["Macroeconomics & Monetary Economics", "30%"], ["Development & Pakistan Economy", "25%"]],
+      [{ q: "When demand is perfectly inelastic, the demand curve is:", opts: ["Horizontal", "Vertical", "Downward sloping", "Upward sloping"], ans: 1, exp: "Quantity does not change with price, so the curve is vertical." },
+       { q: "GDP measures the value of final goods and services produced:", opts: ["By citizens abroad", "Within a country's borders", "By the government only", "In the stock market"], ans: 1, exp: "GDP counts production inside the country in a period." }]],
+    ["statistics", "Statistics", "📊", "#0891b2", "Probability · Distributions · Inference · Sampling",
+      [["Probability & Distributions", "30%"], ["Statistical Inference & Hypothesis Testing", "30%"], ["Sampling, Regression & Design", "20%"]],
+      [{ q: "For a normal distribution, the mean, median and mode are:", opts: ["All different", "All equal", "Mean > median > mode", "Mode > median > mean"], ans: 1, exp: "The normal curve is symmetric, so all three coincide." },
+       { q: "The variance of a binomial distribution B(n, p) is:", opts: ["np", "npq", "√(npq)", "n²p"], ans: 1, exp: "Var = np(1 − p) = npq." }]],
+    ["islamiat", "Islamiyat", "🕌", "#15803d", "Quran · Hadith · Fiqh · Seerah · Islamic History",
+      [["Uloom-ul-Quran & Tafseer", "25%"], ["Hadith, Fiqh & Usool", "30%"], ["Seerah & Islamic History", "25%"]],
+      [{ q: "The longest Surah of the Holy Quran is:", opts: ["Surah Al-Imran", "Surah Al-Baqarah", "Surah An-Nisa", "Surah Yaseen"], ans: 1, exp: "Surah Al-Baqarah has 286 verses." },
+       { q: "Sahih al-Bukhari was compiled by:", opts: ["Imam Muslim", "Imam Muhammad ibn Ismail al-Bukhari", "Imam Malik", "Imam Tirmidhi"], ans: 1, exp: "Imam al-Bukhari compiled it in the 3rd century AH." }]],
+    ["pakstudies", "Pakistan Studies", "🇵🇰", "#047857", "Ideology · Freedom Movement · Constitution · Geography",
+      [["Ideology & Freedom Movement", "30%"], ["Constitutional & Political Development", "25%"], ["Geography, Economy & Foreign Policy", "25%"]],
+      [{ q: "The Lahore Resolution was passed on:", opts: ["14 August 1947", "23 March 1940", "25 December 1930", "11 September 1948"], ans: 1, exp: "It was adopted at the Muslim League session on 23 March 1940." },
+       { q: "Pakistan's current constitution was adopted in:", opts: ["1956", "1962", "1973", "1985"], ans: 2, exp: "The Constitution of 1973 came into force on 14 August 1973." }]],
+    ["polsci", "Political Science", "🏛️", "#475569", "Political Theory · Comparative Politics · IR",
+      [["Political Theory & Thought", "30%"], ["Comparative Politics & Constitutions", "25%"], ["International Relations & Public Administration", "25%"]],
+      [{ q: "'The Prince' was written by:", opts: ["Plato", "Niccolò Machiavelli", "Thomas Hobbes", "John Locke"], ans: 1, exp: "Machiavelli wrote The Prince in 1513." },
+       { q: "The theory of separation of powers is mainly associated with:", opts: ["Rousseau", "Montesquieu", "Aristotle", "Marx"], ans: 1, exp: "Montesquieu set it out in The Spirit of the Laws (1748)." }]],
+    ["pashto", "Pashto", "📜", "#a16207", "Classical & Modern Poetry · Prose · Criticism",
+      [["Pashto Poetry (Classical & Modern)", "35%"], ["Pashto Prose & Fiction", "25%"], ["Criticism & Pashto Language History", "20%"]],
+      [{ q: "Khushal Khan Khattak is famed as a Pashto poet and:", opts: ["Sufi saint only", "Warrior chief of the Khattaks", "Mughal emperor", "British officer"], ans: 1, exp: "Khushal Khan Khattak (1613–1689) was a Khattak chief, warrior and poet." },
+       { q: "Rahman Baba is best known for his:", opts: ["Epic war poems", "Sufi poetry (Diwan)", "Pashto grammar", "Historical chronicles"], ans: 1, exp: "Abdul Rahman Baba's Diwan is a classic of Pashto Sufi poetry." }]],
+    ["arabic", "Arabic", "🔤", "#7c2d12", "Nahw · Sarf · Balagha · Arabic Literature",
+      [["Nahw & Sarf (Grammar & Morphology)", "35%"], ["Classical & Modern Arabic Literature", "25%"], ["Balagha & Translation", "20%"]],
+      [{ q: "In Arabic grammar, the subject of a verbal sentence is called:", opts: ["Mubtada", "Fa'il", "Khabar", "Maf'ul"], ans: 1, exp: "The doer of the verb is the Fa'il; Mubtada/Khabar belong to nominal sentences." },
+       { q: "'Al-Mu'allaqat' are famous collections of:", opts: ["Hadith", "Pre-Islamic Arabic odes", "Fiqh rulings", "Arabic grammar rules"], ans: 1, exp: "The Mu'allaqat are seven celebrated pre-Islamic qasidas." }]]
+  ].map(([key, subj, emoji, color, focus, core, sampleQuestions]) => ({
+    id: "lecturer-" + key,
+    title: "Lecturer " + ({ "Computer Science": "CS", "Pakistan Studies": "Pak Studies", "Political Science": "Pol. Science" }[subj] || subj),
+    fullName: "College Lecturer (" + subj + ")",
+    scale: "BPS-17 · KPPSC / FPSC",
+    emoji,
+    color,
+    bg: color + "14",
+    border: color + "40",
+    focus,
+    syllabus: [
+      ...core.map(([subject, weight]) => ({ subject, weight })),
+      { subject: "General Knowledge, English & Islamiyat", weight: "20%" }
+    ],
+    sampleQuestions
+  })),
   {
     id: "mdcat",
     title: "MDCAT",
@@ -10044,7 +10140,7 @@ function renderTestsPreps() {
             <span class="psb-sub">ETEA · NTS · KPPSC · PMDC · FPSC · Verified Syllabus &amp; Model MCQs</span>
           </div>
         </div>
-        <span class="psb-pill">15 Competitive Test Tracks · Click Card to Launch Prep</span>
+        <span class="psb-pill">${COMPETITIVE_TESTS_DATA.length} Competitive Test Tracks · Click Card to Launch Prep</span>
       </div>
 
       <!-- 2. One-Look 5 Columns x 3 Rows Jewel Cards Grid (No Scrolling Down) -->
@@ -12169,7 +12265,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
               result.push({
                 id: `eng-wm-${u.number}-${dIdx}`,
                 q: `Give the contextual textbook meaning of: "${dw.word || dw}"`,
-                key: `Meaning: ${dw.meaning || 'Accurate definition'} (Part of Speech: ${dw.pos || 'N/A'})`,
+                key: dw.meaning ? `Meaning: ${dw.meaning}${dw.pos ? ` (Part of Speech: ${dw.pos})` : ''}` : '',
                 chapter: chTitle,
                 topic: "Vocabulary & Glossary",
                 source: "exercise",
@@ -12523,7 +12619,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
           result.push({
             id: `comp-sq-${cIdx}-${sIdx}`,
             q: sq.q || sq.question,
-            key: sq.ans || sq.answer || sq.key || "Detailed textbook concept and solution.",
+            key: sq.ans || sq.answer || sq.key,
             chapter: chTitle,
             topic: ch.name,
             source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
@@ -12580,7 +12676,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
             result.push({
               id: `pak-sq-${u.number || uIdx + 1}-${sIdx}`,
               q: sq.question || sq.q,
-              key: sq.answer || sq.ans || "درست نصابی جواب",
+              key: sq.answer || sq.ans || "",
               chapter: chTitle,
               topic: u.title,
               source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
@@ -12645,7 +12741,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
             result.push({
               id: `isl-sq-${u.number || uIdx + 1}-${sIdx}`,
               q: sq.question || sq.q,
-              key: sq.answer || sq.ans || "درست نصابی جواب",
+              key: sq.answer || sq.ans || "",
               chapter: chTitle,
               topic: u.title,
               source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
@@ -12669,28 +12765,6 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
         }
       });
     }
-  }
-
-  // Fallback: Populate from getCurriculumQuestionsBank if results are sparse
-  if (result.length < 5) {
-    const fb = getCurriculumQuestionsBank(classId, subjectId, paperCreationState.seed || 1);
-    const fbPool = (catId === 'mcqs') ? (fb.mcqs || []) : ((catId === 'lqs') ? (fb.lqs || []) : (fb.sqs || []));
-    fbPool.forEach((q, idx) => {
-      result.push({
-        id: `fb-${catId}-${idx}`,
-        q: q.q || q.question,
-        opts: q.opts || q.options,
-        ans: q.ans !== undefined ? q.ans : 0,
-        exp: q.exp || "Curriculum standard definition",
-        key: q.key || q.answer,
-        subA: q.subA,
-        subB: q.subB,
-        chapter: `General Curriculum ${idx + 1}`,
-        topic: "Core Board Concepts",
-        source: (idx % 2 === 0 ? "exercise" : "slo"),
-        marks: (catId === 'mcqs' ? 1 : (catId === 'lqs' ? 8 : 4))
-      });
-    });
   }
 
   return result;
@@ -12988,9 +13062,9 @@ function renderLiveExamPaperHtml() {
                       <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
                       <span class="pep-q-marks">(${alloc.marksPerQ})</span>
                     </div>
-                    ${paperCreationState.showAnswerKey ? `
+                    ${paperCreationState.showAnswerKey && sq.key ? `
                       <div class="pep-key-note">
-                        <strong>Model Solution / Rubric:</strong> ${sq.key || 'Accurate definition, formula, step-by-step working, or concise translation.'}
+                        <strong>Model Solution / Rubric:</strong> ${sq.key}
                       </div>
                     ` : ''}
                   </div>
@@ -13246,220 +13320,6 @@ function formatQNum(num, style) {
 }
 
 
-// ─── CURRICULUM QUESTIONS BANK ENGINE ────────────
-function getCurriculumQuestionsBank(classId, subjectId, seed) {
-  const clsName = getClassName(classId);
-  // Rich question banks for core subjects
-  if (subjectId.includes("math")) {
-    return {
-      mcqs: [
-        { q: "If A = [[2, 1], [3, 4]], then the determinant |A| is equal to:", opts: ["5", "8", "6", "11"], ans: 0, exp: "det(A) = (2*4) - (1*3) = 8 - 3 = 5." },
-        { q: "The order of a row matrix is always:", opts: ["1 × n", "n × 1", "n × n", "2 × 2"], ans: 0, exp: "A row matrix consists of exactly 1 row and n columns." },
-        { q: "A square matrix A is called singular if:", opts: ["|A| ≠ 0", "|A| = 0", "A = A^t", "A = -A"], ans: 1, exp: "Singular matrix has a determinant of 0." },
-        { q: "The value of log₁₀(1000) is:", opts: ["1", "2", "3", "10"], ans: 2, exp: "10³ = 1000, so log₁₀(1000) = 3." },
-        { q: "In the expression a^x = y, the logarithmic form is:", opts: ["log_a(x) = y", "log_a(y) = x", "log_y(a) = x", "log_x(y) = a"], ans: 1, exp: "By logarithmic definition, base^exponent = argument." },
-        { q: "The degree of polynomial 4x³ + 2x²y² - 5y + 7 is:", opts: ["3", "4", "2", "5"], ans: 1, exp: "The term 2x²y² has degree 2 + 2 = 4." },
-        { q: "The factorized form of a² - b² is:", opts: ["(a - b)²", "(a + b)(a - b)", "a² - 2ab + b²", "(a + b)²"], ans: 1, exp: "Difference of two squares identity: (a+b)(a-b)." },
-        { q: "The LCM of 12x²y and 18xy² is:", opts: ["6xy", "36x²y²", "72x³y³", "18x²y²"], ans: 1, exp: "LCM(12, 18) = 36, and highest powers x², y²." },
-        { q: "The square root of (x + y)² is:", opts: ["±(x + y)", "x² + y²", "x - y", "2(x + y)"], ans: 0, exp: "Principal algebraic square root yields ±(x + y)." },
-        { q: "A linear equation in one variable has the general form:", opts: ["ax² + bx + c = 0", "ax + b = 0 (a ≠ 0)", "ax + by = c", "x³ + a = 0"], ans: 1, exp: "First-degree polynomial equation with a single variable." },
-        { q: "The point (-3, 4) lies in which quadrant of Cartesian plane?", opts: ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"], ans: 1, exp: "x is negative and y is positive in Quadrant II." },
-        { q: "The distance between points (0, 0) and (3, 4) is:", opts: ["7 units", "5 units", "1 unit", "25 units"], ans: 1, exp: "d = √(3² + 4²) = √(9 + 16) = √25 = 5." },
-        { q: "Two lines are perpendicular if the product of their slopes is:", opts: ["1", "-1", "0", "Undefined"], ans: 1, exp: "m1 * m2 = -1 indicates perpendicularity." },
-        { q: "The sum of interior angles of a triangle is always:", opts: ["90°", "180°", "270°", "360°"], ans: 1, exp: "Fundamental Euclidean geometric theorem." },
-        { q: "In a right-angled triangle, Pythagoras theorem states that:", opts: ["a² = b² + c²", "Hypotenuse² = Base² + Perp²", "a + b = c", "Base = Perp"], ans: 1, exp: "Square on hypotenuse equals sum of squares on other two sides." }
-      ],
-      sqs: [
-        { q: "Define Transpose of a Matrix with an example.", key: "Interchanging rows into columns. For A = [[1, 2], [3, 4]], A^t = [[1, 3], [2, 4]]." },
-        { q: "If A = [[3, -1], [2, 4]], find the Multiplicative Inverse A⁻¹.", key: "|A| = 12 - (-2) = 14. Adj(A) = [[4, 1], [-2, 3]]. A⁻¹ = Adj(A)/|A|." },
-        { q: "Solve the system using Cramer's Rule: 2x - y = 5 and 3x + 2y = 11.", key: "Find det D, D_x, D_y. Compute x = D_x/D and y = D_y/D." },
-        { q: "State the four fundamental Laws of Logarithms.", key: "log(xy) = log x + log y; log(x/y) = log x - log y; log(x^n) = n log x; change of base." },
-        { q: "Evaluate using log tables: (3.812 × 46.5) / 8.92.", key: "Apply log, find characteristics and mantissas, subtract denominator log, take antilog." },
-        { q: "If x + 1/x = 3, find the numerical value of x² + 1/x².", key: "Squaring both sides: (x + 1/x)² = 9 => x² + 2 + 1/x² = 9 => x² + 1/x² = 7." },
-        { q: "Factorize completely: 8x³ - 27y³.", key: "Use a³ - b³ identity: (2x - 3y)(4x² + 6xy + 9y²)." },
-        { q: "Find the HCF of 14x³y² and 21x²y⁴ by prime factorization.", key: "Common numerical factor 7; common variable powers x²y²; HCF = 7x²y²." },
-        { q: "Solve the linear equation for x: 3(x - 2) + 4 = 2(x + 5).", key: "3x - 6 + 4 = 2x + 10 => 3x - 2 = 2x + 10 => x = 12." },
-        { q: "Solve and graph the inequality: 2x - 5 < 7 on real number line.", key: "2x < 12 => x < 6. Graph open circle at 6 with arrow pointing left." },
-        { q: "Find the midpoint of the line segment joining P(2, -4) and Q(6, 8).", key: "M = ((x1+x2)/2, (y1+y2)/2) = ((2+6)/2, (-4+8)/2) = (4, 2)." },
-        { q: "State S.A.S (Side-Angle-Side) Congruence Postulate for Triangles.", key: "If two sides and included angle of one triangle are congruent to corresponding parts of another." }
-      ],
-      lqs: [
-        {
-          q: "Matrix Methods & Simultaneous Equations",
-          subA: "Solve the system using Matrix Inversion Method: 4x + 2y = 8 and 3x - y = 1.",
-          subB: "Prove that (AB)⁻¹ = B⁻¹A⁻¹ using A = [[1, 2], [3, 0]] and B = [[2, -1], [1, 3]]."
-        },
-        {
-          q: "Algebraic Formulas & Logarithmic Applications",
-          subA: "Simplify using logarithm laws: (sqrt[5]{31.15} * (1.12)^2) / 8.713.",
-          subB: "If x = 2 + √3, calculate the values of: (i) x + 1/x, (ii) x² + 1/x², and (iii) x³ + 1/x³."
-        },
-        {
-          q: "Polynomials, Remainder Theorem & Factorization",
-          subA: "Use the Factor Theorem to factorize cubic polynomial: P(x) = x³ - 2x² - 5x + 6.",
-          subB: "Find the square root of 4x⁴ + 12x³ + 25x² + 24x + 16 by division method."
-        },
-        {
-          q: "Geometric Theorems & Practical Geometry",
-          subA: "Prove that: 'Any point on the right bisector of a line segment is equidistant from its end points.'",
-          subB: "Construct a triangle ABC with m(AB) = 6cm, m(BC) = 5cm, and m∠B = 60°. Draw its circumcircle and state radius."
-        }
-      ]
-    };
-  }
-
-  if (subjectId.includes("bio")) {
-    return {
-      mcqs: [
-        { q: "Which organelle is responsible for ATP cellular energy production?", opts: ["Ribosome", "Mitochondria", "Golgi Complex", "Nucleolus"], ans: 1, exp: "Mitochondria carry out cellular respiration." },
-        { q: "The basic structural and functional unit of all living organisms is:", opts: ["Tissue", "Cell", "Organ", "Molecule"], ans: 1, exp: "The cell is the basic unit of life." },
-        { q: "Enzymes speed up biochemical reactions by:", opts: ["Increasing temperature", "Lowering activation energy", "Consuming substrates", "Altering pH"], ans: 1, exp: "Enzymes act as biocatalysts by lowering the activation energy barrier." },
-        { q: "The light reactions of photosynthesis take place in the:", opts: ["Stroma", "Thylakoid membranes / Grana", "Outer membrane", "Cytosol"], ans: 1, exp: "Chlorophyll pigments in thylakoids absorb photons." },
-        { q: "The dark reaction (Calvin Cycle) occurs in the:", opts: ["Thylakoid", "Stroma of Chloroplast", "Mitochondria", "Ribosome"], ans: 1, exp: "Enzymes for carbon fixation reside in the stroma." },
-        { q: "Mitosis results in the production of:", opts: ["4 haploid cells", "2 diploid identical daughter cells", "Gametes", "Zygotes"], ans: 1, exp: "Mitosis preserves chromosome number (2n -> 2n)." },
-        { q: "Crossing over occurs during which stage of Meiosis I?", opts: ["Leptotene", "Pachytene", "Diplotene", "Diakinesis"], ans: 1, exp: "Chiasmata and genetic exchange occur in pachytene." },
-        { q: "Which blood group is known as the Universal Recipient?", opts: ["Blood Group O-", "Blood Group AB+", "Blood Group A+", "Blood Group B-"], ans: 1, exp: "AB+ has both A & B antigens and no antibodies." },
-        { q: "The transpiration pull in plants is explained by:", opts: ["Diffusion theory", "Cohesion-Tension theory", "Osmosis", "Capillarity"], ans: 1, exp: "Dixon & Joly's Cohesion-Tension theory." },
-        { q: "A deficiency of Vitamin C in human diet causes:", opts: ["Rickets", "Scurvy", "Night Blindness", "Beriberi"], ans: 1, exp: "Lack of ascorbic acid causes bleeding gums (scurvy)." },
-        { q: "The enzyme Pepsin works best in which environment?", opts: ["Highly acidic (pH 1.5 - 2)", "Neutral (pH 7)", "Basic (pH 8.5)", "Slightly alkaline"], ans: 0, exp: "Stomach HCl provides optimum acidic pH for pepsin." },
-        { q: "Which blood vessels carry oxygenated blood from lungs to the heart?", opts: ["Pulmonary Artery", "Pulmonary Vein", "Aorta", "Vena Cava"], ans: 1, exp: "Pulmonary veins carry oxygen-rich blood into left atrium." },
-        { q: "The movement of molecules from high to low concentration without energy is:", opts: ["Active Transport", "Simple Diffusion", "Endocytosis", "Phagocytosis"], ans: 1, exp: "Passive movement driven by concentration gradient." },
-        { q: "Who proposed the Five Kingdom Classification System?", opts: ["Carolus Linnaeus", "Robert Whittaker", "Aristotle", "Ernst Haeckel"], ans: 1, exp: "Robert Whittaker introduced the 5-kingdom model in 1969." },
-        { q: "Cell wall of fungi is composed of:", opts: ["Cellulose", "Chitin", "Peptidoglycan", "Pectin"], ans: 1, exp: "Fungal cell walls contain tough chitin polymer." }
-      ],
-      sqs: [
-        { q: "Differentiate between Prokaryotic and Eukaryotic cells with two examples.", key: "Prokaryotes lack membrane-bound nucleus (Bacteria); Eukaryotes possess true nucleus (Plant/Animal cells)." },
-        { q: "Explain the Lock and Key model of Enzyme action.", key: "Proposed by Emil Fischer: substrate fits into active site like a specific key into a lock." },
-        { q: "Write down the balanced chemical equation for Aerobic Cellular Respiration.", key: "C6H12O6 + 6O2 -> 6CO2 + 6H2O + Energy (36-38 ATP)." },
-        { q: "State two differences between Mitosis and Meiosis.", key: "Mitosis produces 2 identical diploid cells; Meiosis produces 4 genetically diverse haploid cells." },
-        { q: "Why is Meiosis considered essential for maintaining chromosome constancy?", key: "Reduces chromosome count by half in gametes, restored upon fertilization." },
-        { q: "Define Transpiration and name two environmental factors affecting its rate.", key: "Loss of water vapor from aerial plant parts; affected by temperature, humidity, wind, and light." },
-        { q: "Differentiate between Arteries and Veins.", key: "Arteries carry oxygenated blood away from heart under high pressure; Veins carry blood towards heart with valves." },
-        { q: "What is Atherosclerosis and how does it lead to a heart attack?", key: "Deposition of plaque/cholesterol in coronary arteries, narrowing lumen and causing ischemia." },
-        { q: "Name four major components of Human Blood and state one function of each.", key: "Plasma (transport), RBCs (oxygen carriage), WBCs (immunity), Platelets (blood clotting)." },
-        { q: "Explain the role of Bile juice in human digestive system.", key: "Emulsifies large lipid droplets into fine droplets and neutralizes acidic chyme." },
-        { q: "Define Biodiversity and state its importance in maintaining ecosystem balance.", key: "Variety of living organisms in an ecosystem; ensures food web stability and ecological services." },
-        { q: "What are Binomial Nomenclature rules introduced by Carolus Linnaeus?", key: "Two-part Latin name: Genus capitalized, species lowercase, italicized or underlined." }
-      ],
-      lqs: [
-        {
-          q: "Cellular Structure & Organelles",
-          subA: "Describe the structure and functions of the Cell Membrane according to the Fluid Mosaic Model with a neat labeled diagram.",
-          subB: "Compare and contrast Plant Cells and Animal Cells across four major structural features."
-        },
-        {
-          q: "Bioenergetics & Photosynthesis",
-          subA: "Explain the Light Dependent Reactions of Photosynthesis (Z-Scheme) with electron transport.",
-          subB: "Discuss the process of Glycolysis, Krebs Cycle, and Electron Transport Chain in cellular respiration."
-        },
-        {
-          q: "Human Digestive System",
-          subA: "Describe the mechanical and chemical digestion of food in the Human Stomach and Small Intestine.",
-          subB: "Explain the absorption of nutrients through Intestinal Villi into blood and lymph."
-        },
-        {
-          q: "Cardiovascular System & Circulation",
-          subA: "Explain the external and internal structure of the Human Heart with a labeled diagram, detailing double circulation.",
-          subB: "Describe the mechanism of Opening and Closing of Stomata based on Potassium ion hypothesis."
-        }
-      ]
-    };
-  }
-
-  if (subjectId.includes("phy")) {
-    return {
-      mcqs: [
-        { q: "Which of the following is a base SI quantity?", opts: ["Velocity", "Electric Current", "Force", "Work"], ans: 1, exp: "Ampere (Electric Current) is one of the 7 base SI units." },
-        { q: "The least count of a standard Vernier Calipers is:", opts: ["0.1 cm", "0.01 cm (0.1 mm)", "0.001 cm", "1 mm"], ans: 1, exp: "Vernier least count = 0.1 mm = 0.01 cm." },
-        { q: "A scalar quantity possesses:", opts: ["Magnitude only", "Direction only", "Both magnitude and direction", "Neither"], ans: 0, exp: "Scalars require only numerical magnitude with appropriate unit." },
-        { q: "Newton's First Law of Motion is also known as the Law of:", opts: ["Momentum", "Inertia", "Action and Reaction", "Gravitation"], ans: 1, exp: "Inertia is the tendency of objects to resist changes in velocity." },
-        { q: "The rate of change of momentum of a body is equal to:", opts: ["Velocity", "Acceleration", "Applied Force", "Torque"], ans: 2, exp: "Newton's Second Law: F = dp/dt." },
-        { q: "Centripetal acceleration is directed:", opts: ["Tangent to the circle", "Away from center", "Towards the center of curvature", "Opposite to motion"], ans: 2, exp: "Centripetal means 'center-seeking'." },
-        { q: "The value of gravitational constant G is:", opts: ["9.8 m/s²", "6.673 × 10⁻¹¹ N·m²/kg²", "6.4 × 10⁶ m", "3 × 10⁸ m/s"], ans: 1, exp: "Universal gravitational constant determined by Cavendish." },
-        { q: "The turning effect of a force about an axis is called:", opts: ["Momentum", "Torque / Moment of Force", "Pressure", "Work"], ans: 1, exp: "Torque τ = r × F." },
-        { q: "A body is in complete equilibrium if:", opts: ["ΣF = 0 only", "Στ = 0 only", "Both ΣF = 0 and Στ = 0", "Velocity is zero"], ans: 2, exp: "Both translational and rotational equilibrium conditions must hold." },
-        { q: "Work done is zero when the angle between Force and Displacement is:", opts: ["0°", "45°", "90°", "180°"], ans: 2, exp: "W = F·d·cos(90°) = 0." },
-        { q: "The energy possessed by a body due to its position or height is:", opts: ["Kinetic Energy", "Potential Energy (mgh)", "Thermal Energy", "Chemical Energy"], ans: 1, exp: "Gravitational potential energy Ep = mgh." },
-        { q: "The SI unit of Pressure is:", opts: ["Newton", "Pascal (N/m²)", "Joule", "Watt"], ans: 1, exp: "1 Pascal = 1 N/m²." },
-        { q: "Archimedes' principle explains:", opts: ["Boyle's Law", "Buoyant Upthrust on submerged objects", "Hooke's Law", "Thermal expansion"], ans: 1, exp: "Upthrust equals weight of displaced fluid." },
-        { q: "The clinical thermometer scale generally measures between:", opts: ["0°C to 100°C", "35°C to 42°C", "-10°C to 110°C", "0°F to 212°F"], ans: 1, exp: "Optimized for human body temperature around 37°C." },
-        { q: "Heat transfer through direct molecular collisions without bulk motion is:", opts: ["Conduction", "Convection", "Radiation", "Advection"], ans: 0, exp: "Thermal conduction occurs via lattice vibrations and free electrons in solids." }
-      ],
-      sqs: [
-        { q: "Differentiate between Base Quantities and Derived Quantities with two examples each.", key: "Base quantities are independent (Length, Time); Derived are expressed in terms of base (Force, Velocity)." },
-        { q: "Derive the Second Equation of Motion: S = vit + 1/2 at² using speed-time graph.", key: "Area under speed-time graph equals rectangle area (vit) + triangle area (1/2 * t * at)." },
-        { q: "State Newton's Third Law of Motion and give two daily life examples.", key: "To every action there is an equal and opposite reaction (Walking, Rocket propulsion)." },
-        { q: "Differentiate between Mass and Weight.", key: "Mass is quantity of matter (scalar, kg, constant); Weight is gravitational force (vector, N, variable)." },
-        { q: "State Newton's Law of Universal Gravitation and write its mathematical equation.", key: "F = G(m1*m2)/r²; force is proportional to product of masses and inversely to square of distance." },
-        { q: "Calculate the mass of Earth using Newton's law of gravitation.", key: "g = G*Me/R² => Me = (g*R²)/G ≈ 6.0 × 10²⁴ kg." },
-        { q: "State the two conditions of Equilibrium.", key: "1st Condition: ΣF = 0 (translational); 2nd Condition: Στ = 0 (rotational)." },
-        { q: "Define Kinetic Energy and write its formula.", key: "Energy possessed by a body due to its motion; Ek = 1/2 mv²." },
-        { q: "Define Power and its SI unit (Watt).", key: "Rate of doing work: P = W/t; 1 Watt = 1 Joule per second." },
-        { q: "State Pascal's Law and mention one practical application.", key: "Pressure applied to an enclosed liquid is transmitted undiminished in all directions (Hydraulic Brake/Lift)." },
-        { q: "State Hooke's Law and define Elastic Limit.", key: "Within elastic limit, stress is directly proportional to strain (F = kx)." },
-        { q: "Why is water not suitable as a thermometric liquid?", key: "Irregular thermal expansion, wets glass, high specific heat, transparent meniscus." }
-      ],
-      lqs: [
-        {
-          q: "Kinematics & Graphical Analysis",
-          subA: "Derive the Third Equation of Motion: 2aS = vf² - vi² using a speed-time graph.",
-          subB: "A car starts from rest and acquires a velocity of 20 m/s in 10 s. Find its acceleration and distance covered."
-        },
-        {
-          q: "Dynamics & Momentum Conservation",
-          subA: "State the Law of Conservation of Momentum and prove it for a system of two colliding balls.",
-          subB: "Define Centripetal Force. Derive the expression Fc = (mv²)/r."
-        },
-        {
-          q: "Gravitation & Satellites",
-          subA: "Determine the mass of Earth by considering a body of mass m resting on the Earth's surface.",
-          subB: "What are Artificial Satellites? Derive the mathematical formula for the critical orbital speed of a satellite orbiting close to Earth."
-        },
-        {
-          q: "Work, Energy & Thermal Properties",
-          subA: "Define Work. Prove that Work done equals Change in Kinetic Energy (Work-Energy Theorem).",
-          subB: "Explain anomalous expansion of water between 0°C and 4°C and its biological importance for aquatic marine life."
-        }
-      ]
-    };
-  }
-
-  // General Fallback for other subjects/classes
-  return {
-    mcqs: [
-      { q: `In ${clsName} curriculum, what is the core learning objective of Unit 1?`, opts: ["Fundamental Concepts", "Advanced Proofs", "Historical Context", "Analytical Critique"], ans: 0, exp: "Unit 1 establishes foundational knowledge and terminology." },
-      { q: "Which learning domain emphasizes understanding, application, and synthesis?", opts: ["Cognitive Domain", "Affective Domain", "Psychomotor Domain", "Physical Domain"], ans: 0, exp: "Bloom's cognitive taxonomy governs academic assessment." },
-      { q: "In standard examination marking, clarity and step-by-step reasoning receive:", opts: ["Zero weightage", "Proportional step marks", "Deduction", "Bonus only"], ans: 1, exp: "KPK Board marking keys award step marks for methodical execution." },
-      { q: "A student learning objective (SLO) framed with 'Calculate' tests which cognitive level?", opts: ["Knowledge", "Comprehension", "Application", "Evaluation"], ans: 2, exp: "Calculation requires applying principles to specific numerical problems." },
-      { q: "The official textbook curriculum is compiled and vetted by:", opts: ["Federal Directorate", "DCTE & KPK Textbook Board Peshawar", "Local Printing Press", "Independent Tutors"], ans: 1, exp: "Official KPK Board syllabi are published by Khyber Pakhtunkhwa Textbook Board." },
-      { q: "The primary purpose of Section A objective questions is to assess:", opts: ["Handwriting speed", "Broad syllabus coverage and concept precision", "Essay organization", "Memorization of paragraphs"], ans: 1, exp: "MCQs ensure wide sampling of core concepts across all units." },
-      { q: "In examination rubrics, defining a scientific law requires:", opts: ["Verbatim statement and formula", "Personal opinion", "Historical date only", "Rough estimation"], ans: 0, exp: "Formal definition along with mathematical relation is mandatory." },
-      { q: "Short Answer Questions in Section B generally require:", opts: ["1 word", "3 to 4 concise points with reasoning", "10 pages", "Diagram without labels"], ans: 1, exp: "SQs focus on concise, accurate answers of 3-5 lines or steps." },
-      { q: "Long questions in Section C assess a student's ability to:", opts: ["Guess choices", "Synthesize, derive, and analyze topics in depth", "Write illegibly", "Skip numericals"], ans: 1, exp: "Detailed descriptive questions evaluate comprehensive mastery." },
-      { q: "Effective revision strategies include:", opts: ["Solving past papers and model drills", "Rote learning without understanding", "Skipping difficult units", "Ignoring formulas"], ans: 0, exp: "Past papers and active recall yield maximum retention." }
-    ],
-    sqs: [
-      { q: `Explain the key concepts of Chapter 1 in ${clsName} syllabus.`, key: "Define core principles, state governing laws, and cite appropriate practical examples." },
-      { q: "Differentiate between theoretical concepts and practical applications.", key: "Theory describes principles; practical applications show real-world utilization." },
-      { q: "What are the common errors students make in board examinations and how can they be avoided?", key: "Misreading question instructions, skipping units, poor time management." },
-      { q: "Explain the importance of diagrams and graphs in presenting answers.", key: "Visual representation clarifies concepts and secures full examiner marks." },
-      { q: "State three main points regarding the historical background or discovery of the subject matter.", key: "Scientist/scholar name, era, and core breakthrough." },
-      { q: "Explain the role of units and dimensions in mathematical and scientific answers.", key: "Answers without SI units lose 0.5 to 1 mark." }
-    ],
-    lqs: [
-      {
-        q: "Comprehensive Subject Synthesis",
-        subA: "Discuss the fundamental principles of the subject in detail with appropriate derivations and diagrams.",
-        subB: "Apply the learned concepts to solve a practical real-life scenario or numerical exercise."
-      },
-      {
-        q: "Critical Analysis & Comparative Study",
-        subA: "Critically analyze the two dominant theories in the curriculum and evaluate their strengths and limitations.",
-        subB: "Draw a detailed flowchart or labeled schematic summarizing the entire operational process."
-      }
-    ]
-  };
-}
 
 // ─────────────────────────────────────────
 //  TEXTBOOKS & BOOKS LIBRARY VIEW
