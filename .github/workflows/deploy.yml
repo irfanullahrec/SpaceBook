@@ -56,20 +56,6 @@ jobs:
             "db_pass" => getenv("DB_PASSWORD"), "db_port" => 3306], true) . ";\n";' > "SpaceBook Web/api/config.php"
           php -l "SpaceBook Web/api/config.php"
 
-      # temporary: show where the FTP login lands (folder names only) so FTP_DIR can be set right
-      - name: Show FTP layout
-        continue-on-error: true
-        env:
-          FTP_SERVER: ${{ vars.FTP_SERVER || 'wantuch.pk' }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        run: |
-          echo "FTP user: ${FTP_USERNAME%%@*}@..."
-          for d in "" "public_html/" "public_html/spacebook/" "spacebook/"; do
-            echo "== /$d"
-            curl -s --ssl-reqd -k --list-only -m 30 -u "$FTP_USERNAME:$FTP_PASSWORD" "ftp://$FTP_SERVER/$d" | head -40 || echo "(none)"
-          done
-
       - name: Upload to wantuch.pk
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
