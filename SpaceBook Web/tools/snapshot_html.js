@@ -1,7 +1,7 @@
 'use strict';
 /* HTML snapshot baseline (no browser). For every class x subject x chapter x tab, renders the tab in the app
  * sandbox and stores the tab labels in order plus a hash of the rendered HTML (whitespace-normalised).
- *   node --max-old-space-size=8192 tools/snapshot_html.js [--out tests/baseline/html-2026-10-19] [--only cls9,cls12-phy]
+ *   node --max-old-space-size=8192 tools/snapshot_html.js [--out tests/baseline/html-2026-10-20] [--only cls9,cls12-phy]
  *   node tools/snapshot_html.js --compare <dirA> <dirB>      lists every chapter/tab whose labels or hash differ
  * This checks generated markup, not layout, fonts or what add-on scripts do to the live DOM afterwards: it
  * complements, and does not replace, the Playwright baseline (tests/baseline/run.js). Dev-only. */

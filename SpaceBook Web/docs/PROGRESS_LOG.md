@@ -243,3 +243,22 @@ Not verified: any of the UI in a real browser (jsdom is not a browser: no layout
 Owner decisions still open (none blocks the code): password-reset channel (WhatsApp OTP provider or admin-assisted) — no reset exists yet; where off-site copies of the backups go; the final wording/design of the consent dialog.
 
 Phase 2 summary: migrations 001-005, auth hardening, device tokens, v2 sync (push + pull), plans/test-prep/rewards on the outbox, account management, consent, backups. Everything client-side is OFF by default (`localStorage sb_sync_v2` = `on` or `window.SB_FLAGS.syncV2`); v1 endpoints are unchanged except for the shared reward limits and change logging. Turning the flag on for everyone is the owner's release decision: do it after the browser checks above and after the first live deploy (which runs migrations 002-005 on the live database; take a dump first).
+
+## 2026-10-20 — Phase 3, part 1: lazy book data, and the corrected HTML baseline (branch phase/p2-server)
+Done:
+- Lazy loading of large book data (PERF-01), nothing in `index.html` changed: `js/core/lazy.js` (forwarding stand-ins that load a data file on first use), `tools/build/make_lazy.js` (generates `lazy.html` + `content/lazy_manifest.json`, `--check` for CI), eager list and 15 overlay scripts in `tools/build/*.json`, measurement and parity tools. 129 of 261 scripts (289 MB) are lazy. Measured in the Node sandbox: ready 7.2-7.5 s -> 1.8 s, heap 1,063 MB -> 241 MB, 0 lazy files loaded at start. Design, rules and limits: `docs/PHASE3_LAZY_LOADING.md`.
+- The HTML snapshot tool had a fidelity hole (found while checking order dependence): it hashed stale content for the five Maths subjects (their own view, `selectMathChapter`) and skipped the 12 chapterless pre-school pages. `tools/snapshot_html.js` now follows the three real views, blanks the content element before every tab, starts each render from the `state` values at load (sticky sub-selections, listed by the new `tools/stateleak.js`: finding ARCH-02), and renames per-render random ids (sb_mcq, ids inside Maths diagrams, class prefix of shared-book answer ids) by first appearance. Baseline regenerated: `tests/baseline/html-2026-10-20` (old `html-2026-10-19` removed).
+
+Verified by (clean checkout of the committed state, `git worktree` sparse):
+- Snapshot of the eager page: 147 subjects, 1,843 chapters, 9,710 tab renders, 0 step errors. Forward vs reverse subject order on the eager page: 0 differences (before the fixes: 190; with the first tool version 1,522).
+- `node tools/build/lazy_parity.js` and `--reverse`: eager page vs `lazy.html`, 9,710 renders each, 0 differences in both orders; 115 of 129 lazy files had been loaded by the end of the run, 282 of 288 MB.
+- Working tree vs the new baseline: only the 20 `cls1-eng` renders differ (uncommitted edits by another session, not mine).
+- Earlier in this phase: smoke 251/0 on `lazy.html`; validate 973/0 (Contract C locks the `CLSn_BOOKS` keys); `make_lazy.js --check` clean.
+
+Not verified: any of it in a real browser (Chrome cannot run here: the Proxy stand-ins and synchronous requests follow the spec but were only exercised in the Node sandbox); load times on a phone; compression and cache headers (not done); the generated `lazy.html` on the live host (it is deployed beside `index.html` but nothing links to it).
+
+Regressions: none known. `index.html` is untouched by this phase (the committed one still loads everything).
+
+Risks: the lazy page blocks the page for one synchronous transfer + parse the first time a book is touched (about 1 s for the 20 MB Class 12 Physics file here); features that scan every book (global search, word statistics, Papers) still load them all. The 79 data-like files that stay eager (about 40 MB: legacy `DATA` extenders, Class 11, `urdu_data.js`, `math_*_data.js`) are not lazy yet. ARCH-02 stays open: the sticky `state` keys are only neutralised in the test tool, not in the app.
+
+Next: make the remaining eager data lazy one subject group at a time with the same parity proof; JSON Schema + validator for Book Content Contract v1; one-command generation of manifest/search index/MCQ bank/study index; registry-driven `openSubject`; then the cut-over decision (owner) described in `docs/PHASE3_LAZY_LOADING.md`.
