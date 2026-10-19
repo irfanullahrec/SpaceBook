@@ -119,12 +119,19 @@
     if (first) first.focus();
   }
 
+  // keyboard: Tab stays in the dialog, Escape closes it, the focus goes back to what opened it (js/core/a11y.js)
+  let releaseAuth = null;
   function open(tab) {
     modal().hidden = false;
+    if (releaseAuth) releaseAuth();
+    releaseAuth = window.SBA11y ? window.SBA11y.trap(modal(), { onClose: close }) : null;
     showTab(tab || 'login');
   }
 
-  function close() { modal().hidden = true; }
+  function close() {
+    modal().hidden = true;
+    if (releaseAuth) { releaseAuth(); releaseAuth = null; }
+  }
 
   function closeMenu() {
     const menu = document.getElementById('authMenu');
@@ -161,7 +168,11 @@
     return r;
   }
 
-  function closeAccount() { const m = document.getElementById('accountModal'); if (m) m.remove(); }
+  let releaseAccount = null;
+  function closeAccount() {
+    const m = document.getElementById('accountModal'); if (m) m.remove();
+    if (releaseAccount) { releaseAccount(); releaseAccount = null; }
+  }
   function openAccount() {
     if (!currentUser) { open('login'); return; }
     closeAccount();
@@ -205,6 +216,7 @@
         </details>
       </div>`;
     document.body.appendChild(wrap);
+    if (window.SBA11y) releaseAccount = window.SBA11y.trap(wrap, { onClose: closeAccount });
     wrap.addEventListener('click', e => { if (e.target === wrap) closeAccount(); });
     wrap.querySelector('.auth-close').addEventListener('click', closeAccount);
     wrap.querySelectorAll('form').forEach(form => form.addEventListener('submit', async e => {

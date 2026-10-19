@@ -216,9 +216,10 @@
     doc.body.appendChild(overlay);
     panel = overlay;
     const q = s => overlay.querySelector(s);
-    const close = () => { if (ctl) ctl.abort(); overlay.remove(); panel = null; doc.removeEventListener('keydown', onKey); };
+    let release = null;                              // SBA11y.trap: Tab stays in the panel, Escape closes it, the focus goes back to the button that opened it
+    const close = () => { if (ctl) ctl.abort(); overlay.remove(); panel = null; doc.removeEventListener('keydown', onKey); if (release) { release(); release = null; } };
     const onKey = e => { if (e.key === 'Escape') close(); };
-    doc.addEventListener('keydown', onKey);
+    if (win.SBA11y) release = win.SBA11y.trap(overlay, { onClose: close }); else doc.addEventListener('keydown', onKey);
     q('.sb-off-close').addEventListener('click', close);
     overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
     let ctl = null, map;

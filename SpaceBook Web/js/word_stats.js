@@ -650,6 +650,7 @@
     btn.innerHTML = '📊 Word Stats';
     btn.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); openSubjectStats(subj); }, true);
     found.bar.appendChild(btn);
+    if (window.SBA11y) window.SBA11y.enhance(found.bar);     // it is part of the tab bar for keyboard and screen-reader users
   }
 
   function openSubjectStats(subj) {
