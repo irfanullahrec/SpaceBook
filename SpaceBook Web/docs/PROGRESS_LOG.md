@@ -312,3 +312,10 @@ Not verified: the `.htaccess` template on the host (cannot be tested here), comp
 Regressions: none known. Risk: every JS change now makes `lazy.html` stale, so a commit that touches any script must include the output of `tools/build/all.js` or CI fails; this is by design (derived files always current) but changes the contributors' routine (documented in CONTRIBUTING section 3).
 
 Next: Book Content Contract v1 (schema, validator, adapters with per-book count reports), registry-driven `openSubject`/chapter lookup, the Class 10 English chain.
+
+## 2026-10-20 — Phase 3: status summary and what is carried forward
+Done in Phase 3: lazy loading of 153 book files (347 MB) with parity proof (9,710 renders, both orders), ARCH-02 fixed with a matrix test, the HTML baseline rebuilt and made order-independent, one build command with a CI staleness check (word stats, MCQ bank, study index without a browser, lazy page), content-hash URLs, a server template for compression/caching, the stale study index (DATA-02) regenerated.
+
+Measured against the phase's acceptance criteria (Node sandbox; no real browser): initial transfer 1.6 MB gzip (<= 3 MB) met; DOMContentLoaded-equivalent 0.18-0.29 s (<= 2 s) met; heap after home 21 MB (<= 80 MB) met; all subjects parity-green met; derived files always current (CI) met; **no eval in content lookup: not met** (4 lookups in `class11_study_views.js`, `class12_exercise_banks.js`, `universal_translate.js`, plus the loader's own indirect eval).
+
+Carried forward, with the reason: Book Content Contract v1 (schema, validator, adapters, per-book count reports), `SB.content.getBook`, registry-driven `openSubject`/chapter lookup, the remaining 67 `state.selectedClass` tests in `app.js`, the eval lookups. They are a consumer migration across 147 subjects whose payoff is the render core (Phase 5) and the multilingual engine (Phase 7); doing them now would move every consumer twice. Phase 4 (offline) starts from the lazy manifest instead, which already gives hashed, cacheable book packages.

@@ -13,7 +13,7 @@
 | `tools/build/measure_lazy.js`, `inventory.js`, `probe_files.js` | Measurement: what loads at start-up and per subject; what every script defines; which files run alone. |
 | `tools/build/lazy_parity.js` | Proof: renders every chapter and tab of every subject on both pages in one run and compares. |
 
-**How it works.** A file is lazy when it runs alone in an empty context (with an empty `DATA` registry) and carries data: an array/object global, a key of a shared book container, or a key it adds to `DATA`. Files that only hold behaviour (readers, wrappers; objects holding functions unless the file is a `*_data.js`) stay eager. 152 files, 344 MB qualify.
+**How it works.** A file is lazy when it runs alone in an empty context (with an empty `DATA` registry) and carries data: an array/object global, a key of a shared book container, or a key it adds to `DATA`. Files that only hold behaviour (readers, wrappers; objects holding functions unless the file is a `*_data.js`) stay eager. 153 files, 347 MB qualify.
 - A global array/object (`ENGLISH_12_DATA`, `MATH_2_DATA`...) becomes a forwarding `Proxy`. `typeof X`, `Array.isArray(X)`, `'X' in window` do not load anything (the code is full of `typeof X !== 'undefined'` checks); the first real use does (`X.length`, `X[0]`, `for..of`, `JSON.stringify`...), after which the stand-in is replaced by the real value.
 - A book in `CLSn_BOOKS` (`CLS2_BOOKS.math`) is an accessor on the pre-created container: reading it loads the file; `Object.keys(CLS2_BOOKS)` lists every book without loading.
 - A book in `CLASS11_BOOKS` (the Class 11 registry) is handled the same way.
@@ -25,14 +25,15 @@
 
 | | eager `index.html` | lazy `lazy.html` |
 |---|---|---|
-| scripts in the page | 262 | 64 |
-| ready | 7.5 s | 0.23-0.29 s |
+| scripts in the page | 262 | 61 |
+| ready | 7.5 s | 0.18-0.29 s |
 | heap after load | 1,063 MB | 21 MB |
-| lazy files loaded at start | - | 0 of 152 |
+| lazy files loaded at start | - | 0 of 153 |
+| transferred at start (66 files: 61 scripts, stylesheets, KaTeX) | 358 MB | 6.1 MB raw, 1.6 MB gzip, 1.4 MB brotli |
 | open Class 9 Biology | 207 ms (heap 1,066 MB) | 113 ms (heap 28 MB) |
 | open Class 12 Physics (18 MB file) | 1.3 s (heap 1,077 MB) | 1.4 s (heap 60 MB, includes loading the file) |
 
-Targets of the phase: initial JS transfer <= 3 MB compressed, DOMContentLoaded <= 2 s, heap after home <= 80 MB. The scripts left in the lazy page add up to about 12 MB uncompressed (`app.js` 1.4 MB, the English 10 chain 3.1 MB, small behaviour files); compressed that should be well under 3 MB but has not been measured (it needs the server compression below), and the heap figures are the Node sandbox's (no real DOM, fonts or images): the browser has to confirm both.
+Targets of the phase: initial JS transfer <= 3 MB compressed (met: 1.6 MB with gzip level 6, measured by compressing the files the page requests at start), DOMContentLoaded <= 2 s and heap after home <= 80 MB (both met in the Node sandbox, which has no real DOM, fonts or images: a real browser has to confirm them, and the server must actually compress, `docs/SERVER_CONFIG.md`).
 
 **Parity (the safety net).** Run from a clean checkout of the committed state (`git worktree`, sparse): all 147 subjects, 1,843 chapters (generic reader, Maths view and the 12 chapterless pages), 9,710 tab renders, hashed rendered HTML: lazy = eager, 0 differences, in forward and in reverse subject order; the eager page also equals `tests/baseline/html-2026-10-20`. The whole smoke suite (251 checks incl. global search and MCQ flows) passes on the lazy page (`SB_PAGE=lazy.html node tools/smoke.js`). An earlier version of the snapshot tool hashed stale content for the five Maths subjects and skipped the chapterless pages; it was rewritten (`tools/snapshot_html.js`) and the baseline regenerated (`tests/baseline/html-2026-10-20`), so the parity above is the corrected measurement.
 
@@ -55,7 +56,9 @@ Bugs this caught while building (each is now a rule in the build):
 
 **Not done / limits.**
 - `index.html` still loads everything. Switching production to the lazy page is a release decision (below); the file is deployed beside it as `lazy.html` so it can be tried in a real browser first.
-- What stays eager (47 files, 5.6 MB): `app.js`, the small behaviour files, and the Class 10 English chain (`data_eng.js`, `english_10_data.js`, `english_10_source_review.js`, 3.1 MB). `english_10_data.js` defines `ENGLISH_10_DATA` and also overwrites `DATA.eng10Chapters`, which `data_eng.js` sets too, so the load order decides the final value and neither can be an independent lazy file; they need to become one parent with an overlay, with the same parity proof.
+- What stays eager (54 files, about 2.5 MB): `app.js` (1.4 MB), `katex`, and small behaviour files (readers, `sb_*`). Two files that set the same `DATA` key (the Class 10 English chain: `data_eng.js`, then `english_10_data.js`, which overwrites `eng10Chapters`) form one unit: the later one runs right after the earlier one, so the final value is the same as in the normal page.
+- `js/core/lazy.js` loads files with a synchronous request and indirect `eval`. A Content-Security-Policy without `'unsafe-eval'` (Phase 8) needs asynchronous pre-loading (`openSubject` awaits the files of the subject, then renders) and script injection instead; the call sites do not change, only the loader.
+- Not started (carried forward, to be done together with the render-core migration of Phase 5 so consumers move once): the Book Content Contract v1 JSON Schema, validator and adapters with per-book count reports; `SB.content.getBook`; the registry-driven `openSubject`/chapter lookup (the if-chains and the 4 `eval` content lookups are still there; ARCH-02 is fixed in the existing function); the remaining `state.selectedClass` tests in `app.js`.
 - Synchronous requests: the first use of a book blocks the page for the transfer + parse (a 20 MB file ~1 s on this machine). They are same-origin, once per file, and become cache hits once the service worker of Phase 4 exists. A spinner on `openSubject` (asynchronous pre-load) is possible later without changing call sites.
 - Not tested in a real browser (Chrome could not run here): proxy behaviour is spec-defined and the same in V8, but only the Node sandbox was used. Features that scan every book (global search, word statistics, Papers) still work (they touch the books, which loads them: smoke tests cover search and MCQs) but are not faster.
 - Manifest hashes are recorded (`sha256`) for the signed-package work of Phase 8; nothing verifies them yet.
