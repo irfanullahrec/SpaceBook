@@ -67,6 +67,8 @@ jobs:
           local-dir: ./SpaceBook Web/
           server-dir: ${{ vars.FTP_DIR || './' }}
           timeout: 600000
+          # new name forces one full re-upload: the old state file no longer matched the files on the server
+          state-name: .ftp-deploy-sync-state-v2.json
           # only the site goes up: pipelines, docs and dev files stay in the repository
           exclude: |
             **/.git*
