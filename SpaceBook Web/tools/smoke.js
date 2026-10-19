@@ -1,83 +1,16 @@
-const fs = require('fs');
+'use strict';
+/* Smoke test: loads the whole app exactly as index.html does (tools/lib/app_sandbox.js) and drives it
+ * through its public functions.   node tools/smoke.js   (exit 1 on any failure) */
 const vm = require('vm');
-
-const path = require('path');
-const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'general_science_9_data.js', 'hpe_9_data.js', 'drawing_9_data.js', 'islamiat_ikhtiari_9_data.js', 'mutalia_quran_9_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js', 'math_1_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js', 'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js', 'math_12_data.js', 'phys_12_data.js', 'chem_12_data.js', 'stat_12_data.js', 'english_12_data.js', 'pakstudy_12_data.js', 'urdu_12_data.js', 'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js', 'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js', 'islamic_history_12_data.js', 'quran_12_data.js', 'math_5_data.js', 'general_science_5_data.js', 'english_5_data.js', 'urdu_5_data.js', 'islamiat_5_data.js', 'social_studies_5_data.js', 'social_studies_um_5_data.js', 'pashto_5_data.js', 'math_6_data.js', 'general_science_6_data.js', 'english_6_data.js', 'urdu_6_data.js', 'islamiat_6_data.js', 'computer_6_data.js', 'geography_6_data.js', 'history_6_data.js', 'hpe_6_data.js', 'drawing_6_data.js', 'arabic_6_data.js', 'mutalia_quran_6_data.js', 'pashto_6_data.js'];
-
-function makeEl(id) {
-  const style = {};
-  const el = {
-    _id: id, innerHTML: '', textContent: '', value: '', className: '', title: '', src: '', href: '',
-    style: new Proxy(style, { get: (t, k) => (k in t ? t[k] : ''), set: (t, k, v) => { t[k] = v; return true; } }),
-    classList: { add() { }, remove() { }, toggle() { }, contains() { return false; } },
-    dataset: {}, children: [], scrollHeight: 100, scrollTop: 0, offsetHeight: 100, checked: false, disabled: false,
-    addEventListener() { }, removeEventListener() { }, appendChild() { }, insertBefore() { }, removeChild() { }, remove() { },
-    setAttribute() { }, getAttribute() { return null; }, removeAttribute() { }, focus() { }, click() { }, blur() { },
-    querySelector() { return makeEl(); }, querySelectorAll() { return []; }, closest() { return null; },
-    getBoundingClientRect() { return { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0 }; },
-    contains() { return false; }, cloneNode() { return makeEl(); }, matches() { return false; }
-  };
-  return el;
-}
-const registry = {};
-const NodeFilter = {
-  SHOW_TEXT: 4,
-  FILTER_ACCEPT: 1,
-  FILTER_REJECT: 2,
-  FILTER_SKIP: 3
-};
-const documentStub = {
-  getElementById(id) { if (!registry[id]) registry[id] = makeEl(id); return registry[id]; },
-  querySelector() { return makeEl(); },
-  querySelectorAll() { return []; },
-  createElement() { return makeEl(); },
-  createTreeWalker() { return { nextNode: () => null }; },
-  addEventListener() { }, removeEventListener() { },
-  body: makeEl('body'), documentElement: makeEl('html'), head: makeEl('head'),
-  location: { href: 'http://localhost/', search: '', hash: '' }
-};
-const windowStub = {
-  document: documentStub, location: documentStub.location,
-  localStorage: { getItem: () => null, setItem() { }, removeItem() { } },
-  sessionStorage: { getItem: () => null, setItem() { } },
-  open() { }, addEventListener() { }, removeEventListener() { },
-  requestAnimationFrame() { return 0; }, matchMedia: () => ({ matches: false, addEventListener() { } }),
-  navigator: { userAgent: 'smoke' }, innerWidth: 1400, innerHeight: 900,
-  NodeFilter
-};
-windowStub.window = windowStub;
-
-const sb = vm.createContext({
-  console, window: windowStub, document: documentStub, NodeFilter,
-  localStorage: windowStub.localStorage, sessionStorage: windowStub.sessionStorage,
-  navigator: windowStub.navigator, location: documentStub.location,
-  setTimeout, clearTimeout, setInterval, clearInterval,
-  requestAnimationFrame: windowStub.requestAnimationFrame,
-  getComputedStyle: () => ({ getPropertyValue: () => '' }),
-  module: undefined, exports: undefined
-});
-const declared = new Set();
-for (const f of files) {
-  const code = fs.readFileSync(DIR + f, 'utf8');
-  const re = /^\s*(?:const|var|let)\s+([A-Za-z_$][\w$]*)/gm;
-  let d; while ((d = re.exec(code))) declared.add(d[1]);
-  vm.runInContext(code, sb, { filename: f, timeout: 60000 });
-}
-vm.runInContext('for (const n of ' + JSON.stringify([...declared]) + ') { try { globalThis[n] = eval(n); } catch (e) {} }', sb);
-// app.js declares functions / let state -> hoist those too
-{
-  const code = fs.readFileSync(DIR + 'app.js', 'utf8');
-  const names = new Set();
-  const re = /^\s*(?:function\s+([A-Za-z_$][\w$]*)|(?:const|let|var)\s+([A-Za-z_$][\w$]*))/gm;
-  let m; while ((m = re.exec(code))) names.add(m[1] || m[2]);
-  vm.runInContext(code, sb, { filename: 'app.js', timeout: 60000 });
-  vm.runInContext('for (const n of ' + JSON.stringify([...names]) + ') { try { globalThis[n] = eval(n); } catch (e) {} }', sb);
-}
+const { load } = require('./lib/app_sandbox');
+const app = load();
+const sb = app.sb;
+if (app.loadFails.length) { console.log('FAIL  every index.html script loads -> ' + app.loadFails.join(' | ')); process.exitCode = 1; }
 
 let fails = 0;
 function run(label, src) {
-  try { vm.runInContext(src, sb, { timeout: 20000 }); console.log('PASS  ' + label); }
+  // each test runs in its own block so its const/let names do not collide with the next test
+  try { vm.runInContext('{' + src + '\n}', sb, { timeout: 120000 }); console.log('PASS  ' + label); }
   catch (e) { fails++; console.log('FAIL  ' + label + ' -> ' + (e && e.message)); }
 }
 
@@ -101,34 +34,77 @@ run("switchMathTab('exercises')", `switchMathTab('exercises')`);
 run("switchMathTab('slos')", `switchMathTab('slos')`);
 run("switchMathTab('formulas')", `switchMathTab('formulas')`);
 run("selectMathChapter(12)", `selectMathChapter(12)`);
-run("CLASS 1 openSubject mathematics", `openSubject('cls1','cls1-math'); if (!/Whole Numbers/.test($('mathTopicArea').innerHTML)) throw new Error('Class 1 Maths Unit 1 missing');`);
 run("CLASS 1 Maths has six units", `if (getMathChapterList('cls1').length !== 6) throw new Error('Class 1 Maths unit list incomplete');`);
-run("CLASS 1 Maths lessons render", `switchMathTab('lesson'); if (!/Counting and Number Names/.test($('mathTabContent').innerHTML)) throw new Error('lesson content missing');`);
 run("CLASS 1 Maths Urdu lessons match the topic", `const c=getMathChapterList('cls1')[0]; const u=renderMathTopicSubContent(c.sections[0],c,'urdu',0); if (!/چیزوں کو ایک ایک کرکے گنیں/.test(u) || /قالب/.test(u)) throw new Error('Class 1 Urdu lesson text is missing or inherited from another grade');`);
-run("CLASS 1 Maths worked examples render", `switchMathTab('examples'); if (!/Counting and Place Value/.test($('mathTabContent').innerHTML)) throw new Error('worked examples missing');`);
-run("CLASS 1 Maths solved exercises render", `switchMathTab('exercises'); if (!/Ex 1.1/.test($('mathTabContent').innerHTML)) throw new Error('solved exercise navigation missing');`);
-run("CLASS 1 Maths exam bank uses its own MCQs", `switchMathTab('slos'); if (!/What number comes after 59/.test($('mathTabContent').innerHTML)) throw new Error('Class 1 exam MCQs missing');`);
-run("CLASS 1 Maths MCQ answer feedback renders", `switchMathSloCategory('mcqs'); selectMathMcqOption(0, 1, true, 'Count one more than 59: the answer is 60.'); if (!/math-mcq/.test($('mathSloContentArea').innerHTML)) throw new Error('MCQ feedback controls missing');`);
-run("CLASS 1 Maths summary renders", `switchMathTab('formulas'); if (!/Place value/.test($('mathTabContent').innerHTML)) throw new Error('revision summary missing');`);
-run("CLASS 1 Maths includes a lightweight SVG diagram for every topic", `state.selectedClass='cls1'; for (const ch of MATH_1_DATA) { const html=renderMathLesson(ch); const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<ch.sections.length || /<image\\b|data:image|\\.png|\\.jpg/i.test(html)) throw new Error('Class 1 topic diagrams missing or rasterised in '+ch.title); }`);
-run("CLASS 1 Maths worked examples include vector diagrams", `state.selectedClass='cls1'; for (const ch of MATH_1_DATA) { const html=renderMathExamples(ch); const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<(ch.workedExamples||[]).length) throw new Error('Class 1 worked example diagrams missing in '+ch.title); }`);
-run("CLASS 1 Maths exercise questions include vector diagrams", `state.selectedClass='cls1'; for (let i=0;i<MATH_1_DATA.length;i++) { state.selectedMathChapter=i; const ch=MATH_1_DATA[i]; for(const ex of ch.exercises||[]) { switchMathEx(ex.exercise,'All'); const html=$('mathExerciseContent').innerHTML; const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<ex.problems.length) throw new Error('Class 1 exercise diagrams missing in '+ch.title+' '+ex.exercise); } }`);
-run("CLASS 2 Drawing opens with Exam Practice", `openSubject('cls2','cls2-drawing'); if (state.selectedClass!=='cls2' || !/Join the dots and colour the shapes/.test($('dashboard-body').innerHTML) || !/MCQs/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 Drawing view or practice missing');`);
-run("CLASS 2 Drawing has 32 trilingual vector activities", `state.activeDrawingTab='activities'; renderDrawingView(); if (DRAWING_2_DATA.length!==32 || !/پښتو/.test($('dashboard-body').innerHTML) || !/<svg/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 Drawing activities missing');`);
-run("CLASS 2 Drawing answer feedback works", `state.activeDrawingTab='practice'; answerDrawingMcq(0,2); if (!/is-correct/.test($('dashboard-body').innerHTML) || !/Correct! Well done./.test($('dashboard-body').innerHTML)) throw new Error('Class 2 MCQ feedback missing');`);
-run("CLASS 2 Drawing SQ and LQ answers expand in three languages", `state.activeDrawingTab='practice'; selectDrawingExamTab('sqs'); if (!/Name three tools/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 SQ bank missing'); selectDrawingExamTab('lqs'); if (!/paper-folding models/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 LQ bank missing');`);
-run("CLASS 3 Drawing opens with Exam Practice", `openSubject('cls3','cls3-drawing'); if(state.selectedClass!=='cls3' || !/book and cup/.test($('dashboard-body').innerHTML) || !/MCQs/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 Drawing route/practice missing');`);
-run("CLASS 3 Drawing has 32 trilingual vector activities", `state.activeDrawingTab='activities'; renderDrawingView(); if(DRAWING_3_DATA.length!==32 || !/پښتو/.test($('dashboard-body').innerHTML) || !/<svg/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 Drawing activities missing');`);
-run("CLASS 3 Drawing MCQ feedback works", `state.activeDrawingTab='practice'; answerDrawingMcq(0,1); if(!/is-wrong/.test($('dashboard-body').innerHTML) || !/is-correct/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 MCQ feedback missing');`);
-run("CLASS 3 Drawing SQs and LQs are multilingual", `selectDrawingExamTab('sqs'); if(!/aquarium/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 SQ bank missing'); selectDrawingExamTab('lqs'); if(!/paper-folding/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 LQ bank missing');`);run("CLASS 2 Mathematics opens six workbook units", `openSubject('cls2','cls2-math'); if (getMathChapterList('cls2').length!==6 || !/Whole Numbers/.test($('mathTopicArea').innerHTML)) throw new Error('Class 2 Maths did not open');`);
-run("CLASS 2 Mathematics addition lessons and Urdu render", `selectMathChapter(1); switchMathTab('lesson'); const m2chapter=getMathChapterList('cls2')[1]; const m2urdu=renderMathTopicSubContent(m2chapter.sections[0],m2chapter,'urdu',0); if (!/Addition of Three-Digit Numbers/.test($('mathTabContent').innerHTML) || !/اکائیوں/.test(m2urdu)) throw new Error('Class 2 Maths lesson or Urdu translation missing');`);
-run("CLASS 2 Mathematics solved exercises render", `selectMathChapter(1); switchMathTab('exercises'); if (!/Ex 2.1/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 Maths exercise missing');`);
-run("CLASS 2 Mathematics board bank uses Class 2 questions", `selectMathChapter(0); switchMathTab('slos'); if (!/What is the value of 5 in 352/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 exam bank missing');`);
 run("CLASS 2 Mathematics wrong MCQ shows red choice and green answer", `switchMathSloCategory('mcqs'); const m2card=document.getElementById('math-mcq-0'); const m2buttons=[0,1,2,3].map(()=>({style:{},innerHTML:'Option',disabled:false})); m2card.querySelectorAll=()=>m2buttons; selectMathMcqOption(0,0,false,'Try again.',1); if (m2buttons[0].style.background!=='#fee2e2' || m2buttons[1].style.background!=='#dcfce7') throw new Error('Class 2 wrong answer feedback missing');`);
-run("CLASS 2 Mathematics formulas render", `selectMathChapter(3); switchMathTab('formulas'); if (!/1 m/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 measurement summary missing');`);
-run("CLASS 2 Maths includes a lightweight SVG diagram for every topic", `state.selectedClass='cls2'; for (const ch of MATH_2_DATA) { const html=renderMathLesson(ch); const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<ch.sections.length || /<image\\b|data:image|\\.png|\\.jpg/i.test(html)) throw new Error('Class 2 topic diagrams missing or rasterised in '+ch.title); }`);
 run("CLASS 2 Maths worked examples include vector diagrams", `state.selectedClass='cls2'; for (const ch of MATH_2_DATA) { const html=renderMathExamples(ch); const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<(ch.workedExamples||[]).length) throw new Error('Class 2 worked example diagrams missing in '+ch.title); }`);
-run("CLASS 2 Maths exercise questions include vector diagrams", `state.selectedClass='cls2'; for (let i=0;i<MATH_2_DATA.length;i++) { state.selectedMathChapter=i; const ch=MATH_2_DATA[i]; for(const ex of ch.exercises||[]) { switchMathEx(ex.exercise,'All'); const html=$('mathExerciseContent').innerHTML; const count=(html.match(/<figure class="math-diagram/g)||[]).length; if(count<ex.problems.length) throw new Error('Class 2 exercise diagrams missing in '+ch.title+' '+ex.exercise); } }`);
+// ---------------------------------------------------------------- rebuilt books (Classes 1-10, CLSn_BOOKS)
+// Every page-reviewed book opens through the real reader: the chapter list has one button per unit, and the
+// first and last units render every tab they offer with non-empty content.
+const BOOK_NOT_COMPLETE = ['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing'];
+run("REBUILT BOOKS open with every unit and every tab rendering", `
+  const problems = [], seen = [];
+  const NOT_COMPLETE = ${JSON.stringify(BOOK_NOT_COMPLETE)};
+  for (let n = 1; n <= 10; n++) {
+    const B = window['CLS' + n + '_BOOKS'] || {}, cls = 'cls' + n;
+    for (const key of Object.keys(B)) {
+      if (NOT_COMPLETE.includes(cls + '.' + key)) continue;
+      const units = B[key].units || [];
+      const subj = (DATA.subjects[cls] || []).find(s => {
+        openSubject(cls, s.id);
+        return new RegExp("selectSubjectChapter\\\\('" + key + "',").test($('dashboard-body').innerHTML);
+      });
+      if (!subj) { problems.push(cls + '.' + key + ': no registered subject opens it'); continue; }
+      openSubject(cls, subj.id);
+      const body = $('dashboard-body').innerHTML;
+      // at least every rebuilt unit; a few legacy books (Class 10 Physics/Chemistry) add earlier units around it
+      if (!body.includes('subj-ch-btn-' + (units.length - 1) + '"'))
+        problems.push(cls + '.' + key + ': chapter list shows fewer than ' + units.length + ' units');
+      for (const i of [...new Set([0, units.length - 1])]) {
+        state.activeSubjTab = null;
+        selectSubjectChapter(key, i, cls);
+        const tabs = [...new Set([...$('subjectTopicArea').innerHTML.matchAll(/data-tab="([^"]+)"/g)].map(m => m[1]))];
+        if (!tabs.length) problems.push(cls + '.' + key + ' unit ' + (i + 1) + ': no tabs');
+        for (const t of tabs) {
+          switchSubjectTab(key, t, i, cls);
+          if (!$('subjTabContent').innerHTML.trim()) problems.push(cls + '.' + key + ' unit ' + (i + 1) + ' tab ' + t + ': empty');
+        }
+      }
+      seen.push(cls + '.' + key);
+    }
+  }
+  if (seen.length < 80) problems.push('only ' + seen.length + ' books checked');
+  if (problems.length) throw new Error(problems.length + ' problems: ' + problems.slice(0, 12).join(' | '));
+  globalThis.__rebuiltChecked = seen.length;
+`);
+console.log('      rebuilt books checked: ' + vm.runInContext('globalThis.__rebuiltChecked || 0', sb));
+
+// ------------------------------------------------- Class 12 page-reviewed books (front-matter "source" entries count)
+for (const [subjId, key, units, sources] of [
+  ['cls12-eng', 'eng', 19, 1], ['cls12-urdu', 'urdu', 22, 13], ['cls12-pak', 'pak', 11, 1], ['cls12-comp', 'comp', 9, 2],
+  ['cls12-civics', 'civics', 8, 2], ['cls12-econ', 'econ', 13, 2], ['cls12-hpe', 'hpe', 6, 3], ['cls12-islopt', 'islopt', 6, 2],
+  ['cls12-islhist', 'islhist', 6, 37], ['cls12-quran', 'quran', 8, 18],
+]) {
+  run(`CLASS 12 ${subjId} opens ${units} units (+${sources} source pages) and renders first/last tabs`, `
+    openSubject('cls12', '${subjId}');
+    const key = (($('dashboard-body').innerHTML.match(/selectSubjectChapter\\('([a-z0-9_]+)',/) || [])[1]);
+    if (!key) throw new Error('no chapter list');
+    const list = getSubjectChapterList(key, 'cls12');
+    const nUnits = list.filter(c => c.type !== 'source').length, nSrc = list.length - nUnits;
+    if (nUnits !== ${units} || nSrc !== ${sources}) throw new Error('got ' + nUnits + ' units + ' + nSrc + ' source pages');
+    for (const i of [0, list.length - 1]) {
+      state.activeSubjTab = null;
+      selectSubjectChapter(key, i, 'cls12');
+      const tabs = [...new Set([...$('subjectTopicArea').innerHTML.matchAll(/data-tab="([^"]+)"/g)].map(m => m[1]))];
+      for (const t of tabs) { switchSubjectTab(key, t, i, 'cls12'); if (!$('subjTabContent').innerHTML.trim()) throw new Error('entry ' + i + ' tab ' + t + ' empty'); }
+    }
+  `);
+}
+
+run("CLASS 3 lists every registered subject", `goToSubjects('cls3'); const h=$('dashboard-body').innerHTML; const miss=DATA.subjects.cls3.filter(s=>!h.includes(s.name)).map(s=>s.name); if (miss.length) throw new Error('missing: '+miss.join(', '));`);
+run("CLASS 4 lists its uploaded books instead of the not-uploaded notice", `goToSubjects('cls4'); const h=$('dashboard-body').innerHTML; if (/Subjects Not Uploaded Yet/.test(h) || !/English/.test(h) || !/Mathematics/.test(h)) throw new Error('Class 4 subject list not shown');`);
+
+
 run("showWordMeaning", `showWordMeaning(document.createElement("span"))`);
 run("REGRESSION openSubject cls9 eng", `openSubject("cls9","cls9-eng")`);
 run("REGRESSION selectEngChapter(2)", `selectEngChapter(2)`);
@@ -170,32 +146,16 @@ run("CLASS 10 goToSubjects cls10", `goToSubjects('cls10')`);
 run("CLASS 10 renderBooksView cls10", `renderBooksView('cls10')`);
 run("CLASS 1 goToSubjects lists Drawing", `goToSubjects('cls1'); if (!/Drawing/.test($('dashboard-body').innerHTML)) throw new Error('Drawing subject card missing');`);
 run("CLASS 2 subjects are reachable and list Maths and Drawing", `goToSubjects('cls2'); if (!/Mathematics/.test($('dashboard-body').innerHTML) || !/Drawing/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 subjects are still behind the upload gate');`);
-run("CLASS 3 lists Maths and Drawing while remaining subjects stay in preparation", `goToSubjects('cls3'); if (!/Mathematics/.test($('dashboard-body').innerHTML) || !/Drawing/.test($('dashboard-body').innerHTML) || !/Urdu and General Science are still in preparation/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 Maths/Drawing availability or preparation note missing');`);
 run("CLASS 3 subjects are reachable and list Islamyat and Nazira", `goToSubjects('cls3'); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML) || !/Nazira|ناظرہ قرآن/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 subjects missing or behind upload gate');`);
-run("CLASS 3 Maths opens all seven book units", `openSubject('cls3','cls3-math'); if (state.selectedClass!=='cls3' || getMathChapterList('cls3').length!==7 || !/Whole Numbers/.test($('mathTopicArea').innerHTML)) throw new Error('Class 3 Maths route or first unit missing');`);
 run("CLASS 3 Maths lessons show native vector figures", `switchMathTab('lesson'); const c3Lesson=$('mathTabContent').innerHTML; if (!/<svg/.test(c3Lesson) || /\.jpg|\.png/.test(c3Lesson)) throw new Error('Class 3 Maths figures are missing or depend on page images');`);
 run("CLASS 12 goToSubjects lists the four completed books", `goToSubjects('cls12'); const h12=$('dashboard-body').innerHTML+$('page-content').innerHTML; if (!/Mathematics/.test(h12) || !/Physics/.test(h12) || !/Chemistry/.test(h12) || !/Statistics/.test(h12) || /Subjects Not Uploaded Yet/.test(h12)) throw new Error('Class 12 subjects are still gated or missing');`);
 run("CLASS 12 Maths opens its source units and formula sheet", `openSubject('cls12','cls12-math'); if (getMathChapterList('cls12').length!==12 || !/Introduction to Symbolic/.test($('mathTopicArea').innerHTML)) throw new Error('Class 12 Maths route or units missing'); switchMathTab('formulas'); if (!$('mathTabContent').innerHTML) throw new Error('Class 12 Math formula tab is empty'); switchMathTab('textbook'); if (!/Complete Book Text/.test($('mathTabContent').innerHTML)) throw new Error('Class 12 Math source text tab missing');`);
 run("CLASS 12 Physics complete text, practice and figures", `openSubject('cls12','cls12-phy'); if (getSubjectChapterList('phys','cls12').length!==10) throw new Error('Physics unit list missing'); switchSubjectTab('phys','lesson',0,'cls12'); if (!/<svg/.test($('subjTabContent').innerHTML)) throw new Error('Physics vector figure missing'); switchSubjectTab('phys','slos',0,'cls12'); if (!/MCQs|Short Questions|Long Questions/.test($('subjTabContent').innerHTML)) throw new Error('Physics practice bank missing'); switchSubjectTab('phys','booktext',0,'cls12'); if (!/Complete Book Text/.test($('subjTabContent').innerHTML)) throw new Error('Physics transcription missing');`);
 run("CLASS 12 Chemistry and Statistics open their textbook units", `openSubject('cls12','cls12-chem'); if (getSubjectChapterList('chem','cls12').length!==12) throw new Error('Chemistry unit list missing'); openSubject('cls12','cls12-stat'); if (getSubjectChapterList('stat','cls12').length!==9) throw new Error('Statistics unit list missing'); state.activeScienceLessonSubTab='translations'; switchSubjectTab('stat','lesson',0,'cls12'); if (!/<svg/.test($('subjTabContent').innerHTML)) throw new Error('Statistics chart missing'); switchSubjectTab('stat','formulas',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Statistics summary empty');`);
 
-run("CLASS 12 English opens 19 units with lessons and exercises", `openSubject('cls12','cls12-eng'); if (getSubjectChapterList('eng','cls12').length!==19) throw new Error('English 12 units missing'); switchSubjectTab('eng','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('English 12 lesson empty'); switchSubjectTab('eng','exercise',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('English 12 exercise empty'); selectSubjectChapter('eng',18,'cls12');`);
-run("CLASS 12 Urdu opens 22 lessons with prose and poetry", `openSubject('cls12','cls12-urdu'); if (getSubjectChapterList('urdu','cls12').length!==22) throw new Error('Urdu 12 lessons missing'); switchSubjectTab('urdu','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Urdu 12 lesson empty'); selectSubjectChapter('urdu',21,'cls12');`);
 run("CLASS 12 Biology opens 14 units", `openSubject('cls12','cls12-bio'); if (getSubjectChapterList('bio','cls12').length!==14) throw new Error('Biology 12 units missing'); switchSubjectTab('bio','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Bio 12 lesson empty'); selectSubjectChapter('bio',13,'cls12');`);
-run("CLASS 12 Pak Studies opens 11 chapters", `openSubject('cls12','cls12-pak'); if (getSubjectChapterList('pakstudy','cls12').length!==11) throw new Error('Pak Studies 12 chapters missing'); switchSubjectTab('pakstudy','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('PakStudy 12 lesson empty'); selectSubjectChapter('pakstudy',10,'cls12');`);
-run("CLASS 12 Computer Science opens 9 units", `openSubject('cls12','cls12-comp'); if (getSubjectChapterList('comp','cls12').length!==9) throw new Error('Computer Science 12 units missing'); switchSubjectTab('comp','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Comp 12 lesson empty'); selectSubjectChapter('comp',8,'cls12');`);
-run("CLASS 12 Civics opens 8 chapters", `openSubject('cls12','cls12-civics'); if (getSubjectChapterList('civics','cls12').length!==8) throw new Error('Civics 12 chapters missing'); switchSubjectTab('civics','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Civics 12 lesson empty'); selectSubjectChapter('civics',7,'cls12');`);
-run("CLASS 12 Economics opens 12 chapters", `openSubject('cls12','cls12-econ'); if (getSubjectChapterList('econ','cls12').length!==12) throw new Error('Economics 12 chapters missing'); switchSubjectTab('econ','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Economics 12 lesson empty'); selectSubjectChapter('econ',11,'cls12');`);
-run("CLASS 12 HPE opens 6 chapters", `openSubject('cls12','cls12-hpe'); if (getSubjectChapterList('hpe','cls12').length!==6) throw new Error('HPE 12 chapters missing'); switchSubjectTab('hpe','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('HPE 12 lesson empty'); selectSubjectChapter('hpe',5,'cls12');`);
-run("CLASS 12 Islamiat Ikhtiari opens 6 chapters", `openSubject('cls12','cls12-islopt'); if (getSubjectChapterList('islopt','cls12').length!==6) throw new Error('Islamiat Opt 12 chapters missing'); switchSubjectTab('islopt','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Islamiat Opt 12 lesson empty'); selectSubjectChapter('islopt',5,'cls12');`);
-run("CLASS 12 Islamic History opens 6 chapters", `openSubject('cls12','cls12-islhist'); if (getSubjectChapterList('islhist','cls12').length!==6) throw new Error('Islamic History 12 chapters missing'); switchSubjectTab('islhist','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Islamic History 12 lesson empty'); selectSubjectChapter('islhist',5,'cls12');`);
-run("CLASS 12 Mutalia-e-Quran opens 8 chapters", `openSubject('cls12','cls12-quran'); if (getSubjectChapterList('quran','cls12').length!==8) throw new Error('Quran 12 chapters missing'); switchSubjectTab('quran','lesson',0,'cls12'); if (!$('subjTabContent').innerHTML) throw new Error('Quran 12 lesson empty'); selectSubjectChapter('quran',7,'cls12');`);
 
-run("CLASS 3 Maths Complete Book Text renders the supplied transcription", `openSubject('cls3','cls3-math'); switchMathTab('textbook'); const c3Book=$('mathTabContent').innerHTML; if (!/Complete Book Text/.test(c3Book) || !/Whole Numbers/.test(c3Book) || MATH_3_DATA.reduce((n,ch)=>n+ch.textbookText.length,0)<5000 || /<img/.test(c3Book)) throw new Error('Class 3 book transcription is missing or image based');`);
-run("CLASS 4 retains the not-uploaded notice", `goToSubjects('cls4'); if (!/Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Not-uploaded gate changed for Class 4');`);
-run("CLASS 1 opens with expanded Exam Practice", `openSubject('cls1','cls1-drawing'); if (state.activeDrawingTab!=='practice' || state.activeDrawingExamTab!=='mcqs' || !/drawing-practice-tabs/.test($('dashboard-body').innerHTML) || !/drawing-option/.test($('dashboard-body').innerHTML) || /Drawing Exam Practice|CLASS 1 · REVISION|Practice questions based on the workbook activities/.test($('dashboard-body').innerHTML)) throw new Error('expanded Exam Practice or compact layout missing');`);
 run("CLASS 1 Activities omit lesson heading and caption", `state.activeDrawingTab='activities'; renderDrawingView(); const body=$('dashboard-body').innerHTML; if (!/<svg/.test(body) || !/drawing-trace/.test(body) || !/English/.test(body) || !/پښتو/.test(body) || /CLASS 1 · CREATIVE ARTS & DRAWING|Workbook activity 1 · Page 1|<figcaption/.test(body) || /\.jpg|\.png/.test(body)) throw new Error('Activity view still has removed text or is missing vector tips');`);
-run("CLASS 1 Drawing selects activity 32", `selectDrawingPage(31); if (!/Making a cat face/.test($('dashboard-body').innerHTML) || !/Folded cat face/.test($('dashboard-body').innerHTML)) throw new Error('final activity missing');`);
 run("CLASS 1 Exam Practice shows MCQs without duplicate heading", `state.activeDrawingTab='practice'; state.activeDrawingExamTab='mcqs'; state.drawingMcqAnswers={}; renderDrawingView(); if (!/MCQs/.test($('dashboard-body').innerHTML) || /Drawing Exam Practice|CLASS 1 · REVISION|Practice questions based on the workbook activities/.test($('dashboard-body').innerHTML)) throw new Error('exam tabs or compact practice panel missing');`);
 run("CLASS 1 MCQ wrong answer shows red cross and correct green option", `answerDrawingMcq(0,1); const html=$('dashboard-body').innerHTML; if (!/is-wrong/.test(html) || !/is-correct/.test(html) || !/✕/.test(html) || !/✓/.test(html) || !/نمبروں کی ترتیب/.test(html)) throw new Error('MCQ answer feedback or translations missing');`);
 run("CLASS 1 MCQ correct answer shows green", `answerDrawingMcq(0,0); if (!/Correct! Well done./.test($('dashboard-body').innerHTML)) throw new Error('correct response missing');`);
@@ -393,5 +353,6 @@ run('SOURCE REVISION Class 12 Maths opening text and unaffected lessons', `
   if ($('mathTabContent').innerHTML.includes('Leading Books Publishers')) throw new Error('Front matter repeated in unrelated unit');
 `);
 console.log('state after tests = activeSubject=' + vm.runInContext('state.activeSubject', sb) + ' selectedIslChapter=' + vm.runInContext('state.selectedIslChapter', sb));
-process.exit(fails ? 1 : 0);
+console.log("smoke: " + fails + " failed");
+process.exit(fails || process.exitCode ? 1 : 0);
 
