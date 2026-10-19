@@ -1,11 +1,12 @@
 # Deploys "SpaceBook Web" to https://wantuch.pk/spacebook on every push to main (or by hand from the Actions tab).
 #
 # Repository secrets (GitHub > Settings > Secrets and variables > Actions > New repository secret):
-#   FTP_USERNAME   FTP account on wantuch.pk whose folder is public_html/spacebook (e.g. spacebook@wantuch.pk)
+#   FTP_USERNAME   FTP account whose home folder IS public_html/spacebook (cPanel > FTP Accounts > Directory column)
 #   FTP_PASSWORD   its password
 #   DB_PASSWORD    password of MySQL user tafseelk_spacebook on wantuch.pk
 # Optional repository variables (same page, "Variables" tab) only if your setup differs:
-#   FTP_SERVER (default wantuch.pk)  FTP_DIR (default ./)  FTP_PROTOCOL (default ftps)
+#   FTP_SERVER (default s26.hosterpk.com: the name on the server's FTPS certificate, same machine as wantuch.pk)
+#   FTP_SECURITY (default strict: the certificate is checked)  FTP_DIR (default ./)  FTP_PROTOCOL (default ftps)
 #   DB_HOST (default localhost)  DB_NAME (default tafseelk_spacebook)  DB_USER (default tafseelk_spacebook)
 #   SITE_URL (default https://wantuch.pk/spacebook)
 name: Deploy SpaceBook
@@ -59,11 +60,11 @@ jobs:
       - name: Upload to wantuch.pk
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ vars.FTP_SERVER || 'wantuch.pk' }}
+          server: ${{ vars.FTP_SERVER || 's26.hosterpk.com' }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
-          security: loose
+          security: ${{ vars.FTP_SECURITY || 'strict' }}
           local-dir: ./SpaceBook Web/
           server-dir: ${{ vars.FTP_DIR || './' }}
           timeout: 600000
@@ -81,14 +82,33 @@ jobs:
             exercise-pages.json
             biology-progress.json
             test_*.js
+            tests/**
+            node_modules/**
+            package*.json
+            api/.schema-*
             banner_kpk_academic.png
 
       - name: Check the live site
         run: |
-          for i in 1 2 3 4 5; do curl -fsS -o /dev/null "$SITE_URL/" && break; sleep 6; done
+          # 1) the app itself must be served: a 404 here means the FTP account uploads to a folder the web does not serve
+          code=000
+          for i in 1 2 3 4 5; do
+            code=$(curl -sS -o /dev/null -w '%{http_code}' "$SITE_URL/index.html" || true)
+            [ "$code" = 200 ] && break; sleep 6
+          done
+          if [ "$code" != 200 ]; then
+            echo "::error::$SITE_URL/index.html returned HTTP $code after upload. The FTP account's home folder is not public_html/spacebook: in cPanel > FTP Accounts, set its Directory to public_html/spacebook (or set the FTP_DIR variable to the path from its home folder)."
+            exit 1
+          fi
+          # 2) no package or secret may be reachable over HTTP
+          for f in spacebook_upload.zip api/config.php.bak; do
+            c=$(curl -s -o /dev/null -w '%{http_code}' "$SITE_URL/$f" || true)
+            if [ "$c" = 200 ]; then echo "::error::$SITE_URL/$f is publicly downloadable. Delete it from the server."; exit 1; fi
+          done
+          # 3) the API must reach the database
           curl -sS "$SITE_URL/api/health.php" | tee health.json; echo
           if ! grep -q '"db":true' health.json; then
-            echo "::error::The site is uploaded, but the database is not reachable: $(cat health.json). On wantuch.pk cPanel > MySQL Databases, check that user tafseelk_spacebook has ALL PRIVILEGES on tafseelk_spacebook, and check DB_PASSWORD."
+            echo "::error::The site is served, but api/health.php does not report a working database: $(head -c 300 health.json). Check DB_PASSWORD and that user tafseelk_spacebook has ALL PRIVILEGES on tafseelk_spacebook."
             exit 1
           fi
           echo "Live: $SITE_URL"
