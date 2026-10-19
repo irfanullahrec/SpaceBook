@@ -22149,6 +22149,8 @@ function renderScienceConceptsTab(subjKey, ch) {
 
   const definitions = ch.definitions || [];
   const numericals = ch.numericals || [];
+  // statements/solutions are plain strings, or {text, urdu, pashto} objects in the page-reviewed chapters
+  const numText = v => (v && typeof v === 'object' ? v.text : v) || '';
 
   return `
     <div>
@@ -22174,12 +22176,12 @@ function renderScienceConceptsTab(subjKey, ch) {
           ${numericals.map((num, idx) => `
             <div class="math-topic-card math-accordion-card" style="margin-bottom:0.75rem;">
               <div class="math-acc-header" onclick="toggleMathAccordion(this)">
-                <span style="font-weight:700;color:#0f172a;">Numerical ${idx + 1}: ${(num.statement || num.problem || num.q || num.question || '').slice(0, 75)}...</span>
+                <span style="font-weight:700;color:#0f172a;">Numerical ${idx + 1}: ${numText(num.statement || num.problem || num.q || num.question).slice(0, 75)}...</span>
                 <span class="math-acc-icon">+</span>
               </div>
               <div class="math-accordion-body" style="display:none;margin-top:0.75rem;border-top:1px solid #e2e8f0;padding-top:0.75rem;">
-                <div style="margin-bottom:0.5rem;font-size:0.9rem;line-height:1.6;">${num.statement || num.problem || num.q || num.question || ''}</div>
-                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">${num.solution || num.sol || (num.answer ? ('Answer: ' + num.answer) : '')}</div>
+                <div style="margin-bottom:0.5rem;font-size:0.9rem;line-height:1.6;">${numText(num.statement || num.problem || num.q || num.question)}</div>
+                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">${numText(num.solution || num.sol) || (num.answer ? ('Answer: ' + num.answer) : '')}</div>
               </div>
             </div>
           `).join('')}
