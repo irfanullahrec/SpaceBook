@@ -46,7 +46,9 @@ function load(opts = {}) {
     querySelector() { return null; }, querySelectorAll() { return []; }, getElementsByTagName() { return []; }, getElementsByClassName() { return []; },
     createElement() { return makeEl(); }, createElementNS() { return makeEl(); }, createTextNode() { return makeEl(); },
     createDocumentFragment() { return makeEl(); }, createTreeWalker() { return { nextNode: () => null }; },
-    addEventListener() { }, removeEventListener() { }, dispatchEvent() { return true; },
+    // a working event bus (tests dispatch 'spacebook:auth' and similar); nothing in the app dispatches on its own here
+    _l: {}, addEventListener(t, fn) { (this._l[t] = this._l[t] || []).push(fn); }, removeEventListener(t, fn) { this._l[t] = (this._l[t] || []).filter(x => x !== fn); },
+    dispatchEvent(e) { (this._l[e.type] || []).slice().forEach(fn => { try { fn(e); } catch (err) { /* like a browser, a listener error does not stop the others */ } }); return true; },
     body: makeEl('body'), documentElement: makeEl('html'), head: makeEl('head'), readyState: 'complete',
     fonts: { ready: Promise.resolve() }, location: { href: 'http://localhost/', search: '', hash: '', pathname: '/' }, cookie: ''
   };

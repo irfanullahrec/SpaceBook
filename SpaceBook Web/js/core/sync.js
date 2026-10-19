@@ -124,6 +124,8 @@
     }
     async function pending() { return user ? (await rows(user)).length : 0; }
     async function pendingGuest() { return (await rows('guest')).length; }
+    // events of the signed-in user that the server has not confirmed yet, oldest first (modules replay them on top of the pulled snapshot)
+    async function pendingEvents() { return user ? (await rows(user)).map(r => r[1].ev) : []; }
     async function adoptGuest() {                   // the student said yes: guest events now belong to the account
       if (!user) return 0;
       const g = await rows('guest');
@@ -264,7 +266,7 @@
 
     return {
       ready, on, emit, flush, pull, sync, start, setUser, setDevice, clearDevice, bearerHeaders,
-      pending, pendingGuest, adoptGuest, snapshot: () => (user ? snapshot(user) : Promise.resolve(emptySnapshot())),
+      pending, pendingGuest, pendingEvents, adoptGuest, isEnabled: () => !!enabled(), snapshot: () => (user ? snapshot(user) : Promise.resolve(emptySnapshot())),
       rejected: async () => (await store.get('meta', 'rejected')) || [],
       status: async () => ({ user, signedIn: !!user, hasDeviceToken: !!(device && device.token), pending: await pending(), pendingGuest: await pendingGuest(),
         authLost, failures, nextAttemptAt, lastError, deviceId }),

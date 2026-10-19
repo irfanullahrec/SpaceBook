@@ -180,3 +180,16 @@ Not verified: any of this in a real browser (Chrome cannot run here: RAM); Index
 
 Next: step 6: convert `sb_rewards.js`, `sb_study_plan.js`, `test_prep.js` to emit events and read the pulled snapshot (one commit each, snapshot + smoke after each), then step 7 (guest-merge prompt, profile/export/delete, password change) and step 8 (backups).
 
+## 2026-10-19 — Phase 2, step 6a: sb_rewards.js on the sync core (SYNC-01)
+Done:
+- `js/sb_rewards.js`: the coin rules are now pure functions (`applyStep`, `applyAgain`) used by the guest path and by a new v2 path. With the flag on (`sb_sync_v2`), a signed-in student's numbers = the last pulled snapshot + the events the server has not confirmed yet, replayed with the same rules (`derive()`); `step()`/`again()` write the event to the outbox first, so a failed request neither loses the step nor demotes the student to guest (the old `user = null` path is not used in v2). Progress made as a guest becomes events at sign-in and the local guest copy is removed. Flag off: the old code path, unchanged.
+- `js/core/sync.js`: `pendingEvents()` and `isEnabled()`. `index.html`: core scripts now load before `sb_rewards.js`. `tools/lib/app_sandbox.js`: the document stub has a working event bus.
+
+Verified by:
+- `node tests/sync/rewards.js` (real sb_rewards.js + core in the app sandbox, real PHP + MySQL scratch DB): 15 passed, 0 failed, twice. Offline steps earn immediately (8 coins shown) and stay signed in; they sit in the outbox, none in guest storage; back online the server agrees and a second fresh page sees the same coins/steps; a failed request keeps the student signed in with back-off recorded; guest steps join the account (7 coins, 2 steps seen from a fresh page); repeat refused when never finished, 0 coins the same day; with the flag off rewards still call progress.php and never v2. Mutation (no replay of pending events) is caught.
+- Full battery after the change: validate 971/0, smoke 0 failed, sync unit 39/0, e2e 17/0, PHP 152/0; HTML snapshot: only the 20 known cls1-eng differences (the other session's uncommitted Class 1 work).
+
+Not verified: in a real browser; a reload with a cookie-less session (the page still decides who is signed in from `auth.php?action=me`, i.e. the session cookie; a valid device token alone does not show the student as signed in); the coin total shown between a successful flush and the following pull is the pre-flush value (it self-corrects after the pull); the guest-to-account prompt (step 7) — today guest progress joins the account silently, as it did before.
+
+Next: 6b `sb_study_plan.js` (plan.save/delete with baseRev, snapshot-based list), 6c `test_prep.js` (tp.* events, snapshot-based stats).
+

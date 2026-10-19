@@ -32,6 +32,7 @@
   async function loadFor(u) {
     user = u;
     if (!user) { data = loadGuest(); changed(); return; }
+    if (v2()) { await loadV2(); return; }
     const guest = loadGuest();
     const items = Object.entries(guest.activities).map(([key, a]) => ({key, title: a.title || '', total: a.total, done: a.done}));
     if (items.length) {
@@ -44,26 +45,77 @@
     changed();
   }
 
-  // ---------- guest rules (same as the server) ----------
-  function guestStep(key, title, total, i) {
-    const a = data.activities[key] || (data.activities[key] = {done: [], total: Math.max(1, Math.min(200, total)), times: 0, first: null, last: null, title});
+  // ---------- the rules (same as the server: api/lib/rewards.php) ----------
+  // st = {coins, activities}; these functions change it in place and say what happened
+  function applyStep(st, key, title, total, i) {
+    const a = st.activities[key] || (st.activities[key] = {done: [], total: Math.max(1, Math.min(200, total)), times: 0, first: null, last: null, title});
     let earned = 0, completed = false;
     if (i >= 0 && i < a.total && !a.done.includes(i)) { a.done.push(i); a.done.sort((x, y) => x - y); earned += STEP_COIN; }
     if (!a.times && a.done.length >= a.total) { earned += COMPLETE_COIN; a.times = 1; a.first = a.last = now(); completed = true; }
-    data.coins += earned; saveGuest();
-    return {ok: true, earned, completed, times: a.times, coins: data.coins};
+    st.coins += earned;
+    return {earned, completed, times: a.times};
+  }
+  function applyAgain(st, key) {
+    const a = st.activities[key]; if (!a || !a.times) return null;
+    const earned = a.last && a.last.slice(0, 10) === today() ? 0 : PRACTICE_COIN;
+    a.times++; a.last = now(); st.coins += earned;
+    return {earned, times: a.times};
+  }
+  function guestStep(key, title, total, i) {
+    const r = applyStep(data, key, title, total, i); saveGuest();
+    return {ok: true, earned: r.earned, completed: r.completed, times: r.times, coins: data.coins};
   }
   function guestAgain(key) {
-    const a = data.activities[key]; if (!a || !a.times) return {ok: false};
-    const earned = a.last && a.last.slice(0, 10) === today() ? 0 : PRACTICE_COIN;
-    a.times++; a.last = now(); data.coins += earned; saveGuest();
-    return {ok: true, earned, times: a.times, coins: data.coins};
+    const r = applyAgain(data, key); if (!r) return {ok: false};
+    saveGuest();
+    return {ok: true, earned: r.earned, times: r.times, coins: data.coins};
   }
 
+  // ---------- v2: offline-safe sync (js/core/sync.js, behind the sb_sync_v2 flag) ----------
+  // What a signed-in student sees = the last pulled snapshot + the events the server has not confirmed yet,
+  // replayed with the same rules. A step is written to the outbox first, so a failed request never loses it
+  // and never turns the student into a guest.
+  const v2 = () => { try { return !!(window.SBSync && window.SBSync.isEnabled && window.SBSync.isEnabled()); } catch (e) { return false; } };
+  let hooked = false;
+  function hookV2() {
+    if (hooked || !window.SBSync) return;
+    hooked = true;
+    window.SBSync.on('pulled', () => { if (user && v2()) derive(); });
+    window.SBSync.on('coins', () => { if (user && v2()) derive(); });
+  }
+  async function derive() {
+    const snap = await window.SBSync.snapshot(), pend = await window.SBSync.pendingEvents();
+    const st = {coins: snap.coins || 0, activities: {}};
+    Object.entries(snap.progress || {}).forEach(([k, a]) => { st.activities[k] = {done: (a.done || []).slice(), total: a.total, times: a.times || 0, first: a.first || null, last: a.last || null}; });
+    pend.forEach(ev => {
+      const p = ev.payload || {};
+      if (ev.type === 'step') applyStep(st, p.key, p.title || '', p.total, p.step);
+      else if (ev.type === 'again') applyAgain(st, p.key);
+    });
+    data = st; changed();
+  }
+  async function loadV2() {
+    hookV2();
+    await window.SBSync.setUser(user);
+    // progress made as a guest on this device joins the account (the page will ask first, see docs/PHASE2_SYNC_DESIGN.md)
+    const guest = loadGuest();
+    let moved = 0;
+    for (const [key, a] of Object.entries(guest.activities)) {
+      for (const i of a.done) { await window.SBSync.emit('step', {key, title: a.title || '', total: a.total, step: i}); moved++; }
+    }
+    if (moved) { try { localStorage.removeItem(GUEST); } catch (e) { /* fine */ } toast('Your progress on this device was added to your account'); }
+    await derive();
+    window.SBSync.sync().then(() => derive()).catch(() => { /* offline: the outbox keeps everything */ });
+  }
   // ---------- public actions ----------
   async function step(key, title, total, i, x, y) {
     let r;
-    if (user) {
+    if (user && v2()) {
+      const before = data.coins, wasDone = ((data.activities[key] || {}).times || 0) > 0;
+      try { await window.SBSync.emit('step', {key, title, total, step: i}); await derive(); } catch (e) { return {ok: false, earned: 0}; }
+      const a = data.activities[key] || {};
+      r = {ok: true, earned: data.coins - before, completed: !wasDone && (a.times || 0) > 0, times: a.times || 0, coins: data.coins};
+    } else if (user) {
       r = await call('step', {key, title, total, step: i});
       if (r.ok) {
         const a = data.activities[key] || (data.activities[key] = {done: [], total, times: 0, first: null, last: null});
@@ -79,7 +131,15 @@
   }
   async function again(key, x, y) {
     let r;
-    if (user) {
+    if (user && v2()) {
+      const a0 = data.activities[key];
+      if (!a0 || !a0.times) r = {ok: false};
+      else {
+        const before = data.coins;
+        try { await window.SBSync.emit('again', {key}); await derive(); } catch (e) { return {ok: false}; }
+        r = {ok: true, earned: data.coins - before, times: (data.activities[key] || {}).times, coins: data.coins};
+      }
+    } else if (user) {
       r = await call('again', {key});
       if (r.ok) { const a = data.activities[key]; if (a) { a.times = r.times; a.last = now(); } data.coins = r.coins; }
     } else r = guestAgain(key);
