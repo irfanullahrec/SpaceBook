@@ -6,7 +6,9 @@
     "validate": "node tools/validate.js",
     "smoke": "node --max-old-space-size=8192 tools/smoke.js",
     "baseline": "node --max-old-space-size=8192 tests/baseline/run.js",
-    "test": "npm run validate && npm run smoke"
+    "test": "npm run validate && npm run smoke",
+    "test:php": "php tests/php/run.php",
+    "lint:php": "node tools/php74_lint.js"
   },
   "devDependencies": {
     "playwright": "1.63.0"

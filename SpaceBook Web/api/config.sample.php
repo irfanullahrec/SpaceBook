@@ -7,4 +7,6 @@ return [
     'db_user' => 'your_db_user',
     'db_pass' => 'CHANGE_ME',
     'db_port' => 3306,
+    // optional: secret that unlocks the detailed report at api/health.php?token=...
+    'health_token' => '',
 ];

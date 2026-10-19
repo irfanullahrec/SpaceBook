@@ -1,5 +1,6 @@
--- SpaceBook accounts schema (MySQL 5.7+ / MariaDB 10.2+).
--- api/db.php also creates these automatically on first request.
+-- 001 baseline: the accounts, progress, study-plan and test-prep tables as they existed before schema versioning.
+-- Idempotent (IF NOT EXISTS): applying it to a database created by the old api/db.php changes nothing.
+-- No down-migration: rolling back would drop student data, so the runner refuses to go below version 1.
 
 CREATE TABLE IF NOT EXISTS users (
   id             INT UNSIGNED NOT NULL AUTO_INCREMENT,

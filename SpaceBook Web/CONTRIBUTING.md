@@ -16,6 +16,13 @@ git commit                              # small commits, one finding or one subj
 
 Both scripts must print 0 failures; CI (`.github/workflows/deploy.yml`, job `test`) runs them and **blocks the deploy** if either fails. Never force-push `main`; undo with `git revert`.
 
+Changed `api/`? Also run (needs local MySQL, e.g. XAMPP; uses a throwaway database `spacebook_test`, never your real one):
+
+```bash
+node tools/php74_lint.js        # PHP 8-only syntax is rejected: the live host ran PHP 7.4
+php tests/php/run.php           # migrations, auth hardening, rate limits, device tokens (63 checks)
+```
+
 Setup for the browser tools only: `npm install` (Playwright, dev-only; nothing from `package.json`, `node_modules/` or `tests/` is deployed).
 
 ## 2. Where content lives (five contracts, all still in use)
@@ -53,6 +60,10 @@ Rerun the generators after data changes. Data changes are reviewed as diffs; do 
 - Unused files are moved to `D:\SpaceBook\SpaceBook_Archive\` with a log, never deleted.
 
 `tests/trace` records only data globals read while a subject is opened and its tabs rendered (first/middle/last chapter). A global that appears "never read" may still be used at load time or by features the tracer does not open; do not remove a file on that evidence alone.
+
+## 4b. Database changes
+
+Never edit an applied migration and never create tables from endpoint code. Add `api/migrations/NNN_name.sql` (additive; idempotent `IF NOT EXISTS`) and, where safe, `NNN_name.down.sql`. The first request that finds the database behind applies pending migrations once under a database lock; `php api/migrate.php status|up|down [N]|prune` does the same by hand. Migration 001 has no down (it would drop student data). Take a `mysqldump` before migrating the live database. **A push to `main` deploys, and the first live request then runs any new migration.**
 
 ## 5. Secrets
 

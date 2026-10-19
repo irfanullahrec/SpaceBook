@@ -1,5 +1,10 @@
 # Only the public endpoints may be requested directly.
-<FilesMatch "^(config|config\.sample|db|session)\.php$|\.sql$|^\.schema-">
+<FilesMatch "^(config|config\.sample|db|session|migrate)\.php$|\.sql$|^\.schema-">
     Require all denied
 </FilesMatch>
 Options -Indexes
+# LiteSpeed/Apache drop the Authorization header for PHP unless it is passed on explicitly
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>

@@ -96,3 +96,30 @@ Not verified: the fix in a real browser (Chrome could not run, low RAM). Coin ca
 
 Next: owner review of the design (section 10 decisions); server steps in `docs/PHASE0_SERVER_STEPS.md` still pending.
 
+## 2026-10-19 — Phase 2, steps 1-2: migrations + auth hardening (branch `phase/p2-server`, tag `checkpoint/p2-start`)
+Design approved by the owner with the proposed caps (600 coins/day, 300 new activities/day, trace total <= 60). Reset channel still open.
+
+Done:
+- Migrations: `api/migrations/001_baseline.sql` (the old schema.sql, idempotent), `002_security_sync_v2.sql` (+ `.down.sql`): `devices`, `rate_limits`, `audit_log`, `sync_events`, `activity_catalog`. `api/lib/migrate.php`, CLI `php api/migrate.php status|up|down|prune`. `db()` no longer runs DDL from a marker file in `api/`: it applies pending migrations once under `GET_LOCK`. Tests point `SB_CONFIG` at another config.
+- Auth hardening (`api/auth.php`, `api/lib/security.php`): per-address failure ceiling (20/15 min) besides the per-number lock; Retry-After on 429; dummy bcrypt verify for unknown numbers (equal timing/identical message); 10 registrations/hour/address; opportunistic prune of `login_attempts` (+ `migrate.php prune`); audit log; device tokens (random 32 bytes, SHA-256 stored) issued on request (`want_device`), revoked by logout with the bearer token; same-site check (Sec-Fetch-Site / Origin) on all cookie POST endpoints. Public `api/health.php` now returns only `{"ok":true,"db":true}`; details need `?token=` (`health_token` in config). `api/session.php`: private session folder + `gc_maxlifetime` = 30 days (S-01 fix, effect on the live host unconfirmed).
+- `tools/php74_lint.js`, `tests/php/run.php`, CI job `php-test` (PHP 7.4 + MySQL 5.7 service), CONTRIBUTING.
+
+Verified by:
+- `php tests/php/run.php` → 63 passed, 0 failed (three runs). Covers: 0→2→1→2 migration cycle; legacy populated DB migrates with no lost rows/coins; down never drops student data; rate limiter; token hashing/revoke/blocked user; same-site matrix; health public/token; 5-failure lock + Retry-After; 20-failure address ceiling; 11th registration 429; foreign Origin 403 on login/progress/test_prep/study_plans; same-origin v1 flows unchanged; logout revokes device.
+- Mutation: raising the address ceiling to 200 and disabling the progress check made 3 tests fail; restored.
+- `node tools/php74_lint.js` → 12 files, 0 problems; it flags match/str_contains/union types in a test file.
+
+Deviations from the design (decided while building):
+- CSRF: Origin/Sec-Fetch-Site check now instead of a token, because the existing JS sends no token and must keep working; the token arrives with the v2 client. Bearer-token requests will skip the check.
+- Migrations: the design said "CLI/CI only", but deploys are FTP-only (CI cannot reach the host's localhost MySQL), so pending migrations are applied by the first request under a lock; the CLI exists for local use and the owner.
+- IP failure ceiling is 20 (not 5) because a school shares one address.
+
+Not verified:
+- PHP 7.4 itself: local PHP is 8.2.12; 7.4 is covered only by the syntax lint until the `php-test` job runs on GitHub.
+- Behaviour on the live host (LiteSpeed): `Authorization` header pass-through (`.htaccess` rule added), private session folder, `Retry-After`.
+- Running the suite against MySQL 5.7 (local is MariaDB 10.4).
+- Registration still reveals "number already exists" (enumeration is only rate limited; closing it needs a verified channel, see reset-channel decision).
+- Nothing pushed. **Pushing to main deploys, and the first live request then runs migration 002 on the live database (additive).** Take a mysqldump first.
+
+Next: step 3 (`api/v2/sync.php` POST, progress events + coin rules) after the owner confirms the server steps.
+

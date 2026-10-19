@@ -8,6 +8,7 @@
 
 require __DIR__ . '/db.php';
 require __DIR__ . '/session.php';
+require __DIR__ . '/lib/security.php';
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -46,6 +47,7 @@ try {
 
 $action = $_GET['action'] ?? '';
 if ($action !== 'load' && $_SERVER['REQUEST_METHOD'] !== 'POST') fail(405, 'POST required');
+if ($action !== 'get' && $action !== 'load' && $action !== 'list' && !sb_request_is_same_site()) fail(403, 'Request not allowed');
 
 try {
     switch ($action) {

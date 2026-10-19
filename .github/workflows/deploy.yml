@@ -44,6 +44,41 @@ jobs:
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/smoke.js
 
+  # API tests on the PHP version the live host runs (7.4) with a scratch MySQL. Not yet a deploy gate:
+  # continue-on-error until this job has been seen green once on GitHub, then add it to deploy.needs.
+  php-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -proot" --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: curl, mbstring, pdo_mysql
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: PHP 8-only syntax check
+        working-directory: SpaceBook Web
+        run: node tools/php74_lint.js
+      - name: API tests (migrations, auth hardening, rate limits, devices)
+        working-directory: SpaceBook Web
+        env:
+          SB_TEST_DB_HOST: 127.0.0.1
+          SB_TEST_DB_USER: root
+          SB_TEST_DB_PASS: root
+        run: php tests/php/run.php
+
   deploy:
     needs: test
     if: github.event_name != 'pull_request'
