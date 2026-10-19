@@ -277,3 +277,22 @@ Not verified: in a real browser; callers that pass a class id different from the
 Risks: 67 other `state.selectedClass ===` tests remain in `app.js` (outside this function); they move with their consumers. The matrix proves the list lookup only, not every consumer that reads `state` (papers, search, word statistics).
 
 Next: registry-driven `openSubject` / one lookup table replacing the if-chains (ARCH-03), JSON Schema + validator for Book Content Contract v1.
+
+## 2026-10-20 — Phase 3: lazy loading now covers Class 11, Class 12 Maths and the legacy Class 9/10 DATA files
+Done:
+- `tools/build/make_lazy.js` / `js/core/lazy.js`: public functions of a lazy file get forwarding stubs (705), keys a file adds to `DATA` are accessors until it loads (`SBLazy.attachData(DATA)` injected after `data.js`), the Class 11 registry `CLASS11_BOOKS` is a book container, and overlay scripts that declare functions get stubs bound to their parent. 152 files / 344 MB are lazy (was 129 / 289 MB); 47 patch scripts run after their parent (was 15). The build refuses a lazy file whose function another script reassigns (none today) and has `--explain` to list every file that stays eager and why.
+- Source fixes the move needed: `class11BookBySubject()` looks up by key instead of scanning (and loading) every Class 11 book (`tools/validate.js` checks the invariant); `math12_study_views.js` no longer builds every Maths 12 study bank at script load (`warmMath12StudyBanks`, called by the new `js/math12_study_bank_warm.js`, which is a script tag on `index.html` and an overlay on the lazy page); the manifest no longer carries the generation date and hashes the LF form of each file (`--check` would have failed on any other day or on a CRLF Windows checkout).
+- `lazy.html` and `content/lazy_manifest.json` regenerated from a clean checkout of the source commit.
+
+Verified by (clean checkout of the committed source, sparse worktree):
+- `lazy_parity.js` and `--reverse`: eager vs lazy, 147 subjects, 1,843 chapters, 9,710 tab renders, 0 differences both ways; the eager page equals `tests/baseline/html-2026-10-20` (0 differences). The parity run caught three real defects on the way (an overlay that declares functions, the sandbox not running `attachData`, Chemistry/Physics Class 9/10 losing their chapters), all fixed before the commit.
+- Working tree: validate 978/0, smoke 0 failed on `index.html` and on `lazy.html`, `arch02_matrix.js --page lazy.html` 0 differences.
+- Measured in the Node sandbox: lazy page ready in 0.23-0.29 s (eager 7.5 s), 64 scripts (262), heap after load 21 MB (1,063 MB), 0 of 152 lazy files loaded at start; opening Class 9 Biology 113 ms / 28 MB; Class 12 Physics 1.4 s / 60 MB.
+
+Not verified: a real browser (Proxy stand-ins, accessors and synchronous requests follow the spec but ran only in the Node sandbox); compressed transfer size (needs server compression, still to configure); `lazy.html` on the live host.
+
+Regressions: none known; `index.html` changed only by the Maths 12 study-bank script tag and a version bump on `math12_study_views.js`.
+
+Risks: scripts that read a lazy book at load load it at start-up (none today, measured); a future wrapper around a function of a lazy file makes the build keep that file eager.
+
+Next: Class 10 English chain (3.1 MB) as one parent with overlays; JSON Schema + validator for Book Content Contract v1 and per-book adapter reports; registry-driven `openSubject`; one command `tools/build/all.js` with stale checks; compression and cache headers.

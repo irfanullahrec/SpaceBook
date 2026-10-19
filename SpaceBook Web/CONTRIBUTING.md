@@ -69,7 +69,7 @@ Rerun the generators after data changes. Data changes are reviewed as diffs; do 
 
 ## 4a. Lazy book data
 
-`lazy.html` is generated from `index.html` (`node tools/build/make_lazy.js`; details and numbers in `docs/PHASE3_LAZY_LOADING.md`). Adding or renaming a script in `index.html`, or changing which globals a data file defines, makes it stale: regenerate and commit it (CI runs `make_lazy.js --check` and `tools/build/lazy_parity.js`, which renders every subject on both pages and requires identical HTML). A script that only patches lazy data at load goes into `tools/build/lazy_overlays.json`; a data-like file that must be in the page at load goes into `lazy_eager.json`.
+`lazy.html` is generated from `index.html` (`node tools/build/make_lazy.js`; details and numbers in `docs/PHASE3_LAZY_LOADING.md`). Adding or renaming a script in `index.html`, or changing which globals a data file defines, makes it stale: regenerate and commit it (CI runs `make_lazy.js --check` and `tools/build/lazy_parity.js`, which renders every subject on both pages and requires identical HTML). A script that only patches lazy data at load goes into `tools/build/lazy_overlays.json` (it then runs right after its parent file loads, so do not read the book at script load: touching a lazy book from an eager script loads it at start-up; `node tools/build/measure_lazy.js --startup-only` must say `0 of N`); a data-like file that must be in the page at load goes into `lazy_eager.json`. Do not reassign (wrap) a function that a lazy file declares: the build keeps such a file eager and says why (`node tools/build/make_lazy.js --check --explain` lists every file that stays eager).
 
 ## 4b. Database changes
 
