@@ -1,0 +1,220 @@
+{
+ "note": "Who extends which global function through SBHooks, in composition order (first = closest to the original). Order = script order in index.html; tests/hooks/hooks.js --update after an intended change.",
+ "hooks": {
+  "renderScienceLessonSubContent": [
+   "biology_10_reader.js"
+  ],
+  "renderEngLesson": [
+   "english_10_reader.js"
+  ],
+  "renderEngExercise": [
+   "english_10_reader.js"
+  ],
+  "renderEngSLOs": [
+   "english_10_reader.js"
+  ],
+  "renderLangLessonSubContent": [
+   "english_10_reader.js"
+  ],
+  "renderLanguageGrammarTab": [
+   "english_10_reader.js"
+  ],
+  "renderSubjectExerciseTab": [
+   "english_10_reader.js",
+   "class12_study_views.js"
+  ],
+  "renderInteractiveParagraphHtml": [
+   "lesson_math_reader.js"
+  ],
+  "renderMathSourceBlocks": [
+   "math12_translation_reader.js"
+  ],
+  "renderMathSourceOpening": [
+   "math12_class9_view.js"
+  ],
+  "renderMathSloCategoryContent": [
+   "math12_class9_view.js"
+  ],
+  "renderMathSLOs": [
+   "math12_class9_view.js",
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "renderMathExercises": [
+   "math12_class9_view.js",
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "selectSubjectChapter": [
+   "class12_study_views.js",
+   "continue_learning.js"
+  ],
+  "openGenericChapterDetails": [
+   "class12_study_views.js",
+   "continue_learning.js"
+  ],
+  "openSubjectWorkspace": [
+   "class12_study_views.js",
+   "class11_study_views.js"
+  ],
+  "renderSubjectSLOsTab": [
+   "class12_study_views.js"
+  ],
+  "getSubjectChapterList": [
+   "class11_study_views.js",
+   "cls5_book_reader.js",
+   "cls4_book_reader.js",
+   "cls1_book_reader.js",
+   "cls3_book_reader.js",
+   "cls2_page_reader.js"
+  ],
+  "renderSubjectChapterView": [
+   "class11_study_views.js"
+  ],
+  "switchSubjectTab": [
+   "class11_study_views.js",
+   "math6_reader.js",
+   "math5_reader.js",
+   "cls5_book_reader.js",
+   "cls2_book_reader.js",
+   "cls4_book_reader.js",
+   "cls1_book_reader.js",
+   "cls3_book_reader.js",
+   "cls2_page_reader.js",
+   "cls6_book_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js",
+   "sb_structure.js"
+  ],
+  "switchScienceLessonSubTab": [
+   "class11_study_views.js",
+   "sb_structure.js"
+  ],
+  "renderMathLesson": [
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "renderMathExamples": [
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "renderMathFormulaSheet": [
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "typesetChapterMath": [
+   "math6_reader.js",
+   "math5_reader.js",
+   "math7_reader.js",
+   "math8_reader.js",
+   "math11_reader.js"
+  ],
+  "openSubject": [
+   "cls2_book_reader.js",
+   "cls4_book_reader.js",
+   "cls1_book_reader.js",
+   "cls3_book_reader.js",
+   "cls2_page_reader.js",
+   "continue_learning.js",
+   "word_stats.js"
+  ],
+  "showWordLookupPopover": [
+   "universal_translate.js"
+  ],
+  "closeWordLookupPopover": [
+   "universal_translate.js"
+  ],
+  "showWordHoverTooltip": [
+   "universal_translate.js"
+  ],
+  "selectMathChapter": [
+   "continue_learning.js"
+  ],
+  "selectEngChapter": [
+   "continue_learning.js"
+  ],
+  "selectUrduChapter": [
+   "continue_learning.js"
+  ],
+  "selectIslChapter": [
+   "continue_learning.js"
+  ],
+  "selectPhysChapter": [
+   "continue_learning.js"
+  ],
+  "selectChemChapter": [
+   "continue_learning.js"
+  ],
+  "selectBioChapter": [
+   "continue_learning.js"
+  ],
+  "selectPakStudyChapter": [
+   "continue_learning.js"
+  ],
+  "renderMathChapter": [
+   "continue_learning.js"
+  ],
+  "renderBioChapter": [
+   "continue_learning.js"
+  ],
+  "renderChemChapter": [
+   "continue_learning.js"
+  ],
+  "renderPhysChapter": [
+   "continue_learning.js"
+  ],
+  "renderUrduChapter": [
+   "continue_learning.js"
+  ],
+  "renderIslChapter": [
+   "continue_learning.js"
+  ],
+  "renderPakStudyChapter": [
+   "continue_learning.js"
+  ],
+  "renderHome": [
+   "continue_learning.js"
+  ],
+  "renderClasses": [
+   "continue_learning.js"
+  ],
+  "goToSubjects": [
+   "continue_learning.js",
+   "word_stats.js"
+  ],
+  "openCompetitiveTestModal": [
+   "test_prep.js"
+  ],
+  "renderTestsPreps": [
+   "test_prep.js"
+  ],
+  "renderStudyPlan": [
+   "sb_study_plan.js"
+  ],
+  "toggleSentenceTranslation": [
+   "sb_trilingual.js"
+  ],
+  "switchLangLessonSubTab": [
+   "sb_structure.js"
+  ],
+  "switchMathTab": [
+   "sb_structure.js"
+  ]
+ }
+}

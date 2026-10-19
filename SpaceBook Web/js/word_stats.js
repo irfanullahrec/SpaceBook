@@ -580,37 +580,39 @@
   }
 
   // ── class pages: stats below the cover pages ────────────────────────────
+  let classPagesHooked = false;
   function hookClassPages() {
-    const orig = window.goToSubjects;
-    if (typeof orig !== 'function' || orig.__ws) return;
-    const wrapped = function (classId) {
-      const out = orig.apply(this, arguments);
-      try {
-        const body = document.getElementById('dashboard-body');
-        if (body && scopeCounts(classId) && !body.querySelector('.ws-class-stats')) {
-          const holder = document.createElement('div');
-          holder.className = 'ws-class-stats';
-          body.appendChild(holder);
-          renderPanel(holder, classId, { title: 'Vocabulary of ' + scopeName(classId) + ' books' });
-        }
-      } catch (e) { /* stats are optional */ }
-      return out;
-    };
-    wrapped.__ws = true;
-    window.goToSubjects = wrapped;
+    if (typeof window.goToSubjects !== 'function' || classPagesHooked) return;
+    classPagesHooked = true;
+    SBHooks.use('goToSubjects', function (orig) {
+      return function (classId) {
+        const out = orig.apply(this, arguments);
+        try {
+          const body = document.getElementById('dashboard-body');
+          if (body && scopeCounts(classId) && !body.querySelector('.ws-class-stats')) {
+            const holder = document.createElement('div');
+            holder.className = 'ws-class-stats';
+            body.appendChild(holder);
+            renderPanel(holder, classId, { title: 'Vocabulary of ' + scopeName(classId) + ' books' });
+          }
+        } catch (e) { /* stats are optional */ }
+        return out;
+      };
+    });
   }
 
   // ── subjects: a "Word Stats" tab at the right end of the tab bar ────────
   let lastSubject = null;
+  let subjectsHooked = false;
   function hookSubjects() {
-    const orig = window.openSubject;
-    if (typeof orig !== 'function' || orig.__ws) return;
-    const wrapped = function (classId, subjId) {
-      lastSubject = { classId, subjId };
-      return orig.apply(this, arguments);
-    };
-    wrapped.__ws = true;
-    window.openSubject = wrapped;
+    if (typeof window.openSubject !== 'function' || subjectsHooked) return;
+    subjectsHooked = true;
+    SBHooks.use('openSubject', function (orig) {
+      return function (classId, subjId) {
+        lastSubject = { classId, subjId };
+        return orig.apply(this, arguments);
+      };
+    });
   }
 
   function currentSubject() {

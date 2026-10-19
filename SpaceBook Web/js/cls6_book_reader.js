@@ -335,8 +335,7 @@
     mqApply(container);
   }
 
-  const originalSwitch = window.switchSubjectTab;
-  window.switchSubjectTab = function (subjKey, tabId, chIdx, classId) {
+  SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (subjKey, tabId, chIdx, classId) {
     // Class 10 Islamiat (lazmi) is the Class 9 book, so cls10 'isl' opens CLS9_BOOKS.isl.
     // Class 9 Islamiat Ikhtiari is the same book as Class 10, so cls9 'islopt' opens CLS10_BOOKS.islopt.
     const lib = classId === 'cls10' && subjKey === 'isl' ? (window.CLS9_BOOKS || {}) : classId === 'cls9' && subjKey === 'islopt' ? (window.CLS10_BOOKS || {}) : classId === 'cls6' ? books() : classId === 'cls7' ? (window.CLS7_BOOKS || {}) : classId === 'cls8' ? (window.CLS8_BOOKS || {}) : classId === 'cls10' ? (window.CLS10_BOOKS || {}) : classId === 'cls9' ? (window.CLS9_BOOKS || {}) : {};
@@ -365,5 +364,5 @@
     container.innerHTML = withBook(B.words, B.book, () => render(B, ch, B.units.indexOf(ch), tabId));
     if (subjKey === 'quran') quranTabs(container);
     container.scrollTop = 0;
-  };
+  }; });
 })();

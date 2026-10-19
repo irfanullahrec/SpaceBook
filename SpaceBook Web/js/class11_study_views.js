@@ -222,8 +222,7 @@
   }
 
   // ── routing into the shared Class 9 renderer ───────────────────────────
-  const originalList = getSubjectChapterList;
-  getSubjectChapterList = function (key, classId) {
+  SBHooks.use('getSubjectChapterList', function (originalList) { return function (key, classId) {
     const cur = classId || state.selectedClass; // the class asked for wins over the selected one (ARCH-02)
     if (isClass11(cur) && SOURCES[key]) {
       const list = adapted(key);
@@ -233,10 +232,9 @@
     const list = classId === VIEW_CLASS ? originalList.call(this, key, 'cls11') : originalList.apply(this, arguments);
     // the Urdu language book already reads its Urdu field; its Translations view needs English as English
     return cur === 'cls12' && key !== 'math' && key !== 'urdu' ? urduMedium12(list) : list;
-  };
+  }; });
 
-  const originalWorkspace = openSubjectWorkspace;
-  openSubjectWorkspace = function (classId, key, subject) {
+  SBHooks.use('openSubjectWorkspace', function (originalWorkspace) { return function (classId, key, subject) {
     const view = classId === 'cls11' && BOOK_TO_VIEW[key] ? BOOK_TO_VIEW[key] : key;
     const book = classId === 'cls11' ? class11BookByKey(key) : null;
     const result = originalWorkspace.call(this, classId, view, subject);
@@ -249,17 +247,15 @@
       if (count) count.textContent = getSubjectChapterList(view, classId).length + ' textbook units';
     }
     return result;
-  };
+  }; });
 
-  const originalChapterView = renderSubjectChapterView;
-  renderSubjectChapterView = function (key, index, classId, subject) {
+  SBHooks.use('renderSubjectChapterView', function (originalChapterView) { return function (key, index, classId, subject) {
     if (classId === 'cls11' && (SOURCES[key] || key === 'phys')) return originalChapterView.call(this, key, index, VIEW_CLASS, subject);
     return originalChapterView.apply(this, arguments);
-  };
+  }; });
 
   // ── Class 11 Physics keeps its own source renderer inside the Class 9 lesson sub-tabs ──
-  const originalSwitch = switchSubjectTab;
-  switchSubjectTab = function (key, tabId, index, classId) {
+  SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (key, tabId, index, classId) {
     if (!(classId === VIEW_CLASS && key === 'phys')) return originalSwitch.apply(this, arguments);
     state.activeSubjTab = tabId;
     document.querySelectorAll('.math-top-tab, .math-tab-btn').forEach(button => button.classList.toggle('active', button.dataset.tab === tabId));
@@ -281,7 +277,7 @@
     }
     container.scrollTop = 0;
     if (typeof typesetChapterMath === 'function') typesetChapterMath(container);
-  };
+  }; });
   function physics11LessonSub(ch, sub) {
     if (sub === 'exercise') return renderPhysics11Tab(ch, 'exercise');
     if (sub === 'slos') return renderPhysics11Tab(ch, 'slos');
@@ -295,10 +291,9 @@
         <div class="para-text-box">${renderPhysics11Source({sections: [sec]})}</div>
       </div>`).join('')}</div>`;
   }
-  const originalScienceSub = switchScienceLessonSubTab;
-  switchScienceLessonSubTab = function (key, sub) {
+  SBHooks.use('switchScienceLessonSubTab', function (originalScienceSub) { return function (key, sub) {
     if (!(key === 'phys' && state.selectedClass === 'cls11')) return originalScienceSub.apply(this, arguments);
     state.activeScienceLessonSubTab = sub;
     switchSubjectTab('phys', 'lesson', state.selectedSubjChapter || 0, VIEW_CLASS);
-  };
+  }; });
 })();

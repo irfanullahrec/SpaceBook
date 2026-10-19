@@ -99,9 +99,8 @@
     return card('Students Learning Outcomes',(ch.sloPairs||ch.slos.map((text,i)=>({text,urdu:ch.slosUrdu?.[i],pashto:ch.slosPashto?.[i]}))).map(reading).join(''));
   }
   function wrap(name, replacement) {
-    const original=root[name];
-    if(typeof original!=='function')return;
-    root[name]=function(...args){return replacement(original,args);};
+    if(typeof root[name]!=='function')return;
+    SBHooks.use(name,function(original){return function(...args){return replacement(original,args);};});
   }
   wrap('renderEngLesson',(old,args)=>owns(args[0])?lesson(args[0]):old(...args));
   wrap('renderEngExercise',(old,args)=>owns(args[0])?exercises(args[0]):old(...args));

@@ -352,9 +352,8 @@
   }
 
   const wrap = (name, fn) => {
-    const original = window[name];
-    if (typeof original !== 'function') return;
-    window[name] = function (ch) { return isCls11() && ch && !ch.legacy && MATH_11_DATA.includes(ch) ? fn(ch) : original.apply(this, arguments); };
+    if (typeof window[name] !== 'function') return;
+    SBHooks.use(name, function (original) { return function (ch) { return isCls11() && ch && !ch.legacy && MATH_11_DATA.includes(ch) ? fn(ch) : original.apply(this, arguments); }; });
   };
   wrap('renderMathLesson', lesson);
   wrap('renderMathExamples', examples);
@@ -363,10 +362,9 @@
   wrap('renderMathFormulaSheet', summary);
   // Class 11 Mathematics opens in the generic subject workspace (openSubjectWorkspace -> switchSubjectTab).
   if (typeof window.switchSubjectTab === 'function') {
-    const originalSwitch = window.switchSubjectTab;
     const TAB_RENDER = {lesson, concepts: examples, exercise: exercises, slos, formulas: summary};
     const TAB_LABEL = {lesson: '📖 Lessons', concepts: '💡 Worked Examples', exercise: '✍️ Exercises', slos: '🎯 Learning Outcomes', formulas: '📐 Summary & Formulas'};
-    window.switchSubjectTab = function (subjKey, tabId, chIdx, classId) {
+    SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (subjKey, tabId, chIdx, classId) {
       const ch = classId === 'cls11' && subjKey === 'math' ? MATH_11_DATA[chIdx] || MATH_11_DATA[0] : null;
       if (ch && ch.legacy) return originalSwitch.apply(this, arguments);
       if (!ch || !TAB_RENDER[tabId]) return originalSwitch.apply(this, arguments);
@@ -381,18 +379,17 @@
       if (!container) return;
       container.innerHTML = TAB_RENDER[tabId](ch);
       container.scrollTop = 0;
-    };
+    }; });
   }
   // The legacy OCR exponent repair must not rewrite reviewed text or KaTeX annotations.
   if (typeof window.typesetChapterMath === 'function') {
-    const originalTypeset = window.typesetChapterMath;
-    window.typesetChapterMath = function (container) {
+    SBHooks.use('typesetChapterMath', function (originalTypeset) { return function (container) {
       if (container && container.querySelector && container.querySelector('.m11-root')) {
         if (window.mathTypesetterObserver) { window.mathTypesetterObserver.disconnect(); window.mathTypesetterObserver = null; }
         return;
       }
       return originalTypeset.apply(this, arguments);
-    };
+    }; });
   }
   window.MATH11_READER = {blocks, inline, lesson, examples, exercises, slos, summary};
 })();

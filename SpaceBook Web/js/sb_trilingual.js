@@ -56,7 +56,7 @@
   window.SBTri = {fill};
 
   // sentence spans of the shared Class 9 renderer (app.js renderInteractiveParagraphHtml)
-  window.toggleSentenceTranslation = function (el, event) {
+  SBHooks.replace('toggleSentenceTranslation', function (el, event) {
     if (event) event.stopPropagation();
     if (typeof window.hideWordHoverTooltip === 'function') window.hideWordHoverTooltip();
     if (!el) return;
@@ -70,7 +70,7 @@
     map[src] = own;
     fill(drawer, map, src);
     drawer.style.display = 'block';
-  };
+  });
 
   // ---------- remove the drop-downs ----------
   const INLINE = /^(SPAN|SUP|SUB|STRONG|EM|B|I|A|SMALL|CODE|BR)$/;

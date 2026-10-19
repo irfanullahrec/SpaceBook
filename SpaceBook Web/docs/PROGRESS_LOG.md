@@ -352,3 +352,17 @@ Not verified: in a browser (the look of the empty states and of the library card
 Risks: students lose the dead buttons only; the generated questions stay until you approve (flag); Papers for Classes 1-6, 11 and 12 Maths still draw on Class 9 questions (Phase 9).
 
 Next: Phase 5 (hooks instead of patches in the rendering core), then the Phase 6 tab model on top of it.
+
+## 2026-10-20 — Phase 5 (first part): function wrappers replaced by SBHooks (ARCH-01, half of it)
+Done (design, rules and the honest list of what is NOT done: `docs/PHASE5_HOOKS.md`):
+- `js/core/hooks.js` (`SBHooks.use` / `replace` / `list`): one registry for "this function is extended by other modules", composition order = script order = the old wrapper order. The 109 hand-made wrappers of 53 global functions (35 files; `switchSubjectTab` 14, `openSubject` 7, `getSubjectChapterList` 6, the Maths renderers, `continue_learning.js` 20...) now register with it; each wrapper body is unchanged.
+- `tools/wrappers_audit.js --check` (CI): no script may replace a global function itself any more (before: 53 functions / 109 replacements; now 0). `tests/contract/hooks.json` + `tests/hooks/hooks.js` (CI): who extends what, in which order.
+- Found on the way: the codemod removed a `const orig = window.f` that a nearby `typeof orig` guard still used (`continue_learning.js`, `test_prep.js`): both fixed; an orphan scan (`typeof` guards and later uses of the removed variable) found no other.
+
+Verified by: HTML snapshot of all 9,710 chapter/tab renders identical before and after, on the lazy and the normal page (0 differences, both pages equal); `tests/hooks/hooks.js` 17/0 (registry unit tests, lock file, continue-learning still records a chapter, Class 5 reader renders through the hook, an unowned subject reaches the original renderer); `tools/wrappers_audit.js --check` ok; smoke 0 failed on both pages; validate 995/0.
+
+Not verified: in a real browser; the render-time behaviour of the 19 `MutationObserver`s (not changed here: the snapshot cannot see them, see PHASE5_HOOKS.md); `continue_learning` beyond the recorded chapter, `word_stats` and `universal_translate` overrides (their hook registration is checked by the lock, their behaviour by the parity of what they wrap, not exercised).
+
+Risks: a new file that still wraps a function itself is caught by CI only after the fact; a function not defined when a module registers (hooking a name that does not exist yet) now throws instead of silently skipping where the old code returned early.
+
+Next: a DOM-level comparison tool (jsdom with working observers) so the observers can be converted module by module; then the rest of the Phase 5 list.

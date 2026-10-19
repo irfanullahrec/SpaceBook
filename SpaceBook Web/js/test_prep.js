@@ -1201,16 +1201,15 @@
   };
 
   // the cards on Tests Preps open this window instead of the old sample modal
-  window.openCompetitiveTestModal = function (testId) { open(testId); };
+  SBHooks.use('openCompetitiveTestModal', function () { return function (testId) { open(testId); }; });   // replaces the old modal: the Tests Preps page opens a test directly
   document.addEventListener('spacebook:auth', () => {
     store = null; pulledFor = null;
     pull().then(() => { if (S.B && document.querySelector('.tp-root') && !S.run) render(); });
   });
 
   // Tests Preps page: offer to continue an unfinished session
-  const origRenderTestsPreps = window.renderTestsPreps;
-  if (typeof origRenderTestsPreps === 'function') {
-    window.renderTestsPreps = function () {
+  if (typeof window.renderTestsPreps === 'function') {
+    SBHooks.use('renderTestsPreps', function (origRenderTestsPreps) { return function () {
       if (S.run && !S.run.finished) { persistRun(); stopTimer(); S.run = null; }
       const out = origRenderTestsPreps.apply(this, arguments);
       try {
@@ -1223,6 +1222,6 @@
         }
       } catch (e) { /* banner is optional */ }
       return out;
-    };
+    }; });
   }
 })();

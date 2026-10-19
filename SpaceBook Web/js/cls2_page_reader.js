@@ -13,17 +13,15 @@
 
   // Chapter list for the sidebar comes from the reviewed dataset.
   if (typeof window.getSubjectChapterList === 'function') {
-    const originalList = window.getSubjectChapterList;
-    window.getSubjectChapterList = function (subjKey, classId) {
+    SBHooks.use('getSubjectChapterList', function (originalList) { return function (subjKey, classId) {
       const B = book(subjKey, classId || (typeof state !== 'undefined' ? state.selectedClass : ''));
       return B && B.units && B.units.length ? B.units : originalList.apply(this, arguments);
-    };
+    }; });
   }
 
   // Rebuilt Class 2 subjects open in the generic subject workspace.
   if (typeof window.openSubject === 'function') {
-    const originalOpen = window.openSubject;
-    window.openSubject = function (classId, subjId) {
+    SBHooks.use('openSubject', function (originalOpen) { return function (classId, subjId) {
       if (classId === 'cls2' && books()[String(subjId).replace('cls2-', '')] && typeof window.openSubjectWorkspace === 'function') {
         const subs = (typeof DATA !== 'undefined' && DATA.subjects && DATA.subjects.cls2) || [];
         const subj = subs.find(s => s.id === subjId) || {id: subjId, name: 'Subject'};
@@ -36,7 +34,7 @@
         return;
       }
       return originalOpen.apply(this, arguments);
-    };
+    }; });
   }
 
   const R = window.MATH6_READER;
@@ -101,8 +99,7 @@
     return tagged(B, ch, i, tab);
   }
 
-  const originalSwitch = window.switchSubjectTab;
-  window.switchSubjectTab = function (subjKey, tabId, chIdx, classId) {
+  SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (subjKey, tabId, chIdx, classId) {
     const B = book(subjKey, classId);
     if (!B || !B.units || !B.units.length) return originalSwitch.apply(this, arguments);
     const ch = B.units[chIdx] || B.units[0];
@@ -114,5 +111,5 @@
     if (!container) return;
     container.innerHTML = withBook(B.words, B.book, () => render(B, ch, B.units.indexOf(ch), tabId));
     container.scrollTop = 0;
-  };
+  }; });
 })();

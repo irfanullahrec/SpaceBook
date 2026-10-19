@@ -94,6 +94,7 @@ function load(opts = {}) {
     sb.__sbCurrentSrc = s;                                            // lets js/core/lazy.js say which script caused a load
     try { vm.runInContext(code, sb, { filename: s, timeout: 60000 }); }
     catch (e) { loadFails.push(s + ': ' + (e && e.message)); }
+    if (opts.onScript) opts.onScript(s, sb);                          // tools/wrappers_audit.js: what did this script change?
   }
   const ms = Date.now() - t0;
   if (!opts.quiet) {

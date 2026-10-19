@@ -355,8 +355,7 @@
 
   // Intercept switchSubjectTab for Class 2
   if (typeof window.switchSubjectTab === 'function') {
-    const originalSwitch = window.switchSubjectTab;
-    window.switchSubjectTab = function (subjKey, tabId, chIdx, classId) {
+    SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (subjKey, tabId, chIdx, classId) {
       const isCls2 = (classId === 'cls2' || (typeof state !== 'undefined' && state.selectedClass === 'cls2'));
       if (isCls2) {
         const dataset = getSubjectDataset(subjKey);
@@ -385,13 +384,12 @@
         }
       }
       return originalSwitch.apply(this, arguments);
-    };
+    }; });
   }
 
   // Intercept openSubject for Class 2
   if (typeof window.openSubject === 'function') {
-    const originalOpen = window.openSubject;
-    window.openSubject = function (classId, subjId) {
+    SBHooks.use('openSubject', function (originalOpen) { return function (classId, subjId) {
       if (classId === 'cls2') {
         state.activeView = "subject-detail";
         state.selectedClass = classId;
@@ -404,7 +402,7 @@
         }
       }
       return originalOpen.apply(this, arguments);
-    };
+    }; });
   }
 
   console.log('Class 2 Unified Textbook Reader initialized for all 8 subjects.');

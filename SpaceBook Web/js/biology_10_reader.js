@@ -252,9 +252,8 @@
   }
 
   function wrap(name, replacement) {
-    const original = root[name];
-    if (typeof original !== 'function') return;
-    root[name] = function (...args) { return replacement(original, args); };
+    if (typeof root[name] !== 'function') return;
+    SBHooks.use(name, function (original) { return function (...args) { return replacement(original, args); }; });
   }
   wrap('renderScienceLessonSubContent', (old, args) => {
     const [subjKey, ch, subTab] = args;

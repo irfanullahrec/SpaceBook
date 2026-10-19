@@ -73,6 +73,10 @@ Rerun `tools/build/all.js` after data changes (CI runs it with `--check` and fai
 
 `sw.js`, `manifest.webmanifest`, `offline.html`, `icons/`, `js/core/offline.js`, `js/core/tts.js` (details: `docs/PHASE4_OFFLINE.md`). Rules: never cache `/api/` or another origin in the service worker; a book file is cached only under its `?v=<content hash>` URL; an update never deletes `sb-content-v1`, `sb-assets-v1` or anything in IndexedDB (the sync outbox lives there); read-aloud uses device voices only (no `translate_tts`, no third-party audio); no script, stylesheet or font from another website at start-up (`tools/validate.js` checks). After changing the page's scripts run `tools/build/all.js` (it regenerates the worker version and the offline map). Tests: `node tests/offline/sw.js`, `offline.js`, `tts.js`, and `node tests/offline/mutate.js` after touching `sw.js` or `offline.js`.
 
+## 4d. Extending a function of another file: SBHooks
+
+Never write `window.someFunction = function () { ... original ... }` for a function another file defined. Use `SBHooks.use('someFunction', next => function (...) { ... next.apply(this, arguments) ... })` to extend it or `SBHooks.replace('someFunction', fn)` to override it (`js/core/hooks.js`, loaded before `app.js`; details `docs/PHASE5_HOOKS.md`). Order = script order in `index.html`. `node tools/wrappers_audit.js --check` fails when a script still replaces a global function itself, and `node tests/hooks/hooks.js` compares who extends what with `tests/contract/hooks.json` (`--update` after an intended change).
+
 ## 4b. Database changes
 
 Never edit an applied migration and never create tables from endpoint code. Add `api/migrations/NNN_name.sql` (additive; idempotent `IF NOT EXISTS`) and, where safe, `NNN_name.down.sql`. The first request that finds the database behind applies pending migrations once under a database lock; `php api/migrate.php status|up|down [N]|prune` does the same by hand. Migration 001 has no down (it would drop student data). Take a `mysqldump` before migrating the live database. **A push to `main` deploys, and the first live request then runs any new migration.**

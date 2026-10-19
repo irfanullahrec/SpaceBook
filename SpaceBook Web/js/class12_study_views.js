@@ -5,16 +5,14 @@
   const safe = value => sanitize(String(value ?? ''));
   const subjectIds = {phys:'phy',chem:'chem',bio:'bio',stat:'stat',eng:'eng',urdu:'urdu',pakstudy:'pak',comp:'comp',civics:'civics',econ:'econ',hpe:'hpe',islopt:'islopt',islhist:'islhist',quran:'quran'};
   const subjectKey = id => Object.keys(subjectIds).find(key => id === key || id === 'cls12-'+subjectIds[key]);
-  const originalSelect=selectSubjectChapter;
-  selectSubjectChapter=function(key,index,classId){
+  SBHooks.use('selectSubjectChapter', function (originalSelect) { return function (key,index,classId) {
     if(classId !== 'cls12')return originalSelect(key,index,classId);
     state.selectedSubjChapter=index;
     document.querySelectorAll('.bio-ch-btn, .math-ch-btn').forEach((button,i)=>button.classList.toggle('active',i===index));
     const subject=(DATA.subjects.cls12||[]).find(item=>item.id==='cls12-'+subjectIds[key]);
     renderSubjectChapterView(key,index,classId,subject);
-  };
-  const originalGeneric=openGenericChapterDetails;
-  openGenericChapterDetails=function(classId,id,name,number){
+  }; });
+  SBHooks.use('openGenericChapterDetails', function (originalGeneric) { return function (classId,id,name,number) {
     if(classId==='cls12'&&id==='cls12-math'){
       const index=MATH_12_DATA.findIndex(ch=>String(ch.number??ch.num)===String(number));
       openSubject('cls12','cls12-math');
@@ -29,9 +27,8 @@
     state.selectedSubjChapter=index<0?0:index;
     state.activeSubjTab='lesson';
     openSubjectWorkspace(classId,key,subject);
-  };
-  const originalWorkspace=openSubjectWorkspace;
-  openSubjectWorkspace=function(classId,key,subject){
+  }; });
+  SBHooks.use('openSubjectWorkspace', function (originalWorkspace) { return function (classId,key,subject) {
     if(classId==='cls12'){
       const chapters=getSubjectChapterList(key,classId);
       if(!chapters[state.selectedSubjChapter])state.selectedSubjChapter=0;
@@ -42,7 +39,7 @@
       if(shell){shell.dataset.class12Subject=key;const count=shell.querySelector('.math-sidebar-sub');if(count)count.textContent=getSubjectChapterList(key,classId).length+' textbook units';}
     }
     return result;
-  };
+  }; });
   window.getClass12SubjectTabs=function(key,tabs){
     const result=tabs.filter(tab=>tab.id!=='booktext'); // same tab names as Class 9/10
     if(!result.some(tab=>tab.id===state.activeSubjTab))state.activeSubjTab='lesson';
@@ -139,8 +136,7 @@
     typesetChapterMath(container);
   };
   const studyClass=ch=>state.selectedClass==='cls12'||(state.selectedClass==='cls11'&&ch&&ch.class11Adapted);
-  const oldExercise=renderSubjectExerciseTab;
-  renderSubjectExerciseTab=function(key,ch){
+  SBHooks.use('renderSubjectExerciseTab', function (oldExercise) { return function (key,ch) {
     if(!studyClass(ch))return oldExercise(key,ch);
     const bank=renderBank(key,ch,'exercise');
     if(bank)return bank;
@@ -149,10 +145,9 @@
     const sections=(ch.sections||[]).filter(s=>/exercise|مشق|تمرین/i.test(s.title||''));
     if(!sections.length)return '<p class="class12-study-note">This unit has no separate saved textbook exercise. Its lesson and chapter questions remain available in the adjoining tabs.</p>';
     return '<h3>Textbook Exercises</h3>'+sections.map((s,i)=>`<details class="math-topic-card class12-source-exercise"><summary>${safe(s.title)}</summary>${s.sourceLayout?renderScienceSourceLayout(s,s.paras||getScienceSectionParagraphsWithTranslations(s,ch,key),'en','class12-ex-'+i):renderTextbookLessonBody(s.theory||s.content||'')}</details>`).join('');
-  };
-  const oldStudy=renderSubjectSLOsTab;
-  renderSubjectSLOsTab=function(key,ch){
+  }; });
+  SBHooks.use('renderSubjectSLOsTab', function (oldStudy) { return function (key,ch) {
     if(!studyClass(ch))return oldStudy(key,ch);
     return renderBank(key,ch,'study')||'<p class="class12-study-note">No separate chapter question bank is saved for this unit. The textbook questions are available under Exercises.</p>';
-  };
+  }; });
 })();

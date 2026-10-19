@@ -68,6 +68,11 @@ jobs:
         run: |
           node --max-old-space-size=6144 tests/content/integrity.js
           node --max-old-space-size=6144 tools/content_lint.js --check
+      - name: no function wrapped by another file (SBHooks) and the hook registry is as locked
+        working-directory: SpaceBook Web
+        run: |
+          node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
+          node --max-old-space-size=6144 tests/hooks/hooks.js
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js

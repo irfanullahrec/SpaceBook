@@ -79,22 +79,20 @@
   }
 
   function wrap(name, after) {
-    const orig = window[name];
-    if (typeof orig !== 'function' || orig.__sbWrapped) return;
-    const wrapped = function () {
-      const out = orig.apply(this, arguments);
-      try { after(Array.prototype.slice.call(arguments)); } catch (e) { /* never break navigation */ }
-      return out;
-    };
-    wrapped.__sbWrapped = true;
-    window[name] = wrapped;
+    if (typeof window[name] !== 'function') return;
+    SBHooks.use(name, function (orig) {
+      return function () {
+        const out = orig.apply(this, arguments);
+        try { after(Array.prototype.slice.call(arguments)); } catch (e) { /* never break navigation */ }
+        return out;
+      };
+    });
   }
 
   // openSubject: remember which subject is open, then offer to resume
   (function () {
-    const orig = window.openSubject;
-    if (typeof orig !== 'function') return;
-    window.openSubject = function (classId, subjId) {
+    if (typeof window.openSubject !== 'function') return;
+    SBHooks.use('openSubject', function (orig) { return function (classId, subjId) {
       hidePill(); // a pill from the previous subject must never linger
       current = { classId, subjId };
       openedAt = Date.now();
@@ -103,7 +101,7 @@
       try { out = orig.apply(this, arguments); } finally { opening = false; }
       if (!resuming) setTimeout(() => offerResume(classId, subjId), 350);
       return out;
-    };
+    }; });
   })();
 
   CHAPTER_FNS.forEach(fn => wrap(fn, args => record(fn, args)));

@@ -6,11 +6,10 @@
     ? getMath12StudyBank(chapter, section) : (chapter.slos || {});
   const nativeSourceRenderer = renderMathSourceBlocks;
   const languageDetails = (urdu,pashto,label) => (urdu || pashto) ? `<details class="math12-question-translations"><summary>${label || 'Urdu / Pashto'}</summary>${urdu ? `<p lang="ur" dir="rtl">${safe(urdu)}</p>` : ''}${pashto ? `<p lang="ps" dir="rtl">${safe(pashto)}</p>` : ''}</details>` : '';
-  const originalSourceOpening = renderMathSourceOpening;
-  renderMathSourceOpening = function (chapter) {
+  SBHooks.use('renderMathSourceOpening', function (originalSourceOpening) { return function (chapter) {
     const content=originalSourceOpening(chapter);
     return state.selectedClass === 'cls12' && content ? `<details class="math-topic-card math12-source-overview"><summary>Book information and learning objectives</summary>${content}</details>` : content;
-  };
+  }; });
 
   window.renderMath12TopicTabs = function (section) {
     return [['english','📖 English'],['urdu','🌐 Urdu'],['pashto','🌐 Pashto'],['video','🎥 Video'],['exercise','✍️ Topic Exercise'],['slos','🎯 Topic SLOs']]
@@ -129,18 +128,15 @@
     return null;
   };
 
-  const oldCategory=renderMathSloCategoryContent;
-  renderMathSloCategoryContent=function(category,bank) {
+  SBHooks.use('renderMathSloCategoryContent', function (oldCategory) { return function (category,bank) {
     return state.selectedClass === 'cls12' ? renderMath12StudyCategory(category,bank) : oldCategory(category,bank);
-  };
-  const oldStudyView=renderMathSLOs;
-  renderMathSLOs=function(chapter) {
+  }; });
+  SBHooks.use('renderMathSLOs', function (oldStudyView) { return function (chapter) {
     if (state.selectedClass !== 'cls12') return oldStudyView(chapter);
     const bank=chapterBank(chapter), active=state.activeMathSloCategory || 'mcqs';
     return `<section><h3>MCQs, Short Questions and Long Questions</h3><p class="math12-study-note">Textbook questions and chapter practice, with answers and worked solutions.</p><div class="category-sub-tabs-bar">${[['mcqs','MCQs','mcqs'],['sqs','Short Questions','shortQuestions'],['lqs','Long Questions','longQuestions']].map(([key,label,field])=>`<button type="button" class="category-sub-tab-btn slo-sub-cat-btn ${active===key?'active':''}" data-cat="${key}" onclick="switchMathSloCategory('${key}')">${label} (${(bank[field]||[]).length})</button>`).join('')}</div><div id="mathSloContentArea">${renderMath12StudyCategory(active,bank)}</div></section>`;
-  };
-  const oldExercises=renderMathExercises;
-  renderMathExercises=function(chapter) {
+  }; });
+  SBHooks.use('renderMathExercises', function (oldExercises) { return function (chapter) {
     if (state.selectedClass !== 'cls12' || !chapter.exercises?.length) return oldExercises(chapter);
     // Keep original indexes: switchMathEx reads the original chapter array.
     const visible=chapter.exercises.map((exercise,index)=>({exercise,index})).filter(({exercise})=>exercise.problems?.length || exercise.sourceContextBlocks?.length);
@@ -149,5 +145,5 @@
     const html=`<div class="math-sub-tabs">${visible.map(({exercise,index})=>`<button type="button" class="math-sub-tab-btn ${index===selected.index?'active':''}" data-ex="${index}" onclick="switchMathEx('${index}')">${safe(exercise.title || exercise.exercise)}</button>`).join('')}</div><div id="mathExerciseContent"></div>`;
     setTimeout(()=>{if(state.activeMathTab==='exercises' && context()===chapter)switchMathEx(String(selected.index));},10);
     return html;
-  };
+  }; });
 })();

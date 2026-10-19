@@ -31,7 +31,7 @@
     const meanings=MATH12_WORD_MEANINGS[key];
     return meanings ? `<button type="button" data-math12-word="${safe(key)}" onclick="math12ShowWord(this,event)" title="اردو: ${safe(meanings[0])} | پښتو: ${safe(meanings[1])}" style="font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline dotted;text-underline-offset:4px;cursor:help;">${safe(token)}</button>` : safe(token);
   }).join('')).join('');
-  renderMathSourceBlocks = function (blocks) {
+  SBHooks.replace('renderMathSourceBlocks', function (blocks) {
     return blocks.map(block => {
       if(block.type==='list'&&block.items.some(text=>MATH12_SENTENCE_TRANSLATIONS[text]))return `<ul class="math-book-list">${block.items.map(text=>`<li>${renderMathSourceBlocks([{type:'paragraph',text,sentenceTranslations:MATH12_SENTENCE_TRANSLATIONS[text]}])}</li>`).join('')}</ul>`;
       if (!block.sentenceTranslations) {
@@ -40,5 +40,5 @@
       }
       return `<div class="math-book-body math12-translated-passage">${block.sentenceTranslations.map(pair => `<details style="margin:.75rem 0;line-height:1.9;"><summary style="cursor:pointer;">${words(pair.en)}</summary><div style="padding:.7rem;border-left:3px solid #0284c7;background:#f0f9ff;"><div>${listen(pair.en,'en')}</div><p lang="ur" dir="rtl" style="text-align:right;font-size:1.15rem;line-height:2.2;">${safe(pair.ur)}</p><div>${listen(pair.ur,'ur')}</div><p lang="ps" dir="rtl" style="text-align:right;font-size:1.1rem;line-height:2;">${safe(pair.ps)}</p><div>${listen(pair.ps,'ps')}</div></div></details>`).join('')}</div>`;
     }).join('');
-  };
+  });
 })();

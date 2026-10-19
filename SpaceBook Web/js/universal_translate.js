@@ -593,25 +593,25 @@
   // Clicking a word keeps whatever the page already does on click (sentence
   // translation, drawers…); word translation now opens on hover / long-press.
   // Only an explicit vocabulary card still opens the card when clicked.
-  window.showWordLookupPopover = function (wordText, targetEl, event) {
+  SBHooks.replace('showWordLookupPopover', function (wordText, targetEl, event) {
     if (!(targetEl && targetEl.closest && targetEl.closest('.vocab-card'))) return;
     const word = String(wordText || '').trim().replace(/^[^\w؀-ۿ]+|[^\w؀-ۿ]+$/g, '');
     if (!word) return;
     state.range = null;
     openCard(word, null, rectOf(targetEl, event));
-  };
-  window.closeWordLookupPopover = function () {
+  });
+  SBHooks.replace('closeWordLookupPopover', function () {
     const old = document.getElementById('eng-word-popover');
     if (old) old.remove();
     if (card && card.dataset.via === 'select') hideCard();
-  };
+  });
 
   // app.js' small hover tooltip (Urdu + Pashto) would sit on top of the hover
   // card, which already shows all four languages — keep it hidden
   if (typeof window.showWordHoverTooltip === 'function') {
-    window.showWordHoverTooltip = function () {
+    SBHooks.replace('showWordHoverTooltip', function () {
       if (typeof window.hideWordHoverTooltip === 'function') window.hideWordHoverTooltip();
-    };
+    });
   }
 
   // Arabic for step-by-step solution panels (steps carry en/ur/ps only):

@@ -28,8 +28,7 @@
 
   root.SpaceBookLessonMath = {mathParts, renderMath};
   if (typeof root.renderInteractiveParagraphHtml !== 'function') return;
-  const originalReader = root.renderInteractiveParagraphHtml;
-  root.renderInteractiveParagraphHtml = function (text, urdu, pashto, index, preserveAlignedParagraph) {
+  SBHooks.use('renderInteractiveParagraphHtml', function (originalReader) { return function (text, urdu, pashto, index, preserveAlignedParagraph) {
     const classId = typeof state !== 'undefined' ? state.selectedClass : '';
     if (classId !== 'cls9' && classId !== 'cls10') return originalReader(text,urdu,pashto,index,preserveAlignedParagraph);
     const parts = mathParts(text);
@@ -41,5 +40,5 @@
     html = html.replace(/<span\b[^>]*data-word="SPACEBOOKMATH(\d+)TOKEN"[^>]*>([^<]*)<\/span>/g, (_,number,content) => content.replace(`SPACEBOOKMATH${number}TOKEN`,renderMath(equations[Number(number)])));
     // Source notation remains in hidden speech/translation attributes only.
     return html.replace(/SPACEBOOKMATH(\d+)TOKEN/g, (_,number) => escape(equations[Number(number)].original));
-  };
+  }; });
 })(typeof window !== 'undefined' ? window : globalThis);

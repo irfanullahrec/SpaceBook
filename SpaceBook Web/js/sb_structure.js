@@ -111,7 +111,7 @@
   // ---------- the per-chapter plan ----------
   const plans = new Map();
   let planning = false;
-  const original = window.switchSubjectTab;
+  let original = null;          // the chain below this wrapper: set when SBHooks builds it (makePlan below also calls it directly)
   const tabButtons = () => [...document.querySelectorAll('.math-nav-tabs .math-tab-btn[data-tab]')];
   // book order: the text (and its glossary), what it teaches, its key points, then the exercise and its parts,
   // and last the board practice that is not in the book
@@ -248,7 +248,7 @@
     container.prepend(wrap);
   }
 
-  window.switchSubjectTab = function (subjKey, tabId, chIdx, classId) {
+  SBHooks.use('switchSubjectTab', function (next) { original = next; return function (subjKey, tabId, chIdx, classId) {
     if (planning) return original.apply(this, arguments);
     if (tabId === 'lesson') {
       if (state.activeScienceLessonSubTab === 'exercise' || state.activeScienceLessonSubTab === 'slos') state.activeScienceLessonSubTab = 'translations';
@@ -283,7 +283,7 @@
     if (tabId === 'lesson') { cleanLessonSubTabs(); if (container) applyLesson(plan, container); }
     else if (container) applyMoved(plan, tabId, container);
     return r;
-  };
+  }; });
   // The chapter view is sometimes drawn again without switchSubjectTab (saving progress, the sidebar tick,
   // full screen, a resize): the fresh tab bar would show every tab again. Re-apply the plan to any new bar.
   function currentRef() {
@@ -312,8 +312,8 @@
 
   // lesson sub-tab switches re-render the lesson body: keep it clean
   ['switchScienceLessonSubTab', 'switchLangLessonSubTab'].forEach(name => {
-    const fn = window[name]; if (typeof fn !== 'function') return;
-    window[name] = function (subjKey, sub) {
+    if (typeof window[name] !== 'function') return;
+    SBHooks.use(name, function (fn) { return function (subjKey, sub) {
       if (sub === 'exercise' || sub === 'slos') sub = name === 'switchLangLessonSubTab' ? 'paragraphs' : 'translations';
       const r = fn.call(this, subjKey, sub);
       cleanLessonSubTabs();
@@ -321,7 +321,7 @@
       const container = document.getElementById('subjTabContent');
       if (plan && container && (sub === 'translations' || sub === 'paragraphs')) applyLesson(plan, container);
       return r;
-    };
+    }; });
   });
 
   // ---------- Maths view (switchMathTab): exercises live in Exercises; examples stay where the book puts them ----------
@@ -360,8 +360,7 @@
     });
   }
   if (typeof window.switchMathTab === 'function') {
-    const origMath = window.switchMathTab;
-    window.switchMathTab = function (tabName, skipScroll) {
+    SBHooks.use('switchMathTab', function (origMath) { return function (tabName, skipScroll) {
       const plan = mathPlan();
       if (plan && plan.hideExamples && tabName === 'examples') tabName = 'lesson';
       const r = origMath.call(this, tabName, skipScroll);
@@ -377,7 +376,7 @@
       }
       applyMathTabs(plan);
       return r;
-    };
+    }; });
   }
 
   // ---------- Maths topic cards ----------

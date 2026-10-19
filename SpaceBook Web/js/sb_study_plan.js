@@ -1007,7 +1007,7 @@
 
   // ---------- start ----------
   plans = loadLocal();
-  window.renderStudyPlan = function () { view = {mode: 'list'}; render(); };
+  SBHooks.replace('renderStudyPlan', function () { view = {mode: 'list'}; render(); });
   function start() {
     addCss();
     setInterval(tick, 30000);
