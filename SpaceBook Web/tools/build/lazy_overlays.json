@@ -1,0 +1,46 @@
+{
+  "comment": "Scripts that only patch a lazily loaded data file at load time. They are taken out of the page and run right after their parent file loads (parent -> [overlays in the original script order]).",
+  "after": {
+    "js/chem_12_data.js": [
+      "js/chem12_unit13_study.js",
+      "js/chem12_exercise_banks.js"
+    ],
+    "js/phys_12_data.js": [
+      "js/phys12_unit11_study.js",
+      "js/phys12_exercise_banks.js"
+    ],
+    "js/pakstudy_12_data.js": [
+      "js/pakstudy12_exercise_banks.js"
+    ],
+    "js/civics_12_data.js": [
+      "js/civics12_exercise_banks.js"
+    ],
+    "js/hpe_12_data.js": [
+      "js/hpe12_exercise_banks.js"
+    ],
+    "js/islamiat_ikhtiari_12_data.js": [
+      "js/islopt12_exercise_banks.js"
+    ],
+    "js/islamic_history_12_data.js": [
+      "js/islhist12_exercise_banks.js"
+    ],
+    "js/economics_12_data.js": [
+      "js/econ12_exercise_banks.js"
+    ],
+    "js/urdu_12_data.js": [
+      "js/urdu12_exercise_banks.js"
+    ],
+    "js/english_12_data.js": [
+      "js/eng12_exercise_banks.js"
+    ],
+    "js/computer_12_data.js": [
+      "js/comp12_exercise_banks.js"
+    ],
+    "js/stat_12_data.js": [
+      "js/stat12_exercise_banks.js"
+    ],
+    "js/quran_12_data.js": [
+      "js/quran12_exercise_banks.js"
+    ]
+  }
+}

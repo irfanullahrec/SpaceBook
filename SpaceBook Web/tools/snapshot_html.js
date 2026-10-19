@@ -38,9 +38,10 @@ if (args[0] === '--compare') {
 const { load } = require('./lib/app_sandbox');
 const OUT = path.resolve(ROOT, opt('out') || path.join('tests', 'baseline', 'html-' + new Date().toISOString().slice(0, 10)));
 const ONLY = opt('only') ? opt('only').split(',') : null;
-const app = load();
+const app = load({ page: opt('page') || 'index.html' });          // --page lazy.html: the lazy-loading page (tools/build/make_lazy.js)
 const subjects = app.run('DATA.classes.flatMap(c => (DATA.subjects[c.id] || []).map(s => ({ classId: c.id, id: s.id, name: s.name })))')
   .filter(s => !ONLY || ONLY.includes(s.classId) || ONLY.includes(s.id));
+if (args.includes('--reverse')) subjects.reverse();                  // order-dependence check: subjects in the opposite order
 let nCh = 0, nTab = 0, nErr = 0;
 const t0 = Date.now();
 for (const s of subjects) {
@@ -68,3 +69,4 @@ for (const s of subjects) {
   fs.writeFileSync(path.join(OUT, s.classId, s.id + '.json'), JSON.stringify(rec) + '\n');
 }
 console.log(`snapshot ${path.relative(ROOT, OUT)}: ${subjects.length} subjects, ${nCh} chapters, ${nTab} tab renders, ${nErr} step errors, ${((Date.now() - t0) / 60000).toFixed(1)} min`);
+if (app.sb.SBLazy) { const st = app.sb.SBLazy.stats(); console.log(`lazy files loaded by the end: ${st.loaded} of ${st.files} (${(st.bytesLoaded / 1e6).toFixed(0)} of ${(st.bytesTotal / 1e6).toFixed(0)} MB)`); }

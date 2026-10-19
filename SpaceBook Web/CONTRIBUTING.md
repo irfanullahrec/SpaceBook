@@ -67,6 +67,10 @@ Rerun the generators after data changes. Data changes are reviewed as diffs; do 
 
 `tests/trace` records only data globals read while a subject is opened and its tabs rendered (first/middle/last chapter). A global that appears "never read" may still be used at load time or by features the tracer does not open; do not remove a file on that evidence alone.
 
+## 4a. Lazy book data
+
+`lazy.html` is generated from `index.html` (`node tools/build/make_lazy.js`; details and numbers in `docs/PHASE3_LAZY_LOADING.md`). Adding or renaming a script in `index.html`, or changing which globals a data file defines, makes it stale: regenerate and commit it (CI runs `make_lazy.js --check` and `tools/build/lazy_parity.js`, which renders every subject on both pages and requires identical HTML). A script that only patches lazy data at load goes into `tools/build/lazy_overlays.json`; a data-like file that must be in the page at load goes into `lazy_eager.json`.
+
 ## 4b. Database changes
 
 Never edit an applied migration and never create tables from endpoint code. Add `api/migrations/NNN_name.sql` (additive; idempotent `IF NOT EXISTS`) and, where safe, `NNN_name.down.sql`. The first request that finds the database behind applies pending migrations once under a database lock; `php api/migrate.php status|up|down [N]|prune` does the same by hand. Migration 001 has no down (it would drop student data). Take a `mysqldump` before migrating the live database. **A push to `main` deploys, and the first live request then runs any new migration.**

@@ -38,8 +38,15 @@ function memoryStorage() {
 }
 
 function load(opts = {}) {
-  const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-  const srcs = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)].map(m => m[1].split('?')[0]);
+  const page = opts.page || 'index.html';
+  const html = fs.readFileSync(path.join(ROOT, page), 'utf8');
+  // scripts in page order; the only inline script run is the lazy-loading manifest of lazy.html (tools/build/make_lazy.js)
+  const items = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].map(m => {
+    const src = (m[1].match(/\bsrc="([^"]+)"/) || [])[1];
+    if (src) return { src: src.split('?')[0] };
+    return /^\s*window\.SB_LAZY_MANIFEST\s*=/.test(m[2]) ? { inline: m[2] } : null;
+  }).filter(Boolean);
+  const srcs = items.filter(i => i.src).map(i => i.src);
   const registry = {};
   const document = {
     getElementById(id) { if (!registry[id]) registry[id] = makeEl(id); return registry[id]; },
@@ -76,11 +83,15 @@ function load(opts = {}) {
   const sb = vm.createContext(g);
   vm.runInContext('globalThis.window = globalThis; globalThis.self = globalThis;', sb);
   if (opts.before) opts.before(sb);
+  if (opts.lazy !== false && items.some(i => i.inline)) sb.SB_LAZY_FETCH = url => fs.readFileSync(path.join(ROOT, url), 'utf8');   // lazy.js loads files synchronously
   const t0 = Date.now(), loadFails = [];
-  for (const s of srcs) {
+  for (const it of items) {
+    if (it.inline) { try { vm.runInContext(it.inline, sb, { filename: 'inline-manifest' }); } catch (e) { loadFails.push('inline manifest: ' + e.message); } continue; }
+    const s = it.src;
     let code = fs.readFileSync(path.join(ROOT, s), 'utf8');
     // tracing: top-level data constants become configurable globals so they can later be swapped for logging getters
     if (opts.trace) code = code.replace(/^(?:const|let|var)\s+([A-Z][A-Z0-9_]{2,})\s*=/gm, 'globalThis.$1 =');
+    sb.__sbCurrentSrc = s;                                            // lets js/core/lazy.js say which script caused a load
     try { vm.runInContext(code, sb, { filename: s, timeout: 60000 }); }
     catch (e) { loadFails.push(s + ': ' + (e && e.message)); }
   }

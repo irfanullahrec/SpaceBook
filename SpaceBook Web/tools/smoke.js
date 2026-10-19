@@ -3,7 +3,7 @@
  * through its public functions.   node tools/smoke.js   (exit 1 on any failure) */
 const vm = require('vm');
 const { load } = require('./lib/app_sandbox');
-const app = load();
+const app = load({ page: process.env.SB_PAGE || 'index.html' });     // SB_PAGE=lazy.html runs every check against the lazy-loading page
 const sb = app.sb;
 if (app.loadFails.length) { console.log('FAIL  every index.html script loads -> ' + app.loadFails.join(' | ')); process.exitCode = 1; }
 

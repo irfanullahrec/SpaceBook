@@ -1,0 +1,5 @@
+{
+  "comment": "Data-like files that must stay in the page's own script list: the registry every script reads at load, plus files found by tools/build/measure_lazy.js to be needed at page load anyway.",
+  "files": ["data.js", "word_stats_summary.js"],
+  "privateHelpers": ["unitOf", "isAuthored"]
+}

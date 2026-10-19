@@ -29,3 +29,7 @@ api/.schema-*
 node_modules/
 tests/baseline/*/shots/
 tests/baseline/*/run.log
+
+# analysis outputs of tools/build/inventory.js and probe_files.js (regenerated on demand)
+tests/contract/script_inventory.json
+tests/contract/file_probe.json

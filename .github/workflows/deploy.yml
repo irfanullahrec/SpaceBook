@@ -43,6 +43,12 @@ jobs:
       - name: smoke (loads the whole app, opens every rebuilt book and tab)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/smoke.js
+      - name: lazy page is up to date (lazy.html, content/lazy_manifest.json)
+        working-directory: SpaceBook Web
+        run: node tools/build/make_lazy.js --check
+      - name: lazy page renders exactly like the eager page (every subject, chapter and tab)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tools/build/lazy_parity.js
       - name: install dev tools (fake IndexedDB for the client tests; no browser download)
         working-directory: SpaceBook Web
         env:
