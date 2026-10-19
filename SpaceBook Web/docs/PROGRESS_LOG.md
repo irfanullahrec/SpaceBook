@@ -29,3 +29,24 @@ Risks / owner decisions needed:
 - The live server runs PHP 7.4.33 (earlier health output), not PHP 8 as the start prompt says. api/ must stay 7.4-compatible until the host is upgraded.
 
 Next: Phase 1 (baseline runner, repair validate.js/smoke.js, tracer, CI test gate).
+
+## 2026-10-19 — Phase 1 (in progress): safety net
+Done:
+- Branch `phase/p1-safety-net` (tag `checkpoint/p1-start`).
+- `tools/validate.js`: no longer crashes (every check runs inside `safe()`); sandbox defines `window`; 35 stale pre-rebuild checks replaced by Contract C checks over all 92 `CLSn_BOOKS` files plus a unit-count lock `tests/contract/cls_books.json` (`--update-books` to accept a rebuild).
+- `tools/smoke.js`: now loads all 248 index.html scripts in order (`tools/lib/app_sandbox.js`); 41 stale tests replaced by one test that opens 88 rebuilt books through the real reader and renders every tab of the first and last unit, plus 10 Class 12 books.
+- `package.json` (dev-only, Playwright 1.63.0) and `tests/baseline/{lib,run}.js` (browser baseline runner).
+
+Verified by:
+- `node tools/validate.js` → 946 passed, 0 failed (two runs; was 10 failures then a crash). Changing a locked count makes it fail.
+- `node tools/smoke.js` → 251 passed, 0 failed, ~21 s (two runs; was 32 failures). A wrong expected count makes it fail.
+
+Not verified:
+- The Playwright baseline runner has NOT completed a run. Two trial runs crashed the page ("Target crashed") while free RAM was 0.5–1.2 GB of 7.9 GB; the app needs ~0.7 GB per page. An earlier probe with `explore.js` did load the app in Chrome with 0 console errors.
+- No tracer, no CI test job, no CONTRIBUTING.md rewrite yet.
+- Baseline stability (≥ 99.5 % hash match over two runs) not measured.
+
+Known tests dropped (reasons in commit messages): old Drawing 2/3, Maths 1/2/3 tab tests and legacy counts for rebuilt books.
+
+Risks / owner decisions: baseline needs ~1.5 GB free RAM; close other programs or run it on a bigger machine.
+Next: re-run the baseline with free RAM, then tracer, CI gate, CONTRIBUTING.md.
