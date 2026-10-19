@@ -221,11 +221,8 @@
       synth.speak(u);
       return;
     }
-    if (lang === 'ps') { toast('Pashto voice is not available on this device'); return; }
-    try {
-      const a = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=' + lang + '&q=' + encodeURIComponent(clean.slice(0, 190)));
-      a.play().catch(() => toast('Audio is not available right now'));
-    } catch (e) { toast('Audio is not available right now'); }
+    // read aloud only with voices installed on the device: no text is sent to a website, and it works offline
+    toast((info.name || lang.toUpperCase()) + ' voice is not available on this device');
   }
 
   // ── DOM helpers ─────────────────────────────────────────────────────────

@@ -319,3 +319,21 @@ Done in Phase 3: lazy loading of 153 book files (347 MB) with parity proof (9,71
 Measured against the phase's acceptance criteria (Node sandbox; no real browser): initial transfer 1.6 MB gzip (<= 3 MB) met; DOMContentLoaded-equivalent 0.18-0.29 s (<= 2 s) met; heap after home 21 MB (<= 80 MB) met; all subjects parity-green met; derived files always current (CI) met; **no eval in content lookup: not met** (4 lookups in `class11_study_views.js`, `class12_exercise_banks.js`, `universal_translate.js`, plus the loader's own indirect eval).
 
 Carried forward, with the reason: Book Content Contract v1 (schema, validator, adapters, per-book count reports), `SB.content.getBook`, registry-driven `openSubject`/chapter lookup, the remaining 67 `state.selectedClass` tests in `app.js`, the eval lookups. They are a consumer migration across 147 subjects whose payoff is the render core (Phase 5) and the multilingual engine (Phase 7); doing them now would move every consumer twice. Phase 4 (offline) starts from the lazy manifest instead, which already gives hashed, cacheable book packages.
+
+## 2026-10-20 — Phase 4: offline-first (service worker, downloads, device voices)
+Done (details and the honest "not verified" list: `docs/PHASE4_OFFLINE.md`):
+- `sw.js` + generated `content/sw_version.js`: versioned shell cache (103 files), hash-addressed book cache that survives updates, asset cache; never caches the API, other origins or non-GET; updates wait for the student. `manifest.webmanifest`, `icons/` (192, 512, maskable, apple-touch; drawn, replaceable), `offline.html`. `index.html` links the manifest and no longer links Google Fonts.
+- `js/core/offline.js` + `css/offline.css`: service worker registration and the "Update now" banner; the "Offline books" dialog (⬇ in the header): per-subject sizes, free space, download with progress and sha256 verification (CRLF-tolerant), quota check before and during, abort, remove that keeps files other subjects share, persistent-storage request; offline badge; message when a book cannot be fetched.
+- `tools/build/make_offline.js` (part of `tools/build/all.js`): `content/offline_map.json` (what each of the 147 subjects loads, found by rendering all of it in a fresh app) and the worker version/shell list.
+- Read-aloud: `js/core/tts.js` + `css/tts.css`; the English and Urdu sentence readers and the universal translator speak with device voices only (Google translate_tts removed), buttons are hidden for a language with no voice, a cancelled utterance no longer advances the reading.
+- `js/core/lazy.js`: fetches a subject's files before running any of them, resets the "loaded" mark when a fetch fails (so it can be retried after a download), signals `sb:lazy-error`, treats status 0 with no text as a failure.
+- Fewer accidental downloads: Class 9/10/11 physics no longer loads the 18 MB Class 12 book, Class 6-10 subjects no longer load the Class 11 book of the same key, Class 11/12 English no longer loads Class 10 English (rendered output unchanged).
+- Tests: `tests/offline/{sw,offline,tts}.js` (33 + 41 + 23), `tests/offline/mutate.js` (9 mutations, all caught), validate.js offline section (11 checks), CI steps.
+
+Verified by: the three suites above (all pass), mutation run (all caught), validate 993/0, smoke 0 failed on both pages, HTML snapshot eager = lazy = previous eager (0 differences in 9,710 renders), ARCH-02 matrix 0 differences.
+
+Not verified: any of it in a real browser (service worker lifecycle, install prompt, a synchronous XHR answered by the worker, real storage quota, Safari eviction, Lighthouse PWA audit, the look of the dialog, speech on real voices); the `.htaccess` template; fonts are not bundled (waiting for your OK to download the Noto fonts).
+
+Risks: Urdu read-aloud is now only as good as the Urdu voice on the device (many phones have none: the button is then hidden instead of calling Google); subjects of Classes 7-10 still pull their Class 6 sibling book for its word list (Phase 7); `start_url` stays `lazy.html` until the cut-over.
+
+Next: Phase 5 (hooks instead of patches in the rendering core), starting from the wrappers and observers list in the audit.

@@ -57,6 +57,12 @@ jobs:
       - name: derived files are up to date (word stats, MCQ bank, study index, lazy page: tools/build/all.js)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/build/all.js --check
+      - name: offline layer (service worker, offline module, read-aloud)
+        working-directory: SpaceBook Web
+        run: |
+          node tests/offline/sw.js
+          node tests/offline/offline.js
+          node --max-old-space-size=6144 tests/offline/tts.js
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js

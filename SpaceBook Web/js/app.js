@@ -4053,6 +4053,7 @@ function prepareEngTextForTts(rawText, prefix, isPoetry = false, startLineNum = 
 
 // ─── English TTS Engine (Direct Neural Speech Stream & 60-FPS Real-Time Highlighting) ───
 function stopEngTTS() {
+  engTtsState.token = (engTtsState.token || 0) + 1;   // events of the utterance cancelled below must not advance the reading
   if (engTtsState.audioObj) {
     try {
       engTtsState.audioObj.pause();
@@ -4180,104 +4181,61 @@ function playNextEngSentence() {
   const weights = words.map(w => Math.max(2, w.length));
   const totalWeight = weights.reduce((a, b) => a + b, 0);
 
-  // Authentic English Neural Speech Stream (Google Audio Engine)
-  const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(cleanText)}`;
-  
-  let audio = new Audio(audioUrl);
-  engTtsState.audioObj = audio;
-
-  // Distinct vocal characteristics:
-  // Male Voice: 0.88x rate (rich baritone pacing)
-  // Female Voice: 1.06x rate (fluent clear feminine pacing)
-  if (gender === "male") {
-    audio.playbackRate = 0.88 * (engTtsState.speechRate || 1.0);
-  } else {
-    audio.playbackRate = 1.06 * (engTtsState.speechRate || 1.0);
+  // Speak with a voice installed on this device: nothing is requested from any website (works offline, the text never leaves the device)
+  if (!('speechSynthesis' in window) || (window.SBTTS && !window.SBTTS.hasVoice('en'))) {
+    stopEngTTS();
+    if (window.SBTTS) window.SBTTS.toast('No English voice is installed on this device.');
+    return;
   }
+  const voice = window.SBTTS ? window.SBTTS.pickVoice('en', gender) : null;
+  const token = engTtsState.token = (engTtsState.token || 0) + 1;   // events of an utterance that was cancelled (stop, new speed) must not advance the reading
+  const utterance = new SpeechSynthesisUtterance(cleanText);
+  utterance.lang = voice ? voice.lang : 'en-US';
+  if (voice) utterance.voice = voice;
+  // male voice: lower and slower; female voice: brighter and a little faster
+  utterance.rate = (engTtsState.speechRate || 1.0) * (gender === 'male' ? 0.92 : 1.05);
+  utterance.pitch = gender === 'male' ? 0.88 : 1.25;
 
-  let lastHighlightedRelIdx = -1;
-  let hasFinished = false;
-  let animFrameId = null;
-
-  const cancelSyncLoop = () => {
-    if (animFrameId) {
-      cancelAnimationFrame(animFrameId);
-      animFrameId = null;
-    }
+  // where each word of the spoken text starts, to turn a boundary event into the word to highlight
+  const wordStarts = [...cleanText.matchAll(/\S+/g)].map(m => m.index);
+  const wordAt = charIndex => {
+    let k = 0;
+    for (let i = 0; i < wordStarts.length; i++) { if (charIndex >= wordStarts[i]) k = i; else break; }
+    return Math.min(k, words.length - 1);
   };
 
+  let hasFinished = false, sawBoundary = false, walkTimer = null;
+  const stopWalk = () => { if (walkTimer) { clearTimeout(walkTimer); walkTimer = null; } };
   const advanceNext = () => {
     if (hasFinished) return;
     hasFinished = true;
-    cancelSyncLoop();
-    if (engTtsState.audioObj === audio) engTtsState.audioObj = null;
+    stopWalk();
+    if (token !== engTtsState.token) return;
     engTtsState.currentSentenceIdx++;
-    if (engTtsState.isPlaying) {
-      setTimeout(playNextEngSentence, 80);
-    }
+    if (engTtsState.isPlaying) setTimeout(playNextEngSentence, 80);
   };
 
-  // 🎯 60-FPS REAL-TIME SYNC LOOP: Synchronizes word highlighting with speaker's voice in real-time
-  const syncHighlightLoop = () => {
-    if (!engTtsState.isPlaying || hasFinished || audio.paused) return;
-
-    if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) {
-      // Audio lead-in compensation (120ms initial silence, 150ms trailing silence)
-      const leadIn = 0.12;
-      const leadOut = 0.15;
-      const effectiveDuration = Math.max(0.1, audio.duration - (leadIn + leadOut));
-      const currentSpeechTime = Math.max(0, audio.currentTime - leadIn);
-      const progress = Math.min(0.999, currentSpeechTime / effectiveDuration);
-
-      let runningWeight = 0;
-      let targetIdx = 0;
-      for (let i = 0; i < weights.length; i++) {
-        const wStart = runningWeight / totalWeight;
-        const wEnd = (runningWeight + weights[i]) / totalWeight;
-        if (progress >= wStart && progress < wEnd) {
-          targetIdx = i;
-          break;
-        }
-        runningWeight += weights[i];
-      }
-
-      if (targetIdx !== lastHighlightedRelIdx) {
-        lastHighlightedRelIdx = targetIdx;
-        highlightEngWord(prefix, sent.startIdx + targetIdx, gender);
-      }
-    }
-
-    animFrameId = requestAnimationFrame(syncHighlightLoop);
+  utterance.onboundary = function (e) {
+    if (token !== engTtsState.token || (e.name && e.name !== 'word')) return;
+    sawBoundary = true;
+    stopWalk();
+    highlightEngWord(prefix, sent.startIdx + wordAt(e.charIndex || 0), gender);
   };
-
-  audio.onplay = function() {
-    lastHighlightedRelIdx = 0;
+  utterance.onstart = function () {
+    if (token !== engTtsState.token) return;
     highlightEngWord(prefix, sent.startIdx, gender);
-    cancelSyncLoop();
-    animFrameId = requestAnimationFrame(syncHighlightLoop);
+    // Some voices send no boundary events: then step through the words by their length at an estimated speaking speed (about 13 characters a second).
+    const total = Math.max(600, cleanText.length / (13 * utterance.rate) * 1000);
+    const walk = i => {
+      if (hasFinished || sawBoundary || token !== engTtsState.token || !engTtsState.isPlaying) return;
+      if (engTtsState.isPaused) { walkTimer = setTimeout(() => walk(i), 200); return; }
+      highlightEngWord(prefix, sent.startIdx + i, gender);
+      if (i + 1 < words.length) walkTimer = setTimeout(() => walk(i + 1), total * weights[i] / totalWeight);
+    };
+    walkTimer = setTimeout(() => walk(1), 700);                     // give real boundary events a moment to arrive first
   };
-
-  audio.onpause = cancelSyncLoop;
-  audio.onended = advanceNext;
-
-  audio.onerror = function() {
-    // If audio network stream fails (offline), fallback directly to Web Speech synthesis
-    cancelSyncLoop();
-    if (window.speechSynthesis) {
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = "en-US";
-      utterance.rate = (engTtsState.speechRate || 1.0) * (gender === 'male' ? 0.92 : 1.05);
-      utterance.pitch = (gender === 'male' ? 0.88 : 1.25);
-      utterance.onstart = () => highlightEngWord(prefix, sent.startIdx, gender);
-      utterance.onend = advanceNext;
-      utterance.onerror = advanceNext;
-      try {
-        window.speechSynthesis.speak(utterance);
-        return;
-      } catch(e) {}
-    }
-    advanceNext();
-  };
+  utterance.onend = advanceNext;
+  utterance.onerror = advanceNext;
 
   // Update floating dock progress
   const progressEl = $("dockEngProgress");
@@ -4285,13 +4243,7 @@ function playNextEngSentence() {
     progressEl.textContent = `Sentence ${engTtsState.currentSentenceIdx + 1} of ${engTtsState.sentences.length}`;
   }
 
-  const playPromise = audio.play();
-  if (playPromise !== undefined) {
-    playPromise.catch(() => {
-      // Autoplay or network fallback
-      audio.onerror();
-    });
-  }
+  try { window.speechSynthesis.speak(utterance); } catch (e) { advanceNext(); }
 }
 
 function playEngTTS(prefix, gender, rawText, sectionTitle) {
@@ -6146,6 +6098,7 @@ function prepareUrduTextForTts(rawText, prefix) {
 }
 
 function stopUrduTTS() {
+  urduTtsState.token = (urduTtsState.token || 0) + 1;   // events of the utterance cancelled below must not advance the reading
   if (urduTtsState.audioObj) {
     try {
       urduTtsState.audioObj.pause();
@@ -6292,100 +6245,22 @@ function playNextUrduSentence() {
   const weights = words.map(w => Math.max(2, w.length));
   const totalWeight = weights.reduce((a, b) => a + b, 0);
 
-  // Authentic Urdu Neural Speech Stream
-  const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ur&q=${encodeURIComponent(cleanText)}`;
-  
-  let audio = new Audio(audioUrl);
-  urduTtsState.audioObj = audio;
-
-  // Distinct vocal characteristics:
-  // Male: 0.82x rate (deep baritone pacing)
-  // Female: 1.04x rate (bright feminine pacing)
-  if (gender === "male") {
-    audio.playbackRate = 0.82 * (urduTtsState.speechRate || 1.0);
-  } else {
-    audio.playbackRate = 1.04 * (urduTtsState.speechRate || 1.0);
+  // Speak with a voice installed on this device: nothing is requested from any website (works offline, the text never leaves the device)
+  if (!('speechSynthesis' in window) || (window.SBTTS && !window.SBTTS.hasVoice('ur'))) {
+    stopUrduTTS();
+    if (window.SBTTS) window.SBTTS.toast('No Urdu voice is installed on this device.');
+    return;
   }
-
-  let lastHighlightedRelIdx = -1;
+  const token = urduTtsState.token = (urduTtsState.token || 0) + 1;   // events of an utterance that was cancelled (stop, new speed) must not advance the reading
   let hasFinished = false;
-  let animFrameId = null;
-
-  const cancelSyncLoop = () => {
-    if (animFrameId) {
-      cancelAnimationFrame(animFrameId);
-      animFrameId = null;
-    }
-  };
-
   const advanceNext = () => {
     if (hasFinished) return;
     hasFinished = true;
-    cancelSyncLoop();
-    if (urduTtsState.audioObj === audio) urduTtsState.audioObj = null;
+    if (token !== urduTtsState.token) return;
     urduTtsState.currentSentenceIdx++;
-    if (urduTtsState.isPlaying) {
-      setTimeout(playNextUrduSentence, 80);
-    }
+    if (urduTtsState.isPlaying) setTimeout(playNextUrduSentence, 80);
   };
-
-  // 🎯 60-FPS REAL-TIME SYNC LOOP: Synchronizes word highlighting with speaker's voice in real-time
-  const syncHighlightLoop = () => {
-    if (!urduTtsState.isPlaying || hasFinished || audio.paused) return;
-
-    if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) {
-      // Audio lead-in compensation (150ms initial silence, 180ms trailing silence)
-      const leadIn = 0.14;
-      const leadOut = 0.18;
-      const effectiveDuration = Math.max(0.1, audio.duration - (leadIn + leadOut));
-      const currentSpeechTime = Math.max(0, audio.currentTime - leadIn);
-      const progress = Math.min(0.999, currentSpeechTime / effectiveDuration);
-
-      let runningWeight = 0;
-      let targetIdx = 0;
-      for (let i = 0; i < weights.length; i++) {
-        const wStart = runningWeight / totalWeight;
-        const wEnd = (runningWeight + weights[i]) / totalWeight;
-        if (progress >= wStart && progress < wEnd) {
-          targetIdx = i;
-          break;
-        }
-        runningWeight += weights[i];
-      }
-
-      if (targetIdx !== lastHighlightedRelIdx) {
-        lastHighlightedRelIdx = targetIdx;
-        highlightUrduWord(prefix, sent.startIdx + targetIdx, gender);
-      }
-    }
-
-    animFrameId = requestAnimationFrame(syncHighlightLoop);
-  };
-
-  audio.onplay = function() {
-    lastHighlightedRelIdx = 0;
-    highlightUrduWord(prefix, sent.startIdx, gender);
-    cancelSyncLoop();
-    animFrameId = requestAnimationFrame(syncHighlightLoop);
-  };
-
-  audio.onpause = cancelSyncLoop;
-
-  audio.onended = function() {
-    cancelSyncLoop();
-    highlightUrduWord(prefix, sent.endIdx, gender);
-    advanceNext();
-  };
-
-  audio.onerror = function() {
-    cancelSyncLoop();
-    fallbackSpeechSynthesisSentence(sent, prefix, gender, advanceNext);
-  };
-
-  audio.play().catch(() => {
-    cancelSyncLoop();
-    fallbackSpeechSynthesisSentence(sent, prefix, gender, advanceNext);
-  });
+  fallbackSpeechSynthesisSentence(sent, prefix, gender, advanceNext);
 }
 
 function fallbackSpeechSynthesisSentence(sent, prefix, gender, onComplete) {
@@ -6398,17 +6273,15 @@ function fallbackSpeechSynthesisSentence(sent, prefix, gender, onComplete) {
   const utterance = new SpeechSynthesisUtterance(cleanText);
   const words = sent.text.split(/\s+/).filter(Boolean);
 
-  const voices = window.speechSynthesis.getVoices() || [];
+  const urVoice = window.SBTTS ? window.SBTTS.pickVoice('ur', gender) : null;   // language first; the gender only picks between Urdu voices
+  utterance.lang = urVoice ? urVoice.lang : 'ur-PK';
+  if (urVoice) utterance.voice = urVoice;
   if (gender === "male") {
     utterance.pitch = 0.72;
     utterance.rate = (urduTtsState.speechRate || 1.0) * 0.85;
-    const mVoice = voices.find(v => (v.name.toLowerCase().includes("male") || v.name.toLowerCase().includes("david") || v.name.toLowerCase().includes("ravi") || v.name.toLowerCase().includes("hemant"))) || voices[0];
-    if (mVoice) utterance.voice = mVoice;
   } else {
     utterance.pitch = 1.35;
     utterance.rate = (urduTtsState.speechRate || 1.0) * 0.98;
-    const fVoice = voices.find(v => (v.name.toLowerCase().includes("female") || v.name.toLowerCase().includes("zira") || v.name.toLowerCase().includes("heera") || v.name.toLowerCase().includes("swara"))) || voices[0];
-    if (fVoice) utterance.voice = fVoice;
   }
 
   let wordOffsets = [];
@@ -19201,6 +19074,8 @@ function playParaTTSFromBtn(btn, lang) {
   if (box) playParagraphWithRealtimeTTS(box, lang);
 }
 
+// PHYS_12_DATA is the 18 MB Class 12 book: asking whether a Class 9/10/11 chapter is one of its chapters would load it (lazy page); only Class 12 can own one
+function isPhysics12Chapter(ch) { return state.selectedClass === 'cls12' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch); }
 function class11BookByKey(key) { const r = window.CLASS11_BOOKS || {}; return r[key] || null; }
 function class11BookBySubject(id) {
   // every registration is { key, subjectId: 'cls11-' + key } (tools/validate.js checks it), so look the book up by key: scanning the values reads, and with lazy loading loads, every Class 11 book
@@ -19214,7 +19089,7 @@ function getSubjectChapterList(subjKey, classId) {
   // the class asked for wins; state.selectedClass only answers when the caller names none (ARCH-02: it used to be OR-ed in)
   const cur = classId || state.selectedClass;
   if (subjKey === 'math') return getMathChapterList(classId);
-  { const _b11 = class11BookByKey(subjKey); if (_b11 && (cur === 'cls11')) return _b11.data; }
+  if (cur === 'cls11') { const _b11 = class11BookByKey(subjKey); if (_b11) return _b11.data; }   // read the registry only for Class 11: a Class 6-10 subject sharing the key (urdu, hpe...) must not load the Class 11 book
   if (subjKey === 'eng') {
     if ((cur === 'cls11') && typeof ENG_11_DATA !== 'undefined') return ENG_11_DATA;
     const isCls5 = (cur === 'cls5');
@@ -20995,7 +20870,7 @@ function renderClass12PhysicsSourceExercises(ch) {
 }
 
 function renderSubjectExerciseTab(subjKey, ch) {
-  const reviewedPhysics = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
+  const reviewedPhysics = subjKey === 'phys' && isPhysics12Chapter(ch);
   const ex = ch.exercise || ch.textbookExercise || {};
   const isUrdu = (subjKey === 'urdu');
   const class9Chemistry = subjKey === 'chem' && state.selectedClass === 'cls9';
@@ -21724,7 +21599,7 @@ function getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) {
   }
 
   // Class 12 Physics legacy extracts contain HTML; the interactive reader needs prose.
-  const isPhysics12 = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
+  const isPhysics12 = subjKey === 'phys' && isPhysics12Chapter(ch);
   if (isPhysics12) {
     rawParas = rawParas.flatMap(raw => {
       const holder = document.createElement('div');
@@ -22163,14 +22038,14 @@ function renderScienceConceptsTab(subjKey, ch) {
   return `
     <div>
       ${subjKey === 'phys' ? renderClass10PhysicsWorkedExamples(ch) : ''}
-      ${subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) ? renderClass12PhysicsWorkedExamples(ch) : ''}
+      ${subjKey === 'phys' && isPhysics12Chapter(ch) ? renderClass12PhysicsWorkedExamples(ch) : ''}
       <div style="margin-bottom:1.5rem;">
         <h4 style="color:#0f172a;font-size:1.05rem;font-weight:800;margin-bottom:0.75rem;">📖 Essential Laws &amp; Definitions:</h4>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;">
           ${definitions.length > 0 ? definitions.map(d => `
             <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem;">
               <strong style="color:#0284c7;font-size:0.95rem;">${d.sourceClass12Physics && d.termUrdu && d.termPashto ? renderInteractiveParagraphHtml(d.term,d.termUrdu,d.termPashto,d.interactiveId+'-term',true) : (d.term || d.title || '')}:</strong>
-              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.sourceClass12Physics && d.urdu && d.pashto ? renderInteractiveParagraphHtml(d.definition,d.urdu,d.pashto,d.interactiveId,true) : subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) && typeof SpaceBookLessonMath !== 'undefined' ? SpaceBookLessonMath.mathParts(d.def || d.definition || d.desc || d.content || '').map(part => part.latex === undefined ? sanitize(part.text) : SpaceBookLessonMath.renderMath(part)).join('') : (d.def || d.definition || d.desc || d.content || '')}</div>
+              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.sourceClass12Physics && d.urdu && d.pashto ? renderInteractiveParagraphHtml(d.definition,d.urdu,d.pashto,d.interactiveId,true) : subjKey === 'phys' && isPhysics12Chapter(ch) && typeof SpaceBookLessonMath !== 'undefined' ? SpaceBookLessonMath.mathParts(d.def || d.definition || d.desc || d.content || '').map(part => part.latex === undefined ? sanitize(part.text) : SpaceBookLessonMath.renderMath(part)).join('') : (d.def || d.definition || d.desc || d.content || '')}</div>
             </div>
           `).join('') : `
             <div style="padding:1rem;color:#64748b;">Textbook concepts and definitions loaded.</div>
@@ -22231,7 +22106,7 @@ function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
   if (subjKey === 'isl' || subjKey === 'nazira' || ch.urduSummary || ch.englishSummary || ch.pashtoSummary) {
     return `
       <div>
-        ${subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) ? renderClass12PhysicsSourceFormulas(ch) : ''}
+        ${subjKey === 'phys' && isPhysics12Chapter(ch) ? renderClass12PhysicsSourceFormulas(ch) : ''}
         <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">
           <span style="font-weight:800;color:#1e40af;font-size:1.05rem;">📋 سبق کا خلاصہ و مرکزی خیال (Summary &amp; Key Points)</span>
           <div style="font-size:0.88rem;color:#334155;margin-top:0.35rem;">${ch.title || ch.name || ''}</div>
@@ -22263,7 +22138,7 @@ function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
       </div>
     `;
   }
-  const isPhysics12 = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
+  const isPhysics12 = subjKey === 'phys' && isPhysics12Chapter(ch);
   const formulas = isPhysics12 ? (ch.formulas || []).filter(item => item.sourceClass12Physics === true || item.id?.startsWith('phys12-')) : (ch.formulas || []);
   return `
     <div>

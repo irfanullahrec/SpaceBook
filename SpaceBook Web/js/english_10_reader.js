@@ -2,7 +2,8 @@
 (function (root) {
   'use strict';
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const owns = ch => typeof DATA !== 'undefined' && DATA.eng10Chapters?.includes(ch) && ch.sourceReader === true;
+  // the cheap flag first: asking DATA.eng10Chapters about a Class 11/12 chapter would load the Class 10 English book (lazy page)
+  const owns = ch => !!(ch && ch.sourceReader === true && typeof DATA !== 'undefined' && DATA.eng10Chapters?.includes(ch));
   const card = (title, body) => `<section class="math-topic-card eng10-source-card" style="margin-bottom:1rem;padding:1rem;line-height:1.8"><h3>${esc(title)}</h3>${body}</section>`;
   let serial = 0;
   function reading(p) {

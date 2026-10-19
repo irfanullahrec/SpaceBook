@@ -411,6 +411,47 @@ let depth = 0;
 for (const c of css) { if (c === '{') depth++; else if (c === '}') depth--; }
 safe('css braces balanced', () => check('css braces balanced', depth === 0, 'depth=' + depth));
 
+// ------------------------------------------------- 6. offline layer and third parties (Phase 4)
+console.log('--- offline ---');
+{
+  const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
+  const exists = f => fs.existsSync(path.join(ROOT, f));
+  safe('manifest.webmanifest is valid and complete', () => {
+    const m = JSON.parse(read('manifest.webmanifest'));
+    const icons = m.icons || [];
+    const missing = icons.filter(i => !exists(i.src));
+    const dims = icons.map(i => { try { const b = fs.readFileSync(path.join(ROOT, i.src)); return b.readUInt32BE(16) + 'x' + b.readUInt32BE(20); } catch (e) { return '?'; } });
+    check('manifest.webmanifest is valid and complete', !!(m.name && m.short_name && m.start_url && m.scope && m.display === 'standalone' && m.theme_color && m.background_color) &&
+      icons.length >= 3 && missing.length === 0 && icons.every((i, k) => dims[k] === i.sizes) && icons.some(i => i.purpose === 'maskable') && icons.some(i => i.sizes === '192x192') && icons.some(i => i.sizes === '512x512'),
+      'missing ' + missing.map(i => i.src).join(',') + ' sizes ' + dims.join(','));
+  });
+  safe('service worker file parses', () => { new vm.Script(read('sw.js'), { filename: 'sw.js' }); check('service worker file parses', true); });
+  safe('offline files are generated and consistent', () => {
+    const sw = {}; vm.runInNewContext(read('content/sw_version.js'), { self: sw });
+    const m = JSON.parse(read('manifest.webmanifest'));
+    const map = JSON.parse(read('content/offline_map.json'));
+    const missingShell = sw.SB_SW.shell.filter(u => !exists(u.split('?')[0]));
+    check('web manifest starts the page the service worker precaches (' + sw.SB_SW.entry + ')', m.start_url.replace(/^\.\//, '').split('?')[0] === sw.SB_SW.entry, 'start_url ' + m.start_url + ' vs entry ' + sw.SB_SW.entry);
+    check('every file in the service worker shell exists (' + sw.SB_SW.shell.length + ')', missingShell.length === 0, missingShell.slice(0, 5).join(','));
+    check('the shell holds the entry page, the offline page and the icons', ['lazy.html', 'offline.html', 'icons/icon-192.png'].every(f => sw.SB_SW.shell.includes(f)));
+    const badFiles = Object.keys(map.files).filter(f => !exists(f));
+    check('every book file in the offline map exists (' + Object.keys(map.files).length + ')', badFiles.length === 0, badFiles.slice(0, 5).join(','));
+    const badAssets = Object.keys(map.assets).filter(f => !exists(f));
+    check('every image in the offline map exists (' + Object.keys(map.assets).length + ')', badAssets.length === 0, badAssets.slice(0, 5).join(','));
+    check('every subject of the registry is in the offline map', Object.keys(map.subjects).length === Object.values(sb.DATA.subjects).reduce((n, l) => n + l.length, 0), Object.keys(map.subjects).length + ' vs registry');
+  });
+  safe('no third-party request at start-up (fonts, scripts, styles)', () => {
+    const html = read('index.html');
+    const external = [...html.matchAll(/<(?:script|link|img)\b[^>]*\b(?:src|href)="((?:https?:)?\/\/[^"]+)"/g)].map(m => m[1]).filter(u => !/^https?:\/\/(www\.)?w3\.org/.test(u));
+    check('no third-party request at start-up (fonts, scripts, styles)', external.length === 0, external.join(', '));
+    check('index.html links the web manifest', /<link rel="manifest" href="manifest\.webmanifest"/.test(html));
+  });
+  safe('read-aloud never asks a website for speech', () => {
+    const offenders = ['app.js', 'universal_translate.js', 'word_stats.js', 'sb_four_lang.js', 'reader_tools.js', 'sb_trilingual.js', 'sb_global_ui.js'].filter(f => exists('js/' + f) && /translate_tts/.test(read('js/' + f)));
+    check('read-aloud never asks a website for speech', offenders.length === 0, offenders.join(','));
+  });
+}
+
 console.log('---');
 console.log('validate: ' + pass + ' passed, ' + fail + ' failed');
 process.exit(fail ? 1 : 0);

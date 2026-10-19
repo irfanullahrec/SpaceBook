@@ -26,6 +26,9 @@ const STEPS = [
   // last: lazy.html carries the content hash of every script, including the generated ones above
   { id: 'lazy', what: 'lazy page and its manifest (client-side lazy loading of the book files)',
     outputs: ['lazy.html', 'content/lazy_manifest.json'], run: node('tools/build/make_lazy.js'), checkNative: node('tools/build/make_lazy.js', '--check') },
+  // after the lazy page: it lists what each subject loads and the shell of the service worker (both carry content hashes of the files above)
+  { id: 'offline', what: 'what each subject needs offline, and the service worker version (Download for offline, sw.js)',
+    outputs: ['content/offline_map.json', 'content/sw_version.js'], run: node('tools/build/make_offline.js'), checkNative: node('tools/build/make_offline.js', '--check') },
 ];
 
 if (args.includes('--list')) {

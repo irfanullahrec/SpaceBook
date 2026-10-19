@@ -20,7 +20,7 @@
     const x = new XMLHttpRequest();
     x.open('GET', url, false);
     x.send();
-    if (x.status !== 200 && x.status !== 0) throw new Error('SBLazy: cannot load ' + url + ' (' + x.status + ')');
+    if ((x.status !== 200 && x.status !== 0) || (x.status === 0 && !x.responseText)) throw new Error('SBLazy: cannot load ' + url + ' (' + x.status + ')');   // status 0 with no text = no network and nothing cached
     return x.responseText;
   };
   const byFile = {};
@@ -29,19 +29,26 @@
   // the file is requested by content hash (file?v=<12 hex>): same bytes, same URL, cacheable for a year; changed bytes, new URL
   const url = f => f.v ? f.src + '?v=' + f.v : f.src;
 
+  const CONST = /^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm;                // top-level const/let/var become window properties (a script tag would make them global bindings)
+  const run = (code, src) => (0, eval)(code.replace(CONST, 'window.$1 =') + '\n//# sourceURL=' + src);
+
   function loadFile(src) {
     if (loaded.has(src)) return;
     loaded.add(src);                                  // before running: the file itself touches its own names
     const f = byFile[src];
     const t0 = Date.now();
-    let code = fetchSync(url(f));
-    // top-level const/let/var become window properties (a script tag would make them global bindings)
-    code = code.replace(/^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm, 'window.$1 =');
-    (0, eval)(code + '\n//# sourceURL=' + f.src);
-    // files that set the same DATA keys as this one (the later definition wins in the normal page), then the scripts that only patch its data,
-    // each in the original order
-    (f.also || []).forEach(o => (0, eval)(fetchSync(url(o)).replace(/^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm, 'window.$1 =') + '\n//# sourceURL=' + o.src));
-    (f.after || []).forEach(o => (0, eval)(fetchSync(url(o)) + '\n//# sourceURL=' + o.src));
+    // Fetch everything first: a failed fetch (offline, subject not downloaded) leaves nothing half-run and the file can be asked for again
+    // later. Order of execution: the file, then files that set the same DATA keys (the later definition wins in the normal page), then the
+    // scripts that only patch its data, each in the original order.
+    const parts = [f].concat(f.also || [], f.after || []);
+    let texts;
+    try { texts = parts.map(o => fetchSync(url(o))); }
+    catch (e) {
+      loaded.delete(src);
+      try { window.dispatchEvent(new CustomEvent('sb:lazy-error', { detail: { src } })); } catch (x) { /* no events in this environment */ }
+      throw e;
+    }
+    parts.forEach((o, i) => run(texts[i], o.src));
     log.push({ src: f.src, bytes: f.bytes, ms: Date.now() - t0, by: window.__sbCurrentSrc || null });
   }
 
