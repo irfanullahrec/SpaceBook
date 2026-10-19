@@ -242,7 +242,7 @@
     const result = originalWorkspace.call(this, classId, view, subject);
     if (classId === 'cls11' && book && book.pdf) {
       const link = document.querySelector('.math-sidebar-footer .math-pdf-btn');
-      if (link) link.href = book.pdf;
+      if (link && sbPdf(book.pdf)) link.href = book.pdf;       // only a packaged, licensed PDF gets a link (see sbPdf in app.js)
     }
     if (classId === 'cls11' && SOURCES[view]) {
       const count = document.querySelector('.math-unified-view .math-sidebar-sub');

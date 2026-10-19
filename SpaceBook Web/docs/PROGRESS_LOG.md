@@ -337,3 +337,18 @@ Not verified: any of it in a real browser (service worker lifecycle, install pro
 Risks: Urdu read-aloud is now only as good as the Urdu voice on the device (many phones have none: the button is then hidden instead of calling Google); subjects of Classes 7-10 still pull their Class 6 sibling book for its word list (Phase 7); `start_url` stays `lazy.html` until the cut-over.
 
 Next: Phase 5 (hooks instead of patches in the rendering core), starting from the wrappers and observers list in the audit.
+
+## 2026-10-20 — Phase 6 (first part): content integrity — answer keys, placeholder media, dead PDF links
+Done (owner decisions and numbers: `docs/CONTENT_REVIEW.md`):
+- CONT-02: `sbMcqKey()` is the one reader of "which option is right"; the Papers pool used it in 9 places where it had read `correctIndex`/`ans` and defaulted to option A. In the pool, all Islamiat and Urdu keys and the Class 1-6/9/11/12 Maths keys were "A"; Islamiat is now 23 % A, Urdu 22 %. A question without a key prints "Key not available" and fills no OMR bubble. (84 %+ of the Maths keys are still A: those are the generated questions below, not a reading error.)
+- CONT-03: no more fake video lectures (a test URL with invented titles/durations/instructor in 15 Islamiat chapters; a fake "1080p" Maths player and its tab button).
+- PDF-01: no "Download PDF"/"Read Online" button or "PDF Available" claim unless a licensed copy is packaged (`SB_PACKAGED_PDFS`, empty): all former links were dead (`assets/books/` missing, `file:///D:/...`, a network share).
+- CONT-01 (generated "Board SLO" practice, 1,860 items in Class 9/10 Maths): marked `generated: true`; switch `hideGeneratedSlo` (off) removes them from the tab and from Papers; waiting for your approval. `tools/content_lint.js` reports and gates (`tests/contract/content_lint.json`).
+
+Verified by: `node tests/content/integrity.js` 32/0 (key reader, pool keys keep their source keys, no key defaulting to A, placeholder video not embedded, real embed still renders, no fake Maths player, generated items marked and hidden by the flag with authored section 1.1 untouched, no dead PDF button), mutation check (the PDF tests fail on the code before the fix), `tools/content_lint.js --check` (baseline), validate 993/0, smoke 0 failed, HTML snapshot: the only changed renders are the 30 Class 9/10 Maths "lesson" tab bars (the Video tab button is gone), everything else identical (9,710 renders).
+
+Not verified: in a browser (the look of the empty states and of the library cards without PDF buttons); Papers printing end to end (only the pool and the key code are tested); the factual claim about Cayley (not changed).
+
+Risks: students lose the dead buttons only; the generated questions stay until you approve (flag); Papers for Classes 1-6, 11 and 12 Maths still draw on Class 9 questions (Phase 9).
+
+Next: Phase 5 (hooks instead of patches in the rendering core), then the Phase 6 tab model on top of it.

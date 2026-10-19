@@ -63,6 +63,11 @@ jobs:
           node tests/offline/sw.js
           node tests/offline/offline.js
           node --max-old-space-size=6144 tests/offline/tts.js
+      - name: content integrity (answer keys, placeholder media, dead PDF links) and content lint gate
+        working-directory: SpaceBook Web
+        run: |
+          node --max-old-space-size=6144 tests/content/integrity.js
+          node --max-old-space-size=6144 tools/content_lint.js --check
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js

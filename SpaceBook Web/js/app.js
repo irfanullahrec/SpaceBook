@@ -2385,7 +2385,7 @@ function openBioView(classId, subj) {
   const unitRange = isCls10 ? "Units 10 to 18" : "Units 1 to 9 (مکمل نصاب)";
   const pdfFile = isCls10 ? "assets/books/Class-10-Biology-KPK.pdf" : "assets/books/Class-9-Biology-KPK.pdf";
 
-  setDashHeader(`🧬 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${unitRange} &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#059669;font-weight:700;text-decoration:underline;">📥 View/Download Official Biology Book PDF</a>`);
+  setDashHeader(`🧬 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${unitRange} ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#059669;font-weight:700;text-decoration:underline;">📥 View/Download Official Biology Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -3107,7 +3107,7 @@ function openChemView(classId, subj) {
   const chRange = isCls10 ? "Units 9 to 16" : (chList.length > 0 ? `Units 1 to ${chList.length}` : "Ready for New Book");
   const pdfFile = isCls10 ? "assets/books/Class-10-Chemistry-KPK.pdf" : "assets/books/Class-9-Chemistry-KPK.pdf";
 
-  setDashHeader(`🧪 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${chRange} &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#0284c7;font-weight:700;text-decoration:underline;">📥 View/Download Official Chemistry Book PDF</a>`);
+  setDashHeader(`🧪 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${chRange} ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#0284c7;font-weight:700;text-decoration:underline;">📥 View/Download Official Chemistry Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -3377,7 +3377,7 @@ function openPhysView(classId, subj) {
   const chRange = isCls10 ? "Chapters 10 to 18" : `Chapters 1 to ${DATA.physChapters.length}`;
   const pdfFile = isCls10 ? "assets/books/Class-10-Physics-KPK.pdf" : "assets/books/Class-9-Physics-KPK.pdf";
 
-  setDashHeader(`⚡ ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${chRange} &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#7c3aed;font-weight:700;text-decoration:underline;">📥 View/Download Official Physics Book PDF</a>`);
+  setDashHeader(`⚡ ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · ${chRange} ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#7c3aed;font-weight:700;text-decoration:underline;">📥 View/Download Official Physics Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -3686,7 +3686,7 @@ function openEngView(classId, subj) {
   const gradeLabel = isCls10 ? "Grade 10" : "Grade 9";
   const pdfFile = isCls10 ? "assets/books/Class-10-English-KPK.pdf" : "assets/books/Class-9-English-KPK.pdf";
 
-  setDashHeader(`📖 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · 15 Complete Units (Prose & Poetry) &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#0284c7;font-weight:700;text-decoration:underline;">📥 View/Download Official English Book PDF</a>`);
+  setDashHeader(`📖 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · 15 Complete Units (Prose & Poetry) ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#0284c7;font-weight:700;text-decoration:underline;">📥 View/Download Official English Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -3716,9 +3716,9 @@ function openEngView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          <a href="${pdfFile}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
-          </a>
+          </a>` : ''}
         </div>
       </div>
       <div class="bio-main" id="engMainContent">
@@ -5798,7 +5798,7 @@ function openUrduView(classId, subj) {
   const gradeLabel = "Grade 9";
   const pdfFile = "assets/books/Class-9-Urdu-KPK.pdf";
 
-  setDashHeader(`📗 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · 15 Lessons & Poetry &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#16a34a;font-weight:700;text-decoration:underline;">📥 View/Download Official Urdu Book PDF</a>`);
+  setDashHeader(`📗 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · 15 Lessons & Poetry ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#16a34a;font-weight:700;text-decoration:underline;">📥 View/Download Official Urdu Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -5828,9 +5828,9 @@ function openUrduView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          <a href="${pdfFile}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#16a34a;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#16a34a;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
-          </a>
+          </a>` : ''}
         </div>
       </div>
       <div class="bio-topic-area" id="urduTopicArea"></div>
@@ -8355,7 +8355,7 @@ function openIslView(classId, subj) {
       ? `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Ahzab, Surah Al-Mumtahina, Ahadith & Thematic Study)`
       : `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Anfal, Ahadith & Thematic Study)`);
 
-  setDashHeader(`🕌 ${subj ? subj.name : 'Islamyat'} — ${gradeLabel}`, `${desc} &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#0d9488;font-weight:700;text-decoration:underline;">📥 View/Download Official Islamyat Book PDF</a>`);
+  setDashHeader(`🕌 ${subj ? subj.name : 'Islamyat'} — ${gradeLabel}`, `${desc} ${sbPdf(pdfFile) ? `&nbsp;|&nbsp; <a href="${sbPdf(pdfFile)}" target="_blank" style="color:#0d9488;font-weight:700;text-decoration:underline;">📥 View/Download Official Islamyat Book PDF</a>` : ''}`);
   setBreadcrumb([
     { label: "Home",     onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", onclick: () => renderClasses() },
@@ -8403,9 +8403,9 @@ function openIslView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          <a href="${pdfFile}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0d9488;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0d9488;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
-          </a>
+          </a>` : ''}
         </div>
       </div>
       <div class="bio-topic-area" id="islTopicArea"></div>
@@ -8848,29 +8848,39 @@ function renderIslEnglishTranslation(ch) {
     </div>`;
 }
 
+// A video lesson is shown only when the chapter carries a real one. js/islamyat_data.js still holds 15 placeholder records (the same
+// test URL, invented titles/durations/instructor): they are treated as "no video" until real lectures replace them (docs/CONTENT_REVIEW.md).
+const SB_PLACEHOLDER_VIDEO_IDS = ['dQw4w9WgXcQ'];
+function sbRealVideo(v) {
+  return !!(v && typeof v.url === 'string' && /^https:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//.test(v.url) && !SB_PLACEHOLDER_VIDEO_IDS.some(id => v.url.includes(id)));
+}
+
 function renderIslVideo(ch) {
-  const vid = ch.video || {
-    title: `Class 9 Islamyat - ${ch.title}`,
-    url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '26:40',
-    instructor: 'KPK Board Islamic Studies Specialist'
-  };
+  const vid = ch.video;
+  if (!sbRealVideo(vid)) {
+    return `
+    <div class="urdu-container">
+      <div class="author-intro-card" style="padding:1.5rem;border-radius:12px;text-align:center;color:#475569;">
+        🎥 There is no video lecture for this chapter yet.
+      </div>
+    </div>`;
+  }
 
   return `
     <div class="urdu-container">
       <div class="video-lecture-container">
         <div class="video-embed-wrapper">
-          <iframe src="${vid.url}" 
-                  title="${vid.title}" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          <iframe src="${vid.url}"
+                  title="${vid.title}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
           </iframe>
         </div>
         <div class="video-meta-bar" style="background:#042f2e;">
           <div class="video-meta-title">🎥 ${vid.title}</div>
           <div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.88rem;color:#99f6e4;">
-            <span>👨‍🏫 مدرس: <strong style="color:#fff;">${vid.instructor}</strong></span>
-            <span>⏱️ دورانیہ: <strong style="color:#fff;">${vid.duration}</strong></span>
+            ${vid.instructor ? `<span>👨‍🏫 مدرس: <strong style="color:#fff;">${vid.instructor}</strong></span>` : ''}
+            ${vid.duration ? `<span>⏱️ دورانیہ: <strong style="color:#fff;">${vid.duration}</strong></span>` : ''}
             <span>🏛️ بورڈ: <strong style="color:#2dd4bf;">خیبر پختونخوا ٹیکسٹ بک بورڈ، پشاور</strong></span>
           </div>
         </div>
@@ -9258,11 +9268,11 @@ function handleGlobalSearch(query) {
           type: "Textbook",
           badge: "📚 " + b.className + " Book",
           title: b.title,
-          sub: b.available ? `PDF Available (${b.size}) · Click to Open Book` : "Syllabus Overview",
+          sub: sbPdf(b.pdfPath) ? `PDF Available (${b.size}) · Click to Open Book` : (b.available ? "Solved chapter notes" : "Syllabus Overview"),
           action: () => {
             clearGlobalSearch();
-            if (b.available && b.pdfPath) {
-              window.open(b.pdfPath, "_blank");
+            if (sbPdf(b.pdfPath)) {
+              window.open(sbPdf(b.pdfPath), "_blank");
             } else {
               renderBooksView(b.classId);
             }
@@ -11884,6 +11894,26 @@ function getCategoryShortLabel(catId, catMeta) {
 }
 
 // ─── UNIFIED CURRICULUM QUESTIONS BANK EXTRACTOR ───────────
+// Which option of a multiple-choice item is the right one, as 0-3, or null when the item has no key. Items spell it differently
+// (correctIndex, answerIndex, correct, ans, or the answer as a letter or as the option text); a missing key must never become "A".
+function sbMcqKey(m) {
+  if (!m || typeof m !== 'object') return null;
+  const opts = m.options || m.opts || m.choices || [];
+  const n = Array.isArray(opts) && opts.length ? opts.length : 4;
+  for (const f of ['correctIndex', 'answerIndex', 'correct', 'ans', 'answer', 'key']) {
+    const v = m[f];
+    if (typeof v === 'number' && Number.isInteger(v) && v >= 0 && v < n) return v;
+    if (typeof v === 'string') {
+      const t = v.trim();
+      if (/^[0-9]$/.test(t) && +t < n) return +t;
+      if (/^[A-Da-d]$/.test(t) && t.toUpperCase().charCodeAt(0) - 65 < n) return t.toUpperCase().charCodeAt(0) - 65;
+      const at = Array.isArray(opts) ? opts.findIndex(o => String(o).trim() === t) : -1;
+      if (at >= 0) return at;
+    }
+  }
+  return null;
+}
+
 function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
   const sid = (subjectId || "").toLowerCase();
   const result = [];
@@ -11913,7 +11943,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                     id: `math-slo-m-${u.number}-${sec.id}-${mIdx}`,
                     q: m.question || m.q,
                     opts: m.options || m.opts || ["A", "B", "C", "D"],
-                    ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
+                    ans: sbMcqKey(m),
                     exp: m.explanation || m.working || `Derived from ${topicTitle}`,
                     chapter: chTitle,
                     topic: topicTitle,
@@ -12009,7 +12039,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                 id: `math-ch-m-${u.number}-${mIdx}`,
                 q: m.question || m.q,
                 opts: m.options || m.opts || ["A", "B", "C", "D"],
-                ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
+                ans: sbMcqKey(m),
                 exp: m.explanation || `Unit ${u.number} Synthesis`,
                 chapter: chTitle,
                 topic: "Unit Examination SLOs",
@@ -12074,7 +12104,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                 id: `eng-ex-m-${u.number}-${mIdx}`,
                 q: m.question || m.q,
                 opts: m.options || m.opts || ["A", "B", "C", "D"],
-                ans: m.correct || m.ans || 0,
+                ans: sbMcqKey(m),
                 exp: m.explanation || `Textbook Exercise Unit ${u.number}`,
                 chapter: chTitle,
                 topic: "Textbook Exercise MCQs",
@@ -12249,7 +12279,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
                 id: `urdu-m-${lIdx}-${mIdx}`,
                 q: m.question || m.q,
                 opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
-                ans: m.correct || m.ans || 0,
+                ans: sbMcqKey(m),
                 exp: m.explanation || chTitle,
                 chapter: chTitle,
                 topic: "معروضی سوالات",
@@ -12315,7 +12345,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
               id: `chem-ex-m-${cIdx}-${mIdx}`,
               q: m.question || m.q,
               opts: m.options || m.opts || ["A", "B", "C", "D"],
-              ans: m.correctIndex !== undefined ? m.correctIndex : (m.ans || 0),
+              ans: sbMcqKey(m),
               exp: m.explanation || chTitle,
               chapter: chTitle,
               topic: "Textbook Exercise MCQs",
@@ -12359,7 +12389,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
             id: `chem-slo-m-${cIdx}-${mIdx}`,
             q: m.question || m.q,
             opts: m.options || m.opts || ["A", "B", "C", "D"],
-            ans: m.ans || 0,
+            ans: sbMcqKey(m),
             exp: m.explanation || "SLO Concept Drill",
             chapter: chTitle,
             topic: "SLO Concept Drills",
@@ -12411,7 +12441,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
               id: `phys-ex-m-${cIdx}-${mIdx}`,
               q: m.question || m.q,
               opts: m.options || m.opts || ["A", "B", "C", "D"],
-              ans: m.correctIndex !== undefined ? m.correctIndex : (m.ans || 0),
+              ans: sbMcqKey(m),
               exp: m.explanation || chTitle,
               chapter: chTitle,
               topic: "Exercise MCQs",
@@ -12477,7 +12507,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
             id: `comp-m-${cIdx}-${mIdx}`,
             q: m.q || m.question,
             opts: m.opts || m.options || ["A", "B", "C", "D"],
-            ans: (typeof m.ans === 'number') ? m.ans : ((typeof m.correctIndex === 'number') ? m.correctIndex : 0),
+            ans: sbMcqKey(m),
             exp: m.exp || m.explanation || `Concept from ${chTitle}`,
             chapter: chTitle,
             topic: ch.name,
@@ -12599,7 +12629,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
               id: `isl-m-${u.number || uIdx + 1}-${mIdx}`,
               q: m.question || m.q,
               opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
-              ans: (typeof m.correct === 'number') ? m.correct : ((typeof m.ans === 'number') ? m.ans : 0),
+              ans: sbMcqKey(m),
               exp: m.explanation || m.exp || `اسلامیات سبق ${u.number || uIdx + 1}`,
               chapter: chTitle,
               topic: u.title,
@@ -12733,7 +12763,7 @@ function renderLiveExamPaperHtml() {
               for (let i = startIdx; i < endIdx; i++) {
                 const qNum = formatQNum(i + 1, paperCreationState.numberingStyle);
                 const m = displayQuestions[i];
-                const correctAns = m ? m.ans : -1;
+                const correctAns = m && m.ans != null ? m.ans : -1;
                 colRows.push(`
                   <div class="pep-omr-img2-row" style="display:flex;align-items:center;gap:6px;padding:2px 0;">
                     <span style="font-weight:700;font-size:0.78rem;min-width:24px;text-align:right;font-family:Arial,sans-serif;color:#0f172a;">${qNum}.</span>
@@ -12835,7 +12865,7 @@ function renderLiveExamPaperHtml() {
                         </div>
                         ${paperCreationState.showAnswerKey ? `
                           <div class="pep-key-note" style="margin-top:0.25rem;padding-left:1rem;font-size:0.75rem;color:#16a34a;font-weight:600;">
-                            💡 Key: (${optLetters[m.ans || 0] || 'A'}) — ${m.exp || 'Standard syllabus definition'}
+                            ${m.ans == null ? '💡 Key not available for this question' : `💡 Key: (${optLetters[m.ans] || String.fromCharCode(65 + m.ans)}) — ${m.exp || 'Standard syllabus definition'}`}
                           </div>
                         ` : ''}
                       </div>
@@ -13243,19 +13273,19 @@ function renderBooksView(filterClass = "all") {
       <div style="padding:1.25rem;display:flex;flex-direction:column;flex:1;justify-content:space-between;">
         <div style="font-size:0.85rem;color:#64748b;margin-bottom:1rem;line-height:1.6;">
           <div>🏛️ <strong>Board:</strong> ${b.board}</div>
-          <div>📄 <strong>Format:</strong> High-Resolution PDF</div>
+          ${sbPdf(b.pdfPath) ? '<div>📄 <strong>Format:</strong> High-Resolution PDF</div>' : ''}
           <div>📚 <strong>Content:</strong> ${b.pages}</div>
         </div>
         <div style="display:flex;flex-direction:column;gap:0.5rem;">
           ${b.available ? `
-            <div style="display:flex;gap:0.5rem;">
-              <a href="${b.pdfPath}" target="_blank" style="flex:1;text-align:center;padding:0.5rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
+            ${sbPdf(b.pdfPath) ? `<div style="display:flex;gap:0.5rem;">
+              <a href="${sbPdf(b.pdfPath)}" target="_blank" style="flex:1;text-align:center;padding:0.5rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
                 👁️ Read Online
               </a>
-              <a href="${b.pdfPath}" download style="flex:1;text-align:center;padding:0.5rem;background:#059669;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
+              <a href="${sbPdf(b.pdfPath)}" download style="flex:1;text-align:center;padding:0.5rem;background:#059669;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
                 ⬇️ Download (${b.size})
               </a>
-            </div>
+            </div>` : ''}
             <button onclick="goToSubjects('${b.classId || b.class_id}'); openSubject('${b.classId || b.class_id}', '${b.action || b.hub_action}');" style="width:100%;padding:0.5rem;background:#f8fafc;color:#0f172a;border:1px solid #cbd5e1;border-radius:6px;font-weight:700;font-size:0.825rem;cursor:pointer;">
               🚀 Open Solved Chapter Notes &amp; Q&amp;A
             </button>
@@ -14059,6 +14089,18 @@ function toggleMcqWorking(uid, correctIdx) {
   }
 }
 
+// PDFs of the textbooks are shown only when a licensed copy is packaged with the app (relative paths listed here). None is today: the old
+// links pointed to assets/books/*.pdf (the folder does not exist), file:///D:/... and a network share of the developer's PC, so every
+// "Download PDF" button led nowhere. When a licensed PDF is added to the package, list its path in SB_PACKAGED_PDFS.
+const SB_PACKAGED_PDFS = [];
+function sbPdf(url) { return (typeof url === 'string' && SB_PACKAGED_PDFS.includes(url)) ? url : ''; }
+
+// Owner-controlled switches: window.SB_FLAGS.<name> = true, or localStorage sb_flag_<name> = 'on' (js/core/sync.js uses sb_sync_v2 the same way)
+function sbFlag(name) {
+  try { if (window.SB_FLAGS && window.SB_FLAGS[name] === true) return true; } catch (e) { /* no flags object */ }
+  try { return window.localStorage.getItem('sb_flag_' + name) === 'on'; } catch (e) { return false; }
+}
+
 function getTopicSpecificSLOs(sec, ch) {
   const secId = String(sec.id || '1.1');
   if (secId === '1.1') {
@@ -14221,10 +14263,15 @@ function getTopicSpecificSLOs(sec, ch) {
     }
   ];
 
+  // These items are made from the section title (5 MCQ templates, 3 short and 2 long question templates; in every MCQ the first option is the
+  // right one): they are neither textbook nor board material. They stay visible until the owner approves removing them (docs/CONTENT_REVIEW.md);
+  // then sbFlag('hideGeneratedSlo') hides them everywhere, in Papers too. Only section 1.1 above is authored.
+  if (sbFlag('hideGeneratedSlo')) return { mcqs: [], shortQuestions: [], longQuestions: [] };
+  const mark = list => list.map(item => Object.assign({}, item, { generated: true }));
   return {
-    mcqs: generatedMcqs,
-    shortQuestions: generatedSqs,
-    longQuestions: generatedLqs
+    mcqs: mark(generatedMcqs),
+    shortQuestions: mark(generatedSqs),
+    longQuestions: mark(generatedLqs)
   };
 }
 
@@ -14391,6 +14438,9 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
   const mcqs = data.mcqs || [];
   const sqs = data.shortQuestions || [];
   const lqs = data.longQuestions || [];
+  if (!mcqs.length && !sqs.length && !lqs.length) {
+    return `<div style="padding:1.5rem;text-align:center;color:#64748b;font-size:0.9rem;">Verified practice questions for this topic are being prepared. See the Textbook Exercises tab.</div>`;
+  }
 
   if (innerTab === 'mcqs') {
     return `
@@ -14604,22 +14654,8 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
         <strong>Learn with a grown-up:</strong> Use counters, coins, a clock, classroom objects or a hand-drawn number line to practise this topic together.
       </div>`;
     return `
-      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.15rem;margin-bottom:0.5rem;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
-          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">🎥 HD Video Lecture</span>
-          <span style="font-size:0.78rem;color:#64748b;font-weight:700;">⏱️ 18:45 min · KPK Board Matched</span>
-        </div>
-        <h4 style="margin:0 0 0.4rem 0;color:#0f172a;font-size:1rem;font-weight:700;">${sec.title}</h4>
-        <p style="font-size:0.86rem;color:#475569;margin-bottom:1rem;line-height:1.5;">
-          Step-by-step visual chalkboard lecture covering core definitions, matrix dimensions, equality criteria, and textbook solved problems.
-        </p>
-        <div style="position:relative;background:#0f172a;border-radius:8px;overflow:hidden;padding-bottom:56.25%;height:0;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-          <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;cursor:pointer;" onclick="this.innerHTML='<iframe style=\'width:100%;height:100%;border:0;\' src=\'https://www.youtube-nocookie.com/embed/videoseries?list=PL44C3F086BCEB9DAA&autoplay=1\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
-            <div style="width:64px;height:64px;border-radius:50%;background:#0284c7;display:flex;align-items:center;justify-content:center;font-size:1.8rem;box-shadow:0 0 20px rgba(2,132,199,0.5);margin-bottom:0.75rem;">▶</div>
-            <span style="font-weight:700;font-size:0.95rem;">Click to Play Topic Lecture</span>
-            <span style="font-size:0.76rem;color:#94a3b8;margin-top:0.25rem;">Quality 1080p HD · Urdu &amp; English Explanation</span>
-          </div>
-        </div>
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.15rem;margin-bottom:0.5rem;color:#475569;line-height:1.7;">
+        🎥 There is no video lecture for this topic yet.
       </div>`;
   } else if (subTab === 'exercise') {
     const exMatch = (ch.exercises || []).find(e => e.exercise === sec.id || e.title.includes(sec.id)) || (ch.exercises && ch.exercises[topicIdx]) || (ch.exercises && ch.exercises[0]);
@@ -14849,7 +14885,7 @@ function openMathView(classId, subj) {
             ? `<div class="math-pdf-btn" aria-label="Class 12 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
             : classId === 'cls9' || classId === 'cls11'
               ? `<div class="math-pdf-btn" aria-label="Mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
-              : `<a href="${pdfFile}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a>`}
+              : (sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a>` : '')}
         </div>
       </div>
       <div class="math-topic-area" id="mathTopicArea"></div>
@@ -17460,7 +17496,6 @@ function renderMathLesson(ch) {
             ? `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 Lesson</button>`
             : `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 English</button>
               <button class="topic-sub-tab-btn" data-subtab="urdu" onclick="switchMathTopicSubTab('${sec.id}', 'urdu', this)">🌐 Urdu</button>
-              <button class="topic-sub-tab-btn" data-subtab="video" onclick="switchMathTopicSubTab('${sec.id}', 'video', this)">🎥 Video</button>
               <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
               <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>`}
         </div>
@@ -19519,9 +19554,9 @@ function openSubjectWorkspace(classId, subjKey, subjObj) {
         </div>
         <div class="math-ch-list">${chapBtns}</div>
         <div class="math-sidebar-footer">
-          <a href="${pdfFile}" target="_blank" class="math-pdf-btn" style="background:${theme.accentColor};">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" class="math-pdf-btn" style="background:${theme.accentColor};">
             <span>📥</span> Official ${subjName} Book PDF
-          </a>
+          </a>` : ''}
         </div>
       </div>
       <div class="math-topic-area" id="subjectTopicArea"></div>
