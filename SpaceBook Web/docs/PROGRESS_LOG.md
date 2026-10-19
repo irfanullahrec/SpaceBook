@@ -82,3 +82,17 @@ Defect found (not fixed; shared file `js/app.js`, needs owner OK): Class 9 Physi
 Not verified: layout, fonts, screenshots, console errors, timings (browser-only). The snapshot is not yet a CI gate (Windows-vs-Linux output identity untested).
 Phase 1 exit gate: validate 0 failures ✔, smoke 0 failures ✔, trace for all subjects ✔ (147), CI blocks deploy ✔ (unrun on GitHub), baseline stored — HTML snapshot ✔, browser baseline ✘.
 
+## 2026-10-19 — Class 9 Physics numericals fix + Phase 2 design
+Done:
+- Fixed `js/app.js` (renderer around line 22150): numericals whose `question`/`solution` are `{text, urdu, pashto}` objects made the Class 9 Physics chapter-3 "Concepts & Examples" tab throw (blank tab). `numText()` now takes `.text`.
+- `docs/PHASE2_SYNC_DESIGN.md`: confirmed defects (SYNC-01/02/03, SEC-02, SEC-05, S-01 suspected) with code locations, event model, v2 API, tables, client outbox, merge rules, migration/rollout, tests, work breakdown, owner decisions. Design only; no code written for Phase 2.
+
+Verified by:
+- `tools/snapshot_html.js` vs the stored baseline: 9,715 tab renders, 1 difference (cls9-phy ch2 concepts, the fixed tab), step errors 1 → 0. Probe: no `[object Object]`, title and solution text present.
+- `node tools/validate.js` → 946 passed, 0 failed; `node tools/smoke.js` → 0 failed.
+- Delete-not-retried (SYNC-02c) confirmed in `sb_study_plan.js:591` (single fire-and-forget `api('delete')`).
+
+Not verified: the fix in a real browser (Chrome could not run, low RAM). Coin cap numbers and trace `total <= 60` in the design are proposals; the largest shipped figure's step count has not been measured. S-01 (session lifetime) needs a check on the live host. Reward activity keys come from the SVG at runtime (`keyOf` in `sb_trace.js`), so a build-time activity catalog is not possible yet — the design uses patterns + caps instead.
+
+Next: owner review of the design (section 10 decisions); server steps in `docs/PHASE0_SERVER_STEPS.md` still pending.
+
