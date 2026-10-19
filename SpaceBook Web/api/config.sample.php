@@ -1,10 +1,10 @@
 <?php
-// Copy to config.php and fill in. config.php is gitignored.
-// The same credentials are used locally (XAMPP) and online (cPanel).
+// Copy to config.php and fill in. config.php is gitignored and is never put in an upload package.
+// Use different passwords locally (XAMPP) and online (cPanel).
 return [
     'db_host' => 'localhost',
-    'db_name' => 'ameencon_spacebook',
-    'db_user' => 'ameencon_Irfan',
+    'db_name' => 'your_db_name',
+    'db_user' => 'your_db_user',
     'db_pass' => 'CHANGE_ME',
     'db_port' => 3306,
 ];
