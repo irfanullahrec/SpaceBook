@@ -4,8 +4,8 @@
   const TYPES = [['student', 'Student'], ['teacher', 'Teacher'], ['school', 'School']];
   let currentUser = null;
 
-  async function call(action, body) {
-    const opts = { credentials: 'same-origin', headers: {} };
+  async function call(action, body, extraHeaders) {
+    const opts = { credentials: 'same-origin', headers: Object.assign({}, extraHeaders || {}) };
     if (body !== undefined) {
       opts.method = 'POST';
       opts.headers['Content-Type'] = 'application/json';
@@ -22,6 +22,11 @@
     } catch (e) {
       return { ok: false, error: 'Server error (is PHP running?)' };
     }
+  }
+
+  function deviceName() {
+    const ua = (typeof navigator !== 'undefined' && navigator.userAgent) || '';
+    return ua.replace(/\s+/g, ' ').slice(0, 60);
   }
 
   function esc(s) {
@@ -91,9 +96,11 @@
         const data = Object.fromEntries(new FormData(form).entries());
         err.textContent = '';
         btn.disabled = true;
-        const r = await call(form.dataset.form, data);
+        // ask for a device token: offline-safe sync (js/core/sync.js) uses it instead of the cookie
+        const r = await call(form.dataset.form, Object.assign({ want_device: true, device_name: deviceName() }, data));
         btn.disabled = false;
         if (!r.ok) { err.textContent = r.error || 'Something went wrong'; return; }
+        if (r.device && window.SBSync) { try { await window.SBSync.setDevice(r.user.id, r.device); } catch (e) { /* sync falls back to the cookie */ } }
         setUser(r.user);
         form.reset();
         close();
@@ -138,7 +145,9 @@
     anchor.appendChild(menu);
     menu.addEventListener('click', e => e.stopPropagation());
     menu.querySelector('.auth-logout').addEventListener('click', async () => {
-      await call('logout', {});
+      const uid = currentUser && currentUser.id;
+      await call('logout', {}, window.SBSync ? window.SBSync.bearerHeaders() : {});   // the device token ends with the logout
+      if (window.SBSync && uid != null) { try { await window.SBSync.clearDevice(uid); } catch (e) { /* fine */ } }   // events waiting to be sent stay on the device
       setUser(null);
       closeMenu();
     });

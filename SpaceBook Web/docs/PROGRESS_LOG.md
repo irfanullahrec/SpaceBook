@@ -159,3 +159,24 @@ Not verified: PHP 7.4 / MySQL 5.7 (only PHP 8.2 + MariaDB 10.4 here; CI job php-
 
 Next: steps 5-7 are client work (js/core/store.js + sync.js outbox, convert sb_rewards/sb_study_plan/test_prep, guest-merge prompt, profile/export/delete, password change). Server steps in docs/PHASE0_SERVER_STEPS.md still pending; nothing pushed.
 
+## 2026-10-19 — Phase 2, step 5: client sync core (branch phase/p2-server)
+Owner instruction: no more questions about pushing or the server steps; the owner pushes after all phases.
+
+Done:
+- `js/core/store.js`: IndexedDB key-value store (outbox, meta, state) with localStorage and memory fallbacks.
+- `js/core/sync.js` (`window.SBSync`): `emit()` writes to the outbox first; `flush()` sends oldest-first in batches of 200 with exponential back-off + jitter, Retry-After, 401 -> auth-lost (events and sign-in kept, never demoted to guest), 413/422 -> batch halved to isolate a poison event; `pull()` follows the cursor and merges into a stored snapshot (applyPull is pure and repeatable); guest events wait for `adoptGuest()`; single-flight; survives reload.
+- Feature flag: automatic triggers run only when localStorage `sb_sync_v2` = `on` (or `window.SB_FLAGS.syncV2`), so the live page behaves as before until step 6 converts the modules.
+- `js/auth.js`: login/register ask for a device token and hand it to SBSync; logout sends the bearer token (server revokes the device) and forgets it locally; waiting events stay.
+- `index.html`: loads js/core/store.js and sync.js before auth.js (only that hunk committed; the file also holds another session's uncommitted Class 1 script tags).
+- `tools/validate.js` checks js/core syntax and the load order; CI: `test` job runs the client unit tests, `php-test` job runs the end-to-end test.
+
+Verified by:
+- `node tests/sync/unit.js` -> 39 passed, 0 failed (three runs). 5 mutations caught (network error drops events, 401 signs out, guest events sent without consent, retry not re-armed after an event during back-off, events removed without a server answer); the feature flag has its own test.
+- `node tests/sync/e2e.js` (real client + real PHP + MySQL scratch DB) -> 17 passed, 0 failed: delivery and snapshot; a lost answer is resent with the same ids and applied once (also for a repeat, which sets cannot protect); offline + reload + online; two devices editing one plan converge; delete propagates; guest events offered then adopted; revoked token -> auth-lost, event kept, resumes with a new token; bad event rejected without blocking the good one. Mutation (server ledger off) is caught.
+- `node tools/validate.js` -> 961 passed, 0 failed; `node tools/smoke.js` -> 0 failed (255 scripts load); PHP suite 152 passed.
+- HTML snapshot vs baseline: 9,715 tab renders, 20 differences, all in cls1-eng, where the other session has uncommitted edits (js/english_1_book.js, js/cls1_*.js); nothing else changed.
+
+Not verified: any of this in a real browser (Chrome cannot run here: RAM); IndexedDB behaviour beyond fake-indexeddb; PHP 7.4/MySQL 5.7; the CI jobs on GitHub. Nobody calls `SBSync.emit` yet.
+
+Next: step 6: convert `sb_rewards.js`, `sb_study_plan.js`, `test_prep.js` to emit events and read the pulled snapshot (one commit each, snapshot + smoke after each), then step 7 (guest-merge prompt, profile/export/delete, password change) and step 8 (backups).
+
