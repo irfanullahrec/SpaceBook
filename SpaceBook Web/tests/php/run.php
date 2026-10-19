@@ -236,6 +236,174 @@ $x = http('POST', 'auth.php?action=logout', [], ['Authorization: Bearer ' . $tok
 check('logout succeeds', $x['code'] === 200);
 check('logout with the device token revokes the device', (int)test_pdo()->query("SELECT revoked FROM devices WHERE id = '$did'")->fetchColumn() === 1);
 
+// ============================================================ 4. v2 sync + reward limits
+echo "--- api/v2/sync.php ---\n";
+function ev(string $type, array $payload, ?string $id = null): array
+{
+    return ['eventId' => $id ?: sb_uuid4(), 'type' => $type, 'payload' => $payload, 'clientTs' => 1700000000000, 'schema' => 1];
+}
+function stepEv(string $key, int $total, int $step): array { return ev('step', ['key' => $key, 'title' => 'T', 'total' => $total, 'step' => $step]); }
+function sync_post(?string $token, array $events, array $extra = [], ?string $jar = null): array
+{
+    return http('POST', 'v2/sync.php', ['events' => $events], array_merge($token ? ['Authorization: Bearer ' . $token] : [], $extra), $jar);
+}
+function coins_of(int $uid): int
+{
+    $st = test_pdo()->prepare('SELECT COALESCE(SUM(coins_earned), 0) FROM activity_progress WHERE user_id = ?');
+    $st->execute([$uid]);
+    return (int)$st->fetchColumn();
+}
+function user_id_of(string $num): int { return (int)test_pdo()->query("SELECT id FROM users WHERE whatsapp = '$num'")->fetchColumn(); }
+function fresh_user(): array
+{
+    reset_limits();
+    $r = reg(['want_device' => true]);
+    return ['token' => $r['json']['device']['token'], 'id' => user_id_of($r['num']), 'jar' => $r['jar'], 'num' => $r['num'], 'devId' => $r['json']['device']['id']];
+}
+function act_key(string $n): string { return 'cls2|math|u0|trace|' . $n . '|0'; }
+
+$u = fresh_user();
+$x = http('GET', 'v2/sync.php', null, ['Authorization: Bearer ' . $u['token']]);
+check('GET is not allowed yet', $x['code'] === 405);
+$x = sync_post(null, []);
+check('no credentials -> 401', $x['code'] === 401);
+$x = sync_post(str_repeat('a', 64), []);
+check('unknown token -> 401', $x['code'] === 401);
+$x = sync_post($u['token'], []);
+check('empty batch is fine', $x['code'] === 200 && $x['json']['accepted'] === [] && $x['json']['coins'] === 0, $x['body']);
+
+// one step, replayed
+$e1 = stepEv(act_key('aaa'), 3, 0);
+$x = sync_post($u['token'], [$e1]);
+check('step accepted, +1 coin, cursor moves', $x['code'] === 200 && $x['json']['accepted'] === [$e1['eventId']] && $x['json']['coins'] === 1 && $x['json']['cursor'] >= 1, $x['body']);
+$cur1 = $x['json']['cursor'];
+$x = sync_post($u['token'], [$e1]);
+check('replaying the same event is accepted and changes nothing', $x['json']['accepted'] === [$e1['eventId']] && $x['json']['coins'] === 1 && $x['json']['cursor'] === $cur1 && coins_of($u['id']) === 1, $x['body']);
+$x = sync_post($u['token'], [stepEv(act_key('aaa'), 3, 0)]);
+check('same step under a new event id pays nothing again', $x['json']['coins'] === 1, $x['body']);
+$x = sync_post($u['token'], [stepEv(act_key('aaa'), 3, 1), stepEv(act_key('aaa'), 3, 2)]);
+check('finishing the activity pays steps + 5 bonus (1+1+1+5 = 8)', $x['json']['coins'] === 8, $x['body']);
+$x = sync_post($u['token'], [ev('again', ['key' => act_key('aaa')])]);
+check('finishing an activity today already counts as today\x27s practice (no extra coin)', $x['json']['coins'] === 8 && count($x['json']['accepted']) === 1, $x['body']);
+test_pdo()->exec("UPDATE activity_progress SET last_completed_at = NOW() - INTERVAL 2 DAY WHERE user_id = {$u['id']}");
+$x = sync_post($u['token'], [ev('again', ['key' => act_key('aaa')])]);
+check('doing it again on a later day pays 2', $x['json']['coins'] === 10, $x['body']);
+$x = sync_post($u['token'], [ev('again', ['key' => act_key('aaa')])]);
+check('and not twice on the same day', $x['json']['coins'] === 10 && count($x['json']['accepted']) === 1, $x['body']);
+$x = sync_post($u['token'], [ev('again', ['key' => act_key('never')])]);
+check('again on an activity never completed is rejected', $x['json']['rejected'][0]['code'] === 'not_completed', $x['body']);
+
+// validation
+$bad = [
+    ['bad_key', ev('step', ['key' => 'foo', 'title' => '', 'total' => 3, 'step' => 0])],
+    ['bad_key', ev('step', ['key' => 'cls2|math|u0|trace|aaa|0|extra', 'title' => '', 'total' => 3, 'step' => 0])],
+    ['bad_total', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 10000, 'step' => 0])],
+    ['bad_total', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 0, 'step' => 0])],
+    ['bad_step', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 3, 'step' => -1])],
+    ['bad_step', ev('step', ['key' => act_key('bbb'), 'title' => '', 'total' => 3, 'step' => 5000])],
+    ['unsupported_type', ev('plan.save', ['plan' => []])],
+    ['unsupported_type', ev('coins', ['amount' => 99999])],
+    ['too_large', ev('step', ['key' => act_key('bbb'), 'title' => str_repeat('x', 70000), 'total' => 3, 'step' => 0])],
+];
+$x = sync_post($u['token'], array_map(function ($b) { return $b[1]; }, $bad));
+$codes = array_map(function ($r) { return $r['code']; }, $x['json']['rejected']);
+check('every invalid event is rejected with its reason', $codes === array_map(function ($b) { return $b[0]; }, $bad), json_encode($codes));
+check('rejected events earn nothing and leave no ledger row', coins_of($u['id']) === 10 && (int)test_pdo()->query('SELECT COUNT(*) FROM sync_events WHERE user_id = ' . $u['id'])->fetchColumn() === 7, (string)coins_of($u['id']));
+$x = sync_post($u['token'], [['eventId' => 'not-a-uuid', 'type' => 'step', 'payload' => []], ['type' => 'step'], 'junk']);
+check('bad event ids and non-objects are rejected', count($x['json']['rejected']) === 3 && $x['json']['accepted'] === [], $x['body']);
+$x = http('POST', 'v2/sync.php', ['events' => 'nope'], ['Authorization: Bearer ' . $u['token']]);
+check('events must be a list', $x['code'] === 422);
+
+// batch limits
+$x = sync_post($u['token'], array_map(function ($i) { return stepEv(act_key('lim'), 200, $i % 200); }, range(1, 501)));
+check('501 events -> 413', $x['code'] === 413, (string)$x['code']);
+$x = sync_post($u['token'], [ev('step', ['key' => act_key('big'), 'title' => str_repeat('y', 1100000), 'total' => 3, 'step' => 0])]);
+check('body over 1 MB -> 413', $x['code'] === 413, (string)$x['code']);
+
+// 1,000 events in two batches, daily coin cap, crafted farming
+$u2 = fresh_user();
+$b1 = []; $b2 = [];
+for ($i = 0; $i < 200; $i++) { $b1[] = stepEv(act_key('f1'), 200, $i); $b1[] = stepEv(act_key('f2'), 200, $i); }
+for ($i = 0; $i < 100; $i++) $b1[] = stepEv(act_key('f3'), 200, $i);
+for ($i = 100; $i < 200; $i++) $b2[] = stepEv(act_key('f3'), 200, $i);
+for ($i = 0; $i < 200; $i++) $b2[] = stepEv(act_key('f4'), 200, $i);
+for ($i = 0; $i < 200; $i++) $b2[] = stepEv(act_key('f5'), 200, $i);
+$r1 = sync_post($u2['token'], $b1); $r2 = sync_post($u2['token'], $b2);
+check('1,000 events in two batches of 500 are all accepted', $r1['code'] === 200 && $r2['code'] === 200 && count($r1['json']['accepted']) === 500 && count($r2['json']['accepted']) === 500 && $r2['json']['rejected'] === [], substr($r1['body'], 0, 200) . substr($r2['body'], 0, 200));
+check('daily coin cap: 1,000 steps worth ~1,015 coins pay exactly 600', $r2['json']['coins'] === 600 && coins_of($u2['id']) === 600, (string)$r2['json']['coins']);
+$steps = (int)test_pdo()->query("SELECT LENGTH(steps_done) - LENGTH(REPLACE(steps_done, ',', '')) + 1 FROM activity_progress WHERE user_id = {$u2['id']} AND activity_key = '" . act_key('f5') . "'")->fetchColumn();
+check('progress itself is still recorded after the cap (200 steps)', $steps === 200, (string)$steps);
+$r3 = sync_post($u2['token'], [stepEv(act_key('f6'), 200, 0)]);
+check('nothing more is earned today', $r3['json']['coins'] === 600);
+test_pdo()->exec("UPDATE rate_limits SET window_start = NOW() - INTERVAL 25 HOUR WHERE bucket = 'coins:u:{$u2['id']}'");
+$r4 = sync_post($u2['token'], [stepEv(act_key('f6'), 200, 1)]);
+check('the budget returns after 24 hours', $r4['json']['coins'] === 601, (string)$r4['json']['coins']);
+
+// new-activity cap
+$u3 = fresh_user();
+$evs = [];
+for ($i = 0; $i < 301; $i++) $evs[] = stepEv('cls2|math|u0|trace|n' . $i . '|0', 1, 0);
+$x = sync_post($u3['token'], $evs);
+check('301st new activity in a day is rejected as activity_limit', count($x['json']['accepted']) === 300 && count($x['json']['rejected']) === 1 && $x['json']['rejected'][0]['code'] === 'activity_limit', json_encode($x['json']['rejected']));
+check('only 300 activities exist', (int)test_pdo()->query("SELECT COUNT(*) FROM activity_progress WHERE user_id = {$u3['id']}")->fetchColumn() === 300);
+
+// two devices, any order, same result
+$ua = fresh_user(); $ub = fresh_user();
+$dA2 = sb_device_issue(test_pdo(), $ua['id'], 'second'); $dB2 = sb_device_issue(test_pdo(), $ub['id'], 'second');
+$k = act_key('two');
+sync_post($ua['token'], [stepEv($k, 3, 0), stepEv($k, 3, 1)]);
+$ra = sync_post($dA2['token'], [stepEv($k, 3, 2), stepEv($k, 3, 1)]);
+sync_post($dB2['token'], [stepEv($k, 3, 2), stepEv($k, 3, 1)]);
+$rb = sync_post($ub['token'], [stepEv($k, 3, 0), stepEv($k, 3, 1)]);
+$sa = test_pdo()->query("SELECT steps_done, times_completed FROM activity_progress WHERE user_id = {$ua['id']}")->fetch();
+$sb = test_pdo()->query("SELECT steps_done, times_completed FROM activity_progress WHERE user_id = {$ub['id']}")->fetch();
+check('two devices offline then online: same coins whatever the order (8)', $ra['json']['coins'] === 8 && $rb['json']['coins'] === 8, $ra['json']['coins'] . '/' . $rb['json']['coins']);
+check('and the same final steps', $sa === $sb && $sa['steps_done'] === '0,1,2' && (int)$sa['times_completed'] === 1, json_encode([$sa, $sb]));
+check('each event is attributed to its device', (int)test_pdo()->query("SELECT COUNT(DISTINCT device_id) FROM sync_events WHERE user_id = {$ua['id']}")->fetchColumn() === 2);
+
+// revoked
+$u4 = fresh_user();
+sb_device_revoke(test_pdo(), $u4['devId'], $u4['id']);
+check('revoked token -> 401', sync_post($u4['token'], [])['code'] === 401);
+
+// cookie authentication: same-site required
+$u5 = fresh_user();
+$x = http('POST', 'auth.php?action=login', ['whatsapp' => $u5['num'], 'password' => 'secret123'], [], $u5['jar']);
+$x = sync_post(null, [stepEv(act_key('ck'), 2, 0)], [], $u5['jar']);
+check('cookie session works for sync (same-site / no Origin)', $x['code'] === 200 && $x['json']['coins'] === 1, $x['body']);
+$x = sync_post(null, [stepEv(act_key('ck'), 2, 1)], ['Origin: http://evil.example'], $u5['jar']);
+check('cookie session from a foreign Origin -> 403', $x['code'] === 403);
+$x = sync_post(str_repeat('b', 64), [], [], $u5['jar']);
+check('a wrong bearer token is not rescued by a cookie', $x['code'] === 401);
+
+// rate limit
+$u6 = fresh_user();
+$last = null; $first429 = 0;
+for ($i = 1; $i <= 62; $i++) { $last = sync_post($u6['token'], []); if ($last['code'] === 429 && !$first429) $first429 = $i; }
+check('61st batch in a minute -> 429 with Retry-After', $first429 === 61 && preg_match('/Retry-After: \d+/i', $last['head']) === 1, "first429=$first429");
+
+// v1 endpoint carries the same limits
+$u7 = fresh_user();
+$x = http('POST', 'auth.php?action=login', ['whatsapp' => $u7['num'], 'password' => 'secret123'], [], $u7['jar']);
+$items = [];
+for ($n = 0; $n < 5; $n++) $items[] = ['key' => 'farm' . $n, 'title' => 'f', 'total' => 200, 'done' => range(0, 199)];
+$x = http('POST', 'progress.php?action=sync', ['items' => $items], [], $u7['jar']);
+check('v1 progress sync is capped too: 5 x 205 coins pay 600', $x['code'] === 200 && $x['json']['coins'] === 600 && $x['json']['earned'] === 600, $x['body']);
+$x = http('POST', 'progress.php?action=step', ['key' => 'huge', 'title' => 'h', 'total' => 100000, 'step' => 0], [], $u7['jar']);
+check('v1 step still answers ok after the cap (earned 0)', $x['code'] === 200 && $x['json']['ok'] === true && $x['json']['earned'] === 0, $x['body']);
+check('v1 total is clamped to 200 steps', (int)test_pdo()->query("SELECT steps_total FROM activity_progress WHERE user_id = {$u7['id']} AND activity_key = 'huge'")->fetchColumn() === 200);
+
+// replaying a non-set event (a repeat) must not count twice: this is what the event ledger is for
+$u8 = fresh_user();
+sync_post($u8['token'], [stepEv(act_key('idem'), 1, 0)]);                       // completes: 1 + 5 coins
+test_pdo()->exec("UPDATE activity_progress SET last_completed_at = NOW() - INTERVAL 2 DAY WHERE user_id = {$u8['id']}");
+$eAgain = ev('again', ['key' => act_key('idem')]);
+$x1 = sync_post($u8['token'], [$eAgain]);
+$times1 = (int)test_pdo()->query("SELECT times_completed FROM activity_progress WHERE user_id = {$u8['id']}")->fetchColumn();
+$x2 = sync_post($u8['token'], [$eAgain, $eAgain]);
+$times2 = (int)test_pdo()->query("SELECT times_completed FROM activity_progress WHERE user_id = {$u8['id']}")->fetchColumn();
+check('a replayed repeat (same event id, even twice in one batch) is applied once', $times1 === 2 && $times2 === 2 && $x1['json']['coins'] === 8 && $x2['json']['coins'] === 8 && $x2['json']['accepted'] === [$eAgain['eventId'], $eAgain['eventId']], json_encode([$times1, $times2, $x1['json']['coins'], $x2['json']['coins']]));
+
 // ============================================================ done
 if (is_resource($proc)) { proc_terminate($proc); proc_close($proc); }
 @unlink($cfg);

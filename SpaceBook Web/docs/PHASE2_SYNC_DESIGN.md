@@ -78,10 +78,10 @@ Existing tables get additive columns only (`activity_progress.server_seq`, `stud
 **Auth for sync.** A device token (random 32 bytes, stored hashed) in `Authorization: Bearer`, issued at login/registration with a device id, revocable on logout/"sign out everywhere". Cookie sessions stay for the existing pages; cookie-authenticated **POSTs require a CSRF token** (`X-CSRF` header, token returned by `me`). Token auth needs no CSRF, and a stolen cookie cannot POST without the token.
 
 **Rewards without an activity list.** Keys come from the SVG in the page at runtime (`keyOf` in `sb_trace.js`), so a build-time catalog is not possible without a browser enumerator. Interim, enforceable rules instead of a catalog:
-1. key must match `^(trace|count|plan)\|` + the existing charset, length ≤ 190;
-2. `total` fixed by the first accepted report and capped at **60** for trace/count (verify against real data first: the largest figure we ship; the cap is a config constant);
-3. per user: ≤ **300 new activities per day** and ≤ **600 coins per day** (config constants, owner can change); over the cap the events are still recorded as progress but earn 0 coins;
-4. `sync` rate limit: 60 batches/min/user → HTTP 429 with `Retry-After`.
+1. v2 accepts only the key shapes the app produces (`cls|subject|u<unit>|trace|count|<hash>|<n>` from `js/sb_trace.js`, and `plan|<planId>|<sessionId>` from `js/sb_study_plan.js`); v1 keeps its looser charset check;
+2. an activity has at most **200 steps** (the old server limit). Measured 2026-10-19 on all shipped data: the largest figure has 126 countable items and 49 dashed paths, so the proposed 60 would have rejected real figures;
+3. per user and 24 hours (fixed window): at most **600 coins** and **300 new activities** (approved defaults). Over the coin limit progress is still recorded but earns 0; past the activity limit the event is rejected as `activity_limit`. The same limits apply to v1 (`api/progress.php`), which uses the same library (`api/lib/rewards.php`);
+4. `sync` rate limit: 60 batches/min/user -> HTTP 429 with `Retry-After`.
 A true catalog (`activity_catalog`) is a Phase 6/9 follow-up once a build step can enumerate the figures; the table is created empty and, when filled, becomes authoritative (unknown key → `rejected: unknown_activity`).
 
 **Auth hardening (same phase).** Throttle by IP *and* number *and* a global per-IP ceiling; identical error text for wrong number/wrong password; `password_hash` stays; add `change_password` (needs current password); **reset channel is an owner decision** (see 10); prune `login_attempts` older than 30 days from the migration runner; one session lifetime (set `session.gc_maxlifetime` = cookie lifetime in `session.php`, confirm on host); logout revokes the device token; `health.php` public output becomes `{"ok":true}` only, details behind a `HEALTH_TOKEN` in config.

@@ -123,3 +123,23 @@ Not verified:
 
 Next: step 3 (`api/v2/sync.php` POST, progress events + coin rules) after the owner confirms the server steps.
 
+## 2026-10-19 — Phase 2, step 3: api/v2/sync.php + reward rules (branch phase/p2-server)
+Done:
+- `api/lib/rewards.php`: the coin rules and abuse limits in one place, used by v1 `progress.php` (refactored, same responses) and by v2. Limits per user and 24 h: 600 coins, 300 new activities; 200 steps per activity. Progress is recorded past the coin limit; past the activity limit nothing is created.
+- `api/v2/sync.php` (POST): batch <= 500 events and <= 1 MB; bearer device token or same-site cookie session; 60 batches/min/user; event ledger `sync_events` makes each eventId apply at most once; rejected events (bad_key, bad_total, bad_step, bad_event_id, bad_payload, bad_schema, too_large, unsupported_type, not_completed, activity_limit) leave no trace; response has accepted, rejected, cursor, coins. Types now: step, again. GET (pull) and plan/test-prep events are the next step.
+- `tests/php/run.php` now 100 checks.
+
+Verified by:
+- `php tests/php/run.php` -> 100 passed, 0 failed (two runs). Includes: replay of the same event; same step under a new id pays nothing; 8 coins for a 3-step activity; again pays 2 only on a later day; every invalid-event reason; 501 events and >1 MB -> 413; 1,000 events in two batches all accepted, coins capped at 600 with progress still recorded, budget returns after 24 h; 301st new activity -> activity_limit; two devices in opposite order give identical coins (8) and steps; revoked token 401; cookie session needs same-site; 61st batch -> 429 + Retry-After; v1 sync capped at 600 and v1 total clamped to 200.
+- Mutations caught: coin limit raised (5 failures), event ledger disabled (replayed repeat counted twice).
+- `node tools/php74_lint.js` -> 14 files, 0 problems.
+
+Deviations from the approved design:
+- Per-activity step cap is 200, not 60: the largest shipped figure has 126 countable items (measured), so 60 would reject real figures. The daily budgets are the abuse limit.
+- Real activity keys look like `cls2|math|u0|trace|<hash>|0`, not `trace|...` as the design assumed.
+- Finishing an activity counts as that day practice: an immediate repeat pays 0 (same as v1).
+
+Not verified: PHP 7.4 and MySQL 5.7 (CI job not yet run); no client uses v2 yet; behaviour on the live host. Another session changed `index.html` and added `js/cls1_eng_activities.js` in this working tree; they are not part of these commits.
+
+Next: step 4 (GET since cursor, plan and test-prep events, merge rules) — still waiting for the owner to confirm the server steps before any push.
+

@@ -20,7 +20,7 @@ Changed `api/`? Also run (needs local MySQL, e.g. XAMPP; uses a throwaway databa
 
 ```bash
 node tools/php74_lint.js        # PHP 8-only syntax is rejected: the live host ran PHP 7.4
-php tests/php/run.php           # migrations, auth hardening, rate limits, device tokens (63 checks)
+php tests/php/run.php           # migrations, auth hardening, rate limits, device tokens (100 checks)
 ```
 
 Setup for the browser tools only: `npm install` (Playwright, dev-only; nothing from `package.json`, `node_modules/` or `tests/` is deployed).
