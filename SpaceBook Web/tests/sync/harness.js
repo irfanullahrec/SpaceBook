@@ -29,13 +29,14 @@ async function start() {
     check(label, cond, detail) { if (cond) { pass++; console.log('PASS  ' + label); } else { fail++; console.log('FAIL  ' + label + (detail !== undefined ? '  -> ' + JSON.stringify(detail).slice(0, 300) : '')); } },
     async api(p, body, headers) {
       const res = await fetch(base + p, { method: body === undefined ? 'GET' : 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, headers || {}), body: body === undefined ? undefined : JSON.stringify(body) });
-      return { status: res.status, json: await res.json().catch(() => null) };
+      const sc = (res.headers.getSetCookie ? res.headers.getSetCookie() : []).map(c => c.split(';')[0]).find(c => c.startsWith('spacebook_sid='));
+      return { status: res.status, json: await res.json().catch(() => null), cookie: sc || null };
     },
     async account() {
       n++;
       const r = await h.api('auth.php?action=register', { name: 'H User', father_name: 'Father', user_type: 'student', whatsapp: '92300' + String(5000000 + n * 13 + process.pid % 11), password: 'secret123', want_device: true, device_name: 'node' });
       if (!r.json || !r.json.ok) throw new Error('register failed ' + JSON.stringify(r));
-      return r.json;
+      return Object.assign({}, r.json, { cookie: r.cookie });
     },
     async secondDevice(acct) {
       const r = await h.api('auth.php?action=login', { whatsapp: acct.user.whatsapp, password: 'secret123', want_device: true, device_name: 'second' });
@@ -44,16 +45,18 @@ async function start() {
     // a fresh page: all scripts loaded; `flag` turns sync v2 on; the network can be switched off with net.down
     newApp(opts) {
       opts = opts || {};
-      const net = { down: false, log: [], meUser: opts.me || null };   // opts.me: the user auth.php?action=me reports from the start (a signed-in page after a reload)   // meUser: what auth.php?action=me answers (a real browser holds the session cookie)
+      const net = { down: false, log: [], prompts: [], meUser: opts.me || null };   // opts.me: the user auth.php?action=me reports from the start (a signed-in page after a reload)   // meUser: what auth.php?action=me answers (a real browser holds the session cookie)
       const app = load({
         quiet: true,
         before(sb) {
           if (opts.flag) sb.localStorage.setItem('sb_sync_v2', 'on');
           if (opts.storage) Object.keys(opts.storage).forEach(k => sb.localStorage.setItem(k, opts.storage[k]));
           sb.navigator.onLine = true;
+          sb.confirm = msg => { net.prompts.push(String(msg)); return opts.consent !== false; };      // the consent question; opts.consent === false answers "Cancel"
           sb.fetch = async (url, o) => {
             net.log.push({ url: String(url), method: (o && o.method) || 'GET' });
             if (net.down) throw new Error('network down');
+            if (net.cookie) o = Object.assign({}, o, { headers: Object.assign({}, o && o.headers, { Cookie: net.cookie }) });    // the page's session cookie
             if (String(url).includes('auth.php?action=me')) return new Response(JSON.stringify({ ok: true, user: net.meUser }), { headers: { 'Content-Type': 'application/json' } });
             return fetch(String(url).startsWith('http') ? url : base + String(url).replace(/^\.?\/?(api\/)?/, ''), o);
           };
@@ -66,6 +69,7 @@ async function start() {
         async signIn(acct, dev) {
           await sb.SBSync.ready;
           net.meUser = acct.user;
+          if (acct.cookie) net.cookie = acct.cookie;
           await sb.SBSync.setDevice(acct.user.id, dev || acct.device);
           sb.document.dispatchEvent(new sb.CustomEvent('spacebook:auth', { detail: { user: acct.user } }));
           await sleep(400);                                 // background sync started by the modules settles

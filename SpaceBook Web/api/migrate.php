@@ -22,7 +22,11 @@ case 'prune':   // housekeeping: old login attempts, expired rate-limit counters
     $c = $pdo->exec('DELETE FROM audit_log WHERE created_at < NOW() - INTERVAL 365 DAY');
     echo "pruned login_attempts=$a rate_limits=$b audit_log=$c\n";
     break;
+case 'purge':   // accounts deleted more than 30 days ago, with all their records
+    require __DIR__ . '/lib/account.php';
+    echo 'purged accounts: ', sb_purge_deleted($pdo, 30), "\n";
+    break;
 default:
-    fwrite(STDERR, "usage: php api/migrate.php status|up|down [N]|prune\n");
+    fwrite(STDERR, "usage: php api/migrate.php status|up|down [N]|prune|purge\n");
     exit(2);
 }

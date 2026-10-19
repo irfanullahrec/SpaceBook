@@ -357,8 +357,9 @@ check('index.html loads Class 10 new datasets before app.js', [
   'js/drawing_10_data.js', 'js/islamiat_ikhtiari_10_data.js', 'js/mutalia_quran_10_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
-safe('index.html loads js/core/store.js and js/core/sync.js (in that order) before js/auth.js', () => check('index.html loads js/core/store.js and js/core/sync.js (in that order) before js/auth.js',
-  srcs.indexOf('js/core/store.js') >= 0 && srcs.indexOf('js/core/store.js') < srcs.indexOf('js/core/sync.js') && srcs.indexOf('js/core/sync.js') < srcs.indexOf('js/auth.js')));
+safe('index.html loads js/core/store.js, sync.js, consent.js (in that order) before js/sb_rewards.js and js/auth.js', () => check('index.html loads js/core/store.js, sync.js, consent.js (in that order) before js/sb_rewards.js and js/auth.js',
+  srcs.indexOf('js/core/store.js') >= 0 && srcs.indexOf('js/core/store.js') < srcs.indexOf('js/core/sync.js') && srcs.indexOf('js/core/sync.js') < srcs.indexOf('js/core/consent.js')
+  && srcs.indexOf('js/core/consent.js') < srcs.indexOf('js/sb_rewards.js') && srcs.indexOf('js/sb_rewards.js') < srcs.indexOf('js/auth.js')));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 safe('every <script src> exists', () => check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(',')));
 const cssHref = (html.match(/<link\s+rel="stylesheet"\s+href="([^"]+)"/g) || []).map(s => s.match(/href="([^"]+)"/)[1]);

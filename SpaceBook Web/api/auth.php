@@ -13,6 +13,7 @@ header('Cache-Control: no-store');
 
 require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
+require __DIR__ . '/lib/account.php';
 
 const USER_TYPES   = ['school', 'teacher', 'student'];
 const MAX_FAILS    = 5;   // per number, per window
@@ -87,6 +88,17 @@ function maybe_device(PDO $pdo, array $user, array $in): array
 {
     if (empty($in['want_device'])) return [];
     return ['device' => sb_device_issue($pdo, (int)$user['id'], (string)($in['device_name'] ?? ''))];
+}
+
+// the signed-in, active user of this session, or a 401
+function require_session_user(PDO $pdo): array
+{
+    if (empty($_SESSION['uid'])) fail(401, 'Sign in first');
+    $st = $pdo->prepare("SELECT * FROM users WHERE id = ? AND status = 'active'");
+    $st->execute([$_SESSION['uid']]);
+    $u = $st->fetch();
+    if (!$u) fail(401, 'Sign in first');
+    return $u;
 }
 
 $action = $_GET['action'] ?? '';
@@ -169,6 +181,7 @@ case 'login':
         ->execute([$whatsapp, client_ip(), $good ? 1 : 0]);
 
     if (!$good) fail(401, 'Wrong WhatsApp number or password');
+    if ($user['status'] === 'deleted') fail(401, 'Wrong WhatsApp number or password');
     if ($user['status'] !== 'active') fail(403, 'This account is blocked');
 
     if (password_needs_rehash($user['password_hash'], PASSWORD_DEFAULT)) {
@@ -197,6 +210,64 @@ case 'me':
     $st->execute([$_SESSION['uid']]);
     $user = $st->fetch();
     reply(200, ['ok' => true, 'user' => $user ? public_user($user) : null]);
+
+// ---- own account (session cookie required) ----
+case 'update_profile':
+    if ($method !== 'POST') fail(405, 'POST required');
+    if (!sb_request_is_same_site()) fail(403, 'Request not allowed');
+    $me = require_session_user($pdo);
+    $in = input();
+    $name   = clean_name($in['name'] ?? $me['name']);
+    $father = clean_name($in['father_name'] ?? $me['father_name']);
+    if (mb_strlen($name) < 2 || mb_strlen($name) > 100)     fail(422, 'Please enter your name');
+    if (mb_strlen($father) < 2 || mb_strlen($father) > 100) fail(422, 'Please enter father name');
+    $pdo->prepare('UPDATE users SET name = ?, father_name = ? WHERE id = ?')->execute([$name, $father, $me['id']]);
+    sb_audit($pdo, (int)$me['id'], 'profile_update');
+    $me['name'] = $name; $me['father_name'] = $father;
+    reply(200, ['ok' => true, 'user' => public_user($me)]);
+
+case 'change_password':
+    if ($method !== 'POST') fail(405, 'POST required');
+    if (!sb_request_is_same_site()) fail(403, 'Request not allowed');
+    $me = require_session_user($pdo);
+    $rl = sb_rate_hit($pdo, 'pw:u:' . $me['id'], 10, 3600);
+    if (!$rl['ok']) fail(429, 'Too many attempts. Try again later', $rl['retry']);
+    $in = input();
+    $current = (string)($in['current_password'] ?? '');
+    $new     = (string)($in['new_password'] ?? '');
+    if (!password_verify($current, $me['password_hash'])) fail(403, 'Your current password is not right');
+    if (strlen($new) < 6)                                 fail(422, 'The new password must be at least 6 characters');
+    if ($new === $current)                                fail(422, 'Choose a different password');
+    $pdo->prepare('UPDATE users SET password_hash = ? WHERE id = ?')->execute([password_hash($new, PASSWORD_DEFAULT), $me['id']]);
+    // every other device is signed out; the device making this request (if it sent its token) stays
+    $dev = sb_device_from_request($pdo);
+    $pdo->prepare('UPDATE devices SET revoked = 1 WHERE user_id = ? AND id <> ?')->execute([$me['id'], $dev ? $dev['device_id'] : '']);
+    session_regenerate_id(true);
+    sb_audit($pdo, (int)$me['id'], 'password_change');
+    reply(200, ['ok' => true]);
+
+case 'export':
+    if ($method !== 'GET') fail(405, 'GET required');
+    $me = require_session_user($pdo);
+    sb_audit($pdo, (int)$me['id'], 'export');
+    header('Content-Disposition: attachment; filename="spacebook-my-data.json"');
+    echo json_encode(sb_account_export($pdo, (int)$me['id']), JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_PARTIAL_OUTPUT_ON_ERROR);
+    exit;
+
+case 'delete_account':
+    if ($method !== 'POST') fail(405, 'POST required');
+    if (!sb_request_is_same_site()) fail(403, 'Request not allowed');
+    $me = require_session_user($pdo);
+    $rl = sb_rate_hit($pdo, 'pw:u:' . $me['id'], 10, 3600);
+    if (!$rl['ok']) fail(429, 'Too many attempts. Try again later', $rl['retry']);
+    if (!password_verify((string)(input()['password'] ?? ''), $me['password_hash'])) fail(403, 'Your password is not right');
+    $pdo->prepare("UPDATE users SET status = 'deleted', deleted_at = NOW() WHERE id = ?")->execute([$me['id']]);
+    sb_device_revoke_all($pdo, (int)$me['id']);
+    sb_audit($pdo, (int)$me['id'], 'account_delete');
+    $_SESSION = [];
+    session_destroy();
+    setcookie(session_name(), '', ['expires' => time() - 3600, 'path' => '/']);
+    reply(200, ['ok' => true]);
 
 default:
     fail(400, 'Unknown action');

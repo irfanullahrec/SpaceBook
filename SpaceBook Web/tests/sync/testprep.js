@@ -71,6 +71,19 @@ const tupleSum = rec => Object.values(rec.q).reduce((n, v) => n + v[0], 0);
     check("another student on the same browser does not receive the first student's practice", !recOf(A2, a2.user.id) || tupleSum(recOf(A2, a2.user.id)) === 0, recOf(A2, a2.user.id));
   }
 
+  // 3b. a guest record is left on the device when the student says no; their own earlier record needs no question
+  {
+    const a = await h.account(); const uid = a.user.id;
+    const G = h.newApp({ flag: true, bank: true });
+    await practise(G, 2, true);
+    const A = h.newApp({ flag: true, bank: true, storage: storageOf(G), me: a.user, consent: false }); await A.signIn(a);
+    await A.sb.SBTestPrep.open('pst'); await sleep(900);
+    check('Cancel: asked once, the guest record stays on this device and nothing reaches the account', A.net.prompts.length === 1 && !!A.sb.localStorage.getItem('sbTP:v1:guest') && (!recOf(A, uid) || tupleSum(recOf(A, uid)) === 0), recOf(A, uid));
+    const own = h.newApp({ flag: true, bank: true, me: a.user, consent: false, storage: { ['sbTP:v1:' + uid]: JSON.stringify({ v: 1, q: { ownq1: [2, 1, 5, 1, 100] }, sessions: [], days: {}, run: null, runClearedAt: 0, updatedAt: 1, pushed: [] }) } });
+    await own.signIn(a); await own.sb.SBTestPrep.open('pst'); await sleep(900);
+    check("the student's own earlier record is imported without any question", own.net.prompts.length === 0 && recOf(own, uid).q.ownq1 && recOf(own, uid).q.ownq1[0] === 2, recOf(own, uid));
+  }
+
   // 4. the record the old version kept on this device is imported once
   {
     const a = await h.account(); const uid = a.user.id;

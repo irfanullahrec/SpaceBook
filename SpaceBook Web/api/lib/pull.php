@@ -6,7 +6,7 @@
 //    progress: {activityKey: {done:[..], total, times, first, last}},
 //    plans: [plan...], plansDeleted: [id...],
 //    tp: {q: {mcqId: [attempts, correct, lastTs, lastCorrect, ms]}, days: {track: {day: [ms, answered, correct]}},
-//         sessions: [session...], run: {...}|null, runClearedAt}}
+//         sessions: [session...], run: {...}|null, runClearedAt}}      (run and runClearedAt only when they changed, or on a full pull)
 //
 // Objects are absolute (not deltas), so applying a pull twice, or in any order, gives the same result.
 // `cursor` is the highest change number covered; call again with it. `more` = there is a next page.
@@ -34,7 +34,7 @@ function sb_pull(PDO $pdo, int $uid, int $since): array
     $want = function (string $kind, string $ref) use ($full, $refs): bool { return $full || isset($refs[$kind][$ref]); };
 
     $out = ['ok' => true, 'cursor' => $cursor, 'more' => $more, 'coins' => sb_total_coins($pdo, $uid),
-            'progress' => [], 'plans' => [], 'plansDeleted' => [], 'tp' => ['q' => [], 'days' => [], 'sessions' => [], 'run' => null, 'runClearedAt' => 0]];
+            'progress' => [], 'plans' => [], 'plansDeleted' => [], 'tp' => ['q' => [], 'days' => [], 'sessions' => []]];     // run / runClearedAt only when the unfinished test changed (or on a full pull)
 
     $st = $pdo->prepare('SELECT activity_key, steps_total, steps_done, times_completed, first_completed_at, last_completed_at FROM activity_progress WHERE user_id = ?');
     $st->execute([$uid]);
@@ -83,6 +83,8 @@ function sb_pull(PDO $pdo, int $uid, int $since): array
     $out['tp']['sessions'] = array_reverse($out['tp']['sessions']);
 
     if ($want('tpr', 'run')) {
+        $out['tp']['run'] = null;
+        $out['tp']['runClearedAt'] = 0;
         $st = $pdo->prepare('SELECT run_json, saved_ms, cleared_ms FROM tp_runs WHERE user_id = ?');
         $st->execute([$uid]);
         $r = $st->fetch();

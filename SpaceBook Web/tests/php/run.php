@@ -55,9 +55,9 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 4 pending', $s['current'] === 0 && count($s['pending']) === 4 && $s['latest'] === 4, json_encode($s));
+check('empty database is at version 0 with 5 pending', $s['current'] === 0 && count($s['pending']) === 5 && $s['latest'] === 5, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies 001, 002, 003 and 004', count($applied) === 4, json_encode($applied));
+check('up applies all five migrations', count($applied) === 5, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
 foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
@@ -67,13 +67,15 @@ check('second up changes nothing', sb_migrate_up($pdo) === []);
 $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_hash) VALUES ('A','B','student','923001110001','x')");
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
+$undone5 = sb_migrate_down($pdo, 1);
+check('down 1 removes the 005 column and the extra status value', $undone5 === ['005_account_lifecycle.sql'] && !in_array('deleted_at', $pdo->query('SHOW COLUMNS FROM users')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone5));
 $undone = sb_migrate_down($pdo, 1);
 check('down 1 removes the 004 column only', $undone === ['004_plan_device.sql'] && !in_array('last_device', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone));
 check('down 1 more removes the 003 tables and the plan rev column', sb_migrate_down($pdo, 1) === ['003_sync_state.sql'] && !in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 4', count(sb_migrate_up($pdo)) === 3 && sb_schema_version($pdo) === 4);
+check('up again restores version 5', count(sb_migrate_up($pdo)) === 4 && sb_schema_version($pdo) === 5);
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -174,7 +176,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 4 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 5 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -438,6 +440,15 @@ check('GET without credentials -> 401', pull(null)['code'] === 401);
 $g = pull($p['token']);
 check('an empty account pulls an empty state', $g['code'] === 200 && $g['json']['cursor'] === 0 && $g['json']['more'] === false && $g['json']['progress'] === [] && $g['json']['plans'] === [] && $g['json']['tp']['q'] === [] && $g['json']['tp']['run'] === null, $g['body']);
 
+// ---- the unfinished test is sent only when it changed
+sync_post($p['token'], [ev('tp.run', ['run' => ['id' => 'runkeep', 'track' => 'pst', 'mode' => 'practice', 'ids' => [], 'answers' => [], 'i' => 0, 'savedAt' => 1000]])]);
+$gr = pull($p['token']);
+$cr = $gr['json']['cursor'];
+check('a full pull carries the unfinished test', $gr['json']['tp']['run']['id'] === 'runkeep' && $gr['json']['tp']['runClearedAt'] === 0);
+sync_post($p['token'], [ans('rk1', true, 10, 5)]);
+$gi = pull($p['token'], $cr);
+check('an incremental pull that did not touch the unfinished test does not mention it (so a client keeps what it has)', !array_key_exists('run', $gi['json']['tp']) && !array_key_exists('runClearedAt', $gi['json']['tp']) && isset($gi['json']['tp']['q']['rk1']), $gi['body']);
+
 // ---- progress in a pull, incremental
 sync_post($p['token'], [stepEv(act_key('pa'), 3, 0), stepEv(act_key('pa'), 3, 1)]);
 $g1 = pull($p['token']);
@@ -600,6 +611,151 @@ sync_post($ck['token'], [stepEv(act_key('ckp'), 1, 0)]);
 $x = pull(null, 0, $ck['jar']);
 check('a cookie session can pull', $x['code'] === 200 && $x['json']['coins'] === 6, $x['body']);
 check('a wrong bearer token cannot pull even with a cookie', pull(str_repeat('c', 64), 0, $ck['jar'])['code'] === 401);
+
+// ============================================================ 6. account: profile, password, export, delete
+echo "--- account ---\n";
+function acct_login(array $acct, string $pw = 'secret123'): array
+{
+    $jar = tempnam(sys_get_temp_dir(), 'sbj');
+    $r = http('POST', 'auth.php?action=login', ['whatsapp' => $acct['whatsapp'], 'password' => $pw, 'want_device' => true], [], $jar);
+    $r['jar'] = $jar;
+    return $r;
+}
+function new_acct(): array
+{
+    reset_limits();
+    $r = reg(['want_device' => true]);
+    return ['token' => $r['json']['device']['token'], 'devId' => $r['json']['device']['id'], 'id' => user_id_of($r['num']), 'jar' => $r['jar'], 'whatsapp' => $r['num']];
+}
+$ac = new_acct();
+$x = http('POST', 'auth.php?action=update_profile', ['name' => 'Changed Name', 'father_name' => 'New Father'], [], $ac['jar']);
+check('profile can be changed', $x['code'] === 200 && $x['json']['user']['name'] === 'Changed Name' && $x['json']['user']['father_name'] === 'New Father' && $x['json']['user']['whatsapp'] === $ac['whatsapp'], $x['body']);
+$x = http('POST', 'auth.php?action=update_profile', ['name' => 'X'], [], $ac['jar']);
+check('a one-letter name is refused', $x['code'] === 422);
+$x = http('POST', 'auth.php?action=update_profile', ['name' => 'Evil Name'], ['Origin: http://evil.example'], $ac['jar']);
+check('profile change from a foreign Origin is refused', $x['code'] === 403);
+$x = http('POST', 'auth.php?action=update_profile', ['name' => 'Anonymous Name']);
+check('profile change without a session is refused', $x['code'] === 401);
+
+// data to export
+sync_post($ac['token'], [stepEv(act_key('exp'), 1, 0), ans('exp1', true, 1000, 5), ev('plan.save', ['plan' => mk_plan('plan_exp01', 'Export plan', [task('t1', 1, 0)]), 'baseRev' => 0])]);
+$x = http('GET', 'auth.php?action=export', null, [], $ac['jar']);
+$ex = $x['json'];
+check('export returns the account data as a download', $x['code'] === 200 && stripos($x['head'], 'Content-Disposition: attachment') !== false && $ex['schema'] === 'spacebook.export/1', substr($x['body'], 0, 120));
+check('export holds rewards, plans, answers and devices of this student', count($ex['rewards']) === 1 && count($ex['study_plans']) === 1 && $ex['study_plans'][0]['plan']['name'] === 'Export plan' && $ex['tests_preps']['answers'][0]['mcq_id'] === 'exp1' && count($ex['devices']) >= 1 && $ex['account']['name'] === 'Changed Name');
+check('export never contains the password hash or a device token', strpos($x['body'], 'password_hash') === false && strpos($x['body'], $ac['token']) === false && strpos($x['body'], hash('sha256', $ac['token'])) === false);
+$other = new_acct();
+$xo = http('GET', 'auth.php?action=export', null, [], $other['jar']);
+check("another student's export does not contain this student's data", count($xo['json']['rewards']) === 0 && count($xo['json']['study_plans']) === 0 && strpos($xo['body'], 'Export plan') === false);
+check('export needs a session', http('GET', 'auth.php?action=export')['code'] === 401);
+
+// password change
+$pc = new_acct();
+$dev2 = sb_device_issue(test_pdo(), $pc['id'], 'second');
+$x = http('POST', 'auth.php?action=change_password', ['current_password' => 'wrong', 'new_password' => 'newsecret1'], [], $pc['jar']);
+check('changing the password needs the current one', $x['code'] === 403);
+$x = http('POST', 'auth.php?action=change_password', ['current_password' => 'secret123', 'new_password' => '123'], [], $pc['jar']);
+check('a too short new password is refused', $x['code'] === 422);
+$x = http('POST', 'auth.php?action=change_password', ['current_password' => 'secret123', 'new_password' => 'secret123'], [], $pc['jar']);
+check('the same password again is refused', $x['code'] === 422);
+$x = http('POST', 'auth.php?action=change_password', ['current_password' => 'secret123', 'new_password' => 'newsecret1'], ['Authorization: Bearer ' . $pc['token']], $pc['jar']);
+check('the password can be changed', $x['code'] === 200 && $x['json']['ok'] === true, $x['body']);
+reset_limits();
+check('the old password no longer works, the new one does', acct_login($pc)['code'] === 401 && acct_login($pc, 'newsecret1')['code'] === 200);
+check('other devices are signed out, the device that changed the password stays', sync_post($dev2['token'], [])['code'] === 401 && sync_post($pc['token'], [])['code'] === 200);
+$x = http('POST', 'auth.php?action=change_password', ['current_password' => 'newsecret1', 'new_password' => 'another1x'], ['Origin: http://evil.example'], $pc['jar']);
+check('password change from a foreign Origin is refused', $x['code'] === 403);
+
+// delete
+$dl = new_acct();
+sync_post($dl['token'], [stepEv(act_key('del'), 1, 0), ans('del1', true, 1000, 5)]);
+$x = http('POST', 'auth.php?action=delete_account', ['password' => 'wrong'], [], $dl['jar']);
+check('deleting the account needs the password', $x['code'] === 403 && (string)test_pdo()->query("SELECT status FROM users WHERE id = {$dl['id']}")->fetchColumn() === 'active');
+$x = http('POST', 'auth.php?action=delete_account', ['password' => 'secret123'], ['Origin: http://evil.example'], $dl['jar']);
+check('deleting from a foreign Origin is refused', $x['code'] === 403);
+$x = http('POST', 'auth.php?action=delete_account', ['password' => 'secret123'], [], $dl['jar']);
+check('the account is deleted', $x['code'] === 200 && (string)test_pdo()->query("SELECT status FROM users WHERE id = {$dl['id']}")->fetchColumn() === 'deleted');
+reset_limits();
+$lg = http('POST', 'auth.php?action=login', ['whatsapp' => $dl['whatsapp'], 'password' => 'secret123']);
+check('a deleted account cannot sign in and the answer is the same as for a wrong password', $lg['code'] === 401 && strpos($lg['body'], 'Wrong WhatsApp number or password') !== false, $lg['body']);
+check('its device token stops working', sync_post($dl['token'], [])['code'] === 401);
+check('the session is gone (me answers no user)', http('GET', 'auth.php?action=me', null, [], $dl['jar'])['json']['user'] === null);
+check('its data is still there for the grace period', (int)test_pdo()->query("SELECT COUNT(*) FROM activity_progress WHERE user_id = {$dl['id']}")->fetchColumn() === 1);
+$t = test_pdo();
+require_once $api . '/lib/account.php';
+check('purge does not touch accounts deleted less than 30 days ago', sb_purge_deleted($t, 30) === 0 && (int)$t->query("SELECT COUNT(*) FROM users WHERE id = {$dl['id']}")->fetchColumn() === 1);
+$t->exec("UPDATE users SET deleted_at = NOW() - INTERVAL 31 DAY WHERE id = {$dl['id']}");
+$keep = $ac['id'];
+check('purge removes an account deleted more than 30 days ago', sb_purge_deleted($t, 30) === 1);
+$left = 0;
+foreach (['users' => 'id', 'activity_progress' => 'user_id', 'tp_answers' => 'user_id', 'tp_days' => 'user_id', 'sync_events' => 'user_id', 'sync_changes' => 'user_id', 'devices' => 'user_id', 'audit_log' => 'user_id', 'study_plans' => 'user_id', 'user_sync_state' => 'user_id'] as $tbl => $col) {
+    $left += (int)$t->query("SELECT COUNT(*) FROM $tbl WHERE $col = {$dl['id']}")->fetchColumn();
+}
+check('and every record of that account is gone from every table', $left === 0, (string)$left);
+check('other accounts are untouched by the purge', (int)$t->query("SELECT COUNT(*) FROM users WHERE id = $keep")->fetchColumn() === 1 && (int)$t->query("SELECT COUNT(*) FROM tp_answers WHERE user_id = $keep")->fetchColumn() === 1);
+
+// ============================================================ 7. backup and restore drill
+echo "--- backup / restore drill ---\n";
+function run_php(array $args, array $env = []): array
+{
+    $cmd = escapeshellarg(PHP_BINARY);
+    foreach ($args as $a) $cmd .= ' ' . escapeshellarg($a);
+    $p = proc_open($cmd, [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes, null, array_merge(getenv(), $env));
+    $o = stream_get_contents($pipes[1]); $e = stream_get_contents($pipes[2]);
+    return ['code' => proc_close($p), 'out' => $o, 'err' => $e];
+}
+$bkDir = sys_get_temp_dir() . '/sb_backup_test_' . getmypid();
+@mkdir($bkDir, 0700, true);
+$src = test_pdo();
+$expectTables = $src->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
+// awkward values must survive: quotes, backslashes, newlines, semicolons at a line end, emoji, Urdu, NULL
+$src->exec("INSERT INTO audit_log (user_id, action, detail) VALUES (NULL, 'drill', " . $src->quote("it's \\ a \"test\";\nsecond line;\n🙂 اردو متن") . ")");
+$dump = run_php([$root . '/tools/backup/dump.php', '--out', $bkDir, '--keep', '2'], ['SB_CONFIG' => $cfg]);
+$files = glob($bkDir . '/spacebook-*.sql.gz') ?: [];
+check('a backup file is written', $dump['code'] === 0 && count($files) === 1 && filesize($files[0]) > 1000, $dump['out'] . $dump['err']);
+check('the dump reports every table', preg_match('/(\d+) tables/', $dump['out'], $m) === 1 && (int)$m[1] === count($expectTables), $dump['out']);
+
+$rname = 'spacebook_test_restore';
+server_pdo()->exec("DROP DATABASE IF EXISTS `$rname`");
+server_pdo()->exec("CREATE DATABASE `$rname` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
+$rcfg = sys_get_temp_dir() . '/spacebook_restore_config_' . getmypid() . '.php';
+file_put_contents($rcfg, '<?php return ' . var_export(['db_host' => $host, 'db_name' => $rname, 'db_user' => $user, 'db_pass' => $pass, 'db_port' => 3306], true) . ';');
+$rs = run_php([$root . '/tools/backup/restore.php', '--file', $files[0], '--config', $rcfg]);
+check('the dump restores into an empty database', $rs['code'] === 0, $rs['out'] . $rs['err']);
+$dst = new PDO("mysql:host=$host;dbname=$rname;charset=utf8mb4", $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
+$mismatch = [];
+foreach ($expectTables as $t) {
+    $a = (int)$src->query("SELECT COUNT(*) FROM `$t`")->fetchColumn();
+    $b = (int)$dst->query("SELECT COUNT(*) FROM `$t`")->fetchColumn();
+    $ca = $src->query("CHECKSUM TABLE `$t`")->fetch(PDO::FETCH_NUM)[1];
+    $cb = $dst->query("CHECKSUM TABLE `$t`")->fetch(PDO::FETCH_NUM)[1];
+    if ($a !== $b || $ca !== $cb) $mismatch[] = "$t rows $a/$b checksum $ca/$cb";
+}
+check('every table has the same rows and checksum after the restore (' . count($expectTables) . ' tables)', !$mismatch, json_encode($mismatch));
+$d1 = $src->query("SELECT detail FROM audit_log WHERE action = 'drill'")->fetchColumn();
+$d2 = $dst->query("SELECT detail FROM audit_log WHERE action = 'drill'")->fetchColumn();
+check('quotes, backslashes, newlines, semicolons, emoji and Urdu survive byte for byte', $d1 === $d2 && strpos($d2, "\n🙂 اردو متن") !== false, json_encode([$d1, $d2], JSON_UNESCAPED_UNICODE));
+check('the schema version and a user can be read from the restored copy', (int)$dst->query('SELECT MAX(version) FROM schema_version')->fetchColumn() === (int)$src->query('SELECT MAX(version) FROM schema_version')->fetchColumn() && (int)$dst->query('SELECT COUNT(*) FROM users')->fetchColumn() > 0);
+$again = run_php([$root . '/tools/backup/restore.php', '--file', $files[0], '--config', $rcfg]);
+check('a restore into a database that already has tables is refused without --force', $again['code'] === 3 && strpos($again['err'], '--force') !== false, $again['err']);
+$forced = run_php([$root . '/tools/backup/restore.php', '--file', $files[0], '--config', $rcfg, '--force']);
+check('and works with --force', $forced['code'] === 0);
+$cut = $bkDir . '/cut.sql.gz';
+$gzr = gzopen($cut, 'wb'); gzwrite($gzr, "DROP TABLE IF EXISTS `x`;\nCREATE TABLE `x` (a int);\nINSERT INTO `x` VALUES\n(1),\n(2"); gzclose($gzr);
+server_pdo()->exec("DROP DATABASE IF EXISTS `$rname`"); server_pdo()->exec("CREATE DATABASE `$rname` CHARACTER SET utf8mb4");
+$bad = run_php([$root . '/tools/backup/restore.php', '--file', $cut, '--config', $rcfg]);
+check('a truncated dump is reported, not silently accepted', $bad['code'] === 1 && strpos($bad['err'], 'cut short') !== false, json_encode($bad));
+$inside = run_php([$root . '/tools/backup/dump.php', '--out', '/home/x/public_html/backups'], ['SB_CONFIG' => $cfg]);
+check('backups are refused inside public_html', $inside['code'] === 2 && strpos($inside['err'], 'public_html') !== false);
+// rotation: keep the newest 2
+foreach (['20200101-000000', '20200102-000000', '20200103-000000'] as $stamp) file_put_contents($bkDir . "/spacebook-$stamp.sql.gz", 'old');
+$rot = run_php([$root . '/tools/backup/dump.php', '--out', $bkDir, '--keep', '2'], ['SB_CONFIG' => $cfg]);
+$left = array_map('basename', glob($bkDir . '/spacebook-*.sql.gz') ?: []);
+check('rotation keeps only the newest dumps (--keep 2)', $rot['code'] === 0 && count($left) === 2 && !in_array('spacebook-20200101-000000.sql.gz', $left, true), json_encode($left));
+server_pdo()->exec("DROP DATABASE IF EXISTS `$rname`");
+@unlink($rcfg);
+foreach (glob($bkDir . '/*') ?: [] as $f) @unlink($f);
+@rmdir($bkDir);
 
 // ============================================================ done
 if (is_resource($proc)) { proc_terminate($proc); proc_close($proc); }

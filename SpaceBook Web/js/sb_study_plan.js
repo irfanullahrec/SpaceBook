@@ -98,14 +98,22 @@
     saveLocal();
     if (onPage()) render();
   }
-  async function syncV2(user) {
+  let syncingV2 = null;
+  function syncV2(user) {      // single-flight, see loadV2 in sb_rewards.js
+    if (!syncingV2) syncingV2 = syncV2Once(user).finally(() => { syncingV2 = null; });
+    return syncingV2;
+  }
+  async function syncV2Once(user) {
     signedIn = true;
     hookV2();
     await window.SBSync.setUser(user);
     const pend = await window.SBSync.pendingEvents();
     const queued = new Set(pend.filter(e => e.type === 'plan.save' && e.payload && e.payload.plan).map(e => e.payload.plan.id));
-    // plans made on this device before they were ever synced go to the account
-    for (const p of plans) if (!p.rev && !queued.has(p.id)) await window.SBSync.emit('plan.save', {plan: stripRev(p), baseRev: 0});
+    // plans made on this device before they were ever synced go to the account, if the student agrees (shared computers)
+    const unsynced = plans.filter(p => !p.rev && !queued.has(p.id));
+    if (unsynced.length && (!window.SBConsent || await window.SBConsent.guestData(user.id))) {
+      for (const p of unsynced) await window.SBSync.emit('plan.save', {plan: stripRev(p), baseRev: 0});
+    }
     try { await window.SBSync.sync(); } catch (e) { /* offline: the outbox keeps everything */ }
     await mergeSnapshot();
   }

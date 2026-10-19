@@ -84,6 +84,16 @@ const doneOf = (t, pid, tid) => { const p = planOf(t, pid); return p ? p.session
     check('at sign-in the plan joins the account (a second device sees it with its tick)', doneOf(B, 'plan_it05', 't1') === 1);
   }
 
+  // 5b. signed-out plans stay on the device when the student says no
+  {
+    const a = await h.account(); const G = h.newApp({ flag: true });
+    G.sb.SBStudyPlan.add(mkPlan('plan_it5b', 'Lab computer plan', [task('t1', 2, 1)]));
+    const A = h.newApp({ flag: true, me: a.user, storage: storageOf(G), consent: false }); await A.signIn(a);
+    check('Cancel: the plan is asked about once, stays on this device and is not uploaded', A.net.prompts.length === 1 && A.sb.SBStudyPlan.plans().length === 1 && (await A.sb.SBSync.pending()) === 0);
+    const B = h.newApp({ flag: true, me: a.user }); await B.signIn(a, await h.secondDevice(a)); await B.sb.SBSync.sync(); await sleep(200);
+    check("another device of the account does not see the other person's plan", B.sb.SBStudyPlan.plans().length === 0);
+  }
+
   // 6. reload with waiting events: nothing lost
   {
     const a = await h.account(); const A = h.newApp({ flag: true }); await A.signIn(a); A.offline();

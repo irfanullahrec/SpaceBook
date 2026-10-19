@@ -244,6 +244,28 @@ function make(opts) {
     check('offline: nothing is sent and nothing is lost', (await t.sync.flush()).status === 'offline' && t.srv.calls.length === 0 && (await t.sync.pending()) === 1);
   }
 
+  // ================= consent
+  console.log('--- consent ---');
+  {
+    const Consent = require('../../js/core/consent.js');
+    const mem = {}; const ls = { getItem: k => (k in mem ? mem[k] : null), setItem: (k, v) => { mem[k] = String(v); }, removeItem: k => { delete mem[k]; } };
+    let asked = 0, answer = true, t0 = 1000;
+    const c = Consent.create({ ask: async () => { asked++; await new Promise(r => setTimeout(r, 10)); return answer; }, storage: ls, now: () => t0 });
+    const three = await Promise.all([c.guestData(5), c.guestData(5), c.guestData(5)]);
+    check('three modules asking at the same time cause one question', asked === 1 && three.every(x => x === true));
+    check('a yes is not remembered: the data is moved and removed, a later question is a new one', (await c.guestData(5)) === true && asked === 2);
+    answer = false;
+    check('a no is a no', (await c.guestData(6)) === false && asked === 3);
+    check('and the question does not come back on the next page load', (await c.guestData(6)) === false && asked === 3);
+    t0 += 6 * 24 * 3600 * 1000;
+    check('still remembered after 6 days', (await c.guestData(6)) === false && asked === 3);
+    t0 += 2 * 24 * 3600 * 1000; answer = true;
+    check('asked again after 7 days', (await c.guestData(6)) === true && asked === 4);
+    check('another student on the same device is asked separately', (await c.guestData(7)) === true && asked === 5);
+    const bad = Consent.create({ ask: async () => { throw new Error('dialog failed'); }, storage: ls });
+    check('a failing dialog counts as no', (await bad.guestData(9)) === false);
+  }
+
   // ================= survives a reload
   console.log('--- reload ---');
   {
@@ -272,6 +294,9 @@ function make(opts) {
     const again = JSON.stringify(snap);
     Sync.applyPull(snap, { coins: 9, progress: { b: { done: [], total: 1 } }, plans: [{ id: 'p1', name: 'one v2', rev: 2 }], plansDeleted: ['p2'], tp: { q: { m2: [1, 0, 6, 0, 1] }, days: { t: { d2: [2, 2, 2] }, u: { d1: [3, 3, 3] } }, sessions: [{ id: 's2' }], run: null, runClearedAt: 77 } });
     check('applying the same pull twice changes nothing', JSON.stringify(snap) === again);
+    const keep = Sync.emptySnapshot(); keep.tp.run = { id: 'r1', savedAt: 5 }; keep.tp.runClearedAt = 3;
+    Sync.applyPull(keep, { coins: 1, progress: {}, plans: [], plansDeleted: [], tp: { q: { m: [1, 1, 1, 1, 1] }, days: {}, sessions: [] } });
+    check('a pull that says nothing about the unfinished test keeps the one the client has', keep.tp.run && keep.tp.run.id === 'r1' && keep.tp.runClearedAt === 3);
   }
   {
     const pages = [

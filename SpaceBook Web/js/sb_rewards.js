@@ -94,14 +94,22 @@
     });
     data = st; changed();
   }
-  async function loadV2() {
+  let loadingV2 = null;
+  // single-flight: the page announces the sign-in more than once (session check, login form); the guest copy must be asked about and moved once
+  function loadV2() {
+    if (!loadingV2) loadingV2 = loadV2Once().finally(() => { loadingV2 = null; });
+    return loadingV2;
+  }
+  async function loadV2Once() {
     hookV2();
     await window.SBSync.setUser(user);
     // progress made as a guest on this device joins the account (the page will ask first, see docs/PHASE2_SYNC_DESIGN.md)
     const guest = loadGuest();
     let moved = 0;
-    for (const [key, a] of Object.entries(guest.activities)) {
-      for (const i of a.done) { await window.SBSync.emit('step', {key, title: a.title || '', total: a.total, step: i}); moved++; }
+    if (Object.keys(guest.activities).length && (!window.SBConsent || await window.SBConsent.guestData(user.id))) {   // never moved silently: it may belong to someone else
+      for (const [key, a] of Object.entries(guest.activities)) {
+        for (const i of a.done) { await window.SBSync.emit('step', {key, title: a.title || '', total: a.total, step: i}); moved++; }
+      }
     }
     if (moved) { try { localStorage.removeItem(GUEST); } catch (e) { /* fine */ } toast('Your progress on this device was added to your account'); }
     await derive();

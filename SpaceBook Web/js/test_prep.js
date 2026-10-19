@@ -239,18 +239,30 @@
     try { done = !!localStorage.getItem(flag); } catch (e) { done = false; }
     if (done) return;
     const d = db();
+    const local = {};
     for (const key of ['sbTP:v1:guest', d.key]) {
       let rec = null;
       try { rec = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) { rec = null; }
-      if (!rec || !(Object.keys(rec.q || {}).length || (rec.sessions || []).length)) continue;
+      if (rec && (Object.keys(rec.q || {}).length || (rec.sessions || []).length)) local[key] = rec;
+    }
+    if (!Object.keys(local).length) { try { localStorage.setItem(flag, '1'); } catch (e) { /* fine */ } return; }
+    let guestLeft = false;       // only the guest record needs the student's consent; their own earlier record is theirs
+    if (local['sbTP:v1:guest'] && window.SBConsent && !(await window.SBConsent.guestData(u.id))) { delete local['sbTP:v1:guest']; guestLeft = true; }
+    for (const key of Object.keys(local)) {
+      const rec = local[key];
       const blob = { q: rec.q || {}, days: rec.days || {}, run: rec.run || null, runClearedAt: rec.runClearedAt || 0 };
       await window.SBSync.emit('tp.import', { record: blob });
       for (const s of (rec.sessions || [])) if (s && s.id && !(rec.pushed || []).includes(s.id)) await window.SBSync.emit('tp.session', { session: s });
       if (key === 'sbTP:v1:guest') { try { localStorage.removeItem(key); } catch (e) { /* fine */ } }   // a guest copy joins one account, not the next
     }
-    try { localStorage.setItem(flag, '1'); } catch (e) { /* fine */ }
+    if (!guestLeft) { try { localStorage.setItem(flag, '1'); } catch (e) { /* fine */ } }     // a declined guest record is offered again after a week
   }
-  async function pullV2() {
+  let pullingV2 = null;
+  function pullV2() {          // single-flight: the sign-in is announced more than once
+    if (!pullingV2) pullingV2 = pullV2Once().finally(() => { pullingV2 = null; });
+    return pullingV2;
+  }
+  async function pullV2Once() {
     const d = db();
     if (pulledFor === d.key) return false;
     pulledFor = d.key;

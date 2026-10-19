@@ -131,6 +131,104 @@
     if (menu) menu.remove();
   }
 
+  // ---- own account: profile, password, data export, deletion (server: api/auth.php, tests: tests/php/run.php) ----
+  const bearer = () => (window.SBSync ? window.SBSync.bearerHeaders() : {});
+  async function updateProfile(name, fatherName) {
+    const r = await call('update_profile', { name, father_name: fatherName });
+    if (r.ok) setUser(r.user);
+    return r;
+  }
+  async function changePassword(current, next) {
+    return call('change_password', { current_password: current, new_password: next }, bearer());     // this device's token stays valid, the others are signed out
+  }
+  async function exportData() {
+    const r = await call('export');
+    if (r && r.schema && typeof document !== 'undefined' && typeof Blob !== 'undefined' && window.URL && URL.createObjectURL) {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(r, null, 2)], { type: 'application/json' }));
+      a.download = 'spacebook-my-data.json';
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+    return r;
+  }
+  async function deleteAccount(password) {
+    const uid = currentUser && currentUser.id;
+    const r = await call('delete_account', { password });
+    if (r.ok) {
+      if (window.SBSync && uid != null) { try { await window.SBSync.clearDevice(uid); } catch (e) { /* fine */ } }
+      setUser(null);
+    }
+    return r;
+  }
+
+  function closeAccount() { const m = document.getElementById('accountModal'); if (m) m.remove(); }
+  function openAccount() {
+    if (!currentUser) { open('login'); return; }
+    closeAccount();
+    const wrap = document.createElement('div');
+    wrap.id = 'accountModal';
+    wrap.className = 'auth-backdrop';
+    wrap.innerHTML = `
+      <div class="auth-card" role="dialog" aria-modal="true" aria-labelledby="accTitle">
+        <button class="auth-close" type="button" aria-label="Close">✕</button>
+        <h2 id="accTitle">My account</h2>
+        <details open><summary><b>My details</b></summary>
+          <form class="auth-form" data-acc="profile" novalidate>
+            <label>Name <input name="name" type="text" maxlength="100" value="${esc(currentUser.name)}" required></label>
+            <label>Father Name <input name="father_name" type="text" maxlength="100" value="${esc(currentUser.father_name || '')}" required></label>
+            <p class="auth-error" aria-live="polite"></p>
+            <button class="auth-submit" type="submit">Save</button>
+          </form>
+        </details>
+        <details><summary><b>Change password</b></summary>
+          <form class="auth-form" data-acc="password" novalidate>
+            <label>Current password <input name="current_password" type="password" autocomplete="current-password" required></label>
+            <label>New password <input name="new_password" type="password" autocomplete="new-password" minlength="6" required></label>
+            <p class="auth-error" aria-live="polite"></p>
+            <button class="auth-submit" type="submit">Change password</button>
+          </form>
+        </details>
+        <details><summary><b>Download my data</b></summary>
+          <form class="auth-form" data-acc="export" novalidate>
+            <p style="margin:0;font-size:.85rem">A file with your details, coins, study plans and practice record.</p>
+            <p class="auth-error" aria-live="polite"></p>
+            <button class="auth-submit" type="submit">Download</button>
+          </form>
+        </details>
+        <details><summary><b>Delete my account</b></summary>
+          <form class="auth-form" data-acc="delete" novalidate>
+            <p style="margin:0;font-size:.85rem;color:#b91c1c">This removes your account and everything saved in it after 30 days. Enter your password to confirm.</p>
+            <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+            <p class="auth-error" aria-live="polite"></p>
+            <button class="auth-submit" type="submit" style="background:#b91c1c">Delete my account</button>
+          </form>
+        </details>
+      </div>`;
+    document.body.appendChild(wrap);
+    wrap.addEventListener('click', e => { if (e.target === wrap) closeAccount(); });
+    wrap.querySelector('.auth-close').addEventListener('click', closeAccount);
+    wrap.querySelectorAll('form').forEach(form => form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const err = form.querySelector('.auth-error'), btn = form.querySelector('.auth-submit');
+      const f = Object.fromEntries(new FormData(form).entries());
+      err.textContent = ''; btn.disabled = true;
+      let r;
+      switch (form.dataset.acc) {
+        case 'profile': r = await updateProfile(f.name, f.father_name); break;
+        case 'password': r = await changePassword(f.current_password, f.new_password); break;
+        case 'export': r = await exportData(); r = r && r.schema ? { ok: true } : r; break;
+        case 'delete':
+          if (!confirm('Delete your account? This cannot be undone after 30 days.')) { btn.disabled = false; return; }
+          r = await deleteAccount(f.password); break;
+      }
+      btn.disabled = false;
+      if (!r || r.ok === false) { err.textContent = (r && r.error) || 'Something went wrong'; return; }
+      if (form.dataset.acc === 'password') form.reset();
+      err.style.color = '#15803d'; err.textContent = form.dataset.acc === 'delete' ? 'Your account was deleted.' : 'Done.';
+      if (form.dataset.acc === 'delete') setTimeout(closeAccount, 1200);
+    }));
+  }
+
   function showMenu(anchor) {
     if (document.getElementById('authMenu')) { closeMenu(); return; }
     const u = currentUser;
@@ -141,10 +239,12 @@
     menu.innerHTML = `
       <div class="auth-menu-name">${esc(u.name)}</div>
       <div class="auth-menu-meta">${esc(type)} · +${esc(u.whatsapp)}</div>
+      <button type="button" class="auth-logout" data-act="account" style="margin-bottom:.4rem">My account</button>
       <button type="button" class="auth-logout">Logout</button>`;
     anchor.appendChild(menu);
     menu.addEventListener('click', e => e.stopPropagation());
-    menu.querySelector('.auth-logout').addEventListener('click', async () => {
+    menu.querySelector('[data-act="account"]').addEventListener('click', () => { closeMenu(); openAccount(); });
+    menu.querySelector('.auth-logout:not([data-act])').addEventListener('click', async () => {
       const uid = currentUser && currentUser.id;
       await call('logout', {}, window.SBSync ? window.SBSync.bearerHeaders() : {});   // the device token ends with the logout
       if (window.SBSync && uid != null) { try { await window.SBSync.clearDevice(uid); } catch (e) { /* fine */ } }   // events waiting to be sent stay on the device
@@ -184,7 +284,7 @@
   }
 
   window.SpaceBookAuth = {
-    open, close,
+    open, close, openAccount, updateProfile, changePassword, exportData, deleteAccount,
     get user() { return currentUser; },
   };
 
