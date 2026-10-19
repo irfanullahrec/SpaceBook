@@ -3,7 +3,12 @@
 exercise Unit 4 Exercise
 q A | Multiple choice questions || کثیر انتخابی سوالات || څو انتخابي پوښتنې
 qp 1 | Which is not a construct of programming languages: a. Sequence b. Condition c. Loop d. Business || پروگرامنگ زبانوں کی ساخت میں سے کون سی نہیں ہے: a. ترتیب (Sequence) b. شرط (Condition) c. لوپ d. بزنس || کوم د پروګرامینګ ژبو جوړښت نه دی: a. ترتیب b. شرط c. لوپ d. سوداګري (Business)
+sol d. Business ## Sequence, condition (selection) and loop (repetition) are programming constructs; "business" is not. || درست جواب: (د) بزنس || سم ځواب: (د) سوداګري (Business)
 qp 2 | Loop within a loop is called ________ loop a. Nested b. Next c. Newest d. Narrow || لوپ کے اندر لوپ ________ لوپ کہلاتا ہے a. Nested b. Next c. Newest d. Narrow || په لوپ کې لوپ ________ لوپ بلل کېږي a. Nested b. Next c. Newest d. Narrow
+sol a. Nested ## A loop inside another loop is a nested loop. || درست جواب: (الف) Nested || سم ځواب: (الف) Nested
 qp 3 | A loop becomes infinite loop if a condition never becomes ______. a. TRUE b. FALSE c. NULL d. ZERO || لوپ لامحدود لوپ بن جاتا ہے اگر شرط کبھی ______ نہ بنے۔ a. TRUE b. FALSE c. NULL d. ZERO || لوپ بې پایه لوپ کېږي که یو شرط هېڅکله ______ نه شي. a. TRUE b. FALSE c. NULL d. ZERO
+sol b. FALSE ## A loop repeats while its condition is true; if the condition never becomes FALSE the loop never ends. || درست جواب: (ب) FALSE || سم ځواب: (ب) FALSE
 qp 4 | Floor( ) function always ________ a number. a. Rounds down b. Rounds up c. Cycles down d. Cycles up || Floor( ) فنکشن ہمیشہ عدد کو ________۔ a. نیچے راؤنڈ کرتا ہے b. اوپر راؤنڈ کرتا ہے c. نیچے سائیکل کرتا ہے d. اوپر سائیکل کرتا ہے || Floor( ) فنکشن تل یوه شمېره ________. a. ښکته شاوخوا کوي b. پورته شاوخوا کوي c. ښکته دوره کوي d. پورته دوره کوي
+sol a. Rounds down ## floor( ) always rounds a number down to the nearest whole number. || درست جواب: (الف) نیچے راؤنڈ کرتا ہے || سم ځواب: (الف) ښکته شاوخوا کوي
 qp 5 | Where will be the Sprite located if value of 'var' variable comes out to be 10 in the following code block? a. 0,0 b. 0,100 c. 100,0 d. 100, -100 || اگر درج ذیل کوڈ بلاک میں متغیر 'var' کی قدر 10 نکلے تو اسپرائٹ کہاں واقع ہوگا؟ a. 0,0 b. 0,100 c. 100,0 d. 100, -100 || که په لاندې کوډ بلاک کې د متغیر 'var' ارزښت ۱۰ راشي نو سپرایټ به چېرته موقعیت ولري؟ a. 0,0 b. 0,100 c. 100,0 d. 100, -100
+sol a. 0,0 ## With var = 10 the test var < 10 is false, so the else branch runs: go to x: 0, y: 0. || درست جواب: (الف) 0,0 || سم ځواب: (الف) 0,0

@@ -53,9 +53,9 @@
   .c1-skin .m6-fig{position:relative;background:#fff;border-radius:16px;padding:.8rem;margin:.8rem auto;box-shadow:0 1px 6px rgba(15,23,42,.08)}
   .c1-skin .m6-fig svg{cursor:pointer;min-width:min(100%,620px);max-width:100%;height:auto}
   .c1-skin.m6-rtl .c1-lo-tab{left:auto;right:1rem;transform:skewX(6deg);border-radius:10px 10px 0 10px}
-  .sb-generic .para-card,.sb-generic .math-topic-card,.sb-generic .urdu-section-card{border:4px solid var(--c1f)!important;border-radius:18px!important;background:var(--c1bg)!important}
-  .sb-generic .urdu-section-header,.sb-generic .math-acc-header{background:linear-gradient(90deg,var(--c1b),var(--c1f))!important;color:#fff!important;border-radius:12px}
-  .sb-generic .math-acc-header h3,.sb-generic .math-acc-header strong,.sb-generic .urdu-sec-title{color:#fff!important}
+  .sb-generic .para-card,.sb-generic .math-topic-card,.sb-generic .urdu-section-card{border:1px solid #e2e8f0!important;border-inline-start:4px solid var(--c1f)!important;border-radius:14px!important;background:#fff!important}
+  .sb-generic .urdu-section-header,.sb-generic .math-acc-header{background:transparent!important;color:#0f172a!important;border-radius:10px}
+  .sb-generic .math-acc-header h3,.sb-generic .math-acc-header strong,.sb-generic .urdu-sec-title{color:#0f172a!important}
   .sb-generic h2:not(.math-acc-header *){color:var(--c1b)}
   .sb-generic .para-card-header,.sb-generic .para-card h3{color:var(--c1b)}
   .sb-generic .para-text-box{font-size:1.04rem;line-height:1.85}

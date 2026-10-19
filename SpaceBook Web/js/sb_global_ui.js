@@ -57,6 +57,8 @@
   const css = `
   .sb-fs-btn{position:absolute;top:.45rem;right:.55rem;z-index:30;display:inline-flex;align-items:center;gap:.3rem;border:1px solid #cbd5e1;background:#fff;color:#0f172a;border-radius:10px;padding:.32rem .6rem;font:600 .82rem system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 6px rgba(15,23,42,.12)}
   .sb-fs-btn:hover{background:#0369a1;color:#fff;border-color:#0369a1}
+  .sb-fs-btn{direction:ltr}
+  .sb-fs-btn.sb-fs-rtl{right:auto;left:.55rem}
   .sb-fs-host{position:relative}
   .sb-fs-host:fullscreen{background:#fff;overflow:auto;padding:1rem;width:100vw;height:100vh;box-sizing:border-box}
   .sb-fs-host:fullscreen .math-ch-sidebar{max-height:calc(100vh - 2rem)}
@@ -81,10 +83,13 @@
     document.querySelectorAll(HOST_SEL).forEach(host => {
       if (host.parentElement && host.parentElement.closest(HOST_SEL)) return;   // only the outermost workspace
       const area = host.querySelector('.math-topic-area, #subjectTopicArea, .drawing-topic-area') || host;
-      if (area.querySelector(':scope > .sb-fs-btn')) return;
+      const old = area.querySelector(':scope > .sb-fs-btn');
+      // right-to-left books start their title on the right, so the button goes to the left
+      if (old) { old.classList.toggle('sb-fs-rtl', getComputedStyle(area).direction === 'rtl'); return; }
       host.classList.add('sb-fs-host');
       if (getComputedStyle(area).position === 'static') area.style.position = 'relative';
       const b = document.createElement('button'); b.type = 'button'; b.className = 'sb-fs-btn'; label(b);
+      b.classList.toggle('sb-fs-rtl', getComputedStyle(area).direction === 'rtl');
       b.addEventListener('click', e => { e.stopPropagation(); toggleFs(host); });
       area.prepend(b);
     });
@@ -99,7 +104,7 @@
 
   const obs = new MutationObserver(muts => {
     muts.forEach(m => m.addedNodes.forEach(collapseIn));
-    clearTimeout(obs.t); obs.t = setTimeout(addFsButtons, 40);
+    if (!obs.t) obs.t = setTimeout(() => { obs.t = 0; addFsButtons(); }, 40);   // throttle: pages that never stop changing still get the button
   });
   const start = () => { addCss(); collapseIn(document.body); addFsButtons(); obs.observe(document.body, {childList: true, subtree: true}); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();

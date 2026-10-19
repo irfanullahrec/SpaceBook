@@ -60,6 +60,20 @@
     return { lang: 'ar', sure: true };
   }
 
+  // ── Qur'anic text is kept exactly as printed: never translated, never offered for translation ──
+  // (heavily vowelled Arabic script, Qur'an annotation signs, ornate brackets or the verse-end sign)
+  function isQuranic(text) {
+    const s = String(text || '');
+    if (!s) return false;
+    if (/[﴿﴾۞۝]/.test(s)) return true;
+    const letters = (s.match(/[ء-يٱ-ەٲ-ۓ]/g) || []).length;
+    if (letters < 2) return false;
+    const marks = (s.match(/[ً-ْٰۖ-ۭ]/g) || []).length;
+    if (/[ۖ-ۜ]/.test(s) && letters >= 4) return true;           // waqf / sajda / pause signs
+    const latin = (s.match(/[A-Za-z]/g) || []).length;
+    return latin < letters && marks / letters >= 0.45 && letters >= 3;
+  }
+
   // ── translation engines ─────────────────────────────────────────────────
   function dictLookup(word, tgt) {
     if (!/^[a-z][a-z'-]*$/i.test(word)) return '';
@@ -142,6 +156,20 @@
   }
   window.SBOfflineLookup = offlineLookup;
 
+  // no internet and no stored translation: show a word-by-word meaning from the offline dictionary
+  function glossOffline(text, src, tgt) {
+    const words = text.split(/\s+/).filter(Boolean);
+    const out = []; let hit = 0;
+    words.forEach(w => {
+      const plain = w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '');
+      if (!plain) { out.push(w); return; }
+      const m = offlineLookup(plain, src, tgt);
+      if (m) { hit++; out.push(String(m).split(/[،,]/)[0].trim()); } else out.push(plain);
+    });
+    if (hit < Math.max(1, Math.round(words.length * 0.4))) return { text: '', source: 'offline' };
+    return { text: out.join(' '), source: 'gloss' };
+  }
+
   async function translate(text, src, tgt, sure) {
     const clean = String(text || '').replace(/\s+/g, ' ').trim().slice(0, MAX_CHARS);
     if (!clean) return { text: '', source: 'none' };
@@ -149,11 +177,12 @@
       const off = offlineLookup(clean, src, tgt);
       if (off) return { text: off, source: 'dictionary' };
     }
-    if (typeof navigator !== 'undefined' && navigator.onLine === false) return { text: '', source: 'offline' };
+    if (clean.split(' ').length > 3 && isQuranic(clean)) return { text: clean, source: 'quran' };   // a whole ayat is never machine-translated; single words get their meaning
     const key = src + '>' + tgt + ':' + clean;
     if (memCache.has(key)) return memCache.get(key);
     const persisted = store.get('c:' + key, null);
     if (persisted) { memCache.set(key, persisted); return persisted; }
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return glossOffline(clean, src, tgt);
 
     let result = null;
     const dict = (src === 'en' && !/\s/.test(clean)) ? dictLookup(clean.replace(/[^A-Za-z'-]/g, ''), tgt) : '';
@@ -165,10 +194,10 @@
         const m = await viaMyMemory(clean, src, tgt);
         result = { text: m.text, source: 'online', dict };
       } catch (e2) {
-        result = dict ? { text: dict, source: 'dictionary' } : { text: '', source: 'offline' };
+        result = dict ? { text: dict, source: 'dictionary' } : glossOffline(clean, src, tgt);
       }
     }
-    if (result.text) {
+    if (result.text && result.source !== 'gloss' && result.source !== 'offline') {
       memCache.set(key, result);
       if (clean.length <= 300) store.set('c:' + key, result);
     }
@@ -371,6 +400,7 @@
     const text = sel.toString().replace(/\s+/g, ' ').trim();
     if (text.length < 1 || text.length > MAX_CHARS) return null;
     if (!/[A-Za-z؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/.test(text)) return null; // numbers / symbols only
+    if (text.split(' ').length > 3 && isQuranic(text)) return null;   // a selected stretch of ayat stays as printed (single words still get a card)
     const range = sel.getRangeAt(0);
     const anchor = range.commonAncestorContainer.nodeType === 1 ? range.commonAncestorContainer : range.commonAncestorContainer.parentElement;
     if (!anchor || anchor.closest(IGNORE_SEL)) return null;
@@ -407,6 +437,11 @@
     selTimer = setTimeout(evaluateSelection, pointerDown ? 600 : 350);
   });
   document.addEventListener('keyup', e => { if (e.shiftKey || e.key === 'Shift') { clearTimeout(selTimer); selTimer = setTimeout(evaluateSelection, 120); } });
+
+  // clicking a sentence (or anywhere else) closes the word-meaning card that opened on hover
+  document.addEventListener('click', e => {
+    if (card && card.classList.contains('ut-show') && card.dataset.via === 'hover' && !(e.target.closest && e.target.closest('.ut-root'))) hideCard();
+  }, true);
 
   // finishing a drag-selection must not also "click" the text under it
   // (e.g. open a sentence drawer) — the selection bar is the response
@@ -598,5 +633,5 @@
     }));
   }
 
-  window.SBTranslate = { translate, detectLang, speak, open: (text, tgt) => openCard(text, tgt, null), prepareSteps, languages: LANGS };
+  window.SBTranslate = { translate, detectLang, isQuranic, speak, open: (text, tgt) => openCard(text, tgt, null), prepareSteps, languages: LANGS };
 })();

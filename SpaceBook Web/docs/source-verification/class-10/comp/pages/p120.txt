@@ -14,9 +14,15 @@
 # مشق || Exercise || تمرین
 q 1 | موزوں جواب کا انتخاب کریں۔ || Choose the suitable answer. || مناسب ځواب وټاکئ.
 qp i | C میں کتنی قسم کے لوپ سٹرکچر ہیں؟ (الف) 4 (ب) 3 (ج) 2 (د) 6 || How many kinds of loop structures are there in C? (a) 4 (b) 3 (c) 2 (d) 6 || په C کې څو ډوله لوپ جوړښتونه شته؟ (الف) 4 (ب) 3 (ج) 2 (د) 6
+sol b. 3 ## C میں تین قسم کی لوپس ہیں: while، do-while اور for۔ || درست جواب: (ب) 3 || سم ځواب: (ب) 3
 qp ii | کون سی لوپ ہمیشہ کم از کم ایک مرتبہ ضرور چلتی ہے؟ (الف) do-while (ب) for (ج) while (د) nested || Which loop always runs at least once? (a) do-while (b) for (c) while (d) nested || کوم لوپ تل لږ تر لږه یو ځل حتماً چلېږي؟ (الف) do-while (ب) for (ج) while (د) nested
+sol (الف) do-while ## do-while میں شرط باڈی کے بعد جانچی جاتی ہے، اس لیے یہ کم از کم ایک بار ضرور چلتی ہے۔ || Correct answer: (a) do-while || سم ځواب: (الف) do-while
 qp iii | کس لوپ میں شرط ہمیشہ لوپ کی باڈی سے پہلے آتی ہے؟ (الف) while loop (ب) do-while loop (ج) for loop (د) (الف) اور (ج) دونوں || In which loop does the condition always come before the loop body? (a) while loop (b) do-while loop (c) for loop (d) both (a) and (c) || په کوم لوپ کې شرط تل له بدنې مخکې راځي؟ (الف) while loop (ب) do-while loop (ج) for loop (د) (الف) او (ج) دواړه
+sol (د) (الف) اور (ج) دونوں ## while اور for دونوں لوپس میں شرط باڈی سے پہلے آتی ہے۔ || Correct answer: (d) both (a) and (c) || سم ځواب: (د) (الف) او (ج) دواړه
 qp iv | کس لوپ میں شرط ہمیشہ لوپ کی باڈی کے بعد آتی ہے۔ (الف) for (ب) while (ج) do-while (د) None || In which loop does the condition always come after the loop body? (a) for (b) while (c) do-while (d) None || په کوم لوپ کې شرط تل له بدنې وروسته راځي؟ (الف) for (ب) while (ج) do-while (د) None
+sol (ج) do-while ## do-while لوپ میں شرط باڈی کے بعد آتی ہے۔ || Correct answer: (c) do-while || سم ځواب: (ج) do-while
 qp v | ذیل میں دی گئی کون سی اسٹیٹمنٹ لوپ کی باڈی سے باہر نکلنے کے لیے استعمال ہوتی ہے؟ (الف) break (ب) terminate (ج) exit (د) (الف) اور (ب) دونوں || Which of the following statements is used to leave the body of a loop? (a) break (b) terminate (c) exit (d) both (a) and (b) || له لاندې کوم بیان د لوپ له بدنې د وتلو لپاره کارېږي؟ (الف) break (ب) terminate (ج) exit (د) (الف) او (ب) دواړه
+sol (الف) break ## break اسٹیٹمنٹ لوپ سے باہر نکال دیتی ہے۔ || Correct answer: (a) break || سم ځواب: (الف) break
 qp vi | اگر ایک لوپ کو دوسری لوپ کے اندر بند کر دیا جائے تو اسے کیا کہا جائے گا؟ (الف) counter loop (ب) complex loop (ج) outer loop (د) nested loop || If one loop is enclosed inside another loop, what is it called? (a) counter loop (b) complex loop (c) outer loop (d) nested loop || که یو لوپ د بل لوپ دننه وتړل شي، څه ورته ویل کېږي؟ (الف) counter loop (ب) complex loop (ج) outer loop (د) nested loop
+sol (د) nested loop ## ایک لوپ کے اندر دوسری لوپ nested loop کہلاتی ہے۔ || Correct answer: (d) nested loop || سم ځواب: (د) nested loop
 @issue Q1(v): exit() also ends the loop, but by ending the whole program; terminate is not a C statement. The intended answer is (الف) break.

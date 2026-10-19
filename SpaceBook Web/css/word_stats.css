@@ -190,3 +190,4 @@ body.ws-modal-open { overflow: hidden; }
   .ws-my-grid, .ws-my-langs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ws-mark span { display: none; }
 }
+.ws-tiles.ws-tiles-single { grid-template-columns: minmax(0, 380px); }

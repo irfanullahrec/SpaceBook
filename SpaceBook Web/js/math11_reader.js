@@ -108,7 +108,7 @@
   }
   function translations(rec) {
     if (!rec || !rec.ur) return '';
-    return `<div class="m11-tr" hidden><p class="m11-ur" lang="ur" dir="rtl"><span class="m11-lang">اردو</span>${inline(rec.ur, false)}</p><p class="m11-ps" lang="ps" dir="rtl"><span class="m11-lang">پښتو</span>${inline(rec.ps, false)}</p></div>`;
+    return `<div class="m11-tr" hidden><p class="m11-en" lang="en" dir="ltr" style="text-align:left;direction:ltr"><span class="m11-lang">English</span>${inline(rec.en, false)}</p><p class="m11-ur" lang="ur" dir="rtl"><span class="m11-lang">اردو</span>${inline(rec.ur, false)}</p><p class="m11-ps" lang="ps" dir="rtl"><span class="m11-lang">پښتو</span>${inline(rec.ps, false)}</p></div>`;
   }
   // A sentence/paragraph that opens its translation when clicked.
   const SB_SPLIT = /(?<=[.!?؟۔])\s+(?=\S)/;
@@ -196,6 +196,15 @@
     }
     SBSolve.toggle(btn, window.MATH_11_SOLUTIONS[id], {inline, plain});
   };
+  // Inline-option MCQs ("Stem? a. … b. … c. …") become the shared radio widget (js/sb_mcq.js).
+  const solMap = id => String(id).includes('-') ? (window.CLS6_SOLUTIONS || {}) : window.MATH_11_SOLUTIONS;
+  if (window.SBMcq) SBMcq.register('m11', {
+    inline,
+    sols: id => { const m = solMap(id); return m ? m[id] : undefined; },
+    get: id => { const m = solMap(id); return m ? Promise.resolve(m[id]) : loadSolutions().then(x => x && x[id]); }
+  });
+  const mcqHtml = (b, key, after, partNo) => window.SBMcq ? SBMcq.book(b, {src: 'm11', inline, sentence, after, textbook: key && key.a, partNo}) : '';
+
 
   const questionNumber = no => no ? esc(no) + (/^[0-9A-Za-z]+$/.test(no) ? '.' : '') : '';
   function authoredAnswer(rec) {
@@ -205,15 +214,18 @@
     return `<div class="m11-ans" data-answer-key="${esc(rec.answerKey || '')}"><strong>SpaceBook answer:</strong> ${paired ? sentence(a, 'div') : inline(a.en, false)}</div>`;
   }
   function question(q, ans, showAns) {
+    const mcq = mcqHtml(q, ans[q.no], showAns ? solButton(q.solId) : '');
+    const partMcq = (q.parts || []).map(p => mcqHtml(p, null, showAns ? solButton(p.solId) : '', p.no));
     const hasSol = q.parts && q.parts.some(p => p.solId);
-    const parts = q.parts && q.parts.length ? `<div class="m11-parts${hasSol || q.parts.some(p => p.ur || (p.en || '').length > 28) ? ' block' : ''}">${q.parts.map(p => `<div class="m11-part">${p.no ? `<strong>${questionNumber(p.no)}</strong> ` : ''}${p.ur ? sentence(p, 'span') : inline(p.en, true)}${showAns ? authoredAnswer(p) + solButton(p.solId) : ''}</div>`).join('')}</div>` : '';
+    const parts = q.parts && q.parts.length ? `<div class="m11-parts${partMcq.some(Boolean) || hasSol || q.parts.some(p => p.ur || (p.en || '').length > 28) ? ' block' : ''}">${q.parts.map((p, pi) => `<div class="m11-part">${p.no ? `<strong>${questionNumber(p.no)}</strong> ` : ''}${partMcq[pi] ? partMcq[pi] + (showAns ? authoredAnswer(p) : '') : `${p.ur ? sentence(p, 'span') : inline(p.en, true)}${showAns ? authoredAnswer(p) + solButton(p.solId) : ''}`}</div>`).join('')}</div>` : '';
     let a = '';
     if (showAns) {
       const hit = ans[q.no];
       a = hit ? `<div class="m11-ans"><strong>Textbook answer:</strong> ${inline(hit.a, false)} <span style="color:#64748b">(p. ${esc(hit.printed)})</span></div>` : '';
     }
-    const head = q.en ? (q.ur ? sentence(q, 'span') : inline(q.en, true)) : '';
-    return `<div class="m11-q"><span class="m11-qno">${questionNumber(q.no)}</span>${head}${showAns ? authoredAnswer(q) + solButton(q.solId) : ''}${parts}${a}</div>`;
+    if (mcq) a = '';
+    const head = mcq || (q.en ? (q.ur ? sentence(q, 'span') : inline(q.en, true)) : '');
+    return `<div class="m11-q"><span class="m11-qno">${questionNumber(q.no)}</span>${head}${showAns ? authoredAnswer(q) + (mcq ? '' : solButton(q.solId)) : ''}${parts}${a}</div>`;
   }
   function blocks(list, ctx) {
     ctx = ctx || {};

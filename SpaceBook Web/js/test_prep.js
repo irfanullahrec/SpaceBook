@@ -722,6 +722,7 @@
     return m.q;
   }
 
+  const optLabel = (m, i) => m.tf ? esc(m.o[i]) : 'ABCD'[i] + '. ' + rich(m.o[i]);
   function renderRun() {
     const r = S.run;
     const el = root();
@@ -740,14 +741,16 @@
       if (reveal) { if (oi === m.a) cls = 'correct'; else if (oi === chosen) cls = 'wrong'; }
       else if (chosen === oi) cls = 'picked';
       return `<button type="button" class="tp-opt ${cls}" onclick="SBTestPrep.answer(${oi})" ${reveal ? 'disabled' : ''} dir="${isRtl(o) ? 'rtl' : 'ltr'}">
-        <span class="tp-opt-l">${m.tf ? (oi ? '✗' : '✓') : 'ABCD'[oi]}</span><span class="tp-opt-t">${rich(o)}</span></button>`;
+        <span class="tp-radio" aria-hidden="true"></span><span class="tp-opt-l">${m.tf ? (oi ? '✗' : '✓') : 'ABCD'[oi]}</span><span class="tp-opt-t">${rich(o)}</span></button>`;
     }).join('');
     let feedback = '';
     if (reveal) {
       const ok = chosen === m.a;
       feedback = `<div class="tp-fb ${ok ? 'ok' : 'bad'}">
-        <b>${ok ? '✅ Correct!' : chosen === -1 ? '⌛ Time is up.' : '❌ Not quite.'}</b> ${ok ? '' : `Correct answer: <b>${m.tf ? m.o[m.a] : 'ABCD'[m.a] + '. ' + rich(m.o[m.a])}</b>`}
-        ${m.e ? `<div class="tp-exp" dir="${isRtl(m.e) ? 'rtl' : 'ltr'}">${rich(m.e)}</div>` : ''}
+        <b class="tp-fb-h">${ok ? '✅ Correct!' : chosen === -1 ? '⌛ Time is up.' : '❌ Wrong answer'}</b>
+        ${ok ? `<div><b>${optLabel(m, m.a)}</b> is the right answer.</div>`
+          : `${chosen >= 0 ? `<div>You chose <b>${optLabel(m, chosen)}</b> — this is not correct; it does not fit what the question asks.</div>` : ''}<div class="tp-fb-right">✔ The correct answer is <b>${optLabel(m, m.a)}</b>.</div>`}
+        <div class="tp-exp" dir="${isRtl(m.e || '') ? 'rtl' : 'ltr'}"><b>Why:</b> ${m.e ? rich(m.e) : 'This is the answer given in the textbook answer key.'}</div>
         <div class="tp-fb-meta">You took ${secs(r.times[r.i]).toFixed(1)} s</div>
       </div>`;
     }
@@ -799,6 +802,7 @@
       logAnswer(S.track, m, oi === m.a, r.times[r.i]);
       persistRun();
       renderRun();
+      if (oi >= 0 && window.SBMcq && SBMcq.toast) SBMcq.toast(oi === m.a, 'en');
     } else {
       r.answers[r.i] = oi;
       persistRun();

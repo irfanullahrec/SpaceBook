@@ -22,8 +22,8 @@ def ang(x, mins=False):
         return f"{tot // 60}^\\circ{tot % 60}'"
     return f'{x:.1f}^\\circ'.replace('.0^', '^') if abs(x - round(x)) < 0.05 else f'{x:.1f}^\\circ'
 def num(x, k=2):
-    s = f'{x:.{k}f}'.rstrip('0').rstrip('.')
-    return s
+    s = f'{x:.{k}f}'
+    return s.rstrip('0').rstrip('.') if '.' in s else s  # never strip zeros of whole numbers (140, 1120)
 QED = T('Hence proved.', 'ثابت ہوا۔', 'ثابت شو.')
 SUM = lambda m: T('The angles of a triangle add up to $180^\\circ$.', 'مثلث کے زاویوں کا مجموعہ $180^\\circ$ ہوتا ہے۔', 'د درې ګوني د زاویو مجموعه $180^\\circ$ ده.', m)
 SINE = lambda m: T('Law of sines: $\\dfrac a{\\sin\\alpha}=\\dfrac b{\\sin\\beta}=\\dfrac c{\\sin\\gamma}$.', 'قانونِ جیب: $\\dfrac a{\\sin\\alpha}=\\dfrac b{\\sin\\beta}=\\dfrac c{\\sin\\gamma}$۔', 'د ساین قانون: $\\dfrac a{\\sin\\alpha}=\\dfrac b{\\sin\\beta}=\\dfrac c{\\sin\\gamma}$.', m)
@@ -179,7 +179,7 @@ put('11.3', 2, '', r'$\gamma=180^\circ-\alpha-\beta$ and $c=\sqrt{\dfrac{2\Delta
     T('Substitute $\\Delta=121.34$.', '$\\Delta=121.34$ رکھیں۔', '$\\Delta=121.34$ کېږدئ.', rf'c^2=\frac{{2(121.34)\sin{ang(180-DM(32,25)-DM(65,35),True)}}}{{\sin32^\circ25′\sin65^\circ35′}}\approx{2*121.34*sin(d(180-DM(32,25)-DM(65,35)))/(sin(d(DM(32,25)))*sin(d(DM(65,35)))):.2f}\Rightarrow c\approx{num(sqrt(2*121.34*sin(d(180-DM(32,25)-DM(65,35)))/(sin(d(DM(32,25)))*sin(d(DM(65,35))))))}')])
 v, ss = asa_area(30, 22.5, 112.5)
 put('11.3', 3, '', rf'Area $\approx{num(v)}$ m$^2$; cost $\approx$ Rs. ${num(5*v,0)}$', ss + [ANSL(rf'\text{{cost}}=5\times{num(v)}\approx\text{{Rs. }}{num(5*v,0)}'),
-    KEY('it gives Rs. 1125, i.e. an area of 225 m$^2$; this is the area when the 30 m side lies between the two given angles ($\\Delta=\\frac{30^2\\sin22.5^\\circ\\sin112.5^\\circ}{2\\sin45^\\circ}$), which is what the computation above uses.', 'اس میں Rs. 1125 یعنی 225 مربع میٹر رقبہ ہے؛ یہ اس صورت کا رقبہ ہے جب 30 میٹر کا ضلع دونوں زاویوں کے درمیان ہو، جو اوپر کے حساب میں لیا گیا ہے۔', 'په کې Rs. 1125 یعنې 225 مربع متره مساحت دی؛ دا د هغې حالت مساحت دی چې 30 متره ضلع د دواړو زاویو ترمنځ وي، چې پورته حساب کې اخیستل شوې.')])
+    T('Here the 30 m side lies between the two given corner angles, so it is opposite the third angle $45^\\circ$ (this agrees with the printed answer Rs. 1125).', 'یہاں 30 میٹر کا ضلع دونوں دیے گئے کونوں کے درمیان ہے، اس لیے یہ تیسرے زاویے $45^\\circ$ کے مقابل ہے (یہ مطبوعہ جواب Rs. 1125 سے مطابقت رکھتا ہے)۔', 'دلته 30 متره ضلع د دواړو ورکړل شویو کونجونو ترمنځ ده، نو د درېیمې زاویې $45^\\circ$ مخې ته ده (دا له چاپ شوي ځواب Rs. 1125 سره سمون لري).')])
 v = 0.5*53*42*sin(d(135))
 put('11.3', 4, '', rf'about ${num(v,0)}$ ft$^2$', [AR2(rf'\Delta=\tfrac12(53)(42)\sin135^\circ=1113\times\frac{{\sqrt2}}2\approx{num(v,1)}\ \text{{ft}}^2'), ANSL(rf'\approx{num(v,0)}\ \text{{ft}}^2')])
 
@@ -232,7 +232,10 @@ put('Review 11', 1, '(vi)', r'(c) $75\sqrt3$ m', [T('The angle of depression fro
 put('Review 11', 1, '(vii)', '(c) Circumcentre', [MCQ(r'\text{the right bisectors meet at the point equidistant from all three vertices: the circumcentre}\Rightarrow\text{(c)}')], category='mcqs')
 put('Review 11', 1, '(viii)', r'(b) $\Delta^2$', [MCQ(r'r\,r_1r_2r_3=\frac\Delta S\cdot\frac{\Delta^3}{(S-a)(S-b)(S-c)}=\frac{\Delta^4}{\Delta^2}=\Delta^2\Rightarrow\text{(b)}')], category='mcqs')
 (b_, al, ga), ss = sas(0.7, 0.8, DM(141, 30), ('a', 'c', r'\beta', 'b', r'\alpha', r'\gamma'), mins=True)
-put('Review 11', 2, '(i)', rf'$b\approx{num(b_)},\ \alpha\approx{ang(al,True)},\ \gamma\approx{ang(ga,True)}$', ss)
+put('Review 11', 2, '(i)', rf'$b\approx{num(b_)},\ \alpha\approx{ang(al,True)},\ \gamma\approx{ang(ga,True)}$', ss + [
+    KEY(r'it prints $\alpha=17.2^\circ,\ \gamma=21.3^\circ$; with $b\approx1.4165$ the law of sines gives $\sin\alpha=\frac{0.7\sin141^\circ30′}{1.4165}\approx0.3076$, so $\alpha\approx17.9^\circ$ and $\gamma\approx20.6^\circ$.',
+        r'اس میں $\alpha=17.2^\circ,\ \gamma=21.3^\circ$ چھپا ہے؛ $b\approx1.4165$ کے ساتھ قانونِ جیب سے $\sin\alpha\approx0.3076$، یعنی $\alpha\approx17.9^\circ$ اور $\gamma\approx20.6^\circ$ آتے ہیں۔',
+        r'په کې $\alpha=17.2^\circ,\ \gamma=21.3^\circ$ چاپ شوي؛ د $b\approx1.4165$ سره د ساین له قانونه $\sin\alpha\approx0.3076$، یعنې $\alpha\approx17.9^\circ$ او $\gamma\approx20.6^\circ$ راځي.')])
 put('Review 11', 2, '(ii)', 'No triangle is possible.', [T('Triangle inequality: the sum of two sides must exceed the third.', 'مثلث کی عدم مساوات: دو اضلاع کا مجموعہ تیسرے سے زیادہ ہونا چاہیے۔', 'د درې ګوني نامساوات: د دوو ضلعو مجموعه باید له درېیمې زیاته وي.', r'34+23=57<58'), T('So these lengths cannot form a triangle.', 'لہٰذا یہ لمبائیاں مثلث نہیں بنا سکتیں۔', 'نو دا اوږدوالي درې ګونی نه شي جوړولی.')])
 (c_, al, be), ss = sas(15.6, 18, DM(35, 10), ('a', 'b', r'\gamma', 'c', r'\alpha', r'\beta'), mins=True)
 put('Review 11', 2, '(iii)', rf'$c\approx{num(c_,1)},\ \alpha\approx{ang(al,True)},\ \beta\approx{ang(be,True)}$', ss)

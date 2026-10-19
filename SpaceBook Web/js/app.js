@@ -19270,6 +19270,7 @@ function getSectionParagraphsWithTranslations(sec, ch) {
 // ─── INTERACTIVE PARAGRAPH TOKENIZER ─────────────────────
 function renderInteractiveParagraphHtml(text, urduText, pashtoText, paraIdx, preserveAlignedParagraph = false) {
   if (!text) return '';
+  if (window.SBAyat) { const ayat = window.SBAyat.render(text, urduText, pashtoText, paraIdx); if (ayat) return ayat; }   // Qur'anic ayat: shown alone, translations on click
 
   const enSentences = preserveAlignedParagraph ? [text.trim()] : splitSentenceText(text, false);
   const urSentences = urduText ? (preserveAlignedParagraph ? [urduText.trim()] : splitSentenceText(urduText, true)) : [];

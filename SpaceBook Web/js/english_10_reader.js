@@ -37,7 +37,9 @@
   }
   const qPair = q => ({text:q.question||q.q||q.sentence,urdu:q.questionUrdu||q.qUrdu,pashto:q.questionPashto||q.qPashto,underline:q.sourceUnderline});
   function questions(items) {
-    return `<ol>${(items||[]).map(q=>`<li>${reading(qPair(q))}${q.options?`<ol type="a">${q.options.map((o,i)=>`<li>${reading({text:o,urdu:q.optionsUrdu?.[i],pashto:q.optionsPashto?.[i]})}</li>`).join('')}</ol>`:''}${answer(q)}</li>`).join('')}</ol>`;
+    const mcq = q => q.options && q.options.length > 1 && Number.isInteger(q.correct) && q.correct < q.options.length && window.SBMcq
+      ? SBMcq.html({stem: reading(qPair(q)), options: q.options.map(esc), correct: q.correct, explain: q.explanation ? esc(q.explanation) : ''}) : '';
+    return `<ol>${(items||[]).map(q=>mcq(q)?`<li>${mcq(q)}</li>`:`<li>${reading(qPair(q))}${q.options?`<ol type="a">${q.options.map((o,i)=>`<li>${reading({text:o,urdu:q.optionsUrdu?.[i],pashto:q.optionsPashto?.[i]})}</li>`).join('')}</ol>`:''}${answer(q)}</li>`).join('')}</ol>`;
   }
   function table(headers, rows) {
     return `<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr>${headers.map(h=>`<th style="border:1px solid #cbd5e1;padding:.5rem;text-align:left">${typeof h==='object'?reading(h):esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td style="border:1px solid #cbd5e1;padding:.5rem;vertical-align:top">${typeof c==='object'?reading(c):esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;

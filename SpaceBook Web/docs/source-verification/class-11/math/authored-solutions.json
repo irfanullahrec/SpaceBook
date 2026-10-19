@@ -34979,7 +34979,7 @@
   "11.2|1|(vi)": {
     "question": "$\\beta=39^\\circ30′,\\ \\gamma=34^\\circ10′,\\ a=240$",
     "prompt": "Solve the triangles with dimensions.",
-    "answer": "$\\alpha=106^\\circ20',\\ b\\approx159,\\ c\\approx14$",
+    "answer": "$\\alpha=106^\\circ20',\\ b\\approx159,\\ c\\approx140$",
     "steps": [
       {
         "en": "The angles of a triangle add up to $180^\\circ$.",
@@ -36830,9 +36830,9 @@
         "m": "\\text{cost}=5\\times225\\approx\\text{Rs. }1125"
       },
       {
-        "en": "Note on the printed answer key: it gives Rs. 1125, i.e. an area of 225 m$^2$; this is the area when the 30 m side lies between the two given angles ($\\Delta=\\frac{30^2\\sin22.5^\\circ\\sin112.5^\\circ}{2\\sin45^\\circ}$), which is what the computation above uses.",
-        "ur": "مطبوعہ جوابی کنجی کے بارے میں: اس میں Rs. 1125 یعنی 225 مربع میٹر رقبہ ہے؛ یہ اس صورت کا رقبہ ہے جب 30 میٹر کا ضلع دونوں زاویوں کے درمیان ہو، جو اوپر کے حساب میں لیا گیا ہے۔",
-        "ps": "د چاپ شوې ځوابي کیلي په اړه: په کې Rs. 1125 یعنې 225 مربع متره مساحت دی؛ دا د هغې حالت مساحت دی چې 30 متره ضلع د دواړو زاویو ترمنځ وي، چې پورته حساب کې اخیستل شوې."
+        "en": "Here the 30 m side lies between the two given corner angles, so it is opposite the third angle $45^\\circ$ (this agrees with the printed answer Rs. 1125).",
+        "ur": "یہاں 30 میٹر کا ضلع دونوں دیے گئے کونوں کے درمیان ہے، اس لیے یہ تیسرے زاویے $45^\\circ$ کے مقابل ہے (یہ مطبوعہ جواب Rs. 1125 سے مطابقت رکھتا ہے)۔",
+        "ps": "دلته 30 متره ضلع د دواړو ورکړل شویو کونجونو ترمنځ ده، نو د درېیمې زاویې $45^\\circ$ مخې ته ده (دا له چاپ شوي ځواب Rs. 1125 سره سمون لري)."
       }
     ],
     "provenance": "SpaceBook authored solution",
@@ -38373,6 +38373,11 @@
         "ur": "مثلث کے زاویوں کا مجموعہ $180^\\circ$ ہوتا ہے۔",
         "ps": "د درې ګوني د زاویو مجموعه $180^\\circ$ ده.",
         "m": "\\gamma=180^\\circ-141^\\circ30'-\\alpha\\approx20^\\circ35'"
+      },
+      {
+        "en": "Note on the printed answer key: it prints $\\alpha=17.2^\\circ,\\ \\gamma=21.3^\\circ$; with $b\\approx1.4165$ the law of sines gives $\\sin\\alpha=\\frac{0.7\\sin141^\\circ30′}{1.4165}\\approx0.3076$, so $\\alpha\\approx17.9^\\circ$ and $\\gamma\\approx20.6^\\circ$.",
+        "ur": "مطبوعہ جوابی کنجی کے بارے میں: اس میں $\\alpha=17.2^\\circ,\\ \\gamma=21.3^\\circ$ چھپا ہے؛ $b\\approx1.4165$ کے ساتھ قانونِ جیب سے $\\sin\\alpha\\approx0.3076$، یعنی $\\alpha\\approx17.9^\\circ$ اور $\\gamma\\approx20.6^\\circ$ آتے ہیں۔",
+        "ps": "د چاپ شوې ځوابي کیلي په اړه: په کې $\\alpha=17.2^\\circ,\\ \\gamma=21.3^\\circ$ چاپ شوي؛ د $b\\approx1.4165$ سره د ساین له قانونه $\\sin\\alpha\\approx0.3076$، یعنې $\\alpha\\approx17.9^\\circ$ او $\\gamma\\approx20.6^\\circ$ راځي."
       }
     ],
     "provenance": "SpaceBook authored solution",
@@ -39288,6 +39293,1795 @@
       338,
       339,
       425
+    ]
+  },
+  "6.2|4|": {
+    "question": "In how many ways can a police department arrange eight suspects in a line up?",
+    "prompt": "In how many ways can a police department arrange eight suspects in a line up?",
+    "answer": "$40320$",
+    "steps": [
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^8P_8=8!=40320"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|5|": {
+    "question": "In how many ways can letters of the word 'Fasting' be arranged?",
+    "prompt": "In how many ways can letters of the word 'Fasting' be arranged?",
+    "answer": "$5040$",
+    "steps": [
+      {
+        "en": "\"Fasting\" has 7 different letters.",
+        "ur": "\"Fasting\" میں 7 مختلف حروف ہیں۔",
+        "ps": "\"Fasting\" کې 7 بېلابېل توري دي.",
+        "m": "7!=5040"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|6|": {
+    "question": "How many 4 digit numbers can be formed with the digits 2, 4, 5, 7, 9. (Repetitions not being allowed). How many of these are even?",
+    "prompt": "How many 4 digit numbers can be formed with the digits 2, 4, 5, 7, 9. (Repetitions not being allowed). How many of these are even?",
+    "answer": "$120$ numbers; $48$ of them are even",
+    "steps": [
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^5P_4=5\\cdot4\\cdot3\\cdot2=120"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{even: units digit }2\\text{ or }4\\ (2\\text{ ways}),\\ \\text{other 3 places }{}^4P_3=24\\Rightarrow2\\cdot24=48"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|8|": {
+    "question": "How many different arrangements can be formed of the word \"equation\" if all the vowels are to be kept together?",
+    "prompt": "How many different arrangements can be formed of the word \"equation\" if all the vowels are to be kept together?",
+    "answer": "$2880$",
+    "steps": [
+      {
+        "en": "\"equation\" has 8 different letters: 5 vowels (e, u, a, i, o) and 3 consonants.",
+        "ur": "\"equation\" میں 8 مختلف حروف ہیں: 5 حروفِ علت (e, u, a, i, o) اور 3 حروفِ صحیح۔",
+        "ps": "\"equation\" کې 8 بېلابېل توري دي: 5 غږیز (e, u, a, i, o) او 3 بې غږه."
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{vowels as one block: }4\\text{ units}\\Rightarrow4!;\\ \\text{vowels inside the block: }5!\\Rightarrow4!\\cdot5!=24\\cdot120=2880"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|9|": {
+    "question": "How many signals can be given by six flags of different colors when any number of them are used at a time?",
+    "prompt": "How many signals can be given by six flags of different colors when any number of them are used at a time?",
+    "answer": "$1956$",
+    "steps": [
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "\\sum_{r=1}^6{}^6P_r=6+30+120+360+720+720=1956"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|11|": {
+    "question": "How many numbers each lying between 10 and 1000 can be formed with digits 2, 3, 4, 0, 8, 9 using only once?",
+    "prompt": "How many numbers each lying between 10 and 1000 can be formed with digits 2, 3, 4, 0, 8, 9 using only once?",
+    "answer": "$125$",
+    "steps": [
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{2-digit: first digit non-zero }(5),\\ \\text{second }(5)\\Rightarrow25"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{3-digit: }5\\cdot5\\cdot4=100"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "25+100=125"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|14|": {
+    "question": "If five distinct keys are placed on a key ring, how many different orders are possible?",
+    "prompt": "If five distinct keys are placed on a key ring, how many different orders are possible?",
+    "answer": "$12$",
+    "steps": [
+      {
+        "en": "Circular arrangement of 5 objects that can also be turned over (a ring): $\\dfrac{(n-1)!}2$.",
+        "ur": "5 اشیا کی دائروی ترتیب جو الٹی بھی کی جا سکے (چھلا): $\\dfrac{(n-1)!}2$۔",
+        "ps": "د 5 شیانو دایروي ترتیب چې اړول کېدای شي (کړۍ): $\\dfrac{(n-1)!}2$.",
+        "m": "\\frac{4!}2=12"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|15|": {
+    "question": "In how many ways can 7 people be arranged at a round table so that 2 particular persons always sit together?",
+    "prompt": "In how many ways can 7 people be arranged at a round table so that 2 particular persons always sit together?",
+    "answer": "$240$",
+    "steps": [
+      {
+        "en": "Treat the two particular persons as one unit: 6 units round a table.",
+        "ur": "دونوں خاص افراد کو ایک اکائی سمجھیں: میز کے گرد 6 اکائیاں۔",
+        "ps": "دواړه ځانګړي کسان یو واحد وګڼئ: د مېز شاوخوا 6 واحدونه.",
+        "m": "(6-1)!=120"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{the two persons can change places: }120\\times2=240"
+      },
+      {
+        "en": "Note on the printed answer key: it prints 120, which leaves out the 2 ways the pair can sit; the full count is 240.",
+        "ur": "مطبوعہ جوابی کنجی کے بارے میں: اس میں 120 چھپا ہے جس میں جوڑے کے بیٹھنے کے 2 طریقے شامل نہیں؛ مکمل تعداد 240 ہے۔",
+        "ps": "د چاپ شوې ځوابي کیلي په اړه: په کې 120 چاپ شوی چې د جوړې د کښېناستو 2 لارې نه دي شاملې؛ بشپړ شمېر 240 دی."
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|2|": {
+    "question": "Find n and r if ${}^nP_r=840$ and ${}^nC_r=35$",
+    "prompt": "Find n and r if ${}^nP_r=840$ and ${}^nC_r=35$",
+    "answer": "$n=7,\\ r=4$",
+    "steps": [
+      {
+        "en": "Use ${}^nP_r=r!\\,{}^nC_r$.",
+        "ur": "${}^nP_r=r!\\,{}^nC_r$ استعمال کریں۔",
+        "ps": "${}^nP_r=r!\\,{}^nC_r$ وکاروئ.",
+        "m": "r!=\\frac{840}{35}=24\\Rightarrow r=4"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "n(n-1)(n-2)(n-3)=840=7\\cdot6\\cdot5\\cdot4\\Rightarrow n=7"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|3|": {
+    "question": "Find n when ${}^{2n}C_3:{}^nC_2=36:3$",
+    "prompt": "Find n when ${}^{2n}C_3:{}^nC_2=36:3$",
+    "answer": "$n=5$",
+    "steps": [
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "\\frac{{}^{2n}C_3}{{}^nC_2}=\\frac{2n(2n-1)(2n-2)/6}{n(n-1)/2}=\\frac{4(2n-1)}3"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "\\frac{4(2n-1)}3=\\frac{36}3=12\\Rightarrow2n-1=9\\Rightarrow n=5"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|6|": {
+    "question": "Find the total number of diagonals of a hexagon.",
+    "prompt": "Find the total number of diagonals of a hexagon.",
+    "answer": "$9$",
+    "steps": [
+      {
+        "en": "Segments joining any two vertices, minus the 6 sides.",
+        "ur": "کوئی بھی دو راسوں کو ملانے والے قطعات، منہا 6 اضلاع۔",
+        "ps": "هغه برخې چې هر دوه رأسونه سره نښلوي، منفي 6 ضلعې.",
+        "m": "{}^6C_2-6=15-6=9"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|7|": {
+    "question": "Consider a group of 20 people. If everyone shakes hands with everyone else, how many handshakes take place?",
+    "prompt": "Consider a group of 20 people. If everyone shakes hands with everyone else, how many handshakes take place?",
+    "answer": "$190$",
+    "steps": [
+      {
+        "en": "Each handshake is a pair of people.",
+        "ur": "ہر مصافحہ دو افراد کا جوڑا ہے۔",
+        "ps": "هر لاس ورکول د دوو کسانو جوړه ده.",
+        "m": "{}^{20}C_2=\\frac{20\\cdot19}2=190"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|8|": {
+    "question": "A student is to answer 7 out of 10 questions in an examination. How many choices has he, if he must answer the first 3 questions?",
+    "prompt": "A student is to answer 7 out of 10 questions in an examination. How many choices has he, if he must answer the first 3 questions?",
+    "answer": "$35$",
+    "steps": [
+      {
+        "en": "The first 3 are fixed; choose the other 4 from the remaining 7.",
+        "ur": "پہلے 3 لازمی ہیں؛ باقی 4 بقیہ 7 میں سے چنیں۔",
+        "ps": "لومړۍ 3 لازمي دي؛ پاتې 4 له پاتې 7 نه وټاکئ.",
+        "m": "{}^7C_4=35"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.1|1|": {
+    "question": "Evaluate the following. (i) $\\dfrac{10!}{3!\\,3!\\,4!}$ (ii) $\\dfrac{3!+4!}{5!-4!}$ (iii) $\\dfrac{(n-1)!}{(n+1)!}$ (iv) $\\dfrac{10!}{(5!)^2}$",
+    "prompt": "Evaluate the following. (i) $\\dfrac{10!}{3!\\,3!\\,4!}$ (ii) $\\dfrac{3!+4!}{5!-4!}$ (iii) $\\dfrac{(n-1)!}{(n+1)!}$ (iv) $\\dfrac{10!}{(5!)^2}$",
+    "answer": "(i) $4200$; (ii) $\\frac5{16}$; (iii) $\\frac1{n(n+1)}$; (iv) $252$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{10!}{3!\\,3!\\,4!}=\\frac{3628800}{6\\cdot6\\cdot24}=\\frac{3628800}{864}=4200"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{3!+4!}{5!-4!}=\\frac{6+24}{120-24}=\\frac{30}{96}=\\frac5{16}"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{(n-1)!}{(n+1)!}=\\frac{(n-1)!}{(n+1)\\,n\\,(n-1)!}=\\frac1{n(n+1)}"
+      },
+      {
+        "en": "Part (iv)",
+        "ur": "حصہ (iv)",
+        "ps": "برخه (iv)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{10!}{(5!)^2}=\\frac{10\\cdot9\\cdot8\\cdot7\\cdot6}{5!}=\\frac{30240}{120}=252"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $4200$; (ii) $\\frac5{16}$; (iii) $\\frac1{n(n+1)}$; (iv) $252$",
+    "answerPs": "(i) $4200$; (ii) $\\frac5{16}$; (iii) $\\frac1{n(n+1)}$; (iv) $252$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.1|2|": {
+    "question": "Write the following in terms of factorials. (i) $19\\cdot18\\cdot17\\cdot16\\cdot15\\cdot14$ (ii) $2\\cdot4\\cdot6\\cdot8\\cdot10\\cdot12$ (iii) $n(n^2-1)$ (iv) $\\dfrac{n(n+1)(n+2)}{3}$",
+    "prompt": "Write the following in terms of factorials. (i) $19\\cdot18\\cdot17\\cdot16\\cdot15\\cdot14$ (ii) $2\\cdot4\\cdot6\\cdot8\\cdot10\\cdot12$ (iii) $n(n^2-1)$ (iv) $\\dfrac{n(n+1)(n+2)}{3}$",
+    "answer": "(i) $\\frac{19!}{13!}$; (ii) $2^6\\cdot6!$; (iii) $\\frac{(n+1)!}{(n-2)!}$; (iv) $\\frac{(n+2)!}{3\\,(n-1)!}$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Complete the product to a factorial and divide by the missing factors.",
+        "ur": "حاصلِ ضرب کو فیکٹوریل تک مکمل کریں اور زائد اجزا سے تقسیم کریں۔",
+        "ps": "ضرب تر فکتوریل پورې بشپړ کړئ او په اضافي عاملونو یې وویشئ.",
+        "m": "19\\cdot18\\cdot17\\cdot16\\cdot15\\cdot14=\\frac{19\\cdot18\\cdots14\\cdot13!}{13!}=\\frac{19!}{13!}"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Complete the product to a factorial and divide by the missing factors.",
+        "ur": "حاصلِ ضرب کو فیکٹوریل تک مکمل کریں اور زائد اجزا سے تقسیم کریں۔",
+        "ps": "ضرب تر فکتوریل پورې بشپړ کړئ او په اضافي عاملونو یې وویشئ.",
+        "m": "2\\cdot4\\cdot6\\cdot8\\cdot10\\cdot12=2^6(1\\cdot2\\cdot3\\cdot4\\cdot5\\cdot6)=2^6\\cdot6!"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Complete the product to a factorial and divide by the missing factors.",
+        "ur": "حاصلِ ضرب کو فیکٹوریل تک مکمل کریں اور زائد اجزا سے تقسیم کریں۔",
+        "ps": "ضرب تر فکتوریل پورې بشپړ کړئ او په اضافي عاملونو یې وویشئ.",
+        "m": "n(n^2-1)=(n+1)\\,n\\,(n-1)=\\frac{(n+1)!}{(n-2)!}"
+      },
+      {
+        "en": "Part (iv)",
+        "ur": "حصہ (iv)",
+        "ps": "برخه (iv)"
+      },
+      {
+        "en": "Complete the product to a factorial and divide by the missing factors.",
+        "ur": "حاصلِ ضرب کو فیکٹوریل تک مکمل کریں اور زائد اجزا سے تقسیم کریں۔",
+        "ps": "ضرب تر فکتوریل پورې بشپړ کړئ او په اضافي عاملونو یې وویشئ.",
+        "m": "\\frac{n(n+1)(n+2)}3=\\frac{(n+2)!}{3\\,(n-1)!}"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $\\frac{19!}{13!}$; (ii) $2^6\\cdot6!$; (iii) $\\frac{(n+1)!}{(n-2)!}$; (iv) $\\frac{(n+2)!}{3\\,(n-1)!}$",
+    "answerPs": "(i) $\\frac{19!}{13!}$; (ii) $2^6\\cdot6!$; (iii) $\\frac{(n+1)!}{(n-2)!}$; (iv) $\\frac{(n+2)!}{3\\,(n-1)!}$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.1|3|": {
+    "question": "Prove the following. (i) $\\dfrac{1}{6!}+\\dfrac{2}{7!}+\\dfrac{3}{8!}=\\dfrac{75}{8!}$ (ii) $\\dfrac{(n+5)!}{(n+3)!}=n^2+9n+20$",
+    "prompt": "Prove the following. (i) $\\dfrac{1}{6!}+\\dfrac{2}{7!}+\\dfrac{3}{8!}=\\dfrac{75}{8!}$ (ii) $\\dfrac{(n+5)!}{(n+3)!}=n^2+9n+20$",
+    "answer": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Write every fraction with the common denominator $8!$.",
+        "ur": "ہر کسر کو مشترک مخرج $8!$ پر لکھیں۔",
+        "ps": "هر کسر د ګډ مخرج $8!$ پر ولیکئ.",
+        "m": "\\frac1{6!}=\\frac{8\\cdot7}{8!},\\quad\\frac2{7!}=\\frac{2\\cdot8}{8!},\\quad\\frac3{8!}"
+      },
+      {
+        "en": "Add the numerators.",
+        "ur": "شمار کنندے جمع کریں۔",
+        "ps": "صورتونه جمع کړئ.",
+        "m": "\\frac{56+16+3}{8!}=\\frac{75}{8!}"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{(n+5)!}{(n+3)!}=\\frac{(n+5)(n+4)(n+3)!}{(n+3)!}=(n+5)(n+4)"
+      },
+      {
+        "en": "Multiply out.",
+        "ur": "ضرب کھولیں۔",
+        "ps": "ضرب پراخ کړئ.",
+        "m": "(n+5)(n+4)=n^2+9n+20"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "answerPs": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.1|4|": {
+    "question": "Find the value of n, when (i) $\\dfrac{n(n!)}{(n-5)!}=\\dfrac{12(n!)}{(n-4)!}$ (ii) $\\dfrac{n!}{(n-4)!}:\\dfrac{(n-1)!}{(n-4)!}=9:1$",
+    "prompt": "Find the value of n, when (i) $\\dfrac{n(n!)}{(n-5)!}=\\dfrac{12(n!)}{(n-4)!}$ (ii) $\\dfrac{n!}{(n-4)!}:\\dfrac{(n-1)!}{(n-4)!}=9:1$",
+    "answer": "(i) $n=6$; (ii) $n=9$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{n\\cdot n!}{(n-5)!}=\\frac{12\\cdot n!}{(n-4)(n-5)!}\\Rightarrow n=\\frac{12}{n-4}"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "n(n-4)=12\\Rightarrow n^2-4n-12=0\\Rightarrow(n-6)(n+2)=0\\Rightarrow n=6\\ (n=-2\\text{ rejected})"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Expand the factorials and cancel common factors.",
+        "ur": "فیکٹوریل کھول کر مشترک اجزا منسوخ کریں۔",
+        "ps": "فکتوریلونه پراخ کړئ او ګډ عاملونه لرې کړئ.",
+        "m": "\\frac{n!}{(n-4)!}\\div\\frac{(n-1)!}{(n-4)!}=\\frac{n!}{(n-1)!}=n"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "n:1=9:1\\Rightarrow n=9"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $n=6$; (ii) $n=9$",
+    "answerPs": "(i) $n=6$; (ii) $n=9$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.1|5|": {
+    "question": "Show that (i) $\\dfrac{(2n)!}{n!}=2^n(1\\cdot3\\cdot5\\cdots(2n-1))$ (ii) $\\dfrac{(2n+1)!}{n!}=2^n(1\\cdot3\\cdot5\\cdots(2n-1)(2n+1))$",
+    "prompt": "Show that (i) $\\dfrac{(2n)!}{n!}=2^n(1\\cdot3\\cdot5\\cdots(2n-1))$ (ii) $\\dfrac{(2n+1)!}{n!}=2^n(1\\cdot3\\cdot5\\cdots(2n-1)(2n+1))$",
+    "answer": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Separate the even and odd factors of $(2n)!$.",
+        "ur": "$(2n)!$ کے جفت اور طاق اجزا الگ کریں۔",
+        "ps": "د $(2n)!$ جفت او طاق عاملونه جلا کړئ.",
+        "m": "(2n)!=[2\\cdot4\\cdot6\\cdots2n]\\,[1\\cdot3\\cdot5\\cdots(2n-1)]"
+      },
+      {
+        "en": "Take a factor 2 out of each even number.",
+        "ur": "ہر جفت عدد سے 2 کا جز باہر نکالیں۔",
+        "ps": "له هر جفت عدد نه د 2 عامل بهر کړئ.",
+        "m": "2\\cdot4\\cdots2n=2^n(1\\cdot2\\cdots n)=2^n\\,n!"
+      },
+      {
+        "en": "Divide by $n!$.",
+        "ur": "$n!$ سے تقسیم کریں۔",
+        "ps": "په $n!$ یې وویشئ.",
+        "m": "\\frac{(2n)!}{n!}=2^n\\,(1\\cdot3\\cdot5\\cdots(2n-1))"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use part (i) and $(2n+1)!=(2n+1)\\,(2n)!$.",
+        "ur": "حصہ (i) اور $(2n+1)!=(2n+1)\\,(2n)!$ استعمال کریں۔",
+        "ps": "(i) برخه او $(2n+1)!=(2n+1)\\,(2n)!$ وکاروئ.",
+        "m": "\\frac{(2n+1)!}{n!}=(2n+1)\\frac{(2n)!}{n!}=2^n(1\\cdot3\\cdots(2n-1))(2n+1)"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "answerPs": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|1|": {
+    "question": "Evaluate (i) ${}^6P_6$ (ii) ${}^{20}P_2$ (iii) ${}^{16}P_3$",
+    "prompt": "Evaluate (i) ${}^6P_6$ (ii) ${}^{20}P_2$ (iii) ${}^{16}P_3$",
+    "answer": "(i) $720$; (ii) $380$; (iii) $3360$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^6P_6=\\frac{6!}{0!}=720"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^{20}P_2=20\\cdot19=380"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^{16}P_3=16\\cdot15\\cdot14=3360"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $720$; (ii) $380$; (iii) $3360$",
+    "answerPs": "(i) $720$; (ii) $380$; (iii) $3360$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|2|": {
+    "question": "Solve for n (i) ${}^nP_5=56({}^nP_3)$ (ii) ${}^nP_5=9({}^{n-1}P_4)$ (iii) ${}^{n^2}P_2=600$",
+    "prompt": "Solve for n (i) ${}^nP_5=56({}^nP_3)$ (ii) ${}^nP_5=9({}^{n-1}P_4)$ (iii) ${}^{n^2}P_2=600$",
+    "answer": "(i) $n=11$; (ii) $n=9$; (iii) $n=5$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^nP_5={}^nP_3\\,(n-3)(n-4)"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "(n-3)(n-4)=56=8\\cdot7\\Rightarrow n-3=8\\Rightarrow n=11"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^nP_5=n(n-1)(n-2)(n-3)(n-4)=n\\cdot{}^{n-1}P_4"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "n\\cdot{}^{n-1}P_4=9\\cdot{}^{n-1}P_4\\Rightarrow n=9"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "{}^{n^2}P_2=n^2(n^2-1)=600"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "(n^2)^2-n^2-600=0\\Rightarrow(n^2-25)(n^2+24)=0\\Rightarrow n^2=25\\Rightarrow n=5"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $n=11$; (ii) $n=9$; (iii) $n=5$",
+    "answerPs": "(i) $n=11$; (ii) $n=9$; (iii) $n=5$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|3|": {
+    "question": "Prove the following by Fundamental Principle of counting (i) ${}^nP_r=n({}^{n-1}P_{r-1})$ (ii) ${}^nP_r={}^{n-1}P_r+r({}^{n-1}P_{r-1})$",
+    "prompt": "Prove the following by Fundamental Principle of counting (i) ${}^nP_r=n({}^{n-1}P_{r-1})$ (ii) ${}^nP_r={}^{n-1}P_r+r({}^{n-1}P_{r-1})$",
+    "answer": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{1st place: }n\\text{ choices; the other }r-1\\text{ places are filled from the remaining }n-1\\text{ objects in }{}^{n-1}P_{r-1}\\text{ ways}"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "{}^nP_r=n\\cdot{}^{n-1}P_{r-1}"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Fix one particular object $x$. Arrangements of $r$ objects either omit $x$ or contain it.",
+        "ur": "ایک خاص شے $x$ مقرر کریں۔ $r$ اشیا کی ترتیبوں میں یا $x$ شامل نہیں یا شامل ہے۔",
+        "ps": "یو ځانګړی شی $x$ وټاکئ. د $r$ شیانو ترتیبونه یا $x$ نه لري یا یې لري.",
+        "m": "\\text{without }x:\\ {}^{n-1}P_r"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{with }x:\\ x\\text{ can take any of the }r\\text{ places, the rest in }{}^{n-1}P_{r-1}\\text{ ways}\\Rightarrow r\\cdot{}^{n-1}P_{r-1}"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "{}^nP_r={}^{n-1}P_r+r\\cdot{}^{n-1}P_{r-1}"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "answerPs": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|7|": {
+    "question": "How many three digit numbers can be formed from the digits 1, 2, 3, 4 and 5 if repetitions (i) are allowed (ii) are not allowed.",
+    "prompt": "How many three digit numbers can be formed from the digits 1, 2, 3, 4 and 5 if repetitions (i) are allowed (ii) are not allowed.",
+    "answer": "(i) $125$; (ii) $60$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "5\\cdot5\\cdot5=125"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "5\\cdot4\\cdot3=60"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $125$; (ii) $60$",
+    "answerPs": "(i) $125$; (ii) $60$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|10|": {
+    "question": "In how many ways can five students be seated in a row of eight seats if a certain two students (i) insist on sitting next to each other? (ii) refuse to sit next to each other?",
+    "prompt": "In how many ways can five students be seated in a row of eight seats if a certain two students (i) insist on sitting next to each other? (ii) refuse to sit next to each other?",
+    "answer": "(i) $1680$; (ii) $5040$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Choose two adjacent seats for the pair: 7 pairs of neighbouring seats, and the two students can swap.",
+        "ur": "جوڑے کے لیے دو ساتھ والی نشستیں چنیں: 7 جوڑیاں، اور دونوں طالب علم جگہ بدل سکتے ہیں۔",
+        "ps": "د جوړې لپاره دوه څنګ پر څنګ څوکۍ وټاکئ: 7 جوړې، او دواړه زده کوونکي ځای بدلولی شي.",
+        "m": "7\\times2=14"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "\\text{other 3 students in the remaining 6 seats: }{}^6P_3=120\\Rightarrow14\\times120=1680"
+      },
+      {
+        "en": "Note on the printed answer key: it prints 3360. Its answer to (ii), 5040, equals $6720-1680$, which confirms 1680 here.",
+        "ur": "مطبوعہ جوابی کنجی کے بارے میں: اس میں 3360 چھپا ہے۔ اس کا (ii) کا جواب 5040 یعنی $6720-1680$ ہے، جو یہاں 1680 کی تصدیق کرتا ہے۔",
+        "ps": "د چاپ شوې ځوابي کیلي په اړه: په کې 3360 چاپ شوی. د (ii) ځواب یې 5040 دی چې $6720-1680$ کېږي، او دا دلته 1680 تاییدوي."
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nP_r=\\dfrac{n!}{(n-r)!}$.",
+        "ur": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nP_r=\\dfrac{n!}{(n-r)!}$ وکاروئ.",
+        "m": "\\text{all seatings: }{}^8P_5=6720"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "\\text{not together}=6720-1680=5040"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $1680$; (ii) $5040$",
+    "answerPs": "(i) $1680$; (ii) $5040$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|12|": {
+    "question": "How many different words can be formed from the letters of the following words if the letters are taken all at a time? (i) Bookworm (ii) Bookkeeper (iii) Abbottabad (iv) Letter",
+    "prompt": "How many different words can be formed from the letters of the following words if the letters are taken all at a time? (i) Bookworm (ii) Bookkeeper (iii) Abbottabad (iv) Letter",
+    "answer": "(i) $6720$; (ii) $151200$; (iii) $50400$; (iv) $180$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{BOOKWORM: 8 letters, O three times}\\Rightarrow\\frac{8!}{3!}=6720"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{BOOKKEEPER: 10 letters, O}\\times2,\\ \\text{K}\\times2,\\ \\text{E}\\times3\\Rightarrow\\frac{10!}{2!\\,2!\\,3!}=151200"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{ABBOTTABAD: 10 letters, A}\\times3,\\ \\text{B}\\times3,\\ \\text{T}\\times2\\Rightarrow\\frac{10!}{3!\\,3!\\,2!}=50400"
+      },
+      {
+        "en": "Part (iv)",
+        "ur": "حصہ (iv)",
+        "ps": "برخه (iv)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{LETTER: 6 letters, E}\\times2,\\ \\text{T}\\times2\\Rightarrow\\frac{6!}{2!\\,2!}=180"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $6720$; (ii) $151200$; (iii) $50400$; (iv) $180$",
+    "answerPs": "(i) $6720$; (ii) $151200$; (iii) $50400$; (iv) $180$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.2|13|": {
+    "question": "Find the number of permutations of the word 'EXCELLENCE'. How many of these permutations (i) begin with E (ii) begin with E and end with C (iii) begin with E and end with E (iv) do not begin with E. (v) contain two 2L's together (vi) do not contain 2L's together.",
+    "prompt": "Find the number of permutations of the word 'EXCELLENCE'. How many of these permutations (i) begin with E (ii) begin with E and end with C (iii) begin with E and end with E (iv) do not begin with E. (v) contain two 2L's together (vi) do not contain 2L's together.",
+    "answer": "(total) $37800$; (i) $15120$; (ii) $3360$; (iii) $5040$; (iv) $22680$; (v) $7560$; (vi) $30240$",
+    "steps": [
+      {
+        "en": "Part (total)",
+        "ur": "حصہ (total)",
+        "ps": "برخه (total)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{EXCELLENCE: 10 letters, E}\\times4,\\ \\text{C}\\times2,\\ \\text{L}\\times2\\Rightarrow\\frac{10!}{4!\\,2!\\,2!}=37800"
+      },
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{fix E first: 9 letters left, E}\\times3,\\ \\text{C}\\times2,\\ \\text{L}\\times2\\Rightarrow\\frac{9!}{3!\\,2!\\,2!}=15120"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{fix E first and C last: 8 left, E}\\times3,\\ \\text{L}\\times2\\Rightarrow\\frac{8!}{3!\\,2!}=3360"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{E at both ends: 8 left, E}\\times2,\\ \\text{C}\\times2,\\ \\text{L}\\times2\\Rightarrow\\frac{8!}{2!\\,2!\\,2!}=5040"
+      },
+      {
+        "en": "Part (iv)",
+        "ur": "حصہ (iv)",
+        "ps": "برخه (iv)"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "37800-15120=22680"
+      },
+      {
+        "en": "Part (v)",
+        "ur": "حصہ (v)",
+        "ps": "برخه (v)"
+      },
+      {
+        "en": "Permutations of $n$ objects with repeated letters: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "ur": "دہرائے گئے حروف والی $n$ اشیا کی ترتیبیں: $\\dfrac{n!}{p!\\,q!\\cdots}$۔",
+        "ps": "د تکرار شویو تورو لرونکو $n$ شیانو ترتیبونه: $\\dfrac{n!}{p!\\,q!\\cdots}$.",
+        "m": "\\text{treat LL as one letter: 9 units, E}\\times4,\\ \\text{C}\\times2\\Rightarrow\\frac{9!}{4!\\,2!}=7560"
+      },
+      {
+        "en": "Part (vi)",
+        "ur": "حصہ (vi)",
+        "ps": "برخه (vi)"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "37800-7560=30240"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(total) $37800$; (i) $15120$; (ii) $3360$; (iii) $5040$; (iv) $22680$; (v) $7560$; (vi) $30240$",
+    "answerPs": "(total) $37800$; (i) $15120$; (ii) $3360$; (iii) $5040$; (iv) $22680$; (v) $7560$; (vi) $30240$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|1|": {
+    "question": "Solve the following for n. (i) ${}^nC_2=36$ (ii) ${}^{n+1}C_4=6\\cdot{}^{n-1}C_2$ (iii) ${}^{n^2}C_2=30\\cdot{}^nC_3$",
+    "prompt": "Solve the following for n. (i) ${}^nC_2=36$ (ii) ${}^{n+1}C_4=6\\cdot{}^{n-1}C_2$ (iii) ${}^{n^2}C_2=30\\cdot{}^nC_3$",
+    "answer": "(i) $n=9$; (ii) $n=8$; (iii) $n=4$ or $n=5$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "\\frac{n(n-1)}2=36\\Rightarrow n^2-n-72=0"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "(n-9)(n+8)=0\\Rightarrow n=9"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "\\frac{(n+1)n(n-1)(n-2)}{24}=6\\cdot\\frac{(n-1)(n-2)}2"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "\\frac{(n+1)n}{24}=3\\Rightarrow n^2+n-72=0\\Rightarrow(n+9)(n-8)=0\\Rightarrow n=8"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "\\frac{n^2(n^2-1)}2=30\\cdot\\frac{n(n-1)(n-2)}6"
+      },
+      {
+        "en": "Cancel $n(n-1)$ (non-zero).",
+        "ur": "$n(n-1)$ منسوخ کریں (غیر صفر)۔",
+        "ps": "$n(n-1)$ لرې کړئ (صفر نه دی).",
+        "m": "\\frac{n(n+1)}2=5(n-2)"
+      },
+      {
+        "en": "Solve the resulting equation and keep only the admissible (positive integer) value.",
+        "ur": "حاصل مساوات حل کریں اور صرف قابلِ قبول (مثبت صحیح) قیمت رکھیں۔",
+        "ps": "ترلاسه شوې معادله حل کړئ او یوازې د منلو وړ (مثبت صحیح) ارزښت وساتئ.",
+        "m": "n^2-9n+20=0\\Rightarrow(n-4)(n-5)=0\\Rightarrow n=4,5"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $n=9$; (ii) $n=8$; (iii) $n=4$ or $n=5$",
+    "answerPs": "(i) $n=9$; (ii) $n=8$; (iii) $n=4$ or $n=5$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|4|": {
+    "question": "Prove that (i) ${}^{n-1}C_r+{}^{n-1}C_{r-1}={}^nC_r$ (ii) $r\\cdot{}^nC_r=n\\cdot{}^{n-1}C_{r-1}$",
+    "prompt": "Prove that (i) ${}^{n-1}C_r+{}^{n-1}C_{r-1}={}^nC_r$ (ii) $r\\cdot{}^nC_r=n\\cdot{}^{n-1}C_{r-1}$",
+    "answer": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "{}^{n-1}C_r+{}^{n-1}C_{r-1}=\\frac{(n-1)!}{r!\\,(n-1-r)!}+\\frac{(n-1)!}{(r-1)!\\,(n-r)!}"
+      },
+      {
+        "en": "Take the common denominator $r!\\,(n-r)!$.",
+        "ur": "مشترک مخرج $r!\\,(n-r)!$ لیں۔",
+        "ps": "ګډ مخرج $r!\\,(n-r)!$ واخلئ.",
+        "m": "=\\frac{(n-1)!\\,[(n-r)+r]}{r!\\,(n-r)!}=\\frac{n!}{r!\\,(n-r)!}={}^nC_r"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "r\\cdot{}^nC_r=r\\cdot\\frac{n!}{r!\\,(n-r)!}=\\frac{n\\,(n-1)!}{(r-1)!\\,(n-r)!}"
+      },
+      {
+        "en": "Recognise ${}^{n-1}C_{r-1}$.",
+        "ur": "${}^{n-1}C_{r-1}$ پہچانیں۔",
+        "ps": "${}^{n-1}C_{r-1}$ وپېژنئ.",
+        "m": "=n\\cdot\\frac{(n-1)!}{(r-1)!\\,((n-1)-(r-1))!}=n\\cdot{}^{n-1}C_{r-1}"
+      },
+      {
+        "en": "Hence proved.",
+        "ur": "ثابت ہوا۔",
+        "ps": "ثابت شو."
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "answerPs": "(i) Proved (see the steps).; (ii) Proved (see the steps).",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|5|": {
+    "question": "How many (i) straight lines (ii) triangles are determined by 12 points, no three of which lie on the same straight line.",
+    "prompt": "How many (i) straight lines (ii) triangles are determined by 12 points, no three of which lie on the same straight line.",
+    "answer": "(i) $66$; (ii) $220$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "A line is fixed by any 2 of the points.",
+        "ur": "کوئی بھی 2 نقاط ایک خط متعین کرتے ہیں۔",
+        "ps": "هر 2 ټکي یوه کرښه ټاکي.",
+        "m": "{}^{12}C_2=\\frac{12\\cdot11}2=66"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "A triangle is fixed by any 3 of the points (no three collinear).",
+        "ur": "کوئی بھی 3 نقاط (جو ہم خط نہ ہوں) ایک مثلث متعین کرتے ہیں۔",
+        "ps": "هر 3 ټکي (چې په یوه کرښه نه وي) یو درې ګونی ټاکي.",
+        "m": "{}^{12}C_3=\\frac{12\\cdot11\\cdot10}{6}=220"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $66$; (ii) $220$",
+    "answerPs": "(i) $66$; (ii) $220$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
+    ]
+  },
+  "6.3|9|": {
+    "question": "An 8-person committee is to be formed from a group of 6 women and 7 men. In how many ways can the committee be chosen if (i) the committee must contain four men and four women? (ii) there must be at least two men? (iii) there must be at least two women? (iv) there must be more women than men?",
+    "prompt": "An 8-person committee is to be formed from a group of 6 women and 7 men. In how many ways can the committee be chosen if (i) the committee must contain four men and four women? (ii) there must be at least two men? (iii) there must be at least two women? (iv) there must be more women than men?",
+    "answer": "(i) $525$; (ii) $1287$; (iii) $1281$; (iv) $231$",
+    "steps": [
+      {
+        "en": "Part (i)",
+        "ur": "حصہ (i)",
+        "ps": "برخه (i)"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "{}^6C_4\\cdot{}^7C_4=15\\cdot35=525"
+      },
+      {
+        "en": "Part (ii)",
+        "ur": "حصہ (ii)",
+        "ps": "برخه (ii)"
+      },
+      {
+        "en": "Use ${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$.",
+        "ur": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ استعمال کریں۔",
+        "ps": "${}^nC_r=\\dfrac{n!}{r!\\,(n-r)!}$ وکاروئ.",
+        "m": "\\text{all committees: }{}^{13}C_8=1287"
+      },
+      {
+        "en": "With only 6 women, every 8-person committee already has at least 2 men.",
+        "ur": "صرف 6 خواتین ہیں، اس لیے ہر 8 رکنی کمیٹی میں کم از کم 2 مرد ہوں گے۔",
+        "ps": "یوازې 6 ښځې دي، نو په هره 8 کسیزه کمېټه کې لږ تر لږه 2 نارینه وي.",
+        "m": "\\Rightarrow1287"
+      },
+      {
+        "en": "Part (iii)",
+        "ur": "حصہ (iii)",
+        "ps": "برخه (iii)"
+      },
+      {
+        "en": "Subtract committees with fewer than 2 women (0 women is impossible; exactly 1 woman: ${}^6C_1\\cdot{}^7C_7$).",
+        "ur": "جن کمیٹیوں میں 2 سے کم خواتین ہوں انہیں منہا کریں (0 خاتون ناممکن؛ صرف 1 خاتون: ${}^6C_1\\cdot{}^7C_7$)۔",
+        "ps": "هغه کمېټې کمې کړئ چې له 2 کمې ښځې لري (0 ښځه ناشونې؛ یوازې 1 ښځه: ${}^6C_1\\cdot{}^7C_7$).",
+        "m": "1287-6\\cdot1=1281"
+      },
+      {
+        "en": "Part (iv)",
+        "ur": "حصہ (iv)",
+        "ps": "برخه (iv)"
+      },
+      {
+        "en": "Fundamental principle of counting: multiply the number of choices for each place.",
+        "ur": "گنتی کا بنیادی اصول: ہر جگہ کے انتخاب کی تعداد کو ضرب دیں۔",
+        "ps": "د شمېرنې بنسټیز اصل: د هر ځای د انتخابونو شمېر سره ضرب کړئ.",
+        "m": "(5W,3M):\\ {}^6C_5\\cdot{}^7C_3=6\\cdot35=210;\\quad(6W,2M):\\ {}^6C_6\\cdot{}^7C_2=21"
+      },
+      {
+        "en": "Answer.",
+        "ur": "جواب۔",
+        "ps": "ځواب.",
+        "m": "210+21=231"
+      }
+    ],
+    "provenance": "SpaceBook authored solution",
+    "answerUr": "(i) $525$; (ii) $1287$; (iii) $1281$; (iv) $231$",
+    "answerPs": "(i) $525$; (ii) $1287$; (iii) $1281$; (iv) $231$",
+    "sourceCheckedPdfPages": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      416,
+      417
     ]
   }
 }

@@ -59,9 +59,22 @@
     return (s ? s.name : scope) + (c ? ' · ' + c.name : '');
   }
 
+  // the language a subject's book is written in; its Word Stats show only that language
+  const URDU_MEDIUM = /-(urdu|isl|islopt|ikhtiari|ishist|islhist|pakstudy|pak|civics|sstum|econ)$/;
+  function mediumOf(scope) {
+    const S = summary();
+    if (!S || !S.subjects[scope]) return null;
+    if (/-pashto$/.test(scope)) return 'ps';
+    if (/-(arabic|nazira|quran|mq)$/.test(scope)) return 'ar';
+    if (URDU_MEDIUM.test(scope)) return 'ur';
+    if (/^cls(6|7|9|10|11|12)-hpe$/.test(scope)) return 'ur'; // Class 8 HPE is stored in English
+    return 'en';
+  }
+
   // ── stats panel (tiles) ─────────────────────────────────────────────────
   function tilesHtml(scope, counts) {
-    return ['all'].concat(LANGS).map(k => {
+    const med = mediumOf(scope);
+    return (med ? [med] : ['all'].concat(LANGS)).map(k => {
       const i = INFO[k];
       return `
         <button type="button" class="ws-tile" style="--ws-c:${i.color}" onclick="SBWordStats.openExplorer('${scope}','${k}')"
@@ -384,7 +397,8 @@
 
   function drawChips() {
     const counts = scopeCounts(ex.scope) || {};
-    modal.querySelector('#wsChips').innerHTML = ['all'].concat(LANGS).map(k =>
+    const med = mediumOf(ex.scope);
+    modal.querySelector('#wsChips').innerHTML = med ? '' : ['all'].concat(LANGS).map(k =>
       `<button type="button" role="tab" class="ws-chip ${ex.lang === k ? 'active' : ''}" style="--ws-c:${INFO[k].color}" onclick="SBWordStats.setLang('${k}')">${k === 'all' ? 'All' : INFO[k].native} <b>${fmt(counts[k])}</b></button>`
     ).join('');
   }
@@ -523,7 +537,7 @@
 
   async function openExplorer(scope, lang, status) {
     ensureModal();
-    ex.scope = scope; ex.lang = lang || 'all'; ex.page = 0; ex.q = ''; ex.status = status || 'all';
+    ex.scope = scope; ex.lang = mediumOf(scope) || lang || 'all'; ex.page = 0; ex.q = ''; ex.status = status || 'all';
     ex.rows = [];
     modal.querySelector('#wsStatus').innerHTML = '';
     modal.classList.remove('ws-chooser');
@@ -642,7 +656,7 @@
     btn.type = 'button';
     btn.className = String(found.tab.className || '').replace(/\bactive\b/g, '').trim() + ' ws-subj-tab';
     btn.dataset.subj = subj;
-    btn.title = 'Distinct English, Urdu, Pashto and Arabic words in this book';
+    btn.title = 'Distinct ' + ((INFO[mediumOf(subj)] || {}).label || 'words').toLowerCase() + ' in this book';
     btn.innerHTML = '📊 Word Stats';
     btn.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); openSubjectStats(subj); }, true);
     found.bar.appendChild(btn);
@@ -658,12 +672,15 @@
     modal.classList.add('ws-chooser');
     document.body.classList.add('ws-modal-open');
     modal.querySelector('#wsModalTitle').textContent = 'Word Stats — ' + scopeName(subj);
-    modal.querySelector('#wsModalSub').textContent = 'Distinct words in this book. Choose a language to see every word in English, Urdu, Pashto and Arabic.';
+    const med = mediumOf(subj);
+    modal.querySelector('#wsModalSub').textContent = med
+      ? 'Distinct ' + INFO[med].label.replace(' Words', '') + ' words in this book (the language it is written in). Tap to see every word with its translation.'
+      : 'Distinct words in this book. Choose a language to see every word in English, Urdu, Pashto and Arabic.';
     modal.querySelector('#wsChips').innerHTML = '';
     modal.querySelector('#wsStatus').innerHTML = '';
     modal.querySelector('#wsPager').innerHTML = '';
     const wrap = modal.querySelector('#wsTableWrap');
-    wrap.innerHTML = `<div class="ws-tiles ws-tiles-modal">${tilesHtml(subj, counts)}</div>`;
+    wrap.innerHTML = `<div class="ws-tiles ws-tiles-modal${med ? " ws-tiles-single" : ""}">${tilesHtml(subj, counts)}</div>`;
   }
 
   let moTimer = null;

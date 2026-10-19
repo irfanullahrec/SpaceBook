@@ -251,3 +251,14 @@
 .tp-howto + .tp-stepbox { margin-top: 0.6rem; }
 @media (max-width: 640px) { .tp-step { flex-wrap: wrap; } .tp-step-choice { margin-left: 2rem; } }
 .tp-steps-col { display: flex; flex-direction: column; min-width: 0; }
+
+/* MCQ options side by side as radio buttons (shared look with js/sb_mcq.js) */
+.tp-opts { display: flex; flex-wrap: wrap; }
+.tp-opts .tp-opt { flex: 1 1 auto; min-width: min(150px, 100%); }
+.tp-radio { flex: 0 0 auto; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #94a3b8; background: #fff; box-shadow: inset 0 0 0 3px #fff; }
+.tp-opt.picked .tp-radio { border-color: var(--tp-c); background: var(--tp-c); }
+.tp-opt.correct .tp-radio { border-color: #16a34a; background: #16a34a; }
+.tp-opt.wrong .tp-radio { border-color: #e11d48; background: #e11d48; }
+.tp-fb-h { display: block; font-size: 1rem; margin-bottom: 0.2rem; }
+.tp-fb-right { font-weight: 600; color: #14532d; }
+@media (max-width: 640px) { .tp-opts { display: flex; } }

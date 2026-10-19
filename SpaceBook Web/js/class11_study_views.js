@@ -227,7 +227,8 @@
       const list = adapted(key);
       if (list) return list;
     }
-    const list = originalList.apply(this, arguments);
+    // the internal view id must read the same Class 11 chapter list as the sidebar (Physics: front matter first)
+    const list = classId === VIEW_CLASS ? originalList.call(this, key, 'cls11') : originalList.apply(this, arguments);
     // the Urdu language book already reads its Urdu field; its Translations view needs English as English
     return (classId === 'cls12' || state.selectedClass === 'cls12') && key !== 'math' && key !== 'urdu' ? urduMedium12(list) : list;
   };

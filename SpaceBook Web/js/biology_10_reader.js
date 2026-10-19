@@ -198,6 +198,15 @@
   let exFigures = {};
   function question(q, lang, key) {
     const field = FIELD[lang];
+    // MCQs: options side by side as radio buttons with a correct / wrong alert (js/sb_mcq.js)
+    if (q.options && q.answer && window.SBMcq && !q.parts) {
+      const texts = q.options.map(o => String(o[field] || o.text || ''));
+      const correct = SBMcq.resolve(q.answer[field] || q.answer.text, texts);
+      if (correct >= 0) {
+        const fig = q.figure && exFigures[q.figure] ? figure(exFigures[q.figure], lang) : '';
+        return SBMcq.html({stem: para(q, lang, key) + fig, options: texts.map(esc), optionsText: texts, correct, lang: lang === 'en' ? 'en' : lang});
+      }
+    }
     let html = `<div style="margin:.35rem 0;">${para(q, lang, key)}</div>`;
     if (q.figure && exFigures[q.figure]) html += figure(exFigures[q.figure], lang);
     if (q.options) html += `<ol type="a" style="margin:.2rem 0 .4rem;padding-inline-start:1.6rem;">${q.options.map((o, i) => `<li>${para(o, lang, `${key}-o${i}`)}</li>`).join('')}</ol>`;

@@ -356,6 +356,12 @@
     const r = document.createRange(); r.setStart(node, pos); r.collapse(true); r.insertNode(box);
     const src = detect(list[i]);
     const book = bookTranslations(u).filter(x => x.lang !== src && x.text);
+    if (window.SBTri) {             // English, اردو and پښتو, each on its own line (js/sb_trilingual.js)
+      const map = {[src]: list[i]};
+      book.forEach(x => { const ts = sents(x.text); map[x.lang] = ts.length === list.length ? ts[i] : x.text.replace(/\s+/g, ' ').trim(); });
+      window.SBTri.fill(box, map, src);
+      return;
+    }
     if (book.length) {
       book.forEach(x => { const ts = sents(x.text); line(box, x.lang, ts.length === list.length ? ts[i] : x.text.replace(/\s+/g, ' ').trim()); });
       return;
