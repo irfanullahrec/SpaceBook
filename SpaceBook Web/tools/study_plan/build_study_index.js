@@ -2,14 +2,14 @@
 /* ======================================================================
  *  build_study_index.js — chapter + question counts for the Study Plan
  *
- *  Opens the real site in headless Edge/Chrome, visits every subject,
- *  takes its chapter list from the sidebar and counts each chapter's
+ *  Opens every subject like a student would (in the app sandbox, no browser needed; --browser uses
+ *  headless Edge/Chrome instead), takes its chapter list from the sidebar and counts each chapter's
  *  lesson parts, SLOs, MCQs, short / long questions, true-false, blanks,
  *  matching, numericals and other exercise questions
  *  (tools/study_plan/extract_in_page.js).
  *
  *  Output: js/study_plan_index.js  (window.SB_STUDY_INDEX)
- *  Run after book data changes:  node tools/study_plan/build_study_index.js
+ *  Run after book data changes:  node --max-old-space-size=8192 tools/study_plan/build_study_index.js [--browser]
  * ====================================================================== */
 'use strict';
 const fs = require('fs');
@@ -24,32 +24,38 @@ const BROWSERS = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
   '/usr/bin/google-chrome', '/usr/bin/chromium', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 ];
-const browser = process.env.SB_BROWSER || BROWSERS.find(p => fs.existsSync(p));
-if (!browser) { console.error('No Edge/Chrome found; set SB_BROWSER'); process.exit(1); }
+let data;
+if (!process.argv.includes('--browser')) {
+  data = require('./node_backend').extract({page: process.env.SB_PAGE || 'lazy.html'});
+} else {
+  const browser = process.env.SB_BROWSER || BROWSERS.find(p => fs.existsSync(p));
+  if (!browser) { console.error('No Edge/Chrome found; set SB_BROWSER'); process.exit(1); }
 
-// candidate global names (top-level declarations and window.X = …) from every data file
-const names = new Set();
-for (const f of fs.readdirSync(JS).filter(f => f.endsWith('.js'))) {
-  const src = fs.readFileSync(path.join(JS, f), 'utf8');
-  for (const m of src.matchAll(/^(?:const|let|var)\s+([A-Z][A-Za-z0-9_$]*)/gm)) names.add(m[1]);
-  for (const m of src.matchAll(/window\.([A-Z][A-Z0-9_]+)\s*=/g)) names.add(m[1]);
+  // candidate global names (top-level declarations and window.X = …) from every data file
+  const names = new Set();
+  for (const f of fs.readdirSync(JS).filter(f => f.endsWith('.js'))) {
+    const src = fs.readFileSync(path.join(JS, f), 'utf8');
+    for (const m of src.matchAll(/^(?:const|let|var)\s+([A-Z][A-Za-z0-9_$]*)/gm)) names.add(m[1]);
+    for (const m of src.matchAll(/window\.([A-Z][A-Z0-9_]+)\s*=/g)) names.add(m[1]);
+  }
+  names.add('DATA');
+
+  const page = path.join(ROOT, '_study_index_tmp.html');
+  let html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  html = html.replace('</body>', '<script>window.__SP_NAMES=' + JSON.stringify([...names]) + ';</script><script>' +
+    fs.readFileSync(path.join(__dirname, 'extract_in_page.js'), 'utf8') + '</script></body>');
+  fs.writeFileSync(page, html);
+  let dom;
+  try {
+    dom = execFileSync(browser, ['--headless', '--disable-gpu', '--allow-file-access-from-files', '--virtual-time-budget=600000',
+      '--dump-dom', 'file:///' + page.replace(/\\/g, '/').replace(/ /g, '%20')], {maxBuffer: 1 << 30, timeout: 1200000}).toString('utf8');
+  } finally { fs.unlinkSync(page); }
+  const m = [...dom.matchAll(/<pre id="sp-out">([\s\S]*?)<\/pre>/g)].pop();
+  if (!m) { console.error('extraction produced no output'); process.exit(1); }
+  const unescape = s => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+  data = JSON.parse(unescape(m[1]));
+
 }
-names.add('DATA');
-
-const page = path.join(ROOT, '_study_index_tmp.html');
-let html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-html = html.replace('</body>', '<script>window.__SP_NAMES=' + JSON.stringify([...names]) + ';</script><script>' +
-  fs.readFileSync(path.join(__dirname, 'extract_in_page.js'), 'utf8') + '</script></body>');
-fs.writeFileSync(page, html);
-let dom;
-try {
-  dom = execFileSync(browser, ['--headless', '--disable-gpu', '--allow-file-access-from-files', '--virtual-time-budget=600000',
-    '--dump-dom', 'file:///' + page.replace(/\\/g, '/').replace(/ /g, '%20')], {maxBuffer: 1 << 30, timeout: 1200000}).toString('utf8');
-} finally { fs.unlinkSync(page); }
-const m = [...dom.matchAll(/<pre id="sp-out">([\s\S]*?)<\/pre>/g)].pop();
-if (!m) { console.error('extraction produced no output'); process.exit(1); }
-const unescape = s => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
-const data = JSON.parse(unescape(m[1]));
 
 let report = [];
 for (const c of data.classes) for (const s of c.subjects) {

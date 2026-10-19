@@ -50,13 +50,11 @@ Chapter lookup must come from the arguments (`classId`, `subjKey`), never from `
 | File | Regenerate with |
 |---|---|
 | Rebuilt book data, `js/<subject>_<class>_data.js` | the class pipeline in `docs/source-verification/class-N/tools/` (e.g. `build_book2.py`); edit the page transcriptions, not the JS |
-| `js/test_prep_bank.js` | `node --max-old-space-size=8192 tools/test_prep/build_mcq_bank.js` |
-| `js/study_plan_index.js` | `node tools/study_plan/build_study_index.js` |
-| `js/word_stats_words.js`, `js/word_stats_summary.js` | `node tools/word_stats/build_word_stats.js` |
+| `js/test_prep_bank.js`, `js/study_plan_index.js`, `js/word_stats_words.js`, `js/word_stats_summary.js`, `lazy.html`, `content/lazy_manifest.json` | **`node --max-old-space-size=8192 tools/build/all.js`** (one command; `--list` says what each step reads, `--only word-stats,lazy` runs a subset). The individual generators are `tools/test_prep/build_mcq_bank.js`, `tools/study_plan/build_study_index.js` (no browser needed any more), `tools/word_stats/build_word_stats.js`, `tools/build/make_lazy.js`. |
 | `tests/contract/cls_books.json` (unit counts) | `node tools/validate.js --update-books` — only after an intended rebuild; commit the diff |
 | `tests/trace/**` | `node --max-old-space-size=8192 tools/trace_globals.js` |
 
-Rerun the generators after data changes. Data changes are reviewed as diffs; do not invent textbook text, translations presented as book text, or board questions. Qur'anic text is never translated or altered.
+Rerun `tools/build/all.js` after data changes (CI runs it with `--check` and fails when a committed output is stale; the generation date is ignored). Run it from a clean checkout before a release: the outputs describe the committed data, not whatever else is lying in the working tree. Data changes are reviewed as diffs; do not invent textbook text, translations presented as book text, or board questions. Qur'anic text is never translated or altered.
 
 ## 4. Regression rule
 
@@ -69,7 +67,7 @@ Rerun the generators after data changes. Data changes are reviewed as diffs; do 
 
 ## 4a. Lazy book data
 
-`lazy.html` is generated from `index.html` (`node tools/build/make_lazy.js`; details and numbers in `docs/PHASE3_LAZY_LOADING.md`). Adding or renaming a script in `index.html`, or changing which globals a data file defines, makes it stale: regenerate and commit it (CI runs `make_lazy.js --check` and `tools/build/lazy_parity.js`, which renders every subject on both pages and requires identical HTML). A script that only patches lazy data at load goes into `tools/build/lazy_overlays.json` (it then runs right after its parent file loads, so do not read the book at script load: touching a lazy book from an eager script loads it at start-up; `node tools/build/measure_lazy.js --startup-only` must say `0 of N`); a data-like file that must be in the page at load goes into `lazy_eager.json`. Do not reassign (wrap) a function that a lazy file declares: the build keeps such a file eager and says why (`node tools/build/make_lazy.js --check --explain` lists every file that stays eager).
+`lazy.html` is generated from `index.html` (`node tools/build/make_lazy.js`, or `tools/build/all.js` which also runs it last; every script and stylesheet in it carries the content hash of the file as `?v=`, so changing ANY script makes `lazy.html` stale; details and numbers in `docs/PHASE3_LAZY_LOADING.md`). Adding or renaming a script in `index.html`, or changing which globals a data file defines, makes it stale: regenerate and commit it (CI runs `make_lazy.js --check` and `tools/build/lazy_parity.js`, which renders every subject on both pages and requires identical HTML). A script that only patches lazy data at load goes into `tools/build/lazy_overlays.json` (it then runs right after its parent file loads, so do not read the book at script load: touching a lazy book from an eager script loads it at start-up; `node tools/build/measure_lazy.js --startup-only` must say `0 of N`); a data-like file that must be in the page at load goes into `lazy_eager.json`. Do not reassign (wrap) a function that a lazy file declares: the build keeps such a file eager and says why (`node tools/build/make_lazy.js --check --explain` lists every file that stays eager).
 
 ## 4b. Database changes
 

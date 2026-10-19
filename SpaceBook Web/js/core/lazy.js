@@ -26,17 +26,20 @@
   const byFile = {};
   M.files.forEach(f => { byFile[f.src] = f; });
 
+  // the file is requested by content hash (file?v=<12 hex>): same bytes, same URL, cacheable for a year; changed bytes, new URL
+  const url = f => f.v ? f.src + '?v=' + f.v : f.src;
+
   function loadFile(src) {
     if (loaded.has(src)) return;
     loaded.add(src);                                  // before running: the file itself touches its own names
     const f = byFile[src];
     const t0 = Date.now();
-    let code = fetchSync(f.src);
+    let code = fetchSync(url(f));
     // top-level const/let/var become window properties (a script tag would make them global bindings)
     code = code.replace(/^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm, 'window.$1 =');
     (0, eval)(code + '\n//# sourceURL=' + f.src);
     // scripts that only patch this file's data run right after it, in their original order
-    (f.after || []).forEach(o => (0, eval)(fetchSync(o) + '\n//# sourceURL=' + o));
+    (f.after || []).forEach(o => (0, eval)(fetchSync(url(o)) + '\n//# sourceURL=' + o.src));
     log.push({ src: f.src, bytes: f.bytes, ms: Date.now() - t0, by: window.__sbCurrentSrc || null });
   }
 

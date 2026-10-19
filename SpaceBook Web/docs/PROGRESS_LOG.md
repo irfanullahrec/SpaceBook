@@ -296,3 +296,19 @@ Regressions: none known; `index.html` changed only by the Maths 12 study-bank sc
 Risks: scripts that read a lazy book at load load it at start-up (none today, measured); a future wrapper around a function of a lazy file makes the build keep that file eager.
 
 Next: Class 10 English chain (3.1 MB) as one parent with overlays; JSON Schema + validator for Book Content Contract v1 and per-book adapter reports; registry-driven `openSubject`; one command `tools/build/all.js` with stale checks; compression and cache headers.
+
+## 2026-10-20 — Phase 3: one build command, content-hash URLs, server template, study index without a browser
+Done:
+- `tools/build/all.js` (+ `--check`, `--list`, `--only`): word stats, MCQ bank, study index, lazy page, in that order; `--check` runs each generator, compares with the committed file ignoring the generation date, restores the committed file, exits 1 when stale. CI runs it (replaces the `make_lazy --check` step).
+- `tools/study_plan/node_backend.js`: the study index is built in the app sandbox (jsdom reads the rendered sidebar), 25 s, no Chrome; `--browser` keeps the old path. The committed index was stale (DATA-02) and is regenerated: Class 11 Maths 7 -> 12 chapters, Class 12 Physics/Chemistry/Statistics/English/Urdu exercise-bank counts, 5 phantom sidebar rows gone. `index.html` tag bumped to `study_plan_index.js?v=20261020_i2`.
+- `lazy.html` / `lazy.js`: content-hash `?v=` on every script, stylesheet and lazy book file (the page is stale the moment any of them changes). `deploy/spacebook.htaccess` + `docs/SERVER_CONFIG.md`: gzip/brotli, `no-cache` by default, one-year `immutable` for hashed URLs, `Options -Indexes`; a template the owner reviews and installs (not uploaded by CI: a wrong `.htaccess` is a site-wide 500).
+
+Verified by:
+- Clean sparse checkout of the committed source (`git worktree`): `all.js` regenerate then `all.js --check` -> word-stats, mcq-bank, study-index and lazy all fresh (word stats ran with a 2 GB heap, so CI's 6 GB is ample).
+- Working tree: lazy page equals the eager page on all 9,710 renders (after the hash-URL change), `measure_lazy.js --startup-only` 0 of 152 files at start, tests/sync/planner.js 15/0, validate 978/0, smoke 0 failed.
+
+Not verified: the `.htaccess` template on the host (cannot be tested here), compressed sizes, the CI step (never run on GitHub), the study index counts against a browser run beyond the differences listed above.
+
+Regressions: none known. Risk: every JS change now makes `lazy.html` stale, so a commit that touches any script must include the output of `tools/build/all.js` or CI fails; this is by design (derived files always current) but changes the contributors' routine (documented in CONTRIBUTING section 3).
+
+Next: Book Content Contract v1 (schema, validator, adapters with per-book count reports), registry-driven `openSubject`/chapter lookup, the Class 10 English chain.

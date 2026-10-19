@@ -46,9 +46,6 @@ jobs:
       - name: ARCH-02 matrix (a subject opens the same book whatever class was selected before)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/arch02_matrix.js
-      - name: lazy page is up to date (lazy.html, content/lazy_manifest.json)
-        working-directory: SpaceBook Web
-        run: node tools/build/make_lazy.js --check
       - name: lazy page renders exactly like the eager page (every subject, chapter and tab)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/build/lazy_parity.js
@@ -57,6 +54,9 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: npm ci --no-audit --no-fund
+      - name: derived files are up to date (word stats, MCQ bank, study index, lazy page: tools/build/all.js)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tools/build/all.js --check
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js

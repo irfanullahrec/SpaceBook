@@ -83,7 +83,7 @@ function load(opts = {}) {
   const sb = vm.createContext(g);
   vm.runInContext('globalThis.window = globalThis; globalThis.self = globalThis;', sb);
   if (opts.before) opts.before(sb);
-  if (opts.lazy !== false && items.some(i => i.inline)) sb.SB_LAZY_FETCH = url => fs.readFileSync(path.join(ROOT, url), 'utf8');   // lazy.js loads files synchronously
+  if (opts.lazy !== false && items.some(i => i.inline)) sb.SB_LAZY_FETCH = url => fs.readFileSync(path.join(ROOT, url.split('?')[0]), 'utf8');   // lazy.js loads files synchronously
   const t0 = Date.now(), loadFails = [];
   for (const it of items) {
     if (it.inline) { try { vm.runInContext(it.inline, sb, { filename: 'inline-manifest' }); } catch (e) { loadFails.push('inline manifest: ' + e.message); } continue; }

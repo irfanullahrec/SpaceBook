@@ -1,0 +1,35 @@
+# SpaceBook: recommended .htaccess for public_html/spacebook/ (Apache 2.4 or LiteSpeed). NOT active in this folder and NOT uploaded by
+# the deploy workflow: a wrong .htaccess takes the whole site down, so the owner reviews it and installs it by hand (docs/SERVER_CONFIG.md).
+# Everything below sits in <IfModule> blocks, so a module the host does not have is skipped instead of causing a 500.
+
+# 1. no directory listings (Phase 0 server step; harmless to repeat)
+Options -Indexes
+
+# 2. compression: text assets shrink about 5-8 times; the lazy book files are the big winners
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript text/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml application/manifest+json
+</IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml application/javascript text/javascript application/json image/svg+xml
+</IfModule>
+
+# 3. caching
+#    - pages and anything requested without a content hash: always ask the server (ETag / Last-Modified answer 304, which is tiny)
+#    - files requested as name?v=<12 hex> (lazy.html asks for every script, stylesheet and book file this way, tools/build/make_lazy.js):
+#      the hex is the hash of the file's content, so the same URL never changes and may be cached for a year
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|css|json|webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(woff2?|png|jpe?g|webp|svg|ico|gif)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{QUERY_STRING} (^|&)v=[0-9a-f]{12}(&|$)
+    RewriteRule \.(js|css|json)$ - [E=SB_HASHED:1]
+  </IfModule>
+  Header set Cache-Control "public, max-age=31536000, immutable" env=SB_HASHED
+</IfModule>
