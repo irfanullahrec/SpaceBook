@@ -63,6 +63,27 @@ for (const m of tags) {
   if (!stubs.length && !Object.keys(keys).length && !dataKeys.length) { skipped.push([src, 'defines no array/object global and fills no book container']); continue; }
   files.push({ src, bytes: Buffer.byteLength(code), sha256: crypto.createHash('sha256').update(code).digest('hex'), stubs, keys, fns, dataKeys });
 }
+// Two files that set the same key of DATA (data_eng.js, then english_10_data.js overwrites eng10Chapters) form one unit: the later one runs
+// right after the earlier one in the original order and the unit answers for the names of both, so the final value is the same as in the
+// normal page. (They cannot be separate lazy files: whichever loaded first would decide the value.)
+{
+  const order = new Map(tags.map((m, i) => [m[1], i])), byKey = {};
+  files.forEach(f => f.dataKeys.forEach(k => { (byKey[k] = byKey[k] || []).push(f); }));
+  for (const group of Object.values(byKey).filter(g => g.length > 1)) {
+    const [parent, ...rest] = [...new Set(group)].sort((a, b) => order.get(a.src) - order.get(b.src));
+    for (const f of rest) {
+      if (f.merged) continue;
+      f.merged = true;
+      parent.also = (parent.also || []).concat({ src: f.src, bytes: f.bytes, sha256: f.sha256 });
+      parent.bytes += f.bytes;
+      parent.stubs.push(...f.stubs); parent.fns.push(...f.fns);
+      f.dataKeys.forEach(k => { if (!parent.dataKeys.includes(k)) parent.dataKeys.push(k); });
+      Object.keys(f.keys).forEach(c => { parent.keys[c] = (parent.keys[c] || []).concat(f.keys[c]); });
+    }
+  }
+  files.forEach(f => { f.also = f.also || []; });
+  files.splice(0, files.length, ...files.filter(f => !f.merged));
+}
 // a name defined by two lazy files (other than the shared containers) would be ambiguous: keep both eager
 const seen = {}; const clash = new Set();
 files.forEach(f => f.stubs.map(s => s.name).concat(f.fns, f.dataKeys.map(k => 'DATA.' + k)).forEach(n => { (seen[n] = seen[n] || []).push(f.src); }));
@@ -78,7 +99,7 @@ const fnOwner = {}; lazy.forEach(f => {
 const fnNames = Object.keys(fnOwner), wrapped = new Map();
 if (fnNames.length) {
   const re = new RegExp('(?:^|[^\\w$.])(?:window\\.|globalThis\\.)?(' + fnNames.map(n => n.replace(/[$]/g, '\\$&')).join('|') + ')\\s*=(?!=)', 'gm');
-  const lazySrc = new Set(lazy.map(f => f.src));
+  const lazySrc = new Set(lazy.map(f => f.src).concat(...lazy.map(f => f.also.map(a => a.src))));
   for (const m of tags) {
     const src = m[1];
     if (lazySrc.has(src) || !/^js\//.test(src)) continue;
@@ -113,10 +134,10 @@ function write(file, text) {
 }
 write(path.join(ROOT, 'content', 'lazy_manifest.json'), JSON.stringify(manifest, null, 1) + '\n');
 
-const drop = new Set(lazy.map(f => f.src).concat([...attached]));
+const drop = new Set(lazy.map(f => f.src).concat([...attached], ...lazy.map(f => f.also.map(a => a.src))));
 let out = html.replace(/<script\b[^>]*\bsrc="([^"?]+)(\?[^"]*)?"[^>]*><\/script>[ \t]*\r?\n?/g, (all, src) => (drop.has(src) ? '' : all));
 const first = out.search(/<script\b[^>]*\bsrc=/);
-const inject = '  <script>window.SB_LAZY_MANIFEST = ' + JSON.stringify({ containers: manifest.containers, files: lazy.map(f => ({ src: f.src, bytes: f.bytes, v: f.sha256.slice(0, 12), stubs: f.stubs, fns: f.fns, keys: f.keys, dataKeys: f.dataKeys, after: f.after.map(a => ({ src: a.src, v: a.sha256.slice(0, 12) })) })) }) + ';</script>\n  <script src="js/core/lazy.js"></script>\n';
+const inject = '  <script>window.SB_LAZY_MANIFEST = ' + JSON.stringify({ containers: manifest.containers, files: lazy.map(f => ({ src: f.src, bytes: f.bytes, v: f.sha256.slice(0, 12), also: f.also.map(a => ({ src: a.src, v: a.sha256.slice(0, 12) })), stubs: f.stubs, fns: f.fns, keys: f.keys, dataKeys: f.dataKeys, after: f.after.map(a => ({ src: a.src, v: a.sha256.slice(0, 12) })) })) }) + ';</script>\n  <script src="js/core/lazy.js"></script>\n';
 out = out.slice(0, first) + inject + out.slice(first);
 // DATA is a const of data.js, so lazy.js cannot reach it before that script has run: the keys that lazy files add to it become accessors right after
 const dataTag = /(<script\b[^>]*\bsrc="js\/data\.js(?:\?[^"]*)?"[^>]*><\/script>[ \t]*\r?\n)/;

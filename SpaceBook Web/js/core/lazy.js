@@ -38,7 +38,9 @@
     // top-level const/let/var become window properties (a script tag would make them global bindings)
     code = code.replace(/^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm, 'window.$1 =');
     (0, eval)(code + '\n//# sourceURL=' + f.src);
-    // scripts that only patch this file's data run right after it, in their original order
+    // files that set the same DATA keys as this one (the later definition wins in the normal page), then the scripts that only patch its data,
+    // each in the original order
+    (f.also || []).forEach(o => (0, eval)(fetchSync(url(o)).replace(/^(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=/gm, 'window.$1 =') + '\n//# sourceURL=' + o.src));
     (f.after || []).forEach(o => (0, eval)(fetchSync(url(o)) + '\n//# sourceURL=' + o.src));
     log.push({ src: f.src, bytes: f.bytes, ms: Date.now() - t0, by: window.__sbCurrentSrc || null });
   }
