@@ -264,7 +264,7 @@ for (const [name, n] of C12) {
 
 // ------------------------------------- 2c. rebuilt books, Classes 1-10 (Contract C)
 // Every file that fills window.CLSn_BOOKS[subject] = {units, book, words} is loaded in its own sandbox.
-// Unit bookUnits are locked in tests/contract/cls_books.json: a change shows up here and is either an intended
+// Unit counts are locked in tests/contract/cls_books.json: a change shows up here and is either an intended
 // pipeline rebuild (run with --update-books and commit the file) or a regression.
 console.log('--- rebuilt books (CLSn_BOOKS) ---');
 const BOOK_LOCK = path.join(ROOT, 'tests', 'contract', 'cls_books.json');
@@ -305,7 +305,7 @@ const lock = fs.existsSync(BOOK_LOCK) ? JSON.parse(fs.readFileSync(BOOK_LOCK, 'u
 check('CLSn_BOOKS lock file exists', Object.keys(lock).length > 0, 'run node tools/validate.js --update-books');
 const changed = [...new Set([...Object.keys(lock), ...Object.keys(bookUnits)])]
   .filter(k => lock[k] !== bookUnits[k]).map(k => k + ' ' + lock[k] + ' -> ' + bookUnits[k]);
-check('CLSn_BOOKS unit bookUnits match tests/contract/cls_books.json (' + Object.keys(bookUnits).length + ' books)',
+check('CLSn_BOOKS unit counts match tests/contract/cls_books.json (' + Object.keys(bookUnits).length + ' books)',
   changed.length === 0, changed.join(', '));
 
 // --------------------------------------------------- 3. index.html wiring
