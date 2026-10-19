@@ -1,0 +1,14 @@
+{
+  "name": "spacebook-dev-tests",
+  "private": true,
+  "description": "Dev-only test tooling for SpaceBook. Nothing here is shipped: deploy.yml excludes package*.json, node_modules and tests/.",
+  "scripts": {
+    "validate": "node tools/validate.js",
+    "smoke": "node --max-old-space-size=8192 tools/smoke.js",
+    "baseline": "node --max-old-space-size=8192 tests/baseline/run.js",
+    "test": "npm run validate && npm run smoke"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

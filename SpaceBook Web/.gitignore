@@ -24,3 +24,8 @@ api/config.php
 !/banner_kpk_academic.png
 # schema-applied marker written by api/db.php on the server
 api/.schema-*
+
+# dev-only test tooling
+node_modules/
+tests/baseline/*/shots/
+tests/baseline/*/run.log
