@@ -8,7 +8,8 @@
  *    • the content is laid out right-to-left for Urdu, Pashto and Arabic;
  *    • text sizes are even: one size for book text, one for Qur'anic ayat (nested ayat no longer grow to 36px);
  *    • "Question in English / Pashto" pop-outs that only repeat the question are removed.
- *  English-medium subjects are left exactly as they are.
+ *    • two-language card titles ("Cell · خلیہ") keep only the subject's own language.
+ *  English-medium subjects otherwise stay exactly as they are.
  */
 (function () {
   'use strict';
@@ -18,6 +19,8 @@
   // [English (regex source, matched as a whole phrase), Urdu, Pashto, Arabic]
   const PHRASES = [
     ['Board SLO Based & MCQs, SQs, LQs', 'بورڈ ایس ایل او: کثیر الانتخابی، مختصر اور تفصیلی سوالات', 'بورډ SLO: څو ځوابه، لنډې او اوږدې پوښتنې', 'أسئلة المجلس: اختيار من متعدد، قصيرة وطويلة'],
+    ['Cover, credits and contents', 'سرورق، اعترافات اور فہرست', 'پوښ، منښتې او فهرست', 'الغلاف والشكر والفهرس'],
+    ['Front matter and contents', 'ابتدائی صفحات اور فہرست', 'لومړنۍ پاڼې او فهرست', 'الصفحات الأولى والفهرس'],
     ['Summary & Key Points', 'خلاصہ اور اہم نکات', 'لنډیز او مهم ټکي', 'الملخص والنقاط المهمة'],
     ['Important Concepts', 'اہم تصورات', 'مهم مفاهیم', 'المفاهيم المهمة'],
     ['Solved Textbook Exercises', 'درسی کتاب کی حل شدہ مشقیں', 'د درسي کتاب حل شوي تمرینونه', 'تمارين الكتاب المحلولة'],
@@ -237,6 +240,55 @@
     });
   }
 
+  // card titles printed in two languages ("Cell · خلیہ", "1.1 مسئلے کو سمجھنا · 1.1 Understanding a problem")
+  // keep only the subject's own language; the full title stays as the hover text
+  const TITLE = ':is(.math-acc-header, .sb-topic-head, .para-card-header) :is(h3, h4, h5, .sb-topic-title)';
+  const SEP = /\s+·\s+/;
+  // words only: maths (KaTeX) and the ﷺ sign do not decide a part's language
+  function words(nodes) {
+    return nodes.map(n => {
+      if (n.nodeType === 3) return n.nodeValue;
+      if (n.nodeType !== 1 || n.matches('.katex, .katex-display, svg')) return '';
+      const w = document.createTreeWalker(n, NodeFilter.SHOW_TEXT);
+      let s = '';
+      while (w.nextNode()) if (!w.currentNode.parentElement.closest('.katex, .katex-display, svg')) s += w.currentNode.nodeValue;
+      return s;
+    }).join('').replace(/ﷺ/g, '').trim();
+  }
+  const inRtlScript = s => (s.match(ARABIC_LETTER) || []).length > (s.match(LATIN_LETTER) || []).length;
+  function oneLanguage(root, lang) {
+    const rtl = lang !== 'en';
+    root.querySelectorAll(TITLE).forEach(el => {
+      if (!/\s·\s/.test(el.textContent)) return;
+      const full = el.textContent.replace(/\s+/g, ' ').trim();
+      // the separator becomes a text node of its own, so a title split by maths markup still divides cleanly
+      [...el.childNodes].forEach(n => {
+        let t = n;
+        while (t && t.nodeType === 3) {
+          const m = SEP.exec(t.nodeValue);
+          if (!m) break;
+          const sep = t.splitText(m.index);
+          t = sep.splitText(m[0].length);
+          sep.sbmSep = true;
+        }
+      });
+      const segs = [[]];
+      [...el.childNodes].forEach(n => { if (n.sbmSep) segs.push([]); else segs[segs.length - 1].push(n); });
+      if (segs.length < 2) return;
+      const texts = segs.map(words);
+      let keep = texts.map(t => !!t && inRtlScript(t) === rtl);
+      // "حمد · حمد": the same words twice
+      if (texts.every(t => t === texts[0])) keep = texts.map((t, i) => i === 0);
+      if (!keep.some(Boolean) || keep.every(Boolean)) return;
+      let i = 0;
+      [...el.childNodes].forEach(n => {
+        if (n.sbmSep) { i++; if (!(keep[i - 1] && keep[i])) n.remove(); return; }
+        if (!keep[i]) n.remove();
+      });
+      if (!el.title && !el.querySelector('.katex')) el.title = full;
+    });
+  }
+
   // ---------------------------------------------------------------- apply
   function apply() {
     const ws = workspace();
@@ -252,6 +304,7 @@
     }
     if (!lang) return;
     view.classList.add('sbm-' + lang);
+    oneLanguage(view, lang);
     if (lang === 'en') return;
     view.classList.add('sbm-rtl');
     if (content) { content.setAttribute('dir', 'rtl'); content.setAttribute('lang', lang); content.dataset.sbmDir = '1'; }
@@ -273,5 +326,5 @@
   .sbm-rtl .math-nav-tabs .math-tab-btn,.sbm-rtl .category-sub-tab-btn{font-family:"Noto Naskh Arabic","Segoe UI",sans-serif}`;
   document.head.appendChild(css);
 
-  window.SBMedium = {detect, mediumNow, relabelText, apply, cache};
+  window.SBMedium = {detect, mediumNow, relabelText, oneLanguage, apply, cache};
 })();

@@ -134,7 +134,8 @@
     }
     const page = sec.source || {};
     return {
-      id: sec.id, title: sec.title, heading: sec.title, headingUrdu: sec.headingUrdu, headingPashto: sec.headingPashto,
+      // an Urdu-medium book names its topics in Urdu (the English title stays in heading)
+      id: sec.id, title: urduSource && sec.headingUrdu ? sec.headingUrdu : sec.title, heading: sec.title, headingUrdu: sec.headingUrdu, headingPashto: sec.headingPashto,
       sourceLanguage: sec.sourceLanguage || 'en', sourceClass12Source: true, class11Source: true,
       sourceLayout: layout, sourceBlocks: blocks, paras,
       sourcePageLabel: page.printedPage ? `Page ${page.printedPage}` : `Scan ${page.pdfPage ?? ''}`.trim(),
