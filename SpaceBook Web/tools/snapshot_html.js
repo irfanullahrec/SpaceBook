@@ -44,22 +44,49 @@ const subjects = app.run('DATA.classes.flatMap(c => (DATA.subjects[c.id] || []).
 if (args.includes('--reverse')) subjects.reverse();                  // order-dependence check: subjects in the opposite order
 let nCh = 0, nTab = 0, nErr = 0;
 const t0 = Date.now();
+// Three kinds of view (tools/build/measure_lazy.js lists them): the generic reader (130 subjects), the Maths view
+// (selectMathChapter, 5 subjects) and pages without chapters (12 pre-school subjects, captured once as 'landing').
+// The content element is blanked before every tab renders, so a leftover from the previous subject can never be hashed.
+const VIEWS = {
+  generic: { area: 'subjectTopicArea', content: 'subjTabContent', chapter: 'select\\w*(?:Chapter|Unit|Lesson|Page)', tab: 'switchSubjectTab',
+    tabId: oc => (oc.match(/'[^']*',\s*'([^']+)'/) || [])[1], reset: 'state.activeSubjTab = null; ' },
+  math: { area: 'mathTopicArea', content: 'mathTabContent', chapter: 'selectMathChapter', tab: 'switchMathTab', tabId: oc => (oc.match(/\('([^']+)'/) || [])[1], reset: '' },
+};
+const unesc = oc => oc.replace(/&#39;|&quot;/g, "'");
+// The app remembers the last sub-selection (question category, lesson sub-tab, exercise number...) in `state` and the next subject
+// inherits it (finding ARCH-02, docs/PHASE3_LAZY_LOADING.md). Each render starts from the values `state` had at load, so a snapshot
+// depends only on subject + chapter + tab, never on what was opened before. tools/stateleak.js (kept in the notes) lists these keys.
+const STICKY = ['activeSubjLessonSubTab', 'activeSubjWordsSubTab', 'activeSubjExCat', 'activeMathSloCategory', 'activeMathEx', 'class12ExerciseCategory', 'class12StudyCategory'];
+const STICKY_INIT = JSON.parse(app.run(`JSON.stringify(${JSON.stringify(STICKY)}.map(k => [k, state[k]]))`));
+const RESET = STICKY_INIT.map(([k, v]) => v === undefined ? `delete state[${JSON.stringify(k)}];` : `state[${JSON.stringify(k)}] = ${JSON.stringify(v)};`).join(' ');
 for (const s of subjects) {
   const rec = { classId: s.classId, subjectId: s.id, name: s.name, errors: [], chapters: [] };
   const step = code => { try { return app.run(code, 120000); } catch (e) { rec.errors.push(e.message.slice(0, 200)); } };
-  step(`openSubject(${JSON.stringify(s.classId)}, ${JSON.stringify(s.id)})`);
-  const chs = step(String.raw`(() => { const seen = new Set(), out = [];
-    for (const m of $('dashboard-body').innerHTML.matchAll(/onclick="(select\w*(?:Chapter|Unit|Lesson|Page)\([^"]*)"/g)) if (!seen.has(m[1])) { seen.add(m[1]); out.push(m[1]); }
-    return out; })()`) || [];
+  step(RESET); step(`openSubject(${JSON.stringify(s.classId)}, ${JSON.stringify(s.id)})`);
+  const body = step(`document.getElementById('dashboard-body').innerHTML`) || '';
+  const V = body.includes('id="mathTopicArea"') ? VIEWS.math : VIEWS.generic;
+  const chs = [...new Set([...body.matchAll(new RegExp('onclick="(' + V.chapter + '\\([^"]*)"', 'g'))].map(m => m[1]))];
+  // three kinds of id legitimately vary: sb_mcq ids are a render counter plus random letters; the ids inside Maths diagrams (clipPath,
+  // marker, title/aria-labelledby: `m5-eg12-8hz3esv0clipA`) carry a random part per render, so they are renamed in order of first
+  // appearance (the id graph is still compared); the "auto" answer ids carry the class of whichever page first opened a book that two
+  // classes share (Class 10 Islamiat is the Class 9 book): both pages then use the same stored ids
+  const figIds = html => { const m = new Map(); for (const x of html.matchAll(/\bid="(m[a-z]*\d*-[^"]+)"/g)) if (!m.has(x[1])) m.set(x[1], 'fig' + m.size); return m.size ? html.replace(/m[a-z]*\d*-[A-Za-z0-9-]+/g, t => m.get(t) || t) : html; };
+  const norm = html => sha(figIds(html).replace(/sbq\d+_[a-z0-9]{4}/g, 'sbqN_ID').replace(/cls\d+-([a-z0-9]+)-auto-/g, 'clsN-$1-auto-').replace(/\s+/g, ' '));
+  if (!chs.length) {
+    rec.chapters.push({ idx: -1, tabLabels: [], tabs: [{ id: 'landing', len: body.length, hash: norm(body) }] });
+    nCh++; nTab++;
+  }
   chs.forEach((oc, i) => {
-    step(`state.activeSubjTab = null; ${oc.replace(/&#39;|&quot;/g, "'")}`);
-    const tabOcs = step(String.raw`[...new Set([...document.getElementById('subjectTopicArea').innerHTML.matchAll(/onclick="(switchSubjectTab\([^"]*)"/g)].map(m => m[1]))]`) || [];
-    const labels = step(String.raw`[...document.getElementById('subjectTopicArea').innerHTML.matchAll(/data-tab="([^"]+)"[^>]*>([\s\S]*?)<\/button>/g)].map(m => m[2].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim())`) || [];
+    step(RESET); step(`${V.reset}${unesc(oc)}`);
+    const area = step(`document.getElementById('${V.area}').innerHTML`) || '';
+    const tabOcs = [...new Set([...area.matchAll(new RegExp('onclick="(' + V.tab + '\\([^"]*)"', 'g'))].map(m => m[1]))];
+    const labels = [...area.matchAll(new RegExp('<button[^>]*onclick="' + V.tab + '\\([^"]*"[^>]*>([\\s\\S]*?)<\\/button>', 'g'))].map(m => m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim());
     const ch = { idx: i, tabLabels: labels, tabs: [] };
     for (const t of tabOcs) {
-      step(t.replace(/&#39;|&quot;/g, "'"));
-      const html = step(`document.getElementById('subjTabContent').innerHTML`) || '';
-      ch.tabs.push({ id: (t.match(/'[^']*',\s*'([^']+)'/) || [])[1] || t, len: html.length, hash: sha(html.replace(/sbq(\d+)_[a-z0-9]{4}/g, 'sbq$1_ID').replace(/\s+/g, ' ')) }); // sb_mcq ids are random per render
+      step(RESET); step(`document.getElementById('${V.content}').innerHTML = ''`);
+      step(unesc(t));
+      const html = step(`document.getElementById('${V.content}').innerHTML`) || '';
+      ch.tabs.push({ id: V.tabId(t) || t, len: html.length, hash: norm(html) });
       nTab++;
     }
     rec.chapters.push(ch); nCh++;
