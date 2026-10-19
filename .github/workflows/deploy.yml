@@ -97,6 +97,7 @@ jobs:
           npm ci --no-audit --no-fund
           node tests/sync/e2e.js
           node --max-old-space-size=4096 tests/sync/rewards.js
+          node --max-old-space-size=4096 tests/sync/planner.js
 
   deploy:
     needs: test

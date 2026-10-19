@@ -68,10 +68,58 @@
     if (body !== undefined) { o.method = 'POST'; o.headers['Content-Type'] = 'application/json'; o.body = JSON.stringify(body); }
     try { const r = await fetch(API + '?action=' + action, o); return await r.json(); } catch (e) { return {ok: false}; }
   }
+  // ---- v2: offline-safe sync (js/core/sync.js, behind the sb_sync_v2 flag) ----
+  // Every change is written to the outbox first (plan.save with the revision it was based on, plan.delete). The server
+  // numbers the revisions and merges concurrent edits from two devices (api/lib/plans.php); the page shows the local
+  // plans and folds in what a pull brings, never overwriting an edit that is still waiting to be sent and never
+  // bringing back a plan whose deletion is waiting to be sent.
+  const v2 = () => { try { return !!(window.SBSync && window.SBSync.isEnabled && window.SBSync.isEnabled()); } catch (e) { return false; } };
+  const stripRev = p => { const c = Object.assign({}, p); delete c.rev; return c; };
+  let hooked = false;
+  function hookV2() {
+    if (hooked || !window.SBSync) return;
+    hooked = true;
+    window.SBSync.on('pulled', () => { if (signedIn && v2()) mergeSnapshot(); });
+  }
+  async function mergeSnapshot() {
+    const snap = await window.SBSync.snapshot(), pend = await window.SBSync.pendingEvents();
+    const saving = new Set(pend.filter(e => e.type === 'plan.save' && e.payload && e.payload.plan).map(e => e.payload.plan.id));
+    const deleting = new Set(pend.filter(e => e.type === 'plan.delete' && e.payload).map(e => e.payload.id));
+    const byId = new Map(plans.map(p => [p.id, p]));
+    Object.keys(snap.plansDeleted || {}).forEach(id => byId.delete(id));                 // a deletion made anywhere wins
+    Object.values(snap.plans || {}).forEach(sp => {
+      if (deleting.has(sp.id)) return;                                                   // we deleted it; the event is on its way
+      const lp = byId.get(sp.id);
+      if (!lp) byId.set(sp.id, sp);
+      else if (saving.has(sp.id)) lp.rev = Math.max(lp.rev || 0, sp.rev || 0);           // keep our newer edit; later edits are based on this revision
+      else if ((sp.rev || 0) > (lp.rev || 0)) byId.set(sp.id, sp);
+    });
+    plans = [...byId.values()];
+    saveLocal();
+    if (onPage()) render();
+  }
+  async function syncV2(user) {
+    signedIn = true;
+    hookV2();
+    await window.SBSync.setUser(user);
+    const pend = await window.SBSync.pendingEvents();
+    const queued = new Set(pend.filter(e => e.type === 'plan.save' && e.payload && e.payload.plan).map(e => e.payload.plan.id));
+    // plans made on this device before they were ever synced go to the account
+    for (const p of plans) if (!p.rev && !queued.has(p.id)) await window.SBSync.emit('plan.save', {plan: stripRev(p), baseRev: 0});
+    try { await window.SBSync.sync(); } catch (e) { /* offline: the outbox keeps everything */ }
+    await mergeSnapshot();
+  }
   function persist(p) {
     p.updatedAt = Date.now();
     saveLocal();
+    if (v2()) { if (signedIn) window.SBSync.emit('plan.save', {plan: stripRev(p), baseRev: p.rev || 0}).catch(() => {}); return; }
     if (signedIn) api('save', {plan: p});
+  }
+  function removePlan(p) {
+    plans = plans.filter(x => x !== p);
+    saveLocal();
+    if (v2()) { if (signedIn) window.SBSync.emit('plan.delete', {id: p.id}).catch(() => {}); }
+    else if (signedIn) api('delete', {id: p.id});
   }
   async function syncWithAccount() {
     const r = await api('list');
@@ -86,7 +134,10 @@
     plans.filter(p => !serverIds.has(p.id)).forEach(p => api('save', {plan: p}));
     if (onPage()) render();
   }
-  document.addEventListener('spacebook:auth', e => { if (e.detail && e.detail.user) syncWithAccount(); else signedIn = false; });
+  document.addEventListener('spacebook:auth', e => {
+    if (e.detail && e.detail.user) { if (v2()) syncV2(e.detail.user); else syncWithAccount(); }
+    else signedIn = false;
+  });
 
   // ---------- planner ----------
   // work units in study order: subjects take turns chapter by chapter
@@ -588,7 +639,7 @@
         case 'new': view = {mode: 'new'}; render(); break;
         case 'open': openPlan(id); break;
         case 'print': printPlan(p); break;
-        case 'del': if (p && confirm('Delete the plan "' + p.name + '"? Its progress will be lost.')) { plans = plans.filter(x => x !== p); saveLocal(); if (signedIn) api('delete', {id}); render(); } break;
+        case 'del': if (p && confirm('Delete the plan "' + p.name + '"? Its progress will be lost.')) { removePlan(p); render(); } break;
         case 'notify':
           if (!('Notification' in window) || Notification.permission !== 'granted') askPermission();
           else { try { localStorage.setItem('sb_study_reminders', remindersOn() ? 'off' : 'on'); } catch (er) { /* fine */ } render(); }
@@ -966,5 +1017,5 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 
-  window.SBStudyPlan = {plans: () => plans, createPlan, replan, render, open: openPlan, go, print: printPlan, tick};
+  window.SBStudyPlan = {plans: () => plans, createPlan, replan, render, open: openPlan, go, print: printPlan, tick, persist, removePlan, add: p => { plans.push(p); persist(p); }};
 })();

@@ -112,7 +112,7 @@ $events = $in['events'];
 if (count($events) > SB_SYNC_MAX_EVENTS) sync_fail(413, 'Too many events in one batch (max ' . SB_SYNC_MAX_EVENTS . ')');
 
 // Returns null when applied, or a rejection code. Runs inside the batch transaction.
-function sync_apply(PDO $pdo, int $uid, string $type, array $p): ?string
+function sync_apply(PDO $pdo, int $uid, string $deviceId, string $type, array $p): ?string
 {
     switch ($type) {
     case 'step':
@@ -130,7 +130,7 @@ function sync_apply(PDO $pdo, int $uid, string $type, array $p): ?string
         return sb_reward_again($pdo, $uid, $key) === null ? 'not_completed' : null;
     case 'plan.save':
         if (!isset($p['plan']) || !is_array($p['plan'])) return 'bad_payload';
-        return sb_plan_save($pdo, $uid, $p['plan'], isset($p['baseRev']) && is_numeric($p['baseRev']) ? max(0, (int)$p['baseRev']) : 0);
+        return sb_plan_save($pdo, $uid, $p['plan'], isset($p['baseRev']) && is_numeric($p['baseRev']) ? max(0, (int)$p['baseRev']) : 0, $deviceId);
     case 'plan.delete':
         return sb_plan_delete($pdo, $uid, isset($p['id']) ? (string)$p['id'] : '');
     case 'tp.answer':
@@ -170,7 +170,7 @@ try {
         $ledger->execute([$uid, $id, $deviceId, substr($type, 0, 20), $clientTs]);
         if ($ledger->rowCount() === 0) { $accepted[] = $id; continue; }
         // 2) apply it; a permanent problem un-records the id again so nothing half-done stays behind
-        $code = sync_apply($pdo, $uid, $type, $payload);
+        $code = sync_apply($pdo, $uid, $deviceId, $type, $payload);
         if ($code !== null) {
             $pdo->prepare('DELETE FROM sync_events WHERE user_id = ? AND event_id = ?')->execute([$uid, $id]);
             $rejected[] = ['eventId' => $id, 'code' => $code];

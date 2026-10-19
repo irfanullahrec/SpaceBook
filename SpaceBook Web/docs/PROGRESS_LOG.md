@@ -193,3 +193,17 @@ Not verified: in a real browser; a reload with a cookie-less session (the page s
 
 Next: 6b `sb_study_plan.js` (plan.save/delete with baseRev, snapshot-based list), 6c `test_prep.js` (tp.* events, snapshot-based stats).
 
+## 2026-10-19 — Phase 2, step 6b: study planner on the sync core (SYNC-02)
+Done:
+- Migration 004 (`study_plans.last_device`) + `sb_plan_save(..., $deviceId)`: a save from the device that wrote the plan last is a fast-forward whatever its baseRev (so un-ticking a task sticks), a stale save from another device is merged (done = max, incoming fields win). v1 saves clear `last_device`.
+- `js/sb_study_plan.js`: with the flag on, `persist()` writes `plan.save {plan, baseRev}` and deleting writes `plan.delete` to the outbox first (`removePlan()`); a pull is folded into the local list by `mergeSnapshot()` without overwriting an edit that is waiting to be sent and without bringing back a plan whose deletion is waiting; plans made before the first sync are sent at sign-in; nothing is queued while signed out. Flag off: unchanged v1 code. Exports `persist`, `removePlan`, `add` for tests.
+- `tests/sync/harness.js` shared scaffolding; `tests/sync/planner.js`.
+
+Verified by:
+- `node tests/php/run.php` -> 155 passed, 0 failed (new: same device with a stale baseRev is a fast-forward and un-ticking sticks; another device with a stale baseRev is merged; migration cycle 0->4->0->4). Mutation (rule removed) caught by 2 tests.
+- `node tests/sync/planner.js` (real module + real API) -> 13 passed, 0 failed, twice: offline plan + tick queued then delivered and seen by a second device; un-tick before sync wins everywhere; two devices editing offline converge (B's name, A's ticked work kept); offline delete does not resurrect on a pull and reaches the other device; signed-out plans stay local and join the account at sign-in; reload with waiting events delivers them; flag off uses api/study_plans.php only. Mutation (pending-delete guard removed) caught.
+- Battery: validate 971/0, smoke 0 failed, sync unit 39/0, e2e 17/0, rewards 15/0, PHP 155/0; HTML snapshot: only the 20 known cls1-eng differences.
+
+Not verified: in a real browser; reminders (they read local plans and are unchanged); two tabs of one browser editing at once (they share one outbox and one device id, so the server treats them as one device: a stale save from the second tab fast-forwards instead of merging); the "ask before adding this device's plans to the account" prompt (step 7).
+
+Next: 6c `test_prep.js` (tp.answer/session/run events, snapshot-based statistics).

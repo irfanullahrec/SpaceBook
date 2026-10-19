@@ -55,9 +55,9 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 3 pending', $s['current'] === 0 && count($s['pending']) === 3 && $s['latest'] === 3, json_encode($s));
+check('empty database is at version 0 with 4 pending', $s['current'] === 0 && count($s['pending']) === 4 && $s['latest'] === 4, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies 001, 002 and 003', count($applied) === 3, json_encode($applied));
+check('up applies 001, 002, 003 and 004', count($applied) === 4, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
 foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
@@ -68,11 +68,12 @@ $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
 $undone = sb_migrate_down($pdo, 1);
-check('down 1 removes the 003 tables and the plan rev column only', $undone === ['003_sync_state.sql'] && !in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone));
+check('down 1 removes the 004 column only', $undone === ['004_plan_device.sql'] && !in_array('last_device', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone));
+check('down 1 more removes the 003 tables and the plan rev column', sb_migrate_down($pdo, 1) === ['003_sync_state.sql'] && !in_array('tp_answers', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('rev', $pdo->query('SHOW COLUMNS FROM study_plans')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 3', count(sb_migrate_up($pdo)) === 2 && sb_schema_version($pdo) === 3);
+check('up again restores version 4', count(sb_migrate_up($pdo)) === 3 && sb_schema_version($pdo) === 4);
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -173,7 +174,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 3 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 4 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -465,6 +466,15 @@ sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_aaa1', 'Renamed on B', [
 $pp = plan_of(pull($A)['json'], 'plan_aaa1');
 check('concurrent edit: the later arrival wins the fields, ticked work is never lost (t1 done = max(3,1))', $pp['name'] === 'Renamed on B' && task_done($pp, 't1') === 3 && $pp['rev'] === 4, json_encode($pp));
 check('a task the later device removed stays removed', task_done($pp, 't2') === null);
+// the same device edits again before it has seen its own save come back: a plain fast-forward, an un-tick sticks
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_seq01', 'Seq', [task('t1', 3, 0)]), 'baseRev' => 0])]);
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_seq01', 'Seq', [task('t1', 3, 3)]), 'baseRev' => 1])]);
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_seq01', 'Seq', [task('t1', 3, 1)]), 'baseRev' => 1])]);      // stale baseRev, same device
+$pp = plan_of(pull($A)['json'], 'plan_seq01');
+check('the same device with a stale baseRev is a fast-forward: un-ticking sticks (done 3 -> 1)', task_done($pp, 't1') === 1 && $pp['rev'] === 3, json_encode($pp));
+sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_seq01', 'Seq B', [task('t1', 3, 0)]), 'baseRev' => 1])]);   // another device, stale baseRev
+$pp = plan_of(pull($A)['json'], 'plan_seq01');
+check('another device with a stale baseRev is merged: its name wins, ticked work is kept (done = max(0,1) = 1)', $pp['name'] === 'Seq B' && task_done($pp, 't1') === 1, json_encode($pp));
 // delete + resurrect attempts
 $x = sync_post($B, [ev('plan.delete', ['id' => 'plan_aaa1'])]);
 $g = pull($A);

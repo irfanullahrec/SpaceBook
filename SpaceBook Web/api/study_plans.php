@@ -86,6 +86,7 @@ try {
                          plan_json  = IF(VALUES(updated_ms) >= updated_ms, VALUES(plan_json), plan_json),
                          deleted    = IF(VALUES(updated_ms) >= updated_ms, 0, deleted),
                          rev        = rev + 1,
+                         last_device = \'\',
                          updated_ms = GREATEST(updated_ms, VALUES(updated_ms))')
             ->execute([$uid, $id, $json, $ms]);
         sb_change_log($pdo, $uid, 'plan', $id);
