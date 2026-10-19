@@ -1,0 +1,2229 @@
+{
+ "schema": "spacebook.lazy/1",
+ "generated": "2026-10-19",
+ "containers": [
+  "CLS10_BOOKS",
+  "CLS1_BOOKS",
+  "CLS2_BOOKS",
+  "CLS3_BOOKS",
+  "CLS4_BOOKS",
+  "CLS5_BOOKS",
+  "CLS5_SOLUTIONS",
+  "CLS6_BOOKS",
+  "CLS6_SOLUTIONS",
+  "CLS7_BOOKS",
+  "CLS8_BOOKS",
+  "CLS9_BOOKS"
+ ],
+ "files": [
+  {
+   "src": "js/drawing_1_data.js",
+   "bytes": 32985,
+   "sha256": "99160bf4436667fa1fa32fbc22d9ecdb35b3184fc158deb0588144b608d31b06",
+   "stubs": [
+    {
+     "name": "DRAWING_1_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "DRAWING_1_TIPS",
+     "kind": "array"
+    },
+    {
+     "name": "DRAWING_1_EXAM",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/drawing_1_book.js",
+   "bytes": 180053,
+   "sha256": "d8c3b1f5ef2d184933707a282cd38bf29e356ef110c09bf2316395e3613c954a",
+   "stubs": [
+    {
+     "name": "DRAWING_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_1_book.js",
+   "bytes": 2683,
+   "sha256": "242844cb2ad5d3e7352875de452d61cfe9acd10bcc3f38b371a0848cab616b67",
+   "stubs": [
+    {
+     "name": "URDU_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/gk_1_book.js",
+   "bytes": 2816,
+   "sha256": "7c660710f08f39067d82ca9f696c3bc412fbd52f917f3ab6db5418170cdc16bf",
+   "stubs": [
+    {
+     "name": "GK_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "gk"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_2_data.js",
+   "bytes": 173777,
+   "sha256": "8abd20f394f087b47fc2a27abc3322dc8e20295452f17287d4a485a1d6797610",
+   "stubs": [
+    {
+     "name": "DRAWING_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_3_data.js",
+   "bytes": 125099,
+   "sha256": "917dd9f441b076519969f2de22ce3c7b0dad3eb7d8e9f37cd76cecb6007da4d5",
+   "stubs": [
+    {
+     "name": "DRAWING_3_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "DRAWING_3_ART",
+     "kind": "object"
+    },
+    {
+     "name": "DRAWING_3_EXAM",
+     "kind": "object"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/chemistry_10_book_data.js",
+   "bytes": 2272056,
+   "sha256": "eac1c082f03f8f9c4341ca6f1d57635d338df411ff2ae69ecf7710fd5fcd2017",
+   "stubs": [
+    {
+     "name": "CHEMISTRY_10_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "chem"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/physics_10_book_data.js",
+   "bytes": 1708968,
+   "sha256": "c1b78b3a11f21791d55914f453751e917913f064c210dd35e63604d66ae4969a",
+   "stubs": [
+    {
+     "name": "PHYSICS_10_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "phys"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_data.js",
+   "bytes": 2664436,
+   "sha256": "a26133e5bf532a2a05a8a93f76da408a84c792f38d4b8bb0cd3319e14443673a",
+   "stubs": [
+    {
+     "name": "URDU_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/urdu_10_data.js",
+   "bytes": 1393793,
+   "sha256": "2f2792933bba2465c96a776237ed315a6ff7da3fc650e8da3dcec311be88c20d",
+   "stubs": [
+    {
+     "name": "URDU_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_data.js",
+   "bytes": 1291397,
+   "sha256": "e4fbd39adcdcf302c33b92849ab0286570c3528c48ff91676bb2c532a5cc27cd",
+   "stubs": [
+    {
+     "name": "ENGLISH_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/english_1_data.js",
+   "bytes": 545131,
+   "sha256": "dcccf49217051883afdfbae3462bfba1eb9f47e6333d26aa1e228b066f71c7a4",
+   "stubs": [
+    {
+     "name": "ENGLISH_1_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/english_1_book.js",
+   "bytes": 1393554,
+   "sha256": "a5d98c3292a67c7386217723641ac3e9f644cea0969330c5c60e28ba1e9b478d",
+   "stubs": [
+    {
+     "name": "ENGLISH_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_1_pages.js",
+   "bytes": 12109,
+   "sha256": "8347134538188c405c31499252737eb3bdd63e1de2bf7ce33bef35f03daccf64",
+   "stubs": [
+    {
+     "name": "ENGLISH_1_PAGES",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/math_data.js",
+   "bytes": 683848,
+   "sha256": "6dbcbeb5053bc4477ff305cd9662e1ee267f6cd53f0baabf6df55c4643f81522",
+   "stubs": [
+    {
+     "name": "MATH_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/math_10_data.js",
+   "bytes": 511158,
+   "sha256": "7875f06b8dcc4b166911cadf33fa1d78ddb88b5c5dd416756a5dce3ad79e86bb",
+   "stubs": [
+    {
+     "name": "MATH_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/math_1_book.js",
+   "bytes": 2084309,
+   "sha256": "aad1bebad713678d134cb2a4452d6814b9101f7453ea937384612bc2d099f6fa",
+   "stubs": [
+    {
+     "name": "MATH_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "math"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_2_data.js",
+   "bytes": 2129634,
+   "sha256": "e805c507897a7f150af63c93471a2556b00a22b36e60ce9b2df487a7ea06d0e0",
+   "stubs": [
+    {
+     "name": "MATH_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "math"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_3_book_text.js",
+   "bytes": 113401,
+   "sha256": "c52ae08bee9a22535aabf1d5a1ab8464467db8b78b9e972c8b3931ebade05734",
+   "stubs": [
+    {
+     "name": "MATH_3_BOOK_TEXT",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/math_3_data.js",
+   "bytes": 1826853,
+   "sha256": "36317e5bf5de748d4e87953d686e7d0198fa91db6b69e94b280294d1c7530025",
+   "stubs": [
+    {
+     "name": "MATH_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "math"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pakstudy_data.js",
+   "bytes": 1260910,
+   "sha256": "6657f3b95c7d6e2c6ce2443f0d67636303c5eb11ca25d3b6f742e04ebbef23a7",
+   "stubs": [
+    {
+     "name": "PAKSTUDY_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/general_science_9_data.js",
+   "bytes": 904045,
+   "sha256": "1c8d8cdb69a6e244768833c34077eb3582c8efbbaac293d7f0f5a8e709221bea",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/hpe_9_data.js",
+   "bytes": 816474,
+   "sha256": "86e3fbc300e037366092d8dd2f10d597ce8c1288a532cbadf803b05b542d344e",
+   "stubs": [
+    {
+     "name": "HPE_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "hpe"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_9_book.js",
+   "bytes": 1241159,
+   "sha256": "af48de0f7c4ba392abd6203cbb4b7717a3b0a9b442c908195ac88ee60ec27b94",
+   "stubs": [
+    {
+     "name": "ENGLISH_9_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pakstudy_9_book.js",
+   "bytes": 1125677,
+   "sha256": "7cd6a3358a16f63fc73980d6bba0db6819e89282ef437eeebc9d389c79e563b1",
+   "stubs": [
+    {
+     "name": "PAKSTUDY_9_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "pakstudy"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/general_science_9_book.js",
+   "bytes": 1241551,
+   "sha256": "0049fe3479efc9d1ceea2a6c07e93fd966d086d576d961b45eaf5ec57ef73496",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_9_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/computer_9_data.js",
+   "bytes": 1355424,
+   "sha256": "179be5cb1949c8633505706fdd84526027b2b26331129e16acf4d3a4933b5e41",
+   "stubs": [
+    {
+     "name": "COMPUTER_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "comp"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_9_data.js",
+   "bytes": 1140031,
+   "sha256": "bcb38d5320f7e679d989fd05a1bbd194ae0feea8bc8b8802cd1100a5ae929d82",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_9_data.js",
+   "bytes": 713529,
+   "sha256": "9544806f1a33f64ad56a9b326f28c5a5ac0403ac63d4f8f26e570d3021cc1c2d",
+   "stubs": [
+    {
+     "name": "DRAWING_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_ikhtiari_9_data.js",
+   "bytes": 52765,
+   "sha256": "9f2ec76dde4b640bd2d2c01971d6e38ef2af18abf88a2e053641860b92bfb175",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_IKHTIARI_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/mutalia_quran_9_data.js",
+   "bytes": 2256434,
+   "sha256": "217ca56a3ac5c905edf59e9e532f33f632f7f08ad84f74a329df82affb3c5da2",
+   "stubs": [
+    {
+     "name": "MUTALIA_QURAN_9_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "quran"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pakstudy_10_data.js",
+   "bytes": 1190462,
+   "sha256": "76584b639a66d605ecbc12ce692fc0574c2a010e78314386448d471b2834d03f",
+   "stubs": [
+    {
+     "name": "PAKSTUDY_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "pakstudy"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/computer_10_data.js",
+   "bytes": 1680028,
+   "sha256": "5ef1a1ad925833a9a5bf81a22b21ae0b55725767509477bc2c428d9f789e1d6a",
+   "stubs": [
+    {
+     "name": "COMPUTER_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "comp"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/general_science_10_data.js",
+   "bytes": 1530339,
+   "sha256": "0b224bd4a00a671cd76c3d8fced53b5ff50647efbfdfd9b7e7f66a8597e5ab00",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/hpe_10_data.js",
+   "bytes": 1223139,
+   "sha256": "fccbd600c4d441697ffe3b835b45eccc9edaf33d1cfbb17863968d68a5341a79",
+   "stubs": [
+    {
+     "name": "HPE_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "hpe"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_10_data.js",
+   "bytes": 490366,
+   "sha256": "a121a4ef381ec6318c8c5a9e23c16591a87028ae5f51502fde6a5f92c7ef1988",
+   "stubs": [
+    {
+     "name": "DRAWING_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_ikhtiari_10_data.js",
+   "bytes": 2069805,
+   "sha256": "5a7c9c38bb2b3b682644d90a19f6f1c729c531b478bd510ecb8ed2309cb163b4",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_IKHTIARI_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "islopt"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/mutalia_quran_10_data.js",
+   "bytes": 2976363,
+   "sha256": "d93459c1678e831f6986863185d98a435f2398cafdb2c0fc865e8752ab60d1fe",
+   "stubs": [
+    {
+     "name": "MUTALIA_QURAN_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "quran"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/bio_data.js",
+   "bytes": 3817623,
+   "sha256": "37075d67b6bbc3af40b372332177bf1b2913611548757ae602217b8a2b73bd0a",
+   "stubs": [
+    {
+     "name": "BIO_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/islamyat_data.js",
+   "bytes": 751985,
+   "sha256": "54d175f46c86abb1f436316c43352db35410df070269e7db8e45db877d2d0674",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/islamyat_10_data.js",
+   "bytes": 673944,
+   "sha256": "776816941768920059171d315e90be0853d2648b5ef12a0dc39e3bf70aa75bc7",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_10_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/islamyat_1_data.js",
+   "bytes": 145567,
+   "sha256": "f1fe596cbccc6b2e3c5e7aa84f7838d6261a97846bf4c83627a007906e96679e",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_1_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/islamyat_1_book.js",
+   "bytes": 268061,
+   "sha256": "3c74feb1dc322f7b05d7ce722ed2e578e6e222f883762b24a8c3bc54183a92a7",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/nazira_1_data.js",
+   "bytes": 141735,
+   "sha256": "c07f69aada75d4547dc572bddd082a827e0cd98fcc4bbf347c0a71c7043166e4",
+   "stubs": [
+    {
+     "name": "NAZIRA_1_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "NAZIRA_1_PRINTED_PAGE_RANGES",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/nazira_1_book.js",
+   "bytes": 1123974,
+   "sha256": "c9c66942e0748536456777a1d97e45eea5fdca0547c87f15bcb247bdd7eef2ee",
+   "stubs": [
+    {
+     "name": "NAZIRA_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "nazira"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_1_data.js",
+   "bytes": 182967,
+   "sha256": "380a590959470e29c33cdb91b0dd376de9700c460e9625018e4a34aa44903187",
+   "stubs": [
+    {
+     "name": "PASHTO_1_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/pashto_1_book.js",
+   "bytes": 511069,
+   "sha256": "dadd38534a02d716700bcc4e39493fd49cab5d3d1e0fa81fc5fc060920a3fae4",
+   "stubs": [
+    {
+     "name": "PASHTO_1_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS1_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_2_data.js",
+   "bytes": 1191040,
+   "sha256": "fd349f907d661831bee3ea1a16662a6e0590c8e8138b8fbbf6600e297d3324f4",
+   "stubs": [
+    {
+     "name": "ENGLISH_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_2_data.js",
+   "bytes": 840548,
+   "sha256": "7919b4d9b03877544408773fe7818253a5a760fa4a045f0be4ae94ceca7dd42c",
+   "stubs": [
+    {
+     "name": "URDU_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamyat_2_data.js",
+   "bytes": 333498,
+   "sha256": "9ff007e12ee77aa404f5c9bd70e17177681a0a17e0c89f5c8ce7df875330bece",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/nazira_2_data.js",
+   "bytes": 1003417,
+   "sha256": "2f46c233c4eac97463722dd68d8a43bac18f7169b243c88ee6afb50d7f369a53",
+   "stubs": [
+    {
+     "name": "NAZIRA_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "nazira"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/gk_2_data.js",
+   "bytes": 468458,
+   "sha256": "571d4876f475b230b0de0f0497fec22c05a359b643a91e66b1ea7f4554f86c63",
+   "stubs": [
+    {
+     "name": "GK_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "gk"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_2_data.js",
+   "bytes": 704599,
+   "sha256": "5b9ac8c2dbbe85c91bd7c1b3b7189c1f74075b7c3fb858a9eab5df42a4e611ff",
+   "stubs": [
+    {
+     "name": "PASHTO_2_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS2_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamyat_3_data.js",
+   "bytes": 776721,
+   "sha256": "e7dd3dbfcececf1c36e82a535068fddf56d3abd356f0b2a1ac0b363e972ce6fe",
+   "stubs": [
+    {
+     "name": "ISLAMYAT_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/nazira_3_data.js",
+   "bytes": 1614664,
+   "sha256": "d8654a03f08147f1d564a387471f3f7e09491bcf234d230d677c3d9e006be930",
+   "stubs": [
+    {
+     "name": "NAZIRA_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "nazira"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_3_data.js",
+   "bytes": 816332,
+   "sha256": "472455ff56e69267b249f283886d247f16cfe24a71a70070c5c3b458b3013d90",
+   "stubs": [
+    {
+     "name": "ENGLISH_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/gk_3_data.js",
+   "bytes": 731709,
+   "sha256": "1f48486b0bb0d30815f04c9b1cac6de7f11ae34f4491a046b265f9f1bddeecf0",
+   "stubs": [
+    {
+     "name": "GK_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "gk"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_3_data.js",
+   "bytes": 905196,
+   "sha256": "1751f0417b8ce9961b73cca450aec31a773994ec77d89eca422593cc0c04c2a4",
+   "stubs": [
+    {
+     "name": "PASHTO_3_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_3_book.js",
+   "bytes": 2674,
+   "sha256": "6ef8fc49391f82928f003258bddf9023e2d6cb02ff9f04902fc484c4f4202611",
+   "stubs": [
+    {
+     "name": "URDU_3_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS3_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/phys_12_data.js",
+   "bytes": 17977561,
+   "sha256": "1af6949765109634c7cb88b0ca61eb3f3f09aa9dd15908643351985eb6c11c76",
+   "stubs": [
+    {
+     "name": "PHYS_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/phys12_unit11_study.js",
+     "bytes": 27497,
+     "sha256": "f45ee02c4b79d88474149617abd13956d85bc3c95978a59d28985df4c6c02316"
+    },
+    {
+     "src": "js/phys12_exercise_banks.js",
+     "bytes": 151450,
+     "sha256": "455741652fff78c097df0e7dce30bb712be57900a8ecebeb430a9a5413d66371"
+    }
+   ]
+  },
+  {
+   "src": "js/chem_12_data.js",
+   "bytes": 19968059,
+   "sha256": "d347a917054f203b700d1d63a8c9d502cbec2e7f57345a4e49c4d8f9f58d8ced",
+   "stubs": [
+    {
+     "name": "CHEM_12_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "chapter",
+     "kind": "object"
+    },
+    {
+     "name": "continuation",
+     "kind": "object"
+    },
+    {
+     "name": "source",
+     "kind": "object"
+    },
+    {
+     "name": "definition",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/chem12_unit13_study.js",
+     "bytes": 41086,
+     "sha256": "d44e44f362874b8a0f6ca24c64188b295e2bc9da8072ebcc6fcffed9bd8b52cb"
+    },
+    {
+     "src": "js/chem12_exercise_banks.js",
+     "bytes": 163167,
+     "sha256": "c3828493e21a0e2264a3da6d20cbd6ae380a86e65048b09cc03f1a0a3070d6d8"
+    }
+   ]
+  },
+  {
+   "src": "js/stat_12_data.js",
+   "bytes": 9020121,
+   "sha256": "fcd8e69d26a0ee43fa7efacd4c0292d566673cb65c92343b58cb197d9ee0db28",
+   "stubs": [
+    {
+     "name": "STAT_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/stat12_exercise_banks.js",
+     "bytes": 84651,
+     "sha256": "dcd72963456f4fd276d81bef86468ae126fb6eac03213e2301c2daa7483b9a11"
+    }
+   ]
+  },
+  {
+   "src": "js/english_12_data.js",
+   "bytes": 5821811,
+   "sha256": "df2f33c6c648b57b5dc07e64b9c8695213654ef21cdf9fde730bce16aba84867",
+   "stubs": [
+    {
+     "name": "ENGLISH_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/eng12_exercise_banks.js",
+     "bytes": 130769,
+     "sha256": "69d850783bcb36bd4c8d44897dc821aaca62a93e24e826377f7011fc7513bd5c"
+    }
+   ]
+  },
+  {
+   "src": "js/pakstudy_12_data.js",
+   "bytes": 7383913,
+   "sha256": "ee49b32b317c47a67ef191bf75fe963710ba27b239b5bf85aa129974a1b8a44b",
+   "stubs": [
+    {
+     "name": "PAKSTUDY_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/pakstudy12_exercise_banks.js",
+     "bytes": 141932,
+     "sha256": "e92f60bb381f2963b0b1cba8cc63ac1422598b876ae5abd29ea02646832c6e18"
+    }
+   ]
+  },
+  {
+   "src": "js/urdu_12_data.js",
+   "bytes": 7497642,
+   "sha256": "2348c9ee303cf021e595148e9342f85ebf17d26135e69e9ece2860ab5259921a",
+   "stubs": [
+    {
+     "name": "URDU_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/urdu12_exercise_banks.js",
+     "bytes": 228934,
+     "sha256": "ad809c27e5295d2c899db5236befd2c95ef06f2f76c083402dedba53dc1eeace"
+    }
+   ]
+  },
+  {
+   "src": "js/biology_12_data.js",
+   "bytes": 10613705,
+   "sha256": "358708c41683f7b959c40718c974837ae47d1dc6cfc08d4ba46488aad1f86d06",
+   "stubs": [
+    {
+     "name": "BIOLOGY_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/computer_12_data.js",
+   "bytes": 5687643,
+   "sha256": "588cff68336b13af46721e55454003f4e2a93500c85104a2cd649e154c15bcff",
+   "stubs": [
+    {
+     "name": "COMP_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/comp12_exercise_banks.js",
+     "bytes": 69264,
+     "sha256": "43315d0b550ee860674b85305f97f6b7885c0b019f67c6ac95e1eb573693bb8f"
+    }
+   ]
+  },
+  {
+   "src": "js/civics_12_data.js",
+   "bytes": 7232914,
+   "sha256": "f051a9693ca27a91a450b795d2420a465952d5dd2b662a85243c6f39c71cc2a8",
+   "stubs": [
+    {
+     "name": "CIVICS_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/civics12_exercise_banks.js",
+     "bytes": 129714,
+     "sha256": "91182eb9d98ed8e10fcd7e1448906b259148c2c89293a8fca8937871de42670d"
+    }
+   ]
+  },
+  {
+   "src": "js/economics_12_data.js",
+   "bytes": 17961321,
+   "sha256": "0371d5c2529ab1087dd61d3d6d02eb90873ea94ffc02693ac407500a96ae78d4",
+   "stubs": [
+    {
+     "name": "ECON_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/econ12_exercise_banks.js",
+     "bytes": 106603,
+     "sha256": "7e889f6d10eebf847eab2d973bc36b290f7258d99d4000e5fa121c2651ee7b72"
+    }
+   ]
+  },
+  {
+   "src": "js/hpe_12_data.js",
+   "bytes": 3847293,
+   "sha256": "9019c91812b8ff64759c9beadba2ef68653b6b0d7387aba92e52e5649a704ac1",
+   "stubs": [
+    {
+     "name": "HPE_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/hpe12_exercise_banks.js",
+     "bytes": 83690,
+     "sha256": "2dbc7fc850dcfa9cd3ca33658b3eb6a94a326e9c03da17ab4b87eb245d331676"
+    }
+   ]
+  },
+  {
+   "src": "js/islamiat_ikhtiari_12_data.js",
+   "bytes": 8839895,
+   "sha256": "dcb1f4146916ff328b34bd08a0651d91214dfb4058258584fdb17ff551d1cb87",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_OPT_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/islopt12_exercise_banks.js",
+     "bytes": 144367,
+     "sha256": "247dd25f04c93569ea5f6e79453bcb724a5319a68f0e9a758777c799c8fbea42"
+    }
+   ]
+  },
+  {
+   "src": "js/islamic_history_12_data.js",
+   "bytes": 5937017,
+   "sha256": "61e26bce1f23058531c5846b107822b5f07274334ee8476e7bd63b3a5399c607",
+   "stubs": [
+    {
+     "name": "ISLAMIC_HISTORY_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/islhist12_exercise_banks.js",
+     "bytes": 198442,
+     "sha256": "082e4e773cf1efb81cffb7689da79d435944a6222b91df08e57db1d928498b34"
+    }
+   ]
+  },
+  {
+   "src": "js/quran_12_data.js",
+   "bytes": 12838203,
+   "sha256": "683d6e1b48578a62a83e5c5171caff129ffc3c4b364bcceda823ef1b29e58453",
+   "stubs": [
+    {
+     "name": "QURAN_12_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {},
+   "after": [
+    {
+     "src": "js/quran12_exercise_banks.js",
+     "bytes": 262427,
+     "sha256": "dd83afcb663a16710d33ca72e09857a87ce0f1b3db3d581ca8f8d0ee841ab46e"
+    }
+   ]
+  },
+  {
+   "src": "js/math_4_data.js",
+   "bytes": 1596412,
+   "sha256": "b976f5cc2f2f5a7ba792421da47b1c78bf0eb7b335995eb097e2f871bd86eacb",
+   "stubs": [
+    {
+     "name": "MATH_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "math"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_4_data.js",
+   "bytes": 1699901,
+   "sha256": "c58e672e61fd19ab0db8d4f578a48432148aa271d2553d47336d86df0987abe0",
+   "stubs": [
+    {
+     "name": "ENGLISH_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_4_data.js",
+   "bytes": 1916147,
+   "sha256": "1be12d1dcb1292579d7d4c7ecf7b8d1d2ce5cd9b583dcdb6f54f67f617b514f0",
+   "stubs": [
+    {
+     "name": "URDU_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/general_science_4_data.js",
+   "bytes": 1280608,
+   "sha256": "c12d51ab205ef445a2ce3bf2ff0a4de36b3b6988881d294b7a21f62387c9c2b7",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/social_studies_4_data.js",
+   "bytes": 1529527,
+   "sha256": "d69f09081c294bc18f447359f24bcd58b1726dc2b6a2034cb5c6e33a027ea1b3",
+   "stubs": [
+    {
+     "name": "SOCIAL_STUDIES_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "sst"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/social_studies_um_4_data.js",
+   "bytes": 1718225,
+   "sha256": "115142b427289584b5889eec05186f9436b4ae9e27cb8e6929e5f453c3f71af2",
+   "stubs": [
+    {
+     "name": "SOCIAL_STUDIES_UM_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "sstum"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_4_data.js",
+   "bytes": 1258534,
+   "sha256": "29a3125eaa33871c62439574c8ac4c73e007084a51fc2bba9ea743d54823aaa3",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_4_data.js",
+   "bytes": 1117020,
+   "sha256": "6ccece1f604e67a9459c862115961023ce135eb32f9ff0315a6e93dcefd00876",
+   "stubs": [
+    {
+     "name": "PASHTO_4_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS4_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_5_data.js",
+   "bytes": 1749721,
+   "sha256": "8fa817917d48cddffd5affcc9d0fbd79c203e25a95cb3c5db8c04aa63b38d520",
+   "stubs": [
+    {
+     "name": "MATH_5_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "MATH_5_BOOK",
+     "kind": "object"
+    },
+    {
+     "name": "MATH_5_WORDS",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/general_science_5_data.js",
+   "bytes": 1672719,
+   "sha256": "f3436c4b13a5386519a8989ec6bfa3cc627e0bbe2fe5e2aa277ad07ffd621ba7",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_5_data.js",
+   "bytes": 1384710,
+   "sha256": "3b351f63b63bc49d2a0965b970a85294d2c4d7d448a3a98d3ac08677c35a5b3d",
+   "stubs": [
+    {
+     "name": "ENGLISH_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_5_data.js",
+   "bytes": 2163567,
+   "sha256": "b31d41c51bb31de6a42be144cb54c439c84f41a771936593b7183473c52a79d2",
+   "stubs": [
+    {
+     "name": "URDU_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_5_data.js",
+   "bytes": 1321188,
+   "sha256": "382ffcc461db9f369dfc9056ac951a1efa3b13c21917915f03b342b7a2d26f93",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/social_studies_5_data.js",
+   "bytes": 1322355,
+   "sha256": "5a0caa50f5382c2766ae62e826b62dcf28f8b7b5fd51e176f1f3deb55259e707",
+   "stubs": [
+    {
+     "name": "SOCIAL_STUDIES_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "sst"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/social_studies_um_5_data.js",
+   "bytes": 1510313,
+   "sha256": "47ed8c3bae55b7bae36d0a61d1ffa9f8785ae65aa689ad70ab7807b6bb2e6d2d",
+   "stubs": [
+    {
+     "name": "SOCIAL_STUDIES_UM_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "sstum"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_5_data.js",
+   "bytes": 1338419,
+   "sha256": "8de27891557fd5f9914ffc7d26e0adff5988acc15d4cfec999a6073b7647945f",
+   "stubs": [
+    {
+     "name": "PASHTO_5_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS5_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_6_data.js",
+   "bytes": 2960907,
+   "sha256": "73c88e0d08f0ab7fbe7357d2bcfc0dd19211e4dc722304b7cf196427da718a21",
+   "stubs": [
+    {
+     "name": "MATH_6_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "MATH_6_BOOK",
+     "kind": "object"
+    },
+    {
+     "name": "MATH_6_WORDS",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/math_7_data.js",
+   "bytes": 3554619,
+   "sha256": "2be36725d524f8df4d83150780cad1e1f632392b326c67c90bfa4e5ba9fb5338",
+   "stubs": [
+    {
+     "name": "MATH_7_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "MATH_7_BOOK",
+     "kind": "object"
+    },
+    {
+     "name": "MATH_7_WORDS",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/english_7_data.js",
+   "bytes": 1257078,
+   "sha256": "c40495bbda59f092a1f0a7855f351006e0cbda77496353d1d90627017326617b",
+   "stubs": [
+    {
+     "name": "ENGLISH_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/general_science_7_data.js",
+   "bytes": 1683312,
+   "sha256": "3c44fb0cfa1e295e7dd9b808278146b52d178bdf38db952f876c35ac37be7296",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/computer_7_data.js",
+   "bytes": 862576,
+   "sha256": "bdefc7358518e2936839bf3cf20d8458ed0885dfa6a1068e6463c94d479146b7",
+   "stubs": [
+    {
+     "name": "COMPUTER_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "comp"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/geography_7_data.js",
+   "bytes": 902928,
+   "sha256": "7959acb826c7c410a24d57bddf4c8bcbb81a0b2d9b46e57ad90c85010265b7e6",
+   "stubs": [
+    {
+     "name": "GEOGRAPHY_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "geo"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/history_7_data.js",
+   "bytes": 1266431,
+   "sha256": "6352c329eb36001b83cff1bc8a33948e45aaa7afcb53bf1292b213483ad4ad5e",
+   "stubs": [
+    {
+     "name": "HISTORY_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "hist"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_7_data.js",
+   "bytes": 2127308,
+   "sha256": "03115b572e1238c490cab7cd9d5691da90ffc28092463b5b4faf93023022217c",
+   "stubs": [
+    {
+     "name": "URDU_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_7_data.js",
+   "bytes": 2253817,
+   "sha256": "ccdbca68b823e5034d392ad41303cf28a66dc5ed07b8187b142d0a62e162f929",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/mutalia_quran_7_data.js",
+   "bytes": 2281947,
+   "sha256": "7e9b0ba97d2fd91a10d09a6f764e022bff2e99fa59b0b036c089cb249326b085",
+   "stubs": [
+    {
+     "name": "MUTALIA_QURAN_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "quran"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/arabic_7_data.js",
+   "bytes": 1489773,
+   "sha256": "5671f3afd8b441b55044689310f358d523773668e58d62f1628a0ec3b18cd03c",
+   "stubs": [
+    {
+     "name": "ARABIC_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "arabic"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_7_data.js",
+   "bytes": 590836,
+   "sha256": "a252bed6e8cd56aaa42e165462a9f79d97dac5b71666fdc1fb74527fd50271bf",
+   "stubs": [
+    {
+     "name": "DRAWING_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/hpe_7_data.js",
+   "bytes": 1413495,
+   "sha256": "611e770d7825576a7f62bd26714acc3442c7d2515323c6cd59ac8bbed5cfcfe5",
+   "stubs": [
+    {
+     "name": "HPE_7_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS7_BOOKS": [
+     "hpe"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/general_science_6_data.js",
+   "bytes": 1473894,
+   "sha256": "d6718f9c926ab80522b882cf6d749247b50d1df88a77cb821c6ff213933c0758",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_6_data.js",
+   "bytes": 1393077,
+   "sha256": "6cacd871529821d685f663880f35fbabb72f6bcb1714ddd5be0aedbcb44cea58",
+   "stubs": [
+    {
+     "name": "ENGLISH_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_6_data.js",
+   "bytes": 2232870,
+   "sha256": "86f22a7666eb238ce326845862e49513e17b591f32dfc2879762edbefef3a817",
+   "stubs": [
+    {
+     "name": "URDU_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_6_data.js",
+   "bytes": 2315587,
+   "sha256": "1e5e6870edaad8f682e589d6c226a43e09da4e5be1a792fb3db634e4bb260d00",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/computer_6_data.js",
+   "bytes": 743985,
+   "sha256": "9f5235d2c2c0d8dfa63b5e4538e49a25ff8004eb6157f03a28942d1fb4e1f33b",
+   "stubs": [
+    {
+     "name": "COMPUTER_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "comp"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/geography_6_data.js",
+   "bytes": 822354,
+   "sha256": "bab63d43bf403931c37b79f4f26c94cfab49d8e75432660673c5b8e0d2e39330",
+   "stubs": [
+    {
+     "name": "GEOGRAPHY_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "geo"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/history_6_data.js",
+   "bytes": 1010984,
+   "sha256": "599055058802a1340592cd3c73b5f952408c19617bc24bbe6190866644e3b966",
+   "stubs": [
+    {
+     "name": "HISTORY_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "hist"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/hpe_6_data.js",
+   "bytes": 808215,
+   "sha256": "1626f6e4eb60893b5581cf751ca0f811e8a50ca68ad853094d56d5bf41e10c71",
+   "stubs": [
+    {
+     "name": "HPE_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "hpe"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_6_data.js",
+   "bytes": 380065,
+   "sha256": "7517f26160586d05109688abbbd8de6d55e0cdd9c4e60111361fea3caed3e385",
+   "stubs": [
+    {
+     "name": "DRAWING_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/arabic_6_data.js",
+   "bytes": 1249300,
+   "sha256": "0ba1bf57234b4760c946e613ca9882354e431cb3862a6e643a8e553df698d34d",
+   "stubs": [
+    {
+     "name": "ARABIC_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "arabic"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/mutalia_quran_6_data.js",
+   "bytes": 1971921,
+   "sha256": "f8353f1dd29e0ecb8910d990e07750f73cabe7f0c2168a519ab5fa5dc49e4be5",
+   "stubs": [
+    {
+     "name": "MUTALIA_QURAN_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "quran"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_6_data.js",
+   "bytes": 1178732,
+   "sha256": "e9ed5e90fa4c5e0487a53bc626167bb2393075f31fa4c4df2f1705870463c6c8",
+   "stubs": [
+    {
+     "name": "PASHTO_6_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS6_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/english_8_data.js",
+   "bytes": 1039668,
+   "sha256": "5ad0b073e3c54d33c582b338ebd38fd7a3249ecf1864db9e52679fce89b5f151",
+   "stubs": [
+    {
+     "name": "ENGLISH_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "eng"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_8_data.js",
+   "bytes": 3750869,
+   "sha256": "92de15065f635d681c5980aaeccb5668793ac1e758a7169c19a752f75f836f0c",
+   "stubs": [
+    {
+     "name": "MATH_8_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "MATH_8_BOOK",
+     "kind": "object"
+    },
+    {
+     "name": "MATH_8_WORDS",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/general_science_8_data.js",
+   "bytes": 1978794,
+   "sha256": "97c34a65a7e16990a71dbac8355768303e5e219126d0adb363c1fc7f991b4429",
+   "stubs": [
+    {
+     "name": "GENERAL_SCIENCE_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "sci"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/computer_8_data.js",
+   "bytes": 721420,
+   "sha256": "e0516f95b1a65590a345a265872bc56dfccf3772b2db1dfc24817623ca2aeef0",
+   "stubs": [
+    {
+     "name": "COMPUTER_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "comp"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/geography_8_data.js",
+   "bytes": 801895,
+   "sha256": "3f6d6ccb67ba05a6f1e8c076241800394aa9db47629049b95b0a090dc4185e48",
+   "stubs": [
+    {
+     "name": "GEOGRAPHY_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "geo"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/history_8_data.js",
+   "bytes": 1165766,
+   "sha256": "f3f7ae4ae91d714eca0ca93e18f27f47527e57f2f4bf5119ffcf239a67d7b84e",
+   "stubs": [
+    {
+     "name": "HISTORY_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "hist"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/urdu_8_data.js",
+   "bytes": 2151298,
+   "sha256": "fcc759acbc76c7d965f8246e7fdfee1c57f42cda2906cccc8b2ad31dcc2608c5",
+   "stubs": [
+    {
+     "name": "URDU_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "urdu"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/islamiat_8_data.js",
+   "bytes": 1785227,
+   "sha256": "13635b6bcc34ee46cb063bf27db6b7c3e7b1b8570ef8915b68e8d29ca5c67a86",
+   "stubs": [
+    {
+     "name": "ISLAMIAT_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "isl"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/mutalia_quran_8_data.js",
+   "bytes": 2295826,
+   "sha256": "aac27117a3ab14267deb0a8de5ea9b6bd27cbc6fc3d925eb65497db33e567b9e",
+   "stubs": [
+    {
+     "name": "MUTALIA_QURAN_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "quran"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/pashto_8_data.js",
+   "bytes": 1689000,
+   "sha256": "1ef7262d7e1d239ca03b4acf5c2dee988dcaf6c6a6da30f21757ac6f663b3c19",
+   "stubs": [
+    {
+     "name": "PASHTO_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "pashto"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/arabic_8_data.js",
+   "bytes": 1441760,
+   "sha256": "cc8272eb5dd007ca727510aa36948a66ff4255bd547e6c3523e22a0cf90ce2c3",
+   "stubs": [
+    {
+     "name": "ARABIC_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "arabic"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/drawing_8_data.js",
+   "bytes": 44949,
+   "sha256": "78f350bc9db4cf215c8500d2cdfb455917117d7637797980313befeb48b4b6ba",
+   "stubs": [
+    {
+     "name": "DRAWING_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "drawing"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/hpe_8_data.js",
+   "bytes": 474866,
+   "sha256": "fb4a2ec042d5936333023c2c59ad6d758a3d93d6526370e88b3a0bf8f72c43ff",
+   "stubs": [
+    {
+     "name": "HPE_8_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS8_BOOKS": [
+     "hpe"
+    ]
+   },
+   "after": []
+  },
+  {
+   "src": "js/math_11_data.js",
+   "bytes": 5480397,
+   "sha256": "05090ab2db9b3eb3688173e8ba3b16479ae4475ae4571eb217f7b648a97630e7",
+   "stubs": [
+    {
+     "name": "MATH_11_DATA",
+     "kind": "array"
+    },
+    {
+     "name": "MATH_11_BOOK",
+     "kind": "object"
+    },
+    {
+     "name": "MATH_11_WORDS",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  },
+  {
+   "src": "js/study_plan_index.js",
+   "bytes": 222380,
+   "sha256": "28ccd06097992d52fc5efbe72531bf88911afceaa9c3fa52209c471d82f95c12",
+   "stubs": [
+    {
+     "name": "SB_STUDY_INDEX",
+     "kind": "object"
+    }
+   ],
+   "keys": {},
+   "after": []
+  }
+ ]
+}
