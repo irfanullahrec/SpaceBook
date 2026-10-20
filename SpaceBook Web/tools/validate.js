@@ -452,6 +452,16 @@ console.log('--- offline ---');
     check('no script sends text to a third-party translation service', bad.length === 0, bad.join(','));
     check('the generated lexicon is present', exists('js/lexicon_data.js') && /SB_LEXICON_V1/.test(read('js/lexicon_data.js').slice(0, 400)));
   });
+  safe('the deploy workflow is valid YAML where it matters', () => {
+    // GitHub refuses a workflow whose step name has a colon followed by a space ("mapping values are not allowed here"); two did, from Phase 3 until 2026-10-20
+    const f = path.join(ROOT, '..', '.github', 'workflows', 'deploy.yml');
+    if (!fs.existsSync(f)) { check('the deploy workflow is valid YAML where it matters (not in this checkout)', true); return; }
+    const lines = fs.readFileSync(f, 'utf8').split(/\r?\n/);
+    const bad = lines.map((l, i) => [i + 1, l]).filter(([, l]) => /^\s*-?\s*name:\s+[^'"|>\s].*:\s/.test(l));
+    check('no step name in the deploy workflow has a colon followed by a space', bad.length === 0, bad.map(([n, l]) => n + ': ' + l.trim().slice(0, 60)).join(' | '));
+    const tabs = lines.filter(l => /^\t/.test(l)).length;
+    check('the deploy workflow has no tab indentation', tabs === 0, tabs + ' lines');
+  });
   safe('read-aloud never asks a website for speech', () => {
     const offenders = ['app.js', 'universal_translate.js', 'word_stats.js', 'sb_four_lang.js', 'reader_tools.js', 'sb_trilingual.js', 'sb_global_ui.js'].filter(f => exists('js/' + f) && /translate_tts/.test(read('js/' + f)));
     check('read-aloud never asks a website for speech', offenders.length === 0, offenders.join(','));

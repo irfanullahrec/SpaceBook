@@ -500,3 +500,10 @@ Verified by: `tests/perf/lazycards.js` (the string transform: what is kept, nest
 Not verified: in a real browser (flag off means nothing changes until someone turns it on and looks); chapters other than those four (the guard is a text match, not a proof); the topic cards of the generic (Physics, Chemistry, Statistics) readers, which are collapsed by a script after they are drawn and so cannot be deferred this way.
 
 Next: the final regeneration of the derived files; the real fix is `sb_structure` planning from data (Phase 5 / 6).
+
+## 2026-10-20 — Fix: the deploy workflow was not valid YAML
+Found while checking the workflow with a YAML parser (the workflow has never run on GitHub): two step names, added in Phase 3 and Phase 7, contained a colon followed by a space (`lazy page: tools/build/all.js`, `lexicon: the generated file...`), which YAML reads as a nested mapping ("mapping values are not allowed here"). GitHub would have refused the whole file, so **no test and no deploy would have run**. Both names are reworded; the `test` job's timeout is raised from 30 to 75 minutes (the suites add up to about 35 minutes on a fast machine). `tools/validate.js` now fails on a step name with a colon followed by a space and on tab indentation (it flagged both old lines when run against the committed file).
+
+Verified by: PyYAML parses the whole file (3 jobs, 15 + 6 + 5 steps); validate 1007/0 with the fix and 1006/1 against the old file.
+
+Not verified: that GitHub accepts the file (a parser is not GitHub); every other thing about the workflow stays "never run".

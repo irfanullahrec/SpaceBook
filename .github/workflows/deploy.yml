@@ -31,7 +31,7 @@ jobs:
   # Gate: nothing is uploaded unless the data and the app still hold together. Both scripts exit non-zero on any failure.
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75      # the suites add up to about 35 minutes on a fast machine (lazy parity, the build check, axe-core, search)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -54,7 +54,7 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: npm ci --no-audit --no-fund
-      - name: derived files are up to date (word stats, MCQ bank, study index, lazy page: tools/build/all.js)
+      - name: derived files are up to date (word stats, MCQ bank, study index, lazy page, search index; tools/build/all.js)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tools/build/all.js --check
       - name: offline layer (service worker, offline module, read-aloud)
@@ -73,7 +73,7 @@ jobs:
         run: |
           node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
           node --max-old-space-size=6144 tests/hooks/hooks.js
-      - name: lexicon: the generated file answers like the old book scan and loads no book
+      - name: lexicon (the generated file answers like the old book scan and loads no book)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/lexicon/equivalence.js
       - name: accessibility (tab bars, keyboard, dialogs, text contrast, axe-core)
