@@ -43,6 +43,10 @@ function assetsIn(html, into) {
   }
 }
 
+// ---- the search index (js/core/search.js): each subject's words are a content file of its package, the shared index an asset
+const SEARCH_INDEX = 'content/search/index.json';
+const searchIndex = fs.existsSync(path.join(ROOT, SEARCH_INDEX)) ? JSON.parse(fs.readFileSync(path.join(ROOT, SEARCH_INDEX), 'utf8')) : { subjects: {} };
+
 const probe = load({ page: PAGE, quiet: true });
 const subjects = probe.run('DATA.classes.flatMap(c => (DATA.subjects[c.id] || []).map(s => ({ classId: c.id, id: s.id, name: s.name })))');
 const map = { schema: 'spacebook.offline/1', files: {}, assets: {}, subjects: {} };
@@ -69,6 +73,13 @@ for (const s of subjects) {
   const loaded = app.sb.SBLazy ? app.sb.SBLazy.stats().log.map(l => l.src) : [];
   const list = [...new Set([].concat(...loaded.map(src => group[src] || [src])))];
   const assets = [...imgs].sort();
+  if (searchIndex.subjects[s.id]) {
+    const src = 'content/search/' + s.id + '.json', text = lf(src);
+    addFile(src, sha256(text), Buffer.byteLength(text));
+    list.push(src);
+    assetSizes[SEARCH_INDEX] = fs.statSync(path.join(ROOT, SEARCH_INDEX)).size;
+    assets.push(SEARCH_INDEX);
+  }
   list.forEach(src => { map.files[src] = files[src]; });
   assets.forEach(a => { map.assets[a] = { bytes: assetSizes[a] }; });
   map.subjects[s.id] = { classId: s.classId, name: s.name, files: list, assets, bytes: list.reduce((n, src) => n + files[src].bytes, 0) + assets.reduce((n, a) => n + assetSizes[a], 0) };

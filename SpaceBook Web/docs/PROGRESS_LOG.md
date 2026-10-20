@@ -416,3 +416,17 @@ Not verified: any screen reader; a real browser (visible focus ring, target size
 Risks: the darker greens and blues are visibly different in a few places (e.g. correct-answer pills #16a34a -> #12883e); elements that were mouse-only now take the focus: a page that styles `:focus` globally may look different.
 
 Next: regenerate derived files and the snapshot baseline from a clean checkout; then offline full-text search or the Phase 5 second half.
+
+## 2026-10-20 — Phase 12 (continued): search inside the books, offline (`docs/SEARCH.md`)
+Done:
+- `js/core/search.js`: the header search box now also lists chapters whose text contains every word typed (last word may be unfinished) under "IN THE BOOKS"; scope = the open book + books downloaded for offline; "Search all classes" reads every index four at a time and keeps nothing; one normaliser for index and query (Latin case / accents / plurals; Urdu, Pashto, Arabic letter variants, vowel marks, tatweel, digits, zero-width characters); nothing leaves the page (only `content/search/*` of this site is fetched).
+- `tools/build/make_search.js`: renders every tab of every chapter of every subject (the walk of make_offline) and indexes what a student can read, plus the translation lines kept in `data-en/ur/ps/ar`. Full build: 135 subjects, 27.7 MB of shards (8.4 MB gzip), `index.json` 230 KB (56 KB gzip), 209 s; 12 pre-primary subjects have no chapter list and are not searchable. Part of `tools/build/all.js` (before the offline map); `--check` is fast (data hashes, a fingerprint of what the normaliser does for every character, three subjects re-rendered byte for byte).
+- Offline packages: each subject's shard is a content file (hash URL, sha256 verified by the downloader) and the shared index an asset, so a downloaded book is searchable with no network.
+
+Verified by: `tests/search/search.js` 38/0 (words: Latin, kaf / yeh / heh / hamza / Pashto / digits / ZWNJ / presentation forms, plurals; ranking: AND, prefix, title weight, 24-best cap, determinism; the builder run on two real subjects; the box in the real page with a fake fetch: note when nothing is open, a word of the open book finds the right chapter first, unfinished last word, click opens the chapter through its own button, only `content/search/` requested, shard fetched by hash, an Urdu word typed with Arabic letters and a vowel mark found by "Search all classes", shards not all kept); mutations (no kaf folding, no gaf folding, OR instead of AND, no plural folding) each make tests fail; sanity queries on the full build (determinant, mitochondria, velocity, capacitor, fraction, an Urdu poet's name with and without vowel mark) return the expected chapters; validate 1003/0, smoke 0 failed, hooks 17/0 (lock updated from the source page), wrappers audit ok.
+
+Not verified: in a real browser or on a phone (layout of the new rows, timing of the first search: the 230 KB index plus a 100-300 KB shard); with a screen reader; the committed offline map and lazy page include the new files only after the regeneration commit that follows; `make_search.js --check` has not run in CI.
+
+Risks: a row opens the chapter on its default tab (no tab or sentence is stored); the 8.4 MB "Search all classes" download is a one-off but not small on mobile data; ranking is simple (log of counts, titles x3); no morphology for Urdu / Pashto / Arabic beyond the last word's prefix.
+
+Next: regenerate derived files from a clean checkout (they now include `content/search/`), then Phase 5 second half or Phase 9 modules.

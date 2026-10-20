@@ -45,7 +45,7 @@ function fresh() {
 // ---------- 2. the whole page: who extends what
 const { load } = require('../../tools/lib/app_sandbox');
 const timers = [];
-const app = load({ page: 'lazy.html', quiet: true, before: sb => { sb.setTimeout = fn => { timers.push(fn); return timers.length; }; } });
+const app = load({ page: process.env.SB_PAGE || 'lazy.html', quiet: true, before: sb => { sb.setTimeout = fn => { timers.push(fn); return timers.length; }; } });
 const flush = () => timers.splice(0).forEach(fn => { try { fn(); } catch (e) { /* a timer of the page */ } });
 const list = app.run('JSON.stringify(SBHooks.list())');
 const current = JSON.parse(list);

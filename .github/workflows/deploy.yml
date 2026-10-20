@@ -83,6 +83,9 @@ jobs:
           node tests/a11y/contrast.js
           node --max-old-space-size=8192 tests/a11y/axe.js
           node tools/a11y_contrast.js --check
+      - name: search inside the books (words, index, the box in the header)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=8192 tests/search/search.js
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js
