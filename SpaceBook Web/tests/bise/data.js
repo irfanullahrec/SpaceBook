@@ -45,10 +45,11 @@ for (const s of subs) {
   }
   for (const c of chs) {
     check(s.id + ' ch ' + c.no + ' has a title', !!c.t);
-    (c.slos || []).forEach(x => { sloCount++; if (!x.t || x.t.length < 3 || x.t.length > 450 || !['U', 'K', 'A', 'S', 'STS'].includes(x.g)) check(s.id + ' ch ' + c.no + ' SLO text/group', false, JSON.stringify(x).slice(0, 80)); });
+    (c.slos || []).forEach(x => { sloCount++; if (!x.t || x.t.length < 3 || x.t.length > 450 || !['U', 'K', 'A', 'S', 'STS', 'T'].includes(x.g)) check(s.id + ' ch ' + c.no + ' SLO text/group', false, JSON.stringify(x).slice(0, 80)); });
   }
 }
-check('more than 1,500 learning outcomes are included', sloCount > 1500, String(sloCount));
+check('more than 4,000 learning outcomes / topics are included', sloCount > 4000, String(sloCount));
+check('every subject with SLOs says where they come from', subs.every(s => !subs || !(s.chapters || []).some(c => (c.slos || []).length) || ['curriculum', 'textbook', 'headings'].includes(s.sloSrc)));
 check('Physics 9 has the Board\'s nine chapters and 12 + 32 + 21 marks', D.subjects['cls9-phy'].chapters.length === 9 && D.subjects['cls9-phy'].pattern.total === 65);
 check('Class 9 Computer Science is flagged as a different book from the Board\'s', !!D.subjects['cls9-comp'].mismatch);
 check('General Mathematics is a Board subject the app does not have yet', D.subjects['cls9-gm'] && D.subjects['cls9-gm'].inApp === false);

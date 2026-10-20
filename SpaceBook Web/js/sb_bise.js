@@ -24,7 +24,7 @@
 
   const DATA_SRC = 'js/bise_swat_data.js?v=20261020_b1';
   const BANK_SRC = 'js/test_prep_bank.js?v=20261018_tp1';   // same file Tests Preps loads (js/test_prep.js BANK_SRC)
-  const GROUP = { U: 'Understanding', K: 'Knowledge', A: 'Application', S: 'Skills / practical', STS: 'Science, technology & society' };
+  const GROUP = { U: 'Understanding', K: 'Knowledge', A: 'Application', S: 'Skills / practical', STS: 'Science, technology & society', T: 'Topics (the book’s section headings)' };
   const KIND_LABEL = { model: 'Model paper', marking: 'Marking scheme / rubrics', tos: 'Table of specification', curriculum: 'National curriculum (SLOs)', summary: 'Summary sheet', other: 'Board file' };
   const KIND_ICON = { model: '📄', marking: '✅', tos: '📊', curriculum: '📘', summary: '🧾', other: '📎' };
   const KIND_ORDER = ['model', 'marking', 'tos', 'curriculum', 'summary', 'other'];
@@ -295,13 +295,20 @@
     const q = S.filter.trim().toLowerCase();
     const acc = chs.map(c => chapterAcc(s, c, q)).join('');
     return `<div class="bise-card">
-      <div class="bise-card-title">Student Learning Outcomes (SLOs) — tick what you can already do</div>
+      <div class="bise-card-title">${s.sloSrc === 'headings' ? 'Topic checklist — tick what you have studied' : 'Student Learning Outcomes (SLOs) — tick what you can already do'}</div>
+      ${sloSourceNote(s)}
       <div class="bise-progress"><i style="width:${pct}%"></i></div>
       <div class="bise-small"><b>${d.n}</b> of <b>${d.t}</b> SLOs ticked (${pct}%). Every question in the Board's paper is set from an SLO.</div>
       ${rank.length ? `<div class="bise-next"><b>Study next:</b> ${rank.map(x => `<button class="bise-link" data-bise="openacc" data-v="${x.c.no}">Ch ${x.c.no} ${esc(x.c.t)}${x.c.w != null ? ` (${x.c.w}%)` : ''}</button>`).join(' · ')}</div>` : ''}
       <div class="bise-tools"><input type="search" class="bise-search" placeholder="Search SLOs…" value="${esc(S.filter)}" data-bise="filter" aria-label="Search SLOs">
         <label class="bise-chk"><input type="checkbox" data-bise="onlyopen" ${S.onlyOpen ? 'checked' : ''}> only not done</label></div>
     </div>${acc || '<div class="bise-card bise-note">No SLO matches your search.</div>'}`;
+  }
+
+  function sloSourceNote(s) {
+    if (s.sloSrc === 'textbook') return `<div class="bise-small bise-src">📘 The Board has not published an SLO list for this subject on its site. These outcomes are the ones <b>printed in the textbook itself</b> at the start of each unit; chapters without printed outcomes show the book's section headings instead.</div>`;
+    if (s.sloSrc === 'headings') return `<div class="bise-small bise-src">📘 The Board has not published an SLO list for this subject, and the textbook prints none. This is a checklist of the <b>book's own section headings</b>, chapter by chapter: tick a heading when you can explain it.</div>`;
+    return '';
   }
 
   function chapterAcc(s, c, q) {
@@ -317,7 +324,7 @@
     const list = items.map(o => {
       const head = o.x.g !== lastG ? `<li class="bise-grp">${esc(GROUP[o.x.g] || o.x.g)}</li>` : '';
       lastG = o.x.g;
-      return `${head}<li><label class="bise-slo ${o.ok ? 'ok' : ''}"><input type="checkbox" data-bise="slo" data-id="${esc(sloId(s.id, c.no, o.i))}" ${o.ok ? 'checked' : ''}><span>${esc(o.x.t)}${o.x.l ? ` <em>${esc(o.x.l)}</em>` : ''}</span></label></li>`;
+      return `${head}<li><label class="bise-slo ${o.ok ? 'ok' : ''}"><input type="checkbox" data-bise="slo" data-id="${esc(sloId(s.id, c.no, o.i))}" ${o.ok ? 'checked' : ''}><span dir="auto">${esc(o.x.t)}${o.x.l ? ` <em>${esc(o.x.l)}</em>` : ''}${o.x.en ? `<small class="bise-en" dir="ltr">${esc(o.x.en)}</small>` : ''}</span></label></li>`;
     }).join('');
     return `<div class="bise-acc ${open ? 'open' : ''}" data-ch="${c.no}">
       <button class="bise-acc-h" data-bise="acc" data-v="${c.no}" aria-expanded="${open}">
@@ -576,7 +583,7 @@
         ${c.m != null ? `<span class="bise-strip-f"><b>${c.m}</b> MCQ · <b>${c.r || 0}</b> short · <b>${c.e || 0}</b> long</span>` : ''}
         ${slos.length ? `<button class="bise-strip-btn" data-bise="strip" aria-expanded="false">🎯 <span class="bise-strip-n">${done}</span>/${slos.length} SLOs ▾</button>` : ''}
         <button class="bise-strip-btn" data-bise="open" data-v="${esc(sid)}" data-tab="pattern" data-from="subject">Board centre ▸</button>
-        <div class="bise-strip-body" hidden>${slos.length ? '<ul class="bise-slos">' + slos.map((x, i) => `<li><label class="bise-slo ${db().slo[sloId(sid, c.no, i)] ? 'ok' : ''}"><input type="checkbox" data-bise="slo" data-id="${esc(sloId(sid, c.no, i))}" ${db().slo[sloId(sid, c.no, i)] ? 'checked' : ''}><span>${esc(x.t)}${x.l ? ` <em>${esc(x.l)}</em>` : ''}</span></label></li>`).join('') + '</ul>' : ''}</div>`;
+        <div class="bise-strip-body" hidden>${slos.length ? '<ul class="bise-slos">' + slos.map((x, i) => `<li><label class="bise-slo ${db().slo[sloId(sid, c.no, i)] ? 'ok' : ''}"><input type="checkbox" data-bise="slo" data-id="${esc(sloId(sid, c.no, i))}" ${db().slo[sloId(sid, c.no, i)] ? 'checked' : ''}><span dir="auto">${esc(x.t)}${x.l ? ` <em>${esc(x.l)}</em>` : ''}</span></label></li>`).join('') + '</ul>' : ''}</div>`;
       const bar = a.querySelector('.math-compact-header-bar');
       if (bar && bar.nextSibling) bar.parentNode.insertBefore(strip, bar.nextSibling); else a.insertBefore(strip, a.firstChild);
     }).catch(() => { /* optional */ });

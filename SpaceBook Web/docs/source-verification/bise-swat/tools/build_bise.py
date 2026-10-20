@@ -126,6 +126,7 @@ def main():
     appch = load('app_chapters.json')
     slofiles = {}
     files = parse_page(page)
+    book = load('slos_book.json') if os.path.exists(os.path.join(DATA, 'slos_book.json')) else {}   # extract_book_slos.js + build_book_slos.py
     status = {}
     if os.path.exists(os.path.join(DATA, 'link_status.json')):
         status = load('link_status.json')    # tools/check_links.py
@@ -178,6 +179,33 @@ def main():
                     c[k] = r[k]
             if not c.get('bt'):
                 c['bt'] = titles.get(str(r['ch']), '')
+        # learning outcomes / section headings of the app's own textbook, for subjects whose Board SLO list is not published
+        bsrc = None
+        if sid in book and sid not in SLO_SOURCE:
+            bk = book[sid]
+            def intno(k):
+                return 0 if k == 'FM' else (int(k) if str(k).isdigit() else None)
+            for part, flag in (('topics', 'h'), ('chapters', 'o')):
+                for k, c in bk.get(part, {}).items():
+                    n = intno(k)
+                    if n is None or not c['slos']:
+                        continue
+                    if n not in chs:
+                        if rows or n == 0 and False:
+                            continue      # the Board's table names the chapters: only those
+                        chs[n] = {'no': n, 'bt': c['title'] if n else 'Whole book: outcomes of the front matter', 'periods': None, 'topics': [], 'slos': []}
+                    tgt = chs[n]
+                    if flag == 'h' and any(x.get('g') != 'T' for x in tgt['slos']):
+                        continue
+                    if flag == 'o':
+                        tgt['slos'] = []   # printed outcomes replace a heading list
+                    tgt['slos'] = list(tgt['slos']) + [dict(x, g=x['g']) for x in c['slos']]
+                    tgt['ss'] = flag
+                    bsrc = 'textbook' if (flag == 'o' or bsrc == 'textbook') else 'headings'
+        if not chs and app and sid not in BOOK_MISMATCH:   # nothing published and nothing in the book to list: at least the chapters the app has
+            for n, t in app['ch']:
+                if isinstance(n, int) and n > 0:
+                    chs[n] = {'no': n, 'bt': t, 'periods': None, 'topics': [], 'slos': []}
         appnum = APP_NO.get(sid, {})
         applist = {str(n): t for n, t in (app['ch'] if app else [])}
         if app and not app['ch'] and app.get('n'):   # the Maths workspaces do not go through getSubjectChapterList: chapter n = unit n
@@ -190,6 +218,8 @@ def main():
                 an = None
             title = c['bt']
             c2 = {'no': no}
+            if no == 0:
+                c2['sk'] = 1            # whole-book outcomes (front matter), not a chapter
             if suf_board == 'eng':      # skill groups of the curriculum, not textbook lessons
                 c2['sk'] = 1
                 if no in ENGLISH_W and cls in ('cls9', 'cls10'):
@@ -203,10 +233,16 @@ def main():
             if c['topics']:
                 c2['topics'] = [tidy(t) for t in c['topics'] if tidy(t)][:12]
             if c['slos']:
-                c2['slos'] = c['slos']
+                c2['slos'] = [{k: v for k, v in x.items() if k in ('g', 't', 'l', 'en') and (v or k in ('g', 't'))} for x in c['slos']]
+            if c.get('ss'):
+                c2['ss'] = c['ss']
             out_ch.append(c2)
         if out_ch:
             d['chapters'] = out_ch
+        if bsrc:
+            d['sloSrc'] = bsrc
+        elif sid in SLO_SOURCE:
+            d['sloSrc'] = 'curriculum'
         if rows:
             sm = {'m': sum(x['m'] or 0 for x in rows), 'r': sum(x['r'] or 0 for x in rows), 'e': sum(x['e'] or 0 for x in rows)}
             d['tosTotals'] = sm

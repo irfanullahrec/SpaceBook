@@ -19,7 +19,11 @@ Rules kept: no language tabs; nothing that is not from a book is labelled a Boar
 
 - `tools/fetch_sources.py` downloads the ~100 PDFs and 12 images the Board links, `tools/check_links.py` asks its server whether each link works (note: the server answers 403 to a browser-like User-Agent; both tools use `curl/8.4.0`), `tools/extract_slos.py` reads the National Curriculum text into `data/slos_*.json`, `tools/dump_app_chapters.js` records the chapters the app shows, `tools/build_bise.py` joins everything into **`js/bise_swat_data.js`** (generated, ~400 KB, loaded on first use).
 - Hand-transcribed from the Board's page images, and checked: `data/tos_tables.json` (chapter weightage and MCQ / short / long item counts; every table adds up to the Board's own totals, e.g. Physics 9 = 12 MCQ, 11 short, 4 long; Chemistry 11 = 18 / 13 / 8) and `data/patterns.json` (sections, choice, marks, time, from the model papers). `tests/bise/data.js` re-checks all sums.
-- 2,434 learning-outcome entries (2,215 distinct: the English list for Grades IX-X is shown under both Class 9 and 10, and XI-XII under both 11 and 12): Physics 9-10 (391), Chemistry 9-10 (259), Biology 9-10 (545), Pakistan Studies 9-10 (77), Mathematics 9-12 (406), English skill groups (219 distinct), Computer Science 9-12 (318). The National Curriculum PDFs only cover those; the Board publishes no SLO list for Class 11-12 Physics, Chemistry, Biology, Urdu, Islamiat or Pakistan Studies, so those subjects show the chapter weightage only.
+- Learning outcomes (SLOs), by where they come from (`sloSrc` in the data; the Board centre says which on every subject):
+  - **`curriculum`** (the Board's National Curriculum PDFs): Physics, Chemistry, Biology and Pakistan Studies for Classes 9-10; Mathematics 9-12; English skill groups; Computer Science 9-12 (about 2,400 entries).
+  - **`textbook`** (the Board publishes none for these, so the outcomes **printed in the app's own KPTBB textbook** at the start of each unit are used; `tools/extract_book_slos.js` renders every chapter in the app and `tools/build_book_slos.py` keeps the outcome list): Physics, Chemistry and Biology 11-12 (Biology 12 prints none), Urdu 10 (per lesson, Urdu with English), Urdu 11-12 (whole-book outcomes plus a few lessons), Mutalia-e-Quran 9-10, Islamiat Elective 9-10.
+  - **`headings`** (the book prints no outcomes): a topic checklist of the book's own section headings: Biology 12, Pakistan Studies 12, Islamiat 9-11, Urdu where a lesson has none, and Biology 11 "Acellular life".
+  - Nothing in `textbook` or `headings` was written by me; each line is the book's own text, so it can carry the book's own typos. They are not the Board's SLO list and the page says so.
 - Class 9-10 Mathematics: the curriculum numbers units 1-30 across both years; `MATH9` / `MATH10` in `build_bise.py` map them to the 17 and 13 chapters of the textbooks (the Board's tables use the same chapters).
 
 ## 3. Findings the owner should know
@@ -33,7 +37,7 @@ Rules kept: no language tabs; nothing that is not from a book is labelled a Boar
 ## 4. Not done / not verified
 
 - **Not checked in a real phone or with a screen reader**; checked in the built-in browser pane (desktop width), in the Node sandbox and by `tests/bise/data.js`.
-- No SLO or unit tables for **Urdu, Islamiat, Mutalia-e-Quran** (Urdu-language scans: the text cannot be extracted; their paper patterns are read from page images). Class 11 Islamiat: files unavailable on the Board's site, so no pattern.
+- No Board **unit tables** (chapter weightage) for Urdu, Islamiat, Mutalia-e-Quran: their tables are by skill or by Board unit, not by textbook chapter, and are Urdu-language scans; their paper patterns are read from page images. Class 11 Islamiat: the Board's files are dead, so no pattern.
 - The SLO text is read from PDFs by script: lists such as Computer Science "following types of ..." are joined into one outcome, and some Maths formulas lose their symbols. The counts differ slightly from the Board's own "No. of SLOs" (e.g. Computer Science 9: 64 read, 76 printed).
 - Per-question answers and the Board's rubrics are **linked, not copied**; copying them needs the Board's permission.
 - Past papers: the "E-Marking" page's 12 images (English, Chemistry, Physics, Classes 9-12) are linked, not transcribed.
@@ -46,7 +50,9 @@ Rules kept: no language tabs; nothing that is not from a book is labelled a Boar
 cd "SpaceBook Web/docs/source-verification/bise-swat"
 python -X utf8 tools/fetch_sources.py                       # sources/ (git-ignored) + txt8/
 python -X utf8 tools/check_links.py                         # data/link_status.json
-python -X utf8 tools/extract_slos.py sources/txt8 data      # data/slos_*.json
+python -X utf8 tools/extract_slos.py sources/txt8 data      # data/slos_*.json (Board curriculum)
+node --max-old-space-size=6144 tools/extract_book_slos.js raw.json                  # renders the app's books (outcomes printed in the textbooks)
+python -X utf8 tools/build_book_slos.py raw.json data/slos_book.json               # data/slos_book.json
 node --max-old-space-size=8192 tools/dump_app_chapters.js data/app_chapters.json   # only when the app's chapters changed
 python -X utf8 tools/build_bise.py data/page_syllabus_2026-10-20.html              # js/bise_swat_data.js
 node tests/bise/data.js
