@@ -510,3 +510,12 @@ Not verified: that GitHub accepts the file (a parser is not GitHub); every other
 
 ## 2026-10-20 — Fix: the header template would have broken the YouTube lessons
 `deploy/spacebook.htaccess` set `Referrer-Policy: same-origin`. With it the browser sends no Referer to another website, and YouTube's embedded player refuses to start without one (error 153), so the video tab would have shown an error on every video once the owner installed the template. It now sets `strict-origin-when-cross-origin` (the browsers' default: another site sees only `https://<this site>`, never a page or a query). `docs/PHASE8_SECURITY.md` is updated. Not verified: against YouTube itself (nothing here can reach it); the admin pages keep `no-referrer` (they embed nothing).
+
+## 2026-10-20 — State at the end of this stretch of work
+Branch `phase/p2-server`, tip = the commit that contains this entry; the generated files were built from a clean checkout of `9b3c291e` (nothing that ships changed afterwards) and committed in `cc4c88d8`.
+
+Verified by (all on the committed tree, run in this session): in a **clean checkout** of `cc4c88d8`: `tools/build/all.js --check` fresh for all 7 steps (word-stats, mcq-bank, study-index, lexicon, lazy, search, offline) and `tests/hooks/hooks.js` 17/0; lazy-page parity identical to the eager page in both orders (9,710 renders); HTML baseline compared (124 intended colour changes, committed). On the working tree: `tools/validate.js` 1007/0, smoke 0 failed on `index.html` and `lazy.html`, ARCH-02 matrix 0 differences over 2,431 lookups, `tests/a11y` tabs 50/0 + contrast 14/0 + axe-core 15 views 0 hits, `tests/search` 41/0, `tests/offline` 33 + 41 + 23, `tests/content/integrity.js` 53/0, content lint no worse than its (lowered) baseline, SBHooks audit ok, lexicon 5/0 + privacy 8/0, `php tests/php/run.php` 246/0, PHP 7.4 lint 0 problems, `tests/sync` unit 51 + e2e 17 + rewards 16 + planner 15 + testprep 17 + account 17, `tests/perf/lazycards.js` equivalence on 4 chapters.
+
+Not verified: everything in `HANDOVER.md`, section "What nobody has checked" (no real browser, PHP 7.4 / MySQL 5.7, the GitHub workflow, screen readers, low-end phones).
+
+Caught late by checking what had never run: the deploy workflow was not valid YAML, and the header template would have stopped the YouTube lessons. Both fixed (entries above). The same question is worth asking of anything else that has "never run": the `.htaccess` template, the FTP step, `npm ci` on GitHub's machine, the Playwright baseline.
