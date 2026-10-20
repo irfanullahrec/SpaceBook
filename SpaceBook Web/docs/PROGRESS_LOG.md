@@ -487,3 +487,16 @@ Verified by: the commands in the document were run in this session and print the
 Not verified / not done: everything a browser adds, so the time-to-interactive and low-end-phone budgets are **unknown**, not met; no fix was applied to the outliers (a closed accordion card should be filled when it is opened; the reasons it was not done here are in the document, the main one being that nothing can be checked without a real browser).
 
 Next: the final regeneration and the handover summary.
+
+## 2026-10-20 — Phase 11 (continued): lazy Maths cards, built and off (`js/core/lazycards.js`)
+Done: with the owner flag `lazyCards` on (`window.SB_FLAGS.lazyCards` or `localStorage sb_flag_lazyCards = 'on'`; **default off**), while a tab is switched the body of every closed Maths accordion card of 4 KB or more is kept as a string and put back when the card is opened ("expand all" and the full-screen button included). The readers are not touched: the two tab containers get their own `innerHTML` setter that defers only while `switchMathTab` / `switchSubjectTab` runs. Anything assigned at another time (printing, comparing tabs) is kept whole.
+
+Finding on the way: `sb_structure.js` reads every lesson card while it plans a chapter and moves exercise / key-point / SLO blocks into their own tabs. My first version deferred those bodies too, and the page after opening every card was **not** the same as the eager one (exercise blocks reappeared in the lesson: 3 of 7 bodies in Class 5 Maths ch. 7 had 2-190x the elements). A body that holds such a block is now never deferred, and filled bodies get their keyboard roles (`SBA11y.enhance`).
+
+Measured (string level, lesson tab): Class 11 Maths 43-54 % of the HTML removed (10.8 MB -> 5.2 MB for the worst), Class 7 Maths ch. 1 49 %, Class 12 Maths 100 % (3.9 MB -> 10 KB), Class 8 Maths about 0 % (each topic card carries its exercise block). In the simulated DOM: Class 5 Maths ch. 7 3,173 -> 1,434 elements; Class 12 Maths ch. 1 24,445 -> 223 elements.
+
+Verified by: `tests/perf/lazycards.js` (the string transform: what is kept, nested divs, small pages and unbalanced bodies untouched, put-back gives the original; then each chapter drawn with the flag off and on, every card opened by clicking its header, the two pages compared after renaming ids with a random part): Class 5 Maths ch. 7, Class 8 Maths ch. 4, Class 11 Maths ch. 4 and Class 12 Maths ch. 1 are identical once every card is open; assigning HTML to the container outside a tab switch keeps every body. `SB_LC_FULL=1` adds the two big chapters (minutes each in jsdom). Hook lock updated (lazycards.js on `switchMathTab`, `switchSubjectTab`, `toggleMathAccordion`, `expandAllMathCards`).
+
+Not verified: in a real browser (flag off means nothing changes until someone turns it on and looks); chapters other than those four (the guard is a text match, not a proof); the topic cards of the generic (Physics, Chemistry, Statistics) readers, which are collapsed by a script after they are drawn and so cannot be deferred this way.
+
+Next: the final regeneration of the derived files; the real fix is `sb_structure` planning from data (Phase 5 / 6).

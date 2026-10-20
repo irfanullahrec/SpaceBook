@@ -12,6 +12,7 @@ This repository contains two core platforms:
 
 | Document | What it answers |
 |---|---|
+| [HANDOVER](./HANDOVER.md) | what was delivered, what is yours to decide, what nobody has checked (read this first) |
 | [ARCHITECTURE](./ARCHITECTURE.md) | how the app is built and loaded, the build, the tests, the deploy (supersedes 01) |
 | [DATA_CONTRACT](./DATA_CONTRACT.md) | the shapes of the book data, the generated files and the wire formats |
 | [RELEASE_AND_ROLLBACK](./RELEASE_AND_ROLLBACK.md) | before a push, what the push does, after the deploy, how to go back |
