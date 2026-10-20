@@ -458,3 +458,14 @@ Not verified: in a real browser; on PHP 7.4 / MySQL 5.7 (the CI job has not run 
 Risks: an administrator's account is as strong as its password; the page exposes full phone numbers to administrators (each opening is audited).
 
 Next: Test Prep review queue, Phase 5 second half.
+
+## 2026-10-20 — Phase 9 (continued): Test Prep review queue
+Done:
+- `tools/test_prep/build_mcq_bank.js` now also lists the questions it leaves out for want of an answer key (the bank only ever holds a question whose key it could resolve from its source) in `docs/test_prep_review/no_key.csv` (subject, class, source file, question, options), minus those that have a keyed twin in another file: 81 questions (Class 12 Physics 41, Class 10 English 18, Class 9 / 10 Physics 16, Class 10 Maths 3, 3 others). The report (`tools/test_prep/last_bank_report.txt`) names them by subject and lists subjects with >= 80 % of the keys on one option (one: Class 12 Maths, 30 MCQs, 87 % A). The CSV is an output of the `mcq-bank` step of `tools/build/all.js`, so `--check` notices when it is stale. The bank itself is unchanged (6,120 questions); Class 11 still has none because its books carry no keys.
+- `make_search.js --check` re-renders three middling subjects (it re-rendered the three smallest before, a weak check).
+
+Verified by: `tests/content/integrity.js` 53/0 (3 new: every bank question has its key inside distinct, non-empty options; the queue file has the expected columns; no queue question is in the bank).
+
+Not verified: that the 81 rows are all the unkeyed questions (a question that is not a structured MCQ object, for example inside a book-reader block without a solution, is not listed); nobody has reviewed the queue.
+
+Next: Phase 5 second half; regenerate derived files.

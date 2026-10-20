@@ -19,8 +19,8 @@ const node = (...a) => ({ cmd: process.execPath, args: ['--max-old-space-size=81
 const STEPS = [
   { id: 'word-stats', what: 'word counts per project, class and subject (My Stats / Project Stats)',
     outputs: ['js/word_stats_summary.js', 'js/word_stats_words.js'], touches: ['tools/word_stats/last_build_report.txt'], run: node('tools/word_stats/build_word_stats.js') },
-  { id: 'mcq-bank', what: 'one MCQ bank from all books (Tests Preps)',
-    outputs: ['js/test_prep_bank.js'], touches: ['tools/test_prep/last_bank_report.txt'], run: node('tools/test_prep/build_mcq_bank.js') },
+  { id: 'mcq-bank', what: 'one MCQ bank from all books (Tests Preps) and the list of questions that still need an answer key',
+    outputs: ['js/test_prep_bank.js', 'docs/test_prep_review/no_key.csv'], touches: ['tools/test_prep/last_bank_report.txt'], run: node('tools/test_prep/build_mcq_bank.js') },
   { id: 'study-index', what: 'chapter and question counts per subject (Study Plan)',
     outputs: ['js/study_plan_index.js'], touches: ['tools/study_plan/last_build_report.txt'], run: node('tools/study_plan/build_study_index.js') },
   { id: 'lexicon', what: 'offline word meanings of all books in one file (Lexicon v1: hover and selection lookups, no book is loaded)',

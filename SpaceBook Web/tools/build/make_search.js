@@ -93,7 +93,7 @@ if (CHECK) {
   let bad = 0;
   if (idx.source !== inputsHash()) { console.log('FAIL  the search index is older than the book data or the normaliser (node tools/build/make_search.js)'); bad++; }
   const ids = Object.keys(idx.subjects).sort((a, b) => idx.subjects[a].bytes - idx.subjects[b].bytes);
-  const sample = [...new Set(ids.map(id => idx.subjects[id].classId))].slice(0, 3).map(c => ids.find(id => idx.subjects[id].classId === c));
+  const sample = [...new Set([0.3, 0.55, 0.8].map(q => ids[Math.floor(ids.length * q)]))];          // three subjects of middling size, from different classes
   for (const id of sample) {
     const s = allSubjects.find(x => x.id === id);
     const r = s && buildSubject(s);
