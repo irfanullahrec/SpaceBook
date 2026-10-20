@@ -126,6 +126,14 @@ def main():
     appch = load('app_chapters.json')
     slofiles = {}
     files = parse_page(page)
+    status = {}
+    if os.path.exists(os.path.join(DATA, 'link_status.json')):
+        status = load('link_status.json')    # tools/check_links.py
+    for v in files.values():
+        for f in v['files']:
+            c = status.get(f['url'])
+            if c is not None and c not in (200, 206):
+                f['bad'] = c         # the Board's own link does not work (the app lists it as unavailable)
     subjects, report = {}, []
 
     keys = set()
@@ -160,7 +168,7 @@ def main():
                 if flt(c):
                     no = rm[c['no']] if rm else c['no']
                     chs[no] = {'no': no, 'bt': c['title'], 'periods': c.get('periods'), 'topics': c.get('topics', []),
-                                    'slos': [{'g': x['g'], 't': cap(x['t']), 'l': x.get('lvl', '')} for x in c['slos']]}
+                                    'slos': [{'g': x['g'], 't': cap(x['t']), 'l': x.get('lvl', '')} for x in c['slos'] if len(x['t'].strip()) >= 3]}
         rows = tos['tables'].get(sid, [])
         titles = tos.get('titles', {}).get(sid, {})
         for r in rows:

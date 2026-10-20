@@ -73,6 +73,9 @@ jobs:
         run: |
           node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
           node --max-old-space-size=6144 tests/hooks/hooks.js
+      - name: BISE Swat data (paper pattern totals, chapter tables, Board links, learning outcomes)
+        working-directory: SpaceBook Web
+        run: node tests/bise/data.js
       - name: lexicon (the generated file answers like the old book scan and loads no book)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/lexicon/equivalence.js

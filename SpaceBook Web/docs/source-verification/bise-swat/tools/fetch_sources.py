@@ -14,7 +14,7 @@ EXTRA = ['https://www.bisess.edu.pk/site/assets/attachments/6dee164ef85c0f9b5098
 
 
 def fetch(url, out):
-    req = urllib.request.Request(urllib.parse.quote(url, safe=':/%?=&'), headers={'User-Agent': 'Mozilla/5.0'})
+    req = urllib.request.Request(urllib.parse.quote(url, safe=':/%?=&'), headers={'User-Agent': 'curl/8.4.0'})
     import ssl
     ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE   # the Board's certificate chain is incomplete
     with urllib.request.urlopen(req, timeout=120, context=ctx) as r, open(out, 'wb') as f:

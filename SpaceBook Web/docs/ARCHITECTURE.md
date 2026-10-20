@@ -79,6 +79,7 @@ Book data is not built from `js/`: each class has a pipeline in `docs/source-ver
 | Word Stats | `js/word_stats.js` | counts per project, class and subject |
 | Rewards | `js/sb_rewards.js` | coins decided on the server when sync is on |
 | Interactive MCQs | `js/sb_mcq.js` | every MCQ is a radio group with right / wrong feedback |
+| BISE Swat Board centre | `js/sb_bise.js`, `css/sb_bise.css`, `js/bise_swat_data.js` (generated) | pattern, chapter weightage, SLOs, Board papers, Section A drill, e-answer sheet for Classes 9-12; a strip on chapters, a preset in Papers, a card on the class subject list (`07_BISE_SWAT_ALIGNMENT.md`) |
 
 ## 9. Tests (what guards what)
 
