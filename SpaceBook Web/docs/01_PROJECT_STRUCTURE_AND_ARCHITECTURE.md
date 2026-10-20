@@ -1,3 +1,5 @@
+> **Superseded on 2026-10-20 by [ARCHITECTURE.md](./ARCHITECTURE.md)** (lazy loading, offline, hooks, sync, search, build and test layout changed). Kept for the history of the design.
+
 # 01 — Project Structure & Architecture
 
 ## 1. Overview & Vision

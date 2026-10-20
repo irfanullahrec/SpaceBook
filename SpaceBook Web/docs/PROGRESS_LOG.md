@@ -469,3 +469,12 @@ Verified by: `tests/content/integrity.js` 53/0 (3 new: every bank question has i
 Not verified: that the 81 rows are all the unkeyed questions (a question that is not a structured MCQ object, for example inside a book-reader block without a solution, is not listed); nobody has reviewed the queue.
 
 Next: Phase 5 second half; regenerate derived files.
+
+## 2026-10-20 — Phase 12 (continued): handover documents
+Done: `docs/ARCHITECTURE.md` (folder map, how a page starts, hooks and what is still not clean, lazy loading, offline and search, the build, accounts and sync, the modules, which test guards what, deploy), `docs/DATA_CONTRACT.md` (the five shapes of book data read from the code, every generated file's schema, the sync and account wire formats, and an honest section on the unified contract that was planned and not built), `docs/RELEASE_AND_ROLLBACK.md` (before the push, what the workflow does, what a person must check afterwards in a real browser, rollback of code / database / service worker / sync, including a service-worker kill switch), `docs/PROTECT_LIST.md` (replaces section 7 of the deep audit: content, generated files, locks, binding owner decisions, secrets, behaviour with a test), `docs/INDEX.md` (a "start here" table; the 2026-10-13 architecture note is marked superseded).
+
+Verified by: every file name, command, schema field and number in these documents was taken from the code or from a command run in this session (manifest and book shapes by inspecting the loaded objects, the workflow by reading it, test lists against `deploy.yml`); `node tools/validate.js` still passes.
+
+Not verified: that the owner agrees with them (acceptance asks for the owner's review); that the rollback steps work on the live host (nothing has been deployed); the claim that the `Deploy SpaceBook` workflow can be run on a chosen branch (GitHub's manual trigger offers a branch picker; not tried).
+
+Next: Phase 11 measurements, the final regeneration, handover summary.

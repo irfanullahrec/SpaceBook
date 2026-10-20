@@ -8,6 +8,19 @@ This repository contains two core platforms:
 
 ---
 
+## Start here (current, 2026-10-20)
+
+| Document | What it answers |
+|---|---|
+| [ARCHITECTURE](./ARCHITECTURE.md) | how the app is built and loaded, the build, the tests, the deploy (supersedes 01) |
+| [DATA_CONTRACT](./DATA_CONTRACT.md) | the shapes of the book data, the generated files and the wire formats |
+| [RELEASE_AND_ROLLBACK](./RELEASE_AND_ROLLBACK.md) | before a push, what the push does, after the deploy, how to go back |
+| [PROTECT_LIST](./PROTECT_LIST.md) | what must not be broken or deleted, and why |
+| [PROGRESS_LOG](./PROGRESS_LOG.md) | what was done, what was verified, what was not, what is next |
+| [ACCESSIBILITY](./ACCESSIBILITY.md), [SEARCH](./SEARCH.md), [ADMIN](./ADMIN.md), [CONTENT_REVIEW](./CONTENT_REVIEW.md), [PHASE3_LAZY_LOADING](./PHASE3_LAZY_LOADING.md), [PHASE4_OFFLINE](./PHASE4_OFFLINE.md), [PHASE5_HOOKS](./PHASE5_HOOKS.md), [PHASE7_LEXICON](./PHASE7_LEXICON.md), [PHASE8_SECURITY](./PHASE8_SECURITY.md), [SERVER_CONFIG](./SERVER_CONFIG.md), [BACKUP_RESTORE](./BACKUP_RESTORE.md), [CLEANUP_LOG](./CLEANUP_LOG.md) | the feature and phase notes |
+
+The documents numbered 01-06 below are older: 01 and the "Before every push" line are out of date (use ARCHITECTURE and RELEASE_AND_ROLLBACK).
+
 ## Documentation Modules
 
 | Document | Description | Key Topics Covered |
@@ -25,7 +38,7 @@ This repository contains two core platforms:
 - **Board Alignment**: Khyber Pakhtunkhwa Textbook Board, Peshawar (Official 2018–2026 Syllabus & SLO Framework).
 - **Core Principle**: 100% Verbatim textbook accuracy without abridgment or paraphrasing.
 - **Languages Supported**: English, Urdu (اردو), Pashto (پښتو), and Arabic (العربية).
-- **Before every push**: `node tools/validate.js` (104 checks) and `node tools/smoke.js` (51 UI tests) must both exit 0.
+- **Before every push**: see RELEASE_AND_ROLLBACK (`node tools/validate.js`, `node tools/smoke.js` and the other suites listed in ARCHITECTURE must pass; generated files must be fresh).
 - **Current Completion (Grade 9)**:
   - 🧬 **Biology**: 9 / 9 Units (56 Verbatim Sections, 164 Solved Qs, 162 SLO Bank, 9 Practicals) — 100% Complete.
   - 🧪 **Chemistry**: 8 / 8 Units (Full Core Theory, Solved Exercises, Numericals, SLOs, Vocabulary Bank) — 100% Complete.
