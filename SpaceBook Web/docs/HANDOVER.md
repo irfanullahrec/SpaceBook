@@ -47,6 +47,10 @@ Nothing has been pushed. Everything below is on the local branch `phase/p2-serve
 
 The unified Book Content Contract and registry-driven `openSubject`; the second half of Phase 5 (observers, injected styles, `!important`, one render pass); the tab model for every chapter (TAB-01); per-row provenance for the lexicon and the interaction component; signed releases, licences, device activation and watermarking (your decisions); Papers question banks for the classes without one; statistics per subject and class; deleting superseded data files (needs real-browser traces) and the 114 unreferenced covers; `git gc` (needs a backup of `.git` first). Each is explained in the document of its phase.
 
+## Work from another session that is NOT in these commits
+
+The working folder also holds unfinished Class 1 / Class 2 interactive work by another session (`js/cls1_*.js`, `js/cls2_play_*.js`, their `<script>` lines in `index.html`, `js/english_1_book.js`, `docs/source-verification/class-1/tools/figs1.py`). None of it was committed here and none of it is in the generated files. When it is committed, the lazy page, the offline map and the search index must be regenerated from a clean checkout (`RELEASE_AND_ROLLBACK.md`, section 1) and the Class 1 / 2 HTML baseline will change.
+
 ## Before you push: the short list
 
 1. Server steps done (item 2 above). 2. A fresh database dump. 3. `node --max-old-space-size=8192 tools/build/all.js --check` says fresh for every step, from a clean checkout of the commit you push. 4. Read the "Not verified" lines of the entries you care about in `PROGRESS_LOG.md`. 5. After the deploy, do the real-browser checks in `RELEASE_AND_ROLLBACK.md`, section 3.
