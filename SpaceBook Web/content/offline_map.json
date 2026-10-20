@@ -1,6 +1,681 @@
 {
  "schema": "spacebook.offline/1",
  "files": {
+  "content/search/cls1-drawing.json": {
+   "v": "941a47b03381",
+   "bytes": 28295,
+   "sha256": "941a47b0338132cfb39fa2db6fb237859feed9df3a375d80af0b8e345378edda"
+  },
+  "content/search/cls1-eng.json": {
+   "v": "a67cfdcf1c73",
+   "bytes": 126199,
+   "sha256": "a67cfdcf1c735391c9874b983cd7b6db3e1f1d1c25c3697bcdd2ce90b6c3f7a0"
+  },
+  "content/search/cls1-gk.json": {
+   "v": "fa43ba4e75e4",
+   "bytes": 2092,
+   "sha256": "fa43ba4e75e48c77c63ff3b7df51761fa4fafeef2420e3fe13635619bb1ee133"
+  },
+  "content/search/cls1-isl.json": {
+   "v": "b4c4f8318348",
+   "bytes": 43669,
+   "sha256": "b4c4f83183482d87b90c464277c71ca6ca81c62661de4badd6525e4928c3e850"
+  },
+  "content/search/cls1-math.json": {
+   "v": "759f133f2970",
+   "bytes": 69668,
+   "sha256": "759f133f2970386ceb4e2ba4d1b543f08f56e78a9bff617f2fa8a982ed98bce6"
+  },
+  "content/search/cls1-nazira.json": {
+   "v": "b2c5760ba466",
+   "bytes": 42208,
+   "sha256": "b2c5760ba466b67b7bd4cc028164cc5cd3703e64930cbf3d7aa539ede230581d"
+  },
+  "content/search/cls1-pashto.json": {
+   "v": "dbc0852c7fb0",
+   "bytes": 105262,
+   "sha256": "dbc0852c7fb0a74be28a312f88829e05ee33fbcd08e13e68d3a988c19a635302"
+  },
+  "content/search/cls1-urdu.json": {
+   "v": "1019023a97f2",
+   "bytes": 1890,
+   "sha256": "1019023a97f2ef5954e5e1b5debb9f9c3221974d45b1db5506d588e0e7fbfda8"
+  },
+  "content/search/cls10-bio.json": {
+   "v": "3fdfec0482c4",
+   "bytes": 314302,
+   "sha256": "3fdfec0482c4de519c3840e102dd79c9eb588ea896e14b61146944e8a1f5c699"
+  },
+  "content/search/cls10-chem.json": {
+   "v": "eee902cd0c4f",
+   "bytes": 250897,
+   "sha256": "eee902cd0c4fe2ae48a1dada1d4f7b8fe5acfad89e15d14904ea1df5050d914f"
+  },
+  "content/search/cls10-comp.json": {
+   "v": "2821bae25a27",
+   "bytes": 139199,
+   "sha256": "2821bae25a27cd412acd64a5b6af73b26bcafad0459191dbbbecc322578004b0"
+  },
+  "content/search/cls10-drawing.json": {
+   "v": "10a5b8b85bd4",
+   "bytes": 111831,
+   "sha256": "10a5b8b85bd4970488cd9409b497558fb05e5743d4463c0b7b9804e1b7d52095"
+  },
+  "content/search/cls10-eng.json": {
+   "v": "d2cc4b01384b",
+   "bytes": 259698,
+   "sha256": "d2cc4b01384bbfb323b53e8e863e56206a8f7cdadbe0c7212af0b561d5c986b8"
+  },
+  "content/search/cls10-hpe.json": {
+   "v": "aa615fe6719d",
+   "bytes": 168561,
+   "sha256": "aa615fe6719df229209ded898d9970fe4e127f6465c6834912d7ceed53103351"
+  },
+  "content/search/cls10-isl.json": {
+   "v": "b988f574c9dd",
+   "bytes": 187440,
+   "sha256": "b988f574c9dd542f1016cc8b82ce1a766a8a6f49870b47cdef4fad98f0cdbde9"
+  },
+  "content/search/cls10-islopt.json": {
+   "v": "77d72383329c",
+   "bytes": 315701,
+   "sha256": "77d72383329c07b80f378a0530ba7924ceac2d384fa2a229955fca407d9071aa"
+  },
+  "content/search/cls10-math.json": {
+   "v": "1c2a6f5d71ec",
+   "bytes": 52948,
+   "sha256": "1c2a6f5d71ecff9fca2db33c610413930ce3f93f8633707aaafa5e1c79c75c06"
+  },
+  "content/search/cls10-pakstudy.json": {
+   "v": "ea43559418a9",
+   "bytes": 189550,
+   "sha256": "ea43559418a949983607a354bf4f10839155a6b5a95e106baa2d69467f9d555d"
+  },
+  "content/search/cls10-phy.json": {
+   "v": "eda319fd9637",
+   "bytes": 275158,
+   "sha256": "eda319fd9637ecc33c43344ae8d7e515b21225a8f503d322ade635f3e6f39653"
+  },
+  "content/search/cls10-quran.json": {
+   "v": "145ff44e90dd",
+   "bytes": 392369,
+   "sha256": "145ff44e90dd3608ca3d4828f62f692c2d7a565d493612aeb54f7550b1817a6b"
+  },
+  "content/search/cls10-sci.json": {
+   "v": "b27c291c3679",
+   "bytes": 250375,
+   "sha256": "b27c291c3679aa05a110752ce414b34214ed7884f27729d33ee2f551fa5865d9"
+  },
+  "content/search/cls10-urdu.json": {
+   "v": "4b244998cf75",
+   "bytes": 345824,
+   "sha256": "4b244998cf757946e16c3cccdb8eeff2e879985f4a75a307e8eb5be24593d383"
+  },
+  "content/search/cls11-bio.json": {
+   "v": "938b99e79245",
+   "bytes": 569454,
+   "sha256": "938b99e79245a9210ea5edc868b398d61345fa85b073aeec689fb75fea085636"
+  },
+  "content/search/cls11-chem.json": {
+   "v": "5be569613cae",
+   "bytes": 346292,
+   "sha256": "5be569613caefa5907e0a151fba2514cfec67283d86d9b91cf58ad3da1b8e341"
+  },
+  "content/search/cls11-civics.json": {
+   "v": "092df8056cf2",
+   "bytes": 270651,
+   "sha256": "092df8056cf2465c9efc493cb3de62945d329cda2f4b1c7ff0dd89314f89f605"
+  },
+  "content/search/cls11-cs.json": {
+   "v": "8d772552a166",
+   "bytes": 255395,
+   "sha256": "8d772552a166ff7a51c3bfb0e88b31cd8b2f92958786350ddc655fa152345230"
+  },
+  "content/search/cls11-eng.json": {
+   "v": "6cb394945ad4",
+   "bytes": 478690,
+   "sha256": "6cb394945ad4d954f5170a49d21051f4b5cd680ea90a3145777fe1f5a75a66a6"
+  },
+  "content/search/cls11-hpe.json": {
+   "v": "eeb568089b31",
+   "bytes": 139617,
+   "sha256": "eeb568089b31dd56bbcd54c1397f5383f3f3404d7e8b35ad8d8425be735805dc"
+  },
+  "content/search/cls11-ikhtiari.json": {
+   "v": "65973ac31013",
+   "bytes": 398592,
+   "sha256": "65973ac310134f72109cce02390c1db789ba4cebd7b9f643d6d5721bc1121018"
+  },
+  "content/search/cls11-ishist.json": {
+   "v": "c964ab96c678",
+   "bytes": 414831,
+   "sha256": "c964ab96c6787db906cd2a9bb32a3ec800c866c9f13fd99c9b69f4a3cca5abf8"
+  },
+  "content/search/cls11-isl.json": {
+   "v": "a9bd598d430b",
+   "bytes": 219042,
+   "sha256": "a9bd598d430ba5252b55bb3b63e46f1fdfd5734bb176193a79ee618c288e743a"
+  },
+  "content/search/cls11-math.json": {
+   "v": "8a3a244b706e",
+   "bytes": 184445,
+   "sha256": "8a3a244b706e183b3ed5c889be1b1f5a2af672cf4e11d75b95d8cb2ed64c01d1"
+  },
+  "content/search/cls11-mq.json": {
+   "v": "afa094e72cdb",
+   "bytes": 392037,
+   "sha256": "afa094e72cdb081fb880f21e25978b13539aa4ccad66cd0209de25dc058c2ca5"
+  },
+  "content/search/cls11-phy.json": {
+   "v": "b08760832a2c",
+   "bytes": 291537,
+   "sha256": "b08760832a2c0062adb70ecf2b0dda8a775135cfda9685e61efcbf8f9e2b1f7e"
+  },
+  "content/search/cls11-stat.json": {
+   "v": "b1278bc590de",
+   "bytes": 170040,
+   "sha256": "b1278bc590deb2fe5cd182570e125c8c1687faded330a2a25cff93aea24b9b56"
+  },
+  "content/search/cls11-urdu.json": {
+   "v": "611216f24135",
+   "bytes": 233051,
+   "sha256": "611216f2413531546b62351b963a02784b495bbce575be7c245413bc82c7e4c4"
+  },
+  "content/search/cls12-bio.json": {
+   "v": "2eae8fb2af43",
+   "bytes": 551920,
+   "sha256": "2eae8fb2af4315404cb2ef75b2f487a53eca1c04a9d53c866873da05a4424531"
+  },
+  "content/search/cls12-chem.json": {
+   "v": "065084d81e20",
+   "bytes": 418049,
+   "sha256": "065084d81e201420cfb8f6fa2d6f065dd87eb783912644ca204b85a9edf02a0d"
+  },
+  "content/search/cls12-civics.json": {
+   "v": "0bc249c7c955",
+   "bytes": 305388,
+   "sha256": "0bc249c7c95527ad2a4db10650f768388bd7d23564cd3bcae87ccb4b0f5a462d"
+  },
+  "content/search/cls12-comp.json": {
+   "v": "cd00a3ac1e72",
+   "bytes": 194731,
+   "sha256": "cd00a3ac1e72e2bf418a2517b163e81b8a1789ea4489718e20d7e33c300eac89"
+  },
+  "content/search/cls12-econ.json": {
+   "v": "47becc64226e",
+   "bytes": 471091,
+   "sha256": "47becc64226e3ebb7decf5597cc118a6a89135952a2c231fd176160ea7b95b77"
+  },
+  "content/search/cls12-eng.json": {
+   "v": "4f847202be74",
+   "bytes": 429793,
+   "sha256": "4f847202be744fef134f050a8ba04383d6278fdac72566f4f5674ec9c647000a"
+  },
+  "content/search/cls12-hpe.json": {
+   "v": "d0c8e8e1b8cc",
+   "bytes": 155437,
+   "sha256": "d0c8e8e1b8cc2400b385b0402e6cd52dfc80aa874d778d3d61a9cb72df0003e3"
+  },
+  "content/search/cls12-islhist.json": {
+   "v": "8769aab12da4",
+   "bytes": 400276,
+   "sha256": "8769aab12da4b9188d24e2d2b369b0b9a2677d8f6073c8efc2f2b11871444f36"
+  },
+  "content/search/cls12-islopt.json": {
+   "v": "3abbadf41b0e",
+   "bytes": 355317,
+   "sha256": "3abbadf41b0e3d12a689d4d0b227664c321981c0968f9e877c7bf9214b92fa90"
+  },
+  "content/search/cls12-math.json": {
+   "v": "c9b92fe4db5f",
+   "bytes": 257232,
+   "sha256": "c9b92fe4db5f422bc8643edbb8963111961ee70e3567ead64949db199cc3eb9d"
+  },
+  "content/search/cls12-pak.json": {
+   "v": "34f7969a65d3",
+   "bytes": 336863,
+   "sha256": "34f7969a65d34bbc780b32b6ce19b0b0ffa2b52ebd3af7616ade9baa7137fb39"
+  },
+  "content/search/cls12-phy.json": {
+   "v": "0f13e15e58a5",
+   "bytes": 314213,
+   "sha256": "0f13e15e58a5a22b843f2046eaeb7b1dfde8d914985e6a6d26ae692808ab6d57"
+  },
+  "content/search/cls12-quran.json": {
+   "v": "65d3e06b706b",
+   "bytes": 470949,
+   "sha256": "65d3e06b706b23a133285c29e842254309645e560dd04c7eed24557bc376e595"
+  },
+  "content/search/cls12-stat.json": {
+   "v": "e2c841bd7966",
+   "bytes": 177037,
+   "sha256": "e2c841bd7966fa913c89a294ed9d64badd1a79ebf94d29bb7fdc77e951b49965"
+  },
+  "content/search/cls12-urdu.json": {
+   "v": "6ae903137d16",
+   "bytes": 288699,
+   "sha256": "6ae903137d16cd933ec5e18f6ab62c386e0c59f5a397673d0c7dce27f2a8fe73"
+  },
+  "content/search/cls2-drawing.json": {
+   "v": "0226639ec5d9",
+   "bytes": 8768,
+   "sha256": "0226639ec5d9cf55b40d9131ecc8b2e6919a08d74c903fb19d1fe5583e3a83fe"
+  },
+  "content/search/cls2-eng.json": {
+   "v": "c8a2042c3b6a",
+   "bytes": 147419,
+   "sha256": "c8a2042c3b6a18a12a13a57858a52fc3e5338dc988ed2c950761da86c20992e8"
+  },
+  "content/search/cls2-gk.json": {
+   "v": "ae1a05fe36ea",
+   "bytes": 94243,
+   "sha256": "ae1a05fe36ea463554ed39bc873a3361d54edf12c5e6498d23bcff96927cad42"
+  },
+  "content/search/cls2-isl.json": {
+   "v": "f4697e073272",
+   "bytes": 70537,
+   "sha256": "f4697e0732726bc739dfba1e6a260a9a4ed7a7a44dc90e3b73aa0f91aa7369b1"
+  },
+  "content/search/cls2-math.json": {
+   "v": "5dfd8b751331",
+   "bytes": 73828,
+   "sha256": "5dfd8b751331494b7409748c740975de2a98df4734b0e6271848fb349d22a839"
+  },
+  "content/search/cls2-nazira.json": {
+   "v": "6655c3924f03",
+   "bytes": 107991,
+   "sha256": "6655c3924f03137f8ad375c2189d969111185d691545e68dd69d3ca53928ca05"
+  },
+  "content/search/cls2-pashto.json": {
+   "v": "c9eddcef92ce",
+   "bytes": 154857,
+   "sha256": "c9eddcef92ce198991299a32de49b71e880e92497400e6d097c51a276872cc21"
+  },
+  "content/search/cls2-urdu.json": {
+   "v": "72b5c4677325",
+   "bytes": 147393,
+   "sha256": "72b5c4677325bf17adbc32fa9f651b74fcf353a8b7d8ce8a6b7aede4ee879282"
+  },
+  "content/search/cls3-drawing.json": {
+   "v": "6cffccea5d9d",
+   "bytes": 7422,
+   "sha256": "6cffccea5d9d0e9ca8fea47b6480187e44cc9f437af524993dfa4ca00228a9e3"
+  },
+  "content/search/cls3-eng.json": {
+   "v": "97af7b81bde2",
+   "bytes": 153279,
+   "sha256": "97af7b81bde21185b4bd4caa5e9f8c2dac375f4f1bab3edcb786af90304ab3d4"
+  },
+  "content/search/cls3-gk.json": {
+   "v": "dc68d6303a32",
+   "bytes": 136785,
+   "sha256": "dc68d6303a32be8d99d58cc3727b661069e43baf8f5f41ded0ff6b134af963af"
+  },
+  "content/search/cls3-isl.json": {
+   "v": "5b1a1f747d1d",
+   "bytes": 142786,
+   "sha256": "5b1a1f747d1d17cfcd2eb010c01ccbdfb8f227171d71283c2311878bf6172db2"
+  },
+  "content/search/cls3-math.json": {
+   "v": "ae076723a43d",
+   "bytes": 91082,
+   "sha256": "ae076723a43d01e3af39404d5a3abbca6c2afa045ceb2712845928549490a0c9"
+  },
+  "content/search/cls3-nazira.json": {
+   "v": "b638574b193f",
+   "bytes": 214307,
+   "sha256": "b638574b193f1b75c6a0034671ed3ff2350afefdc96423ca34aa68297ce12674"
+  },
+  "content/search/cls3-pashto.json": {
+   "v": "ffcfb046a62e",
+   "bytes": 174485,
+   "sha256": "ffcfb046a62e20bb675c403e57e4d96165eb40de84111b04046af0d50717d4eb"
+  },
+  "content/search/cls3-urdu.json": {
+   "v": "bd66ae4895e7",
+   "bytes": 1890,
+   "sha256": "bd66ae4895e7155110a2e1fa296f6fd4f3ed446939adfe07d33b7b010296cfe1"
+  },
+  "content/search/cls4-eng.json": {
+   "v": "4b04e45a59d9",
+   "bytes": 227455,
+   "sha256": "4b04e45a59d9c04d88cb4cad55e2d2a9fff92546969daf9f6290b2fb11d74669"
+  },
+  "content/search/cls4-isl.json": {
+   "v": "71410433ad2c",
+   "bytes": 148829,
+   "sha256": "71410433ad2c0873273b36a3832274bb0ff64dea3c19ee4e3cc4916e12f46cbb"
+  },
+  "content/search/cls4-math.json": {
+   "v": "3e2b99330361",
+   "bytes": 116698,
+   "sha256": "3e2b99330361321c9a583e8dc9dd51675fd97814c6c0f26ccece6c501a5a7ea7"
+  },
+  "content/search/cls4-pashto.json": {
+   "v": "1a8d43db8494",
+   "bytes": 206186,
+   "sha256": "1a8d43db84940a67551f79478b0eb7e675a475ded653a8fa547f9f764aecd42f"
+  },
+  "content/search/cls4-sci.json": {
+   "v": "145a9f7f8955",
+   "bytes": 187296,
+   "sha256": "145a9f7f89555c866095fbd0596727d50c03e0dc7755dfa939f6089ec22af7a6"
+  },
+  "content/search/cls4-sst.json": {
+   "v": "20703971abe0",
+   "bytes": 211850,
+   "sha256": "20703971abe00542d63f6d5442525637decab4a97d039f4d9c15a3b3000f2310"
+  },
+  "content/search/cls4-sstum.json": {
+   "v": "edb8e9d049dc",
+   "bytes": 220190,
+   "sha256": "edb8e9d049dc2ea9917e40df2e9db92c5f38ab7bf1483d62fa91453135946fee"
+  },
+  "content/search/cls4-urdu.json": {
+   "v": "9222cd18c5dc",
+   "bytes": 296822,
+   "sha256": "9222cd18c5dc15487cf1fa0f8a8367b9f130ff67ea2670dc7d8bd7f80ae390db"
+  },
+  "content/search/cls5-eng.json": {
+   "v": "7565603886f6",
+   "bytes": 241608,
+   "sha256": "7565603886f6093e2cfe896bb0a7c05d8e03e247956a94b12ad4c4c5dc06b5a6"
+  },
+  "content/search/cls5-isl.json": {
+   "v": "40fbe3c033eb",
+   "bytes": 172713,
+   "sha256": "40fbe3c033eb3d9f494c4bdd3dc4af9728a655b70162e098d9220ed1a1b94980"
+  },
+  "content/search/cls5-math.json": {
+   "v": "bf262faa7465",
+   "bytes": 121089,
+   "sha256": "bf262faa74650bdf2142a7e7d9a1f03d138c6d724560b0ba848037eb20845da4"
+  },
+  "content/search/cls5-pashto.json": {
+   "v": "86daa23df771",
+   "bytes": 250401,
+   "sha256": "86daa23df771eafbd1d4007009c5ffd206c3b9af5cf8b7b833adac6d1fd8f4ee"
+  },
+  "content/search/cls5-sci.json": {
+   "v": "bfd837e22c64",
+   "bytes": 198828,
+   "sha256": "bfd837e22c641168542ac1fa2b0bec1bf1061b3762bf7709627043830d51a194"
+  },
+  "content/search/cls5-sst.json": {
+   "v": "86e3ab94fe02",
+   "bytes": 190111,
+   "sha256": "86e3ab94fe02fddd4a875c7a923488538760317b95d7f04a2aeb7f8d97f3f483"
+  },
+  "content/search/cls5-sstum.json": {
+   "v": "80022e21393f",
+   "bytes": 201159,
+   "sha256": "80022e21393f557e76537ebd25c8bc8338c953978a39e16d54fb6b45d5de9bb1"
+  },
+  "content/search/cls5-urdu.json": {
+   "v": "970968aec636",
+   "bytes": 303688,
+   "sha256": "970968aec63630f0039c0cea0db00dcaad139f5e145b3c7952eeca9f91c190d7"
+  },
+  "content/search/cls6-arabic.json": {
+   "v": "d89e88a28092",
+   "bytes": 145857,
+   "sha256": "d89e88a28092e1a2f6a3b59d991e66be60a51d82b9fe05ecb7bc372a72771f24"
+  },
+  "content/search/cls6-comp.json": {
+   "v": "ae721f430e87",
+   "bytes": 143483,
+   "sha256": "ae721f430e87eade1e4adc92d4656c315801138066fc6d8ac24a474f1428af09"
+  },
+  "content/search/cls6-drawing.json": {
+   "v": "2b132bf1e628",
+   "bytes": 80033,
+   "sha256": "2b132bf1e6280eb78cf38d2d57b100c70dd4c7e92439ffc42a096b155338e19a"
+  },
+  "content/search/cls6-eng.json": {
+   "v": "c0486052f9ca",
+   "bytes": 234186,
+   "sha256": "c0486052f9ca5cf43c8ab8ac01745bcab9fd7f693d6755e48e80b425c1d93cad"
+  },
+  "content/search/cls6-geo.json": {
+   "v": "12acc7f71c48",
+   "bytes": 167677,
+   "sha256": "12acc7f71c48c2308b519132ef4edf2296eeb4f347c494d1a1cc148f9a6d183f"
+  },
+  "content/search/cls6-hist.json": {
+   "v": "be2ffa6d24ab",
+   "bytes": 198462,
+   "sha256": "be2ffa6d24ab743f97ab1a9626254c0dfcfadc7d61a3425f39349cbe9dda6b9c"
+  },
+  "content/search/cls6-hpe.json": {
+   "v": "c13844c2522d",
+   "bytes": 121314,
+   "sha256": "c13844c2522d939262f664c30fba02fbb6321c38c091fd9f6b332d329e730cdb"
+  },
+  "content/search/cls6-isl.json": {
+   "v": "89d7172963fc",
+   "bytes": 236072,
+   "sha256": "89d7172963fc15223d4b568926abb11a60e9af01a4509ba7da36000a9d4e4c2c"
+  },
+  "content/search/cls6-math.json": {
+   "v": "fe5b1527e140",
+   "bytes": 166789,
+   "sha256": "fe5b1527e140ec77de5c59748ade629f0def897f7f27eae087ba308c3b8b82c2"
+  },
+  "content/search/cls6-pashto.json": {
+   "v": "75e8ea691475",
+   "bytes": 224964,
+   "sha256": "75e8ea691475b48f4720ffe51a4616ca605b0ba4a7f8423f2000eabd4db2accc"
+  },
+  "content/search/cls6-quran.json": {
+   "v": "9536a70a0017",
+   "bytes": 267876,
+   "sha256": "9536a70a0017baf0b62b9abf7fd9879fc2e7e05141876649f2c8b2fafca6822b"
+  },
+  "content/search/cls6-sci.json": {
+   "v": "2c782c6bb8e1",
+   "bytes": 211908,
+   "sha256": "2c782c6bb8e10074c76f6190ce724d6aa6697d5cb7f4cf0a38b4e2ab53679a2a"
+  },
+  "content/search/cls6-urdu.json": {
+   "v": "86d9bbde7abe",
+   "bytes": 326332,
+   "sha256": "86d9bbde7abe5b320124b2429bf26d8eb03c984442e5b0bb273b5987dc2d1e37"
+  },
+  "content/search/cls7-arabic.json": {
+   "v": "b6d7ff4b151f",
+   "bytes": 232335,
+   "sha256": "b6d7ff4b151f5e668a68f074a2326c6a6aa9a2824ecc5a088b22df862c5918b6"
+  },
+  "content/search/cls7-comp.json": {
+   "v": "61820fb951ef",
+   "bytes": 156121,
+   "sha256": "61820fb951ef74cc3942de896fd88c537e0fb0dbedbc4e3221a273ddd1e32724"
+  },
+  "content/search/cls7-drawing.json": {
+   "v": "5014da271167",
+   "bytes": 93033,
+   "sha256": "5014da271167e462b207174bc8fbc8b68a9f45b65a76326ef857f869008e2f28"
+  },
+  "content/search/cls7-eng.json": {
+   "v": "5944f7254c11",
+   "bytes": 235443,
+   "sha256": "5944f7254c118f1f2b357e959bcc31d5c8ee4d06124efccef4cc2c768f2cd2e3"
+  },
+  "content/search/cls7-geo.json": {
+   "v": "8ce42273155c",
+   "bytes": 174761,
+   "sha256": "8ce42273155c33593e43336f0a92067da0a87112aa420f708b4516835819b498"
+  },
+  "content/search/cls7-hist.json": {
+   "v": "2eb0f68788e7",
+   "bytes": 232023,
+   "sha256": "2eb0f68788e72965540ccece14ed1c594a1908c7d446d5490290193f52f7ae04"
+  },
+  "content/search/cls7-hpe.json": {
+   "v": "39b84ab52a2b",
+   "bytes": 143408,
+   "sha256": "39b84ab52a2bbb0bc02a0b984e603c1be4303fdce8c719c143eadee248e9c807"
+  },
+  "content/search/cls7-isl.json": {
+   "v": "282eb11a26df",
+   "bytes": 237535,
+   "sha256": "282eb11a26df40216fbdc945f66159a951b6ab371bff413e8f84b21443e8941c"
+  },
+  "content/search/cls7-math.json": {
+   "v": "d97d27559ed1",
+   "bytes": 203361,
+   "sha256": "d97d27559ed1f63e1b2c7882d1b4f37985ecd8c76a9c244564151dff7c3a1ce2"
+  },
+  "content/search/cls7-quran.json": {
+   "v": "d3694eb946b7",
+   "bytes": 340988,
+   "sha256": "d3694eb946b73f476871198c576b2f9cddad0f384e661b83d8a852488f650c31"
+  },
+  "content/search/cls7-sci.json": {
+   "v": "24d91e10d8ba",
+   "bytes": 213742,
+   "sha256": "24d91e10d8ba2b4e3225ce05359834071469f04def3bb92e7c4c5eee035f4376"
+  },
+  "content/search/cls7-urdu.json": {
+   "v": "f0180d48abf7",
+   "bytes": 360188,
+   "sha256": "f0180d48abf7dcaf228c0d57e4822f2b1f5aa5b37f383d8b7442fe9f625b1faa"
+  },
+  "content/search/cls8-arabic.json": {
+   "v": "e43f208bd216",
+   "bytes": 265681,
+   "sha256": "e43f208bd216aef24de436901b9f98c0c70aa9d3899f9bea6cf365b537ea6880"
+  },
+  "content/search/cls8-comp.json": {
+   "v": "68f008ac0567",
+   "bytes": 147495,
+   "sha256": "68f008ac0567605993ddafde45ee51f500e1cb14a23c5234266b45cd1e279c74"
+  },
+  "content/search/cls8-drawing.json": {
+   "v": "4bef9823a078",
+   "bytes": 19020,
+   "sha256": "4bef9823a0785603b9a5126667168fc26ffd006e592ccfb2de8e0fa8d5a45ecf"
+  },
+  "content/search/cls8-eng.json": {
+   "v": "f013cb3aa5dd",
+   "bytes": 219204,
+   "sha256": "f013cb3aa5dd5e026bdf4382d9209ae2ba3a4c180ad7572c2bffe0afb74a1dc8"
+  },
+  "content/search/cls8-geo.json": {
+   "v": "386d0b1e7d7d",
+   "bytes": 176422,
+   "sha256": "386d0b1e7d7d101df14dd0985a2b3b8000fb04f76eeac67552c9f70bd8d16f31"
+  },
+  "content/search/cls8-hist.json": {
+   "v": "dfdfa3cdf189",
+   "bytes": 226329,
+   "sha256": "dfdfa3cdf189d3a2f849060c51b39d54d54eeb6810b50da57a748e59d74cda50"
+  },
+  "content/search/cls8-hpe.json": {
+   "v": "dc87a0f537c1",
+   "bytes": 52859,
+   "sha256": "dc87a0f537c1ede50a3622d1f58ae1cfac0b0f0df88363af7a24984eeb559711"
+  },
+  "content/search/cls8-isl.json": {
+   "v": "bc202129ecaf",
+   "bytes": 321997,
+   "sha256": "bc202129ecafa5bfc16a0c9d2b433b2388103cb58ccd465baba8d4919d41879f"
+  },
+  "content/search/cls8-math.json": {
+   "v": "ab34ba293e27",
+   "bytes": 184088,
+   "sha256": "ab34ba293e27a630dd71b024ab5770fcf50bd489d49b6ef79bfa890fb6463120"
+  },
+  "content/search/cls8-pashto.json": {
+   "v": "57745bbc9c4d",
+   "bytes": 45668,
+   "sha256": "57745bbc9c4d4c0824236699cbd6164eff8eb5a9c44ca8fff3bb141a871a756c"
+  },
+  "content/search/cls8-quran.json": {
+   "v": "b49dba69b429",
+   "bytes": 392375,
+   "sha256": "b49dba69b4291f26d964ed184dfccbc90429bd5b9a4c464e616117208e8c6799"
+  },
+  "content/search/cls8-sci.json": {
+   "v": "908712c88f81",
+   "bytes": 273721,
+   "sha256": "908712c88f814db0e02ff82a3846e7826606f29b858bce5504fc57293d511289"
+  },
+  "content/search/cls8-urdu.json": {
+   "v": "d26c72e34be0",
+   "bytes": 427976,
+   "sha256": "d26c72e34be0bc8dc8ed6203a424a888bf25f707a0a483117be8f4b001237bd0"
+  },
+  "content/search/cls9-bio.json": {
+   "v": "3655a0f0a616",
+   "bytes": 290078,
+   "sha256": "3655a0f0a616bdfb3f655dcc7c993a3a3b7f90f8ee2c6e69a051b5b0f6920757"
+  },
+  "content/search/cls9-chem.json": {
+   "v": "52cb1f7bf5e0",
+   "bytes": 208342,
+   "sha256": "52cb1f7bf5e02c3f6526e65a9411d1a2f7c28f4512c92d6751ca9578da8c70b8"
+  },
+  "content/search/cls9-comp.json": {
+   "v": "2a823c307c27",
+   "bytes": 137703,
+   "sha256": "2a823c307c27ee092b34c8b9de34333c268a99c9f9503868dc0a1304e233338a"
+  },
+  "content/search/cls9-drawing.json": {
+   "v": "53b192840756",
+   "bytes": 155513,
+   "sha256": "53b1928407566b3f19baba96b4666bd3fe2986f3497b2d92f067bbd007c4b5c9"
+  },
+  "content/search/cls9-eng.json": {
+   "v": "ec8c01b64802",
+   "bytes": 248058,
+   "sha256": "ec8c01b64802a06ce2641e5ee59ceae1cec696e92e18a165126e5651cdd86838"
+  },
+  "content/search/cls9-hpe.json": {
+   "v": "799cc5877ed5",
+   "bytes": 134528,
+   "sha256": "799cc5877ed53b1b7fadd694248c26ce126702159adbff16689eeec780d79baf"
+  },
+  "content/search/cls9-isl.json": {
+   "v": "b988f574c9dd",
+   "bytes": 187440,
+   "sha256": "b988f574c9dd542f1016cc8b82ce1a766a8a6f49870b47cdef4fad98f0cdbde9"
+  },
+  "content/search/cls9-islopt.json": {
+   "v": "77d72383329c",
+   "bytes": 315701,
+   "sha256": "77d72383329c07b80f378a0530ba7924ceac2d384fa2a229955fca407d9071aa"
+  },
+  "content/search/cls9-math.json": {
+   "v": "d84f27185b27",
+   "bytes": 64683,
+   "sha256": "d84f27185b272252a8774e00b5802794f410c02b297587cfcc09d5fef141d472"
+  },
+  "content/search/cls9-pakstudy.json": {
+   "v": "4ab4b59dd5f8",
+   "bytes": 168504,
+   "sha256": "4ab4b59dd5f8261b907a86e7dc3749526ff8605322fe1168789066a2e68914c1"
+  },
+  "content/search/cls9-phy.json": {
+   "v": "7f45bbdf0a48",
+   "bytes": 308647,
+   "sha256": "7f45bbdf0a482308b5e25fa727c87b0ead5352bd8a3fc5b31b7bf4223ab7076f"
+  },
+  "content/search/cls9-quran.json": {
+   "v": "65f94bfdc5d2",
+   "bytes": 371233,
+   "sha256": "65f94bfdc5d208e1d64eea6dd1f6ac14741c93c3ec9adf47ad1f3daa7d6b3a80"
+  },
+  "content/search/cls9-sci.json": {
+   "v": "17aab634677f",
+   "bytes": 232670,
+   "sha256": "17aab634677faa27f5c5f8542f83990a8f64cda682d2f782502ad6b387e19650"
+  },
+  "content/search/cls9-urdu.json": {
+   "v": "b25952da423f",
+   "bytes": 158876,
+   "sha256": "b25952da423fe8b8e362dc7221db6cf51a2ee2e2261bcc289c3f636d4905a4f9"
+  },
   "js/arabic_6_data.js": {
    "v": "0ba1bf57234b",
    "bytes": 1249300,
@@ -1071,6 +1746,9 @@
   },
   "assets/math12/vector-project-source141.jpg": {
    "bytes": 26065
+  },
+  "content/search/index.json": {
+   "bytes": 235928
   }
  },
  "subjects": {
@@ -1162,870 +1840,1149 @@
    "classId": "cls1",
    "name": "English",
    "files": [
-    "js/english_1_book.js"
+    "js/english_1_book.js",
+    "content/search/cls1-eng.json"
    ],
-   "assets": [],
-   "bytes": 1393554
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1755681
   },
   "cls1-urdu": {
    "classId": "cls1",
    "name": "Urdu",
    "files": [
-    "js/urdu_1_book.js"
+    "js/urdu_1_book.js",
+    "content/search/cls1-urdu.json"
    ],
-   "assets": [],
-   "bytes": 2683
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 240501
   },
   "cls1-math": {
    "classId": "cls1",
    "name": "Mathematics",
    "files": [
-    "js/math_1_book.js"
+    "js/math_1_book.js",
+    "content/search/cls1-math.json"
    ],
-   "assets": [],
-   "bytes": 2084309
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2389905
   },
   "cls1-gk": {
    "classId": "cls1",
    "name": "General Knowledge",
    "files": [
-    "js/gk_1_book.js"
+    "js/gk_1_book.js",
+    "content/search/cls1-gk.json"
    ],
-   "assets": [],
-   "bytes": 2816
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 240836
   },
   "cls1-isl": {
    "classId": "cls1",
    "name": "Islamyat",
    "files": [
-    "js/islamyat_1_book.js"
+    "js/islamyat_1_book.js",
+    "content/search/cls1-isl.json"
    ],
-   "assets": [],
-   "bytes": 268061
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 547658
   },
   "cls1-nazira": {
    "classId": "cls1",
    "name": "Nazira Quran",
    "files": [
-    "js/nazira_1_book.js"
+    "js/nazira_1_book.js",
+    "content/search/cls1-nazira.json"
    ],
-   "assets": [],
-   "bytes": 1123974
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1402110
   },
   "cls1-pashto": {
    "classId": "cls1",
    "name": "Pashto",
    "files": [
-    "js/pashto_1_book.js"
+    "js/pashto_1_book.js",
+    "content/search/cls1-pashto.json"
    ],
-   "assets": [],
-   "bytes": 511069
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 852259
   },
   "cls1-drawing": {
    "classId": "cls1",
    "name": "Drawing",
    "files": [
-    "js/drawing_1_book.js"
+    "js/drawing_1_book.js",
+    "content/search/cls1-drawing.json"
    ],
-   "assets": [],
-   "bytes": 180053
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 444276
   },
   "cls2-eng": {
    "classId": "cls2",
    "name": "English",
    "files": [
-    "js/english_2_data.js"
+    "js/english_2_data.js",
+    "content/search/cls2-eng.json"
    ],
-   "assets": [],
-   "bytes": 1191040
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1574387
   },
   "cls2-urdu": {
    "classId": "cls2",
    "name": "Urdu",
    "files": [
-    "js/urdu_2_data.js"
+    "js/urdu_2_data.js",
+    "content/search/cls2-urdu.json"
    ],
-   "assets": [],
-   "bytes": 840548
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1223869
   },
   "cls2-math": {
    "classId": "cls2",
    "name": "Mathematics",
    "files": [
-    "js/math_2_data.js"
+    "js/math_2_data.js",
+    "content/search/cls2-math.json"
    ],
-   "assets": [],
-   "bytes": 2129634
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2439390
   },
   "cls2-gk": {
    "classId": "cls2",
    "name": "General Knowledge",
    "files": [
-    "js/gk_2_data.js"
+    "js/gk_2_data.js",
+    "content/search/cls2-gk.json"
    ],
-   "assets": [],
-   "bytes": 468458
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 798629
   },
   "cls2-isl": {
    "classId": "cls2",
    "name": "Islamyat",
    "files": [
-    "js/islamyat_2_data.js"
+    "js/islamyat_2_data.js",
+    "content/search/cls2-isl.json"
    ],
-   "assets": [],
-   "bytes": 333498
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 639963
   },
   "cls2-nazira": {
    "classId": "cls2",
    "name": "Nazira Quran",
    "files": [
-    "js/nazira_2_data.js"
+    "js/nazira_2_data.js",
+    "content/search/cls2-nazira.json"
    ],
-   "assets": [],
-   "bytes": 1003417
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1347336
   },
   "cls2-pashto": {
    "classId": "cls2",
    "name": "Pashto",
    "files": [
-    "js/pashto_2_data.js"
+    "js/pashto_2_data.js",
+    "content/search/cls2-pashto.json"
    ],
-   "assets": [],
-   "bytes": 704599
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1095384
   },
   "cls2-drawing": {
    "classId": "cls2",
    "name": "Drawing",
    "files": [
-    "js/drawing_2_data.js"
+    "js/drawing_2_data.js",
+    "content/search/cls2-drawing.json"
    ],
-   "assets": [],
-   "bytes": 173777
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 418473
   },
   "cls3-eng": {
    "classId": "cls3",
    "name": "English",
    "files": [
-    "js/english_3_data.js"
+    "js/english_3_data.js",
+    "content/search/cls3-eng.json"
    ],
-   "assets": [],
-   "bytes": 816332
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1205539
   },
   "cls3-urdu": {
    "classId": "cls3",
    "name": "Urdu",
    "files": [
-    "js/urdu_3_book.js"
+    "js/urdu_3_book.js",
+    "content/search/cls3-urdu.json"
    ],
-   "assets": [],
-   "bytes": 2674
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 240492
   },
   "cls3-math": {
    "classId": "cls3",
    "name": "Mathematics",
    "files": [
-    "js/math_3_data.js"
+    "js/math_3_data.js",
+    "content/search/cls3-math.json"
    ],
-   "assets": [],
-   "bytes": 1826853
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2153863
   },
   "cls3-gk": {
    "classId": "cls3",
    "name": "General Knowledge",
    "files": [
-    "js/gk_3_data.js"
+    "js/gk_3_data.js",
+    "content/search/cls3-gk.json"
    ],
-   "assets": [],
-   "bytes": 731709
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1104422
   },
   "cls3-isl": {
    "classId": "cls3",
    "name": "Islamyat",
    "files": [
-    "js/islamyat_3_data.js"
+    "js/islamyat_3_data.js",
+    "content/search/cls3-isl.json"
    ],
-   "assets": [],
-   "bytes": 776721
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1155435
   },
   "cls3-nazira": {
    "classId": "cls3",
    "name": "Nazira Quran",
    "files": [
-    "js/nazira_3_data.js"
+    "js/nazira_3_data.js",
+    "content/search/cls3-nazira.json"
    ],
-   "assets": [],
-   "bytes": 1614664
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2064899
   },
   "cls3-pashto": {
    "classId": "cls3",
    "name": "Pashto",
    "files": [
-    "js/pashto_3_data.js"
+    "js/pashto_3_data.js",
+    "content/search/cls3-pashto.json"
    ],
-   "assets": [],
-   "bytes": 905196
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1315609
   },
   "cls3-drawing": {
    "classId": "cls3",
    "name": "Drawing",
    "files": [
-    "js/drawing_3_data.js"
+    "js/drawing_3_data.js",
+    "content/search/cls3-drawing.json"
    ],
-   "assets": [],
-   "bytes": 125099
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 368449
   },
   "cls4-math": {
    "classId": "cls4",
    "name": "Mathematics",
    "files": [
-    "js/math_4_data.js"
+    "js/math_4_data.js",
+    "content/search/cls4-math.json"
    ],
-   "assets": [],
-   "bytes": 1596412
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1949038
   },
   "cls4-eng": {
    "classId": "cls4",
    "name": "English",
    "files": [
-    "js/english_4_data.js"
+    "js/english_4_data.js",
+    "content/search/cls4-eng.json"
    ],
-   "assets": [],
-   "bytes": 1699901
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2163284
   },
   "cls4-urdu": {
    "classId": "cls4",
    "name": "Urdu",
    "files": [
-    "js/urdu_4_data.js"
+    "js/urdu_4_data.js",
+    "content/search/cls4-urdu.json"
    ],
-   "assets": [],
-   "bytes": 1916147
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2448897
   },
   "cls4-sci": {
    "classId": "cls4",
    "name": "General Science",
    "files": [
-    "js/general_science_4_data.js"
+    "js/general_science_4_data.js",
+    "content/search/cls4-sci.json"
    ],
-   "assets": [],
-   "bytes": 1280608
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1703832
   },
   "cls4-sst": {
    "classId": "cls4",
    "name": "Social Studies (EM)",
    "files": [
-    "js/social_studies_4_data.js"
+    "js/social_studies_4_data.js",
+    "content/search/cls4-sst.json"
    ],
-   "assets": [],
-   "bytes": 1529527
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1977305
   },
   "cls4-sstum": {
    "classId": "cls4",
    "name": "Social Studies (UM)",
    "files": [
-    "js/social_studies_um_4_data.js"
+    "js/social_studies_um_4_data.js",
+    "content/search/cls4-sstum.json"
    ],
-   "assets": [],
-   "bytes": 1718225
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2174343
   },
   "cls4-isl": {
    "classId": "cls4",
    "name": "Islamyat",
    "files": [
-    "js/islamiat_4_data.js"
+    "js/islamiat_4_data.js",
+    "content/search/cls4-isl.json"
    ],
-   "assets": [],
-   "bytes": 1258534
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1643291
   },
   "cls4-pashto": {
    "classId": "cls4",
    "name": "Pashto",
    "files": [
-    "js/pashto_4_data.js"
+    "js/pashto_4_data.js",
+    "content/search/cls4-pashto.json"
    ],
-   "assets": [],
-   "bytes": 1117020
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1559134
   },
   "cls5-math": {
    "classId": "cls5",
    "name": "Mathematics",
    "files": [
-    "js/math_5_data.js"
+    "js/math_5_data.js",
+    "content/search/cls5-math.json"
    ],
-   "assets": [],
-   "bytes": 1749721
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2106738
   },
   "cls5-sci": {
    "classId": "cls5",
    "name": "General Science",
    "files": [
-    "js/general_science_5_data.js"
+    "js/general_science_5_data.js",
+    "content/search/cls5-sci.json"
    ],
-   "assets": [],
-   "bytes": 1672719
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2107475
   },
   "cls5-eng": {
    "classId": "cls5",
    "name": "English",
    "files": [
-    "js/english_5_data.js"
+    "js/english_5_data.js",
+    "content/search/cls5-eng.json"
    ],
-   "assets": [],
-   "bytes": 1384710
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1862246
   },
   "cls5-urdu": {
    "classId": "cls5",
    "name": "Urdu",
    "files": [
-    "js/urdu_5_data.js"
+    "js/urdu_5_data.js",
+    "content/search/cls5-urdu.json"
    ],
-   "assets": [],
-   "bytes": 2163567
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2703183
   },
   "cls5-isl": {
    "classId": "cls5",
    "name": "Islamyat",
    "files": [
-    "js/islamiat_5_data.js"
+    "js/islamiat_5_data.js",
+    "content/search/cls5-isl.json"
    ],
-   "assets": [],
-   "bytes": 1321188
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1729829
   },
   "cls5-sst": {
    "classId": "cls5",
    "name": "Social Studies (EM)",
    "files": [
-    "js/social_studies_5_data.js"
+    "js/social_studies_5_data.js",
+    "content/search/cls5-sst.json"
    ],
-   "assets": [],
-   "bytes": 1322355
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1748394
   },
   "cls5-sstum": {
    "classId": "cls5",
    "name": "Social Studies (UM)",
    "files": [
-    "js/social_studies_um_5_data.js"
+    "js/social_studies_um_5_data.js",
+    "content/search/cls5-sstum.json"
    ],
-   "assets": [],
-   "bytes": 1510313
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1947400
   },
   "cls5-pashto": {
    "classId": "cls5",
    "name": "Pashto",
    "files": [
-    "js/pashto_5_data.js"
+    "js/pashto_5_data.js",
+    "content/search/cls5-pashto.json"
    ],
-   "assets": [],
-   "bytes": 1338419
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1824748
   },
   "cls6-math": {
    "classId": "cls6",
    "name": "Mathematics",
    "files": [
-    "js/math_6_data.js"
+    "js/math_6_data.js",
+    "content/search/cls6-math.json"
    ],
-   "assets": [],
-   "bytes": 2960907
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3363624
   },
   "cls6-sci": {
    "classId": "cls6",
    "name": "General Science",
    "files": [
-    "js/general_science_6_data.js"
+    "js/general_science_6_data.js",
+    "content/search/cls6-sci.json"
    ],
-   "assets": [],
-   "bytes": 1473894
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1921730
   },
   "cls6-eng": {
    "classId": "cls6",
    "name": "English",
    "files": [
-    "js/english_6_data.js"
+    "js/english_6_data.js",
+    "content/search/cls6-eng.json"
    ],
-   "assets": [],
-   "bytes": 1393077
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1863191
   },
   "cls6-urdu": {
    "classId": "cls6",
    "name": "Urdu",
    "files": [
-    "js/urdu_6_data.js"
+    "js/urdu_6_data.js",
+    "content/search/cls6-urdu.json"
    ],
-   "assets": [],
-   "bytes": 2232870
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2795130
   },
   "cls6-isl": {
    "classId": "cls6",
    "name": "Islamyat",
    "files": [
-    "js/islamiat_6_data.js"
+    "js/islamiat_6_data.js",
+    "content/search/cls6-isl.json"
    ],
-   "assets": [],
-   "bytes": 2315587
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2787587
   },
   "cls6-comp": {
    "classId": "cls6",
    "name": "Computer Education",
    "files": [
-    "js/computer_6_data.js"
+    "js/computer_6_data.js",
+    "content/search/cls6-comp.json"
    ],
-   "assets": [],
-   "bytes": 743985
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1123396
   },
   "cls6-geo": {
    "classId": "cls6",
    "name": "Geography",
    "files": [
-    "js/geography_6_data.js"
+    "js/geography_6_data.js",
+    "content/search/cls6-geo.json"
    ],
-   "assets": [],
-   "bytes": 822354
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1225959
   },
   "cls6-hist": {
    "classId": "cls6",
    "name": "History",
    "files": [
-    "js/history_6_data.js"
+    "js/history_6_data.js",
+    "content/search/cls6-hist.json"
    ],
-   "assets": [],
-   "bytes": 1010984
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1445374
   },
   "cls6-hpe": {
    "classId": "cls6",
    "name": "Health & Physical Education",
    "files": [
-    "js/hpe_6_data.js"
+    "js/hpe_6_data.js",
+    "content/search/cls6-hpe.json"
    ],
-   "assets": [],
-   "bytes": 808215
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1165457
   },
   "cls6-drawing": {
    "classId": "cls6",
    "name": "Drawing / Art",
    "files": [
-    "js/drawing_6_data.js"
+    "js/drawing_6_data.js",
+    "content/search/cls6-drawing.json"
    ],
-   "assets": [],
-   "bytes": 380065
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 696026
   },
   "cls6-arabic": {
    "classId": "cls6",
    "name": "Arabic",
    "files": [
-    "js/arabic_6_data.js"
+    "js/arabic_6_data.js",
+    "content/search/cls6-arabic.json"
    ],
-   "assets": [],
-   "bytes": 1249300
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1631085
   },
   "cls6-quran": {
    "classId": "cls6",
    "name": "Mutalia-e-Quran-e-Hakeem",
    "files": [
-    "js/mutalia_quran_6_data.js"
+    "js/mutalia_quran_6_data.js",
+    "content/search/cls6-quran.json"
    ],
-   "assets": [],
-   "bytes": 1971921
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2475725
   },
   "cls6-pashto": {
    "classId": "cls6",
    "name": "Pashto",
    "files": [
-    "js/pashto_6_data.js"
+    "js/pashto_6_data.js",
+    "content/search/cls6-pashto.json"
    ],
-   "assets": [],
-   "bytes": 1178732
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1639624
   },
   "cls7-eng": {
    "classId": "cls7",
    "name": "English",
    "files": [
     "js/english_7_data.js",
-    "js/english_6_data.js"
+    "js/english_6_data.js",
+    "content/search/cls7-eng.json"
    ],
-   "assets": [],
-   "bytes": 2650155
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3121526
   },
   "cls7-urdu": {
    "classId": "cls7",
    "name": "Urdu",
    "files": [
     "js/urdu_7_data.js",
-    "js/urdu_6_data.js"
+    "js/urdu_6_data.js",
+    "content/search/cls7-urdu.json"
    ],
-   "assets": [],
-   "bytes": 4360178
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4956294
   },
   "cls7-math": {
    "classId": "cls7",
    "name": "Mathematics",
    "files": [
-    "js/math_7_data.js"
+    "js/math_7_data.js",
+    "content/search/cls7-math.json"
    ],
-   "assets": [],
-   "bytes": 3554619
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3993908
   },
   "cls7-sci": {
    "classId": "cls7",
    "name": "General Science",
    "files": [
     "js/general_science_7_data.js",
-    "js/general_science_6_data.js"
+    "js/general_science_6_data.js",
+    "content/search/cls7-sci.json"
    ],
-   "assets": [],
-   "bytes": 3157206
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3606876
   },
   "cls7-geo": {
    "classId": "cls7",
    "name": "Geography",
    "files": [
     "js/geography_7_data.js",
-    "js/geography_6_data.js"
+    "js/geography_6_data.js",
+    "content/search/cls7-geo.json"
    ],
-   "assets": [],
-   "bytes": 1725282
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2135971
   },
   "cls7-hist": {
    "classId": "cls7",
    "name": "History",
    "files": [
     "js/history_7_data.js",
-    "js/history_6_data.js"
+    "js/history_6_data.js",
+    "content/search/cls7-hist.json"
    ],
-   "assets": [],
-   "bytes": 2277415
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2745366
   },
   "cls7-comp": {
    "classId": "cls7",
    "name": "Computer Education",
    "files": [
     "js/computer_7_data.js",
-    "js/computer_6_data.js"
+    "js/computer_6_data.js",
+    "content/search/cls7-comp.json"
    ],
-   "assets": [],
-   "bytes": 1606561
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1998610
   },
   "cls7-isl": {
    "classId": "cls7",
    "name": "Islamyat",
    "files": [
     "js/islamiat_7_data.js",
-    "js/islamiat_6_data.js"
+    "js/islamiat_6_data.js",
+    "content/search/cls7-isl.json"
    ],
-   "assets": [],
-   "bytes": 4569404
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 5042867
   },
   "cls7-quran": {
    "classId": "cls7",
    "name": "Mutalia-e-Quran-e-Hakeem",
    "files": [
     "js/mutalia_quran_7_data.js",
-    "js/mutalia_quran_6_data.js"
+    "js/mutalia_quran_6_data.js",
+    "content/search/cls7-quran.json"
    ],
-   "assets": [],
-   "bytes": 4253868
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4830784
   },
   "cls7-arabic": {
    "classId": "cls7",
    "name": "Arabic",
    "files": [
     "js/arabic_7_data.js",
-    "js/arabic_6_data.js"
+    "js/arabic_6_data.js",
+    "content/search/cls7-arabic.json"
    ],
-   "assets": [],
-   "bytes": 2739073
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3207336
   },
   "cls7-drawing": {
    "classId": "cls7",
    "name": "Drawing / Art",
    "files": [
     "js/drawing_7_data.js",
-    "js/drawing_6_data.js"
+    "js/drawing_6_data.js",
+    "content/search/cls7-drawing.json"
    ],
-   "assets": [],
-   "bytes": 970901
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1299862
   },
   "cls7-hpe": {
    "classId": "cls7",
    "name": "Health & Physical Education",
    "files": [
     "js/hpe_7_data.js",
-    "js/hpe_6_data.js"
+    "js/hpe_6_data.js",
+    "content/search/cls7-hpe.json"
    ],
-   "assets": [],
-   "bytes": 2221710
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2601046
   },
   "cls8-eng": {
    "classId": "cls8",
    "name": "English",
    "files": [
     "js/english_8_data.js",
-    "js/english_6_data.js"
+    "js/english_6_data.js",
+    "content/search/cls8-eng.json"
    ],
-   "assets": [],
-   "bytes": 2432745
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2887877
   },
   "cls8-urdu": {
    "classId": "cls8",
    "name": "Urdu",
    "files": [
     "js/urdu_8_data.js",
-    "js/urdu_6_data.js"
+    "js/urdu_6_data.js",
+    "content/search/cls8-urdu.json"
    ],
-   "assets": [],
-   "bytes": 4384168
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 5048072
   },
   "cls8-math": {
    "classId": "cls8",
    "name": "Mathematics",
    "files": [
-    "js/math_8_data.js"
+    "js/math_8_data.js",
+    "content/search/cls8-math.json"
    ],
-   "assets": [],
-   "bytes": 3750869
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4170885
   },
   "cls8-sci": {
    "classId": "cls8",
    "name": "General Science",
    "files": [
     "js/general_science_8_data.js",
-    "js/general_science_6_data.js"
+    "js/general_science_6_data.js",
+    "content/search/cls8-sci.json"
    ],
-   "assets": [],
-   "bytes": 3452688
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3962337
   },
   "cls8-geo": {
    "classId": "cls8",
    "name": "Geography",
    "files": [
     "js/geography_8_data.js",
-    "js/geography_6_data.js"
+    "js/geography_6_data.js",
+    "content/search/cls8-geo.json"
    ],
-   "assets": [],
-   "bytes": 1624249
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2036599
   },
   "cls8-hist": {
    "classId": "cls8",
    "name": "History",
    "files": [
     "js/history_8_data.js",
-    "js/history_6_data.js"
+    "js/history_6_data.js",
+    "content/search/cls8-hist.json"
    ],
-   "assets": [],
-   "bytes": 2176750
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2639007
   },
   "cls8-comp": {
    "classId": "cls8",
    "name": "Computer Education",
    "files": [
     "js/computer_8_data.js",
-    "js/computer_6_data.js"
+    "js/computer_6_data.js",
+    "content/search/cls8-comp.json"
    ],
-   "assets": [],
-   "bytes": 1465405
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1848828
   },
   "cls8-isl": {
    "classId": "cls8",
    "name": "Islamyat",
    "files": [
     "js/islamiat_8_data.js",
-    "js/islamiat_6_data.js"
+    "js/islamiat_6_data.js",
+    "content/search/cls8-isl.json"
    ],
-   "assets": [],
-   "bytes": 4100814
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4658739
   },
   "cls8-quran": {
    "classId": "cls8",
    "name": "Mutalia-e-Quran-e-Hakeem",
    "files": [
     "js/mutalia_quran_8_data.js",
-    "js/mutalia_quran_6_data.js"
+    "js/mutalia_quran_6_data.js",
+    "content/search/cls8-quran.json"
    ],
-   "assets": [],
-   "bytes": 4267747
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4896050
   },
   "cls8-pashto": {
    "classId": "cls8",
    "name": "Pashto",
    "files": [
     "js/pashto_8_data.js",
-    "js/pashto_6_data.js"
+    "js/pashto_6_data.js",
+    "content/search/cls8-pashto.json"
    ],
-   "assets": [],
-   "bytes": 2867732
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3149328
   },
   "cls8-arabic": {
    "classId": "cls8",
    "name": "Arabic",
    "files": [
     "js/arabic_8_data.js",
-    "js/arabic_6_data.js"
+    "js/arabic_6_data.js",
+    "content/search/cls8-arabic.json"
    ],
-   "assets": [],
-   "bytes": 2691060
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3192669
   },
   "cls8-drawing": {
    "classId": "cls8",
    "name": "Drawing / Art",
    "files": [
     "js/drawing_8_data.js",
-    "js/drawing_6_data.js"
+    "js/drawing_6_data.js",
+    "content/search/cls8-drawing.json"
    ],
-   "assets": [],
-   "bytes": 425014
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 679962
   },
   "cls8-hpe": {
    "classId": "cls8",
    "name": "Health & Physical Education",
    "files": [
     "js/hpe_8_data.js",
-    "js/hpe_6_data.js"
+    "js/hpe_6_data.js",
+    "content/search/cls8-hpe.json"
    ],
-   "assets": [],
-   "bytes": 1283081
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1571868
   },
   "cls9-math": {
    "classId": "cls9",
    "name": "Mathematics",
    "files": [
-    "js/math_data.js"
+    "js/math_data.js",
+    "content/search/cls9-math.json"
    ],
-   "assets": [],
-   "bytes": 683848
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 984459
   },
   "cls9-phy": {
    "classId": "cls9",
    "name": "Physics",
    "files": [
     "js/data_phys.js",
-    "js/physics_10_source_data.js"
+    "js/physics_10_source_data.js",
+    "content/search/cls9-phy.json"
    ],
-   "assets": [],
-   "bytes": 8248859
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 8793434
   },
   "cls9-chem": {
    "classId": "cls9",
    "name": "Chemistry",
    "files": [
     "js/data_chem.js",
-    "js/chemistry_10_source_data.js"
+    "js/chemistry_10_source_data.js",
+    "content/search/cls9-chem.json"
    ],
-   "assets": [],
-   "bytes": 10091432
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 10535702
   },
   "cls9-bio": {
    "classId": "cls9",
    "name": "Biology",
    "files": [
-    "js/bio_data.js"
+    "js/bio_data.js",
+    "content/search/cls9-bio.json"
    ],
-   "assets": [],
-   "bytes": 3817623
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4343629
   },
   "cls9-eng": {
    "classId": "cls9",
    "name": "English",
    "files": [
     "js/english_9_book.js",
-    "js/english_6_data.js"
+    "js/english_6_data.js",
+    "content/search/cls9-eng.json"
    ],
-   "assets": [],
-   "bytes": 2634236
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3118222
   },
   "cls9-urdu": {
    "classId": "cls9",
    "name": "Urdu",
    "files": [
-    "js/urdu_data.js"
+    "js/urdu_data.js",
+    "content/search/cls9-urdu.json"
    ],
-   "assets": [],
-   "bytes": 2664436
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3059240
   },
   "cls9-isl": {
    "classId": "cls9",
    "name": "Islamyat",
    "files": [
     "js/islamiat_9_data.js",
-    "js/islamiat_6_data.js"
+    "js/islamiat_6_data.js",
+    "content/search/cls9-isl.json"
    ],
-   "assets": [],
-   "bytes": 3455618
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3878986
   },
   "cls9-comp": {
    "classId": "cls9",
    "name": "Computer Science",
    "files": [
     "js/computer_9_data.js",
-    "js/computer_6_data.js"
+    "js/computer_6_data.js",
+    "content/search/cls9-comp.json"
    ],
-   "assets": [],
-   "bytes": 2099409
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2473040
   },
   "cls9-pakstudy": {
    "classId": "cls9",
    "name": "Pakistan Studies",
    "files": [
-    "js/pakstudy_9_book.js"
+    "js/pakstudy_9_book.js",
+    "content/search/cls9-pakstudy.json"
    ],
-   "assets": [],
-   "bytes": 1125677
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1530109
   },
   "cls9-sci": {
    "classId": "cls9",
    "name": "General Science",
    "files": [
     "js/general_science_9_book.js",
-    "js/general_science_6_data.js"
+    "js/general_science_6_data.js",
+    "content/search/cls9-sci.json"
    ],
-   "assets": [],
-   "bytes": 2715445
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3184043
   },
   "cls9-hpe": {
    "classId": "cls9",
    "name": "Health & Physical Education",
    "files": [
     "js/hpe_9_data.js",
-    "js/hpe_6_data.js"
+    "js/hpe_6_data.js",
+    "content/search/cls9-hpe.json"
    ],
-   "assets": [],
-   "bytes": 1624689
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1995145
   },
   "cls9-drawing": {
    "classId": "cls9",
    "name": "Art & Model Drawing",
    "files": [
     "js/drawing_9_data.js",
-    "js/drawing_6_data.js"
+    "js/drawing_6_data.js",
+    "content/search/cls9-drawing.json"
    ],
-   "assets": [],
-   "bytes": 1093594
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1485035
   },
   "cls9-islopt": {
    "classId": "cls9",
    "name": "Islamiat Ikhtiari",
    "files": [
-    "js/islamiat_ikhtiari_10_data.js"
+    "js/islamiat_ikhtiari_10_data.js",
+    "content/search/cls9-islopt.json"
    ],
-   "assets": [],
-   "bytes": 2069805
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2621434
   },
   "cls9-quran": {
    "classId": "cls9",
    "name": "Mutalia-e-Quran",
    "files": [
     "js/mutalia_quran_9_data.js",
-    "js/mutalia_quran_6_data.js"
+    "js/mutalia_quran_6_data.js",
+    "content/search/cls9-quran.json"
    ],
-   "assets": [],
-   "bytes": 4228355
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4835516
   },
   "cls10-math": {
    "classId": "cls10",
    "name": "Mathematics",
    "files": [
-    "js/math_10_data.js"
+    "js/math_10_data.js",
+    "content/search/cls10-math.json"
    ],
-   "assets": [],
-   "bytes": 511158
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 800034
   },
   "cls10-phy": {
    "classId": "cls10",
@@ -2033,10 +2990,13 @@
    "files": [
     "js/data_phys.js",
     "js/physics_10_source_data.js",
-    "js/physics_10_book_data.js"
+    "js/physics_10_book_data.js",
+    "content/search/cls10-phy.json"
    ],
-   "assets": [],
-   "bytes": 9957827
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 10468913
   },
   "cls10-chem": {
    "classId": "cls10",
@@ -2044,10 +3004,13 @@
    "files": [
     "js/data_chem.js",
     "js/chemistry_10_source_data.js",
-    "js/chemistry_10_book_data.js"
+    "js/chemistry_10_book_data.js",
+    "content/search/cls10-chem.json"
    ],
-   "assets": [],
-   "bytes": 12363488
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 12850313
   },
   "cls10-bio": {
    "classId": "cls10",
@@ -2064,10 +3027,13 @@
     "js/biology_10_unit16_source.js",
     "js/biology_10_unit17_source.js",
     "js/biology_10_unit18_source.js",
-    "js/biology_10_back_source.js"
+    "js/biology_10_back_source.js",
+    "content/search/cls10-bio.json"
    ],
-   "assets": [],
-   "bytes": 2390959
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2941189
   },
   "cls10-eng": {
    "classId": "cls10",
@@ -2075,152 +3041,200 @@
    "files": [
     "js/data_eng.js",
     "js/english_10_data.js",
-    "js/english_10_source_review.js"
+    "js/english_10_source_review.js",
+    "content/search/cls10-eng.json"
    ],
-   "assets": [],
-   "bytes": 3081675
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3577301
   },
   "cls10-pakstudy": {
    "classId": "cls10",
    "name": "Pakistan Studies",
    "files": [
-    "js/pakstudy_10_data.js"
+    "js/pakstudy_10_data.js",
+    "content/search/cls10-pakstudy.json"
    ],
-   "assets": [],
-   "bytes": 1190462
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1615940
   },
   "cls10-isl": {
    "classId": "cls10",
    "name": "Islamyat",
    "files": [
     "js/islamiat_9_data.js",
-    "js/islamiat_6_data.js"
+    "js/islamiat_6_data.js",
+    "content/search/cls10-isl.json"
    ],
-   "assets": [],
-   "bytes": 3455618
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3878986
   },
   "cls10-urdu": {
    "classId": "cls10",
    "name": "Urdu",
    "files": [
     "js/urdu_10_data.js",
-    "js/urdu_6_data.js"
+    "js/urdu_6_data.js",
+    "content/search/cls10-urdu.json"
    ],
-   "assets": [],
-   "bytes": 3626663
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4208415
   },
   "cls10-comp": {
    "classId": "cls10",
    "name": "Computer Science",
    "files": [
     "js/computer_10_data.js",
-    "js/computer_6_data.js"
+    "js/computer_6_data.js",
+    "content/search/cls10-comp.json"
    ],
-   "assets": [],
-   "bytes": 2424013
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2799140
   },
   "cls10-sci": {
    "classId": "cls10",
    "name": "General Science",
    "files": [
     "js/general_science_10_data.js",
-    "js/general_science_6_data.js"
+    "js/general_science_6_data.js",
+    "content/search/cls10-sci.json"
    ],
-   "assets": [],
-   "bytes": 3004233
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3490536
   },
   "cls10-hpe": {
    "classId": "cls10",
    "name": "Health & Physical Education",
    "files": [
     "js/hpe_10_data.js",
-    "js/hpe_6_data.js"
+    "js/hpe_6_data.js",
+    "content/search/cls10-hpe.json"
    ],
-   "assets": [],
-   "bytes": 2031354
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2435843
   },
   "cls10-drawing": {
    "classId": "cls10",
    "name": "Art & Model Drawing",
    "files": [
     "js/drawing_10_data.js",
-    "js/drawing_6_data.js"
+    "js/drawing_6_data.js",
+    "content/search/cls10-drawing.json"
    ],
-   "assets": [],
-   "bytes": 870431
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 1218190
   },
   "cls10-islopt": {
    "classId": "cls10",
    "name": "Islamiat Ikhtiari",
    "files": [
-    "js/islamiat_ikhtiari_10_data.js"
+    "js/islamiat_ikhtiari_10_data.js",
+    "content/search/cls10-islopt.json"
    ],
-   "assets": [],
-   "bytes": 2069805
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2621434
   },
   "cls10-quran": {
    "classId": "cls10",
    "name": "Mutalia-e-Quran",
    "files": [
     "js/mutalia_quran_10_data.js",
-    "js/mutalia_quran_6_data.js"
+    "js/mutalia_quran_6_data.js",
+    "content/search/cls10-quran.json"
    ],
-   "assets": [],
-   "bytes": 4948284
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 5576581
   },
   "cls11-math": {
    "classId": "cls11",
    "name": "Mathematics",
    "files": [
-    "js/math_11_data.js"
+    "js/math_11_data.js",
+    "content/search/cls11-math.json"
    ],
-   "assets": [],
-   "bytes": 5480397
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 5900770
   },
   "cls11-phy": {
    "classId": "cls11",
    "name": "Physics",
    "files": [
-    "js/phys_11_data.js"
+    "js/phys_11_data.js",
+    "content/search/cls11-phy.json"
    ],
-   "assets": [],
-   "bytes": 2489656
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 3017121
   },
   "cls11-chem": {
    "classId": "cls11",
    "name": "Chemistry",
    "files": [
-    "js/chem_11_data.js"
+    "js/chem_11_data.js",
+    "content/search/cls11-chem.json"
    ],
-   "assets": [],
-   "bytes": 4648834
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 5231054
   },
   "cls11-bio": {
    "classId": "cls11",
    "name": "Biology",
    "files": [
-    "js/bio_11_data.js"
+    "js/bio_11_data.js",
+    "content/search/cls11-bio.json"
    ],
-   "assets": [],
-   "bytes": 3945745
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4751127
   },
   "cls11-stat": {
    "classId": "cls11",
    "name": "Statistics",
    "files": [
-    "js/stat_11_data.js"
+    "js/stat_11_data.js",
+    "content/search/cls11-stat.json"
    ],
-   "assets": [],
-   "bytes": 2323969
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2729937
   },
   "cls11-eng": {
    "classId": "cls11",
    "name": "English",
    "files": [
-    "js/eng_11_data.js"
+    "js/eng_11_data.js",
+    "content/search/cls11-eng.json"
    ],
-   "assets": [],
-   "bytes": 2274235
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 2988853
   },
   "cls11-ishist": {
    "classId": "cls11",
@@ -2233,10 +3247,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-ishist.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16780058
   },
   "cls11-cs": {
    "classId": "cls11",
@@ -2249,10 +3266,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-cs.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16620622
   },
   "cls11-ikhtiari": {
    "classId": "cls11",
@@ -2265,10 +3285,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-ikhtiari.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16763819
   },
   "cls11-civics": {
    "classId": "cls11",
@@ -2281,10 +3304,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-civics.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16635878
   },
   "cls11-urdu": {
    "classId": "cls11",
@@ -2297,10 +3323,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-urdu.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16598278
   },
   "cls11-mq": {
    "classId": "cls11",
@@ -2313,10 +3342,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-mq.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16757264
   },
   "cls11-hpe": {
    "classId": "cls11",
@@ -2329,10 +3361,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-hpe.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16504844
   },
   "cls11-isl": {
    "classId": "cls11",
@@ -2345,10 +3380,13 @@
     "js/urdu_11_data.js",
     "js/mq_11_data.js",
     "js/hpe_11_data.js",
-    "js/isl_11_data.js"
+    "js/isl_11_data.js",
+    "content/search/cls11-isl.json"
    ],
-   "assets": [],
-   "bytes": 16129299
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 16584269
   },
   "cls12-math": {
    "classId": "cls12",
@@ -2373,7 +3411,8 @@
     "js/math12_legibility_recovery.js",
     "js/math12_unit9_practice.js",
     "js/math12_unit6_exercise61_recovery.js",
-    "js/math12_study_bank_warm.js"
+    "js/math12_study_bank_warm.js",
+    "content/search/cls12-math.json"
    ],
    "assets": [
     "assets/math12/back-author-quill.jpg",
@@ -2422,9 +3461,10 @@
     "assets/math12/radar-gun-source.jpg",
     "assets/math12/unit2-animals.jpg",
     "assets/math12/unit2-dirichlet.jpg",
-    "assets/math12/vector-project-source141.jpg"
+    "assets/math12/vector-project-source141.jpg",
+    "content/search/index.json"
    ],
-   "bytes": 9085092
+   "bytes": 9578252
   },
   "cls12-phy": {
    "classId": "cls12",
@@ -2434,10 +3474,13 @@
     "js/phys12_unit11_study.js",
     "js/phys12_exercise_banks.js",
     "js/data_phys.js",
-    "js/physics_10_source_data.js"
+    "js/physics_10_source_data.js",
+    "content/search/cls12-phy.json"
    ],
-   "assets": [],
-   "bytes": 26405367
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 26955508
   },
   "cls12-chem": {
    "classId": "cls12",
@@ -2445,7 +3488,8 @@
    "files": [
     "js/chem_12_data.js",
     "js/chem12_unit13_study.js",
-    "js/chem12_exercise_banks.js"
+    "js/chem12_exercise_banks.js",
+    "content/search/cls12-chem.json"
    ],
    "assets": [
     "assets/chem12/atmospheric-layers.jpg",
@@ -2453,128 +3497,165 @@
     "assets/chem12/fractional-distillation-column.jpg",
     "assets/chem12/taj-mahal-acid-rain.jpg",
     "assets/chem12/three-way-catalytic-converter.jpg",
-    "assets/chem12/unit22-industrial-chemistry-cover.jpg"
+    "assets/chem12/unit22-industrial-chemistry-cover.jpg",
+    "content/search/index.json"
    ],
-   "bytes": 20349134
+   "bytes": 21003111
   },
   "cls12-stat": {
    "classId": "cls12",
    "name": "Statistics",
    "files": [
     "js/stat_12_data.js",
-    "js/stat12_exercise_banks.js"
+    "js/stat12_exercise_banks.js",
+    "content/search/cls12-stat.json"
    ],
-   "assets": [],
-   "bytes": 9104772
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 9517737
   },
   "cls12-eng": {
    "classId": "cls12",
    "name": "English",
    "files": [
     "js/english_12_data.js",
-    "js/eng12_exercise_banks.js"
+    "js/eng12_exercise_banks.js",
+    "content/search/cls12-eng.json"
    ],
-   "assets": [],
-   "bytes": 5952580
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 6618301
   },
   "cls12-urdu": {
    "classId": "cls12",
    "name": "Urdu",
    "files": [
     "js/urdu_12_data.js",
-    "js/urdu12_exercise_banks.js"
+    "js/urdu12_exercise_banks.js",
+    "content/search/cls12-urdu.json"
    ],
-   "assets": [],
-   "bytes": 7726576
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 8251203
   },
   "cls12-bio": {
    "classId": "cls12",
    "name": "Biology",
    "files": [
-    "js/biology_12_data.js"
+    "js/biology_12_data.js",
+    "content/search/cls12-bio.json"
    ],
-   "assets": [],
-   "bytes": 10613705
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 11401553
   },
   "cls12-pak": {
    "classId": "cls12",
    "name": "Pakistan Studies",
    "files": [
     "js/pakstudy_12_data.js",
-    "js/pakstudy12_exercise_banks.js"
+    "js/pakstudy12_exercise_banks.js",
+    "content/search/cls12-pak.json"
    ],
-   "assets": [],
-   "bytes": 7525845
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 8098636
   },
   "cls12-comp": {
    "classId": "cls12",
    "name": "Computer Science",
    "files": [
     "js/computer_12_data.js",
-    "js/comp12_exercise_banks.js"
+    "js/comp12_exercise_banks.js",
+    "content/search/cls12-comp.json"
    ],
-   "assets": [],
-   "bytes": 5756907
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 6187566
   },
   "cls12-civics": {
    "classId": "cls12",
    "name": "Civics",
    "files": [
     "js/civics_12_data.js",
-    "js/civics12_exercise_banks.js"
+    "js/civics12_exercise_banks.js",
+    "content/search/cls12-civics.json"
    ],
-   "assets": [],
-   "bytes": 7362628
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 7903944
   },
   "cls12-econ": {
    "classId": "cls12",
    "name": "Economics",
    "files": [
     "js/economics_12_data.js",
-    "js/econ12_exercise_banks.js"
+    "js/econ12_exercise_banks.js",
+    "content/search/cls12-econ.json"
    ],
-   "assets": [],
-   "bytes": 18067924
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 18774943
   },
   "cls12-hpe": {
    "classId": "cls12",
    "name": "Health & Physical Education",
    "files": [
     "js/hpe_12_data.js",
-    "js/hpe12_exercise_banks.js"
+    "js/hpe12_exercise_banks.js",
+    "content/search/cls12-hpe.json"
    ],
-   "assets": [],
-   "bytes": 3930983
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 4322348
   },
   "cls12-islopt": {
    "classId": "cls12",
    "name": "Islamiat Ikhtiari",
    "files": [
     "js/islamiat_ikhtiari_12_data.js",
-    "js/islopt12_exercise_banks.js"
+    "js/islopt12_exercise_banks.js",
+    "content/search/cls12-islopt.json"
    ],
-   "assets": [],
-   "bytes": 8984262
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 9575507
   },
   "cls12-islhist": {
    "classId": "cls12",
    "name": "Islamic History",
    "files": [
     "js/islamic_history_12_data.js",
-    "js/islhist12_exercise_banks.js"
+    "js/islhist12_exercise_banks.js",
+    "content/search/cls12-islhist.json"
    ],
-   "assets": [],
-   "bytes": 6135459
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 6771663
   },
   "cls12-quran": {
    "classId": "cls12",
    "name": "Mutalia-e-Quran",
    "files": [
     "js/quran_12_data.js",
-    "js/quran12_exercise_banks.js"
+    "js/quran12_exercise_banks.js",
+    "content/search/cls12-quran.json"
    ],
-   "assets": [],
-   "bytes": 13100630
+   "assets": [
+    "content/search/index.json"
+   ],
+   "bytes": 13807507
   }
  }
 }
