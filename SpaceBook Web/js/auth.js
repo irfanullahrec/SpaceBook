@@ -43,8 +43,8 @@
         <button class="auth-close" type="button" aria-label="Close">✕</button>
         <h2 id="authTitle">Welcome to TuitionHub</h2>
         <div class="auth-tabs" role="tablist">
-          <button type="button" data-tab="login" class="active">Login</button>
-          <button type="button" data-tab="register">Create Account</button>
+          <button type="button" role="tab" aria-selected="true" data-tab="login" class="active">Login</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="register">Create Account</button>
         </div>
 
         <form class="auth-form" data-form="login" novalidate>
@@ -113,7 +113,7 @@
 
   function showTab(tab) {
     const m = modal();
-    m.querySelectorAll('.auth-tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    m.querySelectorAll('.auth-tabs button').forEach(b => { b.classList.toggle('active', b.dataset.tab === tab); b.setAttribute('aria-selected', String(b.dataset.tab === tab)); });
     m.querySelectorAll('.auth-form').forEach(f => { f.hidden = f.dataset.form !== tab; });
     const first = m.querySelector(`.auth-form[data-form="${tab}"] input`);
     if (first) first.focus();

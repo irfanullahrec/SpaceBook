@@ -400,3 +400,19 @@ Not verified: with a real screen reader (NVDA / TalkBack / VoiceOver) and in a r
 Risks: a page that sets `role` or `tabindex` on a tab itself is overwritten on the next sync; a bar with fewer than two visible tabs is left alone.
 
 Next: regenerate the derived files from a clean checkout; then the Phase 12 remainder (axe-style checks across the reader views, offline full-text search, docs) and the second half of Phase 5.
+
+## 2026-10-20 — Phase 12 (continued): keyboard for everything clickable, contrast, axe-core, language of the book
+Done (`docs/ACCESSIBILITY.md` has the full list and the "not done"):
+- `js/core/a11y.js`: subject cards, the brand and other `onclick` elements become buttons on the first Tab press (no observer); card headers that hold their own controls (full screen, language tabs) use their title as the button (`aria-expanded` follows the card; nested controls were the one serious axe finding); lesson text is one tab stop with arrow-key movement between sentences; the question / practice window and the sign-in tabs join the focus trap / tab logic. `css/a11y.css`: visible focus ring, reduced motion.
+- Contrast (AA): `tools/a11y_contrast.js` found 112 text/background pairs below 4.5:1 (3:1 large text) in the stylesheets and in `style=""` strings (white on #16a34a 3.3:1, brand blue with white 4.1:1); each was darkened by the smallest same-hue step; 0 remain; `--check` is a CI gate. The edits are colour values only.
+- `index.html`: the two `nav` landmarks have names, the practice window is a labelled `dialog`; `auth.js`: the sign-in tab list now has tabs; `offline.js`: no second banner landmark in the dialog.
+- `js/sb_rtl.js`: right-to-left reading areas also carry `lang="ur"|"ps"|"ar"` from the subject's medium.
+- axe-core 4.10.2 added as a dev dependency (exact version); `tests/a11y/axe.js` runs it on 15 views of the real page.
+
+Verified by: `tests/a11y/tabs.js` 50/0 (adds: cards, Enter / Space, accordion with `aria-expanded`, no button contains another control, sentences one tab stop + arrows, sign-in tabs, `lang` per medium); `tests/a11y/contrast.js` 14/0; `tools/a11y_contrast.js --check` 0 failing (was 112); `tests/a11y/axe.js` first run 66 serious/critical nodes (nested interactive controls, sign-in tablist) + 7 moderate, after the fixes 0 rule hits on 15 views; git diff of the six edited stylesheet/script files against the previous commit shows only colour tokens changed (checked line by line; one dropped `!important` found and restored); validate 1001/0, smoke 0 failed, hooks 17/0, wrappers audit ok, offline 41/0.
+
+Not verified: any screen reader; a real browser (visible focus ring, target size, tab order across the page, 375 px dialogs); colour contrast of text whose background comes from a parent / gradient / `var()`; the HTML snapshot baseline must be regenerated for the tabs whose inline colours changed (done with the generated files); other dialogs / popovers; offline full-text search (not built).
+
+Risks: the darker greens and blues are visibly different in a few places (e.g. correct-answer pills #16a34a -> #12883e); elements that were mouse-only now take the focus: a page that styles `:focus` globally may look different.
+
+Next: regenerate derived files and the snapshot baseline from a clean checkout; then offline full-text search or the Phase 5 second half.

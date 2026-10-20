@@ -208,7 +208,7 @@
     if (!doc || panel) return;
     const overlay = doc.createElement('div');
     overlay.className = 'sb-off-overlay'; overlay.setAttribute('role', 'dialog'); overlay.setAttribute('aria-modal', 'true'); overlay.setAttribute('aria-labelledby', 'sbOffTitle');
-    overlay.innerHTML = '<div class="sb-off-box"><header><h2 id="sbOffTitle">Offline books</h2><button type="button" class="sb-off-close" aria-label="Close">✕</button></header>' +
+    overlay.innerHTML = '<div class="sb-off-box"><div class="sb-off-head"><h2 id="sbOffTitle">Offline books</h2><button type="button" class="sb-off-close" aria-label="Close">✕</button></div>' +
       '<p class="sb-off-note">Download a subject while you are online. It then opens with no connection. Your progress is kept on this device and sent when you are back online.</p>' +
       '<div class="sb-off-meter" aria-live="polite"></div><div class="sb-off-list">Loading…</div>' +
       '<div class="sb-off-actions"><button type="button" data-act="download" disabled>Download</button><button type="button" data-act="remove" disabled>Remove from this device</button></div>' +

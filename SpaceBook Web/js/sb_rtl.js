@@ -30,8 +30,11 @@
     const rtl = !english && ar + la > 20 && ar > la * 1.2;
     if (rtl) {
       if (!el.classList.contains('sb-rtl-medium')) { el.classList.add('sb-rtl-medium'); el.setAttribute('dir', 'rtl'); }
+      // the language of the book (screen-reader voice, hyphenation, font choice): known from the subject's medium, never guessed from the script
+      if ((medium === 'ur' || medium === 'ps' || medium === 'ar') && (!el.hasAttribute('lang') || el.hasAttribute('data-sb-lang'))) { el.setAttribute('lang', medium); el.setAttribute('data-sb-lang', ''); }
     } else if (el.classList.contains('sb-rtl-medium') && !inner) {
       el.classList.remove('sb-rtl-medium'); if (el.getAttribute('dir') === 'rtl') el.removeAttribute('dir');
+      if (el.hasAttribute('data-sb-lang')) { el.removeAttribute('lang'); el.removeAttribute('data-sb-lang'); }
     }
   }
   function scan() {

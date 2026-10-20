@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/class12_study_views.css?v=20261018_3">
   <link rel="stylesheet" href="css/sb_theme.css?v=20261019_th4">
   <link rel="stylesheet" href="css/sb_mcq.css?v=20261019_q3">
+  <link rel="stylesheet" href="css/a11y.css?v=20261020_1">
 </head>
 <body>
 
@@ -42,7 +43,7 @@
       </div>
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav" aria-label="Sections">
       <div class="nav-label">Main Menu</div>
       <a class="nav-link" data-page="home">
         <span class="nav-icon">🏠</span> Home (Dashboard)
@@ -92,7 +93,7 @@
     </div>
 
     <!-- Integrated Navigation Tabs directly in Header -->
-    <nav class="header-nav-tabs" id="headerNavTabs">
+    <nav class="header-nav-tabs" id="headerNavTabs" aria-label="Page navigation">
       <button class="nav-tab-back" id="navGlobalBackBtn" onclick="handleGlobalNavBack()" title="Back to previous page">
         <span class="nav-back-arrow">←</span> <span>Back</span>
       </button>
@@ -166,11 +167,11 @@
   <!-- ══════════════════════════════════════
        SQ / LQ / MCQ / QUICK PRACTICE MODAL
        ══════════════════════════════════════ -->
-  <div class="modal-overlay" id="modalOverlay">
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeader">
     <div class="modal-box">
       <div class="modal-header">
         <h3 id="modalHeader">Questions</h3>
-        <button class="modal-close" onclick="closeModal()">✕</button>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
       </div>
       <div class="modal-body" id="modalBody"></div>
     </div>

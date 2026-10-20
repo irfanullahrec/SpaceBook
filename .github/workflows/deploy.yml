@@ -76,9 +76,13 @@ jobs:
       - name: lexicon: the generated file answers like the old book scan and loads no book
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/lexicon/equivalence.js
-      - name: accessibility basics (tab bars, focus trap on the dialogs)
+      - name: accessibility (tab bars, keyboard, dialogs, text contrast, axe-core)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/a11y/tabs.js
+        run: |
+          node --max-old-space-size=6144 tests/a11y/tabs.js
+          node tests/a11y/contrast.js
+          node --max-old-space-size=8192 tests/a11y/axe.js
+          node tools/a11y_contrast.js --check
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js

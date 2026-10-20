@@ -102,6 +102,10 @@ const check = (name, ok, extra) => { if (ok) passed++; else { failed++; console.
   authFocusables[authFocusables.length - 1].focus();
   key('Tab');
   check('Tab on the last control of the sign-in dialog stays in the dialog', authModal.contains(d.activeElement));
+  const authTabs = [...authModal.querySelectorAll('.auth-tabs > button')];
+  check('the sign-in tabs are tabs with one selected', authTabs.length === 2 && authTabs.every(t => t.getAttribute('role') === 'tab') && authTabs.filter(t => t.getAttribute('aria-selected') === 'true').length === 1);
+  authTabs[0].focus(); authTabs[0].dispatchEvent(new w.KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true, cancelable: true }));
+  check('ArrowRight on "Login" opens "Create Account" and the selection follows', authTabs[1].getAttribute('aria-selected') === 'true' && authTabs[0].getAttribute('aria-selected') === 'false' && !authModal.querySelector('.auth-form[data-form="register"]').hidden);
   key('Escape');
   check('Escape closes the sign-in dialog and the focus returns to what opened it', authModal.hidden && d.activeElement === trigger, d.activeElement && (d.activeElement.id || d.activeElement.tagName));
 
@@ -114,6 +118,67 @@ const check = (name, ok, extra) => { if (ok) passed++; else { failed++; console.
     check('Escape closes the offline books dialog and the focus returns to the opener', !d.querySelector('.sb-off-overlay') && d.activeElement === trigger);
     try { await p; } catch (e) { /* the map is not served in this test */ }
   }
+
+  // things that are clicked but are not buttons
+  const tabKey = () => d.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true }));
+  const send = (el, k, extra) => el.dispatchEvent(new w.KeyboardEvent('keydown', Object.assign({ key: k, bubbles: true, cancelable: true }, extra || {})));
+  r("goToSubjects('cls9')"); await app.settle();
+  const cards = [...d.querySelectorAll('.subject-card-wrapper')];
+  check('the subject cards exist', cards.length >= 5, String(cards.length));
+  check('before any keyboard use the cards are plain divs', cards.every(c => !c.hasAttribute('role')));
+  tabKey();
+  check('the first Tab press makes every subject card a button in the Tab order', cards.every(c => c.getAttribute('role') === 'button' && c.tabIndex === 0));
+  let opened = null; const realOpenSubject = w.openSubject; w.openSubject = (a, b) => { opened = a + '/' + b; };
+  cards[1].focus(); send(cards[1], 'Enter');
+  check('Enter on a card opens that subject', opened && /^cls9\//.test(opened) && opened === (cards[1].getAttribute('onclick').match(/openSubject\('([^']+)','([^']+)'\)/) || []).slice(1, 3).join('/'), String(opened));
+  opened = null; send(cards[2], ' ');
+  check('Space does the same', !!opened);
+  w.openSubject = realOpenSubject;
+  const brand = d.querySelector('.header-brand');
+  tabKey();
+  check('the brand in the header is a button too', brand.getAttribute('role') === 'button' && brand.tabIndex === 0);
+  check('real buttons are not given a role (the tab bars have their own)', [...d.querySelectorAll('button')].every(b => b.getAttribute('role') !== 'button'));
+
+  r("openSubject('cls9', 'cls9-math')"); await app.settle();
+  tabKey();
+  const acc = d.querySelector('.math-acc-header');
+  const accBtn = acc.querySelector(':scope > [data-sb-proxy]') || acc;               // the title stands in when the header holds its own controls
+  check('an accordion header has a button (itself, or its title) with aria-expanded', accBtn.getAttribute('role') === 'button' && accBtn.getAttribute('aria-expanded') === 'false', accBtn.outerHTML.slice(0, 100));
+  const wasOpen = acc.closest('.math-accordion-card').classList.contains('open');
+  accBtn.focus(); send(accBtn, 'Enter'); await app.settle();
+  check('Enter opens it and aria-expanded follows', acc.closest('.math-accordion-card').classList.contains('open') !== wasOpen && accBtn.getAttribute('aria-expanded') === (wasOpen ? 'false' : 'true'));
+  check('no button contains another control (they may not nest)', [...d.querySelectorAll('[role="button"]')].every(b => !b.querySelector('button, a[href], input, select, textarea, [role="tab"], [role="button"]')), [...d.querySelectorAll('[role="button"]')].filter(b => b.querySelector('button, a[href], input, select, textarea, [role="tab"], [role="button"]')).map(b => b.className).join(','));
+  send(accBtn, ' '); await app.settle();
+  check('Space closes it again', acc.closest('.math-accordion-card').classList.contains('open') === wasOpen);
+
+  r("openSubject('cls9', 'cls9-bio')"); await app.settle();
+  r("selectSubjectChapter('bio', 0, 'cls9')"); await app.settle();
+  const lessonTab = d.querySelector('.math-nav-tabs button[data-tab="lesson"]'); if (lessonTab) { lessonTab.click(); await app.settle(); }
+  tabKey();
+  const sents = [...d.querySelectorAll('.lesson-sentence:not([role])')];     // the Quran verses carry their own role and tab stop
+  check('the lesson has sentences', sents.length > 20, String(sents.length));
+  check('the whole text is one tab stop (not one per sentence)', sents.filter(s => s.tabIndex === 0).length === 1 && sents[0].tabIndex === 0);
+  check('a sentence is not announced as a button (the text keeps reading as text)', !sents[0].hasAttribute('role'));
+  sents[0].focus(); send(sents[0], 'ArrowDown');
+  check('ArrowDown moves to the next sentence and makes it the tab stop', d.activeElement === sents[1] && sents[1].tabIndex === 0 && sents[0].tabIndex === -1);
+  send(sents[1], 'End');
+  check('End goes to the last sentence', d.activeElement === sents[sents.length - 1]);
+  send(d.activeElement, 'Home'); send(d.activeElement, 'ArrowUp');
+  check('ArrowUp on the first sentence stays on it', d.activeElement === sents[0]);
+  let clicks = 0; sents[0].addEventListener('click', () => { clicks++; });
+  send(sents[0], 'Enter');
+  check('Enter on a sentence clicks it (opens its translation)', clicks === 1);
+  sents[5].click();
+  check('a mouse click on a sentence makes it the tab stop', sents[5].tabIndex === 0 && sents.filter(s => s.tabIndex === 0).length === 1);
+
+  // the language and direction of what is being read (screen-reader voice)
+  r("openSubject('cls9', 'cls9-urdu')"); await app.settle(); await app.settle();
+  const urduAreas = [...d.querySelectorAll('.sb-rtl-medium')];
+  check('an Urdu book has right-to-left reading areas that say lang="ur"', urduAreas.length > 0 && urduAreas.every(a => a.getAttribute('dir') === 'rtl') && urduAreas.some(a => a.getAttribute('lang') === 'ur'), urduAreas.map(a => a.getAttribute('lang')).join(','));
+  r("openSubject('cls3', 'cls3-pashto')"); await app.settle(); await app.settle();
+  check('a Pashto book says lang="ps"', [...d.querySelectorAll('.sb-rtl-medium')].some(a => a.getAttribute('lang') === 'ps'));
+  r("openSubject('cls9', 'cls9-eng')"); await app.settle(); await app.settle();
+  check('an English book keeps the page language (no lang on its areas, none left over from the Pashto book)', d.querySelectorAll('[data-sb-lang]').length === 0 && d.documentElement.getAttribute('lang') === 'en');
 
   console.log(`accessibility tests: ${passed} passed, ${failed} failed`);
   process.exit(failed ? 1 : 0);

@@ -198,7 +198,7 @@
   function setTopic(card, open) {
     card.classList.toggle('sb-topic-closed', !open);
     const chev = card.querySelector(':scope > .sb-topic-head .sb-topic-chev'); if (chev) chev.textContent = open ? '▾' : '▸';
-    const head = card.querySelector(':scope > .sb-topic-head'); if (head) head.setAttribute('aria-expanded', String(open));
+    const head = card.querySelector(':scope > .sb-topic-head'); if (head && window.SBA11y) window.SBA11y.enhance(head.parentElement);   // aria-expanded sits on the title that acts as the button (js/core/a11y.js)
   }
   function setupTopic(card) {
     if (card.dataset.sbTopic) return;
@@ -214,7 +214,7 @@
     const icon = head.querySelector(':scope > .math-acc-icon, :scope > .slo-acc-icon');
     if (icon) head.insertBefore(tools, icon); else head.appendChild(tools);
     if (ownToggle) { card.dataset.sbTopic = 'own'; return; }
-    head.classList.add('sb-topic-head'); head.setAttribute('role', 'button'); head.tabIndex = 0;
+    head.classList.add('sb-topic-head');       // keyboard and screen reader: js/core/a11y.js makes the title the button (the header holds the full-screen control, and controls may not nest in a button)
     setTopic(card, openedTopics.has(topicKey(card)));
   }
   document.addEventListener('click', e => {

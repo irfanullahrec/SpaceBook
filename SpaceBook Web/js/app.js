@@ -2396,7 +2396,7 @@ function openBioView(classId, subj) {
   const chapBtns = chList.map((ch, i) => `
     <button class="bio-ch-btn ${i === 0 ? "active" : ""}" id="bio-btn-${i}"
             onclick="selectBioChapter(${i})">
-      <span class="ch-btn-num" style="background:#059669;color:#fff;">Unit ${ch.number || ch.num || (i + 1)}</span>
+      <span class="ch-btn-num" style="background:#05875f;color:#fff;">Unit ${ch.number || ch.num || (i + 1)}</span>
       <span class="ch-btn-info">
         <span class="ch-btn-name" style="font-weight:700;font-size:0.92rem;color:#1e293b;">${ch.title || ch.name || ""}</span>
         <span class="ch-btn-sub" style="font-size:0.75rem;color:#64748b;">${ch.pageRange || ""}</span>
@@ -2800,14 +2800,14 @@ function renderBioExMcqsHtml(mcqs) {
     const letters = ['A', 'B', 'C', 'D'];
     const opts = (m.options || []).map((opt, oIdx) => `
       <div class="bio-mcq-opt" id="bio-ex-m-${idx}-opt-${oIdx}" onclick="checkBioExMcq(${idx}, ${oIdx}, ${m.ans})" style="padding:0.65rem 1rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;margin-bottom:0.5rem;cursor:pointer;display:flex;align-items:center;gap:0.75rem;transition:all 0.15s;">
-        <span style="font-weight:800;color:#059669;width:24px;height:24px;border-radius:50%;background:#dcfce7;display:inline-flex;align-items:center;justify-content:center;font-size:0.8rem;">${letters[oIdx]}</span>
+        <span style="font-weight:800;color:#047d58;width:24px;height:24px;border-radius:50%;background:#dcfce7;display:inline-flex;align-items:center;justify-content:center;font-size:0.8rem;">${letters[oIdx]}</span>
         <span style="font-size:0.95rem;color:#334155;">${opt}</span>
       </div>`).join('');
 
     return `
       <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;box-shadow:0 2px 6px rgba(0,0,0,0.02);">
         <div style="display:flex;gap:0.75rem;align-items:flex-start;margin-bottom:1rem;">
-          <span style="background:#059669;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;flex-shrink:0;">Q${idx + 1}</span>
+          <span style="background:#05875f;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;flex-shrink:0;">Q${idx + 1}</span>
           <div style="font-size:1.02rem;font-weight:700;color:#1e293b;line-height:1.5;">${m.q}</div>
         </div>
         <div style="margin-left:2.5rem;">${opts}</div>
@@ -2855,7 +2855,7 @@ function renderBioExSqsHtml(sqs) {
   return sqs.map((sq, idx) => `
     <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,0.03);">
       <div style="display:flex;gap:0.75rem;align-items:flex-start;margin-bottom:0.75rem;">
-        <span style="background:#059669;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;flex-shrink:0;">SQ ${idx + 1}</span>
+        <span style="background:#05875f;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;flex-shrink:0;">SQ ${idx + 1}</span>
         <h4 style="margin:0;font-size:1.02rem;color:#1e293b;line-height:1.5;">${sq.q}</h4>
       </div>
       <div style="margin-left:2.75rem;background:#f8fafc;padding:1rem 1.25rem;border-radius:8px;border-left:3.5px solid #059669;font-size:0.95rem;color:#334155;line-height:1.7;white-space:pre-line;">
@@ -2948,7 +2948,7 @@ function renderBioSloMcqsHtml(mcqs) {
 
     const opts = (m.options || []).map((opt, oIdx) => `
       <div class="bio-slo-opt" id="bio-slo-m-${idx}-opt-${oIdx}" onclick="checkBioSloMcq(${idx}, ${oIdx}, ${m.ans})" style="padding:0.65rem 1rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;margin-bottom:0.5rem;cursor:pointer;display:flex;align-items:center;gap:0.75rem;transition:all 0.15s;">
-        <span style="font-weight:800;color:#059669;width:24px;height:24px;border-radius:50%;background:#dcfce7;display:inline-flex;align-items:center;justify-content:center;font-size:0.8rem;">${letters[oIdx]}</span>
+        <span style="font-weight:800;color:#047d58;width:24px;height:24px;border-radius:50%;background:#dcfce7;display:inline-flex;align-items:center;justify-content:center;font-size:0.8rem;">${letters[oIdx]}</span>
         <span style="font-size:0.95rem;color:#334155;">${opt}</span>
       </div>`).join('');
 
@@ -2956,7 +2956,7 @@ function renderBioSloMcqsHtml(mcqs) {
       <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;box-shadow:0 2px 6px rgba(0,0,0,0.02);">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;margin-bottom:0.75rem;flex-wrap:wrap;">
           <div style="display:flex;gap:0.5rem;align-items:center;">
-            <span style="background:#059669;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;">SLO MCQ ${idx + 1}</span>
+            <span style="background:#05875f;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;">SLO MCQ ${idx + 1}</span>
             <span style="font-size:0.75rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:99px;${cogStyle}">${m.cognitiveLevel || 'Understanding'}</span>
           </div>
         </div>
@@ -3007,7 +3007,7 @@ function renderBioSloSqsHtml(sqs) {
     <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,0.03);">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;margin-bottom:0.75rem;">
         <div style="display:flex;gap:0.5rem;align-items:center;">
-          <span style="background:#059669;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;">SLO SQ ${idx + 1}</span>
+          <span style="background:#05875f;color:#fff;font-weight:800;font-size:0.8rem;padding:0.2rem 0.6rem;border-radius:6px;">SLO SQ ${idx + 1}</span>
           ${sq.cognitiveLevel ? `<span style="font-size:0.72rem;font-weight:700;background:#f0fdf4;color:#15803d;padding:0.15rem 0.5rem;border-radius:99px;border:1px solid #bbf7d0;">${sq.cognitiveLevel}</span>` : ''}
         </div>
       </div>
@@ -3046,7 +3046,7 @@ function renderBioPracticals(ch) {
   return practicals.map((prac, idx) => `
     <div style="background:#ffffff;border:1.5px solid #a7f3d0;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 3px 10px rgba(5,150,105,0.06);">
       <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;border-bottom:1.5px solid #e2e8f0;padding-bottom:0.75rem;">
-        <span style="background:#059669;color:#fff;font-weight:800;font-size:0.85rem;padding:0.25rem 0.75rem;border-radius:6px;">Experiment ${idx + 1}</span>
+        <span style="background:#05875f;color:#fff;font-weight:800;font-size:0.85rem;padding:0.25rem 0.75rem;border-radius:6px;">Experiment ${idx + 1}</span>
         <h3 style="margin:0;font-size:1.2rem;color:#065f46;">${prac.title}</h3>
       </div>
 
@@ -3137,7 +3137,7 @@ function openChemView(classId, subj) {
   const chapBtns = chList.map((ch, i) => `
     <button class="bio-ch-btn ${i === 0 ? "active" : ""}" id="chem-btn-${i}"
             onclick="selectChemChapter(${i})">
-      <span class="ch-btn-num" style="background:#0284c7;color:#fff;">${ch.num}</span>
+      <span class="ch-btn-num" style="background:#027cba;color:#fff;">${ch.num}</span>
       <span class="ch-btn-info">
         <span class="ch-btn-name">${ch.name}</span>
         <span class="ch-btn-sub">${ch.pageRange}</span>
@@ -3157,7 +3157,7 @@ function openChemView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          <button onclick="${isCls10 ? 'renderChem10Roadmap()' : 'renderChemRoadmap()'}" style="width:100%;padding:0.5rem;background:#0284c7;color:#fff;border:none;border-radius:6px;font-weight:700;font-size:0.8rem;cursor:pointer;">
+          <button onclick="${isCls10 ? 'renderChem10Roadmap()' : 'renderChemRoadmap()'}" style="width:100%;padding:0.5rem;background:#027cba;color:#fff;border:none;border-radius:6px;font-weight:700;font-size:0.8rem;cursor:pointer;">
             🗺️ Open Exam Roadmap
           </button>
         </div>
@@ -3310,7 +3310,7 @@ function renderChemRoadmap() {
           This roadmap covers all 8 units from the official Grade IX Chemistry textbook volume. Follow the 5-day cycle per unit to guarantee complete mastery for your board examinations.
         </p>
         <div style="display:flex;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
-          <span style="background:#e0f2fe;color:#0284c7;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">8 Units</span>
+          <span style="background:#e0f2fe;color:#0272ab;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">8 Units</span>
           <span style="background:#dcfce7;color:#15803d;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">80 Textbook MCQs</span>
           <span style="background:#fef9c3;color:#a16207;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">80 Verified SQs</span>
           <span style="background:#f3e8ff;color:#7c3aed;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">40 Detailed LQs</span>
@@ -3697,7 +3697,7 @@ function openEngView(classId, subj) {
   const chapBtns = chList.map((ch, i) => `
     <button class="bio-ch-btn ${i === 0 ? "active" : ""}" id="eng-btn-${i}"
             onclick="selectEngChapter(${i})">
-      <span class="ch-btn-num" style="background:#0284c7;color:#fff;">${ch.type === 'poetry' ? 'Poem ' + (ch.number === 4 ? '1' : ch.number === 8 ? '2' : ch.number === 12 ? '3' : '4') : 'Unit ' + ch.number}</span>
+      <span class="ch-btn-num" style="background:#027cba;color:#fff;">${ch.type === 'poetry' ? 'Poem ' + (ch.number === 4 ? '1' : ch.number === 8 ? '2' : ch.number === 12 ? '3' : '4') : 'Unit ' + ch.number}</span>
       <span class="ch-btn-info">
         <span class="ch-btn-name" style="font-weight:700;font-size:0.92rem;">${ch.title || ''}</span>
         <span class="ch-btn-sub" style="color:#64748b;font-size:0.78rem;">${ch.titleUrdu || ch.author || ''}</span>
@@ -3716,7 +3716,7 @@ function openEngView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#027cba;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
           </a>` : ''}
         </div>
@@ -3757,7 +3757,7 @@ function renderEngChapterDetail(ch, chIdx) {
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
           <div>
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
-              <span class="urdu-badge" style="background:#ffffff;color:#0284c7;font-weight:800;font-size:0.85rem;padding:0.25rem 0.75rem;border-radius:99px;">
+              <span class="urdu-badge" style="background:#ffffff;color:#027cba;font-weight:800;font-size:0.85rem;padding:0.25rem 0.75rem;border-radius:99px;">
                 ${ch.type === 'poetry' ? 'POEM ' + ch.number : 'UNIT ' + ch.number}
               </span>
               <span style="font-size:0.9rem;opacity:0.9;">KPK Textbook Board Peshawar · Grade 9 English</span>
@@ -3803,15 +3803,15 @@ function renderEngChapterDetail(ch, chIdx) {
           <div class="slo-tab-buttons" style="display:flex;gap:0.5rem;">
             <button class="slo-btn ${state.activeEngSloTab === 'slo-mcqs' ? 'active' : ''}" onclick="switchEngSloTab('slo-mcqs', ${chIdx})" style="display:flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border-radius:6px;font-weight:600;cursor:pointer;border:1px solid #cbd5e1;background:#fff;">
               <span>📝 MCQs</span>
-              <span class="slo-count-badge" style="background:#0284c7;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.mcqs) ? ch.sloQuestions.mcqs.length : 20}</span>
+              <span class="slo-count-badge" style="background:#027cba;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.mcqs) ? ch.sloQuestions.mcqs.length : 20}</span>
             </button>
             <button class="slo-btn ${state.activeEngSloTab === 'slo-sqs' ? 'active' : ''}" onclick="switchEngSloTab('slo-sqs', ${chIdx})" style="display:flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border-radius:6px;font-weight:600;cursor:pointer;border:1px solid #cbd5e1;background:#fff;">
               <span>✏️ Short Qs (3M)</span>
-              <span class="slo-count-badge" style="background:#0284c7;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.shortQuestions) ? ch.sloQuestions.shortQuestions.length : 10}</span>
+              <span class="slo-count-badge" style="background:#027cba;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.shortQuestions) ? ch.sloQuestions.shortQuestions.length : 10}</span>
             </button>
             <button class="slo-btn ${state.activeEngSloTab === 'slo-lqs' ? 'active' : ''}" onclick="switchEngSloTab('slo-lqs', ${chIdx})" style="display:flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border-radius:6px;font-weight:600;cursor:pointer;border:1px solid #cbd5e1;background:#fff;">
               <span>📝 Long Qs (8M)</span>
-              <span class="slo-count-badge" style="background:#0284c7;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.longQuestions) ? ch.sloQuestions.longQuestions.length : 5}</span>
+              <span class="slo-count-badge" style="background:#027cba;color:#fff;padding:0.1rem 0.45rem;border-radius:99px;font-size:0.75rem;">${(ch.sloQuestions && ch.sloQuestions.longQuestions) ? ch.sloQuestions.longQuestions.length : 5}</span>
             </button>
           </div>
         </div>
@@ -4339,7 +4339,7 @@ function renderEngLesson(ch) {
     preReadingHtml = `
       <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1.5px solid #86efac;border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.5rem;box-shadow:0 2px 5px rgba(0,0,0,0.03);">
         <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
-          <span style="background:#16a34a;color:#ffffff;font-size:0.75rem;font-weight:800;padding:0.2rem 0.6rem;border-radius:4px;text-transform:uppercase;">Pre-reading</span>
+          <span style="background:#12883e;color:#ffffff;font-size:0.75rem;font-weight:800;padding:0.2rem 0.6rem;border-radius:4px;text-transform:uppercase;">Pre-reading</span>
           <h4 style="color:#15803d;font-size:1.05rem;margin:0;font-weight:700;">🌸 Warm-Up Questions &amp; Reflection</h4>
         </div>
         <ul style="margin:0;padding-left:1.4rem;color:#166534;line-height:1.9;font-size:0.98rem;">
@@ -4350,7 +4350,7 @@ function renderEngLesson(ch) {
     preReadingHtml = `
       <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1.5px solid #86efac;border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.5rem;box-shadow:0 2px 5px rgba(0,0,0,0.03);">
         <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
-          <span style="background:#16a34a;color:#ffffff;font-size:0.75rem;font-weight:800;padding:0.2rem 0.6rem;border-radius:4px;text-transform:uppercase;">Pre-reading</span>
+          <span style="background:#12883e;color:#ffffff;font-size:0.75rem;font-weight:800;padding:0.2rem 0.6rem;border-radius:4px;text-transform:uppercase;">Pre-reading</span>
           <h4 style="color:#15803d;font-size:1.05rem;margin:0;font-weight:700;">🌸 Warm-Up Questions &amp; Reflection</h4>
         </div>
         <ul style="margin:0;padding-left:1.4rem;color:#166534;line-height:1.9;font-size:0.98rem;">
@@ -4741,7 +4741,7 @@ function renderEngExercise(ch) {
                       <button class="universal-mcq-opt-btn" 
                               onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
                               style="padding:0.55rem 0.85rem;background:#ffffff;border:1.5px solid #cbd5e1;border-radius:6px;font-size:0.9rem;color:#334155;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
-                        <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                        <span style="font-weight:800;color:#0272ab;background:#e0f2fe;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
                         <span>${opt}</span>
                       </button>
                     `).join('')}
@@ -5647,7 +5647,7 @@ function renderEngSloMcqs(ch) {
         <span style="font-size:0.9rem;color:#0369a1;font-weight:700;">
           📝 Unit ${ch.number} Interactive Assessment: ${mcqs.length} Board Exam SLO MCQs
         </span>
-        <span id="engMcqScoreBadge" style="background:#0284c7;color:#fff;padding:0.25rem 0.65rem;border-radius:99px;font-size:0.8rem;font-weight:700;">
+        <span id="engMcqScoreBadge" style="background:#027cba;color:#fff;padding:0.25rem 0.65rem;border-radius:99px;font-size:0.8rem;font-weight:700;">
           Score: 0 / ${mcqs.length}
         </span>
       </div>
@@ -5809,7 +5809,7 @@ function openUrduView(classId, subj) {
   const chapBtns = chList.map((ch, i) => `
     <button class="bio-ch-btn ${i === 0 ? "active" : ""}" id="urdu-btn-${i}"
             onclick="selectUrduChapter(${i})">
-      <span class="ch-btn-num" style="background:#16a34a;color:#fff;">${ch.type === 'prose' ? 'سبق ' + ch.number : 'نظم ' + (ch.number - 11)}</span>
+      <span class="ch-btn-num" style="background:#12883e;color:#fff;">${ch.type === 'prose' ? 'سبق ' + ch.number : 'نظم ' + (ch.number - 11)}</span>
       <span class="ch-btn-info">
         <span class="ch-btn-name" style="direction:rtl;text-align:right;font-family:'Jameel Noori Nastaleeq', 'Segoe UI', serif;font-size:1.05rem;">${ch.title || ''}</span>
         <span class="ch-btn-sub">${ch.author || ''}</span>
@@ -5828,7 +5828,7 @@ function openUrduView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#16a34a;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#12883e;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
           </a>` : ''}
         </div>
@@ -6455,7 +6455,7 @@ function renderUrduLesson(ch) {
         </div>
         <div class="tts-dock-actions">
           <button id="dockPauseBtn" class="btn-toggle-all" style="background:#334155;color:#fff;border-color:#475569;" onclick="pauseResumeUrduTTS()">⏸️ وقفہ</button>
-          <button class="btn-toggle-all" style="background:#ef4444;color:#fff;border-color:#dc2626;" onclick="stopUrduTTS()">⏹️ بند کریں</button>
+          <button class="btn-toggle-all" style="background:#e91414;color:#fff;border-color:#dc2626;" onclick="stopUrduTTS()">⏹️ بند کریں</button>
           <select onchange="setUrduTtsRate(this.value)" style="background:#1e293b;color:#e2e8f0;border:1px solid #475569;border-radius:6px;padding:0.35rem 0.5rem;font-size:0.78rem;">
             <option value="0.8">0.8x آہستہ</option>
             <option value="0.95" selected>1.0x نارمل</option>
@@ -6671,7 +6671,7 @@ function renderUrduExercise(ch) {
     <div class="slo-question-accordion">
       <div class="slo-accordion-header" style="direction:rtl;text-align:right;" onclick="toggleSloAccordion(this)">
         <span><strong>سوال ${i+1}:</strong> ${q.question || q.q}</span>
-        <span class="slo-acc-toggle" style="color:#16a34a;font-size:0.85rem;background:#dcfce7;padding:0.2rem 0.65rem;border-radius:99px;">+ جواب دیکھیں</span>
+        <span class="slo-acc-toggle" style="color:#11813b;font-size:0.85rem;background:#dcfce7;padding:0.2rem 0.65rem;border-radius:99px;">+ جواب دیکھیں</span>
       </div>
       <div class="slo-accordion-body urdu-text-rtl" style="background:#f0fdf4;color:#166534;display:none;">
         <strong>جواب:</strong> ${q.answer || q.a}
@@ -6791,7 +6791,7 @@ function renderUrduSLOs(ch) {
   const slos = ch.slos || [];
   const slosHtml = slos.map((slo, idx) => `
     <div style="display:flex;align-items:flex-start;gap:0.75rem;background:#ffffff;padding:1rem 1.25rem;border:1.5px solid #cbd5e1;border-radius:10px;margin-bottom:0.75rem;direction:rtl;text-align:right;" class="urdu-text-rtl">
-      <span style="background:#16a34a;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">${idx+1}</span>
+      <span style="background:#12883e;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">${idx+1}</span>
       <div style="color:#1e293b;font-size:1.1rem;line-height:1.9;">${slo}</div>
     </div>`).join("");
 
@@ -6894,7 +6894,7 @@ function renderUrduSloSQs(ch) {
         <span style="font-size:1.15rem;font-family:'Jameel Noori Nastaleeq','Segoe UI',serif;"><strong>مختصر سوال ${i+1}:</strong> ${sq.question}</span>
         <div style="display:flex;align-items:center;gap:0.5rem;">
           <span style="font-size:0.75rem;background:#dcfce7;color:#15803d;padding:0.2rem 0.5rem;border-radius:99px;font-family:sans-serif;direction:ltr;">${sq.sloRef || 'SLO'}</span>
-          <span class="slo-acc-toggle" style="color:#16a34a;font-size:0.82rem;background:#f1f5f9;padding:0.2rem 0.5rem;border-radius:6px;">+ جواب دیکھیں</span>
+          <span class="slo-acc-toggle" style="color:#11813b;font-size:0.82rem;background:#f1f5f9;padding:0.2rem 0.5rem;border-radius:6px;">+ جواب دیکھیں</span>
         </div>
       </div>
       <div class="slo-accordion-body urdu-text-rtl" style="background:#f8fafc;font-size:1.15rem;color:#1e293b;display:none;">
@@ -6929,7 +6929,7 @@ function renderUrduSloLQs(ch) {
           <div style="font-weight:800;font-size:1.22rem;color:var(--navy);" class="urdu-text-rtl">
             📝 تفصیلی سوال ${i+1}: ${lq.question}
           </div>
-          <span class="slo-acc-toggle" style="color:#16a34a;font-size:0.82rem;background:#dcfce7;padding:0.25rem 0.65rem;border-radius:99px;flex-shrink:0;">+ مفصل جواب کھولیں</span>
+          <span class="slo-acc-toggle" style="color:#11813b;font-size:0.82rem;background:#dcfce7;padding:0.25rem 0.65rem;border-radius:99px;flex-shrink:0;">+ مفصل جواب کھولیں</span>
         </div>
         <div class="slo-accordion-body urdu-text-rtl" style="display:none;background:#ffffff;">
           <div style="font-size:1.18rem;line-height:2.4;color:#334155;background:#f8fafc;padding:1.25rem;border-radius:8px;margin-bottom:1rem;border:1px solid #e2e8f0;">
@@ -7827,7 +7827,7 @@ function renderFullRoadmap() {
           This roadmap covers all 9 units from the official Grade IX textbook volume. Follow the 5-day cycle per unit to guarantee mastery for your board examinations.
         </p>
         <div style="display:flex;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
-          <span style="background:#e0f2fe;color:#0284c7;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">9 Units</span>
+          <span style="background:#e0f2fe;color:#0272ab;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">9 Units</span>
           <span style="background:#dcfce7;color:#15803d;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">96 Textbook MCQs</span>
           <span style="background:#fef9c3;color:#a16207;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">52 Verified SQs</span>
           <span style="background:#f3e8ff;color:#7c3aed;font-weight:700;font-size:0.8rem;padding:0.35rem 0.75rem;border-radius:99px;">37 Detailed LQs</span>
@@ -8280,7 +8280,7 @@ function openGenericChapterDetails(classId, subjId, subjName, chNum) {
     ${sourceBanner}
     <div style="margin-bottom:1rem;">
       <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
-        <span style="background:#e0f2fe;color:#0284c7;font-weight:700;padding:0.25rem 0.6rem;border-radius:6px;font-size:0.8rem;">${cls.name}</span>
+        <span style="background:#e0f2fe;color:#0272ab;font-weight:700;padding:0.25rem 0.6rem;border-radius:6px;font-size:0.8rem;">${cls.name}</span>
         <span style="background:#ede9fe;color:#7c3aed;font-weight:700;padding:0.25rem 0.6rem;border-radius:6px;font-size:0.8rem;">Unit ${ch.num}</span>
         <span style="background:#dcfce7;color:#15803d;font-weight:700;padding:0.25rem 0.6rem;border-radius:6px;font-size:0.8rem;">Status: ${ch.status || 'Active'}</span>
       </div>
@@ -8403,7 +8403,7 @@ function openIslView(classId, subj) {
         </div>
         <div class="bio-ch-list">${chapBtns}</div>
         <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0d9488;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
+          ${sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0c8479;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;">
             📥 Download Official PDF Book
           </a>` : ''}
         </div>
@@ -9004,7 +9004,7 @@ function renderIslExercise(ch) {
           <div class="slo-question-accordion" style="margin-bottom:0.65rem;">
             <div class="slo-accordion-header" style="direction:rtl;text-align:right;" onclick="toggleSloAccordion(this)">
               <span><strong>سوال ${i+1}:</strong> ${q.q || q.question}</span>
-              <span class="slo-acc-toggle" style="color:#0d9488;font-size:0.85rem;background:#ccfbf1;padding:0.2rem 0.65rem;border-radius:99px;">+ جواب دیکھیں</span>
+              <span class="slo-acc-toggle" style="color:#0b7a70;font-size:0.85rem;background:#ccfbf1;padding:0.2rem 0.65rem;border-radius:99px;">+ جواب دیکھیں</span>
             </div>
             <div class="slo-accordion-body urdu-text-rtl" style="background:#f0fdf4;color:#064e3b;display:none;font-size:1.15rem;line-height:2.2;">
               <strong>جواب:</strong> ${q.a || q.answer}
@@ -9086,7 +9086,7 @@ function renderIslSLOs(ch) {
   const slos = ch.slos || [];
   const slosHtml = slos.map((slo, idx) => `
     <div style="display:flex;align-items:flex-start;gap:0.75rem;background:#ffffff;padding:1rem 1.25rem;border:1.5px solid #ccfbf1;border-radius:10px;margin-bottom:0.75rem;direction:rtl;text-align:right;" class="urdu-text-rtl">
-      <span style="background:#0d9488;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">${idx+1}</span>
+      <span style="background:#0c8479;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">${idx+1}</span>
       <div style="color:#1e293b;font-size:1.1rem;line-height:1.9;">${slo}</div>
     </div>`).join("");
 
@@ -9184,7 +9184,7 @@ function renderIslSloSQs(ch) {
         <span style="font-size:1.15rem;font-family:'Jameel Noori Nastaleeq','Segoe UI',serif;"><strong>مختصر سوال ${i+1}:</strong> ${sq.q || sq.question}</span>
         <div style="display:flex;align-items:center;gap:0.5rem;">
           <span style="font-size:0.75rem;background:#ccfbf1;color:#0f766e;padding:0.2rem 0.5rem;border-radius:99px;font-family:sans-serif;direction:ltr;">SLO</span>
-          <span class="slo-acc-toggle" style="color:#0d9488;font-size:0.82rem;background:#f1f5f9;padding:0.2rem 0.5rem;border-radius:6px;">+ جواب دیکھیں</span>
+          <span class="slo-acc-toggle" style="color:#0b7d72;font-size:0.82rem;background:#f1f5f9;padding:0.2rem 0.5rem;border-radius:6px;">+ جواب دیکھیں</span>
         </div>
       </div>
       <div class="slo-accordion-body urdu-text-rtl" style="background:#f8fafc;font-size:1.15rem;color:#1e293b;display:none;line-height:2.2;">
@@ -9215,7 +9215,7 @@ function renderIslSloLQs(ch) {
         <div style="font-weight:800;font-size:1.22rem;color:var(--navy);" class="urdu-text-rtl">
           📝 تفصیلی سوال ${i+1}: ${lq.q || lq.question}
         </div>
-        <span class="slo-acc-toggle" style="color:#0d9488;font-size:0.82rem;background:#ccfbf1;padding:0.25rem 0.65rem;border-radius:99px;flex-shrink:0;">+ مفصل جواب کھولیں</span>
+        <span class="slo-acc-toggle" style="color:#0b7a70;font-size:0.82rem;background:#ccfbf1;padding:0.25rem 0.65rem;border-radius:99px;flex-shrink:0;">+ مفصل جواب کھولیں</span>
       </div>
       <div class="slo-accordion-body urdu-text-rtl" style="display:none;background:#ffffff;">
         <div style="font-size:1.18rem;line-height:2.4;color:#334155;background:#f8fafc;padding:1.25rem;border-radius:8px;margin-bottom:1rem;border:1px solid #e2e8f0;white-space:pre-wrap;">
@@ -10983,7 +10983,7 @@ function renderPaperReviewWorkArea() {
         </button>
 
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.35rem;">
-          <button class="btn" onclick="printOfficialExamPaper('mcqs')" style="background:#0284c7;color:#fff;border:none;font-size:0.75rem;padding:0.45rem;font-weight:700;border-radius:6px;cursor:pointer;">
+          <button class="btn" onclick="printOfficialExamPaper('mcqs')" style="background:#027cba;color:#fff;border:none;font-size:0.75rem;padding:0.45rem;font-weight:700;border-radius:6px;cursor:pointer;">
             📄 Section A (MCQs Only)
           </button>
           <button class="btn" onclick="printOfficialExamPaper('subjective')" style="background:#7c3aed;color:#fff;border:none;font-size:0.75rem;padding:0.45rem;font-weight:700;border-radius:6px;cursor:pointer;">
@@ -11517,7 +11517,7 @@ function renderBlueprintModalContent() {
                   }).join(' · ')}
                 </div>
                 ${diff !== 0 ? `
-                  <button onclick="autoBalanceDraftMarks()" style="background:#0284c7;color:#fff;border:none;padding:0.2rem 0.55rem;border-radius:4px;font-size:0.68rem;font-weight:800;cursor:pointer;">
+                  <button onclick="autoBalanceDraftMarks()" style="background:#027cba;color:#fff;border:none;padding:0.2rem 0.55rem;border-radius:4px;font-size:0.68rem;font-weight:800;cursor:pointer;">
                     Auto-Balance Remainder
                   </button>
                 ` : ''}
@@ -11539,7 +11539,7 @@ function renderBlueprintModalContent() {
                 return `
                   <div class="paper-reorder-item">
                     <div style="display:flex;align-items:center;gap:0.5rem;">
-                      <span style="background:#0284c7;color:#fff;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:800;">
+                      <span style="background:#027cba;color:#fff;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:800;">
                         ${idx + 1}
                       </span>
                       <span>${meta.icon} ${meta.name}</span>
@@ -13285,10 +13285,10 @@ function renderBooksView(filterClass = "all") {
         <div style="display:flex;flex-direction:column;gap:0.5rem;">
           ${b.available ? `
             ${sbPdf(b.pdfPath) ? `<div style="display:flex;gap:0.5rem;">
-              <a href="${sbPdf(b.pdfPath)}" target="_blank" style="flex:1;text-align:center;padding:0.5rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
+              <a href="${sbPdf(b.pdfPath)}" target="_blank" style="flex:1;text-align:center;padding:0.5rem;background:#027cba;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
                 👁️ Read Online
               </a>
-              <a href="${sbPdf(b.pdfPath)}" download style="flex:1;text-align:center;padding:0.5rem;background:#059669;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
+              <a href="${sbPdf(b.pdfPath)}" download style="flex:1;text-align:center;padding:0.5rem;background:#05875f;color:#fff;border-radius:6px;font-weight:700;font-size:0.85rem;text-decoration:none;">
                 ⬇️ Download (${b.size})
               </a>
             </div>` : ''}
@@ -13384,7 +13384,7 @@ function renderEngEnglishSummary(ch) {
   return `
     <div class="urdu-section-card open" style="margin-bottom:2rem;border:1px solid #bae6fd;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(2,132,199,0.08);background:#ffffff;">
       <div class="urdu-section-header" style="background:#f0f9ff;padding:1rem 1.35rem;display:flex;align-items:center;gap:0.75rem;border-bottom:1px solid #bae6fd;">
-        <span class="urdu-sec-badge" style="background:#0284c7;color:#fff;padding:0.25rem 0.65rem;border-radius:6px;font-size:0.78rem;font-weight:700;">SUMMARY</span>
+        <span class="urdu-sec-badge" style="background:#027cba;color:#fff;padding:0.25rem 0.65rem;border-radius:6px;font-size:0.78rem;font-weight:700;">SUMMARY</span>
         <span class="urdu-sec-title" style="color:#0369a1;font-size:1.15rem;font-weight:700;">🇬🇧 English Chapter Summary &amp; Key Themes</span>
       </div>
       <div class="urdu-section-body" style="padding:1.6rem;font-size:1.05rem;line-height:1.9;color:#1e293b;background:#ffffff;">
@@ -13428,7 +13428,7 @@ function renderEngVocabulary(ch, chIdx) {
         <div style="background:#f0f9ff;border:1.5px solid #7dd3fc;border-radius:10px;padding:0.9rem 1.1rem;margin-bottom:0.25rem;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
             <div style="display:flex;align-items:center;gap:0.5rem;">
-              <span style="background:#0284c7;color:#fff;font-size:0.74rem;font-weight:800;padding:0.18rem 0.5rem;border-radius:4px;">OFFICIAL GLOSSARY</span>
+              <span style="background:#027cba;color:#fff;font-size:0.74rem;font-weight:800;padding:0.18rem 0.5rem;border-radius:4px;">OFFICIAL GLOSSARY</span>
               <h4 style="margin:0;color:#0369a1;font-size:1.02rem;font-weight:700;">📖 Key Textbook Highlighted Terms</h4>
             </div>
             <span style="font-size:0.82rem;color:#0369a1;font-weight:600;">${textbookGlossary.length} Primary Terms</span>
@@ -13440,7 +13440,7 @@ function renderEngVocabulary(ch, chIdx) {
                   <span style="font-weight:700;color:#0369a1;font-size:0.98rem;">${g.word}</span>
                   <button class="popover-speaker-btn" title="Listen" onclick="playSingleWordTTS('${g.word.replace(/'/g, "\\'")}')">🔊</button>
                 </div>
-                ${g.pos ? `<span style="display:inline-block;background:#e0f2fe;color:#0284c7;font-size:0.7rem;font-weight:700;padding:0.08rem 0.35rem;border-radius:4px;margin-bottom:0.25rem;">${g.pos}</span>` : ''}
+                ${g.pos ? `<span style="display:inline-block;background:#e0f2fe;color:#0272ab;font-size:0.7rem;font-weight:700;padding:0.08rem 0.35rem;border-radius:4px;margin-bottom:0.25rem;">${g.pos}</span>` : ''}
                 <div style="font-family:'Jameel Noori Nastaleeq','Segoe UI',serif;color:#15803d;font-size:1.15rem;direction:rtl;text-align:right;font-weight:700;line-height:1.6;">${g.urdu || ''}</div>
                 ${g.pashto ? `<div style="color:#854d0e;font-size:0.88rem;direction:rtl;text-align:right;margin-top:0.15rem;">${g.pashto}</div>` : ''}
                 ${g.meaning ? `<div style="font-size:0.8rem;color:#475569;margin-top:0.3rem;line-height:1.35;">${g.meaning}</div>` : ''}
@@ -14681,7 +14681,7 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
             <div class="math-topic-card math-accordion-card topic-ex-item" data-cat="${categorizeMathProblem(p)}" style="margin-bottom:0.75rem;padding:0.9rem 1.1rem;">
               <div class="math-acc-header" onclick="toggleMathAccordion(this)">
                 <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
-                  <span class="math-badge" style="background:#0284c7;color:#fff;font-size:0.75rem;">${p.qNo || ('Q' + (pIdx + 1))}</span>
+                  <span class="math-badge" style="background:#027cba;color:#fff;font-size:0.75rem;">${p.qNo || ('Q' + (pIdx + 1))}</span>
                   <span style="font-weight:700;color:#0f172a;font-size:0.92rem;">${(p.question || '').split('\n')[0].slice(0, 85)}${(p.question || '').length > 85 ? '...' : ''}</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.4rem;">
@@ -17526,11 +17526,11 @@ function renderMathExamples(ch) {
         <div class="math-topic-card math-accordion-card" id="math-ex-${ex.id || idx}" style="border-left:4px solid #0284c7;">
           <div class="math-acc-header" onclick="toggleMathAccordion(this)">
             <div style="display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;">
-              <span class="math-badge" style="background:#0284c7;color:#fff;">${renderMathEscapedText(ex.title)}</span>
+              <span class="math-badge" style="background:#027cba;color:#fff;">${renderMathEscapedText(ex.title)}</span>
               <span style="font-weight:700;color:#0f172a;">${renderMathEscapedText((ex.problem || '').split(String.fromCharCode(10))[0].slice(0, 110))}</span>
             </div>
             <div style="display:flex;align-items:center;gap:.5rem;">
-              <span style="font-size:.78rem;color:#0284c7;font-weight:700;background:#e0f2fe;padding:.2rem .55rem;border-radius:4px;">Textbook example</span>
+              <span style="font-size:.78rem;color:#0272ab;font-weight:700;background:#e0f2fe;padding:.2rem .55rem;border-radius:4px;">Textbook example</span>
               <span class="math-acc-icon">+</span>
             </div>
           </div>
@@ -17545,13 +17545,13 @@ function renderMathExamples(ch) {
     <div class="math-topic-card math-accordion-card" id="math-ex-${ex.id || idx}" style="border-left: 4px solid #0284c7;">
       <div class="math-acc-header" onclick="toggleMathAccordion(this)">
         <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
-          <span class="math-badge" style="background:#0284c7;color:#fff;">${ex.title.split('—')[0].trim()}</span>
+          <span class="math-badge" style="background:#027cba;color:#fff;">${ex.title.split('—')[0].trim()}</span>
           <span style="font-weight:700;color:#0f172a;font-size:0.98rem;">
             ${ex.problem.split('\n')[0].slice(0, 85)}${ex.problem.length > 85 ? '...' : ''}
           </span>
         </div>
         <div style="display:flex;align-items:center;gap:0.5rem;">
-          <span style="font-size:0.78rem;color:#0284c7;font-weight:700;background:#e0f2fe;padding:0.2rem 0.55rem;border-radius:4px;">Worked Solution</span>
+          <span style="font-size:0.78rem;color:#0272ab;font-weight:700;background:#e0f2fe;padding:0.2rem 0.55rem;border-radius:4px;">Worked Solution</span>
           <span class="math-acc-icon">+</span>
         </div>
       </div>
@@ -17694,7 +17694,7 @@ function switchMathEx(exKey, activeCat) {
         <div class="math-topic-card math-accordion-card" id="math-prob-${pIdx}" style="margin-bottom:1rem;">
           <div class="math-acc-header" onclick="toggleMathAccordion(this)">
             <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
-              <span class="math-badge" style="background:#0284c7;color:#fff;">${p.qNo || ('Q' + (pIdx + 1))}</span>
+              <span class="math-badge" style="background:#027cba;color:#fff;">${p.qNo || ('Q' + (pIdx + 1))}</span>
               <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">
                 ${renderMathQuestionPreview(p.question)}
               </span>
@@ -21020,7 +21020,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
                       <button class="universal-mcq-opt-btn"
                               onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
                               style="background:#f8fafc;border:1.5px solid #cbd5e1;padding:0.55rem 0.75rem;border-radius:6px;font-size:0.88rem;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
-                        <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                        <span style="font-weight:800;color:#0272ab;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
                         <span>${opt}${class9Chemistry && m.sourceOptionPairs?.[oIdx] ? `<span lang="ur" dir="rtl" style="display:block;margin-top:.3rem;">${sanitize(m.sourceOptionPairs[oIdx].urdu)}</span><span lang="ps" dir="rtl" style="display:block;margin-top:.2rem;">${sanitize(m.sourceOptionPairs[oIdx].pashto)}</span>` : ''}</span>
                       </button>
                     `).join('')}
@@ -21341,7 +21341,7 @@ function renderSubjectSLOsTab(subjKey, ch) {
                       <button class="universal-mcq-opt-btn" 
                               onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
                               style="background:#f8fafc;border:1.5px solid #cbd5e1;padding:0.5rem 0.75rem;border-radius:6px;font-size:0.88rem;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
-                        <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                        <span style="font-weight:800;color:#0272ab;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
                         <span>${opt}</span>
                       </button>
                     `).join('')}
@@ -23059,7 +23059,7 @@ function renderEnglishVocabSubContent(ch, subTab) {
               <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.4rem;">
                 <span style="font-size:1.15rem;font-weight:800;color:#0f172a;letter-spacing:0.02em;">
                   ${item.word.split('').map(ch => ch.toLowerCase() === item.silentLetter.toLowerCase() 
-                    ? `<span style="color:#dc2626;text-decoration:underline;text-decoration-color:#dc2626;text-underline-offset:4px;font-weight:900;background:#fee2e2;padding:0 2px;border-radius:2px;">${ch}</span>` 
+                    ? `<span style="color:#ca2121;text-decoration:underline;text-decoration-color:#dc2626;text-underline-offset:4px;font-weight:900;background:#fee2e2;padding:0 2px;border-radius:2px;">${ch}</span>` 
                     : ch).join('')}
                 </span>
                 <span style="background:#fee2e2;color:#b91c1c;font-weight:800;font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:99px;">
@@ -23067,7 +23067,7 @@ function renderEnglishVocabSubContent(ch, subTab) {
                 </span>
               </div>
               <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;">
-                <span style="font-family:monospace;font-size:0.86rem;color:#0284c7;background:#f0f9ff;padding:0.15rem 0.4rem;border-radius:4px;">${item.phonetic || ''}</span>
+                <span style="font-family:monospace;font-size:0.86rem;color:#0278b5;background:#f0f9ff;padding:0.15rem 0.4rem;border-radius:4px;">${item.phonetic || ''}</span>
               </div>
               <div style="font-size:0.82rem;color:#475569;line-height:1.4;">${item.rule || 'Silent in standard pronunciation.'}</div>
             </div>
