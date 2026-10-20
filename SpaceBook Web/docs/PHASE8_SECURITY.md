@@ -6,7 +6,7 @@ This is the honest version. The Phase 8 plan has five parts; two of them could b
 
 | Part | State |
 |---|---|
-| Security headers | `deploy/spacebook.htaccess` (template for you to install, `docs/SERVER_CONFIG.md`): `X-Content-Type-Options: nosniff`, `Referrer-Policy: same-origin`, `X-Frame-Options: DENY`, a restrictive `Permissions-Policy`, HSTS prepared but commented out (it is a one-way door: enable it once https is certain). |
+| Security headers | `deploy/spacebook.htaccess` (template for you to install, `docs/SERVER_CONFIG.md`): `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: DENY`, a restrictive `Permissions-Policy`, HSTS prepared but commented out (it is a one-way door: enable it once https is certain). |
 | Content-Security-Policy | Shipped as **report-only** in the same template: the browser lists what an enforced policy would block and blocks nothing. `connect-src 'self'` makes any request to another website show up; `frame-src` allows only YouTube lessons; `object-src 'none'`, `frame-ancestors 'none'`. |
 | No third parties | No script, stylesheet or font from another website at start-up (`tools/validate.js`), no text sent to Google/MyMemory (`tests/lexicon/privacy.js`), no Google audio (`tests/offline/tts.js`). The service worker never caches another origin or `/api/`. |
 | Deploy | Phase 0: strict TLS to the named host, live check separated, no secrets in the upload zip (tests), `api/config.php` never packaged. |
@@ -28,7 +28,7 @@ This is the honest version. The Phase 8 plan has five parts; two of them could b
 | Someone copies the repository | **make the repository private** (your step; the books' transcriptions are in it) | Anyone who already cloned it. |
 | Tampered files on the server or in transit | https, signed release (when you give a key), hash check of every downloaded book file (done in `offline.js`) | An attacker who controls the server can replace the code that checks the signature. The signature protects against a partly compromised content store, not a fully compromised host. |
 | Injected script (XSS) | a CSP (report-only now, enforced after the refactor), no `eval` (after the refactor), escaping | Today nothing enforces it. |
-| Personal data leaking to third parties | removed (see above), `Referrer-Policy: same-origin` | Embedded YouTube lessons contact YouTube when opened (`youtube-nocookie.com`, only on the video tab). |
+| Personal data leaking to third parties | removed (see above), `Referrer-Policy: strict-origin-when-cross-origin` | Embedded YouTube lessons contact YouTube when opened (`youtube-nocookie.com`, only on the video tab). |
 | Password guessing, farming coins | Phase 2 | A password reset does not exist yet (your channel decision). |
 
 ## Decisions I need from you

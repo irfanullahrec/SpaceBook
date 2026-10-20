@@ -507,3 +507,6 @@ Found while checking the workflow with a YAML parser (the workflow has never run
 Verified by: PyYAML parses the whole file (3 jobs, 15 + 6 + 5 steps); validate 1007/0 with the fix and 1006/1 against the old file.
 
 Not verified: that GitHub accepts the file (a parser is not GitHub); every other thing about the workflow stays "never run".
+
+## 2026-10-20 — Fix: the header template would have broken the YouTube lessons
+`deploy/spacebook.htaccess` set `Referrer-Policy: same-origin`. With it the browser sends no Referer to another website, and YouTube's embedded player refuses to start without one (error 153), so the video tab would have shown an error on every video once the owner installed the template. It now sets `strict-origin-when-cross-origin` (the browsers' default: another site sees only `https://<this site>`, never a page or a query). `docs/PHASE8_SECURITY.md` is updated. Not verified: against YouTube itself (nothing here can reach it); the admin pages keep `no-referrer` (they embed nothing).
