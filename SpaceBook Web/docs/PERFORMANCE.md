@@ -1,0 +1,35 @@
+# Performance (Phase 11): budgets, what was measured, what was not
+
+Measured 2026-10-20 in Node (the app's own code in a sandbox, no browser, no network, no layout) on the development machine. **These are CPU floors for a desktop, not numbers for a 2 GB phone.** What a browser adds (style, layout, paint, the network, the DOM's own memory) is not in them. Reproduce with the commands in the last column.
+
+## Budgets against measurements
+
+| Budget (Phase 11) | Measured here | Verdict | Command |
+|---|---|---|---|
+| Initial transfer <= 3 MB compressed | the start-up shell (`content/sw_version.js` lists it): 100 files, 3.39 MB raw, **1.11 MB gzipped** (scripts 0.71, styles 0.06, KaTeX fonts 0.25, icons and page 0.09); `app.js` alone is 308 KB gzipped | met | sum of `shell` in `content/sw_version.js` |
+| Heap <= 150 MB while reading | Node heap after opening one subject and its first chapter, from a 14 MB base: Class 1 English +2 MB, Class 9 Biology +6, Class 10 Physics +21, Class 12 Maths +28, Class 12 Chemistry +27, Class 12 Physics +33, Class 12 Economics +37 (the biggest data: 17-19 MB of source) | met for the data; the DOM of a big tab is extra (see below) | `node --expose-gc tools/perf_heap.js` |
+| TTI <= 4 s cold / <= 1.5 s warm (reference device) | not measurable here; the page is ready in 0.16-0.29 s of CPU with no book loaded (56 scripts, 0 of 154 book files) | **unknown** | `node tools/build/measure_lazy.js` |
+| Chapter open p95 <= 1.5 s low-end / <= 300 ms desktop | selecting a chapter: p50 5 ms, **p95 41 ms**, max 1.8 s; opening a subject cold (includes loading its book files): p50 38 ms, **p95 399 ms**, max 1.3 s. 22 of 1,831 chapters take over 300 ms: Class 11 Maths 12, Class 12 Statistics 4, Class 7 Maths 3, one each of Class 8 Maths, Class 10 Physics, Class 12 Physics. 11 subjects take over 300 ms to open cold (all of them big books of Classes 7, 11 and 12) | met at p95 for chapters; **not met** for the 22 chapters and for cold opens of the biggest books on a desktop CPU alone | `node tools/perf_report.js` |
+| Tab switch <= 600 ms low-end / <= 150 ms desktop | p50 0.6 ms, **p95 13 ms**; 41 of 9,698 tabs exceed 150 ms (Class 11 Maths 25, Class 12 Statistics 7, Class 8 Maths 3, Class 12 Physics 3, Class 7 Maths 2, Class 4 Maths 1); 4 exceed 600 ms (all Class 11 Maths lessons, up to 1.15 s) | met at p95; **not met** for those 41 | `node tools/perf_report.js` |
+| Word lookup <= 30 ms | first lookup 186 ms (it loads the 0.64 MB lexicon once); then p50 **0.2 ms**, p95 0.4 ms | met (the first lookup is a one-off) | `node tools/perf_lookup.js` |
+| Search <= 100 ms offline | one query on a subject: **0.007 ms** after the first (5 ms: sorts the word list once); parsing a subject's index: <= 12 ms for the biggest (480 KB); the shared index 198 KB (54 KB gzipped) parses in 1 ms. "Search all classes": 135 files, 24.3 MB (**7.8 MB gzipped**) to transfer once, then about 220 ms of CPU to search them all | met on the device; the one-off transfer of "all classes" is the cost | `node tools/perf_lookup.js` |
+
+## Where the time and the size are
+
+- 346 of 9,698 tabs are over 500 KB of HTML, 74 over 2 MB, 9 over 5 MB. By subject, tabs over 2 MB: Class 11 Maths 17, Class 11 Chemistry 11, Class 12 Statistics 8, Class 12 Chemistry 7, Class 12 Physics 5, Class 12 Biology 5, Class 12 Maths 4.
+- The worst is a Class 11 Maths lesson: **10.8 MB, 269,106 elements, 6,059 formulas**. Of the size, about 1.9 MB is the MathML copy of the formulas, about 3.7 MB the drawn formulas, and most of the rest is **one `<span>` per word** (so that a word can show its meaning on hover). The lesson is 28 accordion cards of 130-600 KB each, closed unless opened. A browser has to parse and build all 269,000 elements before it can show the first card, even though only the open cards are laid out; on a phone that is seconds and well over 100 MB of DOM.
+
+## What would fix it (not done, and why)
+
+1. **Fill a closed card when it is opened.** Keep each closed card's body as a string and put it into the DOM on the first open (`toggleMathAccordion`, and the full-screen button which opens a card). This removes most of the 269,000 elements at open time. Not done: several modules read closed bodies (the filter box of `reader_tools.js` matches text across cards, `sb_topic_practice.js` and `structure_harmonizer.js` add panels to every card, the translation drawers and the word spans are attached by observers), so each would have to learn that a body can be empty, and none of this can be checked without a real browser. It is the first thing to do with one.
+2. **One listener instead of a span per word.** The hover meaning could read the word under the pointer from the text node instead of wrapping every word. Same reason.
+3. **Drop the duplicate MathML** (about 1.9 MB of that tab) and give each formula an `aria-label`. This trades screen-reader quality for size; it needs a decision and a screen-reader check, so it is not done.
+4. Page the "examples" and "exercises" lists of the 41 slow tabs (only the first screen at once).
+
+## Not measured, and needs a person with a phone
+
+Time to interactive and the chapter/tab times on the reference device (Chrome CPU x6 throttling, or a real 2 GB Android), Lighthouse mobile, the DOM's memory, the service worker's first install on a slow connection, the real size of "Search all classes" on mobile data. The budgets above should be signed off by the owner once those exist; until then the honest status is "met in a CPU proxy, unmeasured on a device, with the known outliers above (41 tabs, 22 chapters, 11 cold opens)".
+
+## Tools
+
+`tools/perf_report.js` (every subject, chapter and tab: ms and HTML size, with the heaviest listed), `tools/perf_lookup.js` (word lookup and search), `tools/perf_heap.js` (Node heap after one subject, one process each), `tools/build/measure_lazy.js` (what the start-up and each subject load).
