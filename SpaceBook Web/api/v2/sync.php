@@ -33,6 +33,7 @@ require_once __DIR__ . '/../lib/changes.php';
 require_once __DIR__ . '/../lib/plans.php';
 require_once __DIR__ . '/../lib/testprep.php';
 require_once __DIR__ . '/../lib/pull.php';
+require_once __DIR__ . '/../lib/admin.php';
 
 const SB_SYNC_MAX_EVENTS = 500;
 const SB_SYNC_MAX_BYTES  = 1048576;
@@ -189,5 +190,7 @@ try {
     error_log('SpaceBook sync: ' . $e->getMessage());
     sync_fail(500, 'Could not save, try again', 5);
 }
+
+if ($rejected) sb_record_sync_errors($pdo, $uid, $deviceId, $rejected);      // for the administrator's sync view (codes and ids only, never a payload)
 
 sync_reply(200, ['ok' => true, 'accepted' => $accepted, 'rejected' => $rejected, 'cursor' => sb_change_cursor($pdo, $uid), 'coins' => sb_total_coins($pdo, $uid)]);

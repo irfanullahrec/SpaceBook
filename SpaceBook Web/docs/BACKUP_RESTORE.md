@@ -23,7 +23,7 @@ What is backed up: the MySQL database `tafseelk_spacebook` (accounts, coins, stu
 
 ## Before any risky step
 
-Before merging to `main` while it contains a new migration, or before running `php api/migrate.php down`, take a dump by hand (step 4) and keep the file. Migrations 002–005 only add tables and columns, but a fresh dump costs seconds.
+Before merging to `main` while it contains a new migration, or before running `php api/migrate.php down`, take a dump by hand (step 4) and keep the file. Migrations 002–006 only add tables and columns, but a fresh dump costs seconds.
 
 ## Restore drill (do it once now, then every few months)
 

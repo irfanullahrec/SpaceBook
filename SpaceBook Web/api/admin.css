@@ -1,0 +1,25 @@
+/* Administration pages (api/admin.php): plain, readable, no scripts. Colour pairs below are kept at 4.5:1 or more by hand; this folder is not read by tools/a11y_contrast.js. */
+body { font: 16px/1.5 system-ui, "Segoe UI", Arial, sans-serif; margin: 0; color: #0f172a; background: #f8fafc; }
+header { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; padding: 0.75rem 1rem; background: #0f172a; color: #ffffff; }
+header a { color: #bae6fd; }
+header nav { display: flex; gap: 1rem; flex: 1; }
+header nav a[aria-current="page"] { color: #ffffff; text-decoration: none; border-bottom: 2px solid #38bdf8; }
+main { max-width: 70rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+table { border-collapse: collapse; width: 100%; background: #ffffff; margin: 0.5rem 0 1rem; }
+th, td { text-align: start; padding: 0.4rem 0.6rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; overflow-wrap: anywhere; }
+th { background: #e2e8f0; font-size: 0.85rem; }
+a { color: #0369a1; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; background: #ffffff; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; }
+dt { font-weight: 600; }
+dd { margin: 0; }
+.bar, .action { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: end; margin: 0.5rem 0 1rem; }
+label { display: grid; gap: 0.2rem; font-size: 0.9rem; }
+input, select { font: inherit; padding: 0.3rem 0.5rem; border: 1px solid #64748b; border-radius: 4px; }
+button { font: inherit; padding: 0.4rem 0.9rem; border: 0; border-radius: 4px; background: #0369a1; color: #ffffff; cursor: pointer; }
+.flash { background: #dcfce7; color: #14532d; padding: 0.5rem 0.75rem; border-radius: 4px; }
+.st-active { color: #14532d; font-weight: 600; }
+.st-blocked { color: #991b1b; font-weight: 600; }
+.pages a { margin-inline-end: 1rem; }
+:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
