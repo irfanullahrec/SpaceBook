@@ -10190,6 +10190,7 @@ let paperCreationState = {
   paperType: "annual",
   version: "A",
   seed: 1,
+  shuffle: 0,          // how often "Shuffle" was pressed on this set; with Set A and 0 the paper is as picked (sbPaperApplyVersion)
   showAnswerKey: false,
   totalMarks: 75,
   totalMarksOverride: "",
@@ -10796,7 +10797,11 @@ function renderActiveCategoryWorkArea() {
       </div>
     ` : ''}
 
-    ${shortageWarning ? `
+    ${shortageWarning && !sbPaperPoolBelongsTo(paperCreationState.classId, paperCreationState.subjectId) ? `
+      <div style="margin-bottom:0.5rem;padding:0.45rem 0.65rem;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;font-size:0.7rem;color:#991b1b;">
+        <span>⚠️ There is no question bank for this class and subject yet, so no questions can be chosen here. Questions of another class are not offered in its place.</span>
+      </div>
+    ` : shortageWarning ? `
       <div style="margin-bottom:0.5rem;padding:0.45rem 0.65rem;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;font-size:0.7rem;color:#991b1b;display:flex;align-items:center;justify-content:space-between;">
         <span>⚠️ Only <strong>${allCategoryQuestions.length}</strong> questions available in bank, but <strong>${requiredCount}</strong> required.</span>
         <button onclick="reduceRequiredQuestionsToAvailable('${catId}', ${allCategoryQuestions.length})" style="background:#fee2e2;border:1px solid #f87171;color:#b91c1c;padding:0.15rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
@@ -11914,6 +11919,56 @@ function sbMcqKey(m) {
   return null;
 }
 
+// ─── PAPER SETS A / B / C ───────────────────────────────────
+// Set A is the paper as picked. Set B and C (and every press of "Shuffle") are the SAME questions in another order, and each multiple-choice
+// question with its options in another order and its key moved with them, so the answer key and the OMR sheet stay right. The order is
+// derived from the set and the shuffle count (no randomness): the same set prints the same paper every time. A question whose options point at
+// each other ("All of the above", "Both A and B", "None of these", the same in Urdu) keeps its options in place; its position still moves.
+const SB_PAPER_SET_SEED = { A: 0, B: 42, C: 99 };
+const SB_POSITIONAL_OPTION = /above|none of|all of|both|neither|^\s*(?:none|all)\b|\(?\b[a-d]\)?\s*(?:and|&|,)\s*\(?[a-d]\b\)?|مذکورہ|درج بالا|سب|تمام|کوئی نہیں|الف\s*اور\s*ب/i;
+function sbPaperRandom(seed) {                 // mulberry32
+  let a = seed | 0;
+  return function () { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+}
+function sbPaperPermutation(n, rnd) {
+  const p = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [p[i], p[j]] = [p[j], p[i]]; }
+  return p;
+}
+function sbPaperApplyVersion(list, catId, version, shuffle) {
+  const base = SB_PAPER_SET_SEED[version] || 0, n = shuffle || 0;
+  if (!list || list.length < 2 && !(list && list[0] && catId === 'mcqs') || (!base && !n)) return list;
+  let h = 0; for (const ch of String(catId)) h = (h * 31 + ch.charCodeAt(0)) | 0;
+  const rnd = sbPaperRandom(base * 1000 + n * 17 + h);
+  return sbPaperPermutation(list.length, rnd).map(i => {
+    const q = list[i];
+    if (catId !== 'mcqs' || !Array.isArray(q.opts) || q.opts.length < 2 || q.opts.some(o => SB_POSITIONAL_OPTION.test(String(o)))) return q;
+    const perm = sbPaperPermutation(q.opts.length, rnd);
+    return Object.assign({}, q, { opts: perm.map(k => q.opts[k]), ans: q.ans == null ? q.ans : perm.indexOf(q.ans) });
+  });
+}
+
+// Which classes the question pool of each kind of subject really belongs to. The pool of a subject is the textbook data of ONE class (Class 9
+// for chemistry, physics, Urdu and computer science; Class 7, 8, 9 or 10 for Maths ...). Before this, every other class was served the Class 9
+// data, so a Class 1 or Class 12 paper was printed from Class 9 books (docs/CONTENT_REVIEW.md, decision 4). A class without its own pool now
+// has an empty one. The kinds follow the branches of getCurriculumQuestionsForCategoryAll, in its order.
+const SB_PAPER_POOL_CLASSES = {
+  math: ['cls7', 'cls8', 'cls9', 'cls10'], eng: ['cls1', 'cls8', 'cls9', 'cls10'], urdu: ['cls9'], chem: ['cls9'], phys: ['cls9'], comp: ['cls9'],
+  pak: ['cls9', 'cls10'], isl: ['cls1', 'cls9', 'cls10'],             // Class 10 studies the Class 9 Islamiat book
+  nazira: ['cls1'],
+};
+function sbPaperPoolKind(sid) {
+  sid = String(sid || '').toLowerCase();
+  for (const k of ['math', 'eng', 'urdu', 'chem', 'phys', 'comp', 'pak']) if (sid.includes(k)) return k;
+  if (/-phy$/.test(sid)) return 'phys';
+  return sid.includes('nazira') ? 'nazira' : sid.includes('isl') ? 'isl' : null;
+}
+function sbPaperPoolBelongsTo(classId, subjectId) {
+  const kind = sbPaperPoolKind(subjectId);
+  const cls = (String(subjectId || '').match(/^cls\d+/) || [classId])[0] || classId;
+  return !!kind && SB_PAPER_POOL_CLASSES[kind].includes(cls);
+}
+
 function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
   const list = getCurriculumQuestionsForCategoryAll(classId, subjectId, catId);
   return sbFlag('hideGeneratedSlo') ? list.filter(q => !q.generated) : list;   // owner switch, off until approved (docs/CONTENT_REVIEW.md)
@@ -11922,6 +11977,7 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
 function getCurriculumQuestionsForCategoryAll(classId, subjectId, catId) {
   const sid = (subjectId || "").toLowerCase();
   const result = [];
+  if (!sbPaperPoolBelongsTo(classId, sid)) return result;      // no question bank for this class and subject: never another class's questions
 
   // 1. MATHEMATICS
   if (sid.includes("math")) {
@@ -12435,7 +12491,7 @@ function getCurriculumQuestionsForCategoryAll(classId, subjectId, catId) {
   }
 
   // 5. PHYSICS
-  else if (sid.includes("phys")) {
+  else if (sid.includes("phys") || /-phy$/.test(sid)) {     // the subject ids are "cls9-phy": this branch never matched before
     const chList = (DATA && DATA.physChapters) ? DATA.physChapters : [];
     chList.forEach((ch, cIdx) => {
       const chTitle = `Chapter ${ch.num || cIdx + 1}: ${ch.name}`;
@@ -12743,6 +12799,7 @@ function renderLiveExamPaperHtml() {
             if (found) displayQuestions.push(found);
           });
         }
+        displayQuestions = sbPaperApplyVersion(displayQuestions, catId, paperCreationState.version, paperCreationState.shuffle);
 
         // Section Title & Instructions
         let secTitle = `SECTION — ${sectionLetter} (${catMeta.name.toUpperCase()})`;
@@ -13012,12 +13069,14 @@ function updatePaperPreview() {
 
 function shufflePaperQuestions() {
   paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+  paperCreationState.shuffle = (paperCreationState.shuffle || 0) + 1;
   updatePaperPreview();
   refreshLeftPanelBody();
 }
 
 function switchPaperVersion(versionLetter) {
   paperCreationState.version = versionLetter;
+  paperCreationState.shuffle = 0;
   paperCreationState.paperCode = `SET-${versionLetter}-26`;
   const seedOffsets = { 'A': 1, 'B': 42, 'C': 99 };
   paperCreationState.seed = seedOffsets[versionLetter] || 1;

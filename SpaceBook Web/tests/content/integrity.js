@@ -23,13 +23,13 @@ check('index 0 is a real key', J("sbMcqKey({ options: ['a','b','c','d'], correct
 
 // ---- Papers reads the key the item has: Class 2 Urdu / Class 9 Islamiat were 100 % option A
 const dist = id => { const cls = id.split('-')[0]; const list = J(`getCurriculumQuestionsForCategory('${cls}', '${id}', 'mcqs').map(q => q.ans)`); const d = [0, 0, 0, 0]; list.forEach(a => { if (a !== null) d[a]++; }); return { n: list.length, d }; };
-for (const id of ['cls2-urdu', 'cls9-isl', 'cls10-chem', 'cls9-pakstudy']) {
+for (const id of ['cls9-urdu', 'cls9-isl', 'cls9-chem', 'cls9-pakstudy']) {
   const r = dist(id), top = Math.max(...r.d) / Math.max(1, r.d.reduce((a, b) => a + b, 0));
   check(id + ': the paper pool keeps the keys of its source (not 100 % A)', r.n > 0 && top < 0.95, JSON.stringify(r));
 }
 // every question the pool returns with a key has it inside its options; a question with no key has null
 {
-  const bad = J("(() => { const out = []; for (const [c, id] of [['cls9','cls9-isl'], ['cls2','cls2-urdu'], ['cls10','cls10-eng'], ['cls6','cls6-comp']]) for (const q of getCurriculumQuestionsForCategory(c, id, 'mcqs')) if (q.ans !== null && !(Number.isInteger(q.ans) && q.ans >= 0 && q.ans < (q.opts || []).length)) out.push(id + ':' + q.ans); return out; })()");
+  const bad = J("(() => { const out = []; for (const [c, id] of [['cls9','cls9-isl'], ['cls9','cls9-urdu'], ['cls10','cls10-eng'], ['cls9','cls9-comp']]) for (const q of getCurriculumQuestionsForCategory(c, id, 'mcqs')) if (q.ans !== null && !(Number.isInteger(q.ans) && q.ans >= 0 && q.ans < (q.opts || []).length)) out.push(id + ':' + q.ans); return out; })()");
   check('no paper MCQ has a key outside its options', bad.length === 0, bad.slice(0, 5).join(','));
 }
 
@@ -92,6 +92,64 @@ for (const id of ['cls2-urdu', 'cls9-isl', 'cls10-chem', 'cls9-pakstudy']) {
   check('the books library offers no dead PDF button (Read Online / Download)', !/Read Online|Download \(/.test(lib) && !/High-Resolution PDF/.test(lib));
   const all = J(`DATA.classes.map(c => { const l = DATA.subjects[c.id] || []; if (l[0]) openSubject(c.id, l[0].id); return document.getElementById('dashboard-body').innerHTML + (document.getElementById('page-content') ? document.getElementById('page-content').innerHTML : ''); }).filter(h => /href=.[^'" ]*[.]pdf/.test(h)).length`);
   check('no first subject of any class links to a PDF', all === 0, String(all));
+}
+
+// ---- a paper is drawn from the books of ITS class: no other class's questions fill the pool (docs/CONTENT_REVIEW.md, decision 4)
+{
+  const n = (c, id, cat) => J(`getCurriculumQuestionsForCategory('${c}', '${id}', '${cat || 'mcqs'}').length`);
+  const all = id => ['mcqs', 'sqs', 'lqs', 'numericals'].reduce((t, cat) => t + n(id.split('-')[0], id, cat), 0);        // a pool in any category
+  check('Class 1, 5, 11 and 12 Maths have no pool of Class 9 questions', all('cls1-math') === 0 && all('cls5-math') === 0 && all('cls12-math') === 0 && all('cls11-math') === 0);
+  check('Class 12 Physics / Chemistry / English / Urdu, Class 11 English and Class 10 Chemistry / Physics have none either', ['cls12-phy', 'cls12-chem', 'cls12-eng', 'cls12-urdu', 'cls11-eng', 'cls10-chem', 'cls10-phy'].every(id => all(id) === 0), ['cls12-phy', 'cls12-chem', 'cls12-eng', 'cls12-urdu', 'cls11-eng', 'cls10-chem', 'cls10-phy'].map(id => id + '=' + all(id)).join(' '));
+  check('Class 2 Urdu / Islamiat and Class 6 Computer have none (they used to get the Class 9 book)', all('cls2-urdu') === 0 && all('cls6-comp') === 0 && all('cls2-isl') === 0);
+  const own = ['cls7-math', 'cls8-math', 'cls9-math', 'cls10-math', 'cls1-eng', 'cls8-eng', 'cls9-eng', 'cls10-eng', 'cls9-urdu', 'cls9-chem', 'cls9-phy', 'cls9-comp', 'cls9-pakstudy', 'cls9-isl', 'cls10-isl', 'cls1-isl'];
+  check('the subjects that have their own books still have their pool', own.every(id => all(id) > 0), own.filter(id => all(id) === 0).join(','));
+  check('every category of an empty pool is empty (short and long questions too)', ['sqs', 'lqs'].every(cat => n('cls12', 'cls12-math', cat) === 0 && n('cls1', 'cls1-math', cat) === 0));
+  const phy = dist('cls9-phy');
+  check('Class 9 Physics (its pool never matched the subject id before) has MCQs with their own keys, not all A', phy.n > 50 && Math.max(...phy.d) / Math.max(1, phy.d.reduce((a, b) => a + b, 0)) < 0.95, JSON.stringify(phy));
+}
+
+// ---- paper sets A / B / C: the same questions in another order, options moved with their keys
+{
+  const r = J(`(() => {
+    const pool = getCurriculumQuestionsForCategory('cls9', 'cls9-isl', 'mcqs').filter(q => q.ans !== null && Array.isArray(q.opts)).slice(0, 60);
+    const ids = l => l.map(q => q.id).join(',');
+    const A = sbPaperApplyVersion(pool, 'mcqs', 'A', 0), B = sbPaperApplyVersion(pool, 'mcqs', 'B', 0), B2 = sbPaperApplyVersion(pool, 'mcqs', 'B', 0), C = sbPaperApplyVersion(pool, 'mcqs', 'C', 0), A1 = sbPaperApplyVersion(pool, 'mcqs', 'A', 1);
+    const byId = Object.fromEntries(pool.map(q => [q.id, q]));
+    const keyText = q => q.opts[q.ans];
+    const keyMoved = B.every(q => keyText(q) === keyText(byId[q.id])) && C.every(q => keyText(q) === keyText(byId[q.id]));
+    const sameOptions = B.every(q => [...q.opts].sort().join('|') === [...byId[q.id].opts].sort().join('|'));
+    const moved = B.filter(q => q.opts.join('|') !== byId[q.id].opts.join('|')).length;
+    const pos = { q: 'P', opts: ['x', 'y', 'z', 'All of the above'], ans: 3, id: 'p1' };
+    const pos2 = { q: 'Q', opts: ['(a) and (b)', 'only (a)', 'only (b)', 'none'], ans: 0, id: 'p2' };
+    const keep = sbPaperApplyVersion([pos, pos2, { q: 'R', opts: ['1', '2', '3', '4'], ans: 2, id: 'p3' }], 'mcqs', 'B', 0);
+    const noKey = sbPaperApplyVersion([{ q: 'N', opts: ['1', '2', '3', '4'], ans: null, id: 'n1' }, { q: 'M', opts: ['1', '2', '3', '4'], ans: null, id: 'n2' }], 'mcqs', 'C', 0);
+    const sq = [1, 2, 3, 4, 5, 6].map(i => ({ id: 's' + i, q: 'S' + i }));
+    return { n: pool.length, aSame: A === pool, a1Differs: ids(A1) !== ids(pool), bDiffers: ids(B) !== ids(pool), bAll: ids(B).split(',').sort().join() === ids(pool).split(',').sort().join(), bcDiffer: ids(B) !== ids(C), det: JSON.stringify(B) === JSON.stringify(B2), keyMoved, sameOptions, moved,
+      positionalKept: keep.filter(q => q.id === 'p1' || q.id === 'p2').every(q => q.ans === (q.id === 'p1' ? 3 : 0) && q.opts.join('|') === (q.id === 'p1' ? pos : pos2).opts.join('|')), p3Key: (() => { const q = keep.find(x => x.id === 'p3'); return q.opts[q.ans]; })(),
+      noKeyStays: noKey.every(q => q.ans === null), sqOrder: sbPaperApplyVersion(sq, 'sqs', 'B', 0).map(q => q.id).join() !== sq.map(q => q.id).join(), sqKeep: sbPaperApplyVersion(sq, 'sqs', 'A', 0) === sq,
+      orig: JSON.stringify(pool) === JSON.stringify(pool.map(q => byId[q.id])) };
+  })()`);
+  check('Set A with no shuffle is the list as picked (the very same list)', r.aSame && r.n >= 20, JSON.stringify(r));
+  check('Set B and Set C reorder the same questions, differently from each other and from A', r.bDiffers && r.bAll && r.bcDiffer);
+  check('a set is the same paper every time (no randomness)', r.det);
+  check('every press of Shuffle gives another order', r.a1Differs);
+  check('the options of an MCQ are reordered and the key moves with its option (the correct text stays the correct one)', r.keyMoved && r.sameOptions && r.moved > 5, 'moved ' + r.moved);
+  check('an MCQ whose options point at each other ("All of the above", "(a) and (b)") keeps its options and key', r.positionalKept);
+  check('a question without a key stays without a key, never gets one by moving', r.noKeyStays);
+  check('short questions are reordered too, set A leaves them alone', r.sqOrder && r.sqKeep);
+  const html = run(`(() => {
+    paperCreationState.classId = 'cls9'; paperCreationState.subjectId = 'cls9-isl'; paperCreationState.categoriesOrder = ['mcqs'];
+    paperCreationState.categoryAllocations.mcqs = { count: 12, attempt: 12, marksPerQ: 1, totalMarks: 12 };
+    const pool = getCurriculumQuestionsForCategory('cls9', 'cls9-isl', 'mcqs').slice(0, 12);
+    paperCreationState.selectedQuestionsByCategory = { mcqs: pool.map(q => q.id) };
+    paperCreationState.showAnswerKey = true;
+    const out = {};
+    for (const v of ['A', 'B', 'C']) { switchPaperVersion(v); out[v] = renderLiveExamPaperHtml(); }
+    return JSON.stringify(out);
+  })()`);
+  const sets = JSON.parse(html);
+  const keys = h => (h.match(/Key: \([A-E]\)/g) || []).length;
+  check('the rendered paper of Set B differs from Set A, and has the same number of keyed questions', sets.B !== sets.A && sets.C !== sets.B && keys(sets.A) === keys(sets.B) && keys(sets.A) === keys(sets.C) && keys(sets.A) > 5, [keys(sets.A), keys(sets.B), keys(sets.C)].join('/'));
 }
 
 console.log(`content integrity tests: ${passed} passed, ${failed} failed`);
