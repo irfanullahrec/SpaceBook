@@ -5528,6 +5528,23 @@ body:has(.math-unified-view) #page-content {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .mch-titles {
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .mch-titles > * {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .mch-titles > :not(.mch-title) {
+    white-space: normal !important;
+  }
+}
+
 .mch-title {
   font-size: 1.05rem;
   font-weight: 800;
