@@ -486,3 +486,14 @@ def split_items(text):
             cur += ch
     out.append(cur)
     return [x.strip() for x in out if x.strip()]
+
+
+def poly_combine(items, mode):
+    es = [tex_to_sympy(i) for i in items]
+    ts = [msol.clean_tex(i) for i in items]
+    if mode == 'sum':
+        res = sp.expand(sum(es)); given = ' + '.join(f'({t})' for t in ts)
+    else:
+        res = sp.expand(es[1] - es[0]); given = f'({ts[1]}) - ({ts[0]})'
+    steps = [step('given', given), step('expand', sp.latex(res, order='lex')), step('collect', sp.latex(res, order='lex'))]
+    return dedupe_m(steps), res

@@ -26,6 +26,8 @@ def category(ins):
     if 'additive inverse' in s: return 'addinv'
     if re.search(r'improper fractions? as mixed|as mixed numbers', s): return 'tomixed'
     if re.search(r'mixed numbers? as improper', s): return 'toimproper'
+    if re.search(r'^prove the following (equalities|by evaluating)', s): return 'verify'
+    if re.search(r'identify the exponent and base', s): return 'baseexp'
     if s.startswith('verify the commutative'): return 'comm'
     if s.startswith('verify the associative'): return 'assoc'
     if s.startswith('verify') and 'smaller' not in s: return 'verify'
@@ -42,6 +44,9 @@ def category(ins):
     if re.search(r'convert the following to decimals|terminating decimals or not', s): return 'fracdec'
     if re.search(r'absolute value', s): return 'absval'
     if re.search(r'how many subsets', s): return 'subsets'
+    if re.search(r'sum of the polynomials', s): return 'polysum'
+    if re.search(r'subtract the first polynomial from the second', s): return 'polysub'
+    if re.search(r'multiply the polynomials given', s): return 'expand'
     if re.search(r'product law of exponents', s): return 'expo_prod'
     if re.search(r'quotient law', s): return 'expo_quot'
     if re.search(r'single exponents?', s): return 'expo_pow'
@@ -91,6 +96,9 @@ def build(cat, ins, part_text):
     if cat == 'fracdec': return msol4.frac_decimal(unwrap(part_text))
     if cat == 'absval': return msol4.absolute_value(part_text)
     if cat == 'subsets': return msol4.subsets(part_text)
+    if cat == 'polysum': return msol2.poly_combine(msol2.split_items(part_text), 'sum')
+    if cat == 'polysub': return msol2.poly_combine(msol2.split_items(part_text), 'sub')
+    if cat == 'baseexp': return msol4.base_exp_value(unwrap(part_text))
     if cat == 'cbrt': return msol3.cbrt_by_factors(unwrap(part_text))
     if cat == 'simul': return msol3.simultaneous(part_text)
     if cat == 'polydiv': return msol3.poly_divide(part_text)
@@ -356,7 +364,7 @@ def run(cl):
                 ok = (int(m_.group(1)) == res) if m_ else None
             elif cat == 'simul':
                 ok = msol3.key_solution_matches(k, res) if k else None
-            elif cat in ('expo_prod', 'expo_quot', 'expo_pow'):
+            elif cat in ('expo_prod', 'expo_quot', 'expo_pow', 'baseexp'):
                 ok = None
             elif cat in ('equiv', 'comm', 'assoc'):
                 ok = None

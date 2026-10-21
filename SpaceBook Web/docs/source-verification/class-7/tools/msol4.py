@@ -193,3 +193,15 @@ def subsets(text):
     steps = [msol.step('given', msol_sets.fmt(r)),
              S('A set with n elements has 2^n subsets:', 'n عناصر والے سیٹ کے 2^n ذیلی سیٹ ہوتے ہیں:', 'د n عناصرو لرونکي سیټ 2^n فرعي سیټونه لري:', f'n = {n},\\quad 2^{{{n}}} = {2 ** n}')]
     return steps, 2 ** n
+
+
+def base_exp_value(text):
+    be = base_exp(text)
+    if not be:
+        raise ParseError('be')
+    b, e = be
+    bv = msol.val(msol.parse_tex(b)); ev = msol.val(msol.parse_tex(e))
+    v = bv ** int(ev)
+    steps = [msol.step('given', msol.clean_tex(text)),
+             S('In a^n, a is the base and n is the exponent; the value is a multiplied by itself n times:', 'a^n میں a بنیاد اور n طاقت ہے؛ قیمت a کو n بار خود سے ضرب دینے سے ملتی ہے:', 'په a^n کې a بنسټ او n توان دی؛ ارزښت د a n ځله ضرب دی:', f'\\text{{base}} = {msol.tex(msol.parse_tex(b))},\; \\text{{exponent}} = {int(ev)},\; \\text{{value}} = {msol.tex_num(v)}')]
+    return steps, f'Base {msol.tex_num(bv)}, exponent {int(ev)}, value {msol.tex_num(v)}'
