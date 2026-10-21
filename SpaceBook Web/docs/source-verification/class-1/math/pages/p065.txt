@@ -6,7 +6,9 @@ cnt duck:5x4 | [5] [] [] [=] [] || 5 ducks, 4 crossed out || ۵ بطخیں، ۴ 
 sol 5 − 4 = 1 ## 4 of the 5 ducks are crossed out; 1 is left. || ۵ میں سے ۴ بطخیں کاٹی گئیں؛ ۱ باقی ہے۔ || له ۵ نه ۴ هیلۍ کټ شوې؛ ۱ پاتې ده.
 q 2 | Aeroplanes: 4 − 4 = ☐ || ہوائی جہاز: ۴ − ۴ = ☐ || الوتکې: ۴ − ۴ = ☐
 cnt plane.green:4x4 | [4] [−] [4] [=] [] || 4 aeroplanes, all crossed out || ۴ ہوائی جہاز، سب کاٹے گئے || ۴ الوتکې، ټولې کټ شوې
-sol 0 ## All 4 are taken away, so none is left: 4 − 4 = 0. || چاروں نکال دیے گئے، کوئی باقی نہیں: ۴ − ۴ = ۰۔ || ټولې ۴ لرې شوې، هېڅ پاتې نه شوه: ۴ − ۴ = ۰.
+solution 0
+ss All 4 are taken away, so none is left: 4 − 4 = 0. || چاروں نکال دیے گئے، کوئی باقی نہیں: ۴ − ۴ = ۰۔ || ټولې ۴ لرې شوې، هېڅ پاتې نه شوه: ۴ − ۴ = ۰.
+sm 4 - 4 = 0
 q 3 | Tomatoes: 7 ☐ ☐ = ☐ || ٹماٹر: ۷ ☐ ☐ = ☐ || رومیان: ۷ ☐ ☐ = ☐
 cnt tomato:7x6 | [7] [] [] [=] [] || 7 tomatoes, 6 crossed out || ۷ ٹماٹر، ۶ کاٹے گئے || ۷ رومیان، ۶ کټ شوي
 sol 7 − 6 = 1 ## 6 tomatoes are crossed out; 1 is left. || ۶ ٹماٹر کاٹے گئے؛ ۱ باقی ہے۔ || ۶ رومیان کټ شوي؛ ۱ پاتې دی.

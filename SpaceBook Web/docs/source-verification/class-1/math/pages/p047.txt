@@ -7,9 +7,13 @@ cnt orange:7 frame "+" orange:2 frame || On the tree: 7 oranges; in Amna's baske
 p Ali and Amna are picking oranges in the garden. || علی اور آمنہ باغ میں مالٹے توڑ رہے ہیں۔ || علي او آمنه په باغ کې مالټې شکوي.
 box check | Questions || سوالات || پوښتنې
 q 1 | How many oranges were there on the tree? || درخت پر کتنے مالٹے تھے؟ || په ونه کې څو مالټې وې؟
-sol 9 (7 still on the tree + 2 in the basket) ## Add the oranges still on the tree and the ones already picked: 7 + 2 = 9. || درخت پر باقی اور توڑے گئے مالٹے جمع کریں: ۷ + ۲ = ۹۔ || په ونه پاتې او شکول شوې مالټې جمع کړئ: ۷ + ۲ = ۹.
+solution 9 (7 still on the tree + 2 in the basket)
+ss Add the oranges still on the tree and the ones already picked: 7 + 2 = 9. || درخت پر باقی اور توڑے گئے مالٹے جمع کریں: ۷ + ۲ = ۹۔ || په ونه پاتې او شکول شوې مالټې جمع کړئ: ۷ + ۲ = ۹.
+sm 7 + 2 = 9
 q 2 | How many oranges did Ali and Amna pick? || علی اور آمنہ نے کتنے مالٹے توڑے؟ || علي او آمنې څو مالټې وشکولې؟
 sol 2 ## The basket shows 2 oranges. || ٹوکری میں ۲ مالٹے ہیں۔ || په ټوکرۍ کې ۲ مالټې دي.
 q 3 | How many oranges are left on the tree? || درخت پر کتنے مالٹے باقی ہیں؟ || په ونه کې څو مالټې پاتې دي؟
-sol 7 ## 9 − 2 = 7 oranges are left on the tree. || ۹ − ۲ = ۷ مالٹے درخت پر باقی ہیں۔ || ۹ − ۲ = ۷ مالټې په ونه کې پاتې دي.
+solution 7
+ss 9 − 2 = 7 oranges are left on the tree. || ۹ − ۲ = ۷ مالٹے درخت پر باقی ہیں۔ || ۹ − ۲ = ۷ مالټې په ونه کې پاتې دي.
+sm 9 - 2 = 7
 endbox

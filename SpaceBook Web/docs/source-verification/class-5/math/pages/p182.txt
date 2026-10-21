@@ -6,11 +6,15 @@ q 5 | Fifth graders were asked to vote for their favourite subjects. The followi
 bars Urdu=5; English=6; Arts=10; Science=6; Math=8; Social Studies=3 | max=12 | step=1 | sq=1 | x=Number of students | y=Subject | scale=Scale: 1 square = 1 student | horiz || Favourite Subject || پسندیدہ مضمون || خوښ مضمون
 @issue Review Q5 bar lengths are read from the printed graph: Urdu 5, English 6, Arts 10, Science 6, Math 8, Social Studies 3 (the grid is slightly skewed).
 qp a | A total of how many students choose Science and Mathematics? || کل کتنے طلبہ نے سائنس اور ریاضی کو چنا؟ || ټول څو زده کوونکو ساینس او ریاضي غوره کړل؟
-sol 14 students ## 6 + 8 = 14. || 6 + 8 = 14۔ || 6 + 8 = 14.
+solution 14 students
+ss 6 + 8 = 14. || 6 + 8 = 14۔ || 6 + 8 = 14.
+sm 6 + 8 = 14
 qp b | How many students choose Arts? || کتنے طلبہ نے آرٹس کو چنا؟ || څو زده کوونکو هنر غوره کړ؟
 sol 10 students ## The Arts bar is 10 squares long. || آرٹس والی بار 10 خانے لمبی ہے۔ || د هنر میله 10 خانې اوږده ده.
 qp c | How many more students choose Math than science as their favourite subject? || سائنس کے مقابلے میں کتنے زیادہ طلبہ نے ریاضی کو پسندیدہ مضمون چنا؟ || د ساینس په پرتله څو ډېرو زده کوونکو ریاضي خوښ مضمون غوره کړ؟
-sol 2 more ## 8 − 6 = 2. || 8 − 6 = 2۔ || 8 − 6 = 2.
+solution 2 more
+ss 8 − 6 = 2. || 8 − 6 = 2۔ || 8 − 6 = 2.
+sm 8 - 6 = 2
 qp d | Which subjects are liked by the same number of students and what is their number? || کون سے مضامین برابر تعداد میں طلبہ کو پسند ہیں اور ان کی تعداد کیا ہے؟ || کوم مضمونونه د برابر شمېر زده کوونکو خوښ دي او شمېر یې څو دی؟
 sol English and Science, 6 students each ## Both bars are 6 squares long. || دونوں بارز 6 خانے لمبی ہیں۔ || دواړه میلې 6 خانې اوږدې دي.
 qp e | Study the graph to find the total number of students in grade 5. || گراف کی مدد سے پانچویں جماعت کے طلبہ کی کل تعداد معلوم کریں۔ || د ګراف په مرسته د پنځم ټولګي د زده کوونکو ټول شمېر معلوم کړئ.

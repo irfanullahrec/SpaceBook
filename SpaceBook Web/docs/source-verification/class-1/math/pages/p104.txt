@@ -2,7 +2,9 @@
 @issue Coin values read from designs: small gold pentagon Rs 5, silver mosque coins Rs 2, large gold Minar coins Rs 10. Printed labels "Cost of the truck" (the item is a duck) and "Total Cost" (Ayesha's money) are kept as printed with SpaceBook notes.
 q 6 | Count and write the correct amounts: Rs 50 note and three Rs 10 notes || درست رقم گن کر لکھیں: ۵۰ کا نوٹ اور ۱۰ کے تین نوٹ || سمې پیسې وشمېرئ او ولیکئ: د ۵۰ نوټ او د ۱۰ درې نوټونه
 cnt note50:1 note10:3 frame "Rs" [] || Rs 50 + Rs 10 + Rs 10 + Rs 10 || ۵۰ + ۱۰ + ۱۰ + ۱۰ روپے || ۵۰ + ۱۰ + ۱۰ + ۱۰ روپۍ
-sol Rs 80 ## 50 + 30 = 80 || ۵۰ + ۳۰ = ۸۰ || ۵۰ + ۳۰ = ۸۰
+solution Rs 80
+ss 50 + 30 = 80 || ۵۰ + ۳۰ = ۸۰ || ۵۰ + ۳۰ = ۸۰
+sm 50 + 30 = 80
 q 7 | Rs 20 note, one Rs 5 coin and four Rs 2 coins || ۲۰ کا نوٹ، ۵ کا ایک سکہ اور ۲ کے چار سکے || د ۲۰ نوټ، د ۵ یوه سکه او د ۲ څلور سکې
 cnt note20:1 coin5:1 coin2:4 frame "Rs" [] || Rs 20 + Rs 5 + 4 × Rs 2 || ۲۰ + ۵ + ۴ × ۲ روپے || ۲۰ + ۵ + ۴ × ۲ روپۍ
 sol Rs 33 ## 20 + 5 + 8 = 33 || ۲۰ + ۵ + ۸ = ۳۳ || ۲۰ + ۵ + ۸ = ۳۳
@@ -21,7 +23,9 @@ tr Cost of the train || ریل کی قیمت || د اورګاډي بیه | Rs | 
 tr Cost of the truck (+) || ٹرک (بطخ) کی قیمت (+) || د لارۍ (هیلۍ) بیه (+) | Rs | [ ] | [ ]
 tr Total money spent || کل خرچ شدہ رقم || ټولې لګول شوې پیسې | Rs | [ ] | [ ]
 endtable
-sol Rs 88 ## The second line is the duck (Rs 25): 63 + 25 = 88. || دوسری سطر بطخ (۲۵ روپے) ہے: ۶۳ + ۲۵ = ۸۸۔ || دویمه کرښه هیلۍ (۲۵ روپۍ) ده: ۶۳ + ۲۵ = ۸۸.
+solution Rs 88
+ss The second line is the duck (Rs 25): 63 + 25 = 88. || دوسری سطر بطخ (۲۵ روپے) ہے: ۶۳ + ۲۵ = ۸۸۔ || دویمه کرښه هیلۍ (۲۵ روپۍ) ده: ۶۳ + ۲۵ = ۸۸.
+sm 63 + 25 = 88
 q 11 | Ayesha wants to buy a teddy bear. She has Rs 50. How much more money does she need? || عائشہ ٹیڈی بیئر خریدنا چاہتی ہے۔ اس کے پاس ۵۰ روپے ہیں۔ اسے مزید کتنی رقم چاہیے؟ || عایشه غواړي ټېډي بېر واخلي. د هغې سره ۵۰ روپۍ دي. څومره نورې پیسې ورته پکار دي؟
 table Ayesha's money || عائشہ کی رقم || د عایشې پیسې
 th  | Rs | T | O
@@ -29,5 +33,7 @@ tr Cost of the teddy bear || ٹیڈی بیئر کی قیمت || د ټېډي بې
 tr Total Cost (−) || کل لاگت (−) || ټول لګښت (−) | Rs | [ ] | [ ]
 tr More amount she needs || مزید درکار رقم || نورې اړینې پیسې | Rs | [ ] | [ ]
 endtable
-sol Rs 20 ## The second line is the money Ayesha has (Rs 50): 70 − 50 = 20. || دوسری سطر عائشہ کی رقم (۵۰ روپے) ہے: ۷۰ − ۵۰ = ۲۰۔ || دویمه کرښه د عایشې پیسې (۵۰ روپۍ) دي: ۷۰ − ۵۰ = ۲۰.
+solution Rs 20
+ss The second line is the money Ayesha has (Rs 50): 70 − 50 = 20. || دوسری سطر عائشہ کی رقم (۵۰ روپے) ہے: ۷۰ − ۵۰ = ۲۰۔ || دویمه کرښه د عایشې پیسې (۵۰ روپۍ) دي: ۷۰ − ۵۰ = ۲۰.
+sm 70 - 50 = 20
 endexercise

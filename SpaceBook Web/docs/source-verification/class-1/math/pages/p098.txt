@@ -15,9 +15,13 @@ cnt note20:4/2 frame || 4 × Rs 20 || ۴ × ۲۰ روپے || ۴ × ۲۰ روپۍ
 sol Rs 80 — match with five Rs 10 coins, two Rs 5 coins and a Rs 20 note. ## 20 + 20 + 20 + 20 = 80 || ۲۰ + ۲۰ + ۲۰ + ۲۰ = ۸۰ || ۲۰ + ۲۰ + ۲۰ + ۲۰ = ۸۰
 q 8 | Left: one Rs 50 note || بائیں: پچاس روپے کا ایک نوٹ || کیڼ: د پنځوسو روپیو یو نوټ
 cnt note50:1 frame || 1 × Rs 50 || ۱ × ۵۰ روپے || ۱ × ۵۰ روپۍ
-sol Rs 50 — match with six Rs 5 coins and a Rs 20 note. ## 30 + 20 = 50 || ۳۰ + ۲۰ = ۵۰ || ۳۰ + ۲۰ = ۵۰
+solution Rs 50 — match with six Rs 5 coins and a Rs 20 note.
+ss 30 + 20 = 50 || ۳۰ + ۲۰ = ۵۰ || ۳۰ + ۲۰ = ۵۰
+sm 30 + 20 = 50
 q 9 | Left: one Rs 100 note || بائیں: سو روپے کا ایک نوٹ || کیڼ: د سلو روپیو یو نوټ
 cnt note100:1 frame || 1 × Rs 100 || ۱ × ۱۰۰ روپے || ۱ × ۱۰۰ روپۍ
-sol Rs 100 — match with three Rs 20 notes and four Rs 10 coins. ## 60 + 40 = 100 || ۶۰ + ۴۰ = ۱۰۰ || ۶۰ + ۴۰ = ۱۰۰
+solution Rs 100 — match with three Rs 20 notes and four Rs 10 coins.
+ss 60 + 40 = 100 || ۶۰ + ۴۰ = ۱۰۰ || ۶۰ + ۴۰ = ۱۰۰
+sm 60 + 40 = 100
 p Right-hand groups: || دائیں طرف کے گروہ: || ښي لوري ډلې:
 cnt note20:3 coin10:4 frame "=_100" | coin5:6 note20:1 frame "=_50" | note20:1 note10:1 frame "=_30" | coin10:5 coin5:2 note20:1 frame "=_80" | coin10:2 note20:1 frame "=_40" || Right groups: 3 × Rs 20 + 4 × Rs 10; 6 × Rs 5 + Rs 20; Rs 20 + Rs 10; 5 × Rs 10 + 2 × Rs 5 + Rs 20; 2 × Rs 10 + Rs 20 || دائیں گروہ: ۳ × ۲۰ + ۴ × ۱۰؛ ۶ × ۵ + ۲۰؛ ۲۰ + ۱۰؛ ۵ × ۱۰ + ۲ × ۵ + ۲۰؛ ۲ × ۱۰ + ۲۰ || ښي ډلې: ۳ × ۲۰ + ۴ × ۱۰؛ ۶ × ۵ + ۲۰؛ ۲۰ + ۱۰؛ ۵ × ۱۰ + ۲ × ۵ + ۲۰؛ ۲ × ۱۰ + ۲۰
