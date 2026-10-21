@@ -72,6 +72,7 @@ Class 8 6.9 Q4 (x² + 1/x² = 18 when x − 1/x = 4; key 6), Class 8 6.9 Q12 (p�
 
 ## Derived non-Maths answers (written from general knowledge or the lesson summary; to be checked by a teacher)
 - Class 8 Islamiat: 16 open parts answered (Lessons 1.3 destiny, 3 fear of Allah, 7.3 purpose of worship, 12.1 purdah, 20.2 Imam Hussain, 25.1 enjoining good). Not answered: u23 MCQs d/e (options cut off), u19 Q2 and u24 Q4 tables.
+- Class 8 General Science: 14 open parts answered (yoghurt activity 4.1, Bt corn, space short questions). Derived: Sun's motion speed (about 220 km/s). Not answered: figure/experiment-dependent parts (reaction-time table, periodic-table questions, ray diagrams, projects).
 
 ## Next steps (in order of value)
 1. More Mathematics solutions: author the remaining word problems in `class-N/math/dsl/*.txt` (one line per part: TeX rows + `=> answer`, checked by the engine), then `python msol_run.py N` and, for Class 8, `python apply_gen8.py`; Class 7 needs `python build_math7.py`.
