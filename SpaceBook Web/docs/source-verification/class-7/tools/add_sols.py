@@ -20,7 +20,10 @@ files = {}
 bad = 0
 for key, lines in blocks:
     page, ex, qno = key[0], key[1], key[2]
-    part = key[3] if len(key) > 3 else None
+    occ = 1
+    for t in key[3:]:
+        if t.startswith('#'): occ = int(t[1:])
+    part = next((t for t in key[3:] if not t.startswith('#')), None)
     f = HERE / f'class-{cl}' / subj / 'pages' / f'{page}.txt'
     L = files.setdefault(f, f.read_text(encoding='utf-8').split('\n'))
     inex = ex == '-'
@@ -32,6 +35,8 @@ for key, lines in blocks:
         if l.startswith('exercise '): cur_ex = l.split(None, 1)[1].strip()
         elif l.startswith('endexercise'): cur_ex = None if ex != '-' else '-'
         if cur_ex == ex and re.match(r'q\s+' + re.escape(qno) + r'(\s|\|)', l):
+            occ -= 1
+            if occ > 0: continue
             pos = i
             if part:
                 j = i + 1

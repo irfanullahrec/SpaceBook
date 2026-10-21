@@ -57,6 +57,9 @@
   .m6-tabs button[aria-pressed="true"]{background:#0369a1;color:#fff;border-color:#0369a1}
   .m6-w{text-decoration:underline dotted #0284c7;text-underline-offset:4px;cursor:help}
   .m6-h3{font-size:1.08rem;font-weight:750;color:#0f172a;margin:1rem 0 .3rem}
+  .m6-root,.m6-root *{min-width:0;overflow-wrap:anywhere}
+  .m6-root .katex-display,.m6-root table{max-width:100%}
+  .m6-root svg,.m6-root img{max-width:100%;height:auto}
   .m6-h4{font-size:1rem;font-weight:700;color:#075985;margin:.9rem 0 .25rem}
   .m6-hsub{display:block;font-weight:500;font-size:.92rem;color:#475569;direction:rtl;text-align:right}
   .m6-m{margin:.25rem 0 .25rem 1rem;font-variant-numeric:tabular-nums}
@@ -319,7 +322,7 @@
       html += card('m6-front', 'Book', 'Cover, credits and contents', root(blocks(BOOK.frontMatter)), false);
     }
     if (!ch.sections.length) return html + pending(ch);
-    html += ch.sections.map((sec, i) => card(sec.id, /^\d+\.\d/.test(sec.id) ? `Topic ${sec.id}` : (/summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : 'Unit opening')), sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root(blocks(sec.blocks, {showAnswers: true})), i === 0)).join('');
+    html += pageCards(ch.sections, {id: sec => sec.id, badge: (sec, i) => /^\d+\.\d/.test(sec.id) ? `Topic ${sec.id}` : (/summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : 'Unit opening')), title: sec => sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root, blocks, card});
     if (BOOK.backMatter && BOOK.backMatter.length && ch === BOOK_LAST()) {
       html += card('m6-back', 'Book', 'Glossary, formulas, web links, index and symbols', root(blocks(BOOK.backMatter)), false);
     }
@@ -386,5 +389,95 @@
       return originalTypeset.apply(this, arguments);
     }; });
   }
-  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, css: true};
+  // ---- page-wise lesson: the book's pages in printed order, one sheet per page --------------------------
+  // Book data is cut into topics ("sections"), and every section starts with its own page marker, so a printed
+  // page that holds the end of one topic and the start of the next used to appear twice, in two cards. The
+  // readers now hand their sections to pageCards(): runs of ordinary lesson sections become ONE page flow (the
+  // topic title stays as a heading inside the page it starts on; a page marker that repeats the previous
+  // section's last page is dropped), while exercise / key-point / SLO sections stay separate cards for
+  // sb_structure.js to place in their own tabs. opts.minimal (Classes 1-2, whose read-along and activity
+  // widgets are keyed to one card per section) only joins the sections that share a split page.
+  const KIND_EX = /^(?:doing\b|(?:review\s+|end[- ]of[- ](?:unit|chapter)\s+)?exercises?\b|unit\s+\d+\s+exercise|(?:multiple[- ]choice|conceptual|comprehensive|numerical|short(?:[- ]answer)?|long(?:[- ]answer)?|review|self[- ]assessment|test\s+yourself)\s+(?:questions?|problems?)|questions?\s+for\s+(?:review|practice)|مشق(?:ی|یں)?(?=\s|$|[·—:\-(])|مشقی\s+سوالات|سوالات(?=\s|$|[·—:\-(])|تمرین|مشغولتیا)/i;
+  const KIND_SUM = /^(?:key\s+points?|summary|chapter\s+summary|unit\s+summary|points\s+to\s+remember|اہم\s+نکات|خلاصہ|لنډیز)/i;
+  const KIND_SLO = /^(?:slo[- ]based\s+practice|slo\s+پر\s+مبنی)/i;
+  const LEAD_WORD = /^(?:(?:lesson|topic|part|paragraph|book|page)\s+(?:\d[\w.\-]*\s*)?)/i;
+  function sectionKind(head) {
+    const t = String(head || '').replace(/[⛶▸▾+−🔊]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (/^doing\b/i.test(t)) return 'exercise';
+    const h = t.replace(LEAD_WORD, '');
+    return KIND_SLO.test(h) ? 'slos' : KIND_SUM.test(h) ? 'summary' : KIND_EX.test(h) ? 'exercise' : '';
+  }
+  const flat = s => String(s || '').toLowerCase().replace(/[^a-z0-9؀-ۿ]+/g, '');
+  const lastPdfOf = (list, from) => { let p = from; (list || []).forEach(b => { if (b && b.t === 'page') p = b.pdf; }); return p; };
+  function flowBlocks(secs) {
+    const out = []; let lastPdf = null;
+    secs.forEach(sec => {
+      const bl = (sec.blocks || []).slice();
+      const lead = bl[0] && bl[0].t === 'page' ? bl.shift() : null;
+      if (lead && !(lastPdf != null && lead.pdf === lastPdf)) out.push(lead);
+      if (lead) lastPdf = lead.pdf;
+      const first = bl.find(b => b.t !== 'page');
+      const ft = first && first.t === 'h' ? flat(first.en) : '', st = flat(sec.title);
+      const same = ft && st && (ft.indexOf(st) >= 0 || st.indexOf(ft) >= 0);
+      if (sec.title && !same && !/(^|[-_])(intro|opening)$/i.test(String(sec.id || ''))) {
+        out.push({t: 'h', l: 3, en: sec.title, ur: sec.titleUrdu, ps: sec.titlePashto || sec.titleUrdu});
+      }
+      bl.forEach(b => out.push(b));
+      lastPdf = lastPdfOf(bl, lastPdf);
+    });
+    return out;
+  }
+  function pageCards(secs, o) {
+    secs = secs || [];
+    const ctx = o.ctx || {showAnswers: true};
+    const own = (sec, k) => o.card(o.id(sec, k), o.badge(sec, k), o.title(sec, k), o.root(o.blocks(sec.blocks, ctx)), o.open ? o.open(k) : k === 0);
+    let html = '';
+    if (o.minimal) {
+      let group = [], lastPdf = null;
+      const flush = k0 => {
+        if (!group.length) return;
+        const g = group[0];
+        html += group.length === 1 ? own(g, k0) : o.card(o.id(g, k0), o.badge(g, k0), o.title(g, k0), o.root(o.blocks(flowBlocks(group), ctx)), o.open ? o.open(k0) : k0 === 0);
+        group = [];
+      };
+      let k0 = 0;
+      secs.forEach((sec, k) => {
+        const first = (sec.blocks || [])[0];
+        const dup = group.length && first && first.t === 'page' && lastPdf != null && first.pdf === lastPdf;
+        if (!dup) { flush(k0); k0 = k; }
+        group.push(sec); lastPdf = lastPdfOf(sec.blocks, lastPdf);
+      });
+      flush(k0);
+      return html;
+    }
+    let run = [];
+    const flushRun = () => {
+      if (!run.length) return;
+      // one collapsed card per printed page: a "Page N" tab (click to slide it open, ⛶ for full screen) over the page sheet
+      const pages = []; let cur = null;
+      flowBlocks(run).forEach(b => { if (b.t === 'page' || !cur) { cur = {page: b.t === 'page' ? b : null, blocks: []}; pages.push(cur); } cur.blocks.push(b); });
+      const base = o.id(run[0], 0);
+      pages.forEach((pg, n) => {
+        const h = pg.blocks.find(b => b.t === 'h');
+        const title = h ? String(h.en || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim() : '';
+        const badgeText = pg.page ? (pg.page.printed != null ? 'Page ' + pg.page.printed : 'Scan ' + pg.page.pdf) : 'Page';
+        html += o.card(`${base}-pg${pg.page ? pg.page.pdf : 'x' + n}`, badgeText, title || badgeText, o.root(o.blocks(pg.blocks, ctx)), false)
+          .replace('<div class="math-topic-card math-accordion-card', '<div data-sb-tp="1" class="math-topic-card math-accordion-card sb-pgcard');
+      });
+      run = [];
+    };
+    secs.forEach((sec, k) => {
+      if (sectionKind(String(o.badge(sec, k)) + ' ' + String(sec.title || ''))) { flushRun(); html += own(sec, k); }
+      else run.push(sec);
+    });
+    flushRun();
+    return html;
+  }
+  if (typeof document !== 'undefined' && !document.getElementById('sb-pageflow-style')) {
+    const st = document.createElement('style');
+    st.id = 'sb-pageflow-style';
+    st.textContent = '.sb-pgcard .math-accordion-body{padding-bottom:1.8rem}.sb-pgcard.open>.math-accordion-body{animation:sbpgslide .28s ease}@keyframes sbpgslide{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}';
+    document.head.appendChild(st);
+  }
+  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, pageCards, css: true};
 })();
