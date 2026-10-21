@@ -6,7 +6,13 @@ cnt eraser.red:3 frame [] "+" eraser.red:6/3 frame [6] "=" eraser.red:9/3 frame 
 sol 3 ## The first box has 3 erasers: 3 + 6 = 9. || پہلے خانے میں ۳ ربڑ ہیں: ۳ + ۶ = ۹۔ || په لومړۍ خونه کې ۳ ربړونه دي: ۳ + ۶ = ۹.
 q 16 | 7 − 2 = __ || ۷ − ۲ = __ || ۷ − ۲ = __
 cnt fish.grey:7x2/4 frame [7] "−" [2] "=" fish.grey:5/2 frame [] || 7 fish, 2 crossed out; 5 fish || ۷ مچھلیاں، ۲ کاٹی گئیں؛ ۵ مچھلیاں || ۷ کبان، ۲ کټ شوي؛ ۵ کبان
-sol 5 ## 7 − 2 = 5 || ۷ − ۲ = ۵ || ۷ − ۲ = ۵
+solution 5
+ss 7 − 2 = 5 || ۷ − ۲ = ۵ || ۷ − ۲ = ۵
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 7 - 2
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 7 - 2 = 5
+ss So the answer is 5. || لہٰذا جواب ہے 5۔ || نو ځواب دی 5.
 p Find the unknown number. || نامعلوم عدد معلوم کریں۔ || نامعلوم عدد پیدا کړئ.
 q 17 | 1 + __ = 8 || ۱ + __ = ۸ || ۱ + __ = ۸
 sol 7 ## 1 + 7 = 8 || ۱ + ۷ = ۸ || ۱ + ۷ = ۸
@@ -15,7 +21,13 @@ sol 5 ## 5 + 6 = 11 || ۵ + ۶ = ۱۱ || ۵ + ۶ = ۱۱
 q 19 | 13 − __ = 11 || ۱۳ − __ = ۱۱ || ۱۳ − __ = ۱۱
 sol 2 ## 13 − 2 = 11 || ۱۳ − ۲ = ۱۱ || ۱۳ − ۲ = ۱۱
 q 20 | 9 − 6 = __ || ۹ − ۶ = __ || ۹ − ۶ = __
-sol 3 ## 9 − 6 = 3 || ۹ − ۶ = ۳ || ۹ − ۶ = ۳
+solution 3
+ss 9 − 6 = 3 || ۹ − ۶ = ۳ || ۹ − ۶ = ۳
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 9 - 6
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 9 - 6 = 3
+ss So the answer is 3. || لہٰذا جواب ہے 3۔ || نو ځواب دی 3.
 p Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
 q 21 | 26 + 1 || ۲۶ + ۱ || ۲۶ + ۱
 eq \begin{array}{rcc} & \text{T} & \text{O} \\ & 2 & 6 \\ + &  & 1 \\ \hline & & \end{array}

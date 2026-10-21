@@ -20,4 +20,10 @@ cnt [] apple:5/3 frame "+" apple:3 frame [3] "=" [] || 5 apples and 3 apples || 
 sol 5 + 3 = 8 ## The first box has 5 apples; 5 + 3 = 8. || پہلے خانے میں ۵ سیب ہیں؛ ۵ + ۳ = ۸۔ || په لومړۍ خونه کې ۵ مڼې دي؛ ۵ + ۳ = ۸.
 q 6 | 1 + 5 = __ || ۱ + ۵ = __ || ۱ + ۵ = __
 cnt [1] apple:1 frame "+" apple:5/3 frame [5] "=" [] || 1 apple and 5 apples || ۱ سیب اور ۵ سیب || ۱ مڼه او ۵ مڼې
-sol 6 ## 1 + 5 = 6 || ۱ + ۵ = ۶ || ۱ + ۵ = ۶
+solution 6
+ss 1 + 5 = 6 || ۱ + ۵ = ۶ || ۱ + ۵ = ۶
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 1 + 5
+ss Add the ones first, then add the tens. || پہلے اکائیاں جمع کریں، پھر دہائیاں جمع کریں۔ || لومړی یوونه سره جمع کړئ، بیا لسیزې سره جمع کړئ.
+sm 1 + 5 = 6
+ss So the answer is 6. || لہٰذا جواب ہے 6۔ || نو ځواب دی 6.
