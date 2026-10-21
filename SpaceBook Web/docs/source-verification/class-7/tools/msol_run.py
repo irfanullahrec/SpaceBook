@@ -5,7 +5,7 @@
 import sys, json, re
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4, msol5, msol6
+import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4, msol5, msol6, msol7
 from msol import step
 
 HERE = Path(__file__).resolve().parents[2]
@@ -40,6 +40,8 @@ def category(ins):
     if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
     if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
     if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'rules of the following patterns|observe the following sequences', s): return 'seq'
+    if re.search(r'^write the following in exponential form', s): return 'repprod'
     if re.search(r'^find the value of [a-z] in', s): return 'findvalue'
     if re.search(r'^find the cubes? of', s): return 'cube'
     if re.search(r'non-perfect squares|square root of the following decimal fractions', s): return 'sqrtapprox'
@@ -100,6 +102,8 @@ def build(cat, ins, part_text):
             raise msol.ParseError('law check')
         return st, rs
     if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'seq': return msol7.sequence(part_text)
+    if cat == 'repprod': return msol7.repeated_product(unwrap(part_text))
     if cat == 'findvalue': return msol2.solve_linear(unwrap(part_text))
     if cat == 'cube': return msol6.cube(unwrap(part_text))
     if cat == 'sqrtapprox':
@@ -188,6 +192,8 @@ def build(cat, ins, part_text):
 
 
 def result_tex(res):
+    if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], str):
+        return res[0] + ((': ' + ', '.join(msol.tex_num(v) for v in res[1])) if res[1] else '')
     if isinstance(res, tuple) and len(res) == 2:
         return f'({res[0]}, {res[1]})'
     if isinstance(res, tuple) and len(res) == 3:
@@ -389,7 +395,7 @@ def run(cl):
                 continue
             if re.search(r'estimate|round|reasonable', ins, re.I):
                 continue
-            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '°' not in ptxt and '{' not in ptxt and '{' not in (ins or ''):
+            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '°' not in ptxt and not re.fullmatch(r'[\d,\s.\-−…]+', ptxt.strip().replace('...', '')) and '{' not in ptxt and '{' not in (ins or ''):
                 continue
             try:
                 rr = set_relation_leaf(ins, ptxt, no, q['key'])
@@ -434,7 +440,14 @@ def run(cl):
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
             k0 = q['key'] or ''
-            if cat == 'sqrtapprox' or cat == 'rotate':
+            if cat == 'seq':
+                kind, more = res
+                if not k: ok = None
+                elif more: ok = all(msol.tex_num(v) in re.findall(r'-?\d+\.?\d*', k.replace('−', '-')) or str(int(v)) in re.findall(r'-?\d+', k) for v in more)
+                else: ok = True
+            elif cat == 'repprod':
+                ok = None
+            elif cat == 'sqrtapprox' or cat == 'rotate':
                 ok = (any(abs(float(res if cat == 'sqrtapprox' else 0) - x) < 0.0006 for x in nums(k)) if cat == 'sqrtapprox' else ((str(res[0]) in k.replace('−', '-') and str(res[1]) in k.replace('−', '-')) if k else None)) if k else None
             elif cat == 'ineq':
                 ok = msol5.key_ineq_match(k, res) if k else None
