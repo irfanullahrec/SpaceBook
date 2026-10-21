@@ -11,6 +11,9 @@ Tools added (re-runnable):
 - `tools/qa_layout_harness.js`: in-browser (load on `lazy.html`) overflow test per unit and tab: `await QA.run('cls7','hpe',{tabs:['lesson','exercise']})`.
 - `docs/source-verification/class-7/tools/`: `fix_secs.py` (moves stacked `@sec` lines to their headings), `add_sols.py` + `list_unanswered.py` + `qa_show.py` (author answers into page files, then rebuild).
 
+## Quran text check against _qcache (Not verified)
+Compared the Arabic verse lines (those with a verse-end marker) of the Class 6/7/8 Quran books with D:/SpaceBook/_qcache (letters only, diacritics and alef variants ignored): 758 lines tested, 3 matched, 0 contradicted. The other 755 belong to surahs the cache does not hold (e.g. 12 Yusuf, 78, 81), so they are **Not verified** against a second source. Re-run after caching those surahs (script: scratchpad qchk.py, logic above). Arabic-book (non-Quran) text was not compared.
+
 ## 1. Proofreading against scans
 - **Found and fixed (real defect): Class 7 HPE units 2-12 rendered empty.** Two `exercise` blocks (p014, p106) were never closed, so everything after them was swallowed. Fixed in the page files; rebuilt (`hpe_7_data.js`). 73 pages also had several `@sec` lines stacked at the top (157 of 275 sections were empty cards); moved to their headings (now 12 empty, 4 %). The same stacking was fixed in Class 7 Geography (11 pages) and History (4 pages).
 - Cross-check of page-file line counts against built data for all 35 books: no other swallowed content.
