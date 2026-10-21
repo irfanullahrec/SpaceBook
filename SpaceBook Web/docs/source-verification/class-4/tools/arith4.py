@@ -7,6 +7,7 @@ Only unambiguous items are handled: a column array (A + B / A - B), `A + B`, `A 
 (sol / solution / qsol) are left alone; everything else (word problems, patterns, fractions) is NOT touched.
 """
 import re, sys
+from decimal import Decimal
 from pathlib import Path
 
 import os
@@ -50,11 +51,14 @@ CHECK = ('Check by multiplying back: the divisor times the quotient (plus the re
 
 
 def t(n):
+    if isinstance(n, Decimal):
+        return f'{n:f}'
     return f'{n:,}'.replace(',', '{,}')
 
 
 def num(s):
-    return int(re.sub(r'[,\s]|\{,\}', '', s))
+    s = re.sub(r'[,\s]|\{,\}', '', s)
+    return Decimal(s) if '.' in s else int(s)
 
 
 def parse(text):
@@ -86,7 +90,7 @@ def parse(text):
     m = re.match(r'^\$?\s*(\d[\d,{}]*)\s*(?:\\,)?\s*\\overline\{\)\s*(?:\\,)?\s*(\d[\d,{}]*)\}\s*\$?$', s)
     if m:
         return num(m.group(2)), '/', num(m.group(1))
-    m = re.match(r'^\$?\s*(\d[\d,{}]*)\s*(\+|−|-|×|x|÷|/|\\times|\\div)\s*(\d[\d,{}]*)\s*(?:=\s*\??)?\s*\$?$', s)
+    m = re.match(r'^\$?\s*(\d[\d,{}]*(?:\.\d+)?)\s*(\+|−|-|×|x|÷|/|\\times|\\div)\s*(\d[\d,{}]*(?:\.\d+)?)\s*(?:=\s*\??)?\s*\$?$', s)
     if m:
         op = {'+': '+', '−': '-', '-': '-', '×': 'x', 'x': 'x', r'\times': 'x', '÷': '/', '/': '/', r'\div': '/'}[m.group(2)]
         return num(m.group(1)), op, num(m.group(3))
@@ -94,6 +98,28 @@ def parse(text):
 
 
 def build(a, op, b):
+    if isinstance(a, Decimal) or isinstance(b, Decimal):      # decimal arithmetic: exact, no rounding
+        a, b = Decimal(a), Decimal(b)
+        if op == '/':
+            if b == 0:
+                return None
+            v = a / b
+            if v * b != a or len(f'{v.normalize():f}') > 14:
+                return None
+        else:
+            v = a + b if op == '+' else a - b if op == '-' else a * b
+            if v < 0:
+                return None
+        v = v.normalize()
+        ans = f'{v:f}'
+        sym = SYM[op]
+        lines = [f'solution {ans}',
+                 f'ss {WRITE[0]}. || {WRITE[1]}۔ || {WRITE[2]}.',
+                 f'sm {t(a)} {sym} {t(b)}',
+                 'ss Work with the digits as whole numbers, then put the decimal point back in the right place. || اعداد کو پورے اعداد کی طرح حل کریں، پھر اعشاریہ نقطہ صحیح جگہ پر لگائیں۔ || عددونه د بشپړو عددونو په څېر حل کړئ، بیا اعشاریه ټکی په سم ځای کېږدئ.',
+                 f'sm {t(a)} {sym} {t(b)} = {ans}',
+                 f'ss {RESULT[0]} {ans}. || {RESULT[1]} {ans}۔ || {RESULT[2]} {ans}.']
+        return lines
     if op == '/':
         if b == 0:
             return None

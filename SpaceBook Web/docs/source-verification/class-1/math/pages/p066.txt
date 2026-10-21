@@ -2,10 +2,22 @@
 @deco Four blue birds fly away from an empty branch.
 q 7 | 5 − 4 || ۵ − ۴ || ۵ − ۴
 cnt [5] eraser.green:5 | "−" [4] eraser.green:4 | [] eraser.green:1 || 5 erasers take away 4 erasers || ۵ ربڑ میں سے ۴ نکالیں || له ۵ ربړونو نه ۴ لرې کړئ
-sol 1 ## 5 − 4 = 1 || ۵ − ۴ = ۱ || ۵ − ۴ = ۱
+solution 1
+ss 5 − 4 = 1 || ۵ − ۴ = ۱ || ۵ − ۴ = ۱
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 5 - 4
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 5 - 4 = 1
+ss So the answer is 1. || لہٰذا جواب ہے 1۔ || نو ځواب دی 1.
 q 8 | 7 − 7 || ۷ − ۷ || ۷ − ۷
 cnt [7] sharpener.brown:7 | "−" [7] sharpener.brown:7 | [] || 7 sharpeners take away 7 sharpeners || ۷ شارپنر میں سے ۷ نکالیں || له ۷ تراشونکو نه ۷ لرې کړئ
-sol 0 ## A number minus itself is 0: 7 − 7 = 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰: ۷ − ۷ = ۰۔ || عدد منفي همغه عدد ۰ کېږي: ۷ − ۷ = ۰.
+solution 0
+ss A number minus itself is 0: 7 − 7 = 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰: ۷ − ۷ = ۰۔ || عدد منفي همغه عدد ۰ کېږي: ۷ − ۷ = ۰.
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 7 - 7
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 7 - 7 = 0
+ss So the answer is 0. || لہٰذا جواب ہے 0۔ || نو ځواب دی 0.
 p Look at the picture and fill in the blanks. || تصویر دیکھیں اور خالی جگہیں پُر کریں۔ || انځور وګورئ او تش ځایونه ډک کړئ.
 q 9 | ____ birds were sitting on the tree. ____ birds flew away. ____ birds are left on the tree. ☐ − ☐ = ☐ || ____ پرندے درخت پر بیٹھے تھے۔ ____ پرندے اڑ گئے۔ ____ پرندے درخت پر باقی ہیں۔ ☐ − ☐ = ☐ || ____ مرغان په ونه ناست وو. ____ مرغان والوتل. ____ مرغان په ونه پاتې دي. ☐ − ☐ = ☐
 cnt bird.blue:4 "flying" | "branch:" [] || 4 birds flying away; no bird is left on the branch || ۴ پرندے اڑ رہے ہیں؛ شاخ پر کوئی پرندہ نہیں || ۴ مرغان الوزي؛ په ښاخ هېڅ مرغه نشته
@@ -19,19 +31,67 @@ cnt orange:6x2 [] || 6 oranges, 2 crossed out || ۶ مالٹے، ۲ کاٹے گ�
 sol 4 ## 6 − 2 = 4 || ۶ − ۲ = ۴ || ۶ − ۲ = ۴
 p Solve the following. || درج ذیل کو حل کریں۔ || لاندې حل کړئ.
 q 12 | 3 − 1 || ۳ − ۱ || ۳ − ۱
-sol 2 ## 3 − 1 = 2 || ۳ − ۱ = ۲ || ۳ − ۱ = ۲
+solution 2
+ss 3 − 1 = 2 || ۳ − ۱ = ۲ || ۳ − ۱ = ۲
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 3 - 1
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 3 - 1 = 2
+ss So the answer is 2. || لہٰذا جواب ہے 2۔ || نو ځواب دی 2.
 q 13 | 5 − 0 || ۵ − ۰ || ۵ − ۰
-sol 5 ## Taking away 0 leaves the number as it is. || ۰ نکالنے سے عدد وہی رہتا ہے۔ || د ۰ لرې کول عدد نه بدلوي.
+solution 5
+ss Taking away 0 leaves the number as it is. || ۰ نکالنے سے عدد وہی رہتا ہے۔ || د ۰ لرې کول عدد نه بدلوي.
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 5 - 0
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 5 - 0 = 5
+ss So the answer is 5. || لہٰذا جواب ہے 5۔ || نو ځواب دی 5.
 q 14 | 6 − 3 || ۶ − ۳ || ۶ − ۳
-sol 3 ## 6 − 3 = 3 || ۶ − ۳ = ۳ || ۶ − ۳ = ۳
+solution 3
+ss 6 − 3 = 3 || ۶ − ۳ = ۳ || ۶ − ۳ = ۳
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 6 - 3
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 6 - 3 = 3
+ss So the answer is 3. || لہٰذا جواب ہے 3۔ || نو ځواب دی 3.
 q 15 | 7 − 2 || ۷ − ۲ || ۷ − ۲
-sol 5 ## 7 − 2 = 5 || ۷ − ۲ = ۵ || ۷ − ۲ = ۵
+solution 5
+ss 7 − 2 = 5 || ۷ − ۲ = ۵ || ۷ − ۲ = ۵
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 7 - 2
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 7 - 2 = 5
+ss So the answer is 5. || لہٰذا جواب ہے 5۔ || نو ځواب دی 5.
 q 16 | 8 − 5 || ۸ − ۵ || ۸ − ۵
-sol 3 ## 8 − 5 = 3 || ۸ − ۵ = ۳ || ۸ − ۵ = ۳
+solution 3
+ss 8 − 5 = 3 || ۸ − ۵ = ۳ || ۸ − ۵ = ۳
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 8 - 5
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 8 - 5 = 3
+ss So the answer is 3. || لہٰذا جواب ہے 3۔ || نو ځواب دی 3.
 q 17 | 9 − 1 || ۹ − ۱ || ۹ − ۱
-sol 8 ## 9 − 1 = 8 || ۹ − ۱ = ۸ || ۹ − ۱ = ۸
+solution 8
+ss 9 − 1 = 8 || ۹ − ۱ = ۸ || ۹ − ۱ = ۸
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 9 - 1
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 9 - 1 = 8
+ss So the answer is 8. || لہٰذا جواب ہے 8۔ || نو ځواب دی 8.
 q 18 | 4 − 2 || ۴ − ۲ || ۴ − ۲
-sol 2 ## 4 − 2 = 2 || ۴ − ۲ = ۲ || ۴ − ۲ = ۲
+solution 2
+ss 4 − 2 = 2 || ۴ − ۲ = ۲ || ۴ − ۲ = ۲
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 4 - 2
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 4 - 2 = 2
+ss So the answer is 2. || لہٰذا جواب ہے 2۔ || نو ځواب دی 2.
 q 19 | 5 − 5 || ۵ − ۵ || ۵ − ۵
-sol 0 ## A number minus itself is 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰۔ || عدد منفي همغه عدد ۰ کېږي.
+solution 0
+ss A number minus itself is 0. || کسی عدد میں سے وہی عدد نکالیں تو ۰۔ || عدد منفي همغه عدد ۰ کېږي.
+ss Write the question. || سوال لکھیں۔ || پوښتنه ولیکئ.
+sm 5 - 5
+ss Take away the ones first, then take away the tens. || پہلے اکائیاں منفی کریں، پھر دہائیاں منفی کریں۔ || لومړی یوونه تفریق کړئ، بیا لسیزې تفریق کړئ.
+sm 5 - 5 = 0
+ss So the answer is 0. || لہٰذا جواب ہے 0۔ || نو ځواب دی 0.
 endexercise

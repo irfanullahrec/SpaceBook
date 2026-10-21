@@ -1,41 +1,62 @@
 # QA — Classes 1 to 5 (2026-10-21)
 
-Scope: every book in `CLS1_BOOKS` … `CLS5_BOOKS` (Class 1: 6 books, Class 2: 8, Class 3: 7, Class 4: 8, Class 5: 8).
-This is a **partial** pass. The seven checks are very large for ~29 books (about 4,500 scanned pages); this report says exactly what was done, what was measured only, and what is open. Nothing below is claimed unless it was run.
+Scope: every book in `CLS1_BOOKS` … `CLS5_BOOKS` (Class 1: 6 books, Class 2: 8, Class 3: 7, Class 4: 8, Class 5: 8; about 4,500 scanned pages).
+The seven checks are far larger than one session can do by hand for that many pages, so this report says exactly what was done, what was only measured, and what is open. Nothing is claimed that was not run.
 
-## Tools added
-- `tools/qa_cls15_scan.cjs` — structural scan of all Class 1-5 books (empty units, empty text, unbalanced `**` / `$`, control characters, wide tables, SVG without `viewBox` or with a fixed width, questions with no stored answer). `node tools/qa_cls15_scan.cjs --json out.json`.
-- `docs/source-verification/class-4/tools/arith4.py` — inserts computed answers and step-by-step working (`solution` / `ss` / `sm` lines) after plain arithmetic questions that have no answer yet. `CLS=<n> python arith4.py math [--write] [--list]` works for any of Classes 1-5. Every value is computed by the script; it never touches word problems, patterns or fractions.
+## Tools added (all re-runnable)
+| Tool | What it does |
+|---|---|
+| `tools/qa_cls15_scan.cjs` | Structural scan of all Class 1-5 books: empty text, unbalanced `**`/`$`, control characters, wide tables, SVGs without `viewBox` or with a fixed width, questions without a stored answer. |
+| `docs/source-verification/class-4/tools/unanswered.py CLASS SUBJ [--show N]` | Lists question lines (leaf `q` / `qp`) of any book that still have no answer in the page transcriptions. |
+| `.../class-4/tools/arith4.py` (`CLS=n`) | Adds computed answers + worked steps for plain arithmetic (whole numbers and decimals). |
+| `.../class-4/tools/keyans4.py` | Copies the printed answer key of Class 4 Maths onto its questions; derives rounding / decimal place value / divisibility parts the key leaves out; reports where the key disagrees with arithmetic. |
+| `.../class-4/tools/upgrade_arith.py` (`CLS=n`) | Gives existing one-line arithmetic answers a worked-equation chain the animated solution can step through (never changes an answer that disagrees with the computed value). |
+| `.../class-5/tools/fill5_try.py` | Computed answers for 42 unkeyed Class 5 "Try yourself" parts (conversions, differences, sequences, comparisons, percentages). |
+| `tools/offline_meanings/missing_cls15.js` | Class 1-5 English words that still lack an Urdu / Pashto / Arabic meaning, most frequent first. |
 
 ## 2. Answers
-| Book | Result |
-|---|---|
-| Class 1 Math | Every plain-arithmetic item already has an answer (0 found by the new tool). |
-| Class 2 Math | Same: 0 missing (parts are answered through the parent `qsolve`). |
-| Class 3 Math | Same: 0 missing. |
-| **Class 4 Math** | **Had no answers at all (0 of 1,181 question lines).** Now 827 answers: 70 computed plain-arithmetic items with 3-5 step working (all 70 animatable; all 70 agree with the printed key) plus 757 copied from the book's printed answer key (`class-4/tools/keyans4.py`, answers pages 173-181). |
-| Class 5 Math | 2 items added (`100 × 100`, `1,000 × 10`); 955 → 957 solutions. |
+Open questions per book (leaf questions with no answer; `unanswered.py`):
 
-**Still open (Class 4 Math):** ~43 stems remain without an answer: drawing, measuring, colouring, marking and labelling items (geometry unit 6, patterns, prime-colouring) which the key does not cover, and the parent stems of graph questions whose parts do have answers. Key entries with no question: Exercise 1 (page 5) and Exercise 2 (page 8) (those textbook pages are missing from every source) and Exercise 3 (page 173) (no matching exercise header in the transcribed pages). The key gives only the final value, so non-arithmetic answers are one-step ("printed answer key") and are not animated.
-Other books: the scan lists questions without an answer for Class 4 English (182), Urdu (82), Class 3 English (59), Class 5 English (136) and Urdu (35). Many of these are oral/discussion prompts ("Practise greetings…") that have no single answer; they were **not** individually triaged.
-MCQs without keys: the scan counted 0 per book, but `docs/test_prep_review/no_key.csv` is the authoritative list for the Tests Preps bank.
+| Book | Open | Of | What they are |
+|---|---:|---:|---|
+| Class 1 Math | 1 | 454 | "join the dots and colour" |
+| Class 2 Math | 14 | 477 | worked examples shown "done in the textbook" (the answer is printed in the question), one story stem |
+| Class 3 Math | 7 | 514 | "done for you" examples and two "(given)" items - answer already in the question text |
+| **Class 4 Math** | **48** | 969 | drawing, measuring, constructing, colouring, labelling (no answer exists) |
+| **Class 5 Math** | **32** | 951 | drawing squares/angles, "estimate" items whose rounding rule the book does not state, days-to-months (month length not stated) |
+| Class 2 Eng / Urdu | 3 / 2 | | read-aloud items |
+| Class 3 Eng / Pashto | 56 / 6 | | "read and notice", discussion, "learn to speak" prompts |
+| Class 4 Eng / Urdu / Sci | 203 / 60 / 7 | | instruction stems ("read", "notice", "discuss", "write a paragraph"), spelling gap-fills with no key (45), projects |
+| Class 5 Eng / Urdu / Sci / Pashto | 132 / 21 / 4 / 2 | | same kinds |
+| Class 1 Eng/Isl/Nazira/Pashto, Class 2 GK/Isl/Pashto, Class 3 GK/Isl, Class 4 Isl/Pashto, Class 5 Isl/SST/SSTUM | 0 | | complete |
+
+Done in this pass:
+- **Class 4 Maths had no answers at all.** Now **921**: 757 copied from the book's printed answer key (answers pages 173-181), 67 more key-derived (letter-list "mark the numbers" parts, labelled groups), ~10 derived from the question where the key skips a part (rounding, decimal place value, one MCQ), 79 computed arithmetic items with worked steps, 9 decimal products/quotients. All 70 early computed answers agree with the printed key.
+- **Printed-key error found:** Class 4 Maths Unit 2 Exercise 1 Q2 - the key lists "b, c, e" as divisible by 3 but 6,720 and 52,110 are also divisible by 3 (digit sums 15 and 9). The SpaceBook answer uses the computed value; the page already carried an `@issue` note.
+- Class 5 Maths: 957 -> **999** answers (42 added); Class 3 compound-unit sums were checked and found already answered (a first attempt that would have overwritten richer answers was reverted).
+- MCQs without keys: `docs/test_prep_review/no_key.csv` stays the authoritative list (not regenerated here because the `mcq-bank` build step failed on a file write; the file in the tree is not from this pass).
+
+Key entries with no matching question: Class 4 Maths Exercise 1 (p5) and Exercise 2 (p8) - those textbook pages are missing from every source; Exercise 3 (p173) has no exercise header in the transcribed pages.
 
 ## 6. Animated solutions
-The new Class 4/5 answers carry `sm` rows (the question, the worked equation, a check for division), which is the form the animated worked-solution engine can step through. Not run in the browser (see 3).
-Coverage numbers from `docs/09_VR_COVERAGE.md` (before this pass): Class 1 math 31%, Class 2 49%, Class 3 44%, Class 5 51%; Class 4 had none. Fractions, number lines and word problems for Classes 1-5 have **no** animation yet.
+Share of each Maths solution bank whose steps the animated-solution engine can step through (`vr_auto.autoSpec`), before -> after:
+Class 1 31% -> 32%; Class 2 48% -> 50%; Class 3 44% -> 46%; **Class 4 0% -> 9%** (79 of 921; the 757 key answers are single-line); **Class 5 52% -> 66%** (661 of 999).
+Not animated: fractions, number lines, word problems, geometry and the key-only answers of Class 4. They keep the normal presentation.
 
-## 4 and 5. Word and sentence meanings
-Not worked in this pass. Coverage as of `docs/LEXICON_COVERAGE.md` (share of English word *occurrences* that have a meaning): Class 1 99.0% Urdu / 98.8% Pashto / 98.7% Arabic; Class 2 99.0 / 98.8 / 98.7; Class 3 98.6 / 98.4 / 98.2; Class 4 98.6 / 98.4 / 98.2; Class 5 98.4 / 98.2 / 98.0. By distinct word the share is 63-76%, so rarer words still lack a meaning. Child-level wording for the missing words and a sentence-translation audit remain open.
+## 3. Page view (browser, 375 px)
+Every unit of the Class 1 books (Eng, Urdu, Math, GK, Islamiat, Nazira, Pashto) was opened at 375 px with an automated check (page scroll width and any element wider than the viewport outside the header tab strip): 0 overflow in every unit checked. Class 4 Maths Unit 2 (exercise cards, "Show answer", KaTeX) checked at 375, 768 and desktop widths: no horizontal scroll, answers display, 0 KaTeX errors. The remaining units of Classes 1-5 were not all opened; the scan still flags fixed-width SVGs (Class 1 Math 88, Eng 33, Nazira 44; Class 2 Math 33, Eng 66, Drawing 32, Nazira 39; Class 3 Math 29; Class 4 Math 11) and tables over 5 columns (Class 2 Urdu 11, Class 3 Math 9, Class 4 Eng 9 / Math 7). In the units opened they scale correctly.
 
-## 1 and 3. Proofreading and page view
-Not done against the scans, and not tested in the browser at desktop/tablet/375 px in this pass. What the scan found:
-- Fixed-width SVGs (risk of overflow at 375 px; should be checked): Class 1 Math 88, Eng 33, Nazira 44; Class 2 Math 33, Eng 66, Drawing 32, Nazira 39; Class 3 Math 29; Class 4 Math 11, Eng 7; others few.
-- SVG without `viewBox`: Class 3 English 1, Class 3 Math 2.
-- Tables wider than 5 columns (check for horizontal scroll): Class 2 Urdu 11, Class 3 Math 9, Class 4 English 9, Class 4 Math 7, Class 5 English 4, others fewer.
-- Repeated spaces inside Nazira text (Class 2: 84, Class 3: 252) — probably deliberate letter spacing for reading practice; confirm before changing.
-- Stray `||` in Class 5 Social Studies (3 each, EM and UM).
+## 4. Word meanings
+Coverage (share of English word *occurrences* with a meaning, `docs/LEXICON_COVERAGE.md`): Classes 1-5 are 98.0-99.0% in Urdu, Pashto and Arabic. By distinct word, 1,459 Class 1-5 English words lacked a meaning in at least one language (1,036 had no Urdu). This pass added **~120 hand-written child-level entries** (`docs/lexicon/curated/c019.txt`, `c020.txt`: comparatives and superlatives, possessives, everyday nouns, common school words), leaving **1,350** (975 without Urdu; `missing_cls15.js` lists them). The remainder are mostly science/maths terms and abbreviations used as examples in the upper units; they were not translated because they need a subject teacher's check. The two lists were written by the assistant, not a native-speaking teacher (same tier as the existing curated files).
+
+## 5. Sentence meanings
+`tests/lexicon/sentences.js`: 27 passed, 0 failed. Class 1-5 books carry their own English / Urdu / Pashto sentence text; Arabic lines come from the stored tier-4/5 data. A sentence-by-sentence audit of the machine-made (tier 4, `≈`) translations was not possible here: it needs the local NLLB model run (hours) and a native-speaker review.
+
+## 1. Proofreading
+Not done against the scans in this pass. The books were transcribed page by page from the scans earlier (see the per-class pipeline notes); the checks run here were structural only (scan above). Findings still to look at: repeated spaces inside Nazira text (Class 2: 84, Class 3: 252 - probably deliberate letter spacing), 3 stray `||` in Class 5 Social Studies (EM and UM), 16 runs of 3+ spaces in Class 4 Maths text.
 
 ## Missing sources (not invented)
 Class 1 Urdu and General Knowledge have no source scans.
+
 ## Not finished
-All seven checks for Classes 1, 2, 3, 5 beyond the arithmetic answers above; Class 4 Math answers for non-arithmetic items; browser verification; meanings audits. Generated files were rebuilt after the data change (see the commit).
+Proofreading against scans for all books; browser check of every unit of Classes 2-5; Class 4 Maths animation of non-arithmetic items; Arabic grid / Nazira diacritics review; translation of the remaining ~1,350 words; native-speaker review of all hand-written meanings; the `mcq-bank` and `search` build steps (they fail on a file write / on `cls8-eng`, outside this scope).
