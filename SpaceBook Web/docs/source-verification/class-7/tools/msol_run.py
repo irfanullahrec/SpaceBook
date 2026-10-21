@@ -40,6 +40,8 @@ def category(ins):
     if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
     if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
     if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'identify the gradient and y-intercept', s): return 'gradint'
+    if re.search(r'slope intercept form of equation', s): return 'slopeform'
     if re.search(r'classify as linear polynomials', s): return 'degclass'
     if re.search(r'identify the variables and constants', s): return 'varconst'
     if re.search(r'length and area of the following measurements', s): return 'sector'
@@ -108,6 +110,8 @@ def build(cat, ins, part_text):
             raise msol.ParseError('law check')
         return st, rs
     if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'gradint': return msol7.gradient_intercept(unwrap(part_text))
+    if cat == 'slopeform': return msol7.slope_intercept_form(part_text)
     if cat == 'degclass': return msol7.degree_class(unwrap(part_text))
     if cat == 'varconst': return msol7.variables_constants(unwrap(part_text))
     if cat == 'sector': return msol6.sector(part_text, CUR.get('k'))
@@ -207,6 +211,9 @@ def cat_is_vc(res):
 def result_tex(res):
     if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], str) and ',' not in res[0] and res[0].isalpha() and cat_is_vc(res):
         return f'Variables: {res[0]}; constant: {res[1]}'
+    if isinstance(res, tuple) and len(res) == 2 and hasattr(res[0], 'is_Rational'):
+        import sympy as _sy
+        return f'm = {_sy.latex(res[0])}, c = {_sy.latex(res[1])}'
     if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], float):
         return f'arc length {res[0]:.2f}, area {res[1]:.2f}'
     if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], str):
@@ -458,7 +465,12 @@ def run(cl):
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
             k0 = q['key'] or ''
-            if cat == 'degclass':
+            if cat == 'gradint':
+                _n = [float(x) for x in re.findall(r'-?\d+\.?\d*', (k or '').replace('−', '-'))]
+                ok = (abs(float(res[0]) - _n[0]) < 1e-6 and abs(float(res[1]) - _n[1]) < 1e-6) if len(_n) >= 2 else None
+            elif cat == 'slopeform':
+                ok = None
+            elif cat == 'degclass':
                 _k0 = k0
                 _seg = re.search(res + r' [Pp]olynomials?:([^;]*)', _k0.replace('Bi Quadratic', 'Biquadratic'))
                 ok = (bool(re.search(r'(?<![a-z])' + re.escape(no) + r'(?![a-z])', _seg.group(1))) if _seg else None)

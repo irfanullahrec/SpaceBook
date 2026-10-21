@@ -87,3 +87,36 @@ def variables_constants(text):
     steps = [step('given', sp.latex(e, order='lex')),
              S('Letters are the variables; the term without a letter is the constant:', 'حروف متغیرات ہیں؛ جس رکن میں حرف نہ ہو وہ مستقل ہے:', 'توري متغیر دي؛ هغه جز چې توری نلري ثابت دی:', f'{BS}text{{variables}}: {", ".join(v.name for v in vs)};{BS}quad {BS}text{{constant}} = {sp.latex(c)}')]
     return steps, 'Variables: ' + ', '.join(v.name for v in vs) + '; constant: ' + sp.latex(c)
+
+
+def gradient_intercept(text):
+    import sympy as sp
+    import msol2, gen_graphs
+    t = msol.clean_tex(text)
+    r = gen_graphs.two_var(t)
+    if r:
+        a, b, c = r
+    else:
+        l, rr = t.split('=', 1)
+        e = sp.expand(msol2.tex_to_sympy(l) - msol2.tex_to_sympy(rr))
+        x, y = sp.symbols('x y')
+        a, b, c = e.coeff(x), e.coeff(y), -(e - e.coeff(x) * x - e.coeff(y) * y)
+    m = sp.nsimplify(-a / b); k = sp.nsimplify(c / b)
+    steps = [step('given', t),
+             S('Write the equation in the form y = mx + c (m is the gradient, c is the y-intercept):', 'مساوات کو y = mx + c کی صورت میں لکھیں (m ڈھلوان، c محور y پر قطع):', 'معادله د y = mx + c په بڼه ولیکئ (m ټوپ، c د y-محور پرې کېدنه):', f'y = {sp.latex(sp.expand(m * sp.Symbol("x") + k), order="lex")}'),
+             S('Read off the gradient and the y-intercept:', 'ڈھلوان اور y-قطع پڑھیں:', 'ټوپ او y-پرې کېدنه ولولئ:', f'm = {sp.latex(m)},\; c = {sp.latex(k)}')]
+    return steps, (m, k)
+
+
+def slope_intercept_form(text):
+    import sympy as sp
+    import msol2
+    m = re.search(r'gradient\s*([^,]+),\s*y-intercept\s*(.+)', text.replace('$', '').replace('−', '-'))
+    if not m:
+        raise ParseError('desc')
+    mm = msol2.tex_to_sympy(m.group(1).strip()); cc = msol2.tex_to_sympy(m.group(2).strip())
+    x = sp.Symbol('x')
+    eq = sp.latex(sp.expand(mm * x + cc), order='lex')
+    steps = [step('given', f'm = {sp.latex(mm)},\; c = {sp.latex(cc)}'),
+             S('Substitute in y = mx + c:', 'y = mx + c میں رکھیں:', 'په y = mx + c کې کېږدئ:', f'y = {eq}')]
+    return steps, eq
