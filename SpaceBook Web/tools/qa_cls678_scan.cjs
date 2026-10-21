@@ -32,10 +32,10 @@ function audit(cl,subj,B,SOL){
   }
   walk(book.frontMatter,'front'); walk(book.backMatter,'back');
   function walk(o,where){
-    if(Array.isArray(o)){o.forEach(x=>walk(x,where));return;}
+    if(Array.isArray(o)){ for(let i=0;i<o.length;i++){const q=o[i]; if(q&&q.t==='q'&&!q.solId&&!(q.parts&&q.parts.length)){ for(let j=i+1;j<o.length&&o[j]&&!['q','h','exercise'].includes(o[j].t);j++){ if(o[j].t==='parts'&&o[j].parts.length&&o[j].parts.every(p=>p.solId)){q.__ok=true;break;} } } } o.forEach(x=>walk(x,where));return;}
     if(!o||typeof o!=='object')return;
     if(o.t==='page'){st.pages++; curPdf=o.pdf;}
-    if(o.t==='q'){st.q++; if(o.solId){ if(!SOL[o.solId])st.badSol.push(o.solId); else { const a=SOL[o.solId]; if(!a.answer&&!(a.steps&&a.steps.length)){st.emptyAns++; F(key,'emptyans',where,'solution '+o.solId+' empty');} } } else if(!o.parts||!o.parts.length){ st.qNoSol++; F(key,'q-nosol',where+' pdf'+curPdf,'q '+o.no+': '+String(o.en).slice(0,110)); } }
+    if(o.t==='q'){st.q++; if(o.__ok){} else if(o.solId){ if(!SOL[o.solId])st.badSol.push(o.solId); else { const a=SOL[o.solId]; if(!a.answer&&!(a.steps&&a.steps.length)){st.emptyAns++; F(key,'emptyans',where,'solution '+o.solId+' empty');} } } else if(!o.parts||!o.parts.length){ st.qNoSol++; F(key,'q-nosol',where+' pdf'+curPdf,'q '+o.no+': '+String(o.en).slice(0,110)); } }
     if(o.t==='parts'){ for(const p of o.parts||[]){ if(p.solId){ if(!SOL[p.solId])st.badSol.push(p.solId);} else { st.qNoSol++; F(key,'part-nosol',where+' pdf'+curPdf,'part '+p.no+': '+String(p.en).slice(0,110)); } } }
     if(o.t==='exercise')st.exercises++;
     if(o.t==='table'){ const w=Math.max(0,...(o.rows||[]).map(r=>r.length)); if(w>5){st.wideTables++; F(key,'widetable',where,w+' columns');} for(const r of o.rows||[])for(const c of r)checkText(key,where,c,'cell'); }
