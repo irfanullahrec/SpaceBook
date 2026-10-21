@@ -85,7 +85,7 @@ Search data: all 40 Class 1-5 subjects (including all eight Class 1 subjects) (i
 - Classes 2-5 were compared against OCR when built: every page >= 0.93 except Class 5 Maths pp. 1, 140 (figures), 144, 153 (drawing pages).
 - Nazira (Classes 1-3): every block of Arabic text carries diacritics; the blocks without are Urdu headings and teaching notes.
 
-**Page view at 100 %.** Classes 1 and 2 (227 units): 0 overflow at 375, 768 and 1280 px. Classes 3-5 (335 units): 0 overflow at 375 and 768 px; 1280 px run listed below. (The check opens each unit's default view; it does not expand every card.)
+**Page view at 100 %.** Classes 1 and 2 (227 units): 0 overflow at 375, 768 and 1280 px. Classes 3-5 (335 units): 0 overflow at 375, 768 and 1280 px. So all 562 units of Classes 1-5 pass at all three widths. (The check opens each unit's default view; it does not expand every card.)
 
 **Sentence meanings (EN / UR / PS / AR).** Clicking a sentence was tested in the browser on a sample of Class 1-5 books (Class 1 English, Maths; Class 2 English, Maths, GK; Class 3 English, Maths, GK; Class 4 English, Science; Class 5 English, Science, Maths; 10-12 sentences each): every sentence showed English, Urdu, Pashto and Arabic lines. Every Arabic line is marked `≈` (machine or word-by-word, not checked by a person). Class 2 Islamiat showed no clickable sentences in the unit sampled (Arabic/Urdu text, not English).
 
