@@ -314,7 +314,7 @@ def run(cl):
                 continue
             if re.search(r'estimate|round|reasonable', ins, re.I):
                 continue
-            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt):
+            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '{' not in ptxt:
                 continue
             sres = None
             try:
@@ -360,6 +360,7 @@ def run(cl):
             elif cat == 'absval':
                 ok = None
             elif cat == 'subsets':
+                k = k or q['key'] or ''
                 m_ = re.search(r'Number of subsets = (\d+)', k)
                 ok = (int(m_.group(1)) == res) if m_ else None
             elif cat == 'simul':
