@@ -205,3 +205,41 @@ def base_exp_value(text):
     steps = [msol.step('given', msol.clean_tex(text)),
              S('In a^n, a is the base and n is the exponent; the value is a multiplied by itself n times:', 'a^n میں a بنیاد اور n طاقت ہے؛ قیمت a کو n بار خود سے ضرب دینے سے ملتی ہے:', 'په a^n کې a بنسټ او n توان دی؛ ارزښت د a n ځله ضرب دی:', f'\\text{{base}} = {msol.tex(msol.parse_tex(b))},\; \\text{{exponent}} = {int(ev)},\; \\text{{value}} = {msol.tex_num(v)}')]
     return steps, f'Base {msol.tex_num(bv)}, exponent {int(ev)}, value {msol.tex_num(v)}'
+
+
+J = {
+    'perfect': ('{n} is a perfect {w}, so the root is the integer {r}.', '{n} ایک مکمل {wu} ہے، لہٰذا جذر عدد صحیح {r} ہے۔', '{n} بشپړ {wp} دی، نو جذر بشپړ عدد {r} دی.'),
+    'nonperfect': ('{n} is not a perfect {w}, so the root is a non-terminating, non-recurring decimal.', '{n} مکمل {wu} نہیں، لہٰذا جذر غیر اختتامی اور غیر دہرانے والا اعشاریہ ہے۔', '{n} بشپړ {wp} نه دی، نو جذر نه پای ته رسېدونکی او نه تکراري اعشاریه ده.'),
+    'zero': ('Division by zero is not defined, so this is not a number.', 'صفر پر تقسیم معرف نہیں، لہٰذا یہ عدد نہیں۔', 'په صفر وېش تعریف شوی نه دی، نو دا عدد نه دی.'),
+    'recurring': ('A recurring (repeating) decimal can be written as a fraction.', 'دہرانے والا اعشاریہ کسر کی صورت میں لکھا جا سکتا ہے۔', 'تکراري اعشاریه د کسر په بڼه لیکل کېدی شي.'),
+    'terminating': ('A terminating decimal or integer can be written as a fraction p/q.', 'ختم ہونے والا اعشاریہ یا صحیح عدد کسر p/q کی صورت میں لکھا جا سکتا ہے۔', 'پای ته رسېدونکې اعشاریه یا بشپړ عدد د کسر p/q په بڼه لیکل کېدی شي.'),
+    'fraction': ('It is already a fraction p/q of integers (q is not zero).', 'یہ پہلے ہی صحیح اعداد کا کسر p/q ہے (q صفر نہیں)۔', 'دا مخکې له مخکې د بشپړو عددونو کسر p/q دی (q صفر نه دی).'),
+}
+
+
+def classify_real(text):
+    import math
+    t = text.strip().strip('$')
+    m = re.fullmatch(r'\\sqrt\[3\]\{(\d+)\}', t)
+    m2 = re.fullmatch(r'\\sqrt\{(\d+)\}', t)
+    ctx = {}
+    if m or m2:
+        n = int((m or m2).group(1)); cube = bool(m)
+        r = round(n ** (1 / 3)) if cube else math.isqrt(n)
+        perfect = (r ** 3 == n) if cube else (r * r == n)
+        kind = 'Rational' if perfect else 'Irrational'
+        case = 'perfect' if perfect else 'nonperfect'
+        ctx = dict(n=n, r=r, w='cube' if cube else 'square', wu='مکعب' if cube else 'مربع', wp='مکعب' if cube else 'مربع')
+    elif re.search(r'\\frac\{[^}]*\}\{0\}', t) or t.endswith('/0'):
+        kind, case = 'Not defined', 'zero'
+    elif 'overline' in t or 'dot' in t:
+        kind, case = 'Rational', 'recurring'
+    elif re.fullmatch(r'-?[\d.]+', t.replace('−', '-')):
+        kind, case = 'Rational', 'terminating'
+    elif 'frac' in t:
+        kind, case = 'Rational', 'fraction'
+    else:
+        raise ParseError('class')
+    e, u, p = [x.format(**ctx) for x in J[case]]
+    steps = [msol.step('given', t.replace('−', '-')), S(e, u, p, '\text{' + kind + '}')]
+    return steps, kind

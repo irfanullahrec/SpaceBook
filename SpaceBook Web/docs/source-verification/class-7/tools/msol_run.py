@@ -40,6 +40,7 @@ def category(ins):
     if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
     if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
     if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'rational and which are irrational', s): return 'ratirr'
     if re.search(r'^identify terminating and non-terminating', s): return 'deckind'
     if re.search(r'convert the following to decimals|terminating decimals or not', s): return 'fracdec'
     if re.search(r'absolute value', s): return 'absval'
@@ -92,6 +93,7 @@ def build(cat, ins, part_text):
             raise msol.ParseError('law check')
         return st, rs
     if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'ratirr': return msol4.classify_real(part_text)
     if cat == 'deckind': return msol4.decimal_kind(part_text)
     if cat == 'fracdec': return msol4.frac_decimal(unwrap(part_text))
     if cat == 'absval': return msol4.absolute_value(part_text)
@@ -407,7 +409,12 @@ def run(cl):
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
             k0 = q['key'] or ''
-            if cat in ('deckind', 'fracdec'):
+            if cat == 'ratirr':
+                _m = re.search(r'Irrational Numbers:([^;]*)', k0)
+                _il = set(re.findall(r'\(([a-z])\)', _m.group(1))) if _m else set()
+                _rl = set(re.findall(r'\(([a-z])\)', k0.split('Irrational')[0]))
+                ok = (no in _il) if res == 'Irrational' else (no in _rl) if res == 'Rational' else None
+            elif cat in ('deckind', 'fracdec'):
                 if cat == 'deckind':
                     seg = k0.split('Non-terminating')
                     nonpart = seg[1] if len(seg) > 1 else ''
