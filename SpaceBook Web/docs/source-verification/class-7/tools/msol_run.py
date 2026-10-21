@@ -373,7 +373,7 @@ def run(cl):
                 continue
             if re.search(r'estimate|round|reasonable', ins, re.I):
                 continue
-            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '{' not in ptxt:
+            if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '{' not in ptxt and '{' not in (ins or ''):
                 continue
             try:
                 rr = set_relation_leaf(ins, ptxt, no, q['key'])
