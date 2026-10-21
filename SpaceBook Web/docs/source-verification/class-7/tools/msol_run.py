@@ -253,6 +253,37 @@ def dsl_solution(rows, note, keytext, ans=None):
     return steps, final, last
 
 
+def set_relation_leaf(ins, part, no, qkey):
+    low = (ins or '').lower()
+    kind = None
+    if 'pairs of sets are equal' in low: kind = 'equal'
+    elif 'equivalent' in low and 'pairs of sets' in low: kind = 'equivalent'
+    elif 'disjoint and overlapping' in low: kind = 'overlap'
+    elif 'statements are true' in low: kind = 'stmt'
+    elif 'perfect squares of even' in low or 'perfect squares of odd' in low: kind = 'perfsq'
+    if not kind or part is None:
+        return None
+    if kind == 'perfsq':
+        steps, res = msol_sets.perfect_square_parity(part, 'even' if 'even' in low else 'odd')
+    elif kind == 'stmt':
+        steps, res = msol_sets.subset_statement(part, (ins or '').split('then')[0])
+    else:
+        steps, res = msol_sets.relation(kind, part)
+    ok = None
+    if qkey:
+        seg = qkey
+        if kind == 'overlap':
+            m = re.search(r'Overlapping sets:([^.]*)', qkey)
+            seg = m.group(1) if m else ''
+        elif kind in ('equivalent', 'equal', 'stmt', 'perfsq'):
+            seg = qkey.split(';')[0]
+        letters = set(re.findall(r'\(([a-z])\)', seg))
+        if letters:
+            ok = ((no in letters) == res)
+    word = {'equal': ('Equal', 'Not equal'), 'equivalent': ('Equivalent', 'Not equivalent'), 'overlap': ('Overlapping', 'Disjoint'), 'stmt': ('True', 'False'), 'perfsq': ('Yes', 'No')}[kind]
+    return steps, word[0] if res else word[1], ok
+
+
 def set_leaf(ins, part, key):
     """returns (steps, frozenset) or None when this leaf is not a finite-set question"""
     allt = (ins or '') + ' ' + (part or '')
@@ -332,6 +363,17 @@ def run(cl):
             if re.search(r'estimate|round|reasonable', ins, re.I):
                 continue
             if ptxt is not None and not (ptxt.strip().startswith('$') and ptxt.strip().endswith('$')) and not re.fullmatch(r'[\d,\.]+', ptxt.strip()) and not re.search(r'\$', ptxt) and '{' not in ptxt:
+                continue
+            try:
+                rr = set_relation_leaf(ins, ptxt, no, q['key'])
+            except Exception:
+                rr = None
+            if rr:
+                stp, word, ok = rr
+                if ok is False:
+                    disc.append({'ex': q['ex'], 'q': q['q'], 'part': no, 'key': q['key'], 'computed': word, 'cat': 'setrel'}); continue
+                stats.setdefault('setrel', [0, 0, 0, 0]); stats['setrel'][0] += 1; stats['setrel'][1 if ok else 2] += 1
+                out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': list(stp) + [step('ans', '\text{' + word + '}')], 'answer': word, 'verified': bool(ok)}
                 continue
             sres = None
             try:

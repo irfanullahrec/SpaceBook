@@ -1,5 +1,6 @@
 """msol_sets.py - finite set operations with worked steps (union, intersection, difference, complement, verify)."""
 import re
+BS = chr(92)
 from msol import step, ParseError
 
 LBL = {
@@ -146,3 +147,59 @@ def verify_steps(eq, text):
 def step_l(key, m):
     e, u, p = LBL[key]
     return {'en': e, 'ur': u, 'ps': p, 'm': m}
+
+
+# ---------------------------------------------------------------- relations between sets
+def _two(part):
+    env = parse_env(part.replace('$', ''))
+    names = list(env)
+    if len(names) != 2:
+        raise ParseError('two sets')
+    return names, env
+
+
+def relation(kind, part):
+    names, env = _two(part)
+    a, b = env[names[0]], env[names[1]]
+    A, Bn = names
+    if kind == 'equal':
+        res = a == b
+        steps = [step_l('sets', f'{A} = {fmt(a)},\; {Bn} = {fmt(b)}'),
+                 {'en': 'Equal sets have exactly the same elements (order and repetition do not matter):', 'ur': 'برابر سیٹوں کے عناصر بالکل ایک جیسے ہوتے ہیں (ترتیب اور تکرار اہم نہیں):', 'ps': 'مساوي سیټونه ورته عناصر لري (ترتیب او تکرار مهم نه دی):', 'm': f'{A} {"=" if res else chr(92) + "neq"} {Bn}'}]
+        return steps, res
+    if kind == 'equivalent':
+        res = len(a) == len(b)
+        steps = [step_l('sets', f'{A} = {fmt(a)},\; {Bn} = {fmt(b)}'),
+                 {'en': 'Equivalent sets have the same number of elements:', 'ur': 'ہم وزن سیٹوں میں عناصر کی تعداد برابر ہوتی ہے:', 'ps': 'معادل سیټونه د عناصرو شمېر مساوي لري:', 'm': f'n({A}) = {len(a)},\; n({Bn}) = {len(b)}' + (' \\Rightarrow \\text{equivalent}' if res else ' \\Rightarrow \\text{not equivalent}')}]
+        return steps, res
+    if kind == 'overlap':
+        common = a & b
+        res = bool(common)
+        steps = [step_l('sets', f'{A} = {fmt(a)},\; {Bn} = {fmt(b)}'),
+                 {'en': 'Overlapping sets have at least one common element; disjoint sets have none:', 'ur': 'ملتے ہوئے سیٹوں میں کم از کم ایک مشترک عنصر ہوتا ہے؛ منفصل سیٹوں میں کوئی نہیں:', 'ps': 'یو بل پوښوونکي سیټونه لږ تر لږه یو ګډ عنصر لري؛ بېل سیټونه هېڅ نه لري:', 'm': f'{A} {chr(92)}cap {Bn} = {fmt(common)}' + (' \\Rightarrow \\text{overlapping}' if res else ' \\Rightarrow \\text{disjoint}')}]
+        return steps, res
+    raise ParseError('kind')
+
+
+def subset_statement(stmt, envtext):
+    env = parse_env(envtext.replace('$', ''))
+    s = stmt.strip().strip('$')
+    ops = [(BS + 'not' + BS + 'subseteq', lambda x, y: not x <= y), (BS + 'not' + BS + 'subset', lambda x, y: not x < y), (BS + 'subseteq', lambda x, y: x <= y), (BS + 'subset', lambda x, y: x < y), (BS + 'supseteq', lambda x, y: x >= y), (BS + 'supset', lambda x, y: x > y)]
+    for op, fn in ops:
+        if op in s:
+            l, r = [t.strip() for t in s.split(op)]
+            res = fn(env[l], env[r])
+            steps = [step_l('sets', ' ,\; '.join(f'{n} = {fmt(v)}' for n, v in env.items())),
+                     {'en': 'Check the statement with the elements:', 'ur': 'عناصر سے بیان جانچیں:', 'ps': 'له عناصرو سره بیان وارزوئ:', 'm': f'{s}: ' + ('\\text{true}' if res else '\\text{false}')}]
+            return steps, res
+    raise ParseError('stmt')
+
+
+def perfect_square_parity(part, parity):
+    import math
+    n = int(re.sub(r'[^0-9]', '', part))
+    r = math.isqrt(n)
+    ok = r * r == n and (r % 2 == 0) == (parity == 'even')
+    steps = [{'en': f'Find the square root of {n}:', 'ur': f'{n} کا جذر معلوم کریں:', 'ps': f'د {n} جذر ومومئ:', 'm': (f'\\sqrt{{{n}}} = {r}' if r * r == n else f'{n} \\text{{ is not a perfect square}}')},
+             {'en': f'The root must be {parity} for a perfect square of an {parity} number:', 'ur': f'{parity} عدد کا مکمل مربع ہونے کے لیے جذر {parity} ہونا چاہیے:', 'ps': f'د {parity} عدد بشپړ مربع لپاره جذر باید {parity} وي:', 'm': ('\\text{' + ('Yes' if ok else 'No') + '}')}]
+    return steps, ok
