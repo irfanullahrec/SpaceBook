@@ -14,7 +14,8 @@ for (const r of window.SB_LEXICON_V1.rows) for (const p of r[0].split(/[،,]/)) 
   const k = p.replace(/\(.*?\)/g, '').trim().toLowerCase(); if (!/^[a-z'-]+$/.test(k)) continue;
   if (r[1]) have.ur.add(k); if (r[2]) have.ps.add(k); if (r[3]) have.ar.add(k);
 }
-const sc = [1, 2, 3, 4, 5].map(c => W.scopes['cls' + c].en.split(',').map(x => parseInt(x, 36) || 0));
+const CL = (process.argv.includes('--classes') ? process.argv[process.argv.indexOf('--classes') + 1].split(',').map(Number) : [1, 2, 3, 4, 5]);
+const sc = CL.map(c => W.scopes['cls' + c].en.split(',').map(x => parseInt(x, 36) || 0));
 const f15 = i => sc.reduce((a, s) => a + (s[i] || 0), 0);      // occurrences in Classes 1-5 only
 const inScope = i => f15(i) > 0;
 const stems = w => [w, w.replace(/ies$/, 'y'), w.replace(/(es|s)$/, ''), w.replace(/ed$/, ''), w.replace(/ed$/, 'e'), w.replace(/ing$/, ''), w.replace(/ing$/, 'e'), w.replace(/(.)ing$/, '$1'), w.replace(/ly$/, '')];
