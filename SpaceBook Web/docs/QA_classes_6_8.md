@@ -1,3 +1,7 @@
+## RESUME HERE (top of report)
+Done in this long pass: Class 7 Maths has an answer button on 1107 of 1531 parts (772 computed or hand-written worked solutions; 335 *Derived*: the printed key's answer is shown with the note "answer taken from the printed key, worked steps not computed"); Class 8 Maths: 518 of 1619 stubs replaced by worked solutions, the rest keep the key-verified template. Class 7 parts with no key and no solution (about 424) are drawings, graphs read from figures, text identification and a few unkeyed word problems.
+Next: (1) non-Maths questions with no stored answer (list: `node tools/qa_cls678_scan.cjs --json tmp/qa_scan.json`, kinds `q-nosol`, `part-nosol`; author with `class-7/tools/add_sols.py`); (2) layout harness runs; (3) meanings queue; (4) page-by-page scan review of Class 8 Drawing/HPE/Pashto.
+
 # QA report: Classes 6, 7 and 8 (2026-10-21)
 
 Scope: every book in `CLS6_BOOKS`, `CLS7_BOOKS`, `CLS8_BOOKS` plus Mathematics 6/7/8 (35 books). This is a **partial pass**. What was done, what was not, and why, is stated per check. Nothing here claims 100 %.

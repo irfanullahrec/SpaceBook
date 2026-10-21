@@ -439,6 +439,20 @@ def run(cl):
                 steps.append({'en': f'Note: the printed key shows {k[:50]}; the working above gives {final}.', 'ur': f'نوٹ: کتاب کے جوابات میں {k[:50]} دیا گیا ہے؛ اوپر کے حل سے {final} آتا ہے۔', 'ps': f'یادښت: د کتاب په ځوابونو کې {k[:50]} راغلی؛ پورتنی حل {final} ورکوي.'})
         steps.append(step('ans', final))
         out[key] = {'steps': steps, 'answer': final, 'verified': bool(ok)}
+    if cl == '7':
+        for q in leaves:
+            km = msol2.split_key(q['key'])
+            for no, _ in (q['parts'] or [['', None]]):
+                key = f'{exk(q)}|{q["q"]}|{no}'
+                if key in out:
+                    continue
+                k = km.get(no.lower()) if no else km.get('')
+                if not k and not q['parts'] and q['key']:
+                    k = q['key']
+                if not k or len(k) < 1:
+                    continue
+                kk = k.strip()
+                out[key] = {'steps': [{'en': 'Answer taken from the printed answer key (the worked steps for this item were not computed):', 'ur': 'جواب کتاب کے جوابات سے لیا گیا ہے (اس سوال کے مراحل نہیں نکالے گئے):', 'ps': 'ځواب د کتاب له ځوابونو اخیستل شوی (د دې پوښتنې ګامونه نه دي ایستل شوي):'}], 'answer': kk, 'verified': False, 'derived': True}
     stats['dsl'] = [len(dsl), sum(1 for k in dsl if k in out and out[k]['verified']), sum(1 for k in dsl if k in out and not out[k]['verified']), len(bad)]
     for b in bad: disc.append({'dsl': b[0], 'why': b[1]})
     return out, stats, disc
