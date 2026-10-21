@@ -25,17 +25,19 @@ Class 11/12 books hold ~40,700 distinct English tokens; ~25,000 have a gap in at
 ## 5. Sentence meanings
 Not audited this pass (`sb_trilingual.js` / `universal_translate.js` untouched). Coverage numbers remain in `docs/LEXICON_COVERAGE.md`; machine-translated sentences are marked with a leading approximation sign by design.
 
-## 6. Animated worked solutions
-Measured, not extended:
-* Class 12 Maths: 493 of 586 worked items animate (84%); Class 11 Maths 791 of 879 (90%) (`docs/09_VR_COVERAGE.md`).
-* Class 12 exercise banks (`tools/qa/bank_vr.js`): of the answers that contain at least two equations, Physics 118/157, Chemistry 12/26, Statistics 21/39, Computer Science 17/34 animate.
-* Main reason numericals miss: unit symbols after numbers (`12.8 V / 3.2 A`, `16 A·Ω`) make the auto-parser reject the line. I prototyped a unit-aware parser in `js/vr_auto.js`; it lowered Physics coverage (118 -> 112), so it was **reverted** (file is byte-equivalent to before). A proper fix needs its own test pass. Hand-authored specs for calculus, trig, sequences, complex numbers, probability/distributions were **not** added.
+## 6. Animated worked solutions (updated 2026-10-21, second pass)
+* **Engine (`js/vr_auto.js`)**: the auto-animator now reads physics numericals it used to reject: units after numbers (`12.8 V`, `5 Hz`, `2 kg`, shown upright), Ω and Φ, subscripts (`I_g`, `V_s`, `X_L`, `I_rms`), products between two equals signs (`V = IR = …`, `F = ma = …`), and a sentence end (`… 360 Ω. 60 W bulb`) now closes a chain. Text is shown as written; nothing is recomputed.
+* **Measured** (`tools/qa/bank_vr.js`, answers with two or more equations): Class 12 Physics 118 -> **138** of 157, Statistics 21/39, Chemistry 12/26, Computer Science 17/34 (unchanged: chemistry is descriptive reaction text, statistics uses nCr / factorial notation the parser does not read).
+* **Regression checks**: `tools/qa/vr_regress.js` compares old and new engine on every bank item: 214 unchanged, 32 newly animated, 54 with more rows, 1 lost (a line ending "(632.8 nm, red)" that earlier lost its unit instead); `tools/qa/vr_katex.js`: 246 animated items, 1,415 rows, 0 KaTeX errors; project-wide scan (`tools/vr/scan_all.js`) 6,054 -> 6,068 animatable, none lost; `tools/vr/validate_arith.js`: no issues. The earlier backup of the engine is `tools/qa/bak/vr_auto.orig.js`.
+* **Hand-written calculus packs** (`js/sol_m12_calc.js`, 18 packs, each re-checked by finite differences / Simpson's rule when the file loads; wired into `index.html`): Ex 6.2 Q3 integration by parts (a)-(f); Ex 6 review Q3, Q4, Q5, Q8, Q9 integrals; coth x; separable ODEs (Ex 10.2 Q1b, Q1c); implicit derivative of the ellipse (Ex 3.3 Q7); sign chart of f(x) = x³ − 3x² − 9x + 1; partial derivatives (WE 11.2, Ex 11.1 Q4, Q5, Ex 11 review Q3, Q4, Q8, Q9). Confirmed in real Chrome (`tools/qa/vr_browser.js`): the new packs produce animation hosts on the live data, 0 page errors.
+* **Trigonometry**: nothing new was needed. Class 11 Maths already animates in full, Class 10 has the unit-circle specs, and the Class 12 trig items already animate through the auto-animator; the Class 12 items still without animation (`node tools/qa/unanimated.js`, 91 left) are Maple command lists, vector-function items, coordinate geometry one-liners and Newton/bisection tables.
+* **Not done**: statistics notation (ⁿCᵣ, n!), hand specs for the remaining ~90 Class 12 Maths items, Chemistry numericals beyond the 12 that already animate (their answers are mostly equation prose).
 
 ## 7. Derived files
 After the data change: Tests Preps bank (`build_mcq_bank.js`), study index (`build_study_index.js`), lexicon, lazy page + manifest, search index, offline map / service-worker version were regenerated with `node tools/build/all.js --only mcq-bank,study-index,lexicon,lazy,search,offline`. (Writes to large files failed intermittently with `EUNKNOWN` on this machine and were retried.)
 
 ## Tools added (all dev-only, `tools/qa/`)
-`audit_q.js`, `banks.js`, `bank_vr.js`, `bank_peek.js`, `dump_nokey.js`, `noans.js`, `peek.js`, `shape.js`, `missing_words_1112.js`, `overflow.js`, `key_phys12.js`, `key_phys12b.js` (+ `patch_vr.js`/`unpatch_vr.js`, the reverted prototype).
+`audit_q.js`, `banks.js`, `bank_vr.js`, `bank_peek.js`, `dump_nokey.js`, `noans.js`, `peek.js`, `shape.js`, `missing_words_1112.js`, `overflow.js`, `key_phys12.js`, `key_phys12b.js` (+ `vr_regress.js`, `vr_katex.js`, `vr_browser.js`, `unanimated.js`, `showitem.js`, `fix_bs.js`).
 
 ## Open list, in order of value
 1. Page-by-page proofreading against scans (check 1) and sentence translations (check 5).
