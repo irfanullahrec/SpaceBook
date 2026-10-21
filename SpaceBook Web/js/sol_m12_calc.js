@@ -130,4 +130,38 @@
       'Treat y as a constant and differentiate each term with respect to x.',
       tx('Power rule on x in each term (3y² and y² are constant coefficients):', 'f_{x}=3y^{2}\\cdot1+y^{2}\\cdot2x=3y^{2}+2xy^{2}')]);
   })();
+  /* ---------- coordinate geometry one-liners (Ex 7.1 Q1, Ex 7.2 Q1, Q9) ---------- */
+  (function () {
+    const d = (p, q) => Math.hypot(q[0] - p[0], q[1] - p[1]);
+    const A = [-1, 3], B = [2, 1], C = [5, -1];
+    add('collinear distances', near(d(A, B), Math.sqrt(13)) && near(d(B, C), Math.sqrt(13)) && near(d(A, C), 2 * Math.sqrt(13)), 'For A(−1,3), B(2,1), and C(5,−1), show that |AB|+|BC|=|AC|.', [
+      'Use the distance formula |PQ| = √((x₂ − x₁)² + (y₂ − y₁)²) for each side.',
+      tx('Side AB:', '|AB|=\\sqrt{(2+1)^{2}+(1-3)^{2}}=\\sqrt{9+4}=\\sqrt{13}'),
+      tx('Side BC:', '|BC|=\\sqrt{(5-2)^{2}+(-1-1)^{2}}=\\sqrt{9+4}=\\sqrt{13}'),
+      tx('Side AC:', '|AC|=\\sqrt{(5+1)^{2}+(-1-3)^{2}}=\\sqrt{36+16}=\\sqrt{52}=2\\sqrt{13}'),
+      tx('Add the two short sides; the sum equals the long side, so A, B, C lie on one line with B between A and C:', '|AB|+|BC|=\\sqrt{13}+\\sqrt{13}=2\\sqrt{13}=|AC|')]);
+    add('distance PQ', near(d([3, -2], [-1, -5]), 5), 'Find the distance between P(3,−2) and Q(−1,−5).', [
+      'Use the distance formula with P = (3, −2) and Q = (−1, −5).',
+      tx('Substitute and simplify:', 'd=\\sqrt{(-1-3)^{2}+(-5+2)^{2}}=\\sqrt{16+9}=\\sqrt{25}=5')]);
+    const area = near(0.5 * Math.abs(0 * (0 - 3) + 4 * (3 - 0) + 1 * (0 - 0)), 6);
+    add('triangle area', area, 'Find the area of the triangle with vertices (0,0), (4,0), and (1,3).', [
+      'Two vertices (0,0) and (4,0) lie on the x-axis, so the base is the segment between them and the height is the y-coordinate of the third vertex (1,3).',
+      tx('Base and height:', 'b=4-0=4,\\qquad h=3'),
+      tx('Area of a triangle:', 'A=\\frac12bh=\\frac12(4)(3)=6\\text{ square units}')]);
+  })();
+
+  /* ---------- Maclaurin series of e^x and partial derivatives from the definition ---------- */
+  (function () {
+    const N = 12, ser = x => { let s = 0, t = 1; for (let k = 0; k < N; k++) { s += t; t *= x / (k + 1); } return s; };
+    add('maclaurin e^x', near(ser(0.8), Math.exp(0.8), 1e-8) && near(ser(-1.1), Math.exp(-1.1), 1e-6), 'Use Maclaurin’s series for f(x) = eˣ about 0.', [
+      tx('The Maclaurin series is f(x) = Σ f⁽ⁿ⁾(0) xⁿ / n!. Every derivative of eˣ is eˣ, so at x = 0:', 'f^{(n)}(x)=e^{x}\\ \\Rightarrow\\ f^{(n)}(0)=e^{0}=1'),
+      tx('Put the coefficients 1/n! in front of xⁿ:', 'e^{x}=1+x+\\frac{x^{2}}{2!}+\\frac{x^{3}}{3!}+\\cdots+\\frac{x^{n}}{n!}+\\cdots'),
+      tx('The ratio of consecutive terms is |x|/(n + 1), which tends to 0 for every x, so the series converges for all real x:', '\\left|\\frac{x^{n+1}/(n+1)!}{x^{n}/n!}\\right|=\\frac{|x|}{n+1}\\to0')]);
+    const f = (x, y) => x * x * y + x * y * y, h = 1e-6, x0 = 1.3, y0 = 0.7;
+    add('partials by definition', near((f(x0 + h, y0) - f(x0, y0)) / h, 2 * x0 * y0 + y0 * y0, 1e-4) && near((f(x0, y0 + h) - f(x0, y0)) / h, x0 * x0 + 2 * x0 * y0, 1e-4), 'For f(x,y)=x²y+xy², find fₓ,fᵧ using the definition of partial derivatives.', [
+      tx('For fₓ keep y fixed; form the difference quotient with h ≠ 0:', 'f_{x}=\\lim_{h\\to0}\\frac{f(x+h,y)-f(x,y)}{h}'),
+      tx('Expand the numerator and divide by h:', '\\frac{[(x+h)^{2}-x^{2}]y+hy^{2}}{h}=\\frac{(2xh+h^{2})y+hy^{2}}{h}=2xy+hy+y^{2}'),
+      tx('Let h → 0:', 'f_{x}=2xy+y^{2}'),
+      tx('For fᵧ keep x fixed and use the increment k in y:', '\\frac{x^{2}k+x[(y+k)^{2}-y^{2}]}{k}=x^{2}+2xy+xk\\ \\to\\ f_{y}=x^{2}+2xy')]);
+  })();
 })(typeof window !== 'undefined' ? window : globalThis);
