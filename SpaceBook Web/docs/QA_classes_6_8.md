@@ -40,8 +40,12 @@ Tools added (re-runnable):
 ## 6. Animated solutions
 - The generated solutions carry one TeX row per step (`m`), so `vr_auto` offers the "Animate" button on them (checked in the browser for Class 7 5.3 Zakat). Class 7: 698 new animatable solutions; Class 8: 321 replaced stubs; Class 6: 829 of 1414 as before. Not converted: the open items listed under Mathematics, and Science numericals (no step data exists to animate).
 
-## Regeneration
-`node tools/build/all.js` was run for the lazy page, manifest, search index and service-worker version (see the commit). Not pushed.
+## Regeneration still needed (owner / final phase; not done by this pass)
+I have stopped regenerating shared files. The last commits of this pass did include a regenerated `lazy.html`, `content/lazy_manifest.json`, `content/offline_map.json` and `content/sw_version.js`; they are stale again after any further data change below.
+- Book data changed after that regeneration: `js/math_7_data.js`, `js/math_7_solutions.js`, `js/math_8_solutions.js`, `js/hpe_7_data.js`, `js/computer_7_data.js`, `js/geography_7_data.js`, `js/history_7_data.js`, `js/math6_reader.js`.
+- To do once, from a clean checkout: bump the `?v=` keys of the changed data files in `index.html`, then `node --max-old-space-size=8192 tools/build/all.js` (lazy, search, offline map, service-worker version, word stats, MCQ bank).
+- `all.js` failed at the `search` step in this working tree (the uncommitted Class 1/2 reader files, `js/cls1_book_reader.js` and `js/english_1_book.js`, look like the cause). The search index was not regenerated; Class 7 solutions load lazily and do not feed it, but the Class 7 Computer/HPE answers do.
+- After any `build_math8.py` run, run `python docs/source-verification/class-8/tools/apply_gen8.py`.
 
 ## Next steps (in order of value)
 1. More Mathematics solutions: author the remaining word problems in `class-N/math/dsl/*.txt` (one line per part: TeX rows + `=> answer`, checked by the engine), then `python msol_run.py N` and, for Class 8, `python apply_gen8.py`; Class 7 needs `python build_math7.py`.
