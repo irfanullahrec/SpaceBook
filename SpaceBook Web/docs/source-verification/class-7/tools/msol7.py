@@ -61,3 +61,29 @@ def repeated_product(text):
     steps = [step('given', f' {BS}times '.join([b] * n)),
              S(f'The same factor {b} is repeated {n} times, so write it as a power (base {b}, exponent {n}); read it "{b} raised to the power {n}".', f'ایک ہی جزو {b} {n} بار آیا ہے، اس لیے طاقت کی صورت میں لکھیں (بنیاد {b}، طاقت {n})؛ پڑھیں "{b} کی طاقت {n}"۔', f'یو شان فکتور {b} {n} ځله راغلی، نو د توان په بڼه یې ولیکئ (بنسټ {b}، توان {n})؛ ولولئ "{b} په توان {n}".', f'{b}^{{{n}}}')]
     return steps, f'{b}^{{{n}}}'
+
+
+def degree_class(text):
+    import sympy as sp
+    import msol2
+    e = sp.expand(msol2.tex_to_sympy(text))
+    deg = sp.Poly(e, *sorted(e.free_symbols, key=lambda s: s.name)).total_degree()
+    names = {1: 'Linear', 2: 'Quadratic', 3: 'Cubic', 4: 'Biquadratic'}
+    kind = names.get(deg, f'Degree {deg}')
+    terms = sp.Add.make_args(e)
+    degs = ', '.join(str(sp.Poly(t, *sorted(e.free_symbols, key=lambda s: s.name)).total_degree()) for t in terms)
+    steps = [step('given', sp.latex(e, order='lex')),
+             S('The degree of a polynomial is the highest total power of the variables in any term:', 'کثیر رکنی کی درجہ کسی رکن میں متغیرات کی سب سے بڑی کل طاقت ہے:', 'د څو ضلعي درجه په هر جز کې د متغیرو تر ټولو لوی ټول توان دی:', f'\\text{{term degrees}}: {degs} {BS}Rightarrow {BS}text{{degree}} = {deg}'),
+             S(f'Degree {deg}: this is a {kind.lower()} polynomial.', f'درجہ {deg}: یہ {kind} کثیر رکنی ہے۔', f'درجه {deg}: دا {kind} څو ضلعي دی.', f'{BS}text{{{kind}}}')]
+    return steps, kind
+
+
+def variables_constants(text):
+    import sympy as sp
+    import msol2
+    e = sp.expand(msol2.tex_to_sympy(text))
+    vs = sorted(e.free_symbols, key=lambda s: s.name)
+    c = e.subs({v: 0 for v in vs})
+    steps = [step('given', sp.latex(e, order='lex')),
+             S('Letters are the variables; the term without a letter is the constant:', 'حروف متغیرات ہیں؛ جس رکن میں حرف نہ ہو وہ مستقل ہے:', 'توري متغیر دي؛ هغه جز چې توری نلري ثابت دی:', f'{BS}text{{variables}}: {", ".join(v.name for v in vs)};{BS}quad {BS}text{{constant}} = {sp.latex(c)}')]
+    return steps, 'Variables: ' + ', '.join(v.name for v in vs) + '; constant: ' + sp.latex(c)
