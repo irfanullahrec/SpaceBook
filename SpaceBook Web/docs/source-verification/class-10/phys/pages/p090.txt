@@ -1,27 +1,26 @@
-@printed 192
+@printed 85
 @status lesson
-@issue Source: 10thphysics5.pdf page 39 (page number partly cut off). Figure 15.16 (transmission of power) is redrawn as a simplified chain.
-svg Figure 15.16 – Transmission of Power. Power plant 13 kV → step-up (generation) transformer → 500 kV high-voltage transmission lines → step-down transmission transformer (substation) 132 kV → step-down transformer (substation) 66 kV → heavy industry; distribution transformers 11 kV → light industry; step-down distribution transformer 220 V → homes. Colour key: generation = red, transmission = blue, distribution = green. || شکل 15.16 – طاقت کی ترسیل۔ بجلی گھر 13 kV ← سٹیپ اپ (جنریشن) ٹرانسفارمر ← 500 kV بلند وولٹیج ٹرانسمیشن لائنیں ← سٹیپ ڈاؤن ٹرانسمیشن ٹرانسفارمر (سب سٹیشن) 132 kV ← سٹیپ ڈاؤن ٹرانسفارمر (سب سٹیشن) 66 kV ← بھاری صنعت؛ ڈسٹری بیوشن ٹرانسفارمر 11 kV ← ہلکی صنعت؛ سٹیپ ڈاؤن ڈسٹری بیوشن ٹرانسفارمر 220 V ← گھر۔ رنگوں کی کلید: جنریشن = سرخ، ٹرانسمیشن = نیلا، ڈسٹری بیوشن = سبز۔ || ۱۵.۱۶ شکل – د ځواک لېږد. د برېښنا فابریکه 13 kV → لوړوونکی (تولیدي) ټرانسفارمر → 500 kV لوړ ولټېج لېږد لینونه → ټیټوونکی لېږد ټرانسفارمر (فرعي سټېشن) 132 kV → ټیټوونکی ټرانسفارمر (فرعي سټېشن) 66 kV → درنه صنعت؛ وېش ټرانسفارمرونه 11 kV → سپکه صنعت؛ ټیټوونکی وېش ټرانسفارمر 220 V → کورونه. د رنګونو کلي: تولید = سور، لېږد = شین، وېش = زرغون.
-<svg viewBox="0 0 320 170" width="320" role="img" aria-label="A chain of boxes: red Power plant 13 kV, red Step-up transformer, blue line 500 kV across two towers, blue Step-down transformer 132 kV, then green branches: 66 kV to heavy industry, 11 kV to light industry, 220 V to homes. A colour key box" font-family="Arial" font-size="9">
-<defs><marker id="p1516" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#111"/></marker></defs>
-<rect x="5" y="20" width="50" height="30" fill="#fde68a" stroke="#dc2626"/><text x="8" y="33" fill="#dc2626">Power plant</text><text x="15" y="45">13 kV</text>
-<rect x="65" y="20" width="50" height="30" fill="#fff" stroke="#dc2626"/><text x="70" y="33" fill="#dc2626">Step-up</text><text x="68" y="45" fill="#dc2626">transformer</text>
-<path d="M115 35 H175" stroke="#1d4ed8" stroke-width="2" marker-end="url(#p1516)"/><text x="125" y="28" fill="#1d4ed8">500 kV</text><path d="M130 37 l5 20 l5 -20 M155 37 l5 20 l5 -20" stroke="#1d4ed8" fill="none"/>
-<rect x="178" y="20" width="60" height="30" fill="#fff" stroke="#1d4ed8"/><text x="181" y="33" fill="#1d4ed8">Step-down</text><text x="181" y="45" fill="#1d4ed8">132 kV substation</text>
-<path d="M238 35 H262" stroke="#16a34a" stroke-width="2" marker-end="url(#p1516)"/><rect x="264" y="20" width="52" height="30" fill="#fff" stroke="#16a34a"/><text x="267" y="33" fill="#16a34a">66 kV</text><text x="267" y="45">Heavy industry</text>
-<path d="M208 50 V80 H262" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#p1516)"/><rect x="264" y="68" width="52" height="30" fill="#fff" stroke="#16a34a"/><text x="267" y="81" fill="#16a34a">11 kV</text><text x="267" y="93">Light industry</text>
-<path d="M208 80 V125 H262" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#p1516)"/><rect x="264" y="113" width="52" height="30" fill="#fff" stroke="#16a34a"/><text x="267" y="126" fill="#16a34a">220 V</text><text x="267" y="138">Homes</text>
-<text x="170" y="100" fill="#16a34a">Distribution</text><text x="170" y="111" fill="#16a34a">transformers</text>
-<rect x="5" y="95" width="100" height="55" fill="#fff" stroke="#111"/><text x="25" y="108">Color Key</text><text x="10" y="120" fill="#dc2626">Generation = red</text><text x="10" y="132" fill="#1d4ed8">Transmission = blue</text><text x="10" y="144" fill="#16a34a">Distribution = green</text>
-</svg>
-endsvg
-@sec 15-key | Key Points || اہم نکات || مهم ټکي
-## KEY POINTS || اہم نکات || مهم ټکي
-- **Magnetic effect of current:** Electric current through a conductor produces magnetic field around it. In case of straight wire, it is in the form of concentric circles. || **کرنٹ کا مقناطیسی اثر:** موصل میں برقی کرنٹ اس کے گرد مقناطیسی میدان پیدا کرتا ہے۔ سیدھے تار کی صورت میں یہ ہم مرکز دائروں کی شکل میں ہوتا ہے۔ || **د جریان مقناطیسي اغېز:** په هادي کې برېښنايي جریان د هغه شاوخوا مقناطیسي ساحه جوړوي. د مستقیم سیم په حالت کې دا د هممرکزه دایرو په بڼه وي.
-- **Force on a current carrying conductor in a magnetic field:** When a current carrying conductor is placed in a magnetic field, the interaction between the moving charges in the current and the external magnetic field causes it to experience a force. || **مقناطیسی میدان میں کرنٹ بردار موصل پر قوت:** جب کرنٹ بردار موصل مقناطیسی میدان میں رکھا جائے تو کرنٹ میں حرکت کرتے چارجز اور بیرونی مقناطیسی میدان کا تعامل اس پر قوت لگاتا ہے۔ || **په مقناطیسي ساحه کې پر جریان لرونکي هادي ځواک:** کله چې جریان لرونکی هادي په مقناطیسي ساحه کې کېښودل شي، په جریان کې د خوځنده چارجونو او بهرنۍ مقناطیسي ساحې تعامل پرې ځواک اچوي.
-- **Torque on a current carrying coil in a magnetic field:** When a current carrying coil is placed in a magnetic field, it experiences a couple due to which it begins to rotate. || **مقناطیسی میدان میں کرنٹ بردار کوائل پر ٹارک:** جب کرنٹ بردار کوائل مقناطیسی میدان میں رکھا جائے تو اس پر جفت لگتا ہے جس سے وہ گھومنے لگتا ہے۔ || **په مقناطیسي ساحه کې پر جریان لرونکي کویل ټارک:** کله چې جریان لرونکی کویل په مقناطیسي ساحه کې کېښودل شي، یوه جوړه پرې عمل کوي چې له امله یې څرخېدل پیلوي.
-- **DC Motor:** Converts electrical energy into mechanical energy by principle of torque on a current carrying coil in a magnetic field. || **ڈی سی موٹر:** مقناطیسی میدان میں کرنٹ بردار کوائل پر ٹارک کے اصول سے برقی توانائی کو میکانکی توانائی میں بدلتی ہے۔ || **DC موټور:** په مقناطیسي ساحه کې پر جریان لرونکي کویل د ټارک د اصل له مخې برېښنايي انرژي په میخانیکي انرژۍ بدلوي.
-- **Electromagnetic induction:** *When a magnetic field through a loop of wire is changed, current is found to flow in the loop.* The direction of this induced e.m.f opposes the change causing it. || **برقی مقناطیسی امالہ:** *جب تار کے لوپ میں سے گزرنے والا مقناطیسی میدان بدلا جائے تو لوپ میں کرنٹ بہتا پایا جاتا ہے۔* اس امالی e.m.f کی سمت اسے پیدا کرنے والی تبدیلی کی مخالفت کرتی ہے۔ || **برېښنايي مقناطیسي القا:** *کله چې د سیم له حلقې تېرېدونکې مقناطیسي ساحه بدله شي، په حلقه کې جریان بهېږي.* د دې القايي e.m.f لوری د هغه سبب شوي بدلون مخالفت کوي.
-- **AC Generator:** Simple form of AC generator consists of a coil which is made to rotate in external magnetic field and by principle of electro magnetic induction alternating voltage is induced. || **اے سی جنریٹر:** اے سی جنریٹر کی سادہ شکل ایک کوائل پر مشتمل ہے جسے بیرونی مقناطیسی میدان میں گھمایا جاتا ہے اور برقی مقناطیسی امالہ کے اصول سے متبادل وولٹیج پیدا ہوتا ہے۔ || **AC جنراتور:** د AC جنراتور ساده بڼه یو کویل لري چې په بهرنۍ مقناطیسي ساحه کې څرخول کېږي او د برېښنايي مقناطیسي القا د اصل له مخې متناوب ولټېج القا کېږي.
-- **Mutual induction:** Emf induced in one circuit due to changing current in another circuit which is magnetically attached/coupled with it. || **باہمی امالہ:** ایک سرکٹ میں emf جو کسی دوسرے سرکٹ میں بدلتے کرنٹ کی وجہ سے پیدا ہو جو اس سے مقناطیسی طور پر جڑا ہو۔ || **متقابل القا:** په یوه سرکټ کې القا شوی emf د هغه بل سرکټ د بدلېدونکي جریان له امله چې ورسره په مقناطیسي ډول نښتی وي.
-- **Transformer:** A device which converts low voltage to high voltage vice versa. || **ٹرانسفارمر:** ایک آلہ جو کم وولٹیج کو زیادہ وولٹیج میں اور اس کے برعکس بدلتا ہے۔ || **ټرانسفارمر:** هغه وسیله چې ټیټ ولټېج په لوړ ولټېج او برعکس بدلوي.
+p or
+m dᵢ = f dₒ / (dₒ − f)   ①
+p (a) to get image distance putting values in equation 1
+m dᵢ = (10.0 cm × 30.0 cm) / (30.0 cm − 10.0 cm)  or  dᵢ = 300 cm² / 20 cm
+p Therefore dᵢ = +15.0 cm   [Answer]
+p The magnification formula is
+m M = −dᵢ / dₒ = −15 cm / 30 cm
+p Therefore M = −0.500   [Answer]
+p As shown in figure 12.26 (a) and the answers in this example it is confirmed that when the object distance is greater than twice the focal length (dₒ > 2f), for convex lens
+- the image distance is less than twice the focal length, (i.e 15 cm < 20 cm)
+- the image is real, (distance positive)
+- the image is inverted, (magnification negative) and
+- the image is smaller than the object. (magnification less than 1)
+p (b) to get image distance putting values in equation 1
+m dᵢ = (10.0 cm × 20.0 cm) / (20.0 cm − 10.0 cm)  or  dᵢ = 200 cm² / 10.0 cm
+p Hence dᵢ = +20.0 cm   [Answer]
+p The magnification formula is
+m M = −dᵢ / dₒ = −20 cm / 20 cm
+p Therefore M = −1.00   [Answer]
+p Therefore, when the object distance is equal to twice the focal length (dₒ = 2f) as shown in figure 12.26 (b) it is confirmed that for convex lens:
+- the image distance is equal to twice the focal length (20 cm),
+- the image is real (distance positive),
+- the image is inverted (magnification negative), and
+- the image is the same size as the object (magnification is equal to 1).

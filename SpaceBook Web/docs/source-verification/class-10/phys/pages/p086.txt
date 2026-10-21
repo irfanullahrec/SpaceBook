@@ -1,22 +1,18 @@
-@printed 188
+@printed 81
 @status lesson
-@issue Source: 10thphysics5.pdf page 35. Figure 15.13 is redrawn.
-p The primary coil is connected to a battery through a tapping key, while the secondary coil is connected to galvanometer. It is observed that the galvanometer shows a momentary deflection when the tapping key is pressed. The pointer in the galvanometer returns to zero immediately. If the key is held pressed continuously, there is no deflection in the galvanometer. When the key is released, a momentary deflection is observed again but in the opposite direction. || پرائمری کوائل ٹیپنگ کی کے ذریعے بیٹری سے جڑا ہے جبکہ سیکنڈری کوائل گیلوینو میٹر سے۔ دیکھا جاتا ہے کہ ٹیپنگ کی دبانے پر گیلوینو میٹر لمحاتی انحراف دکھاتا ہے۔ گیلوینو میٹر کی سوئی فوراً صفر پر واپس آ جاتی ہے۔ اگر کی کو مسلسل دبائے رکھا جائے تو گیلوینو میٹر میں کوئی انحراف نہیں ہوتا۔ کی چھوڑنے پر پھر لمحاتی انحراف ہوتا ہے مگر مخالف سمت میں۔ || لومړنی کویل د ټپینګ کلي له لارې له بېټرۍ سره نښلي، او دوهمی کویل له ګلوانومیټر سره. لیدل کېږي چې کله ټپینګ کلی کېکاږل شي ګلوانومیټر لنډمهاله انحراف ښيي. د ګلوانومیټر ستنه سمدستي صفر ته راګرځي. که کلی دوامداره کېکاږل شوی وساتل شي، په ګلوانومیټر کې انحراف نه وي. کله چې کلی خوشې شي، بیا لنډمهاله انحراف لیدل کېږي خو مخالف لوري ته.
-p From this experiment, we can conclude that it is not the relative motion but the change in magnetic field that is responsible for electromagnetic induction. When the tapping key was pressed the magnetic field developed by primary coil was changed due to change in current per unit time which induced an emf in secondary coil. || اس تجربے سے ہم نتیجہ نکال سکتے ہیں کہ برقی مقناطیسی امالہ کی ذمہ دار اضافی حرکت نہیں بلکہ مقناطیسی میدان میں تبدیلی ہے۔ جب ٹیپنگ کی دبائی گئی تو فی اکائی وقت کرنٹ میں تبدیلی کی وجہ سے پرائمری کوائل کا مقناطیسی میدان بدلا جس نے سیکنڈری کوائل میں emf پیدا کیا۔ || له دې تجربې پایله اخیستلای شو چې د برېښنايي مقناطیسي القا مسؤل نسبي حرکت نه بلکې په مقناطیسي ساحه کې بدلون دی. کله چې ټپینګ کلی کېکاږل شو، په واحد وخت کې د جریان د بدلون له امله د لومړني کویل مقناطیسي ساحه بدله شوه چې په دوهمي کویل کې یې emf القا کړ.
-p Such that for a constantly changing current such as AC the time rate of change of current in the primary $\Delta I_p/\Delta t$ is proportional to the emf induced in the secondary $\varepsilon_s$. Mathematically, || یوں مسلسل بدلتے کرنٹ جیسے اے سی کے لیے پرائمری میں کرنٹ کی تبدیلی کی شرح $\Delta I_p/\Delta t$ سیکنڈری میں پیدا ہونے والے emf $\varepsilon_s$ کے متناسب ہے۔ ریاضیاتی طور پر، || داسې چې د دوامداره بدلېدونکي جریان لکه AC لپاره په لومړني کې د جریان د بدلون کچه $\Delta I_p/\Delta t$ په دوهمي کې له القا شوي emf $\varepsilon_s$ سره متناسبه ده. په ریاضي ډول،
-eq \varepsilon_s \propto -\frac{\Delta I_p}{\Delta t} \qquad (1)
-p Where negative sign tells us that the induced current is always in opposite direction to the original current flow. || جہاں منفی علامت بتاتی ہے کہ امالی کرنٹ ہمیشہ اصل کرنٹ کے بہاؤ کی مخالف سمت میں ہوتا ہے۔ || چېرې چې منفي نښه ښيي چې القايي جریان تل د اصلي جریان د بهیر مخالف لوري ته وي.
-svg Figure 15.13 – Mutual Induction: a primary coil (red) connected through a variable resistor R to a cell V; beside it a secondary coil (pink) connected to a galvanometer G. || شکل 15.13 – باہمی امالہ: پرائمری کوائل (سرخ) متغیر مزاحم R کے ذریعے سیل V سے جڑا؛ ساتھ سیکنڈری کوائل (گلابی) گیلوینو میٹر G سے جڑا۔ || ۱۵.۱۳ شکل – متقابل القا: لومړنی کویل (سور) د متغیر مقاومت R له لارې له حجرې V سره نښلي؛ تر څنګ دوهمی کویل (ګلابي) له ګلوانومیټر G سره نښلي.
-<svg viewBox="0 0 260 110" width="260" role="img" aria-label="Left circuit: cell marked V with minus and plus, wire down to a variable resistor R with an arrow, to a red helical primary coil. Right: a pink helical secondary coil joined to a yellow circle G" font-family="Arial" font-size="10">
-<path d="M70 20 v20 M78 14 v32" stroke="#111" stroke-width="2"/><text x="70" y="10">V</text><text x="60" y="22">−</text><text x="82" y="22">+</text>
-<path d="M70 30 H40 V60 H20 V85 M78 30 H140 V35 M20 85 L28 78 L36 92 L44 78 L52 92 L60 78 L68 85 H140 V80" fill="none" stroke="#111"/><path d="M30 60 L40 75" stroke="#1d4ed8" stroke-width="1.5"/><text x="40" y="105">R</text>
-<g fill="none" stroke="#dc2626" stroke-width="2"><ellipse cx="148" cy="40" rx="8" ry="5"/><ellipse cx="148" cy="50" rx="8" ry="5"/><ellipse cx="148" cy="60" rx="8" ry="5"/><ellipse cx="148" cy="70" rx="8" ry="5"/></g><text x="110" y="105" fill="#dc2626">Primary Coil</text>
-<g fill="none" stroke="#db2777" stroke-width="2"><ellipse cx="180" cy="40" rx="8" ry="5"/><ellipse cx="180" cy="50" rx="8" ry="5"/><ellipse cx="180" cy="60" rx="8" ry="5"/><ellipse cx="180" cy="70" rx="8" ry="5"/></g><path d="M188 35 H230 V45 M188 75 H230 V65" fill="none" stroke="#7c3aed" stroke-width="2"/><circle cx="230" cy="55" r="10" fill="#facc15" stroke="#111"/><text x="226" y="59">G</text><text x="180" y="105" fill="#db2777">Secondary Coil</text>
-</svg>
-endsvg
-p To change the sign of proportionality into equality, equation 1 can be written as || تناسب کی علامت کو مساوات میں بدلنے کے لیے مساوات 1 یوں لکھی جا سکتی ہے || د تناسب نښه په مساوات بدلولو لپاره ۱ معادله داسې لیکل کېږي
-eq \varepsilon_s = -\text{Constant}\times\frac{\Delta I_p}{\Delta t} \quad\text{or}\quad \varepsilon_s = -M\times\frac{\Delta I_p}{\Delta t} \qquad (2)
-p Where M is the constant of proportionality and is called as coefficient of Mutual induction. The Coefficient of mutual induction from equation 2 can therefore be written as || جہاں M تناسب کا مستقل ہے اور باہمی امالہ کا ضریب کہلاتا ہے۔ لہٰذا مساوات 2 سے باہمی امالہ کا ضریب یوں لکھا جا سکتا ہے || چېرې چې M د تناسب ثابت دی او د متقابل القا ضریب بلل کېږي. نو له ۲ معادلې د متقابل القا ضریب داسې لیکل کېږي
-eq M = \frac{\varepsilon_s}{\Delta I_p/\Delta t} \qquad (15.3)
-p **The unit of mutual induction is Henry (H).** Mutual inductance of two coils will be one henry (H), if the current is changing at the rate of one ampere per second in the primary and causes an induced emf of one volt in the secondary. || **باہمی امالہ کی اکائی ہنری (H) ہے۔** دو کوائلوں کی باہمی امالیت ایک ہنری (H) ہوگی اگر پرائمری میں کرنٹ ایک ایمپیئر فی سیکنڈ کی شرح سے بدل رہا ہو اور سیکنڈری میں ایک وولٹ امالی emf پیدا کرے۔ || **د متقابل القا واحد هنري (H) دی.** د دوو کویلونو متقابل القاییت یو هنري (H) وي، که په لومړني کې جریان په یوه امپیر فی ثانیه کچه بدلېږي او په دوهمي کې د یو ولټ القايي emf سبب شي.
-eq 1\,H = \frac{1\,V\times1\,s}{1\,A} = \frac{Vs}{A}
+p When a lens forms a real image, the object and image are on opposite sides of the lens.
+@sec 12.8 | The lens equation
+# 12.8 THE LENS EQUATION
+p To calculate the precise location and size of the image formed by a lens, we use an equation that is analogous to the mirror equation. The lens equation is a precise mathematical relationship between the object distance and the image distance for a given lens. This formula is accurate only if the thickness of the lens is small compared to its diameter.
+p The following quantities are included in lens formula:
+- f = the focal length of the lens
+- hₒ = the height of the object
+- hᵢ = the height of the image
+- dₒ = the distance of the object from the lens
+- dᵢ = the distance of the image from the lens
+- M = the magnification of the image
+p This equation can be derived by referring to Figure 12.25, which shows the image produced by a convex lens, along with the O and A - rays that locate the image.
+@deco Figure 12.25: Lens formula
+p Figure 12.25 Lens formula
+p The ray in Figure 12.25 (a) hits the lens at its midpoint, where the principal axis is the normal to the lens. As a result, the ray refracts at an angle θ below the principal axis that is equal to its incident angle θ above the axis. Therefore, the two green triangles in this diagram are similar, from which it follows that ratios of equivalent sides of similar triangles are equal.
+m hₒ / (−hᵢ) = dₒ / dᵢ   ①

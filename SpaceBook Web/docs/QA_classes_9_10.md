@@ -1,0 +1,36 @@
+# QA report: Classes 9 and 10 (2026-10-22)
+
+Scope: every book in `CLS9_BOOKS` / `CLS10_BOOKS` (11 + 12 books, about 5,000 pages). Class 9 Physics, Class 9 Urdu and Class 10 English are not page books (legacy data) and were **not** audited here.
+Tools (all dev-only, in `tools/qa/`): `audit_c9_c10.js` (structure, answers, KaTeX, MCQ keys), `list_unanswered.py`, `apply_answers.py`, `split_compound_sols.py`, `collapse_dup_sol.py`, `vr_coverage_c9_c10.js`, `word_gaps_c9_c10.js`, `sentence_gaps_c9_c10.js`, `browser_harness.js`.
+Answers are edited in the page sources (`docs/source-verification/class-N/<book>/pages`), then rebuilt with `build_book9/10.py` and wired with `wire_book9/10.py`. Answer batches written for this pass are kept next to each book as `answers_batch*.txt`. **Apply batches before running `split_compound_sols.py`** (batch anchors are line numbers). Do not re-run `bio10/gen.py` or `phys10/gen.py` over the edited pages.
+
+## 1. Proofreading against scans: NOT done page by page
+About 5,000 pages cannot be compared with scans by hand in one session. What was done: automatic checks on every page (replacement characters, control characters, odd `$`, KaTeX parse of every formula: 0 errors outside code listings; empty pages; printed-number gaps) and one scan sample (Pak Studies 10 printed 45-46: text matches the scan; the page file is one scan behind the printed number, as recorded). Open: a true page-by-page proofreading; known source gaps (Class 9 English printed p137, Pak Studies 9 p52 and p48 misprint, Class 9 Maths printed pp144-158) are unchanged; Class 9 General Science printed Q12 of the energy MCQs (`p189`) is not transcribed, so its key ("Oxygen") has no question to attach to.
+Printed-number gaps/duplicates found by the audit are mostly duplicate scans already marked in the sources (see the audit table below).
+
+## 2. Answers
+Before: about 1,470 question lines of the non-Maths books had no answer and about 175 MCQs had no key (Science 9: 75, Physics 10: 67, Chemistry 10: 22, Science 10: 4, English 9: 5 ...).
+Done:
+- 28 files had a group-level answer line (`sol 1: (a) X; 2: (b) Y ...`) that the builder attaches to the last part only; it was split into one answer per question (about 700 parts: Science 9/10, Physics 10, Quran 10, Drawing 10, Computer, HPE 10, Pakistan Studies 10, Islamiat Ikhtiari 10, Chemistry 10, Urdu 10). Split by number, Roman numeral or Urdu letter, to the latest group only.
+- 10 empty answers in English 9 (adjective order, degrees of adverbs) filled.
+- Model answers written for the rest (English for English-source books, Urdu for Urdu-source books): Physics 10 (131 incl. all numericals, computed by hand), Chemistry 10 (106), Biology 10 (184), Science 10 (47), Drawing 10 (18), Computer 9 (69) and 10 (36), HPE 9 (71), Islamiat 9 (113), Mutalia-e-Quran 9 (195) and 10 (46), Islamiat Ikhtiari 10, Pakistan Studies 10 (26), plus 2 single items.
+- Triple-identical `A || A || A` steps collapsed (190) so a sentence is not shown under three language labels.
+Result (audit): every question of every audited book now has an answer, except headings and instruction lines, Class 10 Urdu (146 of 374: most of the rest are MCQ options whose key sits on the last option by the existing builder design) and one Biology 10 table question (p116, phenotype table). 0 MCQs without a key (`mcqNoKey` column).
+Honesty notes: the answers I wrote are SpaceBook model answers, not the textbook's (the books print no key for these). Please have a teacher review: Islamic content (Islamiat 9, Mutalia-e-Quran 9/10, Islamiat Ikhtiari 10: verse translations are plain meanings, check against an authentic translation), HPE sports rules, Pakistan Studies facts and figures, and the Computer programs (single-line code). A few MCQ keys follow the textbook's counts that I could not verify (Al-Kindi's number of books, Jabir's, Maturidi's birthplace). Source problems found: Physics 10 Q "gunshot I = 2.5x10^13 W/m^2" looks misprinted (answered as printed with a note); Chemistry 9 "oxidation number +7" has no correct option; Chemistry 10 "pOH of 0.005 M H2SO4 = 11.699" ignores the second proton (noted).
+Maths 9/10: exercise answers come from the printed keys in `book.answers`. Gaps (data check): Class 9 has 94 of 471 exercise questions with no printed answer entry (units 1, 9-14, Review exercises), Class 10 164 of 343 (mostly because Review exercises are keyed `R1` while the exercise id is `Review 1`, plus Ex 2.2, 3.4, 5.2, 5.3). Not fixed in this pass: the keys must be read from the scanned answer pages or computed question by question.
+
+## 3. Page view at desktop / tablet / 375 px
+Harness written (`tools/qa/browser_harness.js`, overflow and clipping check per chapter). Run: Class 10 Maths at 1024 and 375 px (all 13 chapters: no sideways page scroll; only chapter-list titles are cut with an ellipsis at 375 px). The full run over all 25 subjects at three widths was started but the browser pane was closed by the session before it finished, so **it is not complete**. Open.
+
+## 4. Word meanings
+Coverage of the books' words (device lexicon): English to Urdu 95.3 % of occurrences (57.7 % of distinct words), Pashto 95.0 %, Arabic 94.8 %. Added 525 hand-written entries (EN/UR/PS/AR, `docs/lexicon/curated/c021.txt`) for frequent real words (science, maths, computer, Islamic terms); the top of the "missing" list is mostly not words (Roman numerals, chemical symbols, code identifiers, abbreviations). About 4,200 distinct English words with 3+ occurrences are still without a meaning (`word_gaps_c9_c10.js` writes the lists); Pashto and Arabic entries I was unsure of were left empty rather than guessed.
+
+## 5. Sentence meanings
+The sentence click shows English / Urdu / Pashto / Arabic lines (verified in the browser on Physics 10 p35). 44,800 English sentences were checked: Urdu/Pashto lines exist (stored or parallel) for 68 %, stored Arabic for about 1 %; the rest falls back to the word-by-word line, labelled as such. Added 38 hand-written instruction sentences (`curated_sentences/s003.txt`). Not done: translating the remaining sentences (44,000 Arabic, 14,000 Urdu/Pashto, Maths sentences are 98 % without Urdu/Pashto).
+
+## 6. Animated solutions
+`vr_coverage_c9_c10.js`: Class 9 Maths 655 problems/examples and Class 10 Maths 635: **0 without an animation spec** (109 + 260 hand-written packs, the rest automatic). `validate_packs.js` 407 packs / 3,343 rows 0 TeX errors; `validate_specs.js` 10,228 items, 5,004 specs, 0 errors. All numeric-looking solutions of Physics 10 (111), Chemistry 10 (36), Chemistry 9 (58) animate, including the ones written now. Not checked step by step by a person: the correctness of every automatic spec beyond the existing numeric checks.
+
+## 7. Left open and why
+Page-by-page proofreading (volume), full device test matrix (session ended), 4,200 words, 58,000 sentence lines, Maths keys for the 258 questions above, Class 10 Urdu key placement, Class 9 Physics / Urdu and Class 10 English (not page books), explanations for answers that only repeat the key (MCQs from compound lines show the key as the explanation).
+Board SLOs / BISE alignment: no SLO or BISE file was touched; `tests/hooks` and `tools/validate.js` are the guards (see the commit message for what was run).

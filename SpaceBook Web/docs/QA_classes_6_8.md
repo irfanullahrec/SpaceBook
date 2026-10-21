@@ -22,7 +22,12 @@ Tools added (re-runnable):
 - Answers were written from the lesson text. The Pashto and Urdu wording is mine and has **not been reviewed by a native teacher**.
 - Still without a stored answer (439 items, scan on built data): c6 eng 20, c7 eng 51, c7 sci 16, c7 urdu 4, c8 eng 97, c8 sci 60, c8 isl 20, c8 pashto 140, c8 urdu 29, c7 hpe 2. Almost all are open tasks (write a paragraph, explain verses, dictionary look-ups, draw/label diagrams, projects, listening) with no single correct answer. A minority are closed (matching, fill from a passage) and still need authoring.
 - MCQs without a key: the scan reports 0 MCQ blocks lacking a solution id in these books; the Math MCQ gaps are tracked in `docs/test_prep_review/no_key.csv`.
-- **Mathematics:** Class 6 has a worked solution for 1304 of 1344 question parts. Class 8 has an entry for every part, but they are **template stubs** ("Step 1 understand, Step 2 given, Step 3 result = the textbook key"), not worked steps. **Class 7 has none** (`MATH_7_SOLUTIONS` is empty): 1531 parts, 996 of which have a textbook key. Not fixed in this pass.
+- **Mathematics (updated 2026-10-21, second pass).** A worked-solution engine was built (`docs/source-verification/class-7/tools/msol*.py`, run with `python msol_run.py 7|8`). Every solution is **computed** (exact fractions / sympy) and checked against the printed key; one that disagrees is not emitted. Hand-authored rows (`class-N/math/dsl/*.txt`) are chain-checked (each `=` step must agree numerically).
+  - **Class 7: 698 of 1531 question parts now have a worked, animatable solution** (was 0). Families: fractions and BODMAS, reciprocals/inverses, squares and square roots by factorisation, factorise/expand/identities, linear equations, sets (finite), ratio/proportion/profit/tax/Zakat, circle and cylinder formulas, speed/time/unit conversions, mean/median/mode, many word problems.
+  - **Class 8: 321 of 1619 parts** had their template stub replaced by a real worked solution (simultaneous equations, cube/square roots, polynomial division, exponent laws, terminating decimals, absolute value, subsets, factorise). The other 1298 still show the old template (it is key-verified but not a worked solution). `apply_gen8.py` rewrites `js/math_8_solutions.js` (the stub file has no source in the repo, so rebuilding `build_math8.py` would drop it; use `apply_gen8.py` after any rebuild).
+  - **Class 6: unchanged** (1304 of 1344 parts already solved).
+  - **Printed-key errors found by the engine** (computed answer correct, key differs; the solution shows a note "the printed key shows X"): Class 7 about 40 items, for example 4.1 Q4a/c (58.85 and 89.375 min), 4.3 Q3/Q6/Q7, 4.4 Q9, 5.1 Q6/Q7, 5.2 Q1b, 7.4 Q10b/e, 9.2 Q1c/2f/3d, 9.5 Q1e, 10.2 Q2-3 (a.m./p.m. swapped), and Class 8 Chapter 7 exponent answers print `?` in place of every exponent (unreadable in the scan; the engine supplies them). The full mismatch list is in `tmp/disc7.json` / `disc8.json` when the engine is run.
+  - **Left open (not computable by the engine):** drawing, graph plotting, constructions, number-line and Venn diagrams, text identification (polynomial or number classification), set-builder form, currency conversion (needs rates), word problems not yet authored, and every item whose printed key is missing and whose wording is ambiguous. Class 7: 833 parts; Class 8: 1298 parts.
 
 ## 3. Page view (desktop / tablet / 375 px)
 - Browser harness run at 375 px on a partial set before the preview pane closed: c7 HPE 0 issues; c6 Science 2, c6 English 12, c6 Urdu 8 (a table or box wider than the tab area; the tab area clips horizontally). One CSS hardening was added to `js/math6_reader.js` (long words wrap, SVG/images scale). It was **not re-measured**. Tablet and desktop were not run.
@@ -33,14 +38,14 @@ Tools added (re-runnable):
 - Not extended in this pass. Current device coverage for these classes (from `docs/LEXICON_COVERAGE.md`): Class 6/7/8 English words 60 / 58 / 62 % of types and 97.9 / 97.8 / 97.8 % of occurrences have an Urdu meaning. The missing-word queues are `docs/lexicon_review/*.csv`. No new entries were added and no sentence translations were audited.
 
 ## 6. Animated solutions
-- Only the status is reported above. No new animations were generated. Class 6: 829 of 1414 solutions animate (vr_auto). Class 8 stubs have one result row and do not animate. Class 7 has no solutions at all.
+- The generated solutions carry one TeX row per step (`m`), so `vr_auto` offers the "Animate" button on them (checked in the browser for Class 7 5.3 Zakat). Class 7: 698 new animatable solutions; Class 8: 321 replaced stubs; Class 6: 829 of 1414 as before. Not converted: the open items listed under Mathematics, and Science numericals (no step data exists to animate).
 
 ## Regeneration
 `node tools/build/all.js` was run for the lazy page, manifest, search index and service-worker version (see the commit). Not pushed.
 
 ## Next steps (in order of value)
-1. Class 7 Mathematics: build worked solutions (arithmetic, fractions, algebra, equations, roots can be generated and checked against the printed key; word problems need hand-written steps).
-2. Replace the Class 8 stub solutions the same way.
-3. Re-run the layout harness at 375/768/1280 once the browser pane is open; fix wide tables.
-4. Closed English/Science/Urdu/Pashto/Islamiat questions (matching, fill-in) and native-speaker review of the new answers.
-5. Meanings queue for these classes; scan-vs-page review of Class 8 Drawing, HPE, Pashto.
+1. More Mathematics solutions: author the remaining word problems in `class-N/math/dsl/*.txt` (one line per part: TeX rows + `=> answer`, checked by the engine), then `python msol_run.py N` and, for Class 8, `python apply_gen8.py`; Class 7 needs `python build_math7.py`.
+2. Re-run the layout harness at 375/768/1280 once the browser pane is open; fix wide tables.
+3. Closed English/Science/Urdu/Pashto/Islamiat questions (matching, fill-in) and native-speaker review of the new answers.
+4. Meanings queue for these classes; scan-vs-page review of Class 8 Drawing, HPE, Pashto.
+5. Class 8 Chapter 7 printed answers show `?` for exponents: re-read the key pages in the scans and fix the Class 8 Maths answer pages.

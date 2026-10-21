@@ -1,35 +1,29 @@
-@printed 207
+@printed 101
 @status lesson
-@issue Source: 10thphysics6.pdf page 14. Figures 16.12 and 16.13 are redrawn; their truth tables are built as tables.
-p **OR gate:** The simplified OR gate has two inputs and will give high (1) output at X whenever input A OR input B is HIGH or both are HIGH. As a Boolean equation, this can be written as X = A + B (which is read as "X equals A OR B"). Notice the use of the '+' symbol to represent the OR function. OR gate performs the logical addition of inputs, the circuit symbol for two input OR gate, its simple logical drawing and truth table are shown in the figure 16.12. || **OR گیٹ:** سادہ OR گیٹ کے دو ان پٹ ہیں اور جب بھی ان پٹ A یا ان پٹ B اونچا ہو یا دونوں اونچے ہوں تو X پر اونچا (1) آؤٹ پٹ دیتا ہے۔ بولین مساوات میں اسے X = A + B لکھا جاتا ہے (پڑھیں "X برابر A OR B")۔ OR فنکشن کے لیے '+' علامت کا استعمال نوٹ کریں۔ OR گیٹ ان پٹس کا منطقی جمع کرتا ہے؛ دو ان پٹ والے OR گیٹ کی سرکٹ علامت، سادہ منطقی خاکہ اور ٹروتھ ٹیبل شکل 16.12 میں ہیں۔ || **OR دروازه:** ساده OR دروازه دوه ننوتونه لري او هرکله چې ننوت A یا ننوت B لوړ وي یا دواړه لوړ وي، په X کې لوړه (1) وتنه ورکوي. د بولین معادلې په توګه X = A + B لیکل کېږي (لوستل کېږي "X مساوي A OR B"). د OR فنکشن لپاره د '+' نښې کارونه په پام کې ونیسئ. OR دروازه د ننوتونو منطقي جمع ترسره کوي؛ د دوه ننوتنیزې OR دروازې سرکټي نښه، ساده منطقي انځور او د ریښتیا جدول په ۱۶.۱۲ شکل کې دي.
-svg Figure 16.12 – Two input OR gate. Circuit symbol: inputs A and B, output X = A + B. Simple logical drawing: a bulb connected between +5 V and 0 V through two switches A and B in parallel – it lights when either or both are closed. || شکل 16.12 – دو ان پٹ والا OR گیٹ۔ سرکٹ علامت: ان پٹ A اور B، آؤٹ پٹ X = A + B۔ سادہ منطقی خاکہ: +5 V اور 0 V کے درمیان دو متوازی سوئچوں A اور B کے ذریعے جڑا بلب – کوئی ایک یا دونوں بند ہوں تو روشن ہوتا ہے۔ || ۱۶.۱۲ شکل – دوه ننوتنیزه OR دروازه. سرکټي نښه: ننوتونه A او B، وتنه X = A + B. ساده منطقي انځور: د +5 V او 0 V ترمنځ د دوو موازي سویچونو A او B له لارې نښتی ګروپ – کله چې یو یا دواړه تړلي وي بلېږي.
-<svg viewBox="0 0 280 120" width="280" role="img" aria-label="OR gate symbol: a curved shield shape with inputs A and B, output X = A + B. Below: wire from +5 V splits into two parallel switches A and B, joins, goes to a bulb and back to 0 V" font-family="Arial" font-size="10">
-<path d="M65 10 Q80 35 65 60 Q110 60 130 35 Q110 10 65 10 Z" fill="#bef264" stroke="#111"/><path d="M40 22 H72 M40 48 H72 M130 35 H155" stroke="#111"/><circle cx="40" cy="22" r="3"/><circle cx="40" cy="48" r="3"/><circle cx="155" cy="35" r="3"/><text x="28" y="26">A</text><text x="28" y="52">B</text><text x="115" y="15">X = A + B</text><text x="70" y="75">Circuit Symbol</text>
-<circle cx="40" cy="92" r="3"/><circle cx="40" cy="110" r="3"/><text x="5" y="95">+5 V</text><text x="12" y="113">0 V</text>
-<path d="M43 92 H60 V84 H72 M60 92 V100 H72 M86 84 H100 V100 H86 M100 92 H130" stroke="#111" fill="none"/><path d="M72 84 L84 78 M72 100 L84 94" stroke="#111"/><text x="74" y="76">A</text><text x="74" y="110">B</text>
-<circle cx="140" cy="100" r="9" fill="#fef9c3" stroke="#111"/><path d="M130 92 H134 M43 110 H140 V109" stroke="#111"/><text x="155" y="104">Bulb</text><text x="170" y="118">Simple logical Drawing</text>
-</svg>
-endsvg
-table TRUTH TABLE (OR) || ٹروتھ ٹیبل (OR) || د ریښتیا جدول (OR)
-th A | B | X = A+B
-tr 0 | 0 | 0
-tr 0 | 1 | 1
-tr 1 | 0 | 1
-tr 1 | 1 | 1
-endtable
-p **NOT gate:** NOT gate is used to complement or invert a digital signal therefore, it is also called inverter. It has a single input and a single output. If a High level (1) comes in, it produces a Low-level (0) output. If a Low level (0) comes in, it produces a High-level (1) output. The symbol and truth table for the inverter gate are shown in Figure 16.13. The Boolean equation for an inverter is written $X = \bar{A}$ (X = NOT A). The bar over the $\bar{A}$ is an inversion bar, used to signify the complement. || **NOT گیٹ:** NOT گیٹ ڈیجیٹل سگنل کو الٹنے (تکملہ) کے لیے استعمال ہوتا ہے، اس لیے اسے انورٹر بھی کہتے ہیں۔ اس کا ایک ان پٹ اور ایک آؤٹ پٹ ہے۔ اگر اونچی سطح (1) آئے تو نیچی سطح (0) آؤٹ پٹ دیتا ہے۔ اگر نیچی سطح (0) آئے تو اونچی سطح (1) آؤٹ پٹ دیتا ہے۔ انورٹر گیٹ کی علامت اور ٹروتھ ٹیبل شکل 16.13 میں ہیں۔ انورٹر کی بولین مساوات $X = \bar{A}$ (X = NOT A) لکھی جاتی ہے۔ $\bar{A}$ پر لکیر الٹ کی لکیر ہے جو تکملہ ظاہر کرتی ہے۔ || **NOT دروازه:** NOT دروازه د ډیجیټل سیګنال د بشپړولو یا سرچپه کولو لپاره کارېږي، نو انورټر هم بلل کېږي. یو ننوت او یوه وتنه لري. که لوړه کچه (1) راشي، ټیټه کچه (0) وتنه جوړوي. که ټیټه کچه (0) راشي، لوړه کچه (1) وتنه جوړوي. د انورټر دروازې نښه او د ریښتیا جدول په ۱۶.۱۳ شکل کې دي. د انورټر بولین معادله $X = \bar{A}$ (X = NOT A) لیکل کېږي. پر $\bar{A}$ کرښه د سرچپه کولو کرښه ده چې بشپړوونی ښيي.
-svg Figure 16.13 – NOT gate (Inverter): a triangle with a small circle (bubble) at its tip; input A, output X = Ā. || شکل 16.13 – NOT گیٹ (انورٹر): مثلث جس کی نوک پر چھوٹا دائرہ (ببل) ہے؛ ان پٹ A، آؤٹ پٹ X = Ā۔ || ۱۶.۱۳ شکل – NOT دروازه (انورټر): مثلث چې په څوکه کې یې کوچنۍ کړۍ (بلبله) ده؛ ننوت A، وتنه X = Ā.
-<svg viewBox="0 0 200 60" width="200" role="img" aria-label="NOT gate: a triangle pointing right with a small circle at the tip, input A on the left, output X = A-bar on the right" font-family="Arial" font-size="10">
-<path d="M60 10 L105 30 L60 50 Z" fill="#bef264" stroke="#111"/><circle cx="111" cy="30" r="6" fill="#fff" stroke="#111"/><path d="M30 30 H60 M117 30 H150" stroke="#111"/><circle cx="30" cy="30" r="3"/><circle cx="150" cy="30" r="3"/><text x="18" y="34">A</text><text x="125" y="20">X = Ā</text><text x="60" y="58">Circuit Symbol</text>
-</svg>
-endsvg
-table TRUTH TABLE (NOT) || ٹروتھ ٹیبل (NOT) || د ریښتیا جدول (NOT)
-th A | X = Ā
-tr 0 | 1
-tr 1 | 0
-endtable
-p **NAND gate:** The operation of the NAND gate is the same as the AND gate except that its output is inverted. You can think of a NAND gate as an AND gate with an inverter at its output. The symbol for a NAND gate is made from an AND gate with the inversion circle (bubble) at its output is shown in figure 16.14. || **NAND گیٹ:** NAND گیٹ کا عمل AND گیٹ جیسا ہے سوائے اس کے کہ اس کا آؤٹ پٹ الٹا ہوتا ہے۔ آپ NAND گیٹ کو ایسا AND گیٹ سمجھ سکتے ہیں جس کے آؤٹ پٹ پر انورٹر ہو۔ NAND گیٹ کی علامت AND گیٹ کے آؤٹ پٹ پر الٹ کا دائرہ (ببل) لگا کر بنتی ہے، جیسا کہ شکل 16.14 میں ہے۔ || **NAND دروازه:** د NAND دروازې عمل د AND دروازې په څېر دی پرته له دې چې وتنه یې سرچپه وي. NAND دروازه داسې AND دروازه ګڼلای شئ چې په وتنه کې یې انورټر وي. د NAND دروازې نښه د AND دروازې له وتنې سره د سرچپه کولو کړۍ (بلبله) په زیاتولو جوړېږي، لکه په ۱۶.۱۴ شکل کې.
-box lab | LAB WORK || عملی کام || لابراتواري کار
-- To verify the truth table of OR, AND, NOT, NOR and NAND gates. || OR، AND، NOT، NOR اور NAND گیٹس کے ٹروتھ ٹیبل کی تصدیق کرنا۔ || د OR، AND، NOT، NOR او NAND دروازو د ریښتیا جدول تایید.
-- To make a burglar alarm/fire alarm using an appropriate gate. || مناسب گیٹ استعمال کر کے چور الارم/آگ کا الارم بنانا۔ || د مناسبې دروازې په کارولو د غله الارم/اور الارم جوړول.
-endbox
+qp 6 | A convex lense with focal length 8.00 cm has the power of lens (A) 2.05 D (B) 4.00 D (C) 12.5 D (D) 16.0 D
+sol C. 12.5 D ## $P = \dfrac{1}{f(\text{m})} = \dfrac{1}{0.0800} = 12.5$ D.
+qp 7 | If the distance from your eye's lens to the retina is shorter than for a normal eye, you will struggle to see objects that are (A) nearby (B) colorful (C) far away (D) moving fast.
+sol A. nearby ## If the eyeball is too short, the image of a near object forms behind the retina (long-sightedness), so the person struggles to see nearby objects clearly.
+qp 8 | Who benefits more from using a magnifying glass, a person whose near point is located at a distance away from the eyes of (A) 75 cm (B) 50 cm (C) 35 cm (D) 25 cm
+sol A. 75 cm ## The simple magnifier gives $M = 1 + N/f$, which is larger when the near point $N$ is larger; so a person whose near point is 75 cm benefits most.
+qp 9 | The human eye forms the image of an object at its (A) iris (B) retina (C) pupil (D) cornea
+sol B. retina ## The cornea and lens of the eye focus the light so that a real, inverted image is formed on the retina, which carries the signal to the brain.
+q 2 | CONCEPTUAL QUESTIONS. Give a brief response to the following questions
+q 1 | Which type of lens would you use to start fire from light from sun concave or convex, would work best? At what distance from the lens should the paper be held for best results?
+sol Model answer ## A convex (converging) lens works best, because it brings the parallel rays of the sun to a point. The paper should be held at the focal point, a distance equal to the focal length behind the lens, where the bright spot is smallest and hottest.
+q 2 | If a concave mirror produces a real image, is the image necessarily inverted? Explain.
+sol Model answer ## Yes. A real image is formed where light rays actually meet, and for a concave mirror (object outside the focal length) a real image is always inverted. Only a virtual image, formed with the object inside F, is upright.
+q 3 | Are rearview mirrors used in cars concave or convex?
+sol Model answer ## Convex mirrors. They give a wide field of view and an upright, diminished image of the traffic behind the car.
+q 4 | A magician during a show makes a glass lens with n = 1.47 disappear in a trough of liquid. What is the refractive index of the liquid? Could the liquid be water?
+sol Model answer ## The lens disappears when the liquid has the same refractive index as the glass, so no refraction occurs at the surface: the liquid has $n = 1.47$. It could not be water, because water has $n = 1.33$.
+q 5 | Suppose that you were handed a lens and a ruler and told to determine the focal length of the lens. How would you proceed?
+sol Model answer ## Focus the light of a distant object (the sun or a far window) on a sheet of paper or a wall. When the image is sharpest, measure the distance from the lens to the image with the ruler; this is the focal length. Alternatively measure an object distance and the sharp image distance and use $1/f = 1/d_o + 1/d_i$.
+q 6 | Can we achieve total internal reflection from optically rare medium to optically dense medium?
+sol Model answer ## No. Total internal reflection happens only when light travels from an optically denser medium to a rarer medium ($n_1 > n_2$) at an angle of incidence greater than the critical angle. Going from rare to dense, the ray bends towards the normal and is always refracted.
+q 7 | Will a nearsighted person who wears corrective lenses in her glasses be able to see clearly underwater when wearing those glasses?
+sol Model answer ## No. Her spectacles are shaped for use in air; under water the difference between the refractive index of glass (about 1.5) and water (1.33) is small, so the lenses bend light much less, and the eye itself loses most of its focusing power. She will not see clearly.
+q 8 | When you use a simple magnifying glass, does it matter whether you hold the object to be examined closer to the lens than its focal length or farther away? Explain.
+sol Model answer ## Yes. To get an enlarged, upright, virtual image the object must be placed closer to the lens than its focal length. If it is farther than the focal length the lens forms a real, inverted image and does not work as a magnifier.
+q 9 | In blind turns on hilly roads, mirrors are used to help drivers. Are these mirrors plane mirrors, concave mirrors or convex mirrors? Explain.
+sol Model answer ## Convex mirrors. They give a wide field of view and an upright, smaller image, so the driver can see traffic coming around the bend from a long way off; plane mirrors give a narrow view and concave mirrors give an inverted or magnified view.

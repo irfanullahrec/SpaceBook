@@ -1,2 +1,38 @@
-@status duplicate
-@issue Source: 10thphysics4.pdf page 1. A second scan of printed page 114 (Figure 13.10 and Example 13.2), already transcribed from 10thphysics3.pdf page 40 on p010. Excluded.
+@printed 7
+@status lesson
+### 10.3.1 Time period ‘T’ and frequency ‘f’ of mass spring system: || 10.3.1 کمیت اور سپرنگ کے نظام کا دورانیہ ‘T’ اور تعدد ‘f’: || 10.3.1 د کتلې او فنر د سیستم د دورې وخت ‘T’ او فریکونسي ‘f’:
+p Since acceleration in SHM is || چونکہ سادہ ہارمونک حرکت میں اسراع یہ ہے || څرنګه چې په ساده هارمونیک حرکت کې تعجیل دا دی
+p a = -constant x Where Constant = 4π²/T² || a = -constant x جہاں Constant = 4π²/T² || a = -constant x چېرې چې Constant = 4π²/T²
+m Therefore a = -(4π²/T²)x   (1)
+m From equation 10.4, we have a = -(k/m)x   (2)
+p Comparing equation 1 and 2, we get -(k/m)x = -(4π²/T²)x || مساوات 1 اور 2 کا موازنہ کرنے سے حاصل ہوتا ہے -(k/m)x = -(4π²/T²)x || د معادلو 1 او 2 په پرتله کولو سره ترلاسه کوو -(k/m)x = -(4π²/T²)x
+p or k/m = 4π²/T² re-arranging T² = 4π²m/k || یا k/m = 4π²/T² ترتیب بدلنے سے T² = 4π²m/k || یا k/m = 4π²/T² په بیا ترتیبولو سره T² = 4π²m/k
+box info | TIP: Angular Frequency || اشارہ: زاویائی تعدد || لارښوونه: زاویوي فریکونسي
+p Angular frequency is the measure of angular displacement per unit time. || زاویائی تعدد فی اکائی وقت میں زاویائی ہٹاؤ کی پیمائش ہے۔ || زاویوي فریکونسي په هر واحد وخت کې د زاویوي بېځایه کېدو اندازه ده.
+endbox
+m Taking square root on both sides we have √T² = √4π² √(m/k)
+p Time-period ‘T’ is the time it takes for the mass spring system to complete one vibration, and is given by the following equation: || دورانیہ ‘T’ وہ وقت ہے جس میں کمیت اور سپرنگ کا نظام ایک ارتعاش مکمل کرتا ہے، اور یہ درج ذیل مساوات سے دیا جاتا ہے: || دوره ‘T’ هغه وخت دی چې د کتلې او فنر سیستم پکې یو اهتزاز بشپړوي، او د لاندې معادلې له مخې ورکول کېږي:
+m hence T = 2π√(m/k)   (10.5)
+p Where ‘m’ is the mass in kg and ‘k’ is the spring constant in N/m of mass spring system. It is worth noting that time period does not depend upon amplitude of oscillation. Since frequency is the reciprocal of time period therefore the frequency of mass spring system is given as || یہاں ‘m’ کمیت ہے جس کی اکائی kg ہے، اور ‘k’ کمیت اور سپرنگ کے نظام کا سپرنگ مستقل ہے جس کی اکائی N/m ہے۔ یہ بات قابلِ توجہ ہے کہ دورانیہ ارتعاش کے حیطے پر منحصر نہیں ہوتا۔ چونکہ تعدد دورانیے کا معکوس ہے، اس لیے کمیت اور سپرنگ کے نظام کا تعدد یوں دیا جاتا ہے || دلته ‘m’ کتله ده چې واحد یې kg دی، او ‘k’ د کتلې او فنر د سیستم د فنر ثابت دی چې واحد یې N/m دی. د یادونې وړ ده چې دوره د اهتزاز په لمن پورې اړه نه لري. څرنګه چې فریکونسي د دورې معکوس ده، نو د کتلې او فنر د سیستم فریکونسي داسې ورکول کېږي
+m f = 1/(2π) √(k/m)   (10.6)
+example 10.3 | MASS OF OSCILLATING MASS SPRING SYSTEM || مثال 10.3: ارتعاش کرتی کمیت اور سپرنگ کے نظام کی کمیت || مثال 10.3: د اهتزاز کوونکي کتلې او فنر د سیستم کتله
+p What is the mass of a vertical mass-spring system if it oscillates with a period of 2.0 s and has a spring constant of 20.0 N/m? || عمودی کمیت اور سپرنگ کے نظام کی کمیت کیا ہے، اگر وہ 2.0 s کے دورانیے سے ارتعاش کرے اور اس کا سپرنگ مستقل 20.0 N/m ہو؟ || د کتلې او فنر د عمودي سیستم کتله څومره ده، که په 2.0 s دوره اهتزاز کوي او د فنر ثابت یې 20.0 N/m وي؟
+### GIVEN || دیا گیا || ورکړل شوي
+p Spring constant ‘k’ = 20 N/m || سپرنگ مستقل ‘k’ = 20 N/m || د فنر ثابت ‘k’ = 20 N/m
+p Time Period ‘T’ = 2.0 s || دورانیہ ‘T’ = 2.0 s || دوره ‘T’ = 2.0 s
+### REQUIRED || مطلوب || غوښتل شوي
+p Mass ‘m’ = ? || کمیت ‘m’ = ؟ || کتله ‘m’ = ؟
+p SOLUTION: The time period for mass spring system is || حل: کمیت اور سپرنگ کے نظام کا دورانیہ ہے || حل: د کتلې او فنر د سیستم دوره ده
+p T = 2π√(m/k) squaring T² = [2π√(m/k)]² || T = 2π√(m/k) مربع کرنے سے T² = [2π√(m/k)]² || T = 2π√(m/k) د مربع کولو سره T² = [2π√(m/k)]²
+p or T² = 4π² × m/k isolating m m = (T² × K)/(4π²) || یا T² = 4π² × m/k m کو الگ کرنے سے m = (T² × K)/(4π²) || یا T² = 4π² × m/k د m جلا کولو سره m = (T² × K)/(4π²)
+p Putting values m = ((2.0 s)² × 20.0 N/m)/(4 × (3.14)²) as N = kg m/s² || قدریں رکھنے سے m = ((2.0 s)² × 20.0 N/m)/(4 × (3.14)²) کیونکہ N = kg m/s² || د قیمتونو په ایښودلو سره m = ((2.0 s)² × 20.0 N/m)/(4 × (3.14)²) ځکه N = kg m/s²
+p so m = (4.0 s² × 20.0 kg m/(s² m))/(4 × 9.86) || پس m = (4.0 s² × 20.0 kg m/(s² m))/(4 × 9.86) || نو m = (4.0 s² × 20.0 kg m/(s² m))/(4 × 9.86)
+p Therefore m = 2.02 kg = 2 kg Answer || لہٰذا m = 2.02 kg = 2 kg جواب || له دې امله m = 2.02 kg = 2 kg ځواب
+p The mass of the mass-spring oscillator is 2.0 kg. || کمیت اور سپرنگ کے ارتعاشی نظام کی کمیت 2.0 kg ہے۔ || د کتلې او فنر د اهتزاز کوونکي سیستم کتله 2.0 kg ده.
+endexample
+box check | ASSIGNMENT 10.3: TIME PERIOD OF MASS SPRING SYSTEM || مشق 10.3: کمیت اور سپرنگ کے نظام کا دورانیہ || دنده 10.3: د کتلې او فنر د سیستم دوره
+p A body of mass 0.2 kg is attached to a spring placed on a frictionless horizontal surface. The spring constant of spring is 4 N/m. Find the time period of oscillating mass spring system. || 0.2 kg کمیت کا ایک جسم رگڑ سے پاک افقی سطح پر رکھے ہوئے سپرنگ سے منسلک ہے۔ سپرنگ کا سپرنگ مستقل 4 N/m ہے۔ ارتعاش کرتے کمیت اور سپرنگ کے نظام کا دورانیہ معلوم کریں۔ || د 0.2 kg کتلې یو جسم له داسې فنر سره تړل شوی چې پر بې رګړه افقي سطحه پروت دی. د فنر ثابت 4 N/m دی. د اهتزاز کوونکي کتلې او فنر د سیستم دوره معلومه کړئ.
+endbox
+@sec 10.4 | 10.4 SIMPLE PENDULUM || 10.4 سادہ پنڈولم || 10.4 ساده رقاص
+# 10.4 SIMPLE PENDULUM
+p A simple pendulum is an idealized model consisting of a point mass suspended by a weightless, in-extendable string supported from a fixed frictionless support. || سادہ پنڈولم ایک مثالی نمونہ ہے جس میں ایک نقطہ کمیت، ایک بے وزن اور نہ کھنچنے والی ڈوری سے لٹکی ہوتی ہے، اور ڈوری کو ایک ثابت، رگڑ سے پاک سہارے سے سہارا دیا جاتا ہے۔ || ساده رقاص یو مثالي ماډل دی چې یوه نقطوي کتله پکې په بې وزنه او نه غځېدونکې تار ځوړنده وي، او تار له یوه ثابت او بې رګړه تکیه ځایه ملاتړ ترلاسه کوي.

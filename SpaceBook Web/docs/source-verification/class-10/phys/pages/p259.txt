@@ -1,0 +1,22 @@
+@printed 250
+@status lesson
+@issue Source: 10thphysics7.pdf page 17 (page number partly cut off).
+@issue Uranium-238's half-life is printed here as 4.53 × 10⁹ years but as 4.45 × 10⁹ y in Table 18.2; both are kept as printed. Example 18.4 works out 17,190 years and then says "17,000 years old" (rounded); kept.
+@issue Assignment 18.4: the key gives 11,460 years; 1/4 = (1/2)², so 2 × 5730 = 11,460 years, which agrees.
+p Materials with relatively longer half-lives can be used to determine the age of geologic formations. Uranium-238, for example, with a half-life of $4.53\times10^{9}$ years, can be used to date even the oldest deposits on Earth. || نسبتاً لمبی نصف عمر والے مادے ارضیاتی ساختوں کی عمر معلوم کرنے کے لیے استعمال ہو سکتے ہیں۔ مثلاً یورینیم-238 جس کی نصف عمر $4.53\times10^{9}$ سال ہے، زمین کے قدیم ترین ذخائر کی عمر معلوم کرنے کے لیے بھی استعمال ہو سکتا ہے۔ || هغه مواد چې نسبتاً اوږد نیم عمر لري د ځمکني جوړښتونو د عمر د ټاکلو لپاره کارېدای شي. د بېلګې په توګه یورانیم-238 چې $4.53\times10^{9}$ کاله نیم عمر لري، د ځمکې د تر ټولو زړو زېرمو د نېټې ټاکلو لپاره هم کارېدای شي.
+example 18.4 | CARBON-14 DATING || کاربن-14 تاریخ گذاری || د کاربن-14 نېټه ټاکنه
+p Suppose you found a frozen dead animal remains in the Himalays. You took a sample from it and found that carbon-14 (half life '$T_{1/2}$' = 5730 years) activity is reduced 1/8 per gram from original value. How old are the dead animal remains? || فرض کریں آپ کو ہمالیہ میں مُردہ جانور کی منجمد باقیات ملیں۔ آپ نے اس سے نمونہ لیا اور معلوم ہوا کہ کاربن-14 (نصف عمر '$T_{1/2}$' = 5730 سال) کی سرگرمی فی گرام اصل قیمت کا 1/8 رہ گئی ہے۔ مُردہ جانور کی باقیات کتنی پرانی ہیں؟ || فرض کړئ په همالیه کې د مړ حیوان کنګل شوي پاتې شوني مو وموندل. ترې مو نمونه واخیسته او ومو موندل چې د کاربن-14 (نیم عمر '$T_{1/2}$' = 5730 کاله) فعالیت په هر ګرام کې د اصلي قیمت 1/8 ته راټیټ شوی. د مړ حیوان پاتې شوني څومره زاړه دي؟
+p **GIVEN:** Quantity left of carbon-14 'N' = $\frac{1}{8}N_0$; half life of carbon-14 '$T_{1/2}$' = 5730 years. **REQUIRED:** Total elapsed 'Δt' = ? || **معلوم:** کاربن-14 کی باقی مقدار 'N' = $\frac{1}{8}N_0$؛ کاربن-14 کی نصف عمر '$T_{1/2}$' = 5730 سال۔ **مطلوب:** کل گزرا وقت 'Δt' = ? || **ورکړل شوي:** د کاربن-14 پاتې اندازه 'N' = $\frac{1}{8}N_0$؛ د کاربن-14 نیم عمر '$T_{1/2}$' = 5730 کاله. **غوښتل شوی:** ټول تېر وخت 'Δt' = ?
+p **SOLUTION:** Original sample remaining after any given time interval is || **حل:** کسی بھی دیے گئے وقفۂ وقت کے بعد باقی اصل نمونہ یہ ہے || **حل:** د هر ټاکلي وختي واټن وروسته پاتې اصلي نمونه دا ده
+eq N = \left(\frac{1}{2}\right)^n N_0 \qquad (1)
+eq \text{Putting values}\quad N = \frac{1}{8}N_0 \quad\text{or}\quad N = \frac{1}{(2)^3}N_0 \quad\text{or}\quad N = \left(\frac{1}{2}\right)^3 N_0 \qquad (2)
+eq \text{Comparing equation 1 and equation 2}\quad n = 3
+p Thus in three half lives the quantity left of carbon 14, will be $\frac{1}{8}N_0$. The number of half lives 'n' past is given by relation || یوں تین نصف عمروں میں کاربن 14 کی باقی مقدار $\frac{1}{8}N_0$ ہوگی۔ گزری ہوئی نصف عمروں کی تعداد 'n' اس رشتے سے ملتی ہے || نو په دریو نیم عمرونو کې د کاربن 14 پاتې اندازه به $\frac{1}{8}N_0$ وي. د تېرو نیم عمرونو شمېر 'n' د دې اړیکې په واسطه ورکول کېږي
+eq n = \frac{\Delta t}{T_{1/2}} \quad\text{or}\quad \Delta t = nT_{1/2} \qquad \text{Putting values}\quad \Delta t = 3\times5730\,\text{years}
+eq \text{Therefore}\quad \Delta t = 17{,}190\,\text{years} \qquad \textbf{Answer}
+p The remains of the dead animal are 17,000 years old. || مُردہ جانور کی باقیات 17,000 سال پرانی ہیں۔ || د مړ حیوان پاتې شوني 17,000 کلن دي.
+endexample
+box assignment | ASSIGNMENT 18.4: CARBON- 14 DATING || تفویض 18.4: کاربن-14 تاریخ گذاری || دنده ۱۸.۴: د کاربن-14 نېټه ټاکنه
+q 1 | Suppose the fossil of bone you are examining has 1/4 of the carbon -14 deposits as compared to bone of the living animal per gram. The half life of ${}^{14}\text{C}$ is 5730 years, what is the approximate age of the fossil? || فرض کریں آپ جس ہڈی کے فوسل کا معائنہ کر رہے ہیں اس میں فی گرام زندہ جانور کی ہڈی کے مقابلے میں کاربن-14 کا 1/4 ہے۔ ${}^{14}\text{C}$ کی نصف عمر 5730 سال ہے؛ فوسل کی تقریباً عمر کیا ہے؟ || فرض کړئ د هډوکي هغه فوسیل چې ازموئ یې په هر ګرام کې د ژوندي حیوان د هډوکي په پرتله د کاربن-14 زېرمو 1/4 لري. د ${}^{14}\text{C}$ نیم عمر 5730 کاله دی، د فوسیل نږدې عمر څومره دی؟
+sol 11,460 years ## $1/4 = (1/2)^2$, so $n = 2$ and $\Delta t = 2\times5730 = 11{,}460$ years. || $1/4 = (1/2)^2$، لہٰذا $n = 2$ اور $\Delta t = 2\times5730 = 11{,}460$ سال۔ || $1/4 = (1/2)^2$، نو $n = 2$ او $\Delta t = 2\times5730 = 11{,}460$ کاله.
+endbox

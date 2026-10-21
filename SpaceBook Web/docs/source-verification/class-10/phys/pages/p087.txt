@@ -1,22 +1,20 @@
-@printed 189
+@printed 82
 @status lesson
-@issue Source: 10thphysics5.pdf page 36.
-@issue Assignment 15.2: the key gives 8.6 mH; M = ε/(ΔI/Δt) = 4.3/(10/0.02) = 8.6 × 10⁻³ H agrees (magnitudes; the minus signs cancel).
-example 15.2 | INDUCED EMF || امالی emf || القايي emf
-p If the mutual inductance of two coils is 3.5 mH and the current through primary coil changes from 0 A to 10 A in 0.03 s, how much emf is induced in the secondary coil. || اگر دو کوائلوں کی باہمی امالیت 3.5 mH ہو اور پرائمری کوائل میں کرنٹ 0.03 s میں 0 A سے 10 A ہو جائے تو سیکنڈری کوائل میں کتنا emf پیدا ہوگا؟ || که د دوو کویلونو متقابل القاییت 3.5 mH وي او د لومړني کویل جریان په 0.03 s کې له 0 A څخه 10 A ته بدل شي، په دوهمي کویل کې څومره emf القا کېږي؟
-p **GIVEN:** Mutual inductance $M = 3.5$ mH $= 3.5\times10^{-3}$ H; Initial current $I_i = 0$ A; Final current $I_f = 10$ A; Time taken for change $\Delta t = 0.03$ s. **REQUIRED:** Induced emf in secondary $\varepsilon_s = ?$ || **معلوم:** باہمی امالیت $M = 3.5$ mH $= 3.5\times10^{-3}$ H؛ ابتدائی کرنٹ $I_i = 0$ A؛ آخری کرنٹ $I_f = 10$ A؛ تبدیلی کا وقت $\Delta t = 0.03$ s۔ **مطلوب:** سیکنڈری میں امالی emf $\varepsilon_s = ?$ || **ورکړل شوي:** متقابل القاییت $M = 3.5$ mH $= 3.5\times10^{-3}$ H؛ لومړنی جریان $I_i = 0$ A؛ وروستی جریان $I_f = 10$ A؛ د بدلون وخت $\Delta t = 0.03$ s. **غوښتل شوی:** په دوهمي کې القايي emf $\varepsilon_s = ?$
-p **SOLUTION:** The emf induced in the secondary coil is given by the equation || **حل:** سیکنڈری کوائل میں امالی emf اس مساوات سے ملتا ہے || **حل:** په دوهمي کویل کې القايي emf د دې معادلې په واسطه ورکول کېږي
-eq \varepsilon_s = -M\times\frac{\Delta I_p}{\Delta t} \quad\text{or}\quad \varepsilon_s = -M\times\frac{I_f - I_i}{\Delta t}
-eq \text{Putting values}\quad \varepsilon_s = -3.5\times10^{-3}\,H\times\frac{10\,A - 0\,A}{0.03\,s}
-eq \text{or}\quad \varepsilon_s = -3.5\times10^{-3}\,\frac{Vs}{A}\times\frac{10\,A}{0.03\,s}
-eq \text{Hence}\quad \varepsilon_s = -1.17\,V \qquad \textbf{Answer}
-p Thus the emf induced in the secondary coil is 1.17 V. || لہٰذا سیکنڈری کوائل میں امالی emf 1.17 V ہے۔ || نو په دوهمي کویل کې القايي emf 1.17 V دی.
-endexample
-box assignment | ASSIGNMENT 15.2: MUTUAL INDUCTANCE || تفویض 15.2: باہمی امالیت || دنده ۱۵.۲: متقابل القاییت
-q 1 | If the current through the primary coil changes from 0 A to −10 A in 0.02 s, such that the induced emf is 4.3 V. What is the mutual inductance? || اگر پرائمری کوائل میں کرنٹ 0.02 s میں 0 A سے −10 A ہو جائے اور امالی emf 4.3 V ہو تو باہمی امالیت کیا ہے؟ || که د لومړني کویل جریان په 0.02 s کې له 0 A څخه −10 A ته بدل شي او القايي emf 4.3 V وي، متقابل القاییت څومره دی؟
-sol 8.6 mH ## $M = \dfrac{\varepsilon_s}{-\Delta I_p/\Delta t} = \dfrac{4.3}{10/0.02} = \dfrac{4.3}{500} = 8.6\times10^{-3}$ H. || $M = 4.3 / (10/0.02) = 8.6\times10^{-3}$ H۔ || $M = 4.3 / (10/0.02) = 8.6\times10^{-3}$ H.
-endbox
-@sec 15-8 | 15.8 Transformer || 15.8 ٹرانسفارمر || ۱۵.۸ ټرانسفارمر
-## 15.8 TRANSFORMER || 15.8 ٹرانسفارمر || ۱۵.۸ ټرانسفارمر
-p A transformer is a device which is used to increase or decrease an AC voltage or current level. The principle of transformer is mutual induction. Changing current (alternating current) in one coil induces emf in another coil. || ٹرانسفارمر ایک آلہ ہے جو اے سی وولٹیج یا کرنٹ کی سطح بڑھانے یا کم کرنے کے لیے استعمال ہوتا ہے۔ ٹرانسفارمر کا اصول باہمی امالہ ہے۔ ایک کوائل میں بدلتا کرنٹ (الٹرنیٹنگ کرنٹ) دوسرے کوائل میں emf پیدا کرتا ہے۔ || ټرانسفارمر هغه وسیله ده چې د AC ولټېج یا جریان د کچې د لوړولو یا ټیټولو لپاره کارېږي. د ټرانسفارمر اصل متقابل القا دی. په یوه کویل کې بدلېدونکی جریان (متناوب جریان) په بل کویل کې emf القا کوي.
-p The key components of the transformer are two coils or windings, electrically insulated from each other but wound on the same core. The core is typically made of a material which supports magnetism, such as iron. This makes almost all of these field lines pass through to the other winding, maximizing the mutual inductance of the two windings. || ٹرانسفارمر کے اہم اجزا دو کوائل یا وائنڈنگز ہیں جو ایک دوسرے سے برقی طور پر الگ لیکن ایک ہی مرکزے پر لپٹے ہوتے ہیں۔ مرکزہ عموماً ایسے مادے کا ہوتا ہے جو مقناطیسیت کو سہارا دے، جیسے لوہا۔ اس سے تقریباً تمام میدانی لکیریں دوسری وائنڈنگ میں سے گزرتی ہیں اور دونوں وائنڈنگز کی باہمی امالیت زیادہ سے زیادہ ہو جاتی ہے۔ || د ټرانسفارمر مهمې برخې دوه کویلونه یا وایندینګونه دي چې په برېښنايي ډول له یو بل جلا خو پر یوه هسته تاو شوي. هسته معمولاً له داسې مادې جوړېږي چې مقناطیسیت ملاتړ کوي، لکه اوسپنه. دا کار نږدې ټولې د ساحې کرښې بل وایندینګ ته رسوي او د دواړو وایندینګونو متقابل القاییت اعظمي کوي.
+p The image height is taken negative because it is inverted.
+p From the figure 12.25 (b) it is clear that the two yellow triangles in this diagram are also similar, since they are both right triangles and share the common angle φ. Thus, by using the same rule of similar triangles, we get
+m −hₒ / hᵢ = f / (dᵢ − f)   ②
+p Comparing equation 1 and equation 2, we get
+m dₒ / dᵢ = f / (dᵢ − f)
+p To isolate 'f', Cross Multiply
+m dᵢ f = dₒ (dᵢ − f)
+p or
+m dᵢ f = dₒ dᵢ − dₒ f   ③
+p Divide both sides of the equation 3 by dₒ dᵢ f
+m 1/dₒ = 1/f − 1/dᵢ
+m 1/f = 1/dᵢ + 1/dₒ   (12.9)
+p The final equation 12.9 is known as the lens formula. You will probably recognize this equation as the mirror formula. Because the lens and mirror equations are the same, the equation is often called the mirror/lens formula.
+p The ratio of the height of the image to the height of the object is defined as the magnification, M. From Equation 1, we see that
+m M = hᵢ / hₒ = −dᵢ / dₒ   (12.10)
+p We derived the magnification and thin lens equations for a convex lens forming a real image, it can be used to calculate the image properties of both converging lenses and diverging lenses, provided we use the sign conventions described below.
+## 12.8.1 Convention for the lens equation:
+p To include all of the possible properties of both images and objects, the following sign convention has been established

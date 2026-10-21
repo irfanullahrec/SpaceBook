@@ -1,2 +1,17 @@
-@status duplicate
-@issue Source: 10thphysics7.pdf page 1. A second scan of printed page 234 (Unit 18 opening page), already transcribed from 10thphysics6.pdf page 41 on p133. Excluded.
+@printed 128
+@status lesson
+@issue Source: 10thphysics4.pdf page 15 (page number cut off). In Example 13.6 the book writes the unit of q₁ and q₂ in the substitution step as "C × 100 V" where F × 100 V is meant; kept as the result line (400 μC, 800 μC) is correct.
+p Generally for 'n' number of capacitors connected in parallel || عمومی طور پر متوازی جڑے 'n' کیپیسیٹرز کے لیے || په عمومي ډول د 'n' موازي تړل شوو خازنونو لپاره
+eq C_e = C_1 + C_2 + C_3 + \cdots + C_n \qquad (13.10)
+p From equation 13.9 and equation 13.10 it is clear that in parallel combination the equivalent capacitance is always greater than any individual capacitance in combination. || مساوات 13.9 اور 13.10 سے واضح ہے کہ متوازی ملاپ میں مساوی کیپیسیٹنس ہمیشہ ملاپ کی ہر انفرادی کیپیسیٹنس سے زیادہ ہوتی ہے۔ || له (۱۳.۹) او (۱۳.۱۰) معادلو څرګندېږي چې په موازي ترکیب کې معادل ظرفیت تل د ترکیب له هر انفرادي ظرفیت څخه لوی وي.
+example 13.6 | PARALLEL COMBINATION OF CAPACITORS || کیپیسیٹرز کا متوازی ملاپ || د خازنونو موازي ترکیب
+p Two capacitors of 4 μF and 8 μF are connected in parallel to the external source of voltage 100 V. Calculate the total capacitance and the charge on each capacitor. || 4 μF اور 8 μF کے دو کیپیسیٹرز 100 V کے بیرونی منبع کے ساتھ متوازی جڑے ہیں۔ کل کیپیسیٹنس اور ہر کیپیسیٹر پر چارج معلوم کریں۔ || د 4 μF او 8 μF دوه خازنونه د 100 V بهرنۍ سرچینې سره موازي تړل شوي. ټول ظرفیت او پر هر خازن چارج معلوم کړئ.
+p **GIVEN:** Capacitor $C_1$ = 4 μF = $4\times10^{-6}$ F; Capacitor $C_2$ = 8 μF = $8\times10^{-6}$ F; Voltage V = 100 V. **WANTED:** Equivalent capacitance $C_{eq}$ = ?; Charge $q_1$ and $q_2$ = ? || **معلوم:** $C_1$ = 4 μF؛ $C_2$ = 8 μF؛ V = 100 V۔ **مطلوب:** $C_{eq}$ = ?؛ چارج $q_1$ اور $q_2$ = ? || **ورکړل شوي:** $C_1$ = 4 μF؛ $C_2$ = 8 μF؛ V = 100 V. **غوښتل شوي:** $C_{eq}$ = ?؛ چارج $q_1$ او $q_2$ = ?
+p **SOLUTION:** For Parallel Combination, the equivalent capacitance is || **حل:** متوازی ملاپ کے لیے مساوی کیپیسیٹنس ہے || **حل:** د موازي ترکیب لپاره معادل ظرفیت دی
+eq C_e = C_1 + C_2 \qquad \text{Putting values}\quad C_e = 4\times10^{-6}\ \text{F} + 8\times10^{-6}\ \text{F}
+eq \text{Therefore}\quad C_e = 12\times10^{-6}\ \text{F} = 12\ \mu\text{F} \quad \text{(Answer)}
+p In parallel combination the voltage remains the same $V_1 = V_2 = V$. Since the applied voltage V = 100 V, therefore $V_1 = V_2 = V$ = 100 V. In parallel combination the charge splits, the charge stored in first capacitor $C_1$ is || متوازی ملاپ میں وولٹیج یکساں رہتا ہے $V_1 = V_2 = V$۔ چونکہ لگایا گیا وولٹیج V = 100 V ہے، اس لیے $V_1 = V_2 = V$ = 100 V۔ متوازی ملاپ میں چارج تقسیم ہوتا ہے؛ پہلے کیپیسیٹر $C_1$ میں ذخیرہ چارج ہے || په موازي ترکیب کې ولټیج یو شان پاتې کېږي $V_1 = V_2 = V$. څرنګه چې لګول شوی ولټیج V = 100 V دی، نو $V_1 = V_2 = V$ = 100 V. په موازي ترکیب کې چارج وېشل کېږي؛ په لومړي خازن $C_1$ کې زېرمه شوی چارج دی
+eq q_1 = C_1V \quad \text{Putting values}\quad q_1 = 4\times10^{-6}\ \text{F}\times100\ \text{V} \qquad q_1 = 400\times10^{-6}\ \text{C} = 400\ \mu\text{C} \quad \text{(Answer)}
+p In parallel combination the charge splits, the charge stored in second capacitor $C_2$ is || متوازی ملاپ میں چارج تقسیم ہوتا ہے؛ دوسرے کیپیسیٹر $C_2$ میں ذخیرہ چارج ہے || په موازي ترکیب کې چارج وېشل کېږي؛ په دوهم خازن $C_2$ کې زېرمه شوی چارج دی
+eq q_2 = C_2V \quad \text{Putting values}\quad q_2 = 8\times10^{-6}\ \text{F}\times100\ \text{V} \qquad q_2 = 800\times10^{-6}\ \text{C} = 800\ \mu\text{C} \quad \text{(Answer)}
+endexample

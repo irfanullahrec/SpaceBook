@@ -1,28 +1,33 @@
-@printed 176
+@printed 70
 @status lesson
-@issue Source: 10thphysics5.pdf page 23.
-@issue Table 15.1: the minus signs of the exponents are faint or missing in the scan (it reads 10², 10⁴, 10¹⁰, 10¹⁴). They are written as 10⁻², 10⁻⁴, 10⁻¹⁰ and 10⁻¹⁴ T, the usual values, since a bar magnet, the Earth and space have fields far weaker than 1 T. The neutron-star value is printed as 10⁸ T and is kept.
-@issue The book spells "sheilded" (shielded) and "though the wire" (through); corrected silently in the table, kept in the paragraph.
-p With this experiment we can find that this force is directly proportional to the current flowing though the wire $I$, the magnetic field $B$, length $L$ of the wire in the magnetic field and sine of angle $\theta$ between current and magnetic field. Thus, mathematically the force is || اس تجربے سے ہم معلوم کر سکتے ہیں کہ یہ قوت تار میں بہنے والے کرنٹ $I$، مقناطیسی میدان $B$، میدان میں تار کی لمبائی $L$ اور کرنٹ اور میدان کے درمیان زاویہ $\theta$ کے سائن کے راست متناسب ہے۔ لہٰذا ریاضیاتی طور پر قوت یہ ہے || د دې تجربې په مرسته موندلای شو چې دا ځواک له سیم څخه د بهېدونکي جریان $I$، مقناطیسي ساحې $B$، په ساحه کې د سیم د اوږدوالي $L$ او د جریان او ساحې ترمنځ د $\theta$ زاویې له ساین سره مستقیم متناسب دی. نو په ریاضي ډول ځواک دا دی
-eq F_B \propto BIL\sin\theta
-p or || یا || یا
-eq F_B = kBIL\sin\theta
-p For SI units $K = 1$, therefore the equation that describes the force experienced by a current-carrying conductor in a uniform external magnetic field then becomes || SI اکائیوں میں $K = 1$ ہے، اس لیے یکساں بیرونی مقناطیسی میدان میں کرنٹ بردار موصل پر قوت کی مساوات یہ بن جاتی ہے || په SI واحدونو کې $K = 1$ دی، نو هغه معادله چې په یونیفورمه بهرنۍ مقناطیسي ساحه کې پر جریان لرونکي هادي ځواک بیانوي داسې کېږي
-eq F_B = BIL\sin\theta \qquad (15.1)
-p Where $F$ is the magnetic force in newtons (N), $B$ is the magnetic field strength in tesla (T), $I$ is the current in the conductor in amperes (A), $L$ is the length of the conductor in the magnetic field in metres (m), and $\theta$ is the angle between the conductor and the magnetic field. || جہاں $F$ نیوٹن (N) میں مقناطیسی قوت، $B$ ٹیسلا (T) میں مقناطیسی میدان کی شدت، $I$ ایمپیئر (A) میں موصل کا کرنٹ، $L$ میٹر (m) میں میدان کے اندر موصل کی لمبائی اور $\theta$ موصل اور مقناطیسی میدان کے درمیان زاویہ ہے۔ || چېرې چې $F$ په نیوټن (N) کې مقناطیسي ځواک، $B$ په ټېسلا (T) کې د مقناطیسي ساحې شدت، $I$ په امپیر (A) کې د هادي جریان، $L$ په متر (m) کې په ساحه کې د هادي اوږدوالی، او $\theta$ د هادي او مقناطیسي ساحې ترمنځ زاویه ده.
-p **15.2.1 Maximum Magnetic Force:** The force will be maximum when the angle between current direction and magnetic field is $\theta = 90^\circ$. || **15.2.1 زیادہ سے زیادہ مقناطیسی قوت:** جب کرنٹ کی سمت اور مقناطیسی میدان کے درمیان زاویہ $\theta = 90^\circ$ ہو تو قوت زیادہ سے زیادہ ہوگی۔ || **۱۵.۲.۱ اعظمي مقناطیسي ځواک:** کله چې د جریان د لوري او مقناطیسي ساحې ترمنځ زاویه $\theta = 90^\circ$ وي، ځواک اعظمي کېږي.
-eq F_B = BIL\sin 90^\circ \qquad \text{Since } \sin 90^\circ = 1
-eq \text{hence}\quad F_B = BIL \qquad (15.2)
-eq \text{also}\quad B = \frac{F_B}{IL}
-p **15.2.2 Unit of magnetic field B:** The SI unit for magnetic field strength is tesla (T). If one ampere of current in a one-metre-long wire produces a maximum force of one newton then the magnetic field is defined as one tesla (T), where || **15.2.2 مقناطیسی میدان B کی اکائی:** مقناطیسی میدان کی شدت کی SI اکائی ٹیسلا (T) ہے۔ اگر ایک میٹر لمبے تار میں ایک ایمپیئر کرنٹ ایک نیوٹن کی زیادہ سے زیادہ قوت پیدا کرے تو مقناطیسی میدان ایک ٹیسلا (T) کہلاتا ہے، جہاں || **۱۵.۲.۲ د مقناطیسي ساحې B واحد:** د مقناطیسي ساحې د شدت SI واحد ټېسلا (T) دی. که په یوه متر اوږده سیم کې یو امپیر جریان د یو نیوټن اعظمي ځواک جوړ کړي، مقناطیسي ساحه یو ټېسلا (T) تعریفېږي، چېرې چې
-eq 1\,T = \frac{1\,N}{1\,A \times 1\,m}
-table TABLE 15.1 : SOME APPROXIMATE MAGNETIC FIELDS || جدول 15.1: چند تخمینی مقناطیسی میدان || ۱۵.۱ جدول: ځینې تقریبي مقناطیسي ساحې
-th Location || مقام || ځای | Field || میدان || ساحه
-tr At surface of neutron star || نیوٹران ستارے کی سطح پر || د نیوټرون ستوري پر سطحه | $10^{8}$ T
-tr Near large electromagnet || بڑے برقی مقناطیس کے قریب || لوی برېښنايي مقناطیس ته نږدې | 1.5 T
-tr Near small bar magnet || چھوٹے سلاخی مقناطیس کے قریب || کوچني میلې مقناطیس ته نږدې | $10^{-2}$ T
-tr At earth's surface || زمین کی سطح پر || د ځمکې پر سطحه | $10^{-4}$ T
-tr Interstellar space || بین النجمی خلا || د ستورو ترمنځ فضا | $10^{-10}$ T
-tr Magnetically shielded room || مقناطیسی طور پر محفوظ کمرہ || مقناطیسي خوندي کوټه | $10^{-14}$ T
+## a. Refractive Index (n):
+p Light travels at different speeds in different optically transparent materials. The ratio of the speed of light in vacuum divided by the speed of light in a material is called the refractive index (or index of refraction) of the material. The index of refraction n is given by
+m n = c / v   (12.6)
+p where c is the speed of light in vacuum (about 3.00 × 10⁸ m/s) and v is the speed of light in the medium. The speed of light in a physical medium such as glass is always less than that of the speed of light in vacuum. Thus, the index of refraction of a material is always greater than or equal to 1, and by definition the index of refraction of vacuum is 1. Table 12.2 lists the indices of refraction for some common materials.
+## b. Snell's Law:
+p The amount that a light ray changes its direction depends both on the incident angle and the amount that the speed changes. For a ray at a given incident angle, a large change in speed causes a large change in direction, and thus a large change in angle. The exact mathematical relationship is the law of refraction, or 'Snell's Law,' which is stated as 'the product of the index of refraction of the first medium and the sine of the angle of incidence is equal to the product of the index of refraction of the second medium and the sine of the angle of refraction'. Mathematically
+m n₁ sinθ₁ = n₂ sinθ₂   (12.7)
+table Table 12.2 Indices of Refraction for Some Common Materials
+th | Material | Index of Refraction
+tr | Gases |
+tr | Air | 1.000271
+tr | Helium | 1.000036
+tr | Carbon dioxide | 1.00045
+tr | Liquids |
+tr | Water | 1.333
+tr | Methyl alcohol | 1.329
+tr | Ethyl alcohol | 1.362
+tr | Glycerine | 1.473
+tr | Benzene | 1.501
+tr | Typical oil | 1.5
+tr | Solids |
+tr | Ice | 1.310
+tr | Calcium fluoride | 1.434
+tr | Fused quartz | 1.46
+tr | Salt | 1.544
+tr | Polystyrene | 1.49
+tr | Typical glass | 1.5
+tr | Crown glass | 1.52
+tr | Quartz | 1.544
+tr | Diamond | 2.417
 endtable
-p **15.2.3 Direction of force:** Since force is a vector quantity it must be associated with proper direction. Fleming's Left hand rule or right hand rule III is used to determine the direction of force on a current carrying wire in magnetic field. || **15.2.3 قوت کی سمت:** چونکہ قوت سمتی مقدار ہے اس لیے اس کے ساتھ درست سمت ہونی چاہیے۔ مقناطیسی میدان میں کرنٹ بردار تار پر قوت کی سمت معلوم کرنے کے لیے فلیمنگ کا بائیں ہاتھ کا قاعدہ یا دائیں ہاتھ کا قاعدہ III استعمال ہوتا ہے۔ || **۱۵.۲.۳ د ځواک لوری:** څرنګه چې ځواک برداري کمیت دی، باید له سم لوري سره وي. په مقناطیسي ساحه کې پر جریان لرونکي سیم د ځواک د لوري د ټاکلو لپاره د فلېمنګ د چپ لاس قاعده یا د ښي لاس قاعده III کارول کېږي.

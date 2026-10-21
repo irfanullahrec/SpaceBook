@@ -11,20 +11,39 @@ X, Y = sp.symbols('x y')
 
 
 # ------------------------------------------------------------ TeX <-> sympy
+def _frac_to_div(s):
+    """replace \\frac{A}{B} (balanced braces) by ((A)/(B)), innermost last."""
+    while True:
+        i = s.find('\\frac')
+        if i < 0:
+            return s
+        j = i + 5
+        def grab(k):
+            while k < len(s) and s[k] == ' ': k += 1
+            if s[k] != '{': return None, k
+            d, st = 0, k
+            while k < len(s):
+                if s[k] == '{': d += 1
+                elif s[k] == '}':
+                    d -= 1
+                    if d == 0: return s[st + 1:k], k + 1
+                k += 1
+            return None, k
+        A, k = grab(j)
+        Bv, k2 = grab(k)
+        if A is None or Bv is None:
+            raise ParseError('frac')
+        mixed = i > 0 and s[i - 1].isdigit()
+        s = s[:i] + ('+' if mixed else '') + '((' + A + ')/(' + Bv + '))' + s[k2:]
+
+
 def tex_to_sympy(s):
     s = msol.clean_tex(s)
     s = s.replace('\\times', '*').replace('\\div', '/').replace('\\cdot', '*')
-    for _ in range(4):
-        s = re.sub(r'\\frac\{([^{}]*)\}\{([^{}]*)\}', r'((\1)/(\2))', s)
-    s = re.sub(r'(\d)\(\(', r'\1+((', s) if re.search(r'\d\(\(\d+\)/\(\d+\)\)', s) else s   # mixed number 2\\frac{1}{3}
+    s = _frac_to_div(s)
     s = s.replace('{', '(').replace('}', ')').replace('\\', '')
     s = s.replace('[', '(').replace(']', ')')
     return parse_expr(s, transformations=TRANS, evaluate=True)
-
-
-def stex(e):
-    t = sp.latex(e, order='lex')
-    return t.replace('\\left(', '(').replace('\\right)', ')') if False else t
 
 
 def poly_tex(e):
@@ -58,6 +77,7 @@ def key_matches(key_text, result):
     if key_text is None:
         return None
     k = key_text.strip().rstrip('.')
+    k = re.sub(r'^\$?\s*[A-Za-z]\s*=\s*', '', k)
     try:
         symres = isinstance(result, sp.Basic) and bool(result.free_symbols)
         kk = tex_to_sympy(re.sub(r'^Rs\.?\s*', '', k if symres else re.sub(r'(?<=\d)\s*([A-Za-z%]+/?[A-Za-z]*)$', '', k)))
@@ -408,3 +428,61 @@ def dedupe_m(steps):
 
 def result_for_sym(res):
     return sp.latex(res, order='lex')
+
+
+# ------------------------------------------------------------ reduced form, equivalents, properties
+def reduced_steps(t):
+    v = val(parse_tex(t))
+    ast = parse_tex(t)
+    if ast[0] not in ('frac',):
+        raise ParseError('frac')
+    a, b = int(val(ast[1])), int(val(ast[2]))
+    import math
+    g = math.gcd(abs(a), abs(b))
+    r = Fraction(a, b)
+    steps = [step('given', msol.clean_tex(t)),
+             {'en': f'HCF of {abs(a)} and {abs(b)} is {g}; divide the numerator and denominator by it:', 'ur': f'{abs(a)} اور {abs(b)} کا ع.م.ا {g} ہے؛ شمار کنندہ اور نسب نما کو اس سے تقسیم کریں:', 'ps': f'د {abs(a)} او {abs(b)} ل.م.ق {g} دی؛ صورت او مخرج پر هغه ووېشئ:', 'm': f'\\frac{{{a} \\div {g}}}{{{b} \\div {g}}} = {tex_num(r)}'}]
+    return steps, r
+
+
+def equivalent_steps(t):
+    ast = parse_tex(t)
+    if ast[0] != 'frac':
+        raise ParseError('frac')
+    a, b = int(val(ast[1])), int(val(ast[2]))
+    rows = ' ,\\; '.join(f'\\frac{{{a} \\times {k}}}{{{b} \\times {k}}} = \\frac{{{a * k}}}{{{b * k}}}' for k in (2, 3, 4))
+    return [step('given', msol.clean_tex(t)), step('eqfrac', rows)], Fraction(a, b)
+
+
+def commutative_steps(items):
+    a, b = [val(parse_tex(x)) for x in items[:2]]
+    ta, tb = [tex(parse_tex(x)) for x in items[:2]]
+    steps = [step('given', f'a = {ta},\\; b = {tb}'),
+             {'en': 'Addition: a + b and b + a', 'ur': 'جمع: a + b اور b + a', 'ps': 'جمع: a + b او b + a', 'm': f'{ta} + {tb} = {tex_num(a + b)},\\quad {tb} + {ta} = {tex_num(b + a)}'},
+             {'en': 'Multiplication: a × b and b × a', 'ur': 'ضرب: a × b اور b × a', 'ps': 'ضرب: a × b او b × a', 'm': f'{ta} \\times {tb} = {tex_num(a * b)},\\quad {tb} \\times {ta} = {tex_num(b * a)}'},
+             {'en': 'The results are equal, so the commutative property holds.', 'ur': 'نتائج برابر ہیں، لہٰذا تبدیلی خاصیت درست ہے۔', 'ps': 'پایلې برابرې دي، نو تبادلوي ځانګړتیا سمه ده.'}]
+    return steps, a + b
+
+
+def associative_steps(items):
+    a, b, c = [val(parse_tex(x)) for x in items[:3]]
+    ta, tb, tc = [tex(parse_tex(x)) for x in items[:3]]
+    steps = [step('given', f'a = {ta},\\; b = {tb},\\; c = {tc}'),
+             {'en': 'Addition: (a + b) + c and a + (b + c)', 'ur': 'جمع: (a + b) + c اور a + (b + c)', 'ps': 'جمع: (a + b) + c او a + (b + c)', 'm': f'({ta} + {tb}) + {tc} = {tex_num((a + b) + c)},\\quad {ta} + ({tb} + {tc}) = {tex_num(a + (b + c))}'},
+             {'en': 'Multiplication: (a × b) × c and a × (b × c)', 'ur': 'ضرب: (a × b) × c اور a × (b × c)', 'ps': 'ضرب: (a × b) × c او a × (b × c)', 'm': f'({ta} \\times {tb}) \\times {tc} = {tex_num((a * b) * c)},\\quad {ta} \\times ({tb} \\times {tc}) = {tex_num(a * (b * c))}'},
+             {'en': 'Both pairs are equal, so the associative property holds.', 'ur': 'دونوں جوڑے برابر ہیں، لہٰذا شراکتی خاصیت درست ہے۔', 'ps': 'دواړه جوړې برابرې دي، نو ملګرتیا ځانګړتیا سمه ده.'}]
+    return steps, (a + b) + c
+
+
+def split_items(text):
+    t = text.strip().strip('$')
+    depth, cur, out = 0, '', []
+    for ch in t:
+        if ch in '([{': depth += 1
+        if ch in ')]}': depth -= 1
+        if ch == ',' and depth == 0:
+            out.append(cur); cur = ''
+        else:
+            cur += ch
+    out.append(cur)
+    return [x.strip() for x in out if x.strip()]

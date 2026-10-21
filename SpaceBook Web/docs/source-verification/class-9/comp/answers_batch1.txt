@@ -1,0 +1,139 @@
+# Class 9 Computer Science, unanswered exercise items (English; programs on one line)
+@@ p038:8
+Model answer ## Problem analysis is the first step of problem solving: studying the problem carefully to understand what is given (input), what is required (output) and what processing links them, so the problem is clearly defined before a solution is designed.
+@@ p038:9
+Model answer ## The solution is planned by breaking the problem into smaller steps, choosing a method (algorithm), and writing the steps in order using an algorithm, flowchart or pseudocode, then checking them with sample data before coding.
+@@ p038:10
+Model answer ## A candidate solution is a possible solution of the problem; several candidate solutions may be listed and the best one (the simplest, fastest and most accurate) is selected after comparing them.
+@@ p038:11
+Model answer ## Three problem solving techniques: (1) Divide and conquer: break a big problem into smaller sub-problems; (2) Trial and error: try possible solutions until one works; (3) Algorithm / flowchart based step-by-step approach; (also working backwards, and using diagrams).
+@@ p038:14
+Model answer ## An algorithm is a finite, ordered set of clear steps that solves a problem or does a task. Role: it gives a plan of the solution before coding, makes the logic clear and easy to check, helps to find errors early, can be turned into a program in any language, and lets us check the efficiency of a solution.
+@@ p038:16
+Model answer ## The data (values) the algorithm needs to start, e.g. the numbers whose sum is to be found.
+@@ p038:17
+Model answer ## The calculations and operations to be done on the inputs, e.g. adding, comparing, or repeating steps.
+@@ p038:18
+Model answer ## The choices to be made during processing, e.g. if a number is greater than another, choose the path to follow.
+@@ p038:19
+Model answer ## The results the algorithm must give, e.g. the sum or message displayed on the screen.
+@@ p038:20
+Model answer ## A flowchart is a diagram that shows the steps of an algorithm using symbols joined by arrows. Symbols: Terminal (oval) for start and end; Input/Output (parallelogram) for reading and displaying data; Process (rectangle) for calculations and assignment; Decision (diamond) for a yes/no or true/false test; Flow lines (arrows) for the direction; Connector (small circle) to join parts and an off-page connector.
+@@ p038:21
+Model answer ## Algorithm: 1. Start. 2. Read the number n. 3. Set fact = 1 and i = 1. 4. While i is not greater than n, set fact = fact x i and i = i + 1. 5. Display fact. 6. Stop. Flowchart: Start, input n, fact = 1, i = 1, decision (i <= n?): yes: fact = fact * i, i = i + 1, back to the decision; no: output fact, stop.
+@@ p038:22
+Model answer ## Algorithm: 1. Start. 2. Read a, b, c. 3. Calculate d = b x b - 4 x a x c. 4. If d < 0 display no real roots and go to step 7. 5. Calculate x1 = (-b + sqrt(d)) / (2a) and x2 = (-b - sqrt(d)) / (2a). 6. Display x1 and x2. 7. Stop. Flowchart: start, input a b c, process d, decision d < 0 (yes: message; no: compute x1 and x2 and output), stop.
+@@ p068:15
+Model answer ## Syntax is the set of grammar rules for writing statements of a language (a missing semicolon is a syntax error); semantics is the meaning of the statements, i.e. what the statement does (a program with correct syntax but wrong logic has a semantic error).
+@@ p068:16
+Model answer ## Low-level languages (machine and assembly) are close to the hardware, machine dependent, fast but difficult to write and learn. High-level languages (C, Python, Java) use English-like words, are machine independent, easy to learn and write, but must be translated into machine code.
+@@ p068:17
+Model answer ## IDE (Integrated Development Environment) is software that gives an editor, compiler, debugger and other tools in one place to write, compile, run and debug programs, e.g. Dev-C++, Code::Blocks, Visual Studio.
+@@ p068:18
+Model answer ## OOP (Object-Oriented Programming) is a programming approach that organizes a program around objects, which combine data and the functions that work on it, using classes, encapsulation, inheritance and polymorphism (C++, Java).
+@@ p069:3
+Model answer ## High-level languages are easy to read and write (English-like), machine independent (portable), have fewer errors and are easy to debug, support structured programming and need a compiler or interpreter to translate them.
+@@ p069:4
+Model answer ## A compiler translates the whole source program into machine code at once and then reports all errors; it runs fast afterwards (C, C++). An interpreter translates and executes the program one statement at a time and stops at the first error; it is slower in running (Python, BASIC).
+@@ p069:5
+Model answer ## A header file has the declarations of library functions and macros (e.g. stdio.h for printf and scanf) and is added to the program with the #include directive before compiling.
+@@ p069:6
+Model answer ## The source program is the program written by the programmer in a high-level language (a .c file); the object program is the machine-language form produced by the compiler (a .obj file) that is linked and run.
+@@ p069:7
+Model answer ## Reserved words (keywords) are words with a fixed meaning in the language that cannot be used as names of variables, e.g. int, float, if, else, while, for, return.
+@@ p069:8
+Model answer ## Rules for variable names: begin with a letter or underscore, not a digit; use only letters, digits and underscore (no spaces or symbols); do not use a reserved word; C is case sensitive (Sum and sum differ); keep the name meaningful and not too long.
+@@ p069:11
+Model answer ## A programming language is a set of words and rules used to write instructions for a computer. Low-level languages: machine language is made of binary 0s and 1s directly executed by the CPU; assembly language uses short mnemonic codes (ADD, MOV) and needs an assembler to change it to machine code. They are fast and hardware dependent.
+@@ p069:12
+Model answer ## High-level languages are written in English-like words and are machine independent. Five types: C (a general purpose, structured language for system programs), C++ (object oriented), Java (portable, object oriented), Python (simple, popular for scripting and AI) and BASIC (easy for beginners); others are COBOL (business) and FORTRAN (science).
+@@ p069:13
+Model answer ## A C program has: preprocessor directives (#include), the main function, braces, declarations of variables, and statements ending with semicolons, plus comments. Example: #include <stdio.h> ; void main() { printf("Hello"); }. Preprocessor directives begin with # and are handled before compiling: #include adds a header file and #define defines a constant or macro; also #ifdef, #ifndef and #undef.
+@@ p069:14
+Model answer ## A constant is a fixed value that does not change during execution (5, 3.14, 'A', defined with const or #define). A variable is a named memory location whose value can change (int age = 15; age = 16;). A constant holds one value only, while a variable can be reassigned.
+@@ p069:15
+Model answer ## Data types in C: int (whole numbers, e.g. 25), float (real numbers with decimals, e.g. 3.14), double (larger precision decimals), char (a single character, e.g. 'A'), and void (no value). Examples: int age = 15; float price = 25.5; char grade = 'A';
+@@ p069:16
+Model answer ## Type casting is converting a value from one data type to another. Implicit conversion is done by the compiler (int to float in mixed expressions); explicit casting is done by the programmer: float avg = (float) total / 3; or int x = (int) 7.9; which gives 7.
+@@ p069:17
+Model answer ## A variable is declared by giving its data type and name: int a; float b; char c;. It is initialized by assigning a value, either at declaration (int a = 10;) or later (a = 10;); several variables can be declared together (int x, y, z;).
+@@ p101:9
+Model answer ## A format specifier tells printf() and scanf() the type of data to print or read: %d for int, %f for float, %c for char, %s for string, %lf for double. Example: printf("%d", 25); prints 25 and printf("%f", 3.5); prints 3.500000.
+@@ p101:10
+Model answer ## Escape sequences are special characters used inside strings to print things that cannot be typed directly: \n new line, \t tab, \b backspace, \\ backslash, \" double quote. Example: printf("Hello\nWorld"); prints on two lines.
+@@ p101:11
+Model answer ## The gets() function reads a whole line of text, including spaces, from the keyboard and stores it in a string (character array) until Enter is pressed. Example: char name[30]; gets(name);
+@@ p101:12
+Model answer ## getch() reads one character from the keyboard without displaying it on the screen and without waiting for Enter; getche() also reads one character without Enter, but the character is displayed (echoed) on the screen.
+@@ p101:13
+(a) -31 (b) 147 (c) -1 ## (a) 9 - 5 x (6 + 2) = 9 - 5 x 8 = 9 - 40 = -31. (b) 60 / 10 x 24 + 3 = 6 x 24 + 3 = 144 + 3 = 147. (c) 100 % 50 - 100 % 3 = 0 - 1 = -1.
+@@ p101:16
+Model answer ## Operators are symbols that perform operations on operands. Types: arithmetic (+ - * / %), relational (< > <= >= == !=), logical (&& and, double bar for or, ! not), assignment (= += -=), increment/decrement (++ --), and conditional (?:). Examples: a + b, a > b, (a > 5) && (b < 3), x += 2, i++.
+@@ p101:17
+Model answer ## Output functions send data to the screen. printf() prints text and values with format specifiers, e.g. printf("Sum = %d", s); puts() prints a string followed by a new line; putchar() prints one character; putch() (conio.h) prints a character.
+@@ p101:18
+Model answer ## Format specifiers in printf(): %d (int), %f (float), %c (char), %s (string), %lf (double), %u (unsigned). Escape sequences: \n (new line), \t (tab), \a (alert sound), \\ (backslash), \" (quote), \b (backspace). Example: printf("Name: %s\tAge: %d\n", name, age);
+@@ p101:19
+Model answer ## Input functions read data from the keyboard: scanf() reads formatted values, e.g. scanf("%d", &a); getchar() reads one character and waits for Enter; getch() and getche() read one character without Enter; gets() reads a whole line of text. Example: char c; c = getchar();
+@@ p101:20
+Model answer ## #include <stdio.h> ; void main() { int a, b, c, sum, product; float avg; printf("Enter three numbers: "); scanf("%d%d%d", &a, &b, &c); sum = a + b + c; product = a * b * c; avg = sum / 3.0; printf("Sum = %d Product = %d Average = %f", sum, product, avg); }
+@@ p101:21
+Model answer ## #include <stdio.h> ; void main() { float base, height, area; printf("Enter base and height: "); scanf("%f%f", &base, &height); area = 0.5 * base * height; printf("Area = %f", area); }
+@@ p101:22
+Model answer ## #include <stdio.h> ; void main() { float c, f; printf("Enter temperature in Celsius: "); scanf("%f", &c); f = c * 9 / 5 + 32; printf("Fahrenheit = %f", f); }
+@@ p121:18
+Model answer ## #include <stdio.h> ; void main() { int a, b, c; printf("Enter three integers: "); scanf("%d%d%d", &a, &b, &c); if (a >= b && a >= c) printf("%d is largest", a); else if (b >= c) printf("%d is largest", b); else printf("%d is largest", c); }
+@@ p121:19
+Model answer ## #include <stdio.h> ; void main() { char ch; printf("Enter a character: "); scanf("%c", &ch); if (ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u' or the same five capitals) printf("It is a vowel"); else printf("It is a consonant"); } In C the word or is written as the logical OR operator (two vertical bars) between the comparisons; the capital letters are tested in the same way.
+@@ p122:4
+Model answer ## void main() { char ch; scanf("%c", &ch); switch (ch) { case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U': printf("It is a vowel"); break; default: printf("It is a consonant"); } }
+@@ p122:5
+a is equal to b / a is not greater than c ## a = b = 10 and c = 13. The condition (a == b) && (a > c) is (true) && (10 > 13 false), so it is false and the else block runs. Output on two lines: a is equal to b  and  a is not greater than c.
+@@ p143:5
+Model answer ## Loops repeat a block of statements. for loop: for(i = 1; i <= 5; i++) printf("%d ", i); (counted loop, initialization, condition and increment in one place). while loop: i = 1; while(i <= 5) { printf("%d ", i); i++; } (condition tested before each pass). do-while loop: i = 1; do { printf("%d ", i); i++; } while(i <= 5); (body runs at least once, condition tested after). All three print 1 2 3 4 5.
+@@ p143:6
+Model answer ## The while loop tests the condition first, so the body may never run; the do-while loop runs the body once before testing the condition at the end, so it executes at least once, and it ends with a semicolon. Example with i = 10: while(i < 5) prints nothing, but do { printf("%d", i); } while(i < 5); prints 10 once.
+@@ p143:7
+Model answer ## #include <stdio.h> ; void main() { long product = 1; int n = 2; while (n <= 100) { product = product * n; n = n + 2; } printf("Product = %ld", product); } (the product is too large for an int and overflows; use double for the exact scale).
+@@ p143:8
+Model answer ## #include <stdio.h> ; void main() { char ch; for (ch = 'A'; ch <= 'Z'; ch++) printf("%c ", ch); }
+@@ p143:9
+Model answer ## #include <stdio.h> ; void main() { int i, j; for (i = 1; i <= 5; i++) { for (j = 1; j <= i; j++) printf("a   "); printf("\n"); } } (the outer loop counts the lines, the inner loop prints i letters in line i).
+@@ p173:8
+Model answer ## A computer stores all data (numbers, text, pictures, sound) as binary digits, 0 and 1 (bits), because its circuits have two states, off and on. 8 bits make a byte. Text is coded with ASCII/Unicode, numbers in the binary system, pictures as pixels (bits for colours) and sound as sampled binary values.
+@@ p173:9
+Model answer ## The three basic gates are AND, OR and NOT. AND: output 1 only when all inputs are 1 (A B: 00 gives 0, 01 gives 0, 10 gives 0, 11 gives 1). OR: output 1 when any input is 1 (00 gives 0, 01 gives 1, 10 gives 1, 11 gives 1). NOT: output is the inverse of the single input (0 gives 1, 1 gives 0). Circuit symbols: AND is D-shaped, OR is curved-D shaped and NOT is a triangle with a small circle.
+@@ p173:10
+Model answer ## f = ABC + A'B' + C' + A'B. Simplify: A'B' + A'B = A', so f = ABC + A' + C'. Since A' + ABC = A' + BC and C' + BC = C' + B, f = A' + B + C'. Gate diagram: NOT on A, NOT on C, and a three-input OR gate that takes A', B and C' (or the original expression with AND gates for ABC, A'B' and A'B joined to an OR gate with C').
+@@ p173:12
+$F = \bar{X}$ ## $F = \bar{X}Z + \bar{X}\bar{Z} = \bar{X}(Z + \bar{Z}) = \bar{X}$.
+@@ p232:16
+d. Publishing web pages ## Uploading of web pages to a web server so that others can access them is called publishing (hosting) the website.
+@@ p233:6
+Model answer ## A website is a collection of related web pages with a common domain name stored on a web server. Types: personal (a student's home page), business/commercial (daraz.pk), educational (a school or university site), news (dawn.com), government (tbb.kp.gov.pk), social (facebook), entertainment, blogs and search engines (google).
+@@ p233:8
+Model answer ## <p>This is a paragraph</p>
+@@ p233:9
+Model answer ## <h1>Heading</h1> (headings run from <h1>, the largest, to <h6>, the smallest)
+@@ p233:10
+Model answer ## <b>Bold text</b>
+@@ p233:11
+Model answer ## <u>Underlined text</u>
+@@ p233:12
+Model answer ## <i>Italic text</i>
+@@ p233:13
+Model answer ## <center>Centered text</center> (or style="text-align:center")
+@@ p233:14
+Model answer ## x<sup>2</sup> (superscript, raised text)
+@@ p233:15
+Model answer ## H<sub>2</sub>O (subscript, lowered text)
+@@ p233:18
+Model answer ## <html><body><img src="printer.jpg" width="250" height="150" alt="Printer"></body></html>
+@@ p233:19
+Model answer ## Background colour: <body bgcolor="yellow"> (or style="background-color:yellow"). Background image: <body background="picture.jpg"> (or style="background-image:url('picture.jpg')"). The image or colour is applied to the whole page behind the content.
+@@ p233:20
+Model answer ## <html><body><a href="https://www.google.com"><img src="logo.jpg" width="100" height="50"></a></body></html> (the image inside the anchor tag works as a hyperlink)
+@@ p233:21
+Model answer ## <html><body> Unordered: <ul><li>Apple</li><li>Mango</li></ul> Ordered: <ol><li>First</li><li>Second</li></ol> </body></html>
+@@ p233:22
+Model answer ## <html><body><a href="https://www.google.com">Google</a> <a href="https://www.wikipedia.org">Wikipedia</a> <a href="https://tbb.kp.gov.pk">KP Textbook Board</a></body></html>

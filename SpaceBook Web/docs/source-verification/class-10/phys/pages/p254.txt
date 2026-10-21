@@ -1,0 +1,36 @@
+@printed 245
+@status lesson
+@issue Source: 10thphysics7.pdf page 12. Table 18.2 is built as a table; the graph beside Example 18.3 is redrawn.
+@issue Table 18.2: the exponents are very small and partly faint in the scan. They are read as beryllium-8 2.0 × 10⁻¹⁶ s, polonium 1.64 × 10⁻⁴ s, radium-226 1.62 × 10³ y, carbon-14 5.73 × 10³ y, uranium-235 7.04 × 10⁸ y and uranium-238 4.45 × 10⁹ y, which match the standard textbook values for these isotopes. The "polonium" row is polonium-214. "10¹⁰ years" in the text is likewise read from a faint exponent.
+p Where, the number n, of half-lives is equal to the time interval (Δt) divided by the time for one half-life ($T_{1/2}$). || جہاں نصف عمروں کی تعداد n وقفۂ وقت (Δt) کو ایک نصف عمر کے وقت ($T_{1/2}$) سے تقسیم کرنے کے برابر ہے۔ || چېرې چې د نیم عمرونو شمېر n د وختي واټن (Δt) پر یوه نیم عمر ($T_{1/2}$) د وېش سره برابر دی.
+eq n = \frac{\Delta t}{T_{1/2}} \qquad (18.5)
+p Different materials have different half lives which ranges from $10^{10}$ years to a fraction of second. Half lives of some common radioisotopes are shown in table 18.2. || مختلف مادوں کی نصف عمریں مختلف ہیں جو $10^{10}$ سال سے سیکنڈ کے ایک حصے تک ہیں۔ چند عام ریڈیو آئسوٹوپس کی نصف عمریں جدول 18.2 میں ہیں۔ || بېلابېل مواد بېلابېل نیم عمرونه لري چې له $10^{10}$ کلونو څخه د ثانیې تر یوې برخې پورې دي. د ځینو عامو راډیو ایزوټوپونو نیم عمرونه په ۱۸.۲ جدول کې دي.
+table TABLE 18.2 HALF LIVES OF SOME COMMON RADIOISOTOPES || جدول 18.2 چند عام ریڈیو آئسوٹوپس کی نصف عمریں || ۱۸.۲ جدول د ځینو عامو راډیو ایزوټوپونو نیم عمرونه
+th Radioisotope || ریڈیو آئسوٹوپ || راډیو ایزوټوپ | Decay || انحطاط || تجزیه | Half Life || نصف عمر || نیم عمر
+tr beryllium-8 || بیریلیم-8 || بېریلیم-8 | α | $2.0\times10^{-16}$ s
+tr polonium || پولونیم || پولونیم | α | $1.64\times10^{-4}$ s
+tr iodine-131 || آیوڈین-131 || ایوډین-131 | β⁻ | 8.04 d
+tr cobalt-60 || کوبالٹ-60 || کوبالټ-60 | β⁻ | 5.3 y
+tr radium-226 || ریڈیم-226 || راډیم-226 | α | $1.62\times10^{3}$ y
+tr carbon-14 || کاربن-14 || کاربن-14 | β⁻ | $5.73\times10^{3}$ y
+tr uranium-235 || یورینیم-235 || یورانیم-235 | α | $7.04\times10^{8}$ y
+tr uranium-238 || یورینیم-238 || یورانیم-238 | α | $4.45\times10^{9}$ y
+endtable
+example 18.3 | HALF LIFE OF POLONIUM -218 || پولونیم-218 کی نصف عمر || د پولونیم-218 نیم عمر
+p You have a 160.0 μg sample of polonium-218. It decays by alpha emission with a half-life of 3.0 min. How much of the pure sample is left after 9.0 min? || آپ کے پاس پولونیم-218 کا 160.0 μg نمونہ ہے۔ یہ 3.0 min کی نصف عمر سے الفا اخراج کے ذریعے ٹوٹتا ہے۔ 9.0 min کے بعد خالص نمونے کا کتنا حصہ باقی رہے گا؟ || تاسو د پولونیم-218 یوه 160.0 μg نمونه لرئ. د 3.0 min نیم عمر سره د الفا خپرولو په واسطه تجزیه کېږي. له 9.0 min وروسته به څومره خالصه نمونه پاتې وي؟
+p **GIVEN:** Total quantity of pure polonium-218 '$N_0$' = 160 μg; Half life of polonium-218 '$T_{1/2}$' = 3.0 min; Total elapsed 'Δt' = 9 min. **REQUIRED:** Quantity left 'N' = ? || **معلوم:** خالص پولونیم-218 کی کل مقدار '$N_0$' = 160 μg؛ پولونیم-218 کی نصف عمر '$T_{1/2}$' = 3.0 min؛ کل گزرا وقت 'Δt' = 9 min۔ **مطلوب:** باقی مقدار 'N' = ? || **ورکړل شوي:** د خالص پولونیم-218 ټوله اندازه '$N_0$' = 160 μg؛ د پولونیم-218 نیم عمر '$T_{1/2}$' = 3.0 min؛ ټول تېر وخت 'Δt' = 9 min. **غوښتل شوی:** پاتې اندازه 'N' = ?
+p **SOLUTION:** The number of half lives 'n' past are || **حل:** گزری ہوئی نصف عمروں کی تعداد 'n' یہ ہے || **حل:** د تېرو نیم عمرونو شمېر 'n' دا دی
+eq n = \frac{\Delta t}{T_{1/2}} \qquad \text{Putting values}\quad n = \frac{9.0\,\text{min}}{3.0\,\text{min}} = 3
+p Original sample remaining after any given time interval is || کسی بھی دیے گئے وقفۂ وقت کے بعد باقی اصل نمونہ یہ ہے || د هر ټاکلي وختي واټن وروسته پاتې اصلي نمونه دا ده
+eq N = \left(\frac{1}{2}\right)^n N_0
+svg Graph for Example 18.3: the amount of sample (μg) against time (min) falls from 160 at 0 to 80 at 3 min, 40 at 6 min and 20 at 9 min. || مثال 18.3 کا گراف: نمونے کی مقدار (μg) بمقابلہ وقت (min) 0 پر 160 سے 3 min پر 80، 6 min پر 40 اور 9 min پر 20 رہ جاتی ہے۔ || د ۱۸.۳ بېلګې ګراف: د نمونې اندازه (μg) د وخت (min) پر وړاندې په 0 کې له 160 څخه په 3 min کې 80، په 6 min کې 40 او په 9 min کې 20 ته راټیټېږي.
+<svg viewBox="0 0 220 150" width="220" role="img" aria-label="Graph on a grid. Vertical axis amount of sample in micrograms 0 to 160; horizontal axis time in minutes 0 to 12. A red decay curve with blue points at (0,160), (3,80), (6,40), (9,20)" font-family="Arial" font-size="8">
+<g stroke="#e5e7eb"><path d="M40 10 V130 M70 10 V130 M100 10 V130 M130 10 V130 M160 10 V130 M190 10 V130 M40 25 H200 M40 55 H200 M40 85 H200 M40 115 H200"/></g>
+<line x1="40" y1="10" x2="40" y2="130" stroke="#111"/><line x1="40" y1="130" x2="205" y2="130" stroke="#111"/>
+<g text-anchor="end"><text x="37" y="13">160</text><text x="37" y="73">80</text><text x="37" y="103">40</text><text x="37" y="118">20</text><text x="37" y="133">0</text></g>
+<g><text x="38" y="142">0</text><text x="67" y="142">3</text><text x="97" y="142">6</text><text x="127" y="142">9</text><text x="155" y="142">12</text><text x="190" y="142">min</text><text x="110" y="150">time</text><text x="25" y="8">μg</text></g>
+<path d="M40 10 C55 45 62 65 70 70 S92 98 100 100 S122 113 130 115 S160 121 190 122" fill="none" stroke="#dc2626" stroke-width="2"/>
+<g fill="#1e3a8a"><circle cx="40" cy="10" r="3"/><circle cx="70" cy="70" r="3"/><circle cx="100" cy="100" r="3"/><circle cx="130" cy="115" r="3"/></g>
+<text x="12" y="105" transform="rotate(-90 12 105)">Amount of Sample</text>
+</svg>
+endsvg

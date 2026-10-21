@@ -1,23 +1,16 @@
-@printed 140
+@printed 33
 @status lesson
-@issue Source: 10thphysics4.pdf page 27 (page number cut off).
-p Many important devices do not obey Ohm's law. Even a lightbulb has resistance that depends on its temperature and does not obey Ohm's law. || بہت سے اہم آلات اوہم کے قانون کی پیروی نہیں کرتے۔ یہاں تک کہ بلب کی مزاحمت بھی اس کے درجۂ حرارت پر منحصر ہوتی ہے اور یہ اوہم کے قانون کی پیروی نہیں کرتا۔ || ډېرې مهمې وسیلې د اوم له قانون پیروي نه کوي. حتی د بلب مقاومت هم د هغه په تودوخې پورې اړه لري او د اوم قانون نه مني.
-example 14.2 | CURRENT THROUGH RESISTOR || مزاحمت میں کرنٹ || له مقاومت څخه جریان
-p A 30.0-V battery is connected to a 10.0 Ω resistor. What is the current in the circuit? || 30.0 V کی بیٹری 10.0 Ω مزاحمت سے جڑی ہے۔ سرکٹ میں کرنٹ کتنا ہے؟ || یوه 30.0 V بیټري له 10.0 Ω مقاومت سره تړل شوې. په سرکټ کې جریان څومره دی؟
-p **GIVEN:** Potential difference V = 30.0 V; Resistance R = 10.0 Ω. **REQUIRED:** Current I = ? || **معلوم:** پوٹینشل ڈفرنس V = 30.0 V؛ مزاحمت R = 10.0 Ω۔ **مطلوب:** کرنٹ I = ? || **ورکړل شوي:** د پوټانشیل توپیر V = 30.0 V؛ مقاومت R = 10.0 Ω. **غوښتل شوي:** جریان I = ?
-eq \text{SOLUTION: By Ohm's law}\quad I = \dfrac{V}{R} \qquad \text{Putting values}\quad I = \dfrac{30.0\ \text{V}}{10.0\ \Omega} \qquad I = 3.00\ \text{A} \quad \text{(Answer)}
-endexample
-box extension | EXTENSION EXERCISE 14.1 || توسیعی مشق 14.1 || پراخه تمرین ۱۴.۱
-p How V/Ω gives ampere? 3.00 A is a large current, is this current realistic? || V/Ω سے ایمپیئر کیسے بنتا ہے؟ 3.00 A بڑا کرنٹ ہے، کیا یہ کرنٹ حقیقت پسندانہ ہے؟ || V/Ω څنګه امپیر ورکوي؟ 3.00 A لوی جریان دی، آیا دا جریان واقعي دی؟
-endbox
-box assignment | ASSIGNMENT 14.2: CURRENT THROUGH ELECTRIC RANGE || اسائنمنٹ 14.2: برقی چولہے میں کرنٹ || دنده ۱۴.۲: له برېښنايي بخارۍ څخه جریان
-q 1 | A heating element on an electric range operating on 240 V has a resistance of 30.0 Ω. What current does it draw? || 240 V پر چلنے والے برقی چولہے کے ہیٹنگ عنصر کی مزاحمت 30.0 Ω ہے۔ یہ کتنا کرنٹ لیتا ہے؟ || د برېښنايي بخارۍ تودوونکی عنصر چې په 240 V کار کوي 30.0 Ω مقاومت لري. څومره جریان اخلي؟
-sol I = 8.0 A ## $I = \dfrac{V}{R} = \dfrac{240\ \text{V}}{30.0\ \Omega} = 8.0\ \text{A}$ (book answer key: 8.0 A) || $I = \dfrac{240}{30.0} = 8.0\ \text{A}$ || $I = \dfrac{240}{30.0} = 8.0\ \text{A}$
-endbox
-@sec 14-4 | 14.4 Resistance, series and parallel combinations || 14.4 مزاحمت، سلسلہ وار اور متوازی ملاپ || ۱۴.۴ مقاومت، لړۍ ییز او موازي ترکیبونه
-## 14.4 ELECTRICAL RESISTANCE (R) || 14.4 برقی مزاحمت (R) || ۱۴.۴ برېښنايي مقاومت (R)
-p *The opposition offered to the flow of charges is called electrical resistance.* || *چارجز کے بہاؤ میں پیش آنے والی رکاوٹ کو برقی مزاحمت کہتے ہیں۔* || *د چارجونو د بهېدو پر وړاندې خنډ ته برېښنايي مقاومت ویل کېږي.*
-p In metallic conductors, the charge is transported by free electrons. Resistance is due to collisions between these free electrons and fixed atoms inside the conductor. By Ohm's law, the resistance is the ratio of the voltage V across the conductor to the current I it carries, mathematically || دھاتی موصلوں میں چارج آزاد الیکٹرانوں کے ذریعے منتقل ہوتا ہے۔ مزاحمت ان آزاد الیکٹرانوں اور موصل کے اندر جمے ہوئے ایٹموں کے درمیان تصادم کی وجہ سے ہوتی ہے۔ اوہم کے قانون کے مطابق مزاحمت موصل پر وولٹیج V اور اس میں بہنے والے کرنٹ I کی نسبت ہے، ریاضی کی رو سے || په فلزي هادیو کې چارج د ازادو الکترونونو له لارې لېږدول کېږي. مقاومت د دې ازادو الکترونونو او د هادي دننه د ثابتو اټومونو ترمنځ د ټکرونو له امله دی. د اوم د قانون له مخې مقاومت د هادي پر سر د ولټیج V او د هغه د جریان I نسبت دی، په ریاضي ډول
-eq R = \dfrac{V}{I} \qquad (14.4)
-p The SI unit of resistance is **ohm** and is represented by Greek letter (omega) Ω. *The resistance of wire is one ohm if potential difference of one volt applied across its ends causes a current of one ampere to flow through it.* || مزاحمت کی ایس آئی اکائی **اوہم** ہے جسے یونانی حرف اومیگا Ω سے ظاہر کرتے ہیں۔ *کسی تار کی مزاحمت ایک اوہم ہے اگر اس کے سروں پر ایک وولٹ پوٹینشل ڈفرنس لگانے سے اس میں ایک ایمپیئر کرنٹ بہے۔* || د مقاومت SI واحد **اوم** دی چې په یوناني توري اومېګا Ω ښودل کېږي. *د یوه سیم مقاومت یو اوم دی که د هغه پر سرونو د یوه ولټ د پوټانشیل توپیر لګول له هغه څخه د یوه امپیر جریان تېر کړي.*
-eq 1\ \Omega = \dfrac{1\ \text{V}}{1\ \text{A}}
+### 11.3 SOUND INTENSITY || 11.3 صوتی شدت || 11.3 د غږ شدت
+p Intensity is a measure of the amount of sound energy reaching a unit area in unit time (power per unit area). || شدت ایک اکائی رقبے تک اکائی وقت میں پہنچنے والی صوتی توانائی کی مقدار (فی اکائی رقبہ طاقت) کا پیمانہ ہے۔ || شدت په واحد وخت کې واحد مساحت ته د رسېدونکې غږیزې انرژۍ (پر واحد مساحت توان) اندازه ده.
+m I = E/(A × Δt) = P/A   (11.1)
+p In equation 11.1, P is Power (the rate at which energy E is transferred by the wave per unit time Δt) and A is the area through which sound energy is measured. Sound intensity is measured in units of picowatts per square metre (pW/m²). (Note that 1.0 pW is 1.0 × 10⁻¹² W.) || مساوات 11.1 میں P طاقت ہے (وہ شرح جس پر لہر توانائی E کو اکائی وقت Δt میں منتقل کرتی ہے) اور A وہ رقبہ ہے جس سے صوتی توانائی ناپی جاتی ہے۔ صوتی شدت پیکو واٹ فی مربع میٹر (pW/m²) میں ناپی جاتی ہے۔ (1.0 pW = 1.0 × 10⁻¹² W۔) || په 11.1 معادله کې P توان دی (هغه کچه چې څپه انرژي E په واحد وخت Δt کې لېږدوي) او A هغه مساحت دی چې غږیزه انرژي ترې اندازه کېږي. د غږ شدت په پیکوواټ پر مربع متر (pW/m²) کې سنجول کېږي. (1.0 pW = 1.0 × 10⁻¹² W.)
+p Intensity is an objective property of the sound wave—in fact, it is related to the square of the wave amplitude, and does not depend on the particular characteristics of a person’s ears. Loudness, on the other hand, is a subjective property of the sound that depends on the human ear, the sensitivity of the ear to the frequency of the sound, and the distance from the source of the sound. || شدت صوتی لہر کی معروضی خاصیت ہے؛ یہ لہر کے حیطے کے مربع سے متعلق ہے اور کسی شخص کے کانوں کی خصوصیات پر منحصر نہیں۔ اس کے برعکس بلندی آواز کی موضوعی خاصیت ہے جو انسانی کان، تعدد کے لیے کان کی حساسیت اور منبع سے فاصلے پر منحصر ہے۔ || شدت د غږ څپې عیني ځانګړنه ده؛ د څپې د لمنې له مربع سره تړاو لري او د انسان د غوږ پر ځانګړنو نه ده تړلې. خو لوړوالی د غږ ذهني ځانګړنه ده چې د غوږ، د فریکونسي حساسیت او له سرچینې واټن پورې اړه لري.
+p 10.3.1 Intensity Level: An average human ear can detect sounds with an intensity as low as 10⁻¹² W/m² and as high as 1 W/m² (and even higher, although above this, it is painful). This is an incredibly wide range of intensity, spanning a factor of 10¹² from lowest to highest. To permit comparison of values which vary so greatly in magnitude, it is most convenient to express them in terms of their logarithms—the power to which 10 must be raised to equal the number. || 10.3.1 شدت کی سطح: انسانی کان 10⁻¹² W/m² تک کم اور 1 W/m² تک زیادہ شدت کی آواز سن سکتا ہے (اس سے زیادہ تکلیف دہ ہے)۔ یہ شدت کی بہت وسیع حد ہے جو 10¹² کے عامل پر پھیلی ہے۔ اتنی مختلف مقداروں کا موازنہ کرنے کے لیے انہیں لوگارتھم کی صورت میں بیان کرنا آسان ہے۔ || 10.3.1 د شدت کچه: د انسان غوږ تر 10⁻¹² W/m² ټیټ او تر 1 W/m² لوړ شدت غږونه اورېدای شي؛ تر دې لوړ دردناک دی. دا 10¹² پراخه کچه ده. د دومره بېلابېلو مقدارونو د پرتله کولو لپاره لوګارتمونه کارول مناسب دي.
+table Table 11.1 LOGARITHMIC INTENSITY LEVELS AND SOUND INTENSITY || جدول 11.1 لوگارتھمی شدت کی سطحیں اور صوتی شدت || جدول 11.1 د لوګارتم شدت کچې او د غږ شدت
+th | 0 | 0 | 1
+tr | 10 | 1 | 10
+tr | 20 | 2 | 100
+tr | 30 | 3 | 1000
+tr | 50 | 5 | 100000
+tr | 100 | 10 | 10000000000
+endtable

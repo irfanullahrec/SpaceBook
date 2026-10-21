@@ -5,7 +5,7 @@
 import sys, json, re
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import msol, msol2, msol_sets, msol_geom, msol_misc
+import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4
 from msol import step
 
 HERE = Path(__file__).resolve().parents[2]
@@ -26,6 +26,8 @@ def category(ins):
     if 'additive inverse' in s: return 'addinv'
     if re.search(r'improper fractions? as mixed|as mixed numbers', s): return 'tomixed'
     if re.search(r'mixed numbers? as improper', s): return 'toimproper'
+    if s.startswith('verify the commutative'): return 'comm'
+    if s.startswith('verify the associative'): return 'assoc'
     if s.startswith('verify') and 'smaller' not in s: return 'verify'
     if re.search(r'square of each.*(less|smaller)', s): return 'sqsmall'
     if re.search(r'perfect squares? or not|test whether', s): return 'persq'
@@ -33,6 +35,20 @@ def category(ins):
     if re.search(r'^arrange', s) and 'ascending' in s: return 'order'
     if re.search(r'using the identity.*square', s): return 'idsq'
     if re.search(r'product of the following binomials', s): return 'idprod'
+    if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
+    if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
+    if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'^identify terminating and non-terminating', s): return 'deckind'
+    if re.search(r'convert the following to decimals|terminating decimals or not', s): return 'fracdec'
+    if re.search(r'absolute value', s): return 'absval'
+    if re.search(r'how many subsets', s): return 'subsets'
+    if re.search(r'product law of exponents', s): return 'expo_prod'
+    if re.search(r'quotient law', s): return 'expo_quot'
+    if re.search(r'single exponents?', s): return 'expo_pow'
+    if re.search(r'(using|applying) (the )?laws? of exponents', s): return 'expo_simp'
+    if re.search(r'cube root', s): return 'cbrt'
+    if re.search(r'simultaneous', s) and re.search(r'method|solve', s): return 'simul'
+    if re.search(r'divide the first polynomial', s): return 'polydiv'
     if re.search(r'square root', s): return 'sqrt'
     if re.search(r'find the square of|square of the following', s): return 'square'
     if re.search(r'^(add|subtract|multiply|divide)\b', s) and 'polynomial' not in s: return 'fracop:' + s.split()[0]
@@ -60,13 +76,36 @@ def build(cat, ins, part_text):
         return steps, both[0]
     if cat == 'idsq': return msol2.identity_square(unwrap(part_text))
     if cat == 'idprod': return msol2.identity_product(unwrap(part_text))
+    if cat == 'reduced': return msol2.reduced_steps(unwrap(part_text))
+    if cat == 'equiv': return msol2.equivalent_steps(unwrap(part_text))
+    if cat == 'comm': return msol2.commutative_steps(msol2.split_items(part_text))
+    if cat == 'assoc': return msol2.associative_steps(msol2.split_items(part_text))
+    if cat in ('expo_prod', 'expo_quot', 'expo_pow'):
+        fn = {'expo_prod': msol4.product_law, 'expo_quot': msol4.quotient_law, 'expo_pow': msol4.power_of_power}[cat]
+        st, rs = fn(unwrap(part_text))
+        if not msol4.numeric_equal(msol.clean_tex(unwrap(part_text)), rs):
+            raise msol.ParseError('law check')
+        return st, rs
+    if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'deckind': return msol4.decimal_kind(part_text)
+    if cat == 'fracdec': return msol4.frac_decimal(unwrap(part_text))
+    if cat == 'absval': return msol4.absolute_value(part_text)
+    if cat == 'subsets': return msol4.subsets(part_text)
+    if cat == 'cbrt': return msol3.cbrt_by_factors(unwrap(part_text))
+    if cat == 'simul': return msol3.simultaneous(part_text)
+    if cat == 'polydiv': return msol3.poly_divide(part_text)
     if cat == 'verify': return msol2.verify_equal(unwrap(part_text))
     if cat == 'sqsmall': return msol2.square_smaller(unwrap(part_text))
     if cat == 'persq':
         st, ok = msol2.perfect_square_test(unwrap(part_text))
         return st, (int(msol.exact_sqrt(int(unwrap(part_text).replace(',', ''))).numerator) if ok else 'No')
     if cat == 'sqrt': return msol2.sqrt_by_factors(unwrap(part_text))
-    if cat == 'square': return msol2.square_steps(unwrap(part_text).replace(',', ''))
+    if cat == 'square':
+        pt = unwrap(part_text).replace(',', '')
+        if 'frac' in pt:
+            a = msol.parse_tex(pt); v = msol.val(a)
+            return [step('given', f'({msol.tex(a)})^2'), step('square', f'\\frac{{{a[1][1]}^2}}{{{a[2][1]}^2}} = {msol.tex_num(v * v)}')], v * v
+        return msol2.square_steps(pt)
     if cat.startswith('fracop:'):
         verb = cat.split(':')[1]
         t = part_text
@@ -119,6 +158,9 @@ def build(cat, ins, part_text):
 
 
 def result_tex(res):
+    if isinstance(res, dict):
+        import sympy as _sp
+        return ', '.join(f'{k} = {_sp.latex(v)}' for k, v in res.items())
     if isinstance(res, list):
         return ', '.join(msol.tex_num(v) for v in res)
     if isinstance(res, str):
@@ -207,6 +249,10 @@ def set_leaf(ins, part, key):
     return msol_sets.op_steps(expr, envtext)
 
 
+def exk(q):
+    return f"R{q['u']}" if q['ex'] == 'Review Exercise' else q['ex']
+
+
 def run(cl):
     leaves = json.load(open(APP / 'tmp' / f'm{cl}_leaves.json', encoding='utf8'))
     out, stats, disc = {}, {}, []
@@ -240,7 +286,7 @@ def run(cl):
                 extra = []
                 if k and not ok:
                     extra = [{'en': f'Note: the printed key shows {k[:30]}; the working above gives {rt}.', 'ur': f'نوٹ: کتاب کے جوابات میں {k[:30]} دیا گیا ہے؛ اوپر کے حل سے {rt} آتا ہے۔', 'ps': f'یادښت: د کتاب په ځوابونو کې {k[:30]} راغلی؛ پورتنی حل {rt} ورکوي.'}]
-                out[f'{q["ex"]}|{q["q"]}|{no}'] = {'steps': list(stp) + extra + [step('ans', rt)], 'answer': rt, 'verified': bool(ok)}
+                out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': list(stp) + extra + [step('ans', rt)], 'answer': rt, 'verified': bool(ok)}
                 continue
             try:
                 mres = msol_misc.solve(ins, ptxt) if ptxt is not None else None
@@ -256,7 +302,7 @@ def run(cl):
                     if not ok:
                         disc.append({'ex': q['ex'], 'q': q['q'], 'part': no, 'key': k, 'computed': mans, 'cat': 'misc'}); continue
                 stats.setdefault('misc', [0, 0, 0, 0]); stats['misc'][0] += 1; stats['misc'][1 if ok else 2] += 1
-                out[f'{q["ex"]}|{q["q"]}|{no}'] = {'steps': list(stp) + [step('ans', mans)], 'answer': mans, 'verified': bool(ok)}
+                out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': list(stp) + [step('ans', mans)], 'answer': mans, 'verified': bool(ok)}
                 continue
             if re.search(r'estimate|round|reasonable', ins, re.I):
                 continue
@@ -280,7 +326,7 @@ def run(cl):
                         disc.append({'ex': q['ex'], 'q': q['q'], 'part': no, 'key': k, 'computed': msol_sets.fmt(rset), 'cat': 'sets'}); continue
                 stats.setdefault('sets', [0, 0, 0, 0]); stats['sets'][0] += 1; stats['sets'][1 if ok else 2] += 1
                 rt = msol_sets.fmt(rset)
-                out[f'{q["ex"]}|{q["q"]}|{no}'] = {'steps': list(stp) + [step('ans', rt)], 'answer': rt, 'verified': bool(ok)}
+                out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': list(stp) + [step('ans', rt)], 'answer': rt, 'verified': bool(ok)}
                 continue
             cat = category(ins if ptxt is not None else ins)
             if not cat:
@@ -293,7 +339,28 @@ def run(cl):
             except Exception as e:
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
-            if cat == 'compare':
+            k0 = q['key'] or ''
+            if cat in ('deckind', 'fracdec'):
+                if cat == 'deckind':
+                    seg = k0.split('Non-terminating')
+                    nonpart = seg[1] if len(seg) > 1 else ''
+                    termpart = seg[0].replace('Terminating', '')
+                    pat = r'(?<![A-Za-z])' + re.escape(no) + r'(?![A-Za-z])'
+                    ok = bool(re.search(pat, nonpart)) if res == 'Non-terminating' else bool(re.search(pat, termpart))
+                else:
+                    ok = (('non' in k.lower() or 'recurring' in k.lower()) == (res == 'Non-terminating'))
+            elif cat == 'absval':
+                ok = None
+            elif cat == 'subsets':
+                m_ = re.search(r'Number of subsets = (\d+)', k)
+                ok = (int(m_.group(1)) == res) if m_ else None
+            elif cat == 'simul':
+                ok = msol3.key_solution_matches(k, res) if k else None
+            elif cat in ('expo_prod', 'expo_quot', 'expo_pow'):
+                ok = None
+            elif cat in ('equiv', 'comm', 'assoc'):
+                ok = None
+            elif cat == 'compare':
                 ok = (res in k) if k else None
             elif cat == 'order':
                 kn = [float(x.replace(',', '')) for x in re.findall(r'-?\d[\d,]*\.?\d*', k.split('Descending')[0])] if k else []
@@ -310,13 +377,13 @@ def run(cl):
             rt = result_tex(res)
             steps = list(steps)
             steps.append(step('ans', rt))
-            out[f'{q["ex"]}|{q["q"]}|{no}'] = {'steps': steps, 'answer': rt, 'verified': bool(ok)}
+            out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': steps, 'answer': rt, 'verified': bool(ok)}
     dsl = load_dsl(cl)
     bykey = {}
     for q in leaves:
         km = msol2.split_key(q['key'])
         for no, _ in (q['parts'] or [['', None]]):
-            bykey[f'{q["ex"]}|{q["q"]}|{no}'] = km.get(no.lower()) if no else km.get('')
+            bykey[f'{exk(q)}|{q["q"]}|{no}'] = km.get(no.lower()) if no else km.get('')
     bad = []
     for key, (rows, note, ans, force) in dsl.items():
         try:

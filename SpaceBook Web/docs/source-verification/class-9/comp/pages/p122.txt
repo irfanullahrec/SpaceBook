@@ -2,7 +2,9 @@
 @printed 114
 @status lesson
 q 4 | Write the program in Q3 using switch-case structure. || سوال 3 والا پروگرام switch-case سے لکھیں۔ || د ۳ پوښتنې پروګرام د switch-case په مرسته ولیکئ.
+sol Model answer ## void main() { char ch; scanf("%c", &ch); switch (ch) { case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U': printf("It is a vowel"); break; default: printf("It is a consonant"); } }
 q 5 | Write the output of the following program. || درج ذیل پروگرام کا آؤٹ پٹ لکھیں۔ || د لاندې پروګرام output ولیکئ.
+sol a is equal to b / a is not greater than c ## a = b = 10 and c = 13. The condition (a == b) && (a > c) is (true) && (10 > 13 false), so it is false and the else block runs. Output on two lines: a is equal to b  and  a is not greater than c.
 m #include<stdio.h>
 m void main( )
 m {

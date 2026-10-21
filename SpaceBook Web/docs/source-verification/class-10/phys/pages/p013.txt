@@ -1,28 +1,27 @@
-@printed 116
+@printed 9
 @status lesson
-@issue Source: 10thphysics4.pdf page 3 (page number partly cut off). Example 13.3 begins at the foot of this page and continues on p014.
-eq V = \dfrac{W}{q} \qquad (13.5)
-p In equation 13.5, V (by definition) the Work that must be done against the Electric Field to bring a test charge q from infinity to a specific location. || مساوات 13.5 میں V (تعریف کی رو سے) وہ کام ہے جو کسی ٹیسٹ چارج q کو لامتناہی سے کسی مخصوص مقام تک لانے کے لیے برقی میدان کے خلاف کرنا پڑتا ہے۔ || په (۱۳.۵) معادله کې V (د تعریف له مخې) هغه کار دی چې د یوه ازمویښتي چارج q له لایتناهي څخه یوه ځانګړي ځای ته د راوړلو لپاره د برېښنايي ساحې پر خلاف ترسره کېږي.
-box note | POSITIVE AND NEGATIVE WORK DONE || مثبت اور منفی کام || مثبت او منفي کار
-p The work done $W_{AB}$ in moving charge +q from point A to point B can be positive, negative or zero, thus the potential at point B can be higher, lower or equal to potential at point A. || چارج +q کو نقطہ A سے نقطہ B تک لے جانے میں کیا گیا کام $W_{AB}$ مثبت، منفی یا صفر ہو سکتا ہے، اس لیے نقطہ B پر پوٹینشل نقطہ A کے پوٹینشل سے زیادہ، کم یا برابر ہو سکتا ہے۔ || د چارج +q له A ټکي څخه B ټکي ته د لېږدولو کار $W_{AB}$ مثبت، منفي یا صفر کېدای شي، نو په B ټکي کې پوټانشیل د A ټکي له پوټانشیل څخه لوړ، ټیټ یا برابر کېدای شي.
-svg W > 0, V_B > V_A: positive charge q with field lines pointing outwards; test charge +q moved from A to B, closer to q. || W > 0، V_B > V_A: باہر کی طرف میدانی لکیروں والا مثبت چارج q؛ ٹیسٹ چارج +q کو A سے B (q کے قریب) لایا گیا۔ || W > 0، V_B > V_A: د بهر لور ته کرښو سره مثبت چارج q؛ ازمویښتي چارج +q له A څخه B ته (q ته نږدې) راوړل شوی.
-<svg viewBox="0 0 200 130" width="200" role="img" aria-label="A positive charge q with radial field lines pointing outward; points B and A lie on the horizontal line to the right, B nearer to q; a red arrow from A to B" font-family="Arial" font-size="11">
-<g stroke="#4338ca" stroke-width="1.3"><line x1="60" y1="65" x2="60" y2="5"/><line x1="60" y1="65" x2="60" y2="125"/><line x1="60" y1="65" x2="0" y2="65"/><line x1="60" y1="65" x2="160" y2="65"/><line x1="60" y1="65" x2="20" y2="25"/><line x1="60" y1="65" x2="100" y2="25"/><line x1="60" y1="65" x2="20" y2="105"/><line x1="60" y1="65" x2="100" y2="105"/></g>
-<circle cx="60" cy="65" r="6" fill="#1d4ed8"/><text x="46" y="85">q</text>
-<line x1="125" y1="65" x2="92" y2="65" stroke="#dc2626" stroke-width="3"/><circle cx="88" cy="65" r="4" fill="#64748b"/><circle cx="125" cy="65" r="4" fill="#64748b"/>
-<text x="84" y="82">B</text><text x="121" y="82">A</text><text x="118" y="56">+q</text><text x="140" y="56">E</text><text x="120" y="20">W > 0</text><text x="120" y="36">V_B > V_A</text>
-</svg>
-endsvg
-p For example, in order for a positive test charge to be brought closer to an isolated positive charge +q. The work must be done by an external agent, the work done in this case is positive. In this case, the electric potential at point B is higher than electric potential at point A. Alternately, we can observe that $V_B > V_A$ by noting that the electric field would push a positive charge from B to A, which is always from high potential to low potential. || مثلاً کسی مثبت ٹیسٹ چارج کو ایک الگ تھلگ مثبت چارج +q کے قریب لانے کے لیے بیرونی ذریعے کو کام کرنا پڑتا ہے، اس صورت میں کیا گیا کام مثبت ہے۔ اس صورت میں نقطہ B پر برقی پوٹینشل نقطہ A سے زیادہ ہے۔ دوسری طرح ہم دیکھ سکتے ہیں کہ $V_B > V_A$ ہے کیونکہ برقی میدان مثبت چارج کو B سے A کی طرف دھکیلے گا، جو ہمیشہ زیادہ پوٹینشل سے کم پوٹینشل کی طرف ہوتا ہے۔ || د بېلګې په توګه، د یوه مثبت ازمویښتي چارج د یوازې مثبت چارج +q ته د نږدې کولو لپاره، بهرنی عامل باید کار وکړي، په دې حالت کې کار مثبت دی. په دې حالت کې په B ټکي کې برېښنايي پوټانشیل د A ټکي له پوټانشیل څخه لوړ دی. په بل ډول، لیدلای شو چې $V_B > V_A$ دی، ځکه برېښنايي ساحه مثبت چارج له B څخه A ته شړي، چې تل له لوړ پوټانشیل څخه ټیټ پوټانشیل ته وي.
-svg W < 0, V_B < V_A: negative charge −q with field lines pointing inwards; test charge +q held back as it moves from A to B. || W < 0، V_B < V_A: اندر کی طرف میدانی لکیروں والا منفی چارج −q؛ ٹیسٹ چارج +q کو A سے B جاتے ہوئے روکا گیا۔ || W < 0، V_B < V_A: د دننه لور ته کرښو سره منفي چارج −q؛ ازمویښتي چارج +q له A څخه B ته د تګ پر مهال ودرول شوی.
-<svg viewBox="0 0 200 130" width="200" role="img" aria-label="A negative charge with radial field lines pointing inward; points B and A on the horizontal line to the right, B nearer the charge; a red arrow from B towards A" font-family="Arial" font-size="11">
-<g stroke="#15803d" stroke-width="1.3"><line x1="60" y1="65" x2="60" y2="5"/><line x1="60" y1="65" x2="60" y2="125"/><line x1="60" y1="65" x2="0" y2="65"/><line x1="60" y1="65" x2="160" y2="65"/><line x1="60" y1="65" x2="20" y2="25"/><line x1="60" y1="65" x2="100" y2="25"/><line x1="60" y1="65" x2="20" y2="105"/><line x1="60" y1="65" x2="100" y2="105"/></g>
-<circle cx="60" cy="65" r="6" fill="#0f766e"/><text x="46" y="85">q</text>
-<line x1="92" y1="65" x2="122" y2="65" stroke="#dc2626" stroke-width="3"/><circle cx="88" cy="65" r="4" fill="#64748b"/><circle cx="125" cy="65" r="4" fill="#64748b"/>
-<text x="84" y="82">B</text><text x="121" y="82">A</text><text x="118" y="56">+q</text><text x="140" y="56">E</text><text x="120" y="20">W &lt; 0</text><text x="120" y="36">V_B &lt; V_A</text>
-</svg>
-endsvg
-p On the other hand, if the isolated charge is negative (−q), the positive test charge must be restrained from moving from point A to point B and the work done must be negative. In this case, the electric potential at point B is lower than electric potential at point A. Alternately, we can observe that $V_B < V_A$ by noting that the electric field would pull a positive charge from A to B, which is always from high potential (A) to low potential (B). || دوسری طرف اگر الگ تھلگ چارج منفی (−q) ہو تو مثبت ٹیسٹ چارج کو نقطہ A سے نقطہ B کی طرف حرکت کرنے سے روکنا پڑتا ہے اور کیا گیا کام منفی ہوتا ہے۔ اس صورت میں نقطہ B پر برقی پوٹینشل نقطہ A سے کم ہے۔ دوسری طرح ہم دیکھ سکتے ہیں کہ $V_B < V_A$ ہے کیونکہ برقی میدان مثبت چارج کو A سے B کی طرف کھینچے گا، جو ہمیشہ زیادہ پوٹینشل (A) سے کم پوٹینشل (B) کی طرف ہوتا ہے۔ || له بلې خوا، که یوازې چارج منفي (−q) وي، مثبت ازمویښتي چارج باید له A څخه B ته له حرکت څخه منع شي او کار منفي دی. په دې حالت کې په B ټکي کې برېښنايي پوټانشیل د A له پوټانشیل څخه ټیټ دی. په بل ډول، لیدلای شو چې $V_B < V_A$ دی، ځکه برېښنايي ساحه مثبت چارج له A څخه B ته راکاږي، چې تل له لوړ پوټانشیل (A) څخه ټیټ پوټانشیل (B) ته وي.
-endbox
-example 13.3 | WORK DONE || کیا گیا کام || ترسره شوی کار
-p How much work must be done to increase the potential of a charge $2.5\times10^{-7}$ C by 100 V? || $2.5\times10^{-7}$ C کے چارج کا پوٹینشل 100 V بڑھانے کے لیے کتنا کام کرنا پڑے گا؟ || د $2.5\times10^{-7}$ C چارج د پوټانشیل په 100 V زیاتولو لپاره څومره کار ته اړتیا ده؟
+m Putting equation 2 in equation 1 F_rest = -mg x/l   (3)
+p Since mass ‘m’, acceleration due to gravity ‘g’ and length ‘l’ are constants for simple pendulum oscillating with small angle, therefore || چونکہ چھوٹے زاویے سے ارتعاش کرنے والے سادہ پنڈولم کے لیے کمیت ‘m’، کششِ ثقل کی وجہ سے تعجیل ‘g’ اور لمبائی ‘l’ مستقل ہیں، اس لیے || څرنګه چې په کوچنۍ زاویه د اهتزاز کوونکي ساده رقاص لپاره کتله ‘m’، د جاذبې تعجیل ‘g’ او اوږدوالی ‘l’ ثابت دي، نو
+m F_res ∝ -x
+p Which is the condition for simple harmonic motion. Thus motion of simple pendulum can be approximated as is simple harmonic motion. || یہ سادہ ہارمونک حرکت کی شرط ہے۔ لہٰذا سادہ پنڈولم کی حرکت کو تقریباً سادہ ہارمونک حرکت سمجھا جا سکتا ہے۔ || دا د ساده هارمونیک حرکت شرط دی. نو د ساده رقاص حرکت تقریباً ساده هارمونیک حرکت ګڼل کېدای شي.
+m Also by Newton’s second law of motion F_rest = ma   (4)
+m Comparing equation 3 and equation 4 ma = -mg x/l
+m or a = -(g/l)x   (10.7)
+p Since g and l are constants for oscillating simple pendulum, therefore || چونکہ ارتعاش کرتے سادہ پنڈولم کے لیے g اور l مستقل ہیں، اس لیے || څرنګه چې د اهتزاز کوونکي ساده رقاص لپاره g او l ثابت دي، نو
+m a ∝ -x
+p Hence, when released the mass will move towards the equilibrium position, will cross over it due to inertia and will execute Simple Harmonic Motion (SHM). || لہٰذا چھوڑنے پر کمیت توازنی مقام کی طرف حرکت کرے گی، جمود کی وجہ سے اس سے آگے گزرے گی، اور سادہ ہارمونک حرکت (SHM) کرے گی۔ || نو کله چې کتله خوشې شي، د تعادل موقعیت ته به حرکت وکړي، د عطالت له امله به ترې واوړي او ساده هارمونیک حرکت (SHM) به ترسره کړي.
+example 10.4 | RESTORING FORCE OF SIMPLE PENDULUM || مثال 10.4: سادہ پنڈولم کی بحالی قوت || مثال 10.4: د ساده رقاص بېرته راوستونکی ځواک
+p Determine the magnitude of the restoring force for a pendulum bob of mass 100.0 g that has been pulled to an angle of 10° from the vertical. || 100.0 g کمیت کے پنڈولم کے گولے کی بحالی قوت کی مقدار معلوم کریں، جسے عمودی سمت سے 10° کے زاویے تک کھینچا گیا ہو۔ || د 100.0 g کتلې د رقاص د ګولۍ د بېرته راوستونکي ځواک اندازه معلومه کړئ، چې له عمودي لوري څخه د 10° زاویې ته راکش شوې وي.
+### GIVEN || دیا گیا || ورکړل شوي
+p mass ‘m’ = 100 g = 0.1000 kg || کمیت ‘m’ = 100 g = 0.1000 kg || کتله ‘m’ = 100 g = 0.1000 kg
+p acceleration due to gravity ‘g’ = 9.8 m/s² || کششِ ثقل کی وجہ سے تعجیل ‘g’ = 9.8 m/s² || د جاذبې تعجیل ‘g’ = 9.8 m/s²
+p angle θ = 10° || زاویہ θ = 10° || زاویه θ = 10°
+### REQUIRED || مطلوب || غوښتل شوي
+p Restoring force ‘F_res’ = ? || بحالی قوت ‘F_res’ = ؟ || بېرته راوستونکی ځواک ‘F_res’ = ؟
+p SOLUTION: The figure 10.6 shows that the restoring force F_res = mg sinθ is the component of weight that is tangential to the circular path of the pendulum. || حل: شکل 10.6 دکھاتی ہے کہ بحالی قوت F_res = mg sinθ وزن کا وہ جز ہے جو پنڈولم کے دائرہ نما راستے پر مماسی ہوتا ہے۔ || حل: شکل 10.6 ښيي چې بېرته راوستونکی ځواک F_res = mg sinθ د وزن هغه جز دی چې د رقاص د دایروي مسیر مماس وي.
+p F_rest = -mg sinθ || F_rest = -mg sinθ || F_rest = -mg sinθ
+p Putting values F_rest = -0.1000 kg × 9.8 m s⁻² sin10° || قدریں رکھنے سے F_rest = -0.1000 kg × 9.8 m s⁻² sin10° || د قیمتونو په ایښودلو سره F_rest = -0.1000 kg × 9.8 m s⁻² sin10°
+p or F_rest = -0.98 kg m s⁻² × 0.17 || یا F_rest = -0.98 kg m s⁻² × 0.17 || یا F_rest = -0.98 kg m s⁻² × 0.17
+p F_rest = -0.167 N Answer || F_rest = -0.167 N جواب || F_rest = -0.167 N ځواب
+p The magnitude of the restoring force acting on the pendulum is 0.167 N. || پنڈولم پر عمل کرنے والی بحالی قوت کی مقدار 0.167 N ہے۔ || پر رقاص د عمل کوونکي بېرته راوستونکي ځواک اندازه 0.167 N ده.
+endexample

@@ -10,9 +10,13 @@ sol a. Compilation ## Converting source code into object code is called compilat
 qp ix | A quantity whose value may change during execution of the program is called a ______. a. constant b. variable c. name d. symbol || وہ مقدار جس کی قدر پروگرام کے چلنے کے دوران بدل سکے ______ کہلاتی ہے۔ (الف) کانسٹنٹ (ب) متغیر (ج) نام (د) علامت || هغه کمیت چې ارزښت یې د پروګرام د اجرا پر مهال بدلېدای شي ______ بلل کېږي. (الف) ثابت (ب) متغیر (ج) نوم (د) نښه
 sol b. variable ## A variable is a quantity whose value may change while the program runs. || درست جواب: (ب) متغیر || سم ځواب: (ب) متغیر
 qp x | The execution of a C program starts from function. a. const() b. main() c. name() d. start() || C پروگرام کا چلنا کس فنکشن سے شروع ہوتا ہے؟ (الف) const() (ب) main() (ج) name() (د) start() || د C پروګرام اجرا له کوم فنکشن پیلېږي؟ (الف) const() (ب) main() (ج) name() (د) start()
-sol i: b; ii: c; iii: d; iv: d; v: a; vi: b; vii: a; viii: a; ix: b; x: b ## SpaceBook answers from the unit text (sections 2.1–2.4); checked against the book's answer key when it is reached. || اسپیس بک جوابات، یونٹ کے متن (حصے 2.1–2.4) کے مطابق۔ || د SpaceBook ځوابونه، د څپرکي له متن (2.1–2.4 برخې) سره سم.
+sol b ## b
 q 2 | Give short answers to the following questions. || درج ذیل سوالات کے مختصر جوابات دیں۔ || لاندې پوښتنو ته لنډ ځوابونه ورکړئ.
 qp i | Differentiate between program syntax and program semantic. || پروگرام سنٹیکس اور پروگرام سیمینٹک میں فرق کریں۔ || د پروګرام syntax او semantic ترمنځ توپیر وکړئ.
+sol Model answer ## Syntax is the set of grammar rules for writing statements of a language (a missing semicolon is a syntax error); semantics is the meaning of the statements, i.e. what the statement does (a program with correct syntax but wrong logic has a semantic error).
 qp ii | Differentiate between Low level and high level languages. || لو لیول اور ہائی لیول زبانوں میں فرق کریں۔ || د ټیټې او لوړې کچې ژبو ترمنځ توپیر وکړئ.
+sol Model answer ## Low-level languages (machine and assembly) are close to the hardware, machine dependent, fast but difficult to write and learn. High-level languages (C, Python, Java) use English-like words, are machine independent, easy to learn and write, but must be translated into machine code.
 qp iii | What is IDE? || IDE کیا ہے؟ || IDE څه دی؟
+sol Model answer ## IDE (Integrated Development Environment) is software that gives an editor, compiler, debugger and other tools in one place to write, compile, run and debug programs, e.g. Dev-C++, Code::Blocks, Visual Studio.
 qp iv | What is OOP? || OOP کیا ہے؟ || OOP څه دی؟
+sol Model answer ## OOP (Object-Oriented Programming) is a programming approach that organizes a program around objects, which combine data and the functions that work on it, using classes, encapsulation, inheritance and polymorphism (C++, Java).

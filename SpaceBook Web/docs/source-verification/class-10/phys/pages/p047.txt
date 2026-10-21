@@ -1,18 +1,15 @@
-@printed 150
+@printed 43
 @status lesson
-@issue Source: 10thphysics4.pdf page 37 (page number cut off).
-eq V = \dfrac{W}{Q} = \dfrac{E}{Q} \quad \text{or} \quad E = Q\times V \quad \text{--- (1)}
-p We can use the definition of current || ہم کرنٹ کی تعریف استعمال کر سکتے ہیں || موږ د جریان تعریف کارولای شو
-eq I = \dfrac{Q}{t} \quad \text{or} \quad Q = It \quad \text{--- (2)}
-p Putting equation 2 in equation 1, we get || مساوات 2 کو مساوات 1 میں رکھنے سے || (۲) معادله په (۱) کې ږدو نو
-eq E = It\times V \qquad (14.9)
-p Equation 14.9 gives the equation for electrical energy consumed in a device. Also by Ohm's law V = IR, therefore, the electrical energy E from equation 14.9 can also be written as || مساوات 14.9 کسی آلے میں استعمال ہونے والی برقی توانائی کی مساوات دیتی ہے۔ نیز اوہم کے قانون کے مطابق V = IR، اس لیے مساوات 14.9 سے برقی توانائی E کو یوں بھی لکھا جا سکتا ہے || (۱۴.۹) معادله په یوه وسیله کې د مصرف شوې برېښنايي انرژۍ معادله ورکوي. همداراز د اوم د قانون له مخې V = IR، نو له (۱۴.۹) معادلې برېښنايي انرژي E داسې هم لیکل کېږي
-eq E = It\times IR \quad \text{or} \quad E = I^2Rt \qquad (14.10)
-p Also by Ohm's law I = V/R, therefore, electrical energy from equation 14.9 can also be written as || نیز اوہم کے قانون کے مطابق I = V/R، اس لیے مساوات 14.9 سے برقی توانائی کو یوں بھی لکھا جا سکتا ہے || همداراز د اوم د قانون له مخې I = V/R، نو له (۱۴.۹) معادلې برېښنايي انرژي داسې هم لیکل کېږي
-eq E = \dfrac{V}{R}t\times V \quad \text{or} \quad E = \dfrac{V^2}{R}t \qquad (14.11)
-p All the three equations 14.9, 14.10 and 14.11 are equally valid for calculation of electric energy. || برقی توانائی کے حساب کے لیے تینوں مساواتیں 14.9، 14.10 اور 14.11 یکساں طور پر درست ہیں۔ || د برېښنايي انرژۍ د محاسبې لپاره درې واړه (۱۴.۹)، (۱۴.۱۰) او (۱۴.۱۱) معادلې یو شان سمې دي.
-example 14.6 | ELECTRIC KETTLE || برقی کیتلی || برېښنايي چاینکه
-p If a current of 10.0 A takes 5 minutes to boil a kettle of water requiring $3.6\times10^{5}$ J of energy, what is the potential difference (in voltage) across the kettle? || اگر 10.0 A کرنٹ کیتلی کا پانی ابالنے میں 5 منٹ لگائے جس کے لیے $3.6\times10^{5}$ J توانائی درکار ہے، تو کیتلی پر پوٹینشل ڈفرنس (وولٹیج) کیا ہے؟ || که 10.0 A جریان د چاینکې اوبه په 5 دقیقو کې وخوټوي چې $3.6\times10^{5}$ J انرژۍ ته اړتیا لري، د چاینکې پر سر د پوټانشیل توپیر (ولټیج) څومره دی؟
-p **GIVEN:** Energy E = $3.6\times10^{5}$ J; Time t = 5.0 min = 300 s = $3.0\times10^{2}$ s; Current I = 10.0 A. **REQUIRED:** Voltage V = ? || **معلوم:** توانائی E = $3.6\times10^{5}$ J؛ وقت t = 5.0 min = 300 s = $3.0\times10^{2}$ s؛ کرنٹ I = 10.0 A۔ **مطلوب:** وولٹیج V = ? || **ورکړل شوي:** انرژي E = $3.6\times10^{5}$ J؛ وخت t = 5.0 min = 300 s = $3.0\times10^{2}$ s؛ جریان I = 10.0 A. **غوښتل شوي:** ولټیج V = ?
-eq \text{SOLUTION: The electric energy is}\quad E = It\times V \quad \text{or} \quad V = \dfrac{E}{It}
-eq \text{Putting values}\quad V = \dfrac{3.6\times10^{5}\ \text{J}}{10.0\ \text{A}\times3.0\times10^{2}\ \text{s}} \quad \text{or} \quad V = \dfrac{3.6\times10^{5}\ \text{J}}{10.0\ \tfrac{\text{C}}{\text{s}}\times3.0\times10^{2}\ \text{s}}
+@sec 11.6 | Acoustics
+# 11.6 ACOUSTICS
+p Acoustics is the study of waves, vibrations and sound. Echoes are easily observed in a large, empty room, but when rugs and furniture are put in the room, the acoustics change; because such materials absorbs the sound more than they reflect. If the reflective surfaces are too absorbent, the sound level will be low and the room will sound dull and lifeless.
+p Reflection of sound in a room makes it sound lively and full. The acoustics of a room depend on the shape of the room, the contents of the room, and the composition of the walls, ceiling, and floor. The designer of an auditorium, must find a balance between reverberation and absorption. It is often advantageous to place highly reflective surfaces behind the stage to direct sound out to an audience.
+p Architectural acoustics is about achieving a good quality of speech in a theater, or recording studio, or suppressing noise to make offices and homes more comfortable and peaceful places to work and live. Flat surfaces reflects, parabolic surfaces focuses, porous surfaces absorbs while jagged surfaces disperses the sound as shown in figure 11.6.
+svg FIGURE 11.6 - Acoustics
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="260" role="img" aria-label="Acoustics: flat, parabolic, jagged and porous surfaces of a room"><rect x="10" y="10" width="220" height="180" fill="#fff" stroke="#334155"/><rect x="10" y="10" width="220" height="14" fill="#ef4444"/><rect x="10" y="176" width="220" height="14" fill="#94a3b8"/><path d="M10 24 Q50 100 10 176 Z" fill="#6d28d9"/><path d="M230 24 l8 15 -8 15 8 15 -8 15 8 15 -8 15 8 15 -8 15 Z" fill="#fde047" stroke="#334155"/><text x="120" y="48" text-anchor="middle" font-size="14" font-family="Arial">Flat</text><text x="60" y="104" font-size="14" font-family="Arial">Parabolic</text><text x="200" y="104" text-anchor="end" font-size="14" font-family="Arial">Jagged</text><text x="120" y="165" text-anchor="middle" font-size="14" font-family="Arial">Porous</text></svg>
+endsvg
+p It is often advantageous to place highly reflective surfaces behind the stage to direct sound out to an audience. Reflecting surfaces are suspended above the stage in some theaters.
+box info | Point to Ponder
+p A good acoustic design will provide a better and comfortable environment in the mosque in term of sound audibility and speech intelligibility. Unfortunately, architects nowadays often focus more on designing a building based on its looks or form, and the main function of space most often neglected. To ensure good listening conditions acoustical needs must be considered in the design phase of the mosque.
+endbox
+@deco Photograph of the carved wooden mihrab and minbar of a mosque

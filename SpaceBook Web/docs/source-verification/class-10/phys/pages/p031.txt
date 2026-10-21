@@ -1,34 +1,15 @@
-@printed 134
+@printed 27
 @status lesson
-@issue Source: 10thphysics4.pdf page 21. A previous owner has written "small amount called Delta" in ink beside equation 14.1; it is not part of the printed book.
-## Contents || فہرست || منځپانګه
-- 14.1 Electric current || 14.1 برقی کرنٹ || ۱۴.۱ برېښنايي جریان
-- 14.2 Potential difference and emf || 14.2 پوٹینشل ڈفرنس اور emf || ۱۴.۲ د پوټانشیل توپیر او emf
-- 14.3 Ohm's law || 14.3 اوہم کا قانون || ۱۴.۳ د اوم قانون
-- 14.4 Resistance, series and parallel combinations || 14.4 مزاحمت، سلسلہ وار اور متوازی ملاپ || ۱۴.۴ مقاومت، لړۍ ییز او موازي ترکیبونه
-- 14.5 The I-V characteristics for ohmic and non ohmic conductors || 14.5 اوہمک اور غیر اوہمک موصلوں کی I-V خصوصیات || ۱۴.۵ د اومیک او غیر اومیک هادیو I-V ځانګړنې
-- 14.6 Electrical power and Joule's law || 14.6 برقی طاقت اور جول کا قانون || ۱۴.۶ برېښنايي توان او د ژول قانون
-- 14.7 Use of circuit components || 14.7 سرکٹ کے اجزا کا استعمال || ۱۴.۷ د سرکټ د اجزاوو کارونه
-- 14.8 Electric measuring instruments || 14.8 برقی پیمائشی آلات || ۱۴.۸ برېښنايي اندازه کوونکې وسیلې
-- 14.9 Direct and Alternating current || 14.9 ڈائریکٹ اور آلٹرنیٹنگ کرنٹ || ۱۴.۹ مستقیم او متناوب جریان
-- 14.10 House Circuits || 14.10 گھریلو سرکٹ || ۱۴.۱۰ کورني سرکټونه
-- 14.11 Electrical safety || 14.11 برقی حفاظت || ۱۴.۱۱ برېښنايي خوندیتوب
-- 14.12 Dangers of electricity || 14.12 بجلی کے خطرات || ۱۴.۱۲ د برېښنا خطرونه
-- Key Points and Projects || اہم نکات اور پراجیکٹس || مهم ټکي او پروژې
-- Exercise || مشق || تمرین
-p The previous chapter was concerned with static charges, current electricity deals with charges in motion. Making charges move has many advantages for example it helps us light our homes, entertain ourselves with the television and even inside the human body it carries signals to and from our brain as nerve impulses. We have harnessed electricity to improve our quality of living and understand the life within us. This unit introduces the basic concepts of electricity and will make us aware of our household electricity and safety considerations. || پچھلا باب ساکن چارجز سے متعلق تھا، جبکہ رواں برق حرکت کرتے چارجز سے متعلق ہے۔ چارجز کو حرکت دینے کے بہت سے فائدے ہیں؛ مثلاً یہ ہمارے گھروں کو روشن کرنے، ٹیلی ویژن سے تفریح میں مدد دیتی ہے اور انسانی جسم کے اندر بھی اعصابی تحریکوں کی صورت میں دماغ تک اور دماغ سے پیغامات لے جاتی ہے۔ ہم نے اپنے معیارِ زندگی کو بہتر بنانے اور اپنے اندر کی زندگی کو سمجھنے کے لیے بجلی سے کام لیا ہے۔ یہ یونٹ بجلی کے بنیادی تصورات متعارف کراتا ہے اور ہمیں گھریلو بجلی اور حفاظتی امور سے آگاہ کرے گا۔ || تېر څپرکی د ساکنو چارجونو په اړه و، جاري برېښنا د خوځېدونکو چارجونو سره سروکار لري. د چارجونو خوځول ډېرې ګټې لري؛ د بېلګې په توګه زموږ کورونه روښانه کوي، په ټلویزیون ساتېري کوو او حتی د انسان په بدن کې د عصبي سیګنالونو په بڼه دماغ ته او له دماغه پیغامونه وړي. موږ برېښنا د خپل ژوند د کیفیت د ښه کولو او په خپل دننه د ژوند د پوهېدو لپاره کارولې. دا څپرکی د برېښنا بنسټیز مفاهیم معرفي کوي او موږ به د کورنۍ برېښنا او خوندیتوب له ملاحظاتو خبر کړي.
-@sec 14-1 | 14.1 Electric current || 14.1 برقی کرنٹ || ۱۴.۱ برېښنايي جریان
-## 14.1 ELECTRIC CURRENT || 14.1 برقی کرنٹ || ۱۴.۱ برېښنايي جریان
-p *'Time rate of flow of charge is called current'.* || *'چارج کے بہاؤ کی وقتی شرح کو کرنٹ کہتے ہیں'۔* || *'د چارج د بهېدو وختي کچې ته جریان ویل کېږي'.*
-p A charge 'ΔQ' flowing through any cross-sectional area in time 'Δt', corresponds to a current I that is defined mathematically as || کسی بھی تراشی رقبے میں سے وقت 'Δt' میں بہنے والا چارج 'ΔQ' ایک کرنٹ I کے مطابق ہے جس کی ریاضیاتی تعریف یہ ہے || هر مقطعي مساحت څخه په 'Δt' وخت کې بهېدونکی چارج 'ΔQ' له یوه جریان I سره سمون لري چې ریاضي تعریف یې دا دی
-eq I = \dfrac{\Delta Q}{\Delta t} \qquad (14.1)
-svg FIGURE 14.1 – Electric current: the time rate at which charge flows through the area A is defined as the current I. || شکل 14.1 – برقی کرنٹ: رقبہ A میں سے چارج کے بہاؤ کی وقتی شرح کو کرنٹ I کہتے ہیں۔ || ۱۴.۱ شکل – برېښنايي جریان: له A مساحت څخه د چارج د بهېدو وختي کچه جریان I بلل کېږي.
-<svg viewBox="0 0 220 130" width="220" role="img" aria-label="Positive charges move from left to right through an oval cross-section labelled A; an arrow I below points right" font-family="Arial" font-size="11">
-<defs><marker id="a141" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="#111"/></marker></defs>
-<ellipse cx="110" cy="55" rx="22" ry="48" fill="#a855f7" opacity="0.7"/><text x="104" y="95">A</text>
-<g fill="#334155"><circle cx="40" cy="35" r="8"/><circle cx="40" cy="75" r="8"/><circle cx="175" cy="25" r="8"/><circle cx="185" cy="55" r="8"/><circle cx="175" cy="85" r="8"/></g>
-<g fill="#fff" font-size="10"><text x="36" y="39">+</text><text x="36" y="79">+</text><text x="171" y="29">+</text><text x="181" y="59">+</text><text x="171" y="89">+</text></g>
-<g stroke="#111" stroke-width="1.5"><line x1="52" y1="35" x2="95" y2="35" marker-end="url(#a141)"/><line x1="52" y1="75" x2="95" y2="75" marker-end="url(#a141)"/><line x1="135" y1="40" x2="172" y2="40" marker-end="url(#a141)"/><line x1="135" y1="70" x2="172" y2="70" marker-end="url(#a141)"/>
-<line x1="70" y1="118" x2="160" y2="118" marker-end="url(#a141)"/></g><text x="108" y="112">I</text>
-</svg>
-endsvg
+@unit 11 | Sound || آواز || غږ
+@sec 11-opening | Student Learning Outcomes || طلبہ کے حاصلاتِ تعلم || د زده کوونکو د زده کړې پایلې
+# Unit 11: Sound
+slo Explain that sound is produced by vibrating bodies and requires a material medium.
+slo Describe the longitudinal nature of sound waves in terms of compressions and rarefactions.
+slo Define loudness, pitch, quality (timbre) and intensity of sound.
+slo Explain the factors affecting loudness (amplitude, surface area, distance).
+slo Describe sound intensity level and use the decibel scale.
+slo Explain the reflection of sound (echo) and calculate speed/distance using echo method.
+slo Define audible frequency range and describe applications of ultrasound in medicine and industry.
+@sec 11.1 | Production and Propagation of Sound Waves
+# 11.1 Production and Propagation of Sound Waves
+### CONTENTS || فہرست || منځپانګه

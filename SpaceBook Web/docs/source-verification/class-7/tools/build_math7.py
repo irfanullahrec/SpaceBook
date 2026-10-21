@@ -388,7 +388,8 @@ def main():
             for owner in ([x] if x.get('t') == 'q' else []) + (x.get('parts') or []):
                 if not owner.get('sol') and x.get('t') == 'q':
                     no = owner.get('no') if owner is not x else ''
-                    key = f"{ex}|{x.get('no')}|{no or ''}"
+                    exid = f'R{path}' if ex == 'Review Exercise' else ex
+                    key = f"{exid}|{x.get('no')}|{no or ''}"
                     if key in gen and not (owner is x and x.get('parts')):
                         g = gen[key]
                         owner['sol'] = {'steps': g['steps'], 'answer': g['answer']}

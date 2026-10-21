@@ -1,23 +1,21 @@
-@printed 190
+@printed 83
 @status lesson
-@issue Source: 10thphysics5.pdf page 37. Figure 15.14 is redrawn.
-@issue The book writes "two coils are wounded"; kept as printed.
-p The winding to which power is supplied is called the primary; the winding from which power is drawn is called the secondary. || جس وائنڈنگ کو بجلی دی جاتی ہے وہ پرائمری کہلاتی ہے؛ جس وائنڈنگ سے بجلی لی جاتی ہے وہ سیکنڈری کہلاتی ہے۔ || هغه وایندینګ چې برېښنا ورکول کېږي لومړنی بلل کېږي؛ هغه وایندینګ چې برېښنا ترې اخیستل کېږي دوهمی بلل کېږي.
-svg Figure 15.14 – Step-up and step-down transformers. Both have an AC supply Vₚ joined to the primary coil (Nₚ turns) and a secondary coil (Nₛ turns) giving Vₛ, wound on a square iron core. (a) Step-up: the secondary has more turns than the primary. (b) Step-down: the secondary has fewer turns than the primary. || شکل 15.14 – سٹیپ اپ اور سٹیپ ڈاؤن ٹرانسفارمر۔ دونوں میں اے سی سپلائی Vₚ پرائمری کوائل (Nₚ لپیٹے) سے جڑی ہے اور سیکنڈری کوائل (Nₛ لپیٹے) Vₛ دیتا ہے، دونوں مربع لوہے کے مرکزے پر لپٹے ہیں۔ (a) سٹیپ اپ: سیکنڈری کے لپیٹے پرائمری سے زیادہ۔ (b) سٹیپ ڈاؤن: سیکنڈری کے لپیٹے پرائمری سے کم۔ || ۱۵.۱۴ شکل – لوړوونکی او ټیټوونکی ټرانسفارمرونه. په دواړو کې AC رسونه Vₚ له لومړني کویل (Nₚ کړۍ) سره نښلي او دوهمی کویل (Nₛ کړۍ) Vₛ ورکوي، دواړه پر مربع اوسپنیزه هسته تاو دي. (a) لوړوونکی: دوهمی تر لومړني ډېرې کړۍ لري. (b) ټیټوونکی: دوهمی تر لومړني لږې کړۍ لري.
-<svg viewBox="0 0 320 120" width="320" role="img" aria-label="Two transformers. Each: a yellow AC source circle with a switch joined to a coil on the left limb of a square grey iron core, a coil on the right limb joined to two output terminals Vs. a: few turns left, many turns right. b: many turns left, few turns right" font-family="Arial" font-size="9">
-<g><circle cx="15" cy="55" r="10" fill="#facc15" stroke="#111"/><text x="9" y="59">∿</text><path d="M15 45 V30 H45 M15 65 V85 H45" fill="none" stroke="#111"/><text x="25" y="60">Vₚ</text>
-<path d="M45 20 H120 V95 H45 Z M60 35 V80 H105 V35 Z" fill="#9ca3af" fill-rule="evenodd" stroke="#111"/>
-<g stroke="#111"><path d="M42 40 h8 M42 50 h8 M42 60 h8 M42 70 h8"/><path d="M102 30 h20 M102 36 h20 M102 42 h20 M102 48 h20 M102 54 h20 M102 60 h20 M102 66 h20 M102 72 h20 M102 78 h20 M102 84 h20"/></g>
-<path d="M122 30 H145 M122 84 H145" stroke="#111"/><circle cx="145" cy="30" r="2"/><circle cx="145" cy="84" r="2"/><text x="132" y="60">Vₛ</text><text x="63" y="50">Nₚ</text><text x="85" y="50">Nₛ</text><text x="62" y="108">Iron Core</text><text x="25" y="118">(a) Step-up transformer</text></g>
-<g transform="translate(165 0)"><circle cx="15" cy="55" r="10" fill="#facc15" stroke="#111"/><text x="9" y="59">∿</text><path d="M15 45 V30 H45 M15 65 V85 H45" fill="none" stroke="#111"/><text x="25" y="60">Vₚ</text>
-<path d="M45 20 H120 V95 H45 Z M60 35 V80 H105 V35 Z" fill="#9ca3af" fill-rule="evenodd" stroke="#111"/>
-<g stroke="#111"><path d="M42 30 h20 M42 36 h20 M42 42 h20 M42 48 h20 M42 54 h20 M42 60 h20 M42 66 h20 M42 72 h20 M42 78 h20 M42 84 h20"/><path d="M110 40 h8 M110 50 h8 M110 60 h8 M110 70 h8"/></g>
-<path d="M120 30 H145 M120 84 H145" stroke="#111"/><circle cx="145" cy="30" r="2"/><circle cx="145" cy="84" r="2"/><text x="132" y="60">Vₛ</text><text x="65" y="50">Nₚ</text><text x="85" y="50">Nₛ</text><text x="20" y="118">(b) Step-down transformer</text></g>
-</svg>
-endsvg
-p Figure 15.14 shows a drawing of a transformer. The transformer consists of an iron core on which two coils are wounded: a primary coil with $N_p$ turns and a secondary coil with $N_s$ turns. If the voltage in the secondary is $V_s$ and voltage in primary is $V_p$ then || شکل 15.14 میں ٹرانسفارمر کا خاکہ ہے۔ ٹرانسفارمر لوہے کے مرکزے پر مشتمل ہے جس پر دو کوائل لپٹے ہیں: $N_p$ لپیٹوں والا پرائمری کوائل اور $N_s$ لپیٹوں والا سیکنڈری کوائل۔ اگر سیکنڈری میں وولٹیج $V_s$ اور پرائمری میں $V_p$ ہو تو || ۱۵.۱۴ شکل د ټرانسفارمر انځور ښيي. ټرانسفارمر د اوسپنې هسته لري چې پرې دوه کویلونه تاو شوي: لومړنی کویل د $N_p$ کړیو سره او دوهمی کویل د $N_s$ کړیو سره. که په دوهمي کې ولټېج $V_s$ او په لومړني کې $V_p$ وي، نو
-eq \frac{V_s}{V_p} = \frac{N_s}{N_p} \qquad (15.4)
-p According to the equation 15.4, if $N_s$ is greater than $N_p$ ($N_s > N_p$), the secondary (output) voltage is greater than the primary (input) voltage ($V_s > V_p$). In this case we have a **step-up** transformer. On the other hand, if $N_s$ is less than $N_p$ ($N_s < N_p$), the secondary voltage is less than the primary voltage ($V_s < V_p$), and we have a **step-down** transformer. The ratio $N_s / N_p$ is referred to as the **turns ratio** of the transformer. || مساوات 15.4 کے مطابق اگر $N_s$، $N_p$ سے زیادہ ہو ($N_s > N_p$) تو سیکنڈری (آؤٹ پٹ) وولٹیج پرائمری (ان پٹ) وولٹیج سے زیادہ ہوتا ہے ($V_s > V_p$)۔ اس صورت میں **سٹیپ اپ** ٹرانسفارمر ہے۔ دوسری طرف اگر $N_s$، $N_p$ سے کم ہو ($N_s < N_p$) تو سیکنڈری وولٹیج پرائمری سے کم ہوتا ہے ($V_s < V_p$) اور یہ **سٹیپ ڈاؤن** ٹرانسفارمر ہے۔ نسبت $N_s / N_p$ ٹرانسفارمر کی **لپیٹوں کی نسبت** کہلاتی ہے۔ || د ۱۵.۴ معادلې له مخې، که $N_s$ له $N_p$ لوی وي ($N_s > N_p$)، دوهمی (وتنه) ولټېج له لومړني (ننوتنې) ولټېج لوی وي ($V_s > V_p$). په دې حالت کې **لوړوونکی** ټرانسفارمر لرو. له بلې خوا که $N_s$ له $N_p$ کم وي ($N_s < N_p$)، دوهمی ولټېج له لومړني کم وي ($V_s < V_p$) او **ټیټوونکی** ټرانسفارمر لرو. نسبت $N_s / N_p$ د ټرانسفارمر **د کړیو نسبت** بلل کېږي.
-example 15.3 | X-RAY UNIT || ایکس رے یونٹ || د اېکسرې واحد
-p A portable x-ray unit has a step-up transformer, the 220 V input of which is transformed to the 100 kV output needed by the x-ray tube. The primary has 50 loops, what is the number of loops in the secondary? || ایک قابلِ حمل ایکس رے یونٹ میں سٹیپ اپ ٹرانسفارمر ہے جس کا 220 V ان پٹ ایکس رے ٹیوب کے لیے درکار 100 kV آؤٹ پٹ میں بدلا جاتا ہے۔ پرائمری میں 50 لوپ ہیں، سیکنڈری میں کتنے لوپ ہیں؟ || یو لېږدېدونکی اېکسرې واحد لوړوونکی ټرانسفارمر لري چې 220 V ننوتنه یې د اېکسرې ټیوب لپاره اړینې 100 kV وتنې ته اړوي. لومړنی 50 حلقې لري، په دوهمي کې څو حلقې دي؟
-p **GIVEN:** Primary voltage $V_p = 220$ V; Secondary voltage $V_s = 100$ kV $= 10^5$ V; Number of turns in the primary $N_p = 50$. **REQUIRED:** Number of turns in the secondary $N_s = ?$ || **معلوم:** پرائمری وولٹیج $V_p = 220$ V؛ سیکنڈری وولٹیج $V_s = 100$ kV $= 10^5$ V؛ پرائمری میں لپیٹوں کی تعداد $N_p = 50$۔ **مطلوب:** سیکنڈری میں لپیٹوں کی تعداد $N_s = ?$ || **ورکړل شوي:** لومړنی ولټېج $V_p = 220$ V؛ دوهمی ولټېج $V_s = 100$ kV $= 10^5$ V؛ په لومړني کې د کړیو شمېر $N_p = 50$. **غوښتل شوی:** په دوهمي کې د کړیو شمېر $N_s = ?$
+## a. Object distance:
+- dₒ is positive for real objects (from which light diverges).
+## b. Image distance:
+- dᵢ is positive for real images (images on the opposite side of the lens from the object).
+- dᵢ is negative for virtual images (images on the same side of the lens as the object).
+## c. Image attitude:
+- hᵢ is positive for images that are upright, compared to the object
+- hᵢ is negative for images that are inverted, compared to the object
+## d. Focal length:
+- f is positive for converging (convex) lenses.
+- f is negative for diverging (concave) lenses.
+## 12.8.2 Power of lens:
+p The degree of convergence or divergence of light rays falling on lens is called power of lens. Instrument makers often quote the power of a lens rather than its focal length. The power of a lens in diopters D is given by the equation
+m D = 1 / f   (12.11)
+p where f is the focal length of the lens expressed in metres. Eyeglass lenses are typically characterized in terms of diopters. The power of a lens in diopters should not be confused with the familiar concept of power in watts. It is an unfortunate fact that the word "power" is used for two completely different concepts. If you examine a prescription for eyeglasses, you will note lens powers given in diopters. If you examine the label on a motor, you will note energy consumption rate given as a power in watts.
+box check | LAB WORK
+p To determine the critical angle of glass using a semi circular slab and a light ray box/or by prism.
+p To find the focal length of a convex lens by parallax method.
+endbox

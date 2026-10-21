@@ -1,35 +1,24 @@
-@printed 177
+@printed 71
 @status lesson
-@issue Source: 10thphysics5.pdf page 24. The right-hand rule III hand drawing and the Fleming's left-hand rule drawings (magnet with wire; left hand) are redrawn.
-box rule | RIGHT-HAND RULE III || دائیں ہاتھ کا قاعدہ III || د ښي لاس قاعده III
-p **Right-hand rule for the force on a current carrying conductor:** Outstretch the fingers of right hand in the direction of current then bend the fingers in the direction of magnetic field (through the shorter angle between them) then the extended thumb will give the direction of force on the current carrying wire. This rule is for direction of conventional current or flow of positive charges. For electronic current flow, the same rule is applied but with left hand. || **کرنٹ بردار موصل پر قوت کے لیے دائیں ہاتھ کا قاعدہ:** دائیں ہاتھ کی انگلیاں کرنٹ کی سمت میں پھیلائیں، پھر انہیں مقناطیسی میدان کی سمت میں (دونوں کے درمیان چھوٹے زاویے سے) موڑیں؛ تو پھیلا ہوا انگوٹھا کرنٹ بردار تار پر قوت کی سمت بتائے گا۔ یہ قاعدہ روایتی کرنٹ یعنی مثبت چارجز کے بہاؤ کی سمت کے لیے ہے۔ الیکٹرانی کرنٹ کے لیے یہی قاعدہ بائیں ہاتھ سے لاگو ہوتا ہے۔ || **پر جریان لرونکي هادي د ځواک لپاره د ښي لاس قاعده:** د ښي لاس ګوتې د جریان په لوري وغځوئ، بیا یې د مقناطیسي ساحې په لوري (د دواړو ترمنځ د کوچنۍ زاویې له لارې) کږې کړئ؛ غځېدلې بټه ګوته به پر جریان لرونکي سیم د ځواک لوری وښيي. دا قاعده د دودیز جریان یعنې د مثبتو چارجونو د بهېدو لپاره ده. د الکتروني جریان لپاره همدا قاعده په چپ لاس پلي کېږي.
-svg Right-hand rule (III) for the force on a current carrying conductor: point the fingers in the direction of current (IL) and curl them towards B; the magnetic force F is in the direction of the thumb. || کرنٹ بردار موصل پر قوت کے لیے دائیں ہاتھ کا قاعدہ (III): انگلیاں کرنٹ (IL) کی سمت میں رکھ کر B کی طرف موڑیں؛ مقناطیسی قوت F انگوٹھے کی سمت میں ہے۔ || پر جریان لرونکي هادي د ځواک لپاره د ښي لاس قاعده (III): ګوتې د جریان (IL) په لوري ونیسئ او B ته یې کږې کړئ؛ مقناطیسي ځواک F د بټې ګوتې په لوري دی.
-<svg viewBox="0 0 260 130" width="260" role="img" aria-label="A right hand, fingers curled, thumb up. A red arrow F points up from the thumb; a green arrow IL points left from the fingers; a blue arrow B points down-left" font-family="Arial" font-size="10">
-<defs><marker id="h177" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#111"/></marker></defs>
-<path d="M150 60 Q150 45 160 45 L160 25 Q168 20 172 28 L172 55 L195 55 Q205 70 195 95 L155 95 Q145 80 150 60 Z" fill="#fcd9a8" stroke="#a16207"/>
-<line x1="166" y1="22" x2="166" y2="2" stroke="#dc2626" stroke-width="3" marker-end="url(#h177)"/><text x="174" y="12">F</text>
-<line x1="145" y1="70" x2="110" y2="70" stroke="#15803d" stroke-width="3" marker-end="url(#h177)"/><text x="115" y="62">IL</text>
-<line x1="160" y1="100" x2="140" y2="125" stroke="#1d4ed8" stroke-width="3" marker-end="url(#h177)"/><text x="150" y="125">B</text>
-<text x="5" y="20">Magnetic force is in</text><text x="5" y="31">the direction of thumb</text><text x="5" y="90">Point fingers in the direction</text><text x="5" y="101">of current and curl them</text><text x="5" y="112">towards B</text>
-</svg>
+p Here n₁ and n₂ are the indices of refraction for medium 1 and 2, and θ₁ and θ₂ are the angles between the rays and the perpendicular in medium 1 and 2, as shown in Figure 12.16.
+svg Figure 12.16 - Snell’s Law || شکل 12.16 - قانونِ اسنیل || 12.16 شکل - د سنېل قانون
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" role="img" aria-labelledby="phys10-snell-law"><title id="phys10-snell-law">Incident and refracted rays with angles measured from the normal</title><rect width="340" height="220" fill="white" stroke="#4338ca" stroke-width="2"/><path d="M15 110H325" stroke="#64748b" stroke-width="4"/><rect y="112" width="340" height="108" fill="#dbeafe"/><path d="M170 25V195M70 35L170 110L220 195" fill="none" stroke="#111827" stroke-width="3"/><path d="M145 80A35 35 0 0 1 170 75M170 145A35 35 0 0 0 190 141" fill="none" stroke="#dc2626" stroke-width="2"/><g font-family="Arial" font-size="15"><text x="175" y="35">Normal</text><text x="95" y="80">θ₁</text><text x="185" y="160">θ₂</text><text x="20" y="100">n₁</text><text x="20" y="145">n₂</text></g></svg>
 endsvg
+example 12.3 | SPEED OF LIGHT IN WATER
+p What is the speed of light in water having index of refraction as 1.33?
+### GIVEN
+p Speed of light in vacuum 'c' = 3.00 × 10⁸ m/s. Index of refraction for water 'n' = 1.33
+### REQUIRED
+p Speed of light in water 'v' = ?
+### SOLUTION
+p The index of refraction is  n = c / v  or  v = c / n
+p Putting values
+m v = (3.00 × 10⁸ m/s) / 1.33
+p Therefore v = 2.26 × 10⁸ m/s   [Answer]
+p Therefore the speed of light in water is 2.26 × 10⁸ m/s
+endexample
+box check | ASSIGNMENT 12.3: INDEX OF REFRACTION FOR KEROSENE OIL
+p If the speed of light in kerosene oil is 2.08 × 10⁸ m/s, calculate the index of refraction.
 endbox
-box rule | Fleming's Left hand rule || فلیمنگ کا بائیں ہاتھ کا قاعدہ || د فلېمنګ د چپ لاس قاعده
-p Fleming's left hand rule can also be used to represent the direction of force. The thumb and the first two fingers of the left hand are set at right angles to each other. With the first finger pointing in the direction of the field, the second finger pointing in the direction of current, the thumb will give the direction of force. || فلیمنگ کا بائیں ہاتھ کا قاعدہ بھی قوت کی سمت ظاہر کرنے کے لیے استعمال ہو سکتا ہے۔ بائیں ہاتھ کا انگوٹھا اور پہلی دو انگلیاں ایک دوسرے سے قائمہ زاویوں پر رکھی جاتی ہیں۔ پہلی انگلی میدان کی سمت اور دوسری انگلی کرنٹ کی سمت میں ہو تو انگوٹھا قوت کی سمت بتائے گا۔ || د فلېمنګ د چپ لاس قاعده هم د ځواک د لوري د ښودلو لپاره کارېدای شي. د چپ لاس بټه ګوته او لومړۍ دوه ګوتې یو بل ته په قایمه زاویو نیول کېږي. کله چې لومړۍ ګوته د ساحې په لوري او دوهمه ګوته د جریان په لوري وي، بټه ګوته د ځواک لوری ښيي.
-svg Fleming's left hand rule: between the N and S poles the field B runs from N to S, the current I runs along the wire towards the viewer, and the force F on the wire is upward; on the left hand the first finger points along B, the second finger along I and the thumb along F. || فلیمنگ کا بائیں ہاتھ کا قاعدہ: N اور S قطبین کے درمیان میدان B، N سے S کی طرف، کرنٹ I تار کے ساتھ دیکھنے والے کی طرف اور تار پر قوت F اوپر کی طرف ہے؛ بائیں ہاتھ کی پہلی انگلی B، دوسری انگلی I اور انگوٹھا F کی سمت میں ہے۔ || د فلېمنګ د چپ لاس قاعده: د N او S قطبونو ترمنځ ساحه B له N څخه S ته، جریان I د سیم په اوږدو کتونکي ته، او پر سیم ځواک F پورته دی؛ د چپ لاس لومړۍ ګوته د B، دوهمه ګوته د I او بټه ګوته د F په لوري ده.
-<svg viewBox="0 0 320 130" width="320" role="img" aria-label="Left: blue N block and green S block with arrows between them from N to S, a red wire diagonally between with current arrow down-left and a brown force arrow up. Right: a left hand with thumb up labelled Force F, first finger pointing right labelled Magnetic Field B, second finger pointing down-left labelled Current I" font-family="Arial" font-size="10">
-<defs><marker id="l177" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#111"/></marker></defs>
-<rect x="20" y="45" width="35" height="55" fill="#1d4ed8"/><text x="32" y="78" fill="#fff">N</text><rect x="95" y="60" width="35" height="50" fill="#15803d"/><text x="108" y="90" fill="#fff">S</text>
-<g stroke="#4338ca" marker-end="url(#l177)"><line x1="55" y1="65" x2="93" y2="72"/><line x1="55" y1="78" x2="93" y2="85"/><line x1="55" y1="90" x2="93" y2="97"/></g>
-<line x1="35" y1="125" x2="120" y2="25" stroke="#dc2626" stroke-width="1.5"/><line x1="50" y1="108" x2="35" y2="125" stroke="#dc2626" stroke-width="2" marker-end="url(#l177)"/><text x="55" y="125">Current I</text>
-<line x1="75" y1="80" x2="75" y2="30" stroke="#7c2d12" stroke-width="3" marker-end="url(#l177)"/><text x="50" y="22">Force F</text><text x="100" y="20">Magnetic Field B</text>
-<path d="M200 90 Q195 70 215 65 L230 60 L232 25 Q238 20 242 26 L245 62 L285 75 Q290 82 280 84 L250 82 L240 105 Q232 110 228 100 L222 95 Z" fill="#fcd9a8" stroke="#a16207"/>
-<line x1="237" y1="22" x2="237" y2="5" stroke="#7c2d12" stroke-width="2" marker-end="url(#l177)"/><text x="245" y="12">Force F</text>
-<line x1="285" y1="80" x2="310" y2="90" stroke="#4338ca" stroke-width="2" marker-end="url(#l177)"/><text x="268" y="62">Magnetic Field B</text>
-<line x1="232" y1="105" x2="218" y2="122" stroke="#dc2626" stroke-width="2" marker-end="url(#l177)"/><text x="225" y="125">Current I</text>
-</svg>
-endsvg
-endbox
-p Since magnetism is inherently three-dimensional; we often need to draw vectors that are perpendicular to the page. The symbol • (or ⊙) represents a vector arrow pointing out of the page; think of the tip of an arrow coming toward you. The symbol × (or ⊗) represents a vector pointing into the page; it suggests the tail feathers of an arrow moving away from you. || چونکہ مقناطیسیت فطری طور پر سہ جہتی ہے، اس لیے ہمیں اکثر ایسے سمتیے بنانے پڑتے ہیں جو صفحے پر عمود ہوں۔ علامت • (یا ⊙) صفحے سے باہر کی طرف اشارہ کرنے والا سمتیہ ظاہر کرتی ہے؛ تصور کریں کہ تیر کی نوک آپ کی طرف آ رہی ہے۔ علامت × (یا ⊗) صفحے کے اندر کی طرف سمتیہ ظاہر کرتی ہے؛ یہ آپ سے دور جاتے تیر کے پچھلے پروں کی نشاندہی کرتی ہے۔ || څرنګه چې مقناطیسیت په طبیعي ډول درې بعدي دی، ډېر ځله باید داسې بردارونه رسم کړو چې پر پاڼه عمود وي. نښه • (یا ⊙) هغه بردار ښيي چې له پاڼې بهر ته دی؛ فکر وکړئ د غشي څوکه تاسو ته راځي. نښه × (یا ⊗) هغه بردار ښيي چې پاڼې ته ننوځي؛ دا د هغه غشي د شا وزرې ښيي چې له تاسو لرې کېږي.
-- • out of the page || • صفحے سے باہر || • له پاڼې بهر
-- × in to the page || × صفحے کے اندر || × پاڼې ته ننوتی
+example 12.4 | CROWN GLASS AND WATER
+p Light travels from crown glass (n_g = 1.52) into water (n_w = 1.33). The angle of incidence in crown glass is 40.0°. What is the angle of refraction in water?
