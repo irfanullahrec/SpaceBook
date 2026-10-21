@@ -1,7 +1,13 @@
 @printed 98
 box check | Stop and Check || رکیں اور جانچیں || ودرېږئ او وګورئ
 q ? | A cyclist moves 20 km in the east for 1 hour and 10 km in the north for 30 minutes to reach the finish line. Find his average speed in km/h. || ایک سائیکل سوار 1 گھنٹے میں مشرق کی طرف 20 کلومیٹر اور 30 منٹ میں شمال کی طرف 10 کلومیٹر چل کر فنش لائن تک پہنچتا ہے۔ اس کی اوسط رفتار km/h میں معلوم کریں۔ || یو بایسکل سپور په 1 ساعت کې ختیځ لور ته 20 کیلومتره او په 30 دقیقو کې شمال لور ته 10 کیلومتره ځي او پای کرښې ته رسېږي. د هغه منځنۍ چټکتیا په km/h پیدا کړئ.
-sol 20 km/h ## Total distance = 20 + 10 = 30 km; total time = 1 h + 0.5 h = 1.5 h; average speed = 30 ÷ 1.5 = 20 km/h. || کل فاصلہ = 20 + 10 = 30 km؛ کل وقت = 1.5 h؛ اوسط رفتار = 30 ÷ 1.5 = 20 km/h۔ || ټول واټن = 30 km؛ ټول وخت = 1.5 h؛ منځنۍ چټکتیا = 30 ÷ 1.5 = 20 km/h.
+solution 20 km/h
+ss Add the distances (east and north parts). || مشرق اور شمال کے فاصلے جمع کریں۔ || د ختیځ او شمال واټنونه جمع کړئ.
+sm \text{Total distance} = 20 + 10 = 30 \text{ km}
+ss Add the times (30 minutes = 0.5 h). || اوقات جمع کریں (30 منٹ = 0.5 گھنٹہ)۔ || وختونه جمع کړئ (30 دقیقې = 0.5 ساعته).
+sm \text{Total time} = 1 + 0.5 = 1.5 \text{ h}
+ss Average speed = total distance ÷ total time. || اوسط رفتار = کل فاصلہ ÷ کل وقت۔ || منځنۍ چټکتیا = ټول واټن ÷ ټول وخت.
+sm \text{Average speed} = \frac{30}{1.5} = 20 \text{ km/h}
 endbox
 @deco Figure 8.4 Cyclist on track: photograph of a racing cyclist leaning into a bend.
 box info | Do You Know? || کیا آپ جانتے ہیں؟ || ایا پوهېږئ؟
