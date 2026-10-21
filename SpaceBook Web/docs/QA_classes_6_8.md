@@ -70,6 +70,9 @@ Generators: `class-7/tools/gen_graphs.py 7|8` (graphs) and `gen_constr8.py` (Cla
 ## More printed-key mismatches
 Class 8 6.9 Q4 (x² + 1/x² = 18 when x − 1/x = 4; key 6), Class 8 6.9 Q12 (p⁴ + 1/p⁴ = 898 when p² + 1/p² = 30; key 806402), Class 7 13.7 Q1 (key lists "zero (impossible)" under b and 13/20 under c; the correct order is b = 13/20, c = 0).
 
+## Derived non-Maths answers (written from general knowledge or the lesson summary; to be checked by a teacher)
+- Class 8 Islamiat: 16 open parts answered (Lessons 1.3 destiny, 3 fear of Allah, 7.3 purpose of worship, 12.1 purdah, 20.2 Imam Hussain, 25.1 enjoining good). Not answered: u23 MCQs d/e (options cut off), u19 Q2 and u24 Q4 tables.
+
 ## Next steps (in order of value)
 1. More Mathematics solutions: author the remaining word problems in `class-N/math/dsl/*.txt` (one line per part: TeX rows + `=> answer`, checked by the engine), then `python msol_run.py N` and, for Class 8, `python apply_gen8.py`; Class 7 needs `python build_math7.py`.
 2. Re-run the layout harness at 375/768/1280 once the browser pane is open; fix wide tables.

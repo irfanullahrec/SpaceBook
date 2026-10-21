@@ -34,7 +34,12 @@ for key, lines in blocks:
     for i, l in enumerate(L):
         if l.startswith('exercise '): cur_ex = l.split(None, 1)[1].strip()
         elif l.startswith('endexercise'): cur_ex = None if ex != '-' else '-'
-        if cur_ex == ex and re.match(r'q\s+' + re.escape(qno) + r'(\s|\|)', l):
+        if qno == '-' and part and (cur_ex is not None) and (ex == '*' or cur_ex == ex) and re.match(r'qp\s+' + re.escape(part) + r'(\s|\|)', l):
+            occ -= 1
+            if occ > 0: continue
+            pos = i
+            break
+        if qno != '-' and (ex == '*' and cur_ex is not None or cur_ex == ex) and re.match(r'q\s+' + re.escape(qno) + r'(\s|\|)', l):
             occ -= 1
             if occ > 0: continue
             pos = i
