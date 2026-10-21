@@ -59,6 +59,8 @@
   .m6-h3{font-size:1.08rem;font-weight:750;color:#0f172a;margin:1rem 0 .3rem}
   .m6-root,.m6-root *{min-width:0;overflow-wrap:anywhere}
   .m6-root .katex-display,.m6-root table{max-width:100%}
+  .mch-titles{flex-wrap:wrap !important;white-space:normal !important;overflow:visible !important}
+  .mch-titles>*{white-space:normal !important;min-width:0}
   .m6-root.c1-skin .m6-box-t{white-space:normal;width:max-content;max-width:calc(100% - .6rem);text-align:center}
   .m6-root svg,.m6-root img{max-width:100%;height:auto}
   .m6-h4{font-size:1rem;font-weight:700;color:#075985;margin:.9rem 0 .25rem}

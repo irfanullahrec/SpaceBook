@@ -62,7 +62,7 @@ def split_key(key):
     """'a) 1/2 b) x+1' -> {'a': '1/2', 'b': 'x+1'};  single answers -> {'': text}"""
     if not key:
         return {}
-    pos = [(m.start(), m.end(), m.group(1)) for m in re.finditer(r'(?:^|(?<=\s)|(?<=;))\(?\b([a-zA-Z]|i{1,3}|iv|v)\)\s', key)]
+    pos = [(m.start(), m.end(), m.group(1)) for m in re.finditer(r'(?:^|(?<=\s)|(?<=;))\(?\b([ivx]{2,6}|[a-zA-Z])\)\s', key)]
     if not pos:
         return {'': key.strip()}
     out = {}

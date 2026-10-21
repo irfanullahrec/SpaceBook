@@ -243,3 +243,46 @@ def classify_real(text):
     e, u, p = [x.format(**ctx) for x in J[case]]
     steps = [msol.step('given', t.replace('−', '-')), S(e, u, p, '\text{' + kind + '}')]
     return steps, kind
+
+
+PROP = {
+    'comm_add': ('Commutative property of addition', 'جمع کی تبدیلی خاصیت', 'د جمع تبادلوي ځانګړتیا', 'a + b = b + a'),
+    'comm_mul': ('Commutative property of multiplication', 'ضرب کی تبدیلی خاصیت', 'د ضرب تبادلوي ځانګړتیا', 'a \\times b = b \\times a'),
+    'assoc_add': ('Associative property of addition', 'جمع کی شراکتی خاصیت', 'د جمع ملګرتیا ځانګړتیا', '(a + b) + c = a + (b + c)'),
+    'assoc_mul': ('Associative property of multiplication', 'ضرب کی شراکتی خاصیت', 'د ضرب ملګرتیا ځانګړتیا', '(a \\times b) \\times c = a \\times (b \\times c)'),
+    'dist': ('Distributive property', 'تقسیمی خاصیت', 'د وېش ځانګړتیا', 'a(b + c) = ab + ac'),
+    'add_id': ('Additive identity', 'جمعی محایدہ', 'د جمع پېژندنه', 'a + 0 = a'),
+    'mul_id': ('Multiplicative identity', 'ضربی محایدہ', 'د ضرب پېژندنه', 'a \\times 1 = a'),
+    'mul_zero': ('Multiplication by zero', 'صفر سے ضرب', 'په صفر ضرب', 'a \\times 0 = 0'),
+    'add_inv': ('Additive inverse', 'جمعی معکوس', 'جمعي معکوس', 'a + (-a) = 0'),
+    'mul_inv': ('Multiplicative inverse', 'ضربی معکوس', 'ضربي معکوس', 'a \\times \\frac{1}{a} = 1'),
+}
+
+
+def identify_property(text):
+    t = msol.clean_tex(text).replace(' ', '')
+    kind = None
+    if '=' not in t:
+        raise ParseError('eq')
+    l, r = t.split('=', 1)
+    if re.fullmatch(r'\(.*\)\+.*', l) and '+' in r and re.search(r'\+\(', r): kind = 'assoc_add'
+    elif re.fullmatch(r'\(.*\)\\times.*', l) and re.search(r'\\times\(', r): kind = 'assoc_mul'
+    elif re.fullmatch(r'\\times0|.*\\times0', l) and r == '0': kind = 'mul_zero'
+    elif re.search(r'\+0$', l) or re.search(r'^0\+', l): kind = 'add_id'
+    elif re.search(r'\\times1$', l) or re.search(r'^1\\times', l): kind = 'mul_id'
+    elif r == '0' and '+' in l: kind = 'add_inv'
+    elif r == '1' and 'times' in l: kind = 'mul_inv'
+    elif '\\times(' in l and '+' in r and r.count('times') >= 2 or re.match(r'.+\(.+[+-].+\)', l) and 'times' in r: kind = 'dist'
+    else:
+        try:
+            sl = set(re.split(r'\+', l)); sr = set(re.split(r'\+', r))
+            if '+' in l and '+' in r and l != r and sl == sr: kind = 'comm_add'
+            sl = set(re.split(r'\\times', l)); sr = set(re.split(r'\\times', r))
+            if 'times' in l and 'times' in r and l != r and sl == sr: kind = 'comm_mul'
+        except Exception:
+            pass
+    if not kind:
+        raise ParseError('prop')
+    en, ur, ps, rule = PROP[kind]
+    steps = [msol.step('given', msol.clean_tex(text)), S('The rule used is:', 'استعمال شدہ اصول:', 'کارول شوی قاعده:', rule), S(en, ur, ps)]
+    return steps, en
