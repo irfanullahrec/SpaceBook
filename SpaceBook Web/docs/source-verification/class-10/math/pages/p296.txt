@@ -1,0 +1,124 @@
+@printed 295
+@status answers
+## Exercise 11
+ans 11 | 1 | (i) $x = 12$, $y = 90°$; (ii) $x = 11$, $y = 90°$; (iii) $x = 12$, $y = 67.4°$; (iv) $x = 11.0$, $y = 61.9°$; (v) $x = 16$, $y = 53.1°$; (vi) $x = 6$, $y = 50.2°$
+ans 11 | 2 | $x = \dfrac{3}{2}$
+## Review Exercise 11
+ans R11 | 1 | (i) $3\sqrt{2}$; (ii) $\overline{AB} \cong \overline{CD}$
+ans R11 | 3 | $\angle ADB = 65°$, $\angle BDC = 25°$, $m\widehat{BC} = 50°$
+## Exercise 12
+ans 12 | 1 | $x = 35°$, $y = 145°$
+ans 12 | 2 | 10 units
+ans 12 | 3 | (i) $c = 62$, $x = 10$; (ii) $a = 45$, $b = 30$
+## Review Exercise 12
+ans R12 | 1 | (i) 160°; (ii) 60°; (iii) 110°; (iv) 40°; (v) $37\frac{1}{2}°$, $37\frac{1}{2}°$; (vi) 50°; (vii) 25°; (viii) 125°
+ans R12 | 2 | (i) $x = 98°$, $y = 60°$; (ii) $x = 38°$, $y = 25\frac{1}{3}°$
+ans R12 | 4 | (i) $x = 80°$; (ii) $x = 125°$; (iii) $x = 50°$; (iv) $x = 45°$; (v) $y = 12°$; (vi) $x = 70°$
+## Review Exercise 13
+ans R13 | 1 | (i) none of these; (ii) none of these; (iii) 2; (iv) touch each other externally
+## Derived answers (SpaceBook): questions the printed key does not answer. Worked by hand / sympy and checked against the animated steps.
+ans 12 | 4 | [Derived] Proved: opposite angles of a parallelogram are equal, opposite angles of a cyclic quadrilateral are supplementary, so each is $90^\circ$ and the parallelogram is a rectangle.
+ans 2.2 | 3 | [Derived] (i) $(1+2w)(1+2w^2)(1-w-w^2) = 3 \times 2 = 6$; (ii) $(2w)^4(2w^2)^5 = 2^9 w^{14} = 512w^2$. Both proved.
+ans 2.2 | 4 | [Derived] (i) $(x-y)(x-wy)(x-w^2y) = x^3-y^3$; (ii) $(1+w)(1+w^2)(1+w)(1+w^2) = 1$. Both proved.
+ans 3.2 | 6 | [Derived] As printed ($ac+ad$) the identity is false (e.g. $a,b,c,d = 2,1,4,2$ gives $2 \neq 5/3$); with $ac+bd$ it holds: both sides $= \dfrac{k^2+1}{k^2-1}$ where $a=kb,\ c=kd$.
+ans 3.4 | 1 | [Derived] With $a=kb,\ c=kd$ both ratios in (i) equal $\dfrac{2k+3}{2k-3}$ and both sides of (ii) equal $\dfrac{pk+q}{mk-n}$. Proved.
+ans 3.4 | 2 | [Derived] With $a=kb,\ c=kd,\ e=kf$ the root equals $\sqrt{k^2}=k$ (for $k>0$). Proved.
+ans 3.4 | 3 | [Derived] The sum of numerators is $0$, so the common value is $0$; hence $x=y=z$. Proved.
+ans 3.4 | 4 | [Derived] Each quotient equals $k/9$ where $k$ is the common ratio of the given fractions. Proved.
+ans 3.4 | 5 | [Derived] Adding numerators and denominators: each fraction equals $\dfrac{x+y+z}{a+b+c}$. Proved.
+ans 3.4 | 6 | [Derived] The numerators add to $0$, which gives $(a+b+c)(x+y+z)=ax+by+cz$. Proved.
+ans 3.4 | 7 | [Derived] Substituting $x=k(b+c-a)$ etc., the sum $(b-c)x+(c-a)y+(a-b)z=0$. Proved.
+ans 3.4 | 8 | [Derived] Adding the three equations gives $7x+6y+8z = k\cdot 0 = 0$. Proved.
+ans R3 | 13 | [Derived] With $a=kb,\ c=kd$ both sides equal $k^3$. Proved.
+ans R3 | 14 | [Derived] With $a=r^2c,\ b=rc$ all three ratios equal $r^2=\dfrac{a}{c}$. Proved.
+ans R3 | 15 | [Derived] With $a=kb,\ c=kd,\ e=kf$ both sides equal $k^3$. Proved.
+ans 4.1 | 1 | [Derived] (1) $\dfrac{2}{x}-\dfrac{1}{2x-1}$; (4) $\dfrac{5}{6(x+5)}+\dfrac{1}{6(x-1)}$; (6) $-\dfrac{5}{4(x+1)}+\dfrac{1}{2(x+1)^2}+\dfrac{9}{4(x-1)}$; (8) $-\dfrac{1}{9x}+\dfrac{1}{9(x-3)}+\dfrac{5}{3(x-3)^2}$; (10) $\dfrac{1}{4(x+1)}+\dfrac{3}{4(x-1)}+\dfrac{1}{2(x-1)^2}$. (Parts 2, 3, 5, 7, 9 are in the printed key.)
+ans 4.2 | 1 | [Derived] (1) $\dfrac{1}{x}-\dfrac{x}{x^2+1}$; (3) $\dfrac{3}{2(x-1)}-\dfrac{3x-1}{2(x^2+1)}$; (5) $-\dfrac{2}{7(x+4)}+\dfrac{3(2x-1)}{7(3x^2+1)}$; (7) $\dfrac{4}{5(x-2)}-\dfrac{4(x+2)}{5(x^2+1)}+\dfrac{x-2}{(x^2+1)^2}$; (9) $\dfrac{2}{x^2+1}-\dfrac{4}{(x^2+1)^2}+\dfrac{1}{x+1}-\dfrac{1}{x-1}$; (10) $\dfrac{3}{2(x-1)}-\dfrac{3(x+1)}{2(x^2+1)}-\dfrac{x+1}{(x^2+1)^2}$. (Parts 2, 4, 6, 8 are in the printed key.)
+ans 5.2 | 1 | [Derived] (i) $A\cup B=B\cup A=\{1,\ldots,12\}$, $A\cap B=B\cap A=\{2,4,5,8,10,12\}$; (ii) union $=N$, intersection $=B$; (iii) with $A=\{2,3,5,7,11,13,17,19,23,29\}$ and $B=\{4,6,8,9,10,12,14,15,16,18\}$: union $=$ all 20 elements, intersection $=\varnothing$, the same in either order.
+ans 5.2 | 2 | [Derived] (i) $A\cup(B\cup C)=(A\cup B)\cup C=A$; $A\cap(B\cap C)=(A\cap B)\cap C=\{a,i,o\}$. (ii) both unions $=A$; both intersections $=\varnothing$.
+ans 5.2 | 3 | [Derived] (i) $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)=A$; $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)=\{0\}$. (ii) first law: both sides $=A$; second law: both sides $=\{-1,-2,-3,-4,-5,3,4\}$.
+ans 5.2 | 4 | [Derived] (i) $(A\cup B)'=A'\cap B'=\{9,15,16,19,20\}$, $(A\cap B)'=A'\cup B'=U\setminus\{17\}$; (ii) $(A\cup B)'=A'\cap B'=\varnothing$, $(A\cap B)'=A'\cup B'=U$.
+ans 5.3 | 1 | [Derived] (i) $A\cup B=\{1,2,3,4,5,6,7\}$; (ii) $A\cap B=\{2,3\}$ (Venn regions: A only $\{1,4,5\}$, both $\{2,3\}$, B only $\{6,7\}$).
+ans 5.3 | 2 | [Derived] (i) both sides $=\{1,\ldots,10\}$; (ii) both $=\{5,6\}$; (iii) both $=\{1,2,3,4,5,6\}$; (iv) both $=\{3,4,5,6\}$.
+ans 5.3 | 3 | [Derived] $A'=\{5,6,7\}$, $B'=\{1,2,6,7\}$, $A'\cup B'=\{1,2,5,6,7\}=(A\cap B)'$, $A'\cap B'=\{6,7\}=(A\cup B)'$.
+ans 5.3 | 4 | [Derived] $A'=\{a,b,1,2,4\}$, $B'=\{b,c,1,2\}$, $A\setminus B=\{c\}$, $B\setminus A=\{a,4\}$.
+ans 5.3 | 5 | [Derived] $(A\cup B)'=A'\cap B'=\{f,g\}$; $(A\cap B)'=A'\cup B'=\{a,b,d,e,f,g\}$.
+ans R5 | 3 | [Derived] (i) both sides $=\{1,2,3,4,5,6,7,9\}$; (ii) both $=\{2\}$; (iii) both $=\{1,2,3,5,7\}$; (iv) the printed wording "union over union" is a misprint: $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)=\{2,5\}$.
+ans R5 | 4 | [Derived] $A'\cap B'=(A\cup B)'$ and $A'\cup B'=(A\cap B)'$ with $A\cap B=\{11,26\}$, $A\cup B$ having 16 elements, verified element by element.
+ans R5 | 5 | [Derived] $(A\cup B)'=\{7\}=A'\cap B'$; $(A\cap B)'=\{1,3,5,6,7\}=A'\cup B'$.
+ans R5 | 6 | [Derived] $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)=\{1,2,3,4\}$; $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)=\{3,4\}$.
+ans 6.1 | 1 | [Derived] Classes 30-39 to 90-99 (width 10) with frequencies 1, 4, 4, 8, 6, 5, 2; class marks 34.5, 44.5, ..., 94.5; boundaries 29.5-39.5, ..., 89.5-99.5.
+ans 6.1 | 3 | [Derived] Adjacent bars on the class boundaries with heights 1, 3, 4, 5, 4, 2, 1.
+ans 6.1 | 4 | [Derived] Classes 20-24, 25-29, 30-34, 35-39, 40-44 with frequencies 3, 6, 5, 8, 8; class marks 22, 27, 32, 37, 42 (polygon through these points).
+ans 6.1 | 5 | [Derived] Frequencies for 1 to 6 hours: 6, 9, 6, 5, 2, 2 (total 30); draw the histogram with these heights.
+ans 6.2 | 4 | [Derived] Less-than c.f.: 1, 3, 6, 10, 15, 21; more-than c.f. at the lower boundaries: 21, 20, 18, 15, 11, 6, 0.
+ans R6 | 2 | [Derived] Ages 15, 16, 17, 18, 19 with frequencies 5, 7, 7, 5, 3 (total 27).
+ans R6 | 3 | [Derived] Bars for A to E with heights 100, 120, 110, 72, 169 (categories, so a bar chart).
+ans R6 | 4 | [Derived] Class marks 5, 16, 27, 38, 47 against frequencies 2, 7, 25, 11, 5; close the polygon with zero frequencies at both ends.
+ans R6 | 5 | [Derived] Cumulative frequencies 13, 30, 80, 161, 218, 241, 250; plot against the upper class boundaries.
+ans 7.5 | 1 | [Derived] $(\sec^2\theta-1)\cos^2\theta=\tan^2\theta\cos^2\theta=\sin^2\theta$. Proved.
+ans 7.5 | 2 | [Derived] $\tan\theta+\sec\theta=\dfrac{\sin\theta+1}{\cos\theta}$. Proved.
+ans 7.5 | 3 | [Derived] $(\cos\theta-\sin\theta)^2=\cos^2\theta+\sin^2\theta-2\sin\theta\cos\theta=1-2\sin\theta\cos\theta$. Proved.
+ans 7.5 | 4 | [Derived] $\cos^2\theta-\sin^2\theta=\cos^2\theta-(1-\cos^2\theta)=2\cos^2\theta-1$. Proved.
+ans 7.5 | 5 | [Derived] $\dfrac{\sin^2\theta+\cos^2\theta}{\sin\theta\cos\theta}=\sec\theta\,\text{cosec}\,\theta$. Proved.
+ans 7.5 | 6 | [Derived] $\dfrac{1-\sin\theta}{\cos\theta}\cdot\dfrac{1+\sin\theta}{1+\sin\theta}=\dfrac{\cos^2\theta}{\cos\theta(1+\sin\theta)}=\dfrac{\cos\theta}{1+\sin\theta}$. Proved.
+ans 7.5 | 7 | [Derived] $\sin\theta\sqrt{\sec^2\theta}=\sin\theta\sec\theta=\tan\theta$. Proved.
+ans 7.5 | 8 | [Derived] $\cos^2\theta=1-\sin^2\theta$ and $\cos\theta>0$ for acute $\theta$. Proved.
+ans 7.5 | 9 | [Derived] $(1+\cos\theta)(1-\cos\theta)=1-\cos^2\theta=\sin^2\theta=\dfrac{1}{\text{cosec}^2\theta}$. Proved.
+ans 7.5 | 10 | [Derived] $\cos x(1-\sin^2x)=\cos x\cos^2x=\cos^3x$. Proved.
+ans 7.5 | 11 | [Derived] $\dfrac{\sin^2x+(1+\cos x)^2}{\sin x(1+\cos x)}=\dfrac{2(1+\cos x)}{\sin x(1+\cos x)}=2\,\text{cosec}\,x$. Proved.
+ans 7.5 | 12 | [Derived] Cross-multiplying: $\sin^2x=(1-\cos x)(1+\cos x)=1-\cos^2x$. Proved.
+ans 7.5 | 13 | [Derived] $\dfrac{2}{1-\cos^2a}=2\,\text{cosec}^2a=2+2\cot^2a$. Proved.
+ans 7.5 | 14 | [Derived] $(\cos^2b-\sin^2b)(\cos^2b+\sin^2b)=\cos^2b-\sin^2b=1-2\sin^2b$. Proved.
+ans 7.5 | 15 | [Derived] As printed the identity is false (the left side is $2+\cot y-\tan y$). With the denominators interchanged, $\dfrac{\sin y+\cos y}{\cos y}+\dfrac{\cos y-\sin y}{\sin y}=\tan y+\cot y=\sec y\,\text{cosec}\,y$ (probable misprint).
+ans 7.5 | 16 | [Derived] $\left(\dfrac{1-\sin x}{\cos x}\right)^2=\dfrac{(1-\sin x)^2}{(1-\sin x)(1+\sin x)}=\dfrac{1-\sin x}{1+\sin x}$. Proved.
+ans 7.5 | 17 | [Derived] $\dfrac{\sin^2x}{\cos x}+\cos x=\dfrac{1}{\cos x}=\sec x$. Proved.
+ans R7 | 7 | [Derived] (i) $\sqrt{\dfrac{(1-\sin\theta)^2}{\cos^2\theta}}=\dfrac{1-\sin\theta}{\cos\theta}=\sec\theta-\tan\theta$; (ii) $\cos\theta\sec\theta=1$ and $\tan\theta\cot\theta=1$, so $2-1=1$. Proved.
+ans 10.1 | 3 | [Derived] By the tangent-chord theorem $\angle PBC=\angle BAC$ (the inscribed angle on arc BC), and $\angle BAC=\angle BAP$; hence $m\angle PBC=m\angle BAP$. Proved.
+ans 10.1 | 7 | [Derived] (i) $VB=VA=6$ cm; (ii) $AP=3$ cm (radius); (iii) $PV=\sqrt{6^2+3^2}=3\sqrt5\approx6.71$ cm; (iv) $XV=PV-3=3\sqrt5-3\approx3.71$ cm (X on the circle between P and V; figure not checked).
+ans 10.1 | 8 | [Derived] A line is tangent iff the radius to the contact point is perpendicular to it; check with the Pythagorean converse on the given lengths (figure-dependent, not verified).
+ans 10.1 | 9 | [Derived] $CB^2+AB^2=8^2+6^2=100=CA^2$, so $\angle CBA=90^\circ$: $AB\perp CB$ at B, hence $AB$ is tangent at B.
+ans 10.1 | 10 | [Derived] Tangents from one point are equal: $AD=DC$ and $BE=EC$ (C the contact point on $DE$), so $AD+BE=DC+CE=DE$. Proved.
+ans 10.1 (continued) | 7 | [Derived] (i) $VB=6$ cm; (ii) $AP=3$ cm; (iii) $PV=3\sqrt5\approx6.71$ cm; (iv) $XV=3\sqrt5-3\approx3.71$ cm.
+ans 10.1 (continued) | 8 | [Derived] A line is tangent iff the radius to the contact point is perpendicular to it (figure-dependent, not verified).
+ans 10.1 (continued) | 9 | [Derived] $8^2+6^2=10^2$, so $\angle CBA=90^\circ$ and $AB$ is tangent at B.
+ans 10.1 (continued) | 10 | [Derived] $AD=DC$, $BE=EC$, so $AD+BE=DE$. Proved.
+ans R11 | 2 | [Derived] The diagonals are equal diameters and bisect each other, so the quadrilateral is a rectangle; the diameters are also perpendicular, so the four sides are equal: a square. Proved.
+ans R11 | 4 | [Derived] (a) $\angle A=\angle C$ (inscribed angles on the same arc); (b) $\angle1=\angle2$ (same arc); (c) the triangles share the angle at E and have $\angle A=\angle C$, so they are equiangular. Proved.
+ans R12 | 3 | [Derived] Tangent lengths from each vertex are equal: with $AP=AS=a,\ BP=BQ=b,\ CQ=CR=c,\ DR=DS=d$ we get $AB+CD=a+b+c+d=BC+DA$. Proved.
+ans 13.1 | 1 | [Derived] Construction: SSS triangle 2, 2.5, 3 cm; perpendicular bisectors of two sides meet at the circumcentre; circumradius $\approx1.5$ cm.
+ans 13.1 | 2 | [Derived] Construction: AB = 3 in, AC = 4 in, angle $A=60^\circ$; $BC=\sqrt{9+16-12}=\sqrt{13}\approx3.61$ in; circumradius $=\dfrac{BC}{2\sin60^\circ}\approx2.08$ in.
+ans 13.1 | 3 | [Derived] Construction: SSS triangle 3, 4, 6 cm; angle bisectors meet at the incentre; inradius $=\dfrac{\text{area}}{s}=\dfrac{5.33}{6.5}\approx0.82$ cm.
+ans 13.1 | 4 | [Derived] Construction: SSS triangle 5, 6, 8 cm; circumcentre from the perpendicular bisectors; circumradius $=\dfrac{abc}{4\,\text{area}}=\dfrac{240}{4(14.98)}\approx4.0$ cm.
+ans 13.1 | 5 | [Derived] Construction: choose a base, draw $60^\circ$ and $45^\circ$ angles ($C=75^\circ$); the bisectors meet at the incentre; draw the incircle with the perpendicular as radius.
+ans 13.1 | 6 | [Derived] Altitude $=\tfrac32r$: $r=3,4,6,12$ give $4.5, 6, 9, 18$ units. Result: altitude is $1.5$ times the circumradius.
+ans 13.1 | 7 | [Derived] Altitude $=3r$: $r=2,5,10$ give $6, 15, 30$ units. Result: altitude is three times the inradius.
+ans 13.1 | 8 | [Derived] For each radius draw the circle, mark three points $120^\circ$ apart and draw the tangents there; side of the triangle $=2\sqrt3\,r$ ($6.93,\ 10.39,\ 3.46$ in).
+ans 13.1 | 9 | [Derived] Construction: SSS triangle 2.5, 3.5, 4.5 cm; the excentre is the intersection of the internal bisector of the opposite angle with the external bisectors of the other two; exradius $=\dfrac{\text{area}}{s-a}$ with $a=4.5$: $\dfrac{4.35}{0.75}\approx5.8$ cm (area $\approx4.35$ cm^2, $s=5.25$).
+ans 13.1 | 10 | [Derived] As in Q9 with $a=2.5$: exradius $=\dfrac{4.35}{5.25-2.5}\approx1.58$ cm.
+ans 13.2 | 1 | [Derived] Circle of radius 5 cm; draw two perpendicular diameters and tangents at their ends: square of side 10 cm.
+ans 13.2 | 2 | [Derived] Circle of radius 6 cm (or diameter 6 cm as printed); two perpendicular diameters and join their ends: side $=r\sqrt2$.
+ans 13.2 | 3 | [Derived] Square of side 6 cm: circumradius $=3\sqrt2\approx4.24$ cm; inradius $=3$ cm.
+ans 13.2 | 4 | [Derived] Radius $=4$ units (the incircle diameter equals the side 8).
+ans 13.2 | 5 | [Derived] Radius $=\dfrac{10\sqrt2}{2}=5\sqrt2\approx7.07$ cm.
+ans 13.2 | 6 | [Derived] Mark chords of 4 cm (= radius) six times round the circle and join: side $4$ cm.
+ans 13.2 | 7 | [Derived] Draw tangents at six points $60^\circ$ apart: side $=\dfrac{2r}{\sqrt3}\approx4.62$ cm.
+ans 13.2 | 8 | [Derived] Inscribed hexagon: side 8, area $=\dfrac{3\sqrt3}{2}\cdot64\approx166.3$ cm^2. Circumscribed: side $\dfrac{16}{\sqrt3}$, area $=2\sqrt3\cdot64\approx221.7$ cm^2. The ratio is $4:3$.
+ans 13.2 | 9 | [Derived] Sides $1$ cm and $5$ cm; perpendiculars (apothems) $\dfrac{\sqrt3}{2}\approx0.87$ cm and $\dfrac{5\sqrt3}{2}\approx4.33$ cm, in the ratio $1:5$ (equal to the ratio of the sides).
+ans 13.2 | 10 | [Derived] Not possible with ruler and compass: it needs a side $r\sqrt\pi$, i.e. constructing $\sqrt\pi$, impossible because $\pi$ is transcendental (squaring the circle).
+ans 13.3 | 1 | [Derived] Constructions: (i) tangent at the middle point is parallel to the chord of the arc; (ii) at the end point, copy the chord-tangent angle; (iii) from an outside point use the chord construction as in 13.3.1.
+ans 13.3 | 2 | [Derived] Draw the perpendicular to BC at D; any point on it is a centre; circle with that radius through D touches BC at D.
+ans 13.3 | 3 | [Derived] The centre is at distance 4 cm from AB and 4 cm from C: intersect the parallel to AB at 4 cm with the circle of radius 4 cm about C.
+ans 13.3 | 4 | [Derived] Tangent length $=\sqrt{5^2-2.5^2}=2.5\sqrt3\approx4.33$ cm; construct on diameter OQ.
+ans 13.3 | 5 | [Derived] Length of each direct common tangent $=\sqrt{8^2-(3-2)^2}=\sqrt{63}\approx7.94$ cm.
+ans 13.3 | 6 | [Derived] Length of each transverse tangent $=\sqrt{10^2-(4+4)^2}=6$ cm.
+ans 13.3 | 7 | [Derived] Length of each transverse tangent $=\sqrt{5.5^2-4.5^2}=\sqrt{10}\approx3.16$ cm.
+ans 13.3 | 8 | [Derived] The centre lies on the bisector of the $60^\circ$ angle at distance $\dfrac{2.5}{\sin30^\circ}=5$ cm from B.
+ans R13 | 2 | [Derived] Draw two chords of the arc, their perpendicular bisectors meet at the centre.
+ans R13 | 3 | [Derived] Triangle is right-angled at C ($3^2+4^2=5^2$), area $=6$ cm^2, $s=6$; exradius opposite A $=\dfrac{6}{s-a}=\dfrac{6}{6-4}=3$ cm.
+ans R13 | 4 | [Derived] Circumradius $=\dfrac{5}{\sqrt3}\approx2.89$ cm; circumcentre at the intersection of the perpendicular bisectors (centroid).
+ans R13 | 5 | [Derived] Six tangents at points $60^\circ$ apart; side of the hexagon $=\dfrac{8}{\sqrt3}\approx4.62$ cm.
+ans R13 | 6 | [Derived] The tangents meet at a point V with $OV=\dfrac{3}{\sin30^\circ}=6$ cm on the bisector of the $60^\circ$ angle; tangents from V.
+ans R13 | 7 | [Derived] The circles (radius 3.5 cm, centres 7 cm apart) touch externally, so the two transverse tangents coincide in the single tangent at the point of contact, perpendicular to the line of centres.
+ans R13 | 8 | [Derived] Two direct common tangents; length $=\sqrt{d^2-(3.5-2.5)^2}$ for centre distance $d$.
+ans R13 | 9 | [Derived] Two touching circles of radii 3 and 4 cm: common tangent at the point of contact, plus two direct tangents of length $2\sqrt{3\cdot4}\approx6.93$ cm (externally touching).
