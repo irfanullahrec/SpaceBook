@@ -16,7 +16,7 @@ Checked with `tools/qa/banks.js` (Class 12 exercise-bank layer), `tools/qa/dump_
 
 ## 3. Page view (desktop 1280, tablet 768, phone 375)
 `tools/qa/overflow.js` drives real Chrome (Playwright) on `lazy.html`: for every Class 11/12 subject it opens the first, middle and last chapter, every visible tab, at three widths, and records page-level sideways scroll and any element that leaves the viewport outside a scroll container.
-**Result (first pass, first/middle/last chapter): 29 subjects, about 490 checks, 0 overflows. Full pass (`overflow.js --all`, every chapter, every visible tab, 1280 / 768 / 375 px): 29 subjects, 428 chapters, 2,589 checks, 0 overflows** (`docs/qa/overflow_classes_11_12.json`).
+**Result (first pass, first/middle/last chapter): 29 subjects, about 490 checks, 0 overflows. Full pass (`overflow.js --all`, every chapter, every visible tab, 1280 / 768 / 375 px): 29 subjects, 462 chapters, 2,589 checks, 0 overflows** (`docs/qa/overflow_classes_11_12.json`).
 Not covered: table cells that scroll inside their own container (allowed by the checker), pixel-level clipping of text inside fixed-height boxes, Arabic diacritic rendering (needs eyes). The built-in browser pane refuses local addresses, so no screenshots were taken.
 
 ## 4. Word meanings
