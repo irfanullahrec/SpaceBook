@@ -53,3 +53,12 @@ Not done by this QA work, on purpose (shared files):
 3. Commit the regenerated outputs together with the sources above.
 
 Added after the first calculus batch (same file, 5 more packs): Ex 7.1 Q1 and Ex 7.2 Q1, Q9 (distance, area), Maclaurin series of e^x, partial derivatives from the definition (Ex 11.1 Q6). Statistics notation (nCr, n!) was looked at and left alone: the remaining Statistics bank answers are definitions and procedures, not equation chains.
+
+## Class 11 Maths numeric spot-check (`python tools/qa/check_m11.py`)
+Method: every step of the 879 solutions in `js/math_11_solutions.js` that carries a TeX chain `A = B = C` (1,542 chains in 2,360 steps) is translated to sympy and each side is evaluated at four random points; the sides of one chain must agree. Lone-symbol sides (definitions like `a_n = …`), equations being solved (`… = 0`) and chains with unreadable notation (sets, matrices, sums, limits, text) are skipped, and the last side of a solution's last chain is compared with the printed answer when both are plain numbers.
+
+Result: **144 chains checked, 104 agree, 40 flagged; 29 printed answers compared, 1 flagged.** I read every flagged item. None is an arithmetic error in the solutions:
+* parser limits or conditional relations, not identities: `rank(A)=…`, `P(E^c)=1-P(E)`, `f(x)=…` with an unknown function, `… = 5m` divisibility proofs, `\sin(\theta+2k\pi)` with integer k, substitutions such as `1+\cos\alpha=1+\frac{b^2+c^2-a^2}{2bc}` (a, b, c, α are not independent), `\sin3\theta=3x-4x^3` (θ is defined by `\sin\theta=x`), and a few trig identities with `\sin^22\theta` that I re-checked by hand (`\cos4\theta=1-2\sin^22\theta=1-8\sin^2\theta\cos^2\theta` is correct).
+* the one answer flag is s408 (six people round a table, two of them always together): the solution answers 240 and explains that the printed key's 120 leaves out the two orders of the pair. 240 is correct.
+
+So: no wrong number was found in the part that could be checked, but that part is small (about 9% of the chains). The other ~91% (matrices, sets, sums, limits, probability tables, text) were **not** verified automatically; the next step would be a sympy translator for those forms or a human spot-check. Class 11 answers outside this file (the exercise banks of other Class 11 books) were not touched.
