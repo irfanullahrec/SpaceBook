@@ -17,6 +17,13 @@ for (const r of window.SB_LEXICON_V1.rows) for (const p of r[0].split(/[،,]/)) 
 const CL = (process.argv.includes('--classes') ? process.argv[process.argv.indexOf('--classes') + 1].split(',').map(Number) : [1, 2, 3, 4, 5]);
 const sc = CL.map(c => W.scopes['cls' + c].en.split(',').map(x => parseInt(x, 36) || 0));
 const f15 = i => sc.reduce((a, s) => a + (s[i] || 0), 0);      // occurrences in Classes 1-5 only
+// entries already written in docs/lexicon/curated but not yet built into js/lexicon_data.js count as covered
+for (const f of fs.readdirSync(path.join(ROOT, 'docs', 'lexicon', 'curated')).filter(f => /\.txt$/.test(f))) {
+  for (const line of fs.readFileSync(path.join(ROOT, 'docs', 'lexicon', 'curated', f), 'utf8').split('\n')) {
+    const [w, ur, ps, ar] = line.split('|'); if (!w || !/^[a-z'-]+$/i.test(w.trim())) continue;
+    const k = w.trim().toLowerCase(); if (ur && ur.trim()) have.ur.add(k); if (ps && ps.trim()) have.ps.add(k); if (ar && ar.trim()) have.ar.add(k);
+  }
+}
 const inScope = i => f15(i) > 0;
 const stems = w => [w, w.replace(/ies$/, 'y'), w.replace(/(es|s)$/, ''), w.replace(/ed$/, ''), w.replace(/ed$/, 'e'), w.replace(/ing$/, ''), w.replace(/ing$/, 'e'), w.replace(/(.)ing$/, '$1'), w.replace(/ly$/, '')];
 const out = [];
