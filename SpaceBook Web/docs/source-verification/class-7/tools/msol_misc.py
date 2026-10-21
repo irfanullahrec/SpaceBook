@@ -96,3 +96,56 @@ def solve(ins, part):
     if re.match(r'find the (mean|median|mode)', s) and re.search(r'\d', t):
         return stats(s, t)
     return None
+
+
+# ---------------------------------------------------------------- significant figures, spread
+def sigfig(ins, part):
+    from decimal import Decimal, ROUND_HALF_UP
+    m = re.search(r'(\d+)\s*significant figures', ins)
+    if not m:
+        raise ParseError('sf')
+    n = int(m.group(1))
+    t = part.strip().replace(',', '')
+    d = Decimal(t)
+    if d == 0:
+        raise ParseError('zero')
+    exp = d.adjusted()                      # position of the first significant digit
+    q = Decimal(1).scaleb(exp - n + 1)
+    r = d.quantize(q, rounding=ROUND_HALF_UP)
+    digits = re.sub(r'[^0-9]', '', t).lstrip('0')
+    nxt = digits[n] if len(digits) > n else '0'
+    steps = [S('Count significant figures from the first non-zero digit:', 'پہلے غیر صفر ہندسے سے بامعنی ہندسے گنیں:', 'له لومړي غیر صفر رقم څخه معنا لرونکي رقمونه وشمېرئ:', f'{t}'),
+             S(f'Keep {n} significant figures; the next digit is {nxt}, so ' + ('round up.' if int(nxt) >= 5 else 'keep the last digit.'), f'{n} بامعنی ہندسے رکھیں؛ اگلا ہندسہ {nxt} ہے، اس لیے ' + ('اوپر راؤنڈ کریں۔' if int(nxt) >= 5 else 'آخری ہندسہ وہی رکھیں۔'), f'{n} معنا لرونکي رقمونه وساتئ؛ بل رقم {nxt} دی، نو ' + ('پورته ګرد کړئ.' if int(nxt) >= 5 else 'وروستی رقم هماغه وساتئ.'), f'{t} \\approx {r:f}'.replace('\\approx', '\\approx'))]
+    out = f'{r:f}'
+    if '.' in out and not '.' in t:
+        out = out.split('.')[0]
+    return steps, out, [Fraction(out)]
+
+
+def spread(ins, part):
+    data = [Fraction(x.replace(',', '')) for x in re.findall(r'\d[\d,]*\.?\d*', part)]
+    if len(data) < 3:
+        raise ParseError('data')
+    n = len(data)
+    mean = sum(data) / n
+    ss = sum((x - mean) ** 2 for x in data)
+    var = ss / n
+    sd = float(var) ** 0.5
+    rng = max(data) - min(data)
+    steps = [S('Range = largest − smallest:', 'حد = بڑی قیمت − چھوٹی قیمت:', 'حد = لویه − کوچنۍ قیمت:', f'{fmt(max(data))} - {fmt(min(data))} = {fmt(rng)}'),
+             S('Mean:', 'اوسط:', 'منځنی:', f'\\bar{{x}} = \\frac{{{fmt(sum(data))}}}{{{n}}} = {fmt(mean)}'),
+             S('Variance = sum of squared deviations ÷ n:', 'تغیر = انحرافات کے مربعوں کا مجموعہ ÷ n:', 'تغیر = د انحرافاتو د مربع مجموعه ÷ n:', f'S^2 = \\frac{{{fmt(ss, 3)}}}{{{n}}} = {fmt(var)}'),
+             S('Standard deviation = square root of the variance:', 'معیاری انحراف = تغیر کا جذر:', 'معیاري انحراف = د تغیر جذر:', f'S = \\sqrt{{{fmt(var)}}} = {sd:.3f}')]
+    return steps, f'Range = {fmt(rng)}, S² = {fmt(var)}, S = {sd:.3f}', [rng, var, Fraction(sd).limit_denominator(1000)]
+
+
+_old_solve = solve
+
+
+def solve(ins, part):
+    s = ins.lower()
+    if 'significant figures' in s and re.fullmatch(r'\s*[\d,]*\.?\d+\s*', part or ''):
+        return sigfig(ins, part)
+    if s.startswith('find the range, variance'):
+        return spread(ins, part)
+    return _old_solve(ins, part)
