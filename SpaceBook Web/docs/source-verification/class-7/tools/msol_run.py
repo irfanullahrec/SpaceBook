@@ -194,6 +194,8 @@ def load_dsl(cl):
             ex, q, part = (head.split('|') + ['', '', ''])[:3]
             note = None
             ans = None
+            unv = body.rstrip().endswith('^^')
+            if unv: body = body.rstrip()[:-2]
             nocheck = body.rstrip().endswith('%%')
             if nocheck: body = body.rstrip()[:-2]
             force = body.rstrip().endswith('!!') or nocheck
@@ -202,7 +204,7 @@ def load_dsl(cl):
                 body, ans = body.rsplit('=>', 1); ans = ans.strip()
             if '@@' in body:
                 body, note = body.split('@@', 1)
-            out[f'{ex.strip()}|{q.strip()}|{part.strip()}'] = ([r.strip() for r in body.split(';;') if r.strip()], note, ans, ('nocheck' if nocheck else force))
+            out[f'{ex.strip()}|{q.strip()}|{part.strip()}'] = ([r.strip() for r in body.split(';;') if r.strip()], note, ans, ('nocheck' if nocheck else force), unv)
     return out
 
 
@@ -213,6 +215,21 @@ def nums(t):
 def num_agree(ans, key):
     a, k = nums(ans), nums(key)
     return any(abs(x - y) <= 0.011 * max(1, abs(y)) for x in a for y in k)
+
+
+NV = {'en': 'Not verified: this item depends on a figure or drawing that was not checked against the book; the steps are the standard method.', 'ur': 'غیر تصدیق شدہ: یہ سوال شکل یا خاکے پر منحصر ہے جو کتاب سے نہیں ملایا گیا؛ مراحل معیاری طریقہ ہیں۔', 'ps': 'نه دی تصدیق شوی: دا پوښتنه په انځور یا نقشه پورې اړه لري چې له کتاب سره نه ده پرتله شوې؛ ګامونه معیاري طریقه ده.'}
+
+
+def text_solution(rows, ans, unverified):
+    steps = []
+    for r in rows:
+        parts = [x.strip() for x in r.split('|')]
+        if len(parts) != 3:
+            raise ValueError('text row needs en|ur|ps: ' + r[:40])
+        steps.append({'en': parts[0], 'ur': parts[1], 'ps': parts[2]})
+    if unverified:
+        steps.append(dict(NV))
+    return steps, ans or ''
 
 
 def dsl_solution(rows, note, keytext, ans=None):
@@ -394,8 +411,13 @@ def run(cl):
         for no, _ in (q['parts'] or [['', None]]):
             bykey[f'{exk(q)}|{q["q"]}|{no}'] = km.get(no.lower()) if no else km.get('')
     bad = []
-    for key, (rows, note, ans, force) in dsl.items():
+    for key, (rows, note, ans, force, unv) in dsl.items():
         try:
+            if rows and rows[0].startswith('@text '):
+                rows = [rows[0][6:]] + rows[1:]
+                steps, final = text_solution(rows, ans, unv)
+                out[key] = {'steps': steps, 'answer': final or 'see steps', 'verified': False, 'notVerified': unv}
+                continue
             steps, final, lastv = dsl_solution(rows, note, bykey.get(key), ans)
         except Exception as e:
             bad.append((key, str(e))); continue
