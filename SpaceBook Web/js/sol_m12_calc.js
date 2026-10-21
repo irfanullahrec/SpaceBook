@@ -164,4 +164,171 @@
       tx('Let h → 0:', 'f_{x}=2xy+y^{2}'),
       tx('For fᵧ keep x fixed and use the increment k in y:', '\\frac{x^{2}k+x[(y+k)^{2}-y^{2}]}{k}=x^{2}+2xy+xk\\ \\to\\ f_{y}=x^{2}+2xy')]);
   })();
+  /* ---------- differential equations: order and degree (Ex 10 review Q1, Q2) ---------- */
+  add('order', true, 'Find the order of 3(dy/dx)+2y=5.', [
+    'The order of a differential equation is the order of the highest derivative in it.',
+    tx('The only derivative present is the first one:', '3\\frac{dy}{dx}+2y=5\\ \\Rightarrow\\ \\text{highest derivative: }\\frac{dy}{dx}'),
+    tx('So:', '\\text{order}=1')]);
+  add('degree', true, 'Find the degree of (d²y/dx²)²−dy/dx+y=0.', [
+    'The degree is the power of the highest-order derivative once the equation is a polynomial in its derivatives.',
+    tx('The highest-order derivative is y″ = d²y/dx², and it appears squared:', '\\left(\\frac{d^{2}y}{dx^{2}}\\right)^{2}-\\frac{dy}{dx}+y=0'),
+    tx('So (the order is 2 and the degree is the exponent 2):', '\\text{degree}=2')]);
+
+  /* ---------- Euler's theorem (Ex 11.2 Q2) and partial-derivative MCQs ---------- */
+  (function () {
+    const f1 = (x, y) => 2 * x * x + 3 * x * y + 5 * y * y, f2 = (x, y) => 1 / (x * x + x * y + y * y);
+    const d = (f, x, y) => [(f(x + 1e-6, y) - f(x - 1e-6, y)) / 2e-6, (f(x, y + 1e-6) - f(x, y - 1e-6)) / 2e-6];
+    const eul = (f, n) => [[1.1, 0.7], [2.3, -0.4]].every(([x, y]) => { const g = d(f, x, y); return near(x * g[0] + y * g[1], n * f(x, y), 1e-4); });
+    add('euler', eul(f1, 2) && eul(f2, -2), 'Verify Euler’s theorem: (a) z=ax²+2hxy+by²; (b) z=(x²+xy+y²)^(−1).', [
+      'Euler’s theorem: if z is homogeneous of degree n, then x·zₓ + y·zᵧ = n·z.',
+      tx('(a) Hold a, h, b constant and differentiate:', 'z_{x}=2ax+2hy,\\qquad z_{y}=2hx+2by'),
+      tx('Multiply by x and y and add:', 'xz_{x}+yz_{y}=2ax^{2}+2hxy+2hxy+2by^{2}=2(ax^{2}+2hxy+by^{2})=2z'),
+      'So z is homogeneous of degree 2 and the theorem holds.',
+      tx('(b) Put Q = x² + xy + y² (positive away from the origin), so z = Q⁻¹ and Q is homogeneous of degree 2:', 'z_{x}=-\\frac{2x+y}{Q^{2}},\\qquad z_{y}=-\\frac{x+2y}{Q^{2}}'),
+      tx('Multiply by x and y and add:', 'xz_{x}+yz_{y}=-\\frac{2x^{2}+xy+xy+2y^{2}}{Q^{2}}=-\\frac{2Q}{Q^{2}}=-2z'),
+      'So z has degree −2 and the theorem holds on the plane without the origin.']);
+  })();
+  (function () {
+    const P = [[0.9, 1.3], [1.7, 0.6]];
+    const fx = (f, x, y) => (f(x + 1e-6, y) - f(x - 1e-6, y)) / 2e-6, fy = (f, x, y) => (f(x, y + 1e-6) - f(x, y - 1e-6)) / 2e-6;
+    add('review-11-iii', P.every(([x, y]) => near(fx((a, b) => a * a + b * b, x, y), 2 * x, 1e-4)), 'If f(x,y)=x²+y², then fₓ is: (a) 2y;', [
+      'For fₓ treat y as a constant.',
+      tx('Differentiate each term with respect to x:', 'f_{x}=\\frac{\\partial}{\\partial x}(x^{2})+\\frac{\\partial}{\\partial x}(y^{2})=2x+0=2x'),
+      'Option (b) is correct.']);
+    add('review-11-viii', P.every(([x, y]) => near(fx((a, b) => Math.cos(b) * Math.exp(3 * a), x, y), 3 * Math.cos(y) * Math.exp(3 * x), 1e-4)), 'If f(x,y)=cos y·e^(3x), then fₓ is:', [
+      'For fₓ the factor cos y is a constant.',
+      tx('Differentiate e^(3x) with the chain rule (inner derivative 3):', 'f_{x}=\\cos y\\cdot\\frac{\\partial}{\\partial x}e^{3x}=\\cos y\\cdot3e^{3x}=3\\cos y\\,e^{3x}'),
+      'Options (b) and (c) are the same expression in a different order, so the printed question has two correct choices.']);
+    add('review-11-ix', P.every(([x, y]) => near(fy((a, b) => 3 * a * Math.exp(b) + a ** 3 * b * b, x, y), 3 * x * Math.exp(y) + 2 * x ** 3 * y, 1e-4)), 'If f(x,y)=3xe^y+x³y², then fᵧ is:', [
+      'For fᵧ treat x as a constant.',
+      tx('Differentiate each term with respect to y:', 'f_{y}=3x\\frac{\\partial}{\\partial y}e^{y}+x^{3}\\frac{\\partial}{\\partial y}y^{2}=3xe^{y}+2x^{3}y'),
+      'Option (a) is correct.']);
+  })();
+
+  /* ---------- vector function MCQs (Ex 5 review) ---------- */
+  (function () {
+    const D1 = (g, t) => (g(t + 1e-6) - g(t - 1e-6)) / 2e-6;
+    add('vec vi', near(D1(t => t ** 3, -2), 12, 1e-4) && near(D1(t => -(3 + t * t), -2), 4, 1e-4), 'If \\(F⃗=t^3î-(3+t^2)k̂\\), then F⃗′(−2) is:', [
+      'Differentiate each component with respect to t; the unit vectors are constants.',
+      tx('Component derivatives:', '\\frac{d}{dt}t^{3}=3t^{2},\\qquad \\frac{d}{dt}\\left[-(3+t^{2})\\right]=-2t'),
+      tx('Substitute t = −2:', '3(-2)^{2}=12,\\qquad -2(-2)=4'),
+      tx('So:', '\\vec F\'(-2)=12\\hat\\imath+4\\hat k'),
+      'Option (c) is correct.']);
+    add('vec viii', near(D1(t => 5 * t * t, 1.3), 13, 1e-4) && near(D1(t => 3 * t, 1.3), 3, 1e-6), 'If r⃗ = 5t²î+3tĵ+k̂, then the velocity vector is:', [
+      'Velocity is the derivative of the position vector.',
+      tx('Differentiate each component:', '\\frac{d}{dt}(5t^{2})=10t,\\qquad \\frac{d}{dt}(3t)=3,\\qquad \\frac{d}{dt}(1)=0'),
+      tx('So:', '\\vec v=10t\\hat\\imath+3\\hat\\jmath'),
+      'Option (a) is correct.']);
+    add('vec ix', near(D1(Math.sin, 0.8), Math.cos(0.8), 1e-6) && near(D1(t => -2 * Math.cos(t), 0.8), 2 * Math.sin(0.8), 1e-6), 'If velocity v⃗ = sin(t)î−2cos(t)ĵ+4k̂, then acceleration a⃗ =', [
+      'Acceleration is the derivative of velocity.',
+      tx('Differentiate each component:', '\\frac{d}{dt}\\sin t=\\cos t,\\qquad \\frac{d}{dt}(-2\\cos t)=2\\sin t,\\qquad \\frac{d}{dt}(4)=0'),
+      tx('So:', '\\vec a=\\cos t\\,\\hat\\imath+2\\sin t\\,\\hat\\jmath'),
+      'No printed option has both signs right (option (d) has −2 sin t), so the question as printed has no correct choice.']);
+  })();
+
+  /* ---------- triangles from coordinates: area, angles, inscribed angle ---------- */
+  (function () {
+    const area = (A, B, C) => 0.5 * Math.abs(A[0] * (B[1] - C[1]) + B[0] * (C[1] - A[1]) + C[0] * (A[1] - B[1]));
+    add('areas (7.4 q5)', near(area([-3, 6], [3, 2], [6, 0]), 0) && near(area([-2, 4], [3, -6], [1, -2]), 0), 'Find the areas bounded by the vertices: (a) A(−3,6), B(3,2), C(6,0);', [
+      tx('Area from the vertices:', '\\text{Area}=\\frac12\\left|x_{1}(y_{2}-y_{3})+x_{2}(y_{3}-y_{1})+x_{3}(y_{1}-y_{2})\\right|'),
+      tx('(a) A(−3,6), B(3,2), C(6,0):', '\\frac12\\left|-3(2-0)+3(0-6)+6(6-2)\\right|=\\frac12\\left|-6-18+24\\right|=0'),
+      tx('(b) A(−2,4), B(3,−6), C(1,−2):', '\\frac12\\left|-2(-6+2)+3(-2-4)+1(4+6)\\right|=\\frac12\\left|8-18+10\\right|=0'),
+      'The area is 0 in both cases, so each set of three points lies on one straight line (collinear).']);
+    const ang = (P, Q, R) => { const u = [P[0] - Q[0], P[1] - Q[1]], v = [R[0] - Q[0], R[1] - Q[1]]; return { dot: u[0] * v[0] + u[1] * v[1], cr: Math.abs(u[0] * v[1] - u[1] * v[0]), deg: Math.atan2(Math.abs(u[0] * v[1] - u[1] * v[0]), u[0] * v[0] + u[1] * v[1]) * 180 / Math.PI }; };
+    const row = (nm, P, Q, R, u, v) => { const a = ang(P, Q, R); return tx('At ' + nm + ' the rays are ' + u + ' and ' + v + ': dot product ' + a.dot + ', cross magnitude ' + a.cr + '.', nm + '=\\operatorname{atan2}(' + a.cr + ',' + a.dot + ')\\approx ' + a.deg.toFixed(6) + '^{\\circ}'); };
+    const A = [-2, -3], B = [4, -1], C = [2, 3];
+    const a1 = ang(B, A, C), b1 = ang(A, B, C), c1 = ang(A, C, B);
+    add('angles WE 7.24', near(a1.deg, 37.874984, 1e-5) && near(b1.deg, 81.869898, 1e-5) && near(c1.deg, 60.255119, 1e-5) && near(a1.deg + b1.deg + c1.deg, 180, 1e-9), 'Find the interior angles of A(−2,−3), B(4,−1), C(2,3).', [
+      'At each vertex take the two rays to the other vertices; the interior angle is atan2(|cross|, dot), which avoids sign and supplement mistakes.',
+      row('A', B, A, C, 'AB=(6,2)', 'AC=(4,6)'), row('B', A, B, C, 'BA=(−6,−2)', 'BC=(−2,4)'), row('C', A, C, B, 'CA=(−4,−6)', 'CB=(2,−4)'),
+      tx('Check: the three angles add up to a straight angle:', '37.874984^{\\circ}+81.869898^{\\circ}+60.255119^{\\circ}=180^{\\circ}')]);
+    const T = [[[1, 2], [4, 2], [-2, 3], [161.565051, 9.462322, 8.972627]], [[3, -4], [1, 5], [2, -4], [77.471192, 6.188616, 96.340192]]];
+    const okT = T.every(([P, Q, R, st]) => { const g = [ang(Q, P, R), ang(P, Q, R), ang(P, R, Q)]; return g.every((x, i) => near(x.deg, st[i], 1e-5)) && near(g[0].deg + g[1].deg + g[2].deg, 180, 1e-9); });
+    const R7 = (nm, P, Q, R, u, v) => row(nm, P, Q, R, u, v);
+    add('angles 7.3 q7', okT, 'In each case, find the angles of the triangle ABC whose vertices are the following: (a) A(1,2), B(4,2) and C(−2,3);', [
+      'The interior angle at a vertex is atan2(|cross|, dot) of the two rays leaving it; a negative dot product gives an obtuse angle.',
+      tx('(a) A(1,2), B(4,2), C(−2,3).', '\\text{(a)}'), R7('A', [4, 2], [1, 2], [-2, 3], 'AB=(3,0)', 'AC=(−3,1)'), R7('B', [1, 2], [4, 2], [-2, 3], 'BA=(−3,0)', 'BC=(−6,1)'), R7('C', [1, 2], [-2, 3], [4, 2], 'CA=(3,−1)', 'CB=(6,−1)'),
+      tx('Sum check for (a):', '161.565051^{\\circ}+9.462322^{\\circ}+8.972627^{\\circ}=180^{\\circ}'),
+      tx('(b) A(3,−4), B(1,5), C(2,−4).', '\\text{(b)}'), R7('A', [1, 5], [3, -4], [2, -4], 'AB=(−2,9)', 'AC=(−1,0)'), R7('B', [3, -4], [1, 5], [2, -4], 'BA=(2,−9)', 'BC=(1,−9)'), R7('C', [3, -4], [2, -4], [1, 5], 'CA=(1,0)', 'CB=(−1,9)'),
+      tx('Sum check for (b):', '77.471192^{\\circ}+6.188616^{\\circ}+96.340192^{\\circ}=180^{\\circ}')]);
+    const insc = (r, A, S) => { const O = [0, 0]; return [ang(A.A, S, A.B).deg, ang(A.A, O, A.B).deg]; };
+    const s5 = Math.sqrt(5), s3 = Math.sqrt(3);
+    const ia = insc(3, { A: [2, s5], B: [2, -s5] }, [-3, 0]), ib = insc(2, { A: [1, s3], B: [1, -s3] }, [-2, 0]);
+    add('inscribed angle', near(ia[1], 2 * ia[0], 1e-9) && near(ia[0], 48.189685, 1e-5) && near(ib[0], 60, 1e-9) && near(ib[1], 120, 1e-9), 'Show the central angle subtended by minor arc AB is twice the inscribed angle on the major arc:', [
+      'Pick a point S on the major arc. The inscribed angle is ∠ASB and the central angle is ∠AOB (O is the centre). Use rays and atan2(|cross|, dot).',
+      tx('(a) S(−3,0): rays SA=(5,√5), SB=(5,−√5); dot 20, cross 10√5:', '\\angle ASB=\\operatorname{atan2}(10\\sqrt5,20)=\\tan^{-1}\\frac{\\sqrt5}{2}\\approx48.189685^{\\circ}'),
+      tx('Centre O(0,0): rays OA=(2,√5), OB=(2,−√5); dot −1, cross 4√5:', '\\angle AOB=\\operatorname{atan2}(4\\sqrt5,-1)\\approx96.379370^{\\circ}=2(48.189685^{\\circ})'),
+      tx('(b) S(−2,0): rays SA=(3,√3), SB=(3,−√3); dot 6, cross 6√3:', '\\angle ASB=\\operatorname{atan2}(6\\sqrt3,6)=60^{\\circ}'),
+      tx('Centre: OA=(1,√3), OB=(1,−√3); dot −2, cross 2√3:', '\\angle AOB=\\operatorname{atan2}(2\\sqrt3,-2)=120^{\\circ}=2(60^{\\circ})')]);
+    add('incenter JO', near(Math.sqrt(13 * 13 - 12 * 12), 5), 'Find JO in the source triangle LMN, with incenter O, LO = 13 and LH = 12.', [
+      'O is the incenter (meeting point of the angle bisectors), so its perpendicular distances to the three sides are equal: OH = OI = OJ.',
+      tx('Triangle LHO has a right angle at H (hypotenuse LO = 13, leg LH = 12):', 'LO^{2}=LH^{2}+HO^{2}'),
+      tx('Solve for HO:', 'HO^{2}=13^{2}-12^{2}=169-144=25\\ \\Rightarrow\\ HO=5'),
+      tx('Since JO = HO:', 'JO=5\\text{ units}')]);
+  })();
+
+  /* ---------- bisection iterates (Ex 12.1 Q2) ---------- */
+  (function () {
+    const parts = [
+      { nm: 'a', f: x => Math.exp(x) - 2 - x, t: 'e^{x}-2-x', a: 1, b: 1.8, res: [0.65519997, 0.12011692, -0.09583398, 0.00819291], fin: [1.1, 1.15] },
+      { nm: 'b', f: x => Math.cos(x) + 1 - x, t: '\\cos x+1-x', a: 0.8, b: 1.6, res: [0.16235775, -0.23003286, -0.03250117, 0.06532236], fin: [1.25, 1.3] },
+      { nm: 'c', f: x => Math.log(x) - 5 + x, t: '\\ln x-5+x', a: 3.2, b: 4, res: [-0.11906615, 0.13500107, 0.00833282, -0.05527283], fin: [3.65, 3.7] },
+      { nm: 'd', f: x => x * x - 10 * x + 23, t: 'x^{2}-10x+23', a: 3.2, b: 4, res: [-0.04, 0.56, 0.25, 0.1025], fin: [3.55, 3.6] }];
+    let ok = true; const steps = ['Bisection: c = (a + b)/2, evaluate f(c), and keep the half-interval where f changes sign. Intermediate values are not rounded.'];
+    parts.forEach(p => {
+      let a = p.a, b = p.b; steps.push(tx('(' + p.nm + ') f(x) = ' + p.t + ' on [' + a + ', ' + b + ']', 'f(x)=' + p.t));
+      for (let k = 0; k < 4; k++) {
+        const c = (a + b) / 2, fc = p.f(c);
+        if (!near(fc, p.res[k], 1e-7)) ok = false;
+        const fmt = v => String(+v.toFixed(6));
+        steps.push(tx('Iterate ' + (k + 1) + ': midpoint and residual.', 'c_{' + (k + 1) + '}=\\frac{' + fmt(a) + '+' + fmt(b) + '}{2}=' + fmt(c) + ',\\quad f(c_{' + (k + 1) + '})\\approx ' + (fc >= 0 ? '+' : '') + fc.toFixed(8)));
+        if (p.f(a) * fc < 0) b = c; else a = c;
+      }
+      if (!near(a, p.fin[0], 1e-9) || !near(b, p.fin[1], 1e-9)) ok = false;
+      steps.push(tx('After four updates the bracket is [' + +a.toFixed(6) + ', ' + +b.toFixed(6) + '] (width 0.05).', '[a,b]=[' + +a.toFixed(6) + ',\\,' + +b.toFixed(6) + ']'));
+    });
+    add('bisection', ok, 'Compute four bisection iterates: (a) e^x−2−x on [1,1.8];', steps);
+  })();
+
+  /* ---------- vector operations (Ex 5.1 Q2) ---------- */
+  (function () {
+    const t0 = 1.7, F = t => [2 * t, -5, t * t], G = t => [1 - t, 0, 1 / t], H = t => [Math.sin(t), Math.exp(t), 0];
+    const sub = (u, v, a, b) => u.map((x, i) => a * x - b * v[i]), cross = (u, v) => [u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]];
+    const dot = (u, v) => u[0] * v[0] + u[1] * v[1] + u[2] * v[2];
+    const A = sub(F(t0), G(t0), 2, 3), B = F(t0).map((x, i) => 3 * x + 4 * G(t0)[i]), Cr = cross(F(t0), H(t0));
+    const ok = near(A[0], 7 * t0 - 3) && near(A[2], 2 * t0 * t0 - 3 / t0) && near(B[0], 2 * t0 + 4) && near(B[2], 3 * t0 * t0 + 4 / t0) && near(dot(G(t0), H(t0)), (1 - t0) * Math.sin(t0)) &&
+      near(Cr[0], -t0 * t0 * Math.exp(t0)) && near(Cr[1], t0 * t0 * Math.sin(t0)) && near(Cr[2], 2 * t0 * Math.exp(t0) + 5 * Math.sin(t0));
+    add('vector operations', ok, 'Perform the operations with \\(F⃗(t)=2tî-5ĵ+t^2k̂\\)', [
+      tx('Components: F = (2t, −5, t²), G = (1−t, 0, 1/t), H = (sin t, eᵗ, 0).', '\\vec F=(2t,-5,t^{2}),\\ \\vec G=(1-t,0,\\tfrac1t),\\ \\vec H=(\\sin t,e^{t},0)'),
+      tx('(a) Scale first, then subtract component by component:', '2\\vec F-3\\vec G=(4t-3+3t,\\,-10-0,\\,2t^{2}-\\tfrac3t)=(7t-3,\\,-10,\\,2t^{2}-\\tfrac3t)'),
+      tx('(b) Scale first, then add:', '3\\vec F+4\\vec G=(6t+4-4t,\\,-15,\\,3t^{2}+\\tfrac4t)=(2t+4,\\,-15,\\,3t^{2}+\\tfrac4t)'),
+      tx('(c) The dot product is a scalar:', '\\vec G\\cdot\\vec H=(1-t)\\sin t+0\\cdot e^{t}+\\tfrac1t\\cdot0=(1-t)\\sin t'),
+      tx('(d) Cross product, components (F₂H₃−F₃H₂, F₃H₁−F₁H₃, F₁H₂−F₂H₁):', '\\vec F\\times\\vec H=(-t^{2}e^{t},\\ t^{2}\\sin t,\\ 2te^{t}+5\\sin t)'),
+      'Reversing the order in (d) would change every sign. (a)–(c) need t ≠ 0 because G is undefined at 0.']);
+  })();
+
+  /* ---------- integration by parts formula and the fundamental theorem (Ex 6 review) ---------- */
+  add('parts rule vi', true, '\\(\\int f(x)g′(x)\\,dx\\) = (a)', [
+    tx('Start from the product rule:', '(fg)\'=f\'g+fg\''),
+    tx('Solve for the term we want:', 'fg\'=(fg)\'-f\'g'),
+    tx('Integrate both sides (the integral of (fg)′ is fg):', '\\int f g\'\\,dx=fg-\\int f\'g\\,dx'),
+    'This is option (b); its second integrand contains f′.']);
+  add('parts rule q6', true, 'If d/dx[f(x)g(x)] is expanded, what is the corresponding antiderivative product relation?', [
+    tx('Product rule:', '\\frac{d}{dx}[f(x)g(x)]=f\'(x)g(x)+f(x)g\'(x)'),
+    tx('Integrate both sides and rearrange:', '\\int f(x)g\'(x)\\,dx=f(x)g(x)-\\int f\'(x)g(x)\\,dx+C')]);
+  add('equal limits', true, 'Show ∫ₐᵃf(x)dx = 0 using the fundamental theorem.', [
+    'Assume f has an antiderivative F on the interval.',
+    tx('Fundamental theorem (upper limit minus lower limit):', '\\int_{a}^{a}f(x)\\,dx=F(a)-F(a)'),
+    tx('Both values are the same number, so the difference is zero (the constant of integration cancels as well):', '=0')]);
+  add('ln derivative mcq', near((Math.log(2.5 + 1e-6) - Math.log(2.5 - 1e-6)) / 2e-6, 1 / 2.5, 1e-6), 'If f(x) = ln x, then f′(x) =', [
+    'The real natural logarithm needs x > 0.',
+    tx('Its derivative is the reciprocal of the input x (not of ln x):', '\\frac{d}{dx}\\ln x=\\frac1x,\\quad x>0'),
+    'Option (d) is correct.']);
+  (function () {
+    const f = Math.exp, x0 = 0.3, x = 0.9, p = n => { let s = 0, fa = 1; for (let k = 0; k <= n; k++) { s += f(x0) * (x - x0) ** k / fa; fa *= (k + 1); } return s; };
+    add('taylor mcq', Math.abs(p(8) - f(x)) < 1e-6, 'If f(x) and its derivatives at x = x₀ are f′(x₀), f″(x₀), … fⁿ(x), then the nth order polynomial', [
+      tx('The nth Taylor polynomial of f about x₀ uses every derivative evaluated at x₀:', 'p_{n}(x)=f(x_{0})+f\'(x_{0})(x-x_{0})+\\frac{f\'\'(x_{0})}{2!}(x-x_{0})^{2}+\\cdots+\\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}'),
+      'Option (b) has the right shape, but its linear coefficient is printed as f′(x) instead of f′(x₀), and the last one as fⁿ(x₀) correctly. No option is exactly right as printed.',
+      'Equality with f(x) holds only after adding a remainder term (or in special cases); the polynomial approximates f near x₀.']);
+  })();
 })(typeof window !== 'undefined' ? window : globalThis);
