@@ -45,3 +45,9 @@ After the data change: Tests Preps bank (`build_mcq_bank.js`), study index (`bui
 3. Translator pass over the lexicon queues; native review of c018.
 4. The 3 unresolved Physics MCQs; Class 11 Maths spot-check.
 5. Full `--all` layout run, and a human look at Urdu/Arabic pages with diacritics.
+
+## Left for the final regeneration (owner, from a clean checkout)
+Not done by this QA work, on purpose (shared files):
+1. `index.html`: add `<script src="js/sol_m12_calc.js?v=20261025_1"></script>` after the `sol_m12_hand.js` line and bump `vr_auto.js` to `?v=20261025_5`. Without this the 18 calculus packs do not load.
+2. Regenerate: `node tools/build/all.js` (lazy page + manifest, search index, offline map, service-worker version, Tests Preps bank, study index, lexicon). The Tests Preps bank and `no_key.csv` already reflect the Physics 12 keys in the working tree; the lexicon already includes `docs/lexicon/curated/c018.txt`.
+3. Commit the regenerated outputs together with the sources above.
