@@ -3,6 +3,7 @@
  "containers": [
   "CLASS11_BOOKS",
   "CLS10_BOOKS",
+  "CLS12_BOOKS",
   "CLS1_BOOKS",
   "CLS2_BOOKS",
   "CLS3_BOOKS",
@@ -221,8 +222,8 @@
   },
   {
    "src": "js/physics_10_book_data.js",
-   "bytes": 1708968,
-   "sha256": "c1b78b3a11f21791d55914f453751e917913f064c210dd35e63604d66ae4969a",
+   "bytes": 2459348,
+   "sha256": "0354872073ccd8263aeb1ee2379c421856d87cf69c55458a3145696a184cd556",
    "stubs": [
     {
      "name": "PHYSICS_10_BOOK_DATA",
@@ -232,6 +233,46 @@
    "keys": {
     "CLS10_BOOKS": [
      "phys"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/biology_10_book_data.js",
+   "bytes": 2454807,
+   "sha256": "fcafd42c0afc00f8c4f05380ce53c36707fb1ad58630f58f286672ce8430f384",
+   "stubs": [
+    {
+     "name": "BIOLOGY_10_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "bio"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/math_10_book_data.js",
+   "bytes": 1342329,
+   "sha256": "bf9de0eff4aebb44162675e4e5a31fe7e910f16e997a7c623cc9c5c9fd2c14dc",
+   "stubs": [
+    {
+     "name": "MATH_10_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS10_BOOKS": [
+     "math"
     ]
    },
    "fns": [],
@@ -730,8 +771,8 @@
   },
   {
    "src": "js/english_1_book.js",
-   "bytes": 1393554,
-   "sha256": "a5d98c3292a67c7386217723641ac3e9f644cea0969330c5c60e28ba1e9b478d",
+   "bytes": 1393914,
+   "sha256": "e3103e4b7b040a7709107068252f0218b66d5d584c8caa91c94c47b09bf1966e",
    "stubs": [
     {
      "name": "ENGLISH_1_BOOK",
@@ -1017,6 +1058,66 @@
    "keys": {
     "CLS9_BOOKS": [
      "hpe"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/biology_9_book.js",
+   "bytes": 2381116,
+   "sha256": "fe9b4efdaafdbc31796e26c6a764b990ff1c42f3fe7fdf8bafa6e405702da338",
+   "stubs": [
+    {
+     "name": "BIOLOGY_9_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "bio"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/chemistry_9_book.js",
+   "bytes": 2709996,
+   "sha256": "e28717ebfa3ecb0b1b7774cdefce31ff860896bb02760ae5ce56dd881e31ceed",
+   "stubs": [
+    {
+     "name": "CHEMISTRY_9_BOOK",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "chem"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/math_9_book_data.js",
+   "bytes": 1172977,
+   "sha256": "7ab4e2ee3e4275218c9699edf52699339ffb1c70dce81ebe3442a42b0cc39747",
+   "stubs": [
+    {
+     "name": "MATH_9_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS9_BOOKS": [
+     "math"
     ]
    },
    "fns": [],
@@ -1734,8 +1835,8 @@
   },
   {
    "src": "js/math_12_data.js",
-   "bytes": 5822091,
-   "sha256": "a36970b238c5fb6d90a8da54be72f3d5221ac3e2f5657bc460f125484d611e60",
+   "bytes": 5829127,
+   "sha256": "2c5df428ef75591d613a48bbbc7684d412bb0a88e89a829911073306b2bf3edc",
    "stubs": [
     {
      "name": "MATH_12_DATA",
@@ -2696,6 +2797,46 @@
      "sha256": "390eaa5745797927a358f2d23d9b7e1bec5900fa4b11f110684b1fe3b091e193"
     }
    ]
+  },
+  {
+   "src": "js/math_12_pagebook_data.js",
+   "bytes": 4467027,
+   "sha256": "c825daf38276c3fe53c329cdc1b7e4af9e3f3b127e8b8ed0e4b9d388fd7d648a",
+   "stubs": [
+    {
+     "name": "MATH_12_PAGEBOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS12_BOOKS": [
+     "math"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
+  },
+  {
+   "src": "js/statistics_12_book_data.js",
+   "bytes": 1553222,
+   "sha256": "c387e76a7392c482ec168f231d0272642d4bccec4269af59db12d534f53e295b",
+   "stubs": [
+    {
+     "name": "STATISTICS_12_BOOK_DATA",
+     "kind": "array"
+    }
+   ],
+   "keys": {
+    "CLS12_BOOKS": [
+     "stat"
+    ]
+   },
+   "fns": [],
+   "dataKeys": [],
+   "also": [],
+   "after": []
   },
   {
    "src": "js/phys_11_data.js",
@@ -6752,8 +6893,8 @@
   },
   {
    "src": "js/pashto_8_data.js",
-   "bytes": 1689000,
-   "sha256": "1ef7262d7e1d239ca03b4acf5c2dee988dcaf6c6a6da30f21757ac6f663b3c19",
+   "bytes": 691651,
+   "sha256": "dcabed6fdcc1b241ca2a5a72e6e909428cfd2e5db0ddf4ed27a2337f65f120d1",
    "stubs": [
     {
      "name": "PASHTO_8_DATA",
@@ -6792,8 +6933,8 @@
   },
   {
    "src": "js/drawing_8_data.js",
-   "bytes": 44949,
-   "sha256": "78f350bc9db4cf215c8500d2cdfb455917117d7637797980313befeb48b4b6ba",
+   "bytes": 189579,
+   "sha256": "2bae8eefe943e691a55afd9ed25972716dc372bc7748afeec6d014b298a9fc97",
    "stubs": [
     {
      "name": "DRAWING_8_DATA",
@@ -6812,8 +6953,8 @@
   },
   {
    "src": "js/hpe_8_data.js",
-   "bytes": 474866,
-   "sha256": "fb4a2ec042d5936333023c2c59ad6d758a3d93d6526370e88b3a0bf8f72c43ff",
+   "bytes": 407162,
+   "sha256": "6b5136179a13fbf98aa8d8ed8c75feb50f4c70085ab189070a136fd8bca4a855",
    "stubs": [
     {
      "name": "HPE_8_DATA",
@@ -6856,8 +6997,8 @@
   },
   {
    "src": "js/lexicon_data.js",
-   "bytes": 636347,
-   "sha256": "00d8650d8030123b57419c3f07a12e795adf6e3fd5db8c65435503bfe3c9de36",
+   "bytes": 475860,
+   "sha256": "85192e3bcb53feb17fa36f23b40aea7f75510701d7b0acde6c89e589035e7536",
    "stubs": [
     {
      "name": "SB_LEXICON_V1",
@@ -6873,7 +7014,7 @@
   {
    "src": "js/study_plan_index.js",
    "bytes": 224405,
-   "sha256": "17c8afe86f01b5f82a84abd351844fab5e5e8c059caec50d91e8a6ca39b98cd2",
+   "sha256": "4f9919320d93f3392f9171ea0042c4ee00b897f5238ddf7efcdb4346600e8d1e",
    "stubs": [
     {
      "name": "SB_STUDY_INDEX",
