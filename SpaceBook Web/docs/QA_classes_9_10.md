@@ -1,4 +1,4 @@
-﻿# QA report: Classes 9 and 10 (2026-10-22)
+# QA report: Classes 9 and 10 (2026-10-22)
 
 Scope: every book in `CLS9_BOOKS` / `CLS10_BOOKS` (11 + 12 books, about 5,000 pages). Class 9 Physics, Class 9 Urdu and Class 10 English are not page books (legacy data) and were **not** audited here.
 Tools (all dev-only, in `tools/qa/`): `audit_c9_c10.js` (structure, answers, KaTeX, MCQ keys), `list_unanswered.py`, `apply_answers.py`, `split_compound_sols.py`, `collapse_dup_sol.py`, `vr_coverage_c9_c10.js`, `word_gaps_c9_c10.js`, `sentence_gaps_c9_c10.js`, `browser_harness.js`.
