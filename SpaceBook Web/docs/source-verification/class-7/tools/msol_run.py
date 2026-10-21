@@ -40,6 +40,7 @@ def category(ins):
     if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
     if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
     if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'length and area of the following measurements', s): return 'sector'
     if re.search(r'rules of the following patterns|observe the following sequences', s): return 'seq'
     if re.search(r'^write the following in exponential form', s): return 'repprod'
     if re.search(r'^find the value of [a-z] in', s): return 'findvalue'
@@ -74,6 +75,9 @@ def category(ins):
     return None
 
 
+CUR = {}
+
+
 def build(cat, ins, part_text):
     """returns (steps, result) or raises"""
     if cat == 'recip': return msol2.reciprocal_steps(unwrap(part_text))
@@ -102,6 +106,7 @@ def build(cat, ins, part_text):
             raise msol.ParseError('law check')
         return st, rs
     if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'sector': return msol6.sector(part_text, CUR.get('k'))
     if cat == 'seq': return msol7.sequence(part_text)
     if cat == 'repprod': return msol7.repeated_product(unwrap(part_text))
     if cat == 'findvalue': return msol2.solve_linear(unwrap(part_text))
@@ -192,6 +197,8 @@ def build(cat, ins, part_text):
 
 
 def result_tex(res):
+    if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], float):
+        return f'arc length {res[0]:.2f}, area {res[1]:.2f}'
     if isinstance(res, tuple) and len(res) == 2 and isinstance(res[0], str):
         return res[0] + ((': ' + ', '.join(msol.tex_num(v) for v in res[1])) if res[1] else '')
     if isinstance(res, tuple) and len(res) == 2:
@@ -435,12 +442,15 @@ def run(cl):
             stats.setdefault(cat.split(':')[0], [0, 0, 0, 0])
             stats[cat.split(':')[0]][0] += 1
             try:
+                CUR['k'] = keymap.get(no.lower()) if no else keymap.get('')
                 steps, res = build(cat, ins, text)
             except Exception as e:
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
             k0 = q['key'] or ''
-            if cat == 'seq':
+            if cat == 'sector':
+                ok = (all(any(abs(v - x) < 0.011 * max(1, x) for x in nums(k)) for v in res)) if k else None
+            elif cat == 'seq':
                 kind, more = res
                 if not k: ok = None
                 elif more: ok = all(msol.tex_num(v) in re.findall(r'-?\d+\.?\d*', k.replace('−', '-')) or str(int(v)) in re.findall(r'-?\d+', k) for v in more)

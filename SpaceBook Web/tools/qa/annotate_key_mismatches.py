@@ -16,6 +16,7 @@ NOTES = {
  ('7.1', '1'): r"[Check] For the equations as printed: (ii) $\frac35x-\frac23=2$ gives $x=\frac{40}{9}$; (iii) $6x-5=2x+9$ gives $x=\frac72$; (v) $\frac1{7x+13}=\frac29$ gives $x=-\frac{17}{14}$ (printed key values differ in these three parts).",
  ('7.1', '5'): r"[Check] For the question as printed (father 41, son 9, three times as old): $41+x=3(9+x)$ gives $x=7$ years (the printed key's 95 belongs to Q6).",
  ('7.1', '6'): r"[Check] For the question as printed: $t=u+4$ and $t=2u-1$ give $u=5,\ t=9$, so the number is 95 (the printed key gives 46).",
+ ('3.5', '3'): r"[Check] Part (ii): $\log_{\sqrt3}a=\log_{\sqrt3}5+\log_{\sqrt3}8-\log_{\sqrt3}2$ gives $a=rac{5\cdot8}{2}=20$ (the printed key gives 30).",
  ('16.1', '4'): r"[Check] $18\times30$ ft $=540$ ft$^2=77760$ in$^2$; one tile is $64$ in$^2$, so $1215$ tiles are needed (the printed key gives 6720).",
 }
 done = 0

@@ -55,3 +55,30 @@ def rotate(point, desc):
              S(f'{ang}° {"clockwise" if cw else "counterclockwise"} is the same as {ccw}° counterclockwise about the origin, with the rule:', f'{ang}° {"گھڑی کی سمت" if cw else "گھڑی کی مخالف سمت"} {ccw}° گھڑی کی مخالف سمت کے برابر ہے، قاعدہ:', f'{ang}° {"د ساعت په لور" if cw else "د ساعت پر خلاف"} د {ccw}° د ساعت پر خلاف سره برابر دی، قاعده:', rule),
              S('Substitute the coordinates:', 'محدد رکھیں:', 'همغږۍ کېږدئ:', f"P'({nx}, {ny})")]
     return steps, (nx, ny)
+
+
+def sector(text, key):
+    """r (or d) and central angle theta -> arc length and sector area; pi = 3.14 or 22/7, whichever the printed key uses."""
+    t = text.replace('$', '').replace(BS + 'theta', 'θ').replace('°', '').replace('−', '-')
+    mr = re.search(r'r\s*=\s*([\d.]+)', t); md = re.search(r'd(?:iameter)?\s*=?\s*([\d.]+)', t); mt = re.search(r'θ\s*=\s*([\d.]+)', t)
+    if not mt or not (mr or md):
+        raise ParseError('sector')
+    r = Fraction(mr.group(1)) if mr else Fraction(md.group(1)) / 2
+    th = Fraction(mt.group(1))
+    res = []
+    for name, pi in (('3.14', Fraction(314, 100)), ('22/7', Fraction(22, 7))):
+        arc = th / 360 * 2 * pi * r
+        area = th / 360 * pi * r * r
+        res.append((name, pi, arc, area))
+    pick = res[0]
+    if key:
+        kn = [float(x) for x in re.findall(r'\d+\.?\d*', key)]
+        for cand in res:
+            if any(abs(float(cand[2]) - x) < 0.011 * max(1, x) for x in kn) or any(abs(float(cand[3]) - x) < 0.011 * max(1, x) for x in kn):
+                pick = cand; break
+    name, pi, arc, area = pick
+    pit = '3.14' if name == '3.14' else BS + 'frac{22}{7}'
+    steps = [step('given', f'r = {msol.tex_num(r)},\; {BS}theta = {msol.tex_num(th)}°'),
+             S(f'Arc length = (θ ÷ 360) × 2πr, with π = {name}:', f'قوس کی لمبائی = (θ ÷ 360) × 2πr، جہاں π = {name}:', f'د قوس اوږدوالی = (θ ÷ 360) × 2πr، چېرته π = {name}:', f'l = {BS}frac{{{msol.tex_num(th)}}}{{360}} {BS}times 2 {BS}times {pit} {BS}times {msol.tex_num(r)} = {float(arc):.3f}'),
+             S('Sector area = (θ ÷ 360) × πr²:', 'قطاع کا رقبہ = (θ ÷ 360) × πr²:', 'د سکتور مساحت = (θ ÷ 360) × πr²:', f'A = {BS}frac{{{msol.tex_num(th)}}}{{360}} {BS}times {pit} {BS}times {msol.tex_num(r)}^2 = {float(area):.3f}')]
+    return steps, (float(arc), float(area))
