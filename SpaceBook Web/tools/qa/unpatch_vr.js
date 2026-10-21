@@ -1,0 +1,10 @@
+const fs=require('fs');const p='js/vr_auto.js';let s=fs.readFileSync(p,'utf8');
+const cut=(a,b)=>{if(!s.includes(a))throw new Error('missing '+a.slice(0,40));s=s.replace(a,()=>b);};
+cut(/* */"  /* units written after a number (\"12.8 V\", \"5 × 60 s\", \"16 A·Ω\"): shown upright, the text is kept as written */\n  const UNIT1 = /^(?:V|A|W|J|C|N|m|s|g|K|T|F|H|L|S|G)$/;\n  const UNITN = new Set(['kg', 'cm', 'mm', 'km', 'Hz', 'Pa', 'eV', 'keV', 'MeV', 'mol', 'rad', 'kW', 'MW', 'kJ', 'kN', 'ms', 'ns', 'dm', 'mg', 'mL', 'kPa', 'Wb', 'cal', 'kcal', 'atm', 'kHz', 'MHz', 'GHz', 'nm', 'dB', 'cd']);\n","");
+cut("    let unitMode = false;\n","");
+cut("      if (!(ch === ' ' || ch === '·' || ch === '/' || ch === 'Ω' || SUP[ch] !== undefined || SUB[ch] !== undefined || /[A-Za-z]/.test(ch))) unitMode = false;\n","");
+s=s.replace(/      if \(unitMode && ch === 'Ω'\)[^\n]*\n/,'');
+s=s.replace(/        if \(\(unitMode \|\| \(s\[i - 1\][^\n]*\n        unitMode = false;\n/,'');
+cut("OPS.includes(run) || UNITN.has(run)","OPS.includes(run)");
+s=s.replace("'Ω': '\Omega ', ",'');
+fs.writeFileSync(p,s);

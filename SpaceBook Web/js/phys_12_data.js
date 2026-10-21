@@ -107793,6 +107793,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "Three resistors of resistance R each are combined in various ways. Which of the following cannot be obtained?",
           "questionUrdu": "R مزاحمت والے تین مزاحم مختلف طریقوں سے جوڑے جاتے ہیں۔ درج ذیل میں سے کون سی قدر حاصل نہیں کی جا سکتی؟",
           "questionPashto": "درې مقاومتونه چې هر یو R مقاومت لري، په بېلابېلو لارو یوځای کېږي. له لاندې کوم یو نه شي ترلاسه کېدای؟",
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -107833,6 +107835,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "When n resistances each of value r are connected in parallel, the resultant resistance is x. When these n resistances are connected in series, total resistance is",
           "questionUrdu": "جب r قدر کے n مزاحم متوازی جوڑے جائیں تو حاصل مزاحمت x ہے۔ ان n مزاحموں کو سلسلہ وار جوڑنے پر کل مزاحمت کیا ہو گی؟",
           "questionPashto": "کله چې د r ارزښت لرونکي n مقاومتونه موازي ونښلول شي، پایله‌ییز مقاومت x وي. د همدې n مقاومتونو په لړۍ نښلولو ټول مقاومت به څومره وي؟",
+          "answer": "D",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -107873,6 +107877,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "Two bulbs marked 200 watt–250 volts and 100 watt–250 volts are joined in series to a 250 volts supply. Power consumed in circuit is",
           "questionUrdu": "200 واٹ–250 وولٹ اور 100 واٹ–250 وولٹ کے دو بلب 250 وولٹ سپلائی کے ساتھ سلسلہ وار جوڑے گئے ہیں۔ سرکٹ میں استعمال ہونے والی طاقت ہے:",
           "questionPashto": "د 200 واټه–250 ولټه او 100 واټه–250 ولټه دوه څراغونه له 250 ولټه سرچینې سره په لړۍ نښلول شوي. په مدار کې مصرفېدونکی توان دی:",
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -107913,6 +107919,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "Resistance of a wire is r ohms. The wire is stretched to double its length, then its resistance in ohms is",
           "questionUrdu": "ایک تار کی مزاحمت r اوہم ہے۔ تار کو کھینچ کر اس کی لمبائی دوگنی کر دی جاتی ہے، تو اوہم میں اس کی مزاحمت ہو گی:",
           "questionPashto": "د یوه سیم مقاومت r اوم دی. سیم داسې غځول کېږي چې اوږدوالی یې دوه برابره شي؛ نو مقاومت به یې په اوم کې څومره وي؟",
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -107953,6 +107961,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "\\(10^6\\) electrons are moving through a wire per second. The current developed is",
           "questionUrdu": "\\(10^6\\) الیکٹران فی سیکنڈ تار میں سے گزر رہے ہیں۔ پیدا ہونے والی برقی رو ہے:",
           "questionPashto": "\\(10^6\\) الکترونونه په هره ثانیه کې له سیم څخه تېرېږي. پیدا شوی جریان دی:",
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -107993,6 +108003,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "When a wire is stretched and its radius becomes r/2, then its resistance will be",
           "questionUrdu": "جب تار کو کھینچ کر اس کا رداس r/2 ہو جائے تو اس کی مزاحمت ہو گی:",
           "questionPashto": "کله چې سیم وغځول شي او شعاع یې r/2 شي، مقاومت به یې وي:",
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -108033,6 +108045,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "How much voltage is required to make 2 A flow through a resistance of 8 Ω?",
           "questionUrdu": "8 Ω مزاحمت میں 2 A برقی رو گزارنے کے لیے کتنا وولٹیج درکار ہے؟",
           "questionPashto": "د 8 Ω مقاومت له لارې د 2 A جریان د تېرولو لپاره څومره ولتاژ ته اړتیا ده؟",
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -108073,6 +108087,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "A wire of uniform cross-section, area A, length L and resistance R is cut into two equal parts. The resistivity of each part will be",
           "questionUrdu": "یکساں رقبۂ مقطع A، لمبائی L اور مزاحمت R والی تار کو دو برابر حصوں میں کاٹا جاتا ہے۔ ہر حصے کی مزاحمت النوعی ہو گی:",
           "questionPashto": "یو شان مقطع A، اوږدوالي L او مقاومت R لرونکی سیم په دوو مساوي برخو وېشل کېږي. د هرې برخې مخصوص مقاومت به وي:",
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A",
@@ -108127,6 +108143,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "The resistivity of two wires is \\(\\rho_1\\) and \\(\\rho_2\\), which are connected in series. If their dimensions are same, then the equivalent resistivity of the combination will be",
           "questionUrdu": "دو تاروں کی مزاحمت النوعی \\(\\rho_1\\) اور \\(\\rho_2\\) ہے اور انہیں سلسلہ وار جوڑا گیا ہے۔ اگر ان کے ابعاد یکساں ہوں تو امتزاج کی مساوی مزاحمت النوعی ہو گی:",
           "questionPashto": "د دو سیمونو مخصوص مقاومتونه \\(\\rho_1\\) او \\(\\rho_2\\) دي او په لړۍ نښلول شوي. که ابعاد یې یو شان وي، د ترکیب معادل مخصوص مقاومت به وي:",
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A.",
@@ -108167,6 +108185,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "The powers of two electric bulbs are 100 W and 200 W. Which are connected to power supply of 220 V? The ratio of resistance of their filament will be",
           "questionUrdu": "دو برقی بلبوں کی طاقتیں 100 W اور 200 W ہیں اور انہیں 220 V کی سپلائی سے جوڑا گیا ہے۔ ان کے فلامنٹس کی مزاحمت کا تناسب ہو گا:",
           "questionPashto": "د دو برېښنايي څراغونو توانونه 100 W او 200 W دي او د 220 V برېښنايي سرچینې سره نښلول شوي. د فلامنټونو د مقاومت نسبت به وي:",
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A.",
@@ -108207,6 +108227,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "Thermocouple is an arrangement of two different metals",
           "questionUrdu": "تھرموکپل دو مختلف دھاتوں کا انتظام ہے:",
           "questionPashto": "ترموکوپل د دوو بېلابېلو فلزونو ترتیب دی:",
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "a)",
@@ -108247,6 +108269,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "In order to achieve high accuracy, the slide wire of a potentiometer should be",
           "questionUrdu": "زیادہ درستی حاصل کرنے کے لیے پوٹینشیومیٹر کی سلائیڈ وائر ہونی چاہیے:",
           "questionPashto": "د لوړې کره‌والي لپاره د پوتنشیومیتر ښویېدونکی سیم باید:",
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A.",
@@ -108287,6 +108311,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "When a potentiometer is used for measurement of voltage of an unknown source, the power consumed in the circuit of the unknown source under null condition is",
           "questionUrdu": "نامعلوم منبع کے وولٹیج کی پیمائش کے لیے پوٹینشیومیٹر استعمال ہو تو صفر حالت میں نامعلوم منبع کے سرکٹ میں استعمال ہونے والی طاقت ہوتی ہے:",
           "questionPashto": "کله چې د نامعلومې سرچینې د ولتاژ د اندازه کولو لپاره پوتنشیومیتر وکارول شي، د صفر حالت پر مهال د سرچینې په مدار کې مصرفېدونکی توان وي:",
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A.",
@@ -108327,6 +108353,8 @@ PHYS_12_DATA[0].topics = PHYS_12_DATA[0].sections.map(section => ({...PHYS_12_DA
           "question": "In a Wheatstone bridge method, the bridge is said to be balanced, when the current through the galvanometer is",
           "questionUrdu": "وہیٹ اسٹون برج کے طریقے میں برج کو متوازن کہا جاتا ہے جب گیلوانومیٹر میں برقی رو ہو:",
           "questionPashto": "د وېټسټون پُل په طریقه کې پُل هغه وخت متوازن بلل کېږي چې د ګالوانومیټر جریان وي:",
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "choices": [
             {
               "label": "A.",
@@ -115313,6 +115341,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115346,6 +115376,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115379,6 +115411,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115412,6 +115446,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115445,6 +115481,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115478,6 +115516,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115511,6 +115551,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115544,6 +115586,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115577,6 +115621,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115610,6 +115656,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115643,6 +115691,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "D",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115676,6 +115726,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115709,6 +115761,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         },
         {
@@ -115742,6 +115796,8 @@ for (const entry of audit.formulas) {
               "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook"
         }
       ],
@@ -118957,6 +119013,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "ایک بار Q کو دو حصوں q اور Q−q میں تقسیم کر کے ان کے درمیان فاصلہ R رکھا جاتا ہے۔ ان کے درمیان دفع کی قوت کب زیادہ سے زیادہ ہوگی؟",
           "optionsUrdu": [
@@ -118989,6 +119047,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "تین اجسام کو باری باری دو دو کر کے قریب لایا جاتا ہے۔ A اور B ایک دوسرے کو کھینچتے ہیں، جبکہ B اور C ایک دوسرے کو دفع کرتے ہیں۔ اس سے نتیجہ نکلتا ہے کہ:",
           "optionsUrdu": [
@@ -119021,6 +119081,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "جسم A پر \\(+2\\,\\mu\\mathrm C\\) اور جسم B پر \\(+6\\,\\mu\\mathrm C\\) بار ہے۔ اجسام پر برقی قوتوں کے بارے میں کون سا بیان درست ہے؟",
           "optionsUrdu": [
@@ -119053,6 +119115,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "ایک موصل کو کچھ بار دیا جاتا ہے۔ اس کا پوٹینشل:",
           "optionsUrdu": [
@@ -119085,6 +119149,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "B",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand. Volt/metre is an equivalent unit; N/C is the defining form.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "د برقی میدان شدت کی اکائی ہے:",
           "optionsUrdu": [
@@ -119117,6 +119183,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 46
             }
           ],
+          "answer": "C",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "پروٹون الیکٹران سے تقریباً 1840 گنا بھاری ہے۔ جب اسے \\(1\\,\\mathrm{kV}\\) کے فرقِ پوٹینشل سے تیز کیا جائے تو اس کی حرکی توانائی ہوگی:",
           "optionsUrdu": [
@@ -119181,6 +119249,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 47
             }
           ],
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "ایک بار q کو ضلع a والے مکعب کے مرکز پر رکھا جائے۔ اس کے ایک رخ سے برقی فلوکس ہوگا:",
           "optionsUrdu": [
@@ -119213,6 +119283,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 47
             }
           ],
+          "answer": "D",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "مرکز پر رکھے بار q کے باعث کرہ کی سطح سے گزرنے والا برقی فلوکس کس پر منحصر ہے؟",
           "optionsUrdu": [
@@ -119245,6 +119317,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 47
             }
           ],
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand.",
           "solutionOrigin": "not_provided_in_textbook",
           "questionUrdu": "ٹی وی کا ایک مائیکروفیراڈ کیپیسٹر 4000 وولٹ کے فرقِ پوٹینشل سے جوڑا جاتا ہے۔ اس میں ذخیرہ توانائی ہے:",
           "optionsUrdu": [
@@ -119349,6 +119423,8 @@ if (audit.replaceDefinitions) PHYS_12_DATA[9].definitions = [...(audit.definitio
               "printedPage": 48
             }
           ],
+          "answer": "A",
+          "answerOrigin": "Derived (the textbook prints no key); worked out and checked by hand. Taking W as the work done by the field (the external agent does +qΔV).",
           "solutionOrigin": "not_provided_in_textbook",
           "options": [
             "A. \\(W=-q\\Delta V\\)",
