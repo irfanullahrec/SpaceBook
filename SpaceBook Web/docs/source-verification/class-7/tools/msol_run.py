@@ -5,7 +5,7 @@
 import sys, json, re
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4
+import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4, msol5
 from msol import step
 
 HERE = Path(__file__).resolve().parents[2]
@@ -40,6 +40,8 @@ def category(ins):
     if re.search(r'reduced form|lowest terms|simplest form', s): return 'reduced'
     if re.search(r'equivalent rational|equivalent fractions', s): return 'equiv'
     if re.search(r'^find the square of the following', s): return 'square'
+    if re.search(r'linear inequalit', s): return 'ineq'
+    if re.search(r'system of linear equations graphically', s): return 'graphsys'
     if re.search(r'identify and the properties used', s): return 'identprop'
     if re.search(r'rational and which are irrational', s): return 'ratirr'
     if re.search(r'^identify terminating and non-terminating', s): return 'deckind'
@@ -94,6 +96,8 @@ def build(cat, ins, part_text):
             raise msol.ParseError('law check')
         return st, rs
     if cat == 'expo_simp': return msol4.simplify_expr(unwrap(part_text))
+    if cat == 'ineq': return msol5.inequality(unwrap(part_text))
+    if cat == 'graphsys': return msol5.graph_system(part_text)
     if cat == 'identprop': return msol4.identify_property(unwrap(part_text))
     if cat == 'ratirr': return msol4.classify_real(part_text)
     if cat == 'deckind': return msol4.decimal_kind(part_text)
@@ -170,6 +174,9 @@ def build(cat, ins, part_text):
 
 
 def result_tex(res):
+    if isinstance(res, tuple) and len(res) == 3:
+        import sympy as _s
+        return f'{res[0]} {res[1]} {_s.latex(res[2])}'
     if isinstance(res, dict):
         import sympy as _sp
         return ', '.join(f'{k} = {_sp.latex(v)}' for k, v in res.items())
@@ -411,7 +418,11 @@ def run(cl):
                 continue
             k = keymap.get(no.lower()) if no else keymap.get('')
             k0 = q['key'] or ''
-            if cat == 'identprop':
+            if cat == 'ineq':
+                ok = msol5.key_ineq_match(k, res) if k else None
+            elif cat == 'graphsys':
+                ok = None
+            elif cat == 'identprop':
                 _w = [w for w in res.lower().split() if w not in ('property', 'of', 'by')]
                 ok = all(w in (k or '').lower() for w in _w) if k else None
             elif cat == 'ratirr':
