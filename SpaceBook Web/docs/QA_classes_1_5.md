@@ -13,10 +13,10 @@ This is a **partial** pass. The seven checks are very large for ~29 books (about
 | Class 1 Math | Every plain-arithmetic item already has an answer (0 found by the new tool). |
 | Class 2 Math | Same: 0 missing (parts are answered through the parent `qsolve`). |
 | Class 3 Math | Same: 0 missing. |
-| **Class 4 Math** | **Had no answers at all (0 of 1,181 question lines).** 70 plain-arithmetic items now have an answer plus a 3-5 step working (column add/subtract, multiplication, long division with check). Computed, not typed; spot-checked 13,927 + 2,415 = 16,342, 431 × 35 = 15,085, 1,766 ÷ 22 = 80 r 6. |
+| **Class 4 Math** | **Had no answers at all (0 of 1,181 question lines).** Now 827 answers: 70 computed plain-arithmetic items with 3-5 step working (all 70 animatable; all 70 agree with the printed key) plus 757 copied from the book's printed answer key (`class-4/tools/keyans4.py`, answers pages 173-181). |
 | Class 5 Math | 2 items added (`100 × 100`, `1,000 × 10`); 955 → 957 solutions. |
 
-**Still open (Class 4 Math):** ~830 question lines have no answer: word problems (about 150), fraction work, "write in words", expanded form, number patterns, comparing, factors/multiples, measurement, geometry, data. The book also prints an answer key (`answers` pages in `class-4/math`); transcribing it into `sol` lines is the right next step and was not done.
+**Still open (Class 4 Math):** ~43 stems remain without an answer: drawing, measuring, colouring, marking and labelling items (geometry unit 6, patterns, prime-colouring) which the key does not cover, and the parent stems of graph questions whose parts do have answers. Key entries with no question: Exercise 1 (page 5) and Exercise 2 (page 8) (those textbook pages are missing from every source) and Exercise 3 (page 173) (no matching exercise header in the transcribed pages). The key gives only the final value, so non-arithmetic answers are one-step ("printed answer key") and are not animated.
 Other books: the scan lists questions without an answer for Class 4 English (182), Urdu (82), Class 3 English (59), Class 5 English (136) and Urdu (35). Many of these are oral/discussion prompts ("Practise greetings…") that have no single answer; they were **not** individually triaged.
 MCQs without keys: the scan counted 0 per book, but `docs/test_prep_review/no_key.csv` is the authoritative list for the Tests Preps bank.
 
