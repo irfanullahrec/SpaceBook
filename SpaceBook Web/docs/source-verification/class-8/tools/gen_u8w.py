@@ -36,15 +36,20 @@ add('6.2|8|', [r'\text{Width at the start} = 15,\; d = 15 \quad (a_1 = 15)', r'\
       'سوال میں شروع کی چوڑائی نہیں دی گئی؛ چھپی کلید (120 m) پہلی چوڑائی 15 m لینے سے ملتی ہے۔',
       'پوښتنه د پیل پلنوالی نه ورکوي؛ چاپ شوې کلیل (120 m) هغه مهال سمیږي چې لومړی پلنوالی 15 m ونیول شي.'))
 # ---- 6.3 Q4-6 (polynomial list of question 3 on the page)
-text('6.3|4|', 'Quadratic means degree 2. In one variable the only candidate is ii) 3x² − 15 (variable x, degree 2); iii) has two variables and vi) has degree 4.',
-     'دو درجے (کوآڈریٹک) کا مطلب درجہ 2 ہے۔ ایک متغیر میں صرف ii) 3x² − 15 ہے (متغیر x، درجہ 2)؛ iii) میں دو متغیرات ہیں اور vi) کا درجہ 4 ہے۔',
-     'څلورڅخنی (کواډراټیک) یعنې درجه 2. په یو متغیر کې یوازې ii) 3x² − 15 دی (متغیر x، درجه 2)؛ iii) دوه متغیره لري او vi) درجه 4 لري.', 'ii')
-text('6.3|5|', 'Quadratic in two variables: degree 2 with exactly two variables, which is iii) x² + y² + 2xy. (The printed key also lists iv) and ix), but those involve three or more variables.)',
-     'دو متغیرات میں دو درجے والا: درجہ 2 اور بالکل دو متغیرات، یعنی iii) x² + y² + 2xy۔ (چھپی کلید iv) اور ix) بھی لکھتی ہے مگر ان میں تین یا زیادہ متغیرات ہیں۔)',
-     'په دوو متغیرونو کې دوه درجه: درجه 2 او دقیقاً دوه متغیره، یعنې iii) x² + y² + 2xy. (چاپ شوې کلیل iv) او ix) هم لیکي خو هغو درې یا ډېر متغیره لري.)', 'iii')
-text('6.3|6|', 'Cubic means degree 3. Cubic polynomials in the list are xi), xiv) and xv); only xiv) x³ + y³ has more than one variable.',
-     'تین درجے (کیوبک) کا مطلب درجہ 3 ہے۔ فہرست میں کیوبک xi)، xiv) اور xv) ہیں؛ ان میں صرف xiv) x³ + y³ میں ایک سے زیادہ متغیرات ہیں۔',
-     'درې درجه (کیوبیک) یعنې درجه 3. په لیست کې کیوبیک xi)، xiv) او xv) دي؛ له دې څخه یوازې xiv) x³ + y³ له یو ډېر متغیره لري.', 'xiv')
+POLY = ('Polynomials of Question 3 (read from the scan): i) 5x−2; ii) 3x²−15; iii) x²+y²+2xy; iv) y²−xz; v) (2/3)x³−(4/7)y²+28yz; vi) 5x⁴+6x³+2x²−11x+16; '
+        'vii) x⁴−y⁴; viii) 2a+3b+4c−5d; ix) v²−u²+2gs; x) m⁴−n⁴+4np; xi) x³−6x⁴−16; xii) 7.12x+3.2y+1.5z; xiii) √2+½y²−yz; xiv) x³+y³; xv) 2x³+4x²−5x+3; xvi) x⁴+15x²−16.')
+text('6.3|4|', POLY + ' Quadratic means degree 2; in one variable only ii) 3x² − 15 qualifies (iii, iv, ix, xiii have more than one variable; vi, x, xi, xvi have degree 4).',
+     'سوال 3 کے کثیر رقمی (اسکین سے): i) 5x−2؛ ii) 3x²−15؛ iii) x²+y²+2xy؛ iv) y²−xz؛ v) (2/3)x³−(4/7)y²+28yz؛ vi) 5x⁴+6x³+2x²−11x+16؛ vii) x⁴−y⁴؛ viii) 2a+3b+4c−5d؛ ix) v²−u²+2gs؛ x) m⁴−n⁴+4np؛ xi) x³−6x⁴−16؛ xii) 7.12x+3.2y+1.5z؛ xiii) √2+½y²−yz؛ xiv) x³+y³؛ xv) 2x³+4x²−5x+3؛ xvi) x⁴+15x²−16۔ دو درجے کا مطلب درجہ 2؛ ایک متغیر میں صرف ii) 3x² − 15 ہے۔',
+     'د پوښتنې 3 کثیر الحدي (له سکین څخه): i) 5x−2؛ ii) 3x²−15؛ iii) x²+y²+2xy؛ iv) y²−xz؛ v) (2/3)x³−(4/7)y²+28yz؛ vi) 5x⁴+6x³+2x²−11x+16؛ vii) x⁴−y⁴؛ viii) 2a+3b+4c−5d؛ ix) v²−u²+2gs؛ x) m⁴−n⁴+4np؛ xi) x³−6x⁴−16؛ xii) 7.12x+3.2y+1.5z؛ xiii) √2+½y²−yz؛ xiv) x³+y³؛ xv) 2x³+4x²−5x+3؛ xvi) x⁴+15x²−16. څلورڅخنی یعنې درجه 2؛ په یو متغیر کې یوازې ii) 3x² − 15 دی.', 'ii')
+text('6.3|5|', 'Quadratic (degree 2) polynomials with more than one variable: iii) x²+y²+2xy, iv) y²−xz, ix) v²−u²+2gs and xiii) √2+½y²−yz. With exactly two variables: iii) and xiii). The printed key lists iii, iv, ix.',
+     'ایک سے زیادہ متغیرات والے دو درجے (کوآڈریٹک) کثیر رقمی: iii) x²+y²+2xy، iv) y²−xz، ix) v²−u²+2gs اور xiii) √2+½y²−yz۔ بالکل دو متغیرات والے: iii) اور xiii)۔ چھپی کلید iii, iv, ix دیتی ہے۔',
+     'له یو ډېرو متغیرونو سره دوه درجه (کواډراټیک) کثیر الحدي: iii) x²+y²+2xy، iv) y²−xz، ix) v²−u²+2gs او xiii) √2+½y²−yz. دقیقاً دوه متغیره: iii) او xiii). چاپ شوې کلیل iii, iv, ix لیکي.', 'iii, iv, ix (exactly two variables: iii, xiii)')
+text('6.3|6|', 'Cubic (degree 3) polynomials: v) (2/3)x³−(4/7)y²+28yz, xiv) x³+y³ and xv) 2x³+4x²−5x+3. Those in more than one variable: v) and xiv). The printed key lists only xiv).',
+     'تین درجے (کیوبک) کثیر رقمی: v) (2/3)x³−(4/7)y²+28yz، xiv) x³+y³ اور xv) 2x³+4x²−5x+3۔ ایک سے زیادہ متغیرات والے: v) اور xiv)۔ چھپی کلید صرف xiv) دیتی ہے۔',
+     'درې درجې (کیوبیک) کثیر الحدي: v) (2/3)x³−(4/7)y²+28yz، xiv) x³+y³ او xv) 2x³+4x²−5x+3. له یو ډېرو متغیرونو سره: v) او xiv). چاپ شوې کلیل یوازې xiv) لیکي.', 'v and xiv (key: xiv)')
+text('6.3|7|', 'The highest degree in the list is 4 (vi, vii, x, xi, xvi), so no polynomial has a degree higher than a biquadratic (degree 4). The printed key shows xii, whose degree is 1.',
+     'فہرست میں سب سے بڑا درجہ 4 ہے (vi, vii, x, xi, xvi)، اس لیے کسی کثیر رقمی کا درجہ بائی کوآڈریٹک (درجہ 4) سے زیادہ نہیں۔ چھپی کلید xii دیتی ہے جس کا درجہ 1 ہے۔',
+     'په لیست کې تر ټولو لوړه درجه 4 ده (vi, vii, x, xi, xvi)، نو هیڅ کثیر الحدي له بایکواډراټیک (درجه 4) څخه لوړه درجه نه لري. چاپ شوې کلیل xii لیکي چې درجه یې 1 ده.', 'None (the largest degree is 4)')
 # ---- 6.8 Q1 viii (the scan shows + inside the square bracket, not the printed divide sign)
 add('6.8|1|viii', [r'(8y + 2z^2) - 4y(5z + 2y) = 8y + 2z^2 - 20yz - 8y^2', r'4 + (8y + 2z^2 - 20yz - 8y^2) = 4 + 8y + 2z^2 - 20yz - 8y^2',
                    r'-2yz(4 + 8y + 2z^2 - 20yz - 8y^2) = -8yz - 16y^2z - 4yz^3 + 40y^2z^2 + 16y^3z',
@@ -227,6 +232,12 @@ add('10.2|3|', [r'\text{Grid 1, small L-shape: } (1,1),\,(1,4),\,(2,4),\,(2,2),\
     N('The coordinates of grid 1 were read from a contrast-enhanced render of a skewed photograph and may be off by about half a unit; the scale factor and centre follow from the consistent pattern of all six corners.',
       'گرڈ 1 کے محدد ٹیڑھی تصویر کے بڑھائے گئے عکس سے پڑھے گئے ہیں اور تقریباً آدھی اکائی کی غلطی ممکن ہے؛ پیمانہ اور مرکز چھ کونوں کے یکساں نمونے سے نکلتے ہیں۔',
       'د ګرډ 1 همغږي له یوې کږې انځور د لوی شوي عکس څخه لوستل شوي او شاوخوا نیمه واحده تېروتنه کیدی شي؛ پیمانه او مرکز د ټولو شپږو کونجونو له یو شان بڼې څخه راځي.'))
+
+
+# ---- Review 10 Q18: same task as 10.1 Q1 (student's own square)
+add('Review Exercise 10|18|', [r'\text{Square } A(1, 1),\; B(3, 1),\; C(3, 3),\; D(1, 3)', r'\text{Rotation } 90^{\circ} \text{ clockwise about the origin: } (x, y) \to (y, -x)',
+                               r'A^{\prime}(1, -1),\; B^{\prime}(1, -3),\; C^{\prime}(3, -3),\; D^{\prime}(3, -1)'], 'A′(1, −1), B′(1, −3), C′(3, −3), D′(3, −1)',
+    N('The question lets you choose the square; this is one example.', 'سوال میں مربع آپ کی اپنی پسند کا ہے؛ یہ ایک مثال ہے۔', 'پوښتنه کې مربع ستاسو خوښه ده؛ دا یوه بېلګه ده.'))
 
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
