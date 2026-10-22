@@ -19,6 +19,6 @@ qp b | 30°
 qp c | 115°
 qp d | 90°
 q 4 | Measure the angles in the following figures and write their names as well. || درج ذیل اشکال میں زاویے ناپیں اور ان کے نام بھی لکھیں۔ || په لاندې شکلونو کې زاویې اندازه کړئ او نومونه یې هم ولیکئ.
-frow geo 210 210 ; G 10 10 190 190 #bae6fd ; S 10 200 200 10 ; G 10 170 30 30 #fde047 ; G 170 170 30 30 #fde047 ;; geo 360 200 ; S 10 95 120 15 ; S 120 15 340 15 ; S 340 15 340 185 ; S 340 185 120 185 ; S 120 185 10 95 || A square with one diagonal, and a five-sided figure (pentagon) || ایک وتر والا مربع اور ایک پانچ ضلعی شکل || یو مربع له یوه قطر سره، او یو پنځه ضلعي شکل
+frow geo 210 210 ; G 10 10 190 190 #bae6fd ; S 10 200 200 10 ; G 10 170 30 30 #fde047 ; G 170 170 30 30 #fde047 ; A 10 10 14 270 360 ; A 200 10 18 180 225 ; A 105 105 16 45 225 ;; geo 360 200 ; S 10 95 120 15 ; S 120 15 340 15 ; S 340 15 340 185 ; S 340 185 120 185 ; S 120 185 10 95 ; A 120 15 16 216 360 ; A 340 15 16 180 270 ; A 340 185 16 90 180 ; A 120 185 16 0 141 ; A 10 95 16 321 36 || A square with one diagonal, and a five-sided figure (pentagon) || ایک وتر والا مربع اور ایک پانچ ضلعی شکل || یو مربع له یوه قطر سره، او یو پنځه ضلعي شکل
 endexercise
-@issue Q4 figures carry no vertex letters on the scan although the question asks for names. Q2 angle sizes are redrawn to match the scan's shapes and cannot be measured exactly from it.
+@issue Q4 angle arcs are marked on the scan with yellow shading; drawn here as plain arcs. Q4 figures carry no vertex letters on the scan although the question asks for names. Q2 angle sizes are redrawn to match the scan's shapes and cannot be measured exactly from it.
