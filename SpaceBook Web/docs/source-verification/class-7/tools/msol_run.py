@@ -633,7 +633,9 @@ def run(cl):
                     continue
                 kk = k.strip()
                 out[key] = {'steps': [{'en': 'Answer taken from the printed answer key (the worked steps for this item were not computed):', 'ur': 'جواب کتاب کے جوابات سے لیا گیا ہے (اس سوال کے مراحل نہیں نکالے گئے):', 'ps': 'ځواب د کتاب له ځوابونو اخیستل شوی (د دې پوښتنې ګامونه نه دي ایستل شوي):'}], 'answer': kk, 'verified': False, 'derived': True}
-    stats['dsl'] = [len(dsl), sum(1 for k in dsl if k in out and out[k]['verified']), sum(1 for k in dsl if k in out and not out[k]['verified']), len(bad)]
+    for v in out.values():
+        v['answer'] = wrap_math(v['answer'])
+    stats['dsl'] = [len(dsl),sum(1 for k in dsl if k in out and out[k]['verified']), sum(1 for k in dsl if k in out and not out[k]['verified']), len(bad)]
     for b in bad: disc.append({'dsl': b[0], 'why': b[1]})
     return out, stats, disc
 
