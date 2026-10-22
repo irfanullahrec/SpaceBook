@@ -120,4 +120,5 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 
 - Compared with the scans so far: front matter, contents, Chapter 1 (scans 016–039), Chapter 2 (035–060) and Chapter 3 up to printed p.66 (scans 061–081). **0 transcription errors found, 0 data changes.** The data file already records every printed misprint ("retained as printed" notes), and the ones spot-checked against zoomed scans were correct.
 - Method caveat (honest): the scans are 616×830 px, and I read the Urdu by eye with no Urdu OCR available. This reliably catches missing/duplicated paragraphs, wrong numbers, wrong tables and changed words, but a one-dot or one-diacritic slip can be missed. Early in this chapter I read scans faster than the matching stream text, so printed pp. 27–58 were compared at paragraph level rather than line by line; those pages are worth a second pass if line-level certainty is needed.
-- Remaining in Economics: printed pp. 66–end (scans ~082–322).
+- Update: Chapters 3 (rest), 4, 5, 6 and Chapter 7 up to printed p.121 compared (scans 082–136), still 0 errors, 0 data changes. Pace restored to line level.
+- Remaining in Economics: printed p.121–end (scans ~137–322).
