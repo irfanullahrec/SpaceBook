@@ -198,6 +198,24 @@ text('10.3|3|',
      'وتر: FG (د دایرې دوه ټکي نښلوونکې قطعه). قطعه (سیګمنټ): د وتر FG او د هغه د پاسني قوس تر منځ سیمه. مرکزي زاویه: په مرکز O کې د OI او OJ تر منځ زاویه. سکتور: هغه سیمه چې د شعاعګانو OI، OJ او قوس IJ لخوا احاطه شوې. کوچنی قوس: کوچنی قوس IJ (له نیمې دایرې کم). لوی قوس: د دایرې پاتې برخه له I څخه تر J پورې. مماس: غشي لرونکې کرښه چې دایره یوازې په F کې لمس کوي. قاطع: په ښکته ښي خوا کې غشي لرونکې کرښه چې دایره په دوو ټکو پرې کوي.',
      'Chord FG; segment; central angle IOJ; sector OIJ; minor arc IJ; major arc; tangent at F; secant')
 
+
+# ---- Review 10 Q19 and Q20 (grids read from 450-dpi renders of page 273/274)
+add('Review Exercise 10|19|', [r'\text{Triangle read from the grid: } A(0, 1),\; B(2, 2),\; C(0, 5)',
+                               r'\text{Centre } O(-2, 1),\; k = 3: \quad P^{\prime} = O + 3(P - O)',
+                               r'A^{\prime} = (-2 + 3(0 + 2),\; 1 + 3(1 - 1)) = (4, 1)',
+                               r'B^{\prime} = (-2 + 3(2 + 2),\; 1 + 3(2 - 1)) = (10, 4)',
+                               r'C^{\prime} = (-2 + 3(0 + 2),\; 1 + 3(5 - 1)) = (4, 13)'],
+    'A′(4, 1), B′(10, 4), C′(4, 13)',
+    N('C′(4, 13) lies above the printed grid (it stops at y = 8), so the grid must be extended to draw the whole triangle.',
+      'C′(4, 13) چھپی ہوئی گرڈ سے اوپر ہے (گرڈ y = 8 تک ہے)، اس لیے پورا تکون بنانے کے لیے گرڈ بڑھانی ہوگی۔',
+      'C′(4, 13) له چاپ شوې ګرډ څخه پورته دی (ګرډ تر y = 8 دی)، نو بشپړ درې ګونی رسمولو لپاره باید ګرډ اوږد شي.'))
+add('Review Exercise 10|20|', [r'\text{Small triangle: } A(1, 1),\; B(1, 2),\; C(3, 1); \quad \text{large triangle: } A^{\prime}(6, 4),\; B^{\prime}(6, 6),\; C^{\prime}(10, 4)',
+                               r'k = \frac{A^{\prime}B^{\prime}}{AB} = \frac{2}{1} = 2,\qquad \frac{A^{\prime}C^{\prime}}{AC} = \frac{4}{2} = 2',
+                               r'\text{Line } AA^{\prime}: (1 + 5t,\; 1 + 3t);\quad \text{line } BB^{\prime}: (1 + 5u,\; 2 + 4u)',
+                               r'1 + 3t = 2 + 4t \Rightarrow t = -1 \Rightarrow O = (-4, -2)',
+                               r'CC^{\prime}: (3 + 7s,\; 1 + 3s) \text{ at } s = -1 \text{ gives } (-4, -2) \text{ as well}'],
+    'Scale factor 2, centre of enlargement (−4, −2)')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
