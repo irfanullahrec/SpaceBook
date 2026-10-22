@@ -116,5 +116,5 @@ Search data: all 40 Class 1-5 subjects (including all eight Class 1 subjects) (i
 | Class 5 Maths | pp. 001, 140, 144, 153 | none needed |
 | Class 1 Maths | all pages 005-145 (every number, object count, grid cell, crossed-out item and answer compared; p. 144-145 back matter; printed errors on pp. 53, 69, 92, 97 carry an editorial note) | p. 92: added an `@issue` note for the printed "Rs. 20 = Rs. 10 + Rs. 5" (two Rs 5 coins shown); no text change needed |
 | Class 1 Islamiat | all 58 scans 000-057 (text, hadith numbers, exercises, glossary; scans 030-033 are upside down and in reverse order, already noted by `@issue`) | none needed |
-| Class 1 Pashto | scans 000-025 (poems are summaries by design; scan swaps 010/011 and 024/025 already noted) | none needed |
-Next: Class 1 Pashto from scan 026 (030 done), Nazira, Drawing, then Class 2, 3, 4, 5.
+| Class 1 Pashto | scans 000-046 (poems are summaries by design; scan swaps 010/011 and 024/025 already noted) | none needed |
+Next: Class 1 Pashto from scan 047, Nazira, Drawing, then Class 2, 3, 4, 5.
