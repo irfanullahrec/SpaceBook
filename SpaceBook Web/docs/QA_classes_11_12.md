@@ -130,3 +130,6 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 ### Islamiat Ikhtiari 12 — COMPLETE (phase 7, part 2)
 - Compared ALL scans 001–256 (printed pp.1–251, front matter, chapters 1–6, back matter and author notes) against the Urdu stream; 0 text errors found, 0 data changes. Checked in detail: all cropped right-edge lines (bracketed in data), the p.82 and p.96 matching tables, the p.148 MCQ options, the p.155 factor list (printed "نفسیاتی"). Data notes about printed slips (e.g. "مزد" is Economics only; here "اس سے لیے", "ظرفہ تماشہ", "فاشی", "احادث", "9 ستمبر 2001ء") match the scans.
 - Remaining in Economics: printed p.181–end (scans ~197–322).
+
+### Islamic History 12 — in progress (phase 7, part 3)
+- Compared scans 000–080 (printed pp.1–79, front matter and lessons 1–20) against the Urdu stream. 2 genuine errors fixed in the proofread layer (both logged in docs/qa/proofreading_fixes.tsv): (1) p.12 heading and text "یزید بن ہبیرہ" corrected to the printed "یزید بن ہیرہ" (11 occurrences); (2) p.15 "منصور نے بربر کے خلاف" corrected to the printed "منظور نے بربر کے خلاف" (4 occurrences; the data's own note said it was kept as printed but 4 of 7 copies had been silently "corrected"). Pp.36–37 are missing from the scan (documented in the data).
