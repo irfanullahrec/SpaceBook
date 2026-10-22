@@ -1056,11 +1056,12 @@ def fpie(spec):
     import math
     body, _, lab = spec.partition('|')
     p = body.split()
-    n, k, col = int(p[0]), int(p[1]), (p[2] if len(p) > 2 else '#a78bfa')
+    n, k, col = int(p[0]), int(p[1]), (p[2] if len(p) > 2 and not p[2].startswith('rot') else '#a78bfa')
+    off = next((float(t[3:]) for t in p[2:] if t.startswith('rot')), 0.0)  # optional 'rot30': turn the cuts clockwise by 30 degrees
     r, cx, cy = 50, 60, 58
     out = []
     for i in range(n):
-        a0, a1 = math.radians(-90 + 360 * i / n), math.radians(-90 + 360 * (i + 1) / n)
+        a0, a1 = math.radians(-90 + off + 360 * i / n), math.radians(-90 + off + 360 * (i + 1) / n)
         x0, y0, x1, y1 = cx + r * math.cos(a0), cy + r * math.sin(a0), cx + r * math.cos(a1), cy + r * math.sin(a1)
         big = 1 if 360 / n > 180 else 0
         d = f'M{cx} {cy} L{x0:.1f} {y0:.1f} A{r} {r} 0 {big} 1 {x1:.1f} {y1:.1f} Z' if n > 1 else f'M{cx - r} {cy} a{r} {r} 0 1 0 {2 * r} 0 a{r} {r} 0 1 0 {-2 * r} 0'
