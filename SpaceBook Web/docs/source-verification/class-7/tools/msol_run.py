@@ -365,6 +365,17 @@ def set_leaf(ins, part, key):
 ANS_NE = []
 
 
+def wrap_math(final):
+    """The reader shows 'answer' through its $...$ renderer: TeX (backslash, ^, _, braces) must sit inside $...$."""
+    f = (final or '').strip()
+    if not f or (f.startswith('$') and f.endswith('$')):
+        return f
+    plain = re.sub(r'\\text\{([^{}]*)\}', r'\1', f).replace('\\%', '%').replace('\\&', '&')
+    if not re.search(r'[\\^_{}]', plain):
+        return plain            # words and numbers only: show as plain text
+    return '$' + f + '$'
+
+
 def exk(q):
     return f"R{q['u']}" if q['ex'] == 'Review Exercise' else q['ex']
 
@@ -607,7 +618,7 @@ def run(cl):
                 ANS_NE.append((key, ans[:50], (final or '')[:50]))
             final = textify(ans)
         steps.append(step('ans', final))
-        out[key] = {'steps': steps, 'answer': final, 'verified': bool(ok)}
+        out[key] = {'steps': steps, 'answer': wrap_math(final), 'verified': bool(ok)}
     if cl == '7':
         for q in leaves:
             km = msol2.split_key(q['key'])
