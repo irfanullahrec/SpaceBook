@@ -138,6 +138,27 @@ add('10.10|5|', [r'\text{ASA: } \angle L = \angle D \text{ and } \angle N = \ang
                  r'5y - 120 = 20 \Rightarrow 5y = 140 \Rightarrow y = 28'],
     'x = −50, y = 28')
 
+
+# ---- 10.10 Q7 (figures read from the 400-dpi render: tick marks and arcs)
+A7 = [
+ ('a', 'Lines AE and DC cross at B. In triangles ABD and EBC: AD = EC (one tick each), ∠A = ∠E (one arc each), ∠ABD = ∠EBC (vertically opposite angles). So ΔABD ≅ ΔEBC by the AAS property.',
+  'خطوط AE اور DC نقطہ B پر ملتے ہیں۔ مثلث ABD اور EBC میں: AD = EC (ہر ایک پر ایک نشان)، ∠A = ∠E (ہر ایک پر ایک قوس)، ∠ABD = ∠EBC (متقابل زاویے)۔ اس لیے AAS خاصیت سے ΔABD ≅ ΔEBC۔',
+  'کرښې AE او DC په B کې سره غوڅیږي. په درې ګونو ABD او EBC کې: AD = EC (هر یو کې یو نښه)، ∠A = ∠E (هر یو کې یو قوس)، ∠ABD = ∠EBC (مقابل زاویې). نو د AAS ځانګړتیا له مخې ΔABD ≅ ΔEBC.'),
+ ('b', 'In triangles FGH and KJI: ∠F = ∠K (one arc), FH = KI (one tick), ∠H = ∠I (two arcs), and FH lies between the two marked angles. So ΔFGH ≅ ΔKJI by the ASA property.',
+  'مثلث FGH اور KJI میں: ∠F = ∠K (ایک قوس)، FH = KI (ایک نشان)، ∠H = ∠I (دو قوس)، اور FH دونوں نشان زد زاویوں کے درمیان ہے۔ اس لیے ASA خاصیت سے ΔFGH ≅ ΔKJI۔',
+  'په درې ګونو FGH او KJI کې: ∠F = ∠K (یو قوس)، FH = KI (یو نښه)، ∠H = ∠I (دوه قوسونه)، او FH د دواړو نښه شوو زاویو تر منځ دی. نو د ASA ځانګړتیا له مخې ΔFGH ≅ ΔKJI.'),
+ ('c', 'Lines MP and NO cross at F. In triangles MFN and PFO: MF = PF (one tick each), NF = OF (two ticks each), ∠MFN = ∠PFO (vertically opposite angles). So ΔMFN ≅ ΔPFO by the SAS property.',
+  'خطوط MP اور NO نقطہ F پر ملتے ہیں۔ مثلث MFN اور PFO میں: MF = PF (ہر ایک پر ایک نشان)، NF = OF (ہر ایک پر دو نشان)، ∠MFN = ∠PFO (متقابل زاویے)۔ اس لیے SAS خاصیت سے ΔMFN ≅ ΔPFO۔',
+  'کرښې MP او NO په F کې سره غوڅیږي. په درې ګونو MFN او PFO کې: MF = PF (هر یو کې یو نښه)، NF = OF (هر یو کې دوه نښې)، ∠MFN = ∠PFO (مقابل زاویې). نو د SAS ځانګړتیا له مخې ΔMFN ≅ ΔPFO.'),
+ ('d', 'In right triangles QTR and RSQ (right angles at T and S): QR = RQ (common hypotenuse), QT = RS (one tick each). So ΔQTR ≅ ΔRSQ by the RHS (hypotenuse-side) property.',
+  'قائمہ مثلث QTR اور RSQ میں (T اور S پر قائمہ زاویے): QR = RQ (مشترک وتر)، QT = RS (ہر ایک پر ایک نشان)۔ اس لیے RHS (وتر اور ضلع) خاصیت سے ΔQTR ≅ ΔRSQ۔',
+  'په قایم درې ګونو QTR او RSQ کې (په T او S کې قایم زاویې): QR = RQ (ګډ وتر)، QT = RS (هر یو کې یو نښه). نو د RHS (وتر او اړخ) ځانګړتیا له مخې ΔQTR ≅ ΔRSQ.'),
+ ('e', 'In triangles UVW and WXU: UV = WX (two ticks each), VW = XU (one tick each), UW = WU (common side). So ΔUVW ≅ ΔWXU by the SSS property.',
+  'مثلث UVW اور WXU میں: UV = WX (ہر ایک پر دو نشان)، VW = XU (ہر ایک پر ایک نشان)، UW = WU (مشترک ضلع)۔ اس لیے SSS خاصیت سے ΔUVW ≅ ΔWXU۔',
+  'په درې ګونو UVW او WXU کې: UV = WX (هر یو کې دوه نښې)، VW = XU (هر یو کې یو نښه)، UW = WU (ګډ اړخ). نو د SSS ځانګړتیا له مخې ΔUVW ≅ ΔWXU.')]
+rows7 = ' ;; '.join(f'({k}) {e}|({k}) {u}|({k}) {ps_}' for k, e, u, ps_ in A7)
+L.append('10.10|7| ~ @text ' + rows7 + ' => (a) AAS; (b) ASA; (c) SAS; (d) RHS; (e) SSS %%')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
