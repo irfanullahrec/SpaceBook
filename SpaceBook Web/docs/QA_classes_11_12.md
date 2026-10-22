@@ -155,11 +155,6 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
   - printed p.128 (al-Anfal introduction): the scan reads «مال کا مل جانا اللہ تعالیٰ کا فضل اور عطیہ ہے»; the data had the garbled «مال کا بلا جان» (and flagged it as unclear). The Urdu line, the English line (the “(…)” gap) and the source note were corrected.
   - printed p.180 (al-Ahqaf 46:32, interlinear translation): the scan reads «اُس (اللہ) کو نہ بے بس کر سکے گا اور نہ اُس کے سوا اس کے اور مددگار ہوں گے»; the data had «کو بس کر سکے گا اور نہ اس کے سوا» (words «نہ بے» missing). The English and Pashto lines were already right.
 - Not viewed: files 1–3 (cover, the advertisement page and the two Quranic boxes). Arabic verses were read from the scans, not compared against a Mushaf (see the Qur'an text check above).
-- HPE 11 is still open.
-
-### Islamiat Ikhtiari 11 — read through, 1 change (phase 8, part 3)
-- Viewed scan files 1 and 3–301 (file 2 does not exist in the source folder): cover, the two boxed sayings, title page, imprint, foreword, contents, printed pp.1–294 and the back matter (certificate, national anthem, press line). This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (a few pages read in full). The scan file number is printed page + 7 from file ~112, so look pages up by printed number.
-- **One data change** (logged in `docs/qa/proofreading_fixes.tsv`): printed p.283, Akhtal: the scan prints «ابو ملک غیاث بن غوث»; the data had «ابو مالک». Urdu line corrected; the Pashto and English lines keep the spelling Abu Malik, which is the usual form of the name.
-- Kept as printed, no change: printed p.281 heading «اعراض الشعر» (a misprint of «اغراض»; the data has the correct «اغراض»), the exercise lettering «و / ت» on p.289 (data letters ط / ی), the Pakistan/Iran area figures.
-- Known gap, not a transcription error: the contents table of the front matter is only a heading in the data (the chapter titles and page numbers 1, 3, 16, 22, 58, 79, 107, 124, 137, 164, 189, 235, 257 are not transcribed).
-- Not done: a word-by-word comparison of every long paragraph, and a check of the Arabic verses against a Mushaf (see the Qur'an text check above).
+### HPE 11 — in progress (phase 8, part 5)
+- Viewed scan files 1 and 3–72 (cover, title page, imprint, contents, printed pp.1–69: chapters 1–4, chapter 5 biomechanics through athletics, chapter 6 fitness plan, chapter 7 up to the 800 m race) beside the Urdu stream and `D:/SpaceBook/_qa/tables_hpe11.txt`. Skim level: headings, lists, MCQ options, exercises and tables compared. File 2 does not exist; printed pp.37–38 are absent from the source set (the data already says so, in the sentence that begins on p.38). No mismatch found so far, no data change.
+- Not yet viewed: files 73–148 (printed pp.70–end). Resume at file 73 (stream ¶878).
