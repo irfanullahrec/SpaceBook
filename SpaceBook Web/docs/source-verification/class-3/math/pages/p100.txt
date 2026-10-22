@@ -12,7 +12,7 @@ fig frow fxsq - ;; ftext + ;; fxsq - ;; ftext = ;; fxsq -
 sol Colour 1 triangle, then 2 triangles, then 3 triangles of the last square. ## 1/4 + 2/4 = 3/4 || 1/4 + 2/4 = 3/4 || 1/4 + 2/4 = 3/4
 q 7 | Show the following figures by fractions. || درج ذیل اشکال کو کسور سے ظاہر کریں۔ || لاندې شکلونه په کسرونو وښایئ.
 qp i | Rectangles in 3 parts
-fig frow fgrid 1 3 1,2 #8b5cf6 ;; ftext − ;; fgrid 1 3 3 #8b5cf6 ;; ftext = ;; fgrid 1 3 3 #8b5cf6
+fig frow fgrid 1 3 1,2 #8b5cf6 ;; ftext − ;; fgrid 1 3 3,3 #8b5cf6 ;; ftext = ;; fgrid 1 3 3,3 #8b5cf6
 sol $\frac{2}{3} - \frac{1}{3} = \frac{1}{3}$ ## 2 parts shaded, minus 1 part, leaves 1 part. || 2 رنگے حصے، 1 حصہ کم، 1 حصہ بچا۔ || 2 رنګ شوې برخې، منفي 1 برخه، 1 برخه پاتې.
 qp ii | Squares cut by their diagonals into 4 parts
 fig frow fxsq tlb #8b5cf6 ;; ftext − ;; fxsq tl #8b5cf6 ;; ftext = ;; fxsq b #8b5cf6
