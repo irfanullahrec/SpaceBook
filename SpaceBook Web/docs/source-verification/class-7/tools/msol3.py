@@ -40,7 +40,7 @@ def cbrt_by_factors(text):
     if v.denominator == 1 and v > 1:
         n = int(v)
         ps = msol2.prime_pairs(n)
-        steps.append(step('primes', f'{n} = {" " + B + "times ".join(map(str, ps))}'))
+        steps.append(step('primes', f'{n} = {(" " + B + "times ").join(map(str, ps))}'))
         taken = []
         for p in sorted(set(ps)):
             taken += [p] * (ps.count(p) // 3)

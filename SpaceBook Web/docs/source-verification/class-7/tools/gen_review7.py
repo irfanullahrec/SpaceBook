@@ -30,12 +30,12 @@ def T(s):
 
 
 add('R1|1|e', [r'54.231 \approx 54'], '54')
-add('R2|1|a', [r'\frac{7}{9} + \frac{1}{2} = \frac{14 + 9}{18} = \frac{23}{18} = 1\frac{5}{18}'], r'$1\frac{5}{18}$')
-add('R2|1|b', [r'\frac{5}{13} + \frac{-7}{26} = \frac{10}{26} - \frac{7}{26} = \frac{3}{26}'], r'$\frac{3}{26}$')
-add('R2|1|c', [r'\frac{-11}{15} + \frac{-2}{15} = \frac{-13}{15}'], r'$\frac{-13}{15}$')
-add('R2|1|e', [r'\frac{14}{21} = \frac{14 \div 7}{21 \div 7} = \frac{2}{3}'], r'$\frac{2}{3}$')
-add('R2|1|f', [r'\frac{1}{6} + \frac{-2}{5} = \frac{5}{30} - \frac{12}{30} = \frac{-7}{30}'], r'$\frac{-7}{30}$')
-add('R2|1|g', [T('The additive inverse of a number is the number with the opposite sign: ') + r'-\frac{5}{6}'], r'$\frac{-5}{6}$')
+add('R2|1|a', [r'\frac{7}{9} + \frac{1}{2} = \frac{14 + 9}{18} = \frac{23}{18} = 1\frac{5}{18}'], r'1\frac{5}{18}')
+add('R2|1|b', [r'\frac{5}{13} + \frac{-7}{26} = \frac{10}{26} - \frac{7}{26} = \frac{3}{26}'], r'\frac{3}{26}')
+add('R2|1|c', [r'\frac{-11}{15} + \frac{-2}{15} = \frac{-13}{15}'], r'\frac{-13}{15}')
+add('R2|1|e', [r'\frac{14}{21} = \frac{14 \div 7}{21 \div 7} = \frac{2}{3}'], r'\frac{2}{3}')
+add('R2|1|f', [r'\frac{1}{6} + \frac{-2}{5} = \frac{5}{30} - \frac{12}{30} = \frac{-7}{30}'], r'\frac{-7}{30}')
+add('R2|1|g', [T('The additive inverse of a number is the number with the opposite sign: ') + r'-\frac{5}{6}'], r'\frac{-5}{6}')
 add('R4|1|c', [r'20 : 15 = \frac{20}{15} = \frac{4}{3} = 4 : 3'], '4 : 3')
 add('R4|1|e', [r'12 : 4 = 3 : 1 = 6 : 2'], '6 : 2', kn('option ii (2 : 1)'))
 add('R4|1|h', [r'76 \times \frac{5}{2} = 38 \times 5 = 190'], '190', kn('option i (32)'))
