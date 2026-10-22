@@ -221,23 +221,23 @@ add('Review Exercise 3|11|', [T('Table 1.')] + r1 + [T('Table 2.')] + r2 + [T('P
     f'Table 1: {k1}; Table 2: {k2}')
 
 # ---------------------------------------------------------------- currency (rates implied by the printed key of 3.6)
-USD, CAD, EUR, GBP = 60921.76 / 340, 17334 / 120, 19564.72 / 98, 59915.875 / 250
-PUSD, PCAD, PEUR, PGBP = 3.3486 / 600, 0.2415 / 35, 4.485 / 897, 2.52 / 600
+USD, CAD, EUR, GBP = 179.181648, 144.45, 199.64, 239.6635   # the book's own rates (section 3.6, scan pages 54-56)
+PUSD, PCAD, PEUR, PGBP = 0.0055809287, 0.0069, 0.0050, 0.0042
 RATES = {'USD': USD, 'CAD': CAD, 'EUR': EUR, 'GBP': GBP}
 BACK = {'USD': PUSD, 'CAD': PCAD, 'EUR': PEUR, 'GBP': PGBP}
-rate_note = N('The exchange rates used are the ones implied by the printed key (1 USD = Rs 179.18, 1 CAD = Rs 144.45, 1 EUR = Rs 199.64, 1 GBP = Rs 239.66); today\'s market rates differ.',
-              'استعمال شدہ شرحیں وہ ہیں جو چھپی کلید سے نکلتی ہیں (1 USD = 179.18 روپے، 1 CAD = 144.45، 1 EUR = 199.64، 1 GBP = 239.66)؛ آج کی مارکیٹ شرحیں مختلف ہیں۔',
-              'کارول شوې نرخونه هغه دي چې د چاپ شوې کلیل څخه راوځي (1 USD = 179.18 روپۍ، 1 CAD = 144.45، 1 EUR = 199.64، 1 GBP = 239.66)؛ د نن ورځې بازار نرخونه توپیر لري.')
+rate_note = N('The exchange rates are the ones printed in section 3.6 of the book: 1 USD = Rs 179.181648, 1 CAD = Rs 144.45, 1 EUR = Rs 199.64, 1 GBP = Rs 239.6635; and 1 PKR = 0.0055809287 USD = 0.0069 CAD = 0.0050 EUR = 0.0042 GBP. Current market rates differ.',
+              'شرحیں وہی ہیں جو کتاب کے حصہ 3.6 میں چھپی ہیں: 1 USD = 179.181648 روپے، 1 CAD = 144.45، 1 EUR = 199.64، 1 GBP = 239.6635؛ اور 1 PKR = 0.0055809287 USD = 0.0069 CAD = 0.0050 EUR = 0.0042 GBP۔ آج کی مارکیٹ شرحیں مختلف ہیں۔',
+              'نرخونه هغه دي چې د کتاب په 3.6 برخه کې چاپ شوي: 1 USD = 179.181648 روپۍ، 1 CAD = 144.45، 1 EUR = 199.64، 1 GBP = 239.6635؛ او 1 PKR = 0.0055809287 USD = 0.0069 CAD = 0.0050 EUR = 0.0042 GBP. د نن ورځې بازار نرخونه توپیر لري.')
 cur1 = [('a', 340, 'USD'), ('b', 120, 'CAD'), ('c', 98, 'EUR'), ('d', 250, 'GBP'), ('e', 29, 'USD'), ('f', 45, 'CAD'), ('g', 444, 'EUR'), ('h', 654, 'GBP')]
 for p, amt, c in cur1:
-    add(f'3.6|1|{p}', [rf'{amt} \times {RATES[c]:.4f} = {amt * round(RATES[c], 4):.2f}'], f'Rs {amt * round(RATES[c], 4):,.2f}', rate_note)
+    add(f'3.6|1|{p}', [rf'{amt} \times {RATES[c]} = {amt * RATES[c]:.2f}'], f'Rs {amt * RATES[c]:,.2f}', rate_note)
 cur2 = [('a', 600, 'USD'), ('b', 35, 'CAD'), ('c', 897, 'EUR'), ('d', 600, 'GBP'), ('e', 425, 'USD'), ('f', 98, 'CAD'), ('g', 326, 'EUR'), ('h', 562, 'GBP')]
 for p, amt, c in cur2:
-    add(f'3.6|2|{p}', [rf'{amt} \times {BACK[c]:.6f} = {amt * round(BACK[c], 6):.4f}'], f'{amt * round(BACK[c], 6):.4f} {c}', rate_note)
+    add(f'3.6|2|{p}', [rf'{amt} \times {BACK[c]} = {amt * BACK[c]:.4f}'], f'{amt * BACK[c]:.4f} {c}', rate_note)
 for p, amt, c in [('a', 23, 'USD'), ('b', 556, 'CAD'), ('c', 67, 'EUR'), ('d', 85, 'GBP'), ('e', 455, 'USD'), ('f', 890, 'CAD'), ('g', 23, 'EUR'), ('h', 456, 'GBP')]:
-    add(f'Review Exercise 3|9|{p}', [rf'{amt} \times {RATES[c]:.4f} = {amt * round(RATES[c], 4):.2f}'], f'Rs {amt * round(RATES[c], 4):,.2f}', rate_note)
+    add(f'Review Exercise 3|9|{p}', [rf'{amt} \times {RATES[c]} = {amt * RATES[c]:.2f}'], f'Rs {amt * RATES[c]:,.2f}', rate_note)
 for p, amt, c in [('a', 456, 'USD'), ('b', 777, 'CAD'), ('c', 89, 'EUR'), ('d', 128, 'GBP'), ('e', 778, 'USD'), ('f', 765, 'CAD'), ('g', 200, 'EUR'), ('h', 989, 'GBP')]:
-    add(f'Review Exercise 3|10|{p}', [rf'{amt} \times {BACK[c]:.6f} = {amt * round(BACK[c], 6):.4f}'], f'{amt * round(BACK[c], 6):.4f} {c}', rate_note)
+    add(f'Review Exercise 3|10|{p}', [rf'{amt} \times {BACK[c]} = {amt * BACK[c]:.4f}'], f'{amt * BACK[c]:.4f} {c}', rate_note)
 
 # ---------------------------------------------------------------- lines (8.8, R8 Q12)
 def line_rows(p1, p2):
@@ -301,18 +301,6 @@ add('Review Exercise 9|10|', [r'A = \pi r (l + r), \quad V = \frac{1}{3}\pi r^2 
     N('Part (ii): r^2 = 5^2 - 3^2 = 16, so r = 4. Part (iii): the diameter 28 gives r = 14 (check 50^2 - 48^2 = 14^2). Rows below give, for each part, the total surface area and then the volume.',
       'حصہ (ii): r^2 = 5^2 - 3^2 = 16، اس لیے r = 4۔ حصہ (iii): قطر 28 سے r = 14 (جانچ 50^2 - 48^2 = 14^2)۔ نیچے ہر حصے کے لیے پہلے کل سطحی رقبہ اور پھر حجم ہے۔',
       'برخه (ii): r^2 = 5^2 - 3^2 = 16، نو r = 4. برخه (iii): قطر 28 r = 14 ورکوي (ازموینه 50^2 - 48^2 = 14^2). لاندې هره برخه لومړی ټوله سطحي ساحه او بیا حجم لري.'))
-rws, ans = [], []
-for i, r in enumerate([5, 9, 10], 1):
-    sa = round(4 * 3.14 * r * r, 2)
-    v = round(4 / 3 * 3.14 * r ** 3, 2)
-    rws.append(rf'4 \times 3.14 \times {r}^2 = {sa:.2f}')
-    rws.append(rf'\frac{{4}}{{3}} \times 3.14 \times {r}^3 = {v:.2f}')
-    ans.append(f'({i}) A = {sa:.2f}, V = {v:.2f}')
-add('Review Exercise 9|9|', [r'A = 4\pi r^2, \quad V = \frac{4}{3}\pi r^3'] + rws, '; '.join(ans),
-    N('The figure shows r = 5 m for (i), diameter 18 m for (ii) (so r = 9) and d = 20 m for (iii) (so r = 10). The printed key shows 4069.44 and 24416064 for (ii), which use r = 18.',
-      'شکل میں (i) کے لیے r = 5 m، (ii) کے لیے قطر 18 m (یعنی r = 9) اور (iii) کے لیے d = 20 m (یعنی r = 10) ہے۔ چھپی کلید (ii) کے لیے 4069.44 اور 24416064 دیتی ہے جو r = 18 لیتے ہیں۔',
-      'په انځور کې د (i) لپاره r = 5 m، د (ii) لپاره قطر 18 m (یعنې r = 9) او د (iii) لپاره d = 20 m (یعنې r = 10) دی. چاپ شوې کلیل د (ii) لپاره 4069.44 او 24416064 ښیي چې r = 18 کاروي.'))
-
 # ---------------------------------------------------------------- polynomials
 add('6.5|1|v', [r'(37x^5 - 33x^4y^3 + 20x^3y^2 + 31y^5) - (10x^5 - 13x^4y^3 + 33x^3y^2)',
                 r'= (37 - 10)x^5 + (-33 + 13)x^4y^3 + (20 - 33)x^3y^2 + 31y^5',
