@@ -114,4 +114,5 @@ Search data: all 40 Class 1-5 subjects (including all eight Class 1 subjects) (i
 |---|---|---|
 | Class 1 English | all content pages 002-126 (pp. 048, 084, 115 are copyright summaries of poems: only the layout and questions compared) | none needed |
 | Class 5 Maths | pp. 001, 140, 144, 153 | none needed |
-Next: Class 1 Maths from p. 002, then Class 1 Islamiat, Pashto, Nazira, Drawing, then Class 2, 3, 4, 5.
+| Class 1 Maths | pp. 005-081 (every number, count of objects, grid cell, crossed-out item and answer compared; printed errors on pp. 53 and 69 already carry an editorial note) | none needed |
+Next: Class 1 Maths from p. 082 (file p082), then Class 1 Islamiat, Pashto, Nazira, Drawing, then Class 2, 3, 4, 5.
