@@ -189,3 +189,5 @@ Update (English 12, later pass): the remaining scans were viewed too — Units 7
 ### English 11 — phase 9
 
 Viewed against the scans: files 001–003 and 004–120 (imprint, contents, foreword, Units 1–22, back matter and feedback form, printed pp.1–229 — every page of the scan set; 240 images). Essays by modern authors (Keen, Bocarro, Baker, McWhirter, Waheedullah, the CV and cover-letter texts) are summaries by design, so only their glossaries, questions and exercises were compared word for word; the other texts were compared line by line. Printed slips are kept as printed (e.g. "retuned", "Iamb", "shoulders, ,", "Charlottee", "snapes", "chocking", "a. a. outside", "Cannt", "Greer", "eighteen kilometers"). Changes (in `proofreading_fixes.tsv`): "Charlotte" to the printed "Charlottee" on p.208; four page-note paragraph counts corrected (pp.103, 104, 148, 169). No wording in the lesson text needed changing.
+
+Update (English 12, gap closure): Truck Art pp.34–36 and The Last Leaf pp.43–44 were viewed and match the data (distinctive passages checked by search). Remaining English 12 gap: Lord of the Flies summary scans 100–116 (a summary by design).
