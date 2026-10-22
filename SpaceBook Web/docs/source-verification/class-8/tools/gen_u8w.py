@@ -105,5 +105,25 @@ text('Review Exercise 10|16|', 'Two triangles are congruent when their correspon
      'دو مثلث تب ہم مطابق ہوتے ہیں جب ان کے متناظر اطراف اور زاویے برابر ہوں۔ شکل اور چھپی کلید کے مطابق: ΔABC ≅ ΔDEF۔',
      'دوه درې ګوني هغه مهال همغږي دي چې متناظر اړخونه او زاویې یې مساوي وي. له انځور او چاپ شوې کلیل څخه: ΔABC ≅ ΔDEF.', 'ΔABC ≅ ΔDEF')
 
+# ---- 11.4 Q1 (spinner of 8 equal sectors: 3 purple, 2 yellow) and Q7 (cards 4, 7, 7, 0, 3, 8)
+for part, rows_, ans_ in [
+    ('a', [r'\text{Spinner with 8 equal sectors: 3 purple, 2 yellow}', r'\text{A purple sector and a yellow sector cannot both happen: the events are mutually exclusive}',
+           r'P(A) = \frac{3}{8},\quad P(B) = \frac{2}{8}'], 'Yes, mutually exclusive; P(A) = 3/8, P(B) = 2/8'),
+    ('b', [r'P(A \cup B) = \frac{3}{8} + \frac{2}{8} = \frac{5}{8}'], 'P(A ∪ B) = 5/8'),
+    ('c', [r'P(A \cap B) = 0'], 'P(A ∩ B) = 0')]:
+    add(f'11.4|1|{part}', rows_, ans_)
+for part, rows_, ans_, nt in [
+    ('a', [r'\text{Cards: } 4, 7, 7, 0, 3, 8 \quad (6 \text{ cards})', r'P(A) = P(7) = \frac{2}{6},\quad P(B) = P(\text{even}) = \frac{3}{6} \quad (4, 0, 8; \text{ 0 is even})',
+           r'\text{No card is both 7 and even: mutually exclusive}'], 'Yes, mutually exclusive; P(A) = 2/6, P(B) = 3/6', None),
+    ('b', [r'P(A \cup B) = \frac{2}{6} + \frac{3}{6} = \frac{5}{6}'], 'P(A ∪ B) = 5/6', None),
+    ('c', [r'P(A \cap B) = 0'], 'P(A ∩ B) = 0',
+     N('The printed key gives P(A ∩ B) = 1, which is not possible for mutually exclusive events (it is 0).', 'چھپی کلید P(A ∩ B) = 1 دیتی ہے جو باہم خارج واقعات کے لیے ممکن نہیں (یہ 0 ہے)۔', 'چاپ شوې کلیل P(A ∩ B) = 1 ښیي چې د متقابلو بهرنیو پېښو لپاره ناشونی دی (دا 0 دی).'))]:
+    add(f'11.4|7|{part}', rows_, ans_, nt)
+# ---- Review 10 Q2 definitions
+text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
+     'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
+     'وتر (کارډ): د دایرې دوه ټکي نښلوونکې قطعه. قاطع: هغه کرښه چې دایره په دوو ټکو پرې کړي. قوس: د محیط یوه برخه. سکتور: د دوو شعاعګانو او د هغوی د پرې شوي قوس تر منځ سیمه. مماس: هغه کرښه چې دایره په دقیق یو ټکي لمس کړي.',
+     'Chord, secant, arc, sector, tangent defined')
+
 OUT.write_text('\n'.join(L) + '\n', encoding='utf-8')
 print(len(L), 'rows ->', OUT)
