@@ -116,6 +116,7 @@ for (const cls of Object.keys(data).filter(k => /^c\d+$/.test(k))) for (const su
   const doUnits = u => { (u.sections || []).forEach(sec => visit(sec.blocks, sec)); };
   visit(bk.book.frontMatter); bk.units.forEach(doUnits); visit(bk.book.backMatter);
   b.pages = pages.length;
+  { const A = bk.book && bk.book.answers; b.keyEntries = A ? (Array.isArray(A) ? A.length : Object.values(A).reduce((n, v) => n + (Array.isArray(v) ? v.length : 1), 0)) : 0; }
   let last = null;
   pages.forEach(p => {
     if (p.n === 0) b.emptyPages.push(p.pdf);

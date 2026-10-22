@@ -63,6 +63,14 @@ Legend: P = partly done (numbers above or in the class report), B = blocked, ? =
 | 11 | P | ? (no printed keys in several books; not in this audit's data shape) | ? | P | P (MT job stopped at 8,256/22,083) | P |
 | 12 | P; HPE pp107,148 missing (B) | P: Maths 282/385, Stat 0/590, 135 MCQs w/o key | ? | P | P (same MT job) | P (Maths 82 left per report, Stat ?) |
 
+
+## Update (second pass, same day)
+* **Correction of the first pass.** Class 12 Statistics is NOT "0 of 590 answered": its answers are the printed key lines (`ans` entries), not per-question `solId`s, exactly like Class 9/10 Maths. `audit_all.js` now reports `keyEntries`: Stat 176, Class 9 Maths 487, Class 10 Maths 362. Of Stat's 252 exercise questions, 173 had a printed key; the 80 without are mostly definitions/explanations (no numeric answer). Three computational ones were answered and labelled `[Derived]` (1.6, 3.29, 6.11, in `stat/pages/p334.txt`). Left without any answer: 4.29 and 4.30 (data tables), 5.15 (random-number table), plus the theory questions. The 90 "MCQs without key" for Stat are covered by the printed key lines (e.g. `ans 1 | 1.3 | (i) c; ...`); the audit just cannot see them.
+* **Class 12 Maths MCQ keys (45) and answers: blocked.** The Maths page book is reviewed only to scan 179 of 357 (printed answers start at 326), so the printed key is not in the data yet; another chat owns that book (the `class-12/math` and `class-12/stat` directories and their `js/` outputs are untracked in git, so I did not commit them).
+* **KaTeX errors, Classes 3-5.** The reported strings were plain text lines (blanks `____`, URLs, `&`) typed as math blocks (`m`). Changed to paragraph lines in Class 3 English p050, Class 4 Maths pp028-030 and p184, Class 5 Science p004 and Class 5 English p002, then rebuilt (commit `bfde1223`). Not fixed: the 8 Class 4 English strings (blank-filling letters such as `depres__`), whose source is not in a `pages` directory.
+* **Class 12 Maths KaTeX (6):** fixed the control character that had replaced `\cd` (`\cdot`) on p058 and the `\$` amounts on p079 (now `\mathdollar`) in `class-12/math/pages` (untracked, other chat's book). The prose `\$` on p064 is a checker false positive. The Maths build was rerun to `build/` only; `js/math_12_pagebook_data.js` was not overwritten.
+* `js/statistics_12_book_data.js` was refreshed from its build (untracked file).
+
 ## Resume point
 1. `node --max-old-space-size=6144 tools/qa/audit_all.js --json tools/qa/audit_all_latest.json` to refresh numbers.
 2. Class 12 Stat/Maths MCQ keys and Stat answers, then the KaTeX errors in Classes 3-5, then the MT job when RAM allows, then layout harness runs, then the final regeneration when `git log -5 --format=%ar` shows no other chat committing.
