@@ -177,6 +177,19 @@ Q1 = [
 rows1 = ' ;; '.join(f'({k}) {e}|({k}) {u}|({k}) {ps_}' for k, e, u, ps_ in Q1)
 L.append('10.10|1| ~ @text ' + rows1 + ' => (a) congruent (RHS); (b) congruent (ASA); (c) not congruent; (d) from the key %%')
 
+
+# ---- Review 10 Q4 and Q3 (figures read from the 300-dpi render of page 272/271)
+text('Review Exercise 10|4|',
+     'A tangent touches the circle at exactly one point; a secant cuts it at two points. In the figure, lines l (touching at the top) and p (touching at the bottom) are tangents; lines m, n and o each cut the circle at two points, so they are secants.',
+     'مماس دائرے کو ٹھیک ایک نقطے پر چھوتا ہے؛ قاطع اسے دو نقطوں پر کاٹتا ہے۔ شکل میں خطوط l (اوپر سے چھوتا) اور p (نیچے سے چھوتا) مماس ہیں؛ خطوط m, n اور o ہر ایک دائرے کو دو نقطوں پر کاٹتے ہیں، اس لیے یہ قاطع ہیں۔',
+     'مماس دایره په دقیق یو ټکي لمس کوي؛ قاطع یې په دوو ټکو پرې کوي. په انځور کې کرښې l (له پورته لمس کوي) او p (له ښکته لمس کوي) مماس دي؛ کرښې m, n او o هره یوه دایره په دوو ټکو پرې کوي، نو قاطع دي.',
+     'Tangents: l, p. Secants: m, n, o')
+text('Review Exercise 10|3|',
+     'O is the centre. The segment FG joining two points of the circle is a chord; the chord through the centre O is a diameter; OJ (centre to the circle) is a radius; the angle at O between two radii is a central angle and the region between those radii and their arc is a sector; a part of the circle between two points is an arc; the line touching the circle at one point (the arrowed line at the top) is a tangent; an arrowed line cutting the circle at two points is a secant.',
+     'O مرکز ہے۔ دائرے کے دو نقطوں کو ملانے والا قطعہ FG وتر ہے؛ مرکز O سے گزرنے والا وتر قطر ہے؛ OJ (مرکز سے دائرے تک) رداس ہے؛ دو رداسوں کے درمیان O پر زاویہ مرکزی زاویہ ہے اور ان رداسوں اور ان کے قوس کے درمیان کا حصہ قطاع ہے؛ دو نقطوں کے درمیان دائرے کا حصہ قوس ہے؛ جو لکیر دائرے کو ایک نقطے پر چھوئے (اوپر والی تیر والی لکیر) وہ مماس ہے؛ جو دو نقطوں پر کاٹے وہ قاطع ہے۔',
+     'O مرکز دی. هغه قطعه FG چې د دایرې دوه ټکي نښلوي وتر دی؛ هغه وتر چې له مرکز O تېرېږي قطر دی؛ OJ (له مرکز تر دایرې) شعاع ده؛ د دوو شعاعګانو تر منځ په O کې زاویه مرکزي زاویه ده او د دغو شعاعګانو او د هغوی د قوس تر منځ سیمه سکتور ده؛ د دوو ټکو تر منځ د دایرې برخه قوس دی؛ هغه کرښه چې دایره په یو ټکي لمس کړي (پورتنۍ غشي لرونکې کرښه) مماس ده؛ چې په دوو ټکو پرې کړي قاطع ده.',
+     'O centre, FG chord, diameter, OJ radius, central angle, sector, arc, tangent, secant')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
