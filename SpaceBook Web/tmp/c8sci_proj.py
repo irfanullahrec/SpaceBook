@@ -7,7 +7,7 @@ def put(pg,pat,text,after_qp=None):
         i=next(k for k in range(i,len(L)) if L[k].startswith(f'qp {after_qp} '))
         j=i+1
     else:
-        j=next(k for k in range(i,len(L)) if L[k].startswith('endexercise') or L[k].startswith('endbox') or (k>i and L[k].startswith('q ')))
+        j=next((k for k in range(i,len(L)) if L[k].startswith('endexercise') or L[k].startswith('endbox') or (k>i and L[k].startswith('q '))),len(L))
     if j<len(L) and L[j].startswith('sol'): return
     if j-1>=0 and L[j-1].startswith('sol'): return
     L.insert(j,'sol '+text)
