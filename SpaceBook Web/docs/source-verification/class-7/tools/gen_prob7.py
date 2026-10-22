@@ -66,3 +66,19 @@ note = ('The question gives no rate and no rebate; the book\'s example in this u
         '|په پوښتنه کې نه نرخ ورکړل شوی نه معافي حد؛ د دې څپرکي بېلګه 5 سلنه کاروي او د ټول عاید 5 سلنه چاپ شوې کلیل ورکوي. که د 4,00,000 روپیو غوندې معافي حد پلی کېده نو مالیه به صفر وای.')
 with OUT.open('a', encoding='utf-8') as fh:
     fh.write(r'R5|9| ~ \text{Income tax at 5 \%} = 236000 \times \frac{5}{100} = 11800 @@ ' + note + ' => Rs 11,800 %%\n')
+
+# Review 8 Q14-Q15 (points transcribed in the page files: p154 and p163)
+def quad(x, y):
+    return 'on an axis' if x == 0 or y == 0 else ('I' if x > 0 and y > 0 else 'II' if x < 0 < y else 'III' if x < 0 and y < 0 else 'IV')
+
+
+pts14 = [(2, 11), (14, 10), (-9, 5), (8, -1), (-8, -2), (-11, -7), (14, -9)]
+rws = [r'\text{Read each point as (x, y): x from the horizontal axis, y from the vertical axis}'] + [rf'({x}, {y}):\; \text{{Quadrant {quad(x, y)}}}' for x, y in pts14]
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write('R8|14| ~ ' + ' ;; '.join(rws) + ' => ' + '; '.join(f'({x}, {y}) Q{quad(x, y)}' for x, y in pts14) + ' %% \n'.replace(' %% \n', ' %%\n'))
+pts15 = [('Q', -2, 4), ('S', 1, 4), ('R', 4, 4), ('T', -4, 2), ('U', -3, 1), ('J', 3, 1), ('B', 1, -2), ('L', -4, -3), ('A', 3, -3)]
+rws = [r'\text{Ordered pairs of the lettered points: } ' + ',\; '.join(f'{n}({x}, {y})' for n, x, y in pts15),
+       r'\text{No lettered point has x-ordinate } 5 \text{ (the largest x is 4); so the ordered pairs are listed by quadrant:}'] + \
+      [rf'\text{{Quadrant {q}: }} ' + ',\; '.join(f'{n}({x}, {y})' for n, x, y in pts15 if quad(x, y) == q) for q in ('I', 'II', 'III', 'IV')]
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write('R8|15| ~ ' + ' ;; '.join(rws) + ' => QI: S(1, 4), R(4, 4), J(3, 1); QII: Q(−2, 4), T(−4, 2), U(−3, 1); QIII: L(−4, −3); QIV: B(1, −2), A(3, −3) %%\n')
