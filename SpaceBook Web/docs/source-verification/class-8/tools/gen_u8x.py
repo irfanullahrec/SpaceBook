@@ -63,7 +63,14 @@ text('11.5|1|', 'Theoretical probability is worked out from the possible outcome
      'نظري احتمال له ممکنه پایلو څخه ایستل کیږي: P = مناسبې پایلې ÷ ټولې پایلې (په منصفه سکه کې د سر P = 1/2). تجربوي احتمال له تجربې څخه ترلاسه کیږي: P = پېښه څو ځله شوې ÷ ټولې هڅې.',
      'Theoretical = favourable ÷ possible outcomes; experimental = times it happened ÷ trials.')
 
+OVERRIDE = {
+    ('Review Exercise 5', 'c'): N('A set with 3 elements has 2³ = 8 subsets. No option is 8, so none is correct as printed (the printed key marks ii, 9).',
+                                  '3 عناصر والے سیٹ کے 2³ = 8 ذیلی سیٹ ہوتے ہیں۔ کوئی آپشن 8 نہیں، اس لیے چھپے ہوئے آپشنز میں کوئی درست نہیں (چھپی کلید ii یعنی 9 دیتی ہے)۔',
+                                  'د 3 عناصرو لرونکي سیټ 2³ = 8 فرعي سیټونه لري. هیڅ انتخاب 8 نه دی، نو چاپ شوو انتخابونو کې هیڅ سم نه دی (چاپ شوې کلیل ii یعنې 9 ښیي).'),
+}
+
 # ---- key-driven option rows
+own = {ln.split(' ~')[0] for ln in OUT.read_text(encoding='utf-8').splitlines() if ' ~' in ln} if OUT.exists() else set()
 g = json.load(open(ROOT / 'docs/source-verification/class-8/math/gen_solutions.json', encoding='utf8'))
 leaves = json.load(open(ROOT / 'tmp/m8_leaves.json', encoding='utf8'))
 cur = None
@@ -72,18 +79,23 @@ for l in leaves:
     if not (l['q'].isalpha() and len(l['q']) == 1):
         cur = None
         if l.get('key'):
+            kt = re.sub(r'(\([a-z]\)\s*)\((i|ii|iii|iv|v)\)', lambda m: m.group(1) + m.group(2), l['key'])
             cur = {a: [x for x in re.split(r'[,\s]+|and', b) if x] for a, b in
-                   re.findall(r'\(?([a-z])\)\s*([ivx,\sand]+?)(?=;|\s[a-z]\)|$)', l['key'])}
+                   re.findall(r'\(?([a-z])\)\s*([ivx,\sand]+?)(?=;|\s\(?[a-z]\)|$)', kt)}
         continue
     pts = l['parts']
     if not pts or pts[0][0] != 'i' or not cur or l['q'] not in cur:
         continue
     right = cur[l['q']]
+    odd = OVERRIDE.get((l['ex'], l['q']))
     for p, t in pts:
-        if f"{l['ex']}|{l['q']}|{p}" in g or any(c in t for c in ('|', '~', ';;', '=>', '@@', '%%')):
+        if (f"{l['ex']}|{l['q']}|{p}" in g and f"{l['ex']}|{l['q']}|{p}" not in own) or any(c in t for c in ('|', '~', ';;', '=>', '@@', '%%')):
             continue
         rs = ', '.join(right)
-        if p in right:
+        if odd:
+            en, ur, ps = odd.split('|')
+            ans = en
+        elif p in right:
             en, ur, ps = (f'Option {p}) is correct: {t}', f'آپشن {p}) درست ہے: {t}', f'انتخاب {p}) سم دی: {t}')
             ans = f'Option {p}) is correct'
         else:
@@ -91,9 +103,10 @@ for l in leaves:
                           f'آپشن {p}) ({t}) جواب نہیں؛ درست آپشن {rs} ہے۔',
                           f'انتخاب {p}) ({t}) ځواب نه دی؛ سم انتخاب {rs} دی.')
             ans = f'Correct option: {rs}'
-        en += ' (answer from the printed key)'
-        ur += ' (چھپی کلید کے مطابق)'
-        ps += ' (د چاپ شوې کلیل له مخې)'
+        if not odd:
+            en += ' (answer from the printed key)'
+            ur += ' (چھپی کلید کے مطابق)'
+            ps += ' (د چاپ شوې کلیل له مخې)'
         text(f"{l['ex']}|{l['q']}|{p}", en, ur, ps, ans)
         count += 1
 
