@@ -1,0 +1,97 @@
+7.1|4|a ~ 196 = 14 \times 14 => 14^2 %%
+7.1|4|b ~ 64 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 => 2^6 %%
+7.1|4|c ~ 729 = 3 \times 3 \times 3 \times 3 \times 3 \times 3 => 3^6 %%
+7.1|4|d ~ \frac{1}{100} = \frac{1}{10} \times \frac{1}{10} => \left(\frac{1}{10}\right)^2 %%
+7.1|4|e ~ \frac{36}{441} = \frac{4}{49} = \frac{2}{7} \times \frac{2}{7} => \left(\frac{2}{7}\right)^2 %%
+7.1|4|f ~ \frac{1}{16} = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} => \left(\frac{1}{2}\right)^4 %%
+7.1|4|g ~ 27 = 3 \times 3 \times 3 => 3^3 %%
+7.1|4|h ~ \frac{64}{216} = \frac{8}{27} = \frac{2}{3} \times \frac{2}{3} \times \frac{2}{3} => \left(\frac{2}{3}\right)^3 %%
+7.2|1|e ~ 5^2 \times 3^2 = (5 \times 3)^2 = 15^2 ;; 15^2 \times 15^3 = 15^{2+3} => 15^5 %%
+7.2|1|f ~ x^{2+7} \times y^{3+4} \times z^{7+3} => x^9y^7z^{10} %%
+7.2|1|k ~ 4^3 = (2^2)^3 = 2^6 ;; 4^{-4} = (2^2)^{-4} = 2^{-8} ;; 2^{-2+6+7-8} \times 5^{-7+3} = 2^{3} \times 5^{-4} => \frac{8}{625} %%
+7.2|1|l ~ \left(\frac{2}{5}\right)^{4+5-6} => \left(\frac{2}{5}\right)^3 %%
+7.2|2|e ~ \left(\frac{3}{7}\right)^{21-1} => \left(\frac{3}{7}\right)^{20} %%
+7.2|3|b ~ (-3^4)^2 = (-81)^2 = 6561 = 3^8 => 3^8 = 6561 %%
+7.2|3|h ~ (a^b)^c = a^{b \times c} => a^{bc} %%
+7.2|3|i ~ \left[\left(\frac{a}{b}\right)^c\right]^d = \left(\frac{a}{b}\right)^{c \times d} => \left(\frac{a}{b}\right)^{cd} %%
+7.2|4|a ~ \left(\frac{-a}{b}\right)^{11-9} = \left(\frac{-a}{b}\right)^2 => \frac{a^2}{b^2} %%
+7.2|4|i ~ xy^9 \times xy^7 = x^{1+1}y^{9+7} => x^2y^{16} %%
+7.3|1|b ~ \frac{11ac^{-2}}{(abc)^{-1}} = 11ac^{-2} \times abc = 11a^2bc^{-1} => \frac{11a^2b}{c} %%
+7.3|1|c ~ \frac{1}{6a} \times a^{-3} = \frac{1}{6a} \times \frac{1}{a^3} => \frac{1}{6a^4} %%
+7.3|1|e ~ \frac{8x^4b^3c^4}{16x^2b^2c^2} = \frac{8}{16}x^{4-2}b^{3-2}c^{4-2} => \frac{x^2bc^2}{2} %%
+7.3|1|f ~ 16 \times 27 = 432 => \frac{432}{x^8y^3} %%
+7.3|2|f ~ \text{Left side: } x^2 \div y^2 = \frac{x^2}{y^2} ;; \text{Right side: } \left(\frac{x}{y}\right)^2 = \frac{x^2}{y^2} => Left side = right side %%
+7.3|3|h ~ (2 \times y^{-3})^0 = 1 ;; (x^4y^{-5}z^{-3})^{-2} = x^{-8}y^{10}z^{6} ;; \frac{1}{x^{-8}y^{10}z^{6}} => \frac{x^8}{y^{10}z^6} %%
+7.3|3|j ~ \text{Anything (not zero) to the power 0 is 1} ;; -(4^6 \times 5^2 \times 4^3 \times 5^1)^0 = -1 => -1 (the printed key shows 0) %%
+7.3|4|a ~ 3a^{3(x+y)} \div 3a^{3(y+x)} = \frac{3a^{3(x+y)}}{3a^{3(x+y)}} => 1 %%
+7.3|4|b ~ p^{(a-b)+(b-c)+(c-a)} = p^{a-b+b-c+c-a} = p^0 => 1 %%
+7.3|4|c ~ x^{(a-b)c} \times x^{(b-c)a} \times x^{(c-a)b} = x^{ac-bc+ab-ac+bc-ab} = x^0 => 1 %%
+7.3|4|d ~ x^{6-13+7} \times y^{-3-2+5} = x^0 \times y^0 => 1 %%
+7.3|5|a ~ (-9)^{-5} \times (-4)^{-7} = \frac{1}{(-9)^5} \times \frac{1}{(-4)^7} => \frac{1}{(-9)^5 \times (-4)^7} %%
+7.3|5|b ~ \left(-\frac{2}{3}\right)^{-5} = \left(-\frac{3}{2}\right)^5 => \left(-\frac{3}{2}\right)^5 %%
+7.3|5|c ~ \frac{1}{x^{-6}y^{-8}} = x^6y^8 => x^6y^8 %%
+7.3|5|d ~ \frac{x^{-4}y^{-5}z^{-7}}{x^{-4}y^{-7}z^{-4}} = x^{-4+4}y^{-5+7}z^{-7+4} = y^2z^{-3} => \frac{y^2}{z^3} %%
+7.3|5|e ~ 4^{-3} \times 5^{-7} = \frac{1}{4^3} \times \frac{1}{5^7} => \frac{1}{4^3 \times 5^7} %%
+7.3|5|f ~ (-6rs)^{-6} = \frac{1}{(-6rs)^6} = \frac{1}{6^6r^6s^6} => \frac{1}{6^6r^6s^6} %%
+8.1|1| ~ \text{Let the bag cost } x \text{ and the geometry box } y ;; x = 3y \Rightarrow x - 3y = 0 ;; 2x + 3y = 3960 => x - 3y = 0 and 2x + 3y = 3960 (the printed key shows 2x + y) %%
+8.1|2| ~ \text{Let apple juice be } x \text{ and orange juice } y ;; x = y - 3 \Rightarrow x - y = -3 ;; x + y = 11 => x - y = -3 and x + y = 11 %%
+8.1|3| ~ \text{Let the numbers be } x \text{ and } y ;; x + y = 82 ;; x - y = 23 => x + y = 82 and x - y = 23 %%
+8.2|1|a ~ a + 3 = 9 \Rightarrow a = 6 ;; a - 2 = 5 \Rightarrow a = 7 => Not simultaneous (the solutions differ) %%
+8.2|1|b ~ b + 2 = 11 \Rightarrow b = 9 ;; b - 5 = 4 \Rightarrow b = 9 => Simultaneous (the same solution b = 9) %%
+8.2|1|c ~ p - 15 = 15 \Rightarrow p = 30 ;; p + 7 = 37 \Rightarrow p = 30 => Simultaneous (the same solution p = 30) %%
+8.2|1|d ~ x - 3 = 10 \Rightarrow x = 13 ;; x - 7 = 6 \Rightarrow x = 13 => Simultaneous (the same solution x = 13) %%
+8.2|1|e ~ z - 8 = 12 \Rightarrow z = 20 ;; z - 4 = 11 \Rightarrow z = 15 => Not simultaneous (the solutions differ) %%
+8.4|1|f ~ \frac{x}{3} + 5 = 16 ;; \frac{x}{3} = 11 \Rightarrow x = 33 ;; x + y = 6 \Rightarrow y = 6 - 33 = -27 => x = 33 and y = -27: the lines meet at (33, -27) ^^
+8.5|1|b ~ 4x + 8y = 12 \Rightarrow x + 2y = 3 ;; 7x + 14y = 14 \Rightarrow x + 2y = 2 ;; \text{Same left side but } 3 \neq 2 => No solution (the lines are parallel) %%
+8.5|1|e ~ 11x + 33y = 44 \Rightarrow x + 3y = 4 ;; 5x + 15y = 30 \Rightarrow x + 3y = 6 ;; \text{Same left side but } 4 \neq 6 => No solution (the lines are parallel) %%
+8.6|1| ~ x + y = 15 ;; x - y = 3 ;; 2x = 18 \Rightarrow x = 9 ;; y = 15 - 9 = 6 => First number 9, second number 6
+8.6|3| ~ 5p + 2s = 62 ;; 8p + 2s = 92 ;; 3p = 30 \Rightarrow p = 10 ;; 2s = 62 - 50 ;; s = 6 => Pencil Rs 10, sharpener Rs 6
+8.6|4| ~ 6c + 2t = 6300 ;; 2c + t = 2600 \Rightarrow t = 2600 - 2c ;; 6c + 2(2600 - 2c) = 6300 \Rightarrow 2c = 1100 \Rightarrow c = 550 ;; t = 2600 - 1100 = 1500 => Chair Rs 550, table Rs 1500 !!
+8.6|6| ~ F = 4S ;; F + 5 = 3(S + 5) ;; 4S + 5 = 3S + 15 \Rightarrow S = 10 ;; F = 4 \times 10 = 40 => Son 10 years, father 40 years
+8.9|5|a ~ y = mx + c = 2x + (-1) => y = 2x - 1
+8.9|5|b ~ y = mx + c = -2x + 2 => y = -2x + 2
+8.9|5|c ~ y = mx + c = 2x + (-1) => y = 2x - 1
+8.9|5|e ~ y = mx + c, \; c = 0 => y = \frac{1}{2}x
+8.9|5|f ~ y = mx + c, \; c = 0 => y = 3x
+8.9|5|g ~ y = mx + c = -3x + 1 => y = -3x + 1
+9.1|3|i ~ XY^2 = XZ^2 - YZ^2 = 15^2 - 10^2 = 225 - 100 = 125 ;; XY = \sqrt{125} = 5\sqrt{5} => 5\sqrt{5} cm %%
+9.1|3|ii ~ XZ^2 = XY^2 + YZ^2 = 16^2 + 8^2 = 256 + 64 = 320 ;; XZ = \sqrt{320} = 8\sqrt{5} => 8\sqrt{5} cm %%
+9.1|3|iii ~ YZ^2 = XZ^2 - XY^2 = 5^2 - 2.5^2 = 25 - 6.25 = 18.75 ;; YZ = \sqrt{18.75} = \frac{5\sqrt{3}}{2} => \frac{5\sqrt{3}}{2} cm %%
+9.1|4|i ~ b^2 = a^2 + c^2 = 12^2 + 9^2 = 144 + 81 = 225 ;; b = 15 => b = 15 cm
+9.1|4|ii ~ c^2 = b^2 - a^2 = 24^2 - 7^2 = 576 - 49 = 527 ;; c = \sqrt{527} => c = \sqrt{527} cm
+9.1|4|iii ~ b^2 = 2^2 + 1.5^2 = 4 + 2.25 = 6.25 ;; b = 2.5 => b = 2.5 cm
+9.1|4|iv ~ a^2 = b^2 - c^2 = \left(\frac{15}{25}\right)^2 - \left(\frac{12}{25}\right)^2 = \frac{225 - 144}{625} = \frac{81}{625} ;; a = \frac{9}{25} => a = \frac{9}{25} cm %%
+9.4|5|a ~ \text{Area of 4 triangular walls} = 4 \times \frac{1}{2} \times 30 \times 42 = 2520 ;; \text{Cost} = 2520 \times 975 = 2457000 => Rs 2,457,000 !!
+9.4|5|b ~ V = \frac{1}{3} \times \text{base area} \times \text{height} = \frac{1}{3} \times 30 \times 30 \times 40 = 12000 => 12000 m^3 !!
+9.4|7| ~ \text{Lateral area} = 4 \times \frac{1}{2} \times 20 \times 23 = 920 ;; \text{Base} = 20 \times 20 = 400 ;; \text{Surface area} = 920 + 400 = 1320 ;; V = \frac{1}{3} \times 400 \times 23 = 3066.67 => Surface area 1320 cm^2, volume 3066.67 cm^3 (the cost of polishing is cut off in the printed question) !!
+9.5|1|iii ~ l = \sqrt{3^2 + 4^2} = 5 ;; \text{CSA} = \pi r l = 3.14 \times 3 \times 5 = 47.1 ;; \text{TSA} = 47.1 + 3.14 \times 9 = 75.36 => CSA 47.1 m^2, TSA 75.36 m^2 !!
+9.5|1|iv ~ l = \sqrt{6^2 + 8^2} = 10 ;; \text{CSA} = 3.14 \times 6 \times 10 = 188.4 ;; \text{TSA} = 188.4 + 3.14 \times 36 = 301.44 => CSA 188.4 cm^2, TSA 301.44 cm^2 !!
+9.5|2|i ~ l = \sqrt{2.5^2 + 12^2} = \sqrt{150.25} = 12.26 ;; \text{TSA} = \pi r (l + r) = 3.14 \times 2.5 \times (12.26 + 2.5) = 115.87 ;; V = \frac{1}{3} \times 3.14 \times 2.5^2 \times 12 = 78.5 => TSA 115.87 cm^2, volume 78.5 cm^3 !!
+9.5|2|ii ~ l = \sqrt{3.2^2 + 8.5^2} = \sqrt{82.49} = 9.08 ;; \text{TSA} = 3.14 \times 3.2 \times (9.08 + 3.2) = 123.39 ;; V = \frac{1}{3} \times 3.14 \times 3.2^2 \times 8.5 = 91.1 => TSA 123.39 cm^2, volume 91.1 cm^3 !!
+9.5|2|iii ~ l = \sqrt{1.25^2 + 3^2} = \sqrt{10.5625} = 3.25 ;; \text{TSA} = 3.14 \times 1.25 \times (3.25 + 1.25) = 17.66 ;; V = \frac{1}{3} \times 3.14 \times 1.25^2 \times 3 = 4.9 => TSA 17.66 m^2, volume 4.9 m^3 !!
+9.5|2|iv ~ h = \sqrt{13^2 - 5^2} = 12 ;; \text{TSA} = 3.14 \times 5 \times (13 + 5) = 282.6 ;; V = \frac{1}{3} \times 3.14 \times 5^2 \times 12 = 314 => TSA 282.6 cm^2, volume 314 cm^3 !!
+9.5|5|i ~ \text{TSA} = \pi r (l + r) = 3.14 \times 6 \times (10 + 6) = 301.44 => 301.44 cm^2 (301.71 with pi = 22/7) !!
+9.5|5|ii ~ \text{Cost} = 301.44 \times 0.09 = 27.13 => Rs 27.13 !!
+9.5|6|iii ~ h = \sqrt{l^2 - r^2} = \sqrt{144 - 25} = \sqrt{119} = 10.91 ;; V = \frac{1}{3} \times \frac{22}{7} \times 5^2 \times 10.91 = 285.7 => 285.7 cm^3 %%
+9.2|3| ~ r = \frac{120}{2} = 60 ;; \text{Area of the semicircle} = \frac{180}{360} \times \frac{22}{7} \times 60^2 = 5657.14 => 5657.14 m^2
+9.2|4| ~ \text{Area of one piece} = \frac{45}{360} \times \frac{22}{7} \times 8^2 = 25.14 ;; \text{Whole pizza} = 8 \times \frac{45}{360} \times \frac{22}{7} \times 8^2 = 201.14 => One piece 25.14 cm^2, whole pizza 201.14 cm^2
+10.1|4|c ~ \text{270° counter-clockwise = 90° clockwise: } (x, y) \to (y, -x) ;; P(-5, -3) \to P'(-3, 5) => P'(-3, 5) %%
+11.1|3|a ~ \text{Animals are counted} => Discrete %%
+11.1|3|b ~ \text{Length is measured and can take any value} => Continuous (the printed key says discrete) %%
+11.1|3|c ~ \text{Pages are counted} => Discrete %%
+11.1|3|d ~ \text{Mass is measured} => Continuous %%
+11.1|3|e ~ \text{Time is measured} => Continuous %%
+11.1|3|f ~ \text{Books are counted} => Discrete %%
+11.1|3|g ~ \text{Capacity is measured} => Continuous %%
+11.1|3|h ~ \text{Questions are counted} => Discrete %%
+11.1|3|i ~ \text{Mass is measured} => Continuous %%
+11.2|1|c ~ R = 25 - 6 = 19 ;; \bar{x} = \frac{120}{9} = 13.33 ;; \sum x^2 = 1876 ;; S^2 = \frac{1876}{9} - \left(\frac{120}{9}\right)^2 = 30.67 ;; S = \sqrt{30.67} = 5.54 => R = 19, S^2 = 30.67, S = 5.54 !!
+11.2|1|e ~ R = 72 - 13 = 59 ;; \bar{x} = \frac{396}{9} = 44 ;; \sum x^2 = 20442 ;; S^2 = \frac{20442}{9} - 44^2 = 335.33 ;; S = \sqrt{335.33} = 18.31 => R = 59, S^2 = 335.33, S = 18.31 !!
+11.2|4| ~ R = 88 - 42 = 46 ;; \bar{x} = \frac{431}{7} = 61.57 ;; \sum x^2 = 27997 ;; S^2 = \frac{27997}{7} - \left(\frac{431}{7}\right)^2 = 208.58 ;; S = \sqrt{208.6} = 14.44 => R = 46, S = 14.44
+11.4|2| ~ \text{Favourable outcomes: } 1, 2 ;; P = \frac{2}{6} = \frac{1}{3} => \frac{1}{3}
+11.4|3| ~ P(3 \text{ or } 4) = \frac{2}{6} = \frac{1}{3} ;; \text{A die cannot show 3 and 4 together, so the events are mutually exclusive} => \frac{1}{3}; the events are mutually exclusive
+11.4|5|a ~ \text{All pairs } (a, b) \text{ with } a, b \in \{1, \ldots, 6\} => 36 equally likely outcomes ^^
+11.4|5|b ~ A = \{(1, 2), (2, 1)\} ;; B = \{(1,1), (1,3), (1,5), (3,1), (3,3), (3,5), (5,1), (5,3), (5,5)\} ;; \text{No outcome is in both} => Yes, A and B are mutually exclusive %%
+11.4|5|c ~ P(A) = \frac{2}{36}, \; P(B) = \frac{9}{36} ;; P(A \cup B) = \frac{2}{36} + \frac{9}{36} = \frac{11}{36} => \frac{11}{36} %%
+11.4|5|d ~ A \text{ and } B \text{ have no common outcome} ;; P(A \cap B) = 0 => 0 %%
+11.4|6| ~ P(\text{tail}) = \frac{1}{2} \text{ each time} ;; P(4 \text{ tails}) = \left(\frac{1}{2}\right)^4 = \frac{1}{16} => \frac{1}{16} !!
