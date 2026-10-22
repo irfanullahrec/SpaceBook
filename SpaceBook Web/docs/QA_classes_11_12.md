@@ -145,3 +145,8 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - 34 log rows (some cover several occurrences) logged in `docs/qa/proofreading_fixes.tsv` (`urdu11` rows). Kinds: restored printed wording (قُوائے عمل, تحفۂ خلوص, بٹے بیانوے, تچی for چابک, درنگ, تیس چالیس فٹ, «پایا دُرِّ مراد بڑی خاک چھان کے»); dialect spellings restored as printed in the Daroga/Khoji dialogue; a duplicated phrase removed; two glossary entries corrected (کھداوند, کٹا ہوا تنا).
 - Two omissions filled: the paragraph «میرا کلام میرے پاس کبھی کچھ نہ رہا…» in Ghalib's first letter (scan 112, with new EN/PS lines) and exercise 1 items (ب)–(ہ) on scan 184 (with EN/PS lines). The new EN/PS lines are machine-drafted and need native review like the rest.
 - Left as printed: the book's own slips and the print run/price line on the back cover (not in the data).
+
+### Islamiat Lazmi 11 — read through, 0 changes (phase 8, part 2)
+- Viewed scans 004–073 (both halves of each photo spread: printed pp.1–137, the Q&A pages, the closing boxed quotations) beside the Urdu stream. This was a reading comparison of the Urdu body text, not a word-by-word diff of every Arabic ayah: no mismatch showed up, so `js/isl_11_data.js` was not changed. Arabic verses and hadith still need checking against a Mushaf/source (as the data's own notes say).
+- Not viewed: scans 001–003 (front cover, contents, imprint). The data's own source notes already flag a clipped word in Q3 (printed «حجۃ الوداع») and the photographed pages' clipped edges; those were kept as noted.
+- Ikhtiari 11, Mutalia 11 and HPE 11 are still open.
