@@ -116,7 +116,7 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Tables checked in the data: Senate seats (sum 104), National Assembly (342), provincial assemblies.
 - The legacy raw layer inside the same file (`"text"` blocks of garbled OCR such as ".V", "iv.") is not what readers show; the page-book layer is what was proofread.
 
-### Economics 12 — in progress (phase 7)
+### Economics 12 — COMPLETE (phase 7, part 1)
 
 - Compared with the scans so far: front matter, contents, Chapter 1 (scans 016–039), Chapter 2 (035–060) and Chapter 3 up to printed p.66 (scans 061–081). **0 transcription errors found, 0 data changes.** The data file already records every printed misprint ("retained as printed" notes), and the ones spot-checked against zoomed scans were correct.
 - Method caveat (honest): the scans are 616×830 px, and I read the Urdu by eye with no Urdu OCR available. This reliably catches missing/duplicated paragraphs, wrong numbers, wrong tables and changed words, but a one-dot or one-diacritic slip can be missed. Early in this chapter I read scans faster than the matching stream text, so printed pp. 27–58 were compared at paragraph level rather than line by line; those pages are worth a second pass if line-level certainty is needed.
@@ -125,4 +125,5 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Update 3: through scan 266 (printed p.251, stream ¶4780) compared, 0 errors, 0 data changes. Covers chapter 11 end (zakat/ushr, model paper, MCQs, pp.239-248) and chapter 12 start (foreign trade, exports, composition table).
 - Update 4: through scan 289 (printed p.274, stream ¶5142) compared, 0 errors, 0 data changes. Chapter 12 (foreign trade, balance of payments, ECO/SAARC/WTO, exchange rates, model paper) complete; chapter 13 (Islamic economic system) begun.
 - Update 5: through scan 301 (printed p.286, stream ¶5324) compared. 1 error fixed in data: p.283 "آمدنی کا خسارہ اور مزد دیکھتا ہے" had a stray word "مزد" (printed: "اور دیکھتا ہے"), 5 occurrences corrected (logged in docs/qa/proofreading_fixes.tsv). Everything else matched; p.275 last sentence (dangling "افراد میں خود … دنیا کا کوئی اور نظام ایسی عمدہ") is printed that way and kept.
+- Update 6 (final): scans 302–322 compared (chapter 13 end, model paper, 2018-19 budget appendix, 2018 and 2019 board papers), 0 further errors. Result for Economics 12: all 322 scans compared; 1 genuine misprint fixed (stray "مزد" on p.283, 5 mirrored occurrences). The budget table numbers and the English table labels were checked against the data. Caveat as above: eye-reading may miss a single dot or diacritic.
 - Remaining in Economics: printed p.181–end (scans ~197–322).
