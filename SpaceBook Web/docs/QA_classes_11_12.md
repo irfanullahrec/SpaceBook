@@ -152,9 +152,9 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Mutalia-e-Quran 11 is in progress (see its section); HPE 11 is still open.
 
 ### Mutalia-e-Quran 11 — in progress (phase 8, part 4)
-- Viewed scan files 4–138 (printed pp.1–135: foreword, outcomes, Lessons 1–14 and Lesson 15 up to the vocabulary; Surah al-Baqarah, Aal-e-Imran and the start of al-Anfal) beside the Urdu stream and the vocabulary tables (read through `D:/SpaceBook/_qa/tables_mq11.txt`). Skim level: Arabic verses, the interlinear Urdu lines, vocabulary pairs, MCQ options, short/long questions, activities and teacher notes were compared. The scan file number is printed page + 3.
+- Viewed scan files 4–174 (printed pp.1–171: foreword, outcomes, Lessons 1–19 and the first page of Lesson 20; Surah al-Baqarah, Aal-e-Imran, al-Anfal and al-Tawba to verse 104) beside the Urdu stream and the vocabulary tables (read through `D:/SpaceBook/_qa/tables_mq11.txt`). Skim level: Arabic verses, the interlinear Urdu lines, vocabulary pairs, MCQ options, short/long questions, activities and teacher notes were compared. The scan file number is printed page + 3.
 - **One data change** (logged in `docs/qa/proofreading_fixes.tsv`): printed p.128, “وجہ تسمیہ و تعارف”: the scan reads «مال کا مل جانا اللہ تعالیٰ کا فضل اور عطیہ ہے»; the data had the garbled «مال کا بلا جان» (flagged as unclear). Urdu line, the English line (the gap “(…)” filled) and the source note were corrected; the Pashto line already carried the right sense.
-- Not yet viewed: files 1–3 and 139–193. Resume at file 139 (printed p.136, stream ¶3640).
+- Not yet viewed: files 1–3 and 175–193. Resume at file 175 (printed p.172, stream ¶4414).
 
 ### Islamiat Ikhtiari 11 — read through, 1 change (phase 8, part 3)
 - Viewed scan files 1 and 3–301 (file 2 does not exist in the source folder): cover, the two boxed sayings, title page, imprint, foreword, contents, printed pp.1–294 and the back matter (certificate, national anthem, press line). This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (a few pages read in full). The scan file number is printed page + 7 from file ~112, so look pages up by printed number.
