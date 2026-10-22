@@ -538,7 +538,7 @@
   const NS = root.SBVR = root.SBVR || {};
   /* hand-written solutions: SBSOL.add({ q: 'the question text (or its first 40+ characters)', steps: [...], board: {...} }) */
   const PACKS = [];
-  NS.sol = { add: p => { PACKS.push(p); }, all: () => PACKS, find: q => { const t = String(q || '').replace(/\s+/g, ' ').trim(); if (!t) return null; return PACKS.find(p => t === p.q || (p.q.length >= 30 && t.startsWith(p.q))) || null; } };
+  NS.sol = { add: p => { PACKS.push(p); }, all: () => PACKS, find: q => { const t = String(q || '').replace(/\s+/g, ' ').trim(); if (!t) return null; return PACKS.find(p => p.re ? p.re.test(t) : (t === p.q || (p.q.length >= 30 && t.startsWith(p.q)))) || null; } };   // a pack may carry `re` (a RegExp on the question) and a label in q
   NS.autoHtml = autoHtml; NS.autoFromSolve = autoFromSolve;
   NS.autoSpec = autoSpec; NS.toTex = toTex; NS.chainsOf = chainsOf; NS.diff = diff;
   if (typeof module !== 'undefined' && module.exports) module.exports = { autoSpec, toTex, chainsOf, diff, atoms, chemOf, reactionOf };

@@ -331,4 +331,139 @@
       'Option (b) has the right shape, but its linear coefficient is printed as f′(x) instead of f′(x₀), and the last one as fⁿ(x₀) correctly. No option is exactly right as printed.',
       'Equality with f(x) holds only after adding a remainder term (or in special cases); the polynomial approximates f near x₀.']);
   })();
+  /* ---------- worked examples and review items keyed by a pattern of their question text ---------- */
+  const addRe = (label, ok, re, steps) => { if (!ok) return warn(label + ' disagrees with its numeric check'); NS.sol.add({ q: label, re, steps }); };
+  (function () {
+    const D1 = (g, t) => (g(t + 1e-6) - g(t - 1e-6)) / 2e-6;
+    const dv = (f, t) => f(0).map((_, k) => D1(tt => f(tt)[k], t));
+    const close = (u, v, tol) => u.every((x, k) => near(x, v[k], tol === undefined ? 1e-4 : tol));
+    const cross = (u, v) => [u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]];
+    const dot = (u, v) => u[0] * v[0] + u[1] * v[1] + u[2] * v[2];
+
+    addRe('vector continuity domain', [0.4, 2, 5].every(t => Number.isFinite(Math.sin(t) + 1 / (1 - t) + Math.log(t))) && !Number.isFinite(1 / (1 - 1)) && Number.isNaN(Math.log(-1)), /For what t is .*\(sint,\(1/, [
+      'A vector function is continuous exactly where all its components are continuous, so intersect the three domains.',
+      tx('sin t is continuous for every real t.', '\\sin t:\\ t\\in\\mathbb{R}'),
+      tx('(1 − t)⁻¹ = 1/(1 − t) needs 1 − t ≠ 0:', '(1-t)^{-1}:\\ t\\neq1'),
+      tx('The real logarithm needs t > 0:', '\\ln t:\\ t>0'),
+      tx('Intersect:', '\\mathbb{R}\\cap(\\mathbb{R}\\setminus\\{1\\})\\cap(0,\\infty)=(0,1)\\cup(1,\\infty)'),
+      'The vector is continuous on (0, 1) and on (1, ∞). At t = 0 the logarithm diverges and at t = 1 the reciprocal diverges; neither point has a finite continuous extension.']);
+
+    addRe('derivative of F with e^t, sin t, t^3+5t', close(dv(t => [Math.exp(t), Math.sin(t), t ** 3 + 5 * t], 0.7), [Math.exp(0.7), Math.cos(0.7), 3 * 0.49 + 5]), /^Differentiate .+sin t.+5t\)/, [
+      'Differentiate each component with respect to t; the unit vectors do not depend on t.',
+      tx('First component:', '\\frac{d}{dt}e^{t}=e^{t}'),
+      tx('Second component (radians):', '\\frac{d}{dt}\\sin t=\\cos t'),
+      tx('Third component (power and sum rules):', '\\frac{d}{dt}(t^{3}+5t)=3t^{2}+5'),
+      tx('Put the derivatives back on their unit vectors (all real t):', '\\vec F\'(t)=e^{t}\\hat\\imath+\\cos t\\,\\hat\\jmath+(3t^{2}+5)\\hat k')]);
+
+    (function () {
+      const F = t => [1, t, t * t], G = t => [t, Math.exp(t), 3], t0 = 0.8;
+      const lhs = dv(t => cross(F(t), G(t)), t0);
+      const rhs = (() => { const a = cross(dv(F, t0), G(t0)), b = cross(F(t0), dv(G, t0)); return a.map((x, k) => x + b[k]); })();
+      const formula = [3 - 2 * t0 * Math.exp(t0) - t0 * t0 * Math.exp(t0), 3 * t0 * t0, Math.exp(t0) - 2 * t0];
+      addRe('product rule for cross product', close(lhs, rhs, 1e-4) && close(lhs, formula, 1e-4), /^Verify \(F.{0,2}×G/, [
+        tx('Cross product of F = (1, t, t²) and G = (t, eᵗ, 3):', '\\vec F\\times\\vec G=(3t-t^{2}e^{t},\\ t^{3}-3,\\ e^{t}-t^{2})'),
+        tx('Differentiate each component to get the left-hand side (F×G)′:', '(\\vec F\\times\\vec G)\'=(3-2te^{t}-t^{2}e^{t},\\ 3t^{2},\\ e^{t}-2t)'),
+        tx('Right-hand side: F′ = (0, 1, 2t) and G′ = (1, eᵗ, 0). First product:', '\\vec F\'\\times\\vec G=(3-2te^{t},\\ 2t^{2},\\ -t)'),
+        tx('Second product:', '\\vec F\\times\\vec G\'=(-t^{2}e^{t},\\ t^{2},\\ e^{t}-t)'),
+        tx('Add them, component by component:', '\\vec F\'\\times\\vec G+\\vec F\\times\\vec G\'=(3-2te^{t}-t^{2}e^{t},\\ 3t^{2},\\ e^{t}-2t)'),
+        'Both sides are the same vector for every real t, so the rule is verified. The order of the factors matters: reversing a cross product changes its sign.']);
+    })();
+
+    (function () {
+      const F = t => [1, Math.exp(t), t * t], G = t => [3 * t * t, Math.exp(-t), -2 * t], t0 = 0.9;
+      const a = dv(t => F(t).map((x, k) => 2 * x + t ** 3 * G(t)[k]), t0);
+      const af = [15 * t0 ** 4, 2 * Math.exp(t0) + t0 * t0 * Math.exp(-t0) * (3 - t0), 4 * t0 * (1 - 2 * t0 * t0)];
+      const bd = D1(t => dot(F(t), G(t)), t0);
+      addRe('derivatives of two vector functions', close(a, af, 1e-4) && near(bd, 6 * t0 - 6 * t0 * t0, 1e-4), /^For .+, differentiate \(a\) 2F/, [
+        tx('(a) Expand first: the î, ĵ, k̂ coefficients of 2F + t³G are', '2\\vec F+t^{3}\\vec G=(2+3t^{5})\\hat\\imath+(2e^{t}+t^{3}e^{-t})\\hat\\jmath+(2t^{2}-2t^{4})\\hat k'),
+        tx('Differentiate î: power rule. Differentiate ĵ with the product rule (t³e⁻ᵗ)′ = 3t²e⁻ᵗ − t³e⁻ᵗ. Differentiate k̂: power rule.', '\\frac{d}{dt}(2+3t^{5})=15t^{4},\\quad \\frac{d}{dt}(2e^{t}+t^{3}e^{-t})=2e^{t}+t^{2}e^{-t}(3-t),\\quad \\frac{d}{dt}(2t^{2}-2t^{4})=4t-8t^{3}'),
+        tx('So:', '(2\\vec F+t^{3}\\vec G)\'=15t^{4}\\hat\\imath+[2e^{t}+t^{2}e^{-t}(3-t)]\\hat\\jmath+4t(1-2t^{2})\\hat k'),
+        tx('(b) Multiply corresponding components and add (eᵗe⁻ᵗ = 1):', '\\vec F\\cdot\\vec G=1\\cdot3t^{2}+e^{t}e^{-t}+t^{2}(-2t)=3t^{2}+1-2t^{3}'),
+        tx('Differentiate the scalar:', '\\frac{d}{dt}(\\vec F\\cdot\\vec G)=6t-6t^{2}')]);
+    })();
+
+    addRe('velocity', close(dv(t => [5 * t, 4 * t, -Math.cos(t)], 1.1), [5, 4, Math.sin(1.1)]), /^Find velocity for/, [
+      'Velocity is the derivative of the position vector.',
+      tx('Differentiate each component (the derivative of −cos t is + sin t in radians):', '\\frac{d}{dt}(5t)=5,\\quad \\frac{d}{dt}(4t)=4,\\quad \\frac{d}{dt}(-\\cos t)=\\sin t'),
+      tx('So:', '\\vec v(t)=5\\hat\\imath+4\\hat\\jmath+\\sin t\\,\\hat k'),
+      tx('Its speed, if asked:', '|\\vec v|=\\sqrt{25+16+\\sin^{2}t}=\\sqrt{41+\\sin^{2}t}')]);
+
+    addRe('acceleration', close(dv(t => dv(tt => [3 * tt * tt + 5, -(4 * tt * tt + 2 * tt - 1), Math.sin(tt)], t), 0.6), [6, -8, -Math.sin(0.6)], 1e-3), /^Find acceleration for/, [
+      'Acceleration is the second derivative of position: differentiate twice.',
+      tx('First derivative (velocity):', '\\vec v=(6t)\\hat\\imath-(8t+2)\\hat\\jmath+\\cos t\\,\\hat k'),
+      tx('Second derivative:', '\\frac{d}{dt}(6t)=6,\\quad \\frac{d}{dt}[-(8t+2)]=-8,\\quad \\frac{d}{dt}\\cos t=-\\sin t'),
+      tx('So:', '\\vec a(t)=6\\hat\\imath-8\\hat\\jmath-\\sin t\\,\\hat k')]);
+
+    addRe('unit vector derivative', (() => {
+      const F = t => [t, t * t, Math.sin(t)], n = v => Math.hypot(v[0], v[1], v[2]), t0 = 1.3;
+      const left = dv(t => F(t).map(x => x / n(F(t))), t0), Fp = dv(F, t0), q = n(F(t0));
+      const right = Fp.map((x, k) => x / q - dot(F(t0), Fp) * F(t0)[k] / q ** 3);
+      return close(left, right, 1e-4);
+    })(), /differentiable vector function and F\(t\) .{1,3} 0, show/, [
+      tx('Put q(t) = |F(t)|. It is positive because F(t) ≠ 0, and q² = F·F:', 'q^{2}=\\vec F\\cdot\\vec F'),
+      tx('Differentiate with the dot-product rule:', '2qq\'=\\vec F\'\\cdot\\vec F+\\vec F\\cdot\\vec F\'=2\\,\\vec F\\cdot\\vec F\'\\ \\Rightarrow\\ q\'=\\frac{\\vec F\\cdot\\vec F\'}{q}'),
+      tx('Differentiate the normalized vector with the scalar quotient rule:', '\\frac{d}{dt}\\frac{\\vec F}{q}=\\frac{\\vec F\'q-\\vec Fq\'}{q^{2}}=\\frac{\\vec F\'}{q}-\\frac{\\vec F\\,q\'}{q^{2}}'),
+      tx('Substitute q′:', '=\\frac{\\vec F\'}{q}-\\frac{(\\vec F\\cdot\\vec F\')\\,\\vec F}{q^{3}}=\\frac{\\vec F\'(t)}{|\\vec F(t)|}-\\frac{[\\vec F(t)\\cdot\\vec F\'(t)]\\vec F(t)}{|\\vec F(t)|^{3}}')]);
+
+    addRe('vector limit review v', true, /\\lim_\{t\\to5\}/, [
+      'The printed argument is −2, a constant, so the limit as t → 5 is just the value F(−2) (nothing depends on t any more).',
+      tx('Substitute t = −2 in each component:', '\\vec F(-2)=(-2+3)\\hat\\imath+2(-2)^{2}\\hat\\jmath-(1-(-2))\\hat k=\\hat\\imath+8\\hat\\jmath-3\\hat k'),
+      'None of the four printed options equals î + 8ĵ − 3k̂, so as printed the question has no correct choice. If lim(t→5) F(t) was intended, continuity gives 8î + 50ĵ + 4k̂.']);
+    addRe('vector limit review x', true, /\\lim_\{t\\to t_0\}\(C/, [
+      'For a constant C, the limit of C·F(t) is C times the limit of F(t), if that limit exists.',
+      tx('If F is continuous at t₀ the limit is the value at t₀:', '\\lim_{t\\to t_{0}}\\left(C\\cdot\\vec F(t)\\right)=C\\cdot\\lim_{t\\to t_{0}}\\vec F(t)=C\\cdot\\vec F(t_{0})'),
+      'Option (b).']);
+  })();
+
+  (function () {
+    const quad = x => x * x + 3 * x + 8;
+    addRe('plot x^2+3x+8', near(quad(-1.5), 23 / 4) && near(quad(0), 8), /^Plot the graph of .*x\^\{2\}\+3x\+8/, [
+      tx('The graph is a parabola opening upward (a = 1 > 0). Vertex at x = −b/(2a):', 'x_{v}=-\\frac{3}{2(1)}=-\\frac32'),
+      tx('Vertex height:', 'y_{v}=\\left(-\\frac32\\right)^{2}+3\\left(-\\frac32\\right)+8=\\frac94-\\frac92+8=\\frac{23}{4}'),
+      tx('y-intercept (x = 0); there is no x-intercept because the discriminant 9 − 32 is negative:', 'y(0)=8,\\qquad b^{2}-4ac=9-32=-23<0'),
+      tx('Maple command:', '\\texttt{plot(x\\^{}2+3*x+8);}')]);
+    addRe('plot x^2+2', [-3, -2, -1, 0, 1, 2, 3].every(x => near(x * x + 2, [11, 6, 3, 2, 3, 6, 11][x + 3])), /^Plot the graph of .*x\^\{2\}\+2.*for/, [
+      tx('Table of values on −3 ≤ x ≤ 3 (y = x² + 2):', 'x=-3,-2,-1,0,1,2,3\\ \\Rightarrow\\ y=11,6,3,2,3,6,11'),
+      'The vertex is (0, 2) and the graph is symmetric about the y-axis because (−x)² = x².',
+      tx('Maple command:', '\\texttt{plot(x\\^{}2+2, x=-3..3);}')]);
+  })();
+
+  (function () {
+    const A = [3, -5], B = [-7, 4], C = [10, -2];
+    addRe('centroid', near((A[0] + B[0] + C[0]) / 3, 2) && near((A[1] + B[1] + C[1]) / 3, -1), /^Find the centroid of the triangle ABC, whose vertices are A\(3,-5\)/, [
+      tx('The centroid is the average of the vertex coordinates:', 'G\\left(\\frac{x_{1}+x_{2}+x_{3}}{3},\\frac{y_{1}+y_{2}+y_{3}}{3}\\right)'),
+      tx('x-coordinate:', 'x=\\frac{3+(-7)+10}{3}=\\frac{6}{3}=2'),
+      tx('y-coordinate:', 'y=\\frac{-5+4+(-2)}{3}=\\frac{-3}{3}=-1'),
+      tx('So:', 'G(2,-1)')]);
+    addRe('distance P Q (WE 7.6)', near(Math.hypot(-1 - 3, -5 + 2), 5), /^Find the distance between the two points P\(3,-2\)/, [
+      'Use the distance formula with P = (3, −2) and Q = (−1, −5).',
+      tx('Substitute:', 'd=\\sqrt{(-1-3)^{2}+(-5+2)^{2}}=\\sqrt{16+9}=\\sqrt{25}=5')]);
+    const cc = [6, 1 / 3], dd = (p, q) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+    addRe('right bisectors concurrent', near(dd(cc, [0, 0]), dd(cc, [8, 6]), 1e-9) && near(dd(cc, [0, 0]), dd(cc, [12, 0]), 1e-9), /^Let ABC be a triangle with vertices 4\(0,0\), B\(8,6\)/, [
+      'The right (perpendicular) bisector of a side passes through its midpoint at right angles to it. A = (0,0), B = (8,6), C = (12,0).',
+      tx('Side AC lies on the x-axis, so its bisector is vertical through the midpoint (6, 0):', 'x=6'),
+      tx('Side AB: midpoint (4, 3), slope 6/8 = 3/4, so the bisector has slope −4/3:', 'y-3=-\\frac43(x-4)\\ \\Rightarrow\\ \\text{at }x=6:\\ y=3-\\frac83=\\frac13'),
+      tx('Side BC: midpoint (10, 3), slope (0 − 6)/(12 − 8) = −3/2, so the bisector has slope 2/3:', 'y-3=\\frac23(x-10)\\ \\Rightarrow\\ \\text{at }x=6:\\ y=3-\\frac83=\\frac13'),
+      tx('All three bisectors pass through the same point, the circumcentre:', 'G=\\left(6,\\frac13\\right)'),
+      tx('Check: it is equally far from A, B and C:', 'GA^{2}=36+\\frac19,\\quad GB^{2}=4+\\left(\\frac{17}{3}\\right)^{2}=36+\\frac19,\\quad GC^{2}=36+\\frac19')]);
+  })();
+
+  (function () {
+    const f = x => x * x - 2; let x = 1; for (let i = 0; i < 6; i++) x = x - f(x) / (2 * x);
+    const ivt = f(1) * f(2) < 0 && f(1.4) * f(1.5) < 0;
+    NS.sol.add({ q: 'If f(a) and f(c) have opposite signs, where does the root lie?', steps: [
+      'Intermediate value theorem: if f is continuous on [a, c] and f(a), f(c) have opposite signs, the graph must cross the x-axis between a and c.',
+      tx('Opposite signs means the product is negative; then there is a root inside the interval:', 'f(a)\\,f(c)<0\\ \\Rightarrow\\ \\exists\\,r\\in(a,c):\\ f(r)=0'),
+      'The bisection method uses this: it halves [a, c] and keeps the half whose end values still have opposite signs.'] });
+    if (!ivt || !near(x, Math.SQRT2, 1e-9)) warn('newton / bisection numeric check');
+    NS.sol.add({ q: 'Newton-Raphson is also known as:', steps: [
+      'Newton-Raphson takes the tangent to the curve at the current estimate xᵢ (slope f′(xᵢ)) and moves to the point where that tangent meets the x-axis.',
+      tx('The tangent line y − f(xᵢ) = f′(xᵢ)(x − xᵢ) meets y = 0 at:', 'x_{i+1}=x_{i}-\\frac{f(x_{i})}{f\'(x_{i})}'),
+      'So the method is also called the tangent method: option (a). (Regula-falsi, not Newton-Raphson, uses a chord.)'] });
+    NS.sol.add({ q: 'The Newton–Raphson method is also called which method?', re: /Newton.Raphson method is also called/, steps: [
+      tx('Each new estimate is where the tangent at the current estimate meets the x-axis:', 'x_{i+1}=x_{i}-\\frac{f(x_{i})}{f\'(x_{i})}'),
+      'It is the tangent method.'] });
+  })();
+  // two packs whose printed question has a prime sign: match them by pattern
+  NS.sol.all().forEach(p => { if (p.q.indexOf('int f(x)g') >= 0) p.re = /^.{3}int f\(x\)g.{1,2}\(x\).{1,3}dx.{2} = \(a\)/; if (p.q.indexOf('ln x, then f') >= 0) p.re = /^If f\(x\) = ln x, then f.{1,2}\(x\) =/; });
 })(typeof window !== 'undefined' ? window : globalThis);
