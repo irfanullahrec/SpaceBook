@@ -174,6 +174,23 @@ text('9.6|1|f', 'The triangle sides 11.4, 12 and 14.2 m with height 11 m are not
      'د درې ګوني اړخونه 11.4، 12 او 14.2 متره او لوړوالی 11 متره هم سمون نه لري (هیرون مساحت 67.4 مربع متره، قاعده 12 او لوړوالی 11 له 66 ورکوي)، نو له چاپ شوو شمېرو سطحي ساحه په باوري ډول نه ایستل کیږي. چاپ شوې کلیل 395.2 ښيي.',
      'Not computable from the printed data')
 
+
+# ---- 9.1 Q1(a), 12.1 Q3, 12.5 Q1 d,e
+add('9.1|1|', [T('(a) T-shape: top bar 6 m by 2 m and a stem 3 m wide and 5 m high.'), r'	ext{Area} = 6 	imes 2 + 3 	imes 5 = 12 + 15 = 27',
+               r'	ext{Perimeter} = 6 + 2 + 1.5 + 5 + 3 + 5 + 1.5 + 2 = 26',
+               T('(b) The L-shape needs its figure; the printed key gives perimeter 22 m and area 18 m².')],
+    '(a) perimeter 26 m, area 27 m²; (b) perimeter 22 m, area 18 m² (from the key)')
+for p_, nm, order, note in [('a', 'plus-sign (cross) with equal arms', 4, 'a cross with equal arms fits onto itself 4 times in a full turn'),
+                            ('b', 'hourglass', 2, 'it fits onto itself after a half turn'),
+                            ('c', 'L-shape', 1, 'it only fits onto itself after a full turn'),
+                            ('d', 'bow-tie', 2, 'it fits onto itself after a half turn')]:
+    add(f'12.1|3|{p_}', [T(f'Order of rotational symmetry = the number of times the shape fits onto itself in one full turn of 360 degrees. The {nm}: {note}, so the order is {order}.')],
+        f'Order {order}' + (' (no rotational symmetry other than the full turn)' if order == 1 else ''),
+        kn(f'a different order for part ({p_})') if p_ in 'ab' else None)
+add('12.5|1|d', [T('Lines AE and BG cross at C, so the angle x at C is vertically opposite angle BCA: x = 65.'), T('z is the angle E that triangle CDE shares with triangle EFG: z = 50.'),
+                 r'y = 180 - 65 - 50 = 65', r'w = 180 - 50 - 40 = 90'], 'x = 65°, y = 65°, z = 50°, w = 90°')
+add('12.5|1|e', [r'a = 180 - (80 + 55) = 45', r'b = 180 - (90 + 30) = 60'], 'a = 45°, b = 60°')
+
 # ---- 10.2 Q5e
 add('10.2|5|e', [r'465 \text{ minutes} = 7 \text{ h } 45 \text{ min} = 27900 \text{ seconds}', T('As printed ("minutes and seconds") the question is read as: 465 minutes = 465 minutes 0 seconds.')],
     '465 min 0 s (= 7 h 45 min)', kn('420 min 35 s'))
