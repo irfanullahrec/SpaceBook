@@ -82,3 +82,22 @@ rws = [r'\text{Ordered pairs of the lettered points: } ' + ',\; '.join(f'{n}({x}
       [rf'\text{{Quadrant {q}: }} ' + ',\; '.join(f'{n}({x}, {y})' for n, x, y in pts15 if quad(x, y) == q) for q in ('I', 'II', 'III', 'IV')]
 with OUT.open('a', encoding='utf-8') as fh:
     fh.write('R8|15| ~ ' + ' ;; '.join(rws) + ' => QI: S(1, 4), R(4, 4), J(3, 1); QII: Q(−2, 4), T(−4, 2), U(−3, 1); QIII: L(−4, −3); QIV: B(1, −2), A(3, −3) %%\n')
+
+# 9.1 Q1-Q2 (figures read from the scan, p163)
+rows = [r'\text{(a) T-shape: top bar } 6 \times 2,\; \text{stem } 3 \text{ wide, } 5 \text{ high}', r'\text{Area} = 6 \times 2 + 3 \times 5 = 12 + 15 = 27',
+        r'\text{Perimeter} = 6 + 2 + 1.5 + 5 + 3 + 5 + 1.5 + 2 = 26',
+        r'\text{(b) L-shape: bottom } 5,\; \text{inner horizontal } 3 \Rightarrow \text{vertical bar is } 5 - 3 = 2 \text{ wide; height } 4 + 2 = 6',
+        r'\text{Area} = 2 \times 6 + 3 \times 2 = 12 + 6 = 18', r'\text{Perimeter} = 2(5 + 6) = 22']
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write('9.1|1| ~ ' + ' ;; '.join(rows) + ' => (a) perimeter 26 m, area 27 m²; (b) perimeter 22 m, area 18 m² %%\n')
+rows = [r'\text{(a) The shaded region is the 1 m by 1 m square hole}', r'\text{Perimeter} = 4 \times 1 = 4', r'\text{Area} = 1 \times 1 = 1',
+        r'\text{(b) The shaded region is the 4 m by 2 m rectangular hole}', r'\text{Perimeter} = 2(4 + 2) = 12', r'\text{Area} = 4 \times 2 = 8']
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write('9.1|2| ~ ' + ' ;; '.join(rows) + ' => (a) perimeter 4 m, area 1 m²; (b) perimeter 12 m, area 8 m² %%\n')
+
+# 12.5 Q1 f (figure small; a, b, d follow from the stated angles, c is taken from the key)
+note = ('The figure is too small in the scan to read the position of c; a, b and d follow from the marked 105 degrees, 102 degrees and 30 degrees, and c is taken from the printed key.'
+        '|شکل سکین میں اتنی چھوٹی ہے کہ c کی جگہ پڑھی نہیں جا سکتی؛ a، b اور d نشان زد 105 ڈگری، 102 ڈگری اور 30 ڈگری سے نکلتے ہیں اور c چھپی کلید سے لیا گیا ہے۔'
+        '|انځور په سکین کې دومره کوچنی دی چې د c ځای نه لوستل کیږي؛ a، b او d له نښه شوو 105 درجو، 102 درجو او 30 درجو څخه راځي او c له چاپ شوې کلیل څخه اخیستل شوی.')
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write(r'12.5|1|f ~ a = 180 - 105 = 75 ;; b = 180 - 102 - 30 = 48 ;; d = 180 - 75 - 48 = 57 @@ ' + note + ' => a = 75°, b = 48°, c = 32° (from the key), d = 57° %%\n')
