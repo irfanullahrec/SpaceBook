@@ -1,0 +1,14 @@
+@printed 3
+@status lesson
+## 1.1.1 Matrix
+p A matrix is a rectangular array (arrangements) of real numbers enclosed in square brackets. Each number in a matrix is called an element or entry of the matrix. For example
+m $\begin{bmatrix} 2 & 3 \\ 6 & 5 \end{bmatrix},\quad \begin{bmatrix} -1 & 1 & 2 \\ 3 & 4 & 5 \end{bmatrix}$ and $\begin{bmatrix} 3 & 4 & 2 \\ -1 & 1 & -2 \\ -4 & -3 & -3 \end{bmatrix}$ are all matrices.
+p In the matrix $\begin{bmatrix} 2 & 3 \\ 6 & 5 \end{bmatrix}$ the number 2, 3, 6, 5 are the elements or entries of the matrix. Similarly in the matrix $\begin{bmatrix} 3 & 4 & 2 \\ -1 & 1 & -2 \\ -4 & -3 & -3 \end{bmatrix}$, the numbers 3, 4, 2, $-1$, 1, $-2$, $-4$, $-3$, $-5$ are the elements or entries of the given matrix. Matrices are frequently denoted by capital letters such as A, B, C and so on. Thus we can write
+m $A = \begin{bmatrix} 2 & 3 \\ 6 & 5 \end{bmatrix},\quad B = \begin{bmatrix} -1 & 1 & 2 \\ 3 & 4 & 5 \end{bmatrix},\quad C = \begin{bmatrix} 3 & 4 & 2 \\ -1 & 1 & -2 \\ -4 & -3 & -3 \end{bmatrix}$
+## 1.1.2 Rows and Columns of Matrix
+p The rows of a matrix run horizontally, and the columns of a matrix run vertically. To make the idea more clear, let us consider the following matrix.
+m $A = \begin{bmatrix} 4 & 3 & -2 \\ 1 & 5 & 2 \\ 3 & 1 & 1 \end{bmatrix}$
+p The numbers 4, 3, $-2$ are arranged horizontally, so they continue the first row. The numbers 1, 5, 2 are arranged horizontally, so they continue second row. The numbers 3, 1, 1 are arranged horizontally, so they continue third row.
+p Again consider the same matrix, $A = \begin{bmatrix} 4 & 3 & -2 \\ 1 & 5 & 2 \\ 3 & 1 & 1 \end{bmatrix}$
+p The numbers 4, 1, 3 run vertically, so they constitute the first column. The numbers 3, 5, 1 run vertically, so they constitute the second column. The numbers $-2$, 2, 1 run vertically, so they constitute the third column.
+@deco The rows and columns of A are highlighted in colour with arrows and labelled call-out boxes

@@ -1,0 +1,19 @@
+@printed 5
+@status lesson
+example 1 | Write the number of rows and column of the following matrices and hence mention their orders.
+m i) $A = \begin{bmatrix} p & q \\ r & s \end{bmatrix}$      ii) $B = \begin{bmatrix} 3 & 4 & 7 \\ 5 & 6 & 8 \end{bmatrix}$
+@deco A highlighted 2 by 3 matrix with rows and columns marked
+## Solution
+p i) Given $A = \begin{bmatrix} p & q \\ r & s \end{bmatrix}$, we see that:
+p A has two rows and two columns, so order of A is 2-by-2, sometimes we will prefer to write the order of A is 2 by 2. Thus A is 2 by 2 matrix.
+p ii) Given $B = \begin{bmatrix} 3 & 4 & 7 \\ 5 & 6 & 8 \end{bmatrix}$
+p B has two rows and three columns. The order of B is 2-by-3, or 2 by 3 i.e. B is a 2 by 3 matrix.
+endexample
+## 1.1.4 Equality of two Matrices
+p Two given matrices $A$ and $B$ are said to be equal if:
+p (i) Both the matrices are of the same order i.e. they respectively have the same number of rows and columns.
+p (ii) The elements in the corresponding positions in A and B are equal.
+@deco Illustration of three trees with people standing on boxes, captioned "Equality doesn't mean Equity"
+p For example, the matrices
+m $\begin{bmatrix} 1 & 2 & 3 \\ 6 & 5 & 4 \end{bmatrix}$ and $\begin{bmatrix} 1 & 1+1 & \frac{12}{4} \\ 4+2 & \frac{10}{2} & \frac{8}{2} \end{bmatrix}$ are equal whereas the matrices
+m $\begin{bmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{bmatrix}$ and $\begin{bmatrix} 1 & 2 & 3 \\ 6 & 5 & 4 \end{bmatrix}$ are not equal.
