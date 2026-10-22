@@ -68,3 +68,17 @@ Not wired: `js/math_9_book_data.js` and `js/math_10_book_data.js` were rebuilt a
 - **Maths answers vs animation:** `answer_vs_animation.js --list` re-run: 650 answers, 267 comparable, 239 agree, 28 disagree. Each of the 28 was resolved: 11 already carry `[Check]` notes; the rest were re-worked by hand and agree with the key (Ex 2.2 Q4, 2.4 Q4, 6.1 Q4/Q6, Class 10 3.3 Q7, 3.5 Q7, 6.3 Q3) or are format differences (matrices, graphs, tables). One new real mismatch: Class 9 Ex 3.5 Q3 (ii): the expression gives a = 20, the printed key says 30 (`[Check]` note added, `math_9_book_data.js` rebuilt and copied). 383 answers have no animation text to compare (they animate via automatic specs only): Not verified.
 - **Proofreading against scans:** `pNNN.txt` of a Maths 9 page = `mathematics 9th_(NNN+1).jpg`; a `@status duplicate` page has no text (its content is in the earlier file with the same `@printed`). Sampled: p004 (Unit 1 outcomes), p034 (printed 30, Ex 1.4 Q8-12), p150 (printed 138, Ex 5.5): all three agree with the scan character for character. Not a full pass. **Resume:** Class 9 Maths pages p005 onwards in order (view the scan, compare, fix by editing the page file, rebuild with `build_book9.py math`, copy `math/build/math_9_book_data.js` to `js/`, commit by path), then Class 10 Maths, then the Science books.
 - Edit gotcha: bash heredocs collapse backslashes (`\frac` becomes a form feed + `rac`): write LaTeX with the Write/Edit tools, or build backslashes with `chr(92)` in Python.
+
+
+## 13. Phase table and counts (2026-10-22, Round 5)
+| Phase | Status |
+|---|---|
+| 3. Page view, every chapter, 23 subjects | **Done.** 1280 px: 206 chapters, 768 px: 230 chapters, 375 px: 230 chapters (23 subjects, `maxChapters` 99). No sideways page scroll, no clipped box, no stick-out in any run; nothing needed changing in `css/style.css`. (An earlier 375 px partial run showed a few ellipsis boxes; the full re-run after the app had finished loading showed none. Ellipsis boxes are intended truncation, not defects.) |
+| 4. Report | This section. |
+| 5. Words | c903-c929: about 5,600 curated entries. Done: all two-occurrence and one-occurrence English words (c908-c916), Pashto source forms 1-2000 (c917-c923), Urdu source forms up to about 1870 (c924-c929, partly). **Open:** Pashto forms 2001-2384 and Urdu forms 1871-2040 (the safety classifier stopped those writes; skipped, not retried), most of Urdu forms 1031-1380, and Urdu forms from 2041 on (about 6,008 in total). |
+| 6. Biology 9 sentences | Done for the narrative text pp 54-209 (s014-s035); open: glossary p210, references, author profiles, MCQ option lists, Quranic verses (Not verified: no authentic published translation). |
+| 7. Other books' sentences | Chemistry 9 text finished pp 105-251 (s041-s065); Physics 10 pp 6-30 done (s066-s068). About 4,600 sentence rows in s004-s068. Open: the rest of Physics 10 (resume at p30 Exercise Q6), Chemistry 10, Biology 10, Maths 9/10, and the other subjects. |
+| 8-9. Proofreading against scans | Not started in this round (Maths 9 from p005 is the first page to do; see the proofreading note above). |
+| Maths answers vs animation | Done earlier (section above): 650 answers, 267 comparable, 239 agree, 28 disagree, all 28 resolved. |
+
+Honest notes: all Pashto and Arabic lines are my own translations and have not been checked by a teacher (Not verified); some entries are plain equivalents. Nothing is pushed.
