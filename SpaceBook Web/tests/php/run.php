@@ -185,6 +185,16 @@ $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
 check('register works', $r['code'] === 201 && $r['json']['ok'] === true, $r['body']);
 check('register without want_device returns no device', !isset(reg()['json']['device']));
 check('register with want_device returns a token', isset($r['json']['device']['token']) && strlen($r['json']['device']['token']) === 64);
+// the Android app has no cookie: `me` and the entitlements answer for a device token alone
+$tok = $r['json']['device']['token'];
+$me = http('GET', 'auth.php?action=me', null, ['Authorization: Bearer ' . $tok]);
+check('me with only a device token answers the user', $me['code'] === 200 && isset($me['json']['user']['id']) && $me['json']['user']['id'] === $r['json']['user']['id'] && !isset($me['json']['user']['role']), $me['body']);
+$me = http('GET', 'auth.php?action=me', null, ['Authorization: Bearer ' . str_repeat('0', 64)]);
+check('me with an unknown token answers no user', $me['code'] === 200 && $me['json']['user'] === null, $me['body']);
+$ent = http('GET', 'v2/entitlements.php');
+check('entitlements for a guest: unlocked, not signed in', $ent['code'] === 200 && $ent['json']['ok'] === true && $ent['json']['signedIn'] === false && $ent['json']['unlocked'] === true && $ent['json']['features']['sync'] === false, $ent['body']);
+$ent = http('GET', 'v2/entitlements.php', null, ['Authorization: Bearer ' . $tok]);
+check('entitlements with a device token: signed in, sync on', $ent['json']['signedIn'] === true && $ent['json']['features']['sync'] === true && $ent['json']['plan'] === 'free', $ent['body']);
 $tp = test_pdo();
 check('raw token is not stored', (int)$tp->query("SELECT COUNT(*) FROM devices WHERE token_hash = '" . $r['json']['device']['token'] . "'")->fetchColumn() === 0);
 check('cookie lasts 30 days', (bool)preg_match('/spacebook_sid=.*(Max-Age=2592000|Expires=)/is', $r['head']), $r['head']);
@@ -319,6 +329,15 @@ $x = sync_post($u['token'], [['eventId' => 'not-a-uuid', 'type' => 'step', 'payl
 check('bad event ids and non-objects are rejected', count($x['json']['rejected']) === 3 && $x['json']['accepted'] === [], $x['body']);
 $x = http('POST', 'v2/sync.php', ['events' => 'nope'], ['Authorization: Bearer ' . $u['token']]);
 check('events must be a list', $x['code'] === 422);
+
+// the Android app's Games tab: one key per game and page ending in the number of steps (GameKeys.rewardKey in the app)
+$gk = 'cls5|g-word-match|u3|count|1a2b3c4d5e|3';
+$before = coins_of($u['id']);
+$x = sync_post($u['token'], [stepEv($gk, 3, 0), stepEv($gk, 3, 1)]);
+check('game steps in the app key shape are accepted', count($x['json']['accepted']) === 2 && $x['json']['rejected'] === [], $x['body']);
+check('and pay +1 per new step', coins_of($u['id']) === $before + 2, (string)(coins_of($u['id']) - $before));
+$x = sync_post($u['token'], [stepEv($gk, 3, 2), stepEv($gk, 3, 1)]);
+check('finishing pays +5 once; a repeated step pays nothing', coins_of($u['id']) === $before + 2 + 1 + 5, (string)(coins_of($u['id']) - $before));
 
 // batch limits
 $x = sync_post($u['token'], array_map(function ($i) { return stepEv(act_key('lim'), 200, $i % 200); }, range(1, 501)));

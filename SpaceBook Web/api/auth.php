@@ -205,9 +205,14 @@ case 'logout':
     reply(200, ['ok' => true]);
 
 case 'me':
-    if (empty($_SESSION['uid'])) reply(200, ['ok' => true, 'user' => null]);
+    $meUid = empty($_SESSION['uid']) ? 0 : (int)$_SESSION['uid'];
+    if ($meUid === 0) {                                  // the Android app has no cookie: it identifies itself with its device token
+        $meDev = sb_device_from_request($pdo);
+        if ($meDev) $meUid = (int)$meDev['user_id'];
+    }
+    if ($meUid === 0) reply(200, ['ok' => true, 'user' => null]);
     $st = $pdo->prepare("SELECT * FROM users WHERE id = ? AND status = 'active'");
-    $st->execute([$_SESSION['uid']]);
+    $st->execute([$meUid]);
     $user = $st->fetch();
     reply(200, ['ok' => true, 'user' => $user ? public_user($user) : null]);
 
