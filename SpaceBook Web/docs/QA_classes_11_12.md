@@ -123,4 +123,5 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Update: Chapters 3 (rest), 4, 5, 6 and Chapter 7 up to printed p.121 compared (scans 082–136), still 0 errors, 0 data changes. Pace restored to line level.
 - Update 2: Chapter 7 (rest), 8, 9 up to printed p.181 compared (scans 137–196), 0 errors, 0 data changes. Two stream artefacts (headings without body, MCQ options) were checked against the data and are present there; they come from my dedupe, not from the data.
 - Update 3: through scan 266 (printed p.251, stream ¶4780) compared, 0 errors, 0 data changes. Covers chapter 11 end (zakat/ushr, model paper, MCQs, pp.239-248) and chapter 12 start (foreign trade, exports, composition table).
+- Update 4: through scan 289 (printed p.274, stream ¶5142) compared, 0 errors, 0 data changes. Chapter 12 (foreign trade, balance of payments, ECO/SAARC/WTO, exchange rates, model paper) complete; chapter 13 (Islamic economic system) begun.
 - Remaining in Economics: printed p.181–end (scans ~197–322).
