@@ -149,6 +149,16 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 ### Islamiat Lazmi 11 — read through, 0 changes (phase 8, part 2)
 - Viewed scans 004–073 (both halves of each photo spread: printed pp.1–137, the Q&A pages, the closing boxed quotations) beside the Urdu stream. This was a reading comparison of the Urdu body text, not a word-by-word diff of every Arabic ayah: no mismatch showed up, so `js/isl_11_data.js` was not changed. Arabic verses and hadith still need checking against a Mushaf/source (as the data's own notes say).
 - Not viewed: scans 001–003 (front cover, contents, imprint). The data's own source notes already flag a clipped word in Q3 (printed «حجۃ الوداع») and the photographed pages' clipped edges; those were kept as noted.
+### Islamiat Ikhtiari 11 — every scan viewed, 3 changes (phase 8, part 3)
+
+Scans 1 and 3–301 (file 2 does not exist in the source) were each opened and compared against the book's paragraph stream. Scans 1–7 and 229–301 were re-viewed after an image-limit gap, so this entry covers the whole book. Changes (all logged in `docs/qa/proofreading_fixes.tsv`):
+
+- printed p.267: «بدو چونکہ کہ» → «بدو چونکا کہ» (as printed).
+- printed p.283: «ابو مالک غیاث» → «ابو ملک غیاث» (Akhtal).
+- contents table (scan 6): the chapter/letter column had English and Urdu cells swapped; 12 cells corrected.
+
+Kept as printed: the exercise labels of printed p.289 (see the section note), the repeated numeral 3 on p.274, "شمس الحق ظہیر" on the title verso against "شمس الحسین ظہیر" in the author notes.
+
 ### Mutalia-e-Quran 11 — read through, 2 changes (phase 8, part 4)
 - Viewed scan files 4–193 (printed pp.1–186 and the back matter): foreword, outcomes, Lessons 1–21 (Surah al-Baqarah, Aal-e-Imran, al-Anfal, al-Tawba, al-Ahqaf), the ILM Foundation page and certificate, the feedback form and the back cover, beside the Urdu stream and the vocabulary tables (read through `D:/SpaceBook/_qa/tables_mq11.txt`). Skim level: Arabic verses, the interlinear Urdu lines, vocabulary pairs, MCQ options, short/long questions, activities and teacher notes were compared. The scan file number is printed page + 3.
 - **Two data changes** (both logged in `docs/qa/proofreading_fixes.tsv`):
@@ -156,7 +166,8 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
   - printed p.180 (al-Ahqaf 46:32, interlinear translation): the scan reads «اُس (اللہ) کو نہ بے بس کر سکے گا اور نہ اُس کے سوا اس کے اور مددگار ہوں گے»; the data had «کو بس کر سکے گا اور نہ اس کے سوا» (words «نہ بے» missing). The English and Pashto lines were already right.
 - Not viewed: files 1–3 (cover, the advertisement page and the two Quranic boxes). Arabic verses were read from the scans, not compared against a Mushaf (see the Qur'an text check above).
 
-### HPE 11 — in progress (phase 8, part 5)
-- Viewed scan files 1 and 3–100 (cover, title page, imprint, contents, printed pp.1–97: chapters 1–6 and chapter 7 up to the volleyball serve rules) beside the Urdu stream and `D:/SpaceBook/_qa/tables_hpe11.txt`. Skim level: headings, lists, MCQ options, exercises and tables compared. File 2 does not exist; printed pp.37–38 are absent from the source set (the data already says so, in the sentence that begins on p.38).
+### HPE 11 — read through, 1 change (phase 8, part 5)
+- Viewed scan files 1 and 3–148 (cover, title page, imprint, contents, printed pp.1–145: chapters 1–7, the tournament system and the authors' pages) beside the Urdu stream and `D:/SpaceBook/_qa/tables_hpe11.txt`. Skim level: headings, lists, MCQ options, exercises, the calorie, score-sheet, field-dimension and fixture tables were compared. File 2 does not exist; printed pp.37–38 are absent from the source set (the data already says so, in the sentence that begins on p.38).
 - **One data change** (logged in `docs/qa/proofreading_fixes.tsv`): printed p.85 (long jump, history): the scan prints «1836ء کی برلن اولمپکس» (a misprint; the Games were in 1936). The data had silently corrected it to «1936ء»; the Urdu line now follows the print and the source note says so, the English line keeps 1936.
-- Not yet viewed: files 101–148 (printed pp.98–end). Resume at file 101 (stream ¶1180).
+- Kept as printed (already noted in the data), no change: «ہر ٹیم چھ کھلاڑیوں پر مشتمل» in the relay rules, «دھڑ سوا اختتامی لکیر», «سٹارٹنگ پاؤں سے», the garbled baton sentence, «63 سالوں» / «82 سینٹی میٹر», «کوا اگر» and «اسنگل».
+- Not done: a word-by-word comparison of every long paragraph; the photographs and drawings are described, not compared.
