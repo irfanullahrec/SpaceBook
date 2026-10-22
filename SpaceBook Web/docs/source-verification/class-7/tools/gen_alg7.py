@@ -40,9 +40,38 @@ def to_sym(t):
     for _ in range(6):
         t = re.sub(re.escape(B) + r'frac\{([^{}]*)\}\{([^{}]*)\}', r'((\1)/(\2))', t)
     # x \div y
-    if B + 'div' in t:
-        a, b = t.split(B + 'div', 1)
-        t = '(' + a + ')/(' + b + ')'
+    while B + 'div' in t:
+        i = t.index(B + 'div')
+        a, rest = t[:i], t[i + len(B + 'div'):]
+        # the divisor is the next factor: a bracketed group, or a run up to the next top-level + / -
+        r = rest.lstrip()
+        d, j = 0, 0
+        if r.startswith('('):
+            for j, c in enumerate(r):
+                d += (c == '(') - (c == ')')
+                if d == 0:
+                    break
+            div_, tail = r[:j + 1], r[j + 1:]
+            # a bracket followed directly by more factors ("(...)x") keeps them
+            m = re.match(r'[A-Za-z0-9^{}.]+', tail)
+            if m:
+                div_, tail = div_ + m.group(0), tail[m.end():]
+        else:
+            m = re.match(r'[^+\-()]*', r)
+            div_, tail = m.group(0), r[m.end():]
+        # left operand = the last top-level term of `a` (an earlier "+ ..." stays outside)
+        dd, cut = 0, 0
+        for k in range(len(a) - 1, -1, -1):
+            if a[k] == '(' and dd == 0:          # the bracket that encloses the \div
+                cut = k + 1
+                break
+            dd += (a[k] == ')') - (a[k] == '(')
+            if dd == 0 and a[k] in '+-' and k > 0:
+                cut = k + 1
+                break
+        t = a[:cut] + '(' + a[cut:] + ')/(' + div_ + ')' + tail
+        if a.strip() == '':
+            break
     t = balance(t)
     syms = {n: sp.Symbol(n) for n in set(re.findall(r'[A-Za-z]', t))}
     return parse_expr(t, local_dict=syms, transformations=TR)
