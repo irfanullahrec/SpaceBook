@@ -82,6 +82,11 @@ for l in leaves:
             kt = re.sub(r'(\([a-z]\)\s*)\((i|ii|iii|iv|v)\)', lambda m: m.group(1) + m.group(2), l['key'])
             cur = {a: [x for x in re.split(r'[,\s]+|and', b) if x] for a, b in
                    re.findall(r'\(?([a-z])\)\s*([ivx,\sand]+?)(?=;|\s\(?[a-z]\)|$)', kt)}
+            ck = f"{l['ex']}|{l['q']}|"
+            if len(cur) >= 3 and not l['parts'] and ((ck not in g) or ck in own) and not any(c in kt for c in ('|', '~', ';;', '=>', '@@', '%%')):
+                text(ck, f'The correct options, from the printed key, are: {kt}. Each option is explained on its own line.',
+                     f'چھپی کلید کے مطابق درست آپشنز: {kt}۔ ہر آپشن کی وضاحت اس کی اپنی لائن میں ہے۔',
+                     f'د چاپ شوې کلیل له مخې سم انتخابونه: {kt}. هر انتخاب په خپل کرښه کې تشریح شوی دی.', kt)
         continue
     pts = l['parts']
     if not pts or pts[0][0] != 'i' or not cur or l['q'] not in cur:

@@ -47,5 +47,6 @@ b2 = 'تقسیمی: M ∪ (N ∩ T) = M ∪ {3, 5, 7} = {1, …, 9}؛ (M ∪ N) 
 c2 = 'ویشونکی: M ∪ (N ∩ T) = M ∪ {3, 5, 7} = {1, …, 9}؛ (M ∪ N) ∩ (M ∪ T) = {1, …, 9, 11, 13} ∩ {1, …, 9} = {1, …, 9}. M ∩ (N ∪ T) = M ∩ N = {3, 5, 7}؛ (M ∩ N) ∪ (M ∩ T) = {3, 5, 7}. دواړه قوانین سم دي.'
 L.append(f'5.3|10|ii ~ @text {a1}|{b1}|{c1} ;; {a2}|{b2}|{c2} => Associative and distributive laws hold %%')
 
+L.append(r'7.3|1|g ~ rac{x^{-3}}{x^{-1}} = x^{-3-(-1)} = x^{-2} ;; rac{b^{6}}{b^{-3}} = b^{6-(-3)} = b^{9} ;; rac{a^{-2}}{a^{-1}} = a^{-1}, \quad rac{b^{-2}}{b^{-2}} = b^{0} = 1 ;; x^{-2}b^{9} 	imes a^{-1} = rac{b^{9}}{a x^{2}} => rac{b^{9}}{a x^{2}} %%')
 OUT.write_text('\n'.join(L) + '\n', encoding='utf-8')
 print(len(L))
