@@ -154,7 +154,6 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - **Two data changes** (both logged in `docs/qa/proofreading_fixes.tsv`):
   - printed p.128 (al-Anfal introduction): the scan reads «مال کا مل جانا اللہ تعالیٰ کا فضل اور عطیہ ہے»; the data had the garbled «مال کا بلا جان» (and flagged it as unclear). The Urdu line, the English line (the “(…)” gap) and the source note were corrected.
   - printed p.180 (al-Ahqaf 46:32, interlinear translation): the scan reads «اُس (اللہ) کو نہ بے بس کر سکے گا اور نہ اُس کے سوا اس کے اور مددگار ہوں گے»; the data had «کو بس کر سکے گا اور نہ اس کے سوا» (words «نہ بے» missing). The English and Pashto lines were already right.
-- Kept as printed, no change: the “Q.3 (الف)” request in Q3 items that print the ayah in Arabic-only, the foreword's «مضامین» heading, the Lesson 6 table split across two pages, and the ILM page's mention of grades 6–12.
 - Not viewed: files 1–3 (cover, the advertisement page and the two Quranic boxes). Arabic verses were read from the scans, not compared against a Mushaf (see the Qur'an text check above).
 - HPE 11 is still open.
 
