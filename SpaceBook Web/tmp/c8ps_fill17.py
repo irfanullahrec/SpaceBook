@@ -1,6 +1,6 @@
 exec(open('D:/SpaceBook/SpaceBook Web/tmp/c8ps_fill1.py',encoding='utf8').read().split("add('013'")[0])
 N=' (Model answer; not native-reviewed.)'
-D=' (Derived from the poem title and theme; the verses are not reproduced in this book data. Not verified against the printed key.)'
+DER=' (Derived from the poem title and theme; the verses are not reproduced in this book data. Not verified against the printed key.)'
 add('125','q 3 | د دې نظم په رڼا',
  'خوشحال خان ختک د پښتنو یو لوے ملي شاعر، مجاهد، مشر او فخر دے۔ هغه د پښتنو د ننګ او غیرت او د قام د یووالي لپاره قلم او توره دواړه وکارول۔ هغه یو نېکه سړے، زړور ځوان او د قام خدمتګار شخصیت وو چې په شاعرۍ کښې ئې د پښتنو ننګ ژوندے ساتلے دے۔',
  'Khushal Khan Khattak was a great national poet, fighter, leader and pride of the Pashtuns. He used both pen and sword for the honour and unity of the Pashtuns. He was a good man, a brave youth and a servant of the nation, who kept Pashtun honour alive in his poetry.'+N,
@@ -15,7 +15,7 @@ add('037','q 3 | د ورور ولي',
  'بھائی چارہ وہ محبت اور اتفاق ہے جو لوگوں میں بھائیوں جیسا ہو۔ اسلام میں مسلمان مسلمان کا بھائی ہے۔ بھائی چارے سے ہم غم و خوشی بانٹتے ہیں اور دشمن ہمیں شکست نہیں دے سکتا۔')
 add('102','q 3 | د نظم',
  'د دې نظم مقصد دا دے چې ماشومان ښۀ خویونه او ښۀ عادتونه زده کړي، لکه رېښتیا ویل، د مشرانو عزت، صفایي او د وخت قدر، او د بد خویونو نه ځان وساتي۔',
- 'The aim of the poem is that children learn good manners and habits, such as speaking the truth, respecting elders, cleanliness and valuing time, and avoid bad habits.'+D,
+ 'The aim of the poem is that children learn good manners and habits, such as speaking the truth, respecting elders, cleanliness and valuing time, and avoid bad habits.'+DER,
  'نظم کا مقصد بچوں کو اچھی عادات سکھانا ہے، جیسے سچ بولنا، بزرگوں کا احترام، صفائی اور وقت کی قدر، اور بری عادتوں سے بچنا۔')
 add('134','q 3 | د مرفي د مرګ',
  'په دې واقعه کښې پولیس افسر مرفي په ټوپک د خدائي خدمتګارو په سوله ییز جلوس ډزې وکړې او ډېر خلق زخمیان شول، خو خلقو د خپل ځاے نه خوځېدل ونه کړل۔ (Not verified: د مرفي د مرګ مستقیم بیان په لنډیزونو کښې نشته۔)',
@@ -31,5 +31,5 @@ add('142','q 3 | د خپل کلي د خېلونو',
  'قبیلوں، حجروں اور مساجد کے نام ہر طالب علم کے اپنے گاؤں پر منحصر ہیں؛ مثلاً جامع مسجد، خان کا حجرہ، بزرگوں کا حجرہ۔ (Not verified)')
 add('037','q 2 | د دې نظم مفهوم',
  'د دې نظم مفهوم دا دے چې ورور ولي، مینه او اتفاق د قام د ترقۍ او د دښمن نه د بچېدو لاره ده، او اختلاف او جګړې قام کمزورے کوي۔',
- 'The poem\'s meaning is that brotherhood, love and unity are the way to the nation\'s progress and safety from the enemy, while disagreement and fighting weaken a nation.'+D,
+ 'The poem\'s meaning is that brotherhood, love and unity are the way to the nation\'s progress and safety from the enemy, while disagreement and fighting weaken a nation.'+DER,
  'نظم کا مفہوم: بھائی چارہ، محبت اور اتحاد قوم کی ترقی اور دشمن سے بچاؤ کا راستہ ہے جبکہ اختلاف قوم کو کمزور کرتا ہے۔')
