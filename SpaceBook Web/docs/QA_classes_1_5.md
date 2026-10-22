@@ -117,4 +117,5 @@ Search data: all 40 Class 1-5 subjects (including all eight Class 1 subjects) (i
 | Class 1 Maths | all pages 005-145 (every number, object count, grid cell, crossed-out item and answer compared; p. 144-145 back matter; printed errors on pp. 53, 69, 92, 97 carry an editorial note) | p. 92: added an `@issue` note for the printed "Rs. 20 = Rs. 10 + Rs. 5" (two Rs 5 coins shown); no text change needed |
 | Class 1 Islamiat | all 58 scans 000-057 (text, hadith numbers, exercises, glossary; scans 030-033 are upside down and in reverse order, already noted by `@issue`) | none needed |
 | Class 1 Pashto | all 88 scans 000-087 (poems are summaries by design; scan swaps 010/011, 024/025, 086/087, smeared scans 054-055 and the missing printed pp. 72-73 already noted) | none needed |
-Next: Class 1 Nazira (62 pages, 030 done), Drawing (34), then Class 2, 3, 4, 5.
+| Class 1 Nazira | scans 000-039 (letter grids, every word, diacritic and +counter compared) | fixed in page text: p13 أَخَذَ, p17 أَذِنَ (hamza on alef), p31 تَحْتِهَا (kasra); rebuilt nazira_1_book.js |
+Next: Class 1 Nazira from scan 040, Drawing (34), then Class 2, 3, 4, 5.
