@@ -115,3 +115,9 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - The data file's own "retained as printed" notes were checked against the scans and are correct (e.g. p.120 prints the Pashtun-culture closing clause twice; p.201 prints "1347ء" for 1947; p.179 skips item 10; p.180 numbers an item "1"). One edit I made on the strength of a stream reading (the duplicated p.120 clause) was reverted after zooming into the scan showed the duplication is in the print. Lesson recorded: confirm against the zoomed scan before touching text the data already flags as printed.
 - Tables checked in the data: Senate seats (sum 104), National Assembly (342), provincial assemblies.
 - The legacy raw layer inside the same file (`"text"` blocks of garbled OCR such as ".V", "iv.") is not what readers show; the page-book layer is what was proofread.
+
+### Economics 12 — in progress (phase 7)
+
+- Compared with the scans so far: front matter, contents, Chapter 1 (scans 016–039), Chapter 2 (035–060) and Chapter 3 up to printed p.66 (scans 061–081). **0 transcription errors found, 0 data changes.** The data file already records every printed misprint ("retained as printed" notes), and the ones spot-checked against zoomed scans were correct.
+- Method caveat (honest): the scans are 616×830 px, and I read the Urdu by eye with no Urdu OCR available. This reliably catches missing/duplicated paragraphs, wrong numbers, wrong tables and changed words, but a one-dot or one-diacritic slip can be missed. Early in this chapter I read scans faster than the matching stream text, so printed pp. 27–58 were compared at paragraph level rather than line by line; those pages are worth a second pass if line-level certainty is needed.
+- Remaining in Economics: printed pp. 66–end (scans ~082–322).
