@@ -47,3 +47,22 @@ r13 = [r'\text{Mid-points: } 5.5,\; 15.5,\; 25.5,\; 35.5,\; 45.5', rf'\sum f = {
        rf'\text{{Mean}} = \frac{{{sfx:g}}}{{{n}}} = {sfx / n:.2f}']
 with OUT.open('a', encoding='utf-8') as fh:
     fh.write('13.6|4| ~ ' + ' ;; '.join(r13) + f' => {sfx / n:.2f} m %%\n')
+
+# Review 13 Q12 marbles (bag read from the scan: 3 red, 6 green, 3 blue = 12)
+items = [('i', 'red', 3), ('ii', 'green', 6), ('iii', 'blue', 3), ('iv', 'not blue', 9), ('v', 'marble', 12), ('vi', 'yellow', 0), ('vii', 'not a marble', 0)]
+rws, ans = [r'\text{Bag read from the figure: } 3 \text{ red} + 6 \text{ green} + 3 \text{ blue} = 12 \text{ marbles}'], []
+for k, nm, c in items:
+    p = F(c, 12)
+    rws.append(rf'\text{{({k}) P({nm}): }} \frac{{{c}}}{{12}} = {fr(p)}')
+    rws.append(rf'1 - {fr(p)} = {fr(1 - p)}')
+    ans.append(f'({k}) {p}, complement {1 - p}')
+rws.append(r'\text{Certain: (v) (probability 1); impossible: (vi) and (vii) (probability 0); no two colours are equally likely except red and blue (} \frac{1}{4} \text{ each)}')
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write('R13|12| ~ ' + ' ;; '.join(rws) + ' => ' + '; '.join(ans) + '; certain: v; impossible: vi, vii; equally likely: red and blue %%\n')
+
+# Review 5 Q9 income tax (the book's worked example uses 5 %; the question gives no rebate)
+note = ('The question gives no rate and no rebate; the book\'s example in this unit uses 5 %, and 5 % of the whole income gives the printed key. If a rebate such as Rs 400,000 applied, there would be no tax.'
+        '|سوال میں نہ شرح دی گئی ہے نہ رعایتی حد؛ اس باب کی مثال میں 5 فیصد استعمال ہوا ہے اور پوری آمدنی کے 5 فیصد سے چھپی کلید ملتی ہے۔ اگر 4,00,000 روپے جیسی رعایتی حد لاگو ہوتی تو ٹیکس صفر ہوتا۔'
+        '|په پوښتنه کې نه نرخ ورکړل شوی نه معافي حد؛ د دې څپرکي بېلګه 5 سلنه کاروي او د ټول عاید 5 سلنه چاپ شوې کلیل ورکوي. که د 4,00,000 روپیو غوندې معافي حد پلی کېده نو مالیه به صفر وای.')
+with OUT.open('a', encoding='utf-8') as fh:
+    fh.write(r'R5|9| ~ \text{Income tax at 5 \%} = 236000 \times \frac{5}{100} = 11800 @@ ' + note + ' => Rs 11,800 %%\n')
