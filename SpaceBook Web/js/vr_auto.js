@@ -91,7 +91,9 @@
     const texChains = [];
     const texSeg = t => {
       t = String(t || '').replace(/\\displaystyle\s*/g, '').trim();
-      if (!t || t.length > 160 || /\\begin|&|\\\\|\\tag|\\cases/.test(t)) return;
+      // matrices written as bmatrix / pmatrix / vmatrix are plain operands: hide them from the safety test (their & and \\ are fine), keep the rest strict
+      const noMat = t.replace(/\\begin\{([bpvVB]?matrix)\}[\s\S]*?\\end\{\1\}/g, 'M');
+      if (!t || noMat.length > 160 || t.length > 600 || /\\begin|&|\\\\|\\tag|\\cases/.test(noMat)) return;
       const sides = topSplitEq(t);
       if (sides.length >= 2 && sides.every(x => x && sane(x))) texChains.push({ src: t, tex: t, sides });
     };
@@ -135,7 +137,9 @@
       if (t[i] === '\\') {
         const m = /^\\([A-Za-z]+|.)/.exec(t.slice(i)); j = i + m[0].length;
         const nargs = ARGN[m[0].slice(1)];
-        if (m[0] === '\\left' || m[0] === '\\right') { while (t[j] === ' ') j++; if (t[j] === '\\') { const mm = /^\\([A-Za-z]+|.)/.exec(t.slice(j)); j += mm[0].length; } else j++; }
+        const env = m[0] === '\\begin' ? /^\{([A-Za-z*]+)\}/.exec(t.slice(j)) : null;      // a whole matrix (\begin{bmatrix} ... \end{bmatrix}) is one atom
+        if (env) { const endTag = '\\end{' + env[1] + '}', e = t.indexOf(endTag, j); if (e < 0) return null; j = e + endTag.length; }
+        else if (m[0] === '\\left' || m[0] === '\\right') { while (t[j] === ' ') j++; if (t[j] === '\\') { const mm = /^\\([A-Za-z]+|.)/.exec(t.slice(j)); j += mm[0].length; } else j++; }
         else if (nargs) {
           if (m[0] === '\\sqrt' && t[j] === '[') { const e = t.indexOf(']', j); if (e < 0) return null; j = e + 1; }
           for (let a = 0; a < nargs; a++) {
