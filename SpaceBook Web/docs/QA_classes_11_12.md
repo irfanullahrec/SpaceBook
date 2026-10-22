@@ -169,8 +169,11 @@ Scans 4–193 (the whole book; 1–3 are the cover and ad page) were each opened
 
 Kept as printed: the "منافقین" wording in items 5–6 of printed p.21 and the numbering quirks already noted in the data.
 
-### HPE 11 — read through, 1 change (phase 8, part 5)
-- Viewed scan files 1 and 3–148 (cover, title page, imprint, contents, printed pp.1–145: chapters 1–7, the tournament system and the authors' pages) beside the Urdu stream and `D:/SpaceBook/_qa/tables_hpe11.txt`. Skim level: headings, lists, MCQ options, exercises, the calorie, score-sheet, field-dimension and fixture tables were compared. File 2 does not exist; printed pp.37–38 are absent from the source set (the data already says so, in the sentence that begins on p.38).
-- **One data change** (logged in `docs/qa/proofreading_fixes.tsv`): printed p.85 (long jump, history): the scan prints «1836ء کی برلن اولمپکس» (a misprint; the Games were in 1936). The data had silently corrected it to «1936ء»; the Urdu line now follows the print and the source note says so, the English line keeps 1936.
-- Kept as printed (already noted in the data), no change: «ہر ٹیم چھ کھلاڑیوں پر مشتمل» in the relay rules, «دھڑ سوا اختتامی لکیر», «سٹارٹنگ پاؤں سے», the garbled baton sentence, «63 سالوں» / «82 سینٹی میٹر», «کوا اگر» and «اسنگل».
-- Not done: a word-by-word comparison of every long paragraph; the photographs and drawings are described, not compared.
+### HPE 11 — every scan viewed, 1 change (phase 8, part 5)
+
+Scans 1 and 3–148 (file 2 does not exist; printed pp.37–38 are absent from the source) were each opened and compared against the paragraph stream and the tables (calorie tables pp.12–13, field-event score sheet, hockey measurements). Scans 1–73 were viewed in a second pass after an image-limit gap; scans 74–148 were viewed first. Change (logged in `docs/qa/proofreading_fixes.tsv`):
+
+- printed p.85: the print gives the Berlin Olympics as «1836ء»; data now reads as printed and the source note says so (the English line keeps 1936).
+
+Kept as printed and already annotated: the relay-team "چھ کھلاڑی" line, "63 سالوں", «دھڑ سوا اختتامی لکیر» on p.52, "Charle Bucher"/"Nikson Koszen" spellings, the Latin-letter abbreviations on the credits page.
+
