@@ -118,4 +118,6 @@ Search data: all 40 Class 1-5 subjects (including all eight Class 1 subjects) (i
 | Class 1 Islamiat | all 58 scans 000-057 (text, hadith numbers, exercises, glossary; scans 030-033 are upside down and in reverse order, already noted by `@issue`) | none needed |
 | Class 1 Pashto | all 88 scans 000-087 (poems are summaries by design; scan swaps 010/011, 024/025, 086/087, smeared scans 054-055 and the missing printed pp. 72-73 already noted) | none needed |
 | Class 1 Nazira | scans 000-058 (letter grids, every word, diacritic and +counter compared; 059-061 back matter) | fixed in page text: p13 أَخَذَ, p17 أَذِنَ, pp47/50 أَظُنُّ أُمَّةٌ أَمَّنْ أُمُّ أُمَّتُكُمْ أَبَدًا أُمَّةٍ (hamza on alef), p31 تَحْتِهَا (kasra); rebuilt nazira_1_book.js |
-Next: Class 1 Drawing (34 pages), then Class 2, 3, 4, 5.
+| Class 1 Drawing | all 34 scans 000-033 (titles, activity numbers, teacher instructions; upside-down scans 017, 019, 025 already noted; line-art figures compared by eye) | none needed |
+Class 1 is now fully proofread by eye (English, Maths, Islamiat, Pashto, Nazira, Drawing); Urdu and GK have no source scans (reported, not invented).
+Next: Class 2 (Maths 168, English 138, Urdu 117, GK 103, Islamyat 58, Drawing 34 and the other Class 2 books), then Class 3, 4, 5. Page text via `scratchpad/sp2.py 2 SUBJ n...` plus scans in `D:/SpaceBook/_cls2_jpg/SUBJ/NNN.jpg`.
