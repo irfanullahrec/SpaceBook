@@ -131,6 +131,13 @@ add('10.2|1|', [r'\text{Vertices read from the grid: } A(1, 1),\; B(3, 1),\; C(3
       'سکین میں تکون مدھم ہے؛ اس کے سرے (1, 1)، (3, 1)، (3, 3) بڑھائی گئی تصویر سے پڑھے گئے ہیں۔ اگر آپ کی شکل مختلف ہو تو یہی قاعدہ اس کے سروں پر لگائیں۔',
       'په سکین کې درې ګوڼی کمزورې ده؛ د هغې څوکې (1, 1)، (3, 1)، (3, 3) له لوی شوي انځور څخه لوستل شوې. که ستاسو انځور توپیر ولري همدا قاعده د هغې په څوکو وکاروئ.'))
 
+
+# ---- 10.10 Q5 (figure read from the 250-dpi render: L = 40, N = 20; D = x + 90, F = 5y - 120)
+add('10.10|5|', [r'\text{ASA: } \angle L = \angle D \text{ and } \angle N = \angle F',
+                 r'x + 90 = 40 \Rightarrow x = 40 - 90 = -50',
+                 r'5y - 120 = 20 \Rightarrow 5y = 140 \Rightarrow y = 28'],
+    'x = −50, y = 28')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
