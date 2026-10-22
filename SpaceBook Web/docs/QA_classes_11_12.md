@@ -159,12 +159,15 @@ Scans 1 and 3–301 (file 2 does not exist in the source) were each opened and c
 
 Kept as printed: the exercise labels of printed p.289 (see the section note), the repeated numeral 3 on p.274, "شمس الحق ظہیر" on the title verso against "شمس الحسین ظہیر" in the author notes.
 
-### Mutalia-e-Quran 11 — read through, 2 changes (phase 8, part 4)
-- Viewed scan files 4–193 (printed pp.1–186 and the back matter): foreword, outcomes, Lessons 1–21 (Surah al-Baqarah, Aal-e-Imran, al-Anfal, al-Tawba, al-Ahqaf), the ILM Foundation page and certificate, the feedback form and the back cover, beside the Urdu stream and the vocabulary tables (read through `D:/SpaceBook/_qa/tables_mq11.txt`). Skim level: Arabic verses, the interlinear Urdu lines, vocabulary pairs, MCQ options, short/long questions, activities and teacher notes were compared. The scan file number is printed page + 3.
-- **Two data changes** (both logged in `docs/qa/proofreading_fixes.tsv`):
-  - printed p.128 (al-Anfal introduction): the scan reads «مال کا مل جانا اللہ تعالیٰ کا فضل اور عطیہ ہے»; the data had the garbled «مال کا بلا جان» (and flagged it as unclear). The Urdu line, the English line (the “(…)” gap) and the source note were corrected.
-  - printed p.180 (al-Ahqaf 46:32, interlinear translation): the scan reads «اُس (اللہ) کو نہ بے بس کر سکے گا اور نہ اُس کے سوا اس کے اور مددگار ہوں گے»; the data had «کو بس کر سکے گا اور نہ اس کے سوا» (words «نہ بے» missing). The English and Pashto lines were already right.
-- Not viewed: files 1–3 (cover, the advertisement page and the two Quranic boxes). Arabic verses were read from the scans, not compared against a Mushaf (see the Qur'an text check above).
+### Mutalia-e-Quran 11 — every scan viewed, 3 changes (phase 8, part 4)
+
+Scans 4–193 (the whole book; 1–3 are the cover and ad page) were each opened and compared against the paragraph stream and the vocabulary and MCQ tables. Changes (logged in `docs/qa/proofreading_fixes.tsv`):
+
+- printed p.128 (al-Anfal intro): «مال کا بلا جان» → «مال کا مل جانا» (English gap filled: "into one's hands").
+- printed p.183 (al-Ahqaf 46:32): «کو بس کر سکے گا» → «کو نہ بے بس کر سکے گا اور نہ اُس کے سوا».
+- printed p.6 (merit of al-Baqara): Sahih Muslim reference «۷۸۰» → «۸۰» as printed, in the Urdu and English lines.
+
+Kept as printed: the "منافقین" wording in items 5–6 of printed p.21 and the numbering quirks already noted in the data.
 
 ### HPE 11 — read through, 1 change (phase 8, part 5)
 - Viewed scan files 1 and 3–148 (cover, title page, imprint, contents, printed pp.1–145: chapters 1–7, the tournament system and the authors' pages) beside the Urdu stream and `D:/SpaceBook/_qa/tables_hpe11.txt`. Skim level: headings, lists, MCQ options, exercises, the calorie, score-sheet, field-dimension and fixture tables were compared. File 2 does not exist; printed pp.37–38 are absent from the source set (the data already says so, in the sentence that begins on p.38).
