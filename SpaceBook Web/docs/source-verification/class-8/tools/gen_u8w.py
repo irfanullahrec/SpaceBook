@@ -216,6 +216,18 @@ add('Review Exercise 10|20|', [r'\text{Small triangle: } A(1, 1),\; B(1, 2),\; C
                                r'CC^{\prime}: (3 + 7s,\; 1 + 3s) \text{ at } s = -1 \text{ gives } (-4, -2) \text{ as well}'],
     'Scale factor 2, centre of enlargement (−4, −2)')
 
+
+# ---- 10.2 Q3 (first grid read from a 450-dpi render of page 245; the second grid is too faint and skewed)
+add('10.2|3|', [r'\text{Grid 1, small L-shape: } (1,1),\,(1,4),\,(2,4),\,(2,2),\,(3,2),\,(3,1);\quad \text{large L-shape: } (4,0),\,(4,6),\,(6,6),\,(6,2),\,(8,2),\,(8,0)',
+                r'k = \frac{8 - 4}{3 - 1} = 2,\qquad \frac{6 - 0}{4 - 1} \text{ along the height gives } \frac{6}{3} = 2',
+                r'\text{Centre: } O = 2P - P^{\prime} \text{ for } P(1, 1),\, P^{\prime}(4, 0): \quad O = (2 - 4,\; 2 - 0) = (-2, 2)',
+                r'\text{Check with } (3, 2) \to (8, 2): \quad O = (6 - 8,\; 4 - 2) = (-2, 2)',
+                r'\text{Grid 2 (green triangle and its faint image) is too faint in the scan to read}'],
+    'Grid 1: scale factor 2, centre (−2, 2). Grid 2: not legible in the scan',
+    N('The coordinates of grid 1 were read from a contrast-enhanced render of a skewed photograph and may be off by about half a unit; the scale factor and centre follow from the consistent pattern of all six corners.',
+      'گرڈ 1 کے محدد ٹیڑھی تصویر کے بڑھائے گئے عکس سے پڑھے گئے ہیں اور تقریباً آدھی اکائی کی غلطی ممکن ہے؛ پیمانہ اور مرکز چھ کونوں کے یکساں نمونے سے نکلتے ہیں۔',
+      'د ګرډ 1 همغږي له یوې کږې انځور د لوی شوي عکس څخه لوستل شوي او شاوخوا نیمه واحده تېروتنه کیدی شي؛ پیمانه او مرکز د ټولو شپږو کونجونو له یو شان بڼې څخه راځي.'))
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
