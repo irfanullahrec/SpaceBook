@@ -149,8 +149,11 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 ### Islamiat Lazmi 11 — read through, 0 changes (phase 8, part 2)
 - Viewed scans 004–073 (both halves of each photo spread: printed pp.1–137, the Q&A pages, the closing boxed quotations) beside the Urdu stream. This was a reading comparison of the Urdu body text, not a word-by-word diff of every Arabic ayah: no mismatch showed up, so `js/isl_11_data.js` was not changed. Arabic verses and hadith still need checking against a Mushaf/source (as the data's own notes say).
 - Not viewed: scans 001–003 (front cover, contents, imprint). The data's own source notes already flag a clipped word in Q3 (printed «حجۃ الوداع») and the photographed pages' clipped edges; those were kept as noted.
-- Ikhtiari 11, Mutalia 11 and HPE 11 are still open.
+- Mutalia 11 and HPE 11 are still open.
 
-### Islamiat Ikhtiari 11 — in progress (phase 8, part 3)
-- Viewed scan files 8–285 (printed pp.1–278) next to the Urdu stream. This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (two pages read in full: no differences). No mismatch found, no data change. Note: the scan file number is printed page + 7 from file ~112 (the stream's own “scan” numbers differ by 2), so look pages up by printed number.
-- Not yet viewed: files 1–7 and 286–301. Resume at file 286 (printed p.279, stream ¶3398).
+### Islamiat Ikhtiari 11 — read through, 1 change (phase 8, part 3)
+- Viewed scan files 1 and 3–301 (file 2 does not exist in the source folder): cover, the two boxed sayings, title page, imprint, foreword, contents, printed pp.1–294 and the back matter (certificate, national anthem, press line). This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (a few pages read in full). The scan file number is printed page + 7 from file ~112, so look pages up by printed number.
+- **One data change** (logged in `docs/qa/proofreading_fixes.tsv`): printed p.283, Akhtal: the scan prints «ابو ملک غیاث بن غوث»; the data had «ابو مالک». Urdu line corrected; the Pashto and English lines keep the spelling Abu Malik, which is the usual form of the name.
+- Kept as printed, no change: printed p.281 heading «اعراض الشعر» (a misprint of «اغراض»; the data has the correct «اغراض»), the exercise lettering «و / ت» on p.289 (data letters ط / ی), the Pakistan/Iran area figures.
+- Known gap, not a transcription error: the contents table of the front matter is only a heading in the data (the chapter titles and page numbers 1, 3, 16, 22, 58, 79, 107, 124, 137, 164, 189, 235, 257 are not transcribed).
+- Not done: a word-by-word comparison of every long paragraph, and a check of the Arabic verses against a Mushaf (see the Qur'an text check above).
