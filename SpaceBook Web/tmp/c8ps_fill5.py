@@ -1,0 +1,9 @@
+exec(open('D:/SpaceBook/SpaceBook Web/tmp/c8ps_fill1.py',encoding='utf8').read().split("add('013'")[0])
+add('042','q 2 | د ګندمک',
+ '۱۔ افغانستان به خپل واک لرونکے هېواد نۀ وي۔ ۲۔ په کابل کښې به د برطانیې د طرفه یو مستقل پولیټیکل افسر تاکلے شي او د کابل حکومت به هر کار د هغۀ په مشوره کوي۔ ۳۔ امیر یعقوب خان ته به هر کال په زرګونو پونډه امداد ورکولے شي۔ ۴۔ خېبر دره، کرمه او بلوچستان به د پېرنګي حکومت په قبضه کښې وي۔',
+ 'Terms of the Treaty of Gandamak: 1. Afghanistan would not be an independent country. 2. A permanent political officer appointed by Britain would sit in Kabul and the government would act on his advice. 3. Amir Yaqub Khan would be paid thousands of pounds every year. 4. The Khyber Pass, Kurram and Balochistan would be held by the British government. (From the lesson.)',
+ 'معاہدۂ گندمک کی شرائط: ۱۔ افغانستان آزاد ملک نہیں رہے گا۔ ۲۔ کابل میں برطانیہ کی طرف سے مستقل پولیٹیکل افسر ہوگا اور حکومت ہر کام اس کے مشورے سے کرے گی۔ ۳۔ امیر یعقوب خان کو ہر سال ہزاروں پاؤنڈ امداد دی جائے گی۔ ۴۔ درۂ خیبر، کرم اور بلوچستان انگریزوں کے قبضے میں ہوں گے۔ (سبق سے)')
+add('042','q 3 | د مېوند د جنګ',
+ 'د مېوند د جنګ نه مونږ دا پېغام ترلاسه کولے شو چې د وطن د ننګ او ازادۍ لپاره باید همت او قربانۍ ته تیار اوسو۔ د ملالې په شان یوه مېرمن هم په ډېر جرات سره د غازیانو حوصله اوچته کړه او ورسره ئې د جنګ نقشه بدله کړه۔ ځکه ننګ، دلېرۍ او د وطن مینه اصلي ځواک دے۔',
+ 'Message of the Battle of Maiwand: we must be ready for courage and sacrifice for the honour and freedom of the homeland. A woman like Malalai raised the spirit of the fighters and turned the battle. Honour, bravery and love of the homeland are the real strength. (Model answer based on the lesson.)',
+ 'جنگِ میوند کا پیغام: وطن کی عزت اور آزادی کے لیے ہمت اور قربانی کے لیے تیار رہنا چاہیے۔ ملالہ جیسی خاتون نے غازیوں کا حوصلہ بڑھایا اور جنگ کا رخ بدل دیا۔ غیرت، بہادری اور وطن کی محبت اصل طاقت ہے۔')
