@@ -247,3 +247,15 @@ text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the c
 
 OUT.write_text('\n'.join(L) + '\n', encoding='utf-8')
 print(len(L), 'rows ->', OUT)
+
+# ---- Review 11 Q6 (13 marks read from the 300-dpi render of page 305: 32, 47, 49, 43, 39, 28, 35, 45, 41, 50, 47, 43, 49)
+_d = [32, 47, 49, 43, 39, 28, 35, 45, 41, 50, 47, 43, 49]
+_m = sum(_d) / len(_d)
+_ss = sum((x - _m) ** 2 for x in _d)
+OUTW = OUT
+with OUTW.open('a', encoding='utf-8') as _fh:
+    _fh.write('Review Exercise 11|6| ~ ' + ' ;; '.join([
+        r'\text{Range} = 50 - 28 = 22',
+        rf'\bar{{x}} = \frac{{548}}{{13}} = {_m:.2f}',
+        rf'S^2 = \frac{{\sum (x - \bar{{x}})^2}}{{n}} = \frac{{{_ss:.2f}}}{{13}} = {_ss / 13:.2f}',
+        rf'S = \sqrt{{{_ss / 13:.2f}}} = {(_ss / 13) ** 0.5:.2f}']) + f' => R = 22, S² = {_ss / 13:.2f}, S = {(_ss / 13) ** 0.5:.2f} %%\n')
