@@ -152,5 +152,5 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Ikhtiari 11, Mutalia 11 and HPE 11 are still open.
 
 ### Islamiat Ikhtiari 11 — in progress (phase 8, part 3)
-- Compared scans 8–24 (printed pp.1–17: chapter opener, Qur'an writing, recitation etiquettes, prostrations table, exercises 1–3, start of translation section) against the Urdu stream and the data table: 0 mismatches, no data change.
-- Not yet compared: scans 1–7 and 25–301. Resume at scan 25 (stream ¶295).
+- Compared scans 8–111 (printed pp.1–104: Qur'an chapter, worship, Seerah, administrator/judge sections) against the Urdu stream, a skim-level comparison (headings, verses, lists, numbers, hadith references; long paragraphs were checked by opening lines and spot reads): 0 mismatches found, no data change.
+- Not yet compared: scans 1–7 and 112–301. Resume at scan 112 (stream ¶1249).
