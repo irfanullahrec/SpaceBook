@@ -149,7 +149,11 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 ### Islamiat Lazmi 11 — read through, 0 changes (phase 8, part 2)
 - Viewed scans 004–073 (both halves of each photo spread: printed pp.1–137, the Q&A pages, the closing boxed quotations) beside the Urdu stream. This was a reading comparison of the Urdu body text, not a word-by-word diff of every Arabic ayah: no mismatch showed up, so `js/isl_11_data.js` was not changed. Arabic verses and hadith still need checking against a Mushaf/source (as the data's own notes say).
 - Not viewed: scans 001–003 (front cover, contents, imprint). The data's own source notes already flag a clipped word in Q3 (printed «حجۃ الوداع») and the photographed pages' clipped edges; those were kept as noted.
-- Mutalia 11 and HPE 11 are still open.
+- Mutalia-e-Quran 11 is in progress (see its section); HPE 11 is still open.
+
+### Mutalia-e-Quran 11 — in progress (phase 8, part 4)
+- Viewed scan files 4–62 (printed pp.1–59: foreword, learning outcomes, Lessons 1–5 and the start of Lesson 6 — Surah al-Baqarah 1–242) beside the Urdu stream and the vocabulary tables (read through `tables_mq11.txt`). Skim level: Arabic verses, the interlinear Urdu translation lines, vocabulary pairs, MCQ options, short/long questions, activities and teacher notes were compared; no mismatch found, no data change so far.
+- Not yet viewed: files 1–3 and 63–193. Resume at file 63 (printed p.60, stream ¶1625).
 
 ### Islamiat Ikhtiari 11 — read through, 1 change (phase 8, part 3)
 - Viewed scan files 1 and 3–301 (file 2 does not exist in the source folder): cover, the two boxed sayings, title page, imprint, foreword, contents, printed pp.1–294 and the back matter (certificate, national anthem, press line). This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (a few pages read in full). The scan file number is printed page + 7 from file ~112, so look pages up by printed number.
