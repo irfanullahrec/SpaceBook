@@ -259,3 +259,16 @@ with OUTW.open('a', encoding='utf-8') as _fh:
         rf'\bar{{x}} = \frac{{548}}{{13}} = {_m:.2f}',
         rf'S^2 = \frac{{\sum (x - \bar{{x}})^2}}{{n}} = \frac{{{_ss:.2f}}}{{13}} = {_ss / 13:.2f}',
         rf'S = \sqrt{{{_ss / 13:.2f}}} = {(_ss / 13) ** 0.5:.2f}']) + f' => R = 22, S² = {_ss / 13:.2f}, S = {(_ss / 13) ** 0.5:.2f} %%\n')
+
+# ---- 11.3 Q3 (data read from the 300-dpi render of page 289)
+_A = [228, 640, 772, 264, 937, 514, 763, 770, 908, 864, 950, 328, 306, 574, 233, 265, 163, 431, 807, 130, 532, 553, 576, 639, 675, 738, 205, 535, 368, 140]
+_B = [18, 25, 21, 20, 27, 18, 16, 17, 19, 19, 19, 23, 45, 12, 32, 30, 31, 36, 28, 25, 27, 30, 42, 40, 43, 44]
+_ta = [(a, a + 99, sum(1 for x in _A if a <= x <= a + 99)) for a in range(100, 1000, 100)]
+_tb = [(a, a + 9, sum(1 for x in _B if a <= x <= a + 9)) for a in range(10, 50, 10)]
+assert sum(c for *_, c in _ta) == len(_A) and sum(c for *_, c in _tb) == len(_B)
+with OUT.open('a', encoding='utf-8') as _fh:
+    for _k, _t, _n, _w in (('a', _ta, len(_A), 100), ('b', _tb, len(_B), 10)):
+        _rows = [rf'\text{{{_n} values; smallest {min(_A if _k == "a" else _B)}, largest {max(_A if _k == "a" else _B)}; classes of width {_w}}}',
+                 r'\text{' + '; '.join(f'{a}-{b}: {c}' for a, b, c in _t) + '}',
+                 r'\text{Histogram: draw the classes on the x-axis, the frequencies on the y-axis, one bar per class, no gaps; bar heights } ' + ', '.join(str(c) for *_, c in _t)]
+        _fh.write(f'11.3|3|{_k} ~ ' + ' ;; '.join(_rows) + ' => Histogram with bar heights ' + ', '.join(str(c) for *_, c in _t) + ' %%\n')
