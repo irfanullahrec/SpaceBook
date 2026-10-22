@@ -1928,7 +1928,8 @@ def _parts_polys(kind):
     m = _re.fullmatch(r'([a-z]+)(\d*)', kind)
     name, n = m.group(1), int(m.group(2) or 0)
     if name == 'circ':          # n sectors from 12 o'clock
-        return [_sector_poly(60, 45, 42, 360 * k / n, 360 * (k + 1) / n) for k in range(n)]
+        off = 30 if n == 6 else 0     # the six-part circle in the book has a horizontal diameter
+        return [_sector_poly(60, 45, 42, off + 360 * k / n, off + 360 * (k + 1) / n) for k in range(n)]
     if name == 'bar':           # n vertical strips
         w = 120 / n
         return [[(w * k, 25), (w * (k + 1), 25), (w * (k + 1), 65), (w * k, 65)] for k in range(n)]
