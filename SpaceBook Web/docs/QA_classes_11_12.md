@@ -150,3 +150,7 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Viewed scans 004–073 (both halves of each photo spread: printed pp.1–137, the Q&A pages, the closing boxed quotations) beside the Urdu stream. This was a reading comparison of the Urdu body text, not a word-by-word diff of every Arabic ayah: no mismatch showed up, so `js/isl_11_data.js` was not changed. Arabic verses and hadith still need checking against a Mushaf/source (as the data's own notes say).
 - Not viewed: scans 001–003 (front cover, contents, imprint). The data's own source notes already flag a clipped word in Q3 (printed «حجۃ الوداع») and the photographed pages' clipped edges; those were kept as noted.
 - Ikhtiari 11, Mutalia 11 and HPE 11 are still open.
+
+### Islamiat Ikhtiari 11 — in progress (phase 8, part 3)
+- Compared scans 8–24 (printed pp.1–17: chapter opener, Qur'an writing, recitation etiquettes, prostrations table, exercises 1–3, start of translation section) against the Urdu stream and the data table: 0 mismatches, no data change.
+- Not yet compared: scans 1–7 and 25–301. Resume at scan 25 (stream ¶295).
