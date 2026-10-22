@@ -159,6 +159,24 @@ A7 = [
 rows7 = ' ;; '.join(f'({k}) {e}|({k}) {u}|({k}) {ps_}' for k, e, u, ps_ in A7)
 L.append('10.10|7| ~ @text ' + rows7 + ' => (a) AAS; (b) ASA; (c) SAS; (d) RHS; (e) SSS %%')
 
+
+# ---- 10.10 Q1 (figures read from the 300-dpi render of pages 267-268)
+Q1 = [
+ ('a', 'Triangles ABC and ADC: ∠B = ∠D = 90°, BC = DC = 7 cm, and AC is the common hypotenuse. So ΔABC ≅ ΔADC by the RHS property.',
+  'مثلث ABC اور ADC میں: ∠B = ∠D = 90°، BC = DC = 7 cm، اور AC مشترک وتر ہے۔ اس لیے RHS خاصیت سے ΔABC ≅ ΔADC۔',
+  'په درې ګونو ABC او ADC کې: ∠B = ∠D = 90°، BC = DC = 7 cm، او AC ګډ وتر دی. نو د RHS ځانګړتیا له مخې ΔABC ≅ ΔADC.'),
+ ('b', 'Triangles ABC and DEF: ∠A = ∠D = 60°, AC = DF = 1.2 cm (the side between the marked angles), ∠C = ∠F = 55°. So ΔABC ≅ ΔDEF by the ASA property.',
+  'مثلث ABC اور DEF میں: ∠A = ∠D = 60°، AC = DF = 1.2 cm (نشان زد زاویوں کے درمیان کا ضلع)، ∠C = ∠F = 55°۔ اس لیے ASA خاصیت سے ΔABC ≅ ΔDEF۔',
+  'په درې ګونو ABC او DEF کې: ∠A = ∠D = 60°، AC = DF = 1.2 cm (د نښه شوو زاویو تر منځ اړخ)، ∠C = ∠F = 55°. نو د ASA ځانګړتیا له مخې ΔABC ≅ ΔDEF.'),
+ ('c', 'ΔMJK has angles 40° and 20° (third angle 120°); ΔLKJ has angles 20° and 55° (third angle 105°). The angles differ, so ΔMJK is not congruent to ΔLKJ.',
+  'ΔMJK کے زاویے 40° اور 20° ہیں (تیسرا 120°)؛ ΔLKJ کے زاویے 20° اور 55° ہیں (تیسرا 105°)۔ زاویے مختلف ہیں، اس لیے ΔMJK اور ΔLKJ ہم مطابق نہیں۔',
+  'د ΔMJK زاویې 40° او 20° دي (درېیمه 120°)؛ د ΔLKJ زاویې 20° او 55° دي (درېیمه 105°). زاویې توپیر لري، نو ΔMJK له ΔLKJ سره همغږې نه دي.'),
+ ('d', 'The tick marks on the sides of ΔGHI and the second triangle are partly cut at the page edge; the printed key gives ΔGHI ≅ the second triangle (matching single, double and triple ticks give SSS).',
+  'ΔGHI اور دوسرے مثلث کے اضلاع کے نشان صفحے کے کنارے سے جزوی کٹے ہوئے ہیں؛ چھپی کلید ΔGHI کو دوسرے مثلث کے ہم مطابق بتاتی ہے (ایک، دو اور تین نشان ملنے سے SSS)۔',
+  'د ΔGHI او دویم درې ګوني د اړخونو نښې د مخ په څنډه کې یوه برخه پرې شوې؛ چاپ شوې کلیل ΔGHI له دویم درې ګوني سره همغږی ښیي (یو، دوه او درې نښې سره سمې وي نو SSS).')]
+rows1 = ' ;; '.join(f'({k}) {e}|({k}) {u}|({k}) {ps_}' for k, e, u, ps_ in Q1)
+L.append('10.10|1| ~ @text ' + rows1 + ' => (a) congruent (RHS); (b) congruent (ASA); (c) not congruent; (d) from the key %%')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
