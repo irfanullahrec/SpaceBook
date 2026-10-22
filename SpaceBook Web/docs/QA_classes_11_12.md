@@ -177,3 +177,8 @@ Scans 1 and 3–148 (file 2 does not exist; printed pp.37–38 are absent from t
 
 Kept as printed and already annotated: the relay-team "چھ کھلاڑی" line, "63 سالوں", «دھڑ سوا اختتامی لکیر» on p.52, "Charle Bucher"/"Nikson Koszen" spellings, the Latin-letter abbreviations on the credits page.
 
+
+### English 12 — phase 9, started (partial)
+
+Scans viewed against the data: front matter, contents, Unit 1 in full (printed pp.1–15), Unit 2 text, glossary and exercises (pp.16–24), Unit 4 pp.32–34, Unit 5 pp.43–45. Beyond those, the book was cross-checked only by comparing the repeated copies of each sentence inside `english_12_data.js` (`tools/qa/variants.js`, 149 groups left, nearly all dash/quote/spacing differences) — not against the other scans. Changes (in `proofreading_fixes.tsv`): "The Last Leaf" p.44 had a garbled line ("your chances for a little now/And then… Try to can buy") restored to "…chances for getting well… Try to eat a little now. And then… and then I can buy"; p.43 and p.45 sentence ends (", After" → ". After"; "night?" → "night."); "/" used as a full stop in three Truck Art sentences; Unit 1 "Mu 'tah", "Al-khattab" and the Surah al-Hashr citation made consistent; a missing blank ("it's ________"); the Hubble dash/quote/comma differences. Clipped words at the scan edge (Truck Art, Hubble) were left as printed. Not done: the other ~150 pages of English 12 and English 11 against their scans.
+
