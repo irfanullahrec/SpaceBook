@@ -140,5 +140,5 @@ Class 1 is now fully proofread by eye (English, Maths, Islamiat, Pashto, Nazira,
 | Class 4 Urdu | ALL 166 scans 000-165 (Class 4 Urdu COMPLETE: Lessons 1-23, Reviews 1-5, contents, back matter; scans 001-002 are ads) | scan 061: the van picture note wrongly said a box of tea, both boxes read sugar (note fixed) |
 | Class 4 Science | all 149 scans (covers, credits, contents, Chapters 1-10 complete, glossary, authors profile, feedback form, back cover; scans 027, 090, 094, 124-127 are duplicates and 050, 100, 148 are ads) | none |
 | Class 4 SST | all 131 scans (cover, contents, Chapters 1-6, glossary, back cover; printed p65 missing in the source; scan 001 is an ad; scan 113 is a cropped duplicate of p110) | none |
-| Class 4 SSTUM | scans 000-131 (cover, ads 001-002, verse and hadith, title page, credits, contents, Chapters 1-3 complete, Chapter 4 complete, Chapter 5 complete, Chapter 6 to scan 131, 112 and 113 duplicates) | none |
-Next: Class 4 SSTUM (`class-4/sstum`, 136 scans `_cls4_jpg/sstum`) from scan 132, then Islamiat 117, Pashto 148, then all Class 5 books. Class 3 and Class 4 Maths, English, Urdu, Science and SST are done.
+| Class 4 SSTUM | all 136 scans (cover, contents, Chapters 1-6, glossary, back matter; scans 001-002 are ads; 112 and 113 are duplicates) | none |
+Next: Class 4 Islamiat (`class-4/isl`, 117 scans `_cls4_jpg/isl`) from scan 000, then Pashto 148, then all Class 5 books. Class 3 and Class 4 Maths, English, Urdu, Science, SST and SSTUM are done.
