@@ -53,7 +53,11 @@ why2 = {'a': N('Five different shapes with four sides.', 'چار اطراف وا
         'e': N('Composite numbers have more than two factors; those below 40 are listed in order (1 is neither prime nor composite).', 'مرکب اعداد کے دو سے زیادہ جزو ہوتے ہیں؛ 40 سے کم ایسے اعداد ترتیب سے لکھے ہیں (1 نہ مفرد ہے نہ مرکب)۔', 'مرکب عددونه له دوو ډېر فکتورونه لري؛ له 40 څخه کم عددونه په ترتیب لیکل شوي (1 نه لومړنی دی نه مرکب).'),
         'f': N('Odd numbers less than 18: 1, 3, …, 17.', '18 سے چھوٹے طاق اعداد: 1, 3, …, 17۔', 'له 18 څخه کوچني تاق عددونه: 1, 3, …, 17.')}
 for p, v in sets2.items():
-    L.append(f'R6|2|{p} ~ @text {why2[p]} ;; {v}|{v}|{v} => {v} %%')
+    vu, vp = v, v
+    if p == 'a':
+        vu = '{مربع، مستطیل، ٹریپیزیم (شبہ منحرف)، کائٹ (پتنگ نما)، رومبس (معین)}'
+        vp = '{مربع، مستطیل، ټریپیزیم، کایټ، رومبس}'
+    L.append(f'R6|2|{p} ~ @text {why2[p]} ;; {v}|{vu}|{vp} => {v} %%')
 desc = {'a': 'Set of natural numbers', 'b': 'Set of natural numbers less than 7', 'c': 'Set of the first six multiples of 5',
         'd': 'Set of the first four prime numbers', 'e': 'Set of the first four multiples of 5'}
 for p, d in desc.items():
