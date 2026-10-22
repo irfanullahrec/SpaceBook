@@ -190,6 +190,14 @@ text('Review Exercise 10|3|',
      'O مرکز دی. هغه قطعه FG چې د دایرې دوه ټکي نښلوي وتر دی؛ هغه وتر چې له مرکز O تېرېږي قطر دی؛ OJ (له مرکز تر دایرې) شعاع ده؛ د دوو شعاعګانو تر منځ په O کې زاویه مرکزي زاویه ده او د دغو شعاعګانو او د هغوی د قوس تر منځ سیمه سکتور ده؛ د دوو ټکو تر منځ د دایرې برخه قوس دی؛ هغه کرښه چې دایره په یو ټکي لمس کړي (پورتنۍ غشي لرونکې کرښه) مماس ده؛ چې په دوو ټکو پرې کړي قاطع ده.',
      'O centre, FG chord, diameter, OJ radius, central angle, sector, arc, tangent, secant')
 
+
+# ---- 10.3 Q3 (figure read from the 300-dpi render of page 249)
+text('10.3|3|',
+     'Chord: FG (a segment joining two points of the circle). Segment: the region between the chord FG and the arc above it. Central angle: the angle at the centre O between OI and OJ. Sector: the region enclosed by the radii OI, OJ and the arc IJ. Minor arc: the short arc IJ (less than half the circle). Major arc: the rest of the circle from I round to J. Tangent: the arrowed line that touches the circle at F only. Secant: the arrowed line at the lower right that cuts the circle at two points.',
+     'وتر: FG (دائرے کے دو نقطوں کو ملانے والا قطعہ)۔ قطعہ (سیگمنٹ): وتر FG اور اس کے اوپر کے قوس کے درمیان کا خطہ۔ مرکزی زاویہ: مرکز O پر OI اور OJ کے درمیان زاویہ۔ قطاع (سیکٹر): رداسوں OI، OJ اور قوس IJ سے گھرا ہوا خطہ۔ چھوٹا قوس: چھوٹا قوس IJ (آدھے دائرے سے کم)۔ بڑا قوس: دائرے کا باقی حصہ I سے گھوم کر J تک۔ مماس: تیر والی وہ لکیر جو دائرے کو صرف F پر چھوتی ہے۔ قاطع: نیچے دائیں طرف کی تیر والی لکیر جو دائرے کو دو نقطوں پر کاٹتی ہے۔',
+     'وتر: FG (د دایرې دوه ټکي نښلوونکې قطعه). قطعه (سیګمنټ): د وتر FG او د هغه د پاسني قوس تر منځ سیمه. مرکزي زاویه: په مرکز O کې د OI او OJ تر منځ زاویه. سکتور: هغه سیمه چې د شعاعګانو OI، OJ او قوس IJ لخوا احاطه شوې. کوچنی قوس: کوچنی قوس IJ (له نیمې دایرې کم). لوی قوس: د دایرې پاتې برخه له I څخه تر J پورې. مماس: غشي لرونکې کرښه چې دایره یوازې په F کې لمس کوي. قاطع: په ښکته ښي خوا کې غشي لرونکې کرښه چې دایره په دوو ټکو پرې کوي.',
+     'Chord FG; segment; central angle IOJ; sector OIJ; minor arc IJ; major arc; tangent at F; secant')
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',
