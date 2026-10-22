@@ -362,8 +362,39 @@ def set_leaf(ins, part, key):
     return msol_sets.op_steps(expr, envtext)
 
 
+ANS_NE = []
+
+
 def exk(q):
     return f"R{q['u']}" if q['ex'] == 'Review Exercise' else q['ex']
+
+
+_WORDTOK = re.compile(r"^\(*[A-Za-z]{2,}(?:['’\-][A-Za-z]+)*[)\.,;:!?]*$")
+
+
+def textify(ans):
+    """Answer text of a DSL line as TeX for the 'Answer:' step: runs of plain words (with the numbers and single letters between
+    them) go into \\text{...} (spaces kept inside), everything else (TeX, digits, symbols) stays math."""
+    toks = [t.replace('%', '\\%').replace('&', '\\&') for t in ans.split()]
+    kind =['w' if _WORDTOK.match(t) else 'm' for t in toks]
+    # a number / single letter / symbol sitting between two word tokens belongs to the text run
+    for i in range(1, len(toks) - 1):
+        if kind[i] == 'm' and '\\' not in toks[i] and '{' not in toks[i] and kind[i - 1] != 'm' and kind[i + 1] == 'w' and re.fullmatch(r"[\d.,]+[:;,]?|[A-Za-z]|[(]?[\d.,]+[)]?", toks[i]):
+            kind[i] = 'w'
+    out, i = [], 0
+    while i < len(toks):
+        j = i
+        if kind[i] == 'w':
+            while j + 1 < len(toks) and kind[j + 1] == 'w':
+                j += 1
+            run = ' '.join(toks[i:j + 1]).replace('%', '\\%')
+            out.append('\\text{' + (' ' if i > 0 and kind[i - 1] == 'm' else '') + run + (' ' if j + 1 < len(toks) else '') + '}')
+        else:
+            sep = '\\ ' if i > 0 and kind[i - 1] == 'm' and toks[i - 1][-1:].isdigit() and toks[i][:1].isdigit() else ' '
+            out.append(toks[i] + sep)
+            j = i
+        i = j + 1
+    return ''.join(out).strip()
 
 
 def run(cl):
@@ -571,6 +602,10 @@ def run(cl):
                 if not force:
                     bad.append((key, f'key {k[:40]} vs {final}')); continue
                 steps.append({'en': f'Note: the printed key shows {k[:50]}; the working above gives {final}.', 'ur': f'نوٹ: کتاب کے جوابات میں {k[:50]} دیا گیا ہے؛ اوپر کے حل سے {final} آتا ہے۔', 'ps': f'یادښت: د کتاب په ځوابونو کې {k[:50]} راغلی؛ پورتنی حل {final} ورکوي.'})
+        if ans:
+            if re.sub(r'[\s$]', '', ans) != re.sub(r'[\s$]', '', final or ''):
+                ANS_NE.append((key, ans[:50], (final or '')[:50]))
+            final = textify(ans)
         steps.append(step('ans', final))
         out[key] = {'steps': steps, 'answer': final, 'verified': bool(ok)}
     if cl == '7':
@@ -597,6 +632,7 @@ if __name__ == '__main__':
     out, stats, disc = run(cl)
     (HERE / f'class-{cl}' / 'math' / 'gen_solutions.json').write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
     (APP / 'tmp' / f'disc{cl}.json').write_text(json.dumps(disc, ensure_ascii=False, indent=0), encoding='utf-8')
+    json.dump(ANS_NE, open(APP / 'tmp' / f'ansne{cl}.json', 'w', encoding='utf8'), ensure_ascii=False, indent=0)
     print('emitted', len(out), '| per category [tried, verified, unverified, key-mismatch]:')
     for k, v in sorted(stats.items()):
         print(' ', k, v)
