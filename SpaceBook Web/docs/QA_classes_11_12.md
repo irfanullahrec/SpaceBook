@@ -152,5 +152,5 @@ Limits first: the scans of the Urdu-source books are 616 x 830 px (their PDFs ho
 - Ikhtiari 11, Mutalia 11 and HPE 11 are still open.
 
 ### Islamiat Ikhtiari 11 — in progress (phase 8, part 3)
-- Viewed scan files 8–134 (printed pp.1–127) next to the Urdu stream. This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (two pages read in full: no differences). No mismatch found, no data change. Note: the scan file number is printed page + 7 from file ~112 (the stream's own “scan” numbers differ by 2), so look pages up by printed number.
-- Not yet viewed: files 1–7 and 135–301. Resume at file 135 (printed p.128, stream ¶1423).
+- Viewed scan files 8–160 (printed pp.1–153) next to the Urdu stream. This is a skim-level pass, not a word-by-word diff: headings, verses, numbers, hadith references, lists and exercises were checked; long paragraphs were checked by their openings and spot reads (two pages read in full: no differences). No mismatch found, no data change. Note: the scan file number is printed page + 7 from file ~112 (the stream's own “scan” numbers differ by 2), so look pages up by printed number.
+- Not yet viewed: files 1–7 and 161–301. Resume at file 161 (printed p.154, stream ¶1740).
