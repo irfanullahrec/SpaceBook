@@ -1,0 +1,14 @@
+import re
+exec(open('D:/SpaceBook/SpaceBook Web/tmp/c8eng_fill5.py',encoding='utf8').read().split("addq('039'")[0])
+exec(open('D:/SpaceBook/SpaceBook Web/tmp/c8eng_fill.py',encoding='utf8').read().split("ins('020'")[0])
+def M(a,why='One possible answer.'): return f"sol {a} ## {why}"
+addq('051','q - | Read the passage given','sol From the precipitous peaks of the Karakoram range to the productive (fertile -> productive/rich) Indus River plain, Pakistan is home to a diversity of breathtaking (stunning -> breathtaking/magnificent) landscapes. While its rich cultural heritage, ancient Silk Road, and remains (ruins -> remains/relics) of Mohenjo-daro continue to enchant travellers. ## Synonyms found with a thesaurus; one possible answer.')
+ins('051','q - | Answer the following',{
+ '1':M('Model answer: Hunza Valley, Attabad Lake, Baltoro Glacier, Deosai National Park and the Makran Coast are popular because of their beautiful scenery, wildlife, boating and mountaineering such as K2.'),
+ '2':M('Model answer: Tourism is neglected because (1) many places are difficult to reach and have poor roads, (2) there are few hotels, guides and facilities, (3) security worries and lack of promotion keep visitors away.'),
+ '3':M('Model answer: Deosai is called the Land of the Giants because it is a vast high plateau surrounded by huge snow-dusted mountains and is home to giants such as the Himalayan brown bear.','Based on the passage and general knowledge (Derived: the question is partly cut in the scan).'),
+ '4':M('Model answer: Build roads and hotels, ensure security, advertise Pakistan\'s sites, train guides, keep places clean and give easy visas.'),
+ '5':M('Model answer: The Makran Coast and Hingol National Park are known for their dramatic coastal landscape, rock formations such as the Princess of Hope and Sphinx, and the wildlife and wild beaches of Balochistan.','Derived from general knowledge: the question is partly cut in the scan.'),
+ '6':M('Model answer: Glaciers of Pakistan include Siachen, Biafo, Hispar, Batura, Baltoro, Passu, Rakaposhi and Khurdopin.','Research list; Siachen, Biafo, Hispar and Batura are the longest.')})
+addq('037','q - | Match the words','sol ecosystem - a community of living things and their environment working together as a system; volcanic eruptions - the release of lava, ash and gas from a volcano. Note: the printed column B definitions (erosion/deterioration and global warming) do not belong to these two words, so the correct definitions are given here. ## Not verified against the printed key; definitions from a standard dictionary.')
+addq('092','q 2 | Think of words','sol robot web: artificial intelligence, sensors, machines, programming, automation. technology web: networking, internet, computers, mobile phones, robots. ## Free word association; one possible answer.')
