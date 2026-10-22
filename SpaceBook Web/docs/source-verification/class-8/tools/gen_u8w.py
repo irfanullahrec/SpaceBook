@@ -119,6 +119,18 @@ for part, rows_, ans_, nt in [
     ('c', [r'P(A \cap B) = 0'], 'P(A ∩ B) = 0',
      N('The printed key gives P(A ∩ B) = 1, which is not possible for mutually exclusive events (it is 0).', 'چھپی کلید P(A ∩ B) = 1 دیتی ہے جو باہم خارج واقعات کے لیے ممکن نہیں (یہ 0 ہے)۔', 'چاپ شوې کلیل P(A ∩ B) = 1 ښیي چې د متقابلو بهرنیو پېښو لپاره ناشونی دی (دا 0 دی).'))]:
     add(f'11.4|7|{part}', rows_, ans_, nt)
+
+# ---- 10.2 Q1: triangle read from the 450-dpi render of the scan (same triangle as Example 1: A(1,1), B(3,1), C(3,3)); centre (1,-1), scale factor 2
+add('10.2|1|', [r'\text{Vertices read from the grid: } A(1, 1),\; B(3, 1),\; C(3, 3)',
+                r'\text{Centre of enlargement } O(1, -1),\; k = 2: \quad P'' = O + k(P - O)',
+                r'A^{\prime} = (1 + 2(1 - 1),\; -1 + 2(1 + 1)) = (1, 3)',
+                r'B^{\prime} = (1 + 2(3 - 1),\; -1 + 2(1 + 1)) = (5, 3)',
+                r'C^{\prime} = (1 + 2(3 - 1),\; -1 + 2(3 + 1)) = (5, 7)'],
+    'A′(1, 3), B′(5, 3), C′(5, 7)',
+    N('The triangle is faint in the scan; its vertices (1, 1), (3, 1), (3, 3) were read from a contrast-enhanced render. If your figure differs, apply the same rule to its vertices.',
+      'سکین میں تکون مدھم ہے؛ اس کے سرے (1, 1)، (3, 1)، (3, 3) بڑھائی گئی تصویر سے پڑھے گئے ہیں۔ اگر آپ کی شکل مختلف ہو تو یہی قاعدہ اس کے سروں پر لگائیں۔',
+      'په سکین کې درې ګوڼی کمزورې ده؛ د هغې څوکې (1, 1)، (3, 1)، (3, 3) له لوی شوي انځور څخه لوستل شوې. که ستاسو انځور توپیر ولري همدا قاعده د هغې په څوکو وکاروئ.'))
+
 # ---- Review 10 Q2 definitions
 text('Review Exercise 10|2|', 'Chord: a line segment joining two points of the circle. Secant: a line that cuts the circle at two points. Arc: a part of the circumference. Sector: the region between two radii and the arc they cut off. Tangent: a line that touches the circle at exactly one point.',
      'وتر (کارڈ): دائرے کے دو نقطوں کو ملانے والا قطعہ۔ قاطع: وہ لکیر جو دائرے کو دو نقطوں پر کاٹے۔ قوس: محیط کا ایک حصہ۔ قطاع: دو رداس اور ان کے کاٹے ہوئے قوس کے درمیان کا خطہ۔ مماس: وہ لکیر جو دائرے کو ٹھیک ایک نقطے پر چھوئے۔',

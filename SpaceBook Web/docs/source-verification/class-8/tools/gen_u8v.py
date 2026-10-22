@@ -11,6 +11,10 @@ OUT = HERE.parent / 'math' / 'dsl' / 'u8v.txt'
 g = json.load(open(HERE.parent / 'math' / 'gen_solutions.json', encoding='utf8'))
 leaves = json.load(open(ROOT / 'tmp' / 'm8_leaves.json', encoding='utf8'))
 own = {ln.split(' ~')[0] for ln in OUT.read_text(encoding='utf-8').splitlines() if ' ~' in ln} if OUT.exists() else set()
+other = set()
+for f in (HERE.parent / 'math' / 'dsl').glob('*.txt'):
+    if f.name != OUT.name:
+        other |= {ln.split(' ~')[0] for ln in f.read_text(encoding='utf-8').splitlines() if ' ~' in ln}
 L = []
 BAD = ('|', '~', ';;', '=>', '@@', '%%')
 
@@ -24,7 +28,7 @@ for l in leaves:
     ex = l['ex']
     for p in ([p for p, _ in l['parts']] or ['']):
         k = f"{ex}|{l['q']}|{p}"
-        if k in g and k not in own:
+        if (k in g and k not in own) or k in other:
             continue
         key = clean(str(l.get('key') or ''))
         if key and key != 'None':
