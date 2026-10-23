@@ -22,6 +22,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.evaluate(() => { document.querySelector('.nav-link[data-page="create-test"]').click(); });
   await page.waitForSelector('.sbct-pill', { timeout: 20000 });
   check('the Create Test tab opens', await page.evaluate(() => document.querySelector('.nav-tab[data-page="create-test"]').classList.contains('active')));
+  await page.click('.sbct-pill[data-n="11"]');                      // Class 11 has no question file: the page says so, it is not a connection problem
+  await page.waitForSelector('.sbct-msg[role="alert"]', { timeout: 20000 });
+  check('a class with no questions (11) says so instead of blaming the connection', await page.evaluate(() => { const m = document.querySelector('.sbct-msg[role="alert"]').textContent; return /no questions for class 11/.test(m) && !/connection/.test(m) && document.querySelector('.sbct-pill[data-n="11"]').classList.contains('sbct-none'); }));
   await page.click('.sbct-pill[data-n="9"]');
   await page.waitForSelector('.sbct-subj', { timeout: 30000 });
   const subjects = await page.$$eval('input[data-act="subj"]', els => els.map(e => e.dataset.s));
