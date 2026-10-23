@@ -57,7 +57,7 @@ if (process.argv.includes('--update')) {
 const lock = JSON.parse(fs.readFileSync(LOCK, 'utf8')).hooks;
 const diff = [...new Set([...Object.keys(lock), ...Object.keys(current)])].filter(n => JSON.stringify(lock[n]) !== JSON.stringify(current[n]));
 check('who extends what matches tests/contract/hooks.json (' + Object.keys(current).length + ' functions, ' + Object.values(current).reduce((n, a) => n + a.length, 0) + ' registrations)', diff.length === 0, diff.join(', '));
-check('switchSubjectTab has its 17 extensions in script order', current.switchSubjectTab && current.switchSubjectTab.length === 17 && current.switchSubjectTab[0] === 'class11_study_views.js' && current.switchSubjectTab[13] === 'sb_book_spread.js' && current.switchSubjectTab[14] === 'sb_structure.js' && current.switchSubjectTab[15] === 'a11y.js' && current.switchSubjectTab[16] === 'lazycards.js');
+check('switchSubjectTab has its 18 extensions in script order', current.switchSubjectTab && current.switchSubjectTab.length === 18 && current.switchSubjectTab[0] === 'class11_study_views.js' && current.switchSubjectTab[13] === 'sb_book_spread.js' && current.switchSubjectTab[14] === 'sb_structure.js' && current.switchSubjectTab[15] === 'sb_exercise_tabs.js' && current.switchSubjectTab[16] === 'a11y.js' && current.switchSubjectTab[17] === 'lazycards.js');
 check('the dispatcher is what the global holds', app.run("window.switchSubjectTab.__sbHooked === true && typeof SBHooks.base('switchSubjectTab') === 'function'") === true);
 
 // ---------- 3. converted modules still do their side jobs
