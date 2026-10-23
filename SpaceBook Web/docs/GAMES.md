@@ -50,6 +50,35 @@ Study features: wrong answers show the book's explanation (`e`); the results lis
 ## Not done / not verified
 
 - **Class 11 and Class 5** have no MCQ bank (Class 5: only true/false), so only Math Sprint (and True or False for Class 5) is playable there.
-- Games per **book page** (a Games tab on every page, as in the Android app's `PageGame`) are not built; the Android app already has Blank Quest / Word Builder for that.
+- Games per **book page** are built: see "Page arcade" below.
 - Verified in Chrome through Playwright (hub, map, every game, phone width). Not run: the built-in browser pane (it refuses `localhost`), a real touch device, a screen reader, the service worker with the new files.
 - `lazy.html`, `content/offline_map.json`, `content/sw_version.js` must be regenerated from a clean checkout (`tools/build/all.js --only lazy,offline`) before release, because three scripts and one stylesheet were added to `index.html`.
+
+## Page arcade (2026-10-24): fifteen arcade games made from the page on screen
+
+The 🎮 tab on a page's bar (and the **Games** button of the Android app's reader footer) opens an overlay of fifteen small arcade games. They are **not multiple choice**: the student steers, shoots, slices or builds, and every right answer is a word or number of *that page*. A page with too little text to make questions from shows "There are no games on this page" (the owner's rule), never a blank screen.
+
+| Game | The learning is in |
+|---|---|
+| Subway Surfers, Temple Run, Car Racing | run through the lane / door / gate that holds the right answer; right answers make the car faster |
+| Flappy Bird | fly through the gap that shows the right answer |
+| Fruit Ninja, Balloon Pop, Bubble Shooter, Angry Birds | slice / pop / shoot / smash the one that holds the right answer |
+| Football Penalty | the three corners of the goal hold answers; the right one is a goal |
+| Snake | eat the right word to grow |
+| Candy Crush | match each clue sweet with its answer sweet; pairs pop and new ones drop in |
+| Treasure Hunt | walk the map; each locked gate needs its clue solved |
+| Block Builder | solve a challenge to win blocks (stone, wood, glass, door, brick) and build the house |
+| Hill Climb Racing | drive; when the tank is low a question appears, the right answer refuels |
+| Train Simulator | stop the train in the marked zone, then answer the mission to open the doors |
+
+**Where the questions come from** (`js/sb_arcade.js`, `extract(text)`, pure, tested under node): the text of the page unit (hidden translation lines, buttons and answer panels are removed). Sums the page already prints (`12 + 7 = 19`, only when the arithmetic is right) become "12 + 7 = ?"; a sentence with its most important word (a term the page repeats, a name) or a number taken out becomes a clue; the wrong options are other words or neighbouring numbers of the same page. English, Urdu, Pashto and Arabic text work. A page needs 3 usable questions.
+
+**Coins**: each game on each page is one activity of at most 8 steps; every NEW right answer is a step through `SBRewards.step` with the key `cls<N>|g-pg-<game>-<subject>|u<chapter>|count|<hash>|<steps>` (the shape the server already accepts, `api/lib/rewards.php`), +5 for finishing, +2 for replaying a finished game once a day. Nothing about coins is decided in the browser, no server change was needed.
+
+**Files**: `js/sb_arcade.js` (extraction, overlay, hub, loop, sounds, coins), `js/sb_arcade_runners.js`, `sb_arcade_shoot.js`, `sb_arcade_puzzle.js`, `sb_arcade_build.js` (the games, each `{id, name, emoji, teach, how, make(env)}`). The styles are injected by the script (no extra stylesheet).
+
+**Tests**: `node tests/arcade/play.js` plays every game frame by frame in real Chrome (a clock it controls): a perfect player (`env.auto = 'right'`) must win every game without losing a life, a careless one (`'wrong'`) must lose every game; it also checks the hub, the no-content message, pause, back and close, and takes a picture of each game. `node tests/app/games_in_app.js` opens the arcade the way the Android app does (`SBApp.openGames()`), plays one for a few seconds and checks back / close.
+
+**Adding a game**: write a file like `sb_arcade_runners.js`, register it with `SBArcade.register({...})`, add the script to `index.html`, give it an `env.auto` player in `update()`, and run `tests/arcade/play.js`.
+
+**Not verified**: on a real phone (touch feel, frame rate on a low-end phone, the sound), and the Pashto / Urdu strings of the overlay by a native reader.

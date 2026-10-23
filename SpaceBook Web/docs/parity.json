@@ -1,6 +1,6 @@
 {
  "schema": "spacebook.parity/1",
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "statuses": [
   "same",
   "platform-specific",
@@ -99,6 +99,15 @@
    "counterpart": "A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages)."
   },
   {
+   "id": "read.fullbleed",
+   "area": "Reading",
+   "name": "The page uses the whole screen: no chapter or page title, the tab strip and the page's own Board SLOs / Exercise / Games tabs right under the status bar, text from edge to edge",
+   "status": "platform-specific",
+   "web": "the website keeps its header, chapter title and side margins (a desktop layout that also works on a phone)",
+   "app": "assets/reader_mobile.css + reader_bridge.js (one topic or page per screen, titles hidden); ui/reader/ReaderScreen.kt has no top bar, a slim footer with a menu",
+   "counterpart": "Look and layout only (the owner asked for the app's page to fill the phone): the same book, tabs and data on both platforms, so nothing on the website changes."
+  },
+  {
    "id": "read.tts",
    "area": "Reading the books",
    "name": "Read aloud with the device's own voices (nothing sent anywhere)",
@@ -115,6 +124,15 @@
    "web": "Aa control (js/reader_tools.js, localStorage sbRT:size)",
    "app": "Settings > Text size (DataStore)",
    "data": "device-local on both by design (not an account setting)"
+  },
+  {
+   "id": "read.answerbox",
+   "area": "Reading",
+   "name": "The \"Ans\" box: icon buttons (language, voice, full screen, written / animated), and a full-screen board, in the written and the animated solution",
+   "status": "same",
+   "web": "js/sb_solve.js, js/vr_engine.js, js/vr_auto.js",
+   "app": "the same scripts inside the page (nothing native)",
+   "data": "the books' solution files (nothing is stored)"
   },
   {
    "id": "read.dark",
@@ -234,8 +252,17 @@
    "name": "Papers (exam paper builder, Set A / B / C)",
    "status": "same",
    "web": "js/app.js Papers",
-   "app": "Practice tab > Papers: the same page in the WebView",
+   "app": "Practice tab > Papers: the same page in the WebView (the paper maker's own strip with class, subject, marks, blueprint and Print is shown; Print opens the phone's print dialog, which also saves a PDF)",
    "data": "book data of the class; nothing stored on the server"
+  },
+  {
+   "id": "tools.practicehub",
+   "area": "Tools",
+   "name": "The Practice entry: Tests Preps, Papers, Games and Study Plan on one screen",
+   "status": "platform-specific",
+   "web": "the website's header and sidebar links",
+   "app": "ui/practice/PracticeScreen.kt (a hero card and a grid of tiles)",
+   "counterpart": "Navigation differs by design (a phone has a bottom bar, the website a header); every tile opens the website's own page, so the tools are identical."
   },
   {
    "id": "tools.bise",
@@ -306,13 +333,21 @@
   {
    "id": "games.pagequests",
    "area": "Games",
-   "name": "Per-page quests: Blank Quest and Word Builder made from the page you read",
-   "status": "app-only",
+   "name": "Per-page quests: Blank Quest and Word Builder (native, app only)",
+   "status": "retired",
    "web": "-",
-   "app": "Games tab of the reader (ui/games/PageGames.kt), coins through the same reward-key shape",
+   "app": "ui/games/PageGames.kt, no longer shown in the reader (the Games button opens the shared arcade, games.pagearcade); the code and its key-shape tests stay until the owner deletes them",
    "data": "activity_progress (g- keys, +1 per step, +5 for finishing, decided by the server)",
-   "exemption": "A reading-screen feature of the app that the website does not have (its Games page works by class and level, not by page). It uses the same server coin rules and key shape, so nothing differs underneath; only the entry point exists on one platform.",
-   "ownerDecision": "Do you want per-page quests on the website too (a \"Games\" tab under each lesson), or keep them as an app extra?"
+   "exemption": "Retired on 2026-10-24: the owner asked for games made from the current page, not multiple choice, on mobile and web alike. The same idea now exists on both platforms as the arcade (games.pagearcade), made once in JavaScript, so the app shows exactly the website's games and pays coins with the same reward keys."
+  },
+  {
+   "id": "games.pagearcade",
+   "area": "Games",
+   "name": "Arcade games made from the page on screen: 15 games (snake, lane runner, fruit slicing, penalty ...), not multiple choice; \"no games on this page\" when the page has no text to make questions from",
+   "status": "same",
+   "web": "js/sb_arcade.js (+ sb_arcade_runners/shoot/puzzle/build.js): the 🎮 Games tab of a page bar (js/sb_page_tabs.js)",
+   "app": "Games button of the reader footer: SBApp.openGames() (assets/reader_bridge.js) opens the same overlay inside the page",
+   "data": "activity_progress, reward keys cls<N>|g-pg-<game>-<subject>|u<chapter>|count|<hash>|<steps> (+1 per new right answer, +5 for finishing, decided by the server; guests keep them on the device); best scores in localStorage"
   },
   {
    "id": "off.books",
@@ -323,6 +358,34 @@
    "app": "Me > Books on this phone (SiteStore, DownloadWorker); the shell is inside the APK",
    "data": "content/offline_map.json (one map, both platforms; checked by data_parity)",
    "counterpart": "A browser keeps files in its cache through a service worker; an app keeps them in its own folder and answers the WebView from it. Same files, same hashes."
+  },
+  {
+   "id": "off.queue",
+   "area": "Offline",
+   "name": "Writes made with no connection (coins and steps, study plans, test records, saved items) are kept on the device and sent when it is back; nothing is lost",
+   "status": "platform-specific",
+   "web": "js/core/offline_queue.js (localStorage) for the older endpoints; js/core/sync.js outbox (IndexedDB) for v2; tests/sync/offline_queue.js",
+   "app": "the page inside the WebView uses the same scripts (its storage survives restarts); native events wait in the Room outbox and WorkManager (SyncWorker)",
+   "counterpart": "Same behaviour, two storage places: the browser's localStorage / IndexedDB and the app's own database. Both send in order, never under another student, and the server decides what counts."
+  },
+  {
+   "id": "ux.loading",
+   "area": "Interface",
+   "name": "A loading bar with a percent wherever opening takes time (book, chapter, tab, paper maker, downloads)",
+   "status": "platform-specific",
+   "web": "js/sb_loading.js (overlay with a bar and a percent; SBLoading.set(percent) for counted work)",
+   "app": "ui/components/Loading.kt (LoadingPanel with the real page progress first, then an estimate), percent on every download screen",
+   "counterpart": "Each platform draws its own bar. The percent is real where it can be counted (a download, the page load) and an estimate that never reaches 100 before the work is done where it cannot."
+  },
+  {
+   "id": "sec.vault",
+   "area": "Security",
+   "name": "The downloaded books are stored encrypted on the phone; the device token is sealed; a release build checks its own signature and blocks screenshots",
+   "status": "app-only",
+   "web": "-",
+   "app": "data/offline/Vault.kt (AES-256-GCM, key wrapped by the Android Keystore), security/Integrity.kt, FLAG_SECURE in release builds, R8 on",
+   "data": "files in filesDir/site (encrypted), DataStore device token (sealed)",
+   "exemption": "A website cannot hide what the browser must receive to show it (docs/PHASE8_SECURITY.md), so it has no equivalent; the app's protection is for the copy kept on the phone. Not a lock against someone who controls an unlocked rooted phone."
   },
   {
    "id": "off.lexicon",
@@ -488,7 +551,6 @@
   "Switch client sync on (create api/flags.local.php on the server with <?php return [\"syncV2\" => true]; after the live checks of RELEASE_AND_ROLLBACK.md section 3). Until then bookmarks, notes and the reading position stay on each device, on both platforms.",
   "Password reset channel (acct.forgot).",
   "Commit the other session's Home work (acct.plans, stats.home).",
-  "Per-page quests on the website too, or keep them as an app extra (games.pagequests).",
   "Bring Quick Quiz / Swipe & Learn back or delete the code (other.quiz).",
   "Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions)."
  ]

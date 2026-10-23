@@ -33,6 +33,13 @@ Status: **same** (one implementation or two with identical data and rules) · **
 | read.class | "My class" | a star on a class page, a badge on the class card | class chips (Me, Library); Home switcher | user_items kind pref, key class | same |
 | read.likes | Likes and saves on feed cards | - | the local reactions table (feed cards are not shown since 2026-10-23) | device only, never sent | retired ⚠ |
 
+## Reading
+
+| id | Feature | Web | App | Data lives in | Status |
+|---|---|---|---|---|---|
+| read.fullbleed | The page uses the whole screen: no chapter or page title, the tab strip and the page's own Board SLOs / Exercise / Games tabs right under the status bar, text from edge to edge | the website keeps its header, chapter title and side margins (a desktop layout that also works on a phone) | assets/reader_mobile.css + reader_bridge.js (one topic or page per screen, titles hidden); ui/reader/ReaderScreen.kt has no top bar, a slim footer with a menu |  | platform-specific |
+| read.answerbox | The "Ans" box: icon buttons (language, voice, full screen, written / animated), and a full-screen board, in the written and the animated solution | js/sb_solve.js, js/vr_engine.js, js/vr_auto.js | the same scripts inside the page (nothing native) | the books' solution files (nothing is stored) | same |
+
 ## Meanings and translator
 
 | id | Feature | Web | App | Data lives in | Status |
@@ -52,10 +59,16 @@ Status: **same** (one implementation or two with identical data and rules) · **
 | id | Feature | Web | App | Data lives in | Status |
 |---|---|---|---|---|---|
 | tools.testprep | Tests Preps (practice and mock tests from the books' MCQ bank) | js/test_prep.js | Practice tab > Tests Preps: the same page in the WebView (touch, 411 px checked in Chrome) | tp_answers, tp_days, test_prep_sessions, tp_runs (sync events tp.*); js/test_prep_bank.js | same |
-| tools.papers | Papers (exam paper builder, Set A / B / C) | js/app.js Papers | Practice tab > Papers: the same page in the WebView | book data of the class; nothing stored on the server | same |
+| tools.papers | Papers (exam paper builder, Set A / B / C) | js/app.js Papers | Practice tab > Papers: the same page in the WebView (the paper maker's own strip with class, subject, marks, blueprint and Print is shown; Print opens the phone's print dialog, which also saves a PDF) | book data of the class; nothing stored on the server | same |
 | tools.bise | BISE Swat Board centre (patterns, SLOs, drills, e-answer sheet) | js/sb_bise.js | the same strip inside every subject and the same page | user_items kinds slo and drill; js/bise_swat_data.js | same |
 | tools.plan | Study Plan | js/sb_study_plan.js | Plan tab: the same page in the WebView | study_plans (events plan.save, plan.delete) | same |
 | tools.reminders | Study plan reminders | browser Notification (banner + notification while the page is open) | phone notifications scheduled with WorkManager from SBStudyPlan.reminders(), switch in Settings | plans (same data); the words come from one function (reminderText) | platform-specific |
+
+## Tools
+
+| id | Feature | Web | App | Data lives in | Status |
+|---|---|---|---|---|---|
+| tools.practicehub | The Practice entry: Tests Preps, Papers, Games and Study Plan on one screen | the website's header and sidebar links | ui/practice/PracticeScreen.kt (a hero card and a grid of tiles) |  | platform-specific |
 
 ## Stats and coins
 
@@ -70,14 +83,28 @@ Status: **same** (one implementation or two with identical data and rules) · **
 | id | Feature | Web | App | Data lives in | Status |
 |---|---|---|---|---|---|
 | games.arcade | Games: Quiz Quest, True or False, Word Builder, Memory Match, Math Sprint, Little Learners; 10 levels each | sidebar > Games (js/sb_games.js) | Practice tab > Games: the same page in the WebView | coins through activity_progress (same reward keys); level bests and settings are user_items gbest and pref/games | same |
-| games.pagequests | Per-page quests: Blank Quest and Word Builder made from the page you read | - | Games tab of the reader (ui/games/PageGames.kt), coins through the same reward-key shape | activity_progress (g- keys, +1 per step, +5 for finishing, decided by the server) | app-only ⚠ |
+| games.pagequests | Per-page quests: Blank Quest and Word Builder (native, app only) | - | ui/games/PageGames.kt, no longer shown in the reader (the Games button opens the shared arcade, games.pagearcade); the code and its key-shape tests stay until the owner deletes them | activity_progress (g- keys, +1 per step, +5 for finishing, decided by the server) | retired ⚠ |
+| games.pagearcade | Arcade games made from the page on screen: 15 games (snake, lane runner, fruit slicing, penalty ...), not multiple choice; "no games on this page" when the page has no text to make questions from | js/sb_arcade.js (+ sb_arcade_runners/shoot/puzzle/build.js): the 🎮 Games tab of a page bar (js/sb_page_tabs.js) | Games button of the reader footer: SBApp.openGames() (assets/reader_bridge.js) opens the same overlay inside the page | activity_progress, reward keys cls<N>\|g-pg-<game>-<subject>\|u<chapter>\|count\|<hash>\|<steps> (+1 per new right answer, +5 for finishing, decided by the server; guests keep them on the device); best scores in localStorage | same |
 
 ## Offline
 
 | id | Feature | Web | App | Data lives in | Status |
 |---|---|---|---|---|---|
 | off.books | Read the books with no internet; download per class / book, checked by SHA-256 | service worker + Offline books dialog (js/core/offline.js) | Me > Books on this phone (SiteStore, DownloadWorker); the shell is inside the APK | content/offline_map.json (one map, both platforms; checked by data_parity) | platform-specific |
+| off.queue | Writes made with no connection (coins and steps, study plans, test records, saved items) are kept on the device and sent when it is back; nothing is lost | js/core/offline_queue.js (localStorage) for the older endpoints; js/core/sync.js outbox (IndexedDB) for v2; tests/sync/offline_queue.js | the page inside the WebView uses the same scripts (its storage survives restarts); native events wait in the Room outbox and WorkManager (SyncWorker) |  | platform-specific |
 | off.lexicon | Word meanings with no internet | js/lexicon_data.js | the same file in the shell | generated by tools/build/make_lexicon.js | same |
+
+## Interface
+
+| id | Feature | Web | App | Data lives in | Status |
+|---|---|---|---|---|---|
+| ux.loading | A loading bar with a percent wherever opening takes time (book, chapter, tab, paper maker, downloads) | js/sb_loading.js (overlay with a bar and a percent; SBLoading.set(percent) for counted work) | ui/components/Loading.kt (LoadingPanel with the real page progress first, then an estimate), percent on every download screen |  | platform-specific |
+
+## Security
+
+| id | Feature | Web | App | Data lives in | Status |
+|---|---|---|---|---|---|
+| sec.vault | The downloaded books are stored encrypted on the phone; the device token is sealed; a release build checks its own signature and blocks screenshots | - | data/offline/Vault.kt (AES-256-GCM, key wrapped by the Android Keystore), security/Integrity.kt, FLAG_SECURE in release builds, R8 on | files in filesDir/site (encrypted), DataStore device token (sealed) | app-only ⚠ |
 
 ## Other
 
@@ -92,14 +119,19 @@ Status: **same** (one implementation or two with identical data and rules) · **
 - **acct.plans Free / Premium plan cards ("Price to be announced"), plan, usage** (partial): The website's Home twin (js/sb_home_plans.js with its hunks in app.js, test_prep.js, sb_study_plan.js) is another session's unfinished work, in the working folder but not in any commit, so the deployed website does not have these tabs yet. It reads the same stored data the app's Home reads. When that work is committed this row becomes "same". **Owner decision:** Commit the Home My Stats / Project Stats / My Account work of the other session (js/sb_home_plans.js and its edits), after seeing it.
 - **acct.expiry Preview expiry lock with an unlock code** (platform-specific): A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no expiry. Payment limits for both are the entitlements row.
 - **read.pageview How a chapter is turned: swipe or arrows through printed pages / topic cards (app), scroll or open-book spread (web)** (platform-specific): A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages).
+- **read.fullbleed The page uses the whole screen: no chapter or page title, the tab strip and the page's own Board SLOs / Exercise / Games tabs right under the status bar, text from edge to edge** (platform-specific): Look and layout only (the owner asked for the app's page to fill the phone): the same book, tabs and data on both platforms, so nothing on the website changes.
 - **read.dark Dark mode** (platform-specific): The website follows the browser's colour scheme; the app lets the student choose. Both keep the book on a light page.
 - **read.likes Likes and saves on feed cards** (retired): The Home feed of cards (with like and save) was replaced by My Stats / Project Stats / My Account on 2026-10-23; no screen reaches the reactions table any more and nothing ever sent it to the server. Bookmarks and notes are the saved items now.
 - **mean.word Word and sentence meanings in English, Urdu, Pashto (and Arabic)** (platform-specific): Same data and the same lookup code; the pop-up is a drawer on the website and a bottom sheet in the app because a finger has no hover and no text selection in a WebView.
 - **mean.translator Translate any text (EN / UR / PS / AR)** (platform-specific): Selecting text is switched off on book pages in the app (a long press would select); the gestures give the same translation of the same text.
+- **tools.practicehub The Practice entry: Tests Preps, Papers, Games and Study Plan on one screen** (platform-specific): Navigation differs by design (a phone has a bottom bar, the website a header); every tile opens the website's own page, so the tools are identical.
 - **tools.reminders Study plan reminders** (platform-specific): A WebView has no Notification API, so the app asks the website's own code which reminders the next week holds and schedules each as a phone notification; the title and body are the website's (tests/plan/reminders.js, RemindersTest). Android may delay a job by minutes when dozing. Not seen on a phone.
 - **stats.home Home: My Stats (tests and plans), Project Stats, My Account** (partial): Same reason as acct.plans: the website's twin of the app's Home is uncommitted work of another session. Both read the same stored records (sbTP:v1:<user>, sb_study_plans_v1, sbWS:progress:<user>); tests/parity/stats_numbers.js compares the app's numbers (prep_summary.js) with the website's own code on one fixture: words, the minutes per kind of work, plan percentages and test numbers all agree in the working folder (the last two are skipped in a build that lacks the uncommitted functions). **Owner decision:** Commit the Home work of the other session (see acct.plans).
-- **games.pagequests Per-page quests: Blank Quest and Word Builder made from the page you read** (app-only): A reading-screen feature of the app that the website does not have (its Games page works by class and level, not by page). It uses the same server coin rules and key shape, so nothing differs underneath; only the entry point exists on one platform. **Owner decision:** Do you want per-page quests on the website too (a "Games" tab under each lesson), or keep them as an app extra?
+- **games.pagequests Per-page quests: Blank Quest and Word Builder (native, app only)** (retired): Retired on 2026-10-24: the owner asked for games made from the current page, not multiple choice, on mobile and web alike. The same idea now exists on both platforms as the arcade (games.pagearcade), made once in JavaScript, so the app shows exactly the website's games and pays coins with the same reward keys.
 - **off.books Read the books with no internet; download per class / book, checked by SHA-256** (platform-specific): A browser keeps files in its cache through a service worker; an app keeps them in its own folder and answers the WebView from it. Same files, same hashes.
+- **off.queue Writes made with no connection (coins and steps, study plans, test records, saved items) are kept on the device and sent when it is back; nothing is lost** (platform-specific): Same behaviour, two storage places: the browser's localStorage / IndexedDB and the app's own database. Both send in order, never under another student, and the server decides what counts.
+- **ux.loading A loading bar with a percent wherever opening takes time (book, chapter, tab, paper maker, downloads)** (platform-specific): Each platform draws its own bar. The percent is real where it can be counted (a download, the page load) and an estimate that never reaches 100 before the work is done where it cannot.
+- **sec.vault The downloaded books are stored encrypted on the phone; the device token is sealed; a release build checks its own signature and blocks screenshots** (app-only): A website cannot hide what the browser must receive to show it (docs/PHASE8_SECURITY.md), so it has no equivalent; the app's protection is for the copy kept on the phone. Not a lock against someone who controls an unlocked rooted phone.
 - **other.install Install banner and service worker** (platform-specific): The app is the installed form of the website; nothing to install inside it.
 - **other.quiz Quick Quiz, Swipe & Learn, XP / streak / daily mission / chest** (retired): These belonged to the app's old play-style Home. Since Home became My Stats / Project Stats / My Account on 2026-10-23 nothing navigates to the quiz or reels routes and the XP, streak and chest have no screen. The code and the offline question bank (assets/mcq_bank.json, kept in step with the website's bank by sync_app) remain in case a Practice entry brings them back; Tests Preps and the Games cover the same questions. **Owner decision:** Bring Quick Quiz / Swipe & Learn back under Practice, or delete that code and the 1.2 MB question bank from the app?
 
@@ -136,6 +168,5 @@ One owner switch, published by the server (flags.syncV2 in api/auth.php?action=m
 - Switch client sync on (create api/flags.local.php on the server with <?php return ["syncV2" => true]; after the live checks of RELEASE_AND_ROLLBACK.md section 3). Until then bookmarks, notes and the reading position stay on each device, on both platforms.
 - Password reset channel (acct.forgot).
 - Commit the other session's Home work (acct.plans, stats.home).
-- Per-page quests on the website too, or keep them as an app extra (games.pagequests).
 - Bring Quick Quiz / Swipe & Learn back or delete the code (other.quiz).
 - Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions).
