@@ -151,8 +151,9 @@ const check = (name, ok, extra) => { if (ok) passed++; else { failed++; console.
   send(accBtn, ' '); await app.settle();
   check('Space closes it again', acc.closest('.math-accordion-card').classList.contains('open') === wasOpen);
 
-  r("openSubject('cls9', 'cls9-bio')"); await app.settle();
-  r("selectSubjectChapter('bio', 0, 'cls9')"); await app.settle();
+  // a book whose lesson is running text split into sentences (Class 9 Biology is a page book now, with no .lesson-sentence)
+  r("openSubject('cls9', 'cls9-phy')"); await app.settle();
+  r("selectSubjectChapter('phys', 0, 'cls9')"); await app.settle();
   const lessonTab = d.querySelector('.math-nav-tabs button[data-tab="lesson"]'); if (lessonTab) { lessonTab.click(); await app.settle(); }
   tabKey();
   const sents = [...d.querySelectorAll('.lesson-sentence:not([role])')];     // the Quran verses carry their own role and tab stop

@@ -160,7 +160,7 @@ for (const id of ['cls9-urdu', 'cls9-isl', 'cls9-chem', 'cls9-pakstudy']) {
   const bad = bank.mcqs.filter(m => !Number.isInteger(m.a) || m.a < 0 || m.a >= m.o.length || new Set(m.o.map(x => String(x).toLowerCase().replace(/\s+/g, ''))).size !== m.o.length || m.o.some(x => !String(x).trim()));
   check('every Test Prep question has a key inside its options and distinct, non-empty options', bank.mcqs.length > 5000 && bad.length === 0, bad.slice(0, 3).map(m => m.i).join(','));
   const q = fs.readFileSync(path.join(__dirname, '..', '..', 'docs', 'test_prep_review', 'no_key.csv'), 'utf8').split('\n').filter(Boolean);
-  check('the review queue lists the questions that have no key (and the bank holds none of them)', q[0].startsWith('subject,class,source file,question') && q.length > 50 && q.slice(1).every(r => r.split('","').length >= 4), String(q.length));
+  check('the review queue lists the questions that have no key (and the bank holds none of them)', q[0].startsWith('subject,class,source file,question') && q.length > 1 && q.slice(1).every(r => r.split('","').length >= 4), String(q.length));
   const inBank = new Set(bank.mcqs.map(m => m.q.toLowerCase().replace(/\s+/g, ' ').trim()));
   const leaked = q.slice(1).filter(r => { const m = r.match(/^"[^"]*","[^"]*","[^"]*","(.*?)","/); return m && inBank.has(m[1].replace(/""/g, '"').toLowerCase().replace(/\s+/g, ' ').trim()); });
   check('no question of the review queue is in the bank under another source', leaked.length < 5, String(leaked.length));

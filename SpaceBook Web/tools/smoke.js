@@ -41,7 +41,9 @@ run("CLASS 2 Maths worked examples include vector diagrams", `state.selectedClas
 // ---------------------------------------------------------------- rebuilt books (Classes 1-10, CLSn_BOOKS)
 // Every page-reviewed book opens through the real reader: the chapter list has one button per unit, and the
 // first and last units render every tab they offer with non-empty content.
-const BOOK_NOT_COMPLETE = ['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing'];
+// cls9.math and cls10.math: the page book is built, but Maths 9 and 10 still open through the Maths reader (selectMathChapter),
+// which the first part of this file drives (openSubject cls10 math, selectMathChapter, switchMathTab), not through the generic subject reader
+const BOOK_NOT_COMPLETE = ['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing', 'cls9.math', 'cls10.math'];
 run("REBUILT BOOKS open with every unit and every tab rendering", `
   const problems = [], seen = [];
   const NOT_COMPLETE = ${JSON.stringify(BOOK_NOT_COMPLETE)};

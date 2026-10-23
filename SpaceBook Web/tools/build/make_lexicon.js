@@ -60,7 +60,7 @@ const rows = []; { const seen = new Set();
 // One row per English word: the meanings that different books gave (a book's word list, the dictionary) are joined, first source first,
 // so the hover card shows "موسم، رُت" instead of whichever row happened to come first.
 { const byKey = new Map(), merged = [], overflow = [];
-  const pieces = v => String(v || '').split(/[،,]\s*/).map(x => x.trim()).filter(Boolean);
+  const pieces = v => String(v || '').split(/[،,]\s*(?![^()]*\))/).map(x => x.trim()).filter(Boolean);          // a comma inside (..) does not split: "ہیلوجنز (F, Cl, Br, I)"
   for (const r of rows) {
     const key = r[0] && /^[A-Za-z][A-Za-z' -]*$/.test(r[0]) ? r[0].toLowerCase() : '';
     if (!key) { merged.push(r); continue; }
@@ -131,7 +131,7 @@ const rows = []; { const seen = new Set();
 for (let i = rows.length - 1; i >= 0; i--) {
   const r = rows[i];
   for (let k = 1; k <= 3; k++) if (r[k] && /[A-Za-z]{2,}/.test(r[k].replace(/\([^)]*\)/g, ''))) {
-    r[k] = r[k].split(/[،,]\s*/).filter(p => !/[A-Za-z]{2,}/.test(p.replace(/\([^)]*\)/g, ''))).join('، ');
+    r[k] = r[k].split(/[،,]\s*(?![^()]*\))/).filter(p => !/[A-Za-z]{2,}/.test(p.replace(/\([^)]*\)/g, ''))).join('، ');
   }
   if (!r[1] && !r[2] && !r[3] && r[0]) rows.splice(i, 1);
 }
