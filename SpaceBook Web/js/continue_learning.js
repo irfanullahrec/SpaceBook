@@ -179,7 +179,6 @@
 
   function stripHtml(entries, heading) {
     return '<section class="cl-strip" aria-label="Continue learning">' +
-      '<div class="cl-strip-head"><h3>' + esc(heading) + '</h3><button type="button" class="cl-clear" data-act="clear">Clear</button></div>' +
       '<div class="cl-row">' + entries.map((e, i) => {
         const s = subjectInfo(e.classId, e.subjId);
         return '<button type="button" class="cl-card" data-i="' + i + '">' +
@@ -203,6 +202,7 @@
     if (!host) return;
     const old = host.querySelector(':scope > .cl-strip');
     if (old) old.remove();
+    return; // the "Continue learning" history cards above the classes are switched off; tracking stays for the reader ticks
     let entries = Object.values(load()).filter(e => e && e.classId && e.subjId).sort((a, b) => b.ts - a.ts);
     if (classFilter) entries = entries.filter(e => e.classId === classFilter);
     entries = entries.slice(0, classFilter ? 3 : 4);

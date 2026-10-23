@@ -30,6 +30,12 @@
   padding:.3rem !important; margin-bottom:1rem !important; background:var(--sb-soft) !important;
   border:1px solid var(--sb-line) !important; border-radius:14px !important; overflow-x:auto;
 }
+/* Mathematics exercise row stays pinned to the top of the scrolling content area (all classes, normal + full screen).
+   The white halo hides content that would otherwise show in the gaps around the pill bar. */
+.math-sub-tabs {
+  position:sticky; top:0; z-index:30; -webkit-overflow-scrolling:touch;
+  box-shadow:0 0 0 1rem #fff, 0 1.2rem .8rem -.5rem rgba(15,23,42,.14);
+}
 .math-sub-tab-btn, .topic-sub-tab-btn, .category-sub-tab-btn, .slo-tab-pill {
   display:inline-flex !important; align-items:center; gap:.35rem;
   padding:.45rem .95rem !important; border:0 !important; border-radius:10px !important;

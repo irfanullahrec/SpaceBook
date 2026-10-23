@@ -199,7 +199,7 @@
     queue.push({
       text: u.textContent.replace(/\s+/g, ' ').trim().slice(0, 1400), src, tgt,
       done: txt => {
-        if (!txt) { box.innerHTML = '<span class="sh-wait">Translation needs internet</span>'; return; }
+        if (!txt) { box.innerHTML = '<span class="sh-wait">No stored translation yet</span>'; return; }
         box.textContent = txt;
         const tag = document.createElement('span');
         tag.className = 'sh-tag'; tag.textContent = 'Machine translation';
@@ -370,9 +370,9 @@
       const t = line(box, lang, '…');
       if (!window.SBTranslate) { t.textContent = 'Translation not available'; return; }
       window.SBTranslate.translate(list[i], src, lang, true).then(res => {
-        t.textContent = res && res.text ? res.text : (navigator.onLine === false ? 'This sentence needs internet for its first translation.' : 'Translation not available');
-        if (res && res.text && res.source !== 'dictionary') { const tag = document.createElement('span'); tag.className = 'sh-tag'; tag.textContent = 'Machine translation'; t.parentNode.appendChild(tag); }
-      }, () => { t.textContent = 'Translation not available'; });
+        t.textContent = res && res.text ? (res.source === 'gloss' || res.source === 'machine' ? '≈ ' : '') + res.text : 'No stored translation for this sentence yet.';
+        if (res && res.text && (res.source === 'gloss' || res.source === 'machine')) { const tag = document.createElement('span'); tag.className = 'sh-tag'; tag.textContent = res.source === 'gloss' ? 'Word by word' : 'Computer translation'; t.parentNode.appendChild(tag); }
+      }, () => { t.textContent = 'No stored translation for this sentence yet.'; });
     });
   }
   document.addEventListener('click', onSentenceClick);

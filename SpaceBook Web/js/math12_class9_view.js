@@ -63,7 +63,7 @@
     const answer = problem.answer;
     return `${problem.solutionStatus && problem.solutionStatus.startsWith('partial') ? `<p class="math12-study-note">${safe(problem.solutionStatus)}</p>` : ''}
       ${problem.sourceClarification ? `<p class="math12-study-note">${safe(problem.sourceClarification)}</p>` : ''}
-      ${steps.length ? `<ol>${steps.map(step=>`<li>${safe(step)}</li>`).join('')}</ol>` : `<div class="math12-worked-text">${safe(solution)}</div>`}
+      ${steps.length ? ((window.SBVR && window.SBVR.autoHtml && window.SBVR.autoHtml(problem)) || `<ol>${steps.map(step=>`<li>${safe(step)}</li>`).join('')}</ol>`) : `<div class="math12-worked-text">${safe(solution)}</div>`}
       ${answer ? `<div class="math-result-pill"><strong>Answer:</strong> ${safe(answer)}</div>` : ''}
       ${languageDetails(problem.solUrdu || problem.expUrdu || problem.answerUrdu,problem.solPashto || problem.expPashto || problem.answerPashto,'Answer in Urdu / Pashto')}
       ${problem.solutionDiagram ? renderMathDiagram({...problem,diagram:problem.solutionDiagram},context().number) : ''}

@@ -203,7 +203,7 @@
     let html = '';
     if (i === 0 && B.book.frontMatter && B.book.frontMatter.length) html += card('c6-front', 'Book', 'Cover, credits and contents', root(blocks(B.book.frontMatter)), false);
     if (!ch.sections.length) return html + pending(B, ch);
-    html += ch.sections.map((sec, k) => card(`c6-${ch.number}-${sec.id}`, badge(sec), title(sec), root(blocks(sec.blocks, {showAnswers: true})), k === 0)).join('');
+    html += R.pageCards(ch.sections, {id: sec => `c6-${ch.number}-${sec.id}`, badge, title, root, blocks, card});
     if (B.book.backMatter && B.book.backMatter.length && i === B.units.length - 1) html += card('c6-back', 'Book', 'Glossary and end pages', root(blocks(B.book.backMatter)), false);
     return html;
   }
@@ -338,7 +338,7 @@
   SBHooks.use('switchSubjectTab', function (originalSwitch) { return function (subjKey, tabId, chIdx, classId) {
     // Class 10 Islamiat (lazmi) is the Class 9 book, so cls10 'isl' opens CLS9_BOOKS.isl.
     // Class 9 Islamiat Ikhtiari is the same book as Class 10, so cls9 'islopt' opens CLS10_BOOKS.islopt.
-    const lib = classId === 'cls10' && subjKey === 'isl' ? (window.CLS9_BOOKS || {}) : classId === 'cls9' && subjKey === 'islopt' ? (window.CLS10_BOOKS || {}) : classId === 'cls6' ? books() : classId === 'cls7' ? (window.CLS7_BOOKS || {}) : classId === 'cls8' ? (window.CLS8_BOOKS || {}) : classId === 'cls10' ? (window.CLS10_BOOKS || {}) : classId === 'cls9' ? (window.CLS9_BOOKS || {}) : {};
+    const lib = classId === 'cls10' && subjKey === 'isl' ? (window.CLS9_BOOKS || {}) : classId === 'cls9' && subjKey === 'islopt' ? (window.CLS10_BOOKS || {}) : classId === 'cls6' ? books() : classId === 'cls7' ? (window.CLS7_BOOKS || {}) : classId === 'cls8' ? (window.CLS8_BOOKS || {}) : classId === 'cls10' ? (window.CLS10_BOOKS || {}) : classId === 'cls9' ? (window.CLS9_BOOKS || {}) : classId === 'cls12' ? (window.CLS12_BOOKS || {}) : {};
     const B = subjKey !== 'math' ? lib[subjKey] : null;
     if (!B || !B.units || !B.units.length) return originalSwitch.apply(this, arguments);
     let ch;

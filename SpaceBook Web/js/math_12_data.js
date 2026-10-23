@@ -29765,6 +29765,36 @@ const math12Exercise21Revision = [
       "(d) For 2|4x + 3| + 1, solve 4x + 3 = 0. The vertex is (−3/4, 1); branch slopes are −8 and 8. Plot (−1, 3), (−3/4, 1), (0, 7).",
       "All four functions are defined for every real x and open upward. Their ranges start at the vertex y-values: (a) [0, ∞), (b) [3, ∞), (c) [−2, ∞), (d) [1, ∞)."
     ],
+    "stepRows": [
+      {"label": "(a)  2|x − 3|", "tutor": "graph21a", "rows": [
+        ["y = 2|x - 3|", "the function to draw"],
+        ["x - 3 = 0 \\Rightarrow x = 3", "where the V turns"],
+        ["\\text{vertex } (3,\\,0)", "slopes −2 and 2"],
+        ["(0,\\,6),\\ (3,\\,0),\\ (6,\\,6)", "points on the graph"],
+        ["\\text{Range: } [0,\\infty)", "the graph never goes below the vertex", "final"]
+      ]},
+      {"label": "(b)  4|x − 3| + 3", "tutor": "graph21b", "rows": [
+        ["y = 4|x - 3| + 3", "the function to draw"],
+        ["x - 3 = 0 \\Rightarrow x = 3", "where the V turns"],
+        ["\\text{vertex } (3,\\,3)", "slopes −4 and 4"],
+        ["(0,\\,15),\\ (3,\\,3),\\ (6,\\,15)", "points on the graph"],
+        ["\\text{Range: } [3,\\infty)", "the graph never goes below the vertex", "final"]
+      ]},
+      {"label": "(c)  5|3x + 7| − 2", "tutor": "graph21c", "rows": [
+        ["y = 5|3x + 7| - 2", "the function to draw"],
+        ["3x + 7 = 0 \\Rightarrow x = -\\frac{7}{3}", "where the V turns"],
+        ["\\text{vertex } \\left(-\\frac{7}{3},\\,-2\\right)", "slopes −15 and 15"],
+        ["(-3,\\,8),\\ \\left(-\\frac{7}{3},\\,-2\\right),\\ (-2,\\,3)", "points on the graph"],
+        ["\\text{Range: } [-2,\\infty)", "the graph never goes below the vertex", "final"]
+      ]},
+      {"label": "(d)  2|4x + 3| + 1", "tutor": "graph21d", "rows": [
+        ["y = 2|4x + 3| + 1", "the function to draw"],
+        ["4x + 3 = 0 \\Rightarrow x = -\\frac{3}{4}", "where the V turns"],
+        ["\\text{vertex } \\left(-\\frac{3}{4},\\,1\\right)", "slopes −8 and 8"],
+        ["(-1,\\,3),\\ \\left(-\\frac{3}{4},\\,1\\right),\\ (0,\\,7)", "points on the graph"],
+        ["\\text{Range: } [1,\\infty)", "the graph never goes below the vertex", "final"]
+      ]}
+    ],
     "answer": "All domains: ℝ. Ranges: (a) [0, ∞); (b) [3, ∞); (c) [−2, ∞); (d) [1, ∞).",
     "solution": "(a) For 2|x − 3|, set x − 3 = 0. The vertex is (3, 0); branch slopes are −2 and 2. Plot (0, 6), (3, 0), (6, 6).\n(b) For 4|x − 3| + 3, the vertex is (3, 3); branch slopes are −4 and 4. Plot (0, 15), (3, 3), (6, 15).\n(c) For 5|3x + 7| − 2, solve 3x + 7 = 0. The vertex is (−7/3, −2); branch slopes are −15 and 15. Plot (−3, 8), (−7/3, −2), (−2, 3).\n(d) For 2|4x + 3| + 1, solve 4x + 3 = 0. The vertex is (−3/4, 1); branch slopes are −8 and 8. Plot (−1, 3), (−3/4, 1), (0, 7).\nAll four functions are defined for every real x and open upward. Their ranges start at the vertex y-values: (a) [0, ∞), (b) [3, ∞), (c) [−2, ∞), (d) [1, ∞).",
     "progressiveSolution": true,
@@ -29790,6 +29820,44 @@ const math12Exercise21Revision = [
       "(c) \\(g(f(x))=\\frac{\\frac{x-1}{x+1}+1}{1-\\frac{x-1}{x+1}}=\\frac{2x/(x+1)}{2/(x+1)}=x\\). The inner f requires x ≠ −1; f(x) never equals 1. Domain: ℝ ∖ {−1}.",
       "(d) f(g(x)) = sin(2x + 3); g(f(x)) = 2 sin x + 3. Both domains are ℝ. Simplifying the rational compositions to x does not restore their excluded inputs."
     ],
+    "stepRows": [
+      {"label": "(a)  f(x) = x² + 1,  g(x) = 2x", "tutor": "comp3a", "rows": [
+        ["f(g(x))", "Put g(x) = 2x into f"],
+        ["= (2x)^2 + 1", "Replace x in f by 2x"],
+        ["= 4x^2 + 1", "Square 2x", "final"],
+        ["g(f(x))", "Put f(x) = x² + 1 into g"],
+        ["= 2(x^2 + 1)", "Replace x in g by x² + 1"],
+        ["= 2x^2 + 2", "Expand the bracket", "final"],
+        ["\\text{Domain: } \\mathbb{R}\\ \\text{(both)}", "Polynomials: no excluded values", "dom"]
+      ]},
+      {"label": "(b)  f(x) = sin x,  g(x) = 1 − x²", "tutor": "comp3b", "rows": [
+        ["f(g(x))", "Put g(x) = 1 − x² into f"],
+        ["= \\sin(1 - x^2)", "Replace x in f by 1 − x²", "final"],
+        ["g(f(x))", "Put f(x) = sin x into g"],
+        ["= 1 - \\sin^2 x", "Replace x in g by sin x"],
+        ["= \\cos^2 x", "Use sin²x + cos²x = 1", "final"],
+        ["\\text{Domain: } \\mathbb{R}\\ \\text{(both)}", "sin and polynomials: no excluded values", "dom"]
+      ]},
+      {"label": "(c)  f(x) = (x − 1)/(x + 1),  g(x) = (x + 1)/(1 − x)", "tutor": "comp3c", "rows": [
+        ["f(g(x))", "Put g(x) into f"],
+        ["= \\frac{\\frac{x+1}{1-x} - 1}{\\frac{x+1}{1-x} + 1}", "Replace x in f by (x + 1)/(1 − x)"],
+        ["= \\frac{\\frac{2x}{1-x}}{\\frac{2}{1-x}}", "Over 1 − x: (x+1)−(1−x) = 2x and (x+1)+(1−x) = 2"],
+        ["= x,\\quad x \\neq 1", "Cancel 1/(1 − x); keep the restriction", "final"],
+        ["\\text{Domain: } \\mathbb{R} \∖ \\{1\\}", "g needs x ≠ 1; g(x) never equals −1", "dom"],
+        ["g(f(x))", "Put f(x) into g"],
+        ["= \\frac{\\frac{x-1}{x+1} + 1}{1 - \\frac{x-1}{x+1}}", "Replace x in g by (x − 1)/(x + 1)"],
+        ["= \\frac{\\frac{2x}{x+1}}{\\frac{2}{x+1}}", "Over x + 1: (x−1)+(x+1) = 2x and (x+1)−(x−1) = 2"],
+        ["= x,\\quad x \\neq -1", "Cancel 1/(x + 1); keep the restriction", "final"],
+        ["\\text{Domain: } \\mathbb{R} \∖ \\{-1\\}", "f needs x ≠ −1; f(x) never equals 1", "dom"]
+      ]},
+      {"label": "(d)  f(x) = sin x,  g(x) = 2x + 3", "tutor": "comp3d", "rows": [
+        ["f(g(x))", "Put g(x) = 2x + 3 into f"],
+        ["= \\sin(2x + 3)", "Replace x in f by 2x + 3", "final"],
+        ["g(f(x))", "Put f(x) = sin x into g"],
+        ["= 2\\sin x + 3", "Replace x in g by sin x", "final"],
+        ["\\text{Domain: } \\mathbb{R}\\ \\text{(both)}", "No excluded values", "dom"]
+      ]}
+    ],
     "answer": "See the compositions and their domains above.",
     "solution": "(a) f(g(x)) = (2x)² + 1 = 4x² + 1; g(f(x)) = 2(x² + 1) = 2x² + 2. Both domains are ℝ.\n(b) f(g(x)) = sin(1 − x²); g(f(x)) = 1 − sin²x = cos²x. Both domains are ℝ.\n(c) \\(f(g(x))=\\frac{\\frac{x+1}{1-x}-1}{\\frac{x+1}{1-x}+1}=\\frac{2x/(1-x)}{2/(1-x)}=x\\). The inner g requires x ≠ 1; g(x) never equals −1. Domain: ℝ ∖ {1}.\n(c) \\(g(f(x))=\\frac{\\frac{x-1}{x+1}+1}{1-\\frac{x-1}{x+1}}=\\frac{2x/(x+1)}{2/(x+1)}=x\\). The inner f requires x ≠ −1; f(x) never equals 1. Domain: ℝ ∖ {−1}.\n(d) f(g(x)) = sin(2x + 3); g(f(x)) = 2 sin x + 3. Both domains are ℝ. Simplifying the rational compositions to x does not restore their excluded inputs.",
     "progressiveSolution": true,
@@ -29813,6 +29881,59 @@ const math12Exercise21Revision = [
       "(b) f(g(x)) = 2(2x) + 7 = 4x + 7. Solve y = 4x + 7: inverse (x − 7)/4. For g(f(x)) = 2(2x + 7) = 4x + 14, the inverse is (x − 14)/4.",
       "(c) f(g(x)) = 2((x + 5)/2 − 4) = x − 3, so its inverse is x + 3. For g(f(x)) = (2(x − 4) + 5)/2 = x − 3/2, the inverse is x + 3/2.",
       "(d) f(g(x)) = ((2x − 4) + 4)/2 = x, and g(f(x)) = 2((x + 4)/2) − 4 = x. Both inverses are the identity function x."
+    ],
+    "stepRows": [
+      {"label": "(a)  f(x) = x + 5,  g(x) = x − 4", "tutor": "inv4a", "rows": [
+        ["f(g(x))", "Put g(x) = x − 4 into f"],
+        ["= (x - 4) + 5", "Replace x in f by x − 4"],
+        ["= x + 1", "−4 + 5 = +1", "final"],
+        ["g(f(x))", "Put f(x) = x + 5 into g"],
+        ["= (x + 5) - 4", "Replace x in g by x + 5"],
+        ["= x + 1", "+5 − 4 = +1", "final"],
+        ["y = x + 1", "The same function for both"],
+        ["y - 1 = x", "Subtract 1 from both sides"],
+        ["x = y - 1", "x alone"],
+        ["(f\\circ g)^{-1}(x) = x - 1", "Rename y as x; the same for g∘f", "final"]
+      ]},
+      {"label": "(b)  f(x) = 2x + 7,  g(x) = 2x", "tutor": "inv4b", "rows": [
+        ["f(g(x))", "Put g(x) = 2x into f"],
+        ["= 2(2x) + 7", "Replace x in f by 2x"],
+        ["= 4x + 7", "2 × 2x = 4x", "final"],
+        ["y - 7 = 4x", "Subtract 7 from both sides"],
+        ["x = \\frac{y - 7}{4}", "Divide by 4"],
+        ["(f\\circ g)^{-1}(x) = \\frac{x - 7}{4}", "Rename y as x", "final"],
+        ["g(f(x))", "Put f(x) = 2x + 7 into g"],
+        ["= 2(2x + 7)", "Replace x in g by 2x + 7"],
+        ["= 4x + 14", "2 × 2x and 2 × 7", "final"],
+        ["y - 14 = 4x", "Subtract 14 from both sides"],
+        ["x = \\frac{y - 14}{4}", "Divide by 4"],
+        ["(g\\circ f)^{-1}(x) = \\frac{x - 14}{4}", "Rename y as x", "final"]
+      ]},
+      {"label": "(c)  f(x) = 2(x − 4),  g(x) = (x + 5)/2", "tutor": "inv4c", "rows": [
+        ["f(g(x))", "Put g(x) into f"],
+        ["= 2\\left(\\frac{x + 5}{2} - 4\\right)", "Replace x in f"],
+        ["= x + 5 - 8", "The 2 multiplies both terms; 2 cancels 2"],
+        ["= x - 3", "5 − 8 = −3", "final"],
+        ["y + 3 = x", "Add 3 to both sides"],
+        ["(f\\circ g)^{-1}(x) = x + 3", "Rename y as x", "final"],
+        ["g(f(x))", "Put f(x) into g"],
+        ["= \\frac{2(x - 4) + 5}{2}", "Replace x in g"],
+        ["= \\frac{2x - 3}{2}", "2(x − 4) = 2x − 8; −8 + 5 = −3"],
+        ["= x - \\frac{3}{2}", "Split; 2x/2 = x", "final"],
+        ["y + \\frac{3}{2} = x", "Add 3/2 to both sides"],
+        ["(g\\circ f)^{-1}(x) = x + \\frac{3}{2}", "Rename y as x", "final"]
+      ]},
+      {"label": "(d)  f(x) = (x + 4)/2,  g(x) = 2x − 4", "tutor": "inv4d", "rows": [
+        ["f(g(x))", "Put g(x) = 2x − 4 into f"],
+        ["= \\frac{(2x - 4) + 4}{2}", "Replace x in f"],
+        ["= \\frac{2x}{2}", "−4 + 4 = 0"],
+        ["= x", "Cancel the 2s", "final"],
+        ["g(f(x))", "Put f(x) into g"],
+        ["= 2\\left(\\frac{x + 4}{2}\\right) - 4", "Replace x in g"],
+        ["= x + 4 - 4", "Cancel the 2s"],
+        ["= x", "+4 − 4 = 0", "final"],
+        ["(f\\circ g)^{-1}(x) = (g\\circ f)^{-1}(x) = x", "Both inverses: the identity function", "final"]
+      ]}
     ],
     "answer": "Inverses, in the order (f ∘ g)⁻¹, (g ∘ f)⁻¹: (a) x − 1, x − 1; (b) (x − 7)/4, (x − 14)/4; (c) x + 3, x + 3/2; (d) x, x.",
     "solution": "(a) f(g(x)) = (x − 4) + 5 = x + 1, and g(f(x)) = (x + 5) − 4 = x + 1. Solve y = x + 1 to get the inverse x − 1 for each.\n(b) f(g(x)) = 2(2x) + 7 = 4x + 7. Solve y = 4x + 7: inverse (x − 7)/4. For g(f(x)) = 2(2x + 7) = 4x + 14, the inverse is (x − 14)/4.\n(c) f(g(x)) = 2((x + 5)/2 − 4) = x − 3, so its inverse is x + 3. For g(f(x)) = (2(x − 4) + 5)/2 = x − 3/2, the inverse is x + 3/2.\n(d) f(g(x)) = ((2x − 4) + 4)/2 = x, and g(f(x)) = 2((x + 4)/2) − 4 = x. Both inverses are the identity function x.",

@@ -247,6 +247,13 @@
       e.stopPropagation();
       const tab = e.target.closest('.sb-tp-tab');
       if (tab) { if (tab.classList.contains('on')) { body.hidden = true; tab.classList.remove('on'); } else show(tab.dataset.t); return; }
+      itemClick(e, T);
+    });
+    return host;
+  }
+  // answering an MCQ / true-false, showing a model answer: shared with the per-page tabs (sb_page_tabs.js)
+  function itemClick(e, T) {
+    {
       const opt = e.target.closest('button.sb-tp-opt');
       if (opt) { const q = opt.closest('[data-a]'); if (!q) return; const a = +q.dataset.a, i = +opt.dataset.i; const btns = q.querySelectorAll('button.sb-tp-opt');
         btns.forEach((b, j) => { b.disabled = true; b.classList.toggle('ok', j === a); b.classList.toggle('bad', j === i && i !== a); });
@@ -257,12 +264,12 @@
         q.querySelector('.sb-tp-fb').textContent = ok ? T.right : T.wrong + (q.dataset.a === '1' ? T.t : T.f); return; }
       const sh = e.target.closest('.sb-tp-show');
       if (sh) { const a = sh.parentElement.querySelector('.sb-tp-ans'); a.hidden = !a.hidden; sh.textContent = a.hidden ? T.show : T.hide; }
-    });
-    return host;
+    }
   }
 
   // ---------- finding topics ----------
   const CARD = '.math-topic-card, .para-card';
+  const owned = c => !!(c.closest && c.closest('[data-sb-pt]'));
   const NOT = '.topic-ex-item, .slo-accordion-card, .slo-question-accordion, .sb-tp, [id^="m11-bank"], .m11-q, .sb-tp-q';
   function topicText(card) {
     const c = card.cloneNode(true);
@@ -299,7 +306,7 @@
   const NOT_TOPIC = /^(unit\s*\d*\s*(opening|introduction|assessment|review)|cover|front matter|contents|student learning outcomes|learning outcomes|unit assessment|glossary|index|سرورق|ابتدائی صفحات|فہرست|تعلیمی نتائج|طلبہ کے حاصلاتِ تعلم)/i;
   let timer = 0;
   function scan() {
-    const cards = [...document.querySelectorAll(CARD)].filter(c => !c.dataset.sbTp && !c.closest('.sb-tp') && !c.matches(NOT) && !c.querySelector(':scope .math-topic-card') && !c.closest('.topic-ex-item, .slo-accordion-card, .slo-question-accordion'));
+    const cards = [...document.querySelectorAll(CARD)].filter(c => !c.dataset.sbTp && !owned(c) && !c.closest('.sb-tp') && !c.matches(NOT) && !c.querySelector(':scope .math-topic-card') && !c.closest('.topic-ex-item, .slo-accordion-card, .slo-question-accordion'));
     if (!cards.length) return;
     cards.forEach(c => { c.dataset.sbTp = '1'; });
     const ch = chapterOf();
@@ -352,5 +359,5 @@
     later();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
-  window.SBTopicPractice = {collect, place, profile, distinct, slosOf, scan, chapterOf, topicText, titleOf, dataText};
+  window.SBTopicPractice = {collect, place, profile, distinct, slosOf, scan, chapterOf, topicText, titleOf, dataText, content, stem, lang, norm, itemHtml, itemClick, fmt, L};
 })();

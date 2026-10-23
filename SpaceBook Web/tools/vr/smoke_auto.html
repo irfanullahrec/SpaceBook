@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><title>VR auto smoke</title>
+<link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body>
+<pre id="out">running…</pre><div id="hosts"></div>
+<script>
+// Instant mode (reduced motion): no waits and no flights, but every op still resolves its targets and every row is typeset.
+// ?set=math10,math12,m11,m5,m6,m8,m9   ?from=&to=
+const mm = window.matchMedia.bind(window);
+window.matchMedia = q => /reduced-motion/.test(q) ? { matches: true, addListener(){}, removeListener(){} } : mm(q);
+window.__errs = [];
+console.error = (...a) => { window.__errs.push(a.map(x => x && x.message || String(x)).join(' ')); };
+window.addEventListener('error', e => window.__errs.push('uncaught ' + e.message));
+const q = new URLSearchParams(location.search);
+const SETS = { math10: ['math_10_data.js'], math12: ['math_12_data.js'], math9: ['math_data.js'], m11: ['math_11_solutions.js'], m5: ['math_5_solutions.js'], m6: ['math_6_solutions.js'], m8: ['math_8_solutions.js'], c1: ['math_1_data.js'], c2: ['math_2_data.js'], c3: ['math_3_data.js'] };
+const want = (q.get('set') || 'math10,math12').split(',');
+</script>
+<script src="../../assets/vendor/katex/katex.min.js"></script>
+<script src="../../js/vr_engine.js"></script><script src="../../js/vr_auto.js"></script>
+<script>
+(async () => {
+  for (const k of want) for (const f of SETS[k] || []) await new Promise(r => { const s = document.createElement('script'); s.src = '../../js/' + f; s.onload = s.onerror = r; document.head.appendChild(s); });
+  const items = [];
+  const seen = new Set();
+  const walk = o => {
+    if (!o || typeof o !== 'object' || seen.has(o)) return; seen.add(o);
+    if (Array.isArray(o)) return o.forEach(walk);
+    if (Array.isArray(o.steps) && o.steps.length && !/^partial/.test(o.solutionStatus || '')) {
+      if (o.steps.every(s => typeof s === 'string')) items.push(o.steps);
+      else if (o.steps.every(s => s && typeof s === 'object' && typeof s.en === 'string')) items.push(o.steps.map(s => ({ text: s.en, m: s.m || '' })));
+    }
+    Object.keys(o).forEach(k => walk(o[k]));
+  };
+  ['MATH_10_DATA', 'MATH_12_DATA', 'MATH_DATA', 'MATH_11_SOLUTIONS', 'MATH_5_SOLUTIONS', 'MATH_6_SOLUTIONS', 'MATH_8_SOLUTIONS', 'MATH_1_DATA', 'MATH_2_DATA', 'MATH_3_DATA'].forEach(n => { try { walk((0, eval)(n)); } catch (e) { /* not loaded */ } });
+  let ok = 0, none = 0, bad = [], steps = 0, rows = 0; const t0 = performance.now();
+  const from = +(q.get('from') || 0), to = Math.min(+(q.get('to') || items.length), items.length);
+  window.__total = to - from;
+  const stride = +(q.get('stride') || 1);
+  for (let n = from; n < to; n += stride) {
+    window.__prog = n - from;
+    const r = SBVR.autoSpec(items[n]); if (!r.spec) { none++; continue; }
+    SBVR.specs[r.spec.id] = r.spec;
+    const holder = document.createElement('div'); holder.style.minHeight = '40px';
+    holder.innerHTML = '<div data-sbt-host data-vr="' + r.spec.id + '"></div>'; document.getElementById('hosts').appendChild(holder);
+    const h = holder.firstChild; window.__errs.length = 0;
+    h.scrollIntoView(); window.dispatchEvent(new Event('scroll')); await new Promise(res => setTimeout(res, 150));
+    const t = h._t; if (!t) { bad.push(n + ': not mounted'); holder.remove(); continue; }
+    for (let k = 0; k < t.spec.steps.length; k++) { t.go(k); await new Promise(res => setTimeout(res, 4)); steps++; rows += t.box.querySelectorAll('.sbt-row').length; }
+    if (window.__errs.length) bad.push(n + ': ' + window.__errs.slice(0, 2).join(' | ')); else ok++;
+    holder.remove(); t.run++;
+  }
+  const res = { sets: want, total: to - from, animated: ok, noChain: none, errors: bad.length, steps, rows, skippedDecorations: SBVR.skipped || 0, ms: Math.round(performance.now() - t0), samples: bad.slice(0, 10) };
+  document.getElementById('out').textContent = JSON.stringify(res, null, 1); window.__done = res;
+})();
+</script></body></html>

@@ -281,7 +281,7 @@
       html += card('m8-front', 'Book', 'Cover, credits and contents', root(blocks(BOOK.frontMatter)), false);
     }
     if (!ch.sections.length) return html + pending(ch);
-    html += ch.sections.map((sec, i) => card(sec.id, /^\d+\.\d/.test(sec.id) ? `Topic ${sec.id}` : (/summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : 'Unit opening')), sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root(blocks(sec.blocks, {showAnswers: true})), i === 0)).join('');
+    html += window.MATH6_READER.pageCards(ch.sections, {id: sec => sec.id, badge: (sec, i) => /^\d+\.\d/.test(sec.id) ? `Topic ${sec.id}` : (/summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : 'Unit opening')), title: sec => sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root, blocks, card});
     return html;
   }
   function examples(ch) {

@@ -239,7 +239,7 @@
           (none ? 'always available' : mb(s.bytes) + (isHave ? ' · on this device' : '')) + '</small></label>';
       }).join('');
       const n = byClass[cid].filter(id => have[id]).length;
-      return '<details><summary>' + esc(classNames[cid] || cid) + (n ? ' <small>(' + n + ' on this device)</small>' : '') + '</summary>' + rows + '</details>';
+      return '<details' + (cid === 'meanings' ? ' open' : '') + '><summary>' + esc(classNames[cid] || (cid === 'meanings' ? 'Meanings for hover and sentence click' : cid)) + (n ? ' <small>(' + n + ' on this device)</small>' : '') + '</summary>' + rows + '</details>';
     }).join('');
 
     const selected = () => [...overlay.querySelectorAll('input[data-id]:checked')].map(i => i.getAttribute('data-id'));

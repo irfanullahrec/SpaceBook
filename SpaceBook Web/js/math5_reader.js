@@ -323,7 +323,7 @@
       html += card('m5-front', 'Book', 'Cover, credits and contents', root(blocks(BOOK.frontMatter)), false);
     }
     if (!ch.sections.length) return html + pending(ch);
-    html += ch.sections.map((sec, i) => card(sec.id, /summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : (/opening/i.test(sec.id) ? 'Unit opening' : `Topic ${i}`)), sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root(blocks(sec.blocks, {showAnswers: true})), i === 0)).join('');
+    html += window.MATH6_READER.pageCards(ch.sections, {id: sec => sec.id, badge: (sec, i) => /summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : (/opening/i.test(sec.id) ? 'Unit opening' : `Topic ${i}`)), title: sec => sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root, blocks, card});
     if (BOOK.backMatter && BOOK.backMatter.length && ch === BOOK_LAST()) {
       html += card('m5-back', 'Book', 'Glossary, formulas, web links, index and symbols', root(blocks(BOOK.backMatter)), false);
     }

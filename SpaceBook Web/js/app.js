@@ -17632,10 +17632,10 @@ function renderMathExamples(ch) {
         ${renderMathDiagram(ex, ch.number) || (state.selectedClass === 'cls2' && ch.sections && ch.sections.length ? renderPrimaryMathDiagram(state.selectedClass, ch.number, ch.sections[idx % ch.sections.length].id, ex) : '')}
         <div class="math-step-box">
           <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${ex.solutionOrigin ? sanitize(ex.solutionOrigin) + ': ' : ''}Detailed Step-by-Step Execution:</div>
-          <ol style="margin:0;padding-left:1.25rem;line-height:1.8;">
+          ${(window.SBVR && SBVR.autoHtml && SBVR.autoHtml(ex)) || `<ol style="margin:0;padding-left:1.25rem;line-height:1.8;">
             ${(ex.steps || (ex.solution ? [ex.solution] : [])).map((s, stepIdx) => `<li ${ex.progressiveSolution ? `data-example-step="${stepIdx}"` : ''} style="margin-bottom:0.45rem;white-space:pre-line;${ex.progressiveSolution && stepIdx > 0 ? 'display:none;' : ''}">${s}</li>`).join('')}
           </ol>
-          ${ex.progressiveSolution && ex.steps && ex.steps.length > 1 ? `<button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : ''}
+          ${ex.progressiveSolution && ex.steps && ex.steps.length > 1 ? `<button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : ''}`}
         </div>
         <div class="math-result-pill${ex.solutionBlocks ? ' math-result-with-graphs' : ''}" ${ex.progressiveSolution ? 'data-example-answer' : ''} style="margin-top:0.75rem;${ex.progressiveSolution && ex.steps && ex.steps.length > 1 ? 'display:none;' : ''}">
           ${ex.solutionBlocks ? renderMathSourceBlocks(ex.solutionBlocks) : ''}
@@ -17650,6 +17650,21 @@ function renderMathExamples(ch) {
       ${examplesHtml}
     </div>
   `;
+}
+
+// Two-column worked steps (equations left, reasons right); used only by questions that carry `stepRows`.
+function renderMathStepRows(groups) {
+  const cell = 'padding:.16rem .5rem;display:flex;align-items:center;';
+  return '<div style="white-space:normal;line-height:1.4;margin:.1rem 0 .5rem;">' + groups.map((g, i) =>
+    `<div data-example-step="${i}" style="margin-bottom:.45rem;${i ? 'display:none;' : ''}">` +
+    `<div style="font-weight:700;color:#0f172a;padding:.1rem .5rem;">${sanitize(g.label)}</div>` +
+    (g.tutor ? `<div data-sbt-host data-vr="${sanitize(g.tutor)}" style="font-weight:400;"></div>` : '') +
+    `<div ${g.tutor ? 'data-sbt-full' : ''} style="display:grid;grid-template-columns:minmax(14rem,max-content) minmax(0,1fr);column-gap:1.25rem;border-left:2px solid #bae6fd;${g.tutor ? 'display:none;margin-top:.4rem;' : ''}">` +
+    g.rows.map(r => {
+      const bg = r[2] === 'final' ? 'background:#dcfce7;' : r[2] === 'dom' ? 'background:#f0f9ff;' : '';
+      return `<div style="${cell}${bg}overflow-x:auto;">\\(\\displaystyle ${sanitize(r[0])}\\)</div>` +
+        `<div style="${cell}${bg}font-size:.86rem;color:#475569;">${sanitize(r[1])}</div>`;
+    }).join('') + '</div></div>').join('') + '</div>';
 }
 
 function revealMathExampleStep(button) {
@@ -17708,6 +17723,8 @@ function switchMathEx(exKey, activeCat) {
     || (ch.sections || [])[state.selectedClass === 'cls12' ? Number(exKey) : ch.exercises.indexOf(currentEx)]
     || (ch.sections || [])[0];
 
+  // Some books name the printed answer "finalAnswer" (Class 1 and 10 data): show it as the Answer
+  currentEx.problems.forEach(p => { if (p && !p.answer && p.finalAnswer) p.answer = p.finalAnswer; });
   // Group problems by category
   const catMap = {};
   currentEx.problems.forEach(p => {
@@ -17775,7 +17792,7 @@ function switchMathEx(exKey, activeCat) {
             ${renderMathDiagram(p, ch.number) || (state.selectedClass === 'cls2' && visualSection ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
             ${p.solution || p.answer ? `<div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;overflow-wrap:anywhere;">
               <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${p.solutionOrigin ? sanitize(p.solutionOrigin) + ': ' : ''}Worked answer</div>
-              ${p.progressiveSolution && p.steps ? `<ol style="padding-left:1.25rem;">${p.steps.map((step,index)=>`<li data-example-step="${index}" style="margin-bottom:.5rem;${index ? 'display:none;' : ''}">${sanitize(step)}</li>`).join('')}</ol><button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : state.selectedClass === 'cls7' ? renderTextbookLessonBody(p.solution || p.answer) : (p.solution || p.answer)}
+              ${(!p.stepRows && window.SBVR && SBVR.autoHtml && SBVR.autoHtml(p)) || (p.progressiveSolution && p.stepRows ? `${renderMathStepRows(p.stepRows)}<button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : p.progressiveSolution && p.steps ? `<ol style="padding-left:1.25rem;">${p.steps.map((step,index)=>`<li data-example-step="${index}" style="margin-bottom:.5rem;${index ? 'display:none;' : ''}">${sanitize(step)}</li>`).join('')}</ol><button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : state.selectedClass === 'cls7' ? renderTextbookLessonBody(p.solution || p.answer) : (p.solution || p.answer))}
             </div>` : (state.selectedClass === 'cls7' ? '<div class="math-step-box" style="color:#92400e;margin-bottom:.85rem;">Answer needs a scan check.</div>' : '')}
             <div class="math-result-pill${p.solutionBlocks ? ' math-result-with-graphs' : ''}" ${p.progressiveSolution ? 'data-example-answer style="display:none;overflow-wrap:anywhere;"' : ''}>
               ${p.answer ? `<strong>Answer:</strong> ${p.answer}` : ''}
@@ -22030,7 +22047,7 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
         <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
           <div class="math-acc-header" onclick="toggleMathAccordion(this)">
             <div style="display:flex;align-items:center;gap:0.6rem;">
-              <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${numBadge}</span>
+              <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${t.class11Source && t.sourcePageLabel ? sanitize(String(t.sourcePageLabel)) : `Topic ${numBadge}`}</span>
               <h3 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;">${titleStr}</h3>
             </div>
             <span class="math-acc-icon">+</span>

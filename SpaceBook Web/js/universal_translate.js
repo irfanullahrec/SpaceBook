@@ -103,22 +103,26 @@
 
   // ── offline lexicon: SB_OFFLINE_LEXICON rows + ENG_URDU_DICT + every book's word list (built once, no network) ──
   const LX_NORM = (w, l) => l === 'en' ? String(w).toLowerCase().replace(/[^a-z'-]/g, '') :
-    String(w).replace(/[ً-ٰٟـۡ]/g, '').replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/ہ|ۀ|ة/g, 'ه').replace(/[^\p{L}\s]/gu, '').replace(/\s+/g, ' ').trim();
+    String(w).replace(/[\u0610-\u061A\u06D6-\u06ED]/g, '').replace(/\u0671/g, '\u0627').replace(/[ً-ٰٟـۡ]/g, '').replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/ہ|ۀ|ة/g, 'ه').replace(/[^\p{L}\s]/gu, '').replace(/\s+/g, ' ').trim();
   let LX = null;
   function lexicon() {
     if (LX) return LX;
     LX = { en: new Map(), ur: new Map(), ps: new Map(), ar: new Map() };
+    // rec.q = quality per language: 'm' = computer-made (shown as approximate); anything else = from a book, a teacher list or a person
     const add = rec => ORDER.forEach(l => String(rec[l] || '').split(/[،,]/).forEach(part => {
       const k = LX_NORM(part.replace(/\(.*?\)/g, ''), l);
       if (!k || k.split(' ').length > 3) return;
       const cur = LX[l].get(k);
-      if (!cur) LX[l].set(k, Object.assign({}, rec));
-      else ORDER.forEach(t => { if (!cur[t] && rec[t]) cur[t] = rec[t]; });
+      if (!cur) LX[l].set(k, Object.assign({}, rec, { q: Object.assign({}, rec.q) }));
+      else ORDER.forEach(t => { if (!cur[t] && rec[t]) { cur[t] = rec[t]; cur.q[t] = rec.q && rec.q[t] || ''; } });
     }));
     // Built at build time (tools/build/make_lexicon.js: the same sources in the same order): one file instead of reading the word list of
     // every book, which loaded all of them on the lazy page at the first lookup (106 files, 150 MB, about 10 s).
     const V1 = window.SB_LEXICON_V1;
-    if (V1 && Array.isArray(V1.rows)) { V1.rows.forEach(r => add({ en: r[0], ur: r[1], ps: r[2], ar: r[3] })); return LX; }
+    if (V1 && Array.isArray(V1.rows)) {
+      V1.rows.forEach(r => add({ en: r[0], ur: r[1], ps: r[2], ar: r[3] }));
+      return LX;
+    }
     try { String(window.SB_OFFLINE_LEXICON || '').split('\n').forEach(r => { const p = r.split('|'); if (p.length === 4) add({ en: p[0], ur: p[1], ps: p[2], ar: p[3] }); }); } catch (e) { /* none */ }
     try {
       ['CLS1_BOOKS', 'CLS2_BOOKS', 'CLS3_BOOKS', 'CLS4_BOOKS', 'CLS5_BOOKS', 'CLS6_BOOKS', 'CLS7_BOOKS', 'CLS8_BOOKS', 'CLS9_BOOKS', 'CLS10_BOOKS', 'CLASS11_BOOKS'].forEach(n => {
@@ -137,27 +141,79 @@
     } catch (e) { /* partial lexicon is fine */ }
     return LX;
   }
-  function offlineLookup(text, src, tgt) {
+  // The meaning of a word or short phrase on this device. Returns { text, q, via } or null.
+  //   via: the base form that was found when the word itself is an inflected form ("running" -> "run")
+  function offlineFind(text, src, tgt) {
     const L = lexicon();
     const tries = src === 'en' ? ['en'] : [src, 'ur', 'ps', 'ar'].filter((x, i, a) => x !== 'en' && a.indexOf(x) === i);
+    const ok = (rec, k, l) => rec && rec[tgt] && LX_NORM(rec[tgt], tgt) !== LX_NORM(text, tgt) ? { text: rec[tgt], q: (rec.q && rec.q[tgt]) || '', via: l === 'en' && k !== LX_NORM(text, 'en') ? k : '' } : null;
+    let firstRec = null;                                                    // the entry found for the word itself, even when it has no meaning in the language asked for
     for (const l of tries) {
-      let k = LX_NORM(text, l);
-      let rec = L[l].get(k);
-      if (!rec && l === 'en' && typeof window.lookupEngWord === 'function') { const e = window.lookupEngWord(k); if (e) rec = L.en.get(e.word) || { en: e.word, ur: e.u, ps: e.p }; }
-      if (!rec && l !== 'en') rec = L[l].get(k.replace(/^(و|ال|وال|بال|فال|لل)/, '')) || L[l].get(k.replace(/(ونه|انو|ونو|ان|ې|ه|ے|یں|وں)$/, ''));
-      if (rec && rec[tgt] && LX_NORM(rec[tgt], tgt) !== LX_NORM(text, tgt)) return rec[tgt];
+      const k = LX_NORM(text, l);
+      let hit = ok(L[l].get(k), k, l);
+      if (hit) return hit;
+      if (l !== 'en' && !firstRec && L[l].get(k)) firstRec = L[l].get(k);
+      if (l === 'en') {
+        if (typeof window.lookupEngWord === 'function') {
+          const e = window.lookupEngWord(k);
+          if (e) { hit = ok(L.en.get(e.word) || { en: e.word, ur: e.u, ps: e.p }, e.word, 'en'); if (hit) return hit; }
+        }
+        if (window.SBMorph && /^[a-z'-]+$/.test(k)) {
+          for (const b of window.SBMorph.bases(k)) { hit = ok(L.en.get(b), b, 'en'); if (hit) { hit.via = b; return hit; } }
+        }
+      } else {
+        const plain = k.replace(/[آأإ]/g, 'ا');                       // مآ / ما, إني / اني: the Qur'an and the Arabic books spell the same word with and without the madda or hamza
+        const alt = (plain !== k && L[l].get(plain)) || L[l].get(k.replace(/^(و|ال|وال|بال|فال|لل)/, '')) || L[l].get(k.replace(/(ونه|انو|ونو|ان|ې|ه|ے|یں|وں)$/, ''))
+          || (plain !== k && (L[l].get(plain.replace(/^(و|ال|وال|بال|فال|لل)/, '')) || L[l].get(plain.replace(/(ونه|انو|ونو|ان|ې|ه|ے|یں|وں)$/, ''))));
+        hit = ok(alt, k, l); if (hit) return hit;
+        if (!firstRec && alt) firstRec = alt;
+      }
     }
-    return '';
+    // an Urdu, Pashto or Arabic word that has an English meaning but none in the language asked for: go through the English meaning
+    // ("رکھتا" = keeps -> keep -> Pashto ساتل). Marked q = 'p' so the card shows it as derived (≈).
+    if (firstRec && firstRec.en && tgt !== 'en' && src !== 'en') {
+      const term = String(firstRec.en).replace(/\(.*?\)/g, '').split(/[,;/]/)[0].trim().replace(/^(to|the|a|an|-)\s+/i, '').replace(/-$/, '');
+      if (term && term.split(' ').length <= 3 && /^[A-Za-z][A-Za-z' -]*$/.test(term)) {
+        const ph = offlineFind(term, 'en', tgt);
+        if (ph) return { text: ph.text, q: 'p', via: term };
+      }
+    }
+    return null;
   }
+  function offlineLookup(text, src, tgt) { const h = offlineFind(text, src, tgt); return h ? h.text : ''; }
   window.SBOfflineLookup = offlineLookup;
+  window.SBOfflineFind = offlineFind;
 
-  // no internet and no stored translation: show a word-by-word meaning from the offline dictionary
+  // ── stored sentence translations (js/sent_data_N.js, filed by SBSentKey): the whole sentence, or each of its sentences ──
+  function sentenceFind(text, tgt) {
+    const K = window.SBSentKey, col = { ur: 1, ps: 2, ar: 3 }[tgt];
+    if (!K || !col) return null;
+    const one = s => {
+      const key = K.key(s); if (!key) return null;
+      let sh = null; try { sh = window['SB_SENT_' + K.shard(key)]; } catch (e) { sh = null; }
+      const v = sh && sh.d && sh.d[key]; if (!v) return null;
+      const p = v.split('\t'), q = (p[0] || '')[col - 1] || '';
+      return p[col] && q !== '-' ? { text: p[col], q } : null;
+    };
+    const whole = one(text);
+    if (whole) return whole;
+    const parts = K.split(text);
+    if (parts.length < 2) return null;
+    const got = parts.map(one);
+    if (got.some(g => !g)) return null;
+    return { text: got.map(g => g.text).join(' '), q: got.every(g => g.q === 'c') ? 'c' : 'm' };
+  }
+  window.SBSentenceFind = sentenceFind;
+
+  // no stored translation: show a word-by-word meaning from the offline dictionary (labelled as such)
+  const ARTICLES = /^(a|an|the)$/i;
   function glossOffline(text, src, tgt) {
     const words = text.split(/\s+/).filter(Boolean);
     const out = []; let hit = 0;
     words.forEach(w => {
       const plain = w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '');
       if (!plain) { out.push(w); return; }
+      if (src === 'en' && ARTICLES.test(plain)) { hit++; return; }              // Urdu, Pashto and Arabic have no a / an / the
       const m = offlineLookup(plain, src, tgt);
       if (m) { hit++; out.push(String(m).split(/[،,]/)[0].trim()); } else out.push(plain);
     });
@@ -169,10 +225,14 @@
     const clean = String(text || '').replace(/\s+/g, ' ').trim().slice(0, MAX_CHARS);
     if (!clean) return { text: '', source: 'none' };
     if (clean.split(' ').length <= 3) {
-      const off = offlineLookup(clean, src, tgt);
-      if (off) return { text: off, source: 'dictionary' };
+      const off = offlineFind(clean, src, tgt);
+      if (off) return { text: off.text, source: off.q === 'm' ? 'machine' : off.q === 'p' ? 'pivot' : 'dictionary', via: off.via };
     }
     if (clean.split(' ').length > 3 && isQuranic(clean)) return { text: clean, source: 'quran' };   // a whole ayat is never machine-translated; single words get their meaning
+    if (src === 'en') {
+      const st = sentenceFind(clean, tgt);                                    // stored on the device (js/sent_data_N.js): works with no internet
+      if (st) return { text: st.text, source: st.q === 'c' ? 'curated' : 'machine' };
+    }
     const key = src + '>' + tgt + ':' + clean;
     if (memCache.has(key)) return memCache.get(key);
     const persisted = store.get('c:' + key, null);
@@ -354,8 +414,11 @@
         if (!cell) return;
         if (!r.text) { cell.innerHTML = '<span class="ut-err">offline</span>'; return; }
         state.outs[l] = r.text;
-        cell.textContent = r.text;
-        cell.title = r.source === 'dictionary' ? 'Dictionary meaning' : 'Machine translation';
+        cell.textContent = (r.source === 'machine' || r.source === 'gloss' || r.source === 'pivot' ? '≈ ' : '') + r.text;
+        cell.title = r.source === 'dictionary' ? 'Dictionary meaning' + (r.via ? ' of "' + r.via + '"' : '') :
+          r.source === 'machine' ? 'Computer-made meaning; ask your teacher if unsure' :
+          r.source === 'pivot' ? 'Meaning taken through the English meaning "' + (r.via || '') + '"' :
+          r.source === 'book' ? 'Translation from your textbook' : 'Approximate word-by-word meaning from the offline dictionary';
         place(card, state.rect);
       });
     });
@@ -617,6 +680,9 @@
       return s._arP;
     }));
   }
+
+  // build the word table while the page is idle, so the first hover is instant (and, online, the lexicon file is kept by the service worker for offline use)
+  try { (window.requestIdleCallback || (f => setTimeout(f, 3000)))(() => { try { lexicon(); } catch (e) { /* the first hover builds it */ } }, { timeout: 8000 }); } catch (e) { /* no idle callback */ }
 
   window.SBTranslate = { translate, detectLang, isQuranic, speak, open: (text, tgt) => openCard(text, tgt, null), prepareSteps, languages: LANGS };
 })();

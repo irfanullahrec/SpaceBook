@@ -84,6 +84,15 @@ for (const s of subjects) {
   assets.forEach(a => { map.assets[a] = { bytes: assetSizes[a] }; });
   map.subjects[s.id] = { classId: s.classId, name: s.name, files: list, assets, bytes: list.reduce((n, src) => n + files[src].bytes, 0) + assets.reduce((n, a) => n + assetSizes[a], 0) };
 }
+// ---- the word and sentence meanings are used by every subject (hover on a word, click on a sentence) but are loaded only when a student
+// does that, so no subject's rendering above touches them: they are one package of their own, "Word and sentence meanings (all classes)"
+{
+  const dict = Object.keys(files).filter(src => /^js\/(?:lexicon_data|sent_data_\d+)\.js$/.test(src)).sort();
+  if (dict.length) {
+    dict.forEach(src => { map.files[src] = files[src]; });
+    map.subjects.meanings = { classId: 'meanings', name: 'Word and sentence meanings (all classes)', files: dict, assets: [], bytes: dict.reduce((n, src) => n + files[src].bytes, 0) };
+  }
+}
 map.files = Object.fromEntries(Object.keys(map.files).sort().map(k => [k, map.files[k]]));
 map.assets = Object.fromEntries(Object.keys(map.assets).sort().map(k => [k, map.assets[k]]));
 

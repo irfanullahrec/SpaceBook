@@ -28,9 +28,9 @@
     const text = from === 'en' ? enText : urText;
     if (!text || quranic(text) || !window.SBTranslate) { body.textContent = text || ''; return; }
     window.SBTranslate.translate(text, from, 'ar', true).then(r => {
-      body.textContent = r && r.text ? (r.source === 'gloss' ? '≈ ' + r.text + ' (word by word, offline)' : r.text)
-        : (navigator.onLine === false ? 'Not stored for offline use yet - connect once to save it.' : 'Translation not available');
-    }, () => { body.textContent = 'Translation not available'; });
+      body.textContent = r && r.text ? (r.source === 'gloss' ? '≈ ' + r.text + ' (word by word)' : r.source === 'machine' ? '≈ ' + r.text : r.text)
+        : 'No stored translation for this sentence yet.';
+    }, () => { body.textContent = 'No stored translation for this sentence yet.'; });
   }
   function scan() {
     document.querySelectorAll(PANELS).forEach(p => { if (!p.hidden) addArabic(p); });

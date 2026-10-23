@@ -9,7 +9,7 @@
  *    joining dots and colouring. Nothing in the book data changes. */
 (function () {
   'use strict';
-  const LIBS = {cls1: 'CLS1_BOOKS', cls2: 'CLS2_BOOKS', cls3: 'CLS3_BOOKS', cls4: 'CLS4_BOOKS', cls5: 'CLS5_BOOKS', cls6: 'CLS6_BOOKS', cls7: 'CLS7_BOOKS', cls8: 'CLS8_BOOKS', cls9: 'CLS9_BOOKS', cls10: 'CLS10_BOOKS', cls11: 'CLASS11_BOOKS'};
+  const LIBS = {cls1: 'CLS1_BOOKS', cls2: 'CLS2_BOOKS', cls3: 'CLS3_BOOKS', cls4: 'CLS4_BOOKS', cls5: 'CLS5_BOOKS', cls6: 'CLS6_BOOKS', cls7: 'CLS7_BOOKS', cls8: 'CLS8_BOOKS', cls9: 'CLS9_BOOKS', cls10: 'CLS10_BOOKS', cls11: 'CLASS11_BOOKS', cls12: 'CLS12_BOOKS'};
   const bookUnits = () => { try { const lib = window[LIBS[state.selectedClass]] || {}; const B = lib[state.activeSubject]; return B && B.units; } catch (e) { return null; } };
   const PALETTE = [['#29a3d6', '#1d8cc7', '#f6c04f', '#e8457f', '#f2fbff'], ['#f08a24', '#e36b12', '#ffe08a', '#d6336c', '#fff8ef'], ['#1f9d6b', '#178257', '#d9f2c4', '#c2185b', '#f3fbf6'], ['#7c3aed', '#6d28d9', '#ede9fe', '#db2777', '#faf7ff'], ['#0891b2', '#0e7490', '#cffafe', '#e11d48', '#f0fdff'], ['#dc2626', '#b91c1c', '#fee2e2', '#9333ea', '#fff7f7']];
   const themeFor = subj => { if (THEMES[subj]) return THEMES[subj]; let h = 0; for (const ch of String(subj)) h = (h * 31 + ch.charCodeAt(0)) >>> 0; const p = PALETTE[h % PALETTE.length]; return {frame: p[0], band: p[1], bar: p[2], pink: p[3], bg: p[4]}; };
@@ -35,6 +35,13 @@
   .c1-skin{--c1f:#29a3d6;--c1b:#1d8cc7;--c1y:#f6c04f;--c1p:#e8457f;--c1bg:#f2fbff;font-family:'Segoe UI','Arial Rounded MT Bold',Arial,sans-serif;font-size:1.06rem}
   .c1-sheet{position:relative;margin:.6rem 0 1.6rem;padding:1.1rem 1.2rem 2.4rem;border:10px solid var(--c1f);border-radius:22px;background:var(--c1bg);box-shadow:0 4px 0 rgba(0,0,0,.06),inset 0 0 0 3px #fff}
   .c1-skin .m6-page{margin:.2rem 0 .4rem;color:var(--c1b);font-size:.68rem}
+  .sb-pagesheet>.para-card,.sb-pagesheet>.math-topic-card,.sb-pagesheet>.sb-pg-card{border:0!important;box-shadow:none!important;background:none!important;margin:0 0 .8rem!important;padding:0!important}
+  .sb-pagesheet .math-badge{display:none!important}
+  .sb-pagesheet .math-accordion-body{display:block!important;border-top:0!important;margin-top:.3rem!important;padding-top:0!important}
+  .sb-pagesheet .math-acc-icon{display:none!important}
+  .sb-pagesheet .math-acc-header{pointer-events:none;cursor:default}
+  .sb-pgcard .math-accordion-body{padding-bottom:1.8rem}.sb-pgcard.open>.math-accordion-body{animation:sbpgslide .28s ease}@keyframes sbpgslide{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+  .sb-pagehead{font:800 .72rem system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#64748b;margin:0 0 .7rem;padding-bottom:.4rem;border-bottom:1px dashed #cbd5e1}
   .c1-pno{position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);min-width:38px;height:38px;padding:0 .4rem;border-radius:50%;background:#fff;border:3px solid var(--c1f);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1e293b}
   .c1-unit{display:flex;align-items:center;gap:.9rem;margin:.2rem 0 .9rem}
   .c1-unit-badge{background:linear-gradient(180deg,#7dd3fc,var(--c1f));color:#0f172a;border-radius:12px;padding:.35rem .8rem;font-weight:900;font-size:1.05rem;line-height:1.05;text-align:center;box-shadow:0 2px 0 rgba(0,0,0,.15)}
@@ -289,12 +296,84 @@
     });
   }
 
+  // ---------- page-wise grouping for the legacy topic renderers (Classes 9-12 sciences) ----------
+  // Their data is cut into topics, several of which can share one printed page. After a lesson list renders,
+  // consecutive topic cards that start on the same scan page are gathered into one page sheet headed by the
+  // printed page number(s); each topic keeps its own title as a sub-heading inside the page.
+  function pageInfo(t) {
+    const refs = (t.sourceReferences && t.sourceReferences.length) ? t.sourceReferences : (t.source ? [t.source] : []);
+    const r = refs[0] || {};
+    let pdf = r.pdfPage != null ? r.pdfPage : (t.sourcePdfPages && t.sourcePdfPages[0]);
+    if (pdf == null) return null;
+    let pr = [];
+    refs.forEach(x => { if (x.printedPage != null) pr.push(x.printedPage); (x.printedPages || []).forEach(n => pr.push(n)); });
+    (t.sourcePrintedPages || []).forEach(n => pr.push(n));
+    return {pdf, pr: pr.filter(n => typeof n === 'number' || /^\d+$/.test(String(n))).map(Number)};
+  }
+  function pageGroup() {
+    if (typeof getSubjectChapterList !== 'function' || typeof state === 'undefined') return;
+    document.querySelectorAll('.science-lesson-cards-list,#scienceLessonsList,#langParasGrid').forEach(list => {
+      if (list.dataset.sbpg) return;
+      let ch = null;
+      try { ch = (getSubjectChapterList(state.activeSubject, state.selectedClass) || [])[state.selectedSubjChapter || 0]; } catch (e) { ch = null; }
+      list.dataset.sbpg = '1';
+      if (!ch) return;
+      const kids = [...list.children].filter(k => k.matches('.para-card,.math-topic-card'));
+      if (!kids.length || [...list.children].length !== kids.length) return;
+      // pair each card with its section: same count = by position, otherwise by title in order
+      const key = t => String(t || '').replace(/[^A-Za-z0-9؀-ۿ]+/g, '').toLowerCase().slice(0, 28);
+      const cardTitle = c => { const h = c.querySelector('h3,h4,.para-card-header span:last-child'); return h ? key(ownText(h)) : ''; };
+      const pool = [ch.sections, ch.topics, ch.urduSections].filter(a => Array.isArray(a) && a.length);
+      let arr = pool.find(a => a.length === kids.length) || null, secOf = null;
+      if (arr) secOf = i => arr[i];
+      else {
+        const a = pool[0]; if (!a) return;
+        const map = []; let j = 0;
+        kids.forEach((c, i) => {
+          const ct = cardTitle(c); map[i] = null; if (!ct) return;
+          for (let k = j; k < a.length; k++) {
+            const st = key(a[k].title || a[k].name || a[k].heading || a[k].headingUrdu);
+            if (st && (st === ct || st.startsWith(ct) || ct.startsWith(st))) { map[i] = a[k]; j = k + 1; break; }
+          }
+        });
+        secOf = i => map[i];
+      }
+      const groups = []; let cur = null;
+      kids.forEach((card, i) => {
+        const p = pageInfo(secOf(i) || {});
+        if (p && cur && cur.pdf === p.pdf) { cur.cards.push(card); cur.pr.push(...p.pr); }
+        else { cur = {pdf: p ? p.pdf : null, cards: [card], pr: p ? p.pr.slice() : []}; groups.push(cur); }
+      });
+      if (!groups.some(g => g.pdf != null)) return;
+      const T = themeFor(state.activeSubject);
+      ['--c1f', '--c1bg'].forEach((k, i) => list.style.setProperty(k, i ? T.bg : T.frame));
+      groups.forEach(g => {
+        if (g.pdf == null) return;
+        const sheet = document.createElement('section'); sheet.className = 'c1-sheet sb-pagesheet';
+        const nums = [...new Set(g.pr)].sort((a, b) => a - b);
+        const label = nums.length ? (nums.length > 1 ? nums[0] + '–' + nums[nums.length - 1] : String(nums[0])) : '';
+        const titles = g.cards.map(c => { const h = c.querySelector('h3,h4,.para-card-header span:last-child'); return h ? ownText(h).replace(/\s+/g, ' ').trim() : ''; }).filter(Boolean);
+        // a collapsed page card: tab = page number + topic title(s); click slides the page sheet open
+        const card = document.createElement('div'); card.className = 'math-topic-card math-accordion-card sb-pgcard'; card.dataset.sbTp = '1';
+        const head = document.createElement('div'); head.className = 'math-acc-header'; head.setAttribute('onclick', 'toggleMathAccordion(this)');
+        head.innerHTML = '<div style="display:flex;align-items:center;gap:.75rem;min-width:0;"><span class="math-badge" style="background:#e0f2fe;color:#0369a1;"></span><h3 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;"></h3></div><span class="math-acc-icon">+</span>';
+        head.querySelector('.math-badge').textContent = label ? 'Page ' + label : 'Scan ' + g.pdf;
+        head.querySelector('h3').textContent = titles.slice(0, 2).join(' · ') + (titles.length > 2 ? ' …' : '');
+        const body = document.createElement('div'); body.className = 'math-accordion-body'; body.style.cssText = 'display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;';
+        g.cards[0].before(card); card.append(head, body); body.appendChild(sheet);
+        g.cards.forEach(c => sheet.appendChild(c));
+        if (label) { const n = document.createElement('div'); n.className = 'c1-pno'; n.textContent = label; sheet.appendChild(n); }
+      });
+    });
+  }
+
   function scan() {
     if (typeof state === 'undefined') return;
     addCss();
     document.querySelectorAll('.m5-root:not([data-c1]),.m6-root:not([data-c1]),.m7-root:not([data-c1]),.m8-root:not([data-c1])').forEach(skin);
     const area = document.getElementById('subjectTopicArea') || document.querySelector('.math-topic-area');
     if (area && !area.querySelector('[data-c1]')) generic(area);
+    try { pageGroup(); } catch (e) { /* never break the page */ }
   }
   const obs = new MutationObserver(() => { clearTimeout(scan.t); scan.t = setTimeout(scan, 30); });
   const start = () => { obs.observe(document.body, {childList: true, subtree: true}); scan(); document.addEventListener('click', () => setTimeout(() => { const area = document.getElementById('subjectTopicArea'); if (area && area.classList.contains('sb-generic')) generic(area); }, 60)); };

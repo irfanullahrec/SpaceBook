@@ -59,7 +59,7 @@ cls7-isl         ch:  7 matched:  7 CLS7_BOOKS.isl.units               slo:45 re
 cls7-quran       ch: 22 matched: 22 CLS7_BOOKS.quran.units             mcq:244 sq:244 lq:264 slo:153 read:37
 cls7-arabic      ch: 26 matched: 26 CLS7_BOOKS.arabic.units            ex:634 blank:1226 read:44 sq:2 lq:2
 cls7-drawing     ch:  5 matched:  5 CLS7_BOOKS.drawing.units           ex:203 lq:1 slo:22 read:85 match:2
-cls7-hpe         ch: 12 matched: 12 CLS7_BOOKS.hpe.units               mcq:141 sq:162 lq:104 ex:90 read:238 match:5
+cls7-hpe         ch: 12 matched: 12 CLS7_BOOKS.hpe.units               mcq:124 sq:50 lq:51 ex:90 slo:31 read:238 match:5
 cls8-eng         ch:  8 matched:  8 CLS8_BOOKS.eng.units               ex:508 slo:38 read:103 blank:61 match:30 mcq:28 sq:10
 cls8-urdu        ch: 25 matched: 25 CLS8_BOOKS.urdu.units              slo:530 ex:527 read:31 blank:9 mcq:2 lq:3 num:4 sq:1
 cls8-math        ch: 11 matched: 11 MATH_8_DATA                        ex:3337 mcq:20 slo:71 read:94 sq:190 num:97 lq:34 blank:12 match:42
@@ -69,14 +69,14 @@ cls8-hist        ch:  6 matched:  6 CLS8_BOOKS.hist.units              ex:66 sq:
 cls8-comp        ch:  6 matched:  6 CLS8_BOOKS.comp.units              mcq:72 sq:72 slo:73 read:7
 cls8-isl         ch: 26 matched: 26 CLS8_BOOKS.isl.units               slo:164 read:26 mcq:238 sq:206 ex:42 lq:152 blank:4
 cls8-quran       ch: 25 matched: 25 CLS8_BOOKS.quran.units             mcq:250 sq:250 lq:300 slo:40 read:25
-cls8-pashto      ch: 33 matched: 33 CLS8_BOOKS.pashto.units            slo:99 mcq:495 sq:396 lq:198 read:33
+cls8-pashto      ch: 41 matched: 41 CLS8_BOOKS.pashto.units            ex:618 slo:154 read:41 sq:170
 cls8-arabic      ch: 26 matched: 26 CLS8_BOOKS.arabic.units            ex:354 slo:75 read:26 blank:308 match:388
-cls8-drawing     ch:  6 matched:  6 CLS8_BOOKS.drawing.units           ex:4 slo:5 read:11
-cls8-hpe         ch:  9 matched:  9 CLS8_BOOKS.hpe.units               slo:44 mcq:135 sq:108 lq:27 read:18
-cls9-math        ch: 17 matched: 17 DATA.mathChapters                  num:464 mcq:70 sq:53 lq:25 read:65 slo:54
+cls8-drawing     ch:  6 matched:  6 CLS8_BOOKS.drawing.units           ex:39 blank:48 slo:28 read:26
+cls8-hpe         ch:  9 matched:  9 CLS8_BOOKS.hpe.units               ex:130 sq:48 lq:24 slo:31 read:36 blank:42 mcq:10
+cls9-math        ch: 17 matched: 16 CLS9_BOOKS.math.units              ex:1568 mcq:978 slo:128 read:50 tf:8 lq:8 num:2 sq:2
 cls9-phy         ch:  9 matched:  9 DATA.physChapters                  slo:84 mcq:326 sq:237 lq:115 num:131 read:297
-cls9-chem        ch:  8 matched:  8 DATA.chemChapters                  slo:112 mcq:367 sq:184 lq:87 num:50 read:49
-cls9-bio         ch: 10 matched: 10 BIO_DATA                           mcq:186 sq:106 lq:57 read:74
+cls9-chem        ch:  8 matched:  8 CLS9_BOOKS.chem.units              mcq:190 sq:16 ex:188 num:22 lq:20 slo:112 read:88
+cls9-bio         ch: 10 matched: 10 CLS9_BOOKS.bio.units               mcq:194 sq:18 ex:178 lq:18 slo:170 read:84 num:2
 cls9-eng         ch: 15 matched: 15 CLS9_BOOKS.eng.units               ex:1666 mcq:451 blank:53 slo:659 sq:150 lq:183 read:84 match:10
 cls9-urdu        ch: 19 matched: 18 DATA.urduChapters                  sq:326 blank:53 slo:64 mcq:378 lq:74 read:141
 cls9-isl         ch:  6 matched:  6 CLS9_BOOKS.isl.units               ex:186 slo:22 read:46 lq:40 blank:10
@@ -87,10 +87,10 @@ cls9-hpe         ch:  8 matched:  8 CLS9_BOOKS.hpe.units               sq:38 ex:
 cls9-drawing     ch:  4 matched:  4 CLS9_BOOKS.drawing.units           blank:44 ex:48 slo:28 read:30
 cls9-islopt      ch:  9 matched:  9 CLS10_BOOKS.islopt.units           lq:70 sq:140 ex:64 slo:11 read:48 blank:52 tf:42 mcq:14 match:2
 cls9-quran       ch: 24 matched: 24 CLS9_BOOKS.quran.units             mcq:240 sq:240 lq:150 slo:176 read:37
-cls10-math       ch: 13 matched: 13 MATH_10_DATA                       num:452 slo:63 read:117
-cls10-phy        ch:  9 matched:  9 DATA.phys10Chapters                slo:79 mcq:106 num:50 sq:48 lq:26 read:39
+cls10-math       ch: 13 matched: 13 CLS10_BOOKS.math.units             ex:1068 blank:184 slo:93 read:55 lq:16 num:14 sq:2
+cls10-phy        ch:  9 matched:  9 CLS10_BOOKS.phys.units             slo:117 sq:113 lq:130 num:80 read:95 mcq:145 ex:114 match:4
 cls10-chem       ch:  8 matched:  8 CLS10_BOOKS.chem.units             ex:169 mcq:161 sq:162 lq:84 slo:70 read:94 num:1
-cls10-bio        ch:  9 matched:  9 DATA.bio10Chapters                 slo:318 mcq:155 sq:46 lq:27 read:67
+cls10-bio        ch:  9 matched:  9 CLS10_BOOKS.bio.units              mcq:188 sq:20 ex:374 lq:30 slo:159 read:65 match:12 num:2
 cls10-eng        ch: 15 matched: 15 DATA.eng10Chapters                 mcq:746 slo:208 sq:290 lq:158 read:122
 cls10-pakstudy   ch:  4 matched:  4 CLS10_BOOKS.pakstudy.units         mcq:78 sq:62 lq:40 slo:48 read:53
 cls10-isl        ch:  6 matched:  6 CLS9_BOOKS.isl.units               ex:186 slo:22 read:46 lq:40 blank:10
@@ -115,7 +115,7 @@ cls11-urdu       ch: 35 matched: 35 CLASS11_BOOKS.urdu.data            read:155 
 cls11-mq         ch: 23 matched: 23 CLASS11_BOOKS.mq.data              read:143 sq:147 lq:63
 cls11-hpe        ch: 10 matched: 10 CLASS11_BOOKS.hpe.data             read:84 lq:20
 cls11-isl        ch:  7 matched:  7 CLASS11_BOOKS.isl.data             read:128
-cls12-math       ch: 12 matched: 12 DATA.math12Units                   mcq:304 sq:70 lq:333 read:72 num:558
+cls12-math       ch: 12 matched: 12 CLS12_BOOKS.math.units             slo:108 tf:3 read:120 ex:2308 num:1055 mcq:270
 cls12-phy        ch: 10 matched: 10 PHYS_12_DATA                       num:1564 mcq:146 sq:106 lq:97 slo:29 read:249
 cls12-chem       ch: 12 matched: 12 CHEM_12_DATA                       num:2050 mcq:187 sq:129 lq:79 read:193
 cls12-stat       ch:  9 matched:  9 STAT_12_DATA                       num:3236 mcq:99 sq:9 lq:237 slo:181 read:192

@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VR view</title>
+<link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body style="margin:8px;font-family:system-ui">
+<div id="h" data-sbt-host style="min-height:40px"></div>
+<script src="../../assets/vendor/katex/katex.min.js"></script>
+<script>document.write('<script src="../../js/vr_viz.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_engine.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_u2.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_graphs.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_geometry.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_trig.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_area.js?'+Date.now()+'"><\/script>')</script>
+<script>
+const q = new URLSearchParams(location.search), h = document.getElementById('h');
+h.dataset.vr = q.get('id') || 'comp3c';
+setTimeout(() => window.dispatchEvent(new Event('scroll')), 50);
+setTimeout(() => { const t = h._t; if (!t) return; t.speed = q.get('speed') || 'fast'; t.el.querySelector('[data-act=speed]').value = t.speed; t.base = t.speed; t.go(+(q.get('step') || 0)); window.__ready = 1; }, 600);
+</script></body></html>

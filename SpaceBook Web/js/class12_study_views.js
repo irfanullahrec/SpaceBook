@@ -98,7 +98,7 @@
     const hasAnswer=text||steps.length||choice.correct!==null;
     return `${item.answerOrigin||item.solutionOrigin?`<p class="class12-study-note">${safe(item.answerOrigin||item.solutionOrigin)}</p>`:''}${item.sourceClarification?`<p class="class12-study-note">${safe(item.sourceClarification)}</p>`:''}
       ${choice.correct!==null?`<p><strong>Correct answer: ${String.fromCharCode(65+choice.correct)}. ${safe(choice.options[choice.correct])}</strong></p>`:''}
-      ${steps.length?`<ol>${steps.map(step=>{const s=typeof step==='string'?step:step.text||'';return /\n/.test(s)?`<li><pre class="class12-answer-code"><code>${safe(s)}</code></pre></li>`:`<li>${safe(s)}</li>`;}).join('')}</ol>`:text?`<div class="class12-answer-text">${text}</div>`:''}
+      ${steps.length?((()=>{const st=steps.map(step=>typeof step==='string'?step:step.text||'');return window.SBVR&&window.SBVR.autoHtml&&!st.some(s=>/\n/.test(s))?window.SBVR.autoHtml({steps:st,question:item.q,solutionStatus:item.solutionStatus}):'';})())||`<ol>${steps.map(step=>{const s=typeof step==='string'?step:step.text||'';return /\n/.test(s)?`<li><pre class="class12-answer-code"><code>${safe(s)}</code></pre></li>`:`<li>${safe(s)}</li>`;}).join('')}</ol>`:text?`<div class="class12-answer-text">${text}</div>`:''}
       ${steps.length&&final?`<p><strong>Answer:</strong> ${final}</p>`:''}
       ${translation(item,true)}
       ${!hasAnswer?'<p class="class12-study-note" data-answer-pending="true">The answer to this saved question still needs to be completed.</p>':''}`;

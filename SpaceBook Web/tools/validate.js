@@ -438,7 +438,7 @@ console.log('--- offline ---');
     check('every book file in the offline map exists (' + Object.keys(map.files).length + ')', badFiles.length === 0, badFiles.slice(0, 5).join(','));
     const badAssets = Object.keys(map.assets).filter(f => !exists(f));
     check('every image in the offline map exists (' + Object.keys(map.assets).length + ')', badAssets.length === 0, badAssets.slice(0, 5).join(','));
-    check('every subject of the registry is in the offline map', Object.keys(map.subjects).length === Object.values(sb.DATA.subjects).reduce((n, l) => n + l.length, 0), Object.keys(map.subjects).length + ' vs registry');
+    check('every subject of the registry is in the offline map', Object.keys(map.subjects).filter(id => id !== 'meanings').length === Object.values(sb.DATA.subjects).reduce((n, l) => n + l.length, 0), Object.keys(map.subjects).filter(id => id !== 'meanings').length + ' vs registry');
   });
   safe('no third-party request at start-up (fonts, scripts, styles)', () => {
     const html = read('index.html');

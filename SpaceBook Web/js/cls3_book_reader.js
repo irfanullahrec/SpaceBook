@@ -53,7 +53,7 @@
     let html = '';
     if (i === 0 && B.book.frontMatter.length) html += card('c3-front', 'Book', 'Cover, credits and contents', root(blocks(B.book.frontMatter)), false);
     if (!ch.sections.length) return html + pending(B, ch);
-    html += ch.sections.map((sec, k) => card(`c3-${i}-${sec.id}`, badge(sec), title(sec), root(blocks(sec.blocks, {showAnswers: true})), true)).join('');
+    html += R.pageCards(ch.sections, {id: sec => `c3-${i}-${sec.id}`, badge, title, root, blocks, card});
     if (B.book.backMatter.length && i === B.units.length - 1) html += card('c3-back', 'Book', 'Answers, glossary and end pages', root(blocks(B.book.backMatter)), false);
     return html;
   }

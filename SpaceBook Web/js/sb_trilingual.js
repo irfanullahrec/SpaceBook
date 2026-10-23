@@ -3,7 +3,7 @@
  *     onto the sentence, heading, cell or equation they belong to.
  *  2. Clicking a sentence opens a drawer just below it with its meaning in English, اردو and پښتو, each on
  *     its own line (book translation first; a missing language comes from SBTranslate).
- *  3. Topic cards inside a lesson start collapsed (click the header to open) and each has its own ⛶ Full screen.
+ *  3. Topic cards inside a lesson start collapsed (click the header to open).
  * Loaded after app.js, structure_harmonizer.js and universal_translate.js; it only post-processes rendered HTML. */
 (function () {
   'use strict';
@@ -38,8 +38,14 @@
       else if (source && window.SBTranslate) {
         t.textContent = '…';
         window.SBTranslate.translate(source, from, l, true).then(r => {
-          t.textContent = r && r.text ? (r.source === 'gloss' ? '≈ ' + r.text + ' (word by word, offline)' : r.text) : (navigator.onLine === false ? 'Not stored for offline use yet - connect once to save it.' : 'Translation not available');
-        }, () => { t.textContent = 'Translation not available'; });
+          const approx = r && (r.source === 'gloss' || r.source === 'machine');
+          t.textContent = r && r.text ? (r.source === 'gloss' ? '≈ ' + r.text + ' (word by word)' : r.source === 'machine' ? '≈ ' + r.text : r.text) : 'No stored translation for this sentence yet.';
+          if (approx && !box.querySelector('.sb-tri-note')) {              // say once, under the lines, what ≈ means
+            const n = document.createElement('div'); n.className = 'sb-tri-note';
+            n.textContent = '≈ = computer translation or word-by-word meaning. Check it with your teacher.';
+            box.appendChild(n);
+          }
+        }, () => { t.textContent = 'No stored translation for this sentence yet.'; });
       } else t.textContent = 'Translation not available';
       const say = document.createElement('button');
       say.type = 'button'; say.className = 'sb-tri-say'; say.title = 'Listen'; say.textContent = '🔊';
@@ -181,7 +187,7 @@
     if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('sb-tri-target')) { e.preventDefault(); toggleTarget(e.target); }
   });
 
-  // ---------- topic cards: collapsed, each with its own full screen ----------
+  // ---------- topic cards: collapsed; fullscreen belongs to the Unit header ----------
   const openedTopics = new Set();
   const topicKey = c => norm((c.firstElementChild || c).textContent).slice(0, 160);
   function fsToggle(card) {
@@ -206,11 +212,10 @@
     if (!head || !card.children[1] || !(head.matches('.para-card-header') || head.querySelector('.math-badge, h3, h4'))) return;
     if (card.parentElement && card.parentElement.closest('[data-sb-topic]')) return;   // only the outer topic card
     card.dataset.sbTopic = '1';
-    // accordion cards already open/close themselves (and start closed via sb_global_ui.js): add only full screen
+    // Accordion cards already open/close themselves; keep their existing controls.
     const ownToggle = card.matches('.math-accordion-card, .slo-accordion-card, .slo-question-accordion') || head.hasAttribute('onclick');
     const tools = document.createElement('span'); tools.className = 'sb-topic-tools';
-    tools.innerHTML = '<button type="button" class="sb-topic-fs" title="Full screen" aria-label="Full screen">⛶</button>' + (ownToggle ? '' : '<span class="sb-topic-chev">▸</span>');
-    tools.firstChild.addEventListener('click', e => { e.stopPropagation(); fsToggle(card); });
+    tools.innerHTML = ownToggle ? '' : '<span class="sb-topic-chev">▸</span>';
     const icon = head.querySelector(':scope > .math-acc-icon, :scope > .slo-acc-icon');
     if (icon) head.insertBefore(tools, icon); else head.appendChild(tools);
     if (ownToggle) { card.dataset.sbTopic = 'own'; return; }
@@ -352,6 +357,7 @@
   .sb-tri-drawer[hidden]{display:none}
   .sb-tri-line{display:flex;align-items:baseline;gap:.5rem;line-height:1.9;padding:.1rem 0}
   .sb-tri-line+.sb-tri-line{border-top:1px dashed #bbf7d0}
+  .sb-tri-note{margin-top:.3rem;font-size:.78rem;color:#64748b}
   .sb-tri-line[dir="rtl"] .sb-tri-text{font-family:"Jameel Noori Nastaleeq","Noto Nastaliq Urdu","Noto Naskh Arabic",serif;font-size:1.12em}
   .sb-tri-lang{flex:0 0 auto;font:700 .7rem system-ui,sans-serif;color:#166534;background:#dcfce7;border-radius:4px;padding:.05rem .4rem}
   .sb-tri-text{flex:1 1 auto}

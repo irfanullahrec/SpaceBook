@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><title>VR smoke</title>
+<link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body>
+<div id="out" style="font:13px monospace;white-space:pre"></div><div id="hosts"></div>
+<script>
+// instant mode: reduced motion => no waits, no flights; every op still resolves its targets
+const mm = window.matchMedia.bind(window);
+window.matchMedia = q => /reduced-motion/.test(q) ? { matches: true, addListener(){}, removeListener(){} } : mm(q);
+window.__errs = [];
+const ce = console.error; console.error = (...a) => { window.__errs.push(a.map(x => x && x.message || String(x)).join(' ')); ce(...a); };
+</script>
+<script src="../../assets/vendor/katex/katex.min.js"></script>
+<script>document.write('<script src="../../js/vr_viz.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_engine.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_u2.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_graphs.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_geometry.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_trig.js?'+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="../../js/vr_specs_math12_area.js?'+Date.now()+'"><\/script>')</script>
+<script>
+(async () => {
+  const out = [];
+  for (const id of Object.keys(SBVR.specs)) {
+    const h = document.createElement('div'); h.dataset.sbtHost = ''; h.dataset.vr = id; h.style.minHeight = '40px'; document.getElementById('hosts').appendChild(h);
+    h.scrollIntoView(); window.dispatchEvent(new Event('scroll'));
+    await new Promise(r => setTimeout(r, 400));
+    const t = h._t; if (!t) { out.push(id + ': NOT MOUNTED'); continue; }
+    const n = SBVR.specs[id].steps.length; window.__errs.length = 0;
+    const per = [];
+    for (let k = 0; k < n; k++) {
+      t.go(k); await new Promise(r => setTimeout(r, 120));
+      const rows = [...t.box.querySelectorAll('.sbt-row')];
+      const hid = rows.filter(r => r.classList.contains('hid')).length;
+      per.push(k + ':' + rows.length + 'r/' + hid + 'h');
+    }
+    // forward replay of the last step re-checks go() after others
+    out.push(id + ' steps=' + n + ' errors=' + window.__errs.length + (window.__errs.length ? ' -> ' + window.__errs.slice(0, 4).join(' | ') : '') + '\n   ' + per.join(' '));
+  }
+  document.getElementById('out').textContent = out.join('\n');
+  window.__done = out;
+})();
+</script></body></html>

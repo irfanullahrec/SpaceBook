@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VR auto view</title>
+<link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body style="margin:8px;font-family:system-ui">
+<!-- ?set=math10&n=165&step=2&dark=1&speed=fast : the n-th automatic spec of a data set (same numbering as smoke_auto.html) -->
+<div id="h" data-sbt-host style="min-height:40px"></div>
+<script src="../../assets/vendor/katex/katex.min.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+if (q.get('dark')) { document.documentElement.dataset.theme = 'dark'; document.body.style.background = '#020617'; }
+const SETS = { math10: ['math_10_data.js', 'MATH_10_DATA'], math12: ['math_12_data.js', 'MATH_12_DATA'], math9: ['math_data.js', 'MATH_DATA'], m11: ['math_11_solutions.js', 'MATH_11_SOLUTIONS'], m5: ['math_5_solutions.js', 'MATH_5_SOLUTIONS'], m6: ['math_6_solutions.js', 'MATH_6_SOLUTIONS'], m8: ['math_8_solutions.js', 'MATH_8_SOLUTIONS'], c1: ['math_1_data.js', 'MATH_1_DATA'], c2: ['math_2_data.js', 'MATH_2_DATA'], c3: ['math_3_data.js', 'MATH_3_DATA'] };
+const set = SETS[q.get('set') || 'math10'];
+['vr_viz', 'vr_engine', 'vr_auto', 'vr_arith', set[0].replace('.js', '')].forEach(f => document.write('<script src="../../js/' + f + '.js?' + Date.now() + '"><\/script>'));
+</script>
+<script>
+window.addEventListener('load', () => {
+  const items = [], seen = new Set();
+  const walk = o => {
+    if (!o || typeof o !== 'object' || seen.has(o)) return; seen.add(o);
+    if (Array.isArray(o)) return o.forEach(walk);
+    if (Array.isArray(o.steps) && o.steps.length && !/^partial/.test(o.solutionStatus || '')) {
+      if (o.steps.every(s => typeof s === 'string')) items.push(o.steps);
+      else if (o.steps.every(s => s && typeof s === 'object' && typeof s.en === 'string')) items.push(o.steps.map(s => ({ text: s.en, m: s.m || '' })));
+    }
+    Object.keys(o).forEach(k => walk(o[k]));
+  };
+  walk((0, eval)(set[1]));
+  const n = +(q.get('n') || 0), h = document.getElementById('h');
+  const r = SBVR.autoSpec(items[n]); window.__spec = r.spec;
+  if (!r.spec) { h.textContent = 'no spec for item ' + n; return; }
+  SBVR.specs[r.spec.id] = r.spec; h.dataset.vr = r.spec.id;
+  setTimeout(() => window.dispatchEvent(new Event('scroll')), 50);
+  setTimeout(() => { const t = h._t; if (!t) return; t.speed = q.get('speed') || 'fast'; t.el.querySelector('[data-act=speed]').value = t.speed; t.base = t.speed; t.go(+(q.get('step') || 0)); window.__ready = 1; }, 600);
+});
+</script></body></html>

@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VR pack</title>
+<link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body style="margin:8px;font-family:system-ui">
+<div id="h" data-sbt-host style="min-height:40px"></div>
+<script src="../../assets/vendor/katex/katex.min.js"></script>
+<script>
+const FILES = ['vr_viz.js', 'vr_engine.js', 'vr_auto.js', 'sol_sets.js', 'sol_rel.js', 'sol_m10_u5_sets.js', 'sol_m10_u5_rel.js', 'sol_stats.js', 'sol_m10_u6.js', 'sol_m10_u7.js', 'sol_m10_u7b.js', 'sol_geo.js', 'sol_m10_u8_9.js', 'sol_m10_u10_11.js', 'sol_m10_u12.js', 'sol_geocons.js', 'sol_m10_u13.js', 'sol_m9_alg.js', 'sol_m9_fac.js', 'sol_m9_misc.js', 'sol_m9_graph.js', 'sol_m9_geo.js', 'sol_m12_flag.js', 'sol_m12_hand.js'].concat((new URLSearchParams(location.search).get('files') || '').split(',').filter(Boolean));
+FILES.forEach(f => document.write('<script src="../../js/' + f + '?' + Date.now() + '"><\/script>'));
+</script>
+<script>
+const q = new URLSearchParams(location.search);
+window.addEventListener('load', () => {
+  const key = q.get('q') || '', packs = SBVR.sol.all();
+  const pk = packs.find(p => p.q.indexOf(key) >= 0) || packs[+q.get('i') || 0];
+  const r = SBVR.autoSpec(pk.steps, { q: 'Q', given: pk.q.slice(0, 80), question: pk.q, board: pk.board, maxSteps: 80 });
+  SBVR.specs[r.spec.id] = r.spec; const h = document.getElementById('h'); h.dataset.vr = r.spec.id;
+  setTimeout(() => window.dispatchEvent(new Event('scroll')), 50);
+  setTimeout(() => { const t = h._t; if (!t) return; t.speed = q.get('speed') || 'fast'; t.base = t.speed; const sel = t.el.querySelector('[data-act=speed]'); sel.value = t.speed; t.go(+(q.get('step') || 0)); window.__ready = r.spec.steps.length; }, 700);
+});
+</script></body></html>
