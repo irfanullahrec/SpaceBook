@@ -29,7 +29,7 @@ function inputsHash() {
   for (const f of man.files) { h.push(f.src + ':' + sha(lf(f.src))); for (const a of (f.also || []).concat(f.after || [])) h.push(a.src + ':' + sha(lf(a.src))); }
   fs.readdirSync(SRC).forEach(f => h.push('src/' + f + ':' + sha(lf('tools/fills/src/' + f))));
   for (const f of ['tools/fills/build_fills.js', 'tools/fills/svg.js', 'js/math6_reader.js']) h.push(f + ':' + sha(lf(f)));
-  return sha(h.sort().join('\n'));
+  return sha(h.filter(s => !s.startsWith('js/fills_data.js:')).sort().join('\n'));   // the manifest lists this very file: it is not an input of itself
 }
 if (args.includes('--check')) {              // fast: the file carries the hash of what it was made from, no book is loaded
   const have = fs.existsSync(OUT) ? lf('js/fills_data.js') : '';

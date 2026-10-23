@@ -24,7 +24,7 @@ function inputsHash() {
   const man = JSON.parse(lf('content/lazy_manifest.json')), h = [];
   for (const f of man.files) { h.push(f.src + ':' + f.sha256); for (const a of (f.also || []).concat(f.after || [])) h.push(a.src + ':' + a.sha256); }
   for (const f of ['content/app_catalog.json', 'tools/grammar/topics.js', 'tools/grammar/build_grammar.js', 'tools/tests/extract_leaves.js']) h.push(f + ':' + sha(lf(f)));
-  return sha(h.sort().join('\n'));
+  return sha(h.filter(s => !s.startsWith('js/fills_data.js:')).sort().join('\n'));   // fills_data.js is made after the manifest it is listed in; nothing here depends on it
 }
 if (args.includes('--check')) {
   const f = path.join(OUT, 'index.json');

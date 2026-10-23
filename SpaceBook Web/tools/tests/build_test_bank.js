@@ -24,7 +24,7 @@ function inputsHash() {
   const man = JSON.parse(lf('content/lazy_manifest.json')), h = [];
   for (const f of man.files) { h.push(f.src + ':' + f.sha256); for (const a of (f.also || []).concat(f.after || [])) h.push(a.src + ':' + a.sha256); }
   for (const f of ['js/answers_extra.js', 'js/math6_reader.js', 'js/sb_mcq.js', 'content/app_catalog.json', 'js/test_prep_bank.js', 'tools/tests/build_test_bank.js', 'tools/tests/extract_leaves.js']) h.push(f + ':' + sha(lf(f)));
-  return sha(h.sort().join('\n'));
+  return sha(h.filter(s => !s.startsWith('js/fills_data.js:')).sort().join('\n'));   // fills_data.js is made after the manifest it is listed in; nothing here depends on it
 }
 if (args.includes('--check')) {          // fast: the files carry the hash of what they were made from, no book is loaded
   const ixFile = path.join(OUT, 'index.json');
