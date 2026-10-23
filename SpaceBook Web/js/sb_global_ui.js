@@ -108,11 +108,12 @@
   const railPref = () => { try { return localStorage.getItem(RAIL_KEY) === '1'; } catch (e) { return false; } };
   const railOn = () => !document.documentElement.classList.contains('sbapp') && !!(window.SBSpread6 && window.SBSpread6.look && window.SBSpread6.look());
   function railLabel(host, btn) {
+    // only write what changed: this runs from the page-wide MutationObserver below, and a write that changes nothing would still wake it again
     const open = host.classList.contains('sb-rail-open');
-    btn.textContent = open ? '«' : '»';
-    btn.title = open ? 'Hide the chapter names' : 'Show the chapter names';
-    btn.setAttribute('aria-label', btn.title);
-    btn.setAttribute('aria-expanded', String(open));
+    const text = open ? '«' : '»', title = open ? 'Hide the chapter names' : 'Show the chapter names';
+    if (btn.textContent !== text) btn.textContent = text;
+    if (btn.title !== title) { btn.title = title; btn.setAttribute('aria-label', title); }
+    if (btn.getAttribute('aria-expanded') !== String(open)) btn.setAttribute('aria-expanded', String(open));
   }
   function ensureRail() {
     document.querySelectorAll('.math-unified-view.sb-fs-host').forEach(host => {

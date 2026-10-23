@@ -281,7 +281,8 @@
     if (!fsOn() || i < 0) { nav.hidden = true; return; }
     nav.hidden = false;
     const lb = ws[i].dataset.label || '';
-    nav.querySelector('span').textContent = lb ? (lb.indexOf('–') > 0 ? 'Pages ' : 'Page ') + lb : '';
+    const text = lb ? (lb.indexOf('–') > 0 ? 'Pages ' : 'Page ') + lb : '', span = nav.querySelector('span');
+    if (span.textContent !== text) span.textContent = text;       // every 300 ms: an unchanged write would still wake every observer of the page
     nav.querySelector('.bk-prev').disabled = i === 0;
     nav.querySelector('.bk-next').disabled = i === ws.length - 1;
   }

@@ -58,6 +58,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('wide: the workspace almost touches the screen sides', f.host && f.host.l <= 6 && f.host.w >= 1366 - 12, f.host);
   check('wide: the Board SLOs / Exercise bar is on the lesson pages', f.bars >= 3, f.bars);
   check('wide: the rail has an expand button', f.railBtn === true);
+  // nobody touches the page: it must not keep redrawing itself (formula glyphs were marked and unmarked on every scan, the page counter was rewritten every 300 ms)
+  const idle = await page.evaluate(() => new Promise(res => { let c = 0; const mo = new MutationObserver(m => { c += m.length; }); mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true }); setTimeout(() => { mo.disconnect(); res(c); }, 2500); }));
+  check('wide: the open workspace is quiet while nobody touches it (no endless redrawing)', idle < 40, idle);
 
   await page.click('.sb-rail-btn'); await sleep(600);
   f = await facts(page);
