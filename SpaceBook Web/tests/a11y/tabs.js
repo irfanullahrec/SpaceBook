@@ -129,9 +129,10 @@ const check = (name, ok, extra) => { if (ok) passed++; else { failed++; console.
   tabKey();
   check('the first Tab press makes every subject card a button in the Tab order', cards.every(c => c.getAttribute('role') === 'button' && c.tabIndex === 0));
   let opened = null; const realOpenSubject = w.openSubject; w.openSubject = (a, b) => { opened = a + '/' + b; };
-  cards[1].focus(); send(cards[1], 'Enter');
+  // js/sb_loading.js paints its loading overlay first and runs the card's handler a frame later: wait for it
+  cards[1].focus(); send(cards[1], 'Enter'); await app.settle();
   check('Enter on a card opens that subject', opened && /^cls9\//.test(opened) && opened === (cards[1].getAttribute('onclick').match(/openSubject\('([^']+)','([^']+)'\)/) || []).slice(1, 3).join('/'), String(opened));
-  opened = null; send(cards[2], ' ');
+  opened = null; send(cards[2], ' '); await app.settle();
   check('Space does the same', !!opened);
   w.openSubject = realOpenSubject;
   const brand = d.querySelector('.header-brand');

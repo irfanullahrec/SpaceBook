@@ -156,7 +156,9 @@
   function sentenceWhole(rec, tag, cls) {
     tag = tag || 'p';
     if (!rec.ur) return `<${tag} class="${cls || ''}"${primaryAttrs()}>${inline(rec.en, true)}</${tag}>`;
-    return `<${tag} class="m6-s ${cls || ''}"${primaryAttrs()} role="button" tabindex="0" aria-expanded="false" onclick="m6Toggle(this,event)" onkeydown="if(event.key==='Enter'||event.key===' '){m6Toggle(this,event)}">${inline(rec.en, true)}</${tag}>${translations(rec)}`;
+    // A sentence holds word buttons (m6-w) and a Listen button, and a button may not hold controls: so the sentence has no role, like the
+    // sentences of the Class 9 renderer (js/core/a11y.js). It stays one Tab stop; Enter or Space opens its translation.
+    return `<${tag} class="m6-s ${cls || ''}"${primaryAttrs()} tabindex="0" onclick="m6Toggle(this,event)" onkeydown="if(event.key==='Enter'||event.key===' '){m6Toggle(this,event)}">${inline(rec.en, true)}</${tag}>${translations(rec)}`;
   }
 
   window.m6Toggle = function (el, event) {
@@ -164,9 +166,7 @@
     if (event && event.type === 'keydown') event.preventDefault();
     const panel = el.nextElementSibling;
     if (!panel || !panel.classList.contains('m6-tr')) return;
-    const open = panel.hidden;
-    panel.hidden = !open;
-    el.setAttribute('aria-expanded', String(open));
+    panel.hidden = !panel.hidden;
   };
   window.m6Word = function (el, event) {
     event.preventDefault(); event.stopPropagation();
@@ -273,7 +273,7 @@
         case 'h': return heading(b);
         case 'p': return sentence(b, 'p');
         case 'm': return `<p class="m6-m">${inline(b.en, false)}</p>`;
-        case 'eq': return b.ur ? `<div class="m6-eq m6-s" role="button" tabindex="0" aria-expanded="false" onclick="m6Toggle(this,event)">${inline('$$' + b.tex + '$$', false)}</div>${translations(b)}` : `<div class="m6-eq">${inline('$$' + b.tex + '$$', false)}</div>`;
+        case 'eq': return b.ur ? `<div class="m6-eq m6-s" tabindex="0" onclick="m6Toggle(this,event)" onkeydown="if(event.key==='Enter'||event.key===' '){m6Toggle(this,event)}">${inline('$$' + b.tex + '$$', false)}</div>${translations(b)}` : `<div class="m6-eq">${inline('$$' + b.tex + '$$', false)}</div>`;
         case 'ul': return `<ul class="m6-ul">${b.items.map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul>`;
         case 'box': {
           const label = b.title ? b.title : (BOX_LABEL[b.kind] ? {en: BOX_LABEL[b.kind]} : null);
