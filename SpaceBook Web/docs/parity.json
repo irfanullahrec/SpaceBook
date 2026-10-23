@@ -145,6 +145,15 @@
    "data": "the books' solution files (nothing is stored)"
   },
   {
+   "id": "read.fills",
+   "area": "Reading",
+   "name": "\"Fill the table\" and \"Show the work\": the answers for the tables to complete and the work of the projects and activities",
+   "status": "same",
+   "web": "js/sb_fill.js + js/fills_data.js, buttons drawn by js/math6_reader.js next to a table with empty cells or a project box",
+   "app": "the same renderer inside the page (bundled copy of the site); no native screen",
+   "data": "tools/fills/src/*.json -> js/fills_data.js (keyed by a hash of the book and the table text, checked against the book data at build time); nothing stored per student"
+  },
+  {
    "id": "read.dark",
    "area": "Reading the books",
    "name": "Dark mode",
@@ -266,6 +275,24 @@
    "data": "book data of the class; nothing stored on the server"
   },
   {
+   "id": "tools.createtest",
+   "area": "Study tools",
+   "name": "Create Test: a test from a class, subjects, chapters or one topic (MCQs, true or false, fill in the blanks, calculations, grammar and vocabulary, short, long, activities); take it, print it or save it",
+   "status": "same",
+   "web": "sidebar and header tab > Create Test (js/sb_create_test.js)",
+   "app": "Practice tab > Create Test: the same page in the WebView; print goes to the phone print dialog (also saves a PDF)",
+   "data": "content/testbank/ (tools/tests/build_test_bank.js): the books' own questions with their answers, bundled in the app; saved tests and results stay on the device (localStorage sbct:v1, no server table yet)"
+  },
+  {
+   "id": "tools.ask",
+   "area": "Study tools",
+   "name": "Ask SpaceBook: an offline tutor that answers from the books of Classes 1 to 12 (definitions, the books' own answers, word meanings, passages, chapter links)",
+   "status": "same",
+   "web": "sidebar and header tab > Ask (js/sb_tutor.js)",
+   "app": "Practice tab > Ask SpaceBook: the same page in the WebView",
+   "data": "content/assistant/ (passages, tools/assistant/build_assistant.js), content/testbank/, content/search/ (Class 11) and the lexicon, all bundled in the app; nothing is sent anywhere; the chat history stays on the device"
+  },
+  {
    "id": "tools.practicehub",
    "area": "Tools",
    "name": "The Practice entry: Tests Preps, Papers, Games and Study Plan on one screen",
@@ -319,6 +346,15 @@
    "web": "js/word_stats.js",
    "app": "the same tab inside each subject; Home > Project Stats / My Vocabulary read the same numbers",
    "data": "js/word_stats_*.js (generated); marked words are user_items kind word"
+  },
+  {
+   "id": "stats.grammar",
+   "area": "Stats and coins",
+   "name": "Grammar Stats: the grammar of the English, Urdu, Pashto and Arabic books, from easy to hard, with lessons and practice",
+   "status": "same",
+   "web": "Home > Project Stats card and sidebar > Grammar Stats (js/sb_grammar.js)",
+   "app": "Home > Project Stats: a native card with the numbers (GrammarSummary) that opens the website's Grammar Stats page on that language",
+   "data": "content/grammar/ (tools/grammar/build_grammar.js), bundled in the app"
   },
   {
    "id": "stats.home",

@@ -1,0 +1,254 @@
+{
+  "cls": 10,
+  "key": "phys",
+  "tables": [],
+  "work": [
+    {
+      "unit": 12,
+      "n": 0,
+      "starts": "beam of light to enter a tank of water",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "What you see: when the beam hits the surface of the water from inside at a small angle of incidence, part of it comes out into the air and part is reflected. As the angle of incidence increases, the part that comes out bends further away from the normal until it just skims the surface. At an angle larger than the critical angle (about 48.6° for water), none of it comes out: all the light is reflected back into the water."
+            },
+            {
+              "en": "Why: light passes from a denser medium (water) to a rarer one (air) and bends away from the normal. At the critical angle the refracted ray travels along the surface (angle of refraction 90°). Beyond it, there is total internal reflection."
+            },
+            {
+              "en": "Conditions: the light must travel from the denser to the rarer medium, and the angle of incidence must be greater than the critical angle."
+            },
+            {
+              "en": "Uses: optical fibres, prisms in binoculars and periscopes, diamonds' sparkle, mirages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "n": 0,
+      "starts": "Rub a balloon with your hairs",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "Rubbing moves electrons from the hair to the balloon, so the balloon gets a negative charge and the hair a positive charge (charging by friction)."
+            },
+            {
+              "en": "When the charged balloon is brought near the wall, its charge pushes the electrons in the nearest surface of the wall away and leaves that surface positive (charging by induction)."
+            },
+            {
+              "en": "Unlike charges attract, so the balloon is pulled to the wall and clings to it. The wall is not charged as a whole, but the near surface is, so the force is small and works only as long as the balloon keeps its charge (it falls when the charge leaks away, sooner in damp air)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "n": 1,
+      "starts": "turn on a water faucet",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "What happens: the thin stream of water bends towards the charged balloon, without touching it."
+            },
+            {
+              "en": "Why: water molecules are polar (one end is slightly positive, the other slightly negative). The negative balloon pulls the positive ends nearer and pushes the negative ends away, so the molecules are turned and the nearer, positive ends are attracted more strongly than the far ends are repelled. The net force pulls the stream towards the balloon."
+            },
+            {
+              "en": "The same happens with a plastic comb rubbed on dry hair, and a positively charged object bends the stream too: it is attraction of a charged body to a neutral one, not to a charged one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "n": 2,
+      "starts": "Tubular capacitors",
+      "blocks": [
+        {
+          "t": "table",
+          "head": 1,
+          "rows": [
+            [
+              "Part you find",
+              "What it is",
+              "Its job"
+            ],
+            [
+              "Two metal foils",
+              "the conducting plates",
+              "hold the opposite charges"
+            ],
+            [
+              "A thin sheet of paper (or Mylar) between them",
+              "the dielectric (an insulator)",
+              "stops the plates touching and increases the capacitance"
+            ],
+            [
+              "The rolled-up sandwich in a tube",
+              "compact design",
+              "gives a large plate area in a small space"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "en": "Capacitance C = Q / V, and a capacitor with large plates close together with a good dielectric stores more charge for the same voltage. Never open a capacitor that is charged or connected to a supply: it can still hold a dangerous charge."
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "n": 0,
+      "starts": "LIGHT AN LED WITH POTATOES",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "Each potato with a zinc and a copper electrode is a simple cell (about 0.8 to 1.0 volt, with very little current). The zinc is the negative electrode (it dissolves, giving electrons) and the copper is the positive one; the potato's juice (phosphoric acid and salts) is the electrolyte."
+            },
+            {
+              "en": "A voltmeter across one potato shows about 0.9 V; across two in series about 1.8 V; across three in series about 2.5 V, because the voltages of cells in series add."
+            },
+            {
+              "en": "A red LED needs about 1.8 to 2 V, so three potato cells in series can light it (dimly, as the current is tiny). One potato is not enough."
+            },
+            {
+              "en": "Chemical energy of the zinc is changed into electrical energy, and then into light."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "n": 0,
+      "starts": "IDENTIFY THE MAGNETIC FORCES",
+      "blocks": [
+        {
+          "t": "p",
+          "en": "Using Fleming's left-hand rule (first finger the field, second finger the current, thumb the force), with the conventional current:"
+        },
+        {
+          "t": "table",
+          "head": 1,
+          "rows": [
+            [
+              "Panel",
+              "Magnetic field",
+              "Current",
+              "Direction of the force on the wire"
+            ],
+            [
+              "1",
+              "into the page (×)",
+              "up",
+              "to the left"
+            ],
+            [
+              "2",
+              "into the page (×)",
+              "down",
+              "to the right"
+            ],
+            [
+              "3",
+              "into the page (×)",
+              "to the right",
+              "up"
+            ],
+            [
+              "4",
+              "into the page (×)",
+              "to the left",
+              "down"
+            ],
+            [
+              "5",
+              "out of the page (•)",
+              "up",
+              "to the right"
+            ],
+            [
+              "6",
+              "out of the page (•)",
+              "down",
+              "to the left"
+            ],
+            [
+              "7",
+              "out of the page (•)",
+              "to the right",
+              "down"
+            ],
+            [
+              "8",
+              "out of the page (•)",
+              "to the left",
+              "up"
+            ]
+          ]
+        },
+        {
+          "t": "p",
+          "en": "In every panel the force is at right angles to both the current and the field; turning the field or the current round turns the force round. Choose F₁ or F₂ in each panel as the one that points in the direction written above."
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "n": 1,
+      "starts": "BUILD AN ELECTROMAGNET",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "What you see: the nail picks up paper pins while the current flows, and drops them when the wire is disconnected: a nail is soft iron, so it stops being a magnet when the current stops."
+            },
+            {
+              "en": "Make it stronger by: more turns of wire, a larger current (another cell in series), a soft iron core, winding the turns close together."
+            },
+            {
+              "en": "Poles: curl the fingers of the right hand in the direction of the current round the nail; the thumb points to the north pole (right-hand grip rule)."
+            },
+            {
+              "en": "Care: the wire and the cell become hot, because a large current flows in a short wire (heating effect). Disconnect it often and do not hold it for long."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "n": 2,
+      "starts": "BUILD A SIMPLE DC MOTOR",
+      "blocks": [
+        {
+          "t": "ul",
+          "items": [
+            {
+              "en": "Current flows from the battery through the paper clips into the coil. The coil carries current in a magnetic field of the magnet, so each side of it feels a force (Fleming's left-hand rule); the forces on the two sides are opposite, so the coil turns."
+            },
+            {
+              "en": "The half of the insulation you scraped off (and the half you coloured) makes the current flow for only half of each turn. Without it the forces would reverse after half a turn and the coil would stop and swing back. The coil's own momentum carries it round through the half turn with no current, so it keeps spinning in one direction. This does the work of a commutator."
+            },
+            {
+              "en": "To make it spin faster: a stronger magnet, more turns, a fresh battery. To reverse it: reverse the battery or turn the magnet over."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

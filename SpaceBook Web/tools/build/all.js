@@ -25,6 +25,8 @@ const STEPS = [
     outputs: ['js/study_plan_index.js'], touches: ['tools/study_plan/last_build_report.txt'], run: node('tools/study_plan/build_study_index.js') },
   { id: 'lexicon', what: 'offline word meanings of all books in one file (Lexicon v1: hover and selection lookups, no book is loaded)',
     outputs: ['js/lexicon_data.js'], run: node('tools/build/make_lexicon.js') },
+  { id: 'fills', what: 'answers for the tables to fill in and the work of the projects and activities (Fill the table / Show the work); the check compares the hash of the inputs',
+    outputs: ['js/fills_data.js'], run: node('tools/fills/build_fills.js'), checkNative: node('tools/fills/build_fills.js', '--check') },
   // last: lazy.html carries the content hash of every script, including the generated ones above
   { id: 'lazy', what: 'lazy page and its manifest (client-side lazy loading of the book files)',
     outputs: ['lazy.html', 'content/lazy_manifest.json'], run: node('tools/build/make_lazy.js'), checkNative: node('tools/build/make_lazy.js', '--check') },
@@ -37,6 +39,10 @@ const STEPS = [
   // after the catalog (chapters of each subject): the questions of every book for "Create Test", one file per class (the check compares the hash of the inputs, no book is loaded)
   { id: 'testbank', what: 'questions of all books by subject, chapter and topic, with answers (Create Test)',
     outputs: ['content/testbank/index.json'], run: node('tools/tests/build_test_bank.js'), checkNative: node('tools/tests/build_test_bank.js', '--check') },
+  { id: 'grammar', what: 'grammar topics, lessons and practice from the English, Urdu, Pashto and Arabic books (Grammar Stats)',
+    outputs: ['content/grammar/index.json'], run: node('tools/grammar/build_grammar.js'), checkNative: node('tools/grammar/build_grammar.js', '--check') },
+  { id: 'assistant', what: 'the passages of the books of Classes 1 to 10 and 12 that the offline tutor answers from (Ask SpaceBook)',
+    outputs: ['content/assistant/index.json'], run: node('tools/assistant/build_assistant.js'), checkNative: node('tools/assistant/build_assistant.js', '--check') },
   // after the lazy page: it lists what each subject loads and the shell of the service worker (both carry content hashes of the files above)
   { id: 'offline', what: 'what each subject needs offline, and the service worker version (Download for offline, sw.js)',
     outputs: ['content/offline_map.json', 'content/sw_version.js'], run: node('tools/build/make_offline.js'), checkNative: node('tools/build/make_offline.js', '--check') },

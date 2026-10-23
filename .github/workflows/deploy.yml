@@ -89,6 +89,19 @@ jobs:
       - name: reader workspace (wide-screen look, chapter rail, full screen, narrow screen, app page)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/reader/workspace.js
+      - name: activity cards fold, fill the table and show the work
+        working-directory: SpaceBook Web
+        run: |
+          node --max-old-space-size=6144 tests/reader/cards.js
+          node --max-old-space-size=6144 tests/fills/browser.js
+      - name: Create Test, Grammar Stats and Ask SpaceBook (data and browser)
+        working-directory: SpaceBook Web
+        run: |
+          node tests/createtest/data.js
+          node tests/grammar/data.js
+          node --max-old-space-size=6144 tests/createtest/browser.js
+          node --max-old-space-size=6144 tests/grammar/browser.js
+          node --max-old-space-size=6144 tests/tutor/browser.js
       - name: search inside the books (words, index, the box in the header)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=8192 tests/search/search.js

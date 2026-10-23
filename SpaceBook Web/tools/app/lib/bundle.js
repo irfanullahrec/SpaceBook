@@ -72,6 +72,33 @@ function plan() {
     files.set('site/' + rel, { bytes: buf, sha256: h, from });
     siteLines.push(rel + ':' + h);
   }
+  // The files of Create Test, Ask SpaceBook and Grammar Stats (the question bank, the tutor's passages, the grammar), and the search files of the subjects the
+  // tutor reads by chapter (Class 11 and the ones without passages): requested as name?v=<12 hex of their hash>, so the app serves them from its own copy and
+  // the three features work offline from the first start. The index of each folder is asked for without a version.
+  for (const dir of ['content/testbank', 'content/assistant', 'content/grammar']) {
+    const abs = path.join(ROOT, dir);
+    if (!fs.existsSync(abs)) { problems.push(dir + ' is missing: run node tools/build/all.js'); continue; }
+    for (const f of fs.readdirSync(abs).sort()) {
+      const rel = dir + '/' + f, from = path.join(abs, f), buf = readServed(from), h = sha256(buf);
+      index.files[rel] = f === 'index.json' ? '' : h.slice(0, 12);
+      files.set('site/' + rel, { bytes: buf, sha256: h, from });
+      siteLines.push(rel + ':' + h);
+    }
+  }
+  try {
+    const sIdx = JSON.parse(readServed(path.join(ROOT, 'content', 'search', 'index.json')).toString('utf8'));
+    const aIdx = JSON.parse(readServed(path.join(ROOT, 'content', 'assistant', 'index.json')).toString('utf8'));
+    for (const id of Object.keys(sIdx.subjects).sort()) {
+      const meta = sIdx.subjects[id];
+      if (meta.classId !== 'cls11' && aIdx.subjects[id]) continue;
+      const rel = 'content/search/' + id + '.json', from = path.join(ROOT, rel);
+      if (!fs.existsSync(from)) { problems.push('search file missing: ' + rel); continue; }
+      const buf = readServed(from), h = sha256(buf);
+      index.files[rel] = h.slice(0, 12);
+      files.set('site/' + rel, { bytes: buf, sha256: h, from });
+      siteLines.push(rel + ':' + h);
+    }
+  } catch (e) { problems.push('the search or tutor index could not be read: ' + e.message); }
   files.set('site/site-index.json', { bytes: Buffer.from(JSON.stringify(index)) });
 
   const catalogFrom = path.join(ROOT, 'content', 'app_catalog.json');
