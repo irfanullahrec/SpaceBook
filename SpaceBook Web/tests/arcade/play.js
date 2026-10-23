@@ -77,6 +77,12 @@ const check = (name, ok, detail) => { if (ok) { pass++; console.log('PASS  ' + n
     check(id + ': a careless player loses (' + bad.wrongs + ' mistakes in ' + bad.seconds + ' s)', bad.state === 'lost' && bad.right === 0 && bad.errs === 0, bad);
   }
 
+  // ---- the coin keys are the shape api/lib/rewards.php accepts ----
+  const RX = /^[A-Za-z0-9_.:-]{1,40}\|[A-Za-z0-9_.:-]{1,60}\|u[A-Za-z0-9]{0,8}\|(trace|count)\|[a-z0-9]{1,10}\|[0-9]{1,3}$/;
+  const keys = await page.evaluate(() => SBArcade.games.map(g => { const a = SBArcade.open(SAMPLE_EN, { manual: true, game: g.id }); const k = a.E.key; a.close(); return [g.id, k]; }));
+  check('the coin key of every game has the shape the server accepts', keys.every(([, k]) => RX.test(k)), keys.filter(([, k]) => !RX.test(k)));
+  check('and each game has a key of its own', new Set(keys.map(([, k]) => k)).size === keys.length);
+
   // ---- a picture of each game mid-play (phone width) ----
   for (const id of wanted) {
     await page.evaluate(({ id }) => { window.__a = SBArcade.open(SAMPLE_EN, { manual: true, seed: 21, auto: 'right', game: id }); for (let i = 0; i < 150; i++) window.__a.step(1 / 60); }, { id });
