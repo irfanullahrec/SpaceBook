@@ -67,7 +67,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   // a highlight from selected words
   const picked = await page.evaluate(() => {
     const unit = SBLibrary.collect().units[3];
-    const w = document.createTreeWalker(unit, NodeFilter.SHOW_TEXT, { acceptNode: t => (t.nodeValue.trim().length > 20 && !t.parentElement.closest('.sbl-tools, script, style') && t.parentElement.offsetParent !== null) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+    const w = document.createTreeWalker(unit, NodeFilter.SHOW_TEXT, { acceptNode: t => (t.nodeValue.trim().length > 20 && !t.parentElement.closest('.sbl-tools, script, style, .katex, .katex-mathml, annotation, .sb-ans, .sb-solve') && t.parentElement.offsetParent !== null) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });   // words a student can see and select, not the hidden maths markup the open book also holds
     const t = w.nextNode();
     if (!t) return null;
     const start = t.nodeValue.search(/\S/);

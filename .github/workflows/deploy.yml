@@ -86,6 +86,9 @@ jobs:
           node tests/a11y/contrast.js
           node --max-old-space-size=8192 tests/a11y/axe.js
           node tools/a11y_contrast.js --check
+      - name: reader workspace (wide-screen look, chapter rail, full screen, narrow screen, app page)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tests/reader/workspace.js
       - name: search inside the books (words, index, the box in the header)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=8192 tests/search/search.js

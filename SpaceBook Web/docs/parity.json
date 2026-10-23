@@ -103,9 +103,19 @@
    "area": "Reading",
    "name": "The page uses the whole screen: no chapter or page title, the tab strip and the page's own Board SLOs / Exercise / Games tabs right under the status bar, text from edge to edge",
    "status": "platform-specific",
-   "web": "the website keeps its header, chapter title and side margins (a desktop layout that also works on a phone)",
+   "web": "wide screens: js/sb_book_spread.js + js/sb_global_ui.js (see read.workspace); narrow screens keep the header, chapter title and side margins",
    "app": "assets/reader_mobile.css + reader_bridge.js (one topic or page per screen, titles hidden); ui/reader/ReaderScreen.kt has no top bar, a slim footer with a menu",
-   "counterpart": "Look and layout only (the owner asked for the app's page to fill the phone): the same book, tabs and data on both platforms, so nothing on the website changes."
+   "counterpart": "Look and layout only (the owner asked for the app's page to fill the phone): the same book, tabs and data on both platforms. The website's own layout is read.workspace."
+  },
+  {
+   "id": "read.workspace",
+   "area": "Reading",
+   "name": "The chapter workspace on a wide screen: the full-screen look also inside the page (thin chapter rail with an expand button, tight header and tabs, the open book with Board SLOs / Exercise on every lesson page); full screen covers the whole page so word meaning cards and dialogs stay visible",
+   "status": "platform-specific",
+   "web": "js/sb_book_spread.js (compact look, open book), js/sb_global_ui.js (rail button, full screen over the whole page), js/sb_exercise_tabs.js; tests/reader/workspace.js",
+   "app": "not used: html.sbapp keeps the app's one-page reader (read.fullbleed, read.pageview)",
+   "data": "the rail's open / closed choice is device-local (localStorage sbRailOpen)",
+   "counterpart": "Look and layout only, website only (the owner asked for the website view to change, 2026-10-24). Same book, tabs, sentence click and word cards on both platforms: the app's own sentence sheet and word sheet do those."
   },
   {
    "id": "read.tts",
