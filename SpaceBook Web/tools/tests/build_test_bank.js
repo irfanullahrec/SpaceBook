@@ -73,7 +73,8 @@ const PLACEHOLDER = /^(solution|model answer|sample answer|see the unit text|see
 const QWORD = /^(what|who|whom|whose|when|where|why|how|which|name|define|state|give|list|explain|describe|discuss|compare|differentiate|distinguish|is|are|was|were|do|does|did|can|could|will|would|has|have|should)\b|^(کیا|کیوں|کون|کب|کہاں|کس|کیسے|کتنے|کتنی|کتنا|کیونکر|څه|څوک|ولې|چېرته|کله|څنګه|کوم|څو)\b|[?؟]\s*$|[?؟]\s*\(?[ivx]*\)?\s*$/i;
 const TRUE_RX = /^(✓|✔|✔️|true|t|correct|right|yes|صحیح|درست|سم|ہاں)[.۔]?\b/i;
 const FALSE_RX = /^(✗|✘|×|x|false|f|wrong|incorrect|no|غلط|ناسم|نہیں)[.۔]?\b/i;
-const clean = s => String(s == null ? '' : s).replace(/\*\*(.+?)\*\*/g, '$1').replace(/<br\s*\/?>/gi, ' ').replace(/\s+/g, ' ').trim();
+// the books mark a word with <u>, <b> or **: the reader draws ** as bold and escapes tags, so tags become ** (a question that says "the underlined word" keeps its word) and other tags go
+const clean = s => String(s == null ? '' : s).replace(/<(u|b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**').replace(/<br\s*\/?>/gi, ' ').replace(/<\/?[a-z][^>]*>/gi, '').replace(/\s+/g, ' ').trim();
 const norm = s => clean(s).toLowerCase().replace(/\$/g, '').replace(/[^\p{L}\p{N}]+/gu, '');
 const DEFAULT_MARKS = { mcq: 1, tf: 1, fill: 1, num: 2, lang: 1, short: 3, long: 6, task: 2 };
 

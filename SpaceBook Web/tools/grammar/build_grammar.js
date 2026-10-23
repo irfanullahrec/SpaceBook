@@ -53,7 +53,8 @@ for (const c of catalog.classes) for (const s of c.subjects) {
   if (m) subjOf[m[2].replace('cls', '') + ':' + m[1]] = { id: s.id, name: s.name, chapters: s.chapters.map(ch => ({ t: ch.t, o: ch.o })) };
 }
 
-const clean = s => String(s == null ? '' : s).replace(/\*\*(.+?)\*\*/g, '$1').replace(/\s+/g, ' ').trim();
+// the books mark a word with <u>, <b> or **: the reader draws ** as bold and escapes tags, so tags become ** and other tags go
+const clean = s => String(s == null ? '' : s).replace(/<(u|b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**').replace(/<br\s*\/?>/gi, ' ').replace(/<\/?[a-z][^>]*>/gi, '').replace(/\s+/g, ' ').trim();
 const topicOf = (lang, label) => { const L = TOPICS.LANGS[lang]; const t = clean(label); if (!t) return null; for (const tp of L) if (tp.rx.test(t)) return tp; return null; };
 const PLACEHOLDER = /^(solution|model answer|sample answer|see the unit text|agent answer|answer|نمونے کا جواب|حل|جواب)\s*[.:]?$/i;
 // a reading lesson's word list and glossary are not grammar lessons: these topics count practice questions only
@@ -78,7 +79,8 @@ for (const b of raw.books) {
       const chars = evs.reduce((a, e) => a + (e.k === 'p' ? clean(e.t[0]).length : e.k === 'ul' ? e.t.join(' ').length : e.k === 'tbl' ? e.rows.flat().join(' ').length : 0), 0);
       if (chars < 50) return;
       const rec = byLang[lang].get(tp.id);
-      const keep = evs.filter(e => e.k === 'h' || e.k === 'p' || e.k === 'ul' || e.k === 'tbl' || e.k === 'box').slice(0, 16);
+      const tidy = e => e.k === 'ul' ? Object.assign({}, e, { t: e.t.map(clean) }) : e.k === 'tbl' ? Object.assign({}, e, { rows: e.rows.map(r => r.map(clean)) }) : Array.isArray(e.t) ? Object.assign({}, e, { t: e.t.map(clean) }) : e;
+      const keep = evs.filter(e => e.k === 'h' || e.k === 'p' || e.k === 'ul' || e.k === 'tbl' || e.k === 'box').slice(0, 16).map(tidy);
       rec.lessons.push({ c: b.cls, s: sj.id, u: ui, ut: u.title.slice(0, 80), st: sec.t.slice(0, 80), ev: keep });
       bump(rec, b.cls, 'l'); cards++;
     };
