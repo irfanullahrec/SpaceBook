@@ -9,6 +9,7 @@
     "test": "npm run validate && npm run smoke",
     "test:php": "php tests/php/run.php",
     "lint:php": "node tools/php74_lint.js",
+    "test:games": "node tests/games/content.js && node tests/games/browser.js",
     "test:sync": "node tests/sync/unit.js && node tests/sync/e2e.js",
     "build:lazy": "node tools/build/make_lazy.js",
     "check:lazy": "node tools/build/make_lazy.js --check",

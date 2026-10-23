@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Test page for tests/games/browser.js: the real rewards module, the real games code and the real stylesheets, with stand-ins
+     for the few functions of js/app.js the Games page calls. It never ships (tests/ is not deployed). The full app is tested with
+     `node tests/games/browser.js --full`. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="/">
+<title>Games test page</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sb_games.css">
+</head>
+<body>
+<header id="top-header"><nav class="header-nav-tabs" id="headerNavTabs"><a class="nav-tab active" data-page="games"><span class="nav-icon">🎮</span> <span>Games</span></a></nav>
+  <div class="header-right-group"><div class="header-user-avatar" title="Account"></div></div></header>
+<div id="main-wrapper">
+  <div id="subpage-nav-bar"><div class="breadcrumb" id="breadcrumb"></div><h2 id="dash-title"></h2><p id="dash-sub"></p></div>
+  <main id="page-content"><div id="dashboard-body"></div></main>
+</div>
+<script>
+  var state = {page: 'games', activeView: 'games', selectedClass: null};
+  function setActiveNav() {}
+  function setDashHeader(t, s) { document.getElementById('dash-title').innerHTML = t; document.getElementById('dash-sub').innerHTML = s; }
+  function setBreadcrumb() {}
+  function renderHome() {}
+</script>
+<script src="js/sb_rewards.js"></script>
+<script src="js/games_vocab.js"></script>
+<script src="js/sb_games_content.js"></script>
+<script src="js/sb_games.js"></script>
+<script>
+  document.dispatchEvent(new CustomEvent('spacebook:auth', {detail: {user: null}}));   // guest, like a student who has not logged in
+  renderGames();
+</script>
+</body>
+</html>
