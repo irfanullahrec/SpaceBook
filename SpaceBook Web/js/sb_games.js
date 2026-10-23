@@ -37,7 +37,44 @@
     prefsKey = k;
     return prefsCache;
   }
-  function savePrefs() { try { localStorage.setItem(prefsKey || (PK + ':' + uid()), JSON.stringify(prefs())); } catch (e) { /* storage blocked: the game still works */ } }
+  function savePrefs() {
+    try { localStorage.setItem(prefsKey || (PK + ':' + uid()), JSON.stringify(prefs())); } catch (e) { /* storage blocked: the game still works */ }
+    mirrorPrefs();
+  }
+  // The class and scope the student chose, the streak and the best run of every level follow the account to the other devices
+  // (user items "pref/games" and "gbest", js/core/items.js; best runs only ever go up, like the server's rule).
+  let mirrored = '';
+  function mirrorPrefs() {
+    const I = window.SBItems;
+    if (!I || !I.userId()) return;
+    const p = prefs();
+    Object.keys(p.best || {}).forEach(k => {
+      const cur = I.get('gbest', k);
+      if (!cur || p.best[k] > cur.b) I.put('gbest', k, {b: Math.min(1, p.best[k])});
+    });
+    const v = {};
+    if (p.cls) v.cls = +p.cls;
+    if (p.scope && Object.keys(p.scope).length && Object.keys(p.scope).length <= 80) v.scope = p.scope;
+    if (p.streak && p.streak.last) v.streak = {n: p.streak.n, last: p.streak.last};
+    const sig = JSON.stringify(v);
+    if (sig !== mirrored && Object.keys(v).length) { mirrored = sig; I.put('pref', 'games', v); }
+  }
+  if (window.SBItems) {
+    window.SBItems.on('change', e => {
+      if (e.origin !== 'remote' || !e.value) return;
+      const p = prefs();
+      if (e.kind === 'gbest') { if (e.value.b > (p.best[e.key] || 0)) { p.best[e.key] = e.value.b; savePrefsLocal(); } }
+      else if (e.kind === 'pref' && e.key === 'games') {
+        if (e.value.cls) p.cls = e.value.cls;
+        if (e.value.scope) Object.assign(p.scope, e.value.scope);
+        if (e.value.streak && (e.value.streak.last || '') > (p.streak.last || '')) p.streak = e.value.streak;
+        mirrored = JSON.stringify(e.value);
+        savePrefsLocal();
+      }
+    });
+    document.addEventListener('spacebook:auth', () => setTimeout(mirrorPrefs, 400));
+  }
+  function savePrefsLocal() { try { localStorage.setItem(prefsKey || (PK + ':' + uid()), JSON.stringify(prefs())); } catch (e) { /* storage blocked */ } }
   function touchStreak() {
     const p = prefs(), t = todayStr();
     if (p.streak.last === t) return;

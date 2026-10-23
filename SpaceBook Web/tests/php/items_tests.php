@@ -174,3 +174,32 @@ check('rows of a purged account go with it (cascade)', (int)$t->query("SELECT CO
 // ---- old clients: a pull answer still has everything an old client reads
 $g = pull($a['token'])['json'];
 check('the pull keeps its old fields (progress, plans, plansDeleted, tp, coins) next to the new ones', isset($g['progress'], $g['plans'], $g['plansDeleted'], $g['tp'], $g['coins'], $g['items'], $g['itemsDeleted']));
+
+// ---- owner flags: the website and the app read the same switch from the server
+echo "--- owner flags (api/lib/flags.php) ---\n";
+require_once $api . '/lib/flags.php';
+$m = http('GET', 'auth.php?action=me');
+check('me publishes the flags to a guest: client sync is off by default', $m['code'] === 200 && $m['json']['flags'] === ['syncV2' => false], $m['body']);
+check('and to a signed-in student', http('GET', 'auth.php?action=me', null, ['Authorization: Bearer ' . $a['token']])['json']['flags'] === ['syncV2' => false]);
+$en = http('GET', 'v2/entitlements.php');
+check('entitlements carry the same flags', $en['json']['flags'] === ['syncV2' => false], $en['body']);
+$ff = sys_get_temp_dir() . '/sb_flags_' . getmypid() . '.php';
+file_put_contents($ff, '<?php return ["syncV2" => true, "somethingElse" => true];');
+putenv('SB_FLAGS_FILE=' . $ff);
+check('a flags file switches it on and unknown names are ignored', sb_flags() === ['syncV2' => true]);
+file_put_contents($ff, '<?php return "not an array";');
+check('a broken flags file leaves the default (off)', sb_flags() === ['syncV2' => false]);
+file_put_contents($ff, '<?php return ["syncV2" => true];');
+$port2 = $port + 1;
+$proc2 = proc_open([PHP_BINARY, '-S', "127.0.0.1:$port2", '-t', $api], [0 => ['pipe', 'r'], 1 => ['file', sys_get_temp_dir() . '/sb_php_server2.log', 'w'], 2 => ['file', sys_get_temp_dir() . '/sb_php_server2.log', 'a']], $pipes2, $api, array_merge(getenv(), ['SB_CONFIG' => $cfg, 'SB_FLAGS_FILE' => $ff]));
+$up2 = false;
+for ($i = 0; $i < 50 && !$up2; $i++) { $s2 = @fsockopen('127.0.0.1', $port2, $en2, $es2, 0.2); if ($s2) { fclose($s2); $up2 = true; } else usleep(100000); }
+$ch = curl_init("http://127.0.0.1:$port2/v2/entitlements.php");
+curl_setopt_array($ch, [CURLOPT_RETURNTRANSFER => true, CURLOPT_TIMEOUT => 30]);
+$body2 = json_decode((string)curl_exec($ch), true);
+curl_close($ch);
+check('a server with the flag on tells every client so', $up2 && isset($body2['flags']) && $body2['flags'] === ['syncV2' => true], json_encode($body2));
+if (is_resource($proc2)) { proc_terminate($proc2); proc_close($proc2); }
+putenv('SB_FLAGS_FILE');
+@unlink($ff);
+check('with no file the switch is off again', sb_flags() === ['syncV2' => false]);

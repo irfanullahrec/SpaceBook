@@ -14,6 +14,7 @@ header('Cache-Control: no-store');
 require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
 require __DIR__ . '/lib/account.php';
+require __DIR__ . '/lib/flags.php';
 
 const USER_TYPES   = ['school', 'teacher', 'student'];
 const MAX_FAILS    = 5;   // per number, per window
@@ -210,11 +211,11 @@ case 'me':
         $meDev = sb_device_from_request($pdo);
         if ($meDev) $meUid = (int)$meDev['user_id'];
     }
-    if ($meUid === 0) reply(200, ['ok' => true, 'user' => null]);
+    if ($meUid === 0) reply(200, ['ok' => true, 'user' => null, 'flags' => sb_flags()]);
     $st = $pdo->prepare("SELECT * FROM users WHERE id = ? AND status = 'active'");
     $st->execute([$meUid]);
     $user = $st->fetch();
-    reply(200, ['ok' => true, 'user' => $user ? public_user($user) : null]);
+    reply(200, ['ok' => true, 'user' => $user ? public_user($user) : null, 'flags' => sb_flags()]);
 
 // ---- own account (session cookie required) ----
 case 'update_profile':

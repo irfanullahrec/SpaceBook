@@ -141,6 +141,7 @@ jobs:
           node --max-old-space-size=4096 tests/sync/planner.js
           node --max-old-space-size=4096 tests/sync/testprep.js
           node --max-old-space-size=2048 tests/sync/account.js
+          node --max-old-space-size=4096 tests/sync/items.js
 
   deploy:
     needs: test

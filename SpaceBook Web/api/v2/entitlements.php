@@ -3,7 +3,7 @@
 // Android app. Compatible with PHP 7.4.
 //
 //   GET api/v2/entitlements.php      (guest, or 'Authorization: Bearer <device token>', or the session cookie)
-//     -> {ok, plan, signedIn, unlocked, classes, features{...}, limits{...}, version}
+//     -> {ok, plan, signedIn, unlocked, classes, features{...}, limits{...}, version, flags{syncV2}}   (flags: api/lib/flags.php)
 //
 // Today everything is unlocked ("free for everyone"). To start limiting later, change sb_entitlements() below
 // (for example read a `plan` column or a payments table for $uid); both clients read this answer, so no app
@@ -12,6 +12,7 @@
 
 require __DIR__ . '/../db.php';
 require_once __DIR__ . '/../lib/security.php';
+require_once __DIR__ . '/../lib/flags.php';
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -55,4 +56,4 @@ try {
     error_log('SpaceBook entitlements: ' . $e->getMessage());   // a database problem must not lock students out
 }
 
-echo json_encode(['ok' => true, 'signedIn' => $uid > 0, 'version' => SB_ENTITLEMENTS_VERSION] + sb_entitlements($uid), JSON_UNESCAPED_UNICODE);
+echo json_encode(['ok' => true, 'signedIn' => $uid > 0, 'version' => SB_ENTITLEMENTS_VERSION, 'flags' => sb_flags()] + sb_entitlements($uid), JSON_UNESCAPED_UNICODE);

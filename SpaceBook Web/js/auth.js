@@ -292,7 +292,10 @@
       avatar.addEventListener('click', e => { e.stopPropagation(); activate(); });
       avatar.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
     }
-    call('me').then(r => setUser(r.ok ? r.user : null));
+    call('me').then(r => {
+      if (r && r.flags && window.SBSync && window.SBSync.setServerFlags) window.SBSync.setServerFlags(r.flags);      // the owner's sync switch (api/lib/flags.php)
+      setUser(r.ok ? r.user : null);
+    });
   }
 
   window.SpaceBookAuth = {
