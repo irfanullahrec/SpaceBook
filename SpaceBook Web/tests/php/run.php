@@ -55,11 +55,11 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 6 pending', $s['current'] === 0 && count($s['pending']) === 6 && $s['latest'] === 6, json_encode($s));
+check('empty database is at version 0 with 7 pending', $s['current'] === 0 && count($s['pending']) === 7 && $s['latest'] === 7, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies all six migrations', count($applied) === 6, json_encode($applied));
+check('up applies all seven migrations', count($applied) === 7, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
-foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors'] as $t) {
+foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors', 'user_items'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
 }
 check('second up changes nothing', sb_migrate_up($pdo) === []);
@@ -67,6 +67,8 @@ check('second up changes nothing', sb_migrate_up($pdo) === []);
 $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_hash) VALUES ('A','B','student','923001110001','x')");
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
+$undone7 = sb_migrate_down($pdo, 1);
+check('down 1 removes the 007 user items table and its change-log rows only', $undone7 === ['007_user_items.sql'] && !in_array('user_items', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('sync_errors', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone7));
 $undone6 = sb_migrate_down($pdo, 1);
 check('down 1 removes the 006 role column and the sync error table', $undone6 === ['006_admin.sql'] && !in_array('role', $pdo->query('SHOW COLUMNS FROM users')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('sync_errors', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone6));
 $undone5 = sb_migrate_down($pdo, 1);
@@ -77,7 +79,7 @@ check('down 1 more removes the 003 tables and the plan rev column', sb_migrate_d
 check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 6', count(sb_migrate_up($pdo)) === 5 && sb_schema_version($pdo) === 6);
+check('up again restores version 7', count(sb_migrate_up($pdo)) === 6 && sb_schema_version($pdo) === 7);
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -178,7 +180,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 6 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 7 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -709,13 +711,14 @@ $t->exec("UPDATE users SET deleted_at = NOW() - INTERVAL 31 DAY WHERE id = {$dl[
 $keep = $ac['id'];
 check('purge removes an account deleted more than 30 days ago', sb_purge_deleted($t, 30) === 1);
 $left = 0;
-foreach (['users' => 'id', 'activity_progress' => 'user_id', 'tp_answers' => 'user_id', 'tp_days' => 'user_id', 'sync_events' => 'user_id', 'sync_changes' => 'user_id', 'devices' => 'user_id', 'audit_log' => 'user_id', 'study_plans' => 'user_id', 'user_sync_state' => 'user_id'] as $tbl => $col) {
+foreach (['users' => 'id', 'activity_progress' => 'user_id', 'tp_answers' => 'user_id', 'tp_days' => 'user_id', 'sync_events' => 'user_id', 'sync_changes' => 'user_id', 'devices' => 'user_id', 'audit_log' => 'user_id', 'study_plans' => 'user_id', 'user_sync_state' => 'user_id', 'user_items' => 'user_id'] as $tbl => $col) {
     $left += (int)$t->query("SELECT COUNT(*) FROM $tbl WHERE $col = {$dl['id']}")->fetchColumn();
 }
 check('and every record of that account is gone from every table', $left === 0, (string)$left);
 check('other accounts are untouched by the purge', (int)$t->query("SELECT COUNT(*) FROM users WHERE id = $keep")->fetchColumn() === 1 && (int)$t->query("SELECT COUNT(*) FROM tp_answers WHERE user_id = $keep")->fetchColumn() === 1);
 
-// ============================================================ 7. backup and restore drill
+// ============================================================ 7. user items, then administration, backup and restore drill
+require __DIR__ . '/items_tests.php';
 require __DIR__ . '/admin_tests.php';
 
 echo "--- backup / restore drill ---\n";

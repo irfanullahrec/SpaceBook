@@ -6,7 +6,8 @@
 //    progress: {activityKey: {done:[..], total, times, first, last}},
 //    plans: [plan...], plansDeleted: [id...],
 //    tp: {q: {mcqId: [attempts, correct, lastTs, lastCorrect, ms]}, days: {track: {day: [ms, answered, correct]}},
-//         sessions: [session...], run: {...}|null, runClearedAt}}      (run and runClearedAt only when they changed, or on a full pull)
+//         sessions: [session...], run: {...}|null, runClearedAt}      (run and runClearedAt only when they changed, or on a full pull)
+//    items: [{kind, key, value, at}...], itemsDeleted: [{kind, key, at}...]}      (bookmarks, notes, positions ...: api/lib/items.php)
 //
 // Objects are absolute (not deltas), so applying a pull twice, or in any order, gives the same result.
 // `cursor` is the highest change number covered; call again with it. `more` = there is a next page.
@@ -15,7 +16,7 @@ const SB_PULL_PAGE = 2000;
 
 function sb_pull(PDO $pdo, int $uid, int $since): array
 {
-    $refs = ['act' => [], 'plan' => [], 'tpq' => [], 'tpd' => [], 'tps' => [], 'tpr' => []];
+    $refs = ['act' => [], 'plan' => [], 'tpq' => [], 'tpd' => [], 'tps' => [], 'tpr' => [], 'item' => []];
     $full = $since <= 0;
     $more = false;
     if ($full) {
@@ -81,6 +82,8 @@ function sb_pull(PDO $pdo, int $uid, int $since): array
         if (is_array($s)) $out['tp']['sessions'][] = $s;
     }
     $out['tp']['sessions'] = array_reverse($out['tp']['sessions']);
+
+    $out = array_merge($out, sb_item_rows($pdo, $uid, $full ? null : $refs['item']));
 
     if ($want('tpr', 'run')) {
         $out['tp']['run'] = null;

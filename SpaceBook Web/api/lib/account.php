@@ -26,6 +26,10 @@ function sb_account_export(PDO $pdo, int $uid): array
     }
     $legacy = $one('SELECT record_json FROM test_prep_records WHERE user_id = ?', [$uid]);
     $run = $one('SELECT run_json, saved_ms, cleared_ms FROM tp_runs WHERE user_id = ?', [$uid]);
+    $items = [];
+    foreach ($one('SELECT kind, item_key, value_json, at_ms FROM user_items WHERE user_id = ? AND deleted = 0 ORDER BY kind, item_key', [$uid]) as $r) {
+        $items[] = ['kind' => $r['kind'], 'key' => $r['item_key'], 'value' => sb_json_or_null($r['value_json']), 'at' => (int)$r['at_ms']];
+    }
     return [
         'schema'      => 'spacebook.export/1',
         'exported_at' => gmdate('c'),
@@ -39,6 +43,7 @@ function sb_account_export(PDO $pdo, int $uid): array
             'unfinished_test'  => $run ? ['run' => sb_json_or_null($run[0]['run_json']), 'saved_ms' => (int)$run[0]['saved_ms'], 'cleared_ms' => (int)$run[0]['cleared_ms']] : null,
             'older_record'     => $legacy ? sb_json_or_null($legacy[0]['record_json']) : null,
         ],
+        'saved_items' => $items,       // bookmarks, notes and highlights, reading positions, marked words, best game runs, settings, ticked SLOs
         'devices'     => $one('SELECT id, name, created_at, last_seen, revoked FROM devices WHERE user_id = ?', [$uid]),
         'activity_log' => $one('SELECT action, ip, created_at FROM audit_log WHERE user_id = ? ORDER BY id DESC LIMIT 200', [$uid]),
     ];

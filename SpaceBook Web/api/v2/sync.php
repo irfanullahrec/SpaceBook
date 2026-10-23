@@ -22,6 +22,8 @@
 //   tp.run        {run}                                 the unfinished session (run.savedAt decides)
 //   tp.run.clear  {clearedAt}
 //   tp.import     {record}                              an old-format record from this device ({q, days, run, runClearedAt}): more attempts wins
+//   item.put      {kind, key, value, at}                a bookmark, note, reading position, marked word, best game run, setting ... (api/lib/items.php)
+//   item.del      {kind, key, at}
 //
 // Authentication: 'Authorization: Bearer <device token>' (issued by api/auth.php with want_device), or the
 // session cookie (then the request must be same-site).
@@ -32,6 +34,7 @@ require_once __DIR__ . '/../lib/rewards.php';
 require_once __DIR__ . '/../lib/changes.php';
 require_once __DIR__ . '/../lib/plans.php';
 require_once __DIR__ . '/../lib/testprep.php';
+require_once __DIR__ . '/../lib/items.php';
 require_once __DIR__ . '/../lib/pull.php';
 require_once __DIR__ . '/../lib/admin.php';
 
@@ -147,6 +150,10 @@ function sync_apply(PDO $pdo, int $uid, string $deviceId, string $type, array $p
         if (!isset($p['record']) || !is_array($p['record'])) return 'bad_payload';
         sb_tp_merge_blob($pdo, $uid, $p['record']);
         return null;
+    case 'item.put':
+        return sb_item_put($pdo, $uid, $p);
+    case 'item.del':
+        return sb_item_del($pdo, $uid, $p);
     default:
         return 'unsupported_type';
     }
