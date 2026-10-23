@@ -461,6 +461,18 @@ console.log('--- offline ---');
     check('no step name in the deploy workflow has a colon followed by a space', bad.length === 0, bad.map(([n, l]) => n + ': ' + l.trim().slice(0, 60)).join(' | '));
     const tabs = lines.filter(l => /^\t/.test(l)).length;
     check('the deploy workflow has no tab indentation', tabs === 0, tabs + ' lines');
+    // FTP-Deploy-Action matches a pattern that has no slash against the file NAME at any depth: "test_*.js" kept js/test_prep.js and
+    // js/test_prep_bank.js off the server (404 on the live site, 2026-10-23). No file the site serves may be caught by the exclude list.
+    const at = lines.findIndex(l => /^\s*exclude:\s*\|/.test(l));
+    const pats = [];
+    for (let i = at + 1; at >= 0 && i < lines.length && /^\s{6,}\S/.test(lines[i]); i++) pats.push(lines[i].trim());
+    const rx = p => new RegExp('^' + p.replace(/[.+^${}()|[\]\\]/g, '\\$&').replace(/\*\*\//g, '@@A@@').replace(/\/\*\*/g, '/@@B@@').replace(/\*/g, '[^/]*').replace(/@@A@@/g, '(?:.*/)?').replace(/@@B@@/g, '.*') + '$');
+    const site = ['js', 'css', 'content', 'assets', 'covers', 'icons', 'api']
+      .flatMap(d => fs.existsSync(path.join(ROOT, d)) ? fs.readdirSync(path.join(ROOT, d), { recursive: true }).map(x => d + '/' + String(x).split(path.sep).join('/')) : [])
+      .filter(x => fs.statSync(path.join(ROOT, x)).isFile())
+      .concat(['index.html', 'lazy.html', 'offline.html', 'sw.js', 'manifest.webmanifest', '.htaccess']);
+    const caught = site.filter(x => pats.some(p => { const r = rx(p); return r.test(x) || (!p.includes('/') && r.test(x.split('/').pop())); }));
+    check('no file the site serves is caught by the deploy exclude list (' + pats.length + ' patterns, ' + site.length + ' files)', pats.length > 5 && caught.length === 0, caught.slice(0, 5).join(','));
   });
   safe('read-aloud never asks a website for speech', () => {
     const offenders = ['app.js', 'universal_translate.js', 'word_stats.js', 'sb_four_lang.js', 'reader_tools.js', 'sb_trilingual.js', 'sb_global_ui.js'].filter(f => exists('js/' + f) && /translate_tts/.test(read('js/' + f)));

@@ -1,5 +1,5 @@
 # SpaceBook: what the folder shows when no file name is given, and no directory listings.
 # Uploaded by the deploy workflow with the rest of the site (the server did not pick index.html by itself: /spacebook/ showed a file list).
 # Headers, caching and the report-only Content-Security-Policy are in deploy/spacebook.htaccess; the owner installs those by hand (docs/SERVER_CONFIG.md).
-DirectoryIndex index.html
+DirectoryIndex lazy.html index.html
 Options -Indexes
