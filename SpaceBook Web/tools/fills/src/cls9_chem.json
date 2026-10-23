@@ -1,0 +1,295 @@
+{
+  "cls": 9,
+  "key": "chem",
+  "tables": [
+    {"unit": 1, "n": 0, "head": "Atomic No.", "rows": [
+      ["a.", "K", "19", "19", "19"],
+      ["b.", "O", "8", "8", "8"],
+      ["c.", "P", "15", "15", "15"],
+      ["d.", "Ca", "20", "20", "20"],
+      ["e.", "Cl", "17", "17", "17"]
+    ]},
+    {"unit": 2, "n": 1, "head": "Isotopic Symbol", "rows": [
+      ["a", "¹³¹₅₄Xe", "54", "131", "54", "54", "77"],
+      ["b", "⁵⁹₂₇Co", "27", "59", "27", "27", "32"],
+      ["c", "¹⁴⁴₆₀Nd", "60", "144", "60", "60", "84"],
+      ["d", "⁴⁸₂₂Ti", "22", "48", "22", "22", "26"],
+      ["e", "¹⁷⁸₇₂Hf", "72", "178", "72", "72", "106"],
+      ["F", "¹²⁸₅₂Te", "52", "128", "52", "52", "76"],
+      ["g", "⁴⁰₁₈Ar", "18", "40", "18", "18", "22"]
+    ]},
+    {"unit": 4, "n": 0, "head": "Lewis structure", "rows": [
+      ["1", "Ammonia", "NH₃", {"lewis": {"label": "Lewis structure of ammonia", "w": 130, "h": 100, "atoms": [{"s": "N", "x": 65, "y": 45, "lp": ["t"]}, {"s": "H", "x": 25, "y": 45}, {"s": "H", "x": 105, "y": 45}, {"s": "H", "x": 65, "y": 85}], "bonds": [[0, 1, 1], [0, 2, 1], [0, 3, 1]]}}, "Polar covalent: N (3.0) pulls the three shared pairs harder than H (2.1)."],
+      ["2", "Water", "H₂O", {"lewis": {"label": "Lewis structure of water", "atoms": [{"s": "O", "x": 65, "y": 45, "lp": ["t", "b"]}, {"s": "H", "x": 25, "y": 45}, {"s": "H", "x": 105, "y": 45}], "bonds": [[0, 1, 1], [0, 2, 1]]}}, "Polar covalent: O (3.5) pulls the shared pairs harder than H (2.1)."],
+      ["3", "Hydrogen chloride", "HCl", {"lewis": {"label": "Lewis structure of hydrogen chloride", "atoms": [{"s": "H", "x": 30, "y": 45}, {"s": "Cl", "x": 88, "y": 45, "lp": ["t", "b", "r"]}], "bonds": [[0, 1, 1]]}}, "Polar covalent: Cl (3.0) pulls the shared pair harder than H (2.1)."],
+      ["4", "Nitrogen", "N₂", {"lewis": {"label": "Lewis structure of nitrogen", "atoms": [{"s": "N", "x": 35, "y": 45, "lp": ["l"]}, {"s": "N", "x": 95, "y": 45, "lp": ["r"]}], "bonds": [[0, 1, 3]]}}, "Non-polar covalent: two atoms of the same element share three pairs equally (triple bond)."],
+      ["5", "Oxygen", "O₂", {"lewis": {"label": "Lewis structure of oxygen", "atoms": [{"s": "O", "x": 35, "y": 45, "lp": ["t", "l"]}, {"s": "O", "x": 95, "y": 45, "lp": ["t", "r"]}], "bonds": [[0, 1, 2]]}}, "Non-polar covalent: two atoms of the same element share two pairs equally (double bond)."],
+      ["6", "Methane", "CH₄", {"lewis": {"label": "Lewis structure of methane", "w": 130, "h": 92, "atoms": [{"s": "C", "x": 65, "y": 46}, {"s": "H", "x": 25, "y": 46}, {"s": "H", "x": 105, "y": 46}, {"s": "H", "x": 65, "y": 10}, {"s": "H", "x": 65, "y": 82}], "bonds": [[0, 1, 1], [0, 2, 1], [0, 3, 1], [0, 4, 1]]}}, "Non-polar covalent: C (2.5) and H (2.1) have nearly equal pull on the pairs, and the four bonds are arranged symmetrically."],
+      ["7", "Hydrogen", "H₂", {"lewis": {"label": "Lewis structure of hydrogen", "atoms": [{"s": "H", "x": 42, "y": 45}, {"s": "H", "x": 88, "y": 45}], "bonds": [[0, 1, 1]]}}, "Non-polar covalent: two hydrogen atoms share one pair equally."],
+      ["8", "Phosphine", "PH₃", {"lewis": {"label": "Lewis structure of phosphine", "w": 130, "h": 100, "atoms": [{"s": "P", "x": 65, "y": 45, "lp": ["t"]}, {"s": "H", "x": 25, "y": 45}, {"s": "H", "x": 105, "y": 45}, {"s": "H", "x": 65, "y": 85}], "bonds": [[0, 1, 1], [0, 2, 1], [0, 3, 1]]}}, "Non-polar covalent: P (2.1) and H (2.1) have almost the same pull on the shared pairs."],
+      ["9", "Sulphur dioxide", "SO₂", {"lewis": {"label": "Lewis structure of sulphur dioxide", "w": 140, "atoms": [{"s": "O", "x": 28, "y": 45, "lp": ["t", "b"]}, {"s": "S", "x": 70, "y": 45, "lp": ["t"]}, {"s": "O", "x": 112, "y": 45, "lp": ["t", "b", "r"]}], "bonds": [[0, 1, 2], [1, 2, 1, true]]}}, "Polar covalent: O (3.5) pulls the shared pairs harder than S (2.5); one S to O bond is a coordinate (dative) bond."],
+      ["10", "Chlorine", "Cl₂", {"lewis": {"label": "Lewis structure of chlorine", "atoms": [{"s": "Cl", "x": 32, "y": 45, "lp": ["t", "b", "l"]}, {"s": "Cl", "x": 98, "y": 45, "lp": ["t", "b", "r"]}], "bonds": [[0, 1, 1]]}}, "Non-polar covalent: two chlorine atoms share one pair equally."]
+    ]},
+    {"unit": 4, "n": 1, "head": "General property of metals", "rows": [
+      ["can be drawn into wires", "Ductility", "Making electric wires and cables (copper, aluminium)."],
+      ["can be bent into shape", "Malleability", "Beating or pressing metals into sheets and shapes: aluminium foil, utensils, car body panels."],
+      ["reflect light", "Lustre (shininess)", "Mirrors and jewellery (silver, aluminium, gold)."],
+      ["make a ringing sound when struck", "Sonority", "Bells, gongs and musical instruments."],
+      ["allow electricity to pass through", "Electrical conductivity", "Electric wiring and cables (copper)."],
+      ["heavy for their volume", "High density", "Lead weights and sinkers, ballast and balancing weights."],
+      ["transfer heat well", "Thermal conductivity", "Cooking pots and pans (aluminium, copper), radiators."]
+    ]},
+    {"unit": 6, "n": 0, "head": "Does solute dissolve?", "rows": [
+      ["Iodine", "Non-polar", "methylated spirit", "Polar (an alcohol, but its C₂H₅ end is non-polar)", "Yes: it dissolves, giving a red-brown solution."],
+      ["Iodine", "Non-polar", "water", "Polar", "No: only a trace dissolves, the crystals stay at the bottom."],
+      ["Vinegar", "Polar", "water", "Polar", "Yes: it mixes completely (one clear liquid)."],
+      ["Salt", "Ionic", "water", "Polar", "Yes: it dissolves completely (clear, colourless solution)."]
+    ]}
+  ],
+  "work": [
+    {"unit": 1, "n": 0, "starts": "ten elements", "blocks": [
+      {"t": "p", "en": "Ten elements with their symbols and a use of each. The book asks for five uses, so choose any five; if one of the elements is already in the list above it in the book, replace it by another one from the periodic table."},
+      {"t": "table", "head": 1, "rows": [
+        ["Element", "Symbol", "Use in daily life"],
+        ["Iron", "Fe", "Steel for buildings, bridges, vehicles and tools"],
+        ["Copper", "Cu", "Electric wires and cables, cooking utensils"],
+        ["Aluminium", "Al", "Kitchen foil, window frames, cans, aircraft parts"],
+        ["Gold", "Au", "Jewellery and coins"],
+        ["Silver", "Ag", "Jewellery, cutlery and mirrors"],
+        ["Zinc", "Zn", "Coating iron sheets (galvanising) to stop rusting, dry cells"],
+        ["Sulphur", "S", "Matches, medicines, making sulphuric acid"],
+        ["Chlorine", "Cl", "Killing germs in drinking water, bleaching"],
+        ["Neon", "Ne", "Red-orange glowing signboards"],
+        ["Carbon", "C", "Pencil lead (graphite), fuel (charcoal), cutting tools (diamond)"]
+      ]}
+    ]},
+    {"unit": 1, "n": 1, "starts": "model of sodium", "blocks": [
+      {"t": "p", "en": "In a neutral atom the number of protons is the atomic number and the number of electrons is the same. The number of neutrons is the mass number minus the atomic number."},
+      {"t": "table", "head": 1, "rows": [
+        ["Atom", "Symbol", "Protons", "Electrons", "Neutrons", "Electrons in the shells"],
+        ["Sodium", "²³₁₁Na", "11", "11", "23 − 11 = 12", "2, 8, 1"],
+        ["Carbon", "¹²₆C", "6", "6", "12 − 6 = 6", "2, 4"],
+        ["Oxygen", "¹⁶₈O", "8", "8", "16 − 8 = 8", "2, 6"]
+      ]},
+      {"t": "bohr", "sym": "Na", "p": 11, "n": 12, "shells": [2, 8, 1], "cap": "Sodium: 11 protons, 12 neutrons, 11 electrons in the shells 2, 8, 1."},
+      {"t": "bohr", "sym": "C", "p": 6, "n": 6, "shells": [2, 4], "cap": "Carbon: 6 protons, 6 neutrons, 6 electrons in the shells 2, 4."},
+      {"t": "bohr", "sym": "O", "p": 8, "n": 8, "shells": [2, 6], "cap": "Oxygen: 8 protons, 8 neutrons, 8 electrons in the shells 2, 6."},
+      {"t": "h", "l": 4, "en": "How to make the model"},
+      {"t": "ul", "items": [
+        {"en": "Take a piece of cardboard or thermocol for each atom and draw circles for the shells with a compass: two circles for carbon and oxygen, three for sodium."},
+        {"en": "Make the nucleus in the middle from clay: one colour for the protons and another for the neutrons (sodium 11 and 12, carbon 6 and 6, oxygen 8 and 8)."},
+        {"en": "Stick beads of a third colour on the circles for the electrons: sodium 2, 8 and 1; carbon 2 and 4; oxygen 2 and 6."},
+        {"en": "Write the name, the symbol and the numbers of protons, electrons and neutrons under each model, and add a key to the colours."}
+      ]},
+      {"t": "h", "l": 4, "en": "What to say when presenting"},
+      {"t": "ul", "items": [
+        {"en": "Every atom is neutral: the protons (positive) and the electrons (negative) are equal in number."},
+        {"en": "The mass of the atom sits in the nucleus, where the protons and neutrons are."},
+        {"en": "Sodium has one electron in its outer shell and loses it easily to form Na⁺; oxygen has six and gains two to form O²⁻; carbon has four and shares them."}
+      ]}
+    ]},
+    {"unit": 2, "n": 0, "starts": "Bohr's atomic theory", "blocks": [
+      {"t": "p", "en": "Bohr's theory (1913): electrons move around the nucleus only in fixed circular paths called shells or energy levels (K, L, M, N). An electron in a shell does not lose energy; it jumps to a higher shell when it takes in energy and falls back when it gives energy out as light. The shell number n can hold at most 2n² electrons: 2, 8, 18, 32."},
+      {"t": "bohr", "sym": "Cl", "p": 17, "n": 18, "shells": [2, 8, 7], "cap": "Example model, chlorine-35: 17 protons and 18 neutrons in the nucleus; 17 electrons in the K, L and M shells (2, 8, 7)."},
+      {"t": "ul", "items": [
+        {"en": "Draw the nucleus in the middle and write the protons and neutrons in it."},
+        {"en": "Draw one circle for each shell and label them K, L, M outwards."},
+        {"en": "Put the electrons on the circles, filling K first (2), then L (8), then M."},
+        {"en": "Write the atomic number, the mass number and the electron arrangement under the model and display it in the laboratory."}
+      ]}
+    ]},
+    {"unit": 2, "n": 1, "starts": "radioactive tracers", "blocks": [
+      {"t": "h", "l": 4, "en": "1. Radioactive tracers in medicine"},
+      {"t": "p", "en": "A radioactive tracer is a small amount of a radioactive isotope that is swallowed, injected or breathed in. The radiation it gives out is picked up by a scanner outside the body, so doctors can see where the tracer goes and how an organ is working. Larger doses of some isotopes are used to destroy diseased cells."},
+      {"t": "table", "head": 1, "rows": [
+        ["Isotope", "Use"],
+        ["Technetium-99m", "The most used tracer: scans of bones (fractures, spread of cancer), heart (blood flow), lungs and kidneys."],
+        ["Iodine-131", "The thyroid takes up iodine, so it shows the size and working of the thyroid; a larger dose treats an overactive thyroid and thyroid cancer."],
+        ["Fluorine-18 (in a sugar called FDG)", "PET scans: it collects in cells that use a lot of sugar, so it shows cancers and active areas of the brain."],
+        ["Cobalt-60", "Not a tracer: its gamma rays are directed at a tumour from outside the body to treat cancer (radiotherapy)."]
+      ]},
+      {"t": "p", "en": "These isotopes are safe in small amounts because most have short half-lives (technetium-99m about 6 hours, fluorine-18 about 2 hours, iodine-131 about 8 days), so the radiation soon dies away."},
+      {"t": "h", "l": 4, "en": "2. Models of Rutherford and Bohr (group work)"},
+      {"t": "ul", "items": [
+        {"en": "Rutherford model (1911): a tiny, dense, positive nucleus in the centre, with the electrons moving around it like planets round the sun; most of the atom is empty space. Make it from a clay ball for the nucleus, wire rings and beads for the electrons, without labelled shells."},
+        {"en": "Bohr model (1913): electrons only in fixed shells K, L, M with fixed energy. Make it with labelled rings and the number of electrons each ring can hold (2, 8, 18)."},
+        {"en": "Share the work: group 1 makes the Rutherford model, groups 2 to 5 make Bohr models of hydrogen, carbon, sodium and chlorine."},
+        {"en": "When presenting, compare them: Rutherford's atom could not explain why the electrons do not spiral into the nucleus; Bohr's shells did, and also explained the colours of light given out by hydrogen."}
+      ]},
+      {"t": "bohr", "sym": "H", "p": 1, "n": 0, "shells": [1], "cap": "Bohr model of hydrogen: 1 proton, 1 electron."},
+      {"t": "bohr", "sym": "C", "p": 6, "n": 6, "shells": [2, 4], "cap": "Bohr model of carbon: 6 protons, 6 neutrons, shells 2, 4."}
+    ]},
+    {"unit": 3, "n": 0, "starts": "evolution of the current periodic table", "blocks": [
+      {"t": "p", "en": "Mendeleev's table (1869) put the elements in order of atomic mass and left gaps for elements not yet found. After 1900 it became the table we use today:"},
+      {"t": "table", "head": 1, "rows": [
+        ["Year", "Chemist", "Contribution"],
+        ["1894 to 1900", "William Ramsay (with Lord Rayleigh)", "Discovered the noble gases (argon, helium on Earth, neon, krypton, xenon), which added a new group at the right of the table."],
+        ["1905", "Alfred Werner", "Proposed the long form of the table, with the transition elements between the groups: the layout in use today."],
+        ["1913", "Henry Moseley", "Showed by X-ray spectra that the atomic number (number of protons), not atomic mass, fixes the order of the elements: the modern periodic law. It cured the misplaced pairs (for example argon and potassium) and showed which elements were still missing."],
+        ["1913 to 1922", "Niels Bohr", "His electron shells explained why elements of a group behave alike (same number of outer electrons) and why the periods end after 2, 8, 8 elements."],
+        ["1937", "Carlo Perrier and Emilio Segrè", "Made technetium, the first element produced artificially, filling the gap at atomic number 43."],
+        ["1940 to 1945", "Glenn Seaborg", "Discovered plutonium and other elements after uranium and placed the actinides in a separate row below the table, like the lanthanides; Nobel Prize 1951."],
+        ["2016", "IUPAC", "Approved the names nihonium (113), moscovium (115), tennessine (117) and oganesson (118), completing the seventh period: 118 elements."]
+      ]},
+      {"t": "h", "l": 4, "en": "Outline of the report"},
+      {"t": "ul", "items": [
+        {"en": "Before 1900: Döbereiner's triads (1829), Newlands' octaves (1864), Mendeleev and Meyer (1869)."},
+        {"en": "Changes since 1900: the table above, in the order of the years."},
+        {"en": "The table today: 118 elements in order of atomic number, 7 periods, 18 groups, and the s, p, d and f blocks."},
+        {"en": "Conclusion: the table grew from atomic mass to atomic number and electron arrangement."}
+      ]}
+    ]},
+    {"unit": 4, "n": 0, "starts": "covalent or ionic", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["Substance", "Type", "Reason"],
+        ["CO₂", "Covalent", "Carbon and oxygen are both non-metals and share electrons."],
+        ["NaCl", "Ionic", "A metal gives an electron to a non-metal: Na⁺ and Cl⁻ ions."],
+        ["H₂O", "Covalent", "Hydrogen and oxygen are non-metals and share electrons."],
+        ["C₆H₆", "Covalent", "Carbon and hydrogen are non-metals and share electrons."],
+        ["MgCl₂", "Ionic", "Magnesium gives two electrons, one to each of two chlorine atoms: Mg²⁺ and 2 Cl⁻."],
+        ["HCl", "Covalent", "Hydrogen and chlorine share a pair of electrons (a polar covalent bond)."]
+      ]}
+    ]},
+    {"unit": 4, "n": 1, "starts": "ten common substances", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["Substance at home", "Chemical", "Bond"],
+        ["Table salt", "NaCl", "Ionic"],
+        ["Sugar", "C₁₂H₂₂O₁₁", "Covalent"],
+        ["Water", "H₂O", "Covalent"],
+        ["Copper wire", "Cu", "Metallic"],
+        ["Aluminium foil", "Al", "Metallic"],
+        ["Baking soda", "NaHCO₃", "Ionic (between Na⁺ and HCO₃⁻; covalent inside the HCO₃⁻ ion)"],
+        ["Cooking oil", "Compounds of C, H and O", "Covalent"],
+        ["Polythene bag", "(C₂H₄)ₙ", "Covalent"],
+        ["Iron nail", "Fe", "Metallic"],
+        ["Chalk or marble", "CaCO₃", "Ionic (between Ca²⁺ and CO₃²⁻; covalent inside the CO₃²⁻ ion)"]
+      ]}
+    ]},
+    {"unit": 4, "n": 3, "starts": "Linus Pauling", "blocks": [
+      {"t": "p", "en": "Linus Pauling (1901 to 1994) was an American chemist, born in Portland, Oregon. He used quantum mechanics to explain how atoms bond."},
+      {"t": "table", "head": 1, "rows": [
+        ["Year", "Work"],
+        ["1931", "Paper on the nature of the chemical bond: the idea of hybrid orbitals (for example the four equal bonds of carbon) and of resonance."],
+        ["1932", "Introduced the electronegativity scale (fluorine 4.0 is the highest). The difference in electronegativity tells how unequally two atoms share a pair: none gives a non-polar covalent bond, a small difference a polar covalent bond, a large difference an ionic bond."],
+        ["1939", "Published the book The Nature of the Chemical Bond."],
+        ["1949 to 1951", "Showed sickle-cell anaemia is a disease of one changed molecule (haemoglobin) and found the shape of protein chains (the alpha helix)."],
+        ["1954", "Nobel Prize in Chemistry for his research into the nature of the chemical bond."],
+        ["1962", "Nobel Peace Prize (presented in 1963) for his campaign against nuclear weapons tests."]
+      ]},
+      {"t": "p", "en": "His main point for this unit: a bond is not simply ionic or covalent; most bonds lie between the two, and electronegativity measures how far a bond is from the equal sharing of electrons."}
+    ]},
+    {"unit": 5, "n": 0, "starts": "bromine vapours", "blocks": [
+      {"t": "ul", "items": [
+        {"en": "What you see: the brown bromine vapour moves out of its jar into the jar of air above it, until both jars have the same brown colour."},
+        {"en": "Why: gas particles move all the time in every direction. Bromine particles spread out of the crowded jar into the jar that has none, and the air particles spread the other way, until they are evenly mixed. This spreading is called diffusion."},
+        {"en": "What it proves: gases mix on their own, without stirring. Bromine vapour is much heavier than air, yet it still goes upwards, so the mixing is caused by the motion of the particles, not by weight."},
+        {"en": "Care: bromine is poisonous and burns the skin; the teacher does this in a fume cupboard."}
+      ]}
+    ]},
+    {"unit": 5, "n": 1, "starts": "liquid bromine", "blocks": [
+      {"t": "ul", "items": [
+        {"en": "What you see: a few drops of liquid bromine at the bottom of a closed jar turn into brown vapour, which slowly rises and fills the jar until the colour is the same everywhere."},
+        {"en": "Why: the bromine particles leave the liquid, move about in the air and spread to the places where there are fewer of them. This is diffusion; it is slow because the particles keep hitting air particles."},
+        {"en": "Conclusion: diffusion takes place in gases, and also from a liquid into a gas; the particles of matter are always moving."},
+        {"en": "Care: only the teacher handles liquid bromine, in a fume cupboard."}
+      ]}
+    ]},
+    {"unit": 5, "n": 2, "starts": "crystalline and amorphous", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["Crystalline solids at home", "Amorphous solids at home"],
+        ["Table salt (sodium chloride)", "Glass of windows and bottles"],
+        ["Sugar", "Plastic bags and bottles"],
+        ["Ice", "Rubber bands and tyres"],
+        ["Sand and quartz (silicon dioxide)", "Candle wax"],
+        ["Washing soda and baking soda", "Charcoal and coal"],
+        ["Alum (phitkari) and copper sulphate", "Tar (bitumen) and chewing gum"],
+        ["Metals: copper wire, iron nails, aluminium foil", "Silica gel in packets, dried glue"],
+        ["Diamond in jewellery", "Plastic toys and wax crayons"]
+      ]},
+      {"t": "p", "en": "A crystalline solid has its particles in a regular repeating pattern, a sharp melting point and flat faces. An amorphous solid has its particles in no regular pattern and softens over a range of temperature before it melts."}
+    ]},
+    {"unit": 6, "n": 0, "starts": "0.5000 M solution", "blocks": [
+      {"t": "ul", "items": [
+        {"en": "Molar mass of CuSO₄·5H₂O = 63.6 + 32 + (4 × 16) + (5 × 18) = 249.6 g per mol."},
+        {"en": "Mass needed for 1 dm³ of 0.5000 M solution = 0.5000 mol × 249.6 g per mol = 124.8 g."},
+        {"en": "Weigh 124.8 g of the blue crystals on a balance and dissolve them in some water."},
+        {"en": "Pour the solution into a 1.0 dm³ volumetric flask, rinsing the beaker into the flask so that no solute is lost."},
+        {"en": "Add water up to the neck of the flask, stopper it and shake; then fill carefully to the 1.0 dm³ mark, put the stopper back and turn the flask over at least 10 times to mix."},
+        {"en": "Check: 0.5000 mol in 1.000 dm³ = 0.5000 mol per dm³ = 0.5000 M."}
+      ]}
+    ]},
+    {"unit": 6, "n": 1, "starts": "solubility of solutes", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["Mixture", "What you should see"],
+        ["Salt in water", "The grains disappear; a clear, colourless solution."],
+        ["Vinegar in water", "Mixes completely; one clear liquid with the smell of vinegar."],
+        ["Iodine in water", "Almost nothing dissolves; the dark crystals stay at the bottom and the water is only faintly yellow."],
+        ["Iodine in methylated spirit", "The crystals dissolve; a red-brown solution."]
+      ]},
+      {"t": "p", "en": "Conclusion: like dissolves like. Salt is ionic and vinegar is polar, so both dissolve in polar water. Iodine is non-polar, so it hardly dissolves in polar water, but it dissolves in methylated spirit because the spirit's C₂H₅ part is non-polar. The results are written in the table below this activity (use its Fill the table button)."}
+    ]},
+    {"unit": 6, "n": 2, "starts": "pure substances and which are mixtures", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["", "Substance", "Pure substance or mixture", "Why"],
+        ["a", "Sea water", "Mixture", "Water with salts and other substances dissolved in it"],
+        ["b", "Cooking oil", "Mixture", "A blend of several fats and oils"],
+        ["c", "Coal", "Mixture", "Carbon with other compounds and minerals"],
+        ["d", "Steel", "Mixture (alloy)", "Iron with a little carbon"],
+        ["e", "Chilli sauce", "Mixture", "Chillies, vinegar, salt, sugar and water"],
+        ["f", "Bronze", "Mixture (alloy)", "Copper with tin"],
+        ["g", "Sand", "Mixture", "Mainly silicon dioxide with small amounts of other minerals"],
+        ["h", "Gold", "Pure substance", "An element: only gold atoms"],
+        ["i", "Orange squash", "Mixture", "Juice, sugar, water, colour and flavour"],
+        ["j", "Salt", "Pure substance", "A compound: sodium chloride only"],
+        ["k", "Milk", "Mixture", "Water, fat, protein and milk sugar"],
+        ["l", "Oxygen gas", "Pure substance", "An element: only oxygen molecules"],
+        ["m", "Air", "Mixture", "Nitrogen, oxygen, argon, carbon dioxide and water vapour"],
+        ["n", "Orange juice", "Mixture", "Water, sugars, acids and other substances"],
+        ["o", "Coke", "Mixture", "Water with sugar, flavours and dissolved carbon dioxide"],
+        ["p", "Soil", "Mixture", "Sand, clay, humus, water and air"]
+      ]},
+      {"t": "p", "en": "Pure substances: gold, salt and oxygen gas. The other thirteen are mixtures."}
+    ]},
+    {"unit": 7, "n": 0, "starts": "batteries", "blocks": [
+      {"t": "table", "head": 1, "rows": [
+        ["Battery", "Advantages", "Disadvantages"],
+        ["Lithium-ion (nickel-manganese-cobalt type)", "Stores a lot of energy for its weight, so a long range; used in most electric cars; can be charged many hundreds of times.", "Expensive (cobalt and nickel); can overheat and catch fire if damaged; wears out with age and heat."],
+        ["Lithium iron phosphate (LFP)", "Safer, lasts for thousands of charges, cheaper, contains no cobalt or nickel.", "Stores less energy for its weight, so a shorter range; weaker in cold weather."],
+        ["Nickel-metal hydride", "Proven (used in hybrid cars), safe and long-lasting.", "Heavier and stores less energy than lithium-ion; loses charge when standing."],
+        ["Lead-acid", "Cheap, reliable and easy to recycle.", "Very heavy and stores little energy, so it is only used for the 12 V system in cars."],
+        ["Solid-state (being developed)", "No liquid inside, so safer; stores more energy and charges faster.", "Costly and hard to make in large numbers; not yet in everyday cars."],
+        ["Sodium-ion (new)", "Sodium is cheap and plentiful; works well in cold weather.", "Stores less energy than lithium-ion; still at an early stage."]
+      ]},
+      {"t": "p", "en": "Your report can end with a comparison: lithium-ion batteries lead today, LFP is spreading because of its safety and price, and solid-state and sodium-ion batteries are the ones to watch. Mention recycling of used batteries as an environmental point."}
+    ]},
+    {"unit": 8, "n": 0, "starts": "alkali and alkaline earth metals", "blocks": [
+      {"t": "h", "l": 4, "en": "Compounds of the alkali metals (group 1)"},
+      {"t": "table", "head": 1, "rows": [
+        ["Compound", "Uses"],
+        ["Sodium chloride, NaCl (common salt)", "Food and preserving food; raw material for chlorine, sodium hydroxide and sodium carbonate."],
+        ["Sodium hydroxide, NaOH (caustic soda)", "Making soap, paper and textiles; cleaning drains."],
+        ["Sodium carbonate, Na₂CO₃ (washing soda)", "Washing clothes, softening hard water, making glass."],
+        ["Sodium hydrogencarbonate, NaHCO₃ (baking soda)", "Baking, antacid for acidity, fire extinguishers."],
+        ["Potassium nitrate, KNO₃", "Fertiliser, gunpowder and fireworks."],
+        ["Potassium chloride, KCl", "Fertiliser (potash) for crops."],
+        ["Potassium hydroxide, KOH", "Soft soap, alkaline batteries."],
+        ["Lithium carbonate, Li₂CO₃", "Medicine for mood disorders, making lithium batteries."]
+      ]},
+      {"t": "h", "l": 4, "en": "Compounds of the alkaline earth metals (group 2)"},
+      {"t": "table", "head": 1, "rows": [
+        ["Compound", "Uses"],
+        ["Calcium carbonate, CaCO₃ (limestone, marble, chalk)", "Building stone, making cement, lime and glass; chalk; antacid tablets."],
+        ["Calcium oxide, CaO (quicklime)", "Making cement and steel; making slaked lime."],
+        ["Calcium hydroxide, Ca(OH)₂ (slaked lime)", "Whitewash, treating acidic soil and water, lime water test for carbon dioxide."],
+        ["Calcium sulphate, CaSO₄·2H₂O (gypsum)", "Plaster of Paris for casts and walls, cement."],
+        ["Calcium chloride, CaCl₂", "Drying agent; melting ice on roads."],
+        ["Magnesium oxide, MgO", "Bricks for lining furnaces; antacid."],
+        ["Magnesium hydroxide, Mg(OH)₂ (milk of magnesia)", "Medicine for acidity and constipation."],
+        ["Magnesium sulphate, MgSO₄·7H₂O (Epsom salt)", "Bath salts, medicine, fertiliser."],
+        ["Barium sulphate, BaSO₄", "Barium meal for X-ray pictures of the stomach; white paint."],
+        ["Strontium nitrate, Sr(NO₃)₂", "Red colour in fireworks and flares."]
+      ]},
+      {"t": "p", "en": "For the classroom chart: make one chart for each group, write the name and formula of the compound in one column and its uses in the other, and draw a small picture of the product next to each."}
+    ]}
+  ]
+}

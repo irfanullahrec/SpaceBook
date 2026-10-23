@@ -357,6 +357,27 @@
     if (parts.length !== 3) return inline(c, false);
     return `${inline(parts[0], true)}<span class="m6-hsub"><span lang="ur">${inline(parts[1], false)}</span> · <span lang="ps">${inline(parts[2], false)}</span></span>`;
   }
+  // ---- fills: a table with empty cells or a project box has a button when js/fills_data.js holds its answer (js/sb_fill.js opens it) ----
+  // The key is a hash of the book title and the text of the table / box, so a fill never shows up on a table that was edited since it was written.
+  function fillHash(str) {
+    let a = 0x811c9dc5, b = 0x9747b28c;
+    for (let i = 0; i < str.length; i++) { const c = str.charCodeAt(i); a = Math.imul(a ^ c, 0x01000193); b = Math.imul(b ^ c, 0x85ebca6b) ^ (b >>> 13); }
+    return (a >>> 0).toString(16).padStart(8, '0') + (b >>> 0).toString(16).padStart(8, '0');
+  }
+  const cellText = c => String(typeof c === 'string' ? c : (c && c.en) || '').replace(/\s+/g, ' ').trim();
+  function plainOf(list) {
+    return (list || []).map(x => {
+      if (!x || typeof x !== 'object') return '';
+      if (x.t === 'ul') return (x.items || []).map(i => cellText(i)).join(' ');
+      if (x.t === 'table') return (x.rows || []).map(r => r.map(cellText).join(' ')).join(' ');
+      if (x.t === 'q') return cellText(x.no) + ' ' + cellText(x.en) + ' ' + plainOf(x.parts);
+      return cellText(x.en) + ' ' + plainOf(x.blocks);
+    }).join(' ').replace(/\s+/g, ' ').trim();
+  }
+  const fillKeyOfTable = b => fillHash(((BOOK && BOOK.title) || '') + '|T|' + b.rows.map(r => r.map(cellText).join('¦')).join('¶'));
+  const fillKeyOfBox = b => fillHash(((BOOK && BOOK.title) || '') + '|B|' + cellText(b.title) + '|' + plainOf(b.blocks));
+  const hasFill = k => !!(window.SB_FILLS && window.SB_FILLS[k]);
+  const hasEmpty = b => b.rows.slice(b.head || 0).some(r => r.some(c => !cellText(c)));
   // Book figures without an explicit width draw at about their viewBox size instead of stretching to the column.
   function natural(svg) {
     return svg.replace(/<svg(?![^>]*\swidth=)([^>]*\sviewBox="[\d.\-]+ [\d.\-]+ ([\d.]+) [\d.]+")/, (m, attrs, w) => `<svg width="${Math.round(w * 1.3)}"${attrs}`);
@@ -375,7 +396,8 @@
         case 'ul': return `<ul class="m6-ul">${b.items.map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul>`;
         case 'box': {
           const label = b.title ? b.title : (BOX_LABEL[b.kind] ? {en: BOX_LABEL[b.kind]} : null);
-          return `<aside class="m6-box ${esc(b.kind)}">${label ? `<div class="m6-box-t">${label.ur ? sentence(label, 'span') : esc(label.en)}</div>` : ''}${blocks(b.blocks, ctx)}</aside>`;
+          const fk = fillKeyOfBox(b), fb = hasFill(fk) ? `<button type="button" class="sb-fill-btn" aria-expanded="false" onclick="SBFill.work(this)">Show the work</button>` : '';
+          return `<aside class="m6-box ${esc(b.kind)}"${fb ? ` data-fkey="${fk}"` : ''}>${label || fb ? `<div class="m6-box-t">${label ? (label.ur ? sentence(label, 'span') : esc(label.en)) : ''}${fb}</div>` : ''}${blocks(b.blocks, ctx)}</aside>`;
         }
         case 'example': return `<section class="m6-example"><div class="m6-example-t">${/^\d/.test(b.no) ? 'Example ' + esc(b.no) : esc(b.no)}${b.title ? ': ' : ''}${b.title ? (b.title.ur ? sentence(b.title, 'span') : inline(b.title.en, true)) : ''}</div>${blocks(b.blocks, ctx)}</section>`;
         case 'exercise': {
@@ -387,7 +409,8 @@
         case 'svg': return `<figure class="m6-fig">${natural(b.svg)}${b.cap ? `<figcaption>${b.cap.ur ? sentence(b.cap, 'span') : inline(b.cap.en, true)}</figcaption>` : ''}</figure>`;
         case 'table': {
           const head = b.rows.slice(0, b.head), body = b.rows.slice(b.head);
-          return `<div class="m6-table"><table>${b.cap ? `<caption>${b.cap.ur ? sentence(b.cap, 'span') : esc(b.cap.en)}</caption>` : ''}${head.length ? `<thead>${head.map(r => `<tr>${r.map(c => `<th scope="col">${cell(c)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${body.map(r => `<tr>${r.map(c => `<td>${cell(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+          const tk = hasEmpty(b) ? fillKeyOfTable(b) : '', tf = tk && hasFill(tk);
+          return `<div class="m6-table"${tf ? ` data-fkey="${tk}"` : ''}>${tf ? `<div class="sb-fill-bar"><button type="button" class="sb-fill-btn" aria-pressed="false" onclick="SBFill.table(this)">Fill the table</button></div>` : ''}<table>${b.cap ? `<caption>${b.cap.ur ? sentence(b.cap, 'span') : esc(b.cap.en)}</caption>` : ''}${head.length ? `<thead>${head.map(r => `<tr>${r.map(c => `<th scope="col">${cell(c)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${body.map(r => `<tr>${r.map(c => `<td>${cell(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
         }
         default: return '';
       }
@@ -590,5 +613,5 @@
     if (whole && partNo && partAnswer(whole, partNo)) return {kind: 'part', answer: partAnswer(whole, partNo)};
     return whole ? {kind: partNo ? 'whole' : 'part', answer: whole} : {kind: 'none', answer: ''};
   }
-  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, pageCards, css: true, answerOf, partKey, partLabels, isRoman, keyParts};
+  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, pageCards, css: true, answerOf, partKey, partLabels, isRoman, keyParts, fillKeyOfTable, fillKeyOfBox, cellText};
 })();
