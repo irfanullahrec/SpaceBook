@@ -14931,13 +14931,9 @@ function openMathView(classId, subj) {
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
-        <div class="math-sidebar-footer">
-          ${classId === 'cls12'
-            ? `<div class="math-pdf-btn" aria-label="Class 12 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
-            : classId === 'cls9' || classId === 'cls11'
-              ? `<div class="math-pdf-btn" aria-label="Mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
-              : (sbPdf(pdfFile) ? `<a href="${sbPdf(pdfFile)}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a>` : '')}
-        </div>
+        ${classId === 'cls12' || classId === 'cls9' || classId === 'cls11'
+          ? ''      // these books have no PDF link; the footer only said "Interactive lessons with typeset math", so there is no footer
+          : (sbPdf(pdfFile) ? `<div class="math-sidebar-footer"><a href="${sbPdf(pdfFile)}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a></div>` : '')}
       </div>
       <div class="math-topic-area" id="mathTopicArea"></div>
     </div>`;

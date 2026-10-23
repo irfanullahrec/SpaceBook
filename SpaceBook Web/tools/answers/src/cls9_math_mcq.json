@@ -1,0 +1,25 @@
+{
+ "book": "A Textbook of Mathematics Grade IX (KPTBB, English medium)",
+ "note": "Review questions of Class 9 Mathematics whose printed answer key disagrees with the maths of the question as printed. Every other review MCQ of the book was checked and agrees with its printed key, except the ones that depend on a figure that is not in the data (R9 vii-ix, R13 iv, R14 i and v, R17 ii), which keep the printed key.",
+ "mcq": [
+  {"ex": "R1", "q": "1", "part": "(ii)", "letter": "c", "printed": "a", "why": "The only non-zero entries are on the diagonal and 4 ≠ −12, so it is a diagonal matrix; a scalar matrix would need equal diagonal entries."},
+  {"ex": "R1", "q": "1", "part": "(iii)", "letter": "b", "printed": "a", "why": "For A = [a b; c d] the adjoint is [d −b; −c a], so adj A = [1 2; −3 −1]."},
+  {"ex": "R1", "q": "1", "part": "(iv)", "letter": "d", "printed": "c", "why": "det A = 2·4 − 3·3 = −1, so A⁻¹ = (1/−1)·[4 −3; −3 2] = [−4 3; 3 −2]."},
+  {"ex": "R1", "q": "1", "part": "(v)", "letter": "c", "printed": "b", "why": "The matrix is not invertible when its determinant is 0: 5d − 2(1.5) = 5d − 3 = 0, so d = 0.6."},
+  {"ex": "R1", "q": "1", "part": "(vii)", "letter": "b", "printed": "d", "why": "The determinant of [1 2; 0 1] is 1, so its inverse is [1 −2; 0 1]."},
+  {"ex": "R1", "q": "1", "part": "(viii)", "letter": "c", "printed": "d", "why": "The determinant is 4·2 − (−1)(−9) = 8 − 9 = −1."},
+  {"ex": "R7", "q": "1", "part": "i)", "letter": "c", "printed": "c", "why": "½|x − 6| − 4 = −1 gives |x − 6| = 6, so x = 12 or x = 0."},
+  {"ex": "R7", "q": "1", "part": "iii)", "letter": "b", "printed": "a", "why": "√x = −10 has no solution: a square root is never negative (squaring gives x = 100, which does not satisfy it). The solution set is empty."},
+  {"ex": "R7", "q": "1", "part": "vi)", "letter": "a", "printed": "b", "why": "√(5x + 3) = 2 gives 5x + 3 = 4, so x = 1/5, and it checks."},
+  {"ex": "R7", "q": "1", "part": "vii)", "letter": "a", "printed": "a", "why": "|5x/3| = 5 gives x = 3 or x = −3. Option a is the closest: it prints only {3}, but the solution set is {3, −3}."},
+  {"ex": "R7", "q": "1", "part": "viii)", "letter": "d", "printed": "c", "why": "|−x| = 0 only when x = 0, so the solution set is {0}."},
+  {"ex": "R8", "q": "1", "part": "i)", "letter": "d", "printed": "c", "why": "(5, −2): x positive and y negative is the fourth quadrant."},
+  {"ex": "R8", "q": "1", "part": "iii)", "letter": "b", "printed": "a", "why": "(−3, 8): x negative and y positive is the second quadrant."},
+  {"ex": "R8", "q": "1", "part": "v)", "letter": "c", "printed": "d", "why": "(−6, −6): both negative is the third quadrant."},
+  {"ex": "R8", "q": "1", "part": "vi)", "letter": "a", "printed": "b", "why": "x = a is a vertical line, which is parallel to the y-axis."},
+  {"ex": "R9", "q": "1", "part": "x)", "letter": "b", "printed": "c", "why": "|AB| = √((0 − 3)² + (3 − 0)²) = √18 (which is 3√2, not 9√2)."},
+  {"ex": "R11", "q": "1", "part": "ix)", "letter": "a", "printed": "d", "why": "The diagonals of a square are perpendicular (they are also congruent, option c); they are never parallel."},
+  {"ex": "R12", "q": "1", "part": "vii)", "letter": "x", "printed": "d", "why": "Options a, b and c are all true for an equilateral triangle (its perpendicular bisectors are congruent, concurrent and also its angle bisectors); d is false, since perpendicular bisectors of a triangle meet at a point.", "noLetter": true},
+  {"ex": "R16", "q": "1", "part": "iv)", "letter": "b", "printed": "d", "why": "Parallelograms on the same base and between the same parallels are equal in area; they need not be congruent or similar."}
+ ]
+}
