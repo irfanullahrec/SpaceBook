@@ -163,6 +163,16 @@ check('another account sees none of it', pull($b['token'])['json']['items'] === 
 $x = sync_post($b['token'], [put('bm', bm_key(), bm_value('cls5-math', 2, 3, '', 'Mine'), $now)]);
 check('and the same key in another account is its own row', items_of(pull($b['token'])['json'], 'bm')[bm_key()]['value']['t'] === 'Mine' && items_of(pull($a['token'])['json'], 'bm')[bm_key()]['value']['t'] === 'Fractions');
 
+// ---- housekeeping: old tombstones go, recent ones and live items stay
+$tt = test_pdo();
+$tt->exec("INSERT INTO user_items (user_id, kind, item_key, value_json, at_ms, deleted, rev, updated_ms) VALUES ({$a['id']}, 'bm', 'old|1||1', '{}', 5, 1, 1, " . ((time() - 200 * 86400) * 1000) . "), ({$a['id']}, 'bm', 'new|1||1', '{}', 5, 1, 1, " . ((time() - 10 * 86400) * 1000) . ")");
+$before = (int)$tt->query("SELECT COUNT(*) FROM user_items WHERE user_id = {$a['id']} AND deleted = 0")->fetchColumn();
+$pr = run_php([$api . '/migrate.php', 'prune'], ['SB_CONFIG' => $cfg]);
+check('prune removes tombstones older than 180 days only', $pr['code'] === 0 && strpos($pr['out'], 'user_items_deleted=1') !== false
+    && (int)$tt->query("SELECT COUNT(*) FROM user_items WHERE user_id = {$a['id']} AND item_key = 'old|1||1'")->fetchColumn() === 0
+    && (int)$tt->query("SELECT COUNT(*) FROM user_items WHERE user_id = {$a['id']} AND item_key = 'new|1||1'")->fetchColumn() === 1
+    && (int)$tt->query("SELECT COUNT(*) FROM user_items WHERE user_id = {$a['id']} AND deleted = 0")->fetchColumn() === $before, $pr['out'] . $pr['err']);
+
 // ---- export and the 30-day purge
 $ex = http('GET', 'auth.php?action=export', null, [], $a['jar']);
 $exItems = isset($ex['json']['saved_items']) ? $ex['json']['saved_items'] : [];

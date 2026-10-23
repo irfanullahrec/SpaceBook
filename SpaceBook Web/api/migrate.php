@@ -16,12 +16,13 @@ case 'up':
 case 'down':
     echo 'undone: ', json_encode(sb_migrate_down($pdo, max(1, (int)(isset($argv[2]) ? $argv[2] : 1)))), "\n";
     break;
-case 'prune':   // housekeeping: old login attempts, expired rate-limit counters, old audit rows
+case 'prune':   // housekeeping: old login attempts, expired rate-limit counters, old audit rows, old tombstones of deleted saved items
     $a = $pdo->exec('DELETE FROM login_attempts WHERE attempted_at < NOW() - INTERVAL 30 DAY');
     $b = $pdo->exec('DELETE FROM rate_limits WHERE window_start < NOW() - INTERVAL 1 DAY');
     $c = $pdo->exec('DELETE FROM audit_log WHERE created_at < NOW() - INTERVAL 365 DAY');
     $d = $pdo->exec('DELETE FROM sync_errors WHERE created_at < NOW() - INTERVAL 90 DAY');
-    echo "pruned login_attempts=$a rate_limits=$b audit_log=$c sync_errors=$d\n";
+    $e = $pdo->exec('DELETE FROM user_items WHERE deleted = 1 AND updated_ms < ' . ((time() - 180 * 86400) * 1000));      // tombstones of deleted bookmarks and notes older than half a year
+    echo "pruned login_attempts=$a rate_limits=$b audit_log=$c sync_errors=$d user_items_deleted=$e\n";
     break;
 case 'purge':   // accounts deleted more than 30 days ago, with all their records
     require __DIR__ . '/lib/account.php';
