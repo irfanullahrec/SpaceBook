@@ -613,5 +613,7 @@
     if (whole && partNo && partAnswer(whole, partNo)) return {kind: 'part', answer: partAnswer(whole, partNo)};
     return whole ? {kind: partNo ? 'whole' : 'part', answer: whole} : {kind: 'none', answer: ''};
   }
-  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, pageCards, css: true, answerOf, partKey, partLabels, isRoman, keyParts, fillKeyOfTable, fillKeyOfBox, cellText};
+  // leafAnswer: the Ans record of one question or part as its button would show it (printed key, written answer), for tools/tests/build_test_bank.js
+  const leafAnswer = (exId, q, owner, partNo, optText) => { const own = owner || q; return leafRec(exId, own, answersFor(exId)[own.no], partNo, optText); };
+  window.MATH6_READER = {blocks, inline, sentence, card, root, withBook, esc, pageCards, css: true, answerOf, partKey, partLabels, isRoman, keyParts, fillKeyOfTable, fillKeyOfBox, cellText, leafAnswer};
 })();

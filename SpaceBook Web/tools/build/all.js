@@ -34,6 +34,9 @@ const STEPS = [
   // after the search index (it reads the chapter calls from it): what the Android app lists, so the app and the website cannot disagree about classes, subjects and chapters
   { id: 'app-catalog', what: 'classes, subjects and chapters the Android app lists, with the call that opens each chapter (assets/app_catalog.json in the app)',
     outputs: ['content/app_catalog.json'], run: node('tools/build/make_app_catalog.js'), checkNative: node('tools/build/make_app_catalog.js', '--check') },
+  // after the catalog (chapters of each subject): the questions of every book for "Create Test", one file per class (the check compares the hash of the inputs, no book is loaded)
+  { id: 'testbank', what: 'questions of all books by subject, chapter and topic, with answers (Create Test)',
+    outputs: ['content/testbank/index.json'], run: node('tools/tests/build_test_bank.js'), checkNative: node('tools/tests/build_test_bank.js', '--check') },
   // after the lazy page: it lists what each subject loads and the shell of the service worker (both carry content hashes of the files above)
   { id: 'offline', what: 'what each subject needs offline, and the service worker version (Download for offline, sw.js)',
     outputs: ['content/offline_map.json', 'content/sw_version.js'], run: node('tools/build/make_offline.js'), checkNative: node('tools/build/make_offline.js', '--check') },

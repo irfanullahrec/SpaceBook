@@ -11,7 +11,7 @@
   const keyOf = card => card.id || (card.querySelector('.math-acc-header, .slo-accordion-header, summary') || card).textContent.trim().slice(0, 120);
 
   function closeCard(card) {
-    if (opened.has(keyOf(card))) return;
+    if (opened.has(keyOf(card)) || card.hasAttribute('data-keep-open')) return;     // a card a page opened on purpose (Create Test's ticked subjects) stays
     if (card.tagName === 'DETAILS') { card.removeAttribute('open'); return; }
     card.classList.remove('open');
     const body = card.querySelector(':scope > .math-accordion-body, :scope > .slo-accordion-body, .math-accordion-body, .slo-accordion-body');
