@@ -238,9 +238,11 @@
     const host = document.createElement('div');
     host.className = 'sb-pt'; host.setAttribute('dir', med === 'en' ? 'ltr' : 'rtl');
     let which = null, kind = 'mcq';
-    host.innerHTML = `<div class="sb-pt-bar" role="tablist" aria-label="${esc(TT.slo)} / ${esc(TT.ex)}">
+    host.innerHTML = `<div class="sb-pt-bar">
+        <span style="display:contents" role="tablist" aria-label="${esc(TT.slo)} / ${esc(TT.ex)}">
         <button type="button" class="sb-pt-tab" role="tab" data-w="slo" aria-selected="false">${TT.slo} <i>${total(st.slo)}</i></button>
         <button type="button" class="sb-pt-tab" role="tab" data-w="ex" aria-selected="false">${TT.ex} <i>${total(st.ex)}</i></button>
+        </span>
         <button type="button" class="sb-pt-tab sb-pt-game" data-game="1" aria-haspopup="dialog">${TT.game}</button>
       </div>
       <div class="sb-pt-drawer" hidden>
