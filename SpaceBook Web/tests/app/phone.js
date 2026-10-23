@@ -19,7 +19,8 @@ async function open(opts = {}) {
   fs.mkdirSync(out, { recursive: true });
   const { server, url } = await serve(0);
   const browser = await launch();
-  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: opts.scale || 1, isMobile: true, hasTouch: true,
+  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: opts.scale || 1, isMobile: true, hasTouch: true, serviceWorkers: 'block',   // the app has none either: its own store answers
+   
     userAgent: 'Mozilla/5.0 (Linux; Android 14; SM-A146P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36 SpaceBookApp/test' });
   const page = await ctx.newPage();
   const errors = [];
