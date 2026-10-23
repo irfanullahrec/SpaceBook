@@ -1,0 +1,495 @@
+{
+ "schema": "spacebook.parity/1",
+ "updated": "2026-10-23",
+ "statuses": [
+  "same",
+  "platform-specific",
+  "web-only",
+  "app-only",
+  "partial",
+  "blocked",
+  "retired"
+ ],
+ "features": [
+  {
+   "id": "acct.login",
+   "area": "Accounts and plans",
+   "name": "Register, sign in, sign out (WhatsApp number + password)",
+   "status": "same",
+   "web": "js/auth.js dialog",
+   "app": "ui/auth/AuthScreen (native)",
+   "data": "tables users, devices (api/auth.php); device token per device"
+  },
+  {
+   "id": "acct.guest",
+   "area": "Accounts and plans",
+   "name": "Nothing needs an account; progress made as a guest is offered to the account, never merged silently",
+   "status": "same",
+   "web": "js/core/consent.js (rewards, plans, Tests Preps, items)",
+   "app": "AuthScreen dialog; outbox and items of \"nobody signed in\" (userId 0)",
+   "data": "device until the student says yes; then the same tables as any signed-in data"
+  },
+  {
+   "id": "acct.profile",
+   "area": "Accounts and plans",
+   "name": "Profile, change password, download my data, delete my account",
+   "status": "same",
+   "web": "js/auth.js account dialog (api/auth.php update_profile, change_password, export, delete_account)",
+   "app": "Me > My account: the same dialog inside the page; the file goes to the share sheet (SBDownload), a deletion signs the app out",
+   "data": "users; export lists saved_items too (api/lib/account.php)"
+  },
+  {
+   "id": "acct.forgot",
+   "area": "Accounts and plans",
+   "name": "Forgot password",
+   "status": "blocked",
+   "web": "no screen",
+   "app": "a screen that tells the student what to do",
+   "data": "none: the server has no reset channel",
+   "exemption": "The server has no channel to send a reset code (the WhatsApp number is the identity and no provider is connected), so neither platform can offer a reset. Nothing is faked on either side.",
+   "ownerDecision": "Pick the channel for a password reset (WhatsApp OTP through a provider, or an administrator-assisted reset): HANDOVER decision 9."
+  },
+  {
+   "id": "acct.entitlements",
+   "area": "Accounts and plans",
+   "name": "What the plan allows (payment plans), one source",
+   "status": "same",
+   "web": "js/core/entitlements.js reads api/v2/entitlements.php",
+   "app": "EntitlementsRepository reads the same endpoint",
+   "data": "sb_entitlements() in api/v2/entitlements.php; today everything is unlocked, nothing is gated yet on either side"
+  },
+  {
+   "id": "acct.plans",
+   "area": "Accounts and plans",
+   "name": "Free / Premium plan cards (\"Price to be announced\"), plan, usage",
+   "status": "partial",
+   "web": "js/sb_home_plans.js, another session's uncommitted work (Home > My Account)",
+   "app": "ui/home/HomeTabs.kt My Account tab",
+   "data": "plan from entitlements; usage from this device's own records",
+   "exemption": "The website's Home twin (js/sb_home_plans.js with its hunks in app.js, test_prep.js, sb_study_plan.js) is another session's unfinished work, in the working folder but not in any commit, so the deployed website does not have these tabs yet. It reads the same stored data the app's Home reads. When that work is committed this row becomes \"same\".",
+   "ownerDecision": "Commit the Home My Stats / Project Stats / My Account work of the other session (js/sb_home_plans.js and its edits), after seeing it."
+  },
+  {
+   "id": "acct.expiry",
+   "area": "Accounts and plans",
+   "name": "Preview expiry lock with an unlock code",
+   "status": "platform-specific",
+   "web": "-",
+   "app": "expiry/ExpiryGate (offline, salted hash in the app)",
+   "data": "device only",
+   "counterpart": "A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no expiry. Payment limits for both are the entitlements row."
+  },
+  {
+   "id": "read.books",
+   "area": "Reading the books",
+   "name": "Every book, chapter and tab: pages, figures, charts, maths, RTL Urdu / Pashto / Arabic, MCQs, step-by-step and animated solutions, Class 1 / 2 worksheets, topic practice, Board SLO and exercise tabs, chapter structure",
+   "status": "same",
+   "web": "lazy.html + js/* in the browser",
+   "app": "the same page in the app's WebView, one page at a time (assets/reader_bridge.js, reader_mobile.css)",
+   "data": "content/*, js/*_data.js, hash-checked offline_map.json; tools/parity/data_parity.js checks every class, subject, chapter, file and the app's shell"
+  },
+  {
+   "id": "read.pageview",
+   "area": "Reading the books",
+   "name": "How a chapter is turned: swipe or arrows through printed pages / topic cards (app), scroll or open-book spread (web)",
+   "status": "platform-specific",
+   "web": "scroll, js/sb_book_spread.js",
+   "app": "one page at a time, footer arrows, page list",
+   "data": "none",
+   "counterpart": "A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages)."
+  },
+  {
+   "id": "read.tts",
+   "area": "Reading the books",
+   "name": "Read aloud with the device's own voices (nothing sent anywhere)",
+   "status": "same",
+   "web": "js/core/tts.js",
+   "app": "ui/reader/Speaker + the page's speech through SBHost.speak",
+   "data": "none (device voices; Urdu / Arabic / Pashto depend on the device)"
+  },
+  {
+   "id": "read.size",
+   "area": "Reading the books",
+   "name": "Text size",
+   "status": "same",
+   "web": "Aa control (js/reader_tools.js, localStorage sbRT:size)",
+   "app": "Settings > Text size (DataStore)",
+   "data": "device-local on both by design (not an account setting)"
+  },
+  {
+   "id": "read.dark",
+   "area": "Reading the books",
+   "name": "Dark mode",
+   "status": "platform-specific",
+   "web": "follows the system (css/sb_theme.css)",
+   "app": "Settings: Phone / Light / Dark; books stay on white paper",
+   "data": "device-local",
+   "counterpart": "The website follows the browser's colour scheme; the app lets the student choose. Both keep the book on a light page."
+  },
+  {
+   "id": "read.resume",
+   "area": "Reading the books",
+   "name": "Continue where you left off (chapter, tab and page)",
+   "status": "same",
+   "web": "js/continue_learning.js + js/sb_library.js (item pos)",
+   "app": "reader screen saves LibraryRepository.savePosition; opens at the saved page and tab",
+   "data": "user_items kind pos, per subject; later stop wins"
+  },
+  {
+   "id": "read.bookmark",
+   "area": "Reading the books",
+   "name": "Bookmarks",
+   "status": "same",
+   "web": "a 🔖 on every page (js/sb_library.js)",
+   "app": "bookmark in the reader bar",
+   "data": "user_items kind bm"
+  },
+  {
+   "id": "read.notes",
+   "area": "Reading the books",
+   "name": "Notes and highlights (selected words / a tapped sentence)",
+   "status": "same",
+   "web": "select words: Highlight or Note (js/sb_library.js); marks drawn on the page",
+   "app": "Notes tab of the reader; a sentence from the meaning sheet \"Keep as a highlight\"",
+   "data": "user_items kind note (k = note | hl)"
+  },
+  {
+   "id": "read.saved",
+   "area": "Reading the books",
+   "name": "Saved list (bookmarks, notes, highlights) that opens the place",
+   "status": "same",
+   "web": "sidebar > Saved (renderSaved)",
+   "app": "Me > Saved pages and notes",
+   "data": "user_items bm, note"
+  },
+  {
+   "id": "read.class",
+   "area": "Reading the books",
+   "name": "\"My class\"",
+   "status": "same",
+   "web": "a star on a class page, a badge on the class card",
+   "app": "class chips (Me, Library); Home switcher",
+   "data": "user_items kind pref, key class"
+  },
+  {
+   "id": "read.likes",
+   "area": "Reading the books",
+   "name": "Likes and saves on feed cards",
+   "status": "retired",
+   "web": "-",
+   "app": "the local reactions table (feed cards are not shown since 2026-10-23)",
+   "data": "device only, never sent",
+   "exemption": "The Home feed of cards (with like and save) was replaced by My Stats / Project Stats / My Account on 2026-10-23; no screen reaches the reactions table any more and nothing ever sent it to the server. Bookmarks and notes are the saved items now."
+  },
+  {
+   "id": "mean.word",
+   "area": "Meanings and translator",
+   "name": "Word and sentence meanings in English, Urdu, Pashto (and Arabic)",
+   "status": "platform-specific",
+   "web": "click a sentence / word: drawer (js/sb_trilingual.js)",
+   "app": "tap a sentence or hold a word: bottom sheet with a speaker per line (ui/reader/MeaningSheet)",
+   "data": "book glossary + js/lexicon_data.js (offline); same lookup (SBTranslate)",
+   "counterpart": "Same data and the same lookup code; the pop-up is a drawer on the website and a bottom sheet in the app because a finger has no hover and no text selection in a WebView."
+  },
+  {
+   "id": "mean.translator",
+   "area": "Meanings and translator",
+   "name": "Translate any text (EN / UR / PS / AR)",
+   "status": "platform-specific",
+   "web": "select text: js/universal_translate.js",
+   "app": "any sentence of a page by a tap, any word by a hold (same SBTranslate)",
+   "data": "js/lexicon_data.js, nothing sent to a third party",
+   "counterpart": "Selecting text is switched off on book pages in the app (a long press would select); the gestures give the same translation of the same text."
+  },
+  {
+   "id": "search.titles",
+   "area": "Search",
+   "name": "Search subjects, units and chapter titles",
+   "status": "same",
+   "web": "header search box (js/app.js)",
+   "app": "Library search (ui/library/SearchScreen) over the catalog",
+   "data": "content/app_catalog.json = the chapter titles of content/search/index.json (data_parity checks it)"
+  },
+  {
+   "id": "search.books",
+   "area": "Search",
+   "name": "Search the words inside the books, offline",
+   "status": "same",
+   "web": "js/core/search.js \"In the books\"",
+   "app": "the same module, run in a hidden page (data/search/BookSearch + assets/search_bridge.js) over the books on the phone, or all",
+   "data": "content/search/<subject>.json shards (in the offline map)"
+  },
+  {
+   "id": "tools.testprep",
+   "area": "Study tools",
+   "name": "Tests Preps (practice and mock tests from the books' MCQ bank)",
+   "status": "same",
+   "web": "js/test_prep.js",
+   "app": "Practice tab > Tests Preps: the same page in the WebView (touch, 411 px checked in Chrome)",
+   "data": "tp_answers, tp_days, test_prep_sessions, tp_runs (sync events tp.*); js/test_prep_bank.js"
+  },
+  {
+   "id": "tools.papers",
+   "area": "Study tools",
+   "name": "Papers (exam paper builder, Set A / B / C)",
+   "status": "same",
+   "web": "js/app.js Papers",
+   "app": "Practice tab > Papers: the same page in the WebView",
+   "data": "book data of the class; nothing stored on the server"
+  },
+  {
+   "id": "tools.bise",
+   "area": "Study tools",
+   "name": "BISE Swat Board centre (patterns, SLOs, drills, e-answer sheet)",
+   "status": "same",
+   "web": "js/sb_bise.js",
+   "app": "the same strip inside every subject and the same page",
+   "data": "user_items kinds slo and drill; js/bise_swat_data.js"
+  },
+  {
+   "id": "tools.plan",
+   "area": "Study tools",
+   "name": "Study Plan",
+   "status": "same",
+   "web": "js/sb_study_plan.js",
+   "app": "Plan tab: the same page in the WebView",
+   "data": "study_plans (events plan.save, plan.delete)"
+  },
+  {
+   "id": "tools.reminders",
+   "area": "Study tools",
+   "name": "Study plan reminders",
+   "status": "platform-specific",
+   "web": "browser Notification (banner + notification while the page is open)",
+   "app": "phone notifications scheduled with WorkManager from SBStudyPlan.reminders(), switch in Settings",
+   "data": "plans (same data); the words come from one function (reminderText)",
+   "counterpart": "A WebView has no Notification API, so the app asks the website's own code which reminders the next week holds and schedules each as a phone notification; the title and body are the website's (tests/plan/reminders.js, RemindersTest). Android may delay a job by minutes when dozing. Not seen on a phone."
+  },
+  {
+   "id": "stats.coins",
+   "area": "Stats and coins",
+   "name": "Reward coins and progress (steps, practice, finishing)",
+   "status": "same",
+   "web": "js/sb_rewards.js",
+   "app": "coin chip; native steps (SyncRepository.rewardStep) and the page's own rewards",
+   "data": "activity_progress; the server decides every amount (api/lib/rewards.php)"
+  },
+  {
+   "id": "stats.wordstats",
+   "area": "Stats and coins",
+   "name": "Word Stats (per class and subject), My Vocabulary",
+   "status": "same",
+   "web": "js/word_stats.js",
+   "app": "the same tab inside each subject; Home > Project Stats / My Vocabulary read the same numbers",
+   "data": "js/word_stats_*.js (generated); marked words are user_items kind word"
+  },
+  {
+   "id": "stats.home",
+   "area": "Stats and coins",
+   "name": "Home: My Stats (tests and plans), Project Stats, My Account",
+   "status": "partial",
+   "web": "js/sb_home_plans.js (not committed, another session)",
+   "app": "ui/home (HomeTabs, PrepReader)",
+   "data": "tests and plans from the records both platforms keep; word counts from js/word_stats_summary.js",
+   "exemption": "Same reason as acct.plans: the website's twin of the app's Home is uncommitted work of another session. Both read the same stored records (sbTP:v1:<user>, sb_study_plans_v1, sbWS:progress:<user>); tests/parity/stats_numbers.js compares the app's numbers (prep_summary.js) with the website's own code on one fixture: words, the minutes per kind of work, plan percentages and test numbers all agree in the working folder (the last two are skipped in a build that lacks the uncommitted functions).",
+   "ownerDecision": "Commit the Home work of the other session (see acct.plans)."
+  },
+  {
+   "id": "games.arcade",
+   "area": "Games",
+   "name": "Games: Quiz Quest, True or False, Word Builder, Memory Match, Math Sprint, Little Learners; 10 levels each",
+   "status": "same",
+   "web": "sidebar > Games (js/sb_games.js)",
+   "app": "Practice tab > Games: the same page in the WebView",
+   "data": "coins through activity_progress (same reward keys); level bests and settings are user_items gbest and pref/games"
+  },
+  {
+   "id": "games.pagequests",
+   "area": "Games",
+   "name": "Per-page quests: Blank Quest and Word Builder made from the page you read",
+   "status": "app-only",
+   "web": "-",
+   "app": "Games tab of the reader (ui/games/PageGames.kt), coins through the same reward-key shape",
+   "data": "activity_progress (g- keys, +1 per step, +5 for finishing, decided by the server)",
+   "exemption": "A reading-screen feature of the app that the website does not have (its Games page works by class and level, not by page). It uses the same server coin rules and key shape, so nothing differs underneath; only the entry point exists on one platform.",
+   "ownerDecision": "Do you want per-page quests on the website too (a \"Games\" tab under each lesson), or keep them as an app extra?"
+  },
+  {
+   "id": "off.books",
+   "area": "Offline",
+   "name": "Read the books with no internet; download per class / book, checked by SHA-256",
+   "status": "platform-specific",
+   "web": "service worker + Offline books dialog (js/core/offline.js)",
+   "app": "Me > Books on this phone (SiteStore, DownloadWorker); the shell is inside the APK",
+   "data": "content/offline_map.json (one map, both platforms; checked by data_parity)",
+   "counterpart": "A browser keeps files in its cache through a service worker; an app keeps them in its own folder and answers the WebView from it. Same files, same hashes."
+  },
+  {
+   "id": "off.lexicon",
+   "area": "Offline",
+   "name": "Word meanings with no internet",
+   "status": "same",
+   "web": "js/lexicon_data.js",
+   "app": "the same file in the shell",
+   "data": "generated by tools/build/make_lexicon.js"
+  },
+  {
+   "id": "other.install",
+   "area": "Other",
+   "name": "Install banner and service worker",
+   "status": "platform-specific",
+   "web": "manifest.webmanifest, sw.js",
+   "app": "-",
+   "data": "device",
+   "counterpart": "The app is the installed form of the website; nothing to install inside it."
+  },
+  {
+   "id": "other.quiz",
+   "area": "Other",
+   "name": "Quick Quiz, Swipe & Learn, XP / streak / daily mission / chest",
+   "status": "retired",
+   "web": "-",
+   "app": "ui/play, data/play (routes exist, no screen opens them)",
+   "data": "device only, never sent",
+   "exemption": "These belonged to the app's old play-style Home. Since Home became My Stats / Project Stats / My Account on 2026-10-23 nothing navigates to the quiz or reels routes and the XP, streak and chest have no screen. The code and the offline question bank (assets/mcq_bank.json, kept in step with the website's bank by sync_app) remain in case a Practice entry brings them back; Tests Preps and the Games cover the same questions.",
+   "ownerDecision": "Bring Quick Quiz / Swipe & Learn back under Practice, or delete that code and the 1.2 MB question bank from the app?"
+  }
+ ],
+ "catalogExemptions": [
+  {
+   "subjects": [
+    "cls-pg-eng",
+    "cls-pg-urdu",
+    "cls-pg-math",
+    "cls-pg-art",
+    "cls-nur-eng",
+    "cls-nur-urdu",
+    "cls-nur-math",
+    "cls-nur-gk",
+    "cls-kg-eng",
+    "cls-kg-urdu",
+    "cls-kg-math",
+    "cls-kg-gk"
+   ],
+   "reason": "Play Group, Nursery and KG are entries of the website's registry only: no textbook has been uploaded and the website itself shows 'Not Uploaded Yet - curriculum in preparation' (no chapters, no files in the offline map). The app lists classes and subjects that have a book. If a book is added the study index and the catalog gain its chapters and this exemption fails by itself.",
+   "ownerDecision": "Show Play Group / Nursery / KG in the app as 'coming soon' cards like the website does? (a look-and-feel choice; no data is missing)"
+  },
+  {
+   "subjects": [
+    "cls1-urdu",
+    "cls1-gk",
+    "cls3-urdu"
+   ],
+   "reason": "The source scans of these three books are missing; the website shows one placeholder chapter 'Textbook not available yet' (page 1 of 0). The app lists no placeholder; it gains the book as soon as the Class 1 / Class 3 pipelines produce chapters.",
+   "ownerDecision": "Supply the missing Class 1 Urdu, Class 1 General Knowledge and Class 3 Urdu textbook scans."
+  }
+ ],
+ "bookExemptions": [],
+ "endpoints": {
+  "server": [
+   "admin.php",
+   "auth.php",
+   "health.php",
+   "progress.php",
+   "study_plans.php",
+   "test_prep.php",
+   "v2/entitlements.php",
+   "v2/sync.php"
+  ],
+  "app": [
+   "POST api/auth.php?action=register",
+   "POST api/auth.php?action=login",
+   "POST api/auth.php?action=logout",
+   "GET api/auth.php?action=me",
+   "POST api/v2/sync.php",
+   "GET api/v2/sync.php",
+   "GET api/v2/entitlements.php",
+   "GET content/app_catalog.json"
+  ],
+  "note": "The page the app shows (the website in a WebView) calls auth.php, progress.php, study_plans.php, test_prep.php and v2/sync.php itself, with the session cookie the app shares with it; the app's own Kotlin code calls the eight listed."
+ },
+ "syncEvents": {
+  "server": [
+   "step",
+   "again",
+   "plan.save",
+   "plan.delete",
+   "tp.answer",
+   "tp.session",
+   "tp.run",
+   "tp.run.clear",
+   "tp.import",
+   "item.put",
+   "item.del"
+  ],
+  "web": [
+   "step",
+   "again",
+   "plan.save",
+   "plan.delete",
+   "tp.answer",
+   "tp.session",
+   "tp.run",
+   "tp.run.clear",
+   "tp.import",
+   "item.put",
+   "item.del"
+  ],
+  "app": [
+   "step",
+   "item.put",
+   "item.del"
+  ]
+ },
+ "itemKinds": {
+  "bm": {
+   "what": "a bookmarked page",
+   "web": "js/sb_library.js",
+   "app": "LibraryRepository"
+  },
+  "note": {
+   "what": "a note or a highlight on a page",
+   "web": "js/sb_library.js",
+   "app": "LibraryRepository"
+  },
+  "pos": {
+   "what": "where the student stopped in a book",
+   "web": "js/sb_library.js (from js/continue_learning.js)",
+   "app": "LibraryRepository"
+  },
+  "word": {
+   "what": "a word marked learnt / already known",
+   "web": "js/word_stats.js (items)",
+   "app": "-"
+  },
+  "gbest": {
+   "what": "best run of a game level",
+   "web": "js/sb_games.js (items)",
+   "app": "-"
+  },
+  "pref": {
+   "what": "the chosen class; the games settings",
+   "web": "js/sb_library.js, js/sb_games.js (items)",
+   "app": "LibraryRepository"
+  },
+  "slo": {
+   "what": "a ticked Board SLO",
+   "web": "js/sb_bise.js (items)",
+   "app": "-"
+  },
+  "drill": {
+   "what": "a finished Board Section A drill",
+   "web": "js/sb_bise.js (items)",
+   "app": "-"
+  }
+ },
+ "syncSwitch": "One owner switch, published by the server (flags.syncV2 in api/auth.php?action=me and api/v2/entitlements.php, from api/lib/flags.php; off until api/flags.local.php says true or the default is changed and pushed). The website copies it to the browser, the app hands it to the page it shows (SBApp.setAuth no longer forces sync on) and uses it for its own saved items; with it off nothing is sent and no request is made for items, exactly as for the website's coins, plans and Tests Preps. The app's own coin steps are the one exception: the app has no older endpoint to fall back to, so it always sends them through api/v2/sync.php (the server accepts both generations of client into the same tables).",
+ "ownerDecisions": [
+  "Switch client sync on (create api/flags.local.php on the server with <?php return [\"syncV2\" => true]; after the live checks of RELEASE_AND_ROLLBACK.md section 3). Until then bookmarks, notes and the reading position stay on each device, on both platforms.",
+  "Password reset channel (acct.forgot).",
+  "Commit the other session's Home work (acct.plans, stats.home).",
+  "Per-page quests on the website too, or keep them as an app extra (games.pagequests).",
+  "Bring Quick Quiz / Swipe & Learn back or delete the code (other.quiz).",
+  "Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions)."
+ ]
+}

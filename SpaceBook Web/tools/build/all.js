@@ -31,6 +31,9 @@ const STEPS = [
   // after the lazy page (the book data it hashes), before the offline map (which lists each subject's search files)
   { id: 'search', what: 'search index per subject (header search finds words inside the books, offline)',
     outputs: ['content/search/index.json'], run: node('tools/build/make_search.js'), checkNative: node('tools/build/make_search.js', '--check') },
+  // after the search index (it reads the chapter calls from it): what the Android app lists, so the app and the website cannot disagree about classes, subjects and chapters
+  { id: 'app-catalog', what: 'classes, subjects and chapters the Android app lists, with the call that opens each chapter (assets/app_catalog.json in the app)',
+    outputs: ['content/app_catalog.json'], run: node('tools/build/make_app_catalog.js'), checkNative: node('tools/build/make_app_catalog.js', '--check') },
   // after the lazy page: it lists what each subject loads and the shell of the service worker (both carry content hashes of the files above)
   { id: 'offline', what: 'what each subject needs offline, and the service worker version (Download for offline, sw.js)',
     outputs: ['content/offline_map.json', 'content/sw_version.js'], run: node('tools/build/make_offline.js'), checkNative: node('tools/build/make_offline.js', '--check') },

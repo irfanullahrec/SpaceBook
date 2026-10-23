@@ -150,7 +150,10 @@
   }
   async function exportData() {
     const r = await call('export');
-    if (r && r.schema && typeof document !== 'undefined' && typeof Blob !== 'undefined' && window.URL && URL.createObjectURL) {
+    if (r && r.schema && typeof window.SBDownload === 'function') {
+      // the Android app's page cannot save a blob link: its bridge (assets/reader_bridge.js) hands the file to the phone's share sheet
+      window.SBDownload('spacebook-my-data.json', 'application/json', JSON.stringify(r, null, 2));
+    } else if (r && r.schema && typeof document !== 'undefined' && typeof Blob !== 'undefined' && window.URL && URL.createObjectURL) {
       const a = document.createElement('a');
       a.href = URL.createObjectURL(new Blob([JSON.stringify(r, null, 2)], { type: 'application/json' }));
       a.download = 'spacebook-my-data.json';

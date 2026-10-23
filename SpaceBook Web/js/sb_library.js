@@ -440,5 +440,5 @@
   }
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', start); else start();
 
-  window.SBLibrary = { here, open, collect, catalog, toggleBookmark, bookmarkAt, notesAt, saveNote, renderSaved, myClass, setMyClass, parseCall, callOf };
+  window.SBLibrary = { here, open, collect, catalog, toggleBookmark, bookmarkAt, notesAt, saveNote, renderSaved, myClass, setMyClass, parseCall, callOf, cleanTab, bmKey };
 })();

@@ -92,6 +92,14 @@ jobs:
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js
+      - name: Web and App parity (feature matrix, endpoints, sync events, item kinds, migrations, data, where a page is, reminders, plan answer)
+        working-directory: SpaceBook Web
+        run: |
+          node tools/parity/check.js
+          node --max-old-space-size=6144 tools/parity/data_parity.js
+          node tests/parity/locator.js
+          node --max-old-space-size=6144 tests/plan/reminders.js
+          node tests/sync/entitlements.js
 
   # API tests on the PHP version the live host runs (7.4) with a scratch MySQL. Not yet a deploy gate:
   # continue-on-error until this job has been seen green once on GitHub, then add it to deploy.needs.
@@ -142,6 +150,7 @@ jobs:
           node --max-old-space-size=4096 tests/sync/testprep.js
           node --max-old-space-size=2048 tests/sync/account.js
           node --max-old-space-size=4096 tests/sync/items.js
+          node --max-old-space-size=4096 tests/sync/parity_e2e.js
 
   deploy:
     needs: test
