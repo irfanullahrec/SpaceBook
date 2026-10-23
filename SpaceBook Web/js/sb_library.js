@@ -70,6 +70,9 @@
   async function here() {
     const C = window.SBContinue, cur = C && C.current && C.current();
     if (!cur) return null;
+    // only while a book is on screen: the Saved page, a class page or Home keep the last subject in SBContinue but are not a place to save
+    const st = (function () { try { return state; } catch (e) { return {}; } })();
+    if (st.activeView && st.activeView !== 'subject-detail') return null;
     const e = C.entry(cur.classId, cur.subjId);
     if (!e) return null;
     const cat = await catalog(), found = subjectOf(cat, cur.subjId);

@@ -20,6 +20,10 @@ Nothing has been pushed. Everything below is on the local branch `phase/p2-serve
 | 11 Performance | measured against every budget; the one fix that matters is built and **off** (`lazyCards`) | `PERFORMANCE.md` |
 | 12 Accessibility, search, docs | keyboard and screen-reader basics, AA contrast, axe-core on 15 views, search inside the books (offline), handover documents | `ACCESSIBILITY.md`, `SEARCH.md`, `ARCHITECTURE.md`, `DATA_CONTRACT.md`, `RELEASE_AND_ROLLBACK.md`, `PROTECT_LIST.md` |
 
+## 2026-10-23 addendum: one product on two platforms
+
+The website and the Android app are now kept the same by tooling, not by memory: `docs/PARITY_MATRIX.md` (generated from `docs/parity.json`), `tools/parity/check.js`, `tools/parity/data_parity.js`, `tools/app/sync_app.js`, `tests/sync/parity_e2e.js`; see ARCHITECTURE section 11. New for students on both platforms: bookmarks, notes and highlights, the Saved list, "continue where you left off" (chapter, tab and page) and "my class" on the account (migration 007, `item.put` / `item.del`); study reminders as phone notifications; search inside the books, the Games arcade and My account in the app. New decisions are at the end of `docs/PARITY_MATRIX.md` (the sync switch, the password-reset channel, the other session's Home work, per-page quests, Quick Quiz).
+
 ## Decisions that are yours
 
 1. **Push, and when.** `RELEASE_AND_ROLLBACK.md`. A push to `main` deploys and applies migrations 002-006 to the live database: take a dump first.

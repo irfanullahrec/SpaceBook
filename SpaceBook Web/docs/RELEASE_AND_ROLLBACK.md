@@ -4,12 +4,12 @@ Written 2026-10-20 for the owner. A release is a push to `main`: the workflow te
 
 ## 0. What identifies a release
 
-The git commit; the service worker version (`content/sw_version.js`, a hash of the shell); the database schema number (`api/health.php?token=...` and the Administration overview show `version N of 6`). All three are visible in the admin overview (`ADMIN.md`).
+The git commit; the service worker version (`content/sw_version.js`, a hash of the shell); the database schema number (`api/health.php?token=...` and the Administration overview show `version N of 7`). All three are visible in the admin overview (`ADMIN.md`).
 
 ## 1. Before pushing to `main`
 
 1. **Server steps are done** (`PHASE0_SERVER_STEPS.md`): the leaked `spacebook_upload.zip` deleted from the server, `Options -Indexes` in effect, the database password rotated and stored as the `DB_PASSWORD` secret, the FTP account's home folder is `public_html/spacebook`. Without them the deploy's own checks fail on purpose.
-2. **Take a database dump** (`BACKUP_RESTORE.md`, step 4). The first request after the deploy applies migrations 002-006 to the live database (new tables and columns only; nothing is dropped), but a fresh dump costs seconds.
+2. **Take a database dump** (`BACKUP_RESTORE.md`, step 4). The first request after the deploy applies the pending migrations (002-007 on a database that has none; 007 is the table of saved items) to the live database (new tables and columns only; nothing is dropped), but a fresh dump costs seconds.
 3. **Generated files match the code.** From a clean checkout of the exact commit (not the working folder, which may hold unfinished work):
 
    ```
@@ -18,7 +18,9 @@ The git commit; the service worker version (`content/sw_version.js`, a hash of t
    node --max-old-space-size=8192 tools/build/all.js --check  # must say fresh for every step
    ```
 
+   (`all.js` also rebuilds `content/app_catalog.json`, the list of classes, subjects and chapters the Android app shows.)
    Commit the result (`lazy.html`, `content/*`, `js/test_prep_bank.js`, `js/study_plan_index.js`, `js/word_stats_*.js`, `js/lexicon_data.js`, `docs/test_prep_review/no_key.csv`). Any change to a script, a stylesheet reference or the script list of `index.html` makes `lazy.html` and `content/sw_version.js` stale.
+   Then the Android app: `node tools/app/sync_app.js` (from the same clean checkout) brings everything the app bundles up to date with the website, `node tools/app/sync_app.js --check` and `node --max-old-space-size=8192 tools/parity/data_parity.js` must say nothing is stale or missing, and `.\gradlew.bat :app:testDebugUnitTest` in `SpaceBook App` must pass; commit the app's regenerated assets in the app's own repository. A push of the website alone leaves an app with the old shell until the app is released again (it still reads the books it has downloaded; new book data downloads from the site).
 4. **The tests the workflow runs pass locally** (the list is in `ARCHITECTURE.md`, section 9; `php tests/php/run.php` needs a local MySQL).
 5. **Decide the owner flags** (`CONTENT_REVIEW.md`, `PHASE8_SECURITY.md`): `hideGeneratedSlo` (default off), the client sync flag `sb_sync_v2` (default off). Both are safe to leave off at first.
 6. **Install `deploy/spacebook.htaccess`** if you want the security headers (`SERVER_CONFIG.md`). It ships a report-only content-security policy: it blocks nothing.
