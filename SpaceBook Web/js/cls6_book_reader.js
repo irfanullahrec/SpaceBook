@@ -210,7 +210,13 @@
   function exercises(B, ch) {
     if (!ch.sections.length) return pending(B, ch);
     if (!ch.exercises || !ch.exercises.length) return `<div class="math-topic-card" style="padding:1.25rem;color:#475569;">This unit has no separate exercise in the textbook; its activities are in the Lesson tab.</div>`;
-    return ch.exercises.map((ex, k) => card('c6-ex-' + ch.number + '-' + k, 'Exercise', (ex.id || 'Exercise') + (ex.printed ? ` (p. ${ex.printed})` : ''), root(blocks([ex], {showAnswers: true, noPages: true})), k === 0)).join('');
+    // a unit with one exercise shows it open (sb_global_ui.js closes every card it renders, and the app's one-page reader only opens a card when
+    // the tab has several pages: a lone closed card was a tab with a heading and nothing else)
+    const only = ch.exercises.length === 1;
+    return ch.exercises.map((ex, k) => {
+      const html = card('c6-ex-' + ch.number + '-' + k, 'Exercise', (ex.id || 'Exercise') + (ex.printed ? ` (p. ${ex.printed})` : ''), root(blocks([ex], {showAnswers: true, noPages: true})), k === 0);
+      return only ? html.replace('<div class="math-topic-card', '<div data-keep-open="1" class="math-topic-card') : html;
+    }).join('');
   }
   function slos(B, ch) {
     if (!ch.sections.length) return pending(B, ch);

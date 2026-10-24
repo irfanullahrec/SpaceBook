@@ -59,8 +59,33 @@ class Book:
             for s in ch['sections']:
                 ref = (s.get('refs') or [{}])[0]
                 ref = ref if isinstance(ref, dict) else {}
-                out.append(dict(s, ch=ch['number'], pdf=ref.get('pdfPage'), printed=[p for p in (ref.get('printedPages') or []) if p is not None]))
+                if getattr(self.cfg, 'VIRTUAL', False):
+                    labels = [x for x in (ref.get('printedPages') or ([ref['printedPage']] if ref.get('printedPage') is not None else []))]
+                    out.append(dict(s, ch=ch['number'], pdf=ref.get('pdfPage'), _labels=labels))
+                else:
+                    out.append(dict(s, ch=ch['number'], pdf=ref.get('pdfPage'), printed=[p for p in (ref.get('printedPages') or []) if p is not None]))
+        if getattr(self.cfg, 'VIRTUAL', False):
+            self._virtual_keys(out)
         return out
+
+    def _virtual_keys(self, secs):
+        """Page keys of the virtual mode: a printed number (int), ('F', pdf, label) for roman / unnumbered pages before the first numbered
+        scan, ('B', pdf, label) after the last one.  s['printed'] = the keys of the pages the section's text covers."""
+        nums = [s['pdf'] for s in secs if s['pdf'] is not None and any(isinstance(x, int) for x in s['_labels'])]
+        lo, hi = (min(nums), max(nums)) if nums else (0, 0)
+        for s in secs:
+            keys = []
+            for x in s['_labels']:
+                if isinstance(x, int):
+                    keys.append(x)
+                elif x is not None:
+                    keys.append(('F' if s['pdf'] is None or s['pdf'] < lo else 'B', s['pdf'], str(x)))
+            if not keys:
+                keys.append(('F' if s['pdf'] is None or s['pdf'] < lo else 'B', s['pdf'], ''))
+            nonint = [x for x in keys if not isinstance(x, int)]
+            if len(nonint) > 1 and not any(isinstance(x, int) for x in keys):
+                keys = nonint[:1]      # roman-numbered front matter on one scan: kept as one page
+            s['printed'] = keys
 
     def units_of(self, sec):
         """The section's content in printed order: one unit per heading / paragraph / line / list item / table / figure."""
@@ -119,10 +144,52 @@ class Book:
         return self._files[j]
 
     def printed_of(self, jpg):
-        """Printed page number on a JPG: the config's own rule, or (single-scan books) the page the reviewed data names for its scan."""
-        if hasattr(self.cfg, 'printed_of'):
-            return self.cfg.printed_of(jpg)
+        """Printed page number on a JPG: the config's rule (cfg.printed_of), its piecewise offsets (cfg.OFFSETS), or (one scan per
+        page) the page the reviewed data names for its scan."""
+        c = self.cfg
+        if getattr(c, 'VIRTUAL', False):
+            return jpg if isinstance(jpg, int) else None
+        if hasattr(c, 'printed_of'):
+            return c.printed_of(jpg)
+        if hasattr(c, 'OFFSETS'):
+            if jpg in getattr(c, 'NO_PAGE', ()) or jpg in getattr(c, 'DUPLICATE', {}):
+                return None
+            for a, b, off in c.OFFSETS:
+                if a <= jpg <= b:
+                    return jpg - off
+            return None
         return self.label_map().get(jpg)
+
+    def pdf_jpgs(self, k):
+        """The JPG pages that scan k of the reviewed data holds (lower printed page first)."""
+        c = self.cfg
+        if getattr(c, 'VIRTUAL', False):
+            if getattr(self, '_pj', None) is None:
+                pj = {}
+                for kk, group in self.by_pdf().items():
+                    keys = sorted({x for s in group for x in s['printed']}, key=lambda x: (0, x) if isinstance(x, int) else (1, str(x)))
+                    nums = [x for x in keys if isinstance(x, int)]
+                    pj[kk] = tuple(nums) + tuple(x for x in keys if not isinstance(x, int)) if nums else tuple(keys)
+                self._pj = pj
+            return self._pj.get(k)
+        if hasattr(c, 'pdf_jpgs'):
+            return c.pdf_jpgs(k)
+        if k in getattr(c, 'EXTRA_PDF', {}):
+            return tuple(c.EXTRA_PDF[k])
+        if getattr(self, '_pj', None) is None:
+            inv = {}
+            for jpg in range(c.TOTAL_JPG):
+                p = self.printed_of(jpg)
+                if p is not None and p not in inv:
+                    inv[p] = jpg
+            pj = {}
+            for kk, group in self.by_pdf().items():
+                pages = sorted({p for s in group for p in s['printed']})
+                js = tuple(inv[p] for p in pages if p in inv)
+                if js:
+                    pj[kk] = js
+            self._pj = pj
+        return self._pj.get(k)
 
     def label_map(self):
         if getattr(self, '_labels', None) is None:
@@ -138,39 +205,50 @@ class Book:
         return self._labels
 
     def scan_pages(self, k):
-        j = self.cfg.pdf_jpgs(k)
+        j = self.pdf_jpgs(k)
+        if getattr(self.cfg, 'VIRTUAL', False):
+            return j, j
         return j, (j and tuple(self.printed_of(x) for x in j))
 
     # ------------------------------------------------------------------ printed page numbers of the scans
-    def footers(self, regions=('bottom',)):
-        """Read the printed page number of every JPG (RapidOCR on the footer strip) -> KEY/footers.json {jpg: number or null}."""
+    def footers(self):
+        """Read the printed page number of every JPG (RapidOCR on the footer / header strip) -> KEY/footers.json {jpg: number or null}."""
         import numpy as np
         from PIL import Image, ImageOps
         from rapidocr_onnxruntime import RapidOCR
         eng = RapidOCR()
+        regions = getattr(self.cfg, 'FOOTER_REGIONS', ('bottom',))
+        num = re.compile(r'^\W{0,2}\s*(\d{1,3})\s*\W{0,2}$')
         out, f = {}, self.dir / 'footers.json'
         if f.exists():
             out = {int(k): v for k, v in json.loads(f.read_text(encoding='utf-8')).items()}
-        for j in range(len(sorted(self.cfg.JPG.glob('*.jpg')))):
-            p = self.jpg_path(j)
+        n = len(sorted(self.cfg.JPG.glob('*.jpg')))
+        for j in range(n):
             if j in out:
                 continue
-            im = Image.open(p).convert('L')
+            im = Image.open(self.jpg_path(j)).convert('L')
             w, h = im.size
             found = None
             for reg in regions:
-                box = (int(w * 0.08), int(h * 0.86), int(w * 0.92), h) if reg == 'bottom' else (int(w * 0.08), 0, int(w * 0.92), int(h * 0.10))
+                box = (int(w * 0.05), int(h * 0.86), int(w * 0.95), h) if reg == 'bottom' else (int(w * 0.05), 0, int(w * 0.95), int(h * 0.09))
                 c = im.crop(box)
                 for img in (c, ImageOps.invert(c)):
-                    r, _ = eng(np.asarray(img.convert('RGB')))
-                    nums = [int(re.sub(r'\D', '', x[1])) for x in (r or []) if re.fullmatch(r'\s*\d{1,3}\s*', x[1])]
+                    try:
+                        r, _ = eng(np.asarray(img.convert('RGB')), use_cls=False)
+                    except Exception:
+                        r = None
+                    nums = []
+                    for x in (r or []):
+                        m = num.match(x[1].strip())
+                        if m:
+                            nums.append(int(m.group(1)))
                     if nums:
                         found = nums[0]
                         break
                 if found is not None:
                     break
             out[j] = found
-            if j % 25 == 0:
+            if j % 20 == 0:
                 f.write_text(json.dumps(out), encoding='utf-8')
         f.write_text(json.dumps(out), encoding='utf-8')
         print('footers read', len(out), 'none', sum(1 for v in out.values() if v is None))
@@ -193,19 +271,39 @@ class Book:
             print(f"JPG {r['first']}-{r['last']}  offset {r['off']}  ({r['n']} read)  -> printed {r['first'] - r['off']}-{r['last'] - r['off']}")
 
     # ------------------------------------------------------------------ OCR of the Word files
+    def ocr_files(self):
+        if getattr(self.cfg, 'OCR_DOCX', None):
+            return self.cfg.OCR_DOCX
+        return sorted(str(p) for p in (self.cfg.JPG.parent / 'Word').glob('*.docx'))
+
     def ocr(self):
         import docx
         out = []
-        for f in self.cfg.OCR_DOCX:
+        for f in self.ocr_files():
             out.append('=====PART ' + Path(f).name)
             out += [p.text for p in docx.Document(f).paragraphs]
         (self.dir / 'ocr_word.txt').write_text('\n'.join(out), encoding='utf-8')
         print('ocr lines', len(out))
 
+    def ocr_start(self, lines):
+        """Line where the first chapter's text begins (the contents page repeats its title earlier)."""
+        if getattr(self.cfg, 'OCR_START', None):
+            return next((i for i, l in enumerate(lines) if l.strip() == self.cfg.OCR_START), 0)
+        ch1 = next((c for c in self.load() if not self.cfg.is_front(c)), None)
+        if not ch1:
+            return 0
+        keys = [norm(ch1.get(f) or '')[:14] for f in ('title', 'titleUrdu')]
+        keys = [k for k in keys if len(k) >= 6]
+        hits = [i for i, l in enumerate(lines) if any(k in norm(l) for k in keys)]
+        for h in hits:
+            if h > 120:
+                return h
+        return hits[-1] if hits else 0
+
     def ocr_pages(self):
         """printed page -> normalised OCR text; pages whose number line is missing are merged into the next found page."""
         lines = (self.dir / 'ocr_word.txt').read_text(encoding='utf-8').split('\n')
-        start = next((i for i, l in enumerate(lines) if l.strip() == self.cfg.OCR_START), 0)
+        start = self.ocr_start(lines)
         pages, buf, last, merged = {}, [], 0, {}
         for l in lines[start:]:
             m = re.fullmatch(r'\s*(\d{1,3})\s*', l)
@@ -242,7 +340,7 @@ class Book:
             jp, pp = self.scan_pages(k)
             if not jp or len(jp) != 2:
                 continue
-            r = self.cfg.route(k, group)
+            r = self.cfg.route(k, group) if hasattr(self.cfg, 'route') else None
             if r:
                 group = [s for s in group if not any(p is None or p(s) for p in r.values())]
             stream = self.scan_streams(group, pp)[1]
@@ -250,6 +348,38 @@ class Book:
             if any('pi' in u for u in units):
                 out.append((k, jp, pp, units))
         return out
+
+    def rocr(self):
+        """RapidOCR of the first lines of the second page (and the last lines of the first page) of every two-page scan -> KEY/rocr.json.
+        Works for Latin-script books (English, Computer Science, ...); the Urdu books use the Word OCR instead."""
+        import numpy as np
+        from PIL import Image
+        from rapidocr_onnxruntime import RapidOCR
+        eng = RapidOCR()
+        f = self.dir / 'rocr.json'
+        out = json.loads(f.read_text(encoding='utf-8')) if f.exists() else {}
+        for k, jp, pp, units in self.two_page_scans():
+            if str(k) in out:
+                continue
+            res = {}
+            for tag, j, box in (('B', jp[1], (0, 0.03, 1, 0.34)), ('A', jp[0], (0, 0.62, 1, 0.97))):
+                im = Image.open(self.jpg_path(j)).convert('RGB')
+                w, h = im.size
+                c = im.crop((0, int(h * box[1]), w, int(h * box[3])))
+                try:
+                    r, _ = eng(np.asarray(c), use_cls=False)
+                except Exception:
+                    r = None
+                txt = ' '.join(x[1] for x in (r or []))
+                txt = re.sub(r'(?i)not\s*for\s*sale|awaz\w*|whatsapp\S*', ' ', txt)
+                if tag == 'A':
+                    txt = re.sub(r'[\s\d\W]+$', '', txt)      # the printed page number closes the lower strip
+                res[tag] = txt.strip()
+            out[str(k)] = res
+            if len(out) % 10 == 0:
+                f.write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
+        f.write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
+        print('rocr scans', len(out))
 
     def align(self):
         secs = self.sections()
@@ -283,21 +413,146 @@ class Book:
                     if len(hits) == 1:
                         cand, how, conf = max(hits[0] - o, 0), 'ocr', 2 if o == 0 else 1
                         break
+            rr = (json.loads((self.dir / 'rocr.json').read_text(encoding='utf-8')) if (self.dir / 'rocr.json').exists() else {}).get(str(k))
+            ca = cb = None
+            if rr and rr.get('A'):
+                ta = norm(rr['A'])
+                for n_ in (26, 20, 15):
+                    key = ta[-n_:]
+                    if len(key) < n_:
+                        continue
+                    hits = [m.end() for m in re.finditer(re.escape(key), stream)]
+                    if len(hits) == 1:
+                        ca = hits[0]
+                        break
+            if rr and rr.get('B'):
+                tb = norm(rr['B'])
+                for o in (0, 12, 30):
+                    key = tb[o:o + 18]
+                    if len(key) < 14:
+                        break
+                    hits = [m.start() for m in re.finditer(re.escape(key), stream)]
+                    if len(hits) == 1:
+                        cb = max(hits[0] - o, 0)
+                        break
+            # fuzzy: the OCR of a photographed page has wrong letters; find the stretch of the text that is most like it
+            def fuzzy(txt, tail):
+                if not txt or len(txt) < 24:
+                    return None, 0.0
+                n_ = 44
+                q = txt[-n_:] if tail else txt[:n_]
+                best_ = (0.0, None)
+                for i in range(len(words)):
+                    s0 = starts[i]
+                    if tail:
+                        e0 = s0 + len(words[i][2])
+                        # window ending after word i
+                        seg = stream[max(0, e0 - n_):e0]
+                        pos_ = e0
+                    else:
+                        seg = stream[s0:s0 + n_]
+                        pos_ = s0
+                    if len(seg) < n_ // 2:
+                        continue
+                    sm_ = difflib.SequenceMatcher(None, q, seg, autojunk=False)
+                    if sm_.real_quick_ratio() < 0.6 or sm_.quick_ratio() < 0.6:
+                        continue
+                    r_ = sm_.ratio()
+                    if r_ > best_[0]:
+                        best_ = (r_, pos_)
+                return best_[1], best_[0]
+            fa = fb = None
+            if rr and rr.get('B'):
+                fb, rb_ = fuzzy(norm(rr['B']), False)
+                if rb_ < 0.72:
+                    fb = None
+            if rr and rr.get('A'):
+                fa, ra_ = fuzzy(norm(rr['A']), True)
+                if ra_ < 0.72:
+                    fa = None
+            if cand is None or how != 'ocr':
+                if fa is not None and fb is not None and abs(fa - fb) <= 30:
+                    cand, how, conf = (fa + fb) // 2, 'fz', 3
+                elif ca is None and cb is None and (fa is not None or fb is not None):
+                    cand, how, conf = (fa if fa is not None else fb), 'fz', 1
+            if how == 'fz':
+                pass
+            elif ca is not None and cb is not None and abs(ca - cb) <= 25:
+                cand, how, conf = ca, 'rocr', 3
+            elif ca is not None or cb is not None:
+                cand, how, conf = (ca if ca is not None else cb), 'rocr', 1
             if cand is None:
-                ia, ib = self.ink(jp[0]), self.ink(jp[1])
-                cand, how = int(len(stream) * ia / max(ia + ib, 1)), 'ink'
-            wi = max(0, bisect.bisect_right(starts, cand) - 1)
-            if wi + 1 < len(starts) and cand - starts[wi] > len(words[wi][2]) // 2:
-                wi += 1
+                if getattr(self.cfg, 'VIRTUAL', False):
+                    cand, how = len(stream) // 2, 'half'
+                else:
+                    ia, ib = self.ink(jp[0]), self.ink(jp[1])
+                    cand, how = int(len(stream) * ia / max(ia + ib, 1)), 'ink'
+            def at_word(c_):
+                w_ = max(0, bisect.bisect_right(starts, c_) - 1)
+                if w_ + 1 < len(starts) and c_ - starts[w_] > len(words[w_][2]) // 2:
+                    w_ += 1
+                return w_
             tw = lambda j: self.text_of(by_id, units[words[j][0]]).split()[words[j][1]]
-            out[k] = {'pages': list(pp), 'jpg': list(jp), 'how': how, 'conf': conf, 'unit': words[wi][0], 'word': words[wi][1],
-                      'frac': round(cand / max(len(stream), 1), 3),
+            wi = at_word(cand)
+            opts = {}
+            pos_opts = {'ca': ca, 'cb': cb, 'fa': fa, 'fb': fb}
+            if cand is not None and how == 'ocr':
+                pos_opts['ocr'] = cand
+            if not getattr(self.cfg, 'VIRTUAL', False):
+                ia_, ib_ = self.ink(jp[0]), self.ink(jp[1])
+                pos_opts['ink'] = int(len(stream) * ia_ / max(ia_ + ib_, 1))
+            if b_pg in pages and a_pg not in merged and 'ocr' not in pos_opts:
+                ocr_b2 = pages.get(b_pg, '')
+                for o in (0, 12, 30, 60):
+                    key = ocr_b2[o:o + 20]
+                    if len(key) >= 16:
+                        hits = [m.start() for m in re.finditer(re.escape(key), stream)]
+                        if len(hits) == 1:
+                            pos_opts['ocr'] = max(hits[0] - o, 0)
+                            break
+            for lab, c_ in pos_opts.items():
+                if c_ is None:
+                    continue
+                w_ = at_word(c_)
+                opts[lab] = {'unit': words[w_][0], 'word': words[w_][1], 'frac': round(c_ / max(len(stream), 1), 3),
+                             'tail': ' '.join(tw(j) for j in range(max(0, w_ - 5), w_)), 'head': ' '.join(tw(j) for j in range(w_, min(len(words), w_ + 5)))}
+            out[k] = {'pages': [str(x) for x in pp], 'jpg': [x if isinstance(x, int) else str(x) for x in jp], 'how': how, 'conf': conf, 'unit': words[wi][0], 'word': words[wi][1],
+                      'frac': round(cand / max(len(stream), 1), 3), 'opts': opts,
                       'tail': ' '.join(tw(j) for j in range(max(0, wi - 6), wi)), 'head': ' '.join(tw(j) for j in range(wi, min(len(words), wi + 6)))}
         (self.dir / 'candidates.json').write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
         n = {}
         for v in out.values():
             n[(v['how'], v['conf'])] = n.get((v['how'], v['conf']), 0) + 1
         print(len(out), 'two-page scans;', n)
+
+    def autosplit(self):
+        """splits_auto.txt: 'ok' for every two-page scan whose Word-OCR cut agrees with the ink share of the two scans (|diff| <= 0.10);
+        the others are listed for a look at the scans (review)."""
+        cands = json.loads((self.dir / 'candidates.json').read_text(encoding='utf-8'))
+        done = set()
+        for f in sorted(self.dir.glob('splits_*.txt')):
+            if f.name != 'splits_auto.txt':
+                for line in f.read_text(encoding='utf-8').splitlines():
+                    if line.strip() and not line.startswith('#'):
+                        done.add(int(line.split()[0]))
+        auto, todo = [], []
+        for k, v in sorted(cands.items(), key=lambda kv: int(kv[0])):
+            k = int(k)
+            if k in done:
+                continue
+            jp = v['jpg']
+            if getattr(self.cfg, 'VIRTUAL', False):
+                ink = v['frac']
+            else:
+                ia, ib = self.ink(jp[0]), self.ink(jp[1])
+                ink = ia / max(ia + ib, 1)
+            if ((v['how'] == 'ocr' and v['conf'] == 2 and abs(v['frac'] - ink) <= 0.12) or (v['how'] in ('rocr', 'fz') and v['conf'] >= 3 and abs(v['frac'] - ink) <= 0.30)):
+                auto.append(f'{k} ok')
+            else:
+                todo.append((k, v['how'], v['conf'], v['frac'], round(ink, 3)))
+        f = self.dir / 'splits_auto.txt'
+        f.write_text('# accepted automatically: the Word OCR page break agrees with the ink share of the two scans\n' + '\n'.join(auto) + '\n', encoding='utf-8')
+        print(len(auto), 'accepted;', len(todo), 'to review:', ' '.join(str(x[0]) for x in todo))
 
     def review(self, outdir, pdfs, per=3):
         from PIL import Image, ImageDraw
@@ -312,7 +567,7 @@ class Book:
         for s in range(0, len(pdfs), per):
             tiles = []
             for k in pdfs[s:s + per]:
-                ja, jb = self.cfg.pdf_jpgs(k)
+                ja, jb = self.pdf_jpgs(k)
                 a, b = crop(ja, False), crop(jb, True)
                 t = Image.new('L', (max(a.width, b.width), a.height + b.height + 40), 255)
                 t.paste(a, (0, 20)); t.paste(b, (0, a.height + 40))
@@ -331,7 +586,9 @@ class Book:
             for k in pdfs[s:s + per]:
                 c = cands.get(str(k))
                 if c:
-                    print(f"PDF {k} [{c['how']}{c['conf']} {c['frac']}]  A ends: ...{c['tail']}   |   B starts: {c['head']}...")
+                    print(f"PDF {k}  pages {'-'.join(c['pages'])}")
+                    for lab, o in (c.get('opts') or {}).items():
+                        print(f"   {lab:4} ...{o['tail']}  |  {o['head']}...")
 
     # ------------------------------------------------------------------ splits
     def read_splits(self):
@@ -342,10 +599,13 @@ class Book:
                 if not line or line.startswith('#'):
                     continue
                 k, mode, *rest = line.split(None, 2)
-                e = spec.setdefault(int(k), {'V': {}})
+                e = spec.setdefault(int(k), {'V': {}, 'T': {}})
                 if mode == 'V':
                     fid, side = rest[0].split()
                     e['V'][fid] = side
+                elif mode == 'T':
+                    fid, n_ = rest[0].split()
+                    e['T'][fid] = int(n_)
                 elif mode == 'ok':
                     e['mode'] = 'ok'
                 else:
@@ -362,6 +622,11 @@ class Book:
         stream = ''.join(norm(w) for u in units for w in self.text_of(by_id, u).split())
         if spec.get('mode') == 'ok':
             return cand['unit'], cand['word']
+        if spec.get('mode') in ('ca', 'cb', 'ink', 'ocr'):
+            o = (cand.get('opts') or {}).get(spec['mode'])
+            if not o:
+                raise SystemExit(f'split option {spec["mode"]} is not available for this scan')
+            return o['unit'], o['word']
         toks = [norm(w) for w in spec['words'].split()]
         centre = int(len(stream) * cand['frac'])
         for trim in ((0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2)):
@@ -426,11 +691,11 @@ class Book:
     def tri(a, b='', c=''):
         return ' || '.join(clean(x) for x in (a, b, c)) if (b or c) else clean(a)
 
-    def table_lines(self, tb):
+    def table_lines(self, tb, rows=None, nohead=False):
         want = 'اردو|urdu' if self.cfg.LANGS[0] == 'ur' else 'پښتو|pashto' if self.cfg.LANGS[0] == 'ps' else None
         tr = next((t for t in tb.get('translations', []) if want and re.search(want, t.get('language', ''), re.I)), tb)
-        out = ['table', 'th | ' + ' | '.join(clean(h) for h in tr['headers'])]
-        for r in tr['rows']:
+        out = ['table'] + ([] if nohead else ['th | ' + ' | '.join(clean(h) for h in tr['headers'])])
+        for r in (tr['rows'][rows[0]:rows[1]] if rows else tr['rows']):
             out.append('tr | ' + ' | '.join(clean(c) for c in r))
         return out + ['endtable']
 
@@ -506,7 +771,7 @@ class Book:
 
         for k in sorted(by_pdf):
             group = by_pdf[k]
-            r = c.route(k, group)
+            r = c.route(k, group) if hasattr(c, 'route') else None
             if r:
                 taken = set()
                 for jpg, pred in r.items():
@@ -551,6 +816,11 @@ class Book:
                     cut_u -= 1
             for ui, u in enumerate(units):
                 sec = by_id[u['sec']]
+                if u['k'] == 't' and u['id'] in sp.get('T', {}):
+                    n_ = sp['T'][u['id']]
+                    put(jp[0], sec, dict(u, rows=(0, n_)))
+                    put(jp[1], sec, dict(u, rows=(n_, None), nohead=True))
+                    continue
                 side = sp['V'].get(u['id']) if u['k'] in ('t', 'v') else None
                 if side is None:
                     side = 'A' if ui < cut_u else 'B'
@@ -564,7 +834,15 @@ class Book:
         sec_index = {s['id']: n for n, s in enumerate(secs)}
         for jpg in page_units:
             page_units[jpg].sort(key=lambda it: (sec_index[it[0]['id']], it[1].get('o', 0), it[1].get('part', 0)))
-        order = list(range(c.TOTAL_JPG))
+        virtual = getattr(c, 'VIRTUAL', False)
+        if virtual:
+            def okey(x):
+                if isinstance(x, int):
+                    return (1, x, 0, '')
+                return (0 if x[0] == 'F' else 2, 0, x[1] or 0, x[2])
+            order = sorted(page_units, key=okey)
+        else:
+            order = list(range(c.TOTAL_JPG))
         ex_last = {}
         for jpg in order:
             for sec, u, over in page_units.get(jpg, []):
@@ -573,14 +851,18 @@ class Book:
         started, st = set(), {'ex': None, 'sec': None, 'exch': None, 'used': set()}
         pages = {}
         for jpg in order:
-            if jpg in c.DUPLICATE or jpg not in page_units:
+            if (not virtual and jpg in c.DUPLICATE) or jpg not in page_units:
                 continue
             L = self.emit(jpg, page_units[jpg], notes.get(jpg, []), chapter_of, started, st, ex_last)
             if L is not None:
                 pages[jpg] = L
-        for j, src in c.DUPLICATE.items():
+        if virtual:
+            slot = {key: n for n, key in enumerate(order)}
+            pages = {slot[key]: L for key, L in pages.items()}
+            (self.dir / 'meta.json').write_text(json.dumps({'total': len(pages)}), encoding='utf-8')
+        for j, src in ({} if virtual else c.DUPLICATE).items():
             pages[j] = ['@status duplicate', '@issue ' + c.NOTES.get(j, f'Scan {j} repeats scan {src}.')]
-        for j in range(c.TOTAL_JPG):
+        for j in range(0 if virtual else c.TOTAL_JPG):
             if j not in pages and (self.dir / 'fix' / f'p{j:03}.txt').exists() is False:
                 pages[j] = ['@status blank', '@issue ' + getattr(c, 'BLANK', {}).get(j, 'No reviewed text for this scan (advertisement, blank or not part of the book).')]
         for fx in (self.dir / 'fix').glob('p[0-9][0-9][0-9].txt'):
@@ -594,7 +876,7 @@ class Book:
             fx = self.dir / 'fix' / f'p{j:03}.txt'
             txt = fx.read_text(encoding='utf-8') if fx.exists() else '\n'.join(L) + '\n'
             (out / f'p{j:03}.txt').write_text(txt, encoding='utf-8')
-        missing = [j for j in range(c.TOTAL_JPG) if j not in pages]
+        missing = [] if virtual else [j for j in range(c.TOTAL_JPG) if j not in pages]
         print('pages written', len(pages), 'missing (no content, no page file)', missing)
         if missing:
             print('  -> every JPG needs a page file: add them to fix/ as blank pages')
@@ -618,12 +900,15 @@ class Book:
         for sec, u, over in items:
             ch = chapter_of[sec['id']]
             n = ch['number']
+            kind = c.sec_kind(sec)
+            sid = f'{self.unit_no(ch)}-{kind}'
+            if pend and (n not in started or (kind != 'back' and st['sec'] != sid) or kind != 'ex'):
+                flush()      # the answers of the last question come before the next unit / section / end of the exercise
+                lastq = None
             if n not in started:
                 started.add(n)
                 L.append(f"@unit {self.unit_no(ch)} | " + (self.tri(*c.FM_TITLE) if c.is_front(ch) else self.chapter_titles(ch)))
                 st['sec'] = None
-            kind = c.sec_kind(sec)
-            sid = f'{self.unit_no(ch)}-{kind}'
             if kind != 'back' and st['sec'] != sid:
                 if cur_ex and kind != 'ex':
                     L.append('endexercise')
@@ -636,7 +921,7 @@ class Book:
                 flush()
                 lastq = None
             if u['k'] == 't':
-                L += self.table_lines(next(b for b in sec['blocks'] if b['id'] == u['id']))
+                L += self.table_lines(next(b for b in sec['blocks'] if b['id'] == u['id']), u.get('rows'), u.get('nohead', False))
                 continue
             if u['k'] == 'v':
                 L += self.svg_lines(next(b for b in sec['blocks'] if b['id'] == u['id']))

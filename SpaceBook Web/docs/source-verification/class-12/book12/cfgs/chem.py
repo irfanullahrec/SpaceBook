@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+from pathlib import Path
+KEY = 'chem'
+JPG = Path('D:/SpaceBook/Books/12th/12th Chemistry/JPG')

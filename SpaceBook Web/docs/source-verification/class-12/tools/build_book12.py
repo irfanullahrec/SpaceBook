@@ -48,6 +48,9 @@ for _k, _c in _cfg.items():
 def source_pages(subj):
     """One scan (JPG) per book page; pNNN = NNN-th file in sorted order (see math12/pagemap.py)."""
     if subj in _cfg:
+        meta = HERE / subj / 'meta.json'
+        if getattr(_cfg[subj], 'VIRTUAL', False) and meta.exists():     # one page per printed number: the page count is the book's
+            return list(range(json.loads(meta.read_text(encoding='utf-8'))['total']))
         return list(range(_cfg[subj].TOTAL_JPG))
     if subj == 'stat':   # cover + PDF p3..p176 split into left/right halves (see stat12/pagemap.py)
         return list(range(349))
