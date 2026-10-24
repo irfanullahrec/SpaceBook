@@ -58,6 +58,7 @@ class Book:
         for ch in self.load():
             for s in ch['sections']:
                 ref = (s.get('refs') or [{}])[0]
+                ref = ref if isinstance(ref, dict) else {}
                 out.append(dict(s, ch=ch['number'], pdf=ref.get('pdfPage'), printed=[p for p in (ref.get('printedPages') or []) if p is not None]))
         return out
 
@@ -90,6 +91,8 @@ class Book:
                 out += ([v] + ps) if b.get('visualFirst') else (ps + [v])
             else:
                 raise SystemExit(f'{self.key}: unknown layout type {t} in {sec["id"]}')
+        for n, u in enumerate(out):
+            u['o'] = n
         return out
 
     def text_of(self, by_id, u):
@@ -103,11 +106,17 @@ class Book:
         direct, stream = [], []
         for s in group:
             only = [p for p in s['printed'] if p in pages]
-            if len(only) == 1 and len(group) > 1:
+            if len(only) == 1:
                 direct.append((only[0], s))
             else:
                 stream.append(s)
         return direct, stream
+
+    def jpg_path(self, j):
+        """The N-th scan in sorted file order (the books' file names differ: 000.jpg, 000_page_1.jpg, 001.jpg, ..._page_001.jpg)."""
+        if getattr(self, '_files', None) is None:
+            self._files = sorted(self.cfg.JPG.glob('*.jpg'))
+        return self._files[j]
 
     def printed_of(self, jpg):
         """Printed page number on a JPG: the config's own rule, or (single-scan books) the page the reviewed data names for its scan."""
@@ -142,8 +151,8 @@ class Book:
         out, f = {}, self.dir / 'footers.json'
         if f.exists():
             out = {int(k): v for k, v in json.loads(f.read_text(encoding='utf-8')).items()}
-        files = sorted(self.cfg.JPG.glob('*.jpg'))
-        for j, p in enumerate(files):
+        for j in range(len(sorted(self.cfg.JPG.glob('*.jpg')))):
+            p = self.jpg_path(j)
             if j in out:
                 continue
             im = Image.open(p).convert('L')
@@ -215,7 +224,7 @@ class Book:
     def ink(self, jpg):
         from PIL import Image
         import numpy as np
-        im = np.asarray(Image.open(self.cfg.JPG / f'{jpg:03}.jpg').convert('L'), dtype=np.uint8)
+        im = np.asarray(Image.open(self.jpg_path(jpg)).convert('L'), dtype=np.uint8)
         h, w = im.shape
         body = im[int(h * 0.05):int(h * 0.90), int(w * 0.04):int(w * 0.96)]
         return int((body < 110).sum())
@@ -223,15 +232,19 @@ class Book:
     def by_pdf(self):
         d = {}
         for s in self.sections():
-            d.setdefault(s['pdf'], []).append(s)
+            if s['pdf'] is not None:      # sections without a source scan are SpaceBook study aids, not book pages
+                d.setdefault(s['pdf'], []).append(s)
         return d
 
     def two_page_scans(self):
         out = []
         for k, group in sorted(self.by_pdf().items()):
             jp, pp = self.scan_pages(k)
-            if not jp or len(jp) != 2 or self.cfg.route(k, group):
+            if not jp or len(jp) != 2:
                 continue
+            r = self.cfg.route(k, group)
+            if r:
+                group = [s for s in group if not any(p is None or p(s) for p in r.values())]
             stream = self.scan_streams(group, pp)[1]
             units = [u for s in stream for u in self.units_of(s)]
             if any('pi' in u for u in units):
@@ -293,7 +306,7 @@ class Book:
         cands = json.loads((self.dir / 'candidates.json').read_text(encoding='utf-8'))
 
         def crop(jpg, top):
-            im = Image.open(self.cfg.JPG / f'{jpg:03}.jpg').convert('L')
+            im = Image.open(self.jpg_path(jpg)).convert('L')
             w, h = im.size
             return im.crop((0, int(h * (0.0 if top else 0.66)), w, int(h * (0.24 if top else 0.96))))
         for s in range(0, len(pdfs), per):
@@ -365,7 +378,21 @@ class Book:
                     at = h - (sum(len(x) for x in toks[:trim[0]]) if trim[0] else 0)
                 wi = bisect.bisect_left(starts, at)
                 return (len(units), 0) if wi >= len(words) else words[wi]
-        raise SystemExit(f'cannot place the split "{spec["words"]}"')
+        # my reading of the scan may spell a word differently from the reviewed data: take the best matching run of words
+        nw = [norm(w) for u in units for w in self.text_of(by_id, u).split()]
+        n = len(toks)
+        best = (0, None)
+        for i in range(0, max(len(nw) - n + 1, 0)):
+            r = difflib.SequenceMatcher(None, ''.join(toks), ''.join(nw[i:i + n])).ratio()
+            r -= 0.15 * abs(starts[i] - centre) / max(len(stream), 1)
+            if r > best[0]:
+                best = (r, i)
+        if best[1] is not None and best[0] >= 0.75:
+            i = best[1]
+            wi = i + n if spec['mode'] == 'A' else i
+            print(f'   (approximate match {best[0]:.2f} for "{spec["words"]}")')
+            return (len(units), 0) if wi >= len(words) else words[wi]
+        raise SystemExit(f'cannot place the split "{spec["words"]}" (best {best[0]:.2f})')
 
     @staticmethod
     def end_sentence(tokens, at, window):
@@ -481,12 +508,16 @@ class Book:
             group = by_pdf[k]
             r = c.route(k, group)
             if r:
+                taken = set()
                 for jpg, pred in r.items():
                     for s in group:
                         if pred is None or pred(s):
+                            taken.add(s['id'])
                             for u in self.units_of(s):
                                 put(jpg, s, u)
-                continue
+                group = [s for s in group if s['id'] not in taken]
+                if not group:
+                    continue
             jp, pp = self.scan_pages(k)
             if not jp:
                 continue
@@ -530,6 +561,9 @@ class Book:
                     continue
                 put(jp[0] if side == 'A' else jp[1], sec, u)
 
+        sec_index = {s['id']: n for n, s in enumerate(secs)}
+        for jpg in page_units:
+            page_units[jpg].sort(key=lambda it: (sec_index[it[0]['id']], it[1].get('o', 0), it[1].get('part', 0)))
         order = list(range(c.TOTAL_JPG))
         ex_last = {}
         for jpg in order:
@@ -549,6 +583,8 @@ class Book:
         for j in range(c.TOTAL_JPG):
             if j not in pages and (self.dir / 'fix' / f'p{j:03}.txt').exists() is False:
                 pages[j] = ['@status blank', '@issue ' + getattr(c, 'BLANK', {}).get(j, 'No reviewed text for this scan (advertisement, blank or not part of the book).')]
+        for fx in (self.dir / 'fix').glob('p[0-9][0-9][0-9].txt'):
+            pages.setdefault(int(fx.stem[1:]), [])
         self.write_units()
         out = self.dir / 'pages'
         out.mkdir(exist_ok=True)
@@ -622,9 +658,10 @@ class Book:
             recs = [r for r in self.bank_index(ch).get((sec['id'], u.get('pi')), []) if id(r[1]) not in st['used']]
             st['exch'] = n
             if not cur_ex:
-                cur_ex = clean(orig).strip(' :-') if u['k'] == 'h' and orig.strip() else c.EX_TITLE[0]
+                is_title = u['k'] == 'h' and orig.strip() and re.search(r'مشق|سوال|exercise|تمرین|پوښتن', orig, re.I)
+                cur_ex = clean(orig).strip(' :-') if is_title else c.EX_TITLE[0]
                 L.append(f'exercise {cur_ex}')
-                if u['k'] == 'h' and u['pi'] == 0:
+                if is_title and u['pi'] == 0:
                     continue
             if u.get('part') == 2:
                 flush()
@@ -650,7 +687,7 @@ class Book:
             body = self.tri(*[self.strip_no(x) for x in slots])
             rec = recs[0] if recs else None
             no = orig_no or (str(rec[1].get('qNo') or '') if rec else '')
-            if orig_no and re.fullmatch(r'\d{1,2}', orig_no):
+            if orig_no and re.fullmatch(r'\d{1,2}', orig_no) and not (u['k'] == 'l' and getattr(c, 'LINE_PARTS', False)):
                 L.append(f'q {no} | {body}'); lastq = len(L) - 1
             elif no:
                 L.append(f'qp {no} | {body}'); lastq = len(L) - 1
@@ -707,7 +744,7 @@ class Book:
     def check(self):
         c = self.cfg
         dump = self.load()
-        NO = re.compile(r'^\s*(\d+|[ivx]+)\s*[۔.]\s*')
+        NO = re.compile(r'^\s*[(（]?(\d{1,2}|[ivxlc]{1,5}|[۰-۹]{1,2})[)）]?\s*[۔.:\-]?\s+(?=\S)|^\s*[(（]?(\d{1,2}|[ivxlc]{1,5}|[۰-۹]{1,2})[)）]?\s*[۔.:\-]\s*')
         got = {'lesson': [], 'exercise': []}
         cur_unit, in_ex = None, False
         pnos = []
@@ -732,14 +769,17 @@ class Book:
         for kind in ('lesson', 'exercise'):
             bad = 0
             for ch in dump:
-                n = '0' if self.cfg.is_front(ch) else str(ch['number'])
+                n = str(self.unit_no(ch))
                 want = []
                 for s in ch['sections']:
                     if (kind == 'exercise') != (c.sec_kind(s) == 'ex'):
                         continue
                     for u in self.units_of(by_id[s['id']]):
                         if 'pi' in u:
-                            want += [norm(w) for w in NO.sub('', s['paras'][u['pi']].get(c.ORIG) or '').split()]
+                            txt = s['paras'][u['pi']].get(c.ORIG) or ''
+                            if kind == 'exercise' and u['k'] == 'h' and u['pi'] == 0 and re.search(r'مشق|سوال|exercise|تمرین|پوښتن', txt, re.I):
+                                continue
+                            want += [norm(w) for w in NO.sub('', txt).split()]
                 have = [norm(w) for u, t in got[kind] if u == n for w in NO.sub('', t).split()]
                 want, have = [w for w in want if w], [w for w in have if w]
                 sm = difflib.SequenceMatcher(None, want, have, autojunk=False)
