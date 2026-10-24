@@ -601,6 +601,11 @@ class Book:
                     e['T'][fid] = int(n_)
                 elif mode == 'N':       # the text from these words on is the first page of the NEXT scan (the reviewed record runs on into it)
                     e['N'] = rest[0]
+                elif mode == 'S':       # global mode: pages K .. K+n-1 share the units a .. b-1 evenly (a summarised text has no words to find)
+                    a_, b_, n_ = rest[0].split()
+                    e['mode'], e['S'] = 'S', (int(a_.lstrip('#')), int(b_.lstrip('#')), int(n_))
+                elif mode == 'G':       # global mode: these whole sections sit on page K (front matter, covers)
+                    e.setdefault('G', []).extend(rest[0].split())
                 elif mode == 'TN':      # a table that goes on at the top of the NEXT scan's first page: rows before n stay, the rest move there
                     fid, n_ = rest[0].split()
                     e.setdefault('TN', {})[fid] = int(n_)
@@ -642,7 +647,7 @@ class Book:
                 raise SystemExit(f'split option {spec["mode"]} is not available for this scan')
             return o['unit'], o['word']
         toks = [norm(w) for w in spec['words'].split()]
-        centre = int(len(stream) * cand['frac'])
+        centre = int(len(stream) * cand.get('frac', 0.5))
         for trim in ((0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2)):
             t = toks[trim[0]:len(toks) - trim[1]]
             ph = ''.join(t)
@@ -769,6 +774,211 @@ class Book:
         return m.group(1) if m else ''
 
     # ------------------------------------------------------------------ generate
+    def peek(self, jpg, n='260'):
+        """Global mode: the stream text after the start of the last page cut before JPG `jpg` (to find the words a page begins with)."""
+        jpg, n = int(jpg), int(n)
+        secs = self.sections()
+        spec = self.read_splits()
+        G = {sid for e in spec.values() for sid in e.get('G', [])}
+        direct_ids = tuple(getattr(self.cfg, 'GLOBAL_DIRECT', ()))
+        units = [u for s in secs if s['pdf'] is not None and s['id'] not in G and not (direct_ids and s['id'].startswith(direct_ids)) for u in self.units_of(s)]
+        by_sec = {s['id']: s for s in secs}
+        texts = [self.text_of(by_sec, u) for u in units]
+        words, starts, nw, pos = [], [], [], 0
+        for ui, t_ in enumerate(texts):
+            for wi, w in enumerate(t_.split()):
+                words.append((ui, wi))
+                starts.append(pos)
+                nw.append(norm(w))
+                pos += len(nw[-1])
+        stream = ''.join(nw)
+        prev = 0
+        for k in sorted(k for k, e in spec.items() if e.get('mode') in ('B', 'S') and k < min(jpg, 10000)):
+            if spec[k].get('mode') == 'S':
+                w0 = bisect.bisect_left(words, (spec[k]['S'][1] - 1, 0))
+                prev = starts[w0] if w0 < len(starts) else prev
+                continue
+            if spec[k]['words'].startswith('#'):
+                w0 = bisect.bisect_left(words, (int(spec[k]['words'][1:].split()[0]), 0))
+                prev = starts[w0] if w0 < len(starts) else prev
+                continue
+            toks = [norm(w) for w in spec[k]['words'].split()]
+            for trim in ((0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2)):
+                ph = ''.join(toks[trim[0]:len(toks) - trim[1]])
+                m = stream.find(ph, prev) if len(ph) >= 6 else -1
+                if m >= 0:
+                    prev = m
+                    break
+        wi = bisect.bisect_left(starts, prev)
+        out, last_u = [], None
+        for i in range(wi, min(wi + n, len(words))):
+            ui, w = words[i]
+            tok = texts[ui].split()[w]
+            if ui != last_u:
+                out.append(f'\n[{ui}:{units[ui]["k"]}] ')
+                last_u = ui
+            out.append(tok)
+        print(' '.join(out))
+
+    def slice_para(self, p, i, j):
+        """Words i..j of a paragraph's original text; the translations are cut at the nearest sentence ends (a continuation starts with an ellipsis)."""
+        o = self.cfg.ORIG
+        ur = (p.get(o) or '').split()
+        n = max(len(ur), 1)
+        out = {o: ' '.join(ur[i:j])}
+        for fld in ('urdu', 'text', 'pashto'):
+            if fld == o:
+                continue
+            tk = (p.get(fld) or '').split()
+            a = 0 if i <= 0 else self.end_sentence(tk, round(len(tk) * i / n), max(4, len(tk) // 8))
+            b = len(tk) if j >= len(ur) else self.end_sentence(tk, round(len(tk) * j / n), max(4, len(tk) // 8))
+            b = max(b, a)
+            out[fld] = (('… ' if a > 0 else '') + ' '.join(tk[a:b])) if tk[a:b] else ''
+        return out
+
+    def fill_global(self, secs, by_id, spec, put):
+        """Global mode: the reviewed records do not line up with the scans, so the whole book is ONE stream of units and every page is cut
+        from it by the words it begins with:  'K B words' (the page of JPG K begins at these words, searched after the previous page start),
+        'K G sec ..' (whole sections on page K), 'K M table n1 n2 ..' (a table over pages K, K+1 ..), 'K V id J' (a figure / table sits on JPG J)."""
+        G = {sid: k for k, e in spec.items() for sid in e.get('G', [])}
+        M = {fid: (k, cnt) for k, e in spec.items() for fid, cnt in e.get('M', {}).items()}
+        V = {fid: side for e in spec.values() for fid, side in e['V'].items()}
+        units = []
+        direct_ids = tuple(getattr(self.cfg, 'GLOBAL_DIRECT', ()))
+        for s in secs:
+            if s['pdf'] is None or (direct_ids and s['id'].startswith(direct_ids)):
+                continue
+            us = self.units_of(s)
+            if s['id'] in G:
+                for u in us:
+                    if u['k'] == 't' and u['id'] in M:
+                        a_ = 0
+                        for i_, n_ in enumerate(M[u['id']][1]):
+                            put(M[u['id']][0] + i_, s, dict(u, rows=(a_, a_ + n_), nohead=bool(i_)))
+                            a_ += n_
+                    else:
+                        put(G[s['id']], s, u)
+                continue
+            units += us
+        by_sec = {s['id']: s for s in secs}
+        texts = [self.text_of(by_sec, u) for u in units]
+        words, starts, pos, nw = [], [], 0, []
+        for ui, t_ in enumerate(texts):
+            for wi, w in enumerate(t_.split()):
+                words.append((ui, wi))
+                starts.append(pos)
+                nw.append(norm(w))
+                pos += len(nw[-1])
+        stream = ''.join(nw)
+        pages = sorted(k for k, e in spec.items() if e.get('mode') in ('B', 'S') and k < 10000)
+        cuts, prev = [], 0
+        for k in pages:
+            if spec[k].get('mode') == 'S':
+                a_, b_, n_ = spec[k]['S']
+                sizes = [len(texts[u].split()) for u in range(a_, b_)]
+                tot_ = sum(sizes) or 1
+                acc_, ui_ = 0, 0
+                for i_ in range(n_):
+                    target = tot_ * i_ / n_
+                    while ui_ < len(sizes) - 1 and acc_ + sizes[ui_] / 2 < target:
+                        acc_ += sizes[ui_]
+                        ui_ += 1
+                    wi = bisect.bisect_left(words, (a_ + ui_, 0))
+                    cuts.append((k + i_, wi))
+                prev = starts[wi] if wi < len(starts) else len(stream)
+                continue
+            if spec[k]['words'].startswith('#'):       # '#N': the page begins with unit N of the stream (summarised texts have no words to find)
+                wi = bisect.bisect_left(words, (int(spec[k]['words'][1:].split()[0]), 0))
+                cuts.append((k, wi))
+                prev = starts[wi] if wi < len(starts) else len(stream)
+                continue
+            toks = [norm(w) for w in spec[k]['words'].split()]
+            at = None
+            for trim in ((0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2)):
+                ph = ''.join(toks[trim[0]:len(toks) - trim[1]])
+                if len(ph) < 6:
+                    continue
+                m = stream.find(ph, prev)
+                if m >= 0:
+                    at = m - (sum(len(x) for x in toks[:trim[0]]) if trim[0] else 0)
+                    break
+            if at is None:       # my reading of the page may differ from the reviewed text: the best matching run after the previous start
+                n = len(toks)
+                best = (0.0, None)
+                first = bisect.bisect_left(starts, prev)
+                for i in range(first, min(len(nw) - n + 1, first + 4000)):
+                    r = difflib.SequenceMatcher(None, ''.join(toks), ''.join(nw[i:i + n])).ratio()
+                    if r > best[0]:
+                        best = (r, i)
+                if best[1] is None or best[0] < 0.75:
+                    raise SystemExit(f'page {k}: cannot place "{spec[k]["words"]}" after the previous page (best {best[0]:.2f})')
+                print(f'   (page {k}: approximate match {best[0]:.2f} for "{spec[k]["words"]}")')
+                at = starts[best[1]]
+            wi = bisect.bisect_left(starts, at)
+            if wi < len(words) and words[wi][1] == 0:
+                ui = words[wi][0]
+                while ui > 0 and units[ui - 1]['k'] == 'h' and texts[ui - 1].strip():     # a heading is never left at the foot of the page before its text
+                    ui -= 1
+                    wi = bisect.bisect_left(words, (ui, 0))
+            cuts.append((k, wi))
+            prev = starts[wi] if wi < len(starts) else len(stream)
+        if not cuts:
+            raise SystemExit('global mode needs "K B words" lines')
+        bounds = [wi for _, wi in cuts]
+        if getattr(self.cfg, 'PAGE_STATS', True):      # a page whose words per ink is far from its neighbours' is probably cut in the wrong place
+            ratios = {}
+            for i_, (k_, wi_) in enumerate(cuts):
+                w_ = (bounds[i_ + 1] if i_ + 1 < len(bounds) else len(words)) - wi_
+                ink_ = self.ink(k_)
+                if ink_ > 0 and w_ > 0:
+                    ratios[k_] = (w_ / ink_ * 1000, w_)
+            vals = sorted(r for r, _ in ratios.values())
+            med = vals[len(vals) // 2] if vals else 0
+            odd = [(k_, round(r, 2), w_) for k_, (r, w_) in sorted(ratios.items()) if med and (r < 0.45 * med or r > 2.3 * med)]
+            blank_ = [k_ for i_, (k_, wi_) in enumerate(cuts) if ((bounds[i_ + 1] if i_ + 1 < len(bounds) else len(words)) - wi_) <= 0]
+            print(f'   page stats: median {med:.2f} words per 1000 ink; odd pages (jpg, ratio, words): {odd}; empty: {blank_}')
+        uoff, g = [], 0
+        for t_ in texts:
+            uoff.append(g)
+            g += len(t_.split())
+        for ui, u in enumerate(units):
+            sec = by_sec[u['sec']]
+            n = len(texts[ui].split())
+            a, b = uoff[ui], uoff[ui] + n
+            if u['k'] in ('t', 'v') or n == 0:
+                side = V.get(u['id']) if u['k'] in ('t', 'v') else None
+                if u['k'] == 't' and u['id'] in M:
+                    a_ = 0
+                    for i_, n_ in enumerate(M[u['id']][1]):
+                        put(M[u['id']][0] + i_, sec, dict(u, rows=(a_, a_ + n_), nohead=bool(i_)))
+                        a_ += n_
+                    continue
+                if side is not None and str(side).isdigit():
+                    put(int(side), sec, u)
+                else:
+                    ix = bisect.bisect_right(bounds, a) - 1
+                    if a in bounds:          # a figure that comes right before a page start belongs to the page before
+                        ix = bisect.bisect_left(bounds, a) - 1
+                    put(cuts[max(ix, 0)][0], sec, u)
+                continue
+            ix0 = max(bisect.bisect_right(bounds, a) - 1, 0)
+            ix1 = max(bisect.bisect_left(bounds, b) - 1, 0)
+            if ix0 == ix1:
+                put(cuts[ix0][0], sec, u)
+                continue
+            lo = a
+            for ix in range(ix0, ix1 + 1):
+                hi = min(b, bounds[ix + 1]) if ix + 1 < len(bounds) else b
+                if hi <= lo and ix != ix0:
+                    continue
+                first, last = lo == a, hi == b
+                if first and last:
+                    put(cuts[ix][0], sec, u)
+                else:
+                    para = self.slice_para(sec['paras'][u['pi']], lo - a, hi - a)
+                    put(cuts[ix][0], sec, dict(u, part=1 if first else 2), para)
+                lo = hi
+
     def gen(self):
         c = self.cfg
         dump = self.load()
@@ -783,8 +993,17 @@ class Book:
         def put(jpg, sec, unit, para=None):
             page_units.setdefault(jpg, []).append((sec, unit, para))
 
+        glob_mode = getattr(c, 'GLOBAL_MODE', False)
+        direct_ids = tuple(getattr(c, 'GLOBAL_DIRECT', ()))          # global mode: sections whose records DO line up with the scans (glossary tables) use the scan-by-scan path
+        if glob_mode:
+            self.fill_global(secs, by_id, spec, put)
         for k in sorted(by_pdf):
             group = by_pdf[k]
+            skey = k + (10000 if glob_mode else 0)                   # their split lines are written as 10000 + the PDF number
+            if glob_mode:
+                group = [s for s in group if s['id'].startswith(direct_ids)] if direct_ids else []
+                if not group:
+                    continue
             r = c.route(k, group) if hasattr(c, 'route') else None
             if r:
                 taken = set()
@@ -801,7 +1020,7 @@ class Book:
             if not jp:
                 continue
             direct, stream = self.scan_streams(group, pp)
-            sp0 = spec.get(k) or {}
+            sp0 = spec.get(skey) or {}
             for page, s in direct:
                 us = self.units_of(s)
                 nc = None
@@ -823,7 +1042,7 @@ class Book:
                 for u in units:
                     put(jp[0], by_id[u['sec']], u)
                 continue
-            sp = spec.get(k)
+            sp = spec.get(skey)
             if not sp:
                 raise SystemExit(f'PDF {k}: no confirmed split in splits_*.txt')
             if sp.get('mode') is None:                       # only T / V lines: no text to cut, every other unit stays on the first page
@@ -1136,7 +1355,7 @@ def main():
     if cmd == 'review':
         b.review(rest[0], [int(x) for x in rest[1:]])
     else:
-        getattr(b, cmd)()
+        getattr(b, cmd)(*rest)
 
 
 if __name__ == '__main__':
