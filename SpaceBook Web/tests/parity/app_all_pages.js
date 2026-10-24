@@ -70,7 +70,13 @@ const catalog = JSON.parse(fs.readFileSync(ASSETS + 'app_catalog.json', 'utf8'))
     if (on === 'clicked') await sleep(1800);
     return on;
   };
+  // a heavy chapter is drawn, then its cards are wrapped into page cards a moment later: wait until the page count stops changing
+  const settle = async page => {
+    let last = -1, same = 0;
+    for (let k = 0; k < 20 && same < 2; k++) { await sleep(600); const n = await page.evaluate(() => window.SBApp.state().pages); same = n === last ? same + 1 : 0; last = n; }
+  };
   const turn = async page => {
+    await settle(page);
     const st = await page.evaluate(() => window.SBApp.state());
     const issues = [];
     let blank = 0;
