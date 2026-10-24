@@ -2,10 +2,44 @@
 @deco Q1: a Scratch block "when this sprite clicked / turn (counter-clockwise) 30 degrees". Q2: two Scratch scripts, both "when flag clicked; go to x:0 y:0; forever" containing "repeat 4": the left one with "switch backdrop to next backdrop; wait 0.5 secs" inside the repeat and "move 10 steps" after it (inside forever); the right one with "switch backdrop to next backdrop; move 10 steps; wait 0.5 secs" inside the repeat. Q6: a triangle of stars with rows of 1 to 5 stars, centred. Q7: a triangle of numbers: 1 / 4 9 / 16 25 36 / 49 64 81 100.
 q B | Short response questions || مختصر جوابی سوالات || لنډ ځوابي پوښتنې
 qp 1 | For the following code block a sprite will turn to 30 degrees. How many clicks are required for a sprite to complete a full cycle? || درج ذیل کوڈ بلاک کے لیے اسپرائٹ 30 ڈگری گھومے گا۔ اسپرائٹ کو ایک مکمل چکر پورا کرنے کے لیے کتنے کلکس درکار ہیں؟ || د لاندې کوډ بلاک لپاره سپرایټ ۳۰ درجې ګرځي. د سپرایټ د یوې بشپړې دورې بشپړولو لپاره څو کلیکونه اړین دي؟
+sol 12 clicks ## A full turn is 360 degrees and each click turns the sprite 30 degrees: 360 / 30 = 12.
 qp 2 | What is the difference in outputs of the following code-blocks, having 4 backdrops? || 4 بیک ڈراپس کی صورت میں درج ذیل کوڈ بلاکس کے آؤٹ پٹ میں کیا فرق ہے؟ || د ۴ شالیدونو په صورت کې د لاندې کوډ بلاکونو د آوټ پټ ترمنځ څه توپیر دی؟
+sol In the left script the sprite switches through all four backdrops (waiting 0.5 s on each) and only after the repeat block moves 10 steps, so it moves 10 steps per round. In the right script the sprite moves 10 steps after every backdrop change, so it moves 4 x 10 = 40 steps per round, steadily while the backdrops change. Both scripts show the four backdrops in order and come back to the first one. ## The only difference is where 'move 10 steps' is placed: after the repeat or inside it.
 qp 3 | For the maze game, duplicate the map 'maze-map' and rename it as 'maze-map2'. Next, change the color of lines in the new map from Blue to Red. Add scripts such that the game becomes a multi-level game with the 2 distinct images. || بھول بھلیاں کے گیم کے لیے نقشہ 'maze-map' ڈپلیکیٹ کریں اور اس کا نام 'maze-map2' رکھیں۔ پھر نئے نقشے میں لکیروں کا رنگ نیلے سے سرخ کر دیں۔ ایسے اسکرپٹس شامل کریں کہ گیم دو مختلف تصاویر کے ساتھ ملٹی لیول گیم بن جائے۔ || د ګډوډ لارې لوبې لپاره 'maze-map' نقشه نقل کړئ او نوم یې 'maze-map2' کړئ. بیا په نوې نقشه کې د کرښو رنګ له نیلي څخه سور ته بدل کړئ. داسې سکریپټونه اضافه کړئ چې لوبه د ۲ بېلابېلو انځورونو سره د څو کچو لوبه شي.
+sol Right-click the backdrop (or sprite) 'maze-map' and choose Duplicate; rename the copy 'maze-map2'. Open its paint editor, select the blue lines and change their colour to red. Add scripts: when the sprite touches the goal (arrow) on level 1, switch the backdrop to 'maze-map2' (or broadcast 'level 2'), send the sprite back to its start position and change the 'touching color' check to the new line colour, so the same game now has two levels with two different images. ## Steps for a two-level maze game.
 qp 4 | Take a 4-digit number as input for a year and check if the year is a leap year or not. Display your output as: "The year 1979 is not a leap year" or "The year 2020 is a leap year." || سال کے لیے 4 ہندسوں کا عدد بطور ان پٹ لیں اور جانچیں کہ سال لیپ ایئر ہے یا نہیں۔ اپنا آؤٹ پٹ اس طرح دکھائیں: "The year 1979 is not a leap year" یا "The year 2020 is a leap year."۔ || د کال لپاره ۴ عددي شمېره ان پټ واخلئ او وګورئ چې کال لیپ کال دی که نه. خپل آوټ پټ داسې وښایاست: "The year 1979 is not a leap year" یا "The year 2020 is a leap year."
+solution A program that reads the year and checks the leap-year rule (divisible by 4 and not by 100, or divisible by 400).
+ss year = int(input("Enter a year: "))
+ss if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+ss ​    print("The year", year, "is a leap year")
+ss else:
+ss ​    print("The year", year, "is not a leap year")
+ss 2020 gives "The year 2020 is a leap year" and 1979 gives "The year 1979 is not a leap year".
+endsolution
 qp 5 | Take length and width as input from the user for a quadrilateral and check if it is a square or rectangle. || چوکور کے لیے صارف سے لمبائی اور چوڑائی ان پٹ کے طور پر لیں اور جانچیں کہ یہ مربع ہے یا مستطیل۔ || د څلورضلعي لپاره له کاروونکي اوږدوالی او پلنوالی ان پټ واخلئ او وګورئ چې دا مربع ده که مستطیل.
+solution A program that reads the length and width and compares them.
+ss length = float(input("Enter the length: "))
+ss width = float(input("Enter the width: "))
+ss if length == width:
+ss ​    print("It is a square")
+ss else:
+ss ​    print("It is a rectangle")
+ss A quadrilateral with all sides equal is a square; if length and width differ it is a rectangle.
+endsolution
 qp 6 | Write a program in python for the following output (print a triangle): || درج ذیل آؤٹ پٹ کے لیے python میں پروگرام لکھیں (مثلث پرنٹ کریں): || د لاندې آوټ پټ لپاره په python کې پروګرام ولیکئ (درې ګوني چاپ کړئ):
+solution A program with a loop that prints 1, 2, 3, 4 and 5 stars in each row, centred.
+ss for i in range(1, 6):
+ss ​    print(" " * (5 - i) + "* " * i)
+ss The spaces in front (5 - i) centre each row; "* " * i prints i stars. The output is a centred triangle of 5 rows with 1 to 5 stars.
+endsolution
 qp 7 | Write a program in python which displays square of the numbers and prints in the form of a triangle, as shown below. || python میں ایسا پروگرام لکھیں جو اعداد کا مربع دکھائے اور مثلث کی شکل میں پرنٹ کرے، جیسا کہ نیچے دکھایا گیا ہے۔ || په python کې داسې پروګرام ولیکئ چې د شمېرو مربع وښیي او د درې ګوني په بڼه یې چاپ کړي، لکه څنګه چې لاندې ښودل شوی.
+solution A nested loop prints the squares 1, 4, 9, 16 ... row by row: 1 / 4 9 / 16 25 36 / 49 64 81 100.
+ss n = 1
+ss for row in range(1, 5):
+ss ​    for col in range(row):
+ss ​        print(n * n, end=" ")
+ss ​        n += 1
+ss ​    print()
+ss The outer loop makes the rows (1 to 4 numbers each), the inner loop prints row numbers, n counts 1, 2, 3 ... 10 and n * n is its square.
+endsolution
 endexercise
