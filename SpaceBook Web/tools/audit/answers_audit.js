@@ -46,7 +46,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
         };
         const text = x => String((x && x.en) || '').replace(/\\s+/g, ' ').slice(0, 90);
         const lab = no => String(no == null ? '' : no).split('(').join('').split(')').join('').split('.').join('').trim().toLowerCase();
-        const FIRST = ['1', 'i', 'a'];
+        const FIRST = ['1', 'i', 'a', '۱', 'الف'];   // 1 i a, the Urdu digit one and the Urdu letter alif-lam-fe (the first label of lettered parts)
         const markHeads = arr => { (arr || []).forEach((b, i) => {
           // the last part of a question whose own sub-questions (a, b, c ...) follow in the next parts block is a heading too
           if (b && (b.t === 'q' || b.t === 'parts') && (b.parts || []).length) {
@@ -56,11 +56,11 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
             if (last && !last.solId && nb && nb.t === 'parts' && (nb.parts || []).length && FIRST.includes(lab(nb.parts[0].no)) && !FIRST.includes(lab(last.no))) b.__tail = true;
           }
           if (!b || b.t !== 'q' || (b.parts || []).length || b.solId) return;
-          const nx = arr[i + 1];
-          if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
-          // a question whose parts stand in a block of their own after its word box or an intro line (the box or line sits between the question and its parts)
+          // a question followed (after a word box, an info box or an intro line) by its first sub-question 1 / i / a, or by a block of parts
           let j = i + 1; while (arr[j] && ['m', 'table', 'svg', 'box', 'page', 'p'].includes(arr[j].t)) j++;
-          if (arr[j] && arr[j].t === 'parts' && j > i + 1) b.__head = true;
+          const nx = arr[j];
+          if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
+          if (nx && nx.t === 'parts' && j > i + 1) b.__head = true;
         }); };
         B.units.forEach(u => (u.sections || []).forEach(s => {
           let lastQ = null;
