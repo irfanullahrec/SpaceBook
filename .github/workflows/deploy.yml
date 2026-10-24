@@ -114,6 +114,7 @@ jobs:
           node tools/parity/check.js
           node --max-old-space-size=6144 tools/parity/data_parity.js
           node tests/parity/locator.js
+          node --max-old-space-size=6144 tests/parity/words_reset.js
           node --max-old-space-size=6144 tests/plan/reminders.js
           node tests/sync/entitlements.js
 

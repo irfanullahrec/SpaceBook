@@ -341,11 +341,11 @@
   {
    "id": "stats.wordstats",
    "area": "Stats and coins",
-   "name": "Word Stats (per class and subject), My Vocabulary",
+   "name": "Word Stats (per class and subject), My Vocabulary with its Reset",
    "status": "same",
-   "web": "js/word_stats.js",
-   "app": "the same tab inside each subject; Home > Project Stats / My Vocabulary read the same numbers",
-   "data": "js/word_stats_*.js (generated); marked words are user_items kind word"
+   "web": "js/word_stats.js (the My Vocabulary card: Learn new words, Review learnt words, and ↺ Reset, which asks first and clears every mark: SBWordStats.resetWords)",
+   "app": "the same tab inside each subject; Home > Project Stats / My Vocabulary read the same numbers; the My Vocabulary card has ↺ Reset: the app asks, then the website's own SBWordStats.resetWords runs in the WebView (SBApp.resetWords in assets/reader_bridge.js)",
+   "data": "js/word_stats_*.js (generated); marked words are user_items kind word, a reset deletes each one (a tombstone, so they do not come back with the next sync)"
   },
   {
    "id": "stats.grammar",

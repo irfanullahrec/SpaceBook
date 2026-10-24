@@ -78,6 +78,22 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.mouse.click(sent.x, sent.y); await sleep(900);
   check('wide: clicking a sentence opens its translation', await page.evaluate(() => [...document.querySelectorAll('.m6-tr')].some(e => !e.hidden && e.getBoundingClientRect().height > 8)));
 
+  // an Ans button opens a window the size of its answer: a short answer is a small window, a long one a big window that scrolls
+  const ans = await page.evaluate(() => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].find(x => { const r = x.getBoundingClientRect(); return r.width > 10 && r.top > 160 && r.bottom < 650; }); if (!b) return null; const r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+  check('wide: an Ans button is on the page', !!ans);
+  if (ans) {
+    await page.mouse.click(ans.x, ans.y); await sleep(1500);
+    const m = await page.evaluate(() => {
+      const c = document.querySelector('.bk-modal-card'); if (!c) return null;
+      const r = c.getBoundingClientRect(), bar = c.querySelector('.bk-modal-bar').getBoundingClientRect(), body = c.querySelector('.bk-modal-body');
+      return { w: Math.round(r.width), h: Math.round(r.height), content: Math.round(bar.height + body.scrollHeight), screen: innerHeight };
+    });
+    check('wide: the Ans window opens', !!m, m);
+    check('wide: the Ans window is as big as its answer (no empty space below it), and never taller than the screen', !!m && (m.h <= m.content + 3 || m.h >= m.screen * 0.9) && m.h <= m.screen, m);
+    await page.keyboard.press('Escape'); await sleep(500);
+    check('Esc closes the Ans window', await page.evaluate(() => !document.querySelector('.bk-modal')));
+  }
+
   // full screen: the whole page, so the word card is on screen
   await page.click('.sb-fs-btn'); await sleep(2500);
   f = await facts(page);
