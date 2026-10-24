@@ -1,11 +1,12 @@
-kept 6138 of 13272 (filler 2751, duplicates 4198, malformed 185); review queue: 43 questions without a key (docs/test_prep_review/no_key.csv), 1 subjects with >= 80 % of the keys on one option
+kept 6531 of 14154 (filler 2835, duplicates 4599, malformed 189); review queue: 43 questions without a key (docs/test_prep_review/no_key.csv), 1 subjects with >= 80 % of the keys on one option
 without a key, by subject: cls10-eng 18, cls9-phy 8, cls10-phy 8, cls10-math 3, cls12-phy 3, cls9-chem 1, cls9-urdu 1, cls10-chem 1
 skewed: cls12-math (30 MCQs, 87 % on option A)
-by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], islamiat 991 [L1-5 102/105/409/375/0], maths 186 [L1-5 76/0/0/80/30], pashto 176 [L1-5 140/18/18/0/0], science 632 [L1-5 77/47/354/154/0], urdu 252 [L1-5 13/46/99/94/0], social 395 [L1-5 0/92/275/0/28], computer 235 [L1-5 0/0/113/122/0], hpe 228 [L1-5 0/0/99/129/0], quran 546 [L1-5 0/0/313/233/0], biology 660 [L1-5 0/0/0/554/106], chemistry 394 [L1-5 0/0/0/394/0], pakstudies 131 [L1-5 0/0/0/131/0], physics 403 [L1-5 0/0/0/368/35], islamic-studies 20 [L1-5 0/0/0/20/0]
+by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], islamiat 990 [L1-5 102/105/408/375/0], maths 186 [L1-5 76/0/0/80/30], pashto 176 [L1-5 140/18/18/0/0], science 631 [L1-5 77/46/354/154/0], urdu 252 [L1-5 13/46/99/94/0], social 468 [L1-5 0/92/275/0/101], computer 235 [L1-5 0/0/113/122/0], hpe 246 [L1-5 0/0/99/115/32], quran 546 [L1-5 0/0/313/233/0], biology 660 [L1-5 0/0/0/554/106], chemistry 394 [L1-5 0/0/0/394/0], pakstudies 168 [L1-5 0/0/0/131/37], physics 403 [L1-5 0/0/0/368/35], islamic-studies 126 [L1-5 0/0/0/20/106], economics 161 [L1-5 0/0/0/0/161]
 
     0  arabic_6_data.js -> cls6-arabic
     0  arabic_7_data.js -> cls7-arabic
     0  arabic_8_data.js -> cls8-arabic
+    0  bio_11_book.js -> cls11-bio
     0  bio_11_data.js -> cls11-bio
   186  bio_data.js -> cls9-bio
     0  biology_10_back_source.js -> cls10-bio
@@ -22,12 +23,15 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
     0  biology_10_unit18_source.js -> cls10-bio
   216  biology_12_data.js -> cls12-bio
   194  biology_9_book.js -> cls9-bio
+    0  chem_11_book.js -> cls11-chem
     0  chem_11_data.js -> cls11-chem
    12  chem_12_data.js -> cls12-chem
    74  chemistry_10_book_data.js -> cls10-chem
   446  chemistry_10_source_data.js -> cls10-chem
   176  chemistry_9_book.js -> cls9-chem
+    0  civics_11_book.js -> cls11-civics
     0  civics_11_data.js -> cls11-civics
+  152  civics_12_book.js -> cls12-civics
    32  civics_12_data.js -> cls12-civics
    50  computer_10_data.js -> cls10-comp
    72  computer_12_data.js -> cls12-comp
@@ -35,6 +39,7 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
    92  computer_7_data.js -> cls7-comp
    72  computer_8_data.js -> cls8-comp
    49  computer_9_data.js -> cls9-comp
+    0  cs_11_book.js -> cls11-cs
     0  cs_11_data.js -> cls11-cs
   276  data_bio.js -> cls9-bio
   157  data_bio.js -> cls10-bio
@@ -54,7 +59,9 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
     0  drawing_7_data.js -> cls7-drawing
     0  drawing_8_data.js -> cls8-drawing
     0  drawing_9_data.js -> cls9-drawing
+  340  economics_12_book.js -> cls12-econ
     0  economics_12_data.js -> cls12-econ
+    0  eng_11_book.js -> cls11-eng
     0  eng_11_data.js -> cls11-eng
   536  english_10_data.js -> cls10-eng
    38  english_12_data.js -> cls12-eng
@@ -88,14 +95,19 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
   100  history_7_data.js -> cls7-hist
   108  history_8_data.js -> cls8-hist
    88  hpe_10_data.js -> cls10-hpe
+    0  hpe_11_book.js -> cls11-hpe
     0  hpe_11_data.js -> cls11-hpe
+  104  hpe_12_book.js -> cls12-hpe
    48  hpe_12_data.js -> cls12-hpe
   128  hpe_6_data.js -> cls6-hpe
     0  hpe_7_data.js -> cls7-hpe
   106  hpe_8_data.js -> cls8-hpe
   154  hpe_9_data.js -> cls9-hpe
+    0  ikhtiari_11_book.js -> cls11-ikhtiari
     0  ikhtiari_11_data.js -> cls11-ikhtiari
+    0  ishist_11_book.js -> cls11-ishist
     0  ishist_11_data.js -> cls11-ishist
+    0  isl_11_book.js -> cls11-isl
     0  isl_11_data.js -> cls11-isl
   222  islamiat_4_data.js -> cls4-isl
     0  islamiat_5_data.js -> cls5-isl
@@ -104,8 +116,10 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
   248  islamiat_8_data.js -> cls8-isl
     2  islamiat_9_data.js -> cls9-isl
    20  islamiat_ikhtiari_10_data.js -> cls10-islopt
+   80  islamiat_ikhtiari_12_book.js -> cls12-islopt
    48  islamiat_ikhtiari_12_data.js -> cls12-islopt
    14  islamiat_ikhtiari_9_data.js -> cls9-islopt
+  132  islamic_history_12_book.js -> cls12-islhist
    48  islamic_history_12_data.js -> cls12-islhist
   360  islamyat_10_data.js -> cls10-isl
     0  islamyat_1_book.js -> cls1-isl
@@ -136,6 +150,7 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
     0  math_8_solutions.js -> cls8-math
     0  math_9_book_data.js -> cls9-math
    70  math_data.js -> cls9-math
+    0  mq_11_book.js -> cls11-mq
     0  mq_11_data.js -> cls11-mq
   115  mutalia_quran_10_data.js -> cls10-quran
   190  mutalia_quran_6_data.js -> cls6-quran
@@ -147,6 +162,7 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
     0  nazira_2_data.js -> cls2-nazira
     0  nazira_3_data.js -> cls3-nazira
    31  pakstudy_10_data.js -> cls10-pakstudy
+   74  pakstudy_12_book.js -> cls12-pak
     0  pakstudy_12_data.js -> cls12-pak
   106  pakstudy_9_book.js -> cls9-pakstudy
   144  pakstudy_data.js -> cls9-pakstudy
@@ -158,18 +174,22 @@ by category: drawing 20 [L1-5 20/0/0/0/0], english 869 [L1-5 24/40/106/699/0], i
    18  pashto_5_data.js -> cls5-pashto
    36  pashto_6_data.js -> cls6-pashto
     0  pashto_8_data.js -> cls8-pashto
+    0  phys_11_book.js -> cls11-phy
     0  phys_11_data.js -> cls11-phy
    48  phys_12_data.js -> cls12-phy
     1  physics_10_book_data.js -> cls10-phy
   422  physics_10_source_data.js -> cls10-phy
+    0  quran_12_book.js -> cls12-quran
    64  quran_12_data.js -> cls12-quran
    39  social_studies_4_data.js -> cls4-sst
    50  social_studies_5_data.js -> cls5-sst
    90  social_studies_um_4_data.js -> cls4-sstum
    10  social_studies_um_5_data.js -> cls5-sstum
+    0  stat_11_book.js -> cls11-stat
     0  stat_11_data.js -> cls11-stat
     9  stat_12_data.js -> cls12-stat
     0  urdu_10_data.js -> cls10-urdu
+    0  urdu_11_book.js -> cls11-urdu
     0  urdu_11_data.js -> cls11-urdu
   176  urdu_12_data.js -> cls12-urdu
     0  urdu_1_book.js -> cls1-urdu
