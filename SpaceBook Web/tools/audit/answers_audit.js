@@ -1,5 +1,5 @@
 'use strict';
-/* Which questions of the books have an answer?   node --max-old-space-size=6144 tools/audit/answers_audit.js [--list cls9:math] [--json out.json] [--check] [--write-baseline]
+/* Which questions of the books have an answer?   node --max-old-space-size=6144 tools/audit/answers_audit.js [--list cls9:math] [--heads cls9:bio] [--json out.json] [--check] [--write-baseline]
  *
  * A leaf is what a student can ask the answer of: a question without parts, or one part of a question (a part of a "parts" block too). The a) b) c) d)
  * lines that follow a roman-numbered part are that part's options, not leaves.
@@ -33,7 +33,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
     const L = window['CLS' + n + '_BOOKS']; if (!L) continue;
     Object.keys(L).forEach(k => {
       const B = L[k]; if (!B || !B.units) return;
-      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0, missing: [] };
+      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0, missing: [], heads: [] };
       R.withBook(B.words, B.book, () => {
         const leaf = (loc, label, own, qSol, kindOf) => {
           rec.leaves++;
@@ -74,11 +74,11 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
               if (ps.length) {
                 const labs = R.partLabels(ps);
                 const opt = ps.map((p, i) => /^[a-e]$/.test(labs[i]) && labs.slice(0, i).some(x => R.isRoman(x)));
-                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { rec.leaves++; rec.head++; } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
-              } else if (b.__head) { rec.leaves++; rec.head++; }
+                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { rec.leaves++; rec.head++; rec.heads.push(loc + ' ' + p.no + ' | ' + text(p)); } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
+              } else if (b.__head) { rec.leaves++; rec.head++; rec.heads.push(loc + ' | ' + text(b)); }
               else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
             }
-            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { rec.leaves++; rec.head++; } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
+            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { rec.leaves++; rec.head++; rec.heads.push('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no + ' | ' + text(p)); } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
             markHeads(b.blocks);
             (b.blocks || []).forEach(x => walk(x, exId));
           };
@@ -99,7 +99,8 @@ console.log(pad('book', 14) + cols.map(c => num(c, c === 'dangling' ? 9 : 7)).jo
 data.forEach(b => console.log(pad(b.id, 14) + cols.map(c => num(b[c], c === 'dangling' ? 9 : 7)).join('')));
 console.log(pad('TOTAL', 14) + cols.map(c => num(sum(c), c === 'dangling' ? 9 : 7)).join(''));
 
-const want = opt('--list');
+const want = opt('--list'), wantHeads = opt('--heads');
+if (wantHeads) { const b = data.find(x => x.id === wantHeads); if (!b) { console.error('no such book: ' + wantHeads); process.exit(2); } b.heads.forEach(h => console.log('head      | ' + h)); }
 if (want) {
   const b = data.find(x => x.id === want);
   if (!b) { console.error('no such book: ' + want); process.exit(2); }
