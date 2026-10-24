@@ -51,6 +51,9 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
           if (!b || b.t !== 'q' || (b.parts || []).length || b.solId) return;
           const nx = arr[i + 1];
           if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
+          // a question whose parts stand in a block of their own after its word box (the box sits between the question and its parts)
+          let j = i + 1; while (arr[j] && ['m', 'table', 'svg', 'box', 'page'].includes(arr[j].t)) j++;
+          if (arr[j] && arr[j].t === 'parts' && j > i + 1) b.__head = true;
         }); };
         B.units.forEach(u => (u.sections || []).forEach(s => {
           let lastQ = null;
