@@ -1,0 +1,15 @@
+@printed 166
+@status lesson
+## Difference between Circuit and Packet Switching || سرکٹ اور پیکٹ سوئچنگ میں فرق || د سرکټ او کڅوړې سویچنګ توپیر
+table جدول: سرکٹ اور پیکٹ سوئچنگ میں فرق || Table: Difference between Circuit and Packet Switching || جدول: د سرکټ او کڅوړې سویچنګ توپیر
+th | No. | Packet switching | Circuit switching
+tr | 1 | Bandwidth is allocated dynamically. | Fixed bandwidth allocation.
+tr | 2 | May be more economical as not needed dedicated circuit. | Costs more for hardware.
+tr | 3 | The packet needs to be re-transmitted every time when it gets lost, damaged before it is received in this method. | Once connection is established, communication is fast and almost errorless.
+tr | 4 | It can be used for telephony, DSL services and other data transmission services. | This concept is mainly used in telephony systems.
+tr | 5 | It is best used for sending data over the network and audio and video signals can also be sent over the network in the form of packets. | This is best used for transmission of audio signals and not suitable for data transmission.
+tr | 6 | It is usually a connection less service. | This type of switching is connection oriented and may be connectionless also.
+tr | 7 | The Internet being the most common example. | The most common example of a circuit switching network is the telephone system,PBX.
+endtable
+## 5.3.4 IP Addressing || ۵.۳.۴ آئی پی ایڈریسنگ || ۵.۳.۴ د IP پتې کول
+p An Internet Protocol address (IP address) is a number that is used to identify a device, for example a computer, a printer, etc. on the network. Each device on a network must have a unique IP address to communicate with other network devices. A host (usually a computer) is a device that sends or receives information on the network. Network devices transmit the data across the network. These devices include hubs, switches and routers. On a LAN, each || انٹرنیٹ پروٹوکول ایڈریس (آئی پی ایڈریس) ایک نمبر ہے جو نیٹ ورک پر کسی آلے، مثلاً کمپیوٹر، پرنٹر وغیرہ، کی شناخت کے لیے استعمال ہوتا ہے۔ نیٹ ورک کے ہر آلے کو دوسرے نیٹ ورک آلات سے رابطے کے لیے منفرد آئی پی ایڈریس درکار ہوتا ہے۔ ہوسٹ (عموماً کمپیوٹر) وہ آلہ ہے جو نیٹ ورک پر معلومات بھیجتا یا وصول کرتا ہے۔ نیٹ ورک آلات نیٹ ورک کے پار ڈیٹا منتقل کرتے ہیں۔ ان آلات میں ہب، سوئچ اور راؤٹر شامل ہیں۔ لین پر ہر || د انټرنېټ پروتوکول پته (IP پته) یوه شمېره ده چې په شبکه د یوې وسیلې، د بېلګې په توګه کمپیوټر، پرنټر او نورو، د پېژندلو لپاره کارول کېږي. په شبکه هره وسیله باید د نورو شبکې وسایلو سره د اړیکې لپاره ځانګړې IP پته ولري. کوربه (معمولاً کمپیوټر) هغه وسیله ده چې په شبکه معلومات لېږي یا ترلاسه کوي. د شبکې وسایل ډېټا د شبکې په اوږدو کې لېږدوي. دا وسایل هبونه، سویچونه او روټرونه شاملوي. په LAN کې هر

@@ -1,0 +1,25 @@
+@printed 223
+@status lesson
+endexercise
+@sec 7-text | Vital Statistics || حیاتی شماریات || حیاتي احصایې
+## Solution: || حل: || حل:
+table مثال 7.3 کا حل: عمر کے لحاظ سے مخصوص شرحیں اموات || Example 7.3 solution table: age-specific death rates || د بېلګې 7.3 حل: د عمر له مخې ځانګړې د مړینې کچې
+th | Age group (years) | District-A: Deaths (D) | District-A: Population (P) | District-A: Age-S.D.R | District-B: Deaths (D) | District-B: Population (P) | District-B: Age-S.D.R
+tr | 0 - 4 | 2 | 500 | 2/500 × 1000 = 4 | 1 | 400 | 1/400 × 1000 = 2.5
+tr | 15 - 29 | 8 | 2000 | 4 | 1 | 300 | 3.3
+tr | 30 - 44 | 12 | 2000 | 6 | 5 | 1000 | 5
+tr | 45 - 59 | 10 | 1000 | 10 | 18 | 2000 | 9
+tr | 60 - 74 | 20 | 500 | 40 | 70 | 2000 | 35
+tr | 75 & above | 15 | 100 | 150 | 50 | 400 | 125
+tr | Total | 67 | 6100 | 11 | 145 | 6100 | 23.8
+endtable
+eq \text{C.D.R for district A}=\dfrac{67}{6100}\times 1000=11\ \text{per thousand}
+eq \text{C.D.R for district B}=\dfrac{145}{6100}\times 1000=23.8\ \text{per thousand}
+p (7) Standardized death rate || (7) معیاری شرحِ اموات || (7) معیاري د مړینې کچه
+p All the death rates are affected by many socio-economic factors such as climate, income, educational level, occupation, age, sex etc. Aged people die comparatively at a higher rate than young people. Bad climate is injurious to health etc. To eliminate the effects of these factors, the corrected or adjusted or standardized death rates are computed to compare the death rates of two region or communities. The standardized death rates are computed either by || تمام شرحیں اموات بہت سے سماجی و معاشی عوامل جیسے آب و ہوا، آمدنی، تعلیمی سطح، پیشہ، عمر، جنس وغیرہ سے متاثر ہوتی ہیں۔ بوڑھے لوگ نسبتاً نوجوانوں سے زیادہ شرح پر مرتے ہیں۔ خراب آب و ہوا صحت کے لیے نقصان دہ ہے وغیرہ۔ ان عوامل کے اثرات کو ختم کرنے کے لیے دو علاقوں یا برادریوں کی شرحیں اموات کا موازنہ کرنے کے لیے درست شدہ یا ایڈجسٹ شدہ یا معیاری شرحیں اموات حساب کی جاتی ہیں۔ معیاری شرحیں اموات یا تو حساب کی جاتی ہیں || ټولې د مړینې کچې د ډېرو ټولنیزو-اقتصادي عواملو لکه اقلیم، عاید، تعلیمي کچه، مسلک، عمر، جنس او نورو لخوا اغېزمنې کېږي. زاړه خلک نسبتاً له ځوانانو څخه په لوړه کچه مري. بد اقلیم روغتیا ته زیانمن دی او نور. د دې عواملو د اغېزو د لرې کولو لپاره د دوو سیمو یا ټولنو د مړینې د کچو د پرتلې لپاره سم شوې یا تعدیل شوې یا معیاري د مړینې کچې محاسبه کېږي. معیاري د مړینې کچې یا محاسبه کېږي
+p (i) Direct method || (i) براہِ راست طریقہ || (i) مستقیمه طریقه
+eq S_T.D.R=\dfrac{\sum\left(\dfrac{d_i}{p_i}\right)P_i}{\sum P_i}\times 1000
+p where || جہاں || چېرته
+p d_i = number of deaths in the given population in the ith age-group. || d_i = دی گئی آبادی میں i ویں عمر کے گروہ میں اموات کی تعداد۔ || d_i = په ورکړل شوي نفوس کې د i‌م عمري ډلې کې د مړینو شمېر.
+p p_i = given population in the ith age-group. || p_i = i ویں عمر کے گروہ میں دی گئی آبادی۔ || p_i = د i‌م عمري ډلې کې ورکړل شوی نفوس.
+p P_i = standard population in the ith age group. || P_i = i ویں عمر کے گروہ میں معیاری آبادی۔ || P_i = د i‌م عمري ډلې کې معیاري نفوس.

@@ -1,0 +1,20 @@
+@printed 228
+@status lesson
+p Candidate Keys: the printed arrows point to the StudentId column and to the combination of the firstName and lastName columns. || کینڈیڈیٹ کیز: چھپے ہوئے تیر اسٹوڈنٹ آئی ڈی کالم اور پہلے نام اور آخری نام کالموں کے امتزاج کی طرف اشارہ کرتے ہیں۔ || نوماندې کیلي: چاپ شوي غشي د زده کوونکي پېژند ستون ته او د لومړي نوم او وروستي نوم ستونونو ګډون ته اشاره کوي.
+table شکل ۷.۱۳ کینڈیڈیٹ کیز || Figure 7.13 Candidate keys || انځور ۷.۱۳ نوماندې کیلي
+th | StudentId | firstName | lastName | courseId
+tr | L0002345 | Jim | Black | C002
+tr | L0001254 | James | Harradine | A004
+tr | L0002349 | Amanda | Holland | C002
+tr | L0001198 | Simon | McCloud | S042
+tr | L0023487 | Peter | Murray | P301
+tr | L0018453 | Anne | Norris | S042
+endtable
+p In the above example, student_id can be a candidate key which uniquely identifies the students in a student table. But at the same time, the combination of student’s first name and last name also form a candidate key. These both can be candidate keys for student table. || اوپر کی مثال میں اسٹوڈنٹ_آئی ڈی کینڈیڈیٹ کی ہو سکتی ہے جو اسٹوڈنٹ ٹیبل میں طلبہ کو منفرد طور پر شناخت کرتی ہے۔ لیکن ساتھ ہی طالب علم کے پہلے نام اور آخری نام کا امتزاج بھی کینڈیڈیٹ کی بناتا ہے۔ یہ دونوں اسٹوڈنٹ ٹیبل کے لیے کینڈیڈیٹ کیز ہو سکتی ہیں۔ || په پورتنۍ بېلګه کې student_id کېدای شي یوه نوماند کیلي وي چې په زده کوونکي جدول کې زده کوونکي په ځانګړي ډول پېژني. خو په ورته وخت کې د زده کوونکي د لومړي نوم او وروستي نوم ګډون هم یو نوماند کیلي جوړوي. دا دواړه کېدای شي د زده کوونکي جدول لپاره نوماندې کیلي وي.
+p A candidate key must have the following properties: || کینڈیڈیٹ کی میں درج ذیل خصوصیات ہونی چاہئیں: || نوماند کیلي باید لاندې ځانګړتیاوې ولري:
+p It must contain unique values || اس میں منفرد قدریں ہونی چاہئیں || دا باید ځانګړي ارزښتونه ولري
+p It must not contain null values || اس میں نل قدریں نہیں ہونی چاہئیں || دا باید نل ارزښتونه ونه لري
+p It contains the minimum number of fields to ensure uniqueness || اس میں انفرادیت یقینی بنانے کے لیے کم سے کم فیلڈز ہوتی ہیں || دا د ځانګړتیا د ډاډمنتیا لپاره لږ تر لږه شمېر ساحې لري
+p It must uniquely identify each record in the table || اسے ٹیبل کے ہر ریکارڈ کو منفرد طور پر شناخت کرنا چاہیے || دا باید د جدول هر ثبت په ځانګړي ډول وپېژني
+## ii. Primary Key || ii۔ پرائمری کی || ii. لومړنۍ کیلي
+p A primary key is a field, or a combination of fields used to identify particular rows in a relation. Primary key, as its name shows is the primary reference for the table and is used throughout the database to refer this table. Primary key must contain unique value and never be null. || پرائمری کی ایک فیلڈ یا فیلڈز کا امتزاج ہے جو ریلیشن میں مخصوص قطاروں کی شناخت کے لیے استعمال ہوتی ہے۔ پرائمری کی، جیسا کہ اس کے نام سے ظاہر ہے، ٹیبل کا بنیادی حوالہ ہے اور اس ٹیبل کا حوالہ دینے کے لیے پورے ڈیٹا بیس میں استعمال ہوتی ہے۔ پرائمری کی میں منفرد قدر ہونی چاہیے اور کبھی نل نہیں ہونی چاہیے۔ || لومړنۍ کیلي یوه ساحه یا د ساحو ګډون دی چې په یوه اړیکه کې ځانګړي قطارونه پېژندلو لپاره کارول کېږي. لومړنۍ کیلي، لکه څنګه چې نوم یې ښيي، د جدول لومړنی مرجع ده او په ټول ډېټابېس کې د دې جدول د حوالې لپاره کارول کېږي. لومړنۍ کیلي باید ځانګړی ارزښت ولري او هېڅکله نل نه وي.

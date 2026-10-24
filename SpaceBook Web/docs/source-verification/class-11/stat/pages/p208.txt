@@ -1,0 +1,27 @@
+@printed 204
+@status lesson
+p Advantages and disadvantages of moving average Method || متحرک اوسط کے طریقے کے فوائد اور نقصانات || د خوځېدونکي اوسط طریقې ګټې او زیانونه
+p (i) This method is simple to apply. || (i) یہ طریقہ لاگو کرنا آسان ہے۔ || (i) دا طریقه د پلي کولو لپاره ساده ده.
+p (ii) It eliminates the short term fluctuations. || (ii) یہ قلیل مدتی اتار چڑھاؤ کو ختم کرتا ہے۔ || (ii) دا لنډمهاله بدلونونه له منځه وړي.
+p (iii) It reduces the effect of extreme values. || (iii) یہ انتہائی قدروں کے اثر کو کم کرتا ہے۔ || (iii) دا د سختو ارزښتونو اغېز کموي.
+p Disadvantages || نقصانات || زیانونه
+p (i) Some values at the beginning and at the end of a time series are lost so it is not an appropriate method for projections. || (i) وقتی سلسلے کے آغاز اور اختتام کی کچھ قدریں ضائع ہو جاتی ہیں اس لیے یہ تخمینوں کے لیے موزوں طریقہ نہیں۔ || (i) د وخت لړۍ د پیل او پای ځینې ارزښتونه له منځه ځي نو دا د وړاندوینو لپاره مناسبه طریقه نه ده.
+p (ii) This method is preferred for a small number of years. || (ii) یہ طریقہ سالوں کی کم تعداد کے لیے ترجیح دیا جاتا ہے۔ || (ii) دا طریقه د کلونو د لږ شمېر لپاره غوره ګڼل کېږي.
+p (iv) The method of least squares: || (iv) کم از کم مربعات کا طریقہ: || (iv) د لږ تر لږه مربعاتو طریقه:
+p The secular trend can also be measured by fitting a straight line to the given data whereas straight line is best fitted by the method of least squares. According to this method equation for a straight line or linear trend is ŷ = a + bx, where || صدیوی رجحان کو دیے گئے اعداد و شمار پر سیدھی لکیر فٹ کر کے بھی ناپا جا سکتا ہے جبکہ سیدھی لکیر کم از کم مربعات کے طریقے سے بہترین فٹ ہوتی ہے۔ اس طریقے کے مطابق سیدھی لکیر یا خطی رجحان کی مساوات ŷ = a + bx ہے، جہاں || عمري تمایل د ورکړل شویو معلوماتو ته د مستقیمې کرښې په برابرولو سره هم اندازه کېدای شي پداسې حال کې چې مستقیمه کرښه د لږ تر لږه مربعاتو په طریقه ښه برابرېږي. د دې طریقې له مخې د مستقیمې کرښې یا خطي تمایل معادله ŷ = a + bx ده، چېرته چې
+eq b=\dfrac{n\sum xy-\sum x\sum y}{n\sum x^2-\left(\sum x\right)^2}\quad\text{and}\quad a=\dfrac{\sum y}{n}-b\left(\dfrac{\sum x}{n}\right)
+p After finding the values of a and b, the fitted equation is used to find the trend values ŷ. || a اور b کی قدریں معلوم کرنے کے بعد فٹ کی گئی مساوات رجحان کی قدریں ŷ معلوم کرنے کے لیے استعمال کی جاتی ہے۔ || د a او b د ارزښتونو له موندلو وروسته برابره شوې معادله د تمایل ارزښتونو ŷ د موندلو لپاره کارول کېږي.
+p Coding time variable: || وقت کے متغیر کی کوڈنگ: || د وخت د متغیر کوډ کول:
+p In a time series only time (t) and values (y) are given. The variable x is obtained by coding the time variable as follows; || وقتی سلسلے میں صرف وقت (t) اور قدریں (y) دی جاتی ہیں۔ متغیر x وقت کے متغیر کی کوڈنگ سے یوں حاصل کیا جاتا ہے؛ || په وخت لړۍ کې یوازې وخت (t) او ارزښتونه (y) ورکول کېږي. متغیر x د وخت د متغیر په کوډ کولو سره داسې ترلاسه کېږي؛
+p Case i: If the number of years is odd, take x = … −2, −1, 0, 1, 2, … i.e. || حالت i: اگر سالوں کی تعداد طاق ہو تو x = … −2, −1, 0, 1, 2, … لیں یعنی || حالت i: که د کلونو شمېر طاق وي نو x = … −2, −1, 0, 1, 2, … واخلئ یعنې
+table حالت i: سالوں کی طاق تعداد، کوڈ شدہ وقت || Case i: odd number of years, coded time || حالت i: د کلونو طاق شمېر، کوډ شوی وخت
+th | Years | 2001 | 2002 | 2003 | 2004 | 2005
+tr | Coded time (x) | -2 | -1 | 0 | 1 | 2
+endtable
+p Case ii: If the number of years is even, take x = … −7, −5, −3, −1, 1, 3, 5, 7, … i.e. || حالت ii: اگر سالوں کی تعداد جفت ہو تو x = … −7, −5, −3, −1, 1, 3, 5, 7, … لیں یعنی || حالت ii: که د کلونو شمېر جفت وي نو x = … −7, −5, −3, −1, 1, 3, 5, 7, … واخلئ یعنې
+table حالت ii: سالوں کی جفت تعداد، کوڈ شدہ وقت || Case ii: even number of years, coded time || حالت ii: د کلونو جفت شمېر، کوډ شوی وخت
+th | Years | 2010 | 2011 | 2012 | 2013 | 2014 | 2015
+tr | Coded time (x) | -5 | -3 | -1 | 1 | 3 | 5
+endtable
+## Example: 6.5 || مثال: 6.5 || بېلګه: 6.5
+q  | Find the trend values by fitting a least squares straight line from the following data. || درج ذیل اعداد و شمار سے کم از کم مربعات کی سیدھی لکیر فٹ کر کے رجحان کی قدریں معلوم کریں۔ || له لاندې معلوماتو څخه د لږ تر لږه مربعاتو مستقیمه کرښه برابرولو سره د تمایل ارزښتونه ومومئ.

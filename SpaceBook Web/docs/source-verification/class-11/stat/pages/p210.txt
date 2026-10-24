@@ -1,0 +1,25 @@
+@printed 206
+@status lesson
+## Solution: || حل: || حل:
+table مثال 6.6 کا حل: جدول || Example 6.6 solution table || د بېلګې 6.6 د حل جدول
+th | Year | y | x | xy | x² | Trend values ŷ = 116 + 11.3x
+tr | 1990 | 83 | -5 | -415 | 25 | 59.5
+tr | 1991 | 92 | -3 | -276 | 9 | 82.1
+tr | 1992 | 71 | -1 | -71 | 1 | 104.7
+tr | 1993 | 90 | 1 | 90 | 1 | 127.3
+tr | 1994 | 169 | 3 | 507 | 9 | 149.9
+tr | 1995 | 191 | 5 | 955 | 25 | 172.5
+tr | Total | 696 | 0 | 790 | 70 | 
+endtable
+sol The equation of straight line is ŷ = a + bx, where ## The equation of straight line is ŷ = a + bx, where || سیدھی لکیر کی مساوات ہے ŷ = a + bx، جہاں || د مستقیمې کرښې معادله ده ŷ = a + bx، چېرته چې
+eq b=\dfrac{n\sum xy-\sum x\sum y}{n\sum x^2-\left(\sum x\right)^2}=\dfrac{6(790)}{6(70)}=11.3
+eq a=\dfrac{\sum y}{n}-b\left(\dfrac{\sum x}{n}\right)=\dfrac{696}{6}=116
+sol Thus the fitted least squares equation of straight line is ŷ = 116 + 11.3x. ## Thus the fitted least squares equation of straight line is ŷ = 116 + 11.3x. || اس طرح فٹ کی گئی کم از کم مربعات سیدھی لکیر کی مساوات ہے ŷ = 116 + 11.3x۔ || په دې توګه برابره شوې د لږ تر لږه مربعاتو مستقیمې کرښې معادله ده ŷ = 116 + 11.3x.
+sol Putting the values of x in this equation we get trend values which are given in the last column of the table. ## Putting the values of x in this equation we get trend values which are given in the last column of the table. || اس مساوات میں x کی قدریں رکھنے سے ہمیں رجحان کی قدریں ملتی ہیں جو جدول کے آخری کالم میں دی گئی ہیں۔ || پدې معادله کې د x ارزښتونه ایښودو سره موږ د تمایل ارزښتونه ترلاسه کوو چې د جدول په وروستي کالم کې ورکړل شوي دي.
+## 6.1.5 Fitting of second degree parabola or quadratic trend by the method of least squares || 6.1.5 کم از کم مربعات کے طریقے سے دوسرے درجے کے قطع مکافی یا دو درجی رجحان کی فٹنگ || 6.1.5 د لږ تر لږه مربعاتو په طریقه د دویم درجې پیراپولا یا دوه‌درجي تمایل برابرول
+p The equation of second degree parabola/quadratic trend is given by || دوسرے درجے کے قطع مکافی/دو درجی رجحان کی مساوات یوں دی جاتی ہے || د دویم درجې پیراپولا/دوه‌درجي تمایل معادله داسې ورکول کېږي
+eq \hat{y}=a+bx+cx^2
+p Three normal equations for a, b, c respectively are; || a, b, c کے لیے بالترتیب تین معمول کی مساواتیں یہ ہیں؛ || د a, b, c لپاره په ترتیب سره درې نورمال معادلې دا دي؛
+eq \sum y=na+b\sum x+c\sum x^2\qquad\text{(i)}
+eq \sum xy=a\sum x+b\sum x^2+c\sum x^3\qquad\text{(ii)}
+eq \sum x^2y=a\sum x^2+b\sum x^3+c\sum x^4\qquad\text{(iii)}

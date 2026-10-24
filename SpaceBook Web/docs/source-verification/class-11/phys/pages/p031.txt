@@ -1,0 +1,21 @@
+@printed 29
+@status lesson
+p When a solid sphere moves through a liquid, the liquid opposes the motion with a force F. The magnitude of F depends on the coefficient of viscosity η (having dimensions η = [M¹L⁻¹T⁻¹]) of the liquid, the radius r of the sphere and the speed v of the sphere. Assuming that F is proportional to different powers of these quantities, guess a formula for F using the method of dimensions. || جب ایک ٹھوس کرہ کسی مائع میں حرکت کرتا ہے تو مائع قوت F سے حرکت کی مخالفت کرتا ہے۔ F کی جسامت مائع کے ضریبِ لزوجت η (جس کے ابعاد η = [M¹L⁻¹T⁻¹] ہیں)، کرے کے رداس r اور کرے کی چال v پر منحصر ہے۔ فرض کرتے ہوئے کہ F ان مقداروں کی مختلف قوتوں کے متناسب ہے، ابعاد کے طریقے سے F کا فارمولا اندازہ کریں۔ || کله چې یوه جامده کره په مایع کې حرکت کوي، مایع د F ځواک په وسیله د حرکت مخالفت کوي. د F اندازه د مایع د لزوجت ضریب η (چې ابعاد یې η = [M¹L⁻¹T⁻¹] دي)، د کرې شعاع r او د کرې چټکتیا v پورې اړه لري. فرض کړئ چې F د دې کمیتونو د بېلابېلو توانونو متناسب دی؛ د ابعادو په طریقه د F فورمول اټکل کړئ.
+p Dimensions of coefficient of viscosity ‘η’ = [M¹L⁻¹T⁻¹] || ضریبِ لزوجت ‘η’ کے ابعاد = [M¹L⁻¹T⁻¹] || د لزوجت ضریب ‘η’ ابعاد = [M¹L⁻¹T⁻¹]
+p Dimensions of radius ‘r’ = [L¹] || رداس ‘r’ کے ابعاد = [L¹] || د شعاع ‘r’ ابعاد = [L¹]
+p Dimensions of velocity ‘v’ = [L¹T⁻¹] || رفتارِ سمتی ‘v’ کے ابعاد = [L¹T⁻¹] || د سرعت ‘v’ ابعاد = [L¹T⁻¹]
+p Dimensions of force ‘F’ = [M¹L¹T⁻²] || قوت ‘F’ کے ابعاد = [M¹L¹T⁻²] || د ځواک ‘F’ ابعاد = [M¹L¹T⁻²]
+p Possible formula for drag force ‘F’= ? || مزاحمتی قوت ‘F’ کا ممکنہ فارمولا = ؟ || د مقاومتي ځواک ‘F’ ممکن فورمول = ؟
+p Let the drag force depends upon coefficient of viscosity ‘η’, radius ‘r’and velocity ‘v’ by the following equation || فرض کریں کہ مزاحمتی قوت درج ذیل مساوات کے مطابق ضریبِ لزوجت ‘η’، رداس ‘r’ اور رفتارِ سمتی ‘v’ پر منحصر ہے || فرض کړئ چې مقاومتي ځواک د لاندې معادلې له مخې د لزوجت ضریب ‘η’، شعاع ‘r’ او سرعت ‘v’ پورې اړه لري
+p Where k is constant of proportionality, now putting appropriate dimensions || جہاں k تناسب کا مستقل ہے، اب مناسب ابعاد رکھتے ہوئے || چې k د تناسب ثابت دی، اوس مناسب ابعاد ځای پر ځای کوو
+p Comparing the powers of similar physical quantities || یکساں طبیعی مقداروں کی قوتوں کا موازنہ کرتے ہوئے || د ورته فزیکي کمیتونو توانونه پرتله کوو
+p putting values of a, b and c in equation 1 we get || a، b اور c کی قدریں مساوات 1 میں رکھنے سے حاصل ہوتا ہے || په 1 معادله کې د a، b او c ارزښتونو په ځای کولو سره ترلاسه کوو
+p Dimension analysis does not give information about the value of constant, however from experiment we know that this constant is 6π. || بُعدی تجزیہ مستقل کی قدر کے بارے میں معلومات نہیں دیتا، تاہم تجربے سے ہم جانتے ہیں کہ یہ مستقل 6π ہے۔ || بُعدي تحلیل د ثابت د ارزښت په اړه معلومات نه ورکوي، خو له تجربې پوهېږو چې دا ثابت 6π دی.
+p or || یا || یا
+p Answer || جواب || ځواب
+eq F_D\propto\eta^ar^bv^c\quad\text{or}\quad F_D=k\eta^ar^bv^c\quad\text{①}
+eq [M^1L^1T^{-2}]=[M^1L^{-1}T^{-1}]^a[L^1]^b[L^1T^{-1}]^c
+eq [M]^1[L]^1[T]^{-2}=[M]^a[L]^{-a+b+c}[T]^{-a-c}
+eq F_D=k\eta^1r^1v^1
+eq F_D=k\eta rv
+eq F_D=6\pi\eta rv

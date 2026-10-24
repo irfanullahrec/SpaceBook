@@ -1,0 +1,29 @@
+@printed 229
+@status lesson
+p Primary Keys: the printed arrow points to the StudentId column. || پرائمری کیز: چھپا ہوا تیر اسٹوڈنٹ آئی ڈی کالم کی طرف اشارہ کرتا ہے۔ || لومړنۍ کیلي: چاپ شوی غشی د زده کوونکي پېژند ستون ته اشاره کوي.
+table شکل ۷.۱۴ پرائمری کیز || Figure 7.14 Primary keys || انځور ۷.۱۴ لومړنۍ کیلي
+th | StudentId | firstName | lastName | courseId
+tr | L0002345 | Jim | Black | C002
+tr | L0001254 | James | Harradine | A004
+tr | L0002349 | Amanda | Holland | C002
+tr | L0001198 | Simon | McCloud | S042
+tr | L0023487 | Peter | Murray | P301
+tr | L0018453 | Anne | Norris | S042
+endtable
+## iii. Foreign Key || iii۔ فارن کی || iii. بهرنۍ کیلي
+p A foreign key is generally a primary key from one table that appears as a field in another table where the first table has relationship to the second. For example, if we have a table A with a primary key X that is linked to a table B where X is a field in B, then X would be a foreign key in B. || فارن کی عموماً ایک ٹیبل کی پرائمری کی ہوتی ہے جو دوسرے ٹیبل میں فیلڈ کے طور پر ظاہر ہوتی ہے جہاں پہلے ٹیبل کا دوسرے سے تعلق ہو۔ مثلاً اگر ہمارے پاس پرائمری کی ایکس والا ٹیبل اے ہے جو ٹیبل بی سے منسلک ہے جہاں ایکس بی میں ایک فیلڈ ہے تو ایکس بی میں فارن کی ہو گی۔ || بهرنۍ کیلي معمولاً د یوه جدول لومړنۍ کیلي ده چې په بل جدول کې د ساحې په توګه ښکاري چېرته چې لومړی جدول له دویم سره اړیکه لري. د بېلګې په توګه که موږ یو جدول A ولرو چې لومړنۍ کیلي X لري او له جدول B سره نښلول شوی وي چېرته چې X په B کې یوه ساحه ده، نو X به په B کې بهرنۍ کیلي وي.
+p Figure 7.15 Foreign keys: the printed arrows mark the courseId column of the student table as “Foreign Keys”, the courseId column of the courses table as “Primary Keys”, and the link between the two tables as “Relationship”. || شکل ۷.۱۵ فارن کیز: چھپے ہوئے تیر اسٹوڈنٹ ٹیبل کے کورس آئی ڈی کالم کو ’’فارن کیز‘‘، کورسز ٹیبل کے کورس آئی ڈی کالم کو ’’پرائمری کیز‘‘ اور دونوں ٹیبلز کے درمیان ربط کو ’’ریلیشن شپ‘‘ ظاہر کرتے ہیں۔ || انځور ۷.۱۵ بهرنۍ کیلي: چاپ شوي غشي د زده کوونکي جدول د کورس پېژند ستون “بهرنۍ کیلي”، د کورسونو جدول د کورس پېژند ستون “لومړنۍ کیلي”، او د دواړو جدولونو ترمنځ تړاو “اړیکه” ښيي.
+table شکل ۷.۱۵ فارن کیز: اسٹوڈنٹ ٹیبل (اوپر) || Figure 7.15 Foreign keys: student table (top) || انځور ۷.۱۵ بهرنۍ کیلي: د زده کوونکي جدول (پورته)
+th | StudentId | firstName | lastName | courseId
+tr | L0002345 | Jim | Black | C002
+tr | L0001254 | James | Harradine | A004
+tr | L0002349 | Amanda | Holland | C002
+tr | L0001198 | Simon | McCloud | S042
+endtable
+table شکل ۷.۱۵ فارن کیز: کورسز ٹیبل (نیچے) || Figure 7.15 Foreign keys: courses table (bottom) || انځور ۷.۱۵ بهرنۍ کیلي: د کورسونو جدول (لاندې)
+th | courseId | courseName
+tr | A004 | Accounts
+tr | C002 | Computing
+tr | P301 | History
+tr | S042 | Short Course
+endtable

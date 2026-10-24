@@ -1,0 +1,27 @@
+@printed 62
+@status lesson
+## Solution: || حل: || حل:
+sol By definition ## By definition || تعریف کے مطابق || د تعریف له مخې
+eq \bar{x}=\dfrac{\sum x}{n}
+eq \text{Here }8=\dfrac{\sum x}{6}\ \Rightarrow\ \sum x=48
+## 2.2.4 Properties of arithmetic mean || 2.2.4 حسابی اوسط کی خصوصیات || 2.2.4 د حسابي اوسط ځانګړتیاوې
+p Some of the important properties of arithmetic mean are; || حسابی اوسط کی چند اہم خصوصیات یہ ہیں؛ || د حسابي اوسط ځینې مهمې ځانګړتیاوې دا دي؛
+p (i) The mean of a constant is constant that is if x = 5, 5, 5, 5, 5 then x̄ = 5. || (i) مستقلے کا اوسط مستقلہ ہوتا ہے یعنی اگر x = 5, 5, 5, 5, 5 ہو تو x̄ = 5۔ || (i) د ثابت اوسط ثابت وي یعنې که x = 5, 5, 5, 5, 5 وي نو x̄ = 5.
+p (ii) The sum of deviations of observations from arithmetic mean is zero that is || (ii) مشاہدات کے حسابی اوسط سے انحرافات کا مجموعہ صفر ہوتا ہے یعنی || (ii) د کتنو له حسابي اوسط څخه د انحرافاتو مجموعه صفر وي یعنې
+eq \sum(x-\bar{x})=0\quad\text{(In case of ungrouped data) and}
+eq \sum f(x-\bar{x})=0\quad\text{(In case of grouped data)}
+p Proof: || ثبوت: || ثبوت:
+eq \text{Consider }\sum_{i=1}^{n}(x_i-\bar{x})=\sum_{i=1}^{n}x_i-n\bar{x}\quad\text{(as }\bar{x}\text{ is constant)}
+eq =\sum_{i=1}^{n}x_i-n\,\dfrac{\sum_{i=1}^{n}x_i}{n}\quad\left(\text{as }\bar{x}=\dfrac{\sum x}{n}\right)
+eq =\sum_{i=1}^{n}x_i-\sum_{i=1}^{n}x_i=0
+## Example: 2.9 || مثال: 2.9 || بېلګه: 2.9
+table مثال 2.9: x اور x − x̄ || Example 2.9: x and x − x̄ || بېلګه 2.9: x او x − x̄
+th | x | x − x̄
+tr | 2 | 2 − 5 = −3
+tr | 4 | −1
+tr | 6 | 1
+tr | 8 | 3
+tr | 20 | Σ(x − x̄) = 0
+endtable
+eq \text{As }\bar{x}=\dfrac{\sum x}{n}=\dfrac{20}{4}=5
+p (iii) If x̄₁, x̄₂, …, x̄ₖ are the means of k samples of sizes n₁, n₂, …, nₖ respectively, then combined arithmetic mean is defined as || (iii) اگر x̄₁, x̄₂, …, x̄ₖ بالترتیب سائز n₁, n₂, …, nₖ کے k نمونوں کے اوسط ہوں تو مشترکہ حسابی اوسط کی تعریف یہ ہے || (iii) که x̄₁, x̄₂, …, x̄ₖ په ترتیب د n₁, n₂, …, nₖ کچې د k نمونو اوسطونه وي نو ګډ حسابي اوسط داسې تعریفېږي

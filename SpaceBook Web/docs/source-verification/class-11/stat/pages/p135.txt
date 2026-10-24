@@ -1,0 +1,32 @@
+@printed 131
+@status lesson
+eq \text{So }Sk=\dfrac{3+8.5-2(7)}{8.5-3}
+eq =\dfrac{11.5-14}{5.5}=\dfrac{-2.5}{5.5}=-0.45
+sol It means that given distribution has negative skewness. ## It means that given distribution has negative skewness. || اس کا مطلب ہے کہ دی گئی تقسیم منفی کج ہے۔ || دا پدې معنا ده چې ورکړل شوی ویش منفي کوړوالی لري.
+p Remember that answer of all of the three methods may or may not be same but decision will always be same. || یاد رکھیں کہ تینوں طریقوں کا جواب ایک جیسا ہو بھی سکتا ہے اور نہیں بھی لیکن فیصلہ ہمیشہ ایک ہی ہوگا۔ || په یاد ولرئ چې د درېواړو طریقو ځواب کېدای شي یو شان وي یا نه وي خو پرېکړه به تل یو شان وي.
+## Example: 3.27 || مثال: 3.27 || بېلګه: 3.27
+q  | For the following frequency table, calculate the coefficient of skewness. || درج ذیل تعدد جدول کے لیے کجی کا عددی سر حساب کریں۔ || د لاندې فریکونسي جدول لپاره د کوړوالي ضریب محاسبه کړئ.
+table مثال 3.27: x اور f || Example 3.27: x and f || بېلګه 3.27: x او f
+th | x: | 6 | 10 | 14 | 18 | 22 | 26 | 30 | 34 | 38
+tr | f: | 6 | 10 | 18 | 30 | 15 | 12 | 10 | 6 | 2
+endtable
+## Solution: || حل: || حل:
+sol (i) Pearson's coefficient of skewness ## (i) Pearson's coefficient of skewness || (i) کجی کا پیئرسنی عددی سر || (i) د کوړوالي پیرسني ضریب
+eq Sk=\dfrac{3(Mean-Median)}{S}
+sol Arranging the given data along with frequencies: ## Arranging the given data along with frequencies: || دیے گئے اعداد و شمار کو تعدد کے ساتھ ترتیب دیتے ہوئے: || ورکړل شوي معلومات د فریکونسیو سره ترتیبول:
+table مثال 3.27 کا حل: جدول || Example 3.27 solution table || د بېلګې 3.27 د حل جدول
+th | x | f | fx | (x − x̄) | (x − x̄)² | f(x − x̄)² | c.f
+tr | 6 | 6 | 36 | -13.725 | 188.376 | 1130.26 | 6
+tr | 10 | 10 | 100 | -9.725 | 94.576 | 945.76 | 16
+tr | 14 | 18 | 252 | -5.725 | 32.776 | 589.97 | 34
+tr | 18 | 30 | 540 | -1.725 | 2.976 | 89.28 | 64
+tr | 22 | 15 | 330 | 2.275 | 5.176 | 77.64 | 79
+tr | 26 | 12 | 312 | 6.275 | 39.376 | 472.52 | 91
+tr | 30 | 10 | 300 | 10.275 | 105.576 | 1055.76 | 101
+tr | 34 | 6 | 204 | 14.275 | 20.3776 | 1222.66 | 107
+tr | 38 | 2 | 76 | 18.275 | 333.975 | 667.952 | 109
+tr | Total | 109 | 2150 | – | – | 6251.794 | –
+endtable
+eq \bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{2150}{109}=19.725
+eq S=\sqrt{\dfrac{\sum f(x-\bar{x})^2}{\sum f}}=\sqrt{\dfrac{6251.794}{109}}=\sqrt{57.356}=7.57
+sol As Σf = 109 is odd therefore, ## As Σf = 109 is odd therefore, || چونکہ Σf = 109 طاق ہے اس لیے، || ځکه چې Σf = 109 طاق دی نو،

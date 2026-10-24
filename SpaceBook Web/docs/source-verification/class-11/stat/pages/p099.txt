@@ -1,0 +1,23 @@
+@printed 95
+@status lesson
+p Demerits: || خامیاں: || زیانونه:
+p (i) It depends on two extreme values of a series and ignores the intermediate observations. || (i) یہ سلسلے کی دو انتہائی قدروں پر منحصر ہے اور درمیانی مشاہدات کو نظر انداز کرتا ہے۔ || (i) دا د لړۍ په دوو سختو ارزښتونو پورې اړه لري او منځني کتنې له پامه غورځوي.
+p (ii) It is highly influenced by abnormal value. || (ii) یہ غیر معمولی قدر سے بہت زیادہ متاثر ہوتا ہے۔ || (ii) دا د غیر عادي ارزښت لخوا ډېر اغېزمن کېږي.
+## 3.2.3 Uses of range || 3.2.3 حد کے استعمالات || 3.2.3 د رېنج کارونې
+p In spite of the fact that range is a rough measure of dispersion, even then it is commonly used; || اس حقیقت کے باوجود کہ حد انتشار کا ایک موٹا پیمانہ ہے، پھر بھی یہ عام طور پر استعمال ہوتی ہے؛ || سره له دې چې رېنج د خپراوي یوه خام اندازه ده، بیا هم عموماً کارول کېږي؛
+p (i) in the quality control tests. || (i) معیار کی جانچ کے ٹیسٹوں میں۔ || (i) د کیفیت د کنټرول په ازموینو کې.
+p (ii) to measure variations in temperature during a day, a year. || (ii) ایک دن، ایک سال کے دوران درجہ حرارت میں تغیرات ناپنے کے لیے۔ || (ii) د یوې ورځې، یوه کال په ترڅ کې د تودوخې د بدلونونو د اندازه کولو لپاره.
+p (iii) in stock exchange quotations. || (iii) اسٹاک ایکسچینج کے نرخوں میں۔ || (iii) د سټاک اېکسچینج په نرخونو کې.
+## 3.3 Quartile deviation || 3.3 چوتھائی انحراف || 3.3 څلورمه انحراف
+p The difference between third and first quartiles divided by 2 is called quartile deviation (Q.D). It is also known as semi-inter quartile range. Mathematically, || تیسری اور پہلی چوتھائی کے فرق کو 2 پر تقسیم کرنا چوتھائی انحراف (Q.D) کہلاتا ہے۔ اسے نیم بین الربعی حد بھی کہا جاتا ہے۔ ریاضیاتی طور پر، || د دریمې او لومړۍ څلورمې توپیر چې پر 2 وویشل شي څلورمه انحراف (Q.D) بلل کېږي. دې ته نیمه‌منځ څلورمه رېنج هم ویل کېږي. ریاضیاتي ډول،
+eq \text{Q.D}=\dfrac{Q_3-Q_1}{2}\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of Q.D}=\dfrac{Q_3-Q_1}{Q_3+Q_1}\qquad\text{(Relative dispersion)}
+## 3.3.1 Calculation of quartile deviation || 3.3.1 چوتھائی انحراف کا حساب || 3.3.1 د څلورمې انحراف محاسبه
+p (i) Quartile deviation in case of individual series or ungrouped data || (i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں چوتھائی انحراف || (i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې څلورمه انحراف
+## Example: 3.4 || مثال: 3.4 || بېلګه: 3.4
+q  | Compute quartile deviation and coefficient of quartile deviation for the following data: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29, and 20. || درج ذیل اعداد و شمار کے لیے چوتھائی انحراف اور چوتھائی انحراف کا عددی سر حساب کریں: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29 اور 20۔ || د لاندې معلوماتو لپاره څلورمه انحراف او د څلورمې انحراف ضریب محاسبه کړئ: 21, 40, 348, 32, 29, 28, 25, 18, 17, 29 او 20.
+## Solution: || حل: || حل:
+sol By definition Q.D = (Q3 − Q1)/2 ## By definition Q.D = (Q3 − Q1)/2 || تعریف کے مطابق Q.D = (Q3 − Q1)/2 || د تعریف له مخې Q.D = (Q3 − Q1)/2
+sol Data in an array is 17, 18, 20, 20, 21, 25, 28, 29, 32, 38, and 40. Here n = 11 is odd. ## Data in an array is 17, 18, 20, 20, 21, 25, 28, 29, 32, 38, and 40. Here n = 11 is odd. || ترتیب شدہ اعداد و شمار 17, 18, 20, 20, 21, 25, 28, 29, 32, 38 اور 40 ہیں۔ یہاں n = 11 طاق ہے۔ || په ترتیب شوي معلوماتو کې 17, 18, 20, 20, 21, 25, 28, 29, 32, 38 او 40 دي. دلته n = 11 طاق دی.
+eq \therefore\ Q_1=\left(\dfrac{n+1}{4}\right)\text{th value}
+eq =\left(\dfrac{11+1}{4}\right)\text{th value}=3\text{rd value}=20

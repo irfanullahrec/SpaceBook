@@ -1,0 +1,20 @@
+@printed 187
+@status lesson
+table مثال 5.7 کا حل: جدول || Example 5.7 solution table || د بېلګې 5.7 د حل جدول
+th | Referee A (R1) | Referee B (R2) | d = R1 − R2 | d²
+tr | 1 | 6 | -5 | 25
+tr | 6 | 4 | 2 | 4
+tr | 5 | 9 | -4 | 16
+tr | 10 | 8 | 2 | 4
+tr | 3 | 1 | 2 | 4
+tr | 2 | 2 | 0 | 0
+tr | 4 | 3 | 1 | 1
+tr | 9 | 10 | -1 | 1
+tr | 7 | 5 | 2 | 4
+tr | 8 | 7 | 1 | 1
+tr | Total | – | – | 60
+endtable
+eq r_s=1-\dfrac{6\sum d^2}{n^3-n}=1-\dfrac{6(60)}{(10)^3-10}=1-\dfrac{360}{990}=1-0.36=0.64
+sol It implies that the variables are positively correlated. ## It implies that the variables are positively correlated. || اس سے ظاہر ہوتا ہے کہ متغیرات مثبت طور پر مربوط ہیں۔ || دا ښيي چې متغیرونه په مثبت ډول همتړي دي.
+p Ranking tied observations: || برابر مشاہدات کی درجہ بندی: || د برابرو کتنو رتبه‌بندي:
+p The spearman’s rank coefficient of correlation formula is good if the observations are not repeated. For repeated or tied observations, average of tied ranks is allotted. If an observation is repeated for “m” number of times, then the value (m³ − m)/12 should be added with Σd². This must be carried over for each repeated observation. || سپیئرمین کے درجاتی ارتباطی عددی سر کا فارمولا اس صورت میں اچھا ہے جب مشاہدات دہرائے نہ گئے ہوں۔ دہرائے گئے یا برابر مشاہدات کے لیے برابر درجوں کا اوسط دیا جاتا ہے۔ اگر کوئی مشاہدہ “m” بار دہرایا گیا ہو تو قدر (m³ − m)/12 کو Σd² کے ساتھ جمع کیا جانا چاہیے۔ یہ ہر دہرائے گئے مشاہدے کے لیے کیا جانا چاہیے۔ || د Spearman د رتبه‌یي همتړاو د ضریب فورمول هغه وخت ښه دی چې کتنې تکرار شوې نه وي. د تکرار شویو یا برابرو کتنو لپاره د برابرو رتبو اوسط ورکول کېږي. که یوه کتنه “m” ځله تکرار شي نو ارزښت (m³ − m)/12 باید له Σd² سره جمع شي. دا باید د هرې تکرار شوې کتنې لپاره ترسره شي.

@@ -1,0 +1,21 @@
+@printed 219
+@status lesson
+## b. Data Manipulation Language || ب۔ ڈیٹا مینیپولیشن لینگویج || ب. د ډېټا کار کولو ژبه
+p A data manipulation language (DML) is a language that enables users to access or manipulate data. The types of access are: || ڈیٹا مینیپولیشن لینگویج (ڈی ایم ایل) ایسی زبان ہے جو صارفین کو ڈیٹا تک رسائی یا اس میں ترمیم کے قابل بناتی ہے۔ رسائی کی اقسام یہ ہیں: || د ډېټا کار کولو ژبه (DML) یوه ژبه ده چې کاروونکو ته ډېټا ته لاسرسي یا کار اخیستلو توان ورکوي. د لاسرسي ډولونه دا دي:
+p Retrieval of information from database || ڈیٹا بیس سے معلومات حاصل کرنا || له ډېټابېس نه د معلوماتو ترلاسه کول
+p Insertion of new data into the database || ڈیٹا بیس میں نیا ڈیٹا داخل کرنا || په ډېټابېس کې د نوې ډېټا ننه ایستل
+p Deletion of data from database || ڈیٹا بیس سے ڈیٹا حذف کرنا || له ډېټابېس نه د ډېټا حذف
+p Modification of data stored in the database || ڈیٹا بیس میں محفوظ ڈیٹا میں ترمیم کرنا || په ډېټابېس کې ساتل شوې ډېټا تعدیل
+## c. Data Control Language || ج۔ ڈیٹا کنٹرول لینگویج || ج. د ډېټا کنټرول ژبه
+p Data Control Language is a database language used to control access to the data in a database. Examples of DCL are: || ڈیٹا کنٹرول لینگویج ڈیٹا بیس کی ایسی زبان ہے جو ڈیٹا بیس میں ڈیٹا تک رسائی کو کنٹرول کرنے کے لیے استعمال ہوتی ہے۔ ڈی سی ایل کی مثالیں یہ ہیں: || د ډېټا کنټرول ژبه یوه ډېټابېس ژبه ده چې په ډېټابېس کې ډېټا ته د لاسرسي د کنټرول لپاره کارول کېږي. د DCL بېلګې دا دي:
+p Giving rights to the users || صارفین کو حقوق دینا || کاروونکو ته حقونه ورکول
+p Revoking of the already given rights || پہلے سے دیے گئے حقوق واپس لینا || مخکې ورکړل شوي حقونه بېرته اخیستل
+## 7.2 BASIC DATABASE TERMINOLOGIES || ۷.۲ ڈیٹا بیس کی بنیادی اصطلاحات || ۷.۲ د ډېټابېس بنسټیز اصطلاحات
+p The following are some basic database terminologies. || درج ذیل ڈیٹا بیس کی کچھ بنیادی اصطلاحات ہیں۔ || لاندې د ډېټابېس ځینې بنسټیز اصطلاحات دي.
+## a. Field/Attribute/Column || الف۔ فیلڈ/ایٹریبیوٹ/کالم || الف. ساحه/خاصیت/ستون
+p An attribute is a property or characteristic of an entity that is of interest to the organization. Following are some attributes: || ایٹریبیوٹ کسی انٹیٹی کی ایسی خاصیت یا خصوصیت ہے جو ادارے کے لیے دلچسپی کی حامل ہو۔ درج ذیل کچھ ایٹریبیوٹس ہیں: || خاصیت د یوه وجود هغه ملکیت یا ځانګړتیا ده چې ادارې ته ګټوره وي. لاندې ځینې خاصیتونه دي:
+p STUDENT: student no, name, address, phone no || اسٹوڈنٹ: اسٹوڈنٹ نمبر، نام، پتہ، فون نمبر || زده کوونکی (STUDENT): د زده کوونکي شمېره، نوم، پته، د تلیفون شمېره
+p EMPLOYEE: employee no, name, address, skill || ایمپلائی: ایمپلائی نمبر، نام، پتہ، مہارت || کارکوونکی (EMPLOYEE): د کارکوونکي شمېره، نوم، پته، مهارت
+p In Relational Database Model, an attribute is represented by column. Whereas the term field is usually used for a column but it is more correct to use field to specify a single item that exists at the intersection of a row and column. || ریلیشنل ڈیٹا بیس ماڈل میں ایٹریبیوٹ کو کالم سے ظاہر کیا جاتا ہے۔ جبکہ اصطلاح فیلڈ عموماً کالم کے لیے استعمال ہوتی ہے لیکن فیلڈ کو اس واحد آئٹم کی نشاندہی کے لیے استعمال کرنا زیادہ درست ہے جو قطار اور کالم کے تقاطع پر موجود ہو۔ || په اړوند ډېټابېس ماډل کې خاصیت په ستون ښودل کېږي. پداسې حال کې چې اصطلاح ساحه معمولاً د ستون لپاره کارول کېږي خو ساحه د یوه واحد توکي د ټاکلو لپاره کارول ډیر سم دي چې د قطار او ستون په تقاطع کې شته وي.
+## b. Record/Tuple/Row || ب۔ ریکارڈ/ٹپل/رو || ب. ثبت/ټپل/قطار
+p A collection of related fields treated as a single unit is called a record. For example a student’s record includes a set of fields that contains Roll No, Name, Class, Date of Birth and Address. || متعلقہ فیلڈز کا مجموعہ جسے ایک واحد اکائی کے طور پر لیا جائے ریکارڈ کہلاتا ہے۔ مثلاً طالب علم کے ریکارڈ میں فیلڈز کا ایک مجموعہ شامل ہوتا ہے جس میں رول نمبر، نام، کلاس، تاریخ پیدائش اور پتہ ہوتے ہیں۔ || د اړوندو ساحو ټولګه چې د یوې واحدې وېشنې په توګه ګڼل کېږي ثبت بلل کېږي. د بېلګې په توګه د زده کوونکي ثبت د ساحو یوه ټولګه شاملوي چې رول شمېره، نوم، ټولګی، د زېږون نېټه او پته لري.

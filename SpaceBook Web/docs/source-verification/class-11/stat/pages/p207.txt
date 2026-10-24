@@ -1,0 +1,37 @@
+@printed 203
+@status lesson
+## Example: 6.4 || مثال: 6.4 || بېلګه: 6.4
+q  | Compute the 4-year centered moving averages for the following time series: || درج ذیل وقتی سلسلے کے لیے 4 سالہ مرکزی متحرک اوسط حساب کریں: || د لاندې وخت لړۍ لپاره 4 کلن مرکزي خوځېدونکي اوسطونه محاسبه کړئ:
+table مثال 6.4: سال اور قیمتیں || Example 6.4: years and prices || بېلګه 6.4: کلونه او بیې
+th | Years: | 1980 | 1981 | 1982 | 1983 | 1984 | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991
+tr | Prices: | 72 | 68 | 78 | 72 | 74 | 69 | 79 | 84 | 69 | 72 | 89 | 76
+endtable
+## Solution: || حل: || حل:
+table مثال 6.4 کا حل: جدول || Example 6.4 solution table || د بېلګې 6.4 د حل جدول
+th | Years (1) | Values (y) (2) | 2-years moving totals (4) | 4-year centred moving averages: column (4) ÷ 8 (ŷ)
+tr | 1980 | 72 | - | -
+tr | 1981 | 68 | - | -
+tr | 1982 | 78 | 582 | 72.75
+tr | 1983 | 72 | 585 | 73.125
+tr | 1984 | 74 | 587 | 73.375
+tr | 1985 | 69 | 600 | 75
+tr | 1986 | 79 | 606 | 75.75
+tr | 1987 | 84 | 603 | 75.375
+tr | 1988 | 69 | 616 | 77
+tr | 1989 | 72 | 618 | 77.25
+tr | 1990 | 89 | - | -
+tr | 1991 | 76 | - | -
+endtable
+sol In column (3) the 4-year moving totals 290, 292, 293, 294, 306, 300, 303, 313 and 305 are printed between consecutive years (each between the rows 1981–1982, 1982–1983, …, 1989–1990); they are listed separately in the second table. ## In column (3) the 4-year moving totals 290, 292, 293, 294, 306, 300, 303, 313 and 305 are printed between consecutive years (each between the rows 1981–1982, 1982–1983, …, 1989–1990); they are listed separately in the second table. || کالم (3) میں 4 سالہ متحرک مجموعے 290، 292، 293، 294، 306، 300، 303، 313 اور 305 مسلسل سالوں کے بیچ میں چھپے ہیں (ہر ایک سطروں 1981–1982، 1982–1983، …، 1989–1990 کے درمیان)؛ انہیں دوسرے جدول میں الگ سے درج کیا گیا ہے۔ || په کالم (3) کې 4 کلن خوځېدونکي مجموعې 290، 292، 293، 294، 306، 300، 303، 313 او 305 د پرله‌پسې کلونو تر منځ چاپ شوې دي (هره یوه د قطارونو 1981–1982، 1982–1983، …، 1989–1990 تر منځ)؛ دوی په دویم جدول کې جلا لیکل شوي دي.
+table مثال 6.4: 4 سالہ متحرک مجموعے، کالم (3) || Example 6.4: 4-year moving totals, column (3) || بېلګه 6.4: 4 کلن خوځېدونکي مجموعې، کالم (3)
+th | Between years | 4-year moving totals (3)
+tr | 1981 – 1982 | 290
+tr | 1982 – 1983 | 292
+tr | 1983 – 1984 | 293
+tr | 1984 – 1985 | 294
+tr | 1985 – 1986 | 306
+tr | 1986 – 1987 | 300
+tr | 1987 – 1988 | 303
+tr | 1988 – 1989 | 313
+tr | 1989 – 1990 | 305
+endtable

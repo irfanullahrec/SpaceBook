@@ -1,0 +1,30 @@
+@printed 68
+@status lesson
+eq =39.5+\dfrac{10}{20}\left(\dfrac{53}{2}-18\right)=39.5+4.25=43.75
+## 2.3.4 Graphic method to estimate the median || 2.3.4 وسطانیہ کا تخمینہ لگانے کا گرافی طریقہ || 2.3.4 د میانې د اټکل ګرافي طریقه
+p Median can also be computed with the help of a graph. || وسطانیہ گراف کی مدد سے بھی حساب کیا جا سکتا ہے۔ || میانه د ګراف په مرسته هم محاسبه کېدای شي.
+p Step-i: Compute class boundaries and cumulative frequencies. || مرحلہ-i: جماعتی سرحدیں اور جمعی تعددات حساب کریں۔ || ګام-i: د ټولګي پولې او مجموعي فریکونسۍ محاسبه کړئ.
+p Step-ii: Take a graph paper and draw cumulative frequency curve. || مرحلہ-ii: گراف پیپر لیں اور جمعی تعدد منحنی بنائیں۔ || ګام-ii: ګراف کاغذ واخلئ او مجموعي فریکونسي منحني رسم کړئ.
+p Step-iii: Compute Median = || مرحلہ-iii: وسطانیہ حساب کریں = || ګام-iii: میانه محاسبه کړئ =
+eq \text{Median}=\left(\dfrac{\sum f}{2}\right)\text{th value if }\sum f\text{ is even}
+eq \text{or Median}=\left(\dfrac{\sum f+1}{2}\right)\text{th value if }\sum f\text{ is odd to find the median class.}
+p Step-iv: Locate median on y-axis and draw a horizontal/parallel line to cut the cumulative frequency curve and from this point draw a perpendicular line which cuts the x-axis at a certain point. The value of this point on x-axis is the median. || مرحلہ-iv: y-محور پر وسطانیہ کو تلاش کریں اور جمعی تعدد منحنی کو کاٹنے کے لیے ایک افقی/متوازی لکیر کھینچیں اور اس نقطے سے ایک عمود کھینچیں جو x-محور کو کسی نقطے پر کاٹے۔ x-محور پر اس نقطے کی قدر وسطانیہ ہے۔ || ګام-iv: په y-محور میانه ومومئ او د مجموعي فریکونسي منحني پرې کولو لپاره یوه افقي/موازي کرښه رسم کړئ او له دې نقطې څخه یوه عمود کرښه رسم کړئ چې x-محور په یوه نقطه پرې کړي. په x-محور د دې نقطې ارزښت میانه ده.
+## Example: 2.16 || مثال: 2.16 || بېلګه: 2.16
+q  | Calculate median by graphic method from the data given below: || نیچے دیے گئے اعداد و شمار سے وسطانیہ گرافی طریقے سے حساب کریں: || د لاندې ورکړل شویو معلوماتو څخه میانه د ګرافي طریقې په واسطه محاسبه کړئ:
+table مثال 2.16: نمبر اور تعدد || Example 2.16: marks and frequency || بېلګه 2.16: نمرې او فریکونسي
+th | Marks: | 5 – 9 | 10 – 14 | 15 – 19 | 20 – 24 | 25 – 29 | 30 – 34
+tr | Frequency: | 6 | 10 | 16 | 12 | 8 | 8
+endtable
+## Solution: || حل: || حل:
+table مثال 2.16: جماعتی سرحدیں اور c.f || Example 2.16: class boundaries and c.f || بېلګه 2.16: د ټولګي پولې او c.f
+th | Marks | f | Class boundaries | c.f
+tr | 5 – 9 | 6 | 4.5 – 9.5 | 6
+tr | 10 – 14 | 10 | 9.5 – 14.5 | 16
+tr | 15 – 19 | 16 | 14.5 – 19.5 | 32
+tr | 20 – 24 | 12 | 19.5 – 24.5 | 44
+tr | 25 – 29 | 8 | 24.5 – 29.5 | 52
+tr | 30 – 34 | 8 | 29.5 – 34.5 | 60
+tr | Total | 60 | – | –
+endtable
+eq \text{Since }\sum f=60\text{ is even, Therefore, Median}=\left(\dfrac{\sum f}{2}\right)\text{th value}=\left(\dfrac{60}{2}\right)\text{th value}=30\text{th value.}
+sol This implies that median lies in the group (14.5 – 19.5). ## This implies that median lies in the group (14.5 – 19.5). || اس کا مطلب ہے کہ وسطانیہ گروہ (14.5 – 19.5) میں واقع ہے۔ || پدې معنا چې میانه په ډله (14.5 – 19.5) کې پرته ده.

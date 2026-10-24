@@ -1,0 +1,25 @@
+@printed 211
+@status lesson
+endexercise
+@sec 6-text | Time Series || وقتی سلسلہ || د وخت لړۍ
+## Key points || اہم نکات || مهم ټکي
+p A series of observations of the same characteristics arranged according to the time of occurrence is known as time series. || ایک ہی خصوصیات کے مشاہدات کا سلسلہ جو وقوع کے وقت کے مطابق ترتیب دیا گیا ہو وقتی سلسلہ کہلاتا ہے۔ || د یو شان ځانګړتیاوو د کتنو لړۍ چې د پېښېدو د وخت له مخې ترتیب شوې وي د وخت لړۍ بلل کېږي.
+p The description, measurement and isolation of various changes in a time series during a period of time are called analysis of time series. || کسی مدت کے دوران وقتی سلسلے میں مختلف تبدیلیوں کی تفصیل، پیمائش اور علیحدگی وقتی سلسلے کا تجزیہ کہلاتی ہے۔ || د یوې مودې په اوږدو کې په وخت لړۍ کې د بېلابېلو بدلونونو بیان، اندازه کول او جلا کول د وخت لړۍ تحلیل بلل کېږي.
+p The term secular trend means changes occurring in a time series in one direction over a fairly long period of time. || صدیوی رجحان کی اصطلاح کا مطلب وقتی سلسلے میں ایک سمت میں خاصے طویل عرصے میں واقع ہونے والی تبدیلیاں ہیں۔ || د عمري تمایل اصطلاح پدې معنا چې په وخت لړۍ کې په یو لوري کې په ښه اوږده مودې کې رامنځته کېدونکي بدلونونه.
+p A journey from one peak (say prosperity) to another peak (prosperity) is called a cycle. || ایک چوٹی (مثلاً خوشحالی) سے دوسری چوٹی (خوشحالی) تک کا سفر چکر کہلاتا ہے۔ || له یوې څوکې (لکه سوکالۍ) څخه بلې څوکې (سوکالۍ) ته سفر یو دوره بلل کېږي.
+p In a time series only time (t) and values (y) are given. The variable x is obtained by coding the time variable. || وقتی سلسلے میں صرف وقت (t) اور قدریں (y) دی جاتی ہیں۔ متغیر x وقت کے متغیر کی کوڈنگ سے حاصل کیا جاتا ہے۔ || په وخت لړۍ کې یوازې وخت (t) او ارزښتونه (y) ورکول کېږي. متغیر x د وخت د متغیر په کوډ کولو سره ترلاسه کېږي.
+p If the number of years is odd, take x = … −2, −1, 0, 1, 2, … i.e. || اگر سالوں کی تعداد طاق ہو تو x = … −2, −1, 0, 1, 2, … لیں یعنی || که د کلونو شمېر طاق وي نو x = … −2, −1, 0, 1, 2, … واخلئ یعنې
+table سالوں کی طاق تعداد: کوڈ شدہ وقت || Odd number of years: coded time || د کلونو طاق شمېر: کوډ شوی وخت
+th | Years | 2001 | 2002 | 2003 | 2004 | 2005
+tr | Coded time (x) | -2 | -1 | 0 | 1 | 2
+endtable
+p If the number of years is even, take x = … −7, −5, −3, −1, 1, 3, 5, 7, … i.e. || اگر سالوں کی تعداد جفت ہو تو x = … −7, −5, −3, −1, 1, 3, 5, 7, … لیں یعنی || که د کلونو شمېر جفت وي نو x = … −7, −5, −3, −1, 1, 3, 5, 7, … واخلئ یعنې
+table سالوں کی جفت تعداد: کوڈ شدہ وقت || Even number of years: coded time || د کلونو جفت شمېر: کوډ شوی وخت
+th | Years | 2010 | 2011 | 2012 | 2013 | 2014 | 2015
+tr | Coded time (x) | -5 | -3 | -1 | 1 | 3 | 5
+endtable
+p The equation of second degree parabola/quadratic trend is given by ŷ = a + bx + cx² || دوسرے درجے کے قطع مکافی/دو درجی رجحان کی مساوات یوں دی جاتی ہے ŷ = a + bx + cx² || د دویم درجې پیراپولا/دوه‌درجي تمایل معادله داسې ورکول کېږي ŷ = a + bx + cx²
+p Three normal equation for a, b and c are; || a, b اور c کے لیے تین معمول کی مساواتیں یہ ہیں؛ || د a, b او c لپاره درې نورمال معادلې دا دي؛
+eq \sum y=na+b\sum x+c\sum x^2\qquad\text{(i)}
+eq \sum xy=a\sum x+b\sum x^2+c\sum x^3\qquad\text{(ii)}
+eq \sum x^2y=a\sum x^2+b\sum x^3+c\sum x^4\qquad\text{(iii)}

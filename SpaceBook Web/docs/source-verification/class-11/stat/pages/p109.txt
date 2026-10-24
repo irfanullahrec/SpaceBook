@@ -1,0 +1,35 @@
+@printed 105
+@status lesson
+sol Now ## Now || اب || اوس
+table مثال 3.11: x اور x² || Example 3.11: x and x² || بېلګه 3.11: x او x²
+th | x | x²
+tr | 2 | 4
+tr | 4 | 16
+tr | 6 | 36
+tr | 8 | 64
+tr | 10 | 100
+tr | 30 | 220
+endtable
+eq s=\sqrt{\dfrac{1}{5-1}\left[220-\dfrac{(30)^2}{5}\right]}
+eq =\sqrt{\dfrac14[220-180]}=\sqrt{\dfrac{40}{4}}=\sqrt{10}=3.16
+eq s^2=\dfrac{1}{5-5}\left[220-\dfrac{(30)^2}{5}\right]
+eq =\dfrac14[220-180]=\dfrac{40}{4}=10
+sol (iii) By change of origin and scale method or step-deviation method ## (iii) By change of origin and scale method or step-deviation method || (iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے || (iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه
+eq S=\sqrt{\dfrac{\sum u^2}{n}-\left(\dfrac{\sum u}{n}\right)^2}\times h
+eq S^2=\left[\dfrac{\sum u^2}{n}-\left(\dfrac{\sum u}{n}\right)^2\right]\times h^2
+sol Now ## Now || اب || اوس
+table مثال 3.11: قدمی انحراف کا جدول || Example 3.11: step-deviation table || بېلګه 3.11: د ګام‌انحراف جدول
+th | x | u = (x − 6)/2 | u²
+tr | 2 | -2 | 4
+tr | 4 | -1 | 1
+tr | 6 | 0 | 0
+tr | 8 | 1 | 1
+tr | 10 | 2 | 4
+tr | – | 0 | 10
+endtable
+sol Here a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2 ## Here a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2 || یہاں a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2 || دلته a = 6, h = 2 ∴ u = (x − a)/h = (x − 6)/2
+eq \therefore\ S=\sqrt{\dfrac{10}{5}-\left(\dfrac{0}{5}\right)^2}\times 2=\sqrt{2-0}\times 2=3.16
+eq S^2=\left[\dfrac{10}{5}-\left(\dfrac{0}{5}\right)^2\right]\times 2^2=(2-0)\times 4=2\times 4=8
+## 3.5.4 Calculation of standard deviation and variance in case of discrete series or grouped data || 3.5.4 منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب || 3.5.4 د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه
+## Example: 3.12 || مثال: 3.12 || بېلګه: 3.12
+q  | Compute standard deviation and variance from the following frequency || درج ذیل تعدد تقسیم سے معیاری انحراف اور تغیر حساب کریں || له لاندې فریکونسي ویش څخه معیاري انحراف او وریانس محاسبه کړئ

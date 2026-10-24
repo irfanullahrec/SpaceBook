@@ -1,0 +1,29 @@
+@printed 84
+@status lesson
+endexercise
+@sec 2-text | Measures of Central Tendency (MCT) || مرکزی رجحان کے پیمانے || د مرکزي تمایل اندازې
+## Solution: || حل: || حل:
+table مثال 2.34: f/x || Example 2.34: f/x || بېلګه 2.34: f/x
+th | Classes | f | x | f/x
+tr | 0 – 9 | 5 | 4.5 | 1.1111
+tr | 10 – 19 | 10 | 14.5 | 0.6897
+tr | 20 – 29 | 15 | 24.5 | 0.6122
+tr | 30 – 39 | 7 | 34.5 | 0.2029
+tr | 40 – 49 | 3 | 44.5 | 0.0674
+tr | Total | 40 | – | 2.6833
+endtable
+eq \text{H.M}=\dfrac{\sum f}{\sum\dfrac{f}{x}}=\dfrac{40}{2.6833}=14.91
+## 2.6.2 Merits and demerits of harmonic mean || 2.6.2 ہارمونی اوسط کی خوبیاں اور خامیاں || 2.6.2 د هارمونیک اوسط ګټې او زیانونه
+p Merits: || خوبیاں: || ګټې:
+p (i) It considers all the given data. || (i) یہ تمام دیے گئے اعداد و شمار کو مدنظر رکھتا ہے۔ || (i) دا ټول ورکړل شوي معلومات په پام کې نیسي.
+p (ii) It is not affected by fluctuation of sampling. || (ii) یہ نمونہ سازی کے اتار چڑھاؤ سے متاثر نہیں ہوتا۔ || (ii) دا د نمونه‌اخیستنې د بدلونونو لخوا نه اغېزمنېږي.
+p (iii) It is a good average for a highly variable series. || (iii) یہ بہت زیادہ متغیر سلسلے کے لیے اچھا اوسط ہے۔ || (iii) دا د ډېر متغیرې لړۍ لپاره ښه اوسط دی.
+p Demerits || خامیاں || زیانونه
+p (i) It cannot be calculated if any one of the observations is zero. || (i) اگر کوئی ایک مشاہدہ صفر ہو تو اسے حساب نہیں کیا جا سکتا۔ || (i) که هر یوه کتنه صفر وي نو دا نشي محاسبه کېدای.
+p (ii) It gives less importance to large values and more importance to small values. || (ii) یہ بڑی قدروں کو کم اہمیت اور چھوٹی قدروں کو زیادہ اہمیت دیتا ہے۔ || (ii) دا لویو ارزښتونو ته لږ اهمیت او کوچنیو ارزښتونو ته ډېر اهمیت ورکوي.
+p (iii) Its value is generally not a member of the series. || (iii) اس کی قدر عموماً سلسلے کا رکن نہیں ہوتی۔ || (iii) د دې ارزښت په عمومي ډول د لړۍ غړی نه وي.
+## 2.6.3 Relationship among A.M, G.M and H.M || 2.6.3 A.M، G.M اور H.M کے درمیان تعلق || 2.6.3 د A.M، G.M او H.M ترمنځ اړیکه
+eq \text{(i)}\ \text{A.M}\geq\text{G.M}\geq\text{H.M}
+p Equality will hold only when all the observations are same. || برابری صرف اس وقت ہوگی جب تمام مشاہدات یکساں ہوں۔ || برابري یوازې هغه وخت وي کله چې ټولې کتنې یو شان وي.
+eq \text{(ii)}\ \text{G.M}=\sqrt{(\text{A.M})(\text{H.M})}
+p If two measures are known, the third one can be approximately calculated by this relation. || اگر دو پیمانے معلوم ہوں تو اس تعلق سے تیسرا تقریباً حساب کیا جا سکتا ہے۔ || که دوه اندازې معلومې وي نو دریمه د دې اړیکې په واسطه نږدې محاسبه کېدای شي.

@@ -1,0 +1,18 @@
+@printed 160
+@status lesson
+q  | Compute the weighted average of relatives price index numbers for 1966 by (i) Laspeyre's method (ii) Paasche's method. || 1966 کے لیے (i) لاسپیئر کے طریقے (ii) پاشے کے طریقے سے اضافتوں کے وزنی اوسط کے قیمتی اشاریہ اعداد حساب کریں۔ || د 1966 لپاره د (i) Laspeyre طریقې (ii) Paasche طریقې په واسطه د نسبتونو د وزني اوسط د بیې شاخص شمېرې محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 4.9 کا حل: جدول || Example 4.9 solution table || د بېلګې 4.9 د حل جدول
+th | Commodity | p0 | q0 | pn | qn | p0 q0 | p0 qn | (pn/p0) | (pn/p0) p0 q0 | (pn/p0) p0 qn
+tr | A | 3.95 | 9675 | 4.25 | 10436 | 38216.25 | 41222.20 | 1.076 | 41120.685 | 44353.09
+tr | B | 34.80 | 78 | 38.94 | 83 | 2714.40 | 2888.40 | 1.119 | 3037.414 | 3232.12
+tr | C | 61.56 | 118 | 59.70 | 116 | 7264.08 | 7140.96 | 0.972 | 7060.686 | 6941.01
+tr | Total | – | – | – | – | 48194.73 | 51251.56 | – | 51218.785 | 54526.22
+endtable
+sol Laspeyre's weighted average of relatives price index number is ## Laspeyre's weighted average of relatives price index number is || لاسپیئر کا اضافتوں کے وزنی اوسط کا قیمتی اشاریہ عدد ہے || د Laspeyre د نسبتونو د وزني اوسط د بیې شاخص شمېره ده
+eq P_{0n}=\dfrac{\sum\left(\dfrac{p_n}{p_0}\right)p_0q_0}{\sum p_0q_0}\times 100=\dfrac{51218.785}{48194.73}\times 100=106.27
+sol Paasche's weighted average of relatives price index number is ## Paasche's weighted average of relatives price index number is || پاشے کا اضافتوں کے وزنی اوسط کا قیمتی اشاریہ عدد ہے || د Paasche د نسبتونو د وزني اوسط د بیې شاخص شمېره ده
+eq P_{0n}=\dfrac{\sum\left(\dfrac{p_n}{p_0}\right)p_0q_n}{\sum p_0q_n}\times 100=\dfrac{54526.22}{51251.56}\times 100=106.39
+## 4.2 Consumer price index number || 4.2 صارف قیمتی اشاریہ عدد || 4.2 د مصرف کوونکي د بیې شاخص شمېره
+p Wholesale price index number measures the change in prices in general and is unable to tell about the percent increase or decrease in the cost of living of a specified class of people (e.g labour, school teachers, middle or low class, business men etc) living in a specified area (e.g. village, town, city, industrial area etc) because these consumers pay average retail prices for the purchase of commodities (goods) and services in the area where they are living. || تھوک قیمتی اشاریہ عدد عمومی طور پر قیمتوں میں تبدیلی ناپتا ہے اور کسی مخصوص علاقے (مثلاً گاؤں، قصبہ، شہر، صنعتی علاقہ وغیرہ) میں رہنے والے لوگوں کے کسی مخصوص طبقے (مثلاً مزدور، اسکول کے اساتذہ، متوسط یا نچلا طبقہ، تاجر وغیرہ) کے رہن سہن کی لاگت میں فیصد اضافے یا کمی کے بارے میں بتانے سے قاصر ہے کیونکہ یہ صارفین اس علاقے میں جہاں وہ رہتے ہیں اجناس (اشیاء) اور خدمات کی خریداری کے لیے اوسط پرچون قیمتیں ادا کرتے ہیں۔ || د عمده بیو شاخص شمېره په عمومي ډول د بیو بدلون اندازه کوي او په یوه ټاکلې سیمه (لکه کلی، ښارګوټی، ښار، صنعتي سیمه او نور) کې اوسېدونکو د خلکو د یوې ټاکلې طبقې (لکه مزدور، د ښوونځي ښوونکي، منځنۍ یا ټیټه طبقه، سوداګر او نور) د ژوند د لګښت په سلنه زیاتوالي یا کموالي په اړه ویلو نه شي کولای ځکه چې دا مصرف کوونکي په هغه سیمه کې چې چېرته اوسېږي د توکو (کالیو) او خدمتونو د پېرلو لپاره اوسط پرچون بیې ورکوي.
+p In economic activities, the term basket is used for the cost of living that is the amount of money needed to buy commodities and pay for services which are || په معاشی سرگرمیوں میں ٹوکری کی اصطلاح رہن سہن کی لاگت کے لیے استعمال ہوتی ہے یعنی وہ رقم جو اجناس خریدنے اور ان خدمات کی ادائیگی کے لیے درکار ہو جو || په اقتصادي فعالیتونو کې د ټوکرۍ اصطلاح د ژوند د لګښت لپاره کارول کېږي یعنې هغه پیسې چې توکي پېرلو او هغو خدمتونو لپاره ورکولو ته اړین دي چې

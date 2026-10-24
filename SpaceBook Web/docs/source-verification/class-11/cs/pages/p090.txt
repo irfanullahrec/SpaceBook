@@ -1,0 +1,18 @@
+@printed 82
+@status lesson
+p computer memory. There are four steps that CPUs use in their operation, these are fetch, decode, execute and store. || کمپیوٹر میموری میں رکھی جاتی ہے۔ سی پی یوز اپنے عمل میں چار مراحل استعمال کرتے ہیں، یہ حاصل کرنا، سمجھنا، چلانا اور محفوظ کرنا ہیں۔ || کمپیوټر حافظه کې ساتل کېږي. څلور ګامونه شته چې CPUs یې په خپل عمل کې کاروي، دا راوړل، پوهېدل، پلي کول او ساتل دي.
+## 3.2.1 Instructions and their types || ۳.۲.۱ ہدایات اور ان کی اقسام || ۳.۲.۱ لارښوونې او د هغو ډولونه
+p An instruction (or instruction code) is a group of bits that tells the computer to perform a specific operation. Instruction is an elementary operation that the processor can accomplish. Instructions are stored in the main memory, waiting to be processed by the processor. An instruction has two fields: || ہدایت (یا ہدایتی کوڈ) بٹس کا ایک گروپ ہے جو کمپیوٹر کو ایک مخصوص عمل کرنے کو کہتا ہے۔ ہدایت ایک ابتدائی عمل ہے جسے پراسیسر انجام دے سکتا ہے۔ ہدایات مین میموری میں محفوظ ہوتی ہیں اور پراسیسر کے ذریعے پراسیس ہونے کا انتظار کرتی ہیں۔ ایک ہدایت کے دو حصے (فیلڈز) ہوتے ہیں: || لارښوونه (یا د لارښوونې کوډ) د بټونو یوه ډله ده چې کمپیوټر ته وايي یو ځانګړی عمل وکړي. لارښوونه یو لومړنی عمل دی چې پروسیسر یې ترسره کولای شي. لارښوونې په اصلي حافظه کې ساتل کېږي او د پروسیسر په واسطه د پروسس انتظار کوي. یوه لارښوونه دوه ساحې لري:
+p Operation code, which represents the action that the processor execute. || آپریشن کوڈ، جو اس عمل کو ظاہر کرتا ہے جو پراسیسر انجام دیتا ہے۔ || د عملیې کوډ، چې هغه عمل ښیي چې پروسیسر یې پلي کوي.
+p Operand code, which defines the parameters of the action. The operand code depends on the operation. It can be data or a memory address. || آپرینڈ کوڈ، جو عمل کے پیرامیٹرز کی تعریف کرتا ہے۔ آپرینڈ کوڈ عمل پر منحصر ہوتا ہے۔ یہ ڈیٹا یا میموری پتہ ہو سکتا ہے۔ || د عملوند کوډ، چې د عمل پارامیټرونه تعریفوي. د عملوند کوډ په عملیه پورې اړه لري. دا ډېټا یا د حافظې پته کېدای شي.
+table ہدایت کے حصے || Instruction fields || د لارښوونې ساحې
+th | Operation code | Operand code
+tr | Operation code | Operand code
+endtable
+p There are different types of instructions. || ہدایات کی مختلف اقسام ہیں۔ || د لارښوونو مختلف ډولونه شته.
+p Data Transfer Instructions || ڈیٹا ٹرانسفر ہدایات || د ډېټا لېږد لارښوونې
+p Data Processing Instructions || ڈیٹا پراسیسنگ ہدایات || د ډېټا پروسس لارښوونې
+p Program Control Instructions || پروگرام کنٹرول ہدایات || د پروګرام کنټرول لارښوونې
+p Miscellaneous Instructions || متفرق ہدایات || متفرقې لارښوونې
+## a. Data Transfer Instructions || الف۔ ڈیٹا ٹرانسفر ہدایات || الف. د ډېټا لېږد لارښوونې
+p Most of the operations of the CPU are data transferring. These instructions are used when the data needs to be moved from memory location to register. These instructions transfer data from one location in the computer to another location without changing the data content. The most common transfers are between: || سی پی یو کے زیادہ تر اعمال ڈیٹا کی منتقلی ہیں۔ یہ ہدایات اس وقت استعمال ہوتی ہیں جب ڈیٹا کو میموری مقام سے رجسٹر میں منتقل کرنا ہو۔ یہ ہدایات ڈیٹا کے مواد کو تبدیل کیے بغیر ڈیٹا کو کمپیوٹر کے ایک مقام سے دوسرے مقام پر منتقل کرتی ہیں۔ سب سے عام منتقلیاں درج ذیل کے درمیان ہوتی ہیں: || د CPU ډیری عملونه د ډېټا لېږد دي. دا لارښوونې هغه وخت کارول کېږي چې ډېټا باید له حافظې ځای نه رجستر ته ولېږدول شي. دا لارښوونې ډېټا د منځپانګې د بدلولو پرته په کمپیوټر کې له یوه ځای نه بل ځای ته لېږدوي. تر ټولو عام لېږدونه د لاندې ترمنځ دي:

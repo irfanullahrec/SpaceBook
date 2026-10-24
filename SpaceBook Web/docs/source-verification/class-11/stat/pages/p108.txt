@@ -1,0 +1,25 @@
+@printed 104
+@status lesson
+## 3.5.3 Calculation of standard deviation and variance in case of ungrouped data || 3.5.3 غیر گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب || 3.5.3 د نه‌ګروپ شویو معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه
+## Example: 3.11 || مثال: 3.11 || بېلګه: 3.11
+q  | Compute standard deviation and variance for the sample 2, 4, 6, 8, 10. || نمونے 2, 4, 6, 8, 10 کے لیے معیاری انحراف اور تغیر حساب کریں۔ || د نمونې 2, 4, 6, 8, 10 لپاره معیاري انحراف او وریانس محاسبه کړئ.
+## Solution: || حل: || حل:
+sol (i) By direct method ## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیم طریقه
+eq s=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n-1}}
+eq s^2=\dfrac{\sum(x-\bar{x})^2}{n-1}
+table مثال 3.11: براہِ راست طریقے کا جدول || Example 3.11: direct method table || بېلګه 3.11: د مستقیمې طریقې جدول
+th | x | (x − x̄) | (x − x̄)²
+tr | 2 | -4 | 16
+tr | 4 | -2 | 4
+tr | 6 | 0 | 0
+tr | 8 | 2 | 4
+tr | 10 | 4 | 16
+tr | 30 | 0 | 40
+endtable
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{30}{5}=6
+eq \therefore\ s=\sqrt{\dfrac{40}{5-1}}=\sqrt{\dfrac{40}{4}}=\sqrt{10}=3.16\qquad\text{(Absolute dispersion)}
+eq s^2=\dfrac{40}{5-1}=\dfrac{40}{4}=10
+eq \text{Coefficient of S.D}=\dfrac{s}{\bar{x}}=\dfrac{3.16}{6}=0.53\qquad\text{(Relative dispersion)}
+sol (ii) By shortcut method ## (ii) By shortcut method || (ii) مختصر طریقے سے || (ii) په لنډه طریقه
+eq s=\sqrt{\dfrac{1}{n-1}\left[\sum x^2-\dfrac{\left(\sum x\right)^2}{n}\right]}
+eq s^2=\dfrac{1}{n-1}\left[\sum x^2-\dfrac{\left(\sum x\right)^2}{n}\right]

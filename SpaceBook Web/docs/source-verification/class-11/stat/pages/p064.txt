@@ -1,0 +1,28 @@
+@printed 60
+@status lesson
+eq \text{A}=18,\ h=2
+eq \text{Therefore, }\bar{x}=A+\dfrac{\sum fu}{\sum f}\times h=18+\dfrac{(-6)}{30}\cdot2=18-\dfrac{12}{30}=18-0.4=17.6
+## 2.2.3 Calculation of arithmetic mean in case of continuous grouped data || 2.2.3 مسلسل گروہی اعداد و شمار کی صورت میں حسابی اوسط کا حساب || 2.2.3 د دوامداره ګروپي معلوماتو په حالت کې د حسابي اوسط محاسبه
+p Compute midpoints (x) for the classes. Formulae and calculation procedure is same as used in case of discrete series. || جماعتوں کے وسطی نقاط (x) حساب کریں۔ فارمولے اور حساب کا طریقہ وہی ہے جو منفصل سلسلے کی صورت میں استعمال ہوتا ہے۔ || د ټولګیو منځنۍ نقطې (x) محاسبه کړئ. فورمولونه او د محاسبې طریقه هماغه ده چې د منفصلې لړۍ په حالت کې کارول کېږي.
+## Example: 2.6: || مثال: 2.6: || بېلګه: 2.6:
+q  | The heights of 100 college students measured to nearest inch are given in the following table || 100 کالج طلبہ کے قد، جو قریب ترین انچ تک ناپے گئے ہیں، درج ذیل جدول میں دیے گئے ہیں || د 100 کالج زده کوونکو قدونه، چې نږدې انچ ته اندازه شوي، په لاندې جدول کې ورکړل شوي
+table مثال 2.6: 100 کالج طلبہ کے قد || Example 2.6: heights of 100 college students || بېلګه 2.6: د 100 کالج زده کوونکو قدونه
+th | Height (inches): | 60 – 62 | 63 – 65 | 66 – 68 | 69 – 71 | 72 – 74
+tr | Number of students: | 5 | 18 | 42 | 27 | 8
+endtable
+q  | Calculate the arithmetic mean. || حسابی اوسط حساب کریں۔ || حسابي اوسط محاسبه کړئ.
+## Solution: || حل: || حل:
+sol (i) By direct method ## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیمه طریقه
+eq \bar{x}=\dfrac{\sum fx}{\sum f}
+table مثال 2.6: براہِ راست طریقہ || Example 2.6: direct method || بېلګه 2.6: مستقیمه طریقه
+th | Heights | f | x | fx
+tr | 60 – 62 | 5 | 61 | 305
+tr | 63 – 65 | 18 | 64 | 1152
+tr | 66 – 68 | 42 | 67 | 2814
+tr | 69 – 71 | 27 | 70 | 1890
+tr | 72 – 74 | 8 | 73 | 584
+tr | Total | 100 |  | 6745
+endtable
+eq \bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{6745}{100}=67.45
+sol (ii) By shortcut method ## (ii) By shortcut method || (ii) مختصر طریقے سے || (ii) په لنډه طریقه
+eq \bar{x}=A+\dfrac{\sum fD}{\sum f}

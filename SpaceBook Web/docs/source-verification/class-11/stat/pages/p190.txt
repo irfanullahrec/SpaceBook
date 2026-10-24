@@ -1,0 +1,33 @@
+@printed 186
+@status lesson
+@sec 5-ex | Exercise || مشق || تمرین
+exercise Example: 5.6
+q  | Compute the spearman rank correlation coefficient for the following data. || درج ذیل اعداد و شمار کے لیے سپیئرمین درجاتی ارتباطی عددی سر حساب کریں۔ || د لاندې معلوماتو لپاره د سپیرمن رتبه‌یي همتړاو ضریب محاسبه کړئ.
+table مثال 5.6: x اور y || Example 5.6: x and y || بېلګه 5.6: x او y
+th | x: | 3 | 4 | 10 | 11 | 12
+tr | y: | 12 | 10 | 11 | 9 | 2
+endtable
+## Solution: || حل: || حل:
+sol Convert the original data to ranked data and then find d as follow; ## Convert the original data to ranked data and then find d as follow; || اصل اعداد و شمار کو درجہ بند اعداد و شمار میں تبدیل کریں اور پھر d درج ذیل طور پر معلوم کریں؛ || اصلي معلومات رتبه‌شوو معلوماتو ته واړوئ او بیا d داسې ومومئ؛
+table مثال 5.6 کا حل: جدول || Example 5.6 solution table || د بېلګې 5.6 د حل جدول
+th | Original data: x | Original data: y | Ranks: R1 | Ranks: R2 | Difference in ranks d = R1 − R2 | d²
+tr | 3 | 12 | 5 | 1 | 5 − 1 = 4 | 16
+tr | 4 | 10 | 4 | 3 | 1 | 1
+tr | 10 | 11 | 3 | 2 | 1 | 1
+tr | 11 | 9 | 2 | 4 | -2 | 4
+tr | 12 | 2 | 1 | 5 | -4 | 16
+tr | Total | – | – | – | – | 38
+endtable
+sol The spearman rank correlation coefficient is ## The spearman rank correlation coefficient is || سپیئرمین درجاتی ارتباطی عددی سر ہے || د سپیرمن رتبه‌یي همتړاو ضریب دی
+eq r_s=1-\dfrac{6\sum d^2}{n^3-n}
+eq =1-\dfrac{6(38)}{5^3-5}=1-\dfrac{228}{120}=1-1.9=-0.9
+sol It indicates a strong negative correlation. ## It indicates a strong negative correlation. || یہ ایک مضبوط منفی ارتباط ظاہر کرتا ہے۔ || دا یو ځواکمن منفي همتړاو ښيي.
+## Example: 5.7 || مثال: 5.7 || بېلګه: 5.7
+q  | Two referees in a flower beauty competition rank the 10 types of flowers as follows; || پھولوں کی خوبصورتی کے مقابلے میں دو منصفوں نے 10 اقسام کے پھولوں کی درجہ بندی درج ذیل طور پر کی؛ || د ګلانو د ښکلا په سیالۍ کې دوو ډاروونکو د ګلانو 10 ډولونه داسې رتبه‌بندي کړل؛
+table مثال 5.7: منصفوں A اور B کے دیے گئے درجے || Example 5.7: ranks given by referees A and B || بېلګه 5.7: د A او B ډاروونکو لخوا ورکړل شوې رتبې
+th | Referee A: | 1 | 6 | 5 | 10 | 3 | 2 | 4 | 9 | 7 | 8
+tr | Referee B: | 6 | 4 | 9 | 8 | 1 | 2 | 3 | 10 | 5 | 7
+endtable
+q  | Use the rank correlation coefficient and find out what degree of agreement is there between the referees. || درجاتی ارتباطی عددی سر استعمال کریں اور معلوم کریں کہ منصفوں کے درمیان اتفاق کی کتنی درجے کی ہے۔ || د رتبه‌یي همتړاو ضریب وکاروئ او ومومئ چې د ډاروونکو تر منځ د موافقې کومه درجه شته.
+## Solution: || حل: || حل:
+sol Since the given data sets contain ranks, therefore we evaluate the difference in ranks as: ## Since the given data sets contain ranks, therefore we evaluate the difference in ranks as: || چونکہ دیے گئے اعداد و شمار کے سیٹ درجوں پر مشتمل ہیں اس لیے ہم درجوں کا فرق یوں معلوم کرتے ہیں: || ځکه چې ورکړل شوي معلوماتي سیټونه رتبې لري نو موږ د رتبو توپیر داسې موندو:

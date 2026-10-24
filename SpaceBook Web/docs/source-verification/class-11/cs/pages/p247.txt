@@ -1,0 +1,17 @@
+@printed 239
+@status lesson
+## Normal Form || نارمل فارم || نورمال بڼه
+p The degree of normalization is termed as Normal Form. For example, First Normal Form (1st NF), Second Normal Form (2nd NF), Third Normal Form (3rd NF) etc. || نارملائزیشن کی ڈگری کو نارمل فارم کہتے ہیں۔ مثلاً فرسٹ نارمل فارم (۱ این ایف)، سیکنڈ نارمل فارم (۲ این ایف)، تھرڈ نارمل فارم (۳ این ایف) وغیرہ۔ || د نورمال کولو درجې ته نورمال بڼه ویل کېږي. د بېلګې په توګه لومړۍ نورمال بڼه (1st NF)، دویمه نورمال بڼه (2nd NF)، دریمه نورمال بڼه (3rd NF) او نور.
+## First Normal Form || فرسٹ نارمل فارم || لومړۍ نورمال بڼه
+p The relation is considered to be in First Normal Form (1st NF) if the intersection of each row and column contains only one value. In 1st NF we remove the repeating groups. Consider the following example. || ریلیشن کو فرسٹ نارمل فارم (۱ این ایف) میں سمجھا جاتا ہے اگر ہر قطار اور کالم کے تقاطع میں صرف ایک قدر ہو۔ ۱ این ایف میں ہم تکراری گروپ ہٹا دیتے ہیں۔ درج ذیل مثال پر غور کریں۔ || اړیکه په لومړۍ نورمال بڼه (1st NF) کې ګڼل کېږي که د هر قطار او ستون په تقاطع کې یوازې یو ارزښت وي. په 1st NF کې موږ تکراري ډلې لېرې کوو. لاندې بېلګه ته پام وکړئ.
+## Employee Table || ایمپلائی ٹیبل || د کارکوونکي جدول
+table شکل ۷.۲۲ ایمپلائی ٹیبل || Figure 7.22 Employee Table || انځور ۷.۲۲ د کارکوونکي جدول
+th | Proj_no | Proj_name | Emp_no | Emp_name | Job_class | Charge_per_hour | Hours
+tr | 15 | Evergreen | 103 | Jameel Khan | Elect. Engineer | 1000 | 23
+tr | — | — | 101 | Faisal Naeem | DB Designer | 900 | 19
+tr | — | — | 105 | Bilal Ahmad | DB Designer | 900 | 35
+tr | 18 | MIS | 114 | Zubair Ahmad | Programmer | 750 | 12.6
+tr | — | — | 118 | M. Waseem | System Analyst | 800 | 45.3
+tr | — | — | 104 | Shaukat Ali | App Designer | 600 | 32.4
+endtable
+p The Employee table contains repeating groups. To normalize the above table, all repeating groups must be eliminated. || ایمپلائی ٹیبل میں تکراری گروپ ہیں۔ اوپر کے ٹیبل کو نارملائز کرنے کے لیے تمام تکراری گروپس ختم کرنے ہوں گے۔ || د کارکوونکي جدول تکراري ډلې لري. د پورتني جدول د نورمال کولو لپاره باید ټولې تکراري ډلې لېرې شي.

@@ -1,0 +1,32 @@
+@printed 113
+@status lesson
+q  | Calculate the coefficient of variation in each case, and check which city may be considered more consistent. || ہر صورت میں تغیر کا عددی سر حساب کریں اور جانچیں کہ کون سا شہر زیادہ مستقل سمجھا جا سکتا ہے۔ || په هره حالت کې د تغیر ضریب محاسبه کړئ او وګورئ چې کوم ښار ډېر یو شان ګڼل کېدای شي.
+## Solution: || حل: || حل:
+table مثال 3.15 کا حل: جدول || Example 3.15 solution table || د بېلګې 3.15 د حل جدول
+th | Expenditure (in Rs) | x | u = (x − 55.5)/10 | City A: f | City A: fu | City A: fu² | City B: f | City B: fu | City B: fu²
+tr | 21 – 30 | 25.5 | -3 | 3 | -9 | 27 | 2 | -6 | 18
+tr | 31 – 40 | 35.5 | -2 | 61 | -122 | 244 | 14 | -28 | 56
+tr | 41 – 50 | 45.5 | -1 | 132 | -132 | 132 | 20 | -20 | 20
+tr | 51 – 60 | 55.5 | 0 | 153 | 0 | 0 | 27 | 0 | 0
+tr | 61 – 70 | 65.5 | 1 | 140 | 140 | 140 | 28 | 28 | 28
+tr | 71 – 80 | 75.5 | 2 | 51 | 102 | 204 | 7 | 14 | 28
+tr | 81 – 90 | 85.5 | 3 | 2 | 6 | 18 | 2 | 6 | 18
+tr | Total | – | – | 542 | -15 | 765 | 100 | -6 | 168
+endtable
+sol City A ## City A || شہر A || ښار A
+eq \bar{x}=a+\dfrac{\sum fu}{\sum f}\times h
+eq =55.5+\dfrac{(-15)}{542}\times 10=55.22
+eq S=\sqrt{\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2}\times h
+eq =\sqrt{\dfrac{765}{542}-\left(\dfrac{-15}{542}\right)^2}\times 10
+eq =\sqrt{1.4114-0.0009}\times 10
+eq =\sqrt{1.4105}\times 10=1.1876\times 10
+eq =\sqrt{1.4105}\times 10=1.1876\times 10=11.88
+sol City B ## City B || شہر B || ښار B
+eq \bar{x}=55.5+\dfrac{(-6)}{100}\times 10
+eq =55.5-0.6=54.9
+eq S=\sqrt{\dfrac{168}{100}-\left(\dfrac{-6}{100}\right)^2}\times 10
+eq =\sqrt{1.68-0.0036}\times 10
+eq =\sqrt{1.6764}\times 10
+eq =1.2948\times 10
+eq =12.95
+eq \text{C.V}=\dfrac{12.95}{54.9}\times 100=23.59\ \%

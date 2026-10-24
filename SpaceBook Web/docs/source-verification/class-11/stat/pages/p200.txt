@@ -1,0 +1,29 @@
+@printed 196
+@status lesson
+## 6.1 Time series || 6.1 وقتی سلسلہ || 6.1 د وخت لړۍ
+p A series of observations of the same characteristics arranged according to the time of occurrence is known as time series. The time may be hour, day, week, month, quarter, year or decade etc. Examples of time series are: || ایک ہی خصوصیات کے مشاہدات کا سلسلہ جو وقوع کے وقت کے مطابق ترتیب دیا گیا ہو وقتی سلسلہ کہلاتا ہے۔ وقت گھنٹہ، دن، ہفتہ، مہینہ، سہ ماہی، سال یا دہائی وغیرہ ہو سکتا ہے۔ وقتی سلسلے کی مثالیں یہ ہیں: || د یو شان ځانګړتیاوو د کتنو لړۍ چې د پېښېدو د وخت له مخې ترتیب شوې وي د وخت لړۍ بلل کېږي. وخت ساعت، ورځ، اوونۍ، میاشت، ربع، کال یا لسیزه او نور کېدای شي. د وخت لړۍ بېلګې دا دي:
+p (i) Daily prices (Rs per kg) of a chicken shop are: || (i) مرغی کی دکان کی روزانہ قیمتیں (روپے فی کلو) ہیں: || (i) د چرګانو د هټۍ ورځنۍ بیې (روپۍ په کیلو) دا دي:
+table مرغی کی دکان کی روزانہ قیمتیں || Daily prices of a chicken shop || د چرګانو د هټۍ ورځنۍ بیې
+th | Day | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday
+tr | Price | 150 | 148 | 150 | 155 | 155 | 145 | 145
+endtable
+p (ii) First year admission of a college over a number of years: || (ii) کئی سالوں میں ایک کالج کے پہلے سال کے داخلے: || (ii) د څو کلونو په اوږدو کې د یو کالج د لومړي کال داخلې:
+table ایک کالج کے پہلے سال کے داخلے || First year admission of a college || د یو کالج د لومړي کال داخلې
+th | Year | 2011 | 2012 | 2013 | 2014 | 2015 | 2016
+tr | Number of admissions | 1180 | 1200 | 1100 | 1240 | 1228 | 1000
+endtable
+p (iii) Quarterly sale of sugar bags at a utility store in a village for the year 2015. || (iii) سال 2015 کے لیے ایک گاؤں میں یوٹیلٹی سٹور پر چینی کے تھیلوں کی سہ ماہی فروخت۔ || (iii) د 2015 کال لپاره په یوه کلي کې د یوټیلټي سټور کې د بورې د کڅوړو ربعوار پلور.
+table چینی کے تھیلوں کی سہ ماہی فروخت، 2015 || Quarterly sale of sugar bags, 2015 || د بورې د کڅوړو ربعوار پلور، 2015
+th | Quarter | Spring | Summer | Autumn | Winter
+tr | No. of bags sold | 234 | 270 | 190 | 210
+endtable
+p (iv) Yearly record of export and import (in metric ton) of a company: || (iv) ایک کمپنی کی برآمد اور درآمد (میٹرک ٹن میں) کا سالانہ ریکارڈ: || (iv) د یوې شرکت د صادراتو او وارداتو (په میټریک ټن) کلنی ریکارډ:
+table سالانہ برآمد اور درآمد (میٹرک ٹن) || Yearly export and import (metric ton) || کلنی صادرات او واردات (میټریک ټن)
+th | Year | Export | Import
+tr | 2010 | 4000 | 1500
+tr | 2011 | 4500 | 2000
+tr | 2012 | 5000 | 1000
+tr | 2013 | 3000 | 1400
+endtable
+p Analysis of time series || وقتی سلسلے کا تجزیہ || د وخت لړۍ تحلیل
+p The description, measurement and isolation of various changes in a time series during a period of time are called analysis of time series. Times series analysis helps in (i) understanding the real behaviour of the past (ii) predicting the future behaviour like demand, production, weather conditions, prices etc. (iii) to compare the present accomplishments with the past performance. (iv) planning || کسی مدت کے دوران وقتی سلسلے میں مختلف تبدیلیوں کی تفصیل، پیمائش اور علیحدگی وقتی سلسلے کا تجزیہ کہلاتی ہے۔ وقتی سلسلے کا تجزیہ (i) ماضی کے حقیقی رویے کو سمجھنے (ii) مستقبل کے رویے جیسے طلب، پیداوار، موسمی حالات، قیمتوں وغیرہ کی پیش گوئی (iii) موجودہ کامیابیوں کا ماضی کی کارکردگی سے موازنہ کرنے (iv) منصوبہ بندی میں مدد دیتا ہے || د یوې مودې په اوږدو کې په وخت لړۍ کې د بېلابېلو بدلونونو بیان، اندازه کول او جلا کول د وخت لړۍ تحلیل بلل کېږي. د وخت لړۍ تحلیل (i) د تېر وخت د ریښتیني چلند په پوهېدو (ii) د راتلونکي چلند لکه غوښتنه، تولید، هوا حالات، بیې او نورو په وړاندوینه (iii) د اوسنیو لاسته‌راوړنو د تېر فعالیت سره په پرتله کولو (iv) پلان جوړونې کې مرسته کوي

@@ -1,0 +1,43 @@
+@printed 72
+@status lesson
+table مثال 2.18: جمعی تعدد کے ساتھ ترتیب شدہ اعداد و شمار || Example 2.18: arranged data with cumulative frequency || بېلګه 2.18: له مجموعي فریکونسي سره ترتیب شوي معلومات
+th | x | f | c.f
+tr | 10 | 3 | 3
+tr | 25 | 8 | 11
+tr | 30 | 14 | 25
+tr | 36 | 18 | 43
+tr | 40 | 27 | 70
+tr | 44 | 23 | 93
+tr | 50 | 22 | 115
+tr | 55 | 17 | 132
+tr | 60 | 08 | 140
+tr | Total | 140 | –
+endtable
+sol Since Σf = 140 is even ## Since Σf = 140 is even || چونکہ Σf = 140 جفت ہے || ځکه چې Σf = 140 جفت دی
+eq \text{(i)}\ \therefore Q_2=2\left(\dfrac{\sum f}{4}\right)\text{th value}=2\left(\dfrac{140}{4}\right)\text{th value}=70\text{th value.}
+eq \Rightarrow Q_2=40
+eq \text{(ii)}\ D_6=6\left(\dfrac{\sum f}{10}\right)\text{th value}=6\left(\dfrac{140}{10}\right)\text{th value}=84\text{th value.}
+eq \Rightarrow D_6=44
+eq \text{(iii)}\ P_{25}=25\left(\dfrac{\sum f}{100}\right)\text{th value}=25\left(\dfrac{140}{100}\right)\text{th value}=35\text{th value.}
+eq \Rightarrow P_{25}=36
+p Case-iii: Continuous series or grouped data. || صورت-iii: مسلسل سلسلہ یا گروہی اعداد و شمار۔ || حالت-iii: دوامداره لړۍ یا ګروپي معلومات.
+## Example: 2.19 || مثال: 2.19 || بېلګه: 2.19
+q  | Calculate Q₁, D₈, and P₆₀ from the following data: || درج ذیل اعداد و شمار سے Q₁، D₈ اور P₆₀ حساب کریں: || له لاندې معلوماتو څخه Q₁، D₈ او P₆₀ محاسبه کړئ:
+table مثال 2.19: جماعتیں اور تعدد || Example 2.19: classes and frequency || بېلګه 2.19: ټولګي او فریکونسي
+th | Classes: | 0 – 4 | 5 – 9 | 10–14 | 15–19 | 20–24 | 25–29 | 30–34
+tr | Frequency: | 4 | 6 | 10 | 16 | 12 | 8 | 4
+endtable
+## Solution: || حل: || حل:
+table مثال 2.19: جماعتی سرحدیں اور c.f || Example 2.19: class boundaries and c.f || بېلګه 2.19: د ټولګي پولې او c.f
+th | Classes | f | Class boundaries | c.f
+tr | 0 – 4 | 4 | −0.5 – 4.5 | 4
+tr | 5 – 9 | 6 | 4.5 – 9.5 | 10
+tr | 10 – 14 | 10 | 9.5 – 14.5 | 20
+tr | 15 – 19 | 16 | 14.5 – 19.5 | 36
+tr | 20 – 24 | 12 | 19.5 – 24.5 | 48
+tr | 25 – 29 | 8 | 24.5 – 29.5 | 56
+tr | 30 – 34 | 4 | 29.5 – 34.5 | 60
+tr | Total | 60 | – | –
+endtable
+sol Here Σf = 60 is even ## Here Σf = 60 is even || یہاں Σf = 60 جفت ہے || دلته Σf = 60 جفت دی
+eq \text{(i)}\ Q_1=\left(\dfrac{\sum f}{4}\right)\text{th value}=\left(\dfrac{60}{4}\right)\text{th value}=15\text{th value.}

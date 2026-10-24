@@ -1,0 +1,21 @@
+@printed 226
+@status lesson
+table مثال 7.5 کا حل: جدول || Example 7.5 solution table || د بېلګې 7.5 د حل جدول
+th | Age group (years) | Original population: Population (p) | Original population: Deaths (d) | Standard population: Population (P) | Standard population: Deaths (D) | (d_i/p_i) P_i | (D_i/P_i) p_i
+tr | 0 - 10 | 20210 | 728 | 231428 | 6960 | 8336.45 | 608
+tr | 11 - 24 | 29875 | 213 | 302170 | 1972 | 2154.38 | 195
+tr | 25 - 44 | 37294 | 462 | 293149 | 4759 | 3631.54 | 605
+tr | 45 - 64 | 16739 | 741 | 150122 | 7030 | 6645.58 | 784
+tr | 62 & above | 4925 | 823 | 46500 | 8314 | 7770.46 | 881
+tr | Total | 109043 | 2967 | 1023369 | 29035 | 28538.41 | 3073
+endtable
+sol By direct method ## By direct method || براہِ راست طریقے سے || په مستقیمه طریقه
+eq S_T.D.R=\dfrac{\sum\left(\dfrac{d_i}{p_i}\right)P_i}{\sum P_i}\times 1000=\dfrac{28538.41}{1023369}\times 1000=27.89
+sol By indirect method ## By indirect method || بالواسطہ طریقے سے || په غیر مستقیمه طریقه
+eq S_T.D.R=\dfrac{\sum d_i}{\sum\left(\dfrac{D_i}{P_i}\right)p_i}\times\text{C.D.R of standard population}
+eq =\dfrac{2967}{3073}\times 28.37=27.39
+## 7.4 Measures of fertility || 7.4 زرخیزی کے پیمانے || 7.4 د زېږون‌توان اندازې
+p Fertility means the ability to produce offspring. Fertility can be measured through birth rate. Commonly used fertility rates/birth rates in vital statistics are: || زرخیزی کا مطلب اولاد پیدا کرنے کی صلاحیت ہے۔ زرخیزی کو شرحِ پیدائش کے ذریعے ناپا جا سکتا ہے۔ حیاتیاتی شماریات میں عام طور پر استعمال ہونے والی شرحیں زرخیزی/شرحیں پیدائش یہ ہیں: || زېږون‌توان د اولاد زېږولو وړتیا ته وايي. زېږون‌توان د زېږون د کچې په واسطه اندازه کېدای شي. په حیاتي احصایو کې عموماً کارېدونکې د زېږون‌توان کچې/د زېږون کچې دا دي:
+p (i) Crude birth rate || (i) خام شرحِ پیدائش || (i) خام د زېږون کچه
+p The ratio of the total registered live births in a specified year in a particular area to the total population in the middle of the year multiplied by 1000 is called crude birth rate i.e. || کسی مخصوص علاقے میں ایک مخصوص سال میں کل اندراج شدہ زندہ پیدائشوں کا سال کے وسط میں کل آبادی سے تناسب جسے 1000 سے ضرب دیا جائے خام شرحِ پیدائش کہلاتا ہے یعنی || په یوه ځانګړې سیمه کې په یو ټاکلي کال کې د ټولو ثبت شویو ژوندیو زېږونونو د کال په منځ کې د ټول نفوس سره نسبت چې په 1000 ضرب شي خام د زېږون کچه بلل کېږي یعنې
+eq \text{C.B.R}=\dfrac{\text{Total registered live births in a year}}{\text{Total population in the middle of the year}}\times 1000=\dfrac{B}{P}\times 1000

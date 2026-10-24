@@ -1,0 +1,26 @@
+@printed 125
+@status lesson
+table مثال 3.24: مبدا کے گرد معیارِ اثر || Example 3.24: moments about origin || بېلګه 3.24: د اصل شاوخوا مومنټونه
+th | Group | f | x | fx | fx² | fx³ | fx⁴
+tr | 0 – 4 | 2 | 2 | 4 | 8 | 16 | 32
+tr | 5 – 9 | 5 | 7 | 35 | 245 | 1715 | 12005
+tr | 10 – 14 | 12 | 12 | 144 | 1728 | 20736 | 248832
+tr | 15 – 19 | 9 | 17 | 153 | 2601 | 44217 | 751689
+tr | 20 – 24 | 7 | 22 | 154 | 3388 | 74536 | 1639792
+tr | Total | 35 | – | 490 | 7970 | 141220 | 2652350
+endtable
+eq m_1'=\dfrac{\sum fx}{\sum f}=\dfrac{490}{35}=14\qquad\qquad m_2'=\dfrac{\sum fx^2}{\sum f}=\dfrac{7970}{35}=227.71
+eq m_3'=\dfrac{\sum fx^3}{\sum f}=\dfrac{141220}{35}=4034.86\qquad\qquad m_4'=\dfrac{\sum fx^4}{\sum f}=\dfrac{2652350}{35}=75781.43
+sol (ii) Mean moments: ## (ii) Mean moments: || (ii) اوسطی معیارِ اثر: || (ii) اوسط مومنټونه:
+eq m_1=m_1'-m_1'=14-14=0
+eq m_2=m_2'-(m_1')^2=227.71-(14)^2=227.71-196=31.71
+eq m_3=m_3'-3m_1'm_2'+2(m_1')^3
+eq =4034.86-3(14)(227.71)+2(14)^3
+eq =4034.86-9563.82+5488
+eq =9522.86-9563.82=-40.96
+eq m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4
+eq =75781.86-4(14)(4034.86)+6(14)^2(227.71)-3(14)^4
+eq =75781.43-225952.16+267786.96-115248
+eq =343568.39-341200.16=2368.23
+## 3.6.2 Sheppard's correction || 3.6.2 شیپرڈ کی تصحیح || 3.6.2 د شیپرډ سمون
+p When summary statistics like mean, standard deviation and moments etc. are computed from a continuous grouped frequency distribution, the frequencies are allotted to the mid-points of the classes, which surely create error and need correction. This point was first noticed by W.F Sheppard and suggested the following corrected formulas known as Sheppard's correction. Note that first and || جب اوسط، معیاری انحراف اور معیارِ اثر وغیرہ جیسے خلاصی شماریات کسی مسلسل گروہی تعدد تقسیم سے حساب کیے جاتے ہیں تو تعدد کو طبقات کے وسطی نقطوں سے منسوب کیا جاتا ہے، جو یقیناً غلطی پیدا کرتا ہے اور تصحیح کا متقاضی ہے۔ یہ نکتہ سب سے پہلے ڈبلیو۔ایف۔ شیپرڈ نے محسوس کیا اور درج ذیل تصحیح شدہ فارمولے تجویز کیے جو شیپرڈ کی تصحیح کہلاتے ہیں۔ نوٹ کریں کہ پہلا اور || کله چې لنډیز احصایې لکه اوسط، معیاري انحراف او مومنټونه او نور له یوه دوامداره ګروپي فریکونسي ویش څخه محاسبه کېږي نو فریکونسي د ټولګیو منځنیو نقطو ته ورکول کېږي، چې یقیناً تېروتنه رامنځته کوي او سمون ته اړتیا لري. دا ټکی لومړی W.F Sheppard ولیدل او لاندې سمون شوي فورمولونه یې وړاندیز کړل چې د شیپرډ سمون بلل کېږي. پام وکړئ چې لومړی او

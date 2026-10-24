@@ -1,0 +1,32 @@
+@printed 124
+@status lesson
+## Solution: || حل: || حل:
+sol (i) Moments about origin: ## (i) Moments about origin: || (i) مبدا کے گرد معیارِ اثر: || (i) د اصل شاوخوا مومنټونه:
+table مثال 3.23: مبدا کے گرد معیارِ اثر || Example 3.23: moments about origin || بېلګه 3.23: د اصل شاوخوا مومنټونه
+th | x | f | fx | fx² | fx³ | fx⁴
+tr | 1 | 5 | 5 | 5 | 5 | 5
+tr | 2 | 7 | 14 | 28 | 56 | 112
+tr | 3 | 10 | 30 | 90 | 270 | 810
+tr | 4 | 6 | 24 | 96 | 384 | 1536
+tr | 5 | 2 | 10 | 50 | 250 | 1250
+tr | Total | 30 | 83 | 269 | 965 | 3713
+endtable
+eq m_1'=\dfrac{\sum fx}{\sum f}=\dfrac{83}{30}=2.77\qquad\qquad m_2'=\dfrac{\sum fx^2}{\sum f}=\dfrac{269}{30}=8.97
+eq m_3'=\dfrac{\sum fx^3}{\sum f}=\dfrac{965}{30}=32.17\qquad\qquad m_4'=\dfrac{\sum fx^4}{\sum f}=\dfrac{3713}{30}=123.77
+sol (ii) Mean moments: ## (ii) Mean moments: || (ii) اوسطی معیارِ اثر: || (ii) اوسط مومنټونه:
+eq m_1=m_1'-m_1'=2.77-2.77=0
+eq m_2=m_2'-(m_1')^2=8.97-(2.77)^2=8.97-7.673=1.3
+eq m_3=m_3'-3m_1'm_2'+2(m_1')^3
+eq =32.17-3(2.77)(8.97)+2(2.77)^3
+eq =32.17-74.541+42.51=74.68-74.54=0.14
+eq m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4
+eq =123.77-4(2.77)(32.17)+6(2.77)^2(8.97)-3(2.77)^4
+eq =123.77-356.44+412.96-176.62=536.73-533.06=3.67
+## Example: 3.24 || مثال: 3.24 || بېلګه: 3.24
+q  | Consider the following data; compute the first four moments about mean. || درج ذیل اعداد و شمار پر غور کریں؛ اوسط کے گرد پہلے چار معیارِ اثر حساب کریں۔ || لاندې معلومات په پام کې ونیسئ؛ د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ.
+table مثال 3.24: گروہ اور تعدد || Example 3.24: group and frequency || بېلګه 3.24: ډله او فریکونسي
+th | Group: | 0 – 4 | 5 – 9 | 10 – 14 | 15 – 19 | 20 – 24
+tr | Frequency: | 2 | 5 | 12 | 9 | 7
+endtable
+## Solution: || حل: || حل:
+sol (i) Moment about origin (zero) ## (i) Moment about origin (zero) || (i) مبدا (صفر) کے گرد معیارِ اثر || (i) د اصل (صفر) شاوخوا مومنټ

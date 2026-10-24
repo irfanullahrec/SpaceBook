@@ -1,0 +1,21 @@
+@printed 215
+@status lesson
+p is to administer, develop and implement policies and procedures necessary to ensure the security and integrity of the database. Other primary responsibilities of a DBA include: || ڈیٹا بیس کی سیکیورٹی اور سالمیت یقینی بنانے کے لیے ضروری پالیسیاں اور طریقہ کار کا انتظام، تیاری اور نفاذ ہے۔ ڈی بی اے کی دیگر بنیادی ذمہ داریوں میں شامل ہیں: || د ډېټابېس د امنیت او بشپړتیا د ډاډمنتیا لپاره اړین پالیسۍ او کړنلارې اداره کول، جوړول او پلي کول دي. د DBA نورې لومړنۍ مسؤلیتونه شاملوي:
+p Implementation of Data Models || ڈیٹا ماڈلز کا نفاذ || د ډېټا ماډلونو پلي کول
+p Database design || ڈیٹا بیس ڈیزائن || د ډېټابېس ډیزاین
+p Performance issues || کارکردگی کے مسائل || د فعالیت مسایل
+p Storage structure and access-method definition || ذخیرے کی ساخت اور رسائی کے طریقے کی تعریف || د ذخیرې جوړښت او د لاسرسي طریقې تعریف
+p Granting of authorization for data access || ڈیٹا تک رسائی کی اجازت دینا || د ډېټا ته د لاسرسي د اجازې ورکول
+p Routine maintenance which may include: || معمول کی دیکھ بھال جس میں شامل ہو سکتے ہیں: || معمولي ساتنه چې شاملوالی یې کېدای شي:
+p Periodically backup the database || وقتاً فوقتاً ڈیٹا بیس کا بیک اپ لینا || په دوره یي ډول د ډېټابېس بیک اپ نیول
+p Ensuring that enough free disk space is available || یقینی بنانا کہ کافی خالی ڈسک اسپیس دستیاب ہے || ډاډ ترلاسه کول چې کافي وړیا ډیسک ځای شته
+p Monitoring jobs running on the database and performance || ڈیٹا بیس پر چلنے والے کاموں اور کارکردگی کی نگرانی کرنا || په ډېټابېس چالېدونکو کارونو او فعالیت څارل
+## 7.1.7 Database Models || ۷.۱.۷ ڈیٹا بیس ماڈلز || ۷.۱.۷ د ډېټابېس ماډلونه
+p A database model is a set of rules or specifications which state that how data can be stored, organized and manipulated in a database system. It provides tools for describing data, data relationships, data semantics and consistency constraints. Several models have been suggested. Few common models include: || ڈیٹا بیس ماڈل قواعد یا وضاحتوں کا مجموعہ ہے جو بیان کرتا ہے کہ ڈیٹا بیس سسٹم میں ڈیٹا کو کیسے ذخیرہ، منظم اور اس میں ترمیم کی جا سکتی ہے۔ یہ ڈیٹا، ڈیٹا کے تعلقات، ڈیٹا کے معانی اور مطابقت کی پابندیوں کو بیان کرنے کے اوزار فراہم کرتا ہے۔ کئی ماڈلز تجویز کیے گئے ہیں۔ چند عام ماڈلز میں شامل ہیں: || د ډېټابېس ماډل د قواعدو یا مشخصاتو یوه ټولګه ده چې بیانوي چې په ډېټابېس سیسټم کې ډېټا څنګه ذخیره، منظم او کار ترې اخیستل کېدای شي. دا د ډېټا، د ډېټا اړیکو، د ډېټا مانا او همغږۍ محدودیتونو د بیانولو لپاره وسایل برابروي. څو ماډلونه وړاندیز شوي. ځینې عام ماډلونه شاملوي:
+p Hierarchical Database Model || ہائیرارکیکل ڈیٹا بیس ماڈل || درجه بندي ډېټابېس ماډل
+p Network Database Model || نیٹ ورک ڈیٹا بیس ماڈل || شبکه ډېټابېس ماډل
+p Relational Database Model || ریلیشنل ڈیٹا بیس ماڈل || اړونده ډېټابېس ماډل
+p Object Oriented Database Model || آبجیکٹ اورینٹڈ ڈیٹا بیس ماڈل || څیز پر بنسټ ډېټابېس ماډل
+p Object Relational Database Model || آبجیکٹ ریلیشنل ڈیٹا بیس ماڈل || څیز اړونده ډېټابېس ماډل
+## a. Hierarchal Database Model || الف۔ ہائیرارکل ڈیٹا بیس ماڈل || الف. درجه بندي ډېټابېس ماډل
+p In this type of model, data is organized into a tree-like structure. There is a hierarchy of parent and child segments. This structure implies that a record can have repeating information, usually in the child data segment. Each parent || اس قسم کے ماڈل میں ڈیٹا درخت نما ساخت میں منظم ہوتا ہے۔ والدین اور بچے کے حصوں کی درجہ بندی ہوتی ہے۔ اس ساخت کا مطلب ہے کہ ریکارڈ میں تکراری معلومات ہو سکتی ہیں، عموماً بچے کے ڈیٹا سیگمنٹ میں۔ ہر والدین || په دې ډول ماډل کې ډېټا د ونې غوندې جوړښت کې منظمه کېږي. د مور او ماشوم برخو درجه بندي شته. دا جوړښت دا مانا لري چې یو ثبت کېدای شي تکراري معلومات ولري، معمولاً د ماشوم ډېټا برخه کې. هر مور

@@ -1,0 +1,21 @@
+@printed 221
+@status lesson
+table شکل ۷.۴ ٹیبل/ریلیشن || Figure 7.4 Table/Relation || انځور ۷.۴ جدول/اړیکه
+th | Employee No | Name | Date of Birth | Address | Date of Joining
+tr | 54 | Khalid | 21/7/1972 | Rawalpindi | 15/8/2002
+tr | 55 | Naeem | 14/5/1972 | Islamabad | 17/8/1995
+tr | 56 | Sajid | 5/6/1976 | Peshawar | 3/6/2005
+tr | 57 | Mehmood | 8/4/1971 | Peshawar | 8/4/2000
+endtable
+p Key field — Fields/Attributes/Columns — Records/Tuples/Rows. These three printed callouts mark the key column, the columns and the rows of the table. || کی فیلڈ — فیلڈز/ایٹریبیوٹس/کالمز — ریکارڈز/ٹپلز/رو۔ یہ تین چھپی ہوئی نشاندہیاں ٹیبل کے کی کالم، کالموں اور قطاروں کو ظاہر کرتی ہیں۔ || کیلي ساحه — ساحې/خاصیتونه/ستونونه — ثبتونه/ټپلونه/قطارونه. دا درې چاپ شوي نښې د جدول کیلي ستون، ستونونه او قطارونه ښيي.
+## 7.3 PLANNING A DATABASE || ۷.۳ ڈیٹا بیس کی منصوبہ بندی || ۷.۳ د ډېټابېس پلانول
+p Database planning is a systematic approach to the development of database that moves from concept to design and development to implementation. A well-designed database promotes consistent data entry and retrieval. || ڈیٹا بیس کی منصوبہ بندی ڈیٹا بیس کی ترقی کا منظم طریقہ ہے جو تصور سے ڈیزائن اور ترقی سے نفاذ کی طرف جاتا ہے۔ اچھی طرح ڈیزائن کیا گیا ڈیٹا بیس مطابقت پذیر ڈیٹا اندراج اور حصول کو فروغ دیتا ہے۔ || د ډېټابېس پلانول د ډېټابېس د جوړولو یوه منظمه طریقه ده چې له مفکورې نه ډیزاین ته او جوړولو نه پلي کولو ته ځي. یو ښه ډیزاین شوی ډېټابېس د همغږي ډېټا د دخل او ترلاسه کولو ملاتړ کوي.
+## 7.3.1 Steps for Designing a Database || ۷.۳.۱ ڈیٹا بیس ڈیزائن کرنے کے مراحل || ۷.۳.۱ د ډېټابېس د ډیزاین کولو ګامونه
+p The process of database design is divided into different steps. These are: || ڈیٹا بیس ڈیزائن کا عمل مختلف مراحل میں تقسیم ہے۔ یہ ہیں: || د ډېټابېس د ډیزاین پروسه په مختلفو ګامونو وېشل شوې ده. دا دي:
+p Problem Identification/definition || مسئلے کی شناخت/تعریف || د ستونزې پېژندنه/تعریف
+p Feasibility Study || فزیبلٹی اسٹڈی || د شونتیا مطالعه
+p Requirement Analysis || ضروریات کا تجزیہ || د اړتیاوو تحلیل
+p Identifying Entities and Attributes || انٹیٹیز اور ایٹریبیوٹس کی شناخت || د وجودونو او خاصیتونو پېژندنه
+p Assigning Names to Tables and Columns || ٹیبلز اور کالموں کو نام دینا || جدولونو او ستونونو ته نومونه ورکول
+## a. Problem Identification/definition || الف۔ مسئلے کی شناخت/تعریف || الف. د ستونزې پېژندنه/تعریف
+p One must know what the problem is before it can be solved. In this step a statement is prepared specifying the scope and objective of the problem. For example, the Admission Section Head has been getting complaints of poor service from student. This may lead an initial investigation to find whether a || کسی مسئلے کو حل کرنے سے پہلے یہ جاننا ضروری ہے کہ مسئلہ کیا ہے۔ اس مرحلے میں مسئلے کے دائرہ کار اور مقصد کی وضاحت کرنے والا بیان تیار کیا جاتا ہے۔ مثلاً ایڈمیشن سیکشن کے سربراہ کو طلبہ کی طرف سے ناقص خدمت کی شکایات مل رہی ہیں۔ اس سے ابتدائی تحقیق ہو سکتی ہے تاکہ معلوم ہو کہ آیا کوئی || مخکې له دې چې ستونزه حل شي باید پوه شو چې ستونزه څه ده. پدې ګام کې یو بیان چې د ستونزې پراخوالی او موخه ټاکي چمتو کېږي. د بېلګې په توګه د داخلې برخې مشر له زده کوونکو نه د ضعیفې خدمت شکایتونه اخیستل. دا کېدای شي لومړنۍ څېړنې ته لار هواره کړي ترڅو وموندل شي چې ایا

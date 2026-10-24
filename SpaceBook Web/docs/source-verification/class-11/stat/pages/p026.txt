@@ -1,0 +1,27 @@
+@printed 22
+@status lesson
+p The class boundaries can also be used in place of class limits. || جماعتی حدود کی جگہ جماعتی سرحدیں بھی استعمال کی جا سکتی ہیں۔ || د ټولګي د حدونو پر ځای د ټولګي پولې هم کارېدای شي.
+## Example: 1.6 || مثال: 1.6 || بېلګه: 1.6
+q  | Compute the || حساب کریں || محاسبه کړئ
+qp i | Cumulative frequency (c.f) distribution || جمعی تعدد (c.f) تقسیم || مجموعي فریکونسي (c.f) ویش
+qp ii | Relative frequency (r.f) distribution || اضافی تعدد (r.f) تقسیم || نسبي فریکونسي (r.f) ویش
+qp iii | Cumulative relative frequency (c.r.f) distribution || جمعی اضافی تعدد (c.r.f) تقسیم || مجموعي نسبي فریکونسي (c.r.f) ویش
+qp iv | Percentage relative frequencies (% r.f) distribution and || فیصد اضافی تعددات (% r.f) تقسیم اور || سلنه نسبي فریکونسۍ (% r.f) ویش او
+qp v | Percentage cumulative relative frequency (% c.r.f) distribution from the following frequency distribution. || درج ذیل تعدد تقسیم سے فیصد جمعی اضافی تعدد (% c.r.f) تقسیم۔ || له لاندې فریکونسي ویش څخه سلنه مجموعي نسبي فریکونسي (% c.r.f) ویش.
+q  | Classes: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94; Frequency: 1, 1, 3, 1, 3, 4, 5, 4, 3 || جماعتیں: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94؛ تعدد: 1, 1, 3, 1, 3, 4, 5, 4, 3 || ټولګي: 50 – 54, 5 – 59, 60 – 64, 65 – 69, 70 – 74, 75 – 79, 80 – 84, 85 – 89, 90 – 94؛ فریکونسي: 1, 1, 3, 1, 3, 4, 5, 4, 3
+## Solution: || حل: || حل:
+table مثال 1.6: تعدد تقسیمات || Example 1.6: frequency distributions || بېلګه 1.6: فریکونسي ویشونه
+th | Classes | f | c.f | r.f | c.r.f | % r.f | % c.r.f
+tr | 50 – 54 | 1 | 1 | 1/25=0.04 | 1/25=0.04 | 0.04×100 =4% | 0.04×100= 4%
+tr | 55 – 59 | 1 | 2 | 1/25=0.04 | 2/25=0.08 | 0.04×100= 4% | 0.08×100= 8%
+tr | 60 – 64 | 3 | 5 | 3/25=0.12 | 5/25= 0. 2 | 12% | 20%
+tr | 65 – 69 | 1 | 6 | 0.04 | 0.24 | 4% | 24%
+tr | 70 – 74 | 3 | 9 | 0.12 | 0.36 | 12% | 36%
+tr | 75 – 79 | 4 | 13 | 0.16 | 0.52 | 16% | 52%
+tr | 80 – 84 | 5 | 18 | 0.2 | 0.72 | 20% | 72%
+tr | 85 – 89 | 4 | 22 | 0.16 | 0.88 | 16% | 88%
+tr | 90 – 94 | 3 | 25 | 0.12 | 1 | 12% | 100%
+tr | Total | 25 | – | 1 | – | 100% | 
+endtable
+## 1.5.9 Merits and demerits of data array || 1.5.9 ڈیٹا ارے کی خوبیاں اور خامیاں || 1.5.9 د ډیټا ارې ګټې او زیانونه
+p Data array obtained through frequency distribution looks very good and interesting. It helps in the proper understanding and interpretation of the collected raw data. However, the data array obtained through frequency distribution has one disadvantage that here the observations lose their identity and it only tells us the number of observations in each interval. || تعدد تقسیم کے ذریعے حاصل کیا گیا ڈیٹا ارے بہت اچھا اور دلچسپ لگتا ہے۔ یہ اکٹھے کیے گئے خام اعداد و شمار کو صحیح طور پر سمجھنے اور ان کی تشریح میں مدد دیتا ہے۔ تاہم تعدد تقسیم کے ذریعے حاصل کیے گئے ڈیٹا ارے کی ایک خامی ہے کہ یہاں مشاہدات اپنی شناخت کھو دیتے ہیں اور یہ ہمیں صرف ہر وقفے میں مشاہدات کی تعداد بتاتا ہے۔ || د فریکونسي ویش په واسطه ترلاسه شوې ډیټا اره ډېره ښه او په زړه پورې ښکاري. دا د راټول شویو خامو معلوماتو په سم پوهېدو او تشریح کې مرسته کوي. خو د فریکونسي ویش په واسطه ترلاسه شوې ډیټا اره یو زیان لري چې دلته کتنې خپل پېژندنه له لاسه ورکوي او دا موږ ته یوازې په هر وقفه کې د کتنو شمېر وايي.

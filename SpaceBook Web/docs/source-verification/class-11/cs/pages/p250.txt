@@ -1,0 +1,11 @@
+@printed 242
+@status lesson
+p Both Job_class and Charge_per_hour are nonprime attributes and the later one is dependent on the former. So by removing transitive dependency the following new tables will be created. || جاب_کلاس اور چارج_فی_آور دونوں غیر بنیادی ایٹریبیوٹس ہیں اور بعد والا پہلے والے پر منحصر ہے۔ اس لیے ترسیلی انحصار ہٹانے سے درج ذیل نئے ٹیبلز بنیں گے۔ || Job_class او Charge_per_hour دواړه غیر لومړني خاصیتونه دي او وروستی په مخکني پورې تړلی دی. نو د انتقالي تکیې په لېرې کولو سره به لاندې نوي جدولونه جوړ شي.
+## Employee Table || ایمپلائی ٹیبل || د کارکوونکي جدول
+## Job Table || جاب ٹیبل || د دندې جدول
+svg Figure 7.29 Employee Table || شکل ۷.۲۹ ایمپلائی ٹیبل || انځور ۷.۲۹ د کارکوونکي جدول
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 60" role="img" aria-label="Table structure: Emp_no, Emp_name, Job_class" style="width:100%;max-width:262px;height:auto;background:#fff"><rect x="10" y="10" width="64" height="30" fill="#c9a6a6" stroke="#111"/><text x="42.0" y="30" font-size="11" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="#111">Emp_no</text><line x1="18" y1="33" x2="66" y2="33" stroke="#111"/><rect x="74" y="10" width="80" height="30" fill="#8fb4e0" stroke="#111"/><text x="114.0" y="30" font-size="11" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="#111">Emp_name</text><rect x="154" y="10" width="88" height="30" fill="#8fb4e0" stroke="#111"/><text x="198.0" y="30" font-size="11" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="#111">Job_class</text></svg>
+endsvg
+svg Figure 7.30 Job Table || شکل ۷.۳۰ جاب ٹیبل || انځور ۷.۳۰ د دندې جدول
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 60" role="img" aria-label="Table structure: Job_class, Chg_per_hour" style="width:100%;max-width:230px;height:auto;background:#fff"><rect x="10" y="10" width="88" height="30" fill="#c9a6a6" stroke="#111"/><text x="54.0" y="30" font-size="11" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="#111">Job_class</text><line x1="18" y1="33" x2="90" y2="33" stroke="#111"/><rect x="98" y="10" width="112" height="30" fill="#8fb4e0" stroke="#111"/><text x="154.0" y="30" font-size="11" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" fill="#111">Chg_per_hour</text></svg>
+endsvg

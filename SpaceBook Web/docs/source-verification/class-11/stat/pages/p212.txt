@@ -1,0 +1,20 @@
+@printed 208
+@status lesson
+sol Multiply equation (4) by 4 and subtract it from equation (6) ## Multiply equation (4) by 4 and subtract it from equation (6) || مساوات (4) کو 4 سے ضرب دیں اور اسے مساوات (6) سے منہا کریں || معادله (4) په 4 ضرب کړئ او له معادلې (6) څخه یې تفریق کړئ
+eq \begin{aligned}5707&=28a+196c\\ 4700&=28a+112c\\ 1007&=84c\end{aligned}\qquad\text{or}\qquad c=\dfrac{1007}{84}=11.99
+sol Put this value of c in equation (4) we have ## Put this value of c in equation (4) we have || c کی یہ قدر مساوات (4) میں رکھنے سے ہمیں ملتا ہے || د c دا ارزښت په معادله (4) کې ایښودو سره موږ لرو
+eq \begin{aligned}1175&=7a+28(11.99)\\ &=7a+335.72\\ 1175-335.72&=7a\\ 839.28&=7a\end{aligned}\qquad\text{or}\qquad a=\dfrac{839.28}{7}=119.9
+sol Thus the required fitted equation of second degree parabola is ## Thus the required fitted equation of second degree parabola is || اس طرح دوسرے درجے کے قطع مکافی کی مطلوبہ فٹ کی گئی مساوات ہے || په دې توګه د دویم درجې پیراپولا اړینه برابره شوې معادله ده
+eq \hat{y}=119.9+11.89x+11.99x^2
+sol The trend values are given in the last column which is obtained by putting the values of x in the above equation. ## The trend values are given in the last column which is obtained by putting the values of x in the above equation. || رجحان کی قدریں آخری کالم میں دی گئی ہیں جو اوپر دی گئی مساوات میں x کی قدریں رکھنے سے حاصل ہوتی ہیں۔ || د تمایل ارزښتونه په وروستي کالم کې ورکړل شوي دي چې د پورتنۍ معادلې په x ارزښتونو ایښودو سره ترلاسه کېږي.
+## Example: 6.8 || مثال: 6.8 || بېلګه: 6.8
+q  | Fit a second degree parabola to the following data and find the trend values: || درج ذیل اعداد و شمار پر دوسرے درجے کا قطع مکافی فٹ کریں اور رجحان کی قدریں معلوم کریں: || پر لاندې معلوماتو دویم درجې پیراپولا برابره کړئ او د تمایل ارزښتونه ومومئ:
+table مثال 6.8: سال اور y || Example 6.8: year and y || بېلګه 6.8: کال او y
+th | Year | 1980 | 1981 | 982 | 983 | 1984 | 1985 | 986 | 1987
+tr | y | 100 | 87 | 96 | 102 | 139 | 210 | 289 | 307
+endtable
+## Solution: || حل: || حل:
+sol Required equation of the second degree parabola is ## Required equation of the second degree parabola is || دوسرے درجے کے قطع مکافی کی مطلوبہ مساوات ہے || د دویم درجې پیراپولا اړینه معادله ده
+eq \hat{y}=a+bx+cx^2
+sol Three normal equations are ## Three normal equations are || تین معمول کی مساواتیں یہ ہیں || درې نورمال معادلې دا دي
+eq \sum y=na+b\sum x+c\sum x^2\qquad\text{(i)}

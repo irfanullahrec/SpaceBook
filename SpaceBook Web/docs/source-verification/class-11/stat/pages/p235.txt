@@ -1,0 +1,31 @@
+@printed 232
+@status lesson
+## Solution: || حل: || حل:
+table مثال 7.7 کا حل: جدول || Example 7.7 solution table || د بېلګې 7.7 د حل جدول
+th | Age group (years) | Female population (p_if) | Female births (b_if) | (b_if / p_if) | Probability of survival | [(b_if / p_if) × Probability of survival]
+tr | 15 – 19 | 1558000 | 18900 | 0.012 | 0.914 | 0.011
+tr | 20 – 24 | 1112000 | 71100 | 0.064 | 0.899 | 0.057
+tr | 25 – 29 | 15955000 | 96900 | 0.061 | 0.884 | 0.054
+tr | 30 – 34 | 1629000 | 64200 | 0.039 | 0.868 | 0.034
+tr | 35 – 39 | 1627000 | 34900 | 0.021 | 0.852 | 0.018
+tr | 40 – 44 | 1522000 | 10800 | 0.007 | 0.834 | 0.006
+tr | 45 – 49 | 1401000 | 800 | 0.001 | 0.813 | 0.001
+tr | Total | – | – | 0.205 | 0.205 | 0.181
+endtable
+sol Now G.R.R and N.R.R are computed as follows. ## Now G.R.R and N.R.R are computed as follows. || اب G.R.R اور N.R.R درج ذیل طور پر حساب کی جاتی ہیں۔ || اوس G.R.R او N.R.R داسې محاسبه کېږي.
+eq G.R.R=h\left[\sum\dfrac{b_{if}}{p_{if}}\right]=5[0.205]=1.025\ \text{female children per women}
+eq N.R.R=h\left[\sum\left\{\left(\dfrac{b_{if}}{p_{if}}\right)\times\text{Probability of survival}\right\}\right]
+eq =5[0.181]=0.905
+sol Since N.R.R is less than one, it means population will decrease in future. ## Since N.R.R is less than one, it means population will decrease in future. || چونکہ N.R.R ایک سے کم ہے اس کا مطلب ہے کہ آبادی مستقبل میں کم ہوگی۔ || ځکه چې N.R.R له یو څخه کم دی پدې معنا چې نفوس به په راتلونکي کې کم شي.
+## Example: 7.8 || مثال: 7.8 || بېلګه: 7.8
+q  | Calculate (i) age-specific fertility rate (ii) total fertility rate (iii) G.R.R (iv) N.R.R from the following data. || درج ذیل اعداد و شمار سے (i) عمر کے لحاظ سے مخصوص شرحِ زرخیزی (ii) کل شرحِ زرخیزی (iii) G.R.R (iv) N.R.R حساب کریں۔ || له لاندې معلوماتو څخه (i) د عمر له مخې ځانګړې د زېږون‌توان کچه (ii) ټوله د زېږون‌توان کچه (iii) G.R.R (iv) N.R.R محاسبه کړئ.
+table مثال 7.8: عورتوں کی آبادی، پیدائشیں اور بقا || Example 7.8: female population, births and survival || بېلګه 7.8: د ښځو نفوس، زېږونونه او بقا
+th | Age group (years) | Female population | Male births | Female births | Probability of survival
+tr | 15 - 19 | 5687 | 65 | 60 | 0.91
+tr | 20 - 24 | 5324 | 144 | 132 | 0.90
+tr | 25 - 29 | 4720 | 135 | 127 | 0.84
+tr | 30 - 34 | 3933 | 82 | 81 | 0.87
+tr | 35 - 39 | 3670 | 62 | 56 | 0.85
+tr | 40 - 44 | 3025 | 12 | 15 | 0.83
+tr | 45 - 49 | 2601 | 3 | 3 | 0.82
+endtable

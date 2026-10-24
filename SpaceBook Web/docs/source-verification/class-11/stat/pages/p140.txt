@@ -1,0 +1,19 @@
+@printed 136
+@status lesson
+p It can be easily seen from the figure that lepto-kutic distribution has minimum dispersion which indicates that many values are clustered around the mean. || شکل سے آسانی سے دیکھا جا سکتا ہے کہ لیپٹو کرٹک تقسیم میں کم سے کم انتشار ہوتا ہے جو ظاہر کرتا ہے کہ بہت سی قدریں اوسط کے گرد جمع ہیں۔ || له انځور څخه په اسانۍ لیدل کېدای شي چې لېپټو‌کرټیک ویش لږ تر لږه خپراوی لري چې ښيي ډېر ارزښتونه د اوسط شاوخوا راټول دي.
+## 3.8.1 Measures of kurtosis || 3.8.1 نوکیلے پن کے پیمانے || 3.8.1 د تېزوالي اندازې
+p Kurtosis can be measured by either of the following two measures. || نوکیلے پن کو درج ذیل دو پیمانوں میں سے کسی ایک سے ناپا جا سکتا ہے۔ || تېزوالی د لاندې دوو اندازو له هر یوې څخه اندازه کېدای شي.
+p (i) Moment ratio || (i) معیارِ اثر کا تناسب || (i) د مومنټ نسبت
+eq b_2=\dfrac{m_4}{m_2^2}
+p If b2 = 3, the distribution is meso-kurtic. b2 < 3, the distribution is platy-kurtic. b2 > 3, the distribution is lepto-kurtic. || اگر b2 = 3 ہو تو تقسیم میسو کرٹک ہے۔ b2 < 3 ہو تو تقسیم پلیٹی کرٹک ہے۔ b2 > 3 ہو تو تقسیم لیپٹو کرٹک ہے۔ || که b2 = 3 وي نو ویش میسو‌کرټیک دی. b2 < 3 وي نو ویش پلېټي‌کرټیک دی. b2 > 3 وي نو ویش لېپټو‌کرټیک دی.
+p (ii) Percentile co-efficient of kurtosis || (ii) نوکیلے پن کا پرسنٹائل عددی سر || (ii) د تېزوالي پرسنټایل ضریب
+eq K=\dfrac{\text{Q.D}}{P_{90}-P_{10}},\qquad 0<K<0.5
+p If K = 0.263, the distribution is meso-kurtic. K < 0.263, the distribution is platy-kurtic. K > 0.263, mean the distribution is lepto-kurtic. || اگر K = 0.263 ہو تو تقسیم میسو کرٹک ہے۔ K < 0.263 ہو تو تقسیم پلیٹی کرٹک ہے۔ K > 0.263 ہو تو مطلب تقسیم لیپٹو کرٹک ہے۔ || که K = 0.263 وي نو ویش میسو‌کرټیک دی. K < 0.263 وي نو ویش پلېټي‌کرټیک دی. K > 0.263 وي نو پدې معنا ویش لېپټو‌کرټیک دی.
+## Example: 3.29 || مثال: 3.29 || بېلګه: 3.29
+q  | The first four moments about x = 17.5 of a certain distribution are 0.3, 74, 45 and 121.25. Find out whether the distribution is lepto-kurtic, platy-kurtic or meso-kurtic. || کسی تقسیم کے x = 17.5 کے گرد پہلے چار معیارِ اثر 0.3, 74, 45 اور 121.25 ہیں۔ معلوم کریں کہ تقسیم لیپٹو کرٹک، پلیٹی کرٹک یا میسو کرٹک ہے۔ || د یو ویش د x = 17.5 شاوخوا لومړي څلور مومنټونه 0.3, 74, 45 او 121.25 دي. ومومئ چې ویش لېپټو‌کرټیک، پلېټي‌کرټیک که میسو‌کرټیک دی.
+## Solution: || حل: || حل:
+sol Given that m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25 ## Given that m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25 || دیا گیا ہے کہ m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25 || ورکړل شوي دي چې m′1 = 0.3, m′2 = 74, m′3 = 45, m′4 = 121.25
+sol The second and fourth moments about mean are: ## The second and fourth moments about mean are: || اوسط کے گرد دوسرا اور چوتھا معیارِ اثر یہ ہیں: || د اوسط شاوخوا دویم او څلورم مومنټونه دا دي:
+eq m_2=m_2'-(m_1')^2=74-(0.3)^2=74-0.09=73.91
+eq m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4
+eq =121.25-4(0.3)(45)+6(0.3)^2(74)-3(0.3)^4

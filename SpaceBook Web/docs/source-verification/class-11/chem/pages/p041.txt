@@ -1,0 +1,29 @@
+@printed 37
+@status lesson
+p Where the terms in brackets are constant quantities, and are equal to, || یہاں قوسین کے اندر کی مقداریں مستقل ہیں اور برابر ہیں، || دلته په قوسونو کې مقدارونه ثابت دي او برابر دي،
+eq \left[\frac{\varepsilon_0h^2}{\pi e^2m}\right]=\alpha_0
+eq \alpha_0=0.529\mathring{\mathrm A}
+eq r=n^2\times\alpha_0
+eq r_n=n^2\times0.529\mathring{\mathrm A}\qquad(2.10)
+p For hydrogen the radius of 1ˢᵗ and 2ⁿᵈ Bohr’s orbits will be, || ہائیڈروجن کے لیے بوہر کے پہلے اور دوسرے مدار کے رداس ہوں گے، || د هایدروجن لپاره د بوهر د لومړي او دویم مدار شعاعوې به داسې وي،
+p When, n = 1 || جب، n = 1 || کله چې، n = 1
+eq r_1=(1)^2\times0.529\mathring{\mathrm A}=1\times0.529\mathring{\mathrm A}=0.529\mathring{\mathrm A}
+p When, n = 2 || جب، n = 2 || کله چې، n = 2
+eq r_1=(2)^2\times0.529\mathring{\mathrm A}=4\times0.529\mathring{\mathrm A}=2.116\mathring{\mathrm A}
+## Example 2.1 || مثال 2.1 || بېلګه 2.1
+q  | Calculate the radius of 3ʳᵈ and 4ᵗʰ orbits of hydrogen atoms. || ہائیڈروجن ایٹموں کے تیسرے اور چوتھے مدار کے رداس معلوم کریں۔ || د هایدروجن اټومونو د درېیم او څلورم مدار شعاعوې محاسبه کړئ.
+## Solution: || حل: || حل:
+sol You have to calculate r₃ (for n=3) and r₄ (n=4), using equation (2.9). ## You have to calculate r₃ (for n=3) and r₄ (n=4), using equation (2.9). || آپ کو مساوات (2.9) استعمال کرتے ہوئے r₃ (n=3 کے لیے) اور r₄ (n=4) معلوم کرنے ہیں۔ || د معادلې (2.9) په کارولو باید r₃ (د n=3 لپاره) او r₄ (n=4) محاسبه کړئ.
+sol n = 3 ## n = 3 || n = 3 || n = 3
+eq r_3=n^2(0.529\mathring{\mathrm A})
+eq r_3=(3)^2\times0.529\mathring{\mathrm A}=9\times0.529\mathring{\mathrm A}=4.761\mathring{\mathrm A}
+sol n = 4 ## n = 4 || n = 4 || n = 4
+eq r_4=(4)^2\times0.529\mathring{\mathrm A}=16\times0.529\mathring{\mathrm A}=8.464\mathring{\mathrm A}
+## Practice Problem 2.1 || مشق کا مسئلہ 2.1 || تمریني مسئله 2.1
+q  | Calculate the radius of 5ᵗʰ and 6ᵗʰ orbits of hydrogen atom. || ہائیڈروجن ایٹم کے پانچویں اور چھٹے مدار کے رداس معلوم کریں۔ || د هایدروجن اټوم د پنځم او شپږم مدار شعاعوې محاسبه کړئ.
+## 2. Derivation of Energy of the Electron in an Orbit || 2. مدار میں الیکٹران کی توانائی کا اخذ || 2. په مدار کې د الکترون د انرژۍ استنتاج
+p Electron in an atom possesses kinetic energy (K.E.) due to its motion and potential energy (P.E.) due to the attractive force between protons and electrons. The total energy of electron (E) in particular orbit is the sum of its K.E. and P.E. || ایٹم میں الیکٹران اپنی حرکت کی وجہ سے حرکی توانائی (K.E.) اور پروٹانوں اور الیکٹرانوں کے درمیان قوت کشش کی وجہ سے مخزونی توانائی (P.E.) رکھتا ہے۔ کسی مخصوص مدار میں الیکٹران کی کل توانائی (E) اس کی K.E. اور P.E. کا مجموعہ ہوتی ہے۔ || په اټوم کې الکترون د خپل حرکت له امله حرکي انرژي (K.E.) او د پروټونونو او الکترونونو ترمنځ د جاذبې قوې له امله پوتنسیالي انرژي (P.E.) لري. په ځانګړي مدار کې د الکترون ټوله انرژي (E) د هغه د K.E. او P.E. مجموعه ده.
+eq E=\mathrm{K.E.}+\mathrm{P.E.}\qquad(2.11)
+p Where || جہاں || چېرې چې
+eq \mathrm{K.E.}=\frac12mv^2\qquad(a)
+p And P.E. is equal to the work done in bringing the electron from infinity (where there is no interaction with the nucleus) to a point at a distance ‘r’ from the nucleus (where interaction exists). In doing so work must be done, this is given by, || اور P.E. الیکٹران کو لامحدود فاصلے سے (جہاں مرکزے کے ساتھ کوئی تعامل نہیں ہوتا) مرکزے سے فاصلے «r» پر ایک نقطے تک (جہاں تعامل موجود ہے) لانے میں کیے گئے کام کے برابر ہے۔ ایسا کرنے کے لیے کام کرنا ضروری ہے، جو یوں دیا جاتا ہے، || او P.E. له لامحدود واټن څخه (چېرې چې له هستې سره تعامل نه وي) د هستې څخه د «r» واټن یوه ټکي ته (چېرې چې تعامل شته) د الکترون د راوستلو له ترسره شوي کار سره برابره ده. د دې لپاره باید کار ترسره شي چې داسې ورکول کېږي،

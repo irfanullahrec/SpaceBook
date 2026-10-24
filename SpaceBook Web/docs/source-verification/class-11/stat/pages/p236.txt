@@ -1,0 +1,21 @@
+@printed 233
+@status lesson
+## Solution: || حل: || حل:
+table مثال 7.8 کا حل: جدول || Example 7.8 solution table || د بېلګې 7.8 د حل جدول
+th | Age group (years) | Female population (p_if) | Male births | Female births (b_if) | Total births | (i) ASFR per thousand | Probability of survival | (b_if/p_if) × Probability of survival
+tr | 15 – 19 | 5687 | 65 | 60 | 125 | 125/5687 × 1000 = 21.98 | 0.91 | 60/5687 × 0.91 = 0.009
+tr | 20 – 24 | 5324 | 144 | 132 | 276 | 51.84 | 0.90 | 0.02
+tr | 25 – 29 | 4720 | 135 | 127 | 262 | 55.51 | 0.84 | 0.02
+tr | 30 – 34 | 3933 | 82 | 81 | 163 | 44.44 | 0.87 | 0.02
+tr | 35 – 39 | 3670 | 62 | 56 | 118 | 32.15 | 0.85 | 0.01
+tr | 40 – 44 | 3025 | 12 | 15 | 27 | 8.92 | 0.83 | 0.004
+tr | 45 – 49 | 2601 | 3 | 3 | 6 | 2.31 | 0.82 | 0.0009
+tr | Total | 28960 | 503 | 474 | 977 | 214.15 | – | 0.0839
+endtable
+sol (ii) T.F.R = Σ(A.S.F.R) × h = 5 [214.15] = 1070.75 ## (ii) T.F.R = Σ(A.S.F.R) × h = 5 [214.15] = 1070.75 || (ii) T.F.R = Σ(A.S.F.R) × h = 5 [214.15] = 1070.75 || (ii) T.F.R = Σ(A.S.F.R) × h = 5 [214.15] = 1070.75
+sol (iii) Since both male and female births are given, so we compute G.R.R by the formula ## (iii) Since both male and female births are given, so we compute G.R.R by the formula || (iii) چونکہ لڑکوں اور لڑکیوں دونوں کی پیدائشیں دی گئی ہیں اس لیے ہم G.R.R کو فارمولے سے حساب کرتے ہیں || (iii) ځکه چې د نارینه او ښځینه دواړو زېږونونه ورکړل شوي دي نو موږ G.R.R د فورمول په واسطه محاسبه کوو
+eq G.R.R=\dfrac{\text{No. of female live births}}{\text{Total number of live births}}\times T.F.R
+eq =\dfrac{474}{977}\times 1070.75=518.48\ \text{female children per thousand women}
+sol or 518.48/1000 = 0.52 female children per women. ## or 518.48/1000 = 0.52 female children per women. || یا 518.48/1000 = 0.52 لڑکیاں فی عورت۔ || یا 518.48/1000 = 0.52 ښځینه ماشومان په یوه ښځه.
+sol (iv) N.R.R = h[Σ{(b_if/p_if) × Probability of survival}] = 5(0.0839) = 0.42 ## (iv) N.R.R = h[Σ{(b_if/p_if) × Probability of survival}] = 5(0.0839) = 0.42 || (iv) N.R.R = h[Σ{(b_if/p_if) × بقا کا امکان}] = 5(0.0839) = 0.42 || (iv) N.R.R = h[Σ{(b_if/p_if) × د بقا احتمال}] = 5(0.0839) = 0.42
+sol As N.R.R is less than one, it shows a reduction in the number of mothers a hence will cause decrease in the population. ## As N.R.R is less than one, it shows a reduction in the number of mothers a hence will cause decrease in the population. || چونکہ N.R.R ایک سے کم ہے یہ ماؤں کی تعداد میں کمی ظاہر کرتی ہے اور اس لیے آبادی میں کمی کا باعث بنے گی۔ || ځکه چې N.R.R له یو څخه کم دی دا د مورنو په شمېر کې کموالی ښيي او نو په نفوس کې کموالی راولي.

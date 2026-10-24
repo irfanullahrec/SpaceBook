@@ -1,0 +1,20 @@
+@printed 152
+@status lesson
+p It is expressed in units of rad s⁻¹, degrees s⁻¹ and rev s⁻¹. || اسے rad s⁻¹، degrees s⁻¹ اور rev s⁻¹ کی اکائیوں میں ظاہر کیا جاتا ہے۔ || دا په rad s⁻¹، degrees s⁻¹ او rev s⁻¹ واحدونو څرګندېږي.
+p The instantaneous angular velocity vector is the limit of the ratio Δθ/Δt as Δt approaches zero. Thus, || لحظاتی زاویائی رفتار کا ویکٹر Δθ/Δt کے تناسب کی حد ہے جب Δt صفر کے قریب پہنچتا ہے۔ لہٰذا: || د زاویوي لحظه‌ییز سرعت ویکتور د Δθ/Δt نسبت حد دی، کله چې Δt صفر ته نږدې کېږي. نو:
+p ω⃗inst = lim(Δt→0)(Δθ/Δt). || ω⃗inst = lim(Δt→0)(Δθ/Δt)۔ || ω⃗inst = lim(Δt→0)(Δθ/Δt).
+eq \vec{\omega}_{\text{inst}}=\lim_{\Delta t\to0}\left(\frac{\Delta\theta}{\Delta t}\right)
+p NOTE. If a body moves with uniform angular motion, its average angular velocity will be equal to its instantaneous angular velocity. || نوٹ۔ اگر کوئی جسم یکساں زاویائی حرکت کرے تو اس کی اوسط زاویائی رفتار اس کی لحظاتی زاویائی رفتار کے برابر ہو گی۔ || یادونه. که یو جسم په یوشان زاویوي حرکت وکړي، منځنی زاویوي سرعت به یې له لحظه‌ییز زاویوي سرعت سره برابر وي.
+p An electric motor turns at 400 rpm. What is the angular velocity? What is the angular displacement after 4 s? || ایک برقی موٹر 400 rpm سے گھومتی ہے۔ زاویائی رفتار کیا ہے؟ 4 s بعد زاویائی نقل مکانی کتنی ہو گی؟ || یو برېښنايي موټور په 400 rpm تاوېږي. زاویوي سرعت یې څومره دی؟ له 4 s وروسته زاویوي بې‌ځایه کېدل څومره دي؟
+p GIVEN. Frequency of rotation = 400 rpm; time t = 4 s. || دی گئی مقداریں۔ گردش کی فریکوئنسی = 400 rpm؛ وقت t = 4 s۔ || ورکړل شوي. د تاوېدو فریکونسي = 400 rpm؛ وخت t = 4 s.
+p REQUIRED. Angular velocity ω = ?; angular displacement θ = ? || مطلوب۔ زاویائی رفتار ω = ؟؛ زاویائی نقل مکانی θ = ؟ || غوښتل شوي. زاویوي سرعت ω = ؟؛ زاویوي بې‌ځایه کېدل θ = ؟
+p SOLUTION. || حل۔ || حل.
+p ω = 400 rev/min × (2π rad / 1 rev × 1 min / 60 s) = 41.9 rad/s. || ω = 400 rev/min × (2π rad / 1 rev × 1 min / 60 s) = 41.9 rad/s۔ || ω = 400 rev/min × (2π rad / 1 rev × 1 min / 60 s) = 41.9 rad/s.
+eq \omega=400\,\frac{\text{rev}}{\text{min}}\left(\frac{2\pi\,\text{rad}}{1\,\text{rev}}\times\frac{1\,\text{min}}{60\,\text{s}}\right)=41.9\,\text{rad/s}
+p θ = ωt = 41.9 rad/s × 4 s = 167.6 rad. || θ = ωt = 41.9 rad/s × 4 s = 167.6 rad۔ || θ = ωt = 41.9 rad/s × 4 s = 167.6 rad.
+eq \theta=\omega t=41.9\,\text{rad/s}\times4\,\text{s}=167.6\,\text{rad}
+p Answer: 41.9 rad/s, 167.6 rad. || جواب: 41.9 rad/s، 167.6 rad۔ || ځواب: 41.9 rad/s، 167.6 rad.
+p A rotating pulley completes 12 rev in 4 s. Determine the average angular velocity in rev/s, rpm, and rad/s. (3.00 rev/s, 180 rpm, and 18.8 rad/s) || ایک گھومنے والی چرخی 4 s میں 12 rev مکمل کرتی ہے۔ اوسط زاویائی رفتار rev/s، rpm اور rad/s میں معلوم کریں۔ (3.00 rev/s، 180 rpm اور 18.8 rad/s) || یوه تاوېدونکې قرقره په 4 s کې 12 rev بشپړوي. منځنی زاویوي سرعت په rev/s، rpm او rad/s کې ومومئ. (3.00 rev/s، 180 rpm او 18.8 rad/s)
+p The time rate of change of angular velocity of a body is called angular acceleration. If Δω is the change in angular velocity which takes place in time interval Δt, then angular acceleration is: || کسی جسم کی زاویائی رفتار میں تبدیلی کی وقتی شرح کو زاویائی تعجیل کہتے ہیں۔ اگر Δω زاویائی رفتار میں وہ تبدیلی ہو جو وقت کے وقفے Δt میں واقع ہو تو زاویائی تعجیل ہے: || د جسم د زاویوي سرعت د بدلون د وخت کچه زاویوي تعجیل بلل کېږي. که Δω د زاویوي سرعت هغه بدلون وي چې په Δt وخت کې رامنځته کېږي، نو زاویوي تعجیل دا دی:
+p α⃗ = Δω⃗ / Δt (5.3), or α⃗ = (ω⃗f − ω⃗i) / Δt. || α⃗ = Δω⃗ / Δt (5.3)، یا α⃗ = (ω⃗f − ω⃗i) / Δt۔ || α⃗ = Δω⃗ / Δt (5.3)، یا α⃗ = (ω⃗f − ω⃗i) / Δt.
+eq \vec{\alpha}=\frac{\Delta\vec{\omega}}{\Delta t}\qquad\text{or}\qquad\vec{\alpha}=\frac{\vec{\omega}_f-\vec{\omega}_i}{\Delta t}\quad\text{5.3}

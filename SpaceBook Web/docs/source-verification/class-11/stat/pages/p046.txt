@@ -1,0 +1,24 @@
+@printed 42
+@status lesson
+@sec 1-ex | Exercise || مشق || تمرین
+svg Bimodal distribution curve with two equally high peaks || دو برابر اونچی چوٹیوں والی دو منوالی تقسیم کی منحنی || د دوو مساوي لوړو څوکو لرونکې دوه‌مودي ویش منحني
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" role="img" aria-label="Bimodal curve with two equally high peaks" style="width:100%;max-width:420px;height:auto;background:#fff"><line x1="40" y1="15" x2="40" y2="175" stroke="#222" stroke-width="1.5"/><line x1="40" y1="175" x2="375" y2="175" stroke="#222" stroke-width="1.5"/><text x="46" y="12" font-size="12" text-anchor="start" font-family="Arial,sans-serif" font-weight="400" fill="#111">y-axis</text><text x="412" y="180" font-size="12" text-anchor="end" font-family="Arial,sans-serif" font-weight="400" fill="#111">x-axis</text><text x="30" y="182" font-size="12" text-anchor="end" font-family="Arial,sans-serif" font-weight="400" fill="#111">0</text><path d="M50,172 C80,165 90,60 140,55 C185,52 175,150 210,140 C240,135 235,50 285,55 C320,60 330,165 370,172" fill="none" stroke="#1c6aa8" stroke-width="2.2"/></svg>
+endsvg
+exercise 1.7 Summation and product notations
+p Learner will feel comfort in the analysis of data if he/she has a clear concept about symbols and notations, specifically, summation and product notations which are very much helpful for lengthy calculations in statistics. || اگر سیکھنے والے کو علامات اور اشاروں کے بارے میں، خاص طور پر مجموعہ اور حاصلِ ضرب کی علامات کے بارے میں، واضح تصور ہو جو شماریات میں طویل حسابات کے لیے بہت مددگار ہیں، تو وہ اعداد و شمار کے تجزیے میں سہولت محسوس کرے گا/گی۔ || زده‌کوونکی به د معلوماتو په تحلیل کې اسانتیا احساس کړي که چېرې د سمبولونو او نښو په اړه، په ځانګړي ډول د مجموعې او ضرب نښو په اړه، چې په احصایه کې د اوږدو محاسبو لپاره ډېرې ګټورې دي، روښانه مفهوم ولري.
+## Summation notation: || مجموعہ کی علامت: || د مجموعې نښه:
+p Σ (upper case sigma): is notation for summation. It is a Greek letter means to add the given values. || Σ (بڑا سگما): مجموعے کی علامت ہے۔ یہ ایک یونانی حرف ہے جس کا مطلب دی گئی قدروں کو جمع کرنا ہے۔ || Σ (لوی سیګما): د مجموعې نښه ده. دا یو یوناني توری دی چې معنا یې ورکړل شوي ارزښتونه جمع کول دي.
+p x: is notation for variable. || x: متغیر کی علامت ہے۔ || x: د متغیر نښه ده.
+p xi: is subscript notion for the values of the variable x, where i = 1, 2, 3,…, n. i.e. x1 denotes first value of the variable, x2 means second value, x3 third value and so on. || xi: متغیر x کی قدروں کے لیے زیرنوشت علامت ہے، جہاں i = 1, 2, 3,…, n۔ یعنی x1 متغیر کی پہلی قدر کو ظاہر کرتا ہے، x2 کا مطلب دوسری قدر، x3 تیسری قدر اور اسی طرح۔ || xi: د متغیر x د ارزښتونو لپاره لاندې‌لیک نښه ده، چېرته چې i = 1, 2, 3,…, n. یعنې x1 د متغیر لومړی ارزښت ښيي، x2 دویم ارزښت، x3 دریم ارزښت او همداسې نور.
+eq \sum_{i=1}^{n}x_i\;:\ \text{means sum of the values of the variable }x,\ \text{i.e. }x_1+x_2+\cdots+x_n
+## Example: 1.20 || مثال: 1.20 || بېلګه: 1.20
+q  | If xi = 3, 1, 7, 4. compute Σ(x – 1) and Σ(x – 1)². || اگر xi = 3, 1, 7, 4 ہوں تو Σ(x – 1) اور Σ(x – 1)² حساب کریں۔ || که xi = 3, 1, 7, 4 وي نو Σ(x – 1) او Σ(x – 1)² محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 1.20 || Example 1.20 || بېلګه 1.20
+th | x | (x − 1) | (x − 1)²
+tr | 3 | 2 | 4
+tr | 1 | 0 | 0
+tr | 7 | 6 | 36
+tr | 4 | 3 | 9
+tr | Σx = 15 | Σ(x − 1) = 11 | Σ(x − 1)² = 49
+endtable

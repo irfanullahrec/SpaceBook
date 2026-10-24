@@ -1,0 +1,12 @@
+@printed 46
+@status lesson
+endexercise
+@sec 1-text | Collection and Presentation of Data || اعداد و شمار کا اکٹھا کرنا اور پیشکش || د معلوماتو راټولول او وړاندې کول
+## 1.7.4 Rules for product notation || 1.7.4 حاصلِ ضرب کی علامت کے قواعد || 1.7.4 د ضرب د نښې قواعد
+eq \text{i.}\ \prod_{i=1}^{n}c=c\times c\times\cdots\times c=c^n
+eq \text{ii.}\ \prod_{i=1}^{n}c\,x_i=c^n\prod_{i=1}^{n}x_i
+eq \text{iii.}\ \log\left(\prod_{i=1}^{n}x_i\right)=\log\left[(x_1)(x_2)\cdots(x_n)\right]=\log(x_1)+\log(x_2)+\cdots+\log(x_n)=\sum_{i=1}^{n}\log(x_i)
+eq \text{iv.}\ \prod_{i=1}^{n}\frac{x_i}{y_i}=\frac{\prod_{i=1}^{n}x_i}{\prod_{i=1}^{n}y_i}
+eq \text{v.}\ \prod_{i=1}^{n}x_iy_i=\prod_{i=1}^{n}x_i\prod_{i=1}^{n}y_i
+eq \text{vi.}\ \prod_{i=1}^{n}(x_i+y_i)=(x_1+y_1)(x_2+y_2)\cdots(x_n+y_n)
+eq \text{vii.}\ \prod_{i=1}^{n}(x_i-y_i)=(x_1-y_1)(x_2-y_2)\cdots(x_n-y_n)

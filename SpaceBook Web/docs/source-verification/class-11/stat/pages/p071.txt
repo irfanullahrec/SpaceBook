@@ -1,0 +1,33 @@
+@printed 67
+@status lesson
+## 2.3.3 Computation of median in case of continuous series or grouped data || 2.3.3 مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں وسطانیہ کا حساب || 2.3.3 د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې د میانې محاسبه
+p Step-i: Arrange the classes along with frequencies if needed. || مرحلہ-i: ضرورت ہو تو جماعتوں کو تعددات کے ساتھ ترتیب دیں۔ || ګام-i: که اړتیا وي ټولګي له فریکونسیو سره ترتیب کړئ.
+p Step-ii: Compute class boundaries and cumulative frequencies. || مرحلہ-ii: جماعتی سرحدیں اور جمعی تعددات حساب کریں۔ || ګام-ii: د ټولګي پولې او مجموعي فریکونسۍ محاسبه کړئ.
+p Step-iii: Use formula of discrete case to locate the median class. || مرحلہ-iii: وسطانیہ جماعت معلوم کرنے کے لیے منفصل صورت کا فارمولا استعمال کریں۔ || ګام-iii: د میانې ټولګی موندلو لپاره د منفصل حالت فورمول وکاروئ.
+p Step-iv: Calculate the median by formula, || مرحلہ-iv: فارمولے سے وسطانیہ حساب کریں، || ګام-iv: میانه د فورمول په واسطه محاسبه کړئ،
+eq \text{Median}=l_1+\dfrac{h}{f}\left(\dfrac{\sum f}{2}-c\right).
+p Where || جہاں || چېرته چې
+p l₁: lower limit of the class boundaries in which median lies. || l₁: جماعتی سرحدوں کی زیریں حد جس میں وسطانیہ واقع ہے۔ || l₁: د ټولګي د پولو ښکتنی حد چې په هغه کې میانه پرته ده.
+p h: class interval of the median class. || h: وسطانیہ جماعت کا جماعتی وقفہ۔ || h: د میانې ټولګي د ټولګي وقفه.
+p f: median class frequency || f: وسطانیہ جماعت کا تعدد || f: د میانې ټولګي فریکونسي
+p c: cumulative frequency of the preceding class. || c: ماقبل جماعت کا جمعی تعدد۔ || c: د مخکیني ټولګي مجموعي فریکونسي.
+## Example: 2.15 || مثال: 2.15 || بېلګه: 2.15
+q  | Find out median of the following series: || درج ذیل سلسلے کا وسطانیہ معلوم کریں: || د لاندې لړۍ میانه ومومئ:
+table مثال 2.15: اجرتیں || Example 2.15: wages || بېلګه 2.15: مزدورۍ
+th | Wages: | 20 – 29 | 30 – 39 | 40 – 49 | 50 – 59 | 60 – 69
+tr | No. of labour: | 3 | 15 | 20 | 10 | 5
+endtable
+## Solution: || حل: || حل:
+table مثال 2.15: جماعتی سرحدیں اور c.f || Example 2.15: class boundaries and c.f || بېلګه 2.15: د ټولګي پولې او c.f
+th | Wages | f | Class boundaries | c.f
+tr | 20 – 29 | 3 | 19.5 – 29.5 | 3
+tr | 30 – 39 | 15 | 29.5 – 39.5 | 18
+tr | 40 – 49 | 20 | 39.5 – 49.5 | 38
+tr | 50 – 59 | 10 | 49.5 – 59.5 | 48
+tr | 60 – 69 | 5 | 59.5 – 69.5 | 53
+tr | Total | 53 | – | –
+endtable
+sol Since n = Σf = 53 is odd, therefore, ## Since n = Σf = 53 is odd, therefore, || چونکہ n = Σf = 53 طاق ہے، لہٰذا، || ځکه چې n = Σf = 53 طاق دی، نو،
+eq \text{Median}=\left(\dfrac{\sum f+1}{2}\right)\text{th value}=\left(\dfrac{53+1}{2}\right)\text{th value}=27\text{th value.}
+sol This implies that median lies in the group (39.5 - 49.5). ## This implies that median lies in the group (39.5 - 49.5). || اس کا مطلب ہے کہ وسطانیہ گروہ (39.5 - 49.5) میں واقع ہے۔ || پدې معنا چې میانه په ډله (39.5 - 49.5) کې پرته ده.
+eq \text{Hence Median}=l_1+\dfrac{h}{f}\left(\dfrac{\sum f}{2}-c\right).

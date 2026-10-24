@@ -1,0 +1,22 @@
+@printed 102
+@status lesson
+endexercise
+@sec 3-text | Measures of Dispersion, Skewness and Kurtosis || انتشار، کجی اور نوکیلاپن کے پیمانے || د خپراوي، کوړوالي او تېزوالي اندازې
+eq \therefore\ \text{M.D}=\dfrac{436.5}{40}=10.91\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of M.D}=\dfrac{\text{M.D}}{\text{Median}}=\dfrac{10.91}{146.75}=0.07\qquad\text{(Relative dispersion)}
+## 3.4.2 Advantages and disadvantages of mean deviation || 3.4.2 اوسط انحراف کے فوائد اور نقصانات || 3.4.2 د اوسط انحراف ګټې او زیانونه
+p Advantages: || فوائد: || ګټې:
+p (i) It utilizes all the observations of the data set. || (i) یہ اعداد و شمار کے مجموعے کے تمام مشاہدات استعمال کرتا ہے۔ || (i) دا د معلوماتو د ټولګې ټولې کتنې کاروي.
+p (ii) It is simple to understand and easy to calculate. || (ii) یہ سمجھنے میں آسان اور حساب کرنے میں سادہ ہے۔ || (ii) دا د پوهېدو لپاره ساده او د محاسبې لپاره اسانه دی.
+p (iii) In case of mean deviation from median, it is least affected by extreme values. || (iii) وسطانیہ سے اوسط انحراف کی صورت میں یہ انتہائی قدروں سے سب سے کم متاثر ہوتا ہے۔ || (iii) له میانې څخه د اوسط انحراف په حالت کې دا د سختو ارزښتونو لخوا تر ټولو لږ اغېزمن کېږي.
+p Disadvantages: || نقصانات: || زیانونه:
+p (i) It is not used very often because all the deviations are taken as positive. || (i) یہ اکثر استعمال نہیں ہوتا کیونکہ تمام انحرافات کو مثبت لیا جاتا ہے۔ || (i) دا ډېر نه کارول کېږي ځکه چې ټول انحرافات مثبت اخیستل کېږي.
+p (ii) It is not suited for further algebraic treatment. || (ii) یہ مزید الجبری عمل کے لیے موزوں نہیں۔ || (ii) دا د نورې الجبري پروسې لپاره مناسب نه دی.
+## 3.5 Standard deviation and Variance || 3.5 معیاری انحراف اور تغیر || 3.5 معیاري انحراف او وریانس
+## 3.5.1 Standard deviation || 3.5.1 معیاری انحراف || 3.5.1 معیاري انحراف
+p The standard deviation is the most commonly used measure of dispersion. It fulfills all the requisites of a good measure of dispersion except that it is sensitive to extreme values. It is abbreviated as S.D. A small value of the S.D for a data set indicates less spread while a larger value of the S.D indicates more spread around the mean. It is denoted by σ (lower case sigma of the Greek alphabets) in population case and s in sample case. The positive square root of the average of the squared deviations of observations taken from mean is called standard deviation. Mathematically; || معیاری انحراف انتشار کا سب سے زیادہ استعمال ہونے والا پیمانہ ہے۔ یہ انتشار کے اچھے پیمانے کے تمام تقاضے پورے کرتا ہے سوائے اس کے کہ یہ انتہائی قدروں کے لیے حساس ہے۔ اسے S.D کے طور پر مختصر کیا جاتا ہے۔ اعداد و شمار کے مجموعے کے لیے S.D کی چھوٹی قدر کم پھیلاؤ ظاہر کرتی ہے جبکہ S.D کی بڑی قدر اوسط کے گرد زیادہ پھیلاؤ ظاہر کرتی ہے۔ اسے آبادی کی صورت میں σ (یونانی حروفِ تہجی کا چھوٹا سگما) اور نمونے کی صورت میں s سے ظاہر کیا جاتا ہے۔ اوسط سے لیے گئے مشاہدات کے مربع انحرافات کے اوسط کا مثبت جذر معیاری انحراف کہلاتا ہے۔ ریاضیاتی طور پر؛ || معیاري انحراف د خپراوي تر ټولو ډېر کارېدونکې اندازه ده. دا د خپراوي د ښې اندازې ټولې اړتیاوې پوره کوي پرته له دې چې دا د سختو ارزښتونو لپاره حساسه ده. دا د S.D په توګه لنډېږي. د معلوماتو د ټولګې لپاره د S.D کوچنی ارزښت لږ خپراوی ښيي پداسې حال کې چې د S.D لوی ارزښت د اوسط شاوخوا ډېر خپراوی ښيي. دا د ټولنې په حالت کې په σ (د یوناني ابجد کوچنی سیګما) او د نمونې په حالت کې په s ښودل کېږي. له اوسط څخه اخیستل شویو کتنو د مربع انحرافاتو د اوسط مثبت جذر معیاري انحراف بلل کېږي. ریاضیاتي ډول؛
+p Population standard deviation: (Parameter) || آبادی کا معیاری انحراف: (پیرامیٹر) || د ټولنې معیاري انحراف: (پارامېټر)
+eq \sigma=\sqrt{\dfrac{\sum(x-\mu)^2}{N}}\qquad\text{(Parameter)}
+p Sample standard deviation: (Statistic) || نمونے کا معیاری انحراف: (شماریہ) || د نمونې معیاري انحراف: (احصایه)
+eq s=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n}}\qquad\text{(Statistic)}
+p Note that the sample S.D underestimates the population S.D when the denominator in the sample formula for S.D is n. However, the sample S.D does not underestimate the population S.D if the denominator in the sample formula is || نوٹ کریں کہ جب S.D کے نمونے کے فارمولے میں نسب نما n ہو تو نمونے کا S.D آبادی کے S.D کو کم تخمینہ کرتا ہے۔ تاہم، اگر نمونے کے فارمولے میں نسب نما || پام وکړئ چې کله د S.D د نمونې په فورمول کې مخرج n وي نو د نمونې S.D د ټولنې S.D کم اټکل کوي. خو که د نمونې په فورمول کې مخرج

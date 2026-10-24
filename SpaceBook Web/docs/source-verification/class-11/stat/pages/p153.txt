@@ -1,0 +1,28 @@
+@printed 149
+@status lesson
+@sec 4-ex | Exercise || مشق || تمرین
+exercise Exercise
+p current year price i.e. the year which we are considering, p0 is the price of base year “0”. Similarly, || موجودہ سال کی قیمت یعنی وہ سال جسے ہم زیر غور لا رہے ہیں، p0 بنیادی سال “0” کی قیمت ہے۔ اسی طرح، || د اوسني کال بیه یعنې هغه کال چې موږ یې په پام کې نیسو، p0 د بنسټیز کال “0” بیه ده. همدارنګه،
+eq \text{Quantity relative}=\dfrac{\text{Current period quantity}}{\text{Base period quantity}}\times 100
+eq Q_{0n}=\dfrac{q_n}{q_0}\times 100
+## Example: 4.1 || مثال: 4.1 || بېلګه: 4.1
+q  | Find the price relatives for the following data of salt prices (per kg) by using the price of 2005 as a base. || نمک کی قیمتوں (فی کلو) کے درج ذیل اعداد و شمار کے لیے 2005 کی قیمت کو بنیاد لے کر قیمتی اضافتیں معلوم کریں۔ || د مالګې د بیو (په کیلو) د لاندې معلوماتو لپاره د 2005 بیه د بنسټ په توګه اخیستلو سره د بیې نسبتونه ومومئ.
+table مثال 4.1: سال اور قیمتیں || Example 4.1: years and prices || بېلګه 4.1: کلونه او بیې
+th | Years: | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 | 2013
+tr | Price: | 15 | 14 | 20 | 21 | 24 | 23 | 25 | 18 | 27
+endtable
+## Solution: || حل: || حل:
+sol Since 2005 is given as base period therefore p0 = 15 ## Since 2005 is given as base period therefore p0 = 15 || چونکہ 2005 کو بنیادی مدت دیا گیا ہے اس لیے p0 = 15 || ځکه چې 2005 د بنسټیزې دورې په توګه ورکړل شوی نو p0 = 15
+table مثال 4.1 کا حل: قیمتی اضافتیں || Example 4.1 solution: price relatives || د بېلګې 4.1 حل: د بیې نسبتونه
+th | Year | Price | P0n = (pn/p0) × 100
+tr | 2005 | 15 | 15/15 × 100 = 100
+tr | 2006 | 14 | 14/15 × 100 = 93.33
+tr | 2007 | 20 | 20/15 × 100 = 133.33
+tr | 2008 | 21 | 21/15 × 100 = 140
+tr | 2009 | 24 | 24/15 × 100 = 160
+tr | 2010 | 23 | 23/15 × 100 = 153.33
+tr | 2011 | 25 | 25/15 × 100 = 166.67
+tr | 2012 | 18 | 18/15 × 100 = 120
+tr | 2013 | 27 | 27/15 × 100 = 180
+endtable
+p Interpretation of Pon: || Pon کی تشریح: || د Pon تفسیر:

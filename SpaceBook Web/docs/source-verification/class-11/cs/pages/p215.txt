@@ -1,0 +1,22 @@
+@printed 207
+@status lesson
+@unit 7 | Unit 7: Database Fundamentals || یونٹ ۷: ڈیٹا بیس کی بنیادیں || ۷ واحد: د ډېټابېس بنسټونه
+endexercise
+@sec 7-text | Unit 7: Database Fundamentals || یونٹ ۷: ڈیٹا بیس کی بنیادیں || ۷ واحد: د ډېټابېس بنسټونه
+## UNIT 7 DATABASE FUNDAMENTALS || یونٹ ۷ ڈیٹا بیس کے بنیادی اصول || ۷ واحد د ډېټابېس بنسټیز اصول
+p After the completion of Unit - 7, the Students will be able to: || یونٹ ۷ مکمل کرنے کے بعد طلبہ اس قابل ہو جائیں گے کہ: || د ۷ واحد له بشپړېدو وروسته به زده کوونکي دې ته وړ شي چې:
+p explain the difference between data and information. || ڈیٹا اور معلومات کے درمیان فرق بیان کر سکیں۔ || د ډېټا او معلوماتو ترمنځ توپیر تشریح کړي.
+p explain the file management system. || فائل مینجمنٹ سسٹم کی وضاحت کر سکیں۔ || د فایل مدیریت سیسټم تشریح کړي.
+p define Database. || ڈیٹا بیس کی تعریف کر سکیں۔ || ډېټابېس تعریف کړي.
+p explain Database Management System (DBMS). || ڈیٹا بیس مینجمنٹ سسٹم (ڈی بی ایم ایس) کی وضاحت کر سکیں۔ || د ډېټابېس مدیریت سیسټم (DBMS) تشریح کړي.
+p identify advantages of DBMS over the File Management System. || فائل مینجمنٹ سسٹم کے مقابلے میں ڈی بی ایم ایس کے فوائد کی نشاندہی کر سکیں۔ || د فایل مدیریت سیسټم په پرتله د DBMS ګټې وپېژني.
+p identify the role of Database Administrator (DBA). || ڈیٹا بیس ایڈمنسٹریٹر (ڈی بی اے) کے کردار کی نشاندہی کر سکیں۔ || د ډېټابېس اداره کوونکي (DBA) رول وپېژني.
+p describe the types of Database Models. || ڈیٹا بیس ماڈلز کی اقسام بیان کر سکیں۔ || د ډېټابېس ماډلونو ډولونه بیان کړي.
+p explain the types of database languages for relational databases. || ریلیشنل ڈیٹا بیسز کے لیے ڈیٹا بیس زبانوں کی اقسام بیان کر سکیں۔ || د اړوندو ډېټابېسونو لپاره د ډېټابېس ژبو ډولونه تشریح کړي.
+p define the basic database terminologies (Field/Attribute/Column, Record/Tuple/Row, Table/Relation, View, Data Type, Key). || ڈیٹا بیس کی بنیادی اصطلاحات (فیلڈ/ایٹریبیوٹ/کالم، ریکارڈ/ٹپل/رو، ٹیبل/ریلیشن، ویو، ڈیٹا ٹائپ، کی) کی تعریف کر سکیں۔ || د ډېټابېس بنسټیز اصطلاحات (ساحه/خاصیت/ستون، ثبت/ټپل/قطار، جدول/اړیکه، لید، د ډېټا ډول، کیلي) تعریف کړي.
+p explain the steps for designing a database. || ڈیٹا بیس ڈیزائن کرنے کے مراحل بیان کر سکیں۔ || د ډېټابېس د ډیزاین کولو ګامونه تشریح کړي.
+p explain with examples (Entity, attributes, relationships, keys). || مثالوں کے ساتھ وضاحت کر سکیں (انٹیٹی، ایٹریبیوٹس، تعلقات، کیز)۔ || په بېلګو سره تشریح کړي (وجود، خاصیتونه، اړیکې، کیلي).
+p explain the cardinalities and modalities with the help of pictorial examples. || تصویری مثالوں کی مدد سے کارڈینالٹیز اور موڈیلٹیز کی وضاحت کر سکیں۔ || د انځوریزو بېلګو په مرسته کارډینالټي او موډالټي تشریح کړي.
+p draw Entity-Relationship (E-R) diagram for library management system, student management system, ticket booking system. || لائبریری مینجمنٹ سسٹم، اسٹوڈنٹ مینجمنٹ سسٹم اور ٹکٹ بکنگ سسٹم کے لیے انٹیٹی-ریلیشن شپ (ای-آر) ڈایاگرام بنا سکیں۔ || د کتابتون مدیریت سیسټم، د زده کوونکو مدیریت سیسټم او د ټکټ بکینګ سیسټم لپاره د وجود-اړیکې (E-R) انځور جوړ کړي.
+p transform the E-R diagram to the Relational schema (Transforming entities, transforming attributes, transforming relationships). || ای-آر ڈایاگرام کو ریلیشنل اسکیمے میں تبدیل کر سکیں (انٹیٹیز، ایٹریبیوٹس اور تعلقات کی تبدیلی)۔ || د E-R انځور اړوندې طرحې ته بدل کړي (د وجودونو، خاصیتونو او اړیکو بدلول).
+p normalize relations up to third normal form including integrity rules. || سالمیت کے قواعد سمیت تیسرے نارمل فارم تک ریلیشنز کو نارملائز کر سکیں۔ || د بشپړتیا قواعدو په ګډون تر دریم نورمال بڼې پورې اړیکې نورمال کړي.

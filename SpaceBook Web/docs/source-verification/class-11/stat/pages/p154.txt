@@ -1,0 +1,27 @@
+@printed 150
+@status lesson
+p Compare each price relative with the base year relative i.e. a small value indicates decrease in prices while large value increase in price. If it is equal to 100, it means there is no change in the price of current year as compared to the base year. || ہر قیمتی اضافت کا بنیادی سال کی اضافت سے موازنہ کریں یعنی چھوٹی قدر قیمتوں میں کمی ظاہر کرتی ہے جبکہ بڑی قدر قیمت میں اضافہ۔ اگر یہ 100 کے برابر ہو تو اس کا مطلب ہے کہ موجودہ سال کی قیمت میں بنیادی سال کے مقابلے میں کوئی تبدیلی نہیں۔ || هر د بیې نسبت د بنسټیز کال له نسبت سره پرتله کړئ یعنې کوچنی ارزښت د بیو کموالی ښيي پداسې حال کې چې لوی ارزښت د بیې زیاتوالی. که دا له 100 سره مساوي وي نو پدې معنا چې د اوسني کال په بیه کې د بنسټیز کال په پرتله هېڅ بدلون نشته.
+## Example: 4.2 || مثال: 4.2 || بېلګه: 4.2
+q  | Compute the price relatives by taking average of the last three year prices as base from the following data. || درج ذیل اعداد و شمار سے آخری تین سال کی قیمتوں کا اوسط بنیاد لے کر قیمتی اضافتیں حساب کریں۔ || له لاندې معلوماتو څخه د وروستیو دریو کلونو د بیو اوسط د بنسټ په توګه اخیستلو سره د بیې نسبتونه محاسبه کړئ.
+table مثال 4.2: سال اور بلب کی قیمت || Example 4.2: years and price of bulb || بېلګه 4.2: کلونه او د بلب بیه
+th | Years: | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 | 2013
+tr | Price of bulb: | 12.5 | 15 | 17 | 20 | 25 | 22.5 | 27.5 | 37.5 | 35
+endtable
+## Solution: || حل: || حل:
+sol Here p0 = average price of the last three years ## Here p0 = average price of the last three years || یہاں p0 = آخری تین سال کی قیمتوں کا اوسط || دلته p0 = د وروستیو دریو کلونو د بیو اوسط
+eq p_0=\text{average price of the last three years}=\dfrac{27.5+37.5+35}{3}=33.3
+sol The required price relatives or index numbers are: ## The required price relatives or index numbers are: || مطلوبہ قیمتی اضافتیں یا اشاریہ اعداد یہ ہیں: || اړین د بیې نسبتونه یا شاخص شمېرې دا دي:
+table مثال 4.2 کا حل: قیمتی اضافتیں || Example 4.2 solution: price relatives || د بېلګې 4.2 حل: د بیې نسبتونه
+th | Year | Price | P0n = (pn/p0) × 100
+tr | 2005 | 12.5 | 12.5/33.3 × 100 = 37.50
+tr | 2006 | 15 | 15/33.3 × 100 = 45.05
+tr | 2007 | 17 | = 51.05
+tr | 2008 | 20 | = 60.06
+tr | 2009 | 25 | = 75.08
+tr | 2010 | 22.5 | = 67.56
+tr | 2011 | 27.5 | = 82.58
+tr | 2012 | 37.5 | = 112.61
+tr | 2013 | 35 | = 105.10
+endtable
+p (ii) Chain base method || (ii) زنجیری بنیاد کا طریقہ || (ii) زنځیري بنسټ طریقه
+p A method, in which the base period is not fixed but changes with the current period i.e. every preceding period is taken as the base period, is called chain base method. Index numbers computed by this method are called link relatives. || وہ طریقہ جس میں بنیادی مدت مقررہ نہیں ہوتی بلکہ موجودہ مدت کے ساتھ تبدیل ہوتی ہے یعنی ہر پچھلی مدت کو بنیادی مدت لیا جاتا ہے زنجیری بنیاد کا طریقہ کہلاتا ہے۔ اس طریقے سے حساب کیے گئے اشاریہ اعداد کڑی اضافتیں کہلاتے ہیں۔ || هغه طریقه چې په کې بنسټیزه دوره ټاکلې نه وي بلکې د اوسنۍ دورې سره بدلېږي یعنې هره تېره دوره د بنسټیزې دورې په توګه اخیستل کېږي زنځیري بنسټ طریقه بلل کېږي. پدې طریقه محاسبه شوې شاخص شمېرې پیوندي نسبتونه بلل کېږي.

@@ -1,0 +1,21 @@
+@printed 165
+@status lesson
+table مثال 4.11 کا حل: جدول || Example 4.11 solution table || د بېلګې 4.11 د حل جدول
+th | Commodities | Unit | q0 | p0 | pn | pn q0 | p0 q0 | (pn/p0) | (pn/p0) p0 q0
+tr | Wheat | Maund | 0.5 maund | 12 | 15 | 7.5 | 6 | 1.25 | 7.50
+tr | Rice | Maund | 0.2 maund | 40 | 45 | 9 | 8 | 1.125 | 9.00
+tr | Sugar | Maund | 0.05 maund | 40 | 50 | 2.5 | 2 | 1.25 | 2.50
+tr | Ghee | Maund | 0.025 maund | 110 | 120 | 3 | 2.75 | 1.091 | 3.00
+tr | Milk | Seer | 25 seer | 0.50 | 0.75 | 18.75 | 12.50 | 1.50 | 18.75
+tr | Vegetables | Seer | 16 seer | 0.25 | 0.50 | 8 | 4 | 2.00 | 8.00
+tr | Mutton | Seer | 5 seer | 3 | 4 | 20 | 15 | 1.33 | 20
+tr | Fuel | Maund | 4 maund | 2.5 | 3 | 12 | 10 | 1.20 | 12.00
+tr | Total | – | – | – | – | 80.75 | 60.25 | – | 80.75
+endtable
+sol (i) CPI for 1958 by aggregative expenditure method is: ## (i) CPI for 1958 by aggregative expenditure method is: || (i) 1958 کا CPI مجموعی اخراجات کے طریقے سے ہے: || (i) د 1958 CPI د مجموعي لګښت په طریقه دی:
+eq P_{0n}=\dfrac{\sum p_nq_0}{\sum p_0q_0}\times 100=\dfrac{80.75}{60.25}\times 100=134\ \text{(approximately)}
+sol (ii) CPI for 1958 by household budget method is: ## (ii) CPI for 1958 by household budget method is: || (ii) 1958 کا CPI گھریلو بجٹ کے طریقے سے ہے: || (ii) د 1958 CPI د کورنۍ د بودیجې په طریقه دی:
+eq P_{0n}=\dfrac{\sum\left(\dfrac{p_n}{p_0}\right)p_0q_0}{\sum p_0q_0}\times 100=\dfrac{80.75}{60.25}\times 100=134\ \text{(approximately)}
+sol Both methods show an increase of 34% in composite prices of 1958 as compared to 1948. ## Both methods show an increase of 34% in composite prices of 1958 as compared to 1948. || دونوں طریقے 1948 کے مقابلے میں 1958 کی مرکب قیمتوں میں 34 فیصد اضافہ ظاہر کرتے ہیں۔ || دواړه طریقې د 1948 په پرتله د 1958 په مرکبو بیو کې 34 سلنه زیاتوالی ښيي.
+## 4.3 Interpretation of the computed index numbers || 4.3 حساب شدہ اشاریہ اعداد کی تشریح || 4.3 د محاسبه شویو شاخص شمېرو تفسیر
+p As the results of the index numbers are expressed in percentage therefore the computed results may always be compared with 100. If the answer is equal to 100, it means there is no change in the prices/quantities of current period as compared to the base period. If the result of an index number is less than 100, it shows a decrease in prices/quantities of current year relative to the base year and if the answer is greater than 100, it indicates an increase in the prices/quantities of the current year as compared to the base year. || چونکہ اشاریہ اعداد کے نتائج فیصد میں ظاہر کیے جاتے ہیں اس لیے حساب شدہ نتائج کا ہمیشہ 100 سے موازنہ کیا جا سکتا ہے۔ اگر جواب 100 کے برابر ہو تو اس کا مطلب ہے کہ بنیادی مدت کے مقابلے میں موجودہ مدت کی قیمتوں/مقداروں میں کوئی تبدیلی نہیں۔ اگر اشاریہ عدد کا نتیجہ 100 سے کم ہو تو یہ بنیادی سال کے لحاظ سے موجودہ سال کی قیمتوں/مقداروں میں کمی ظاہر کرتا ہے اور اگر جواب 100 سے زیادہ ہو تو یہ بنیادی سال کے مقابلے میں موجودہ سال کی قیمتوں/مقداروں میں اضافہ ظاہر کرتا ہے۔ || ځکه چې د شاخص شمېرو پایلې په سلنه کې ښودل کېږي نو محاسبه شوې پایلې تل له 100 سره پرتله کېدای شي. که ځواب له 100 سره مساوي وي نو پدې معنا چې د بنسټیزې دورې په پرتله د اوسنۍ دورې په بیو/مقدارونو کې هېڅ بدلون نشته. که د شاخص شمېرې پایله له 100 څخه کمه وي نو دا د بنسټیز کال په نسبت د اوسني کال د بیو/مقدارونو کموالی ښيي او که ځواب له 100 څخه ډېر وي نو دا د بنسټیز کال په پرتله د اوسني کال د بیو/مقدارونو زیاتوالی ښيي.

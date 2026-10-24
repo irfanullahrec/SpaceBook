@@ -1,0 +1,35 @@
+@printed 66
+@status lesson
+## Solution: || حل: || حل:
+sol x = 8, 10, 11, 12, 14, 15. Here n = 6 is even, therefore ## x = 8, 10, 11, 12, 14, 15. Here n = 6 is even, therefore || x = 8, 10, 11, 12, 14, 15۔ یہاں n = 6 جفت ہے، لہٰذا || x = 8, 10, 11, 12, 14, 15. دلته n = 6 جفت دی، نو
+eq \text{Median}=\dfrac{1}{2}\left[\left(\dfrac{6}{2}\right)\text{th value}+\left(\dfrac{6}{2}+1\right)\text{in value}\right]
+eq \text{Median}=\dfrac{1}{2}\left[3\text{rd value}+4\text{th value}\right]
+eq =\dfrac{1}{2}[11+12]=\dfrac{23}{2}=11.5
+## 2.3.2 Computation of median in case of discrete series or grouped data || 2.3.2 منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں وسطانیہ کا حساب || 2.3.2 د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د میانې محاسبه
+p Step-i: Arrange the data in ascending order along with frequencies. || مرحلہ-i: اعداد و شمار کو تعددات کے ساتھ صعودی ترتیب میں ترتیب دیں۔ || ګام-i: معلومات له فریکونسیو سره په پورته‌والي ترتیب ترتیب کړئ.
+p Step-ii: Compute the cumulative frequencies. || مرحلہ-ii: جمعی تعددات حساب کریں۔ || ګام-ii: مجموعي فریکونسۍ محاسبه کړئ.
+p Step-iii: || مرحلہ-iii: || ګام-iii:
+eq \text{Median}=\left(\dfrac{\sum f}{2}\right)\text{th value if }n=\sum f\text{ is even and}
+eq \text{Median}=\left(\dfrac{\sum f+1}{2}\right)\text{th value if }n=\sum f\text{ is odd.}
+## Example: 2.14 || مثال: 2.14 || بېلګه: 2.14
+q  | During the month of March, a teacher recorded the number of absentees for each student in a class of n = 20 and obtained the following distribution: || مارچ کے مہینے کے دوران ایک استاد نے n = 20 طلبہ کی جماعت میں ہر طالب علم کی غیر حاضریوں کی تعداد ریکارڈ کی اور درج ذیل تقسیم حاصل کی: || د مارچ په میاشت کې یو ښوونکي په n = 20 زده کوونکو ټولګي کې د هر زده کوونکي د غیرحاضرو شمېر ثبت کړ او لاندې ویش یې ترلاسه کړ:
+table مثال 2.14: غیر حاضریوں کی تعداد || Example 2.14: number of absentees || بېلګه 2.14: د غیرحاضرو شمېر
+th | No. of absentees: | 2 | 0 | 3 | 5 | 1 | 4
+tr | Frequency: | 5 | 2 | 7 | 1 | 3 | 2
+endtable
+q  | Using the median, what is the average number of absentees for the class? || وسطانیہ استعمال کرتے ہوئے جماعت کی غیر حاضریوں کی اوسط تعداد کیا ہے؟ || د میانې په کارولو سره د ټولګي د غیرحاضرو اوسط شمېر څه دی؟
+## Solution: || حل: || حل:
+sol Arrange the data along with frequencies as follows; ## Arrange the data along with frequencies as follows; || اعداد و شمار کو تعددات کے ساتھ اس طرح ترتیب دیں؛ || معلومات له فریکونسیو سره داسې ترتیب کړئ؛
+table مثال 2.14: جمعی تعدد کے ساتھ ترتیب || Example 2.14: arranged with cumulative frequency || بېلګه 2.14: له مجموعي فریکونسي سره ترتیب
+th | x | f | c.f
+tr | 0 | 2 | 2
+tr | 1 | 3 | 5
+tr | 2 | 5 | 10
+tr | 3 | 7 | 17
+tr | 4 | 2 | 19
+tr | 5 | 1 | 20
+tr | Total | 20 | −
+endtable
+eq \text{Here }n=\sum f=20\text{ is even}
+eq \therefore\ \text{Median}=\dfrac{\sum f}{2}\text{th value}=\dfrac{20}{2}\text{th value}=10\text{th value}
+sol Look this value in c.f column from the start, which shows that Median = 2 ## Look this value in c.f column from the start, which shows that Median = 2 || اس قدر کو c.f کالم میں شروع سے دیکھیں، جو ظاہر کرتا ہے کہ وسطانیہ = 2 || دا ارزښت د c.f په ستون کې له پیله وګورئ، چې ښيي میانه = 2

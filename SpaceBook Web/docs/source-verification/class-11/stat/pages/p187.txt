@@ -1,0 +1,27 @@
+@printed 183
+@status lesson
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{70}{7}=10\qquad\qquad\bar{y}=\dfrac{\sum y}{n}=\dfrac{63}{7}=9
+sol The coefficient of correlation is ## The coefficient of correlation is || ارتباط کا عددی سر ہے || د همتړاو ضریب دی
+eq r_{xy}=\dfrac{\sum(x-\bar{x})(y-\bar{y})}{\sqrt{\sum(x-\bar{x})^2\sum(y-\bar{y})^2}}
+eq =\dfrac{46}{\sqrt{28\times 84}}
+eq =\dfrac{46}{48.4974}
+eq =0.95
+sol It means x and y have positive correlation. ## It means x and y have positive correlation. || اس کا مطلب ہے کہ x اور y میں مثبت ارتباط ہے۔ || دا پدې معنا چې x او y مثبت همتړاو لري.
+## Examples: 5.4 || مثالیں: 5.4 || بېلګې: 5.4
+q  | Compute the product moment coefficient of correlation between x and y by shortcut method from the data given below; || نیچے دیے گئے اعداد و شمار سے x اور y کے درمیان حاصلِ ضرب معیارِ اثر ارتباطی عددی سر مختصر طریقے سے حساب کریں؛ || له لاندې ورکړل شویو معلوماتو څخه د x او y تر منځ د ضرب-مومنټ همتړاو ضریب په لنډه طریقه محاسبه کړئ؛
+table مثال 5.4: x اور y || Example 5.4: x and y || بېلګه 5.4: x او y
+th | x: | 1 | 2 | 3 | 4 | 5
+tr | y: | 2 | 5 | 3 | 8 | 7
+endtable
+## Solution: || حل: || حل:
+sol The necessary calculations are: ## The necessary calculations are: || ضروری حسابات یہ ہیں: || اړین محاسبې دا دي:
+table مثال 5.4 کا حل: جدول || Example 5.4 solution table || د بېلګې 5.4 د حل جدول
+th | x | y | xy | x² | y²
+tr | 1 | 2 | 2 | 1 | 4
+tr | 2 | 5 | 10 | 4 | 25
+tr | 3 | 3 | 9 | 9 | 9
+tr | 4 | 8 | 32 | 16 | 64
+tr | 5 | 7 | 35 | 25 | 49
+tr | 15 | 25 | 88 | 55 | 151
+endtable
+eq r_{xy}=\dfrac{n\sum xy-\sum x\sum y}{\sqrt{\left[n\sum x^2-\left(\sum x\right)^2\right]\left[n\sum y^2-\left(\sum y\right)^2\right]}}

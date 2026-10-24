@@ -1,0 +1,29 @@
+@printed 101
+@status lesson
+p (iii) Mean deviation in case of continuous series or grouped data || (iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں اوسط انحراف || (iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې اوسط انحراف
+## Example: 3.9 || مثال: 3.9 || بېلګه: 3.9
+q  | Evaluate the mean deviation from mean and median; also compute coefficients of mean deviation. || اوسط اور وسطانیہ سے اوسط انحراف کی قدر معلوم کریں؛ اوسط انحراف کے عددی سر بھی حساب کریں۔ || له اوسط او میانې څخه اوسط انحراف ارزونه وکړئ؛ د اوسط انحراف ضریبونه هم محاسبه کړئ.
+table مثال 3.9: طبقات اور تعدد || Example 3.9: classes and frequency || بېلګه 3.9: ټولګي او فریکونسي
+th | Classes: | 118 – 126 | 127 – 135 | 136 – 144 | 145 – 153 | 154 – 162 | 163 – 171 | 172 – 180
+tr | Frequency: | 3 | 5 | 9 | 12 | 5 | 4 | 2
+endtable
+## Solution: || حل: || حل:
+table مثال 3.9 کا حل: جدول || Example 3.9 solution table || د بېلګې 3.9 د حل جدول
+th | Classes | f | Class boundaries | x | fx | c.f | f{{BAR}}x − x̄{{BAR}} | f{{BAR}}x − Median{{BAR}}
+tr | 118 – 126 | 3 | 117.5 – 126.5 | 122 | 366 | 3 | 74.925 | 74.25
+tr | 127 – 135 | 5 | 126.5 – 135.5 | 131 | 655 | 8 | 79.875 | 78.75
+tr | 136 – 144 | 9 | 135.5 – 144.5 | 140 | 1260 | 17 | 62.775 | 60.75
+tr | 145 – 153 | 12 | 144.5 – 153.5 | 149 | 1788 | 29 | 24.300 | 27.00
+tr | 154 – 162 | 5 | 153.5 – 162.5 | 158 | 790 | 34 | 55.125 | 56.25
+tr | 163 – 171 | 4 | 162.5 – 171.5 | 167 | 668 | 38 | 80.100 | 81.00
+tr | 172 – 180 | 2 | 171.5 – 180.5 | 176 | 352 | 40 | 58.050 | 58.50
+tr | Total | 40 | – | – | 5879 | – | 435.350 | 436.5
+endtable
+sol (i) Mean deviation from mean: ## (i) Mean deviation from mean: || (i) اوسط سے اوسط انحراف: || (i) له اوسط څخه اوسط انحراف:
+eq \text{M.D}=\dfrac{\sum f|x-\bar{x}|}{\sum f}\ \text{ where, }\ \bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{5879}{40}=146.975
+eq \therefore\ \text{M.D}=\dfrac{435.35}{40}=10.88\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of M.D}=\dfrac{\text{M.D}}{\bar{x}}=\dfrac{10.88}{146.975}=0.07\qquad\text{(Relative dispersion)}
+sol (ii) Mean deviation from median: ## (ii) Mean deviation from median: || (ii) وسطانیہ سے اوسط انحراف: || (ii) له میانې څخه اوسط انحراف:
+eq \text{M.D}=\dfrac{\sum f|x-\text{Median}|}{\sum f}
+sol Here Σf = 40 is even ∴ Median = (Σf/2)th value = (40/2)th value = 20th value. This implies that Median lies in the group (144.5 – 153.5) ## Here Σf = 40 is even ∴ Median = (Σf/2)th value = (40/2)th value = 20th value. This implies that Median lies in the group (144.5 – 153.5) || یہاں Σf = 40 جفت ہے ∴ وسطانیہ = (Σf/2)ویں قدر = (40/2)ویں قدر = 20ویں قدر۔ اس کا مطلب ہے کہ وسطانیہ گروہ (144.5 – 153.5) میں واقع ہے || دلته Σf = 40 جفت دی ∴ میانه = (Σf/2) ارزښت = (40/2) ارزښت = 20م ارزښت. دا پدې معنا ده چې میانه په ګروپ (144.5 – 153.5) کې پرته ده
+eq \therefore\ \text{Median}=l_1+\dfrac{h}{f}\left(\dfrac{\sum f}{2}-c\right)=144.5+\dfrac{9}{12}\left(\dfrac{40}{2}-17\right)=146.75

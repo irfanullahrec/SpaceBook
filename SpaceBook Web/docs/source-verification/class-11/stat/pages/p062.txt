@@ -1,0 +1,34 @@
+@printed 58
+@status lesson
+## Example: 2.4 || مثال: 2.4 || بېلګه: 2.4
+q  | Find mean for the scores 12, 8, 6, 10 and 4 by change of origin and scale method. || اسکورز 12, 8, 6, 10 اور 4 کا اوسط مبدا اور پیمانے کی تبدیلی کے طریقے سے معلوم کریں۔ || د نمرو 12, 8, 6, 10 او 4 اوسط د اصل او پیمانې د بدلون په طریقه ومومئ.
+## Solution: || حل: || حل:
+sol Arranging the data in ascending order, ## Arranging the data in ascending order, || اعداد و شمار کو صعودی ترتیب میں ترتیب دینے پر، || معلومات په پورته‌والي ترتیب ترتیبولو سره،
+table مثال 2.4: u = (x − 8)/2 || Example 2.4: u = (x − 8)/2 || بېلګه 2.4: u = (x − 8)/2
+th | x | u = (x − 8)/2
+tr | 4 | (4 − 8)/2 = −2
+tr | 6 | = −1
+tr | 8 | = 0
+tr | 10 | = 1
+tr | 12 | = 2
+tr |  | Σu = 0
+endtable
+sol Here A = 8 and h = 2 ## Here A = 8 and h = 2 || یہاں A = 8 اور h = 2 || دلته A = 8 او h = 2
+eq \therefore\ \bar{x}=A+\dfrac{\sum u}{n}\times h=8+\dfrac{0}{5}\times2=8+0=8
+p All the three methods give the same answer but shortcut methods are used to reduce mathematical labour and save time. || تینوں طریقے ایک ہی جواب دیتے ہیں لیکن مختصر طریقے ریاضیاتی محنت کم کرنے اور وقت بچانے کے لیے استعمال ہوتے ہیں۔ || درې واړه طریقې یو شان ځواب ورکوي خو لنډې طریقې د ریاضیاتي زحمت د کمولو او وخت ژغورلو لپاره کارول کېږي.
+## 2.2.2 Computation of arithmetic mean in case of discrete series or grouped data || 2.2.2 منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں حسابی اوسط کا حساب || 2.2.2 د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې د حسابي اوسط محاسبه
+## Example: 2.5 || مثال: 2.5 || بېلګه: 2.5
+q  | Calculate the arithmetic mean for the following data: x: 12, 14, 16, 18, 20, 22; f: 1, 4, 6, 10, 7, 2 || درج ذیل اعداد و شمار کا حسابی اوسط حساب کریں: x: 12, 14, 16, 18, 20, 22؛ f: 1, 4, 6, 10, 7, 2 || د لاندې معلوماتو حسابي اوسط محاسبه کړئ: x: 12, 14, 16, 18, 20, 22؛ f: 1, 4, 6, 10, 7, 2
+## Solution: || حل: || حل:
+sol (i) By direct method ## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیمه طریقه
+eq \bar{x}=\dfrac{\sum fx}{\sum f}
+table مثال 2.5: x، f، fx || Example 2.5: x, f, fx || بېلګه 2.5: x، f، fx
+th | x | f | fx
+tr | 12 | 1 | 12
+tr | 14 | 4 | 56
+tr | 16 | 6 | 96
+tr | 18 | 10 | 180
+tr | 20 | 7 | 140
+tr | 22 | 2 | 44
+tr | Total | 30 | 528
+endtable

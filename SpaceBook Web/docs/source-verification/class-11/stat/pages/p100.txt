@@ -1,0 +1,33 @@
+@printed 96
+@status lesson
+eq Q_3=3\left(\dfrac{n+1}{4}\right)\text{th value}
+eq =3\left(\dfrac{11+1}{4}\right)\text{th value}=\dfrac{36}{4}\text{th}=9\text{th value}=32
+eq \therefore\ \text{Q.D}=\dfrac{Q_3-Q_1}{2}=\dfrac{32-20}{2}=\dfrac{12}{2}=6\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of Q.D}=\dfrac{Q_3-Q_1}{Q_3+Q_1}=\dfrac{32-20}{32+20}=\dfrac{12}{52}=0.23\qquad\text{(Relative dispersion)}
+p (ii) Quartile deviation in case of discrete series or grouped data || (ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں چوتھائی انحراف || (ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې څلورمه انحراف
+## Example: 3.5 || مثال: 3.5 || بېلګه: 3.5
+q  | Find quartile deviation and coefficient of quartile deviation from the given distribution. || دی گئی تقسیم سے چوتھائی انحراف اور چوتھائی انحراف کا عددی سر معلوم کریں۔ || له ورکړل شوي ویش څخه څلورمه انحراف او د څلورمې انحراف ضریب ومومئ.
+table مثال 3.5: x اور f || Example 3.5: x and f || بېلګه 3.5: x او f
+th | x: | 1 | 2 | 3 | 4 | 5 | 6 | 7
+tr | f: | 26 | 113 | 120 | 95 | 60 | 42 | 21
+endtable
+## Solution: || حل: || حل:
+table مثال 3.5 کا حل: x, f, c.f || Example 3.5 solution: x, f, c.f || د بېلګې 3.5 حل: x, f, c.f
+th | x | f | c.f
+tr | 1 | 26 | 26
+tr | 2 | 113 | 139
+tr | 3 | 120 | 259
+tr | 4 | 95 | 354
+tr | 5 | 60 | 414
+tr | 6 | 42 | 456
+tr | 7 | 21 | 477
+tr | Total | 477 | –
+endtable
+eq \text{Since }\textstyle\sum f=477\text{ is odd},\ \therefore\ Q_1=\left(\dfrac{\sum f+1}{4}\right)\text{th value}=\left(\dfrac{477+1}{4}\right)\text{th value}
+eq =\left(\dfrac{478}{4}\right)\text{th value}=119.5\text{th value}\ \Rightarrow\ Q_1=2
+eq Q_3=3\left(\dfrac{\sum f+1}{4}\right)\text{th value}=3\left(\dfrac{477+1}{4}\right)\text{th value}=358.5\text{th value}\ \Rightarrow\ Q_3=5
+eq \text{Q.D}=\dfrac{Q_3-Q_1}{2}=\dfrac{5-2}{2}=\dfrac{3}{2}=1.5\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of Q.D}=\dfrac{Q_3-Q_1}{Q_3+Q_1}=\dfrac{5-2}{5+2}=\dfrac{3}{7}=0.43\qquad\text{(Relative dispersion)}
+p (iii) Quartile deviation in case of continuous series or grouped data || (iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں چوتھائی انحراف || (iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې څلورمه انحراف
+## Example: 3.6 || مثال: 3.6 || بېلګه: 3.6
+q  | Calculate quartile deviation and coefficient of quartile deviation of the data given below: || نیچے دیے گئے اعداد و شمار کا چوتھائی انحراف اور چوتھائی انحراف کا عددی سر حساب کریں: || د لاندې ورکړل شویو معلوماتو څلورمه انحراف او د څلورمې انحراف ضریب محاسبه کړئ:

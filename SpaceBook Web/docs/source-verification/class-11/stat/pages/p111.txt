@@ -1,0 +1,35 @@
+@printed 107
+@status lesson
+table مثال 3.12: x, f, fx, fx² || Example 3.12: x, f, fx, fx² || بېلګه 3.12: x, f, fx, fx²
+th | x | f | fx | fx²
+tr | 1 | 5 | 5 | 5
+tr | 2 | 10 | 20 | 40
+tr | 3 | 15 | 45 | 135
+tr | 4 | 12 | 48 | 192
+tr | 5 | 8 | 40 | 200
+tr | Total | 50 | 158 | 572
+endtable
+sol Now ## Now || اب || اوس
+eq S=\sqrt{\dfrac{572}{50}-\left(\dfrac{158}{50}\right)^2}
+eq =\sqrt{11.44-9.9856}=1.21
+sol and ## and || اور || او
+eq S^2=\dfrac{572}{50}-\left(\dfrac{158}{50}\right)^2
+eq =11.44-9.9856=1.4544
+sol (iii) By change of origin and scale method or step-deviation method ## (iii) By change of origin and scale method or step-deviation method || (iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے || (iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه
+eq s=\sqrt{\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2}\times h
+eq s^2=\left[\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2\right]\times h^2
+table مثال 3.12: قدمی انحراف کا جدول || Example 3.12: step-deviation table || بېلګه 3.12: د ګام‌انحراف جدول
+th | x | f | u = (x − 3)/1 | u² | fu | fu²
+tr | 1 | 5 | -2 | 4 | -10 | 20
+tr | 2 | 10 | -1 | 1 | -10 | 10
+tr | 3 | 15 | 0 | 0 | 0 | 0
+tr | 4 | 12 | 1 | 1 | 12 | 12
+tr | 5 | 8 | 2 | 4 | 16 | 32
+tr | Total | 50 | 0 | – | 8 | 74
+endtable
+sol Here A = 3, h = 1, u = (x − A)/h = (x − 3)/1 ## Here A = 3, h = 1, u = (x − A)/h = (x − 3)/1 || یہاں A = 3, h = 1, u = (x − A)/h = (x − 3)/1 || دلته A = 3, h = 1, u = (x − A)/h = (x − 3)/1
+eq S=\sqrt{\dfrac{74}{50}-\left(\dfrac{8}{50}\right)^2}\times 1=\sqrt{1.48-0.0256}\times 1=1.21
+eq S^2=\left[\dfrac{74}{50}-\left(\dfrac{8}{50}\right)^2\right]\times 1=1.48-0.0256=1.4544
+## 3.5.5 Calculation of standard deviation and variance in case of continuous series of grouped data || 3.5.5 مسلسل سلسلے کے گروہی اعداد و شمار کی صورت میں معیاری انحراف اور تغیر کا حساب || 3.5.5 د دوامدارې لړۍ د ګروپي معلوماتو په حالت کې د معیاري انحراف او وریانس محاسبه
+## Example: 3.13 || مثال: 3.13 || بېلګه: 3.13
+q  | Find standard deviation and variance for the following frequency distribution. || درج ذیل تعدد تقسیم کے لیے معیاری انحراف اور تغیر معلوم کریں۔ || د لاندې فریکونسي ویش لپاره معیاري انحراف او وریانس ومومئ.

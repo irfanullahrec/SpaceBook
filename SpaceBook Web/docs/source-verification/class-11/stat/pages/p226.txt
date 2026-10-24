@@ -1,0 +1,36 @@
+@printed 222
+@status lesson
+@sec 7-ex | Exercise || مشق || تمرین
+exercise Exercise
+p (6) Maternal death rate || (6) زچگی کے دوران اموات کی شرح || (6) د مور د مړینې کچه
+p The death rate among the women of child bearing age due to child birth during a given year in a region is known as maternal death rate. || کسی علاقے میں ایک دیے گئے سال کے دوران بچے کی پیدائش کی وجہ سے بچے پیدا کرنے کی عمر کی عورتوں میں شرحِ اموات کو زچگی کے دوران اموات کی شرح کہا جاتا ہے۔ || په یوه سیمه کې په یو ورکړل شوي کال کې د ماشوم زېږولو له امله د ماشوم زېږولو عمر ښځو کې د مړینې کچه د مور د مړینې کچه بلل کېږي.
+## Example: 7.2 || مثال: 7.2 || بېلګه: 7.2
+q  | Calculate crude death rate from the data given below. || نیچے دیے گئے اعداد و شمار سے خام شرحِ اموات حساب کریں۔ || له لاندې ورکړل شویو معلوماتو څخه خام د مړینې کچه محاسبه کړئ.
+table مثال 7.2: عمر، آبادی اور اموات || Example 7.2: age, population and deaths || بېلګه 7.2: عمر، نفوس او مړینې
+th | Age (years) | Population | No. of deaths
+tr | Below 5 | 10000 | 150
+tr | 5 – 15 | 15000 | 40
+tr | 15 – 60 | 120000 | 75
+tr | Above 60 | 5000 | 510
+endtable
+## Solution: || حل: || حل:
+table مثال 7.2 کا حل: جدول || Example 7.2 solution table || د بېلګې 7.2 د حل جدول
+th | Age (years) | Population | No. of deaths
+tr | Below 5 | 10000 | 150
+tr | 5 – 15 | 15000 | 40
+tr | 15 – 60 | 120000 | 75
+tr | Above 60 | 5000 | 510
+tr | Total | 1,50,000 | 775
+endtable
+eq \text{C.D.R}=\dfrac{\text{Total number of registered deaths in the year}}{\text{Total midyear population during the given year}}\times 1000=\dfrac{775}{150000}\times 1000=5.17\ \text{per }1000
+## Example: 7.3 || مثال: 7.3 || بېلګه: 7.3
+q  | Compute crude death rates, age-specific death rates for district A and B using the data given below: || نیچے دیے گئے اعداد و شمار کے ذریعے ضلع A اور B کے لیے خام شرحیں اموات اور عمر کے لحاظ سے مخصوص شرحیں اموات حساب کریں: || د لاندې ورکړل شویو معلوماتو په کارولو سره د A او B ولسوالیو لپاره خام د مړینې کچې او د عمر له مخې ځانګړې د مړینې کچې محاسبه کړئ:
+table مثال 7.3: اضلاع A اور B || Example 7.3: districts A and B || بېلګه 7.3: ولسوالۍ A او B
+th | Age-group (years) | District-A: Deaths | District-A: Population | District-B: Deaths | District-B: Population
+tr | 0 - 14 | 2 | 500 | 1 | 400
+tr | 15 - 29 | 8 | 2000 | 1 | 300
+tr | 30 - 44 | 12 | 2000 | 5 | 1000
+tr | 45 - 59 | 10 | 1000 | 18 | 2000
+tr | 60 - 74 | 20 | 500 | 70 | 2000
+tr | 75 and above | 15 | 100 | 50 | 400
+endtable

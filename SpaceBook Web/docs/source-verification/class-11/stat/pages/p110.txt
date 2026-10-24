@@ -1,0 +1,27 @@
+@printed 106
+@status lesson
+q  | distribution: || تقسیم: || ویش:
+table مثال 3.12: x اور f || Example 3.12: x and f || بېلګه 3.12: x او f
+th | x: | 1 | 2 | 3 | 4 | 5
+tr | f: | 5 | 10 | 15 | 12 | 8
+endtable
+## Solution: || حل: || حل:
+sol (i) By direct method ## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیم طریقه
+eq S=\sqrt{\dfrac{\sum f(x-\bar{x})^2}{\sum f}}
+eq S^2=\dfrac{\sum f(x-\bar{x})^2}{\sum f}
+table مثال 3.12: براہِ راست طریقے کا جدول || Example 3.12: direct method table || بېلګه 3.12: د مستقیمې طریقې جدول
+th | x | f | fx | (x − x̄) | (x − x̄)² | f(x − x̄)²
+tr | 1 | 5 | 5 | -2.16 | 4.6656 | 23.328
+tr | 2 | 10 | 20 | -1.16 | 1.3456 | 13.456
+tr | 3 | 15 | 45 | -0.16 | 0.0256 | 0.384
+tr | 4 | 12 | 48 | 0.84 | 0.7056 | 8.467
+tr | 5 | 8 | 40 | 1.84 | 3.386 | 27.08
+tr | Total | 50 | 158 | – | – | 72.72
+endtable
+eq \bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{158}{50}=3.16
+eq S=\sqrt{\dfrac{72.72}{50}}=\sqrt{1.4544}=1.21\qquad\text{(Absolute dispersion)}
+eq S^2=\dfrac{72.72}{50}=1.4545
+eq \text{Coefficient of S.D}=\dfrac{S}{\bar{x}}=\dfrac{1.22}{3.16}=0.39\qquad\text{(Relative dispersion)}
+sol (ii) By shortcut method ## (ii) By shortcut method || (ii) مختصر طریقے سے || (ii) په لنډه طریقه
+eq S=\sqrt{\dfrac{\sum fx^2}{\sum f}-\left(\dfrac{\sum fx}{\sum f}\right)^2}
+eq S^2=\dfrac{\sum fx^2}{\sum f}-\left(\dfrac{\sum fx}{\sum f}\right)^2

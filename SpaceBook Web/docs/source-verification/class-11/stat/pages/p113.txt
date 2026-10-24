@@ -1,0 +1,20 @@
+@printed 109
+@status lesson
+eq \therefore\ S=\sqrt{\dfrac{19300}{75}-\left(\dfrac{1150}{75}\right)^2}=\sqrt{257.33-235.11}=\sqrt{22.22}=4.71
+eq S^2=\dfrac{19300}{75}-\left(\dfrac{1150}{75}\right)^2=257.33-235.11=22.22
+sol (iii) By change of origin and scale method or step deviation method ## (iii) By change of origin and scale method or step deviation method || (iii) مبدا اور پیمانے کی تبدیلی کے طریقے یا قدمی انحراف کے طریقے سے || (iii) د اصل او پیمانې د بدلون طریقې یا ګام‌انحراف طریقې په واسطه
+eq s=\sqrt{\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2}\times h
+eq s^2=\left[\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2\right]\times h^2
+table مثال 3.13: قدمی انحراف کا جدول || Example 3.13: step-deviation table || بېلګه 3.13: د ګام‌انحراف جدول
+th | Marks | f | x | u = (x − 17)/5 | fu | fu²
+tr | 5 – 9 | 10 | 7 | -2 | -20 | +40
+tr | 10 – 14 | 20 | 12 | -1 | -20 | +20
+tr | 15 – 19 | 30 | 17 | 0 | 0 | 0
+tr | 20 – 24 | 15 | 22 | 1 | 15 | 15
+tr | Total | 75 | – | – | -25 | 75
+endtable
+sol Here A = 17, h = 5 so u = (x − A)/h = (x − 17)/5 ## Here A = 17, h = 5 so u = (x − A)/h = (x − 17)/5 || یہاں A = 17, h = 5 لہٰذا u = (x − A)/h = (x − 17)/5 || دلته A = 17, h = 5 نو u = (x − A)/h = (x − 17)/5
+eq S=\sqrt{\dfrac{75}{75}-\left(\dfrac{-25}{75}\right)^2}\times 5=\sqrt{1-0.111}\times 5=(0.943)\times 5=4.71
+eq S^2=\dfrac{75}{75}-\left(\dfrac{-25}{75}\right)^2\times 5^2=(1-0.111)\times 25=(0.889)(25)=22.22
+## 3.5.6 Difference between standard deviation and variance || 3.5.6 معیاری انحراف اور تغیر میں فرق || 3.5.6 د معیاري انحراف او وریانس توپیر
+p Both tell us about the average variability of the given data about the mean but the unit of S.D is the same as the unit of measurement of the original data i.e. if observations have unit k.g, then unit of S.D will also be k.g, whereas, the unit of variance is square of the unit of measurement (i.e. if the observations are in meters, the unit of variance will be expressed in square meters, so many times, it becomes difficult to actually determine the magnitude of variation also variance is sensitive to extreme values. However, variance is the backbone of inferential statistics. || دونوں ہمیں دیے گئے اعداد و شمار کی اوسط کے گرد اوسط تغیر پذیری کے بارے میں بتاتے ہیں لیکن S.D کی اکائی اصل اعداد و شمار کی پیمائش کی اکائی کے برابر ہوتی ہے یعنی اگر مشاہدات کی اکائی کلوگرام ہو تو S.D کی اکائی بھی کلوگرام ہوگی، جبکہ تغیر کی اکائی پیمائش کی اکائی کا مربع ہوتی ہے (یعنی اگر مشاہدات میٹر میں ہوں تو تغیر کی اکائی مربع میٹر میں ظاہر ہوگی، اس لیے کئی بار تغیر کی مقدار کا اصل تعین مشکل ہو جاتا ہے، نیز تغیر انتہائی قدروں کے لیے حساس ہے۔ تاہم، تغیر استنباطی شماریات کی ریڑھ کی ہڈی ہے۔ || دواړه موږ ته د ورکړل شویو معلوماتو د اوسط شاوخوا اوسط متغیرتیا په اړه وايي خو د S.D واحد د اصلي معلوماتو د اندازې له واحد سره یو شان دی یعنې که کتنې د کیلوګرام واحد ولري نو د S.D واحد به هم کیلوګرام وي، پداسې حال کې چې د وریانس واحد د اندازې د واحد مربع دی (یعنې که کتنې په مترو کې وي د وریانس واحد به په مربع مترو کې ښودل کېږي، نو ډېر ځله د تغیر د اندازې ټاکل ستونزمن کېږي او وریانس د سختو ارزښتونو لپاره هم حساس دی. خو وریانس د استنباطي احصایې بنسټ دی.

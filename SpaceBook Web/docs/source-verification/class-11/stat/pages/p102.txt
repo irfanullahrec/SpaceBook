@@ -1,0 +1,28 @@
+@printed 98
+@status lesson
+## 3.4 Mean Deviation: || 3.4 اوسط انحراف: || 3.4 اوسط انحراف:
+p The arithmetic mean of the absolute deviations of observations taken from mean or median or mode is called mean deviation. Symbolically it is written as; || اوسط یا وسطانیہ یا عادہ سے لیے گئے مشاہدات کے مطلق انحرافات کا حسابی اوسط اوسط انحراف کہلاتا ہے۔ علامتی طور پر اسے یوں لکھا جاتا ہے؛ || د اوسط یا میانې یا مود څخه اخیستل شویو کتنو د مطلقو انحرافاتو حسابي اوسط اوسط انحراف بلل کېږي. په علامتي ډول دا داسې لیکل کېږي؛
+eq \text{M.D}=\dfrac{\sum|x-\text{Mean}|}{n}\ \text{ or }\ \dfrac{\sum|x-\text{Median}|}{n}\ \text{ or }\ \dfrac{\sum|x-\text{Mode}|}{n}\qquad\text{(For ungrouped data)}
+eq \text{M.D}=\dfrac{\sum f|x-\text{Mean}|}{\sum f}\ \text{ or }\ \dfrac{\sum f|x-\text{Median}|}{\sum f}\ \text{ or }\ \dfrac{\sum f|x-\text{Mode}|}{\sum f}\qquad\text{(For grouped data)}
+p These formulas are used for absolute dispersion. Its relative measure is coefficient of mean division defined as; || یہ فارمولے مطلق انتشار کے لیے استعمال ہوتے ہیں۔ اس کا اضافی پیمانہ اوسط انحراف کا عددی سر ہے جس کی تعریف یوں ہے؛ || دا فورمولونه د مطلق خپراوي لپاره کارول کېږي. د دې نسبي اندازه د اوسط انحراف ضریب دی چې په دې توګه تعریف شوی؛
+eq \text{Coefficient of M.D}=\dfrac{\text{M.D}}{\text{Mean}}\ \text{ or }\ \dfrac{\text{M.D}}{\text{Median}}
+p Note that M.D from mode is rarely used so we ignore it for computations. || نوٹ کریں کہ عادہ سے M.D شاذ و نادر استعمال ہوتا ہے اس لیے ہم حساب کے لیے اسے نظر انداز کرتے ہیں۔ || پام وکړئ چې د مود څخه M.D په ندرت کارول کېږي نو موږ یې د محاسبې لپاره پرېږدو.
+## 3.4.1 Calculation of mean deviation || 3.4.1 اوسط انحراف کا حساب || 3.4.1 د اوسط انحراف محاسبه
+p (i) Mean deviation in case of individual series or ungrouped data || (i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں اوسط انحراف || (i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې اوسط انحراف
+## Example: 3.7 || مثال: 3.7 || بېلګه: 3.7
+q  | Compute mean deviation from (i) arithmetic mean (ii) median and coefficient of mean division from the values 2, 6, 9, 12, 8, 13, 5, 6, 23 and 16. || حسابی اوسط (ii) وسطانیہ سے اوسط انحراف اور اوسط انحراف کا عددی سر قدروں 2, 6, 9, 12, 8, 13, 5, 6, 23 اور 16 سے حساب کریں۔ || له (i) حسابي اوسط (ii) میانې څخه اوسط انحراف او د اوسط انحراف ضریب د ارزښتونو 2, 6, 9, 12, 8, 13, 5, 6, 23 او 16 څخه محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 3.7: اوسط اور وسطانیہ سے انحرافات || Example 3.7: deviations from mean and median || بېلګه 3.7: له اوسط او میانې څخه انحرافات
+th | x | x − x̄ | {{BAR}}x − x̄{{BAR}} | x − Median | {{BAR}}x − Median{{BAR}}
+tr | 2 | -8 | 8 | -6.5 | 6.5
+tr | 6 | -4 | 4 | -2.5 | 2.5
+tr | 9 | -1 | 1 | 0.5 | 0.5
+tr | 12 | 2 | 2 | 3.5 | 3.5
+tr | 8 | -2 | 2 | -0.5 | 0.5
+tr | 13 | 3 | 3 | 4.5 | 4.5
+tr | 5 | -5 | 5 | -3.5 | 3.5
+tr | 6 | -4 | 4 | -2.5 | 2.5
+tr | 23 | 13 | 13 | 14.5 | 14.5
+tr | 16 | 6 | 6 | 7.5 | 7.5
+tr | 100 | – | 48 | – | 46
+endtable

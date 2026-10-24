@@ -1,0 +1,24 @@
+@printed 64
+@status lesson
+## 2.2.6 Disadvantages of arithmetic mean || 2.2.6 حسابی اوسط کی خامیاں || 2.2.6 د حسابي اوسط زیانونه
+p (i) It cannot be applied to qualitative data. || (i) اسے کیفی اعداد و شمار پر لاگو نہیں کیا جا سکتا۔ || (i) دا پر کیفي معلوماتو نشي پلي کېدای.
+p (ii) It is highly affected by extreme values, especially when the number of observations is very small. || (ii) یہ انتہائی قدروں سے بہت متاثر ہوتا ہے، خاص طور پر جب مشاہدات کی تعداد بہت کم ہو۔ || (ii) دا د سختو ارزښتونو لخوا ډېر اغېزمن کېږي، په ځانګړي ډول کله چې د کتنو شمېر ډېر لږ وي.
+p (iii) It is not useful for highly skewed distributions. || (iii) یہ بہت زیادہ کج تقسیمات کے لیے مفید نہیں ہے۔ || (iii) دا د ډېر کوړو ویشونو لپاره ګټور نه دی.
+p (iv) It cannot be calculated for incomplete data. || (iv) اسے نامکمل اعداد و شمار کے لیے حساب نہیں کیا جا سکتا۔ || (iv) دا د نیمګړو معلوماتو لپاره نشي محاسبه کېدای.
+p (v) It may be a figure which does not exist in a series. || (v) یہ ایک ایسا عدد ہو سکتا ہے جو سلسلے میں موجود نہ ہو۔ || (v) دا یو داسې عدد کېدای شي چې په لړۍ کې شتون ونلري.
+## 2.2.7 Weighted arithmetic mean || 2.2.7 وزنی حسابی اوسط || 2.2.7 وزني حسابي اوسط
+p Arithmetic mean gives equal importance to all observations of a series but in daily life we see that all observations are not equally important, some are more important than others. For example, one kg of sugar, tea and salt do not have the same price. The subjects English, Mathematics, Urdu are not equally difficult. In order to make them equally important certain numerical values are assigned, called weights. For example, if the observations are prices, then weights are assigned in the form of quantities. If the observations are quantities, then weights are assigned in the form of prices. Formula for weighted arithmetic mean is || حسابی اوسط سلسلے کے تمام مشاہدات کو برابر اہمیت دیتا ہے لیکن روزمرہ زندگی میں ہم دیکھتے ہیں کہ تمام مشاہدات برابر اہم نہیں ہوتے، کچھ دوسروں سے زیادہ اہم ہوتے ہیں۔ مثال کے طور پر ایک کلوگرام چینی، چائے اور نمک کی قیمت یکساں نہیں ہوتی۔ انگریزی، ریاضی، اردو کے مضامین برابر مشکل نہیں ہیں۔ انہیں برابر اہم بنانے کے لیے کچھ عددی قدریں مقرر کی جاتی ہیں جنہیں وزن کہتے ہیں۔ مثال کے طور پر اگر مشاہدات قیمتیں ہوں تو وزن مقداروں کی صورت میں مقرر کیے جاتے ہیں۔ اگر مشاہدات مقداریں ہوں تو وزن قیمتوں کی صورت میں مقرر کیے جاتے ہیں۔ وزنی حسابی اوسط کا فارمولا ہے || حسابي اوسط د لړۍ ټولو کتنو ته مساوي اهمیت ورکوي خو په ورځني ژوند کې موږ ګورو چې ټولې کتنې مساوي مهمې نه دي، ځینې له نورو مهمې دي. د مثال په توګه یو کیلوګرام بوره، چای او مالګه یو شان بیه نه لري. د انګلیسي، ریاضي، اردو مضامین مساوي ستونزمن نه دي. د دې لپاره چې دوی مساوي مهم وګرځي ځینې شمېرنیز ارزښتونه ټاکل کېږي چې وزنونه بلل کېږي. د مثال په توګه که کتنې بیې وي نو وزنونه د کچو په بڼه ټاکل کېږي. که کتنې کچې وي نو وزنونه د بیو په بڼه ټاکل کېږي. د وزني حسابي اوسط فورمول دی
+eq \bar{x}_w=\dfrac{\sum_{i=1}^{n}w_ix_i}{\sum_{i=1}^{n}w_i}
+p Weighted arithmetic mean is more accurate than unweighted arithmetic mean. This average is used in the construction of index numbers. || وزنی حسابی اوسط غیر وزنی حسابی اوسط سے زیادہ درست ہوتا ہے۔ یہ اوسط اشاریہ اعداد کی تشکیل میں استعمال ہوتا ہے۔ || وزني حسابي اوسط له نه‌وزني حسابي اوسط څخه ډېر دقیق دی. دا اوسط د شاخصي شمېرو په جوړولو کې کارول کېږي.
+## Example: 2.11 || مثال: 2.11 || بېلګه: 2.11
+q  | A candidate got 73% marks in English, 82% in Mathematics 57% in chemistry, 62% in physics and 60% in Urdu. Find the weighted mean if the weights 4, 3, 3, 1, 1 are allotted to the subjects. || ایک امیدوار نے انگریزی میں 73%، ریاضی میں 82%، کیمیا میں 57%، طبیعیات میں 62% اور اردو میں 60% نمبر حاصل کیے۔ وزنی اوسط معلوم کریں اگر مضامین کو وزن 4, 3, 3, 1, 1 دیے گئے ہوں۔ || یو نوماند په انګلیسي کې 73%، په ریاضي کې 82%، په کیمیا کې 57%، په فزیک کې 62% او په اردو کې 60% نمرې ترلاسه کړې. وزني اوسط ومومئ که چېرې مضامینو ته وزنونه 4, 3, 3, 1, 1 ورکړل شوي وي.
+## Solution: || حل: || حل:
+table مثال 2.11: نمبر، وزن اور wx || Example 2.11: marks, weights and wx || بېلګه 2.11: نمرې، وزنونه او wx
+th | x | w | wx
+tr | 73 | 4 | 292
+tr | 82 | 3 | 246
+tr | 57 | 3 | 171
+tr | 62 | 1 | 62
+tr | 60 | 1 | 60
+tr | Total | 12 | 831
+endtable

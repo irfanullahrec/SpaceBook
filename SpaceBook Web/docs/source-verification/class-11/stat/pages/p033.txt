@@ -1,0 +1,34 @@
+@printed 29
+@status lesson
+@sec 1-ex | Exercise || مشق || تمرین
+exercise Exercise
+p quantity known as pie (written as π) that is area of a circle is known to cover 2π radian or 360°. || مقدار جسے پائی (جو π لکھا جاتا ہے) کہتے ہیں، یعنی دائرے کا رقبہ، جو 2π ریڈین یا 360° کا احاطہ کرتا ہے۔ || کچه چې پای بلل کېږي (په π لیکل کېږي) یعنې د دایرې ساحه چې 2π رادیان یا 360° پوښي.
+p To construct a pie chart compute angle for each sector by the formula || پائی چارٹ بنانے کے لیے ہر قطاع کا زاویہ درج ذیل فارمولے سے حساب کریں || د پای چارټ د جوړولو لپاره د هر سکتور زاویه د لاندې فورمول په واسطه محاسبه کړئ
+eq \text{Angle}=\dfrac{\text{component}}{\text{total}}\times360^\circ
+p Draw a radius and find different sectors by means of a protractor. The sectors are colored or shaded differently to show the relationship of parts to the whole. || ایک رداس کھینچیں اور چاندے (پروٹریکٹر) کی مدد سے مختلف قطاع معلوم کریں۔ حصوں کے کل سے تعلق کو ظاہر کرنے کے لیے قطاعوں کو مختلف رنگوں یا سایوں سے ظاہر کیا جاتا ہے۔ || یو شعاع رسم کړئ او د زاویه‌پیما په مرسته بېلابېل سکتورونه ومومئ. د برخو له ټول سره اړیکه ښودلو لپاره سکتورونه په بېلابېلو رنګونو یا سیوري ښودل کېږي.
+## Example: 1.11 || مثال: 1.11 || بېلګه: 1.11
+q  | The following table shows the areas of various continents/countries of the world, given in million square miles. || درج ذیل جدول دنیا کے مختلف براعظموں/ممالک کے رقبے دکھاتا ہے، جو ملین مربع میل میں دیے گئے ہیں۔ || لاندې جدول د نړۍ د بېلابېلو وچو/هېوادونو ساحې ښيي چې په ملیون مربع مایل کې ورکړل شوې.
+q  | Prepare a pie chart of the above table. || مندرجہ بالا جدول کا پائی چارٹ تیار کریں۔ || د پورتني جدول پای چارټ جوړ کړئ.
+table براعظموں/ممالک کے رقبے (ملین مربع میل) || Areas of continents/countries (million square miles) || د وچو/هېوادونو ساحې (ملیون مربع مایل)
+th | Continents/Countries | Area (million square miles)
+tr | Africa | 11.7
+tr | Asia | 10.4
+tr | Europe | 1.9
+tr | North America | 9.4
+tr | Antarctica | 3.3
+tr | South America | 6.9
+tr | Russia | 7.9
+endtable
+## Solution: || حل: || حل:
+sol The necessary calculations for construction of a pie diagram are given in the following table. ## The necessary calculations for construction of a pie diagram are given in the following table. || پائی خاکہ بنانے کے لیے ضروری حسابات درج ذیل جدول میں دیے گئے ہیں۔ || د پای ډیاګرام د جوړولو لپاره اړین محاسبې په لاندې جدول کې ورکړل شوې.
+table پائی خاکے کے حسابات || Calculations for the pie diagram || د پای ډیاګرام محاسبې
+th | Continents/countries | Area (in million sq. miles) | Angle of the sector | Cumulative angle of the sector
+tr | Africa | 11.7 | 11.7/51.5×360 = 81.8° | 81.8°
+tr | Asia | 10.4 | 10.4/51.5×360 =72.7° | 154.5°
+tr | Europe | 1.9 | = 13.3° | 167.8°
+tr | North America | 9.4 | = 65.7° | 233.5°
+tr | Antarctica | 3.3 | =23.1° | 256.6°
+tr | South America | 6.9 | = 48.2° | 304.8°
+tr | Russia | 7.9 | = 55.2° | 360°
+tr | Total | 51.5 | 360° | –
+endtable

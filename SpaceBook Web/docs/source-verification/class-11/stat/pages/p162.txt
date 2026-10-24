@@ -1,0 +1,26 @@
+@printed 158
+@status lesson
+@sec 4-ex | Exercise || مشق || تمرین
+exercise Example: 4.8
+q  | Compute Laspyre's, Passche's and Fisher's price index numbers for the following data using 1970 as base. || درج ذیل اعداد و شمار کے لیے 1970 کو بنیاد لے کر لاسپیئر، پاشے اور فشر کے قیمتی اشاریہ اعداد حساب کریں۔ || د لاندې معلوماتو لپاره د 1970 د بنسټ په نیولو سره د Laspyre، Passche او Fisher د بیې شاخص شمېرې محاسبه کړئ.
+table مثال 4.8: قیمتیں اور مقداریں || Example 4.8: prices and quantities || بېلګه 4.8: بیې او مقدارونه
+th | Commodity | Price (Rs. per maund): 1970 | Price (Rs. per maund): 1975 | Quantities produced (maund): 1970 | Quantities produced (maund): 1975
+tr | Maize | 12 | 14 | 110 | 125
+tr | Rice | 40 | 42 | 180 | 195
+tr | Barley | 10 | 11 | 75 | 70
+endtable
+## Solution: || حل: || حل:
+sol As 1970 is base year therefore we denote the prices and quantities for 1970 by p0 and q0 and those for 1975 by pn and qn. The computations needed are; ## As 1970 is base year therefore we denote the prices and quantities for 1970 by p0 and q0 and those for 1975 by pn and qn. The computations needed are; || چونکہ 1970 بنیادی سال ہے اس لیے ہم 1970 کی قیمتوں اور مقداروں کو p0 اور q0 اور 1975 کی قیمتوں اور مقداروں کو pn اور qn سے ظاہر کرتے ہیں۔ ضروری حسابات یہ ہیں؛ || ځکه چې 1970 بنسټیز کال دی نو موږ د 1970 بیې او مقدارونه په p0 او q0 او د 1975 بیې او مقدارونه په pn او qn ښيو. اړین محاسبې دا دي؛
+table مثال 4.8 کا حل: حسابات || Example 4.8 solution: computations || د بېلګې 4.8 حل: محاسبې
+th | Commodity | p0 | pn | q0 | qn | pn q0 | p0 q0 | pn qn | p0 qn
+tr | Maize | 12 | 14 | 110 | 125 | 1540 | 1320 | 1750 | 1500
+tr | Rice | 40 | 42 | 180 | 195 | 7560 | 7200 | 8190 | 7800
+tr | Barley | 10 | 11 | 75 | 70 | 825 | 750 | 770 | 700
+tr | Total | – | – | – | – | 9925 | 9270 | 10710 | 10000
+endtable
+sol Laspeyre's price index number ## Laspeyre's price index number || لاسپیئر کا قیمتی اشاریہ عدد || د Laspeyre د بیې شاخص شمېره
+eq P_{0n}=\dfrac{\sum p_nq_0}{\sum p_0q_0}\times 100=\dfrac{9925}{9270}\times 100=107.07
+sol Passche's price index number ## Passche's price index number || پاشے کا قیمتی اشاریہ عدد || د Passche د بیې شاخص شمېره
+eq P_{0n}=\dfrac{\sum p_nq_n}{\sum p_0q_n}\times 100=\dfrac{10710}{10000}\times 100=107.1
+sol Fisher's price index number. ## Fisher's price index number. || فشر کا قیمتی اشاریہ عدد۔ || د Fisher د بیې شاخص شمېره.
+eq P_{0n}=\sqrt{\dfrac{\sum p_nq_0}{\sum p_0q_0}\times\dfrac{\sum p_nq_n}{\sum p_0q_n}}\times 100

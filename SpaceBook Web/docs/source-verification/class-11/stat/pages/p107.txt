@@ -1,0 +1,34 @@
+@printed 103
+@status lesson
+@sec 3-ex | Exercise || مشق || تمرین
+exercise Exercise
+p n – 1, i.e. || n – 1، یعنی || n – 1، یعنې
+p Sample standard deviation: (Statistic) || نمونے کا معیاری انحراف: (شماریہ) || د نمونې معیاري انحراف: (احصایه)
+eq s=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n-1}}\qquad\text{(Statistic)}
+## 3.5.2 Variance || 3.5.2 تغیر || 3.5.2 وریانس
+p The term variance was introduced by R.A Fisher in 1918. It is denoted by σ² in population case and s² in sample case and is defined as the average of squared deviations of observations taken from mean is called variance. Mathematically; || تغیر کی اصطلاح آر۔اے۔ فشر نے 1918 میں متعارف کرائی۔ اسے آبادی کی صورت میں σ² اور نمونے کی صورت میں s² سے ظاہر کیا جاتا ہے اور اوسط سے لیے گئے مشاہدات کے مربع انحرافات کے اوسط کو تغیر کہتے ہیں۔ ریاضیاتی طور پر؛ || د وریانس اصطلاح په 1918 کې R.A Fisher معرفي کړه. دا د ټولنې په حالت کې په σ² او د نمونې په حالت کې په s² ښودل کېږي او له اوسط څخه اخیستل شویو کتنو د مربع انحرافاتو اوسط ته وریانس ویل کېږي. ریاضیاتي ډول؛
+p Population variance: (Parameter) || آبادی کا تغیر: (پیرامیٹر) || د ټولنې وریانس: (پارامېټر)
+eq \sigma^2=\dfrac{\sum(x-\mu)^2}{N}\qquad\text{(Parameter)}
+p Sample variance: (Statistic) || نمونے کا تغیر: (شماریہ) || د نمونې وریانس: (احصایه)
+eq s^2=\dfrac{\sum(x-\bar{x})^2}{n}\qquad\text{(Statistic)}
+p Sample variance: (Statistic) || نمونے کا تغیر: (شماریہ) || د نمونې وریانس: (احصایه)
+eq s^2=\dfrac{\sum(x-\bar{x})^2}{n-1}\qquad\text{(Statistic)}
+p Variance measures the average square distance from the mean. || تغیر اوسط سے اوسط مربع فاصلہ ناپتا ہے۔ || وریانس له اوسط څخه اوسط مربع واټن اندازه کوي.
+## Example: 3.10 || مثال: 3.10 || بېلګه: 3.10
+q  | Calculate standard deviation and variance for values of a population 1, 9, 5, 8, 7. || آبادی کی قدروں 1, 9, 5, 8, 7 کے لیے معیاری انحراف اور تغیر حساب کریں۔ || د ټولنې د ارزښتونو 1, 9, 5, 8, 7 لپاره معیاري انحراف او وریانس محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 3.10 کا حل: جدول || Example 3.10 solution table || د بېلګې 3.10 د حل جدول
+th | x | (x − μ) | (x − μ)²
+tr | 1 | -5 | 25
+tr | 9 | 3 | 9
+tr | 5 | -1 | 1
+tr | 8 | 2 | 4
+tr | 7 | 1 | 1
+tr | 30 | 0 | 40
+endtable
+sol (i) ## (i) || (i) || (i)
+eq \mu=\dfrac{\sum x}{N}=\dfrac{30}{5}=6
+eq \sigma=\sqrt{\dfrac{\sum(x-\mu)}{N}}=\sqrt{\dfrac{40}{5}}=2.83
+sol (ii) ## (ii) || (ii) || (ii)
+eq \sigma^2=\dfrac{\sum(x-\mu)^2}{N}=\dfrac{40}{5}=8
+p Standard deviation and variance can simply be defined as: S.D is the square root of the variance i.e. σ = √variance and variance is the square of the S.D i.e. σ² = (S.D)². || معیاری انحراف اور تغیر کو سادہ طور پر یوں بیان کیا جا سکتا ہے: S.D تغیر کا جذر ہے یعنی σ = √تغیر اور تغیر S.D کا مربع ہے یعنی σ² = (S.D)²۔ || معیاري انحراف او وریانس په ساده توګه داسې تعریف کېدای شي: S.D د وریانس جذر دی یعنې σ = √وریانس او وریانس د S.D مربع دی یعنې σ² = (S.D)².

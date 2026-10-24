@@ -1,0 +1,19 @@
+@printed 162
+@status lesson
+p The port numbers are divided into three ranges: || پورٹ نمبروں کو تین حدوں میں تقسیم کیا گیا ہے: || د پورټ شمېرې په درې کچو وېشل شوې دي:
+p The Well Known Ports. || معروف پورٹس۔ || مشهور پورټونه.
+p The Registered Ports. || رجسٹرڈ پورٹس۔ || ثبت شوي پورټونه.
+p The Dynamic and/or Private Ports. || متحرک اور/یا نجی پورٹس۔ || متحرک او/یا خصوصي پورټونه.
+## WELL KNOWN PORT NUMBERS || معروف پورٹ نمبر || مشهور پورټ شمېرې
+p Well-known ports (0-1023) are used for the major Internet applications, such as Web and e-mail. For example, all port 80 packets (HTTP packets) are directed to and processed by a Web server. || معروف پورٹس (۰ سے ۱۰۲۳) بڑی انٹرنیٹ ایپلیکیشنز، جیسے ویب اور ای میل، کے لیے استعمال ہوتے ہیں۔ مثلاً پورٹ ۸۰ کے تمام پیکٹس (ایچ ٹی ٹی پی پیکٹس) ویب سرور کی طرف بھیجے اور اس کے ذریعے پراسیس کیے جاتے ہیں۔ || مشهور پورټونه (۰-۱۰۲۳) د لویو انټرنېټ اپلېکېشنونو لکه ویب او برېښنالیک لپاره کارول کېږي. د بېلګې په توګه د ۸۰ پورټ ټولې کڅوړې (HTTP کڅوړې) د ویب خدمتګار ته لارښوونه کېږي او د هغه لخوا پروسس کېږي.
+## REGISTERED PORT NUMBERS || رجسٹرڈ پورٹ نمبر || ثبت شوې پورټ شمېرې
+p Registered ports are assigned to applications that are mostly vendor specific, such as Skype and BitTorrent. The Registered Ports are in the range 1024-49151. || رجسٹرڈ پورٹس ان ایپلیکیشنز کو تفویض ہوتے ہیں جو زیادہ تر فروخت کنندہ سے مخصوص ہوتی ہیں، جیسے اسکائپ اور بٹ ٹورنٹ۔ رجسٹرڈ پورٹس کی حد ۱۰۲۴ سے ۴۹۱۵۱ ہے۔ || ثبت شوي پورټونه هغو اپلېکېشنونو ته ټاکل کېږي چې ډیر یې د پلورونکي ځانګړي دي، لکه سکایپ او بټ تورنټ. ثبت شوي پورټونه د ۱۰۲۴-۴۹۱۵۱ په کچه کې دي.
+## DYNAMIC PORT NUMBERS || متحرک پورٹ نمبر || متحرک پورټ شمېرې
+p The Dynamic and/or Private Ports are those in the range 49152–65535. These ports are not used by any defined application. || متحرک اور/یا نجی پورٹس وہ ہیں جو ۴۹۱۵۲ سے ۶۵۵۳۵ کی حد میں ہیں۔ یہ پورٹس کسی متعین ایپلیکیشن کے ذریعے استعمال نہیں ہوتے۔ || متحرک او/یا خصوصي پورټونه هغه دي چې د ۴۹۱۵۲–۶۵۵۳۵ په کچه کې دي. دا پورټونه د کومې ټاکل شوې اپلېکېشن لخوا نه کارول کېږي.
+## c. TCP/IP Applications || ج۔ ٹی سی پی / آئی پی ایپلیکیشنز || ج. د TCP/IP اپلېکېشنونه
+p All modern operating systems support TCP/IP, and most large private networks rely on TCP/IP for much of their traffic. A technology used for connecting dissimilar systems. Many TCP/IP application protocols were designed to access and transfer data between dissimilar systems. These protocols include HTTP, FTP, and Telnet. TCP/IP provides a robust, scalable, cross-platform client/server framework. || تمام جدید آپریٹنگ سسٹمز ٹی سی پی / آئی پی کی حمایت کرتے ہیں اور زیادہ تر بڑے نجی نیٹ ورکس اپنی بہت سی ٹریفک کے لیے ٹی سی پی / آئی پی پر انحصار کرتے ہیں۔ یہ غیر مماثل سسٹمز کو جوڑنے کے لیے استعمال ہونے والی ٹیکنالوجی ہے۔ ٹی سی پی / آئی پی کے بہت سے ایپلیکیشن پروٹوکولز غیر مماثل سسٹمز کے درمیان ڈیٹا تک رسائی اور اس کی منتقلی کے لیے بنائے گئے تھے۔ ان پروٹوکولز میں ایچ ٹی ٹی پی، ایف ٹی پی اور ٹیل نیٹ شامل ہیں۔ ٹی سی پی / آئی پی ایک مضبوط، قابلِ توسیع، کراس پلیٹ فارم کلائنٹ/سرور فریم ورک فراہم کرتا ہے۔ || ټول مدرن عملیاتي سیسټمونه TCP/IP ملاتړ کوي، او ډیری لویې خصوصي شبکې د خپل ډېر ترافیک لپاره پر TCP/IP تکیه کوي. دا یوه ټکنالوجي ده چې د ناورته سیسټمونو د نښلولو لپاره کارول کېږي. ډیری د TCP/IP اپلېکېشن پروتوکولونه د ناورته سیسټمونو ترمنځ د ډېټا د لاسرسي او لېږد لپاره ډیزاین شوي. دا پروتوکولونه HTTP، FTP او ټېلنېټ شاملوي. TCP/IP یو پیاوړی، د پراختیا وړ، څو پلیټفورمي پېرېدونکی/خدمتګار چوکاټ برابروي.
+p The TCP/IP is used by the following applications. || ٹی سی پی / آئی پی درج ذیل ایپلیکیشنز استعمال کرتی ہیں۔ || TCP/IP د لاندې اپلېکېشنونو لخوا کارول کېږي.
+p Web browsers (Internet Explorer, Firefox, Safari, Opera etc.) || ویب براؤزرز (انٹرنیٹ ایکسپلورر، فائر فاکس، سفاری، اوپرا وغیرہ) || د ویب براوزرونه (انټرنېټ اېکسپلورر، فایرفاکس، سفاري، اوپېرا او نور)
+p Web Servers || ویب سرورز || د ویب خدمتګاران
+p File Servers || فائل سرورز || د فایل خدمتګاران
+p Terminal Servers || ٹرمینل سرورز || د ټرمینل خدمتګاران

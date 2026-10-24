@@ -1,0 +1,26 @@
+@printed 133
+@status lesson
+## Solution: || حل: || حل:
+sol (i) Pearson's coefficient of skewness ## (i) Pearson's coefficient of skewness || (i) کجی کا پیئرسنی عددی سر || (i) د کوړوالي پیرسني ضریب
+eq Sk=\dfrac{3(Mean-Median)}{S}
+table مثال 3.28 کا حل: جدول || Example 3.28 solution table || د بېلګې 3.28 د حل جدول
+th | Classes: | f | x | u = (x − 37)/5 | fu | fu² | Class boundaries | c.f
+tr | 20 – 24 | 22 | 22 | -3 | -66 | 198 | 19.5 – 24.5 | 22
+tr | 25 – 29 | 28 | 27 | -2 | -56 | 112 | 24.5 – 29.5 | 50
+tr | 30 – 34 | 218 | 32 | -1 | -218 | 218 | 29.5 – 34.5 | 268
+tr | 35 – 39 | 227 | 37 | 0 | 0 | 0 | 34.5 – 39.5 | 495
+tr | 40 – 44 | 235 | 42 | 1 | 235 | 235 | 39.5 – 44.5 | 730
+tr | 45 – 49 | 216 | 47 | 2 | 432 | 864 | 44.5 – 49.5 | 946
+tr | 50 – 54 | 54 | 52 | 3 | 162 | 486 | 49.5 – 54.5 | 1000
+tr | Total | 1000 | – | – | 489 | 2113 | – | 
+endtable
+eq \bar{x}=A+\dfrac{\sum fu}{\sum f}\times h=37+\dfrac{489}{1000}\times 5=39.45
+sol as Σf = 1000 is even ∴ Median = (Σf/2)th value = (1000/2)th value = 500th value ⇒ Median lies in the group (39.5 – 44.5) ## as Σf = 1000 is even ∴ Median = (Σf/2)th value = (1000/2)th value = 500th value ⇒ Median lies in the group (39.5 – 44.5) || چونکہ Σf = 1000 جفت ہے ∴ وسطانیہ = (Σf/2)ویں قدر = (1000/2)ویں قدر = 500ویں قدر ⇒ وسطانیہ گروہ (39.5 – 44.5) میں واقع ہے || ځکه چې Σf = 1000 جفت دی ∴ میانه = (Σf/2) ارزښت = (1000/2) ارزښت = 500م ارزښت ⇒ میانه په ګروپ (39.5 – 44.5) کې پرته ده
+eq \text{So Median}=l_1+\dfrac{h}{f}\left(\dfrac{\sum f}{2}-c\right)
+eq =39.5+\dfrac{5}{235}(500-495)=39.5+\dfrac{25}{235}=39.5+0.11=39.61
+eq S=\sqrt{\dfrac{\sum fu^2}{\sum f}-\left(\dfrac{\sum fu}{\sum f}\right)^2}\times h=\sqrt{\dfrac{2113}{1000}-\left(\dfrac{489}{1000}\right)^2}\times 5
+eq =\sqrt{2.113-0.239}\times 5=\sqrt{1.874}\times 5=(1.368)\times 5=6.845
+eq \text{Hence }Sk=\dfrac{3(39.45-39.61)}{6.845}=\dfrac{3(-0.16)}{6.845}=\dfrac{-0.48}{6.845}=-0.07
+sol The given distribution is negatively skewed. ## The given distribution is negatively skewed. || دی گئی تقسیم منفی کج ہے۔ || ورکړل شوی ویش منفي کوړ دی.
+sol (ii) Bowley's coefficient of skewness is ## (ii) Bowley's coefficient of skewness is || (ii) کجی کا باؤلے عددی سر یہ ہے || (ii) د کوړوالي بولي ضریب دا دی
+eq Sk=\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}

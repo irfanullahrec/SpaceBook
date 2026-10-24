@@ -1,0 +1,30 @@
+@printed 119
+@status lesson
+## Solution: || حل: || حل:
+sol (i) Raw moments: ## (i) Raw moments: || (i) خام معیارِ اثر: || (i) خام مومنټونه:
+sol Taking an arbitrary origin a = 2 in the given data. ## Taking an arbitrary origin a = 2 in the given data. || دیے گئے اعداد و شمار میں من مانا مبدا a = 2 لیتے ہوئے۔ || په ورکړل شویو معلوماتو کې خپلسري اصل a = 2 اخیستل.
+table مثال 3.19: من مانا مبدا a = 2 || Example 3.19: arbitrary origin a = 2 || بېلګه 3.19: خپلسري اصل a = 2
+th | x | (x − 2) | (x − 2)² | (x − 2)³ | (x − 2)⁴
+tr | 1 | -1 | 1 | -1 | 1
+tr | 1 | -1 | 1 | -1 | 1
+tr | 0 | -2 | 4 | -8 | 16
+tr | 2 | 0 | 0 | 0 | 0
+tr | 2 | 0 | 0 | 0 | 0
+tr | 3 | 1 | 1 | 1 | 1
+tr | 1 | -1 | 1 | -1 | 1
+tr | 0 | -2 | 4 | -8 | 16
+tr | 1 | -1 | 1 | -1 | 1
+tr | 3 | 1 | 1 | 1 | 1
+tr | Total | -6 | 14 | -18 | 38
+endtable
+eq m_1'=\dfrac{\sum(x-2)}{n}=\dfrac{-6}{10}=-0.6
+eq m_2'=\dfrac{\sum(x-2)^2}{n}=\dfrac{14}{10}=1.4
+eq m_3'=\dfrac{\sum(x-2)^3}{n}=\dfrac{-18}{10}=-1.8
+eq m_4'=\dfrac{\sum(x-2)^4}{n}=\dfrac{38}{10}=3.8
+sol (ii) Mean moments ## (ii) Mean moments || (ii) اوسطی معیارِ اثر || (ii) اوسط مومنټونه
+eq m_1=m_1'-m_1'=-0.6-(-0.6)=-0.6+0.6=0
+eq m_2=m_2'-(m_1')^2=1.4-(-0.6)^2=1.4-0.36=1.04
+eq m_3=m_3'-3m_1'm_2'+2(m_1')^3
+eq =-1.8-3(-0.6)(1.4)+2(-0.6)^3
+eq =-1.8+2.52-0.432=-2.232+2.52=0.29
+eq m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4

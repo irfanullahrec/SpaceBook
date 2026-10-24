@@ -1,0 +1,29 @@
+@printed 80
+@status lesson
+@sec 2-ex | Exercise || مشق || تمرین
+exercise Example
+p G.M of the values 2, 4 and 8 is; || قدروں 2، 4 اور 8 کا ہندسی اوسط ہے؛ || د ارزښتونو 2، 4 او 8 هندسي اوسط دی؛
+eq \text{G.M}=(2\times4\times8)^{1/3}=(64)^{1/3}=(4^3)^{1/3}=4
+p G.M by this formula is difficult to calculate when the figures are large in size and greater in number. This can be simplified by using logarithm. || اس فارمولے سے ہندسی اوسط کا حساب اس وقت مشکل ہوتا ہے جب اعداد سائز میں بڑے اور تعداد میں زیادہ ہوں۔ اسے لوگارتھم استعمال کر کے آسان بنایا جا سکتا ہے۔ || د دې فورمول په واسطه د هندسي اوسط محاسبه هغه وخت ستونزمنه وي کله چې شمېرې په کچه لوی او په شمېر ډېرې وي. دا د لوګارېتم په کارولو سره ساده کېدای شي.
+eq \log\text{G.M}=\log(x_1\cdot x_2\cdots x_n)^{1/n}
+eq =\dfrac{1}{n}\left(\log x_1+\log x_2+\cdots+\log x_n\right)
+eq =\dfrac{1}{n}\left(\sum_{i=1}^{n}\log x_i\right)
+p Taking antilog on both sides || دونوں اطراف کا اینٹی لوگ لیتے ہوئے || په دواړو خواوو انټي‌لوګ اخیستلو سره
+eq \text{G.M}=\text{antilog}\left(\dfrac{\sum_{i=1}^{n}\log x}{n}\right)\qquad\text{(Formula for ungrouped data)}
+eq =\text{antilog}\left(\dfrac{\sum_{i=1}^{n}f\log x}{n}\right)\qquad\text{(Formula for grouped data)}
+p It is a mathematical average and is an appropriate average to use for the data relating to proportions, ratios, and rate of increase, rate of growth, percentages and index numbers. || یہ ایک ریاضیاتی اوسط ہے اور تناسب، شرحوں، اضافے کی شرح، نمو کی شرح، فیصد اور اشاریہ اعداد سے متعلق اعداد و شمار کے لیے استعمال کرنے کے لیے موزوں اوسط ہے۔ || دا یو ریاضیاتي اوسط دی او د تناسبونو، نسبتونو، د زیاتوالي کچې، د ودې کچې، سلنو او شاخصي شمېرو پورې اړوندو معلوماتو لپاره د کارولو مناسب اوسط دی.
+## 2.5.1 Computation of geometric mean || 2.5.1 ہندسی اوسط کا حساب || 2.5.1 د هندسي اوسط محاسبه
+p (i) Geometric mean in case of individual series or ungrouped data || (i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں ہندسی اوسط || (i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې هندسي اوسط
+## Example: 2.29 || مثال: 2.29 || بېلګه: 2.29
+q  | Calculate geometric mean for the data: 50, 51, 52, 53, and 54. || اعداد و شمار 50, 51, 52, 53 اور 54 کے لیے ہندسی اوسط حساب کریں۔ || د معلوماتو 50, 51, 52, 53 او 54 لپاره هندسي اوسط محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 2.29: x اور log x || Example 2.29: x and log x || بېلګه 2.29: x او log x
+th | x | log x
+tr | 50 | 1.6990
+tr | 51 | 1.7076
+tr | 52 | 1.7160
+tr | 53 | 1.7243
+tr | 54 | 1.7324
+tr | Total | 8.5793
+endtable
+eq \text{G.M}=\text{antilog}\left(\dfrac{\sum_{i=1}^{n}\log x}{n}\right)=\text{antilog}\dfrac{8.5793}{5}=\text{antilog}(1.71586)=51.991

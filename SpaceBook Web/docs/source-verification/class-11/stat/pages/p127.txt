@@ -1,0 +1,40 @@
+@printed 123
+@status lesson
+## Example: 3.22 || مثال: 3.22 || بېلګه: 3.22
+q  | Compute first four moments about mean from the data x = 1, 1, 0, 2, 2, 3, 1, 0, 1, 3. || اعداد و شمار x = 1, 1, 0, 2, 2, 3, 1, 0, 1, 3 سے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں۔ || له معلوماتو x = 1, 1, 0, 2, 2, 3, 1, 0, 1, 3 څخه د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 3.22: x کی طاقتیں || Example 3.22: powers of x || بېلګه 3.22: د x ځواکونه
+th | x | x² | x³ | x⁴
+tr | 1 | 1 | 1 | 1
+tr | 1 | 1 | 1 | 1
+tr | 0 | 0 | 0 | 0
+tr | 2 | 4 | 8 | 16
+tr | 2 | 4 | 8 | 16
+tr | 3 | 9 | 27 | 81
+tr | 1 | 1 | 1 | 1
+tr | 0 | 0 | 0 | 0
+tr | 1 | 1 | 1 | 1
+tr | 3 | 9 | 27 | 81
+tr | 14 | 30 | 74 | 198
+endtable
+sol (i) Raw moments: ## (i) Raw moments: || (i) خام معیارِ اثر: || (i) خام مومنټونه:
+eq m_1'=\dfrac{\sum x}{n}=\dfrac{14}{10}=1.4
+eq m_2'=\dfrac{\sum x^2}{n}=\dfrac{30}{10}=3
+eq m_3'=\dfrac{\sum x^3}{n}=\dfrac{74}{10}=7.4
+eq m_4'=\dfrac{\sum x^4}{n}=\dfrac{198}{10}=19.8
+sol (ii) Mean moments: Now putting these raw moments in the relations we get mean moments as; ## (ii) Mean moments: Now putting these raw moments in the relations we get mean moments as; || (ii) اوسطی معیارِ اثر: اب ان خام معیارِ اثر کو تعلقات میں رکھنے سے ہمیں اوسطی معیارِ اثر یوں ملتے ہیں؛ || (ii) اوسط مومنټونه: اوس دا خام مومنټونه په اړیکو کې ایښودو سره موږ اوسط مومنټونه داسې ترلاسه کوو؛
+eq m_1=m_1'-m_1'=1.4-1.4=0
+eq m_2=m_2'-(m_1')^2=3-(1.4)^2=3-1.98=1.04
+eq m_3=m_3'-3m_1'm_2'+2(m_1')^3
+eq =7.4-3(1.4)(3)+2(1.4)^3=7.4-12.6+5.488
+eq =12.888-12.6=0.288
+eq m_4=m_4'-4m_1'm_3'+6(m_1')^2m_2'-3(m_1')^4
+eq =19.8-4(1.4)(7.4)+6(1.4)^2(3)-3(1.4)^4
+eq =19.8-41.44+35.28-11.5248
+eq =55.08-52.965=2.12
+## Example: 3.23 || مثال: 3.23 || بېلګه: 3.23
+q  | Compute first four moments about mean from the following data: || درج ذیل اعداد و شمار سے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں: || له لاندې معلوماتو څخه د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ:
+table مثال 3.23: x اور f || Example 3.23: x and f || بېلګه 3.23: x او f
+th | x: | 1 | 2 | 3 | 4 | 5
+tr | f: | 5 | 7 | 10 | 6 | 2
+endtable

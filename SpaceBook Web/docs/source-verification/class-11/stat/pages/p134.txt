@@ -1,0 +1,29 @@
+@printed 130
+@status lesson
+## Solution: || حل: || حل:
+sol (i) Karl Pearson's method ## (i) Karl Pearson's method || (i) کارل پیئرسن کا طریقہ || (i) د Karl Pearson طریقه
+eq Sk=\dfrac{3(Mean-Median)}{S}
+table مثال 3.26: اوسط سے انحرافات || Example 3.26: deviations from the mean || بېلګه 3.26: له اوسط څخه انحرافات
+th | x | (x − x̄) | (x − x̄)²
+tr | 1 | -5 | 25
+tr | 5 | -1 | 1
+tr | 7 | 1 | 1
+tr | 8 | 2 | 4
+tr | 9 | 3 | 9
+tr | Total 30 | 0 | 40
+endtable
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{30}{5}=6
+sol Since n = 5 is odd therefore Median = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7 ## Since n = 5 is odd therefore Median = ((n + 1)/2)th value = ((5 + 1)/2)th value = 3rd value = 7 || چونکہ n = 5 طاق ہے اس لیے وسطانیہ = ((n + 1)/2)ویں قدر = ((5 + 1)/2)ویں قدر = تیسری قدر = 7 || ځکه چې n = 5 طاق دی نو میانه = ((n + 1)/2) ارزښت = ((5 + 1)/2) ارزښت = دریم ارزښت = 7
+eq s=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n-1}}=\sqrt{\dfrac{40}{5-1}}=\sqrt{\dfrac{40}{4}}=3.16
+eq \therefore\ Sk=\dfrac{3(6-7)}{3.16}=\dfrac{-3}{3.16}=-0.95
+sol It means that given distribution of values is −vely skewed. ## It means that given distribution of values is −vely skewed. || اس کا مطلب ہے کہ قدروں کی دی گئی تقسیم منفی کج ہے۔ || دا پدې معنا ده چې د ارزښتونو ورکړل شوی ویش منفي کوړ دی.
+sol (ii) Bowley's method ## (ii) Bowley's method || (ii) باؤلے کا طریقہ || (ii) د Bowley طریقه
+eq Sk=\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}
+eq Q_1=\left(\dfrac{n+1}{4}\right)\text{th value}=\left(\dfrac{5+1}{4}\right)\text{th value}=(1.5)\text{th value}
+eq =1\text{st value}+0.5(2\text{nd value}-1\text{st value})
+eq =1+0.5(5-1)=1+0.5(4)=1+2=3
+eq Q_2=2\left(\dfrac{n+1}{4}\right)\text{th value}=\left(\dfrac{n+1}{2}\right)\text{th value}=\left(\dfrac{5+1}{2}\right)\text{th value}=3\text{rd value}=7
+eq Q_3=3\left(\dfrac{n+1}{4}\right)\text{th value}=3\left(\dfrac{5+1}{4}\right)\text{th value}=(4.5)\text{th value}
+eq =4\text{th value}+0.5(5\text{th value}-4\text{th value})
+eq =8+0.5(9-8)
+eq =8+0.5=8.5

@@ -1,0 +1,34 @@
+@printed 61
+@status lesson
+table مثال 2.6: مختصر طریقہ (D = x − 67) || Example 2.6: shortcut method (D = x − 67) || بېلګه 2.6: لنډه طریقه (D = x − 67)
+th | Heights | f | x | D = x − 67 | fD
+tr | 60 – 62 | 5 | 61 | − 6 | −30
+tr | 63 – 65 | 18 | 64 | − 3 | −54
+tr | 66 – 68 | 42 | 67 | 0 | 0
+tr | 69 – 71 | 27 | 70 | 3 | 81
+tr | 72 – 74 | 8 | 73 | 6 | 48
+tr | Total | 100 |  |  | 45
+endtable
+sol A = 67 because it has highest frequency. ## A = 67 because it has highest frequency. || A = 67 کیونکہ اس کا تعدد سب سے زیادہ ہے۔ || A = 67 ځکه چې فریکونسي یې تر ټولو لوړه ده.
+eq \bar{x}=A+\dfrac{\sum fD}{\sum f}=67+\dfrac{45}{100}=67+0.45=67.45
+sol (iii) By change of origin and scale or step deviation method ## (iii) By change of origin and scale or step deviation method || (iii) مبدا اور پیمانے کی تبدیلی یا گام انحراف طریقے سے || (iii) د اصل او پیمانې په بدلون یا ګام‌انحراف طریقه
+eq \bar{x}=A+\dfrac{\sum fu}{\sum f}\times h
+table مثال 2.6: گام انحراف طریقہ (u = (x − 67)/3) || Example 2.6: step-deviation method (u = (x − 67)/3) || بېلګه 2.6: ګام‌انحراف طریقه (u = (x − 67)/3)
+th | Heights | f | x | u = (x − 67)/3 | fu
+tr | 60 – 62 | 5 | 61 | − 2 | − 10
+tr | 63 – 65 | 18 | 64 | −1 | −18
+tr | 66 – 68 | 42 | 67 | 0 | 0
+tr | 69 – 71 | 27 | 70 | 1 | 27
+tr | 72 – 74 | 8 | 73 | 2 | 16
+tr | Total | 100 | - | - | 15
+endtable
+sol Here A = 67 and h = 3 ## Here A = 67 and h = 3 || یہاں A = 67 اور h = 3 || دلته A = 67 او h = 3
+eq \therefore\ \bar{x}=A+\dfrac{\sum fu}{\sum f}\times h=67+\dfrac{15}{100}\times3=67+\dfrac{45}{100}=67+0.45=67.45
+## Example: 2.7 || مثال: 2.7 || بېلګه: 2.7
+q  | A population with mean μ = 10 has Σx = 250. How many observations are in the population? || ایک مجموعے کا اوسط μ = 10 ہے اور Σx = 250 ہے۔ مجموعے میں کتنے مشاہدات ہیں؟ || یوه ټولنه چې اوسط یې μ = 10 دی او Σx = 250 لري. په ټولنه کې څومره کتنې دي؟
+## Solution: || حل: || حل:
+sol By definition ## By definition || تعریف کے مطابق || د تعریف له مخې
+eq \mu=\dfrac{\sum x}{N}
+eq \text{Here }10=\dfrac{250}{N}\ \text{ or }\ 10N=250\ \Rightarrow\ N=\dfrac{250}{10}=25\ \text{observations.}
+## Example: 2.8 || مثال: 2.8 || بېلګه: 2.8
+q  | A sample of n = 6 values has a mean x̄ = 8. What is the value of Σx for this sample? || n = 6 قدروں کے ایک نمونے کا اوسط x̄ = 8 ہے۔ اس نمونے کے لیے Σx کی قدر کیا ہے؟ || د n = 6 ارزښتونو یوې نمونې اوسط x̄ = 8 دی. د دې نمونې لپاره د Σx ارزښت څه دی؟

@@ -1,0 +1,30 @@
+@printed 207
+@status lesson
+## Example: 6.7 || مثال: 6.7 || بېلګه: 6.7
+q  | Fit a second degree parabola to the following data and find the trend values || درج ذیل اعداد و شمار پر دوسرے درجے کا قطع مکافی فٹ کریں اور رجحان کی قدریں معلوم کریں || پر لاندې معلوماتو دویم درجې پیراپولا برابره کړئ او د تمایل ارزښتونه ومومئ
+table مثال 6.7: سال اور قدریں || Example 6.7: years and values || بېلګه 6.7: کلونه او ارزښتونه
+th | Years: | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012
+tr | Values: | 187 | 142 | 133 | 129 | 136 | 169 | 279
+endtable
+## Solution: || حل: || حل:
+sol The required equation to be fitted is ŷ = a + bx + cx² ## The required equation to be fitted is ŷ = a + bx + cx² || فٹ کی جانے والی مطلوبہ مساوات ہے ŷ = a + bx + cx² || د برابرولو وړ اړینه معادله ده ŷ = a + bx + cx²
+eq \hat{y}=a+bx+cx^2
+sol Three normal equation for a, b and c are; ## Three normal equation for a, b and c are; || a, b اور c کے لیے تین معمول کی مساواتیں یہ ہیں؛ || د a, b او c لپاره درې نورمال معادلې دا دي؛
+eq \sum y=na+b\sum x+c\sum x^2\qquad\text{(i)}
+eq \sum xy=a\sum x+b\sum x^2+c\sum x^3\qquad\text{(ii)}
+eq \sum x^2y=a\sum x^2+b\sum x^3+c\sum x^4\qquad\text{(iii)}
+table مثال 6.7 کا حل: جدول || Example 6.7 solution table || د بېلګې 6.7 د حل جدول
+th | Year | y | x | x² | xy | x³ | x²y | x⁴ | Trend values ŷ = 119.9 + 11.89x + 11.99x²
+tr | 2006 | 187 | -3 | 9 | -561 | -27 | 1683 | 81 | 192
+tr | 2007 | 142 | -2 | 4 | -284 | -8 | 568 | 16 | 144
+tr | 2008 | 133 | -1 | 1 | -133 | -1 | 133 | 1 | 120
+tr | 2009 | 129 | 0 | 0 | 0 | 0 | 0 | 0 | 119
+tr | 2010 | 136 | 1 | 1 | 136 | 1 | 136 | 1 | 144
+tr | 2011 | 169 | 2 | 4 | 338 | 8 | 676 | 16 | 192
+tr | 2012 | 279 | 3 | 9 | 837 | 27 | 2511 | 81 | 264
+tr | Total | 1175 | 0 | 28 | 333 | 0 | 5707 | 196 | 1175
+endtable
+sol Putting values in above normal equations we have ## Putting values in above normal equations we have || اوپر دی گئی معمول کی مساواتوں میں قدریں رکھنے سے ہمیں ملتا ہے || په پورتنیو نورمالو معادلو کې ارزښتونه ایښودو سره موږ لرو
+eq 1175=7a+28c\qquad\text{(4)}
+eq 333=28b\qquad\text{(5)}\qquad\Rightarrow\ b=\dfrac{333}{28}=11.89
+eq 5707=28a+196c\qquad\text{(6)}

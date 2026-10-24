@@ -1,0 +1,23 @@
+@printed 224
+@status lesson
+@sec 7-ex | Exercise || مشق || تمرین
+exercise Exercise
+p (ii) Indirect method || (ii) بالواسطہ طریقہ || (ii) غیر مستقیمه طریقه
+eq S_T.D.R=\dfrac{\sum d_i}{\sum\left(\dfrac{D_i}{P_i}\right)p_i}\times\text{C.D.R of standard population}
+p where D_i = number of deaths in the standard population in the ith age group. || جہاں D_i = معیاری آبادی میں i ویں عمر کے گروہ میں اموات کی تعداد۔ || چېرته چې D_i = په معیاري نفوس کې د i‌م عمري ډلې کې د مړینو شمېر.
+## Example: 7.4 || مثال: 7.4 || بېلګه: 7.4
+q  | Compute crude death rate and standardized death rate of the local population from the data given below and compare it with the crude death rate of the standard population. || نیچے دیے گئے اعداد و شمار سے مقامی آبادی کی خام شرحِ اموات اور معیاری شرحِ اموات حساب کریں اور اس کا معیاری آبادی کی خام شرحِ اموات سے موازنہ کریں۔ || له لاندې ورکړل شویو معلوماتو څخه د سیمه‌ییز نفوس خام د مړینې کچه او معیاري د مړینې کچه محاسبه کړئ او د معیاري نفوس له خام د مړینې کچې سره یې پرتله کړئ.
+table مثال 7.4: مقامی اور معیاری آبادی || Example 7.4: local and standard population || بېلګه 7.4: سیمه‌ییز او معیاري نفوس
+th | Age (years) | Local population: Population | Local population: Deaths | Standard population: Population | Standard population: Deaths
+tr | 0 - 10 | 400 | 16 | 600 | 18
+tr | 10 - 20 | 1500 | 6 | 1000 | 5
+tr | 20 - 60 | 2400 | 24 | 3000 | 24
+tr | 60 - 100 | 700 | 21 | 400 | 20
+tr | Total | 5000 | 67 | 5000 | 67
+endtable
+## Solution: || حل: || حل:
+eq \text{C.D.R}=\dfrac{D}{P}\times 1000
+eq \text{C.D.R for local population}=\dfrac{67}{5000}\times 1000=13.4
+eq \text{C.D.R for standard population}=\dfrac{67}{5000}\times 1000=13.4
+sol Now standardized death rate for local population by direct method is ## Now standardized death rate for local population by direct method is || اب مقامی آبادی کے لیے براہِ راست طریقے سے معیاری شرحِ اموات ہے || اوس د سیمه‌ییز نفوس لپاره په مستقیمه طریقه معیاري د مړینې کچه ده
+eq S_T.D.R=\dfrac{\sum\left(\dfrac{d_i}{p_i}\right)P_i}{\sum P_i}\times 1000

@@ -1,0 +1,23 @@
+@printed 134
+@status lesson
+table مثال 3.28: طبقات، حدود، f، c.f || Example 3.28: classes, boundaries, f, c.f || بېلګه 3.28: ټولګي، حدود، f، c.f
+th | Classes | Class boundaries | f | c.f
+tr | 20 – 24 | 19.5 – 24.5 | 22 | 22
+tr | 25 – 29 | 24.5 – 29.5 | 28 | 50
+tr | 30 – 34 | 29.5 – 34.5 | 218 | 268
+tr | 35 – 39 | 34.5 – 39.5 | 227 | 495
+tr | 40 – 44 | 39.5 – 44.5 | 235 | 730
+tr | 45 – 49 | 44.5 – 49.5 | 216 | 946
+tr | 50 – 54 | 49.5 – 54.5 | 54 | 1000
+tr | Total | – | 1000 | –
+endtable
+sol Here n = 1000 is even therefore ## Here n = 1000 is even therefore || یہاں n = 1000 جفت ہے اس لیے || دلته n = 1000 جفت دی نو
+eq Q_1=\left(\dfrac{\sum f}{4}\right)\text{th value}=\left(\dfrac{1000}{4}\right)\text{th value}=250\text{th value}
+sol ⇒ Q1 lies in the group (29.5 – 34.5) ## ⇒ Q1 lies in the group (29.5 – 34.5) || ⇒ Q1 گروہ (29.5 – 34.5) میں واقع ہے || ⇒ Q1 په ګروپ (29.5 – 34.5) کې پرته ده
+eq \therefore\ Q_1=l_1+\dfrac{h}{f}\left(\dfrac{\sum f}{4}-c\right)
+eq =29.5+\dfrac{5}{218}(250-50)
+eq =29.5+\dfrac{1000}{218}
+eq =29.5+4.59
+eq =34.09
+eq Q_2=2\left(\dfrac{\sum f}{4}\right)\text{th value}=\left(\dfrac{1000}{2}\right)\text{th value}=500\text{ th value}
+sol ⇒ Q2 = lies in the group (39.5 – 44.5) ## ⇒ Q2 = lies in the group (39.5 – 44.5) || ⇒ Q2 = گروہ (39.5 – 44.5) میں واقع ہے || ⇒ Q2 = په ګروپ (39.5 – 44.5) کې پرته ده

@@ -1,0 +1,22 @@
+@printed 100
+@status lesson
+## Solution: || حل: || حل:
+table مثال 3.8 کا حل: جدول || Example 3.8 solution table || د بېلګې 3.8 د حل جدول
+th | x | f | fx | c.f | {{BAR}}x − x̄{{BAR}} | f{{BAR}}x − x̄{{BAR}} | {{BAR}}x − Median{{BAR}} | f{{BAR}}x − Median{{BAR}}
+tr | 4 | 2 | 8 | 2 | 5.7 | 11.4 | 4 | 8
+tr | 6 | 4 | 24 | 6 | 3.7 | 14.8 | 2 | 8
+tr | 8 | 5 | 40 | 11 | 1.7 | 8.5 | 0 | 0
+tr | 10 | 3 | 30 | 14 | 0.3 | 0.9 | 2 | 6
+tr | 12 | 2 | 24 | 16 | 2.3 | 4.6 | 4 | 8
+tr | 14 | 1 | 14 | 17 | 4.3 | 4.3 | 6 | 6
+tr | 16 | 4 | 64 | 21 | 6.3 | 25.2 | 8 | 32
+tr | Total | 21 | 204 | – | – | 69.7 | – | 68
+endtable
+sol (i) Mean deviation from mean is given by ## (i) Mean deviation from mean is given by || (i) اوسط سے اوسط انحراف یوں دیا جاتا ہے || (i) له اوسط څخه اوسط انحراف داسې ورکول کېږي
+eq \text{M.D}=\dfrac{\sum f|x-\bar{x}|}{\sum f}\quad\text{where }\bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{204}{21}=9
+eq \therefore\ \text{M.D}=\dfrac{69.7}{21}=3.32\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of M.D}=\dfrac{\text{M.D}}{\bar{x}}=\dfrac{3.32}{9.7}=0.34\qquad\text{(Relative dispersion)}
+sol (ii) Mean deviation from median is given by M.D = Σf{{BAR}}x − Median{{BAR}} / Σf ## (ii) Mean deviation from median is given by M.D = Σf{{BAR}}x − Median{{BAR}} / Σf || (ii) وسطانیہ سے اوسط انحراف M.D = Σf{{BAR}}x − Median{{BAR}} / Σf سے دیا جاتا ہے || (ii) له میانې څخه اوسط انحراف د M.D = Σf{{BAR}}x − Median{{BAR}} / Σf په واسطه ورکول کېږي
+sol Here Σf = 21 is odd ∴ Median = ((Σf + 1)/2)th value = (22/2)th value = 11th value. This implies that [Median] = 8 ## Here Σf = 21 is odd ∴ Median = ((Σf + 1)/2)th value = (22/2)th value = 11th value. This implies that [Median] = 8 || یہاں Σf = 21 طاق ہے ∴ وسطانیہ = ((Σf + 1)/2)ویں قدر = (22/2)ویں قدر = 11ویں قدر۔ اس کا مطلب ہے کہ [وسطانیہ] = 8 || دلته Σf = 21 طاق دی ∴ میانه = ((Σf + 1)/2) ارزښت = (22/2) ارزښت = 11م ارزښت. دا پدې معنا ده چې [میانه] = 8
+eq \therefore\ \text{M.D}=\dfrac{68}{21}=3.24\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of M.D}=\dfrac{\text{M.D}}{\text{Median}}=\dfrac{3.24}{8}=0.41\qquad\text{(Relative dispersion)}

@@ -1,0 +1,23 @@
+@printed 63
+@status lesson
+eq \bar{x}_c=\dfrac{n_1\bar{x}_1+n_2\bar{x}_2+\cdots+n_k\bar{x}_k}{n_1+n_2+\cdots+n_k}=\dfrac{\sum_{i=1}^{k}n_i\bar{x}_i}{\sum_{i=1}^{k}n_i}
+## Example: 2.10 || مثال: 2.10 || بېلګه: 2.10
+q  | The mean weight and number of fishes in three different samples are given below: || تین مختلف نمونوں میں مچھلیوں کا اوسط وزن اور تعداد نیچے دی گئی ہے: || په دریو بېلابېلو نمونو کې د کب اوسط وزن او شمېر لاندې ورکړل شوي:
+table مثال 2.10: مچھلیوں کے نمونے || Example 2.10: samples of fish || بېلګه 2.10: د کبانو نمونې
+th | Sample | No. of fish | Mean weight (in grams)
+tr | 1 | 50 | 113
+tr | 2 | 60 | 120
+tr | 3 | 70 | 115
+endtable
+q  | Calculate the mean weight of all the fishes taken together. || تمام مچھلیوں کو ملا کر ان کا اوسط وزن حساب کریں۔ || ټول کبان یوځای کولو سره د هغو اوسط وزن محاسبه کړئ.
+## Solution: || حل: || حل:
+sol The mean weight of the combined samples is ## The mean weight of the combined samples is || مشترکہ نمونوں کا اوسط وزن ہے || د ګډو نمونو اوسط وزن دی
+eq \bar{x}_c=\dfrac{n_1\bar{x}_1+n_2\bar{x}_2+n_3\bar{x}_3}{n_1+n_2+n_3}
+eq =\dfrac{50(113)+60(120)+70(115)}{50+60+70}
+eq =\dfrac{5650+7200+8050}{180}=\dfrac{20900}{180}=116.11
+## 2.2.5 Advantages of arithmetic mean || 2.2.5 حسابی اوسط کے فوائد || 2.2.5 د حسابي اوسط ګټې
+p i. It is very simple to understand and to calculate. || i. اسے سمجھنا اور حساب کرنا بہت آسان ہے۔ || i. دا د پوهېدو او محاسبې لپاره ډېر ساده دی.
+p ii. It is familiar to all and most frequently used. || ii. یہ سب کے لیے مانوس ہے اور سب سے زیادہ استعمال ہوتا ہے۔ || ii. دا د ټولو لپاره پېژندل شوی او تر ټولو ډېر کارېږي.
+p iii. It considers all observations i.e. every value of the data set adds to Σx and contributes one point to n to determine the value of mean. || iii. یہ تمام مشاہدات کو مدنظر رکھتا ہے یعنی اعداد و شمار کے مجموعے کی ہر قدر Σx میں اضافہ کرتی ہے اور اوسط کی قدر معلوم کرنے کے لیے n میں ایک نقطے کا حصہ ڈالتی ہے۔ || iii. دا ټولې کتنې په پام کې نیسي یعنې د معلوماتو د ټولګې هر ارزښت په Σx کې زیاتوالی راولي او د اوسط د ارزښت د موندلو لپاره په n کې یو نقطه ور اضافه کوي.
+p iv. It is capable of further algebraic treatment that is used to evaluate mean deviation and standard deviation. || iv. یہ مزید الجبری عمل کے قابل ہے جو اوسط انحراف اور معیاری انحراف کا اندازہ لگانے میں استعمال ہوتا ہے۔ || iv. دا د نورې الجبري پروسې وړ دی چې د اوسط انحراف او معیاري انحراف د ارزونې لپاره کارول کېږي.
+p v. It is determined for almost every kind of quantitative data. || v. یہ تقریباً ہر قسم کے مقداری اعداد و شمار کے لیے معلوم کیا جاتا ہے۔ || v. دا د نږدې هر ډول کمیتي معلوماتو لپاره ټاکل کېږي.

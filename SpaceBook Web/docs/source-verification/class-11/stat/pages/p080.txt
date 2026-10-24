@@ -1,0 +1,34 @@
+@printed 76
+@status lesson
+## Example: 2.25 || مثال: 2.25 || بېلګه: 2.25
+q  | Marks obtained by five randomly selected students in a statistics class test are 60, 10, 90, 40 and 30. Find Mode. || احصاء کی جماعتی ٹیسٹ میں پانچ بے ترتیب منتخب طلبہ کے حاصل کردہ نمبر 60, 10, 90, 40 اور 30 ہیں۔ عادہ معلوم کریں۔ || د احصایې د ټولګي په ازموینه کې د پنځو تصادفي ټاکل شویو زده کوونکو ترلاسه شوې نمرې 60, 10, 90, 40 او 30 دي. مود ومومئ.
+## Solution: || حل: || حل:
+sol This data has no mode because each value occurs only once. In such cases average value is obtain through other measures of central tendency. ## This data has no mode because each value occurs only once. In such cases average value is obtain through other measures of central tendency. || اس مجموعے کا کوئی عادہ نہیں کیونکہ ہر قدر صرف ایک بار آتی ہے۔ ایسی صورتوں میں اوسط قدر مرکزی رجحان کے دوسرے پیمانوں سے حاصل کی جاتی ہے۔ || دې ټولګې مود نه لري ځکه چې هر ارزښت یوازې یو ځل راځي. په داسې حالتونو کې اوسط ارزښت د مرکزي تمایل د نورو اندازو په واسطه ترلاسه کېږي.
+## 2.4.2 Calculation of mode for discrete series or grouped data || 2.4.2 منفصل سلسلے یا گروہی اعداد و شمار کے لیے عادہ کا حساب || 2.4.2 د منفصلې لړۍ یا ګروپي معلوماتو لپاره د مود محاسبه
+p Two methods are used in this case; || اس صورت میں دو طریقے استعمال ہوتے ہیں؛ || پدې حالت کې دوه طریقې کارول کېږي؛
+p (i) Inspection method and || (i) معائنے کا طریقہ اور || (i) د معاینې طریقه او
+p (ii) Grouping method. || (ii) گروہ بندی کا طریقہ۔ || (ii) د ډله‌بندۍ طریقه.
+## Example: 2.26 || مثال: 2.26 || بېلګه: 2.26
+q  | Calculate mode for the following discrete frequency distribution. || درج ذیل منفصل تعدد تقسیم کے لیے عادہ حساب کریں۔ || د لاندې منفصل فریکونسي ویش لپاره مود محاسبه کړئ.
+table مثال 2.26: x اور f || Example 2.26: x and f || بېلګه 2.26: x او f
+th | x: | 12 | 14 | 16 | 18 | 20 | 22
+tr | f: | 1 | 4 | 6 | 10 | 7 | 2
+endtable
+## Solution: || حل: || حل:
+sol By looking at the data, the value of the variable 18 has maximum frequency, so Mode = 18. ## By looking at the data, the value of the variable 18 has maximum frequency, so Mode = 18. || اعداد و شمار کو دیکھنے سے معلوم ہوتا ہے کہ متغیر کی قدر 18 کا تعدد سب سے زیادہ ہے، اس لیے عادہ = 18۔ || معلومات کتلو سره معلومېږي چې د متغیر ارزښت 18 اعظمي فریکونسي لري، نو مود = 18.
+## 2.4.3 Calculating the mode for continuous series or grouped data || 2.4.3 مسلسل سلسلے یا گروہی اعداد و شمار کے لیے عادہ کا حساب || 2.4.3 د دوامدارې لړۍ یا ګروپي معلوماتو لپاره د مود محاسبه
+p (i) By Formula: || (i) فارمولے سے: || (i) په فورمول:
+eq \text{Mode}=l_1+\dfrac{f_m-f_0}{2f_m-f_0-f_1}\times h
+p Where, || جہاں، || چېرته چې،
+p l₁: lower limit of the model class chosen by inspection method. || l₁: معائنے کے طریقے سے منتخب کردہ عادی جماعت کی زیریں حد۔ || l₁: د معاینې طریقې په واسطه ټاکل شوي مودي ټولګي ښکتنی حد.
+p fₘ: frequency of the modal class. || fₘ: عادی جماعت کا تعدد۔ || fₘ: د مودي ټولګي فریکونسي.
+p f₀: frequency of the preceding class. || f₀: ماقبل جماعت کا تعدد۔ || f₀: د مخکیني ټولګي فریکونسي.
+p f₁: frequency of the following class. || f₁: بعد والی جماعت کا تعدد۔ || f₁: د راتلونکي ټولګي فریکونسي.
+p h: class interval of the modal class || h: عادی جماعت کا جماعتی وقفہ || h: د مودي ټولګي د ټولګي وقفه
+p (ii) By Graph: || (ii) گراف سے: || (ii) په ګراف:
+## Example: 2.27 || مثال: 2.27 || بېلګه: 2.27
+q  | Calculate Mode for the following data: || درج ذیل اعداد و شمار کے لیے عادہ حساب کریں: || د لاندې معلوماتو لپاره مود محاسبه کړئ:
+table مثال 2.27: نمبر اور تعدد || Example 2.27: marks and frequency || بېلګه 2.27: نمرې او فریکونسي
+th | Marks: | 10 – 24 | 25 – 39 | 40 – 54 | 55 – 69 | 70 – 84 | 85 – 99
+tr | Frequency: | 6 | 20 | 44 | 26 | 3 | 1
+endtable

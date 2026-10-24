@@ -1,0 +1,22 @@
+@printed 184
+@status lesson
+eq \dfrac{5(88)-(15)(25)}{\sqrt{[5(55)-(15)^2][5(151)-(25)^2]}}=\dfrac{440-375}{\sqrt{50\times 130}}=\dfrac{65}{\sqrt{6500}}=\dfrac{65}{80.623}=0.81
+sol This implies that x and y have positive correlation. ## This implies that x and y have positive correlation. || اس سے ظاہر ہوتا ہے کہ x اور y میں مثبت ارتباط ہے۔ || دا ښيي چې x او y مثبت همتړاو لري.
+## 5.2.2 Properties of coefficient of correlation || 5.2.2 ارتباطی عددی سر کی خصوصیات || 5.2.2 د همتړاو د ضریب ځانګړتیاوې
+p (i) The coefficient of correlation is symmetrical with respect to the variables x and y i.e. r_xy = r_yx. || (i) ارتباطی عددی سر متغیرات x اور y کے لحاظ سے متشاکل ہے یعنی r_xy = r_yx۔ || (i) د همتړاو ضریب د x او y متغیرونو په نسبت متناسب دی یعنې r_xy = r_yx.
+p (ii) The coefficient of correlation lies between −1 and 1. || (ii) ارتباطی عددی سر −1 اور 1 کے درمیان ہوتا ہے۔ || (ii) د همتړاو ضریب د −1 او 1 تر منځ پروت دی.
+p (iii) The coefficient of correlation is independent of origin and scale i.e. r_xy = r_uv, where u = (x − a)/h and v = (y − b)/k. || (iii) ارتباطی عددی سر مبدا اور پیمانے سے آزاد ہے یعنی r_xy = r_uv، جہاں u = (x − a)/h اور v = (y − b)/k۔ || (iii) د همتړاو ضریب د اصل او پیمانې څخه خپلواک دی یعنې r_xy = r_uv، چېرته چې u = (x − a)/h او v = (y − b)/k.
+p (iv) The coefficient of correlation is the geometric mean of the two regression coefficients i.e. || (iv) ارتباطی عددی سر دو ریگریشن عددی سروں کا ہندسی اوسط ہے یعنی || (iv) د همتړاو ضریب د دوو ریګرېشن ضریبونو هندسي اوسط دی یعنې
+eq r_{xy}=\sqrt{b_{y.x}\times b_{x.y}}
+p (if both regression coefficients are positive) || (اگر دونوں ریگریشن عددی سر مثبت ہوں) || (که دواړه ریګرېشن ضریبونه مثبت وي)
+eq r_{xy}=-\sqrt{b_{y.x}\times b_{x.y}}
+p (if both regression coefficients are negative). || (اگر دونوں ریگریشن عددی سر منفی ہوں)۔ || (که دواړه ریګرېشن ضریبونه منفي وي).
+## Example: 5.5 || مثال: 5.5 || بېلګه: 5.5
+q  | If the regression coefficient of y on x is b_y.x = 0.27 and x on y is b_x.y = 0.6. Find the product moment coefficient of correlation r_xy. || اگر x پر y کا ریگریشن عددی سر b_y.x = 0.27 اور y پر x کا b_x.y = 0.6 ہو۔ حاصلِ ضرب معیارِ اثر ارتباطی عددی سر r_xy معلوم کریں۔ || که د x پر y د ریګرېشن ضریب b_y.x = 0.27 او د y پر x د b_x.y = 0.6 وي. د ضرب-مومنټ همتړاو ضریب r_xy ومومئ.
+## Solution: || حل: || حل:
+sol As both regression coefficients are positive, so r_xy is positive. Therefore, ## As both regression coefficients are positive, so r_xy is positive. Therefore, || چونکہ دونوں ریگریشن عددی سر مثبت ہیں اس لیے r_xy مثبت ہے۔ لہٰذا، || ځکه چې دواړه ریګرېشن ضریبونه مثبت دي نو r_xy مثبت دی. نو،
+eq r_{xy}=\sqrt{b_{y.x}\times b_{x.y}}
+eq =\sqrt{(0.27)(0.6)}=0.40
+sol = 0.40. There is positive correlation between x and y. ## = 0.40. There is positive correlation between x and y. || = 0.40۔ x اور y کے درمیان مثبت ارتباط ہے۔ || = 0.40. د x او y تر منځ مثبت همتړاو شته.
+## 5.2.3 Correlation and causation || 5.2.3 ارتباط اور علت || 5.2.3 همتړاو او علت
+p Correlation does not establish a cause and effect relationship between two variables. It does not provide any information about the size of the change in one variable as a result of a certain change in the other variable. In correlation both variables are interdependent. Relationship between them may be zero, weak or strong. Sometimes correlation between two unconnected variables will be nonsense or spurious. For example, two variables, sale of milk and death rate from accidents in a city may produce high positive correlation which may be due || ارتباط دو متغیرات کے درمیان علت و معلول کا تعلق قائم نہیں کرتا۔ یہ دوسرے متغیر میں کسی خاص تبدیلی کے نتیجے میں ایک متغیر میں تبدیلی کی مقدار کے بارے میں کوئی معلومات فراہم نہیں کرتا۔ ارتباط میں دونوں متغیرات باہم منحصر ہوتے ہیں۔ ان کے درمیان تعلق صفر، کمزور یا مضبوط ہو سکتا ہے۔ بعض اوقات دو غیر متعلقہ متغیرات کے درمیان ارتباط بے معنی یا جعلی ہوگا۔ مثال کے طور پر، دو متغیرات، کسی شہر میں دودھ کی فروخت اور حادثات سے اموات کی شرح، اعلیٰ مثبت ارتباط پیدا کر سکتے ہیں جو ہو سکتا ہے || همتړاو د دوو متغیرونو تر منځ د علت او معلول اړیکه نه جوړوي. دا د بل متغیر په یو ټاکلي بدلون په پایله کې د یوه متغیر د بدلون د کچې په اړه هېڅ معلومات نه ورکوي. په همتړاو کې دواړه متغیره متقابل تړلي وي. د هغوی تر منځ اړیکه صفر، کمزورې یا ځواکمنه کېدای شي. ځینې وختونه د دوو غیر اړوندو متغیرونو تر منځ همتړاو بې‌معنا یا جعلي وي. د مثال په توګه، دوه متغیره، په یوه ښار کې د شېدو پلور او د پېښو له امله د مړینې کچه، ښايي لوړ مثبت همتړاو رامنځته کړي چې ښايي له امله وي

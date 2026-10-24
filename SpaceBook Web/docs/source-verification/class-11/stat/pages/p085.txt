@@ -1,0 +1,42 @@
+@printed 81
+@status lesson
+p (ii) Geometric mean in case of discrete series or grouped data || (ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط || (ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط
+## Example: 2.30 || مثال: 2.30 || بېلګه: 2.30
+q  | Calculate geometric mean of the distribution; || تقسیم کا ہندسی اوسط حساب کریں؛ || د ویش هندسي اوسط محاسبه کړئ؛
+table مثال 2.30: x اور f || Example 2.30: x and f || بېلګه 2.30: x او f
+th | x: | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
+tr | f: | 2 | 5 | 9 | 14 | 15 | 8 | 6 | 3 | 1
+endtable
+## Solution: || حل: || حل:
+table مثال 2.30: log x اور f log x || Example 2.30: log x and f log x || بېلګه 2.30: log x او f log x
+th | x | f | log x | f log x
+tr | 3 | 2 | 0.4771 | 0.9542
+tr | 4 | 5 | 0.6021 | 3.0105
+tr | 5 | 9 | 0.6990 | 6.2910
+tr | 6 | 14 | 0.7782 | 10.8948
+tr | 7 | 15 | 0.8451 | 12.6765
+tr | 8 | 8 | 0.9031 | 7.2248
+tr | 9 | 6 | 0.9542 | 5.7252
+tr | 10 | 3 | 1.0000 | 3.000
+tr | 11 | 1 | 1.0414 | 1.0414
+tr | Total | 63 | – | 50.8184
+endtable
+eq \text{G.M}=\text{antilog}\left(\dfrac{\sum_{i=1}^{n}f\log x}{\sum f}\right)=\text{antilog}\left(\dfrac{50.8184}{63}\right)=\text{antilog}(0.8066)=6.406
+p (iii) Geometric mean in case of continuous series or grouped data || (iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط || (iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط
+## Example: 2.31 || مثال: 2.31 || بېلګه: 2.31
+q  | Calculate the geometric mean of the following distribution. || درج ذیل تقسیم کا ہندسی اوسط حساب کریں۔ || د لاندې ویش هندسي اوسط محاسبه کړئ.
+table مثال 2.31: گروہ اور تعدد || Example 2.31: groups and frequency || بېلګه 2.31: ډلې او فریکونسي
+th | Groups: | 10 – 19 | 20 – 29 | 30 – 39 | 40 – 49 | 50 – 59
+tr | Frequency: | 15 | 35 | 45 | 25 | 12
+endtable
+## Solution: || حل: || حل:
+table مثال 2.31: f log x || Example 2.31: f log x || بېلګه 2.31: f log x
+th | Groups | f | x | f log x
+tr | 10 – 19 | 15 | 14.5 | 17.4205
+tr | 20 – 29 | 35 | 24.5 | 48.6208
+tr | 30 – 39 | 45 | 34.5 | 69.2019
+tr | 40 – 49 | 25 | 44.5 | 41.2090
+tr | 50 – 59 | 12 | 54.5 | 20.8368
+tr | Total | 132 | – | 197.2890
+endtable
+eq \text{G.M}=\text{antilog}\left(\dfrac{\sum_{i=1}^{n}f\log x}{\sum f}\right)=\text{antilog}\left(\dfrac{197.2890}{132}\right)=\text{antilog}(1.4946)=31.23

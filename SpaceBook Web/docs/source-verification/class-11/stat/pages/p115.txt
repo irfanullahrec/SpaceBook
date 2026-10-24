@@ -1,0 +1,28 @@
+@printed 111
+@status lesson
+@sec 3-ex | Exercise || مشق || تمرین
+exercise Exercise
+p better or consistent. || بہتر یا مستقل مزاج ہے۔ || ښه یا یو شان دی.
+p (i) Computation of coefficient of variation in case of ungrouped data || (i) غیر گروہی اعداد و شمار کی صورت میں تغیر کے عددی سر کا حساب || (i) د نه‌ګروپ شویو معلوماتو په حالت کې د تغیر د ضریب محاسبه
+## Example: 3.14 || مثال: 3.14 || بېلګه: 3.14
+q  | Using the coefficient of variation, determine that which student performance is more consistent by considering their individual scores given below. || تغیر کے عددی سر کو استعمال کرتے ہوئے طے کریں کہ نیچے دیے گئے ان کے انفرادی اسکور کو مدنظر رکھتے ہوئے کس طالب علم کی کارکردگی زیادہ مستقل ہے۔ || د تغیر د ضریب په کارولو سره وټاکئ چې د لاندې ورکړل شویو انفرادي نمرو په پام کې نیولو سره د کوم زده کوونکي فعالیت ډېر یو شان دی.
+table مثال 3.14: طلبہ A اور B کے اسکور || Example 3.14: scores of students A and B || بېلګه 3.14: د A او B زده کوونکو نمرې
+th | x_A: | 58 | 59 | 60 | 54 | 65 | 66 | 52 | 75 | 69 | 52
+tr | x_B: | 56 | 86 | 89 | 78 | 71 | 73 | 84 | 65 | 66 | 48
+endtable
+## Solution: || حل: || حل:
+table مثال 3.14 کا حل: جدول || Example 3.14 solution table || د بېلګې 3.14 د حل جدول
+th | x | x_A² | x | x_B²
+tr | 58 | 3364 | 56 | 3136
+tr | 59 | 3481 | 86 | 7396
+tr | 60 | 3600 | 89 | 7921
+tr | 54 | 2916 | 78 | 6084
+tr | 65 | 4225 | 71 | 5041
+tr | 66 | 4356 | 73 | 5329
+tr | 52 | 2704 | 84 | 7056
+tr | 75 | 5625 | 65 | 4225
+tr | 69 | 4761 | 66 | 4356
+tr | 52 | 2704 | 48 | 2304
+tr | Total 610 | 37736 | 716 | 52848
+endtable
+eq \bar{x}=\dfrac{\sum x_A}{n}=\dfrac{610}{10}=61\qquad\bar{x}_B=\dfrac{\sum x_B}{n}=\dfrac{716}{10}=71.6

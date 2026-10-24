@@ -1,0 +1,29 @@
+@printed 151
+@status lesson
+p According to this method price of current period is divided by price of the preceding period and this ratio is multiplied by 100. That is || اس طریقے کے مطابق موجودہ مدت کی قیمت کو پچھلی مدت کی قیمت سے تقسیم کیا جاتا ہے اور اس تناسب کو 100 سے ضرب دیا جاتا ہے۔ یعنی || د دې طریقې له مخې د اوسنۍ دورې بیه د تېرې دورې پر بیه ویشل کېږي او دا نسبت په 100 ضرب کېږي. یعنې
+eq \text{Link relative}=\dfrac{\text{Current period price}}{\text{Preceding period price}}\times 100
+eq P_{0n}=\dfrac{p_n}{p_{n-1}}\times 100
+p Similarly link relative for quantity is || اسی طرح مقدار کے لیے کڑی اضافت ہے || همدارنګه د مقدار لپاره پیوندي نسبت دی
+eq Q_{0n}=\dfrac{q_n}{q_{n-1}}\times 100
+## Example: 4.3 || مثال: 4.3 || بېلګه: 4.3
+q  | Consider the following price data of a single commodity. Find link relatives and then chain indices. || ایک ہی جنس کے درج ذیل قیمتی اعداد و شمار پر غور کریں۔ کڑی اضافتیں اور پھر زنجیری اشاریے معلوم کریں۔ || د یوه واحد توکي لاندې د بیو معلومات په پام کې ونیسئ. پیوندي نسبتونه او بیا زنځیري شاخصونه ومومئ.
+table مثال 4.3: سال اور قیمتیں || Example 4.3: years and prices || بېلګه 4.3: کلونه او بیې
+th | Years: | 1964 | 1965 | 1966 | 1967 | 1968 | 1969 | 1970 | 1971 | 1972 | 1973
+tr | Price: | 20 | 18 | 23 | 24 | 25 | 27 | 28 | 30 | 32 | 33
+endtable
+## Solution: || حل: || حل:
+table مثال 4.3 کا حل: کڑی اضافتیں اور زنجیری اشاریے || Example 4.3 solution: link relatives and chain indices || د بېلګې 4.3 حل: پیوندي نسبتونه او زنځیري شاخصونه
+th | Year | Price | P0n = (pn/pn−1) × 100 | Chain indices
+tr | 1964 | 20 | 20/20 × 100 = 100 | 100
+tr | 1965 | 18 | 18/20 × 100 = 90 | 100 × 90/100 = 90
+tr | 1966 | 23 | 23/18 × 100 = 127.8 | 90 × 127.8/100 = 115
+tr | 1967 | 24 | 24/23 × 100 = 104.3 | 115 × 104.3/100 = 120
+tr | 1968 | 25 | 104.2 | 125
+tr | 1969 | 27 | 108 | 135
+tr | 1970 | 28 | 103.7 | 140
+tr | 1971 | 30 | 107.1 | 150
+tr | 1972 | 32 | 106.6 | 160
+tr | 1973 | 33 | 103.1 | 165
+endtable
+sol Note that the chain indices are the same as the prices relatives with 1964 as base. ## Note that the chain indices are the same as the prices relatives with 1964 as base. || نوٹ کریں کہ زنجیری اشاریے 1964 کو بنیاد لے کر قیمتی اضافتوں کے برابر ہیں۔ || پام وکړئ چې زنځیري شاخصونه د 1964 د بنسټ په نیولو سره د بیې له نسبتونو سره مساوي دي.
+p Calculation of unweighted price index numbers (composite are more variable case) || غیر وزنی قیمتی اشاریہ اعداد کا حساب (مرکب یا ایک سے زیادہ متغیر کی صورت) || د نه‌وزني بیو شاخص شمېرو محاسبه (مرکب یا له یو څخه ډېر متغیر حالت)

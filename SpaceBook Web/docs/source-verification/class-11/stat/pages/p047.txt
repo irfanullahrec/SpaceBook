@@ -1,0 +1,32 @@
+@printed 43
+@status lesson
+## Example: 1.21 || مثال: 1.21 || بېلګه: 1.21
+q  | Suppose x = 2, 4, 6, 3. Calculate Σx, Σx², (Σx)². || فرض کریں x = 2, 4, 6, 3۔ Σx، Σx²، (Σx)² حساب کریں۔ || فرض کړئ x = 2, 4, 6, 3. Σx، Σx²، (Σx)² محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 1.21 || Example 1.21 || بېلګه 1.21
+th | x | x²
+tr | 2 | 4
+tr | 4 | 16
+tr | 6 | 36
+tr | 3 | 9
+tr | Σx = 15 | Σx² = 65
+endtable
+eq \text{and }\left(\sum x\right)^2=(15)^2=225.
+## 1.7.1 Rules for Σ notation || 1.7.1 Σ علامت کے قواعد || 1.7.1 د Σ نښې قواعد
+eq \text{i.}\ \sum_{i=1}^{n}c=nc
+p where c is a constant. It means that when Σ is applied on a constant it will be converted to n. || جہاں c ایک مستقلہ ہے۔ اس کا مطلب ہے کہ جب Σ کو کسی مستقلے پر لاگو کیا جائے تو وہ n میں تبدیل ہو جائے گا۔ || چېرته چې c یو ثابت دی. پدې معنا چې کله Σ پر یو ثابت پلی شي نو هغه به په n بدل شي.
+eq \text{ii.}\ \sum_{i=1}^{n}c\,x_i=c\sum_{i=1}^{n}x_i
+p where c is a constant. || جہاں c ایک مستقلہ ہے۔ || چېرته چې c یو ثابت دی.
+p It means that when Σ is applied on the product of a constant and variable, constant can be written outside the Σ notation. || اس کا مطلب ہے کہ جب Σ کو کسی مستقلے اور متغیر کے حاصلِ ضرب پر لاگو کیا جائے تو مستقلے کو Σ علامت سے باہر لکھا جا سکتا ہے۔ || پدې معنا چې کله Σ د یو ثابت او متغیر په ضرب حاصل پلی شي نو ثابت د Σ له نښې بهر لیکل کېدای شي.
+## Example: 1.22 || مثال: 1.22 || بېلګه: 1.22
+table مثال 1.22 || Example 1.22 || بېلګه 1.22
+th | x | 2x
+tr | 1 | 2
+tr | 2 | 4
+tr | 3 | 6
+tr | 4 | 8
+tr | Σx = 10 | Σ2x = 20
+endtable
+eq \text{and }2\sum x=2\times10=20
+p This implies that Σ2x = 2Σx where c = 2 is a constant. || اس سے ظاہر ہوتا ہے کہ Σ2x = 2Σx جہاں c = 2 ایک مستقلہ ہے۔ || پدې معنا چې Σ2x = 2Σx چېرته چې c = 2 یو ثابت دی.
+eq \text{iii.}\ \sum_{i=1}^{n}(x_i+y_i)=\sum_{i=1}^{n}x_i+\sum_{i=1}^{n}y_i

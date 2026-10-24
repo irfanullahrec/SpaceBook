@@ -1,0 +1,32 @@
+@printed 205
+@status lesson
+table مثال 6.5: سال اور پیداوار || Example 6.5: years and production || بېلګه 6.5: کلونه او تولید
+th | Years: | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991 | 1992 | 1993
+tr | Production: | 60 | 65 | 80 | 73 | 97 | 105 | 93 | 111 | 117
+endtable
+q  | Years: 1985–1993; Production: 60, 65, 80, 73, 97, 105, 93, 111, 117 (data of Example 6.5). || سال: 1985–1993؛ پیداوار: 60, 65, 80, 73, 97, 105, 93, 111, 117 (مثال 6.5 کے اعداد و شمار)۔ || کلونه: 1985–1993؛ تولید: 60, 65, 80, 73, 97, 105, 93, 111, 117 (د بېلګې 6.5 معلومات).
+## Solution: || حل: || حل:
+table مثال 6.5 کا حل: جدول || Example 6.5 solution table || د بېلګې 6.5 د حل جدول
+th | Year | Production (y) | x | xy | x² | Trend value ŷ = 89 + 7.1x
+tr | 1985 | 60 | -4 | -240 | 16 | 60.6
+tr | 1986 | 65 | -3 | -195 | 9 | 67.7
+tr | 1987 | 80 | -2 | -160 | 4 | 74.8
+tr | 1988 | 73 | -1 | -73 | 1 | 81.9
+tr | 1989 | 97 | 0 | 0 | 0 | 89
+tr | 1990 | 105 | 1 | 105 | 1 | 96.1
+tr | 1991 | 93 | 2 | 186 | 4 | 103.2
+tr | 1992 | 111 | 3 | 333 | 9 | 110.3
+tr | 1993 | 117 | 4 | 468 | 16 | 117.4
+tr | Total | 801 | 0 | 424 | 60 | 801
+endtable
+sol Equation of the straight line is ŷ = a + bx where ## Equation of the straight line is ŷ = a + bx where || سیدھی لکیر کی مساوات ہے ŷ = a + bx جہاں || د مستقیمې کرښې معادله ده ŷ = a + bx چېرته چې
+eq b=\dfrac{n\sum xy-\sum x\sum y}{n\sum x^2-\left(\sum x\right)^2}=\dfrac{9(424)}{9(160)}=7.1
+eq a=\dfrac{\sum y}{n}-b\left(\dfrac{\sum x}{n}\right)=\dfrac{801}{9}=89
+sol Thus the fitted straight line equation is ŷ = 89 + 7.1x ## Thus the fitted straight line equation is ŷ = 89 + 7.1x || اس طرح فٹ کی گئی سیدھی لکیر کی مساوات ہے ŷ = 89 + 7.1x || په دې توګه برابره شوې مستقیمې کرښې معادله ده ŷ = 89 + 7.1x
+sol Putting values of x, we get trend values, which are given in the last column of the table. ## Putting values of x, we get trend values, which are given in the last column of the table. || x کی قدریں رکھنے سے ہمیں رجحان کی قدریں ملتی ہیں، جو جدول کے آخری کالم میں دی گئی ہیں۔ || د x ارزښتونه ایښودو سره موږ د تمایل ارزښتونه ترلاسه کوو، چې د جدول په وروستي کالم کې ورکړل شوي دي.
+## Example: 6.6 || مثال: 6.6 || بېلګه: 6.6
+q  | Using the method of least squares, determine the linear trend for the following data, also find the trend values. || کم از کم مربعات کے طریقے سے درج ذیل اعداد و شمار کے لیے خطی رجحان معلوم کریں، رجحان کی قدریں بھی معلوم کریں۔ || د لږ تر لږه مربعاتو په طریقه د لاندې معلوماتو لپاره خطي تمایل وټاکئ، د تمایل ارزښتونه هم ومومئ.
+table مثال 6.6: سال اور درآمدات || Example 6.6: years and imports || بېلګه 6.6: کلونه او واردات
+th | Years: | 1990 | 1991 | 1992 | 1993 | 1994 | 1995
+tr | Import (in 000's Maunds): | 83 | 92 | 71 | 90 | 169 | 191
+endtable

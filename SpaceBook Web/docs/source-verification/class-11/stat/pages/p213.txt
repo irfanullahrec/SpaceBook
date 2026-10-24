@@ -1,0 +1,24 @@
+@printed 209
+@status lesson
+eq \sum xy=a\sum x+b\sum x^2+c\sum x^3\qquad\text{(ii)}
+eq \sum x^2y=a\sum x^2+b\sum x^3+c\sum x^4\qquad\text{(iii)}
+table مثال 6.8 کا حل: جدول || Example 6.8 solution table || د بېلګې 6.8 د حل جدول
+th | Year | y | x | x² | xy | x³ | x²y | x⁴ | ŷ
+tr | 1980 | 100 | -7 | 49 | -700 | -343 | 4900 | 2401 | 93.94
+tr | 1981 | 87 | -5 | 25 | -435 | -125 | 2175 | 625 | 88.36
+tr | 1982 | 96 | -3 | 9 | -288 | -27 | 864 | 81 | 95.90
+tr | 1983 | 102 | -1 | 1 | -102 | -1 | 102 | 1 | 116.56
+tr | 1984 | 139 | 1 | 1 | 139 | 1 | 139 | 1 | 150.34
+tr | 1985 | 210 | 3 | 9 | 630 | 27 | 1890 | 81 | 197.24
+tr | 1986 | 289 | 5 | 25 | 1445 | 125 | 7225 | 625 | 257.26
+tr | 1987 | 307 | 7 | 49 | 2149 | 343 | 15043 | 2401 | 330.40
+tr | Total | 1330 | 0 | 168 | 2839 | 0 | 32338 | 6216 | 1330
+endtable
+sol Putting values in the above equation ## Putting values in the above equation || اوپر دی گئی مساوات میں قدریں رکھنے سے || په پورتنۍ معادله کې ارزښتونه ایښودو سره
+eq 1330=8a+618c\qquad\text{(4)}
+eq 2838=168b\qquad\text{(5)}\qquad\Rightarrow\ b=\dfrac{2838}{168}=16.89
+eq 32338=168a+6216c\qquad\text{(6)}
+sol Multiply equation (4) by 21 and subtract it from equation (6) ## Multiply equation (4) by 21 and subtract it from equation (6) || مساوات (4) کو 21 سے ضرب دیں اور اسے مساوات (6) سے منہا کریں || معادله (4) په 21 ضرب کړئ او له معادلې (6) څخه یې تفریق کړئ
+eq 32338=168a+6216c\qquad\text{(6)}
+eq 27930=168a+3528c\qquad\text{(4)}
+eq 4408=2688c\qquad\Rightarrow\ c=\dfrac{4408}{2688}=1.64

@@ -1,0 +1,27 @@
+@printed 225
+@status lesson
+table مثال 7.4 کا حل: جدول || Example 7.4 solution table || د بېلګې 7.4 د حل جدول
+th | Age (years) | Local population: Population (p) | Local population: Deaths (d) | Standard population: Population (P) | Standard population: Deaths (D) | (d_i/p_i) P_i
+tr | 0 - 10 | 400 | 16 | 600 | 18 | 24
+tr | 10 - 20 | 1500 | 6 | 1000 | 5 | 4
+tr | 20 - 60 | 2400 | 24 | 3000 | 24 | 30
+tr | 60 - 100 | 700 | 21 | 400 | 20 | 12
+tr | Total | 5000 | 67 | 5000 | 67 | 70
+endtable
+eq S_T.D.R=\dfrac{70}{5000}\times 1000=14
+sol C.D.R for both populations is same i.e. 13.4 but S_T.D.R of the standard population is 14. ## C.D.R for both populations is same i.e. 13.4 but S_T.D.R of the standard population is 14. || دونوں آبادیوں کی C.D.R ایک ہی ہے یعنی 13.4 لیکن معیاری آبادی کی S_T.D.R 14 ہے۔ || د دواړو نفوسونو C.D.R یو شان دی یعنې 13.4 خو د معیاري نفوس S_T.D.R 14 دی.
+## Example: 7.5 || مثال: 7.5 || بېلګه: 7.5
+q  | Calculate the crude and standardized death rates from the following data || درج ذیل اعداد و شمار سے خام اور معیاری شرحیں اموات حساب کریں || له لاندې معلوماتو څخه خام او معیاري د مړینې کچې محاسبه کړئ
+table مثال 7.5: اصل اور معیاری آبادی || Example 7.5: original and standard population || بېلګه 7.5: اصلي او معیاري نفوس
+th | Age group (years) | Original population: Population | Original population: Deaths | Standard population: Population | Standard population: Deaths
+tr | 0 – 10 | 20210 | 728 | 231428 | 6960
+tr | 11 – 24 | 29875 | 213 | 302170 | 1972
+tr | 25 – 44 | 37294 | 462 | 293149 | 4759
+tr | 45 – 64 | 16739 | 741 | 150122 | 7030
+tr | 62 & above | 4925 | 823 | 46500 | 8314
+tr | Total | 109043 | 2967 | 1023369 | 29035
+endtable
+## Solution: || حل: || حل:
+eq \text{C.D.R for original population}=\dfrac{D}{P}\times 100=\dfrac{2967}{109043}\times 1000=27.21
+eq \text{C.D.R for standard population}=\dfrac{29035}{1023369}\times 1000=28.37
+sol Now calculations for standardized death rates both by direct and indirect methods are; ## Now calculations for standardized death rates both by direct and indirect methods are; || اب براہِ راست اور بالواسطہ دونوں طریقوں سے معیاری شرحیں اموات کے حسابات یہ ہیں؛ || اوس د مستقیمو او غیر مستقیمو دواړو طریقو په واسطه د معیاري د مړینې کچو محاسبې دا دي؛

@@ -1,0 +1,21 @@
+@printed 56
+@status lesson
+@sec 2-ex | Exercise || مشق || تمرین
+exercise Exercise
+p iv. is capable of further mathematical treatment i.e. used to evaluate other statistics. || iv. مزید ریاضیاتی عمل کے قابل ہو یعنی دیگر شماریات کا اندازہ لگانے میں استعمال ہو سکے۔ || iv. د نورې ریاضیاتي پروسې وړ وي یعنې د نورو احصایو د ارزونې لپاره وکارول شي.
+## 2.2 Arithmetic mean || 2.2 حسابی اوسط || 2.2 حسابي اوسط
+p This is the most frequently used measure of central tendency. It is also called mean or average. It is defined as, the sum of all given values divided by the number of values is called Arithmetic mean, that is || یہ مرکزی رجحان کا سب سے زیادہ استعمال ہونے والا پیمانہ ہے۔ اسے اوسط بھی کہتے ہیں۔ اس کی تعریف یہ ہے کہ تمام دی گئی قدروں کا مجموعہ قدروں کی تعداد پر تقسیم کرنے سے حاصل ہونے والی مقدار حسابی اوسط کہلاتی ہے، یعنی || دا د مرکزي تمایل تر ټولو ډېر کارېدونکې اندازه ده. دې ته اوسط هم ویل کېږي. تعریف یې دا دی چې د ټولو ورکړل شویو ارزښتونو مجموعه د ارزښتونو په شمېر تقسیم کړل شي حسابي اوسط بلل کېږي، یعنې
+eq \text{A.M}=\dfrac{\text{Sum of all values}}{\text{Number of values}}
+p Notations used for A.M are μ (in population case) and x̄ (in sample case), so || حسابی اوسط کے لیے استعمال ہونے والی علامتیں μ (مجموعے کی صورت میں) اور x̄ (نمونے کی صورت میں) ہیں، لہٰذا || د حسابي اوسط لپاره کارېدونکې نښې μ (د ټولنې په حالت کې) او x̄ (د نمونې په حالت کې) دي، نو
+eq \mu=\dfrac{\sum_{i=1}^{N}x_i}{N}\qquad\text{(Formula for population mean)}
+eq \bar{x}=\dfrac{\sum_{i=1}^{n}x_i}{n}\qquad\text{(Formula for sample mean)}
+## Example: 2.1 || مثال: 2.1 || بېلګه: 2.1
+q  | For a population of N = 4 values x = 3, 7, 4, 6, the population mean is || N = 4 قدروں x = 3, 7, 4, 6 کے مجموعے کے لیے مجموعی اوسط ہے || د N = 4 ارزښتونو x = 3, 7, 4, 6 د ټولنې لپاره د ټولنې اوسط دی
+eq \mu=\dfrac{\sum x}{N}=\dfrac{3+7+4+6}{4}=\dfrac{20}{4}=5
+## 2.2.1 Computation of arithemetic mean in case of individual series or ungrouped data || 2.2.1 انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں حسابی اوسط کا حساب || 2.2.1 د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې د حسابي اوسط محاسبه
+## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیمه طریقه
+eq \bar{x}=\dfrac{\sum x}{n}
+## Example: 2.2 || مثال: 2.2 || بېلګه: 2.2
+q  | Find mean for the scores 10, 8, 4, 6, and 12. || اسکورز 10, 8, 4, 6 اور 12 کا اوسط معلوم کریں۔ || د نمرو 10, 8, 4, 6 او 12 اوسط ومومئ.
+## Solution: || حل: || حل:
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{40}{5}=8

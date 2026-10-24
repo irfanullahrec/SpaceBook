@@ -1,0 +1,29 @@
+@printed 182
+@status lesson
+@sec 5-ex | Exercise || مشق || تمرین
+eq \text{or}\quad r_{xy}=\dfrac{n\sum xy-\sum x\sum y}{\sqrt{\left[n\sum x^2-\left(\sum x\right)^2\right]\left[n\sum y^2-\left(\sum y\right)^2\right]}}\qquad\text{(Shortcut method)}
+exercise Exercise
+p Interpretation of the Coefficient of Correlation: The numerical value indicates the strength of the relationship while the sign only indicates direction of the relationship. || ارتباط کے عددی سر کی تشریح: عددی قدر تعلق کی مضبوطی ظاہر کرتی ہے جبکہ علامت صرف تعلق کی سمت ظاہر کرتی ہے۔ || د همتړاو د ضریب تفسیر: عددي ارزښت د اړیکې ځواک ښيي پداسې حال کې چې نښه یوازې د اړیکې لوری ښيي.
+p If r_xy = 0 means correlation is zero i.e. x and y are uncorrelated. || اگر r_xy = 0 ہو تو مطلب ارتباط صفر ہے یعنی x اور y غیر مربوط ہیں۔ || که r_xy = 0 وي نو پدې معنا چې همتړاو صفر دی یعنې x او y غیر همتړي دي.
+p > 0 means correlation is positive. || > 0 کا مطلب ارتباط مثبت ہے۔ || > 0 پدې معنا چې همتړاو مثبت دی.
+p < 0 means correlation is negative. || < 0 کا مطلب ارتباط منفی ہے۔ || < 0 پدې معنا چې همتړاو منفي دی.
+p = 1 means there is perfect positive correlation. || = 1 کا مطلب کامل مثبت ارتباط ہے۔ || = 1 پدې معنا چې بشپړ مثبت همتړاو دی.
+p = −1 means there is perfect negative correlation. || = −1 کا مطلب کامل منفی ارتباط ہے۔ || = −1 پدې معنا چې بشپړ منفي همتړاو دی.
+## Example: 5.3 || مثال: 5.3 || بېلګه: 5.3
+q  | Calculate the Karl Pearson coefficient of correlation for the following data. || درج ذیل اعداد و شمار کے لیے کارل پیئرسن کا ارتباطی عددی سر حساب کریں۔ || د لاندې معلوماتو لپاره د Karl Pearson همتړاو ضریب محاسبه کړئ.
+table مثال 5.3: x اور y || Example 5.3: x and y || بېلګه 5.3: x او y
+th | x: | 12 | 9 | 8 | 10 | 11 | 13 | 7
+tr | y: | 14 | 8 | 6 | 9 | 11 | 12 | 3
+endtable
+## Solution: || حل: || حل:
+table مثال 5.3 کا حل: جدول || Example 5.3 solution table || د بېلګې 5.3 د حل جدول
+th | x | y | (x − x̄) | (y − ȳ) | (x − x̄)(y − ȳ) | (x − x̄)² | (y − ȳ)²
+tr | 12 | 14 | 2 | 5 | 10 | 4 | 25
+tr | 9 | 8 | -1 | -1 | 1 | 1 | 1
+tr | 8 | 6 | -2 | -3 | 6 | 4 | 9
+tr | 10 | 9 | 0 | 0 | 0 | 0 | 0
+tr | 11 | 11 | 1 | 2 | 2 | 1 | 4
+tr | 13 | 12 | 3 | 3 | 9 | 9 | 9
+tr | 7 | 3 | -3 | -6 | 18 | 9 | 36
+tr | 70 | 63 | 0 | 0 | 46 | 28 | 84
+endtable

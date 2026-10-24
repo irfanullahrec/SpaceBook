@@ -1,0 +1,24 @@
+@printed 117
+@status lesson
+eq m_2=\dfrac{\sum f(x-\bar{x})^2}{f}=\dfrac{2350}{50}=47
+eq m_3=\dfrac{\sum f(x-\bar{x})^3}{f}=\dfrac{-5250}{50}=-105
+eq m_4=\dfrac{\sum f(x-\bar{x})^4}{f}=\dfrac{281050}{50}=5621
+p Calculation of moments about mean in case of continuous series; || مسلسل سلسلے کی صورت میں اوسط کے گرد معیارِ اثر کا حساب؛ || د دوامدارې لړۍ په حالت کې د اوسط شاوخوا د مومنټونو محاسبه؛
+## Example: 3.18 || مثال: 3.18 || بېلګه: 3.18
+q  | Compute the first four moments about mean for the following data: || درج ذیل اعداد و شمار کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں: || د لاندې معلوماتو لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ:
+table مثال 3.18: طبقات اور تعدد || Example 3.18: classes and frequency || بېلګه 3.18: ټولګي او فریکونسي
+th | Classes: | 0 – 9 | 10 – 19 | 20 – 29 | 30 – 39
+tr | Frequency: | 2 | 4 | 3 | 1
+endtable
+## Solution: || حل: || حل:
+table مثال 3.18 کا حل: جدول || Example 3.18 solution table || د بېلګې 3.18 د حل جدول
+th | Classes | f | x | fx | (x − x̄) | f(x − x̄) | f(x − x̄)² | f(x − x̄)³ | f(x − x̄)⁴
+tr | 0 – 9 | 2 | 4.5 | 9 | -13 | -26 | 338 | -4394 | 57122
+tr | 10 – 19 | 4 | 14.5 | 58 | -3 | -12 | 36 | -108 | 324
+tr | 20 – 29 | 3 | 24.5 | 73.5 | 7 | 21 | 147 | 1029 | 7203
+tr | 30 – 39 | 1 | 34.5 | 34.5 | 17 | 17 | 289 | 4913 | 83521
+tr | Total | 10 |  | 175 | – | – | 810 | 1440 | 148170
+endtable
+eq \bar{x}=\dfrac{\sum fx}{\sum f}=\dfrac{175}{10}=17.5
+sol Now ## Now || اب || اوس
+eq m_1=\dfrac{\sum f(x-\bar{x})}{\sum f}=\dfrac{0}{10}=0\qquad\qquad m_2=\dfrac{\sum f(x-\bar{x})^2}{\sum f}=\dfrac{810}{10}=81

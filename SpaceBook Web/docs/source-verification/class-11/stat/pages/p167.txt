@@ -1,0 +1,24 @@
+@printed 163
+@status lesson
+## Solution: || حل: || حل:
+sol We consider 1939 as base year and 1940 as current year then the necessary calculation required for both methods are given in the following table. ## We consider 1939 as base year and 1940 as current year then the necessary calculation required for both methods are given in the following table. || ہم 1939 کو بنیادی سال اور 1940 کو موجودہ سال لیتے ہیں تو دونوں طریقوں کے لیے مطلوبہ حسابات درج ذیل جدول میں دیے گئے ہیں۔ || موږ 1939 د بنسټیز کال او 1940 د اوسني کال په توګه نیسو نو د دواړو طریقو لپاره اړین محاسبې په لاندې جدول کې ورکړل شوې دي.
+table مثال 4.10 کا حل: جدول || Example 4.10 solution table || د بېلګې 4.10 د حل جدول
+th | Commodities | q0 | p0 | pn | pn q0 | p0 q0 | (pn/p0) | (pn/p0) p0 q0
+tr | Rice | 5 | 6 | 8 | 40 | 30 | 1.333 | 39.99
+tr | Millets | 5 | 4 | 5 | 25 | 20 | 1.25 | 25.00
+tr | Wheat | 1 | 5 | 10 | 10 | 5 | 2.00 | 10.00
+tr | Gram | 1 | 3 | 6 | 6 | 3 | 2.00 | 6.00
+tr | Arhar | 0.5 | 4 | 6 | 3 | 2 | 1.50 | 3.00
+tr | Pulses | 2 | 3 | 4 | 8 | 6 | 1.333 | 7.998
+tr | Ghee | 4 | 1.25 | 2 | 8 | 5 | 1.60 | 8.00
+tr | Gur | 2 | 2.50 | 5 | 10 | 5 | 2.00 | 10.00
+tr | Salt | 2.5 | 4 | 5 | 12.5 | 10 | 1.25 | 12.50
+tr | Oil | 24 | 2 | 2.5 | 60 | 48 | 1.25 | 60.00
+tr | Clothing | 40 | 0.25 | 0.5 | 20 | 10 | 2.00 | 20.00
+tr | Fire-wood | 10 | 0.50 | 0.8 | 8 | 5 | 1.60 | 8.00
+tr | Kerosene oil | 1 | 4 | 6 | 6 | 4 | 1.50 | 6.00
+tr | House rent | 1 | 12 | 15 | 15 | 12 | 1.25 | 15.00
+tr | Total |  | – | – | 231.5 | 165 | – | 231.488
+endtable
+sol (i) CPI for 1940 by aggregative expenditure method is ## (i) CPI for 1940 by aggregative expenditure method is || (i) 1940 کا CPI مجموعی اخراجات کے طریقے سے ہے || (i) د 1940 CPI د مجموعي لګښت په طریقه دی
+eq P_{0n}=\dfrac{\sum p_nq_0}{\sum p_0q_0}\times 100=\dfrac{231.5}{165}\times 100=140.3\ \%

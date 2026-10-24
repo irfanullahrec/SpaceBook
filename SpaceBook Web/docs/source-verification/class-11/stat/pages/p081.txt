@@ -1,0 +1,25 @@
+@printed 77
+@status lesson
+## Solution: || حل: || حل:
+table مثال 2.27: جماعتی سرحدیں || Example 2.27: class boundaries || بېلګه 2.27: د ټولګي پولې
+th | Marks | f | Class boundaries
+tr | 10 – 24 | 6 | 9.5 – 24.5
+tr | 25 – 39 | 20 | 24.5 – 39.5
+tr | 40 – 54 | 44 | 39.5 – 54.5
+tr | 55 – 69 | 26 | 54.5 – 69.5
+tr | 70 – 84 | 3 | 69.5 – 84.5
+tr | 85 – 99 | 1 | 84.5 – 99.5
+endtable
+sol By inspection method we choose 39.5 – 54.5 as the modal class because it has the maximum frequency, therefore ## By inspection method we choose 39.5 – 54.5 as the modal class because it has the maximum frequency, therefore || معائنے کے طریقے سے ہم 39.5 – 54.5 کو عادی جماعت منتخب کرتے ہیں کیونکہ اس کا تعدد سب سے زیادہ ہے، لہٰذا || د معاینې طریقې په واسطه موږ 39.5 – 54.5 د مودي ټولګي په توګه ټاکو ځکه چې فریکونسي یې اعظمي ده، نو
+eq \text{Mode}=l_1+\dfrac{f_m-f_0}{2f_m-f_0-f_1}\times h
+eq =39.5+\dfrac{44-20}{2(44)-20-26}\times15
+eq =39.5+\dfrac{24\times15}{88-46}
+eq =39.5+8.5=48
+## 2.4.4 Calculation of the mode by graphical method || 2.4.4 گرافی طریقے سے عادہ کا حساب || 2.4.4 د مود د ګرافي طریقې محاسبه
+p Prepare a histogram, consider a bar having maximum height and join its top corners with the nearest corners of the adjoining bars by straight line. The point of intersection of the joining line is the mode. || ہسٹوگرام تیار کریں، زیادہ سے زیادہ اونچائی والے بار کو لیں اور اس کے اوپری کونوں کو ملحقہ باروں کے قریب ترین کونوں سے سیدھی لکیر سے ملائیں۔ ملانے والی لکیروں کے تقاطع کا نقطہ عادہ ہے۔ || هیسټوګرام جوړ کړئ، هغه بار واخلئ چې اعظمي لوړوالی ولري او د هغه پورتني کونجونه د نښتو بارونو له نږدې کونجونو سره په سیده کرښه وصل کړئ. د وصلونکو کرښو د تقاطع نقطه مود ده.
+## Example: 2.28 || مثال: 2.28 || بېلګه: 2.28
+q  | Calculate Mode graphically from the following data. || درج ذیل اعداد و شمار سے عادہ گرافی طور پر حساب کریں۔ || له لاندې معلوماتو څخه مود په ګرافي ډول محاسبه کړئ.
+table مثال 2.28: گروہ اور تعدد || Example 2.28: groups and frequency || بېلګه 2.28: ډلې او فریکونسي
+th | Groups: | 10 – 19 | 20 – 29 | 30 – 39 | 40 – 49 | 50 – 59
+tr | Frequency: | 5 | 10 | 20 | 15 | 3
+endtable

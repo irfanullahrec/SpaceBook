@@ -1,0 +1,24 @@
+@printed 138
+@status lesson
+endexercise
+@sec 3-text | Measures of Dispersion, Skewness and Kurtosis || انتشار، کجی اور نوکیلاپن کے پیمانے || د خپراوي، کوړوالي او تېزوالي اندازې
+## Key points || اہم نکات || مهم ټکي
+p The difference between values of a variable around an average value is called dispersion. || کسی اوسط قدر کے گرد متغیر کی قدروں کے درمیان فرق انتشار کہلاتا ہے۔ || د یوه اوسط ارزښت شاوخوا د متغیر د ارزښتونو ترمنځ توپیر خپراوی بلل کېږي.
+p The difference between largest and smallest observations in a data set is called range. || اعداد و شمار کے مجموعے میں سب سے بڑے اور سب سے چھوٹے مشاہدات کا فرق حد (رینج) کہلاتا ہے۔ || په معلوماتو ټولګه کې د تر ټولو لوی او تر ټولو کوچني کتنو توپیر رېنج بلل کېږي.
+p The difference between third and first quartiles divided by 2 is called quartile deviation. || تیسری اور پہلی چوتھائی کے فرق کو 2 پر تقسیم کرنا چوتھائی انحراف کہلاتا ہے۔ || د دریمې او لومړۍ څلورمې توپیر چې پر 2 وویشل شي څلورمه انحراف بلل کېږي.
+p The arithmetic mean of the absolute or mod deviations of observations taken from mean or median or mode is called mean deviation. || اوسط یا وسطانیہ یا عادہ سے لیے گئے مشاہدات کے مطلق یا ماڈ انحرافات کا حسابی اوسط اوسط انحراف کہلاتا ہے۔ || د اوسط یا میانې یا مود څخه اخیستل شویو کتنو د مطلقو یا مود انحرافاتو حسابي اوسط اوسط انحراف بلل کېږي.
+p The positive square root of the average of the squared deviations of observations taken from mean is called standard deviation. || اوسط سے لیے گئے مشاہدات کے مربع انحرافات کے اوسط کا مثبت جذر معیاری انحراف کہلاتا ہے۔ || له اوسط څخه اخیستل شویو کتنو د مربع انحرافاتو د اوسط مثبت جذر معیاري انحراف بلل کېږي.
+p Population standard deviation: (Parameter) || آبادی کا معیاری انحراف: (پیرامیٹر) || د ټولنې معیاري انحراف: (پارامېټر)
+eq \sigma=\sqrt{\dfrac{\sum(x-\mu)^2}{N}}\qquad\text{(Parameter)}
+p Sample standard deviation (biased): (Statistic) || نمونے کا معیاری انحراف (متعصب): (شماریہ) || د نمونې معیاري انحراف (تعصب لرونکی): (احصایه)
+eq S=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n}}\qquad\text{(Statistic)}
+p Sample standard deviation (unbiased): (Statistic) || نمونے کا معیاری انحراف (غیر متعصب): (شماریہ) || د نمونې معیاري انحراف (بې‌تعصبه): (احصایه)
+eq s=\sqrt{\dfrac{\sum(x-\bar{x})^2}{n-1}}\qquad\text{(Statistic)}
+p Variance is the square of the S.D. || تغیر S.D کا مربع ہے۔ || وریانس د S.D مربع دی.
+p The ratio of S.D and the mean expressed in percentage is called coefficient of variation. || S.D اور اوسط کی نسبت جو فیصد میں ظاہر کی جائے تغیر کا عددی سر کہلاتی ہے۔ || د S.D او اوسط نسبت چې په سلنه کې ښودل شي د تغیر ضریب بلل کېږي.
+p The lack of symmetry is called skewness. || تشاکل کی کمی کو کجی کہتے ہیں۔ || د تناسب نشتوالی ته کوړوالی ویل کېږي.
+p The Pearsonian coefficient of skewness, || کجی کا پیئرسنی عددی سر، || د کوړوالي پیرسني ضریب،
+eq Sk=\dfrac{3(Mean-Median)}{S},\qquad -3<Sk<3
+p The Bowley coefficient of skewness || کجی کا باؤلے عددی سر || د کوړوالي بولي ضریب
+eq Sk=\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1},\qquad -1<Sk<1
+p Kurtosis means the peakedness or flatness of the graph of a frequency distribution as compared to the normal curve. || نوکیلا پن تعدد تقسیم کے گراف کا نارمل منحنی کے مقابلے میں نوکیلا یا چپٹا ہونا ہے۔ || تېزوالی د فریکونسي ویش د ګراف د نورمال منحني په پرتله تېز یا چپټ والی دی.

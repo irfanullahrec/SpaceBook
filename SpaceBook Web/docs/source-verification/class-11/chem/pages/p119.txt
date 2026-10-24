@@ -1,0 +1,26 @@
+@printed 115
+@status lesson
+table جدول 4.2 گیس کے نمونے کے درجہ حرارت اور حجم کا ڈیٹا (مستقل کمیت اور دباؤ پر) || Table 4.2 Temperature–Volume Data for a Gas Sample (at Constant Mass and Pressure) || 4.2 جدول د ګاز د نمونې د تودوخې او حجم معلومات (په ثابته کتله او فشار کې)
+th | Celsius temperature (°C) | Temperature (K), °C + 273 | Volume (cm³) | V/T or k (cm³ K⁻¹)
+tr | 273 | 546 | 1092 | 2
+tr | 100 | 373 | 746 | 2
+tr | 10 | 283 | 566 | 2
+tr | 1 | 274 | 548 | 2
+tr | 0 | 273 | 546 | 2
+tr | -1 | 272 | 544 | 2
+tr | -73 | 200 | 400 | 2
+tr | -173 | 100 | 200 | 2
+tr | -223 | 50 | 100 | 2
+tr | -273 | 0 | 0 | 2
+endtable
+p The Kelvin temperature scale is a scale that starts at a temperature of −273.15°C. That temperature is the lowest one possible. The temperature −273.15°C is referred to as absolute zero and is given a value of zero on the Kelvin scale. || کیلون درجہ حرارت کا پیمانہ −273.15°C سے شروع ہوتا ہے، جو ممکنہ کم ترین درجہ حرارت ہے۔ اسے مطلق صفر کہتے ہیں اور کیلون پیمانے پر صفر قدر دیتے ہیں۔ || د کېلوین تودوخې پیمانه له −273.15°C څخه پیلېږي، چې تر ټولو ټیټه ممکنه تودوخه ده. دې ته مطلق صفر ویل کېږي او د کېلوین په پیمانه صفر ارزښت لري.
+p The relation between the Kelvin scale and Celsius scale is: || کیلون اور سیلسیس پیمانوں کا تعلق یہ ہے: || د کېلوین او سانتي‌ګراد پیمانو اړیکه دا ده:
+eq K=\mathrm{^{\circ}C}+273.15
+p (In this book, 273.15 is rounded off to 273.) || (اس کتاب میں 273.15 کو گول کرکے 273 لکھا گیا ہے۔) || (په دې کتاب کې 273.15 نږدې 273 ته ګرد شوی.)
+p It is represented by K, after Lord Kelvin who discovered it; ‘t°C’ is the temperature on Celsius scale and ‘T’ is the Kelvin temperature. || اسے دریافت کرنے والے لارڈ کیلون کے نام پر K سے ظاہر کرتے ہیں؛ ‘t°C’ سیلسیس پیمانے کا درجہ حرارت اور ‘T’ کیلون درجہ حرارت ہے۔ || د کشف کوونکي لارډ کېلوین په نوم په K ښودل کېږي؛ ‘t°C’ د سانتي‌ګراد تودوخه او ‘T’ د کېلوین تودوخه ده.
+eq T=t^{\circ}\mathrm{C}+273
+## Graphical Explanation || گرافی وضاحت || ګرافیکي تشریح
+p A graph is plotted between temperature T on the x-axis and volume V for a given mass of gas according to Table 4.4 at constant pressure; a straight line is obtained. When you extrapolate the graph up to 0 Kelvin (−273°C), this line cuts the temperature axis at −273°C, which is the lowest possible temperature. The line breaks before reaching the temperature of a gas at −273°C. It means that at this temperature either all gases have zero volume or are not in the gaseous state. || مستقل دباؤ پر گیس کی دی ہوئی کمیت کے درجہ حرارت T کو x-محور اور حجم V کو y-محور پر جدول 4.4 کے مطابق ظاہر کریں تو سیدھی لکیر ملتی ہے۔ گراف کو 0 کیلون (−273°C) تک بڑھانے پر لکیر درجہ حرارت کے محور کو −273°C پر کاٹتی ہے، جو ممکنہ کم ترین درجہ حرارت ہے۔ گیس −273°C تک پہنچنے سے پہلے لکیر ٹوٹ جاتی ہے۔ اس کا مطلب ہے کہ اس درجہ حرارت پر گیسوں کا حجم صفر ہو گا یا وہ گیسی حالت میں نہیں رہیں گی۔ || په ثابت فشار کې د ګاز د ورکړل شوې کتلې تودوخه T پر x-محور او حجم V پر y-محور د 4.4 جدول له مخې رسم شي، مستقیمه کرښه ترلاسه کېږي. ګراف 0 کېلوین (−273°C) ته غځول کېږي؛ کرښه د تودوخې محور په −273°C پرې کوي، چې تر ټولو ټیټه ممکنه تودوخه ده. کرښه تر دې مخکې ماتیږي چې ګاز −273°C ته ورسېږي. مانا دا چې په دې تودوخه کې به د ګازونو حجم صفر وي یا به ګازي حالت کې نه وي.
+svg Figure 4.4 Graph between Volume and Temperature for a Gas || شکل 4.4 گیس کے حجم اور درجہ حرارت کا گراف || 4.4 شکل د ګاز د حجم او تودوخې ګراف
+<svg style="background:#fff" viewBox="0 0 560 390" role="img" aria-labelledby="chem11-p120-fig-title"><title id="chem11-p120-fig-title">Figure 4.4 Graph between volume and temperature for a gas</title><path d="M80 330V45M80 330H520" fill="none" stroke="#333" stroke-width="3"/><g stroke="#ddd" stroke-width="1"><path d="M80 330H490M80 270H490M80 210H490M80 150H490M80 90H490M110 45V330M195 45V330M280 45V330M365 45V330M450 45V330"/></g><text x="28" y="190" transform="rotate(-90 28 190)" font-size="18">Volume (cm³)</text><text x="320" y="370" text-anchor="middle" font-size="18">Temperature (°C)</text><path d="M110 330L450 70" stroke="#b65b79" stroke-width="5"/><path d="M110 330L80 353" stroke="#b65b79" stroke-width="3" stroke-dasharray="5 5"/><text x="66" y="378" font-size="16">−273°C</text><text x="280" y="25" text-anchor="middle" font-size="17">V increases with absolute temperature</text></svg>
+endsvg

@@ -1,0 +1,14 @@
+@printed 158
+@status lesson
+table جدول: او ایس آئی تہیں، آلات اور پروٹوکولز || Table: OSI layers, devices and protocols || جدول: د OSI طبقې، وسایل او پروتوکولونه
+th | OSI LAYER | DEVICES | PROTOCOLS
+tr | APPLICATION layer 7 | Gateway | SNMP, SMTP, FTP, TELNET, HTTP, NCP, SMB, AppleTalk, FTAM, X.400,X.500, DAP,DNS
+tr | PRESENTATION layer 6 | Gateway | NCP, AFP, TDI, XDR, SSL, ISO 8823 TLS, PAP, X.226
+tr | SESSION layer 5 | Gateway | NetBIOS, ASP, ADSP, ZIP, ISO 8327, X.225, SAP, SDP
+tr | TRANSPORT layer 4 | Gateway | NetBEUI, TCP, SPX, NWlink, UDP, RTP, SCTP, TP0, TP1, TP2, TP3, TP4, OSPF, SPX, RIP, ATP, NBP, AEP, RTMP
+tr | NETWORK layer 3 | Routers, layer 3 (or IP) switches. | IP, IPX, NWlink, NetBEUI, ICMP, IPsec, ARP, RIP, BGP, X.25 (PLP), CLNP, DDP, IGRP
+tr | DATA LINK layer 2 | Bridges and switches, Ethernet incorporates both this layer and the Physical layer. | X.25 (LAPB., Token Bus, IEEE 802.3 framing, Ethernet II framing, LocalTalk, TokenTalk, EtherTalk, Apple Remote Access, PPP, HDLC, Q.921
+tr | PHYSICAL layer 1 | Hubs, repeaters, network adapters, Parallel SCSI buses. Various physical-layers Ethernet incorporates both this layer and the data-link layer. Token ring, FDDI, and IEEE 802.11. | X.25 (X.21bis), EIA/TIA-232, EIA/TIA-449, EIA-530, G.703
+endtable
+## 5.3 TCP/IP || ۵.۳ ٹی سی پی / آئی پی || ۵.۳ TCP/IP
+p Communications between computers on a network is done through protocol suits. The most widely used and most widely available protocol suite is TCP/IP protocol suite. TCP/IP is an industry standard suite of protocols designed for local and wide area networks. It was developed by the United States || نیٹ ورک پر کمپیوٹرز کے درمیان مواصلات پروٹوکول سوئٹس کے ذریعے ہوتے ہیں۔ سب سے زیادہ استعمال ہونے والا اور سب سے زیادہ دستیاب پروٹوکول سوئٹ ٹی سی پی / آئی پی پروٹوکول سوئٹ ہے۔ ٹی سی پی / آئی پی مقامی اور وسیع علاقے کے نیٹ ورکس کے لیے بنایا گیا پروٹوکولز کا صنعتی معیاری سوئٹ ہے۔ یہ ریاستہائے متحدہ || د شبکې پر کمپیوټرونو ترمنځ اړیکې د پروتوکول ټولګو له لارې کېږي. تر ټولو ډیر کارېدونکې او تر ټولو ډیر شته پروتوکول ټولګه د TCP/IP پروتوکول ټولګه ده. TCP/IP د ځایي او پراخې سیمې شبکو لپاره جوړ شوی د پروتوکولونو صنعتي معیاري ټولګه ده. دا د متحده ایالاتو

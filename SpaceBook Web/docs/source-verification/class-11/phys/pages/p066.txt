@@ -1,0 +1,23 @@
+@printed 64
+@status lesson
+p 2.11.2 Second Condition of Equilibrium: When the vector sum of all torques acting on the body is ZERO then the second condition of equilibrium is satisfied. || ۲.۱۱.۲ توازن کی دوسری شرط: جب جسم پر عمل کرنے والے تمام ٹارک کا سمتی مجموعہ صفر ہو تو توازن کی دوسری شرط پوری ہوتی ہے۔ || ۲.۱۱.۲ د تعادل دویم شرط: کله چې پر جسم د ټولو تاوونو ویکتوري مجموعه صفر وي، د تعادل دویم شرط پوره کېږي.
+p If τ⃗_net is the sum of torques τ⃗₁, τ⃗₂, τ⃗₃, …, τ⃗ₙ then mathematically || که τ⃗_net د τ⃗₁، τ⃗₂، τ⃗₃، …، τ⃗ₙ تاوونو مجموعه وي، نو په ریاضي ډول: || اگر τ⃗_net ٹارک τ⃗₁، τ⃗₂، τ⃗₃، …، τ⃗ₙ کا مجموعہ ہو تو ریاضیاتی طور پر:
+eq \vec\tau_{\mathrm{net}}=\vec\tau_1+\vec\tau_2+\vec\tau_3+\cdots+\vec\tau_n=0
+eq \vec\tau_{\mathrm{net}}=\sum_{i=1}^{n}\vec\tau_i=0\tag{2.16}
+p This idea can also be extended as || دا نظر داسې هم غځېدلی شي || اس خیال کو یوں بھی بڑھایا جا سکتا ہے
+eq \sum\tau_{\mathrm{clockwise}}=\sum\tau_{\mathrm{anti-clockwise}}
+p Which means that for the second condition of equilibrium to be satisfied, clockwise torques must be equal to anti-clockwise torques. || یعنی توازن کی دوسری شرط پوری ہونے کے لیے گھڑی کی سمت کے ٹارک، گھڑی کی مخالف سمت کے ٹارک کے برابر ہونے چاہئیں۔ || یعنې د تعادل د دویم شرط لپاره د ساعت د لوري تاوونه باید د ساعت د مخالف لوري تاوونو سره برابر وي.
+p Where by convention anticlockwise torques are taken as positive and clockwise torques as negative. || قاعدے کے مطابق گھڑی کی مخالف سمت کے ٹارک مثبت اور گھڑی کی سمت کے ٹارک منفی لیے جاتے ہیں۔ || د دود له مخې د ساعت د مخالف لوري تاوونه مثبت او د ساعت د لوري تاوونه منفي ګڼل کېږي.
+p Such that || اس طرح کہ || داسې چې
+eq \vec\tau_{\mathrm{net}}=\sum\vec\tau_{\mathrm{clockwise}}+\sum\vec\tau_{\mathrm{anti-clockwise}}=0
+p 2.11.3 Complete Equilibrium: || ۲.۱۱.۳ مکمل توازن: || ۲.۱۱.۳ بشپړ تعادل:
+p When the first condition is satisfied this means that there is no net force acting on the body, so it will represent translational equilibrium only. || جب پہلی شرط پوری ہو تو اس کا مطلب ہے کہ جسم پر نتیجہ خیز قوت نہیں لگ رہی؛ اس لیے یہ صرف انتقالی توازن ظاہر کرتی ہے۔ || کله چې لومړی شرط پوره شي، پر جسم خالص ځواک نه وي؛ نو یوازې انتقالي تعادل ښيي.
+eq \vec F_{\mathrm{net}}=0
+eq \vec a_{\mathrm{net}}=0
+p Therefore the first condition guarantees only translational equilibrium. || لہٰذا پہلی شرط صرف انتقالی توازن کی ضمانت دیتی ہے۔ || نو لومړی شرط یوازې انتقالي تعادل تضمینوي.
+p When the second condition is satisfied this means that there is no net torque acting on the body, so it will represent rotational equilibrium only. || جب دوسری شرط پوری ہو تو جسم پر خالص ٹارک نہیں لگتا؛ اس لیے یہ صرف دورانی توازن ظاہر کرتی ہے۔ || کله چې دویم شرط پوره شي، پر جسم خالص تاو نه وي؛ نو یوازې دوراني تعادل ښيي.
+eq \vec\tau_{\mathrm{net}}=0
+eq \vec\alpha_{\mathrm{net}}=0
+p Therefore the second condition guarantees only rotational equilibrium. || لہٰذا دوسری شرط صرف دورانی توازن کی ضمانت دیتی ہے۔ || نو دویم شرط یوازې دوراني تعادل تضمینوي.
+p For complete equilibrium both the first and second conditions of equilibrium must be satisfied. For example, in case of a couple we have seen that the first condition is satisfied, but still the object has a tendency to rotate; therefore the object is not in equilibrium with respect to rotation, hence we cannot say that the object is in complete equilibrium. || مکمل توازن کے لیے توازن کی پہلی اور دوسری دونوں شرائط پوری ہونی چاہئیں۔ مثلاً کپل میں پہلی شرط پوری ہوتی ہے، لیکن جسم میں پھر بھی گھومنے کا رجحان ہوتا ہے؛ اس لیے وہ دورانی توازن میں نہیں اور اسے مکمل توازن نہیں کہا جا سکتا۔ || د بشپړ تعادل لپاره باید د تعادل لومړی او دویم شرط دواړه پوره وي. د بېلګې په توګه، په جوړه کې لومړی شرط پوره وي، خو جسم بیا هم د تاوېدو تمایل لري؛ نو د دوراني تعادل په اړه متعادل نه دی او بشپړ تعادل نه شو ورته ویلای.
+p Figure 2.34 shows an object acted upon by forces; the conditions of equilibrium are discussed. || شکل 2.34 میں قوتوں کے زیرِ اثر ایک جسم دکھایا گیا ہے؛ توازن کی شرائط زیرِ بحث ہیں۔ || 2.34 شکل کې یو جسم ښودل شوی چې ځواکونه پرې عمل کوي؛ د تعادل شرطونه څېړل کېږي.

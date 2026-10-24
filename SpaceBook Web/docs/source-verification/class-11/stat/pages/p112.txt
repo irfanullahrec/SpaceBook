@@ -1,0 +1,34 @@
+@printed 108
+@status lesson
+q  | Marks: 5 – 9, 10 – 14, 15 – 19, 20 – 24 with frequencies 10, 20, 30, 15 (data of Example 3.13). || نمبر: 5 – 9، 10 – 14، 15 – 19، 20 – 24 اور تعدد 10، 20، 30، 15 (مثال 3.13 کے اعداد و شمار)۔ || نمرې: 5 – 9، 10 – 14، 15 – 19، 20 – 24 او فریکونسي 10، 20، 30، 15 (د بېلګې 3.13 معلومات).
+table مثال 3.13: نمبر اور تعدد || Example 3.13: marks and frequency || بېلګه 3.13: نمرې او فریکونسي
+th | Marks: | 5 – 9 | 10 – 14 | 15 – 19 | 20 – 24
+tr | Frequency: | 10 | 20 | 30 | 15
+endtable
+## Solution: || حل: || حل:
+sol (i) By direct method ## (i) By direct method || (i) براہِ راست طریقے سے || (i) په مستقیم طریقه
+eq S=\sqrt{\dfrac{\sum f(x-\bar{x})^2}{\sum f}}
+eq S^2=\dfrac{\sum f(x-\bar{x})^2}{\sum f}
+table مثال 3.13: براہِ راست طریقے کا جدول || Example 3.13: direct method table || بېلګه 3.13: د مستقیمې طریقې جدول
+th | Marks | f | x | fx | (x − x̄) | (x − x̄)² | f(x − x̄)²
+tr | 5 – 9 | 10 | 7 | 70 | -8.33 | 69.39 | 693.89
+tr | 10 – 14 | 20 | 12 | 240 | -3.33 | 11.09 | 221.80
+tr | 15 – 19 | 30 | 17 | 510 | 1.67 | 2.79 | 83.70
+tr | 20 – 24 | 15 | 22 | 330 | 6.67 | 44.49 | 667.35
+tr | Total | 75 | – | 1150 | – | – | 1666.75
+endtable
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{1150}{75}=15.33
+eq s=\sqrt{\dfrac{1666.75}{75}}=\sqrt{22.22}=4.71\qquad\text{(Absolute dispersion)}
+eq S^2=\dfrac{1666.75}{75}=22.22
+eq \text{Coefficient of S.D}=\dfrac{s}{\bar{x}}=\dfrac{4.71}{15.33}=0.31\qquad\text{(Relative dispersion)}
+sol (ii) By shortcut method ## (ii) By shortcut method || (ii) مختصر طریقے سے || (ii) په لنډه طریقه
+eq S=\sqrt{\dfrac{\sum fx^2}{\sum f}-\left(\dfrac{\sum fx}{\sum f}\right)^2}
+eq S^2=\dfrac{\sum fx^2}{\sum f}-\left(\dfrac{\sum fx}{\sum f}\right)^2
+table مثال 3.13: مختصر طریقے کا جدول || Example 3.13: shortcut method table || بېلګه 3.13: د لنډې طریقې جدول
+th | Marks | f | x | fx | fx²
+tr | 5 – 9 | 10 | 7 | 70 | 490
+tr | 10 – 14 | 20 | 12 | 240 | 2880
+tr | 15 – 19 | 30 | 17 | 510 | 8670
+tr | 20 – 24 | 15 | 22 | 330 | 7260
+tr | Total | 75 | – | 1150 | 19300
+endtable

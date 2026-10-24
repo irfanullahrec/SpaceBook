@@ -1,0 +1,24 @@
+@printed 115
+@status lesson
+p m1, m2, m3, m4, … (Sample case) and their formulas are; || m1, m2, m3, m4, … (نمونے کی صورت) اور ان کے فارمولے یہ ہیں؛ || m1, m2, m3, m4, … (د نمونې حالت) او د هغوی فورمولونه دا دي؛
+p For ungrouped data || غیر گروہی اعداد و شمار کے لیے || د نه‌ګروپ شویو معلوماتو لپاره
+p For grouped data || گروہی اعداد و شمار کے لیے || د ګروپي معلوماتو لپاره
+eq m_1=\dfrac{\sum(x-\bar{x})}{n}=0\qquad\qquad m_1=\dfrac{\sum f(x-\bar{x})}{\sum f}=0
+eq m_2=\dfrac{\sum(x-\bar{x})^2}{n}=S^2\qquad\qquad m_2=\dfrac{\sum f(x-\bar{x})^2}{\sum f}=S^2
+eq m_3=\dfrac{\sum(x-\bar{x})^3}{n}\qquad\qquad m_3=\dfrac{\sum f(x-\bar{x})^3}{\sum f}
+eq m_4=\dfrac{\sum(x-\bar{x})^4}{n}\qquad\qquad m_4=\dfrac{\sum f(x-\bar{x})^4}{\sum f}
+p This is direct method of computation of moments about mean. || یہ اوسط کے گرد معیارِ اثر کے حساب کا براہِ راست طریقہ ہے۔ || دا د اوسط شاوخوا د مومنټونو د محاسبې مستقیمه طریقه ده.
+p Computation of moments about mean in case of individual series or ungrouped data || انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں اوسط کے گرد معیارِ اثر کا حساب || د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې د اوسط شاوخوا د مومنټونو محاسبه
+## Example: 3.16 || مثال: 3.16 || بېلګه: 3.16
+q  | Calculate the first four moments about mean for the data 1.05, 1.07, 1.19, 1.45. || اعداد و شمار 1.05, 1.07, 1.19, 1.45 کے لیے اوسط کے گرد پہلے چار معیارِ اثر حساب کریں۔ || د معلوماتو 1.05, 1.07, 1.19, 1.45 لپاره د اوسط شاوخوا لومړي څلور مومنټونه محاسبه کړئ.
+## Solution: || حل: || حل:
+table مثال 3.16 کا حل: جدول || Example 3.16 solution table || د بېلګې 3.16 د حل جدول
+th | x | (x − x̄) | (x − x̄)² | (x − x̄)³ | (x − x̄)⁴
+tr | 1.05 | -0.14 | 0.0196 | -0.00274 | 0.000384
+tr | 1.07 | -0.12 | 0.0144 | -0.00173 | 0.000207
+tr | 1.19 | 0 | 0 | 0 | 0
+tr | 1.45 | 0.26 | 0.0676 | 0.017576 | 0.00457
+tr | 4.76 | 0 | 0.1016 | 0.013106 | 0.005161
+endtable
+eq \bar{x}=\dfrac{\sum x}{n}=\dfrac{4.76}{4}=1.19
+eq m_1=\dfrac{\sum(x-\bar{x})}{n}=\dfrac{0}{4}=0

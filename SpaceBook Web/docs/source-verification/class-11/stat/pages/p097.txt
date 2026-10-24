@@ -1,0 +1,24 @@
+@printed 93
+@status lesson
+@sec 3-ex | Exercise || مشق || تمرین
+exercise Exercise
+p of measurement e.g. to compare marks of first year statistics class of a college with the marks of first year statistics class of another college, then absolute dispersion is used. In absolute dispersion case, data and measure of dispersion have same unit of measurement. || اکائی، مثلاً ایک کالج کی پہلے سال کی احصاء جماعت کے نمبروں کا دوسرے کالج کی پہلے سال کی احصاء جماعت کے نمبروں سے موازنہ کرنا ہو، تو مطلق انتشار استعمال ہوتا ہے۔ مطلق انتشار کی صورت میں اعداد و شمار اور انتشار کے پیمانے کی پیمائش کی اکائی ایک ہی ہوتی ہے۔ || د اندازې، لکه د یو کالج د لومړي کال د احصایې ټولګي د نمرو د بل کالج د لومړي کال د احصایې ټولګي له نمرو سره پرتله کول، نو مطلق خپراوی کارول کېږي. د مطلق خپراوي په حالت کې معلومات او د خپراوي اندازه د اندازې یو شان واحد لري.
+p When it is needed to compare two or more series of data having different units of measurement e.g. to compare weights of students of first year statistics class in a college with the heights of students of first year statistics class of another college, then relative dispersion is used. In relative dispersion case data and measure of dispersion have different units of measurement. Relative dispersion is always expressed in terms of coefficient of dispersion, ratio, and percentage. || جب مختلف اکائیوں والے اعداد و شمار کے دو یا زیادہ سلسلوں کا موازنہ کرنا ہو، مثلاً ایک کالج کی پہلے سال کی احصاء جماعت کے طلبہ کے وزن کا دوسرے کالج کی پہلے سال کی احصاء جماعت کے طلبہ کے قد سے موازنہ کرنا ہو، تو اضافی انتشار استعمال ہوتا ہے۔ اضافی انتشار کی صورت میں اعداد و شمار اور انتشار کے پیمانے کی پیمائش کی اکائیاں مختلف ہوتی ہیں۔ اضافی انتشار ہمیشہ انتشار کے عددی سر، تناسب اور فیصد کی صورت میں ظاہر کیا جاتا ہے۔ || کله چې د اندازې د بېلابېلو واحدونو لرونکو معلوماتو د دوو یا ډېرو لړیو پرتله کول اړین وي لکه د یو کالج د لومړي کال د احصایې ټولګي د زده کوونکو د وزن د بل کالج د لومړي کال د احصایې ټولګي د زده کوونکو له قد سره پرتله کول، نو نسبي خپراوی کارول کېږي. د نسبي خپراوي په حالت کې معلومات او د خپراوي اندازه د اندازې بېلابېل واحدونه لري. نسبي خپراوی تل د خپراوي ضریب، نسبت او سلنې په اصطلاح ښودل کېږي.
+## 3.1.5 Properties of a good measure of dispersion || 3.1.5 انتشار کے اچھے پیمانے کی خصوصیات || 3.1.5 د خپراوي د ښې اندازې ځانګړتیاوې
+p A good measure of dispersion is one which is; || انتشار کا اچھا پیمانہ وہ ہے جو؛ || د خپراوي ښه اندازه هغه ده چې؛
+p (i) simple to understand and easy to calculate || (i) سمجھنے میں آسان اور حساب کرنے میں سادہ ہو || (i) د پوهېدو لپاره ساده او د محاسبې لپاره اسانه وي
+p (ii) based on all the observations || (ii) تمام مشاہدات پر مبنی ہو || (ii) پر ټولو کتنو والړ وي
+p (iii) less affected by extreme values || (iii) انتہائی قدروں سے کم متاثر ہو || (iii) د سختو ارزښتونو لخوا لږ اغېزمن وي
+p (iv) follows general rules of mathematics || (iv) ریاضی کے عمومی قواعد کی پیروی کرے || (iv) د ریاضي عمومي قواعد تعقیب کړي
+p (v) capable of further statistical treatment. || (v) مزید شماریاتی عمل کے قابل ہو۔ || (v) د نورې احصایوي پروسې وړ وي.
+## 3.2 Range || 3.2 حد (رینج) || 3.2 رېنج
+p The difference between largest and smallest observations in a data set is called range. || اعداد و شمار کے مجموعے میں سب سے بڑے اور سب سے چھوٹے مشاہدات کا فرق حد (رینج) کہلاتا ہے۔ || په معلوماتو ټولګه کې د تر ټولو لوی او تر ټولو کوچني کتنو توپیر رېنج بلل کېږي.
+p It is the simplest measure of dispersion. It is denoted by R. Mathematically; || یہ انتشار کا سب سے سادہ پیمانہ ہے۔ اسے R سے ظاہر کیا جاتا ہے۔ ریاضیاتی طور پر؛ || دا د خپراوي تر ټولو ساده اندازه ده. دا په R ښودل کېږي. ریاضیاتي ډول؛
+eq R=x_L-x_S\qquad\text{(Absolute dispersion)}
+eq \text{Coefficient of range}=\dfrac{x_L-x_S}{x_L+x_S}\qquad\text{(Relative dispersion)}
+## 3.2.1 Computation of range || 3.2.1 حد کا حساب || 3.2.1 د رېنج محاسبه
+p (i) Range in case of individual series or ungrouped data || (i) انفرادی سلسلے یا غیر گروہی اعداد و شمار کی صورت میں حد || (i) د انفرادي لړۍ یا نه‌ګروپ شویو معلوماتو په حالت کې رېنج
+## Example: 3.1 || مثال: 3.1 || بېلګه: 3.1
+q  | The marks of 12 students in a class test are 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 and 53. Find range and coefficient of range. || ایک جماعتی ٹیسٹ میں 12 طلبہ کے نمبر 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 اور 53 ہیں۔ حد اور حد کا عددی سر معلوم کریں۔ || په یوه ټولګیزه ازموینه کې د 12 زده کوونکو نمرې 84, 73, 55, 15, 85, 41, 20, 24, 36, 35, 40 او 53 دي. رېنج او د رېنج ضریب ومومئ.
+## Solution: || حل: || حل:
+sol Here xL = 85 ## Here xL = 85 || یہاں xL = 85 || دلته xL = 85

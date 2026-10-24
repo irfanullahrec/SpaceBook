@@ -1,0 +1,27 @@
+@printed 8
+@status lesson
+@sec 1-ex | Exercise || مشق || تمرین
+exercise Example: 1.1
+q  | What statistical procedure is suitable for nominal, ordinal, interval and ratio type data? || اسمی، ترتیبی، وقفہ جاتی اور تناسبی قسم کے اعداد و شمار کے لیے کون سا شماریاتی طریقہ موزوں ہے؟ || نومي، ترتیبي، انټروال او تناسبي ډول معلوماتو لپاره کوم احصایوي طریقه مناسبه ده؟
+## Solution: || حل: || حل:
+sol To decide upon a statistical procedure, which is best to apply on a particular type of data it is important to differentiate between categorical data (nominal data), ranked data (ordinal measurements) and numerical data (interval and ratio measurements), shown in the following table. ## To decide upon a statistical procedure, which is best to apply on a particular type of data it is important to differentiate between categorical data (nominal data), ranked data (ordinal measurements) and numerical data (interval and ratio measurements), shown in the following table. || کسی خاص قسم کے اعداد و شمار پر لاگو کرنے کے لیے بہترین شماریاتی طریقہ طے کرنے کے لیے زمرہ وار اعداد و شمار (اسمی اعداد و شمار)، درجہ بند اعداد و شمار (ترتیبی پیمائشیں) اور عددی اعداد و شمار (وقفہ جاتی اور تناسبی پیمائشیں) کے درمیان فرق کرنا ضروری ہے، جو درج ذیل جدول میں دکھایا گیا ہے۔ || د یو ځانګړي ډول معلوماتو لپاره د پلي کولو غوره احصایوي طریقې د ټاکلو لپاره د کټګوریز معلوماتو (نومي معلومات)، رتبه‌ایز معلوماتو (ترتیبي اندازې) او شمېرنیزو معلوماتو (انټروال او تناسبي اندازې) ترمنځ توپیر کول مهم دي، چې په لاندې جدول کې ښودل شوي.
+table اعداد و شمار کی قسم (N: اسمی، O: ترتیبی، I: وقفہ جاتی، R: تناسبی) || Type of data (N: nominal, O: ordinal, I: interval, R: ratio) || د معلوماتو ډول (N: نومي، O: ترتیبي، I: انټروال، R: تناسبي)
+th | Type of the descriptive Statistic | N | O | I | R
+tr | The order of values |  | ✓ | ✓ | ✓
+tr | Frequency distribution | ✓ | ✓ | ✓ | ✓
+tr | Mean |  |  | ✓ | ✓
+tr | Median |  | ✓ | ✓ | ✓
+tr | Mode | ✓ | ✓ | ✓ | ✓
+tr | Can quantify the difference between each value |  |  | ✓ | ✓
+tr | Can add or subtract values |  |  | ✓ | ✓
+tr | Can multiply and divide values |  |  |  | ✓
+tr | Has true zero |  |  |  | ✓
+endtable
+## 1.3.1 Error of measurement || 1.3.1 پیمائش کی غلطی || 1.3.1 د اندازې تېروتنه
+p Exact measurements, even if sensitive instruments are used, are not possible. There will be a difference, however small it may be, between the observed value and the true value. This difference is called error of measurement i.e. Error = observed value – true value || حساس آلات استعمال کرنے کے باوجود بھی عین پیمائشیں ممکن نہیں ہیں۔ مشاہدہ شدہ قدر اور حقیقی قدر کے درمیان کچھ نہ کچھ فرق، خواہ کتنا ہی چھوٹا ہو، ہوگا۔ اس فرق کو پیمائش کی غلطی کہتے ہیں یعنی غلطی = مشاہدہ شدہ قدر – حقیقی قدر۔ || دقیقې اندازې، حتی که حساسې وسیلې وکارول شي، ممکنې نه دي. د کتل شوي ارزښت او اصلي ارزښت ترمنځ به یو توپیر وي، که څه هم کوچنی وي. دې توپیر ته د اندازې تېروتنه ویل کېږي یعنې تېروتنه = کتل شوی ارزښت – اصلي ارزښت.
+## 1.3.2 Rounding off numbers || 1.3.2 اعداد کو قریبی عدد بنانا || 1.3.2 د شمېرو ګردول
+p Rounding off numbers to the nearest whole number or to the nearest decimal place is often carried out in the statistical computations, depending upon the number of decimal places required. For this purpose, the following rules may be employed. || مطلوبہ اعشاری مقامات کی تعداد کے مطابق شماریاتی حسابات میں اکثر اعداد کو قریب ترین مکمل عدد یا قریب ترین اعشاری مقام تک گول کیا جاتا ہے۔ اس مقصد کے لیے درج ذیل قواعد استعمال کیے جا سکتے ہیں۔ || د اړینو اعشاري ځایونو د شمېر پر اساس په احصایوي محاسبو کې ډېر ځله شمېرې نږدې بشپړ عدد یا نږدې اعشاري ځای ته ګردېږي. د دې موخې لپاره لاندې قواعد کارول کېدای شي.
+## Rule-i || قاعدہ-i || قاعده-i
+p If the last digit is less than 5, it is dropped. For example, 0.754 = 0.75 and 0.673 = 0.67 || اگر آخری ہندسہ 5 سے کم ہو تو اسے چھوڑ دیا جاتا ہے۔ مثال کے طور پر 0.754 = 0.75 اور 0.673 = 0.67 || که وروستی رقم له 5 څخه کمه وي نو لرې کېږي. د مثال په توګه 0.754 = 0.75 او 0.673 = 0.67
+## Rule-ii || قاعدہ-ii || قاعده-ii
+p If the last digit is more than 5, the preceding digit is raised to the next || اگر آخری ہندسہ 5 سے زیادہ ہو تو اس سے پہلے والا ہندسہ اگلے || که وروستی رقم له 5 څخه زیاته وي نو مخکینۍ رقم بلې

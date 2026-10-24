@@ -1,0 +1,18 @@
+@printed 126
+@status lesson
+p third mean moments need no correction. || تیسرا اوسطی معیارِ اثر کو تصحیح کی ضرورت نہیں۔ || دریم اوسط مومنټونه سمون ته اړتیا نه لري.
+eq m_2(\text{corrected})=m_2(\text{uncorrected})-\dfrac{h^2}{12}
+eq m_4(\text{corrected})=m_4(\text{uncorrected})-\dfrac{h^2}{2}\,m_2(\text{uncorrected})+\dfrac{7}{240}h^4
+p All moments calculated in previous examples are uncorrected. Put them in these formulas to get corrected moments and variance. || پچھلی مثالوں میں حساب کیے گئے تمام معیارِ اثر غیر تصحیح شدہ ہیں۔ تصحیح شدہ معیارِ اثر اور تغیر حاصل کرنے کے لیے انہیں ان فارمولوں میں رکھیں۔ || په تېرو بېلګو کې محاسبه شوي ټول مومنټونه ناسمون شوي دي. سمون شوي مومنټونه او وریانس ترلاسه کولو لپاره دا په دې فورمولونو کې کېږدئ.
+## 3.6.3 Moment ratios || 3.6.3 معیارِ اثر کے تناسب || 3.6.3 د مومنټ نسبتونه
+p Name of the ratios tells that both numerators and denominators will have moments: The commonly used moment ratios given by Karl Pearson are: || تناسب کا نام بتاتا ہے کہ شمار کنندہ اور نسب نما دونوں میں معیارِ اثر ہوں گے۔ کارل پیئرسن کے دیے ہوئے عام طور پر استعمال ہونے والے معیارِ اثر کے تناسب یہ ہیں: || د نسبتونو نوم ښیي چې شمېرونکی او مخرج دواړه به مومنټونه ولري: د Karl Pearson لخوا ورکړل شوي عموماً کارېدونکي د مومنټ نسبتونه دا دي:
+eq \beta_1=\dfrac{\mu_3^2}{\mu_2^3},\qquad \beta_2=\dfrac{\mu_4}{\mu_2^2}\qquad\text{(Population case)}
+p where β is Greek alphabet pronounced as beta. || جہاں β یونانی حرف ہے جسے بیٹا پڑھا جاتا ہے۔ || چېرته چې β یوناني توری دی چې بیټا تلفظ کېږي.
+eq b_1=\dfrac{m_3^2}{m_2^3},\qquad b_2=\dfrac{m_4}{m_2^2}\qquad\text{(Sample case)}
+p Due to some mathematical flaws, Karl Pearson redefined moment ratios which are independent of origin and scale of measurement as follows; || کچھ ریاضیاتی نقائص کی وجہ سے کارل پیئرسن نے معیارِ اثر کے تناسب کو دوبارہ بیان کیا جو مبدا اور پیمائش کے پیمانے سے آزاد ہیں، جو یوں ہیں؛ || د ځینو ریاضیاتي نیمګړتیاوو له امله Karl Pearson د مومنټ نسبتونه بیا تعریف کړل چې د اصل او اندازې د پیمانې څخه خپلواک دي، په دې توګه؛
+eq \gamma_1=\sqrt{b_1}=\sqrt{\dfrac{m_3^2}{m_2^3}}=\dfrac{m_3}{m_2^{3/2}}=\dfrac{m_3}{S^3},\qquad -\infty<\gamma_1<\infty
+eq \gamma_2=b_2-3=\dfrac{m_4}{m_2^2}-3=\dfrac{m_4}{S^4}-3,\qquad -\infty<\gamma_2<\infty
+p where γ is Greek alphabet pronounced as gamma. || جہاں γ یونانی حرف ہے جسے گیما پڑھا جاتا ہے۔ || چېرته چې γ یوناني توری دی چې ګاما تلفظ کېږي.
+p These are standard measures and give important information about the shape of the distribution, that is γ1 tells about skewness and γ2 about kurtosis. || یہ معیاری پیمانے ہیں اور تقسیم کی شکل کے بارے میں اہم معلومات دیتے ہیں، یعنی γ1 کجی کے بارے میں اور γ2 نوکیلے پن کے بارے میں بتاتا ہے۔ || دا معیاري اندازې دي او د ویش د شکل په اړه مهمې معلومات ورکوي، یعنې γ1 د کوړوالي په اړه او γ2 د تېزوالي په اړه وايي.
+## Example 3.25 || مثال 3.25 || بېلګه 3.25
+q  | The first four moments about the P.M = 35, h = 3 are 0.45, 8.73, 12.15 and 204.93. || عارضی اوسط P.M = 35، h = 3 کے گرد پہلے چار معیارِ اثر 0.45, 8.73, 12.15 اور 204.93 ہیں۔ || د لنډمهاله اوسط P.M = 35، h = 3 شاوخوا لومړي څلور مومنټونه 0.45, 8.73, 12.15 او 204.93 دي.

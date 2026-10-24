@@ -1,0 +1,24 @@
+@printed 39
+@status lesson
+@sec 2-ex | Exercise || مشق || تمرین
+exercise Exercise
+p Thus, equation 2.15 becomes as, || لہٰذا مساوات 2.15 یوں بن جاتی ہے، || نو معادله 2.15 داسې کېږي،
+eq E_n=-2.18\times10^{-18}\left(\frac1{n^2}\right)\mathrm{J/atom}
+p Or || یا || یا
+eq E_n=-2.18\times10^{-18}\left(\frac1{n^2}\right)\times\frac{6.022\times10^{23}}{1000}\mathrm{kJ/mol}
+eq E_n=-\frac{1312.36}{n^2}\mathrm{kJ/mol}\qquad(2.17)
+p Equations (2.16) and (2.17) show that energy of the electron in an atom depends on the value of ‘n’, it is, therefore, called the principal quantum number. Further, the energy state associated with, n = 1 is called the ground state energy and represents the lowest energy state. All energy states higher than n=1 are called excited state for hydrogen atom. || مساواتیں (2.16) اور (2.17) ظاہر کرتی ہیں کہ ایٹم میں الیکٹران کی توانائی «n» کی قدر پر منحصر ہے، اس لیے اسے بنیادی کوانٹم عدد کہتے ہیں۔ مزید یہ کہ n = 1 سے وابستہ توانائی کی حالت بنیادی حالت کی توانائی کہلاتی ہے اور سب سے کم توانائی کی حالت کو ظاہر کرتی ہے۔ ہائیڈروجن ایٹم کے لیے n=1 سے بلند تمام توانائی کی حالتیں برانگیختہ حالت کہلاتی ہیں۔ || معادلې (2.16) او (2.17) ښيي چې په اټوم کې د الکترون انرژي د «n» په ارزښت پورې تړلې ده، نو اصلي کوانټمي شمېره بلل کېږي. همدارنګه له n = 1 سره تړلی د انرژۍ حالت د بنسټیز حالت انرژي بلل کېږي او د انرژۍ تر ټولو ټیټ حالت ښيي. د هایدروجن اټوم لپاره له n=1 څخه لوړ ټول انرژي حالتونه پارېدلی حالت بلل کېږي.
+p The energy associated with the electron in various orbits (different ‘n’ values), can be calculated using equation (2.17). || مختلف مداروں («n» کی مختلف قدروں) میں الیکٹران سے وابستہ توانائی مساوات (2.17) استعمال کرکے معلوم کی جا سکتی ہے۔ || په بېلابېلو مدارونو (د «n» بېلابېل ارزښتونه) کې له الکترون سره تړلې انرژي د معادلې (2.17) په کارولو محاسبه کېدای شي.
+eq \begin{aligned}\text{When }n=1,\quad E_1&=-1312.36\mathrm{kJ/mol}\\n=2,\quad E_2&=-328.32\mathrm{kJ/mol}\\n=3,\quad E_3&=-145.92\mathrm{kJ/mol}\end{aligned}
+p It is evident from the above calculations that the energy of electron increases as the value of ‘n’ increases. || مندرجہ بالا حسابات سے واضح ہے کہ «n» کی قدر بڑھنے کے ساتھ الیکٹران کی توانائی بڑھتی ہے۔ || له پورتنیو محاسبو څرګندېږي چې د «n» ارزښت په زیاتېدو د الکترون انرژي زیاتېږي.
+## Activity No. 2 || سرگرمی نمبر 2 || فعالیت شمېره 2
+q  | You may also try for E₂ − E₁, E₃ − E₂, E₄ − E₃ and E₅ − E₄ etc. to check what happens to the difference in energies between two successive energy levels (orbits) as you move away from the nucleus? || آپ E₂ − E₁، E₃ − E₂، E₄ − E₃ اور E₅ − E₄ وغیرہ کے لیے بھی کوشش کریں تاکہ جانچ سکیں کہ مرکزے سے دور جانے پر دو مسلسل توانائی کی سطحوں (مداروں) کے درمیان توانائیوں کے فرق کا کیا ہوتا ہے؟ || د E₂ − E₁، E₃ − E₂، E₄ − E₃ او E₅ − E₄ او نورو لپاره هم هڅه وکړئ څو وګورئ چې له هستې څخه په لرې کېدو د دوو پرله پسې انرژي کچو (مدارونو) ترمنځ د انرژیو توپیر ته څه پېښېږي؟
+## Practice Problem 2.2 || مشق کا مسئلہ 2.2 || تمریني مسئله 2.2
+q  | Calculate the energy of 4ᵗʰ and 5ᵗʰ levels of the hydrogen atom. || ہائیڈروجن ایٹم کی چوتھی اور پانچویں سطحوں کی توانائی معلوم کریں۔ || د هایدروجن اټوم د څلورمې او پنځمې کچې انرژي محاسبه کړئ.
+## 3. Energy Difference between Two Orbits || 3. دو مداروں کے درمیان توانائی کا فرق || 3. د دوو مدارونو ترمنځ د انرژۍ توپیر
+p You have the energy equation 2.14, || آپ کے پاس توانائی کی مساوات 2.14 ہے، || د انرژۍ معادله 2.14 لرئ،
+eq E=-\frac{e^4m}{8\varepsilon_0^2h^2}\times\frac{Z^2}{n^2}
+p Let E₁ be the energy of orbit n₁ and E₂ be the energy of the orbit n₂, then the above energy equation, for the two orbits || فرض کریں E₁ مدار n₁ کی توانائی اور E₂ مدار n₂ کی توانائی ہے، تو دونوں مداروں کے لیے مندرجہ بالا توانائی کی مساوات || فرض کړئ E₁ د n₁ مدار انرژي او E₂ د n₂ مدار انرژي ده، نو د دواړو مدارونو لپاره پورتنۍ انرژي معادله
+svg Fig 2.10 Energy Difference between Two Orbits || شکل 2.10 دو مداروں کے درمیان توانائی کا فرق || شکل 2.10 د دوو مدارونو ترمنځ د انرژۍ توپیر
+<svg viewBox="0 0 430 350" role="img" aria-labelledby="chem11-p044-orbits-title"><title id="chem11-p044-orbits-title">Fig 2.10 Energy Difference between Two Orbits</title><rect width="430" height="350" fill="white"/><g fill="none" stroke="#bc5681" stroke-width="3"><circle cx="155" cy="169" r="30"/><circle cx="155" cy="169" r="77"/><circle cx="155" cy="169" r="130"/><path d="M216 53L191 102M216 53Q224 40 234 53T254 53T274 53T294 53T314 53T334 53H378M169 169L330 184"/></g><g fill="#bc5681"><circle cx="155" cy="169" r="17"/><circle cx="216" cy="53" r="7" fill="#e4b454"/><path d="M191 102L191 86L203 93Z"/><path d="M378 53L365 46V60Z"/><path d="M330 184L318 176V191Z"/></g><g font-family="sans-serif" fill="#223849" font-size="20"><text x="130" y="225">n = 1</text><text x="130" y="284">n = 2</text><text x="130" y="328">n = 3</text><text x="292" y="87">E=hν</text><text x="334" y="191">Nucleus</text></g></svg>
+endsvg

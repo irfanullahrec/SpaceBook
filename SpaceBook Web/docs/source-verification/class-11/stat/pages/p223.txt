@@ -1,0 +1,28 @@
+@printed 219
+@status lesson
+@sec 7-ex | Exercise || مشق || تمرین
+exercise Example: 7.1
+q  | Compute sex-ratios by age for the following data. || درج ذیل اعداد و شمار کے لیے عمر کے لحاظ سے جنسی تناسب حساب کریں۔ || د لاندې معلوماتو لپاره د عمر له مخې د جنس نسبتونه محاسبه کړئ.
+table مثال 7.1: عمر کے گروہ کے لحاظ سے آبادی اور جنسی تناسب || Example 7.1: population by age group and sex-ratios || بېلګه 7.1: د عمري ډلې له مخې نفوس او د جنس نسبتونه
+th | Age group (years) | Population: Male | Population: Female | Sex ratios
+tr | 0 - 1 | 12680 | 10255 | 12680/10255 × 100 = 123.6
+tr | 2 - 4 | 12711 | 10284 | 123.6
+tr | 5 - 14 | 12523 | 10200 | 122.8
+tr | 15 - 24 | 12690 | 10327 | 122.9
+tr | 25 - 34 | 12706 | 10353 | 122.7
+tr | 35 - 44 | 12600 | 10347 | 121.8
+tr | 45 - 59 | 12696 | 10322 | 123.0
+tr | 60 over | 12668 | 10277 | 123.3
+tr | All ages | 101274 | 82365 | 123.0
+endtable
+sol Sex ratios in all age groups reveal that males are more than female in each group. ## Sex ratios in all age groups reveal that males are more than female in each group. || تمام عمر کے گروہوں میں جنسی تناسب ظاہر کرتا ہے کہ ہر گروہ میں مرد عورتوں سے زیادہ ہیں۔ || په ټولو عمري ډلو کې د جنس نسبتونه ښيي چې په هره ډله کې نارینه له ښځو څخه ډېر دي.
+p (ii) Child-women ratio || (ii) بچے اور عورتوں کا تناسب || (ii) د ماشوم او ښځو نسبت
+p The ratio between children under 5 years of age and the women of child bearing age is called a child women ratio i.e. || 5 سال سے کم عمر کے بچوں اور بچے پیدا کرنے کی عمر کی عورتوں کے درمیان تناسب بچے اور عورتوں کا تناسب کہلاتا ہے یعنی || د 5 کلونو څخه کم عمر ماشومانو او د ماشوم زېږولو عمر ښځو تر منځ نسبت د ماشوم او ښځو نسبت بلل کېږي یعنې
+eq \text{Child women ratio}=\dfrac{P_{0-4}}{P_f}\times 1000
+p where P_0–4 denotes the number of children, both sexes combined, under 5 years of age and P_f denotes the number of females between age 15 to 44. Note that age 15 - 44 or 15 - 49 is known as child bearing age. || جہاں P_0–4 5 سال سے کم عمر کے بچوں کی تعداد کو ظاہر کرتا ہے، دونوں جنسیں ملا کر، اور P_f عمر 15 سے 44 کے درمیان عورتوں کی تعداد کو ظاہر کرتا ہے۔ نوٹ کریں کہ عمر 15 - 44 یا 15 - 49 بچے پیدا کرنے کی عمر کے طور پر جانی جاتی ہے۔ || چېرته چې P_0–4 د 5 کلونو څخه کم عمر د ماشومانو شمېر ښيي، دواړه جنسونه یوځای، او P_f د 15 څخه تر 44 کلنۍ ترمنځ د ښځو شمېر ښيي. پام وکړئ چې عمر 15 - 44 یا 15 - 49 د ماشوم زېږولو عمر په نوم پیژندل کېږي.
+p (iii) Vital index || (iii) حیاتیاتی اشاریہ || (iii) حیاتي شاخص
+p The ratio between the total numbers of births to the total number of deaths of a population during a particular year is called vital index or birth-death ratio i.e. || کسی خاص سال کے دوران آبادی میں پیدائشوں کی کل تعداد اور اموات کی کل تعداد کے درمیان تناسب حیاتیاتی اشاریہ یا پیدائش و اموات کا تناسب کہلاتا ہے یعنی || په یوه ځانګړي کال کې د نفوس د زېږونونو د ټول شمېر او د مړینو د ټول شمېر تر منځ نسبت حیاتي شاخص یا د زېږون او مړینې نسبت بلل کېږي یعنې
+eq \text{Vital index}=\dfrac{\text{total number of births}}{\text{total number of deaths}}\times 100
+p If vital index > 100, it means population is increasing || اگر حیاتیاتی اشاریہ > 100 ہو تو اس کا مطلب ہے کہ آبادی بڑھ رہی ہے || که حیاتي شاخص > 100 وي نو پدې معنا چې نفوس زیاتېږي
+p < 100, it means population is decreasing || < 100 کا مطلب ہے کہ آبادی گھٹ رہی ہے || < 100 پدې معنا چې نفوس کمېږي
+p = 100, it means population is stable. || = 100 کا مطلب ہے کہ آبادی مستحکم ہے۔ || = 100 پدې معنا چې نفوس ثابت دی.

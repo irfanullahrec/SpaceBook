@@ -1,0 +1,20 @@
+@printed 190
+@status lesson
+endexercise
+@sec 5-text | Simple Linear Regression and Correlation || سادہ خطی تانتجہ (ریگریشن) اور ہم رشتگی || ساده خطي ریګرېشن او اړیکه
+## Key points || اہم نکات || مهم ټکي
+p A Statistical technique used for prediction about the values of a dependent variable on the basis of the known values of an independent variable is called regression. || وہ شماریاتی تکنیک جو آزاد متغیر کی معلوم قدروں کی بنیاد پر تابع متغیر کی قدروں کے بارے میں پیش گوئی کے لیے استعمال ہوتی ہے ریگریشن کہلاتی ہے۔ || هغه احصایوي تخنیک چې د خپلواک متغیر د پېژندل شویو ارزښتونو پر بنسټ د تابع متغیر د ارزښتونو په اړه د وړاندوینې لپاره کارول کېږي ریګرېشن بلل کېږي.
+p Scatter diagram is a graphic device which makes it possible to see a line or curve whose equation is required. || بکھراؤ خاکہ ایک تصویری آلہ ہے جو اس لکیر یا منحنی کو دیکھنا ممکن بناتا ہے جس کی مساوات درکار ہو۔ || د خپرېدو ډیاګرام یوه انځورییزه وسیله ده چې هغه کرښه یا منحني لیدل ممکنوي چې معادله یې اړینه وي.
+p When the dependent variable is regressed on the basis of a single independent variable, it is called simple regression. || جب تابع متغیر کو ایک ہی آزاد متغیر کی بنیاد پر ریگریس کیا جائے تو اسے سادہ ریگریشن کہتے ہیں۔ || کله چې تابع متغیر د یوه واحد خپلواک متغیر پر بنسټ ریګرېس شي نو دې ته ساده ریګرېشن ویل کېږي.
+p When the dependent variable is regressed on the basis of two or more independent variables, it is called multiple regression. || جب تابع متغیر کو دو یا زیادہ آزاد متغیرات کی بنیاد پر ریگریس کیا جائے تو اسے متعدد ریگریشن کہتے ہیں۔ || کله چې تابع متغیر د دوو یا ډېرو خپلواکو متغیرونو پر بنسټ ریګرېس شي نو دې ته څو‌ګونی ریګرېشن ویل کېږي.
+p The estimated least squares regression line of y depending on x is ŷ = a_y.x + b_y.x x, || x پر منحصر y کی تخمینی کم از کم مربعات ریگریشن لکیر ہے ŷ = a_y.x + b_y.x x، || د x پورې تړلي د y اټکل شوې د لږ تر لږه مربعاتو ریګرېشن کرښه ده ŷ = a_y.x + b_y.x x،
+eq b_{y.x}=\dfrac{n\sum xy-\sum x\sum y}{n\sum x^2-\left(\sum x\right)^2}
+eq a_{y.x}=\dfrac{\sum y}{n}-b_{y.x}\left(\dfrac{\sum x}{n}\right)
+p A statistical technique which measures the strength of relationship between two quantitative variables is called simple correlation. || وہ شماریاتی تکنیک جو دو مقداری متغیرات کے درمیان تعلق کی مضبوطی کو ناپتی ہے سادہ ارتباط کہلاتی ہے۔ || هغه احصایوي تخنیک چې د دوو کمیتي متغیرونو تر منځ د اړیکې ځواک اندازه کوي ساده همتړاو بلل کېږي.
+p It the two variables are moving in the same direction (i.e. both increase or both decrease), it is called positive correlation. || اگر دو متغیرات ایک ہی سمت میں حرکت کر رہے ہوں (یعنی دونوں بڑھیں یا دونوں گھٹیں) تو اسے مثبت ارتباط کہتے ہیں۔ || که دوه متغیره په یو لوري حرکت کوي (یعنې دواړه زیاتېږي یا دواړه کمېږي) نو دې ته مثبت همتړاو ویل کېږي.
+p It the two variables are moving in the opposite direction (i.e. one increases the other, decreases), it is called negative correlation. || اگر دو متغیرات مخالف سمت میں حرکت کر رہے ہوں (یعنی ایک بڑھے تو دوسرا گھٹے) تو اسے منفی ارتباط کہتے ہیں۔ || که دوه متغیره په مخالف لوري حرکت کوي (یعنې یو زیاتېږي بل کمېږي) نو دې ته منفي همتړاو ویل کېږي.
+eq r_{xy}=\dfrac{\sum(x-\bar{x})(y-\bar{y})}{\sqrt{\sum(x-\bar{x})^2\sum(y-\bar{y})^2}}\ ,\qquad -1\le r_{xy}\le 1
+p The coefficient of correlation is the geometric mean of the two regression coefficients i.e. r_xy = √(b_y.x × b_x.y) || ارتباطی عددی سر دو ریگریشن عددی سروں کا ہندسی اوسط ہے یعنی r_xy = √(b_y.x × b_x.y) || د همتړاو ضریب د دوو ریګرېشن ضریبونو هندسي اوسط دی یعنې r_xy = √(b_y.x × b_x.y)
+eq r_{xy}=\sqrt{b_{y.x}\times b_{x.y}}
+p Spearman rank correlation is used to study the relationship between two set of ranks. || سپیئرمین درجاتی ارتباط درجوں کے دو سیٹوں کے درمیان تعلق کا مطالعہ کرنے کے لیے استعمال ہوتا ہے۔ || د Spearman رتبه‌یي همتړاو د رتبو د دوو سیټونو تر منځ د اړیکې د مطالعې لپاره کارول کېږي.
+eq r_s=1-\dfrac{6\sum d^2}{n^3-n}\ ,\qquad -1\le r_s\le 1

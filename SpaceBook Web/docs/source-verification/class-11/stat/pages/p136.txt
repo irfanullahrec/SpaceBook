@@ -1,0 +1,33 @@
+@printed 132
+@status lesson
+eq \text{Median}=\left(\dfrac{\sum f+1}{2}\right)\text{th item}=\left(\dfrac{109+1}{2}\right)\text{th item}=55\text{th item}=18
+eq \text{Hence }Sk=\dfrac{3(19.725-18)}{7.57}=\dfrac{5.175}{7.57}=0.68
+sol ⇒ The given distribution is positively skewed. ## ⇒ The given distribution is positively skewed. || ⇒ دی گئی تقسیم مثبت کج ہے۔ || ⇒ ورکړل شوی ویش مثبت کوړ دی.
+sol (ii) Bowley's coefficient of skewness ## (ii) Bowley's coefficient of skewness || (ii) کجی کا باؤلے عددی سر || (ii) د کوړوالي بولي ضریب
+eq Sk=\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}
+sol Arranging the data, we have ## Arranging the data, we have || اعداد و شمار کو ترتیب دیتے ہوئے ہمیں ملتا ہے || معلومات ترتیبول موږ ترلاسه کوو
+table مثال 3.27: x, f, c.f || Example 3.27: x, f, c.f || بېلګه 3.27: x, f, c.f
+th | x | f | c.f
+tr | 6 | 6 | 6
+tr | 10 | 10 | 16
+tr | 14 | 18 | 34
+tr | 18 | 30 | 64
+tr | 22 | 15 | 79
+tr | 26 | 12 | 91
+tr | 30 | 10 | 101
+tr | 34 | 6 | 107
+tr | 38 | 2 | 109
+tr | Total | 109 | –
+endtable
+sol Here Σf = 109 is odd ## Here Σf = 109 is odd || یہاں Σf = 109 طاق ہے || دلته Σf = 109 طاق دی
+eq \therefore\ Q_1=\left(\dfrac{\sum f+1}{4}\right)\text{th value}=\left(\dfrac{109+1}{4}\right)\text{th value}=27.5\text{th value}\ \Rightarrow\ Q_1=14
+eq Q_2=2\left(\dfrac{\sum f+1}{4}\right)\text{th value}=\left(\dfrac{\sum f+1}{2}\right)\text{th value}=\left(\dfrac{109+1}{2}\right)\text{th value}=55\text{th value}\ \Rightarrow\ Q_2=18
+eq Q_3=3\left(\dfrac{\sum f+1}{4}\right)\text{th value}=3\left(\dfrac{109+1}{2}\right)\text{th value}=82.5\text{th value}\ \Rightarrow\ Q_3=26
+eq \therefore\ Sk=\dfrac{Q_1+Q_3-2Q_2}{Q_3-Q_1}=\dfrac{14+26-2(18)}{26-14}=\dfrac{40-36}{12}=\dfrac{4}{12}=0.33
+sol ⇒ that given distribution has positive skewness. ## ⇒ that given distribution has positive skewness. || ⇒ کہ دی گئی تقسیم مثبت کجی رکھتی ہے۔ || ⇒ چې ورکړل شوی ویش مثبت کوړوالی لري.
+## Example: 3.28 || مثال: 3.28 || بېلګه: 3.28
+q  | Calculate coefficient of skewness for the following data: || درج ذیل اعداد و شمار کے لیے کجی کا عددی سر حساب کریں: || د لاندې معلوماتو لپاره د کوړوالي ضریب محاسبه کړئ:
+table مثال 3.28: طبقہ اور تعدد || Example 3.28: class and frequency || بېلګه 3.28: ټولګی او فریکونسي
+th | class: | 20 – 24 | 25 – 29 | 30 – 34 | 35 – 39 | 40 – 44 | 45 – 49 | 50 – 54
+tr | Frequency: | 22 | 28 | 218 | 227 | 235 | 216 | 54
+endtable

@@ -1,0 +1,17 @@
+@printed 47
+@status lesson
+## 2.2.3 Fundamental types of Main Memory || ۲.۲.۳ مین میموری کی بنیادی اقسام || ۲.۲.۳ د اصلي حافظې بنسټیز ډولونه
+p Fundamentally Main or Primary memory is classified into three types. || بنیادی طور پر مین یا بنیادی میموری کو تین اقسام میں تقسیم کیا جاتا ہے۔ || په بنسټیزه توګه اصلي یا لومړنۍ حافظه په درېیو ډولونو وېشل کېږي.
+p Internal processor memory || پراسیسر کی اندرونی میموری || د پروسیسر دننني حافظه
+p RAM || ریم || RAM
+p ROM || روم || ROM
+## a. Internal processor memory || الف۔ پراسیسر کی اندرونی میموری || الف. د پروسیسر دننني حافظه
+p These are directly accessible to the CPU and are extremely fast. The following are the two main types of Internal processor memories. || یہ سی پی یو کے لیے براہِ راست قابلِ رسائی ہیں اور انتہائی تیز ہیں۔ پراسیسر کی اندرونی میموریز کی دو بنیادی اقسام درج ذیل ہیں۔ || دا CPU ته مستقیم د لاسرسي وړ دي او ډیر ګړندي دي. د پروسیسر دننني حافظو دوه اصلي ډولونه لاندې دي.
+p Cache memory || کیش میموری || کېش حافظه
+p Registers || رجسٹرز || رجسترونه
+p Cache lies in between the CPU and main memory while registers are associated with the arithmetic logic units. || کیش سی پی یو اور مین میموری کے درمیان ہوتی ہے جبکہ رجسٹرز ریاضیاتی منطقی یونٹس کے ساتھ وابستہ ہیں۔ || کېش د CPU او اصلي حافظې ترمنځ وي پداسې حال کې چې رجسترونه د ریاضیاتي منطقي واحدونو سره تړلي دي.
+## i. Cache Memory || i۔ کیش میموری || i. کېش حافظه
+p Cache (pronounced as cash) memory is extremely fast Static RAM (SRAM) that is built into a computer’s central processing unit (CPU), or located next to it on a separate chip. The CPU uses cache memory to store instructions that are repeatedly required to run programs, improving overall system speed. This memory is mainly used to store some active portion of main memory (RAM). When any information is required by the processor, first it will look up in the cache memory, and if it is not available in the cache then it will fetch it from the RAM. Figure 2.3 shows cache memory interface in the computer. There are three levels of cache memory. || کیش (جس کا تلفظ کیش ہے) میموری انتہائی تیز اسٹیٹک ریم (ایس ریم) ہے جو کمپیوٹر کے مرکزی پراسیسنگ یونٹ (سی پی یو) میں بنی ہوتی ہے یا اس کے ساتھ ایک الگ چپ پر ہوتی ہے۔ سی پی یو کیش میموری کو ان ہدایات کو محفوظ کرنے کے لیے استعمال کرتا ہے جو پروگرام چلانے کے لیے بار بار درکار ہوتی ہیں، جس سے سسٹم کی مجموعی رفتار بہتر ہوتی ہے۔ یہ میموری بنیادی طور پر مین میموری (ریم) کے کسی فعال حصے کو محفوظ کرنے کے لیے استعمال ہوتی ہے۔ جب پراسیسر کو کوئی معلومات درکار ہوں تو وہ پہلے کیش میموری میں تلاش کرتا ہے اور اگر وہ کیش میں دستیاب نہ ہو تو اسے ریم سے حاصل کرتا ہے۔ شکل ۲.۳ کمپیوٹر میں کیش میموری کا انٹرفیس دکھاتی ہے۔ کیش میموری کی تین سطحیں ہیں۔ || کېش (چې تلفظ یې کېش دی) حافظه ډیره ګړندۍ جامده RAM (SRAM) ده چې د کمپیوټر په مرکزي پروسس واحد (CPU) کې جوړه شوې ده، یا د هغې تر څنګ په یو جلا چپ کې ایښودل شوې ده. CPU کېش حافظه هغو لارښوونو ساتلو لپاره کاروي چې د پروګرامونو چلولو لپاره په تکراري ډول اړینې وي، چې د سیسټم ټوله ګړندیتوب ښه کوي. دا حافظه په عمده توګه د اصلي حافظې (RAM) د یوې فعالې برخې ساتلو لپاره کارول کېږي. کله چې پروسیسر ته کوم معلومات پکار وي نو لومړی به د کېش په حافظه کې لټوي، او که په کېش کې نه وي موجود نو له RAM نه به یې راوړي. ۲.۳ انځور د کمپیوټر کې د کېش حافظې انټرفیس ښیي. د کېش حافظې درې کچې شته.
+p L1 (Level 1) Cache || ایل ۱ (سطح ۱) کیش || L1 (۱ کچه) کېش
+p L2 (Level 2) Cache || ایل ۲ (سطح ۲) کیش || L2 (۲ کچه) کېش
+p L3 (Level 3) Cache || ایل ۳ (سطح ۳) کیش || L3 (۳ کچه) کېش
