@@ -104,6 +104,23 @@ const BOOKS = [
     check(`reading session: no MCQ page of chapter 2 stays collapsed (${st.pages} pages turned)`, closed.length === 0, closed.slice(0, 3));
     await page.close();
   }
+  // Resuming a chapter on its saved tab (what "Continue where you stopped" does): the app calls SBApp.open(..., 'Exercises') on a new screen while
+  // the website still remembers another unit's Exercises tab. The website's loading overlay holds the chapter click and replays it later, so the tab
+  // used to be clicked on the OLD chapter's strip and Unit 3 showed Unit 1's exercises (Exercise 1.1 ... Review Exercise 1) under its own title.
+  {
+    const maths6 = catalog.classes.find(c => c.id === 'cls6').subjects.find(s => s.id === 'cls6-math').chapters;
+    const page = await ctx.newPage();
+    await prepare(page);
+    const open = async (i, tab) => { await page.evaluate(([c, s, call, t]) => window.SBApp.open(c, s, call, 0, t), ['cls6', 'cls6-math', maths6[i].o, tab]); await sleep(6500); };
+    await open(0, ''); await page.evaluate(() => window.SBApp.clickTab('Exercises')); await sleep(3500);       // the last thing read: unit 1's exercises
+    check('resume: the app\'s bridge is running on the new screen', await prepare(page));                      // a new reader screen: same storage, fresh page
+    await open(2, 'Exercises');
+    const st = await page.evaluate(() => window.SBApp.state());
+    const ids = await page.evaluate(() => [...document.querySelectorAll('.sbapp-hide, .sbapp-page-on')].map(u => u.id).filter(Boolean));
+    check('resume: unit 3 comes up on its saved Exercises tab with its own 9 pages', /Exercises/.test(st.tab) && /Unit 3/.test(st.title) && st.pages >= 9, st);
+    check('resume: those pages are unit 3\'s exercises (ex-3.1 ...), not unit 1\'s', ids[0] === 'math-topic-ex-3.1' && ids.every(i => !/^math-topic-ex-1\./.test(i)), ids.slice(0, 4));
+    await page.close();
+  }
   check('nothing threw in the console', errors.length === 0, errors.slice(0, 3));
   await browser.close(); server.close();
   console.log(`\n${pass} passed, ${fail} failed  (app exercise pages)`);
