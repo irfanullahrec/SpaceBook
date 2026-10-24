@@ -48,11 +48,18 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
         const lab = no => String(no == null ? '' : no).split('(').join('').split(')').join('').split('.').join('').trim().toLowerCase();
         const FIRST = ['1', 'i', 'a'];
         const markHeads = arr => { (arr || []).forEach((b, i) => {
+          // the last part of a question whose own sub-questions (a, b, c ...) follow in the next parts block is a heading too
+          if (b && (b.t === 'q' || b.t === 'parts') && (b.parts || []).length) {
+            const last = b.parts[b.parts.length - 1];
+            let k = i + 1; while (arr[k] && ['page', 'svg', 'm', 'table', 'box'].includes(arr[k].t)) k++;
+            const nb = arr[k];
+            if (last && !last.solId && nb && nb.t === 'parts' && (nb.parts || []).length && FIRST.includes(lab(nb.parts[0].no)) && !FIRST.includes(lab(last.no))) b.__tail = true;
+          }
           if (!b || b.t !== 'q' || (b.parts || []).length || b.solId) return;
           const nx = arr[i + 1];
           if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
-          // a question whose parts stand in a block of their own after its word box (the box sits between the question and its parts)
-          let j = i + 1; while (arr[j] && ['m', 'table', 'svg', 'box', 'page'].includes(arr[j].t)) j++;
+          // a question whose parts stand in a block of their own after its word box or an intro line (the box or line sits between the question and its parts)
+          let j = i + 1; while (arr[j] && ['m', 'table', 'svg', 'box', 'page', 'p'].includes(arr[j].t)) j++;
           if (arr[j] && arr[j].t === 'parts' && j > i + 1) b.__head = true;
         }); };
         B.units.forEach(u => (u.sections || []).forEach(s => {
@@ -67,11 +74,11 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
               if (ps.length) {
                 const labs = R.partLabels(ps);
                 const opt = ps.map((p, i) => /^[a-e]$/.test(labs[i]) && labs.slice(0, i).some(x => R.isRoman(x)));
-                ps.forEach((p, i) => { if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
+                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { rec.leaves++; rec.head++; } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
               } else if (b.__head) { rec.leaves++; rec.head++; }
               else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
             }
-            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' }))); }
+            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { rec.leaves++; rec.head++; } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
             markHeads(b.blocks);
             (b.blocks || []).forEach(x => walk(x, exId));
           };
