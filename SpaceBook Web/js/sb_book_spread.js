@@ -248,6 +248,9 @@
     };
     const out = res.wrap && R().withBook ? R().withBook(res.words, res.book, render) : render();
     if (mode === 'ex') setTimeout(() => {
+      // sb_structure draws every tab once to plan a chapter; only scroll when the Exercises tab is the one on screen
+      const on = document.querySelector('.math-top-tab.active, .math-tab-btn.active');
+      if (on && on.dataset.tab && !/^exercises?$/.test(on.dataset.tab)) return;
       const f = document.querySelector('#subjTabContent .bk-wrap[data-ex], #mathTabContent .bk-wrap[data-ex]');
       const b = tabBox();
       if (f && b) b.scrollTop += f.getBoundingClientRect().top - b.getBoundingClientRect().top - 8;

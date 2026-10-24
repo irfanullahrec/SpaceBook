@@ -341,6 +341,8 @@
     const lib = classId === 'cls10' && subjKey === 'isl' ? (window.CLS9_BOOKS || {}) : classId === 'cls9' && subjKey === 'islopt' ? (window.CLS10_BOOKS || {}) : classId === 'cls6' ? books() : classId === 'cls7' ? (window.CLS7_BOOKS || {}) : classId === 'cls8' ? (window.CLS8_BOOKS || {}) : classId === 'cls10' ? (window.CLS10_BOOKS || {}) : classId === 'cls9' ? (window.CLS9_BOOKS || {}) : classId === 'cls12' ? (window.CLS12_BOOKS || {}) : {};
     const B = subjKey !== 'math' ? lib[subjKey] : null;
     if (!B || !B.units || !B.units.length) return originalSwitch.apply(this, arguments);
+    // a book may take over only some tabs (Class 12 Pakistan Studies: Lessons and Exercises); the others keep the study views
+    if (B.book && B.book.tabs && B.book.tabs.indexOf(tabId) < 0) return originalSwitch.apply(this, arguments);
     let ch;
     if (B.book && B.book.byNumber) {
       // book covers only some chapters of an existing list (Class 10 Physics 13-18, Chemistry): match by chapter number,
