@@ -345,36 +345,52 @@ class Book:
                 group = [s for s in group if not any(p is None or p(s) for p in r.values())]
             stream = self.scan_streams(group, pp)[1]
             units = [u for s in stream for u in self.units_of(s)]
-            if any('pi' in u for u in units):
+            if units:
                 out.append((k, jp, pp, units))
         return out
 
-    def rocr(self):
-        """RapidOCR of the first lines of the second page (and the last lines of the first page) of every two-page scan -> KEY/rocr.json.
-        Works for Latin-script books (English, Computer Science, ...); the Urdu books use the Word OCR instead."""
+    def rocr(self, force=False):
+        """RapidOCR of the lines at the page boundary of every two-page scan -> KEY/rocr.json:
+        {pdf: {'A': [last lines of the first page, bottom first], 'B': [first lines of the second page, top first], 'text': {...old strips}}}.
+        Works for Latin-script books (English, Computer Science, Physics ...); the Urdu books use the Word OCR instead."""
         import numpy as np
         from PIL import Image
         from rapidocr_onnxruntime import RapidOCR
         eng = RapidOCR()
         f = self.dir / 'rocr.json'
-        out = json.loads(f.read_text(encoding='utf-8')) if f.exists() else {}
+        out = {} if force or not f.exists() else json.loads(f.read_text(encoding='utf-8'))
+        junk = re.compile(r'(?i)not\s*for\s*sale|awaz|whatsapp|^\W*\d{1,3}\W*$')
         for k, jp, pp, units in self.two_page_scans():
-            if str(k) in out:
+            if str(k) in out and isinstance(out[str(k)].get('A'), list):
                 continue
             res = {}
-            for tag, j, box in (('B', jp[1], (0, 0.03, 1, 0.34)), ('A', jp[0], (0, 0.62, 1, 0.97))):
-                im = Image.open(self.jpg_path(j)).convert('RGB')
+            for tag, j_, box in (('B', jp[1], (0, 0.02, 1, 0.34)), ('A', jp[0], (0, 0.62, 1, 0.96))):
+                im = Image.open(self.jpg_path(j_)).convert('RGB')
                 w, h = im.size
                 c = im.crop((0, int(h * box[1]), w, int(h * box[3])))
+                arr = np.asarray(c)
                 try:
-                    r, _ = eng(np.asarray(c), use_cls=False)
+                    import cv2
+                    g = cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY)
+                    g = cv2.createCLAHE(clipLimit=2.5, tileGridSize=(8, 8)).apply(g)
+                    g = cv2.resize(g, None, fx=1.5, fy=1.5, interpolation=cv2.INTER_CUBIC)
+                    arr = cv2.cvtColor(g, cv2.COLOR_GRAY2RGB)
+                    sc_ = 1.5
+                except Exception:
+                    sc_ = 1.0
+                try:
+                    r, _ = eng(arr, use_cls=False)
                 except Exception:
                     r = None
-                txt = ' '.join(x[1] for x in (r or []))
-                txt = re.sub(r'(?i)not\s*for\s*sale|awaz\w*|whatsapp\S*', ' ', txt)
-                if tag == 'A':
-                    txt = re.sub(r'[\s\d\W]+$', '', txt)      # the printed page number closes the lower strip
-                res[tag] = txt.strip()
+                lines = []
+                for b, txt, sc in (r or []):
+                    ys = [q[1] / sc_ for q in b]; xs = [q[0] / sc_ for q in b]
+                    txt = txt.strip()
+                    if junk.search(txt) or len(norm(txt)) < 8 or (max(xs) - min(xs)) < 0.22 * w:
+                        continue
+                    lines.append((sum(ys) / 4, txt))
+                lines.sort(key=lambda x: x[0], reverse=(tag == 'A'))
+                res[tag] = [x[1] for x in lines[:3]]
             out[str(k)] = res
             if len(out) % 10 == 0:
                 f.write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
@@ -413,74 +429,51 @@ class Book:
                     if len(hits) == 1:
                         cand, how, conf = max(hits[0] - o, 0), 'ocr', 2 if o == 0 else 1
                         break
-            rr = (json.loads((self.dir / 'rocr.json').read_text(encoding='utf-8')) if (self.dir / 'rocr.json').exists() else {}).get(str(k))
-            ca = cb = None
-            if rr and rr.get('A'):
-                ta = norm(rr['A'])
-                for n_ in (26, 20, 15):
-                    key = ta[-n_:]
-                    if len(key) < n_:
-                        continue
-                    hits = [m.end() for m in re.finditer(re.escape(key), stream)]
-                    if len(hits) == 1:
-                        ca = hits[0]
-                        break
-            if rr and rr.get('B'):
-                tb = norm(rr['B'])
-                for o in (0, 12, 30):
-                    key = tb[o:o + 18]
-                    if len(key) < 14:
-                        break
-                    hits = [m.start() for m in re.finditer(re.escape(key), stream)]
-                    if len(hits) == 1:
-                        cb = max(hits[0] - o, 0)
-                        break
-            # fuzzy: the OCR of a photographed page has wrong letters; find the stretch of the text that is most like it
-            def fuzzy(txt, tail):
-                if not txt or len(txt) < 24:
+            rr = (json.loads((self.dir / 'rocr.json').read_text(encoding='utf-8')) if (self.dir / 'rocr.json').exists() else {}).get(str(k)) or {}
+
+            def fuzzy(q, tail):
+                """Best position (char offset in the stream) where the line q ends (tail) or starts, and its ratio."""
+                q = norm(q)
+                if len(q) < 10:
                     return None, 0.0
-                n_ = 44
-                q = txt[-n_:] if tail else txt[:n_]
                 best_ = (0.0, None)
-                for i in range(len(words)):
-                    s0 = starts[i]
+                for i_ in range(len(words)):
                     if tail:
-                        e0 = s0 + len(words[i][2])
-                        # window ending after word i
-                        seg = stream[max(0, e0 - n_):e0]
+                        e0 = starts[i_] + len(words[i_][2])
+                        seg = stream[max(0, e0 - len(q)):e0]
                         pos_ = e0
                     else:
-                        seg = stream[s0:s0 + n_]
-                        pos_ = s0
-                    if len(seg) < n_ // 2:
+                        seg = stream[starts[i_]:starts[i_] + len(q)]
+                        pos_ = starts[i_]
+                    if len(seg) < len(q) * 0.7:
                         continue
                     sm_ = difflib.SequenceMatcher(None, q, seg, autojunk=False)
-                    if sm_.real_quick_ratio() < 0.6 or sm_.quick_ratio() < 0.6:
+                    if sm_.real_quick_ratio() < 0.7 or sm_.quick_ratio() < 0.7:
                         continue
                     r_ = sm_.ratio()
                     if r_ > best_[0]:
                         best_ = (r_, pos_)
                 return best_[1], best_[0]
             fa = fb = None
-            if rr and rr.get('B'):
-                fb, rb_ = fuzzy(norm(rr['B']), False)
-                if rb_ < 0.72:
-                    fb = None
-            if rr and rr.get('A'):
-                fa, ra_ = fuzzy(norm(rr['A']), True)
-                if ra_ < 0.72:
-                    fa = None
-            if cand is None or how != 'ocr':
-                if fa is not None and fb is not None and abs(fa - fb) <= 30:
-                    cand, how, conf = (fa + fb) // 2, 'fz', 3
-                elif ca is None and cb is None and (fa is not None or fb is not None):
-                    cand, how, conf = (fa if fa is not None else fb), 'fz', 1
-            if how == 'fz':
-                pass
-            elif ca is not None and cb is not None and abs(ca - cb) <= 25:
-                cand, how, conf = ca, 'rocr', 3
-            elif ca is not None or cb is not None:
-                cand, how, conf = (ca if ca is not None else cb), 'rocr', 1
+            ra = rb = 0.0
+            for q in (rr.get('A') or [])[:2]:
+                fa, ra = fuzzy(q, True)
+                if fa is not None and ra >= 0.78:
+                    break
+            for q in (rr.get('B') or [])[:2]:
+                fb, rb = fuzzy(q, False)
+                if fb is not None and rb >= 0.78:
+                    break
+            ca = fa if ra >= 0.78 else None
+            cb = fb if rb >= 0.78 else None
+            if ca is not None and cb is not None and abs(ca - cb) <= 10 and min(ra, rb) >= 0.85:
+                cand, how, conf = (ca + cb) // 2, 'ln', 4
+            elif ca is not None and cb is not None and abs(ca - cb) <= 40:
+                cand, how, conf = (ca + cb) // 2, 'ln', 3
+            elif cb is not None and rb >= 0.9:
+                cand, how, conf = cb, 'ln', 2
+            elif ca is not None and ra >= 0.9:
+                cand, how, conf = ca, 'ln', 2
             if cand is None:
                 if getattr(self.cfg, 'VIRTUAL', False):
                     cand, how = len(stream) // 2, 'half'
@@ -495,7 +488,7 @@ class Book:
             tw = lambda j: self.text_of(by_id, units[words[j][0]]).split()[words[j][1]]
             wi = at_word(cand)
             opts = {}
-            pos_opts = {'ca': ca, 'cb': cb, 'fa': fa, 'fb': fb}
+            pos_opts = {'ca': ca, 'cb': cb}
             if cand is not None and how == 'ocr':
                 pos_opts['ocr'] = cand
             if not getattr(self.cfg, 'VIRTUAL', False):
@@ -546,7 +539,7 @@ class Book:
             else:
                 ia, ib = self.ink(jp[0]), self.ink(jp[1])
                 ink = ia / max(ia + ib, 1)
-            if ((v['how'] == 'ocr' and v['conf'] == 2 and abs(v['frac'] - ink) <= 0.12) or (v['how'] in ('rocr', 'fz') and v['conf'] >= 3 and abs(v['frac'] - ink) <= 0.30)):
+            if ((v['how'] == 'ocr' and v['conf'] == 2 and abs(v['frac'] - ink) <= 0.12) or (v['how'] == 'ln' and v['conf'] >= 4 and abs(v['frac'] - ink) <= 0.30)):
                 auto.append(f'{k} ok')
             else:
                 todo.append((k, v['how'], v['conf'], v['frac'], round(ink, 3)))
@@ -606,8 +599,8 @@ class Book:
                 elif mode == 'T':
                     fid, n_ = rest[0].split()
                     e['T'][fid] = int(n_)
-                elif mode == 'ok':
-                    e['mode'] = 'ok'
+                elif mode in ('ok', 'para', 'ink'):
+                    e['mode'] = mode
                 else:
                     e['mode'], e['words'] = mode, rest[0]
         return spec
@@ -622,6 +615,19 @@ class Book:
         stream = ''.join(norm(w) for u in units for w in self.text_of(by_id, u).split())
         if spec.get('mode') == 'ok':
             return cand['unit'], cand['word']
+        if spec.get('mode') == 'para':          # summarised text: no words to find, cut at the paragraph boundary nearest the ink share of the two scans
+            o = (cand.get('opts') or {}).get('ink') or {'frac': cand['frac']}
+            target = o['frac'] * len(stream)
+            best = None
+            for ui, u in enumerate(units):
+                if 'pi' not in u or u['k'] in ('l', 'li'):
+                    continue
+                pos_ = next((starts[i] for i, (uj, wj) in enumerate(words) if uj == ui and wj == 0), None)
+                if pos_ is not None and (best is None or abs(pos_ - target) < abs(best[0] - target)):
+                    best = (pos_, ui)
+            if best is None:
+                raise SystemExit('no paragraph to cut at')
+            return best[1], 0
         if spec.get('mode') in ('ca', 'cb', 'ink', 'ocr'):
             o = (cand.get('opts') or {}).get(spec['mode'])
             if not o:
@@ -694,7 +700,7 @@ class Book:
     def table_lines(self, tb, rows=None, nohead=False):
         want = 'اردو|urdu' if self.cfg.LANGS[0] == 'ur' else 'پښتو|pashto' if self.cfg.LANGS[0] == 'ps' else None
         tr = next((t for t in tb.get('translations', []) if want and re.search(want, t.get('language', ''), re.I)), tb)
-        out = ['table'] + ([] if nohead else ['th | ' + ' | '.join(clean(h) for h in tr['headers'])])
+        out = ['table'] + ([] if nohead or not any(tr.get('headers') or []) else ['th | ' + ' | '.join(clean(h) for h in tr['headers'])])
         for r in (tr['rows'][rows[0]:rows[1]] if rows else tr['rows']):
             out.append('tr | ' + ' | '.join(clean(c) for c in r))
         return out + ['endtable']
@@ -800,7 +806,10 @@ class Book:
             sp = spec.get(k)
             if not sp:
                 raise SystemExit(f'PDF {k}: no confirmed split in splits_*.txt')
-            cut_u, cut_w = self.find_cut(units, by_id, sp, cands.get(str(k), {}))
+            if sp.get('mode') is None:                       # only T / V lines: no text to cut, every other unit stays on the first page
+                cut_u, cut_w = len(units), 0
+            else:
+                cut_u, cut_w = self.find_cut(units, by_id, sp, cands.get(str(k), {}))
             if cut_u < len(units) and cut_w and 'pi' in units[cut_u] and c.sec_kind(by_id[units[cut_u]['sec']]) == 'ex':
                 para = by_id[units[cut_u]['sec']]['paras'][units[cut_u]['pi']]
                 rest = (para.get(c.ORIG) or '').split()[cut_w:]

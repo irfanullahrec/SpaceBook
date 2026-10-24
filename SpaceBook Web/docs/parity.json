@@ -1,6 +1,6 @@
 {
  "schema": "spacebook.parity/1",
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "statuses": [
   "same",
   "platform-specific",
@@ -97,6 +97,15 @@
    "app": "one page at a time, footer arrows, page list",
    "data": "none",
    "counterpart": "A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages)."
+  },
+  {
+   "id": "read.pagebooks",
+   "area": "Reading the books",
+   "name": "Every Class 11 and Class 12 book (and Classes 1-10 before them) is a page book: one printed page per page in the book's own order, its number printed once, the exercise as the book prints it with an interactive MCQ and an Ans on every question",
+   "status": "same",
+   "web": "js/<subject>_11_book.js / _12_book.js (CLS11_BOOKS, CLS12_BOOKS) read by js/cls6_book_reader.js; built by docs/source-verification/class-12/book12/engine.py (Class 12, cuts checked against the scans) and engine11.py (Class 11)",
+   "app": "the same page in the app's WebView, one printed page per screen (assets/reader_bridge.js turns the cards); the exercise card of a unit with one exercise opens by itself",
+   "data": "the same data files on both platforms; tests/parity/app_book_pages.js and tests/parity/app_all_pages.js put the app's own reader files on the page and turn every page (the website folder or the app's bundled copy: --site bundled)"
   },
   {
    "id": "read.fullbleed",
