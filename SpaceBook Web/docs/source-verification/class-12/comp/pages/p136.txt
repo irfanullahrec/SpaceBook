@@ -1,0 +1,12 @@
+@printed 127
+@status lesson
+p } || … } || … }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 || 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 || 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+p The initialization and increment/decrement fields are optional. They can remain empty, but in all cases the semicolon signs between them must be written. For example, we could write: for (;n<10;) if we want to specify no initialization and no increase. || ابتدائی قدر اور اضافہ/کمی کے فیلڈز اختیاری ہیں۔ یہ خالی رہ سکتے ہیں، لیکن ہر صورت میں ان کے درمیان سیمی کولن لکھنا لازمی ہے۔ مثلاً اگر ہم نہ ابتدائی قدر دینا چاہیں نہ اضافہ تو ہم لکھ سکتے ہیں: for (;n<10;) || د لومړني ارزښت او زیاتولو/کمولو ساحې اختیاري دي. تشې پاتې کېدای شي، خو په هر حال کې د هغوی ترمنځ سیمي‌کولنونه باید ولیکل شي. د بېلګې په توګه که نه لومړنی ارزښت او نه زیاتوالی وغواړو، لیکلی شو: for (;n<10;)
+p int n=0; for ( ; n < 10; ) { cout << n << ","; n++; } || int n=0; for ( ; n < 10; ) { cout << n << ","; n++; } || int n=0; for ( ; n < 10; ) { cout << n << ","; n++; }
+p Output of the code segment || کوڈ کے حصے کا آؤٹ پٹ || د کوډ د برخې وتنه
+p 0,1,2,3,4,5,6,7,8,9 || 0,1,2,3,4,5,6,7,8,9 || 0,1,2,3,4,5,6,7,8,9
+p Similarly, for loop can also be used as: for (;n<10;n++) if we want to include an increment/decrement expression but no initialization. || اسی طرح اگر ہم اضافہ/کمی کا ایکسپریشن شامل کرنا چاہیں لیکن ابتدائی قدر نہیں تو for لوپ کو یوں بھی استعمال کیا جا سکتا ہے: for (;n<10;n++) || همداراز که وغواړو د زیاتولو/کمولو افاده شامله کړو خو لومړنی ارزښت نه، for حلقه داسې هم کارول کېدای شي: for (;n<10;n++)
+## b. while loop || b. while لوپ || b. while حلقه
+p while loop is another structure that is used in computer programs to repeat a statement or a group of statements until the condition is true. || while لوپ ایک اور ساخت ہے جو کمپیوٹر پروگراموں میں کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک دہرانے کے لیے استعمال ہوتی ہے۔ || while حلقه بل جوړښت دی چې په کمپیوټري پروګرامونو کې د یوه بیان یا د بیانونو د ډلې د تکرار لپاره تر هغه کارول کېږي چې شرط true وي.

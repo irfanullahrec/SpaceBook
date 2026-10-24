@@ -1,0 +1,57 @@
+@printed 30
+@status lesson
+qp ix | A process is said to be in ready state if it is waiting for some external event which has not yet been occurred. || پراسیس اس وقت تیار حالت میں کہلاتا ہے جب وہ کسی ایسے بیرونی واقعے کا انتظار کر رہا ہو جو ابھی پیش نہیں آیا۔ || یوه پروسه هغه وخت په چمتو حالت کې ګڼل کېږي چې د کومې بهرنۍ پېښې انتظار باسي چې لا نه ده پېښه شوې.
+sol False ## False — a process waiting for an external event is in the blocked (waiting) state; a ready process is waiting only for the CPU.
+qp x | Batch processing systems does not support interactivity. || بیچ پراسیسنگ سسٹم تعامل کی معاونت نہیں کرتے۔ || ډله‌ییز پروسس سیسټمونه د تعامل ملاتړ نه کوي.
+sol True ## True — in batch processing jobs are collected and run without user interaction.
+qp 1 | Q.4 What is an Operating system? Explain different types of operating systems. || سوال 4: آپریٹنگ سسٹم کیا ہے؟ آپریٹنگ سسٹمز کی مختلف اقسام کی وضاحت کریں۔ || پوښتنه ۴: عملیاتي سیسټم څه دی؟ د عملیاتي سیسټمونو بېلابېل ډولونه تشریح کړئ.
+solution جواب
+ss An operating system (OS) is system software that manages the computer's hardware and software resources, acts as an interface between the user and the hardware, and provides common services to application programs (e.g. Windows, UNIX, Linux, macOS).
+ss Types: (1) Single-user, single-task — one user runs one program at a time (MS-DOS); (2) Single-user, multitasking — one user runs several programs (Windows); (3) Multi-user — many users share the computer at once (UNIX, Linux servers).
+ss (4) Batch processing — similar jobs are collected and executed in batches without user interaction; (5) Time-sharing — the CPU time is divided into slices among many users/programs; (6) Real-time — responds to input within a guaranteed time (air-traffic control, medical devices).
+ss (7) Distributed — manages a group of networked computers as one system; (8) Network OS — provides file/printer sharing and security on a network (Windows Server); (9) Embedded — built into devices such as washing machines, ATMs and mobile phones (Android); (10) Multiprocessing — uses two or more CPUs.
+endsolution
+qp 2 | Q.5 Differentiate between the following: || سوال 5: درج ذیل میں فرق کریں: || پوښتنه ۵: د لاندې ترمنځ توپیر وکړئ:
+solution جواب
+ss Single-user OS allows only one user to use the computer at a time (MS-DOS, Windows for a personal computer); it needs simple security and resource management.
+ss Multi-user OS allows many users to use the computer resources at the same time through terminals or a network (UNIX, Linux, Windows Server); it must protect each user's data, manage permissions and share CPU, memory and devices fairly.
+endsolution
+p a) Single-user and Multi-users operating systems || a) سنگل یوزر اور ملٹی یوزر آپریٹنگ سسٹم || a) یو-کاروونکی او ډېر-کاروونکي عملیاتي سیسټمونه
+qp 3 | b) Thread and Process || b) تھریڈ اور پراسیس || b) تار او پروسه
+solution جواب
+ss A process is a program in execution with its own memory space, resources and state; processes are independent and heavyweight, and switching between them is costly.
+ss A thread is the smallest unit of execution within a process (a 'lightweight process'); threads of the same process share its memory and resources, are faster to create and switch, and allow parts of a program to run concurrently.
+endsolution
+qp c | Multiprogramming and Multiprocessing || ملٹی پروگرامنگ اور ملٹی پروسیسنگ || څو-پروګرامي او څو-پروسسي کار
+solution جواب
+ss Multiprogramming keeps several programs in memory and a single CPU switches among them (when one waits for I/O) to keep the CPU busy; programs run concurrently, not truly simultaneously.
+ss Multiprocessing uses two or more CPUs in one computer so that several processes actually execute at the same time; it increases speed and reliability.
+endsolution
+qp 5 | Q.6 Define distributed operating system and describe its advantages and disadvantages. || سوال 6: ڈسٹری بیوٹڈ آپریٹنگ سسٹم کی تعریف کریں اور اس کے فوائد اور نقصانات بیان کریں۔ || پوښتنه ۶: وېشل شوی عملیاتي سیسټم تعریف کړئ او ګټې او زیانونه یې بیان کړئ.
+solution جواب
+ss A distributed operating system manages a collection of independent computers connected by a network and makes them appear to users as a single system; resources and processing are shared among the machines.
+ss Advantages: resource sharing (files, printers, CPU power); higher speed through parallel processing; reliability — if one machine fails others continue; scalability — computers can be added easily; communication between users.
+ss Disadvantages: complex software and design; security problems because data travels over a network; dependence on the network — failure or slowness affects the whole system; difficult to manage and maintain; higher cost of setup.
+endsolution
+p Q.7 Write short notes on the following. || سوال 7: درج ذیل پر مختصر نوٹ لکھیں۔ || پوښتنه ۷: په لاندې موضوعاتو لنډ یادښتونه ولیکئ.
+qp 6 | a) Different states of a process || a) پراسیس کی مختلف حالتیں || a) د پروسې بېلابېل حالتونه
+sol جواب ## Different states of a process: (1) New — the process is being created; (2) Ready — loaded in memory and waiting for the CPU; (3) Running — instructions are being executed by the CPU; (4) Blocked/Waiting — waiting for an event such as I/O completion; (5) Terminated/Exit — finished execution. Transitions: new→ready (admitted), ready→running (dispatched), running→ready (time-out), running→blocked (event wait), blocked→ready (event occurs), running→terminated (exit).
+qp 7 | b) DOS || b) DOS || b) DOS
+sol جواب ## DOS (Disk Operating System), e.g. MS-DOS by Microsoft (1981), is a single-user, single-tasking, command-line operating system. The user types commands (internal like DIR, COPY, DEL, CLS and external like FORMAT, XCOPY) at the prompt (C:\>). It manages files on disks and runs programs one at a time; it has no graphical interface.
+qp c | Real time processing systems || ریئل ٹائم پراسیسنگ سسٹمز || سمدستي پروسس سیسټمونه
+sol جواب ## Real-time processing systems process data and respond within a strict, guaranteed time limit, so the result is available immediately when needed. Hard real-time systems must never miss deadlines (air-bag control, missile guidance, pacemakers); soft real-time systems tolerate small delays (online booking, video streaming). They are used in industrial control, banking ATMs and flight control.
+qp 9 | d) Embedded operating systems || d) ایمبیڈڈ آپریٹنگ سسٹمز || d) ننښتي عملیاتي سیسټمونه
+sol جواب ## Embedded operating systems are small, specialised operating systems built into dedicated devices to control their functions; they are fast, reliable and use little memory and power. Examples: the software in washing machines, microwave ovens, cars, digital cameras, ATMs, routers and smart phones (Android, embedded Linux, Windows Embedded).
+qp 10 | Q.8 Describe functions of an operating system. || سوال 8: آپریٹنگ سسٹم کے افعال بیان کریں۔ || پوښتنه ۸: د عملیاتي سیسټم دندې بیان کړئ.
+solution جواب
+ss Functions of an OS: (1) Process management — creating, scheduling and terminating processes; (2) Memory management — allocating and freeing RAM, virtual memory; (3) File management — creating, organising, reading and protecting files and folders.
+ss (4) Device (I/O) management — controlling input/output devices through drivers; (5) Security and protection — passwords, user accounts, access permissions; (6) User interface — command-line or graphical interface.
+ss (7) Resource allocation and error handling; (8) Networking and communication; (9) Booting the computer and loading programs; (10) Monitoring performance and keeping records (accounting).
+endsolution
+qp 11 | Q.9 Compare DOS, Windows and UNIX operating systems. || سوال 9: DOS، Windows اور UNIX آپریٹنگ سسٹمز کا موازنہ کریں۔ || پوښتنه ۹: د DOS، Windows او UNIX عملیاتي سیسټمونو پرتله وکړئ.
+solution جواب
+ss DOS: single-user, single-tasking, command-line interface, 16-bit, little security, mainly for old personal computers.
+ss Windows: single/multi-user, multitasking, graphical user interface (GUI) with windows, icons and mouse; easy to use; wide software and hardware support; commercial (Microsoft).
+ss UNIX: multi-user, multitasking, very stable and secure; mainly command-line (with optional GUI); portable across hardware; used on servers and workstations; Linux is a free UNIX-like system.
+endsolution
+endexercise

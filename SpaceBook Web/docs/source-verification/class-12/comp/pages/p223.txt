@@ -1,0 +1,41 @@
+@printed 214
+@status lesson
+qp 4 | Q.7 Write a C++ program having two function names area and perimeter to find the area and perimeter of a square. || Q.7 ایسا C++ پروگرام لکھیں جس میں area اور perimeter نامی دو فنکشنز مربع کا رقبہ اور احاطہ معلوم کریں۔ || Q.7 یو C++ پروګرام ولیکئ چې د area او perimeter په نوم دوه فنکشنونه ولري چې د مربع مساحت او محیط پیدا کړي.
+sol جواب ## #include <iostream> using namespace std; float area(float side) { return side * side; } float perimeter(float side) { return 4 * side; } int main() { float s; cout << "Enter side of the square: "; cin >> s; cout << "Area = " << area(s) << endl; cout << "Perimeter = " << perimeter(s) << endl; return 0; }
+qp 5 | Q.8 Write a C++ program to read a number from the keyboard and then pass it to a function to determine whether it is prime or composite. || Q.8 کی بورڈ سے ایک عدد پڑھ کر اسے فنکشن کو پاس کرنے کا C++ پروگرام لکھیں جو معلوم کرے کہ یہ مفرد ہے یا مرکب۔ || Q.8 یو C++ پروګرام ولیکئ چې له کیبورډ یو عدد ولولي او بیا یې فنکشن ته ولېږدوي ترڅو وټاکي چې اولي دی که مرکب.
+sol جواب ## #include <iostream> using namespace std; void checkPrime(int n) { if (n < 2) { cout << n << " is neither prime nor composite" << endl; return; } for (int i = 2; i * i <= n; i++) if (n % i == 0) { cout << n << " is a composite number" << endl; return; } cout << n << " is a prime number" << endl; } int main() { int num; cout << "Enter a number: "; cin >> num; checkPrime(num); return 0; }
+qp 6 | Q.10 Write a C++ program to get an integer number from keyboard in main program and pass it as an argument to a function where it calculate and display the table. || Q.10 main پروگرام میں کی بورڈ سے ایک صحیح عدد لے کر اسے بطور آرگیومنٹ ایسے فنکشن کو پاس کرنے کا C++ پروگرام لکھیں جو پہاڑا حساب کر کے دکھائے۔ || Q.10 یو C++ پروګرام ولیکئ چې په main پروګرام کې له کیبورډ یو صحیح عدد واخلي او د دلیل په توګه یې یوه فنکشن ته ولېږدوي چې جدول (ضرب) حساب او ښکاره کړي.
+sol جواب ## #include <iostream> using namespace std; void table(int n) { for (int i = 1; i <= 10; i++) cout << n << " x " << i << " = " << n * i << endl; } int main() { int num; cout << "Enter a number: "; cin >> num; table(num); return 0; }
+qp 7 | Q.11 Define function and differentiate between built-in and user-defined functions with the help of examples. || Q.11 فنکشن کی تعریف کریں اور مثالوں کی مدد سے بلٹ اِن اور یوزر ڈیفائنڈ فنکشنز میں فرق کریں۔ || Q.11 فنکشن تعریف کړئ او د بېلګو په مرسته د جوړ شویو او د کاروونکي-تعریف شویو فنکشنونو ترمنځ توپیر وکړئ.
+solution جواب
+ss A function is a named block of statements that performs a specific task; it can take arguments and return a value, and can be called many times.
+ss Built-in (library) functions are already defined in C++ header files and are used directly, e.g. sqrt(), pow() in <cmath>, strlen() in <cstring>, getch() in <conio.h>.
+ss User-defined functions are written by the programmer for a particular task, e.g. int square(int x) { return x * x; } called as cout << square(5);
+endsolution
+qp 8 | Q.12 How function prototype and declarator differ from each other? Explain with the help of examples. || Q.12 فنکشن پروٹوٹائپ اور ڈکلیریٹر ایک دوسرے سے کیسے مختلف ہیں؟ مثالوں کی مدد سے وضاحت کریں۔ || Q.12 د فنکشن نمونه او اعلانوونکی یو له بله څنګه توپیر لري؟ د بېلګو په مرسته یې تشریح کړئ.
+solution جواب
+ss The function prototype (declaration) tells the compiler the function's name, return type and parameter types before it is used; it ends with a semicolon and may omit parameter names: int sum(int, int);
+ss The function declarator is the first line of the function definition; it has no semicolon and is followed by the function body: int sum(int a, int b) { return a + b; }
+ss So the only difference is the semicolon (and that the prototype need not name the parameters).
+endsolution
+qp 9 | Q.13 Define default arguments. Describe the advantages and disadvantages of default argument. || Q.13 ڈیفالٹ آرگیومنٹس کی تعریف کریں۔ ڈیفالٹ آرگیومنٹ کے فوائد اور نقصانات بیان کریں۔ || Q.13 ډیفالټ دلیلونه تعریف کړئ. د ډیفالټ دلیل ګټې او زیانونه بیان کړئ.
+solution جواب
+ss A default argument is a value given to a parameter in the function declaration; it is used automatically when the caller does not pass that argument, e.g. void line(char ch = '*', int n = 10); — line(); prints 10 stars, line('#', 5); prints 5 #.
+ss Advantages: the same function can be called with fewer arguments; simplifies calls when values are usually the same; reduces the need to write overloaded functions; makes programs easier to extend.
+ss Disadvantages: default arguments must be the rightmost parameters; can make the meaning of a call less clear; may cause ambiguity with overloaded functions; a wrong default may silently give wrong results.
+endsolution
+qp 10 | Q.14 What is meant by the term function overloading? How a function can be overloaded in C++? Describe it with the help of an example program. || Q.14 فنکشن اوورلوڈنگ کی اصطلاح سے کیا مراد ہے؟ C++ میں فنکشن کو کیسے اوورلوڈ کیا جا سکتا ہے؟ ایک مثالی پروگرام کی مدد سے بیان کریں۔ || Q.14 د فنکشن ډېرولو اصطلاح څه معنا لري؟ په C++ کې یو فنکشن څنګه ډېرېدای شي؟ د یوه بېلګه‌ییز پروګرام په مرسته یې بیان کړئ.
+solution جواب
+ss Function overloading means defining two or more functions with the same name but different parameter lists (number, type or order of parameters). The compiler decides which one to call from the arguments.
+ss #include <iostream> using namespace std; int area(int side) { return side * side; } int area(int l, int w) { return l * w; } float area(float r) { return 3.14159 * r * r; } int main() { cout << "Square: " << area(4) << endl; cout << "Rectangle: " << area(4, 6) << endl; cout << "Circle: " << area(2.5f) << endl; return 0; }
+endsolution
+qp 11 | Q.15 Describe the role of the following in function overloading. || Q.15 فنکشن اوورلوڈنگ میں درج ذیل کا کردار بیان کریں۔ || Q.15 د فنکشن په ډېرولو کې د لاندې رول بیان کړئ.
+solution جواب
+ss Data types of arguments — functions can have the same name if their parameter types differ: void show(int x); void show(float x); show(5) calls the first, show(2.5f) the second.
+ss Number of arguments — functions can be overloaded by a different number of parameters: int sum(int a, int b); int sum(int a, int b, int c);
+ss Order of arguments — if the types appear in a different order the functions are different: void print(int a, char c); void print(char c, int a); The return type alone cannot be used to overload.
+endsolution
+p Data types of arguments || آرگیومنٹس کی ڈیٹا ٹائپس || د دلیلونو ډېټا ډولونه
+p Number of arguments || آرگیومنٹس کی تعداد || د دلیلونو شمېر
+p Order of arguments || آرگیومنٹس کی ترتیب || د دلیلونو ترتیب
+endexercise

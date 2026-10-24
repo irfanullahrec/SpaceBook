@@ -1,0 +1,19 @@
+@printed 76
+@status lesson
+p A summary of the basic fundamental data types in C++, as well as the range of values that can be represented with each one is given in Table 3.2. || C++ میں بنیادی ڈیٹا ٹائپس کا خلاصہ اور ہر ایک سے ظاہر کی جا سکنے والی قدروں کی حد جدول 3.2 میں دی گئی ہے۔ || په C++ کې د بنسټیزو ډېټا ډولونو لنډیز او د هر یوه په مرسته د ښودل کېدونکو ارزښتونو حد په ۳.۲ جدول کې ورکړل شوی.
+table
+th | Data Type | Name | Description | Size | Range
+tr | Character | char | Character or small integer | 1byte | signed: -128 to 127; unsigned: 0 to 255
+tr | Integer | short int (short) | Short Integer | 2bytes | signed: -32768 to 32767; unsigned: 0 to 65535
+tr | Integer | int | Integer (16 bit system) | 2bytes | signed: -32768 to 32767; unsigned: 0 to 65535
+tr | Integer | int | Integer (32 bit system) | 4bytes | signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295
+tr | Integer | long int (long) | Long integer | 4bytes | signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295
+tr | Floating Point | float | Floating point number | 4bytes | 3.4 × 10⁻³⁸ to 3.4 × 10³⁸
+tr | Floating Point | double | Double precision floating point number | 8bytes | 1.7 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸
+tr | Floating Point | long double | Long double precision floating point number | 10bytes | 1.7 × 10⁻⁴⁹³² to 1.7 × 10⁴⁹³²
+tr | Boolean | bool | Boolean value. It can take one of two values: true or false. | 1byte | true (1) or false (0)
+endtable
+p Table 3.2: C++ Data Types || جدول 3.2: C++ ڈیٹا ٹائپس || ۳.۲ جدول: د C++ ډېټا ډولونه
+## 3.2.5 Constant qualifier || 3.2.5 کانسٹنٹ کوالیفائر || ۳.۲.۵ ثابت توصیف‌کوونکی
+p const keyword is used to define constant identifier whose values remain constant during the whole life of the program. Const identifier must be assigned with a value when declared, and then that value cannot be changed. Here is the segment of code used to define constant using const identifier keyword. || const کی ورڈ ایسے کانسٹنٹ شناخت کنندہ کی تعریف کے لیے استعمال ہوتا ہے جس کی قدر پروگرام کی پوری زندگی میں مستقل رہتی ہے۔ const شناخت کنندہ کو اعلان کے وقت قدر دینا لازمی ہے اور پھر وہ قدر تبدیل نہیں کی جا سکتی۔ const کی ورڈ کے ذریعے کانسٹنٹ کی تعریف کے لیے کوڈ کا حصہ یہ ہے۔ || د const کلیدي کلمه د داسې ثابت پېژندونکي د تعریف لپاره کارول کېږي چې ارزښت یې د پروګرام په ټول ژوند کې ثابت پاتې کېږي. const پېژندونکي ته باید د اعلان پر وخت ارزښت ورکړل شي، او بیا هغه ارزښت نه شي بدلېدای. د const کلیدي کلمې په مرسته د ثابت د تعریف لپاره د کوډ برخه دا ده.
+p const int DollarRate = 86; || const int DollarRate = 86; || const int DollarRate = 86;

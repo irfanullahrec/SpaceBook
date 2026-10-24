@@ -1,0 +1,10 @@
+@printed 223
+@status lesson
+p return 0; } || … return 0; } || … return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p The address of Temperature is = 0x8f98fff2 The value of PTemperature is = 0x8f98fff2 || The address of Temperature is = 0x8f98fff2 The value of PTemperature is = 0x8f98fff2 || The address of Temperature is = 0x8f98fff2 The value of PTemperature is = 0x8f98fff2
+p Here, the pointer PTemperature is initialized with the address of the variable Temperature. || یہاں پوائنٹر PTemperature کو ویری ایبل Temperature کے پتے سے ابتدائی قدر دی گئی ہے۔ || دلته PTemperature پوائنټر ته د Temperature متغیر پته د لومړني ارزښت په توګه ورکړل شوې.
+p Sometimes we need to initialize a pointer to zero. Such pointers are called null pointers and they do not point to anything. Null pointers can be defined by assigning address 0 to them. || بعض اوقات ہمیں پوائنٹر کو صفر ابتدائی قدر دینی ہوتی ہے۔ ایسے پوائنٹرز null پوائنٹرز کہلاتے ہیں اور کسی چیز کی طرف اشارہ نہیں کرتے۔ null پوائنٹرز کو پتہ 0 دے کر بیان کیا جا سکتا ہے۔ || کله کله اړتیا لرو چې پوائنټر ته صفر لومړنی ارزښت ورکړو. داسې پوائنټرونه null پوائنټرونه بلل کېږي او هېڅ شي ته اشاره نه کوي. null پوائنټرونه د 0 پتې په ورکولو تعریفېدای شي.
+p Consider the following initialization to demonstrate null pointer: || null پوائنٹر واضح کرنے کے لیے درج ذیل انیشیلائزیشن پر غور کریں: || د null پوائنټر د ښودلو لپاره لاندې لومړني ارزښت ورکولو ته پام وکړئ:
+p int *NPtr; //defines Null pointer NPtr = 0; // this assigns address 0 to NPtr || int *NPtr; //defines Null pointer NPtr = 0; // this assigns address 0 to NPtr || int *NPtr; //defines Null pointer NPtr = 0; // this assigns address 0 to NPtr
+p The use of NULL pointers is mostly done in dynamic memory allocation. || NULL پوائنٹرز کا استعمال زیادہ تر ڈائنامک میموری ایلوکیشن میں ہوتا ہے۔ || د NULL پوائنټرونو کارونه ډېری په متحرکه حافظه وېش کې کېږي.

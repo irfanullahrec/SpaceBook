@@ -1,0 +1,14 @@
+@printed 150
+@status lesson
+p cout << A [4] << endl; getch(); return 0; } || … cout << A [4] << endl; getch(); return 0; } || … cout << A [4] << endl; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p 3 2 7 5 8 || 3 2 7 5 8 || 3 2 7 5 8
+p If we do not initialize all of the elements in an array then the remaining elements will be initialized to 0. || اگر ہم ایرے کے تمام عناصر کو ابتدائی قدر نہ دیں تو باقی عناصر کو 0 ابتدائی قدر مل جاتی ہے۔ || که د لړۍ ټولو عناصرو ته لومړنی ارزښت ورنه کړو، پاتې عناصر 0 لومړنی ارزښت اخلي.
+p Similarly, to initialize all the elements of an array to 0, we can define that array as: || اسی طرح ایرے کے تمام عناصر کو 0 ابتدائی قدر دینے کے لیے ہم اس ایرے کی تعریف یوں کر سکتے ہیں: || همداراز د لړۍ ټولو عناصرو ته د 0 لومړني ارزښت ورکولو لپاره هغه لړۍ داسې تعریفولی شو:
+p int A[5]={0}; || int A[5]={0}; || int A[5]={0};
+## 5.1.5 Accessing and writing at an index in an array || 5.1.5 ایرے میں کسی انڈیکس پر رسائی اور لکھنا || ۵.۱.۵ په لړۍ کې پر یوه شاخص لاسرسی او لیکل
+p Accessing of array means to get into an index in an array and take its value for some operation while by writing at an index of an array is storing some value at a particular index of the array. These are the two important actions that should be taken while dealing with arrays. || ایرے تک رسائی کا مطلب ایرے کے کسی انڈیکس تک پہنچ کر کسی عمل کے لیے اس کی قدر لینا ہے، جبکہ ایرے کے کسی انڈیکس پر لکھنے سے مراد ایرے کے کسی خاص انڈیکس پر کوئی قدر محفوظ کرنا ہے۔ ایریز سے کام کرتے ہوئے یہ دو اہم کام ہیں۔ || د لړۍ لاسرسي معنا ده چې د لړۍ یوه شاخص ته ورسېږو او د یوې عملیې لپاره یې ارزښت واخلو، او د لړۍ پر یوه شاخص لیکل په یوه ځانګړي شاخص کې د یوه ارزښت ساتل دي. دا دوه مهم کارونه دي چې د لړیو سره د کار پر مهال باید وشي.
+p The following section addresses them with examples. || درج ذیل حصہ مثالوں کے ساتھ ان پر بات کرتا ہے۔ || لاندې برخه دا د بېلګو سره څېړي.
+## Accessing an array || ایرے تک رسائی || لړۍ ته لاسرسی
+p Array elements are accessed by using respective indices. The format for accessing is as follows: || ایرے کے عناصر تک متعلقہ انڈیسز کے ذریعے رسائی ہوتی ہے۔ رسائی کی شکل یہ ہے: || د لړۍ عناصرو ته د اړوندو شاخصونو په کارولو لاسرسی کېږي. د لاسرسي بڼه دا ده:
+p Array name[index]; || Array name[index]; || Array name[index];

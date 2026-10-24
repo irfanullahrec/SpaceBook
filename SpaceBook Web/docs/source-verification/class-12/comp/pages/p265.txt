@@ -1,0 +1,22 @@
+@printed 256
+@status lesson
+@sec 8-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | ________ is a member of function that is called automatically when an object is created.. || ________ فنکشن کا ایک ممبر ہے جو آبجیکٹ بننے پر خود بخود کال ہوتا ہے۔ || ________ د فنکشن یو غړی دی چې د شي د جوړېدو پر مهال پخپله غوښتل کېږي.
+sol Constructor ## A constructor is called automatically when an object is created.
+qp ii | The ability to reuse code already defined for the new purpose, is referred to as ________ . || پہلے سے بیان کیے گئے کوڈ کو نئے مقصد کے لیے دوبارہ استعمال کرنے کی صلاحیت ________ کہلاتی ہے۔ || د نوې موخې لپاره د مخکې تعریف شوي کوډ د بیا کارولو وړتیا ________ بلل کېږي.
+sol inheritance (reusability) ## Reusing code of an existing class for a new purpose is inheritance/code reusability.
+qp iii | In OOP the main advantage of inheritance include ________ . || OOP میں وراثت کے بنیادی فائدے میں ________ شامل ہے۔ || په OOP کې د میراث اصلي ګټه ________ لري.
+sol code reusability ## Inheritance allows derived classes to reuse and extend base-class code, saving time and effort.
+qp iv | An object of a class can be defined as “ a variable of type ________ ” || کلاس کے آبجیکٹ کو ’’________ قسم کا ویری ایبل‘‘ کہا جا سکتا ہے || د ټولګي شی د "د ________ ډول متغیر" په توګه تعریفېدای شي
+sol class ## An object is a variable (instance) of a class type.
+qp v | Function overloading is used to achieve ________ . || فنکشن اوورلوڈنگ ________ حاصل کرنے کے لیے استعمال ہوتی ہے۔ || د فنکشن ډېرول د ________ د ترلاسه کولو لپاره کارېږي.
+sol polymorphism (compile-time polymorphism) ## Using the same function name for different tasks is polymorphism.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | A constructor is called whenever ________ . (a) An object is destroyed (b) An object is created (c) A class is declared (d) A class is used || کنسٹرکٹر اس وقت کال ہوتا ہے جب ________ ۔ (a) آبجیکٹ ختم ہو (b) آبجیکٹ بنے (c) کلاس ڈکلیئر ہو (d) کلاس استعمال ہو || جوړوونکی هغه وخت غوښتل کېږي چې ________ . (a) شی ړنګ شي (b) شی جوړ شي (c) ټولګی اعلان شي (d) ټولګی وکارول شي
+sol An object is created ## A constructor is called automatically whenever an object of the class is created.
+qp ii | Destructor is used for ________ . (a) Initializing the values of data members in an object (b) Initializing arrays (c) Freeing memory allocated to the object of the class when it was created (d) Creating an object || ڈسٹرکٹر ________ کے لیے استعمال ہوتا ہے۔ (a) آبجیکٹ میں ڈیٹا ممبرز کی قدروں کو ابتدائی قدر دینا (b) ایریز کو ابتدائی قدر دینا (c) کلاس کے آبجیکٹ کو بنتے وقت دی گئی میموری آزاد کرنا (d) آبجیکٹ بنانا || ړنګوونکی د ________ لپاره کارېږي. (a) په شي کې د ډېټا غړو ارزښتونو ته لومړنی ارزښت ورکول (b) لړیو ته لومړنی ارزښت ورکول (c) د ټولګي شي ته د جوړېدو پر مهال ورکړل شوې حافظه ازادول (d) شی جوړول
+sol Freeing memory allocated to the object of the class when it was created ## A destructor frees the memory/resources allocated to an object when it is destroyed.
+qp iii | The name of destructor is always preceded by the symbol ________ (a) + (b) % (c) - (d) || ڈسٹرکٹر کے نام سے پہلے ہمیشہ نشان ________ ہوتا ہے (a) + (b) % (c) - (d) || د ړنګوونکي نوم ته تل ________ نښه مخکې وي (a) + (b) % (c) - (d)
+sol ~ ## A destructor has the class name preceded by a tilde, e.g. ~Student().

@@ -1,0 +1,46 @@
+@printed 278
+@status lesson
+qp iv | A text file has the extension ________ . (a) .doc (b) .docx (c) .txt (d) .bin || ٹیکسٹ فائل کی ایکسٹینشن ________ ہوتی ہے۔ (a) .doc (b) .docx (c) .txt (d) .bin || متني دوتنه ________ تمدید لري. (a) .doc (b) .docx (c) .txt (d) .bin
+sol .txt ## A plain text file normally has the extension .txt.
+qp v | ios::binary is used as an argument to open() function for ________ . (a) opening file for input operation. (b) opening file for output operation. (c) opening file in binary mode. (d) none of the above. || ios::binary فنکشن open() کو ________ کے لیے بطور آرگیومنٹ استعمال ہوتا ہے۔ (a) ان پٹ عمل کے لیے فائل کھولنا (b) آؤٹ پٹ عمل کے لیے فائل کھولنا (c) بائنری موڈ میں فائل کھولنا (d) ان میں سے کوئی نہیں || ios::binary د open() فنکشن ته د ________ لپاره د دلیل په توګه کارېږي. (a) د ننوتنې عملیې لپاره دوتنه پرانیستل (b) د وتنې عملیې لپاره دوتنه پرانیستل (c) په باینري حالت کې دوتنه پرانیستل (d) له پورته هېڅ یو
+sol opening file in binary mode. ## ios::binary opens the file in binary mode (no character translation).
+p Q.3 Write TRUE/FALSE against the following statements. || سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔ || پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.
+qp i | A string stream is a stream which reads input from or writes output to an associated string. || اسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔ || د تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي.
+sol True ## True — a string stream (stringstream) reads from or writes to a string as if it were a stream.
+qp ii | The eof( )is a pointer which returns false when there are no more data to be read from an input file stream, and true otherwise. || eof( ) ایک پوائنٹر ہے جو false واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ true۔ || eof( ) یو پوائنټر دی چې false بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه true.
+sol False ## False — eof() returns true when there are no more data to read (end of file reached) and false otherwise; also it is a function, not a pointer.
+qp iii | To open a file in binary mode, we need to set the file mode to ios::binary. || فائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔ || د دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو.
+sol True ## True — a file is opened in binary mode by including ios::binary in the mode.
+qp iv | close() Function is used in C++ file handling for opening a new file. || close() فنکشن C++ فائل ہینڈلنگ میں نئی فائل کھولنے کے لیے استعمال ہوتا ہے۔ || close() فنکشن د C++ د دوتنو په چلولو کې د نوې دوتنې د پرانیستلو لپاره کارېږي.
+sol False ## False — close() closes an open file; open() is used to open a file.
+qp v | Those files that store data in text format and are readable by human are called text file || وہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں || هغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي
+sol True ## True — text files store data as readable characters, e.g. .txt files.
+qp 1 | Q.4 Define file. Describe different types of file. || Q.4 فائل کی تعریف کریں۔ فائل کی مختلف اقسام بیان کریں۔ || Q.4 دوتنه تعریف کړئ. د دوتنې بېلابېل ډولونه بیان کړئ.
+solution جواب
+ss A file is a named collection of related data stored permanently on a secondary storage device (hard disk, USB) so that it remains after the program ends.
+ss Types: (1) Text files — store data as readable ASCII characters in lines ending with newline; can be opened in a text editor (.txt). (2) Binary files — store data in the same binary form as in memory; not human-readable, but faster and more compact (.bin, .dat, images, executables).
+ss By access, files may be sequential (read from start to end) or random-access (any record read directly using seekg/seekp).
+endsolution
+qp 2 | Q.5 Describe different types of operations performed on the files. || Q.5 فائلز پر کیے جانے والے مختلف قسم کے عمل بیان کریں۔ || Q.5 پر دوتنو د ترسره کېدونکو عملیو بېلابېل ډولونه بیان کړئ.
+solution جواب
+ss Operations on files: (1) Creating/opening a file — open() or the stream constructor, e.g. ofstream f("data.txt"); (2) Writing data — using << or put()/write(); (3) Reading data — using >>, get(), getline() or read().
+ss (4) Appending — adding data at the end with ios::app; (5) Searching/moving within the file — seekg(), seekp(), tellg(), tellp(); (6) Checking end of file — eof(); (7) Closing the file — close(); also deleting or renaming files (remove(), rename()).
+endsolution
+qp 3 | Q.6 Define streams. Describe input and output streams in detail. || Q.6 اسٹریمز کی تعریف کریں۔ ان پٹ اور آؤٹ پٹ اسٹریمز تفصیل سے بیان کریں۔ || Q.6 بهیرونه تعریف کړئ. د ننوتنې او وتنې بهیرونه په تفصیل بیان کړئ.
+solution جواب
+ss A stream is a sequence (flow) of bytes between a program and an input/output device or file. C++ handles all I/O through streams.
+ss Input stream — data flows from a source (keyboard or file) into the program; cin is the standard input stream (istream), and ifstream is used to read from files using >>, get(), getline().
+ss Output stream — data flows from the program to a destination (screen, printer or file); cout is the standard output stream (ostream), and ofstream writes to files using <<, put(). fstream supports both input and output.
+endsolution
+qp 4 | Q.7 What is meant by the term mode of file opening? Describe different modes of opening file. || Q.7 فائل کھولنے کے موڈ کی اصطلاح سے کیا مراد ہے؟ فائل کھولنے کے مختلف موڈز بیان کریں۔ || Q.7 د دوتنې د پرانیستلو د حالت اصطلاح څه معنا لري؟ د دوتنې د پرانیستلو بېلابېل حالتونه بیان کړئ.
+solution جواب
+ss The mode of file opening specifies the purpose for which a file is opened (reading, writing, appending etc.); it is passed as the second argument of open(), e.g. f.open("a.txt", ios::out);
+ss Modes: ios::in — open for reading; ios::out — open for writing (creates the file or erases old contents); ios::app — append, all output at the end; ios::ate — open and move to the end of file; ios::trunc — delete existing contents; ios::binary — open in binary mode; ios::nocreate / ios::noreplace (older compilers). Modes can be combined with {{BAR}}, e.g. ios::out {{BAR}} ios::binary.
+endsolution
+qp 5 | Q.8 What is file handling? Explain it in detail. || Q.8 فائل ہینڈلنگ کیا ہے؟ تفصیل سے وضاحت کریں۔ || Q.8 د دوتنو چلول څه دي؟ په تفصیل یې تشریح کړئ.
+solution جواب
+ss File handling is the process of storing data in files and retrieving it using a program, so that data is kept permanently instead of being lost when the program ends.
+ss In C++ it uses the header <fstream> with the classes ofstream (write), ifstream (read) and fstream (both). Steps: include <fstream> → create a stream object → open the file with a mode → read/write data → check errors/eof → close the file.
+ss #include <fstream> #include <iostream> using namespace std; int main() { ofstream out("data.txt"); out << "Hello file" << endl; out.close(); ifstream in("data.txt"); string line; while (getline(in, line)) cout << line << endl; in.close(); return 0; }
+endsolution
+endexercise

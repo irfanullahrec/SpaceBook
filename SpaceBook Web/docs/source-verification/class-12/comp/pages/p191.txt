@@ -1,0 +1,20 @@
+@printed 182
+@status lesson
+## 6.1.3 Function signature || 6.1.3 فنکشن سگنیچر || ۶.۱.۳ د فنکشن لاسلیک
+p The signature of a function comprises of the parts given below. || فنکشن کا سگنیچر ذیل میں دیے گئے حصوں پر مشتمل ہوتا ہے۔ || د فنکشن لاسلیک له لاندې برخو جوړ دی.
+- Name of the function || فنکشن کا نام || د فنکشن نوم
+- The number, order and data types of the arguments || آرگیومنٹس کی تعداد، ترتیب اور ڈیٹا ٹائپس || د دلیلونو شمېر، ترتیب او ډېټا ډولونه
+- Return type of function || فنکشن کی ریٹرن ٹائپ || د فنکشن د بېرته ورکړې ډول
+p Let us consider the add function to demonstrate function signature || فنکشن سگنیچر واضح کرنے کے لیے add فنکشن پر غور کرتے ہیں || راځئ د فنکشن لاسلیک د ښودلو لپاره add فنکشن ته پام وکړو
+p double add(int x, double y) { return x+y; } || double add(int x, double y) { return x+y; } || double add(int x, double y) { return x+y; }
+p The signature of the above mentioned function is: || اوپر بیان کیے گئے فنکشن کا سگنیچر یہ ہے: || د پورته یاد شوي فنکشن لاسلیک دا دی:
+p double add(int x, double y) || double add(int x, double y) || double add(int x, double y)
+p The Signature of this add function comprises of: || اس add فنکشن کا سگنیچر ان پر مشتمل ہے: || د دې add فنکشن لاسلیک له دې جوړ دی:
+- Name of the function: add || فنکشن کا نام: add || د فنکشن نوم: add
+- The data types of the arguments: int , double || آرگیومنٹس کی ڈیٹا ٹائپس: int , double || د دلیلونو ډېټا ډولونه: int , double
+- Return type of the function: double || فنکشن کی ریٹرن ٹائپ: double || د فنکشن د بېرته ورکړې ډول: double
+## 6.1.4 Components of functions || 6.1.4 فنکشنز کے اجزا || ۶.۱.۴ د فنکشنونو برخې
+p Each function consists of three components. These are: || ہر فنکشن تین اجزا پر مشتمل ہوتا ہے۔ یہ ہیں: || هر فنکشن درې برخې لري. دا دي:
+- Function prototype/declaration || فنکشن پروٹوٹائپ/ڈکلیریشن || د فنکشن نمونه/اعلان
+- Function definition || فنکشن کی تعریف || د فنکشن تعریف
+- Function call || فنکشن کال || د فنکشن غوښتنه

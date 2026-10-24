@@ -1,0 +1,16 @@
+@printed 94
+@status lesson
+p … currently stored in that variable. For example, if we want to add the value of a variable y to the value of another variable x then the following statement is used. || … اس ویری ایبل میں اس وقت محفوظ ہے۔ مثال کے طور پر اگر ہم ویری ایبل y کی قدر کو دوسرے ویری ایبل x کی قدر میں جمع کرنا چاہیں تو درج ذیل بیان استعمال ہوتا ہے۔ || … اوس په هغه متغیر کې ساتل شوی. د بېلګې په توګه که وغواړو د y متغیر ارزښت د بل متغیر x ارزښت سره جمع کړو، نو لاندې بیان کارول کېږي.
+p x+=y; i.e. x=x+y; || x+=y; i.e. x=x+y; || x+=y; i.e. x=x+y;
+p The list of these compound assignment operators along with their use is given in the Table 3.5. || ان مرکب اسائنمنٹ آپریٹرز کی فہرست ان کے استعمال کے ساتھ جدول 3.5 میں دی گئی ہے۔ || د دې مرکب د سپارلو چلونکو لېست د کارونې سره په ۳.۵ جدول کې ورکړل شوی.
+table
+th | Operator | Symbol | Form | Operation
+tr | Addition assignment | += | x += y | Add y to x
+tr | Subtraction assignment | -= | x -= y | Subtract y from x
+tr | Multiplication assignment | *= | x *= y | Multiply x by y
+tr | Division assignment | /= | x /= y | Divide x by y
+tr | Modulus assignment | %= | x %= y | Put the remainder of x / y in x
+endtable
+p Table 3.5: Arithmetic Assignment Operators || جدول 3.5: حسابی اسائنمنٹ آپریٹرز || ۳.۵ جدول: حسابي د سپارلو چلونکي
+p Consider the following example to demonstrate the use of compound assignment operators. || مرکب اسائنمنٹ آپریٹرز کے استعمال کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔ || د مرکب د سپارلو چلونکو د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ.
+p #include <iostream.h> #include <conio.h> int main() { int VarA, VarB=300; VarA = VarB; VarA +=200; // equivalent to VarA=VarA+200 cout<< "Value after addition="<<VarA; getch(); return 0; || #include <iostream.h> #include <conio.h> int main() { int VarA, VarB=300; VarA = VarB; VarA +=200; // equivalent to VarA=VarA+200 cout<< "Value after addition="<<VarA; getch(); return 0; || #include <iostream.h> #include <conio.h> int main() { int VarA, VarB=300; VarA = VarB; VarA +=200; // equivalent to VarA=VarA+200 cout<< "Value after addition="<<VarA; getch(); return 0;

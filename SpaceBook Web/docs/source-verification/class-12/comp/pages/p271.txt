@@ -1,0 +1,14 @@
+@printed 262
+@status lesson
+p All these flags can be combined using the bitwise operator OR {{BAR}}. For example, if we want to open the file test.bin in binary mode to add data we could do it by the following call to member function open(). || یہ تمام فلیگز bitwise آپریٹر OR {{BAR}} کے ذریعے ملائے جا سکتے ہیں۔ مثلاً اگر ہم فائل test.bin کو ڈیٹا شامل کرنے کے لیے بائنری موڈ میں کھولنا چاہیں تو ممبر فنکشن open() کو درج ذیل کال سے ایسا کر سکتے ہیں۔ || دا ټول بیرغونه د bitwise چلونکي OR {{BAR}} په مرسته یوځای کېدای شي. د بېلګې په توګه که وغواړو test.bin دوتنه د ډېټا د زیاتولو لپاره په باینري حالت کې پرانیزو، د open() غړي فنکشن ته د لاندې غوښتنې په مرسته یې کولی شو.
+p Ofstream myfile; myfile.open ("test.bin", ios::out {{BAR}} ios::app {{BAR}} ios::binary); || Ofstream myfile; myfile.open ("test.bin", ios::out {{BAR}} ios::app {{BAR}} ios::binary); || Ofstream myfile; myfile.open ("test.bin", ios::out {{BAR}} ios::app {{BAR}} ios::binary);
+p Each one of the open() member functions of the classes of stream, ifstream and fstream has a default mode that is used if the file is opened without a second argument: || کلاسز of stream، ifstream اور fstream کے ہر open() ممبر فنکشن کا ایک ڈیفالٹ موڈ ہوتا ہے جو اس وقت استعمال ہوتا ہے جب فائل دوسرے آرگیومنٹ کے بغیر کھولی جائے: || د of stream، ifstream او fstream ټولګیو د open() هر غړي فنکشن یو ډیفالټ حالت لري چې هغه وخت کارېږي چې دوتنه پرته له دویم دلیل پرانیستل شي:
+table
+th | class | default mode parameter
+tr | ofstream | ios::out
+tr | ifstream | ios::in
+tr | fstream | ios::in {{BAR}} ios::out
+endtable
+p For ifstream and ofstream classes, ios::in and ios::out are automatically and respectively assumed, even if a mode that does not include them is passed as second argument to the open() member function. || ifstream اور ofstream کلاسز کے لیے بالترتیب ios::in اور ios::out خود بخود فرض کر لیے جاتے ہیں، چاہے open() ممبر فنکشن کو دوسرے آرگیومنٹ کے طور پر ایسا موڈ پاس کیا جائے جس میں یہ شامل نہ ہوں۔ || د ifstream او ofstream ټولګیو لپاره په ترتیب سره ios::in او ios::out پخپله ګڼل کېږي، حتی که open() غړي فنکشن ته د دویم دلیل په توګه داسې حالت ولېږدول شي چې دا پکې شامل نه وي.
+p Let us see an example program that creates a text file “example1.txt” and writes a line of text in it. || آئیے ایک مثالی پروگرام دیکھیں جو ٹیکسٹ فائل ’’example1.txt‘‘ بناتا ہے اور اس میں متن کی ایک لائن لکھتا ہے۔ || راځئ یو بېلګه‌ییز پروګرام وګورو چې "example1.txt" متني دوتنه جوړوي او پکې د متن یوه کرښه لیکي.
+p //opening a file and writing into it #include <iostream.h> #include <fstream.h> #include <conio.h> int main() { Ofstream myfile; || //opening a file and writing into it #include <iostream.h> #include <fstream.h> #include <conio.h> int main() { Ofstream myfile; || //opening a file and writing into it #include <iostream.h> #include <fstream.h> #include <conio.h> int main() { Ofstream myfile;

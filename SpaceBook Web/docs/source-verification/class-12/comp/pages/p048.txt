@@ -1,0 +1,20 @@
+@printed 39
+@status lesson
+## Requirement gathering || ضروریات کی جمع آوری || د اړتیاوو راټولول
+p Requirement gathering is usually the first part of any software product. In this phase, meetings with the customers or prospective customers are arranged; the market requirements and features that are in demand are analyzed. It is also to find out if there is a real need in the market for the software product that is proposed to be developed. || ضروریات کی جمع آوری عموماً کسی بھی سافٹ ویئر پروڈکٹ کا پہلا حصہ ہوتی ہے۔ اس مرحلے میں گاہکوں یا ممکنہ گاہکوں کے ساتھ ملاقاتیں کی جاتی ہیں؛ مارکیٹ کی ضروریات اور طلب میں موجود خصوصیات کا تجزیہ کیا جاتا ہے۔ یہ بھی معلوم کیا جاتا ہے کہ کیا مجوزہ سافٹ ویئر پروڈکٹ کی مارکیٹ میں واقعی ضرورت ہے۔ || د اړتیاوو راټولول عموماً د هر سافټویري محصول لومړۍ برخه وي. په دې پړاو کې له پېرودونکو یا احتمالي پېرودونکو سره غونډې ترتیبېږي؛ د بازار اړتیاوې او هغه ځانګړنې چې غوښتنه یې شته، تحلیلېږي. دا هم معلومېږي چې ایا په بازار کې د جوړېدو لپاره وړاندیز شوي سافټویري محصول ته رښتینې اړتیا شته.
+p These requirements are of two types: || یہ ضروریات دو قسم کی ہوتی ہیں: || دا اړتیاوې دوه ډوله دي:
+- Functional requirements || فعالیاتی ضروریات || دندیزې اړتیاوې
+- Non-Functional Requirements || غیر فعالیاتی ضروریات || نادندیزې اړتیاوې
+p Functional requirements: Functional requirement are those requirements of a software system which describe a function of a software system or its component. It includes calculations, technical details, data manipulation and processing and other specific functionality that define what a system is supposed to accomplish. Examples of functional requirements are: || فعالیاتی ضروریات: فعالیاتی ضروریات سافٹ ویئر سسٹم کی وہ ضروریات ہیں جو سافٹ ویئر سسٹم یا اس کے کسی جز کے فعل کو بیان کرتی ہیں۔ اس میں حسابات، تکنیکی تفصیلات، ڈیٹا میں ردوبدل اور پراسیسنگ اور دیگر مخصوص افعال شامل ہیں جو یہ متعین کرتے ہیں کہ نظام کو کیا انجام دینا ہے۔ فعالیاتی ضروریات کی مثالیں یہ ہیں: || دندیزې اړتیاوې: دندیزې اړتیاوې د سافټویري سیسټم هغه اړتیاوې دي چې د سافټویري سیسټم یا د هغه د یوې برخې دنده بیانوي. پکې محاسبې، تخنیکي جزییات، د ډېټا بدلون او پروسس او نور ځانګړي فعالیتونه شامل دي چې ټاکي سیسټم باید څه ترسره کړي. د دندیزو اړتیاوو بېلګې دا دي:
+## a) Interface requirements || a) انٹرفیس کی ضروریات || a) د منځګړي اړتیاوې
+p Field accepts numeric data entry. || فیلڈ عددی ڈیٹا کا اندراج قبول کرتی ہے۔ || ساحه شمېریزه ډېټا مني.
+p Field only accepts dates before the current date. || فیلڈ صرف موجودہ تاریخ سے پہلے کی تاریخیں قبول کرتی ہے۔ || ساحه یوازې له اوسنۍ نېټې مخکې نېټې مني.
+p Screen can print on-screen data to the printer. || اسکرین پر موجود ڈیٹا پرنٹر پر پرنٹ کیا جا سکتا ہے۔ || پرده کولی شي پر پرده ښودل شوې ډېټا پرنټر ته چاپ کړي.
+## b) Business requirements || b) کاروباری ضروریات || b) سوداګریزې اړتیاوې
+p Data must be entered before a request can be approved. || درخواست کی منظوری سے پہلے ڈیٹا کا اندراج لازمی ہے۔ || مخکې له دې چې غوښتنه تصویب شي، باید ډېټا ولیکل شي.
+## c) Regulatory/Compliance requirements || c) ضابطہ جاتی/تعمیلی ضروریات || c) مقرراتي/پیروي اړتیاوې
+p The database will have a functional audit trail. || ڈیٹا بیس میں فعال آڈٹ ٹریل ہوگا۔ || ډېټابېس به فعاله د پلټنې لړۍ ولري.
+p The system will limit access to authorized users. || نظام رسائی کو مجاز صارفین تک محدود کرے گا۔ || سیسټم به لاسرسی واکمنو کاروونکو ته محدودوي.
+p The spreadsheet can secure data with electronic signatures. || اسپریڈ شیٹ الیکٹرانک دستخط سے ڈیٹا محفوظ کر سکتی ہے۔ || سپرېډشیټ کولی شي ډېټا په برېښنايي لاسلیکونو خوندي کړي.
+## d) Security requirements || d) سلامتی کی ضروریات || d) امنیتي اړتیاوې
+p Member of the Data Entry group can enter requests but not approve or delete requests. || ڈیٹا انٹری گروپ کا رکن درخواستیں درج کر سکتا ہے لیکن انھیں منظور یا حذف نہیں کر سکتا۔ || د ډېټا ننوتو د ډلې غړی غوښتنې لیکلی شي خو تصویبولی یا ړنګولی یې نه شي.

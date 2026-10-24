@@ -1,0 +1,14 @@
+@printed 124
+@status lesson
+## 4.2.1 Types of loops || 4.2.1 لوپس کی اقسام || ۴.۲.۱ د حلقو ډولونه
+p There are three types of loops. || لوپس کی تین اقسام ہیں۔ || د حلقو درې ډولونه دي.
+- for || for || for
+- while || while || while
+- do-while || do-while || do-while
+## a. for loop || a. for لوپ || a. for حلقه
+p The most commonly used looping structure in C++ is for loop. for loop is ideal in situation when we know in advance the exact number of iteration. Its general syntax is: || C++ میں سب سے زیادہ استعمال ہونے والی لوپنگ ساخت for لوپ ہے۔ for لوپ اس صورت میں مثالی ہے جب ہمیں تکرار کی درست تعداد پہلے سے معلوم ہو۔ اس کا عمومی طریقۂ تحریر یہ ہے: || په C++ کې تر ټولو ډېر کارېدونکی حلقوي جوړښت for حلقه ده. for حلقه هغه وخت غوره ده چې موږ د تکرار دقیق شمېر مخکې له مخکې پېژنو. عمومي بڼه یې دا ده:
+p Single statement for-loop || ایک بیان والا for لوپ || یو-بیانیزه for حلقه
+p for (initialization; condition; increment/decrement) statement; || for (initialization; condition; increment/decrement) statement; || for (initialization; condition; increment/decrement) statement;
+p Multiple statements for-loop || متعدد بیانات والا for لوپ || څو-بیانیزه for حلقه
+p for (initialization; condition; increment/decrement) { Statement 1; Statement 2; . . Statement n; } || for (initialization; condition; increment/decrement) { Statement 1; Statement 2; . . Statement n; } || for (initialization; condition; increment/decrement) { Statement 1; Statement 2; . . Statement n; }
+p In the above two general forms of for loop, the first one has only one statement in its body and has no need for braces { } while in the second form multiple statements are used so they are enclosed in the pair of braces { }. || for لوپ کی اوپر کی دو عمومی شکلوں میں پہلی کے جسم میں صرف ایک بیان ہے اور اسے بریسز { } کی ضرورت نہیں، جبکہ دوسری شکل میں متعدد بیانات استعمال ہوتے ہیں اس لیے انھیں بریسز { } کے جوڑے میں بند کیا جاتا ہے۔ || د for حلقې په پورته دوو عمومي بڼو کې لومړۍ په بدنه کې یوازې یو بیان لري او لوړو قوسونو { } ته اړتیا نه لري، په داسې حال کې چې په دویمه بڼه کې ډېر بیانونه کارېږي نو د لوړو قوسونو { } په جوړه کې تړل کېږي.

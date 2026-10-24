@@ -1,0 +1,18 @@
+@printed 99
+@status lesson
+## iii. Logical OR || iii. منطقی OR || iii. منطقي OR
+p The logical {{OR}} operator is used to test whether either of two conditions is true. If either of the left operand or right operand evaluates to true, the logical {{OR}} operator returns true. Also, if both the operands are true, logical {{OR}} returns to true but if both are false it returns to false. Truth Table 3.12 shows the operations of logical {{OR}} operator. || منطقی {{OR}} آپریٹر یہ جانچنے کے لیے استعمال ہوتا ہے کہ دو شرائط میں سے کوئی ایک درست ہے یا نہیں۔ اگر بائیں یا دائیں آپرینڈ میں سے کوئی true ہو تو منطقی {{OR}} آپریٹر true واپس کرتا ہے۔ نیز اگر دونوں آپرینڈز true ہوں تو بھی {{OR}} true دیتا ہے لیکن اگر دونوں false ہوں تو false دیتا ہے۔ ٹروتھ جدول 3.12 منطقی {{OR}} آپریٹر کے اعمال دکھاتی ہے۔ || منطقي {{OR}} چلونکی د دې ازمویلو لپاره کارول کېږي چې ایا له دوو شرطونو یو true دی. که کیڼ یا ښي عملوند کوم یو true وي، منطقي {{OR}} چلونکی true ورکوي. همداراز که دواړه عملوندونه true وي، {{OR}} true ورکوي، خو که دواړه false وي false ورکوي. د ریښتینولۍ ۳.۱۲ جدول د منطقي {{OR}} چلونکي عملیې ښيي.
+table
+th | X | Y | X {{OR}} Y
+tr | False | False | False
+tr | False | True | True
+tr | True | False | True
+tr | True | True | True
+endtable
+p Table 3.12: Logical OR Operator || جدول 3.12: منطقی OR آپریٹر || ۳.۱۲ جدول: منطقي OR چلونکی
+## g. Ternary (or conditional) operator (? : ) || g. ٹرنری (یا شرطیہ) آپریٹر (? : ) || g. درې-عملي (یا شرطي) چلونکی (? : )
+p The conditional operator takes three operands and is therefore also called ternary operator. It evaluates an expression and returns a value if that expression is true and a different value if the expression is false. The general syntax used for conditional operator is: || شرطیہ آپریٹر تین آپرینڈز لیتا ہے اس لیے اسے ٹرنری آپریٹر بھی کہتے ہیں۔ یہ کسی ایکسپریشن کی قدر نکالتا ہے اور اگر ایکسپریشن درست ہو تو ایک قدر اور غلط ہو تو دوسری قدر واپس کرتا ہے۔ شرطیہ آپریٹر کا عمومی طریقۂ تحریر یہ ہے: || شرطي چلونکی درې عملوندونه اخلي، له همدې امله ورته درې-عملي چلونکی هم ویل کېږي. دا یوه افاده ارزوي او که افاده true وي یو ارزښت او که false وي بل ارزښت ورکوي. د شرطي چلونکي عمومي بڼه دا ده:
+p condition ? result1: result2; || condition ? result1: result2; || condition ? result1: result2;
+p Here, if condition is true the expression will return result1, and if condition is false it will return result2. Consider the following lines of code to demonstrate the use of conditional operator. || یہاں اگر شرط درست ہو تو ایکسپریشن result1 واپس کرے گا اور اگر شرط غلط ہو تو result2 واپس کرے گا۔ شرطیہ آپریٹر کے استعمال کی وضاحت کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔ || دلته که شرط true وي، افاده به result1 ورکړي او که شرط false وي result2 به ورکړي. د شرطي چلونکي د کارونې د ښودلو لپاره د کوډ لاندې کرښو ته پام وکړئ.
+p 7==5 ?4 : 3; // returns 3, since 7 is not equal to 5. 7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2. 5>3 ?a : b; // returns the value of a, since 5 is greater than 3. || 7==5 ?4 : 3; // returns 3, since 7 is not equal to 5. 7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2. 5>3 ?a : b; // returns the value of a, since 5 is greater than 3. || 7==5 ?4 : 3; // returns 3, since 7 is not equal to 5. 7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2. 5>3 ?a : b; // returns the value of a, since 5 is greater than 3.
+p The following program demonstrates the use of conditional operator. || درج ذیل پروگرام شرطیہ آپریٹر کا استعمال دکھاتا ہے۔ || لاندې پروګرام د شرطي چلونکي کارونه ښيي.

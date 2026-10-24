@@ -1,0 +1,11 @@
+@printed 231
+@status lesson
+p { public: void print() { cout<< “Welcome to the class”; } }; //End of the class Test int main() { Test t1; // Object creation t1.print();//call to print() function getch(); return 0; } || … { public: void print() { cout<< “Welcome to the class”; } }; //End of the class Test int main() { Test t1; // Object creation t1.print();//call to print() function getch(); return 0; } || … { public: void print() { cout<< “Welcome to the class”; } }; //End of the class Test int main() { Test t1; // Object creation t1.print();//call to print() function getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Welcome to the class || Welcome to the class || Welcome to the class
+## Accessing Members of a Class || کلاس کے اراکین تک رسائی || د ټولګي غړو ته لاسرسی
+p Data members and member functions of a class can be accessed in the main program (i.e. main function) by using the object of that class, and dot operator (.) followed by the name of the member i.e. object member. || کلاس کے ڈیٹا ممبرز اور ممبر فنکشنز تک main پروگرام (یعنی main فنکشن) میں اس کلاس کے آبجیکٹ اور ڈاٹ آپریٹر (.) کے بعد ممبر کا نام لکھ کر یعنی object member سے رسائی ہو سکتی ہے۔ || د ټولګي د ډېټا غړو او غړو فنکشنونو ته په main پروګرام (یعنې main فنکشن) کې د هغه ټولګي د شي او د ټکي چلونکي (.) وروسته د غړي د نوم په لیکلو، یعنې object member، لاسرسی کېدای شي.
+p For example, in the above program, the member function print() is accessed by using the following statement: || مثلاً اوپر کے پروگرام میں ممبر فنکشن print() تک درج ذیل بیان سے رسائی کی گئی ہے: || د بېلګې په توګه په پورته پروګرام کې print() غړي فنکشن ته د لاندې بیان په مرسته لاسرسی شوی:
+p t1.print (); || t1.print (); || t1.print ();
+p Similarly a data member can be accessed as object_name data member with private data member and public functions. || اسی طرح ڈیٹا ممبر تک private ڈیٹا ممبر اور public فنکشنز کے ساتھ object_name data member کے طور پر رسائی ہو سکتی ہے۔ || همداراز د ډېټا غړي ته د private ډېټا غړي او public فنکشنونو سره د object_name data member په توګه لاسرسی کېدای شي.
+p The following program implement the class CRectangle discussed above. || درج ذیل پروگرام اوپر زیرِ بحث کلاس CRectangle کو نافذ کرتا ہے۔ || لاندې پروګرام پورته یاد شوی CRectangle ټولګی پلي کوي.

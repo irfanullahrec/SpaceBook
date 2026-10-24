@@ -1,0 +1,19 @@
+@printed 239
+@status lesson
+p anywhere else and thus provide the facility of data hiding. The public access specifier has global access and can be accessed within the same class, derived classes and main() program. || … ان کے علاوہ private اور protected اراکین کہیں اور قابلِ رسائی نہیں اور یوں ڈیٹا ہائیڈنگ کی سہولت فراہم کرتے ہیں۔ public ایکسس اسپیسیفائر کی رسائی عالمی ہے اور اسی کلاس، ماخوذ کلاسز اور main() پروگرام میں رسائی ہو سکتی ہے۔ || … public د لاسرسي ټاکونکی نړیوال لاسرسی لري او په همغه ټولګي، مشتق ټولګیو او main() پروګرام کې لاسرسی ورته کېدای شي.
+p The following table shows the level of hiding members of a class. || درج ذیل جدول کلاس کے اراکین کو چھپانے کی سطح دکھاتا ہے۔ || لاندې جدول د ټولګي د غړو د پټولو کچه ښيي.
+table
+th | Access | Public | Protected | Private
+tr | Access of members (data, functions) in the same class | Yes | Yes | Yes
+tr | Access of members (data, functions) in the derived classes | Yes | Yes | No
+tr | Access of members (data, functions) from outside the class i.e. from main() | Yes | No | No
+endtable
+p Table 8.1: Access Specifiers and Data Hiding || جدول 8.1: ایکسس اسپیسیفائرز اور ڈیٹا ہائیڈنگ || ۸.۱ جدول: د لاسرسي ټاکونکي او د ډېټا پټول
+p The concept of data hiding, shown in table 8.1, will be demonstrated after the introduction of inheritance. || جدول 8.1 میں دکھایا گیا ڈیٹا ہائیڈنگ کا تصور وراثت کے تعارف کے بعد واضح کیا جائے گا۔ || په ۸.۱ جدول کې ښودل شوی د ډېټا د پټولو مفهوم به د میراث له معرفي وروسته وښودل شي.
+## 8.1.5 Constructor and Destructor || 8.1.5 کنسٹرکٹر اور ڈسٹرکٹر || ۸.۱.۵ جوړوونکی او ړنګوونکی
+p Constructors and destructors are special member functions within the class with the same name as that of the class. The following sections discuss them in detail with the help of examples. || کنسٹرکٹرز اور ڈسٹرکٹرز کلاس کے اندر خاص ممبر فنکشنز ہیں جن کا نام کلاس کے نام جیسا ہوتا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر تفصیل سے بات کرتے ہیں۔ || جوړوونکي او ړنګوونکي د ټولګي دننه ځانګړي غړي فنکشنونه دي چې نوم یې د ټولګي له نوم سره یو دی. لاندې برخې د بېلګو په مرسته دا په تفصیل څېړي.
+## a. Constructor || a. کنسٹرکٹر || a. جوړوونکی
+p A constructor is a special kind of member function that is executed automatically when an object of the class is instantiated. Constructors are typically used to initialize data members of the class to appropriate default values, or to allow the user to easily initialize those member variables to whatever values are desired. || کنسٹرکٹر ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر خود بخود چلتا ہے۔ کنسٹرکٹرز عموماً کلاس کے ڈیٹا ممبرز کو مناسب ڈیفالٹ قدریں دینے یا صارف کو ان ممبر ویری ایبلز کو حسبِ خواہش قدریں آسانی سے دینے کی اجازت دینے کے لیے استعمال ہوتے ہیں۔ || جوړوونکی یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال پخپله اجرا کېږي. جوړوونکي عموماً د ټولګي د ډېټا غړو ته د مناسبو ډیفالټ ارزښتونو ورکولو، یا کاروونکي ته د دې اجازې لپاره کارېږي چې دې غړو متغیرونو ته په اسانۍ هر غوښتل شوی ارزښت ورکړي.
+p constructors have specific rules for naming: || کنسٹرکٹرز کے نام رکھنے کے مخصوص اصول ہیں: || جوړوونکي د نوم ایښودلو ځانګړي قواعد لري:
+- Constructors have the same name as that of the class || کنسٹرکٹرز کا نام کلاس کے نام جیسا ہوتا ہے || جوړوونکي د ټولګي په څېر نوم لري
+- Constructors have no return type (not even void) || کنسٹرکٹرز کی کوئی ریٹرن ٹائپ نہیں ہوتی (void بھی نہیں) || جوړوونکي د بېرته ورکړې ډول نه لري (حتی void هم نه)

@@ -1,0 +1,25 @@
+@printed 97
+@status lesson
+## e. Relational operators || e. ریلیشنل آپریٹرز || e. اړیکه‌ییز چلونکي
+p Relational operators are used for the comparison between two expressions. These operators are: ==, !=, >, >=, <, <=. The result of these operators can be either true or false. The list of all relational operators used in C++ is given in Table 3.8. || ریلیشنل آپریٹرز دو ایکسپریشنز کے درمیان موازنے کے لیے استعمال ہوتے ہیں۔ یہ آپریٹرز ہیں: ==، !=، >، >=، <، <=۔ ان آپریٹرز کا نتیجہ true یا false ہو سکتا ہے۔ C++ میں استعمال ہونے والے تمام ریلیشنل آپریٹرز کی فہرست جدول 3.8 میں دی گئی ہے۔ || اړیکه‌ییز چلونکي د دوو افادو ترمنځ د پرتلې لپاره کارول کېږي. دا چلونکي دا دي: ==، !=، >، >=، <، <=. د دې چلونکو پایله کېدای شي true یا false وي. په C++ کې د کارېدونکو ټولو اړیکه‌ییزو چلونکو لېست په ۳.۸ جدول کې ورکړل شوی.
+table
+th | Operator | Symbol | Form | Operation
+tr | Greater than | > | x > y | true if x is greater than y, false otherwise
+tr | Less than | < | x < y | true if x is less than y, false otherwise
+tr | Greater than or equals | >= | x >= y | true if x is greater than or equal to y, false otherwise
+tr | Less than or equals | <= | x <= y | true if x is less than or equal to y, false otherwise
+tr | Equality | == | x == y | true if x equals y, false otherwise
+tr | Inequality | != | x != y | true if x does not equal y, false otherwise
+endtable
+p Table 3.8: List of Relational Operators || جدول 3.8: ریلیشنل آپریٹرز کی فہرست || ۳.۸ جدول: د اړیکه‌ییزو چلونکو لېست
+p Consider the following lines of code: || کوڈ کی درج ذیل لائنوں پر غور کریں: || د کوډ لاندې کرښو ته پام وکړئ:
+p (7 == 5) // false. (5 > 4) // true. (3 != 2) // true. (6 >= 6) // true. (5 < 5) // false. || (7 == 5) // false. (5 > 4) // true. (3 != 2) // true. (6 >= 6) // true. (5 < 5) // false. || (7 == 5) // false. (5 > 4) // true. (3 != 2) // true. (6 >= 6) // true. (5 < 5) // false.
+## f. Logical operators || f. منطقی آپریٹرز || f. منطقي چلونکي
+p There are three logical operators used in C++. These are: !, &&, {{OR}} that are shown in Table 3.9 along with their operations. || C++ میں تین منطقی آپریٹرز استعمال ہوتے ہیں: !، &&، {{OR}} جو جدول 3.9 میں ان کے اعمال کے ساتھ دکھائے گئے ہیں۔ || په C++ کې درې منطقي چلونکي کارول کېږي: !، &&، {{OR}} چې په ۳.۹ جدول کې د عملیو سره ښودل شوي.
+table
+th | Operator | Symbol | Form | Operation
+tr | Logical NOT | ! | !x | true if x is false, or false if x is true
+tr | Logical AND | && | x && y | true if both x and y are true, false otherwise
+tr | Logical OR | {{OR}} | x {{OR}} y | true if either x or y are true, false otherwise
+endtable
+p Table 3.9: List of Logical Operators || جدول 3.9: منطقی آپریٹرز کی فہرست || ۳.۹ جدول: د منطقي چلونکو لېست

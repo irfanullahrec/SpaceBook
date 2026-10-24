@@ -1,0 +1,28 @@
+@printed 173
+@status lesson
+@sec 5-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | In C/C++ language, normally the indexing of an array starts from ________ . || C/C++ زبان میں عموماً ایرے کی انڈیکسنگ ________ سے شروع ہوتی ہے۔ || په C/C++ ژبه کې عموماً د لړۍ شاخص‌ورکول له ________ پیلېږي.
+sol 0 (zero) ## Array indexing in C/C++ starts from 0, so the first element is x[0].
+qp ii | The size of the array int x[10] is ________ . || ایرے int x[10] کا سائز ________ ہے۔ || د int x[10] لړۍ اندازه ________ ده.
+sol 10 elements (40 bytes when an int is 4 bytes) ## int x[10] holds 10 integers, x[0] to x[9].
+qp iii | char century [100][365][24][60][60] is an example of ________ array. || char century [100][365][24][60][60] ________ ایرے کی مثال ہے۔ || char century [100][365][24][60][60] د ________ لړۍ بېلګه ده.
+sol a multi-dimensional (five-dimensional) ## It has five subscripts [100][365][24][60][60].
+qp iv | An array of characters is called ________ . || حروف کا ایرے ________ کہلاتا ہے۔ || د تورو لړۍ ________ بلل کېږي.
+sol a string ## An array of characters (ending in '\0') is called a string.
+qp v | float x[12] defines one dimensional array of type ________ . || float x[12] ________ قسم کا یک جہتی ایرے بیان کرتا ہے۔ || float x[12] د ________ ډول یو-بعدي لړۍ تعریفوي.
+sol float ## float x[12] is a one-dimensional array of 12 float elements.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | A collection of data items of the same data types placed in contiguous memory locations is called ________ . (a) Record (b) Array (c) Program (d) File || متصل میموری مقامات میں رکھے گئے ایک ہی ڈیٹا ٹائپ کے ڈیٹا آئٹمز کا مجموعہ ________ کہلاتا ہے۔ (a) ریکارڈ (b) ایرے (c) پروگرام (d) فائل || په پرله‌پسې حافظه ځایونو کې د ایښودل شویو یو ډول ډېټا توکو ټولګه ________ بلل کېږي. (a) ریکارډ (b) لړۍ (c) پروګرام (d) دوتنه
+sol Array ## An array is a collection of items of the same data type stored in contiguous memory locations.
+qp ii | Observe the following statements and decide what they do. || درج ذیل بیانات کا مشاہدہ کریں اور فیصلہ کریں کہ یہ کیا کرتے ہیں۔ || لاندې بیانونو ته وګورئ او پرېکړه وکړئ چې څه کوي.
+sol reads a line of string from cin into mystring ## getline(cin, mystring) reads a whole line (including spaces) from cin into mystring.
+p string mystring; getline(cin, mystring); || string mystring; getline(cin, mystring); || string mystring; getline(cin, mystring);
+p (a) reads a line of string from cin into mystring || (a) cin سے اسٹرنگ کی ایک لائن mystring میں پڑھتا ہے || (a) له cin څخه د تار یوه کرښه mystring ته لولي
+p (b) reads a line of string from mystring into cin || (b) mystring سے اسٹرنگ کی ایک لائن cin میں پڑھتا ہے || (b) له mystring څخه د تار یوه کرښه cin ته لولي
+qp c | cin can’t be used this way (d) none of the above || cin اس طرح استعمال نہیں ہو سکتا (d) ان میں سے کوئی نہیں || cin په دې ډول نه شي کارېدای (d) له پورته هېڅ یو
+qp iii | Which of the header file must be included to use string stream? (a) <iostream> (b) <string> (c) <sstring> (d) <sstream> || string stream استعمال کرنے کے لیے کون سی ہیڈر فائل شامل کرنا ضروری ہے؟ (a) <iostream> (b) <string> (c) <sstring> (d) <sstream> || د string stream د کارولو لپاره کومه سرپاڼه دوتنه باید شامله شي؟ (a) <iostream> (b) <string> (c) <sstring> (d) <sstream>
+sol <sstream> ## String streams (stringstream) are declared in the header <sstream>.
+qp iv | The location number of an item in an array is called ________ . (a) Data (b) Value (c) Index (d) Constant || ایرے میں کسی آئٹم کے مقام کا نمبر ________ کہلاتا ہے۔ (a) ڈیٹا (b) قدر (c) انڈیکس (d) مستقل || په لړۍ کې د یوه توکي د ځای شمېره ________ بلل کېږي. (a) ډېټا (b) ارزښت (c) شاخص (d) ثابت
+sol Index ## The position number of an element in an array is its index (subscript).

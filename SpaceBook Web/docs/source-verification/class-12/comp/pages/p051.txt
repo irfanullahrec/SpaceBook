@@ -1,0 +1,14 @@
+@printed 42
+@status lesson
+- Defining major subsystems and their inputs and outputs. || بڑے ذیلی نظاموں اور ان کے ان پٹ اور آؤٹ پٹ کا تعین۔ || د لویو فرعي سیسټمونو او د هغوی د ننوتو او وتو ټاکل.
+- Allocating processes to resources. || پراسیسز کو وسائل تفویض کرنا۔ || سرچینو ته د پروسو سپارل.
+p The design phase normally consists of three different architectures. These are: || ڈیزائن کا مرحلہ عام طور پر تین مختلف ساختوں پر مشتمل ہوتا ہے۔ یہ ہیں: || د ډیزاین پړاو عموماً درې بېلابېل جوړښتونه لري. دا دي:
+- Algorithms || الگورتھمز || الګوریتمونه
+- Flow chart || فلو چارٹ || فلوچارټ
+- Pseudo code || سوڈو کوڈ || شبه کوډ
+## i. Algorithms || i. الگورتھمز || i. الګوریتمونه
+p An algorithm is a specific set of instructions for carrying out a procedure or solving a problem. || الگورتھم کسی طریقۂ کار کو انجام دینے یا کسی مسئلے کو حل کرنے کے لیے ہدایات کا ایک مخصوص مجموعہ ہے۔ || الګوریتم د یوې کړنلارې د ترسره کولو یا د یوې ستونزې د حل لپاره د لارښوونو یوه ټاکلې ټولګه ده.
+p For Example the following algorithm will find average of the 5 numbers. || مثال کے طور پر درج ذیل الگورتھم 5 اعداد کی اوسط معلوم کرے گا۔ || د بېلګې په توګه لاندې الګوریتم د ۵ عددونو اوسط پیدا کوي.
+p Sum = 0, Average = 0 Read a, b, c, d, e Sum = a+b+c+d+e Average = Sum/5 Print Average || Sum = 0, Average = 0 Read a, b, c, d, e Sum = a+b+c+d+e Average = Sum/5 Print Average || Sum = 0, Average = 0 Read a, b, c, d, e Sum = a+b+c+d+e Average = Sum/5 Print Average
+## ii. Flowcharts || ii. فلو چارٹس || ii. فلوچارټونه
+p A flowchart is a type of diagram that represents an algorithm or a process. It shows the steps of the algorithms with the help of boxes and their order by arrows connecting the boxes. This diagrammatic representation of the algorithm gives a step-by-step solution to a given problem. The operations are represented in these boxes, and the flow of control on the arrows. These flowcharts are used for analyzing, designing, documenting or managing a process or program in various fields. || فلو چارٹ ایک قسم کی تصویر ہے جو کسی الگورتھم یا عمل کی نمائندگی کرتی ہے۔ یہ خانوں کی مدد سے الگورتھم کے مراحل اور خانوں کو جوڑنے والے تیروں سے ان کی ترتیب دکھاتا ہے۔ الگورتھم کی یہ تصویری نمائندگی کسی مسئلے کا مرحلہ وار حل پیش کرتی ہے۔ عمل ان خانوں میں اور کنٹرول کا بہاؤ تیروں پر دکھایا جاتا ہے۔ یہ فلو چارٹس مختلف شعبوں میں کسی عمل یا پروگرام کے تجزیے، ڈیزائن، دستاویز بندی یا انتظام کے لیے استعمال ہوتے ہیں۔ || فلوچارټ یو ډول انځور دی چې یو الګوریتم یا بهیر ښيي. د بکسونو په مرسته د الګوریتم ګامونه او د بکسونو د نښلوونکو غشو په مرسته یې ترتیب ښيي. د الګوریتم دا انځوري ښودنه د یوې ستونزې ګام په ګام حل وړاندې کوي. عملیې په دې بکسونو کې او د کنټرول بهیر پر غشو ښودل کېږي. دا فلوچارټونه په بېلابېلو برخو کې د یوې پروسې یا پروګرام د تحلیل، ډیزاین، اسنادو یا ادارې لپاره کارول کېږي.

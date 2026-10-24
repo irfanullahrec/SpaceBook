@@ -1,0 +1,10 @@
+@printed 178
+@status lesson
+p } || … } || … }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Enter value for angle: 45.0 The Sin of 45.0 degree is = 0.850904 || Enter value for angle: 45.0 The Sin of 45.0 degree is = 0.850904 || Enter value for angle: 45.0 The Sin of 45.0 degree is = 0.850904
+p Here, sin() is a built-in function defined in the math.h header file. The value inside the sin() is converted to its corresponding sin value and displayed on the screen. Similarly we can calculate cosine, tangent and tangent inverse by using cos(x), tan(x) and cot(x) built-in functions respectively. || یہاں sin() ایک بلٹ اِن فنکشن ہے جو math.h ہیڈر فائل میں بیان کیا گیا ہے۔ sin() کے اندر کی قدر اس کی متعلقہ sin قدر میں بدل کر اسکرین پر دکھائی جاتی ہے۔ اسی طرح ہم بالترتیب cos(x)، tan(x) اور cot(x) بلٹ اِن فنکشنز سے cosine، tangent اور tangent inverse معلوم کر سکتے ہیں۔ || دلته sin() یو جوړ شوی فنکشن دی چې د math.h سرپاڼه دوتنه کې تعریف شوی. د sin() دننه ارزښت په اړوند sin ارزښت بدلېږي او پر پرده ښودل کېږي. همداراز کولی شو په ترتیب سره د cos(x)، tan(x) او cot(x) جوړ شویو فنکشنونو په مرسته cosine، tangent او tangent inverse حساب کړو.
+p Consider another example: || ایک اور مثال پر غور کریں: || بلې بېلګې ته پام وکړئ:
+p //built-in function abs( ) program #include <math.h> #include <iostream.h> #include <conio.h> int main() { int X; cout<<"Enter value for X"<<endl; cin>>X; cout<< "Absolute value of " <<X << " is: " <<abs(X); getch(); return 0; } || //built-in function abs( ) program #include <math.h> #include <iostream.h> #include <conio.h> int main() { int X; cout<<"Enter value for X"<<endl; cin>>X; cout<< "Absolute value of " <<X << " is: " <<abs(X); getch(); return 0; } || //built-in function abs( ) program #include <math.h> #include <iostream.h> #include <conio.h> int main() { int X; cout<<"Enter value for X"<<endl; cin>>X; cout<< "Absolute value of " <<X << " is: " <<abs(X); getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Enter value for X -12 Absolute value of -12 is: 12 || Enter value for X -12 Absolute value of -12 is: 12 || Enter value for X -12 Absolute value of -12 is: 12

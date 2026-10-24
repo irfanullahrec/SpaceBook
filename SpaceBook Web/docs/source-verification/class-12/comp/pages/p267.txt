@@ -1,0 +1,27 @@
+@printed 258
+@status lesson
+qp 3 | Q.6 Diagrammatically represent the following scenario of inheritance: || Q.6 وراثت کے درج ذیل منظرنامے کو خاکے کی صورت میں ظاہر کریں: || Q.6 د میراث لاندې سناریو په ډیاګرام کې وښایاست:
+solution جواب
+ss Shape is the base class at the top; Circle, Rectangle, Triangle and Square are derived from it (hierarchical inheritance). The arrows point from each derived class to the base class.
+ss +---------+ {{BAR}} Shape {{BAR}} (base class) +---------+ ^ +-------------+-+-----------+-------------+ {{BAR}} {{BAR}} {{BAR}} {{BAR}} +--------+ +-----------+ +----------+ +--------+ {{BAR}} Circle {{BAR}} {{BAR}} Rectangle {{BAR}} {{BAR}} Triangle {{BAR}} {{BAR}} Square {{BAR}} +--------+ +-----------+ +----------+ +--------+ (derived classes)
+ss In C++: class Circle : public Shape { … }; class Rectangle : public Shape { … }; and so on.
+endsolution
+p We have Shape as a base class and Circle, Rectangle, Triangle and Square as its derived classes. || ہمارے پاس Shape بیس کلاس ہے اور Circle، Rectangle، Triangle اور Square اس کی ڈیرائیوڈ کلاسز ہیں۔ || موږ Shape د اساسي ټولګي په توګه او Circle، Rectangle، Triangle او Square د هغې د مشتق ټولګیو په توګه لرو.
+qp 4 | Q.7 Write a C++ program implementing a class with the name ConstDest having constructor and destructor functions in its body. || Q.7 ConstDest نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس کے جسم میں کنسٹرکٹر اور ڈسٹرکٹر فنکشنز ہوں۔ || Q.7 یو C++ پروګرام ولیکئ چې د ConstDest په نوم ټولګی پلي کړي چې په بدنه کې یې جوړوونکی او ړنګوونکی فنکشنونه وي.
+solution جواب
+ss #include <iostream> using namespace std; class ConstDest { public: ConstDest() { cout << "Constructor called: object created" << endl; } ~ConstDest() { cout << "Destructor called: object destroyed" << endl; } }; int main() { ConstDest obj; cout << "Inside main()" << endl; return 0; }
+ss Output: Constructor called: object created Inside main() Destructor called: object destroyed
+endsolution
+qp 5 | Q.8 Write a C++ program implementing a class with the name Time. This class should have a constructor to initialize the time, hours, minutes and seconds. The class should have another function named ToSecond() to convert and display the time into seconds. || Q.8 Time نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں۔ اس کلاس میں وقت، گھنٹے، منٹ اور سیکنڈ کو ابتدائی قدر دینے کے لیے کنسٹرکٹر ہونا چاہیے۔ کلاس میں ToSecond() نامی ایک اور فنکشن ہونا چاہیے جو وقت کو سیکنڈز میں بدل کر دکھائے۔ || Q.8 یو C++ پروګرام ولیکئ چې د Time په نوم ټولګی پلي کړي. دا ټولګی باید د وخت، ساعتونو، دقیقو او ثانیو د لومړني ارزښت لپاره جوړوونکی ولري. ټولګی باید د ToSecond() په نوم بل فنکشن ولري چې وخت په ثانیو بدل او وښيي.
+sol جواب ## #include <iostream> using namespace std; class Time { int hours, minutes, seconds; public: Time(int h, int m, int s) { hours = h; minutes = m; seconds = s; } void ToSecond() { long total = hours * 3600L + minutes * 60 + seconds; cout << hours << ":" << minutes << ":" << seconds << " = " << total << " seconds" << endl; } }; int main() { int h, m, s; cout << "Enter hours, minutes and seconds: "; cin >> h >> m >> s; Time t(h, m, s); t.ToSecond(); return 0; }
+qp 6 | Q.9 What is object? How objects are created to access members of a class? || Q.9 آبجیکٹ کیا ہے؟ کلاس کے اراکین تک رسائی کے لیے آبجیکٹس کیسے بنائے جاتے ہیں؟ || Q.9 شی څه دی؟ د ټولګي غړو ته د لاسرسي لپاره شیان څنګه جوړېږي؟
+solution جواب
+ss An object is an instance of a class — a variable of the class type that has its own copy of the data members and can use the member functions. A class is a blueprint; objects are the real entities made from it.
+ss Objects are created by declaring them with the class name: class_name object_name; e.g. Student s1, s2; Members are accessed with the dot (member access) operator: s1.getData(); s1.show(); (only public members can be accessed from outside the class; with a pointer the arrow operator is used: p->show();).
+endsolution
+qp 7 | Q.10 Explain inheritance and polymorphism with examples. || Q.10 وراثت اور پولی مورفزم کو مثالوں کے ساتھ واضح کریں۔ || Q.10 میراث او پولي‌مورفیزم د بېلګو سره تشریح کړئ.
+solution جواب
+ss Inheritance is the process of creating a new (derived) class from an existing (base) class; the derived class gets the members of the base class and can add its own, giving code reusability. Example: class Car : public Vehicle { … }; Car inherits speed and start() from Vehicle and adds airConditioner.
+ss Polymorphism means 'many forms' — the same name behaves differently in different situations. Compile-time polymorphism: function overloading (area(int), area(int, int)) and operator overloading. Run-time polymorphism: virtual functions overridden in derived classes, e.g. Shape has virtual void draw(); Circle and Square each define draw() differently, and a Shape* calls the right one at run time.
+endsolution
+endexercise

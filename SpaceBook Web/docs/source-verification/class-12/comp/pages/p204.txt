@@ -1,0 +1,13 @@
+@printed 195
+@status lesson
+## 6.2.1 Passing arguments || 6.2.1 آرگیومنٹس پاس کرنا || ۶.۲.۱ د دلیلونو لېږدول
+p The following are the most commonly used methods of passing arguments to functions. || فنکشنز کو آرگیومنٹس پاس کرنے کے سب سے عام طریقے درج ذیل ہیں۔ || فنکشنونو ته د دلیلونو د لېږدولو تر ټولو عامې لارې دا دي.
+- Passing arguments by constants || مستقل کے ذریعے آرگیومنٹس پاس کرنا || د ثابتونو له لارې د دلیلونو لېږدول
+- Passing arguments by values || قدر کے ذریعے آرگیومنٹس پاس کرنا || د ارزښت له لارې د دلیلونو لېږدول
+- Passing arguments by reference || حوالے کے ذریعے آرگیومنٹس پاس کرنا || د حوالې له لارې د دلیلونو لېږدول
+## a. Passing arguments by constants || a. مستقل کے ذریعے آرگیومنٹس پاس کرنا || a. د ثابتونو له لارې د دلیلونو لېږدول
+p While calling a function, arguments are passed to the calling function. In passing constants as arguments, the actual constant values are passed instead of passing the variables. || فنکشن کال کرتے وقت آرگیومنٹس کال کرنے والے فنکشن کو پاس کیے جاتے ہیں۔ مستقل کو آرگیومنٹس کے طور پر پاس کرنے میں ویری ایبلز کے بجائے اصل مستقل قدریں پاس کی جاتی ہیں۔ || د فنکشن د غوښتلو پر مهال دلیلونه غوښتونکي فنکشن ته لېږدول کېږي. د ثابتونو د دلیلونو په توګه لېږدولو کې د متغیرونو پر ځای اصلي ثابت ارزښتونه لېږدول کېږي.
+p Consider the following program: || درج ذیل پروگرام پر غور کریں: || لاندې پروګرام ته پام وکړئ:
+p // passing integer constant as argument. #include<iostream.h> #include<conio.h> void display(int x) { cout << " x= " << x << endl; }. int main() { display(25); // function call getch(); return 0; } || // passing integer constant as argument. #include<iostream.h> #include<conio.h> void display(int x) { cout << " x= " << x << endl; }. int main() { display(25); // function call getch(); return 0; } || // passing integer constant as argument. #include<iostream.h> #include<conio.h> void display(int x) { cout << " x= " << x << endl; }. int main() { display(25); // function call getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p x = 25 || x = 25 || x = 25

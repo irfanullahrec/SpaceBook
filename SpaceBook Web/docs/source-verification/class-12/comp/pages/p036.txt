@@ -1,0 +1,20 @@
+@printed 27
+@status lesson
+@sec 1-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | The concept of executing multiple programs simultaneously on multiple possessors is known as ________ . || متعدد پروسیسرز پر بیک وقت متعدد پروگرام چلانے کا تصور ________ کہلاتا ہے۔ || پر ډېرو پروسېسرونو په یو وخت د ډېرو پروګرامونو د اجرا مفهوم ته ________ ویل کېږي.
+sol multiprocessing ## Executing multiple programs simultaneously on multiple processors is multiprocessing. (The book prints 'possessors' for processors.)
+qp ii | Multitasking operating systems execute ________ simultaneously. || ملٹی ٹاسکنگ آپریٹنگ سسٹم بیک وقت ________ چلاتے ہیں۔ || څو-دندیز عملیاتي سیسټمونه په یو وخت ________ اجرا کوي.
+sol multiple tasks (processes/programs) ## A multitasking OS executes several tasks/programs at the same time by sharing the CPU.
+qp iii | The central theme of modern operating systems, based on the concept of switching among multiple programs in memory, is called ________ . || جدید آپریٹنگ سسٹمز کا مرکزی موضوع، جو میموری میں متعدد پروگراموں کے درمیان تبدیلی کے تصور پر مبنی ہے، ________ کہلاتا ہے۔ || د نویو عملیاتي سیسټمونو مرکزي موضوع چې په حافظه کې د ډېرو پروګرامونو ترمنځ د بدلون پر مفهوم ولاړه ده، ________ بلل کېږي.
+sol multiprogramming ## Switching among multiple programs kept in memory is the central theme of multiprogramming.
+qp iv | A process consists of five states i.e. new, ready, running, block and ________ . || پراسیس پانچ حالتوں پر مشتمل ہوتا ہے یعنی نیا، تیار، چلتا ہوا، بلاک اور ________ ۔ || یوه پروسه پنځه حالتونه لري یعنې نوی، چمتو، روان، بند او ________ .
+sol terminated (exit) ## The five process states are new, ready, running, blocked (waiting) and terminated.
+qp v | ________ is a multitasking, multi-user operating system for servers, desktops and laptops, originally developed in 1969 by a group of AT&T employees at Bell Labs. || ________ سرورز، ڈیسک ٹاپس اور لیپ ٹاپس کے لیے ایک ملٹی ٹاسکنگ، ملٹی یوزر آپریٹنگ سسٹم ہے جو اصل میں 1969ء میں بیل لیبز میں AT&T کے ملازمین کے ایک گروپ نے تیار کیا۔ || ________ د سرورونو، ډیسکټاپونو او لپټاپونو لپاره یو څو-دندیز، ډېر-کاروونکي عملیاتي سیسټم دی چې په اصل کې په ۱۹۶۹ز کې په بیل لابز کې د AT&T د کارکوونکو یوې ډلې جوړ کړ.
+sol UNIX ## UNIX was developed in 1969 by AT&T employees (Ken Thompson, Dennis Ritchie and others) at Bell Labs.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | Operating system is an: (a) Application software (b) System software (c) Driver (d) None of the above || آپریٹنگ سسٹم ہے: (a) ایپلیکیشن سافٹ ویئر (b) سسٹم سافٹ ویئر (c) ڈرائیور (d) ان میں سے کوئی نہیں || عملیاتي سیسټم یو دی: (a) کاريال سافټویر (b) سیسټم سافټویر (c) چلوونکی (d) له پورته هېڅ یو
+sol System software ## An operating system is system software: it manages hardware and provides services for application programs.
+qp ii | DOS stands for: (a) Doctor of system (b) Document of system (c) Disk operating system (d) None of the above || DOS کا مطلب ہے: (a) Doctor of system (b) Document of system (c) Disk operating system (d) ان میں سے کوئی نہیں || DOS معنا لري: (a) Doctor of system (b) Document of system (c) Disk operating system (d) له پورته هېڅ یو
+sol Disk operating system ## DOS stands for Disk Operating System (e.g. MS-DOS).

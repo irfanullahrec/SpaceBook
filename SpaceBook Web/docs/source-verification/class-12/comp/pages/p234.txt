@@ -1,0 +1,28 @@
+@printed 225
+@status lesson
+@sec 7-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | Pointers are special type of variable that store ________ of other variables. || پوائنٹرز خاص قسم کے ویری ایبلز ہیں جو دوسرے ویری ایبلز کا ________ محفوظ کرتے ہیں۔ || پوائنټرونه ځانګړي ډول متغیرونه دي چې د نورو متغیرونو ________ ساتي.
+sol the memory addresses ## Pointers store the addresses of other variables.
+qp ii | If we have a statement int n; and we want to define a pointer to n then its data type must be of the type ________ . || اگر ہمارے پاس بیان int n; ہو اور ہم n کا پوائنٹر بیان کرنا چاہیں تو اس کی ڈیٹا ٹائپ ________ ہونی چاہیے۔ || که موږ int n; بیان ولرو او وغواړو n ته پوائنټر تعریف کړو، نو ډېټا ډول یې باید ________ وي.
+sol int * (pointer to int) ## A pointer to an int variable is declared as int *p = &n;
+qp iii | Assigning values to a pointer during its declaration time is called ________ . || ڈکلیریشن کے وقت پوائنٹر کو قدریں دینا ________ کہلاتا ہے۔ || د اعلان پر مهال پوائنټر ته د ارزښتونو ورکول ________ بلل کېږي.
+sol pointer initialization ## Giving a pointer an address when it is declared is pointer initialization.
+qp iv | & is the ________ operator. || & ________ آپریٹر ہے۔ || & د ________ چلونکی دی.
+sol address-of (reference) ## & gives the memory address of a variable.
+qp v | * is the ________ operator which can be read as "value pointed by" operator. || * ________ آپریٹر ہے جسے "value pointed by" آپریٹر پڑھا جا سکتا ہے۔ || * د ________ چلونکی دی چې د "value pointed by" چلونکي په توګه لوستل کېدای شي.
+sol dereference (indirection) ## * is the dereference operator, read as 'value pointed by'.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | If we have the statement int *Ptr; then to what Ptr point? (a) Points to an integer type variable (b) Points to a character type variable (c) Points to a floating point type variable (d) None of above || اگر ہمارے پاس بیان int *Ptr; ہو تو Ptr کس کی طرف اشارہ کرتا ہے؟ (a) integer قسم کے ویری ایبل کی طرف (b) character قسم کے ویری ایبل کی طرف (c) فلوٹنگ پوائنٹ قسم کے ویری ایبل کی طرف (d) ان میں سے کوئی نہیں || که موږ int *Ptr; بیان ولرو، نو Ptr څه ته اشاره کوي؟ (a) د integer ډول متغیر ته (b) د character ډول متغیر ته (c) د اعشاري ډول متغیر ته (d) له پورته هېڅ یو
+sol Points to an integer type variable ## int *Ptr; declares Ptr as a pointer to an integer type variable.
+qp ii | A pointer is: (a) A keyword used to create variables (b) A variable that stores address of an instruction (c) A variable that stores address of another variable (d) All of the above || پوائنٹر ہے: (a) ویری ایبلز بنانے کے لیے استعمال ہونے والا کلیدی لفظ (b) ایک ویری ایبل جو کسی ہدایت کا پتہ محفوظ کرتا ہے (c) ایک ویری ایبل جو دوسرے ویری ایبل کا پتہ محفوظ کرتا ہے (d) مندرجہ بالا سب || پوائنټر دی: (a) د متغیرونو د جوړولو لپاره کارېدونکې کلیدي کلمه (b) هغه متغیر چې د یوې لارښوونې پته ساتي (c) هغه متغیر چې د بل متغیر پته ساتي (d) پورته ټول
+sol A variable that stores address of another variable ## A pointer is a variable that stores the memory address of another variable.
+qp iii | The operator used to get value at address stored in a pointer variable is (a) * (b) & (c) && (d) {{OR}} || پوائنٹر ویری ایبل میں محفوظ پتے پر قدر حاصل کرنے کے لیے استعمال ہونے والا آپریٹر ہے (a) * (b) & (c) && (d) {{OR}} || هغه چلونکی چې په پوائنټر متغیر کې ساتل شوې پته کې ارزښت ترلاسه کوي (a) * (b) & (c) && (d) {{OR}}
+sol * ## The dereference operator * gives the value at the address stored in a pointer.
+qp iv | Which of the statements is correct about the following segment code? || کوڈ کے درج ذیل حصے کے بارے میں کون سا بیان درست ہے؟ || د کوډ د لاندې برخې په اړه کوم بیان سم دی؟
+sol j is a pointer to an int and stores address of i ## j is declared as int * and initialized with &i, so j is a pointer to int holding the address of i.
+p int i=10; int *j=&i; || int i=10; int *j=&i; || int i=10; int *j=&i;
+p (a) j and i are pointers to an int || (a) j اور i دونوں int کے پوائنٹرز ہیں || (a) j او i دواړه int ته پوائنټرونه دي
+p (b) i is a pointer to an int and stores address of j || (b) i ایک int کا پوائنٹر ہے اور j کا پتہ محفوظ کرتا ہے || (b) i یو int ته پوائنټر دی او د j پته ساتي
+qp c | j is a pointer to an int and stores address of i (d) j is a pointer to a pointer to an int and stores address of i || j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے (d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے || j یو int ته پوائنټر دی او د i پته ساتي (d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي

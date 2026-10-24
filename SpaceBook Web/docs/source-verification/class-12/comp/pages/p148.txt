@@ -1,0 +1,18 @@
+@printed 139
+@status lesson
+- while loop is similar to if-else structure in which the condition is checked first and then the body is executed. || while لوپ if-else ساخت جیسا ہے جس میں پہلے شرط جانچی جاتی ہے اور پھر جسم چلتا ہے۔ || while حلقه د if-else جوړښت ته ورته ده چې پکې لومړی شرط کتل کېږي او بیا بدنه اجرا کېږي.
+- In do while structure the body of the loop is executed at least once even if the condition is false. || do while ساخت میں لوپ کا جسم کم از کم ایک بار چلتا ہے چاہے شرط غلط ہو۔ || په do while جوړښت کې د حلقې بدنه لږ تر لږه یو ځل اجرا کېږي حتی که شرط false وي.
+- Sometimes, the programmers need to shift the control and make jump from one statement of the program to another statement or part. Commonly used jump statements of C++ language are: break and continue. || بعض اوقات پروگرامرز کو کنٹرول منتقل کر کے پروگرام کے ایک بیان سے دوسرے بیان یا حصے پر جانا ہوتا ہے۔ C++ زبان کے عام استعمال ہونے والے جمپ بیانات break اور continue ہیں۔ || کله کله پروګرام جوړوونکي اړتیا لري چې کنټرول ولېږدوي او د پروګرام له یوه بیان بل بیان یا برخې ته ټوپ ووهي. د C++ ژبې عام کارېدونکي د ټوپ بیانونه break او continue دي.
+@sec 4-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | An if statement can include multiple statements provided that they are ________ . || if بیان میں متعدد بیانات شامل ہو سکتے ہیں بشرطیکہ وہ ________ ہوں۔ || if بیان کولی شي ډېر بیانونه ولري په دې شرط چې ________ وي.
+sol enclosed in braces { } (a compound statement/block) ## Several statements under if must be placed in a block { }.
+qp ii | The switch statement controls program flow by executing a specific set of statements, depending on ________ . || switch بیان ________ کی بنیاد پر بیانات کا ایک مخصوص مجموعہ چلا کر پروگرام کے بہاؤ کو کنٹرول کرتا ہے۔ || switch بیان د ________ پر بنسټ د بیانونو یوه ټاکلې ټولګه اجرا کوي او د پروګرام بهیر کنټرولوي.
+sol the value of an expression (a variable) ## switch selects the case whose label matches the value of its expression.
+qp iii | When the value returned by a switch statement expression does not match a case label, the ________ statements within the label execute. || جب switch بیان کے ایکسپریشن کی قدر کسی case لیبل سے نہ ملے تو لیبل کے اندر ________ بیانات چلتے ہیں۔ || کله چې د switch بیان د افادې بېرته ورکړل شوی ارزښت له کوم case لیبل سره سمون ونه لري، د لیبل دننه ________ بیانونه اجرا کېږي.
+sol default ## If no case label matches, the statements under default execute.
+qp iv | You can exit a switch statement using a(n) ________ statement. || آپ ________ بیان کے ذریعے switch بیان سے نکل سکتے ہیں۔ || تاسو د ________ بیان په مرسته له switch بیان وتلی شئ.
+sol break ## A break statement exits the switch statement.
+qp v | Each repetition of a looping statement is called a ________ . || لوپنگ بیان کی ہر تکرار ________ کہلاتی ہے۔ || د حلقوي بیان هر تکرار ________ بلل کېږي.
+sol iteration (pass) ## Each repetition of a loop is called an iteration.

@@ -1,0 +1,7 @@
+@printed 155
+@status lesson
+p goto end; } } cout << "Search unsuccessful: "<<item<< " is not found"; end: getch(); return 0; } || … goto end; } } cout << "Search unsuccessful: "<<item<< " is not found"; end: getch(); return 0; } || … goto end; } } cout << "Search unsuccessful: "<<item<< " is not found"; end: getch(); return 0; }
+p Consider another program of array traversal using for loop to display those values from the array which are odd. || for لوپ کے ذریعے ایرے کو عبور کرنے کے ایک اور پروگرام پر غور کریں جو ایرے میں سے طاق قدریں دکھاتا ہے۔ || د for حلقې په مرسته د لړۍ د تېرېدو بل پروګرام ته پام وکړئ چې د لړۍ طاق ارزښتونه ښيي.
+p #include <iostream.h> #include <conio.h> int main() { int A [] = {3, 2, 7, 5, 8}; for ( int i=0 ; i<5 ; i++ ) { if (A[i] % 2 !=0) cout<< A[i] << endl; } getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { int A [] = {3, 2, 7, 5, 8}; for ( int i=0 ; i<5 ; i++ ) { if (A[i] % 2 !=0) cout<< A[i] << endl; } getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { int A [] = {3, 2, 7, 5, 8}; for ( int i=0 ; i<5 ; i++ ) { if (A[i] % 2 !=0) cout<< A[i] << endl; } getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p 3 7 5 || 3 7 5 || 3 7 5

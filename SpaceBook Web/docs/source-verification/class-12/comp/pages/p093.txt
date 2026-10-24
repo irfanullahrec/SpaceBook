@@ -1,0 +1,11 @@
+@printed 84
+@status lesson
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Enter a string Hello World You entered: Hello World || Enter a string Hello World You entered: Hello World || Enter a string Hello World You entered: Hello World
+## c. getch() function || c. getch() فنکشن || c. getch() فنکشن
+p getch() function is a function that obtains the next available keystroke or character from the console. As a result of this function, nothing is echoed on the screen. When no keystroke is available, the function waits until a key is pressed. The value of the keystroke is returned by the function when a key is pressed. Its general syntax is: || getch() فنکشن کنسول سے اگلی دستیاب کلید یا حرف حاصل کرتا ہے۔ اس فنکشن کے نتیجے میں اسکرین پر کچھ ظاہر نہیں ہوتا۔ جب کوئی کلید دستیاب نہ ہو تو فنکشن کسی کلید کے دبنے تک انتظار کرتا ہے۔ کلید دبنے پر فنکشن اس کی قدر واپس کرتا ہے۔ اس کا عمومی طریقۂ تحریر یہ ہے: || getch() فنکشن له کنسول څخه راتلونکې شته کیلي یا توری ترلاسه کوي. د دې فنکشن په پایله کې پر پرده هېڅ نه ښکاري. کله چې هېڅ کیلي نه وي کېکښل شوې، فنکشن تر هغه انتظار کوي چې کیلي کېکښل شي. د کیلي ارزښت د کېکښلو پر وخت فنکشن بېرته ورکوي. عمومي بڼه یې دا ده:
+p getch( ); || getch( ); || getch( );
+p Consider the following C++ program that demonstrates the use of getch() function. || درج ذیل C++ پروگرام پر غور کریں جو getch() فنکشن کا استعمال دکھاتا ہے۔ || لاندې C++ پروګرام ته پام وکړئ چې د getch() فنکشن کارونه ښيي.
+p /* getch() example */ #include <stdio.h> #include <conio.h> #include <iostream.h> int main() { char ch; cout<< "Press any key\n"; ch = getch(); cout<<"You pressed: " << ch <<endl; getch(); return 0; } || /* getch() example */ #include <stdio.h> #include <conio.h> #include <iostream.h> int main() { char ch; cout<< "Press any key\n"; ch = getch(); cout<<"You pressed: " << ch <<endl; getch(); return 0; } || /* getch() example */ #include <stdio.h> #include <conio.h> #include <iostream.h> int main() { char ch; cout<< "Press any key\n"; ch = getch(); cout<<"You pressed: " << ch <<endl; getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Press any key S You pressed: S || Press any key S You pressed: S || Press any key S You pressed: S

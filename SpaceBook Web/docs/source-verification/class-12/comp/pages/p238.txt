@@ -1,0 +1,13 @@
+@printed 229
+@status lesson
+p access_specifier_2: // Body of the class member2; ... }; || … access_specifier_2: // Body of the class member2; ... }; || … access_specifier_2: // Body of the class member2; ... };
+p Here, class_name is a valid identifier for the class which is followed by the body of the class that is enclosed in pair of braces. The body of the class consists of: || یہاں class_name کلاس کا ایک درست شناخت کنندہ ہے جس کے بعد کلاس کا جسم آتا ہے جو بریسز کے جوڑے میں بند ہوتا ہے۔ کلاس کا جسم ان پر مشتمل ہوتا ہے: || دلته class_name د ټولګي لپاره یو سم پېژندونکی دی چې وروسته یې د ټولګي بدنه راځي چې د لوړو قوسونو په جوړه کې تړل شوې. د ټولګي بدنه دا لري:
+- Data members || ڈیٹا ممبرز || د ډېټا غړي
+- Member functions || ممبر فنکشنز || غړي فنکشنونه
+p Data members and member functions are used with the access specifiers. An access specifier is one of the three types: || ڈیٹا ممبرز اور ممبر فنکشنز ایکسس اسپیسیفائرز کے ساتھ استعمال ہوتے ہیں۔ ایکسس اسپیسیفائر تین اقسام میں سے ایک ہوتا ہے: || د ډېټا غړي او غړي فنکشنونه د لاسرسي ټاکونکو سره کارېږي. د لاسرسي ټاکونکی له درېیو ډولونو یو دی:
+- private || private || private
+- public || public || public
+- protected || protected || protected
+p A C++ class ends with a semicolon (;). Consider the following example to understand the concept of class. || C++ کلاس سیمی کولن (;) پر ختم ہوتی ہے۔ کلاس کا تصور سمجھنے کے لیے درج ذیل مثال پر غور کریں۔ || د C++ ټولګی په سیمي‌کولن (;) پای ته رسېږي. د ټولګي د مفهوم د پوهېدو لپاره لاندې بېلګې ته پام وکړئ.
+p // Class declaration example class CRectangle { private: int x, y; // declaration of data members public: void set_values (int a, int b); // declaration of member function int area (); // declaration of member function }; || // Class declaration example class CRectangle { private: int x, y; // declaration of data members public: void set_values (int a, int b); // declaration of member function int area (); // declaration of member function }; || // Class declaration example class CRectangle { private: int x, y; // declaration of data members public: void set_values (int a, int b); // declaration of member function int area (); // declaration of member function };
+p The above statements declare a class named CRectangle. This class contains four members: || اوپر کے بیانات CRectangle نامی کلاس ڈکلیئر کرتے ہیں۔ اس کلاس کے چار اراکین ہیں: || پورته بیانونه د CRectangle په نوم ټولګی اعلانوي. دا ټولګی څلور غړي لري:

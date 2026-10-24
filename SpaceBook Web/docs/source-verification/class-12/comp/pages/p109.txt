@@ -1,0 +1,11 @@
+@printed 100
+@status lesson
+p // conditional operator #include <iostream.h> #include<conio.h> int main() { int x, y, z; x=22; y=77; z = (x>y) ? x : y; cout<< "The greater value is: "<<z ; getch(); return 0; } || // conditional operator #include <iostream.h> #include<conio.h> int main() { int x, y, z; x=22; y=77; z = (x>y) ? x : y; cout<< "The greater value is: "<<z ; getch(); return 0; } || // conditional operator #include <iostream.h> #include<conio.h> int main() { int x, y, z; x=22; y=77; z = (x>y) ? x : y; cout<< "The greater value is: "<<z ; getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p The greater value is: 77 || The greater value is: 77 || The greater value is: 77
+## 3.4.2 Unary, Binary and Ternary operators || 3.4.2 یونری، بائنری اور ٹرنری آپریٹرز || ۳.۴.۲ یو-عملي، دوه-عملي او درې-عملي چلونکي
+p The set of C++ operators is divided into three main categories: unary, binary and ternary. This division is on the basis of number of operands upon which the operators operate. The following sections discuss them. || C++ آپریٹرز کے مجموعے کو تین بنیادی زمروں میں تقسیم کیا جاتا ہے: یونری، بائنری اور ٹرنری۔ یہ تقسیم ان آپرینڈز کی تعداد کی بنیاد پر ہے جن پر آپریٹرز عمل کرتے ہیں۔ درج ذیل حصے ان پر بحث کرتے ہیں۔ || د C++ چلونکو ټولګه په درې اصلي ډلو وېشل کېږي: یو-عملي، دوه-عملي او درې-عملي. دا وېش د هغو عملوندونو د شمېر پر بنسټ دی چې چلونکي پرې عمل کوي. لاندې برخې یې بحث کوي.
+## a. Unary operators || a. یونری آپریٹرز || a. یو-عملي چلونکي
+p Unary operators are those operators which need a single operand. There are two arithmetic unary operators: unary plus + and unary -. || یونری آپریٹرز وہ آپریٹرز ہیں جنھیں ایک آپرینڈ درکار ہوتا ہے۔ دو حسابی یونری آپریٹرز ہیں: یونری پلس + اور یونری -۔ || یو-عملي چلونکي هغه دي چې یو عملوند ته اړتیا لري. دوه حسابي یو-عملي چلونکي دي: یو-عملي جمع + او یو-عملي منفي -.
+p Consider the following examples: || درج ذیل مثالوں پر غور کریں: || لاندې بېلګو ته پام وکړئ:
+p x = -y; a = +b; || x = -y; a = +b; || x = -y; a = +b;

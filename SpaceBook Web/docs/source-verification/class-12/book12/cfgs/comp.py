@@ -24,3 +24,20 @@ for _j, _f in enumerate(_files):
 
 def pdf_jpgs(k):
     return tuple(j for _, j in sorted(_by_pdf.get(k, []))) or None
+
+
+def route(k, group):
+    """The inside back cover (verse) and the outer back cover are one page each, photographed in two halves / as a picture: the text goes on the first JPG."""
+    if k in (165, 166):
+        return {pdf_jpgs(k)[0]: None}
+    return None
+
+
+BLANK = {pdf_jpgs(165)[1]: 'The other half of the framed verse on the inside back cover (the page was photographed in two halves).',
+         pdf_jpgs(166)[1]: 'The outer back cover: a picture of a fort, no text.',
+         pdf_jpgs(164)[1]: 'The right half of the About Authors page 316 (the page was photographed in two halves).'}
+
+
+def printed_of(jpg):
+    """Every photograph of the book is in order: printed page = scan index - 9 from the first unit's opening page (the footers read 108, 109 ... 316 on scans 117, 118 ... 325). The reviewed data's own page labels are off by one in 13 scans."""
+    return jpg - 9 if 10 <= jpg <= 325 else None

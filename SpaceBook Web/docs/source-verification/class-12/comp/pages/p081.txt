@@ -1,0 +1,13 @@
+@printed 72
+@status lesson
+p Consider the following program to demonstrate the initialization of variables. || ویری ایبلز کی ابتدائی قدر کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔ || د متغیرونو د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ.
+p #include<conio.h> #include <iostream.h> int main() { int Vara=55; // initial value = 55 int Varb(22); // initial value = 22 int result; // initial value undetermined result = Vara - Varb; cout << "The Result is= "<<result; getch(); return 0; } || #include<conio.h> #include <iostream.h> int main() { int Vara=55; // initial value = 55 int Varb(22); // initial value = 22 int result; // initial value undetermined result = Vara - Varb; cout << "The Result is= "<<result; getch(); return 0; } || #include<conio.h> #include <iostream.h> int main() { int Vara=55; // initial value = 55 int Varb(22); // initial value = 22 int result; // initial value undetermined result = Vara - Varb; cout << "The Result is= "<<result; getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p The Result is= 33 || The Result is= 33 || The Result is= 33
+## 3.2.4 Fundamental data types in C++ || 3.2.4 C++ میں بنیادی ڈیٹا ٹائپس || ۳.۲.۴ په C++ کې بنسټیز ډېټا ډولونه
+p While programming, we store the variables in computer’s memory, but the computers have to know that what kind of data we want to store in them. || پروگرامنگ کرتے وقت ہم ویری ایبلز کو کمپیوٹر کی میموری میں محفوظ کرتے ہیں، لیکن کمپیوٹر کو معلوم ہونا چاہیے کہ ہم ان میں کس قسم کا ڈیٹا محفوظ کرنا چاہتے ہیں۔ || د پروګرام‌سازۍ پر وخت موږ متغیرونه د کمپیوټر په حافظه کې ساتو، خو کمپیوټر باید پوه شي چې موږ پکې څه ډول ډېټا ساتل غواړو.
+p Data type tells the compiler that what types of data, means integer, character or floating point etc. the variable will store and what will be the range of the values. || ڈیٹا ٹائپ کمپائلر کو بتاتی ہے کہ ویری ایبل کس قسم کا ڈیٹا، یعنی صحیح عدد، حرف یا فلوٹنگ پوائنٹ وغیرہ، محفوظ کرے گا اور قدروں کی حد کیا ہوگی۔ || ډېټا ډول کمپایلر ته وايي چې متغیر به څه ډول ډېټا، یعنې صحیح عدد، توری یا اعشاري عدد او نور، ساتي او د ارزښتونو حد به څه وي.
+p The most commonly used data types in C++ are: || C++ میں سب سے زیادہ استعمال ہونے والی ڈیٹا ٹائپس یہ ہیں: || په C++ کې تر ټولو ډېر کارېدونکي ډېټا ډولونه دا دي:
+- Character || حرف (کریکٹر) || توری
+- Integer || صحیح عدد (انٹیجر) || صحیح عدد
+- Floating point || فلوٹنگ پوائنٹ || اعشاري عدد

@@ -1,0 +1,10 @@
+@printed 135
+@status lesson
+## 4.2.2 continue statement || 4.2.2 continue بیان || ۴.۲.۲ continue بیان
+p The continue statement provides a convenient way to jump to the start of a next iteration by passing the remaining part of the loop for an iteration. For example, we are going to skip the number 5 in our countdown: || continue بیان کسی تکرار میں لوپ کا باقی حصہ چھوڑ کر اگلی تکرار کے آغاز پر جانے کا آسان طریقہ فراہم کرتا ہے۔ مثال کے طور پر ہم اپنی الٹی گنتی میں عدد 5 کو چھوڑنے جا رہے ہیں: || continue بیان د یوه تکرار لپاره د حلقې پاتې برخه پرېښودو سره د راتلونکي تکرار پیل ته د ټوپ اسانه لاره برابروي. د بېلګې په توګه موږ په خپله شاتنۍ شمېرنه کې 5 عدد پرېږدو:
+p // use of continue statement in loop #include <iostream.h> #include <conio.h> int main() { for (int n=10; n>0; n--) { if (n==5) continue; cout << n << ", "; } getch(); return 0; } || // use of continue statement in loop #include <iostream.h> #include <conio.h> int main() { for (int n=10; n>0; n--) { if (n==5) continue; cout << n << ", "; } getch(); return 0; } || // use of continue statement in loop #include <iostream.h> #include <conio.h> int main() { for (int n=10; n>0; n--) { if (n==5) continue; cout << n << ", "; } getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p 10, 9, 8, 7, 6, 4, 3, 2, 1 || 10, 9, 8, 7, 6, 4, 3, 2, 1 || 10, 9, 8, 7, 6, 4, 3, 2, 1
+## 4.2.3 Nested loops || 4.2.3 نیسٹڈ لوپس || ۴.۲.۳ ځالې حلقې
+p The use of a loop inside the body of another loop is called nested loop. The enclosing loop is called outer loop and the enclosed loop is called inner loop. The following example demonstrates the concept of nested loop. || ایک لوپ کے جسم کے اندر دوسرے لوپ کا استعمال نیسٹڈ لوپ کہلاتا ہے۔ گھیرنے والے لوپ کو بیرونی لوپ اور اندر والے لوپ کو اندرونی لوپ کہتے ہیں۔ درج ذیل مثال نیسٹڈ لوپ کا تصور واضح کرتی ہے۔ || د یوې حلقې د بدنې دننه د بلې حلقې کارونه ځالې حلقه بلل کېږي. راګېروونکې حلقه بهرنۍ حلقه او دننه حلقه دننۍ حلقه بلل کېږي. لاندې بېلګه د ځالې حلقې مفهوم ښيي.
+p // nested while loop program #include <iostream.h> || // nested while loop program #include <iostream.h> || // nested while loop program #include <iostream.h>

@@ -1,0 +1,11 @@
+@printed 170
+@status lesson
+p getch(); return 0; } || … getch(); return 0; } || … getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Word interesting is found on position: 15 First character 'g' found on position: 24 || Word interesting is found on position: 15 First character 'g' found on position: 24 || Word interesting is found on position: 15 First character 'g' found on position: 24
+## d. Finding length of a strings || d. اسٹرنگ کی لمبائی معلوم کرنا || d. د تار اوږدوالی موندل
+## length() function || length() فنکشن || length() فنکشن
+p To find the length of a string, length () function is used. Consider the following program to demonstrate working of the length () function. || اسٹرنگ کی لمبائی معلوم کرنے کے لیے length () فنکشن استعمال ہوتا ہے۔ length () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔ || د تار د اوږدوالي موندلو لپاره length () فنکشن کارېږي. د length () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ.
+p #include <iostream.h> #include <string> #include<conio.h> main() { string str("C++ is a very interesting programming language"); cout << "Length of the given string is: "<< str.length(); getch(); return 0; } || #include <iostream.h> #include <string> #include<conio.h> main() { string str("C++ is a very interesting programming language"); cout << "Length of the given string is: "<< str.length(); getch(); return 0; } || #include <iostream.h> #include <string> #include<conio.h> main() { string str("C++ is a very interesting programming language"); cout << "Length of the given string is: "<< str.length(); getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Length of the given string is: 46 || Length of the given string is: 46 || Length of the given string is: 46

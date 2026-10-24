@@ -1,0 +1,20 @@
+@printed 259
+@status lesson
+@unit 9 | File Handling || فائل ہینڈلنگ || د دوتنو چلول
+@sec 9-text | File Handling || فائل ہینڈلنگ || د دوتنو چلول
+p Unit 9 || یونٹ 9 || ۹ څپرکی
+## FILE HANDLING || فائل ہینڈلنگ || د دوتنو چلول
+## After the completion of Unit-9, Students will be able to: || یونٹ 9 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ: || د ۹ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:
+- Know the binary and text file || بائنری اور ٹیکسٹ فائل جان سکیں || باینري او متني دوتنه وپېژني
+- Open the file in different modes || فائل کو مختلف موڈز میں کھول سکیں || دوتنه په بېلو حالتونو کې پرانیزي
+- Know the concept of || درج ذیل کا تصور جان سکیں || د لاندې مفهوم وپېژني
+- bof() || bof() || bof()
+- eof() || eof() || eof()
+- Define stream || اسٹریم کی تعریف کر سکیں || بهیر (stream) تعریف کړي
+- Use the following stream || درج ذیل اسٹریم استعمال کر سکیں || لاندې بهیر وکاروي
+- Single character || سنگل کریکٹر || یو توری
+- String || اسٹرنگ || تار
+## INTRODUCTION || تعارف || سریزه
+p A file is a collection of related records that are permanently stored in secondary storage. File handling is an important feature of C++ language. This unit describes different types of files such as text files and binary files and describes how different operations like opening, reading, writing and closing are performed on files. || فائل متعلقہ ریکارڈز کا مجموعہ ہے جو ثانوی اسٹوریج میں مستقل طور پر محفوظ ہوتے ہیں۔ فائل ہینڈلنگ C++ زبان کی اہم خصوصیت ہے۔ یہ یونٹ مختلف اقسام کی فائلز جیسے ٹیکسٹ فائلز اور بائنری فائلز بیان کرتا ہے اور بتاتا ہے کہ فائلز پر کھولنا، پڑھنا، لکھنا اور بند کرنا جیسے مختلف عمل کیسے کیے جاتے ہیں۔ || دوتنه د اړوندو ریکارډونو ټولګه ده چې په ثانوي زېرمه کې په دایمي توګه ساتل کېږي. د دوتنو چلول د C++ ژبې مهمه ځانګړتیا ده. دا څپرکی د دوتنو بېلابېل ډولونه لکه متني دوتنې او باینري دوتنې بیانوي او ښيي چې پر دوتنو بېلابېلې عملیې لکه پرانیستل، لوستل، لیکل او تړل څنګه ترسره کېږي.
+## 9.1 File handling || 9.1 فائل ہینڈلنگ || ۹.۱ د دوتنو چلول
+p The combinations of characters, words and records are called files. The operations on these files are the major focus point of file handling. Suppose we have a file on the disk and want to open it then reading from or writing into the file before closing it will be termed as handling files. The basic steps involved in file handling are: || حروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔ ان فائلز پر عمل فائل ہینڈلنگ کا بنیادی مرکز ہیں۔ فرض کریں ہمارے پاس ڈسک پر ایک فائل ہے اور ہم اسے کھولنا چاہتے ہیں، پھر بند کرنے سے پہلے فائل سے پڑھنا یا اس میں لکھنا فائلز ہینڈل کرنا کہلائے گا۔ فائل ہینڈلنگ کے بنیادی مراحل یہ ہیں: || د تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي. پر دې دوتنو عملیې د دوتنو د چلولو اصلي تمرکز دی. فرض کړئ په ډیسک کې یوه دوتنه لرو او غواړو پرانیزو یې، بیا له تړلو مخکې له دوتنې لوستل یا پکې لیکل د دوتنو چلول بلل کېږي. د دوتنو د چلولو بنسټیز ګامونه دا دي:

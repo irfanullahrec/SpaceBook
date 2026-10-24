@@ -1,0 +1,30 @@
+@printed 102
+@status lesson
+p The expressions are categorized as below: || ایکسپریشنز کی درجہ بندی ذیل کے مطابق ہے: || افادې په لاندې ډول ډلبندي کېږي:
+p i. Arithmetic Expressions having numeric operands and arithmetic operators and give numeric results. For example || i. حسابی ایکسپریشنز جن میں عددی آپرینڈز اور حسابی آپریٹرز ہوں اور عددی نتائج دیں۔ مثلاً || i. حسابي افادې چې شمېریز عملوندونه او حسابي چلونکي لري او شمېریزې پایلې ورکوي. د بېلګې په توګه
+p x = y + 25; sum = x + y; || x = y + 25; sum = x + y; || x = y + 25; sum = x + y;
+p ii. Relational Expressions having operands and relational operators for comparison of data. For example || ii. ریلیشنل ایکسپریشنز جن میں ڈیٹا کے موازنے کے لیے آپرینڈز اور ریلیشنل آپریٹرز ہوں۔ مثلاً || ii. اړیکه‌ییزې افادې چې د ډېټا د پرتلې لپاره عملوندونه او اړیکه‌ییز چلونکي لري. د بېلګې په توګه
+p x > y; z >=10; || x > y; z >=10; || x > y; z >=10;
+p iii. Logical Expressions for testing of two or more Boolean expressions. For example || iii. منطقی ایکسپریشنز جو دو یا زیادہ بولین ایکسپریشنز کی جانچ کے لیے ہوں۔ مثلاً || iii. منطقي افادې چې د دوو یا ډېرو بولي افادو د ازمویلو لپاره وي. د بېلګې په توګه
+p (x > y) {{OR}} (x = 10); (n=5) && (m > n); || (x > y) {{OR}} (x = 10); (n=5) && (m > n); || (x > y) {{OR}} (x = 10); (n=5) && (m > n);
+## 3.4.4 Precedence of operators || 3.4.4 آپریٹرز کی ترجیح || ۳.۴.۴ د چلونکو لومړیتوب
+p Precedence of operator means that which operand will be evaluated first and which one will be evaluated later if the expression is a complex one. For example, in the following expression % will be evaluated first and then addition. || آپریٹر کی ترجیح کا مطلب یہ ہے کہ پیچیدہ ایکسپریشن میں کون سا آپرینڈ پہلے اور کون سا بعد میں قدر نکالا جائے گا۔ مثال کے طور پر درج ذیل ایکسپریشن میں % پہلے اور پھر جمع کی قدر نکالی جائے گی۔ || د چلونکي لومړیتوب دا معنا لري چې په پېچلې افاده کې کوم عملوند لومړی او کوم وروسته ارزول کېږي. د بېلګې په توګه په لاندې افاده کې % لومړی او بیا جمع ارزول کېږي.
+p a = 5 + 7 % 2 / || a = 5 + 7 % 2 / || a = 5 + 7 % 2 /
+p From highest to lowest the priority is given below. || سب سے زیادہ سے سب سے کم ترجیح ذیل میں دی گئی ہے۔ || له تر ټولو لوړ تر ټولو ټیټ لومړیتوب لاندې ورکړل شوی.
+p 1. The parentheses are evaluated first. || 1۔ قوسین کی قدر سب سے پہلے نکالی جاتی ہے۔ || ۱. قوسونه لومړی ارزول کېږي.
+p 2. Multiplication, division and modulus operators are performed next, from left to right at same level. || 2۔ ضرب، تقسیم اور ماڈیولس آپریٹرز اس کے بعد ایک ہی سطح پر بائیں سے دائیں انجام پاتے ہیں۔ || ۲. د ضرب، وېش او موډولوس چلونکي ورپسې په یوه کچه له کیڼ څخه ښي ته ترسره کېږي.
+p 3. Addition and subtraction operators are resolved last, from left to right with same priority. || 3۔ جمع اور تفریق آپریٹرز آخر میں یکساں ترجیح کے ساتھ بائیں سے دائیں حل ہوتے ہیں۔ || ۳. د جمع او تفریق چلونکي په پای کې په یو شان لومړیتوب له کیڼ څخه ښي ته حلېږي.
+p The following table shows the list of all operators with their precedence level. || درج ذیل جدول تمام آپریٹرز کی فہرست ان کی ترجیحی سطح کے ساتھ دکھاتی ہے۔ || لاندې جدول د ټولو چلونکو لېست د هغوی د لومړیتوب کچې سره ښيي.
+table
+th | Level | Operator | Description | Associativity
+tr | 1 | ++ -- | Postfix increment/decrement | left-to-right
+tr | 2 | ++ -- + - ! | Prefix increment/decrement; Unary plus/minus; Logical negation | right-to-left
+tr | 3 | * / % | Multiplication/division/modulus | left-to-right
+tr | 4 | + - | Addition/subtraction | left-to-right
+tr | 5 | < <= > >= | Relational less than/less than or equal to; Relational greater than/greater than or equal to | left-to-right
+tr | 6 | == != | Relational is equal to/is not equal to | left-to-right
+tr | 7 | && | Logical AND | left-to-right
+tr | 8 | {{OR}} | Logical OR | left-to-right
+tr | 9 | ?: | Ternary conditional | right-to-left
+tr | 10 | = += -= *= /= %= | Assignment; Addition/subtraction assignment; Multiplication/division assignment; Modulus assignment | right-to-left
+endtable

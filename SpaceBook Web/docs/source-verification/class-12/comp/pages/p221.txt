@@ -1,0 +1,22 @@
+@printed 212
+@status lesson
+@sec 6-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | Normally a function can return ________ value. || عموماً فنکشن ________ قدر واپس کر سکتا ہے۔ || عموماً یو فنکشن ________ ارزښت بېرته ورکولی شي.
+sol one (a single) ## A function can normally return only one value through the return statement.
+qp ii | The only difference between the function declarator and function prototype is the use of ________ . || فنکشن ڈکلیریٹر اور فنکشن پروٹوٹائپ میں واحد فرق ________ کا استعمال ہے۔ || د فنکشن اعلانوونکي او د فنکشن نمونې ترمنځ یوازینی توپیر د ________ کارونه ده.
+sol a semicolon (;) ## The prototype ends with a semicolon, e.g. int sum(int, int); the declarator (first line of the definition) does not.
+qp iii | The scope of global variable declared in a C++ program, is ________ . || C++ پروگرام میں ڈکلیئر کیے گئے عالمی ویری ایبل کا دائرہ ________ ہے۔ || په C++ پروګرام کې د اعلان شوي نړیوال متغیر ساحه ________ ده.
+sol the whole program (all functions in the file) ## A global variable is declared outside all functions and is accessible throughout the program.
+qp iv | Using ________ , we can declare multiple functions with the same name, having slightly different purpose. || ________ کے ذریعے ہم ایک ہی نام کے متعدد فنکشنز ڈکلیئر کر سکتے ہیں جن کا مقصد قدرے مختلف ہو۔ || د ________ په مرسته کولی شو د یو نوم څو فنکشنونه اعلان کړو چې موخه یې یو څه بېله وي.
+sol function overloading ## Function overloading lets several functions share the same name with different parameter lists.
+qp v | If a function needs to return a value to the calling function then its return type should not use the keyword ________ . || اگر فنکشن کو کال کرنے والے فنکشن کو قدر واپس کرنی ہو تو اس کی ریٹرن ٹائپ میں کلیدی لفظ ________ استعمال نہیں ہونا چاہیے۔ || که یو فنکشن غوښتونکي فنکشن ته ارزښت بېرته ورکوي، نو د بېرته ورکړې په ډول کې یې باید ________ کلیدي کلمه ونه کارول شي.
+sol void ## A function returning a value must have a return type like int or float, not void.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | The phenomenon of having two or more functions in a program with the same names but different number and types of parameters is known as: (a) Inline Function (b) Nested Function (c) Function overloading (d) Recursive Function || کسی پروگرام میں ایک ہی نام لیکن مختلف تعداد اور اقسام کے پیرامیٹرز والے دو یا زیادہ فنکشنز ہونے کا عمل کہلاتا ہے: (a) ان لائن فنکشن (b) نیسٹڈ فنکشن (c) فنکشن اوورلوڈنگ (d) ریکرسیو فنکشن || په یوه پروګرام کې د یو نوم خو د بېل شمېر او ډول پاراميټرونو د دوو یا ډېرو فنکشنونو درلودو پدیده بلل کېږي: (a) inline فنکشن (b) ځالې فنکشن (c) د فنکشن ډېرول (d) تکراري فنکشن
+sol Function overloading ## Functions with the same name but a different number or types of parameters are overloaded functions — function overloading.
+qp ii | We declare a function with ________ if it does not have any return type (a) long (b) double (c) void (d) int || اگر فنکشن کی کوئی ریٹرن ٹائپ نہ ہو تو ہم اسے ________ کے ساتھ ڈکلیئر کرتے ہیں (a) long (b) double (c) void (d) int || که فنکشن د بېرته ورکړې هېڅ ډول ونه لري، موږ یې د ________ سره اعلانوو (a) long (b) double (c) void (d) int
+sol void ## A function that returns no value is declared with the return type void.
+qp iii | Arguments of a functions are separated with ________ . (a) Comma (,) (b) Semicolon (;) (c) Colon (:) (d) None of these || فنکشن کے آرگیومنٹس ________ سے الگ کیے جاتے ہیں۔ (a) کاما (,) (b) سیمی کولن (;) (c) کولن (:) (d) ان میں سے کوئی نہیں || د فنکشن دلیلونه په ________ جلا کېږي. (a) کامه (,) (b) سیمي‌کولن (;) (c) کولن (:) (d) له دې هېڅ یو
+sol Comma (,) ## Arguments (parameters) of a function are separated by commas, e.g. sum(int a, int b).

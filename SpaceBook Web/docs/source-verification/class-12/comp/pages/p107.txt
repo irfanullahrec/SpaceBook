@@ -1,0 +1,22 @@
+@printed 98
+@status lesson
+## i. Logical NOT || i. منطقی NOT || i. منطقي NOT
+p The ! operator is the C++ unary operator that is used to perform the Boolean NOT operation. The output of this operator is the inverse of the value of its operand. It produces false if its operand is true and true if its operand is false. The effects of logical NOT operator is summarized in the truth Table 3.10. || ! آپریٹر C++ کا یونری آپریٹر ہے جو بولین NOT عمل انجام دینے کے لیے استعمال ہوتا ہے۔ اس آپریٹر کا آؤٹ پٹ اس کے آپرینڈ کی قدر کا الٹ ہوتا ہے۔ اگر آپرینڈ true ہو تو یہ false دیتا ہے اور اگر آپرینڈ false ہو تو true۔ منطقی NOT آپریٹر کے اثرات کا خلاصہ ٹروتھ جدول 3.10 میں دیا گیا ہے۔ || ! چلونکی د C++ یو-عملي چلونکی دی چې د بولي NOT عملیې لپاره کارول کېږي. د دې چلونکي وتنه د هغه د عملوند د ارزښت سرچپه ده. که عملوند یې true وي false ورکوي او که false وي true. د منطقي NOT چلونکي اغېزې د ریښتینولۍ په ۳.۱۰ جدول کې لنډې شوې.
+table
+th | X | !X
+tr | True | False
+tr | False | True
+endtable
+p Table 3.10: Logical NOT Operator || جدول 3.10: منطقی NOT آپریٹر || ۳.۱۰ جدول: منطقي NOT چلونکی
+p The following lines of code demonstrate the working of NOT operator. || کوڈ کی درج ذیل لائنیں NOT آپریٹر کا کام دکھاتی ہیں۔ || د کوډ لاندې کرښې د NOT چلونکي کار ښيي.
+p !(5 == 5) // evaluates to false because the expression (5 == 5) is true. !(6 <= 4) // evaluates to true because (6 <= 4) would be false. !true// evaluates to false !false// evaluates to true. || !(5 == 5) // evaluates to false because the expression (5 == 5) is true. !(6 <= 4) // evaluates to true because (6 <= 4) would be false. !true// evaluates to false !false// evaluates to true. || !(5 == 5) // evaluates to false because the expression (5 == 5) is true. !(6 <= 4) // evaluates to true because (6 <= 4) would be false. !true// evaluates to false !false// evaluates to true.
+## ii. Logical AND || ii. منطقی AND || ii. منطقي AND
+p Logical && operator is a binary operator that needs two operands. It is used to test whether both conditions are true or not. If both the conditions are true, the logical && returns true, otherwise, it returns false. Truth Table 3.11 shows the results of logical && operator. || منطقی && آپریٹر بائنری آپریٹر ہے جسے دو آپرینڈز درکار ہوتے ہیں۔ یہ جانچنے کے لیے استعمال ہوتا ہے کہ آیا دونوں شرائط درست ہیں یا نہیں۔ اگر دونوں شرائط true ہوں تو منطقی && true واپس کرتا ہے، ورنہ false۔ ٹروتھ جدول 3.11 منطقی && آپریٹر کے نتائج دکھاتی ہے۔ || منطقي && چلونکی دوه-عملي چلونکی دی چې دوو عملوندونو ته اړتیا لري. د دې ازمویلو لپاره کارول کېږي چې ایا دواړه شرطونه true دي که نه. که دواړه شرطونه true وي، منطقي && true ورکوي، که نه false. د ریښتینولۍ ۳.۱۱ جدول د منطقي && چلونکي پایلې ښيي.
+table
+th | X | Y | X && Y
+tr | False | False | False
+tr | False | True | False
+tr | True | False | False
+tr | True | True | True
+endtable
+p Table 3.11: Logical AND Operator || جدول 3.11: منطقی AND آپریٹر || ۳.۱۱ جدول: منطقي AND چلونکی

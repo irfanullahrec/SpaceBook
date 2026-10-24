@@ -1,0 +1,10 @@
+@printed 89
+@status lesson
+p cout << "the College"; getch(); return 0; } || … cout << "the College"; getch(); return 0; } || … cout << "the College"; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Welcome to the College || Welcome to the College || Welcome to the College
+## b. setw manipulator || b. setw مینیپولیٹر || b. setw بدلوونکی
+p This manipulator sets the minimum field width on output. The syntax is: || یہ مینیپولیٹر آؤٹ پٹ پر کم از کم فیلڈ کی چوڑائی مقرر کرتا ہے۔ اس کا طریقۂ تحریر یہ ہے: || دا بدلوونکی په وتنه کې د ساحې لږ تر لږه پلنوالی ټاکي. بڼه یې دا ده:
+p setw(x) || setw(x) || setw(x)
+p Here, setw causes the number or string that follows it to be printed within a field of x characters wide and x is the argument set in setw manipulator. The header file that must be included while using setw manipulator is <iomanip.h>. Consider the following example: || یہاں setw اپنے بعد آنے والے عدد یا اسٹرنگ کو x حروف چوڑے فیلڈ میں پرنٹ کرواتا ہے اور x وہ آرگیومنٹ ہے جو setw مینیپولیٹر میں دیا جاتا ہے۔ setw مینیپولیٹر استعمال کرتے وقت جو ہیڈر فائل شامل کرنا ضروری ہے وہ <iomanip.h> ہے۔ درج ذیل مثال پر غور کریں: || دلته setw هغه عدد یا تار چې ورپسې راځي، د x توري پلنې ساحې دننه چاپوي او x هغه دلیل دی چې په setw بدلوونکي کې ټاکل کېږي. هغه سرلیک فایل چې د setw د کارولو پر وخت باید شامل شي <iomanip.h> دی. لاندې بېلګې ته پام وکړئ:
+p //setw manipulator program #include <iostream.h> #include <iomanip.h> #include<conio.h> int main( ) { int x1=2,x2= 4, x3=6; cout<<setw(8)<<"Number"<<setw(20)<<"Square"<<endl << setw(8) << "2" << setw(20)<< x1*x1 << endl || //setw manipulator program #include <iostream.h> #include <iomanip.h> #include<conio.h> int main( ) { int x1=2,x2= 4, x3=6; cout<<setw(8)<<"Number"<<setw(20)<<"Square"<<endl << setw(8) << "2" << setw(20)<< x1*x1 << endl || //setw manipulator program #include <iostream.h> #include <iomanip.h> #include<conio.h> int main( ) { int x1=2,x2= 4, x3=6; cout<<setw(8)<<"Number"<<setw(20)<<"Square"<<endl << setw(8) << "2" << setw(20)<< x1*x1 << endl

@@ -1,0 +1,37 @@
+@printed 226
+@status lesson
+qp v | In pointers, dereference operator * is used to: (a) Address the value of the pointer variable. (b) Points to the value stored in the variable pointed by the pointer variable (c) Both a and b (d) None of the above || پوائنٹرز میں ڈی ریفرنس آپریٹر * استعمال ہوتا ہے: (a) پوائنٹر ویری ایبل کی قدر کا پتہ دینے کے لیے (b) پوائنٹر ویری ایبل کی طرف سے اشارہ کردہ ویری ایبل میں محفوظ قدر کی طرف اشارہ کرنے کے لیے (c) a اور b دونوں (d) ان میں سے کوئی نہیں || په پوائنټرونو کې د حوالې‌لرې کولو چلونکی * کارېږي: (a) د پوائنټر متغیر ارزښت ته پته ورکولو لپاره (b) هغه ارزښت ته اشاره چې د پوائنټر متغیر په اشاره شوي متغیر کې ساتل شوی (c) a او b دواړه (d) له پورته هېڅ یو
+sol Points to the value stored in the variable pointed by the pointer variable ## *ptr refers to the value stored in the variable that the pointer points to.
+p Q.3 Write TRUE/FALSE against the following statements. || سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔ || پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.
+qp i | The statement int *ptr; defines an ordinary C++ variable. || بیان int *ptr; ایک عام C++ ویری ایبل بیان کرتا ہے۔ || int *ptr; بیان یو عادي C++ متغیر تعریفوي.
+sol False ## False — int *ptr; defines a pointer variable that holds the address of an int, not an ordinary variable.
+qp ii | The following lines of codes assign the value of the variable Temp to the pointer variable PTemp. || کوڈ کی درج ذیل لائنیں ویری ایبل Temp کی قدر پوائنٹر ویری ایبل PTemp کو دیتی ہیں۔ || د کوډ لاندې کرښې د Temp متغیر ارزښت د PTemp پوائنټر متغیر ته ورکوي.
+sol False ## False — the code assigns the address of Temp (&Temp) to PTemp, not the value of Temp.
+p float Temp; float *PTemp = &Temp; || float Temp; float *PTemp = &Temp; || float Temp; float *PTemp = &Temp;
+qp iii | Pointer variables can be initialized by addresses of the variables to which they refer. || پوائنٹر ویری ایبلز کو ان ویری ایبلز کے پتوں سے ابتدائی قدر دی جا سکتی ہے جن کی طرف وہ اشارہ کرتے ہیں۔ || د پوائنټر متغیرونو ته د هغو متغیرونو پتې لومړنی ارزښت ورکول کېدای شي چې ورته اشاره کوي.
+sol True ## True — e.g. int x; int *p = &x; initializes the pointer with the address of x.
+qp iv | To assign addresses to pointers, a programmer needs a special type of operator called address-of-operator &. || پوائنٹرز کو پتے دینے کے لیے پروگرامر کو address-of-operator & نامی خاص آپریٹر کی ضرورت ہوتی ہے۔ || پوائنټرونو ته د پتو ورکولو لپاره پروګرام جوړوونکی د address-of-operator & په نوم ځانګړي چلونکي ته اړتیا لري.
+sol True ## True — the address-of operator & is used to obtain the address that is assigned to a pointer.
+qp v | When a variable is declared in C++, the compiler reserves location for this variable in computer memory to store data. || جب C++ میں ویری ایبل ڈکلیئر کیا جاتا ہے تو کمپائلر ڈیٹا محفوظ کرنے کے لیے کمپیوٹر میموری میں اس ویری ایبل کے لیے مقام مختص کرتا ہے۔ || کله چې په C++ کې یو متغیر اعلان شي، کمپایلر د ډېټا د ساتلو لپاره د کمپیوټر په حافظه کې د دې متغیر لپاره ځای ساتي.
+sol True ## True — on declaration the compiler reserves a memory location (of the size of the data type) for the variable.
+qp 1 | Q.4 Define the term pointer. Describe the advantages of using pointer variables. || Q.4 پوائنٹر کی اصطلاح کی تعریف کریں۔ پوائنٹر ویری ایبلز کے استعمال کے فوائد بیان کریں۔ || Q.4 د پوائنټر اصطلاح تعریف کړئ. د پوائنټر متغیرونو د کارونې ګټې بیان کړئ.
+solution جواب
+ss A pointer is a variable that holds the memory address of another variable of a given type, declared as type *name; e.g. int *p = &x;
+ss Advantages: allow direct access and manipulation of memory; let functions change the caller's variables (pass by address) and return more than one value; make array and string handling efficient; are required for dynamic memory allocation (new/delete); allow building data structures such as linked lists and trees; can save memory and increase speed.
+endsolution
+qp 2 | Q.5 What is the difference between the dereference operator * and reference operator &? Explain with the help of some lines of code. || Q.5 ڈی ریفرنس آپریٹر * اور حوالہ آپریٹر & میں کیا فرق ہے؟ کوڈ کی چند لائنوں کی مدد سے وضاحت کریں۔ || Q.5 د حوالې‌لرې کولو چلونکي * او د حوالې چلونکي & ترمنځ څه توپیر دی؟ د کوډ د څو کرښو په مرسته یې تشریح کړئ.
+solution جواب
+ss The reference (address-of) operator & gives the memory address of a variable; the dereference operator * gives the value stored at the address held by a pointer.
+ss int x = 25; int *p = &x; // & : p gets the address of x cout << p; // prints an address, e.g. 0x7ffd5c cout << *p; // * : prints 25, the value at that address *p = 40; // changes x to 40 through the pointer
+endsolution
+qp 3 | Q.6 What is meant by the term pointer initialization? Write a simple program to illustrate this concept. || Q.6 پوائنٹر انیشیلائزیشن کی اصطلاح سے کیا مراد ہے؟ اس تصور کی وضاحت کے لیے ایک سادہ پروگرام لکھیں۔ || Q.6 د پوائنټر د لومړني ارزښت ورکولو اصطلاح څه معنا لري؟ د دې مفهوم د ښودلو لپاره یو ساده پروګرام ولیکئ.
+solution جواب
+ss Pointer initialization means assigning an address to a pointer at the time of its declaration, so it does not hold a garbage address.
+ss #include <iostream> using namespace std; int main() { int num = 50; int *ptr = &num; // pointer initialized with the address of num cout << "Value of num = " << num << endl; cout << "Address of num = " << ptr << endl; cout << "Value through pointer = " << *ptr << endl; return 0; }
+endsolution
+qp 4 | Q.7 How the declaration of a pointer variable is different from the declaration of a variable. || Q.7 پوائنٹر ویری ایبل کی ڈکلیریشن عام ویری ایبل کی ڈکلیریشن سے کیسے مختلف ہے۔ || Q.7 د پوائنټر متغیر اعلان د یوه متغیر له اعلان څخه څنګه توپیر لري.
+solution جواب
+ss An ordinary variable declaration reserves memory to store a data value: int a; — a holds an integer value.
+ss A pointer declaration uses an asterisk (*) before the name: int *p; — p holds the address of an integer variable, not an integer value. The data type of a pointer is the type of variable it points to, and it is given an address with &: p = &a;
+endsolution
+endexercise

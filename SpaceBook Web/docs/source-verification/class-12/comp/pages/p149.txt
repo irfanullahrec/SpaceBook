@@ -1,0 +1,17 @@
+@printed 140
+@status lesson
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | Find out the error in following block of code. || کوڈ کے درج ذیل بلاک میں غلطی تلاش کریں۔ || د کوډ په لاندې بلاک کې تېروتنه ومومئ.
+sol Equals to operator mistake ## 'x = 100' is an assignment, not a comparison; the equal-to operator '==' must be used: if (x == 100).
+p if (x = 100) cout << "x is 100"; || if (x = 100) cout << "x is 100"; || if (x = 100) cout << "x is 100";
+p (a) 100 should be enclosed in quotations || (a) 100 کو واوین میں بند ہونا چاہیے || (a) 100 باید په نقل‌قولونو کې وتړل شي
+p (b) There is no semicolon at the end of first line || (b) پہلی لائن کے آخر میں سیمی کولن نہیں ہے || (b) د لومړۍ کرښې په پای کې سیمي‌کولن نشته
+qp c | Equals to operator mistake (d) Variable x should not be inside quotation || برابری کے آپریٹر کی غلطی (d) ویری ایبل x واوین کے اندر نہیں ہونا چاہیے || د برابرۍ چلونکي تېروتنه (d) متغیر x باید د نقل‌قول دننه نه وي
+qp ii | Looping in a program means (a) Jumping to the specified branch of program (b) Repeat the specified lines of code (c) Both of above (d) None of above || پروگرام میں لوپنگ کا مطلب ہے (a) پروگرام کی مخصوص شاخ پر جانا (b) کوڈ کی مخصوص لائنیں دہرانا (c) دونوں (d) ان میں سے کوئی نہیں || په پروګرام کې حلقه کول معنا لري (a) د پروګرام ټاکلې څانګې ته ټوپ (b) د کوډ ټاکلې کرښې تکرارول (c) دواړه پورته (d) له پورته هېڅ یو
+sol Repeat the specified lines of code ## Looping means repeating the specified lines of code a number of times or while a condition is true.
+qp iii | Which of the following is not a looping statement in C++? (a) while (b) until (c) do (d) for || درج ذیل میں سے کون سا C++ میں لوپنگ بیان نہیں ہے؟ (a) while (b) until (c) do (d) for || له لاندې څخه کوم یو په C++ کې حلقوي بیان نه دی؟ (a) while (b) until (c) do (d) for
+sol until ## C++ has while, do-while and for loops; there is no 'until' loop.
+qp iv | Which of the following is not a jump statement in C++? (a) break (b) goto (c) exit (d) switch || درج ذیل میں سے کون سا C++ میں جمپ بیان نہیں ہے؟ (a) break (b) goto (c) exit (d) switch || له لاندې څخه کوم یو په C++ کې د ټوپ بیان نه دی؟ (a) break (b) goto (c) exit (d) switch
+sol switch ## switch is a selection statement; break, goto and exit (and continue, return) transfer control (jump).
+qp v | Which of the following is selection statement in C++? (a) break (b) goto (c) exit (d) switch || درج ذیل میں سے کون سا C++ میں انتخابی بیان ہے؟ (a) break (b) goto (c) exit (d) switch || له لاندې څخه کوم یو په C++ کې د ټاکنې بیان دی؟ (a) break (b) goto (c) exit (d) switch
+sol switch ## switch is the selection statement among the choices (if, if-else and switch are selection statements).

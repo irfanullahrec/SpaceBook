@@ -1,0 +1,17 @@
+@printed 22
+@status lesson
+## 1.3 PROCESS MANAGEMENT || 1.3 پراسیس مینجمنٹ || ۱.۳ د پروسې اداره
+p As discussed earlier, process management is one of the important functions of operating system. The following sections describe process in detail with a comparison to threads. || جیسا کہ پہلے بیان ہوا، پراسیس مینجمنٹ آپریٹنگ سسٹم کے اہم افعال میں سے ایک ہے۔ درج ذیل حصے تھریڈز کے موازنے کے ساتھ پراسیس کو تفصیل سے بیان کرتے ہیں۔ || لکه څنګه چې مخکې وویل شول، د پروسې اداره د عملیاتي سیسټم له مهمو دندو څخه یوه ده. لاندې برخې د تارونو (threads) سره په پرتله پروسه په تفصیل بیانوي.
+## 1.3.1 Process || 1.3.1 پراسیس || ۱.۳.۱ پروسه
+p Following are some definitions of process: || پراسیس کی کچھ تعریفیں درج ذیل ہیں: || د پروسې ځینې تعریفونه دا دي:
+- A program under execution by the processor (CPU) is called process. || پروسیسر (CPU) کے ذریعے زیرِ عمل پروگرام کو پراسیس کہتے ہیں۔ || هغه پروګرام چې د پروسېسر (CPU) له خوا د اجرا لاندې وي، پروسه بلل کېږي.
+- An instance of a program running on a computer is called process. || کمپیوٹر پر چلنے والے پروگرام کی ایک مثال (instance) کو پراسیس کہتے ہیں۔ || په کمپیوټر د چلېدونکي پروګرام یوې بېلګې (instance) ته پروسه ویل کېږي.
+- The entity that can be assigned to and executed on a processor is termed as process. || وہ اکائی جسے پروسیسر کو تفویض کیا جا سکے اور اس پر چلایا جا سکے، پراسیس کہلاتی ہے۔ || هغه واحد چې پروسېسر ته سپارل کېدای شي او پرې اجرا کېدای شي، پروسه بلل کېږي.
+## 1.3.2 Process States || 1.3.2 پراسیس کی حالتیں || ۱.۳.۲ د پروسې حالتونه
+p A process can be in one of the different states: new, ready, running, block, and exit. These states are usually represented in the form of models called process models. || پراسیس مختلف حالتوں میں سے کسی ایک میں ہو سکتا ہے: نیا، تیار، چلتا ہوا، بلاک اور اختتام۔ ان حالتوں کو عموماً ماڈلز کی شکل میں ظاہر کیا جاتا ہے جنھیں پراسیس ماڈلز کہتے ہیں۔ || یوه پروسه په یوه له بېلابېلو حالتونو کې کېدای شي: نوی، چمتو، روان، بند او وتل. دا حالتونه عموماً د ماډلونو په بڼه ښودل کېږي چې د پروسې ماډلونه بلل کېږي.
+## a. New State || a. نئی حالت || a. نوی حالت
+p When a new process is created then it is said to be in new state. || جب نیا پراسیس بنایا جاتا ہے تو کہا جاتا ہے کہ وہ نئی حالت میں ہے۔ || کله چې نوې پروسه جوړه شي، ویل کېږي چې په نوي حالت کې ده.
+## b. Running State || b. چلنے کی حالت || b. روان حالت
+p A process is said to be in running state if it is under execution by the CPU. This means that the process actually using the CPU at that particular time. || پراسیس اس وقت چلنے کی حالت میں کہلاتا ہے جب وہ CPU کے ذریعے زیرِ عمل ہو۔ اس کا مطلب ہے کہ پراسیس اس خاص وقت پر واقعی CPU استعمال کر رہا ہے۔ || یوه پروسه هغه وخت په روان حالت کې ګڼل کېږي چې د CPU له خوا د اجرا لاندې وي. مطلب یې دا دی چې پروسه په هغه ځانګړي وخت کې په رښتیا CPU کاروي.
+## c. Blocked (or waiting) State || c. بلاک (یا انتظار) کی حالت || c. بند (یا انتظار) حالت
+p A process is said to be in blocked state if it is waiting for some event to happen such as an Input/Output completion before it can proceed. || پراسیس اس وقت بلاک حالت میں کہلاتا ہے جب وہ آگے بڑھنے سے پہلے کسی واقعے کے ہونے کا انتظار کر رہا ہو، جیسے ان پٹ/آؤٹ پٹ کی تکمیل۔ || یوه پروسه هغه وخت په بند حالت کې ګڼل کېږي چې د دوام مخکې د کومې پېښې د پېښېدو انتظار کوي، لکه د ننوتو/وتو بشپړېدل.

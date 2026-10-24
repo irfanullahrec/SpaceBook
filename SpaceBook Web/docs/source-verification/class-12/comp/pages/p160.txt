@@ -1,0 +1,8 @@
+@printed 151
+@status lesson
+p Looking at the example discussed in the above section, in which A has 5 elements, each of the element has been accessed as A[0], A[1], …, A[4] using cout statement. || اوپر کے حصے میں زیرِ بحث مثال کو دیکھیں جس میں A کے 5 عناصر ہیں، ہر عنصر تک cout بیان کے ذریعے A[0]، A[1]، …، A[4] کے طور پر رسائی کی گئی ہے۔ || پورته برخه کې بحث شوې بېلګې ته وګورئ چې پکې A ۵ عناصر لري، هر عنصر ته د cout بیان په مرسته د A[0]، A[1]، …، A[4] په توګه لاسرسی شوی.
+p To access all elements of an array we use loops instead of individual reference to each element, For Example: || ایرے کے تمام عناصر تک رسائی کے لیے ہم ہر عنصر کے انفرادی حوالے کے بجائے لوپس استعمال کرتے ہیں، مثال کے طور پر: || د لړۍ ټولو عناصرو ته د لاسرسي لپاره د هر عنصر د جلا ګوتنیونې پر ځای حلقې کاروو، د بېلګې په توګه:
+p // accessing array using loop #include <iostream.h> #include <conio.h> int main() { int A[5] = { 3, 2, 7, 5, 8 }; for(int i=0; i<=4; ++i) cout << A[i] << endl; getch(); return 0; } || // accessing array using loop #include <iostream.h> #include <conio.h> int main() { int A[5] = { 3, 2, 7, 5, 8 }; for(int i=0; i<=4; ++i) cout << A[i] << endl; getch(); return 0; } || // accessing array using loop #include <iostream.h> #include <conio.h> int main() { int A[5] = { 3, 2, 7, 5, 8 }; for(int i=0; i<=4; ++i) cout << A[i] << endl; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p 3 2 7 5 8 || 3 2 7 5 8 || 3 2 7 5 8
+p Here, for loop has been used to access the elements of the array one by one and print the result on the screen. || یہاں for لوپ ایرے کے عناصر تک ایک ایک کر کے رسائی اور نتیجہ اسکرین پر پرنٹ کرنے کے لیے استعمال ہوا ہے۔ || دلته for حلقه د لړۍ عناصرو ته یو په یو لاسرسي او پر پرده د پایلې چاپولو لپاره کارول شوې.

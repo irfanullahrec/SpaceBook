@@ -1,0 +1,12 @@
+@printed 144
+@status lesson
+qp 5 | Q.8 Write a C++ program to read the address of a person and exit when the user enters dot (.) from the keyboard. || Q.8 کسی شخص کا پتہ پڑھنے اور صارف کے کی بورڈ سے نقطہ (.) داخل کرنے پر بند ہونے والا C++ پروگرام لکھیں۔ || Q.8 یو C++ پروګرام ولیکئ چې د یوه کس پته ولولي او کله چې کاروونکی له کیبورډ ټکی (.) ولیکي، ووځي.
+sol جواب ## #include <iostream> using namespace std; int main() { char ch; cout << "Enter the address (type . to finish):" << endl; do { cin.get(ch); if (ch != '.') cout << ch; } while (ch != '.'); cout << endl << "Address entered." << endl; return 0; }
+qp 6 | Q.9 Write a C++ program to find out the area of a triangle and if any side is zero then display the message “There is no triangle”. || Q.9 مثلث کا رقبہ معلوم کرنے کا C++ پروگرام لکھیں اور اگر کوئی ضلع صفر ہو تو پیغام ’’There is no triangle‘‘ دکھائیں۔ || Q.9 یو C++ پروګرام ولیکئ چې د مثلث مساحت پیدا کړي او که کومه ضلع صفر وي، "There is no triangle" پیغام وښيي.
+solution جواب
+ss #include <iostream> #include <cmath> using namespace std; int main() { float a, b, c, s, area; cout << "Enter the three sides of the triangle: "; cin >> a >> b >> c; if (a == 0 {{OR}} b == 0 {{OR}} c == 0) cout << "There is no triangle" << endl; else { s = (a + b + c) / 2; area = sqrt(s * (s - a) * (s - b) * (s - c)); cout << "Area of triangle = " << area << endl; } return 0; }
+ss Heron's formula is used: area = √(s(s − a)(s − b)(s − c)), where s is half the perimeter.
+endsolution
+qp 7 | Q.10 Write a C++ program to input a character from the keyboard and display the message after testing whether it is Vowel or Consonant. || Q.10 کی بورڈ سے ایک حرف لے کر یہ جانچنے کے بعد پیغام دکھانے کا C++ پروگرام لکھیں کہ آیا یہ حرفِ علت ہے یا حرفِ صحیح۔ || Q.10 یو C++ پروګرام ولیکئ چې له کیبورډ یو توری واخلي او د دې له ازمویلو وروسته چې ږغیز (Vowel) دی که بې‌ږغه (Consonant)، پیغام وښيي.
+sol جواب ## #include <iostream> using namespace std; int main() { char ch; cout << "Enter an alphabet: "; cin >> ch; switch (ch) { case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U': cout << ch << " is a Vowel" << endl; break; default: if ((ch >= 'a' && ch <= 'z') {{OR}} (ch >= 'A' && ch <= 'Z')) cout << ch << " is a Consonant" << endl; else cout << ch << " is not an alphabet" << endl; } return 0; }
+endexercise

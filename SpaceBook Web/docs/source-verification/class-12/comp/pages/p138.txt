@@ -1,0 +1,8 @@
+@printed 129
+@status lesson
+p } getch(); return 0; } || … } getch(); return 0; } || … } getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p PAKISTAN PAKISTAN PAKISTAN PAKISTAN PAKISTAN || PAKISTAN PAKISTAN PAKISTAN PAKISTAN PAKISTAN || PAKISTAN PAKISTAN PAKISTAN PAKISTAN PAKISTAN
+p Like for loop, the while loop has also three parts: initialization, condition and increment/decrement. The difference is that here the initialization is done before the while clause and the increment/decrement is done within the body of the while loop. || for لوپ کی طرح while لوپ کے بھی تین حصے ہیں: ابتدائی قدر، شرط اور اضافہ/کمی۔ فرق یہ ہے کہ یہاں ابتدائی قدر while شق سے پہلے دی جاتی ہے اور اضافہ/کمی while لوپ کے جسم کے اندر کی جاتی ہے۔ || د for حلقې په څېر while حلقه هم درې برخې لري: لومړنی ارزښت، شرط او زیاتول/کمول. توپیر دا دی چې دلته لومړنی ارزښت د while برخې مخکې ورکول کېږي او زیاتول/کمول د while حلقې د بدنې دننه کېږي.
+p The second example of countdown using while-loop is given below. || while لوپ کے ذریعے الٹی گنتی کی دوسری مثال ذیل میں دی گئی ہے۔ || د while حلقې په مرسته د شاتنۍ شمېرنې دویمه بېلګه لاندې ورکړل شوې.
+p // count down program using while loop #include <iostream.h> #include <conio.h> int main() { int n; cout << "Enter the starting number: "; cin >> n; while (n>0) { cout << n << ", "; --n; || // count down program using while loop #include <iostream.h> #include <conio.h> int main() { int n; cout << "Enter the starting number: "; cin >> n; while (n>0) { cout << n << ", "; --n; || // count down program using while loop #include <iostream.h> #include <conio.h> int main() { int n; cout << "Enter the starting number: "; cin >> n; while (n>0) { cout << n << ", "; --n;

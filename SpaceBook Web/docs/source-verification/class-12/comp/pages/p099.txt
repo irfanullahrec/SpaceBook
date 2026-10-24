@@ -1,0 +1,12 @@
+@printed 90
+@status lesson
+p << setw(8) << "4" << setw(20)<< x2*x2 << endl << setw(8) << "6" << setw(20)<< x3*x3 << endl; getch(); return 0; } || … << setw(8) << "4" << setw(20)<< x2*x2 << endl << setw(8) << "6" << setw(20)<< x3*x3 << endl; getch(); return 0; } || … << setw(8) << "4" << setw(20)<< x2*x2 << endl << setw(8) << "6" << setw(20)<< x3*x3 << endl; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Number Square 2 4 4 16 6 36 || Number Square 2 4 4 16 6 36 || Number Square 2 4 4 16 6 36
+## 3.4 Operators in C++ || 3.4 C++ میں آپریٹرز || ۳.۴ په C++ کې چلونکي
+p Operators are the symbols which perform operation on operands. The operation may be arithmetic or comparison of data. || آپریٹرز وہ علامات ہیں جو آپرینڈز پر عمل کرتی ہیں۔ یہ عمل حسابی یا ڈیٹا کا موازنہ ہو سکتا ہے۔ || چلونکي هغه نښې دي چې پر عملوندونو (operands) عملیه ترسره کوي. عملیه کېدای شي حسابي یا د ډېټا پرتله وي.
+p z=x+y; || z=x+y; || z=x+y;
+p Here, x, y and z are operands and ‘+’ and ‘=’ are the operators. || یہاں x، y اور z آپرینڈز ہیں اور ‘+’ اور ‘=’ آپریٹرز ہیں۔ || دلته x، y او z عملوندونه دي او ‘+’ او ‘=’ چلونکي دي.
+## 3.4.1 Operators in C++ || 3.4.1 C++ میں آپریٹرز || ۳.۴.۱ په C++ کې چلونکي
+p C++ is rich in operators and supports a wide range of these operators that range from the simplest unary to the complex ternary. Operators are very important because without their use, expressions cannot be evaluated. || C++ آپریٹرز سے بھرپور ہے اور ان آپریٹرز کی ایک وسیع رینج کو سپورٹ کرتی ہے جو سادہ ترین یونری سے پیچیدہ ٹرنری تک ہیں۔ آپریٹرز بہت اہم ہیں کیونکہ ان کے استعمال کے بغیر ایکسپریشنز کی قدر نہیں نکالی جا سکتی۔ || C++ په چلونکو بډایه ده او د دې چلونکو پراخه لړۍ ملاتړ کوي چې له تر ټولو ساده یو-عملي تر پېچلي درې-عملي پورې دي. چلونکي ډېر مهم دي، ځکه له کارونې پرته یې افادې نه شي ارزول کېدای.
+p The following are different types of operators used in C++. || C++ میں استعمال ہونے والے آپریٹرز کی مختلف اقسام درج ذیل ہیں۔ || په C++ کې کارېدونکي بېلابېل ډوله چلونکي دا دي.

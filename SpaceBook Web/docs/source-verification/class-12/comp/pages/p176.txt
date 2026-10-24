@@ -1,0 +1,11 @@
+@printed 167
+@status lesson
+p #include <string.h> #include<conio.h> int main() { char FirstName[15] = "SSC "; char LastName[15] = "Computer"; strcat(FirstName, LastName); cout << FirstName; getch(); return 0; } || … #include <string.h> #include<conio.h> int main() { char FirstName[15] = "SSC "; char LastName[15] = "Computer"; strcat(FirstName, LastName); cout << FirstName; getch(); return 0; } || … #include <string.h> #include<conio.h> int main() { char FirstName[15] = "SSC "; char LastName[15] = "Computer"; strcat(FirstName, LastName); cout << FirstName; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p SSC Computer || SSC Computer || SSC Computer
+## b. Copying of strings || b. اسٹرنگز کی نقل || b. د تارونو کاپي کول
+## copy() function || copy() فنکشن || copy() فنکشن
+p copy() function is used to copy one string to another string. The general syntax of copy function is given below: || copy() فنکشن ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرنے کے لیے استعمال ہوتا ہے۔ copy فنکشن کا عمومی طریقۂ تحریر ذیل میں ہے: || copy() فنکشن د یوه تار بل تار ته د کاپي کولو لپاره کارېږي. د copy فنکشن عمومي بڼه لاندې ده:
+p str.copy (string_name, number_of_characters, starting_pointer) || str.copy (string_name, number_of_characters, starting_pointer) || str.copy (string_name, number_of_characters, starting_pointer)
+p Here, the string_name is the name of the string to which the string is to be copied. number_of_characters represents the exacts number of characters to be copied and starting_pointer indicates the starting point from where to copy. Consider the following program: || یہاں string_name اس اسٹرنگ کا نام ہے جس میں اسٹرنگ نقل کی جانی ہے۔ number_of_characters نقل کیے جانے والے حروف کی درست تعداد ظاہر کرتا ہے اور starting_pointer وہ نقطۂ آغاز بتاتا ہے جہاں سے نقل کرنا ہے۔ درج ذیل پروگرام پر غور کریں: || دلته string_name د هغه تار نوم دی چې تار پکې کاپي کېږي. number_of_characters د کاپي کېدونکو تورو دقیق شمېر ښيي او starting_pointer د پیل ټکی ښيي چې له کومه ځایه کاپي شي. لاندې پروګرام ته پام وکړئ:
+p // strings copying program using copy() function #include <iostream.h> || // strings copying program using copy() function #include <iostream.h> || // strings copying program using copy() function #include <iostream.h>

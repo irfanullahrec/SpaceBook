@@ -1,0 +1,16 @@
+@printed 261
+@status lesson
+p The dot . operator is used between the variable myFile and open function. myFile is an object of ifstream while open() is a function of ifstream. The argument for open function is the name of the file on the disk which should be enclosed in double quotes. The file name can be simple file name like “sale.txt”. It can also fully qualify path name like “C:\myprogs\sale.txt”. || ویری ایبل myFile اور open فنکشن کے درمیان ڈاٹ . آپریٹر استعمال ہوتا ہے۔ myFile، ifstream کا آبجیکٹ ہے جبکہ open()، ifstream کا فنکشن ہے۔ open فنکشن کا آرگیومنٹ ڈسک پر فائل کا نام ہے جو ڈبل کوٹس میں بند ہونا چاہیے۔ فائل کا نام سادہ ہو سکتا ہے جیسے ’’sale.txt‘‘۔ یہ مکمل راستے والا نام بھی ہو سکتا ہے جیسے ’’C:\myprogs\sale.txt‘‘۔ || د myFile متغیر او open فنکشن ترمنځ د ټکي . چلونکی کارېږي. myFile د ifstream شی دی او open() د ifstream فنکشن دی. د open فنکشن دلیل په ډیسک کې د دوتنې نوم دی چې باید په دوه‌ګونو نقل‌قولونو کې وتړل شي. د دوتنې نوم کېدای شي ساده نوم وي لکه "sale.txt". همداراز کېدای شي بشپړ د لارې نوم وي لکه "C:\myprogs\sale.txt".
+## a. Modes of opening a file || a. فائل کھولنے کے موڈز || a. د دوتنې د پرانیستلو حالتونه
+p While opening a file, we tell the compiler what we want to do with it i.e. we want to read the file or write into the file or want to modify it. In order to open a file in any desired mode the member function open () should take mode as an argument along with the file name. Its general syntax is shown below: || فائل کھولتے وقت ہم کمپائلر کو بتاتے ہیں کہ ہم اس کے ساتھ کیا کرنا چاہتے ہیں یعنی فائل پڑھنا، فائل میں لکھنا یا اسے تبدیل کرنا چاہتے ہیں۔ فائل کو کسی بھی مطلوبہ موڈ میں کھولنے کے لیے ممبر فنکشن open () کو فائل کے نام کے ساتھ موڈ بطور آرگیومنٹ لینا چاہیے۔ اس کا عمومی طریقۂ تحریر ذیل میں ہے: || د دوتنې د پرانیستلو پر مهال کمپایلر ته وایو چې ورسره څه کول غواړو، یعنې غواړو دوتنه ولولو، پکې ولیکو یا یې بدله کړو. د دوتنې په هر غوښتل شوي حالت کې د پرانیستلو لپاره open () غړی فنکشن باید د دوتنې له نوم سره حالت هم د دلیل په توګه واخلي. عمومي بڼه یې لاندې ده:
+p open (filename, mode); || open (filename, mode); || open (filename, mode);
+p Here, file name representing the name of the file to be opened, and mode is an optional parameter with a combination of the following flags: || یہاں file name کھولی جانے والی فائل کا نام ظاہر کرتا ہے اور mode درج ذیل فلیگز کے مجموعے والا اختیاری پیرامیٹر ہے: || دلته file name د پرانیستل کېدونکې دوتنې نوم ښيي او mode د لاندې بیرغونو (flags) د ترکیب سره اختیاري پاراميټر دی:
+table
+th | Flag | Meaning
+tr | ios::in | Open for input operations.
+tr | ios::out | Open for output operations.
+tr | ios::binary | Open in binary mode.
+tr | ios::ate | Set the initial position at the end of the file. If this flag is not set to any value, the initial position is the beginning of the file.
+tr | ios::app | All output operations are performed at the end of the file, appending the content to the current content of the file. This flag can only be used in streams open for output-only operations.
+tr | ios::trunk | If the file opened for output operations already exists then its previous contents are deleted and replaced by the new one.
+endtable

@@ -1,0 +1,22 @@
+@printed 85
+@status lesson
+## 3.3.4 Escape sequences || 3.3.4 ایسکیپ سیکوینسز || ۳.۳.۴ د تېښتې لړۍ (Escape sequences)
+p C++ has some characters that have special meaning. These characters are called escape sequences. An escape sequence starts with a \ followed by a letter or number. || C++ میں کچھ حروف کا خاص مطلب ہوتا ہے۔ ان حروف کو ایسکیپ سیکوینسز کہتے ہیں۔ ایسکیپ سیکوینس \ سے شروع ہوتا ہے اور اس کے بعد کوئی حرف یا عدد آتا ہے۔ || C++ ځینې داسې توري لري چې ځانګړې معنا لري. دې تورو ته د تېښتې لړۍ (escape sequences) ویل کېږي. د تېښتې لړۍ په \ پیلېږي او ورپسې یو توری یا عدد راځي.
+p Table 3.3 shows the list of all escape sequences that are used in C++ along with their purpose. || جدول 3.3 میں C++ میں استعمال ہونے والے تمام ایسکیپ سیکوینسز کی فہرست ان کے مقصد کے ساتھ دکھائی گئی ہے۔ || ۳.۳ جدول په C++ کې د کارېدونکو ټولو د تېښتې لړیو لېست د هغوی د موخې سره ښيي.
+table
+th | Name | Symbol | Meaning
+tr | Alert | \a | Makes an alert, such as a beep
+tr | Backspace | \b | Moves the cursor back one space
+tr | Formfeed | \f | Moves the cursor to next logical page
+tr | Newline | \n | Moves cursor to next line
+tr | Carriage return | \r | Moves cursor to beginning of line
+tr | Horizontal tab | \t | Prints a horizontal tab
+tr | Vertical tab | \v | Prints a vertical tab
+tr | Single quote | \' | Prints a single quote
+tr | Double quote | \" | Prints a double quote
+tr | Backslash | \\ | Prints a backslash
+tr | Question mark | \? | Prints a question mark
+tr | Octal/hex number | \(number) | Translates into char represented by octal/hex number
+endtable
+p Table 3.3: Escape Sequences || جدول 3.3: ایسکیپ سیکوینسز || ۳.۳ جدول: د تېښتې لړۍ
+p The most common escape sequence is \n, which can be used to embed a newline in a string of text: || سب سے عام ایسکیپ سیکوینس \n ہے جو متن کی اسٹرنگ میں نئی لائن شامل کرنے کے لیے استعمال کیا جا سکتا ہے: || تر ټولو عامه د تېښتې لړۍ \n ده چې د متن په تار کې د نوې کرښې د ننویستلو لپاره کارول کېدای شي:

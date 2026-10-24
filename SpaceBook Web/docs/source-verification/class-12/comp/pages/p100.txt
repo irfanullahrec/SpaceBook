@@ -1,0 +1,11 @@
+@printed 91
+@status lesson
+## a. Assignment = operator || a. اسائنمنٹ = آپریٹر || a. د سپارلو = چلونکی
+p The assignment operator assigns a value to a variable. The symbol = is used as an assignment operator. For example: || اسائنمنٹ آپریٹر ویری ایبل کو قدر تفویض کرتا ہے۔ علامت = اسائنمنٹ آپریٹر کے طور پر استعمال ہوتی ہے۔ مثلاً: || د سپارلو چلونکی متغیر ته ارزښت سپاري. د = نښه د سپارلو چلونکي په توګه کارول کېږي. د بېلګې په توګه:
+p VarA = 55; || VarA = 55; || VarA = 55;
+p This statement assigns the integer value 55 to the variable VarA. The part at the left of the assignment operator = is a variable whereas the right side can be a constant value, a variable, the result of an operation or any combination of these. || یہ بیان صحیح عددی قدر 55 ویری ایبل VarA کو تفویض کرتا ہے۔ اسائنمنٹ آپریٹر = کے بائیں طرف کا حصہ ویری ایبل ہوتا ہے جبکہ دائیں طرف کانسٹنٹ قدر، ویری ایبل، کسی عمل کا نتیجہ یا ان کا کوئی مجموعہ ہو سکتا ہے۔ || دا بیان صحیح عددي ارزښت 55 د VarA متغیر ته سپاري. د سپارلو چلونکي = چپ اړخ ته برخه متغیر وي، په داسې حال کې چې ښي اړخ کېدای شي ثابت ارزښت، متغیر، د یوې عملیې پایله یا د دوی هر ګډون وي.
+p The assignment operation always takes place from right to left. || اسائنمنٹ کا عمل ہمیشہ دائیں سے بائیں ہوتا ہے۔ || د سپارلو عملیه تل له ښي څخه کیڼ لوري ته کېږي.
+p VarA = VarB; || VarA = VarB; || VarA = VarB;
+p This statement assigns the value of variable VarB to VarA. || یہ بیان ویری ایبل VarB کی قدر VarA کو تفویض کرتا ہے۔ || دا بیان د VarB متغیر ارزښت VarA ته سپاري.
+p Consider the following program to demonstrate the use of assignment operator. || اسائنمنٹ آپریٹر کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔ || د سپارلو چلونکي د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.
+p #include <iostream.h> #include <conio.h> int main() { int VarA, VarB; VarA = 100; VarB = 400; cout<<" VarA :"<<VarA; cout<<endl; cout<<" VarB :"<<VarB; getch(); || #include <iostream.h> #include <conio.h> int main() { int VarA, VarB; VarA = 100; VarB = 400; cout<<" VarA :"<<VarA; cout<<endl; cout<<" VarB :"<<VarB; getch(); || #include <iostream.h> #include <conio.h> int main() { int VarA, VarB; VarA = 100; VarB = 400; cout<<" VarA :"<<VarA; cout<<endl; cout<<" VarB :"<<VarB; getch();

@@ -1,0 +1,14 @@
+@printed 142
+@status lesson
+p } || … } || … }
+p (a) Both of the above code fragments have the same behaviour || (a) اوپر کے دونوں کوڈ ٹکڑوں کا رویہ یکساں ہے || (a) پورته د کوډ دواړه ټوټې یو شان چلند لري
+p (b) Both of the above code fragments produce different effects || (b) اوپر کے دونوں کوڈ ٹکڑے مختلف اثرات پیدا کرتے ہیں || (b) پورته د کوډ دواړه ټوټې بېل اغېزونه پیدا کوي
+qp c | The first code produces more results than second (d) The second code produces more results than first || پہلا کوڈ دوسرے سے زیادہ نتائج دیتا ہے (d) دوسرا کوڈ پہلے سے زیادہ نتائج دیتا ہے || لومړی کوډ تر دویم ډېرې پایلې ورکوي (d) دویم کوډ تر لومړي ډېرې پایلې ورکوي
+qp viii | Observe the following block of code and determine what happens when x=2? || کوڈ کے درج ذیل بلاک کا مشاہدہ کریں اور بتائیں کہ x=2 ہونے پر کیا ہوتا ہے؟ || د کوډ لاندې بلاک ته وګورئ او وټاکئ چې کله x=2 وي څه کېږي؟
+sol Will display x is between 1 ... 3 ## case 2 falls through to case 3's statements (no break between them), so 'x is between 1 .. 3' is displayed.
+p switch (x) { case 1: case 2: case 3: cout<< "x is between 1 .. 3"; break; default: cout<<"x is not within the range, so need to say Thank You!"; } || switch (x) { case 1: case 2: case 3: cout<< "x is between 1 .. 3"; break; default: cout<<"x is not within the range, so need to say Thank You!"; } || switch (x) { case 1: case 2: case 3: cout<< "x is between 1 .. 3"; break; default: cout<<"x is not within the range, so need to say Thank You!"; }
+p (a) Program jumps to the end of switch statement || (a) پروگرام switch بیان کے آخر پر چلا جاتا ہے || (a) پروګرام د switch بیان پای ته ټوپ وهي
+p (b) The code after default will run since there is no task for x=2 || (b) default کے بعد والا کوڈ چلے گا کیونکہ x=2 کے لیے کوئی کام نہیں || (b) د default وروسته کوډ به اجرا شي ځکه د x=2 لپاره کار نشته
+qp c | Will display x is between 1 ... 3 (d) None of above || x is between 1 ... 3 دکھائے گا (d) ان میں سے کوئی نہیں || x is between 1 ... 3 به ښيي (d) له پورته هېڅ یو
+qp ix | Which of the following is false for switch statement in C++? (a) It uses labels instead of blocks (b) we need to put break statement at the end of the group of statement (c) we can put range for case such as case 1..3 (d) None of above || C++ میں switch بیان کے لیے درج ذیل میں سے کون سا غلط ہے؟ (a) یہ بلاکس کے بجائے لیبلز استعمال کرتا ہے (b) ہمیں بیانات کے گروپ کے آخر میں break بیان رکھنا ہوتا ہے (c) ہم case کے لیے حد رکھ سکتے ہیں جیسے case 1..3 (d) ان میں سے کوئی نہیں || په C++ کې د switch بیان لپاره له لاندې څخه کوم یو ناسم دی؟ (a) د بلاکونو پر ځای لیبلونه کاروي (b) موږ باید د بیانونو د ډلې په پای کې break بیان کېږدو (c) موږ کولی شو د case لپاره حد کېږدو لکه case 1..3 (d) له پورته هېڅ یو
+sol we can put range for case such as case 1..3 ## C++ does not allow a range in a case label such as case 1..3; each case needs a single constant value.

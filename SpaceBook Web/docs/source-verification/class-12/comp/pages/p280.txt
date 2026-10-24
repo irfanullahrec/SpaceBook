@@ -1,0 +1,12 @@
+@printed 271
+@status lesson
+p cin>> height; // input stream if (height <= 0) { cerr<< "You entered an invalid height!" <<endl; exit(1); } cout<< "Your height is " << height << " feet" <<endl; getch(); return 0; } || … cin>> height; // input stream if (height <= 0) { cerr<< "You entered an invalid height!" <<endl; exit(1); } cout<< "Your height is " << height << " feet" <<endl; getch(); return 0; } || … cin>> height; // input stream if (height <= 0) { cerr<< "You entered an invalid height!" <<endl; exit(1); } cout<< "Your height is " << height << " feet" <<endl; getch(); return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Enter your height:5.8 Your height is 5.8 feet || Enter your height:5.8 Your height is 5.8 feet || Enter your height:5.8 Your height is 5.8 feet
+## 9.1.5 Use of the Streams || 9.1.5 اسٹریمز کا استعمال || ۹.۱.۵ د بهیرونو کارونه
+p The data can be read from and written to files with the help of single character stream and string stream. || سنگل کریکٹر اسٹریم اور اسٹرنگ اسٹریم کی مدد سے فائلز سے ڈیٹا پڑھا اور ان میں لکھا جا سکتا ہے۔ || د یو توري بهیر او د تار بهیر په مرسته له دوتنو ډېټا لوستل او پکې لیکل کېدای شي.
+## a. Single character stream || a. سنگل کریکٹر اسٹریم || a. د یو توري بهیر
+p Using single character stream, the data can be read from and written to files character by character. || سنگل کریکٹر اسٹریم کے ذریعے فائلز سے ڈیٹا حرف بہ حرف پڑھا اور لکھا جا سکتا ہے۔ || د یو توري بهیر په مرسته له دوتنو ډېټا توری په توری لوستل او لیکل کېدای شي.
+## i. Reading files character by character || i. فائلز کو حرف بہ حرف پڑھنا || i. دوتنې توری په توری لوستل
+p The function get() is used to read data character by character from files. || فنکشن get() فائلز سے ڈیٹا حرف بہ حرف پڑھنے کے لیے استعمال ہوتا ہے۔ || get() فنکشن له دوتنو د ډېټا د توري په توري لوستلو لپاره کارېږي.
+p Consider the following program that reads the data one character at a time from the file “characters file.txt”,shown in figure 9.7, and display them on the screen. || درج ذیل پروگرام پر غور کریں جو شکل 9.7 میں دکھائی گئی فائل ’’characters file.txt‘‘ سے ایک وقت میں ایک حرف پڑھ کر اسکرین پر دکھاتا ہے۔ || لاندې پروګرام ته پام وکړئ چې په ۹.۷ شکل کې ښودل شوې "characters file.txt" دوتنې څخه په یوه وخت کې یو توری لولي او پر پرده یې ښيي.

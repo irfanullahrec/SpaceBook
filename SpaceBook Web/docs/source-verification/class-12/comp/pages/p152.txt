@@ -1,0 +1,32 @@
+@printed 143
+@status lesson
+p Q.3 Write TRUE/FALSE against the following statements. || سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔ || پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.
+qp i | Decision-making structures cannot be nested. || فیصلہ سازی کی ساختیں نیسٹ نہیں کی جا سکتیں۔ || پرېکړه‌ییز جوړښتونه ځالې کېدای نه شي.
+sol False ## False — decision-making structures can be nested (an if inside another if or switch).
+qp ii | Body of do while loop is executed at least once if the condition is false. || شرط غلط ہو تو بھی do while لوپ کا جسم کم از کم ایک بار چلتا ہے۔ || که شرط false وي، د do while حلقې بدنه لږ تر لږه یو ځل اجرا کېږي.
+sol True ## True — do-while checks its condition after the body, so the body runs at least once even if the condition is false.
+qp iii | When for statement begins executing, at the same time the initialization expression is also executed? || جب for بیان چلنا شروع ہوتا ہے تو اسی وقت ابتدائی قدر کا ایکسپریشن بھی چلتا ہے؟ || کله چې for بیان اجرا پیل کړي، په همغه وخت د لومړني ارزښت افاده هم اجرا کېږي؟
+sol True ## True — the initialization expression is executed once, when the for statement begins.
+qp iv | switch statement is a better alternative of nested if-else structure. || switch بیان نیسٹڈ if-else ساخت کا بہتر متبادل ہے۔ || switch بیان د ځالې if-else جوړښت ښه بدیل دی.
+sol True ## True — when one variable is compared with many constant values, switch is clearer than a long nested if-else chain.
+qp v | Syntax of if-else statement is: || if-else بیان کا طریقۂ تحریر یہ ہے: || د if-else بیان بڼه دا ده:
+sol False ## False — the correct syntax is: if (condition) { statements } else { statements }; else must come after the if block.
+p else { } if (condition) { } || else { } if (condition) { } || else { } if (condition) { }
+qp 1 | Q.4 Write a C++ program that takes two integers and a chararacter representing one of the following mathematical operations: +, -, /, or *. Use a switch statement to perform the appropriate mathematical operation on the integers, and display the result. If an invalid operator is entered then “Error” message should be displayed and the program should exit (use the exit() function). || Q.4 ایک C++ پروگرام لکھیں جو دو صحیح اعداد اور درج ذیل ریاضی کے اعمال میں سے کسی ایک کو ظاہر کرنے والا حرف لے: +، -، / یا *۔ صحیح اعداد پر مناسب عمل کرنے کے لیے switch بیان استعمال کریں اور نتیجہ دکھائیں۔ اگر غلط آپریٹر داخل کیا جائے تو ’’Error‘‘ پیغام دکھایا جائے اور پروگرام بند ہو جائے (exit() فنکشن استعمال کریں)۔ || Q.4 یو C++ پروګرام ولیکئ چې دوه صحیح عددونه او یو توری واخلي چې له لاندې ریاضي عملیو یوه ښيي: +، -، / یا *. پر صحیح عددونو د مناسبې عملیې لپاره switch بیان وکاروئ او پایله وښایاست. که ناسم چلونکی ولیکل شي، "Error" پیغام دې وښودل شي او پروګرام دې ووځي (exit() فنکشن وکاروئ).
+sol جواب ## #include <iostream> using namespace std; int main() { int a, b; char op; cout << "Enter two integers: "; cin >> a >> b; cout << "Enter an operator (+, -, *, /): "; cin >> op; switch (op) { case '+': cout << a << " + " << b << " = " << a + b << endl; break; case '-': cout << a << " - " << b << " = " << a - b << endl; break; case '*': cout << a << " * " << b << " = " << a * b << endl; break; case '/': if (b != 0) cout << a << " / " << b << " = " << (float)a / b << endl; else cout << "Division by zero is not allowed." << endl; break; default: cout << "Invalid operator!" << endl; } return 0; }
+qp 2 | Q.5 Write a program using for loop that prints even numbers from 0 to 20. || Q.5 for لوپ کے ذریعے 0 سے 20 تک کے جفت اعداد پرنٹ کرنے کا پروگرام لکھیں۔ || Q.5 د for حلقې په مرسته له 0 تر 20 جفت عددونه چاپولو پروګرام ولیکئ.
+solution جواب
+ss #include <iostream> using namespace std; int main() { for (int i = 0; i <= 20; i += 2) cout << i << " "; cout << endl; return 0; }
+ss Output: 0 2 4 6 8 10 12 14 16 18 20
+endsolution
+qp 3 | Q.6 Write a program using while loop that takes an integer for a variable nValue, and returns the sum of all the numbers from 1 to nValue. Hint: For example, nValue=5 should return 15, which is 1 + 2 + 3 + 4 + 5. || Q.6 while لوپ کے ذریعے ایسا پروگرام لکھیں جو ویری ایبل nValue کے لیے صحیح عدد لے اور 1 سے nValue تک کے تمام اعداد کا مجموعہ واپس کرے۔ اشارہ: مثلاً nValue=5 پر 15 واپس آنا چاہیے، یعنی 1 + 2 + 3 + 4 + 5۔ || Q.6 د while حلقې په مرسته پروګرام ولیکئ چې د nValue متغیر لپاره صحیح عدد واخلي او له 1 تر nValue د ټولو عددونو مجموعه ورکړي. اشاره: د بېلګې په توګه nValue=5 باید 15 ورکړي، یعنې 1 + 2 + 3 + 4 + 5.
+solution جواب
+ss #include <iostream> using namespace std; int main() { int nValue, i = 1, sum = 0; cout << "Enter nValue: "; cin >> nValue; while (i <= nValue) { sum = sum + i; i++; } cout << "Sum = " << sum << endl; return 0; }
+ss For nValue = 5 the output is Sum = 15 (1 + 2 + 3 + 4 + 5).
+endsolution
+qp 4 | Q.7 What is wrong with the following for loop? || Q.7 درج ذیل for لوپ میں کیا غلطی ہے؟ || Q.7 په لاندې for حلقه کې څه ستونزه ده؟
+solution جواب
+ss nCount is declared unsigned int, so it can never be negative: the condition nCount >= 0 is always true. After 0, nCount-- wraps round to the largest unsigned value (4294967295), so the loop never ends — an infinite loop.
+ss Correction: use a signed int — for (int nCount = 9; nCount >= 0; nCount--) cout << nCount << " ";
+endsolution
+p // Print all numbers from 9 to 0 for (unsigned int nCount = 9; nCount >= 0; nCount--) cout << nCount << " "; || // Print all numbers from 9 to 0 for (unsigned int nCount = 9; nCount >= 0; nCount--) cout << nCount << " "; || // Print all numbers from 9 to 0 for (unsigned int nCount = 9; nCount >= 0; nCount--) cout << nCount << " ";

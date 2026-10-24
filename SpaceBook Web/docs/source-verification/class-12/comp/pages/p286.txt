@@ -1,0 +1,22 @@
+@printed 277
+@status lesson
+@sec 9-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | In C++ language, for handling of files, the header file ________ is used. || C++ زبان میں فائلز ہینڈل کرنے کے لیے ہیڈر فائل ________ استعمال ہوتی ہے۔ || په C++ ژبه کې د دوتنو د چلولو لپاره ________ سرپاڼه دوتنه کارېږي.
+sol fstream (<fstream>) ## File-handling classes ifstream, ofstream and fstream are declared in <fstream>.
+qp ii | The function ________ is used for closing a function. || فنکشن ________ فنکشن بند کرنے کے لیے استعمال ہوتا ہے۔ || ________ فنکشن د فنکشن د تړلو لپاره کارېږي.
+sol close() ## close() closes a file. (The book prints 'closing a function'; it means closing a file.)
+qp iii | In the statement, open (“xyz.txt”, ios::out); ________ file is opened in output mode. || بیان open (“xyz.txt”, ios::out); میں ________ فائل آؤٹ پٹ موڈ میں کھولی جاتی ہے۔ || په open (“xyz.txt”, ios::out); بیان کې ________ دوتنه د وتنې په حالت کې پرانیستل کېږي.
+sol xyz.txt ## The file named xyz.txt is opened in output mode.
+qp iv | If all output operations are to be performed at the end of the file then ________ should be used in the open function. || اگر تمام آؤٹ پٹ عمل فائل کے آخر پر کرنے ہوں تو open فنکشن میں ________ استعمال ہونا چاہیے۔ || که ټولې د وتنې عملیې د دوتنې په پای کې ترسره کېږي، نو په open فنکشن کې باید ________ وکارول شي.
+sol ios::app ## ios::app (append) makes all output go to the end of the file.
+qp v | A ________ is “a continuous flow or succession of bytes a stream of characters.” || ________ ’’بائٹس کا مسلسل بہاؤ یا تسلسل، حروف کی ایک اسٹریم‘‘ ہے۔ || ________ "د بایټونو دوامداره بهیر یا لړۍ، د تورو یو بهیر" دی.
+sol stream ## A stream is a continuous flow of bytes/characters between a program and a device or file.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | eof stands for ________ . (a) errors-on-files (b) end-of-file (c) exit-of-file (d) none of the above || eof کا مطلب ہے ________ ۔ (a) errors-on-files (b) end-of-file (c) exit-of-file (d) ان میں سے کوئی نہیں || eof د ________ لنډون دی. (a) errors-on-files (b) end-of-file (c) exit-of-file (d) له پورته هېڅ یو
+sol end-of-file ## eof stands for end-of-file.
+qp ii | In file handling open() function is used ________ . (a) to open C++ compiler (b) to open a file (c) both a and b (d) none of the above || فائل ہینڈلنگ میں open() فنکشن ________ استعمال ہوتا ہے۔ (a) C++ کمپائلر کھولنے کے لیے (b) فائل کھولنے کے لیے (c) a اور b دونوں (d) ان میں سے کوئی نہیں || د دوتنو په چلولو کې open() فنکشن ________ کارېږي. (a) د C++ کمپایلر د پرانیستلو لپاره (b) د دوتنې د پرانیستلو لپاره (c) a او b دواړه (d) له پورته هېڅ یو
+sol to open a file ## open() is used to open a file and associate it with a stream object.
+qp iii | Default mode parameter for ofstream is ________ . (a) ios::out (b) ios::in (c) ios::binary (d) both a and b || ofstream کا ڈیفالٹ موڈ پیرامیٹر ________ ہے۔ (a) ios::out (b) ios::in (c) ios::binary (d) a اور b دونوں || د ofstream ډیفالټ حالت پاراميټر ________ دی. (a) ios::out (b) ios::in (c) ios::binary (d) a او b دواړه
+sol ios::out ## ofstream opens files for output by default — ios::out.

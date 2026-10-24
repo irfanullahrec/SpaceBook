@@ -1,0 +1,15 @@
+@printed 73
+@status lesson
+- Boolean || بولین || بولي
+- Unsigned || ان سائنڈ || بې‌نښې (Unsigned)
+## a. Character data type || a. حرفی ڈیٹا ٹائپ || a. د توري ډېټا ډول
+p The char keyword represents the character data type in C++. Any character belonging to the ASCII character set is called a character data type. The maximum size of char data type is 8 bits (1 byte). Signed char and unsigned char are its two distinct types. They occupy the same amount of memory space. Consider the following line of code: || char کی ورڈ C++ میں حرفی ڈیٹا ٹائپ کی نمائندگی کرتا ہے۔ ASCII حروف کے مجموعے سے تعلق رکھنے والا کوئی بھی حرف حرفی ڈیٹا ٹائپ کہلاتا ہے۔ char ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 8 بٹس (1 بائٹ) ہے۔ signed char اور unsigned char اس کی دو الگ اقسام ہیں جو میموری میں یکساں جگہ لیتی ہیں۔ کوڈ کی درج ذیل لائن پر غور کریں: || د char کلیدي کلمه په C++ کې د توري ډېټا ډول ښيي. هر توری چې د ASCII تورو له ټولګې سره تړاو ولري، د توري ډېټا ډول بلل کېږي. د char ډېټا ډول اعظمي اندازه ۸ بټه (۱ بایټ) ده. signed char او unsigned char یې دوه جلا ډولونه دي چې په حافظه کې یو شان ځای نیسي. د کوډ لاندې کرښې ته پام وکړئ:
+p char x; || char x; || char x;
+p Here, x is a character type variable that occupies 1 byte of memory. Variables declared as char data type are used to store character constants. Character constants are always represented with single quotes. For example: || یہاں x حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے۔ char ڈیٹا ٹائپ کے طور پر ڈکلیئر کیے گئے ویری ایبلز حرفی کانسٹنٹس محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ حرفی کانسٹنٹس ہمیشہ ایک واوین میں ظاہر کیے جاتے ہیں۔ مثلاً: || دلته x د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي. هغه متغیرونه چې د char ډېټا ډول په توګه اعلان شوي، د توري ثابتونو د ساتلو لپاره کارول کېږي. د توري ثابتونه تل په یوګوني نقل‌قولونو کې ښودل کېږي. د بېلګې په توګه:
+p char gender; gender= 'M'; || char gender; gender= 'M'; || char gender; gender= 'M';
+p Here, gender is a character type variable that occupies 1 byte of memory and store character constant, M, which stands for Male. || یہاں gender حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے اور حرفی کانسٹنٹ M محفوظ کرتا ہے جس کا مطلب Male (مرد) ہے۔ || دلته gender د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي او د توري ثابت M ساتي چې د Male (نارینه) معنا لري.
+## b. Integer data types || b. انٹیجر ڈیٹا ٹائپس || b. صحیح عدد ډېټا ډولونه
+p The data types which store only integer numbers such as 100, -200 etc. are called integer data types. Its sub types are: || وہ ڈیٹا ٹائپس جو صرف صحیح اعداد جیسے 100، -200 وغیرہ محفوظ کرتی ہیں، انٹیجر ڈیٹا ٹائپس کہلاتی ہیں۔ اس کی ذیلی اقسام یہ ہیں: || هغه ډېټا ډولونه چې یوازې صحیح عددونه لکه 100، -200 او نور ساتي، صحیح عدد ډېټا ډولونه بلل کېږي. فرعي ډولونه یې دا دي:
+- int || int || int
+- short int || short int || short int
+- long || long || long

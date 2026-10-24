@@ -1,0 +1,22 @@
+@printed 106
+@status lesson
+@sec 3-ex | مشق || Exercise || تمرین
+exercise Exercise
+p Q.1 Fill in the Blanks. || سوال 1: خالی جگہیں پُر کریں۔ || پوښتنه ۱: تش ځایونه ډک کړئ.
+qp i | In C/C++ language, a hexadecimal number is represented by writing ________ symbol. || C/C++ زبان میں ہیکسا ڈیسیمل عدد ________ علامت لکھ کر ظاہر کیا جاتا ہے۔ || په C/C++ ژبه کې شپاړسیز عدد د ________ نښې په لیکلو ښودل کېږي.
+sol 0x (zero-x) ## A hexadecimal constant is written with the prefix 0x or 0X, e.g. 0x1F.
+qp ii | (?) is the ________ operator used in C++. || (?) C++ میں استعمال ہونے والا ________ آپریٹر ہے۔ || (?) په C++ کې کارېدونکی ________ چلونکی دی.
+sol conditional (ternary) ## ?: is the conditional (ternary) operator: condition ? value1 : value2.
+qp iii | Output of the logical and relational operators is ________ . || منطقی اور ریلیشنل آپریٹرز کا آؤٹ پٹ ________ ہوتا ہے۔ || د منطقي او اړیکه‌ییزو چلونکو وتنه ________ ده.
+sol true or false (1 or 0) ## Relational and logical operators give a Boolean result — true (1) or false (0).
+qp iv | Assigning values to a variable during declaration time is called ________ . || اعلان کے وقت ویری ایبل کو قدر دینا ________ کہلاتا ہے۔ || د اعلان پر وخت متغیر ته ارزښت ورکول ________ بلل کېږي.
+sol initialization ## Assigning a value when a variable is declared is called initialization, e.g. int x = 10;
+qp v | Each C++ program has ________ function from where the execution of the program starts. || ہر C++ پروگرام میں ________ فنکشن ہوتا ہے جہاں سے پروگرام کا عمل شروع ہوتا ہے۔ || هر C++ پروګرام ________ فنکشن لري چې د پروګرام اجرا له هغه پیلېږي.
+sol main() ## Every C++ program has a main() function where execution begins.
+p Q.2 Select the correct choice for the following Multiple Choice Questions. || سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔ || پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.
+qp i | What does the given expression evaluate to? E=6 + 5 * 4 % 3 (a) 1 (b) 8 (c) 11 (d) None of the above || دیا گیا ایکسپریشن کس قدر کے برابر ہوگا؟ E=6 + 5 * 4 % 3 (a) 1 (b) 8 (c) 11 (d) ان میں سے کوئی نہیں || ورکړل شوې افاده څه ارزښت ورکوي؟ E=6 + 5 * 4 % 3 (a) 1 (b) 8 (c) 11 (d) له پورته هېڅ یو
+sol 8 ## % and * have higher precedence than + and associate left to right: 5 * 4 = 20, 20 % 3 = 2, then 6 + 2 = 8.
+qp ii | (true && true) {{OR}} false (a) true (b) false (c) both a and b (d) none of the above || (true && true) {{OR}} false (a) true (b) false (c) a اور b دونوں (d) ان میں سے کوئی نہیں || (true && true) {{OR}} false (a) true (b) false (c) a او b دواړه (d) له پورته هېڅ یو
+sol true ## (true && true) = true; true {{OR}} false = true.
+qp iii | Expression C=i++ causes (a) Value of i assigned to C and then i incremented by 1 (b) i to be incremented by 1 and then value of i assigned to C (c) Value of i assigned to C (d) i to be incremented by 1 || ایکسپریشن C=i++ کا نتیجہ (a) i کی قدر C کو تفویض ہوتی ہے اور پھر i میں 1 کا اضافہ ہوتا ہے (b) i میں 1 کا اضافہ اور پھر i کی قدر C کو تفویض (c) i کی قدر C کو تفویض (d) i میں 1 کا اضافہ || افاده C=i++ لامل کېږي (a) د i ارزښت C ته سپارل کېږي او بیا i په 1 زیاتېږي (b) i په 1 زیاتېږي او بیا د i ارزښت C ته سپارل کېږي (c) د i ارزښت C ته سپارل (d) i په 1 زیاتېدل
+sol Value of i assigned to C and then i incremented by 1 ## Post-increment: the current value of i is assigned to C first, then i is increased by 1.

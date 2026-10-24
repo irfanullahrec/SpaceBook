@@ -1,0 +1,10 @@
+@printed 83
+@status lesson
+p getch(); return 0; } || … getch(); return 0; } || … getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Insert your full address: H.No. 10 Lalazar Colony Peshawar Your address is: H.No. 10 Lalazar Colony Peshawar || Insert your full address: H.No. 10 Lalazar Colony Peshawar Your address is: H.No. 10 Lalazar Colony Peshawar || Insert your full address: H.No. 10 Lalazar Colony Peshawar Your address is: H.No. 10 Lalazar Colony Peshawar
+## b. puts() function || b. puts() فنکشن || b. puts() فنکشن
+p puts() function writes a string to the screen and appends a newline character automatically at the string. The general syntax of puts () function is: || puts() فنکشن اسکرین پر اسٹرنگ لکھتا ہے اور اسٹرنگ کے آخر میں خود بخود نئی لائن کا حرف شامل کر دیتا ہے۔ puts() فنکشن کا عمومی طریقۂ تحریر یہ ہے: || puts() فنکشن پر پرده تار لیکي او د تار په پای کې په اتوماتیک ډول د نوې کرښې توری ورزیاتوي. د puts() فنکشن عمومي بڼه دا ده:
+p puts (string variable); || puts (string variable); || puts (string variable);
+p Consider the following example to demonstrate gets() and puts() functions: || gets() اور puts() فنکشنز کی وضاحت کے لیے درج ذیل مثال پر غور کریں: || د gets() او puts() فنکشنونو د ښودلو لپاره لاندې بېلګې ته پام وکړئ:
+p #include <stdio.h> #include<conio.h> #include<iostream.h> int main() { char TestStr [100]; cout<< " Enter a string\n"; gets(TestStr); cout<< "You entered: "; puts (TestStr); getch(); return 0; } || #include <stdio.h> #include<conio.h> #include<iostream.h> int main() { char TestStr [100]; cout<< " Enter a string\n"; gets(TestStr); cout<< "You entered: "; puts (TestStr); getch(); return 0; } || #include <stdio.h> #include<conio.h> #include<iostream.h> int main() { char TestStr [100]; cout<< " Enter a string\n"; gets(TestStr); cout<< "You entered: "; puts (TestStr); getch(); return 0; }

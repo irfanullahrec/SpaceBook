@@ -76,7 +76,9 @@ const catalog = JSON.parse(fs.readFileSync(ASSETS + 'app_catalog.json', 'utf8'))
     let blank = 0;
     for (let n = 0; n < st.pages; n++) {
       await page.evaluate(i => window.SBApp.go(i), n);
-      const m = await page.evaluate(measure);
+      let m = await page.evaluate(measure);
+      // a collapsed card is opened by the bridge a moment after the page is turned (it clicks the card's heading): look again before calling it empty
+      if (!m || m.h < 120 || m.text < 40) { await sleep(500); m = await page.evaluate(measure); }
       if (!m) { issues.push({ n, why: 'no page on screen' }); continue; }
       if (m.h < 120 || m.text < 40) { blank++; issues.push({ n, why: 'empty', h: m.h, text: m.text, head: m.head }); }
       if (m.labels.length > 1) issues.push({ n, why: 'page number shown more than once', labels: m.labels });

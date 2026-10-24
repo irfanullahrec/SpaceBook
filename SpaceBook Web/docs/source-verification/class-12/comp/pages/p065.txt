@@ -1,0 +1,47 @@
+@printed 56
+@status lesson
+qp vii | System maintenance is performed in response to ________ . (a) Business changes (b) Hardware and software changes (c) User’s requests for additional features (d) All of the above || نظام کی دیکھ بھال ________ کے جواب میں کی جاتی ہے۔ (a) کاروباری تبدیلیوں (b) ہارڈویئر اور سافٹ ویئر کی تبدیلیوں (c) اضافی خصوصیات کے لیے صارف کی درخواستوں (d) مندرجہ بالا سب || د سیسټم ساتنه د ________ په ځواب کې کېږي. (a) سوداګریزو بدلونونو (b) د هارډویر او سافټویر بدلونونو (c) د اضافي ځانګړنو لپاره د کاروونکي غوښتنو (d) پورته ټول
+sol All of the above ## Maintenance is performed in response to business changes, hardware and software changes, and users' requests for new features.
+p Q.3 Write TRUE/FALSE against the following statements. || سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔ || پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.
+qp i | A stakeholder is any person or organization who has a direct or indirect interest in the project. || اسٹیک ہولڈر کوئی بھی شخص یا تنظیم ہے جو منصوبے میں براہِ راست یا بالواسطہ دلچسپی رکھتی ہو۔ || ښکېل اړخ هر هغه کس یا سازمان دی چې په پروژه کې مستقیمه یا غیر مستقیمه لېوالتیا لري.
+sol True ## True — a stakeholder is any person or organisation with a direct or indirect interest in the project.
+qp ii | System maintenance is performed to gather the requirements of the proposed system. || نظام کی دیکھ بھال مجوزہ نظام کی ضروریات جمع کرنے کے لیے کی جاتی ہے۔ || د سیسټم ساتنه د وړاندیز شوي سیسټم د اړتیاوو د راټولولو لپاره کېږي.
+sol False ## False — requirements are gathered in the analysis phase; maintenance is done after deployment to correct and improve the system.
+qp iii | The how, when, what type of questions are answered in the planning phase of SDLC. || کیسے، کب، کیا قسم کے سوالات کے جواب SDLC کے منصوبہ بندی کے مرحلے میں دیے جاتے ہیں۔ || د څنګه، کله، څه ډول پوښتنو ځوابونه د SDLC د پلان جوړونې په پړاو کې ورکول کېږي.
+sol True ## True — the planning phase answers what is to be done, how, when, by whom and at what cost.
+qp iv | The three architectures i.e. algorithms, pseudo code and flowcharts are used in the implementation phase of SDLC. || تین ساختیں یعنی الگورتھمز، سوڈو کوڈ اور فلو چارٹس SDLC کے نفاذ کے مرحلے میں استعمال ہوتی ہیں۔ || درې جوړښتونه یعنې الګوریتمونه، شبه کوډ او فلوچارټونه د SDLC د پلي کولو په پړاو کې کارول کېږي.
+sol False ## False — algorithms, pseudo code and flowcharts are used in the design phase, before implementation (coding).
+qp v | Each phase of SDLC is accomplished as a discrete, separate step. || SDLC کا ہر مرحلہ ایک الگ اور جداگانہ قدم کے طور پر مکمل کیا جاتا ہے۔ || د SDLC هر پړاو د یوه جلا او بېل ګام په توګه بشپړېږي.
+sol True ## True — in the classical (waterfall) SDLC each phase is completed as a separate step before the next begins.
+qp 1 | Q.4 Define software development life cycle (SDLC). What are its objectives? || Q.4 سافٹ ویئر ڈویلپمنٹ لائف سائیکل (SDLC) کی تعریف کریں۔ اس کے مقاصد کیا ہیں؟ || Q.4 د سافټویر د پراختیا د ژوند دوره (SDLC) تعریف کړئ. موخې یې کومې دي؟
+solution جواب
+ss SDLC (Software/System Development Life Cycle) is a structured process of phases followed to plan, create, test, deploy and maintain an information system: planning/problem identification → feasibility study → analysis (requirements) → design → development (coding) → testing → deployment (implementation) → maintenance.
+ss Objectives: to develop high-quality software that meets user requirements; to complete the project within time and budget; to give a clear plan with defined deliverables for each phase; to reduce risks and errors; to make management, control and documentation easier; and to make the system easy to maintain.
+endsolution
+qp 2 | Q.5 What is a system? Where exactly the testing activities begin in SDLC? || Q.5 نظام کیا ہے؟ SDLC میں جانچ کی سرگرمیاں ٹھیک کہاں سے شروع ہوتی ہیں؟ || Q.5 سیسټم څه دی؟ په SDLC کې د ازموینې فعالیتونه په سمه توګه له کومه ځایه پیلېږي؟
+solution جواب
+ss A system is a set of interrelated components (people, hardware, software, data and procedures) working together to achieve a common goal, e.g. a payroll system or a library management system.
+ss Testing activities really begin early — test planning starts in the requirements/analysis phase (writing test cases from requirements) and design reviews, while actual execution of tests takes place after the coding phase in the testing phase (unit, integration, system and acceptance testing).
+endsolution
+qp 3 | Q.6 Why software development life cycle is important for the development of software? || Q.6 سافٹ ویئر کی تیاری کے لیے سافٹ ویئر ڈویلپمنٹ لائف سائیکل کیوں اہم ہے؟ || Q.6 د سافټویر د جوړولو لپاره د سافټویر د پراختیا د ژوند دوره ولې مهمه ده؟
+sol جواب ## SDLC is important because it provides a clear, step-by-step framework so that nothing is missed; it helps understand user requirements before coding; it allows planning of time, cost and resources; each phase has defined outputs, making progress easy to monitor; errors are found early when they are cheaper to fix; it improves quality and documentation; and it makes the software easier to maintain and upgrade.
+qp 4 | Q.7 Who are stakeholders of SDLC? Describe their responsibilities. || Q.7 SDLC کے اسٹیک ہولڈرز کون ہیں؟ ان کی ذمہ داریاں بیان کریں۔ || Q.7 د SDLC ښکېل اړخونه څوک دي؟ مسؤولیتونه یې بیان کړئ.
+solution جواب
+ss Stakeholders are people or organisations who are involved in or affected by the project.
+ss Responsibilities: Customer/users — state requirements, give feedback and accept the system; Project manager — plans, schedules, budgets and controls the project and team; System analyst — studies the existing system, gathers requirements and designs the solution; Programmers/developers — write and document the code.
+ss Software testers — test the software to find errors; Database administrator — designs and maintains the database; Network engineer — sets up hardware and networks; Management/sponsors — provide funds and approve decisions.
+endsolution
+qp 5 | Q.8 What is meant by the term software requirement? Differentiate between functional and non-functional requirements. || Q.8 سافٹ ویئر کی ضرورت سے کیا مراد ہے؟ فعالیاتی اور غیر فعالیاتی ضروریات میں فرق کریں۔ || Q.8 د سافټویر اړتیا څه معنا لري؟ د دندیزو او نادندیزو اړتیاوو ترمنځ توپیر وکړئ.
+solution جواب
+ss A software requirement is a description of a service the system must provide or a constraint under which it must operate — what users need from the software.
+ss Functional requirements describe what the system should do — its functions and behaviour, e.g. 'the system shall calculate students' grades', 'users can log in'.
+ss Non-functional requirements describe how well the system performs — quality attributes such as speed, reliability, security, usability, availability and maintainability, e.g. 'the page shall load within 2 seconds'.
+endsolution
+qp 6 | Q.9 Design a flowchart for the following algorithm. || Q.9 درج ذیل الگورتھم کے لیے فلو چارٹ بنائیں۔ || Q.9 د لاندې الګوریتم لپاره فلوچارټ جوړ کړئ.
+solution جواب
+ss Flowchart (top to bottom): Start → [Process] sum = 0, N = 5, x = 1 → ◇ Is x ≤ N? → Yes → [Process] sum = sum + x → [Process] x = x + 1 → back to the decision ◇; No → [Output] print sum → Stop.
+ss Start (oval) {{BAR}} sum = 0, N = 5, x = 1 (rectangle) {{BAR}} < x <= N ? > --No--> [ print sum ] --> Stop {{BAR}} Yes sum = sum + x {{BAR}} x = x + 1 {{BAR}} (back to x <= N ?)
+ss Output: sum = 1 + 2 + 3 + 4 + 5 = 15.
+endsolution
+p sum = 0, N=5 x = 1 while x ≤ N do sum = sum + x x = x + 1 end while print sum || sum = 0, N=5 x = 1 while x ≤ N do sum = sum + x x = x + 1 end while print sum || sum = 0, N=5 x = 1 while x ≤ N do sum = sum + x x = x + 1 end while print sum
+endexercise

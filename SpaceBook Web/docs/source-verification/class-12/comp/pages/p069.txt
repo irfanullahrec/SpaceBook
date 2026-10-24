@@ -1,0 +1,10 @@
+@printed 60
+@status lesson
+## 3.1.3 Structure of a C++ program || 3.1.3 C++ پروگرام کی ساخت || ۳.۱.۳ د C++ پروګرام جوړښت
+p General syntax of a C++ program is given below. || C++ پروگرام کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔ || د C++ پروګرام عمومي بڼه لاندې ورکړل شوې.
+p Preprocessor directives <header file> int main() { Body of the program } || Preprocessor directives <header file> int main() { Body of the program } || Preprocessor directives <header file> int main() { Body of the program }
+p Each C++ program has three main components. These are: Preprocessor directives, main function and body of the main function. Now, consider the following “Hello World” example to explain these components. || ہر C++ پروگرام کے تین بنیادی اجزاء ہیں: پری پروسیسر ڈائریکٹوز، main فنکشن اور main فنکشن کا جسم۔ اب ان اجزاء کی وضاحت کے لیے درج ذیل ’’Hello World‘‘ مثال پر غور کریں۔ || هر C++ پروګرام درې اصلي برخې لري: د مخکې پروسس لارښوونې (preprocessor directives)، main فنکشن او د main فنکشن بدنه. اوس د دې برخو د تشریح لپاره لاندې "Hello World" بېلګې ته پام وکړئ.
+p #include <iostream.h> #include <conio.h> int main() { cout << "Hello World!"; getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { cout << "Hello World!"; getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { cout << "Hello World!"; getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Hello World! || Hello World! || Hello World!
+p The result of the above program is that it prints "Hello World!" on the screen. It is one of the simplest programs that can be written in C++, but it contains the fundamental components of almost every C++ program. || اوپر والے پروگرام کا نتیجہ یہ ہے کہ یہ اسکرین پر "Hello World!" پرنٹ کرتا ہے۔ یہ C++ میں لکھے جا سکنے والے سادہ ترین پروگراموں میں سے ایک ہے لیکن اس میں تقریباً ہر C++ پروگرام کے بنیادی اجزاء موجود ہیں۔ || د پورته پروګرام پایله دا ده چې پر پرده "Hello World!" چاپوي. دا په C++ کې د لیکل کېدونکو تر ټولو ساده پروګرامونو څخه یو دی، خو د نږدې هر C++ پروګرام بنسټیزې برخې لري.

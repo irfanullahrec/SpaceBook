@@ -1,0 +1,31 @@
+@printed 107
+@status lesson
+qp iv | Which of the following languages is a subset of C++ language? (a) C language (b) Java language (c) B language (d) C# language || درج ذیل میں سے کون سی زبان C++ زبان کا ذیلی مجموعہ ہے؟ (a) C زبان (b) جاوا زبان (c) B زبان (d) C# زبان || له لاندې ژبو څخه کومه د C++ ژبې فرعي ټولګه ده؟ (a) C ژبه (b) Java ژبه (c) B ژبه (d) C# ژبه
+sol C language ## C is the language on which C++ is built; C++ is a superset of C, so C is (mostly) a subset of C++.
+qp v | In C++ language char ch='3' represents: (a) A digit (b) An integer constant (c) A character constant (d) A word || C++ زبان میں char ch='3' ظاہر کرتا ہے: (a) ایک عدد (b) ایک انٹیجر کانسٹنٹ (c) ایک حرفی کانسٹنٹ (d) ایک لفظ || په C++ ژبه کې char ch='3' ښيي: (a) یو رقم (b) یو صحیح عدد ثابت (c) د توري ثابت (d) یوه کلمه
+sol A character constant ## '3' in single quotes is a character constant (ASCII value 51), not the integer 3.
+p Q.3 Write TRUE/FALSE against the following statements. || سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔ || پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.
+qp i | Definition for the C++ object cout is stored in header file conio.h. || C++ آبجیکٹ cout کی تعریف ہیڈر فائل conio.h میں محفوظ ہے۔ || د C++ شي cout تعریف په conio.h سرلیک فایل کې ساتل شوی.
+sol False ## False — cout is defined in the header file iostream (iostream.h), not conio.h.
+qp ii | In C++ a statement ends with ':' symbol. || C++ میں بیان ':' علامت پر ختم ہوتا ہے۔ || په C++ کې بیان د ':' نښې سره پای ته رسېږي.
+sol False ## False — a C++ statement ends with a semicolon (;).
+qp iii | int 20sum is the correct declaration of the variable 20sum. || int 20sum ویری ایبل 20sum کا درست اعلان ہے۔ || int 20sum د 20sum متغیر سم اعلان دی.
+sol False ## False — a variable name cannot begin with a digit; 20sum is invalid (sum20 is valid).
+qp iv | In C++ the statement a=a+20 is the same as a+=20. || C++ میں بیان a=a+20، a+=20 کے برابر ہے۔ || په C++ کې بیان a=a+20 له a+=20 سره یو شان دی.
+sol True ## True — a += 20 is the compound assignment form of a = a + 20.
+qp v | Size of short int data type is 4 bytes. || short int ڈیٹا ٹائپ کا سائز 4 بائٹس ہے۔ || د short int ډېټا ډول اندازه ۴ بایټه ده.
+sol False ## False — short int usually occupies 2 bytes.
+qp 1 | Q.4 Evaluate the following: || سوال 4: درج ذیل کی قدر نکالیں: || پوښتنه ۴: لاندې ارزونه وکړئ:
+solution جواب
+ss 1) (false && true) {{OR}} true → false {{OR}} true → true
+ss 2) (false && true) {{OR}} false {{OR}} true → false {{OR}} false {{OR}} true → true
+ss 3) (5 > 6 {{OR}} 4 > 3) && (7 > 8) → (false {{OR}} true) && false → true && false → false
+ss 4) !(7 > 6 {{OR}} 3 > 4) → !(true {{OR}} false) → !true → false
+endsolution
+q 1 | (false && true) {{OR}} true 2) (false && true) {{OR}} false {{OR}} true 3) (5 > 6 {{OR}} 4 > 3) && (7 > 8) 4) !(7 > 6 {{OR}} 3 > 4) || (false && true) {{OR}} true 2) (false && true) {{OR}} false {{OR}} true 3) (5 > 6 {{OR}} 4 > 3) && (7 > 8) 4) !(7 > 6 {{OR}} 3 > 4) || (false && true) {{OR}} true 2) (false && true) {{OR}} false {{OR}} true 3) (5 > 6 {{OR}} 4 > 3) && (7 > 8) 4) !(7 > 6 {{OR}} 3 > 4)
+qp 2 | Q.5 Pick those variables from the following list which are improperly declared and named. Also, describe the reason of its invalidity? || سوال 5: درج ذیل فہرست سے وہ ویری ایبلز منتخب کریں جن کا اعلان اور نام غلط ہے۔ نیز ان کے غلط ہونے کی وجہ بیان کریں؟ || پوښتنه ۵: له لاندې لېست هغه متغیرونه وټاکئ چې ناسم اعلان او نومول شوي. همداراز د ناسموالي لامل یې بیان کړئ؟
+solution جواب
+ss Invalid declarations: 3) int my variable name; — spaces are not allowed in an identifier. 4) int void = 5; — void is a reserved keyword. 6) int 3some; — an identifier cannot start with a digit.
+ss Valid: 1) int sum; 2) int cats=5, dogs=5; 5) int nAngle; 7) int meters_of_pipe; 8) int length, width=5;
+endsolution
+q 1 | int sum; 2) int cats=5, dogs=5; || int sum; 2) int cats=5, dogs=5; || int sum; 2) int cats=5, dogs=5;

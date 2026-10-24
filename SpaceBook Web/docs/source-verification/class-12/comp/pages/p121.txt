@@ -1,0 +1,10 @@
+@printed 112
+@status lesson
+p int main() { int X; cout << "Enter a number: "; cin >> X; if (X %2==0) cout << X << " is even number"; getch(); return 0; } || … int main() { int X; cout << "Enter a number: "; cin >> X; if (X %2==0) cout << X << " is even number"; getch(); return 0; } || … int main() { int X; cout << "Enter a number: "; cin >> X; if (X %2==0) cout << X << " is even number"; getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Enter a number: 12 12 is even number || Enter a number: 12 12 is even number || Enter a number: 12 12 is even number
+## b. if-else statement || b. if-else بیان || b. if-else بیان
+p In if construct, the statements in the body of if are executed only if the condition is true and nothing is executed if it is false. Sometimes the programmers need to execute some other part of a program even if the condition in if statement is false. For this purpose, if-else statement is used. || if ساخت میں if کے جسم کے بیانات صرف اسی وقت چلتے ہیں جب شرط درست ہو، اور غلط ہونے پر کچھ نہیں چلتا۔ بعض اوقات پروگرامرز کو if بیان کی شرط غلط ہونے پر بھی پروگرام کا کوئی اور حصہ چلانا ہوتا ہے۔ اس مقصد کے لیے if-else بیان استعمال ہوتا ہے۔ || په if جوړښت کې د if د بدنې بیانونه یوازې هغه وخت اجرا کېږي چې شرط true وي، او که false وي هېڅ نه اجرا کېږي. کله کله پروګرام جوړوونکي اړتیا لري چې د if بیان شرط false هم وي، د پروګرام بله برخه اجرا کړي. د دې موخې لپاره if-else بیان کارول کېږي.
+p The general syntax of this statement is given below. || اس بیان کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔ || د دې بیان عمومي بڼه لاندې ورکړل شوې.
+p Single statement if-else structure || ایک بیان والی if-else ساخت || یو-بیانیز if-else جوړښت
+p if (condition) Statement; || if (condition) Statement; || if (condition) Statement;

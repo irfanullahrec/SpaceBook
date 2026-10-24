@@ -599,7 +599,15 @@ class Book:
                 elif mode == 'T':
                     fid, n_ = rest[0].split()
                     e['T'][fid] = int(n_)
-                elif mode in ('ok', 'para', 'ink'):
+                elif mode == 'N':       # the text from these words on is the first page of the NEXT scan (the reviewed record runs on into it)
+                    e['N'] = rest[0]
+                elif mode == 'TN':      # a table that goes on at the top of the NEXT scan's first page: rows before n stay, the rest move there
+                    fid, n_ = rest[0].split()
+                    e.setdefault('TN', {})[fid] = int(n_)
+                elif mode == 'M':       # one table over several pages: rows per page, starting on the scan's second page
+                    fid, *cnt = rest[0].split()
+                    e.setdefault('M', {})[fid] = [int(x) for x in cnt]
+                elif mode in ('ok', 'para', 'ink', 'ca', 'cb', 'ocr'):
                     e['mode'] = mode
                 else:
                     e['mode'], e['words'] = mode, rest[0]
@@ -793,9 +801,21 @@ class Book:
             if not jp:
                 continue
             direct, stream = self.scan_streams(group, pp)
+            sp0 = spec.get(k) or {}
             for page, s in direct:
-                for u in self.units_of(s):
-                    put(jp[pp.index(page)], s, u)
+                us = self.units_of(s)
+                nc = None
+                if sp0.get('N') and page == pp[-1] and max(s['printed']) > pp[-1]:      # the section runs on into the next scan's first page
+                    nc = self.find_cut(us, by_id, {'mode': 'B', 'words': sp0['N']}, {'frac': 0.97})
+                for ui, u in enumerate(us):
+                    if nc and (ui > nc[0] or (ui == nc[0] and nc[1] == 0)):
+                        put(jp[-1] + 1, s, u)
+                    elif nc and ui == nc[0] and nc[1] and 'pi' in u:
+                        p1, p2 = self.split_para(s['paras'][u['pi']], nc[1])
+                        put(jp[pp.index(page)], s, dict(u, part=1), p1)
+                        put(jp[-1] + 1, s, dict(u, part=2), p2)
+                    else:
+                        put(jp[pp.index(page)], s, u)
             if not stream:
                 continue
             units = [u for s in stream for u in self.units_of(s)]
@@ -810,6 +830,8 @@ class Book:
                 cut_u, cut_w = len(units), 0
             else:
                 cut_u, cut_w = self.find_cut(units, by_id, sp, cands.get(str(k), {}))
+            ncut = self.find_cut(units, by_id, {'mode': 'B', 'words': sp['N']}, {'frac': 0.97}) if sp.get('N') else None
+            nextpage = jp[1] + 1
             if cut_u < len(units) and cut_w and 'pi' in units[cut_u] and c.sec_kind(by_id[units[cut_u]['sec']]) == 'ex':
                 para = by_id[units[cut_u]['sec']]['paras'][units[cut_u]['pi']]
                 rest = (para.get(c.ORIG) or '').split()[cut_w:]
@@ -825,12 +847,32 @@ class Book:
                     cut_u -= 1
             for ui, u in enumerate(units):
                 sec = by_id[u['sec']]
+                if u['k'] == 't' and u['id'] in sp.get('TN', {}):
+                    n_ = sp['TN'][u['id']]
+                    on_a = (sp['V'].get(u['id']) or ('A' if ui < cut_u else 'B')) == 'A'
+                    put(jp[0] if on_a else jp[1], sec, dict(u, rows=(0, n_)))
+                    put(nextpage, sec, dict(u, rows=(n_, None), nohead=True))
+                    continue
+                if u['k'] == 't' and u['id'] in sp.get('M', {}):
+                    a_ = 0
+                    for i_, n_ in enumerate(sp['M'][u['id']]):
+                        put(jp[1] + i_, sec, dict(u, rows=(a_, a_ + n_), nohead=bool(i_)))
+                        a_ += n_
+                    continue
                 if u['k'] == 't' and u['id'] in sp.get('T', {}):
                     n_ = sp['T'][u['id']]
                     put(jp[0], sec, dict(u, rows=(0, n_)))
                     put(jp[1], sec, dict(u, rows=(n_, None), nohead=True))
                     continue
                 side = sp['V'].get(u['id']) if u['k'] in ('t', 'v') else None
+                if ncut and side is None and (ui > ncut[0] or (ui == ncut[0] and ncut[1] == 0)):
+                    put(nextpage, sec, u)
+                    continue
+                if ncut and ui == ncut[0] and ncut[1] and 'pi' in u:
+                    p1, p2 = self.split_para(sec['paras'][u['pi']], ncut[1])
+                    put(jp[0] if ui < cut_u else jp[1], sec, dict(u, part=1), p1)
+                    put(nextpage, sec, dict(u, part=2), p2)
+                    continue
                 if side is None:
                     side = 'A' if ui < cut_u else 'B'
                 if ui == cut_u and cut_w and 'pi' in u:

@@ -1,0 +1,8 @@
+@printed 70
+@status lesson
+p This line of code declares three variables a, b and c, all of type int. This declaration is exactly the same as shown in the following segment of code: || کوڈ کی یہ لائن تین ویری ایبلز a، b اور c کا اعلان کرتی ہے جو سب int قسم کے ہیں۔ یہ اعلان بالکل ویسا ہی ہے جیسا کوڈ کے درج ذیل حصے میں دکھایا گیا ہے: || د کوډ دا کرښه درې متغیرونه a، b او c اعلانوي چې ټول د int ډول دي. دا اعلان دقیقاً هماغسې دی لکه څنګه چې د کوډ په لاندې برخه کې ښودل شوی:
+p int a; int b; int c; || int a; int b; int c; || int a; int b; int c;
+p Consider the following example to see the use of variable declaration. || ویری ایبل کے اعلان کا استعمال دیکھنے کے لیے درج ذیل مثال پر غور کریں۔ || د متغیر د اعلان د کارونې لیدلو لپاره لاندې بېلګې ته پام وکړئ.
+p #include <iostream.h> #include <conio.h> int main() { // declaring variables: int a, b; int result; // process: a = 55; b = 22; result = a - b; // print out the result: cout << "The Result is= "<<result; // terminate the program: getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { // declaring variables: int a, b; int result; // process: a = 55; b = 22; result = a - b; // print out the result: cout << "The Result is= "<<result; // terminate the program: getch(); return 0; } || #include <iostream.h> #include <conio.h> int main() { // declaring variables: int a, b; int result; // process: a = 55; b = 22; result = a - b; // print out the result: cout << "The Result is= "<<result; // terminate the program: getch(); return 0; }
+p Output of the Program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p The Result is= 33 || The Result is= 33 || The Result is= 33

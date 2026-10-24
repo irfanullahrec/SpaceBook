@@ -1,0 +1,20 @@
+@printed 59
+@status lesson
+p Consider the following program: || درج ذیل پروگرام پر غور کریں: || لاندې پروګرام ته پام وکړئ:
+p // header file example #include <iostream.h> int main() { cout << "Hello, world!" << endl; return 0; } || // header file example #include <iostream.h> int main() { cout << "Hello, world!" << endl; return 0; } || // header file example #include <iostream.h> int main() { cout << "Hello, world!" << endl; return 0; }
+p Output of the program || پروگرام کا آؤٹ پٹ || د پروګرام وتنه
+p Hello, world! || Hello, world! || Hello, world!
+p This program prints the string “Hello, world!” to the screen using cout. However, this program never defines cout, so how does the compiler know about the object cout? The answer for this is that cout has been declared in a header file called “iostream”. When the line #include <iostream.h> is used in the program, the compiler locates and read all the declarations from a header file named “iostream”. || یہ پروگرام cout کے ذریعے اسٹرنگ ’’Hello, world!‘‘ اسکرین پر پرنٹ کرتا ہے۔ تاہم یہ پروگرام کبھی cout کی تعریف نہیں کرتا، تو کمپائلر کو آبجیکٹ cout کا کیسے پتہ چلتا ہے؟ اس کا جواب یہ ہے کہ cout کا اعلان ’’iostream‘‘ نامی ہیڈر فائل میں کیا گیا ہے۔ جب پروگرام میں #include <iostream.h> لائن استعمال ہوتی ہے تو کمپائلر ’’iostream‘‘ نامی ہیڈر فائل کو تلاش کر کے اس کے تمام اعلانات پڑھتا ہے۔ || دا پروګرام د cout په مرسته "Hello, world!" تار پر پرده چاپوي. خو دا پروګرام هېڅکله cout نه تعریفوي، نو کمپایلر د cout شي څخه څنګه خبرېږي؟ ځواب یې دا دی چې cout په "iostream" نومي سرلیک فایل کې اعلان شوی. کله چې په پروګرام کې د #include <iostream.h> کرښه وکارول شي، کمپایلر "iostream" نومی سرلیک فایل پیدا کوي او ټول اعلانونه یې لولي.
+## b. Reserved words || b. مخصوص الفاظ || b. ځانګړې کلمې
+p Reserved words or keywords are those words which have their special meaning within the C++ language and are reserved for some specific purpose. C++ reserved words cannot be used for any other purpose in a C++ program and even cannot be used as variables. Here is a list of C++ keywords shown in Table 3.1. || مخصوص الفاظ یا کی ورڈز وہ الفاظ ہیں جن کا C++ زبان میں خاص مطلب ہوتا ہے اور جو کسی مخصوص مقصد کے لیے مختص ہوتے ہیں۔ C++ کے مخصوص الفاظ کسی C++ پروگرام میں کسی اور مقصد کے لیے استعمال نہیں ہو سکتے، حتیٰ کہ ویری ایبلز کے طور پر بھی نہیں۔ جدول 3.1 میں C++ کی ورڈز کی فہرست دی گئی ہے۔ || ځانګړې کلمې یا کلیدي کلمې هغه کلمې دي چې د C++ ژبې دننه ځانګړې معنا لري او د یوې ځانګړې موخې لپاره ساتل شوې دي. د C++ ځانګړې کلمې په C++ پروګرام کې د بلې موخې لپاره نه شي کارول کېدای، حتی د متغیرونو په توګه هم نه. د C++ کلیدي کلمو لېست په ۳.۱ جدول کې ښودل شوی.
+table
+tr | asm | auto | bool | break | case | catch | char | class
+tr | const | const_cast | continue | default | delete | do | double | dynamic_cast
+tr | else | enum | explicit | export | extern | false | float | for
+tr | friend | goto | if | inline | int | long | mutable | namespace
+tr | new | operator | private | protected | public | register | reinterpret_cast | return
+tr | short | signed | sizeof | static | static_cast | struct | switch | template
+tr | this | throw | true | try | typedef | typeid | typename | union
+tr | unsigned | using | virtual | void | volatile | wchar_t | while | 
+endtable
+p Table 3.1: List of C++ Keywords || جدول 3.1: C++ کی ورڈز کی فہرست || ۳.۱ جدول: د C++ کلیدي کلمو لېست
