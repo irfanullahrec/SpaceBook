@@ -270,7 +270,7 @@ for (const [name, n] of C12) {
 console.log('--- rebuilt books (CLSn_BOOKS) ---');
 const BOOK_LOCK = path.join(ROOT, 'tests', 'contract', 'cls_books.json');
 // books whose source is missing or whose page-by-page pass is unfinished (see docs/06_PROJECT_AUDIT and MEMORY)
-const NOT_COMPLETE = new Set(['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing', 'cls12.math']);
+const NOT_COMPLETE = new Set(['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing', 'cls12.math', 'cls11.stat']);   // cls11.stat: units 8, 9 and the appendices are not in the reviewed data yet
 const clsFiles = jsFiles.filter(f => /window\.CLS[0-9]+_BOOKS\["[a-z0-9_]+"\] *=/.test(fs.readFileSync(JS + f, 'utf8')));
 const cb = { console, setTimeout, clearTimeout };
 cb.window = cb;

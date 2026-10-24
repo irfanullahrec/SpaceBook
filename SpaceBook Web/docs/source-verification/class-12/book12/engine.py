@@ -889,7 +889,7 @@ class Book:
             L += [f'@printed {pr}', '@status lesson']
         else:
             first = chapter_of[items[0][0]['id']]
-            L += ['@status front-matter' if c.is_front(first) else '@status back-matter']
+            L += ['@status front-matter' if c.is_front(first) else ('@status lesson' if not str(first['number']).isdigit() else '@status back-matter')]   # a back-matter UNIT keeps its own pages
         L += [f'@issue {x}' for x in notes]
         cur_ex = st['ex']
         pend, lastq = [], None
@@ -909,7 +909,7 @@ class Book:
                 started.add(n)
                 L.append(f"@unit {self.unit_no(ch)} | " + (self.tri(*c.FM_TITLE) if c.is_front(ch) else self.chapter_titles(ch)))
                 st['sec'] = None
-            if kind != 'back' and st['sec'] != sid:
+            if st['sec'] != sid:
                 if cur_ex and kind != 'ex':
                     L.append('endexercise')
                     cur_ex = None
