@@ -12,13 +12,19 @@ sol obtuse angle ## Answer from the book's printed answer key. || کتاب کے 
 qp d | ∠ at K with arms KJ and KL || K پر زاویہ، بازو KJ اور KL || په K کې زاویه، بازوګانې KJ او KL
 sol acute angle ## Answer from the book's printed answer key. || کتاب کے آخر میں دی گئی جوابات کی فہرست کے مطابق۔ || د کتاب په پای کې د ځوابونو د لیست سره سم.
 q 2 | Measure the following angles. || درج ذیل زاویے ناپیں۔ || لاندې زاویې اندازه کړئ.
+sol Measured with a protractor (centre on the vertex, zero line on one arm): ∠ABC ≈ 53° (acute), ∠EFG ≈ 30° (acute), ∠IJK ≈ 118° (obtuse), ∠MNO = 90° (right angle), ∠PQR ≈ 17° (acute) ## Read off the drawn figures; a reading within 2° or 3° of these values is correct.
 frow geo 120 110 ; S 15 90 105 90 ; S 15 90 75 15 ; P 75 10 A ; P 10 105 B ; P 105 105 C ;; geo 120 110 ; S 15 90 105 90 ; S 15 90 100 45 ; P 105 40 E ; P 10 105 F ; P 100 105 G ;; geo 140 110 ; S 50 90 135 90 ; S 50 90 10 15 ; P 10 12 I ; P 50 105 J ; P 135 105 K ;; geo 130 120 ; S 20 100 120 100 ; S 20 100 20 10 ; P 20 8 M ; P 10 105 N ; P 125 115 O ;; geo 130 80 ; S 10 60 120 60 ; S 10 60 120 30 ; P 125 25 P ; P 10 50 Q ; P 125 75 R || Angles ABC, EFG, IJK, MNO and PQR to measure, redrawn with the same shapes as printed || ناپنے کے لیے زاویے ABC، EFG، IJK، MNO اور PQR، چھپی ہوئی شکل کے مطابق || د اندازه کولو لپاره ABC، EFG، IJK، MNO او PQR زاویې، د چاپ شوي شکل په څېر
 q 3 | Construct the angles of the given measurements. || دی گئی پیمائشوں کے زاویے بنائیں۔ || د ورکړل شویو اندازو زاویې جوړې کړئ.
 qp a | 60°
+sol Draw a ray OA. Put the protractor centre on O and its zero line on OA, mark 60° and join O to the mark: ∠AOB = 60° (acute angle). ## Steps to construct an angle with a protractor.
 qp b | 30°
+sol Draw a ray OA. Put the protractor centre on O and its zero line on OA, mark 30° and join O to the mark: ∠AOB = 30° (acute angle). ## Steps to construct an angle with a protractor.
 qp c | 115°
+sol Draw a ray OA. Put the protractor centre on O and its zero line on OA, mark 115° and join O to the mark: ∠AOB = 115° (obtuse angle). ## Steps to construct an angle with a protractor.
 qp d | 90°
+sol Draw a ray OA. Put the protractor centre on O and its zero line on OA, mark 90° and join O to the mark: ∠AOB = 90° (right angle). ## Steps to construct an angle with a protractor.
 q 4 | Measure the angles in the following figures and write their names as well. || درج ذیل اشکال میں زاویے ناپیں اور ان کے نام بھی لکھیں۔ || په لاندې شکلونو کې زاویې اندازه کړئ او نومونه یې هم ولیکئ.
+sol Square: the corner angles are right angles (90°); the diagonal cuts the two opposite corners into acute angles of 45° each, and the half-disc marked on the diagonal is a straight angle (180°). Five-sided figure: the two angles at the right are right angles (90°), the angle at the left point is acute (about 54°) and the two angles next to it are obtuse (about 150° to 156°) ## Names by size: acute under 90°, right 90°, obtuse between 90° and 180°, straight 180°. The figures carry no letters, so angles are named by their kind.
 frow geo 210 210 ; G 10 10 190 190 #bae6fd ; S 10 200 200 10 ; G 10 170 30 30 #fde047 ; G 170 170 30 30 #fde047 ; A 10 10 14 270 360 ; A 200 10 18 180 225 ; A 105 105 16 45 225 ;; geo 360 200 ; S 10 95 120 15 ; S 120 15 340 15 ; S 340 15 340 185 ; S 340 185 120 185 ; S 120 185 10 95 ; A 120 15 16 216 360 ; A 340 15 16 180 270 ; A 340 185 16 90 180 ; A 120 185 16 0 141 ; A 10 95 16 321 36 || A square with one diagonal, and a five-sided figure (pentagon) || ایک وتر والا مربع اور ایک پانچ ضلعی شکل || یو مربع له یوه قطر سره، او یو پنځه ضلعي شکل
 endexercise
 @issue Q4 angle arcs are marked on the scan with yellow shading; drawn here as plain arcs. Q4 figures carry no vertex letters on the scan although the question asks for names. Q2 angle sizes are redrawn to match the scan's shapes and cannot be measured exactly from it.

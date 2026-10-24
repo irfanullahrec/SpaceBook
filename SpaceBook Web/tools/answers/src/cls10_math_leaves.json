@@ -1,0 +1,349 @@
+{
+ "book": "Mathematics 10 (KPTBB)",
+ "note": "Class 10 Mathematics: parts whose printed key line holds several parts at once (Review 4 Q2, 4.1, 4.2, 2.1 Q6, 2.6 Q2 ...), or that have no printed line. Every answer was worked out and checked with exact arithmetic (partial fractions, tables).",
+ "leaves": [
+  {
+   "ex": "2.1",
+   "q": "6",
+   "part": "i.",
+   "answer": "(a) Real roots: $k \\leq \\dfrac{9}{8}$; (b) imaginary roots: $k > \\dfrac{9}{8}$.",
+   "why": "The discriminant of $2x^2 + 3x + k = 0$ is $3^2 - 4(2)(k) = 9 - 8k$. The roots are real when it is $\\geq 0$ and imaginary when it is $< 0$."
+  },
+  {
+   "ex": "2.1",
+   "q": "6",
+   "part": "ii.",
+   "answer": "(a) Real roots: $k \\leq 1$ (and $k \\neq 0$); (b) imaginary roots: $k > 1$.",
+   "why": "The discriminant of $kx^2 + 2x + 1 = 0$ is $2^2 - 4(k)(1) = 4 - 4k$. The roots are real when it is $\\geq 0$ and imaginary when it is $< 0$. For $k = 0$ the equation is not quadratic."
+  },
+  {
+   "ex": "2.1",
+   "q": "6",
+   "part": "iii.",
+   "answer": "(a) Real roots: $k \\leq \\dfrac{25}{4}$; (b) imaginary roots: $k > \\dfrac{25}{4}$.",
+   "why": "The discriminant of $x^2 + 5x + k = 0$ is $5^2 - 4(1)(k) = 25 - 4k$. The roots are real when it is $\\geq 0$ and imaginary when it is $< 0$."
+  },
+  {
+   "ex": "2.6",
+   "q": "2",
+   "part": "i.",
+   "answer": "$(18, -9)$",
+   "why": "Factorise $x^2 + 3xy + 2y^2 = (x + y)(x + 2y) = 0$. Since $x + y = 9$, we need $x + 2y = 0$, so $y = -9$ and $x = 18$. Check: $18 + (-9) = 9$ and $324 - 486 + 162 = 0$."
+  },
+  {
+   "ex": "2.6",
+   "q": "2",
+   "part": "ii.",
+   "answer": "$(-2, 2)$ and $(-1, 3)$",
+   "why": "Put $y = x + 4$ in $2x^2 + xy + y^2 = 8$: $2x^2 + x^2 + 4x + x^2 + 8x + 16 = 8$, so $4x^2 + 12x + 8 = 0$, i.e. $x^2 + 3x + 2 = 0$ and $x = -1$ or $x = -2$. Then $y = x + 4 = 3$ or $2$."
+  },
+  {
+   "ex": "3.4",
+   "q": "1",
+   "part": "i.",
+   "answer": "Proved: both sides equal $\\dfrac{2k + 3}{2k - 3}$.",
+   "why": "Let $\\dfrac{a}{b} = \\dfrac{c}{d} = k$, so $a = kb$ and $c = kd$. Then $\\dfrac{2a + 3b}{2a - 3b} = \\dfrac{2kb + 3b}{2kb - 3b} = \\dfrac{2k + 3}{2k - 3}$ and in the same way $\\dfrac{2c + 3d}{2c - 3d} = \\dfrac{2k + 3}{2k - 3}$."
+  },
+  {
+   "ex": "3.4",
+   "q": "1",
+   "part": "ii.",
+   "answer": "Proved: both ratios equal $(pk + q) : (mk - n)$.",
+   "why": "Let $\\dfrac{a}{b} = \\dfrac{c}{d} = k$, so $a = kb$ and $c = kd$. Then $pa + qb : ma - nb = b(pk + q) : b(mk - n) = (pk + q) : (mk - n)$ and in the same way $pc + qd : mc - nd = d(pk + q) : d(mk - n) = (pk + q) : (mk - n)$."
+  },
+  {
+   "ex": "null",
+   "q": "9",
+   "part": null,
+   "answer": "Proved: each ratio equals $\\dfrac{b(f - d) + (cd - af)}{e(f - d)}$.",
+   "why": "Let each ratio be $k$: $a - b = k(d - e)$ and $b - c = k(e - f)$. Then $a = b + k(d - e)$ and $c = b - k(e - f)$. So $b(f - d) + cd - af = bf - bd + bd - kd(e - f) - bf - kf(d - e) = -k(de - df + df - ef) = -ke(d - f) = ke(f - d)$. Dividing by $e(f - d)$ gives $k$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "1",
+   "answer": "$- \\dfrac{1}{2 x - 1} + \\dfrac{2}{x}$",
+   "why": "Write $\\dfrac{3 x - 2}{2 x^{2} - x} = \\dfrac{A}{x} + \\dfrac{B}{2 x - 1}$. Multiply by the denominator and compare coefficients: $A = 2$, $B = -1$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "2",
+   "answer": "$\\dfrac{3}{2 (x + 5)} - \\dfrac{1}{2 (x + 1)}$",
+   "why": "Write $\\dfrac{x - 1}{x^{2} + 6 x + 5} = \\dfrac{A}{x + 1} + \\dfrac{B}{x + 5}$. Multiply by the denominator and compare coefficients: $A = - \\dfrac{1}{2}$, $B = \\dfrac{3}{2}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "3",
+   "answer": "$- \\dfrac{1}{2 (x + 1)} + \\dfrac{1}{2 (x - 1)}$",
+   "why": "Write $\\dfrac{1}{x^{2} - 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{1}{2}$, $B = - \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "4",
+   "answer": "$\\dfrac{5}{6 (x + 5)} + \\dfrac{1}{6 (x - 1)}$",
+   "why": "Write $\\dfrac{x}{x^{2} + 4 x - 5} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 5}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{1}{6}$, $B = \\dfrac{5}{6}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "5",
+   "answer": "$\\dfrac{8}{5 (2 x - 1)} + \\dfrac{6}{5 (x + 2)}$",
+   "why": "Write $\\dfrac{4 x + 2}{2 x^{2} + 3 x - 2} = \\dfrac{A}{x + 2} + \\dfrac{B}{2 x - 1}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{6}{5}$, $B = \\dfrac{8}{5}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "6",
+   "answer": "$- \\dfrac{5}{4 (x + 1)} + \\dfrac{1}{2 (x + 1)^{2}} + \\dfrac{9}{4 (x - 1)}$",
+   "why": "Write $\\dfrac{x^{2} + 5 x + 3}{x^{3} + x^{2} - x - 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1} + \\dfrac{C}{(x + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{9}{4}$, $B = - \\dfrac{5}{4}$, $C = \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "7",
+   "answer": "$\\dfrac{11}{x + 3} - \\dfrac{10}{x + 2} + \\dfrac{6}{(x + 2)^{2}}$",
+   "why": "Write $\\dfrac{x^{2} + 2}{x^{3} + 7 x^{2} + 16 x + 12} = \\dfrac{A}{x + 3} + \\dfrac{B}{x + 2} + \\dfrac{C}{(x + 2)^{2}}$. Multiply by the denominator and compare coefficients: $A = 11$, $B = -10$, $C = 6$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "8",
+   "answer": "$\\dfrac{1}{9 (x - 3)} + \\dfrac{5}{3 (x - 3)^{2}} - \\dfrac{1}{9 x}$",
+   "why": "Write $\\dfrac{2 x - 1}{x^{3} - 6 x^{2} + 9 x} = \\dfrac{A}{x} + \\dfrac{B}{x - 3} + \\dfrac{C}{(x - 3)^{2}}$. Multiply by the denominator and compare coefficients: $A = - \\dfrac{1}{9}$, $B = \\dfrac{1}{9}$, $C = \\dfrac{5}{3}$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "9",
+   "answer": "$1 - \\dfrac{2}{x + 1} + \\dfrac{1}{(x + 1)^{2}}$",
+   "why": "The fraction is improper, so divide first: quotient $1$, remainder $- 2 x - 1$. Write $\\dfrac{- 2 x - 1}{x^{2} + 2 x + 1} = \\dfrac{A}{x + 1} + \\dfrac{B}{(x + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = -2$, $B = 1$."
+  },
+  {
+   "ex": "4.1",
+   "q": "1",
+   "part": "10",
+   "answer": "$\\dfrac{1}{4 (x + 1)} + \\dfrac{3}{4 (x - 1)} + \\dfrac{1}{2 (x - 1)^{2}}$",
+   "why": "Write $\\dfrac{x^{2}}{x^{3} - x^{2} - x + 1} = \\dfrac{A}{x + 1} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{1}{4}$, $B = \\dfrac{3}{4}$, $C = \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "1",
+   "answer": "$- \\dfrac{x}{x^{2} + 1} + \\dfrac{1}{x}$",
+   "why": "Write $\\dfrac{1}{x^{3} + x} = \\dfrac{A}{x} + \\dfrac{B x + C}{x^{2} + 1}$. Multiply by the denominator and compare coefficients: $A = 1$, $B = -1$, $C = 0$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "2",
+   "answer": "$- \\dfrac{x - 11}{4 (x^{2} + 3)} + \\dfrac{5}{4 (x - 1)}$",
+   "why": "Write $\\dfrac{x^{2} + 3 x + 1}{x^{3} - x^{2} + 3 x - 3} = \\dfrac{A}{x - 1} + \\dfrac{B x + C}{x^{2} + 3}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{5}{4}$, $B = - \\dfrac{1}{4}$, $C = \\dfrac{11}{4}$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "3",
+   "answer": "$- \\dfrac{3 x - 1}{2 (x^{2} + 1)} + \\dfrac{3}{2 (x - 1)}$",
+   "why": "Write $\\dfrac{2 x + 1}{x^{3} - x^{2} + x - 1} = \\dfrac{A}{x - 1} + \\dfrac{B x + C}{x^{2} + 1}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{3}{2}$, $B = - \\dfrac{3}{2}$, $C = \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "4",
+   "answer": "$\\dfrac{3}{5 (x^{2} + 5)} - \\dfrac{3}{5 x^{2}}$",
+   "why": "Write $- \\dfrac{3}{x^{4} + 5 x^{2}} = \\dfrac{A}{x} + \\dfrac{B}{x^{2}} + \\dfrac{C x + D}{x^{2} + 5}$. Multiply by the denominator and compare coefficients: $A = 0$, $B = - \\dfrac{3}{5}$, $C = 0$, $D = \\dfrac{3}{5}$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "5",
+   "answer": "$\\dfrac{3 (2 x - 1)}{7 (3 x^{2} + 1)} - \\dfrac{2}{7 (x + 4)}$",
+   "why": "Write $\\dfrac{3 x - 2}{3 x^{3} + 12 x^{2} + x + 4} = \\dfrac{A}{x + 4} + \\dfrac{B x + C}{3 x^{2} + 1}$. Multiply by the denominator and compare coefficients: $A = - \\dfrac{2}{7}$, $B = \\dfrac{6}{7}$, $C = - \\dfrac{3}{7}$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "6",
+   "answer": "$- \\dfrac{5 (x - 2)}{(x^{2} - 2)^{2}} + \\dfrac{5 (x - 1)}{x^{2} - 2} - \\dfrac{5}{x + 1}$",
+   "why": "Write $\\dfrac{5 x}{x^{5} + x^{4} - 4 x^{3} - 4 x^{2} + 4 x + 4} = \\dfrac{A}{x + 1} + \\dfrac{B x + C}{x^{2} - 2} + \\dfrac{D x + E}{(x^{2} - 2)^{2}}$. Multiply by the denominator and compare coefficients: $A = -5$, $B = 5$, $C = -5$, $D = -5$, $E = 10$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "7",
+   "answer": "$\\dfrac{x - 2}{(x^{2} + 1)^{2}} - \\dfrac{4 (x + 2)}{5 (x^{2} + 1)} + \\dfrac{4}{5 (x - 2)}$",
+   "why": "Write $\\dfrac{5 x^{2} - 4 x + 8}{x^{5} - 2 x^{4} + 2 x^{3} - 4 x^{2} + x - 2} = \\dfrac{A}{x - 2} + \\dfrac{B x + C}{x^{2} + 1} + \\dfrac{D x + E}{(x^{2} + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{4}{5}$, $B = - \\dfrac{4}{5}$, $C = - \\dfrac{8}{5}$, $D = 1$, $E = -2$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "8",
+   "answer": "$\\dfrac{4 x - 5}{(x^{2} + 4)^{2}}$",
+   "why": "Write $\\dfrac{4 x - 5}{x^{4} + 8 x^{2} + 16} = \\dfrac{A x + B}{x^{2} + 4} + \\dfrac{C x + D}{(x^{2} + 4)^{2}}$. Multiply by the denominator and compare coefficients: $A = 0$, $B = 0$, $C = 4$, $D = -5$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "9",
+   "answer": "$\\dfrac{2}{x^{2} + 1} - \\dfrac{4}{(x^{2} + 1)^{2}} + \\dfrac{1}{x + 1} - \\dfrac{1}{x - 1}$",
+   "why": "Write $\\dfrac{8 x^{2}}{- x^{6} - x^{4} + x^{2} + 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1} + \\dfrac{C x + D}{x^{2} + 1} + \\dfrac{E x + F}{(x^{2} + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = -1$, $B = 1$, $C = 0$, $D = 2$, $E = 0$, $F = -4$."
+  },
+  {
+   "ex": "4.2",
+   "q": "1",
+   "part": "10",
+   "answer": "$- \\dfrac{3 (x + 1)}{2 (x^{2} + 1)} - \\dfrac{x + 1}{(x^{2} + 1)^{2}} + \\dfrac{3}{2 (x - 1)}$",
+   "why": "Write $\\dfrac{2 x^{2} + 4}{x^{5} - x^{4} + 2 x^{3} - 2 x^{2} + x - 1} = \\dfrac{A}{x - 1} + \\dfrac{B x + C}{x^{2} + 1} + \\dfrac{D x + E}{(x^{2} + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = \\dfrac{3}{2}$, $B = - \\dfrac{3}{2}$, $C = - \\dfrac{3}{2}$, $D = -1$, $E = -1$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "i.",
+   "answer": "$2 - \\dfrac{1}{x + 1} + \\dfrac{1}{x - 1}$",
+   "why": "The fraction is improper, so divide first: quotient $2$, remainder $2$. Write $\\dfrac{2}{x^{2} - 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1}$. Multiply by the denominator and compare coefficients: $A = 1$, $B = -1$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "ii.",
+   "answer": "$2 x + 3 - \\dfrac{16}{x - 1} + \\dfrac{30}{x - 2}$",
+   "why": "The fraction is improper, so divide first: quotient $2 x + 3$, remainder $14 x + 2$. Write $\\dfrac{14 x + 2}{x^{2} - 3 x + 2} = \\dfrac{A}{x - 2} + \\dfrac{B}{x - 1}$. Multiply by the denominator and compare coefficients: $A = 30$, $B = -16$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "iii.",
+   "answer": "$\\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^{2}} - \\dfrac{1}{x}$",
+   "why": "Write $\\dfrac{3 x - 1}{x^{3} - 2 x^{2} + x} = \\dfrac{A}{x} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = -1$, $B = 1$, $C = 2$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "iv.",
+   "answer": "$\\dfrac{1}{x - 1} + \\dfrac{2}{(x - 1)^{2}}$",
+   "why": "Write $\\dfrac{x + 1}{x^{2} - 2 x + 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{(x - 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = 1$, $B = 2$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "v.",
+   "answer": "$\\dfrac{1}{x^{2} + 2} + \\dfrac{1}{x^{2} - 2}$",
+   "why": "Write $\\dfrac{2 x^{2}}{x^{4} - 4} = \\dfrac{C x + D}{x^{2} + 2} + \\dfrac{A x + B}{x^{2} - 2}$. Multiply by the denominator and compare coefficients: $A = 0$, $B = 1$, $C = 0$, $D = 1$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "vi.",
+   "answer": "$- \\dfrac{3 x - 1}{2 (x^{2} + 1)} - \\dfrac{1}{2 (x + 1)} + \\dfrac{2}{x - 1}$",
+   "why": "Write $\\dfrac{3 x^{2} + 3 x + 2}{x^{4} - 1} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1} + \\dfrac{C x + D}{x^{2} + 1}$. Multiply by the denominator and compare coefficients: $A = 2$, $B = - \\dfrac{1}{2}$, $C = - \\dfrac{3}{2}$, $D = \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "vii.",
+   "answer": "$- \\dfrac{x + 2}{(x^{2} + 1)^{2}} + \\dfrac{x + 3}{x^{2} + 1}$",
+   "why": "Write $\\dfrac{x^{3} + 3 x^{2} + 1}{x^{4} + 2 x^{2} + 1} = \\dfrac{A x + B}{x^{2} + 1} + \\dfrac{C x + D}{(x^{2} + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = 1$, $B = 3$, $C = -1$, $D = -2$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "viii.",
+   "answer": "$2 - \\dfrac{3}{x + 1} + \\dfrac{1}{x} - \\dfrac{1}{x^{2}}$",
+   "why": "The fraction is improper, so divide first: quotient $2$, remainder $- 2 x^{2} - 1$. Write $\\dfrac{- 2 x^{2} - 1}{x^{3} + x^{2}} = \\dfrac{A}{x + 1} + \\dfrac{B}{x} + \\dfrac{C}{x^{2}}$. Multiply by the denominator and compare coefficients: $A = -3$, $B = 1$, $C = -1$."
+  },
+  {
+   "ex": "Review 4",
+   "q": "2",
+   "part": "ix.",
+   "answer": "$\\dfrac{x - 1}{x^{2} + 2 x + 4} + \\dfrac{3}{x - 2}$",
+   "why": "Write $\\dfrac{4 x^{2} + 3 x + 14}{x^{3} - 8} = \\dfrac{A}{x - 2} + \\dfrac{B x + C}{x^{2} + 2 x + 4}$. Multiply by the denominator and compare coefficients: $A = 3$, $B = 1$, $C = -1$."
+  },
+  {
+   "ex": "null",
+   "q": "3",
+   "part": null,
+   "answer": "$\\dfrac{x}{(x^{2} + 1)^{2}} + \\dfrac{1}{x + 1}$",
+   "why": "Write $\\dfrac{x^{4} + 3 x^{2} + x + 1}{x^{5} + x^{4} + 2 x^{3} + 2 x^{2} + x + 1} = \\dfrac{A}{x + 1} + \\dfrac{B x + C}{x^{2} + 1} + \\dfrac{D x + E}{(x^{2} + 1)^{2}}$. Multiply by the denominator and compare coefficients: $A = 1$, $B = 0$, $C = 0$, $D = 1$, $E = 0$."
+  },
+  {
+   "ex": "5.3",
+   "q": "3",
+   "part": "i.",
+   "answer": "$A' = \\{5, 6, 7\\}$, $B' = \\{1, 2, 6, 7\\}$, $A' \\cup B' = \\{1, 2, 5, 6, 7\\}$, $A' \\cap B' = \\{6, 7\\}$. $(A \\cup B)' = \\{6, 7\\} = A' \\cap B'$, verified.",
+   "why": "$A \\cup B = \\{1, 2, 3, 4, 5\\}$, so $(A \\cup B)' = U - (A \\cup B) = \\{6, 7\\}$, and $A' \\cap B' = \\{5, 6, 7\\} \\cap \\{1, 2, 6, 7\\} = \\{6, 7\\}$. In the Venn diagrams, shade the outside of $A$ for $A'$, the outside of $B$ for $B'$, the outside of both circles for $A' \\cap B'$ and everything except the overlap for $A' \\cup B'$."
+  },
+  {
+   "ex": "5.3",
+   "q": "3",
+   "part": "ii.",
+   "answer": "$(A \\cap B)' = \\{1, 2, 5, 6, 7\\} = A' \\cup B'$, verified.",
+   "why": "$A \\cap B = \\{3, 4\\}$, so $(A \\cap B)' = U - \\{3, 4\\} = \\{1, 2, 5, 6, 7\\}$, and $A' \\cup B' = \\{5, 6, 7\\} \\cup \\{1, 2, 6, 7\\} = \\{1, 2, 5, 6, 7\\}$. Both sets are the same."
+  },
+  {
+   "ex": "6.1",
+   "q": "4",
+   "part": "i.",
+   "answer": "Class interval 5 (frequency distribution of the 30 weights): 21–25: 5; 26–30: 5; 31–35: 6; 36–40: 8; 41–45: 6.",
+   "why": "The smallest weight is 22 and the largest is 43, so five classes of width 5 start at 21. Tally the 30 weights into the classes; the frequencies add up to 30."
+  },
+  {
+   "ex": "6.1",
+   "q": "4",
+   "part": "ii.",
+   "answer": "Histogram: draw touching rectangles on the class boundaries 20.5, 25.5, 30.5, 35.5, 40.5, 45.5 with heights 5, 5, 6, 8, 6. Frequency polygon: join the points (class mark, frequency) = (23, 5), (28, 5), (33, 6), (38, 8), (43, 6), and close the polygon at (18, 0) and (48, 0).",
+   "why": "Class boundaries are half a unit below the lower limit and above the upper limit of each class. The frequency polygon is drawn through the mid-points of the tops of the rectangles and joined to the x-axis one class mark before the first class and after the last one."
+  },
+  {
+   "ex": "6.2",
+   "q": "1",
+   "part": "i.",
+   "answer": "Cumulative frequency distribution: 55–64: f = 2, cf = 2; 65–74: f = 3, cf = 5; 75–84: f = 6, cf = 11; 85–94: f = 4, cf = 15; 95–104: f = 3, cf = 18; 105–114: f = 0, cf = 18; 115–124: f = 1, cf = 19; 125–134: f = 0, cf = 19; 135–144: f = 0, cf = 19; 145–154: f = 1, cf = 20.",
+   "why": "Tally the 20 wages in classes of width 10 starting at 55, then add the frequencies down the column: the last cumulative frequency is 20."
+  },
+  {
+   "ex": "6.2",
+   "q": "1",
+   "part": "ii.",
+   "answer": "Plot the points (upper class boundary, cumulative frequency) = (64.5, 2), (74.5, 5), (84.5, 11), (94.5, 15), (104.5, 18), (114.5, 18), (124.5, 19), (134.5, 19), (144.5, 19), (154.5, 20), start the polygon at (54.5, 0) and join the points with straight lines.",
+   "why": "A cumulative frequency (less than) polygon uses the upper class boundaries on the x-axis and the cumulative frequencies on the y-axis."
+  },
+  {
+   "ex": "6.3",
+   "q": "8",
+   "part": "i.",
+   "answer": "Frequency table: 112–116: 3; 117–121: 20; 122–126: 11; 127–131: 4; 132–136: 5 (total 43 workers); class marks 114, 119, 124, 129, 134.",
+   "why": "Write each class with its frequency and add the frequencies: $3 + 20 + 11 + 4 + 5 = 43$."
+  },
+  {
+   "ex": "6.3",
+   "q": "8",
+   "part": "ii.",
+   "answer": "Class boundaries: 111.5–116.5, 116.5–121.5, 121.5–126.5, 126.5–131.5, 131.5–136.5.",
+   "why": "The gap between the classes is 1 (116 to 117), so half of it, 0.5, is subtracted from each lower limit and added to each upper limit."
+  },
+  {
+   "ex": "6.3",
+   "q": "8",
+   "part": "iii.",
+   "answer": "Median $= 121.125$ (≈ 121.13), Mode $= 119.77$, Harmonic mean ≈ 122.36, Geometric mean ≈ 122.48 (all in Rs).",
+   "why": "Median: $n/2 = 21.5$ lies in the class 117–121 (boundaries 116.5–121.5, $f = 20$, cumulative frequency before it 3), so $\\text{Median} = 116.5 + \\dfrac{21.5 - 3}{20} \\times 5 = 121.125$. Mode: the modal class is 117–121, so $\\text{Mode} = 116.5 + \\dfrac{20 - 3}{(20 - 3) + (20 - 11)} \\times 5 = 119.77$. With the class marks $x$ = 114, 119, 124, 129, 134: $\\text{H.M.} = \\dfrac{n}{\\sum f/x} = 122.36$ and $\\text{G.M.} = \\text{antilog}\\left(\\dfrac{\\sum f \\log x}{n}\\right) = 122.48$."
+  },
+  {
+   "ex": "Review 8",
+   "q": "4",
+   "part": "a.",
+   "answer": "$m\\overline{BE} = \\sqrt{41}$ cm $\\approx 6.4$ cm.",
+   "why": "E is the mid-point of $\\overline{AC}$, so $AE = 4$ cm. In the right triangle $ABE$ (right angle at $A$): $BE^2 = AB^2 + AE^2 = 25 + 16 = 41$."
+  },
+  {
+   "ex": "Review 8",
+   "q": "4",
+   "part": "b.",
+   "answer": "$m\\overline{BE} = \\sqrt{41}$ cm $\\approx 6.4$ cm.",
+   "why": "Apollonius theorem in $\\Delta ABC$ with $BC^2 = 25 + 64 = 89$: $AB^2 + BC^2 = 2(BE^2 + AE^2)$, so $25 + 89 = 2(BE^2 + 16)$, $BE^2 = 57 - 16 = 41$."
+  }
+ ]
+}

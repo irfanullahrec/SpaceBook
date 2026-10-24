@@ -4,11 +4,17 @@ exercise Exercise 1 (Page 134)
 q 1 | Identify parallel and non-parallel lines from the given lines and write their names as well. || دیے گئے خطوط میں سے متوازی اور غیر متوازی خطوط پہچانیں اور ان کے نام بھی لکھیں۔ || له ورکړل شویو کرښو څخه موازي او غیر موازي کرښې وپېژنئ او نومونه یې هم ولیکئ.
 frow geo 130 100 ; L 15 35 115 35 #0f172a ; L 15 70 115 70 #0f172a ;; geo 130 100 ; L 10 50 120 50 #0f172a ; L 60 5 70 95 #0f172a ;; geo 130 100 ; L 50 5 50 95 #0f172a ; L 80 5 80 95 #0f172a ;; geo 130 100 ; L 35 10 95 90 #0f172a ; L 95 10 35 90 #0f172a ;; geo 130 100 ; L 30 90 75 10 #0f172a ; L 60 92 105 12 #0f172a ;; geo 130 100 ; L 10 30 120 75 #0f172a ; L 10 75 120 20 #0f172a || Lines for parts a) to f), in order || حصے a) تا f) کے خطوط، ترتیب سے || د a) تر f) برخو کرښې، په ترتیب
 qp a | (two horizontal lines, one above the other) || (دو افقی خطوط، ایک دوسرے کے اوپر) || (دوه افقي کرښې، یوه د بلې پورته)
+sol Parallel lines ## Two horizontal lines, one above the other, never meet. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 qp b | (a horizontal line crossed by a vertical line) || (ایک افقی خط جسے ایک عمودی خط کاٹتا ہے) || (یوه افقي کرښه چې یوه عمودي کرښه یې قطع کوي)
+sol Non-parallel lines (intersecting) ## The horizontal line is crossed by the vertical line. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 qp c | (two vertical lines side by side) || (دو عمودی خطوط ساتھ ساتھ) || (دوه عمودي کرښې څنګ په څنګ)
+sol Parallel lines ## Two vertical lines side by side never meet. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 qp d | (two slanting lines crossing like X) || (دو ترچھے خطوط جو X کی طرح کٹتے ہیں) || (دوه کږې کرښې چې د X په څېر سره قطع کېږي)
+sol Non-parallel lines (intersecting) ## The two slanting lines cross like an X. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 qp e | (two slanting lines side by side) || (دو ترچھے خطوط ساتھ ساتھ) || (دوه کږې کرښې څنګ په څنګ)
+sol Parallel lines ## Two slanting lines side by side never meet. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 qp f | (two lines crossing at a narrow angle) || (دو خطوط جو تنگ زاویے پر کٹتے ہیں) || (دوه کرښې چې په تنګه زاویه سره قطع کېږي)
+sol Non-parallel lines (intersecting) ## The two lines cross at a narrow angle. The printed key: parallel = a, c, e; non-parallel = b, d, f (the lines carry no letters on the scan).
 endexercise
 @issue The six line pairs of Exercise 1 carry no letters on the scan, although the question asks for "their names"; parts a-f are described and redrawn from the scan.
 @sec angle | Angle || زاویہ || زاویه

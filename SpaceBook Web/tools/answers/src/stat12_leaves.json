@@ -1,0 +1,791 @@
+{
+ "book": "Statistics 12 (KPTBB)",
+ "note": "Class 12 Statistics: the theory questions (define / explain / write short notes) and the parts whose printed line did not split by part. The numbers (binomial, sampling distributions, normal fit, ANOVA) were recomputed exactly.",
+ "leaves": [
+  {
+   "ex": "1",
+   "q": "1.4",
+   "part": null,
+   "answer": "Factorial: for a positive integer $n$, $n! = n(n-1)(n-2)\\cdots 3 \\cdot 2 \\cdot 1$ and $0! = 1$; it is the number of ways of arranging $n$ different objects in a row. Permutation: an arrangement of objects in a definite order; the number of permutations of $n$ different objects taken $r$ at a time is $^nP_r = \\dfrac{n!}{(n-r)!}$. Combination: a selection of objects in which the order does not matter; $^nC_r = \\dfrac{n!}{r!\\,(n-r)!} = \\dfrac{^nP_r}{r!}$, and $^nC_r = {}^nC_{n-r}$."
+  },
+  {
+   "ex": "1",
+   "q": "1.11",
+   "part": null,
+   "answer": "Probability is a number between 0 and 1 that measures how likely it is that an event will occur. Classical definition: if an experiment has $n$ equally likely outcomes and $m$ of them favour the event $A$, then $P(A) = \\dfrac{m}{n}$. $P(A) = 0$ for an impossible event, $P(A) = 1$ for a sure event, and $P(A) + P(\\bar{A}) = 1$. In the relative-frequency view, $P(A)$ is the value approached by the proportion of times $A$ occurs when the experiment is repeated many times."
+  },
+  {
+   "ex": "1",
+   "q": "1.12",
+   "part": "(i)",
+   "answer": "Random experiment: an experiment whose result cannot be predicted with certainty although all its possible results are known (tossing a coin). Sample space: the set $S$ of all possible outcomes (for a die $S = \\{1, 2, 3, 4, 5, 6\\}$). Outcome: one possible result of the experiment (a sample point). Event: any subset of the sample space (an even number on a die is the event $\\{2, 4, 6\\}$). Impossible event: an event that cannot occur, the empty set $\\varnothing$, with probability 0. Sure event: an event that always occurs, the whole sample space $S$, with probability 1."
+  },
+  {
+   "ex": "1",
+   "q": "1.13",
+   "part": "(i)",
+   "answer": "Mutually exclusive events cannot occur together: $A \\cap B = \\varnothing$ and $P(A \\cup B) = P(A) + P(B)$ (a head and a tail in one toss). Events that are not mutually exclusive can occur together: $A \\cap B \\neq \\varnothing$ and $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ (an even number and a number greater than 3 on one throw of a die)."
+  },
+  {
+   "ex": "1",
+   "q": "1.13",
+   "part": "(ii)",
+   "answer": "Independent events: the occurrence of one does not change the probability of the other, so $P(A \\cap B) = P(A)\\,P(B)$ (two tosses of a coin; draws with replacement). Dependent events: the occurrence of one changes the probability of the other, so $P(A \\cap B) = P(A)\\,P(B \\mid A)$ (draws without replacement)."
+  },
+  {
+   "ex": "1",
+   "q": "1.13",
+   "part": "(iii)",
+   "answer": "Probability $P(A)$ is the chance of $A$ in the whole sample space. Conditional probability $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$, $P(B) > 0$, is the probability of $A$ given that $B$ has already occurred; the sample space is reduced to $B$."
+  },
+  {
+   "ex": "1",
+   "q": "1.14",
+   "part": null,
+   "answer": "Equally likely events: events that have the same chance of occurring, so none is preferred (the six faces of a fair die). Compound event: an event made up of two or more simple events (sample points), e.g. an even number on a die is $\\{2, 4, 6\\}$. Exhaustive events: events which together make up the whole sample space, so that at least one of them must occur (an even number and an odd number on a die)."
+  },
+  {
+   "ex": "1",
+   "q": "1.23",
+   "part": null,
+   "answer": "Multiplication law for dependent events: $P(A \\cap B) = P(A)\\,P(B \\mid A) = P(B)\\,P(A \\mid B)$. For independent events: $P(A \\cap B) = P(A)\\,P(B)$.",
+   "why": "Proof: by definition $P(B \\mid A) = \\dfrac{P(A \\cap B)}{P(A)}$ with $P(A) > 0$; multiplying by $P(A)$ gives $P(A \\cap B) = P(A)\\,P(B \\mid A)$, and in the same way $P(A \\cap B) = P(B)\\,P(A \\mid B)$. If $A$ and $B$ are independent, the occurrence of $A$ does not affect $B$, so $P(B \\mid A) = P(B)$ and the law becomes $P(A \\cap B) = P(A)\\,P(B)$."
+  },
+  {
+   "ex": "2",
+   "q": "2.4",
+   "part": null,
+   "answer": "A random variable is a rule that assigns a real number to every outcome of the sample space of a random experiment. It is written with a capital letter $X$, $Y$. Examples: when a coin is tossed twice, $X$ = number of heads takes the values 0, 1, 2; the height of a student; the number of defective bulbs in a box."
+  },
+  {
+   "ex": "2",
+   "q": "2.5",
+   "part": null,
+   "answer": "A discrete random variable takes a finite or countable number of separate values, usually found by counting (the number of heads in 3 tosses, the number of students in a class). A continuous random variable can take any value in an interval, usually found by measuring (height, weight, time, temperature)."
+  },
+  {
+   "ex": "2",
+   "q": "2.7",
+   "part": null,
+   "answer": "A probability distribution is a table, formula or graph that gives every value of a random variable with its probability. For a discrete variable the probability function (mass function) is $p(x) = P(X = x)$; for a continuous variable the probability density function $f(x)$ gives probabilities as areas, $P(a < X < b) = \\int_a^b f(x)\\,dx$. The two basic properties: (1) $p(x) \\geq 0$ (and $f(x) \\geq 0$) for all $x$; (2) $\\sum p(x) = 1$ (and $\\int f(x)\\,dx = 1$ over the whole range)."
+  },
+  {
+   "ex": "2",
+   "q": "2.15",
+   "part": "(b)",
+   "answer": "(a) The probability density function $f(x)$ of a continuous random variable gives probabilities as areas under its curve, $P(a < X < b) = \\int_a^b f(x)\\,dx$. Its properties: $f(x) \\geq 0$ for all $x$ and $\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1$. (b) (i) $\\int_0^1 Ax^2\\,dx = \\dfrac{A}{3} = 1$, so $A = 3$. (ii) $P(X \\leq 0.5) = \\int_0^{0.5} 3x^2\\,dx = (0.5)^3 = 0.125$. (iii) $P(0.2 < X < 0.3) = 0.3^3 - 0.2^3 = 0.027 - 0.008 = 0.019$."
+  },
+  {
+   "ex": "2",
+   "q": "2.16",
+   "part": null,
+   "answer": "Mathematical expectation is the mean value of a random variable, the average obtained in the long run: $E(X) = \\sum x\\,p(x)$ for a discrete variable and $E(X) = \\int x f(x)\\,dx$ for a continuous one; more generally $E[g(X)] = \\sum g(x)\\,p(x)$. Properties: $E(c) = c$; $E(cX) = c\\,E(X)$; $E(aX + b) = a\\,E(X) + b$; $E(X + Y) = E(X) + E(Y)$; $E(XY) = E(X)\\,E(Y)$ if $X$ and $Y$ are independent; $Var(X) = E(X^2) - [E(X)]^2$."
+  },
+  {
+   "ex": "3",
+   "q": "3.4",
+   "part": null,
+   "answer": "A random variable has a discrete uniform distribution if it takes $N$ values $x_1, x_2, \\ldots, x_N$, each with the same probability: $p(x) = \\dfrac{1}{N}$. For the values $1, 2, \\ldots, N$ the mean is $\\dfrac{N+1}{2}$ and the variance is $\\dfrac{N^2 - 1}{12}$. Example: the number on a fair die, $p(x) = \\dfrac{1}{6}$, mean $3.5$."
+  },
+  {
+   "ex": "3",
+   "q": "3.5",
+   "part": null,
+   "answer": "Random digits are the digits 0 to 9 chosen so that each digit has the same chance, $\\dfrac{1}{10}$, at every place, independently of the others. Random numbers are numbers formed by grouping random digits. A random number generator is a device or computer program that produces such digits or numbers. A random number table is a table in which random digits are printed in rows and columns; it is used to select a random sample."
+  },
+  {
+   "ex": "3",
+   "q": "3.6",
+   "part": null,
+   "answer": "Number the 206 colleges 001 to 206 (three digits). Start at a randomly chosen place in the random number table and read three-digit numbers one after another (along a row or column). Ignore a number larger than 206, 000 and any number that has already been drawn. Continue until 10 different numbers between 001 and 206 have been obtained; the colleges with these numbers form the sample."
+  },
+  {
+   "ex": "3",
+   "q": "3.7",
+   "part": null,
+   "answer": "(i) Bernoulli experiment: an experiment with a single trial that has only two possible outcomes, success and failure, with $P(\\text{success}) = p$. (ii) Bernoulli random variable: $X = 1$ for a success and $X = 0$ for a failure, with $P(X = 1) = p$ and $P(X = 0) = q = 1 - p$. (iii) Binomial experiment: $n$ independent repetitions of a Bernoulli trial, with $n$ fixed, two outcomes in each trial and the same $p$ in every trial. (iv) Binomial random variable: the number of successes $X$ in the $n$ trials, with values $0, 1, \\ldots, n$."
+  },
+  {
+   "ex": "3",
+   "q": "3.8",
+   "part": null,
+   "answer": "Bernoulli distribution: $p(x) = p^x q^{1-x}$, $x = 0, 1$, where $q = 1 - p$. Mean $E(X) = 0 \\cdot q + 1 \\cdot p = p$. $E(X^2) = 0^2 \\cdot q + 1^2 \\cdot p = p$, so the variance is $E(X^2) - [E(X)]^2 = p - p^2 = pq$ and the standard deviation is $\\sqrt{pq}$."
+  },
+  {
+   "ex": "3",
+   "q": "3.9",
+   "part": "(ii)",
+   "answer": "(i) A binomial experiment consists of $n$ identical trials; each trial has only two outcomes (success or failure); the trials are independent; and the probability of success $p$ is the same in every trial. (ii) Mean $= np$ and variance $= npq$ with $q = 1 - p$.",
+   "why": "$X$ is the sum of $n$ independent Bernoulli variables, each with mean $p$ and variance $pq$, so $E(X) = np$ and $Var(X) = npq$."
+  },
+  {
+   "ex": "3",
+   "q": "3.18",
+   "part": "(b)",
+   "answer": "(a) A binomial distribution is the distribution of the number of successes $X$ in $n$ independent trials with constant probability of success $p$: $P(X = x) = {}^nC_x\\,p^x q^{n-x}$, $x = 0, 1, \\ldots, n$. It arises whenever an experiment with two outcomes is repeated $n$ times under the same conditions, e.g. the number of heads in $n$ tosses of a coin or of defective items in a sample. (b) Mean $= np$ and standard deviation $= \\sqrt{npq}$.",
+   "why": "$E(X) = \\sum x\\,{}^nC_x p^x q^{n-x} = np \\sum {}^{n-1}C_{x-1} p^{x-1} q^{n-x} = np(p+q)^{n-1} = np$. In the same way $E[X(X-1)] = n(n-1)p^2$, so $E(X^2) = n(n-1)p^2 + np$ and $Var(X) = E(X^2) - (np)^2 = np - np^2 = npq$."
+  },
+  {
+   "ex": "3",
+   "q": "3.23",
+   "part": "(b)",
+   "answer": "(a) $E(3X - 2) = 3\\,E(X) - 2 = 3(10 \\times 0.6) - 2 = 16$. (b) $P(X \\leq 5) = 0.9576$ (with $n = 9$, $p = \\dfrac{1}{3}$).",
+   "why": "(a) For the binomial, $E(X) = np = 10(0.6) = 6$. (b) $np = 3$ and $npq = 2$ give $q = \\dfrac{2}{3}$, $p = \\dfrac{1}{3}$ and $n = 9$. $P(X \\leq 5) = \\sum_{x=0}^{5} {}^9C_x \\left(\\dfrac{1}{3}\\right)^x \\left(\\dfrac{2}{3}\\right)^{9-x} = 0.9576$."
+  },
+  {
+   "ex": "3",
+   "q": "3.28",
+   "part": null,
+   "answer": "Hypergeometric experiment: a sample of $n$ items is drawn at random without replacement from a finite population of $N$ items, of which $k$ are of one kind (successes) and $N - k$ of the other kind. Hypergeometric random variable: $X$ = the number of successes in the sample. Hypergeometric distribution: $P(X = x) = \\dfrac{{}^kC_x\\;{}^{N-k}C_{n-x}}{{}^NC_n}$, with mean $\\dfrac{nk}{N}$."
+  },
+  {
+   "ex": "4",
+   "q": "4.4",
+   "part": "(b)",
+   "answer": "(a) Continuous uniform distribution: a continuous random variable $X$ has the uniform distribution on $[a, b]$ if $f(x) = \\dfrac{1}{b-a}$ for $a \\leq x \\leq b$ and $f(x) = 0$ elsewhere; every value in the interval is equally likely. (b) Mean $= \\dfrac{a+b}{2}$ and variance $= \\dfrac{(b-a)^2}{12}$.",
+   "why": "$E(X) = \\int_a^b \\dfrac{x}{b-a}\\,dx = \\dfrac{b^2 - a^2}{2(b-a)} = \\dfrac{a+b}{2}$; $E(X^2) = \\dfrac{b^3 - a^3}{3(b-a)} = \\dfrac{a^2 + ab + b^2}{3}$; so $Var(X) = \\dfrac{a^2 + ab + b^2}{3} - \\dfrac{(a+b)^2}{4} = \\dfrac{(b-a)^2}{12}$."
+  },
+  {
+   "ex": "4",
+   "q": "4.5",
+   "part": null,
+   "answer": "The normal distribution is a continuous, symmetric, bell-shaped distribution with density $f(x) = \\dfrac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}$, $-\\infty < x < \\infty$, with mean $\\mu$ and standard deviation $\\sigma$. Importance: many measurements (heights, weights, marks, errors of measurement) follow it closely; the binomial and other distributions are approximated by it when $n$ is large; by the central limit theorem the distribution of sample means is nearly normal for large samples; and it is the basis of estimation and tests of hypotheses."
+  },
+  {
+   "ex": "4",
+   "q": "4.6",
+   "part": null,
+   "answer": "The normal distribution of a variable $X$ with mean $\\mu$ and variance $\\sigma^2$ has the density $f(x) = \\dfrac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}$. Properties: the curve is bell-shaped and symmetrical about $x = \\mu$; mean, median and mode are equal; the total area under the curve is 1; about 68.27% of the area lies within $\\mu \\pm \\sigma$, 95.45% within $\\mu \\pm 2\\sigma$ and 99.73% within $\\mu \\pm 3\\sigma$; the curve never touches the x-axis; the points of inflection are at $\\mu \\pm \\sigma$; skewness is 0."
+  },
+  {
+   "ex": "4",
+   "q": "4.7",
+   "part": null,
+   "answer": "A standard normal variable is $Z = \\dfrac{X - \\mu}{\\sigma}$, which has mean 0 and variance 1; its distribution, the standard normal distribution, has density $f(z) = \\dfrac{1}{\\sqrt{2\\pi}}\\,e^{-z^2/2}$. Role: any normal probability can be found by changing $X$ into $Z$ and reading the area from the single table of the standard normal distribution."
+  },
+  {
+   "ex": "4",
+   "q": "4.29",
+   "part": null,
+   "answer": "Mean = 11.02, standard deviation = 0.433 (N = 1000, class width h = 0.3). Expected normal frequencies by the ordinate method: 9.8: 5.2, 10.1: 28.9, 10.4: 98.9, 10.7: 209.9, 11: 275.8, 11.3: 224.5, 11.6: 113.1, 11.9: 35.3, 12.2: 6.8 (observed 4, 30, 106, 206, 272, 219, 120, 37, 6).",
+   "why": "Ordinate method: for each value $x$ take $z = \\dfrac{x - \\bar{x}}{\\sigma}$, read the ordinate $y = \\dfrac{1}{\\sqrt{2\\pi}}e^{-z^2/2}$ from the table and compute the expected frequency $\\dfrac{N h}{\\sigma}\\,y$. With $\\bar{x} = 11.02$, $\\sigma = 0.433$, $\\dfrac{Nh}{\\sigma} = 692.2$."
+  },
+  {
+   "ex": "4",
+   "q": "4.30",
+   "part": null,
+   "answer": "Class marks 42, 47, 52, 57, 62, 67, 72: mean = 56.95, standard deviation = 7.21 (N = 200, class width h = 5). Expected normal frequencies by the ordinate method: 6.4, 21.4, 43.7, 55.3, 43.3, 20.9, 6.3 (observed 9, 20, 45, 55, 43, 17, 11).",
+   "why": "For each class mark $x$ find $z = \\dfrac{x - \\bar{x}}{\\sigma}$ and the ordinate $y$ of the standard normal curve; the expected frequency is $\\dfrac{N h}{\\sigma}\\,y$ with $\\dfrac{Nh}{\\sigma} = 138.68$."
+  },
+  {
+   "ex": "5",
+   "q": "5.4",
+   "part": null,
+   "answer": "Population: the whole collection of individuals, items or measurements under study. Sample: a part of the population that is selected and studied. Sampling: the process of selecting a sample from the population."
+  },
+  {
+   "ex": "5",
+   "q": "5.5",
+   "part": null,
+   "answer": "Sampling is needed because complete enumeration (a census) takes much more time, money and labour; for a very large or infinite population it is impossible; when testing destroys the item (testing bulbs, crash tests, blood samples) only a sample can be tested; a small, well-trained team can work more carefully, so the results can be as accurate as a census and are available sooner."
+  },
+  {
+   "ex": "5",
+   "q": "5.6",
+   "part": "(i)",
+   "answer": "Sampling frame: a complete list (or map) of all the units of the population from which the sample is drawn, for example the register of all students of a college. A good frame has no unit missing or repeated."
+  },
+  {
+   "ex": "5",
+   "q": "5.6",
+   "part": "(ii)",
+   "answer": "Sample design: the plan for selecting the sample from the frame: the method of selection (simple random, stratified, systematic, cluster ...), the size of the sample and how the estimates will be made, so that the sample represents the population."
+  },
+  {
+   "ex": "5",
+   "q": "5.6",
+   "part": "(iii)",
+   "answer": "Survey: collecting information about the units of a population, either from all of them (census) or from a sample (sample survey), by a questionnaire, interview or observation."
+  },
+  {
+   "ex": "5",
+   "q": "5.7",
+   "part": "(i)",
+   "answer": "A finite population has a countable number $N$ of units (the students of a school). An infinite population has an unlimited number of units that cannot be counted (all possible tosses of a coin)."
+  },
+  {
+   "ex": "5",
+   "q": "5.7",
+   "part": "(ii)",
+   "answer": "Sampling with replacement: a unit that is drawn is put back before the next draw, so the population stays the same, the draws are independent and a unit can be drawn more than once ($N^n$ samples of size $n$). Sampling without replacement: a drawn unit is not put back, so no unit appears twice in the sample (${}^NC_n$ samples)."
+  },
+  {
+   "ex": "5",
+   "q": "5.7",
+   "part": "(iii)",
+   "answer": "Sampling error: the difference between a sample statistic and the population parameter that arises because only a part of the population is examined; it becomes smaller as the sample size increases. Non-sampling errors: errors that are not caused by sampling but by faulty measurement, wrong recording, non-response, a defective questionnaire or processing mistakes; they occur in a census as well."
+  },
+  {
+   "ex": "5",
+   "q": "5.8",
+   "part": null,
+   "answer": "$\\mu$: population mean; $\\bar{X}$: sample mean; $\\sigma^2$: population variance; $S^2$: sample variance; $p$: population proportion; $\\hat{p}$: sample proportion."
+  },
+  {
+   "ex": "5",
+   "q": "5.9",
+   "part": "(b)",
+   "answer": "(a) The main objectives of sampling: to estimate population parameters (mean, proportion, variance) from sample statistics; to test statements (hypotheses) about the population; and to obtain this information reliably at less cost and time than a complete count. (b) Parameter: a numerical measure of a population ($\\mu$, $\\sigma^2$, $P$). Statistic: a numerical measure calculated from a sample ($\\bar{X}$, $S^2$, $\\hat{p}$). Estimator: a statistic (a formula or rule) used to estimate a parameter, e.g. $\\bar{X}$ is an estimator of $\\mu$; the value it takes for a particular sample is an estimate."
+  },
+  {
+   "ex": "5",
+   "q": "5.10",
+   "part": null,
+   "answer": "Sampling error: the difference between the statistic and the parameter caused by studying only a sample. Non-sampling errors: mistakes in planning, an incomplete frame, non-response, wrong answers or measurements, interviewer bias, and errors in recording, editing and tabulating. Reducing them: sampling error is reduced by a larger sample and a better design (e.g. stratification); non-sampling errors are reduced by a good frame and questionnaire, trained investigators, a pilot test, follow-up of non-respondents and careful checking of the data."
+  },
+  {
+   "ex": "5",
+   "q": "5.11",
+   "part": null,
+   "answer": "Probability sampling: every unit has a known, non-zero chance of selection and the sample is drawn by a random method (simple random, stratified, systematic, cluster sampling); sampling error can be measured and the estimates are unbiased. Non-probability sampling: units are chosen by the judgement or convenience of the investigator (judgement, quota, convenience sampling); the chances of selection are unknown and the sampling error cannot be measured."
+  },
+  {
+   "ex": "5",
+   "q": "5.12",
+   "part": "(i)",
+   "answer": "Simple random sampling: the sample is drawn so that every unit of the population, and so every possible sample of size $n$, has the same chance of being selected. It is done by a lottery (goldfish bowl) method or with a random number table."
+  },
+  {
+   "ex": "5",
+   "q": "5.12",
+   "part": "(ii)",
+   "answer": "Stratified random sampling: the population is divided into non-overlapping groups (strata) of similar units; a simple random sample is drawn from each stratum, for example in proportion to its size ($n_i = n\\,\\dfrac{N_i}{N}$), and the samples are combined."
+  },
+  {
+   "ex": "5",
+   "q": "5.12",
+   "part": "(iii)",
+   "answer": "Systematic random sampling: the $N$ units are listed and numbered; the sampling interval $k = \\dfrac{N}{n}$ is found; one unit is chosen at random from the first $k$ units, say the $r$-th, and then every $k$-th unit after it ($r, r + k, r + 2k, \\ldots$) is selected."
+  },
+  {
+   "ex": "5",
+   "q": "5.13",
+   "part": "(i)",
+   "answer": "A simple random sample is a sample in which every unit of the population has an equal chance of being selected. Goldfish bowl method: write the numbers or names of all units on identical slips, mix them well in a bowl or box, and draw the required number of slips one by one without looking, without replacement."
+  },
+  {
+   "ex": "5",
+   "q": "5.13",
+   "part": "(ii)",
+   "answer": "Random number table method: number the units $1, \\ldots, N$ using as many digits as $N$ has; begin at a random place in the table and read numbers of that many digits; ignore numbers larger than $N$ and repeated numbers; continue until $n$ different numbers are obtained. The units with those numbers form the sample."
+  },
+  {
+   "ex": "5",
+   "q": "5.14",
+   "part": "(i)",
+   "answer": "Random sample: a sample in which the units are selected by chance, so that every unit of the population has a known chance of being included."
+  },
+  {
+   "ex": "5",
+   "q": "5.14",
+   "part": "(ii)",
+   "answer": "Non-random sample: a sample in which the units are chosen deliberately by the investigator (by judgement, quota or convenience) and not by chance."
+  },
+  {
+   "ex": "5",
+   "q": "5.14",
+   "part": "(iii)",
+   "answer": "Stratified random sample: the population is divided into homogeneous groups (strata) and a random sample is taken from each stratum; the parts are put together to form the sample."
+  },
+  {
+   "ex": "5",
+   "q": "5.14",
+   "part": "(iv)",
+   "answer": "Systematic random sample: a sample in which, after a random start among the first $k$ units, every $k$-th unit of the ordered list of the population is taken, $k = \\dfrac{N}{n}$."
+  },
+  {
+   "ex": "5",
+   "q": "5.15",
+   "part": null,
+   "answer": "Number the 200 cities 001 to 200. Start at a random place in the random number table and read three-digit numbers; ignore numbers greater than 200, 000 and numbers already drawn; continue until 10 different numbers between 001 and 200 are obtained. The cities with these numbers are the sample."
+  },
+  {
+   "ex": "5",
+   "q": "5.18",
+   "part": "(i)",
+   "answer": "Sampling distribution: the probability distribution of a statistic (for example $\\bar{X}$) calculated from all possible samples of the same size $n$ taken from a population."
+  },
+  {
+   "ex": "5",
+   "q": "5.18",
+   "part": "(ii)",
+   "answer": "Standard error: the standard deviation of the sampling distribution of a statistic. For the sample mean, $S.E.(\\bar{X}) = \\dfrac{\\sigma}{\\sqrt{n}}$."
+  },
+  {
+   "ex": "5",
+   "q": "5.18",
+   "part": "(iii)",
+   "answer": "Finite population correction factor: the factor $\\sqrt{\\dfrac{N - n}{N - 1}}$ by which the standard error is multiplied when sampling is done without replacement from a finite population of size $N$: $\\sigma_{\\bar{x}} = \\dfrac{\\sigma}{\\sqrt{n}}\\sqrt{\\dfrac{N-n}{N-1}}$. It is nearly 1 when $n$ is small compared with $N$."
+  },
+  {
+   "ex": "5",
+   "q": "5.25",
+   "part": null,
+   "answer": "The sampling distribution of the difference between two sample means is the distribution of $\\bar{X}_1 - \\bar{X}_2$ over all pairs of independent samples of sizes $n_1$ and $n_2$ from two populations. Properties: (1) its mean is $\\mu_{\\bar{x}_1 - \\bar{x}_2} = \\mu_1 - \\mu_2$; (2) its variance is $\\sigma^2_{\\bar{x}_1 - \\bar{x}_2} = \\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2}$, so the standard error is $\\sqrt{\\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2}}$ (for sampling without replacement each term is multiplied by $\\dfrac{N-n}{N-1}$); (3) it is normal if the populations are normal, and nearly normal for large samples."
+  },
+  {
+   "ex": "5",
+   "q": "5.26",
+   "part": "(i)",
+   "answer": "Sample means of the first population ($n_1 = 2$, 16 samples): -2, -1, 0, 1, 2, 3, 4 with 1, 2, 3, 4, 3, 2, 1 samples; of the second population (4 samples): -1, 0, 0, 1. The 16 × 4 = 64 possible differences $\\bar{X}_1 - \\bar{X}_2$ take the values -3, -2, -1, 0, 1, 2, 3, 4, 5.",
+   "why": "Take every sample mean of the first population with every sample mean of the second: for example $-2 - (-1) = -1$, $-2 - 0 = -2$, $4 - (-1) = 5$."
+  },
+  {
+   "ex": "5",
+   "q": "5.26",
+   "part": "(ii)",
+   "answer": "Sampling distribution of $\\bar{X}_1 - \\bar{X}_2$ (64 differences): value -3, -2, -1, 0, 1, 2, 3, 4, 5 with frequency 1, 4, 8, 12, 14, 12, 8, 4, 1, i.e. probabilities 1/64, 4/64, 8/64, 12/64, 14/64, 12/64, 8/64, 4/64, 1/64."
+  },
+  {
+   "ex": "5",
+   "q": "5.26",
+   "part": "(iii)",
+   "answer": "$\\mu_1 = 1$, $\\mu_2 = 0$, so $\\mu_1 - \\mu_2 = 1$, and the mean of the sampling distribution is $\\sum f\\,x / 64 = 1$: verified. $\\sigma_1^2 = 5$ and $\\sigma_2^2 = 1$, so $\\sqrt{\\dfrac{5}{2} + \\dfrac{1}{2}} = \\sqrt{3} = 1.732$, and the standard deviation of the sampling distribution is $\\sqrt{3} = 1.732$: verified.",
+   "why": "The variance of the 64 differences about their mean 1 is $\\dfrac{1}{64}\\sum f\\,(x - 1)^2 = 3$."
+  },
+  {
+   "ex": "5",
+   "q": "5.27",
+   "part": "(i)",
+   "answer": "Samples of the first population: (3, 6), (3, 9), (6, 9) with means 4.5, 6, 7.5; of the second population: (2, 4), (2, 6), (4, 6) with means 3, 4, 5. The 3 × 3 = 9 differences of the sample means are -0.5, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4.5."
+  },
+  {
+   "ex": "5",
+   "q": "5.27",
+   "part": "(ii)",
+   "answer": "Sampling distribution of $\\bar{X}_1 - \\bar{X}_2$: the nine values -0.5, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4.5 each with probability 1/9. Mean = 2, variance = 13/6 = 2.1667. Theory: $\\mu_1 - \\mu_2 = 6 - 4 = 2$ and $\\sigma^2_{\\bar{x}_1 - \\bar{x}_2} = \\dfrac{6}{2}\\cdot\\dfrac{1}{2} + \\dfrac{8/3}{2}\\cdot\\dfrac{1}{2} = 1.5 + 0.6667 = 2.1667$: verified.",
+   "why": "$\\sigma_1^2 = \\dfrac{(3-6)^2 + 0 + (9-6)^2}{3} = 6$, $\\sigma_2^2 = \\dfrac{(2-4)^2 + 0 + (6-4)^2}{3} = \\dfrac{8}{3}$; each variance is multiplied by $\\dfrac{N - n}{N - 1} = \\dfrac{1}{2}$."
+  },
+  {
+   "ex": "5",
+   "q": "5.28",
+   "part": null,
+   "answer": "Proportion: the fraction of units with a given attribute; population proportion $P = \\dfrac{X}{N}$, sample proportion $\\hat{p} = \\dfrac{x}{n}$. The sampling distribution of $\\hat{p}$ is the distribution of $\\hat{p}$ over all possible samples of size $n$. Properties: (1) its mean is $\\mu_{\\hat{p}} = P$; (2) its variance is $\\sigma^2_{\\hat{p}} = \\dfrac{PQ}{n}$ (with replacement), or $\\dfrac{PQ}{n}\\cdot\\dfrac{N-n}{N-1}$ (without replacement from a finite population), with $Q = 1 - P$; (3) for a large $n$ it is approximately normal."
+  },
+  {
+   "ex": "5",
+   "q": "5.31",
+   "part": "(i)",
+   "answer": "First population (4, 6, 9): the samples (4, 6), (4, 9), (6, 9) give $\\hat{p}_1 = 1, \\dfrac{1}{2}, \\dfrac{1}{2}$, so $p_1 = \\dfrac{2}{3}$. Second population (2, 2, 5): $\\hat{p}_2 = 1, \\dfrac{1}{2}, \\dfrac{1}{2}$ and $p_2 = \\dfrac{2}{3}$. The 9 differences $\\hat{p}_1 - \\hat{p}_2$ are $-\\dfrac{1}{2}$ (2 times), 0 (5 times), $\\dfrac{1}{2}$ (2 times). Mean $E(\\hat{p}_1 - \\hat{p}_2) = 0 = p_1 - p_2 = \\dfrac{2}{3} - \\dfrac{2}{3}$: verified."
+  },
+  {
+   "ex": "5",
+   "q": "5.31",
+   "part": "(ii)",
+   "answer": "Variance of the 9 differences $= \\dfrac{2(\\frac{1}{4}) + 0 + 2(\\frac{1}{4})}{9} = \\dfrac{1}{9}$. Formula: $\\dfrac{p_1 q_1}{n_1}\\cdot\\dfrac{N_1 - n_1}{N_1 - 1} = \\dfrac{\\frac{2}{3}\\cdot\\frac{1}{3}}{2}\\cdot\\dfrac{1}{2} = \\dfrac{1}{18}$ and the same for the second population, so the sum is $\\dfrac{1}{18} + \\dfrac{1}{18} = \\dfrac{1}{9}$: verified."
+  },
+  {
+   "ex": "6",
+   "q": "6.4",
+   "part": null,
+   "answer": "Estimation is the process of using sample data to find a value (or a range of values) for an unknown population parameter. An estimator is the rule or formula (a statistic) used to estimate the parameter, e.g. $\\bar{X}$ for $\\mu$; an estimate is the numerical value that the estimator takes for a particular sample, e.g. $\\bar{x} = 52$."
+  },
+  {
+   "ex": "6",
+   "q": "6.5",
+   "part": "(i)",
+   "answer": "Statistical inference: the process of drawing conclusions about a population from sample information. It has two branches: estimation of parameters and testing of hypotheses."
+  },
+  {
+   "ex": "6",
+   "q": "6.5",
+   "part": "(ii)",
+   "answer": "Types of estimates: a point estimate is a single value (e.g. $\\bar{x} = 52$) used to estimate the parameter; an interval estimate is a range of values (e.g. $48 < \\mu < 56$) within which the parameter is expected to lie with a stated confidence."
+  },
+  {
+   "ex": "6",
+   "q": "6.6",
+   "part": "(i)",
+   "answer": "A point estimate gives one number for the parameter and does not show how reliable it is. An interval estimate gives two limits between which the parameter lies with a stated probability (the confidence level)."
+  },
+  {
+   "ex": "6",
+   "q": "6.6",
+   "part": "(ii)",
+   "answer": "An estimator is the formula or rule (a statistic, which is a random variable) used for estimation. An estimate is the value of the estimator calculated from one particular sample."
+  },
+  {
+   "ex": "6",
+   "q": "6.7",
+   "part": "(i)",
+   "answer": "Unbiasedness: an estimator $T$ is an unbiased estimator of a parameter $\\theta$ if its expected value equals the parameter, $E(T) = \\theta$. Examples: $\\bar{X}$ is unbiased for $\\mu$, $S^2 = \\dfrac{\\sum (X - \\bar{X})^2}{n - 1}$ is unbiased for $\\sigma^2$, and the sample proportion $\\hat{p}$ is unbiased for $P$."
+  },
+  {
+   "ex": "6",
+   "q": "6.7",
+   "part": "(ii)",
+   "answer": "Efficiency: of two unbiased estimators of the same parameter, the one with the smaller variance is more efficient, because its values cluster more closely around the parameter. Example: for a normal population the sample mean has a smaller variance than the sample median, so the mean is the more efficient estimator of $\\mu$."
+  },
+  {
+   "ex": "6",
+   "q": "6.8",
+   "part": null,
+   "answer": "Bias is the difference between the expected value of an estimator and the parameter it estimates: $\\text{Bias} = E(T) - \\theta$. Factors that introduce bias: a non-random or unrepresentative sample, an incomplete or faulty frame, non-response, wrong measurement or faulty instruments, the personal bias of the investigator, and the use of a biased formula (for example dividing by $n$ instead of $n - 1$ for the sample variance)."
+  },
+  {
+   "ex": "6",
+   "q": "6.12",
+   "part": null,
+   "answer": "Confidence interval estimation gives an interval $(L, U)$, calculated from the sample, which contains the unknown parameter with a stated probability $1 - \\alpha$ (the confidence level, e.g. 95%). For the mean when $\\sigma$ is known: $\\bar{x} \\pm Z_{\\alpha/2}\\,\\dfrac{\\sigma}{\\sqrt{n}}$. It means that in repeated sampling $(1 - \\alpha) \\times 100\\%$ of such intervals contain the true parameter."
+  },
+  {
+   "ex": "6",
+   "q": "6.13",
+   "part": "(i)",
+   "answer": "Confidence limits: the lower limit $L$ and the upper limit $U$, the end points of a confidence interval."
+  },
+  {
+   "ex": "6",
+   "q": "6.13",
+   "part": "(ii)",
+   "answer": "Confidence coefficient: the probability $1 - \\alpha$ that the confidence interval contains the parameter, e.g. 0.95 or 0.99."
+  },
+  {
+   "ex": "6",
+   "q": "6.13",
+   "part": "(iii)",
+   "answer": "Level of significance $\\alpha$: the probability of the error that is accepted, i.e. of rejecting a true null hypothesis, or of the interval failing to contain the parameter; usually 0.05 or 0.01 ($\\alpha = 1 -$ confidence coefficient)."
+  },
+  {
+   "ex": "6",
+   "q": "6.13",
+   "part": "(iv)",
+   "answer": "Precision of a confidence interval: its width $U - L$ (half of it is the margin of error). A narrower interval is more precise; the width decreases as the sample size increases and as the confidence level is lowered."
+  },
+  {
+   "ex": "6",
+   "q": "6.22",
+   "part": null,
+   "answer": "The t-distribution is used instead of the Z-distribution when the population is (approximately) normal, the population standard deviation $\\sigma$ is unknown and has to be estimated by the sample standard deviation $S$, and the sample is small ($n < 30$); the degrees of freedom are $n - 1$ for one mean and $n_1 + n_2 - 2$ for the difference of two means with equal variances. If $\\sigma$ is known, or the sample is large ($n \\geq 30$), Z is used."
+  },
+  {
+   "ex": "7",
+   "q": "7.4",
+   "part": null,
+   "answer": "Hypothesis: a statement or assumption about a population that is to be checked. Statistical hypothesis: a statement about a population parameter or distribution that can be tested with sample data, e.g. $\\mu = 50$. Testing of hypothesis: the procedure by which sample information is used to decide whether the hypothesis should be accepted or rejected."
+  },
+  {
+   "ex": "7",
+   "q": "7.5",
+   "part": null,
+   "answer": "(i) Hypothesis testing: deciding, from sample data, whether a statement about a population is supported or must be rejected. (ii) Estimation: using sample data to find a value or an interval for an unknown parameter. Steps: (1) state the null hypothesis $H_0$ and the alternative hypothesis $H_1$; (2) choose the level of significance $\\alpha$; (3) select the test statistic ($Z$, $t$, $\\chi^2$, $F$); (4) find the critical region from the table; (5) compute the value of the test statistic from the sample; (6) reject $H_0$ if the value falls in the critical region, otherwise accept (do not reject) it; (7) state the conclusion in words."
+  },
+  {
+   "ex": "7",
+   "q": "7.6",
+   "part": "(i)",
+   "answer": "Null hypothesis $H_0$: the hypothesis that is tested, stating that there is no difference or effect (e.g. $H_0: \\mu = \\mu_0$). Alternative hypothesis $H_1$: the statement that is accepted when $H_0$ is rejected ($\\mu \\neq \\mu_0$, $\\mu > \\mu_0$ or $\\mu < \\mu_0$)."
+  },
+  {
+   "ex": "7",
+   "q": "7.6",
+   "part": "(ii)",
+   "answer": "A simple hypothesis specifies the population distribution completely (all its parameters), e.g. $\\mu = 50$ when $\\sigma$ is known. A composite hypothesis does not specify it completely, e.g. $\\mu > 50$ or $\\mu \\neq 50$."
+  },
+  {
+   "ex": "7",
+   "q": "7.6",
+   "part": "(iii)",
+   "answer": "Type-I error: rejecting a null hypothesis that is true; its probability is $\\alpha$. Type-II error: accepting a null hypothesis that is false; its probability is $\\beta$."
+  },
+  {
+   "ex": "7",
+   "q": "7.6",
+   "part": "(iv)",
+   "answer": "Acceptance region: the set of values of the test statistic for which $H_0$ is accepted. Rejection (critical) region: the set of values for which $H_0$ is rejected; its area is $\\alpha$ and it is separated from the acceptance region by the critical value(s)."
+  },
+  {
+   "ex": "7",
+   "q": "7.7",
+   "part": "(a)",
+   "answer": "Level of significance: the largest probability of a Type-I error that the investigator is willing to accept, denoted $\\alpha$ (commonly 0.05 or 0.01). It fixes the size of the critical region."
+  },
+  {
+   "ex": "7",
+   "q": "7.7",
+   "part": "(b)",
+   "answer": "Test statistic: a quantity calculated from the sample data (such as $Z$, $t$, $\\chi^2$ or $F$) whose value is used to decide whether $H_0$ is rejected. Test of significance: the procedure that compares the value of the test statistic with the critical value(s) to decide whether the observed difference is real or due to chance."
+  },
+  {
+   "ex": "7",
+   "q": "7.7",
+   "part": "(c)",
+   "answer": "Small sample: a sample of fewer than 30 observations ($n < 30$), for which the t-distribution is used when $\\sigma$ is unknown. Large sample: a sample of 30 or more observations ($n \\geq 30$), for which the normal (Z) distribution is used."
+  },
+  {
+   "ex": "7",
+   "q": "7.8",
+   "part": null,
+   "answer": "A one-sided (one-tailed) test has a critical region in one tail only: $H_1: \\mu > \\mu_0$ (right-tailed, reject if $Z \\geq Z_\\alpha$) or $H_1: \\mu < \\mu_0$ (left-tailed, reject if $Z \\leq -Z_\\alpha$). A two-sided (two-tailed) test has $H_1: \\mu \\neq \\mu_0$ and the critical region is divided between both tails, $\\dfrac{\\alpha}{2}$ in each (reject if $|Z| \\geq Z_{\\alpha/2}$). In the diagram of the normal curve the shaded tail area is $\\alpha$ for a one-sided test and two shaded areas of $\\dfrac{\\alpha}{2}$ for a two-sided test; for $\\alpha = 0.05$ the critical values are $\\pm 1.96$ (two-sided) and $1.645$ (one-sided)."
+  },
+  {
+   "ex": "7",
+   "q": "7.9",
+   "part": null,
+   "answer": "Steps: (1) $H_0: \\mu = \\mu_0$. (2) $H_1: \\mu \\neq \\mu_0$ (or $\\mu > \\mu_0$, $\\mu < \\mu_0$). (3) Choose the level of significance $\\alpha$. (4) Test statistic $Z = \\dfrac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}$. (5) Critical region: $|Z| \\geq Z_{\\alpha/2}$ for a two-sided test; $Z \\geq Z_\\alpha$ or $Z \\leq -Z_\\alpha$ for a one-sided test. (6) Calculate $Z$ from the sample. (7) Reject $H_0$ if $Z$ falls in the critical region, otherwise accept it, and state the conclusion."
+  },
+  {
+   "ex": "7",
+   "q": "7.15",
+   "part": null,
+   "answer": "Steps (population normal, $\\sigma$ unknown, $n$ small): (1) $H_0: \\mu = \\mu_0$. (2) $H_1: \\mu \\neq \\mu_0$ (or $>$, $<$). (3) Choose $\\alpha$. (4) Test statistic $t = \\dfrac{\\bar{x} - \\mu_0}{S/\\sqrt{n}}$ with $S = \\sqrt{\\dfrac{\\sum (x - \\bar{x})^2}{n - 1}}$ and $n - 1$ degrees of freedom. (5) Critical region from the t-table: $|t| \\geq t_{\\alpha/2,\\,n-1}$ (two-sided) or $t \\geq t_{\\alpha,\\,n-1}$ / $t \\leq -t_{\\alpha,\\,n-1}$ (one-sided). (6) Calculate $t$. (7) Reject $H_0$ if $t$ falls in the critical region; otherwise accept it."
+  },
+  {
+   "ex": "7",
+   "q": "7.18",
+   "part": null,
+   "answer": "Steps: (1) $H_0: \\mu_1 = \\mu_2$ (i.e. $\\mu_1 - \\mu_2 = 0$). (2) $H_1: \\mu_1 \\neq \\mu_2$ (or $>$, $<$). (3) Choose $\\alpha$. (4) Test statistic $Z = \\dfrac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2}}}$. (5) Critical region: $|Z| \\geq Z_{\\alpha/2}$ (two-sided) or $Z \\geq Z_\\alpha$ / $Z \\leq -Z_\\alpha$ (one-sided). (6) Calculate $Z$. (7) Reject $H_0$ if $Z$ is in the critical region, otherwise accept it."
+  },
+  {
+   "ex": "7",
+   "q": "7.21",
+   "part": null,
+   "answer": "Steps: (1) $H_0: \\mu_1 = \\mu_2$. (2) $H_1: \\mu_1 \\neq \\mu_2$ (or $>$, $<$). (3) Choose $\\alpha$. (4) Find the pooled variance $S_p^2 = \\dfrac{\\sum (x_1 - \\bar{x}_1)^2 + \\sum (x_2 - \\bar{x}_2)^2}{n_1 + n_2 - 2}$ and the test statistic $t = \\dfrac{\\bar{x}_1 - \\bar{x}_2}{S_p\\sqrt{\\dfrac{1}{n_1} + \\dfrac{1}{n_2}}}$ with $n_1 + n_2 - 2$ degrees of freedom. (5) Critical region from the t-table: $|t| \\geq t_{\\alpha/2,\\,n_1+n_2-2}$ (two-sided). (6) Calculate $t$. (7) Reject $H_0$ if $t$ falls in the critical region, otherwise accept it."
+  },
+  {
+   "ex": "7",
+   "q": "7.24",
+   "part": null,
+   "answer": "Steps: (1) $H_0: P = P_0$. (2) $H_1: P \\neq P_0$ (or $>$, $<$). (3) Choose $\\alpha$. (4) Test statistic $Z = \\dfrac{\\hat{p} - P_0}{\\sqrt{P_0 Q_0 / n}}$ where $\\hat{p} = \\dfrac{x}{n}$ and $Q_0 = 1 - P_0$. (5) Critical region: $|Z| \\geq Z_{\\alpha/2}$ (two-sided) or $Z \\geq Z_\\alpha$ / $Z \\leq -Z_\\alpha$ (one-sided). (6) Calculate $Z$. (7) Reject $H_0$ if $Z$ is in the critical region, otherwise accept it."
+  },
+  {
+   "ex": "7",
+   "q": "7.28",
+   "part": null,
+   "answer": "Steps (large samples): (1) $H_0: P_1 = P_2$. (2) $H_1: P_1 \\neq P_2$ (or $>$, $<$). (3) Choose $\\alpha$. (4) Test statistic $Z = \\dfrac{\\hat{p}_1 - \\hat{p}_2}{\\sqrt{\\hat{p}\\hat{q}\\left(\\dfrac{1}{n_1} + \\dfrac{1}{n_2}\\right)}}$ with the pooled proportion $\\hat{p} = \\dfrac{x_1 + x_2}{n_1 + n_2}$ and $\\hat{q} = 1 - \\hat{p}$. (5) Critical region: $|Z| \\geq Z_{\\alpha/2}$ (two-sided) or $Z \\geq Z_\\alpha$ / $Z \\leq -Z_\\alpha$ (one-sided). (6) Calculate $Z$. (7) Reject $H_0$ if $Z$ is in the critical region, otherwise accept it."
+  },
+  {
+   "ex": "8",
+   "q": "8.4",
+   "part": null,
+   "answer": "Attributes are qualitative characteristics which cannot be measured numerically but can be classified according to their presence or absence, e.g. sex, literacy, religion, colour of eyes. Classification: by dichotomy (two classes, $A$ and not-$A$ written $\\alpha$), by manifold classification (more than two classes), and according to the number of attributes considered at one time as one-way, two-way or three-way classification. Capital letters $A, B, C$ stand for the presence of an attribute and Greek letters $\\alpha, \\beta, \\gamma$ for its absence."
+  },
+  {
+   "ex": "8",
+   "q": "8.5",
+   "part": "(i.)",
+   "answer": "Class symbol: a capital letter ($A$, $B$, ...) or a Greek letter ($\\alpha$, $\\beta$, ...) or a combination of them ($AB$, $A\\beta$) which names a class. Class frequency: the number of observations belonging to a class, written in brackets, e.g. $(A)$, $(AB)$, $(\\alpha\\beta)$."
+  },
+  {
+   "ex": "8",
+   "q": "8.5",
+   "part": "(ii.)",
+   "answer": "Positive classes: classes in which the attribute is present, denoted by capital letters ($A$, $B$, $AB$). Negative classes: classes in which the attribute is absent, denoted by Greek letters ($\\alpha$, $\\beta$, $\\alpha\\beta$)."
+  },
+  {
+   "ex": "8",
+   "q": "8.5",
+   "part": "(iii.)",
+   "answer": "Order of classes: the number of attributes in the class symbol. $N$ (the total) is of order 0, $(A)$ is of the first order, $(AB)$ of the second order, $(ABC)$ of the third order."
+  },
+  {
+   "ex": "8",
+   "q": "8.5",
+   "part": "(iv.)",
+   "answer": "Ultimate class frequencies: the frequencies of the classes of the highest order, which cannot be divided any further, e.g. $(AB)$, $(A\\beta)$, $(\\alpha B)$, $(\\alpha\\beta)$ for two attributes. All other class frequencies can be found from them."
+  },
+  {
+   "ex": "8",
+   "q": "8.6",
+   "part": "(i.)",
+   "answer": "Two-way classification: classifying the observations by two attributes at the same time, e.g. by sex and by literacy, and showing the class frequencies in a two-way table ($2 \\times 2$, or $r \\times c$ with more classes)."
+  },
+  {
+   "ex": "8",
+   "q": "8.6",
+   "part": "(ii.)",
+   "answer": "Association of attributes: two attributes $A$ and $B$ are associated if they occur together more often or less often than they would if they were independent; if they are not associated they are independent."
+  },
+  {
+   "ex": "8",
+   "q": "8.6",
+   "part": "(iii.)",
+   "answer": "Positive association: $A$ and $B$ occur together more often than expected under independence, $(AB) > \\dfrac{(A)(B)}{N}$. Negative association: they occur together less often than expected, $(AB) < \\dfrac{(A)(B)}{N}$."
+  },
+  {
+   "ex": "8",
+   "q": "8.6",
+   "part": "(iv.)",
+   "answer": "Criterion of independence: $A$ and $B$ are independent if $(AB) = \\dfrac{(A)(B)}{N}$ (equivalently, the proportion of $A$ among the $B$s equals its proportion among the $\\beta$s). If $(AB)$ is greater than $\\dfrac{(A)(B)}{N}$ there is positive association, if smaller negative association."
+  },
+  {
+   "ex": "8",
+   "q": "8.6",
+   "part": "(v.)",
+   "answer": "Yule’s coefficient of association: $Q = \\dfrac{(AB)(\\alpha\\beta) - (A\\beta)(\\alpha B)}{(AB)(\\alpha\\beta) + (A\\beta)(\\alpha B)}$. Its value lies between $-1$ and $+1$: $+1$ means complete positive association, $-1$ complete negative association and $0$ independence."
+  },
+  {
+   "ex": "8",
+   "q": "8.7",
+   "part": null,
+   "answer": "Association is used for qualitative attributes (data classified into categories) and is measured by Yule’s coefficient or chi-square; correlation is used for quantitative variables (measured numerically) and is measured by the correlation coefficient $r$."
+  },
+  {
+   "ex": "8",
+   "q": "8.8",
+   "part": "(i.)",
+   "answer": "Two attributes are independent when the presence of one has no effect on the presence of the other: $(AB) = \\dfrac{(A)(B)}{N}$."
+  },
+  {
+   "ex": "8",
+   "q": "8.8",
+   "part": "(ii.)",
+   "answer": "Two attributes are positively associated when they occur together more often than expected under independence: $(AB) > \\dfrac{(A)(B)}{N}$."
+  },
+  {
+   "ex": "8",
+   "q": "8.8",
+   "part": "(iii.)",
+   "answer": "Two attributes are negatively associated when they occur together less often than expected under independence: $(AB) < \\dfrac{(A)(B)}{N}$."
+  },
+  {
+   "ex": "8",
+   "q": "8.17",
+   "part": "(i.)",
+   "answer": "Manifold classification: classifying the observations into more than two classes for an attribute, e.g. education as primary, middle, matric, graduate."
+  },
+  {
+   "ex": "8",
+   "q": "8.17",
+   "part": "(ii.)",
+   "answer": "An $(r \\times c)$ contingency table is a table with $r$ rows and $c$ columns which classifies the observations by two attributes, one with $r$ classes and the other with $c$ classes; the cell frequencies $f_{ij}$ add up to the grand total $N$."
+  },
+  {
+   "ex": "8",
+   "q": "8.17",
+   "part": "(iii.)",
+   "answer": "The chi-square distribution is the distribution of $\\chi^2 = \\sum \\dfrac{(f_o - f_e)^2}{f_e}$. It takes only non-negative values, is skewed to the right and depends on the degrees of freedom $\\nu$ (mean $\\nu$, variance $2\\nu$). It is used in tests of goodness of fit and of independence of attributes; for an $(r \\times c)$ table $\\nu = (r - 1)(c - 1)$."
+  },
+  {
+   "ex": "8",
+   "q": "8.21",
+   "part": null,
+   "answer": "The coefficient of mean square contingency is $\\phi^2 = \\dfrac{\\chi^2}{N}$, and Pearson’s coefficient of contingency is $C = \\sqrt{\\dfrac{\\chi^2}{\\chi^2 + N}}$, where $\\chi^2 = \\sum \\dfrac{(f_o - f_e)^2}{f_e}$ is calculated from the $(r \\times c)$ table (expected frequency $f_e = \\dfrac{\\text{row total} \\times \\text{column total}}{N}$) and $N$ is the grand total. It measures the degree of association between the two attributes; $C = 0$ means independence and $C$ is always less than 1."
+  },
+  {
+   "ex": "9",
+   "q": "9.4",
+   "part": null,
+   "answer": "Design of an experiment is the plan for choosing the treatments, the experimental units and the way in which the treatments are allocated to the units, so that the data collected give valid and efficient conclusions about the differences between the treatments with the least experimental error, time and cost."
+  },
+  {
+   "ex": "9",
+   "q": "9.5",
+   "part": "(i.)",
+   "answer": "Experimental material: the material on which the experiment is performed (land, seeds, animals, patients)."
+  },
+  {
+   "ex": "9",
+   "q": "9.5",
+   "part": "(ii.)",
+   "answer": "Experimental unit: the smallest part of the experimental material to which one treatment is applied (a plot of land, one animal, one patient)."
+  },
+  {
+   "ex": "9",
+   "q": "9.5",
+   "part": "(iii.)",
+   "answer": "Treatment: a procedure, variety or factor level whose effect is to be measured and compared with others (a fertilizer, a variety of wheat, a drug)."
+  },
+  {
+   "ex": "9",
+   "q": "9.5",
+   "part": "(iv.)",
+   "answer": "Uniformity trial: a trial in which the same treatment is applied to all the units to find the variation in the experimental material (for example the soil fertility); it helps to decide the size and shape of plots and the blocks."
+  },
+  {
+   "ex": "9",
+   "q": "9.5",
+   "part": "(v.)",
+   "answer": "Block: a group of experimental units that are similar (homogeneous) to each other; every treatment is applied within a block so that comparisons are made between similar units."
+  },
+  {
+   "ex": "9",
+   "q": "9.6",
+   "part": null,
+   "answer": "Randomization: allocating the treatments to the experimental units by chance; it removes bias and makes a valid test of significance possible. Replication: repeating each treatment on more than one unit; it gives an estimate of the experimental error and increases precision. Local control: grouping the units into homogeneous blocks so that the variation between blocks can be separated from the error, which reduces experimental error."
+  },
+  {
+   "ex": "9",
+   "q": "9.7",
+   "part": "(i.)",
+   "answer": "Experimental design: the arrangement of the experimental units and the rule for allocating the treatments to them (the layout), such as a completely randomized design, randomized block design or Latin square, which allows a valid and efficient statistical analysis."
+  },
+  {
+   "ex": "9",
+   "q": "9.7",
+   "part": "(ii.)",
+   "answer": "The basic principles of design of experiments are: (1) randomization, (2) replication and (3) local control."
+  },
+  {
+   "ex": "9",
+   "q": "9.8",
+   "part": null,
+   "answer": "(a) Extraneous factor: any factor other than the treatments (soil fertility, temperature, the experimenter) which influences the response; if it is not controlled its effect is mixed with the effect of the treatments. (b) Experimental error: the variation in the responses of units that have received the same treatment, caused by uncontrolled extraneous factors and chance."
+  },
+  {
+   "ex": "9",
+   "q": "9.9",
+   "part": null,
+   "answer": "Planning an experiment is needed so that the conclusions are valid and unbiased, the maximum information is obtained at the least cost, time and material, the experimental error is controlled, the number of units and replications is decided in advance, and the right method of analysis (such as analysis of variance) can be used. Faulty planning cannot be corrected by analysis afterwards."
+  },
+  {
+   "ex": "9",
+   "q": "9.10",
+   "part": null,
+   "answer": "A completely randomized design (CRD) is a design in which the treatments are allocated to the experimental units completely at random, without any restriction; it is used when the units are homogeneous. Merits: the layout and the analysis are simple; any number of treatments and replications can be used (unequal replication is allowed); a missing observation causes no difficulty; the error has the maximum degrees of freedom. Demerits: it is not suitable for heterogeneous material, because all the variation goes into the error and precision is low; there is no local control."
+  },
+  {
+   "ex": "9",
+   "q": "9.11",
+   "part": null,
+   "answer": "Number the 15 plots 1 to 15. Each of the three treatments $A$, $B$, $C$ is replicated on 5 plots. Draw random numbers (by lottery or a random number table) to choose 5 plots for $A$, then 5 of the remaining plots for $B$; the last 5 get $C$. One possible layout: $A$ on plots 3, 7, 9, 12, 14; $B$ on plots 1, 4, 8, 11, 15; $C$ on plots 2, 5, 6, 10, 13 (any layout drawn at random is correct)."
+  },
+  {
+   "ex": "9",
+   "q": "9.12",
+   "part": null,
+   "answer": "Analysis of variance (ANOVA), introduced by R. A. Fisher, divides the total variation of the data into parts due to different sources (variation between the groups or treatments and variation within the groups, the error) and tests with the F-test, $F = \\dfrac{\\text{mean square between}}{\\text{mean square within}}$, whether the means of several populations are equal. The results are shown in an ANOVA table (source of variation, degrees of freedom, sum of squares, mean square, $F$)."
+  },
+  {
+   "ex": "9",
+   "q": "9.13",
+   "part": null,
+   "answer": "Analysis of variance splits the total variation of the observations into the variation among the group means and the variation within the groups, in order to test $H_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k$ with the F-test. Assumptions: (1) the populations from which the samples come are normally distributed; (2) the populations have the same variance; (3) the samples are random and independent; (4) the effects are additive."
+  },
+  {
+   "ex": "9",
+   "q": "9.14",
+   "part": "(i.)",
+   "answer": "Variance among samples (between samples): the variation of the sample means around the grand mean, $SSB = \\sum n_i(\\bar{x}_i - \\bar{x})^2$, and $MSB = \\dfrac{SSB}{k - 1}$; it is due to the treatments and chance."
+  },
+  {
+   "ex": "9",
+   "q": "9.14",
+   "part": "(ii.)",
+   "answer": "Variance within samples: the variation of the observations around their own sample mean, $SSW = \\sum\\sum (x_{ij} - \\bar{x}_i)^2$, and $MSW = \\dfrac{SSW}{N - k}$; it is due to chance (error) only."
+  },
+  {
+   "ex": "9",
+   "q": "9.14",
+   "part": "(iii.)",
+   "answer": "Total variation: the variation of all $N$ observations around the grand mean, $SST = \\sum\\sum (x_{ij} - \\bar{x})^2$ with $N - 1$ degrees of freedom; $SST = SSB + SSW$."
+  },
+  {
+   "ex": "9",
+   "q": "9.15",
+   "part": null,
+   "answer": "$H_0: \\mu_1 = \\mu_2 = \\mu_3$ against $H_1$: the means are not all equal. Totals 60, 64, 56; grand mean 15. $SST = 138$, $SSB = 8$, $SSW = 130$. $MSB = \\dfrac{8}{2} = 4$, $MSW = \\dfrac{130}{9} = 14.44$, $F = \\dfrac{4}{14.44} = 0.277$. Tabulated $F_{0.05}(2, 9) = 4.26$. Since $0.277 < 4.26$, $H_0$ is accepted: there is no significant difference between the three means.",
+   "why": "ANOVA table: between samples, d.f. 2, SS 8, MS 4; within samples, d.f. 9, SS 130, MS 14.44; total, d.f. 11, SS 138; $F = 0.277$."
+  }
+ ]
+}
