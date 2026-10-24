@@ -9,6 +9,8 @@
  *   extra  an answer written for it (js/answers_extra.js)
  *   whole  only the printed line of the whole question exists (a list of the parts that qualify, prose): the Ans button shows that line
  *   none   nothing: no record, no printed line, no written answer
+ *   head   a group heading ("Short Questions", "B. Write short answers ...", "Activities"): a question without parts that is followed by a question numbered
+ *          1 / i / a, which is its first sub-question. No Ans button is shown for a heading; every sub-question has its own.
  * dangling = a solId whose record does not exist. Books: every CLSn_BOOKS entry.
  * --check fails when a book has more "whole", "none" or dangling leaves than tools/audit/answers_baseline.json (--write-baseline after an intended change).
  * Dev-only, never shipped. */
@@ -31,7 +33,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
     const L = window['CLS' + n + '_BOOKS']; if (!L) continue;
     Object.keys(L).forEach(k => {
       const B = L[k]; if (!B || !B.units) return;
-      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, dangling: 0, missing: [] };
+      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0, missing: [] };
       R.withBook(B.words, B.book, () => {
         const leaf = (loc, label, own, qSol, kindOf) => {
           rec.leaves++;
@@ -43,6 +45,13 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
           else { rec[a.kind]++; rec.missing.push({ loc, label, why: a.kind }); }
         };
         const text = x => String((x && x.en) || '').replace(/\\s+/g, ' ').slice(0, 90);
+        const lab = no => String(no == null ? '' : no).split('(').join('').split(')').join('').split('.').join('').trim().toLowerCase();
+        const FIRST = ['1', 'i', 'a'];
+        const markHeads = arr => { (arr || []).forEach((b, i) => {
+          if (!b || b.t !== 'q' || (b.parts || []).length || b.solId) return;
+          const nx = arr[i + 1];
+          if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
+        }); };
         B.units.forEach(u => (u.sections || []).forEach(s => {
           let lastQ = null;
           const walk = (b, exId) => {
@@ -56,11 +65,14 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
                 const labs = R.partLabels(ps);
                 const opt = ps.map((p, i) => /^[a-e]$/.test(labs[i]) && labs.slice(0, i).some(x => R.isRoman(x)));
                 ps.forEach((p, i) => { if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
-              } else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
+              } else if (b.__head) { rec.leaves++; rec.head++; }
+              else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
             }
             if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' }))); }
+            markHeads(b.blocks);
             (b.blocks || []).forEach(x => walk(x, exId));
           };
+          markHeads(s.blocks);
           (s.blocks || []).forEach(b => walk(b, null));
         }));
       });
@@ -72,7 +84,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
 
 const sum = k => data.reduce((n, b) => n + b[k], 0);
 const pad = (s, n) => String(s).padEnd(n), num = (v, n) => String(v).padStart(n);
-const cols = ['leaves', 'ans', 'viaQ', 'key', 'extra', 'whole', 'none', 'dangling'];
+const cols = ['leaves', 'ans', 'viaQ', 'key', 'extra', 'whole', 'none', 'head', 'dangling'];
 console.log(pad('book', 14) + cols.map(c => num(c, c === 'dangling' ? 9 : 7)).join(''));
 data.forEach(b => console.log(pad(b.id, 14) + cols.map(c => num(b[c], c === 'dangling' ? 9 : 7)).join('')));
 console.log(pad('TOTAL', 14) + cols.map(c => num(sum(c), c === 'dangling' ? 9 : 7)).join(''));
