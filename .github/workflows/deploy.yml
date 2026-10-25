@@ -105,6 +105,12 @@ jobs:
           node --max-old-space-size=6144 tests/createtest/browser.js
           node --max-old-space-size=6144 tests/grammar/browser.js
           node --max-old-space-size=6144 tests/tutor/browser.js
+      - name: Study Plan check (a task is learnt only after the questions of the book are all right; engine, data, browser)
+        working-directory: SpaceBook Web
+        run: |
+          node tests/mastery/engine.js
+          node --max-old-space-size=6144 tests/mastery/data.js
+          node --max-old-space-size=6144 tests/mastery/browser.js
       - name: search inside the books (words, index, the box in the header)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=8192 tests/search/search.js
