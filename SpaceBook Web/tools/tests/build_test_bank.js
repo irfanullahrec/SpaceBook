@@ -80,6 +80,8 @@ const FALSE_RX = /^(✗|✘|×|x|false|f|wrong|incorrect|no|غلط|ناسم|نہ
 // the books mark a word with <u>, <b> or **: the reader draws ** as bold and escapes tags, so tags become ** (a question that says "the underlined word" keeps its word) and other tags go
 const clean = s => String(s == null ? '' : s).replace(/<(u|b|strong)>([\s\S]*?)<\/\1>/gi, '**$2**').replace(/<br\s*\/?>/gi, ' ').replace(/<\/?[a-z][^>]*>/gi, '').replace(/\s+/g, ' ').trim();
 const norm = s => clean(s).toLowerCase().replace(/\$/g, '').replace(/[^\p{L}\p{N}]+/gu, '');
+// in Mathematics the signs and symbols ARE the difference ("−3" and "3", "x + 4" and "x − 4", "∩" and "∪"): norm would call them the same question or the same option
+const normM = s => clean(s).toLowerCase().replace(/\$/g, '').replace(/\s+/g, '');
 const DEFAULT_MARKS = { mcq: 1, tf: 1, fill: 1, num: 2, lang: 1, short: 3, long: 6, task: 2 };
 
 function kindOf(l) {
@@ -258,9 +260,10 @@ const seen = new Set(); const finalItems = [];
 // a multiple-choice question whose options repeat (two "8,888") has two right answers: it is left out and listed for the owner to correct in the book
 const repeated = [];
 for (const it of items) {
-  const key = it.s + '#' + it.y + '#' + norm(it.q) + '#' + (it.o ? it.o.map(norm).sort().join('|') : '') + (STRICT_MATH.test(it.s) ? '#' + norm(it.h || '') : '');
+  const nz = STRICT_MATH.test(it.s) ? normM : norm;
+  const key = it.s + '#' + it.y + '#' + nz(it.q) + '#' + (it.o ? it.o.map(nz).sort().join('|') : '') + (STRICT_MATH.test(it.s) ? '#' + nz(it.h || '') : '');
   if (seen.has(key)) continue; seen.add(key);
-  if (it.y === 'mcq' && (it.o.length < 3 || it.o.length > 5 || new Set(it.o.map(norm)).size !== it.o.length)) { repeated.push([it.s, it.c, it.u, it.q, it.o.join(' | ')]); continue; }
+  if (it.y === 'mcq' && (it.o.length < 3 || it.o.length > 5 || new Set(it.o.map(nz)).size !== it.o.length)) { repeated.push([it.s, it.c, it.u, it.q, it.o.join(' | ')]); continue; }
   it.i = id(it); finalItems.push(it);
 }
 finalItems.sort((a, b) => a.c - b.c || (a.s < b.s ? -1 : a.s > b.s ? 1 : 0) || a.u - b.u || a.p - b.p);
