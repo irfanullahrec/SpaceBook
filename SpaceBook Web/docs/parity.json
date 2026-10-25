@@ -157,7 +157,7 @@
   {
    "id": "read.answerbox",
    "area": "Reading",
-   "name": "The \"Ans\" box: icon buttons (language, voice, full screen, written / animated), and a full-screen board, in the written and the animated solution; a maths solution opens this answer window, any other answer shows IN PLACE (in the dash of a fill-in-the-blank question, else in a small box under the question) - so far in Class 12 Pakistan Studies (SBSolve IN_PLACE in js/sb_solve.js), the other books follow after the owner has checked that one",
+   "name": "The \"Ans\" box: icon buttons (language, voice, full screen, written / animated), and a full-screen board, in the written and the animated solution; a maths solution opens this answer window, any other answer shows IN PLACE (in the dash of a fill-in-the-blank question, else in a small box under the question) - in every book of Classes 1 to 12 (SBSolve IN_PLACE in js/sb_solve.js); the answer window is the same on the website (any screen width) and in the app",
    "status": "same",
    "web": "js/sb_solve.js, js/vr_engine.js, js/vr_auto.js",
    "app": "the same scripts inside the page (nothing native); the app's tap handler (reader_bridge.js) lets a tap on Ans / جواب through even when the button sits inside its sentence (a tap on the sentence text itself still shows its meaning; tests/app/ans_tap.js)",

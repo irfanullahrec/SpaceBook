@@ -1,7 +1,7 @@
 'use strict';
 /* "Ans" / "جواب" shows its answer IN PLACE (js/sb_solve.js, IN_PLACE): in the dash of a fill-in-the-blank question, otherwise in a small box
- * right under the question, on the same page; no answer window opens and no word meaning pops up. Maths solutions (and every book that is not
- * in IN_PLACE yet) keep the answer window. Opens Class 12 Pakistan Studies "Chapter 1" and Class 8 English in the installed Chrome:
+ * right under the question, on the same page; no answer window opens and no word meaning pops up. Maths solutions (worked steps with equations) open the answer
+ * window instead, on a wide screen and on a phone. Opens Class 12 Pakistan Studies, Class 8 English and Class 8 Maths in the installed Chrome:
  *     node --max-old-space-size=4096 tests/reader/ans_inplace.js
  * Dev-only, never shipped. */
 const { serve, launch } = require('../baseline/lib');
@@ -100,15 +100,38 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     await ctx.close();
   }
 
-  // 4. a book that is not switched over yet (Class 8 English) keeps its answer panel with the tool bar
+  // 4. every book answers in place: Class 8 English (no tool bar, no window) ...
   {
     const { ctx, page } = await open(1360, 900, 'cls8', 'cls8-eng', "selectSubjectChapter('eng', 1, 'cls8')");
     const has = await page.evaluate(() => { const b = document.querySelector('#subjTabContent .sb-ans'); if (!b) return false; b.scrollIntoView({ block: 'center' }); b.setAttribute('data-test-ans', '1'); return true; });
     check('Class 8 English: an Ans button is on screen', has);
     if (has) {
       await page.click('[data-test-ans]'); await sleep(1000);
-      const r = await page.evaluate(() => ({ bar: !!document.querySelector('.sb-solve .sbs-top'), inPlace: !!document.querySelector('.sb-solve.sbs-inline') }));
-      check('Class 8 English: still the full answer panel (not switched yet)', r.bar && !r.inPlace, r);
+      const r = await page.evaluate(() => ({ inPlace: !!document.querySelector('.sb-solve.sbs-inline:not([hidden])'), bar: !!document.querySelector('.sb-solve .sbs-top'), modal: !!document.querySelector('.bk-modal') }));
+      check('Class 8 English: the answer shows in place (no tool bar, no window)', r.inPlace && !r.bar && !r.modal, r);
+    }
+    await ctx.close();
+  }
+
+  // 5. ... and a maths solution (worked steps) opens the answer window, on a wide screen and on a phone, and the window closes again
+  for (const [w, h, label] of [[1360, 900, 'desktop'], [411, 900, 'phone']]) {
+    const { ctx, page } = await open(w, h, 'cls8', 'cls8-math', "selectSubjectChapter('math', 1, 'cls8')");
+    const n = await page.evaluate(() => document.querySelectorAll('#subjTabContent .sb-ans, #mathTabContent .sb-ans').length);
+    check(`${label}: Class 8 Maths has Ans buttons`, n > 0, n);
+    let seen = null;
+    for (let k = 0; k < Math.min(n, 10) && !seen; k++) {
+      await page.evaluate(k => { const b = [...document.querySelectorAll('#subjTabContent .sb-ans, #mathTabContent .sb-ans')][k]; b.setAttribute('data-test-ans', '1'); b.scrollIntoView({ block: 'center' }); }, k);
+      await page.evaluate(() => document.querySelector('[data-test-ans]').click()); await sleep(1200);   // the button itself (a page's bookmark icons can sit over the first Ans of a page)
+      const r = await page.evaluate(() => { const m = document.querySelector('.bk-modal'); return { modal: !!m, bar: !!(m && m.querySelector('.sbs-top')), steps: m ? m.querySelectorAll('.sbs-step').length : 0, fits: m ? (() => { const c = m.querySelector('.bk-modal-card').getBoundingClientRect(); return c.left >= -1 && c.right <= innerWidth + 1 && c.bottom <= innerHeight + 1; })() : false }; });
+      if (r.modal) seen = r;
+      else { await page.evaluate(() => { document.querySelector('[data-test-ans]').click(); document.querySelector('[data-test-ans]').removeAttribute('data-test-ans'); }); await sleep(300); continue; }
+    }
+    check(`${label}: a maths solution opens the answer window with its tool bar and steps`, !!seen && seen.bar && seen.steps > 0, seen);
+    check(`${label}: the answer window fits the screen`, !!seen && seen.fits, seen);
+    if (seen) {
+      await page.click('.bk-modal-x'); await sleep(500);
+      const back = await page.evaluate(() => ({ modal: !!document.querySelector('.bk-modal'), expanded: document.querySelector('[data-test-ans]').getAttribute('aria-expanded') }));
+      check(`${label}: Close takes the answer window away`, !back.modal && back.expanded === 'false', back);
     }
     await ctx.close();
   }
