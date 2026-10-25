@@ -108,6 +108,16 @@
    "data": "the same data files on both platforms; tests/parity/app_book_pages.js and tests/parity/app_all_pages.js put the app's own reader files on the page and turn every page (the website folder or the app's bundled copy: --site bundled). Not yet one page per printed page on EITHER platform: Class 12 Physics, Chemistry, Biology, Mathematics and Statistics (topic cards from summarised data) and Class 11 Statistics units 8-9"
   },
   {
+   "id": "read.offline",
+   "area": "Reading the books",
+   "name": "Every book opens with no internet: the website's service worker keeps what was read; the app carries every book inside the APK",
+   "status": "platform-specific",
+   "web": "sw.js + content/sw_version.js (the browser keeps the shell and what was read; js/core/offline.js \"Download for offline\" per class)",
+   "app": "assets/books (every file of content/offline_map.json, made by tools/app/pack_books.js on the build machine, not in git) served by data/offline/SiteStore; the app's own copy wins over a website deployed before the app was built (Last-Modified of lazy.html against books-index.json builtAt); SiteStoreTest checks it",
+   "data": "the same files, hashes and offline map on both platforms (tools/app/pack_books.js --check compares the app's books with content/offline_map.json)",
+   "counterpart": "the website keeps what a browser has read (service worker); the app ships every book inside the APK and reads them from there"
+  },
+  {
    "id": "read.fullbleed",
    "area": "Reading",
    "name": "The page uses the whole screen: no chapter or page title, the tab strip and the page's own Board SLOs / Exercise / Games tabs right under the status bar, text from edge to edge",
