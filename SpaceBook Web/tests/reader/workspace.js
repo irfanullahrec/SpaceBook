@@ -79,6 +79,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('wide: clicking a sentence opens its translation', await page.evaluate(() => [...document.querySelectorAll('.m6-tr')].some(e => !e.hidden && e.getBoundingClientRect().height > 8)));
 
   // an Ans button opens a window the size of its answer: a short answer is a small window, a long one a big window that scrolls
+  // the chapter opens at its first page (it no longer jumps to the exercise spread): bring the first Ans button of the lesson pages to the middle of the screen
+  await page.evaluate(() => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].find(x => x.getBoundingClientRect().width > 10); if (b) b.scrollIntoView({block: 'center'}); }); await sleep(500);
   const ans = await page.evaluate(() => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].find(x => { const r = x.getBoundingClientRect(); return r.width > 10 && r.top > 160 && r.bottom < 650; }); if (!b) return null; const r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
   check('wide: an Ans button is on the page', !!ans);
   if (ans) {
