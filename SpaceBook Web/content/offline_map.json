@@ -197,9 +197,9 @@
    "sha256": "1d7049e0276809a1a8876799c21e66a22256df55336f68344dfad83276818733"
   },
   "content/search/cls12-comp.json": {
-   "v": "cd00a3ac1e72",
-   "bytes": 194731,
-   "sha256": "cd00a3ac1e72e2bf418a2517b163e81b8a1789ea4489718e20d7e33c300eac89"
+   "v": "739326517d54",
+   "bytes": 191180,
+   "sha256": "739326517d54a5ba5eae56d2911889e0cab8a53c3684a27bae2da184a004a7eb"
   },
   "content/search/cls12-econ.json": {
    "v": "5dc82c026ee6",
@@ -207,9 +207,9 @@
    "sha256": "5dc82c026ee6258d7c0847e617576285c9cb3136bfb0dd7ba6627f7f370ccccc"
   },
   "content/search/cls12-eng.json": {
-   "v": "4f847202be74",
-   "bytes": 429793,
-   "sha256": "4f847202be744fef134f050a8ba04383d6278fdac72566f4f5674ec9c647000a"
+   "v": "b57c83f081d0",
+   "bytes": 431729,
+   "sha256": "b57c83f081d03e483604d3e60031e2e5dccf6ecb7fbb6bee9cb320c10fa1f358"
   },
   "content/search/cls12-hpe.json": {
    "v": "9444632d70d4",
@@ -252,9 +252,9 @@
    "sha256": "d082ef4cb35f2bb5baab1e282a26bc6cae84417434735a7f3fd8919e3f7c978e"
   },
   "content/search/cls12-urdu.json": {
-   "v": "6ae903137d16",
-   "bytes": 288699,
-   "sha256": "6ae903137d16cd933ec5e18f6ab62c386e0c59f5a397673d0c7dce27f2a8fe73"
+   "v": "d8c195d1e7cf",
+   "bytes": 572357,
+   "sha256": "d8c195d1e7cf08b709d995d526097b2426c8db71e68b3a02a01c556e64188bb0"
   },
   "content/search/cls2-drawing.json": {
    "v": "0226639ec5d9",
@@ -841,6 +841,11 @@
    "bytes": 1699859,
    "sha256": "1a105762ba0fbb7142d786ee99faf4791f4480944a8109652c5ed890f11591ff"
   },
+  "js/computer_12_book.js": {
+   "v": "0d7825aa3e64",
+   "bytes": 1948366,
+   "sha256": "0d7825aa3e64ffdb62401b93e762ac641bf4b48e6148524ae7af0858bb4b5538"
+  },
   "js/computer_12_data.js": {
    "v": "588cff68336b",
    "bytes": 5687643,
@@ -966,6 +971,11 @@
    "bytes": 539498,
    "sha256": "776bf021b92ffa4dd59197fb8b89b79ba3efd3e169dfdb5133c7f7e086accb90"
   },
+  "js/english_12_book.js": {
+   "v": "20850634924e",
+   "bytes": 2096365,
+   "sha256": "20850634924e426bfe5d71045dc135e678d1f29e288d48e6ac46abbed021b208"
+  },
   "js/english_12_data.js": {
    "v": "a35966ef820c",
    "bytes": 5821865,
@@ -1017,9 +1027,9 @@
    "sha256": "8cfd4696b3e2394c9138fde2f36e68f76547addb43c86f4a3c64801927347f50"
   },
   "js/fills_data.js": {
-   "v": "0aaca4b33c12",
+   "v": "d80837f05f3c",
    "bytes": 116780,
-   "sha256": "0aaca4b33c12c1e1f8e1f07e6c7c99e12ef92c79cdc23b5f2ea3c93e3631a9d2"
+   "sha256": "d80837f05f3c9ff87bb979d1b8d674e13cc8a1cfbe27ebb55a49eb6825c6f8d9"
   },
   "js/general_science_10_data.js": {
    "v": "be01a96c3ab7",
@@ -1457,9 +1467,9 @@
    "sha256": "b0e97ef1fcbcad9501b37fde31fea0552ccac3b023c0a94a50cc319d9fdb3dbb"
   },
   "js/pakstudy_12_book.js": {
-   "v": "54da05d07f68",
-   "bytes": 2421139,
-   "sha256": "54da05d07f688ddfd89269951df81103c07cd068cbf1a727442e64d28d43bf0a"
+   "v": "1bde04d629a7",
+   "bytes": 2421339,
+   "sha256": "1bde04d629a7cd91a674571706546ba9086d911d60c7cd58a4145781e3c0cc67"
   },
   "js/pakstudy_12_data.js": {
    "v": "a54042a974bd",
@@ -1685,6 +1695,11 @@
    "v": "e95563b62e45",
    "bytes": 1516041,
    "sha256": "e95563b62e452b41de804fe22a25a6318e3111857f7ae79f4855e9f22c5622db"
+  },
+  "js/urdu_12_book.js": {
+   "v": "0f11f031966e",
+   "bytes": 2535651,
+   "sha256": "0f11f031966e095502e4c7da74cf623b1bcaec2ba7b89dcd427b8d57fcae3fbc"
   },
   "js/urdu_12_data.js": {
    "v": "2348c9ee303c",
@@ -3768,12 +3783,16 @@
    "files": [
     "js/english_12_data.js",
     "js/eng12_exercise_banks.js",
+    "js/english_12_book.js",
+    "js/english_6_data.js",
+    "js/answers_extra.js",
+    "js/fills_data.js",
     "content/search/cls12-eng.json"
    ],
    "assets": [
     "content/search/index.json"
    ],
-   "bytes": 6618537
+   "bytes": 10339253
   },
   "cls12-urdu": {
    "classId": "cls12",
@@ -3781,12 +3800,15 @@
    "files": [
     "js/urdu_12_data.js",
     "js/urdu12_exercise_banks.js",
+    "js/urdu_12_book.js",
+    "js/urdu_6_data.js",
+    "js/answers_extra.js",
     "content/search/cls12-urdu.json"
    ],
    "assets": [
     "content/search/index.json"
    ],
-   "bytes": 8251385
+   "bytes": 13401982
   },
   "cls12-bio": {
    "classId": "cls12",
@@ -3812,7 +3834,7 @@
    "assets": [
     "content/search/index.json"
    ],
-   "bytes": 10463938
+   "bytes": 10464138
   },
   "cls12-comp": {
    "classId": "cls12",
@@ -3820,12 +3842,16 @@
    "files": [
     "js/computer_12_data.js",
     "js/comp12_exercise_banks.js",
+    "js/computer_12_book.js",
+    "js/computer_6_data.js",
+    "js/fills_data.js",
+    "js/answers_extra.js",
     "content/search/cls12-comp.json"
    ],
    "assets": [
     "content/search/index.json"
    ],
-   "bytes": 6187748
+   "bytes": 9091746
   },
   "cls12-civics": {
    "classId": "cls12",
