@@ -55,8 +55,9 @@ const SENT = '.lesson-sentence,.sb-tri-target,[class*="-s"][onclick]';
           await t.page.evaluate(() => { window.__acts = []; });
           await t.page.touchscreen.tap(at.x, at.y);
           await sleep(1200);
-          const r = await t.page.evaluate(() => ({ acts: window.__acts.slice(), open: [...document.querySelectorAll('.sb-ans')].filter(b => b.getAttribute('aria-expanded') === 'true').length }));
+          const r = await t.page.evaluate(() => ({ acts: window.__acts.slice(), open: [...document.querySelectorAll('.sb-ans')].filter(b => b.getAttribute('aria-expanded') === 'true').length, fills: document.querySelectorAll('.sbs-fill').length }));
           ok(r.open === 1 && !r.acts.includes('meaning'), `${sid} ch${ci}: tap on "${at.label}"${spot.inSentence ? ' (inside its sentence)' : ''} opens the answer, no meaning pop-up (opened ${r.open}, host got [${r.acts}])`);
+          if (sid === 'cls12-pak') ok(r.fills >= 1, `${sid}: the answer is written in the dash of the question (${r.fills} filled)`);   // Pakistan Studies shows answers in place (js/sb_solve.js IN_PLACE)
           if (spot.inSentence && spot.hasText) {
             const tx = await t.page.evaluate(sel => {
               const root = document.querySelector('.sbapp-page-on') || document.body;
