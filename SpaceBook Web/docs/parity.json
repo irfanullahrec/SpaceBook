@@ -160,7 +160,7 @@
    "name": "The \"Ans\" box: icon buttons (language, voice, full screen, written / animated), and a full-screen board, in the written and the animated solution",
    "status": "same",
    "web": "js/sb_solve.js, js/vr_engine.js, js/vr_auto.js",
-   "app": "the same scripts inside the page (nothing native)",
+   "app": "the same scripts inside the page (nothing native); the app's tap handler (reader_bridge.js) lets a tap on Ans / جواب through even when the button sits inside its sentence (a tap on the sentence text itself still shows its meaning; tests/app/ans_tap.js)",
    "data": "the books' solution files (nothing is stored); every question of Classes 1 to 12 has an Ans, except six in Class 10 Urdu whose source page is missing (node tools/audit/answers_audit.js lists them, --heads lists the group headings that carry none)"
   },
   {
