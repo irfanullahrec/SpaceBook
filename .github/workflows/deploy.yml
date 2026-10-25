@@ -89,6 +89,9 @@ jobs:
       - name: reader workspace (wide-screen look, chapter rail, full screen, narrow screen, app page)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/reader/workspace.js
+      - name: Ans shows its answer in place (Pakistan Studies: in the dash or under the question; no answer window)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tests/reader/ans_inplace.js
       - name: activity cards fold, fill the table and show the work
         working-directory: SpaceBook Web
         run: |
