@@ -24,16 +24,46 @@ function sb_plan_task_done(array $plan): array
     return $out;
 }
 
+// The learning record of each task ({mode: 'check'|'self', at, rounds, asked, ...}): the proof that the student passed the check of that task.
+function sb_plan_task_learn(array $plan): array
+{
+    $out = [];
+    foreach ((isset($plan['sessions']) && is_array($plan['sessions']) ? $plan['sessions'] : []) as $s) {
+        foreach ((isset($s['tasks']) && is_array($s['tasks']) ? $s['tasks'] : []) as $t) {
+            if (is_array($t) && isset($t['id']) && isset($t['learn']) && is_array($t['learn'])) $out[(string)$t['id']] = $t['learn'];
+        }
+    }
+    return $out;
+}
+
+// Of two records of one task keep the better: a passed check beats the student's own word, then the later one.
+function sb_learn_pick(?array $a, ?array $b): ?array
+{
+    if ($a === null) return $b;
+    if ($b === null) return $a;
+    $ra = (isset($a['mode']) && $a['mode'] === 'check') ? 1 : 0;
+    $rb = (isset($b['mode']) && $b['mode'] === 'check') ? 1 : 0;
+    if ($ra !== $rb) return $ra > $rb ? $a : $b;
+    return ((isset($b['at']) ? (float)$b['at'] : 0) > (isset($a['at']) ? (float)$a['at'] : 0)) ? $b : $a;
+}
+
 function sb_plan_merge(array $incoming, array $stored): array
 {
     $srv = sb_plan_task_done($stored);
+    $srvLearn = sb_plan_task_learn($stored);
     if (!$srv || !isset($incoming['sessions']) || !is_array($incoming['sessions'])) return $incoming;
     foreach ($incoming['sessions'] as $si => $s) {
         if (!is_array($s) || !isset($s['tasks']) || !is_array($s['tasks'])) continue;
         foreach ($s['tasks'] as $ti => $t) {
             if (!is_array($t) || !isset($t['id']) || !isset($srv[(string)$t['id']])) continue;
+            $id = (string)$t['id'];
             $mine = isset($t['done']) ? (float)$t['done'] : 0;
-            if ($srv[(string)$t['id']] > $mine) $incoming['sessions'][$si]['tasks'][$ti]['done'] = $srv[(string)$t['id']];
+            if ($srv[$id] > $mine) $incoming['sessions'][$si]['tasks'][$ti]['done'] = $srv[$id];
+            // the proof travels with the ticked work: a record one device holds is not lost because the other one never saw it
+            if (isset($srvLearn[$id])) {
+                $kept = sb_learn_pick(isset($t['learn']) && is_array($t['learn']) ? $t['learn'] : null, $srvLearn[$id]);
+                if ($kept !== null) $incoming['sessions'][$si]['tasks'][$ti]['learn'] = $kept;
+            }
         }
     }
     return $incoming;

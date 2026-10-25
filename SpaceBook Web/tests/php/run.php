@@ -509,6 +509,24 @@ check('the same device with a stale baseRev is a fast-forward: un-ticking sticks
 sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_seq01', 'Seq B', [task('t1', 3, 0)]), 'baseRev' => 1])]);   // another device, stale baseRev
 $pp = plan_of(pull($A)['json'], 'plan_seq01');
 check('another device with a stale baseRev is merged: its name wins, ticked work is kept (done = max(0,1) = 1)', $pp['name'] === 'Seq B' && task_done($pp, 't1') === 1, json_encode($pp));
+// the learning record (the proof that a task was learnt: the check passed) travels with the ticked work
+function ltask(string $id, int $n, int $done, ?array $learn): array { $t = task($id, $n, $done); if ($learn !== null) $t['learn'] = $learn; return $t; }
+function learn_of(array $plan, string $tid): ?array { foreach ($plan['sessions'] as $s) foreach ($s['tasks'] as $t) if ($t['id'] === $tid) return isset($t['learn']) ? $t['learn'] : null; return null; }
+$recCheck = ['mode' => 'check', 'at' => 1700000001000, 'rounds' => 2, 'asked' => 5, 'first' => 3, 'fixed' => 2, 'wrong' => 3, 'auto' => 5, 'self' => 0];
+$recSelf  = ['mode' => 'self', 'at' => 1700000009000];
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_lrn01', 'Learn', [ltask('t1', 3, 0, null), ltask('t2', 2, 0, null)]), 'baseRev' => 0])]);
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_lrn01', 'Learn', [ltask('t1', 3, 3, $recCheck), ltask('t2', 2, 0, null)]), 'baseRev' => 1])]);          // A passes the check of t1
+$pp = plan_of(pull($A)['json'], 'plan_lrn01');
+check('the record of a passed check is stored with its task, untouched', learn_of($pp, 't1') == $recCheck && learn_of($pp, 't2') === null, json_encode($pp));
+sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_lrn01', 'Learn (B)', [ltask('t1', 3, 1, null), ltask('t2', 2, 0, null)]), 'baseRev' => 1])]);                // B never saw it (stale baseRev, no record)
+$pp = plan_of(pull($A)['json'], 'plan_lrn01');
+check('another device\'s stale save keeps the proof: done and the record both survive', task_done($pp, 't1') === 3 && learn_of($pp, 't1') == $recCheck && $pp['name'] === 'Learn (B)', json_encode($pp));
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_lrn02', 'Learn 2', [ltask('t1', 2, 2, $recCheck)]), 'baseRev' => 0])]);
+sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_lrn02', 'Learn 2', [ltask('t1', 2, 2, $recSelf)]), 'baseRev' => 0])]);                                       // B only ticked it itself
+check('a passed check beats the student\'s own word, whichever device arrives last', learn_of(plan_of(pull($A)['json'], 'plan_lrn02'), 't1')['mode'] === 'check');
+sync_post($B, [ev('plan.save', ['plan' => mk_plan('plan_lrn03', 'Learn 3', [ltask('t1', 2, 2, $recSelf)]), 'baseRev' => 0])]);
+sync_post($A, [ev('plan.save', ['plan' => mk_plan('plan_lrn03', 'Learn 3', [ltask('t1', 2, 2, $recCheck)]), 'baseRev' => 0])]);
+check('and the other way round', learn_of(plan_of(pull($A)['json'], 'plan_lrn03'), 't1')['mode'] === 'check');
 // delete + resurrect attempts
 $x = sync_post($B, [ev('plan.delete', ['id' => 'plan_aaa1'])]);
 $g = pull($A);

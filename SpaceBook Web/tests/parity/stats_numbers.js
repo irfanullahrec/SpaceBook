@@ -35,12 +35,13 @@ const tp = { v: 1, q: {}, resets: {}, rid: {}, updatedAt: now, run: { id: 'r1', 
   ],
   days: { pst: { [dayKey(2)]: [600000, 10, 7], [dayKey(1)]: [1200000, 20, 15] }, 'sst-bio': { [dayKey(0)]: [300000, 10, 4] }, ct: { [dayKey(0)]: [60000, 3, 2] },
     all: { [dayKey(2)]: [600000, 10, 7], [dayKey(1)]: [1200000, 20, 15], [dayKey(0)]: [360000, 13, 6] } } };
-const task = (id, cat, n, done, ch) => ({ id, cat, s: 'cls5-math', ch: ch || 0, n, done, a: 1, b: n });
+const task = (id, cat, n, done, ch, learn) => Object.assign({ id, cat, s: 'cls5-math', ch: ch || 0, n, done, a: 1, b: n }, learn ? { learn } : {});
+const LEARN = { at: now - 2 * DAY, mode: 'check', rounds: 2, asked: 6, first: 4, fixed: 2, wrong: 2, auto: 6, self: 0, missed: [], secs: 90 };
 const plan = { id: 'plan_stat1', name: 'Numbers plan', classId: 'cls5', scope: [{ subj: 'cls5-math', ch: [0, 1] }], cats: ['read', 'mcq'], start: dayKey(3), end: ymd(new Date(now + 5 * DAY)), weekdays: [0, 1, 2, 3, 4, 5, 6], skip: [], extra: [], alt: false,
   slots: [{ from: '16:00', to: '17:00' }], revision: false, createdAt: 1, updatedAt: now - 1000,
   sessions: [
-    { id: 'a', date: dayKey(2), slot: 0, from: '16:00', to: '17:00', len: 60, tasks: [task('t1', 'read', 4, 4), task('t2', 'mcq', 10, 6)] },
-    { id: 'b', date: dayKey(1), slot: 0, from: '16:00', to: '17:00', len: 60, tasks: [task('t3', 'read', 3, 1, 1), task('t4', 'sq', 5, 0, 1)] },
+    { id: 'a', date: dayKey(2), slot: 0, from: '16:00', to: '17:00', len: 60, tasks: [task('t1', 'read', 4, 4, 0, LEARN), task('t2', 'mcq', 10, 6, 0, LEARN)] },       // t1 passed the check; t2 keeps a record but is not done (un-ticked): it does not count
+    { id: 'b', date: dayKey(1), slot: 0, from: '16:00', to: '17:00', len: 60, tasks: [task('t3', 'read', 3, 3, 1, { at: now - DAY, mode: 'self' }), task('t4', 'sq', 5, 0, 1)] },
     { id: 'c', date: ymd(new Date(now + DAY)), slot: 0, from: '16:00', to: '17:00', len: 60, tasks: [task('t5', 'lq', 2, 0, 1)] },
   ] };
 
@@ -84,6 +85,9 @@ else {
   const ap = appSum.plans.find(p => p.id === 'plan_stat1');
   check(`the plan percentage is the same (${ws.pct} %)`, !!ap && ap.pct === ws.pct, { web: ws.pct, app: ap && ap.pct });
   check('and the count of items done in each kind of work', !!ap && Object.keys(ws.byCat).every(k => ap.byCat[k] && ap.byCat[k].n === ws.byCat[k].n && ap.byCat[k].done === ws.byCat[k].done), { web: ws.byCat, app: ap && ap.byCat });
+  if (ws.tasks === undefined) skip('this build of the website has no learnt-and-checked count in SBStudyPlan.stats');
+  else check(`the tasks learnt by passing the check, and those ticked by hand, are the same (${ws.checked} of ${ws.tasks}, ${ws.selfMarked})`, !!ap && ap.tasks === ws.tasks && ap.checked === ws.checked && ap.selfMarked === ws.selfMarked && ws.checked === 1 && ws.selfMarked === 1,
+    { web: [ws.tasks, ws.checked, ws.selfMarked], app: ap && [ap.tasks, ap.checked, ap.selfMarked] });
 }
 
 console.log('--- Tests Preps ---');
