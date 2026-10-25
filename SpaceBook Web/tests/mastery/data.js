@@ -15,7 +15,7 @@ const IX = global.window.SB_STUDY_INDEX;
 const CATS = ['read', 'slo', 'mcq', 'tf', 'blank', 'match', 'sq', 'lq', 'num', 'ex'];
 
 const bad = [], overlaps = [], gaps = [], tooMany = [], wrongChapter = [];
-const cover = {}, fb = {}, none = {};
+const cover = {}, fb = {}, none = {}, bySubject = {};
 let tasks = 0, chapters = 0, subjectsNoBank = [];
 for (const C of IX.classes) {
   const n = +C.id.replace('cls', '');
@@ -35,6 +35,9 @@ for (const C of IX.classes) {
           tasks++; picks.push(r);
           const key = cat;
           cover[key] = cover[key] || { tasks: 0, withCheck: 0 }; cover[key].tasks++;
+          const bs = bySubject[S.id] = bySubject[S.id] || { tasks: 0, withCheck: 0, ownPart: 0, auto: 0, chapters: new Set(), checkedChapters: new Set() };
+          bs.tasks++; bs.chapters.add(ch);
+          if (r.items.length >= M.config.MIN_Q) { bs.withCheck++; bs.checkedChapters.add(ch); if (!r.fallback) bs.ownPart++; if (r.items.some(it => it.y === 'mcq' || it.y === 'tf')) bs.auto++; }
           if (r.items.length >= M.config.MIN_Q) cover[key].withCheck++; else none[key] = (none[key] || 0) + 1;
           if (r.items.length >= M.config.MIN_Q && r.fallback) fb[key] = (fb[key] || 0) + 1;
           if (r.items.length > M.config.MAX_Q) tooMany.push([S.id, ch, cat, r.items.length]);
@@ -67,12 +70,19 @@ check('no check is longer than ' + M.config.MAX_Q + ' questions', tooMany.length
 check('neighbouring tasks of one kind in a chapter share no question (where the book holds enough)', overlaps.length === 0, overlaps.slice(0, 8));
 check('and no question of the book is left out when the plan counted at least as many', gaps.length === 0, gaps.slice(0, 8));
 const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+// the Mathematics books of Classes 5, 6, 7, 8 and 11 (MATH_n_DATA, not CLSn_BOOKS; tools/tests/extract_leaves.js) used to have no questions: their tasks were all marked by the student
+const MATHS = ['cls5-math', 'cls6-math', 'cls7-math', 'cls8-math', 'cls11-math'];
+const mathRows = MATHS.map(id => { const b = bySubject[id]; return b ? [id, b.tasks, b.withCheck, pct(b.withCheck, b.tasks), b.checkedChapters.size + '/' + b.chapters.size] : [id, 0]; });
+check('the Mathematics books of Classes 5, 6, 7, 8 and 11 are in the bank: a check can be asked for most of their plan tasks (at least 60% of each)', MATHS.every(id => bySubject[id] && pct(bySubject[id].withCheck, bySubject[id].tasks) >= 60), mathRows);
+check('and in nearly every chapter of those books (all but two)', MATHS.every(id => bySubject[id] && bySubject[id].chapters.size - bySubject[id].checkedChapters.size <= 2), mathRows);
+check('and some of the questions mark themselves (MCQs) in each of them', MATHS.every(id => bySubject[id] && bySubject[id].auto >= 5), MATHS.map(id => [id, bySubject[id] && bySubject[id].auto]));
 const allT = Object.values(cover).reduce((a, v) => a + v.tasks, 0), allC = Object.values(cover).reduce((a, v) => a + v.withCheck, 0);
 check('most plan tasks in the covered subjects can be checked with the book\'s own questions (' + pct(allC, allT) + '%)', pct(allC, allT) >= 55, { tasks: allT, withCheck: allC });
 check('lesson-part tasks, the main case, can be checked in most chapters (' + pct(cover.read.withCheck, cover.read.tasks) + '%)', pct(cover.read.withCheck, cover.read.tasks) >= 60, cover.read);
 if (process.argv.includes('--report') || fail) {
   console.log('\ncoverage by kind of work (tasks that can be checked / all; of those how many ask about the chapter instead of the exact part):');
   CATS.forEach(c => { if (cover[c]) console.log('  ' + c.padEnd(6), String(cover[c].withCheck).padStart(5) + ' / ' + String(cover[c].tasks).padEnd(5), pct(cover[c].withCheck, cover[c].tasks) + '%', '  chapter-level: ' + (fb[c] || 0)); });
+  console.log('\nthe Mathematics books of Classes 5-8 and 11 (plan tasks that can be checked; chapters that have a check):'); mathRows.forEach(r => console.log('  ' + String(r[0]).padEnd(11) + String(r[2]).padStart(5) + ' / ' + String(r[1]).padEnd(5) + r[3] + '%   chapters ' + r[4]));
   console.log('subjects with no questions in the bank (their tasks are marked by the student): ' + subjectsNoBank.join(' '));
 }
 console.log('---\nmastery data: ' + pass + ' passed, ' + fail + ' failed  (' + chapters + ' chapters, ' + tasks + ' tasks tried)');

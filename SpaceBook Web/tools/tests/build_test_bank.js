@@ -1,7 +1,8 @@
 'use strict';
 /* Builds the question bank of "Create Test": content/testbank/index.json and one shard per class, content/testbank/cls<N>.json.
  *     node --max-old-space-size=8192 tools/tests/build_test_bank.js [--check] [--from leaves.json] [--report]
- * What goes in: every question or part of every exercise of every book (CLSn_BOOKS: Classes 1 to 10 and 12), as the reader shows it, with its answer where
+ * What goes in: every question or part of every exercise of every book (CLSn_BOOKS: Classes 1 to 10 and 12; and the Mathematics books of Classes 5, 6, 7, 8
+ * and 11, MATH_n_DATA, which the Study Plan check needs and which are held to a stricter rule, see kindOfMath), as the reader shows it, with its answer where
  * the project has one (a solution record, the printed key, an answer written by us), arranged by subject, chapter and topic (the book's section the
  * item sits in); the keyed MCQs of the Tests Preps bank (js/test_prep_bank.js) that the books do not already give, for the subjects and classes whose
  * questions do not live in the books (Class 11 and the older Class 9 to 12 data) - they belong to the whole subject; and "meaning" MCQs made from the
@@ -18,12 +19,14 @@ const opt = n => (args.includes(n) ? args[args.indexOf(n) + 1] : null);
 const OUT = path.join(ROOT, 'content', 'testbank');
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 
+// the step-by-step solutions of the Mathematics books of Classes 5, 6, 7, 8 and 11 (not in the lazy manifest: the readers load them when an Ans button is opened)
+const MATH_SOLUTIONS = [5, 6, 7, 8, 11].map(n => 'js/math_' + n + '_solutions.js');
 // what the files depend on: the book data (hashes in the lazy manifest), the readers that resolve answers, the catalog, the Tests Preps bank, and this builder
 const lf = f => fs.readFileSync(path.join(ROOT, f), 'utf8').replace(/\r\n/g, '\n');
 function inputsHash() {
   const man = JSON.parse(lf('content/lazy_manifest.json')), h = [];
   for (const f of man.files) { h.push(f.src + ':' + f.sha256); for (const a of (f.also || []).concat(f.after || [])) h.push(a.src + ':' + a.sha256); }
-  for (const f of ['js/answers_extra.js', 'js/math6_reader.js', 'js/sb_mcq.js', 'content/app_catalog.json', 'js/test_prep_bank.js', 'tools/tests/build_test_bank.js', 'tools/tests/extract_leaves.js']) h.push(f + ':' + sha(lf(f)));
+  for (const f of ['js/answers_extra.js', 'js/math6_reader.js', 'js/sb_mcq.js', 'content/app_catalog.json', 'js/test_prep_bank.js', 'tools/tests/build_test_bank.js', 'tools/tests/extract_leaves.js'].concat(MATH_SOLUTIONS)) h.push(f + ':' + sha(lf(f)));
   return sha(h.filter(s => !s.startsWith('js/fills_data.js:')).sort().join('\n'));   // fills_data.js is made after the manifest it is listed in; nothing here depends on it
 }
 if (args.includes('--check')) {          // fast: the files carry the hash of what they were made from, no book is loaded
@@ -46,6 +49,7 @@ else {
   const { load } = require('../lib/app_sandbox');
   const extract = require('./extract_leaves');
   const app = load({ page: process.env.SB_PAGE || 'index.html', quiet: true });
+  for (const f of MATH_SOLUTIONS) app.run(fs.readFileSync(path.join(ROOT, f), 'utf8'));          // window.MATH_n_SOLUTIONS, as the readers load them on demand
   raw = JSON.parse(app.run('JSON.stringify((' + extract.toString() + ')())', 600000));
 }
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'app_catalog.json'), 'utf8'));
@@ -95,19 +99,61 @@ function kindOf(l) {
   return 'task';
 }
 
+// The Mathematics books of Classes 5, 6, 7, 8 and 11 (MATH_n_DATA, answered by MATH_n_SOLUTIONS and the printed key). The Study Plan check asks these questions on
+// their text alone and marks them against the book's answer, so an item must stand on its own: no figure, table, graph or drawing it depends on, no task to do
+// with a tool, an answer the book holds for it (a question without one is left out, not guessed), and for an MCQ one right option that the solution and the
+// printed key agree on. The extractor flags the figure (fig) and the disagreement (clash); the rest is decided here.
+const STRICT_MATH = /^cls(5|6|7|8|11)-math$/;
+// a word that points at a picture. "significant figures", "in figures" and "words and figures" are numbers; "plot" and "construct" are everyday words in a word problem
+// ("a rectangular plot", "to construct a road") and only an instruction when they start the line (M_DO)
+const M_FIG = /(?<!significant\s)(?<!in\s)(?<!and\s)\b(?:figures?|fig\.)(?!\s+(?:and|or)\s+words)|\b(diagrams?|pictures?|graphs?|plotted|plotting|maps?|charts?|photos?|shaded|unshaded|dotted|grids?|(?<!without\s)(?<!without using a\s)number line|net of|pictograph|histogram|protractor|ruler|compass|set square)\b|\b(?:as|is|are) shown\b|\bshown (?:in|below|above|here)\b|\b(?:given|following|above|below) (?:table|figure|diagram|graph|picture|chart)\b|شکل|تصویر|جدول/i;
+const M_DO = /^\W*(draw|colou?r|paste|trace|join|match|encircle|circle (?:the|each|all|any)|underline|label|cut|plot|construct|measure|shade|sketch|copy|tick|mark (?:the|each|all|these|on)|cross|fill in the table|investigate|collect|survey|discuss|prepare|present|visit|write a (report|story|paragraph|letter)|group activity|project)\b/i;
+// a solution that says the data of its question could not be read from the scan holds no answer a student could be asked for
+const M_UNREADABLE = /not legible|illegible|from the scan|in the scan|contrast-enhanced|figure not legible|method only/i;
+// a kind, or "!" and the reason the question is left out
+function kindOfMath(l) {
+  const text = clean(l.q[0]), head = clean(l.head) + ' ' + clean(l.instr), ans = clean(l.a);
+  if (M_UNREADABLE.test(ans) || M_UNREADABLE.test(clean(l.st))) return '!the solution says the figure or data of the question is not legible in the scan';
+  if (l.o) return l.cor >= 0 ? 'mcq' : '!an MCQ without one right option (the key names none, or several)';
+  if (!ans) return '!no answer in the book or in the solutions';
+  if (T_TF.test(head)) return TRUE_RX.test(ans) || FALSE_RX.test(ans) ? 'tf' : '!true or false without a true / false answer';
+  if (M_FIG.test(text) || M_FIG.test(head)) return '!the text points at a figure, graph, table or number line';
+  if (M_DO.test(text) || M_DO.test(clean(l.instr)) || M_DO.test(clean(l.head))) return '!a task to draw, construct, plot, measure, match, label or collect';
+  if (T_MCQ.test(head)) return '!an MCQ whose options are not in the text';
+  if (/\\frac\{\d{10,}\}\{\d{10,}\}/.test(l.a)) return '!the answer held is a decimal turned into a huge fraction, not a value a student could give';
+  let k = kindOf(l);
+  if (k === 'task') k = /[0-9$]/.test(text + ' ' + head) ? 'num' : 'short';             // the heuristics fell through: a calculation if it has numbers, else a written answer
+  if (/^(proved|verified|shown)\W*$/i.test(ans)) return 'long';                         // "Prove that ...": the working is the answer
+  if (k === 'long' && ans.length <= 300 && !/^(prove|derive|show that|explain|describe|discuss|differentiate|distinguish|state and prove|justify)/i.test(text)) k = 'short';   // "in descriptive form" is a word of set notation here, not an essay
+  return k;
+}
+
 // ── 3. items ────────────────────────────────────────────────────────────
 const books = new Map(raw.books.map(b => [b.id, b]));
 const items = [];                      // {b, subject, ...}
-const stat = { leaves: raw.leaves.length, dropped: 0, byKind: {}, noAnswer: 0, unmapped: new Set() };
+const stat = { leaves: raw.leaves.length, dropped: 0, byKind: {}, noAnswer: 0, unmapped: new Set(), math: { leaves: 0, kept: 0, why: {} } };
+const leftOut = [];                    // Mathematics questions that are not in the bank, with the reason: docs/test_bank_review/math_left_out.csv
 for (const l of raw.leaves) {
   const book = books.get(l.b), sj = subjOf[l.b.replace('cls', '')];
   if (!sj) { stat.unmapped.add(l.b); continue; }
+  const strict = STRICT_MATH.test(sj.id);
+  if (strict) {                                                    // the data escapes the blank lines of a sentence as \_\_\_ ; the bank holds plain text
+    const un = t => typeof t === 'string' ? t.replace(/\\_/g, '_') : t;
+    l.q = l.q.map(un); l.o = l.o ? l.o.map(un) : l.o;
+    for (const f of ['stem', 'a', 'st', 'instr', 'head']) l[f] = un(l[f]);
+    stat.math.leaves++;
+  }
+  const out = why => { stat.math.why[why] = (stat.math.why[why] || 0) + 1; stat.dropped++; leftOut.push([sj.id, book.cls, l.u + 1, l.ex || '', l.no + (l.pn && l.pn !== l.no ? ' ' + l.pn : ''), (clean(l.instr || l.head) + ' ' + clean(l.o ? l.stem : l.q[0])).trim().slice(0, 200), why]); };
+  if (strict && l.fig) { out('the book prints a figure or a table with the question'); continue; }
+  if (strict && l.clash) { out('the solution and the printed key name different options'); continue; }
   l.a = PLACEHOLDER.test(clean(l.a)) ? '' : l.a;
   l.lang = /-(eng|urdu|pashto|arabic)$/.test(sj.id);
-  const k = kindOf(l);
+  const k = strict ? kindOfMath(l) : kindOf(l);
   const text = clean(l.o ? l.stem : l.q[0]);
-  if (!k || text.length < 4) { stat.dropped++; continue; }
+  if (strict && k && k[0] === '!') { out(k.slice(1)); continue; }
+  if (!k || text.length < (strict && clean(l.instr || l.head).length >= 8 ? 1 : 4)) { if (strict) out('too short to be a question'); else stat.dropped++; continue; }   // "381" under "Multiply the following numbers by 10" is one
   const it = { s: sj.id, c: book.cls, u: l.u, p: l.p, y: k, q: text };
+  if (strict) it._si = l.p;                                         // the lesson section the question stands in (its exercise is in that section)
   if (l.q[1]) it.q2 = clean(l.o ? l.q[1].replace(/\s*[a-d][.)]\s.*$/s, '') : l.q[1]);
   if (l.q[2]) it.q3 = clean(l.o ? l.q[2].replace(/\s*[a-d][.)]\s.*$/s, '') : l.q[2]);
   if (!it.q2) delete it.q2; if (!it.q3) delete it.q3;
@@ -121,14 +167,16 @@ for (const l of raw.leaves) {
     if (a) it.a = a.slice(0, 1400);
     if (e) it.e = e.slice(0, 900);
   } /* else only a printed line for the whole question: not an answer to this part */
+  if (strict && k !== 'mcq' && k !== 'tf' && it.a === undefined) { out('the book holds one line for the whole question, not an answer for this part'); continue; }
   if (k !== 'mcq' && k !== 'tf' && it.a === undefined) stat.noAnswer++;
   const expl = (k === 'mcq' || k === 'tf') ? clean(l.st).slice(0, 700) : '';
   if (expl) it.e = expl;
-  const instr = clean(l.instr || l.head).slice(0, 160);
+  const instr = clean(l.instr || l.head).slice(0, strict ? 400 : 160);       // a word problem's numbers are often in its stem
   if (instr && instr !== text) it.h = instr;
   if (l.pg != null && l.pg !== '') it.pg = l.pg;
   if (l.ex) it.x = l.ex;
   items.push(it);
+  if (strict) stat.math.kept++;
   stat.byKind[k] = (stat.byKind[k] || 0) + 1;
 }
 
@@ -182,8 +230,10 @@ for (const b of raw.books) {
 }
 let topicHits = 0;
 for (const it of items) {
+  const si = it._si; delete it._si;
   if (it.u < 0 || !topicsOf[it.s]) continue;
   const { per, idf } = topicsOf[it.s], list = per[it.u] || [];
+  if (si !== undefined) { const at = list.findIndex(x => x.si === si); if (at >= 0) { it.p = at; topicHits++; continue; } }   // a Mathematics question stands in the lesson section of its topic
   if (list.length < 2) { it.p = list.length === 1 ? 0 : -1; continue; }
   const words = tok(it.q + ' ' + (it.o || []).join(' ') + ' ' + (typeof it.a === 'string' ? it.a : '') + ' ' + (it.e || ''));
   const total = words.reduce((a, w) => a + idf(w), 0);
@@ -202,12 +252,13 @@ for (const b of raw.books) {
   subjects[sj.id].units = b.units.length;
   subjects[sj.id].topics = topicsOf[sj.id].per.map(list => list.map(x => x.t));
 }
-const id = it => crypto.createHash('sha1').update(it.s + '|' + it.u + '|' + it.y + '|' + it.q + '|' + (it.o || []).join('|')).digest('base64url').slice(0, 8);
+const mathKey = it => STRICT_MATH.test(it.s) ? '|' + (it.h || '') : '';
+const id = it => crypto.createHash('sha1').update(it.s + '|' + it.u + '|' + it.y + '|' + it.q + '|' + (it.o || []).join('|') + mathKey(it)).digest('base64url').slice(0, 8);
 const seen = new Set(); const finalItems = [];
 // a multiple-choice question whose options repeat (two "8,888") has two right answers: it is left out and listed for the owner to correct in the book
 const repeated = [];
 for (const it of items) {
-  const key =it.s + '#' + it.y + '#' + norm(it.q) + '#' + (it.o ? it.o.map(norm).sort().join('|') : '');
+  const key = it.s + '#' + it.y + '#' + norm(it.q) + '#' + (it.o ? it.o.map(norm).sort().join('|') : '') + (STRICT_MATH.test(it.s) ? '#' + norm(it.h || '') : '');
   if (seen.has(key)) continue; seen.add(key);
   if (it.y === 'mcq' && (it.o.length < 3 || it.o.length > 5 || new Set(it.o.map(norm)).size !== it.o.length)) { repeated.push([it.s, it.c, it.u, it.q, it.o.join(' | ')]); continue; }
   it.i = id(it); finalItems.push(it);
@@ -238,6 +289,7 @@ files.set('index.json', JSON.stringify(index) + '\n');
   const reviewDir = path.join(ROOT, 'docs', 'test_bank_review');
   fs.mkdirSync(reviewDir, { recursive: true });
   const csv = v => '"' + String(v).replace(/"/g, '""') + '"';
+  fs.writeFileSync(path.join(reviewDir, 'math_left_out.csv'), ['subject,class,chapter number,exercise,question number,question,reason'].concat(leftOut.map(r => r.map(csv).join(','))).join('\n') + '\n');
   fs.writeFileSync(path.join(reviewDir, 'repeated_options.csv'), ['subject,class,chapter number,question,options'].concat(repeated.map(r => [r[0], r[1], r[2] + 1, r[3].slice(0, 200), r[4]].map(csv).join(','))).join('\n') + '\n');
   for (const f of fs.readdirSync(OUT)) if (!files.has(f)) fs.unlinkSync(path.join(OUT, f));
   for (const [f, text] of files) fs.writeFileSync(path.join(OUT, f), text);
@@ -246,6 +298,7 @@ files.set('index.json', JSON.stringify(index) + '\n');
 {
   const k = {}; finalItems.forEach(i => { k[i.y] = (k[i.y] || 0) + 1; });
   console.log('by kind:', JSON.stringify(k), '| topic found for', topicHits, '| word-meaning MCQs', meanings, '| leaves read', stat.leaves, '| dropped', stat.dropped, '| from the Tests Preps bank', legacy, '| without an answer', stat.noAnswer);
+  const M = stat.math; console.log('Mathematics Classes 5-8, 11: ' + M.leaves + ' questions read, ' + M.kept + ' kept; left out (docs/test_bank_review/math_left_out.csv): ' + Object.entries(M.why).map(([w, n]) => n + ' ' + w).join('; '));
   if (stat.unmapped.size) console.log('books without a subject id in the catalog:', [...stat.unmapped].join(', '));
   const bad = []; for (const b of raw.books) { const sj = subjOf[b.id.replace('cls', '')]; if (sj && sj.chapters.length !== b.units.length) bad.push(b.id + ' (' + b.units.length + ' units, ' + sj.chapters.length + ' chapters)'); }
   if (bad.length) console.log('chapter list differs from the unit list: ' + bad.join(', '));
