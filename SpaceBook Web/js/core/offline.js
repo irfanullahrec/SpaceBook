@@ -158,6 +158,7 @@
   function register(opts = {}) {
     if (!nav.serviceWorker) return Promise.resolve(null);
     const url = opts.url || 'sw.js';
+    const hadController = !!nav.serviceWorker.controller;      // false on the very first visit: the page in front of the student is already the newest, so taking control needs no reload
     return nav.serviceWorker.register(url, { scope: opts.scope || './' }).then(reg => {
       const offer = worker => showUpdateBanner(() => { worker.postMessage({ type: 'SKIP_WAITING' }); });
       if (reg.waiting && nav.serviceWorker.controller) offer(reg.waiting);
@@ -167,7 +168,7 @@
         w.addEventListener('statechange', () => { if (w.state === 'installed' && nav.serviceWorker.controller) offer(w); });
       });
       let reloaded = false;
-      nav.serviceWorker.addEventListener('controllerchange', () => { if (reloaded || !opts.reloadOnUpdate) return; reloaded = true; win.location.reload(); });
+      nav.serviceWorker.addEventListener('controllerchange', () => { if (reloaded || !opts.reloadOnUpdate || !hadController) return; reloaded = true; win.location.reload(); });
       return reg;
     }).catch(e => { if (win.console) win.console.warn('service worker not registered:', e && e.message); return null; });
   }
@@ -308,5 +309,10 @@
   const O = window.SBOffline;
   const secure = location.protocol === 'https:' || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
   O.init();
-  if (secure && O.active()) O.register({ reloadOnUpdate: true });
+  // The service worker installs by downloading the whole start-up shell again in the background: that is done after the first screen is drawn (a few seconds
+  // after the page has loaded), so on a slow connection it does not compete with the page the student is waiting for.
+  if (secure && O.active()) {
+    const go = () => O.register({ reloadOnUpdate: true });
+    if (document.readyState === 'complete') setTimeout(go, 3000); else window.addEventListener('load', () => setTimeout(go, 3000));
+  }
 })();

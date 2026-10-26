@@ -33,11 +33,16 @@ self.addEventListener('install', event => {
     const hadShell = (await caches.keys()).some(k => k.startsWith('sb-shell-') && k !== SHELL);
     const cache = await caches.open(SHELL);
     try {
-      for (const u of CFG.shell) {
-        const res = await fetch(new Request(abs(u), { cache: 'reload' }));
+      // A file requested as name?v=<12 hex of its content> IS its content, so the browser's own copy (the page has just loaded it) is as good as a new
+      // download and the install does not fetch it twice; everything else is fetched with cache:'reload' so a version never mixes old and new files.
+      // Six at a time: one after the other, 100 files cost 100 round trips (15 s on a 150 ms connection) while the first screen is being drawn.
+      const one = async u => {
+        const hashed = /[?&]v=[0-9a-f]{12}(?:&|$)/.test(u);
+        const res = await fetch(new Request(abs(u), hashed ? {} : { cache: 'reload' }));
         if (!res.ok) throw new Error('shell file unavailable: ' + u + ' (' + res.status + ')');
         await cache.put(abs(u), res);
-      }
+      };
+      for (let i = 0; i < CFG.shell.length; i += 6) await Promise.all(CFG.shell.slice(i, i + 6).map(one));
     } catch (e) {
       await caches.delete(SHELL);                              // the install fails as a whole: no half-cached shell is left to be mistaken for an old version
       throw e;
