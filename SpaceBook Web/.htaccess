@@ -1,5 +1,47 @@
-# SpaceBook: what the folder shows when no file name is given, and no directory listings.
-# Uploaded by the deploy workflow with the rest of the site (the server did not pick index.html by itself: /spacebook/ showed a file list).
-# Headers, caching and the report-only Content-Security-Policy are in deploy/spacebook.htaccess; the owner installs those by hand (docs/SERVER_CONFIG.md).
+# SpaceBook: server rules that the deploy workflow uploads with the site (Apache 2.4 and LiteSpeed read this file).
+# Everything that can fail on a host without a module sits in <IfModule>, so a missing module skips the block instead of causing a 500.
+# What is NOT here and why: Strict-Transport-Security (browsers remember it for a year: switch it on by hand after the whole site has been seen over https
+# for a while) and the Content-Security-Policy (it can only be Report-Only until the inline handlers are gone; see deploy/spacebook.htaccess and
+# docs/PHASE8_SECURITY.md). Tested on Apache 2.4 with tests/launch/htaccess_check.js.
+
+# what the folder shows when no file name is given, and no directory listings
 DirectoryIndex lazy.html index.html
 Options -Indexes
+
+# never serve a leftover or a backup copy (the deploy does not upload them; a stray one must not be readable)
+<FilesMatch "(~$|\.(bak|orig|swp|sql|sh|log)$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+
+# security headers: nothing here changes what a page can do
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  # another website only ever sees "https://<this site>", never a page or a query (YouTube's player needs a Referer, so not "same-origin")
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # the site is never put inside another page (the Android app uses a WebView, not a frame)
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # SpaceBook uses none of these device features; a script that was injected could not ask for them either
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+
+# caching: a file requested as name?v=<12 hex of its content> IS its content, so the same URL never changes and may be kept for a year;
+# pages and anything else are asked about every time (an ETag / Last-Modified answer is a tiny 304); images and fonts are kept a week
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|css|json|webmanifest)$">
+    Header set Cache-Control "no-cache"
+    # a hashed URL (the RewriteRule below sets SB_HASHED) is kept for a year; this line must be inside the same section, after the one above: a section is applied after
+    # the directives outside it, so the same line outside would lose to "no-cache"
+    Header set Cache-Control "public, max-age=31536000, immutable" env=SB_HASHED
+  </FilesMatch>
+  <FilesMatch "\.(woff2?|png|jpe?g|webp|svg|ico|gif|mp3)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{QUERY_STRING} (^|&)v=[0-9a-f]{12}(&|$)
+    RewriteRule \.(js|css|json)$ - [E=SB_HASHED:1]
+  </IfModule>
+</IfModule>

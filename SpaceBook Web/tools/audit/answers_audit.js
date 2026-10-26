@@ -38,14 +38,17 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
       let cu = 0;
       const inc = k => { rec[k]++; const u = rec.byUnit[cu] || (rec.byUnit[cu] = { leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0 }); u[k]++; };
       R.withBook(B.words, B.book, () => {
+        // what a question without an answer looks like (for tools/launch/answers_worklist.js): the printed page it is on and its own words in each language
+        let pgNow = null, curNode = null;
+        const detail = () => ({ pg: pgNow, no: curNode ? String(curNode.no == null ? '' : curNode.no) : '', node: curNode ? { en: String(curNode.en || ''), ur: String(curNode.ur || ''), ps: String(curNode.ps || '') } : null });
         const leaf = (loc, label, own, qSol, kindOf) => {
           inc('leaves');
-          if (own) { if (hasRec(own)) inc('ans'); else { inc('dangling'); rec.missing.push({ loc, label, why: 'dangling' }); } return; }
+          if (own) { if (hasRec(own)) inc('ans'); else { inc('dangling'); rec.missing.push(Object.assign({ loc, label, why: 'dangling' }, detail())); } return; }
           if (qSol) { inc('viaQ'); return; }
           const a = kindOf();
           if (a.kind === 'part') inc('key');
           else if (a.kind === 'extra') inc('extra');
-          else { inc(a.kind); rec.missing.push({ loc, label, why: a.kind }); }
+          else { inc(a.kind); rec.missing.push(Object.assign({ loc, label, why: a.kind }, detail())); }
         };
         const text = x => String((x && x.en) || '').replace(/\\s+/g, ' ').slice(0, 90);
         const lab = no => String(no == null ? '' : no).split('(').join('').split(')').join('').split('.').join('').trim().toLowerCase();
@@ -70,6 +73,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
           const walk = (b, exId) => {
             if (!b || typeof b !== 'object') return;
             if (b.t === 'exercise') exId = String(b.id);
+            if (b.t === 'page' && b.printed != null) pgNow = b.printed;
             if (b.t === 'q') {
               lastQ = b;
               const loc = 'unit ' + u.number + (exId ? ' ex ' + exId : '') + ' Q' + b.no;
@@ -77,11 +81,11 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
               if (ps.length) {
                 const labs = R.partLabels(ps);
                 const opt = ps.map((p, i) => /^[a-e]$/.test(labs[i]) && labs.slice(0, i).some(x => R.isRoman(x)));
-                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { inc('leaves'); inc('head'); rec.heads.push(loc + ' ' + p.no + ' | ' + text(p)); } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
+                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { inc('leaves'); inc('head'); rec.heads.push(loc + ' ' + p.no + ' | ' + text(p)); } else if (!opt[i]) leaf((curNode = p, loc + ' ' + p.no), text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
               } else if (b.__head) { inc('leaves'); inc('head'); rec.heads.push(loc + ' | ' + text(b)); }
-              else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
+              else leaf((curNode = b, loc), text(b), b.solId, null, () => R.answerOf(exId, b, null));
             }
-            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { inc('leaves'); inc('head'); rec.heads.push('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no + ' | ' + text(p)); } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
+            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { inc('leaves'); inc('head'); rec.heads.push('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no + ' | ' + text(p)); } else leaf((curNode = p, 'unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no), text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
             markHeads(b.blocks);
             (b.blocks || []).forEach(x => walk(x, exId));
           };

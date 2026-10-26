@@ -22,6 +22,9 @@ Options -Indexes
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|js|css|json|webmanifest)$">
     Header set Cache-Control "no-cache"
+    # a hashed URL (the RewriteRule below sets SB_HASHED) is kept for a year; this line must be inside the same section, after the one above: a section is applied after
+    # the directives outside it, so the same line outside would lose to "no-cache"
+    Header set Cache-Control "public, max-age=31536000, immutable" env=SB_HASHED
   </FilesMatch>
   <FilesMatch "\.(woff2?|png|jpe?g|webp|svg|ico|gif)$">
     Header set Cache-Control "public, max-age=604800"
@@ -31,7 +34,6 @@ Options -Indexes
     RewriteCond %{QUERY_STRING} (^|&)v=[0-9a-f]{12}(&|$)
     RewriteRule \.(js|css|json)$ - [E=SB_HASHED:1]
   </IfModule>
-  Header set Cache-Control "public, max-age=31536000, immutable" env=SB_HASHED
 </IfModule>
 
 # 4. security headers (Phase 8). Safe ones first; the CSP below is REPORT-ONLY on purpose.

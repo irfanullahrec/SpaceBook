@@ -87,12 +87,14 @@ async function run() {
       try { new PerformanceObserver(l => { for (const e of l.getEntries()) window.__perf.lcp = e.startTime; }).observe({ type: 'largest-contentful-paint', buffered: true }); } catch (e) { /* older engine */ }
       try { new PerformanceObserver(l => { for (const e of l.getEntries()) { window.__perf.longTasks++; window.__perf.longMs += e.duration; } }).observe({ type: 'longtask', buffered: true }); } catch (e) { /* older engine */ }
     });
-    const rec = { run: r, load: {}, subjects: {} };
+    const rec = { run: r, load: {}, subjects: {}, selfReloads: 0 };
+    // a page that reloads itself (the first visit's service worker taking over, in the older code) interrupts a navigation: the tool waits for the new load and counts it
+    const gotoSafe = async (u, o) => { for (let k = 0; k < 4; k++) { try { return await page.goto(u, o); } catch (e) { if (!/interrupted by another navigation/.test(String(e.message))) throw e; rec.selfReloads++; await sleep(1500); await page.waitForLoadState('load'); } } };
     const ready = () => page.waitForFunction(() => window.SBLibrary && typeof openSubject === 'function' && document.querySelector('#page-content') && document.querySelector('#page-content').innerHTML.length > 1500, null, { timeout: 240000 });
     for (const phase of ['cold', 'repeat', 'repeat2']) {
       resetNet();
       const t0 = Date.now();
-      await page.goto(url + PAGE, { waitUntil: 'load', timeout: 240000 });
+      await gotoSafe(url + PAGE, { waitUntil: 'load', timeout: 240000 });
       const tLoad = Date.now() - t0;
       await ready();
       const tReady = Date.now() - t0;
@@ -106,7 +108,7 @@ async function run() {
     for (const sid of SUBJECTS) {
       const f = findSubject(sid);
       if (!f) { rec.subjects[sid] = { error: 'not in the catalog' }; continue; }
-      await page.goto(url + PAGE, { waitUntil: 'load' }); await ready(); await sleep(3500);
+      await gotoSafe(url + PAGE, { waitUntil: 'load' }); await ready(); await sleep(3500);
       const out = { name: f.subj.name, cls: f.cls, chapters: f.subj.chapters.length };
       resetNet();
       let t = await page.evaluate(async (a) => {
@@ -169,7 +171,7 @@ async function run() {
 
   // medians over the runs
   const res = { schema: 'spacebook.perf-browser/1', chrome: version, profile: PROFILE, cpuThrottle: P.cpu, network: P.net ? { latencyMs: P.net.latency, downKbit: Math.round(P.net.downloadThroughput * 8 / 1024), upKbit: Math.round(P.net.uploadThroughput * 8 / 1024) } : 'none',
-    page: PAGE, runs: RUNS, machine: { cpus: os.cpus().length, cpu: os.cpus()[0].model.trim(), ramGB: Math.round(os.totalmem() / 1073741824) }, load: {}, subjects: {} };
+    page: PAGE, runs: RUNS, selfReloads: runs.reduce((n, x) => n + x.selfReloads, 0), machine: { cpus: os.cpus().length, cpu: os.cpus()[0].model.trim(), ramGB: Math.round(os.totalmem() / 1073741824) }, load: {}, subjects: {} };
   for (const ph of ['cold', 'repeat', 'repeat2']) {
     const keys = Object.keys(runs[0].load[ph]);
     res.load[ph] = Object.fromEntries(keys.map(k => [k, Math.round(median(runs.map(x => x.load[ph][k])) * 10) / 10]));
