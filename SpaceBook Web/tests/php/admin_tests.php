@@ -56,7 +56,7 @@ $x = admin_page('', $ad['jar']);
 check('the overview opens for the administrator', $x['code'] === 200 && strpos($x['body'], 'Overview') !== false && strpos($x['body'], 'What is deployed') !== false, $x['code'] . ' ' . substr($x['body'], 0, 80));
 check('and carries the security headers (no framing, no caching, no indexing, a strict policy)', stripos($x['head'], 'X-Frame-Options: DENY') !== false && stripos($x['head'], 'Cache-Control: no-store') !== false && stripos($x['head'], 'X-Robots-Tag: noindex') !== false && stripos($x['head'], "Content-Security-Policy: default-src 'none'") !== false && stripos($x['head'], 'Content-Type: text/html') !== false);
 check('no inline script or inline style in any admin page', strpos($x['body'], '<script') === false && strpos($x['body'], 'style="') === false && strpos($x['body'], ' onclick') === false);
-check('the deployed content is shown (service worker version from content/sw_version.js)', preg_match('/Service worker version<\/dt><dd>[0-9a-f]{12}</', $x['body']) === 1 && strpos($x['body'], 'Database schema') !== false && strpos($x['body'], 'version 8 of 8') !== false, substr(strip_tags($x['body']), -400));
+check('the deployed content is shown (service worker version from content/sw_version.js)', preg_match('/Service worker version<\/dt><dd>[0-9a-f]{12}</', $x['body']) === 1 && strpos($x['body'], 'Database schema') !== false && strpos($x['body'], 'version 9 of 9') !== false, substr(strip_tags($x['body']), -400));
 
 $x = admin_page('?v=users', $ad['jar']);
 check('people: numbers are masked in the list', strpos($x['body'], $stu['num']) === false && strpos($x['body'], substr($stu['num'], 0, 5) . str_repeat('*', strlen($stu['num']) - 7) . substr($stu['num'], -2)) !== false);

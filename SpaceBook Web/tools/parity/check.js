@@ -125,6 +125,11 @@ const noDown = migs.filter(f => !/^001_/.test(f) && !fs.existsSync(path.join(ROO
 check(`all ${migs.length} migrations have a down script (the baseline excepted)`, noDown.length === 0, noDown);
 const untested = migs.filter(f => !/^001_/.test(f) && !tests.includes(f));
 check('every migration is named in a PHP test (tests/php)', untested.length === 0, untested);
+// api/lib/migrate.php keeps one file per number: with two files of one number the later would silently never run (a branch that adds the next number
+// while another branch already did; renumber the one that merges second)
+const migNumbers = migs.map(f => f.slice(0, 3));
+const dupNumbers = migNumbers.filter((n, i) => migNumbers.indexOf(n) !== i);
+check('no two migrations share a number', dupNumbers.length === 0, dupNumbers);
 
 // ---- the matrix document
 console.log('--- docs/PARITY_MATRIX.md ---');

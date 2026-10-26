@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/search.css?v=dee74f2ba794">
   <link rel="stylesheet" href="css/sb_games.css?v=b1a1952ebb25">
   <link rel="stylesheet" href="css/sb_library.css?v=3ed56743c0c3">
+  <link rel="stylesheet" href="css/sb_feedback.css?v=7fd20195569a">
 </head>
 <body>
 
@@ -79,6 +80,9 @@
       </a>
       <a class="nav-link" data-page="saved">
         <span class="nav-icon">🔖</span> Saved
+      </a>
+      <a class="nav-link" href="#feedback" data-sbfb role="button">
+        <span class="nav-icon">💬</span> Suggest / Report a problem
       </a>
     </nav>
 
@@ -154,6 +158,7 @@
           <div id="searchResultsDropdown" class="header-search-dropdown" style="display:none;"></div>
         </div>
       </div>
+      <button type="button" class="sbfb-header-btn" id="sbFeedbackBtn" data-sbfb title="Suggest or report a problem" aria-label="Suggest or report a problem"><span aria-hidden="true">💬</span><span data-sbfb-badge hidden></span></button>
       <div class="header-user-avatar" title="Account">
         <svg viewBox="0 0 24 24" fill="#0284c7" width="34" height="34">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
@@ -190,6 +195,7 @@
     <footer id="footer">
       <div>TuitionHub &copy; 2026 · Khyber Pakhtunkhwa Textbook Board Curriculum Portal</div>
       <span>Empowering students to achieve their best in Board Exams 🚀</span>
+      <div><a href="#feedback" data-sbfb role="button">Found a mistake or have an idea? Tell us</a></div>
     </footer>
   </div>
 
@@ -265,7 +271,7 @@
   <script src="js/cls2_book_reader.js?v=c971dae2d079"></script>
   <script src="js/cls4_book_reader.js?v=2df235c42a30"></script>
   <script src="js/cls1_book_reader.js?v=7fbc58abb02d"></script>
-  <script src="js/sb_solve.js?v=49bc02435b2b"></script>
+  <script src="js/sb_solve.js?v=e4d40601abb0"></script>
   <script src="js/sb_loading.js?v=fee982c897df"></script>
   <script src="js/sb_book_skin.js?v=990c7388d1ad"></script>
   <script src="js/core/store.js?v=689c5bb51364"></script>
@@ -333,6 +339,7 @@
   <script src="js/sb_arcade_puzzle.js?v=057286a6ecd9"></script>
   <script src="js/sb_arcade_build.js?v=00d9c1511d62"></script>
   <script src="js/sb_library.js?v=0ebc82c47cfe"></script>
+  <script src="js/sb_feedback.js?v=32f2c3744e4d"></script>
   <script src="js/core/a11y.js?v=e407b5d73da7"></script>
   <script src="js/core/search.js?v=9852c6050e2b"></script>
   <script src="js/core/lazycards.js?v=4e00e63c4999"></script>

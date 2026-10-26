@@ -547,6 +547,26 @@
    "web": "text tabs with an emoji in the header bar of Home (renderHome); the News Feed tab is added first by js/sb_feed.js",
    "app": "four icons only, each with its name as a content description, on a rounded tab bar; the News Feed is the tab Home opens on (ui/home/HomeTabs.kt)",
    "counterpart": "Same four tabs and the same data on both platforms; only the look differs, as the owner asked (icon-only tabs on the phone, no \"My preparation\" heading)."
+  },
+  {
+   "id": "feedback.report",
+   "area": "Reports and suggestions",
+   "name": "Send a suggestion, a bug report, a textbook mistake, a wrong answer or a wrong meaning / translation, with an optional picture: the place (class, subject, book, chapter, page, screen, version) is filled in and shown before sending, the report is kept on the device and sent when there is a connection (waiting, received, seen, fixed)",
+   "status": "partial",
+   "web": "js/sb_feedback.js and css/sb_feedback.css (dialog, picture made small by the browser, queue in IndexedDB, My reports); the header button, the menu link and the footer link of index.html; \"Wrong answer? Tell us\" under every answer (js/sb_solve.js)",
+   "app": "the same dialog inside the page the app shows (the website in a WebView); native entry points and the WebView picture chooser: see the exemption",
+   "data": "feedback_reports and feedback_images (migration 009, with a down script); api/feedback.php; the administrator page api/admin.php?v=feedback",
+   "exemption": "The app opens the website's own dialog; what is still to be written on the app side is the entry point (a row in Me and a button in the reader) and the WebView's file chooser for the picture (SbWebView has no onShowFileChooser), which the owner can test only on a phone. Until then the app can send a report without a picture from a page that opens the dialog.",
+   "ownerDecision": "None for the code. Review the Urdu words of the dialog; Pashto is not written (no native review yet)."
+  },
+  {
+   "id": "feedback.admin",
+   "area": "Reports and suggestions",
+   "name": "Receiving the reports: a list with filters, one report with its words, place and picture, a state (new, seen, fixed, won't fix, duplicate) and a note, every change in the audit log",
+   "status": "same",
+   "web": "api/admin.php?v=feedback (administrators only, role set from the command line)",
+   "app": "the same server page: reports from both platforms arrive in one list, marked web or app",
+   "data": "feedback_reports.status and admin_note; audit_log rows admin_feedback_set"
   }
  ],
  "catalogExemptions": [
@@ -584,6 +604,7 @@
    "admin.php",
    "auth.php",
    "feed.php",
+   "feedback.php",
    "health.php",
    "progress.php",
    "study_plans.php",

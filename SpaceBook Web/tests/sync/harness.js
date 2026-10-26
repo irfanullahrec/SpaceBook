@@ -25,7 +25,7 @@ async function start() {
 
   let pass = 0, fail = 0, n = 0;
   const h = {
-    base, sleep,
+    base, sleep, cfg, PHP, ROOT,
     check(label, cond, detail) { if (cond) { pass++; console.log('PASS  ' + label); } else { fail++; console.log('FAIL  ' + label + (detail !== undefined ? '  -> ' + JSON.stringify(detail).slice(0, 300) : '')); } },
     async api(p, body, headers) {
       const res = await fetch(base + p, { method: body === undefined ? 'GET' : 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, headers || {}), body: body === undefined ? undefined : JSON.stringify(body) });

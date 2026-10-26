@@ -2,6 +2,7 @@
 // Account lifecycle: a student's own data export and the purge of deleted accounts. Compatible with PHP 7.4.
 
 require_once __DIR__ . '/feed.php';
+require_once __DIR__ . '/feedback.php';
 
 function sb_json_or_null($s)
 {
@@ -47,6 +48,7 @@ function sb_account_export(PDO $pdo, int $uid): array
         ],
         'saved_items' => $items,       // bookmarks, notes and highlights, reading positions, marked words, best game runs, settings, ticked SLOs
         'feed'        => sb_feed_export($pdo, $uid),      // the student's own posts and comments in the News Feed
+        'feedback'    => sb_fb_export($pdo, $uid),         // the reports (suggestions, mistakes) the student sent while signed in
         'devices'     => $one('SELECT id, name, created_at, last_seen, revoked FROM devices WHERE user_id = ?', [$uid]),
         'activity_log' => $one('SELECT action, ip, created_at FROM audit_log WHERE user_id = ? ORDER BY id DESC LIMIT 200', [$uid]),
     ];
@@ -58,7 +60,7 @@ function sb_purge_user(PDO $pdo, int $uid): void
     foreach (['sync_events', 'sync_changes', 'tp_answers', 'tp_days', 'tp_runs', 'user_sync_state', 'audit_log'] as $t) {
         $pdo->prepare("DELETE FROM $t WHERE user_id = ?")->execute([$uid]);
     }
-    foreach (['coins:u:', 'acts:u:', 'sync:u:', 'pw:u:', 'fread:u:', 'fpost:u:', 'flike:u:', 'fcom:u:', 'fdel:u:', 'frep:u:'] as $prefix) {
+    foreach (['coins:u:', 'acts:u:', 'sync:u:', 'pw:u:', 'fread:u:', 'fpost:u:', 'flike:u:', 'fcom:u:', 'fdel:u:', 'frep:u:', 'fbs:u:'] as $prefix) {
         $pdo->prepare('DELETE FROM rate_limits WHERE bucket = ?')->execute([$prefix . $uid]);
     }
     $pdo->prepare('DELETE FROM users WHERE id = ?')->execute([$uid]);       // devices, progress, plans, test-prep rows go by cascade
