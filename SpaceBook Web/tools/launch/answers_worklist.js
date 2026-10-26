@@ -29,7 +29,8 @@ function pagesDir(id) {
   throw new Error('no page files for ' + id);
 }
 const pageFiles = dir => fs.readdirSync(dir).filter(f => /^p\d+\.txt$/.test(f)).sort();
-const eng = line => line.replace(/^q\s*[^|]*\|\s?/, '').split(' || ')[0].trim();
+const QLINE = /^qp?[ \t]/;                       // q = a question, qp = a part of a question (the page syntax of the Class 6-12 books)
+const eng = line => line.replace(/^qp?\s*[^|]*\|\s?/, '').split(' || ')[0].trim();
 const qNo = line => { const m = /^q\s*([^|]*)\|/.exec(line); return m ? m[1].trim() : null; };
 const norm = s => String(s || '').replace(/\s+/g, ' ').trim();
 
@@ -84,8 +85,8 @@ if (cmd === 'list') {
       let hit = null;
       const cands = [];
       for (const pr of [String(m.pg), String(+m.pg + 1), String(+m.pg - 1)]) for (const pf of byPrinted.get(pr) || []) cands.push(pf);
-      for (const pf of cands) { for (let i = 0; i < pf.lines.length && !hit; i++) { const l = pf.lines[i]; if (/^q[ \t]/.test(l) && norm(eng(l)) === want) hit = { f: pf.f, i }; } if (hit) break; }
-      if (!hit) { unmatched++; for (const pf of byPrinted.get(String(m.pg)) || []) for (let i = 0; i < pf.lines.length && !hit; i++) if (/^q[ \t]/.test(pf.lines[i]) && want && norm(eng(pf.lines[i])).startsWith(want.slice(0, 30))) hit = { f: pf.f, i }; }
+      for (const pf of cands) { for (let i = 0; i < pf.lines.length && !hit; i++) { const l = pf.lines[i]; if (QLINE.test(l) && norm(eng(l)) === want) hit = { f: pf.f, i }; } if (hit) break; }
+      if (!hit) { unmatched++; for (const pf of cands) for (let i = 0; i < pf.lines.length && !hit; i++) if (QLINE.test(pf.lines[i]) && want && norm(eng(pf.lines[i])).startsWith(want.slice(0, 30))) hit = { f: pf.f, i }; }
       n++;
       map[n] = hit ? { file: path.relative(ROOT, path.join(dir, hit.f)).replace(/\\/g, '/'), line: hit.i + 1, text: want.slice(0, 60) } : null;
       out.push(`[${n}] p${m.pg == null ? '?' : m.pg} ${m.loc.replace(/^unit \S+ ?/, '')}${hit ? '' : '  (NOT FOUND IN PAGE FILES)'} | ${want}`);
@@ -120,7 +121,7 @@ if (cmd === 'apply') {
     list.sort((x, y) => y.line - x.line);          // from the bottom up, so the lines above keep their numbers
     for (const e of list) {
       const l = lines[e.line - 1];
-      if (!/^q[ \t]/.test(l) || !norm(eng(l)).startsWith(e.text.slice(0, 30))) { console.error(`${f}:${e.line} is not the question any more ("${e.text}")`); missing++; continue; }
+      if (!QLINE.test(l) || !norm(eng(l)).startsWith(e.text.slice(0, 30))) { console.error(`${f}:${e.line} is not the question any more ("${e.text}")`); missing++; continue; }
       if (/^sol /.test(lines[e.line] || '')) { console.error(`${f}:${e.line} already has an answer line`); missing++; continue; }
       lines.splice(e.line, 0, 'sol ' + e.a);
       done++;

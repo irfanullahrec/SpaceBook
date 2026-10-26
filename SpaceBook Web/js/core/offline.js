@@ -211,7 +211,7 @@
     overlay.className = 'sb-off-overlay'; overlay.setAttribute('role', 'dialog'); overlay.setAttribute('aria-modal', 'true'); overlay.setAttribute('aria-labelledby', 'sbOffTitle');
     overlay.innerHTML = '<div class="sb-off-box"><div class="sb-off-head"><h2 id="sbOffTitle">Offline books</h2><button type="button" class="sb-off-close" aria-label="Close">✕</button></div>' +
       '<p class="sb-off-note">Download a subject while you are online. It then opens with no connection. Your progress is kept on this device and sent when you are back online.</p>' +
-      '<div class="sb-off-meter" aria-live="polite"></div><div class="sb-off-list">Loading…</div>' +
+      '<div class="sb-off-meter" aria-live="polite"></div><div class="sb-off-sync" role="status"></div><div class="sb-off-list">Loading…</div>' +
       '<div class="sb-off-actions"><button type="button" data-act="download" disabled>Download</button><button type="button" data-act="remove" disabled>Remove from this device</button></div>' +
       '<div class="sb-off-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden><div class="sb-off-bar"></div></div><p class="sb-off-msg" role="status"></p></div>';
     doc.body.appendChild(overlay);
@@ -257,8 +257,28 @@
       dl.disabled = e.bytes === 0 && ids.every(id => have[id]);
       dl.textContent = e.bytes ? 'Download (' + mb(e.bytes) + ')' : 'Already on this device';
     };
+    // What happened to the student's progress: waiting on this device, sent to the account, or refused / needs a new sign-in (never pretended sent)
+    const refreshSync = async () => {
+      const S = win.SBSync, el = q('.sb-off-sync');
+      if (!S || !S.status || !el) { if (el) el.hidden = true; return; }
+      let st, rej = [];
+      try { st = await S.status(); rej = (S.rejected && await S.rejected()) || []; } catch (e) { el.hidden = true; return; }
+      let t, kind = 'ok';
+      if (!st.signedIn) { t = 'Your progress is saved on this device. Sign in to keep it on your account as well.' + (st.pendingGuest ? ' (' + st.pendingGuest + ' change' + (st.pendingGuest === 1 ? '' : 's') + ' will be sent after you sign in.)' : ''); kind = 'info'; }
+      else if (!S.isEnabled()) { t = 'You are signed in. Your progress is kept on this device; saving it to the account is not switched on yet.'; kind = 'info'; }
+      else if (st.authLost) { t = 'Please sign in again: ' + st.pending + ' change' + (st.pending === 1 ? '' : 's') + ' could not be sent because the sign-in ran out. Nothing is lost; they are sent after you sign in.'; kind = 'bad'; }
+      else if (st.pending > 0) { t = st.pending + ' change' + (st.pending === 1 ? '' : 's') + ' saved on this device, waiting to be sent' + (nav.onLine === false ? ' (no connection: they are sent when it returns)' : st.lastError ? ' (the last try failed; it will try again)' : '') + '.'; kind = 'wait'; }
+      else { t = 'Everything is saved to your account.'; }
+      if (rej.length) t += ' ' + rej.length + ' older change' + (rej.length === 1 ? ' was' : 's were') + ' refused by the server (out of date or not allowed) and dropped.';
+      const mark = { ok: '✅', info: 'ℹ️', wait: '⏳', bad: '⚠️' }[kind];
+      el.hidden = false; el.className = 'sb-off-sync sb-off-sync-' + kind;
+      el.innerHTML = mark + ' ' + esc(t) + (kind === 'wait' && nav.onLine !== false ? ' <button type="button" data-act="syncnow">Send now</button>' : '');
+    };
+    overlay.addEventListener('click', async e => { if (e.target.closest && e.target.closest('[data-act="syncnow"]')) { try { await win.SBSync.sync(); } catch (x) { /* shown below */ } await refreshSync(); } });
+    win.addEventListener('online', refreshSync);
     overlay.addEventListener('change', refreshButtons);
     await refreshMeter();
+    await refreshSync();
 
     q('[data-act="download"]').addEventListener('click', async () => {
       const ids = selected();

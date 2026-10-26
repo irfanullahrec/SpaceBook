@@ -696,9 +696,18 @@
   }
 
   // build the word table while the page is idle, so the first hover is instant (and, online, the lexicon file is kept by the service worker for offline use)
+  // The table is 0.9 MB. It is fetched in the background (a synchronous request froze the page for as long as the download took: 7 s on a slow connection and
+  // it shared the line with the page the student was waiting for), only once the page has loaded and been used for a few seconds, and built in slices of 10 ms.
+  // A word looked up before that loads and builds it at once, as before.
   try {
-    const pump = () => { try { if (lexicon(10) === null) setTimeout(pump, 40); } catch (e) { /* the first hover builds it */ } };      // slices of 10 ms: the page stays responsive
-    (window.requestIdleCallback || (f => setTimeout(f, 3000)))(pump, { timeout: 8000 });
+    const pump = () => { try { if (lexicon(10) === null) setTimeout(pump, 40); } catch (e) { /* the first hover builds it */ } };
+    const prime = () => {
+      const L = window.SBLazy;
+      if (L && L.preload && !L.isLoaded('js/lexicon_data.js')) L.preload('js/lexicon_data.js').then(pump, () => { /* the first hover loads it */ });
+      else pump();
+    };
+    const later = () => setTimeout(() => (window.requestIdleCallback || (f => setTimeout(f, 0)))(prime, { timeout: 10000 }), 8000);
+    if (document.readyState === 'complete') later(); else window.addEventListener('load', later);
   } catch (e) { /* no idle callback */ }
 
   window.SBTranslate = { translate, detectLang, isQuranic, speak, open: (text, tgt) => openCard(text, tgt, null), prepareSteps, languages: LANGS };

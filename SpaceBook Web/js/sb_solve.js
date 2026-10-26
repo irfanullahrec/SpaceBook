@@ -88,12 +88,14 @@
   // correct answers exist: the data says so itself (sol.open, or a note such as "Model answer" / "answers may vary"), the panel never guesses. One button
   // tells us about a wrong answer (js/sb_feedback.js opens its dialog with the question).
   const MODEL_RX = /model|sample|may vary|answers? vary|نمونے|نمونه/i;
-  const isOpen = (sol, note) => !!sol.open || Object.keys(note || {}).some(k => MODEL_RX.test(String(note[k])));
+  const MODEL_START = /^s*(?:model answer|sample answer|answers? (?:may|will) vary|نمونے کا جواب|نمونہ جواب|د نمونې ځواب)/i;      // an open question's answer starts with these words
+  const isOpen = (sol, note) => !!sol.open || MODEL_START.test(String(sol.answer || '')) || Object.keys(note || {}).some(k => MODEL_RX.test(String(note[k])));
   function footNote(sol, hasSteps, note) {
     const what = sol.src === 'book' ? 'Printed answer from the textbook'
       : isOpen(sol, note) ? 'SpaceBook model answer · not printed in the textbook · other correct answers are possible'
       : `SpaceBook ${hasSteps ? 'explanation' : 'answer'} · not printed in the textbook`;
-    return `<p class="sbs-note" dir="ltr">${what}</p><button type="button" class="sbs-report" data-sbfb="answer">Wrong answer? Tell us</button>`;
+    const check = /needs a teacher.s check|ٹیچر سے تصدیق/i.test(String(sol.answer || '') + ' ' + JSON.stringify(sol.steps || [])) ? ' · ⚠ not yet checked by a teacher' : '';
+    return `<p class="sbs-note" dir="ltr">${what}${check}</p><button type="button" class="sbs-report" data-sbfb="answer">Wrong answer? Tell us</button>`;
   }
   function analyse(sol, med, declared) {
     const lines = {}, note = {};

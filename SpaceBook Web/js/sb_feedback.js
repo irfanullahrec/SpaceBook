@@ -169,7 +169,7 @@
     if (r.code === 200 || r.code === 201) { rec.state = 'sent'; rec.serverId = r.json && r.json.id; rec.sentAt = Date.now(); rec.status = 'received'; rec.error = ''; delete rec.image; }
     else if (r.code === 400 || r.code === 413) { rec.state = 'failed'; rec.permanent = true; rec.error = (r.json && r.json.error) || 'The server did not accept this report.'; }
     else {
-      rec.error = r.code === 429 ? ((r.json && r.json.error) || 'Too many reports. Trying again later.') : (r.code ? 'The server is busy. Trying again later.' : 'No connection. It will be sent when you are online.');
+      rec.error = r.code === 429 ? ((r.json && r.json.error) || 'Too many reports. Trying again later.') : r.code === 404 ? 'The server cannot take reports yet (the website has not been updated). It will be sent after the update.' : (r.code ? 'The server is busy. Trying again later.' : 'No connection. It will be sent when you are online.');
       if (rec.attempts >= 20) { rec.state = 'failed'; rec.error = 'Could not be sent after many tries.'; }
       else { rec.state = 'pending'; rec.nextAt = Date.now() + Math.max(r.retry * 1000, BACKOFF[Math.min(rec.attempts - 1, BACKOFF.length - 1)]); }
     }

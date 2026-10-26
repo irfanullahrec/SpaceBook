@@ -24,7 +24,7 @@
   }
 
   const css = `
-  .bk-wrap{margin:0 0 2.2rem;content-visibility:auto;contain-intrinsic-size:auto 1100px}
+  .bk-wrap{margin:0 0 2.2rem;content-visibility:auto;contain-intrinsic-size:auto 1250px}
   @media print{.bk-wrap{content-visibility:visible}}
   .bk-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.6rem 1.2rem;max-width:1500px;margin:0 auto .55rem;font:700 .92rem system-ui,sans-serif;color:#334155}
   .bk-head b{color:#15803d}
@@ -420,7 +420,7 @@
       sec.className = 'bk-wrap bk-dom';
       const labs = pair.map((e, k) => e ? labelOf(e, i + k) : '').filter(Boolean);
       sec.dataset.label = labs.length > 1 && labs[0] !== labs[1] ? labs[0] + '–' + labs[1] : labs[0];
-      if (pair.some(e => e && /exercise|مشق|تمرین|questions?/i.test((e.innerText || '').slice(0, 120)))) sec.dataset.ex = '1';
+      if (pair.some(e => e && /exercise|مشق|تمرین|questions?/i.test((e.textContent || '').slice(0, 120)))) sec.dataset.ex = '1';
       sec.innerHTML = '<div class="bk-head"><span>Page ' + esc(sec.dataset.label) + '</span><label><input type="checkbox" checked onchange="this.closest(\'.bk-wrap\').querySelector(\'.bk-spread\').classList.toggle(\'bk-ans\',this.checked)"> Show answers &amp; solutions</label></div><div class="bk-spread bk-ans' + (rtl ? ' bk-rtl' : '') + '" dir="' + (rtl ? 'rtl' : 'ltr') + '"></div>';
       const sp = sec.querySelector('.bk-spread');
       pair.forEach((el, k) => {

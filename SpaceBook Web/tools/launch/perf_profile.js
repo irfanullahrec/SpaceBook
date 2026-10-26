@@ -57,7 +57,7 @@ function summarise(profile, label, wallMs) {
   const { s, url } = await serve();
   const channel = process.env.PW_CHANNEL === undefined ? 'chrome' : process.env.PW_CHANNEL;
   const browser = await chromium.launch({ headless: true, ...(channel ? { channel } : {}), args: args.includes('--noinline') ? ['--js-flags=--max-inlined-bytecode-size=0 --no-turbo-inlining'] : [] });
-  const page = await (await browser.newContext({ viewport: { width: 1280, height: 800 } })).newPage();
+  const page = await (await browser.newContext({ viewport: { width: +opt('--width', 1280), height: 800 } })).newPage();
   const cdp = await page.context().newCDPSession(page);
   await cdp.send('Profiler.enable');
   await cdp.send('Profiler.setSamplingInterval', { interval: 200 });

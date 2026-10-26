@@ -1,0 +1,250 @@
+{
+ "schema": "spacebook.perf-browser/1",
+ "chrome": "155.0.8059.86",
+ "profile": "desktop",
+ "cpuThrottle": 1,
+ "network": "none",
+ "page": "lazy.html",
+ "runs": 2,
+ "selfReloads": 0,
+ "machine": {
+  "cpus": 8,
+  "cpu": "Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz",
+  "ramGB": 8
+ },
+ "load": {
+  "cold": {
+   "loadMs": 877,
+   "readyMs": 1029,
+   "kb": 2695,
+   "requests": 169,
+   "dcl": 690.3,
+   "loadEnd": 699.1,
+   "fcp": 540,
+   "lcp": 840,
+   "longTasks": 1,
+   "longMs": 278,
+   "heap": 27,
+   "nodes": 337
+  },
+  "repeat": {
+   "loadMs": 277,
+   "readyMs": 356,
+   "kb": 0,
+   "requests": 169,
+   "dcl": 261.1,
+   "loadEnd": 267.6,
+   "fcp": 128,
+   "lcp": 128,
+   "longTasks": 1,
+   "longMs": 59,
+   "heap": 51,
+   "nodes": 331
+  },
+  "repeat2": {
+   "loadMs": 167,
+   "readyMs": 244,
+   "kb": 0,
+   "requests": 169,
+   "dcl": 151.7,
+   "loadEnd": 159.3,
+   "fcp": 124,
+   "lcp": 208,
+   "longTasks": 1,
+   "longMs": 50,
+   "heap": 57,
+   "nodes": 331
+  }
+ },
+ "subjects": {
+  "cls1-eng": {
+   "name": "English",
+   "cls": "cls1",
+   "chapters": 15,
+   "openBook": {
+    "kb": 284,
+    "requests": 1,
+    "ms": 565
+   },
+   "openChapter": {
+    "chapter": 3,
+    "kb": 40,
+    "requests": 2,
+    "ms": 402,
+    "msPainted": 481,
+    "nodes": 2925,
+    "htmlKB": 183,
+    "heap": 53
+   },
+   "openExercise": {
+    "ms": 127,
+    "msPainted": 148,
+    "nodes": 2866,
+    "htmlKB": 180,
+    "tab": "✍️ Exercise"
+   }
+  },
+  "cls5-math": {
+   "name": "Mathematics",
+   "cls": "cls5",
+   "chapters": 9,
+   "openBook": {
+    "kb": 832,
+    "requests": 3,
+    "ms": 1351
+   },
+   "openChapter": {
+    "chapter": 4,
+    "kb": 28,
+    "requests": 3,
+    "ms": 1719,
+    "msPainted": 1825,
+    "nodes": 16791,
+    "htmlKB": 818,
+    "heap": 94
+   },
+   "openExercise": {
+    "ms": 243,
+    "msPainted": 387,
+    "nodes": 16803,
+    "htmlKB": 820,
+    "tab": "✍️ Exercises"
+   }
+  },
+  "cls8-eng": {
+   "name": "English",
+   "cls": "cls8",
+   "chapters": 8,
+   "openBook": {
+    "kb": 664,
+    "requests": 3,
+    "ms": 413
+   },
+   "openChapter": {
+    "chapter": 2,
+    "kb": 0,
+    "requests": 1,
+    "ms": 582,
+    "msPainted": 623,
+    "nodes": 4497,
+    "htmlKB": 322,
+    "heap": 113
+   },
+   "openExercise": {
+    "ms": 91,
+    "msPainted": 118,
+    "nodes": 4392,
+    "htmlKB": 316,
+    "tab": "✍️ Exercise"
+   }
+  },
+  "cls9-bio": {
+   "name": "Biology",
+   "cls": "cls9",
+   "chapters": 10,
+   "openBook": {
+    "kb": 1075,
+    "requests": 2,
+    "ms": 1136
+   },
+   "openChapter": {
+    "chapter": 8,
+    "kb": 0,
+    "requests": 2,
+    "ms": 987,
+    "msPainted": 1055,
+    "nodes": 7397,
+    "htmlKB": 544,
+    "heap": 151
+   },
+   "openExercise": {
+    "ms": 154,
+    "msPainted": 205,
+    "nodes": 7220,
+    "htmlKB": 532,
+    "tab": "✍️ Solved Exercises"
+   }
+  },
+  "cls10-urdu": {
+   "name": "Urdu",
+   "cls": "cls10",
+   "chapters": 22,
+   "openBook": {
+    "kb": 860,
+    "requests": 2,
+    "ms": 554
+   },
+   "openChapter": {
+    "chapter": 4,
+    "kb": 0,
+    "requests": 3,
+    "ms": 278,
+    "msPainted": 300,
+    "nodes": 1713,
+    "htmlKB": 127,
+    "heap": 188
+   },
+   "openExercise": {
+    "ms": 71,
+    "msPainted": 81,
+    "nodes": 1680,
+    "htmlKB": 125,
+    "tab": "✍️ مشق"
+   }
+  },
+  "cls11-math": {
+   "name": "Mathematics",
+   "cls": "cls11",
+   "chapters": 12,
+   "openBook": {
+    "kb": 1029,
+    "requests": 2,
+    "ms": 1707
+   },
+   "openChapter": {
+    "chapter": 4,
+    "kb": 0,
+    "requests": 7,
+    "ms": 1922,
+    "msPainted": 2281,
+    "nodes": 111371,
+    "htmlKB": 4053,
+    "heap": 189
+   },
+   "openExercise": {
+    "ms": 403,
+    "msPainted": 1810,
+    "nodes": 148850,
+    "htmlKB": 5562,
+    "tab": "✍️ 2. Exercises (7)"
+   }
+  },
+  "cls12-stat": {
+   "name": "Statistics",
+   "cls": "cls12",
+   "chapters": 9,
+   "openBook": {
+    "kb": 1189,
+    "requests": 2,
+    "ms": 2521
+   },
+   "openChapter": {
+    "chapter": 1,
+    "kb": 249,
+    "requests": 2,
+    "ms": 250,
+    "msPainted": 592,
+    "nodes": 25548,
+    "htmlKB": 982,
+    "heap": 222
+   },
+   "openExercise": {
+    "ms": 325,
+    "msPainted": 520,
+    "nodes": 29170,
+    "htmlKB": 1077,
+    "tab": "✍️ Solved Exercises"
+   }
+  }
+ }
+}
