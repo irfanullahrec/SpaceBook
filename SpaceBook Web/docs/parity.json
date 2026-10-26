@@ -349,6 +349,16 @@
    "counterpart": "Both platforms ask the same questions from the same bank, so both have the same gap: no question in the bank for Maths of Classes 5 to 8 and 11 and seven other subjects (cls2 and cls3 Nazira, cls2 Drawing, cls9 Islamiat Ikhtiari, cls11 Physics, cls11 Islamic History, cls12 Chemistry); there the student marks the task themselves and the record says \"marked by you\". Written questions (short, long, numerical) are checked by the student against the book's model answer. Seen in a phone-size browser, not yet on the phone."
   },
   {
+   "id": "tools.plan.days",
+   "area": "Study tools",
+   "name": "Study Plan: the days of a plan are cards, six in a row, each with the percentage done (a tick when every task of the day is done); a click opens the day, a second click closes it",
+   "status": "same",
+   "web": "js/sb_study_plan.js (renderPlan: dayCard, dayDetail, toggleDay); tests/plan/day_cards.js",
+   "app": "the same page in the WebView; on a phone the six cards are narrower (the date, the percentage and the bar; the tick stands before the percentage)",
+   "data": "nothing new: a day's percentage is made from the done counts of its tasks, the way the plan's own percentage is",
+   "counterpart": "same code on both platforms; only the size of the cards differs (CSS, under 640 px wide). Seen in a desktop-size and a phone-size Chrome (tests/plan/day_cards.js); not yet on the phone."
+  },
+  {
    "id": "tools.reminders",
    "area": "Study tools",
    "name": "Study plan reminders",
