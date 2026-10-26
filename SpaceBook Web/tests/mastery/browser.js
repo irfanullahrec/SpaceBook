@@ -168,8 +168,11 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.keyboard.press('Escape');
   await page.waitForFunction(() => !document.getElementById('sbm'));
 
-  // ---- 7. the study bar: Go, then "I've finished - test me"
+  // ---- 7. Go on lesson parts opens the lesson sheet (tests/plan/study_sheet_browser.js); its "Book" button is the way to the chapter page, with the study bar: "I've finished - test me"
   await page.evaluate(() => { const p = SBStudyPlan.plans().find(x => x.id === 'plan_mast1'); SBStudyPlan.go(p, p.sessions[0].tasks.find(x => x.id === 'k_x')); });
+  await page.waitForSelector('#sbss [data-a="book"]', { timeout: 20000 });
+  check('Go on lesson parts opens the lesson sheet', await page.evaluate(() => /Part 1 of 2/.test(document.querySelector('#sbss .sbss-prog').textContent)));
+  await page.click('#sbss [data-a="book"]');
   await page.waitForSelector('#spx-studybar [data-act="check"]', { timeout: 20000 });
   check('after Go the study bar offers "I\'ve finished — test me" (no bare "Done" any more)', await page.$eval('#spx-studybar', e => /test me/.test(e.textContent) && !e.querySelector('[data-act="done"]')));
   await page.click('#spx-studybar [data-act="check"]');

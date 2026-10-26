@@ -359,6 +359,16 @@
    "counterpart": "same code on both platforms; only the size of the cards differs (CSS, under 640 px wide). Seen in a desktop-size and a phone-size Chrome (tests/plan/day_cards.js) and on the phone (held sideways, 2026-10-26: the six cards, a tap opens the day)."
   },
   {
+   "id": "tools.plan.sheet",
+   "area": "Study tools",
+   "name": "Study Plan: Go on lesson parts opens the lessons themselves, one part at a time, in a sheet over the plan; Read & next counts a part as read, the last part offers I've finished - test me",
+   "status": "same",
+   "web": "js/sb_study_sheet.js (the sheet, the parts of a chapter), js/sb_study_plan.js (go, studySheet); tests/plan/study_sheet_data.js, tests/plan/study_sheet_browser.js",
+   "app": "the same page in the WebView; the sheet fills the phone screen with the button at the bottom",
+   "data": "nothing new: a part read is one more on the task's done count (k.done, saved with the plan); the text is the book's own, from the same data the chapter page draws",
+   "counterpart": "same code on both platforms. 124 of the 132 subjects of the plan have a sheet (Class 9 Physics and Urdu, Class 9 and Class 10 Islamiat, Class 10 English, Class 12 Physics, Chemistry and Biology do not: their books are not in the form the sheet reads, so Go takes the student to the chapter page as before); chapters whose book has no lesson section also go to the chapter page. Other kinds of task (SLOs, MCQs, questions) still go to the chapter page. Seen in a phone-size and a desktop-size Chrome (tests/plan/study_sheet_browser.js); not yet on the phone."
+  },
+  {
    "id": "tools.reminders",
    "area": "Study tools",
    "name": "Study plan reminders",
