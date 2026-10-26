@@ -34,7 +34,7 @@ const check = (name, ok, detail) => { if (ok) { pass++; console.log('PASS  ' + n
       setTimeout(() => SBStudyPlan.open('plan_m_' + cls), 300);
     }, [cls, subj]);
     await page.waitForSelector('.spx-dc-today', { timeout: 20000 });                              // the days of the plan are cards; today's holds the tasks
-    await page.click('.spx-dc-today');
+    await page.evaluate(() => document.querySelector('.spx-dc-today').click());                   // the reminder banner may sit over it
     await page.waitForSelector('.spx-task', { timeout: 20000 });
     for (const id of ['k_read', 'k_num', 'k_mcq']) {
       await page.click('.spx-task[data-task="' + id + '"] input[data-act="tick"]');
