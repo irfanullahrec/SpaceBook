@@ -33,16 +33,19 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
     const L = window['CLS' + n + '_BOOKS']; if (!L) continue;
     Object.keys(L).forEach(k => {
       const B = L[k]; if (!B || !B.units) return;
-      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0, missing: [], heads: [] };
+      const rec = { id: 'cls' + n + ':' + k, cls: n, subject: k, leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0, missing: [], heads: [], byUnit: {} };
+      // the same counts per chapter (unit index), for tools/launch/exercise_coverage.js
+      let cu = 0;
+      const inc = k => { rec[k]++; const u = rec.byUnit[cu] || (rec.byUnit[cu] = { leaves: 0, ans: 0, viaQ: 0, key: 0, extra: 0, whole: 0, none: 0, head: 0, dangling: 0 }); u[k]++; };
       R.withBook(B.words, B.book, () => {
         const leaf = (loc, label, own, qSol, kindOf) => {
-          rec.leaves++;
-          if (own) { if (hasRec(own)) rec.ans++; else { rec.dangling++; rec.missing.push({ loc, label, why: 'dangling' }); } return; }
-          if (qSol) { rec.viaQ++; return; }
+          inc('leaves');
+          if (own) { if (hasRec(own)) inc('ans'); else { inc('dangling'); rec.missing.push({ loc, label, why: 'dangling' }); } return; }
+          if (qSol) { inc('viaQ'); return; }
           const a = kindOf();
-          if (a.kind === 'part') rec.key++;
-          else if (a.kind === 'extra') rec.extra++;
-          else { rec[a.kind]++; rec.missing.push({ loc, label, why: a.kind }); }
+          if (a.kind === 'part') inc('key');
+          else if (a.kind === 'extra') inc('extra');
+          else { inc(a.kind); rec.missing.push({ loc, label, why: a.kind }); }
         };
         const text = x => String((x && x.en) || '').replace(/\\s+/g, ' ').slice(0, 90);
         const lab = no => String(no == null ? '' : no).split('(').join('').split(')').join('').split('.').join('').trim().toLowerCase();
@@ -62,7 +65,7 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
           if (nx && nx.t === 'q' && FIRST.includes(lab(nx.no)) && !FIRST.includes(lab(b.no))) b.__head = true;
           if (nx && nx.t === 'parts' && j > i + 1) b.__head = true;
         }); };
-        B.units.forEach(u => (u.sections || []).forEach(s => {
+        B.units.forEach((u, ui) => (cu = ui, (u.sections || [])).forEach(s => {
           let lastQ = null;
           const walk = (b, exId) => {
             if (!b || typeof b !== 'object') return;
@@ -74,11 +77,11 @@ const data = JSON.parse(app.run(`JSON.stringify((() => {
               if (ps.length) {
                 const labs = R.partLabels(ps);
                 const opt = ps.map((p, i) => /^[a-e]$/.test(labs[i]) && labs.slice(0, i).some(x => R.isRoman(x)));
-                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { rec.leaves++; rec.head++; rec.heads.push(loc + ' ' + p.no + ' | ' + text(p)); } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
-              } else if (b.__head) { rec.leaves++; rec.head++; rec.heads.push(loc + ' | ' + text(b)); }
+                ps.forEach((p, i) => { if (b.__tail && i === ps.length - 1 && !p.solId && !b.solId) { inc('leaves'); inc('head'); rec.heads.push(loc + ' ' + p.no + ' | ' + text(p)); } else if (!opt[i]) leaf(loc + ' ' + p.no, text(p) || text(b), p.solId, b.solId, () => R.answerOf(exId, b, labs[i])); });
+              } else if (b.__head) { inc('leaves'); inc('head'); rec.heads.push(loc + ' | ' + text(b)); }
               else leaf(loc, text(b), b.solId, null, () => R.answerOf(exId, b, null));
             }
-            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { rec.leaves++; rec.head++; rec.heads.push('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no + ' | ' + text(p)); } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
+            if (b.t === 'parts') { const labs = R.partLabels(b.parts || []); (b.parts || []).forEach((p, i) => { if (b.__tail && i === b.parts.length - 1 && !p.solId) { inc('leaves'); inc('head'); rec.heads.push('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no + ' | ' + text(p)); } else leaf('unit ' + u.number + (exId ? ' ex ' + exId : '') + ' parts ' + p.no, text(p), p.solId, null, () => lastQ ? R.answerOf(exId, lastQ, labs[i]) : ({ kind: 'none' })); }); }
             markHeads(b.blocks);
             (b.blocks || []).forEach(x => walk(x, exId));
           };
