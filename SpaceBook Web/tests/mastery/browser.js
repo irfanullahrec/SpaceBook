@@ -38,6 +38,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     document.querySelector('.nav-link[data-page="study-plan"]').click();
     setTimeout(() => SBStudyPlan.open('plan_mast1'), 300);
   });
+  await page.waitForSelector('.spx-dc-today', { timeout: 20000 });                                // the days of the plan are cards; today's holds the tasks
+  await page.click('.spx-dc-today');
   await page.waitForSelector('.spx-task', { timeout: 20000 });
   const row = id => '.spx-task[data-task="' + id + '"]';
   const taskState = id => page.evaluate(i => { const p = SBStudyPlan.plans().find(x => x.id === 'plan_mast1'); const k = p.sessions[0].tasks.find(x => x.id === i); return { done: k.done, n: k.n, learn: k.learn || null }; }, id);
