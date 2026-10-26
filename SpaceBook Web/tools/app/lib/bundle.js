@@ -44,7 +44,7 @@ function shellEntries() {
 }
 
 // The golden files of tests/parity that the app's unit tests read. The app's copy is generated; nothing in it is edited by hand.
-const TEST_RESOURCES = ['events_contract.json', 'locator_golden.json'];
+const TEST_RESOURCES = ['events_contract.json', 'locator_golden.json', 'feed_contract.json'];
 
 function plan() {
   const files = new Map();

@@ -55,11 +55,11 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 7 pending', $s['current'] === 0 && count($s['pending']) === 7 && $s['latest'] === 7, json_encode($s));
+check('empty database is at version 0 with 8 pending', $s['current'] === 0 && count($s['pending']) === 8 && $s['latest'] === 8, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies all seven migrations', count($applied) === 7, json_encode($applied));
+check('up applies all eight migrations', count($applied) === 8, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
-foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors', 'user_items'] as $t) {
+foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors', 'user_items', 'feed_posts', 'feed_comments', 'feed_post_likes', 'feed_comment_likes', 'feed_reports'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
 }
 check('second up changes nothing', sb_migrate_up($pdo) === []);
@@ -67,6 +67,8 @@ check('second up changes nothing', sb_migrate_up($pdo) === []);
 $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_hash) VALUES ('A','B','student','923001110001','x')");
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
+$undone8 = sb_migrate_down($pdo, 1);
+check('down 1 removes the 008 news feed tables only', $undone8 === ['008_feed.sql'] && !array_intersect(['feed_posts', 'feed_comments', 'feed_post_likes', 'feed_comment_likes', 'feed_reports'], $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN)) && in_array('user_items', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('users', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone8));
 $undone7 = sb_migrate_down($pdo, 1);
 check('down 1 removes the 007 user items table and its change-log rows only', $undone7 === ['007_user_items.sql'] && !in_array('user_items', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('sync_errors', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone7));
 $undone6 = sb_migrate_down($pdo, 1);
@@ -79,7 +81,7 @@ check('down 1 more removes the 003 tables and the plan rev column', sb_migrate_d
 check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 7', count(sb_migrate_up($pdo)) === 6 && sb_schema_version($pdo) === 7);
+check('up again restores version 8', count(sb_migrate_up($pdo)) === 7 && sb_schema_version($pdo) === 8);
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -180,7 +182,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 7 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 8 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -738,6 +740,7 @@ check('other accounts are untouched by the purge', (int)$t->query("SELECT COUNT(
 // ============================================================ 7. user items, then administration, backup and restore drill
 require __DIR__ . '/items_tests.php';
 require __DIR__ . '/admin_tests.php';
+require __DIR__ . '/feed_tests.php';
 
 echo "--- backup / restore drill ---\n";
 function run_php(array $args, array $env = []): array

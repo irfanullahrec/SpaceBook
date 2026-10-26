@@ -126,6 +126,7 @@ jobs:
           node --max-old-space-size=6144 tests/parity/words_reset.js
           node --max-old-space-size=6144 tests/plan/reminders.js
           node tests/sync/entitlements.js
+          node tests/feed/cards.js
 
   # API tests on the PHP version the live host runs (7.4) with a scratch MySQL. Not yet a deploy gate:
   # continue-on-error until this job has been seen green once on GitHub, then add it to deploy.needs.

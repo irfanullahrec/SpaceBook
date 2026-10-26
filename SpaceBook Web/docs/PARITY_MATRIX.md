@@ -123,6 +123,15 @@ Status: **same** (one implementation or two with identical data and rules) · **
 | other.install | Install banner and service worker | manifest.webmanifest, sw.js | - | device | platform-specific |
 | other.quiz | Quick Quiz, Swipe & Learn, XP / streak / daily mission / chest | - | ui/play, data/play (routes exist, no screen opens them) | device only, never sent | retired ⚠ |
 
+## News Feed
+
+| id | Feature | Web | App | Data lives in | Status |
+|---|---|---|---|---|---|
+| social.feed | News Feed on Home: students read each other's posts, like, comment (with replies), share a post into their own feed or out of the app, report a post, delete their own; opens first | js/sb_feed.js (Home tab "News Feed", first tab, hooked into renderHome / switchHomeStatsTab) | ui/feed/* (Home tab with the news icon, first tab and open by default): FeedScreen, FeedPostItem, CommentsSheet, ComposerSheet, FeedViewModel, data/repo/FeedRepository | tables feed_posts, feed_comments, feed_post_likes, feed_comment_likes, feed_reports (migration 008); api/feed.php; signed-in students only, the server shows an author as "Ali K." and nothing else | same |
+| social.feedcards | Post kinds: plain post, question, My Stats snapshot, study progress of today, a study plan; the card is made from the student's own records and stored as small JSON the server rebuilds from a whitelist | SBFeed.cards in js/sb_feed.js (reads sbTP:v1:<user>, sb_study_plans_v1, sbWS:progress:<user> like assets/prep_summary.js) | data/feed/FeedCards.kt (FeedCardBuilder from the PrepSnapshot that assets/prep_summary.js makes) | feed_posts.kind and attach_json; the golden shapes are tests/parity/feed_contract.json (read by the PHP test, and by the app's FeedLogicTest as src/test/resources/parity/feed_contract.json) | same |
+| social.safety | Safety for students: no e-mail address, phone number or link in a post, rate limits per student, a report button, three different reports hide a post or comment until an administrator looks (api/admin.php?v=feed), delete your own | the Report and Delete items of the post menu in js/sb_feed.js; the server rules in api/lib/feed.php; the administrator page api/admin.php?v=feed | ReportDialog and the delete confirmation in ui/feed/ComposerSheet.kt; the same server rules | feed_reports (one report per student per post or comment), feed_posts.status and feed_comments.status (visible, hidden, removed), audit_log rows feed_post / feed_report / feed_restore / feed_remove | same |
+| ui.hometabs | The tab strip of Home: News Feed, My Stats, Project Stats, My Account | text tabs with an emoji in the header bar of Home (renderHome); the News Feed tab is added first by js/sb_feed.js | four icons only, each with its name as a content description, on a rounded tab bar; the News Feed is the tab Home opens on (ui/home/HomeTabs.kt) |  | platform-specific |
+
 ## Why a row is not plainly "same"
 
 - **acct.forgot Forgot password** (blocked): The server has no channel to send a reset code (the WhatsApp number is the identity and no provider is connected), so neither platform can offer a reset. Nothing is faked on either side. **Owner decision:** Pick the channel for a password reset (WhatsApp OTP through a provider, or an administrator-assisted reset): HANDOVER decision 9.
@@ -149,6 +158,7 @@ Status: **same** (one implementation or two with identical data and rules) · **
 - **sec.vault The downloaded books are stored encrypted on the phone; the device token is sealed; a release build checks its own signature and blocks screenshots** (app-only): A website cannot hide what the browser must receive to show it (docs/PHASE8_SECURITY.md), so it has no equivalent; the app's protection is for the copy kept on the phone. Not a lock against someone who controls an unlocked rooted phone.
 - **other.install Install banner and service worker** (platform-specific): The app is the installed form of the website; nothing to install inside it.
 - **other.quiz Quick Quiz, Swipe & Learn, XP / streak / daily mission / chest** (retired): These belonged to the app's old play-style Home. Since Home became My Stats / Project Stats / My Account on 2026-10-23 nothing navigates to the quiz or reels routes and the XP, streak and chest have no screen. The code and the offline question bank (assets/mcq_bank.json, kept in step with the website's bank by sync_app) remain in case a Practice entry brings them back; Tests Preps and the Games cover the same questions. **Owner decision:** Bring Quick Quiz / Swipe & Learn back under Practice, or delete that code and the 1.2 MB question bank from the app?
+- **ui.hometabs The tab strip of Home: News Feed, My Stats, Project Stats, My Account** (platform-specific): Same four tabs and the same data on both platforms; only the look differs, as the owner asked (icon-only tabs on the phone, no "My preparation" heading).
 
 ## Exemptions in the data
 
@@ -157,9 +167,9 @@ Status: **same** (one implementation or two with identical data and rules) · **
 
 ## One database, the same rules
 
-Endpoints the server publishes: `admin.php`, `auth.php`, `health.php`, `progress.php`, `study_plans.php`, `test_prep.php`, `v2/entitlements.php`, `v2/sync.php`.
+Endpoints the server publishes: `admin.php`, `auth.php`, `feed.php`, `health.php`, `progress.php`, `study_plans.php`, `test_prep.php`, `v2/entitlements.php`, `v2/sync.php`.
 
-Endpoints the app calls: `POST api/auth.php?action=register`, `POST api/auth.php?action=login`, `POST api/auth.php?action=logout`, `GET api/auth.php?action=me`, `POST api/v2/sync.php`, `GET api/v2/sync.php`, `GET api/v2/entitlements.php`, `GET content/app_catalog.json`.
+Endpoints the app calls: `POST api/auth.php?action=register`, `POST api/auth.php?action=login`, `POST api/auth.php?action=logout`, `GET api/auth.php?action=me`, `POST api/v2/sync.php`, `GET api/v2/sync.php`, `GET api/v2/entitlements.php`, `GET content/app_catalog.json`, `GET api/feed.php?action=list`, `GET api/feed.php?action=comments`, `POST api/feed.php?action=create`, `POST api/feed.php?action=share`, `POST api/feed.php?action=like`, `POST api/feed.php?action=comment`, `POST api/feed.php?action=delete`, `POST api/feed.php?action=comment_delete`, `POST api/feed.php?action=report`.
 
 Sync events (`api/v2/sync.php`): accepted `step`, `again`, `plan.save`, `plan.delete`, `tp.answer`, `tp.session`, `tp.run`, `tp.run.clear`, `tp.import`, `item.put`, `item.del`; the website sends `step`, `again`, `plan.save`, `plan.delete`, `tp.answer`, `tp.session`, `tp.run`, `tp.run.clear`, `tp.import`, `item.put`, `item.del`; the app sends `step`, `item.put`, `item.del`.
 
@@ -185,3 +195,5 @@ One owner switch, published by the server (flags.syncV2 in api/auth.php?action=m
 - Commit the other session's Home work (acct.plans, stats.home).
 - Bring Quick Quiz / Swipe & Learn back or delete the code (other.quiz).
 - Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions).
+- News Feed moderation: today three different students reporting a post or comment hides it until an administrator (users.role admin, api/admin.php, News Feed page) restores or removes it, texts with an e-mail address, a phone number or a link are refused, and an author is shown as first name plus the initial of the last name. For a school app the owner may want stricter rules (a teacher approves posts first, a word filter in Urdu / Pashto / English, posting only inside a school, no posting for the youngest classes): say which and it is a change in api/lib/feed.php only.
+- News Feed reading is for signed-in students only. Opening it to guests is one condition in api/feed.php, but every post would then be readable by anyone who finds the address.

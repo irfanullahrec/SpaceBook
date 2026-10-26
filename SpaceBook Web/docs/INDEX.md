@@ -19,6 +19,7 @@ This repository contains two core platforms:
 | [PROTECT_LIST](./PROTECT_LIST.md) | what must not be broken or deleted, and why |
 | [PROGRESS_LOG](./PROGRESS_LOG.md) | what was done, what was verified, what was not, what is next |
 | [PARITY_MATRIX](./PARITY_MATRIX.md) | the website and the Android app function by function: same, platform-specific or open, with the reasons (generated from `parity.json`; architecture section 11) |
+| [NEWS_FEED](./NEWS_FEED.md) | the News Feed on Home (website and app): what students post, the tables and the endpoint, the safety rules, what the owner decides, the tests |
 | [BISE Swat alignment](./07_BISE_SWAT_ALIGNMENT.md) | what the Swat Board publishes for Classes 9-12 and how the app uses it (pattern, SLOs, model papers, answer sheet), findings, open points |
 | [ACCESSIBILITY](./ACCESSIBILITY.md), [SEARCH](./SEARCH.md), [ADMIN](./ADMIN.md), [CONTENT_REVIEW](./CONTENT_REVIEW.md), [PHASE3_LAZY_LOADING](./PHASE3_LAZY_LOADING.md), [PHASE4_OFFLINE](./PHASE4_OFFLINE.md), [PHASE5_HOOKS](./PHASE5_HOOKS.md), [PHASE7_LEXICON](./PHASE7_LEXICON.md), [PHASE8_SECURITY](./PHASE8_SECURITY.md), [SERVER_CONFIG](./SERVER_CONFIG.md), [BACKUP_RESTORE](./BACKUP_RESTORE.md), [CLEANUP_LOG](./CLEANUP_LOG.md) | the feature and phase notes |
 

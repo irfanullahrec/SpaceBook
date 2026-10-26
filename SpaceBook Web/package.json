@@ -13,6 +13,7 @@
     "test:library": "node --max-old-space-size=8192 tests/library/browser.js",
     "test:reader": "node --max-old-space-size=6144 tests/reader/workspace.js && node --max-old-space-size=6144 tests/reader/cards.js && node --max-old-space-size=6144 tests/fills/browser.js",
     "test:tools": "node tests/createtest/data.js && node tests/grammar/data.js && node --max-old-space-size=6144 tests/createtest/browser.js && node --max-old-space-size=6144 tests/grammar/browser.js && node --max-old-space-size=6144 tests/tutor/browser.js",
+    "test:feed": "node tests/feed/cards.js && node --max-old-space-size=3072 tests/feed/browser.js",
     "test:sync": "node tests/sync/unit.js && node tests/sync/e2e.js && node tests/sync/items.js && node tests/sync/parity_e2e.js",
     "parity": "node tools/parity/check.js && node --max-old-space-size=8192 tools/parity/data_parity.js && node tests/parity/locator.js && node --max-old-space-size=6144 tests/plan/reminders.js && node tests/sync/entitlements.js",
     "parity:app": "node --max-old-space-size=8192 tests/parity/app_pages.js",
