@@ -356,7 +356,7 @@
    "web": "js/sb_study_plan.js (renderPlan: dayCard, dayDetail, toggleDay); tests/plan/day_cards.js",
    "app": "the same page in the WebView; on a phone the six cards are narrower (the date, the percentage and the bar; the tick stands before the percentage)",
    "data": "nothing new: a day's percentage is made from the done counts of its tasks, the way the plan's own percentage is",
-   "counterpart": "same code on both platforms; only the size of the cards differs (CSS, under 640 px wide). Seen in a desktop-size and a phone-size Chrome (tests/plan/day_cards.js); not yet on the phone."
+   "counterpart": "same code on both platforms; only the size of the cards differs (CSS, under 640 px wide). Seen in a desktop-size and a phone-size Chrome (tests/plan/day_cards.js) and on the phone (held sideways, 2026-10-26: the six cards, a tap opens the day)."
   },
   {
    "id": "tools.reminders",
