@@ -1,6 +1,6 @@
 {
  "schema": "spacebook.parity/1",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "statuses": [
   "same",
   "platform-specific",
@@ -481,6 +481,42 @@
    "data": "device only, never sent",
    "exemption": "These belonged to the app's old play-style Home. Since Home became My Stats / Project Stats / My Account on 2026-10-23 nothing navigates to the quiz or reels routes and the XP, streak and chest have no screen. The code and the offline question bank (assets/mcq_bank.json, kept in step with the website's bank by sync_app) remain in case a Practice entry brings them back; Tests Preps and the Games cover the same questions.",
    "ownerDecision": "Bring Quick Quiz / Swipe & Learn back under Practice, or delete that code and the 1.2 MB question bank from the app?"
+  },
+  {
+   "id": "social.feed",
+   "area": "News Feed",
+   "name": "News Feed on Home: students read each other's posts, like, comment (with replies), share a post into their own feed or out of the app, report a post, delete their own; opens first",
+   "status": "same",
+   "web": "js/sb_feed.js (Home tab \"News Feed\", first tab, hooked into renderHome / switchHomeStatsTab)",
+   "app": "ui/feed/* (Home tab with the news icon, first tab and open by default): FeedScreen, FeedPostItem, CommentsSheet, ComposerSheet, FeedViewModel, data/repo/FeedRepository",
+   "data": "tables feed_posts, feed_comments, feed_post_likes, feed_comment_likes, feed_reports (migration 008); api/feed.php; signed-in students only, the server shows an author as \"Ali K.\" and nothing else"
+  },
+  {
+   "id": "social.feedcards",
+   "area": "News Feed",
+   "name": "Post kinds: plain post, question, My Stats snapshot, study progress of today, a study plan; the card is made from the student's own records and stored as small JSON the server rebuilds from a whitelist",
+   "status": "same",
+   "web": "SBFeed.cards in js/sb_feed.js (reads sbTP:v1:<user>, sb_study_plans_v1, sbWS:progress:<user> like assets/prep_summary.js)",
+   "app": "data/feed/FeedCards.kt (FeedCardBuilder from the PrepSnapshot that assets/prep_summary.js makes)",
+   "data": "feed_posts.kind and attach_json; the golden shapes are tests/parity/feed_contract.json (read by the PHP test, and by the app's FeedLogicTest as src/test/resources/parity/feed_contract.json)"
+  },
+  {
+   "id": "social.safety",
+   "area": "News Feed",
+   "name": "Safety for students: no e-mail address, phone number or link in a post, rate limits per student, a report button, three different reports hide a post or comment until an administrator looks (api/admin.php?v=feed), delete your own",
+   "status": "same",
+   "web": "the Report and Delete items of the post menu in js/sb_feed.js; the server rules in api/lib/feed.php; the administrator page api/admin.php?v=feed",
+   "app": "ReportDialog and the delete confirmation in ui/feed/ComposerSheet.kt; the same server rules",
+   "data": "feed_reports (one report per student per post or comment), feed_posts.status and feed_comments.status (visible, hidden, removed), audit_log rows feed_post / feed_report / feed_restore / feed_remove"
+  },
+  {
+   "id": "ui.hometabs",
+   "area": "News Feed",
+   "name": "The tab strip of Home: News Feed, My Stats, Project Stats, My Account",
+   "status": "platform-specific",
+   "web": "text tabs with an emoji in the header bar of Home (renderHome); the News Feed tab is added first by js/sb_feed.js",
+   "app": "four icons only, each with its name as a content description, on a rounded tab bar; the News Feed is the tab Home opens on (ui/home/HomeTabs.kt)",
+   "counterpart": "Same four tabs and the same data on both platforms; only the look differs, as the owner asked (icon-only tabs on the phone, no \"My preparation\" heading)."
   }
  ],
  "catalogExemptions": [
@@ -517,6 +553,7 @@
   "server": [
    "admin.php",
    "auth.php",
+   "feed.php",
    "health.php",
    "progress.php",
    "study_plans.php",
@@ -532,9 +569,18 @@
    "POST api/v2/sync.php",
    "GET api/v2/sync.php",
    "GET api/v2/entitlements.php",
-   "GET content/app_catalog.json"
+   "GET content/app_catalog.json",
+   "GET api/feed.php?action=list",
+   "GET api/feed.php?action=comments",
+   "POST api/feed.php?action=create",
+   "POST api/feed.php?action=share",
+   "POST api/feed.php?action=like",
+   "POST api/feed.php?action=comment",
+   "POST api/feed.php?action=delete",
+   "POST api/feed.php?action=comment_delete",
+   "POST api/feed.php?action=report"
   ],
-  "note": "The page the app shows (the website in a WebView) calls auth.php, progress.php, study_plans.php, test_prep.php and v2/sync.php itself, with the session cookie the app shares with it; the app's own Kotlin code calls the eight listed."
+  "note": "The page the app shows (the website in a WebView) calls auth.php, progress.php, study_plans.php, test_prep.php and v2/sync.php itself, with the session cookie the app shares with it; the app's own Kotlin code calls the seventeen listed (the eight of sign-in, sync and the catalog, and the nine of the News Feed, api/feed.php, which the website calls from js/sb_feed.js with its session cookie)."
  },
  "syncEvents": {
   "server": [
@@ -617,6 +663,8 @@
   "Password reset channel (acct.forgot).",
   "Commit the other session's Home work (acct.plans, stats.home).",
   "Bring Quick Quiz / Swipe & Learn back or delete the code (other.quiz).",
-  "Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions)."
+  "Show Play Group / Nursery / KG in the app as coming-soon cards, and supply the missing Class 1 Urdu, Class 1 GK and Class 3 Urdu scans (catalogExemptions).",
+  "News Feed moderation: today three different students reporting a post or comment hides it until an administrator (users.role admin, api/admin.php, News Feed page) restores or removes it, texts with an e-mail address, a phone number or a link are refused, and an author is shown as first name plus the initial of the last name. For a school app the owner may want stricter rules (a teacher approves posts first, a word filter in Urdu / Pashto / English, posting only inside a school, no posting for the youngest classes): say which and it is a change in api/lib/feed.php only.",
+  "News Feed reading is for signed-in students only. Opening it to guests is one condition in api/feed.php, but every post would then be readable by anyone who finds the address."
  ]
 }

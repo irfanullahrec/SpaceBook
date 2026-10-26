@@ -5,7 +5,9 @@
 //   GET  api/admin.php?v=user&id=N         one person (full number; opening it is written to the audit log) with the block / unblock form
 //   GET  api/admin.php?v=sync              rejected sync events by code, and the latest ones
 //   GET  api/admin.php?v=audit&action=&uid=       the audit log
+//   GET  api/admin.php?v=feed             reported and hidden News Feed posts and comments, with Restore / Remove
 //   POST api/admin.php  action=set_status  id, to=blocked|active, reason, csrf
+//   POST api/admin.php  action=feed_set    type=p|c, id, to=visible|removed, csrf
 // Only a signed-in, ACTIVE user whose users.role is 'admin' gets a page (role set from the command line: php api/migrate.php make-admin <number>);
 // anyone else gets the same plain 404 a missing file would. Role and status are read from the database on every request.
 // Compatible with PHP 7.4.
@@ -14,6 +16,7 @@ require __DIR__ . '/db.php';
 require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
 require __DIR__ . '/lib/admin.php';
+require __DIR__ . '/lib/feed.php';
 
 header('Cache-Control: no-store');
 header('X-Frame-Options: DENY');
@@ -50,6 +53,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!sb_request_is_same_site()) admin_stop(403, 'Request not allowed');
     if (!sb_admin_csrf_ok(isset($_POST['csrf']) ? $_POST['csrf'] : '')) admin_stop(403, 'The form expired: go back, reload and try again');
     $act = isset($_POST['action']) ? (string)$_POST['action'] : '';
+    if ($act === 'feed_set') {
+        $r = sb_feed_admin_set($pdo, $me, (string)(isset($_POST['type']) ? $_POST['type'] : 'p'), (int)(isset($_POST['id']) ? $_POST['id'] : 0), (string)(isset($_POST['to']) ? $_POST['to'] : ''));
+        $_SESSION['admin_flash'] = $r['ok'] ? (!empty($r['unchanged']) ? 'Nothing to change.' : 'Done.') : 'Not done: ' . $r['error'];
+        header('Location: admin.php?v=feed', true, 303);
+        exit;
+    }
     if ($act !== 'set_status') admin_stop(400, 'Unknown action');
     $id = (int)(isset($_POST['id']) ? $_POST['id'] : 0);
     $r = sb_admin_set_status($pdo, $me, $id, (string)(isset($_POST['to']) ? $_POST['to'] : ''), (string)(isset($_POST['reason']) ? $_POST['reason'] : ''));
@@ -64,7 +73,7 @@ $csrf = sb_admin_csrf();
 
 function admin_head(string $title, string $view, array $me, ?string $flash): void
 {
-    $nav = ['home' => 'Overview', 'users' => 'People', 'sync' => 'Sync', 'audit' => 'Audit log'];
+    $nav = ['home' => 'Overview', 'users' => 'People', 'sync' => 'Sync', 'feed' => 'News Feed', 'audit' => 'Audit log'];
     echo '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">';
     echo '<title>', sb_admin_h($title), ' · Administration</title><link rel="stylesheet" href="admin.css"></head><body><header><strong>SpaceBook administration</strong><nav aria-label="Administration">';
     foreach ($nav as $k => $label) echo '<a href="admin.php', $k === 'home' ? '' : '?v=' . $k, '"', $k === $view || ($view === 'user' && $k === 'users') ? ' aria-current="page"' : '', '>', $label, '</a>';
@@ -150,6 +159,23 @@ if ($view === 'sync') {
     $rows = [];
     foreach ($s['rows'] as $e) $rows[] = ['<a href="admin.php?v=user&amp;id=' . (int)$e['user_id'] . '">' . $h($e['name'] ?: ('#' . $e['user_id'])) . '</a>', $h($e['code']), $h($e['event_id']), $h(substr((string)$e['device_id'], 0, 8)), $h($e['created_at'])];
     admin_table(['Person', 'Code', 'Event', 'Device', 'When'], $rows);
+    admin_foot();
+    exit;
+}
+
+if ($view === 'feed') {
+    admin_head('News Feed: reported posts', 'feed', $me, $flash);
+    echo '<p>A post or comment that ', (int)SB_FEED_HIDE_AT, ' different students report hides itself from the feed. Restore puts it back (its reports are cleared), Remove deletes it for good. Names are the full account names here.</p>';
+    $rows = [];
+    foreach (sb_feed_admin_rows($pdo, 100) as $r) {
+        $form = function (string $to, string $label) use ($r, $csrf, $h) {
+            return '<form method="post" action="admin.php" class="action"><input type="hidden" name="action" value="feed_set"><input type="hidden" name="csrf" value="' . $h($csrf) . '"><input type="hidden" name="type" value="' . $r['type'] . '"><input type="hidden" name="id" value="' . (int)$r['id'] . '"><input type="hidden" name="to" value="' . $to . '"><button>' . $label . '</button></form>';
+        };
+        $rows[] = [$r['type'] === 'c' ? 'comment' : 'post', (int)$r['id'], '<a href="admin.php?v=user&amp;id=' . (int)$r['user_id'] . '">' . $h($r['author']) . '</a>', '<span class="st-' . $h($r['status'] === 'visible' ? 'active' : 'blocked') . '">' . $h($r['status']) . '</span>',
+                   (int)$r['reports'] . ' · ' . $h($r['reasons']), $h(mb_substr($r['body'], 0, 300)), $h($r['created_at']),
+                   ($r['status'] === 'visible' ? '' : $form('visible', 'Restore')) . ($r['status'] === 'removed' ? '' : $form('removed', 'Remove'))];
+    }
+    admin_table(['What', 'No.', 'Author', 'State', 'Reports · reasons', 'Text', 'Written', ''], $rows);
     admin_foot();
     exit;
 }
