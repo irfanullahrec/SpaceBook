@@ -21,7 +21,7 @@ const RULES = [
   [/arabi/, 'arabic'], [/nazer|nazir/, 'nazira'], [/pashto/, 'pashto'], [/^(\d+(st|nd|rd|th) )?gk|\bgk\b|general knowledge/, 'gk'],
   [/english/, 'eng'], [/urdu/, 'urdu'], [/maths?\b|mtha/, 'math'], [/social study um/, 'sstum'], [/social study/, 'sst'],
   [/m[ -]?q\b|mutalia|mutalaa/, 'quran'], [/comput|\bcs\b/, 'comp'], [/physics/, 'phy'], [/chemi/, 'chem'], [/bio/, 'bio'],
-  [/stat/, 'stat'], [/civic/, 'civics'], [/econom/, 'econ'], [/pak ?stud/, 'pakstudy'], [/islamic history/, 'ishist'],
+  [/stas?t/, 'stat'], [/civic/, 'civics'], [/econom/, 'econ'], [/pak ?stud/, 'pakstudy'], [/islamic history/, 'ishist'],
   [/ikhtiari|ekhtyri|ismaiat ikhtiari/, 'islopt'], [/islam|ismaiat|slamyat/, 'isl'], [/history/, 'hist'],
 ];
 /* exceptions where the app's id differs from the rule's suffix */
