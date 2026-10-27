@@ -67,3 +67,12 @@ Baseline commit: `origin/main` a0773486 (2026-10-26). Baseline results: `TEST_MA
 | E-05 | Low | The App repository has no `.gitattributes`: a Windows checkout has CRLF and `sync_app.js --check` reports 20 files changed | | worked around in the launch worktree |
 | E-06 | Medium | `feature/social` also uses migration number 009 | branch list | the second to merge must renumber; `tools/parity/check.js` now fails on a duplicate number |
 | E-07 | Medium | `tools/build/make_search.js` and `make_offline.js` died without a message when the PC had little free RAM (a fresh page sandbox per subject is never given back; the offline map needed 50 minutes under memory pressure) | `regen3.log`, `regen4.log` | **Fixed**: with less than 3 GB free (or `--isolate`) each subject is built by a child process; with enough RAM the build stays in one process (`--in-process` forces it); output is identical |
+
+## Offline and sync (found by `tests/launch/offline_browser.js`, 2026-10-27; details in `OFFLINE_REPORT.md`)
+
+| ID | Sev | Finding | Evidence | Status |
+|---|---|---|---|---|
+| O-01 | Medium | Offline, the Home page showed 15 empty boxes: the class covers were not in the service worker shell | screenshot of the first run | **Fixed** (`make_offline.js` adds them: shell 180 to 196 files) |
+| O-02 | Medium | Offline, the Library could not name a saved page: `content/app_catalog.json` was not cached | 4 failed requests | **Fixed** (in the shell) |
+| O-03 | **High** | **A downloaded subject did not open offline** in the website: `lazy.js` loads a book with a synchronous request and a service worker cannot answer one, so the stored copy was never used and the page claimed the subject was not on the device | `fetch()` of the stored file 200, synchronous request failed | **Fixed** (`js/core/offline.js` reads downloaded books ahead with `SBLazy.preload`; 21 of 21 offline checks pass). The Android app is not affected: its books are inside the APK |
+| O-04 | Low | `tests/sync/items.js` dies (out of memory) after about 16 checks on a PC with 1 to 2 GB free | `OFFLINE_REPORT.md` | open: re-run on a PC with 4 GB free; the other three sync suites pass (88 checks) |

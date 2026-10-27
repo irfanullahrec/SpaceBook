@@ -128,7 +128,7 @@
     }
     const map = await loadMap();
     const have = await readDownloaded();
-    for (const id of ids) if (map.subjects[id]) have[id] = { at: new Date().toISOString(), bytes: map.subjects[id].bytes };
+    for (const id of ids) if (map.subjects[id]) have[id] = { at: new Date().toISOString(), bytes: map.subjects[id].bytes, files: map.subjects[id].files };
     await writeDownloaded(have);
     return { ok: true, bytes: total, files: count };
   }
@@ -307,20 +307,51 @@
     });
   }
 
+  // Offline, the service worker answers fetch() from the files the student downloaded but NOT the synchronous request lazy.js makes to load a book
+  // (a service worker cannot answer a synchronous request). So the books on the device are read ahead of use with SBLazy.preload (a fetch, which the
+  // worker does answer from its cache): lazy.js then finds the text and only has to run it. Done when the page starts without a network and when the
+  // network goes away; online nothing changes (the synchronous request goes to the network or the browser's cache as before).
+  const WARM_LIMIT = 150 * 1048576;           // bytes of book text kept ready at once; a student who downloaded more than that gets the rest on the next start
+  let warmPromise = Promise.resolve();
+  function warm(ids) {
+    warmPromise = warmPromise.then(async () => {
+      if (!win.SBLazy || !win.SBLazy.preload) return;
+      const got = await downloaded();
+      let used = 0;
+      for (const id of (ids || Object.keys(got)).sort((a, b) => ((got[a] || {}).bytes || 0) - ((got[b] || {}).bytes || 0))) {
+        const rec = got[id]; if (!rec) continue;
+        if (used + (rec.bytes || 0) > WARM_LIMIT) continue;
+        let files = rec.files;
+        if (!files) { try { files = (await loadMap()).subjects[id].files; } catch (e) { continue; } }
+        for (const src of files) { try { await win.SBLazy.preload(src); } catch (e) { /* not a lazy file, or not on the device */ } }
+        used += rec.bytes || 0;
+      }
+    }).catch(() => {});
+    return warmPromise;
+  }
+  const offlineNow = () => !!(win.navigator && win.navigator.onLine === false);
+
   function init() {
     if (!doc) return;
+    if (offlineNow()) warm();
     addButton();
     badge();
-    if (win.addEventListener) { win.addEventListener('online', badge); win.addEventListener('offline', badge); }
+    if (win.addEventListener) { win.addEventListener('online', badge); win.addEventListener('offline', () => { badge(); warm(); }); }
     // lazy.js could not fetch a book (offline and not downloaded): say why instead of leaving a blank screen
-    if (win.addEventListener) win.addEventListener('sb:lazy-error', () => {
+    if (win.addEventListener) win.addEventListener('sb:lazy-error', e => {
       const m = doc.getElementById('sbOffBadge'); if (!m) return;
-      m.textContent = 'This subject is not on the device. Open the ⬇ button while online to download it.'; m.hidden = false;
-      setTimeout(badge, 8000);
+      const src = e && e.detail && e.detail.src;
+      downloaded().then(got => {
+        const onDevice = !!src && Object.values(got).some(r => r && (r.files || []).includes(src));
+        if (onDevice && offlineNow()) { warm(); m.textContent = 'Opening this subject from the device. Wait a moment and tap it again.'; }
+        else m.textContent = 'This subject is not on the device. Open the ⬇ button while online to download it.';
+        m.hidden = false;
+        setTimeout(badge, 8000);
+      });
     });
   }
 
-  return { register, loadMap, estimate, download, remove, downloaded, usage, openPanel, init, supported, active, _fileUrl: fileUrl };
+  return { register, loadMap, estimate, download, remove, downloaded, usage, openPanel, init, supported, active, warm, warmed: () => warmPromise, _fileUrl: fileUrl };
 });
 
 // browser start-up: the button and the badge always (when the feature is active), the service worker only on a secure origin

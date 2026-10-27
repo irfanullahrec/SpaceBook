@@ -42,6 +42,13 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await ready();
   await page.waitForFunction(async () => { const r = await navigator.serviceWorker.getRegistration(); return !!(r && r.active); }, null, { timeout: 90000 });
   await sleep(2500);
+  // the shell (about 180 files) is stored after the first screen: on a slow PC that takes longer than 2.5 s, so wait for it (up to 40 s) instead of a fixed pause
+  const wantShell = await page.evaluate(async () => { const t = await (await fetch('content/sw_version.js')).text(); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)).shell.length; });
+  for (let t = 0; t < 120; t++) {           // (waitForFunction does not wait for a promise, so poll by hand)
+    const n = await page.evaluate(async () => { const ks = (await caches.keys()).filter(k => k.startsWith('sb-shell-')); return ks.length ? (await (await caches.open(ks[0])).keys()).length : 0; });
+    if (n >= wantShell) break;
+    await sleep(500);
+  }
   check('the first visit does not reload itself when the worker takes over', navs === 1, navs);
   const shell = await page.evaluate(async () => { const ks = (await caches.keys()).filter(k => k.startsWith('sb-shell-')); if (!ks.length) return { n: 0 }; const c = await caches.open(ks[0]); return { n: (await c.keys()).length, name: ks[0] }; });
   const want = await page.evaluate(async () => { const t = await (await fetch('content/sw_version.js')).text(); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)).shell.length; });
@@ -52,7 +59,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await ctx.setOffline(true);
   await page.reload({ waitUntil: 'load' });
   await ready();
-  check('offline, the app opens from the cache (the Home page is drawn)', (await page.evaluate(() => document.querySelector('#page-content').innerText.length)) > 200);
+  // the Home page is the class cards, pictures with the class name only in the alt text: drawn means the 15 covers really loaded from the cache
+  const covers = await page.evaluate(async () => { const imgs = [...document.querySelectorAll('.class-jewel-card img')]; imgs.forEach(i => { i.loading = 'eager'; }); await new Promise(r => setTimeout(r, 2000)); return { n: imgs.length, loaded: imgs.filter(i => i.complete && i.naturalWidth > 0).length }; });
+  check('offline, the app opens from the cache (the Home page is drawn: all 15 class covers load)', covers.n >= 15 && covers.loaded === covers.n, covers);
   await page.evaluate(() => { try { openSubject('cls1', 'cls1-eng'); } catch (e) { window.__openErr = String(e); } });
   await sleep(1500);
   const badge = await page.evaluate(() => { const b = document.getElementById('sbOffBadge'); return b && !b.hidden ? b.textContent : ''; });
@@ -78,6 +87,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   // ---- 4. offline use of that subject
   await ctx.setOffline(true);
   await page.reload({ waitUntil: 'load' }); await ready(); await sleep(1500);
+  await page.evaluate(() => SBOffline.warmed());           // the books on the device are read ahead (a service worker cannot answer the synchronous request that loads a book)
   failedReqs.length = 0;
   await page.evaluate(() => openSubject('cls1', 'cls1-eng'));
   await sleep(1500);
@@ -94,14 +104,16 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.reload({ waitUntil: 'load' }); await ready(); await sleep(2500);
 
   // ---- 5. an interrupted download
-  const ID = 'cls5-urdu';
-  await page.route('**/*.js?v=*', async route => { await sleep(500); try { await route.continue(); } catch (e) { /* the network is gone */ } });   // slow enough to cut the connection half way
-  await page.evaluate(id => { window.__dl = SBOffline.download([id], {}).then(r => ({ ok: true, r }), e => ({ ok: false, code: e && e.code, message: e && e.message })); }, ID);
-  await sleep(350);
-  await ctx.setOffline(true);
+  const ID = 'cls9-chem';            // 13 MB: big enough that the download is still running 350 ms after it starts, even from the local server
+  // the network drops after the first book file: every later request for a hashed file fails the way fetch fails offline
+  // (not a route or setOffline: with the service worker in charge a 13 MB download from the local server is over before either takes effect)
+  await page.evaluate(id => {
+    const orig = window.fetch; let n = 0; window.__origFetch = orig;
+    window.fetch = function (u) { if (/\?v=/.test(String(u && u.url || u)) && ++n > 1) return Promise.reject(new TypeError('Failed to fetch')); return orig.apply(this, arguments); };
+    window.__dl = SBOffline.download([id], {}).then(r => ({ ok: true, r }), e => ({ ok: false, code: e && e.code, message: e && e.message }));
+  }, ID);
   const cut = await page.evaluate(async () => await window.__dl);
-  await ctx.setOffline(false);
-  await page.unroute('**/*.js?v=*');
+  await page.evaluate(() => { window.fetch = window.__origFetch; });
   await sleep(1500);
   const after = await page.evaluate(async id => ({ got: await SBOffline.downloaded(), left: await SBOffline.estimate([id]) }), ID);
   check('a download the network cut is reported as a failure (code network), not as done', cut.ok === false && cut.code === 'network', cut);
@@ -112,7 +124,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 
   // ---- 6. the dialog, and removing
   await page.evaluate(() => SBOffline.openPanel());
-  await page.waitForSelector('.sb-off-row', { timeout: 20000 });
+  await page.waitForSelector('.sb-off-row', { state: 'attached', timeout: 20000 });
   const panel = await page.locator('.sb-off-box').innerText();
   check('the Offline books dialog shows each subject with its size in MB and what is on the device', /MB/.test(panel) && /Offline books/.test(panel), panel.slice(0, 300));
   const syncLine = await page.locator('.sb-off-sync').innerText().catch(() => '');
