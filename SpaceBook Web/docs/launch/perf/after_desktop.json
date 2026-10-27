@@ -5,7 +5,7 @@
  "cpuThrottle": 1,
  "network": "none",
  "page": "lazy.html",
- "runs": 2,
+ "runs": 3,
  "selfReloads": 0,
  "machine": {
   "cpus": 8,
@@ -14,45 +14,45 @@
  },
  "load": {
   "cold": {
-   "loadMs": 877,
-   "readyMs": 1029,
-   "kb": 2695,
-   "requests": 169,
-   "dcl": 690.3,
-   "loadEnd": 699.1,
-   "fcp": 540,
-   "lcp": 840,
-   "longTasks": 1,
-   "longMs": 278,
-   "heap": 27,
-   "nodes": 337
+   "loadMs": 607,
+   "readyMs": 646,
+   "kb": 1804,
+   "requests": 168,
+   "dcl": 587.9,
+   "loadEnd": 597.6,
+   "fcp": 444,
+   "lcp": 444,
+   "longTasks": 0,
+   "longMs": 0,
+   "heap": 12,
+   "nodes": 331
   },
   "repeat": {
-   "loadMs": 277,
-   "readyMs": 356,
+   "loadMs": 238,
+   "readyMs": 265,
    "kb": 0,
-   "requests": 169,
-   "dcl": 261.1,
-   "loadEnd": 267.6,
-   "fcp": 128,
-   "lcp": 128,
-   "longTasks": 1,
-   "longMs": 59,
-   "heap": 51,
+   "requests": 168,
+   "dcl": 222.4,
+   "loadEnd": 230.3,
+   "fcp": 100,
+   "lcp": 100,
+   "longTasks": 0,
+   "longMs": 0,
+   "heap": 22,
    "nodes": 331
   },
   "repeat2": {
-   "loadMs": 167,
-   "readyMs": 244,
+   "loadMs": 134,
+   "readyMs": 155,
    "kb": 0,
-   "requests": 169,
-   "dcl": 151.7,
-   "loadEnd": 159.3,
-   "fcp": 124,
-   "lcp": 208,
-   "longTasks": 1,
-   "longMs": 50,
-   "heap": 57,
+   "requests": 168,
+   "dcl": 121.8,
+   "loadEnd": 128.3,
+   "fcp": 84,
+   "lcp": 84,
+   "longTasks": 0,
+   "longMs": 0,
+   "heap": 28,
    "nodes": 331
   }
  },
@@ -64,23 +64,23 @@
    "openBook": {
     "kb": 284,
     "requests": 1,
-    "ms": 565
+    "ms": 497
    },
    "openChapter": {
     "chapter": 3,
     "kb": 40,
     "requests": 2,
-    "ms": 402,
-    "msPainted": 481,
-    "nodes": 2925,
+    "ms": 293,
+    "msPainted": 364,
+    "nodes": 2924,
     "htmlKB": 183,
-    "heap": 53
+    "heap": 26
    },
    "openExercise": {
-    "ms": 127,
-    "msPainted": 148,
-    "nodes": 2866,
-    "htmlKB": 180,
+    "ms": 86,
+    "msPainted": 98,
+    "nodes": 2818,
+    "htmlKB": 176,
     "tab": "✍️ Exercise"
    }
   },
@@ -91,23 +91,23 @@
    "openBook": {
     "kb": 832,
     "requests": 3,
-    "ms": 1351
+    "ms": 1083
    },
    "openChapter": {
     "chapter": 4,
     "kb": 28,
     "requests": 3,
-    "ms": 1719,
-    "msPainted": 1825,
+    "ms": 1308,
+    "msPainted": 1441,
     "nodes": 16791,
     "htmlKB": 818,
-    "heap": 94
+    "heap": 79
    },
    "openExercise": {
-    "ms": 243,
-    "msPainted": 387,
-    "nodes": 16803,
-    "htmlKB": 820,
+    "ms": 233,
+    "msPainted": 240,
+    "nodes": 16623,
+    "htmlKB": 808,
     "tab": "✍️ Exercises"
    }
   },
@@ -118,22 +118,22 @@
    "openBook": {
     "kb": 664,
     "requests": 3,
-    "ms": 413
+    "ms": 351
    },
    "openChapter": {
     "chapter": 2,
     "kb": 0,
     "requests": 1,
-    "ms": 582,
-    "msPainted": 623,
-    "nodes": 4497,
-    "htmlKB": 322,
-    "heap": 113
+    "ms": 499,
+    "msPainted": 528,
+    "nodes": 4390,
+    "htmlKB": 315,
+    "heap": 68
    },
    "openExercise": {
-    "ms": 91,
-    "msPainted": 118,
-    "nodes": 4392,
+    "ms": 75,
+    "msPainted": 79,
+    "nodes": 4404,
     "htmlKB": 316,
     "tab": "✍️ Exercise"
    }
@@ -145,21 +145,21 @@
    "openBook": {
     "kb": 1075,
     "requests": 2,
-    "ms": 1136
+    "ms": 712
    },
    "openChapter": {
     "chapter": 8,
     "kb": 0,
     "requests": 2,
-    "ms": 987,
-    "msPainted": 1055,
+    "ms": 785,
+    "msPainted": 859,
     "nodes": 7397,
     "htmlKB": 544,
-    "heap": 151
+    "heap": 85
    },
    "openExercise": {
-    "ms": 154,
-    "msPainted": 205,
+    "ms": 107,
+    "msPainted": 121,
     "nodes": 7220,
     "htmlKB": 532,
     "tab": "✍️ Solved Exercises"
@@ -172,22 +172,22 @@
    "openBook": {
     "kb": 860,
     "requests": 2,
-    "ms": 554
+    "ms": 336
    },
    "openChapter": {
     "chapter": 4,
     "kb": 0,
     "requests": 3,
-    "ms": 278,
-    "msPainted": 300,
-    "nodes": 1713,
+    "ms": 216,
+    "msPainted": 238,
+    "nodes": 1714,
     "htmlKB": 127,
-    "heap": 188
+    "heap": 77
    },
    "openExercise": {
-    "ms": 71,
-    "msPainted": 81,
-    "nodes": 1680,
+    "ms": 53,
+    "msPainted": 74,
+    "nodes": 1668,
     "htmlKB": 125,
     "tab": "✍️ مشق"
    }
@@ -199,21 +199,21 @@
    "openBook": {
     "kb": 1029,
     "requests": 2,
-    "ms": 1707
+    "ms": 1476
    },
    "openChapter": {
     "chapter": 4,
     "kb": 0,
     "requests": 7,
-    "ms": 1922,
-    "msPainted": 2281,
+    "ms": 1684,
+    "msPainted": 2133,
     "nodes": 111371,
     "htmlKB": 4053,
-    "heap": 189
+    "heap": 184
    },
    "openExercise": {
-    "ms": 403,
-    "msPainted": 1810,
+    "ms": 413,
+    "msPainted": 1892,
     "nodes": 148850,
     "htmlKB": 5562,
     "tab": "✍️ 2. Exercises (7)"
@@ -226,21 +226,21 @@
    "openBook": {
     "kb": 1189,
     "requests": 2,
-    "ms": 2521
+    "ms": 2456
    },
    "openChapter": {
     "chapter": 1,
     "kb": 249,
     "requests": 2,
-    "ms": 250,
-    "msPainted": 592,
-    "nodes": 25548,
+    "ms": 184,
+    "msPainted": 343,
+    "nodes": 25547,
     "htmlKB": 982,
-    "heap": 222
+    "heap": 164
    },
    "openExercise": {
-    "ms": 325,
-    "msPainted": 520,
+    "ms": 42,
+    "msPainted": 316,
     "nodes": 29170,
     "htmlKB": 1077,
     "tab": "✍️ Solved Exercises"

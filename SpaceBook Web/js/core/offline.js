@@ -341,13 +341,12 @@
     if (win.addEventListener) win.addEventListener('sb:lazy-error', e => {
       const m = doc.getElementById('sbOffBadge'); if (!m) return;
       const src = e && e.detail && e.detail.src;
+      m.textContent = 'This subject is not on the device. Open the \u2B07 button while online to download it.'; m.hidden = false;
+      // but if the file IS on the device (downloaded earlier) the request failed only because a service worker cannot answer a synchronous one: read it ahead
       downloaded().then(got => {
-        const onDevice = !!src && Object.values(got).some(r => r && (r.files || []).includes(src));
-        if (onDevice && offlineNow()) { warm(); m.textContent = 'Opening this subject from the device. Wait a moment and tap it again.'; }
-        else m.textContent = 'This subject is not on the device. Open the ⬇ button while online to download it.';
-        m.hidden = false;
-        setTimeout(badge, 8000);
-      });
+        if (src && offlineNow() && Object.values(got).some(r => r && (r.files || []).includes(src))) { warm(); m.textContent = 'Opening this subject from the device. Wait a moment and tap it again.'; }
+      }).catch(() => {});
+      setTimeout(badge, 8000);
     });
   }
 

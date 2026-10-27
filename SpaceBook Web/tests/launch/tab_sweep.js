@@ -12,6 +12,8 @@ const ROOT = path.resolve(__dirname, '..', '..');
 const args = process.argv.slice(2);
 const opt = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
 const CLASSES = opt('--classes', '1,2,3,4,5,6,7,8,9,10,11,12').split(',').map(x => 'cls' + x.trim());
+const ONLY = opt('--subjects', null) ? opt('--subjects', '').split(',') : null;        // e.g. --subjects cls12-islopt,cls12-quran
+const PER_SUBJECT_MS = +opt('--subject-timeout', 240000);                                // a subject that hangs is reported, not waited for
 const NCH = +opt('--chapters', 1), WIDTH = +opt('--width', 1280);
 const OUT = path.resolve(ROOT, opt('--out', 'docs/launch/TAB_SWEEP.json'));
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json' };
@@ -50,9 +52,12 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   for (const c of catalog.classes) {
     if (!CLASSES.includes(c.id)) continue;
     for (const s of c.subjects) {
+      if (ONLY && !ONLY.includes(s.id)) continue;
       if (++n % 12 === 0) await fresh();      // a long run leaks: a new page every dozen subjects
       const rec = { class: c.id, subject: s.id, name: s.name, chapters: [] };
-      try {
+      let timer;
+      const guard = new Promise((_, rej) => { timer = setTimeout(() => rej(new Error('timeout: no answer after ' + PER_SUBJECT_MS / 1000 + ' s')), PER_SUBJECT_MS); });
+      try { await Promise.race([guard, (async () => {
         await page.evaluate(([cls, sid]) => openSubject(cls, sid), [c.id, s.id]);
         await sleep(1200);
         const order = s.chapters.map((ch, i) => ({ i, n: ch.n || 0, o: ch.o })).filter(x => x.o).sort((a, b) => b.n - a.n);
@@ -77,7 +82,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
           }
           rec.chapters.push(out);
         }
-      } catch (e) { rec.error = String(e.message).slice(0, 160); await fresh(); }
+      })()]); } catch (e) { rec.error = String(e.message).slice(0, 160); await fresh(); }
+      clearTimeout(timer);
       rec.errors = errors.splice(0).slice(0, 3);
       result.subjects.push(rec);
       const empt = rec.chapters.reduce((k, ch) => k + ch.tabs.filter(t => t.empty).length, 0), tt = rec.chapters.reduce((k, ch) => k + ch.tabs.length, 0);
