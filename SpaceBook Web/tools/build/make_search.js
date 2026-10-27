@@ -70,7 +70,24 @@ function buildSubject(s) {
   return { list, shard: makeShard(chapters) };
 }
 
-const BUILDER_VERSION = 1;                                 // bump when the way text is taken from the page (htmlText, the walk of chapters and tabs) changes
+// A full build renders every subject in a fresh sandbox of the page and the sandboxes are not given back, so one process needs more memory than a
+// small machine has free and dies part-way without a message. A full build therefore asks a child process for each subject (the same code, --only one subject).
+// one process is faster; a child per subject is used when less than 3 GB is free (or with --isolate); --in-process forces one process
+const ISOLATE = !ONLY && !CHECK && !args.includes('--in-process') && (args.includes('--isolate') || require('os').freemem() < 3 * 2 ** 30);
+function buildIsolated(s) {
+  const tmp = fs.mkdtempSync(path.join(require('os').tmpdir(), 'sbsearch-'));
+  try {
+    const p = require('child_process').spawnSync(process.execPath, ['--max-old-space-size=4096', __filename, '--only', s.id, '--out', tmp, '--page', PAGE], { stdio: 'ignore' });
+    if (p.status !== 0) throw new Error('the search index of ' + s.id + ' could not be built (child process exit ' + p.status + (p.signal ? ', ' + p.signal : '') + ')');
+    const shardFile = path.join(tmp, s.id + '.json');
+    if (!fs.existsSync(shardFile)) return null;
+    const entry = JSON.parse(fs.readFileSync(path.join(tmp, 'index.json'), 'utf8')).subjects[s.id];
+    const text = fs.readFileSync(shardFile, 'utf8');
+    return { text, shard: JSON.parse(text), list: entry.c.map(x => ({ o: x.o, t: x.t })) };
+  } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+}
+
+const BUILDER_VERSION = 1;                                // bump when the way text is taken from the page (htmlText, the walk of chapters and tabs) changes
 const SAMPLE = [{ title: 'Cells and Studies', text: 'Mitochondria make energy. Boxes, glass, analysis \u0643\u0650\u062a\u0627\u0628 \u06f1\u06f2\u06f3 \u06af\u064f\u0644 123456789.' }, { title: 'Light', text: 'Plants use light.' }];
 function inputsHash() {
   const man = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'lazy_manifest.json'), 'utf8'));
@@ -111,9 +128,9 @@ let total = 0;
 const t0 = Date.now();
 for (const s of allSubjects) {
   if (ONLY && !ONLY.includes(s.id)) continue;
-  const r = buildSubject(s);
+  const r = ISOLATE ? buildIsolated(s) : buildSubject(s);
   if (!r) { skipped.push(s.id); continue; }
-  const text = JSON.stringify(r.shard) + '\n';
+  const text = r.text || JSON.stringify(r.shard) + '\n';
   fs.writeFileSync(path.join(OUT, s.id + '.json'), text);
   index.subjects[s.id] = { classId: s.classId, name: s.name, h: sha256(text).slice(0, 12), bytes: Buffer.byteLength(text), n: r.list.length, c: r.list.map(x => ({ t: x.t, o: x.o })) };
   total += Buffer.byteLength(text);

@@ -51,7 +51,12 @@ const probe = load({ page: PAGE, quiet: true });
 const subjects = probe.run('DATA.classes.flatMap(c => (DATA.subjects[c.id] || []).map(s => ({ classId: c.id, id: s.id, name: s.name })))');
 const map = { schema: 'spacebook.offline/1', files: {}, assets: {}, subjects: {} };
 const t0 = Date.now();
-for (const s of subjects) {
+// A fresh sandbox of the page per subject is not given back by node, so one process that renders every subject needs more memory than a small machine has free
+// and dies part-way. The parent therefore asks a child process (this file with --render-subject <id>) for each subject: its lazy files and its images.
+const RENDER = args.includes('--render-subject') ? args[args.indexOf('--render-subject') + 1] : null;
+// one process is faster; a child per subject is used when less than 3 GB is free (or with --isolate); --in-process forces one process
+const ISOLATE = !RENDER && !args.includes('--in-process') && (args.includes('--isolate') || require('os').freemem() < 3 * 2 ** 30);
+function renderSubject(s) {
   const app = load({ page: PAGE, quiet: true });
   const step = code => { try { return app.run(code, 120000); } catch (e) { return null; } };
   const imgs = new Set();
@@ -70,7 +75,25 @@ for (const s of subjects) {
       assetsIn(step(`document.getElementById('${V.content}').innerHTML`) || '', imgs);
     }
   }
-  const loaded = app.sb.SBLazy ? app.sb.SBLazy.stats().log.map(l => l.src) : [];
+  return { imgs: [...imgs], loaded: app.sb.SBLazy ? app.sb.SBLazy.stats().log.map(l => l.src) : [] };
+}
+function renderIsolated(s) {
+  const p = require('child_process').spawnSync(process.execPath, ['--max-old-space-size=4096', __filename, '--render-subject', s.id, '--page', PAGE], { encoding: 'utf8', maxBuffer: 1 << 28 });
+  const at = p.stdout ? p.stdout.lastIndexOf('@@RESULT@@') : -1;
+  if (p.status !== 0 || at < 0) throw new Error('the offline files of ' + s.id + ' could not be found (child process exit ' + p.status + (p.signal ? ', ' + p.signal : '') + ')');
+  return JSON.parse(p.stdout.slice(at + 10));
+}
+if (RENDER) {
+  const s = subjects.find(x => x.id === RENDER);
+  if (!s) { console.error('no such subject: ' + RENDER); process.exit(2); }
+  process.stdout.write('\n@@RESULT@@' + JSON.stringify(renderSubject(s)) + '\n');
+  process.exit(0);
+}
+for (const s of subjects) {
+  const r = ISOLATE ? renderIsolated(s) : renderSubject(s);
+  const imgs = new Set();
+  for (const p of r.imgs) { if (!(p in assetSizes)) { const full = path.join(ROOT, p); assetSizes[p] = fs.existsSync(full) && fs.statSync(full).isFile() ? fs.statSync(full).size : -1; } imgs.add(p); }
+  const loaded = r.loaded;
   const list = [...new Set([].concat(...loaded.map(src => group[src] || [src])))];
   const assets = [...imgs].sort();
   if (searchIndex.subjects[s.id]) {
