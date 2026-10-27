@@ -52,14 +52,15 @@ if (cmd === 'list') {
   const tmp = path.join(require('os').tmpdir(), 'sb_wl_audit_' + process.pid + '.json');
   cp.execFileSync(process.execPath, ['--max-old-space-size=6144', path.join(ROOT, 'tools', 'audit', 'answers_audit.js'), '--json', tmp], { stdio: 'ignore', maxBuffer: 1 << 28 });
   const audit = JSON.parse(fs.readFileSync(tmp, 'utf8')); fs.unlinkSync(tmp);
-  const rec = audit.find(b => b.id === book);
-  if (!rec) { console.error('no such book in the audit: ' + book); process.exit(2); }
-  const miss = rec.missing.filter(m => m.why === 'none');
   // 2. the lesson text of each chapter (to answer from)
   const { load } = require('../lib/app_sandbox');
   const extract = require('../tests/extract_leaves');
   const app = load({ page: 'lazy.html', quiet: true });
   const raw = JSON.parse(app.run('JSON.stringify((' + extract.toString() + ')())', 900000));
+  for (const book of args[1].split(',')) {            // several books at once: cls11:civics,cls11:stat
+  const rec = audit.find(b => b.id === book);
+  if (!rec) { console.error('no such book in the audit: ' + book); continue; }
+  const miss = rec.missing.filter(m => m.why === 'none');
   const bk = raw.books.find(b => b.id === book);
   // 3. the page files: every q line, by printed page
   const dir = pagesDir(book), files = pageFiles(dir), byPrinted = new Map();
@@ -87,6 +88,11 @@ if (cmd === 'list') {
       for (const pr of [String(m.pg), String(+m.pg + 1), String(+m.pg - 1)]) for (const pf of byPrinted.get(pr) || []) cands.push(pf);
       for (const pf of cands) { for (let i = 0; i < pf.lines.length && !hit; i++) { const l = pf.lines[i]; if (QLINE.test(l) && norm(eng(l)) === want) hit = { f: pf.f, i }; } if (hit) break; }
       if (!hit) { unmatched++; for (const pf of cands) for (let i = 0; i < pf.lines.length && !hit; i++) if (QLINE.test(pf.lines[i]) && want && norm(eng(pf.lines[i])).startsWith(want.slice(0, 30))) hit = { f: pf.f, i }; }
+      if (!hit && want) {                          // the printed page the audit gives can be off by more than one: take the one page file that holds exactly this question
+        const all = [];
+        for (const arr of byPrinted.values()) for (const pf of arr) for (let i = 0; i < pf.lines.length; i++) if (QLINE.test(pf.lines[i]) && norm(eng(pf.lines[i])) === want) all.push({ f: pf.f, i });
+        if (all.length === 1) hit = all[0];
+      }
       n++;
       map[n] = hit ? { file: path.relative(ROOT, path.join(dir, hit.f)).replace(/\\/g, '/'), line: hit.i + 1, text: want.slice(0, 60) } : null;
       out.push(`[${n}] p${m.pg == null ? '?' : m.pg} ${m.loc.replace(/^unit \S+ ?/, '')}${hit ? '' : '  (NOT FOUND IN PAGE FILES)'} | ${want}`);
@@ -101,6 +107,7 @@ if (cmd === 'list') {
   fs.writeFileSync(base + '.work.txt', out.join('\n') + '\n');
   fs.writeFileSync(base + '.map.json', JSON.stringify(map, null, 0));
   console.log(`${book}: ${n} unanswered questions in ${units.size} chapters (${unmatched} not found in page files) -> ${path.relative(ROOT, base)}.work.txt`);
+  }
   process.exit(0);
 }
 

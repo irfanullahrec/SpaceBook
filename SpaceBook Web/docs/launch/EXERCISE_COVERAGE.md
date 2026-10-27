@@ -10,9 +10,9 @@ Answer columns: **own** = a record of its own (worked solution or stated answer)
 
 | Books with questions | Chapters with an exercise | Questions (and parts) | Own answer | Via question | Printed key | Written | Whole line only | **No answer** | MCQs | MCQ answer matches no option | Answer clashes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 118 | 1532 | 45581 | 37580 | 82 | 2118 | 374 | 0 | **5427** | 6082 | 124 | 9 |
+| 118 | 1532 | 45581 | 38355 | 82 | 2118 | 374 | 0 | **4652** | 6089 | 124 | 9 |
 
-Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **226**.
+Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **195**.
 
 ## Subjects without questions held as data (need their own check)
 
@@ -132,15 +132,15 @@ These subjects have no question records in the registries this report reads (the
 | 10 | Mutalia-e-Quran (`cls10:quran`) | 24 | 23 | 300 | 300 | 0 | 0 | 0 | 0 | 0 | 116 | 1 | 0 |
 | 10 | General Science (`cls10:sci`) | 6 | 6 | 172 | 172 | 0 | 0 | 0 | 0 | 0 | 81 | 0 | 0 |
 | 10 | Urdu (`cls10:urdu`) | 22 | 21 | 378 | 372 | 0 | 0 | 0 | 0 | **6** | 0 | 0 | 0 |
-| 11 | Biology (`cls11:bio`) | 15 | 13 | 374 | 0 | 0 | 0 | 0 | 0 | **374** | 156 | 0 | 0 |
+| 11 | Biology (`cls11:bio`) | 15 | 13 | 374 | 374 | 0 | 0 | 0 | 0 | 0 | 163 | 0 | 0 |
 | 11 | Chemistry (`cls11:chem`) | 14 | 12 | 670 | 44 | 0 | 0 | 0 | 0 | **626** | 159 | 3 | 0 |
 | 11 | Civics (Shehriyat) (`cls11:civics`) | 12 | 9 | 279 | 0 | 0 | 0 | 0 | 0 | **279** | 46 | 0 | 0 |
-| 11 | Computer Science (`cls11:comp`) | 10 | 8 | 231 | 0 | 0 | 0 | 0 | 0 | **231** | 0 | 0 | 0 |
+| 11 | Computer Science (`cls11:comp`) | 10 | 8 | 231 | 231 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | English (`cls11:eng`) | 24 | 22 | 1048 | 0 | 0 | 0 | 0 | 0 | **1048** | 28 | 0 | 0 |
-| 11 | Health and Physical Education (`cls11:hpe`) | 10 | 6 | 137 | 0 | 0 | 0 | 0 | 0 | **137** | 90 | 0 | 0 |
+| 11 | Health and Physical Education (`cls11:hpe`) | 10 | 6 | 137 | 137 | 0 | 0 | 0 | 0 | 0 | 90 | 0 | 0 |
 | 11 | Islamiat Ikhtiari (Elective) (`cls11:islopt`) | 8 | 6 | 272 | 0 | 0 | 0 | 0 | 0 | **272** | 0 | 0 | 0 |
 | 11 | Islamic History (`cls11:islhist`) | 22 | 20 | 489 | 0 | 0 | 0 | 0 | 0 | **489** | 0 | 0 | 0 |
-| 11 | Islamiat (Compulsory) (`cls11:islc`) | 7 | 4 | 33 | 0 | 0 | 0 | 0 | 0 | **33** | 0 | 0 | 0 |
+| 11 | Islamiat (Compulsory) (`cls11:islc`) | 7 | 4 | 33 | 33 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | Mathematics (`cls11:math`) | 12 | 12 | 879 | 877 | 0 | 2 | 0 | 0 | 0 | 93 | 0 | 5 |
 | 11 | Mutalia-e-Quran Hakeem (Compulsory) (`cls11:quran`) | 23 | 21 | 418 | 0 | 0 | 0 | 0 | 0 | **418** | 144 | 0 | 0 |
 | 11 | Statistics (`cls11:stat`) | 13 | 7 | 489 | 95 | 0 | 0 | 0 | 0 | **394** | 65 | 1 | 0 |
@@ -160,7 +160,7 @@ These subjects have no question records in the registries this report reads (the
 
 ## Chapters that need attention
 
-294 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
+263 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
 
 | Class | Book | Chapter | Printed pages | Exercise sections | Questions | No answer | Whole line | Open MCQs | Clashes | State |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -238,19 +238,6 @@ These subjects have no question records in the registries this report reads (the
 | 10 | `cls10:urdu` | 12. آزادی | 103-105 | 0 | 16 | 1 | 0 | 0 | 0 | unanswered |
 | 10 | `cls10:urdu` | 13. مزارِ قطب الدین ایبک | 109-110 | 0 | 14 | 3 | 0 | 0 | 0 | unanswered |
 | 10 | `cls10:urdu` | 14. نمودِ صبح | 114-115 | 0 | 11 | 1 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 1. Cell Structure and Function | 26-28 | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 2. Biological Molecules | 59-61 | 1 | 31 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 3. Enzymes | 72-73 | 1 | 22 | 22 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 4. Bioenergetics | 101-102 | 1 | 28 | 28 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 5. Acellular Life | 121-122 | 1 | 23 | 23 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 6. Prokaryotes | 149-150 | 1 | 26 | 26 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 7. Protists and Fungi | 168-169 | 1 | 28 | 28 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 8. Diversity Among Plants | 198-200 | 1 | 40 | 40 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 9. Diversity Among Animals | 238-240 | 1 | 36 | 36 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 10. Form and Functions in Plants | 280-282 | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 11. Digestion | 305-307 | 1 | 27 | 27 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 12. Circulation | 335-337 | 1 | 25 | 25 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:bio` | 13. Immunity | 356-357 | 1 | 24 | 24 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:chem` | 1. Stoichiometry | 5-25 | 1 | 113 | 86 | 0 | 3 | 0 | unanswered |
 | 11 | `cls11:chem` | 2. Atomic Structure | 30-70 | 1 | 64 | 54 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:chem` | 3. Theories of Covalent Bonding and Shapes of Molecules | 73-106 | 1 | 46 | 46 | 0 | 0 | 0 | unanswered |
@@ -272,14 +259,6 @@ These subjects have no question records in the registries this report reads (the
 | 11 | `cls11:civics` | 7. باب 7: ذرائع ابلاغ اور سول سوسائٹی | 163-165 | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:civics` | 8. باب 8: انسانی اقدار کا فروغ | 196-198 | 1 | 35 | 35 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:civics` | 9. باب 9: فعال اور ذمہ دار شہری | 204-206 | 1 | 21 | 21 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 1. Unit 1: Overview of Computer System | 37-40 | 1 | 34 | 34 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 2. Unit 2: Computer Memory | 69-71 | 1 | 31 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 3. Unit 3: Central Processing Unit | 93-95 | 1 | 30 | 30 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 4. Unit 4: Inside System Unit | 120-122 | 1 | 24 | 24 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 5. Unit 5: Network Communication and Protocols | 175-177 | 1 | 31 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 6. Unit 6: Wireless Communications | 204-206 | 1 | 25 | 25 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 7. Unit 7: Database Fundamentals | 245-247 | 1 | 29 | 29 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:comp` | 8. Unit 8: Database Development | 296-297 | 1 | 27 | 27 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:eng` | 1. Responsibilities of the Youth | 6-12 | 1 | 64 | 64 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:eng` | 2. His First Flight | 19-23 | 1 | 68 | 68 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:eng` | 3. Good Timber (Poem) | 26-29 | 1 | 38 | 38 | 0 | 0 | 0 | unanswered |
@@ -302,16 +281,6 @@ These subjects have no question records in the registries this report reads (the
 | 11 | `cls11:eng` | 20. How to Take a Job Interview | 182-195 | 1 | 58 | 58 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:eng` | 21. The Road Not Taken | 198-202 | 1 | 42 | 42 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:eng` | 22. The Progress | 226-228 | 1 | 37 | 37 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 1. باب 1: غیر متعدی امراض | 14-14 | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 2. باب 2: نظامِ تنفس اور ورزش | 20-20 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 3. باب 3: منشیات | 28-28 | 1 | 8 | 8 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 5. باب 5: کھیلوں کے لیے بائیو میکینکس | 53-53 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 6. باب 6: فٹنس پلان | 59-59 | 1 | 3 | 3 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:hpe` | 7. باب 7: کھیلوں کے قوانین اور مہارتیں | 76-139 | 1 | 103 | 103 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islc` | 1. باب اول: بنیادی عقائد | 37-38 | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islc` | 2. باب دوم: اسلامی تشخص | 94-95 | 1 | 10 | 10 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islc` | 3. باب سوم: رحمت للعالمین | 107-107 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islc` | 4. باب چہارم: تعارفِ قرآن و حدیث | 137-137 | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:islhist` | 1. پہلا باب: سرزمین عرب |  | 1 | 13 | 13 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:islhist` | 2. دوسرا باب: سید الکونین حضرت محمد رسول اللہ صلی اللہ علیہ وآل |  | 1 | 18 | 18 | 0 | 0 | 0 | unanswered |
 | 11 | `cls11:islhist` | 3. تیسرا باب: ہجرت کی اہمیت، مواخات، میثاق مدینہ، غزوات |  | 1 | 22 | 22 | 0 | 0 | 0 | unanswered |
