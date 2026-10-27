@@ -1,12 +1,12 @@
 # Web and App parity (Phase 9)
 
-Date 2026-10-27. Web commit `a7a39766` (branch `launch/readiness`), App branch `launch/readiness` of `SpaceBook-App`. Nothing was pushed or deployed.
+Date 2026-10-27. Web `6e75cdf9`, App `74a1a40` (branch `launch/readiness` in both). The first state of this branch (Web `a749fb4e`, App `dfe6a0b`) was pushed on the owner's order; the commits after it are not pushed.
 
 ## Same data, same functions
 
 | Check | Command | Result |
 |---|---|---|
-| The App bundles exactly what the website is | `node tools/app/sync_app.js --check` | pass: 264 generated files, 0 missing, 0 changed, 0 leftover, service worker 03851b114c10 |
+| The App bundles exactly what the website is | `node tools/app/sync_app.js --check` | pass: 264 generated files, 0 missing, 0 changed, 0 leftover, service worker 4d83afeb5d66 (re-run after the text and accessibility changes; 26 files rewritten) |
 | The App's books are the website's books | `node tools/app/pack_books.js --check` | pass: 404 files (422 MB), 0 missing, 0 changed |
 | Data parity (catalog, question bank, covers, tests) | `node --max-old-space-size=6144 tools/parity/data_parity.js` | pass: 15 of 15 (7,389 questions in 98 subjects equal; 149 covers) |
 | Feature matrix, endpoints, sync events, item kinds, migrations | `node tools/parity/check.js` | pass: 17 of 17 |
@@ -16,8 +16,8 @@ Date 2026-10-27. Web commit `a7a39766` (branch `launch/readiness`), App branch `
 
 | Check | Command | Result |
 |---|---|---|
-| Unit tests | `.\gradlew.bat :app:testDebugUnitTest` | pass: 219 tests, 0 failures, 0 errors (24 classes: titles, feed, reward keys, network layer, screen renderings) |
-| Debug build | `.\gradlew.bat :app:assembleDebug` | pass (53 MB without the packed books; the build with the 422 MB of books is listed below) |
+| Unit tests | `.\gradlew.bat :app:testDebugUnitTest` | pass: 219 tests, 0 failures, 0 errors, re-run on the final bundle (24 classes: titles, feed, reward keys, network layer, screen renderings) |
+| Debug build | `.\gradlew.bat :app:assembleDebug` | pass (the debug APK with the 422 MB of packed books is 164 MB; copy for the owner: `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
 
 Two defects were found by this pass and fixed in the App repository (commit `15cdc34`):
 
@@ -28,7 +28,7 @@ Two defects were found by this pass and fixed in the App repository (commit `15c
 
 * **On a phone.** No phone was connected (`adb devices` was empty) and no emulator is installed (E-03). Not tried: install, start, reader, back button, offline start with the books inside the APK, notifications, the Me row and the reader menu item for reports, the WebView picture chooser. `parity.json` therefore keeps `feedback.report` as `partial` with that stated.
 * Instrumented (on-device) tests: the App has none; the picture chooser cannot be exercised in a JVM test.
-* Gradle dependencies of the App were not audited for vulnerabilities (no tool offline).
+* Gradle dependencies of the App were read, not scanned for vulnerabilities (no advisory database offline): `SECURITY_REPORT.md`, last section.
 
 ## Secrets
 
@@ -40,5 +40,5 @@ See `docs/PARITY_MATRIX.md`; the only row changed in this pass is `feedback.repo
 
 ## Commits
 
-* App: `15cdc34` (entry points, chooser), `21c13d2` (bundle regenerated from Web `a7a39766`).
+* App: `15cdc34` (entry points, chooser), `21c13d2`, `dfe6a0b` (earlier bundles), `74a1a40` (bundle regenerated from Web `6e75cdf9`).
 * Web: see `git log launch/readiness` (answers, build tools, offline layer, documents).
