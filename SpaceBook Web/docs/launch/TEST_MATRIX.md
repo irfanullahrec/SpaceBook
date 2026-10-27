@@ -58,7 +58,7 @@ The suites that load `index.html` (the whole app in one page) time out on this P
 | Check | Baseline | Release |
 |---|---|---|
 | Gradle unit tests (`:app:testDebugUnitTest`) | untested | pass: 219 tests, 0 failures (the first run did not compile: two defects found and fixed, `PARITY_REPORT.md`) |
-| Debug build (`:app:assembleDebug`) | untested | pass: 164 MB with the 422 MB of packed books, rebuilt from the final bundle (219 unit tests re-run: 0 failures) (copy in `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
+| Debug build (`:app:assembleDebug`) | untested | pass: 165 MB with the 422 MB of packed books, rebuilt from the final bundle (219 unit tests re-run: 0 failures) (copy in `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
 | On the owner's phone (adb): launch, reader, back button, offline, notifications, report dialog and picture chooser | untested | **not done: the phone was connected (`adb devices` listed it) but the owner was using it, so the screen was not taken**. Owner action: connect the phone and run the list in `LAUNCH_DECISION.md` |
 | Emulator | blocked: no emulator or system image installed (E-03) | blocked (same) |
 

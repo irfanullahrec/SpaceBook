@@ -63,7 +63,7 @@ Status words: **done** (checked, evidence named) · **partial** (what is covered
 
 ## Phase 9 - App parity: partial
 - [x] `sync_app.js --check`, `pack_books.js --check` clean (264 and 404 files); the App carries the same exercises and answers (same books).
-- [x] `data_parity.js` 15, `tools/parity/check.js` 17, App unit tests 219, debug builds (164 MB with books, rebuilt from the final bundle) (`PARITY_REPORT.md`).
+- [x] `data_parity.js` 15, `tools/parity/check.js` 17, App unit tests 219, debug builds (165 MB with books, rebuilt from the final bundle) (`PARITY_REPORT.md`).
 - [x] Same exercises and answers in the app: the bundle is the website's (EX-5 by construction, `--check`).
 - [ ] Native checks on the phone (adb): **not done: the phone was connected but in use by the owner**. Smallest unblock: when the phone is free, install `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, run the list in `LAUNCH_DECISION.md`.
 

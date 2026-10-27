@@ -1,12 +1,12 @@
 # Web and App parity (Phase 9)
 
-Date 2026-10-27. Web `6e75cdf9`, App `74a1a40` (branch `launch/readiness` in both). The first state of this branch (Web `a749fb4e`, App `dfe6a0b`) was pushed on the owner's order; the commits after it are not pushed.
+Date 2026-10-27. Web `5b434360`, App `5f08a23` (branch `launch/readiness` in both). The first state of this branch (Web `a749fb4e`, App `dfe6a0b`) was pushed on the owner's order; the commits after it are not pushed.
 
 ## Same data, same functions
 
 | Check | Command | Result |
 |---|---|---|
-| The App bundles exactly what the website is | `node tools/app/sync_app.js --check` | pass: 264 generated files, 0 missing, 0 changed, 0 leftover, service worker 4d83afeb5d66 (re-run after the text and accessibility changes; 26 files rewritten) |
+| The App bundles exactly what the website is | `node tools/app/sync_app.js --check` | pass: 264 generated files, 0 missing, 0 changed, 0 leftover, service worker 03022ed887e2 (re-run after the Maths answers; 17 files rewritten) |
 | The App's books are the website's books | `node tools/app/pack_books.js --check` | pass: 404 files (422 MB), 0 missing, 0 changed |
 | Data parity (catalog, question bank, covers, tests) | `node --max-old-space-size=6144 tools/parity/data_parity.js` | pass: 15 of 15 (7,389 questions in 98 subjects equal; 149 covers) |
 | Feature matrix, endpoints, sync events, item kinds, migrations | `node tools/parity/check.js` | pass: 17 of 17 |
@@ -17,7 +17,7 @@ Date 2026-10-27. Web `6e75cdf9`, App `74a1a40` (branch `launch/readiness` in bot
 | Check | Command | Result |
 |---|---|---|
 | Unit tests | `.\gradlew.bat :app:testDebugUnitTest` | pass: 219 tests, 0 failures, 0 errors, re-run on the final bundle (24 classes: titles, feed, reward keys, network layer, screen renderings) |
-| Debug build | `.\gradlew.bat :app:assembleDebug` | pass (the debug APK with the 422 MB of packed books is 164 MB; copy for the owner: `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
+| Debug build | `.\gradlew.bat :app:assembleDebug` | pass (the debug APK with the 422 MB of packed books is 165 MB; copy for the owner: `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
 
 Two defects were found by this pass and fixed in the App repository (commit `15cdc34`):
 
@@ -40,5 +40,5 @@ See `docs/PARITY_MATRIX.md`; the only row changed in this pass is `feedback.repo
 
 ## Commits
 
-* App: `15cdc34` (entry points, chooser), `21c13d2`, `dfe6a0b` (earlier bundles), `74a1a40` (bundle regenerated from Web `6e75cdf9`).
+* App: `15cdc34` (entry points, chooser), `21c13d2`, `dfe6a0b` (earlier bundles), `74a1a40` (bundle from Web `6e75cdf9`), `5f08a23` (bundle from Web `5b434360`, the Maths answers).
 * Web: see `git log launch/readiness` (answers, build tools, offline layer, documents).
