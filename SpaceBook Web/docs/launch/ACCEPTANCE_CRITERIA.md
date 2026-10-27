@@ -36,15 +36,15 @@ A criterion is met only when the command or measurement in its last column was r
 | AC-C1 | met | `coverage_manifest.js --check`: 132 subjects mapped; two folders without a source (Class 7 Pashto empty, Class 10 Islamiat = the Class 9 book) are listed |
 | AC-C2 | met | every scan is accounted for: 87 books exact, 21 within a few pages, 8 PDF-only, 2 differ (named in `COVERAGE_MANIFEST.md`) |
 | AC-C3 | met | `exercise_coverage.js --check`: no chapter lost a question |
-| AC-C4 | **not met** | 177 of 45,445 questions have no answer (Maths 5 to 8: 171; Class 10 Urdu: 6, pages missing); all are named in `ANSWERS_WRITTEN.md`; before the pass 4,652 |
+| AC-C4 | **not met** | 177 of 45,480 questions have no answer (Maths 5 to 8: 171; Class 10 Urdu: 6, pages missing); all are named in `ANSWERS_WRITTEN.md`; before the pass 4,652 |
 | AC-C5 | partly met | 84 MCQs whose answer matches no option (most are lists of parts written like options, the app shows them as plain questions) and 9 clashes are listed in `EXERCISE_COVERAGE.md`; 56 real numeric-key MCQs were repaired |
 | AC-C6 | met by construction | written answers are `sol` lines shown as "SpaceBook answer, not printed in the textbook", open-ended ones start "Model answer"; 31 uncertain answers say "check with the teacher"; no teacher has reviewed them (human list in `VERIFICATION_REPORT.md`) |
 | AC-C7 | met | `node tools/validate.js` 1,288 passed |
 | AC-P1 | **not met** on the phone profile | cold start ready 8.6 s (budget 4 s); slowest chapter 7.1 s; repeat visit 861 ms (met). Desktop: cold start 646 ms. `PERFORMANCE_REPORT.md` |
 | AC-P2 | met | start page transfer 1.4 to 1.8 MB; the first screens are small |
 | AC-P3 | met (narrowly) | largest tab 149,103 nodes (Class 11 Maths exercises) |
-| AC-A1 | met (in jsdom) | axe on 15 views: 0 rule hits; contrast: 0 failing pairs. Not run in a real browser or with a screen reader |
-| AC-A2 | partly met | real Chrome (`tests/launch/touch_zoom.js`, 19 checks): 97 % of touch targets on five phone views are 44 px or more, no sideways scrolling at 360 to 412 px and at 200 % zoom, reduced motion honoured, header fits; 8 of 264 targets are smaller. Keyboard and focus: jsdom only (50 checks) |
+| AC-A1 | met (jsdom and a real Chrome) | axe on 15 views in jsdom: 0 rule hits; axe-core in Chrome (`tests/launch/axe_browser.js`, 7 views at 1280 and 375 px): 0 rule hits after the fixes of A-01; contrast: 0 failing pairs. Not tried with a screen reader |
+| AC-A2 | partly met | real Chrome (`tests/launch/touch_zoom.js`, 19 checks): 97 % of touch targets on five phone views are 44 px or more, no sideways scrolling at 360 to 412 px and at 200 % zoom, reduced motion honoured, header fits; 8 of 302 targets are smaller. Keyboard and focus: jsdom only (50 checks) |
 | AC-L1 | met | `FONT_COVERAGE.md`: 183 characters, 0 without a glyph; `tests/launch/fonts_browser.js` 15 checks |
 | AC-G1 | met | `tests/games/browser.js` 24, `tests/launch/games_pause.js` 20, `arcade_speed.js` 12 |
 | AC-O1 | met | `tests/launch/offline_browser.js` 21 of 21 (after fixing O-01 to O-03) |

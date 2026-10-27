@@ -1,12 +1,12 @@
 # Launch decision
 
-Date 2026-10-27. Branches `launch/readiness` in both repositories: Web `754d83ce`, App `dfe6a0b`. **Nothing was pushed, deployed, published or charged.** This is the tested release for your approval.
+Date 2026-10-27. Branches `launch/readiness` in both repositories: Web `754d83ce`, App `dfe6a0b`. **On the owner's order the branch was pushed on 2026-10-27** (Web `a749fb4e` to `SpaceBook`, App `dfe6a0b` to `SpaceBook-App`). The Web push starts the deploy workflow (tests, upload, migration 009 on the live database); I did not see its result (no `gh` here): read the Actions tab and run the after-deploy checks of `DEPLOY_AND_MAINTAIN.md`. Nothing was published to a store or charged. Work done after that push (the text-quality scan, Class 9 English typed back from the scans, real-browser accessibility, see `TEXT_QUALITY.md`, `AXE_BROWSER.json`, findings T-01 to T-03 and A-01) is committed on the branch and **not pushed**.
 
 ## Decision: READY WITH LIMITATIONS (for your approval; three conditions before it is announced)
 
 * The **website** passes every automated check run on it (1,288 validator checks, 0 smoke failures, all generated files fresh, 491 API checks, 30 browser and data suites, 823 tabs opened with none empty, offline in a real Chrome 21 of 21, accessibility floor, secrets scan clean). It is **safe to put on the live host** once the owner steps below are done.
 * The **app** compiles, passes its 219 unit tests, carries exactly the website's books and answers (422 MB inside the APK), and builds (`D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, 162 MB, debug-signed, not installed). **It has not been used on a phone**: none was connected. Do not publish the app before the phone check below.
-* **Answers:** 45,268 of 45,445 exercise questions now have an answer (4,652 had none at the start). 177 do not (Maths 5 to 8, drawings and figure-dependent parts: 171; Class 10 Urdu, source pages missing: 6). 5,170 answers were written for the project; **no teacher has read them**.
+* **Answers:** 45,303 of 45,480 exercise questions now have an answer (4,652 had none at the start). 177 do not (Maths 5 to 8, drawings and figure-dependent parts: 171; Class 10 Urdu, source pages missing: 6). 5,170 answers were written for the project; **no teacher has read them**.
 
 It is not "ready" without limits because of the three conditions and the limitations below; it is not "blocked" because no defect found in this pass is left open that stops the product working.
 
@@ -49,9 +49,9 @@ Connect the phone, `adb install -r "D:\SpaceBook\Phone\SpaceBook-launch-readines
 | C-06, C-07 | no source for Class 7 Pashto, Class 1 Urdu and General Knowledge, Class 3 Urdu, Play Group, Nursery, KG; pages missing from the supplied scans |
 | P-07 | on the throttled phone profile (4x CPU, Fast 3G) cold start is 8.6 s (budget 4 s), the slowest book opens in 16.4 s (12 s), the slowest chapter in 7.1 s (6 s); on desktop all but the chapter budget are met (`PERFORMANCE_REPORT.md`) |
 | S-02 | the Content-Security-Policy can only be report-only (416 inline handlers) |
-| A11y | no screen-reader test, no real-browser axe or Lighthouse run; copy and paste not tested; 8 of 264 touch targets are under 44 px |
+| A11y | axe-core ran in a real Chrome (desktop and phone width, 7 views; `AXE_BROWSER.json`) and every finding was fixed (0 rule hits; Urdu copy and paste checked); no screen-reader test, no Lighthouse run; 8 of 302 touch targets are under 44 px |
 | Offline | only Chrome on Windows was tried; the read-ahead keeps at most 150 MB of books in memory |
-| Text | no scan for OCR debris, no native review of the Urdu, Pashto and Arabic wording of the new dialogs and games, translations machine-assisted |
+| Text | `TEXT_QUALITY.md`: 124 books, 20,107 pages, 0 broken-encoding pages, 0 unexplained empty pages (23 were found and fixed); 2,544 soft findings are a list for a reader. Class 9 English was compared with its OCR and typed back from the scans where lines were missing (T-02); the other books have no OCR to compare with, so a line dropped there would not be found by a script. No native review of the Urdu, Pashto and Arabic wording of the new dialogs and games, translations machine-assisted |
 | Tests | `tests/sync/items.js`, `plan/reminders.js` and the `index.html` suites need 2 to 3 GB free; they passed on retry (`TEST_MATRIX.md`) |
 
 ## Deploy and rollback

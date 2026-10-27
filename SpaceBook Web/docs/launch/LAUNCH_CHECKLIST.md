@@ -14,20 +14,20 @@ Status words: **done** (checked, evidence named) · **partial** (what is covered
 
 ## Phase 2 - Textbook completeness and accuracy: partial
 - [x] Coverage manifest Class -> Subject -> Book -> Chapter -> printed page -> content location -> status (`COVERAGE_MANIFEST.md`, `--check` passes).
-- [x] **EX-1 Exercise completeness per chapter**: `tools/launch/exercise_coverage.js`: 118 books, 1,532 chapters, 45,445 questions, 0 chapters with an exercise and no questions. Partial: 14 subjects keep their exercises in an older data shape and are not counted (C-02); order and numbering as printed depend on the page pipelines and were spot-checked on 4 pages only (`VERIFICATION_REPORT.md`).
-- [x] **EX-2 Answer coverage per chapter**: 45,268 of 45,445 questions have an answer; **177 do not** and are named: Maths 5 to 8 (171, drawings, graphs, figure-dependent parts) and Class 10 Urdu (6, source pages missing). Before the pass: 4,652 (`ANSWERS_WRITTEN.md`).
+- [x] **EX-1 Exercise completeness per chapter**: `tools/launch/exercise_coverage.js`: 118 books, 1,532 chapters, 45,480 questions, 0 chapters with an exercise and no questions. Partial: 14 subjects keep their exercises in an older data shape and are not counted (C-02); order and numbering as printed depend on the page pipelines and were spot-checked on 4 pages only (`VERIFICATION_REPORT.md`).
+- [x] **EX-2 Answer coverage per chapter**: 45,303 of 45,480 questions have an answer; **177 do not** and are named: Maths 5 to 8 (171, drawings, graphs, figure-dependent parts) and Class 10 Urdu (6, source pages missing). Before the pass: 4,652 (`ANSWERS_WRITTEN.md`).
 - [x] **EX-3 Answers kept apart from the printed text**: every written answer is a `sol` line in the page file, shown as "SpaceBook answer, not printed in the textbook"; open-ended ones start "Model answer" and say other answers are possible; 31 answers carry a "check with the teacher" note (listed in `ANSWERS_WRITTEN.md`).
 - [ ] **EX-4 Independent check of answers**: partial. Calculations of Statistics, Chemistry and Economics figures were recomputed in code; 56 numeric MCQ keys that the reader misread were repaired (C-12); 84 MCQs whose answer matches no option and 9 clashes are listed (C-04). No second person (teacher) has checked the 5,170 written answers: human review list in `VERIFICATION_REPORT.md`.
 - [x] Regression checks that detect a future omission: `exercise_coverage.js --check`, `coverage_manifest.js --check`, `answers_audit.js --check`.
-- [ ] Text quality scan of all book data (OCR debris, mojibake, empty pages, duplicated pages): **not done** beyond the per-page notes of the pipelines (6,748 pages carry notes).
+- [x] Text quality scan of all book data (broken encoding, empty pages, duplicated pages, stray characters): `tools/launch/text_quality.js`, `TEXT_QUALITY.md`: 124 books, 20,107 pages, 23 empty or broken pages found and fixed (T-01), now 0 hard faults and 0 unexplained empty pages; 2,544 soft findings are listed for a reader (T-03). A comparison with the scan OCR (Class 9 English only, the one book with OCR text) found missing printed text on about 35 pages, typed back from the scans (T-02). **Not done:** the same comparison for the other books (no OCR text exists).
 - [ ] Review of meanings, translations and explanations: **not done** (machine-assisted, no native reviewer): disclosed in `VERIFICATION_REPORT.md`.
 - [x] Human expert review list: `VERIFICATION_REPORT.md` section 5.
 
 ## Phase 3 - Web usability, languages, games: done with limits
 - [x] Navigation sweep of every tab of every subject in a real browser: `tests/launch/tab_sweep.js`: 132 subjects, 823 tabs, 0 empty, 0 script errors (`TAB_SWEEP_LOG.txt`).
 - [x] Urdu / Pashto / Arabic fonts bundled (open licence) and used with correct shaping: `FONT_COVERAGE.md` (183 characters, 0 missing), `tests/launch/fonts_browser.js` 15 checks.
-- [ ] Mixed-language text, numerals, copy and search: search 41 checks, shaping in the font test; **copy and paste was not tested**.
-- [x] Keyboard, focus, labels, contrast, touch targets, zoom, reduced motion: jsdom axe on 15 views (0 rule hits), 50 keyboard/ARIA checks, contrast tool (0 failing pairs); real Chrome: `tests/launch/touch_zoom.js` 19 checks (targets 44 px on touch screens, no sideways scroll at 360 to 412 px and 200 % zoom, reduced motion, header fits). **Not done: a screen reader, Lighthouse/axe in a real browser.** Found and fixed on the way: U-01, U-02.
+- [x] Mixed-language text, numerals, copy and search: search 41 checks, shaping in the font test; copy and paste of Urdu selected in a lesson gives the same letters on the clipboard, and a lesson page with Urdu and Latin text keeps both (`tests/launch/axe_browser.js`, 3 checks).
+- [x] Keyboard, focus, labels, contrast, touch targets, zoom, reduced motion: jsdom axe on 15 views (0 rule hits), 50 keyboard/ARIA checks, contrast tool (0 failing pairs); real Chrome: `tests/launch/touch_zoom.js` 19 checks (targets 44 px on touch screens, no sideways scroll at 360 to 412 px and 200 % zoom, reduced motion, header fits). axe-core in a real Chrome (`tests/launch/axe_browser.js`: 7 views at 1280 and 375 px, 19 checks, 0 rule hits after the fixes of A-01). **Not done: a screen reader, Lighthouse.** Found and fixed on the way: U-01, U-02, A-01.
 - [x] Games beginner friendly: how to play, gentle start, adjustable speed, pause stops every timer, restart, no loss for slow reading: `tests/games/browser.js` 24, `games_pause.js` 20, `arcade_speed.js` 12, `content.js` 77,348 recomputed answers.
 
 ## Phase 4 - Fast loading: done, budgets partly missed
@@ -39,7 +39,7 @@ Status words: **done** (checked, evidence named) · **partial** (what is covered
 - [x] Secrets: `tools/launch/secrets_scan.js`: Web 38,277 files + 531,336 history lines, App 377 files + 97,038 history lines, 0 found.
 - [x] Live site read-only header check (5 HEAD requests): no security headers (S-01); `config.php` and `.htaccess` answer 403.
 - [x] PHP review (SQL, XSS, CSRF, IDOR, uploads, sessions, rate limits): `SECURITY_REPORT.md`; 491 PHP checks pass.
-- [ ] Dependency audit: `npm audit` 0 vulnerabilities (dev tools only); **the App's Gradle dependencies were not audited** (no tool offline).
+- [ ] Dependency audit: `npm audit` 0 vulnerabilities (dev tools only); the App's Gradle dependencies were **read, not scanned** (no advisory database offline): fixed versions, WebView file access off, no backup, one exported component (`SECURITY_REPORT.md`, last section). An advisory scan before publishing the app is still to do.
 - [x] Privacy, retention, deletion, backups, logging review: `SECURITY_REPORT.md`, `docs/FEEDBACK.md`; reports carry no personal data; backup drill in the PHP tests.
 - [x] Hardened `.htaccess` prepared and tested on Apache (`tests/launch/htaccess_check.js`); owner steps listed (S-05).
 - [ ] Licence / permission of the bundled textbooks: **owner action** (S-06). Fonts: OFL, copies in `assets/fonts`.
@@ -68,7 +68,7 @@ Status words: **done** (checked, evidence named) · **partial** (what is covered
 - [ ] Native checks on the phone (adb): **blocked, no phone connected**. Smallest unblock: connect the phone, install `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, run the list in `LAUNCH_DECISION.md`.
 
 ## Phase 10 - Launch decision
-- [x] Production-like builds and checks for both products (above); nothing pushed or deployed.
+- [x] Production-like builds and checks for both products (above); pushed on the owner's order on 2026-10-27 (Web a749fb4e, App dfe6a0b), deploy result not seen by me (`LAUNCH_DECISION.md`).
 - [x] Web / App content versions reconciled (`sync_app.js --check`, `pack_books.js --check`: same commit).
 - [x] Measured loading results (`PERFORMANCE_REPORT.md`).
 - [x] Offline and sync evidence (`OFFLINE_REPORT.md`).

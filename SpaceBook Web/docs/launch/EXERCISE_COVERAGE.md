@@ -10,7 +10,7 @@ Answer columns: **own** = a record of its own (worked solution or stated answer)
 
 | Books with questions | Chapters with an exercise | Questions (and parts) | Own answer | Via question | Printed key | Written | Whole line only | **No answer** | MCQs | MCQ answer matches no option | Answer clashes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 118 | 1532 | 45445 | 42694 | 82 | 2118 | 374 | 0 | **177** | 6101 | 84 | 9 |
+| 118 | 1532 | 45480 | 42729 | 82 | 2118 | 374 | 0 | **177** | 6102 | 84 | 9 |
 
 Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **21**.
 
@@ -113,7 +113,7 @@ These subjects have no question records in the registries this report reads (the
 | 9 | Chemistry (`cls9:chem`) | 8 | 8 | 200 | 200 | 0 | 0 | 0 | 0 | 0 | 94 | 8 | 0 |
 | 9 | Computer Science (`cls9:comp`) | 7 | 7 | 127 | 127 | 0 | 0 | 0 | 0 | 0 | 49 | 0 | 0 |
 | 9 | Art & Model Drawing (`cls9:drawing`) | 4 | 4 | 46 | 46 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 9 | English (`cls9:eng`) | 15 | 15 | 1519 | 1519 | 0 | 0 | 0 | 0 | 0 | 397 | 0 | 0 |
+| 9 | English (`cls9:eng`) | 15 | 15 | 1554 | 1554 | 0 | 0 | 0 | 0 | 0 | 398 | 0 | 0 |
 | 9 | Health & Physical Education (`cls9:hpe`) | 8 | 8 | 160 | 160 | 0 | 0 | 0 | 0 | 0 | 84 | 0 | 0 |
 | 9 | Islamyat (`cls9:isl`) | 6 | 4 | 118 | 118 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 9 | Mathematics (`cls9:math`) | 17 | 17 | 1055 | 0 | 0 | 962 | 93 | 0 | 0 | 141 | 1 | 0 |

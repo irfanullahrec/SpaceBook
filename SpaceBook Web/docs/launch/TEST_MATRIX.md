@@ -8,7 +8,7 @@ Status: **pass** / **fail** / **blocked** (cannot run here, reason given) / **un
 |---|---|---|---|
 | Syntax, data, wiring, contracts | `node tools/validate.js` | pass: 1,284 passed, 0 failed | pass: 1,288 passed, 0 failed (22 s) |
 | Whole app loads, every rebuilt book and tab opens | `node --max-old-space-size=6144 tools/smoke.js` | pass: 0 failed | pass: 0 failed (20 s) |
-| Generated files are fresh | `node --max-old-space-size=6144 tools/build/all.js --check` | pass: every step fresh (293 s) | pass: every step fresh (13.5 min on this PC, 11 of them the offline step); re-run after the last build-tool change, see `LAUNCH_DECISION.md` |
+| Generated files are fresh | `node --max-old-space-size=6144 tools/build/all.js --check` | pass: every step fresh (293 s) | pass after the full regeneration of 2026-10-27 (every derived file rebuilt from the committed book data: search, test bank, grammar, assistant, offline map; the check takes about 14 min on this PC, 11 of them the offline step) |
 | Web/App matrix, endpoints, sync events, migrations | `node tools/parity/check.js` | pass: 12 passed | pass: 17 passed |
 | Data parity with the App | `node --max-old-space-size=6144 tools/parity/data_parity.js` | pass: 15 passed | pass: 15 passed (7,389 questions, 98 subjects, 149 covers) |
 | App bundle equals the website | `node tools/app/sync_app.js --check` | pass: 239 files | pass: 264 files, service worker 03851b114c10 |
@@ -16,7 +16,7 @@ Status: **pass** / **fail** / **blocked** (cannot run here, reason given) / **un
 | API tests (migrations, auth, sync, plans, feed, feedback, backup drill) | `php tests/php/run.php` (XAMPP PHP 8.2, local MySQL) | pass: 422 passed | pass: 491 passed, 0 failed |
 | PHP 7.4 syntax | `node tools/php74_lint.js` | untested | pass |
 | Answers audit (CLSn_BOOKS) | `node --max-old-space-size=6144 tools/audit/answers_audit.js --check` | pass | pass: no book has more unanswered questions than its baseline |
-| Exercise completeness and answer coverage per chapter | `node --max-old-space-size=6144 tools/launch/exercise_coverage.js --check` | baseline written: 4,652 questions without an answer | pass: 45,445 questions in 1,532 chapters, **177 without an answer** (Maths 5 to 8: 171; Class 10 Urdu: 6), 84 open MCQs, 9 clashes; no chapter lost a question |
+| Exercise completeness and answer coverage per chapter | `node --max-old-space-size=6144 tools/launch/exercise_coverage.js --check` | baseline written: 4,652 questions without an answer | pass: 45,480 questions in 1,532 chapters, **177 without an answer** (Maths 5 to 8: 171; Class 10 Urdu: 6), 84 open MCQs, 9 clashes; no chapter lost a question |
 | Coverage manifest / books inventory | `coverage_manifest.js --check`, `books_inventory.js --check` | new | pass (manifest regenerated for the new question counts) |
 | Secrets | `node tools/launch/secrets_scan.js [--history]` | manual scan | pass: Web 38,277 files and 531,336 history lines, App 377 files and 97,038 history lines, 0 found (the scanner finds a planted key, a planted password and a planted key block) |
 | Game content (every level recomputed) | `node tests/games/content.js` | untested | pass: 77,348 ok |
@@ -45,6 +45,10 @@ The suites that load `index.html` (the whole app in one page) time out on this P
 | News Feed | `tests/feed/browser.js` | untested | pass: 36 |
 | Search | `tests/search/search.js` | untested | pass: 41 |
 | Accessibility (axe, tabs) | `tests/a11y/axe.js`, `tabs.js` | untested | pass: 15 views, 0 rule hits; 50 |
+| Accessibility in a real Chrome (axe-core, Urdu copy) | `tests/launch/axe_browser.js` | new | pass: 19 checks, 0 rule hits on 7 views at 1280 and 375 px (the first run found serious contrast and nested-control violations, fixed: A-01) |
+| Text of every typed page | `node tools/launch/text_quality.js --check` | new | pass: 124 books, 20,107 pages, 0 hard faults, 0 unexplained empty pages (23 found and fixed: T-01) |
+| Typed Class 9 English against its scan OCR | `python -X utf8 tools/launch/ocr_compare.py class-9/eng/pages class-9/english/ocr 1` | new | 127 of 2,242 OCR lines not found (5.7 %), from 378 (16.9 %) before T-02 was fixed; the 5 pages with 4 or more were looked at: OCR noise, underlined words, placeholder pages |
+| Rebuilt subjects open (Class 9 English, Pak Studies, Class 11 Chemistry, Ikhtiari) | `tests/launch/tab_sweep.js --subjects cls9-eng,cls9-pakstudy,cls11-chem,cls11-ikhtiari --chapters 3` | untested | pass: 81 tabs opened, 0 empty, 0 script errors |
 | Offline in a real browser | `tests/launch/offline_browser.js` | untested | pass: 21 of 21 after three defects were fixed (O-01 to O-03) |
 | Feedback (form, picture, queue, My reports) | `tests/feedback/browser.js` | new | pass: 40 |
 | Loading speed | `tools/launch/perf_browser.js` desktop and phone profile | measured | measured, see `PERFORMANCE_REPORT.md` |

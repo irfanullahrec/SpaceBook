@@ -50,3 +50,12 @@ Anything the site sends to a device so that it works offline can be copied by a 
 * The changes since the first review are books (answers), build tools, the offline layer (`js/core/offline.js`, `tools/build/make_offline.js`) and tests. None adds a network endpoint, a stored credential or a third-party request; `tools/validate.js` still passes its check that no script sends text to a third-party translation service (1,288 checks).
 * The offline layer stores only the public book files and the list of subjects the student downloaded, in the browser's own storage on the device; it sends nothing.
 * The Android app: see `PARITY_REPORT.md` for the secret scan of the App repository.
+
+## Android app: dependencies and WebView settings (read 2026-10-27)
+
+There is no vulnerability scanner or advisory database available offline here, so the libraries were **not scanned**; what was done instead is a read of the build file and of the places where an Android app is usually attacked.
+
+* Direct dependencies (`gradle/libs.versions.toml`): Android Gradle Plugin 9.1.1, Kotlin 2.2.10, Compose BOM 2026.09.00, Hilt 2.60.1, Room 2.8.5, Retrofit 3.0.0, OkHttp 5.3.2, kotlinx-serialization 1.9.0, coroutines 1.10.2, DataStore 1.1.7, WorkManager 2.10.5, Coil 3.3.0, AndroidX WebKit 1.14.0, Robolectric 4.17 (tests only). Every version is written out in that file (no `+` or `latest` range in the build files), so a build is repeatable; I cannot tell from here whether each is the newest release or has an advisory. **Still to do before the app is published:** run an advisory scan over `./gradlew :app:dependencies` (for example Google's Play Console pre-launch report or OSV-Scanner) and keep the versions moving.
+* The books are shown in a WebView loaded from the APK's own assets: `allowFileAccess = false`, `allowContentAccess = false`, `mixedContentMode = NEVER_ALLOW`, `shouldOverrideUrlLoading` is overridden (`SbWebView.kt`); the helper WebViews (`PrepReader`, `Reminders`, `BookSearch`) also set `allowFileAccess = false`. JavaScript is on because the reader is JavaScript.
+* `allowBackup="false"`; one exported component (the launcher activity), the other two are not exported (`AndroidManifest.xml`).
+* The release build blocks screenshots (`FLAG_SECURE`, above). No database host, user or password is in the App repository (secret scan, `PARITY_REPORT.md`).
