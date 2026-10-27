@@ -10,9 +10,9 @@ Answer columns: **own** = a record of its own (worked solution or stated answer)
 
 | Books with questions | Chapters with an exercise | Questions (and parts) | Own answer | Via question | Printed key | Written | Whole line only | **No answer** | MCQs | MCQ answer matches no option | Answer clashes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 118 | 1532 | 45581 | 38355 | 82 | 2118 | 374 | 0 | **4652** | 6089 | 124 | 9 |
+| 118 | 1532 | 45445 | 42694 | 82 | 2118 | 374 | 0 | **177** | 6101 | 84 | 9 |
 
-Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **195**.
+Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **21**.
 
 ## Subjects without questions held as data (need their own check)
 
@@ -133,34 +133,34 @@ These subjects have no question records in the registries this report reads (the
 | 10 | General Science (`cls10:sci`) | 6 | 6 | 172 | 172 | 0 | 0 | 0 | 0 | 0 | 81 | 0 | 0 |
 | 10 | Urdu (`cls10:urdu`) | 22 | 21 | 378 | 372 | 0 | 0 | 0 | 0 | **6** | 0 | 0 | 0 |
 | 11 | Biology (`cls11:bio`) | 15 | 13 | 374 | 374 | 0 | 0 | 0 | 0 | 0 | 163 | 0 | 0 |
-| 11 | Chemistry (`cls11:chem`) | 14 | 12 | 670 | 44 | 0 | 0 | 0 | 0 | **626** | 159 | 3 | 0 |
-| 11 | Civics (Shehriyat) (`cls11:civics`) | 12 | 9 | 279 | 0 | 0 | 0 | 0 | 0 | **279** | 46 | 0 | 0 |
+| 11 | Chemistry (`cls11:chem`) | 14 | 12 | 648 | 648 | 0 | 0 | 0 | 0 | 0 | 163 | 3 | 0 |
+| 11 | Civics (Shehriyat) (`cls11:civics`) | 12 | 9 | 279 | 279 | 0 | 0 | 0 | 0 | 0 | 46 | 0 | 0 |
 | 11 | Computer Science (`cls11:comp`) | 10 | 8 | 231 | 231 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | English (`cls11:eng`) | 24 | 22 | 1048 | 0 | 0 | 0 | 0 | 0 | **1048** | 28 | 0 | 0 |
+| 11 | English (`cls11:eng`) | 24 | 22 | 1038 | 1038 | 0 | 0 | 0 | 0 | 0 | 28 | 0 | 0 |
 | 11 | Health and Physical Education (`cls11:hpe`) | 10 | 6 | 137 | 137 | 0 | 0 | 0 | 0 | 0 | 90 | 0 | 0 |
-| 11 | Islamiat Ikhtiari (Elective) (`cls11:islopt`) | 8 | 6 | 272 | 0 | 0 | 0 | 0 | 0 | **272** | 0 | 0 | 0 |
-| 11 | Islamic History (`cls11:islhist`) | 22 | 20 | 489 | 0 | 0 | 0 | 0 | 0 | **489** | 0 | 0 | 0 |
+| 11 | Islamiat Ikhtiari (Elective) (`cls11:islopt`) | 8 | 6 | 272 | 272 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 11 | Islamic History (`cls11:islhist`) | 22 | 20 | 444 | 444 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | Islamiat (Compulsory) (`cls11:islc`) | 7 | 4 | 33 | 33 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | Mathematics (`cls11:math`) | 12 | 12 | 879 | 877 | 0 | 2 | 0 | 0 | 0 | 93 | 0 | 5 |
-| 11 | Mutalia-e-Quran Hakeem (Compulsory) (`cls11:quran`) | 23 | 21 | 418 | 0 | 0 | 0 | 0 | 0 | **418** | 144 | 0 | 0 |
-| 11 | Statistics (`cls11:stat`) | 13 | 7 | 489 | 95 | 0 | 0 | 0 | 0 | **394** | 65 | 1 | 0 |
-| 11 | Urdu (Compulsory) (`cls11:urdu`) | 35 | 32 | 212 | 0 | 0 | 0 | 0 | 0 | **212** | 13 | 0 | 0 |
-| 12 | Civics (`cls12:civics`) | 10 | 8 | 211 | 186 | 0 | 0 | 0 | 0 | **25** | 31 | 0 | 0 |
-| 12 | Computer Science (`cls12:comp`) | 11 | 9 | 222 | 216 | 0 | 0 | 0 | 0 | **6** | 1 | 0 | 0 |
-| 12 | Economics (`cls12:econ`) | 15 | 13 | 583 | 460 | 0 | 0 | 0 | 0 | **123** | 216 | 6 | 0 |
-| 12 | English (`cls12:eng`) | 20 | 19 | 762 | 208 | 0 | 0 | 0 | 0 | **554** | 2 | 2 | 0 |
-| 12 | Health & Physical Education (`cls12:hpe`) | 9 | 7 | 151 | 147 | 0 | 0 | 0 | 0 | **4** | 91 | 39 | 0 |
-| 12 | Islamic History (`cls12:islhist`) | 43 | 21 | 348 | 345 | 0 | 0 | 0 | 0 | **3** | 8 | 0 | 0 |
-| 12 | Islamiat Ikhtiari (`cls12:islopt`) | 8 | 6 | 260 | 241 | 0 | 0 | 0 | 0 | **19** | 0 | 0 | 0 |
+| 11 | Mutalia-e-Quran Hakeem (Compulsory) (`cls11:quran`) | 23 | 21 | 418 | 418 | 0 | 0 | 0 | 0 | 0 | 145 | 0 | 0 |
+| 11 | Statistics (`cls11:stat`) | 13 | 7 | 459 | 459 | 0 | 0 | 0 | 0 | 0 | 71 | 1 | 0 |
+| 11 | Urdu (Compulsory) (`cls11:urdu`) | 35 | 32 | 212 | 212 | 0 | 0 | 0 | 0 | 0 | 13 | 0 | 0 |
+| 12 | Civics (`cls12:civics`) | 10 | 8 | 210 | 210 | 0 | 0 | 0 | 0 | 0 | 31 | 0 | 0 |
+| 12 | Computer Science (`cls12:comp`) | 11 | 9 | 216 | 216 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 12 | Economics (`cls12:econ`) | 15 | 13 | 583 | 583 | 0 | 0 | 0 | 0 | 0 | 216 | 2 | 0 |
+| 12 | English (`cls12:eng`) | 20 | 19 | 744 | 744 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 0 |
+| 12 | Health & Physical Education (`cls12:hpe`) | 9 | 7 | 147 | 147 | 0 | 0 | 0 | 0 | 0 | 91 | 1 | 0 |
+| 12 | Islamic History (`cls12:islhist`) | 43 | 21 | 348 | 348 | 0 | 0 | 0 | 0 | 0 | 8 | 0 | 0 |
+| 12 | Islamiat Ikhtiari (`cls12:islopt`) | 8 | 6 | 260 | 260 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 12 | Mathematics (`cls12:math`) | 12 | 3 | 385 | 282 | 78 | 0 | 25 | 0 | 0 | 45 | 0 | 0 |
 | 12 | Pakistan Studies (`cls12:pakstudy`) | 12 | 11 | 250 | 250 | 0 | 0 | 0 | 0 | 0 | 56 | 6 | 0 |
 | 12 | Mutalia-e-Quran (`cls12:quran`) | 26 | 24 | 492 | 492 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 12 | Statistics (`cls12:stat`) | 9 | 9 | 608 | 0 | 0 | 479 | 129 | 0 | 0 | 90 | 0 | 0 |
-| 12 | Urdu (`cls12:urdu`) | 35 | 33 | 271 | 267 | 1 | 0 | 0 | 0 | **3** | 4 | 3 | 0 |
+| 12 | Urdu (`cls12:urdu`) | 35 | 33 | 271 | 270 | 1 | 0 | 0 | 0 | 0 | 5 | 5 | 0 |
 
 ## Chapters that need attention
 
-263 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
+93 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
 
 | Class | Book | Chapter | Printed pages | Exercise sections | Questions | No answer | Whole line | Open MCQs | Clashes | State |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -238,192 +238,22 @@ These subjects have no question records in the registries this report reads (the
 | 10 | `cls10:urdu` | 12. آزادی | 103-105 | 0 | 16 | 1 | 0 | 0 | 0 | unanswered |
 | 10 | `cls10:urdu` | 13. مزارِ قطب الدین ایبک | 109-110 | 0 | 14 | 3 | 0 | 0 | 0 | unanswered |
 | 10 | `cls10:urdu` | 14. نمودِ صبح | 114-115 | 0 | 11 | 1 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 1. Stoichiometry | 5-25 | 1 | 113 | 86 | 0 | 3 | 0 | unanswered |
-| 11 | `cls11:chem` | 2. Atomic Structure | 30-70 | 1 | 64 | 54 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 3. Theories of Covalent Bonding and Shapes of Molecules | 73-106 | 1 | 46 | 46 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 4. States of Matter I: Gases | 145-148 | 1 | 42 | 35 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 5. States of Matter II: Liquids | 159-179 | 1 | 54 | 54 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 6. States of Matter III: Solids | 183-208 | 1 | 52 | 52 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 7. Chemical Equilibrium | 212-234 | 1 | 49 | 49 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 8. Acids, Bases and Salts | 237-268 | 1 | 61 | 61 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 9. Chemical Kinetics | 279-295 | 1 | 58 | 58 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 10. Solutions and Colloids | 304-330 | 1 | 41 | 41 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 11. Thermochemistry | 335-355 | 1 | 40 | 40 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:chem` | 12. Electrochemistry | 367-391 | 1 | 50 | 50 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 1. باب 1: سیاسی نظام | 33-35 | 1 | 38 | 38 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 2. باب 2: حکومت کی اقسام | 53-55 | 1 | 29 | 29 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 3. باب 3: حقوق | 75-77 | 1 | 33 | 33 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 4. باب 4: سیاسی اقتصادیات | 95-98 | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 5. باب 5: تضاد اور تضاد کا حل | 117-120 | 1 | 30 | 30 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 6. باب 6: علمی مہارتیں | 138-140 | 1 | 29 | 29 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 7. باب 7: ذرائع ابلاغ اور سول سوسائٹی | 163-165 | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 8. باب 8: انسانی اقدار کا فروغ | 196-198 | 1 | 35 | 35 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:civics` | 9. باب 9: فعال اور ذمہ دار شہری | 204-206 | 1 | 21 | 21 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 1. Responsibilities of the Youth | 6-12 | 1 | 64 | 64 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 2. His First Flight | 19-23 | 1 | 68 | 68 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 3. Good Timber (Poem) | 26-29 | 1 | 38 | 38 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 4. From Mother With Love | 44-46 | 1 | 39 | 39 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 5. Its Country for Me | 54-55 | 1 | 35 | 35 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 6. Mother to Son (Poem) | 58-64 | 1 | 60 | 60 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 7. Choice of Career | 70-70 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 8. Wasteland | 79-81 | 1 | 38 | 38 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 9. The White Lamb | 90-92 | 1 | 36 | 36 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 10. The World is Too Much With Us | 95-99 | 1 | 57 | 57 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 11. The Importance of Family | 106-110 | 1 | 48 | 48 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 12. The Blanket | 116-119 | 1 | 63 | 63 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 13. Ozymandias | 122-126 | 1 | 71 | 71 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 14. A Long Walk Home | 130-136 | 1 | 53 | 53 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 15. University Days | 140-145 | 1 | 56 | 56 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 16. School VS Education | 149-151 | 1 | 23 | 23 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 17. What You Do Is What You Are | 156-158 | 1 | 29 | 29 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 18. A Dream Within A Dream | 161-166 | 1 | 86 | 86 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 19. Drug Abuse in the Youth of Pakistan | 172-175 | 1 | 41 | 41 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 20. How to Take a Job Interview | 182-195 | 1 | 58 | 58 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 21. The Road Not Taken | 198-202 | 1 | 42 | 42 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:eng` | 22. The Progress | 226-228 | 1 | 37 | 37 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 1. پہلا باب: سرزمین عرب |  | 1 | 13 | 13 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 2. دوسرا باب: سید الکونین حضرت محمد رسول اللہ صلی اللہ علیہ وآل |  | 1 | 18 | 18 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 3. تیسرا باب: ہجرت کی اہمیت، مواخات، میثاق مدینہ، غزوات |  | 1 | 22 | 22 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 4. چوتھا باب: بیعت رضوان، صلح حدیبیہ، فتح مکہ |  | 1 | 19 | 19 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 5. پانچواں باب: حجۃ الوداع، وصال، سیرت طیبہ |  | 1 | 22 | 22 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 6. چھٹا باب: حضرت ابوبکر صدیق (۱۱ھ تا ۱۳ھ) |  | 1 | 35 | 35 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 7. ساتواں باب: حضرت عمر فاروق ابن الخطاب (۱۳ھ تا ۲۴ھ) |  | 1 | 21 | 21 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 8. آٹھواں باب: حضرت عمر کا انتظام سلطنت (اصلاحات)، فوجی تنظیم |  | 1 | 21 | 21 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 9. نواں باب: حضرت عثمان بن عفان (۲۴ھ تا ۳۵ھ) |  | 1 | 16 | 16 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 10. دسواں باب: فتنہ، الزامات، بغاوتیں، شہادت |  | 1 | 21 | 21 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 11. گیارھواں باب: حضرت علی بن ابی طالب (۳۵ھ تا ۴۰ھ) |  | 1 | 28 | 28 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 12. بارھواں باب: حضرت امیر معاویہ (۴۱ھ تا ۶۰ھ) |  | 1 | 27 | 27 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 13. تیرھواں باب: یزید بن معاویہ (۶۰ھ تا ۶۴ھ) |  | 1 | 30 | 30 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 14. چودھواں باب: حضرت عبداللہ بن زبیر (۶۴ھ تا ۷۳ھ) |  | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 15. پندرھواں باب: عبدالملک بن مروان (۶۵ھ تا ۸۶ھ) |  | 1 | 33 | 33 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 16. سولھواں باب: ولید بن عبدالملک (۸۶ھ تا ۹۶ھ) |  | 1 | 31 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 17. سترھواں باب: سلیمان بن عبدالملک (۹۶ھ تا ۹۹ھ) |  | 1 | 32 | 32 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 18. اٹھارھواں باب: یزید بن عبدالملک (۱۰۱ھ تا ۱۰۵ھ) |  | 1 | 31 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | 19. انیسواں باب: ولید ثانی، یزید ثالث، ابراہیم، مروان ثانی (۱۰۵ھ |  | 1 | 27 | 27 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islhist` | BM. اختتامی صفحات |  | 1 | 33 | 33 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 1. باب اول: قرآن مجید | 13-123 | 1 | 112 | 112 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 2. باب دوم: حدیث | 135-163 | 1 | 41 | 41 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 3. باب سوم: علمی پیش رفت میں مسلمانوں کی خدمات | 186-187 | 1 | 23 | 23 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 4. باب چہارم: اسلام کا نظامِ حکومت و ریاست | 232-233 | 1 | 22 | 22 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 5. باب پنجم: عصرِ حاضر اور اسلامی ریاستیں | 255-256 | 1 | 19 | 19 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:islopt` | 6. باب ششم: عربی زبان و ادب | 289-291 | 1 | 55 | 55 | 0 | 0 | 0 | unanswered |
+| 11 | `cls11:chem` | 1. Stoichiometry | 5-25 | 1 | 101 | 0 | 0 | 3 | 0 | check-answers |
 | 11 | `cls11:math` | 3. Vectors | 84-117 | 1 | 78 | 0 | 0 | 0 | 2 | check-answers |
 | 11 | `cls11:math` | 10. Trigonometric Identities of Sum and Difference of Angles | 295-310 | 0 | 67 | 0 | 0 | 0 | 2 | check-answers |
 | 11 | `cls11:math` | 12. Graphs of Trigonometric and Inverse Trigonometric Functions  | 366-400 | 0 | 124 | 0 | 0 | 0 | 1 | check-answers |
-| 11 | `cls11:quran` | 1. سبق 1: سورۃ البقرہ (۱) | 12-13 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 2. سبق 2: سورۃ البقرہ (۲) | 21-22 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 3. سبق 3: سورۃ البقرہ (۳) | 30-31 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 4. سبق 4: سورۃ البقرہ (۴) | 39-40 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 5. سبق 5: سورۃ البقرہ (۵) | 50-51 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 6. سبق 6: سورۃ البقرہ (۶) | 60-62 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 7. سبق 7: سورۃ البقرہ (۷) | 69-70 | 1 | 19 | 19 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 8. سبق 8: سورۃ البقرہ (۸) | 77-79 | 1 | 19 | 19 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 9. سبق 9: سورۃ آل عمران (۱) | 87-88 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 10. سبق 10: سورۃ آل عمران (۲) | 95-96 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 11. سبق 11: سورۃ آل عمران (۳) | 103-104 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 12. سبق 12: سورۃ آل عمران (۴) | 111-112 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 13. سبق 13: سورۃ آل عمران (۵) | 119-120 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 14. سبق 14: سورۃ آل عمران (۶) | 126-127 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 15. سبق 15: سورۃ الانفال (۱) | 136-137 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 16. سبق 16: سورۃ الانفال (۲) | 143-144 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 17. سبق 17: سورۃ التوبہ (۱) | 151-152 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 18. سبق 18: سورۃ التوبہ (۲) | 159-161 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 19. سبق 19: سورۃ التوبہ (۳) | 168-170 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 20. سبق 20: سورۃ التوبہ (۴) | 177-178 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:quran` | 21. سبق 21: سورۃ الاحقاف | 185-187 | 1 | 20 | 20 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 1. Collection and Presentation of Data | 8-53 | 1 | 95 | 78 | 0 | 1 | 0 | unanswered |
-| 11 | `cls11:stat` | 2. Measures of Central Tendency (MCT) | 56-89 | 1 | 90 | 66 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 3. Measures of Dispersion, Skewness and Kurtosis | 93-144 | 1 | 98 | 74 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 4. Index Numbers | 149-172 | 1 | 57 | 46 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 5. Simple Linear Regression and Correlation | 175-194 | 1 | 58 | 51 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 6. Time Series | 199-214 | 1 | 55 | 48 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:stat` | 7. Vital Statistics | 219-237 | 1 | 36 | 31 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 1. نثر 1: اپنی مدد آپ (سرسید احمد خان) | 8-9 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 2. نثر 2: جھوٹے آدمی (مولوی ذکاء اللہ) | 14-14 | 1 | 10 | 10 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 3. نثر 3: نظریۂ پاکستان (ڈاکٹر غلام مصطفیٰ خان) | 20-21 | 1 | 13 | 13 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 4. نثر 4: پاکستانی قومیت کا مسئلہ (ڈاکٹر سید عبداللہ) | 28-28 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 5. نثر 5: کچھ ادب کے بارے میں (ڈاکٹر عبادت بریلوی) | 34-35 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 6. نثر 6: لمحۂ فکریہ (مشتاق احمد صدیقی) | 40-40 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 7. نثر 7: داروغہ جی کی پانچوں گھی میں اور سر کڑاہی میں (رتن نات | 52-52 | 1 | 8 | 8 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 8. نثر 8: آنگن (خدیجہ مستور) | 61-61 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 9. نثر 9: خوب صورت بلا (آغا حشر کاشمیری) | 70-70 | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 10. نثر 10: تعلیمِ بالغاں (خواجہ معین الدین) | 82-83 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 11. نثر 11: شیراز اور گلستان (ابنِ انشا) | 93-93 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 12. نثر 12: روم: زندہ شہر اور مردہ شہر (جمیل الدین عالی) | 100-100 | 1 | 4 | 4 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 13. نثر 13: لالچی وزیر (ترجمہ) | 103-103 | 1 | 3 | 3 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 14. نثر 14: مکتوب نگاری: خطوطِ غالب اور مکاتیبِ اقبال | 107-112 | 1 | 11 | 11 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 101. نظم 1: حمد (ماہر القادری) | 116-116 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 102. نظم 2: نعت (محسن کاکوروی) | 119-119 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 103. نظم 3: شہر آشوب (نظیر اکبر آبادی) | 123-123 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 104. نظم 4: شہزادے کا چھت پر سونا (میر حسن) | 126-126 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 105. نظم 5: دُرِّ مراد (میر انیس) | 130-130 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 106. نظم 6: تختِ فرس پہ علی اکبر کا خطاب (مرزا دبیر) | 134-134 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 107. نظم 7: امید (الطاف حسین حالی) | 138-138 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 108. نظم 8: نصیحتِ اخلاقی (اکبر الہ آبادی) | 141-141 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 109. نظم 9: جلوۂ سحر (حفیظ جالندھری) | 145-145 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 110. نظم 10: پرانا کوٹ (سید محمد جعفری) | 149-149 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 111. نظم 11: یہ سڑکیں (سید ضمیر جعفری) | 152-152 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 112. نظم 12: قطعات (مرزا محمود سرحدی) | 155-155 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 113. نظم 13: اخلاص (عبدالرحمن بابا) | 158-158 | 1 | 5 | 5 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 201. غزل: میر تقی میر | 163-164 | 1 | 10 | 10 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 202. غزل: خواجہ میر درد | 167-167 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 203. غزل: غلام ہمدانی مصحفی | 170-170 | 1 | 6 | 6 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 204. غزل: مرزا غالب | 174-174 | 1 | 7 | 7 | 0 | 0 | 0 | unanswered |
-| 11 | `cls11:urdu` | 205. غزل: داغ دہلوی | 177-177 | 1 | 9 | 9 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 1. پاکستان کا نظامِ حکومت | 33-35 | 1 | 29 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 2. بچوں اور خواتین کے حقوق | 54-55 | 1 | 14 | 2 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 3. سیاسی اقتصادیات | 78-80 | 1 | 33 | 5 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 4. بین الاقوامی تنازعات اور حل | 99-102 | 1 | 32 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 5. علمی مہارتیں | 113-114 | 1 | 28 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 6. سیاسی جماعتیں اور سماجی تحاریک | 130-133 | 1 | 32 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 7. امن اور تنوع | 155-156 | 1 | 20 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:civics` | 8. فعال اور ذمہ دار شہریت | 167-169 | 1 | 23 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:comp` | 4. Control Structure | 141-144 | 1 | 29 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:comp` | 5. Arrays and Strings |  | 1 | 23 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:comp` | 6. Functions |  | 1 | 27 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:comp` | 7. Pointers |  | 1 | 20 | 1 | 0 | 0 | 0 | unanswered |
+| 11 | `cls11:stat` | 1. Collection and Presentation of Data | 8-53 | 1 | 88 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:econ` | 5. بین الاقوامی تجارت | 104-108 | 1 | 48 | 0 | 0 | 1 | 0 | check-answers |
-| 12 | `cls12:econ` | 6. معیشتِ پاکستان کا تعارف | 114-116 | 1 | 37 | 0 | 0 | 2 | 0 | check-answers |
-| 12 | `cls12:econ` | 8. معاشی ترقی اور منصوبہ بندی | 158-161 | 1 | 39 | 0 | 0 | 1 | 0 | check-answers |
-| 12 | `cls12:econ` | 9. مواصلات، ذرائع نقل و حمل اور انسانی ذرائع کی ترقی | 188-190 | 1 | 37 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:econ` | 13. اسلام کا معاشی نظام | 292-294 | 1 | 32 | 0 | 0 | 1 | 0 | check-answers |
-| 12 | `cls12:econ` | 14. ضمیمہ اور پرچہ جات | 299-306 | 1 | 123 | 123 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 1. Seerat-e-Tayyiba and the Muslim Youth | 6-15 | 1 | 35 | 25 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 2. Jinnah's Vision of Pakistan | 22-25 | 1 | 23 | 12 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 3. Solitary Reaper (Poem) | 29-31 | 1 | 18 | 10 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 4. Truck Art | 38-41 | 1 | 43 | 33 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 5. The Last Leaf | 49-52 | 1 | 36 | 32 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 6. If (Poem) | 56-60 | 1 | 41 | 27 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 7. Hubble | 70-76 | 1 | 36 | 25 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 8. Lesson from the Battle of Uhud | 81-84 | 1 | 37 | 25 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 9. The Toys (Poem) | 87-91 | 1 | 55 | 44 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 10. Gender Inequality and its Implications | 98-100 | 1 | 28 | 18 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 11. Jahangir Khan – The Conqueror | 106-109 | 1 | 44 | 35 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 12. All the World's a Stage (Poem) | 114-118 | 1 | 46 | 36 | 0 | 1 | 0 | unanswered |
-| 12 | `cls12:eng` | 13. Technical Education | 125-129 | 1 | 56 | 47 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 14. Lingkuan Gorge | 136-138 | 1 | 42 | 29 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 15. Once Upon a Time (Poem) | 143-149 | 1 | 58 | 46 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 16. Tourist Attractions in Pakistan | 157-161 | 1 | 67 | 56 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 17. Désirée's Baby | 170-175 | 1 | 25 | 15 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:eng` | 18. Lines from the Deserted Village (Poem) | 180-181 | 1 | 19 | 11 | 0 | 1 | 0 | unanswered |
-| 12 | `cls12:eng` | 19. Lord of the Flies | 226-228 | 1 | 53 | 28 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:hpe` | 1. غیر متعدی امراض | 10-10 | 1 | 12 | 1 | 0 | 1 | 0 | unanswered |
-| 12 | `cls12:hpe` | 2. نظامِ دورانِ خون اور ورزش کے اثرات | 22-22 | 1 | 11 | 1 | 0 | 1 | 0 | unanswered |
-| 12 | `cls12:hpe` | 6. کھیل اور بائیو مکینیکل اصول | 68-68 | 1 | 6 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:hpe` | 7. کھیلوں کے قوانین اور مہارتیں | 80-152 | 1 | 101 | 1 | 0 | 37 | 0 | unanswered |
-| 12 | `cls12:islhist` | 24. فرقہ معتزلہ، فرقہ قرامطہ، خاندان بویہ یا دیلمی، سلجوقی، صلیب | 107-107 | 1 | 24 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:islhist` | 25. آخری خلفاء۔ خاندانِ عباسیہ کا زوال | 123-124 | 1 | 33 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:islhist` | 40. عماراتِ اندلسیہ | 214-214 | 1 | 18 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:islopt` | 1. قرآنِ مجید اور اصولِ تفسیر | 59-96 | 1 | 128 | 12 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:islopt` | 2. حدیثِ نبوی ﷺ اور اصولِ حدیث |  | 1 | 55 | 3 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:islopt` | 4. اسلام کا نظامِ حکومت و ریاست | 198-199 | 1 | 26 | 4 | 0 | 0 | 0 | unanswered |
+| 12 | `cls12:eng` | 12. All the World's a Stage (Poem) | 114-118 | 1 | 44 | 0 | 0 | 1 | 0 | check-answers |
+| 12 | `cls12:eng` | 18. Lines from the Deserted Village (Poem) | 180-181 | 1 | 19 | 0 | 0 | 1 | 0 | check-answers |
+| 12 | `cls12:hpe` | 7. کھیلوں کے قوانین اور مہارتیں | 80-152 | 1 | 100 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:pakstudy` | 2. اسلامی جمہوریہ پاکستان کے ابتدائی مسائل | 44-45 | 1 | 27 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:pakstudy` | 5. پاکستان کا حکومتی ڈھانچہ اور اچھا نظامِ حکومت | 114-114 | 1 | 17 | 0 | 0 | 3 | 0 | check-answers |
 | 12 | `cls12:pakstudy` | 10. اسلامی جمہوریہ پاکستان کی خارجہ پالیسی | 198-200 | 1 | 30 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:pakstudy` | 11. پاکستان کے مسائل | 211-212 | 1 | 14 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:urdu` | 5. شہرتِ عام اور بقائے دوام کا دربار | 45-46 | 1 | 8 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:urdu` | 6. چند روز ایک روڈ رولر کے ساتھ | 52-53 | 1 | 5 | 0 | 0 | 1 | 0 | check-answers |
-| 12 | `cls12:urdu` | 12. کنڈکٹر | 116-117 | 1 | 14 | 1 | 0 | 0 | 0 | unanswered |
-| 12 | `cls12:urdu` | 18. جوابِ شکوہ | 192-193 | 1 | 11 | 1 | 0 | 0 | 0 | unanswered |
+| 12 | `cls12:urdu` | 18. جوابِ شکوہ | 192-193 | 1 | 11 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:urdu` | 24. ہمیشہ دیر کر دیتا ہوں | 217-217 | 1 | 7 | 0 | 0 | 1 | 0 | check-answers |
-| 12 | `cls12:urdu` | 31. غزل: لب کشا لوگ ہیں، سرکار کو کیا بولنا ہے | 237-237 | 1 | 5 | 1 | 0 | 0 | 0 | unanswered |
+| 12 | `cls12:urdu` | 31. غزل: لب کشا لوگ ہیں، سرکار کو کیا بولنا ہے | 237-237 | 1 | 5 | 0 | 0 | 1 | 0 | check-answers |
