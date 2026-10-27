@@ -1,7 +1,7 @@
 # Offline and sync: results (Phase 6)
 
 Run on 2026-10-27 in the installed Chrome (Playwright), real service worker, real Cache Storage, local server, network switched off with the browser's offline mode.
-Command: `node --max-old-space-size=3072 tests/launch/offline_browser.js` (21 checks). Sync: `tests/sync/unit.js`, `e2e.js`, `parity_e2e.js`, `items.js`.
+Command: `node --max-old-space-size=3072 tests/launch/offline_browser.js` (21 checks); also `tests/offline/offline.js` 41, `sw.js` 33, `tts.js` 23, `mutate.js`. Sync: `tests/sync/unit.js`, `e2e.js`, `parity_e2e.js`, `items.js`.
 
 ## What the first run found (three real defects, all fixed)
 
@@ -31,7 +31,7 @@ Command: `node --max-old-space-size=3072 tests/launch/offline_browser.js` (21 ch
 | `tests/sync/unit.js` | 51 passed, 0 failed |
 | `tests/sync/e2e.js` (client, API, MySQL) | 17 passed, 0 failed |
 | `tests/sync/parity_e2e.js` (website client and app request shapes against one server) | 20 passed, 0 failed |
-| `tests/sync/items.js` (two devices, one account: bookmarks, notes, offline outbox, late edits, guest, sign-in) | the first 16 to 19 checks pass; **the process then dies** (V8 out of memory with a 1.5 GB heap, or killed by the OS with a larger one): each scenario builds a fresh copy of the whole app and this PC has 1 to 2 GB free. Not a product failure, but the suite is not complete here. Re-run on a PC with 4 GB free before the release |
+| `tests/sync/items.js` (two devices, one account: bookmarks, notes, offline outbox, late edits, guest, sign-in) | 23 passed, 0 failed (on a second run: the first three runs died of memory on this PC, which has 1 to 2 GB free; the suite builds a fresh copy of the whole app per scenario) |
 
 ## Honest limits
 

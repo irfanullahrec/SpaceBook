@@ -43,3 +43,10 @@ Anything the site sends to a device so that it works offline can be copied by a 
 3. Run `php api/migrate.php prune` monthly (cron) and keep a database dump before each deploy that carries a migration (009 adds two tables).
 4. Confirm the textbook licence (S-06) and finish the steps of `PHASE0_SERVER_STEPS.md` (S-05).
 5. Install PHP's GD extension on the host if missing (pictures are then re-encoded on the server too).
+
+## Re-check on the release commit (2026-10-27)
+
+* Secret scan of the branch's code and configuration changes against `origin/main` a0773486 (834 files, data files excluded): no password, key, token, private key or connection string; no `.env`, `.pem` or key file is tracked.
+* The changes since the first review are books (answers), build tools, the offline layer (`js/core/offline.js`, `tools/build/make_offline.js`) and tests. None adds a network endpoint, a stored credential or a third-party request; `tools/validate.js` still passes its check that no script sends text to a third-party translation service (1,288 checks).
+* The offline layer stores only the public book files and the list of subjects the student downloaded, in the browser's own storage on the device; it sends nothing.
+* The Android app: see `PARITY_REPORT.md` for the secret scan of the App repository.

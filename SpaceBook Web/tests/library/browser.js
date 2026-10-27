@@ -25,7 +25,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const shot = async name => { try { await page.screenshot({ path: path.join(OUT, name + '.png') }); } catch (e) { /* page busy */ } };
 
   async function boot() {
-    await page.goto(url + 'index.html', { waitUntil: 'domcontentloaded', timeout: 180000 });
+    await page.goto(url + (process.env.SB_PAGE || 'index.html'), { waitUntil: 'domcontentloaded', timeout: 180000 });
     await page.waitForFunction(() => window.SBLibrary && window.SBItems && typeof openSubject === 'function' && window.SBContinue, null, { timeout: 120000 });
   }
   async function openFractions() {
