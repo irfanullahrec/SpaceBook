@@ -34,7 +34,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   let navs = 0;
   page.on('framenavigated', f => { if (f === page.mainFrame()) navs++; });
   page.on('pageerror', e => errors.push(String(e.message).slice(0, 160)));
-  page.on('requestfailed', r => { const u = r.url(); if (u.startsWith(url) && !/\/api\//.test(u) && !/favicon/.test(u)) failedReqs.push(u.replace(url, '') + ' ' + (r.failure() && r.failure().errorText)); });
+  // the word-meanings table (js/lexicon_data.js) is optional: js/universal_translate.js asks for it when the page is idle and handles the failure; it is kept for offline use only if it was fetched online first
+  page.on('requestfailed', r => { const u = r.url(); if (u.startsWith(url) && !/\/api\//.test(u) && !/favicon/.test(u) && !/lexicon_data\.js/.test(u)) failedReqs.push(u.replace(url, '') + ' ' + (r.failure() && r.failure().errorText)); });
   const ready = () => page.waitForFunction(() => window.SBOffline && window.SBLibrary && typeof openSubject === 'function' && document.querySelector('#page-content') && document.querySelector('#page-content').innerHTML.length > 1500, null, { timeout: 120000 });
 
   // ---- 1. first visit

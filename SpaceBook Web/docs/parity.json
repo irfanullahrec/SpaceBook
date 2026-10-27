@@ -554,9 +554,9 @@
    "name": "Send a suggestion, a bug report, a textbook mistake, a wrong answer or a wrong meaning / translation, with an optional picture: the place (class, subject, book, chapter, page, screen, version) is filled in and shown before sending, the report is kept on the device and sent when there is a connection (waiting, received, seen, fixed)",
    "status": "partial",
    "web": "js/sb_feedback.js and css/sb_feedback.css (dialog, picture made small by the browser, queue in IndexedDB, My reports); the header button, the menu link and the footer link of index.html; \"Wrong answer? Tell us\" under every answer (js/sb_solve.js)",
-   "app": "the same dialog inside the page the app shows (the website in a WebView); native entry points and the WebView picture chooser: see the exemption",
+   "app": "the same dialog inside the page the app shows (the website in a WebView); native entry points: a row \"Suggestions and problems\" in Me and \"Report a mistake or suggest\" in the reader menu (both call SBApp.openFeedback); the WebView file chooser for the picture (WebController.onShowFileChooser, pictures only)",
    "data": "feedback_reports and feedback_images (migration 009, with a down script); api/feedback.php; the administrator page api/admin.php?v=feedback",
-   "exemption": "The app opens the website's own dialog; what is still to be written on the app side is the entry point (a row in Me and a button in the reader) and the WebView's file chooser for the picture (SbWebView has no onShowFileChooser), which the owner can test only on a phone. Until then the app can send a report without a picture from a page that opens the dialog.",
+   "exemption": "The entry points and the picture chooser are written, compile and pass the app's 219 unit tests (2026-10-27), but they have not been used on a phone: no phone was connected during the launch pass, and the picture chooser cannot be exercised in a JVM test. Until a phone has opened the dialog from Me and from the reader and attached a picture, this stays partial.",
    "ownerDecision": "None for the code. Review the Urdu words of the dialog; Pashto is not written (no native review yet)."
   },
   {
