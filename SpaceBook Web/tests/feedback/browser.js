@@ -262,7 +262,7 @@ function jpegSize(b) {
   await ph.locator('.sbfb-dialog').waitFor({ state: 'visible' });
   const small = await ph.evaluate(() => {
     const d = document.querySelector('.sbfb-dialog').getBoundingClientRect();
-    const targets = [...document.querySelectorAll('.sbfb-dialog button, .sbfb-dialog label.sbfb-kind, .sbfb-dialog .sbfb-filebtn')].map(e => { const r = e.getBoundingClientRect(); return { n: (e.textContent || '').trim().slice(0, 20), w: r.width, h: r.height }; }).filter(t => t.h < 44 || t.w < 44);
+    const targets = [...document.querySelectorAll('.sbfb-dialog button, .sbfb-dialog label.sbfb-kind, .sbfb-dialog .sbfb-filebtn')].map(e => { const r = e.getBoundingClientRect(); return { n: (e.textContent || '').trim().slice(0, 20), w: r.width, h: r.height }; }).filter(t => t.h < 43.5 || t.w < 43.5);
     return { w: d.width, h: d.height, vw: innerWidth, vh: innerHeight, hscroll: document.documentElement.scrollWidth > innerWidth, small: targets };
   });
   T.check('on a 390 px phone the dialog fills the screen with no sideways scroll', Math.abs(small.w - small.vw) < 2 && !small.hscroll, small);

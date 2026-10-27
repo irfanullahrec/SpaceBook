@@ -79,12 +79,14 @@ for (const a of audit) {
     ch.q = c.leaves - c.head; ch.head = c.head; ch.ans = c.ans; ch.viaQ = c.viaQ; ch.key = c.key; ch.written = c.extra; ch.whole = c.whole; ch.none = c.none + c.dangling;
   }
 }
+const unansweredList = [];   // --list-unanswered FILE: the questions that have no answer, one JSON line each (for writing the missing ones)
 for (const L of raw.leaves) {
   const B = books[L.b]; if (!B) continue;
   const ch = B.chapters[L.u]; if (!ch) continue;
   if (L.ex) ch.exercises.add(L.ex);
   if (L.pg != null && L.pg !== '') ch.pages.push(+L.pg || L.pg);
   const has = !!(L.a && String(L.a).trim()) || !!(L.st && String(L.st).trim());
+  if (!has && !audited.has(L.b) && opt('--list-unanswered')) unansweredList.push({ book: L.b, chapter: ch.number, chapterTitle: ch.title, ex: L.ex || '', pg: L.pg, no: L.no, head: L.head || '', instr: L.instr || '', q: L.q, stem: L.stem || '' });
   if (!audited.has(L.b)) {
     ch.q++;
     if (!has) ch.none++; else if (L.src === 'key') ch.key++; else if (L.src === 'extra') ch.written++; else ch.ans++;
@@ -94,6 +96,7 @@ for (const L of raw.leaves) {
   if (L.fig) ch.fig++;
 }
 
+if (opt('--list-unanswered')) { fs.writeFileSync(opt('--list-unanswered'), unansweredList.map(x => JSON.stringify(x)).join('\n') + '\n'); console.log('listed ' + unansweredList.length + ' questions without an answer in ' + opt('--list-unanswered')); }
 const rows = [];       // one per chapter
 const bookRows = [];   // one per book
 const ZERO = () => ({ q: 0, ans: 0, viaQ: 0, key: 0, written: 0, whole: 0, none: 0, head: 0, mcq: 0, mcqOpen: 0, clash: 0, fig: 0 });

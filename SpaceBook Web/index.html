@@ -24,13 +24,14 @@
   <link rel="stylesheet" href="css/class12_study_views.css?v=20261018_3">
   <link rel="stylesheet" href="css/sb_theme.css?v=20261019_th4">
   <link rel="stylesheet" href="css/sb_mcq.css?v=20261019_q3">
-  <link rel="stylesheet" href="css/a11y.css?v=20261027_4">
+  <link rel="stylesheet" href="css/a11y.css?v=20261027_7">
   <link rel="stylesheet" href="css/search.css?v=20261020_1">
   <link rel="stylesheet" href="css/sb_games.css?v=20261023_g2">
   <link rel="stylesheet" href="css/sb_library.css?v=20261023_l1">
   <link rel="stylesheet" href="css/sb_feedback.css?v=20261026_fb1">
 </head>
 <body>
+  <a class="sb-skip" href="#page-content">Skip to the content</a>
 
   <!-- Mobile Sidebar Overlay -->
   <div id="overlay"></div>
@@ -81,7 +82,7 @@
       <a class="nav-link" data-page="saved">
         <span class="nav-icon">🔖</span> Saved
       </a>
-      <a class="nav-link" href="#feedback" data-sbfb role="button">
+      <a class="nav-link" href="#" data-sbfb role="button">
         <span class="nav-icon">💬</span> Suggest / Report a problem
       </a>
     </nav>
@@ -96,6 +97,7 @@
        FIXED TOP HEADER
        ══════════════════════════════════════ -->
   <header id="top-header">
+    <h1 class="sb-vh">TuitionHub KPK Portal: textbooks, answers and practice</h1>
     <div class="header-left">
       <!-- Fixed three lines hamburger button -->
       <button class="hamburger-btn" id="hamburger" aria-label="Open navigation menu" title="Open Navigation Menu">
@@ -187,7 +189,7 @@
     </div>
 
     <!-- MAIN PAGE CONTENT CONTAINER -->
-    <main id="page-content">
+    <main id="page-content" tabindex="-1">
       <div id="dashboard-body"></div>
     </main>
 
@@ -195,7 +197,7 @@
     <footer id="footer">
       <div>TuitionHub &copy; 2026 · Khyber Pakhtunkhwa Textbook Board Curriculum Portal</div>
       <span>Empowering students to achieve their best in Board Exams 🚀</span>
-      <div><a href="#feedback" data-sbfb role="button">Found a mistake or have an idea? Tell us</a></div>
+      <div><a href="#" data-sbfb role="button">Found a mistake or have an idea? Tell us</a></div>
     </footer>
   </div>
 
@@ -205,7 +207,7 @@
   <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeader">
     <div class="modal-box">
       <div class="modal-header">
-        <h3 id="modalHeader">Questions</h3>
+        <h3 id="modalHeader" role="heading" aria-level="2">Questions</h3>
         <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
       </div>
       <div class="modal-body" id="modalBody"></div>
@@ -270,8 +272,8 @@
 <script src="js/biology_9_book.js?v=20261021_bio1"></script>
 <script src="js/chemistry_9_book.js?v=20261022_qa3"></script>
 <script src="js/math_9_book_data.js?v=20261021_m9b"></script>
-<script src="js/english_9_book.js?v=20261022_qa3"></script>
-<script src="js/pakstudy_9_book.js?v=20261013_pk9b1"></script>
+<script src="js/english_9_book.js?v=20261027_tq2"></script>
+<script src="js/pakstudy_9_book.js?v=20261027_tq2"></script>
 <script src="js/general_science_9_book.js?v=20261022_qa4"></script>
 <script src="js/computer_9_data.js?v=20261022_qa3"></script>
 <script src="js/islamiat_9_data.js?v=20261022_qa3"></script>
@@ -313,7 +315,7 @@
   <script src="js/phys_11_data.js?v=20261009_1"></script>
   <script src="js/phys_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/chem_11_data.js?v=20261011_class11"></script>
-  <script src="js/chem_11_book.js?v=20261027_ans2"></script>
+  <script src="js/chem_11_book.js?v=20261027_tq1"></script>
   <script src="js/bio_11_data.js?v=20261012_1"></script>
   <script src="js/bio_11_book.js?v=20261027_ans1"></script>
   <script src="js/stat_11_data.js?v=20261012_1"></script>
@@ -325,7 +327,7 @@
   <script src="js/cs_11_data.js?v=20261012_1"></script>
   <script src="js/cs_11_book.js?v=20261027_ans1"></script>
   <script src="js/ikhtiari_11_data.js?v=20261012_1"></script>
-  <script src="js/ikhtiari_11_book.js?v=20261027_ans2"></script>
+  <script src="js/ikhtiari_11_book.js?v=20261027_tq1"></script>
   <script src="js/civics_11_data.js?v=20261012_1"></script>
   <script src="js/civics_11_book.js?v=20261027_ans2"></script>
   <script src="js/urdu_11_data.js?v=20261012_1"></script>
@@ -416,8 +418,8 @@
   <script src="js/hpe_8_data.js"></script>
   <script src="js/core/hooks.js?v=20261020_1"></script>
   <script src="js/app.js?v=20261024_h1_pf1"></script>
-  <script src="js/biology_10_reader.js?v=20261018_q1"></script>
-  <script src="js/english_10_reader.js?v=20261018_q1"></script>
+  <script src="js/biology_10_reader.js?v=20261018_q1_a1"></script>
+  <script src="js/english_10_reader.js?v=20261018_q1_a1"></script>
   <script src="assets/vendor/katex/katex.min.js"></script>
   <script src="js/sb_vertical.js?v=20261018_1"></script>
   <script src="js/core/katexcache.js?v=20261027_kc1"></script>
@@ -496,8 +498,8 @@
   <script src="js/sb_mcq.js?v=20261024_a1"></script>
   <script src="js/answers_extra.js?v=20261024_a1"></script>
   <script src="js/fills_data.js?v=20261025_z1"></script>
-  <script src="js/math6_reader.js?v=20261025_z1"></script>
-  <script src="js/math5_reader.js?v=20261018_q1_pf1"></script>
+  <script src="js/math6_reader.js?v=20261025_z1_a1"></script>
+  <script src="js/math5_reader.js?v=20261018_q1_pf1_a1"></script>
   <script src="js/cls5_book_reader.js?v=20261012_1_pf1"></script>
   <script src="js/cls2_book_reader.js?v=20261011_1"></script>
   <script src="js/cls4_book_reader.js?v=20261011_c4m188_pf1"></script>
@@ -533,10 +535,10 @@
   <script src="js/cls3_book_reader.js?v=20261013_c3open_pf1"></script>
   <script src="js/cls2_page_reader.js?v=c2d34_pf1"></script>
   <script src="js/cls6_book_reader.js?v=20261022_qa4_c10"></script>
-  <script src="js/math7_reader.js?v=20261018_q1_pf1"></script>
-  <script src="js/math8_reader.js?v=20261018_q1_pf1"></script>
+  <script src="js/math7_reader.js?v=20261018_q1_pf1_a1"></script>
+  <script src="js/math8_reader.js?v=20261018_q1_pf1_a1"></script>
   <script src="js/math_11_data.js?v=20261018_answers1"></script>
-  <script src="js/math11_reader.js?v=20261018_q1_pf1"></script>
+  <script src="js/math11_reader.js?v=20261018_q1_pf1_a1"></script>
   <script src="js/offline_lexicon.js?v=20261018_l1"></script>
   <script src="js/lexicon_data.js?v=20261021_f1"></script>
   <script src="js/sb_morph.js?v=20261021_f1"></script>
@@ -589,9 +591,9 @@
   <script src="js/sb_arcade_shoot.js?v=20261024_a1"></script>
   <script src="js/sb_arcade_puzzle.js?v=20261024_a1"></script>
   <script src="js/sb_arcade_build.js?v=20261024_a1"></script>
-  <script src="js/sb_library.js?v=20261023_l1"></script>
+  <script src="js/sb_library.js?v=20261023_l1_a1"></script>
   <script src="js/sb_feedback.js?v=20261026_fb1"></script>
-  <script src="js/core/a11y.js?v=20261020_1"></script>
+  <script src="js/core/a11y.js?v=20261027_ho4"></script>
   <script src="js/core/search.js?v=20261020_1"></script>
   <script src="js/core/lazycards.js?v=20261020_1"></script>
 </body>
