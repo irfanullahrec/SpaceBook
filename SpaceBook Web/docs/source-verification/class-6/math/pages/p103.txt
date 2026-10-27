@@ -1,7 +1,9 @@
 @printed 101
 q iii) | D = the set of numbers whose third multiple is 12. || D = ان اعداد کا سیٹ جن کا تیسرا ضعف 12 ہے۔ || D = د هغو عددونو سېټ چې درېیم ضرب یې 12 وي.
+sol Singleton set, D = {4} ## 3 × 4 = 12, so 4 is the only number whose third multiple is 12. || 3 × 4 = 12، اس لیے 4 وہ واحد عدد ہے جس کا تیسرا ضعف 12 ہے۔ || 3 × 4 = 12، نو 4 یوازینی عدد دی چې درېیم ضرب یې 12 دی.
 p Set D is also a singleton set as D = {4}. || سیٹ D بھی اکہرا سیٹ ہے کیونکہ D = {4}۔ || D سېټ هم یوګړی سېټ دی ځکه D = {4}.
 q iv) | F = the set of LCM of 12, 18 and 30. || F = 12، 18 اور 30 کے ذو اضعاف اقل کا سیٹ۔ || F = د 12، 18 او 30 د کوچني مشترک ضرب سېټ.
+sol Singleton set (F has one element) ## The LCM of 12, 18 and 30 is a single number, so F has only one element (the correct LCM is 180; the book prints 130). || 12، 18 اور 30 کا ذو اضعاف اقل ایک ہی عدد ہے، اس لیے F میں صرف ایک رکن ہے (درست ذو اضعاف اقل 180 ہے؛ کتاب میں 130 چھپا ہے)۔ || د 12، 18 او 30 کوچنی مشترک ضرب یو ځانګړی عدد دی، نو F یوازې یو غړی لري (سم کوچنی مشترک ضرب 180 دی؛ په کتاب کې 130 چاپ شوی).
 p Set F is also a singleton set as LCM of 12, 18 and 30 is just one number i.e.130. || سیٹ F بھی اکہرا سیٹ ہے کیونکہ 12، 18 اور 30 کا ذو اضعاف اقل صرف ایک عدد ہے یعنی 130۔ || F سېټ هم یوګړی سېټ دی ځکه د 12، 18 او 30 کوچنی مشترک ضرب یوازې یو عدد دی یعنې 130.
 endexample
 @issue Page 101 states the LCM of 12, 18 and 30 is 130; the correct LCM is 180 (2² × 3² × 5). The set is still a singleton. Kept as printed.
@@ -12,8 +14,11 @@ p We can see that the set of whole numbers contains all the elements of the rema
 box note | Note it down || نوٹ کر لیں || یادداشت یې کړئ
 p Which set can be a universal set for the other two? || کون سا سیٹ باقی دو کے لیے عالمگیر سیٹ ہو سکتا ہے؟ || کوم سېټ د نورو دوو لپاره عمومي سېټ کېدای شي؟
 qp a | Set of even numbers || جفت اعداد کا سیٹ || د جفتو عددونو سېټ
+sol No ## The set of even numbers does not contain the odd numbers, so it cannot be the universal set for the other two. || جفت اعداد کے سیٹ میں طاق اعداد شامل نہیں، اس لیے یہ باقی دو کے لیے عالمگیر سیٹ نہیں ہو سکتا۔ || د جفتو عددونو سېټ طاق عددونه نه لري، نو دا د نورو دوو لپاره عمومي سېټ نشي کېدای.
 qp b | Set of odd numbers || طاق اعداد کا سیٹ || د طاقو عددونو سېټ
+sol No ## The set of odd numbers does not contain the even numbers, so it cannot be the universal set for the other two. || طاق اعداد کے سیٹ میں جفت اعداد شامل نہیں، اس لیے یہ باقی دو کے لیے عالمگیر سیٹ نہیں ہو سکتا۔ || د طاقو عددونو سېټ جفت عددونه نه لري، نو دا د نورو دوو لپاره عمومي سېټ نشي کېدای.
 qp c | Set of natural numbers || قدرتی اعداد کا سیٹ || د طبیعي عددونو سېټ
+sol Yes, the set of natural numbers ## It contains every even number and every odd number, so it can be the universal set for the other two. || اس میں ہر جفت اور ہر طاق عدد شامل ہے، اس لیے یہ باقی دو کے لیے عالمگیر سیٹ ہو سکتا ہے۔ || دا هر جفت او هر طاق عدد لري، نو دا د نورو دوو لپاره عمومي سېټ کېدای شي.
 qsolution c) Set of natural numbers
 ss Every even number and every odd number (1, 2, 3, …) is a natural number, so the set of natural numbers contains both other sets. || ہر جفت اور ہر طاق عدد (1، 2، 3، …) قدرتی عدد ہے، اس لیے قدرتی اعداد کا سیٹ دونوں سیٹوں پر مشتمل ہے۔ || هر جفت او هر طاق عدد (1، 2، 3، …) طبیعي عدد دی، نو د طبیعي عددونو سېټ دواړه سېټونه لري.
 endsolution

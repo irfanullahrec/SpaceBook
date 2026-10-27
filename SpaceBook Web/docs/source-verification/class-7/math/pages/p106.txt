@@ -28,6 +28,11 @@ qp c | $X \cap Y$
 qp d | $Y \cap X$
 q 5 | If U = Set of whole numbers and N = Set of natural numbers, then verify that: || اگر U = مکمل اعداد کا سیٹ اور N = قدرتی اعداد کا سیٹ ہو تو تصدیق کریں کہ: || که U = د بشپړو عددونو سېټ او N = د طبیعي عددونو سېټ وي، تایید کړئ چې:
 qp a | $A^c$
+solution A is not defined in the question; reading A as N, A^c = {0}
+ss The question defines only U (the whole numbers) and N (the natural numbers); no set A is given (the printed A is most likely N, as in parts b to d). || سوال میں صرف U (مکمل اعداد) اور N (قدرتی اعداد) دیے گئے ہیں؛ کوئی سیٹ A نہیں دیا گیا (چھپا ہوا A غالباً N ہے، جیسا کہ حصہ b سے d میں ہے)۔ || پوښتنه یوازې U (بشپړ عددونه) او N (طبیعي عددونه) ورکوي؛ هېڅ سېټ A نه دی ورکړل شوی (چاپ شوی A ډېر احتمال N دی، لکه په b تر d برخو کې).
+ss Reading A as N: the complement is the elements of U that are not in N, so A^c = U − N = {0}. || A کو N پڑھیں تو متمم U کے وہ ارکان ہیں جو N میں نہیں، اس لیے A^c = U − N = {0}۔ || که A د N په توګه ولولو نو بشپړوونکی د U هغه غړي دي چې په N کې نه دي، نو A^c = U − N = {0}.
+sm A^c = U - N = \{0\}
+endsolution
 qp b | $N^c$
 qp c | $N \cap N^c$
 qp d | $N \cup N^c$

@@ -1,8 +1,17 @@
 @printed 212
 exercise 11.3
 q 1 | Calculate the sum of interior angles of polygons by counting the triangles formed in them. || کثیر الاضلاع میں بننے والے مثلث گن کر ان کے اندرونی زاویوں کا مجموعہ معلوم کریں۔ || په څو ضلعیو کې د جوړو شویو مثلثونو په شمېرلو د هغوی د داخلي زاویو مجموعه حساب کړئ.
+qsolution heptagon 900°, octagon 1080°, nonagon 1260°, decagon 1440°
+ss From one corner of a polygon with n sides draw lines to all the other corners: they cut it into n − 2 triangles, and each triangle has angles adding up to 180°. || n اضلاع والے کثیر الاضلاع کے ایک کونے سے باقی تمام کونوں تک لکیریں کھینچیں: یہ اسے n − 2 مثلثوں میں بانٹ دیتی ہیں اور ہر مثلث کے زاویوں کا مجموعہ 180° ہوتا ہے۔ || د n ضلعو لرونکې څو ضلعي له یوه کونج څخه نورو ټولو کونجونو ته کرښې رسم کړئ: دا یې په n − 2 مثلثونو وېشي او د هر مثلث د زاويو مجموعه 180° وي.
+ss Counting the triangles: heptagon (7 sides): 5 triangles × 180° = 900°; octagon (8 sides): 6 triangles × 180° = 1080°; nonagon (9 sides): 7 triangles × 180° = 1260°; decagon (10 sides): 8 triangles × 180° = 1440°. || مثلث گننے سے: سبعی (7 اضلاع): 5 مثلث × 180° = 900°؛ مثمن (8 اضلاع): 6 مثلث × 180° = 1080°؛ تسعی (9 اضلاع): 7 مثلث × 180° = 1260°؛ عشاری (10 اضلاع): 8 مثلث × 180° = 1440°۔ || د مثلثونو په شمېرلو: اوه ضلعي (7 ضلعې): 5 مثلثونه × 180° = 900°؛ اته ضلعي (8 ضلعې): 6 مثلثونه × 180° = 1080°؛ نهه ضلعي (9 ضلعې): 7 مثلثونه × 180° = 1260°؛ لس ضلعي (10 ضلعې): 8 مثلثونه × 180° = 1440°.
+endsolution
 @deco Q1 shows four regular polygons: a green heptagon, a pink octagon, a blue nonagon and a yellow decagon (7, 8, 9 and 10 sides as drawn).
 q 2 | Calculate the sum of interior angles of polygons using the formula and complete the table. || فارمولے کی مدد سے کثیر الاضلاع کے اندرونی زاویوں کا مجموعہ معلوم کریں اور جدول مکمل کریں۔ || د فورمول په مرسته د څو ضلعیو د داخلي زاویو مجموعه حساب کړئ او جدول بشپړ کړئ.
+qsolution 6 sides: 720°, 9 sides: 1260°, 11 sides: 1620°, 15 sides: 2340°, 20 sides: 3240°, 18 sides: 2880°
+ss Use the formula: sum of interior angles = (n − 2) × 180°, where n is the number of sides. || کلیہ استعمال کریں: اندرونی زاویوں کا مجموعہ = (n − 2) × 180°، جہاں n اضلاع کی تعداد ہے۔ || فورمول وکاروئ: د داخلي زاويو مجموعه = (n − 2) × 180°، چېرته چې n د ضلعو شمېر دی.
+sm \text{Sum} = (n - 2) \times 180^\circ
+ss Fill the table: 6 sides: (6 − 2) × 180° = 720°, 9 sides: (9 − 2) × 180° = 1260°, 11 sides: (11 − 2) × 180° = 1620°, 15 sides: (15 − 2) × 180° = 2340°, 20 sides: (20 − 2) × 180° = 3240°, 18 sides: (18 − 2) × 180° = 2880°. || جدول پُر کریں: 6 اضلاع: (6 − 2) × 180° = 720°، 9 اضلاع: (9 − 2) × 180° = 1260°، 11 اضلاع: (11 − 2) × 180° = 1620°، 15 اضلاع: (15 − 2) × 180° = 2340°، 20 اضلاع: (20 − 2) × 180° = 3240°، 18 اضلاع: (18 − 2) × 180° = 2880°۔ || جدول ډک کړئ: 6 ضلعې: (6 − 2) × 180° = 720°، 9 ضلعې: (9 − 2) × 180° = 1260°، 11 ضلعې: (11 − 2) × 180° = 1620°، 15 ضلعې: (15 − 2) × 180° = 2340°، 20 ضلعې: (20 − 2) × 180° = 3240°، 18 ضلعې: (18 − 2) × 180° = 2880°.
+endsolution
 table
 th | Number of sides of the polygon || کثیر الاضلاع کے اضلاع کی تعداد || د څو ضلعي د ضلعو شمېر | Sum of interior angles || اندرونی زاویوں کا مجموعہ || د داخلي زاویو مجموعه
 tr | 6 |

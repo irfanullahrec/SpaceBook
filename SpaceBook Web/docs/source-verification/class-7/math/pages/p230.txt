@@ -1,5 +1,11 @@
 @printed 226
 q 6 | Draw a trapezium on the coordinate plane. Then rotate it through 90° clockwise about the origin. || محددی سطح پر ایک ذوزنقہ بنائیں۔ پھر اسے مبدا کے گرد 90° گھڑی کی سمت گھمائیں۔ || د مختصاتو پر سطحه یوه ذوزنقه رسم کړئ. بیا یې د مبدا شاوخوا 90° د ساعت په لوري وګرځوئ.
+qsolution Model answer: A(1, 1), B(5, 1), C(4, 3), D(2, 3) become A'(1, −1), B'(1, −5), C'(3, −4), D'(3, −2)
+ss Draw a trapezium on the coordinate plane, for example with the vertices A(1, 1), B(5, 1), C(4, 3) and D(2, 3) (AB is parallel to DC). || محددی سطح پر ایک ذوزنقہ بنائیں، مثلاً راس A(1, 1)، B(5, 1)، C(4, 3) اور D(2, 3) کے ساتھ (AB، DC کے متوازی ہے)۔ || په کوردینیټ سطحه یو ذوزنقه رسم کړئ، لکه د کونجونو A(1, 1)، B(5, 1)، C(4, 3) او D(2, 3) سره (AB د DC سره موازي ده).
+ss Rule: a rotation through 90° clockwise about the origin changes (x, y) to (y, −x). || اصول: مبدا کے گرد 90° گھڑی کی سمت گھمانے سے (x, y) بدل کر (y, −x) ہو جاتا ہے۔ || قاعده: د مبدا شاوخوا 90° د ساعت په لوري تاوول (x, y) په (y, −x) بدلوي.
+sm (x, y) \rightarrow (y, −x)
+ss Apply it to every vertex: A(1, 1) → A'(1, -1), B(5, 1) → B'(1, -5), C(4, 3) → C'(3, -4), D(2, 3) → D'(3, -2). Plot the new points and join them in the same order. || ہر راس پر لگائیں: A(1, 1) → A'(1, -1)، B(5, 1) → B'(1, -5)، C(4, 3) → C'(3, -4)، D(2, 3) → D'(3, -2)۔ نئے نقاط لگا کر انھیں اسی ترتیب سے ملائیں۔ || پر هر کونج یې پلې کړئ: A(1, 1) → A'(1, -1)، B(5, 1) → B'(1, -5)، C(4, 3) → C'(3, -4)، D(2, 3) → D'(3, -2). نوي ټکي په نښه کړئ او په همدې ترتیب یې ونښلوئ.
+endsolution
 q 7 | What will be the values of x and y for P' if an image having point P(−6, −4) Is rotated? || اگر نقطہ P(−6، −4) والی تصویر کو گھمایا جائے تو P' کے لیے x اور y کی قیمتیں کیا ہوں گی؟ || که د P(−6، −4) ټکي لرونکی انځور وګرځول شي، د P' لپاره به د x او y ارزښتونه څه وي؟
 qp a | 90° clockwise || 90° گھڑی کی سمت || 90° د ساعت په لوري
 qp b | 180° counterclockwise || 180° گھڑی کی مخالف سمت || 180° د ساعت پر خلاف
