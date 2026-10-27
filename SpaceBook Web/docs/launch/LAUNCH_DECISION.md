@@ -18,7 +18,6 @@ It is not "ready" without limits because of the three conditions and the limitat
 | 2 | **Server steps** (S-05, `docs/PHASE0_SERVER_STEPS.md`, `SECURITY_REPORT.md`) | a zip containing the old database password was reachable on the host; the FTP account, the headers (S-01) and the cache rules (S-07) are not on the live host | delete the zip, rotate the database password, point the FTP account at the site folder, then deploy (the new `.htaccess` carries the headers) |
 | 3 | **Phone check of the app** | see below: nothing native was tried | install the APK, run the list below, report what fails |
 | 4 | **A teacher reads the written answers** (not a code blocker, a trust one) | the answers are mine, checked by script and by reading, not by a subject expert | start with Islamic History, Islamiat, Mutalia-e-Quran, Civics, Economics (`VERIFICATION_REPORT.md` section 5); until then the app says "SpaceBook answer, not printed in the textbook" and 31 answers say "check with the teacher" |
-| 5 | **M-01: Ans buttons of Class 5 (and possibly 7, 8) Maths** | the Class 6 handler is used and ids repeat between classes, so an answer may show another class's text; present before this branch, found at the end of it | someone investigates which reader should render these chapters and fixes the lookup (a separate task), then `tests/launch/` gets a browser check of an Ans per Maths class |
 
 Also decide: migration number 009 is used twice if `feature/social` merges after this branch (E-06; `tools/parity/check.js` fails on a duplicate). The second branch to merge renumbers.
 
@@ -45,7 +44,7 @@ Connect the phone, `adb install -r "D:\SpaceBook\Phone\SpaceBook-launch-readines
 | ID | Limitation |
 |---|---|
 | C-11, C-05 | 7 questions without an answer: Class 10 Urdu 6 (the source pages are missing) and a Class 8 MCQ with two right options |
-| **M-01** | **High, to confirm:** in a browser the Ans buttons of Class 5 Maths chapters (and in my runs Class 7 and 8) use the Class 6 handler and may show another class's answer (ids repeat between classes); found while checking the last Maths answers, present before this work, not investigated further. Decide whether to launch before it is looked at |
+| M-01 | fixed 2026-10-28: on a computer the Ans buttons of Class 5, 7, 8 and 11 Maths read Class 6's answers (the open-book view used the Class 6 reader for every class); `tests/launch/maths_answers_browser.js` now presses an Ans in each Maths class |
 | C-04 | 84 MCQs whose answer matches no option, 9 clashes between a solution and a printed key (listed) |
 | C-02, C-10 | 14 subjects keep exercises in an older data shape the chapter report cannot count; Class 12 Maths is a half-rebuilt page book (179 of 357 pages) |
 | C-06, C-07 | no source for Class 7 Pashto, Class 1 Urdu and General Knowledge, Class 3 Urdu, Play Group, Nursery, KG; pages missing from the supplied scans |

@@ -38,7 +38,8 @@ The suites that load `index.html` (the whole app in one page) time out on this P
 | Fonts (no tofu with device fonts removed, shaping) | `tests/launch/fonts_browser.js` | untested | pass: 15 |
 | Every tab of every subject | `tests/launch/tab_sweep.js` | untested | pass: 132 subjects, 823 tabs opened, 0 empty, 0 script errors (the first run was stopped by a stalled machine after 129 subjects; the last three were swept separately, `TAB_SWEEP_LOG.txt`) |
 | Library (bookmarks, notes) | `tests/library/browser.js` | untested | pass: 21 |
-| Reader workspace / cards / fills | `tests/reader/workspace.js`, `cards.js`, `tests/fills/browser.js` | untested | pass: 23 / 16 / 9 |
+| Reader workspace / cards / fills | `tests/reader/workspace.js`, `cards.js`, `tests/fills/browser.js` | untested | pass: 23 / 16 / 9 (the Ans window check of `workspace.js` now tries Ans buttons until one opens a window: after the M-01 fix a short answer shows in the page) |
+| Ans buttons of Maths 5, 6, 7, 8, 11 (real clicks, wide screen) | `tests/launch/maths_answers_browser.js` | new: failed on the old code for Classes 5, 7, 8, 11 (every Ans named Class 6, Class 8 showed "Answer not available") | pass: 24 (every Ans button and multiple-choice widget names its class; the named question of Classes 5, 6, 7, 8 shows its own answer; a Class 11 multiple-choice question marks the option of its own key; the phone layouts keep their own handlers; no script error) |
 | Create Test, Grammar Stats, Ask SpaceBook | `tests/createtest/browser.js`, `tests/grammar/browser.js`, `tests/tutor/browser.js` | untested | pass: 22 / 19 / 15 |
 | Study Plan (reminders, day cards, lesson sheet) | `tests/plan/reminders.js`, `day_cards.js`, `study_sheet_browser.js` | untested | pass: 9 / 13 / 31 |
 | Mastery check | `tests/mastery/browser.js` | untested | pass: 37 |
