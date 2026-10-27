@@ -1,6 +1,6 @@
 # Launch decision
 
-Date 2026-10-27. Branches `launch/readiness` in both repositories: Web `@@WEB@@`, App `@@APP@@`. **Nothing was pushed, deployed, published or charged.** This is the tested release for your approval.
+Date 2026-10-27. Branches `launch/readiness` in both repositories: Web `754d83ce`, App `dfe6a0b`. **Nothing was pushed, deployed, published or charged.** This is the tested release for your approval.
 
 ## Decision: READY WITH LIMITATIONS (for your approval; three conditions before it is announced)
 
