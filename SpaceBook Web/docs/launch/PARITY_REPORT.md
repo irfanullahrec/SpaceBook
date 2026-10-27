@@ -1,6 +1,6 @@
 # Web and App parity (Phase 9)
 
-Date 2026-10-27. Web `5b434360`, App `5f08a23` (branch `launch/readiness` in both). The first state of this branch (Web `a749fb4e`, App `dfe6a0b`) was pushed on the owner's order; the commits after it are not pushed.
+Date 2026-10-28. Web `797840ec`, App `b34fcd0` (branch `launch/readiness` in both). The first state of this branch (Web `a749fb4e`, App `dfe6a0b`) was pushed on the owner's order; the commits after it are not pushed.
 
 ## Same data, same functions
 
@@ -40,5 +40,5 @@ See `docs/PARITY_MATRIX.md`; the only row changed in this pass is `feedback.repo
 
 ## Commits
 
-* App: `15cdc34` (entry points, chooser), `21c13d2`, `dfe6a0b` (earlier bundles), `74a1a40` (bundle from Web `6e75cdf9`), `5f08a23` (bundle from Web `5b434360`, the Maths answers).
+* App: `15cdc34` (entry points, chooser), `21c13d2`, `dfe6a0b` (earlier bundles), `74a1a40` (bundle from Web `6e75cdf9`), `5f08a23` (bundle from Web `5b434360`, the Maths answers), `b34fcd0` (bundle from Web `797840ec`, Maths Ans reads the right class on a wide screen, M-01; 219 unit tests, APK 165 MB rebuilt).
 * Web: see `git log launch/readiness` (answers, build tools, offline layer, documents).
