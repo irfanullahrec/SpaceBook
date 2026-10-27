@@ -25,4 +25,4 @@ sol j is a pointer to an int and stores address of i ## j is declared as int * a
 p int i=10; int *j=&i; || int i=10; int *j=&i; || int i=10; int *j=&i;
 p (a) j and i are pointers to an int || (a) j اور i دونوں int کے پوائنٹرز ہیں || (a) j او i دواړه int ته پوائنټرونه دي
 p (b) i is a pointer to an int and stores address of j || (b) i ایک int کا پوائنٹر ہے اور j کا پتہ محفوظ کرتا ہے || (b) i یو int ته پوائنټر دی او د j پته ساتي
-qp c | j is a pointer to an int and stores address of i (d) j is a pointer to a pointer to an int and stores address of i || j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے (d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے || j یو int ته پوائنټر دی او د i پته ساتي (d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي
+p (c) j is a pointer to an int and stores address of i (d) j is a pointer to a pointer to an int and stores address of i || j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے (d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے || j یو int ته پوائنټر دی او د i پته ساتي (d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي
