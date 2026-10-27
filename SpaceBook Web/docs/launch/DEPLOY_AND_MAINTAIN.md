@@ -45,11 +45,16 @@ After the deploy, in a browser:
 | Read new reports | weekly | `api/admin.php?v=feedback`; set a state and a note; fix the book data, rebuild, deploy |
 | Prune old reports, pictures, logs | monthly (cron) | `php api/migrate.php prune` |
 | Fix a book | when a mistake is reported | edit the page file in `docs/source-verification/class-N/<book>/pages/`, rebuild the book (`tools/build_book<N>.py KEY` then `wire_book<N>.py`), `node tools/build/all.js`, then the checks of section 1; the exercise checks fail if a chapter loses a question |
-| Add answers | until `docs/launch/EXERCISE_COVERAGE.md` says 0 unanswered | `node tools/launch/answers_worklist.js list <book>` writes the work list, `apply` puts the answers into the page files |
+| Add answers | until `docs/launch/EXERCISE_COVERAGE.md` says 0 unanswered | `node tools/launch/answers_worklist.js list <book>` writes the work list; instruction lines that were counted as questions: `to_heading.js` (before `apply`: it shifts line numbers); `apply` puts the answers into the page files; rebuild with `build_book11.py` / `build_book12.py KEY`, `wire_here.js`; a multiple-choice answer that is only a number must be written `(b) 4`, not `4` (`fix_numeric_keys.py` reports and repairs); `exercise_coverage.js --write-baseline` then `answers_written_report.js` |
 | New book | when supplied | put the scans in `Books`, run the class pipeline, `node tools/launch/books_inventory.js` and `coverage_manifest.js`, commit the regenerated `docs/launch/*` |
 | Fonts | rarely | `assets/fonts/README.md` |
-| After any change to `index.html`, a script or a stylesheet | every time | `node --max-old-space-size=6144 tools/build/all.js --only lazy,offline` from a clean checkout (about 5 minutes), commit the result |
+| After a change to `index.html`, a script or a stylesheet (not to a book) | every time | bump its `?v=` in `index.html`, then `node --max-old-space-size=6144 tools/build/all.js --only lazy` and `node tools/build/make_offline.js --shell-only` (a minute: it rebuilds the service worker shell and keeps the per-subject map), commit the result |
+| After a change to a book or to what a subject loads | every time | `node --max-old-space-size=8192 tools/build/all.js` from a clean checkout; with less than 3 GB free the search index and the offline map build one subject per process (`--isolate`, slow: 10 and 50 minutes on a PC with 1 GB free); with enough RAM they stay in one process (minutes, `--in-process`); the output is the same |
 | Performance | before each release | `node tools/launch/perf_browser.js --profile phone`, nothing else running |
+
+## 4a. What the owner still has to do (nothing was done on the live host, the phone or the repositories)
+
+See `LAUNCH_DECISION.md`, "Before launch".
 
 ## 5. Rules that keep the product honest
 

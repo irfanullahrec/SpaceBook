@@ -1,6 +1,6 @@
 # Verification report: what was checked, how, and by whom
 
-Date: 2026-10-27. Scope: textbook coverage and accuracy (Phase 2). This page separates **automated checks**, **my own review** (an AI assistant reading scans and data, not a teacher), and **what only qualified people can sign off**. Nothing here is an expert approval.
+Date: 2026-10-27 (closed after the last test run). Scope: textbook coverage and accuracy (Phase 2), with the checks of the other phases in `TEST_MATRIX.md`. This page separates **automated checks**, **my own review** (an AI assistant reading scans and data, not a teacher), and **what only qualified people can sign off**. Nothing here is an expert approval.
 
 ## 1. Automated, exhaustive (every book, every chapter)
 
@@ -8,7 +8,7 @@ Date: 2026-10-27. Scope: textbook coverage and accuracy (Phase 2). This page sep
 |---|---|---|
 | Every folder of `Books` is accounted for: 133 folders, 23,475 scan images, 36,005 PDF pages | 132 subjects mapped; 2 books of the app have no source (Class 7 Pashto folder is empty; Class 10 Islamiat is the Class 9 book); the 3 placeholder books (Class 1 Urdu and GK, Class 3 Urdu) have no scans | `COVERAGE_MANIFEST.md`, `books_inventory.json` |
 | Every scan of a mapped book has a page-ledger row (PDF page, scan file, printed page, status, notes, chapter) | 87 books exact, 21 within a few pages (rows split or merged), 8 PDF-only, 1 spread book, 12 older books with no ledger, 2 differ (Class 1 English: the folder holds extracted figure images as well as pages; Class 10 Urdu: 181 files, 164 rows, pages 7, 64, 73, 75, 102 ... absent from the supplied scans) | same |
-| Every question the app holds: has an answer, MCQ key names an option, no solution contradicts the printed key | **5,427 of 45,581 questions have no answer** (finding C-01); 124 MCQs whose answer matches no option; 9 clashes | `EXERCISE_COVERAGE.md`, `exercise_coverage.csv` |
+| Every question the app holds: has an answer, MCQ key names an option, no solution contradicts the printed key | **177 of 45,445 questions have no answer** (was 4,652 at the start of the pass; findings C-01, C-11); 84 MCQs whose answer matches no option (mostly lists of parts written like options); 9 clashes | `EXERCISE_COVERAGE.md`, `exercise_coverage.csv` |
 | No chapter loses questions in future | `exercise_coverage.js --check` against the committed baseline | `exercise_coverage_baseline.json` |
 | Arabic-script characters in the books all have a glyph in a bundled font | 183 characters, 0 missing | `FONT_COVERAGE.md` |
 | The existing project checks | validate 1,288 · smoke 0 failed · lazy parity 0 differences · build fresh · PHP 491 | `TEST_MATRIX.md` |
@@ -35,6 +35,16 @@ I opened the scan and the typed page side by side for these printed pages. This 
 ## 4. Answers written for the project
 
 Each answer written in this work is stored as a `sol` line in the book's page file and is shown in the app as "SpaceBook answer · not printed in the textbook". Open-ended answers start with "Model answer" and the footer says other correct answers are possible. Answers I was not sure of say "needs a teacher's check" and the footer shows a warning. See `ANSWERS_WRITTEN.md` for the books done, the method of verification (numerical answers recomputed by script) and what is left.
+
+What was written in this pass, and how each kind was checked:
+
+| Kind | Where | Count | How it was checked |
+|---|---|---|---|
+| Class 11 books: Biology, Chemistry, Civics, Computer Science, English, HPE, Islamiat, Islamic History, Ikhtiari, Mutalia-e-Quran, Statistics, Urdu | page files `class-11/*/pages` | 4,406 | worked numericals recomputed with the book's printed answers where it prints them (Chemistry), Statistics recomputed value by value in code, text answers written from the chapter's own lesson text; 31 doubtful ones carry a teacher note |
+| Class 12 books: English (536), Economics (123), Civics (24), Ikhtiari (19), Islamic History (3), Urdu (3) | page files `class-12/*/pages` | 708 | the printed key was used where the book prints one (English transition words, 6 last items); Economics unit 14 (past papers, Urdu) answered from the book's own chapters, 3 MCQs and 1 data point marked "check with the teacher" |
+| Numeric MCQ answers rewritten with the option letter | Class 12 HPE, Economics, Computer Science | 56 | the reader read "4" as an option index; 6 were being marked wrong, 50 not found (`fix_numeric_keys.py`) |
+
+All numbers are lines added or rewritten (`git diff a0773486`), 5,170 in all; the per-book table is in `ANSWERS_WRITTEN.md`. **No teacher has read them.** The ones where a wrong sentence matters most (Islamic History, Islamiat, Mutalia-e-Quran, Civics, Economics) head the list in section 5.
 
 ## 5. Needs a person (human review list)
 

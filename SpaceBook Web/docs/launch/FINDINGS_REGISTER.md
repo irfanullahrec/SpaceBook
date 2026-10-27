@@ -43,6 +43,7 @@ Baseline commit: `origin/main` a0773486 (2026-10-26). Baseline results: `TEST_MA
 | P-05 | Medium | 15 class cover PNGs cost 2.2 MB on the Classes page | network breakdown | **Fixed**: WebP 0.37 MB |
 | P-06 | Medium | The service worker re-downloaded 3 MB of files the page had just loaded, one after the other | `sw.js` | **Fixed** (hashed files from the browser's copy, six at a time, after the first screen) |
 | P-02 | Medium | `lazyCards` (closed Maths cards cost nothing) is built but off | `docs/PERFORMANCE.md` | owner decision after a phone check; the biggest chapters (Class 11 Maths, 100,000 nodes) are still heavy on a 2 GB phone |
+| P-07 | Medium | Budgets not met on the throttled phone profile (4x CPU, Fast 3G): cold start 8.6 s against 4 s, the slowest book opens in 16.4 s against 12 s (Class 12 Statistics), the slowest chapter in 7.1 s against 6 s (Class 11 Maths); desktop meets all but the chapter budget (1.68 s against 1.5 s) | `PERFORMANCE_REPORT.md` | open, accepted for launch: the next steps are `lazyCards` after a phone check and splitting the two biggest books |
 
 ## Security and operations
 

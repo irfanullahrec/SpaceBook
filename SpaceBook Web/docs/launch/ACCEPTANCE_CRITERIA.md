@@ -28,3 +28,34 @@ A criterion is met only when the command or measurement in its last column was r
 | AC-X1 | Parity | Web and app list the same classes, subjects, chapters, files, questions and answers (same hashes) | `tools/app/sync_app.js --check`, `tools/parity/data_parity.js`, `exercise_coverage.js` on the bundle |
 | AC-X2 | Parity | Native app behaviours tested on a device are listed; untested ones are listed as untested | `TEST_MATRIX.md` |
 | AC-R1 | Release | `validate`, `smoke`, `build/all.js --check`, PHP tests, parity, App unit tests all pass on a clean checkout of the release commit | `TEST_MATRIX.md` |
+
+## Result on the release commit (2026-10-27)
+
+| ID | Result | Evidence |
+|---|---|---|
+| AC-C1 | met | `coverage_manifest.js --check`: 132 subjects mapped; two folders without a source (Class 7 Pashto empty, Class 10 Islamiat = the Class 9 book) are listed |
+| AC-C2 | met | every scan is accounted for: 87 books exact, 21 within a few pages, 8 PDF-only, 2 differ (named in `COVERAGE_MANIFEST.md`) |
+| AC-C3 | met | `exercise_coverage.js --check`: no chapter lost a question |
+| AC-C4 | **not met** | 177 of 45,445 questions have no answer (Maths 5 to 8: 171; Class 10 Urdu: 6, pages missing); all are named in `ANSWERS_WRITTEN.md`; before the pass 4,652 |
+| AC-C5 | partly met | 84 MCQs whose answer matches no option (most are lists of parts written like options, the app shows them as plain questions) and 9 clashes are listed in `EXERCISE_COVERAGE.md`; 56 real numeric-key MCQs were repaired |
+| AC-C6 | met by construction | written answers are `sol` lines shown as "SpaceBook answer, not printed in the textbook", open-ended ones start "Model answer"; 31 uncertain answers say "check with the teacher"; no teacher has reviewed them (human list in `VERIFICATION_REPORT.md`) |
+| AC-C7 | met | `node tools/validate.js` 1,288 passed |
+| AC-P1 | **not met** on the phone profile | cold start ready 8.6 s (budget 4 s); slowest chapter 7.1 s; repeat visit 861 ms (met). Desktop: cold start 646 ms. `PERFORMANCE_REPORT.md` |
+| AC-P2 | met | start page transfer 1.4 to 1.8 MB; the first screens are small |
+| AC-P3 | met (narrowly) | largest tab 149,103 nodes (Class 11 Maths exercises) |
+| AC-A1 | met (in jsdom) | axe on 15 views: 0 rule hits; contrast: 0 failing pairs. Not run in a real browser or with a screen reader |
+| AC-A2 | partly met | real Chrome (`tests/launch/touch_zoom.js`, 19 checks): 97 % of touch targets on five phone views are 44 px or more, no sideways scrolling at 360 to 412 px and at 200 % zoom, reduced motion honoured, header fits; 8 of 264 targets are smaller. Keyboard and focus: jsdom only (50 checks) |
+| AC-L1 | met | `FONT_COVERAGE.md`: 183 characters, 0 without a glyph; `tests/launch/fonts_browser.js` 15 checks |
+| AC-G1 | met | `tests/games/browser.js` 24, `tests/launch/games_pause.js` 20, `arcade_speed.js` 12 |
+| AC-O1 | met | `tests/launch/offline_browser.js` 21 of 21 (after fixing O-01 to O-03) |
+| AC-O2 | met | `tests/sync/*` 111 checks, `tests/feedback/browser.js` 40 |
+| AC-O3 | met | `tests/offline/offline.js` 41, `sw.js` 33; stored files are hash-checked (offline test) |
+| AC-S1 | met | `tools/launch/secrets_scan.js`: Web and App, tracked files and history, 0 found |
+| AC-S2 | met | `php tests/php/run.php` 491 passed |
+| AC-S3 | **owner action** | the rules are in the repository and tested on Apache; they apply only after the owner deploys; the live site was last seen without them |
+| AC-F1 | met on the web, untested on a phone | PHP tests and `tests/feedback/browser.js` 40; the App entry points compile and pass unit tests but were not used on a phone |
+| AC-X1 | met | `sync_app.js --check`, `pack_books.js --check`, `data_parity.js` 15, same books and answers |
+| AC-X2 | met | untested items are listed (`TEST_MATRIX.md`, `PARITY_REPORT.md`): the phone |
+| AC-R1 | met | validate, smoke, `all.js --check`, PHP, parity, App unit tests (219) pass on the committed branch, run in a clean worktree |
+
+Two criteria are not met (AC-C4, AC-P1 on the throttled phone profile), two are met only in part (AC-C5, AC-A2), one waits for the owner (AC-S3). `LAUNCH_DECISION.md` says what that means for the launch.
