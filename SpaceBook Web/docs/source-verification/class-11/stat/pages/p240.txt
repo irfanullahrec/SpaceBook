@@ -1,6 +1,7 @@
 @printed 237
 @status lesson
 q 7 | 9 Calculate general fertility rate and age specific fertility rate from the following data. || 9 درج ذیل اعداد و شمار سے عمومی شرحِ زرخیزی اور عمر کے لحاظ سے مخصوص شرحِ زرخیزی حساب کریں۔ || 9 له لاندې معلوماتو څخه عمومي د زېږون‌توان کچه او د عمر له مخې ځانګړې د زېږون‌توان کچه محاسبه کړئ.
+sol Total women (16-45) = 562870; total live births = 51652. General fertility rate = B/P_f x 1000 = 51652/562870 x 1000 = 91.8 per 1000 women. Age-specific fertility rates (B_i/P_i x 1000) for 16-20, 21-25, 26-30, 31-35, 36-40, 41-45: 89.9, 149.5, 121.7, 75.9, 46.8, 18.2 per 1000 women. ## GFR and ASFR.
 table سوال 7.9: عورتوں کی آبادی اور زندہ پیدائشیں || Q7.9: female population and live births || پوښتنه 7.9: د ښځو نفوس او ژوندي زېږونونه
 th | Age group | Female population | Live births
 tr | 16 – 20 | 116410 | 10468
@@ -11,6 +12,7 @@ tr | 36 – 40 | 73920 | 3456
 tr | 41 – 45 | 62700 | 1140
 endtable
 q 7 | 10 (a) Differentiate between crude and standardized death rates. (b) Calculate the crude and standardized death rates of the local population from the following data by direct method. || 10 (الف) خام اور معیاری شرحیں اموات میں فرق کریں۔ (ب) درج ذیل اعداد و شمار سے براہِ راست طریقے سے مقامی آبادی کی خام اور معیاری شرحیں اموات حساب کریں۔ || 10 (a) په خامو او معیاري د مړینې کچو کې توپیر وکړئ. (b) له لاندې معلوماتو څخه په مستقیمه طریقه د سیمه‌ییز نفوس خام او معیاري د مړینې کچې محاسبه کړئ.
+sol (a) The crude death rate relates all the deaths to the whole population and so is affected by the age composition; the standardized death rate is the rate the population would have if it had a standard age composition, so that the death rates of different populations can be compared fairly. (b) Crude death rate of the local population = 67/5000 x 1000 = 13.4 per 1000 (standard population: 67/5000 x 1000 = 13.4). Direct method: Σ(d_i/p_i)P_i = 70.00, so S.T.D.R = 70.00/5000 x 1000 = 14.00 per 1000. ## Direct method.
 table سوال 7.10: معیاری اور مقامی آبادی || Q7.10: standard and local population || پوښتنه 7.10: معیاري او سیمه‌ییز نفوس
 th | Age-group (years) | Standard population: Population | Standard population: Deaths | Local population: Population | Local population: Deaths
 tr | 0 – 9 | 600 | 18 | 400 | 16
@@ -19,6 +21,7 @@ tr | 20 – 59 | 3000 | 24 | 2400 | 24
 tr | 60 & over | 400 | 20 | 700 | 21
 endtable
 q 7 | 11 (i) Calculate the crude death rate percent for each factory and (ii) the standardized death percent for factory-B by taking the factory-A as a standard, from the data given below: || 11 (i) نیچے دیے گئے اعداد و شمار سے ہر کارخانے کی خام شرحِ اموات فیصد حساب کریں اور (ii) کارخانہ-A کو معیار لے کر کارخانہ-B کی معیاری شرحِ اموات فیصد حساب کریں: || 11 (i) له لاندې ورکړل شویو معلوماتو څخه د هرې فابریکې خامه د مړینې کچه په سلنه محاسبه کړئ او (ii) د فابریکې-A د معیار په نیولو سره د فابریکې-B معیاري د مړینې کچه په سلنه محاسبه کړئ:
+sol (i) Crude death rate percent: Factory A = 247/3330 x 100 = 7.42%; Factory B = 235/2650 x 100 = 8.87%. (ii) Standardized death rate of factory B with factory A as the standard (direct method) = Σ(d_i/p_i)P_i/ΣP_i x 100 = 308.36/3330 x 100 = 9.26%. ## Crude and standardized death rate percent.
 table سوال 7.11: کارخانہ-A اور کارخانہ-B || Q7.11: Factory-A and Factory-B || پوښتنه 7.11: فابریکه-A او فابریکه-B
 th | Age-group (years) | Factor-A: Population | Factor-A: Deaths | Factor-B: Population | Factor-B: Deaths
 tr | Under 21 | 330 | 28 | 400 | 38

@@ -1,13 +1,23 @@
 @printed 192
 @status lesson
 q x | The signature property in regression means that the signs of b_y.x, b_x.y, and r_xy are ____________. || ریگریشن میں دستخطی خاصیت کا مطلب ہے کہ b_y.x، b_x.y اور r_xy کی علامتیں ____________ ہیں۔ || په ریګرېشن کې د لاسلیک ځانګړتیا پدې معنا چې د b_y.x، b_x.y او r_xy نښې ____________ دي.
+sol the same (all three have the same sign) ## b_y.x, b_x.y and r all have the sign of the covariance.
 ## 5.3 Choose the correct answer. || 5.3 صحیح جواب منتخب کریں۔ || 5.3 سم ځواب وټاکئ.
 q i | If x and y are two variables, there can be at most (a) one regression line (b) two regression lines (c) an infinite number of regression lines (d) three regression lines || اگر x اور y دو متغیرات ہوں تو زیادہ سے زیادہ ہو سکتی ہیں (الف) ایک ریگریشن لکیر (ب) دو ریگریشن لکیریں (ج) ریگریشن لکیروں کی لامحدود تعداد (د) تین ریگریشن لکیریں || که x او y دوه متغیره وي نو تر ډېره به وي (a) یوه ریګرېشن کرښه (b) دوه ریګرېشن کرښې (c) د ریګرېشن کرښو بې‌پایه شمېر (d) درې ریګرېشن کرښې
+sol (b) two regression lines ## The regression line of y on x and the regression line of x on y.
 q ii | In the regression line of y on x, the variable x is known as (a) independent variable (b) intercept of the line (c) both (a) and (b) (d) all of the above || x پر y کی ریگریشن لکیر میں متغیر x کہلاتا ہے (الف) آزاد متغیر (ب) لکیر کا قطع (ج) (الف) اور (ب) دونوں (د) مندرجہ بالا سب || د x پر y په ریګرېشن کرښه کې متغیر x بلل کېږي (a) خپلواک متغیر (b) د کرښې کټ (c) (a) او (b) دواړه (d) پورتني ټول
+sol (a) independent variable ## In the regression of y on x, x is the independent (explanatory) variable.
 q iii | In the regression line y = α + βx, β is called the (a) slope of the line (b) intercept of the line (c) neither (a) nor (b) (d) both (a) and (b) || ریگریشن لکیر y = α + βx میں β کہلاتا ہے (الف) لکیر کا ڈھلوان (ب) لکیر کا قطع (ج) نہ (الف) نہ (ب) (د) (الف) اور (ب) دونوں || د ریګرېشن کرښې y = α + βx کې β بلل کېږي (a) د کرښې ډلوان (b) د کرښې کټ (c) نه (a) نه (b) (d) (a) او (b) دواړه
+sol (a) slope of the line ## In y = α + βx, α is the intercept and β is the slope.
 q iv | If b_y.x and b_x.y are two regression coefficients, they have (a) same sign (b) opposite sign (c) either same or opposite sign (d) nothing can be said || اگر b_y.x اور b_x.y دو ریگریشن عددی سر ہوں تو ان کی (الف) ایک جیسی علامت ہوتی ہے (ب) مخالف علامت ہوتی ہے (ج) ایک جیسی یا مخالف علامت ہوتی ہے (د) کچھ نہیں کہا جا سکتا || که b_y.x او b_x.y دوه ریګرېشن ضریبونه وي نو دوی لري (a) یو شان نښه (b) مخالفه نښه (c) یو شان یا مخالفه نښه (d) هېڅ نشي ویلای
+sol (a) same sign ## Both have the sign of the covariance.
 q v | If b_y.x > 1, then b_x.y is (a) less than 1 (b) greater than 1 (c) equal to 1 (d) equal to 0 || اگر b_y.x > 1 ہو تو b_x.y ہے (الف) 1 سے کم (ب) 1 سے زیادہ (ج) 1 کے برابر (د) 0 کے برابر || که b_y.x > 1 وي نو b_x.y دی (a) له 1 څخه کم (b) له 1 څخه ډېر (c) له 1 سره مساوي (d) له 0 سره مساوي
+sol (a) less than 1 ## The product b_y.x b_x.y = r² <= 1.
 q vi | If x and y are independent then the value of regression coefficient b_x.y is equal to (a) 0 (b) 1 (c) ∞ (d) any positive value || اگر x اور y آزاد ہوں تو ریگریشن عددی سر b_x.y کی قدر کے برابر ہے (الف) 0 (ب) 1 (ج) ∞ (د) کوئی بھی مثبت قدر || که x او y خپلواک وي نو د ریګرېشن ضریب b_x.y ارزښت له … سره مساوي دی (a) 0 (b) 1 (c) ∞ (d) هر مثبت ارزښت
+sol (a) 0 ## Independent variables have zero covariance, so the regression coefficient is 0.
 q vii | The idea of product moment correlation was given by (a) Sir Francis Galton (b) Spearman (c) Karl Pearson (d) R.A Fisher || حاصلِ ضرب معیارِ اثر ارتباط کا تصور دیا تھا (الف) سر فرانسس گالٹن نے (ب) سپیئرمین نے (ج) کارل پیئرسن نے (د) آر اے فشر نے || د ضرب-مومنټ همتړاو مفکوره ورکړې وه (a) سر فرانسس ګالټن (b) سپیرمن (c) کارل پیرسن (d) آر ای فشر
+sol (c) Karl Pearson ## The product-moment correlation coefficient is due to Karl Pearson.
 q viii | The unit of correlation coefficient is (a) kg (b) percent (c) non-existing (d) metre || ارتباطی عددی سر کی اکائی ہے (الف) کلوگرام (ب) فیصد (ج) موجود نہیں (د) میٹر || د همتړاو د ضریب واحد دی (a) کیلوګرام (b) سلنه (c) نشته (d) متر
+sol (c) non-existing ## r is a pure number; it has no unit.
 q ix | The range of simple correlation coefficient is (a) −∞ to ∞ (b) 0 to ∞ (c) −1 to 1 (d) 0 to 1 || سادہ ارتباطی عددی سر کی حد ہے (الف) −∞ سے ∞ (ب) 0 سے ∞ (ج) −1 سے 1 (د) 0 سے 1 || د ساده همتړاو د ضریب حد دی (a) −∞ تر ∞ (b) 0 تر ∞ (c) −1 تر 1 (d) 0 تر 1
+sol (c) -1 to 1 ## -1 <= r <= 1.

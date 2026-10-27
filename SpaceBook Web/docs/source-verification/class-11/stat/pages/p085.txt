@@ -3,6 +3,7 @@
 p (ii) Geometric mean in case of discrete series or grouped data || (ii) منفصل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط || (ii) د منفصلې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط
 ## Example: 2.30 || مثال: 2.30 || بېلګه: 2.30
 q  | Calculate geometric mean of the distribution; || تقسیم کا ہندسی اوسط حساب کریں؛ || د ویش هندسي اوسط محاسبه کړئ؛
+sol G.M = antilog(Σf log x / n) = antilog(0.8066) = 6.41 (n = 63). ## Geometric mean of a discrete distribution.
 table مثال 2.30: x اور f || Example 2.30: x and f || بېلګه 2.30: x او f
 th | x: | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
 tr | f: | 2 | 5 | 9 | 14 | 15 | 8 | 6 | 3 | 1
@@ -25,6 +26,7 @@ eq \text{G.M}=\text{antilog}\left(\dfrac{\sum_{i=1}^{n}f\log x}{\sum f}\right)=\
 p (iii) Geometric mean in case of continuous series or grouped data || (iii) مسلسل سلسلے یا گروہی اعداد و شمار کی صورت میں ہندسی اوسط || (iii) د دوامدارې لړۍ یا ګروپي معلوماتو په حالت کې هندسي اوسط
 ## Example: 2.31 || مثال: 2.31 || بېلګه: 2.31
 q  | Calculate the geometric mean of the following distribution. || درج ذیل تقسیم کا ہندسی اوسط حساب کریں۔ || د لاندې ویش هندسي اوسط محاسبه کړئ.
+sol Midpoints x = 14.5, 24.5, 34.5, 44.5, 54.5; G.M = antilog(Σf log x / n) = antilog(1.4946) = 31.23 (n = 132). ## Geometric mean of grouped data.
 table مثال 2.31: گروہ اور تعدد || Example 2.31: groups and frequency || بېلګه 2.31: ډلې او فریکونسي
 th | Groups: | 10 – 19 | 20 – 29 | 30 – 39 | 40 – 49 | 50 – 59
 tr | Frequency: | 15 | 35 | 45 | 25 | 12

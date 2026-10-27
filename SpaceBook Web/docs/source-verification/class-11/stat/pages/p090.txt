@@ -4,23 +4,43 @@
 exercise Exercise-2
 ## 2.1 State whether the following statements are true or false. || 2.1 بتائیں کہ درج ذیل بیانات صحیح ہیں یا غلط۔ || 2.1 وښیئ چې لاندې بیانونه سم دي که غلط.
 qp i | A value which is repeated most number of times in the data set is called harmonic mean. || وہ قدر جو اعداد و شمار کے مجموعے میں سب سے زیادہ بار دہرائی جائے ہارمونی اوسط کہلاتی ہے۔ || هغه ارزښت چې په معلوماتو ټولګه کې تر ټولو ډېر ځله تکرارېږي هارمونیک اوسط بلل کېږي.
+sol False ## The value repeated most often is the mode; the harmonic mean is a different average.
 qp ii | Median is highly affected by extreme values. || وسطانیہ انتہائی قدروں سے بہت متاثر ہوتا ہے۔ || میانه د سختو ارزښتونو لخوا ډېره اغېزمنېږي.
+sol False ## The median is not affected by extreme values; the mean is.
 qp iii | For a symmetric unimodal distribution the arithmetic mean, median and mode are not equal. || متناسب یک عادی تقسیم کے لیے حسابی اوسط، وسطانیہ اور عادہ برابر نہیں ہوتے۔ || د متناسب یو‌مودي ویش لپاره حسابي اوسط، میانه او مود مساوي نه وي.
+sol False ## For a symmetric unimodal distribution the mean, median and mode are equal.
 qp iv | 5th decile = 50th percentile. || پانچواں دسواں = پچاسواں فی صدکیہ۔ || پنځمه لسمه = پنځوسمه سلمه.
+sol True ## D₅ = P₅₀ = median.
 qp v | The sum of deviations observations from A.M is always equal to zero. || مشاہدات کے A.M سے انحرافات کا مجموعہ ہمیشہ صفر کے برابر ہوتا ہے۔ || د کتنو له A.M څخه د انحرافاتو مجموعه تل له صفر سره مساوي وي.
+sol True ## Σ(x − x̄) = 0.
 qp vi | An average is a single value which represents the entire data. || اوسط ایک واحد قدر ہے جو پورے اعداد و شمار کی نمائندگی کرتی ہے۔ || اوسط یو واحد ارزښت دی چې ټول معلومات استازیتوب کوي.
+sol True ## An average represents the whole data by one value.
 qp vii | Geometric mean cannot be calculated if any value in the data is zero or negative. || اگر اعداد و شمار میں کوئی قدر صفر یا منفی ہو تو ہندسی اوسط حساب نہیں کیا جا سکتا۔ || که په معلوماتو کې هر ارزښت صفر یا منفي وي نو هندسي اوسط نشي محاسبه کېدای.
+sol True ## The logarithm of zero or a negative number is not defined.
 qp viii | Median divides the series in to two equal parts. || وسطانیہ سلسلے کو دو برابر حصوں میں تقسیم کرتا ہے۔ || میانه لړۍ په دوو مساوي برخو وېشي.
+sol True ## Half of the observations lie below the median and half above.
 qp ix | Mode depends on all the values of the data. || عادہ اعداد و شمار کی تمام قدروں پر منحصر ہوتا ہے۔ || مود د معلوماتو په ټولو ارزښتونو پورې اړه لري.
+sol False ## The mode depends only on the most frequent value, not on all values.
 qp x | Quartiles divide the series in to three equal parts. || چوتھائیاں سلسلے کو تین برابر حصوں میں تقسیم کرتی ہیں۔ || څلورمې لړۍ په دریو مساوي برخو وېشي.
+sol False ## The quartiles divide the series into four equal parts (three quartiles).
 ## 2.2 Fill in the suitable words in the blanks. || 2.2 خالی جگہوں میں مناسب الفاظ پُر کریں۔ || 2.2 په تشو کې مناسب کلمې ډکې کړئ.
 qp i | Weighted mean is more ________ than unweighted mean. || وزنی اوسط غیر وزنی اوسط سے زیادہ ________ ہوتا ہے۔ || وزني اوسط له نه‌وزني اوسط څخه ډېر ________ دی.
+sol reliable (representative) ## Weights give more importance to the more important items.
 qp ii | If A.M of certain values is 9 and their G.M is 6, then the H.M is ________. || اگر کچھ قدروں کا A.M 9 ہو اور ان کا G.M 6 ہو تو H.M ________ ہے۔ || که د ځینو ارزښتونو A.M 9 وي او د هغو G.M 6 وي نو H.M ________ دی.
+sol 4 ## G.M² = A.M × H.M, so H.M = 6²/9 = 4.
 qp iii | A value which divides an ordered series in to two equal parts is called ________. || وہ قدر جو ترتیب دیے گئے سلسلے کو دو برابر حصوں میں تقسیم کرے ________ کہلاتی ہے۔ || هغه ارزښت چې ترتیب شوې لړۍ په دوو مساوي برخو وېشي ________ بلل کېږي.
+sol the median ## It divides an ordered series into two equal parts.
 qp iv | The variable value having maximum frequency in a frequency distribution is called ________. || تعدد تقسیم میں زیادہ سے زیادہ تعدد والی متغیر قدر ________ کہلاتی ہے۔ || په فریکونسي ویش کې د اعظمي فریکونسي لرونکی متغیر ارزښت ________ بلل کېږي.
+sol the mode ## The value with the maximum frequency.
 qp v | Out of all the measures of central tendency ________ is the only measure which is not unique. || مرکزی رجحان کے تمام پیمانوں میں سے ________ واحد پیمانہ ہے جو منفرد نہیں۔ || د مرکزي تمایل له ټولو اندازو څخه ________ یوازینۍ اندازه ده چې ځانګړې نه ده.
+sol mode ## A distribution may have more than one mode.
 qp vi | The distribution which has only one mode is called ________. || وہ تقسیم جس کا صرف ایک عادہ ہو ________ کہلاتی ہے۔ || هغه ویش چې یوازې یو مود ولري ________ بلل کېږي.
+sol unimodal ## One mode only.
 qp vii | Second quartile, 5th decile and 50th percentile are same as ________. || دوسری چوتھائی، پانچواں دسواں اور پچاسواں فی صدکیہ ________ کے برابر ہیں۔ || دویمه څلورمه، پنځمه لسمه او پنځوسمه سلمه له ________ سره یو شان دي.
+sol median ## Q₂ = D₅ = P₅₀ = median.
 qp viii | The 3rd quartile and ________ percentile are same. || تیسری چوتھائی اور ________ فی صدکیہ برابر ہیں۔ || دریمه څلورمه او ________ سلمه یو شان دي.
+sol 75th (P₇₅) ## Q₃ = P₇₅.
 qp ix | The general name for quartiles, deciles and percentiles is ________. || چوتھائیوں، دسویں اور فی صدکیات کا عمومی نام ________ ہے۔ || د څلورمو، لسمو او سلمو عمومي نوم ________ دی.
+sol partition values (quantiles) ## They divide the data into equal parts.
 qp x | The most suitable average for measuring speed, per unit of time, is ________. || فی اکائی وقت رفتار ناپنے کے لیے سب سے موزوں اوسط ________ ہے۔ || د واحد وخت په اړه د چټکتیا د اندازې لپاره تر ټولو مناسب اوسط ________ دی.
+sol the harmonic mean ## Suitable for averages of speeds and rates per unit of time.

@@ -5,9 +5,12 @@ p A table in which the observations are arranged in to classes along with cumula
 ## Example: 1.5 || مثال: 1.5 || بېلګه: 1.5
 q  | Construct a || تعمیر کریں/بنائیں || جوړ کړئ
 qp i | cumulative frequency distribution, || جمعی تعدد تقسیم، || مجموعي فریکونسي ویش،
+sol Cumulative frequencies (c.f.): 2, 6, 9, 11, 17, 21, 23, 24 (the total frequency is 24). ## Add the frequencies successively.
 qp ii | “Less than” type cumulative frequency distribution and || "سے کم" قسم کی جمعی تعدد تقسیم اور || "له … څخه کم" ډول مجموعي فریکونسي ویش او
+sol "Less than" cumulative frequencies: less than 30 = 0; less than 32 = 2; less than 34 = 6; less than 36 = 9; less than 38 = 11; less than 40 = 17; less than 42 = 21; less than 44 = 23; less than 45 = 24. ## Add the frequencies from the lowest class upward.
 qp iii | “More than” type cumulative frequency distribution from the following frequency distribution || درج ذیل تعدد تقسیم سے "سے زیادہ" قسم کی جمعی تعدد تقسیم || له لاندې فریکونسي ویش څخه "له … څخه ډېر" ډول مجموعي فریکونسي ویش
-q  | Classes: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45; Frequency: 2, 4, 3, 2, 6, 4, 2, 1 || جماعتیں: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45؛ تعدد: 2, 4, 3, 2, 6, 4, 2, 1 || ټولګي: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45؛ فریکونسي: 2, 4, 3, 2, 6, 4, 2, 1
+sol "More than" cumulative frequencies: more than 30 = 24; more than 32 = 22; more than 34 = 18; more than 36 = 15; more than 38 = 13; more than 40 = 7; more than 42 = 3; more than 44 = 1; more than 45 = 0. ## Subtract the frequencies successively from the total (24).
+## Classes: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45; Frequency: 2, 4, 3, 2, 6, 4, 2, 1 || جماعتیں: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45؛ تعدد: 2, 4, 3, 2, 6, 4, 2, 1 || ټولګي: 30 – 31, 32 – 33, 34 – 35, 36 – 37, 38 – 39, 40 – 41, 42 – 43, 44 – 45؛ فریکونسي: 2, 4, 3, 2, 6, 4, 2, 1
 ## Solution: || حل: || حل:
 table (i) جمعی تعدد تقسیم || (i) Cumulative frequency distribution || (i) مجموعي فریکونسي ویش
 th | Classes | f | c.f

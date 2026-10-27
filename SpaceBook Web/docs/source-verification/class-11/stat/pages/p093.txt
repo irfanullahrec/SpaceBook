@@ -1,29 +1,40 @@
 @printed 89
 @status lesson
 q  | mean for a student who scores: x: 73, 67, 85; w: 1, 1, 2 || اسکور x: 73, 67, 85؛ وزن w: 1, 1, 2 والے طالب علم کا وزنی اوسط || د هغه زده کوونکي وزني اوسط چې نمرې یې x: 73, 67, 85؛ وزنونه w: 1, 1, 2 دي
+sol Weighted mean = Σwx/Σw = (1×73 + 1×67 + 2×85)/(1 + 1 + 2) = 310/4 = 77.5. ## The final exam has twice the weight.
 q 2 | 17 Explain the relationship among the mean median and mode for symmetrical and skewed distributions. || 17 متناسب اور کج تقسیمات کے لیے اوسط وسطانیہ اور عادہ کے درمیان تعلق کی وضاحت کریں۔ || 17 د متناسبو او کوړو ویشونو لپاره د اوسط میانې او مود ترمنځ اړیکه تشریح کړئ.
+sol In a symmetrical distribution the mean, median and mode are equal (mean = median = mode). In a positively skewed distribution (tail to the right) mean > median > mode; in a negatively skewed distribution (tail to the left) mean < median < mode. For moderately skewed distributions the empirical relation is mode = 3 median − 2 mean. ## Relationship among the averages.
 q 2 | 18 For a skewed distribution median = 36, mean = 40.5. What will be the value of mode? || 18 ایک کج تقسیم کے لیے وسطانیہ = 36، اوسط = 40.5۔ عادہ کی قدر کیا ہوگی؟ || 18 د یوه کوړ ویش لپاره میانه = 36، اوسط = 40.5. د مود ارزښت به څومره وي؟
+sol Mode = 3 median − 2 mean = 3(36) − 2(40.5) = 108 − 81 = 27. ## Empirical relationship.
 q 2 | 19 Given the data: 60, 65, 68, 76, 65, 74, 58, 56, 61, 57, 63, 64, 72, 67, 60. Evaluate second quartile, sixth decile and seventy fifth percentile. || 19 دیے گئے اعداد و شمار: 60, 65, 68, 76, 65, 74, 58, 56, 61, 57, 63, 64, 72, 67, 60۔ دوسری چوتھائی، چھٹا دسواں اور پچھترواں فی صدکیہ معلوم کریں۔ || 19 ورکړل شوي معلومات: 60, 65, 68, 76, 65, 74, 58, 56, 61, 57, 63, 64, 72, 67, 60. دویمه څلورمه، شپږمه لسمه او پنځه‌اووایمه سلمه ومومئ.
+sol Ordered data (n = 15): 56, 57, 58, 60, 60, 61, 63, 64, 65, 65, 67, 68, 72, 74, 76. Q₂ = value at (n+1)/2 = 8th: 64.0. D₆ = value at 6(n+1)/10 = 9.6th: 65 + 0.6(65 − 65) = 65.00. P₇₅ = value at 75(n+1)/100 = 12th: 68.0. ## Position formulas with (n + 1).
 q 2 | 20 Calculate Q₃, D₈ and P₂₀ for the following discrete series: || 20 درج ذیل منفصل سلسلے کے لیے Q₃، D₈ اور P₂₀ حساب کریں: || 20 د لاندې منفصلې لړۍ لپاره Q₃، D₈ او P₂₀ محاسبه کړئ:
+sol n = 20; cumulative frequencies: 5, 9, 12, 14, 17, 18, 19, 20. Q₃ = the value at 3n/4 = 15.0-th position → the c.f. first exceeds it at 70 inches; D₈ = value at 8n/10 = 16.0-th → 70 inches; P₂₀ = value at 20n/100 = 4.0-th → 66 inches. ## Discrete series: the first value whose c.f. reaches the position.
 table سوال 2.20: قد اور مریضوں کی تعداد || Q2.20: height and number of patients || پوښتنه 2.20: قد او د ناروغانو شمېر
 th | Height in inches: | 66 | 67 | 68 | 69 | 70 | 71 | 72 | 73
 tr | No. of patients: | 5 | 4 | 3 | 2 | 3 | 1 | 1 | 1
 endtable
 q 2 | 21 Find first and third quartiles, 7th decile and 55th percentile from the following data: || 21 درج ذیل اعداد و شمار سے پہلی اور تیسری چوتھائی، ساتواں دسواں اور پچپنواں فی صدکیہ معلوم کریں: || 21 له لاندې معلوماتو څخه لومړۍ او دریمه څلورمه، اوومه لسمه او پنځه‌پنځوسمه سلمه ومومئ:
+sol n = 110; class boundaries −0.5-9.5, 9.5-19.5, ... . Q₁ = 29.5 + (10/18)(27.5 − 14) = 37.00; Q₃ = 49.5 + (10/27)(82.5 − 57) = 58.94; D₇ = 49.5 + (10/27)(77.0 − 57) = 56.91; P₅₅ = 49.5 + (10/27)(60.5 − 57) = 50.80. ## Formula: value = l + (h/f)(kn/m − c).
 table سوال 2.21: نمبر اور طلبہ کی تعداد || Q2.21: marks and number of students || پوښتنه 2.21: نمرې او د زده کوونکو شمېر
 th | Marks: | 0–9 | 10–19 | 20–29 | 30–39 | 40–49 | 50–59 | 60–69 | 70–79 | 80–89 | 90–99
 tr | No. of students: | 2 | 5 | 7 | 18 | 25 | 27 | 15 | 7 | 3 | 1
 endtable
 q 2 | 22 Define geometric mean and harmonic mean. What is the empirical relationship among G.M, H.M and A.M.? || 22 ہندسی اوسط اور ہارمونی اوسط کی تعریف کریں۔ G.M، H.M اور A.M کے درمیان تجرباتی تعلق کیا ہے؟ || 22 هندسي اوسط او هارمونیک اوسط تعریف کړئ. د G.M، H.M او A.M ترمنځ تجربوي اړیکه څه ده؟
+sol Geometric mean: the n-th root of the product of n positive values, G.M = (x₁x₂...xₙ)^(1/n) (antilog of the mean of logs). Harmonic mean: the reciprocal of the arithmetic mean of the reciprocals, H.M = n/Σ(1/x). For positive unequal values A.M > G.M > H.M, and G.M² = A.M × H.M for two values; they are equal only when all values are equal. ## Definitions and relationship.
 q 2 | 23 Find the geometric mean and the harmonic mean of the data: 35, 45, 55, 65, 75, and 85. || 23 اعداد و شمار 35, 45, 55, 65, 75 اور 85 کا ہندسی اوسط اور ہارمونی اوسط معلوم کریں۔ || 23 د معلوماتو 35, 45, 55, 65, 75 او 85 هندسي اوسط او هارمونیک اوسط ومومئ.
+sol G.M = antilog(Σlog x/6) = antilog(1.7592) = 57.43. H.M = 6/Σ(1/x) = 6/0.1095 = 54.82. ## For the six values.
 q 2 | 24 Calculate the geometric mean and the harmonic mean from the following data: || 24 درج ذیل اعداد و شمار سے ہندسی اوسط اور ہارمونی اوسط حساب کریں: || 24 له لاندې معلوماتو څخه هندسي اوسط او هارمونیک اوسط محاسبه کړئ:
+sol n = 31. G.M = antilog(Σf log x/n) = antilog(2.1539) = 142.53. H.M = n/Σ(f/x) = 31/0.2177 = 142.38. ## Weights of persons.
 table سوال 2.24: وزن اور افراد کی تعداد || Q2.24: weights and number of persons || پوښتنه 2.24: وزنونه او د کسانو شمېر
 th | Weights: | 130 | 135 | 140 | 145 | 146 | 148 | 149 | 150 | 157
 tr | No. of persons: | 3 | 4 | 6 | 6 | 3 | 5 | 2 | 1 | 1
 endtable
 q 2 | 25 Compute A.M, G.M and H.M for the following data: And verify that A.M > G.M > H.M || 25 درج ذیل اعداد و شمار کے لیے A.M، G.M اور H.M حساب کریں: اور تصدیق کریں کہ A.M > G.M > H.M || 25 د لاندې معلوماتو لپاره A.M، G.M او H.M محاسبه کړئ: او تصدیق کړئ چې A.M > G.M > H.M
+sol Midpoints x = 74.5, 94.5, 114.5, 134.5, 154.5, 174.5, 194.5; n = 60. A.M = 122.50; G.M = 117.70; H.M = 113.11. Verification: A.M (122.50) > G.M (117.70) > H.M (113.11). ## Grouped data.
 table سوال 2.25: جماعتیں اور تعدد || Q2.25: classes and frequency || پوښتنه 2.25: ټولګي او فریکونسي
 th | Classes: | 65–84 | 85–104 | 105–124 | 125–144 | 145–164 | 165–184 | 185–204
 tr | Frequency: | 9 | 10 | 17 | 10 | 5 | 4 | 5
 endtable
 q 2 | 26 If the A.M of two numbers is 16 and G.M is 14. Find H.M? || 26 اگر دو اعداد کا A.M 16 اور G.M 14 ہو تو H.M معلوم کریں؟ || 26 که د دوو شمېرو A.M 16 او G.M 14 وي نو H.M ومومئ؟
+sol G.M² = A.M × H.M, so H.M = G.M²/A.M = 14²/16 = 196/16 = 12.25. ## Relation for two numbers.

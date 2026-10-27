@@ -1,6 +1,7 @@
 @printed 171
 @status lesson
 q 4 | 12 Construct price index numbers taking 1980 as base by (i) Simple aggregative method. (ii) Simple average of prices relatives. || 12 1980 کو بنیاد لے کر قیمتی اشاریہ اعداد بنائیں (i) سادہ مجموعی طریقے (ii) قیمتی اضافتوں کے سادہ اوسط سے۔ || 12 د 1980 د بنسټ په نیولو سره د بیې شاخص شمېرې جوړې کړئ د (i) ساده مجموعي طریقې (ii) د بیې نسبتونو د ساده اوسط په واسطه.
+sol Sum of the prices, 1980-1984: 870, 975, 1072, 1209, 1305. (i) Simple aggregative index = (Σp_n/Σp_0) x 100 = 100.00, 112.07, 123.22, 138.97, 150.00. (ii) Simple average of price relatives = Σ(p_n/p_0 x 100)/4 = 100.00, 111.42, 121.76, 139.73, 153.09 (1980-1984, 1980 = 100). ## Two unweighted methods.
 table سوال 4.12: گندم، چاول، کپاس اور گھی کی قیمتیں || Q4.12: prices of wheat, rice, cotton and ghee || پوښتنه 4.12: د غنمو، وريژو، پنبې او غوړو بیې
 th | Year | Wheat | Rice | Cotton | Gee
 tr | 1980 | 60 | 130 | 420 | 260
@@ -10,6 +11,7 @@ tr | 1983 | 80 | 200 | 584 | 345
 tr | 1984 | 85 | 240 | 620 | 360
 endtable
 q 4 | 13 Given the following data, find index number for 1973 taking 1963 as base year by (i) Laspeyre's formula (ii) Paasche's formula || 13 درج ذیل اعداد و شمار دیے گئے ہیں، 1963 کو بنیادی سال لے کر 1973 کے لیے اشاریہ عدد معلوم کریں (i) لاسپیئر کے فارمولے (ii) پاشے کے فارمولے سے || 13 لاندې معلومات ورکړل شوي دي، د 1963 د بنسټیز کال په نیولو سره د 1973 لپاره شاخص شمېره ومومئ د (i) Laspeyre فورمول (ii) Paasche فورمول په واسطه
+sol (i) Laspeyre's index = Σp1q0/Σp0q0 x 100 = (10x50 + 8x10 + 4x5)/(2x50 + 3x10 + 4x5) x 100 = 600/150 x 100 = 400.00. (ii) Paasche's index = Σp1q1/Σp0q1 x 100 = (10x40 + 8x5 + 4x5)/(2x40 + 3x5 + 4x5) x 100 = 460/115 x 100 = 400.00. ## Laspeyre's (base-year weights) and Paasche's (current-year weights).
 table سوال 4.13: 1963 اور 1973 کی قیمتیں اور مقداریں || Q4.13: prices and quantities, 1963 and 1973 || پوښتنه 4.13: د 1963 او 1973 بیې او مقدارونه
 th | Commodity | 1963: Price | 1963: Quantity | 1973: Price | 1973: Quantity
 tr | A | 2 | 50 | 10 | 40
@@ -17,6 +19,7 @@ tr | B | 3 | 10 | 8 | 5
 tr | C | 4 | 5 | 4 | 5
 endtable
 q 4 | 14 Construct (i) base year weighted (ii) current year weighted price index numbers from the following data for 1954 and 1955 based on 1950. || 14 درج ذیل اعداد و شمار سے 1950 کی بنیاد پر 1954 اور 1955 کے لیے (i) بنیادی سال کے وزنی (ii) موجودہ سال کے وزنی قیمتی اشاریہ اعداد بنائیں۔ || 14 له لاندې معلوماتو څخه د 1950 پر بنسټ د 1954 او 1955 لپاره (i) د بنسټیز کال وزني (ii) د اوسني کال وزني د بیې شاخص شمېرې جوړې کړئ.
+sol (i) Base year weighted (Laspeyre) = Σp_n q0/Σp0 q0 x 100 with Σp0q0 = 35310: for 1954 Σp q0 = 41140, index = 116.51; for 1955 Σp q0 = 40014, index = 113.32. (ii) Current year weighted (Paasche) = Σp_n q_n/Σp0 q_n x 100: for 1954 46707/40048 x 100 = 116.63; for 1955 52434/47376 x 100 = 110.68. ## Laspeyre's and Paasche's indices with 1950 = 100.
 table سوال 4.14: 1950، 1954 اور 1955 کی قیمتیں اور مقداریں || Q4.14: prices and quantities, 1950, 1954 and 1955 || پوښتنه 4.14: د 1950، 1954 او 1955 بیې او مقدارونه
 th | Commodity | Prices: 1950 | Prices: 1954 | Prices: 1955 | Quantities: 1950 | Quantities: 1954 | Quantities: 1955
 tr | A | 64 | 75 | 80 | 270 | 276 | 290

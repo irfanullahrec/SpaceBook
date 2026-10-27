@@ -36,7 +36,8 @@ for (const [f, items] of Object.entries(byFile)) {
     const label = m[1].trim();
     const rest = m[2];
     if (it.text && !rest.replace(/\s+/g, ' ').startsWith(it.text.replace(/\s+/g, ' ').slice(0, 20))) { console.error(`${f}:${it.line} (#${it.n}) text differs from the work list`); bad++; continue; }
-    lines[it.line - 1] = '## ' + (label ? label + (/[.۔]$/.test(label) ? ' ' : '۔ ') : '') + rest;
+    const label2 = /^\d+$/.test(label) && /^\d+[\s.)]/.test(rest) ? '' : label;                 // "q 3 | 16 The following ..." : the label is the exercise, the question carries its own number
+    lines[it.line - 1] = '## ' + (label2 ? label2 + (/[.۔]$/.test(label2) ? ' ' : '۔ ') : '') + rest;
     changed++;
   }
   if (!dry) fs.writeFileSync(file, lines.join(eol));

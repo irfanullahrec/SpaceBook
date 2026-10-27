@@ -1,6 +1,7 @@
 @printed 172
 @status lesson
 q 4 | 15 Construct Fisher's ideal index number from the following data for 1954 taking 1947 as base year. || 15 درج ذیل اعداد و شمار سے 1947 کو بنیادی سال لے کر 1954 کے لیے فشر کا مثالی اشاریہ عدد بنائیں۔ || 15 له لاندې معلوماتو څخه د 1947 د بنسټیز کال په نیولو سره د 1954 لپاره د Fisher مثالي شاخص شمېره جوړه کړئ.
+sol Laspeyre's index = Σp1q0/Σp0q0 x 100 = 504.20/1025.90 x 100 = 49.15. Paasche's index = Σp1q1/Σp0q1 x 100 = 483.40/973.90 x 100 = 49.64. Fisher's ideal index = sqrt(L x P) = sqrt(49.15 x 49.64) = 49.39. ## Fisher's ideal index is the geometric mean of Laspeyre's and Paasche's.
 table سوال 4.15: 1947 اور 1954 کی قیمتیں اور مقداریں || Q4.15: prices and quantities, 1947 and 1954 || پوښتنه 4.15: د 1947 او 1954 بیې او مقدارونه
 th | Commodities | 1947: Price | 1947: Quantity | 1954: Price | 1954: Quantity
 tr | Rice | 9.3 | 100 | 4.5 | 90
@@ -8,7 +9,9 @@ tr | Wheat | 6.4 | 11 | 3.7 | 19
 tr | Jawar | 5.1 | 5 | 2.7 | 3
 endtable
 q 4 | 16 Define consumer price index number and discuss the main steps involved in the construction of consumer price index number. || 16 صارف قیمتی اشاریہ عدد کی تعریف کریں اور صارف قیمتی اشاریہ عدد کی تعمیر کے اہم مراحل پر بحث کریں۔ || 16 د مصرف کوونکي د بیې شاخص شمېره تعریف کړئ او د مصرف کوونکي د بیې شاخص شمېرې د جوړولو اصلي مرحلې وڅېړئ.
+sol The consumer price index (cost of living index) measures the average change in the retail prices of the goods and services consumed by a particular class of people (e.g. industrial workers or government servants), compared with a base period. Steps: (1) decide the class of people and the area; (2) conduct a family budget enquiry to find what they spend on food, clothing, housing, fuel and light, and miscellaneous items, which gives the weights; (3) select the commodities and the base period; (4) collect retail price quotations from the markets where the class buys; (5) compute the index by the aggregate expenditure method or the family (household) budget method; (6) combine the group indices using the weights. ## Definition and steps of the consumer price index.
 q 4 | 17 Construct consumer price index number for 1940 on the basis of 1938 from the following data by (i) aggregate expenditure method and (ii) household budget method. || 17 درج ذیل اعداد و شمار سے 1938 کی بنیاد پر 1940 کے لیے صارف قیمتی اشاریہ عدد بنائیں (i) مجموعی اخراجات کے طریقے اور (ii) گھریلو بجٹ کے طریقے سے۔ || 17 له لاندې معلوماتو څخه د 1938 پر بنسټ د 1940 لپاره د مصرف کوونکي د بیې شاخص شمېره جوړه کړئ د (i) مجموعي لګښت طریقې او (ii) د کورنۍ د بودیجې طریقې په واسطه.
+sol (i) Aggregate expenditure method: Σp0q0 = 148 and Σp1q0 = 180, so the index = Σp1q0/Σp0q0 x 100 = 180/148 x 100 = 121.62. (ii) Household budget method: price relatives I = (p1/p0) x 100 = 108.3, 160.0, 150.0, 125.0, 100.0, 80.0 and weights W = p0q0 = 36, 30, 6, 48, 8, 20, so the index = ΣIW/ΣW = 18000.0/148 = 121.62. Both methods give the same value, as the weights are the base-year expenditures. ## Consumer price index for 1940 (1938 = 100).
 table سوال 4.17: استعمال شدہ مقداریں اور قیمتیں || Q4.17: quantities consumed and prices || پوښتنه 4.17: مصرف شوي مقدارونه او بیې
 th | Commodity | Quantity by consumed in 1938 | Unit | Price in 1938 | Prince in 1940
 tr | Rice | 6 maund | maund | 6 | 6.5
@@ -19,6 +22,7 @@ tr | Ghee | 4 seer | seer | 2 | 2
 tr | Sugar | 1 maund | maund | 20 | 16
 endtable
 q 4 | 18 Calculate the cost of living index number for 1960 on the basis of 1937. || 18 1937 کی بنیاد پر 1960 کے لیے رہن سہن کی لاگت کا اشاریہ عدد حساب کریں۔ || 18 د 1937 پر بنسټ د 1960 لپاره د ژوند د لګښت شاخص شمېره محاسبه کړئ.
+sol The prices are per maund (1 maund = 40 seers), so the quantities in maunds are: wheat 20/40 = 0.5, dal 8/40 = 0.2, oil 1.5/40 = 0.0375, fuel 4, clothing 22 yards. Σp0q0 = 50.3469; Σp1q0 = 77.7687 (with the printed 1960 oil price of 200.50). Cost of living index = Σp1q0/Σp0q0 x 100 = 77.7687/50.3469 x 100 = 154.47. Note: the printed oil price 200.50 looks like a misprint; if it were 20.50 the index would be 141.06. Please check with the teacher. ## Weighted aggregate (cost of living) index.
 table سوال 4.18: استعمال شدہ مقداریں اور قیمتیں || Q4.18: quantities consumed and prices || پوښتنه 4.18: مصرف شوي مقدارونه او بیې
 th | Commodity | Quantity consumed | Unit of price | Price in 1937 | Prince in 1960
 tr | Wheat | 20 seer | Rs. per maund | 10 | 13.50

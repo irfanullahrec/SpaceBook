@@ -1,26 +1,46 @@
 @printed 213
 @status lesson
 q vii | A time series is affected by (a) economic factors (b) non-economic factors (c) both (a) and (b) (d) neither (a) nor (b) || وقتی سلسلہ متاثر ہوتا ہے (الف) معاشی عوامل سے (ب) غیر معاشی عوامل سے (ج) (الف) اور (ب) دونوں سے (د) نہ (الف) نہ (ب) || د وخت لړۍ اغېزمنه کېږي (a) اقتصادي عواملو لخوا (b) غیر اقتصادي عواملو لخوا (c) (a) او (b) دواړو لخوا (d) نه (a) نه (b)
+sol (c) both (a) and (b) ## Both economic and non-economic factors affect a time series.
 q viii | To which component of the time series, the term recession is attached (a) trend (b) seasonal (c) cyclic (d) random variations || وقتی سلسلے کے کس جزو سے اصطلاح کساد بازاری وابستہ ہے (الف) رجحان (ب) موسمی (ج) دوری (د) بے ترتیب تغیرات || د وخت لړۍ له کومې برخې سره د کساد اصطلاح تړلې ده (a) تمایل (b) موسمي (c) دوري (d) تصادفي تغیرات
+sol (c) cyclic ## Recession is a phase of the business cycle.
 q ix | Least squares method of fitting a trend is (a) most exact (b) least exact (c) full of subjectivity (d) mathematically sound || رجحان فٹ کرنے کا کم از کم مربعات کا طریقہ ہے (الف) سب سے زیادہ درست (ب) سب سے کم درست (ج) موضوعیت سے بھرپور (د) ریاضیاتی طور پر درست || د تمایل د برابرولو د لږ تر لږه مربعاتو طریقه ده (a) تر ټولو دقیقه (b) تر ټولو لږ دقیقه (c) له موضوعیت ډکه (d) ریاضیاتي لحاظ سمه
+sol (d) mathematically sound ## It is objective and rigidly defined, with Σ(y - ŷ)² a minimum.
 q x | Data concerning events over a period of time is called a (a) time series (b) moving average (c) frequency distribution (d) random sample || ایک مدت کے دوران واقعات سے متعلق اعداد و شمار کہلاتے ہیں (الف) وقتی سلسلہ (ب) متحرک اوسط (ج) تعدد تقسیم (د) بے ترتیب نمونہ || د یوې مودې په اوږدو کې د پېښو په اړه معلومات بلل کېږي (a) د وخت لړۍ (b) خوځېدونکی اوسط (c) د فریکونسي ویش (d) تصادفي نمونه
+sol (a) time series ## A time series records a variable over a period of time.
 q 6 | 3 Explain time series and describe it different components. || 3 وقتی سلسلے کی وضاحت کریں اور اس کے مختلف اجزاء بیان کریں۔ || 3 د وخت لړۍ تشریح کړئ او د هغې بېلابېلې برخې بیان کړئ.
+sol A time series is a set of observations of a variable arranged in order of time (e.g. yearly production). Components: (1) secular trend, the long-term movement upward or downward; (2) seasonal variations, regular changes that repeat within a year because of weather, customs or festivals; (3) cyclical variations, wave-like movements about the trend that last more than a year, such as business cycles; (4) irregular (random) variations, unpredictable changes due to strikes, floods, war or fire. ## Definition and components.
 q 6 | 4 Define time series analysis. Write various components of a time series. || 4 وقتی سلسلے کے تجزیے کی تعریف کریں۔ وقتی سلسلے کے مختلف اجزاء لکھیں۔ || 4 د وخت لړۍ تحلیل تعریف کړئ. د وخت لړۍ بېلابېلې برخې ولیکئ.
+sol Time series analysis is the study of a time series by separating it into its components in order to understand its past behaviour, to compare it with other series, and to forecast. The components are the secular trend (T), the seasonal variation (S), the cyclical variation (C) and the irregular variation (I). ## Definition and components.
 q 6 | 5 Describe the various methods of measuring secular trend in a time series. || 5 وقتی سلسلے میں صدیوی رجحان ناپنے کے مختلف طریقے بیان کریں۔ || 5 په وخت لړۍ کې د عمري تمایل د اندازه کولو بېلابېلې طریقې بیان کړئ.
+sol The secular trend is measured by (1) the freehand (graphic) method: plot the data and draw a smooth curve by eye; (2) the method of semi-averages: divide the data into two equal parts, find the average of each part and draw the line through the two averages; (3) the method of moving averages: replace each value by the mean of a fixed number of consecutive values; (4) the method of least squares: fit a straight line (or parabola) so that Σ(y - ŷ)² is a minimum. ## Methods of measuring trend.
 q 6 | 6 Illustrate the following. (i) Cyclical variations (ii) Irregular variation (iii) The method of semi-average (iv) The least square method || 6 درج ذیل کی مثال دے کر وضاحت کریں۔ (i) دوری تغیرات (ii) بے قاعدہ تغیر (iii) نیم اوسط کا طریقہ (iv) کم از کم مربعات کا طریقہ || 6 لاندې په بېلګې سره تشریح کړئ. (i) دوري تغیرات (ii) بې‌قاعده تغیر (iii) د نیمه اوسط طریقه (iv) د لږ تر لږه مربعاتو طریقه
+sol (i) Cyclical variations are wave-like movements lasting more than a year, e.g. the business cycle of prosperity, recession, depression and recovery. (ii) Irregular variations are unpredictable changes due to chance events such as a flood, a strike or a war. (iii) The method of semi-averages divides the data into two equal halves, finds the mean of each, plots the means against the mid-years and joins them by a straight line, which is the trend. (iv) The method of least squares fits ŷ = a + bx so that Σ(y - ŷ)² is the least; with Σx = 0, a = Σy/n and b = Σxy/Σx². ## Illustrations.
 q 6 | 7 Associate the following events with movements of a time series they belong to. || 7 درج ذیل واقعات کو وقتی سلسلے کی ان حرکات سے منسلک کریں جن سے وہ تعلق رکھتے ہیں۔ || 7 لاندې پېښې د وخت لړۍ له هغو حرکتونو سره تړئ چې هغوی پورې اړه لري.
 q i | The strike in a factory. || کارخانے میں ہڑتال۔ || په یوه فابریکه کې اعتصاب.
+sol irregular (random) variation ## A strike is a chance event that cannot be predicted.
 q ii | The weekly statement of the sale of eggs. || انڈوں کی فروخت کا ہفتہ وار بیان۔ || د هګیو د پلور اونیزه بیان.
+sol seasonal variation ## Egg sales follow a regular weekly pattern that repeats; another reading is possible.
 q iii | An era of recession. || کساد بازاری کا دور۔ || د کساد یوه دوره.
+sol cyclical variation ## Recession is a phase of the business cycle.
 q iv | The production of sugar recorded for 1998,…, 2015. || 1998 سے 2015 تک ریکارڈ کی گئی چینی کی پیداوار۔ || د 1998 څخه تر 2015 پورې ثبت شوی د بورې تولید.
+sol secular trend ## A series of yearly figures such as 1998 to 2015 shows the long-term movement; another reading is possible.
 q v | Sale before Eid in a departmental store. || ڈیپارٹمنٹل اسٹور میں عید سے پہلے کی فروخت۔ || په ډیپارټمنټل سټور کې د اختر دمخه پلور.
+sol seasonal variation ## Sales before Eid recur every year at the same time.
 q vi | A continuous increase in demand for smaller automobiles. || چھوٹی گاڑیوں کی طلب میں مسلسل اضافہ۔ || د کوچنیو موټرو په غوښتنه کې دوامدار زیاتوالی.
+sol secular trend ## A continuous increase over many years is a long-term movement.
 q vii | The festival sale. || تہوار کی فروخت۔ || د ختمې پلور.
+sol seasonal variation ## A festival sale recurs at the same time every year.
 q viii | The prosperity in business. || کاروبار میں خوشحالی۔ || په سوداګرۍ کې سوکالي.
+sol cyclical variation ## Prosperity is a phase of the business cycle.
 q ix | The fire in a factory. || کارخانے میں آگ۔ || په یوه فابریکه کې اور.
+sol irregular (random) variation ## A fire is an unpredictable chance event.
 q x | Wheat production is on increase generally since 1947. || گندم کی پیداوار عموماً 1947 سے بڑھ رہی ہے۔ || د غنمو تولید عموماً له 1947 راهیسې زیاتېږي.
+sol secular trend ## A general increase over many years is the long-term trend.
 q 6 | 8 Distinguish between the additive and multiplicative models in time series analysis. || 8 وقتی سلسلے کے تجزیے میں جمعی اور ضربی ماڈلز میں فرق کریں۔ || 8 د وخت لړۍ په تحلیل کې د جمعي او ضربي ماډلونو تر منځ توپیر وکړئ.
+sol Additive model: Y = T + S + C + I, the components are added and are assumed to be independent of each other (all in the units of Y). Multiplicative model: Y = T x S x C x I, the components are multiplied, which assumes that the seasonal, cyclical and irregular movements are proportions of the trend; it is used when the variations grow with the level of the trend, and taking logarithms turns it into an additive model. ## Additive vs multiplicative.
 q 6 | 9 Draw a freehand curve for the following time series. || 9 درج ذیل وقتی سلسلے کے لیے آزاد دستی منحنی بنائیں۔ || 9 د لاندې وخت لړۍ لپاره آزاد لاس منحني رسم کړئ.
+sol Plot the nine points (year on the horizontal axis, price on the vertical axis) on graph paper and join them with a smooth curve drawn by eye through the middle of the fluctuations, ignoring the sharp dip of 1972. The trend falls from about 75 in 1971 to about 62 in 1975 and then rises to about 75 in 1977 (the 3-year moving averages for 1971-1977 are 75.0, 74.7, 65.3, 67.0, 62.3, 66.7, 75.0, which a freehand curve should follow closely). ## Freehand curve.
 table سوال 6.9: سال اور قیمتیں || Q6.9: years and prices || پوښتنه 6.9: کلونه او بیې
 th | Years: | 1970 | 1971 | 1972 | 1973 | 1974 | 1975 | 1976 | 1977 | 1978
 tr | Prices: | 85 | 90 | 50 | 84 | 62 | 55 | 70 | 75 | 80

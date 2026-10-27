@@ -1,23 +1,28 @@
 @printed 142
 @status lesson
 q  | 16, 18. Find its standard deviation and variance. || 16, 18۔ اس کا معیاری انحراف اور تغیر معلوم کریں۔ || 16, 18. د هغه معیاري انحراف او وریانس ومومئ.
+sol n = 6; Σx = 102; mean = 102/6 = 17.00; Σx² = 1762; variance = Σx²/n - mean² = 293.6667 - 289.0000 = 4.6667; standard deviation = sqrt(4.6667) = 2.16. (With the sample divisor n - 1 the variance would be 5.60.) ## Population formula (divisor n), as used in the book.
 q 3 | 14 Consider the following two data sets: (a) Calculate the mean for each of these two data sets, and comment on the relationship between the two means. (b) Calculate the standard deviation for each of these two data sets and comment on the relationship between the two standard deviations. || 14 درج ذیل دو ڈیٹا سیٹس پر غور کریں: (الف) ان دونوں ڈیٹا سیٹس میں سے ہر ایک کا اوسط حساب کریں اور دونوں اوسطوں کے تعلق پر تبصرہ کریں۔ (ب) ان دونوں ڈیٹا سیٹس میں سے ہر ایک کا معیاری انحراف حساب کریں اور دونوں معیاری انحرافات کے تعلق پر تبصرہ کریں۔ || 14 لاندې دوه معلوماتي سیټونه په پام کې ونیسئ: (a) د دې دوو معلوماتي سیټونو له هر یوه اوسط محاسبه کړئ او د دواړو اوسطونو په اړیکه تبصره وکړئ. (b) د دې دوو معلوماتي سیټونو له هر یوه معیاري انحراف محاسبه کړئ او د دواړو معیاري انحرافاتو په اړیکه تبصره وکړئ.
+sol (a) Mean of set i = 79/4 = 19.75; mean of set ii = 67/4 = 16.75. Every value of set ii is 3 less than the corresponding value of set i, so its mean is also 3 less (19.75 - 16.75 = 3). (b) S.D of set i = 9.81; S.D of set ii = 9.81. The two standard deviations are equal, because subtracting a constant from every value shifts the data but does not change their spread. ## Effect of changing origin.
 table سوال 3.14: دو ڈیٹا سیٹس || Q3.14: two data sets || پوښتنه 3.14: دوه معلوماتي سیټونه
 th | Data set i: | 8 | 16 | 20 | 35
 tr | Data set ii: | 5 | 13 | 17 | 32
 endtable
 q 3 | 15 Compute standard deviation, variance and coefficient of standard deviation from the following data: || 15 درج ذیل اعداد و شمار سے معیاری انحراف، تغیر اور معیاری انحراف کا عددی سر حساب کریں: || 15 له لاندې معلوماتو څخه معیاري انحراف، وریانس او د معیاري انحراف ضریب محاسبه کړئ:
+sol n = 245; Σfx = 110425; Σfx² = 50259375; mean = 450.71. Variance = Σfx²/n - mean² = 1996.94; standard deviation = 44.69. Coefficient of S.D = S.D/mean = 44.69/450.71 = 0.0991. ## Frequency distribution.
 table سوال 3.15: x اور f || Q3.15: x and f || پوښتنه 3.15: x او f
 th | x: | 525 | 500 | 475 | 450 | 425 | 400 | 375
 tr | f: | 24 | 35 | 46 | 37 | 47 | 34 | 22
 endtable
-q 3 | 16 The following table gives the frequency distribution of the numbers of computers sold during the past 30 weeks at an electronics store: || 16 درج ذیل جدول ایک الیکٹرانکس اسٹور میں پچھلے 30 ہفتوں کے دوران فروخت ہونے والے کمپیوٹروں کی تعداد کی تعدد تقسیم دیتا ہے: || 16 لاندې جدول په یوه بریښنایي هټۍ کې د تېرو 30 اونیو په اوږدو کې د پلورل شویو کمپیوټرونو د شمېر فریکونسي ویش ورکوي:
+## 16 The following table gives the frequency distribution of the numbers of computers sold during the past 30 weeks at an electronics store: || 16 درج ذیل جدول ایک الیکٹرانکس اسٹور میں پچھلے 30 ہفتوں کے دوران فروخت ہونے والے کمپیوٹروں کی تعداد کی تعدد تقسیم دیتا ہے: || 16 لاندې جدول په یوه بریښنایي هټۍ کې د تېرو 30 اونیو په اوږدو کې د پلورل شویو کمپیوټرونو د شمېر فریکونسي ویش ورکوي:
 table سوال 3.16: فروخت شدہ کمپیوٹر || Q3.16: computers sold || پوښتنه 3.16: پلورل شوي کمپیوټرونه
 th | Classes: | 19 – 20 | 17 – 18 | 15 – 16 | 13 – 14 | 11 – 12 | 9 – 10 | 7 – 8 | 5 – 6 | 3 – 4 | 1 – 2
 tr | Frequency: | 1 | 2 | 2 | 5 | 9 | 4 | 3 | 2 | 1 | 1
 endtable
 q  | Calculate the standard deviation and variance. || معیاری انحراف اور تغیر حساب کریں۔ || معیاري انحراف او وریانس محاسبه کړئ.
+sol Midpoints x = 19.5, 17.5, ..., 1.5; n = 30; Σfx = 333.0; Σfx² = 4179.50; mean = 11.10. Variance = Σfx²/n - mean² = 16.11; standard deviation = 4.01. ## Grouped data: use class midpoints.
 q 3 | 17 (a) Explain in detail the coefficient of variation. What for we use it? (b) Consider the following data || 17 (الف) تغیر کے عددی سر کی تفصیل سے وضاحت کریں۔ ہم اسے کس لیے استعمال کرتے ہیں؟ (ب) درج ذیل اعداد و شمار پر غور کریں || 17 (a) د تغیر ضریب په تفصیل تشریح کړئ. موږ یې د څه لپاره کاروو؟ (b) لاندې معلومات په پام کې ونیسئ
+sol (a) The coefficient of variation is the standard deviation expressed as a percentage of the mean: C.V = (S.D/mean) x 100. It has no units, so it is used to compare the variability of two or more series measured in different units or with different means; the series with the smaller C.V is more consistent (uniform, stable). (b) The data are used in the next question, where the C.V of each factory is computed. ## Definition and use of the C.V.
 table سوال 3.17: اجرتیں اور کارکنوں کی تعداد || Q3.17: wages and number of workers || پوښتنه 3.17: مزدورۍ او د کارکوونکو شمېر
 th | Wages in Rs. | No. of workers – Factory A | No. of workers – Factory B
 tr | 2001 – 3000 | 3 | 2
@@ -29,4 +34,5 @@ tr | 7001 – 8000 | 51 | 7
 tr | 8001 – 9000 | 2 | 2
 endtable
 q  | Compare the variation in the distribution of wages of the workers in two factories by computing the C.V in each case and comment on these results. || ہر صورت میں C.V حساب کر کے دو کارخانوں میں کارکنوں کی اجرتوں کی تقسیم میں تغیر کا موازنہ کریں اور ان نتائج پر تبصرہ کریں۔ || په هره حالت کې C.V محاسبه کولو سره په دوو کارخانو کې د کارکوونکو د مزدورۍ په ویش کې تغیر پرتله کړئ او پر دې پایلو تبصره وکړئ.
-q 3 | 18 Two students x and y appeared in first year examination and obtained the following scores: || 18 دو طلبہ x اور y پہلے سال کے امتحان میں شریک ہوئے اور درج ذیل اسکور حاصل کیے: || 18 دوه زده کوونکي x او y د لومړي کال په ازموینه کې ګډون وکړ او لاندې نمرې یې ترلاسه کړې:
+sol Using class midpoints (2500.5, 3500.5, ..., 8500.5): Factory A: n = 542, mean = Rs 5472.82, S.D = Rs 1187.72, C.V = 21.70%. Factory B: n = 100, mean = Rs 5440.50, S.D = Rs 1294.76, C.V = 23.80%. The C.V is smaller for Factory A (21.70% against 23.80%). Factory A has the smaller C.V, so its wages are more uniform (more consistent); Factory B has the greater relative variation in wages. ## C.V compares the relative variation.
+## 18 Two students x and y appeared in first year examination and obtained the following scores: || 18 دو طلبہ x اور y پہلے سال کے امتحان میں شریک ہوئے اور درج ذیل اسکور حاصل کیے: || 18 دوه زده کوونکي x او y د لومړي کال په ازموینه کې ګډون وکړ او لاندې نمرې یې ترلاسه کړې:
