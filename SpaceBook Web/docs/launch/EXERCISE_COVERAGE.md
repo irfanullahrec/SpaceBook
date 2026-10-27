@@ -10,9 +10,9 @@ Answer columns: **own** = a record of its own (worked solution or stated answer)
 
 | Books with questions | Chapters with an exercise | Questions (and parts) | Own answer | Via question | Printed key | Written | Whole line only | **No answer** | MCQs | MCQ answer matches no option | Answer clashes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 118 | 1532 | 45480 | 42729 | 82 | 2118 | 374 | 0 | **177** | 6102 | 84 | 9 |
+| 118 | 1532 | 45480 | 42899 | 82 | 2118 | 374 | 0 | **7** | 6102 | 84 | 9 |
 
-Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **21**.
+Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **5**.
 
 ## Subjects without questions held as data (need their own check)
 
@@ -65,7 +65,7 @@ These subjects have no question records in the registries this report reads (the
 | 4 | Urdu (`cls4:urdu`) | 28 | 28 | 571 | 571 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 5 | English (`cls5:eng`) | 18 | 18 | 764 | 764 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 5 | Islamyat (`cls5:isl`) | 7 | 7 | 375 | 375 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 5 | Mathematics (`cls5:math`) | 9 | 9 | 1004 | 954 | 0 | 24 | 0 | 0 | **26** | 50 | 0 | 0 |
+| 5 | Mathematics (`cls5:math`) | 9 | 9 | 1004 | 980 | 0 | 24 | 0 | 0 | 0 | 50 | 0 | 0 |
 | 5 | Pashto (`cls5:pashto`) | 28 | 27 | 590 | 590 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 5 | General Science (`cls5:sci`) | 10 | 10 | 269 | 269 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 5 | Social Studies (EM) (`cls5:sst`) | 6 | 6 | 237 | 237 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -79,7 +79,7 @@ These subjects have no question records in the registries this report reads (the
 | 6 | History (`cls6:hist`) | 5 | 5 | 148 | 148 | 0 | 0 | 0 | 0 | 0 | 26 | 0 | 0 |
 | 6 | Health & Physical Education (`cls6:hpe`) | 9 | 9 | 187 | 187 | 0 | 0 | 0 | 0 | 0 | 45 | 0 | 0 |
 | 6 | Islamyat (`cls6:isl`) | 7 | 7 | 431 | 431 | 0 | 0 | 0 | 0 | 0 | 142 | 0 | 0 |
-| 6 | Mathematics (`cls6:math`) | 11 | 11 | 1453 | 1408 | 0 | 14 | 0 | 0 | **31** | 75 | 0 | 2 |
+| 6 | Mathematics (`cls6:math`) | 11 | 11 | 1453 | 1439 | 0 | 14 | 0 | 0 | 0 | 75 | 0 | 2 |
 | 6 | Pashto (`cls6:pashto`) | 32 | 31 | 320 | 320 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 6 | Mutalia-e-Quran-e-Hakeem (`cls6:quran`) | 20 | 19 | 310 | 310 | 0 | 0 | 0 | 0 | 0 | 95 | 1 | 0 |
 | 6 | General Science (`cls6:sci`) | 12 | 12 | 370 | 370 | 0 | 0 | 0 | 0 | 0 | 111 | 1 | 0 |
@@ -92,7 +92,7 @@ These subjects have no question records in the registries this report reads (the
 | 7 | History (`cls7:hist`) | 6 | 6 | 118 | 118 | 0 | 0 | 0 | 0 | 0 | 50 | 0 | 0 |
 | 7 | Health & Physical Education (`cls7:hpe`) | 12 | 12 | 160 | 160 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 7 | Islamyat (`cls7:isl`) | 7 | 6 | 420 | 420 | 0 | 0 | 0 | 0 | 0 | 165 | 1 | 0 |
-| 7 | Mathematics (`cls7:math`) | 13 | 13 | 1580 | 1407 | 0 | 71 | 0 | 0 | **102** | 91 | 0 | 2 |
+| 7 | Mathematics (`cls7:math`) | 13 | 13 | 1580 | 1509 | 0 | 71 | 0 | 0 | 0 | 91 | 0 | 2 |
 | 7 | Mutalia-e-Quran-e-Hakeem (`cls7:quran`) | 22 | 22 | 376 | 376 | 0 | 0 | 0 | 0 | 0 | 122 | 0 | 0 |
 | 7 | General Science (`cls7:sci`) | 12 | 12 | 407 | 407 | 0 | 0 | 0 | 0 | 0 | 119 | 0 | 0 |
 | 7 | Urdu (`cls7:urdu`) | 26 | 26 | 380 | 380 | 0 | 0 | 0 | 0 | 0 | 24 | 6 | 0 |
@@ -104,7 +104,7 @@ These subjects have no question records in the registries this report reads (the
 | 8 | History (`cls8:hist`) | 6 | 6 | 124 | 124 | 0 | 0 | 0 | 0 | 0 | 54 | 0 | 0 |
 | 8 | Health & Physical Education (`cls8:hpe`) | 9 | 9 | 127 | 127 | 0 | 0 | 0 | 0 | 0 | 53 | 0 | 0 |
 | 8 | Islamyat (`cls8:isl`) | 26 | 25 | 321 | 321 | 0 | 0 | 0 | 0 | 0 | 126 | 2 | 0 |
-| 8 | Mathematics (`cls8:math`) | 11 | 11 | 1396 | 1359 | 0 | 25 | 0 | 0 | **12** | 86 | 0 | 0 |
+| 8 | Mathematics (`cls8:math`) | 11 | 11 | 1396 | 1370 | 0 | 25 | 0 | 0 | **1** | 86 | 0 | 0 |
 | 8 | Pashto (`cls8:pashto`) | 41 | 38 | 394 | 394 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 8 | Mutalia-e-Quran-e-Hakeem (`cls8:quran`) | 25 | 25 | 400 | 400 | 0 | 0 | 0 | 0 | 0 | 125 | 0 | 0 |
 | 8 | General Science (`cls8:sci`) | 12 | 12 | 295 | 295 | 0 | 0 | 0 | 0 | 0 | 127 | 1 | 0 |
@@ -160,7 +160,7 @@ These subjects have no question records in the registries this report reads (the
 
 ## Chapters that need attention
 
-93 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
+78 chapters. (The same rows, with every chapter, are in `exercise_coverage.csv`.)
 
 | Class | Book | Chapter | Printed pages | Exercise sections | Questions | No answer | Whole line | Open MCQs | Clashes | State |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -172,16 +172,13 @@ These subjects have no question records in the registries this report reads (the
 | 2 | `cls2:urdu` | 19. A Morning Walk (poem) | 120-125 | 6 | 32 | 0 | 0 | 1 | 0 | check-answers |
 | 2 | `cls2:urdu` | R4. Review 4 | 143-144 | 1 | 16 | 0 | 0 | 1 | 0 | check-answers |
 | 4 | `cls4:sstum` | 3. ریاست اور حکومت | 34-43 | 2 | 30 | 0 | 0 | 1 | 0 | check-answers |
-| 5 | `cls5:math` | 7. Geometry | 124-148 | 1 | 142 | 26 | 0 | 0 | 0 | unanswered |
 | 5 | `cls5:urdu` | 7. The Wind Blew (poem) | 44-48 | 1 | 19 | 0 | 0 | 1 | 0 | check-answers |
 | 5 | `cls5:urdu` | 8. You Are My Identity | 53-57 | 1 | 24 | 0 | 0 | 1 | 0 | check-answers |
 | 5 | `cls5:urdu` | 19. Good Conduct | 132-137 | 2 | 36 | 0 | 0 | 2 | 0 | check-answers |
 | 6 | `cls6:arabic` | 13. مَكَّةُ الْمُكَرَّمَةُ | 41-43 | 1 | 19 | 0 | 0 | 1 | 0 | check-answers |
 | 6 | `cls6:comp` | 3. Algorithmic Thinking and Problem Solving | 61-62 | 1 | 14 | 0 | 0 | 1 | 0 | check-answers |
 | 6 | `cls6:eng` | 6. Professions and Dignity of Labour | 106-125 | 11 | 85 | 0 | 0 | 1 | 0 | check-answers |
-| 6 | `cls6:math` | 1. Multiples and Factors | 4-23 | 1 | 188 | 8 | 0 | 0 | 1 | unanswered |
-| 6 | `cls6:math` | 2. Integers | 27-36 | 1 | 112 | 4 | 0 | 0 | 0 | unanswered |
-| 6 | `cls6:math` | 5. Sets | 95-104 | 1 | 156 | 19 | 0 | 0 | 0 | unanswered |
+| 6 | `cls6:math` | 1. Multiples and Factors | 4-23 | 1 | 188 | 0 | 0 | 0 | 1 | check-answers |
 | 6 | `cls6:math` | 7. Linear Expressions and Equations | 125-137 | 1 | 102 | 0 | 0 | 0 | 1 | check-answers |
 | 6 | `cls6:quran` | 17. سُوْرَةُ النَّصْرِ | 107-108 | 1 | 16 | 0 | 0 | 1 | 0 | check-answers |
 | 6 | `cls6:sci` | 11. Technology in Everyday Life | 136-150 | 1 | 38 | 0 | 0 | 1 | 0 | check-answers |
@@ -190,16 +187,7 @@ These subjects have no question records in the registries this report reads (the
 | 6 | `cls6:urdu` | 19. میرا دیس (نظم) | 131-135 | 1 | 39 | 0 | 0 | 1 | 0 | check-answers |
 | 6 | `cls6:urdu` | 21. علم و ادب کی دولت / مولا مجھے عطا کر (نظم) | 148-156 | 2 | 84 | 0 | 0 | 1 | 0 | check-answers |
 | 7 | `cls7:isl` | 6. Sources of Guidance and Famous Muslims | 111-138 | 7 | 91 | 0 | 0 | 1 | 0 | check-answers |
-| 7 | `cls7:math` | 1. Rational Numbers | 3-23 | 0 | 175 | 3 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 2. Laws of Operations | 26-40 | 0 | 148 | 2 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 3. Square and Square root | 46-56 | 0 | 166 | 7 | 0 | 0 | 0 | unanswered |
 | 7 | `cls7:math` | 4. Ratio, Rate and Proportion | 60-75 | 0 | 68 | 0 | 0 | 0 | 2 | check-answers |
-| 7 | `cls7:math` | 6. Sets | 95-102 | 0 | 124 | 1 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 8. Linear Equations and Coordinate System | 136-159 | 0 | 159 | 17 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 10. Distance, Time and Speed | 185-197 | 0 | 95 | 2 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 11. Quadrilaterals, Polygons and Circles | 204-219 | 0 | 88 | 25 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 12. Angles and Transformations | 225-239 | 0 | 68 | 23 | 0 | 0 | 0 | unanswered |
-| 7 | `cls7:math` | 13. Data Management and Probability | 243-269 | 0 | 102 | 22 | 0 | 0 | 0 | unanswered |
 | 7 | `cls7:urdu` | 14. ہمارے وطن کا نشان (نظم) | 86-88 | 1 | 10 | 0 | 0 | 1 | 0 | check-answers |
 | 7 | `cls7:urdu` | 15. دیہی اور شہری زندگی | 92-96 | 1 | 22 | 0 | 0 | 1 | 0 | check-answers |
 | 7 | `cls7:urdu` | 17. پرانی موٹر | 105-107 | 1 | 10 | 0 | 0 | 2 | 0 | check-answers |
@@ -211,9 +199,6 @@ These subjects have no question records in the registries this report reads (the
 | 8 | `cls8:isl` | 19. اُمَّہاتُ المؤمنین | 97-98 | 0 | 13 | 0 | 0 | 1 | 0 | check-answers |
 | 8 | `cls8:isl` | 24. فاتحین | 123-124 | 1 | 13 | 0 | 0 | 1 | 0 | check-answers |
 | 8 | `cls8:math` | 1. Approximation and Estimation | 4-7 | 0 | 53 | 1 | 0 | 0 | 0 | unanswered |
-| 8 | `cls8:math` | 5. Sets | 89-103 | 0 | 127 | 6 | 0 | 0 | 0 | unanswered |
-| 8 | `cls8:math` | 7. Exponents and Laws of Exponents | 150-161 | 0 | 150 | 3 | 0 | 0 | 0 | unanswered |
-| 8 | `cls8:math` | 11. Data Management and Probability | 278-307 | 0 | 104 | 2 | 0 | 0 | 0 | unanswered |
 | 8 | `cls8:pashto` | 15. ماشومان | 74-75 | 0 | 6 | 0 | 0 | 1 | 0 | check-answers |
 | 8 | `cls8:sci` | 5. The Periodic Table | 70-72 | 1 | 32 | 0 | 0 | 1 | 0 | check-answers |
 | 9 | `cls9:chem` | 1. Fundamentals of Chemistry | 37-39 | 1 | 25 | 0 | 0 | 2 | 0 | check-answers |

@@ -40,7 +40,7 @@ const WHY = {
   'cls5:math': 'drawing and measuring tasks (construct a quadrilateral, draw an angle) and fragments of a table whose stem is a figure',
   'cls6:math': 'sets to be written in roster form, descriptions to be matched to a figure, and fragments of a table',
   'cls7:math': 'drawing, graph, symmetry and plotting tasks that depend on a printed figure; they need a drawn model answer, not text',
-  'cls8:math': 'Venn-diagram counts and index equations whose figure/data are in the scan only',
+  'cls8:math': 'Review Exercise 1 Q1 b): the printed key gives two right options (iii and iv); the coverage tool cannot score a question with two right options, the key and a solution state both',
   'cls10:urdu': 'the printed pages that hold the passage are missing from the scans (cannot be answered without the text)'
 };
 for (const b of rows.filter(b => b.none)) md.push(`| ${b.name} (${b.book}) | ${b.none} | ${WHY[b.book] || ''} |`);
