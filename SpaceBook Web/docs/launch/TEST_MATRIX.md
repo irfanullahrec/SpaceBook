@@ -60,7 +60,7 @@ The suites that load `index.html` (the whole app in one page) time out on this P
 |---|---|---|
 | Gradle unit tests (`:app:testDebugUnitTest`) | untested | pass: 219 tests, 0 failures (the first run did not compile: two defects found and fixed, `PARITY_REPORT.md`) |
 | Debug build (`:app:assembleDebug`) | untested | pass: 165 MB with the 422 MB of packed books, rebuilt from the final bundle (219 unit tests re-run: 0 failures) (copy in `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, not installed) |
-| On the owner's phone (adb): launch, reader, back button, offline, notifications, report dialog and picture chooser | untested | **not done: the phone was connected (`adb devices` listed it) but the owner was using it, so the screen was not taken**. Owner action: connect the phone and run the list in `LAUNCH_DECISION.md` |
+| On the owner's phone (adb): launch, reader, back button, offline, notifications, report dialog and picture chooser | untested | **partly done 2026-10-28, on the owner's request** (Realme RMX5303, Web 797840ec / App b34fcd0 APK, installed over the earlier version with `adb install -r`): the app starts on Home, the Library lists Class 5 and its books, Mathematics 5 opens, chapter 7 (Geometry) opens in the reader with its 25 pages, the Exercises tab shows its Ans buttons, and Ans on Exercise 1 a) shows "Right angle (90 degrees)" (the Class 5 answer); no crash in the log. **Not tried:** back button, offline start in aeroplane mode, notifications, the report dialog and picture chooser, downloads, a restart after force-stop. The phone was at 1 % battery on USB power |
 | Emulator | blocked: no emulator or system image installed (E-03) | blocked (same) |
 
 ## Honest limits

@@ -65,7 +65,7 @@ Status words: **done** (checked, evidence named) · **partial** (what is covered
 - [x] `sync_app.js --check`, `pack_books.js --check` clean (264 and 404 files); the App carries the same exercises and answers (same books).
 - [x] `data_parity.js` 15, `tools/parity/check.js` 17, App unit tests 219, debug builds (165 MB with books, rebuilt from the final bundle) (`PARITY_REPORT.md`).
 - [x] Same exercises and answers in the app: the bundle is the website's (EX-5 by construction, `--check`).
-- [ ] Native checks on the phone (adb): **not done: the phone was connected but in use by the owner**. Smallest unblock: when the phone is free, install `D:\SpaceBook\Phone\SpaceBook-launch-readiness-debug.apk`, run the list in `LAUNCH_DECISION.md`.
+- [ ] Native checks on the phone (adb): **partly done 2026-10-28** (installed, started, Library, Class 5 Maths chapter 7, one Ans; no crash). Not done: back button, offline start, report dialog and picture chooser, notifications, downloads. Smallest unblock: when the phone is free, run the rest of the list in `LAUNCH_DECISION.md` (the APK is already installed).
 
 ## Phase 10 - Launch decision
 - [x] Production-like builds and checks for both products (above); pushed on the owner's order on 2026-10-27 (Web a749fb4e, App dfe6a0b), deploy result not seen by me (`LAUNCH_DECISION.md`).
