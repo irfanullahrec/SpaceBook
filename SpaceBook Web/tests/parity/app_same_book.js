@@ -58,6 +58,9 @@ const call = (cls, subj, i) => catalog.classes.find(c => c.id === cls).subjects.
   const page = await actx.newPage();
   page.on('pageerror', e => errors.push(e.message.slice(0, 120)));
   check('the app\'s bridge is running on the page', await load(page, true));
+  // the app answers every file from the phone itself (SiteStore): a service worker would bypass it and show the website's older files (found on the phone, X-04)
+  const swTry = await page.evaluate(async () => { try { await navigator.serviceWorker.register('sw.js', { scope: './' }); return 'registered'; } catch (e) { return 'refused'; } });
+  check('the app\'s bridge refuses the website\'s service worker (it would bypass the phone\'s own copy of the site)', swTry === 'refused', swTry);
   await page.evaluate(([c, s, o]) => window.SBApp.open(c, s, o, 0, ''), ['cls11', 'cls11-eng', call('cls11', 'cls11-eng', 1)]); await sleep(5000);
 
   const tabs = await page.evaluate(() => window.SBApp.tabs());
