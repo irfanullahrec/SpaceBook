@@ -43,6 +43,7 @@ Connect the phone, `adb install -r "D:\SpaceBook\Phone\SpaceBook-launch-readines
 
 | ID | Limitation |
 |---|---|
+| L-01 | **1-month free-trial lock (added 2026-10-28 on the owner's request, `docs/TRIAL_LOCK.md`)**: 30 days after a person's first start (website and app) only a lock screen is left, asking them to contact the developer on WhatsApp 0343 0155606 or to type an unlock code: your **default code** (opens 30 days from typing, only its hash is in the repositories, it can be guessed offline from the public hash, so keep it long and private) or a signed code for one device made with `node tools/license/make_code.js <device ID>`. It runs on the person's own device, so clearing site data or reinstalling gives a new month and an edited page can remove it; a lock that cannot be bypassed needs the server. Once this version is live, **every current visitor's 30 days start at their next visit**; the private key (`~/SpaceBook-License/private_key.pem`, backup `D:\SpaceBook-License`) must be kept and backed up or no code can be made |
 | C-11, C-05 | 7 questions without an answer: Class 10 Urdu 6 (the source pages are missing) and a Class 8 MCQ with two right options |
 | M-01 | fixed 2026-10-28: on a computer the Ans buttons of Class 5, 7, 8 and 11 Maths read Class 6's answers (the open-book view used the Class 6 reader for every class); `tests/launch/maths_answers_browser.js` now presses an Ans in each Maths class |
 | C-04 | 84 MCQs whose answer matches no option, 9 clashes between a solution and a printed key (listed) |

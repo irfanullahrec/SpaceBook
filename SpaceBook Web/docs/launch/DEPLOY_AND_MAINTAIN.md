@@ -2,6 +2,14 @@
 
 For the owner. Nothing here has been done for you: **nothing was pushed or deployed** by the launch-readiness work. The work is on the branch `launch/readiness` (Web repository, worktree `D:\SpaceBook_launch_wt`) and the same branch name in the App repository.
 
+## 0. What changed on 2026-10-28 (read this first)
+
+* **The 1-month free-trial lock** (website and app, `docs/TRIAL_LOCK.md`). From the day this version is live, **every visitor's 30 days start at their next visit** (the app: its first start). After 30 days only a lock screen is left: contact the developer on WhatsApp 0343 0155606, or an unlock code (your default code opens it for 30 days; a signed code, `node tools/license/make_code.js <device ID>`, for one device). The private key is `~/SpaceBook-License/private_key.pem` (backup `D:\SpaceBook-License`): **keep it and back it up**, without it no signed code can be made. To release a build without the lock: `trialDays: 0` in `js/sb_license.js`, `-Pspacebook.trialDays=0` for the app.
+* **The phone and the app show the same book as the website** (printed pages one at a time, the same Ans buttons, the same tabs): `js/sb_book_spread.js` (`bk-single`), the app's `reader_bridge.js` / `reader_mobile.css`. Maths keeps its own readers.
+* **Answers:** the saved Class 11 questions take their answer from the textbook page (3,242 had none), Class 5's page books answer (their answers are in `CLS5_SOLUTIONS`), Maths Ans reads the right class on a wide screen.
+* **New automatic checks** (in `.github/workflows/deploy.yml`): `tests/license/*`, `tests/parity/app_same_book.js`, `tools/launch/study_pending.js --check`.
+* **Test only the build you are handed, or the live site.** `D:\SpaceBook\SpaceBook Web` is an old copy (see X-03 in `FINDINGS_REGISTER.md`): after a push, `git pull` there.
+
 ## 1. Before you deploy
 
 1. **Decide what goes**. `origin/main` is what is live. `launch/readiness` is `origin/main` plus the launch work. Other sessions' unfinished work (Class 9 Maths, Class 11 Physics pages, the `feature/game-howto` and `feature/social` branches) is **not** in it. `feature/social` has its own migration 009: the one that merges second must be renumbered (`tools/parity/check.js` fails when two migrations share a number).

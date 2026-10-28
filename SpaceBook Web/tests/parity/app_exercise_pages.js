@@ -25,7 +25,7 @@ const BOOKS = [
   ['cls6', 'cls6-math', 2, 'Exercises', 'ex-3.7', 9],        // Exercise 3.7 and every exercise but the first were empty
   ['cls5', 'cls5-math', 2, 'Exercises', 'Review Exercise 3', 3],
   ['cls8', 'cls8-math', 2, 'Exercises', 'ex-3.5', 7],
-  ['cls11', 'cls11-stat', 2, 'Solved Exercises', 'class12-stat-exercise-0', 10],   // the question bank's cards are pages 2.. of the tab: their box was hidden with the bank's heading
+  // (Class 11 Statistics is a printed-page book now: it shows the website's own pages in the app, see tests/parity/app_book_pages.js)
 ];
 
 (async () => {
@@ -73,14 +73,6 @@ const BOOKS = [
     }
     check(`${classId}: no exercise page is empty (${st.pages} pages turned)`, empty.length === 0, empty.slice(0, 4));
     check(`${classId}: the exercise that was reported empty (${named}) is a page and shows its questions`, sawNamed && !empty.some(e => e.r && e.r.id.endsWith(named)));
-    if (classId === 'cls11') {                                      // a Statistics question is a framed page, not bare text at the screen edge under an empty box
-      await page.evaluate(() => window.SBApp.go(1)); await sleep(500);
-      const look = await page.evaluate(() => {
-        const u = document.querySelector('.sbapp-page-on'), c = getComputedStyle(u), m = document.querySelector('section.sb-moved');
-        return { padL: parseFloat(c.paddingLeft), border: parseFloat(c.borderLeftWidth), left: Math.round(u.getBoundingClientRect().left), emptyBox: m ? Math.round(m.getBoundingClientRect().height) : 0 };
-      });
-      check(`${classId}: a Statistics question card has padding and a frame, and no empty box above it`, look.padL >= 8 && look.border >= 2 && look.left >= 4 && look.emptyBox <= 2, look);
-    }
     await page.close();
   }
   // A long reading session: the WebView is kept from chapter to chapter. The bridge opens a collapsed page by clicking its heading; that click

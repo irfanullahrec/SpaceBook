@@ -118,6 +118,17 @@ jobs:
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js
+      - name: free-trial lock (unlock codes, the 30-day clock, the lock screen in Chrome; docs/TRIAL_LOCK.md)
+        working-directory: SpaceBook Web
+        run: |
+          node tests/license/unit.js
+          node --max-old-space-size=6144 tests/license/browser.js
+      - name: the phone and the app show the same book as the website (printed pages, Ans in place, the same tabs; skipped when the app folder is absent)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tests/parity/app_same_book.js
+      - name: no saved question card (Board SLO bank, Solved Exercises, Classes 9-12) says its answer still needs to be completed
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tools/launch/study_pending.js --check
       - name: Web and App parity (feature matrix, endpoints, sync events, item kinds, migrations, data, where a page is, reminders, plan answer)
         working-directory: SpaceBook Web
         run: |

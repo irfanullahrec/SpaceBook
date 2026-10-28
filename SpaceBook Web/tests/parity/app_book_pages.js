@@ -74,10 +74,11 @@ const only = opt('--only');
     const st = await page.evaluate(() => window.SBApp.state());
     const les = await page.evaluate(() => {
       const cards = [...document.querySelectorAll('#subjTabContent .sb-pgcard, #subjTabContent .math-accordion-card')];
-      return { cards: cards.length, labels: cards.map(c => (c.querySelector('.math-badge') || {}).textContent || '').filter(Boolean).slice(0, 5), text: (document.getElementById('subjTabContent') || {}).innerText.length };
+      return { bk: document.querySelectorAll('#subjTabContent .bk-page').length, cards: cards.length, labels: cards.map(c => (c.querySelector('.math-badge') || {}).textContent || '').filter(Boolean).slice(0, 5), text: (document.getElementById('subjTabContent') || {}).innerText.length };
     });
-    check(`${tag}: the Lessons tab turns through printed pages`, st.pages >= 2 && les.cards >= 2, { st, les });
-    const hasPage = await page.evaluate(n => { const all = [...document.querySelectorAll('#subjTabContent .sb-pgcard, #subjTabContent .math-accordion-card')]; return all.some(c => new RegExp('(^|\\D)' + n + '(\\D|$)').test((c.querySelector('.math-badge') || c).textContent.slice(0, 40))); }, pageNo);
+    // the Lessons tab is the website's own printed pages (.bk-page), one at a time; an older build drew one card per page (.sb-pgcard)
+    check(`${tag}: the Lessons tab turns through printed pages`, st.pages >= 2 && (les.bk >= 2 || les.cards >= 2), { st, les });
+    const hasPage = await page.evaluate(n => { const nos = [...document.querySelectorAll('#subjTabContent .bk-no')].map(x => x.textContent.trim()); if (nos.length) return nos.includes(String(n)); const all = [...document.querySelectorAll('#subjTabContent .sb-pgcard, #subjTabContent .math-accordion-card')]; return all.some(c => new RegExp('(^|\\D)' + n + '(\\D|$)').test((c.querySelector('.math-badge') || c).textContent.slice(0, 40))); }, pageNo);
     if (!subjectId.includes('islhist') && chIdx > 0) check(`${tag}: page ${pageNo} is a card of its own`, hasPage);
     if (SHOTS) { fs.mkdirSync(SHOTS, { recursive: true }); await page.screenshot({ path: path.join(SHOTS, subjectId + '_lesson.png') }); }
     // the exercise

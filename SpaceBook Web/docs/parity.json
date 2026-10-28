@@ -1,6 +1,6 @@
 {
  "schema": "spacebook.parity/1",
- "updated": "2026-10-26",
+ "updated": "2026-10-28",
  "statuses": [
   "same",
   "platform-specific",
@@ -77,7 +77,16 @@
    "web": "-",
    "app": "expiry/ExpiryGate (offline, salted hash in the app)",
    "data": "device only",
-   "counterpart": "A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no expiry. Payment limits for both are the entitlements row."
+   "counterpart": "A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no build date. Each person's own 1-month free trial, on both platforms, is the acct.trial row. Payment limits for both are the entitlements row."
+  },
+  {
+   "id": "acct.trial",
+   "area": "Accounts and plans",
+   "name": "1-month free trial lock: after 30 days only a lock screen that asks to contact the developer on WhatsApp (0343 0155606) or to type an unlock code",
+   "status": "same",
+   "web": "js/sb_license.js + css/sb_license.css (the page stays out of the app's WebView: window.SBHost)",
+   "app": "expiry/TrialGate.kt, LicenseCode.kt, AccessGate.kt, ui/lock/LockScreen.kt",
+   "data": "device only: the first start, the latest time seen, a random device ID and the accepted code stay on the device; nothing is sent to the server. Codes are signed with a private key kept on the developer's PC (tools/license/make_code.js) and checked with the public key on both platforms (docs/TRIAL_LOCK.md)"
   },
   {
    "id": "read.books",
@@ -96,7 +105,7 @@
    "web": "scroll, js/sb_book_spread.js",
    "app": "one page at a time, footer arrows, page list",
    "data": "none",
-   "counterpart": "A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages)."
+   "counterpart": "A phone shows one printed page at a time; the website shows the same pages as a scrolling spread. Both use the SAME pages of the SAME book (js/sb_book_spread.js draws a printed page once, as a facing pair on a wide screen and as one page (bk-single) on a narrow screen and in the app; tests/parity/app_same_book.js checks the numbers) and the same units (tests/parity/locator.js checks that the app's bridge and the website's locator find the same pages)."
   },
   {
    "id": "read.pagebooks",
@@ -132,7 +141,7 @@
    "name": "The chapter workspace on a wide screen: the full-screen look also inside the page (thin chapter rail with an expand button, tight header and tabs, the open book with Board SLOs / Exercise on every lesson page); full screen covers the whole page so word meaning cards and dialogs stay visible",
    "status": "platform-specific",
    "web": "js/sb_book_spread.js (compact look, open book), js/sb_global_ui.js (rail button, full screen over the whole page), js/sb_exercise_tabs.js; tests/reader/workspace.js",
-   "app": "not used: html.sbapp keeps the app's one-page reader (read.fullbleed, read.pageview)",
+   "app": "not used as a layout: html.sbapp shows the same printed pages one at a time (bk-single, read.fullbleed, read.pageview)",
    "data": "the rail's open / closed choice is device-local (localStorage sbRailOpen)",
    "counterpart": "Look and layout only, website only (the owner asked for the website view to change, 2026-10-24). Same book, tabs, sentence click and word cards on both platforms: the app's own sentence sheet and word sheet do those."
   },

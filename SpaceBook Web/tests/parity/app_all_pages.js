@@ -19,6 +19,7 @@ const ASSETS = path.join(APP, 'app', 'src', 'main', 'assets') + path.sep;
 if (!fs.existsSync(ASSETS + 'reader_bridge.js')) { console.log('SKIP  the app folder is not here (' + ASSETS + ')'); process.exit(0); }
 const classes = (opt('--classes') || '1,2,3,4,5,6,7,8,9,10,11,12').split(',').map(x => 'cls' + x.trim());
 const only = opt('--only');
+const every = +(opt('--every') || 1);                // --every N: the second chapter, then every Nth, and the last one of each subject (a faster pass)
 const bundled = opt('--site') === 'bundled';
 const withEx = args.includes('--exercises');
 const out = opt('--out');
@@ -99,6 +100,7 @@ const catalog = JSON.parse(fs.readFileSync(ASSETS + 'app_catalog.json', 'utf8'))
       let pg = await newPage();
       if (!pg) { console.log(JSON.stringify({ cls: cl.id, subject: s.id, error: 'bridge did not start' })); continue; }
       for (let ci = 0; ci < s.chapters.length; ci++) {
+        if (every > 1 && ci % every !== 1 % every && ci !== s.chapters.length - 1) continue;
         const ch = s.chapters[ci];
         const rec = { cls: cl.id, subject: s.id, chapter: ci, title: String(ch.t || '').slice(0, 40) };
         try {
