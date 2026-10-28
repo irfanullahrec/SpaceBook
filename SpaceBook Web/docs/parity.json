@@ -506,9 +506,9 @@
    "name": "Install banner and service worker",
    "status": "platform-specific",
    "web": "manifest.webmanifest, sw.js",
-   "app": "-",
+   "app": "reader_bridge.js refuses the website's service worker; SbWebView.create answers a worker's own requests from SiteStore",
    "data": "device",
-   "counterpart": "The app is the installed form of the website; nothing to install inside it."
+   "counterpart": "The app is the installed form of the website; nothing to install inside it. A service worker inside the app's WebView would bypass the app's own copy of the site (found on the owner's phone 2026-10-29, X-04), so it is refused."
   },
   {
    "id": "other.quiz",
