@@ -10,7 +10,9 @@ const fs = require('fs'), os = require('os'), path = require('path'), net = requ
 const { launch, ROOT } = require('../baseline/lib');
 
 const args = process.argv.slice(2);
-const ALL = args.includes('--all');
+const ALL = args.includes('--all') || args.includes('--from') || args.includes('--only');
+const ONLY = args.includes('--only') ? args[args.indexOf('--only') + 1].split(',') : null;      // --only cls10-islopt,cls9-eng
+const FROM = args.includes('--from') ? args[args.indexOf('--from') + 1] : '';      // --from cls10-chem: the subjects from that one on (with --all)
 const PHP = process.env.PHP || (fs.existsSync('C:/xampp/php/php.exe') ? 'C:/xampp/php/php.exe' : 'php');
 const CFG = path.join(os.tmpdir(), 'sb_gates_cfg_' + process.pid + '.php');
 let pass = 0, fail = 0;
@@ -21,25 +23,33 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
 
 (async () => {
   const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'app_catalog.json'), 'utf8'));
-  const picks = [];
+  let picks = [];
   for (const c of cat.classes) {
     const list = c.subjects.filter(s => s.chapters.length >= 2);
     const chosen = ALL ? list : [...new Set([list[0], list[Math.floor(list.length / 2)], list[list.length - 1]])].filter(Boolean);
     chosen.forEach(s => picks.push({ cls: c.id, id: s.id, name: s.name, ch0: s.chapters[0].o, ch1: s.chapters[1].o }));
   }
+  if (ONLY) picks = picks.filter(p => ONLY.includes(p.id));
+  if (FROM) { const k = picks.findIndex(p => p.id === FROM); if (k >= 0) picks = picks.slice(k); }
   if (!/ready/.test(dbq('init', CFG).stdout)) { console.log('FAIL  throwaway database'); process.exit(1); }
   const port = await freePort();
   const srv = spawn(PHP, ['-S', '127.0.0.1:' + port, '-t', ROOT], { env: Object.assign({}, process.env, { SB_CONFIG: CFG }), stdio: 'ignore' });
   for (let i = 0; i < 60; i++) { const ok = await new Promise(r => { const s = net.connect(port, '127.0.0.1', () => { s.destroy(); r(true); }); s.on('error', () => r(false)); }); if (ok) break; await sleep(150); }
   const url = 'http://127.0.0.1:' + port + '/';
   const browser = await launch();
-  const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
-  const page = await ctx.newPage();
   const errors = [];
-  page.on('pageerror', e => errors.push(e.message));
-  await page.goto(url + 'lazy.html', { waitUntil: 'domcontentloaded', timeout: 180000 });
-  await page.waitForFunction(() => window.SBAccess && window.SBBilling && typeof openSubject === 'function' && window.SBAccess.state().ok, null, { timeout: 120000 });
-  await sleep(3000);
+  let ctx = null, page = null;
+  async function fresh() {                                   // a new page: a very heavy subject can hang one
+    if (ctx) { try { await ctx.close(); } catch (e) { /* gone */ } }
+    ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
+    page = await ctx.newPage();
+    page.on('pageerror', e => errors.push(e.message));
+    await page.goto(url + 'lazy.html', { waitUntil: 'domcontentloaded', timeout: 180000 });
+    await page.waitForFunction(() => window.SBAccess && window.SBBilling && typeof openSubject === 'function' && window.SBAccess.state().ok, null, { timeout: 120000 });
+    await sleep(3000);
+  }
+  await fresh();
+  const within = (ms, p) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout ' + ms + ' ms')), ms))]);
 
   async function look(p, chapterCall) {
     await page.evaluate(([cls, id]) => { openSubject(cls, id); }, [p.cls, p.id]);
@@ -55,7 +65,7 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   const rows = [];
   for (const p of picks) {
     let a, b;
-    try { a = await look(p, p.ch0); b = await look(p, p.ch1); } catch (e) { a = { err: String(e.message).slice(0, 120) }; b = a; }
+    try { a = await within(90000, look(p, p.ch0)); b = await within(90000, look(p, p.ch1)); } catch (e) { a = { err: String(e.message).slice(0, 120) }; b = a; try { await fresh(); } catch (e2) { /* the next subject reports it */ } }
     rows.push({ p, a, b });
     check(p.id + ' (' + p.name + '): Chapter 1 opens, Chapter 2 is locked', a.lock === false && a.len > 200 && b.lock === true, { a, b });
   }
