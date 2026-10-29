@@ -210,6 +210,7 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     check('the allowance was topped up to 50 for this visitor', rows("SELECT COUNT(*) c FROM free_usage WHERE metric = 'prep_q' AND owner_key = 'v:" + vid + "'")[0].c == 50, ph.stderr + ph.stdout);
     await p2.evaluate(async () => { SBTestPrep.next(); await new Promise(r => setTimeout(r, 400)); SBTestPrep.answer(0); });
     await p2.waitForSelector('#sbbModal.sbb-show', { timeout: 15000 });
+    await p2.waitForSelector('#sbbModal .sbb-plan', { timeout: 30000 });        // the window opens at once, the plans arrive a moment later
     const t = await p2.evaluate(() => document.querySelector('#sbbModal').innerText);
     check('the 51st Test Preparation question opens the purchase window', /used your 50 free Test Preparation questions/.test(t) && /Student plan/.test(t), t.slice(0, 200));
     check('and the answer was not counted past the limit', rows("SELECT COUNT(*) c FROM free_usage WHERE metric = 'prep_q' AND owner_key = 'v:" + vid + "'")[0].c == 50);
