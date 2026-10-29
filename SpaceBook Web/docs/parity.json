@@ -201,6 +201,26 @@
    "data": "user_items kind pos, per subject; later stop wins"
   },
   {
+   "id": "read.rights_notice",
+   "area": "Reading",
+   "name": "The rights notice: shown once per book (class + subject) on a device when the book is first opened",
+   "status": "same",
+   "web": "js/sb_rights.js + css/sb_rights.css (SBHooks openSubject; kept in localStorage sb.rights.notice.v1; tests/reader/rights.js)",
+   "app": "the same page runs in the WebView, so the same dialog and the same once-per-book record; nothing app-side",
+   "data": "device",
+   "counterpart": "One script. The words are the owner's, verbatim (docs/launch/CONTENT_RIGHTS.md); English only until a translation is reviewed. It does not claim permission or endorsement by anybody."
+  },
+  {
+   "id": "read.copy_guard",
+   "area": "Reading",
+   "name": "Ordinary copying of book text is switched off in the reader (copy, cut, drag, the selection menu); the text stays selectable for the learning tools",
+   "status": "platform-specific",
+   "web": "js/sb_rights.js: copy, cut and dragstart handlers on the reader (typing fields and exercise widgets are exempt)",
+   "app": "the same page script + ui/web/GuardedWebView.kt (ExportFree) takes Copy, Cut, Share, Paste and 'process text' entries out of the system's selection bar; tests ExportFreeTest",
+   "data": "device",
+   "counterpart": "A deterrent, not protection: screenshots, photos of the screen, retyping, OCR, view-source, print and other software are not stopped, and no FLAG_SECURE is used (support and the report dialog need screenshots)."
+  },
+  {
    "id": "read.bookmark",
    "area": "Reading the books",
    "name": "Bookmarks",

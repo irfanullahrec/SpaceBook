@@ -92,6 +92,9 @@ jobs:
       - name: Ans shows its answer in place (Pakistan Studies, in the dash or under the question, no answer window)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/reader/ans_inplace.js
+      - name: rights notice (once per book, the owner's words, accessible) and the reader's copy guard (docs/launch/CONTENT_RIGHTS.md)
+        working-directory: SpaceBook Web
+        run: node --max-old-space-size=6144 tests/reader/rights.js
       - name: activity cards fold, fill the table and show the work
         working-directory: SpaceBook Web
         run: |
