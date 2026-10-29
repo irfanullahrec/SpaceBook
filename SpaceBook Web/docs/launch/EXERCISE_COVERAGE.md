@@ -10,7 +10,7 @@ Answer columns: **own** = a record of its own (worked solution or stated answer)
 
 | Books with questions | Chapters with an exercise | Questions (and parts) | Own answer | Via question | Printed key | Written | Whole line only | **No answer** | MCQs | MCQ answer matches no option | Answer clashes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 118 | 1532 | 45480 | 42899 | 82 | 2118 | 374 | 0 | **7** | 6102 | 84 | 9 |
+| 118 | 1532 | 45481 | 42900 | 82 | 2118 | 374 | 0 | **7** | 6102 | 84 | 9 |
 
 Chapters whose exercise block holds no question: **0**. Chapters with at least one unanswered question: **5**.
 
@@ -143,7 +143,7 @@ These subjects have no question records in the registries this report reads (the
 | 11 | Islamiat (Compulsory) (`cls11:islc`) | 7 | 4 | 33 | 33 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 11 | Mathematics (`cls11:math`) | 12 | 12 | 879 | 877 | 0 | 2 | 0 | 0 | 0 | 93 | 0 | 5 |
 | 11 | Mutalia-e-Quran Hakeem (Compulsory) (`cls11:quran`) | 23 | 21 | 418 | 418 | 0 | 0 | 0 | 0 | 0 | 145 | 0 | 0 |
-| 11 | Statistics (`cls11:stat`) | 13 | 7 | 459 | 459 | 0 | 0 | 0 | 0 | 0 | 71 | 1 | 0 |
+| 11 | Statistics (`cls11:stat`) | 13 | 7 | 460 | 460 | 0 | 0 | 0 | 0 | 0 | 71 | 1 | 0 |
 | 11 | Urdu (Compulsory) (`cls11:urdu`) | 35 | 32 | 212 | 212 | 0 | 0 | 0 | 0 | 0 | 13 | 0 | 0 |
 | 12 | Civics (`cls12:civics`) | 10 | 8 | 210 | 210 | 0 | 0 | 0 | 0 | 0 | 31 | 0 | 0 |
 | 12 | Computer Science (`cls12:comp`) | 11 | 9 | 216 | 216 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
@@ -227,7 +227,7 @@ These subjects have no question records in the registries this report reads (the
 | 11 | `cls11:math` | 3. Vectors | 84-117 | 1 | 78 | 0 | 0 | 0 | 2 | check-answers |
 | 11 | `cls11:math` | 10. Trigonometric Identities of Sum and Difference of Angles | 295-310 | 0 | 67 | 0 | 0 | 0 | 2 | check-answers |
 | 11 | `cls11:math` | 12. Graphs of Trigonometric and Inverse Trigonometric Functions  | 366-400 | 0 | 124 | 0 | 0 | 0 | 1 | check-answers |
-| 11 | `cls11:stat` | 1. Collection and Presentation of Data | 8-53 | 1 | 88 | 0 | 0 | 1 | 0 | check-answers |
+| 11 | `cls11:stat` | 1. Collection and Presentation of Data | 8-53 | 1 | 89 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:econ` | 5. بین الاقوامی تجارت | 104-108 | 1 | 48 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:econ` | 13. اسلام کا معاشی نظام | 292-294 | 1 | 32 | 0 | 0 | 1 | 0 | check-answers |
 | 12 | `cls12:eng` | 12. All the World's a Stage (Poem) | 114-118 | 1 | 44 | 0 | 0 | 1 | 0 | check-answers |
