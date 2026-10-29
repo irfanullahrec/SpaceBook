@@ -26,7 +26,7 @@ function makeEl(id) {
     focus() { }, click() { }, blur() { }, scrollIntoView() { }, scrollTo() { },
     querySelector() { return null; }, querySelectorAll() { return []; }, closest() { return null; },
     getElementsByTagName() { return []; }, getElementsByClassName() { return []; },
-    getBoundingClientRect() { return { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0 }; },
+    getBoundingClientRect() { return { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0 }; }, getClientRects() { return []; },
     contains() { return false; }, cloneNode() { return makeEl(); }, matches() { return false; }, dispatchEvent() { return true; }
   };
 }
