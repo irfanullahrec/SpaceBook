@@ -3,10 +3,10 @@
 @deco Pale page with a heading; a framed row of ten red balls and two rows of footballs with a coloured label beside each; baseball bats (one, two, ten); a row of seventeen coloured pencils; a "Don't forget" board; a box of ten pencils beside seven loose pencils.
 # Place Value (Tens and Ones) || مقامی قیمت (دہائیاں اور اکائیاں) || مکانی ارزښت (لسیزې او یووونه)
 p Now, 10 balls together means 1 ten. || اب ۱۰ گیندیں مل کر ۱ دہائی بنتی ہیں۔ || اوس ۱۰ توپونه یوځای ۱ لسیزه جوړوي.
-cnt ball.red:10/10 [] || 10 balls || ۱۰ گیندیں || ۱۰ توپونه
+cnt ball.red:10/10 || 10 balls || ۱۰ گیندیں || ۱۰ توپونه
 tens 1 0 || 10 means 1 ten and 0 ones. || ۱۰ کا مطلب ہے ۱ دہائی اور ۰ اکائیاں۔ || ۱۰ معنا ۱ لسیزه او ۰ یووونه.
 p If we have 2 sets of 10 balls each, then we can say that: || اگر ہمارے پاس ۱۰، ۱۰ گیندوں کے ۲ سیٹ ہوں تو ہم کہہ سکتے ہیں کہ: || که موږ د ۱۰، ۱۰ توپونو دوه ټولګې ولرو، نو موږ ویلی شو چې:
-cnt football:20/10 [] || 2 sets of 10 balls || ۱۰، ۱۰ گیندوں کے ۲ سیٹ || د ۱۰، ۱۰ توپونو ۲ ټولګې
+cnt football:20/10 || 2 sets of 10 balls || ۱۰، ۱۰ گیندوں کے ۲ سیٹ || د ۱۰، ۱۰ توپونو ۲ ټولګې
 tens 2 0 || 20 means 2 tens and 0 ones. || ۲۰ کا مطلب ہے ۲ دہائیاں اور ۰ اکائیاں۔ || ۲۰ معنا ۲ لسیزې او ۰ یووونه.
 @issue The two coloured labels beside the balls ("10 means 1 ten, 0 ones" and "20 means 2 tens, 0 ones") are blurred in the sample scan; the wording follows the pictures.
 p If a single baseball bat shows 1 (one), 2 bats show 2 ones and 10 bats show 1 ten, then we can say that 10 ones make 1 ten. || اگر ایک بیس بال بلا ۱ (ایک) دکھاتا ہے، ۲ بلے ۲ اکائیاں دکھاتے ہیں اور ۱۰ بلے ۱ دہائی دکھاتے ہیں تو ہم کہہ سکتے ہیں کہ ۱۰ اکائیاں مل کر ۱ دہائی بناتی ہیں۔ || که یو بیسبال بټ ۱ (یو) ښیي، ۲ بټونه ۲ یووونه ښیي او ۱۰ بټونه ۱ لسیزه ښیي، نو موږ ویلی شو چې ۱۰ یووونه ۱ لسیزه جوړوي.
@@ -15,6 +15,6 @@ box note | Don't forget || یاد رکھیں || مه هېروئ
 p 10 ones make 1 ten. 10 ones = 1 ten. || ۱۰ اکائیاں مل کر ۱ دہائی بناتی ہیں۔ ۱۰ اکائیاں = ۱ دہائی۔ || ۱۰ یووونه ۱ لسیزه جوړوي. ۱۰ یووونه = ۱ لسیزه.
 endbox
 p We have 17 pencils. || ہمارے پاس ۱۷ پنسلیں ہیں۔ || موږ ۱۷ پنسلونه لرو.
-cnt pencil:17/17 [] || 17 pencils || ۱۷ پنسلیں || ۱۷ پنسلونه
+cnt pencil:17/17 || 17 pencils || ۱۷ پنسلیں || ۱۷ پنسلونه
 p Place ten pencils in a box (make a set) of pencils. || دس پنسلیں ایک ڈبے میں رکھیں (پنسلوں کا ایک سیٹ بنائیں)۔ || لس پنسلونه په یوه بکس کې کېږدئ (د پنسلونو یوه ټولګه جوړه کړئ).
 cnt pencil:10/10 | pencil:7 || 1 set of 10 pencils; 7 pencils || ۱۰ پنسلوں کا ۱ سیٹ؛ ۷ پنسلیں || د ۱۰ پنسلونو ۱ ټولګه؛ ۷ پنسلونه
