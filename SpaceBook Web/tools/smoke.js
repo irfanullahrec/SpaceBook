@@ -103,8 +103,8 @@ for (const [subjId, key, units, sources] of [
   `);
 }
 
-run("CLASS 3 lists every registered subject", `goToSubjects('cls3'); const h=$('dashboard-body').innerHTML; const miss=DATA.subjects.cls3.filter(s=>!h.includes(s.name)).map(s=>s.name); if (miss.length) throw new Error('missing: '+miss.join(', '));`);
-run("CLASS 4 lists its uploaded books instead of the not-uploaded notice", `goToSubjects('cls4'); const h=$('dashboard-body').innerHTML; if (/Subjects Not Uploaded Yet/.test(h) || !/English/.test(h) || !/Mathematics/.test(h)) throw new Error('Class 4 subject list not shown');`);
+run("CLASS 3 lists every registered subject", `goToSubjects('cls3',''); const h=$('dashboard-body').innerHTML; const miss=DATA.subjects.cls3.filter(s=>!s.series&&!h.includes(s.name)).map(s=>s.name); if (miss.length) throw new Error('missing: '+miss.join(', '));`);
+run("CLASS 4 lists its uploaded books instead of the not-uploaded notice", `goToSubjects('cls4',''); const h=$('dashboard-body').innerHTML; if (/Subjects Not Uploaded Yet/.test(h) || !/English/.test(h) || !/Mathematics/.test(h)) throw new Error('Class 4 subject list not shown');`);
 
 
 run("showWordMeaning", `showWordMeaning(document.createElement("span"))`);
@@ -146,9 +146,9 @@ run("CLASS 10 openSubject cls10 islopt", `openSubject("cls10","cls10-islopt")`);
 run("CLASS 10 openSubject cls10 quran", `openSubject("cls10","cls10-quran")`);
 run("CLASS 10 goToSubjects cls10", `goToSubjects('cls10')`);
 run("CLASS 10 renderBooksView cls10", `renderBooksView('cls10')`);
-run("CLASS 1 goToSubjects lists Drawing", `goToSubjects('cls1'); if (!/Drawing/.test($('dashboard-body').innerHTML)) throw new Error('Drawing subject card missing');`);
-run("CLASS 2 subjects are reachable and list Maths and Drawing", `goToSubjects('cls2'); if (!/Mathematics/.test($('dashboard-body').innerHTML) || !/Drawing/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 subjects are still behind the upload gate');`);
-run("CLASS 3 subjects are reachable and list Islamyat and Nazira", `goToSubjects('cls3'); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML) || !/Nazira|ناظرہ قرآن/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 subjects missing or behind upload gate');`);
+run("CLASS 1 goToSubjects lists Drawing", `goToSubjects('cls1',''); if (!/Drawing/.test($('dashboard-body').innerHTML)) throw new Error('Drawing subject card missing');`);
+run("CLASS 2 subjects are reachable and list Maths and Drawing", `goToSubjects('cls2',''); if (!/Mathematics/.test($('dashboard-body').innerHTML) || !/Drawing/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 subjects are still behind the upload gate');`);
+run("CLASS 3 subjects are reachable and list Islamyat and Nazira", `goToSubjects('cls3',''); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML) || !/Nazira|ناظرہ قرآن/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 3 subjects missing or behind upload gate');`);
 run("CLASS 3 Maths lessons show native vector figures", `switchMathTab('lesson'); const c3Lesson=$('mathTabContent').innerHTML; if (!/<svg/.test(c3Lesson) || /\.jpg|\.png/.test(c3Lesson)) throw new Error('Class 3 Maths figures are missing or depend on page images');`);
 run("CLASS 12 goToSubjects lists the four completed books", `goToSubjects('cls12'); const h12=$('dashboard-body').innerHTML+$('page-content').innerHTML; if (!/Mathematics/.test(h12) || !/Physics/.test(h12) || !/Chemistry/.test(h12) || !/Statistics/.test(h12) || /Subjects Not Uploaded Yet/.test(h12)) throw new Error('Class 12 subjects are still gated or missing');`);
 run("CLASS 12 Maths opens its source units and formula sheet", `openSubject('cls12','cls12-math'); if (getMathChapterList('cls12').length!==12 || !/Introduction to Symbolic/.test($('mathTopicArea').innerHTML)) throw new Error('Class 12 Maths route or units missing'); switchMathTab('formulas'); if (!$('mathTabContent').innerHTML) throw new Error('Class 12 Math formula tab is empty'); switchMathTab('textbook'); if (!/Complete Book Text/.test($('mathTabContent').innerHTML)) throw new Error('Class 12 Math source text tab missing');`);
@@ -163,7 +163,7 @@ run("CLASS 1 MCQ wrong answer shows red cross and correct green option", `answer
 run("CLASS 1 MCQ correct answer shows green", `answerDrawingMcq(0,0); if (!/Correct! Well done./.test($('dashboard-body').innerHTML)) throw new Error('correct response missing');`);
 run("CLASS 1 SQ tab reveals multilingual answer on question line", `selectDrawingExamTab('sqs'); globalThis.__drawingHtml=$('dashboard-body').innerHTML; if (!/SQ 1/.test(globalThis.__drawingHtml) || !/نقطے ملانے/.test(globalThis.__drawingHtml) || !/Suggested answer/.test(globalThis.__drawingHtml)) throw new Error('multilingual SQ tab missing');`);
 run("CLASS 1 LQ tab reveals Pashto answer on question line", `selectDrawingExamTab('lqs'); globalThis.__drawingHtml=$('dashboard-body').innerHTML; if (!/LQ 1/.test(globalThis.__drawingHtml) || !/نښلولو سره د حیوان/.test(globalThis.__drawingHtml) || !/پښتو/.test(globalThis.__drawingHtml)) throw new Error('multilingual LQ tab missing'); state.activeDrawingTab='activities';`);
-run("CLASS 1 goToSubjects lists English", `goToSubjects('cls1'); if (!/English/.test($('dashboard-body').innerHTML)) throw new Error('English subject card missing for Class 1');`);
+run("CLASS 1 goToSubjects lists English", `goToSubjects('cls1',''); if (!/English/.test($('dashboard-body').innerHTML)) throw new Error('English subject card missing for Class 1');`);
 run("CLASS 1 openSubject cls1-eng", `openSubject('cls1','cls1-eng')`);
 run("CLASS 1 selectSubjectChapter eng 0", `selectSubjectChapter('eng', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab eng lesson", `switchSubjectTab('eng', 'lesson', 0, 'cls1')`);
@@ -172,8 +172,8 @@ run("CLASS 1 switchSubjectTab eng slos", `switchSubjectTab('eng', 'slos', 0, 'cl
 run("CLASS 1 switchSubjectTab eng words", `switchSubjectTab('eng', 'words', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab eng grammar", `switchSubjectTab('eng', 'grammar', 0, 'cls1')`);
 run("CLASS 1 selectSubjectChapter eng 10 (Unit 11)", `selectSubjectChapter('eng', 10, 'cls1')`);
-run("CLASS 1 goToSubjects lists Islamyat", `goToSubjects('cls1'); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML)) throw new Error('Islamyat subject card missing for Class 1');`);
-run("CLASS 1 goToSubjects lists Nazira", `goToSubjects('cls1'); if (!/Nazira|ناظرہ/.test($('dashboard-body').innerHTML)) throw new Error('Nazira subject card missing for Class 1');`);
+run("CLASS 1 goToSubjects lists Islamyat", `goToSubjects('cls1',''); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML)) throw new Error('Islamyat subject card missing for Class 1');`);
+run("CLASS 1 goToSubjects lists Nazira", `goToSubjects('cls1',''); if (!/Nazira|ناظرہ/.test($('dashboard-body').innerHTML)) throw new Error('Nazira subject card missing for Class 1');`);
 run("CLASS 1 openSubject cls1-isl", `openSubject('cls1','cls1-isl')`);
 run("CLASS 1 selectSubjectChapter isl 0", `selectSubjectChapter('isl', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab isl lesson", `switchSubjectTab('isl', 'lesson', 0, 'cls1')`);
@@ -189,7 +189,7 @@ run("CLASS 1 switchSubjectTab nazira concepts", `switchSubjectTab('nazira', 'con
 run("CLASS 1 switchSubjectTab nazira exercise", `switchSubjectTab('nazira', 'exercise', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab nazira slos", `switchSubjectTab('nazira', 'slos', 0, 'cls1')`);
 run("CLASS 1 selectSubjectChapter nazira 16 (Surahs)", `selectSubjectChapter('nazira', 16, 'cls1')`);
-run("CLASS 1 goToSubjects lists Pashto", `goToSubjects('cls1'); if (!/Pashto|پښتو/.test($('dashboard-body').innerHTML)) throw new Error('Pashto subject card missing for Class 1');`);
+run("CLASS 1 goToSubjects lists Pashto", `goToSubjects('cls1',''); if (!/Pashto|پښتو/.test($('dashboard-body').innerHTML)) throw new Error('Pashto subject card missing for Class 1');`);
 run("CLASS 1 openSubject cls1-pashto", `openSubject('cls1','cls1-pashto')`);
 run("CLASS 1 selectSubjectChapter pashto 0", `selectSubjectChapter('pashto', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab pashto lesson", `switchSubjectTab('pashto', 'lesson', 0, 'cls1')`);
@@ -200,7 +200,7 @@ run("CLASS 1 switchSubjectTab pashto grammar", `switchSubjectTab('pashto', 'gram
 run("CLASS 1 selectSubjectChapter pashto 22 (Unit 23)", `selectSubjectChapter('pashto', 22, 'cls1')`);
 
 // ---- Class 2 Subject Port Verification ----
-run("CLASS 2 goToSubjects lists all 8 subjects", `goToSubjects('cls2'); const c2Html = $('dashboard-body').innerHTML; if (!/English/.test(c2Html) || !/Urdu|اردو/.test(c2Html) || !/Mathematics/.test(c2Html) || !/General Knowledge|واقفیتِ عامہ/.test(c2Html) || !/Islamyat|اسلامیات/.test(c2Html) || !/Nazira|ناظرہ/.test(c2Html) || !/Pashto|پښتو/.test(c2Html) || !/Drawing/.test(c2Html)) throw new Error('Class 2 missing subject cards: ' + c2Html);`);
+run("CLASS 2 goToSubjects lists all 8 subjects", `goToSubjects('cls2',''); const c2Html = $('dashboard-body').innerHTML; if (!/English/.test(c2Html) || !/Urdu|اردو/.test(c2Html) || !/Mathematics/.test(c2Html) || !/General Knowledge|واقفیتِ عامہ/.test(c2Html) || !/Islamyat|اسلامیات/.test(c2Html) || !/Nazira|ناظرہ/.test(c2Html) || !/Pashto|پښتو/.test(c2Html) || !/Drawing/.test(c2Html)) throw new Error('Class 2 missing subject cards: ' + c2Html);`);
 run("CLASS 2 openSubject cls2-eng", `openSubject('cls2','cls2-eng')`);
 run("CLASS 2 selectSubjectChapter eng 0", `selectSubjectChapter('eng', 0, 'cls2')`);
 run("CLASS 2 switchSubjectTab eng lesson", `switchSubjectTab('eng', 'lesson', 0, 'cls2')`);
@@ -284,7 +284,7 @@ run("CLASS 3 switchSubjectTab pashto words", `switchSubjectTab('pashto', 'words'
 run("CLASS 3 switchSubjectTab pashto grammar", `switchSubjectTab('pashto', 'grammar', 0, 'cls3')`);
 run("CLASS 3 selectSubjectChapter pashto 32 (Lesson 33)", `selectSubjectChapter('pashto', 32, 'cls3')`);
 
-run("CLASS 5 goToSubjects cls5", `goToSubjects('cls5'); const h5 = $('dashboard-body').innerHTML; if (!/General Science/.test(h5) || !/Social Studies/.test(h5)) throw new Error('Class 5 subjects cards missing');`);
+run("CLASS 5 goToSubjects cls5", `goToSubjects('cls5',''); const h5 = $('dashboard-body').innerHTML; if (!/General Science/.test(h5) || !/Social Studies/.test(h5)) throw new Error('Class 5 subjects cards missing');`);
 run("CLASS 5 openSubject cls5 math", `openSubject('cls5','cls5-math'); if (getMathChapterList('cls5').length !== 9) throw new Error('Class 5 Math unit count mismatch');`);
 run("CLASS 5 openSubject cls5 sci", `openSubject('cls5','cls5-sci'); selectSubjectChapter('sci', 0, 'cls5'); switchSubjectTab('sci', 'exercise', 0, 'cls5');`);
 run("CLASS 5 openSubject cls5 eng", `openSubject('cls5','cls5-eng'); selectSubjectChapter('eng', 0, 'cls5'); switchSubjectTab('eng', 'exercise', 0, 'cls5');`);
@@ -294,7 +294,7 @@ run("CLASS 5 openSubject cls5 sst", `openSubject('cls5','cls5-sst'); selectSubje
 run("CLASS 5 openSubject cls5 sstum", `openSubject('cls5','cls5-sstum'); selectSubjectChapter('sstum', 0, 'cls5'); switchSubjectTab('sstum', 'exercise', 0, 'cls5');`);
 run("CLASS 5 openSubject cls5 pashto", `openSubject('cls5','cls5-pashto'); selectSubjectChapter('pashto', 0, 'cls5'); switchSubjectTab('pashto', 'exercise', 0, 'cls5');`);
 
-run("CLASS 6 goToSubjects cls6", `goToSubjects('cls6'); const h6 = $('dashboard-body').innerHTML; if (!/General Science/.test(h6) || !/Computer/.test(h6)) throw new Error('Class 6 subjects cards missing');`);
+run("CLASS 6 goToSubjects cls6", `goToSubjects('cls6',''); const h6 = $('dashboard-body').innerHTML; if (!/General Science/.test(h6) || !/Computer/.test(h6)) throw new Error('Class 6 subjects cards missing');`);
 run("CLASS 6 openSubject cls6 math", `openSubject('cls6','cls6-math'); if (getMathChapterList('cls6').length !== 11) throw new Error('Class 6 Math unit count mismatch');`);
 run("CLASS 6 openSubject cls6 sci", `openSubject('cls6','cls6-sci'); selectSubjectChapter('sci', 0, 'cls6'); switchSubjectTab('sci', 'exercise', 0, 'cls6');`);
 run("CLASS 6 openSubject cls6 eng", `openSubject('cls6','cls6-eng'); selectSubjectChapter('eng', 0, 'cls6'); switchSubjectTab('eng', 'exercise', 0, 'cls6');`);
