@@ -115,16 +115,7 @@
    "web": "-",
    "app": "expiry/ExpiryGate (offline, salted hash in the app)",
    "data": "device only",
-   "counterpart": "A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no build date. Each person's own 1-month free trial, on both platforms, is the acct.trial row. Payment limits for both are the entitlements row."
-  },
-  {
-   "id": "acct.trial",
-   "area": "Accounts and plans",
-   "name": "1-month free trial lock: after 30 days only a lock screen that asks to contact the developer on WhatsApp (0343 0155606) or to type an unlock code",
-   "status": "same",
-   "web": "js/sb_license.js + css/sb_license.css (the page stays out of the app's WebView: window.SBHost)",
-   "app": "expiry/TrialGate.kt, LicenseCode.kt, AccessGate.kt, ui/lock/LockScreen.kt",
-   "data": "device only: the first start, the latest time seen, a random device ID and the accepted code stay on the device; nothing is sent to the server. Codes are signed with a private key kept on the developer's PC (tools/license/make_code.js) and checked with the public key on both platforms (docs/TRIAL_LOCK.md)"
+   "counterpart": "A property of a preview APK handed out outside the store (docs/EXPIRY.md); the website is the live site and has no build date. The 1-month free trial lock that both platforms used to have was removed on 2026-10-29 (docs/TRIAL_LOCK.md). Access is decided by the free allowance and the plans: the plans rows."
   },
   {
    "id": "read.books",

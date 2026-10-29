@@ -69,11 +69,11 @@ Registered account = a non-deleted `users` row (administrators excluded). Verifi
 6. **Reading a chapter inside the Study Plan sheet** follows the same chapter rule as the book pages.
 7. **Under-payment**: the price is fixed at PKR 500 and shown to the person; if Easypaisa shows a smaller amount the administrator rejects with a reason.
 8. **Notices are in the account only** (no WhatsApp / e-mail).
-9. **The 30-day trial lock is still on** (`docs/TRIAL_LOCK.md`: `js/sb_license.js` on the website, `TrialGate.kt` in the app; the owner asked for it on 2026-10-28). It is separate from the plans and nothing here changes it: 30 days after a person's first start it covers the **whole** website or app with the WhatsApp lock screen, and that screen also hides the plans window. So after day 30 even a person with a paid plan, or a student using only the free allowance, sees only the lock until an unlock code is typed. That contradicts "free for everyone within the limits" and "a paid plan opens access". It needs the owner's decision; to switch it off, set `trialDays: 0` in `js/sb_license.js` (website) and build the app with `-Pspacebook.trialDays=0`.
+9. **The 30-day trial lock was removed** on 2026-10-29 at the owner's request (`docs/TRIAL_LOCK.md`): it was a fixed lock from before the plans, it would have locked paying students after day 30, and nothing replaces it: access is the free allowance plus the plans.
 
 ## 9. Owner steps after the deploy
 
 1. The first request after the deploy applies migration 010 by itself (as always). Open `/manage/`, sign in as `IrfanUllah123` with the initial password and **change it straight away**: until then the account exists with the known initial password.
 2. The agreed initial password is **the same string as `db_pass` in the local (git-ignored) `api/config.php`**, which is how it was found (a check that no tracked file contains the password). If the live database uses that password too, note that the repository is public and now holds a bcrypt hash of it: slow to guess, but it is a database password. **Change the database password** (cPanel, then the `DB_PASSWORD` secret) and do not reuse one password for both.
-3. **Decide about the trial lock** (section 8, point 9) before the first real customer pays.
+3. The old trial lock is gone from the website and the app; people who were locked on the live site open again with the next deploy and app update.
 4. Give a copy of this page's section 4 to anyone who will approve payments; an extra administrator is a row in `admins` (ask for a command to create one).

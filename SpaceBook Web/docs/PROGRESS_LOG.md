@@ -645,8 +645,15 @@ Verified by: `php tests/php/run.php` (642 passed, 0 failed; the billing section 
 Not verified: a real Easypaisa payment and a real approval on the live site (nothing is pushed or deployed); the plans window on the owner's phone (the app was only compiled and unit-tested; the web window is the one the browser test drove); the live MySQL version for migration 010 (it uses nothing newer than MySQL 5.7); `tools/build/all.js --check` as a whole (only the lazy page, the service worker shell and the hook registry were regenerated, from a clean checkout; the offline map's subjects and images were left as committed because a full `make_offline.js` run drops 42 images the committed map lists).
 
 Risks / owner decisions needed:
-- **The 30-day trial lock is still on** and covers the whole site and app, plans window included, after day 30: a paying student would see only the lock. It contradicts "free within the limits" and "a plan opens access". Switch it off with `trialDays: 0` in `js/sb_license.js` and `-Pspacebook.trialDays=0` in the app build, or say what should happen instead.
+- The 30-day trial lock was still on when plans were built; the owner then asked for it to be removed, and it was (next entry).
 - The initial administrator password the owner chose equals `db_pass` in the local `api/config.php`; the repository is public and now holds a bcrypt hash of it. Change the administrator password at the first sign-in and the database password in cPanel / the `DB_PASSWORD` secret.
 - Scopes the request left open (BILLING.md section 8): Test Preparation module = all classes; no Study Plan in the Teacher plan; Teacher plan 1 to 10 subjects; a paper is counted at the review stage; one payment = one plan; messages only in the account.
 - The chapter files are public static files, so the chapter lock is a product gate, not a vault; an anonymous person who clears all site data gets a new anonymous allowance.
 - Branches: Web `feature/plans-payments` (from origin/main) and App `feature/plans-payments` (from origin/main) are ready to push; the checkout in `D:\SpaceBook` is on `phase/p2-server`, 47 commits behind origin/main, and holds two older, superseded copies of the Web work (4f5d2034, 84c75d6c).
+
+## 2026-10-29 — The 1-month trial lock removed (website and app)
+Done:
+- The owner said the 30-day trial lock was the old fixed lock from before the plans, so it was removed from both platforms: website `js/sb_license.js`, `css/sb_license.css`, `tools/license/`, `tests/license/` and the `acct.trial` parity row (`docs/TRIAL_LOCK.md` is now a short note); app `TrialGate`, `LicenseCode`, `DefaultCode`, `AccessGate`, the trial wording and WhatsApp contact of the lock screen, the `TRIAL_DAYS` build setting, the Me / Home "free trial" lines. The dated preview lock of a preview APK (`ExpiryGate`, off in release builds) is separate and stays.
+- The app's Home still had an older static "Plans & pricing" card (Free = every textbook, Premium = "price to be announced", "every feature is currently free"). It is replaced by a short card with the real free allowance, the PKR 500 plans and a "See plans" button that opens the website's plans window.
+
+Not verified: the unlock codes and key made for the old lock (under ~/SpaceBook-License) are now unused; nothing was deleted from the PC.
