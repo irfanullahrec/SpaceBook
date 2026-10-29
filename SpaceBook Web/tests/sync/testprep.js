@@ -16,7 +16,7 @@ const tupleSum = rec => Object.values(rec.q).reduce((n, v) => n + v[0], 0);
   async function practise(t, n, finish) {
     await t.sb.SBTestPrep.open('pst'); await sleep(250);
     t.sb.SBTestPrep.startPractice();
-    for (let i = 0; i < n; i++) { t.sb.SBTestPrep.answer(0); if (i < n - 1) t.sb.SBTestPrep.next(); }
+    for (let i = 0; i < n; i++) { t.sb.SBTestPrep.answer(0); await sleep(250); if (i < n - 1) t.sb.SBTestPrep.next(); }     // the answer waits for the server's count of the free allowance (js/sb_access.js)
     if (finish) t.sb.SBTestPrep.finish();
   }
   const types = async t => (await t.sb.SBSync.pendingEvents()).map(e => e.type).sort().join(',');

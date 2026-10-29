@@ -30,10 +30,20 @@ function serve(port = 0) {
   });
 }
 
-async function launch() {
+// Every context gets the access of a person with every plan (js/sb_access.js keeps its answer in localStorage), so the pages show every chapter.
+// launch({ anonymous: true }) leaves the visitor's view alone (tests/access/*).
+async function launch(opts = {}) {
   const { chromium } = require('playwright');
   const channel = process.env.PW_CHANNEL === undefined ? 'chrome' : process.env.PW_CHANNEL;
-  return chromium.launch({ headless: true, ...(channel ? { channel } : {}) });
+  const browser = await chromium.launch({ headless: true, ...(channel ? { channel } : {}) });
+  if (!opts.anonymous) {
+    const state = require('../../tools/lib/test_access_state')();
+    const init = s => { try { localStorage.setItem('sb_access_v1', s); } catch (e) { /* no storage */ } };
+    const newContext = browser.newContext.bind(browser), newPage = browser.newPage.bind(browser);
+    browser.newContext = async o => { const c = await newContext(o); await c.addInitScript(init, state); return c; };
+    browser.newPage = async o => { const p = await newPage(o); await p.context().addInitScript(init, state); return p; };
+  }
+  return browser;
 }
 
 module.exports = { ROOT, serve, launch };

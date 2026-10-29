@@ -28,7 +28,7 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   const srv = spawn(PHP, ['-S', '127.0.0.1:' + port, '-t', ROOT], { env: Object.assign({}, process.env, { SB_CONFIG: CFG }), stdio: 'ignore' });
   for (let i = 0; i < 60; i++) { const ok = await new Promise(r => { const s = net.connect(port, '127.0.0.1', () => { s.destroy(); r(true); }); s.on('error', () => r(false)); }); if (ok) break; await sleep(150); }
   const url = 'http://127.0.0.1:' + port + '/';
-  const browser = await launch();
+  const browser = await launch({ anonymous: true });
   const errors = [];
   async function newPage(vp) {
     const ctx = await browser.newContext({ viewport: vp || { width: 1100, height: 900 }, permissions: ['clipboard-read', 'clipboard-write'] });

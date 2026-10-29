@@ -44,6 +44,7 @@ async function loadDom(opts = {}) {
     catch (e) { fails.push((it.src || 'inline') + ': ' + (e && e.message)); }
   }
   const run = code => vm.runInContext(code, ctx, { timeout: opts.timeout || 120000 });
+  if (!opts.anonymous) { try { run(require('./test_access')); } catch (e) { /* no access module */ } }      // every chapter open, as for a person with every plan (opts.anonymous: as a visitor)
   // Let "later" happen: deliver mutation records (microtasks), run queued timers by their delay, repeat until nothing is waiting.
   async function settle(max = 40) {
     for (let i = 0; i < max; i++) {

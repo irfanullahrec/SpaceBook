@@ -121,11 +121,9 @@ jobs:
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
         run: node tests/sync/unit.js
-      - name: free-trial lock (unlock codes, the 30-day clock, the lock screen in Chrome; docs/TRIAL_LOCK.md)
+      - name: plans and free limits (the access rules and the question gates in Node; the chapter lock on the pages of every class)
         working-directory: SpaceBook Web
-        run: |
-          node tests/license/unit.js
-          node --max-old-space-size=6144 tests/license/browser.js
+        run: node tests/access/unit.js
       - name: the phone and the app show the same book as the website (printed pages, Ans in place, the same tabs; skipped when the app folder is absent)
         working-directory: SpaceBook Web
         run: node --max-old-space-size=6144 tests/parity/app_same_book.js

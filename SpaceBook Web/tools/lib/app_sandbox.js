@@ -96,6 +96,7 @@ function load(opts = {}) {
     catch (e) { loadFails.push(s + ': ' + (e && e.message)); }
     if (opts.onScript) opts.onScript(s, sb);                          // tools/wrappers_audit.js: what did this script change?
   }
+  try { vm.runInContext(require('./test_access'), sb); } catch (e) { /* no access module */ }      // every chapter open, as for a person with every plan
   const ms = Date.now() - t0;
   if (!opts.quiet) {
     console.log('loaded ' + srcs.length + ' scripts in ' + ms + ' ms; load failures: ' + loadFails.length);

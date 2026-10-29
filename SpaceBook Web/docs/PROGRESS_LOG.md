@@ -659,3 +659,10 @@ Done:
 Verified by: `node tools/validate.js` 1294, `tools/parity/check.js` 13, `tests/hooks/hooks.js` 17, `tests/access/browser.js` 35 without the lock script, `sync_app.js --check` clean; App `gradlew :app:testDebugUnitTest` 230 tests, 0 failed (the tests of TrialGate and LicenseCode are gone, one plans-card test was added, the rights tests of origin/main are in); `php tests/php/run.php` 642 again on the final branch; both branches sit directly on the origin/main of 2026-10-29 afternoon (Web 8f68655d, App b764e5c) after another session pushed the rights notice.
 
 Not verified: the old lock's absence on a phone or on the live site (nothing is pushed); the unlock codes and key made for the old lock (under ~/SpaceBook-License) are now unused; nothing was deleted from the PC.
+
+## 2026-10-29 — The first push of the plans failed the CI gate (nothing was deployed); fixed
+The gate failed before the deploy job on three things the plans changed, all in tests and tools, none in the product:
+- The page loaders of the build and test tools (`tools/lib/app_sandbox.js`, `tools/lib/app_dom.js`, and the real-browser launcher `tests/baseline/lib.js`) rendered every chapter, but an anonymous visitor now sees only Chapter 1. They now give the page the access of a person with every plan (`tools/lib/test_access.js`, `test_access_state.js`); `launch({ anonymous: true })` keeps the visitor's view for `tests/access/*`.
+- `tests/sync/testprep.js` answered questions in a tight loop; an answer now waits for the server's count of the free allowance, so the test waits too.
+- The workflow still ran the deleted `tests/license/*`; that step is replaced by `tests/access/unit.js`.
+Verified by: every command of the workflow's test job run locally one after the other (44, all passing, including `all.js --check` fresh for every step, `lazy_parity.js` identical, the axe and tab tests, mastery browser 37, search 41), and the PHP job's `tests/sync/*` scripts (e2e, rewards, planner, testprep, account, items, parity_e2e). The PHP 7.4 + MySQL 5.7 API tests had already passed in CI (migration 010 included).
