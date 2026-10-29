@@ -108,6 +108,11 @@ jobs:
           bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/createtest/browser.js
           bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/grammar/browser.js
           bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/tutor/browser.js
+      - name: Government / Private / Series choice for Classes 1-8 and the Munawar books (data, then browser)
+        working-directory: SpaceBook Web
+        run: |
+          bash ../.github/scripts/logged.sh node tests/private/data.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/private/browser.js
       - name: Study Plan check (a task is learnt only after the questions of the book are all right; engine, data, browser) and the lesson sheet of Go (data)
         working-directory: SpaceBook Web
         run: |

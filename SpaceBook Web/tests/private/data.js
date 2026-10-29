@@ -14,10 +14,15 @@ const reg = JSON.parse(fs.readFileSync(path.join(MUN, 'books.json'), 'utf8'));
 const books = reg.books;
 
 // 1. the registry files are the ones registry.py writes
-try {
-  const out = cp.execFileSync('python', ['-P', path.join(MUN, 'tools', 'registry.py'), '--check'], { cwd: ROOT }).toString();
-  check('books.json and js/munawar_registry.js are what registry.py writes', /up to date/.test(out), out);
-} catch (e) { check('books.json and js/munawar_registry.js are what registry.py writes', false, String(e.stdout || e.message)); }
+{
+  let out = null, err = null;
+  for (const py of ['python3', 'python']) {        // the CI runner has python3, a Windows PC has python
+    try { out = cp.execFileSync(py, ['-P', path.join(MUN, 'tools', 'registry.py'), '--check'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); break; }
+    catch (e) { err = e; if (e.code !== 'ENOENT') break; }
+  }
+  if (out === null && err && err.code === 'ENOENT') console.log('SKIP  registry.py --check (no Python on this machine)');
+  else check('books.json and js/munawar_registry.js are what registry.py writes', out !== null && /up to date/.test(out), String((err && (err.stderr || err.message)) || out));
+}
 
 check('42 books, ids unique, four classes', books.length === 42 && new Set(books.map(b => b.subjectId)).size === 42 && new Set(books.map(b => b.cls)).size === 4, books.length);
 const perClass = c => books.filter(b => b.cls === c).length;
