@@ -33,7 +33,30 @@ for (const s of Object.values(map.subjects || {})) {
   for (const a of s.assets || []) assets.add(a);
 }
 
+// Files that scripts load ON DEMAND, under a fixed ?v= that is not a content hash (sb_bise.js, sb_page_tabs.js, word_stats.js, test_prep.js ...) or under
+// another file's hash (the Maths readers ask for their solutions with their own ?v=). They are in no offline map and no shell list, so a fresh install had to
+// fetch them from the network the first time (Ans of Maths, Word Stats, Tests Preps, the Board SLO bar) and, with no network, the app covered the reader with
+// "not on this phone yet" (found on a fresh install of the app, X-08). They are packed with an empty version: the app's SiteStore serves such an entry for
+// whatever ?v= the page asks for.
+const ON_DEMAND = ['js/word_stats_words.js', 'js/test_prep_bank.js', 'js/bise_swat_data.js',
+  'js/math_5_solutions.js', 'js/math_6_solutions.js', 'js/math_7_solutions.js', 'js/math_8_solutions.js', 'js/math_11_solutions.js'];
+for (const rel of ON_DEMAND) if (!files.has(rel)) files.set(rel, { v: '', sha256: '' });
+
 const problems = [];
+// a script or style that another script names but lazy.html does not, and that the app does not carry, would need the network on a fresh install: name it above
+{
+  const lazyHtml = fs.readFileSync(path.join(ROOT, 'lazy.html'), 'utf8');
+  const shellPaths = new Set(bundle.swVersion().shell.map(e => e.split('?')[0]));
+  const names = [];
+  for (const d of ['js', 'js/core', 'css']) for (const f of fs.readdirSync(path.join(ROOT, d))) if (/\.(js|css)$/.test(f)) names.push(d + '/' + f);
+  const sources = names.filter(n => n.endsWith('.js')).map(n => [n, fs.readFileSync(path.join(ROOT, n), 'utf8')]);
+  for (const rel of names) {
+    const base = path.basename(rel);
+    if (files.has(rel) || shellPaths.has(rel) || lazyHtml.includes(base)) continue;
+    const by = sources.find(([n, text]) => n !== rel && text.includes(base));
+    if (by) problems.push(`${rel} is named by ${by[0]} but is in no shell list or offline map: add it to ON_DEMAND in tools/app/pack_books.js (or the app needs the network the first time it is used)`);
+  }
+}
 const plan = [];              // {rel, abs, sha256}
 for (const [rel, m] of files) {
   const abs = path.join(ROOT, rel);
