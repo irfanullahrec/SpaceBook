@@ -39,16 +39,16 @@ jobs:
           node-version: '22'
       - name: validate (syntax, datasets, index.html wiring, rebuilt-book contract)
         working-directory: SpaceBook Web
-        run: node tools/validate.js
+        run: bash ../.github/scripts/logged.sh node tools/validate.js
       - name: smoke (loads the whole app, opens every rebuilt book and tab)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tools/smoke.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/smoke.js
       - name: ARCH-02 matrix (a subject opens the same book whatever class was selected before)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tools/arch02_matrix.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/arch02_matrix.js
       - name: lazy page renders exactly like the eager page (every subject, chapter and tab)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tools/build/lazy_parity.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/build/lazy_parity.js
       - name: install dev tools (fake IndexedDB for the client tests; no browser download)
         working-directory: SpaceBook Web
         env:
@@ -56,90 +56,90 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: derived files are up to date (word stats, MCQ bank, study index, lazy page, search index; tools/build/all.js)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tools/build/all.js --check
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/build/all.js --check
       - name: offline layer (service worker, offline module, read-aloud)
         working-directory: SpaceBook Web
         run: |
-          node tests/offline/sw.js
-          node tests/offline/offline.js
-          node --max-old-space-size=6144 tests/offline/tts.js
+          bash ../.github/scripts/logged.sh node tests/offline/sw.js
+          bash ../.github/scripts/logged.sh node tests/offline/offline.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/offline/tts.js
       - name: content integrity (answer keys, placeholder media, dead PDF links) and content lint gate
         working-directory: SpaceBook Web
         run: |
-          node --max-old-space-size=6144 tests/content/integrity.js
-          node --max-old-space-size=6144 tools/content_lint.js --check
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/content/integrity.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/content_lint.js --check
       - name: no function wrapped by another file (SBHooks) and the hook registry is as locked
         working-directory: SpaceBook Web
         run: |
-          node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
-          node --max-old-space-size=6144 tests/hooks/hooks.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/wrappers_audit.js --check --page lazy.html
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/hooks/hooks.js
       - name: BISE Swat data (paper pattern totals, chapter tables, Board links, learning outcomes)
         working-directory: SpaceBook Web
-        run: node tests/bise/data.js
+        run: bash ../.github/scripts/logged.sh node tests/bise/data.js
       - name: lexicon (the generated file answers like the old book scan and loads no book)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/lexicon/equivalence.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/lexicon/equivalence.js
       - name: accessibility (tab bars, keyboard, dialogs, text contrast, axe-core)
         working-directory: SpaceBook Web
         run: |
-          node --max-old-space-size=6144 tests/a11y/tabs.js
-          node tests/a11y/contrast.js
-          node --max-old-space-size=8192 tests/a11y/axe.js
-          node tools/a11y_contrast.js --check
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/a11y/tabs.js
+          bash ../.github/scripts/logged.sh node tests/a11y/contrast.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=8192 tests/a11y/axe.js
+          bash ../.github/scripts/logged.sh node tools/a11y_contrast.js --check
       - name: reader workspace (wide-screen look, chapter rail, full screen, narrow screen, app page)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/reader/workspace.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/reader/workspace.js
       - name: Ans shows its answer in place (Pakistan Studies, in the dash or under the question, no answer window)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/reader/ans_inplace.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/reader/ans_inplace.js
       - name: rights notice (once per book, the owner's words, accessible) and the reader's copy guard (docs/launch/CONTENT_RIGHTS.md)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/reader/rights.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/reader/rights.js
       - name: activity cards fold, fill the table and show the work
         working-directory: SpaceBook Web
         run: |
-          node --max-old-space-size=6144 tests/reader/cards.js
-          node --max-old-space-size=6144 tests/fills/browser.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/reader/cards.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/fills/browser.js
       - name: Create Test, Grammar Stats and Ask SpaceBook (data and browser)
         working-directory: SpaceBook Web
         run: |
-          node tests/createtest/data.js
-          node tests/grammar/data.js
-          node --max-old-space-size=6144 tests/createtest/browser.js
-          node --max-old-space-size=6144 tests/grammar/browser.js
-          node --max-old-space-size=6144 tests/tutor/browser.js
+          bash ../.github/scripts/logged.sh node tests/createtest/data.js
+          bash ../.github/scripts/logged.sh node tests/grammar/data.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/createtest/browser.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/grammar/browser.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/tutor/browser.js
       - name: Study Plan check (a task is learnt only after the questions of the book are all right; engine, data, browser) and the lesson sheet of Go (data)
         working-directory: SpaceBook Web
         run: |
-          node tests/mastery/engine.js
-          node --max-old-space-size=6144 tests/mastery/data.js
-          node --max-old-space-size=6144 tests/mastery/browser.js
-          node --max-old-space-size=8192 tests/plan/study_sheet_data.js
+          bash ../.github/scripts/logged.sh node tests/mastery/engine.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/mastery/data.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/mastery/browser.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=8192 tests/plan/study_sheet_data.js
       - name: search inside the books (words, index, the box in the header)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=8192 tests/search/search.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=8192 tests/search/search.js
       - name: client sync core (store, outbox, back-off, pull)
         working-directory: SpaceBook Web
-        run: node tests/sync/unit.js
+        run: bash ../.github/scripts/logged.sh node tests/sync/unit.js
       - name: plans and free limits (the access rules and the question gates in Node; the chapter lock on the pages of every class)
         working-directory: SpaceBook Web
-        run: node tests/access/unit.js
+        run: bash ../.github/scripts/logged.sh node tests/access/unit.js
       - name: the phone and the app show the same book as the website (printed pages, Ans in place, the same tabs; skipped when the app folder is absent)
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tests/parity/app_same_book.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/parity/app_same_book.js
       - name: no saved question card (Board SLO bank, Solved Exercises, Classes 9-12) says its answer still needs to be completed
         working-directory: SpaceBook Web
-        run: node --max-old-space-size=6144 tools/launch/study_pending.js --check
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/launch/study_pending.js --check
       - name: Web and App parity (feature matrix, endpoints, sync events, item kinds, migrations, data, where a page is, reminders, plan answer)
         working-directory: SpaceBook Web
         run: |
-          node tools/parity/check.js
-          node --max-old-space-size=6144 tools/parity/data_parity.js
-          node tests/parity/locator.js
-          node --max-old-space-size=6144 tests/parity/words_reset.js
-          node --max-old-space-size=6144 tests/plan/reminders.js
-          node tests/sync/entitlements.js
-          node tests/feed/cards.js
+          bash ../.github/scripts/logged.sh node tools/parity/check.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/parity/data_parity.js
+          bash ../.github/scripts/logged.sh node tests/parity/locator.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/parity/words_reset.js
+          bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tests/plan/reminders.js
+          bash ../.github/scripts/logged.sh node tests/sync/entitlements.js
+          bash ../.github/scripts/logged.sh node tests/feed/cards.js
 
   # API tests on the PHP version the live host runs (7.4) with a scratch MySQL. Not yet a deploy gate:
   # continue-on-error until this job has been seen green once on GitHub, then add it to deploy.needs.

@@ -33,6 +33,17 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     await page.evaluate(() => { goToSubjects('cls5'); }); await sleep(500);
     await page.evaluate(() => { openSubject('cls5', 'cls5-math'); }); await sleep(1000);
     await page.evaluate(() => { selectSubjectChapter('math', 2, 'cls5'); }); await sleep(2500);
+    // a slow machine (the CI runner) may still be drawing the chapter: wait until the page is quiet before anything is measured. A page that redraws
+    // itself for ever never gets quiet; after 45 s the measuring goes ahead and the "no endless redrawing" check below fails as it should.
+    await page.evaluate(() => new Promise(res => {
+      const t0 = Date.now();
+      const look = () => {
+        let c = 0; const mo = new MutationObserver(m => { c += m.length; });
+        mo.observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
+        setTimeout(() => { mo.disconnect(); if (c < 40 || Date.now() - t0 > 45000) res(); else look(); }, 1200);
+      };
+      look();
+    }));
     return { ctx, page };
   }
   const facts = page => page.evaluate(() => {
