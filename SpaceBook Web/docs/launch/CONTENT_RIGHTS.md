@@ -6,7 +6,7 @@ Written 2026-10-29 on the owner's request (Classes 1 to 12, website and Android 
 
 * **No written permission of any rights holder is on file** (`FINDINGS_REGISTER.md` S-06; `docs/permissions/` has no record). The books are shown, and the app is meant to be offered under a subscription, without one. The notice below does not change that: it tells readers who owns what, it is not a licence.
 * **Nothing was removed.** The "Not for sale" and "Free From Government" marks, the names of authors and contributors, the rights notices and the publisher's name are all still in the books. `CONTENT_RIGHTS_AUDIT.md` lists every one of them for a decision.
-* **The notice and the copy guard are built and tested** (website and app) but are **not published**: they wait in the repositories until the owner has decided what the permission check allows.
+* **The notice and the copy guard are built and tested** (website and app). They were **pushed to `main` on 2026-10-29 on the owner's instruction (Web `8f68655d`, App `b764e5c`) while this permission question was still open**, so the owner took that decision knowingly: the notice states that rights stay with their owners, it does not make the books permitted.
 
 ## 2. The rule for removing anything
 
