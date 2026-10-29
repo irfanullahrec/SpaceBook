@@ -1,0 +1,37 @@
+@printed 7
+@sec activity1 | Activity Time: Write numbers up to 9 || سرگرمی کا وقت: ۹ تک کے اعداد لکھیں || د فعالیت وخت: تر ۹ پورې عددونه ولیکئ
+@deco Pink "Activity Time" ribbon over a table with three columns: pictures of balloons (1 to 9 of them in rows), a column for the numeral and a column for the word; the first row shows no balloons, with 0 and zero filled in.
+exercise Activity Time (Page 7)
+p Write numbers up to 9 in numerals and in words. || ۹ تک کے اعداد ہندسوں اور الفاظ میں لکھیں۔ || تر ۹ پورې عددونه په رقمونو او ټکو کې ولیکئ.
+cnt [] "0" "zero" || Example: no balloon — 0 — zero || مثال: کوئی غبارہ نہیں — ۰ — صفر || بېلګه: هېڅ بالون نشته — ۰ — صفر
+q 1 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:1 [] [] || 1 balloon || ۱ غبارہ || ۱ بالون
+sol 1 — one ## There is 1 balloon: 1, one. || ایک غبارہ ہے: ۱، ایک۔ || یو بالون دی: ۱، یو.
+q 2 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:2 [] [] || 2 balloons || ۲ غبارے || ۲ بالونه
+sol 2 — two ## There are 2 balloons: 2, two. || دو غبارے ہیں: ۲، دو۔ || دوه بالونه دي: ۲، دوه.
+q 3 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:3 [] [] || 3 balloons || ۳ غبارے || ۳ بالونه
+sol 3 — three ## There are 3 balloons: 3, three. || تین غبارے ہیں: ۳، تین۔ || درې بالونه دي: ۳، درې.
+q 4 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:4 [] [] || 4 balloons || ۴ غبارے || ۴ بالونه
+sol 4 — four ## There are 4 balloons: 4, four. || چار غبارے ہیں: ۴، چار۔ || څلور بالونه دي: ۴، څلور.
+q 5 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:5 [] [] || 5 balloons || ۵ غبارے || ۵ بالونه
+sol 5 — five ## There are 5 balloons: 5, five. || پانچ غبارے ہیں: ۵، پانچ۔ || پنځه بالونه دي: ۵، پنځه.
+q 6 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:6/3 [] [] || 6 balloons || ۶ غبارے || ۶ بالونه
+sol 6 — six ## There are 6 balloons: 6, six. || چھ غبارے ہیں: ۶، چھ۔ || شپږ بالونه دي: ۶، شپږ.
+q 7 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:7/4 [] [] || 7 balloons || ۷ غبارے || ۷ بالونه
+sol 7 — seven ## There are 7 balloons: 7, seven. || سات غبارے ہیں: ۷، سات۔ || اووه بالونه دي: ۷، اووه.
+q 8 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:8/4 [] [] || 8 balloons || ۸ غبارے || ۸ بالونه
+sol 8 — eight ## There are 8 balloons: 8, eight. || آٹھ غبارے ہیں: ۸، آٹھ۔ || اته بالونه دي: ۸، اته.
+q 9 | How many balloons? Write the numeral and the word. || کتنے غبارے ہیں؟ ہندسہ اور لفظ لکھیں۔ || څو بالونه دي؟ رقم او ټکی ولیکئ.
+cnt balloon:9/5 [] [] || 9 balloons || ۹ غبارے || ۹ بالونه
+sol 9 — nine ## There are 9 balloons: 9, nine. || نو غبارے ہیں: ۹، نو۔ || نهه بالونه دي: ۹، نهه.
+q 10 | Try yourself: Which is the greatest 1-digit number? || خود کوشش کریں: سب سے بڑا ایک ہندسی عدد کون سا ہے؟ || ځان هڅه وکړئ: تر ټولو لوی یو رقمي عدد کوم دی؟
+sol 9 ## The 1-digit numbers are 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. The greatest of them is 9. || ایک ہندسی اعداد ۰، ۱، ۲، ۳، ۴، ۵، ۶، ۷، ۸ اور ۹ ہیں۔ ان میں سب سے بڑا ۹ ہے۔ || یو رقمي عددونه ۰، ۱، ۲، ۳، ۴، ۵، ۶، ۷، ۸ او ۹ دي. له دوی نه تر ټولو لوی ۹ دی.
+@issue The "Guidelines for Teachers" strip at the foot of the page is too small to read in the sample scan; it is not transcribed.
+endexercise

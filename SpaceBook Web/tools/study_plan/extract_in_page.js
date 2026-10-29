@@ -156,7 +156,9 @@
         const obj = m && m.map[i] >= 0 ? m.cd.arr[m.map[i]] : null;
         return {t: t.slice(0, 120), c: obj ? count(obj) : {read: 1}};
       });
-      C.subjects.push({id: s.id, name: s.name, ur: s.nameUrdu || '', emoji: s.emoji || '📘', src: m ? m.cd.path : '', matched: m ? m.score : 0, chapters});
+      const row = {id: s.id, name: s.name, ur: s.nameUrdu || '', emoji: s.emoji || '📘', src: m ? m.cd.path : '', matched: m ? m.score : 0, chapters};
+      if (s.series) row.series = s.series;        // a private series' book (js/munawar_registry.js); Government books carry none
+      C.subjects.push(row);
     }
     if (C.subjects.length) out.classes.push(C);
   }
