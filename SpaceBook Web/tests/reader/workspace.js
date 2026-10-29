@@ -100,7 +100,11 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     if (!ans) break;
     await sleep(300);
     const pos = await page.evaluate(k => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].filter(x => x.getBoundingClientRect().width > 10)[k]; const r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; }, k);
-    await page.mouse.click(pos.x, pos.y); await sleep(1500);
+    // The first press loads the solutions file (several MB) and a slow machine, the CI runner, takes longer than a fixed wait: pressing again at that moment closes
+    // the answer before it ever appears. Wait until the window or the answer in the page is there (up to 25 s), then look.
+    await page.mouse.click(pos.x, pos.y);
+    await page.waitForFunction(() => !!document.querySelector('.bk-modal-card') || [...document.querySelectorAll('.sb-solve')].some(x => !x.hidden && x.textContent.trim().length > 5 && !/^Loading the solution/.test(x.textContent.trim())), null, { timeout: 25000 }).catch(() => { /* nothing came: it is looked at below */ });
+    await sleep(500);
     m = await page.evaluate(() => {
       const c = document.querySelector('.bk-modal-card'); if (!c) return null;
       const r = c.getBoundingClientRect(), bar = c.querySelector('.bk-modal-bar').getBoundingClientRect(), body = c.querySelector('.bk-modal-body');

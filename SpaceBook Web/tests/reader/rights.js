@@ -124,6 +124,13 @@ const WORDS = 'SpaceBook provides an interactive learning environment designed t
     return { text: a.defaultPrevented, picture: b.defaultPrevented, exerciseWidget: c.defaultPrevented };
   });
   check('dragging book text or a book picture out is prevented, a widget that is dragged on purpose still works', drag.text && drag.picture && !drag.exerciseWidget, drag);
+  const menu = await page.evaluate(() => {
+    const send = (el, type) => { const ev = new PointerEvent('contextmenu', { bubbles: true, cancelable: true, pointerType: type }); el.dispatchEvent(ev); return ev.defaultPrevented; };
+    const s = [...document.querySelectorAll('.bk-page .m6-s')].find(e => (e.textContent || '').trim().length > 20);
+    const t = document.createElement('textarea'); document.body.appendChild(t);
+    return { mouseOnBook: send(s, 'mouse'), touchOnBook: send(s, 'touch'), mouseInTextBox: send(t, 'mouse') };
+  });
+  check('the browser\'s right-click menu (Copy, Ask Gemini, Search Google) is not opened over book text, but a long press on a touch screen and a text box keep theirs', menu.mouseOnBook && !menu.touchOnBook && !menu.mouseInTextBox, menu);
   await page.evaluate(() => { getSelection().removeAllRanges(); });
   const sent = await page.evaluate(() => { const e = [...document.querySelectorAll('.bk-page .m6-s')].find(x => { const b = x.getBoundingClientRect(); return b.width > 80 && b.top > 150 && b.bottom < 700; }); if (!e) return null; e.scrollIntoView({ block: 'center' }); const b = e.getBoundingClientRect(); return { x: b.left + 30, y: b.top + b.height / 2 }; });
   if (sent) await page.mouse.click(sent.x, sent.y);

@@ -51,6 +51,7 @@ In the reader only (the book text and its exercise pages), on the website and in
 |---|---|
 | Ctrl+C, the browser's Copy and Cut menu entries, Select All then copy | a `copy` / `cut` handler in `js/sb_rights.js` (also checks whether the selection reaches the book, so Select All does not bypass it) |
 | Dragging selected text or a picture out of the book | a `dragstart` handler; exercise widgets that are dragged on purpose keep working |
+| The browser's own right-click menu over book text (Copy, "Ask Gemini about ...", "Search Google for ...", "Translate selection", Print, Inspect) | a `contextmenu` handler in `js/sb_rights.js` for a mouse or the menu key (added 2026-10-29 after the owner saw Copy in that menu); a long press on a touch screen is left alone: word meanings and the phone's selection handles use it |
 | The Android selection bar's Copy, Share and the "process text" entries of other apps (Translate, Search ...) for selected book text. The bar of a typing field (notes, answers, the report form) is left as the system made it: Android offers Cut and Paste only there, and that is how the filter tells them apart | `ui/web/GuardedWebView.kt` (`ExportFree`), tested by `ExportFreeTest` |
 
 **Kept on purpose:** the text stays selectable; word meanings, sentence translation, read aloud, screen readers and the selection tools work as before; typing fields (notes, the search box, the report form, answer boxes) still copy; the person is told why in a polite status message. Nothing is hidden from screen readers and no `user-select: none` is used.

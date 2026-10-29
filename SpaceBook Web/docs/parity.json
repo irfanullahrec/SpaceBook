@@ -72,11 +72,20 @@
   {
    "id": "plans.free",
    "area": "Accounts and plans",
-   "name": "Free use without an account: Chapter 1 of every subject, 50 Test Preparation questions, 50 Study Plan questions, 1 paper; purchase window at each limit",
+   "name": "Free use without an account: Chapters 1 and 2 of every subject, 50 Test Preparation questions, 50 Study Plan questions, 1 paper; purchase window at each limit",
    "status": "same",
    "web": "js/sb_access.js (chapter lock, question and paper gates) + js/sb_billing.js",
    "app": "the same pages in the app's web view + access/AccessRules.kt + a lock on the native chapter list",
    "data": "tables visitors, free_usage (api/billing.php consume); the visitor id is X-SB-Visitor on both"
+  },
+  {
+   "id": "plans.owner_key",
+   "area": "Accounts and plans",
+   "name": "Owner's licence key: a button under See plans (chapter lock, plans window, Home, Me) opens every chapter and lifts the free limits on that device; only a salted hash of the key is in the code",
+   "status": "same",
+   "web": "js/sb_access.js (unlockWithKey, keyDialog, ownerPass) + js/sb_billing.js + css/sb_billing.css",
+   "app": "the same pages in the web view + the app's own buttons (Home, Me > My plans) + SBHost.ownerPass / setOwnerPass + access/OwnerPass.kt, Prefs, AppViewModel.canRead and the native chapter lock",
+   "data": "device only (localStorage sb_owner_pass; the app's settings store): no table and no endpoint, the server cannot know it"
   },
   {
    "id": "plans.buy",

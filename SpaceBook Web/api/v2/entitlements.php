@@ -5,7 +5,7 @@
 //   GET api/v2/entitlements.php      (guest, or 'Authorization: Bearer <device token>', or the session cookie; X-SB-Visitor for a guest)
 //     -> {ok, plan, signedIn, unlocked:false, classes, features{...}, access{...}, free{...}, subscriptions[...], version, flags{syncV2}}
 //
-// Version 2 (billing): Chapter 1 of every subject, 50 Test Preparation questions, 50 Study Plan questions and 1 paper are free; the rest
+// Version 2 (billing): Chapters 1 and 2 of every subject, 50 Test Preparation questions, 50 Study Plan questions and 1 paper are free; the rest
 // opens with an approved payment (api/lib/billing.php holds every rule). `access` lists what the paid plans open, `free` how much of the
 // free allowance is used. Both clients read this answer, so a change here needs no app update. A client that cannot reach this endpoint
 // keeps the last answer it saw (never a paid answer past its expiry), and on a first run treats everything as free-tier.
