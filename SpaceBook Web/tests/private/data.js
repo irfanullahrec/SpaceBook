@@ -15,13 +15,18 @@ const books = reg.books;
 
 // 1. the registry files are the ones registry.py writes
 {
-  let out = null, err = null;
-  for (const py of ['python3', 'python']) {        // the CI runner has python3, a Windows PC has python
-    try { out = cp.execFileSync(py, ['-P', path.join(MUN, 'tools', 'registry.py'), '--check'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); break; }
-    catch (e) { err = e; if (e.code !== 'ENOENT') break; }
+  let out = null, err = null, found = false;
+  for (const py of ['python3', 'python']) {        // the CI runner has python3, a Windows PC has python (python3 there may be the Store stub)
+    try { out = cp.execFileSync(py, ['-P', path.join(MUN, 'tools', 'registry.py'), '--check'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); found = true; break; }
+    catch (e) {
+      err = e;
+      const text = String(e.stderr || '') + String(e.stdout || '');
+      if (e.code === 'ENOENT' || /Python was not found/i.test(text)) continue;      // not a real interpreter: try the next
+      found = true; break;                                                          // a real Python said the registry is stale
+    }
   }
-  if (out === null && err && err.code === 'ENOENT') console.log('SKIP  registry.py --check (no Python on this machine)');
-  else check('books.json and js/munawar_registry.js are what registry.py writes', out !== null && /up to date/.test(out), String((err && (err.stderr || err.message)) || out));
+  if (!found) console.log('SKIP  registry.py --check (no Python on this machine)');
+  else check('books.json and js/munawar_registry.js are what registry.py writes', out !== null && /up to date/.test(out), String((err && (err.stderr || err.stdout || err.message)) || out));
 }
 
 check('42 books, ids unique, four classes', books.length === 42 && new Set(books.map(b => b.subjectId)).size === 42 && new Set(books.map(b => b.cls)).size === 4, books.length);
@@ -71,7 +76,7 @@ vm.runInContext(read('js/munawar_c1_math_book.js'), sb1);
 const M1 = sb1.window.CLS1_BOOKS['mun-math'];
 const blocks = []; (function walk(l) { (l || []).forEach(x => { blocks.push(x); walk(x.blocks); walk(x.items); }); })(M1.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
 const sols = Object.keys(sb1.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc1math-'));
-check('Class 1 Mathematics: 8 pages reviewed, Unit 1 has its pages, 12 answers, every question has its answer', M1.book.reviewedPdfPages === 8 && M1.units[0].sections.length >= 4 && sols.length === 12 && blocks.filter(b => b.t === 'q').every(q => q.solId && sb1.window.CLS6_SOLUTIONS[q.solId]), { reviewed: M1.book.reviewedPdfPages, sections: M1.units[0].sections.length, sols: sols.length });
+check('Class 1 Mathematics: 11 pages reviewed, Unit 1 has its pages, 31 answers, every question has its answer', M1.book.reviewedPdfPages === 11 && M1.units[0].sections.length >= 4 && sols.length === 31 && blocks.filter(b => b.t === 'q').every(q => (q.parts && q.parts.length ? q.parts : [q]).every(p => p.solId && sb1.window.CLS6_SOLUTIONS[p.solId])), { reviewed: M1.book.reviewedPdfPages, sections: M1.units[0].sections.length, sols: sols.length });
 const texts = JSON.stringify(M1.units);
 check('the transcription says what could not be read instead of guessing it (@issue notes are in the ledger)', fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8').includes('too small to read') || fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8').includes('cannot be read'));
 check('every sentence of the transcribed pages has Urdu and Pashto', !/"en":"[^"]+","ur":""/.test(texts) && !/UNTRANSLATED/.test(fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8')));
