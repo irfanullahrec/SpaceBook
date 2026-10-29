@@ -33,4 +33,4 @@ The 42 PDFs in `D:\SpaceBook\Books\Private\Munawar` are **sample copies**: each 
 
 ## State (2026-10-29)
 
-Built and wired: registry, builder, covers, modals, App dialogs, 42 data files. Transcribed: **c1-math pages 0-7 of 88** (front matter, Unit 1 pages 4-8: numbers 1-9, zero, number words, writing numbers, backward counting, ascending / descending order; 12 answers). Everything else: units listed, pages awaiting review.
+Built and wired: registry, builder, covers, modals, App dialogs, 42 data files. Transcribed: **c1-math pages 0-12 of 88** (front matter, Unit 1 printed pages 4-13: numbers 1-9, zero, number words, writing numbers, backward counting, ascending / descending order, activities on ordering and counting, before / between / after, the concept of ten, place value (tens and ones); 44 answers). Everything else: units listed, pages awaiting review.
