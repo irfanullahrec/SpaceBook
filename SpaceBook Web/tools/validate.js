@@ -14,7 +14,7 @@ const JS = path.join(ROOT, 'js') + path.sep;
 const INDEX = path.join(ROOT, 'index.html');
 
 const DATA_FILES = [
-  'data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
+  'data.js', 'munawar_registry.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
@@ -34,7 +34,19 @@ const DATA_FILES = [
   'math_6_data.js', 'general_science_6_data.js', 'english_6_data.js', 'urdu_6_data.js',
   'islamiat_6_data.js', 'computer_6_data.js', 'geography_6_data.js', 'history_6_data.js',
   'hpe_6_data.js', 'drawing_6_data.js', 'arabic_6_data.js', 'mutalia_quran_6_data.js',
-  'pashto_6_data.js'
+  'pashto_6_data.js',
+  // Munawar (Kanz) series, Classes 1-4 (js/munawar_registry.js adds the books to DATA.subjects; the files register CLS<N>_BOOKS['mun-<code>'])
+  'munawar_c1_comp_book.js', 'munawar_c1_compbl_book.js', 'munawar_c1_eng_book.js', 'munawar_c1_gram_book.js',
+  'munawar_c1_gk_book.js', 'munawar_c1_isl_book.js', 'munawar_c1_math_book.js', 'munawar_c1_prel_book.js',
+  'munawar_c1_urdu_book.js', 'munawar_c1_ugram_book.js', 'munawar_c1_waqf_book.js', 'munawar_c2_comp_book.js',
+  'munawar_c2_compbl_book.js', 'munawar_c2_eng_book.js', 'munawar_c2_gram_book.js', 'munawar_c2_gk_book.js',
+  'munawar_c2_isl_book.js', 'munawar_c2_math_book.js', 'munawar_c2_prel_book.js', 'munawar_c2_ugram_book.js',
+  'munawar_c2_waqf_book.js', 'munawar_c3_comp_book.js', 'munawar_c3_compbl_book.js', 'munawar_c3_eng_book.js',
+  'munawar_c3_gram_book.js', 'munawar_c3_gk_book.js', 'munawar_c3_isl_book.js', 'munawar_c3_math_book.js',
+  'munawar_c3_prel_book.js', 'munawar_c3_urdu_book.js', 'munawar_c3_ugram_book.js', 'munawar_c3_waqf_book.js',
+  'munawar_c4_comp_book.js', 'munawar_c4_compbl_book.js', 'munawar_c4_eng_book.js', 'munawar_c4_gram_book.js',
+  'munawar_c4_isl_book.js', 'munawar_c4_math_book.js', 'munawar_c4_sci_book.js', 'munawar_c4_sst_book.js',
+  'munawar_c4_urdu_book.js', 'munawar_c4_ugram_book.js'
 ];
 
 let pass = 0, fail = 0;
@@ -93,8 +105,12 @@ if (D) {
     const all = [].concat(D.subjects.cls6, D.subjects.cls9, D.subjects.cls10, D.subjects.cls11, D.subjects.cls12).map(s => s.id);
     return new Set(all).size === all.length;
   })());
-  check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
-    D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
+  // the class card counts the Government subjects; a private series' books (series:'munawar', js/munawar_registry.js) are listed apart
+  const govCount = id => (D.subjects[id] || []).filter(s => !s.series).length;
+  check('class counts match subject arrays', D.classes.every(c => c.subjects === govCount(c.id)),
+    D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + govCount(c.id)).join(' '));
+  check('every private-series book is flagged with its series and listed apart from the Government subjects',
+    Object.values(D.subjects).every(list => list.every(s => !s.series || (D.series && D.series[s.series]))), 'a subject names a series DATA.series does not describe');
   safe('Class 12 books are included in the registry', () => check('Class 12 books are included in the registry', D.books.length >= 24, 'got ' + D.books.length));
   safe('book ids unique', () => check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length));
   safe('book subjects resolvable', () => check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(',')));
@@ -271,7 +287,7 @@ console.log('--- rebuilt books (CLSn_BOOKS) ---');
 const BOOK_LOCK = path.join(ROOT, 'tests', 'contract', 'cls_books.json');
 // books whose source is missing or whose page-by-page pass is unfinished (see docs/06_PROJECT_AUDIT and MEMORY)
 const NOT_COMPLETE = new Set(['cls1.gk', 'cls1.urdu', 'cls3.urdu', 'cls8.drawing', 'cls12.math', 'cls11.stat']);   // cls11.stat: units 8, 9 and the appendices are not in the reviewed data yet
-const clsFiles = jsFiles.filter(f => /window\.CLS[0-9]+_BOOKS\["[a-z0-9_]+"\] *=/.test(fs.readFileSync(JS + f, 'utf8')));
+const clsFiles = jsFiles.filter(f => /window\.CLS[0-9]+_BOOKS\["[a-z0-9_-]+"\] *=/.test(fs.readFileSync(JS + f, 'utf8')));   // "mun-<code>": the Munawar series' keys have a hyphen
 const cb = { console, setTimeout, clearTimeout };
 cb.window = cb;
 vm.createContext(cb);
@@ -288,7 +304,9 @@ for (let n = 1; n <= 12; n++) {
     bookUnits[id] = units.length;
     safe(id + ' has units with ids and titles', () => check(id + ' has units with ids and titles',
       units.length > 0 && units.every(u => u.id && u.title), units.length + ' units'));
-    if (NOT_COMPLETE.has(id)) {
+    // the Munawar (Kanz) books are transcribed as far as the publisher's low-resolution sample PDFs can be read
+    // (docs/source-verification/private/munawar/README.md): an incomplete one is known, a book that claims to be complete is checked like any other
+    if (NOT_COMPLETE.has(id) || (book.series === 'munawar' && !book.complete)) {
       console.log('KNOWN ' + id + ' not complete (' + book.reviewedPdfPages + '/' + book.totalPdfPages + ' pages)');
       continue;
     }
