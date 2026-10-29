@@ -22,12 +22,15 @@ function db_connect(): PDO
     $c = db_config();
     $dsn = sprintf('mysql:host=%s;port=%d;dbname=%s;charset=utf8mb4',
         $c['db_host'], isset($c['db_port']) ? $c['db_port'] : 3306, $c['db_name']);
-    return new PDO($dsn, $c['db_user'], $c['db_pass'], [
+    $pdo = new PDO($dsn, $c['db_user'], $c['db_pass'], [
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES   => false,
         PDO::ATTR_TIMEOUT            => 8,
     ]);
+    // every time in the database (NOW(), subscription start and expiry) is UTC, whatever the host's own zone is
+    $pdo->exec("SET time_zone = '+00:00'");
+    return $pdo;
 }
 
 function db(): PDO

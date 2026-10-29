@@ -50,6 +50,10 @@ function sb_account_export(PDO $pdo, int $uid): array
         'feed'        => sb_feed_export($pdo, $uid),      // the student's own posts and comments in the News Feed
         'feedback'    => sb_fb_export($pdo, $uid),         // the reports (suggestions, mistakes) the student sent while signed in
         'devices'     => $one('SELECT id, name, created_at, last_seen, revoked FROM devices WHERE user_id = ?', [$uid]),
+        'billing'     => [                                    // payment requests and subscriptions (plans, dates, status); the Easypaisa receipt id is the person's own
+            'payments'      => $one('SELECT ref, plan_type, class_id, subjects_json, amount_pkr, method, trx_id, paid_on, status, submitted_at, reviewed_at, review_note, activated_at, expires_at FROM payment_requests WHERE user_id = ? ORDER BY id', [$uid]),
+            'subscriptions' => $one('SELECT id, plan_type, class_id, status, starts_at, expires_at, source FROM subscriptions WHERE user_id = ? ORDER BY id', [$uid]),
+        ],
         'activity_log' => $one('SELECT action, ip, created_at FROM audit_log WHERE user_id = ? ORDER BY id DESC LIMIT 200', [$uid]),
     ];
 }

@@ -1,6 +1,6 @@
 <?php
 // Account API.
-//   POST api/auth.php?action=register  {name, father_name, user_type, whatsapp, password}
+//   POST api/auth.php?action=register  {name, father_name, whatsapp, password}   (one general account: the plan is chosen when buying; user_type is no longer asked)
 //   POST api/auth.php?action=login     {whatsapp, password}
 //   POST api/auth.php?action=logout
 //   GET  api/auth.php?action=me
@@ -15,8 +15,8 @@ require __DIR__ . '/session.php';
 require __DIR__ . '/lib/security.php';
 require __DIR__ . '/lib/account.php';
 require __DIR__ . '/lib/flags.php';
+require __DIR__ . '/lib/billing.php';
 
-const USER_TYPES   = ['school', 'teacher', 'student'];
 const MAX_FAILS    = 5;   // per number, per window
 const FAIL_WINDOW  = 15;  // minutes
 const MAX_FAILS_IP = 20;  // failed logins per address in the window (higher: a school shares one address)
@@ -91,6 +91,17 @@ function maybe_device(PDO $pdo, array $user, array $in): array
     return ['device' => sb_device_issue($pdo, (int)$user['id'], (string)($in['device_name'] ?? ''))];
 }
 
+// What this browser or phone already used of the free allowance comes with the person who signs in or registers (api/lib/billing.php)
+function bring_free_usage(PDO $pdo, int $uid): void
+{
+    try {
+        $vid = sb_visitor_touch($pdo, sb_visitor_from_request(), $uid, true);
+        sb_free_merge($pdo, $uid, $vid);
+    } catch (Throwable $e) {
+        error_log('SpaceBook free usage merge: ' . $e->getMessage());     // never stops a sign-in
+    }
+}
+
 // the signed-in, active user of this session, or a 401
 function require_session_user(PDO $pdo): array
 {
@@ -122,13 +133,11 @@ case 'register':
     $in = input();
     $name     = clean_name($in['name'] ?? '');
     $father   = clean_name($in['father_name'] ?? '');
-    $type     = strtolower(trim((string)($in['user_type'] ?? '')));
     $whatsapp = normalize_whatsapp((string)($in['whatsapp'] ?? ''));
     $password = (string)($in['password'] ?? '');
 
     if (mb_strlen($name) < 2 || mb_strlen($name) > 100)     fail(422, 'Please enter your name');
     if (mb_strlen($father) < 2 || mb_strlen($father) > 100) fail(422, 'Please enter father name');
-    if (!in_array($type, USER_TYPES, true))                 fail(422, 'Choose School, Teacher or Student');
     if (!$whatsapp)                                         fail(422, 'Enter a valid WhatsApp number');
     if (strlen($password) < 6)                              fail(422, 'Password must be at least 6 characters');
 
@@ -136,14 +145,15 @@ case 'register':
     $st->execute([$whatsapp]);
     if ($st->fetch()) fail(409, 'An account with this WhatsApp number already exists');
 
-    $st = $pdo->prepare('INSERT INTO users (name, father_name, user_type, whatsapp, password_hash, last_login_at)
-                         VALUES (?, ?, ?, ?, ?, NOW())');
-    $st->execute([$name, $father, $type, $whatsapp, password_hash($password, PASSWORD_DEFAULT)]);
+    $st = $pdo->prepare("INSERT INTO users (name, father_name, user_type, whatsapp, password_hash, signup_platform, last_login_at)
+                         VALUES (?, ?, 'general', ?, ?, ?, NOW())");
+    $st->execute([$name, $father, $whatsapp, password_hash($password, PASSWORD_DEFAULT), sb_platform()]);
 
     $st = $pdo->prepare('SELECT * FROM users WHERE id = ?');
     $st->execute([$pdo->lastInsertId()]);
     $user = $st->fetch();
     start_user_session($user);
+    bring_free_usage($pdo, (int)$user['id']);
     sb_audit($pdo, (int)$user['id'], 'register');
     reply(201, ['ok' => true, 'user' => public_user($user)] + maybe_device($pdo, $user, $in));
 
@@ -191,6 +201,7 @@ case 'login':
     }
     $pdo->prepare('UPDATE users SET last_login_at = NOW() WHERE id = ?')->execute([$user['id']]);
     start_user_session($user);
+    bring_free_usage($pdo, (int)$user['id']);
     sb_audit($pdo, (int)$user['id'], 'login');
     reply(200, ['ok' => true, 'user' => public_user($user)] + maybe_device($pdo, $user, $in));
 

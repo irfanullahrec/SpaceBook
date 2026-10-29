@@ -18,8 +18,10 @@ function fd_post(?string $token, string $action, array $body, array $extra = [],
 function fd_user(string $name = 'Test User', string $type = 'student'): array
 {
     reset_limits();
-    $r = reg(['name' => $name, 'father_name' => 'Secretfather', 'user_type' => $type, 'want_device' => true]);
-    return ['token' => $r['json']['device']['token'], 'id' => user_id_of($r['num']), 'jar' => $r['jar'], 'num' => $r['num']];
+    $r = reg(['name' => $name, 'father_name' => 'Secretfather', 'want_device' => true]);      // registration no longer asks for a type: accounts made before kept theirs
+    $id = user_id_of($r['num']);
+    if ($type !== 'student') test_pdo()->prepare('UPDATE users SET user_type = ? WHERE id = ?')->execute([$type, $id]);
+    return ['token' => $r['json']['device']['token'], 'id' => $id, 'jar' => $r['jar'], 'num' => $r['num']];
 }
 function fd_post_text(array $u, string $body, string $kind = 'text', $card = null): array
 {

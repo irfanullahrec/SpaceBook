@@ -1,6 +1,6 @@
 {
  "schema": "spacebook.parity/1",
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "statuses": [
   "same",
   "platform-specific",
@@ -68,6 +68,44 @@
    "data": "plan from entitlements; usage from this device's own records",
    "exemption": "The website's Home twin (js/sb_home_plans.js with its hunks in app.js, test_prep.js, sb_study_plan.js) is another session's unfinished work, in the working folder but not in any commit, so the deployed website does not have these tabs yet. It reads the same stored data the app's Home reads. When that work is committed this row becomes \"same\".",
    "ownerDecision": "Commit the Home My Stats / Project Stats / My Account work of the other session (js/sb_home_plans.js and its edits), after seeing it."
+  },
+  {
+   "id": "plans.free",
+   "area": "Accounts and plans",
+   "name": "Free use without an account: Chapter 1 of every subject, 50 Test Preparation questions, 50 Study Plan questions, 1 paper; purchase window at each limit",
+   "status": "same",
+   "web": "js/sb_access.js (chapter lock, question and paper gates) + js/sb_billing.js",
+   "app": "the same pages in the app's web view + access/AccessRules.kt + a lock on the native chapter list",
+   "data": "tables visitors, free_usage (api/billing.php consume); the visitor id is X-SB-Visitor on both"
+  },
+  {
+   "id": "plans.buy",
+   "area": "Accounts and plans",
+   "name": "Plans (Student, Teacher, Test Preparation), account before payment, Easypaisa payment window, Trx ID, Pending Verification",
+   "status": "same",
+   "web": "js/sb_billing.js (plans, class / subjects picker, payment window with copy buttons)",
+   "app": "the same window inside the app's web page (SBApp.openPlans); the sign-in is the app's own screen and the window comes back with the choice kept",
+   "data": "table payment_requests (api/billing.php submit_payment); prices and Easypaisa details come from api/billing.php?action=plans"
+  },
+  {
+   "id": "plans.account",
+   "area": "Accounts and plans",
+   "name": "My plans: plans with start and end, payments with status and rejection reason, renewal, expiry reminders, messages",
+   "status": "same",
+   "web": "avatar menu > My plans (js/sb_billing.js)",
+   "app": "Me tab plan card + the same My plans window (SBApp.openMyPlans)",
+   "data": "tables subscriptions, subscription_events, notifications (api/billing.php account, api/v2/entitlements.php)"
+  },
+  {
+   "id": "plans.admin",
+   "area": "Accounts and plans",
+   "name": "Management page: payment verification, users and subscriptions, free extensions, suspension, dashboard, audit trail",
+   "status": "web-only",
+   "web": "manage/index.php (own administrators, no JavaScript)",
+   "app": "none: it is the owner's tool, used in a PC browser; what it decides (approve, suspend, extend) reaches the app through the same database",
+   "data": "tables admins, admin_audit, payment_requests, subscriptions",
+   "exemption": "An administrator's tool for the owner's computer, not a student feature: the app has no screen for it and nothing in the app depends on one. Every decision it makes is read by the app at its next entitlements refresh, so the app follows approvals, suspensions, extensions and expiry without any app screen.",
+   "ownerDecision": "Say whether the owner also wants an administrator screen in the app (it would call the same server rules; not built)."
   },
   {
    "id": "acct.expiry",
@@ -631,6 +669,7 @@
  "endpoints": {
   "server": [
    "admin.php",
+   "billing.php",
    "auth.php",
    "feed.php",
    "feedback.php",

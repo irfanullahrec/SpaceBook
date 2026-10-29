@@ -55,11 +55,11 @@ echo "--- migrations ---\n";
 fresh_db();
 $pdo = test_pdo();
 $s = sb_migrate_status($pdo);
-check('empty database is at version 0 with 9 pending', $s['current'] === 0 && count($s['pending']) === 9 && $s['latest'] === 9, json_encode($s));
+check('empty database is at version 0 with 10 pending', $s['current'] === 0 && count($s['pending']) === 10 && $s['latest'] === 10, json_encode($s));
 $applied = sb_migrate_up($pdo);
-check('up applies all nine migrations', count($applied) === 9, json_encode($applied));
+check('up applies all ten migrations', count($applied) === 10, json_encode($applied));
 $tables = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
-foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors', 'user_items', 'feed_posts', 'feed_comments', 'feed_post_likes', 'feed_comment_likes', 'feed_reports', 'feedback_reports', 'feedback_images'] as $t) {
+foreach (['users', 'login_attempts', 'activity_progress', 'study_plans', 'test_prep_records', 'test_prep_sessions', 'devices', 'rate_limits', 'audit_log', 'sync_events', 'activity_catalog', 'schema_version', 'sync_changes', 'user_sync_state', 'tp_answers', 'tp_days', 'tp_runs', 'sync_errors', 'user_items', 'feed_posts', 'feed_comments', 'feed_post_likes', 'feed_comment_likes', 'feed_reports', 'feedback_reports', 'feedback_images', 'visitors', 'free_usage', 'payment_requests', 'subscriptions', 'subscription_subjects', 'subscription_events', 'admins', 'admin_audit', 'notifications', 'activity_days', 'usage_stats'] as $t) {
     check("table $t exists", in_array($t, $tables, true));
 }
 check('second up changes nothing', sb_migrate_up($pdo) === []);
@@ -67,6 +67,8 @@ check('second up changes nothing', sb_migrate_up($pdo) === []);
 $pdo->exec("INSERT INTO users (name, father_name, user_type, whatsapp, password_hash) VALUES ('A','B','student','923001110001','x')");
 $uid = (int)$pdo->lastInsertId();
 $pdo->exec("INSERT INTO activity_progress (user_id, activity_key, steps_total, steps_done) VALUES ($uid, 'k1', 3, '0,1')");
+$undone10 = sb_migrate_down($pdo, 1);
+check('down 1 removes the 010 billing tables and the two users columns only', $undone10 === ['010_billing.sql'] && !in_array('payment_requests', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('admins', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && !in_array('signup_platform', $pdo->query('SHOW COLUMNS FROM users')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('feedback_reports', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone10));
 $undone9 = sb_migrate_down($pdo, 1);
 check('down 1 removes the 009 feedback tables only', $undone9 === ['009_feedback.sql'] && !array_intersect(['feedback_reports', 'feedback_images'], $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN)) && in_array('feed_posts', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true) && in_array('users', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true), json_encode($undone9));
 $undone8 = sb_migrate_down($pdo, 1);
@@ -83,10 +85,10 @@ check('down 1 more removes the 003 tables and the plan rev column', sb_migrate_d
 check('down 1 more removes the 002 tables', sb_migrate_down($pdo, 1) === ['002_security_sync_v2.sql'] && !in_array('devices', $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN), true));
 check('down keeps student rows', (int)$pdo->query('SELECT COUNT(*) FROM activity_progress')->fetchColumn() === 1 && (int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn() === 1);
 check('down refuses to go below version 1', sb_migrate_down($pdo, 5) === [] && sb_schema_version($pdo) === 1);
-check('up again restores version 9', count(sb_migrate_up($pdo)) === 8 && sb_schema_version($pdo) === 9);
+check('up again restores version 10', count(sb_migrate_up($pdo)) === 9 && sb_schema_version($pdo) === 10);
 $dupNumbers = [];
 foreach (sb_migrations() as $v => $f) { if (isset($seenNo[$v])) $dupNumbers[] = $v; $seenNo[$v] = true; }
-check('every migration number is used by exactly one file', $dupNumbers === [] && count(glob($api . '/migrations/*.sql')) === 2 * 9 - 1, json_encode($dupNumbers));
+check('every migration number is used by exactly one file', $dupNumbers === [] && count(glob($api . '/migrations/*.sql')) === 2 * 10 - 1, json_encode($dupNumbers));
 
 // a database created by the old db.php (tables, no schema_version) with data in it
 fresh_db();
@@ -189,7 +191,7 @@ check('public health shows only ok/db', $h['code'] === 200 && $h['json'] === ['o
 $h = http('GET', 'health.php?token=wrong');
 check('wrong health token gives the public report', $h['json'] === ['ok' => true, 'db' => true]);
 $h = http('GET', 'health.php?token=test-health-token');
-check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 9 && $h['json']['schema']['pending'] === [], $h['body']);
+check('right health token adds PHP version and schema', isset($h['json']['php']) && $h['json']['schema']['current'] === 10 && $h['json']['schema']['pending'] === [], $h['body']);
 check('deploy check pattern "db":true is still present', strpos(http('GET', 'health.php')['body'], '"db":true') !== false);
 
 $r = reg(['want_device' => true, 'device_name' => 'Chrome']);
@@ -203,7 +205,7 @@ check('me with only a device token answers the user', $me['code'] === 200 && iss
 $me = http('GET', 'auth.php?action=me', null, ['Authorization: Bearer ' . str_repeat('0', 64)]);
 check('me with an unknown token answers no user', $me['code'] === 200 && $me['json']['user'] === null, $me['body']);
 $ent = http('GET', 'v2/entitlements.php');
-check('entitlements for a guest: unlocked, not signed in', $ent['code'] === 200 && $ent['json']['ok'] === true && $ent['json']['signedIn'] === false && $ent['json']['unlocked'] === true && $ent['json']['features']['sync'] === false, $ent['body']);
+check('entitlements for a guest: free tier, not signed in', $ent['code'] === 200 && $ent['json']['ok'] === true && $ent['json']['signedIn'] === false && $ent['json']['unlocked'] === false && $ent['json']['plan'] === 'free' && $ent['json']['features']['sync'] === false && $ent['json']['free']['prep_q']['limit'] === 50, $ent['body']);
 $ent = http('GET', 'v2/entitlements.php', null, ['Authorization: Bearer ' . $tok]);
 check('entitlements with a device token: signed in, sync on', $ent['json']['signedIn'] === true && $ent['json']['features']['sync'] === true && $ent['json']['plan'] === 'free', $ent['body']);
 $tp = test_pdo();
@@ -749,6 +751,7 @@ require __DIR__ . '/items_tests.php';
 require __DIR__ . '/admin_tests.php';
 require __DIR__ . '/feed_tests.php';
 require __DIR__ . '/feedback_tests.php';
+require __DIR__ . '/billing_tests.php';
 
 echo "--- backup / restore drill ---\n";
 function run_php(array $args, array $env = []): array

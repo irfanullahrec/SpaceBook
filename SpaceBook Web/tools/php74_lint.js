@@ -1,5 +1,5 @@
 'use strict';
-/* Flags PHP 8-only syntax/functions in api/ (the live host ran PHP 7.4.33 on 2026-10-19) and runs `php -l` if available.
+/* Flags PHP 8-only syntax/functions in api/ and manage/ (the live host ran PHP 7.4.33 on 2026-10-19) and runs `php -l` if available.
  * Heuristic, regex based: comments and string literals are stripped first.   node tools/php74_lint.js */
 const fs = require('fs'), path = require('path'), cp = require('child_process');
 const API = path.resolve(__dirname, '..', 'api');
@@ -23,7 +23,7 @@ function strip(src) {
 }
 function walk(d) { return fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.php') ? [path.join(d, e.name)] : []); }
 let bad = 0;
-const files = walk(API);
+const files = walk(API).concat(walk(path.resolve(__dirname, '..', 'manage')));
 for (const f of files) {
   strip(fs.readFileSync(f, 'utf8')).split('\n').forEach((line, i) => {
     if (/\?\s.*:\s/.test(line) && !/^\s*(case|default)\b/.test(line) && RULES[RULES.length - 1][0].test(line) && /\?[^?]*\b\w+\s*:/.test(line)) return; // ternary, not a named argument
