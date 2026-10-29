@@ -240,6 +240,9 @@ function jpegSize(b) {
   const axePath = require.resolve('axe-core/axe.min.js');
   await page.addScriptTag({ path: axePath });
   const axeRun = async label => {
+    // the dialog fades in over 150 ms: axe measured the colour of a half-transparent dialog now and then (color-contrast on a loaded PC), so wait for the fade to end
+    await page.waitForFunction(() => { const d = document.querySelector('.sbfb-dialog'); return !d || (d.getAnimations ? d.getAnimations().every(a => a.playState !== 'running') : true); }, null, { timeout: 5000 }).catch(() => {});
+    await new Promise(r => setTimeout(r, 300));
     const r = await page.evaluate(async () => { const res = await axe.run('.sbfb-dialog', { runOnly: ['wcag2a', 'wcag2aa', 'wcag21aa'] }); return res.violations.filter(v => v.impact === 'serious' || v.impact === 'critical').map(v => v.id + ':' + v.nodes.length); });
     T.check('axe finds no serious or critical problem in the ' + label, r.length === 0, r);
   };

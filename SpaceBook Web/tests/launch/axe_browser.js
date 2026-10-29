@@ -85,7 +85,10 @@ const AXE = fs.readFileSync(path.join(ROOT, 'node_modules', 'axe-core', 'axe.min
     await page.keyboard.press('Control+C');
     await sleep(500);
     const clip = ((await page.evaluate(() => navigator.clipboard.readText().catch(e => 'ERR ' + e.message))) || '').trim();
-    check('copy puts the same Urdu letters on the clipboard (no boxes, no reversed or broken text)', !!sel && clip.replace(/\s+/g, ' ') === sel.replace(/\s+/g, ' '), { sel: (sel || '').slice(0, 60), clip: clip.slice(0, 60) });
+    // Copying book text is switched off on purpose in the reader (js/sb_rights.js, docs/launch/CONTENT_RIGHTS.md): the clipboard keeps what it had. What this test cares about is
+    // that the selected text is real Urdu letters (no boxes, no replacement characters), which is what the selection tools and screen readers use.
+    check('the selected Urdu text is real Urdu letters (no boxes, no replacement characters, at least three letters in a row)', !!sel && /[؀-ۿ]{3,}/.test(sel) && !/�|□/.test(sel), { sel: (sel || '').slice(0, 60) });
+    check('copying book text leaves the clipboard alone (the reader\'s copy guard)', !!sel && clip.replace(/\s+/g, ' ') !== sel.replace(/\s+/g, ' '), { sel: (sel || '').slice(0, 60), clip: clip.slice(0, 60) });
     const mixed = await page.evaluate(() => { const t = document.querySelector('#page-content').innerText; return /[A-Za-z]/.test(t) && /[؀-ۿ]/.test(t); });
     check('the lesson page mixes Urdu and Latin text and both are in the page text', mixed);
     await ctx.close();
