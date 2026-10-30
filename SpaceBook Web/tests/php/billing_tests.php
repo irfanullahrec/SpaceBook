@@ -351,6 +351,8 @@ $tp->exec('DELETE FROM rate_limits');
 $mjar = tempnam(sys_get_temp_dir(), 'sbm');
 $pg = mhttp('GET', 'manage/index.php', null, [], $mjar);
 check('the management page shows only a sign-in form to a visitor, with strict headers', $pg['code'] === 200 && strpos($pg['body'], 'name="password"') !== false && strpos($pg['body'], 'Payments') === false && stripos($pg['head'], "default-src 'none'") !== false && stripos($pg['head'], 'X-Frame-Options: DENY') !== false && stripos($pg['head'], 'no-store') !== false && strpos($pg['body'], '<script') === false);
+$dirIdx = @file_get_contents(__DIR__ . '/../../manage/.htaccess');
+check('/manage/ with no file name opens the page on the host: manage/.htaccess makes index.php the directory index (the root one lists only lazy.html and index.html)', $dirIdx !== false && preg_match('/^DirectoryIndex\s+index\.php\s*$/m', $dirIdx) === 1 && preg_match('/^DirectoryIndex\s+lazy\.html/m', (string)@file_get_contents(__DIR__ . '/../../.htaccess')) === 1);
 foreach (['?v=payments', '?v=users', '?v=dash', '?v=export&kind=users', '?v=payment&id=1'] as $q) {
     $x = mhttp('GET', 'manage/index.php' . $q, null, [], tempnam(sys_get_temp_dir(), 'sbm'));
     if ($x['code'] !== 200 || strpos($x['body'], 'name="password"') === false || strpos($x['body'], 'Verified') !== false || strpos($x['body'], 'transaction_id') !== false) { $leaky = $q; break; }
