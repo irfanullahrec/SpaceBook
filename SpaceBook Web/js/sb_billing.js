@@ -90,7 +90,7 @@
   const homeIc = '<svg viewBox="0 0 24 24" width="18" height="18" fill="#1d6fe8" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>';
   const arrow = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   const crumb = last => '<nav class="sbp-crumb" aria-label="Breadcrumb">' + homeIc + '<span>›</span><span>Home</span><span>›</span><b>' + esc(last) + '</b></nav>';
-  const notIncl = x => (/not included/i.test(x) ? x : x + ' (Not included)');
+  const notIncl = x => (/not included|separately/i.test(x) ? x : x + ' (Not included)');
   function planCard(p) {
     const c = PCOLOR[p.id] || 'blue';
     return '<article class="sbb-plan sbp-' + c + '" data-plan="' + esc(p.id) + '"><div class="sbp-head"><div><h3>' + esc(p.title.replace(' module', '')) + '</h3>' +
