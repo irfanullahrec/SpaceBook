@@ -100,6 +100,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   { id: 'c1-prel', code: 'prel', name: 'Class 1 Preliminary Knowledge', pages: 64, units: 14, minSols: 200, maxUnanswered: 15 },
   { id: 'c1-comp', code: 'comp', name: 'Class 1 Computer', pages: 48, units: 6, minSols: 70, maxUnanswered: 8 },
   { id: 'c1-eng', code: 'eng', name: 'Class 1 English', pages: 72, units: 14, minSols: 270, maxUnanswered: 40 },
+  { id: 'c1-gram', code: 'gram', name: 'Class 1 English Grammar', pages: 32, units: 17, minSols: 140, maxUnanswered: 5 },
 ].forEach(t => {
   const sbt = { window: {} }; vm.createContext(sbt);
   vm.runInContext(read('js/munawar_c1_' + t.code + '_book.js'), sbt);
