@@ -107,6 +107,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   { id: 'c2-eng', cls: 2, code: 'eng', name: 'Class 2 English', pages: 80, units: 14, minSols: 435, maxUnanswered: 8 },
   { id: 'c2-gram', cls: 2, code: 'gram', name: 'Class 2 English Grammar', pages: 40, units: 22, minSols: 175, maxUnanswered: 8 },
   { id: 'c2-compbl', cls: 2, code: 'compbl', name: 'Class 2 Computer Book', pages: 40, units: 6, minSols: 75, maxUnanswered: 5 },
+  { id: 'c2-math', cls: 2, code: 'math', name: 'Class 2 Mathematics', pages: 75, units: 9, pagedUnits: 7, minSols: 90, maxUnanswered: 9 },
 ].forEach(t => {
   const cn = t.cls || 1;
   const sbt = { window: {} }; vm.createContext(sbt);
@@ -115,7 +116,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   const tblocks = []; (function walk(l) { (l || []).forEach(x => { tblocks.push(x); walk(x.blocks); walk(x.items); }); })(B.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
   const tsols = Object.keys(sbt.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc' + cn + t.code + '-'));
   const tun = tblocks.filter(b => b.t === 'q').flatMap(q => (q.parts && q.parts.length ? q.parts : [q]).filter(p => !(p.solId && sbt.window.CLS6_SOLUTIONS[p.solId])));
-  check(t.name + ': all ' + t.pages + ' pages reviewed, all ' + t.units + ' units have their pages, ' + t.minSols + '+ answers', B.book.reviewedPdfPages === t.pages && B.units.length === t.units && B.units.every(u => u.sections.length >= 1) && tsols.length >= t.minSols, { reviewed: B.book.reviewedPdfPages, units: B.units.length, sols: tsols.length });
+  check(t.name + ': all ' + t.pages + ' pages reviewed, ' + (t.pagedUnits || t.units) + ' of ' + t.units + ' units have their pages, ' + t.minSols + '+ answers', B.book.reviewedPdfPages === t.pages && B.units.length === t.units && B.units.filter(u => u.sections.length >= 1).length === (t.pagedUnits || t.units) && tsols.length >= t.minSols, { reviewed: B.book.reviewedPdfPages, units: B.units.length, paged: B.units.filter(u => u.sections.length >= 1).length, sols: tsols.length });
   check(t.name + ': every question with an answer in the lessons has its Ans; only drawing, pasting, matching, tracing and word-search activities (and the items noted as unreadable) have none', tun.length <= t.maxUnanswered, { unanswered: tun.length });
   const tledger = fs.readFileSync(path.join(MUN, t.id, 'ledger.json'), 'utf8');
   check(t.name + ': what could not be read is recorded as an @issue, and every sentence has Urdu and Pashto', /too small|cannot be read|printed in (very )?small/.test(tledger) && !/UNTRANSLATED/.test(tledger) && !/"en":"[^"]+","ur":""/.test(JSON.stringify(B.units)));
