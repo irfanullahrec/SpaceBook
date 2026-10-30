@@ -37,6 +37,12 @@ const PHP = [process.env.PHP, 'php', 'C:/xampp/php/php.exe'].filter(Boolean).fin
     n++;
     const r = await api('api/auth.php?action=register', { name, father_name: 'Secretfather', user_type: type || 'student', whatsapp: '92300' + String(7000000 + n * 17 + process.pid % 13), password: 'secret123', want_device: true, device_name: 'node' });
     if (!r.json || !r.json.ok) throw new Error('register failed ' + JSON.stringify(r));
+    // sign-up makes one general account (the plan is chosen when buying) and ignores user_type: a teacher is made by setting the type in the scratch database
+    if (type && type !== 'student' && r.json.user.user_type !== type) {
+      const set = spawnSync(PHP, ['-r', '$p = new PDO("mysql:host=" . (getenv("SB_TEST_DB_HOST") ?: "127.0.0.1") . ";dbname=spacebook_test_e2e;charset=utf8mb4", getenv("SB_TEST_DB_USER") ?: "root", getenv("SB_TEST_DB_PASS") !== false ? getenv("SB_TEST_DB_PASS") : ""); $p->prepare("UPDATE users SET user_type = ? WHERE id = ?")->execute([$argv[1], (int)$argv[2]]);', type, String(r.json.user.id)], { encoding: 'utf8' });
+      if (set.status !== 0) throw new Error('cannot make a ' + type + ' account: ' + (set.stderr || set.stdout));
+      r.json.user.user_type = type;
+    }
     return { token: r.json.device.token, cookie: r.cookie, user: r.json.user, auth: { Authorization: 'Bearer ' + r.json.device.token } };
   };
   const post = (acct, action, body) => api('api/feed.php?action=' + action, body, acct.auth);

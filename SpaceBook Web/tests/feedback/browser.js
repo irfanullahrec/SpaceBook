@@ -99,7 +99,7 @@ function jpegSize(b) {
   // a book page open, so the report knows where the student is
   await page.evaluate(() => openSubject('cls5', 'cls5-math'));
   await sleep(800);
-  await page.evaluate(() => selectSubjectChapter('math', 2, 'cls5'));
+  await page.evaluate(() => selectSubjectChapter('math', 1, 'cls5'));       // the second chapter: free for everybody (the third one shows the lock, with no pages)
   await page.waitForFunction(() => window.SBLibrary && SBLibrary.collect().units.length > 0, null, { timeout: 60000 });
   await sleep(1500);
   await hb.click();
