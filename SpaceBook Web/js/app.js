@@ -655,43 +655,62 @@ function renderClasses() {
     { label: "Subjects", active: true }
   ];
 
-  pageContent().innerHTML = `
-    <div class="classes-universe-wrapper">
-      <header class="sbd-class-heading"><span class="sbd-icon" aria-hidden="true">▤</span><div><h1>Choose Your Class</h1><p>Select your class to explore subjects, books and learning tools.</p></div></header>
-
-      <!-- Full-cover class cards -->
-      <div class="classes-jewel-grid">
-        ${(() => {
-          const clsCardCoverMap = {
-            'cls-pg': 'PG.webp',
-            'cls-nur': 'Nursery.webp',
-            'cls-kg': 'KG.webp',
-            'cls1': '1.webp',
-            'cls2': '2.webp',
-            'cls3': '3.webp',
-            'cls4': '4.webp',
-            'cls5': '5.webp',
-            'cls6': '6.webp',
-            'cls7': '7.webp',
-            'cls8': '8.webp',
-            'cls9': '9.webp',
-            'cls10': '10.webp',
-            'cls11': '11.webp',
-            'cls12': '12.webp'
-          };
-          return DATA.classes.map(c => {
-            const clsCoverFile = clsCardCoverMap[c.id];
-            if (!clsCoverFile) return '';
-            return `
-            <button type="button" class="class-jewel-card" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
-              <span class="sbd-grade-icon" aria-hidden="true">${c.emoji || '▤'}</span><span class="sbd-grade-title">${c.name}</span><span class="sbd-grade-meta">${c.subjects || (DATA.subjects[c.id] || []).length} subjects</span><span class="sbd-grade-open">Explore subjects →</span>
-            </button>`;
-          }).join("");
-        })()}
-      </div>
-    </div>`;
+  pageContent().innerHTML = sbClassesPageHtml();
 }
 
+// Choose Your Class (design 04): banner, grouped class cards, Continue Learning, Active Subjects, shortcuts and streak.
+function sbClassesPageHtml() {
+  const colors = ["red", "green", "yellow", "blue", "purple"], accent = ["#e8506e", "#12a05c", "#f2a413", "#1d6fe8", "#7a3fe0"];
+  const num = c => { const m = /(\d+)/.exec(c.id); return m ? Number(m[1]) : 0; };
+  const subCount = c => (DATA.subjects[c.id] || []).length;
+  const card = (c, i) => {
+    const k = (num(c) || i) % 5;
+    return `<button type="button" class="sbc-card sbc-${colors[k]}" data-cls="${c.id}" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
+      <img src="assets/ui/cls-book-${colors[k]}.png" alt="" width="46" height="54"><span class="sbc-go" style="--a:${accent[k]}">›</span>
+      <b>${c.name}</b><small>${subCount(c)} Subjects</small></button>`;
+  };
+  const inRange = (lo, hi) => DATA.classes.filter(c => num(c) >= lo && num(c) <= hi);
+  const early = DATA.classes.filter(c => num(c) === 0);
+  const group = (cls, title, range, note, cls2) => `<section class="sbc-group ${cls2}"><header><b>${title}</b> <small>${range}</small><span>${note}</span></header><div class="sbc-row">${cls.map(card).join("")}</div></section>`;
+  let last = null;
+  try { last = (window.SBContinue && SBContinue.list()[0]) || null; } catch (e) { last = null; }
+  const lastClass = last && DATA.classes.find(c => c.id === last.classId);
+  const focusId = (lastClass && lastClass.id) || (DATA.classes.find(c => c.id === "cls9") ? "cls9" : (DATA.classes[0] || {}).id);
+  const focus = DATA.classes.find(c => c.id === focusId) || { name: "", id: focusId };
+  const subj = (DATA.subjects[focusId] || []).slice(0, 8);
+  let st = { streak: 0 };
+  try { st = getStudyStats() || st; } catch (e) { /* default */ }
+  const subColors = ["blue", "green", "pink", "purple", "orange", "teal", "red", "indigo"];
+  const lastSub = last && (DATA.subjects[last.classId] || []).find(x => x.id === last.subjId);
+  const contTitle = last ? ((lastSub && lastSub.name) || "") + (last.title ? " — " + last.title : "") : "";
+  return `
+    <div class="sbc-page">
+      <section class="sbc-banner"><img class="sbc-books" src="assets/ui/cls-banner-books.png" alt="" width="270" height="160"><div class="sbc-btitle"><h1>Choose Your Class</h1><p>Select your class to access textbooks, subjects, practice questions and learning tools.</p></div>
+        <div class="sbc-b2"><img src="assets/ui/cls-trophy.png" alt="" width="70" height="86"><div><b>Learn.<br>Practice.<br>Improve.</b><small>Everything you need to succeed in one place.</small></div></div>
+        <div class="sbc-b3"><img src="assets/ui/cls-bulb.png" alt="" width="70" height="86"><b>Knowledge grows brighter with you!</b></div></section>
+      <div class="sbc-cols"><section class="sbc-select"><div class="sbc-selhead"><h2><svg viewBox="0 0 24 24" width="30" height="30" fill="#1d6fe8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 12v5c3 2.5 9 2.5 12 0v-5" fill="none" stroke="#1d6fe8" stroke-width="2"/></svg>Select Your Class</h2>
+        <label class="sbc-search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#4a5f8a" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg><input type="search" id="sbcFind" placeholder="Search classes..." oninput="sbFilterClasses(this.value)"></label></div>
+        ${early.length ? group(early, "Early Years", "(Play Group – KG)", "Fun first steps in learning", "sbc-early") : ""}
+        ${group(inRange(1, 5), "Primary", "(Classes 1 – 5)", "Build your foundation with core subjects", "sbc-primary")}
+        <div class="sbc-mid">${group(inRange(6, 8), "Middle", "(Classes 6 – 8)", "Strengthen your concepts and explore new subjects", "sbc-middle")}${group(inRange(9, 10), "Secondary", "(Classes 9 – 10)", "Build deeper understanding and exam readiness", "sbc-secondary")}</div>
+        ${group(inRange(11, 12), "Higher Secondary", "(Classes 11 – 12)", "Prepare for your future with advanced subjects", "sbc-higher")}
+      </section>
+      <aside class="sbc-side">
+        <section class="sbc-panel"><div class="sbc-ph"><h2><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#1d6fe8" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Continue Learning</h2><span class="sbc-pill">${focus.name}</span></div>
+          ${last ? `<div class="sbc-cont"><div><b>${contTitle}</b><small>${lastClass ? lastClass.name : ""}</small></div><button type="button" class="sbc-btn" onclick="SBContinue.resume(SBContinue.list()[0])">Continue ›</button></div>` : `<p class="sbc-empty">Open a book and it will appear here so you can continue from the same place.</p>`}</section>
+        <section class="sbc-panel"><div class="sbc-ph"><h2><svg viewBox="0 0 24 24" width="28" height="28" fill="#1d6fe8"><path d="M2 5c4-1.5 7-1 10 1v14c-3-2-6-2.5-10-1zM22 5c-4-1.5-7-1-10 1v14c3-2 6-2.5 10-1z"/></svg>Active Subjects <small>(${focus.name})</small></h2><button type="button" class="sbc-pill" onclick="goToSubjects('${focusId}')">View All</button></div>
+          <div class="sbc-subs">${subj.map((x, i) => `<button type="button" class="sbc-sub sbc-s-${subColors[i % 8]}" onclick="goToSubjects('${focusId}')"><i>${x.emoji || (x.name || "?").charAt(0)}</i><span><b>${x.name}</b><small>${x.chapters ? x.chapters + " Units" : "Open book"}</small></span><em>›</em></button>`).join("")}</div></section>
+      </aside></div>
+      <div class="sbc-tiles"><button type="button" class="sbc-tile" onclick="setActiveNav('home');renderHome()"><img src="assets/ui/tile-progress.png" alt="" width="40" height="46"><span><b>Track Your Progress</b><small>See how much you've learned in each subject.</small></span><em>›</em></button>
+        <button type="button" class="sbc-tile" onclick="setActiveNav('home');renderHome()"><img src="assets/ui/tile-trophy.png" alt="" width="40" height="46"><span><b>Earn Achievements</b><small>Complete tests, earn coins and build your streak.</small></span><em>›</em></button>
+        <button type="button" class="sbc-tile" onclick="setActiveNav('study-plan');renderPage('study-plan')"><img src="assets/ui/tile-target.png" alt="" width="40" height="46"><span><b>Create Your Study Plan</b><small>Set goals and get personalized recommendations.</small></span><em>›</em></button>
+        <div class="sbc-streak"><img src="assets/ui/flame.png" alt="" width="44" height="52"><b>${Number(st.streak) || 0} Day Streak</b></div></div>
+    </div>`;
+}
+function sbFilterClasses(q) {
+  q = String(q || "").toLowerCase();
+  document.querySelectorAll(".sbc-card").forEach(c => { c.style.display = !q || c.textContent.toLowerCase().indexOf(q) >= 0 ? "" : "none"; });
+}
 
 // ─── SUBJECTS ────────────────────────────
 function goToSubjects(classId) {

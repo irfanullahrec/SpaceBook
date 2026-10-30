@@ -38,8 +38,39 @@
     </div>`;
   }
   function preparation(tests) {
-    const safe = v => String(v).replace(/[<>&"']/g, '');
-    return `<section class="sbd-preparation"><div class="sbd-prep-heading"><div><h1>Tests Preps</h1><p>Practise from your books. Build confidence. Track your progress.</p></div><button class="sbd-primary" onclick="document.querySelector('.preps-jewel-grid').scrollIntoView({behavior:'smooth'})">＋ Add preparation track</button></div><h2>Your Preparation Tracks</h2><div class="sbd-prep-tracks">${tests.length ? tests.map(t=>`<article class="sbd-prep-track" style="--accent:${safe(t.color)}"><div class="sbd-card-head">${icon('questions',safe(t.color))}<div><h3>${safe(t.title)}</h3><p>${safe(t.full)}</p></div></div><div class="sbd-track"><i style="width:${t.acc}%"></i></div><div class="sbd-prep-facts"><span>${fmt(t.mcqs)} questions</span><b>${t.acc}% accuracy</b></div><button class="sbd-primary" onclick="SBTestPrep.open('${safe(t.track)}')">${t.paused?'Continue':'Practise'} →</button><button class="sbd-text-link" onclick="SBTestPrep.open('${safe(t.track)}').then(()=>SBTestPrep.tab('stats'))">View details</button></article>`).join(''):`<article class="sbd-prep-track sbd-prep-empty"><h3>Start your first preparation</h3><p>Choose an exam or subject below. Your progress and results will appear here.</p><button class="sbd-primary" onclick="document.querySelector('.preps-jewel-grid').scrollIntoView({behavior:'smooth'})">Choose a preparation track →</button></article>`}</div></section>`;
+    const safe = v => String(v == null ? '' : v).replace(/[<>&"']/g, '');
+    const ago = ts => { if (!ts) return ''; const m = Math.max(0, Math.round((Date.now() - ts) / 60000)); return m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' hours ago' : Math.round(m / 1440) + ' days ago'; };
+    let st = { streak: 0, dailyGoal: 20, todayQuestions: 0 };
+    try { st = Object.assign(st, getStudyStats()); } catch (_) { /* default */ }
+    const tint = ['#0785ff', '#07994c', '#8a22ef'];
+    const cards = tests.map((t, i) => {
+      const wrong = Math.max(0, t.mcqs - t.correct);
+      return `<article class="sbd-ptrack" style="--accent:${safe(t.color) || tint[i % 3]}"><header><span class="sbd-ptrack-ic">${safe(t.icon) || '📝'}</span><div><h3>${safe(t.title)}</h3><p>${safe(t.full)}</p></div><button type="button" class="sbd-chev" aria-label="Open" onclick="SBTestPrep.open('${safe(t.track)}')">›</button></header>
+        <div class="sbd-mastery"><span>Mastery Progress</span><b>${t.acc}%</b></div><div class="sbd-track"><i style="width:${t.acc}%"></i></div>
+        <div class="sbd-tiles"><div class="b"><b>${fmt(t.mcqs)}</b><small>Questions Attempted</small></div><div class="g"><b>${fmt(t.correct)}</b><small>Correct</small></div><div class="r"><b>${fmt(wrong)}</b><small>Incorrect</small></div></div>
+        <div class="sbd-prow"><button type="button" class="sbd-play" onclick="SBTestPrep.open('${safe(t.track)}')"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>${t.paused ? 'Continue Practice' : 'Practice'}</button><button type="button" class="sbd-detail" onclick="SBTestPrep.open('${safe(t.track)}').then(()=>SBTestPrep.tab('stats'))">View Details</button></div></article>`;
+    }).join('');
+    const recent = tests.flatMap(t => (t.recent || []).map(r => Object.assign({ title: t.title, color: t.color }, r))).sort((x, y) => y.ts - x.ts).slice(0, 5);
+    const rec = recent.map(r => `<li><span class="sbd-dotc" style="background:${safe(r.color)}"></span><span class="sbd-rt">${r.mode === 'mock' ? 'Mock test' : 'Practice'} — ${r.n} MCQs</span><em style="--c:${safe(r.color)}">${safe(r.title)}</em><b>${r.pct}%</b><small>${ago(r.ts)}</small></li>`).join('');
+    const goalPct = Math.min(100, Math.round(100 * n(st.todayQuestions) / Math.max(1, n(st.dailyGoal))));
+    return `<section class="sbd-preparation">
+      <div class="sbd-prep-heading"><span class="sbd-prep-ic"><svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM8 12h8M8 16h6"/></svg></span><div><h1>Tests Preps</h1><p>Practice chapter-wise tests, track your progress and get ready for exams.</p></div>
+      <button type="button" class="sbd-create" onclick="document.getElementById('sbdAllTracks').scrollIntoView({behavior:'smooth'})"><span>+</span>Create Preparation Track</button></div>
+      <div class="sbd-filters"><label>Exam scale<select id="sbdFScale" onchange="SBDesignUI.filterTracks()"><option value="">All scales</option>${['BPS-12','BPS-14','BPS-15','BPS-16','BPS-17'].map(x => `<option>${x}</option>`).join('')}</select></label><label>Show<select id="sbdFShow" onchange="SBDesignUI.filterTracks()"><option value="all">All Tracks</option><option value="active">Active Tracks</option></select></label><label class="sbd-fsearch">Search<input id="sbdFText" type="search" placeholder="Search tracks…" oninput="SBDesignUI.filterTracks()"></label></div>
+      <h2 class="sbd-h2"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#1d6fe8" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="#1d6fe8"/></svg>Your Preparation Tracks</h2>
+      <div class="sbd-ptracks">${cards || `<article class="sbd-ptrack sbd-pempty"><h3>Start your first preparation</h3><p>Choose an exam below. Your progress and results will appear here.</p></article>`}</div>
+      <div class="sbd-prep-two"><section class="sbd-panel"><h3>Recent Practice Activity</h3>${rec ? `<ul class="sbd-recent">${rec}</ul>` : '<p class="sbd-empty-copy">No practice yet. Pick a track below and answer a few MCQs.</p>'}</section>
+      <section class="sbd-panel"><h3>Study Streak &amp; Goals</h3><div class="sbd-streak"><div><b>${n(st.streak)}</b><small>Days<br>Study Streak</small></div><div><b>${n(st.todayQuestions)} / ${n(st.dailyGoal)}</b><small>Daily Goal<br>Today</small></div><div><b>${tests.reduce((x, t) => x + t.sessions, 0)}</b><small>Sessions<br>Completed</small></div></div><div class="sbd-track"><i style="width:${goalPct}%"></i></div></section></div>
+      <h2 class="sbd-h2" id="sbdAllTracks">All Preparation Tracks</h2></section>`;
   }
-  window.SBDesignUI = { dashboard, preparation };
+  function filterTracks() {
+    const sc = (document.getElementById('sbdFScale') || {}).value || '', show = (document.getElementById('sbdFShow') || {}).value || 'all', q = ((document.getElementById('sbdFText') || {}).value || '').toLowerCase();
+    const active = new Set([...document.querySelectorAll('.sbd-ptrack h3')].map(h => h.textContent.trim()));
+    document.querySelectorAll('.prep-jewel-card').forEach(c => {
+      const t = c.textContent.toLowerCase(), name = (c.querySelector('.pjc-name') || {}).textContent || '';
+      const ok = (!sc || t.indexOf(sc.toLowerCase()) >= 0) && (!q || t.indexOf(q) >= 0) && (show === 'all' || active.has(name.trim()));
+      c.style.display = ok ? '' : 'none';
+    });
+  }
+  window.SBDesignUI = { dashboard, preparation, filterTracks };
 })();
