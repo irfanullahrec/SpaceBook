@@ -80,7 +80,7 @@
   // -------- the three plans
   function whyText() {
     const w = whyInfo && whyInfo.why;
-    const m = { prep_q: 'You have used your ' + 50 + ' free Test Preparation questions.', plan_q: 'You have used your 50 free Study Plan questions.', paper: 'Your free paper is used. Paper creation needs a plan.', chapter: 'Chapter 1 is free. The other chapters need a plan.' };
+    const m = { prep_q: 'You have used your ' + 50 + ' free Test Preparation questions.', plan_q: 'You have used your 50 free Study Plan questions.', paper: 'Your free paper is used. Paper creation needs a plan.', chapter: 'Chapters 1 and 2 are free. The other chapters need a plan.' };
     return m[w] || '';
   }
   function planCard(p) {
