@@ -102,7 +102,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const ansPos = k => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].filter(x => x.getBoundingClientRect().width > 10)[k]; const r = b.getBoundingClientRect(); const e = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2); return { x: r.left + r.width / 2, y: r.top + r.height / 2, hit: e ? (e.tagName + '.' + String(e.className).slice(0, 40)) : 'none', ok: !!(e && (e === b || b.contains(e))) }; };
   const ansClose = k => { const b = [...document.querySelectorAll('.bk-page .sb-ans')].filter(x => x.getBoundingClientRect().width > 10)[k]; if (b && b.getAttribute('aria-expanded') === 'true') b.click(); };
   const shownNow = () => [...document.querySelectorAll('.sb-solve')].filter(x => !x.hidden && x.textContent.trim().length > 5 && !/^Loading the solution/.test(x.textContent.trim())).length;
-  for (let k = 0; k < Math.min(nAns, 90) && !m; k++) {
+  const loopStart = Date.now(); let loaded = false;           // the first answer ever loads the solutions file; after that an answer that does not come within 6 s is not coming
+  for (let k = 0; k < Math.min(nAns, 90) && !m && Date.now() - loopStart < 240000; k++) {
     if (await page.evaluate(() => !!document.querySelector('.sbfb-overlay'))) { await page.keyboard.press('Escape'); await sleep(300); }
     if (!await page.evaluate(`(${ansAt.toString()})(${k})`)) break;
     await sleep(250);
@@ -112,17 +113,17 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     // in the page is there (up to 25 s: a panel that was already open does not count), then look.
     const before = await page.evaluate(`(${shownNow.toString()})()`);
     await page.mouse.click(at.x, at.y);
-    await page.waitForFunction(b => !!document.querySelector('.bk-modal-card') || [...document.querySelectorAll('.sb-solve')].filter(x => !x.hidden && x.textContent.trim().length > 5 && !/^Loading the solution/.test(x.textContent.trim())).length > b, before, { timeout: 25000 }).catch(() => { /* nothing came: it is looked at below */ });
+    await page.waitForFunction(b => !!document.querySelector('.bk-modal-card') || [...document.querySelectorAll('.sb-solve')].filter(x => !x.hidden && x.textContent.trim().length > 5 && !/^Loading the solution/.test(x.textContent.trim())).length > b, before, { timeout: loaded ? 6000 : 25000 }).then(() => { loaded = true; }).catch(() => { /* nothing came: it is looked at below */ });
     await sleep(400);
     m = await page.evaluate(() => {
       const c = document.querySelector('.bk-modal-card'); if (!c) return null;
       const r = c.getBoundingClientRect(), bar = c.querySelector('.bk-modal-bar').getBoundingClientRect(), body = c.querySelector('.bk-modal-body');
       return { w: Math.round(r.width), h: Math.round(r.height), content: Math.round(bar.height + body.scrollHeight), screen: innerHeight };
     });
-    if (tries.length < 4) tries.push({ k, hit: at.hit, before, modal: await page.evaluate(() => !!document.querySelector('.bk-modal')) });
+    if (tries.length < 6) tries.push(await page.evaluate(([k, hit, before]) => { const p = [...document.querySelectorAll('.sb-solve')].find(x => !x.hidden); return { k, hit, before, now: [...document.querySelectorAll('.sb-solve')].filter(x => !x.hidden).length, modal: !!document.querySelector('.bk-modal'), overlay: !!document.querySelector('.sbfb-overlay, .sbrt-overlay, .sbb-backdrop, .ut-root.ut-show'), solve: p ? p.textContent.trim().slice(0, 40) : '' }; }, [k, at.hit, before]));
     if (!m) await page.evaluate(`(${ansClose.toString()})(${k})`);       // close the answer shown in the page
   }
-  if (!m) console.log('FAIL  (what the page did, first presses) -> ' + JSON.stringify({ buttons: nAns, tries, errors: errors.slice(0, 3) }).slice(0, 700));
+  if (!m) console.log('FAIL  (what the page did, first presses) -> ' + JSON.stringify({ buttons: nAns, seconds: Math.round((Date.now() - loopStart) / 1000), tries, errors: errors.slice(0, 3) }).slice(0, 1500));
   check('wide: the Ans window opens', !!m, m);
   check('wide: the Ans window is as big as its answer (no empty space below it), and never taller than the screen', !!m && (m.h <= m.content + 3 || m.h >= m.screen * 0.9) && m.h <= m.screen, m);
   await page.keyboard.press('Escape'); await sleep(500);
