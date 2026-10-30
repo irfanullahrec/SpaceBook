@@ -23484,7 +23484,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try { localStorage.setItem("sbHomeStatsTab", "account"); } catch (e) { /* storage unavailable */ }
     state.page = "home"; setActiveNav("home"); renderPage("home");
   });
-  act(set, () => { if (window.SBOffline && window.SBOffline.openPanel) window.SBOffline.openPanel(); });
+  act(set, () => { if (window.SBSettingsPage) window.SBSettingsPage.open(); else if (window.SBOffline && window.SBOffline.openPanel) window.SBOffline.openPanel(); });
 });
 
 // Header class chip shows the class being studied (set by goToSubjects), otherwise stays "Choose class".
