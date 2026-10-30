@@ -115,6 +115,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   { id: 'c3-math', cls: 3, code: 'math', name: 'Class 3 Mathematics', pages: 80, units: 7, pagedUnits: 5, minSols: 175, maxUnanswered: 10 },
   { id: 'c4-comp', cls: 4, code: 'comp', name: 'Class 4 Computer', pages: 64, units: 7, minSols: 155, maxUnanswered: 3 },
   { id: 'c4-gram', cls: 4, code: 'gram', name: 'Class 4 English Grammar', pages: 56, units: 18, minSols: 265, maxUnanswered: 10 },
+  { id: 'c4-math', cls: 4, code: 'math', name: 'Class 4 Mathematics', pages: 75, units: 7, pagedUnits: 6, minSols: 165, maxUnanswered: 3 },
 ].forEach(t => {
   const cn = t.cls || 1;
   const sbt = { window: {} }; vm.createContext(sbt);
