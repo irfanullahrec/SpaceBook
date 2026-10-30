@@ -140,6 +140,8 @@ foreach ([
     ['matching Origin with port', ['HTTP_ORIGIN' => 'http://127.0.0.1:8790', 'HTTP_HOST' => '127.0.0.1:8790'], true],
     ['foreign Origin', ['HTTP_ORIGIN' => 'https://evil.test', 'HTTP_HOST' => 'a.test'], false],
     ['Origin null', ['HTTP_ORIGIN' => 'null', 'HTTP_HOST' => 'a.test'], false],
+    ['same-origin fetch metadata with Origin null (a page sent with Referrer-Policy: no-referrer posting its own form)', ['HTTP_SEC_FETCH_SITE' => 'same-origin', 'HTTP_ORIGIN' => 'null', 'HTTP_HOST' => 'a.test'], true],
+    ['cross-site fetch metadata is refused even with a matching Origin', ['HTTP_SEC_FETCH_SITE' => 'cross-site', 'HTTP_ORIGIN' => 'https://a.test', 'HTTP_HOST' => 'a.test'], false],
     ['no headers (curl, old browser)', ['HTTP_HOST' => 'a.test'], true],
 ] as $c) {
     foreach (['HTTP_SEC_FETCH_SITE', 'HTTP_ORIGIN', 'HTTP_HOST'] as $k) unset($_SERVER[$k]);
