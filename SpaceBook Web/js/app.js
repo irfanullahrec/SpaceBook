@@ -23505,4 +23505,5 @@ document.addEventListener("click", e => {
   if (window.SBBilling) window.SBBilling.close();
   const a = document.getElementById("authModal"); if (a) a.hidden = true;
   const c = document.getElementById("accountModal"); if (c) c.remove();
+  const o = document.querySelector(".sb-off-overlay"); if (o) o.remove();
 }, true);
