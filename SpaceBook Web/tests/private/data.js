@@ -101,12 +101,14 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   { id: 'c1-comp', code: 'comp', name: 'Class 1 Computer', pages: 48, units: 6, minSols: 70, maxUnanswered: 8 },
   { id: 'c1-eng', code: 'eng', name: 'Class 1 English', pages: 72, units: 14, minSols: 270, maxUnanswered: 40 },
   { id: 'c1-gram', code: 'gram', name: 'Class 1 English Grammar', pages: 32, units: 17, minSols: 140, maxUnanswered: 5 },
+  { id: 'c2-prel', cls: 2, code: 'prel', name: 'Class 2 Preliminary Knowledge', pages: 72, units: 16, minSols: 220, maxUnanswered: 6 },
 ].forEach(t => {
+  const cn = t.cls || 1;
   const sbt = { window: {} }; vm.createContext(sbt);
-  vm.runInContext(read('js/munawar_c1_' + t.code + '_book.js'), sbt);
-  const B = sbt.window.CLS1_BOOKS['mun-' + t.code];
+  vm.runInContext(read('js/munawar_c' + cn + '_' + t.code + '_book.js'), sbt);
+  const B = sbt.window['CLS' + cn + '_BOOKS']['mun-' + t.code];
   const tblocks = []; (function walk(l) { (l || []).forEach(x => { tblocks.push(x); walk(x.blocks); walk(x.items); }); })(B.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
-  const tsols = Object.keys(sbt.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc1' + t.code + '-'));
+  const tsols = Object.keys(sbt.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc' + cn + t.code + '-'));
   const tun = tblocks.filter(b => b.t === 'q').flatMap(q => (q.parts && q.parts.length ? q.parts : [q]).filter(p => !(p.solId && sbt.window.CLS6_SOLUTIONS[p.solId])));
   check(t.name + ': all ' + t.pages + ' pages reviewed, all ' + t.units + ' units have their pages, ' + t.minSols + '+ answers', B.book.reviewedPdfPages === t.pages && B.units.length === t.units && B.units.every(u => u.sections.length >= 1) && tsols.length >= t.minSols, { reviewed: B.book.reviewedPdfPages, units: B.units.length, sols: tsols.length });
   check(t.name + ': every question with an answer in the lessons has its Ans; only drawing, pasting, matching, tracing and word-search activities (and the items noted as unreadable) have none', tun.length <= t.maxUnanswered, { unanswered: tun.length });
