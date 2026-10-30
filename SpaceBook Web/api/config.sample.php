@@ -9,4 +9,6 @@ return [
     'db_port' => 3306,
     // optional: secret that unlocks the detailed report at api/health.php?token=...
     'health_token' => '',
+    // optional: Groq key for the AI answers of "Ask SpaceBook" (api/ask.php). Without it Ask still answers offline from the books.
+    'groq_key' => '',
 ];
