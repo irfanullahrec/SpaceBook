@@ -83,6 +83,18 @@ const texts = JSON.stringify(M1.units);
 check('the transcription says what could not be read instead of guessing it (@issue notes are in the ledger)', fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8').includes('too small to read') || fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8').includes('cannot be read'));
 check('every sentence of the transcribed pages has Urdu and Pashto', !/"en":"[^"]+","ur":""/.test(texts) && !/UNTRANSLATED/.test(fs.readFileSync(path.join(MUN, 'c1-math', 'ledger.json'), 'utf8')));
 
+// the General Knowledge 1 book, page by page like the Mathematics one
+const sbg = { window: {} }; vm.createContext(sbg);
+vm.runInContext(read('js/munawar_c1_gk_book.js'), sbg);
+const G1 = sbg.window.CLS1_BOOKS['mun-gk'];
+const gblocks = []; (function walk(l) { (l || []).forEach(x => { gblocks.push(x); walk(x.blocks); walk(x.items); }); })(G1.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
+const gsols = Object.keys(sbg.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc1gk-'));
+const gunanswered = gblocks.filter(b => b.t === 'q').flatMap(q => (q.parts && q.parts.length ? q.parts : [q]).filter(p => !(p.solId && sbg.window.CLS6_SOLUTIONS[p.solId])));
+check('Class 1 General Knowledge: all 80 pages reviewed, all 14 chapters have their pages, 200+ answers, 100+ words for the Words tab', G1.book.reviewedPdfPages === 80 && G1.units.length === 14 && G1.units.every(u => u.sections.length >= 1) && gsols.length >= 200 && Object.keys(G1.words || {}).length >= 100, { reviewed: G1.book.reviewedPdfPages, units: G1.units.map(u => u.sections.length), sols: gsols.length, words: Object.keys(G1.words || {}).length });
+check('Class 1 General Knowledge: every question with an answer in the lessons has its Ans; only drawing, pasting, matching and word-search activities have none', gunanswered.length <= 20, { unanswered: gunanswered.length });
+const gledger = fs.readFileSync(path.join(MUN, 'c1-gk', 'ledger.json'), 'utf8');
+check('Class 1 General Knowledge: what could not be read is recorded as an @issue, and every sentence has Urdu and Pashto', gledger.includes('too small to read') && !/UNTRANSLATED/.test(gledger) && !/"en":"[^"]+","ur":""/.test(JSON.stringify(G1.units)));
+
 // 5. covers, index.html, coverPageMap
 check('every book has its cover file (covers/Munawar/<subject id>.webp)', books.every(b => fs.existsSync(path.join(ROOT, 'covers', b.cover)) && fs.statSync(path.join(ROOT, 'covers', b.cover)).size > 4000), books.filter(b => !fs.existsSync(path.join(ROOT, 'covers', b.cover))).map(b => b.id));
 const index = read('index.html');
