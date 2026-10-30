@@ -23491,7 +23491,8 @@ document.addEventListener("DOMContentLoaded", () => {
 (function () {
   const paint = () => {
     const t = document.getElementById("headerClassText"); if (!t) return;
-    const id = (typeof state !== "undefined" && state.selectedClass) || "";
+    let id = (typeof state !== "undefined" && state.selectedClass) || "";
+    if (!id) { try { const e = window.SBContinue && window.SBContinue.list()[0]; if (e) id = e.classId; } catch (err) { /* no saved place */ } }
     const c = id && DATA.classes.find(x => x.id === id);
     t.textContent = c ? c.name : "Choose class";
   };
@@ -23507,3 +23508,10 @@ document.addEventListener("click", e => {
   const c = document.getElementById("accountModal"); if (c) c.remove();
   const o = document.querySelector(".sb-off-overlay"); if (o) o.remove();
 }, true);
+
+// The header shows the signed-in first name beside the avatar (CSS reads data-name).
+document.addEventListener("spacebook:auth", e => {
+  const av = document.querySelector(".header-user-avatar"); if (!av) return;
+  const u = e.detail && e.detail.user;
+  if (u && u.name) av.setAttribute("data-name", String(u.name).trim().split(/\s+/)[0]); else av.removeAttribute("data-name");
+});

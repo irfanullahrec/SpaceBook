@@ -60,7 +60,17 @@
     w.__sbEnh = true;
     window[name] = w;
   }
-  function init() { wrapFn('goToSubjects', enhanceSubjects); }
+  // Reader (designs 06, 07): on wide screens the chapter list opens with its titles, like the "Unit Contents" panel; the rail button still folds it.
+  function openRail() {
+    if (window.innerWidth < 1280) return;
+    document.querySelectorAll('.math-unified-view:not([data-sb-rail])').forEach(v => { v.setAttribute('data-sb-rail', '1'); v.classList.add('sb-rail-open'); });
+  }
+  function init() {
+    wrapFn('goToSubjects', enhanceSubjects);
+    const host = document.getElementById('dashboard-body');
+    if (host && window.MutationObserver) new MutationObserver(openRail).observe(host, { childList: true, subtree: true });
+    openRail();
+  }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
   window.SBPagesEnhance = { enhanceSubjects };
 })();
