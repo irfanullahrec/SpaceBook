@@ -58,7 +58,7 @@ Registered account = a non-deleted `users` row (administrators excluded). Verifi
 
 ## 7. Tests
 
-`php tests/php/run.php` (billing section: seed administrator, free limits, payment submit, duplicates, approve / reject, renewal, month end, expiry, suspension, extensions, the management page over HTTP, CSV, the shared contract), `node tests/access/unit.js`, `node --max-old-space-size=8192 tests/access/browser.js` (a real Chrome on a throwaway database: locked chapter, plans, register, payment, Pending Verification, approval opens the chapter, suspension, Test Preparation and paper limits, phone width), the app's `AccessRulesTest` and `NetworkTest`.
+`php tests/php/run.php` (billing section: seed administrator, free limits, payment submit, duplicates, approve / reject, renewal, month end, expiry, suspension, extensions, the management page over HTTP, CSV, the shared contract), `node tests/access/unit.js`, `node --max-old-space-size=4096 tests/access/manage.js` (the management page's sign-in and forms in a real Chrome: the curl tests sent no Origin header and missed that browsers sent `Origin: null` and were refused with "Request not allowed"), `node --max-old-space-size=8192 tests/access/browser.js` (a real Chrome on a throwaway database: locked chapter, plans, register, payment, Pending Verification, approval opens the chapter, suspension, Test Preparation and paper limits, phone width), the app's `AccessRulesTest` and `NetworkTest`.
 
 ## 8. Decisions taken where the request left a scope open (please confirm or change)
 
