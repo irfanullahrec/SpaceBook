@@ -95,6 +95,24 @@ check('Class 1 General Knowledge: every question with an answer in the lessons h
 const gledger = fs.readFileSync(path.join(MUN, 'c1-gk', 'ledger.json'), 'utf8');
 check('Class 1 General Knowledge: what could not be read is recorded as an @issue, and every sentence has Urdu and Pashto', gledger.includes('too small to read') && !/UNTRANSLATED/.test(gledger) && !/"en":"[^"]+","ur":""/.test(JSON.stringify(G1.units)));
 
+// the books transcribed after General Knowledge 1: same four checks each
+[
+  { id: 'c1-prel', code: 'prel', name: 'Class 1 Preliminary Knowledge', pages: 64, units: 14, minSols: 200, maxUnanswered: 15 },
+  { id: 'c1-comp', code: 'comp', name: 'Class 1 Computer', pages: 48, units: 6, minSols: 70, maxUnanswered: 8 },
+  { id: 'c1-eng', code: 'eng', name: 'Class 1 English', pages: 72, units: 14, minSols: 270, maxUnanswered: 40 },
+].forEach(t => {
+  const sbt = { window: {} }; vm.createContext(sbt);
+  vm.runInContext(read('js/munawar_c1_' + t.code + '_book.js'), sbt);
+  const B = sbt.window.CLS1_BOOKS['mun-' + t.code];
+  const tblocks = []; (function walk(l) { (l || []).forEach(x => { tblocks.push(x); walk(x.blocks); walk(x.items); }); })(B.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
+  const tsols = Object.keys(sbt.window.CLS6_SOLUTIONS || {}).filter(k => k.startsWith('mc1' + t.code + '-'));
+  const tun = tblocks.filter(b => b.t === 'q').flatMap(q => (q.parts && q.parts.length ? q.parts : [q]).filter(p => !(p.solId && sbt.window.CLS6_SOLUTIONS[p.solId])));
+  check(t.name + ': all ' + t.pages + ' pages reviewed, all ' + t.units + ' units have their pages, ' + t.minSols + '+ answers', B.book.reviewedPdfPages === t.pages && B.units.length === t.units && B.units.every(u => u.sections.length >= 1) && tsols.length >= t.minSols, { reviewed: B.book.reviewedPdfPages, units: B.units.length, sols: tsols.length });
+  check(t.name + ': every question with an answer in the lessons has its Ans; only drawing, pasting, matching, tracing and word-search activities (and the items noted as unreadable) have none', tun.length <= t.maxUnanswered, { unanswered: tun.length });
+  const tledger = fs.readFileSync(path.join(MUN, t.id, 'ledger.json'), 'utf8');
+  check(t.name + ': what could not be read is recorded as an @issue, and every sentence has Urdu and Pashto', /too small|cannot be read|printed in (very )?small/.test(tledger) && !/UNTRANSLATED/.test(tledger) && !/"en":"[^"]+","ur":""/.test(JSON.stringify(B.units)));
+});
+
 // 5. covers, index.html, coverPageMap
 check('every book has its cover file (covers/Munawar/<subject id>.webp)', books.every(b => fs.existsSync(path.join(ROOT, 'covers', b.cover)) && fs.statSync(path.join(ROOT, 'covers', b.cover)).size > 4000), books.filter(b => !fs.existsSync(path.join(ROOT, 'covers', b.cover))).map(b => b.id));
 const index = read('index.html');
