@@ -300,17 +300,20 @@ function renderHome() {
 
   pageContent().innerHTML = `
     <div class="home-compact-universe">
+      <header class="sbd-page-heading"><div class="sbd-page-breadcrumb">⌂ &nbsp; › &nbsp; Home</div><div class="sbd-heading-row"><span class="sbd-icon sbd-title-icon" aria-hidden="true">▥</span><div><h1>My Study Bank</h1><p>Track what you know, what you have learnt, and what is next.</p></div><span class="sbd-period">This Month</span></div></header>
 
       <!-- 1. Header Bar: My Stats / Project Stats tabs -->
       <div class="home-compact-bar">
         <div class="hcb-left hcb-tabs" role="tablist" aria-label="Statistics">
           <button type="button" class="hcb-tab active" role="tab" aria-selected="true" data-home-tab="mine" onclick="switchHomeStatsTab('mine')">📊 My Stats</button>
           <button type="button" class="hcb-tab" role="tab" aria-selected="false" data-home-tab="project" onclick="switchHomeStatsTab('project')">📚 Project Stats</button>
+          <button type="button" class="hcb-tab" role="tab" aria-selected="false" data-home-tab="account" onclick="switchHomeStatsTab('account')">👤 My Account</button>
         </div>
         <span class="hcb-pill" id="hcbPill">⚡ Auto-saved Live Metrics</span>
       </div>
 
       <div id="homeProjectStats" class="home-project-stats" hidden></div>
+      <div id="homeAccount" class="home-project-stats" hidden></div>
 
       <div id="homeMyStats" class="home-my-stats">
       <!-- 2. The 6 Performance Metrics in One Single Row -->
@@ -423,15 +426,16 @@ function renderHome() {
       </div>
 
     </div>`;
-  if (window.SBWordStats) window.SBWordStats.renderMyWords($("homeMyWords"));
+  if (window.SBHomePlans) window.SBHomePlans.render($("homeMyStats"));
+  else if (window.SBWordStats) window.SBWordStats.renderMyWords($("homeMyWords"));
   let savedTab = 'mine';
   try { savedTab = localStorage.getItem('sbHomeStatsTab') || 'mine'; } catch (e) { /* storage unavailable */ }
-  if (savedTab === 'project') switchHomeStatsTab('project');
+  if (savedTab === 'project' || savedTab === 'account') switchHomeStatsTab(savedTab);
 }
 
 // Home header tabs: "My Stats" (study metrics) and "Project Stats" (vocabulary of all books)
 function switchHomeStatsTab(tab) {
-  const mine = $("homeMyStats"), project = $("homeProjectStats"), pill = $("hcbPill");
+  const mine = $("homeMyStats"), project = $("homeProjectStats"), pill = $("hcbPill"), account = $("homeAccount");
   if (!mine || !project) return;
   document.querySelectorAll('.hcb-tab').forEach(b => {
     const on = b.dataset.homeTab === tab;
@@ -440,7 +444,9 @@ function switchHomeStatsTab(tab) {
   });
   mine.hidden = tab !== 'mine';
   project.hidden = tab !== 'project';
-  if (pill) pill.textContent = tab === 'project' ? '📖 Words in every book' : '⚡ Auto-saved Live Metrics';
+  if (account) account.hidden = tab !== 'account';
+  if (pill) pill.textContent = tab === 'project' ? '📖 Words in every book' : tab === 'account' ? '👤 Plan, subscription and usage' : '⚡ Auto-saved Live Metrics';
+  if (tab === 'account' && window.SBHomePlans) window.SBHomePlans.renderAccount(account);
   if (tab === 'project' && window.SBWordStats) {
     window.SBWordStats.renderPanel(project, 'project');
     if (window.SBGrammar) { const g = document.createElement('div'); g.id = 'homeGrammar'; project.appendChild(g); window.SBGrammar.renderPanel(g); }     // Grammar Stats next to the word counts
@@ -651,6 +657,7 @@ function renderClasses() {
 
   pageContent().innerHTML = `
     <div class="classes-universe-wrapper">
+      <header class="sbd-class-heading"><span class="sbd-icon" aria-hidden="true">▤</span><div><h1>Choose Your Class</h1><p>Select your class to explore subjects, books and learning tools.</p></div></header>
 
       <!-- Full-cover class cards -->
       <div class="classes-jewel-grid">
@@ -677,7 +684,7 @@ function renderClasses() {
             if (!clsCoverFile) return '';
             return `
             <button type="button" class="class-jewel-card" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
-              <img class="cjc-cover-bg" src="covers/Classes Cards/Another-Look/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
+              <span class="sbd-grade-icon" aria-hidden="true">${c.emoji || '▤'}</span><span class="sbd-grade-title">${c.name}</span><span class="sbd-grade-meta">${c.subjects || (DATA.subjects[c.id] || []).length} subjects</span><span class="sbd-grade-open">Explore subjects →</span>
             </button>`;
           }).join("");
         })()}
@@ -10021,6 +10028,7 @@ function renderTestsPreps() {
 
   pageContent().innerHTML = `
     <div class="preps-universe-wrapper preps-one-look-view">
+      ${window.SBDesignUI ? SBDesignUI.preparation(window.SBTestPrep && SBTestPrep.summary ? SBTestPrep.summary() : []) : ''}
       <!-- 1. Compact Header Stage Bar -->
       <div class="preps-stage-bar">
         <div class="psb-left">
@@ -15191,6 +15199,9 @@ function readMathMatrix(text, start) {
 }
 
 function typesetMathTextNode(node) {
+  // A text node the observer is told about can be gone again by the time it runs (a translation line that was replaced), and the
+  // meaning cards (sentence click, sentence drawers) hold translations, not equations to repair.
+  if (!node.parentNode || (node.parentElement && node.parentElement.closest(".sb-sent-card,.sb-tri-drawer"))) return;
   // Word transcriptions commonly flatten superscripts (for example x2 for
   // x²). Restore the textbook exponent form when a letter or closing
   // parenthesis is immediately followed by digits in an expression.
@@ -23444,3 +23455,35 @@ function renderEnglishWritingSubContent(ch, subTab) {
       </div>`;
   }
 }
+
+// Sidebar Account / Settings (redesign): Account opens the Home account tab, Settings the downloads panel.
+document.addEventListener("DOMContentLoaded", () => {
+  const acc = document.getElementById("navAccountLink"), set = document.getElementById("navSettingsLink");
+  const act = (el, fn) => { if (!el) return; el.addEventListener("click", fn); el.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); } }); };
+  act(acc, () => {
+    if (window.SpaceBookAuth && window.SpaceBookAuth.openAccount) { window.SpaceBookAuth.openAccount(); return; }
+    try { localStorage.setItem("sbHomeStatsTab", "account"); } catch (e) { /* storage unavailable */ }
+    state.page = "home"; setActiveNav("home"); renderPage("home");
+  });
+  act(set, () => { if (window.SBOffline && window.SBOffline.openPanel) window.SBOffline.openPanel(); });
+});
+
+// Header class chip shows the class being studied (set by goToSubjects), otherwise stays "Choose class".
+(function () {
+  const paint = () => {
+    const t = document.getElementById("headerClassText"); if (!t) return;
+    const id = (typeof state !== "undefined" && state.selectedClass) || "";
+    const c = id && DATA.classes.find(x => x.id === id);
+    t.textContent = c ? c.name : "Choose class";
+  };
+  document.addEventListener("click", () => setTimeout(paint, 60));
+  document.addEventListener("DOMContentLoaded", paint);
+})();
+
+// The plans, sign-in and account windows are full content pages now: choosing anything in the sidebar leaves them.
+document.addEventListener("click", e => {
+  if (!e.target.closest || !e.target.closest("#sidebar .nav-link")) return;
+  if (window.SBBilling) window.SBBilling.close();
+  const a = document.getElementById("authModal"); if (a) a.hidden = true;
+  const c = document.getElementById("accountModal"); if (c) c.remove();
+}, true);
