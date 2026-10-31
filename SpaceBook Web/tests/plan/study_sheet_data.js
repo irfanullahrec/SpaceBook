@@ -37,7 +37,8 @@ check('the sheet module is loaded with the page, and asking for more parts than 
 check('no subject or chapter made the sheet throw', res.threw.length === 0, res.threw.slice(0, 5));
 check('in every chapter it can read, the parts are the plan\'s count and together they are every lesson section of the chapter once, in order (' + res.same + ' of ' + res.chapters + ' chapters: part n is section n; ' + res.shared.length + ' where the book has more sections than the plan counted: they are shared out)', res.bad.length === 0, res.bad.slice(0, 8));
 const fewer = res.fewer.filter(x => x[2] > 0);
-check('the chapters that fall back to the chapter page are those with no lesson section at all (' + (res.fewer.length - fewer.length) + ': reviews, drawing pages) and a handful where the book has fewer parts than the plan counted (' + fewer.length + ')', fewer.length <= 15, fewer.slice(0, 15));
+// 11 on the Government books; the 6 chapters of the Munawar Class 4 Social Studies book (cls4-mun-sst) keep each lesson in one section while the plan counted 2 to 10 topic headings, so Go opens their chapter page
+check('the chapters that fall back to the chapter page are those with no lesson section at all (' + (res.fewer.length - fewer.length) + ': reviews, drawing pages) and a handful where the book has fewer parts than the plan counted (' + fewer.length + ')', fewer.length <= 25, fewer.slice(0, 25));
 check('every part has a title', res.noTitle.length === 0, res.noTitle.slice(0, 5));
 check('the first part of the chapters renders to text (all but ' + res.emptyFirst.length + ': a part that holds only an exercise says so)', res.emptyFirst.length <= 3, res.emptyFirst.slice(0, 8));
 const pct = Math.round(100 * res.covered.length / res.subjects);
