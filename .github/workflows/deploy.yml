@@ -39,7 +39,7 @@ jobs:
           node-version: '22'
       - name: validate (syntax, datasets, index.html wiring, rebuilt-book contract)
         working-directory: SpaceBook Web
-        run: bash ../.github/scripts/logged.sh node tools/validate.js
+        run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/validate.js
       - name: smoke (loads the whole app, opens every rebuilt book and tab)
         working-directory: SpaceBook Web
         run: bash ../.github/scripts/logged.sh node --max-old-space-size=6144 tools/smoke.js
