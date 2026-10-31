@@ -28,19 +28,27 @@ function sub_count(PDO $tp, int $uid): int { return (int)$tp->query("SELECT COUN
 
 // ---------------------------------------------------------------- the first administrator
 $a = $tp->query("SELECT * FROM admins WHERE username = 'IrfanUllah123'")->fetch();
-$initial = 'Iam@' . '123123123';        // written in two pieces so that this file never contains the password as one string
-check('seeded administrator exists, active, must change the password, only a bcrypt hash stored', $a && $a['status'] === 'active' && (int)$a['must_change_password'] === 1 && strpos($a['password_hash'], '$2y$') === 0 && strpos($a['password_hash'], 'Iam@') === false);
-check('seeded hash is the hash of the agreed initial password', password_verify($initial, $a['password_hash']));
+// The agreed initial password is NOT in this file (it was, in two pieces, and the repository is public). The seeded row is checked as the migration made it; then its hash is
+// replaced, in this scratch database only, by the hash of a password of the tests' own, which the sign-in and password-change tests below use.
+check('seeded administrator exists, active, must change the password, only a bcrypt hash (cost 12) stored', $a && $a['status'] === 'active' && (int)$a['must_change_password'] === 1 && preg_match('/^\$2y\$12\$/', (string)$a['password_hash']) === 1);
+$initial = 'Test-only-' . bin2hex(random_bytes(6)) . '-Aa1';
+$tp->prepare('UPDATE admins SET password_hash = ? WHERE username = ?')->execute([password_hash($initial, PASSWORD_BCRYPT), 'IrfanUllah123']);
+// No tracked file may contain the database password of the local, git-ignored api/config.php (the agreed initial administrator password is the same string):
+// checked where that file exists (the owner's PC); CI has no config.php before the deploy writes it.
+$secret = '';
+if (is_file($root . '/api/config.php')) { $cfgLocal = require $root . '/api/config.php'; $secret = is_array($cfgLocal) ? (string)($cfgLocal['db_pass'] ?? '') : ''; }
 $leak = [];
-$it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS));
-foreach (['api', 'manage', 'css', 'tests', 'tools'] as $dir) {
-    foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root . '/' . $dir, FilesystemIterator::SKIP_DOTS)) as $f) {
-        if (!preg_match('/\.(php|js|css|html|json|sql|md|txt)$/', $f->getFilename()) || $f->getSize() > 2000000 || $f->getFilename() === 'config.php') continue;     // config.php is the git-ignored live/local credentials file
-        if (strpos((string)file_get_contents($f->getPathname()), $initial) !== false) $leak[] = $f->getPathname();
+if (strlen($secret) >= 8) {
+    foreach (['api', 'manage', 'css', 'tests', 'tools', 'docs'] as $dir) {
+        if (!is_dir($root . '/' . $dir)) continue;
+        foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root . '/' . $dir, FilesystemIterator::SKIP_DOTS)) as $f) {
+            if (!preg_match('/\.(php|js|css|html|json|sql|md|txt)$/', $f->getFilename()) || $f->getSize() > 2000000 || $f->getFilename() === 'config.php') continue;     // config.php is the git-ignored live/local credentials file
+            if (strpos((string)file_get_contents($f->getPathname()), $secret) !== false) $leak[] = $f->getPathname();
+        }
     }
+    foreach (['index.html', 'lazy.html', 'sw.js'] as $f) if (is_file($root . '/' . $f) && strpos((string)file_get_contents($root . '/' . $f), $secret) !== false) $leak[] = $f;
 }
-foreach (['index.html', 'lazy.html', 'sw.js'] as $f) if (is_file($root . '/' . $f) && strpos((string)file_get_contents($root . '/' . $f), $initial) !== false) $leak[] = $f;
-check('the initial password is in no source, page, script or test file', $leak === [], json_encode($leak));
+check('the database password (also the agreed initial administrator password) is in no source, page, script or test file' . (strlen($secret) >= 8 ? '' : ' (not checked: no local api/config.php)'), $leak === [], json_encode($leak));
 
 // ---------------------------------------------------------------- plans
 $p = bill('GET', 'plans');
