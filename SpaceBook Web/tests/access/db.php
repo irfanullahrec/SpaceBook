@@ -5,6 +5,7 @@
 //   php tests/access/db.php reject <config file> <id> <reason>
 //   php tests/access/db.php suspend|restore <config file> <subscription id>
 //   php tests/access/db.php json <config file> <SQL>      print the rows of a SELECT as JSON
+//   php tests/access/db.php adminpw <config file> <password>   give the seeded administrator this password, no forced change (tests/access/manage.js)
 //   php tests/access/db.php drop <config file>
 if (PHP_SAPI !== 'cli') { http_response_code(404); exit; }
 $api = realpath(__DIR__ . '/../../api');
@@ -33,6 +34,8 @@ case 'reject': echo json_encode(sb_payment_review($pdo, $adm, (int)$argv[3], 're
 case 'suspend': echo json_encode(sb_sub_suspend($pdo, $adm, (int)$argv[3], 'browser test')), "\n"; break;
 case 'restore': echo json_encode(sb_sub_restore($pdo, $adm, (int)$argv[3], 'browser test')), "\n"; break;
 case 'json': echo json_encode($pdo->query($argv[3])->fetchAll()), "\n"; break;
+case 'adminpw': $pdo->prepare("UPDATE admins SET password_hash = ?, must_change_password = 0 WHERE username = 'IrfanUllah123'")->execute([password_hash($argv[3], PASSWORD_BCRYPT, ['cost' => 10])]); echo "ok
+"; break;
 case 'drop': $pdo->exec('SELECT 1'); (new PDO("mysql:host=$host;charset=utf8mb4", $user, $pass))->exec("DROP DATABASE IF EXISTS `$name`"); echo "dropped\n"; break;
 default: fwrite(STDERR, "unknown command\n"); exit(2);
 }

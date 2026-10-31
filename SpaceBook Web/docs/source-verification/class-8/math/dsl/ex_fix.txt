@@ -1,0 +1,9 @@
+# Authored answers that replace what the engine gave (2026-10-30, found by tools/launch/answer_match_audit.js):
+# the engine's "factorize" and "divide" answers repeated the question (a^2 - 49 -> a^2 - 49) or left a quotient as separate fractions.
+# %% = not compared with the printed key by the program (checked by hand: all six agree with the key printed in the book).
+6.9|6|j ~ a^2 - 49 = a^2 - 7^2 = (a - 7)(a + 7) => (a - 7)(a + 7) %%
+6.9|6|k ~ 25x^2 - 9y^2 = (5x)^2 - (3y)^2 = (5x - 3y)(5x + 3y) => (5x - 3y)(5x + 3y) %%
+6.9|6|l ~ 1 - 25t^2 = 1^2 - (5t)^2 = (1 - 5t)(1 + 5t) => (1 - 5t)(1 + 5t) %%
+6.9|6|n ~ 81p^2 - 49q^2 = (9p)^2 - (7q)^2 = (9p - 7q)(9p + 7q) => (9p - 7q)(9p + 7q) %%
+6.7|3|ii ~ \frac{2r^2 - 3rs - 20s^2}{r - 4s} = \frac{(2r + 5s)(r - 4s)}{r - 4s} = 2r + 5s => 2r + 5s %%
+6.7|3|iii ~ \frac{x^5 - y^5}{x - y} = \frac{(x - y)(x^4 + x^3y + x^2y^2 + xy^3 + y^4)}{x - y} = x^4 + x^3y + x^2y^2 + xy^3 + y^4 => x^4 + x^3y + x^2y^2 + xy^3 + y^4 %%

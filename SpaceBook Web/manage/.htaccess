@@ -1,0 +1,4 @@
+# The management page is a PHP script. The site's root .htaccess lists only "lazy.html index.html" as the directory index and every folder inherits it,
+# so without this line https://<site>/manage/ answered 403 on the host (only /manage/index.php worked).
+DirectoryIndex index.php
+Options -Indexes

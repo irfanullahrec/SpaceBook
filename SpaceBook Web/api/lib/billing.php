@@ -3,7 +3,7 @@
 // (manage/index.php). The website and the Android app both ask the same functions through the same endpoints, so a payment approved
 // once opens the same access on both platforms. Compatible with PHP 7.4. Nothing here is reachable over HTTP by itself (api/lib is denied).
 //
-// What is free (no account):   Chapter 1 of every subject of every class, 50 Test Preparation questions, 50 Study Plan questions, 1 paper.
+// What is free (no account):   Chapters 1 and 2 of every subject of every class, 50 Test Preparation questions, 50 Study Plan questions, 1 paper.
 // What is sold (PKR 500, one calendar month each, paid by Easypaisa and approved by hand in the management page):
 //   student  all subjects of ONE class, Study Plan for that class                       (no paper creation, no Test Preparation)
 //   teacher  up to 10 chosen subjects (any classes), paper creation for those subjects (no Study Plan, no Test Preparation)
@@ -16,7 +16,7 @@ require_once __DIR__ . '/security.php';
 const SB_EASYPAISA_NUMBER = '03456896156';
 const SB_EASYPAISA_TITLE  = 'AMIN ALLAH';
 const SB_PLAN_PRICE_PKR   = 500;
-const SB_FREE_CHAPTERS    = 1;                               // chapter 1 (index 0) of every subject
+const SB_FREE_CHAPTERS    = 2;                               // chapters 1 and 2 (index 0 and 1) of every subject
 const SB_FREE_LIMITS      = ['prep_q' => 50, 'plan_q' => 50, 'paper' => 1];
 const SB_MAX_TEACHER_SUBJECTS = 10;
 const SB_THANK_YOU = 'Thank you for choosing SpaceBook! Your payment details have been submitted successfully. Please allow up to 1 hour for verification. Your plan will become active once your payment is approved. Happy learning!';
@@ -87,7 +87,7 @@ function sb_plans(): array
 function sb_free_text(): array
 {
     return [
-        'Read and use Chapter 1 of every subject in every class',
+        'Read and use Chapters 1 and 2 of every subject in every class',
         'Practise up to ' . SB_FREE_LIMITS['prep_q'] . ' questions in Test Preparation',
         'Create ' . SB_FREE_LIMITS['paper'] . ' paper',
         'Practise up to ' . SB_FREE_LIMITS['plan_q'] . ' questions in Study Plan',

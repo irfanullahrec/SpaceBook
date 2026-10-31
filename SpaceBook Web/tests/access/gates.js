@@ -1,10 +1,10 @@
 'use strict';
-/* "Chapter 1 of every subject of every class is free, the rest needs a plan", on the real pages of every class (they use different readers).
+/* "Chapters 1 and 2 of every subject of every class are free, the rest needs a plan", on the real pages of every class (they use different readers).
  *     node --max-old-space-size=8192 tests/access/gates.js [--all] [--out <folder for screenshots>]
- * For subjects of the app catalog (content/app_catalog.json: the same call the app uses to open each chapter): open the subject, open chapter 1 (index 0)
- * with the catalog's own call and require that no lock shows and the page has content; then chapter 2 (index 1) and require the locked panel.
+ * For subjects of the app catalog (content/app_catalog.json: the same call the app uses to open each chapter): open the subject, open chapters 1 and 2 (index 0 and 1)
+ * with the catalog's own call and require that no lock shows and the page has content; then chapter 3 (index 2) and require the locked panel.
  * Default: 3 subjects per class (the first, the middle, the last); --all: every subject (about 130, several minutes).
- * Then the same with a Student plan for the class (a visitor with an approved payment): chapter 2 opens. Needs PHP and MySQL; dev-only, never shipped. */
+ * Then the same with a Student plan for the class (a visitor with an approved payment): chapter 3 opens. Needs PHP and MySQL; dev-only, never shipped. */
 const { spawn, spawnSync } = require('child_process');
 const fs = require('fs'), os = require('os'), path = require('path'), net = require('net');
 const { launch, ROOT } = require('../baseline/lib');
@@ -25,9 +25,9 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'app_catalog.json'), 'utf8'));
   let picks = [];
   for (const c of cat.classes) {
-    const list = c.subjects.filter(s => s.chapters.length >= 2);
+    const list = c.subjects.filter(s => s.chapters.length >= 3);
     const chosen = ALL ? list : [...new Set([list[0], list[Math.floor(list.length / 2)], list[list.length - 1]])].filter(Boolean);
-    chosen.forEach(s => picks.push({ cls: c.id, id: s.id, name: s.name, ch0: s.chapters[0].o, ch1: s.chapters[1].o }));
+    chosen.forEach(s => picks.push({ cls: c.id, id: s.id, name: s.name, ch0: s.chapters[0].o, ch1: s.chapters[1].o, ch2: s.chapters[2].o }));
   }
   if (ONLY) picks = picks.filter(p => ONLY.includes(p.id));
   if (FROM) { const k = picks.findIndex(p => p.id === FROM); if (k >= 0) picks = picks.slice(k); }
@@ -64,10 +64,10 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   }
   const rows = [];
   for (const p of picks) {
-    let a, b;
-    try { a = await within(90000, look(p, p.ch0)); b = await within(90000, look(p, p.ch1)); } catch (e) { a = { err: String(e.message).slice(0, 120) }; b = a; try { await fresh(); } catch (e2) { /* the next subject reports it */ } }
-    rows.push({ p, a, b });
-    check(p.id + ' (' + p.name + '): Chapter 1 opens, Chapter 2 is locked', a.lock === false && a.len > 200 && b.lock === true, { a, b });
+    let a, a2, b;
+    try { a = await within(90000, look(p, p.ch0)); a2 = await within(90000, look(p, p.ch1)); b = await within(90000, look(p, p.ch2)); } catch (e) { a = { err: String(e.message).slice(0, 120) }; a2 = a; b = a; try { await fresh(); } catch (e2) { /* the next subject reports it */ } }
+    rows.push({ p, a, a2, b });
+    check(p.id + ' (' + p.name + '): Chapters 1 and 2 open, Chapter 3 is locked', a.lock === false && a.len > 200 && a2.lock === false && a2.len > 200 && b.lock === true, { a, a2, b });
   }
 
   // the same subjects with a Student plan for their class: Chapter 2 opens (a visitor account with an approved payment, signed in through the page)
@@ -90,8 +90,8 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     const pid = sub && sub.payment && sub.payment.id;
     if (pid) dbq('approve', CFG, String(pid));
     await page.evaluate(async () => { await SBAccess.load(); });
-    const r2 = await look(p, p.ch1);
-    check(p.id + ': with a Student plan for ' + p.cls + ' Chapter 2 opens', reg === true && !!pid && r2.lock === false && r2.len > 200, { reg, pid, r2 });
+    const r2 = await look(p, p.ch2);
+    check(p.id + ': with a Student plan for ' + p.cls + ' Chapter 3 opens', reg === true && !!pid && r2.lock === false && r2.len > 200, { reg, pid, r2 });
     await page.evaluate(async () => { await fetch('api/auth.php?action=logout', { method: 'POST', credentials: 'same-origin', headers: Object.assign({ 'Content-Type': 'application/json' }, SBSync.bearerHeaders()), body: '{}' }); try { await SBSync.clearDevice(SpaceBookAuth.user && SpaceBookAuth.user.id); } catch (e) { /* fine */ } document.dispatchEvent(new CustomEvent('spacebook:auth', { detail: { user: null } })); await SBAccess.load(); });
   }
 

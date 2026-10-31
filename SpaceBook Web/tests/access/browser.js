@@ -62,12 +62,30 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     check('Chapter 1 of an English book opens with no lock', !ch1.lock && ch1.len > 300, ch1);
     const tags = await page.evaluate(() => document.querySelectorAll('.math-ch-btn.sbx-locked').length);
     const total = await page.evaluate(() => document.querySelectorAll('.math-ch-list .math-ch-btn').length);
-    check('every later chapter button carries a lock', tags === total - 1 && total > 3, { tags, total });
-    await page.evaluate(() => { selectSubjectChapter('eng', 1, 'cls9'); });
+    check('every later chapter button carries a lock', tags === total - 2 && total > 3, { tags, total });
+    await page.evaluate(() => { selectSubjectChapter('eng', 2, 'cls9'); });
     await sleep(700);
     const ch2 = await page.evaluate(() => { const l = document.querySelector('#subjectTopicArea .sbx-lock'); return { lock: !!l, text: l ? l.textContent : '' }; });
-    check('Chapter 2 shows the locked panel with a way to buy', ch2.lock && /needs a plan/.test(ch2.text) && /See plans/.test(ch2.text), ch2);
+    check('Chapter 3 shows the locked panel with a way to buy', ch2.lock && /needs a plan/.test(ch2.text) && /See plans/.test(ch2.text), ch2);
     await shot(page, '01_locked_chapter');
+    // the owner's pass: the button sits right below "See plans"; its window is a labelled dialog that refuses a wrong key politely and closes with Esc
+    const order = await page.evaluate(() => [...document.querySelectorAll('#subjectTopicArea .sbx-lock-actions button')].map(b => b.textContent.trim()));
+    check('"Enter licence key" is the button right below "See plans"', order.length === 3 && /^See plans/.test(order[0]) && order[1] === 'Enter licence key' && /^Back to Chapter 1/.test(order[2]), order);
+    await page.click('#subjectTopicArea .sbx-lock [data-sbx="key"]');
+    await page.waitForSelector('.sbx-key-overlay [role="dialog"][aria-modal="true"]', { timeout: 5000 });
+    const kd = await page.evaluate(() => { const i = document.getElementById('sbxKeyIn'); return { type: i && i.type, label: !!document.querySelector('label[for="sbxKeyIn"]'), focused: document.activeElement === i, inert: document.querySelectorAll('body > [inert]').length > 0 }; });
+    check('the key window is a labelled dialog with a hidden-letters box that has the focus, and the page behind is inert', kd.type === 'password' && kd.label && kd.focused && kd.inert, kd);
+    await page.fill('#sbxKeyIn', 'definitely-not-the-key'); await page.keyboard.press('Enter');
+    await page.waitForFunction(() => /not right/.test((document.querySelector('.sbx-key-msg') || {}).textContent || ''), null, { timeout: 15000 });
+    const stillLocked = await page.evaluate(() => ({ lock: !!document.querySelector('#subjectTopicArea .sbx-lock'), on: SBAccess.ownerPass() }));
+    check('a wrong key says "That key is not right." and opens nothing', stillLocked.lock && !stillLocked.on, stillLocked);
+    await page.keyboard.press('Escape'); await sleep(300);
+    const closed = await page.evaluate(() => ({ gone: !document.querySelector('.sbx-key-overlay'), inert: document.querySelectorAll('body > [inert]').length, back: document.activeElement && document.activeElement.getAttribute('data-sbx') }));
+    check('Esc closes the key window, the page is live again and the focus returns to the button', closed.gone && closed.inert === 0 && closed.back === 'key', closed);
+    await page.evaluate(() => { selectSubjectChapter('eng', 1, 'cls9'); });
+    await sleep(700);
+    const free2 = await page.evaluate(() => ({ lock: !!document.querySelector('#subjectTopicArea .sbx-lock'), len: (document.getElementById('subjectTopicArea') || {}).textContent.length }));
+    check('Chapter 2 of an English book is free: it opens with no lock', !free2.lock && free2.len > 300, free2);
   });
   await step('math chapters', async () => {
     await page.evaluate(() => { openSubject('cls9', 'cls9-math'); });
@@ -85,13 +103,13 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   await step('plans window', async () => {
     await page.evaluate(() => { openSubject('cls9', 'cls9-eng'); });
     await sleep(600);
-    await page.evaluate(() => { selectSubjectChapter('eng', 1, 'cls9'); });
+    await page.evaluate(() => { selectSubjectChapter('eng', 2, 'cls9'); });
     await page.waitForSelector('#subjectTopicArea .sbx-lock [data-sbx="plans"]');
     await page.click('#subjectTopicArea .sbx-lock [data-sbx="plans"]');
     await page.waitForSelector('#sbbModal.sbb-show .sbb-plan', { timeout: 20000 });
     const t = await page.evaluate(() => document.querySelector('#sbbModal').innerText);
     check('three plans, each PKR 500 for 1 month, with includes and restrictions', (t.match(/PKR 500/g) || []).length >= 3 && /Student plan/.test(t) && /Teacher plan/.test(t) && /Test Preparation module/.test(t) && /Paper creation/.test(t) && /up to 10 subjects/i.test(t) && /for 1 month/.test(t), t.slice(0, 500));
-    check('the free allowance is listed', /Chapter 1 of every subject/.test(t) && /50 questions in Test Preparation/.test(t) && /Create 1 paper/.test(t) && /50 questions in Study Plan/.test(t));
+    check('the free allowance is listed', /Chapters 1 and 2 of every subject/.test(t) && /50 questions in Test Preparation/.test(t) && /Create 1 paper/.test(t) && /50 questions in Study Plan/.test(t));
     await shot(page, '02_plans');
     await page.click('[data-act="choose"][data-plan="student"]');
     await page.waitForSelector('#sbbModal input[name="cls"]');
@@ -141,7 +159,7 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
   await step('still locked while pending', async () => {
     await page.click('[data-act="close"]');
     await page.evaluate(async () => { await SBAccess.load(); });
-    const s = await page.evaluate(() => ({ pend: SBAccess.state().pendingPayments, read: SBAccess.canRead('cls9', 'cls9-eng', 1) }));
+    const s = await page.evaluate(() => ({ pend: SBAccess.state().pendingPayments, read: SBAccess.canRead('cls9', 'cls9-eng', 2) }));
     check('the account shows one pending payment and Chapter 2 is still locked', s.pend === 1 && s.read === false, s);
     await page.evaluate(() => { SBBilling.openAccount(); });
     await page.waitForSelector('#sbbModal .sbb-pay', { timeout: 20000 });
@@ -153,7 +171,7 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     await boot(page);
     await page.evaluate(() => { openSubject('cls9', 'cls9-eng'); });
     await sleep(500);
-    await page.evaluate(() => { selectSubjectChapter('eng', 1, 'cls9'); });
+    await page.evaluate(() => { selectSubjectChapter('eng', 2, 'cls9'); });
     await sleep(700);
     check('after a reload it is still locked (nothing was unlocked by the browser)', await page.evaluate(() => !!document.querySelector('#subjectTopicArea .sbx-lock')));
   });
@@ -165,10 +183,10 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     check('the administrator approves the payment', r.ok === true && r.status === 'approved', r);
     await page.evaluate(async () => { await SBAccess.load(); });
     await sleep(300);
-    await page.evaluate(() => { selectSubjectChapter('eng', 1, 'cls9'); });
+    await page.evaluate(() => { selectSubjectChapter('eng', 2, 'cls9'); });
     await sleep(900);
     const o = await page.evaluate(() => ({ lock: !!document.querySelector('#subjectTopicArea .sbx-lock'), len: document.getElementById('subjectTopicArea').textContent.length, tags: document.querySelectorAll('.math-ch-btn.sbx-locked').length }));
-    check('Chapter 2 now opens, with no locks left on the buttons', !o.lock && o.len > 300 && o.tags === 0, o);
+    check('Chapter 3 now opens, with no locks left on the buttons', !o.lock && o.len > 300 && o.tags === 0, o);
     await page.evaluate(() => { SBBilling.openAccount(); });
     await page.waitForSelector('#sbbModal .sbb-sub-card', { timeout: 20000 });
     const t = await page.evaluate(() => document.querySelector('#sbbModal').innerText);
@@ -181,10 +199,10 @@ const freePort = () => new Promise(res => { const s = net.createServer(); s.list
     const sid = rows('SELECT id FROM subscriptions')[0].id;
     dbq('suspend', CFG, String(sid));
     await page.evaluate(async () => { await SBAccess.load(); });
-    check('a suspension closes the chapters again', await page.evaluate(() => !SBAccess.canRead('cls9', 'cls9-eng', 1)));
+    check('a suspension closes the chapters again', await page.evaluate(() => !SBAccess.canRead('cls9', 'cls9-eng', 2)));
     dbq('restore', CFG, String(sid));
     await page.evaluate(async () => { await SBAccess.load(); });
-    check('and the restoration opens them again', await page.evaluate(() => SBAccess.canRead('cls9', 'cls9-eng', 1)));
+    check('and the restoration opens them again', await page.evaluate(() => SBAccess.canRead('cls9', 'cls9-eng', 2)));
   });
 
   // ================================================================ 5. free limits for a new visitor

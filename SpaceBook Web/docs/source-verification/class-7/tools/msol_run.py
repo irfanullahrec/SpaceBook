@@ -4,6 +4,7 @@
 """
 import sys, json, re
 from pathlib import Path
+from fractions import Fraction
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import msol, msol2, msol_sets, msol_geom, msol_misc, msol3, msol4, msol5, msol6, msol7
 from msol import step
@@ -577,6 +578,15 @@ def run(cl):
                 continue
             stats[cat.split(':')[0]][1 if ok else 2] += 1
             rt = result_tex(res)
+            # the answer line is what was asked for: the equivalent fractions written out in the working (not the given fraction again), and the improper fraction
+            # of a mixed number (result_tex writes an improper fraction back as a mixed number)
+            if cat == 'equiv' and isinstance(res, Fraction):
+                rt = ',\\ '.join(f'\\frac{{{res.numerator * k}}}{{{res.denominator * k}}}' for k in (2, 3, 4))
+            elif cat == 'toimproper' and isinstance(res, Fraction) and res.denominator != 1:
+                rt = f'\\frac{{{res.numerator}}}{{{res.denominator}}}'
+            elif isinstance(res, Fraction) and steps and isinstance(steps[-1], dict) and re.fullmatch(r'-?\d*\.\d+', (steps[-1].get('m') or '').strip()) \
+                    and Fraction((steps[-1]['m']).strip()) == res:
+                rt = steps[-1]['m'].strip()          # the working ended in a decimal: the answer is that decimal, not the same number as a fraction
             steps = list(steps)
             steps.append(step('ans', rt))
             out[f'{exk(q)}|{q["q"]}|{no}'] = {'steps': steps, 'answer': rt, 'verified': bool(ok)}

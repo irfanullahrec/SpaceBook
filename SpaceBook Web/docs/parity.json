@@ -72,11 +72,20 @@
   {
    "id": "plans.free",
    "area": "Accounts and plans",
-   "name": "Free use without an account: Chapter 1 of every subject, 50 Test Preparation questions, 50 Study Plan questions, 1 paper; purchase window at each limit",
+   "name": "Free use without an account: Chapters 1 and 2 of every subject, 50 Test Preparation questions, 50 Study Plan questions, 1 paper; purchase window at each limit",
    "status": "same",
    "web": "js/sb_access.js (chapter lock, question and paper gates) + js/sb_billing.js",
    "app": "the same pages in the app's web view + access/AccessRules.kt + a lock on the native chapter list",
    "data": "tables visitors, free_usage (api/billing.php consume); the visitor id is X-SB-Visitor on both"
+  },
+  {
+   "id": "plans.owner_key",
+   "area": "Accounts and plans",
+   "name": "Owner's licence key: a button under See plans (chapter lock, plans window, Home, Me) opens every chapter and lifts the free limits on that device; only a salted hash of the key is in the code",
+   "status": "same",
+   "web": "js/sb_access.js (unlockWithKey, keyDialog, ownerPass) + js/sb_billing.js + css/sb_billing.css",
+   "app": "the same pages in the web view + the app's own buttons (Home, Me > My plans) + SBHost.ownerPass / setOwnerPass + access/OwnerPass.kt, Prefs, AppViewModel.canRead and the native chapter lock",
+   "data": "device only (localStorage sb_owner_pass; the app's settings store): no table and no endpoint, the server cannot know it"
   },
   {
    "id": "plans.buy",
@@ -382,11 +391,11 @@
   {
    "id": "tools.ask",
    "area": "Study tools",
-   "name": "Ask SpaceBook: an offline tutor that answers from the books of Classes 1 to 12 (definitions, the books' own answers, word meanings, passages, chapter links)",
+   "name": "Ask SpaceBook: an AI study assistant that talks with the student and answers from the books of Classes 1 to 12 (AI answers and chat when online, via api/ask.php and Groq, from passages and exercises found on the device; offline it gives the books' own answers, definitions, word meanings, passages, chapter links)",
    "status": "same",
    "web": "sidebar and header tab > Ask (js/sb_tutor.js)",
    "app": "Practice tab > Ask SpaceBook: the same page in the WebView",
-   "data": "content/assistant/ (passages, tools/assistant/build_assistant.js), content/testbank/, content/search/ (Class 11) and the lexicon, all bundled in the app; nothing is sent anywhere; the chat history stays on the device"
+   "data": "content/assistant/ (passages, tools/assistant/build_assistant.js), content/testbank/, content/search/ (Class 11) and the lexicon, all bundled in the app; online, the question and the best passages are sent to api/ask.php (Groq key only in api/config.php / the GROQ_API_KEY secret, rate-limited per IP); offline nothing is sent; the chat history stays on the device"
   },
   {
    "id": "tools.practicehub",
@@ -679,6 +688,7 @@
  "endpoints": {
   "server": [
    "admin.php",
+   "ask.php",
    "billing.php",
    "auth.php",
    "feed.php",

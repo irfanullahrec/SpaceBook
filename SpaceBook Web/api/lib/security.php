@@ -39,6 +39,9 @@ function sb_request_is_same_site(): bool
 {
     $site = isset($_SERVER['HTTP_SEC_FETCH_SITE']) ? $_SERVER['HTTP_SEC_FETCH_SITE'] : '';
     if ($site !== '' && $site !== 'same-origin' && $site !== 'none') return false;
+    // The browser itself says the form came from this site. (A page sent with Referrer-Policy: no-referrer, as the administration pages were, makes
+    // the browser put "Origin: null" on its own form posts, which the Origin check below refuses: that locked the administrators out of every form.)
+    if ($site === 'same-origin') return true;
     $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
     if ($origin !== '' && $origin !== 'null') {
         $host = strtolower(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '');

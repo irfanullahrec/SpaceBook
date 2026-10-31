@@ -36,7 +36,7 @@ const NOW = Date.parse(contract.now);
   // ---- the free allowance is spent on the server
   const server = { used: 0, calls: [] };
   const fetchOk = async (url, o) => {
-    if (/entitlements/.test(url)) return { status: 200, json: async () => ({ ok: true, signedIn: false, plan: 'free', access: { readClasses: [], readSubjects: [], planClasses: [], paperSubjects: [], prep: false }, free: { chapters: 1, prep_q: { limit: 50, used: server.used }, plan_q: { limit: 50, used: 0 }, paper: { limit: 1, used: 0 } }, subscriptions: [] }) };
+    if (/entitlements/.test(url)) return { status: 200, json: async () => ({ ok: true, signedIn: false, plan: 'free', access: { readClasses: [], readSubjects: [], planClasses: [], paperSubjects: [], prep: false }, free: { chapters: 2, prep_q: { limit: 50, used: server.used }, plan_q: { limit: 50, used: 0 }, paper: { limit: 1, used: 0 } }, subscriptions: [] }) };
     const b = JSON.parse(o.body); server.calls.push(b);
     if (server.used >= 50) return { status: 200, json: async () => ({ ok: true, allowed: false, reason: 'limit', used: 50, limit: 50 }) };
     server.used++;
@@ -58,12 +58,39 @@ const NOW = Date.parse(contract.now);
   check('offline: the same question again is free', x2.allowed === true);
   const up = create({ fetch: fetchOk, storage: store(), noAutoload: true, now: () => NOW, visitorId: 'e'.repeat(32) });
   server.used = 0; server.calls = [];
-  up._setState({ free: { chapters: 1, prep_q: { limit: 50, used: 0 }, plan_q: { limit: 50, used: 0 }, paper: { limit: 1, used: 0 } } }, true);
+  up._setState({ free: { chapters: 2, prep_q: { limit: 50, used: 0 }, plan_q: { limit: 50, used: 0 }, paper: { limit: 1, used: 0 } } }, true);
   await up.useQuestion('prep_q', 'z', {});
   const never = create({ fetch: async () => { throw new Error('should not be called'); }, storage: store(), noAutoload: true, now: () => NOW, visitorId: 'f'.repeat(32) });
   never._setState({ access: { readClasses: [], readSubjects: [], planClasses: [], paperSubjects: [], prep: true }, subscriptions: [] }, true);
   const nv = await never.useQuestion('prep_q', 'q', {});
   check('an unlimited plan never calls the server for a question', nv.allowed === true && nv.unlimited === true);
+
+  // ---- the owner's pass: a test key and a cheap test hash stand in for the real key (which is written nowhere in the repository)
+  const nodeCrypto = require('crypto');
+  const testVerifier = (() => { const salt = nodeCrypto.randomBytes(16); return { v: 1, iter: 1000, salt: salt.toString('hex'), hash: nodeCrypto.pbkdf2Sync('a-test-key-only', salt, 1000, 32, 'sha256').toString('hex') }; })();
+  const ownerStore = store();
+  const boom = async () => { throw new Error('the server must not be asked while the owner pass is on'); };
+  const mk = () => create({ fetch: boom, storage: ownerStore, noAutoload: true, now: () => NOW, visitorId: 'a1'.repeat(16), ownerVerifier: testVerifier, crypto: nodeCrypto.webcrypto });
+  let o = mk();
+  check('two chapters are free, the third is not (no plan)', o.canRead('cls9', 'cls9-eng', 0) && o.canRead('cls9', 'cls9-eng', 1) && !o.canRead('cls9', 'cls9-eng', 2) && o.FREE_CHAPTERS === 2);
+  let u1 = await o.unlockWithKey('not-the-key');
+  check('a wrong key does not open anything', u1.ok === false && !o.ownerPass() && !o.canRead('cls9', 'cls9-eng', 5) && !o.unlimited('prep_q', {}));
+  for (let i = 0; i < 4; i++) u1 = await o.unlockWithKey('still-wrong');
+  check('after five wrong keys in a row the key is not even tried for a minute (the right key too)', u1.ok === false && (await o.unlockWithKey('a-test-key-only')).wait > 0 && !o.ownerPass());
+  t = NOW + 61000; o = create({ fetch: boom, storage: ownerStore, noAutoload: true, now: () => t, visitorId: 'a1'.repeat(16), ownerVerifier: testVerifier, crypto: nodeCrypto.webcrypto });
+  const u2 = await o.unlockWithKey('a-test-key-only');
+  check('the right key, after the wait, turns the pass on', u2.ok === true && o.ownerPass());
+  check('with the pass on every chapter is open and the free limits are lifted', o.canRead('cls9', 'cls9-eng', 9) && o.canRead('cls1', 'cls1-math', 20) && o.unlimited('prep_q', {}) && o.unlimited('plan_q', { cls: 'cls9' }) && o.unlimited('paper', { subject: 'cls9-math' }));
+  const qo = await o.useQuestion('prep_q', 'q99', {});
+  check('a question is allowed without asking the server, and the usage numbers are not touched', qo.allowed === true && qo.unlimited === true && qo.owner === true);
+  const o2 = create({ fetch: boom, storage: ownerStore, noAutoload: true, now: () => t, visitorId: 'a1'.repeat(16), ownerVerifier: testVerifier, crypto: nodeCrypto.webcrypto });
+  check('the pass is kept on this device (a new page opens with it)', o2.ownerPass() === true);
+  o2.lockOwnerPass();
+  check('switching it off closes the chapters and brings the free limits back', !o2.ownerPass() && !o2.canRead('cls9', 'cls9-eng', 5) && !o2.unlimited('prep_q', {}));
+  const real = create({ fetch: boom, storage: store(), noAutoload: true, now: () => NOW, visitorId: 'a2'.repeat(16), crypto: nodeCrypto.webcrypto });
+  check('the real verifier in the code refuses a wrong key (its own key is not tested here)', (await real.unlockWithKey('a-test-key-only')).ok === false && !real.ownerPass());
+  const noCrypto = create({ fetch: boom, storage: store(), noAutoload: true, now: () => NOW, visitorId: 'a3'.repeat(16), crypto: {} });
+  check('a browser without WebCrypto says so instead of opening anything', (await noCrypto.unlockWithKey('x')).error === 'unsupported' && !noCrypto.ownerPass());
 
   // ---- visitor id: made once, 32 hex, kept
   const st = store();

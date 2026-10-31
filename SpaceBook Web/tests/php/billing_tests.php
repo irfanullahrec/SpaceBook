@@ -48,7 +48,7 @@ $pl = []; foreach ($p['json']['plans'] as $x) $pl[$x['id']] = $x;
 check('plans: three plans, PKR 500, one month, with includes and excludes', $p['code'] === 200 && count($pl) === 3 && $pl['student']['price'] === 500 && $pl['teacher']['price'] === 500 && $pl['prep']['price'] === 500 && $pl['student']['months'] === 1
     && $pl['teacher']['maxSubjects'] === 10 && count($pl['student']['includes']) >= 3 && in_array('Paper creation', $pl['student']['excludes'], true) && $pl['student']['duration'] === '1 month', $p['body']);
 check('plans: Easypaisa account, title and the thank-you text come from the server', $p['json']['payment']['number'] === '03456896156' && $p['json']['payment']['title'] === 'AMIN ALLAH' && strpos($p['json']['thankYou'], 'Please allow up to 1 hour for verification') !== false && count($p['json']['classes']) === 12 && count($p['json']['subjects']) > 100);
-check('plans: free allowance is published', $p['json']['free']['limits'] === ['prep_q' => 50, 'plan_q' => 50, 'paper' => 1] && $p['json']['free']['chapters'] === 1);
+check('plans: free allowance is published', $p['json']['free']['limits'] === ['prep_q' => 50, 'plan_q' => 50, 'paper' => 1] && $p['json']['free']['chapters'] === 2);
 
 // ---------------------------------------------------------------- free limits, no account
 $v1 = vid();
@@ -160,7 +160,7 @@ check('another visitor id (the app) gets the same paid access for the same accou
 $acc = bill('GET', 'account', null, $hA);
 check('the account shows the approval, dates and a notice', $acc['json']['payments'][0]['status'] === 'approved' && $acc['json']['payments'][0]['activatedAt'] !== null && $acc['json']['subscriptions'][0]['history'][0]['event'] === 'activated' && $acc['json']['notifications'][0]['kind'] === 'pay_approved');
 check('B still has nothing from A\'s purchase', http('GET', 'v2/entitlements.php', null, $hB)['json']['access']['readClasses'] === []);
-check('rule: Chapter 1 is open to everyone, later chapters need the class, the subject or nothing else', sb_can_read(sb_access($tp, 0), 'cls9', 'cls9-math', 0) && !sb_can_read(sb_access($tp, 0), 'cls9', 'cls9-math', 1) && sb_can_read(sb_access($tp, $uidA), 'cls9', 'cls9-math', 5) && !sb_can_read(sb_access($tp, $uidA), 'cls10', 'cls10-math', 1));
+check('rule: Chapters 1 and 2 are open to everyone, later chapters need the class, the subject or nothing else', sb_can_read(sb_access($tp, 0), 'cls9', 'cls9-math', 0) && sb_can_read(sb_access($tp, 0), 'cls9', 'cls9-math', 1) && !sb_can_read(sb_access($tp, 0), 'cls9', 'cls9-math', 2) && sb_can_read(sb_access($tp, $uidA), 'cls9', 'cls9-math', 5) && !sb_can_read(sb_access($tp, $uidA), 'cls10', 'cls10-math', 2));
 
 // paid student plan: Study Plan of that class has no limit, Test Preparation and papers still do
 $vs = vid();
@@ -239,7 +239,7 @@ sb_payment_review($tp, $adm, $payT, 'approve', '');
 $accT = sb_access($tp, $uidT);
 $clsOfFirst = $p['json']['subjects'][array_search($subjects[0], array_column($p['json']['subjects'], 'id'), true)]['class'];
 check('Teacher plan opens exactly the chosen subjects (any classes), their papers, no Study Plan', $accT['readSubjects'] === (function ($s) { sort($s); return $s; })($subjects) && $accT['paperSubjects'] === $accT['readSubjects'] && $accT['planClasses'] === [] && $accT['readClasses'] === [] && $accT['prep'] === false);
-check('Teacher plan: a chosen subject\'s later chapters are open, others are not', sb_can_read($accT, $clsOfFirst, $subjects[0], 7) && !sb_can_read($accT, 'cls1', 'cls1-eng', 1) && sb_can_read($accT, 'cls1', 'cls1-eng', 0));
+check('Teacher plan: a chosen subject\'s later chapters are open, others are not', sb_can_read($accT, $clsOfFirst, $subjects[0], 7) && !sb_can_read($accT, 'cls1', 'cls1-eng', 2) && sb_can_read($accT, 'cls1', 'cls1-eng', 1) && sb_can_read($accT, 'cls1', 'cls1-eng', 0));
 $vt = vid();
 $r1 = bill('POST', 'consume', ['metric' => 'paper', 'key' => 't1', 'subject' => $subjects[0]], bearer($stuT) + vh($vt));
 $r2 = bill('POST', 'consume', ['metric' => 'paper', 'key' => 't2', 'subject' => $subjects[0]], bearer($stuT) + vh($vt));
@@ -351,6 +351,8 @@ $tp->exec('DELETE FROM rate_limits');
 $mjar = tempnam(sys_get_temp_dir(), 'sbm');
 $pg = mhttp('GET', 'manage/index.php', null, [], $mjar);
 check('the management page shows only a sign-in form to a visitor, with strict headers', $pg['code'] === 200 && strpos($pg['body'], 'name="password"') !== false && strpos($pg['body'], 'Payments') === false && stripos($pg['head'], "default-src 'none'") !== false && stripos($pg['head'], 'X-Frame-Options: DENY') !== false && stripos($pg['head'], 'no-store') !== false && strpos($pg['body'], '<script') === false);
+$dirIdx = @file_get_contents(__DIR__ . '/../../manage/.htaccess');
+check('/manage/ with no file name opens the page on the host: manage/.htaccess makes index.php the directory index (the root one lists only lazy.html and index.html)', $dirIdx !== false && preg_match('/^DirectoryIndex\s+index\.php\s*$/m', $dirIdx) === 1 && preg_match('/^DirectoryIndex\s+lazy\.html/m', (string)@file_get_contents(__DIR__ . '/../../.htaccess')) === 1);
 foreach (['?v=payments', '?v=users', '?v=dash', '?v=export&kind=users', '?v=payment&id=1'] as $q) {
     $x = mhttp('GET', 'manage/index.php' . $q, null, [], tempnam(sys_get_temp_dir(), 'sbm'));
     if ($x['code'] !== 200 || strpos($x['body'], 'name="password"') === false || strpos($x['body'], 'Verified') !== false || strpos($x['body'], 'transaction_id') !== false) { $leaky = $q; break; }
