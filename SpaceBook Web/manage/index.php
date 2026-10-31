@@ -4,13 +4,16 @@
 // Everything is decided on the server: every request re-reads the administrator from the database, every change is a POST with a
 // per-session token and a same-site check, and every change writes the audit trail in the same transaction. Compatible with PHP 7.4.
 
+// Opened as /manage (no trailing slash): relative links such as manage.css would miss, so go to /manage/ first.
+$mp = (string) parse_url((string) ($_SERVER['REQUEST_URI'] ?? ''), PHP_URL_PATH);
+if ($mp !== '' && substr($mp, -1) !== '/' && substr($mp, -4) !== '.php' && basename($mp) === 'manage') { header('Location: ' . $mp . '/' . (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] !== '' ? '?' . $_SERVER['QUERY_STRING'] : '')); exit; }
 require __DIR__ . '/../api/db.php';
 require __DIR__ . '/../api/lib/manage.php';
 
 header('Cache-Control: no-store');
 header('X-Frame-Options: DENY');
 header('X-Content-Type-Options: nosniff');
-header('Referrer-Policy: same-origin');          // not no-referrer: that makes a browser send "Origin: null" on the page's own forms
+header('Referrer-Policy: no-referrer');
 header('X-Robots-Tag: noindex, nofollow, noarchive');
 header("Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
 
