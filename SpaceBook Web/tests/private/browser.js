@@ -112,6 +112,46 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   }));
   await shot('04-book');
   check('Class 1 Munawar Mathematics opens in the reader with its chapters and its transcribed pages', book.key === 'mun-math' && /Numbers 1-9/.test(book.text) && /Contents/.test(book.text), { key: book.key, units: book.units });
+
+  // the Original pages view (js/sb_mun_pages.js): the page as the publisher printed it. The pictures are kept out of git (licence: distribution only through the site and the app),
+  // so a clean checkout has none of them and this part is skipped there.
+  if (!fs.existsSync(path.join(__dirname, '..', '..', 'content', 'munawar_pages', 'index.json'))) console.log('SKIP  the Original pages view: content/munawar_pages is not in this checkout (the pictures are uploaded to the site only)');
+  else {
+    await page.waitForSelector('.sbmp-btn.on', { timeout: 10000 }).catch(() => {});
+    check('a Munawar book shows the "Original pages" button', await page.evaluate(() => !!document.querySelector('.sbmp-btn.on')));
+    await page.click('.sbmp-btn.on'); await page.waitForSelector('.sbmp .sbmp-page', { timeout: 20000 });
+    const v = await page.evaluate(async () => {
+      const ov = document.querySelector('.sbmp'), img = ov.querySelector('.sbmp-page');
+      await new Promise(r => { if (img.complete) r(); else img.onload = r; });
+      const total = ov.querySelectorAll('.sbmp-th').length, locked = ov.querySelectorAll('.sbmp-th .lk').length;
+      return { title: ov.querySelector('.sbmp-top b').textContent, src: img.getAttribute('src'), natural: img.naturalWidth + 'x' + img.naturalHeight, total, locked,
+        credit: /Munawar Publisher/.test(ov.querySelector('.sbmp-foot').textContent), modal: ov.getAttribute('aria-modal'),
+        first: await SBMunPages.canSee('cls1-mun-math', 0), last: await SBMunPages.canSee('cls1-mun-math', total - 1) };
+    });
+    await shot('05-original-pages');
+    check('Original pages opens the first page of the book as a picture, with the credit and every page in the rail', v.title === 'Kanz Mathematics' && /cls1-mun-math\/p000\./.test(v.src) && /^\d+x\d+$/.test(v.natural) && v.natural !== '0x0' && v.total === 88 && v.credit && v.modal === 'true', v);
+    check('a person with every plan sees every page (none locked)', v.first === true && v.last === true && v.locked === 0, { first: v.first, last: v.last, locked: v.locked, total: v.total });
+    await page.click('.sbmp [data-a=next]'); await sleep(400);
+    const n = await page.evaluate(() => ({ num: document.querySelector('.sbmp input').value, src: document.querySelector('.sbmp .sbmp-page').getAttribute('src') }));
+    check('Next shows the second page', n.num === '2' && /p001\./.test(n.src), n);
+    // the extractor once saved the cover as every page (the PDFs share one resource list between pages): the pictures of different pages must differ
+    const same = await page.evaluate(async () => {
+      const dig = async u => { const b = await (await fetch(u)).arrayBuffer(); return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', b))).map(x => x.toString(16).padStart(2, '0')).join(''); };
+      const base = document.querySelector('.sbmp .sbmp-page').getAttribute('src').replace(/p\d+\.\w+$/, '');
+      const ds = await Promise.all([0, 1, 2, 3, 10].map(i => dig(base + 'p' + String(i).padStart(3, '0') + '.jpg')));
+      return { distinct: new Set(ds).size, of: ds.length };
+    });
+    check('different pages are different pictures (the cover is not repeated)', same.distinct === same.of, same);
+    await page.keyboard.press('Escape'); await sleep(300);
+    check('Escape closes the viewer and gives the page back', await page.evaluate(() => !document.querySelector('.sbmp')));
+    // a visitor with no plan: the cover, preface, contents and the first two units are open, later pages are locked like the lessons (SBAccess.canRead)
+    const anon = await launch({ anonymous: true }), apage = await anon.newPage();
+    await apage.goto(url + (process.env.SB_PAGE || 'lazy.html'), { waitUntil: 'domcontentloaded', timeout: 180000 });
+    await apage.waitForFunction(() => window.SBMunPages && window.SBAccess, null, { timeout: 120000 });
+    const gate = await apage.evaluate(async () => ({ first: await SBMunPages.canSee('cls1-mun-math', 0), last: await SBMunPages.canSee('cls1-mun-math', 87) }));
+    check('without a plan the first pages are open and the last page is locked', gate.first === true && gate.last === false, gate);
+    await anon.close();
+  }
   const back = await page.evaluate(async () => { handleGlobalNavBack(); await new Promise(r => setTimeout(r, 600)); return { series: SBPrivate.current('cls1'), bar: !!document.querySelector('.sbp-bar'), covers: document.querySelectorAll('.cls1-cover-img').length }; });
   check('Back from the book returns to the Munawar grid, not to the Government books', back.series === 'munawar' && back.bar && back.covers === 11, back);
   const gov2 = await page.evaluate(async () => { openSubject('cls1', 'cls1-math'); await new Promise(r => setTimeout(r, 1200)); const s = SBPrivate.current('cls1'); goToSubjects('cls1'); await new Promise(r => setTimeout(r, 500)); return { s, series: SBPrivate.current('cls1'), covers: document.querySelectorAll('.cls1-cover-img').length }; });
