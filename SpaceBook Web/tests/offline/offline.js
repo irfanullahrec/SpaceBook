@@ -188,6 +188,36 @@ function setup({ files = siteFiles(), storage = { usage: 1000, quota: 1e9 }, con
     check('the very first install shows no update banner', !t2.win.document.getElementById('sbOffUpdate'));
   }
 
+  // ---- update taken by itself (opts.autoUpdate: the page is new and untouched)
+  {
+    const mk = () => { const t = setup(); t.worker = { state: 'installed', postMessage: m => t.posted.push(m), addEventListener() { } }; return t; };
+    const a = mk(); a.reg.waiting = a.worker;
+    await a.O.register({ autoUpdate: true });
+    check('autoUpdate: a waiting version is taken at once when the page is new and untouched (no banner)', a.posted.length === 1 && a.posted[0].type === 'SKIP_WAITING' && !a.win.document.getElementById('sbOffUpdate'));
+    check('autoUpdate: the first one is marked in sessionStorage', /^\d{10,}$/.test(a.win.sessionStorage.getItem('sb_auto_update_at') || ''));
+    const m = mk(); m.win.sessionStorage.setItem('sb_auto_update_at', String(Date.now())); m.reg.waiting = m.worker;
+    await m.O.register({ autoUpdate: true });
+    check('autoUpdate: once marked, a second offer within two minutes shows the banner instead of reloading again (never a reload loop)', m.posted.length === 0 && !!m.win.document.getElementById('sbOffUpdate'));
+    const b = mk(); b.win.document.body.dispatchEvent(new b.win.Event('pointerdown', { bubbles: true })); b.reg.waiting = b.worker;
+    await b.O.register({ autoUpdate: true });
+    check('autoUpdate: after the student has touched the page the version waits and the banner is shown', b.posted.length === 0 && !!b.win.document.getElementById('sbOffUpdate'));
+    const c = mk(); c.reg.waiting = c.worker;
+    await c.O.register({});
+    check('without autoUpdate nothing changes: banner, no switch', c.posted.length === 0 && !!c.win.document.getElementById('sbOffUpdate'));
+    const d = setup({ controller: false }); d.worker = { state: 'installed', postMessage: m => d.posted.push(m), addEventListener() { } }; d.reg.waiting = d.worker;
+    await d.O.register({ autoUpdate: true });
+    check('autoUpdate: the very first install takes nothing and shows nothing', d.posted.length === 0 && !d.win.document.getElementById('sbOffUpdate'));
+    const e = mk(); let stateChange = null; const w = { state: 'installing', postMessage: m => e.posted.push(m), addEventListener: (t, fn) => { stateChange = fn; } };
+    await e.O.register({ autoUpdate: true });
+    e.reg.installing = w; e.reg.listeners.updatefound(); w.state = 'installed'; stateChange();
+    check('autoUpdate: a version that finishes installing while the page is still untouched is taken too', e.posted.length === 1 && e.posted[0].type === 'SKIP_WAITING');
+    const f = mk(); let sc2 = null; const w2 = { state: 'installing', postMessage: m => f.posted.push(m), addEventListener: (t, fn) => { sc2 = fn; } };
+    await f.O.register({ autoUpdate: true });
+    f.win.document.body.dispatchEvent(new f.win.Event('keydown', { bubbles: true }));
+    f.reg.installing = w2; f.reg.listeners.updatefound(); w2.state = 'installed'; sc2();
+    check('autoUpdate: one that finishes installing after the student has started typing waits and shows the banner', f.posted.length === 0 && !!f.win.document.getElementById('sbOffUpdate'));
+  }
+
   // ---- offline badge
   {
     const t = setup();
