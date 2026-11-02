@@ -153,6 +153,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   check('the Class 2 (both books), Class 3 and Class 4 Computer books are drawn too', ['c2-comp', 'c2-compbl', 'c3-comp', 'c4-comp'].every(id => (perBook[id] || [0])[0] >= 5), perBook);
   check('Class 1 English and Class 4 Science are drawn too', ['c1-eng', 'c4-sci'].every(id => (perBook[id] || [0])[0] >= 5), perBook);
   check('English of Classes 2, 3 and 4 is drawn too', ['c2-eng', 'c3-eng', 'c4-eng'].every(id => (perBook[id] || [0])[0] >= 4), perBook);
+  check('General Knowledge of Classes 1-3 is drawn too', ['c1-gk', 'c2-gk', 'c3-gk'].every(id => (perBook[id] || [0])[0] >= 3), perBook);
   check('every `pic` line of a page file became one drawing in its book, none lost or doubled', picLines === drawn, perBook);
   check('every drawing is an inline svg with a viewBox, not a scan, and carries the SpaceBook drawing tag', untagged === 0 && drawn > 0, { untagged, drawn });
 }
