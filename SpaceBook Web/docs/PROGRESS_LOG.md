@@ -735,3 +735,7 @@ Not done / open: Maths pictures beyond the counting figures, Grammar of Classes 
 ## 2026-11-03 — Munawar: fraction circles in Class 2 Mathematics
 Done (Web): Class 2 Mathematics pages 62 and 63 show the quarter circle and the six unit-fraction circles (1/2, 1/3, 1/4, 1/6, 1/8, 1/10) with the Government `fpie` figure line, exactly as their picture notes state; the other Mathematics pictures are not drawn because the sample scans are blurred and their numbers cannot be read. Book data file, lazy page, offline map entry and service worker version regenerated.
 Done (App): same book data file, no App code.
+## 2026-11-03 — Munawar: Preliminary Classes 2-3 and Grammar Classes 2-3
+Done (Web): `pic` lines for Class 2 Preliminary (3: baby animals, animal homes), Class 3 Preliminary (9 more: food groups, omnivores, vehicles, machines, computer, phone), Class 2 Grammar (1: a / an pictures) and Class 3 Grammar (5: this / that near and far); book data files, lazy page, offline map entries and service worker version regenerated. Total 245 `pic` lines in nineteen books.
+Done (App): same book data files, no App code.
+Not done / open: Class 4 Social Studies (photographs, maps, portraits), Grammar of Class 4 (small illustrations only), Mathematics other than the Class 2 fraction circles (blurred sample scans), the Urdu-text books (no transcribed pages yet).
