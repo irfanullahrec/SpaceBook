@@ -673,7 +673,14 @@
         if (body) { body.hidden = !body.hidden; t.setAttribute('aria-expanded', String(!body.hidden)); }
         break;
       }
-      case 'chapter': goChapter(t.getAttribute('data-sid'), v); break;
+      case 'chapter': {
+        // "Open ▸" in the weightage table: the chapter in the Study Plan's sheet, ending with the Board's questions for it (js/sb_bise_sheet.js)
+        const sid = t.getAttribute('data-sid'), sd = D && D.subjects[sid];
+        const c = sd && (sd.chapters || []).find(x => String(x.app) === String(v));
+        if (t.classList.contains('bise-link') && c && window.SBBiseSheet && window.SBBiseSheet.open({sid, classId: classIdOf(sd), subject: sd.name || sd.subject || '', ch: c, onBook: () => goChapter(sid, v)})) break;
+        goChapter(sid, v);
+        break;
+      }
       case 'preset': applyPaperPreset(v); break;
       case 'drill': startDrill(v); break;
       case 'drillend': endDrill(); break;
