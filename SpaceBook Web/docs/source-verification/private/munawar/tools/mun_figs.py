@@ -578,6 +578,46 @@ def game_console():
                      '<circle cx="100" cy="26" r="5" fill="#ef4444"/><circle cx="108" cy="38" r="5" fill="#fde047"/><circle cx="96" cy="42" r="5" fill="#a855f7"/>')
 
 
+
+SKIN = '#fcd9b6'
+
+
+def _small(body):
+    return 40, 40, body
+
+
+SMALL = {
+    'teeth': lambda: _small(f'<path d="M4 16 Q20 4 36 16 Q36 34 20 34 Q4 34 4 16z" fill="#f87171" stroke="{K}"/><path d="M8 16 Q20 8 32 16 L32 24 H8z" fill="#fff" stroke="{K}" stroke-width="1"/>'
+                           f'<path d="M14 15 V24 M20 13 V24 M26 15 V24" stroke="{K}" stroke-width="1"/>'),
+    'ear': lambda: _small(f'<path d="M14 6 C28 2 34 12 30 22 C28 30 24 32 22 38 C16 38 16 30 20 26 C10 26 6 14 14 6z" fill="{SKIN}" stroke="{K}"/><path d="M16 12 C24 10 26 18 22 22" fill="none" stroke="#d97706" stroke-width="1.6"/>'),
+    'hand': lambda: _small(f'<path d="M10 38 V24 L6 16 Q4 12 8 12 Q10 12 12 16 V6 Q12 3 15 3 Q18 3 18 6 V14 V4 Q18 1 21 1 Q24 1 24 4 V14 V6 Q24 3 27 3 Q30 3 30 6 V18 Q34 14 36 18 Q36 22 30 30 V38z" fill="{SKIN}" stroke="{K}" stroke-linejoin="round"/>'),
+    'foot': lambda: _small(f'<path d="M14 4 Q22 2 24 12 Q26 22 28 28 Q30 38 20 38 Q10 38 10 28 Q10 18 14 4z" fill="{SKIN}" stroke="{K}"/>'
+                           + ''.join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{SKIN}" stroke="{K}"/>' for x, y, r in ((14, 4, 2.6), (20, 3, 2.2), (25, 5, 2), (28, 8, 1.8), (30, 12, 1.6)))),
+    'chalk': lambda: _small(f'<g transform="rotate(-35 20 20)"><rect x="4" y="15" width="30" height="9" rx="2" fill="#fff" stroke="{K}"/><rect x="26" y="15" width="8" height="9" fill="#e5e7eb" stroke="{K}"/></g>'
+                            f'<rect x="6" y="30" width="26" height="7" rx="1.5" fill="#fde68a" stroke="{K}"/>'),
+    'bench': lambda: _small(f'<rect x="3" y="14" width="34" height="6" rx="1.5" fill="#d97706" stroke="{K}"/><rect x="3" y="22" width="34" height="5" rx="1.5" fill="#b45309" stroke="{K}"/>'
+                            f'<path d="M7 27 V37 M33 27 V37 M7 6 V14 M33 6 V14" stroke="{K}" stroke-width="3"/><rect x="5" y="6" width="30" height="5" rx="1.5" fill="#d97706" stroke="{K}"/>'),
+    'whistle': lambda: _small(f'<path d="M6 16 H26 L34 22 V30 H12 Q6 30 6 24z" fill="#9ca3af" stroke="{K}"/><circle cx="14" cy="23" r="3.5" fill="#fff" stroke="{K}"/>'
+                              f'<rect x="26" y="12" width="6" height="5" fill="#9ca3af" stroke="{K}"/><path d="M34 26 q4 0 4 5" fill="none" stroke="{K}" stroke-width="1.5"/>'),
+    'wheat': lambda: _small(f'<path d="M20 38 V12" stroke="#a16207" stroke-width="2"/>' + ''.join(
+        f'<ellipse cx="{20 + dx}" cy="{y}" rx="3" ry="5" fill="#eab308" stroke="#a16207" stroke-width=".8" transform="rotate({a} {20 + dx} {y})"/>' for dx, y, a in ((-5, 22, -30), (5, 22, 30), (-5, 14, -30), (5, 14, 30), (0, 6, 0)))),
+    'brick': lambda: _small(f'<rect x="4" y="9" width="32" height="22" fill="#dc2626" stroke="{K}"/><path d="M4 20 H36 M20 9 V20 M12 20 V31 M28 20 V31" stroke="#fecaca" stroke-width="1.6"/>'),
+    'whale': lambda: _small(f'<path d="M3 26 Q6 12 22 12 Q36 12 37 24 Q30 34 14 33 Q5 33 3 26z" fill="#3b82f6" stroke="{K}"/><path d="M37 24 Q40 16 37 12 M37 24 Q40 26 39 30" fill="none" stroke="{K}"/>'
+                            f'<circle cx="12" cy="22" r="1.6" fill="#fff"/><path d="M20 12 q-2 -6 -6 -7 M20 12 q2 -6 6 -7" fill="none" stroke="#60a5fa" stroke-width="1.6"/><path d="M8 29 Q18 32 28 28" fill="none" stroke="#bfdbfe"/>'),
+    'shop': lambda: _small(f'<rect x="5" y="16" width="30" height="20" fill="#fde68a" stroke="{K}"/><path d="M3 16 L6 6 H34 L37 16z" fill="#ef4444" stroke="{K}"/><path d="M12 6 L11 16 M20 6 V16 M28 6 L29 16" stroke="#fff" stroke-width="2"/>'
+                           f'<rect x="9" y="21" width="12" height="10" fill="#bae6fd" stroke="{K}"/><rect x="25" y="21" width="7" height="15" fill="#92400e" stroke="{K}"/>'),
+    'crab': lambda: _small(f'<ellipse cx="20" cy="24" rx="12" ry="8" fill="#ef4444" stroke="{K}"/><path d="M8 20 Q2 14 6 8 Q10 10 10 16 M32 20 Q38 14 34 8 Q30 10 30 16" fill="#ef4444" stroke="{K}"/>'
+                           f'<path d="M10 28 L4 34 M13 31 L9 37 M30 28 L36 34 M27 31 L31 37" stroke="{K}" stroke-width="1.8"/><circle cx="15" cy="17" r="2.2" fill="#fff" stroke="{K}"/><circle cx="25" cy="17" r="2.2" fill="#fff" stroke="{K}"/>'),
+    'rat': lambda: _small(f'<ellipse cx="20" cy="24" rx="13" ry="8" fill="#9ca3af" stroke="{K}"/><path d="M8 26 Q2 26 3 34 Q6 38 14 33" fill="none" stroke="#f9a8d4" stroke-width="2"/>'
+                          f'<circle cx="31" cy="16" r="4" fill="#9ca3af" stroke="{K}"/><circle cx="30" cy="12" r="3" fill="#f9a8d4" stroke="{K}"/><path d="M33 23 L40 22" stroke="{K}"/><circle cx="35" cy="22" r="1.4" fill="{K}"/>'),
+    'potato': lambda: _small(f'<path d="M6 22 Q4 12 16 10 Q30 8 34 18 Q36 30 22 32 Q8 34 6 22z" fill="#c2884d" stroke="{K}"/><circle cx="14" cy="18" r="1.2" fill="#92400e"/><circle cx="24" cy="24" r="1.2" fill="#92400e"/><circle cx="28" cy="16" r="1.2" fill="#92400e"/>'),
+    'garlic': lambda: _small(f'<path d="M20 4 Q22 10 24 12 Q34 16 32 28 Q30 36 20 36 Q10 36 8 28 Q6 16 16 12 Q18 10 20 4z" fill="#f8fafc" stroke="{K}"/><path d="M20 12 Q14 24 20 36 M20 12 Q26 24 20 36" fill="none" stroke="#cbd5e1"/>'),
+    'three': lambda: _small(''.join(f'<circle cx="{x}" cy="{y}" r="7" fill="#f59e0b" stroke="{K}"/>' for x, y in ((12, 24), (28, 24), (20, 11)))),
+    'thick': lambda: _small(f'<rect x="6" y="6" width="28" height="28" rx="3" fill="#3b82f6" stroke="{K}"/><rect x="10" y="6" width="3" height="28" fill="#1d4ed8"/><path d="M16 14 H30 M16 20 H30" stroke="#fff" stroke-width="2"/>'),
+    'thin': lambda: _small(f'<rect x="12" y="6" width="16" height="28" rx="1.5" fill="#3b82f6" stroke="{K}"/><rect x="14" y="6" width="1.5" height="28" fill="#1d4ed8"/><path d="M18 14 H25" stroke="#fff" stroke-width="1.6"/>'),
+}
+
+
 def _outline(svg):
     """A line drawing to colour in: every shape white, outlines kept."""
     return re.sub(r'(<(?:rect|path|circle|ellipse|polygon)' + chr(92) + r'b[^>]*?) fill="#[0-9a-fA-F]{3,6}"', chr(92) + r'1 fill="#ffffff"', svg)
@@ -613,6 +653,23 @@ for _n in ('tree', 'plane', 'umbrella', 'phone', 'apple', 'fan', 'bread', 'car',
     if _n not in OBJECTS:
         OBJECTS[_n] = _from_fig1(_n)
 OBJECTS['bread'] = _from_fig1('loaf')
+for _n, _f in SMALL.items():
+    OBJECTS[_n] = (lambda f: (lambda c=None: f()))(_f)
+# every other Government icon (255 of them) is available by its name too
+_src = (Path(__file__).resolve().parents[3] / 'class-1' / 'tools' / 'figs1.py').read_text(encoding='utf-8')
+_m = re.search(r"def _icon\(.*?\n    s = \{(.*?)\n    \}", _src, re.S)
+for _n in re.findall(r"^        '([a-z0-9_]+)':", _m.group(1), re.M):
+    OBJECTS.setdefault(_n, _from_fig1(_n))
+
+SMALL.update({
+    'arrow': lambda: _small('<path d="M4 20 H28 M20 10 L32 20 L20 30" fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'),
+    'jellyfish': lambda: _small(f'<path d="M6 20 Q6 4 20 4 Q34 4 34 20z" fill="#f9a8d4" stroke="{K}"/><path d="M10 20 Q8 30 12 36 M16 20 Q14 30 17 38 M22 20 Q24 30 21 38 M28 20 Q30 30 27 36" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>'),
+    'monkey': lambda: _small(f'<circle cx="7" cy="20" r="4.5" fill="#92400e" stroke="{K}"/><circle cx="33" cy="20" r="4.5" fill="#92400e" stroke="{K}"/><circle cx="20" cy="20" r="13" fill="#92400e" stroke="{K}"/>'
+                             f'<ellipse cx="20" cy="24" rx="9" ry="8" fill="#fcd9b6"/><circle cx="16" cy="19" r="2" fill="{K}"/><circle cx="24" cy="19" r="2" fill="{K}"/><ellipse cx="20" cy="26" rx="4" ry="2.4" fill="#d97706"/>'),
+})
+for _n in ('arrow', 'jellyfish', 'monkey'):
+    OBJECTS[_n] = (lambda f: (lambda c=None: f()))(SMALL[_n])
+
 OBJECTS['fan'] = _from_fig1('fan')
 
 
