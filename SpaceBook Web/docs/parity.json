@@ -155,6 +155,15 @@
    "data": "the same data files on both platforms; tests/parity/app_book_pages.js and tests/parity/app_all_pages.js put the app's own reader files on the page and turn every page (the website folder or the app's bundled copy: --site bundled). Not yet one page per printed page on EITHER platform: Class 12 Physics, Chemistry, Biology, Mathematics and Statistics (topic cards from summarised data) and Class 11 Statistics units 8-9"
   },
   {
+   "id": "read.opener_page",
+   "area": "Reading the books",
+   "name": "A unit's first page shows only its opening (unit title, Student Learning Outcomes); the Introduction and the lesson start on the unit's second page, in every subject",
+   "status": "partial",
+   "web": "js/sb_book_spread.js pagesOf() -> openerAlone() (2026-11-02, owner's page-by-page review)",
+   "app": "the same pages once sync_app bundles the new js/sb_book_spread.js: not bundled yet, the Web tree holds another session's unfinished UI redesign, so sync_app refuses",
+   "data": "no data change: the split is made when the pages are drawn"
+  },
+  {
    "id": "read.offline",
    "area": "Reading the books",
    "name": "Every book opens with no internet: the website's service worker keeps what was read; the app carries every book inside the APK",
