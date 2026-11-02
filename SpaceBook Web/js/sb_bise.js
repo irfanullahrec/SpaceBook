@@ -615,6 +615,8 @@
   }
 
   function classBanner(classId) {   // on a class's subject list (Classes 9-12): one card that opens the Board centre
+    // removed at the owner's request (2026-11-02): the subject list shows only the books; the Board centre opens from a chapter's "Board centre" button
+    if (classId !== 'show-banner') return;
     if (!/^cls(9|10|11|12)$/.test(String(classId))) return;
     const grid = document.querySelector('.subjects-compact-grid');
     if (!grid || document.querySelector('.bise-banner')) return;
