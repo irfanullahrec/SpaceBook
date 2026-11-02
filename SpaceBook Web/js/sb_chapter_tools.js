@@ -181,8 +181,10 @@
     const chOpen = !!document.querySelector('.math-ch-btn.active');
     const old = body.querySelector('.sbct-dl');
     if (!act || !chOpen) { if (old) old.remove(); return; }
-    const bar = act.parentElement;
-    if (old && old.parentElement === bar) return;
+    // beside the Full screen button, above the tabs; the tab bar itself is the fallback
+    const fs = body.querySelector('.sb-fs-btn:not(#bk-fs-float)') || body.querySelector('.sb-fs-btn');
+    const bar = fs ? fs.parentElement : act.parentElement;
+    if (old && old.parentElement === bar && (!fs || old.nextElementSibling === fs)) return;
     if (old) old.remove();
     const w = document.createElement('span'); w.className = 'sbct-dl';
     w.innerHTML = '<button type="button" class="sbct-btn" aria-haspopup="true">⬇ Download</button><div class="sbct-menu" hidden><button type="button" data-k="ex">📄 Solved Exercise (PDF)</button><button type="button" data-k="slo">🎯 SLO-based MCQs, SQs, LQs (PDF)</button></div>';
@@ -190,7 +192,7 @@
     w.querySelector('.sbct-btn').addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); menu.hidden = !menu.hidden; });
     menu.addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (!b) return; e.stopPropagation(); menu.hidden = true; download(b.dataset.k); });
     document.addEventListener('click', () => { menu.hidden = true; });
-    bar.appendChild(w);
+    if (fs) fs.insertAdjacentElement('beforebegin', w); else bar.appendChild(w);
   }
 
   function start() {
@@ -201,7 +203,7 @@
     .sbh-menu{position:fixed;z-index:9999;background:#fff;border:1px solid #cbd5e1;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.25);padding:.3rem;min-width:180px}
     .sbh-menu[hidden]{display:none}.sbh-menu button{display:block;width:100%;text-align:start;border:0;background:transparent;padding:.5rem .8rem;border-radius:8px;font:600 .9rem system-ui,sans-serif;cursor:pointer}.sbh-menu button:hover{background:#eef2ff}
     #headerNavTabs{flex-wrap:nowrap}
-    .sbct-dl{position:relative;display:inline-block;margin-inline-start:.4rem;flex:0 0 auto}
+    .sbct-dl{position:relative;display:inline-block;margin-inline:.4rem;flex:0 0 auto;z-index:9001}
     .sbct-btn{border:1px solid #0369a1;background:#0369a1;color:#fff;border-radius:999px;padding:.35rem .9rem;font:700 .85rem system-ui,sans-serif;cursor:pointer;white-space:nowrap}
     .sbct-menu{position:absolute;top:calc(100% + 6px);inset-inline-end:0;z-index:200;background:#fff;border:1px solid #cbd5e1;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.25);padding:.3rem;min-width:260px}
     .sbct-menu[hidden]{display:none}.sbct-menu button{display:block;width:100%;text-align:start;border:0;background:transparent;padding:.55rem .8rem;border-radius:8px;font:600 .88rem system-ui,sans-serif;cursor:pointer;color:#0f172a}.sbct-menu button:hover{background:#eef2ff}`;
