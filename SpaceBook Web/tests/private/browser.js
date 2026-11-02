@@ -157,6 +157,18 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const gov2 = await page.evaluate(async () => { openSubject('cls1', 'cls1-math'); await new Promise(r => setTimeout(r, 1200)); const s = SBPrivate.current('cls1'); goToSubjects('cls1'); await new Promise(r => setTimeout(r, 500)); return { s, series: SBPrivate.current('cls1'), covers: document.querySelectorAll('.cls1-cover-img').length }; });
   check('opening a Government book makes Back return to the Government books', gov2.s === '' && gov2.series === '' && gov2.covers === 8, gov2);
 
+  // coded drawings (tools/mun_figs.py): the Computer book shows its objects as inline svg, like the Government books do
+  const comp = await page.evaluate(async () => {
+    openSubject('cls1', 'cls1-mun-comp'); await new Promise(r => setTimeout(r, 3500));
+    const area = document.getElementById('subjTabContent') || document.body;
+    const svgs = [...area.querySelectorAll('svg[data-no-translate]')];
+    const labels = svgs.map(s => s.getAttribute('aria-label') || '').join(' | ');
+    return { n: svgs.length, labels, tagged: svgs.every(s => /SpaceBook drawing/.test(s.textContent)), sized: svgs.every(s => s.getBoundingClientRect().width > 40) };
+  });
+  await shot('06-computer-drawings');
+  check('the Computer book draws the lever, wedge, screw, pulley, bicycle, refrigerator and a desktop computer as svg pictures', comp.n >= 6 && /Lever/.test(comp.labels) && /Bicycle/.test(comp.labels) && /Refrigerator/.test(comp.labels) && /desktop computer/.test(comp.labels), comp);
+  check('every drawing is tagged "SpaceBook drawing" and has a visible size', comp.tagged && comp.sized, comp);
+
   check('no page errors', errors.length === 0, errors.slice(0, 4));
   await browser.close(); server.close();
   console.log(`\n${pass} passed, ${fail} failed; screenshots in ${OUT}`);

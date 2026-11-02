@@ -27,6 +27,7 @@ SRC = MUN.parents[1]                                # docs/source-verification
 APP = SRC.parents[1]                                # SpaceBook Web
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import registry  # noqa: E402
+import mun_figs  # noqa: E402
 
 SLOT_ORDER = {'en': None, 'bl': None, 'ur': ['ur', 'en', 'ps']}   # "original || translation || translation" for Urdu-medium books
 PLACEHOLDER = ('Contents in preparation', 'فہرست زیرِ تیاری ہے', 'فهرست د چمتو کېدو په حال کې دی')
@@ -75,6 +76,9 @@ def build(bid):
             keep = []
             for line in text.splitlines():
                 s = line.strip()
+                if s.startswith('pic '):   # SpaceBook's own coded drawing of an object on the page (see mun_figs.py)
+                    keep.extend(['svg', mun_figs.make(s[4:]), 'endsvg'])
+                    continue
                 keep.append('// TAB ' + s[5:].strip() if s.startswith('@tab ') else line)
             tabs = [l[7:] for l in keep if l.startswith('// TAB ')]
             super().page(idx, '\n'.join(keep))

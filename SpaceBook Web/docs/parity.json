@@ -184,6 +184,16 @@
    "exemption": "The pictures are the 437 x 547 sample pictures with the SAMPLE watermark: not sharp, not vector, no clickable words. Sharp vector pages with a text layer need the publisher's clean PDFs (tools/pdf_to_pages.py in the helper folder). The licence of 15 October 2026 allows distribution only through SpaceBook's website and app, so the pictures are not committed to the public repository and the app shows them online only."
   },
   {
+   "id": "read.munawar_drawings",
+   "area": "Reading the books",
+   "name": "Munawar (Kanz) books: the objects and diagrams of a page drawn as code (svg), like the Government books: monitor, keyboard with key groups in pink, mouse with its parts, machines, hardware parts, outlines to colour",
+   "status": "partial",
+   "web": "docs/source-verification/private/munawar/tools/mun_figs.py (the drawings) and build_munawar.py (turns a `pic` line of a page file into an svg block); built into js/munawar_c<N>_<code>_book.js; checked by tests/private/data.js and tests/private/browser.js",
+   "app": "the same book data files and the same reader, bundled by tools/app/sync_app.js (nothing to write by hand in the app)",
+   "data": "the same drawings on both platforms: they are part of the book data file",
+   "exemption": "Only Class 1 Computer is drawn so far (47 drawings). The other Munawar books keep an @deco note per page and the Original pages view until their `pic` lines are written. Photographs, screenshots, cartoon people and hands are not drawn; they stay in the Original pages view."
+  },
+  {
    "id": "read.offline",
    "area": "Reading the books",
    "name": "Every book opens with no internet: the website's service worker keeps what was read; the app carries every book inside the APK",

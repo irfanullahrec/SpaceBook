@@ -134,6 +134,26 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
   check(t.name + ': what could not be read is recorded as an @issue, and every sentence has Urdu and Pashto', /too small|cannot be read|printed in (very )?small/.test(tledger) && !/UNTRANSLATED/.test(tledger) && !/"en":"[^"]+","ur":""/.test(JSON.stringify(B.units)));
 });
 
+// 4b. coded drawings: every `pic` line of a page file is an svg block in the built book, and each carries the "SpaceBook drawing" tag
+{
+  let picLines = 0, drawn = 0, untagged = 0; const perBook = {};
+  books.forEach(b => {
+    const dir = path.join(MUN, b.id, 'pages');
+    if (!fs.existsSync(dir)) return;
+    const n = fs.readdirSync(dir).filter(f => /^p\d{3}\.txt$/.test(f)).reduce((a, f) => a + fs.readFileSync(path.join(dir, f), 'utf8').split(/\r?\n/).filter(l => l.startsWith('pic ')).length, 0);
+    if (!n) return;
+    const sbp = { window: {} }; vm.createContext(sbp);
+    vm.runInContext(read('js/munawar_c' + b.cls + '_' + b.code + '_book.js'), sbp);
+    const B = sbp.window['CLS' + b.cls + '_BOOKS']['mun-' + b.code];
+    const svgs = []; (function walk(l) { (l || []).forEach(x => { if (x.t === 'svg' && x.svg && x.svg.includes('SpaceBook drawing')) svgs.push(x); walk(x.blocks); walk(x.items); }); })(B.units.flatMap(u => u.sections.flatMap(s => s.blocks)));
+    picLines += n; drawn += svgs.length; perBook[b.id] = [n, svgs.length];
+    untagged += svgs.filter(x => !/data-no-translate/.test(x.svg) || !/<svg [^>]*viewBox/.test(x.svg)).length;
+  });
+  check('Class 1 Computer shows its objects as coded drawings (40+ pictures)', (perBook['c1-comp'] || [0])[0] >= 40, perBook);
+  check('every `pic` line of a page file became one drawing in its book, none lost or doubled', picLines === drawn, perBook);
+  check('every drawing is an inline svg with a viewBox, not a scan, and carries the SpaceBook drawing tag', untagged === 0 && drawn > 0, { untagged, drawn });
+}
+
 // 5. covers, index.html, coverPageMap
 check('every book has its cover file (covers/Munawar/<subject id>.webp)', books.every(b => fs.existsSync(path.join(ROOT, 'covers', b.cover)) && fs.statSync(path.join(ROOT, 'covers', b.cover)).size > 4000), books.filter(b => !fs.existsSync(path.join(ROOT, 'covers', b.cover))).map(b => b.id));
 const index = read('index.html');
