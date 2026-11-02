@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpaceBook - KPK Portal</title>
+  <title>SpaceBook Portal</title>
   <link rel="icon" type="image/png" href="logo_tuitionhub_trans.png">
   <meta name="theme-color" content="#1d4ed8">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/sb_fonts.css?v=20261027_f1">
-  <link rel="stylesheet" href="css/style.css?v=20261019_lect1">
+  <link rel="stylesheet" href="css/style.css?v=20261029_back1">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <link rel="stylesheet" href="css/universal_translate.css?v=20261014_ut10">
   <link rel="stylesheet" href="css/word_stats.css?v=20261018_ws4">
@@ -24,17 +23,31 @@
   <link rel="stylesheet" href="css/class12_study_views.css?v=20261018_3">
   <link rel="stylesheet" href="css/sb_theme.css?v=20261019_th4">
   <link rel="stylesheet" href="css/sb_mcq.css?v=20261019_q3">
-  <link rel="stylesheet" href="css/a11y.css?v=20261027_7">
+  <link rel="stylesheet" href="css/a11y.css?v=20261020_1">
   <link rel="stylesheet" href="css/search.css?v=20261020_1">
   <link rel="stylesheet" href="css/sb_games.css?v=20261023_g2">
   <link rel="stylesheet" href="css/sb_library.css?v=20261023_l1">
-  <link rel="stylesheet" href="css/sb_feedback.css?v=20261026_fb1">
-  <link rel="stylesheet" href="css/sb_rights.css?v=20261029_r1">
   <link rel="stylesheet" href="css/sb_billing.css?v=20261029_b1">
   <link rel="stylesheet" href="css/sb_private.css?v=20261029_mun1">
+  <link rel="stylesheet" href="css/sb_redesign.css?v=20261030_r1">
+  <link rel="stylesheet" href="css/sb_design_match.css?v=20261030_1">
+  <link rel="stylesheet" href="css/sb_billing_pages.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_auth_pages.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_account_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_tests_preps.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_classes_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_subjects_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_reader_shell.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_ask_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_saved_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_offline_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_createtest_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_games_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_papers_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_studyplan_page.css?v=20261031_1">
+  <link rel="stylesheet" href="css/sb_settings_page.css?v=20261031_1">
 </head>
 <body>
-  <a class="sb-skip" href="#page-content">Skip to the content</a>
 
   <!-- Mobile Sidebar Overlay -->
   <div id="overlay"></div>
@@ -44,55 +57,26 @@
        ══════════════════════════════════════ -->
   <aside id="sidebar">
     <div class="sidebar-logo">
-      <div class="logo-icon">
-        <img src="logo_tuitionhub_trans.png" alt="SpaceBook Logo" style="width:28px;height:28px;object-fit:contain;">
-      </div>
-      <div>
-        <div class="logo-name">SpaceBook</div>
-        <span class="logo-sub">Learning Portal</span>
-      </div>
+      <img class="sb-logo-img" src="assets/sb_logo.svg" alt="SpaceBook" width="200" height="51">
+      <span class="logo-sub">Digital Textbooks for a Smarter Generation</span>
     </div>
 
     <nav class="sidebar-nav" aria-label="Sections">
-      <div class="nav-label">Main Menu</div>
-      <a class="nav-link" data-page="home">
-        <span class="nav-icon">🏠</span> Home (Dashboard)
-      </a>
-      <a class="nav-link active" data-page="subjects">
-        <span class="nav-icon">📖</span> Subjects &amp; Units
-      </a>
-      <a class="nav-link" data-page="tests-preps">
-        <span class="nav-icon">📝</span> Tests Preps
-      </a>
-      <a class="nav-link" data-page="papers">
-        <span class="nav-icon">📄</span> Papers
-      </a>
-      <a class="nav-link" data-page="create-test">
-        <span class="nav-icon">✏️</span> Create Test
-      </a>
-      <a class="nav-link" data-page="assistant">
-        <span class="nav-icon">🤖</span> Ask SpaceBook
-      </a>
-      <a class="nav-link" data-page="study-plan">
-        <span class="nav-icon">📅</span> Study Plan
-      </a>
-      <a class="nav-link" data-page="games">
-        <span class="nav-icon">🎮</span> Games
-      </a>
-      <a class="nav-link" data-page="grammar-stats">
-        <span class="nav-icon">🧩</span> Grammar Stats
-      </a>
-      <a class="nav-link" data-page="saved">
-        <span class="nav-icon">🔖</span> Saved
-      </a>
-      <a class="nav-link" href="#" data-sbfb role="button">
-        <span class="nav-icon">💬</span> Suggest / Report a problem
-      </a>
+      <a class="nav-link" data-page="home"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span class="nav-text">Home</span></a>
+      <a class="nav-link active" data-page="subjects"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5c4-1.5 7-1 10 1v14c-3-2-6-2.5-10-1zM22 5c-4-1.5-7-1-10 1v14c3-2 6-2.5 10-1z"/></svg><span class="nav-text">Subjects &amp; Units</span></a>
+      <a class="nav-link" data-page="tests-preps"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3h6v3H9zM8 12l2 2 4-4M8 18h8"/></svg><span class="nav-text">Tests Preps</span></a>
+      <a class="nav-link" data-page="papers"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span class="nav-text">Papers</span></a>
+      <a class="nav-link" data-page="create-test"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg><span class="nav-text">Create Test</span></a>
+      <a class="nav-link" data-page="assistant"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg><span class="nav-text">Ask SpaceBook</span></a>
+      <a class="nav-link" data-page="study-plan"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18M8 14h2M12 14h2M16 14h2M8 17h2M12 17h2"/></svg><span class="nav-text">Study Plan</span></a>
+      <a class="nav-link" data-page="games"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="20" height="10" rx="5"/><path d="M7 11v4M5 13h4M16 12h.01M18.5 14h.01"/></svg><span class="nav-text">Games</span></a>
+      <a class="nav-link" data-page="grammar-stats"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><span class="nav-text">Grammar Stats</span></a>
+      <a class="nav-link" data-page="saved"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span class="nav-text">Saved</span></a>
     </nav>
 
-    <div class="sidebar-footer">
-      SpaceBook &copy; 2026<br>
-      <span style="color:#64748b;">Academic Year 2025–26 · KPK Board</span>
+    <div class="sidebar-bottom">
+      <a class="nav-link" id="navAccountLink" role="button" tabindex="0"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg><span class="nav-text">Account</span><svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <a class="nav-link" id="navSettingsLink" role="button" tabindex="0"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span class="nav-text">Settings</span><svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
     </div>
   </aside>
 
@@ -100,7 +84,6 @@
        FIXED TOP HEADER
        ══════════════════════════════════════ -->
   <header id="top-header">
-    <h1 class="sb-vh">SpaceBook KPK Portal: textbooks, answers and practice</h1>
     <div class="header-left">
       <!-- Fixed three lines hamburger button -->
       <button class="hamburger-btn" id="hamburger" aria-label="Open navigation menu" title="Open Navigation Menu">
@@ -115,8 +98,7 @@
           <img src="logo_tuitionhub_trans.png" alt="SpaceBook Logo" class="brand-logo-img">
         </div>
         <div class="header-brand-text">
-          <span class="header-brand-title">SpaceBook</span>
-          <span class="header-brand-sub">KPK PORTAL</span>
+          <span class="header-brand-title">SpaceBook Portal</span>
         </div>
       </div>
     </div>
@@ -154,6 +136,7 @@
 
     <!-- Small Search Bar and User Avatar on the Right -->
     <div class="header-right-group">
+      <button type="button" class="header-class-chip" id="headerClassChip" title="Choose class" onclick="setActiveNav('subjects'); renderClasses();"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg><span id="headerClassText">Class</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></button>
       <div class="header-right-search">
         <div class="header-search-box">
           <span class="header-search-icon">🔍</span>
@@ -163,7 +146,6 @@
           <div id="searchResultsDropdown" class="header-search-dropdown" style="display:none;"></div>
         </div>
       </div>
-      <button type="button" class="sbfb-header-btn" id="sbFeedbackBtn" data-sbfb title="Suggest or report a problem" aria-label="Suggest or report a problem"><span aria-hidden="true">💬</span><span data-sbfb-badge hidden></span></button>
       <div class="header-user-avatar" title="Account">
         <svg viewBox="0 0 24 24" fill="#0284c7" width="34" height="34">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
@@ -192,7 +174,7 @@
     </div>
 
     <!-- MAIN PAGE CONTENT CONTAINER -->
-    <main id="page-content" tabindex="-1">
+    <main id="page-content">
       <div id="dashboard-body"></div>
     </main>
 
@@ -200,7 +182,6 @@
     <footer id="footer">
       <div>SpaceBook &copy; 2026 · Khyber Pakhtunkhwa Textbook Board Curriculum Portal</div>
       <span>Empowering students to achieve their best in Board Exams 🚀</span>
-      <div><a href="#" data-sbfb role="button">Found a mistake or have an idea? Tell us</a></div>
     </footer>
   </div>
 
@@ -210,7 +191,7 @@
   <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeader">
     <div class="modal-box">
       <div class="modal-header">
-        <h3 id="modalHeader" role="heading" aria-level="2">Questions</h3>
+        <h3 id="modalHeader">Questions</h3>
         <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
       </div>
       <div class="modal-body" id="modalBody"></div>
@@ -276,8 +257,8 @@
 <script src="js/biology_9_book.js?v=20261021_bio1"></script>
 <script src="js/chemistry_9_book.js?v=20261022_qa3"></script>
 <script src="js/math_9_book_data.js?v=20261021_m9b"></script>
-<script src="js/english_9_book.js?v=20261027_tq2"></script>
-<script src="js/pakstudy_9_book.js?v=20261027_tq2"></script>
+<script src="js/english_9_book.js?v=20261022_qa3"></script>
+<script src="js/pakstudy_9_book.js?v=20261013_pk9b1"></script>
 <script src="js/general_science_9_book.js?v=20261022_qa4"></script>
 <script src="js/computer_9_data.js?v=20261022_qa3"></script>
 <script src="js/islamiat_9_data.js?v=20261022_qa3"></script>
@@ -319,51 +300,51 @@
   <script src="js/phys_11_data.js?v=20261009_1"></script>
   <script src="js/phys_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/chem_11_data.js?v=20261011_class11"></script>
-  <script src="js/chem_11_book.js?v=20261027_tq1"></script>
+  <script src="js/chem_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/bio_11_data.js?v=20261012_1"></script>
-  <script src="js/bio_11_book.js?v=20261027_ans1"></script>
+  <script src="js/bio_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/stat_11_data.js?v=20261012_1"></script>
-  <script src="js/stat_11_book.js?v=20261028_hist1"></script>
+  <script src="js/stat_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/eng_11_data.js?v=20261012_1"></script>
-  <script src="js/eng_11_book.js?v=20261027_ans2"></script>
+  <script src="js/eng_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/ishist_11_data.js?v=20261012_1"></script>
-  <script src="js/ishist_11_book.js?v=20261027_ans2"></script>
+  <script src="js/ishist_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/cs_11_data.js?v=20261012_1"></script>
-  <script src="js/cs_11_book.js?v=20261027_ans1"></script>
+  <script src="js/cs_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/ikhtiari_11_data.js?v=20261012_1"></script>
-  <script src="js/ikhtiari_11_book.js?v=20261027_tq1"></script>
+  <script src="js/ikhtiari_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/civics_11_data.js?v=20261012_1"></script>
-  <script src="js/civics_11_book.js?v=20261027_ans2"></script>
+  <script src="js/civics_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/urdu_11_data.js?v=20261012_1"></script>
-  <script src="js/urdu_11_book.js?v=20261027_ans2"></script>
+  <script src="js/urdu_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/mq_11_data.js?v=20261012_1"></script>
-  <script src="js/mq_11_book.js?v=20261027_ans2"></script>
+  <script src="js/mq_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/hpe_11_data.js?v=20261012_1"></script>
-  <script src="js/hpe_11_book.js?v=20261027_ans1"></script>
+  <script src="js/hpe_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/isl_11_data.js?v=20261012_1"></script>
-  <script src="js/isl_11_book.js?v=20261027_ans1"></script>
+  <script src="js/isl_11_book.js?v=20261025_c11pg3"></script>
   <script src="js/phys_12_data.js?v=20261005_1"></script>
   <script src="js/chem_12_data.js?v=20261011_chem12_source64"></script>
   <script src="js/stat_12_data.js?v=20261013_stat12_complete"></script>
   <script src="js/english_12_data.js?v=20261013_eng12_complete"></script>
-  <script src="js/english_12_book.js?v=20261027_ans2"></script>
+  <script src="js/english_12_book.js?v=20261025_en12"></script>
   <script src="js/pakstudy_12_data.js?v=20261013_pak12_complete"></script>
   <script src="js/pakstudy_12_book.js?v=20261025_pk2"></script>
   <script src="js/urdu_12_data.js?v=20261013_urdu12_complete"></script>
-  <script src="js/urdu_12_book.js?v=20261027_ans2"></script>
+  <script src="js/urdu_12_book.js?v=20261025_ur12"></script>
   <script src="js/biology_12_data.js?v=20261005_1"></script>
   <script src="js/computer_12_data.js?v=20261013_cs12_complete"></script>
-  <script src="js/computer_12_book.js?v=20261027_ans2"></script>
+  <script src="js/computer_12_book.js?v=20261025_cs12"></script>
   <script src="js/civics_12_data.js?v=20261013_civ12_complete"></script>
-  <script src="js/civics_12_book.js?v=20261027_ans2"></script>
+  <script src="js/civics_12_book.js?v=20261025_c12e"></script>
   <script src="js/economics_12_data.js?v=20261013_eco_complete"></script>
-  <script src="js/economics_12_book.js?v=20261027_ans2"></script>
+  <script src="js/economics_12_book.js?v=20261025_c12e"></script>
   <script src="js/hpe_12_data.js?v=20261013_hpe12_complete"></script>
-  <script src="js/hpe_12_book.js?v=20261027_ans2"></script>
+  <script src="js/hpe_12_book.js?v=20261025_c12e"></script>
   <script src="js/islamiat_ikhtiari_12_data.js?v=20261013_iski_complete"></script>
-  <script src="js/islamiat_ikhtiari_12_book.js?v=20261027_ans2"></script>
+  <script src="js/islamiat_ikhtiari_12_book.js?v=20261025_c12e"></script>
   <script src="js/islamic_history_12_data.js?v=20261014_ihist_complete"></script>
-  <script src="js/islamic_history_12_book.js?v=20261027_ans2"></script>
+  <script src="js/islamic_history_12_book.js?v=20261025_c12e"></script>
   <script src="js/quran_12_data.js?v=20261014_quran_complete"></script>
   <script src="js/quran_12_book.js?v=20261025_c12e"></script>
   <script src="js/math_4_data.js?v=20261011_c4m188"></script>
@@ -464,12 +445,11 @@
   <script src="js/drawing_8_data.js"></script>
   <script src="js/hpe_8_data.js"></script>
   <script src="js/core/hooks.js?v=20261020_1"></script>
-  <script src="js/app.js?v=20261024_h1_pf1"></script>
-  <script src="js/biology_10_reader.js?v=20261018_q1_a1"></script>
-  <script src="js/english_10_reader.js?v=20261018_q1_a1"></script>
+  <script src="js/app.js?v=20261026_h3"></script>
+  <script src="js/biology_10_reader.js?v=20261018_q1"></script>
+  <script src="js/english_10_reader.js?v=20261018_q1"></script>
   <script src="assets/vendor/katex/katex.min.js"></script>
   <script src="js/sb_vertical.js?v=20261018_1"></script>
-  <script src="js/core/katexcache.js?v=20261027_kc1"></script>
   <script src="js/vr_viz.js?v=20261024_2"></script>
   <script src="js/vr_engine.js?v=20261027_m1"></script>
   <script src="js/vr_auto.js?v=20261027_m1"></script>
@@ -540,18 +520,18 @@
   <script src="js/comp12_exercise_banks.js?v=20261018_3"></script>
   <script src="js/stat12_exercise_banks.js?v=20261018_3"></script>
   <script src="js/quran12_exercise_banks.js?v=20261018_3"></script>
-  <script src="js/class12_study_views.js?v=20261029_rc1"></script>
+  <script src="js/class12_study_views.js?v=20261022_1"></script>
   <script src="js/class11_study_views.js?v=20261019_c11l"></script>
   <script src="js/sb_mcq.js?v=20261024_a1"></script>
   <script src="js/answers_extra.js?v=20261024_a1"></script>
   <script src="js/fills_data.js?v=20261025_z1"></script>
-  <script src="js/math6_reader.js?v=20261029_rc1"></script>
-  <script src="js/math5_reader.js?v=20261018_q1_pf1_a1"></script>
+  <script src="js/math6_reader.js?v=20261025_z1"></script>
+  <script src="js/math5_reader.js?v=20261018_q1_pf1"></script>
   <script src="js/cls5_book_reader.js?v=20261012_1_pf1"></script>
   <script src="js/cls2_book_reader.js?v=20261011_1"></script>
   <script src="js/cls4_book_reader.js?v=20261011_c4m188_pf1"></script>
   <script src="js/cls1_book_reader.js?v=20261013_c1ug_pf1"></script>
-  <script src="js/sb_solve.js?v=20261026_a3"></script>
+  <script src="js/sb_solve.js?v=20261102_u1"></script>
   <script src="js/sb_loading.js?v=20261027_m1"></script>
   <script src="js/sb_book_skin.js?v=20261018_th3_pf2"></script>
   <script src="js/core/store.js?v=20261019_core1"></script>
@@ -560,15 +540,16 @@
   <script src="js/core/items.js?v=20261023_l1"></script>
   <script src="js/core/entitlements.js?v=20261023_l1"></script>
   <script src="js/core/tts.js?v=20261020_1"></script>
-  <script src="js/core/offline.js?v=20261027_off2"></script>
+  <script src="js/core/offline.js?v=20261020_1"></script>
   <script src="js/core/offline_queue.js?v=20261024_q1"></script>
   <script src="js/sb_rewards.js?v=20261027_m1"></script>
-  <script src="js/sb_trace.js?v=20261018_t2"></script>
+  <script src="js/sb_trace.js?v=20261102_u1"></script>
   <script src="js/cls1_eng_activities.js?v=20261019_a5"></script>
   <script src="js/cls1_eng_play.js?v=20261024_f1"></script>
   <script src="js/sb_card_fold.js?v=20261024_f1"></script>
   <script src="js/sb_fill.js?v=20261025_z1"></script>
   <script src="js/sb_create_test.js?v=20261025_t1"></script>
+  <script src="js/sb_paper.js?v=20261102_p1"></script>
   <script src="js/sb_grammar.js?v=20261025_g1"></script>
   <script src="js/sb_tutor.js?v=20261025_u1"></script>
   <script src="js/cls1_play_math.js?v=20261019_m4"></script>
@@ -582,10 +563,10 @@
   <script src="js/cls3_book_reader.js?v=20261013_c3open_pf1"></script>
   <script src="js/cls2_page_reader.js?v=c2d34_pf1"></script>
   <script src="js/cls6_book_reader.js?v=20261022_qa4_c10"></script>
-  <script src="js/math7_reader.js?v=20261018_q1_pf1_a1"></script>
-  <script src="js/math8_reader.js?v=20261018_q1_pf1_a1"></script>
+  <script src="js/math7_reader.js?v=20261018_q1_pf1"></script>
+  <script src="js/math8_reader.js?v=20261018_q1_pf1"></script>
   <script src="js/math_11_data.js?v=20261018_answers1"></script>
-  <script src="js/math11_reader.js?v=20261018_q1_pf1_a1"></script>
+  <script src="js/math11_reader.js?v=20261018_q1_pf1"></script>
   <script src="js/offline_lexicon.js?v=20261018_l1"></script>
   <script src="js/lexicon_data.js?v=20261021_f1"></script>
   <script src="js/sb_morph.js?v=20261021_f1"></script>
@@ -612,36 +593,39 @@
   <script src="js/structure_harmonizer.js?v=20261021_f1"></script>
   <script src="js/auth.js?v=20261019_core1"></script>
   <script src="js/word_stats_summary.js?v=20261014_ws2"></script>
-  <script src="js/word_stats.js?v=20261024_ws5"></script>
+  <script src="js/word_stats.js?v=20261102_u1"></script>
   <script src="js/test_prep.js?v=20261027_m1"></script>
   <script src="js/sb_bise.js?v=20261020_b1"></script>
   <script src="js/study_plan_index.js?v=20261020_i2"></script>
   <script src="js/sb_mastery.js?v=20261025_k1"></script>
   <script src="js/sb_study_sheet.js?v=20261026_s1"></script>
-  <script src="js/sb_study_plan.js?v=20261027_m2"></script>
-  <script src="js/sb_feed.js?v=20261026_nf1"></script>
-  <script src="js/sb_book_spread.js?v=20261029_rc1"></script>
+  <script src="js/sb_study_plan.js?v=20261026_d2"></script>
+  <script src="js/sb_design_ui.js?v=20261030_1"></script>
+  <script src="js/sb_pages_enhance.js?v=20261031_1"></script>
+  <script src="js/sb_settings_page.js?v=20261031_1"></script>
+  <script src="js/sb_home_plans.js?v=20261030_4"></script>
+  <script src="js/sb_book_spread.js?v=20261102_op1"></script>
   <script src="js/sb_global_ui.js?v=20261021_bk1"></script>
   <script src="js/sb_trilingual.js?v=20261021_f1"></script>
   <script src="js/sb_four_lang.js?v=20261021_f1"></script>
+  <script src="js/sb_sentence_click.js?v=20261027_sc1"></script>
   <script src="js/sb_rtl.js?v=20261026_rtl4"></script>
   <script src="js/sb_structure.js?v=20261019_st9"></script>
   <script src="js/sb_medium.js?v=20261027_m1"></script>
   <script src="js/sb_topic_practice.js?v=20261021_tp10"></script>
-  <script src="js/sb_page_tabs.js?v=20261027_m1"></script>
+  <script src="js/sb_page_tabs.js?v=20261102_u1"></script>
+  <script src="js/sb_chapter_tools.js?v=20261102_u2"></script>
   <script src="js/sb_exercise_tabs.js?v=20261023_ex1"></script>
   <script src="js/games_vocab.js?v=20261023_g2"></script>
   <script src="js/sb_games_content.js?v=20261023_g2"></script>
   <script src="js/sb_games.js?v=20261023_g2"></script>
-  <script src="js/sb_arcade.js?v=20261024_a1"></script>
+  <script src="js/sb_arcade.js?v=20261102_u1"></script>
   <script src="js/sb_arcade_runners.js?v=20261024_a1"></script>
   <script src="js/sb_arcade_shoot.js?v=20261024_a1"></script>
   <script src="js/sb_arcade_puzzle.js?v=20261024_a1"></script>
   <script src="js/sb_arcade_build.js?v=20261024_a1"></script>
-  <script src="js/sb_library.js?v=20261023_l1_a1"></script>
-  <script src="js/sb_feedback.js?v=20261026_fb1"></script>
-  <script src="js/sb_rights.js?v=20261029_r1"></script>
-  <script src="js/core/a11y.js?v=20261027_ho4"></script>
+  <script src="js/sb_library.js?v=20261023_l1"></script>
+  <script src="js/core/a11y.js?v=20261020_1"></script>
   <script src="js/core/search.js?v=20261020_1"></script>
   <script src="js/core/lazycards.js?v=20261020_1"></script>
   <script src="js/sb_access.js?v=20261029_b1"></script>

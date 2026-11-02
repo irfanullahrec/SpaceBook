@@ -184,6 +184,15 @@
    "exemption": "Only nineteen books are drawn so far (245 drawings): the five Computer books, English of Classes 1-4, Class 4 Science, General Knowledge and Preliminary of Classes 1-3, Grammar of Classes 1-3 (a few pictures each) and the fraction circles of Class 2 Mathematics. The other Munawar books keep an @deco note per page until their `pic` lines are written. Photographs, screenshots, maps, cartoon people and hands are not drawn (the owner wants drawn shapes and the book text only; the Original pages button was removed on 2026-11-03)."
   },
   {
+   "id": "read.opener_page",
+   "area": "Reading the books",
+   "name": "A unit's first page shows only its opening (unit title, Student Learning Outcomes); the Introduction and the lesson start on the unit's second page, in every subject",
+   "status": "partial",
+   "web": "js/sb_book_spread.js pagesOf() -> openerAlone() (2026-11-02, owner's page-by-page review)",
+   "app": "the same pages once sync_app bundles the new js/sb_book_spread.js: not bundled yet, the Web tree holds another session's unfinished UI redesign, so sync_app refuses",
+   "data": "no data change: the split is made when the pages are drawn"
+  },
+  {
    "id": "read.offline",
    "area": "Reading the books",
    "name": "Every book opens with no internet: the website's service worker keeps what was read; the app carries every book inside the APK",
