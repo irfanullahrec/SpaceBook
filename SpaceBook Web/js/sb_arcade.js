@@ -274,8 +274,13 @@ html.sba-lock,html.sba-lock body{overflow:hidden!important}
     opt = opt || {};
     if (current) current.destroy();
     addCss();
-    const text = typeof src === 'string' ? src : (src && src.text != null && !src.nodeType ? src.text : unitText(src));
+    const SAC = root.SBSacred;
+    const raw = typeof src === 'string' ? src : (src && src.text != null && !src.nodeType ? src.text : unitText(src));
     const meta = identify(src && src.nodeType ? src : null, typeof src === 'object' && !src.nodeType ? src : opt);
+    // Islamiat, Arabic and the Quran books have no games; elsewhere a sentence naming something sacred never enters a game (js/sb_sacred.js)
+    let subjNow = ''; try { subjNow = (root.SBPageTabs && root.SBPageTabs.chapterNow ? root.SBPageTabs.chapterNow().subj : '') || ''; } catch (e) { /* no chapter open */ }
+    if (SAC && SAC.noGames(subjNow)) return null;
+    const text = SAC ? SAC.stripSacred(raw) : raw;
     const L = LANG[opt.lang || uiLang()] || LANG.en;
     const pack = extract(text);
     const rtlPage = langOf(text) === 'ar';
