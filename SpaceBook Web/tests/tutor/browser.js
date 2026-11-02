@@ -6,6 +6,8 @@ const { serve, launch } = require('../baseline/lib');
 let pass = 0, fail = 0;
 const check = (name, ok, detail) => { if (ok) { pass++; console.log('PASS  ' + name); } else { fail++; console.log('FAIL  ' + name + (detail !== undefined ? '  -> ' + String(JSON.stringify(detail)).slice(0, 300) : '')); } };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// the redesigned Ask page (css/sb_ask_page.css) hides the class / subject row (the header's class chooser is the visible control): the value is set and the change event sent, as the page's own handler expects
+const pickClass = (page, v) => page.$eval('select[data-act="cls"]', (el, val) => { el.value = val; el.dispatchEvent(new Event('change', { bubbles: true })); }, String(v));
 
 (async () => {
   const { server, url } = await serve(0);
@@ -22,7 +24,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.waitForSelector('.sbtu textarea', { timeout: 30000 });
   check('the Ask tab opens', await page.evaluate(() => state.page === 'assistant' && !!document.querySelector('.nav-tab[data-page="assistant"].active')));
   const ask = async (q, scope, wait = 120000) => {
-    if (scope !== undefined) await page.selectOption('select[data-act="cls"]', String(scope));
+    if (scope !== undefined) await pickClass(page, String(scope));
     const n = await page.$$eval('.sbtu-a', e => e.length);
     const t0 = Date.now();
     await page.fill('.sbtu textarea', q); await page.click('button[data-act="ask"]');
@@ -45,7 +47,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('an Urdu question finds Urdu passages and the word meaning', /نمک/.test(a.text) && /Salt|salt/.test(a.text) || /FROM THE BOOKS/i.test(a.text), a.text.slice(0, 200));
   check('searching all classes finishes in a reasonable time', a.ms < 120000, a.ms);
   // make a test from an answer
-  await page.selectOption('select[data-act="cls"]', '9');
+  await pickClass(page, '9');
   a = await ask('What is a covalent bond?');
   const btn = await page.$('.sbtu-a:last-of-type button[data-act="test"]');
   check('the answer offers "Make a test on it"', !!btn);
@@ -54,7 +56,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   // offline: the files of class 9 are loaded, a new question needs no network
   await page.evaluate(() => { document.querySelector('.nav-link[data-page="assistant"]').click(); });
   await page.waitForSelector('.sbtu textarea');
-  await page.selectOption('select[data-act="cls"]', '9');
+  await pickClass(page, '9');
   const requests = [];
   page.on('request', r => { if (/content\/(assistant|testbank|search)\//.test(r.url())) requests.push(r.url()); });
   await ctx.setOffline(true);

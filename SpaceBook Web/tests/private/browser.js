@@ -28,11 +28,11 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.evaluate(() => renderClasses());
   await sleep(500);
 
-  const cards = await page.evaluate(() => document.querySelectorAll('.class-jewel-card').length);
+  const cards = await page.evaluate(() => document.querySelectorAll('.class-jewel-card, .sbc-card[data-cls]').length);
   check('the class page lists the classes', cards >= 12, cards);
 
   // a click on Class 1 asks Government or Private
-  await page.click('.class-jewel-card[aria-label="Open Class 1"]');
+  await page.click('.class-jewel-card[aria-label="Open Class 1"], .sbc-card[data-cls="cls1"]');
   await page.waitForSelector('.sbp-dialog');
   const first = await page.evaluate(() => ({
     title: document.querySelector('#sbpTitle').textContent, eyebrow: document.querySelector('.sbp-eyebrow').textContent,
@@ -53,7 +53,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('Escape closes the modal', await page.evaluate(() => !document.querySelector('.sbp-overlay')));
 
   // Government: the board's books only
-  await page.click('.class-jewel-card[aria-label="Open Class 1"]');
+  await page.click('.class-jewel-card[aria-label="Open Class 1"], .sbc-card[data-cls="cls1"]');
   await page.waitForSelector('.sbp-dialog');
   await page.click('.sbp-gov');
   await sleep(700);

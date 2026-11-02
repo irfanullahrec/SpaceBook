@@ -66,7 +66,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('wide: the chapter rail is thin (numbers only)', f.rail && f.rail.w <= 80 && f.names === 0, f.rail);
   check('wide: the chapter is the open book (facing pages), not page cards', f.spreads > 3 && f.cards === 0, { spreads: f.spreads, cards: f.cards });
   check('wide: header and tabs are tight (header under 50 px, page head within 20 px of the tabs)', f.header && f.header.h <= 50 && f.tabs.h <= 40 && f.headGap !== null && f.headGap <= 20, { header: f.header, tabs: f.tabs, gap: f.headGap });
-  check('wide: the workspace almost touches the screen sides', f.host && f.host.l <= 6 && f.host.w >= 1366 - 12, f.host);
+  // the redesign has a left menu (#sidebar) on wide screens: the workspace fills everything to its right
+  const side = await page.evaluate(() => { const s = document.getElementById('sidebar'); const r = s && s.getBoundingClientRect(); return r && r.width > 100 && getComputedStyle(s).display !== 'none' ? Math.round(r.right) : 0; });
+  check('wide: the workspace almost touches the screen sides (right of the left menu, if there is one)', f.host && f.host.l <= side + 6 && f.host.l + f.host.w >= 1366 - 12, { host: f.host, side });
   check('wide: the Board SLOs / Exercise bar is on the lesson pages', f.bars >= 3, f.bars);
   check('wide: the rail has an expand button', f.railBtn === true);
   // nobody touches the page: it must not keep redrawing itself (formula glyphs were marked and unmarked on every scan, the page counter was rewritten every 300 ms)
@@ -134,6 +136,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   f = await facts(page);
   check('full screen: the workspace covers the screen with the same thin rail', f.fallback && f.host.w === 1366 && f.host.h === 768 && f.rail.w <= 80, f);
   check('full screen: the browser is in full screen (or the covering layout is the full screen view)', f.fs || f.fallback);
+  // the Ans loop above left the chapter scrolled down in the exercises, which have no sentences: bring the first lesson sentence to the middle of the screen
+  await page.evaluate(() => { const e = document.querySelector('.bk-page .m6-s'); if (e) e.scrollIntoView({ block: 'center' }); }); await sleep(600);
   let shown = null;
   for (const dx of [20, 45, 70, 95]) {
     const w = await page.evaluate(d => { const e = [...document.querySelectorAll('.bk-page .m6-s')].find(x => { const b = x.getBoundingClientRect(); return b.width > 140 && b.top > 150 && b.bottom < 600; }); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.left + d, y: b.top + b.height / 2 }; }, dx);
@@ -145,7 +149,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   check('full screen: resting the mouse on a word shows its meaning card on top of the page', !!shown && shown.onTop, shown);
   await page.keyboard.press('Escape'); await sleep(900);
   f = await facts(page);
-  check('Esc leaves full screen and the workspace goes back into the page', !f.fallback && !f.fs && f.host.l <= 6 && f.host.w < 1366, f);
+  check('Esc leaves full screen and the workspace goes back into the page', !f.fallback && !f.fs && f.host.l <= side + 6 && f.host.w < 1366, f);
   await ctx.close();
 
   // ---------- a narrow screen keeps the page cards ----------
