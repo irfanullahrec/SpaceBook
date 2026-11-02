@@ -304,6 +304,9 @@
 
   function mount(unit, st, med, board, opt) {
     opt = opt || {};
+    // Islamiat, Arabic and the Quran books carry no Games button (js/sb_sacred.js); an exercise page there gets no bar at all
+    const noGame = !!(window.SBSacred && window.SBSacred.noGames(chapterNow().subj));
+    if (noGame && opt.gamesOnly) return;
     const TT = LBL[med] || LBL.en, T = TP().L[med] || TP().L.en;
     const host = document.createElement('div');
     host.className = 'sb-pt'; host.setAttribute('dir', med === 'en' ? 'ltr' : 'rtl');
@@ -313,7 +316,7 @@
         ${opt.slo ? `<button type="button" class="sb-pt-tab" role="tab" data-w="slo" aria-selected="false">${TT.slo} <i>${total(st.slo)}</i></button>` : ''}
         <button type="button" class="sb-pt-tab" role="tab" data-w="ex" aria-selected="false">${TT.ex} <i>${total(st.ex)}</i></button>
         </span>`}
-        <button type="button" class="sb-pt-tab sb-pt-game" data-game="1" aria-haspopup="dialog">${TT.game}</button>
+        ${noGame ? '' : `<button type="button" class="sb-pt-tab sb-pt-game" data-game="1" aria-haspopup="dialog">${TT.game}</button>`}
       </div>
       <div class="sb-pt-drawer" hidden>
         <div class="sb-pt-sub" role="tablist">${KINDS.map(k => `<button type="button" class="sb-pt-subtab" role="tab" data-k="${k}" title="${esc(TT.full[k])}"><span lang="en">${TT[k]}</span> <i></i></button>`).join('')}</div>

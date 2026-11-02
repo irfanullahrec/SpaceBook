@@ -164,6 +164,15 @@
    "data": "no data change: the split is made when the pages are drawn"
   },
   {
+   "id": "games.sacred",
+   "area": "Games",
+   "name": "No games in Islamiat, Islamiat Ikhtiari, Islamic History, Arabic, Nazira and Mutalia-e-Quran; in every other game no question, sentence or word that names Allah, a Prophet, the Quran, a Companion or a sacred place or act of worship",
+   "status": "partial",
+   "web": "js/sb_sacred.js used by js/sb_page_tabs.js (Games button), js/sb_arcade.js (page games), js/sb_games_content.js (Games tab, picture words)",
+   "app": "the same scripts in the app web view once sync_app bundles them",
+   "data": "no data change"
+  },
+  {
    "id": "read.offline",
    "area": "Reading the books",
    "name": "Every book opens with no internet: the website's service worker keeps what was read; the app carries every book inside the APK",
