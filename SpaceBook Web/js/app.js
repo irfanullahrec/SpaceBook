@@ -17560,6 +17560,7 @@ function renderMathChapter(index) {
     <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning -->
     <div class="math-compact-header-bar">
       <div class="mch-left" style="width:100%;min-width:0;">
+        ${sbClassPill()}
         <span class="mch-unit-pill">Unit ${ch.number}</span>
         <div class="mch-titles" style="flex-wrap:nowrap;white-space:nowrap;overflow:hidden;">
           <span class="mch-title" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ch.title}</span>
@@ -19739,6 +19740,16 @@ function selectSubjectChapter(subjKey, index, classId) {
   renderSubjectChapterView(subjKey, index, classId, subjObj);
 }
 
+// which book this is (owner, 2026-11-02: "no one knows that this is the book of which class"): "Class 12 · Mathematics" in every chapter header
+function sbClassPill() {
+  const cls = state.selectedClass || '', n = String(cls).replace(/\D/g, '');
+  if (!n) return '';
+  const subs = (typeof DATA !== 'undefined' && DATA.subjects && DATA.subjects[cls]) || [];
+  const key = state.activeSubject || 'math';
+  const s = subs.find(x => x.id === cls + '-' + key || x.id === key) || subs.find(x => { const k = String(x.id).replace(/^cls\d+-/, ''); return k === key || (k.length >= 3 && key.indexOf(k) === 0) || (key.length >= 3 && k.indexOf(key) === 0); });   // the workspace key can be longer than the subject id ('phys' for cls11-phy)
+  const name = s ? String(s.name || '').replace(/\s*\(.*$/, '') : (key === 'math' ? 'Mathematics' : '');
+  return `<span class="mch-class-pill" style="flex:0 0 auto;white-space:nowrap;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:.12rem .6rem;font-weight:800;font-size:.8rem;margin-inline-end:.4rem">Class ${n}${name ? ' · ' + name.replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c])) : ''}</span>`;
+}
 function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
   const chList = getSubjectChapterList(subjKey, classId);
   const ch = chList[chIdx] || chList[0];
@@ -19812,6 +19823,7 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
   area.innerHTML = `
     <div class="math-compact-header-bar" style="background:${theme.gradient};">
       <div class="mch-left" style="width:100%;min-width:0;">
+        ${sbClassPill()}
         <span class="mch-unit-pill" style="background:${theme.pillBg};color:${theme.pillColor};">
           ${theme.tag} ${ch.number || ch.num || (chIdx + 1)}
         </span>
