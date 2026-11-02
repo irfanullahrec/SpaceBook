@@ -150,6 +150,7 @@ check('Class 1 General Knowledge: what could not be read is recorded as an @issu
     untagged += svgs.filter(x => !/data-no-translate/.test(x.svg) || !/<svg [^>]*viewBox/.test(x.svg)).length;
   });
   check('Class 1 Computer shows its objects as coded drawings (40+ pictures)', (perBook['c1-comp'] || [0])[0] >= 40, perBook);
+  check('the Class 2 (both books), Class 3 and Class 4 Computer books are drawn too', ['c2-comp', 'c2-compbl', 'c3-comp', 'c4-comp'].every(id => (perBook[id] || [0])[0] >= 5), perBook);
   check('every `pic` line of a page file became one drawing in its book, none lost or doubled', picLines === drawn, perBook);
   check('every drawing is an inline svg with a viewBox, not a scan, and carries the SpaceBook drawing tag', untagged === 0 && drawn > 0, { untagged, drawn });
 }

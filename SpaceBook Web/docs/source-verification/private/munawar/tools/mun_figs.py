@@ -263,15 +263,22 @@ def phone_card():
 
 U = 10
 
+# one colour per finger (left pinky, ring, middle, index, right index, middle, ring, pinky) and the finger of each letter key
+FINGER = ['#f9a8d4', '#fdba74', '#fde047', '#86efac', '#67e8f9', '#93c5fd', '#c4b5fd', '#f87171']
+FNUM = [0, 0, 1, 2, 3, 3, 4, 4, 5, 6, 7, 7, 7]
+FTOP = [0, 1, 2, 3, 3, 4, 4, 5, 6, 7, 7, 7]
+FHOME = [0, 1, 2, 3, 3, 4, 4, 5, 6, 7, 7]
+FBOT = [0, 1, 2, 3, 3, 4, 4, 5, 6, 7]
 
-def _kb(hl, c=None, blank=False, overlay=False):
-    """-> (svg body, width, height, {group: [key centres]})"""
+
+def _kb(hl, c=None, blank=False, overlay=False, np=False, fingers=False):
+    """-> (svg body, width, height, {group: [key centres]}); np = with the numeric keypad on the right"""
     body_c = c or '#1f2937'
     keys, groups = [], {}
 
-    def key(x, y, w, grp, text=''):
-        keys.append((x, y, w, grp, text))
-        groups.setdefault(grp, []).append((x * U + w * U / 2, y * U + U * 0.45))
+    def key(x, y, w, grp, text='', h=1, col=None):
+        keys.append((x, y, w, grp, text, h, col if fingers else None))
+        groups.setdefault(grp, []).append((x * U + w * U / 2, y * U + U * 0.45 * h))
 
     y0 = 0.4
     key(0, y0, 1, 'esc', 'Esc')
@@ -280,22 +287,22 @@ def _kb(hl, c=None, blank=False, overlay=False):
     key(14, y0, 1, 'plain', 'Del')
     r = 1.6
     for i in range(13):
-        key(i, r, 1, 'numbers', '`1234567890-='[i])
+        key(i, r, 1, 'punct' if i in (0, 11, 12) else 'numbers', '`1234567890-='[i], col=FINGER[FNUM[i]])
     key(13, r, 2, 'plain', 'Back')
     r = 2.6
     key(0, r, 1.5, 'plain', 'Tab')
     for i, ch in enumerate('QWERTYUIOP[]'):
-        key(1.5 + i, r, 1, 'letters' if i < 10 else 'plain', ch)
-    key(13.5, r, 1.5, 'plain', '\\')
+        key(1.5 + i, r, 1, 'letters' if i < 10 else 'punct', ch, col=FINGER[FTOP[i]])
+    key(13.5, r, 1.5, 'punct', '\\')
     r = 3.6
     key(0, r, 1.75, 'caps', 'Caps')
     for i, ch in enumerate("ASDFGHJKL;'"):
-        key(1.75 + i, r, 1, 'letters' if i < 9 else 'plain', ch)
+        key(1.75 + i, r, 1, 'home' if i in (0, 1, 2, 3, 6, 7, 8, 9) else ('letters' if i < 9 else 'punct'), ch, col=FINGER[FHOME[i]])
     key(12.75, r, 2.25, 'enter', 'Enter')
     r = 4.6
     key(0, r, 2.25, 'shift', 'Shift')
     for i, ch in enumerate('ZXCVBNM,./'):
-        key(2.25 + i, r, 1, 'letters' if i < 7 else 'plain', ch)
+        key(2.25 + i, r, 1, 'letters' if i < 7 else 'punct', ch, col=FINGER[FBOT[i]])
     key(12.25, r, 2.75, 'shift', 'Shift')
     r = 5.6
     key(0, r, 1.25, 'ctrl', 'Ctrl')
@@ -309,17 +316,39 @@ def _kb(hl, c=None, blank=False, overlay=False):
     key(16.5, 4.6, 1, 'arrows', '▲')
     for i, ch in enumerate('◀▼▶'):
         key(15.5 + i, 5.6, 1, 'arrows', ch)
-    W, H = 18.6 * U + 8, 6.9 * U + 4
+    if np:   # numeric keypad: Num / * -, 7 8 9 +, 4 5 6, 1 2 3 Enter, 0 .
+        x0 = 19.4
+        for i, ch in enumerate(['Num', '/', '*', '-']):
+            key(x0 + i, 1.6, 1, 'numeric', ch)
+        for i, ch in enumerate('789'):
+            key(x0 + i, 2.6, 1, 'numeric', ch)
+        key(x0 + 3, 2.6, 1, 'numeric', '+', 2)
+        for i, ch in enumerate('456'):
+            key(x0 + i, 3.6, 1, 'numeric', ch)
+        for i, ch in enumerate('123'):
+            key(x0 + i, 4.6, 1, 'numeric', ch)
+        key(x0 + 3, 4.6, 1, 'numeric', 'Ent', 2)
+        key(x0, 5.6, 2, 'numeric', '0')
+        key(x0 + 2, 5.6, 1, 'numeric', '.')
+    if 'special' in hl:
+        hl = set(hl) | {'esc', 'caps', 'shift', 'ctrl', 'enter'}
+    if 'letters' in hl:
+        hl = set(hl) | {'home'}
+    groups['letters'] = groups.get('letters', []) + groups.get('home', [])
+    groups['special'] = [p for g in ('esc', 'caps', 'shift', 'ctrl', 'enter') for p in groups.get(g, [])]
+    W, H = (23.6 if np else 18.6) * U + 8, 6.9 * U + 4
     s = '' if overlay else f'<rect x="1" y="1" width="{W - 2:.0f}" height="{H - 2:.0f}" rx="7" fill="{body_c}" stroke="{K}" stroke-width="1.5"/>'
-    for x, y, w, grp, text in keys:
+    rects, texts = '', ''
+    for x, y, w, grp, text, kh, kc in keys:
         on = grp in hl
         if overlay and not on:
             continue
-        fill = HL if on else '#f1f5f9'
+        fill = HL if on else (kc or '#f1f5f9')
         px, py = 4 + x * U, 2 + y * U
-        s += f'<rect x="{px:.1f}" y="{py:.1f}" width="{w * U - 1.4:.1f}" height="{U - 1.4:.1f}" rx="1.6" fill="{fill}"/>'
-        if text and not blank and (w > 1.1 or text in ('Del',) or not on or grp in ('letters', 'numbers')):
-            s += (f'<text x="{px + (w * U - 1.4) / 2:.1f}" y="{py + 6.2:.1f}" text-anchor="middle" font-size="{3.6 if len(text) > 1 else 4.4}" fill="#334155">{escape(text)}</text>')
+        rects += f'<rect x="{px:.1f}" y="{py:.1f}" width="{w * U - 1.4:.1f}" height="{kh * U - 1.4:.1f}" rx="1.6" fill="{fill}"/>'
+        if text and not blank and (w > 1.1 or text in ('Del',) or not on or grp in ('letters', 'numbers', 'home', 'punct')):
+            texts += (f'<text x="{px + (w * U - 1.4) / 2:.1f}" y="{py + (kh * U - 1.4) / 2 + 1.8:.1f}" text-anchor="middle" font-size="{3.6 if len(text) > 1 else 4.4}" fill="#334155">{escape(text)}</text>')
+    s += f'<g stroke="#94a3b8" stroke-width=".5">{rects}</g>' + (f'<g>{texts}</g>' if texts else '')
     s_groups = {g: [(4 + cx, 2 + cy) for cx, cy in pts] for g, pts in groups.items()}
     return s, W, H, s_groups
 
@@ -355,7 +384,7 @@ def _spread(xs, widths, lo, hi, gap=8):
 def kb_scene(opts):
     hl = set(filter(None, (opts.get('hl') or '').split(',')))
     scale = float(opts.get('s', 2.0))
-    body, W, H, groups = _kb(hl, blank='blank' in opts)
+    body, W, H, groups = _kb(hl, blank='blank' in opts, np='np' in opts, fingers='fingers' in opts)
     labels = [x.strip() for x in (opts.get('lab') or '').split('|') if x.strip()]
     top = [l for l in labels if l.rpartition('@')[2] in ('esc', 'function')]
     low = [l for l in labels if l not in top]
@@ -419,7 +448,7 @@ def desktop_small(c=None):
     mw, mh, mb = monitor()
     tw, th, tb = tower()
     kb, kw, kh, _ = _kb(set())
-    return 130, 104, (f'<g transform="translate(2 2) scale(.8)">{mb}</g><g transform="translate(92 4) scale(.62)">{tb}</g>'
+    return 130, 114, (f'<g transform="translate(2 2) scale(.8)">{mb}</g><g transform="translate(92 4) scale(.62)">{tb}</g>'
                       f'<g transform="translate(20 74) scale(.5)">{kb}</g>')
 
 
@@ -429,14 +458,129 @@ def kbs_scene(opts):
     scale = float(opts.get('s', 1.0))
     cols = 2 if len(items) <= 4 else 3
     sc = 0.72
-    cw, ch = 194 * sc + 14, 73 * sc + 12
-    base, W, H, _ = _kb(set(), blank=True)
+    base, W, H, _ = _kb(set(), blank=True, np='np' in opts)
+    cw, ch = W * sc + 14, H * sc + 12
     out = f'<defs><g id="mkb-base">{base}</g></defs>'   # one plain keyboard, reused; only the coloured keys are drawn again
     for i, it in enumerate(items):
-        over, _, _, _ = _kb(set(it.split(',')), blank=True, overlay=True)
+        over, _, _, _ = _kb(set(it.split(',')), blank=True, overlay=True, np='np' in opts)
         out += f'<g transform="translate({(i % cols) * cw + 4:.1f} {(i // cols) * ch + 4:.1f}) scale({sc})"><use href="#mkb-base"/>{over}</g>'
     rows = (len(items) + cols - 1) // cols
     return _svg(cols * cw + 4, rows * ch + 4, out, 'keyboards with different keys coloured', scale)
+
+
+
+def palmtop():
+    keys = ''.join(f'<rect x="{14 + i * 13}" y="{66 + j * 10}" width="10" height="7" rx="2" fill="#e2e8f0"/>' for j in range(2) for i in range(4))
+    return 80, 106, (f'<rect x="8" y="4" width="64" height="98" rx="9" fill="#475569" stroke="{K}"/>'
+                     '<rect x="14" y="12" width="52" height="46" rx="3" fill="#bae6fd"/><path d="M14 12 L40 12 L14 40z" fill="#fff" opacity=".3"/>' + keys)
+
+
+def smartphone():
+    cols = [['#ef4444', '#22c55e', '#3b82f6'], ['#f59e0b', '#a855f7', '#14b8a6'], ['#ec4899', '#84cc16', '#0ea5e9']]
+    apps = ''.join(f'<rect x="{13 + i * 12}" y="{17 + j * 13}" width="10" height="10" rx="2.5" fill="{c}"/>' for j, r_ in enumerate(cols) for i, c in enumerate(r_))
+    return 56, 108, (f'<rect x="4" y="3" width="48" height="102" rx="9" fill="#1f2937" stroke="{K}"/><rect x="9" y="12" width="38" height="74" rx="2" fill="#dbeafe"/>'
+                     + apps + '<circle cx="28" cy="95" r="4" fill="#475569"/><rect x="22" y="6" width="12" height="2.5" rx="1.2" fill="#475569"/>')
+
+
+def hand_scanner():
+    return 96, 76, (f'<rect x="6" y="12" width="62" height="26" rx="7" fill="#1f2937" stroke="{K}"/><rect x="62" y="17" width="7" height="16" fill="#ef4444"/>'
+                    f'<path d="M24 38 L18 72 H38 L43 38z" fill="#475569" stroke="{K}"/><path d="M69 25 L92 17 M69 25 L94 25 M69 25 L92 33" stroke="#ef4444" stroke-width="1.6"/>'
+                    '<rect x="18" y="18" width="30" height="5" rx="2" fill="#94a3b8"/>')
+
+
+def scanner():
+    return 124, 78, (f'<rect x="4" y="36" width="116" height="34" rx="4" fill="#94a3b8" stroke="{K}"/>'
+                     f'<path d="M10 36 L22 10 H102 L114 36z" fill="#e5e7eb" stroke="{K}"/><rect x="24" y="42" width="76" height="20" rx="2" fill="#7dd3fc" stroke="{K}"/>'
+                     '<path d="M24 42 L50 42 L36 62 L24 62z" fill="#fff" opacity=".3"/><circle cx="110" cy="52" r="3" fill="#22c55e"/>')
+
+
+def webcam():
+    return 64, 86, (f'<path d="M20 52 L44 52 L38 66 H26z" fill="#475569" stroke="{K}"/><rect x="10" y="66" width="44" height="9" rx="3" fill="#94a3b8" stroke="{K}"/>'
+                    f'<circle cx="32" cy="30" r="22" fill="#1f2937" stroke="{K}"/><circle cx="32" cy="30" r="14" fill="#0f172a" stroke="#9ca3af" stroke-width="2"/>'
+                    '<circle cx="27" cy="25" r="4" fill="#fff" opacity=".7"/><circle cx="52" cy="14" r="2.5" fill="#22c55e"/>')
+
+
+def router():
+    leds = ''.join(f'<circle cx="{x}" cy="42" r="3" fill="{c}"/>' for x, c in ((22, '#22c55e'), (36, '#22c55e'), (50, '#f59e0b'), (64, '#22c55e')))
+    return 124, 66, ('<rect x="20" y="4" width="5" height="26" rx="2" fill="#475569"/><rect x="60" y="2" width="5" height="28" rx="2" fill="#475569"/><rect x="100" y="4" width="5" height="26" rx="2" fill="#475569"/>'
+                     f'<rect x="6" y="28" width="112" height="30" rx="5" fill="#1f2937" stroke="{K}"/>' + leds +
+                     '<rect x="84" y="38" width="8" height="8" fill="#94a3b8"/><rect x="96" y="38" width="8" height="8" fill="#94a3b8"/>')
+
+
+def joystick():
+    return 88, 106, (f'<path d="M6 98 H82 V86 Q82 78 74 78 H14 Q6 78 6 86z" fill="#1f2937" stroke="{K}"/><rect x="40" y="28" width="8" height="52" fill="#94a3b8" stroke="{K}"/>'
+                     f'<circle cx="44" cy="20" r="15" fill="#ef4444" stroke="{K}"/><circle cx="39" cy="15" r="4" fill="#fff" opacity=".5"/>'
+                     '<circle cx="20" cy="89" r="4" fill="#ef4444"/><circle cx="68" cy="89" r="4" fill="#f59e0b"/>')
+
+
+def usb_drive():
+    return 50, 112, (f'<rect x="12" y="4" width="26" height="28" fill="#cbd5e1" stroke="{K}"/><rect x="17" y="10" width="5" height="6" fill="#334155"/><rect x="28" y="10" width="5" height="6" fill="#334155"/>'
+                     f'<rect x="8" y="32" width="34" height="72" rx="7" fill="#ef4444" stroke="{K}"/><rect x="12" y="38" width="26" height="6" rx="3" fill="#fecaca"/>'
+                     '<circle cx="25" cy="92" r="4.5" fill="#fff" stroke="#334155"/>')
+
+
+def memory_card():
+    pins = ''.join(f'<rect x="{13 + i * 6}" y="14" width="3.4" height="10" fill="#eab308"/>' for i in range(6))
+    return 62, 86, (f'<path d="M8 8 H40 L54 22 V76 Q54 80 50 80 H12 Q8 80 8 76z" fill="#1d4ed8" stroke="{K}"/>' + pins +
+                    '<rect x="16" y="44" width="30" height="20" rx="2" fill="#fff"/><text x="31" y="58" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">SD</text>')
+
+
+def external_disk():
+    return 108, 66, (f'<rect x="4" y="8" width="84" height="48" rx="9" fill="#334155" stroke="{K}"/><rect x="10" y="14" width="72" height="8" rx="4" fill="#64748b"/>'
+                     '<circle cx="18" cy="44" r="3.5" fill="#38bdf8"/><path d="M88 36 H98 Q104 36 104 30" stroke="#1f2937" stroke-width="3" fill="none"/>')
+
+
+def cd_disc():
+    return 76, 76, (f'<circle cx="38" cy="38" r="34" fill="#f1f5f9" stroke="{K}"/><circle cx="38" cy="38" r="25" fill="#cbd5e1" opacity=".8"/>'
+                    f'<path d="M38 5 A33 33 0 0 1 71 38 L38 38z" fill="#e0e7ff" opacity=".8"/><circle cx="38" cy="38" r="9" fill="#fff" stroke="{K}"/><circle cx="38" cy="38" r="3" fill="#94a3b8"/>')
+
+
+def robot():
+    return 84, 110, (f'<path d="M42 4 V16" stroke="{K}" stroke-width="2.5"/><circle cx="42" cy="5" r="4" fill="#ef4444" stroke="{K}"/>'
+                     f'<rect x="16" y="16" width="52" height="36" rx="9" fill="#cbd5e1" stroke="{K}"/>'
+                     f'<circle cx="31" cy="33" r="7" fill="#38bdf8" stroke="{K}"/><circle cx="53" cy="33" r="7" fill="#38bdf8" stroke="{K}"/><circle cx="31" cy="33" r="2.5" fill="#0f172a"/><circle cx="53" cy="33" r="2.5" fill="#0f172a"/>'
+                     '<rect x="30" y="43" width="24" height="4" rx="2" fill="#475569"/><rect x="38" y="52" width="8" height="5" fill="#94a3b8"/>'
+                     f'<rect x="20" y="57" width="44" height="34" rx="7" fill="#38bdf8" stroke="{K}"/><circle cx="42" cy="74" r="7" fill="#fde047" stroke="{K}"/>'
+                     f'<rect x="6" y="59" width="11" height="28" rx="5" fill="#94a3b8" stroke="{K}"/><rect x="67" y="59" width="11" height="28" rx="5" fill="#94a3b8" stroke="{K}"/>'
+                     f'<rect x="26" y="91" width="11" height="16" rx="3" fill="#94a3b8" stroke="{K}"/><rect x="47" y="91" width="11" height="16" rx="3" fill="#94a3b8" stroke="{K}"/>')
+
+
+
+def headphones():
+    return 84, 82, (f'<path d="M14 46 Q14 8 42 8 Q70 8 70 46" fill="none" stroke="{K}" stroke-width="6"/><path d="M14 46 Q14 8 42 8 Q70 8 70 46" fill="none" stroke="#ef4444" stroke-width="3"/>'
+                    f'<rect x="6" y="42" width="18" height="32" rx="7" fill="#1f2937" stroke="{K}"/><rect x="60" y="42" width="18" height="32" rx="7" fill="#1f2937" stroke="{K}"/>'
+                    '<rect x="10" y="48" width="8" height="20" rx="4" fill="#64748b"/><rect x="66" y="48" width="8" height="20" rx="4" fill="#64748b"/>')
+
+
+def microphone():
+    grid = ''.join(f'<path d="M{x} 12 V36" stroke="#94a3b8" stroke-width="1"/>' for x in range(14, 38, 5)) + ''.join(f'<path d="M10 {y} H40" stroke="#94a3b8" stroke-width="1"/>' for y in range(16, 36, 5))
+    return 50, 104, (f'<path d="M20 42 H30 L33 92 H17z" fill="#475569" stroke="{K}"/><rect x="12" y="92" width="26" height="8" rx="3" fill="#1f2937"/>'
+                     f'<circle cx="25" cy="24" r="16" fill="#334155" stroke="{K}"/>' + grid + '<rect x="17" y="38" width="16" height="6" rx="2" fill="#94a3b8" stroke="#334155"/>')
+
+
+def plotter():
+    return 132, 76, (f'<rect x="6" y="14" width="120" height="30" rx="5" fill="#cbd5e1" stroke="{K}"/><rect x="14" y="22" width="80" height="6" rx="3" fill="#475569"/>'
+                     '<circle cx="108" cy="30" r="3" fill="#22c55e"/>'
+                     f'<path d="M20 44 L112 44 L112 58 Q112 66 100 66 L32 66 Q20 66 20 58z" fill="#fff" stroke="{K}"/><path d="M30 52 H100 M30 58 H80" stroke="#60a5fa" stroke-width="2"/>'
+                     f'<path d="M28 44 V72 M104 44 V72" stroke="{K}" stroke-width="3"/>')
+
+
+
+def tablet():
+    return 120, 88, (f'<rect x="4" y="6" width="112" height="76" rx="9" fill="#1f2937" stroke="{K}"/><rect x="12" y="13" width="96" height="62" rx="3" fill="#bfdbfe"/>'
+                     '<path d="M12 13 L60 13 L12 52z" fill="#fff" opacity=".3"/><circle cx="8" cy="44" r="2" fill="#475569"/>'
+                     '<rect x="48" y="26" width="24" height="24" rx="5" fill="#f59e0b"/><rect x="78" y="26" width="24" height="24" rx="5" fill="#22c55e"/>')
+
+
+def game_console():
+    return 124, 72, (f'<rect x="4" y="8" width="116" height="56" rx="14" fill="#3b82f6" stroke="{K}"/><rect x="34" y="14" width="56" height="42" rx="3" fill="#0f172a"/>'
+                     '<rect x="40" y="20" width="44" height="30" fill="#4ade80"/><path d="M18 30 H34 M26 22 V38" stroke="#1f2937" stroke-width="5" stroke-linecap="round"/>'
+                     '<circle cx="100" cy="26" r="5" fill="#ef4444"/><circle cx="108" cy="38" r="5" fill="#fde047"/><circle cx="96" cy="42" r="5" fill="#a855f7"/>')
+
+
+def _outline(svg):
+    """A line drawing to colour in: every shape white, outlines kept."""
+    return re.sub(r'(<(?:rect|path|circle|ellipse|polygon)' + chr(92) + r'b[^>]*?) fill="#[0-9a-fA-F]{3,6}"', chr(92) + r'1 fill="#ffffff"', svg)
 
 
 # ---- registry and rows --------------------------------------------------------------------------------------
@@ -457,6 +601,12 @@ OBJECTS = {
     'wedge': lambda c=None: wedge(), 'screw': lambda c=None: screw(), 'pulley': lambda c=None: pulley(),
     'phonecard': lambda c=None: phone_card(), 'wirelessmouse': wireless_mouse, 'pointer': pointer_arrow, 'tickmark': tick_mark,
     'crossmark': cross_mark, 'desktop': desktop_small,
+    'palmtop': lambda c=None: palmtop(), 'smartphone': lambda c=None: smartphone(), 'handscanner': lambda c=None: hand_scanner(),
+    'scanner': lambda c=None: scanner(), 'webcam': lambda c=None: webcam(), 'router': lambda c=None: router(),
+    'joystick': lambda c=None: joystick(), 'usb': lambda c=None: usb_drive(), 'memcard': lambda c=None: memory_card(),
+    'headphones': lambda c=None: headphones(), 'microphone': lambda c=None: microphone(), 'plotter': lambda c=None: plotter(),
+    'tablet': lambda c=None: tablet(), 'gameconsole': lambda c=None: game_console(),
+    'extdisk': lambda c=None: external_disk(), 'cd': lambda c=None: cd_disc(), 'robot': lambda c=None: robot(),
 }
 for _n in ('tree', 'plane', 'umbrella', 'phone', 'apple', 'fan', 'bread', 'car', 'tv', 'iron', 'lamp', 'clockicon', 'book',
           'bag', 'ball', 'cup', 'chair', 'table', 'bed', 'house', 'sun', 'moon', 'star', 'flower', 'fish', 'bird', 'cat', 'dog'):
@@ -530,10 +680,13 @@ def make(line):
     opts = {}
     # options: key=value tokens at the end, plus bare flags; for 'row' the items may contain '=' so only s= is read
     if kind == 'row':
+        out_ = rest.endswith(' outline')
+        if out_:
+            rest = rest[:-len(' outline')]
         if ' s=' in rest:
             rest, _, sv = rest.rpartition(' s=')
             opts['s'] = sv.strip()
-        return row(opts, rest)
+        return _outline(row(opts, rest)) if out_ else row(opts, rest)
     toks = []
     cur = rest
     # split on two or more spaces or on a recognised key=
@@ -541,7 +694,7 @@ def make(line):
     for m in re.finditer(r'(hl|lab|s)=(.*?)(?=\s+(?:hl|lab|s)=|$)', rest):
         opts[m.group(1)] = m.group(2).strip()
     flags = rest.split()
-    for f in ('parts', 'blank', 'outline'):
+    for f in ('parts', 'blank', 'outline', 'np', 'fingers'):
         if f in flags:
             opts[f] = '1'
     if kind == 'kb':
@@ -554,6 +707,6 @@ def make(line):
         svg = desk(opts)
     else:
         raise SystemExit(f'pic: unknown picture kind "{kind}"')
-    if 'outline' in opts:   # a line drawing to colour in: every shape white, outlines kept
-        svg = re.sub(r'(<(?:rect|path|circle|ellipse|polygon)\b[^>]*?) fill="#[0-9a-fA-F]{3,6}"', r'\1 fill="#ffffff"', svg)
+    if 'outline' in opts:
+        svg = _outline(svg)
     return svg
