@@ -14,3 +14,5 @@
 12. Derived files (lazy page, offline map, service-worker version) regenerated after these changes.
 
 Not done / limits: Solved Exercise PDF uses the answers present in the book data (items without a stored answer say "see the book's answer key"); Word Stats for a chapter counts the words of the tab currently shown; class-level stats unchanged.
+
+13. Downloaded PDFs now show plain readable maths (no "\text{...}" markup: units, ×, powers, fractions), black bold questions, black normal answers, and a faint "SpaceBook" watermark on every page (js/sb_chapter_tools.js).

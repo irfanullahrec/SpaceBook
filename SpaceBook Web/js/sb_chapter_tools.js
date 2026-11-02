@@ -54,7 +54,8 @@
   function paginate(blocks) {
     const pages = []; let cv = null, g = null, y = 0;
     const FONT = '"Noto Naskh Arabic","Jameel Noori Nastaleeq","Segoe UI",Tahoma,Arial,sans-serif';
-    const newPage = () => { cv = document.createElement('canvas'); cv.width = PW; cv.height = PH; g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, PW, PH); y = MY; pages.push(cv); };
+    const newPage = () => { cv = document.createElement('canvas'); cv.width = PW; cv.height = PH; g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, PW, PH); y = MY; pages.push(cv);
+      g.save(); g.translate(PW / 2, PH / 2); g.rotate(-Math.PI / 4); g.font = '700 210px Arial,sans-serif'; g.fillStyle = 'rgba(15,23,42,0.07)'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('SpaceBook', 0, 0); g.restore(); };
     newPage();
     blocks.forEach(b => {
       const size = b.size || 28, lh = Math.round(size * 1.65), weight = b.bold ? '700 ' : '400 ';
@@ -66,7 +67,7 @@
       if (y + lh * Math.min(lines.length, 2) > PH - MY) newPage();
       lines.forEach(l => {
         if (y + lh > PH - MY) newPage();
-        g.font = weight + size + 'px ' + FONT; g.fillStyle = b.color || '#0f172a';
+        g.font = weight + size + 'px ' + FONT; g.fillStyle = b.color || '#000000';
         g.direction = rtl ? 'rtl' : 'ltr'; g.textAlign = rtl ? 'right' : 'left'; g.textBaseline = 'alphabetic';
         g.fillText(l, rtl ? PW - MX - (b.indent || 0) : MX + (b.indent || 0), y + size);
         y += lh;
@@ -103,7 +104,23 @@
   }
 
   /* ---------------------------------------------------------------- question lists */
-  const clean = t => String(t == null ? '' : t).replace(/\$\$?([^$]*)\$\$?/g, '$1').replace(/\s+/g, ' ').trim();
+  // book equations are stored as LaTeX; the notes show plain readable text, never the markup
+  const SUP = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹','-':'⁻','+':'⁺','n':'ⁿ'};
+  const SUB = {'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'};
+  const map = (str, m) => [...str].every(c => m[c]) ? [...str].map(c => m[c]).join('') : null;
+  function plain(t) {
+    // '@' stands for a literal backslash and '#' for a regex escape, so this file holds no hand-counted backslashes
+    const BS = String.fromCharCode(92), R = (src, f) => new RegExp(src.split('@').join(BS + BS).split('#').join(BS), f);
+    let x = String(t == null ? '' : t);
+    x = x.replace(R('@(?:text|mathrm|mathbf|textbf|mathit|operatorname)#s*{([^{}]*)}', 'g'), '$1');
+    for (let i = 0; i < 4; i++) x = x.replace(R('@d?frac#s*{([^{}]*)}#s*{([^{}]*)}', 'g'), '($1)/($2)').replace(R('@sqrt#s*{([^{}]*)}', 'g'), '√($1)');
+    const SY = {times: '×', cdot: '·', div: '÷', pm: '±', mp: '∓', leq: '≤', le: '≤', geq: '≥', ge: '≥', neq: '≠', ne: '≠', approx: '≈', infty: '∞', degree: '°', circ: '°', alpha: 'α', beta: 'β', gamma: 'γ', delta: 'δ', theta: 'θ', lambda: 'λ', mu: 'μ', pi: 'π', sigma: 'σ', omega: 'ω', Omega: 'Ω', rho: 'ρ', phi: 'φ', epsilon: 'ε', rightarrow: '→', to: '→', propto: '∝', sum: 'Σ', Delta: 'Δ', quad: ' ', qquad: ' ', left: '', right: ''};
+    x = x.replace(R('@([A-Za-z]+)', 'g'), (m, n) => (n in SY ? SY[n] : n));
+    x = x.replace(R('#^{([^{}]*)}|#^(-?#w)', 'g'), (m, a, b) => { const v = a != null ? a : b; return map(v, SUP) || '^(' + v + ')'; });
+    x = x.replace(R('_{([^{}]*)}|_(#w)', 'g'), (m, a, b) => { const v = a != null ? a : b; return map(v, SUB) || '_' + v; });
+    return x.split('$').join('').split(BS).join('').replace(/[{}]/g, '').replace(R('#s+', 'g'), ' ').trim();
+  }
+  const clean = plain;
   function answerOf(it) {
     if (it.kind === 'mcq' && it.opts && it.a >= 0) return 'ABCD'[it.a] + ') ' + it.opts[it.a];
     if (it.kind === 'tf' && typeof it.a === 'boolean') return it.a ? 'True' : 'False';
@@ -118,7 +135,7 @@
   function blocksFor(kind) {
     const info = chapterInfo(), TP = window.SBTopicPractice, out = [];
     out.push({text: 'SpaceBook — ' + info.name, size: 40, bold: true, gap: 6});
-    out.push({text: kind === 'ex' ? 'Solved Exercise (questions and answers)' : 'SLO-based practice: MCQs, Short and Long Questions', size: 28, color: '#334155', gap: 24});
+    out.push({text: kind === 'ex' ? 'Solved Exercise (questions and answers)' : 'SLO-based practice: MCQs, Short and Long Questions', size: 28, color: '#000000', gap: 24});
     if (kind === 'ex') {
       const items = info.ch && TP ? TP.collect(info.ch, info.med).filter(x => x.ex) : [];
       let n = 0;
@@ -126,7 +143,7 @@
         n++; out.push({text: n + '. ' + clean(it.q), size: 28, bold: true, gap: 4});
         if (it.opts) it.opts.forEach((o, i) => out.push({text: 'ABCD'[i] + ') ' + clean(o), size: 26, indent: 40, gap: 0}));
         const a = answerOf(it);
-        out.push({text: 'Answer: ' + (a || 'see the book’s answer key'), size: 26, color: '#166534', indent: 20, gap: 18});
+        out.push({text: 'Answer: ' + (a || 'see the book’s answer key'), size: 26, color: '#000000', indent: 20, gap: 18});
       });
       if (!n) out.push({text: 'This chapter has no exercise questions in the book data.', size: 26});
     } else {
@@ -135,13 +152,13 @@
       else {
         const names = {mcq: 'Multiple Choice Questions', sq: 'Short Questions', lq: 'Long Questions'};
         ['mcq', 'sq', 'lq'].forEach(k => {
-          out.push({text: names[k], size: 34, bold: true, color: '#0369a1', gap: 12});
+          out.push({text: names[k], size: 34, bold: true, color: '#000000', gap: 12});
           const seen = new Set(); let n = 0;
           lp.sets.forEach(st => st.slo[k].forEach(it => {
             if (it.kind === 'slo' || seen.has(it.q)) return; seen.add(it.q);
             n++; out.push({text: n + '. ' + clean(it.q), size: 27, bold: true, gap: 4});
             if (it.opts) it.opts.forEach((o, i) => out.push({text: 'ABCD'[i] + ') ' + clean(o), size: 25, indent: 40, gap: 0}));
-            const a = answerOf(it); if (a) out.push({text: 'Answer: ' + a, size: 25, color: '#166534', indent: 20, gap: 14}); else out[out.length - 1].gap = 14;
+            const a = answerOf(it); if (a) out.push({text: 'Answer: ' + a, size: 25, color: '#000000', indent: 20, gap: 14}); else out[out.length - 1].gap = 14;
           }));
           if (!n) out.push({text: '—', size: 25});
         });
