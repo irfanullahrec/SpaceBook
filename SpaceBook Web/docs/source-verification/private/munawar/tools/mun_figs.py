@@ -670,6 +670,42 @@ SMALL.update({
 for _n in ('arrow', 'jellyfish', 'monkey'):
     OBJECTS[_n] = (lambda f: (lambda c=None: f()))(SMALL[_n])
 
+SMALL.update({
+    'hippo': lambda: _small(f'<ellipse cx="22" cy="26" rx="15" ry="9" fill="#a78bfa" stroke="{K}"/><path d="M4 18 Q4 10 12 10 H20 Q30 10 30 18 V24 H6z" fill="#a78bfa" stroke="{K}"/><rect x="2" y="16" width="14" height="10" rx="4" fill="#c4b5fd" stroke="{K}"/>'
+                            f'<circle cx="7" cy="20" r="1.2" fill="{K}"/><circle cx="12" cy="20" r="1.2" fill="{K}"/><circle cx="18" cy="10" r="2" fill="#a78bfa" stroke="{K}"/><circle cx="24" cy="10" r="2" fill="#a78bfa" stroke="{K}"/>'
+                            f'<rect x="12" y="32" width="5" height="5" fill="#8b5cf6" stroke="{K}"/><rect x="28" y="32" width="5" height="5" fill="#8b5cf6" stroke="{K}"/>'),
+    'kangaroo': lambda: _small(f'<path d="M14 6 Q18 2 20 8 L22 14 Q30 18 28 28 L34 36 H20 L16 30 Q10 28 12 20 Q12 12 14 6z" fill="#d97706" stroke="{K}"/><path d="M28 28 Q36 30 38 38" fill="none" stroke="{K}" stroke-width="3"/>'
+                               f'<path d="M14 6 L12 1 M18 5 L18 0" stroke="{K}" stroke-width="2"/><circle cx="16" cy="9" r="1.2" fill="{K}"/><path d="M18 22 Q22 26 18 28" fill="#fcd9b6" stroke="{K}"/>'),
+    'deer': lambda: _small(f'<ellipse cx="20" cy="26" rx="11" ry="7" fill="#b45309" stroke="{K}"/><path d="M28 22 L32 10 Q34 6 37 8 Q38 12 34 14 L31 22z" fill="#b45309" stroke="{K}"/>'
+                           f'<path d="M32 8 L30 2 M33 6 L37 2 M31 5 L28 4" stroke="{K}" stroke-width="1.6"/><path d="M12 31 V38 M17 32 V38 M24 32 V38 M29 31 V38" stroke="{K}" stroke-width="2.4"/><circle cx="35" cy="9" r="1" fill="{K}"/><circle cx="14" cy="24" r="1.4" fill="#fde68a"/><circle cx="20" cy="27" r="1.4" fill="#fde68a"/>'),
+    'fox': lambda: _small(f'<path d="M4 34 Q2 22 12 24 L14 30z" fill="#ea580c" stroke="{K}"/><path d="M4 34 Q6 36 10 34" fill="#fff" stroke="{K}"/><ellipse cx="20" cy="27" rx="10" ry="7" fill="#ea580c" stroke="{K}"/>'
+                          f'<path d="M26 20 L30 8 L34 14 L36 8 L38 20 L36 28 L28 28z" fill="#ea580c" stroke="{K}"/><path d="M30 24 L36 24 L33 28z" fill="#fff"/><circle cx="33" cy="20" r="1.2" fill="{K}"/><circle cx="36" cy="25" r="1.2" fill="{K}"/><path d="M14 33 V38 M22 33 V38" stroke="{K}" stroke-width="2.4"/>'),
+    'squirrel': lambda: _small(f'<path d="M8 36 Q0 20 8 10 Q18 4 18 16 Q14 22 14 30z" fill="#b45309" stroke="{K}"/><ellipse cx="22" cy="28" rx="8" ry="9" fill="#d97706" stroke="{K}"/><circle cx="26" cy="16" r="5.5" fill="#d97706" stroke="{K}"/>'
+                               f'<path d="M23 12 L22 7 L26 10M29 12 L31 7 L30 11" fill="#d97706" stroke="{K}"/><circle cx="28" cy="15" r="1" fill="{K}"/><path d="M26 34 H34" stroke="{K}" stroke-width="2.4"/>'),
+    'stork': lambda: _small(f'<ellipse cx="18" cy="20" rx="11" ry="8" fill="#f8fafc" stroke="{K}"/><path d="M26 16 L28 8 Q31 4 33 8 L31 14z" fill="#f8fafc" stroke="{K}"/><path d="M32 7 L40 10 L32 11z" fill="#ef4444" stroke="{K}"/>'
+                            f'<path d="M14 27 V38 M20 27 V38" stroke="#ef4444" stroke-width="2"/><path d="M8 20 H22" stroke="{K}" stroke-width="1.4"/><circle cx="31" cy="8" r="1" fill="{K}"/>'),
+    'swan': lambda: _small(f'<path d="M6 28 Q4 36 16 36 H30 Q36 36 36 28 Q28 30 22 26 Q14 28 6 28z" fill="#f8fafc" stroke="{K}"/><path d="M26 26 Q34 22 30 14 Q28 6 34 6 Q38 6 36 10" fill="none" stroke="{K}" stroke-width="5" stroke-linecap="round"/>'
+                           f'<path d="M26 26 Q34 22 30 14 Q28 6 34 6 Q38 6 36 10" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/><path d="M37 9 L40 10 L37 12z" fill="#f97316" stroke="{K}" stroke-width=".8"/>'),
+    'screwdriver': lambda: _small(f'<rect x="4" y="16" width="14" height="9" rx="4" fill="#ef4444" stroke="{K}"/><rect x="17" y="19" width="19" height="3.4" fill="#9ca3af" stroke="{K}"/><path d="M36 19 L39 18 V24 L36 22.4z" fill="#6b7280" stroke="{K}" stroke-width=".8"/>'),
+    'straw': lambda: _small(f'<rect x="3" y="26" width="34" height="7" rx="3" fill="#f8fafc" stroke="{K}"/><path d="M8 26 L14 33 M16 26 L22 33 M24 26 L30 33" stroke="#ef4444" stroke-width="2.2"/><path d="M30 26 L36 12" stroke="{K}" stroke-width="6" stroke-linecap="round"/><path d="M30 26 L36 12" stroke="#f8fafc" stroke-width="3.4" stroke-linecap="round"/>'),
+    'inkpot': lambda: _small(f'<path d="M10 16 H30 L34 36 H6z" fill="#1e3a8a" stroke="{K}"/><rect x="14" y="10" width="12" height="6" fill="#e5e7eb" stroke="{K}"/><path d="M12 24 H28" stroke="#93c5fd" stroke-width="2"/><path d="M26 10 L36 2" stroke="{K}" stroke-width="2"/>'),
+    'nail': lambda: _small(f'<rect x="8" y="5" width="24" height="4" rx="1.5" fill="#9ca3af" stroke="{K}"/><path d="M18 9 H22 L21 36 L20 38 L19 36z" fill="#cbd5e1" stroke="{K}"/>'),
+    'thorn': lambda: _small(f'<path d="M6 34 Q8 22 18 12 Q26 4 36 6 Q34 16 28 22 Q18 30 6 34z" fill="#16a34a" stroke="{K}"/><path d="M12 24 L8 22 M18 18 L14 14 M24 12 L24 7" stroke="{K}" stroke-width="1.8"/>'),
+    'yellow': lambda: _small(f'<circle cx="20" cy="20" r="14" fill="#facc15" stroke="{K}"/><circle cx="15" cy="14" r="4" fill="#fef08a"/>'),
+})
+for _n in ('hippo', 'kangaroo', 'deer', 'fox', 'squirrel', 'stork', 'swan', 'screwdriver', 'straw', 'inkpot', 'nail', 'thorn', 'yellow'):
+    OBJECTS[_n] = (lambda f: (lambda c=None: f()))(SMALL[_n])
+
+SMALL.update({
+    'bell': lambda: _small(f'<path d="M8 30 Q10 8 20 8 Q30 8 32 30z" fill="#facc15" stroke="{K}"/><rect x="5" y="30" width="30" height="4" rx="2" fill="#eab308" stroke="{K}"/><circle cx="20" cy="37" r="3" fill="#a16207" stroke="{K}"/><circle cx="20" cy="6" r="2.4" fill="#eab308" stroke="{K}"/>'),
+    'glue': lambda: _small(f'<rect x="11" y="14" width="18" height="22" rx="4" fill="#f8fafc" stroke="{K}"/><rect x="14" y="5" width="12" height="9" rx="2" fill="#f97316" stroke="{K}"/><rect x="13" y="20" width="14" height="8" rx="1.5" fill="#60a5fa"/>'),
+    'tube': lambda: _small(f'<path d="M6 12 H28 L34 20 L28 28 H6z" fill="#38bdf8" stroke="{K}"/><rect x="2" y="10" width="6" height="20" rx="2" fill="#0ea5e9" stroke="{K}"/><rect x="33" y="17" width="5" height="6" fill="#f8fafc" stroke="{K}"/><path d="M12 20 H26" stroke="#fff" stroke-width="2.4"/>'),
+    'meat': lambda: _small(f'<path d="M8 14 Q8 4 20 6 Q34 8 30 22 Q28 30 18 28 Q8 26 8 14z" fill="#b91c1c" stroke="{K}"/><circle cx="19" cy="15" r="4" fill="#fecaca"/><path d="M26 28 L35 36" stroke="#e5e7eb" stroke-width="4" stroke-linecap="round"/><circle cx="36" cy="36" r="2.4" fill="#e5e7eb" stroke="{K}"/>'),
+    'eight': lambda: _small(f'<rect x="5" y="3" width="30" height="34" rx="6" fill="#ede9fe" stroke="{K}"/><text x="20" y="31" text-anchor="middle" font-size="28" font-weight="700" fill="#7c3aed">8</text>'),
+})
+for _n in ('bell', 'glue', 'tube', 'meat', 'eight'):
+    OBJECTS[_n] = (lambda f: (lambda c=None: f()))(SMALL[_n])
+
 OBJECTS['fan'] = _from_fig1('fan')
 
 
